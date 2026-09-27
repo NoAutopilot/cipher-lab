@@ -2879,10 +2879,10 @@
     },
     {
       "target": "fr4715-montholon-1589",
-      "title": "Montholon 1589: key of record reads the letter positions (0.70 vs shuffled 0.30 through Tomokiyo's groups); the key segments a boundary-free digit stream to 0.99 of his groups; MONT-RECROP: on slope-following line sheets an Opus digit-stream read clears the digit (0.983 vs shuffled 0.450) and letter (0.938 vs 0.404) gates but misses the dotted gate (0.657 vs 0.70, shuffled 0.100) -- gates not met, the dots are the binding loss; pool about 13,000 signs",
-      "next": "ASKS 79: new BnF capture of f.81r (REQUEST.md), now in front, for the dots; a half-segment-sheet dot test is a cheap image-side alternative needing its own brief",
+      "title": "Montholon 1589: key of record reads the letter positions (0.70 vs shuffled 0.30 through Tomokiyo's groups); the key segments a boundary-free digit stream to 0.99 of his groups; MONT-RECROP: on slope-following line sheets an Opus digit-stream read clears the digit (0.983 vs shuffled 0.450) and letter (0.938 vs 0.404) gates but misses the dotted gate (0.657 vs 0.70, shuffled 0.100) -- gates not met, the dots are the binding loss; MONT-LATTICE: a multi-reader lattice tuned on two lines reads the held-out two at dotted 0.600 (call C alone 0.562), digits and letters below call C -- no gain; pool about 13,000 signs",
+      "next": "ASKS 79: new BnF capture of f.81r (REQUEST.md), in front, for the dots; MONT-DOTS (half-width sheets) is the one image-side test running; EVIDENCE-PACKET.md is the scoring rule for any outside prototype",
       "lane": "parent 7m (SOLVE)",
-      "touched": "27 Sept 2026 14:58"
+      "touched": "27 Sept 2026 15:28"
     }
   ]
 }

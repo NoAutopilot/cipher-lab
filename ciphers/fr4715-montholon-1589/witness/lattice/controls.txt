@@ -1,0 +1,39 @@
+# MONT-LATTICE controls, digscore output (awk-trimmed; the trimmed G1 lines were unreadable and are removed -- all G0/G1/G2 figures for every stream are in scores.txt, same statistic)
+== callC L13,L15
+  G0 digit LCS      241/245 = 0.984  (gate 0.92)  control (20) mean 0.450 sd 0.015  PASS
+  G1 letter-group   107/111 = 0.964  (gate 0.85)  control (20) mean 0.416 sd 0.016  PASS
+  G2 dotted recall  9/16 = 0.562  (gate 0.7)  control (20) mean 0.081 sd 0.054  FAIL
+-- shuffle_1 L13,L15
+G0 digit 220/243 0.905
+G2 dotted 9/15 0.600
+-- shuffle_2 L13,L15
+G0 digit 220/243 0.905
+G2 dotted 9/15 0.600
+-- shuffle_3 L13,L15
+G0 digit 221/243 0.909
+G2 dotted 9/15 0.600
+-- shuffle_4 L13,L15
+G0 digit 218/243 0.897
+G2 dotted 9/15 0.600
+-- shuffle_5 L13,L15
+G0 digit 220/243 0.905
+G2 dotted 9/15 0.600
+== callC L03,L08
+  G0 digit LCS      226/230 = 0.983  (gate 0.92)  control (20) mean 0.448 sd 0.021  PASS
+  G1 letter-group   91/100 = 0.910  (gate 0.85)  control (20) mean 0.389 sd 0.027  PASS
+  G2 dotted recall  14/19 = 0.737  (gate 0.7)  control (20) mean 0.103 sd 0.073  PASS
+-- shuffle_1 L03,L08
+G0 digit 221/230 0.961
+G2 dotted 15/19 0.789
+-- shuffle_2 L03,L08
+G0 digit 220/230 0.957
+G2 dotted 15/19 0.789
+-- shuffle_3 L03,L08
+G0 digit 221/230 0.961
+G2 dotted 15/19 0.789
+-- shuffle_4 L03,L08
+G0 digit 222/230 0.965
+G2 dotted 15/19 0.789
+-- shuffle_5 L03,L08
+G0 digit 221/230 0.961
+G2 dotted 15/19 0.789

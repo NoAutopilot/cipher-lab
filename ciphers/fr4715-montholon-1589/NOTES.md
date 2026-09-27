@@ -897,3 +897,51 @@ within 6 lines`, exit 0.
   pair AND beats both controls there on G2 (the gate call C misses) without falling below call C on G0 or G1.
 - Log: every position where the chosen digit came only from a confusion neighbour (no voter proposed it), with
   its weight.
+
+**Run (script only; `python3 scripts/mont_lattice.py tune` then `run`; outputs in `witness/lattice/`).** Before any
+tuning, the lattice with call C as the only voter, no neighbours, lambda 0 and no dotted prior reproduced call C's
+stream except three marks the parser cannot carry (a dot before `?`, a dot on a lone digit before `?`, a dot on the
+second digit of a pair), so the decoder is call C plus what the other terms add. Grid on L03/L08 only, in two stages
+(`tune.tsv`): voter weights at nb 0.1 / lambda 0.5 / mu 1 (27 settings), then nb x lambda x mu at the best weights
+(18). Chosen (`chosen.json`): **C 1.0, B 0.3, A/passes/v2 0; neighbour weight 0.3; lambda 0; dotted prior on
+(mu 1)**. The French bigram got weight 0: on the tuned pair every lambda > 0 cost dotted recall (0.737 -> 0.526 at
+lambda 0.5, no neighbours), because it prefers a letter reading of a pair over a word-code. The dotted prior was built
+from 89 dotted groups (27 codes) of the dump outside the four lines' windows (310 dump groups excluded).
+
+| stream | tuned pair L03+L08: G0 / G1 / G2 | **held-out pair L13+L15: G0 / G1 / G2** | held-out gates |
+|---|---|---|---|
+| lattice (chosen setting) | 222/230 = 0.965 / 91/100 = 0.910 / 15/19 = 0.789 | **230/243 = 0.947 / 98/111 = 0.883 / 9/15 = 0.600** | G0, G1 met; **G2 missed** |
+| control (ii): call C alone | 0.983 / 0.910 / 14/19 = 0.737 | 241/245 = 0.984 / 107/111 = 0.964 / 9/16 = 0.562 | G2 missed |
+| control (i): shuffled weights, 5 (mean, range) | 0.961 (0.957-0.965) / 0.902 (0.900-0.910) / 0.789 | 0.905 (0.897-0.909) / 0.795 (0.784-0.811) / 0.600 | |
+| diagnostic, not pre-registered: chosen setting with no neighbours | 0.987 / 0.920 / 0.737 | 0.988 / 0.973 / 9/16 = 0.562 | G2 missed |
+| pooled four lines, lattice (reported, does not decide) | 452/473 = 0.956 / 189/211 = 0.896 / 24/34 = 0.706 | | |
+
+digscore's own controls (within-line shuffles, 20, seed 1) on the lattice held-out pair: G0 0.450, G1 0.410, G2
+0.100 (`digscore witness/lattice/lattice.tsv L13,L15`); all rows above come from the same statistic (`scores.txt`,
+`controls.txt`).
+
+**Confusion-neighbour log (`witness/lattice/neighbours.tsv`).** 23 positions took a digit no voter proposed: L03 5,
+L08 5 (tuned), L13 8, L15 5 (held-out), weight share 0.06-0.23 each (mostly 3->5 and 5<-0/7 substitutions). Net
+effect against call C's own digits: -4 matched digits on the tuned pair, -11 on the held-out pair. The neighbours
+made the digit stream worse wherever they fired; the tuning grid chose nb 0.3 only for the one dotted group it gained
+on L03/L08.
+
+**Verdict: gates not met on the held-out pair (G2 0.600 < 0.70), and the lattice does not beat call C there.**
+Against control (ii) it is lower on G0 (0.947 vs 0.984) and G1 (0.883 vs 0.964) and equal on G2 in matched groups (9
+and 9; the 15 vs 16 denominator is the scorer's window choice). Against control (i) it is higher on G0/G1 (reader
+weights carry the digits), but **control (i) cannot fail differently on G2 by construction**: it scrambles the vote
+weights and leaves every dot mark and the dotted prior in place, and it reads exactly the lattice's G2 on both pairs.
+So it licenses nothing about dots (CLAUDE.md rule 3, control on an orthogonal axis; a brief-design fault this worker
+did not catch before running). The gain on the tuned pair (G2 0.737 -> 0.789, one dotted group) did not transfer; by
+the held-out rule it is not a gain. The language model corrected none of call C's digits: its tuned weight is 0.
+The chosen setting recovered none of call C's 7 missed dotted groups on the held-out pair. The likely reason (not
+tested here) is that the missing dots are in no voter's stream to be chosen: B marks no dots, and A, the passes and
+v2 were read from the old fixed-y sheets, which lose the later part of L13 and L15.
+
+**Next step.** A fail keeps the BnF-capture route first (ASKS 79, a new capture of f.81r). MONT-READ-ALL is not
+named. MONT-DOTS (half-width sheets, dotted gate only, running in parallel) is the one image-side test that could
+add dot marks for a lattice to choose from; the lattice adds nothing until a voter's stream carries the missing
+dots. `EVIDENCE-PACKET.md` fixes the material and the rule for an outside prototype.
+
+Requests this job: 0 network requests; 0 subagents; 0 reading calls. No credentials, no AskUserQuestion, no novelty
+wording.
