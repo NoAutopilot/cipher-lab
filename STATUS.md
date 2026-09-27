@@ -2281,6 +2281,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (27 Sept 2026, 02:43 UTC)
+
+- Villeroy to Bongars 1604 (fr.7129 f.268) idles on this account. VB-KEY (19.33 D-, over cap) re-derived the key from the clerk's interlinear decipherments on f.258 and f.260: held-out letter agreement 0.34 against 0.25 for shuffled keys (z 9.9) but under the 0.70 bar, and no better than the earlier key. The limit is blind symbol transcription (two passes agree on 41 to 67 percent of signs), not the key. f.268 was not decoded. Five workers and about 67 USD went into this letter since yesterday evening; the lesson is in LESSONS.md (symbol ciphers: known plaintext first, then one careful reader with the key in view, never a fourth blind pass) and the next instrument is written in NOTES.md and NEXT-STEPS.tsv. Status stays blocked on the M9 gate.
+- Refill scout started early (SCOUT-OWN-6, Sonnet, cap 6): from Tomokiyo's 278 pages, every letter he or a catalogue calls undeciphered whose key is already identified, ranked digitised first and digit-or-word ciphers before symbol ciphers, top five to the SOLVE parent as reading-shaped targets. This is the day-one shape the count came from.
+- Other account: LANE SALV2 transcribed the 98 boxes wrongly labelled plain (52 percent two-pass agreement on those, model error about 7 percent per sign) and is rebuilding the Salviati spec for a controlled rerun.
+- Mailbox quiet; no open pull request; VO1 idle. Counts unchanged: 20 letters, 15 entries.
+
 ### Parent note, owner account (27 Sept 2026, 01:44 UTC)
 
 - Villeroy to Bongars 1604 (fr.7129 f.268): the sibling calibration (VB-KP, 17.69 D-, over cap) changed the picture. All four sibling letters at ff.258-263 carry a clerk's contemporary interlinear decipherment, so the cipher has known plaintext in the same volume. Applied to f.258, the key of record agrees with the clerk on 47 percent of letters against 28 percent for shuffled keys (z 5.5): the key is real but wrong in named places (dropped overbars, three word cells, the d/g/y letter signs). VB-KEY (Opus, cap 10) now re-derives the key from the clerk's own text on f.258 and f.260, tests it on held-out lines at a 0.70 bar, and only then decodes f.268 against the shuffled-key control. Status stays blocked on the M9 gate; no class. Spend on this target so far about 49 USD.
