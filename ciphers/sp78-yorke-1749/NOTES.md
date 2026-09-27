@@ -109,3 +109,12 @@ returned HTTP 500, not retried per the good-citizen single-retry rule. No new fr
 this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
 is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
 than a standalone TNA order.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for SP 78/232/44 (REQUEST.md, since 24 Sept 2026, now folded into the
+consolidated TNA batch, ASKS row 73).
+
+- M: check the note field of every item in SP 78/232 individually (not by keyword) for other cipher/decipher siblings -- tools/discovery_items.py, ~150 items, this file's own named next step.
+- S: search the Hardwicke Papers (1778, Joseph Yorke's father's collection) via archive.org/HathiTrust for this correspondence, not checked this pass.
+- S: full-text search the three already-fetched Bedford correspondence volumes for 'Albemarle' or 'Aix-la-Chapelle'; only 'Tobago'/'Puyzieulx' were tried so far.

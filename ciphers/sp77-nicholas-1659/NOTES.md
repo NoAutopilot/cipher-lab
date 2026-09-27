@@ -106,3 +106,12 @@ returned HTTP 500, not retried per the good-citizen single-retry rule. No new fr
 this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
 is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
 than a standalone TNA order.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for SP 77/32/289 (REQUEST.md, since 24 Sept 2026, now folded into the
+consolidated TNA batch, ASKS row 73).
+
+- S: search BL's catalogue (searcharchives.bl.uk?format=json, live per the playbook even though BL's IIIF images are dead) for Egerton MS 2550's full contents list, for a key entry under 'Sir L.R.'/'San Sebastian'.
+- S: re-search Nicholas Papers vol. 4 (already fetched) for 'Flanders' or another correspondent term, beyond only 'Sebastian'/'L.R.'/'cipher' tried so far.
+- S: re-verify sp105-paget-1693's 'no Interregnum cipher table in SP 106' finding against SP 77/32's own siblings for a companion key filed elsewhere, not independently re-checked this pass.

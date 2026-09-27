@@ -84,3 +84,11 @@ own online Stuart Papers finding aid or a Jacobite prosopography, since a name m
 editions search; (2) confirm digitisation status for f.53 directly by Discovery record id; (3) if a future
 worker holds a Jacobite-studies journal index (the JSTOR/OpenAlex slot), search for "St Quentin" plus
 "Pretender" plus 1743 — not run this pass, outside this lane's hosts.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a TNA page-copy order for SP 36/61/53 (REQUEST.md, since 24 Sept 2026).
+
+- S: confirm digitisation status of SP 36/61 f.53 by record id -- not yet checked this pass, may already be online, before ordering -- tools/discovery_items.py.
+- S: identify 'St Quentin' against the already-fetched Jacobite context (Coghlan, Bethune de Pologne, Flyn) via a targeted name search.
+- S: cross-check the four neighbouring 1743 intercepts (f.18, 51, 117, 120) in the same piece for any reference to 'St Quentin', not yet compared against each other.

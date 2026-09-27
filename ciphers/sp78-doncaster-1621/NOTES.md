@@ -108,3 +108,12 @@ returned HTTP 500, not retried per the good-citizen single-retry rule. No new fr
 this item this pass; digitisation status stands as already recorded in this folder's REQUEST.md. This item
 is now item in the consolidated order `outreach/tna-page-copy-batch.md` (ASKS row 73, status backlog) rather
 than a standalone TNA order.
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: a single TNA page-copy order covering f.142, f.144, f.146, f.214 and f.222 (REQUEST.md, since 24
+Sept 2026, now folded into the consolidated TNA batch, ASKS row 73).
+
+- S: fetch full record detail (note field) for SP 78/69/56 (f.142) and /59 (f.146) individually -- only f.144's note was checked this pass -- tools/discovery_items.py.
+- S: search TNA Discovery broadly for other 'French titles for the cipher'-style key sheets from the same 1621 embassy-preparation clerks, to gauge what such a sheet typically contains before assuming f.144 is the operative key.
+- S: search Calvert's later CSPD entries for a retrospective mention of this cipher/advertisement; only the pre-embassy hits were searched this pass.

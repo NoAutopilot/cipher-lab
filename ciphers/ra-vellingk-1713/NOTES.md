@@ -75,3 +75,12 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Mauritz Vellingk" AND Hamburg AND 1713 AND chiffer`: no relevant hit (0 results, none about the letter).
 - `"Bremen-Verden" AND "neutralitetstraktaten 1713"`: no relevant hit (0 results, none about the letter).
+
+## While waiting (27 Sept 2026, WAIT-PASS-B)
+
+Waits on: Riksarkivet copies of `SE/RA/1411/E/E VI/1` and `SE/RA/720626/E/E 6015` (REQUEST.md, since 24 Sept
+2026).
+
+- M: run tools/htrc_ef_headwords.py for 'Vellingk' against Sveriges traktater/Carlson's Karl XII letters -- this file's own named next step, not run (HathiTrust's own site is Cloudflare-blocked, but the separate HTRC Extracted Features API works from the cloud).
+- S: search Riksarkivet's Sök-API for a surviving Kanslikollegium cipher-key volume, 1712-1714, by date/type rather than by correspondent name.
+- S: check Litteraturbanken.se or a Swedish national library digitised edition of Carlson's Karl XII brev, not tried on this host this pass.
