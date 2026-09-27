@@ -252,3 +252,23 @@ Counts (rule 4, unchanged from bUNT8): C: 0, M: 4, H: 0, I: 1 (bUNT5's line-leve
 `specs/cheap-tests/untersberg-code/align_symA_witnesses.py`, `specs/cheap-tests/untersberg-code/align_symA_witnesses_output.txt`. No new host requests (disk-only, all witness data already in `witnesses.tsv`). No subagents.
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
+
+## Second-opinion leads (SO-UNTERSBERG-LEADS, 27 Sept 2026)
+
+Landed from PR 34 (`second-opinions/chatgpt-leads-2026-09-27.md`, OpenAI GPT-5/Codex, PR-LAND-12). Leads, not verdicts; every citation below is a claim to verify, never a fact -- unchecked.
+
+- reference-dictionary; Cappelli, _Lexicon abbreviaturarum_ (2nd German ed., 1928), pp. V-VIII, 1-6, archive.org/details/LexiconAbbreviaturarum; unchecked.
+- reference-dictionary; Walther, _Lexicon diplomaticum_ (Ulm, 1756), relevant plate/column unverified, books.google.com/books?id=ZItMzqEqxPAC; unchecked.
+- reference-dictionary; Grun, _Schlüssel zu alten und neuen Abkürzungen_ (1966), bibliographic lead only, edition/page unverified; unchecked.
+- scholarship; Weber-Fleischer, "Die Überlieferung von den Herrschern im Berg," in _Sagenhafter Untersberg_ (Salzburg, 1992), pp. 17-170, a manuscript census/stemma that may hold an HS 2398 edition and sigla absent from Herzog; unchecked.
+- scholarship; Kammerhofer-Aggermann, "Ikonologische Marginalien," same volume (1992), pp. 219-266 esp. p. 222, on "Handschrift 1" imagery/codicology; unchecked.
+- scholarship; Lang, "Das Erbe der 'Lazarusgeschichte'," _MGSL_ 150 (2010), pp. 125-178, zobodat.at/pdf/MGSL_150_0125-0178.pdf, a later source-critical account with an appendix; unchecked.
+- scholarship; Dorninger, "Mythische Endzeitvorstellungen" (year unverified), pp. 3-4, plus.ac.at/wp-content/uploads/2021/02/1157260.pdf, reports a 1623 print of the Lazarus narrative; unchecked.
+- witness-print; Schöppner, _Sagenbuch der Bayerischen Lande_ vol. 1 (Munich, 1852), pp. 5-8, prints a shorter initials tradition "S.O.R.C.E.J.S.A.T.O.M."; unchecked.
+- prior-claim; untersberg-news.at page prints the six-line HS 2398 text plus a separate initials sequence "S.V.R.C.E.T.S.A.T.V.S." expanded "Surget Satum," and says that phrase is not in the six-line text itself (author/date/pagination unverified) -- a lead for a sibling initials tradition, not symA; unchecked.
+- prior-claim; Schmeh 2014 (scienceblogs.de) discusses a 1623 initials form "S.O.R.C.E.I.S.A.T.O.M.," article unpaginated, cited print not inspected; unchecked.
+- prior-claim; untersberg.org/untersbergcode.html claims Yve Kupka "resolved" the code in 2015, no method, glyph table or page-level source found; unchecked.
+- manuscript-witness; Lang reports a manuscript, apparently 18th-century, offered for sale to the City of Bad Reichenhall around 1990 (appendix cited, present location/accession status unverified); unchecked.
+- contact; Weber-Fleischer, Kammerhofer-Aggermann, Lang and Dorninger named as scholars to approach on transmission, codicology, source history and prophecy-literature context respectively (current affiliation/contact details unverified); unchecked.
+- methodology; build a same-scribe abbreviation concordance across all 28 IIIF leaves (ductus clustering, full-word contexts) before comparing symA against Cappelli/Walther again; unchecked.
+- methodology; give an Early Modern German paleographer a blind crop packet of every symA occurrence (and visually similar marks) with no "loqui vult" hypothesis primed, sign classification before expansion; unchecked.
