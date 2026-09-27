@@ -9,7 +9,7 @@ arsenal6334-longueville-1650-59	blocked	runnable	S	n
 august-van-saksen-1561-64	partial	runnable	S	n	24 Sep	Follow-ups: Dresden inquiry f.268-269; Namèche 1884 wedding pages; von Weber, Archiv f.
 baluze103-letellier-marca-1644	blocked	runnable	S	n	25 Sep	
 belmesseri-napoli-1627	open	runnable	S	n		
-berthier-napoleon-1812	open	runnable	S	n	26 Sep	This worker did not attempt to read Vilcoq's actual page images beyond the search-hit level (Persée serves them as page-image + OCR-overlay, not a plain text/PDF export found in the time available) -…
+berthier-napoleon-1812	open	runnable	S	n	27 Sep	This worker did not attempt to read Vilcoq's actual page images beyond the search-hit level (Persée serves them as page-image + OCR-overlay, not a plain text/PDF export found in the time available) -…
 birago-nevers-1571	open	runnable	S	n	25 Sep	
 bl-farnese-cipher	open	runnable	S	n		
 bl-gualterio-1700	open	runnable	S	n	25 Sep	
@@ -42,7 +42,7 @@ decode-2754-bnf-baluze156-1636	open	runnable	S	n		Next step for a future worker:
 decode-4450-bnf-fr20506-1525	open	runnable	S	n		Per D2's own flagged follow-up ("check fr.20506's neighbouring canvases for a continuation before assuming the copy is deliberately partial"): fetched the 4 Gallica canvases after f136v (canvas 276)…
 decode-9970-simancas-1527	open	runnable	S	n		
 della-torre-olanda-1690	open	runnable	S	n		
-destaing-gerard-1779	open	runnable	S	n	25 Sep	
+destaing-gerard-1779	open	runnable	S	n	27 Sep	
 eckert-1862	partial	runnable	S	n		- Follow-up suggestion (verifier, 24 Sept 2026, not done): the reading.md summary sentence "the only variants are clerical" should be corrected by the solver lane to name the T10 variants (AUDIT.md s…
 eckert-1864	partial	runnable	S	n		
 erba-2006	open	runnable	S	n	25 Sep	
@@ -52,7 +52,7 @@ fair-game-2010	open	runnable	S	n	25 Sep
 florence-dieci-responsive	blocked	runnable	S	n		## Next steps (not done here, budget/window)
 fr15564-mercoeur-1586	blocked	runnable	S	n		
 fr16092-maisse-1582	blocked	runnable	S	n	25 Sep	**Snippets cannot fully answer the row's question**, per the row's own instruction for that case, but they substantially narrow it: the right book is now known to be partially queryable, and the next…
-fr2933-salviati-1525	open	runnable	M	n	26 Sep	The named next step for whoever picks up job 1b's remainder: the crops already exist, so the next worker can start directly at the pass-A/pass-B step for f57r, skipping U0 entirely.
+fr2933-salviati-1525	open	runnable	M	n	27 Sep	**f57v (172 plain boxes, crops already cut) is the one leaf left**, the named next step for whoever picks up job 1's remainder.
 fr2980-gramont	partial	runnable	M	n		A key-image check against the Lasry and Tomokiyo tables is the next step for eh, Tb and the crosses.
 fr2988-ranzo-1520s	open	runnable	S	n	24 Sep	
 fr3022-garbino-1528	open	runnable	S	n	24 Sep	
@@ -73,7 +73,7 @@ fr3993-villeroy-1595	open	runnable	S	n	24 Sep
 fr4687-paleologue-nevers	blocked	runnable	S	n	25 Sep	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…
 fr5761-election-1519	open	runnable	M	n		This needs f105-f109 atlas-coded before it can be answered for the document as a whole -- flagged as the next step for a worker extending the atlas past f104/f110, not concluded here either way.
-fr7129-villeroy-bongars-1604	blocked	runnable	M	n	26 Sep	**Named next step (the stuck rule, one different thing): a glyph-matching transcription pass against the period aid.** A subagent is shown f.228's cells as the reference sheet plus one line crop at a…
+fr7129-villeroy-bongars-1604	blocked	runnable	M	n	26 Sep	**Next step (a different instrument, not a third pass at the same crops):** a known-plaintext check.
 gla-claudiamedici-1633	open	needs-image	S	n	24 Sep	Next step unchanged: library/ILL access to BAGK NF2 Bd.8, or the person reads it directly; REQUEST.md's GLA copy-order route (for the two shelfmarks themselves, independent of the edition question) s…
 goldbar-1933	open	runnable	S	n	25 Sep	
 harley-287-1587	partial	runnable	S	n	25 Sep	
@@ -81,7 +81,7 @@ heinsius-dopff-1702	open	runnable	S	n		Brief `.claude/briefs/runs/2026-09-24-lan
 heinsius-hermitage-1704	open	runnable	M	n	24 Sep	2317 (the candidate key) should be requested together, since comparing them is the actual next step, not two separate visits.
 heinsius-vanhaersolte-1703	open	runnable	S	n	24 Sep	Brief `.claude/briefs/runs/2026-09-24-lane-n2-csHU3.md` (LANE N2, follow-up to scHU2's round-2 harvest).
 hellen-frederick-1752	open	runnable	S	n	25 Sep	LANE OX worker OX-HEL (session_01CVGMSmAMAL3MFLp3mTVTJw) claimed this target at 02:01 UTC to do this check but stalled on an AskUserQuestion call and pushed nothing (see ROOM.md); this is its success…
-hessen-1824	partial	runnable	S	n	26 Sep	See `tools/data/de19/README.md` for the full search log and the follow-up this leaves (adding Kleist's actual novellas and Hoffmann once their clean ebook IDs are confirmed).
+hessen-1824	partial	runnable	S	n	27 Sep	See `tools/data/de19/README.md` for the full search log and the follow-up this leaves (adding Kleist's actual novellas and Hoffmann once their clean ebook IDs are confirmed).
 hessen-daenemark-1672	partial	runnable	M	n	26 Sep	Next step (not run here, out of a breadth worker's $2.5 cap): a dedicated transcription pass reading every gloss and every code occurrence at full native resolution (crops under `images/`, already fe…
 hstas-osiander-1627	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) search Württembergische Vierteljahrshefte für Landesgeschichte's own index for "Osiander" + "Diarium"/"Tagebuch"; (2) re-test LABW's viewer for J 7…
 huntington-blathwayt-madrid-1728	partial	runnable	S	n	24 Sep	Follow-ups (suggestions, not done): HMC *Polwarth* V (1961); TNA SP 36/13/129, SP 36/14/184 (Marchmont's covering letters from Cessnock, July/Aug 1729, "enclosures not forthcoming"), SP 54/19/98A-B (…
@@ -97,7 +97,7 @@ lambeth-casenowe-1586	open	runnable	S	n
 lodewijk-van-nassau-1573-74	partial	runnable	S	n	26 Sep	**Next step for a successor:** either (i) score each candidate by its *mean* excess per character rather than the *sum*, so a 3-character trigram must average better than a 1-character letter, not me…
 lope-hurtado-1522	partial	needs-person	S	n	26 Sep	Not a LOCAL-QUEUE row (no paywall or login was hit); a next step, not run here, is checking whether Universitat de València holds a separate, longer 2017 doctoral deposit (a second Teseo/RODERIC reco…
 malsburg-hessen-1636	partial	runnable	M	n	26 Sep	**Named next step.** No untried cheap step remains on this specific line of inquiry (the highest-prose-ratio unread leaf has now been read and did not yield a third sighting).
-matignon-mayenne-1586	partial	runnable	S	n	26 Sep	**Next step (not run, named per the brief): none recommended at cost within this lead.** français 3974 f.24 is retired as a comparator for the target's 1,272 unkeyed (U) codes.
+matignon-mayenne-1586	partial	runnable	S	n	27 Sep	**Next step (not run, named per the brief): none recommended at cost within this lead.** français 3974 f.24 is retired as a comparator for the target's 1,272 unkeyed (U) codes.
 maurice-rupert-1645	open	runnable	S	n	25 Sep	
 mccormick-1999	open	runnable	S	n	26 Sep	## Cheap test 4 (25 Sept 2026, LANE B3 bMCC4) -- token/nomenclator test, NEAR.md's named next step
 mlh-1976	open	runnable	M	n	25 Sep	### Where this leaves cheap test 2 (spec's next step, not run this pass)
