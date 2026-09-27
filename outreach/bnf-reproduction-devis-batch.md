@@ -1,6 +1,6 @@
 # BnF reproduction batch: 13 orders across 10 targets (row 13 added 27 Sept 2026)
 
-**Status:** part-sent (ASKS.md row 78). 27 Sept 2026 about 17:1x UTC: rows 1, 2, 11, 12, 13 submitted by the owner as quote requests on the BnF online devis form (Image Premium, envoi en ligne, service normal, partial reproduction), quotes awaited, nothing paid; rows 3-10 are in a mailbox draft (27 Sept 2026 17:2x UTC) for the owner to send. No payment made. Not a mailbox draft: this is a paste-ready
+**Status:** SENT in full (ASKS.md row 78): all 13 rows requested 27 Sept 2026, quotes awaited, nothing paid. 27 Sept 2026 about 17:1x UTC: rows 1, 2, 11, 12, 13 submitted by the owner as quote requests on the BnF online devis form (Image Premium, envoi en ligne, service normal, partial reproduction), quotes awaited, nothing paid; rows 3-10 went by email at about 17:27 UTC from the owner's own account (bnf-manuscrits-arsenal-quote-batch.md). No payment made. Not a mailbox draft: this is a paste-ready
 order for the owner's own action on the BnF's own reproduction routes, the same shape as
 `outreach/tna-page-copy-batch.md` (ASKS row 73). No personal data, no payment details, per CLAUDE.md rule 9.
 
@@ -72,5 +72,6 @@ manuscrits@bnf.fr / SINDBAD. Choose one route per item, not both.
 
 | Date | Action | Result |
 |---|---|---|
+| 27 Sept 2026 | Owner sent the quote email for rows 3-10 (eight items, Clairambault 574/575/579/1161/528 and Arsenal Ms-6829/6334/4764) from his own account to manuscrits@bnf.fr | All 13 batch rows now requested: 5 on the devis form, 8 by email; quotes awaited on both routes; no payment made. Next: price the quotes into one list as they arrive; owner approves payment by row |
 | 27 Sept 2026 | Owner placed rows 1 (fr.3251 tipped-in sheet), 13 (fr.4715 f.81 new capture), 2 (fr.3632 no.8 f.15), 11 (Ms-11639) and 12 (Ms-6314 ff.177-183) on the online devis form, one block each, Image Premium, envoi en ligne, service normal, partial reproduction | Five quote requests lodged from the owner's own BnF account; quotes expected by email to him; no payment yet. Rows 3-10: the held email in bnf-manuscrits-arsenal-quote-batch.md, with its Français 3632 line removed, is the remaining step |
 | 27 Sept 2026 | BNF-BATCH: wrote `ciphers/nevers-birago-fr3251-1572/REQUEST.md`; fetched 8 archivesetmanuscrits.bnf.fr finding-aid notices (one per item, 2s apart, browser User-Agent) and verified cotes against each; extracted the order line for every BnF item named across REQUEST.md files and ASKS rows 35/38/43/49/54/65 | Batch order drafted (12 items, 9 targets), ASKS row 78 filed at `backlog` |
