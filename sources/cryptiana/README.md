@@ -151,3 +151,21 @@ basis; no `ciphers/` folder was built.
 | `web/img/louisxiv_0nucheze1662.png` | https://cryptiana.web.fc2.com/code/louisxiv_0nucheze1662.png | 27 Sep 2026, ~17:47 UTC | 10572 | 97357786e7b25f1e732f9ccff8ebb5e212891525 | the reconstructed Colbert-Nucheze substitution table (number->letter), not a manuscript scan |
 
 See `sources/cryptiana/web/manifest_2026-09-27-mc108.tsv` for the manifest row.
+
+## Added 27 September 2026 (KEY-ADJACENT.tsv row 5 gate, parent worker INTAKE-SPINELLI)
+
+`henryvii.htm`'s Spinelli-brothers section names one letter online at the Beinecke Library (GEN MSS 109,
+record/OID 10844890) as readable with "Spinelli brothers' cipher reconstructed by Domnina" -- but the page
+itself prints only one phrase recovered from it, "la gubernation d'ispagnia", not a fuller reading or a
+transcription. Domnina's own PDF (istina.msu.ru, linked as "updated pdf") 404s as of this date -- her Fig.1
+(p.185) and any reading she prints could not be checked. The Beinecke record and its IIIF manifest name no
+transcription or decipherment either. Not found-solved; `ciphers/spinelli-beinecke-c1515` built (status
+partial), with a key of record transcribed from Tomokiyo's own separately published reconstruction of the
+same cipher (`spinelly1515.png`, "Notes added in August 2023"), since Domnina's original Fig.1 could not be
+fetched this job.
+
+| File | URL | Fetched | Bytes | sha1 | For |
+|---|---|---|---|---|---|
+| `web/img/spinelly1515.png` | https://cryptiana.web.fc2.com/code/spinelly1515.png | 27 Sep 2026, ~19:49 UTC | 148511 | dd050325416761f88896e5aa76a0b0c52943dd54 | Tomokiyo's own reconstruction of "Spinelly's Cipher", transcribed into ciphers/spinelli-beinecke-c1515/keys/key_spinelli_c1515.tsv |
+
+See `sources/cryptiana/web/manifest_2026-09-27-spinelli.tsv` for the manifest row.

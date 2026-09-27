@@ -7341,3 +7341,30 @@ on two columns settled by this worker's own zoomed crops) and registered (KEY-OF
 ... edition/page or full-text-search citation found within 6 lines"). Next step: calibrate the key against
 Tomokiyo's own five interlinear spans on this same leaf (a small known-answer set) before any blind
 transcription of the rest of the leaf, per NOTES.md.
+
+## INTAKE-SPINELLI promotion, 27 Sept 2026
+
+KEY-ADJACENT.tsv row 5 (`henryvii.htm`, Spinelli Family Papers, Beinecke record/OID 10844890, GEN MSS 109)
+is promoted from the register to a folder: `ciphers/spinelli-beinecke-c1515` (Layout intake, no
+cryptanalysis, no new reading, no class -- see its own NOTES.md). Found-solved gate: no -- Tomokiyo's own
+page (`henryvii.htm`) prints only one phrase recovered from the letter, "la gubernation d'ispagnia", not a
+transcription or fuller reading; matches Bourdeau's catalogue ("Read in part... The rest of Gen. MSS 109 has
+no published reading", already quoted in this row's `in_repo` cell from SCOUT-OWN-8). Domnina's own PDF
+(istina.msu.ru, the source of the cipher table this row's `key_location` cell names) returned a plain 404
+this job -- unreachable, not itself checked, an access gap flagged for a future worker rather than a "no"
+answer. The Beinecke record and its IIIF manifest metadata name no transcription or decipherment either. Key
+of record (`keys/key_spinelli_c1515.tsv`) is transcribed instead from Tomokiyo's own separately published
+reconstruction of the same cipher (`spinelly1515.png`, "Notes added in August 2023"), the same substitution
+`ciphers/fr4715-f61-mayenne-1592` made this same day for the same reason (Domnina's/the period original
+being unreachable, Tomokiyo's own republished table being what was actually available). Transcribed by two
+independent blind Sonnet subagent reads (2 of this job's 4 allowed vision calls) plus this worker's own
+zoomed/cropped re-examination of every cell (45 rows: 23 AB / 21 M / 1 ?) -- the crop pass settled three
+blank letter columns (q, x, z, confirmed genuinely unattested rather than a transcription miss), five
+homophone columns (d, i, l, n, t, each with two stacked symbols), and recounted the null-symbol block at 12
+(both blind passes independently guessed 10 and 11 and flagged their own counts as uncertain). Registered
+(KEY-OFFICES.tsv, KEY-DESIGN.tsv, `tools/key_design.py --check` passes). `tools/intake_gate_check.py
+spinelli-beinecke-c1515` passes ("partial ... edition/page or full-text-search citation found within 6
+lines"). One page (of 3 canvases) of the target letter fetched; a direct look confirms the catalogue's own
+"4pp. part in cipher" description (roughly the top 9 lines cipher, the rest plain Italian prose). Next step:
+locate "la gubernation d'ispagnia" on the image and calibrate the key against it (known-answer-first, per
+NOTES.md), then two blind passes on the whole letter and a 20-shuffled-key control.
