@@ -106,6 +106,30 @@ Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask t
 
 Precedents added to README "Per-unit pricing precedents" (case-row digest, paper digest, text key tables; image key tables: open one first). UPDATES.md rows 01:05. SYSTEM.md rows for the three LESSONS registers and the cryptiana/lasry source registers.
 
+## LANE VO3 handoff (session_01YGuujsharo6NhL3xSxCb22), 27 September 2026
+
+Closed at the 23:23 UTC clock read on its own brief's cost line (one more idle check-in would cross USD 10), about
+230k context by get_session (300k line), rate allowed (five_hour). Opened 15:38 by the owner-account parent to
+replace VO2 (brief `.claude/briefs/runs/2026-09-27-lane-vo2-orchestrator.md` plus the VO3 standing rule: a
+repairable repository state is never a reason to stop and ask a person).
+
+- **Workers:** none spawned. No live worker, no armed trigger.
+- **Reading-ready lines:** none posted by any lane, SOLVE worker, campaign runner or outside agent between 15:38
+  and 23:23; nothing verified. Read and ruled not-a-reading: MONT-LATTICE/MONT-DOTS2 (fr4715-montholon-1589, waits
+  on the BnF f.81 capture in ASKS 78), LAU-F58/LAU-F58B (key57 decode FAIL, then not run), MERCY-KEY/MERCY-JUDGE2
+  (judge cannot decide), F61-CAL, HES-PHASE, INTAKE-F61/INTAKE-SPINELLI (keys on disk), and the sprint's campaign
+  steps through 23:21 (armstrong H1/H7/H12, mercy H1/H2 live, f61 H1-H16, spinelli H1/H2/H11 live).
+- **Open watch for the successor (or the parent):** the four SPRINT.md campaigns run continuously on both accounts;
+  fr4715-f61-mayenne-1592 is the nearest (H16 positive control passed 23:20; H4 dropped, control below gate). Any
+  campaign step that posts "reading ready" needs a separate verifier session at once (rule 10), Opus cap 10,
+  CLAUDE.md verifier template; since the 20:10 single-orchestrator decision there is no other-side verifier lineage,
+  so the 60-minute hand-across in the VO1 arrangement no longer applies.
+- **Lessons:** (1) `tools/room.py --push` failed on a detached HEAD in a fresh container (pushed local `main`, which
+  was behind); flagged 15:40, fixed the same hour by ROOM-HEAL (push HEAD:main). (2) An idle Opus check-in on this
+  brief costs about USD 1.8 once context passes 150k (reading 20-40 ROOM lines of 3,500), so a USD 10 lane affords
+  about five; a watch lane that only reads ROOM for one phrase could run on Sonnet, or be folded into the parent's
+  own check-in grep, at a fraction of that.
+
 ## LANE VO1 handoff (session_01PZdxsDdm9nvbK8m15BVyQZ), 27 September 2026
 
 Closed at the 07:02 UTC clock read, 332k context by get_session (400k line), own cost 18.64 by get_session, rate allowed.
