@@ -33,7 +33,7 @@ try:
         f.write("tri\tb\tletter\tAB\tx\tr1\n")
         f.write("dot\tc\tletter\tAB\tx\tr1\n")
         f.write("star\tche\tword\tAB\tx\tw1\n")
-        f.write("digits85\tcarmagnola\tname\tAB\tx\tn1\n")
+        f.write("85\tcarmagnola\tname\tAB\tx\tn1\n")
     with open(signs_path, "w") as f:
         f.write("line\tpos\tkey_row\tshape_note\tconfidence\n")
         f.write("1\t1\t1\tx\tH\n")   # circle -> a
@@ -52,9 +52,23 @@ try:
     check(len(key_rows) == 6 and key_rows[1]["value"] == "a", "load_key: 6 data rows, comment/header skipped")
     check(letter_idxs == [1, 2, 3, 4], "load_key: letter_idxs picks only kind=letter rows")
     check(dw.key_row_value(key_rows, "1") == "a", "key_row_value: integer row lookup")
-    check(dw.key_row_value(key_rows, "n85") == "carmagnola", "key_row_value: nNN numeral lookup by sign text")
+    check(dw.key_row_value(key_rows, "n85") == "carmagnola", "key_row_value: nNN numeral lookup by exact sign text")
     check(dw.key_row_value(key_rows, "n99") == "_", "key_row_value: unmatched numeral -> _")
     check(dw.key_row_value(key_rows, "?") == "_", "key_row_value: '?' -> _")
+
+    # 1b. MONT-4715B, 27 Sept 2026: nNN must be an exact match, not a substring match -- a 1-digit sign
+    # (row 2, sign "1") must not resolve against an earlier row whose sign merely contains those digits
+    # (row 1, sign "10"), the shape of key_vieuville_nevers.tsv's row 22 ('1'->r) vs row 3 ('10'->b).
+    sub_key_path = os.path.join(tmp, "key_substring.tsv")
+    with open(sub_key_path, "w") as f:
+        f.write("sign\tvalue\tkind\tgrade\tsource\tnote\n")
+        f.write("10\tb\tletter\tAB\tx\trow3-shape\n")
+        f.write("1\tr\tletter\tAB\tx\trow22-shape\n")
+    sub_key_rows, _ = dw.load_key(sub_key_path)
+    check(dw.key_row_value(sub_key_rows, "n1") == "r",
+          "key_row_value: nNN exact match -- '1' resolves to its own row, not the earlier '10' row (old substring bug)")
+    check(dw.key_row_value(sub_key_rows, "n10") == "b",
+          "key_row_value: nNN exact match still resolves the 2-digit sign to its own row")
 
     # 2. normalize: lower-case, letters only, j->i, v->u
     check(dw.normalize("Vado, Ivi!") == "uadoiui", "normalize: lower/strip/j-i/v-u")

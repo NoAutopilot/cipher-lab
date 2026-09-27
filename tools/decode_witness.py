@@ -8,9 +8,11 @@ Three inputs, all TSV:
          data-row numbering that --signs' key_row column refers to.
   signs  header 'line  pos  key_row  shape_note  confidence': one row per cipher sign transcribed from the
          witness image. key_row is either an integer (1-based row number in the key file), '?' (sign not
-         placed in the key), or 'nNN' for a plain two-digit number kept as drawn (looked up against the
-         key's own 'sign' column, e.g. 'n85' against a row whose sign text contains "85"; a number with no
-         matching row decodes as unknown, same as '?').
+         placed in the key), or 'nNN' for a plain two-digit number kept as drawn (looked up by an exact
+         match, after stripping surrounding whitespace, against the key's own 'sign' column, e.g. 'n85'
+         against a row whose sign text is exactly "85" -- not a substring match, which would let a 1-digit
+         sign resolve against an unrelated earlier row whose sign merely contains those digits, MONT-4715B,
+         27 Sept 2026; a number with no matching row decodes as unknown, same as '?').
   plain  header 'line  text  confidence': the clerk's plaintext decipherment, one row per line (its own line
          numbers if the witness has no interlinear correspondence -- decode_witness only needs the running
          text, not a line-for-line correspondence, since alignment is global over the whole passage).
@@ -78,7 +80,7 @@ def load_key(path):
 
 def _numeral_lookup(rows, digits):
     for i, r in rows.items():
-        if digits in r["sign"]:
+        if r["sign"].strip() == digits:
             return r["value"]
     return None
 
