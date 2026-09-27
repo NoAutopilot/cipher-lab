@@ -1,0 +1,12 @@
+{
+ "p1": {
+  "image": "glyphs/p1_clean.png",
+  "box": null,
+  "median_h": 93.0
+ },
+ "p2": {
+  "image": "glyphs/p2_clean.png",
+  "box": null,
+  "median_h": 118.5
+ }
+}
