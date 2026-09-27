@@ -1,0 +1,23 @@
+line	pos	key_row	shape_note	confidence
+line1	1	11	bold cursive three-hump "m" shape, small mark near top right hump, joined directly onto the end of "Biagio"	H
+line1	2	45	rounded loop at upper right with a long tail sweeping down-left ending in a flat leftward foot-stroke	M
+line1	3	31	small backward-c / hook shape curving from upper right to lower left, like a closing parenthesis with a curl	M
+line1	4	23	angular zigzag stroke descending into a flat, squared base, long-s-like	M
+line1	5	34	tall vertical stroke with a loop near the top and a small oval at the base, reads like a plain letter "d"	M
+line1	6	41	small rounded loop (omega-like) sitting over a dot below it	L
+line1	7	14	small closed loop/circle with a curling tail, like a comma merged with an "o"	L
+line1	8	29	two short horizontal strokes crossed by a diagonal, clean not-equal "≠" shape	H
+line1	9	12	bold plain digit "3" shape, same solid cursive ink as neighboring signs	H
+line1	10	35	tangled double-stroke shape like a capital A/4 crossed near the top, extra loop at the bottom	M
+line1	11	36	compound ligature: a flag/tick at top over a vertical stroke curving into a loop, with a diagonal stroke through it	L
+line1	12	13	plain clean cross/plus shape, two simple intersecting strokes (no extra hash tick)	M
+line1	13	10	two roughly parallel horizontal wavy strokes stacked, like a hand-drawn double dash / equals sign	H
+line1	14	24	small hook/flag at the top connecting down into a loop below	L
+line1	15	27	large angular shape like a capital A/lambda, long ascending stroke into an arch with a flat foot at the base	M
+line1	16	19	bold thick "Z" / digit-2 shape, rounded top loop and angular lower stroke	H
+line1	17	26	two short parallel diagonal strokes with a small dot near the lower left	M
+line1	18	47	large "X" formed by two crossing diagonal strokes, with a short flourish stroke near the top	H
+line1	19	12	bold plain digit "3" shape, same style as position 9 (overlap segment s4, continuation past the X sign)	H
+line1	20	45	hook/flourish at the top curling down into a loop with a descending tail, same general form as position 2	L
+line1	21	6	open loop with a curling tail, clean "6"-like shape	M
+line1	22	57	compound ligature (loop plus an angular stroke) right at the faded/torn edge of the crop; page appears blank or damaged immediately after	L
