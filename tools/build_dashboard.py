@@ -16,6 +16,7 @@ import html
 import json
 import os
 import re
+import sys
 from collections import Counter
 
 E = html.escape
@@ -271,13 +272,36 @@ def nclass(r):
     return int(m.group(1)) if m else None
 
 
+AUDIT_STATUS = {"two audits": 2, "one audit": 1, "none": 0}
+_heuristic_rows = []
+
+
 def audits(r):
+    """Audits written on a result, read from its explicit `audit_status` field (BOARD-COUNTS, 27 Sept 2026,
+    CODEX-REVIEW-2026-09-27.md s.2). Rows without the field fall back to the old grade-text heuristic, which
+    treated any N4 or kind=solve row as two audits; each such row is named on stderr once."""
+    if "audit_status" in r:
+        return AUDIT_STATUS.get(r["audit_status"], 0)
+    if r.get("title") not in _heuristic_rows:
+        _heuristic_rows.append(r.get("title"))
+        print(f"warning: no audit_status field, old heuristic used: {r.get('title', '')[:80]}", file=sys.stderr)
     g = r.get("grade", "")
     if "two audits" in g or (nclass(r) or 0) >= 4 or r.get("kind") == "solve":
         return 2
     if "audit" in g.lower():
         return 1
     return 0
+
+
+def novelty(r, field):
+    """N-class from an explicit per-row field (plaintext_novelty or mapping_novelty); None when absent."""
+    m = re.search(r"N([0-5])", r.get(field, "") or "")
+    return int(m.group(1)) if m else None
+
+
+def docs_of(r):
+    """Physical documents a row covers: `documents` if given, else [document_id], else the title."""
+    return r.get("documents") or [r.get("document_id") or r.get("title", "")]
 
 
 def folder_of(r):
@@ -404,16 +428,50 @@ def copy_block(uid, to, subject, text):
 # ---------------------------------------------------------------- readings
 
 LADDER = [("N0", "already known"), ("N1", "text in print"), ("N2", "mapping new"),
-          ("N3", "nothing found"), ("N4", "everywhere looked"), ("N5", "confirmed")]
+          ("N3", "nothing found"), ("N4", "principal sources searched"), ("N5", "confirmed")]
 classed = [r for r in results if nclass(r) is not None and r["kind"] not in ("dataset", "correction", "negative")]
 classed.sort(key=lambda r: (-(nclass(r)), -audits(r), r["title"]))
 counts = Counter(nclass(r) for r in classed)
-counted = lambda r: nclass(r) >= 3 and audits(r) >= 2 and not r.get("qa_flag")  # a QA flag holds a result out until its lane clears it
-n_unique = sum(1 for r in classed if counted(r))
+READING_SCOPES = ("recovered-passages", "completed-reading")
+
+
+def counted(r):
+    """A reading counts only with plaintext_novelty >= N3, two audits and a reading scope (recovered passages or a
+    completed reading); a key to a text already in print is not a reading. A QA flag holds a result out until its
+    lane clears it. Rows without the new fields keep the old rule (N3+ and the audit heuristic)."""
+    if r.get("qa_flag"):
+        return False
+    if "claim_scope" in r:
+        return ((novelty(r, "plaintext_novelty") or 0) >= 3 and r.get("audit_status") == "two audits"
+                and r["claim_scope"] in READING_SCOPES)
+    return (nclass(r) or 0) >= 3 and audits(r) >= 2
+
+
+def counted_key(r):
+    """Third count: a key or mapping to text already in print, mapping_novelty >= N3 after two audits."""
+    return (not r.get("qa_flag") and r.get("claim_scope") == "key-to-known-text"
+            and (novelty(r, "mapping_novelty") or 0) >= 3 and r.get("audit_status") == "two audits")
+
+
+def counted_contrib(r):
+    """Fourth count: catalogue contributions and corrections that carry a verifier's AUDIT.md class."""
+    return r.get("claim_scope") in ("catalogue-contribution", "correction") and r.get("audit_status") in ("one audit", "two audits")
+
+
+def n_docs(pred, rows):
+    """Count in documents, not rows: each document id once across every row that passes `pred`."""
+    return len({d for r in rows if pred(r) for d in docs_of(r)})
+
+
+n_passages = n_docs(lambda r: counted(r) and r.get("claim_scope", "recovered-passages") == "recovered-passages", results)
+n_complete = n_docs(lambda r: counted(r) and r.get("claim_scope") == "completed-reading", results)
+n_keys = n_docs(counted_key, results)
+n_contrib = n_docs(counted_contrib, results)
+n_unique = n_passages + n_complete
 KEYSRC = {"ours": ("k-ours", "our key", "We recovered the key ourselves: by cryptanalysis, by aligning a plain copy, or by identifying the codebook."),
           "period": ("k-period", "period key, rebuilt by us", "The key comes from a decipherment, key sheet or cipher book of the time, which we turned into a working key."),
           "published": ("k-pub", "published key", "The key was published by someone else (credited in AUDIT.md); we applied it.")}
-n_first = sum(1 for r in classed if r.get("key") == "ours" and counted(r))
+n_first = n_docs(lambda r: r.get("key") == "ours" and counted(r), results)
 
 
 def reading_row(r, idx):
@@ -434,6 +492,10 @@ def reading_row(r, idx):
     if rlabel:
         chips += f'<span class="chip {rk}">{E(rlabel)}</span>'
     chips += f'<span class="chip c-aud">{["no audit", "one audit", "two audits"][a]}</span>'
+    if r.get("claim_scope"):
+        chips += f'<span class="chip c-scope" title="{E(r.get("unresolved_spans", ""))}">{E(r["claim_scope"].replace("-", " "))}</span>'
+    if r.get("completeness") and r["completeness"] != "n/a":
+        chips += f'<span class="chip c-comp" title="secure tokens (H+C+S) over cipher tokens">{E(r["completeness"])} secure</span>'
     if r.get("qa_flag"):
         chips += f'<span class="chip qa-flag" title="{E(r["qa_flag"])}">QA flag open: not counted</span>'
     if so:
@@ -883,7 +945,7 @@ page = f'''<title>Cipher Lab Board</title>
   <h1>Cipher Lab Board</h1>
   <p class="small"><a href="https://github.com/NoAutopilot/cipher-lab/blob/main/SYSTEM.md">System</a>: how the work is done, roles, gates and levers</p>
   <p class="headline">{E(headline)}</p>
-  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_unique}</b> readings at N3 or better after two audits</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
+  <div class="strip"><span>Updated <b>{E(d["updated"])}</b></span><span><b>{n_passages}</b> documents with recovered passages, no prior decipherment located (N3+, two audits)</span><span><b>{n_complete}</b> completed readings (N3+, two audits)</span><span><b>{n_keys}</b> keys or mappings to text already in print (N3+, two audits)</span><span><b>{n_contrib}</b> catalogue contributions and corrections (with a verifier class)</span><span><b>{n_first}</b> with our own key and no earlier decipherment found</span><span><b>{len(lanes)}</b> lanes, <b>{live_workers}</b> workers live</span><span><b>{len(ready)}</b> to send</span><span><b>{jq}</b> JSTOR rows queued</span></div>
 </header>
 
 <section class="near" id="near-solves">
@@ -967,4 +1029,4 @@ page = f'''<title>Cipher Lab Board</title>
 open("dashboard.html", "w", encoding="utf-8").write(page)
 os.makedirs("docs", exist_ok=True)
 open("docs/index.html", "w", encoding="utf-8").write(page)
-print(f"dashboard.html and docs/index.html written: {len(page)} bytes, {len(targets_all)} targets, {len(workers_all)} workers, {len(results)} results, {n_unique} unique")
+print(f"dashboard.html and docs/index.html written: {len(page)} bytes, {len(targets_all)} targets, {len(workers_all)} workers, {len(results)} results; documents: {n_passages} recovered-passage / {n_complete} completed / {n_keys} keys-to-known-text / {n_contrib} contributions")

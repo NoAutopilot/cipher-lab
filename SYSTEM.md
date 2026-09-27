@@ -58,7 +58,7 @@ Column key for every table: **name**, **what it does**, **defined in**, **enforc
 | Solver-repository issues (Bourdeau, Aymeloglu) | Issue text drafted in `outreach/bourdeau-issues.md`; the owner posts it from their account | CLAUDE.md Outreach | the owner | the owner |
 | Breakthrough alert routine | "Cipher Lab: breakthrough alert (email)": the parent fires it for a real result with a plain graded description | CLAUDE.md Operating model; parent.md duty 7 | the parent | the owner |
 | Weekly retrospective routine | Scheduled retrospective on top of the 12-row / USD 60 trigger | CLAUDE.md Operating model "Routines" | the routine; the parent | the owner |
-| Published board | GitHub Pages at noautopilot.github.io/cipher-lab, rebuilt from status.json | ONBOARDING.md; `tools/build_dashboard.py` | the parent after any class change | the parent |
+| Published board | GitHub Pages at noautopilot.github.io/cipher-lab, rebuilt from status.json; four counts from per-row fields (document_id, claim_scope, plaintext_novelty, mapping_novelty, completeness, audit_status), counted in documents | ONBOARDING.md; `tools/build_dashboard.py` | the parent after any class change | the parent |
 
 ---
 

@@ -1,5 +1,5 @@
 {
-  "updated": "26 Sep 2026, 16:29 UTC",
+  "updated": "27 Sep 2026, 14:23 UTC",
   "stages": [
     "Identified",
     "Verified unsolved",
@@ -1117,7 +1117,21 @@
       "grade": "N4 after two audits (V8-NA5797 04:09, V8-NA5797-2 04:41 UTC) on the two blanks Groen IV no. CDXLIV pp.223-225 left undeciphered: 'Landgraf' (161) and 'Pfaltzgraf' (153), grade H each, valued from a clean period interlinear gloss on the sibling 5550 and located with the Lodewijk 1574 table (ours, aligned from sibling decipherments); letter text N0 (printed by Groen); key_full v3 shows 0 regressions on the 4613/4615 controls and two fresh-instance re-derivations were byte-identical; V8-QA7 (window 03:08-05:44) clean on the lodewijk items; gate 2: open-index, Google Books and JSTOR rows 88-91 answered, no relevant hit. A third blank (172, p6) is kept out of this row: V8-NA172 classed it N4, the second audit V8-NA172-2 lowered it to N2 (Lossen 1882 p.212 prints the fact, not the blank), and V9-NA172-3 (26 Sept 08:06 UTC) withdrew it from classification (AUDIT.md A4: three period values, none licensed for 5797), and the code's value is contested -- le Conte Jean by the 4614 decipherment, le Conte Louis by the 5801 period gloss (AX2-5801ADJ), so the token stays grade M with no licensed value; 4610/4611/4616 stay N4 after the key revision (V8.3)",
       "line": "LANE AX (owner account) round 3: the 1574 table plus name codes recovered from the 5550 interlinear gloss and the 4614 companion decipherment fill two of the six passages (a third, 172, is under its own audit) Groen could not decipher in 5797; the 4610/4611/4616 unread tokens fell from 541 to 320 under the merged key.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74",
-      "text": "known (Groen IV no. CDXLIV prints the letter; only the blanks are new readings of ours)"
+      "text": "known (Groen IV no. CDXLIV prints the letter; only the blanks are new readings of ours)",
+      "document_id": "KHA A 3, 895/I (WVO 5797), Nassau brothers to Orange, 22 Oct 1573",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "4/7",
+      "unresolved_spans": "146 unread in both blanks and 136 in the p5 blank; the other four blanks (codes 172, 173, 182, 156) and the p.222 paragraph unread; p6_spot4 withdrawn (A4)",
+      "audit_refs": [
+        "AUDIT.md '## V8 audit: WVO 5797 and key_full revision (26 Sept 2026)'",
+        "AUDIT.md '## V8 second audit (A2): WVO 5797 (26 Sept 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "e40bac6 (axmerge3/v2/reading_5797_full.txt, last commit before A2 at 90f152c)",
+      "superseded_by": "",
+      "fields_source": "lodewijk-van-nassau-1573-74/AUDIT.md V8.1 and A2.1 tables (153 H, 161 H in blanks of 153.146.137 and 126.161.136.146; 126, 137 C); letter itself N0 (Groen IV CDXLIV); class unchanged after the Huysman reply section"
     },
     {
       "date": "25 Sept 2026",
@@ -1127,7 +1141,20 @@
       "line": "The British Library's catalogue does not say that Add MS 6912 (seven pages of numerals, each signed C.R. and countersigned George Digby) is the cipher Charles Wheatstone deciphered and printed in 1862 for the Philobiblon Society, 'Instructions pour le Sieur de Goffe' on the 1644 Orange marriage proposal. A check-solved worker made the identification from Ellis's 1858 description and Wheatstone's covering letter, and a separate verifier confirmed it against the British Museum's 1849 Index of Additional Manuscripts (6912 is the only Charles I cipher paper in the 1783-1835 accessions) and found the instructions themselves printed in clear from the Orange side by Groen van Prinsterer in 1859. Class N0: nothing here is new to the world, only to the shelfmark; the contribution is the shelfmark-to-publication link, which the verifier's AUDIT.md gives with its search log.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bl-charles-digby",
       "key": "published",
-      "text": "known"
+      "text": "known",
+      "document_id": "BL Add MS 6912",
+      "claim_scope": "catalogue-contribution",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "n/a",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict' (V6-DIGBY)"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "bl-charles-digby/AUDIT.md section 1; identification of Wheatstone's 1862 document"
     },
     {
       "date": "25 Sept 2026",
@@ -1137,7 +1164,21 @@
       "line": "Three days after Mookerheyde, Jan van Nassau's report of the defeat to his brother ends in two cipher lines. They read under the letter table this repository rebuilt from the period decipherments of WVO 4613 and 4615: 'der konig ... van polen ... will' and 'offentli[ch] ... es', 26 of 32 codes; two blind passes agree on every numeral and a fresh re-derivation reproduces the reading. The clear part of the letter is summarised in WVO; no print of the cipher lines was found. Partial: six codes are not in the table and two line-end words are lost at a torn edge.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75",
       "key": "ours",
-      "text": "new"
+      "text": "new",
+      "document_id": "WVO 5551, Jan van Nassau to Orange, Cologne, 17 Apr 1574 (cipher lines)",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "23/32",
+      "unresolved_spans": "six codes not in the table; two line-end words lost at a torn edge",
+      "audit_refs": [
+        "AUDIT.md '## V-TX (LANE TX), 25 September 2026'",
+        "AUDIT.md '## V-TX2 second audit (LANE TX), 25 September 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "f6e1c8d (reading_5551.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "jan-van-nassau-1572-75/AUDIT.md V-TX and V-TX2 verdicts; counts C 23, I 2, M 1, U 6 of 32 from the row's grade (NOTES.md)"
     },
     {
       "date": "25 Sept 2026",
@@ -1147,7 +1188,21 @@
       "line": "The key sheet in the Condes de Linhares papers (ANTT PT/TT/CLNH/0086/11) says each number points to a page, column and word of 'o Diccionario'. LANE LX tested free scans against its worked example and found the book: A New Pocket Dictionary of the Portuguese and English Languages, abridged from Vieyra, Part I, London 1809; all twelve example groups land on the exact word. The two-page mid-letter fragment on m0002 then decodes 25 of 26 groups at grade H, one at M; pages 1 and 4 of the letter are not in the item, so no connected gloss is offered yet. A separate verifier classes both the reading and the identification N3. Safe sentence in AUDIT.md. On 25 Sept the Portuguese language judge, re-run on a corpus of the letter's own period (Correio Braziliense and O Investigador Portuguez, 1808-1819, 3.2 million letters), passes the reading (-1.044 against a real-text floor of -1.100; 192 of 200 genuine period windows pass the same gate), so the reading now counts; it stays below N4 because the edition most likely to print this letter, Coutinho's Textos Políticos, Económicos e Financeiros (Banco de Portugal, 1993), has not yet been read; a worker is on it.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-linhares-chave",
       "key": "ours",
-      "text": "new"
+      "text": "new",
+      "document_id": "ANTT PT/TT/CLNH/0086/11 m0002 (Linhares letter fragment)",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "24/26",
+      "unresolved_spans": "pages 1 and 4 of the letter are not in the item; 2 groups at M",
+      "audit_refs": [
+        "AUDIT.md '## 1. Executive verdict'",
+        "AUDIT.md '## 11. Second audit (AUD2, 25 Sept 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "26267d0 (reading.txt at AUD2, 2805c2f); revised later at a4255e1",
+      "superseded_by": "",
+      "fields_source": "antt-linhares-chave/AUDIT.md sections 1 and 11 (both N3); H 24, M 2 of 26 from the row's grade (fresh re-derivation 25 Sept)"
     },
     {
       "date": "25 Sept 2026",
@@ -1165,7 +1220,21 @@
       "line": "Nationaal Archief 3.01.17 inv.nr 1538 holds the plain copy (ff.208-209) and the cipher copy (ff.210-211) of the 19/29 Sept 1657 letter printed in Brieven aan Johan de Witt I (1919) pp.405-406, whose footnote calls the cipher 'onopgelost'. Aligning the pair rebuilt 53 codes; a fresh re-derivation agrees on every code it found evidence for. A separate verifier classes the key N3; the letter's text is N1, since it is already printed. Named gap: Postma's 2006 dissertation on this correspondence was not reachable.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/vanbeuningen-dewitt-1657",
       "key": "ours",
-      "text": "known"
+      "text": "known",
+      "document_id": "Nationaal Archief 3.01.17 inv.nr 1538 ff.210-211 (cipher copy of Van Beuningen to De Witt, 19/29 Sept 1657)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N3",
+      "completeness": "446/517",
+      "unresolved_spans": "71 coded tokens without a value; Postma's thesis unread",
+      "audit_refs": [
+        "AUDIT.md '## Verdict table'",
+        "AUDIT.md '## Second audit (AUD2, 25 Sept 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "d3da7d9 (reading.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "vanbeuningen-dewitt-1657/AUDIT.md verdict table and AUD2 (key N3, text N1: printed in Brieven aan Johan de Witt I pp.405-406); C 446 of 517 from the row's grade"
     },
     {
       "date": "25 Sept 2026",
@@ -1204,7 +1273,21 @@
         "Nassau-oranische Korrespondenzen"
       ],
       "key": "ours",
-      "text": "new"
+      "text": "new",
+      "document_id": "Dresden Loc. 9941/3 f.266r-v (WVO 53), Orange to August, Breda 24 Oct 1561 (cipher postscript)",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "238/364",
+      "unresolved_spans": "126 signs at M (a proposed cryptanalytic reading); KHA Collectie Japikse copies unseen",
+      "audit_refs": [
+        "AUDIT.md '# A2: second audit of 126, first verification of 53 and 57'",
+        "AUDIT.md '# Second audit 53/57 (A3)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "6de6450 (reading_53.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "august-van-saksen-1561-64/AUDIT.md A2.4 and A3.1 (N3), raised by '# N4 decision (D2)' D2.4; held by the Huysman-reply ruling; S 238, M 126 of 364 from A3.1"
     },
     {
       "date": "24 Sept 2026",
@@ -1213,7 +1296,21 @@
       "title": "Elector August to Orange, Torgau 18 Nov 1561, cipher enclosure (WVO 57, KHA A 11/XIV B/41-6)",
       "grade": "N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', two audits); C 247, M 53 of 300 signs",
       "line": "Read with the key of Orange's 1562 cipher, recovered from a sibling letter's contemporary decipherment (WVO 74), as secret news that the Emperor had asked August to elect Maximilian King of the Romans in his own lifetime. Demandt's regest summarises only the clear text; August's minute in Dresden, with a 'Zettel', has not been seen and may carry the enclosure in clear.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
+      "document_id": "KHA A 11/XIV B/41-6 p3 (WVO 57), August to Orange, Torgau 18 Nov 1561 (cipher enclosure)",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "247/300",
+      "unresolved_spans": "53 signs at M; the Dresden minute ('Zettel') unseen",
+      "audit_refs": [
+        "AUDIT.md '# A2: second audit of 126, first verification of 53 and 57'",
+        "AUDIT.md '# Second audit 53/57 (A3)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "c8ce8a1 (reading_57.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "august-van-saksen-1561-64/AUDIT.md A2.4, A3.1, D2.4 (N4), 'Re-check 57 against DNOK (V8)' (held); C 247, M 53 of 300 from A3.1"
     },
     {
       "date": "24 Sept 2026",
@@ -1231,7 +1328,21 @@
         "qui est cause que j'ay faict ledit article a part",
         "pour vous donner cognoissance de tout"
       ],
-      "key": "published"
+      "key": "published",
+      "document_id": "BnF fr.2980 f.29r (no.21), Gramont to Villandry, Rome, 20 May 1530",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "533/568",
+      "unresolved_spans": "30 signs uncertain, 5 unkeyed",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## Second audit (adversarial)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "864ecba (reading.txt at the second audit, bf4ca6c); revised later at 94eb23d",
+      "superseded_by": "",
+      "fields_source": "fr2980-gramont/AUDIT.md sections 1 and 'Second audit (adversarial)'; N4 from 'N4 decision (final families)' section 3; 533 H, 30 M, 5 U of 568 from its safe sentence for no.21"
     },
     {
       "date": "20 Sept 2026",
@@ -1246,7 +1357,25 @@
         "Meigs to Butler, 22 April 1864, 10.45 AM",
         "Huntington Library mssEC 19 p.49 and mssEC 25 pp.77, 79"
       ],
-      "key": "period"
+      "key": "period",
+      "document_id": "Huntington mssEC 19 p.49, E4 (Fox to Butler, 21 Apr 1864)",
+      "documents": [
+        "Huntington mssEC 19 p.49, E4 (Fox to Butler, 21 Apr 1864)",
+        "Huntington mssEC 19 p.49, E5 (Meigs to Butler, 22 Apr 1864)"
+      ],
+      "claim_scope": "completed-reading",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "31/31",
+      "unresolved_spans": "none among the code words; archival copies (NARA M504, Meigs letterbooks) unread; most words already public in clear since 2018",
+      "audit_refs": [
+        "AUDIT.md '## 1. Executive verdict'",
+        "AUDIT.md '## Second audit (adversarial), 24 Sept 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "ae37197 (reading.md at the second audit, c2ac891); revised later at 5a895f9",
+      "superseded_by": "",
+      "fields_source": "eckert-1864/AUDIT.md sections 1 and 'Second audit (adversarial)'; N4 from '## N4 set (LANE W2 worker E2)' section 3 per telegram; code words E4 H 11, E5 H 20 from NOTES.md line 274. Two telegrams on one ledger page, counted as two documents"
     },
     {
       "date": "24 Sept 2026",
@@ -1255,7 +1384,21 @@
       "grade": "N4 (no prior decipherment located)",
       "line": "Read with the key Tomokiyo published: 509 of 638 cipher tokens at grade H, about 23 of 37 lines continuous French, 70 signs unkeyed; no contemporary decipherment. No prior decipherment or printed plaintext located in the Danzay editions, the Scottish and English state-paper series or the Danish regesta (AUDIT.md, two audits, 24 Sept 2026). Partial. The letter ends on f.36r (Copenhagen, signed Dantzay), same class N3 (AUDIT.md 'f.36r'): 37 of 67 cipher tokens at grade H, 'avecques le peu de perte pour le change' and 'par deça' read; three stretches and the f.35v/f.36r join unread. A blind second reader agreed on 86.8 percent of signs; 11 of its 12 proposed changes were accepted on the image and applied.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr20140-danzay-1557",
-      "key": "published"
+      "key": "published",
+      "document_id": "BnF fr.20140 f.35r-36r, Danzay to the Cardinal of Lorraine, 27 Jan 1557",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "546/705",
+      "unresolved_spans": "70 signs unkeyed on f.35; about 14 f.35 lines not continuous French; the f.35v/f.36r join unread",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## Second audit (adversarial), 24 Sept 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "2b12166 (reading.txt at the second audit, 3e7130f); revised later at 5cb79c5",
+      "superseded_by": "",
+      "fields_source": "fr20140-danzay-1557/AUDIT.md sections 1 and 'Second audit (adversarial)'; N4 from 'N4 decision (Cryptiana closed)' and held at 'Gate 2 (V-GATE2)'; f.35 H 509 of 638 plus f.36r H 37 of 67 from 'N4 decision' section 4. f.35 and f.36r are one letter (AUDIT.md 'f.36r' section 1)"
     },
     {
       "date": "24 Sept 2026",
@@ -1273,7 +1416,20 @@
       "line": "5,281 of 5,725 signs read with Tomokiyo's 1526 key from a two-pass transcription rebuilt by glyph clustering; Jacqueton printed it in 1892 from the decipherment at f.31. The reading stands as an independent check of the edition.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy452-carpi-1520",
       "gap": "nothing: Jacqueton 1892 prints both the text and its decipherment",
-      "key": "published"
+      "key": "published",
+      "document_id": "BnF Dupuy 452 ff.28r-29v",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "not given in row",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 3. Classification'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "dupuy452-carpi-1520/AUDIT.md section 3; grade 'N0, F0'"
     },
     {
       "date": "23 Sept 2026",
@@ -1283,7 +1439,21 @@
       "line": "687 tokens read from the Latin cipher original with the leaf's own gloss and a 99.8 percent control; printed only in French translation in the Reichstagsakten (1896) from another manuscript. Nobody had linked the two.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/dupuy468-anhalt",
       "gap": "nothing above N1: the French translation is in print; the Latin cipher original was unlinked, which is the F1 contribution",
-      "key": "period"
+      "key": "period",
+      "document_id": "BnF Dupuy 468 f.28",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "completeness": "not given in row",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## Second, adversarial audit (23 September 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "dupuy468-anhalt/AUDIT.md section 1 and the second audit ('Verdict: N1. The plaintext has been in print since 1896')"
     },
     {
       "date": "23 Sept 2026",
@@ -1294,7 +1464,20 @@
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/bowes-walsingham-1583",
       "gap": "nothing above N1: the names are printed in the 1842 letter-book; the sign table is the F2 contribution",
       "key": "ours",
-      "text": "known"
+      "text": "known",
+      "document_id": "BL Cotton Caligula C VII (Bowes to Walsingham, 1583, eleven fragments)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "completeness": "not given in row",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "bowes-walsingham-1583/AUDIT.md section 1; later sections are follow-up searches and the V-GATE2 reply note, not a second audit"
     },
     {
       "date": "20 Sept 2026",
@@ -1304,7 +1487,21 @@
       "line": "Machine-readable Cipher No. 1 and No. 2 keys; every reading checked against print.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1864",
       "gap": "n/a: seventeen match the Official Records word for word",
-      "key": "period"
+      "key": "period",
+      "document_id": "Huntington mssEC 19 (twenty ledger entries read with cipher book mssEC 41)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "completeness": "20/20 entries at H",
+      "unresolved_spans": "E4 and E5 (the 2 N3 entries, later N4) are counted under their own row",
+      "audit_refs": [
+        "AUDIT.md '## 1. Executive verdict'",
+        "AUDIT.md '## Second audit (adversarial), 24 Sept 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "eckert-1864/AUDIT.md; grade 'H 20 of 20; 17 N1, 1 N1 (Lincoln), 2 N3'"
     },
     {
       "date": "23 Sept 2026",
@@ -1328,7 +1525,20 @@
       "title": "Eckert keys, 23 checked readings and the corpus-status finding offered to the Huntington Library",
       "grade": "offered, reply pending; 1862 readings N1 (audit 24 Sept)",
       "line": "The Zooniverse project never launched its decoding phase; the mechanical corpus pass is possible and was offered as an edition, not a solve. The 1862 folder linked here had no AUDIT.md when this was offered (outreach gate 1 unmet); its audit of 24 Sept 2026 puts all ten 1862 readings at N1, and no CONTRIBUTIONS.md row records the offer.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1862"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/eckert-1862",
+      "document_id": "Huntington mssEC 15 (the 1862 'Ciphers Sent' readings)",
+      "claim_scope": "catalogue-contribution",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "completeness": "n/a",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "eckert-1862/AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "eckert-1862/AUDIT.md section 1; offer to the Huntington"
     },
     {
       "date": "24 Sept 2026",
@@ -1465,7 +1675,21 @@
       "grade": "N4 (no prior decipherment located)",
       "line": "Continuous French on 32 of 55 lines; N4 (no prior decipherment located) after two audits and the final-families decision of 24 Sept 2026; outreach waits on the Gramont JSTOR rows. 24 Sept 2026 08:00 (LANE G2 worker E): two more values at grade S in the extended f.30 reading with a shuffled-position control (Tb=O, q=B); extended H1486 S181 M239 U63 of 1969; f.30r L12 now French with gaps, L01, L02, L11 still not.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr2980-gramont",
-      "key": "published"
+      "key": "published",
+      "document_id": "BnF fr.2980 f.30r-v (no.22), Gramont to Francis I, Rome, 20 May 1530",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "1667/1969",
+      "unresolved_spans": "239 signs at M and 63 unkeyed; f.30r L01, L02, L11 not yet French",
+      "audit_refs": [
+        "AUDIT.md '## f.30'",
+        "AUDIT.md '## Second audit (adversarial), f.30, 24 Sept 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "e8567d0 (reading_f30_extended.txt at the second audit, 649f359); revised later at ec48dcd",
+      "superseded_by": "",
+      "fields_source": "fr2980-gramont/AUDIT.md '## f.30' verdict and its second audit (N3), N4 from 'N4 decision (final families)' section 3; extended H 1486, S 181, M 239, U 63 of 1969 from the V3b note in that section"
     },
     {
       "date": "24 Sept 2026",
@@ -1506,7 +1730,20 @@
       "grade": "N0 (P3 body only; its postscript is open)",
       "line": "Birch printed these letters in 1742 with their contemporary decipherment; we aligned it to the groups, which gives group-level keys for the Blake, Stamford and Fauconberg ciphers and real-data benchmarks.",
       "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
-      "key": "period"
+      "key": "period",
+      "document_id": "Birch 1742, Thurloe State Papers: 14 letters with printed decipherments (P2, P3, P5+P6, P7, P8, P16-P24)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "not given in row",
+      "unresolved_spans": "P3's postscript open",
+      "audit_refs": [
+        "AUDIT.md '## P2, P3, P5+P6, P7, P8, P16-P24' Verdict"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "thurloe-printed/AUDIT.md that section"
     },
     {
       "date": "24 Sept 2026",
@@ -1515,7 +1752,20 @@
       "grade": "N0 (contemporary decipherment on f.87); key 74 groups C; f.86 C 72 / M 196, f.88 C 65 / M 88; N0 (f.87 is the contemporary decipherment)",
       "line": "f.87 deciphers both ciphered passages; the key reads f.88 at 114/143 against a control of 28-35. A key recovered from an existing decipherment, not a first reading. Verifier: N0, see AUDIT.md.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653",
-      "key": "period"
+      "key": "period",
+      "document_id": "BnF fr.5160 ff.86-88 (Brienne to Servien, 21 Nov 1659)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "137/421",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "fr5160-letellier-1653/AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "fr5160-letellier-1653/AUDIT.md section 1; f.86 C 72 / M 196, f.88 C 65 / M 88 from the grade"
     },
     {
       "date": "24 Sept 2026",
@@ -1564,7 +1814,20 @@
       "grade": "N0",
       "line": "Birch printed these four letters with their decipherment (vol. 3 pp.611-612, 620; vol. 5 pp.101-102, 421); we aligned it to the groups, extending the Blake and Montagu keys.",
       "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
-      "key": "period"
+      "key": "period",
+      "document_id": "Birch 1742, Thurloe State Papers: P9, P10, P14, P15 (Blake 4 and 6 July 1655; Protector to Blake and Mountagu 9 June 1656; Mountagu)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "not given in row",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## P9, P10, P14, P15 -- printed decipherment check'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "thurloe-printed/AUDIT.md that section"
     },
     {
       "date": "24 Sept 2026",
@@ -1573,7 +1836,21 @@
       "grade": "N4 (no prior decipherment located); two audits",
       "line": "Birch prints the cipher and no decipherment. Read with the key given by Birch's printed decipherments of Stamford's letters of 20 and 30 March 1655; Thurloe's office deciphered this system in 1655 and Tomokiyo has reconstructed and published it, and our table agrees with his on every value in this letter. H 64, C 338, M 16, U 6 of 424; eleven lines of p.188 still partly incoherent. No prior decipherment of this letter located in Birch, BHO, CSPD 1655, the Clarendon calendar, Nicholas Papers, Abbott, Clarke Papers, Gardiner, Underdown, the Bodleian catalogues, Tomokiyo's pages, the solver repositories, DECODE, Google Books or IA full text (24 Sept 2026). The original leaf, Bodleian MS Rawl. A. 24, has not been seen.",
       "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/thurloe-printed/AUDIT.md",
-      "key": "period"
+      "key": "period",
+      "document_id": "Bodleian MS Rawl. A. 24 (Stamford to Thurloe's office, Calais, 13 Mar 1655; printed with its cipher in Birch 1742 III pp.188-189)",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "402/424",
+      "unresolved_spans": "eleven lines of p.188 partly incoherent; 16 M, 6 U; the original leaf unseen",
+      "audit_refs": [
+        "AUDIT.md '## P4 -- William Stamford ... novelty audit (LANE T verifier V2, 24 Sept 2026)'",
+        "AUDIT.md '## Second audit (adversarial), P4, 24 Sept 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "a21622a (pool_1654/reading_P4.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "thurloe-printed/AUDIT.md P4 V2 audit and second audit (N3), N4 from '## N4 set, P4'; H 64, C 338, M 16, U 6 of 424 from the V2 claim paragraph"
     },
     {
       "date": "24 Sept 2026",
@@ -1581,7 +1858,20 @@
       "title": "Gustav II Adolf to Axel Oxenstierna, Nürnberg 23 July 1632 (printed cipher, Oxenstierna series letter 602): found solved",
       "grade": "N0",
       "line": "Deciphered and printed by R. Torpadie, Historisk tidskrift 8 (1888) pp. 376-383 (key table p. 382). Our reading of the letter layer, made before the verifier found Torpadie, is an independent re-decipherment: control 98.0% on letter 604 in the same layout; target graded S 665, M 29, U 77 (NOTES.md, R3 section).",
-      "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/oxenstierna-gustav-adolf-1632/AUDIT.md"
+      "link": "https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/oxenstierna-gustav-adolf-1632/AUDIT.md",
+      "document_id": "Oxenstierna series, letter 602 (Gustav II Adolf to Oxenstierna, 23 July 1632, printed cipher)",
+      "claim_scope": "correction",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "n/a",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "oxenstierna-gustav-adolf-1632/AUDIT.md"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "oxenstierna-gustav-adolf-1632/AUDIT.md; found solved"
     },
     {
       "date": "24 Sept 2026",
@@ -1590,7 +1880,20 @@
       "grade": "N0 (clear Spanish on the leaf above every cipher line; AUDIT.md); C 665, M 2 of 667 signs",
       "line": "The note writes each Spanish sentence with its encipherment below it; aligning the two gives the key (simple letter substitution, digits and pen marks, no nulls) and a reading that decode_key.py regenerates. A recovery from the document itself, not cryptanalysis.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-canada-1869",
-      "key": "period"
+      "key": "period",
+      "document_id": "RAH 9/6958, Leg. XIX nº 117/2-3",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "665/667",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "rah-canada-1869/AUDIT.md verdict; C 665, M 2 of 667 from the grade"
     },
     {
       "date": "24 Sept 2026",
@@ -1599,7 +1902,20 @@
       "grade": "N0 (interlinear decipherment on the leaf itself, not in the catalogue entry, no print located; AUDIT.md); C 307, M 31 of 338 tokens (no H: no key sheet)",
       "line": "A contemporary interlinear decipherment stands over every cipher line; aligning it gives key_1646 (84 codes, syllabic nomenclator; pairing consistency 0.863 vs shuffled <=0.448) and a reading decode_key.py regenerates. Same design family as Brienne's 1647/1651 tables, a different table.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1067-brienne-poland-1646",
-      "key": "period"
+      "key": "period",
+      "document_id": "BnF Clairambault 1067 fol.226r-227r",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "307/338",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "clair1067-brienne-poland-1646/AUDIT.md section 1; C 307, M 31 of 338"
     },
     {
       "date": "24 Sept 2026",
@@ -1607,7 +1923,20 @@
       "title": "La Luzerne to Destouches, Philadelphia 16 Jan 1781 (Huntington mssDE 108(A)): partial reading with a key rebuilt from three sibling letters' contemporary decipherments",
       "grade": "found-solved, N0 (AUDIT.md)",
       "line": "Its duplicate in the same collection, mssDE 108(B), carries Destouches's own 1781 decipherment, and a copy is in AAE CP États-Unis vol. 15 (cited in Idzerda, Lafayette Papers 3:319). Our reading, aligned to 108(B)'s decipherment, is now C 410, M 163, U 146 of 719 (was C 347 from the sibling letters' decipherments alone); found by the verifier before any further solver time. mssDE 68 is also N0 (its own complete decipherment).",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-luzerne-destouches-1781"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-luzerne-destouches-1781",
+      "document_id": "Huntington mssDE 108(A)",
+      "claim_scope": "correction",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "n/a",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## Verdict table'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "huntington-luzerne-destouches-1781/AUDIT.md verdict table; found solved"
     },
     {
       "date": "24 Sept 2026",
@@ -1616,7 +1945,26 @@
       "grade": "N4 each (no prior decipherment located; cipher passages only; partial; AUDIT.md 'N4 set', 24 Sept 2026); BLA 186's clear text printed in Rose 1831 ii 414-15",
       "line": "Key of 395 groups (grade C) from the contemporary decipherments of BLA 179, 185, 187, 188, 189, 190 and 194; one code for 1725-29 by leave-one-item-out (0.68-0.91). Partial readings: BLA 186 (Abbé Pareti to Marchmont, Madrid, 13 Sept 1728, Ripperda's escape: 20 of 24 cipher groups; the clear part of this letter was printed in English by Rose, Marchmont Papers 1831 ii 414-15, with the cipher shown only as '(Cypher.)'), BLA 191 enclosure (a) (106 of 141) and 3 of 7 code words in BLA 184. No prior decipherment located in the Huntington collection, HMC and Marchmont prints on IA, TNA Discovery descriptions or Google Books (24 Sept 2026). C 129, M 22, U 21 of 172.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/huntington-blathwayt-madrid-1728",
-      "key": "period"
+      "key": "period",
+      "document_id": "Huntington mssBLA 186 (Madrid, 13 Sept 1728, two cipher lines)",
+      "documents": [
+        "Huntington mssBLA 186 (Madrid, 13 Sept 1728, two cipher lines)",
+        "Huntington mssBLA 191 enclosure (a) (Port Ste Marie, forwarded 8 Aug 1729)",
+        "Huntington mssBLA 184 p1 (statement re Rottembourg, 1727-28)"
+      ],
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "129/172",
+      "unresolved_spans": "BLA 184's name codes unread (3 syllable groups read of 7); 16 unkeyed and 19 uncertain groups in BLA 191(a); BLA 186's clear text is printed (Rose 1831), its cipher lines are not",
+      "audit_refs": [
+        "AUDIT.md '## Verdict'",
+        "AUDIT.md '## Second audit (adversarial), 24 Sept 2026'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "10bfed8 (reading.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "huntington-blathwayt-madrid-1728/AUDIT.md first verdict and 'Class per item (second audit)' (N3 each), N4 from '## N4 set (LANE W2 worker B1)'; C 20+106+3 of 24+141+7 from the first verdict table"
     },
     {
       "date": "24 Sept 2026",
@@ -1625,7 +1973,24 @@
       "grade": "C 584, M 82, U 1 of 667 groups (no H: no key sheet); novelty N0 (AUDIT.md)",
       "line": "N0: both letters carry an interlinear decipherment on the leaf, in a second hand (probably contemporary), except nine groups on fol.262r that nothing reads; aligning it gives key_1696 (129 codes, grade C) that regenerates the reading. The folios are cited in print since 1879 (Boislisle's Saint-Simon, Mancel 1903); the deciphered text was not found in print. fol.249r is show-through, no cipher.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair1108-duvergier",
-      "key": "period"
+      "key": "period",
+      "document_id": "BnF Clairambault 1108 fol.249-250",
+      "documents": [
+        "BnF Clairambault 1108 fol.249-250",
+        "BnF Clairambault 1108 fol.261v-262"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "584/667",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "clair1108-duvergier/AUDIT.md section 1; C 584, M 82, U 1 of 667"
     },
     {
       "date": "24 Sept 2026",
@@ -1642,7 +2007,21 @@
       "grade": "126: C 214, M 26 of 240 signs, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D1)'; KHA minute with a 'Zeitung' unimaged). 57: C 247, M 53 of 300, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)', held on 'Re-check 57 against DNOK (V8)': WVO's DNOK is Demandt's regest nr. 113, HessJb 38 (1988), clear text only; Dresden minute with a 'Zettel' unseen). 53 (both pages): S 238, M 126 of 364, a cryptanalytic result, N4 (no prior decipherment located; AUDIT.md 'N4 decision (D2)'). Caveats from the WVO editor's reply (26 Sept 2026): the KHA Collectie Japikse copies of 53 and 126 (unseen) are the likeliest place for an earlier decipherment; the KHA minute of 126 ('Zeitung') and the Dresden minute of 57 ('Zettel') may carry the text in clear; Kluckhohn I nr. 148 is 30-31 Dec 1561, six weeks after 57. N-class of 53 and 126 referred to the verifier lane.",
       "line": "The Orange-Saxony symbol ciphers use more than one key. System A (WVO 74, 1562) also reads August's enclosure of 18 Nov 1561 (WVO 57: the Emperor asked August to elect Maximilian King of the Romans). System B (98, 1563) reads 126 (1564: the Queen of Spain was bled and purged and lost the child). Orange's postscript of 24 Oct 1561 (WVO 53) was read cryptanalytically on both pages (Don Carlos marriage rumour; Vendôme and Navarre; the King of France too young for it to go forward). All three are N4: no prior decipherment located in the principal editions (Groen, Gachard, Rachfahl, von Weber, Kluckhohn; Japikse's edition ends Sept 1561), the KHA and WVO records or a phrase search (AUDIT.md 'N4 decision (D1)' and '(D2)'). Unseen witnesses may carry the text in clear: Orange's KHA minute of 126 with a 'Zeitung', August's Dresden minute of 57 with a 'Zettel'.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/august-van-saksen-1561-64",
-      "key": "period"
+      "key": "period",
+      "document_id": "Dresden Locat 8510/5 f.139 (WVO 126), Orange to August, Brussels 16 Sept 1564 (cipher postscript)",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "214/240",
+      "unresolved_spans": "26 signs at M; the KHA minute ('Zeitung') and Collectie Japikse copies unseen",
+      "audit_refs": [
+        "AUDIT.md '## V3 audit of WVO 126 (cipher postscript)'",
+        "AUDIT.md '## A2.3 Item 126, second audit'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "ead347b (reading_126.txt, unchanged since)",
+      "superseded_by": "",
+      "fields_source": "august-van-saksen-1561-64/AUDIT.md V3 section 1 and A2.3; N4 per the row's grade ('N4 decision (D1)') and the Huysman-reply ruling; C 214, M 26 of 240 from the grade. The row's grade also restates 57 and 53, which have their own rows"
     },
     {
       "date": "24 Sept 2026",
@@ -1651,7 +2030,27 @@
       "grade": "C 2512, I 267, M 658, U 575 of 4012 cipher signs; partial; novelty 4610/4611/4616 N4, 4612 N3 (AUDIT.md, second audit A1, confirmed by 'N4 decision (D1)', 24 Sept 2026)",
       "line": "System: letters, five numbers each in blocks from n; numbers above 120 are names and nulls. Key aligned from WVO 4613 and 4615 against their contemporary decipherments. 4610, 4611 and 4616 read as French in stretches; most of 4612's keyed runs do not yet read as French. No letter reads straight through. 4610, 4611, 4616 N4: no prior decipherment located in the principal editions (Groen, Blok 1887 and 1889, Gachard, Kervyn, La Huguerye), the KHA inventory or WVO; Orange's printed replies (Groen IV, Lettres CDXXVII, CDXXXIII, CDLXXXIV) answer them. 4612 N3 until it has a reading.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74",
-      "key": "period"
+      "key": "period",
+      "document_id": "WVO 4610 (Lodewijk van Nassau to Orange, 1573-74)",
+      "documents": [
+        "WVO 4610 (Lodewijk van Nassau to Orange, 1573-74)",
+        "WVO 4611 (Lodewijk van Nassau to Orange, 1573-74)",
+        "WVO 4612 (Lodewijk van Nassau to Orange, 1573-74)",
+        "WVO 4616 (Lodewijk van Nassau to Orange, 1573-74)"
+      ],
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "completeness": "2512/4012",
+      "unresolved_spans": "no letter reads straight through; most of 4612's keyed runs not yet French (4612 N3); 658 M, 575 U, 267 I",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'",
+        "AUDIT.md '## Second audit (A1)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "a3401a1 (reading_4610.txt at A1, cec1a0f); revised by key_full, re-confirmed on e40bac6 (axmerge3/v2) by '## V8 audit: WVO 5797 and key_full revision'",
+      "superseded_by": "",
+      "fields_source": "lodewijk-van-nassau-1573-74/AUDIT.md section 1 and A1.1, N4 from 'N4 decision (D1)' D1.3, re-confirmed in V8.1 after the key revision and unchanged after the Huysman reply; C 2512, I 267, M 658, U 575 of 4012 from the row's grade (pre-revision counts)"
     },
     {
       "date": "24 Sept 2026",
@@ -1660,7 +2059,21 @@
       "grade": "C 454, M 92 of 546 groups (aligned to its own clear text on f.68r); N0 (AUDIT.md f.67 re-class V5b)",
       "line": "A cipher letter not recorded in earlier passes over fr.5160, found by the canvas walk; key_1659 read it first (control z 3.85), then f.68r of the same volume proved to be the letter in clear, which confirms 435 groups and adds 16 codes to the 1659 table (key_1659_ext). Savoy affairs, Madame Royale, the Duke's marriage.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/fr5160-letellier-1653",
-      "key": "period"
+      "key": "period",
+      "document_id": "BnF fr.5160 f.67 (Brienne to Servien, 10 Oct 1659)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "454/546",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "fr5160-letellier-1653/AUDIT.md '## F67.1 Verdict'",
+        "fr5160-letellier-1653/AUDIT.md '## f.67 re-class (V5b)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "fr5160-letellier-1653/AUDIT.md F67.1 and the V5b re-class; C 454, M 92 of 546"
     },
     {
       "date": "24 Sept 2026",
@@ -1668,7 +2081,20 @@
       "title": "William of Orange to Günther von Schwarzburg, 2 May 1561 (WVO 8246, Kanzlei Sondershausen 693): cipher body read with a key aligned from the sibling letter of 24 Mar 1561 (WVO 5109) and its printed plaintext (Japikse no. 236)",
       "grade": "N0 (AUDIT.md): printed deciphered in Japikse 1934 no.316 pp.343-344; our re-decipherment pp.1-3 C 817, M 53, U 83 of 953 signs",
       "line": "A 79-sign homophonic German letter cipher (two-digit numbers, doubled letters, 4000 = König), not the Orange-Saxony systems. Key aligned from 5109's cipher against the spaced passage Japikse prints as the Prince's cipher insertion (zero conflicts among C pairs). The cipher passage of 8246 is printed deciphered in Japikse, Correspondentie van Willem den Eerste I (1934), no.316, pp.343-344 (N0); our key independently regenerates that text.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/gunther-van-schwarzburg-1561"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/gunther-van-schwarzburg-1561",
+      "document_id": "Kanzlei Sondershausen 693 (WVO 8246)",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "817/953",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "gunther-van-schwarzburg-1561/AUDIT.md section 1 (printed deciphered in Japikse 1934 no.316)"
     },
     {
       "date": "24 Sept 2026",
@@ -1684,7 +2110,24 @@
       "title": "William of Orange to Louis of Nassau, 1574 (WVO 5811, 5810, 4503): partial readings under the letter table aligned from the 1573 sibling decipherments",
       "grade": "5811: C 616, I 81, M 792, U 53 of 1542; 4503: 237 tokens, I 7 M 219 U 11 (single settled reading); 5810 single pass (M 2771 of 3096); novelty: 5811 N0, 4503 N0 (AUDIT.md 'WV2 letters (V7)', 24 Sept 2026), 5810 not audited",
       "line": "Three 1574 letters read under the same table as 4610-4616, so 4612's failure is not a general 1574 change. 5799 (3 Apr 1573) fails the table (0 of 146 numerals give French, matched control 81.5%): a different key. 5194 and 5797 not transcribed. 5811 and 4503 are printed in Groen van Prinsterer, Archives IV, Lettres CDLXXXIII (pp. 364-366) and CDLXXXIV (pp. 368-369, with omissions), cited in their own WVO records; our readings are re-decipherments that agree with those prints (N0).",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/lodewijk-van-nassau-1573-74",
+      "document_id": "WVO 5811 (Orange to Lodewijk van Nassau, 1574)",
+      "documents": [
+        "WVO 5811 (Orange to Lodewijk van Nassau, 1574)",
+        "WVO 4503 (Orange to Lodewijk van Nassau, 1574)"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "616/1542",
+      "unresolved_spans": "5810 unclassed (single pass)",
+      "audit_refs": [
+        "AUDIT.md '## WV2 letters (V7): WVO 5811 and 4503'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "lodewijk-van-nassau-1573-74/AUDIT.md V7.1; 5811 C 616 of 1542"
     },
     {
       "date": "24 Sept 2026",
@@ -1700,7 +2143,20 @@
       "title": "William of Orange to Jan van Nassau, 18 Oct 1572 (WVO 5200): page 1 read with the 1572 table; the letter is printed in clear in Groen van Prinsterer, Archives 1re série IV (1837), no. CCCLXXXIX",
       "grade": "p1: H 680, M 26, U 101 of 807 tokens; decoded letters agree with Groen's print at 454/460 (shuffled control 35-37%); novelty N1 (AUDIT.md V6), found-solved",
       "line": "WVO 5200: page 1 read at grade H under the multiples-of-3 table printed in the Algemeene Konst- en Letterbode. Groen, Archives 1re série IV (1837), no. CCCLXXXIX, pp.2-6, prints the whole letter in clear, cipher passage included, and the reading agrees with it (N1, found-solved). This is an independent re-decipherment that confirms the key.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75",
+      "document_id": "WVO 5200 (Orange to Jan van Nassau, 18 Oct 1572), page 1",
+      "claim_scope": "correction",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "completeness": "680/807",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "jan-van-nassau-1572-75/AUDIT.md '## V6 (LANE V2), 24 September 2026' Verdict"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "jan-van-nassau-1572-75/AUDIT.md V6 verdict; found solved (Groen)"
     },
     {
       "date": "24 Sept 2026",
@@ -1732,7 +2188,20 @@
       "title": "Jan van Nassau to William of Orange, Dillenburg, 21 Nov 1573 (WVO 5549): enciphered closing stretch read under Lodewijk's 1574 table; its plaintext is printed in clear in Groen van Prinsterer, Archives 1re série, Supplément (1847), no. 45",
       "grade": "closing stretch (leaf pp.4-5, 226 tokens): C 163, I 13, M 6, U 44; agrees with Groen pp.146*-148*; novelty N1 (AUDIT.md V1). Body runs 1-61: other key, unread, printed by Groen as raw numbers",
       "line": "WVO 5549: the enciphered closing stretch reads under Lodewijk's 1574 five-per-letter table and agrees with Groen's clear print, Suppl. no. 45, pp.146*-148* (N1). This is an independent re-decipherment. The body, runs 1-61, is in another key and is unread.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/jan-van-nassau-1572-75",
+      "document_id": "WVO 5549 (Jan van Nassau to Orange, 21 Nov 1573), closing stretch",
+      "claim_scope": "correction",
+      "plaintext_novelty": "N1",
+      "mapping_novelty": "N1",
+      "completeness": "163/226",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "jan-van-nassau-1572-75/AUDIT.md '## V1 (LANE V3), 24 September 2026' Verdict"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "jan-van-nassau-1572-75/AUDIT.md V1 verdict; found solved (Groen pp.146*-148*)"
     },
     {
       "date": "24 Sept 2026",
@@ -1748,7 +2217,24 @@
       "title": "Erasmus Posthius to J. C. Eysenmenger, Heidelberg, 13 March 1614 and February 1618 (UB Erlangen, Trew Briefsammlung): the cipher passages read with the keys on the leaves",
       "grade": "109 tokens: H 96, M 13 (decode_key.py --check 0). Novelty: N0 both items (AUDIT.md)",
       "line": "The 1618 specimen pairs each cipher line with its clear text on the leaf, and the Ärztebriefe database (aerztebriefe.de/id/00001955) already transcribes key, cipher and clear lines. The 1614 German cipher lines carry a contemporary interlinear decipherment on the leaf beside their key. Our reading applies the leaf keys and agrees with the legible gloss. No print of the 1614 plaintext was found.",
-      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/trew-posthius-1614-18"
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/trew-posthius-1614-18",
+      "document_id": "UB Erlangen, Trew Briefsammlung: Posthius to Eysenmenger, 13 Mar 1614",
+      "documents": [
+        "UB Erlangen, Trew Briefsammlung: Posthius to Eysenmenger, 13 Mar 1614",
+        "UB Erlangen, Trew Briefsammlung: Posthius to Eysenmenger, Feb 1618"
+      ],
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "96/109",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict'"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "trew-posthius-1614-18/AUDIT.md section 1; H 96, M 13 of 109"
     },
     {
       "date": "24 Sept 2026",
@@ -1925,7 +2411,20 @@
       "grade": "N0 (AUDIT.md, verifier V6-COSTA, 25 Sept 2026); key period (a 52-row partial key rebuilt by R6 P5 from the clerk's code-over-syllable worksheet); C 63, M 19, U 2 of 84 tokens; decode_key.py --check exit 0",
       "line": "ANTT FCC/001/0021/00026 carries an 1865 syllabic nomenclator encipherment worksheet with the clerk's own Portuguese plaintext written over every code; we rebuilt a 52-row partial key from it (grade C 63, M 19, U 2 of 84 tokens). No printing of the letter or its text was located (search log in AUDIT.md), class N0. Nothing was deciphered: the plaintext was on the leaf, as in the Clairambault 1067 and RAH Canada precedents; the result is a period key and a dataset (about 52 codes, homophones for con, ca, pa), with three codes carrying two values unresolved.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/antt-fcc-costacabral-1865",
-      "key": "period"
+      "key": "period",
+      "document_id": "ANTT PT/TT/FCC/001/0021/00026",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "63/84",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict' (V6-COSTA)"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "antt-fcc-costacabral-1865/AUDIT.md section 1; C 63, M 19, U 2 of 84"
     },
     {
       "date": "25 Sept 2026",
@@ -1935,7 +2434,21 @@
       "grade": "N3 after two audits (V6-MERCY 19:19, V6-MERCY2 20:39 UTC), key ours. S 496, M 26 of 522 (H 0, C 0: cryptanalytic result; R7-MREV 20:51 revised five contested glyphs after a blind eye-check 116/122); anneal beats the matched control by 167-181 points on 4+ seeds; shuffled-stream control target -1154.3 vs shuffles -1488.5 vs control -1336.2; decode_key.py --check 0; fresh-instance re-derivation byte-identical; judge FAIL on es17 and es17c, but the letter's own clear words FAIL the same judge, so the judge cannot decide here. No print of the instruction located (Morel-Fatio 1892 lists f.22 as a cipher copy without decipherment); outreach gate 2 not met (JSTOR-QUEUE rows 80-83 for the owner); V6-QA3 (19:42-21:42 window) reproduced the second audit's numbers live, so it counts from 22:15 UTC",
       "line": "Partly legible Spanish under our key (the Elector of Brandenburg, three thousand infantry in two or three regiments, the Duchess of Chevreuse; the place name read as Cleves earlier rests on a glyph three blind passes read otherwise, R7-MREV 20:51). V6-MERCY 25 Sept 19:19 UTC: N3, key ours (AUDIT.md); second audit V6-MERCY2 20:39 kept N3; shuffled-stream control and blind eye-check done (R7); SO-MERCY-F22 queued.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/espagnol142-mercy-1648",
-      "novelty": "N3"
+      "novelty": "N3",
+      "document_id": "BnF Espagnol 144 f.22r-v (Gallica btv1b10035717h, canvases 58-59), instruction to Mercy, Barneton, 6 June 1648",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "496/522",
+      "unresolved_spans": "26 tokens at M; no key source or clear copy; the language judge cannot decide",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict' (V6-MERCY)",
+        "AUDIT.md '## Second audit (V6-MERCY2, 25 Sept 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "9f4b969 (reading.txt at V6-MERCY2, 2159f63); revised after both audits at 5b08322 (R7-MREV, logged in AUDIT.md 'Post-audit reading change')",
+      "superseded_by": "",
+      "fields_source": "espagnol142-mercy-1648/AUDIT.md section 1 and S2.1 (N3, key ours); S 496, M 26 of 522 after R7-MREV (the audited version read S 494, M 27 of 521)"
     },
     {
       "date": "25 Sept 2026",
@@ -1945,7 +2458,20 @@
       "line": "The ciphered part of the Cardinal of Ferrara's letter to Guise of 3/4 January 1557 was deciphered on the leaf itself by an interlinear contemporary hand, and the whole letter is printed in clear in Guise's Memoires-journaux (Michaud-Poujoulat 1e ser. t.6, pp.238-239), in the same volume an earlier check-solved sweep read at pp.316-320 and called not printed. Applying the period key of BnF fr.20974 no.15 regenerates it: a key-and-leaf alignment, not a decipherment. Class N0. The contribution is the machine-checkable transcription, key table and alignment in the folder (LANE ZX, owner account), and the correction to the check-solved verdict.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/clair349-este-guise-1556",
       "key": "period",
-      "text": "known"
+      "text": "known",
+      "document_id": "BnF Clairambault 349 f.3",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "289/1020",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 1. Verdict' (V7-CL349)"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "clair349-este-guise-1556/AUDIT.md section 1; H 29, C 260 of 1020 from the grade"
     },
     {
       "date": "26 Sept 2026",
@@ -1976,7 +2502,20 @@
       "text": "known",
       "line": "Item 3 (Herrera to Morillo, Guanare, 7 Nov 1820, RAH 9/7666 ff.420-420v) carries its own period interlinear decipherment, and its plaintext was printed in 2021 (Bolivar, Gonzalez Segovia and Anzola, Portuguesa en Carabobo, p.37 n.100); we rebuilt the 17-sign letter key from that period decipherment and regenerate the reading mechanically. N0, key period, text known. Owner-account LANE NX (NX-MOR2/MOR3), verified by LANE V9.",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/rah-morillo-1817",
-      "class": "N0"
+      "class": "N0",
+      "document_id": "RAH 9/7666 leg.23 ff.420-420v",
+      "claim_scope": "key-to-known-text",
+      "plaintext_novelty": "N0",
+      "mapping_novelty": "N0",
+      "completeness": "86/97",
+      "unresolved_spans": "",
+      "audit_refs": [
+        "AUDIT.md '## 3. Verdict' (V9-MOR)"
+      ],
+      "audit_status": "one audit",
+      "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
+      "superseded_by": "",
+      "fields_source": "rah-morillo-1817/AUDIT.md section 3; C 86, M 5, U 6 of 97"
     }
   ],
   "lanes": [
@@ -2106,7 +2645,7 @@
       "focus": "closed 14:14; rah-morillo-1817 item 3 N0, key period, text known; four QA passes, 3 flags cleared"
     }
   ],
-  "headline": "25 Sept 2026, 22:15 UTC: 20 letters (15 board entries) at N3 or better after two audits, 5 with our own key: the two undeciphered blanks in Lodewijk van Nassau's letter of 22 Oct 1573 (WVO 5797, N4 with a period gloss and our aligned table), the Mercy instruction of 6 June 1648 (BnF Espagnol 144 f.22, homophonic cryptanalysis, judge undecided, no print located), Orange to August of Saxony 1561 (WVO 53, pure cryptanalysis), the van Beuningen 1657 key, Jan van Nassau's cipher lines of 17 Apr 1574 (WVO 5551), and now Linhares (dictionary code, Vieyra 1809), which the Portuguese judge passes on a corpus of its own period. Charles I's Digby cipher paper (BL Add MS 6912) is identified as Wheatstone's 1862 decipherment (N0, contribution). Both accounts are live: the other account's parent runs R6 (Salviati and the 13 gate-passing targets), V6 (verifiers, rolling QA) and B2 (breadth: lima, harry-caroline and powers first tests all negative or index-only); the owner account runs ZX (Brochado, Clair 349, Barriere) and CX2 (check-solved round 2, seven targets re-verified open today). The ChatGPT second-opinion runner has posted three pull requests (10-12); V6 checks every citation.",
+  "headline": "27 Sept 2026, 14:23 UTC: the board now counts documents, not rows, from per-result fields; each count is at N3 or better after two verifier audits unless stated. 18 documents with recovered passages: partial readings of cipher passages with no prior decipherment located (Gramont f.29r and f.30r-v, Danzay f.35-36, the Saxony enclosures WVO 53, 57 and 126, Lodewijk van Nassau's WVO 4610-4616, Jan van Nassau's WVO 5551, two blanks in WVO 5797, Stamford 1655, three Blathwayt items, the Linhares fragment and the Mercy instruction). 2 completed readings: the Eckert telegrams of 21 and 22 Apr 1864. 1 key to a text already in print: Van Beuningen to De Witt, 1657. 6 catalogue contributions and corrections carrying a verifier's class, among them the Digby cipher paper identified as Wheatstone's 1862 decipherment. 4 of these documents were read with our own key and no earlier decipherment found. N4 means the principal sources were searched; unpublished work is not excluded.",
   "sidequests": [
     {
       "title": "Grants applications",
