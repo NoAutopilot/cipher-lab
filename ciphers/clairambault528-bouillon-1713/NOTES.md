@@ -68,3 +68,12 @@ Requests this section: archivesetmanuscrits.bnf.fr 1, gallica.bnf.fr 1 SRU query
 Re-checked Gallica SRU for Clairambault 528 by shelfmark: still `numberOfRecords=0`, consistent with the
 24 Sept finding. No new free route found this pass. REQUEST.md (BnF reading-room visit or reproduction
 enquiry) stands unchanged; still blocked, waiting on the owner.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on a BnF reading-room visit or reproduction enquiry for Clairambault 528, "blocked, waiting on you"
+since 24 Sept 2026, unchanged through the 26 Sept 2026 NX-UNBLOCK check.
+
+- Full-text search Cardinal de Bouillon's own published Mémoires (19th-c. edition) on archive.org for this 1713 exile affair -- flagged in NOTES as the next step, not yet run. S, tools/print_check.py.
+- Run the open-index scholarship pass (Persée, OpenAlex, HAL) for "cardinal de Bouillon" 1713 exile correspondence chiffre, beyond the generic web search already tried. S.
+- Re-read the finding-aid description to judge whether this item (lowest-confidence of the M26/M27/M28 siblings) is a substantial cipher or a short annotation, before the reproduction request is escalated. S.

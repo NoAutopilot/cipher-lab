@@ -176,3 +176,12 @@ letter without a key or sibling. Status stays `open`. No "solved", "new", "first
 
 Requests this session: none (script-only, no network; fr18/ciphertext.tsv/judge_plaintext.py all read from
 disk).
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on a copy of Clements Library Clinton Papers vol. 64:14/64:15, "waiting on you" since 25 Sept 2026
+(clements.umich.edu 403s to curl, Wayback CDX also failed once).
+
+- Build the period French dictionary headword list (tools/data has none yet) that U4 names as sharpening the one-part band test already coded in tools/freq.py --onepart-dict. M.
+- Extend U2's boundary-grammar candidates into a targeted search for the AAE Corr. pol. Etats-Unis Supt.1 decipherment, a different named archive route that needs no Clinton Papers image. M.
+- Retry the Wayback Machine CDX for clements.umich.edu/findingaids.lib.umich.edu once more after a pause (one prior attempt failed with a connection reset; the good-citizen rule permits a single retry). S.

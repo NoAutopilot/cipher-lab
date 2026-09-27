@@ -285,3 +285,12 @@ Re-checked Gallica SRU for Clairambault 574, 575 and 579 by shelfmark (`dc.sourc
 all three still return `numberOfRecords=0`, consistent with LANE YX's 25 Sept finding. No new free route found
 this pass. REQUEST.md (BnF reproduction request, three leaves) stands unchanged; still blocked, waiting on the
 owner.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on the BnF reproduction request for three leaves (Clair 574 f.3-4, Clair 575 p.1209, Clair 579 p.341),
+status "waiting on the owner" since the request was written, unchanged through the 26 Sept 2026 NX-UNBLOCK check.
+
+- Fetch DECODE's login-free record listing for 9430/9431/9432 (Clairambault 574/577/580 Key records) for any descriptive text naming the key's structure, before the image request lands. M, tools/decode_list.py.
+- Search Le Clerc tome II further and the d'Avaux/Servien Négociations printed record (named in NOTES as "not searched this pass") for this specific letter. S, tools/print_check.py.
+- Re-read the archivesetmanuscrits finding aid to pin which of the twelve 571-582 volumes actually holds the Jul-Dec 1645 item, narrowing the pending request. S.

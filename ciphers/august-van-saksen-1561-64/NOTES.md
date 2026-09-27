@@ -338,3 +338,12 @@ Checked in AUDIT.md: no prior print found; 53 and 57 stay N4. Prompt excerpt for
 sign-level output verbatim. Solver suggestion (not done): settle 53's M tokens behind "zuberzuschreiben" (l.2),
 "geschret" (l.7) and "mrch" (l.10) from the image before any quotation; the normalised "zu bergen zu schreiben",
 "geschrey" and "mich" are emendations, not readings.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on the Dresden (Loc. 9941/3 f.268-269) and KHA (A 11/XIV I/4 nr. 26) inquiries named in D2's follow-ups,
+since 24 Sept 2026.
+
+- Run the solver pass on f.266v with key_53 (already built in this folder, never applied) to settle more of 53's 126 M-tokens. S, tools/decode_key.py.
+- Eye-check SO-SAXONY-126's unapplied sign candidates (l.5 pos 11/17, l.6 'adesn'/'slagen') against images/00053_p2.png already on disk. S.
+- Re-scan the Rachfahl II.1 HTRC token counts (already fetched) for the 1561/1564 window more closely than D2's one gist pass. S, tools/htrc_ef_headwords.py.

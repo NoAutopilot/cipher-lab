@@ -473,3 +473,11 @@ is reported for Paget's 14 January 1713 letter; this is not a "not there" findin
 open. Row set `done 2026-09-27` as an exhausted attempt at the current instruction's scope; a follow-up row
 would need to name canvases 28 and 36 explicitly to get them read. Target status stays `open` (ASKS row 51
 unresolved).
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on canvases 28 and 36 of ark btv1b9000759b, unread since 25 Sept 2026 (two connection resets each, not
+a challenge or a content gap; ASKS row 51 unresolved).
+
+- Retry canvases 28 and 36 fresh -- both failures were transient proxy-side resets, not a Gallica 403/429/challenge, on an ark otherwise fully reachable. S, plain fetch or tools/iiif_lines.py.
+- Re-read the archivesetmanuscrits finding aid for this shelfmark to check whether Paget's 14 Jan 1713 letter is mis-cataloged to a different ark/volume in the same Clairambault run, given 314/316 canvases already read blank. S.

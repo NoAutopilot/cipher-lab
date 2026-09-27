@@ -76,3 +76,12 @@ Wrote `REQUEST.md`. Status set to blocked.
 
 Requests this section: archivesetmanuscrits.bnf.fr 2 (cc85044f, cc12947k), gallica.bnf.fr 2 SRU queries (both
 200 first try).
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on a BnF Arsenal reading-room visit or reproduction enquiry for Ms-4764 and Ms-11639 (REQUEST.md,
+"waiting on you"), since 24 Sept 2026.
+
+- Full-text search a Recueil des instructions volume for Sweden 1744-46 on archive.org/Google Books -- the printed-edition leg the check-solved sweep flagged as unrun. S, tools/print_check.py.
+- Re-read Ms-11639's finding-aid text to settle whether it and Ms-4764 describe the same correspondence from two registers (the open caveat in NOTES's own verdict) -- a closer catalogue read, no image needed. S.
+- Run OpenAlex/Semantic Scholar (keys already set) for "d'Allion"/"Lanmary" Sweden 1744-46 diplomatic scholarship, not yet tried beyond plain web search. S, tools/print_check.py.

@@ -75,3 +75,13 @@ Search log (rule 10): reported above, per source. Not classified for novelty. Re
 `resources.huygens.knaw.nl` ~4 (1 pages.json, 1 html_url OCR fetch, 1 image fetch, book_data.js reused from the
 HU4 step of this same pass), `www.nationaalarchief.nl` 1 (invnr 1836, in the same batch as HU4's three), `
 github.com` 0 (reused the HU4 clones already on disk this session). WebSearch 1. No subagents.
+
+## While waiting (27 Sept 2026, WAIT-PASS-A)
+
+Waits on a copy order or archive visit to view NA 3.01.19 invnr. 1836 (H.A. 1836) and compare the "oplossing"
+to the "onopgelost cijfer" on the same leaf, since 24-25 Sept 2026 (REQUEST.md, consolidated Heinsius-circle
+request).
+
+- Re-read Veenendaal's edition (already fetched, images/heinsius_15_GS227_531.jpg) for any other footnote cross-referencing this "oplossing" by letter number, which could resolve the ambiguity without the leaf. S.
+- Compare this target's cipher design against the key.tsv/decode.json already recovered for sibling Heinsius-circle folders (e.g. heinsius-hermitage-1704, heinsius-dopff-1702) for a design match. M.
+- Search Google Books/HathiTrust again for "van Borssele van der Hooghe" + "cijfer"/"chiffre" 1714, beyond the one WebSearch already run. S.
