@@ -599,3 +599,102 @@ cannot slice a witness whose plain ids differ from its sign ids; a sign-range op
 file) would have avoided the misleading unsliced run -- suggestion only, not done here.
 
 Requests this job: 0 network requests; 0 subagents. No credentials, no AskUserQuestion, no novelty wording.
+
+## MONT-CAL (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-cal.md` (parent worker MONT-CAL, Opus). A reading-recipe
+calibration against a known answer (Tomokiyo's group dump of f.81r L02-L17, grade H, `witness/aligned_dump_codes.txt`),
+not a reading. Box started 13:54 UTC (clock read).
+
+**Pre-registered gates (written 27 Sept 2026 before the first reading call).** A recipe is fit to transcribe L18-L36
+and the pool only if, on the four calibration lines, scored against the dump's groups for those lines by the
+`mont4715c.py` group-LCS: (G1) letter-group (bare) LCS recall >= 0.85, and (G2) dotted-group recall, dot required,
+>= 0.70; each beside the within-line order-shuffled control (20 shuffles, seed 1). Both gates must be met; the
+numbers to beat from MONT-4715C are 0.396 overall / 0.461 letter / 0.023 dotted (L02-L17, v2). The dump is itself a
+transcription and is treated as the reference, not as the manuscript.
+
+**U0, folder hygiene.** images/ was 30 MB. The 180 `f81rzoom_L*_s*.jpg` crops (the inputs to the `f81rsheet_L*.jpg`
+composites) were regenerated into a scratch directory with `images/regen_f81r_crops.sh`'s two steps from the cached
+native region; `f81rzoom_L03_s2.jpg` and `f81rzoom_L12_s4.jpg` came back byte-identical to the committed files
+(2700x156, 2700x162). All 180 deleted; each `iiif_lines` entry in `images/manifest.json` now carries a `status` "deleted,
+regenerable". `du -sh images` after: 19M.
+
+**U1, anatomy of the 579 misses** (`python3 scripts/mont4715c.py anatomy`). Each gap between two LCS anchors of v2 vs
+the dump (L02-L17) is walked left to right. A dump group is labelled **seg** when one of our tokens equals the
+concatenation of 2-4 of its groups, or 2-4 of ours concatenate to it; **dot** when the digits are right and only the
+dot is missing; **conf** when both are digit strings of the same length with other digits; **und** when our token is
+undecidable/illegible; **other** when the lengths differ and no run explains it (most are segmentation plus a digit
+error together); **unpaired** when the gap holds fewer of our tokens than dump groups. The pairing inside a gap is
+positional, so the per-class split is approximate; the totals are exact.
+
+| class | misses | bare / dotted / symbol |
+|---|---|---|
+| (a) digit confusion, same length | 127 | 102 / 25 / 0 |
+| (b) segmentation, exact split or merge | 22 | 22 / 0 / 0 |
+| (c) missed dot, digits right | 37 | 0 / 37 / 0 |
+| (d) undecidable/illegible in ours | 44 | 33 / 9 / 2 |
+| other: length differs, no exact run (segmentation + digit error) | 125 | 106 / 14 / 5 |
+| unpaired: no counterpart in the gap | 224 | 177 / 41 / 6 |
+| **total** | **579** | 437 / 126 / 13 |
+
+Digit confusions (dump digit -> ours), most frequent: 3->5 14, 3->7 10, 3->0 9, 5->3 9, 8->0 8, 5->0 8, 2->3 7,
+8->1 7, 8->5 6, 1->5 6; 3, 5 and 8 are the digits this hand's readers lose (full 10x10 matrix in the command output).
+
+Two script-only follow-ups inside U1 decide which recipe change matters (`python3 scripts/mont4715c.py segparse
+[--ours]`, no reading call, no new signs):
+
+| digit stream, group boundaries removed, parsed by the key's code inventory (Viterbi; key codes weighted by French letter share, a dot forces a 2-digit word-code) | all | letter | dotted | random valid 1/2-digit parse, 20 (all / letter / dotted) |
+|---|---|---|---|---|
+| Tomokiyo's dump, dots kept | 0.992 | 0.990 | 1.000 | 0.389 / 0.440 / 0.000 |
+| Tomokiyo's dump, dots dropped (dotted scored dot-blind) | 0.980 | 0.987 | 0.938 | 0.437 / 0.423 / 0.468 |
+| our v2 digits, dots as read | 0.429 | 0.499 | 0.023 | 0.250 / 0.292 / 0.000 |
+| our v2 digits, dots ignored (dot-blind) | 0.503 | 0.498 | 0.581 | 0.288 / 0.282 / 0.351 |
+
+Digit-level LCS of our v2 digit stream against the dump's (L02-L17): 1245/1839 = 0.677 (global digit-shuffle control,
+10, mean 0.502 sd 0.005). **Reading:** segmentation does not need to be solved by the reader. The key's own code set
+(only 1 and 5 are one-digit codes) restores 99 pct of the dump's groups from a boundary-free stream, against about 0.4
+for a random valid parse. Re-segmenting our existing digits that way lifts letter recall only from 0.461 to 0.499, so
+the binding loss is **digit accuracy (0.68 in order)**, then dots. A two-digit group survives only when both digits do,
+so 0.85 letter recall needs a digit accuracy of about 0.92.
+
+**U2, per-group crops: stopped at the brief's own branch.** `--groups GAP` was added to `tools/iiif_lines.py`, with an
+offline test in `tools/tests/test_iiif_lines.py` (item 4: wide spacing splits into its 10 groups; uniform spacing, this
+hand's shape, stays one piece and is not reported as groups). It was run on L03, L08, L13 and L15, the lines chosen to
+span the leaf where the v2-anchored dump span is plausible; L12 and L16 got 103 and 42 dump groups from the anchor
+assignment, which is not credible. Blank-run widths inside the line core are unimodal from 1 to about 14 px on every
+line, with no second mode for inter-group spaces: the clerk wrote the digits as a continuous run
+(`images/f81rgrp_L03_groups_debug.jpg`).
+
+| line | pieces at gap >= 6 | at gap >= 10 | dump groups (v2-anchored span) |
+|---|---|---|---|
+| L03 | 62 | 23 | 63 |
+| L08 | 62 | 32 | 57 |
+| L13 | 52 | 20 | 62 |
+| L15 | 52 | 23 | 64 |
+
+At gap 6 the counts come close by coincidence, but on the L03 overlay, checked by eye against the dump's first 21
+groups, about 12 boxes are one group each. The others split a digit off (`11` -> `1`,`1`; `9`,`385` for `93 85`) or
+merge two groups (`85 73`, `6 40` for `'26 40`). Column split ok: **no**. No group crops were written for a reader,
+and U3 was not run: its three recipes need the group crops, and a crop that is not a group would have taught the
+reader the wrong boundaries. No reading call was made.
+
+**U4, verdict.** The two gates (letter 0.85, dotted 0.70) were not tested by any recipe. Vision transcription of this
+hand at the group level is **untested-by-this-tool** (group crops cannot be cut; HYPOTHESES.md), not refuted. The job
+still moves the target, because U1 locates the shortfall: segmentation is solvable by the key (0.99 on the known
+answer), so a recipe needs to deliver only a **digit stream plus dot marks** per line. The gate that matters is digit
+accuracy of about 0.92 in order, against 0.68 now, with dotted recall of 0.7 or better.
+
+Resolution route: the cached region is cut from the canvas at native size. Canvas 177 is 4079x5720 and the IIIF
+service (Gallica, level 2) serves nothing larger. Digits are about 30 px tall at native, from a microfilm-generation
+scan, so a sharper image needs a new BnF capture, which is a copy order for the owner. Edition route: a period
+decipherment of any pool letter (POOL.md) would give grade-C calibration beyond this one dump.
+
+**Named next step (MONT-READ-DIGITS).** One recipe test, on the same four lines (L03, L08, L13, L15). The reader
+returns each line as a continuous digit string, with a mark on every digit that carries a dot or stroke above it, from
+the existing `f81rsheet_Lnn.jpg` sheets (no group boxes). `mont4715c.py segparse` is extended to parse that stream by
+the key, and scoring adds a digit-level LCS gate (>= 0.92), letter group-LCS (>= 0.85) and dotted recall (>= 0.70),
+with the order-shuffled control beside each. Only if it clears: L18-L36, then no.6 f.24. If it fails, the image route
+above (a new capture) comes before any further reading attempt, per rule 3's repeated-attempt paragraph.
+
+Requests this job: 0 network requests; 0 subagents; 0 reading calls. `pip install numpy scipy pillow` into the
+container (not the repo). No credentials, no AskUserQuestion, no novelty wording.

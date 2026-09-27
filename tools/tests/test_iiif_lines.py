@@ -49,6 +49,23 @@ try:
     r = run('--image', f71, '--out', os.path.join(tmp, 'b'), '--region', '1000,1600,3900,1400', '--dry-run')
     check(len(r['centres']) == 8, f"fr.20140 f.36r upper block: {len(r['centres'])} lines (8 by eye)")
 
+    # 4. --groups (MONT-CAL, 27 Sept 2026): wide inter-group spacing splits into its 10 groups; uniform spacing (the
+    #    fr.4715 f.81r shape) must NOT be reported as groups -- at the same gap it stays one piece.
+    for label, gap_between, want in (('spaced', 60, 10), ('uniform', 12, 1)):
+        im = Image.new('RGB', (1800, 200), (235, 225, 200)); d = ImageDraw.Draw(im)
+        x = 40
+        for gidx in range(10):
+            for k in range(2):                       # two 'digits' per group, 12 px apart inside a group
+                d.rectangle([x, 80, x + 24, 120], fill=(40, 30, 20)); x += 24 + 12
+            x += gap_between - 12
+        for yy in (20, 180):                         # faint lines above/below so line detection finds three bands
+            d.rectangle([40, yy - 10, 1700, yy + 10], fill=(40, 30, 20))
+        pg = os.path.join(tmp, f'grp_{label}.jpg'); im.save(pg, quality=95)
+        r = run('--image', pg, '--out', os.path.join(tmp, 'g_' + label), '--prefix', 'g', '--groups', '30',
+                '--group-lines', '2', '--max-width', '2000', '--distance', '50')
+        n = len([e for e in r['entries'] if e.get('group')])
+        check(n == want, f"--groups 30 on {label} spacing: {n} pieces (want {want})")
+
     out = os.path.join(tmp, 'cap'); os.makedirs(out)
     shutil.copy(page, os.path.join(out, 'src_test_full.jpg'))
     il.LIMIT = 1000

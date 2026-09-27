@@ -2340,10 +2340,10 @@
     },
     {
       "target": "fr4715-montholon-1589",
-      "title": "Montholon 1589: key of record reads the letter positions (ceiling 0.70 vs shuffled 0.30, z 16.7 through Tomokiyo's groups); our transcription recovers 0.396 of his groups in order vs 0.290 shuffled -- the miss is the reader, not the key; pool of 9 open letters, about 13,000 signs",
-      "next": "MONT-CAL: reading recipe calibrated on the known-plaintext lines (gates letter-LCS 0.85, dotted recall 0.7), then L18-L36 and the pool's interlinear leaves",
+      "title": "Montholon 1589: key of record reads the letter positions (0.70 vs shuffled 0.30 through Tomokiyo's groups); MONT-CAL: the key segments a boundary-free digit stream to 0.99 of his groups, so the reader's loss is digit accuracy (0.68 in order vs 0.50 shuffled) and dots; group crops cannot be cut on this hand; pool about 13,000 signs",
+      "next": "MONT-READ-DIGITS: one recipe on L03/L08/L13/L15 returning digit streams with dot marks, parsed by the key; gates digit-LCS 0.92, letter 0.85, dotted 0.7; if it fails, a new BnF capture before any further reading",
       "lane": "parent 7m (SOLVE)",
-      "touched": "27 Sept 2026 13:52"
+      "touched": "27 Sept 2026 14:01"
     }
   ]
 }

@@ -33,6 +33,11 @@ Steps:
      wide, renamed *_ref1600.jpg and marked so in the manifest (a later run refetches the native region); crops are never downscaled.
   --debug writes OUT/<prefix>_lines_debug.jpg: the region at 1600 px wide with centres (red) and band edges (blue).
   --dry-run prints the detected lines and writes nothing but the cached source.
+  --groups GAP [--group-lines 3,8] [--group-ink 120] [--group-upscale 3]: split each band into ink pieces at runs of
+     >= GAP blank columns in the band's core rows, one crop per piece (<prefix>_Lnn_gNN.jpg), and print the piece count
+     with the blank-run width histogram; with --debug, <prefix>_Lnn_groups_debug.jpg boxes and numbers the pieces. A
+     hand that spaces groups no wider than digits shows a unimodal histogram: then the pieces are not groups (fr.4715
+     f.81r, MONT-CAL 27 Sept 2026) and the crops must not be handed to a reader as groups.
 
 Test: python3 tools/tests/test_iiif_lines.py (offline: a synthetic page with a known line count and pitch, and the
 committed native image of fr.20140 f.36r, whose box 1300,1770,3400,210 holds one cipher line).
@@ -147,6 +152,33 @@ def segments(x0, x1, max_width, overlap):
     return [(x0 + int(round(i * step)), x0 + int(round(i * step)) + max_width) for i in range(n)]
 
 
+def group_pieces(gray, top, bot, x0, x1, ink, gap, core=0.55, minw=4):
+    """Split one line band into ink pieces by the column profile of its core rows (the middle `core` share of the
+    band, so neighbours' ascenders/descenders do not bridge gaps): a run of >= gap blank columns ends a piece."""
+    h = bot - top
+    c0, c1 = top + int(h * (1 - core) / 2), bot - int(h * (1 - core) / 2)
+    p = (gray[c0:c1, x0:x1] < ink).sum(axis=0)
+    xs = np.where(p > 0)[0]
+    if not len(xs):
+        return []
+    out, s, last = [], xs[0], xs[0]
+    for x in xs[1:]:
+        if x - last - 1 >= gap:
+            out.append((x0 + int(s), x0 + int(last) + 1)); s = x
+        last = x
+    out.append((x0 + int(s), x0 + int(last) + 1))
+    return [o for o in out if o[1] - o[0] >= minw]
+
+
+def gap_histogram(gray, top, bot, x0, x1, ink, core=0.55):
+    """Widths of every blank-column run inside the band's core rows (the evidence for or against a --groups gap)."""
+    h = bot - top
+    p = (gray[top + int(h * (1 - core) / 2):bot - int(h * (1 - core) / 2), x0:x1] < ink).sum(axis=0)
+    xs = np.where(p > 0)[0]
+    g = np.diff(xs) - 1
+    return g[g > 0]
+
+
 def folder_size(d):
     return sum(os.path.getsize(os.path.join(r, f)) for r, _, fs in os.walk(d) for f in fs)
 
@@ -182,6 +214,13 @@ def main(argv=None):
                           'sitting just above the line); the bottom edge is unchanged, clamped to 0')
     ap.add_argument('--quality', type=int, default=85, help='JPEG quality of the crops')
     ap.add_argument('--debug', action='store_true'); ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--groups', type=int, metavar='GAP',
+                    help='also split each band into ink pieces at >= GAP blank columns (core rows only) and write one '
+                         'crop per piece, <prefix>_Lnn_gNN.jpg, upscaled --group-upscale and padded; prints the piece '
+                         'count and the blank-run histogram per band so a reader can see whether spacing separates '
+                         'groups at all (MONT-CAL, 27 Sept 2026: on fr.4715 f.81r it does not)')
+    ap.add_argument('--group-ink', type=int, default=120); ap.add_argument('--group-upscale', type=int, default=3)
+    ap.add_argument('--group-lines', help='comma list of band numbers for --groups (default: all)')
     a = ap.parse_args(argv)
     if a.max_width >= 2500:
         ap.error('--max-width must stay under 2500 px')
@@ -225,6 +264,31 @@ def main(argv=None):
             entries.append(dict(crop=name, source_url=url, source_file=os.path.basename(src),
                                 box=[rx + sx0, ry + top, rx + sx1, ry + bot], lines_in_crop=nl, band=bi, segment=si,
                                 method='tools/iiif_lines.py row ink profile', params=params, date=date))
+    if a.groups:
+        want = {int(x) for x in a.group_lines.split(',')} if a.group_lines else None
+        for bi, (top, bot, nl) in enumerate(bb, 1):
+            if want and bi not in want:
+                continue
+            pieces = group_pieces(gray, top, bot, x0, x1, a.group_ink, a.groups)
+            hist = np.bincount(np.minimum(gap_histogram(gray, top, bot, x0, x1, a.group_ink), 40), minlength=41)[1:]
+            print(f'  band L{bi:02d}: {len(pieces)} pieces at gap >= {a.groups}; blank-run widths 1..40: '
+                  + ' '.join(map(str, hist)))
+            for gi, (gx0, gx1) in enumerate(pieces, 1):
+                name = f'{prefix}_L{bi:02d}_g{gi:02d}.jpg'
+                pad = 6
+                c = rgb.crop((max(0, gx0 - pad), top, gx1 + pad, bot)).convert('RGB')
+                c = c.resize((c.width * a.group_upscale, c.height * a.group_upscale), Image.LANCZOS)
+                c.save(os.path.join(a.out, name), quality=a.quality)
+                entries.append(dict(crop=name, source_url=url, source_file=os.path.basename(src),
+                                    box=[rx + gx0, ry + top, rx + gx1, ry + bot], band=bi, group=gi,
+                                    method=f'tools/iiif_lines.py --groups {a.groups} column ink profile', date=date))
+            if a.debug:
+                dbg = rgb.crop((x0, top, x1, bot)).convert('RGB')
+                dd = ImageDraw.Draw(dbg)
+                for gi, (gx0, gx1) in enumerate(pieces, 1):
+                    dd.rectangle([gx0 - x0, 1, gx1 - x0, dbg.height - 2], outline=(255, 0, 0), width=2)
+                    dd.text((gx0 - x0 + 2, 1), str(gi), fill=(0, 0, 255))
+                dbg.save(os.path.join(a.out, f'{prefix}_L{bi:02d}_groups_debug.jpg'), quality=70)
     if a.debug:
         scale = min(1.0, 1600 / im.width)
         dbg = rgb.convert('RGB').resize((int(im.width * scale), int(im.height * scale)))

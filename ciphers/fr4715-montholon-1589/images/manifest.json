@@ -28,7 +28,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L01_s2.jpg",
@@ -38,7 +39,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L01_s3.jpg",
@@ -48,7 +50,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L01_s4.jpg",
@@ -58,7 +61,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L01_s5.jpg",
@@ -68,7 +72,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L02_s1.jpg",
@@ -78,7 +83,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L02_s2.jpg",
@@ -88,7 +94,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L02_s3.jpg",
@@ -98,7 +105,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L02_s4.jpg",
@@ -108,7 +116,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L02_s5.jpg",
@@ -118,7 +127,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L03_s1.jpg",
@@ -128,7 +138,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L03_s2.jpg",
@@ -138,7 +149,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L03_s3.jpg",
@@ -148,7 +160,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L03_s4.jpg",
@@ -158,7 +171,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L03_s5.jpg",
@@ -168,7 +182,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L04_s1.jpg",
@@ -178,7 +193,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L04_s2.jpg",
@@ -188,7 +204,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L04_s3.jpg",
@@ -198,7 +215,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L04_s4.jpg",
@@ -208,7 +226,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L04_s5.jpg",
@@ -218,7 +237,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L05_s1.jpg",
@@ -228,7 +248,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L05_s2.jpg",
@@ -238,7 +259,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L05_s3.jpg",
@@ -248,7 +270,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L05_s4.jpg",
@@ -258,7 +281,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L05_s5.jpg",
@@ -268,7 +292,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L06_s1.jpg",
@@ -278,7 +303,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L06_s2.jpg",
@@ -288,7 +314,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L06_s3.jpg",
@@ -298,7 +325,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L06_s4.jpg",
@@ -308,7 +336,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L06_s5.jpg",
@@ -318,7 +347,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L07_s1.jpg",
@@ -328,7 +358,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L07_s2.jpg",
@@ -338,7 +369,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L07_s3.jpg",
@@ -348,7 +380,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L07_s4.jpg",
@@ -358,7 +391,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L07_s5.jpg",
@@ -368,7 +402,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L08_s1.jpg",
@@ -378,7 +413,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L08_s2.jpg",
@@ -388,7 +424,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L08_s3.jpg",
@@ -398,7 +435,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L08_s4.jpg",
@@ -408,7 +446,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L08_s5.jpg",
@@ -418,7 +457,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L09_s1.jpg",
@@ -428,7 +468,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L09_s2.jpg",
@@ -438,7 +479,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L09_s3.jpg",
@@ -448,7 +490,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L09_s4.jpg",
@@ -458,7 +501,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L09_s5.jpg",
@@ -468,7 +512,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L10_s1.jpg",
@@ -478,7 +523,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L10_s2.jpg",
@@ -488,7 +534,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L10_s3.jpg",
@@ -498,7 +545,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L10_s4.jpg",
@@ -508,7 +556,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L10_s5.jpg",
@@ -518,7 +567,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L11_s1.jpg",
@@ -528,7 +578,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L11_s2.jpg",
@@ -538,7 +589,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L11_s3.jpg",
@@ -548,7 +600,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L11_s4.jpg",
@@ -558,7 +611,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L11_s5.jpg",
@@ -568,7 +622,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L12_s1.jpg",
@@ -578,7 +633,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L12_s2.jpg",
@@ -588,7 +644,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L12_s3.jpg",
@@ -598,7 +655,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L12_s4.jpg",
@@ -608,7 +666,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L12_s5.jpg",
@@ -618,7 +677,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L13_s1.jpg",
@@ -628,7 +688,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L13_s2.jpg",
@@ -638,7 +699,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L13_s3.jpg",
@@ -648,7 +710,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L13_s4.jpg",
@@ -658,7 +721,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L13_s5.jpg",
@@ -668,7 +732,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L14_s1.jpg",
@@ -678,7 +743,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L14_s2.jpg",
@@ -688,7 +754,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L14_s3.jpg",
@@ -698,7 +765,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L14_s4.jpg",
@@ -708,7 +776,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L14_s5.jpg",
@@ -718,7 +787,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L15_s1.jpg",
@@ -728,7 +798,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L15_s2.jpg",
@@ -738,7 +809,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L15_s3.jpg",
@@ -748,7 +820,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L15_s4.jpg",
@@ -758,7 +831,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L15_s5.jpg",
@@ -768,7 +842,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L16_s1.jpg",
@@ -778,7 +853,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L16_s2.jpg",
@@ -788,7 +864,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L16_s3.jpg",
@@ -798,7 +875,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L16_s4.jpg",
@@ -808,7 +886,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L16_s5.jpg",
@@ -818,7 +897,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L17_s1.jpg",
@@ -828,7 +908,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L17_s2.jpg",
@@ -838,7 +919,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L17_s3.jpg",
@@ -848,7 +930,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L17_s4.jpg",
@@ -858,7 +941,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L17_s5.jpg",
@@ -868,7 +952,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L18_s1.jpg",
@@ -878,7 +963,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L18_s2.jpg",
@@ -888,7 +974,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L18_s3.jpg",
@@ -898,7 +985,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L18_s4.jpg",
@@ -908,7 +996,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L18_s5.jpg",
@@ -918,7 +1007,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L19_s1.jpg",
@@ -928,7 +1018,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L19_s2.jpg",
@@ -938,7 +1029,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L19_s3.jpg",
@@ -948,7 +1040,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L19_s4.jpg",
@@ -958,7 +1051,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L19_s5.jpg",
@@ -968,7 +1062,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L20_s1.jpg",
@@ -978,7 +1073,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L20_s2.jpg",
@@ -988,7 +1084,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L20_s3.jpg",
@@ -998,7 +1095,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L20_s4.jpg",
@@ -1008,7 +1106,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L20_s5.jpg",
@@ -1018,7 +1117,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L21_s1.jpg",
@@ -1028,7 +1128,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L21_s2.jpg",
@@ -1038,7 +1139,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L21_s3.jpg",
@@ -1048,7 +1150,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L21_s4.jpg",
@@ -1058,7 +1161,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L21_s5.jpg",
@@ -1068,7 +1172,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L22_s1.jpg",
@@ -1078,7 +1183,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L22_s2.jpg",
@@ -1088,7 +1194,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L22_s3.jpg",
@@ -1098,7 +1205,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L22_s4.jpg",
@@ -1108,7 +1216,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L22_s5.jpg",
@@ -1118,7 +1227,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L23_s1.jpg",
@@ -1128,7 +1238,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L23_s2.jpg",
@@ -1138,7 +1249,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L23_s3.jpg",
@@ -1148,7 +1260,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L23_s4.jpg",
@@ -1158,7 +1271,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L23_s5.jpg",
@@ -1168,7 +1282,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L24_s1.jpg",
@@ -1178,7 +1293,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L24_s2.jpg",
@@ -1188,7 +1304,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L24_s3.jpg",
@@ -1198,7 +1315,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L24_s4.jpg",
@@ -1208,7 +1326,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L24_s5.jpg",
@@ -1218,7 +1337,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L25_s1.jpg",
@@ -1228,7 +1348,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L25_s2.jpg",
@@ -1238,7 +1359,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L25_s3.jpg",
@@ -1248,7 +1370,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L25_s4.jpg",
@@ -1258,7 +1381,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L25_s5.jpg",
@@ -1268,7 +1392,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L26_s1.jpg",
@@ -1278,7 +1403,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L26_s2.jpg",
@@ -1288,7 +1414,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L26_s3.jpg",
@@ -1298,7 +1425,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L26_s4.jpg",
@@ -1308,7 +1436,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L26_s5.jpg",
@@ -1318,7 +1447,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L27_s1.jpg",
@@ -1328,7 +1458,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L27_s2.jpg",
@@ -1338,7 +1469,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L27_s3.jpg",
@@ -1348,7 +1480,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L27_s4.jpg",
@@ -1358,7 +1491,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L27_s5.jpg",
@@ -1368,7 +1502,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L28_s1.jpg",
@@ -1378,7 +1513,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L28_s2.jpg",
@@ -1388,7 +1524,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L28_s3.jpg",
@@ -1398,7 +1535,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L28_s4.jpg",
@@ -1408,7 +1546,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L28_s5.jpg",
@@ -1418,7 +1557,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L29_s1.jpg",
@@ -1428,7 +1568,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L29_s2.jpg",
@@ -1438,7 +1579,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L29_s3.jpg",
@@ -1448,7 +1590,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L29_s4.jpg",
@@ -1458,7 +1601,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L29_s5.jpg",
@@ -1468,7 +1612,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L30_s1.jpg",
@@ -1478,7 +1623,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L30_s2.jpg",
@@ -1488,7 +1634,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L30_s3.jpg",
@@ -1498,7 +1645,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L30_s4.jpg",
@@ -1508,7 +1656,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L30_s5.jpg",
@@ -1518,7 +1667,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L31_s1.jpg",
@@ -1528,7 +1678,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L31_s2.jpg",
@@ -1538,7 +1689,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L31_s3.jpg",
@@ -1548,7 +1700,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L31_s4.jpg",
@@ -1558,7 +1711,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L31_s5.jpg",
@@ -1568,7 +1722,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L32_s1.jpg",
@@ -1578,7 +1733,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L32_s2.jpg",
@@ -1588,7 +1744,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L32_s3.jpg",
@@ -1598,7 +1755,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L32_s4.jpg",
@@ -1608,7 +1766,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L32_s5.jpg",
@@ -1618,7 +1777,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L33_s1.jpg",
@@ -1628,7 +1788,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L33_s2.jpg",
@@ -1638,7 +1799,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L33_s3.jpg",
@@ -1648,7 +1810,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L33_s4.jpg",
@@ -1658,7 +1821,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L33_s5.jpg",
@@ -1668,7 +1832,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L34_s1.jpg",
@@ -1678,7 +1843,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L34_s2.jpg",
@@ -1688,7 +1854,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L34_s3.jpg",
@@ -1698,7 +1865,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L34_s4.jpg",
@@ -1708,7 +1876,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L34_s5.jpg",
@@ -1718,7 +1887,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L35_s1.jpg",
@@ -1728,7 +1898,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L35_s2.jpg",
@@ -1738,7 +1909,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L35_s3.jpg",
@@ -1748,7 +1920,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L35_s4.jpg",
@@ -1758,7 +1931,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L35_s5.jpg",
@@ -1768,7 +1942,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L36_s1.jpg",
@@ -1778,7 +1953,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L36_s2.jpg",
@@ -1788,7 +1964,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L36_s3.jpg",
@@ -1798,7 +1975,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L36_s4.jpg",
@@ -1808,7 +1986,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     },
     {
       "crop": "f81rzoom_L36_s5.jpg",
@@ -1818,7 +1997,8 @@
       "region_native": "0,0,3630,2243 (full cached region)",
       "max_width_native": 900,
       "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
-      "date": "27 Sept 2026"
+      "date": "27 Sept 2026",
+      "status": "deleted 27 Sept 2026 (MONT-CAL U0, images/ at the 30 MB limit): regenerable by images/regen_f81r_crops.sh; regen of f81rzoom_L03_s2 and f81rzoom_L12_s4 checked byte-identical before deletion"
     }
   ],
   "crops_note": "MONT-4715, 27 Sept 2026: superseded an earlier --max-width 2400 attempt (prefix f81r_L*.jpg, 2 segments/line) after two independent blind Sonnet passes both declined to transcribe it as illegible; re-cut at --max-width 900 (5 segments/line) and upscaled 3x LANCZOS -- see images/regen_f81r_crops.sh and NOTES.md. The wide crops were deleted, not kept.",
@@ -1844,5 +2024,8 @@
         "note": "mostly clear French prose with only a handful of scattered numeral code-groups per line, not a dense cipher leaf despite the BnF catalogue's 'avec chiffre' note; estimated ~50-150 signs"
       }
     }
+  },
+  "mont_cal": {
+    "f81rgrp_L03_groups_debug.jpg": "MONT-CAL 27 Sept 2026: tools/iiif_lines.py --groups 6 --group-lines 3 --debug overlay on band L03 of the cached native region; shows the column profile cannot split this hand's groups (NOTES.md MONT-CAL U2)"
   }
 }
