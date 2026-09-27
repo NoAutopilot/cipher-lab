@@ -1,0 +1,8 @@
+  L03: stream 97 digits (6 marked, 4 '?'), parsed 93 groups; reference window 63 groups / 116 digits
+  L08: stream 96 digits (6 marked, 4 '?'), parsed 52 groups; reference window 57 groups / 110 digits
+  L13: stream 62 digits (3 marked, 5 '?'), parsed 41 groups; reference window 62 groups / 121 digits
+  L15: stream 71 digits (5 marked, 3 '?'), parsed 68 groups; reference window 64 groups / 122 digits
+  G0 digit LCS      291/469 = 0.620  (gate 0.92)  control (20) mean 0.385 sd 0.007  FAIL
+  G1 letter-group   54/209 = 0.258  (gate 0.85)  control (20) mean 0.170 sd 0.007  FAIL
+  G2 dotted recall  6/34 = 0.176  (gate 0.7)  control (20) mean 0.031 sd 0.024  FAIL
+  marks in stream 20; '?' 16; verdict: gates not met

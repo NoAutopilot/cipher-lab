@@ -583,16 +583,19 @@ def key_parser():
                     continue
                 piece = "".join(c for c, _ in st[i:i + L])
                 dotted = st[i][1]
+                # (MONT-READ-DIGITS fix, after call A: a reader's stream can carry a dot on both digits of a pair or
+                # a lone dotted digit, which made the whole chunk unparseable and fall back to single digits; these
+                # are now allowed at a heavy penalty so the parse degrades locally.)
                 if dotted:
-                    sc = math.log(0.01) if L == 2 else None
+                    sc = math.log(0.01) if L == 2 else math.log(1e-6)
                 elif piece in lp:
                     sc = lp[piece]
                 elif L == 2:
                     sc = math.log(0.0005)
                 else:
-                    sc = None
-                if sc is None or any(d for _, d in st[i + 1:i + L]):
-                    continue
+                    sc = math.log(1e-6)
+                if any(d for _, d in st[i + 1:i + L]):
+                    sc += math.log(1e-4)
                 if best[i][0] + sc > best[i + L][0]:
                     best[i + L] = (best[i][0] + sc, (i, ("'" if dotted else "") + piece))
         if best[n][1] is None and n:  # unparseable tail (e.g. a lone dotted digit): fall back to singles

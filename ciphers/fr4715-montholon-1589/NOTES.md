@@ -728,3 +728,63 @@ let a short reading shrink its own denominator (v2 read 0.788 on it); replaced b
 
 The fixed-span v2 numbers reproduce MONT-CAL's; the window adds about 0.07 on v2 (these four lines are also the
 better-aligned ones), which is why the margin-0 score is kept beside it.
+
+**U2, call A (Opus subagent, 14:33-14:34 UTC, the four sheets only; raw output `witness/read_digits/call_A.tsv`,
+the reader's own warning and unscored tail readings in `call_A_note.md`).** The reader sent a warning with its output: in every sheet the
+strip stops following the named line partway. The line runs out of the bottom edge in segment 4 (L03, L08) or
+segment 3 (L13, L15), and the central line of the later segments is a neighbouring line. It transcribed the named
+line only as far as the cut and ended each string with `???`. Checked by eye on `f81rsheet_L03.jpg` in this session:
+in segment 4 the line carrying `▽ 65 85 60 93 ...` is sliced by the strip's lower edge, and segment 5's central row
+belongs to the other line. The sheets were cut by `tools/iiif_lines.py` at a fixed y per line from the region's row
+profile, and the lines on f.81r slope across the leaf.
+
+A scorer defect surfaced on call A and was fixed before the verdict. A pair with a dot on both digits, or a lone
+dotted digit, made a whole chunk unparseable, so the chunk fell back to single digits (L03's 97 digits became 93
+groups). Fix: those pieces are now allowed at a heavy penalty. Re-run after the fix, the dump and v2 give the same
+three numbers as in the U1 table. Call A's G1 moved from 0.297 to 0.604 and its G2 from 0.200 to 0.400; the
+pre-fix output is kept in `u3_A_prefix.txt`.
+
+**U3, scores (fixed scorer; `witness/read_digits/fix_*.txt`).**
+
+| stream | G0 digit LCS (ctrl) | G1 letter (ctrl) | G2 dotted (ctrl) | gates |
+|---|---|---|---|---|
+| call A, margin 8 (decides) | 293/409 = 0.716 (0.398) | 110/182 = 0.604 (0.314) | 12/30 = 0.400 (0.070) | none met |
+| call A, fixed span | 0.620 (0.384) | 0.522 (0.287) | 0.353 (0.068) | |
+| our v2 digits, margin 8 | 0.774 (0.491) | 0.574 (0.364) | 0.033 (0.023) | |
+| dump itself, margin 8 | 1.000 (0.451) | 0.990 (0.397) | 1.000 (0.185) | |
+
+Call A missed every gate by more than 0.1, so under the brief call B (Sonnet) was not run. Verdict: **the
+pre-registered gates were met by none.**
+
+**The failure is coverage, not only digit accuracy.** This diagnostic is non-gating and was not pre-registered
+(`witness/read_digits/precision_A.txt`). Precision is the digit LCS of what the reader wrote (excluding `?`)
+against the dump window (anchored span plus or minus 8 groups), divided by the digits written:
+
+| reader | precision | control (within-line digit shuffle, 20) |
+|---|---|---|
+| call A | 297/310 = 0.958 (L03 0.946, L08 0.957, L13 0.930, L15 1.000) | 0.649 |
+| our v2 digits (same sheets) | 348/484 = 0.719 | 0.541 |
+
+Call A read 310 digits against about 409 in the reference windows, and L13 and L15 are cut after roughly half the
+line. On the part the sheets do show, the digit stream is about 0.96 in order. That sits above the 0.92 digit gate,
+but it is a precision on a subset and was not the pre-registered statistic. Dots are the other loss: 20 marked, 12
+of them on a dump dotted group. The window for the precision diagnostic is wide, so the control runs high (0.65); read
+that number beside 0.958, not alone.
+
+**What this does and does not license.** The recipe was not a test of vision at this resolution. The sheets do not
+contain the whole line, so recall could never reach the gate, whatever the reader's accuracy. HYPOTHESES.md logs it
+as untested-by-this-tool (sheet coverage), not refuted. The brief's wording "untestable-by-vision-at-this-resolution"
+is not used, because the covered part reads at 0.96. It also follows that the v2 transcription (MONT-4715B, MONT-CAL) was read
+from the same truncated sheets. Its later segments probably carry the neighbouring line's digits, which may also
+explain the not-credible v2-anchored spans on L12 and L16 that MONT-CAL noted.
+
+**Named next step (MONT-RECROP, then the same recipe).** Re-cut the f.81r line sheets so each segment follows the
+line's slope (a per-segment y offset, or a slope option in `tools/iiif_lines.py` with an offline test). Check
+each new L03/L08/L13/L15 sheet by eye for the full line, then repeat call A's exact prompt on those four lines
+against the same pre-registered gates and scorer. Cost of call A: one Opus subagent call for four lines, about 103k
+subagent tokens, 80 s. That is about a quarter of a call per line; the dollar figure is on the parent's `get_session`,
+not visible here. MONT-READ-ALL (L18-L36, then the pool) is named only if that rerun clears. A new BnF capture
+(REQUEST.md, written per the brief) is held behind MONT-RECROP, not in front of it.
+
+Requests this job: 0 network requests; 1 subagent reading call (call A); call B not run. No credentials, no
+AskUserQuestion, no novelty wording.

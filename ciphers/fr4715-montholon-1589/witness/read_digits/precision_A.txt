@@ -1,0 +1,7 @@
+# non-gating diagnostic: digit precision of call A on what it read = LCS(read digits, dump window anchored span +-8 groups) / digits read (excl ?); control: within-line digit shuffle, 20, seed 1
+L03: 88/93 = 0.946
+L08: 88/92 = 0.957
+L13: 53/57 = 0.930
+L15: 68/68 = 1.000
+pooled: 297/310 = 0.958; control mean 0.649 sd 0.012
+same diagnostic, our v2 digits: 348/484 = 0.719; control mean 0.541

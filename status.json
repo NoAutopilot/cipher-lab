@@ -2879,10 +2879,10 @@
     },
     {
       "target": "fr4715-montholon-1589",
-      "title": "Montholon 1589: key of record reads the letter positions (0.70 vs shuffled 0.30 through Tomokiyo's groups); MONT-CAL: the key segments a boundary-free digit stream to 0.99 of his groups, so the reader's loss is digit accuracy (0.68 in order vs 0.50 shuffled) and dots; group crops cannot be cut on this hand; pool about 13,000 signs",
-      "next": "MONT-READ-DIGITS: one recipe on L03/L08/L13/L15 returning digit streams with dot marks, parsed by the key; gates digit-LCS 0.92, letter 0.85, dotted 0.7; if it fails, a new BnF capture before any further reading",
+      "title": "Montholon 1589: key of record reads the letter positions (0.70 vs shuffled 0.30 through Tomokiyo's groups); the key segments a boundary-free digit stream to 0.99 of his groups; MONT-READ-DIGITS: an Opus digit-stream read met none of its gates (digit 0.716, letter 0.604, dotted 0.400 vs shuffled 0.40/0.31/0.07) because the line sheets leave the sloping line after segment 3-4 -- on the covered part digits read 0.958 in order (ctrl 0.649; v2 0.719); pool about 13,000 signs",
+      "next": "MONT-RECROP: re-cut the f.81r sheets along each line's slope, eye-check L03/L08/L13/L15 for full coverage, then repeat call A's prompt against the same gates (digit 0.92, letter 0.85, dotted 0.7); a new BnF capture (REQUEST.md, held) only if that fails",
       "lane": "parent 7m (SOLVE)",
-      "touched": "27 Sept 2026 14:01"
+      "touched": "27 Sept 2026 14:38"
     }
   ]
 }
