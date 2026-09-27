@@ -1,40 +1,35 @@
 code	desc	count	pages	exemplars	marks_seen
-AMP	ampersand tangle (key: null N5)	3	p1,p2	p1_08_003,p1_04_002,p2_01_012	
-CBOLD	bold C with flag (key: r? or N9)	2	p1	p1_01_009,p1_01_010	
-CHOOK	plain c hook (key: r)	1	p1	p1_01_029	
-CIRCLE	plain circle (key: e)	1	p1	p1_08_005	
-DIAMOND	rotated square outline (NOT in key)	9	p1,p2	p1_07_010,p1_02_011,p1_03_016,p1_06_012,p1_04_007,p1_08_017,p2_01_011,p1_05_007	
-ECAP	bold e with tail (key: h?)	5	p1,p2	p1_02_008,p2_01_039,p1_07_007,p1_05_005,p1_03_008	
-EIGHT	figure 8 (key: null N7)	11	p1,p2	p2_01_041,p1_07_021,p1_05_008,p1_07_026,p1_06_023,p1_04_017,p1_06_006,p2_01_016	
-EIGHTBAR	8 crossed by a bar (NOT in key)	3	p1	p1_02_017,p1_06_003,p1_03_014	
-ELOOP	small script e/h loop (key: h or i2)	7	p1	p1_06_017,p1_03_020,p1_04_025,p1_02_019,p1_05_019,p1_02_007,p1_01_021	
-EM	M zigzag (key: null N6)	4	p1,p2	p1_06_005,p2_01_029,p1_02_012,p1_07_006	
-ENARCH	n arch (key: g)	1	p1	p1_01_007	
-ENN	bold N (NOT in key; or N6)	5	p1,p2	p2_01_014,p1_07_003,p2_01_004,p1_04_018,p1_03_013	
+CARET	bold caret / inverted V (key: k)	2	p1	p1_08_018,p1_08_025	
+DEE	D-shape (v2: split from TWOFLAT)	2	p1,p2L2	p1_04_015,p2L2_01_013	
+DIAMOND	rotated square outline (NOT in key)	10	p1,p2L1,p2L2	p1_07_010,p1_02_011,p1_03_018,p1_08_020,p1_06_012,p1_04_007,p1_04_024,p2L1_01_011	
+ECAP	bold e with tail (key: h?)	5	p1,p2L1	p1_02_008,p2L1_01_024,p1_03_008,p1_07_007,p1_05_005	
+EIGHT	figure 8 (key: null N7)	12	p1,p2L1,p2L2	p1_07_026,p2L1_01_026,p1_05_008,p1_06_023,p1_04_017,p1_06_006,p2L2_01_016,p2L2_01_017	
+EIGHTBAR	8 crossed by a bar (NOT in key)	2	p1	p1_02_017,p1_06_003	
+ELOOP	small script e/h loop, with or without a tail (key: h or i2)	9	p1	p1_03_022,p1_02_007,p1_04_025,p1_06_017,p1_08_023,p1_06_025,p1_02_019,p1_04_020	
+EM	M zigzag (key: null N6)	6	p1,p2L1,p2L2	p1_08_026,p2L1_01_018,p1_02_012,p1_06_005,p2L2_01_014,p1_07_006	
+ENN	bold N (NOT in key; or N6)	5	p1,p2L1	p2L1_01_008,p1_07_003,p1_04_018,p2L1_01_002,p1_03_015	
 ESS	S curve (key: N11 or s)	2	p1	p1_02_022,p1_05_020	
-EX	plain x cross (NOT in key)	4	p1,p2	p2_01_048,p1_06_009,p1_01_013,p1_07_027	
-FOUR	numeral 4 (key: c)	7	p1,p2	p1_03_024,p1_08_022,p2_01_015,p1_01_030,p1_04_009,p1_02_027,p2_01_005	
-HCURL	H-shape with curled serifs (key: word code under Prince of Castile, per the image; N4 per pass A)	6	p1,p2	p1_04_003,p1_04_013,p1_03_009,p2_01_035,p1_03_004,p1_02_009	
+FOUR	numeral 4 (key: c)	7	p1,p2L2	p1_01_032,p1_03_026,p1_08_029,p2L2_01_009,p1_04_009,p1_02_027,p2L2_01_005	
+HCURL	H-shape with curled serifs (key: word code under Prince of Castile, per the image; N4 per pass A)	6	p1,p2L1	p2L1_01_022,p1_04_013,p1_04_003,p1_03_011,p1_02_009,p1_03_005	
 LL	two verticals on a baseline (NOT in key)	3	p1	p1_07_014,p1_06_007,p1_04_022	
-LONGS	long s with loop (key: s)	2	p1,p2	p1_03_003,p2_01_042	
-MU	mu / fishhook (key: null N4)	2	p1	p1_04_010,p1_06_018	
-NINE	numeral-9 loop with tail (key: p)	12	p1,p2	p1_02_004,p1_04_026,p1_01_020,p2_01_009,p1_01_003,p1_05_011,p1_06_013,p1_03_002	
-OMEGA2	omega without bar, open w (key: N10 variant?)	3	p1	p1_03_015,p1_08_018,p1_02_001	
-OMEGABAR	omega/w with a bar on top (key: null N10)	15	p1,p2	p1_03_005,p1_06_002,p1_08_010,p1_05_012,p1_02_016,p1_05_004,p1_01_027,p2_01_008	
-OMEGADOT	omega with two dots/hooks above (key: ?)	2	p1,p2	p1_02_003,p2_01_018	
-PHI	phi loop on a descender, crossed (key: a)	10	p1,p2	p1_07_008,p1_02_025,p1_02_026,p1_04_011,p1_03_012,p1_07_023,p1_08_007,p2_01_038	
-PI	capital Pi (key: null N2)	3	p1,p2	p1_08_002,p1_04_001,p2_01_013	
-PLUS	plus sign (NOT in key)	2	p2	p2_01_010,p2_01_047	
-RHO	P/rho loop with descender (key: I word code? or s)	4	p1,p2	p1_02_005,p1_03_018,p2_01_003,p1_05_018	
-RSTROKE	r with a flat stroke (key: t1?)	2	p1	p1_08_021,p1_08_025	
-SEVEN	numeral-7 hook (key: o); bold long-bar variants merged in	25	p1,p2	p2_01_021,p1_04_006,p1_03_007,p1_05_006,p1_06_016,p1_03_017,p1_03_010,p1_02_015	
-SIX	6 / b, loop at base with ascender (key: n1/n2)	12	p1,p2	p1_05_015,p1_04_027,p1_06_001,p1_06_022,p2_01_007,p1_01_023,p1_05_003,p1_05_021	
-STROKE	isolated stroke, usually a fragment of a split sign or half of an LL pair	14	p1,p2	p1_07_029,p1_08_026,p1_01_017,p1_03_027,p1_07_017,p1_03_028,p1_05_017,p1_07_013	
-TEE	t/+ with curl (key: b = T?)	1	p1	p1_05_001	
-THETA	circle crossed by a horizontal bar (NOT in key)	8	p1,p2	p1_03_011,p1_01_016,p1_05_013,p1_07_012,p1_08_019,p2_01_044,p1_03_025,p1_01_006	
-THREE	numeral-3 zigzag (key: d)	9	p1,p2	p1_03_019,p1_06_024,p1_04_005,p1_07_005,p1_04_021,p1_02_023,p1_02_014,p2_01_027	
-TLOOP	cross with a loop, t-like (key: t? or b)	4	p1	p1_03_021,p1_01_022,p1_05_009,p1_04_004	
-TWO	round numeral 2 (NOT in key)	13	p1,p2	p1_07_019,p1_04_023,p1_06_020,p1_07_004,p1_06_015,p1_02_013,p1_04_012,p1_07_015	
-TWOFLAT	flat 2 / z with baseline, incl. 2 D-shapes (NOT in key)	5	p1,p2	p1_07_024,p1_08_006,p1_06_014,p2_01_025,p1_04_015	
-UCURL	u-curl with tail, gamma-like (key: u or N1)	2	p1	p1_01_025,p1_07_022	
-XCURL	cursive x with curled ends (NOT in key; key d zigzag?)	5	p1,p2	p2_01_033,p1_06_019,p1_04_019,p1_07_020,p1_02_002	
+MU	mu / fishhook (key: null N4)	3	p1	p1_04_010,p1_01_020,p1_06_018	
+NINE	numeral-9 loop with tail (key: p)	14	p1,p2L1	p1_02_004,p1_05_011,p1_01_023,p2L1_01_014,p2L1_01_020,p1_04_026,p1_07_011,p1_02_018	
+OMEGA2	omega without bar, open w (key: N10 variant?)	2	p1	p1_03_017,p1_08_021	
+OMEGABAR	omega/w with a bar on top (key: null N10)	15	p1,p2L1,p2L2	p1_08_012,p1_01_029,p1_06_002,p1_05_012,p1_03_006,p1_05_004,p2L1_01_023,p1_02_016	
+OMEGADOT	omega with two dots/hooks above (key: ?)	2	p1,p2L1	p1_02_003,p2L1_01_010	
+PHI	phi loop on a descender, crossed (key: a)	11	p1,p2L1,p2L2	p1_08_003,p1_03_014,p2L2_01_012,p1_04_002,p1_04_011,p1_07_023,p2L1_01_007,p1_01_005	
+PI	capital Pi (key: null N2)	2	p1	p1_04_001,p1_08_002	
+PLUS	plus sign (NOT in key)	2	p2L1	p2L1_01_006,p2L1_01_031	
+RHO	loop with a long tail / long s with a bottom loop (v1's LONGS and RHO merged: one code)	6	p1,p2L1,p2L2	p1_02_005,p1_03_004,p1_05_018,p1_03_020,p2L1_01_027,p2L2_01_004	
+SEVEN	numeral-7 hook (key: o); bold long-bar variants merged in	13	p1,p2L1,p2L2	p1_06_016,p1_03_012,p1_07_028,p1_02_015,p1_07_002,p2L1_01_003,p1_01_026,p1_04_014	
+SEVENB	bold 7 with a long top bar and a hooked foot (v2: split from SEVEN to test whether it is a distinct sign)	11	p1,p2L1,p2L2	p2L1_01_012,p1_03_009,p1_05_006,p1_04_006,p1_03_019,p1_01_019,p1_03_028,p2L2_01_015	
+SIX	6 / b, loop at base with ascender (key: n1/n2)	11	p1,p2L1	p1_06_022,p2L1_01_004,p1_01_025,p1_05_015,p1_06_001,p1_04_027,p1_05_003,p1_05_021	
+STROKE	isolated stroke: a fragment of a split sign, half of an LL pair, or a descender from the line above	20	p1,p2L1,p2L2	p2L2_01_003,p1_03_007,p1_01_021,p1_03_029,p2L2_01_020,p1_01_003,p1_01_018,p1_03_030	
+TEE	t-like cross with a curl, or a plus with a foot (key: b = T? or t)	4	p1	p1_08_011,p1_03_001,p1_03_027,p1_05_001	
+THETA	circle crossed by a horizontal bar (NOT in key)	6	p1,p2L1	p1_01_017,p1_08_022,p1_03_013,p1_05_013,p2L1_01_029,p1_07_012	
+THREE	numeral-3 zigzag (key: d)	9	p1,p2L1	p1_03_021,p1_06_024,p1_02_014,p1_04_005,p1_02_023,p1_04_021,p1_07_005,p2L1_01_016	
+TLOOP	cross with a loop, t-like (key: t? or b)	6	p1	p1_03_023,p1_01_024,p1_05_009,p1_04_004,p1_08_028,p1_08_034	
+TWO	round numeral 2 (NOT in key)	14	p1,p2L1	p1_07_004,p1_04_023,p1_06_011,p1_02_013,p1_06_015,p1_07_015,p1_07_019,p1_06_020	
+TWOFLAT	flat 2 / Z with baseline (NOT in key)	3	p1	p1_08_006,p1_07_024,p1_06_014	
+UCURL	u-curl with tail, gamma-like (key: u or N1)	4	p1	p1_03_002,p1_08_017,p1_01_027,p1_07_022	
+XCURL	cursive x with curled ends (NOT in key; key d zigzag?)	8	p1,p2L1,p2L2	p2L1_01_021,p2L2_01_019,p1_06_019,p1_04_019,p1_07_020,p1_06_009,p2L1_01_032,p1_02_002	

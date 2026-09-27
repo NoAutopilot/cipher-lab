@@ -4,9 +4,24 @@
   "box": null,
   "median_h": 93.0
  },
- "p2": {
+ "p2L1": {
   "image": "glyphs/p2_clean.png",
-  "box": null,
-  "median_h": 118.5
+  "box": [
+   0,
+   0,
+   3055,
+   214
+  ],
+  "median_h": 85.0
+ },
+ "p2L2": {
+  "image": "glyphs/p2_clean.png",
+  "box": [
+   0,
+   214,
+   3055,
+   456
+  ],
+  "median_h": 121.0
  }
 }
