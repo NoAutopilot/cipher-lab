@@ -178,6 +178,26 @@ the ask is still live or already stale, instead of re-deriving that by hand. LAN
 to change status.json's lodewijk grade text to match AUDIT.md A4's withdrawal; the parent had already made that
 exact change and pushed it at 08:12, and had to spend a correction line at 09:03 finding this out for itself.
 
+## Single orchestrator (27 Sept 2026, about 20:05 UTC, the owner's decision)
+
+From this line there is one orchestrator, on the owner account: this session and its successors. The other account has
+no parent; a scheduled dispatcher there (`.claude/briefs/dispatcher.md`) pulls `WORK-QUEUE.tsv` every hour and spawns the
+rows tagged `other` as workers on its own account. The reasons, recorded in plain form: two parents spent about a third of
+all effort on coordination (RETRO-2026-09-27x) and still let runner PRs sit past the claim window; one queue file replaces
+the cross-account asks, the tie-break and the account-roles split. What changes for the orchestrator:
+
+- Every job is a `WORK-QUEUE.tsv` row (`tools/work_queue.py --add`) with the brief written first. Rows tagged `owner` it
+  spawns itself at once; rows tagged `other` wait for the dispatcher (up to an hour), so long-box solver and transcription
+  jobs go there and short urgent ones (runner PR landings, gate checks) stay here.
+- It ledgers, retitles and archives every worker from both accounts by session id; if archive_session is refused for the
+  other account's session, the retitle stands and the LEDGER row notes it.
+- Runner PRs are claimed at every check-in and queued; there is no tie-break.
+- The sections "Account roles", "Runner PR tie-break" and "No parking" below are history from the two-parent period and
+  no longer bind; the "No parking" habit of a default plus a clock time on any ask still applies to asks to the owner.
+- The other account's parent (7n) stands down after its live workers finish: it ledgers them, writes its handoff in
+  STATUS.md, creates the dispatcher trigger on its account from the paste-ready prompt in dispatcher.md, posts one
+  "stood down" line, and stops. Its open targets pass to this orchestrator unchanged.
+
 ## Account roles (26 Sept 2026, 18:4x UTC; agreed by both parents after OPTIMIZATION-2026-09-26.md and the owner's condition that nothing in progress moves)
 
 Two accounts push to this repository. From this date they specialise instead of mirroring each other. Nothing in
