@@ -1157,3 +1157,16 @@ never a fact -- unchecked.
 - archival-route; the LOC finding aid PDF (`tile.loc.gov/storage-services/service/gdc/gdcfindingaidpdfs/ms009142/ms009142.pdf`) and existing index evidence locate the research lead but no key image was obtained or compared -- unchecked.
 - lead; Klaus Schmeh's article comment thread (30-31 August) was checked: its author reports unsuccessful continuation searches and withdraws two additional phrase proposals; no verified complete reading or usable key -- unchecked.
 - lead; a brief Wouves 1797 syllabic-table search did not yield an inspected key plate, and a numerical coordinate-code idea was considered but not implemented as a controlled decoder -- neither is promoted to a result -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-COMPONENTS, 27 Sept 2026)
+
+Landed from PR 42 (`second-opinions/chatgpt-components-2026-09-27.md`, PR-LAND-17). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- experiment-negative; a three-decimal-field spelling-table model (150x50,000 search, en18-corpus positive controls at 729/729, 731/731, 769/769 correct characters) produces no readable English on the target, whose output beats only 1 of 20 positional shuffles -- unchecked.
+- experiment-negative; two glyph-null homophonic models (shape 20 fixed null, or shapes 20+22 fixed null, ≤2 homophones/letter, controls 205-220 of 207-220 correct) also produce no readable English; the shape-20-only variant outranks all 20 of its own shuffles while the 20+22 variant is outranked by 6 of 20 -- neither validated as an exclusion or a confirmation -- unchecked.
+- archival-route; Annet's 1752 and 1770 shorthand manuals inspected directly (Dropbox PDF mirrors via Stenophile's historical collection, SHA-256 hashes recorded); the 1770 manual's PDF pp.16-17 give plaintext for twenty engraved examples, an untried literal-decode source not yet implemented -- unchecked.
+- archival-route; Narváez's article on the Wouves numeric-table cipher (AGN IV c.2610 exp.026 f.19, Mexico) gives the coordinate mechanism (62 alphabetic columns, arbitrary hundred-bases + row 1-99) but not the complete table; the Wellcome-catalogued ECCO item `CB0131087164` holding the full table was not retrieved -- unchecked.
+- lead (Livingston witness); re-examination of frame `mjm014253_0303.jpg` locates a short cipher passage with one-reader interlinear associations (grade M), including groups `1523 518 1126 1467` read as the "Marbois" run and `715 1583 648 967 913` as "his full power(s) that he"; developed further in PR 43 -- unchecked.
