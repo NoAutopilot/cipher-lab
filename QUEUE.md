@@ -7217,3 +7217,46 @@ opening, per NOTES.md.
 
 Row 19's neighbour, KEY-ADJACENT.tsv row 17 (`mayenne.htm`, BnF fr.4715 f.61, Mayenne's polyphonic cipher) is
 a distinct target in the same volume, untouched this job.
+
+## INTAKE-SAVOY unit A gate, 27 Sept 2026
+
+KEY-ADJACENT.tsv row 23 (`savoy.htm`, BnF fr.3983 ff.26/26v/130/130v/194/194v/195, ambassador Lebel to the
+Duke of Savoy, 1593) was flagged high found-solved risk on the SCOUT-OWN-7 pass, same title-and-image shape
+as `mantua.htm` (found-solved at INTAKE-3979). Fetched and looked directly at all seven per-folio images
+(`BnFfr3983f26.png`, `f26v`, `f130`, `f130v`, `f194`, `f194v`, `f195.png`). **Gate verdict: NOT found-solved
+-- partly read by Tomokiyo.** Unlike mantua.htm (a complete substituted-in reading), every one of the seven
+images carries a dense but incomplete pink interlinear gloss over the manuscript's cipher numerals: most
+occurrences of the ~21 code values Tomokiyo names in his own "Reconstructed Cipher" paragraph (21 pape, 23
+votre alteesse, 26 Duc de Mayenne, 29 Roy de Navarre, 42 Duc de Guise, 45 Duc de Lorraine, 108 par, 109 qui,
+110 pour, 112 il, 113 luy, 280 de, 292 couronne, plus the addenda 342/362/364/398/409/413/426/457) are glossed
+in place, but a substantial minority of numeral groups on every folio carry no gloss at all and remain bare
+digits in the image -- consistent with the page's own text ("Although many code groups are yet undeciphered,
+some of them may be identified by examining the handwriting of the deciphered letters"). Two of the seven
+images (f.130v, f.195) are mostly plain French prose with only a short cipher-bearing passage each (a handful
+of lines), the rest genuinely plaintext in the original manuscript. Rough per-folio estimate of unglossed
+numeral groups (by-eye count, not exhaustive): f.26 and f.194/f.194v each show roughly 10-20 bare groups
+against several times that many glossed; f.130 is glossed nearly throughout (single-digit bare-group count);
+f.26v, f.130v and f.195's cipher passages each show a handful (3-6) of bare groups. **This is a partial-read
+word-code target, the unread groups are what a campaign would attack** -- per this job's brief, a priced job
+for a later worker, not built as a folder this pass. KEY-ADJACENT.tsv row 23's `in_repo` cell updated with
+this verdict in place of the prior "mostly unchecked" note.
+
+## INTAKE-SAVOY unit B promotion, 27 Sept 2026
+
+KEY-ADJACENT.tsv row 7 (`louisxiv0.htm`, Melanges de Colbert 155, undeciphered letter of Mr l'Evesque de
+Beziers, Madrid, 13 Aug 1670) is promoted from the register to a folder: `ciphers/colbert155-beziers-1670`
+(Layout intake, no reading, no class -- see its own NOTES.md). Found-solved gate: no -- the page's own text
+gives only the letter's three-word opening ("afin que silent reprise ...") followed by Tomokiyo's trailing
+ellipsis, no further decipherment or per-group alignment. Folio search: the row names no folio and the Gallica
+manifest for this ark (`btv1b100340323`, 828 canvases) carries no folio labels at all (every canvas "NP");
+folio not located within the 10-minute cap, no images fetched. Key of record (`keys/key_colbert_croissy_1668.tsv`,
+Colbert-Croissy Cipher 1668-1674, `louisxiv0.htm` image `louisxiv_0croissy1668.png`) is transcribed (133 rows,
+three diacritic-marked numeral code-spaces, direct inspection plus one independent blind subagent read, full
+agreement) and registered (KEY-OFFICES.tsv, KEY-DESIGN.tsv, `tools/key_design.py --check` passes); the printed
+three-word opening is on disk as a known-plaintext crib (`known_plaintext.txt`). Flagged in NOTES.md: this
+letter (Beziers, Madrid) is an outlier from every other letter cited as using this key (all Croissy's own
+London-Paris despatches) -- sender and place both diverge, unexplained by the page. `tools/
+intake_gate_check.py colbert155-beziers-1670` passes ("open ... edition/page or full-text-search citation
+found within 6 lines"). Next step: locate the folio (volume finding aid or a queued route), then a calibrated
+reading against the key and the three-word opening, with a 20-shuffled-key control read cautiously given the
+very short crib, per NOTES.md.

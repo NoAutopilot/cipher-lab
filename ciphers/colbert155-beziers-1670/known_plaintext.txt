@@ -1,0 +1,18 @@
+# Printed opening words of an undeciphered letter of Mr l'Evesque de Beziers, Madrid, 13 August 1670,
+# BnF Melanges de Colbert 155. Source: sources/cryptiana/web/louisxiv0.htm (local mirror), the paragraph
+# immediately after the "Colbert-Croissy Cipher (1668-1674)" key table and its Melanges de Colbert 149-176bis
+# usage list. Transcribed verbatim, INTAKE-SAVOY, 27 Sept 2026. Tomokiyo's own reading (grade H per CLAUDE.md
+# rule 4 -- his reading, not ours), not a reading produced in this repository.
+
+afin que silent reprise ...
+
+## Notes
+
+- This is the WHOLE of what the page gives: three words plus Tomokiyo's own trailing ellipsis (his page prints
+  no more of the letter's decipherment). The gate question for this unit was "does the page give more than the
+  opening words" -- it does not; this is a genuine open target with only a three-word known-plaintext crib, not
+  a found-solved retirement.
+- No group-by-group cipher/plaintext alignment ("DUMP" block) is printed for this letter anywhere in
+  louisxiv0.htm, unlike the fr4715-montholon-1589 precedent (INTAKE-4715) -- checked the whole page, not found.
+  A reader has only the three plaintext words above and the key table (keys/key_colbert_croissy_1668.tsv) to
+  work from, no aligned cipher-group anchors.

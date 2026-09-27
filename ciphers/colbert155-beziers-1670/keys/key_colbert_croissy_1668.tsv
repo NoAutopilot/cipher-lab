@@ -1,0 +1,181 @@
+# Colbert-Croissy Cipher (1668-1674) (Tomokiyo's own label "DE=68"), reconstructed by S. Tomokiyo, printed
+# as a clean digital table ("Colbert-Croissy Cipher (1668-1674)") in sources/cryptiana/web/louisxiv0.htm,
+# image louisxiv_0croissy1668.png (fetched from cryptiana.web.fc2.com/code/louisxiv_0croissy1668.png,
+# INTAKE-SAVOY, 27 Sept 2026). Per the page's own prose this cipher is used across many Melanges de Colbert
+# volumes 149, 158-167, 176bis (October 1668-December 1673, mostly Colbert de Croissy's London despatches to
+# Lionne/Seignelay) and is the key named for the undeciphered letter of "Mr l'Evesque de Beziers", Melanges de
+# Colbert 155, Madrid, 13 August 1670 -- this letter is an outlier in both sender (Beziers, not Croissy) and
+# place (Madrid, not London) for an otherwise London-Paris correspondence key; flagged as a risk for the
+# reader, not resolved by this transcription job.
+#
+# THREE SEPARATE NUMERAL CODE-SPACES share the same digit range, distinguished only by a diacritic mark
+# printed directly over the numeral in the source table: none (bare digit), macron (an overbar over the
+# digit), circumflex (a caret/hat over the digit). "sign" is the printed code number; "diacritic" is
+# none|macron|circumflex; "value" is the plaintext meaning (a single letter, a syllable, or a whole word/
+# name). Decode direction: (sign, diacritic) -> value. Two cells use a non-digit printed sign instead of a
+# number: "x" -> a, "θ" (Greek theta) -> e, transcribed as drawn per CRYPT B4 (marks recorded as drawn, not
+# folded into a digit guess). Bracketed values like [gi], [bu], [hi], [hu], [quu], [vu], [tu], [pu], [ji] are
+# printed in square brackets in the source itself -- kept exactly as printed, not this worker's uncertainty
+# marker (distinct from the "grade" column below, which IS this worker's own transcription confidence).
+#
+# This is a printed digital table (clean typeset HTML/image, not a hand-drawn manuscript key), read by direct
+# inspection of three overlapping upscaled crops (crop_left/crop_mid/crop_right, 2x resize) plus one
+# independent blind Sonnet subagent read of the same three crops (general-purpose agent, shown only the crop
+# images and a transcription task, no context) as a cross-check, per this job's brief. The two reads AGREED
+# on every row with no disagreement to settle, including which numeral ranges carry the macron mark (a first
+# unaided glance at the full un-cropped image mistook the 81-105 range for undecorated/bare; both crop-based
+# reads independently confirmed the overbar is drawn on 81-105 too, resolving that in favour of macron). All
+# rows: grade AB (both reads agreed).
+#
+# Three cells are printed with a macron-marked numeral (40, 54, 55) but an EMPTY meaning cell in the source
+# table itself -- not a transcription gap, the source prints no value there. Recorded below with value
+# "(blank in source)" and grade H (read correctly as blank, not an uncertain read). Sign 55 also exists,
+# separately, as a genuine value in the circumflex code-space ("hollandois") -- two different codes sharing
+# the bare digit 55, correctly kept as two rows.
+#
+# Columns: sign	diacritic	value	kind	grade	source
+sign	diacritic	value	kind	grade	source
+x	none	a	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+θ	none	e	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+2	none	a	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+5	none	m	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+6	none	b	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+7	none	c	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+8	none	e	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+9	none	f	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+10	none	g	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+12	none	i	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+13	none	l	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+14	none	n	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+15	none	o	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+16	none	p	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+17	none	s	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+18	none	r	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+19	none	qu	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+20	none	t	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+21	none	z	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+22	none	y	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+23	none	x/s	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+24	none	u	letter	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+26	none	b	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+30	none	d	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+38	none	m	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+45	none	i	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+50	none	-	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+51	none	ba	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+52	none	be	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+53	none	bi	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+54	none	bo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+55	none	[bu]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+56	none	ca	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+57	none	ce	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+58	none	ci	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+59	none	co	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+60	none	cu	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+61	none	fo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+62	none	fi	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+63	none	fe	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+64	none	[fa]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+65	none	du	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+66	none	do	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+67	none	di	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+68	none	de	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+69	none	da	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+71	none	ga	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+72	none	ge	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+73	none	[gi]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+74	none	go	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+75	none	gu	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+76	none	ha	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+77	none	he	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+78	none	[hi]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+79	none	ho	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+80	none	[hu]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+106	none	qua	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+107	none	que	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+108	none	qui	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+109	none	quo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+110	none	[quu]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+20	macron	ra	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+21	macron	re	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+22	macron	ri	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+23	macron	ro	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+24	macron	ru	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+25	macron	su	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+26	macron	so	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+27	macron	si	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+28	macron	se	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+29	macron	sa	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+30	macron	ta	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+31	macron	[vu]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+32	macron	vo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+33	macron	vi	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+34	macron	ve	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+35	macron	va	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+36	macron	[tu]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+37	macron	to	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+38	macron	ti	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+39	macron	te	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+40	macron	(blank in source)	syllable	H	louisxiv0.htm/louisxiv_0croissy1668.png
+52	macron	li	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+53	macron	vi	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+54	macron	(blank in source)	syllable	H	louisxiv0.htm/louisxiv_0croissy1668.png
+55	macron	(blank in source)	syllable	H	louisxiv0.htm/louisxiv_0croissy1668.png
+81	macron	ja	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+82	macron	je	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+83	macron	[ji]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+84	macron	jo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+85	macron	ju	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+86	macron	ma	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+87	macron	me	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+88	macron	mi	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+89	macron	mo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+90	macron	la	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+91	macron	le	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+92	macron	li	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+93	macron	lo	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+94	macron	lu	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+95	macron	mu	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+96	macron	na	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+97	macron	ne	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+98	macron	ni	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+99	macron	no	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+100	macron	nu	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+101	macron	pa	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+102	macron	pe	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+103	macron	pi	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+104	macron	po	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+105	macron	[pu]	syllable	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+16	circumflex	le Roy d'angleterre	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+19	circumflex	le Roy d'angleterre	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+31	circumflex	Mr	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+34	circumflex	le Roy	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+55	circumflex	hollandois	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+65	circumflex	le duc de Boukingham [Buckingham]	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+66	circumflex	milord arlington	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+69	circumflex	le duc d'Jorck (Duke of York)	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+56	circumflex	anglois	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+201	circumflex	au	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+202	circumflex	beaucoup	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+204	circumflex	avec	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+205	circumflex	bien	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+207	circumflex	bon	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+211	circumflex	comme	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+214	circumflex	est	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+216	circumflex	estre	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+217	circumflex	faire	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+218	circumflex	fait	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+220	circumflex	grand	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+222	circumflex	homme	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+228	circumflex	luy	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+229	circumflex	leur	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+230	circumflex	Mr	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+232	circumflex	nous	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+233	circumflex	nostre	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+235	circumflex	ou	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+236	circumflex	on	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+238	circumflex	pour	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+240	circumflex	quil	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+244	circumflex	tout	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+247	circumflex	votre	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
+249	circumflex	voir	word	AB	louisxiv0.htm/louisxiv_0croissy1668.png
