@@ -253,6 +253,16 @@ Counts (rule 4, unchanged from bUNT8): C: 0, M: 4, H: 0, I: 1 (bUNT5's line-leve
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
 
+## UNT-LANG (27 Sept 2026)
+
+Per job brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-unt-lang.md`: read the second-opinion lead item [6] (`second-opinions/chatgpt-leads-2026-09-27.md`, PR-LAND-12) -- Johannes Lang, "Das Erbe der 'Lazarusgeschichte'. Zur Entstehung und Instrumentalisierung der Untersbergsage," *Mitteilungen der Gesellschaft für Salzburger Landeskunde* 150 (2010), pp. 125-178, PDF at `https://www.zobodat.at/pdf/MGSL_150_0125-0178.pdf`.
+
+**Fetch attempt, blocked.** Reachability test (`curl -sS -o /dev/null -w "%{http_code}"`) on the plain URL returned a proxy-side connection reset (`ws_closed_mid_exchange`) on the first try. One retry, per the good-citizen rule, with a browser User-Agent (`Mozilla/5.0`): HTTP 200, but `Content-Type: text/html`, not a PDF, with `Set-Cookie: techaro.lol-anubis-auth=...` / `techaro.lol-anubis-cookie-verification=...` and body title "Making sure you're not a bot!" -- this is the same Anubis JS proof-of-work bot-challenge the access playbook already documents for `bibliotecadigital.rah.es` (CLAUDE.md, Access playbook item 1), now confirmed for zobodat.at too. Per this job's brief ("on a 403 or challenge stop and say so") and the good-citizen rule (one retry after a pause is the limit), stopped here rather than trying the headless-Chromium fallback the playbook documents for that same challenge (`tools/browser_fetch.js --binary`), which this brief's USD 3 cap and 30-minute box were not sized for. Requests to zobodat.at: 2 (one proxy-reset, one 200-with-challenge), >=3s apart.
+
+**Both of the brief's questions are therefore unanswered, not "no":** whether Lang's appendix names a Reichenhall manuscript outside Herzog's twelve, and whether Lang prints, cites or discusses the six-line HS 2398 text, are untested (not a search result under rule 10 -- the source was never read). If a future pass wants this PDF, the next route to try is `tools/browser_fetch.js --binary` against the same URL (the rah.es precedent shows Anubis clears intermittently for a real headless browser, not for curl), or the Wayback Machine CDX API for a cached copy, neither attempted here (out of this brief's scope and cap).
+
+No decode, no other host touched, no credentials, no AskUserQuestion, no solved/new/first/unpublished wording.
+
 ## Second-opinion leads (SO-UNTERSBERG-LEADS, 27 Sept 2026)
 
 Landed from PR 34 (`second-opinions/chatgpt-leads-2026-09-27.md`, OpenAI GPT-5/Codex, PR-LAND-12). Leads, not verdicts; every citation below is a claim to verify, never a fact -- unchecked.
