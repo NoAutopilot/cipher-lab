@@ -181,3 +181,14 @@ this re-brief made, and the gate still fails, in the same shape as before, on a 
 the design mismatch): **context option untested-by-this-tool at N=2839 for this target (two controls, it16dip
 and it, both below gate); not refuted.** No further context re-brief on this target without a different
 instrument or new material (a decode script or a differently-scored context term, not another corpus swap).
+
+## Old split (SALV2 J2, 27 Sept 2026)
+
+Every row above, dated at or before 27 Sept 2026 01:25 UTC (the last is 26 Sept 2026 22:08; checked directly
+against the table, none falls between then and the cutoff), ran on the pre-27-Sept plain/sign split: about 98
+sign boxes among the leaves' plain-labelled positions were mislabelled plain by the spec's `row_pattern` (SALV-
+SPLIT, 71.5% flagged sign-rate vs an 11.7% matched control), and 63 run boundaries were consequently wrong. Every
+row above is re-labelled **on the old split**: neither refuted nor confirmed on the corrected text (2,932 tokens,
+251 types, 327 runs, 1,121 plain boxes; SALV2-J2, this target's NOTES.md). No row above is edited (append-only,
+CLAUDE.md rule 3/7); this section is the re-label. New runs on the corrected split are appended below, dated after
+this line.

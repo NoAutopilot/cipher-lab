@@ -2263,10 +2263,10 @@
     },
     {
       "target": "fr2933-salviati-1525",
-      "title": "Salviati 1525: letter-per-type code+mark (CM3), partial syllabary regular/irregular (R8-DSN) and mixed marks with and without word edges (R8-DSN2) all excluded at the measured 5% error -- every control 72-96% vs target 0.3-0.5/symbol below, judge FAIL, no Italian; nomenclator-word design untested; no sibling pool",
-      "next": "marked types as nomenclator words (NOTES DSN sec.5 b): needs a word-level scorer over it16 before any control -- a tool job, Fable, about USD 10; or a lower transcription error (a third pass on the 14.6%-disagreement boxes) before re-running any family",
-      "lane": "R8",
-      "touched": "25 Sept 2026 23:53"
+      "title": "Salviati 1525: letter-per-type code+mark (CM3), partial syllabary regular/irregular (R8-DSN) and mixed marks with and without word edges (R8-DSN2) all excluded at the measured 5% error on the OLD split -- every control 72-96% vs target 0.3-0.5/symbol below, judge FAIL, no Italian; every family run before 27 Sept 2026 01:25 UTC is re-labelled 'on the old split' (SALV-SPLIT found 98 of 137 flagged plain boxes were real signs; SALV2-J1/J2 transcribed them and rebuilt the spec to 2,932 tokens/251 types/327 runs/1,121 plain boxes); cm family rerun on the corrected split in progress",
+      "next": "SALV2-J2's cm control-then-target rerun on the corrected split (this job); marked types as nomenclator words (NOTES DSN sec.5 b) on the corrected split after that; or a lower transcription error before re-running any other family",
+      "lane": "R8; SALV2",
+      "touched": "27 Sept 2026 02:51"
     },
     {
       "target": "koehler-1944",

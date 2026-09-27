@@ -2908,3 +2908,12 @@ confirmed.json, are historical record of the sizing pass).
 writes one (grepped `*.py` and `NOTES.md`) -- the real ciphertext lives in the spec's own `ciphertext` field
 (rebuilt above); only `ciphertext_with_plain.txt` (interleaved reading copy, rebuilt, `--check` ok) and the now-
 removed `ciphertext.split-candidate.txt` ever existed. Saying so per the brief's own fallback clause.
+
+**(b) RELABEL.** Every row in `HYPOTHESES.md` is dated 26 Sept 2026 22:08 UTC or earlier (checked directly against
+the table, none between then and the 27 Sept 2026 01:25 UTC cutoff), so the append-only "Old split (SALV2 J2, 27
+Sept 2026)" section re-labels the whole table "on the old split" -- neither refuted nor confirmed on the corrected
+text -- without editing any row. `NEAR.md`'s salviati row: one dated sentence appended to the end of the Evidence
+cell (rebuild counts, relabel, cm rerun in progress) and the Last-touched cell moved to 27 Sept 2026 02:51 UTC;
+`status.json`'s near entry for this target updated to agree (title, next, lane, touched). `python3
+tools/near_check.py`: `ok: 12 NEAR.md rows, 12 status.json near entries, in step, none closed-negative, none
+stale`. Status stays **partial** (rule 5; no reading).
