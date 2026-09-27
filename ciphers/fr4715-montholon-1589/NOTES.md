@@ -945,3 +945,38 @@ dots. `EVIDENCE-PACKET.md` fixes the material and the rule for an outside protot
 
 Requests this job: 0 network requests; 0 subagents; 0 reading calls. No credentials, no AskUserQuestion, no novelty
 wording.
+
+## MONT-DOTS2 (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-dots.md` (parent worker MONT-DOTS2, Opus,
+session_012QTv1z3BrtkqboatBJdH1H; the re-spawn of MONT-DOTS, which stopped before any work when ROOM.md was cut to a
+stub). Box started 16:06 UTC (clock read). One job: MONT-RECROP's suggestion, half-width slope sheets as an image-side
+test of the dotted gate only; same prompt, same scorer. Intake gate re-run: `open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. MONT-LATTICE (above) changes nothing here.
+
+**Pre-registered gate (written 16:09 UTC, before the reading call).** Call D, pooled over L03/L08/L13/L15, margin-8
+window, the same within-line shuffle controls (20, seed 1), `scripts/mont4715c.py digscore` unchanged: G2 dotted
+recall >= 0.70 AND G0 digit LCS >= 0.92 AND G1 letter-group >= 0.85, all three on the same call, or the image-side
+route fails. Margin 0 is reported beside and does not decide.
+
+**U1, sheets (0 network requests).** Third block in `images/regen_f81r_crops.sh` (`sh images/regen_f81r_crops.sh
+dots`): the MONT-RECROP cut (`--follow-slope 300 --slope-local --slope-margin 6`, same fits: L03 b 0.0193, L08 0.0168,
+L13 0.0243, L15 0.0279) at `--max-width 450`, 3x LANCZOS, stacked, prefix `f81rdots_`. Twelve segments per line (the
+last is past the line's end on all four). Two departures from the brief's letter, both to keep its purpose:
+- **Two sheets per line, not one** (`f81rdots_Lnna.jpg` = segments 1-6, `...b.jpg` = 7-12, each about 1350 x 1300).
+  One twelve-segment stack is about 1350 x 2600; the reader reported seeing call C's 2700 x ~1100 sheets at about 0.74x,
+  i.e. a long-edge cap near 2000 px, which would show a 2600 px-tall stack at about 0.78x -- no more pixels per dot
+  than call C, so the test would not vary the knob it is meant to test. Each half-sheet fits under that cap.
+- **Numeric segment order.** The first cut used block 2's `sorted(glob)`, which puts s10-s12 before s2 (block 2 had
+  five segments, so it never showed); caught at the eye check (the sheet's "segment 2" continued the sheet's
+  "segment 12"), fixed with a numeric sort before any reading call.
+`regen ... slope` still regenerates `f81rslope_L03.jpg` byte-identically (md5 checked); `regen ... dots` run twice gives
+byte-identical sheets. images/ 22 MB. `tools/iiif_lines.py` rewrites images/manifest.json wholesale (reformat plus
+entries for the deleted temporary crops), so the manifest was restored from git after each run and the `mont_dots` key
+added by hand.
+
+**U1 eye check (this session, all eight half-sheets, each segment's head against the previous segment's tail):**
+- L03: 12 segments, named line central throughout, joins continuous; opens 93 63 83 2..., ends ...60 85 73, seg 12 blank.
+- L08: 12 segments, central throughout, joins continuous; opens 83 93 65 65 23..., ends ...47 50 63, seg 12 blank.
+- L13: 12 segments, central throughout, joins continuous; opens 23 19 23 73 65 85..., ends ...63 23 2 and a colon-like sign, seg 12 blank.
+- L15: 12 segments, central throughout, joins continuous; opens 63 50 85 95 73 25 11..., ends ...90 42 9?, seg 12 blank.

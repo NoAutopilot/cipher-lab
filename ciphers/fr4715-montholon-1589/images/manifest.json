@@ -2642,5 +2642,24 @@
     "why": "f81rsheet_Lnn.jpg were cut at a fixed y; the lines slope ~0.02 and left the strip in segment 3-4 (MONT-READ-DIGITS)",
     "eye_check": "L03/L08/L13/L15: named line (segment 1 = call A's opening digits) is the central row of all 5 segments, overlaps continuous (NOTES.md MONT-RECROP U2)",
     "network_requests": 0
+  },
+  "mont_dots": {
+    "date": "27 Sept 2026",
+    "job": "MONT-DOTS2",
+    "sheets": [
+      "f81rdots_L03a.jpg",
+      "f81rdots_L03b.jpg",
+      "f81rdots_L08a.jpg",
+      "f81rdots_L08b.jpg",
+      "f81rdots_L13a.jpg",
+      "f81rdots_L13b.jpg",
+      "f81rdots_L15a.jpg",
+      "f81rdots_L15b.jpg"
+    ],
+    "command": "tools/iiif_lines.py --image images/src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg --region 0,0,3630,2243 --prefix f81rdh --max-width 450 --follow-slope 300 --slope-local --slope-margin 6 --only-lines 3,8,13,15; 3x LANCZOS; segments in numeric order, stacked 6 per sheet (a = 1-6, b = 7-12), 22 px label strip each, JPEG q90",
+    "regen": "sh images/regen_f81r_crops.sh dots (third block)",
+    "why": "call C (MONT-RECROP) missed only the dotted gate; half-width segments put about 1.3x more displayed pixels on each dot",
+    "eye_check": "all four lines: 12 segments, named line central, joins continuous, segment 12 past the line end (NOTES.md MONT-DOTS2 U1)",
+    "network_requests": 0
   }
 }
