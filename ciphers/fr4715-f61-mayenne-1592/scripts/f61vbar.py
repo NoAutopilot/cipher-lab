@@ -31,11 +31,17 @@ def stat(groups, labels):
         best = max(best, sum(1 for g, l in zip(groups, labels) if m[g] == l))
     return best
 
-def main():
-    rows = list(csv.DictReader(open(f"{HERE}/read_call_V.tsv"), delimiter="\t"))
+def run(rows, out, rule):
+    """rule 1 (pre-registered): every listed sign paired in order. rule 2 (added after the output was read, from the
+    call's own shape text, never from the labels): drop the call's rows whose 'extra' names a 4-shaped element above
+    the bar -- the reader's separate '4 over triangle' class (read_call_A.tsv 4TRI), which the prompt's wording ('V or
+    triangle combined with a bar') let the call include -- and drop a row the call itself flags as a possible repeat
+    of the previous sign across a segment overlap."""
+    if rule == 2:
+        rows = [r for r in rows if "4-shaped" not in r["extra"] and "may be the same sign" not in r["note"]]
     by = defaultdict(list)
     for r in rows: by[r["sheet"]].append(r)
-    out = [f"read_call_V.tsv: {len(rows)} V-signs listed by the blind call; groups " + ", ".join(sorted({r['group'] for r in rows}))]
+    out.append(f"pairing rule {rule}: {len(rows)} listed signs; groups " + ", ".join(sorted({r['group'] for r in rows})))
     groups, labels, scored = [], [], []
     for sheet, poss in VBAR_POS.items():
         got = sorted(by.get(sheet, []), key=lambda r: (int(r["segment"]), float(r["x_px"])))
@@ -48,7 +54,7 @@ def main():
             if lab: groups.append(r["group"]); labels.append(lab); scored.append((sheet, pos))
     n = len(labels)
     if n < 4:
-        out.append(f"scored positions {n} < 4: NON-TEST (reconciliation failed)"); txt = "\n".join(out) + "\n"
+        out.append(f"scored positions {n} < 4: NON-TEST under rule {rule} (reconciliation failed)")
     else:
         obs = stat(groups, labels)
         ns = labels.count("s")
@@ -62,8 +68,14 @@ def main():
         out.append(f"observed best group->letter match {obs}/{n} = {obs/n:.3f}")
         out.append(f"exact null over {len(exact)} label arrangements: P(>= observed) = {p_exact:.3f}; max achievable {max(exact)}/{n}")
         out.append(f"200 permutations (seed 1): mean {sum(perm)/200:.2f}/{n}, p95 {p95}/{n}")
-        out.append(f"GATE H13 (observed above permutation p95, exact p < 0.05): {'PASS' if obs > p95 and p_exact < 0.05 else 'FAIL'}")
-        txt = "\n".join(out) + "\n"
+        out.append(f"GATE H13 under rule {rule} (observed above permutation p95, exact p < 0.05): {'PASS' if obs > p95 and p_exact < 0.05 else 'FAIL'}")
+
+def main():
+    rows = list(csv.DictReader((l for l in open(f"{HERE}/read_call_V.tsv") if not l.startswith("#")), delimiter="\t"))
+    out = [f"read_call_V.tsv: {len(rows)} V-signs listed by the blind call"]
+    run(rows, out, 1)
+    run(rows, out, 2)
+    txt = "\n".join(out) + "\n"
     res = f"{HERE}/f61vbar_result.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt

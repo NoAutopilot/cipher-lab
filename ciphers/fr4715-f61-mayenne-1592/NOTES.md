@@ -419,3 +419,44 @@ the reader merged. H13 (CAMPAIGN.md) tests that with one blind vision sort of th
 control. Files: `scripts/f61crib3.py`, `scripts/f61crib3_result.txt`, `scripts/f61crib3_map.tsv`; HYPOTHESES.md row
 added. Requests: none. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H13 (2026-09-27 22:57 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). One Opus vision subagent call (the step's one allowed; about
+100k subagent tokens, 57 s), no network. Hypothesis H13 (F61-VBAR): is the reader's one "V with bar" class two glyphs?
+
+**Design, pre-registered (`scripts/f61vbar.py`, committed a94e9ff0 before the call's output was read).** The subagent was
+given the six `images/f61sheet_L*.jpg` sheets and asked to list every cipher sign "whose main body is a V or a triangle
+combined with a horizontal bar", with fixed shape attributes (bar position, bar length, closed/open, point, weight,
+extra element), sorted into 2-3 groups by shape with a one-sentence criterion. No letters, no key, no table, no expected
+count. Pairing rule 1: per sheet, the call's signs in order are paired with `read_call_A.tsv`'s VBAR positions in order
+(L01/10, L03/5, L03/6, L05/3, L05/18, L07/9, L11/6, L11/12); a sheet whose count differs is dropped. Labels: the markup
+letter at each position under H12's alignment (s at L03/5, L05/18, L07/9; t at L03/6, L05/3, L11/6, L11/12; L01/10 a
+dash, never scored). Statistic: best group-to-letter match over the labelled positions. Null: all 35 arrangements of
+3 s and 4 t over the 7 positions (exact) and 200 permutations (seed 1). Gate: above the permutation p95 with exact
+p < 0.05. Power note, posted in ROOM before the output: at n=7 only a perfect split passes (p = 0.029); 6/7 has p = 0.14.
+
+**Output (`scripts/read_call_V.tsv`, verbatim).** 18 signs in three groups. The call's own criterion: "A is a closed
+down-pointing triangle whose only bar is its top side; B is the same triangle with a second bar across its point; C is
+a smaller, partly open triangle under a bar, with a 4-shaped element and a stem above the bar." Group C (11 signs) is
+the reader's separate "4 over triangle" class (4TRI, read_call_A.tsv), which the prompt's wording let the call include.
+
+**Result (`scripts/f61vbar_result.txt`).**
+
+| pairing rule | reconciled sheets | scored | split | exact p | permutation p95 | gate |
+|---|---|---|---|---|---|---|
+| 1, pre-registered (every listed sign paired in order) | 1 of 5 (L07 only) | 1 position | -- | -- | -- | **NON-TEST** |
+| 2, amended after reading (rows whose own `extra` names the 4-shaped element dropped; one row the call itself flags as a possible repeat across a segment overlap dropped) | 5 of 5, all 8 VBAR positions | 7 (3 s, 4 t) | B = s 3/3, A = t 4/4, **7/7** | **0.029** | 6/7 (mean 4.70) | PASS under rule 2 |
+
+Under the rule as pre-registered this is a non-test, because the prompt's shape wording was wider than the reader's
+class. Under rule 2, which uses only the call's own shape text and its own flag (never the s/t labels), the two
+remaining groups separate every s position from every t position: group B ("second bar at the point, extending left",
+heavy) sits under s at L03/5, L05/18 and L07/9; group A ("top bar only") sits under t at L03/6, L05/3, L11/6 and L11/12
+and under the unlabelled L01/10. So the "V s/t conflict" carried since F61-CAL is most simply a reader merge of two
+glyphs, not a polyphonic cell that breaks the table's pairing -- but because rule 2 was written after the output was
+read, this is reported as an amended-rule result and H14 pre-registers the confirmation (prompt fixed to the reader's
+class, rule 1 as written) before the split is used anywhere. Not a reading; no class change; nothing here is said to
+be solved or new.
+
+Files: `scripts/f61vbar.py`, `scripts/read_call_V.tsv`, `scripts/f61vbar_result.txt`; HYPOTHESES.md row added.
+Requests: none. Vision calls: 1 of 4. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+

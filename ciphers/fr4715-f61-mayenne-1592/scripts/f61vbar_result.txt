@@ -1,0 +1,22 @@
+read_call_V.tsv: 18 V-signs listed by the blind call
+pairing rule 1: 18 listed signs; groups A, B, C
+  L01: reader VBAR count 1, blind call found 3 -> NOT reconciled, 1 position(s) dropped
+  L03: reader VBAR count 2, blind call found 5 -> NOT reconciled, 2 position(s) dropped
+  L05: reader VBAR count 2, blind call found 5 -> NOT reconciled, 2 position(s) dropped
+  L07/9: group B, letter s, bar across top opening (forms top side), closed, heavy, extra second bar at the point, extending left
+  L11: reader VBAR count 2, blind call found 3 -> NOT reconciled, 2 position(s) dropped
+scored positions 1 < 4: NON-TEST under rule 1 (reconciliation failed)
+pairing rule 2: 8 listed signs; groups A, B
+  L01/10: group A, letter -, bar across top opening (forms top side), closed, medium, extra none
+  L03/5: group B, letter s, bar across top opening (forms top side), closed, heavy, extra second bar at the point, extending left
+  L03/6: group A, letter t, bar across top opening (forms top side), closed, medium-heavy, extra none
+  L05/3: group A, letter t, bar across top opening (forms top side), closed, heavy, extra none
+  L05/18: group B, letter s, bar across top opening (forms top side), closed, heavy, extra second bar at the point, extending left
+  L07/9: group B, letter s, bar across top opening (forms top side), closed, heavy, extra second bar at the point, extending left
+  L11/6: group A, letter t, bar across top opening (forms top side), closed, heavy, extra none
+  L11/12: group A, letter t, bar across top opening (forms top side), closed, medium, extra none
+scored 7 positions (s 3, t 4); groups used 2
+observed best group->letter match 7/7 = 1.000
+exact null over 35 label arrangements: P(>= observed) = 0.029; max achievable 7/7
+200 permutations (seed 1): mean 4.70/7, p95 6/7
+GATE H13 under rule 2 (observed above permutation p95, exact p < 0.05): PASS

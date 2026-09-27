@@ -1,0 +1,24 @@
+# H13 blind call (Opus vision subagent, 27 Sept 2026, one call, the six images/f61sheet_L*.jpg sheets; prompt: list every
+# cipher sign whose body is a V/triangle with a bar, fixed shape attributes, sort into 2-3 groups; no letters, no key,
+# no expected count given). Rows verbatim from the call's report. Its group criterion, verbatim: "A is a closed
+# down-pointing triangle whose only bar is its top side; B is the same triangle with a second bar across its point;
+# C is a smaller, partly open triangle under a bar, with a 4-shaped element and a stem above the bar." "V-signs found: 18".
+sheet	segment	x_px	order_in_sheet	group	bar_position	bar_length	closed	point	weight	extra	note
+L01	1	2320	1	C	across top opening of lower triangle	longer	partly (7-like, open left side)	bottom	medium	4-shaped element above the bar, stem through bar	sign cut by segment bottom edge
+L01	2	540	2	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem through bar	same as L01 s1
+L01	2	1620	3	A	across top opening (forms top side)	longer	closed	bottom	medium	none	bar extends well right and left of V
+L03	2	1500	1	B	across top opening (forms top side)	longer	closed	bottom	heavy	second bar at the point, extending left	looks like a V between two bars
+L03	2	1780	2	A	across top opening (forms top side)	longer	closed	bottom	medium-heavy	none	bar overhangs right
+L03	2	2040	3	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	
+L03	3	230	4	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	lower part cut by segment edge
+L03	3	1080	5	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	
+L05	1	580	1	A	across top opening (forms top side)	longer	closed	bottom	heavy	none	bar extends left beyond V as a lead-in stroke
+L05	1	1485	2	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	
+L05	2	1985	3	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	
+L05	3	175	4	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	
+L05	3	1190	5	B	across top opening (forms top side)	longer	closed	bottom	heavy	second bar at the point, extending left	
+L07	3	1550	1	B	across top opening (forms top side)	longer	closed	bottom	heavy	second bar at the point, extending left	a paper crease/fold line runs through it
+L08	2	1755	1	C	across top opening of lower triangle	longer	partly	bottom	medium	4-shaped element above the bar, stem	
+L11	1	1865	1	A	across top opening (forms top side)	longer	closed	bottom	heavy	none	
+L11	2	70	2	A	across top opening (forms top side)	longer	closed	bottom	heavy	none	cut at the left edge of the segment; may be the same sign as L11 s1 x1865 repeated across the segment overlap
+L11	2	1835	3	A	across top opening (forms top side)	longer	closed	bottom	medium	none	long bar extends far left, sits slightly high over the V
