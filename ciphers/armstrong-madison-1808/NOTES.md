@@ -1541,3 +1541,45 @@ seeds against the shuffle band, not one seed's -- the same "control can fail dif
 applied to the search's own randomness. Requests: none (offline). Cost: no get_session figure to this runner; the row's
 estimate (2 USD) is what `campaign.py --spend` records. Compute: 400 shuffle runs + 120 control-shuffle runs + 11 target
 seeds, about 12 min on 4 cores; sequences and binaries in the scratchpad, tables in `glyphnull/`.
+
+## Campaign step H3 (27 Sept 2026, 23:34-23:40 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H3, ARM-S3's
+own named next step for Annet: do the target's shorthand marks group in twos, the way a two-digit numbered sign
+index (ARM-S3's reading of Annet 1761, a 300-cell index, rows 0-29 x columns 0-9) written as digit strokes would?
+Script `adj/pairs_test.py` -> `adj/pairs_test.tsv`, offline, stdlib. The row named the shuffled-position null of
+`adj/adj_test.py`; that null moves runs among numeric gaps and keeps their lengths, so it cannot change a run's parity
+or the positions within a run (rule 3, the bCAS/AX-5799 same-axis lesson) and was not used. Nulls that can differ:
+a coin-flip parity null and a within-fragment token shuffle. Positive controls: pair-design sequences with the
+target's own run lengths and per-mark transcription error e injected at 0 / 5 / 10 / 20% (a mark dropped or a stray
+mark added), because the two transcriptions of the same marks disagree in count by about 16% (ciphertext_ms.txt 218
+marks in 28 runs, ARM-TR/TR2; codex-2026-09-27b glyphs.tsv 257 tokens in 28 fragments), so the control's error band
+has to bracket that (the SALV-DIAG lesson).
+
+| test | source | target | null | pair-design control (p05 of even fraction, or share of 200 controls beating their own shuffle p95) at e = 0 / .05 / .10 / .20 |
+|---|---|---|---|---|
+| A parity: even-length runs | ms runs (28) | 8/28 = 0.286 | coin flip: P(<=8) 0.018 | 1.000 / 0.500 / 0.393 / 0.357 -- target below the control p05 at every level |
+| A parity | glyph fragments (28) | 13/28 = 0.464 | coin flip: P(<=13) 0.425 | 1.000 / 0.464 / 0.393 / 0.357 -- target below p05 at e=0, at the line at e=.05, inside the band from e=.10 |
+| B odd-vs-even position shapes, JSD bits (distinct shapes odd/even) | glyph fragments | 0.1599 (32 / 26) | within-fragment shuffle: mean 0.119, p95 0.1601, target percentile 94.8 | 30+10 shapes: 1.00 / 0.85 / 0.49 / 0.12; 3+10 shapes: 1.00 / 0.92 / 0.60 / 0.27 (control JSD means 1.00 / 0.18-0.22 / 0.12-0.16 / 0.12-0.13) |
+
+Reading. On the manuscript transcription's own run lengths the marks run *odd* more often than a coin flip (20 of
+28 odd; runs of 1, 3, 5, 9, 11, 13, 15, 25, 35 marks), the opposite of a two-stroke design, and below the pair
+control's 5th percentile even when a fifth of the marks are miscounted: a pair design is excluded on this source at
+every error level tried. On the glyph table the same statistic excludes pairs only for a near-clean transcription
+(e <= 5%); from 10% error the parity control itself has no power (its p05 falls below the target). The positional
+test agrees in shape: the target's odd/even shape divergence sits at the 94.8th percentile of its own shuffle null,
+a hair under the p95 line, with 32 distinct shapes at odd positions against 26 at even -- nothing like the 3-30
+row shapes vs 10 column shapes a numbered index would give -- and its JSD (0.16) is where the pair controls land
+only once 10% of marks are wrong (0.12-0.16), far below the clean controls (1.0) or the 5%-error ones (0.18-0.22).
+Conditional on two M-grade one-reader transcriptions that disagree with each other by about 16% in mark count.
+
+**Verdict for the campaign:** FAIL for the two-strokes-per-sign reading, control-backed at e <= 5% on both sources
+and both statistics and, on the manuscript run lengths, up to 20%; on the glyph table the test is untestable above
+10% error (control power 49-60%), which is inside the two transcriptions' own disagreement, so the glyph-table half
+is "untestable at this transcription's error level", not a second negative. This closes ARM-S3's named next step
+for Annet as ARM-S3 framed it. It does not bear on Annet's actual design as the later checkpoints read the 1752/1770
+manuals (alphabets, word signs and compounds -- single strokes, not numbers written out), which the checkpoints'
+own answer-aware exercise alignments cover and this campaign has not re-tested. The marginal positional result
+(percentile 94.8) is worth one cheap follow-up on a *reconciled* mark transcription rather than either single pass:
+recorded as hypothesis H15. No reading, no class change. Requests: none. Cost: no get_session figure to this runner;
+the row's estimate (1.5 USD) is what `campaign.py --spend` records. Compute 26 s.
