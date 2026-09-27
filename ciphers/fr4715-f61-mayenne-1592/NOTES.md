@@ -606,3 +606,40 @@ two BETA signs on a boundary-cut crop. Not a reading; no class change.
 `scripts/f61pass2_result.txt`; HYPOTHESES.md row added. images/ is 4.7 MB. Requests: none. Vision calls: 1 of 4. No
 credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H4 (2026-09-27 23:16 UTC) -- dropped, control below gate
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only; the step's vision call was NOT spent. Hypothesis
+H4: apply the H15b cell map to the unmarked runs under a permuted-map control.
+
+**Pre-registered pipeline (`scripts/f61apply.py`, committed 29a3e470 before any unmarked line was read).** Letter classes
+= those of `scripts/f61crib4_map.tsv` with top-cell count >= 2 and no tie (11: PHI e/r, C43 a/n, C6 a/n, 4TRI c/p, INF
+h/u, VBAR_A g/t, DBL b/o, LOOPBAR a/n, VBAR_B f/s, EBR l/y, ZHOOK i/x); everything else null. Each letter sign offers its
+cell's two letters; a beam search (width 200) picks the string maximising `tools/judge_plaintext.py`'s fr16 4-gram model
+(Lettres de Catherine de Medicis t.1). Statistic: best-path mean log10 4-gram per letter, pooled. Control: 20 maps with
+the cells permuted across the letter classes (seed 1). Positive control, run first per the control-first rule: the five
+known span lines (pass A classes), also compared with Tomokiyo's letters.
+
+**Positive control result (`scripts/f61apply_result.txt`).**
+
+| run | letters | target | permuted mean / max | gate | best path vs Tomokiyo |
+|---|---|---|---|---|---|
+| pre-registered map | 62 | -0.992 | -1.159 / -0.959 | **FAIL** | 32/51 = 0.627 |
+| post hoc: dash-share null rule (C6 5/6 and LOOPBAR 2/3 of occurrences under Tomokiyo's dashes -> null) | 53 | -0.927 | -1.208 / -0.932 | PASS by 0.005 | 32/51 = 0.627 |
+| judge reference at N=53-62 | | | real p05 -0.53 to -0.57, shuffled-letters p99 -1.47 to -1.60 | | |
+
+The best paths themselves show the problem: L03 reads "aestcapanabl" (Tomokiyo: est capable), L08 "raaubeaunpere"
+(e au beau-pere), L11 "ryentroit" (mel'ente noit) -- the map's cells are right, the spurious a/n from the C6 and LOOPBAR
+classes and the 4-gram model's choice within each pair are not. Under the pre-registered rule the positive control is
+**below its gate**, so by CLAUDE.md rule 3 (control first, Usage item 8) the target read was not run: a target FAIL would
+have been a non-test and a target PASS uninterpretable. The post-hoc dash-share rule, which drops exactly the two classes
+`scripts/class_diag.tsv` already had as nulls, brings the control to a 0.005 margin -- consistent with the map, but no
+power at N=53, and the unmarked lines hold about 20-25 signs. **H4 dropped**: the statistic, not the map, is the limit.
+Not a reading; no class change. Sheets B for L02, L04, L06, L09, L10 (`images/f61sheetB_*.jpg`, 6.5 MB folder) are on
+disk for the next attempt.
+
+**Next (H16).** A blind model-judge ranking with the same permuted-map control, positive control first: one Opus text
+call ranks 21 candidate sets (the target map and 20 permutations, shuffled order) by how well each resolves into French;
+the target must rank first of 21 on the known lines before the unmarked lines are read. Files: `scripts/f61apply.py`,
+`scripts/f61apply_result.txt`, `images/f61sheetB_L02/L04/L06/L09/L10.jpg`; HYPOTHESES.md row added. Requests: none.
+Vision calls: 0. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+

@@ -9,4 +9,16 @@ map (letter classes): 4TRI=c/p C43=a/n C6=a/n DBL=b/o EBR=l/y INF=h/u LOOPBAR=a/
 [positive control: five known span lines, pass A] 20 permuted-cell maps: mean -1.159 max -0.959; judge reference at N=62: real p05 -0.531, shuffled-letters p99 -1.604
 [positive control: five known span lines, pass A] GATE (target above every permuted map): FAIL
 [positive control: five known span lines, pass A] best path vs Tomokiyo's letters at aligned positions: 32/51 = 0.627 (u=v, i=j not folded)
+dash share per class on the span lines (occurrences under a dash / all): PHI:1/15 C43:2/9 CA:7/7 C6:5/6 4TRI:0/6 INF:0/5 VBAR_A:1/5 DBL:0/4 LOOPBAR:2/3 VBAR_B:0/3 EBR:0/3 ZHOOK:0/3 CROSS:2/2 ELOOP:2/2 4PI:1/2 BETA:0/2 HASH4:1/1 LOOPSTEM1:1/1 CH:1/1 LL:1/1 4STEM:1/1
+sensitivity map (dash share <= 0.5): 4TRI=c/p C43=a/n DBL=b/o EBR=l/y INF=h/u PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x; dropped as null: C6 LOOPBAR
+[sensitivity (post hoc, non-gating): dash-share null rule, five known span lines] letters 53; best-path mean log10 4-gram -0.927
+  L01	6 letters	auecet	-0.923
+  L03	9 letters	rfgcapabl	-1.053
+  L05	12 letters	grbpnunapres	-0.909
+  L07	6 letters	xyeusi	-0.814
+  L08	11 letters	raubeaupere	-0.914
+  L11	9 letters	ryentroit	-0.905
+[sensitivity (post hoc, non-gating): dash-share null rule, five known span lines] 20 permuted-cell maps: mean -1.208 max -0.932; judge reference at N=53: real p05 -0.569, shuffled-letters p99 -1.469
+[sensitivity (post hoc, non-gating): dash-share null rule, five known span lines] GATE (target above every permuted map): PASS
+[sensitivity (post hoc, non-gating): dash-share null rule, five known span lines] best path vs Tomokiyo's letters at aligned positions: 32/51 = 0.627 (u=v, i=j not folded)
 [TARGET] scripts/read_call_U.tsv not present: unmarked lines not yet read

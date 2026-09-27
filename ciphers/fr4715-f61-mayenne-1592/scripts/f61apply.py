@@ -90,6 +90,20 @@ def main():
     cmap = load_map()
     out = ["map (letter classes): " + " ".join(f"{c}={'/'.join(v)}" for c, v in sorted(cmap.items())) + "; all other codes null"]
     run(model, read_pass(f"{HERE}/passA_classes.tsv"), cmap, "positive control: five known span lines, pass A", out, spans=load_spans())
+    # sensitivity, post hoc (added after the positive control above FAILED, 27 Sept 2026 23:2x): a class is a null if
+    # more than half of its occurrences on the five span lines sit under a dash (or outside the span) in Tomokiyo's
+    # markup on the f61cal DP alignment; the map's cells are kept for the rest. Non-gating here; H16 pre-registers it.
+    lines = read_pass(f"{HERE}/passA_classes.tsv"); spans = load_spans()
+    dash, occ = Counter(), Counter()
+    for _, line, markup in spans:
+        seq = lines[line]; _, pairs = align(markup, seq, cmap); lettered = {sj for mi, sj in pairs if markup[mi] != "-"}
+        for j, c in enumerate(seq):
+            occ[c] += 1; dash[c] += j not in lettered
+    share = {c: dash[c] / occ[c] for c in occ}
+    cmap2 = {c: v for c, v in cmap.items() if share.get(c, 1) <= 0.5}
+    out.append("dash share per class on the span lines (occurrences under a dash / all): " + " ".join(f"{c}:{dash[c]}/{occ[c]}" for c in sorted(occ, key=lambda c: -occ[c])))
+    out.append("sensitivity map (dash share <= 0.5): " + " ".join(f"{c}={'/'.join(v)}" for c, v in sorted(cmap2.items())) + "; dropped as null: " + " ".join(sorted(set(cmap) - set(cmap2))))
+    run(model, lines, cmap2, "sensitivity (post hoc, non-gating): dash-share null rule, five known span lines", out, spans=spans)
     if os.path.exists(f"{HERE}/read_call_U.tsv"):
         run(model, read_pass(f"{HERE}/read_call_U.tsv"), cmap, "TARGET: unmarked lines", out)
     else:
