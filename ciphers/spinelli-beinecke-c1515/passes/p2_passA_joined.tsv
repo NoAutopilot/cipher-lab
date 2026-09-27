@@ -1,0 +1,54 @@
+line	segment	pos	code	shape	conf
+L1	joined	1	s	tall vertical stroke, squared hook foot at base, top cut by crop	M
+L1	joined	2	c	clean numeral-4 shape, diagonal+bar+stem	H
+L1	joined	3	N6	two diagonal strokes crossing, zigzag/N shape	L
+L1	joined	4	n1	tall six, loop with long curling ascender	M
+L1	joined	5	n1	compact numeral-six shape	H
+L1	joined	6	p	numeral-9, loop with descending tail	H
+L1	joined	7	?	plus sign / clean cross	H
+L1	joined	8	l1	loop with a diagonal flag stroke through it	M
+L1	joined	9	N2	capital Pi, two verticals joined by top bar	H
+L1	joined	10	?	numeral 8	H
+L1	joined	11	h	script-e loop, tail curling to a foot	H
+L1	joined	12	?	box/rectangle shape divided by a bar	M
+L1	joined	13	o	hook like plain numeral 7 (ignoring brown diagonal bleed through it)	M
+L1	joined	14	?	numeral 2, clean reversed curve	H
+L1	joined	15	p	numeral 9	H
+L1	joined	16	o	plain numeral-7 hook	H
+L1	joined	17	?	numeral 3	H
+L1	joined	18	a	phi loop, vertical line through center with dot in loop	H
+L1	joined	19	m	y-shape with hooked tail	H
+L1	joined	20	?	z-shape, clean zigzag letter Z	M
+L1	joined	21	p	numeral 9	H
+L1	joined	22	?	x-cross, two diagonals crossing symmetrically	H
+L1	joined	23	N4	double-hook shape, two fused fishhooks like a stylized H	L
+L1	joined	24	h	script-e loop with curling tail	H
+L1	joined	25	i2	small closed loop, no clear tail	L
+L1	joined	26	?	numeral 8	H
+L1	joined	27	u	large loop with a long tail curling from the top	M
+L1	joined	28	p	small loop with a straight descending tail	L
+L1	joined	29	n2	stem with loop and a horizontal cross tick, theta-like	L
+L1	joined	30	y	horizontal bar atop a short stem with a hook foot	M
+L1	joined	31	?	plus sign	H
+L1	joined	32	?	x-cross	H
+L1	joined	33	o	plain numeral-7 hook	H
+L2	joined	1	?	short vertical stroke(s), unclear, mostly brown bleed nearby	L
+L2	joined	2	c	clean numeral-4 shape	H
+L2	joined	3	N10	flat top bar over a double-hump w-shape	M
+L2	joined	4	l1	loop with a diagonal flag/descender stroke	M
+L2	joined	5	N2	capital Pi	H
+L2	joined	6	c	clean numeral-4 shape	H
+L2	joined	7	p	loop with tail, like numeral 9	M
+L2	joined	8	N11	long S-curve shape	H
+L2	joined	9	N10	w double-hump shape with bar	M
+L2	joined	10	?	small loop with short descender, ambiguous	L
+L2	joined	11	?	x-cross	H
+L2	joined	12	?	D-shape, flat left side, rounded right loop	M
+L2	joined	13	g	cursive n/m-like arch loop	M
+L2	joined	14	y	bar on top of a short stem with a hook foot	M
+L2	joined	15	?	x-cross	H
+L2	joined	16	N7	tight tangled figure-eight/infinity loop	H
+L2	joined	17	o	plain numeral-7	H
+L2	joined	18	?	x-cross	H
+L2	joined	19	f	loop open at upper right with a descending tail	M
+L2	joined	20	r	plain open c-hook, partial at right crop edge	L

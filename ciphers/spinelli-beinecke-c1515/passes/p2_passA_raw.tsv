@@ -1,0 +1,88 @@
+line	segment	pos	code	shape	conf
+L1	s1	1	s	tall vertical stroke, squared hook foot at base, top cut by crop	M
+L1	s1	2	c	clean numeral-4 shape, diagonal+bar+stem	H
+L1	s1	3	N6	two diagonal strokes crossing, zigzag/N shape	L
+L1	s1	4	n1	tall six, loop with long curling ascender	M
+L1	s1	5	n1	compact numeral-six shape	H
+L1	s1	6	p	numeral-9, loop with descending tail	H
+L1	s1	7	?	plus sign / clean cross	H
+L1	s1	8	l1	loop with a diagonal flag stroke through it	M
+L1	s1	9	N2	capital Pi, two verticals joined by top bar	H
+L1	s1	10	?	numeral 8	H
+L1	s1	11	h	script-e loop, tail curling to a foot	H
+L1	s1	12	?	box/rectangle shape divided by a bar	M
+L1	s1	13	o	hook like plain numeral 7 (ignoring brown diagonal bleed through it)	M
+L1	s1	14	?	numeral 2, clean reversed curve	H
+L1	s1	15	p	numeral 9	H
+L1	s1	16	o	plain numeral-7 hook	H
+L1	s1	17	?	numeral 3	H
+L1	s1	18	a	phi loop, vertical line through center with dot in loop	H
+L1	s1	19	m	y-shape with hooked tail	H
+L1	s1	20	?	z-shape, clean zigzag letter Z	M
+L1	s1	21	p	numeral 9	H
+L1	s1	22	?	x-cross, two diagonals crossing symmetrically	H
+L1	s1	23	N4	double-hook shape, two fused fishhooks like a stylized H	L
+L1	s1	24	h	script-e loop with curling tail	H
+L1	s1	25	i2	small closed loop, no clear tail	L
+L1	s1	26	?	numeral 8	H
+L1	s2	1	i2	small closed loop, partial at left crop edge	L
+L1	s2	2	N2	capital Pi	H
+L1	s2	3	?	numeral 8	H
+L1	s2	4	h	script-e loop with curling tail	H
+L1	s2	5	?	box/rectangle with a diagonal divider	M
+L1	s2	6	?	numeral 2, clean reversed curve	H
+L1	s2	7	p	numeral 9	H
+L1	s2	8	o	plain numeral-7 hook	H
+L1	s2	9	?	numeral 3	H
+L1	s2	10	a	phi loop, vertical descender through center, dot in loop	H
+L1	s2	11	m	y-shape with hooked tail	H
+L1	s2	12	?	z-shape, clean zigzag letter Z	M
+L1	s2	13	p	numeral 9	H
+L1	s2	14	?	x-cross	H
+L1	s2	15	N4	double-hook H-like shape, two fused fishhooks	M
+L1	s2	16	h	script-e loop with curling tail	H
+L1	s2	17	i2	small loop with a brief curling tail	M
+L1	s2	18	?	numeral 8	H
+L1	s2	19	u	large loop with a long tail curling from the top	M
+L1	s2	20	p	small loop with a straight descending tail	L
+L1	s2	21	n2	stem with loop and a horizontal cross tick, theta-like	L
+L1	s2	22	y	horizontal bar atop a short stem with a hook foot	M
+L1	s2	23	?	plus sign	H
+L1	s2	24	?	x-cross	H
+L1	s2	25	o	plain numeral-7 hook	H
+L2	s1	1	?	short vertical stroke(s), unclear, mostly brown bleed nearby	L
+L2	s1	2	c	clean numeral-4 shape	H
+L2	s1	3	N10	flat top bar over a double-hump w-shape	M
+L2	s1	4	l1	loop with a diagonal flag/descender stroke	M
+L2	s1	5	N2	capital Pi	H
+L2	s1	6	c	clean numeral-4 shape	H
+L2	s1	7	p	loop with tail, like numeral 9	M
+L2	s1	8	N11	long S-curve shape	H
+L2	s1	9	N10	w double-hump shape with bar	M
+L2	s1	10	?	small loop with short descender, ambiguous	L
+L2	s1	11	?	x-cross	H
+L2	s1	12	?	D-shape, flat left side, rounded right loop	M
+L2	s1	13	g	cursive n/m-like arch loop	M
+L2	s1	14	y	bar on top of a short stem with a hook foot	M
+L2	s1	15	?	x-cross	H
+L2	s1	16	N7	tight tangled figure-eight/infinity loop	H
+L2	s1	17	o	plain numeral-7	H
+L2	s1	18	?	x-cross	H
+L2	s1	19	f	loop open at upper right with a descending tail	M
+L2	s1	20	r	plain open c-hook, partial at right crop edge	L
+L2	s2	1	N2	capital Pi	H
+L2	s2	2	c	clean numeral-4 shape	H
+L2	s2	3	p	loop with tail like numeral 9	M
+L2	s2	4	N11	long S-curve shape	H
+L2	s2	5	N10	w double-hump shape with bar	M
+L2	s2	6	?	small loop with cross, ambiguous	L
+L2	s2	7	?	x-cross	H
+L2	s2	8	?	D-shape, flat-left rounded-right loop	M
+L2	s2	9	g	cursive n/m-like arch loop	M
+L2	s2	10	y	bar atop short stem with hook foot	M
+L2	s2	11	?	x-cross	H
+L2	s2	12	N7	tight tangled figure-eight/infinity loop	H
+L2	s2	13	o	plain numeral-7	H
+L2	s2	14	?	x-cross	H
+L2	s2	15	f	loop open upper right with descending tail	M
+L2	s2	16	r	plain open c-hook, then blank paper to end of crop	M
