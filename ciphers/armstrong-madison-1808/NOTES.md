@@ -1445,7 +1445,7 @@ a reading, no class change. Requests per host: tile.loc.gov 3. Cost: no get_sess
 the row's estimate (1.5 USD) is what `campaign.py --spend` records. Environment note: Pillow and numpy were absent in
 this runner's container and installed with pip for the crops; `tools/iiif_lines.py` needs both.
 
-## Campaign step H12 (27 Sept 2026, 23:12-23:3x UTC)
+## Campaign step H12 (27 Sept 2026, 23:12-23:21 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H12: screen the
 undated numbered table at Monroe Papers reel 9 frame 954 (on disk since H7, SHA-256 verified) against the target the

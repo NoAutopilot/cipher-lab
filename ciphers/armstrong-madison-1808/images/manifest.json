@@ -60,7 +60,7 @@
  "monroe_papers": {
   "source": "Library of Congress, James Monroe Papers (mss33217), Series 1: reel 3 frames 127-128 (compact cipher key, 1803, docket \"Cyphers / 1803 - La Treaty\"; 1963 index p.11 \"LIVINGSTON ROBERT R -- CIPHER CODE, 1803, Series 1, two pages, KEY\") and reel 9 frame 954 (undated large numbered table, the collection's featured key image)",
   "located_by": "ChatGPT runner checkpoint, PR 50, second-opinions/chatgpt-checkpoint-2026-09-27-2117.md (21:17 UTC); fetched and hash-verified here by campaign step H7, 27 Sept 2026 22:28 UTC",
-  "route": "tile.loc.gov IIIF image API, full/pct:100, descriptive UA, 3 requests 1.6 s apart, all HTTP 200 image/jpeg; the loc.gov item JSON https://www.loc.gov/item/mss33217003/?fo=json (resources[0].files, array position = frame - 1) is the documented locator for other frames; step H12 (27 Sept 2026, 23:2x UTC) fetched frames 953, 955, 956 the same way, 3 requests 1.6 s apart, all HTTP 200 image/jpeg",
+  "route": "tile.loc.gov IIIF image API, full/pct:100, descriptive UA, 3 requests 1.6 s apart, all HTTP 200 image/jpeg; the loc.gov item JSON https://www.loc.gov/item/mss33217003/?fo=json (resources[0].files, array position = frame - 1) is the documented locator for other frames; step H12 (27 Sept 2026, 23:15 UTC) fetched frames 953, 955, 956 the same way, 3 requests 1.6 s apart, all HTTP 200 image/jpeg",
   "images": {
    "monroe/mss33217-003-0127.jpg": {
     "url": "https://tile.loc.gov/image-services/iiif/service:mss:mss33217:003:0100:0127/full/pct:100/0/default.jpg",
@@ -98,7 +98,7 @@
     "height": 3010,
     "bytes": 2200034,
     "sha256": "99ef4205e9c33533ec9c7a2a3f0000a7e5a191dc7a190f143921e936c26e531e",
-    "fetched": "2026-09-27 23:2x UTC (campaign step H12), not committed: images/ would pass 30 MB; re-fetch from url",
+    "fetched": "2026-09-27 23:15 UTC (campaign step H12), not committed: images/ would pass 30 MB; re-fetch from url",
     "content": "lower half of the frame-954 table: rows 43-100 of every column, ending \"1700 ac\"; columns 1201-1700 sparse"
    },
    "monroe/mss33217-009-0956.jpg (not on disk)": {
@@ -107,7 +107,7 @@
     "height": 4186,
     "bytes": 3149889,
     "sha256": "c9d0a84dc629b5b5945eceeb7a7d0bd187a91e90b27969fdb16fd672bcc77a5f",
-    "fetched": "2026-09-27 23:2x UTC (campaign step H12), not committed: images/ would pass 30 MB; re-fetch from url",
+    "fetched": "2026-09-27 23:15 UTC (campaign step H12), not committed: images/ would pass 30 MB; re-fetch from url",
     "content": "alphabetical encode side of the same key (A..Z columns, word -> number, values seen up to about 1700); right-hand column carries modifier rules (plural / tense / a doubling-figure rule) and a digit list 0-9"
    },
    "monroe/mss33217-009-0953.jpg (not fetched to repo)": {
