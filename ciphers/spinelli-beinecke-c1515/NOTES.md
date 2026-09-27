@@ -282,7 +282,7 @@ rather than left to H3, to settle the crib question in one step -- the overrun i
 Requests: collections.library.yale.edu 2 (native region fetches) of the allowed 6. No credentials, no
 AskUserQuestion, rule 10 wording, no other target touched.
 
-## Campaign step H11 (27 Sept 2026, 23:21-23:40 UTC)
+## Campaign step H11 (27 Sept 2026, 23:21-23:27 UTC)
 
 Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H11: a glyph atlas from the letter's own ink, so that blind
 passes code against this hand's sign types rather than against Tomokiyo's key (H2 showed 22% of signs unmapped).
