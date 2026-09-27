@@ -795,3 +795,27 @@ debug overlay, 7 sheets; folder 9.7 MB), `images/manifest.json` (f108_bands), `s
 `scripts/pass108A/B_classes.tsv` (+ READMEs), `scripts/f61transfer.py`, `f61transfer_result.txt`; HYPOTHESES.md row
 added. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H20 (2026-09-27 23:53 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only, no calls, no network. Hypothesis H20 (F61-JOINT):
+the cell fit across both leaves, each leaf as a held-out fold (`scripts/f61joint.py`, pre-registered in its docstring;
+`f61joint_result.txt`, `f61joint_map.tsv`).
+
+| fold | read | 20 permuted maps mean / max | gate |
+|---|---|---|---|
+| (a) fit f.61 (55), read f.108 (84) | 57/84 = 0.679 | 0.237 / 0.321 | PASS |
+| (b) fit f.108 (84), read f.61 (55) | 37/55 = 0.673 | 0.178 / 0.327 | PASS |
+| (c) five f.61 span folds, f.108 always in training, pooled | 44/55 = 0.800 (42/55 without f.108) | per fold max 0.50-0.83 | reported |
+| nine cells identical in every fold | PHI e/r, C43 a/n, 4TRI c/p, INF h/u, VBAR_A g/t, ZHOOK i/x yes; EBR f/s on f.108 vs l/y on f.61; VBAR_B, DBL null in (b) (absent from f.108's two lines) | | **FAIL** |
+
+**H20 FAIL as pre-registered** on the stability part; both transfer folds pass by wide margins. The one real conflict is
+the bracket class: on f.108 the "E-like bracket open right" sits under f/s (8 of 13 counts), on f.61 under l (3). The
+Mayenne table itself draws two bracket-like glyphs -- an E shape for f/s and a squared C or gamma for l/y -- and f.108's
+I-shaped OTHER signs (read the same by both passes) come out l/y (2). The atlas most likely merges two glyphs, the shape
+H13-H15 found for the V signs; H22 tests it the same way. Absences (no VBAR_B or DBL on f.108's two lines) are not
+conflicts. The joint map (139 letters) adds cells the f.61 map lacked: 4PI = d/q (4 counts, the table's 11th cell),
+BETA = m/z (4), 4STEM = a/n (3, beside C43 = a/n -- the table draws a and n as two distinct symbols, H23 checks whether
+these classes are that split). Not a reading; no class change; grades unchanged (M for the cells, from Tomokiyo's markup
+and the period gloss it reprints). Files: `scripts/f61joint.py`, `f61joint_result.txt`, `f61joint_map.tsv`;
+HYPOTHESES.md row added. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
