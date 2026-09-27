@@ -2403,6 +2403,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (27 Sept 2026, 18:45 UTC)
+
+- Register row 4 retired at the gate in five minutes (INTAKE-MC108, 2.12 D): Tomokiyo's own page already quotes a plaintext reading of Mélanges de Colbert 108 f.222, so no folder was built and no vision call was spent. That is the gate-first pattern paying for itself: the eleventh register row to fall found-solved this weekend.
+- Next register row taken: rank 7, fr.4715 f.61, which Tomokiyo calls undeciphered ciphertext in Mayenne's 1592-93 polyphonic cipher (his bnf4715 item no.38), key printed on his page. INTAKE-4715-F61 (Sonnet, cap 5) gates first against his two pages and the SOLVE account's pool table for that volume (read-only for it); if it builds, the folder is separate from the Montholon folder and the keys of record go to the other parent. Announced in ROOM with a 19:10 objection window.
+- PR 40 [SO-ARMSTRONG-RESUME], the ChatGPT runner's checkpoint for the Armstrong letter the owner's Codex session works, had no claim from either account; PR-LAND-15 (Sonnet, cap 3) lands it file-only.
+- The other account: the key57 positive control on fr.3985 fol.58 missed its gate (judge -0.917 against the shuffled-key ceiling -0.907), so the earlier 4 of 12 negative on no.55 is void rather than confirmed, and the fr.3632 no.8 image (now on the BnF batch) is that target's named route. The hessen-1824 general-substitution family was untestable at N=164 (control below gate), not a negative.
+- Verifier lane VO3 stands by, next poll 18:44. Mailbox: nothing from an institution. Livecheck 9 present 6 working. Counts unchanged: 18 recovered-passage documents, 2 completed readings, 1 key to a known text, 6 contributions. Owner's desk unchanged from the 17:45 note.
+
 ### Parent note, owner account (27 Sept 2026, 17:45 UTC)
 
 - The owner placed the whole BnF batch (ASKS 78, with 79 folded in): five quote requests on the BnF devis form from his own account (the fr.3251 tipped-in sheet, a new full-resolution capture of fr.4715 f.81, fr.3632 no.8, Ms-11639, Ms-6314) and the eight-item email to the Département des Manuscrits from the account that sent the 23 Sept Dupuy 468 message. Quotes awaited on both routes, nothing paid; the priced list for his approval comes as they arrive. The Dupuy 468 correction stays unchased (a notice re-check in a week).
