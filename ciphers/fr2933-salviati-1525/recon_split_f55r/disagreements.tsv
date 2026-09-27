@@ -1,0 +1,17 @@
+leaf	line	pos	A_code	A_marks	A_conf	A_note	B_code	B_marks	B_conf	B_note
+f55r	1	26.0	g	+|~	M	two adjacent cursive g-shapes (9-like) in the box; a + mark and a wave-like mark above	g	~	M	two g/9-shaped hooks side by side with a small numeral-like mark above the first (not in mark vocabulary); ambiguous whether one or two signs, picked the clearer left one
+f55r	1	27.0	WORD		M	"cursive letters resembling an ordinary italic word fragment (""ndy""-like), not an isolated cipher sign"	wd		M	"omega-plus-tall-stroke (wd) shape with an extra tail flourish; small numeral-like mark (""3""-ish) above and an isolated dot, neither matches the mark vocabulary cleanly"
+f55r	3	1.0	WORD		M	"cursive ""yy"" letters, ordinary italic script"	y		M	two cursive y-like strokes side by side, ambiguous whether one or two signs, picked the shape
+f55r	3	2.0	?		L	"ascender with looped tail, resembles a plain-script ""t"" within a word context, not a clear cipher code"	y		M	cursive hook top merging into a looped/curved tail, y-like; sits among yy-psi-w-like context
+f55r	3	19.0	v	5	L	similar curved v/u bowl with hooked tail; numeral-like mark above, closest to hook mark 5	v	~	M	"v-shaped sign with a small wavy/""3""-like mark above resembling tilde"
+f55r	4	1.0	S		M	cursive S/5-like hook shape	g	~	M	9/g-shaped hook with a small wavy mark above
+f55r	6	14.0	Z		L	epsilon-like double curve merging into a 7-like tail/hook, resembles Z	S7		H	clear 7-shaped sign, matches S7
+f55r	6	17.0	?		L	"vertical stroke with small hook/loop near bottom; too little distinguishing detail to match a code; ""10"" numeral visible in surrounding context but outside the box"	dl		L	"vertical stroke ending in a small loop at the bottom, resembles a digit ""10"" shape or a tailed sign"
+f55r	7	10.0	?		L	single rounded arch/hump shape; two dots appear below it (outside the sign proper); closest guess N but shape too simple/ambiguous	N		L	rounded hump/arc shape resembling N or lambda; two dots visible below rather than above (unusual placement for a mark)
+f55r	9	6.0	o.		M	ring with dot, crossed by an incidental diagonal stroke	phi		M	"circle with a diagonal slash through it, resembles slashed-o phi; nearby ""75""/""10"" numerals look like separate ink, not a mark on this sign"
+f55r	9	15.0	dl		M	hook/loop shape curving down-left, resembles delta with wavy tail	]		M	hook/comma shape open to the left, resembles bracket-open-left
+f55r	11	16.0	?		L	obscured by white smudge/erasure, faint loop and crossing stroke visible, insufficient detail	S4		M	X-shaped crossing strokes partly obscured by a white smudge/damage, same shape as c001
+f55r	13	24.0	y		M	numeral-7-like stroke curving into a small loop at bottom, resembles cursive y with looped tail	g		M	hook curling like a 9/g shape
+f55r	16	16.0	]		L	rounded hook open to the left, resembles bracket	e	#	H	looped e with rightward tail, # mark directly above
+f55r	18	24.0	S7		M	small numeral-7-like hook stroke	?		L	short hook/check-mark stroke between ordinary-looking letters (z-like, d-like); does not clearly match any atlas code, possibly a flourish or plain-letter fragment
+f55r	19	27.0	v	1|5	M	"curved v/u bowl with hooked left arm; ""15""-like mark above matching marks 1 and 5"	dl		M	"curling hook/wave shape, resembles delta-with-tilde-tail (dl); nearby ""15"" numeral looks like unrelated ink"

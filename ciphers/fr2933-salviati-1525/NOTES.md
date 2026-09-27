@@ -2756,3 +2756,87 @@ Files: `split2_f54r_list.tsv`, `split2_f54v_list.tsv`, `split2_crops/*_key.tsv`,
 (the per-box crop images) are working files, `.gitignore`d this session (same convention as `plain_crops/*/*.png`).
 No credentials, no reading, no novelty wording, no "new"/"first"/"solved". Requests: gallica.bnf.fr 2. Subagents: 4
 (0 follow-ups needed). Status stays **partial**.
+
+## SALV2-J1B: code+mark transcription of the confirmed boxes (27 Sept 2026, LANE SALV2)
+
+Worker SALV2-J1B (Sonnet), 02:03-02:24 UTC. Brief `.claude/briefs/runs/2026-09-27-lane-salv2-ytbiz-j1-transcribe.md`.
+Leaves f55r (31 confirmed boxes) and f56r+f56v together (19+6=25). No decoding, no family run. Grades stay H0 C0 S0
+M0 I0 except the per-token AB/M grades this job assigns to the 56 boxes it writes.
+
+**U0.** 3 direct curls at the same IIIF `/2400,/` region SALV-SPLIT used (f55r, f56r, f56v) -- 3 gallica.bnf.fr
+requests, >=2s apart, browser UA, all HTTP 200 and valid JPEGs (2400x325x px, JFIF). `crop_plain_leaf.py f55r`/`f56r`/`f56v`
+reproduced SALV-SPLIT's own box/line counts exactly (173/171/207 plain boxes marked). Confirmed-box lists
+(`split2_f55r_list.tsv`, `split2_f56rv_list.tsv`) pulled from `ciphertext_<leaf>.split-candidate.tsv`'s rows whose
+`grade` ends `|split-candidate`: 31, 19 and 6 rows, matching the brief exactly (31 and 25 total). `crop_plain_leaf.py
+<leaf> --boxes ... --seed <N> [--leaf-col]` cut two independently-shuffled crop sets per unit (seeds 101/202 for
+f55r, 303/404 for f56r+f56v with `--leaf-col` so one list spans both leaves); eye-checked two crops before the first
+call (context and headroom correct, blue box round the target only), including the box carrying SALV-SPLIT's `O`
+guess (f56r line 19 pos 20) -- by eye it is a ring with a central dot, i.e. the atlas's existing `o.` code, not a new
+code; both blind passes independently confirmed this (below).
+
+**U1, 4 blind Sonnet subagent calls** (f55r pass A/B, f56r+f56v pass A/B; a fresh subagent per pass), each given only
+that unit's shuffled per-box crops, the two atlas plates, the 36-code inventory descriptions and the 9-mark
+vocabulary -- nothing about flags, prior guesses, plain/sign status or hypotheses. All 4 came back with full coverage
+on the first reply (31/31, 31/31, 25/25, 25/25), no follow-up messages needed. Raw outputs: `split2_crops/<unit>_<A|B>_raw.tsv`;
+mapped to (leaf,line,pos) via the `_key.tsv` files into `passA_split_<unit>.tsv`/`passB_split_<unit>.tsv` (long
+format: leaf, line, pos, sign, marks, conf, note).
+
+**U2, reconciliation.** The per-box samples are scattered positions on a line, not a line's full sign sequence, so
+`tools/reconcile_passes.py`'s Needleman-Wunsch line alignment does not fit (its own `--rows` shape); per the brief's
+fallback clause, compared by the (leaf,line,pos) key directly in a short Python script (not committed as a named
+tool -- SALV2-J1A's `reconcile_split_boxes.py`/`apply_split2_writeback.py`, committed after this job started, do the
+same job and are the ones a future session should reuse):
+
+| unit | n | code agree | marks agree | code+mark agree (control) | AB | M | WORD (stays plain) | unresolved `?` |
+|---|---|---|---|---|---|---|---|---|
+| f55r | 31 | 17/31 = 54.8% | 26/31 = 83.9% | 15/31 = 48.4% | 15 | 16 | 3 | 5 (4 AB, 1 M) |
+| f56r | 19 | 11/19 = 57.9% | 17/19 = 89.5% | 10/19 = 52.6% | 10 | 9 | 0 | 1 (AB) |
+| f56v | 6 | 2/6 = 33.3% | 5/6 = 83.3% | 2/6 = 33.3% | 2 | 4 | 0 | 0 |
+
+All three code+mark agreement figures sit below bSALC's 6.4% per-sign measured error (as SALV2-J1A also found):
+bSALC measured disagreement on already-settled sign boxes with an established base code, while these are
+freshly-confirmed boxes with no prior sign reading at all -- two independent blind reads of a genuinely new sign is
+a harder task than a third read arbitrating two mostly-agreeing prior passes. I (the worker, not a subagent) settled
+every one of the 29 code-or-marks disagreements (16 f55r + 9 f56r + 4 f56v) from the crop images directly
+(`recon_split_f55r/settled.tsv` and `recon_split_f56rv/settled.tsv`'s `how` column has the per-box reasoning),
+comparing each disputed shape against the atlas plates. One box (f55r line 6 pos 17) was genuinely undecidable -- a
+short stroke sitting against a "10" reference annotation, too little ink to commit to either pass's guess -- and is
+graded `?`/M rather than forced into a code; 4 more (f55r lines 2x2, 11, 19; f56r line 3 pos 1) were independently
+called unreadable (`?`) by *both* blind passes (grade AB, not M -- both readers agreeing the box is unreadable is
+still agreement). 3 f55r boxes (line 1 pos 27, line 3 pos 1 and pos 2) were settled `WORD` from the crop -- ordinary
+connected cursive script, not an isolated cipher sign -- and stay plain per the brief's own rule; they count against
+SALV-SPLIT's original confirmation for those three positions. No f56r/f56v box settled to WORD.
+
+**The `O` resolution (this job's specific task).** SALV-SPLIT flagged one guess, `O`, at f56r line 19 pos 20, not in
+the atlas's own 36-code inventory. Both blind passes independently read it as a ring with a central dot -- the
+existing atlas code `o.` -- with no marks and full confidence (H) on both sides: `f56r 19 20.0 o. AB` in
+`recon_split_f56rv/settled.tsv`. Resolved: `O` was an ad hoc label from SALV-SPLIT's own crop-check pass, not a new
+sign; the code is `o.`.
+
+**Pass-0 agreement.** SALV-SPLIT's own one-pass `code` guess (never shown to either subagent) agreed with this job's
+settled code on 10/31 = 32.3% of f55r's confirmed boxes, 2/19 = 10.5% of f56r's and 0/6 = 0.0% of f56v's --
+consistent with NOTES.md's own characterization of that column as "a 'pass 0' of unknown grade," not a reading, and
+noticeably lower than SALV2-J1A's f54r/f54v figures (50.0%/36.7%) -- f55r-f56v were the leaves SALV-SPLIT itself
+flagged as harder to read elsewhere in this file.
+
+**Write-back.** For each of the 56 confirmed rows, replaced `code`/`marks`/`grade` in the real `ciphertext_<leaf>.tsv`
+(grade `AB|split2` or `M|split2`) except the 3 settled `WORD`, which were left untouched (still `_`/`AB` from the
+original plain-transcription pass). First attempt round-tripped the files through Python's `csv` module with default
+line terminators, which silently converted all three files from `\n` to `\r\n` line endings and made `git diff` show
+every line as changed (1583/1583) though only 53 rows actually changed -- caught before committing (`file` on the
+rewritten files showed "CRLF line terminators" against the originals' plain "ASCII text") and redone with a
+line-oriented text rewrite instead, preserving `\n`. Final `git diff --stat`: 56/38/12 changed lines (28/19/6 old +
+28/19/6 new) for f55r/f56r/f56v -- exactly one old/new line pair per updated row (53 total: 28+19+6, since the 3
+WORD rows are untouched); row counts unchanged (554/517/512 before and after, `wc -l`).
+`ciphertext_f{55r,56r,56v}.split-candidate.tsv`, `specs/fr2933-salviati-1525.json`, `ciphertext.txt` and
+`ciphertext_with_plain.txt` are all untouched (`git diff --stat` empty on all four) -- `build_spec.py` was not run,
+per the brief (job 2's own step); `build_spec.py --check` now reports STALE against the modified leaf files, as
+expected until job 2 rebuilds the spec.
+
+Files: `split2_f55r_list.tsv`, `split2_f56rv_list.tsv`, `split2_crops/CODEBOOK.txt`, `split2_crops/*_key.tsv`,
+`split2_crops/*_raw.tsv`, `passA_split_f55r.tsv`, `passB_split_f55r.tsv`, `passA_split_f56rv.tsv`,
+`passB_split_f56rv.tsv`, `recon_split_f55r/`, `recon_split_f56rv/`, `ciphertext_f55r.tsv`, `ciphertext_f56r.tsv`,
+`ciphertext_f56v.tsv` (all committed). `split2_crops/*/*.png` (the per-box crop images) are working files,
+`.gitignore`d this session (same convention as `plain_crops/*/*.png` and SALV2-J1A's own addition). No credentials,
+no reading, no novelty wording, no "new"/"first"/"solved". Requests: gallica.bnf.fr 3. Subagents: 4 (0 follow-ups
+needed). Status stays **partial**.

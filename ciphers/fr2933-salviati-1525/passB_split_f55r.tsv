@@ -1,0 +1,32 @@
+leaf	line	pos	sign	marks	conf	note
+f55r	1	14.0	v		H	curved v shape with hooked left arm, clean match to v
+f55r	1	26.0	g	~	M	two g/9-shaped hooks side by side with a small numeral-like mark above the first (not in mark vocabulary); ambiguous whether one or two signs, picked the clearer left one
+f55r	1	27.0	wd		M	"omega-plus-tall-stroke (wd) shape with an extra tail flourish; small numeral-like mark (""3""-ish) above and an isolated dot, neither matches the mark vocabulary cleanly"
+f55r	2	20.0	?		L	tiny crescent/hook fragment, insufficient detail to match a code confidently
+f55r	2	23.0	?		L	narrow vertical stroke only, no other diagnostic detail visible in box; closest atlas match would be tee or the right stroke of wd
+f55r	2	28.0	S		M	cursive S-like shape, appears slightly doubled/looped; y before, b after
+f55r	3	1.0	y		M	two cursive y-like strokes side by side, ambiguous whether one or two signs, picked the shape
+f55r	3	2.0	y		M	cursive hook top merging into a looped/curved tail, y-like; sits among yy-psi-w-like context
+f55r	3	19.0	v	~	M	"v-shaped sign with a small wavy/""3""-like mark above resembling tilde"
+f55r	4	1.0	g	~	M	9/g-shaped hook with a small wavy mark above
+f55r	5	23.0	o.		H	clean ring with a dot inside
+f55r	6	14.0	S7		H	clear 7-shaped sign, matches S7
+f55r	6	17.0	dl		L	"vertical stroke ending in a small loop at the bottom, resembles a digit ""10"" shape or a tailed sign"
+f55r	7	10.0	N		L	rounded hump/arc shape resembling N or lambda; two dots visible below rather than above (unusual placement for a mark)
+f55r	7	23.0	eps	5	M	epsilon bowl whose tail continues into a 7-like stroke (may be bleed from the next sign); small S/5-like hook mark above
+f55r	8	20.0	o.		H	clean ring with a dot inside
+f55r	9	5.0	eps		H	two stacked open bowls, clear epsilon; diagonal line below is likely the adjacent phi's stem bleeding into the crop, not part of this sign
+f55r	9	6.0	phi		M	"circle with a diagonal slash through it, resembles slashed-o phi; nearby ""75""/""10"" numerals look like separate ink, not a mark on this sign"
+f55r	9	10.0	o.		H	clean ring with a dot inside
+f55r	9	15.0	]		M	hook/comma shape open to the left, resembles bracket-open-left
+f55r	11	14.0	?		L	short diagonal stroke, minimal ink; closest guesses would be dl or rz fragment
+f55r	11	16.0	S4		M	X-shaped crossing strokes partly obscured by a white smudge/damage, same shape as c001
+f55r	11	17.0	S4		M	X-shaped crossing strokes, resembles numeral-4 sign; white smudge above looks like page damage, not a mark
+f55r	11	24.0	o.		H	clean ring with a dot inside
+f55r	13	1.0	e	#	H	looped e with tail, # mark directly above
+f55r	13	2.0	tee	#	H	vertical stroke with a bar to the right forming an F/tee shape, # mark directly above
+f55r	13	24.0	g		M	hook curling like a 9/g shape
+f55r	16	16.0	e	#	H	looped e with rightward tail, # mark directly above
+f55r	18	24.0	?		L	short hook/check-mark stroke between ordinary-looking letters (z-like, d-like); does not clearly match any atlas code, possibly a flourish or plain-letter fragment
+f55r	19	19.0	?		L	very faint, minimal ink in the box; cannot confidently match any code
+f55r	19	27.0	dl		M	"curling hook/wave shape, resembles delta-with-tilde-tail (dl); nearby ""15"" numeral looks like unrelated ink"

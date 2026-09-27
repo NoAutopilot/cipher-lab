@@ -1,0 +1,26 @@
+leaf	line	pos	code	marks	grade	how	passA_code	passA_marks	passB_code	passB_marks
+f56r	3	1.0	?		AB		?		?	
+f56r	3	11.0	L		M	single stroke with a small hooked foot, matches L	?		L	
+f56r	3	20.0	rz		M	faint low diagonal hook, closest to rz of the 36 codes despite the faintness	?		rz	
+f56r	4	3.0	g		AB		g		g	
+f56r	4	12.0	v		M	clean v-shaped bowl; two dots sit below the sign (not the listed above-sign mark position), left blank	v		?	
+f56r	11	8.0	S4		AB		S4		S4	
+f56r	11	9.0	psi		M	"two hooked/curled arms forming a forked shape, matches psi's own description better than treating it as plain ""yy"" text -- a single boxed position, not a word"	y		psi	
+f56r	11	10.0	Z	~	M	clear Z-shaped zigzag with a separate tilde-like squiggle above	nt	~	Z	
+f56r	11	11.0	g		AB		g		g	
+f56r	11	21.0	dl		M	loop at the base with a curling tail extending right, matches dl better than e (no loop-at-top-with-rising-stroke)	e		dl	
+f56r	12	9.0	e	+	AB		e	+	e	+
+f56r	16	21.0	w		AB		w		w	
+f56r	17	4.0	eps	5	AB		eps	5	eps	5
+f56r	18	15.0	o.		AB		o.		o.	
+f56r	18	20.0	rz		M	low hook-then-wave shape sitting on the baseline, matches rz; genuinely close to S, kept the lower-baseline read	rz		S	
+f56r	18	21.0	S		M	"the box holds two stacked elements (a hook above, a clear lowercase ""s""-shape below, where the crop convention puts the target sign); read as S from the lower element; the upper hook is unclassified, left blank rather than forced into a mark"	rz		dl	
+f56r	19	4.0	g	dot	M	"code agreed (g); a small dot sits directly above the sign; the ""#""-like ink further above-left belongs to the adjacent position"	g	#	g	dot
+f56r	19	8.0	v		AB		v		v	
+f56r	19	20.0	o.		AB		o.		o.	
+f56v	2	17.0	e	~	M	bowl-and-rising-stroke shape (loop at the base is atypical for e but no other code fits as well); small tilde-like tick above	e	~	g	
+f56v	5	8.0	tee		AB		tee		tee	
+f56v	5	10.0	y		M	the box captures only the lower tail of a y-shaped stroke whose body sits just above the marked box; read as y from the continuous stroke	y		rz	
+f56v	5	12.0	S		M	compact squiggle matching S's own description; no larger sign body visible, confidence stays low	?		S	
+f56v	8	25.0	S7		AB		S7		S7	
+f56v	10	7.0	sq		M	clear closed rectangular outline with an internal vertical divider, matches sq	?		sq	

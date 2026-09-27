@@ -1,0 +1,14 @@
+leaf	line	pos	A_code	A_marks	A_conf	A_note	B_code	B_marks	B_conf	B_note
+f56r	3	11.0	?		L	single vertical/diagonal stroke with a slight hook at the base; ambiguous between atlas L and lam, could not settle confidently	L		L	single curved vertical stroke, crop framing ambiguous, closest guess is atlas L
+f56r	3	20.0	?		L	only a faint, thin diagonal hook/loop visible (light ink); could be a stray descender rather than a distinct sign, could not confidently match a code	rz		M	small diagonal hooked stroke sitting low on the line, closest to atlas rz
+f56r	4	12.0	v		H	curved v with hooked left arm, clean match to atlas v	?		L	isolated vertical stroke with two dots near base, no clean atlas match; closest is phi's stem, but the bowl is outside the box
+f56r	11	9.0	y		M	"shape reads as a double-loop ""yy""-like cursive form; coded as y (closest single atlas code) but note the doubled appearance"	psi		M	"two hooked/curled arms forming a forked ""yy""-like shape, closest to atlas psi"
+f56r	11	10.0	nt	~	H	n joined to a crossed stroke (n+), matches atlas nt; small tilde-like mark visible above	Z		H	cursive Z shape with small flourish above, matches atlas Z
+f56r	11	21.0	e		M	round bowl with stroke rising to a small hook near the top of the box	dl		M	small loop with a wavy hooked tail extending right, matches atlas dl
+f56r	18	20.0	rz		M	same hook-then-wave low shape as c001, slightly wider crop of what looks like the same token type	S		M	small loop merging into an S-like curling flourish below, closest to atlas S
+f56r	18	21.0	rz		L	rz: low hook-then-wave shape, flat on baseline; distinguished from e by lack of a rising loop	dl		M	small loop merging into a long wavy/hooked tail, matches atlas dl
+f56r	19	4.0	g	#	M	"9/g-loop shape with a ""#""-like double-cross mark above; a dot near the mark may just be adjacent context ink"	g	dot	M	small 9-shaped loop with a faint dot above it
+f56v	2	17.0	e	~	M	bowl with a tall rising stem; a small tilde-like tick sits above-left, read as a ~ mark	g		M	small loop with hooked ascender stroke, closest to atlas g
+f56v	5	10.0	y		M	only the lower hook/tail portion of a y-like sign is inside the box; tight/ambiguous crop	rz		L	small low hook below/right of neighboring y, ambiguous fragment, closest to rz
+f56v	5	12.0	?		L	"only a small hook/squiggle visible, resembling the ""5"" mark shape; no clear sign body inside the box to assign a code"	S		M	small s/5-like squiggle hook, closest to atlas S
+f56v	10	7.0	?		L	boxy shape with a vertical divider/stem running through and below it; ambiguous between H and sq, could not settle confidently	sq		M	square/rectangular outline with a vertical divider stroke through the middle, closest to atlas sq

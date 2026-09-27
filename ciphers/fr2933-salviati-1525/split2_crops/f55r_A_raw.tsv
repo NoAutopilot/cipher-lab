@@ -1,0 +1,32 @@
+id	code	marks	conf	note
+c001	v		M	curved bowl shape with small hook rising on left, resembles v
+c002	v	5	L	similar curved v/u bowl with hooked tail; numeral-like mark above, closest to hook mark 5
+c003	?		L	vertical stroke with small hook/loop near bottom; too little distinguishing detail to match a code; "10" numeral visible in surrounding context but outside the box
+c004	S4		L	X-shaped crossing strokes, partly obscured by white smudge/erasure; matches S4's "slash crossing a T-shape" description
+c005	?		L	box appears largely blank, only very faint stray ink, no clear sign visible
+c006	y		M	numeral-7-like stroke curving into a small loop at bottom, resembles cursive y with looped tail
+c007	v	1|5	M	curved v/u bowl with hooked left arm; "15"-like mark above matching marks 1 and 5
+c008	S		M	cursive S-like double-curve stroke
+c009	tee	#	M	vertical stroke with a bar to the right and a curved tail below; # mark above
+c010	?		L	single rounded arch/hump shape; two dots appear below it (outside the sign proper); closest guess N but shape too simple/ambiguous
+c011	WORD		M	cursive letters resembling an ordinary italic word fragment ("ndy"-like), not an isolated cipher sign
+c012	?		L	tiny curved hook open to the right, ambiguous; closest to [ bracket but far smaller and rounder
+c013	?		L	single short vertical stroke, insufficient shape detail to classify
+c014	e	#	H	single bowl closed by a loop at top with rising stroke, # mark above -- matches e
+c015	?		L	faint diagonal stroke only, too little ink to classify
+c016	o.		H	ring with dot inside
+c017	o.		H	ring with dot inside
+c018	o.		H	ring with dot inside
+c019	S		M	cursive S/5-like hook shape
+c020	?		L	ascender with looped tail, resembles a plain-script "t" within a word context, not a clear cipher code
+c021	dl		M	hook/loop shape curving down-left, resembles delta with wavy tail
+c022	S7		M	small numeral-7-like hook stroke
+c023	eps		M	two open bowls stacked, open to the right, with a diagonal tail stroke below
+c024	?		L	obscured by white smudge/erasure, faint loop and crossing stroke visible, insufficient detail
+c025	g	+|~	M	two adjacent cursive g-shapes (9-like) in the box; a + mark and a wave-like mark above
+c026	eps	5	L	compact double-curve shape with a descending tail, "5"-like hook mark above
+c027	Z		L	epsilon-like double curve merging into a 7-like tail/hook, resembles Z
+c028	o.		M	ring with dot, crossed by an incidental diagonal stroke
+c029	WORD		M	cursive "yy" letters, ordinary italic script
+c030	]		L	rounded hook open to the left, resembles bracket
+c031	o.		H	ring with dot inside

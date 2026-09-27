@@ -1,0 +1,32 @@
+leaf	line	pos	code	marks	grade	how	passA_code	passA_marks	passB_code	passB_marks
+f55r	1	14.0	v		AB		v		v	
+f55r	1	26.0	g	~	M	"marks: box shows two adjacent g/9-shapes; the ""+""-like ink sits above the PRECEDING position, not this box -- kept the simpler tilde read (B)"	g	+|~	g	~
+f55r	1	27.0	WORD		M	"crop shows connected cursive letters (""ndy""-like), not an isolated cipher sign; matches pass A, not B's wd+flourish guess"	WORD		wd	
+f55r	2	20.0	?		AB		?		?	
+f55r	2	23.0	?		AB		?		?	
+f55r	2	28.0	S		AB		S		S	
+f55r	3	1.0	WORD		M	"crop shows two identical cursive ""y"" letters written as ordinary italic script (ligature ""yy""), not a looped-tail atlas y"	WORD		y	
+f55r	3	2.0	WORD		M	"continuous cursive stroke immediately following the ""yy"" word at pos 1 on the same line; part of the same plain-Italian word, no isolated-sign break"	?		y	
+f55r	3	19.0	v	~	M	"code agreed (v); the ""3""-like mark above is a wave, matching ~ (B) better than the 5-hook (A)"	v	5	v	~
+f55r	4	1.0	g	~	M	clean 9/g-shaped loop with a small tilde-like tick above; not S (no double-curve)	S		g	~
+f55r	5	23.0	o.		AB		o.		o.	
+f55r	6	14.0	S7		M	clean 7-shaped stroke, matches S7; no stacked bowls for Z/eps	Z		S7	
+f55r	6	17.0	?		M	"ambiguous vertical stroke with a small loop, sits right against the ""10"" reference annotation below; too little diagnostic ink to commit to dl or any other code"	?		dl	
+f55r	7	10.0	N		M	rounded hump/arc matches N best of the 36 codes despite the unusual two-dot placement (below rather than above -- not a listed mark position, left blank)	?		N	
+f55r	7	23.0	eps	5	AB		eps	5	eps	5
+f55r	8	20.0	o.		AB		o.		o.	
+f55r	9	5.0	eps		AB		eps		eps	
+f55r	9	6.0	phi		M	clear diagonal slash through the ring, matches phi, not o. (no dot)	o.		phi	
+f55r	9	10.0	o.		AB		o.		o.	
+f55r	9	15.0	]		M	rounded hook opening to the left, matches ] better than dl (no loop+wavy tail)	dl		]	
+f55r	11	14.0	?		AB		?		?	
+f55r	11	16.0	S4		M	faint diagonal crossing strokes visible through the white smudge/erasure, consistent with S4; confidence stays low given the damage	?		S4	
+f55r	11	17.0	S4		AB		S4		S4	
+f55r	11	24.0	o.		AB		o.		o.	
+f55r	13	1.0	e	#	AB		e	#	e	#
+f55r	13	2.0	tee	#	AB		tee	#	tee	#
+f55r	13	24.0	y		M	7-shaped stroke curving into a small loop at the base, matches y's looped-tail description better than g's plain 9-shape	y		g	
+f55r	16	16.0	e	#	M	rounded bowl closed by a loop at the top with a rising stroke, matches e; # mark visible directly above	]		e	#
+f55r	18	24.0	S7		M	compact 7-shaped stroke, matches S7	S7		?	
+f55r	19	19.0	?		AB		?		?	
+f55r	19	27.0	v		M	"clean v-shaped bowl; the ""15"" above is a modern reference/catalogue annotation (consistent with the same numerals seen elsewhere on this leaf and on f56r), not a manuscript mark"	v	1|5	dl	

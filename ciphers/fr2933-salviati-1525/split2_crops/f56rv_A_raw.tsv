@@ -1,0 +1,26 @@
+id	code	marks	conf	note
+c001	rz		L	rz: low hook-then-wave shape, flat on baseline; distinguished from e by lack of a rising loop
+c002	y		M	only the lower hook/tail portion of a y-like sign is inside the box; tight/ambiguous crop
+c003	rz		M	same hook-then-wave low shape as c001, slightly wider crop of what looks like the same token type
+c004	e	+	M	round bowl with stroke rising to a "+" positioned upper-right, matches e+mark pattern in atlas
+c005	g		M	loop/ring at top with a tail/stem extending down to a small foot, 9-like
+c006	o.		H	clean ring with a center dot, matches atlas o. exactly
+c007	w		H	clean cursive w with two humps, lead-in stroke outside box belongs to prior sign
+c008	?		L	box is essentially blank, no discernible ink; cannot assign a code
+c009	tee		M	vertical stroke with a bar/hook to the right, right-angle-bracket-like
+c010	v		H	curved v with hooked left arm, clean match to atlas v
+c011	?		L	boxy shape with a vertical divider/stem running through and below it; ambiguous between H and sq, could not settle confidently
+c012	e		M	round bowl with stroke rising to a small hook near the top of the box
+c013	v		H	curved hooked shape matching atlas v; the "15" above is a reference/annotation number like in the atlas image, not a manuscript mark
+c014	S7		H	stroke like numeral 7 with a small hook/foot at the base
+c015	?		L	only a small hook/squiggle visible, resembling the "5" mark shape; no clear sign body inside the box to assign a code
+c016	S4		H	vertical+crossbar with a diagonal slash and foot, matches atlas S4
+c017	eps	5	H	two stacked open bowls (epsilon shape) with a small s/5-like hook mark above
+c018	g	#	M	9/g-loop shape with a "#"-like double-cross mark above; a dot near the mark may just be adjacent context ink
+c019	g		H	clean 9/g-shaped loop, unambiguous match
+c020	e	~	M	bowl with a tall rising stem; a small tilde-like tick sits above-left, read as a ~ mark
+c021	o.		H	clean ring with center dot, same as c006
+c022	?		L	only a faint, thin diagonal hook/loop visible (light ink); could be a stray descender rather than a distinct sign, could not confidently match a code
+c023	y		M	shape reads as a double-loop "yy"-like cursive form; coded as y (closest single atlas code) but note the doubled appearance
+c024	nt	~	H	n joined to a crossed stroke (n+), matches atlas nt; small tilde-like mark visible above
+c025	?		L	single vertical/diagonal stroke with a slight hook at the base; ambiguous between atlas L and lam, could not settle confidently

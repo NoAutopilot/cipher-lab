@@ -1,0 +1,26 @@
+leaf	line	pos	sign	marks	conf	note
+f56r	3	1.0	?		L	box is essentially blank, no discernible ink; cannot assign a code
+f56r	3	11.0	?		L	single vertical/diagonal stroke with a slight hook at the base; ambiguous between atlas L and lam, could not settle confidently
+f56r	3	20.0	?		L	only a faint, thin diagonal hook/loop visible (light ink); could be a stray descender rather than a distinct sign, could not confidently match a code
+f56r	4	3.0	g		M	loop/ring at top with a tail/stem extending down to a small foot, 9-like
+f56r	4	12.0	v		H	curved v with hooked left arm, clean match to atlas v
+f56r	11	8.0	S4		H	vertical+crossbar with a diagonal slash and foot, matches atlas S4
+f56r	11	9.0	y		M	"shape reads as a double-loop ""yy""-like cursive form; coded as y (closest single atlas code) but note the doubled appearance"
+f56r	11	10.0	nt	~	H	n joined to a crossed stroke (n+), matches atlas nt; small tilde-like mark visible above
+f56r	11	11.0	g		H	clean 9/g-shaped loop, unambiguous match
+f56r	11	21.0	e		M	round bowl with stroke rising to a small hook near the top of the box
+f56r	12	9.0	e	+	M	"round bowl with stroke rising to a ""+"" positioned upper-right, matches e+mark pattern in atlas"
+f56r	16	21.0	w		H	clean cursive w with two humps, lead-in stroke outside box belongs to prior sign
+f56r	17	4.0	eps	5	H	two stacked open bowls (epsilon shape) with a small s/5-like hook mark above
+f56r	18	15.0	o.		H	clean ring with a center dot, matches atlas o. exactly
+f56r	18	20.0	rz		M	same hook-then-wave low shape as c001, slightly wider crop of what looks like the same token type
+f56r	18	21.0	rz		L	rz: low hook-then-wave shape, flat on baseline; distinguished from e by lack of a rising loop
+f56r	19	4.0	g	#	M	"9/g-loop shape with a ""#""-like double-cross mark above; a dot near the mark may just be adjacent context ink"
+f56r	19	8.0	v		H	"curved hooked shape matching atlas v; the ""15"" above is a reference/annotation number like in the atlas image, not a manuscript mark"
+f56r	19	20.0	o.		H	clean ring with center dot, same as c006
+f56v	2	17.0	e	~	M	bowl with a tall rising stem; a small tilde-like tick sits above-left, read as a ~ mark
+f56v	5	8.0	tee		M	vertical stroke with a bar/hook to the right, right-angle-bracket-like
+f56v	5	10.0	y		M	only the lower hook/tail portion of a y-like sign is inside the box; tight/ambiguous crop
+f56v	5	12.0	?		L	"only a small hook/squiggle visible, resembling the ""5"" mark shape; no clear sign body inside the box to assign a code"
+f56v	8	25.0	S7		H	stroke like numeral 7 with a small hook/foot at the base
+f56v	10	7.0	?		L	boxy shape with a vertical divider/stem running through and below it; ambiguous between H and sq, could not settle confidently

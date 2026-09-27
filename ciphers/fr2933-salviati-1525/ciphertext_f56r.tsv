@@ -56,7 +56,7 @@ line	pos	code	marks	grade
 2	29	e	#	AB
 2	30	nt		AB
 2	31	y		AB
-3	1	_		settled
+3	1	?		AB|split2
 3	2	e	dot	AB
 3	3	psi		AB
 3	4	lam	1	AB
@@ -67,7 +67,7 @@ line	pos	code	marks	grade
 3	9	a		settled
 3	9.5	sq		settled
 3	10	psi		AB
-3	11	_		settled
+3	11	L		M|split2
 3	12	phi		AB
 3	13	H	#	AB
 3	14	v	1|5	AB
@@ -76,7 +76,7 @@ line	pos	code	marks	grade
 3	17	rz		AB
 3	18	S7		settled
 3	19	e	#	AB
-3	20	_	dot	AB
+3	20	rz		M|split2
 3	21	psi		AB
 3	22	f		settled
 3	23	w		AB
@@ -87,7 +87,7 @@ line	pos	code	marks	grade
 4	1	S7	+	settled
 4	1.5	S7		settled
 4	2	]		AB
-4	3	_		settled
+4	3	g		AB|split2
 4	4	psi		AB
 4	5	m	1	AB
 4	6	w		AB
@@ -97,7 +97,7 @@ line	pos	code	marks	grade
 4	9	bh		AB
 4	10	]	ot	AB
 4	11	v		settled
-4	12	_	#	AB
+4	12	v		M|split2
 4	13	e	#	AB
 4	14	nt		settled
 4	15	rz		AB
@@ -283,10 +283,10 @@ line	pos	code	marks	grade
 11	5	_		AB
 11	6	_		AB
 11	7	_	dot	AB
-11	8	_		settled
-11	9	_		AB
-11	10	_		settled
-11	11	_		settled
+11	8	S4		AB|split2
+11	9	psi		M|split2
+11	10	Z	~	M|split2
+11	11	g		AB|split2
 11	12	m	~	AB
 11	13	_		AB
 11	14	bh		AB
@@ -296,7 +296,7 @@ line	pos	code	marks	grade
 11	18	eps	1|dot	AB
 11	19	e	#	AB
 11	20	S4		AB
-11	21	_		AB
+11	21	dl		M|split2
 12	1	g		AB
 12	2	nt		AB
 12	3	y		AB
@@ -305,7 +305,7 @@ line	pos	code	marks	grade
 12	6	Lx		AB
 12	7	dl		AB
 12	8	S4		AB
-12	9	_		AB
+12	9	e	+	AB|split2
 12	10	]	o	AB
 12	11	Z		AB
 12	12	S7		AB
@@ -420,7 +420,7 @@ line	pos	code	marks	grade
 16	18	lam		AB
 16	19	g	~	AB
 16	20	bh		AB
-16	21	_		AB
+16	21	w		AB|split2
 16	22	S7		AB
 16	23	o.		AB
 16	24	eps	5	AB
@@ -432,7 +432,7 @@ line	pos	code	marks	grade
 17	1	e		AB
 17	2	Lx	dot	AB
 17	3	y		AB
-17	4	_		AB
+17	4	eps	5	AB|split2
 17	5	S7		AB
 17	6	tee		AB
 17	7	g		AB
@@ -472,13 +472,13 @@ line	pos	code	marks	grade
 18	12	S7		AB
 18	13	eps	~	AB
 18	14	wd		AB
-18	15	_		AB
+18	15	o.		AB|split2
 18	16	rz		AB
 18	17	g	5	AB
 18	18	phi		AB
 18	19	y		AB
-18	20	_		AB
-18	21	_		AB
+18	20	rz		M|split2
+18	21	S		M|split2
 18	22	w		AB
 18	23	a	1	AB
 18	24	lam		AB
@@ -488,11 +488,11 @@ line	pos	code	marks	grade
 19	1	_		AB
 19	2	S7		AB
 19	3	_	dot	AB
-19	4	_		AB
+19	4	g	dot	M|split2
 19	5	o.		AB
 19	6	g	~	AB
 19	7	H	1|o	AB
-19	8	_	1	AB
+19	8	v		AB|split2
 19	9	y		AB
 19	10	y		AB
 19	11	y		AB
@@ -504,7 +504,7 @@ line	pos	code	marks	grade
 19	17	psi		AB
 19	18	eps		AB
 19	19	w		AB
-19	20	_		AB
+19	20	o.		AB|split2
 19	21	U		AB
 19	22	lam		AB
 19	23	phi		AB

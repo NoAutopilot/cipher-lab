@@ -1,0 +1,26 @@
+leaf	line	pos	A_code	A_marks	A_conf	B_code	B_marks	B_conf	code_agree	marks_agree
+f56r	3	1.0	?		L	?		L	True	True
+f56r	3	11.0	?		L	L		L	False	True
+f56r	3	20.0	?		L	rz		M	False	True
+f56r	4	3.0	g		M	g		M	True	True
+f56r	4	12.0	v		H	?		L	False	True
+f56r	11	8.0	S4		H	S4		M	True	True
+f56r	11	9.0	y		M	psi		M	False	True
+f56r	11	10.0	nt	~	H	Z		H	False	False
+f56r	11	11.0	g		H	g		H	True	True
+f56r	11	21.0	e		M	dl		M	False	True
+f56r	12	9.0	e	+	M	e	+	M	True	True
+f56r	16	21.0	w		H	w		H	True	True
+f56r	17	4.0	eps	5	H	eps	5	H	True	True
+f56r	18	15.0	o.		H	o.		H	True	True
+f56r	18	20.0	rz		M	S		M	False	True
+f56r	18	21.0	rz		L	dl		M	False	True
+f56r	19	4.0	g	#	M	g	dot	M	True	False
+f56r	19	8.0	v		H	v		H	True	True
+f56r	19	20.0	o.		H	o.		H	True	True
+f56v	2	17.0	e	~	M	g		M	False	False
+f56v	5	8.0	tee		M	tee		M	True	True
+f56v	5	10.0	y		M	rz		L	False	True
+f56v	5	12.0	?		L	S		M	False	True
+f56v	8	25.0	S7		H	S7		H	True	True
+f56v	10	7.0	?		L	sq		M	False	True

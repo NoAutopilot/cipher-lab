@@ -1,0 +1,32 @@
+id	code	marks	conf	note
+c001	S4		M	X-shaped crossing strokes, resembles numeral-4 sign; white smudge above looks like page damage, not a mark
+c002	v		H	curved v shape with hooked left arm, clean match to v
+c003	?		L	narrow vertical stroke only, no other diagnostic detail visible in box; closest atlas match would be tee or the right stroke of wd
+c004	S		M	cursive S-like shape, appears slightly doubled/looped; y before, b after
+c005	phi		M	circle with a diagonal slash through it, resembles slashed-o phi; nearby "75"/"10" numerals look like separate ink, not a mark on this sign
+c006	S7		H	clear 7-shaped sign, matches S7
+c007	wd		M	omega-plus-tall-stroke (wd) shape with an extra tail flourish; small numeral-like mark ("3"-ish) above and an isolated dot, neither matches the mark vocabulary cleanly
+c008	dl		M	curling hook/wave shape, resembles delta-with-tilde-tail (dl); nearby "15" numeral looks like unrelated ink
+c009	?		L	short hook/check-mark stroke between ordinary-looking letters (z-like, d-like); does not clearly match any atlas code, possibly a flourish or plain-letter fragment
+c010	v	~	M	v-shaped sign with a small wavy/"3"-like mark above resembling tilde
+c011	g	~	M	9/g-shaped hook with a small wavy mark above
+c012	e	#	H	looped e with rightward tail, # mark directly above
+c013	y		M	cursive hook top merging into a looped/curved tail, y-like; sits among yy-psi-w-like context
+c014	o.		H	clean ring with a dot inside
+c015	?		L	tiny crescent/hook fragment, insufficient detail to match a code confidently
+c016	o.		H	clean ring with a dot inside
+c017	eps		H	two stacked open bowls, clear epsilon; diagonal line below is likely the adjacent phi's stem bleeding into the crop, not part of this sign
+c018	o.		H	clean ring with a dot inside
+c019	]		M	hook/comma shape open to the left, resembles bracket-open-left
+c020	eps	5	M	epsilon bowl whose tail continues into a 7-like stroke (may be bleed from the next sign); small S/5-like hook mark above
+c021	g		M	hook curling like a 9/g shape
+c022	g	~	M	two g/9-shaped hooks side by side with a small numeral-like mark above the first (not in mark vocabulary); ambiguous whether one or two signs, picked the clearer left one
+c023	?		L	very faint, minimal ink in the box; cannot confidently match any code
+c024	S4		M	X-shaped crossing strokes partly obscured by a white smudge/damage, same shape as c001
+c025	tee	#	H	vertical stroke with a bar to the right forming an F/tee shape, # mark directly above
+c026	y		M	two cursive y-like strokes side by side, ambiguous whether one or two signs, picked the shape
+c027	N		L	rounded hump/arc shape resembling N or lambda; two dots visible below rather than above (unusual placement for a mark)
+c028	o.		H	clean ring with a dot inside
+c029	?		L	short diagonal stroke, minimal ink; closest guesses would be dl or rz fragment
+c030	dl		L	vertical stroke ending in a small loop at the bottom, resembles a digit "10" shape or a tailed sign
+c031	e	#	H	looped e with tail, # mark directly above

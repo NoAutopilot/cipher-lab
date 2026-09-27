@@ -48,7 +48,7 @@ line	pos	code	marks	grade
 2	14	w		AB
 2	15	bh		AB
 2	16	lam	~	AB
-2	17	_		AB
+2	17	e	~	M|split2
 2	18	bh		AB
 2	19	g		AB
 2	20	Z		AB
@@ -130,11 +130,11 @@ line	pos	code	marks	grade
 5	6	a		split
 5	7	y		settledC
 5	7.5	y		settledC
-5	8	_		AB
+5	8	tee		AB|split2
 5	9	e	+	AB
-5	10	_		AB
+5	10	y		M|split2
 5	11	psi		AB
-5	12	_		AB
+5	12	S		M|split2
 5	13	w		AB
 5	14	g		AB
 5	15	m	~	AB
@@ -230,7 +230,7 @@ line	pos	code	marks	grade
 8	22	S7		AB
 8	23	#	dot	AB
 8	24	eps	5	AB
-8	25	_		AB
+8	25	S7		AB|split2
 8	26	f		AB
 8	27	w		AB
 8	28	o.		AB
@@ -273,7 +273,7 @@ line	pos	code	marks	grade
 10	4	_		AB
 10	5	_		AB
 10	6	_		AB
-10	7	_		AB
+10	7	sq		M|split2
 10	8	Lx		AB
 10	9	phi		AB
 10	10	]	#	AB
