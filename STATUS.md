@@ -2268,6 +2268,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (27 Sept 2026, 01:44 UTC)
+
+- Villeroy to Bongars 1604 (fr.7129 f.268): the sibling calibration (VB-KP, 17.69 D-, over cap) changed the picture. All four sibling letters at ff.258-263 carry a clerk's contemporary interlinear decipherment, so the cipher has known plaintext in the same volume. Applied to f.258, the key of record agrees with the clerk on 47 percent of letters against 28 percent for shuffled keys (z 5.5): the key is real but wrong in named places (dropped overbars, three word cells, the d/g/y letter signs). VB-KEY (Opus, cap 10) now re-derives the key from the clerk's own text on f.258 and f.260, tests it on held-out lines at a 0.70 bar, and only then decodes f.268 against the shuffled-key control. Status stays blocked on the M9 gate; no class. Spend on this target so far about 49 USD.
+- Retrospective w's five proposals are applied (RETRO-APPLY-W, 3.13 D). The two BnF catalogue "corrections" were checked against the notices themselves and turned out to be our own queue rows' errors, so no email (BNF-CORR-DRAFT, 1.96 D).
+- Other account (parent 7k from 01:18): LANE CRYPT closed with three method digests and Tomokiyo's text keys cross-matched against every ciphertext (no new hit); Salviati's plain/sign split shown measurably wrong (98 of 137 flagged boxes are cipher, z 10); Matignon's office-cluster key check has no power; three runner pull requests landed there under the tie-break.
+- Mailbox quiet; no open pull request; VO1 idle. Counts unchanged: 20 letters, 15 entries.
+
 ### Parent note, owner account (27 Sept 2026, 00:44 UTC)
 
 - Villeroy to Bongars 1604 (fr.7129 f.268): the second decode try (VB-DECODE2, 13.73 D-, over cap) re-transcribed the verso glyph by glyph against the period look-alike sheet and resolved eight key cells; seven transcription-and-key combinations against 20 shuffled keys peaked at z 1.45. Gate not met; the transcription is the weaker leg (swapping it moved the score more than swapping the key). Two tries run, the stuck rule is satisfied. One calibration remains before the target idles: VB-KP (Opus, cap 8) applies the same key and pipeline to a sibling letter in the same cipher at ff.258-263, ideally one with a clerk's contemporary decipherment, to learn whether the key reads anything at all. Status stays blocked on the M9 gate; no class.
