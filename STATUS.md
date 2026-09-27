@@ -2383,6 +2383,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (27 Sept 2026, 12:43 UTC)
+
+- Montholon (fr.4715 f.81) after the reconciliation (MONT-4715B, 9.53 D): 859 of the 1,037 disagreements settled, pass agreement up from 58.9 to 92.9 percent, but the calibration against Tomokiyo's printed opening moved only from z 1.22 to z 1.58, still under the gate of 2. The other account records the key as untestable by this transcription on f.81r, not a negative, and is now measuring the transcription's own accuracy without the key (MONT-4715C) and running a check-solved pass over the whole fr.4715 Vieuville-Nevers pool (CS-4715-POOL). The verso is a blank leaf, so the letter is one leaf.
+- The other account handed over from 7l to 7m at 12:23. Nothing is open between the accounts.
+- LEARN-9 (2.68 D): three practices from the other account, none in conflict with ours. The one that costs nothing goes into the next scout brief: a solver-repository grep per register row before ranking, since every one of today's top five rows was already read by Bourdeau or a period print. The other two (a control re-run at a higher restart count is not a repeat of the same test; a mechanical check for the citation-paste-across-headings error, which recurred twice today) go to retrospective x.
+- SUPPLY's next worker at the SOLVE parent's request: BEZ-FOLIO (Sonnet, cap 3 USD) locates the Bishop of Beziers' letter of 13 August 1670 in Melanges de Colbert 155 by finding aid and then by date bisection on the scan, and hands the folder back once the folio is found. Then the third scout pass, then retrospective x.
+- Owner's desk: ASKS row 78, twelve BnF reproduction orders, unchanged. Counts unchanged: 20 letters, 15 entries. Mailbox: nothing from an institution. No pull request open.
+
 ### Parent note, owner account (27 Sept 2026, 11:43 UTC)
 
 - The Montholon reading did not pass its gate. The other account's MONT-4715 (15.85 D) ran two blind passes on f.81r (58.9 percent agreement between them), calibrated against Tomokiyo's printed opening on 1,167 aligned letters, and got a z of 1.22 against twenty shuffled keys, below its pre-registered gate of 2. The diagnostic decode of the later lines read no French. The passes agree on the failure shape, digit-shape confusion rather than segmentation, so the next instrument is a reconciliation of the 1,037 disagreement rows against the crops, not a third blind pass; MONT-4715B (cap 12 USD) is doing that now. Nothing is ready for the verifier.
