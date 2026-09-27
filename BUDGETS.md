@@ -32,6 +32,14 @@ usage page read 27 percent of the weekly limit (26 percent Fable), reset Saturda
 flag in their check-in line. A **five_hour** `allowed_warning` and `rejected` on either type keep the rule below
 unchanged. Cost of the old reading: about three hours (04:22-07:22) with nothing spawned on this account.
 
+## Effort allocation trial (owner's decision, 27 Sept 2026, about 14:08 UTC)
+
+Two weeks from 27 Sept 2026, both accounts: about 50 percent of usage on recovery, transcription and solving (ten
+points of it for one difficult research campaign), 20 percent on acquiring specific inputs, 20 percent on validation
+and novelty research, 10 percent on coordination and maintenance. The daily retrospective reports the actual split
+from LEDGER.md and the usage per validated recovered passage; the weekly reallocation follows observed yield.
+Source: CODEX-REVIEW-2026-09-27.md section 3; the binding text is `.claude/briefs/parent.md` "Effort allocation".
+
 ## What to do when you see a warning
 
 - **allowed_warning on the five-hour window**: finish the worker you are running, do not start another large one,

@@ -257,6 +257,17 @@ The owner's decisions go into STATUS.md, ROOM.md and the briefs as decisions in 
 
 The owner reads Pacific time (America/Los_Angeles). Every time in a reply to him is given Pacific first with UTC in brackets, e.g. 12:40 PT (19:40 UTC). The board converts client-side (tools/build_dashboard.py, UTC toggle). ROOM.md, STATUS.md, LEDGER.md and every other file stay UTC, clock-read.
 
-## TLDR for the owner (26 Sept 2026)
+## Effort allocation (owner's decision, 27 Sept 2026, about 14:08 UTC, on CODEX-REVIEW-2026-09-27.md section 3)
 
-Every message to the owner that carries a board update opens with a three-line TLDR before anything else: (1) SOLVES: the unique-solve count and whether it changed ("20 letters / 15 entries, unchanged" or "+1: <target>, N<class> after two audits"); (2) CLOSEST: the one target nearest a class change, with its stage in five words and what it waits on; (3) NEW THIS HOUR: at most two clauses. Then the detail. The owner reads the TLDR to decide whether to read on.
+For a two-week trial from 27 Sept 2026, both parents shape spend as: about 50 percent of usage on focused recovery,
+transcription and solving (about ten points of the total reserved for one difficult research campaign); 20 percent on
+acquiring specific high-value inputs (images, key sheets, deciphered siblings, adjacent leaves, ranked by the number of
+documents a page could unlock over its cost); 20 percent on reading validation and novelty research; 10 percent on
+coordination and maintenance (parents, retrospectives, LEARN passes, tools). The retrospective (SUPPLY) reports the
+actual split from LEDGER.md each day against these figures and reallocates weekly on observed yield; it also reports
+usage per validated recovered passage and per completed document beside the raw counts. A parent whose own session
+cost exceeds a third of its workers' spend in a day says so in its handoff line. Starting allocations, not optima.
+
+## TLDR for the owner (26 Sept 2026; count format changed 27 Sept 2026 by the owner's decision, BOARD-COUNTS)
+
+Every message to the owner that carries a board update opens with a three-line TLDR before anything else: (1) SOLVES: the four board counts in documents, generated from the per-row fields (recovered-passage documents / completed readings / keys or mappings to text already in print / contributions and corrections) and whether any changed ("a / b / c / d, unchanged" or "+1 recovered-passage: <target>, N<class>, two audits"); until BOARD-COUNTS lands, the old row count with the words "rows, audit status per row not yet enforced"; (2) CLOSEST: the one target nearest a class change, with its stage in five words and what it waits on; (3) NEW THIS HOUR: at most two clauses. Then the detail. The owner reads the TLDR to decide whether to read on.
