@@ -95,3 +95,37 @@ this unit (not needed -- no printed-volume page to confirm, unlike unit A). No c
   the found-solved gate (no) and the BnF catalogue's own "non dechiffre" flag, per KEY-ADJACENT.tsv row 19's
   digitised cell and this NOTES.md's own citation above.
 - Once a reading exists: `tools/print_check.py` on the decoded phrases (rule 10).
+
+## MONT-4715 (27 Sept 2026) -- in progress, checkpoint
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-4715.md`. Job in progress; this is a mid-job checkpoint
+commit (two blind transcription subagents running in the background), not the final report.
+
+**U1 crops.** `python3 tools/iiif_lines.py --ark btv1b52509819x --canvas 177 --region 326,1285,3630,2243 --out
+ciphers/fr4715-montholon-1589/images --prefix f81r --debug` (native region found by scaling the 1000px eye-check
+image's text-block box by the canvas's native/1000px ratio, 4.079x, from the cached IIIF manifest
+`sources/gallica-manifests/btv1b52509819x.json`, canvas 177 = 4079x5720 native). 36 lines detected, debug overlay
+checked by eye (centres on every line, band edges in whitespace) -- good line detection.
+
+**Crop legibility failure and fix.** The first attempt (`--max-width 2400`, 2 segments/line, 72 crops, prefix
+`f81r_`) was given to two independent blind Sonnet subagents (one leaf, one call each, per Usage 6). **Both
+independently declined to produce a transcription**, citing illegible digit shapes at that crop width -- not
+primed by each other (launched in parallel, no shared context). This is the same failure shape as NEV-C3's first
+gloss-reading attempt (ceppo-nevers-fr3251-1570s NOTES.md: "all illegible... 0 confident letters"), fixed there by
+narrower, more zoomed crops. Diagnosed by testing crop widths directly: a 2400px-native crop upscaled 3x (7200px)
+displayed no better (the display/vision pipeline downscales the long edge back down to roughly 2000px regardless of
+source size, so a wide crop's real information is lost before the model sees it); a 700-900px-native crop upscaled
+3x displayed near 1:1 and was clearly legible by direct inspection. Re-cut at `--max-width 900` (5 segments/line,
+180 crops, prefix `f81rz_`, from the already-cached region source, no new network fetch), each segment upscaled 3x
+LANCZOS (prefix `f81rzoom_`, superseding `f81rz_`), then the up-to-5 segments per folio line composited into one
+vertically-stacked "sheet" per line (`f81rsheet_Lnn.jpg`, 35 files, one per folio line L02-L36) so a subagent reads
+35 files instead of 175 -- stacking vertically does not reintroduce the width problem (each row keeps its own
+900-native/2700-upscaled width, same ~1.35x display factor as the single-segment test). The superseded wide
+(`f81r_L*.jpg`) and intermediate non-upscaled narrow (`f81rz_L*.jpg`) crops were deleted, not kept.
+`images/regen_f81r_crops.sh` reproduces the final `f81rzoom_L*.jpg` set from the cached source (rule 7). Two fresh
+independent blind passes were then launched on the 35 sheet images; running as of this checkpoint.
+
+Images folder: 25 MB (under the 30 MB limit) after the wide/intermediate crops were deleted.
+
+Network log this job: 0 new gallica.bnf.fr requests for the crop fix (region cut from the already-cached full-page
+source fetched by INTAKE-4715); the U1 region fetch itself was 1 request (cached locally after).

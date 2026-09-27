@@ -17,5 +17,1808 @@
       "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f178/full/1000,/0/native.jpg",
       "note": "not examined this job beyond the fetch; the letter's extent (whether it continues past 81v) is unconfirmed"
     }
-  }
+  },
+  "iiif_lines": [
+    {
+      "crop": "f81rzoom_L01_s1.jpg",
+      "line": "L01",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L01_s2.jpg",
+      "line": "L01",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L01_s3.jpg",
+      "line": "L01",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L01_s4.jpg",
+      "line": "L01",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L01_s5.jpg",
+      "line": "L01",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L02_s1.jpg",
+      "line": "L02",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L02_s2.jpg",
+      "line": "L02",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L02_s3.jpg",
+      "line": "L02",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L02_s4.jpg",
+      "line": "L02",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L02_s5.jpg",
+      "line": "L02",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L03_s1.jpg",
+      "line": "L03",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L03_s2.jpg",
+      "line": "L03",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L03_s3.jpg",
+      "line": "L03",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L03_s4.jpg",
+      "line": "L03",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L03_s5.jpg",
+      "line": "L03",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L04_s1.jpg",
+      "line": "L04",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L04_s2.jpg",
+      "line": "L04",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L04_s3.jpg",
+      "line": "L04",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L04_s4.jpg",
+      "line": "L04",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L04_s5.jpg",
+      "line": "L04",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L05_s1.jpg",
+      "line": "L05",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L05_s2.jpg",
+      "line": "L05",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L05_s3.jpg",
+      "line": "L05",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L05_s4.jpg",
+      "line": "L05",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L05_s5.jpg",
+      "line": "L05",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L06_s1.jpg",
+      "line": "L06",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L06_s2.jpg",
+      "line": "L06",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L06_s3.jpg",
+      "line": "L06",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L06_s4.jpg",
+      "line": "L06",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L06_s5.jpg",
+      "line": "L06",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L07_s1.jpg",
+      "line": "L07",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L07_s2.jpg",
+      "line": "L07",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L07_s3.jpg",
+      "line": "L07",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L07_s4.jpg",
+      "line": "L07",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L07_s5.jpg",
+      "line": "L07",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L08_s1.jpg",
+      "line": "L08",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L08_s2.jpg",
+      "line": "L08",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L08_s3.jpg",
+      "line": "L08",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L08_s4.jpg",
+      "line": "L08",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L08_s5.jpg",
+      "line": "L08",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L09_s1.jpg",
+      "line": "L09",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L09_s2.jpg",
+      "line": "L09",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L09_s3.jpg",
+      "line": "L09",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L09_s4.jpg",
+      "line": "L09",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L09_s5.jpg",
+      "line": "L09",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L10_s1.jpg",
+      "line": "L10",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L10_s2.jpg",
+      "line": "L10",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L10_s3.jpg",
+      "line": "L10",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L10_s4.jpg",
+      "line": "L10",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L10_s5.jpg",
+      "line": "L10",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L11_s1.jpg",
+      "line": "L11",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L11_s2.jpg",
+      "line": "L11",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L11_s3.jpg",
+      "line": "L11",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L11_s4.jpg",
+      "line": "L11",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L11_s5.jpg",
+      "line": "L11",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L12_s1.jpg",
+      "line": "L12",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L12_s2.jpg",
+      "line": "L12",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L12_s3.jpg",
+      "line": "L12",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L12_s4.jpg",
+      "line": "L12",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L12_s5.jpg",
+      "line": "L12",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L13_s1.jpg",
+      "line": "L13",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L13_s2.jpg",
+      "line": "L13",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L13_s3.jpg",
+      "line": "L13",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L13_s4.jpg",
+      "line": "L13",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L13_s5.jpg",
+      "line": "L13",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L14_s1.jpg",
+      "line": "L14",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L14_s2.jpg",
+      "line": "L14",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L14_s3.jpg",
+      "line": "L14",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L14_s4.jpg",
+      "line": "L14",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L14_s5.jpg",
+      "line": "L14",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L15_s1.jpg",
+      "line": "L15",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L15_s2.jpg",
+      "line": "L15",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L15_s3.jpg",
+      "line": "L15",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L15_s4.jpg",
+      "line": "L15",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L15_s5.jpg",
+      "line": "L15",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L16_s1.jpg",
+      "line": "L16",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L16_s2.jpg",
+      "line": "L16",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L16_s3.jpg",
+      "line": "L16",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L16_s4.jpg",
+      "line": "L16",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L16_s5.jpg",
+      "line": "L16",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L17_s1.jpg",
+      "line": "L17",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L17_s2.jpg",
+      "line": "L17",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L17_s3.jpg",
+      "line": "L17",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L17_s4.jpg",
+      "line": "L17",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L17_s5.jpg",
+      "line": "L17",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L18_s1.jpg",
+      "line": "L18",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L18_s2.jpg",
+      "line": "L18",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L18_s3.jpg",
+      "line": "L18",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L18_s4.jpg",
+      "line": "L18",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L18_s5.jpg",
+      "line": "L18",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L19_s1.jpg",
+      "line": "L19",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L19_s2.jpg",
+      "line": "L19",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L19_s3.jpg",
+      "line": "L19",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L19_s4.jpg",
+      "line": "L19",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L19_s5.jpg",
+      "line": "L19",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L20_s1.jpg",
+      "line": "L20",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L20_s2.jpg",
+      "line": "L20",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L20_s3.jpg",
+      "line": "L20",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L20_s4.jpg",
+      "line": "L20",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L20_s5.jpg",
+      "line": "L20",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L21_s1.jpg",
+      "line": "L21",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L21_s2.jpg",
+      "line": "L21",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L21_s3.jpg",
+      "line": "L21",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L21_s4.jpg",
+      "line": "L21",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L21_s5.jpg",
+      "line": "L21",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L22_s1.jpg",
+      "line": "L22",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L22_s2.jpg",
+      "line": "L22",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L22_s3.jpg",
+      "line": "L22",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L22_s4.jpg",
+      "line": "L22",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L22_s5.jpg",
+      "line": "L22",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L23_s1.jpg",
+      "line": "L23",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L23_s2.jpg",
+      "line": "L23",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L23_s3.jpg",
+      "line": "L23",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L23_s4.jpg",
+      "line": "L23",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L23_s5.jpg",
+      "line": "L23",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L24_s1.jpg",
+      "line": "L24",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L24_s2.jpg",
+      "line": "L24",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L24_s3.jpg",
+      "line": "L24",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L24_s4.jpg",
+      "line": "L24",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L24_s5.jpg",
+      "line": "L24",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L25_s1.jpg",
+      "line": "L25",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L25_s2.jpg",
+      "line": "L25",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L25_s3.jpg",
+      "line": "L25",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L25_s4.jpg",
+      "line": "L25",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L25_s5.jpg",
+      "line": "L25",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L26_s1.jpg",
+      "line": "L26",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L26_s2.jpg",
+      "line": "L26",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L26_s3.jpg",
+      "line": "L26",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L26_s4.jpg",
+      "line": "L26",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L26_s5.jpg",
+      "line": "L26",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L27_s1.jpg",
+      "line": "L27",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L27_s2.jpg",
+      "line": "L27",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L27_s3.jpg",
+      "line": "L27",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L27_s4.jpg",
+      "line": "L27",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L27_s5.jpg",
+      "line": "L27",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L28_s1.jpg",
+      "line": "L28",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L28_s2.jpg",
+      "line": "L28",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L28_s3.jpg",
+      "line": "L28",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L28_s4.jpg",
+      "line": "L28",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L28_s5.jpg",
+      "line": "L28",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L29_s1.jpg",
+      "line": "L29",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L29_s2.jpg",
+      "line": "L29",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L29_s3.jpg",
+      "line": "L29",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L29_s4.jpg",
+      "line": "L29",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L29_s5.jpg",
+      "line": "L29",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L30_s1.jpg",
+      "line": "L30",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L30_s2.jpg",
+      "line": "L30",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L30_s3.jpg",
+      "line": "L30",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L30_s4.jpg",
+      "line": "L30",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L30_s5.jpg",
+      "line": "L30",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L31_s1.jpg",
+      "line": "L31",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L31_s2.jpg",
+      "line": "L31",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L31_s3.jpg",
+      "line": "L31",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L31_s4.jpg",
+      "line": "L31",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L31_s5.jpg",
+      "line": "L31",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L32_s1.jpg",
+      "line": "L32",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L32_s2.jpg",
+      "line": "L32",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L32_s3.jpg",
+      "line": "L32",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L32_s4.jpg",
+      "line": "L32",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L32_s5.jpg",
+      "line": "L32",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L33_s1.jpg",
+      "line": "L33",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L33_s2.jpg",
+      "line": "L33",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L33_s3.jpg",
+      "line": "L33",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L33_s4.jpg",
+      "line": "L33",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L33_s5.jpg",
+      "line": "L33",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L34_s1.jpg",
+      "line": "L34",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L34_s2.jpg",
+      "line": "L34",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L34_s3.jpg",
+      "line": "L34",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L34_s4.jpg",
+      "line": "L34",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L34_s5.jpg",
+      "line": "L34",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L35_s1.jpg",
+      "line": "L35",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L35_s2.jpg",
+      "line": "L35",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L35_s3.jpg",
+      "line": "L35",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L35_s4.jpg",
+      "line": "L35",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L35_s5.jpg",
+      "line": "L35",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L36_s1.jpg",
+      "line": "L36",
+      "segment": "s1",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L36_s2.jpg",
+      "line": "L36",
+      "segment": "s2",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L36_s3.jpg",
+      "line": "L36",
+      "segment": "s3",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L36_s4.jpg",
+      "line": "L36",
+      "segment": "s4",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    },
+    {
+      "crop": "f81rzoom_L36_s5.jpg",
+      "line": "L36",
+      "segment": "s5",
+      "derived_from": "src_ark_12148_btv1b52509819x_f177_326_1285_3630_2243.jpg",
+      "region_native": "0,0,3630,2243 (full cached region)",
+      "max_width_native": 900,
+      "upscale": "3x LANCZOS after cutting (images/regen_f81r_crops.sh)",
+      "date": "27 Sept 2026"
+    }
+  ],
+  "crops_note": "MONT-4715, 27 Sept 2026: superseded an earlier --max-width 2400 attempt (prefix f81r_L*.jpg, 2 segments/line) after two independent blind Sonnet passes both declined to transcribe it as illegible; re-cut at --max-width 900 (5 segments/line) and upscaled 3x LANCZOS -- see images/regen_f81r_crops.sh and NOTES.md. The wide crops were deleted, not kept."
 }
