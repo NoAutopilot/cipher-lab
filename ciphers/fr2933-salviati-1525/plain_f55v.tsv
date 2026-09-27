@@ -5,37 +5,37 @@ line	pos	word	expanded	grade
 1	4	l'auiso|la		M
 1	5	+|via		M
 1	10	<none>		A
-2	5	Jo|<none>		M
+2	5	Jo		R3
 2	6	+|<none>		M
 2	7	d~ti|Jo		M
 2	8	+|drth		M
 2	9	a.s.		R
-2	10	+|a·s·		M
+2	10	+		R3
 2	11	M~tu		R
 2	12	+|M~tw		M
 3	11	Cosj|<none>		M
 3	12	+|<none>		M
-3	13	uolsn|Cosj		M
-3	14	+|uolsn		M
-3	15	nr		R
+3	13	Cosj		R3
+3	14	+		R3
+3	15	+		R3
 3	16	+		A
 3	17	si|m		M
-3	18	cotento|si		M
+3	18	si		R3
 3	19	+		A
 3	20	restassino|cotento		M
-3	21	+|restassino		M
+3	21	+		R3
 3	22	+		A
-3	23	ap	appresso	R
+3	23	+	appresso	R3
 3	24	+		A
 3	25	+|ap		M
 3	26	+		A
 4	1	<none>|presso		M
-4	2	presso		R
+4	2	+		R3
 4	3	+		A
 4	4	+		A
 4	5	dj	di	A
-4	6	+|mn		M
-4	7	mn	me	R
+4	6	+		R3
+4	7	mn	me	R3
 4	8	Purn|Purzn		M
 4	9	+		A
 4	10	bi		R
@@ -49,16 +49,16 @@ line	pos	word	expanded	grade
 5	18	to		A
 5	19	v.s.|v		M
 5	20	lo|s		M
-5	21	facy|lo		M
+5	21	lo		R3
 5	22	rifarz|facci		M
 5	24	<none>|rifar		M
-5	25	et	e	R
+5	25	+	e	R3
 5	26	+		A
 5	27	+		A
 5	28	+|et		M
-6	1	mi|mto		M
+6	1	mi		R3
 6	2	lo|lomandj		M
-6	3	mandj|<none>		M
+6	3	mandj		R3
 6	20	<none>		A
 7	14	<none>		A
 7	21	<none>		A
@@ -66,16 +66,16 @@ line	pos	word	expanded	grade
 8	21	Assaj	Assai	A
 8	22	+		A
 8	23	+		A
-8	24	Cose		R
-8	25	+|Cose		M
+8	24	+		R3
+8	25	+		R3
 8	26	+		A
 8	27	+		A
 8	29	<none>|nfran		M
 9	1	?|Cosj		M
 9	2	+		A
-9	3	mj	mi	R
+9	3	+	mi	R3
 9	4	+|mj		M
-9	5	hw|hn~		M
+9	5	hw		R3
 9	6	+		A
 9	7	<none>		R
 9	20	<none>		A
@@ -87,11 +87,11 @@ line	pos	word	expanded	grade
 11	5	<none>		A
 12	1	Sanza	Senza	A
 12	2	+		A
-12	3	questo		R
+12	3	+		R3
 12	4	+		A
 12	5	no|questo		M
 12	6	+		A
-12	7	si|no		M
+12	7	no		R3
 12	8	fara|si		M
 12	9	+		A
 12	10	<none>|fara		M
@@ -99,7 +99,7 @@ line	pos	word	expanded	grade
 12	12	<none>		R
 12	21	Jo		A
 12	22	penso		A
-12	23	che|c		M
+12	23	c		R3
 12	24	+		A
 12	25	+		A
 12	26	+		A
@@ -107,8 +107,8 @@ line	pos	word	expanded	grade
 14	2	<none>|E		M
 14	3	Stato	stato	A
 14	4	molto		A
-14	5	+|ad		M
-14	6	ad|proposito		M
+14	5	+		R3
+14	6	ad		R3
 14	7	<none>		R
 14	8	proposito		R
 14	9	<none>		A
@@ -119,7 +119,7 @@ line	pos	word	expanded	grade
 14	14	fare		A
 14	15	+		A
 14	16	intendere		A
-14	17	+|v		M
+14	17	+		R3
 14	18	+|s		M
 14	19	a.s.|M.tr		M
 14	25	M~tr|?		M
@@ -129,11 +129,11 @@ line	pos	word	expanded	grade
 16	27	<none>		A
 17	2	M~tv|E		M
 17	4	restato		R
-17	5	+|satisfatta		M
-17	6	satisfatto	satisfatto	R
+17	5	+		R3
+17	6	+	satisfatto	R3
 17	7	+		A
 17	8	+|p		M
-17	10	p|et		M
+17	10	p		R3
 17	11	quello		R
 17	12	+		A
 17	15	et|li		M
@@ -141,11 +141,11 @@ line	pos	word	expanded	grade
 17	17	ho|fatto		M
 17	18	fatto|intendere		M
 17	19	+		A
-17	20	intendere		R
+17	20	+		R3
 17	21	+		A
-18	1	p|parte		M
+18	1	p		R3
 18	2	parte		R
-18	3	+|d		M
+18	3	+		R3
 18	4	f.s.s.|s		M
 18	5	+|s		M
 18	8	La		A
@@ -153,7 +153,7 @@ line	pos	word	expanded	grade
 18	10	M~tr|Ces		M
 18	11	+		A
 18	12	Ces		R
-18	13	+|vtsiuorn		M
+18	13	+		R3
 18	14	vederann	vederanno	R
 18	15	+		A
 18	16	+		A

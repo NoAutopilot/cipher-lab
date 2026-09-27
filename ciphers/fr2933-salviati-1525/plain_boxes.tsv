@@ -469,37 +469,37 @@ f55v	1	3	ancora		A
 f55v	1	4	l'auiso|la		M
 f55v	1	5	+|via		M
 f55v	1	10	<none>		A
-f55v	2	5	Jo|<none>		M
+f55v	2	5	Jo		R3
 f55v	2	6	+|<none>		M
 f55v	2	7	d~ti|Jo		M
 f55v	2	8	+|drth		M
 f55v	2	9	a.s.		R
-f55v	2	10	+|a·s·		M
+f55v	2	10	+		R3
 f55v	2	11	M~tu		R
 f55v	2	12	+|M~tw		M
 f55v	3	11	Cosj|<none>		M
 f55v	3	12	+|<none>		M
-f55v	3	13	uolsn|Cosj		M
-f55v	3	14	+|uolsn		M
-f55v	3	15	nr		R
+f55v	3	13	Cosj		R3
+f55v	3	14	+		R3
+f55v	3	15	+		R3
 f55v	3	16	+		A
 f55v	3	17	si|m		M
-f55v	3	18	cotento|si		M
+f55v	3	18	si		R3
 f55v	3	19	+		A
 f55v	3	20	restassino|cotento		M
-f55v	3	21	+|restassino		M
+f55v	3	21	+		R3
 f55v	3	22	+		A
-f55v	3	23	ap	appresso	R
+f55v	3	23	+	appresso	R3
 f55v	3	24	+		A
 f55v	3	25	+|ap		M
 f55v	3	26	+		A
 f55v	4	1	<none>|presso		M
-f55v	4	2	presso		R
+f55v	4	2	+		R3
 f55v	4	3	+		A
 f55v	4	4	+		A
 f55v	4	5	dj	di	A
-f55v	4	6	+|mn		M
-f55v	4	7	mn	me	R
+f55v	4	6	+		R3
+f55v	4	7	mn	me	R3
 f55v	4	8	Purn|Purzn		M
 f55v	4	9	+		A
 f55v	4	10	bi		R
@@ -513,16 +513,16 @@ f55v	5	17	mi|<none>		M
 f55v	5	18	to		A
 f55v	5	19	v.s.|v		M
 f55v	5	20	lo|s		M
-f55v	5	21	facy|lo		M
+f55v	5	21	lo		R3
 f55v	5	22	rifarz|facci		M
 f55v	5	24	<none>|rifar		M
-f55v	5	25	et	e	R
+f55v	5	25	+	e	R3
 f55v	5	26	+		A
 f55v	5	27	+		A
 f55v	5	28	+|et		M
-f55v	6	1	mi|mto		M
+f55v	6	1	mi		R3
 f55v	6	2	lo|lomandj		M
-f55v	6	3	mandj|<none>		M
+f55v	6	3	mandj		R3
 f55v	6	20	<none>		A
 f55v	7	14	<none>		A
 f55v	7	21	<none>		A
@@ -530,16 +530,16 @@ f55v	7	30	<none>		A
 f55v	8	21	Assaj	Assai	A
 f55v	8	22	+		A
 f55v	8	23	+		A
-f55v	8	24	Cose		R
-f55v	8	25	+|Cose		M
+f55v	8	24	+		R3
+f55v	8	25	+		R3
 f55v	8	26	+		A
 f55v	8	27	+		A
 f55v	8	29	<none>|nfran		M
 f55v	9	1	?|Cosj		M
 f55v	9	2	+		A
-f55v	9	3	mj	mi	R
+f55v	9	3	+	mi	R3
 f55v	9	4	+|mj		M
-f55v	9	5	hw|hn~		M
+f55v	9	5	hw		R3
 f55v	9	6	+		A
 f55v	9	7	<none>		R
 f55v	9	20	<none>		A
@@ -551,11 +551,11 @@ f55v	11	4	<none>		A
 f55v	11	5	<none>		A
 f55v	12	1	Sanza	Senza	A
 f55v	12	2	+		A
-f55v	12	3	questo		R
+f55v	12	3	+		R3
 f55v	12	4	+		A
 f55v	12	5	no|questo		M
 f55v	12	6	+		A
-f55v	12	7	si|no		M
+f55v	12	7	no		R3
 f55v	12	8	fara|si		M
 f55v	12	9	+		A
 f55v	12	10	<none>|fara		M
@@ -563,7 +563,7 @@ f55v	12	11	<none>		R
 f55v	12	12	<none>		R
 f55v	12	21	Jo		A
 f55v	12	22	penso		A
-f55v	12	23	che|c		M
+f55v	12	23	c		R3
 f55v	12	24	+		A
 f55v	12	25	+		A
 f55v	12	26	+		A
@@ -571,8 +571,8 @@ f55v	13	21	<none>		A
 f55v	14	2	<none>|E		M
 f55v	14	3	Stato	stato	A
 f55v	14	4	molto		A
-f55v	14	5	+|ad		M
-f55v	14	6	ad|proposito		M
+f55v	14	5	+		R3
+f55v	14	6	ad		R3
 f55v	14	7	<none>		R
 f55v	14	8	proposito		R
 f55v	14	9	<none>		A
@@ -583,7 +583,7 @@ f55v	14	13	<none>		A
 f55v	14	14	fare		A
 f55v	14	15	+		A
 f55v	14	16	intendere		A
-f55v	14	17	+|v		M
+f55v	14	17	+		R3
 f55v	14	18	+|s		M
 f55v	14	19	a.s.|M.tr		M
 f55v	14	25	M~tr|?		M
@@ -593,11 +593,11 @@ f55v	15	16	<none>		A
 f55v	16	27	<none>		A
 f55v	17	2	M~tv|E		M
 f55v	17	4	restato		R
-f55v	17	5	+|satisfatta		M
-f55v	17	6	satisfatto	satisfatto	R
+f55v	17	5	+		R3
+f55v	17	6	+	satisfatto	R3
 f55v	17	7	+		A
 f55v	17	8	+|p		M
-f55v	17	10	p|et		M
+f55v	17	10	p		R3
 f55v	17	11	quello		R
 f55v	17	12	+		A
 f55v	17	15	et|li		M
@@ -605,11 +605,11 @@ f55v	17	16	si|ho		M
 f55v	17	17	ho|fatto		M
 f55v	17	18	fatto|intendere		M
 f55v	17	19	+		A
-f55v	17	20	intendere		R
+f55v	17	20	+		R3
 f55v	17	21	+		A
-f55v	18	1	p|parte		M
+f55v	18	1	p		R3
 f55v	18	2	parte		R
-f55v	18	3	+|d		M
+f55v	18	3	+		R3
 f55v	18	4	f.s.s.|s		M
 f55v	18	5	+|s		M
 f55v	18	8	La		A
@@ -617,7 +617,7 @@ f55v	18	9	+|M.tr		M
 f55v	18	10	M~tr|Ces		M
 f55v	18	11	+		A
 f55v	18	12	Ces		R
-f55v	18	13	+|vtsiuorn		M
+f55v	18	13	+		R3
 f55v	18	14	vederann	vederanno	R
 f55v	18	15	+		A
 f55v	18	16	+		A
@@ -805,23 +805,23 @@ f56v	1	5	Truono		A
 f56v	1	6	+		A
 f56v	1	7	g		R
 f56v	1	8	Truono		R
-f56v	1	9	g		R
+f56v	1	9	[C]		R3
 f56v	1	28	li|?		M
 f56v	2	17	[C]		A
 f56v	2	29	parmj|parmi		M
 f56v	3	2	q~|che		M
 f56v	3	3	si		R
-f56v	3	4	sia		R
+f56v	3	4	+		R3
 f56v	3	5	+		A
 f56v	3	6	fatto		A
 f56v	3	7	gra~	gran	R
-f56v	3	8	gra	gran	R
+f56v	3	8	gra	gran	R3
 f56v	3	9	Torto		R
-f56v	3	10	Torto|+		M
+f56v	3	10	+		R3
 f56v	3	11	+		A
 f56v	3	27	<none>		A
 f56v	3	31	<none>|?		M
-f56v	4	28	Et		R
+f56v	4	28	[C]		R3
 f56v	5	8	[C]		A
 f56v	5	10	[C]		A
 f56v	5	12	[C]		A
@@ -830,19 +830,19 @@ f56v	6	2	faria	farebbe	R
 f56v	6	3	+		A
 f56v	6	4	benn	bene	R
 f56v	6	5	+		A
-f56v	6	6	forst	forse	R
+f56v	6	6	for	forse	R3
 f56v	6	7	+		A
 f56v	6	8	da		R
-f56v	7	1	<none>		R
-f56v	7	8	?		R
-f56v	8	1	<none>		R
+f56v	7	1	<none>		R3
+f56v	7	8	[C]		R3
+f56v	8	1	<none>		R3
 f56v	8	13	a		R
 f56v	8	25	[C]		A
 f56v	8	29	b|?		M
-f56v	9	1	<none>		R
-f56v	9	2	<none>		R
+f56v	9	1	<none>		R3
+f56v	9	2	<none>		R3
 f56v	9	6	e|?		M
-f56v	9	7	?		R
+f56v	9	7	[C]		R3
 f56v	9	9	<none>|?		M
 f56v	9	22	Potem		A
 f56v	9	23	+		A
@@ -850,19 +850,19 @@ f56v	9	24	luarn|lenar		M
 f56v	9	25	+		A
 f56v	9	26	+		A
 f56v	9	27	leter		R
-f56v	9	28	loro|+		M
+f56v	9	28	+		R3
 f56v	9	29	+		A
 f56v	9	30	+		A
 f56v	10	1	cito		R
-f56v	10	2	tutto|+		M
+f56v	10	2	+		R3
 f56v	10	3	?|d		M
-f56v	10	4	<none>		R
+f56v	10	4	<none>		R3
 f56v	10	5	tutto		A
 f56v	10	6	+		A
 f56v	10	7	[C]		A
-f56v	11	4	<none>		R
+f56v	11	4	<none>		R3
 f56v	11	15	fare|P		M
-f56v	11	16	fare		R
+f56v	11	16	+		R3
 f56v	11	17	+		A
 f56v	11	18	quali|qualche		M
 f56v	11	19	+		A
@@ -875,11 +875,11 @@ f56v	12	5	+		A
 f56v	12	6	con		A
 f56v	12	7	+		A
 f56v	12	8	e|?		M
-f56v	12	9	n|?		M
+f56v	12	9	n		R3
 f56v	12	10	fev|+		M
 f56v	12	12	h|?		M
-f56v	12	19	?		R
-f56v	13	1	?		R
+f56v	12	19	[C]		R3
+f56v	13	1	[C]		R3
 f56v	14	4	Pure		R
 f56v	14	5	+		A
 f56v	14	6	questo		A
@@ -888,23 +888,23 @@ f56v	14	8	hanno		A
 f56v	14	9	+		A
 f56v	14	10	detto		A
 f56v	14	11	+		A
-f56v	14	12	poi|p		M
-f56v	14	13	ricordo		R
+f56v	14	12	p		R3
+f56v	14	13	ri		R3
 f56v	14	14	+		A
-f56v	14	15	+		R
+f56v	14	15	+		R3
 f56v	14	17	et		A
 f56v	14	18	no		A
 f56v	14	19	poi|<none>		M
-f56v	14	20	pot	poter	R
-f56v	14	21	sono		R
-f56v	14	22	uo	vo	R
+f56v	14	20	+	poter	R3
+f56v	14	21	+		R3
+f56v	14	22	uo	vo	R3
 f56v	15	1	glino		R
-f56v	15	2	+		R
+f56v	15	2	+		R3
 f56v	15	3	+		R
 f56v	15	4	metterlo		A
 f56v	15	5	+		A
 f56v	15	19	re|S		M
-f56v	15	21	m|ny		M
+f56v	15	21	m		R3
 f56v	16	1	risponde|risponda		M
 f56v	16	2	+		A
 f56v	16	3	+		A
@@ -931,7 +931,7 @@ f56v	16	23	piace		R
 f56v	16	24	+		A
 f56v	16	25	+		A
 f56v	17	1	a		A
-f56v	17	2	questa		R
+f56v	17	2	questa		R3
 f56v	17	3	ad		R
 f56v	17	4	secondo		R
 f56v	17	5	seconda		R
@@ -946,7 +946,7 @@ f56v	17	13	pensare		R
 f56v	17	14	+		A
 f56v	17	15	il		R
 f56v	17	16	modo		R
-f56v	17	17	+		R
+f56v	17	17	+		R3
 f56v	17	18	+		A
 f56v	17	19	come		R
 f56v	17	20	+		R
@@ -956,22 +956,22 @@ f56v	17	23	+		A
 f56v	18	1	habbi		A
 f56v	18	2	+		A
 f56v	18	3	+		A
-f56v	18	4	ad		R
+f56v	18	4	ad		R3
 f56v	18	5	a|accociarm		M
 f56v	18	6	+		A
-f56v	18	7	co|+		M
+f56v	18	7	+		R3
 f56v	18	8	+		A
 f56v	18	9	+		A
 f56v	18	10	ian|+		M
-f56v	18	11	?|+		M
+f56v	18	11	+		R3
 f56v	18	12	Altrimenti		R
-f56v	18	13	Alcuno|+		M
+f56v	18	13	+		R3
 f56v	18	14	+		A
 f56v	18	15	+		A
 f56v	18	16	+		A
 f56v	18	17	+		A
 f56v	18	18	<none>		R
-f56v	18	23	questa		R
+f56v	18	23	[C]		R3
 f56v	18	24	mattina		R
 f56v	18	25	questo|+		M
 f56v	18	26	+		A
@@ -986,22 +986,22 @@ f56v	19	4	Come		A
 f56v	19	5	+		A
 f56v	19	6	molto		A
 f56v	19	7	+		A
-f56v	19	8	ad		R
+f56v	19	8	ad		R3
 f56v	19	9	lungo		R
 f56v	19	10	+		A
 f56v	19	11	+		A
 f56v	19	12	E|el		M
-f56v	19	13	+		R
+f56v	19	13	+		R3
 f56v	19	14	gra	gran	R
 f56v	19	15	Cancellhiero		R
 f56v	19	16	+		A
-f56v	19	17	+		R
-f56v	19	18	+		R
-f56v	19	19	+		R
-f56v	19	20	+		R
-f56v	19	21	et	Et	R
+f56v	19	17	+		R3
+f56v	19	18	+		R3
+f56v	19	19	+		R3
+f56v	19	20	+		R3
+f56v	19	21	et	Et	R3
 f56v	19	22	habbiamo		R
-f56v	19	23	habbiamo|+		M
+f56v	19	23	+		R3
 f56v	19	24	+		A
 f56v	19	25	+		A
 f56v	19	26	+		A

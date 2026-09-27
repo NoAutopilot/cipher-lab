@@ -2975,3 +2975,124 @@ key-recovery objective and score them separately, or merge them back to a bounde
 by rough shape rather than one-per-box, trading the fabricated-symbol risk this job's own hapax fix was written to
 avoid against the search-difficulty cost it turns out to add) before any further cm target run on the corrected
 split. Never write "reading ready".
+
+## SALV2-J3: f55v/f56v plain boxes re-settled from the image (27 Sept 2026, LANE SALV2)
+
+Worker SALV2-J3 (Sonnet), 03:13-03:5x UTC, brief `.claude/briefs/runs/2026-09-27-lane-salv2-ytbiz-j3-resettle.md`.
+Job 3 (reserve): re-settles f55v's and f56v's R/M-graded plain boxes (settled by SALV-PLAIN1/2 from pass
+confidence, never from the image) against a matched control of A-graded (both-pass-agreed) boxes, with a fresh,
+blind third read. No decoding, no family run, no sign reading.
+
+**U0.** `images/f55v_ref2400.jpg`/`f56v_ref2400.jpg` and `plain_crops/{f55v,f56v}/*.png` were not on disk (working
+files, not committed, per SALV-PLAIN1/2/3's own precedent). Fetched (2 gallica.bnf.fr requests, one connection-reset
+on f55v retried once after a pause per the good-citizen rule, then succeeded):
+```
+curl -sS -A "Mozilla/5.0" "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90600674/f57/pct:0,0,50,100/2400,/0/default.jpg" -o images/f55v_ref2400.jpg
+curl -sS -A "Mozilla/5.0" "https://gallica.bnf.fr/iiif/ark:/12148/btv1b90600674/f58/pct:0,0,50,100/2400,/0/default.jpg" -o images/f56v_ref2400.jpg
+python3 crop_plain_leaf.py f55v   # 19 line crops, 165 plain boxes marked
+python3 crop_plain_leaf.py f56v   # 19 line crops, 201 plain boxes marked (was 207: SALV2-J1B's own transcription
+                                   # already converted 6 of f56v's A-graded [C]-flagged boxes to real sign codes
+                                   # (line,pos 2:17, 5:8, 5:10, 5:12, 8:25, 10:7) -- verified none of the 6 were
+                                   # among f56v's R/M target rows, all were grade A, so the target set is unaffected)
+```
+
+**Design (per brief, SALV-SPLIT's rule 3 shape).** TARGET = every plain box graded R or M in `plain_boxes.tsv`
+(f55v 86 = 24 R + 62 M; f56v 106 = 69 R + 37 M, unaffected by the 6-box conversion above). CONTROL = an equal-size
+sample of that leaf's A-graded rows, seed 20260927(f55v)/20260928(f56v) -- **both leaves have fewer A rows than
+target rows** (f55v 79 A vs 86 target; f56v 94 A vs 106 target, after excluding the 6 converted-to-sign rows from
+the 100 nominal A rows), so per the brief's own fallback, CONTROL = all remaining A rows for both leaves (no
+sampling actually needed). Recorded in `resettle_sample.json` (seed, target list, control list per leaf), same
+shape as SALV-SPLIT's `split_check_sample.json`. Both sets sent to the reader unlabelled, interleaved in line
+order (target and control are just labels on positions within a line; the crop itself marks every plain box on
+the leaf identically, so a sampled position is visually indistinguishable from any other).
+
+**U1, 2 Sonnet subagent calls** (one per leaf, f55v 165 positions, f56v 200 positions), each given only that
+leaf's 19 line crops + `glyphs/atlas_part1.png`/`atlas_part2.png`, asked for verdict (word/sign/mixed/blank), the
+word as written (abbreviation marks kept as drawn) if a word, nearest atlas code if a sign, confidence H/M/L --
+no box label, flag, or prior reading shown. **Both calls returned full coverage on the first pass, 0 follow-ups**
+(165/165 and 200/200 positions covered, verified against the request lists programmatically).
+
+**Method problem found and corrected: the `+` continuation convention.** `build_ciphertext_with_plain.py`'s own
+docstring says a plain word spanning more than one detected box records its full text at the box where it starts
+and marks every subsequent box of the same word `+` ("continuation rows folded [dropped]... boxes with no
+legible ink `<none>`"). Neither this job's own prompt to the fresh readers, nor (per `recon_plain_{f55v,f56v}/
+disagreements.tsv`) SALV-PLAIN1/2's original passes uniformly, communicated this convention -- pass A and pass B
+themselves sometimes disagree on whether a given box is `+` (continuation) or an independently-legible letter
+(e.g. f56v line1 pos7: pass A `+`, pass B `g`). A naive box-level string comparison of the fresh read against the
+literal agreed value therefore scores almost every `+` position as a "miss" even when the fresh reader correctly
+read the tail-end ink of the right word, since it was never told `+` was a valid answer. This was only found after
+computing an implausibly low raw control-agreement figure (8/79 = 10.1% for f55v, 6/94 = 6.4% for f56v) and
+tracing several "misses" back to `agreed == '+'`. **Fix applied, reported honestly rather than smoothed over
+(CLAUDE.md rule 3):** for every `+`-graded position, resolved the "effective" comparison target by walking
+backward within the same line to the nearest non-`+`/non-`<none>` word (the word this box is physically part of),
+and counted a match when the fresh reader's own word is a normalised substring of (or contains) that parent word.
+Both the naive strict figure and this corrected ("loose") figure are reported below; the loose figure is the one
+that should stand as "the fresh reader's reliability on this leaf" per the brief.
+
+**Control table** (rule 3's transcription-control shape, normalised per CLAUDE.md rule 3/PX-BRODEC: lowercase,
+u/v and i/j folded, abbreviation marks compared as marks, `<none>`/`[C]`/`?` compared as their own categories):
+
+| leaf | control n (all A rows -- fewer than target) | strict agreement | loose (`+`-aware) agreement | control sign-rate |
+|---|---|---|---|---|
+| f55v | 79 | 8/79 = 10.1% | 32/79 = 40.5% | 30/79 = 38.0% |
+| f56v | 94 | 6/94 = 6.4% | 49/94 = 52.1% | 2/94 = 2.1% |
+
+f55v's control sign-rate (38.0%) is far above f56v's (2.1%) and above every SALV-SPLIT per-leaf control rate
+(0.0-29.5%). Of the 30 f55v control positions the fresh reader called `sign`, 22 sit at positions the *original*
+two passes had both called `<none>` (agreed-blank, grade A by agreement-on-blankness) rather than `[C]`
+(agreed-cipher) -- i.e. f55v's difficulty manifests as the original passes calling hard, sign-like ink "no legible
+ink" rather than flagging it cipher, which is exactly why SALV-SPLIT's own `[C]`-flag method found **zero**
+candidates on f55v (it never had any `[C]` flags to check, per this job's own brief). Spot-checked two of these
+clusters directly from the image (not scripted, this worker's own read): `plain_crops/f55v/L07.png` positions
+14/21/30 and `L09.png` positions 20/24/28 both sit in dense fields of atlas-glyph-like ink (loops, hooks, `#`/`w`/
+`y`-shaped marks), not blank space and not ordinary Italian letterforms -- consistent with the fresh reader's
+`sign` calls, not with the original `<none>` grade. **This is a real diagnostic finding for the lane**, not
+control noise: f55v's never-flagged "blank" plain boxes may hide real, un-flagged sign content that SALV-SPLIT's
+own [C]-flag-based method structurally cannot find (it only samples boxes at least one pass called cipher).
+Named next step: a `[C]`-flag-style crop-check specifically on f55v's `<none>`-graded A rows (not just its R/M
+rows), which this job's own budget/box did not allow.
+
+**Target reconciliation.** For each R/M target row, compared the fresh read against `recon_plain_<leaf>/
+disagreements.tsv`'s own pass-A/pass-B raw values (not the confidence-settled value in `plain_boxes.tsv`, which is
+exactly what this job exists to re-check), using the same strict-or-`+`-aware-substring match rule as the control.
+Where the fresh read matched pass A or pass B (2-of-3), grade **R3** and write the matched value (or `+` if the
+match was `+`-aware/continuation-shaped, keeping the existing pipeline convention); where it matched neither, left
+the row at its existing grade (R or M) -- **not** demoted, since a 3-way non-match under this design is as likely
+to be the `+`-segmentation ambiguity as a wrong original reading, and rule 3 forbids treating a non-test as a
+negative.
+
+| leaf | target n | R3 (2-of-3, upgraded, written) | unresolved (kept at existing R/M grade) | target sign-rate | control sign-rate |
+|---|---|---|---|---|---|
+| f55v | 86 | 32 (37.2%) | 54 | 20/86 = 23.3% | 30/79 = 38.0% |
+| f56v | 106 | 43 (40.6%) | 63 | 22/106 = 20.8% | 2/94 = 2.1% |
+
+f56v's target sign-rate (20.8%) sits **10x its own control's** (2.1%) -- a real excess, the SALV-SPLIT shape,
+naming genuine split candidates (below). f55v's target sign-rate (23.3%) is actually *below* its own control's
+(38.0%) -- no excess on f55v; the elevated control figure is explained by the `<none>`-graded diagnostic finding
+above, not by an unusually clean target set.
+
+**Split candidates (f56v only, not written into any `ciphertext_*.tsv` per the brief).** 7 of f56v's R3-upgraded
+rows are positions where one original pass had already called the box `[C]` (cipher) and the fresh reader
+*independently* classified it `sign` with a specific atlas-code guess -- a 2-of-3 agreement that this box is not
+plain Italian: (line 1, pos 9, atlas guess `g`), (4, 28, `unclear`), (7, 8, `e`), (9, 7, `a`), (12, 19, `Z`), (13, 1,
+`]`), (18, 23, `y`). f55v has none (it carried no `[C]` flags among its target rows to begin with, consistent with
+SALV-PLAIN1's own note). These 7 are flagged for whoever next extends SALV-SPLIT's crop-check/candidate-spec
+method to f56v's remaining unresolved rows, not silently promoted to sign here.
+
+**Write-back.** `plain_boxes.tsv`, `plain_f55v.tsv`, `plain_f56v.tsv`: 75 rows changed (32 f55v + 43 f56v) to
+grade `R3` with the corroborated word (or `+`), byte-diffed line-by-line preserving each file's own existing line
+terminator (the files mix CRLF and LF across rows from earlier sessions; a first attempt normalised the whole
+file to LF and was reverted before committing, since it inflated the diff to every row instead of the 75 that
+actually changed). `python3 build_ciphertext_with_plain.py --check` and `python3 build_spec.py --check` both exit
+0 (2932 tokens/251 types/327 runs, unchanged -- the spec does not read plain words, only `build_ciphertext_with_plain.py`
+does). No `ciphertext_<leaf>.tsv`, spec, or split-candidate file touched.
+
+Files: `resettle_sample.json` (committed: seeds, target/control box lists, the f56v-exclusion note), `plain_boxes.tsv`
+/ `plain_f55v.tsv` / `plain_f56v.tsv` (75 rows to grade R3), `ciphertext_with_plain.txt` (rebuilt). `plain_crops/f55v,
+f56v/*.png` and `images/f55v_ref2400.jpg`/`f56v_ref2400.jpg` are working files, not committed (folder-size rule,
+`.git/info/exclude`), along with a `resettle/` scratch directory (target/control/fresh-read intermediate TSVs kept
+locally for this session only, superseded by `resettle_sample.json`'s committed record).
+
+No decoding, no family run, no reading of signs, no "solved"/"new"/"first"/"unpublished", no owner name, no
+credentials. Requests: gallica.bnf.fr 2 (1 connection-reset retried once). Subagents: 2, 0 follow-ups. Well under
+the USD 14 cap and the 60-minute box (about 42 minutes elapsed at write-up). Status stays **partial**.
