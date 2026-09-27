@@ -19,8 +19,8 @@ more accounts join.
 
 | Target | Kind | Why it is in | Daily budget USD | Runner trigger |
 |---|---|---|---|---|
-| armstrong-madison-1808 (trigger trig_01D5cb4ja2EhZiYPmjGUoLDX (bound to session_01H27tXgYoK6tVYXUGAN1h5T), :25) | campaign | the letter from the S. Tomokiyo thread; the owner's Codex session's attempts fold in as prior steps | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
-| espagnol142-mercy-1648 (trigger trig_01DioitDVNdFvdBeUpaNz1pd (bound to session_01TrimUWpSxSyUXp7w7FEMfR), :35) | campaign | furthest along: key evidence, register-matched judge corpus, DECODE ruled out, archive copy on order (a branch, not the state) | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
+| armstrong-madison-1808 (account 2: runner session_013E5jUS9GV1AsxLeUcwgbf6, trigger trig_01S4q7kbGj2GW5TEHmhF5hx1 hourly :10; the owner-account runner session_01H27tXgYoK6tVYXUGAN1h5T finishes its H7 step and retires) | campaign | the letter from the S. Tomokiyo thread; the owner's Codex session's attempts fold in as prior steps | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
+| espagnol142-mercy-1648 (account 2: runner session_01V7xEY9JxjCxiXnQLtjFnfL, trigger trig_017pGBT4urg9g4boaD3f1VcK hourly :10; the owner-account runner retired unused 22:28) | campaign | furthest along: key evidence, register-matched judge corpus, DECODE ruled out, archive copy on order (a branch, not the state) | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
 | fr4715-f61-mayenne-1592 (trigger trig_018p5Y75bmcRKCKQkyMpCqSm (bound to session_01UgTmQhR7wFtVFrTVdtsq9i), :45) | campaign | Mayenne key on disk (25 rows), Tomokiyo's five read spans as the known answer, calibration in progress | 40 | hourly (minute 25 / 35 / 45), the account's default model; first firing after the seed lands |
 | spinelli-beinecke-c1515 (trigger trig_01JyLt8CeZV2pbpzNPUxBUYG (bound to session_016fvFiTTAhQng2VqbiBDmRE), :55) | campaign | Domnina 2015 key (Tomokiyo's own table on disk, 45 rows), one phrase read by Tomokiyo; gate passed 20:09, seeded 20:46 | 40 | hourly at :55 |
 
@@ -40,3 +40,7 @@ more accounts join.
 | 27 Sept 21:45 | espagnol142-mercy-1648 | 0 (runner fired 20:35 and 21:35, same) | 0 | 8 / 0 / 0 | 0 |
 | 27 Sept 21:45 | fr4715-f61-mayenne-1592 | 0 (runner fired 20:46, same) | 0 | 10 / 0 / 0 | 0 |
 | 27 Sept 21:45 | spinelli-beinecke-c1515 | 0 (seed 20:57, 9 hypotheses; runner fired 20:55 before the seed, same) | 0 | 9 / 0 / 0 | 0 |
+| 27 Sept 22:30 | armstrong-madison-1808 | 1 done (H1: the Codex key-image claim never reached GitHub; PR 50 located the Livingston 1803 key frames), H7 running (fetch and hash those frames) | 1 | 12 / 1 / 0 | 0 |
+| 27 Sept 22:30 | espagnol142-mercy-1648 | 1 done (H1: the anneal's target sits inside an exact-frequency-profile control band, so the earlier gap was the profile, not decryptability; tools/homophonic_anneal.py --profile added) | 3 | 9 / 1 / 0 | 0 |
+| 27 Sept 22:30 | fr4715-f61-mayenne-1592 | 1 done (H1: class map 24/55 vs shuffled max 19/55, unstable between folds), H11 null-aware refit fired 22:27 | 1 | 11 / 1 / 0 | 0 |
+| 27 Sept 22:30 | spinelli-beinecke-c1515 | 1 done (H1: the two remaining canvases fetched; cipher is about 9 lines on p.1 plus two lines on p.2, about 55 signs; address leaf clean), next step fired 22:27 | 0.5 | 10 / 1 / 0 | 0 |
