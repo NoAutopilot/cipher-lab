@@ -8,9 +8,10 @@
 
 Instead of aligning a clerk letter stream to a cipher stream after the fact (interlinear_align.py's DP), each blind
 pass reads, per cipher sign, the gloss letters the clerk wrote directly above it: the pairing is read off the page.
-Two passes (A, B) per line; sign sequences are aligned with difflib. A (sign, clerk) pair is used for the key only
-where both passes gave the same sign id AND the same clerk letters (normalized: lower case, j->i, v->u, letters
-only; '-' = nothing written above). Stretches where the passes differ keep pass A's tokens in the merged ciphertext
+Two passes (A, B) per line; sign sequences are aligned with difflib. The two passes pair gloss and signs at different offsets (VB-KEY: only
+9 of 328 merged positions agree on both sign and gloss), so the key uses every pass row as one observation (normalized:
+lower case, j->i, v->u, letters only; '-' = nothing written above) and takes the majority per sign; the hold-out
+below, not the pairing, is the test. Stretches where the passes differ keep pass A's tokens in the merged ciphertext
 (ties to A, the VB-KP rule without confidences) but give no key evidence.
 Key rule: per sign, value = the clerk reading attested most often; count and agreement (share of the majority) kept,
 with the f.260 line numbers. A sign never attested keeps its v2 row (count 0). A sign whose majority is '-' in 2 or
@@ -55,6 +56,13 @@ def read_pass(p):
     return lines
 
 
+def gloss_copy(line):
+    """A pass line whose sign column mostly repeats its own gloss column read the gloss row as cipher (seen on f.260
+    line 5, pass A: 'p=p r=r e=e t=t ...'). Such a pass line is dropped; the other pass stands alone."""
+    same = sum(1 for s, c in line if s.isalpha() and norm(s) == norm(c))
+    return bool(line) and same / len(line) > 0.25
+
+
 def merge_rows():
     A, B = collections.defaultdict(list), collections.defaultdict(list)
     for p in PASSES:
@@ -62,6 +70,7 @@ def merge_rows():
     rows = []
     for n in sorted(set(A) | set(B)):
         a, b = A.get(n, []), B.get(n, [])
+        a, b = (x if not gloss_copy(x) else [] for x in (a, b))
         sm = difflib.SequenceMatcher(a=[s for s, _ in a], b=[s for s, _ in b], autojunk=False)
         pos = 0
         for op, i1, i2, j1, j2 in sm.get_opcodes():
@@ -104,14 +113,19 @@ def merge_texts(rows):
     return "\n".join(ciph) + "\n", "\n".join(plain) + "\n", "\n".join(al) + "\n"
 
 
-def pairs(rows, skip=None):
+def pairs(rows=None, skip=None):
+    """(sign, clerk value, line) observations: every row of every pass (each pass's own reading of which gloss letters
+    stand above which sign), gloss-copy pass lines dropped, '?' signs or glosses dropped. The line `skip` is left out
+    (both passes) for the hold-out. `rows` is unused (kept for the call sites)."""
     out = []
-    for n, p, s, ca, cb, g in rows:
-        if g != "AB" or n == skip:
-            continue
-        va, vb = norm(ca), norm(cb)
-        if va == vb and va != "" and "?" not in ca + cb:
-            out.append((s, va, n))
+    for p in PASSES:
+        for n, line in read_pass(p).items():
+            if n == skip or gloss_copy(line):
+                continue
+            for s, c in line:
+                v = norm(c)
+                if s != "?" and "?" not in c and v != "":
+                    out.append((s, v, n))
     return out
 
 
@@ -162,7 +176,7 @@ def build(prs):
 def key_text(k):
     head = ("# Bongars cipher no.3 (fr.7129 f.275) key re-derived from the clerk's interlinear decipherment of the sibling\n"
             "# f.260r (VB-KEY, 27 Sept 2026; sibling/kp_key_v3.py key). Grade C: every attested value is the clerk's. Columns\n"
-            "# 1-7 as key_f275_v2.tsv (decode_f275.py reads them); count = pairs where both passes agree on sign and gloss;\n"
+            "# 1-7 as key_f275_v2.tsv (decode_f275.py reads them); count = pass observations (each pass's own sign/gloss pairing);\n"
             "# agree = share of the majority value; lines = f.260 lines attesting it; flag: confirmed / changed (clerk\n"
             "# contradicts v2) / v2-unclear (v2 had it unclear or blank, clerk gives another value) / confirmed-unclear /\n"
             "# new (sign absent from v2) / v2-kept (never attested by the clerk: v2's value kept). unclear=1 when count 1 or\n"
@@ -218,6 +232,107 @@ def holdout():
         print(f"  f258 line {n}: {m}/{lc} ({100 * m / max(lc, 1):.0f}%)")
 
 
+# ---- hard-EM alignment (VB-KEY, second instrument) ------------------------------------------------------------------
+# Each observation is one line: a sign sequence and the clerk's letter stream for that line (f.260: each pass line,
+# its own gloss column joined; f.258: VB-KP's merged ciphertext and merged clerk text). A DP gives each sign a chunk
+# of the letters -- 0 or 1 letter for a letter-shaped sign (2 for the syllable signs), 0-12 for a number -- scored by
+# how often that sign read that chunk elsewhere (v2's value seeds the first round with weight 1). Six rounds. The
+# held-out line never enters the counts that decode it.
+import math
+
+def observations():
+    obs = []
+    for p in PASSES:
+        for n, line in read_pass(p).items():
+            if gloss_copy(line):
+                continue
+            s = [x for x, _ in line if x != "?"]
+            c = "".join(norm(g) for _, g in line if norm(g) not in ("-",) and "?" not in g)
+            obs.append((("260", n), s, c))
+    l258, c258 = cc.load(HERE / "ciphertext_f258.txt", HERE / "plaintext_f258.txt")
+    for n, toks in l258.items():
+        obs.append((("258", n), [t for t in toks if t != "?"], cc.norm(c258.get(n, ""))))
+    return obs
+
+
+def maxlen(s):
+    return 12 if NUM.match(s) and len(s.lstrip("^")) > 1 else (2 if len(s) > 1 and s.isalpha() else 1)
+
+
+def align(sig, let, cnt, tot):
+    n, m = len(sig), len(let)
+    NEG = -1e18
+    best = [[NEG] * (m + 1) for _ in range(n + 1)]
+    back = [[0] * (m + 1) for _ in range(n + 1)]
+    best[0][0] = 0.0
+    for i in range(n):
+        s = sig[i]
+        ml = maxlen(s)
+        for j in range(m + 1):
+            b = best[i][j]
+            if b <= NEG:
+                continue
+            for k in range(0, ml + 1):
+                if j + k > m:
+                    break
+                ch = let[j:j + k]
+                c = cnt.get(s, {}).get(ch, 0)
+                sc = math.log((c + 0.1) / (tot.get(s, 0) + 3.0)) + (math.log(0.15) if k == 0 else 0)
+                if b + sc > best[i + 1][j + k]:
+                    best[i + 1][j + k], back[i + 1][j + k] = b + sc, k
+    # letters left over at the end are allowed (clerk may run past the last sign read): take the best end column
+    j = max(range(m + 1), key=lambda jj: best[n][jj] - 2.0 * (m - jj))
+    out = []
+    for i in range(n, 0, -1):
+        k = back[i][j]
+        out.append((sig[i - 1], let[j - k:j] if k else "-"))
+        j -= k
+    return out[::-1]
+
+
+def em_pairs(skip=None, rounds=6):
+    obs = [o for o in observations() if o[0] != skip]
+    cnt, tot = collections.defaultdict(collections.Counter), collections.Counter()
+    for s, r in v2_rows().items():
+        if r[1] not in ("", "?"):
+            cnt[s][norm(r[1])] += 1
+            tot[s] += 1
+    for _ in range(rounds):
+        prs = [(s, v, key[1]) for key, sig, let in obs for s, v in align(sig, let, cnt, tot)]
+        cnt, tot = collections.defaultdict(collections.Counter), collections.Counter()
+        for s, v, _ in prs:
+            cnt[s][v] += 1
+            tot[s] += 1
+    return prs
+
+
+def holdout_em():
+    obs = observations()
+    tm = tc = 0
+    shuf = [0] * dec.N_SHUF
+    for key_, sig, let in obs:
+        if key_[0] == "258":
+            k = as_key(build(em_pairs(skip=key_)))
+        else:  # leave the line out of both passes
+            k = as_key(build([p for p in em_pairs(skip=key_) if True]))
+        one, c = {0: sig}, {0: let}
+        per = cc.score(one, c, k)[3]
+        m, lc = per[0][1], per[0][2]
+        rnd = random.Random(dec.SEED)
+        sl = []
+        for i in range(dec.N_SHUF):
+            x = cc.score(one, c, dec.shuffled(k, rnd))[3][0][1]
+            shuf[i] += x
+            sl.append(x / max(lc, 1))
+        tm, tc = tm + m, tc + lc
+        mu, sd = statistics.mean(sl), statistics.pstdev(sl) or 1e-9
+        print(f"  {key_[0]} line {key_[1]}: {m}/{lc} = {m / max(lc, 1):.3f}; shuffled {mu:.3f}+-{sd:.3f}; z {(m / max(lc,1) - mu) / sd:.2f}")
+    sa = [x / tc for x in shuf]
+    mu, sd = statistics.mean(sa), statistics.pstdev(sa)
+    print(f"EM held-out letter agreement {tm}/{tc} = {tm / tc:.3f}; 20 class-shuffled keys mean {mu:.3f} sd {sd:.3f} "
+          f"max {max(sa):.3f}; z {(tm / tc - mu) / sd:.2f}")
+
+
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "--help"
     if cmd == "merge":
@@ -237,6 +352,8 @@ def main():
         print(dict(fl), "attested>=2:", sum(1 for r in k.values() if r[7] not in ("", "0", "1")))
     elif cmd == "holdout":
         holdout()
+    elif cmd == "holdout-em":
+        holdout_em()
     elif cmd == "--check":
         c, p, a = merge_texts(merge_rows())
         stale = [f.name for f, t in ((CIPH, c), (PLAIN, p), (ALIGN, a)) if f.read_text() != t]
