@@ -1245,3 +1245,14 @@ unchecked.
 - correction; the same Annet comma/OR fixture error PR 47 also found (standalone "or" unsupported; coverage 13/16 -> 12/16) -- unchecked.
 - correction; the 17:43 UTC Codex ARM-KEYIMAGE ROOM line ("claim: recover/identify...") is a task claim, not evidence the Livingston key was actually retrieved; no `codex-2026-09-27f` result was located by this checkpoint -- unchecked (answers PR-LAND-15's 18:49 UTC flag on this same discrepancy, above).
 - next-step; the checkpoint names resolving the clipped gutter material from an additional manuscript capture, and a repeatable literal shorthand reading on control material, as the next substantive steps -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 20:55, 27 Sept 2026)
+
+Landed from PR 49 (`second-opinions/chatgpt-checkpoint-2026-09-27-2055.md`, PR-LAND-19). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; Annet 1770 PDF p.17 exercise-11 engraving aligns four connective words to strokes (AND: descending diagonal; ARE: right-facing curve, alphabet r; OR: loop joined to a right-facing curve, provisionally o+r; OUGHT: forked aught/ought sign from p.3), all grade M, answer-aware, one reader -- unchecked.
+- correction; the ARE/OR contrast makes it unsafe to generalize exercise 2's diagonal-at-OR-position reading into a general OR sign; the exercise-2 discrepancy (plate/text mismatch, abbreviation, or omitted-word punctuation) remains unresolved and no new OR or AND alias was installed -- unchecked.
+- next-step; the checkpoint's own named next action is comparing the source-grounded Annet primitives against the target's native page-1 long passages and page-3 tail, to test whether a literal match can be made before moving to primary-key recovery -- unchecked.
