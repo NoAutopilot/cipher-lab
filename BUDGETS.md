@@ -25,6 +25,13 @@ stop and tell the owner.
 
 **Scaling rule, 24 Sept 2026:** with about fifty sessions on one five-hour window, every orchestrator checks `rate_limit_info.status` on itself before each dispatch: `allowed_warning` means no new workers anywhere; `rejected` means every lane interrupts its workers and writes the reset time here and in ROOM.md. The window resets on the rolling schedule get_session reports; work already pushed is safe.
 
+**Amendment, 27 Sept 2026 07:22 UTC (owner's decision, parent 7k):** the platform's `allowed_warning` on the
+**seven_day** type fires early -- at 04:22 UTC it was set on every session of the ytbiz account while the owner's own
+usage page read 27 percent of the weekly limit (26 percent Fable), reset Saturday 06:00 PT. So a seven-day
+`allowed_warning` alone no longer stops spawning: orchestrators keep dispatching under the normal caps and note the
+flag in their check-in line. A **five_hour** `allowed_warning` and `rejected` on either type keep the rule below
+unchanged. Cost of the old reading: about three hours (04:22-07:22) with nothing spawned on this account.
+
 ## What to do when you see a warning
 
 - **allowed_warning**: finish the worker you are running, do not start another large one, and say so in
