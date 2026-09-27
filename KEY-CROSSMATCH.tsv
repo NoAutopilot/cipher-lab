@@ -363,13 +363,7 @@ ciphers/trew-posthius-1614-18/ciphertext_1618.tsv	found-solved	ciphers/trew-post
 ciphers/lodewijk-van-nassau-1573-74/ciphertext_7206.tsv	partial	ciphers/jan-van-nassau-1572-75/key_1572.tsv	?	1572-1575	fr	nomenclator	0.678	979	-1.3834	1.05	0.46	1.05	False	True	0.7		no	unusable-key
 ciphers/lodewijk-van-nassau-1573-74/ax4612tr/ciphertext_5811_cut833.tsv	partial	ciphers/oxenstierna-gustav-adolf-1632/key.tsv	Oxenstierna, Gustav II Adolf -> Axel Oxenstierna	1632	fr	homophonic	0.543	882	-2.1795	-0.02	1.05	1.05	False	False	0.455		no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr3986-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7219	-0.96	1.04	1.04	False	True	0.723		no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr3986-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7052	-0.87	1.04	1.04	False	True	0.718		no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr3986-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7076	-0.91	1.04	1.04	False	True	0.717		no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr3986-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7066	-0.91	1.04	1.04	False	True	0.722		no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr3987-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7219	-0.96	1.04	1.04	False	True	0.723		no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr3987-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7052	-0.87	1.04	1.04	False	True	0.718		no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr3987-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7076	-0.91	1.04	1.04	False	True	0.717		no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr3987-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	fr	nomenclator	0.649	12994	-1.7066	-0.91	1.04	1.04	False	True	0.722		no	unusable-key
 ciphers/antt-msliv0638-brochado-1712/ciphertext_appendix.tsv	partial	ciphers/espagnol142-mercy-1648/key.tsv	?	2026	fr	homophonic	0.803	1702	-2.2392	-0.6	1.03	1.03	False	False	0.454		no	none
 ciphers/lodewijk-van-nassau-1573-74/ciphertext_sib.tsv	partial	ciphers/jan-van-nassau-1572-75/key_1572.tsv	?	1572-1575	fr	nomenclator	0.788	1107	-1.389	1.03	-0.38	1.03	False	True	0.697		no	unusable-key
 ciphers/thurloe-printed/P10/ciphertext.txt	?	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.532	218	-1.9596	1.03	0.41	1.03	False	False	0.436		no	none
@@ -1005,9 +999,6 @@ ciphers/hamilton-1650/ciphertext.txt	open	ciphers/antt-msliv0638-brochado-1712/k
 ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.022	92									no	unusable-key
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.055	91									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.353	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.353	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.353	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.353	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.031	32									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.107	1183									no	unusable-key
 ciphers/na-schonenberg-1678-1716/ciphertext.tsv	partial	ciphers/antt-msliv0638-brochado-1712/key.tsv	?	2026	pt	homophonic	0.262	279									no	unusable-key
@@ -1106,9 +1097,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/august-van-saksen-1561
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.296	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.326	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.166	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.166	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.166	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.166	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.031	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.015	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/august-van-saksen-1561-64/key.tsv	?	1561-1564	de	nomenclator	0.27	1183									no	none
@@ -1210,9 +1198,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/august-van-saksen-1561
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.261	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.304	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.069	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.069	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.069	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.069	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.015	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/august-van-saksen-1561-64/key_53.tsv	?	1561-1564	de	monoalphabetic	0.267	1183									no	none
@@ -1314,9 +1299,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/august-van-saksen-1561
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.296	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.326	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.111	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.111	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.111	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.111	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.015	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/august-van-saksen-1561-64/key_74.tsv	?	1561-1564	de	nomenclator	0.27	1183									no	none
@@ -1418,9 +1400,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/august-van-saksen-1561
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.236	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.283	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.084	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.084	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.084	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.084	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.031	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.015	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/august-van-saksen-1561-64/key_98.tsv	?	1561-1564	de	nomenclator	0.264	1183									no	none
@@ -1650,9 +1629,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair1067-brienne-pola
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.151	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.109	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.289	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.289	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.289	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.289	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.231	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair1067-brienne-poland-1646/key_1646.tsv	?	1646	fr	nomenclator	0.114	1183									no	none
@@ -1757,9 +1733,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/clair1067-brienne-poland-16
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.099	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.391	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.2	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.2	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.2	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.2	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.463	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1647.tsv	?	1646	fr	unknown	0.079	1183									no	none
@@ -1864,9 +1837,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair1067-brienne-pola
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.497	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.283	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.237	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.237	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.237	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.237	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.381	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair1067-brienne-poland-1646/key_brienne_1651.tsv	?	1646	fr	unknown	0.139	1183									no	none
@@ -2024,9 +1994,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair349-este-guise-15
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.402	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.261	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.031	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.149	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair349-este-guise-1556/key_alpha.tsv	?	2026	fr	nomenclator	0.086	1183									no	none
@@ -2130,9 +2097,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair349-este-guise-15
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.402	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.261	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.062	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.375	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.149	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair349-este-guise-1556/key_decode.tsv	?	2026	fr	nomenclator	0.086	1183									no	none
@@ -2238,9 +2202,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair349-este-guise-15
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.02	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.344	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair349-este-guise-1556/key_nomen.tsv	?	2026	fr	code	0.003	1183									no	none
@@ -2344,9 +2305,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/clair349-este-guise-1556/ke
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.066	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.478	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.095	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.095	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.095	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.095	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.125	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.172	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/clair349-este-guise-1556/key_vs_gloss.tsv	?	2026	fr	unknown	0.101	1183									no	none
@@ -2451,9 +2409,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/colbert26-lathuillerie
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.276	199									no	unusable-key
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.174	46									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.28	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.28	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.28	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.28	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.031	32									no	unusable-key
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.246	134									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/colbert26-lathuillerie-1644/key_period.tsv	?	1644	fr	code	0.089	1183									no	unusable-key
@@ -2626,9 +2581,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/dupuy468-anhalt/key.ts
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.161	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.217	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.275	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.275	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.275	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.275	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.156	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.082	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/dupuy468-anhalt/key.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.033	1183									no	none
@@ -2734,9 +2686,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/dupuy468-anhalt/key_fr
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.161	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.217	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.193	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.193	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.193	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.193	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.156	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.015	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/dupuy468-anhalt/key_from_gloss.tsv	Ernest and Joachim of Anhalt-Zerbst -> Francis I	?	la	nomenclator	0.033	1183									no	none
@@ -2907,9 +2856,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr2751-dediou-mayenne/
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1592-93_polyphonic.tsv	?	?	fr	nomenclator	0.0	1183									no	none
@@ -3015,9 +2961,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr2751-dediou-mayenne/
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr2751-dediou-mayenne/key_mayenne_1593_homophonic.tsv	?	?	fr	nomenclator	0.0	1183									no	none
@@ -3121,9 +3064,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr2980-gramont/key.tsv
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.095	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.109	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.357	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.357	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.357	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.357	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.031	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.239	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr2980-gramont/key.tsv	?	1530	fr	homophonic	0.01	1183									no	none
@@ -3247,9 +3187,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr3625-lauriere-1593/b
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr3625-lauriere-1593/bourdeau_ref/key_lauriere.txt	Laurière -> Nevers	1593	fr	unknown	0.0	1183									no	none
@@ -3378,9 +3315,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr3985-nevers-revol-15
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.658	199									no	unusable-key
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.565	46									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.156	32									no	unusable-key
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.604	134									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr3985-nevers-revol-1593/key.tsv	Nevers -> Revol	1593	?	code	0.4	1183									no	unusable-key
@@ -3668,9 +3602,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_1
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.088	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.457	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.122	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.122	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.122	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.122	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.336	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr5160-letellier-1653/key_1659.tsv	?	1653-1661	fr	nomenclator	0.393	1183									no	none
@@ -3765,9 +3696,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_1
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.088	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.457	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.125	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.125	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.125	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.125	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.336	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr5160-letellier-1653/key_1659_ext.tsv	?	1653-1661	fr	nomenclator	0.416	1183									no	none
@@ -3855,9 +3783,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_1
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.077	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.413	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.113	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.113	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.113	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.113	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.299	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr5160-letellier-1653/key_1659_f86only.tsv	?	1653-1661	fr	nomenclator	0.354	1183									no	none
@@ -3962,9 +3887,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_b
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.099	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.391	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.2	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.2	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.2	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.2	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.463	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr5160-letellier-1653/key_brienne_1647.tsv	?	1653-1661	fr	unknown	0.079	1183									no	none
@@ -4069,9 +3991,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr5160-letellier-1653/
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.497	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.283	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.237	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.237	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.237	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.237	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.381	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr5160-letellier-1653/key_brienne_1651.tsv	?	1653-1661	fr	unknown	0.139	1183									no	none
@@ -4175,9 +4094,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr5761-election-1519/k
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr5761-election-1519/key.tsv	?	1519	fr	unknown	0.0	1183									no	none
@@ -4283,9 +4199,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr7129-villeroy-bongar
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f270.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	unknown	0.0	1183									no	no_corpus
@@ -4391,9 +4304,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr7129-villeroy-bongar
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.472	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.239	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.439	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.439	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.439	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.439	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.031	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.366	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f274.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	homophonic	0.081	1183									no	no_corpus
@@ -4562,9 +4472,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr7129-villeroy-bongar
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.683	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.522	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.031	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.746	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.237	1183									no	no_corpus
@@ -4670,9 +4577,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/fr7129-villeroy-bongar
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.683	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.522	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.571	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.031	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.746	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/fr7129-villeroy-bongars-1604/keys/key_f275_v2.tsv	Nicolas de Neufville, seigneur de Villeroy -> Jacques Bongars	1604	?	code	0.237	1183									no	no_corpus
@@ -4774,9 +4678,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/gunther-van-schwarzbur
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.161	199									no	unusable-key
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.13	46									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.46	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.46	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.46	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.46	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.0	32									no	unusable-key
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.336	134									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/gunther-van-schwarzburg-1561/key.tsv	Willem van Oranje -> Günther van Schwarzburg	1561	de	homophonic	0.052	1183									no	unusable-key
@@ -5237,9 +5138,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/koehler-1944/running-k
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/koehler-1944/running-key/keyed_beau_noise_band.tsv	?	1944	nl	code	0.0	1183									no	none
@@ -5637,9 +5535,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/matignon-mayenne-1586/
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.387	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.239	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.916	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.916	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.916	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.916	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.062	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.537	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/matignon-mayenne-1586/key.tsv	?	1585	?	nomenclator	0.253	1183									no	no_corpus
@@ -5805,9 +5700,6 @@ ciphers/kaliningrad-2015/ciphertext.txt	open	ciphers/na-schonenberg-1678-1716/ke
 ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.077	91									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.435	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.052	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.052	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.052	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.052	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.224	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/na-schonenberg-1678-1716/key.tsv	?	1678-1716	es	homophonic	0.173	1183									no	none
@@ -5902,9 +5794,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/na-suriname-map-1781/k
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.121	199									no	unusable-key
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.174	46									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.086	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.086	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.086	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.086	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.0	32									no	unusable-key
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.022	134									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/na-suriname-map-1781/key.tsv	?	1781	nl	monoalphabetic	0.017	1183									no	unusable-key
@@ -6123,9 +6012,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/rah-canada-1869/key.ts
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.226	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.283	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.069	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.069	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.069	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.069	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.015	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/rah-canada-1869/key.tsv	?	1869	es	monoalphabetic	0.04	1183									no	none
@@ -6292,9 +6178,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/sforza-maino-1446/key.
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.186	199									no	unusable-key
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.217	46									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.426	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.426	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.426	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.426	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.188	32									no	unusable-key
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.276	134									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/sforza-maino-1446/key.tsv	Sforza reply -> Zorzo	1446-1583	?	monoalphabetic	0.106	1183									no	unusable-key
@@ -6524,9 +6407,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/thurloe-barriere-1654/
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.296	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.174	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.231	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.231	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.231	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.231	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.0	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.381	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/thurloe-barriere-1654/key_gloss.tsv	?	1654	?	code	0.083	1183									no	no_corpus
@@ -6632,9 +6512,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/thurloe-barriere-1654/
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/thurloe-barriere-1654/key_gloss_marked.tsv	?	1654	?	code	0.0	1183									no	no_corpus
@@ -7466,9 +7343,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/vanbeuningen-dewitt-16
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/vanbeuningen-dewitt-1657/key.tsv	Van Beuningen circle -> Johan de Witt: the same letter survives as a plain copy and a	1657	nl	code	0.0	1183									no	none
@@ -7573,9 +7447,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/willem-van-hessen-1567
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	199									no	unusable-key
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	46									no	unusable-key
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	12994									no	unusable-key
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	12994									no	unusable-key
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	32									no	unusable-key
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	134									no	unusable-key
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/willem-van-hessen-1567/siblings/key_1069.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	nomenclator	0.0	1183									no	unusable-key
@@ -7680,9 +7551,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	ciphers/willem-van-hessen-1567
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	199									no	none
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	46									no	none
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	12994									no	none
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	12994									no	none
 ciphers/mlh-1976/ciphertext.txt	open	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	32									no	none
 ciphers/moray-wood-1568/ciphertext.txt	partial	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	134									no	none
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	ciphers/willem-van-hessen-1567/siblings/key_174_nomenclator.tsv	Willem van Hessen -> Willem van Oranje	1567	nl	code	0.0	1183									no	none
@@ -7799,9 +7667,6 @@ ciphers/koehler-1944/ciphertext-variants.tsv	open	tools/keys/key60.tsv	Nevers ->
 ciphers/la-garde-1577/ciphertext_6179_v2.tsv	open	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.628	199									no	no_corpus
 ciphers/la-garde-1577/ciphertext_6467_v2.tsv	open	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.478	46									no	no_corpus
 ciphers/matignon-mayenne-1586/ciphertext.txt	partial	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed1/ciphertext.txt	partial	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed2/ciphertext.txt	partial	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	no_corpus
-ciphers/matignon-mayenne-1586/control/seed3/ciphertext.txt	partial	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.691	12994									no	no_corpus
 ciphers/mlh-1976/ciphertext.txt	open	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.156	32									no	no_corpus
 ciphers/moray-wood-1568/ciphertext.txt	partial	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.597	134									no	no_corpus
 ciphers/na-oldenbarnevelt-2442-1605/ciphertext.tsv	open	tools/keys/key60.tsv	Nevers -> Revol	1593	?	code	0.392	1183									no	no_corpus

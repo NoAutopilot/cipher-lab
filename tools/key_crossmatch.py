@@ -77,7 +77,10 @@ CIPHERS = ROOT / 'ciphers'
 DATA = TOOLS / 'data'
 
 KEY_EXCLUDE = ['draft', 'candidate', 'atlas', 'pass', 'conflicts', 'counts', 'align', 'crosscheck', 'trial']
-CT_EXCLUDE = KEY_EXCLUDE + ['recon']
+# 27 Sept 2026: synthetic control ciphertexts (rule-3 controls under a target's control/ or controls/
+# folder, seedN/ subfolders) are never targets; the first nightly run scored fr7129's key_f275 against
+# matignon-mayenne-1586/control/seed1-3 at 3.32 and reported three false leads.
+CT_EXCLUDE = KEY_EXCLUDE + ['recon', '/control/', '/controls/', '/seed']
 EXTRA_KEY_FILES = ['tools/keys/key60.tsv']  # published Bourdeau/Tomokiyo table not under ciphers/
 # CRYPT-KEYS-A, 27 Sept 2026: Tomokiyo's other published key tables, transcribed from his text tables (not
 # images) into sources/cryptiana/keys/<page>_<n>.tsv. Unlike EXTRA_KEY_FILES/EXTRA_KEY_HOME (a fixed list with
