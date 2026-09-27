@@ -364,3 +364,104 @@ else (Yardley, Bazeries, Wallis, Langie, Viète, Brown) the page says so and so 
     back for reuse on "the same cypher". (`wallis_e.htm`, "Collection of Deciphered Papers Deposited in a Public
     Library", "Codebreaking after the Glorious Revolution", "Codebreaking for Foreign Courts".)
 
+## Section 3 -- What we do not do yet
+
+Per practice: (a) already in CLAUDE.md or a tool; (b) a brief or COMMON addendum, as a diff for the parent to apply;
+(c) a tool option, one line, not built; (d) a target we hold, NEXT-STEPS-shaped (`folder<TAB>step<TAB>cost band<TAB>page
+cited`). Convergence with LESSONS-BOURDEAU.md (B) or LESSONS-LASRY.md (L) is named where it exists.
+
+| # | Practice | (a) already | (b)/(c)/(d) |
+|---|---|---|---|
+| 1 | Spelling part first | partly: `interlinear_align.py --floor` separates letter codes from word codes, but only when a clear text is beside the cipher | (b) item B1; (c) C1 |
+| 2 | Dictionary position | no | (b) B1; (c) C2; (d) destaing-gerard-1779 |
+| 3 | Degrees of one-part | partly: KEY-DESIGN.tsv / `design_prior.py` record a key's design, not its ordering class | (c) C3 |
+| 4 | Matrix regularity | partly: LESSONS.md "Structure before search" (Toledo 1565, Warsaw 1627) -- convergent with B practice 9 | (c) C3 |
+| 5 | Contacts, KWIC | no tool; `freq.py` counts unigrams only | (b) B1; (c) C4; (d) berthier-napoleon-1812 |
+| 6 | Long repeats | no tool | (c) C5 |
+| 7 | Two encipherments | no: `interlinear_align.py` aligns cipher to clear, never cipher to cipher; LESSONS.md lead-class order has no rung for a second encipherment | (b) B2 (convergent with LESSONS.md "Look for the sibling" and L practice 10's route order); (c) C6 |
+| 8 | Outside parallel clear | partly: lead-class order rung 1 (same letter in print) | (b) inside B2 |
+| 9 | Clear part and situation | partly: lead-class order; L practice 9 (cribs corroborate) | (d) destaing-gerard-1779 |
+| 10 | Drop early identifications | (a) rule 3 and the "untested-by-this-tool" paragraph | -- |
+| 11 | Long-word running-key drag | partly: `running_key.py` is a beam decoder; nothing drags long words | (c) C7; (d) hessen-1824 |
+| 12 | Language first, switch at a wall | (a) `judge_plaintext.py` per-language corpora; rule 3 era paragraphs | (b) B3 (the "sounding language" check) |
+| 13 | Period hands and numerals | partly: per-target glyph conventions (malsburg bMALG) | (b) B4 |
+| 14 | Marks on groups | partly: thurloe-barriere-1654 mark-typed rerun (ZX-BAR2) | (b) inside B4 |
+| 15 | Publish checkably, mark conjecture | (a) rules 4 and 7 (grades, decode_key.py exceptions.tsv, --check) -- convergent with L practice 8 (errors graded) | -- |
+| 16 | Consistency across unrelated words | partly: rule 4 grade S requires a control, not multi-word attestation | (b) B5 |
+| 17 | Quantity; deciphered collections | (a) rule 3; LESSONS.md unicity table; bl-wallis-letterbook, wallis-emus203-undeciphered already held | -- |
+
+### (b) Brief / COMMON addenda (text for the parent)
+
+B1 -- `.claude/briefs/README.md` common tail (any worker on a code or large nomenclator, 100+ distinct groups):
+
+```
++ - (Tomokiyo, codebreaking.htm, contact.htm, kwic.htm) Code before solver: on a code or large nomenclator
++   (100+ distinct groups), before any annealer run write three tables to the target folder and paste their
++   head into NOTES.md: (1) the group range split at the lowest gap that leaves a <=40-value low block, with
++   unigram stats of each side (a spelling alphabet inside the code is attacked first, Wallis); (2) the
++   contact table of the 20 most frequent groups (what precedes/follows each; a group never followed by
++   itself and often preceded by itself is a suffix, Yardley); (3) for a one-part hypothesis, each frequent
++   group's expected initial letter by relative position in the range, against a period dictionary's
++   initial-letter shares (Langie/Mansfield). Record which hypothesis the three tables support before
++   choosing a family.
+```
+
+B2 -- `LESSONS.md`, "Lead-class order" paragraph, and the same in `.claude/briefs/check-solved.md` if it restates it:
+
+```
+- (3) an interlinear or marginal gloss on the leaf itself; (4) a published key of the same office and years
++ (3) an interlinear or marginal gloss on the leaf itself; (3a) a second, independently enciphered copy of the
++ same text (a duplicata, a copy to another ambassador, the register copy): align the two ciphertexts symbol by
++ symbol, treat a contradiction as a one-place shift, words clear in both copies as plaintext and words clear in
++ one copy as cribs for the other (Tomokiyo, servien.htm; Viete's first step against Spanish ciphers); (3b) a clear
++ text from outside the correspondence that may quote the same source (a newsletter, a gazette, the other side's
++ dispatch of the same day; Tomokiyo, codebreaking.htm "Dutch Codebreakers"); (4) a published key of the same
++ office and years
+```
+
+B3 -- `.claude/briefs/README.md` common tail (solver workers):
+
+```
++ - (Tomokiyo, language.htm) A decode that is pronounceable but not the expected language (regular vowel-consonant
++   alternation, no words) is logged as "key plausible, language wrong?" and re-judged under the other corpora in
++   tools/data before the key is discarded (Blencowe 1706's "sounding language").
+```
+
+B4 -- `.claude/briefs/README.md` common tail (transcription workers), convergent with LESSONS.md "Get the image" (Birago
+superscript crosses):
+
+```
++ - (Tomokiyo, paleography.htm "Roman Numerals"; wallisdecipher.htm) Transcribe marks on code groups as a separate
++   column (underline, overline, dot, bar), never folded into the digits or dropped; write Roman numerals as
++   drawn (iiiixx, vixx, iiiio, IU for M) with the value in a second column; a second copy of the same letter in
++   a clearer hand is read first and used as the reading aid for the harder copy.
+```
+
+B5 -- CLAUDE.md rule 4 is the owner's; as a brief line instead, `.claude/briefs/README.md` common tail (solver workers):
+
+```
++ - (Tomokiyo, breaking.htm "Further Steps") An S-grade symbol value is counted as S only when it reads correctly
++   in at least two different words of the reading; a value attested in one word only is M, whatever its control.
+```
+
+Ranked: B2 first (a route to a key that no rung names yet, convergent across Tomokiyo, our own sibling lesson and
+Lasry's route order), B1 second (the code-breaking procedure none of our 256 folders runs, convergent with Bourdeau's
+"structural read before the solver").
+
+### (c) Tool options (not built)
+
+- C1 `tools/freq.py --split-at N` -- unigram stats reported separately for groups below and above N, with the gap search that proposes N.
+- C2 `tools/freq.py --onepart-dict LANG` -- for each frequent group, its relative position in the range mapped to the initial-letter band of a period dictionary from tools/data (Mansfield/Langie estimate).
+- C3 `tools/key_design.py --matrix` -- print a key's letter values as a vowel-headed matrix and flag paired first digits or reversed rows (matrix.htm), and label one-part / two-dimensional / blockwise / two-part.
+- C4 `tools/freq.py --contacts K` and `--kwic GROUP --width W --sort left|right` -- contact table of the K most frequent groups; KWIC listing of one group.
+- C5 `tools/freq.py --repeats N` -- every recurring token n-gram of length >= N with positions (polygram.htm, without its O(N^2) limits).
+- C6 `tools/interlinear_align.py --cipher-pair A B` -- DP alignment of two ciphertexts of one text, emitting symbol-equivalence classes (homophone groups) and clear-word anchors.
+- C7 `tools/running_key.py --drag MINLEN --corpus DICT` -- drag every dictionary word of length >= MINLEN at every offset, quadgram-score the revealed fragment on the other side, list the top fragments for manual extension.
+
+### (d) Targets we hold where his practice names an untried step
+
+```
+destaing-gerard-1779	Tomokiyo's partial-encoding and dictionary-position steps: guess the code groups at the two clear/code boundaries from the bracketing French clauses, then test a one-part hypothesis by placing the frequent groups (de, la, le, que) at their dictionary-position bands in the 1-597 range; log support or no support with a shuffled-range control	S	codebreaking.htm "Partial Encoding", "André Langie's Example"
+berthier-napoleon-1812	Contact table and KWIC of the 325 groups (207 distinct) before any solver, then Bazeries' probable-phrase search for variably-spelled repeats of a syllabic phrase the subject must contain (cf. "les en-ne-mi-s"), cribbed from the Chuquet 1912 clear letters of 22 Dec 1812 its NOTES.md cites	S	codebreaking.htm "Codebreaking by Etienne Bazeries", "Statistical Analysis"; kwic.htm
+hessen-1824	Different instrument for the running_key family (CLAUDE.md rule 3 "untested-by-this-tool"): drag de19 dictionary words of 10+ letters at every offset, quadgram-score the other side, extend the best fragments by hand; matched control first at N=164	S	runningkey.htm "Solution" (Brown's method), "Tips"
+```
