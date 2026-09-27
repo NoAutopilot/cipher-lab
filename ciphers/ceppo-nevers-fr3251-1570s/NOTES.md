@@ -82,26 +82,21 @@ What remains before any class (rule 10) or any deep-work brief:
   `ciphers/birago-nevers-1571`.
 - Once a reading exists: `tools/print_check.py` on the decoded phrases (rule 10; CLAUDE.md README common tail).
 
-## Key blocker (not reached this session)
+## Key blocker: resolved (KEY-IMG-3251, 27 Sept 2026)
 
-`keys/key_ceppo_nevers.tsv` (header only, no rows -- see that file) could not be transcribed. Tomokiyo's printed
-table for this cipher is the hand-drawn image `nevers_add1.png`, embedded in `nevers.htm` directly after the
-BnF fr.4702 paragraph quoted above. It is **not** present in this repository's local mirror
-(`sources/cryptiana/web/`; confirmed absent by `ls`/`find`, only `nevers_no55.png`, `nevers_no57.png` and
-`nevers_no58.png` were ever cached from this page) and it is hosted on `cryptiana.web.fc2.com`, a host outside
-this job's stated network allowance ("Gallica IIIF and the BnF catalogue" only). `sources/cryptiana/keys/IMAGE-QUEUE.tsv`
-already lists it (row for `nevers.htm` / `nevers_add1.png`, flagged `looks_like_key: no` by the automated pass --
-wrong for this image specifically, given the surrounding text; a human/model glance would catch it) but it has
-never been fetched.
+`keys/key_ceppo_nevers.tsv` is transcribed and on disk: 55 hand-drawn symbol cells (48 letter homophones across
+19 of 22 letter columns -- b, x, y carry none -- plus 1 "et" word-sign and 6 null signs), from `nevers_add1.png`
+(fetched from `cryptiana.web.fc2.com/code/nevers_add1.png`, manifest in
+`sources/cryptiana/web/manifest_2026-09-27-keyimg.tsv`). Two independent blind Sonnet subagent reads, mechanically
+merged: 56 of 58 rows agreed cell-for-cell (grade AB); 2 rows (both in column s, rows 2 and 3) had the position
+agreed but the exact hand-drawn shape not fully resolved between the two passes (grade M). No column/row
+placement disagreement on this table (contrast the sibling folder's y/z mix-up). `tools/key_design.py` reads it
+as `usable=yes`, design_family `homophonic` (20 distinct letters, ~2.5 homophones mean) -- consistent with
+Tomokiyo's own description of the system. KEY-OFFICES.tsv and KEY-DESIGN.tsv both carry rows for this key;
+`tools/key_design.py --check` passes.
 
-**Next step:** a worker with `cryptiana.web.fc2.com` in its network allowance fetches `nevers_add1.png` (this
-folder) and `NeversBirago.png` (the sibling folder), transcribes each into `keys/key_<name>.tsv` (columns sign,
-value, kind, source, unclear) with a second blind transcription pass and disagreements listed, per
-CLAUDE.md's own image-key pricing note (Usage item 6: no recorded rate yet for this shape, price it like
-CRYPT-KEYS-B and confirm on the first table before committing to both). Only then do `KEY-OFFICES.tsv` and
-`KEY-DESIGN.tsv` gain rows for these keys and `tools/key_design.py --check` pass with real data; registering an
-empty or fabricated key now would misrepresent the state. Priced conservatively, this is its own job, not a
-top-up of INTAKE-3251's cap.
+**Next step:** transcribe the cipher passages of the four target folios (two blind passes) and apply
+`keys/key_ceppo_nevers.tsv` with a 20-shuffled-key control (rule 3); reading to a verifier.
 
 **Next step:** transcribe the cipher passages of the listed folios (two blind passes) and apply
 keys/key_<name>.tsv with a 20-shuffled-key control; reading to a verifier. (Blocked on the key-table fetch

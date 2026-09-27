@@ -61,17 +61,24 @@ What remains before any class (rule 10) or any deep-work brief:
 - The date discrepancy on f.138 (above) checked against the image.
 - Once a reading exists: `tools/print_check.py` on the decoded phrases (rule 10).
 
-## Key blocker (not reached this session)
+## Key blocker: resolved (KEY-IMG-3251, 27 Sept 2026)
 
-`keys/key_nevers_birago_1572.tsv` (header only, no rows) could not be transcribed. `NeversBirago.png` is not
-present in this repository's local mirror (`sources/cryptiana/web/`; confirmed absent) and is hosted on
-`cryptiana.web.fc2.com`, outside this job's network allowance ("Gallica IIIF and the BnF catalogue" only).
-`sources/cryptiana/keys/IMAGE-QUEUE.tsv` already has a row for it (flagged `looks_like_key: no` by the automated
-pass -- wrong for this image, given the surrounding text) but it has never been fetched. Same next step as the
-sibling folder: a worker with `cryptiana.web.fc2.com` access fetches both `NeversBirago.png` and
-`nevers_add1.png`, transcribes each with a second blind pass, and only then can `KEY-OFFICES.tsv` /
-`KEY-DESIGN.tsv` gain real rows.
+`keys/key_nevers_birago_1572.tsv` is transcribed and on disk: 50 hand-drawn/printed symbol cells (43 in the
+letter grid across 18 of 22 letter columns plus "et?" -- q, x, y carry none -- and 7 in the word-code grid:
+che, per, qual, quello as hand-drawn signs, carmagnola/turino/bugonotti as plain two-digit numbers 85/86/89),
+from `NeversBirago.png` (fetched from `cryptiana.web.fc2.com/code/NeversBirago.png`, manifest in
+`sources/cryptiana/web/manifest_2026-09-27-keyimg.tsv`). Two independent blind Sonnet subagent reads,
+mechanically merged: 49 of 53 rows agreed cell-for-cell (grade AB); 4 rows graded M -- two (r row2, s row2)
+where the position agreed but the exact shape did not fully resolve, and a real column-assignment disagreement
+on a "dumbbell" mark and a three-humped "m" mark near the end of the alphabet: one blind pass placed the
+dumbbell under y and left z's row1 silent, the other placed it under z and called y blank. Settled by this
+worker pixel-cropping the header's own white-text glyph positions to get exact column-cell boundaries (not
+just centers) and overlaying them on a zoomed crop of the x/y/z/et? region: both marks sit inside z's column
+cell, y is genuinely blank. `tools/key_design.py` reads the key as `usable=yes`, design_family `nomenclator`
+(20 distinct letters plus a small word-code table) -- consistent with Tomokiyo's own description. KEY-OFFICES.tsv
+and KEY-DESIGN.tsv both carry rows for this key; `tools/key_design.py --check` passes.
 
-**Next step:** transcribe the cipher passages of the listed folios (two blind passes) and apply
-keys/key_<name>.tsv with a 20-shuffled-key control; reading to a verifier. (Blocked on the key-table fetch
-above until then.)
+**Next step:** transcribe the cipher passages of the seven target folios (two blind passes) and apply
+`keys/key_nevers_birago_1572.tsv` with a 20-shuffled-key control (rule 3); reading to a verifier. The f.138
+date discrepancy (above) is still unresolved and should be checked against the image before or during that
+transcription pass.

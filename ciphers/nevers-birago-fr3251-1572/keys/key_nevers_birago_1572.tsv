@@ -1,8 +1,69 @@
-# BLOCKED (INTAKE-3251, 27 Sept 2026): no rows. Tomokiyo's printed table for the Nevers-Birago Cipher (1572)
-# (reconstructed by him from the decipherment attached to f.178 no.87) is the hand-drawn image NeversBirago.png,
-# embedded in sources/cryptiana/web/nevers.htm after the "Nevers-Birago Cipher (1572)" sentence. That image is
-# not present in this repository's local mirror and is hosted on cryptiana.web.fc2.com, outside this job's
-# network allowance (Gallica IIIF and the BnF catalogue only). See ../NOTES.md "Key blocker" for the next step.
-# Do not fill this file from a guess or another cipher's table -- transcribe it from the actual image, with a
-# second blind pass, per CLAUDE.md rule 1 ("as transcribed, never silently repaired") and the fr7129 lesson.
-sign	value	kind	source	unclear	note
+# Nevers-Birago Cipher (1572), reconstructed by S. Tomokiyo from the decipherment attached to BnF fr.3251
+# no.87 (f.178, Birago to the Duke of Nevers, 8 Sept 1572). Transcribed KEY-IMG-3251, 27 Sept 2026, from the
+# hand-drawn table image NeversBirago.png (embedded in nevers.htm, fetched from cryptiana.web.fc2.com/code/,
+# see sources/cryptiana/web/manifest_2026-09-27-keyimg.tsv), by two independent blind Sonnet subagent reads
+# (each shown only the image, no context), mechanically merged; disagreements settled by this worker's own
+# look at the image. Two sub-tables: a letter grid (a-z minus j/k/v/w, plus "et?") and a word-code grid
+# (che, per, qual, quello, carmagnola, turino, bugonotti). "sign" describes the hand-drawn mark's shape
+# (glyphs cannot be typed). Grade AB = both blind passes agreed on this cell's position and rough shape;
+# grade M = this worker settled a disagreement between the two passes.
+# One real disagreement settled: the two-circles-joined-by-a-bar ("dumbbell") mark and the three-humped
+# cursive 'm' mark -- one blind pass placed the dumbbell under column y (and left z's row1 unmentioned);
+# the other placed it under column z (and called y blank). Pixel-cropped the header's own white-text glyph
+# x-centers to get exact column-cell boundaries (not just centers) and overlaid them on a 3x zoomed crop of
+# the x/y/z/et? region (scratch crop, not committed): both marks sit inside the z column's cell, and y is
+# genuinely blank. Recorded here as grade M for the z-column rows and the y blank row.
+sign	value	kind	grade	source	note
+circle/oval crossed by a horizontal line through its middle, like Greek theta or a crossed 'O', one pass also read a small flourish/tail flicking up at upper right	a	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+plain crisp cross/plus sign (+)	a	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+letter 'X' shape, two diagonal strokes crossing	b	letter	AB	nevers.htm image NeversBirago.png	only homophone drawn for b
+small oval loop at the top of a straight vertical stroke hanging down, like a balloon on a string, or numeral '9'/lowercase 'q'	c	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+wavy double-curve stroke, like a cursive 's' or script 'w'/omega	c	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+checkmark/'V' shape, two strokes meeting at a point at the bottom	d	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+small circle/oval loop pierced through its centre by a vertical stroke extending above and below, like Greek phi or a rod through a ring	d	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+vertical stroke descending into a small closed loop at its base, like a lowercase 'b' or an upside-down balloon (one pass read the loop with a pinched cusp, closer to a heart shape)	e	letter	AB	nevers.htm image NeversBirago.png	row 1 of 3
+'#' hash/pound sign, two verticals crossed by two horizontals	e	letter	AB	nevers.htm image NeversBirago.png	row 2 of 3
+small loop at the top of a vertical stroke that descends and hooks slightly right at the bottom, like a cursive '9' or a shepherd's crook, with a short foot/serif near the base	e	letter	AB	nevers.htm image NeversBirago.png	row 3 of 3
+open curl/hook shape like a cursive lowercase 'e' left open, or Greek epsilon, resembling a backwards '3'	f	letter	AB	nevers.htm image NeversBirago.png	only homophone drawn for f
+plain circle/oval	g	letter	AB	nevers.htm image NeversBirago.png	row 1 of 3
+open triangle, apex/point upward	g	letter	AB	nevers.htm image NeversBirago.png	row 2 of 3
+capital 'T' shape, or a horizontal bar with small curling hooks at each end over a vertical stem, like an inverted-cross T with serifs	g	letter	AB	nevers.htm image NeversBirago.png	row 3 of 3
+cursive shape with two humps, like a rounded lowercase 'm'	h	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+diagonal fork/V shape at the top whose lower stroke curls into a small closed loop near the bottom, ampersand-like ligature	h	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+small closed loop with a short curling tail, like a tiny cursive 'e' or reversed '6'	i	letter	AB	nevers.htm image NeversBirago.png	row 1 of 4
+diagonal stroke meeting a shorter upward stroke at a peak, like Greek lambda or a checkmark with a long trailing leg	i	letter	AB	nevers.htm image NeversBirago.png	row 2 of 4
+small zigzag with two connected humps, like a cursive 'n' with a short hooked tail (comma-like) at the bottom right	i	letter	AB	nevers.htm image NeversBirago.png	row 3 of 4
+capital 'D' shape, vertical stroke on the left joined by a rounded bulge on the right, small serif-hook at top-left	i	letter	AB	nevers.htm image NeversBirago.png	row 4 of 4
+vertical stroke crossed near the top by one or two short horizontal ticks, like a 't' with a high crossbar, a '7' with a bar, or a double-barred cross	l	letter	AB	nevers.htm image NeversBirago.png	row 1 of 3
+capital 'B' shape, vertical stroke with two stacked rounded bumps on the right	l	letter	AB	nevers.htm image NeversBirago.png	row 4 of 3 -- rows 2-3 blank for this column, next drawn homophone is at row 4
+small compact loop resembling a cursive 'm'/'rn' ligature, topped by a short wavy tilde-like flourish	l	letter	AB	nevers.htm image NeversBirago.png	row 5; both blind passes flagged this mark as x-aligned with l's own row-1 mark rather than with the m column's stack, despite sitting in the same row band as z's row-5 mark below -- reported here as l per both passes' own column call
+open curved hook, like an open lowercase 'c', a backwards comma, or (one pass) a small 't'-like curl	m	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+capital 'R'-like shape, vertical stroke with a loop at top right and a curved diagonal leg	m	letter	AB	nevers.htm image NeversBirago.png	row 4 of 2 -- rows 2-3 blank for this column, next drawn homophone is at row 4
+closed loop at the top with a tail descending and curling left at the bottom, like a cursive numeral '9' or lowercase 'g'	n	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+'#' hash/pound sign, two verticals crossed by two horizontals	n	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+Greek pi (π) shape, two vertical legs joined by a horizontal bar at the top	o	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+vertical stroke with one or two short horizontal bars/ticks extending to the right (or left) near the top, like a capital F/E or a turnstile sign	o	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+vertical stroke crossed by a short horizontal bar near the top, continuing down into a closed oval loop at the bottom, like a 't' merged with an 'o', or a barred 'd'/eth	p	letter	AB	nevers.htm image NeversBirago.png	only homophone drawn for p
+(blank -- no homophone drawn)	q	letter	AB	nevers.htm image NeversBirago.png	column verified empty by both blind passes
+two crossing/interlocking curved loops, like a bowtie, a looped script 'H', or two '3'-shapes crossing	r	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+small loop with a diagonal stroke crossing through it and a short tail, like eszett (ß), a backwards '3' with a slash, or (one pass) a small tight spiral	r	letter	M	nevers.htm image NeversBirago.png	row 2 of 2; passes diverged in detail -- position agreed, exact shape not fully resolved (one pass called it "unclear" itself)
+two connected u-shaped curves side by side, like lowercase omega or a cursive 'w'	s	letter	AB	nevers.htm image NeversBirago.png	row 1 of 3
+vertical stroke with a small closed loop/circle around its upper portion, like a bead threaded on a rod, or (one pass) a shepherd's-crook hook near the top	s	letter	M	nevers.htm image NeversBirago.png	row 2 of 3; passes diverged in detail -- position agreed, exact shape not fully resolved
+open diamond/rhombus (kite) outline with a short hooked tail curling from its bottom point	s	letter	AB	nevers.htm image NeversBirago.png	row 5 of 3 -- rows 3-4 blank for this column, next drawn homophone is at row 5
+two same-size circles/loops touching side by side, like 'oo' or a sideways figure-eight (infinity)	t	letter	AB	nevers.htm image NeversBirago.png	row 1 of 3
+two small circles side by side atop a vertical stroke crossed by a short horizontal bar near the bottom, like two joined balloons on a signpost	t	letter	AB	nevers.htm image NeversBirago.png	row 2 of 3
+small flattened oval/loop atop a vertical stem descending into a wavy zigzag tail, like a pawn shape with a squiggly base	t	letter	AB	nevers.htm image NeversBirago.png	row 5 of 3 -- rows 3-4 blank for this column, next drawn homophone is at row 5
+two vertical prongs of slightly different height rising from a horizontal base stroke, like a small rake/comb	u	letter	AB	nevers.htm image NeversBirago.png	row 1 of 2
+small square/rectangular loop at the top of a vertical stroke, like a flag with a squared pennant	u	letter	AB	nevers.htm image NeversBirago.png	row 2 of 2
+(blank -- no homophone drawn)	x	letter	AB	nevers.htm image NeversBirago.png	column verified empty by both blind passes
+(blank -- no homophone drawn)	y	letter	M	nevers.htm image NeversBirago.png	one blind pass placed a symbol here (the dumbbell mark, below); settled against z by this worker's pixel column-boundary check, see file header note -- column is blank
+two small circles connected by a short horizontal bar, dumbbell/barbell shape ('o-o')	z	letter	M	nevers.htm image NeversBirago.png	row 1 of 2; column settled from y by this worker's pixel column-boundary check, see file header note
+cursive 'm' shape (three humps/legs) with a small closed loop or dot nested inside the first hump	z	letter	AB	nevers.htm image NeversBirago.png	row 5 of 2 -- row 2-4 blank for this column, next drawn homophone is at row 5; both blind passes agreed this one sits under z (only the row-1 dumbbell mark was disputed)
+hook/loop stroke (two curved humps, like a backwards '3' or script epsilon) joined by a short horizontal stroke to a small closed circle on its right	et?	word	AB	nevers.htm image NeversBirago.png	only homophone drawn for the "et?" cell (French "and"); printed header reads "et?" with the question mark, per both blind passes
+small squared/rounded loop at the top of a vertical stroke that curves into a hook at the bottom, like cursive 'g'/'q' or numeral '9'	che	word	AB	nevers.htm image NeversBirago.png	word-code table, column 1 of 7
+small diamond/lozenge loop, or a small circle/loop with a descender curling left, distinct in stroke from che's sign	per	word	AB	nevers.htm image NeversBirago.png	word-code table, column 2 of 7
+right-angle bracket shape (like a backwards 'L' or a comb) merged with a small plus/cross mark beside it	qual	word	AB	nevers.htm image NeversBirago.png	word-code table, column 3 of 7
+downward-pointing open triangle/arrowhead pierced through the middle by a vertical stroke extending above and below it	quello	word	AB	nevers.htm image NeversBirago.png	word-code table, column 4 of 7
+plain digits "85" (a small tick/apostrophe-like mark drawn above the 8)	carmagnola	name	AB	nevers.htm image NeversBirago.png	word-code table, column 5 of 7; both blind passes read the exact same digit string with high confidence
+plain digits "86"	turino	name	AB	nevers.htm image NeversBirago.png	word-code table, column 6 of 7; both blind passes read the exact same digit string with high confidence
+plain digits "89" (a small tick/apostrophe-like mark drawn above the 8, same style as carmagnola's)	bugonotti	name	AB	nevers.htm image NeversBirago.png	word-code table, column 7 of 7; both blind passes read the exact same digit string with high confidence

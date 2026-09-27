@@ -1,8 +1,71 @@
-# BLOCKED (INTAKE-3251, 27 Sept 2026): no rows. Tomokiyo's printed table for the Ceppo-Nevers Cipher
-# (reconstructed by him from BnF fr.4702's interlined decipherment) is the hand-drawn image nevers_add1.png,
-# embedded in sources/cryptiana/web/nevers.htm after the fr.4702 paragraph. That image is not present in this
-# repository's local mirror and is hosted on cryptiana.web.fc2.com, outside this job's network allowance
-# (Gallica IIIF and the BnF catalogue only). See ../NOTES.md "Key blocker" for the next step. Do not fill this
-# file from a guess or another cipher's table -- transcribe it from the actual image, with a second blind pass,
-# per CLAUDE.md rule 1 ("as transcribed, never silently repaired") and the fr7129 lesson.
-sign	value	kind	source	unclear	note
+# Ceppo-Nevers Cipher, reconstructed by S. Tomokiyo from BnF fr.4702 fol.37 (interlined decipherment on
+# Cesare Ceppo's letters to the Duke of Nevers), supplemented from BnF fr.3521. Transcribed KEY-IMG-3251,
+# 27 Sept 2026, from the hand-drawn table image nevers_add1.png (embedded in nevers.htm, fetched from
+# cryptiana.web.fc2.com/code/, see sources/cryptiana/web/manifest_2026-09-27-keyimg.tsv), by two independent
+# blind Sonnet subagent reads (each shown only the image, no context), mechanically merged; disagreements
+# settled by this worker's own look at the image (pixel-cropped column/row boundaries against the header's
+# own white-text glyph positions). Homophonic substitution alphabet, no j/k/v/w (French cipher convention:
+# i covers j, u covers v). Columns b, x, y carry no drawn homophone in this table (confirmed blank by both
+# blind passes and by zero-dark-pixel pixel check on b/x/y). "sign" describes the hand-drawn mark's shape
+# (glyphs cannot be typed); it is not a claim about the mark's origin in any other alphabet. Grade AB = both
+# blind passes agreed on this cell's position and rough shape; grade M = this worker settled a disagreement
+# between the two passes by looking at the image directly (pixel column-boundary check).
+sign	value	kind	grade	source	note
+cursive loop like a Greek lambda / looped 'l', small dot near the base	a	letter	AB	nevers.htm image nevers_add1.png	row 1 of 4 homophones for a
+large cursive double-loop, figure-eight-like, tail sweeping right	a	letter	AB	nevers.htm image nevers_add1.png	row 2 of 4
+small hook/loop like a backward comma or a '6', with a dot near it	a	letter	AB	nevers.htm image nevers_add1.png	row 3 of 4
+crisp (non-shaded, ruled-line) open rectangle missing its right/bottom side, upside-down 'Π' with a short vertical tick inside	a	letter	AB	nevers.htm image nevers_add1.png	row 4 of 4; drawn with straight ruled lines, unlike the other 3 cursive homophones in this column
+(blank -- no homophone drawn)	b	letter	AB	nevers.htm image nevers_add1.png	column verified empty by both blind passes (one confirmed zero dark pixels)
+vertical stroke curling into a small loop at the bottom, like cursive 'b' or a '6'	c	letter	AB	nevers.htm image nevers_add1.png	row 1 of 3
+double wave/zigzag, like a flattened cursive 'm'/'w', two connected humps	c	letter	AB	nevers.htm image nevers_add1.png	row 2 of 3
+cursive '2' or 'z' shape with a small dot above it	c	letter	AB	nevers.htm image nevers_add1.png	row 3 of 3 (only rows 1, 2 and 5 are filled for this column; rows 3-4 blank)
+loop at the top of a vertical stroke, crossed by a short horizontal bar below the loop, like a florin sign or 'q'/'9' with a crossbar	d	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+two roughly parallel horizontal wavy strokes stacked, like a hand-drawn equals sign or double dash	d	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2
+cursive lowercase 'm' with a small dot/mark above the right hump	e	letter	AB	nevers.htm image nevers_add1.png	row 1 of 3
+shape resembling the digit '3' in cursive script	e	letter	AB	nevers.htm image nevers_add1.png	row 2 of 3
+plain crisp plus/cross sign (+), ruled not cursive	e	letter	AB	nevers.htm image nevers_add1.png	row 3 of 3
+small closed loop/circle with a curling tail, like a comma merged with an 'o', or a reversed '6'	f	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+cursive shape with two loops joined by a horizontal cross-stroke, ornate ampersand-like, or a flourished capital H/A	f	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2
+small tight solid/filled oval or ring, bold 'o'-like	g	letter	AB	nevers.htm image nevers_add1.png	only homophone drawn for g; one pass read a dot inside, one read a hollow ring -- not re-settled (low stakes, does not change the letter assignment)
+cursive shape resembling a '9' or lowercase 'g', loop with a curved hooked descender	h	letter	AB	nevers.htm image nevers_add1.png	only homophone drawn for h
+cursive double-loop like 'w' plus a flourish, ascending stroke ending in a small dot at the top	i	letter	AB	nevers.htm image nevers_add1.png	row 1 of 3
+thick cursive 'Z' or digit '2' shape, rounded top loop and angular lower stroke	i	letter	AB	nevers.htm image nevers_add1.png	row 2 of 3
+cursive ligature resembling 'fs'/'ts'/'js' -- looped ascender joined to an 's'-like curve, small dot above	i	letter	AB	nevers.htm image nevers_add1.png	row 3 of 3
+thick dark loop resembling script 'Z'/'2' with an extra rounded loop, pretzel-like	l	letter	AB	nevers.htm image nevers_add1.png	row 1 of 3
+compound cursive shape, a 'z'-like curve above joined to a small comma/tail stroke below	l	letter	AB	nevers.htm image nevers_add1.png	row 2 of 3
+angular zigzag ascender connecting into a squared loop at the bottom, like a long-s or script '5'	l	letter	AB	nevers.htm image nevers_add1.png	row 3 of 3
+small hook/flag at the top connecting down into a loop, like cursive 'b'/'6' with a decorative tick	m	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+small loop at top with a long tail sweeping right then curling back left underneath, like a flourished 'g'/'q'	m	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2
+diagonal slash-like stroke flanked by a small dot above-left and a small dot below-right, like a tilted division sign	n	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+angular cursive shape like an italic capital A/V with a curled top, two small foot-strokes at the base	n	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2
+'V'-shaped stroke crossed by a short horizontal line near the top, like a checkmark crossed by a bar	o	letter	AB	nevers.htm image nevers_add1.png	row 1 of 3
+two short parallel horizontal strokes crossed by a diagonal, like a not-equal sign (≠)	o	letter	AB	nevers.htm image nevers_add1.png	row 2 of 3
+vertical stroke with an attached rounded loop on the right, like eszett (ß), a flat sign, or cursive B	o	letter	AB	nevers.htm image nevers_add1.png	row 3 of 3
+rounded open hook curving from upper right to lower left, like a backward 'c' or closing parenthesis with a curl	p	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+angular crossing shape like an 'X' or a pair of dividers, two leg-like strokes meeting a horizontal stroke	p	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2
+cursive shape like lowercase 'n'/script 'w', two connected rounded humps	q	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+clearly legible letter 'd' (rounded loop with a tall right-hand ascender); one pass noted it is rendered in the crisp, differently-coloured style of the printed page text rather than the shaded hand-drawn ink of the other cells in this table	q	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2; possible deliberate reuse of the plain letter 'd' as this homophone of q -- not confirmed, flagged for the solver
+tangled cursive shape like capital A/4, crossed by a horizontal stroke, extra loops near the top	r	letter	AB	nevers.htm image nevers_add1.png	row 1 of 4
+cursive ligature like 't' joined to a backward '3'/'z', slanted ('tz'-like)	r	letter	AB	nevers.htm image nevers_add1.png	row 2 of 4
+gently wavy near-horizontal stroke flanked by a small dot above and another below	r	letter	AB	nevers.htm image nevers_add1.png	row 3 of 4
+elaborate cursive double-loop resembling '93' combined, or script capital B, tail curling down	r	letter	AB	nevers.htm image nevers_add1.png	row 4 of 4
+loop resembling cursive '9'/'g' with a small dot, above a long straight horizontal underline stroke	s	letter	AB	nevers.htm image nevers_add1.png	row 1 of 5
+two stacked small loops connected by a diagonal stroke, like a tilted figure-eight	s	letter	M	nevers.htm image nevers_add1.png	row 2 of 5; passes diverged in detail (one also read a small circle atop a plus, Venus-symbol-like) -- position agreed, exact shape not fully resolved
+small circle/oval loop, possibly crossed by a vertical or plus-like stroke below it	s	letter	M	nevers.htm image nevers_add1.png	row 3 of 5; passes diverged in detail -- position agreed, exact shape not fully resolved
+crisp (ruled-line) angular corner-bracket, vertical meeting horizontal at a right angle (rotated L), with a small separate tick/check mark beside it	s	letter	AB	nevers.htm image nevers_add1.png	row 4 of 5; drawn with straight ruled lines, unlike the cursive homophones above it in this column
+cursive ligature resembling 'ey'/'cy' -- rounded loop joined to a stroke with a descending curved tail	s	letter	AB	nevers.htm image nevers_add1.png	row 5 of 5; both blind passes independently flagged this mark's style as closer to the similar row-5 marks under t and z than to s's own rows 1-4 -- may be a word-code/abbreviation rather than an ordinary homophone; position is literally s's row 5, meaning not confirmed
+cross/hash-like mark formed by two intersecting thick strokes plus a short diagonal tick; shaded/hand-drawn, distinct from the crisp vector '+' under e	t	letter	AB	nevers.htm image nevers_add1.png	row 1 of 3
+cursive shape with an oval loop at top and a long diagonal tail descending to the lower left, like script 'f' or a Greek phi with a tail	t	letter	AB	nevers.htm image nevers_add1.png	row 2 of 3
+cursive ligature resembling 'ey'/'cy', same style as s's and z's row-5 marks	t	letter	AB	nevers.htm image nevers_add1.png	row 3 of 3 (this column's row 5); see the s-row-5 note on possible word-code status
+'X' shape formed by two crossing diagonal strokes with a short horizontal stroke/flourish at the base	u	letter	AB	nevers.htm image nevers_add1.png	row 1 of 2
+cursive shape with two connected loops stacked, like script capital E or a figure-8	u	letter	AB	nevers.htm image nevers_add1.png	row 2 of 2
+(blank -- no homophone drawn)	x	letter	AB	nevers.htm image nevers_add1.png	column verified empty by both blind passes
+(blank -- no homophone drawn)	y	letter	AB	nevers.htm image nevers_add1.png	column verified empty by both blind passes
+cursive ligature resembling 'ey'/'cy', same style as s's and t's row-5 marks	z	letter	AB	nevers.htm image nevers_add1.png	only homophone drawn for z, at row 5 (rows 1-4 blank); see the s-row-5 note on possible word-code status
+cursive figure-8/looped-S shape, two loops stacked vertically	et	word	AB	nevers.htm image nevers_add1.png	the French conjunction "and", printed label "et" above it in the table's right-hand box
+plain crisp cross/plus sign with a small tick near one arm	null	null	AB	nevers.htm image nevers_add1.png	null 1 of 6, printed label "nulls" above the row of six null signs
+cursive lowercase 'f' -- vertical stroke with a loop at the bottom	null	null	AB	nevers.htm image nevers_add1.png	null 2 of 6
+cursive loop like '6'/'b' with a short flick/hook rising from the top	null	null	AB	nevers.htm image nevers_add1.png	null 3 of 6
+small hook/loop like 'p' or a backward comma sitting on a short horizontal base stroke	null	null	AB	nevers.htm image nevers_add1.png	null 4 of 6
+cursive ligature resembling the digits '67' joined -- a loop followed by an angular stroke	null	null	AB	nevers.htm image nevers_add1.png	null 5 of 6
+cursive ligature resembling '6' joined to a flourished 's'	null	null	AB	nevers.htm image nevers_add1.png	null 6 of 6
