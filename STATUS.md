@@ -90,6 +90,32 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## LANE SALV handoff (session_01PUAQ15dRtV3yV1eskpRLg5), 26-27 September 2026 (closed at the 300k context line; one worker still live)
+
+Target: fr2933-salviati-1525, status **partial** (NEAR row unchanged: no control-backed margin appeared). Brief:
+`.claude/briefs/runs/2026-09-26-lane-salv-orchestrator.md`. Spend by get_session: SALV-KP 5.36 D-, SALV-PLAIN1 21.22 D-,
+SALV-CTX 3.46 D (Opus), SALV-CTX2 3.24 D, SALV-PLAIN2 28.09 D-; SALV-PLAIN3 live (14.48 at the close); orchestrator 6.27.
+
+What the lane established: (1) job 3: Sanudo *Diarii* vol. 40 (idiariidimarinos40sanu) prints Navagero's Toledo despatches of
+10/16/17 Oct 1525 naming the Legate, his two papal mandates (streto/ampio), Gattinara, Madame d'Alencon, and the Legate's
+16 Oct courier to Rome by sea -- context and a 44-word period word list (kp/), no crib aligned to any sign; Lettere di
+principi I-III, Castiglione, Desjardins: no October 1525 Salviati letter. (2) job 1: plain-Italian boxes transcribed on
+six leaves (plain_boxes.tsv 1,006 rows, ciphertext_with_plain.txt, build_ciphertext_with_plain.py --check), raw two-pass
+word disagreement 40-54 pct; f55v and f56v were settled by confidence, not from the image (weak); f57r/f57v are SALV-PLAIN3's.
+(3) job 2: the wordcode `context` option (edge-word padding + word bigram) failed its pre-registered control gate twice
+(it16dip +0.07, share-matched it +0.037 code-class, lower on 2 of 3 seeds each; hapax code types 0 in every arm): logged
+untested-by-this-tool at N=2839, not refuted; the target was never run with it (job 2b not licensed). it16dip corpus built
+(LOO false-negative 47 pct, folds 2-96 pct: not a reliable judge).
+
+Named next step (cheapest first): (a) the plain/sign split. Of the boxes the spec labels plain, the readers called about one
+in five cipher ([C]): 103/464 on f54r-f55r, 28/171 f56r, 6/207 f56v. If those are real sign boxes, the spec's row_pattern
+and run boundaries -- the input to every family run so far -- are wrong in places. A Sonnet crop check of the [C]-flagged
+boxes against the glyph atlas (one call per leaf, crops only), then a build_spec.py rebuild if confirmed, comes before any
+further family. (b) re-settle f55v and f56v from the image (one subagent call each). (c) not recommended: a third
+context-option control, more corpus swaps, or another syllabary variant (rule 3, repeated-attempt shapes).
+Live at close: SALV-PLAIN3 (session_019k1f2SHPgMrX2XJqwDe39N, Sonnet, cap 18, box to about 00:40 UTC 27 Sept) -- the parent
+ledgers and archives it; interrupt it if get_session passes USD 22. Check-ins armed: none.
+
 ## LANE ARM3 handoff (session_01PmFYDrdFDjraA2rc932HcQ), 26 September 2026 (closed on brief: the three jobs done)
 
 Target: armstrong-madison-1808, status **open**, no NEAR row. Brief: `.claude/briefs/runs/2026-09-26-lane-arm3-orchestrator.md`.

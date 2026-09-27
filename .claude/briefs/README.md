@@ -113,6 +113,10 @@ applied unchanged, and three named cycle-3 briefs written from it.
   applies if the first unit runs hotter). A lane orchestrator that recalibrates a rate this way adds the new
   precedent here in the same close-out pass that writes its STATUS.md handoff, rather than leaving it for a
   retrospective to notice a second time.
+  Plain-word transcription of a mixed cipher/clear chancery leaf (the clear words between sign runs, two blind passes plus a
+  per-leaf reconciliation from the image): USD 5 a leaf when every image goes to subagent calls and the worker only scripts
+  and merges (SALV-PLAIN1, fr2933-salviati-1525, 26 Sept 2026), USD 12 a leaf when the worker opens the crops itself and its
+  context grows past 300k (SALV-PLAIN2); price at 5 plus one leaf of margin and write "you do not open crop images yourself".
   Cribs or context reading against a mostly-clear leaf with scattered code tokens, two blind passes plus reconcile: about USD 3.5 a leaf all in (malsburg-hessen-1636, bMALX, 26 Sept 2026), not the ~1.8/leaf a dense-leaf-shaped estimate gives (RETRO-2026-09-26h.md Q1, applied by the owner-account parent after LEARN5, 26 Sept).
 - **Run `print_check.py` on your own decoded phrases before posting "reading ready" (26 Sept 2026, V9-MOR,
   rah-morillo-1817 item 3).** A verifier finding the plaintext already in print through `tools/print_check.py`'s
