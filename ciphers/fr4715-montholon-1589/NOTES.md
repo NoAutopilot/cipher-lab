@@ -327,3 +327,119 @@ unchanged at 25 MB (no new images fetched or cut).
 ## Pool (27 Sept 2026, parent 7m)
 
 f.81v (canvas 178) is a blank leaf by direct inspection (parent 7m, 12:26 UTC): the letter is one leaf. CS-4715-POOL's check-solved pass on the twenty-two fr.4715 letters nevers.htm places in the Vieuville-Nevers cipher is in `POOL.md` (11 carry a period decipherment on the leaf per the BnF's own depouillement, 9 are open or partial, about 13,000 signs with this folder's key of record). The first pool job is MONT-KEY6 (no.6 f.24, interlinear, key recovery through tools/interlinear_align.py).
+
+## MONT-4715C (27 Sept 2026)
+
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-4715c.md`, run as its restart MONT-4715C2 (the first session
+stopped on an API error before pushing anything). Script-only: no fetch, no subagent, no new transcription pass.
+Everything below regenerates with `scripts/mont4715c.py` (u1, u2prep, classes, u3cover) plus the
+`tools/decode_witness.py` and `scripts/decode_rest.py` commands quoted.
+
+**U0, f.81v.** Viewed `images/f81v_canvas178.jpg` directly: blank -- no ink, only the facing leaf's bleed-through at
+the right edge and two seal impressions. Confirms the "Pool" section's note (parent 7m, 12:26 UTC); the letter is
+one leaf. One-line note added to `images/manifest.json`'s f81v entry. MONT-4715B's next step (a) is void.
+
+**U1, transcription accuracy without the key.** Global LCS over group strings between our v2 signs
+(`witness/witness_signs_v2.tsv`, L02-L17, 1,054 groups: key-row groups rendered as their key sign, dotted as
+`'NN`, unmatched-definite as read, undecidable/illegible as a token that never matches) and Tomokiyo's dump
+(`witness/aligned_dump_codes.txt`, 959 groups, grade H). Control: the same LCS with our group order shuffled within
+each folio line, 20 shuffles (seed 1) -- an order shuffle changes an LCS, so this control can fail differently from
+the target.
+
+| L02-L17 | groups matched (real) | order-shuffled mean (sd) | z |
+|---|---|---|---|
+| all groups, as drawn | 380/959 = 0.396 | 0.290 (0.004) | 27.7 |
+| bare (letter) groups | 376/816 = 0.461 | 0.338 (0.005) | 27.5 |
+| dotted groups, dot required | 3/129 = 0.023 | 0.015 (0.007) | 1.3 |
+| symbol/other | 1/14 = 0.071 | 0.014 (0.029) | 1.9 |
+| all groups, dot-blind (apostrophe stripped both sides) | 448/959 = 0.467 | 0.308 (0.004) | 37.2 |
+| dotted groups, dot-blind | 75/129 = 0.581 | 0.243 (0.035) | 9.7 |
+
+(Over L02-L36 the as-drawn figure is 457/959 = 0.477 vs shuffled 0.404, z 21.1; the gain over L02-L17 is near what
+chance adds with 1,470 more groups, consistent with the dump ending about L17.) The order is real -- z 28 -- but
+**only about 46 pct of Tomokiyo's letter groups are recovered in order by our transcription**, against MONT-4715B's
+92.9 pct "settled". Settled means the two passes and a reconciler agreed on a reading, not that the reading is what
+Tomokiyo printed. Dots are almost never seen by our passes (7 dotted signs in L02-L17 vs 129 in the dump; 13.5 pct
+of the dump's groups are dotted, not the "roughly a third" of the older caveat), but the digits under the dot are
+read about as well as letter groups (0.58 dot-blind). Caveat: part of the 54 pct loss is segmentation (our
+`123`/`773`/`231` runs vs the dump's `1 23`, `73 1`...), which a group-level LCS counts as a miss; this number is a
+floor on accuracy, not an error rate. Tomokiyo's dump is itself a transcription; it is treated as the reference
+here, not as the manuscript.
+
+Per-class breakdown of our v2 signs over L02-L17 (1,054): key-row letter 753 (71.4 pct), unmatched definite 209
+(19.8), undecidable 83 (7.9), dotted 7 (0.7), illegible 2 (0.2). The dump over the same passage (959): bare in key
+818 (85.3), bare not in key 1 (0.1), dotted 129 (13.5), symbol/other 11 (1.1). The gap sits in our 209
+unmatched-definite readings (mostly segmentation runs and undotted word-codes such as 42, 46, 27) -- the dump has
+essentially none.
+
+**U2, the ceiling of decode_witness's statistic.** `python3 scripts/mont4715c.py u2prep` writes
+`witness/tomokiyo_signs_ceiling.tsv` (the dump's 959 groups, 818 resolved to a key row by exact sign match, dotted
+and symbol groups '?'). Then `python3 tools/decode_witness.py --key keys/key_vieuville_nevers.tsv --signs <file>
+--plain witness/witness_opening_plain.tsv --shuffles 20 --seed 1`:
+
+| signs file | real | shuffled mean (sd) | z | rank |
+|---|---|---|---|---|
+| ceiling: Tomokiyo's groups through this key | 0.7009 (818/1167) | 0.3030 (0.0239) | 16.66 | 1 of 21 |
+| MONT-4715B v2, full L02-L36 (as registered) | 0.4773 (557/1167) | 0.4240 (0.0337) | 1.58 | 2 of 21 |
+| v2, L02-L17 only (length-matched to the opening) | 0.3805 (444/1167) | 0.2860 (0.0210) | 4.50 | 1 of 21 |
+
+Boundary sensitivity of the length-matched run (same command, v2 sliced to L02-Lnn): L15 z 4.67, L16 4.49, L17
+4.50, L18 4.27, L19 3.85, L20 3.49, L22 3.14 -- rank 1 of 21 throughout, z falling steadily as signs past the
+opening are added. The ceiling is 818/818: every key-resolvable group of Tomokiyo's dump lands on its clerk letter,
+so the statistic's maximum on this passage is 0.70 (the remaining 0.30 is mostly the dotted word-codes' letters, plus 11 symbol groups), not
+0.48-0.50. **Two things follow.** (1) The shortfall to the ceiling is the transcription (U1: 46 pct of letter
+groups in order), not a saturated statistic. (2) The z 1.58 was depressed by the scoring window, not only by
+transcription error: running decode_witness over all 2,524 signs lets the 1,470 signs of L18-L36 feed the global
+LCS, which lifts the shuffled floor from 0.29 to 0.42 while adding little to the real key. Over the lines the
+printed opening covers, the v2 transcription scores z 4.5, rank 1 of 21, n 1,167, clearing the pre-registered z >= 2
+and n >= 30 numbers. This length-matched window was not the registered run (MONT-4715 fell back to the unsliced run
+because `--sample-lines` could not match p/L line ids), so it is reported beside the registered FAIL, not in place
+of it: the key reads the letter positions of this passage above chance through our transcription; the registered
+full-passage calibration remains z 1.58. It does not say the key is right in every cell, and it licenses no
+reading.
+
+**U3, v2 decode of L18-L36.** `python3 scripts/decode_rest.py witness/witness_signs_v2.tsv
+keys/key_vieuville_nevers.tsv L18 L36` -> `witness/decode_rest_L18-L36_v2.txt` and `.stats.txt` (v1 files kept).
+French word-cover: `python3 scripts/mont4715c.py u3cover <signs> 18 36` -- fraction of H+M letters inside a
+maximum non-overlapping cover by words of 3-14 letters occurring at least 3 times in `tools/data/fr16` (3 files,
+15,718 words; accents stripped, j->i, v->u), with I tokens breaking runs; control: 20 keys with letter values
+permuted among the letter rows (seed 1), dotted-word glosses unchanged.
+
+| | H | M | I | unread | word-cover real | letter-shuffled keys mean (sd), max | z |
+|---|---|---|---|---|---|---|---|
+| v1 signs (MONT-4715) | 1039 | 12 | 419 | 0.285 | 0.489 (526/1075) | 0.302 (0.091), 0.461 | 2.07 |
+| v2 signs (MONT-4715B) | 1044 | 12 | 414 | 0.282 | 0.482 (520/1080) | 0.295 (0.093), 0.448 | 2.00 |
+| positive control: Tomokiyo's dump (the opening, not L18-L36) | 818 | 129 as glossed | -- | -- | 0.923 (1065/1154) | 0.574 (0.093), 0.764 | 3.74 |
+
+The v2 decode barely differs from v1 (5 more H) because the reconciliation changed few positions past L17 into key
+signs. Word-cover sits about two sd above letter-shuffled keys but below the positive control's shuffled mean; the
+cover statistic's floor depends on run length (the dump's unbroken runs give chance 0.57), so the two rows are not
+directly comparable. No judge PASS/FAIL (no spec for this target), no reading claim. First three decoded lines,
+exactly as `decode_rest.py` prints them (`_` = I, `[...]` = M from this letter's own dump gloss):
+
+```
+L18  ua_iceft_anecea_ai_[que]faia_nar_aybdemeu__auecl__a_uealuy[que]_legat_unia_unia___a      H 56  M 2  I 17
+L19  habileaa_ucced_raed_r_caathali_m_____euniane_cag_cagnaia_eceluy[qui]fplu                  H 54  M 1  I 13
+L20  ea_t_mia__liberae_gaau____n_radm__a__et_faa__ecla___etiua__a_a_[qui]puia_                 H 43  M 1  I 25
+```
+
+These are letter strings under the key, not a reading: rule 4 counts, H 153 / M 4 / I 55 over the three lines, no C.
+
+**Verdict.** The chance floor and the ceiling are now both measured: through Tomokiyo's own groups this key scores
+0.70 against 0.30 (z 16.7), and our v2 transcription recovers only about 46 pct of his letter groups in order, so
+MONT-4715B's 92.9 pct was agreement among our readers, not accuracy. Over the lines the opening covers, the v2
+transcription still carries the key above chance (z 4.5, rank 1 of 21, stable z 3.1-4.7 across window ends
+L15-L22), and the registered full-passage z 1.58 was depressed mainly by scoring 1,470 signs the opening does not
+cover. The key reads the letter positions; the shortfall is the transcription (segmentation and unseen dots), so a
+decode of L18-L36 from this transcription stays a letter string with 28 pct unread, not a reading.
+
+**Named next step.** Not a further reconciliation of the same 1,037 disagreements (rule 3's repeated-attempt
+paragraph) and not f.81v (blank). Material with a period gloss to train and check the reader: MONT-KEY6's
+interlinear no.6 f.24 and the POOL.md letters with a decipherment on the leaf, used to (a) calibrate our
+transcription of this hand against a known clear text group by group (the U1 measure, where 46 pct is the number
+to beat), and (b) recover the dotted word-code table, whose absence is 30 pct of this passage's letters; only then
+a fresh segmentation-aware transcription of f.81r L18-L36. For `tools/decode_witness.py`: its `--sample-lines`
+cannot slice a witness whose plain ids differ from its sign ids; a sign-range option (as used here by slicing the
+file) would have avoided the misleading unsliced run -- suggestion only, not done here.
+
+Requests this job: 0 network requests; 0 subagents. No credentials, no AskUserQuestion, no novelty wording.

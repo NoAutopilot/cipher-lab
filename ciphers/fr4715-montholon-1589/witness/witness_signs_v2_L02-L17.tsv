@@ -1,0 +1,1055 @@
+line	pos	key_row	shape_note	confidence
+L02	1	?	undecidable	M
+L02	2	?	dotted:'47	M
+L02	3	9		M
+L02	4	?	unmatched:41	M
+L02	5	?	unmatched:26	M
+L02	6	5		M
+L02	7	?	unmatched:03	M
+L02	8	15	reconciled:segmentation	M
+L02	9	32	reconciled:segmentation	M
+L02	10	32	reconciled:segmentation	M
+L02	11	?	unmatched:03:reconciled	M
+L02	12	?	unmatched:39:reconciled	M
+L02	13	?	unmatched:45:reconciled	M
+L02	14	?	illegible	M
+L02	15	?	illegible	M
+L02	16	?	unmatched:45:reconciled	M
+L03	1	32		M
+L03	2	12		M
+L03	3	12	reconciled:digit shape	M
+L03	4	9		M
+L03	5	2		M
+L03	6	32		M
+L03	7	1	stripped-leading-zero:05	M
+L03	8	?	unmatched:03	M
+L03	9	23		M
+L03	10	6		M
+L03	11	15	reconciled:segmentation	M
+L03	12	1	stripped-leading-zero:05	M
+L03	13	16	reconciled:segmentation	M
+L03	14	31	reconciled:segmentation	M
+L03	15	15		M
+L03	16	1	stripped-leading-zero:05	M
+L03	17	16		M
+L03	18	31		M
+L03	19	6	reconciled:digit shape	M
+L03	20	?	unmatched:26:reconciled	M
+L03	21	11		M
+L03	22	2	reconciled:digit shape	M
+L03	23	2		M
+L03	24	?	unmatched:17	M
+L03	25	1	stripped-leading-zero:05	M
+L03	26	?	unmatched:12:reconciled	M
+L03	27	1	stripped-leading-zero:05	M
+L03	28	6	reconciled:digit shape	M
+L03	29	14		M
+L03	30	7		M
+L03	31	14		M
+L03	32	?	unmatched:31:reconciled	M
+L03	33	31	reconciled:digit shape	M
+L03	34	14	reconciled:digit shape	M
+L03	35	12		M
+L03	36	31		M
+L03	37	24		M
+L03	38	9	reconciled:segmentation	M
+L03	39	?	unmatched:12:reconciled	M
+L03	40	6	reconciled:digit shape	M
+L03	41	7	reconciled:digit shape	M
+L03	42	34		M
+L03	43	4	reconciled:digit shape	M
+L03	44	?	unmatched:55	M
+L03	45	15		M
+L03	46	?	unmatched:09:reconciled	M
+L03	47	?	unmatched:77:reconciled	M
+L03	48	10		M
+L03	49	9	reconciled:segmentation	M
+L03	50	2		M
+L03	51	?	undecidable	M
+L03	52	15		M
+L03	53	11		M
+L03	54	6	reconciled:segmentation	M
+L03	55	2	reconciled:digit shape	M
+L03	56	?	undecidable	M
+L03	57	?	unmatched:15	M
+L03	58	32		M
+L03	59	20	reconciled:digit shape	M
+L03	60	6	reconciled:digit shape	M
+L03	61	?	undecidable	M
+L03	62	10	reconciled:digit shape	M
+L03	63	16	reconciled:digit shape	M
+L03	64	24	reconciled:digit shape	M
+L03	65	20	reconciled:digit shape	M
+L04	1	31		M
+L04	2	?	unmatched:12:reconciled	M
+L04	3	16	reconciled:digit shape	M
+L04	4	31		M
+L04	5	6		M
+L04	6	16		M
+L04	7	1	stripped-leading-zero:05	M
+L04	8	?	unmatched:03:reconciled	M
+L04	9	15		M
+L04	10	15		M
+L04	11	6		M
+L04	12	11		M
+L04	13	14	reconciled:digit shape	M
+L04	14	?	undecidable	M
+L04	15	?	unmatched:32	M
+L04	16	32		M
+L04	17	14		M
+L04	18	31		M
+L04	19	14		M
+L04	20	32	reconciled:digit shape	M
+L04	21	12		M
+L04	22	5	reconciled:digit shape	M
+L04	23	32		M
+L04	24	16	reconciled:segmentation	M
+L04	25	1	stripped-leading-zero:05	M
+L04	26	15	reconciled:segmentation	M
+L04	27	24	reconciled:segmentation	M
+L04	28	16		M
+L04	29	1	stripped-leading-zero:05	M
+L04	30	15		M
+L04	31	24		M
+L04	32	?	unmatched:42	M
+L04	33	14		M
+L04	34	?	unmatched:03	M
+L04	35	31		M
+L04	36	2		M
+L04	37	3		M
+L04	38	14		M
+L04	39	?	unmatched:61:reconciled	M
+L04	40	4	reconciled:segmentation	M
+L04	41	?	undecidable	M
+L04	42	?	unmatched:31:reconciled	M
+L04	43	4		M
+L04	44	2		M
+L04	45	15	reconciled:segmentation	M
+L04	46	6	reconciled:segmentation	M
+L04	47	11	reconciled:segmentation	M
+L04	48	1	stripped-leading-zero:05	M
+L04	49	15	reconciled:digit shape	M
+L04	50	2	reconciled:digit shape	M
+L04	51	3	reconciled:digit shape	M
+L04	52	?	unmatched:37	M
+L04	53	?	unmatched:09:reconciled	M
+L04	54	?	undecidable	M
+L04	55	15		M
+L04	56	1	stripped-leading-zero:05	M
+L04	57	16		M
+L05	1	?	unmatched:55	M
+L05	2	14		M
+L05	3	32		M
+L05	4	6		M
+L05	5	25		M
+L05	6	?	unmatched:12:reconciled	M
+L05	7	2	reconciled:digit shape	M
+L05	8	3		M
+L05	9	12		M
+L05	10	14		M
+L05	11	12		M
+L05	12	31		M
+L05	13	6		M
+L05	14	?	unmatched:1124:reconciled	M
+L05	15	4	reconciled:segmentation	M
+L05	16	31	reconciled:segmentation	M
+L05	17	?	undecidable	M
+L05	18	?	unmatched:46:reconciled	M
+L05	19	14		M
+L05	20	4		M
+L05	21	2		M
+L05	22	?	unmatched:03	M
+L05	23	?	undecidable	M
+L05	24	32		M
+L05	25	6		M
+L05	26	32		M
+L05	27	14		M
+L05	28	31		M
+L05	29	?	unmatched:123:reconciled	M
+L05	30	15	reconciled:segmentation	M
+L05	31	1	stripped-leading-zero:05	M
+L05	32	?	unmatched:7:reconciled	M
+L05	33	?	unmatched:12:reconciled	M
+L05	34	15	reconciled:digit shape	M
+L05	35	1	stripped-leading-zero:05	M
+L05	36	16		M
+L05	37	31		M
+L05	38	?	unmatched:12:reconciled	M
+L05	39	?	unmatched:31:reconciled	M
+L05	40	?	undecidable	M
+L05	41	1	stripped-leading-zero:05	M
+L05	42	16	reconciled:segmentation	M
+L05	43	16		M
+L05	44	?	unmatched:51:reconciled	M
+L05	45	4	reconciled:segmentation	M
+L05	46	?	unmatched:37:reconciled	M
+L05	47	?	unmatched:81:reconciled	M
+L05	48	?	unmatched:55:reconciled	M
+L05	49	15	reconciled:segmentation	M
+L05	50	?	unmatched:04	M
+L05	51	25		M
+L05	52	20		M
+L05	53	9		M
+L05	54	9		M
+L05	55	10	reconciled:segmentation	M
+L05	56	2	reconciled:segmentation	M
+L05	57	32	reconciled:segmentation	M
+L05	58	10		M
+L05	59	2		M
+L05	60	?	undecidable	M
+L05	61	?	unmatched:35	M
+L05	62	14		M
+L05	63	2		M
+L05	64	?	unmatched:100	M
+L05	65	?	undecidable	M
+L06	1	?	undecidable	M
+L06	2	?	undecidable	M
+L06	3	22	stripped-leading-zero:01	M
+L06	4	1	stripped-leading-zero:05	M
+L06	5	4		M
+L06	6	11		M
+L06	7	6		M
+L06	8	20		M
+L06	9	24		M
+L06	10	16		M
+L06	11	4		M
+L06	12	6		M
+L06	13	5		M
+L06	14	32		M
+L06	15	?	unmatched:03	M
+L06	16	2		M
+L06	17	16		M
+L06	18	10		M
+L06	19	13		M
+L06	20	2		M
+L06	21	14		M
+L06	22	14	reconciled:digit shape	M
+L06	23	35		M
+L06	24	7		M
+L06	25	10		M
+L06	26	5		M
+L06	27	12		M
+L06	28	31		M
+L06	29	11		M
+L06	30	5	reconciled:segmentation	M
+L06	31	12	reconciled:segmentation	M
+L06	32	31	reconciled:segmentation	M
+L06	33	?	unmatched:44:reconciled	M
+L06	34	?	unmatched:99	M
+L06	35	20	reconciled:digit shape	M
+L06	36	12		M
+L06	37	6	reconciled:digit shape	M
+L06	38	1	stripped-leading-zero:05	M
+L06	39	4		M
+L06	40	2	reconciled:segmentation	M
+L06	41	5	reconciled:segmentation	M
+L06	42	6	reconciled:segmentation	M
+L06	43	?	undecidable	M
+L06	44	16		M
+L06	45	1	stripped-leading-zero:05	M
+L06	46	6	reconciled:segmentation	M
+L06	47	?	undecidable	M
+L06	48	1	stripped-leading-zero:05	M
+L06	49	1	stripped-leading-zero:05	M
+L06	50	6		M
+L06	51	5	reconciled:segmentation	M
+L06	52	?	unmatched:231:reconciled	M
+L06	53	2	reconciled:digit shape	M
+L06	54	?	undecidable	M
+L06	55	1	stripped-leading-zero:05	M
+L06	56	?	unmatched:91:reconciled	M
+L06	57	1	stripped-leading-zero:05	M
+L06	58	32	reconciled:segmentation	M
+L06	59	?	unmatched:105:reconciled	M
+L06	60	16		M
+L06	61	6		M
+L06	62	4		M
+L06	63	20		M
+L06	64	14		M
+L06	65	32		M
+L07	1	14		M
+L07	2	6		M
+L07	3	?	unmatched:26	M
+L07	4	10		M
+L07	5	2		M
+L07	6	31		M
+L07	7	16		M
+L07	8	6		M
+L07	9	32		M
+L07	10	?	undecidable	M
+L07	11	32		M
+L07	12	14		M
+L07	13	5		M
+L07	14	?	unmatched:125:reconciled	M
+L07	15	1	stripped-leading-zero:05	M
+L07	16	?	unmatched:35:reconciled	M
+L07	17	?	unmatched:07:reconciled	M
+L07	18	1	reconciled:digit shape	M
+L07	19	14	reconciled:digit shape	M
+L07	20	1	stripped-leading-zero:05	M
+L07	21	32		M
+L07	22	20		M
+L07	23	1	stripped-leading-zero:05	M
+L07	24	32		M
+L07	25	?	unmatched:125	M
+L07	26	?	unmatched:97:reconciled	M
+L07	27	5	reconciled:digit shape	M
+L07	28	?	unmatched:42	M
+L07	29	?	unmatched:13	M
+L07	30	25		M
+L07	31	11	reconciled:digit shape	M
+L07	32	14	reconciled:digit shape	M
+L07	33	?	undecidable	M
+L07	34	1	reconciled:digit shape	M
+L07	35	6	reconciled:digit shape	M
+L07	36	?	undecidable	M
+L07	37	31	reconciled:digit shape	M
+L07	38	12		M
+L07	39	1	stripped-leading-zero:05	M
+L07	40	?	undecidable	M
+L07	41	24		M
+L07	42	?	unmatched:123	M
+L07	43	10		M
+L07	44	2	reconciled:segmentation	M
+L07	45	?	unmatched:175:reconciled	M
+L07	46	?	undecidable	M
+L07	47	?	undecidable	M
+L07	48	?	undecidable	M
+L07	49	2		M
+L07	50	21	reconciled:segmentation	M
+L07	51	2	reconciled:digit shape	M
+L07	52	?	undecidable	M
+L07	53	16		M
+L07	54	?	unmatched:5106:reconciled	M
+L07	55	?	unmatched:5104:reconciled	M
+L07	56	?	unmatched:69:reconciled	M
+L07	57	?	unmatched:9:reconciled	M
+L07	58	?	unmatched:97:reconciled	M
+L07	59	?	unmatched:330:reconciled	M
+L07	60	2	reconciled:segmentation	M
+L07	61	?	unmatched:175:reconciled	M
+L07	62	?	unmatched:271:reconciled	M
+L07	63	?	unmatched:47:reconciled	M
+L07	64	9	reconciled:segmentation	M
+L07	65	?	unmatched:26:reconciled	M
+L07	66	?	undecidable	M
+L07	67	3	reconciled:digit shape	M
+L07	68	?	unmatched:51:reconciled	M
+L07	69	?	unmatched:03:reconciled	M
+L07	70	?	undecidable	M
+L07	71	?	undecidable	M
+L07	72	?	unmatched:97	M
+L07	73	6		M
+L07	74	?	unmatched:223	M
+L07	75	?	undecidable	M
+L07	76	?	unmatched:46:reconciled	M
+L08	1	1	stripped-leading-zero:05	M
+L08	2	32		M
+L08	3	4		M
+L08	4	4		M
+L08	5	6		M
+L08	6	?	undecidable	M
+L08	7	?	unmatched:42:reconciled	M
+L08	8	?	undecidable	M
+L08	9	?	undecidable	M
+L08	10	?	unmatched:35	M
+L08	11	5		M
+L08	12	1	stripped-leading-zero:05	M
+L08	13	15		M
+L08	14	12	reconciled:segmentation	M
+L08	15	4	reconciled:digit shape	M
+L08	16	5		M
+L08	17	1	stripped-leading-zero:05	M
+L08	18	15		M
+L08	19	12		M
+L08	20	16		M
+L08	21	2		M
+L08	22	16		M
+L08	23	31		M
+L08	24	2		M
+L08	25	20		M
+L08	26	2		M
+L08	27	1	stripped-leading-zero:05	M
+L08	28	10		M
+L08	29	?	unmatched:46	M
+L08	30	?	unmatched:3:reconciled	M
+L08	31	1	stripped-leading-zero:05	M
+L08	32	16	reconciled:segmentation	M
+L08	33	1	stripped-leading-zero:05	M
+L08	34	12		M
+L08	35	1	stripped-leading-zero:05	M
+L08	36	16		M
+L08	37	1	stripped-leading-zero:05	M
+L08	38	32		M
+L08	39	14		M
+L08	40	2		M
+L08	41	9		M
+L08	42	1	stripped-leading-zero:05	M
+L08	43	22	reconciled:segmentation	M
+L08	44	?	undecidable	M
+L08	45	6	reconciled:digit shape	M
+L08	46	4		M
+L08	47	7		M
+L08	48	9		M
+L08	49	2		M
+L08	50	4	reconciled:segmentation	M
+L08	51	?	unmatched:125:reconciled	M
+L08	52	4		M
+L08	53	?	unmatched:125	M
+L08	54	?	undecidable	M
+L08	55	16		M
+L08	56	5		M
+L08	57	?	unmatched:122	M
+L08	58	11	reconciled:segmentation	M
+L08	59	?	undecidable	M
+L08	60	1	stripped-leading-zero:05	M
+L08	61	16		M
+L08	62	1	stripped-leading-zero:05	M
+L08	63	32	reconciled:digit shape	M
+L08	64	?	undecidable	M
+L08	65	?	unmatched:03	M
+L08	66	6	stripped-leading-zero:0023	M
+L09	1	32		M
+L09	2	10		M
+L09	3	6		M
+L09	4	?	unmatched:125	M
+L09	5	5		M
+L09	6	6		M
+L09	7	14		M
+L09	8	6		M
+L09	9	32		M
+L09	10	6		M
+L09	11	16		M
+L09	12	6		M
+L09	13	15		M
+L09	14	6		M
+L09	15	?	unmatched:77:reconciled	M
+L09	16	?	undecidable	M
+L09	17	24		M
+L09	18	?	unmatched:35	M
+L09	19	?	unmatched:26	M
+L09	20	?	unmatched:46	M
+L09	21	14		M
+L09	22	?	undecidable	M
+L09	23	2		M
+L09	24	20		M
+L09	25	1	stripped-leading-zero:05	M
+L09	26	31		M
+L09	27	6		M
+L09	28	1	stripped-leading-zero:05	M
+L09	29	31		M
+L09	30	6		M
+L09	31	?	unmatched:03	M
+L09	32	31		M
+L09	33	?	unmatched:27	M
+L09	34	24		M
+L09	35	20		M
+L09	36	?	unmatched:123	M
+L09	37	?	unmatched:773	M
+L09	38	5		M
+L09	39	?	unmatched:12	M
+L09	40	?	unmatched:4	M
+L09	41	11	reconciled:digit shape	M
+L09	42	24		M
+L09	43	4		M
+L09	44	1	stripped-leading-zero:05	M
+L09	45	2		M
+L09	46	15		M
+L09	47	3		M
+L09	48	2		M
+L09	49	31		M
+L09	50	?	unmatched:122:reconciled	M
+L09	51	?	undecidable	M
+L09	52	?	unmatched:77:reconciled	M
+L09	53	5	reconciled:digit shape	M
+L09	54	?	unmatched:03:reconciled	M
+L09	55	6		M
+L09	56	16		M
+L09	57	6		M
+L09	58	?	unmatched:14:reconciled	M
+L09	59	?	unmatched:47:reconciled	M
+L09	60	14		M
+L09	61	?	unmatched:03	M
+L10	1	20		M
+L10	2	6		M
+L10	3	4		M
+L10	4	11		M
+L10	5	6	reconciled:segmentation	M
+L10	6	22	reconciled:digit shape	M
+L10	7	25		M
+L10	8	?	unmatched:42	M
+L10	9	?	undecidable	M
+L10	10	6		M
+L10	11	32		M
+L10	12	6		M
+L10	13	16		M
+L10	14	4		M
+L10	15	?	unmatched:12:reconciled	M
+L10	16	1	reconciled:digit shape	M
+L10	17	1	reconciled:digit shape	M
+L10	18	22	reconciled:digit shape	M
+L10	19	2		M
+L10	20	5		M
+L10	21	1	stripped-leading-zero:05	M
+L10	22	?	unmatched:7:reconciled	M
+L10	23	?	undecidable	M
+L10	24	6		M
+L10	25	15		M
+L10	26	3		M
+L10	27	14		M
+L10	28	6		M
+L10	29	16		M
+L10	30	31		M
+L10	31	15		M
+L10	32	2	reconciled:digit shape	M
+L10	33	14	reconciled:digit shape	M
+L10	34	4		M
+L10	35	1	stripped-leading-zero:05	M
+L10	36	16		M
+L10	37	5		M
+L10	38	32		M
+L10	39	12		M
+L10	40	31		M
+L10	41	?	unmatched:243:reconciled	M
+L10	42	25	reconciled:segmentation	M
+L10	43	?	undecidable	M
+L10	44	?	undecidable	M
+L10	45	25		M
+L10	46	2		M
+L10	47	32		M
+L10	48	6		M
+L10	49	4		M
+L10	50	20		M
+L10	51	6		M
+L10	52	32		M
+L10	53	24		M
+L10	54	4		M
+L10	55	1	stripped-leading-zero:05	M
+L10	56	16		M
+L10	57	?	undecidable	M
+L10	58	6		M
+L10	59	4		M
+L10	60	1	stripped-leading-zero:05	M
+L10	61	31	reconciled:segmentation	M
+L10	62	?	unmatched:125:reconciled	M
+L10	63	31		M
+L10	64	?	undecidable	M
+L10	65	18	reconciled:digit shape	M
+L10	66	6		M
+L10	67	4	reconciled:segmentation	M
+L10	68	15	reconciled:digit shape	M
+L10	69	31		M
+L10	70	6		M
+L10	71	14		M
+L10	72	?	unmatched:4	M
+L11	1	31		M
+L11	2	6		M
+L11	3	14		M
+L11	4	12		M
+L11	5	10	reconciled:digit shape	M
+L11	6	6		M
+L11	7	16		M
+L11	8	4		M
+L11	9	6		M
+L11	10	25		M
+L11	11	?	dotted:'47	M
+L11	12	14		M
+L11	13	14		M
+L11	14	6		M
+L11	15	12		M
+L11	16	14	reconciled:segmentation	M
+L11	17	2	reconciled:digit shape	M
+L11	18	?	undecidable	M
+L11	19	10	reconciled:digit shape	M
+L11	20	?	unmatched:42	M
+L11	21	22	reconciled:segmentation	M
+L11	22	16		M
+L11	23	?	undecidable	M
+L11	24	20	reconciled:digit shape	M
+L11	25	1	stripped-leading-zero:05	M
+L11	26	?	unmatched:03:reconciled	M
+L11	27	?	unmatched:04:reconciled	M
+L11	28	?	unmatched:2	M
+L11	29	14	reconciled:segmentation	M
+L11	30	14		M
+L11	31	?	undecidable	M
+L11	32	12		M
+L11	33	1	stripped-leading-zero:05	M
+L11	34	?	unmatched:4:reconciled	M
+L11	35	?	undecidable	M
+L11	36	16	reconciled:digit shape	M
+L11	37	?	undecidable	M
+L11	38	20		M
+L11	39	1	stripped-leading-zero:05	M
+L11	40	25	reconciled:digit shape	M
+L11	41	1	stripped-leading-zero:05	M
+L11	42	?	unmatched:231	M
+L11	43	2		M
+L11	44	5		M
+L11	45	6	reconciled:digit shape	M
+L11	46	20	reconciled:digit shape	M
+L11	47	1	stripped-leading-zero:05	M
+L11	48	?	unmatched:4:reconciled	M
+L11	49	6	reconciled:digit shape	M
+L11	50	5	reconciled:digit shape	M
+L11	51	6	reconciled:digit shape	M
+L11	52	22	reconciled:digit shape	M
+L11	53	2		M
+L11	54	20		M
+L11	55	?	unmatched:231	M
+L11	56	1	stripped-leading-zero:05	M
+L11	57	1	stripped-leading-zero:05	M
+L11	58	?	unmatched:77:reconciled	M
+L11	59	?	unmatched:32:reconciled	M
+L11	60	?	unmatched:3:reconciled	M
+L11	61	?	unmatched:47	M
+L11	62	16		M
+L11	63	1	stripped-leading-zero:05	M
+L11	64	16		M
+L11	65	31		M
+L11	66	14		M
+L11	67	2		M
+L11	68	9	reconciled:segmentation	M
+L11	69	9	reconciled:digit shape	M
+L11	70	6		M
+L11	71	4		M
+L11	72	31		M
+L11	73	12		M
+L11	74	1	stripped-leading-zero:05	M
+L11	75	16		M
+L11	76	31		M
+L11	77	12		M
+L11	78	1	stripped-leading-zero:05	M
+L11	79	16		M
+L11	80	?	unmatched:28	M
+L11	81	31		M
+L11	82	4		M
+L11	83	?	unmatched:7:reconciled	M
+L12	1	?	unmatched:55	M
+L12	2	16		M
+L12	3	1	stripped-leading-zero:05	M
+L12	4	6		M
+L12	5	?	undecidable	M
+L12	6	14		M
+L12	7	1	stripped-leading-zero:05	M
+L12	8	?	unmatched:3:reconciled	M
+L12	9	7		M
+L12	10	?	unmatched:77:reconciled	M
+L12	11	?	unmatched:27:reconciled	M
+L12	12	9		M
+L12	13	2		M
+L12	14	4		M
+L12	15	5	reconciled:digit shape	M
+L12	16	9	reconciled:digit shape	M
+L12	17	2	reconciled:digit shape	M
+L12	18	4		M
+L12	19	1	stripped-leading-zero:05	M
+L12	20	5	reconciled:digit shape	M
+L12	21	1	stripped-leading-zero:05	M
+L12	22	4		M
+L12	23	?	undecidable	M
+L12	24	?	unmatched:27	M
+L12	25	1	stripped-leading-zero:05	M
+L12	26	10	reconciled:segmentation	M
+L12	27	2		M
+L12	28	?	undecidable	M
+L12	29	24	reconciled:digit shape	M
+L12	30	4	reconciled:digit shape	M
+L12	31	1	stripped-leading-zero:05	M
+L12	32	2	reconciled:digit shape	M
+L12	33	10		M
+L12	34	1	stripped-leading-zero:05	M
+L12	35	10	reconciled:digit shape	M
+L12	36	12	reconciled:digit shape	M
+L12	37	10	reconciled:digit shape	M
+L12	38	?	unmatched:773	M
+L12	39	1	stripped-leading-zero:05	M
+L12	40	?	unmatched:347	M
+L12	41	4		M
+L12	42	2		M
+L12	43	32		M
+L12	44	?	unmatched:67	M
+L12	45	31	reconciled:segmentation	M
+L12	46	?	undecidable	M
+L12	47	4	reconciled:digit shape	M
+L12	48	?	undecidable	M
+L12	49	6	reconciled:digit shape	M
+L12	50	?	unmatched:47	M
+L12	51	4		M
+L12	52	2		M
+L12	53	32		M
+L12	54	1	stripped-leading-zero:05	M
+L12	55	?	unmatched:3:reconciled	M
+L12	56	6		M
+L12	57	?	unmatched:973:reconciled	M
+L12	58	?	undecidable	M
+L12	59	?	undecidable	M
+L12	60	4		M
+L12	61	?	undecidable	M
+L12	62	?	unmatched:46	M
+L12	63	16	reconciled:digit shape	M
+L12	64	4		M
+L12	65	?	undecidable	M
+L12	66	32		M
+L12	67	?	unmatched:3:reconciled	M
+L12	68	4	reconciled:segmentation	M
+L12	69	1	stripped-leading-zero:05	M
+L12	70	4	reconciled:digit shape	M
+L12	71	32		M
+L12	72	?	unmatched:12:reconciled	M
+L12	73	?	undecidable	M
+L12	74	4		M
+L13	1	6		M
+L13	2	25		M
+L13	3	6	reconciled:segmentation	M
+L13	4	16	reconciled:digit shape	M
+L13	5	4	reconciled:digit shape	M
+L13	6	1	stripped-leading-zero:05	M
+L13	7	?	unmatched:123	M
+L13	8	1	stripped-leading-zero:05	M
+L13	9	4		M
+L13	10	6	reconciled:digit shape	M
+L13	11	14		M
+L13	12	32		M
+L13	13	35		M
+L13	14	?	unmatched:4	M
+L13	15	1	stripped-leading-zero:05	M
+L13	16	6	reconciled:segmentation	M
+L13	17	16	reconciled:digit shape	M
+L13	18	32	reconciled:digit shape	M
+L13	19	1	stripped-leading-zero:05	M
+L13	20	35		M
+L13	21	?	unmatched:22	M
+L13	22	9		M
+L13	23	?	unmatched:09	M
+L13	24	?	unmatched:77:reconciled	M
+L13	25	10	reconciled:digit shape	M
+L13	26	?	undecidable	M
+L13	27	1	stripped-leading-zero:05	M
+L13	28	4		M
+L13	29	4		M
+L13	30	1	stripped-leading-zero:05	M
+L13	31	?	unmatched:773:reconciled	M
+L13	32	?	undecidable	M
+L13	33	?	undecidable	M
+L13	34	4	reconciled:digit shape	M
+L13	35	?	undecidable	M
+L13	36	6	reconciled:segmentation	M
+L13	37	3	reconciled:digit shape	M
+L13	38	?	undecidable	M
+L13	39	14	reconciled:digit shape	M
+L13	40	6	reconciled:digit shape	M
+L13	41	?	unmatched:26	M
+L13	42	10		M
+L13	43	2		M
+L13	44	31		M
+L13	45	30		M
+L13	46	?	unmatched:22	M
+L13	47	5		M
+L13	48	14		M
+L13	49	6		M
+L13	50	16		M
+L13	51	6		M
+L13	52	32		M
+L13	53	1	stripped-leading-zero:05	M
+L13	54	10		M
+L13	55	?	unmatched:42:reconciled	M
+L13	56	?	unmatched:3:reconciled	M
+L13	57	4		M
+L13	58	16		M
+L13	59	31		M
+L13	60	?	unmatched:2:reconciled	M
+L13	61	6	reconciled:digit shape	M
+L13	62	4		M
+L13	63	16	reconciled:digit shape	M
+L13	64	31		M
+L13	65	6		M
+L13	66	?	unmatched:17:reconciled	M
+L13	67	1	stripped-leading-zero:05	M
+L13	68	6		M
+L13	69	1		M
+L14	1	32		M
+L14	2	?	unmatched:46	M
+L14	3	14		M
+L14	4	7		M
+L14	5	16		M
+L14	6	6		M
+L14	7	14		M
+L14	8	20		M
+L14	9	6		M
+L14	10	32		M
+L14	11	14		M
+L14	12	31	reconciled:segmentation	M
+L14	13	1	stripped-leading-zero:05	M
+L14	14	32	reconciled:segmentation	M
+L14	15	33	reconciled:segmentation	M
+L14	16	24	reconciled:segmentation	M
+L14	17	31		M
+L14	18	1	stripped-leading-zero:05	M
+L14	19	32		M
+L14	20	33		M
+L14	21	24		M
+L14	22	?	unmatched:31	M
+L14	23	?	unmatched:42	M
+L14	24	1	stripped-leading-zero:05	M
+L14	25	16		M
+L14	26	?	unmatched:419	M
+L14	27	31	reconciled:segmentation	M
+L14	28	4	reconciled:digit shape	M
+L14	29	4		M
+L14	30	?	unmatched:97	M
+L14	31	14		M
+L14	32	4	reconciled:segmentation	M
+L14	33	?	unmatched:67:reconciled	M
+L14	34	?	undecidable	M
+L14	35	?	unmatched:2:reconciled	M
+L14	36	2		M
+L14	37	1	stripped-leading-zero:05	M
+L14	38	1	stripped-leading-zero:05	M
+L14	39	1	stripped-leading-zero:05	M
+L14	40	1	stripped-leading-zero:05	M
+L14	41	31		M
+L14	42	4		M
+L14	43	1	stripped-leading-zero:05	M
+L14	44	16		M
+L14	45	1	stripped-leading-zero:05	M
+L14	46	?	unmatched:323	M
+L14	47	4		M
+L14	48	1	stripped-leading-zero:05	M
+L14	49	6	stripped-leading-zero:023	M
+L14	50	14	reconciled:segmentation	M
+L14	51	?	unmatched:67:reconciled	M
+L14	52	?	unmatched:22:reconciled	M
+L14	53	?	unmatched:7152:reconciled	M
+L14	54	?	unmatched:225:reconciled	M
+L14	55	1	stripped-leading-zero:05	M
+L14	56	?	unmatched:7:reconciled	M
+L14	57	?	unmatched:7:reconciled	M
+L14	58	1	stripped-leading-zero:05	M
+L14	59	?	undecidable	M
+L14	60	?	unmatched:32:reconciled	M
+L14	61	?	unmatched:3:reconciled	M
+L14	62	4		M
+L14	63	1	stripped-leading-zero:05	M
+L14	64	?	undecidable	M
+L14	65	1	stripped-leading-zero:05	M
+L14	66	1	stripped-leading-zero:05	M
+L14	67	32		M
+L14	68	3		M
+L14	69	1	stripped-leading-zero:05	M
+L14	70	1	stripped-leading-zero:05	M
+L14	71	16		M
+L14	72	6	reconciled:segmentation	M
+L14	73	24	reconciled:segmentation	M
+L14	74	11	reconciled:segmentation	M
+L14	75	6		M
+L14	76	?	unmatched:122:reconciled	M
+L14	77	?	undecidable	M
+L14	78	11		M
+L14	79	6		M
+L14	80	?	undecidable	M
+L14	81	10	reconciled:digit shape	M
+L14	82	4		M
+L14	83	6		M
+L14	84	?	unmatched:2	M
+L15	1	4		M
+L15	2	14		M
+L15	3	1	stripped-leading-zero:05	M
+L15	4	31		M
+L15	5	16		M
+L15	6	2		M
+L15	7	23		M
+L15	8	14		M
+L15	9	31		M
+L15	10	?	unmatched:123	M
+L15	11	3		M
+L15	12	32		M
+L15	13	31		M
+L15	14	?	dotted:'46	M
+L15	15	24		M
+L15	16	3		M
+L15	17	32		M
+L15	18	31		M
+L15	19	?	dotted:'46	M
+L15	20	24		M
+L15	21	9		M
+L15	22	2		M
+L15	23	32		M
+L15	24	1	stripped-leading-zero:05	M
+L15	25	24	reconciled:segmentation	M
+L15	26	?	unmatched:03:reconciled	M
+L15	27	?	unmatched:231	M
+L15	28	?	unmatched:27:reconciled	M
+L15	29	2	reconciled:digit shape	M
+L15	30	5		M
+L15	31	1	stripped-leading-zero:05	M
+L15	32	24	reconciled:segmentation	M
+L15	33	22	reconciled:segmentation	M
+L15	34	1	stripped-leading-zero:05	M
+L15	35	?	undecidable	M
+L15	36	?	unmatched:795:reconciled	M
+L15	37	11	reconciled:segmentation	M
+L15	38	14	reconciled:segmentation	M
+L15	39	3	reconciled:segmentation	M
+L15	40	1	reconciled:segmentation	M
+L15	41	?	unmatched:03:reconciled	M
+L15	42	31	reconciled:segmentation	M
+L15	43	?	unmatched:35:reconciled	M
+L15	44	4	reconciled:segmentation	M
+L15	45	6	reconciled:segmentation	M
+L15	46	1	stripped-leading-zero:05	M
+L15	47	24	reconciled:digit shape	M
+L15	48	22		M
+L15	49	1	stripped-leading-zero:05	M
+L15	50	?	unmatched:907	M
+L15	51	1	stripped-leading-zero:05	M
+L15	52	23		M
+L15	53	1	stripped-leading-zero:05	M
+L15	54	31		M
+L15	55	?	unmatched:35	M
+L15	56	4		M
+L15	57	6		M
+L15	58	1	stripped-leading-zero:05	M
+L15	59	?	unmatched:42:reconciled	M
+L15	60	1	reconciled:segmentation	M
+L15	61	?	undecidable	M
+L15	62	?	unmatched:123:reconciled	M
+L15	63	1	stripped-leading-zero:05	M
+L15	64	2		M
+L15	65	4		M
+L15	66	2		M
+L15	67	16		M
+L15	68	31		M
+L15	69	?	dotted:'46	M
+L15	70	14	reconciled:segmentation	M
+L15	71	?	unmatched:02:reconciled	M
+L15	72	?	unmatched:39:reconciled	M
+L15	73	?	dotted:'46	M
+L15	74	14		M
+L15	75	6		M
+L15	76	2		M
+L15	77	?	undecidable	M
+L15	78	31		M
+L16	1	16		M
+L16	2	6		M
+L16	3	14		M
+L16	4	2		M
+L16	5	9		M
+L16	6	2		M
+L16	7	12	reconciled:segmentation	M
+L16	8	31	reconciled:segmentation	M
+L16	9	30	reconciled:digit shape	M
+L16	10	16	reconciled:digit shape	M
+L16	11	1	stripped-leading-zero:05	M
+L16	12	?	unmatched:27:reconciled	M
+L16	13	16		M
+L16	14	?	unmatched:42:reconciled	M
+L16	15	1	stripped-leading-zero:05	M
+L16	16	?	unmatched:03:reconciled	M
+L16	17	?	unmatched:9:reconciled	M
+L16	18	16		M
+L16	19	?	unmatched:42	M
+L16	20	1	stripped-leading-zero:05	M
+L16	21	?	unmatched:03	M
+L16	22	31		M
+L16	23	?	unmatched:123:reconciled	M
+L16	24	31	reconciled:segmentation	M
+L16	25	1	stripped-leading-zero:05	M
+L16	26	32		M
+L16	27	31		M
+L16	28	1	stripped-leading-zero:05	M
+L16	29	16	reconciled:digit shape	M
+L16	30	1	stripped-leading-zero:05	M
+L16	31	32		M
+L16	32	20		M
+L16	33	1	stripped-leading-zero:05	M
+L16	34	16	reconciled:segmentation	M
+L16	35	?	undecidable	M
+L16	36	1	stripped-leading-zero:05	M
+L16	37	?	unmatched:7322:reconciled	M
+L16	38	?	undecidable	M
+L16	39	?	undecidable	M
+L16	40	31	reconciled:segmentation	M
+L16	41	1	stripped-leading-zero:05	M
+L16	42	?	undecidable	M
+L16	43	?	undecidable	M
+L16	44	1	stripped-leading-zero:05	M
+L16	45	?	unmatched:7322:reconciled	M
+L16	46	1	reconciled:segmentation	M
+L16	47	?	unmatched:03:reconciled	M
+L16	48	33	reconciled:segmentation	M
+L16	49	1	stripped-leading-zero:05	M
+L16	50	22	reconciled:segmentation	M
+L16	51	?	unmatched:3:reconciled	M
+L16	52	?	unmatched:373:reconciled	M
+L16	53	31		M
+L16	54	24	reconciled:digit shape	M
+L16	55	20		M
+L16	56	32		M
+L16	57	31		M
+L16	58	?	unmatched:231	M
+L16	59	25		M
+L16	60	16		M
+L16	61	6		M
+L16	62	1	stripped-leading-zero:05	M
+L16	63	4		M
+L16	64	2		M
+L16	65	35		M
+L16	66	?	unmatched:42	M
+L16	67	?	unmatched:09:reconciled	M
+L17	1	6		M
+L17	2	?	unmatched:773:reconciled	M
+L17	3	4		M
+L17	4	1	stripped-leading-zero:05	M
+L17	5	?	unmatched:15	M
+L17	6	5		M
+L17	7	32		M
+L17	8	?	unmatched:46	M
+L17	9	14		M
+L17	10	?	unmatched:26	M
+L17	11	24		M
+L17	12	1	stripped-leading-zero:05	M
+L17	13	16	reconciled:digit shape	M
+L17	14	12		M
+L17	15	?	unmatched:120:reconciled	M
+L17	16	?	undecidable	M
+L17	17	9	reconciled:digit shape	M
+L17	18	?	undecidable	M
+L17	19	?	unmatched:42:reconciled	M
+L17	20	?	undecidable	M
+L17	21	?	unmatched:41:reconciled	M
+L17	22	32		M
+L17	23	6		M
+L17	24	16		M
+L17	25	12		M
+L17	26	?	unmatched:12	M
+L17	27	1	reconciled:segmentation	M
+L17	28	?	unmatched:273:reconciled	M
+L17	29	?	undecidable	M
+L17	30	?	unmatched:27:reconciled	M
+L17	31	2		M
+L17	32	16	reconciled:segmentation	M
+L17	33	?	undecidable	M
+L17	34	?	unmatched:46:reconciled	M
+L17	35	?	unmatched:99	M
+L17	36	16		M
+L17	37	1	stripped-leading-zero:05	M
+L17	38	32		M
+L17	39	3		M
+L17	40	14		M
+L17	41	12		M
+L17	42	?	unmatched:123	M
+L17	43	1	stripped-leading-zero:05	M
+L17	44	?	unmatched:3:reconciled	M
+L17	45	?	unmatched:97	M
+L17	46	24		M
+L17	47	?	unmatched:14	M
+L17	48	?	dotted:'47	M
+L17	49	31		M
+L17	50	1	stripped-leading-zero:05	M
+L17	51	?	unmatched:0:reconciled	M
+L17	52	1	stripped-leading-zero:05	M
+L17	53	32		M
+L17	54	4		M
+L17	55	11		M
+L17	56	?	unmatched:3:reconciled	M

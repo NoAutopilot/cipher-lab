@@ -15,7 +15,8 @@
       "folio": "81v",
       "canvas": 178,
       "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f178/full/1000,/0/native.jpg",
-      "note": "not examined this job beyond the fetch; the letter's extent (whether it continues past 81v) is unconfirmed"
+      "note": "not examined this job beyond the fetch; the letter's extent (whether it continues past 81v) is unconfirmed",
+      "note_2026-09-27": "blank leaf by direct inspection (parent 7m 12:26 UTC; MONT-4715C2 13:02 UTC): no ink, only the facing leaf's bleed-through at the right edge and two seal impressions -- the letter is one leaf (f.81r)"
     }
   },
   "iiif_lines": [

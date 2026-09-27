@@ -1,0 +1,960 @@
+line	pos	key_row	shape_note	confidence
+T	1	?	symbol/other:~25	H
+T	2	?	dotted:'47	H
+T	3	?	dotted:'30	H
+T	4	?	dotted:'41	H
+T	5	?	dotted:'26	H
+T	6	5		H
+T	7	32		H
+T	8	?	dotted:'26	H
+T	9	10		H
+T	10	2		H
+T	11	31		H
+T	12	?	dotted:'65	H
+T	13	35		H
+T	14	2		H
+T	15	16		H
+T	16	31		H
+T	17	20		H
+T	18	6		H
+T	19	16		H
+T	20	27		H
+T	21	7		H
+T	22	?	dotted:'16	H
+T	23	20		H
+T	24	32		H
+T	25	12		H
+T	26	27		H
+T	27	?	dotted:'28	H
+T	28	2		H
+T	29	32		H
+T	30	19		H
+T	31	12		H
+T	32	23		H
+T	33	6		H
+T	34	15		H
+T	35	19		H
+T	36	16		H
+T	37	31		H
+T	38	22		H
+T	39	6		H
+T	40	?	dotted:'26	H
+T	41	11		H
+T	42	2		H
+T	43	29		H
+T	44	2		H
+T	45	22		H
+T	46	5		H
+T	47	?	dotted:'11	H
+T	48	21		H
+T	49	6		H
+T	50	14		H
+T	51	?	dotted:'24	H
+T	52	?	dotted:'50	H
+T	53	?	dotted:'31	H
+T	54	31		H
+T	55	19		H
+T	56	12		H
+T	57	31		H
+T	58	?	dotted:'16	H
+T	59	?	dotted:'20	H
+T	60	22		H
+T	61	6		H
+T	62	7		H
+T	63	34		H
+T	64	4		H
+T	65	19		H
+T	66	15		H
+T	67	32		H
+T	68	16		H
+T	69	12		H
+T	70	6		H
+T	71	?	dotted:'65	H
+T	72	?	dotted:'30	H
+T	73	32		H
+T	74	6		H
+T	75	29		H
+T	76	6		H
+T	77	27		H
+T	78	4		H
+T	79	22		H
+T	80	12		H
+T	81	20		H
+T	82	31		H
+T	83	15		H
+T	84	19		H
+T	85	16		H
+T	86	31		H
+T	87	22		H
+T	88	2		H
+T	89	16		H
+T	90	31		H
+T	91	6		H
+T	92	16		H
+T	93	27		H
+T	94	19		H
+T	95	15		H
+T	96	15		H
+T	97	6		H
+T	98	?	dotted:'48	H
+T	99	?	dotted:'50	H
+T	100	32		H
+T	101	6		H
+T	102	32		H
+T	103	14		H
+T	104	31		H
+T	105	?	dotted:'50	H
+T	106	22		H
+T	107	32		H
+T	108	12		H
+T	109	22		H
+T	110	5		H
+T	111	32		H
+T	112	16		H
+T	113	19		H
+T	114	15		H
+T	115	?	dotted:'16	H
+T	116	?	symbol/other:~74	H
+T	117	?	dotted:'42	H
+T	118	?	dotted:'50	H
+T	119	27		H
+T	120	31		H
+T	121	2		H
+T	122	3		H
+T	123	14		H
+T	124	12		H
+T	125	22		H
+T	126	4		H
+T	127	2		H
+T	128	27		H
+T	129	?	dotted:'48	H
+T	130	?	dotted:'35	H
+T	131	27		H
+T	132	19		H
+T	133	12		H
+T	134	31		H
+T	135	?	dotted:'64	H
+T	136	?	dotted:'19	H
+T	137	?	dotted:'46	H
+T	138	?	dotted:'26	H
+T	139	10		H
+T	140	2		H
+T	141	31		H
+T	142	?	dotted:'35	H
+T	143	14		H
+T	144	2		H
+T	145	3		H
+T	146	27		H
+T	147	19		H
+T	148	14		H
+T	149	32		H
+T	150	6		H
+T	151	?	dotted:'19	H
+T	152	22		H
+T	153	6		H
+T	154	2		H
+T	155	3		H
+T	156	12		H
+T	157	14		H
+T	158	12		H
+T	159	31		H
+T	160	6		H
+T	161	?	dotted:'11	H
+T	162	?	dotted:'46	H
+T	163	14		H
+T	164	4		H
+T	165	2		H
+T	166	27		H
+T	167	?	dotted:'24	H
+T	168	32		H
+T	169	6		H
+T	170	32		H
+T	171	14		H
+T	172	31		H
+T	173	22		H
+T	174	6		H
+T	175	15		H
+T	176	19		H
+T	177	16		H
+T	178	31		H
+T	179	22		H
+T	180	6		H
+T	181	22		H
+T	182	27		H
+T	183	19		H
+T	184	16		H
+T	185	5		H
+T	186	22		H
+T	187	19		H
+T	188	12		H
+T	189	31		H
+T	190	?	dotted:'16	H
+T	191	27		H
+T	192	32		H
+T	193	4		H
+T	194	4		H
+T	195	6		H
+T	196	5		H
+T	197	6		H
+T	198	22		H
+T	199	2		H
+T	200	?	dotted:'25	H
+T	201	4		H
+T	202	19		H
+T	203	32		H
+T	204	22		H
+T	205	19		H
+T	206	16		H
+T	207	6		H
+T	208	?	dotted:'65	H
+T	209	20		H
+T	210	14		H
+T	211	32		H
+T	212	27		H
+T	213	20		H
+T	214	22		H
+T	215	19		H
+T	216	4		H
+T	217	11		H
+T	218	6		H
+T	219	20		H
+T	220	22		H
+T	221	12		H
+T	222	16		H
+T	223	4		H
+T	224	6		H
+T	225	5		H
+T	226	32		H
+T	227	27		H
+T	228	2		H
+T	229	16		H
+T	230	10		H
+T	231	13		H
+T	232	?	dotted:'25	H
+T	233	21		H
+T	234	19		H
+T	235	35		H
+T	236	?	dotted:'24	H
+T	237	?	dotted:'30	H
+T	238	5		H
+T	239	12		H
+T	240	31		H
+T	241	?	dotted:'48	H
+T	242	?	dotted:'99	H
+T	243	20		H
+T	244	22		H
+T	245	12		H
+T	246	6		H
+T	247	22		H
+T	248	19		H
+T	249	12		H
+T	250	31		H
+T	251	5		H
+T	252	6		H
+T	253	31		H
+T	254	6		H
+T	255	16		H
+T	256	12		H
+T	257	22		H
+T	258	14		H
+T	259	2		H
+T	260	15		H
+T	261	2		H
+T	262	12		H
+T	263	16		H
+T	264	14		H
+T	265	19		H
+T	266	22		H
+T	267	27		H
+T	268	?	dotted:'46	H
+T	269	?	dotted:'99	H
+T	270	32		H
+T	271	6		H
+T	272	22		H
+T	273	6		H
+T	274	27		H
+T	275	?	dotted:'46	H
+T	276	14		H
+T	277	6		H
+T	278	?	dotted:'26	H
+T	279	10		H
+T	280	2		H
+T	281	31		H
+T	282	16		H
+T	283	6		H
+T	284	32		H
+T	285	19		H
+T	286	32		H
+T	287	14		H
+T	288	5		H
+T	289	22		H
+T	290	2		H
+T	291	19		H
+T	292	32		H
+T	293	20		H
+T	294	19		H
+T	295	32		H
+T	296	22		H
+T	297	2		H
+T	298	?	dotted:'97	H
+T	299	?	dotted:'75	H
+T	300	?	dotted:'42	H
+T	301	?	symbol/other:~13	H
+T	302	?	dotted:'19	H
+T	303	?	dotted:'48	H
+T	304	14		H
+T	305	22		H
+T	306	2		H
+T	307	21		H
+T	308	6		H
+T	309	27		H
+T	310	31		H
+T	311	12		H
+T	312	19		H
+T	313	16		H
+T	314	?	dotted:'16	H
+T	315	22		H
+T	316	6		H
+T	317	10		H
+T	318	2		H
+T	319	22		H
+T	320	5		H
+T	321	6		H
+T	322	22		H
+T	323	?	dotted:'47	H
+T	324	?	dotted:'20	H
+T	325	?	dotted:'26	H
+T	326	32		H
+T	327	22		H
+T	328	2		H
+T	329	35		H
+T	330	?	dotted:'19	H
+T	331	14		H
+T	332	6		H
+T	333	10		H
+T	334	12		H
+T	335	31		H
+T	336	12		H
+T	337	15		H
+T	338	6		H
+T	339	27		H
+T	340	32		H
+T	341	4		H
+T	342	4		H
+T	343	6		H
+T	344	27		H
+T	345	28		H
+T	346	6		H
+T	347	32		H
+T	348	22		H
+T	349	?	dotted:'35	H
+T	350	5		H
+T	351	19		H
+T	352	15		H
+T	353	12		H
+T	354	16		H
+T	355	2		H
+T	356	16		H
+T	357	31		H
+T	358	?	dotted:'25	H
+T	359	20		H
+T	360	2		H
+T	361	27		H
+T	362	28		H
+T	363	12		H
+T	364	19		H
+T	365	16		H
+T	366	19		H
+T	367	32		H
+T	368	14		H
+T	369	2		H
+T	370	9		H
+T	371	19		H
+T	372	22		H
+T	373	4		H
+T	374	6		H
+T	375	?	dotted:'65	H
+T	376	?	dotted:'24	H
+T	377	?	dotted:'20	H
+T	378	2		H
+T	379	4		H
+T	380	22		H
+T	381	2		H
+T	382	12		H
+T	383	16		H
+T	384	5		H
+T	385	22		H
+T	386	6		H
+T	387	?	dotted:'48	H
+T	388	2		H
+T	389	5		H
+T	390	32		H
+T	391	12		H
+T	392	6		H
+T	393	16		H
+T	394	6		H
+T	395	?	dotted:'14	H
+T	396	?	dotted:'47	H
+T	397	?	dotted:'50	H
+T	398	12		H
+T	399	32		H
+T	400	10		H
+T	401	6		H
+T	402	22		H
+T	403	2		H
+T	404	5		H
+T	405	6		H
+T	406	14		H
+T	407	6		H
+T	408	32		H
+T	409	6		H
+T	410	16		H
+T	411	6		H
+T	412	15		H
+T	413	6		H
+T	414	16		H
+T	415	31		H
+T	416	?	dotted:'16	H
+T	417	?	dotted:'35	H
+T	418	?	dotted:'26	H
+T	419	?	dotted:'46	H
+T	420	14		H
+T	421	?	symbol/other:~7	H
+T	422	2		H
+T	423	20		H
+T	424	22		H
+T	425	19		H
+T	426	31		H
+T	427	6		H
+T	428	27		H
+T	429	31		H
+T	430	6		H
+T	431	?	dotted:'16	H
+T	432	20		H
+T	433	22		H
+T	434	6		H
+T	435	16		H
+T	436	5		H
+T	437	22		H
+T	438	6		H
+T	439	?	dotted:'40	H
+T	440	?	dotted:'16	H
+T	441	4		H
+T	442	19		H
+T	443	15		H
+T	444	3		H
+T	445	2		H
+T	446	31		H
+T	447	22		H
+T	448	6		H
+T	449	?	symbol/other:~36	H
+T	450	?	dotted:'52	H
+T	451	14		H
+T	452	14		H
+T	453	6		H
+T	454	32		H
+T	455	6		H
+T	456	32		H
+T	457	14		H
+T	458	31		H
+T	459	6		H
+T	460	15		H
+T	461	20		H
+T	462	6		H
+T	463	4		H
+T	464	11		H
+T	465	6		H
+T	466	22		H
+T	467	?	dotted:'19	H
+T	468	?	dotted:'42	H
+T	469	22		H
+T	470	6		H
+T	471	32		H
+T	472	6		H
+T	473	16		H
+T	474	12		H
+T	475	22		H
+T	476	2		H
+T	477	?	symbol/other:~15	H
+T	478	?	dotted:'51	H
+T	479	2		H
+T	480	?	dotted:'75	H
+T	481	27		H
+T	482	?	dotted:'31	H
+T	483	27		H
+T	484	6		H
+T	485	15		H
+T	486	3		H
+T	487	14		H
+T	488	6		H
+T	489	16		H
+T	490	31		H
+T	491	15		H
+T	492	2		H
+T	493	14		H
+T	494	4		H
+T	495	19		H
+T	496	16		H
+T	497	5		H
+T	498	32		H
+T	499	12		H
+T	500	31		H
+T	501	6		H
+T	502	27		H
+T	503	?	dotted:'19	H
+T	504	2		H
+T	505	32		H
+T	506	6		H
+T	507	4		H
+T	508	20		H
+T	509	6		H
+T	510	32		H
+T	511	?	dotted:'16	H
+T	512	4		H
+T	513	19		H
+T	514	16		H
+T	515	27		H
+T	516	6		H
+T	517	12		H
+T	518	14		H
+T	519	31		H
+T	520	6		H
+T	521	14		H
+T	522	?	dotted:'47	H
+T	523	?	dotted:'28	H
+T	524	?	dotted:'50	H
+T	525	22		H
+T	526	19		H
+T	527	12		H
+T	528	31		H
+T	529	16		H
+T	530	6		H
+T	531	4		H
+T	532	6		H
+T	533	27		H
+T	534	28		H
+T	535	2		H
+T	536	12		H
+T	537	22		H
+T	538	6		H
+T	539	?	dotted:'50	H
+T	540	14		H
+T	541	2		H
+T	542	12		H
+T	543	27		H
+T	544	28		H
+T	545	2		H
+T	546	16		H
+T	547	31		H
+T	548	20		H
+T	549	19		H
+T	550	27		H
+T	551	28		H
+T	552	6		H
+T	553	5		H
+T	554	6		H
+T	555	22		H
+T	556	2		H
+T	557	20		H
+T	558	6		H
+T	559	22		H
+T	560	27		H
+T	561	19		H
+T	562	16		H
+T	563	6		H
+T	564	?	dotted:'47	H
+T	565	16		H
+T	566	19		H
+T	567	16		H
+T	568	31		H
+T	569	14		H
+T	570	2		H
+T	571	9		H
+T	572	9		H
+T	573	6		H
+T	574	4		H
+T	575	31		H
+T	576	12		H
+T	577	19		H
+T	578	16		H
+T	579	6		H
+T	580	31		H
+T	581	12		H
+T	582	?	symbol/other:7*	H
+T	583	31		H
+T	584	6		H
+T	585	14		H
+T	586	12		H
+T	587	10		H
+T	588	6		H
+T	589	16		H
+T	590	4		H
+T	591	6		H
+T	592	?	dotted:'19	H
+T	593	?	symbol/other:^47	H
+T	594	14		H
+T	595	14		H
+T	596	6		H
+T	597	12		H
+T	598	27		H
+T	599	28		H
+T	600	6		H
+T	601	16		H
+T	602	31		H
+T	603	20		H
+T	604	19		H
+T	605	22		H
+T	606	31		H
+T	607	6		H
+T	608	22		H
+T	609	2		H
+T	610	5		H
+T	611	6		H
+T	612	27		H
+T	613	20		H
+T	614	2		H
+T	615	27		H
+T	616	28		H
+T	617	12		H
+T	618	?	bare:87	H
+T	619	16		H
+T	620	27		H
+T	621	?	dotted:'47	H
+T	622	4		H
+T	623	2		H
+T	624	32		H
+T	625	27		H
+T	626	6		H
+T	627	16		H
+T	628	31		H
+T	629	?	dotted:'16	H
+T	630	27		H
+T	631	28		H
+T	632	12		H
+T	633	16		H
+T	634	12		H
+T	635	27		H
+T	636	31		H
+T	637	22		H
+T	638	6		H
+T	639	27		H
+T	640	4		H
+T	641	19		H
+T	642	16		H
+T	643	27		H
+T	644	6		H
+T	645	12		H
+T	646	14		H
+T	647	27		H
+T	648	?	dotted:'24	H
+T	649	16		H
+T	650	6		H
+T	651	9		H
+T	652	2		H
+T	653	12		H
+T	654	27		H
+T	655	19		H
+T	656	12		H
+T	657	31		H
+T	658	6		H
+T	659	27		H
+T	660	31		H
+T	661	2		H
+T	662	31		H
+T	663	?	dotted:'16	H
+T	664	16		H
+T	665	32		H
+T	666	19		H
+T	667	12		H
+T	668	6		H
+T	669	22		H
+T	670	32		H
+T	671	6		H
+T	672	22		H
+T	673	27		H
+T	674	14		H
+T	675	6		H
+T	676	?	dotted:'26	H
+T	677	10		H
+T	678	2		H
+T	679	31		H
+T	680	?	dotted:'52	H
+T	681	?	dotted:'22	H
+T	682	?	dotted:'35	H
+T	683	14		H
+T	684	6		H
+T	685	16		H
+T	686	6		H
+T	687	32		H
+T	688	27		H
+T	689	28		H
+T	690	6		H
+T	691	12		H
+T	692	16		H
+T	693	31		H
+T	694	6		H
+T	695	22		H
+T	696	20		H
+T	697	6		H
+T	698	?	symbol/other:5*	H
+T	699	6		H
+T	700	?	dotted:'19	H
+T	701	6		H
+T	702	16		H
+T	703	4		H
+T	704	19		H
+T	705	22		H
+T	706	6		H
+T	707	27		H
+T	708	4		H
+T	709	6		H
+T	710	14		H
+T	711	32		H
+T	712	35		H
+T	713	?	dotted:'48	H
+T	714	6		H
+T	715	16		H
+T	716	32		H
+T	717	19		H
+T	718	35		H
+T	719	6		H
+T	720	?	dotted:'20	H
+T	721	32		H
+T	722	16		H
+T	723	10		H
+T	724	16		H
+T	725	19		H
+T	726	15		H
+T	727	15		H
+T	728	6		H
+T	729	10		H
+T	730	12		H
+T	731	14		H
+T	732	14		H
+T	733	19		H
+T	734	31		H
+T	735	4		H
+T	736	19		H
+T	737	16		H
+T	738	27		H
+T	739	6		H
+T	740	12		H
+T	741	14		H
+T	742	6		H
+T	743	22		H
+T	744	27		H
+T	745	19		H
+T	746	32		H
+T	747	3		H
+T	748	27		H
+T	749	19		H
+T	750	16		H
+T	751	6		H
+T	752	?	dotted:'16	H
+T	753	11		H
+T	754	6		H
+T	755	22		H
+T	756	6		H
+T	757	27		H
+T	758	12		H
+T	759	6		H
+T	760	2		H
+T	761	32		H
+T	762	?	dotted:'46	H
+T	763	14		H
+T	764	?	dotted:'24	H
+T	765	16		H
+T	766	6		H
+T	767	?	dotted:'50	H
+T	768	20		H
+T	769	6		H
+T	770	32		H
+T	771	14		H
+T	772	31		H
+T	773	19		H
+T	774	32		H
+T	775	33		H
+T	776	22		H
+T	777	12		H
+T	778	22		H
+T	779	?	dotted:'42	H
+T	780	27		H
+T	781	19		H
+T	782	16		H
+T	783	?	dotted:'41	H
+T	784	31		H
+T	785	12		H
+T	786	4		H
+T	787	32		H
+T	788	14		H
+T	789	12		H
+T	790	6		H
+T	791	22		H
+T	792	?	dotted:'52	H
+T	793	2		H
+T	794	32		H
+T	795	2		H
+T	796	16		H
+T	797	31		H
+T	798	?	dotted:'48	H
+T	799	?	dotted:'50	H
+T	800	22		H
+T	801	19		H
+T	802	12		H
+T	803	31		H
+T	804	?	dotted:'35	H
+T	805	4		H
+T	806	6		H
+T	807	27		H
+T	808	28		H
+T	809	2		H
+T	810	12		H
+T	811	22		H
+T	812	6		H
+T	813	27		H
+T	814	2		H
+T	815	4		H
+T	816	2		H
+T	817	16		H
+T	818	31		H
+T	819	?	dotted:'46	H
+T	820	14		H
+T	821	6		H
+T	822	2		H
+T	823	12		H
+T	824	31		H
+T	825	12		H
+T	826	14		H
+T	827	19		H
+T	828	31		H
+T	829	16		H
+T	830	2		H
+T	831	?	dotted:'11	H
+T	832	14		H
+T	833	31		H
+T	834	22		H
+T	835	6		H
+T	836	3		H
+T	837	32		H
+T	838	31		H
+T	839	?	dotted:'46	H
+T	840	?	dotted:'16	H
+T	841	9		H
+T	842	2		H
+T	843	32		H
+T	844	19		H
+T	845	22		H
+T	846	12		H
+T	847	27		H
+T	848	6		H
+T	849	22		H
+T	850	?	dotted:'27	H
+T	851	2		H
+T	852	?	dotted:'75	H
+T	853	27		H
+T	854	?	dotted:'16	H
+T	855	22		H
+T	856	19		H
+T	857	35		H
+T	858	5		H
+T	859	?	dotted:'11	H
+T	860	14		H
+T	861	31		H
+T	862	22		H
+T	863	6		H
+T	864	27		H
+T	865	?	dotted:'50	H
+T	866	20		H
+T	867	19		H
+T	868	32		H
+T	869	33		H
+T	870	19		H
+T	871	12		H
+T	872	6		H
+T	873	16		H
+T	874	31		H
+T	875	?	dotted:'16	H
+T	876	20		H
+T	877	32		H
+T	878	31		H
+T	879	6		H
+T	880	22		H
+T	881	?	dotted:'19	H
+T	882	16		H
+T	883	6		H
+T	884	27		H
+T	885	4		H
+T	886	2		H
+T	887	35		H
+T	888	?	dotted:'42	H
+T	889	?	dotted:'94	H
+T	890	16		H
+T	891	6		H
+T	892	14		H
+T	893	2		H
+T	894	9		H
+T	895	2		H
+T	896	12		H
+T	897	31		H
+T	898	?	dotted:'52	H
+T	899	16		H
+T	900	19		H
+T	901	16		H
+T	902	?	dotted:'42	H
+T	903	19		H
+T	904	27		H
+T	905	31		H
+T	906	6		H
+T	907	22		H
+T	908	31		H
+T	909	19		H
+T	910	32		H
+T	911	31		H
+T	912	27		H
+T	913	19		H
+T	914	32		H
+T	915	20		H
+T	916	27		H
+T	917	19		H
+T	918	16		H
+T	919	2		H
+T	920	32		H
+T	921	22		H
+T	922	19		H
+T	923	35		H
+T	924	?	dotted:'50	H
+T	925	20		H
+T	926	22		H
+T	927	19		H
+T	928	15		H
+T	929	6		H
+T	930	31		H
+T	931	2		H
+T	932	16		H
+T	933	31		H
+T	934	?	dotted:'46	H
+T	935	?	dotted:'99	H
+T	936	16		H
+T	937	19		H
+T	938	32		H
+T	939	3		H
+T	940	14		H
+T	941	12		H
+T	942	22		H
+T	943	6		H
+T	944	27		H
+T	945	?	dotted:'97	H
+T	946	?	dotted:'16	H
+T	947	?	dotted:'14	H
+T	948	?	dotted:'47	H
+T	949	31		H
+T	950	19		H
+T	951	32		H
+T	952	4		H
+T	953	11		H
+T	954	?	symbol/other:2*	H
+T	955	6		H
+T	956	16		H
+T	957	12		H
+T	958	31		H
+T	959	?	symbol/other:~15	H
