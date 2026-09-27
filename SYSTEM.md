@@ -142,6 +142,7 @@ Column key for every table: **name**, **what it does**, **defined in**, **enforc
 | `BUDGETS.md` | Plan limits per person; the scaling rule | CLAUDE.md Operating model | parent duty 2 | each person for their own row |
 | `CLAUDE.md` / `.claude/briefs/` | The binding rules / the role templates and dated job briefs | itself | every session | the owner; parents for brief/tool changes, logged in UPDATES.md |
 | RETRO-*.md, LEARN-*.md, QA/*.md | Retrospective proposals, cross-account learning passes, rolling quality audits | Improvement loop; parent.md duties 9-10 | retrospective, LEARN, QA workers | those workers |
+| `SWEEP-NEVERS-2026-09-27.md` | One-off report for `tools/cipher_page_detector.py`'s reviewer-directed neighbouring-volume sweep (fr.4715's known cipher folios as the calibration set, fr.3977/fr.3980/fr.3982 as candidate sweep volumes): method, the calibration recall/FPR numbers, and the stop-at-gate verdict | CODEX-REVIEW-2026-09-27b.md reviewer bet 1; `.claude/briefs/runs/2026-09-27-parent-nev-sweep.md` | NEV-SWEEP (27 Sept 2026) | whoever retries the bet with a different instrument |
 
 ---
 
