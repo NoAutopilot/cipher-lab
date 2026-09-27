@@ -119,3 +119,16 @@ scans. KEY-ADJACENT.tsv row 3 is retired found-solved on this basis; no `ciphers
 
 (`web/mantua.png`, the reconstructed-cipher table itself, was already on disk before this session; not
 re-fetched.) See `sources/cryptiana/web/manifest_2026-09-27-mantua.tsv` for the manifest row per file.
+
+## Added 27 September 2026 (KEY-ADJACENT.tsv row 19 gate, parent worker INTAKE-4715)
+
+`charlesii2.htm` quotes fifteen undeciphered code groups from a letter, Earl of Longford to Ormond, 20 Nov 1680
+(HMC Ormonde MSS n.s. vol.5, p.498, already on Internet Archive): "579 446 64 725 566 86 27 552 582 59 240 551
+736 681 206, our letters to Ormond are opened on that side...". The page already prints the per-group reading
+immediately after, as text (no image involved): "579[our] 446[letter] 64[s] 725[to] 566[Ormond] 86[ar] 27[e]
+552[o] 582[pe] 59[n] 240[ed] 551[on] 736[that] 681[si] 206[de]" -- matching the letter's own quoted plaintext
+exactly, group for group, in order. No page fetch or vision check was needed; the local mirror already carries
+the reading in plain HTML text. This passage sits under the page's "Ormond-Longford Cipher 1" heading, not
+"Cipher 2" as KEY-ADJACENT.tsv row 19's own key_location cell says -- a description error in that row, flagged
+here rather than corrected in place (this job's brief scoped this row's in_repo cell only). KEY-ADJACENT.tsv row
+19 is retired found-solved on this basis; no `ciphers/` folder was built.

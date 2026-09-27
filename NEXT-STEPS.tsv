@@ -72,6 +72,7 @@ fr3989-nevers-revol-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 si
 fr3990-nevers-henri4-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.
 fr3993-villeroy-1595	open	runnable	S	n	24 Sep	
 fr4687-paleologue-nevers	blocked	runnable	S	n	25 Sep	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…
+fr4715-montholon-1589	open	runnable	S	n		
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…
 fr5761-election-1519	open	runnable	M	n		This needs f105-f109 atlas-coded before it can be answered for the document as a whole -- flagged as the next step for a worker extending the atlas past f104/f110, not concluded here either way.
 fr7129-villeroy-bongars-1604	blocked	runnable	M	n	27 Sep	**Next step (a different instrument, not a third crop pass):** transcribe a few f.260 lines with the clerk's own decipherment in view, aligned per sign by one careful reader and checked by a second,…
@@ -181,4 +182,4 @@ wvo-hessen-1564	open	runnable	M	n	26 Sep	**Next step for a successor, not pursue
 yogtze-1984	open	runnable	S	n	25 Sep	
 zbz-busbecq-1587	open	runnable	S	n		
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)
-# 182 rows -- needs-edition=2 needs-image=8 needs-person=3 runnable=169
+# 183 rows -- needs-edition=2 needs-image=8 needs-person=3 runnable=170

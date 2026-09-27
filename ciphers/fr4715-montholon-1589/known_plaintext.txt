@@ -1,0 +1,46 @@
+# Printed opening of BnF fr.4715, no.58 (f.81), Montholon to an unnamed recipient, Tours, 8 Nov 1589.
+# Source: sources/cryptiana/web/bnf4715.htm, section id=no58, "The decipherment of the beginning is given
+# below." Transcribed verbatim from the local mirror, INTAKE-4715, 27 Sept 2026. This is Tomokiyo's own
+# printed reading (grade H per CLAUDE.md rule 4 -- read from a key source, his), not a reading produced in
+# this repository. The passage ends "...." in the source itself (an explicit ellipsis, not this worker's
+# truncation), confirming it covers only the opening of the letter, not the whole thing -- checked against
+# the manuscript image (ciphers/fr4715-montholon-1589/images/f81r_canvas177.jpg): the page holds far more
+# cipher text than this excerpt decodes.
+
+## Plaintext (French, as printed, with Tomokiyo's editorial brackets kept)
+
+~25 qui ma parle du legat commeyant pense depuis luy avoire montre le hasard au quel il se metoit de estre
+excomunie comme [vous?] m'aves escript montrant en somme qu'il se veult servir du nom de ~74 pour s'establir
+cas qu'il ne soit catholique et que legat ne l'absolue et re[h]abilite auquel cas il veult remontrer son
+droit de succeder a la courone comme plus proche prince du sang i? la quoy il m'a dit qu'il vous prieroit de
+tenir la main lorsque vous veres que le legat ne vouldra ou poura '97 faire pour ~13 et qu'il lr* a question
+de regarder qui est le vray et legitime successeur ne dominant la passaion ou la force comme il est a
+craindre qu'il a du je ne ce qui se jugera de l'evenement de ne lequel ~7 a proteste de prendre ou de
+combatre ~36 s'il le veult empecher et pour revenir a ~15 '51 a faire s me semblent malconduites et avec peu
+de conseil tel qui luy seroit necessaire se laissant posseder a persone qui n'ont l'affection et inteligence
+et qu'il leissent porter a des passi 87 ns qui causent des sinistres conseils il ne faisoit estat d'enuoier
+vers le legat si je ne l'en eusse interpe[l]e et encores celuy qu'il enuoye est ung nomme gillot conseiler
+soubsone de heresie auquel il ne se peult ouvrir pour son particulier si avant qu'il seroit necessaire
+sacant quele ait il otna altre but que defauoriser les afaires de roy d'aultres se pouvoient deputer et ne
+scay pour '94 ne la fait si non pour oster tout soupson au roy se prometant que vous n'oublires '97 de ce
+qui touchenit ~15 ....
+
+## Notes
+
+- Tokens like "~25", "~74" and bare "87" are Tomokiyo's own notation for code groups he did not resolve
+  into this printed prose reading -- kept as printed, not interpreted by this worker. Correction to an
+  earlier draft of this file: this passage DOES have its own group-by-group alignment, in the page's "DUMP"
+  block right after this prose -- see `aligned_dump.txt` in this folder, extracted from the same section.
+- Apostrophe-prefixed numbers in both this prose and the DUMP block ('97, '25, '51, etc.) are, per nevers.htm's
+  own note on this cipher ("figures with a dot over the first digit are code numbers representing common
+  words"), the page's plain-text stand-in for a printed dot-diacritic over the first digit -- i.e. these are
+  word/syllable codes from a second, undocumented table, not letter homophones from `keys/key_vieuville_nevers.tsv`.
+  A bare (undotted) number is a single-letter homophone from that table. See `aligned_dump.txt` for a partial,
+  Tomokiyo-sourced gloss of several of these word-codes recovered from this alignment itself (e.g. '47=qui,
+  '65=comme, '16=de, '42=pour) -- not exhaustive, not independently verified this job, not yet built into a
+  second key TSV (named next step, NOTES.md).
+- This passage is NOT run against keys/key_vieuville_nevers.tsv in this job (no decoding was done -- Layout
+  intake only, per this job's brief). `aligned_dump.txt`'s cipher-group/plaintext pairs are themselves already
+  Tomokiyo's own alignment (grade H) for this passage; the open work is the REST of f.81r/f.81v beyond this
+  opening, transcribed from the image and decoded with the letter-homophone key plus whatever of the word-code
+  table this alignment recovers.

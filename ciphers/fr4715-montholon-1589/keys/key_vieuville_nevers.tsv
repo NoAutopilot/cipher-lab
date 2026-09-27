@@ -1,0 +1,56 @@
+# Vieuville-Nevers Cipher (1589), reconstructed by S. Tomokiyo, printed as a clean digital table
+# ("Cipher between Marquis of Vieuville and Duke of Nevers (1589)") in sources/cryptiana/web/nevers.htm,
+# section id=BnFfr3641, image phelippes8.png (fetched from cryptiana.web.fc2.com/code/phelippes8.png,
+# INTAKE-4715, 27 Sept 2026; sources/cryptiana/web/img/phelippes8.png). Homophonic substitution: letter ->
+# one or more numeric code groups (no reconstructed values for j, k, v, w -- French cipher convention, i
+# covers j, u covers v; column b carries only one value; column z carries none). "sign" is the printed code
+# number (decode direction: sign -> plaintext letter); "value" is the plaintext letter. This is a printed
+# digital table, not a hand-drawn manuscript key, so read by direct inspection plus one independent blind
+# Sonnet subagent read (general-purpose agent, shown only the image, no context) as a cross-check, per this
+# job's brief; the two disagreed on whether "64" sits under column h or column i, settled by this worker
+# pixel-cropping and zooming that region of the image directly (3x resize, LANCZOS) -- "64" is under i, not
+# h (crop /tmp/crop_fi.png this session, not committed). All plain numeric cells: grade AB (both reads
+# agreed, and/or settled by a zoomed crop against unambiguous printed digits). Two cells carry a non-numeric
+# printed glyph instead of a digit, transcribed as drawn per CLAUDE.md Usage-adjacent CRYPT B4 convention
+# (marks recorded separately, not folded into a digit guess): grade M, meaning uncertain.
+# nevers.htm's own prose adds a caveat this table does not capture: "Figures with a dot over the first digit
+# are code numbers representing common words" (a separate word-code layer, illustrated only for a sibling
+# letter in BnF fr.3633 f.22, not enumerated here) -- a decode pass against this key should not assume every
+# digit group decodes as a single dotless letter-homophone; an unmatched or oddly-placed group may be one of
+# these undocumented word-codes instead of a transcription error.
+sign	value	kind	grade	source	note
+5	a	letter	AB	nevers.htm image phelippes8.png	bold in the printed table; row 1 of 2 homophones for a
+25	a	letter	AB	nevers.htm image phelippes8.png	row 2 of 2
+10	b	letter	AB	nevers.htm image phelippes8.png	only homophone for b
+65	c	letter	AB	nevers.htm image phelippes8.png	only homophone for c
+75	d	letter	AB	nevers.htm image phelippes8.png	only homophone for d
+23	e	letter	AB	nevers.htm image phelippes8.png	row 1 of 3 homophones for e
+24	e	letter	AB	nevers.htm image phelippes8.png	row 2 of 3
+48	e	letter	AB	nevers.htm image phelippes8.png	row 3 of 3
+20	f	letter	AB	nevers.htm image phelippes8.png	only homophone for f
+30	g	letter	AB	nevers.htm image phelippes8.png	only homophone for g
+40	h	letter	AB	nevers.htm image phelippes8.png	only homophone for h
+63	i	letter	AB	nevers.htm image phelippes8.png	row 1 of 2 homophones for i (also covers j, French convention)
+64	i	letter	AB	nevers.htm image phelippes8.png	row 2 of 2; column disagreement between the two blind reads (h vs i) settled by a zoomed pixel crop -- sits under i
+50	l	letter	AB	nevers.htm image phelippes8.png	only homophone for l
+60	m	letter	AB	nevers.htm image phelippes8.png	only homophone for m
+73	n	letter	AB	nevers.htm image phelippes8.png	row 1 of 2 homophones for n
+74	n	letter	AB	nevers.htm image phelippes8.png	row 2 of 2
+59	o	letter	AB	nevers.htm image phelippes8.png	row 1 of 2 homophones for o
+85	o	letter	AB	nevers.htm image phelippes8.png	row 2 of 2
+70	p	letter	AB	nevers.htm image phelippes8.png	only homophone for p
+80	q	letter	AB	nevers.htm image phelippes8.png	only homophone for q
+1	r	letter	AB	nevers.htm image phelippes8.png	bold in the printed table; row 1 of 4 homophones for r
+11	r	letter	AB	nevers.htm image phelippes8.png	row 2 of 4
+16	r	letter	AB	nevers.htm image phelippes8.png	row 3 of 4
+19	r	letter	AB	nevers.htm image phelippes8.png	row 4 of 4
+49	s	letter	AB	nevers.htm image phelippes8.png	row 1 of 4 homophones for s
+83	s	letter	AB	nevers.htm image phelippes8.png	row 2 of 4
+84	s	letter	AB	nevers.htm image phelippes8.png	row 3 of 4
+♀	s	letter	AB	nevers.htm image phelippes8.png	row 4 of 4; printed glyph, not a digit (looked in the image like a circle topped by a short vertical stroke crossed by a horizontal bar). Cross-validated, not just visually matched: bnf4715.htm's own running "DUMP" text for no.58 (f.81) uses this identical character where the aligned French plaintext needs an s (e.g. "hasard" -> "40(h) 25(a) ♀(s) 25(a) 1(r) 75(d)"), decoded from the page's raw Shift_JIS bytes (0x81 0xA6) with cp932, not read off the table image a second time -- upgraded from the initial M grade to AB on this independent textual confirmation
+52	t	letter	AB	nevers.htm image phelippes8.png	row 1 of 2 homophones for t
+95	t	letter	AB	nevers.htm image phelippes8.png	row 2 of 2
+93	u	letter	AB	nevers.htm image phelippes8.png	row 1 of 2 homophones for u (also covers v, French convention)
+94	u	letter	AB	nevers.htm image phelippes8.png	row 2 of 2
+▽	x	letter	AB	nevers.htm image phelippes8.png	only cell in the x column; printed glyph, not a digit (an open downward-pointing triangle). Cross-validated the same way as the s-column glyph above: bnf4715.htm's own running "DUMP" text for no.58 (f.81) uses this identical character where the plaintext needs x (e.g. "excomunie" -> "24(e) ▽(x) 65(c) 85(o) ..."), decoded via cp932 from the page's raw Shift_JIS bytes -- upgraded from the initial M grade to AB
+90	y	letter	AB	nevers.htm image phelippes8.png	only homophone for y

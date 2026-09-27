@@ -7201,3 +7201,19 @@ Français 3641 (inside the fr.3005-3993 Ligue/Nevers range the fourth pass alrea
 item 19 (no sender/date/key given in the catalogue snippet, not matched to a Tomokiyo "can be read with" sentence
 -- not added), and one Français 4736 D'Anzay hit that did not carry the search phrase in its own snippet (noise).
 Two requests to this host this pass (plus the reachability GET), 2s apart.
+
+## INTAKE-4715 unit B promotion, 27 Sept 2026
+
+KEY-ADJACENT.tsv row 19 (`bnf4715.htm`, no.58, BnF fr.4715 f.81, Montholon, Tours, 8 Nov 1589) is promoted from
+the register to a folder: `ciphers/fr4715-montholon-1589` (Layout intake, no reading, no class -- see its own
+NOTES.md). Found-solved gate: no -- Tomokiyo's page gives only the letter's opening (its own printed passage
+ends in an explicit "...."), confirmed against the manuscript image (a plain scan, no interlinear reading).
+Key of record (`keys/key_vieuville_nevers.tsv`, Vieuville-Nevers cipher, `nevers.htm` section id=BnFfr3641) is
+transcribed and registered (KEY-OFFICES.tsv, KEY-DESIGN.tsv, `tools/key_design.py --check` passes); the
+printed opening is on disk as a known-plaintext crib (`known_plaintext.txt`, `aligned_dump.txt`). `tools/
+intake_gate_check.py fr4715-montholon-1589` passes ("open ... edition/page or full-text-search citation
+found within 6 lines"). Next step: a calibrated transcription of f.81r/f.81v against the key and the printed
+opening, per NOTES.md.
+
+Row 19's neighbour, KEY-ADJACENT.tsv row 17 (`mayenne.htm`, BnF fr.4715 f.61, Mayenne's polyphonic cipher) is
+a distinct target in the same volume, untouched this job.

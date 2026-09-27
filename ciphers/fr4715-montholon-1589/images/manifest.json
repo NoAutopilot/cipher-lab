@@ -1,0 +1,21 @@
+{
+  "source": "BnF fr.4715 (ark:/12148/btv1b52509819x), Gallica IIIF, mid-resolution (1000px wide) fetches",
+  "fetched": "27 Sept 2026",
+  "why": "INTAKE-4715 unit B: Layout intake for no.58 (f.81), Montholon to an unnamed recipient, Tours, 8 Nov 1589 (KEY-ADJACENT.tsv row 19 [bnf4715.htm]). No reading, no decoding, no class -- solver-ready intake only, on the ciphers/nevers-birago-fr3251-1572 pattern.",
+  "canvas_rule": "this ark's IIIF manifest carries its own folio labels (tools/gallica_folio.py: 174 of 202 canvases labelled; two offset runs, f15-f78 at k=14 and f81-f188 at k=16, INCONSISTENT -- the tool's own warning to use the label, not a formula). folio 81 label lookup gave canvas f177 = label '81r', canvas f178 = label '81v' directly from the manifest, not derived from either offset run.",
+  "eye_check": "canvas f177 (81r) fetched at 600px and viewed directly: same page layout, same BL-style wax-seal-shaped stamp top-left, same cipher/clear-word text block shape and folio number '81' visible top-right corner as Tomokiyo's own BnFfr4715f81.png (sources/cryptiana/web/img/BnFfr4715f81.png, fetched from cryptiana.web.fc2.com/code/BnFfr4715f81.png) -- confirms the label-given canvas without relying on either offset run.",
+  "files": {
+    "f81r_canvas177.jpg": {
+      "folio": "81r (no.58, Montholon, Tours, 8 Nov 1589)",
+      "canvas": 177,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f177/full/1000,/0/native.jpg",
+      "note": "matches Tomokiyo's own page image (sources/cryptiana/web/img/BnFfr4715f81.png) by eye; mostly cipher digit groups with a handful of plain-French words interspersed, per the manuscript image itself -- not transcribed this job"
+    },
+    "f81v_canvas178.jpg": {
+      "folio": "81v",
+      "canvas": 178,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52509819x/f178/full/1000,/0/native.jpg",
+      "note": "not examined this job beyond the fetch; the letter's extent (whether it continues past 81v) is unconfirmed"
+    }
+  }
+}
