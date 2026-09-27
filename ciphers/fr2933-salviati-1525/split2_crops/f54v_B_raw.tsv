@@ -1,0 +1,31 @@
+id	code	marks	conf	note
+c001	m	5	M	two-humped cursive m, small hooked squiggle above (numeral-3-like), nearest listed mark is the s/5-hook
+c002	nt	7	H	"my"-shaped ligature matches the nt exemplar in atlas row (n+ variant), numeral-7-like mark above
+c003	e	+	H	single bowl closed by loop at top, small cross tick above
+c004	f		M	long stem with hooked/looped tail curling toward neighboring y, matches atlas f's curling-tail variants
+c005	o.		H	closed ring with a dot inside, clean match
+c006	v	dot	M	curved hooked stroke, fairly vertical, small dot at upper right (may be stray ink)
+c007	rz	5	M	low cursive stroke, hook then wave, squiggle above resembles numeral 3, nearest listed mark 5
+c008	m	5	H	two-humped m, clear s/5-hook mark above
+c009	m	5	M	two-humped m, curved squiggle above (numeral-2-like), nearest listed mark 5
+c010	WORD		H	plain cursive Italian word ("aggiungera"-like), ordinary script not cipher
+c011	U		H	square cup open at top, clean straight strokes
+c012	sq		H	closed square box, no interior mark
+c013	[		H	small bracket open to the right, vertical stroke with top/bottom ticks
+c014	m	7	H	two-humped m, numeral-7-shaped mark above
+c015	v		M	curved hook stroke, no visible mark, consistent with v's hooked-left-arm shape
+c016	v	1|5	M	curved v shape, compound "1"+"5"-like mark to upper right as in several atlas v exemplars
+c017	eps		H	two open bowls stacked, open to right, no closed loop; top bowl is part of glyph not a separate mark
+c018	y		M	hooked stroke into a looped tail, consistent with cursive y
+c019	WORD		H	plain cursive Italian word fragment ("aggiun..."), ordinary script
+c020	w		M	cursive omega/w with lead-in stroke; a "+" sign sits to the right at the same height but appears to be a separate neighboring token, not a mark above this w
+c021	wd		H	omega/U-shaped body joined to a right-hand stroke curling down, matches wd ligature
+c022	rz	~	M	low hooked-then-wavy stroke, curl mark above resembling numeral 3, treated as nearest tilde-like mark
+c023	g	ot	L	cluttered crop; 9/g-shaped sign with a small loop above resembling the "ot" mark, low confidence due to adjacent ink
+c024	dl		M	small loop/delta shape sitting atop a long wavy tail, matches delta-with-tilde-tail
+c025	?		L	only a small hook/stroke fragment visible below "py"; nearest candidate v or a cut-off y tail, insufficient detail
+c026	U		M	rounded open-top cup shape with a small tick at upper right, close to U but more curved than the block-letter atlas exemplars
+c027	g		M	circular loop atop a descending curved tail, numeral-9-like, matches g
+c028	y		H	cursive y with looped tail, clear match
+c029	?		L	only a short rising stroke visible beneath a marginal "3"; nearest candidate tee or f, too little ink to decide
+c030	?		L	box appears empty, no visible ink

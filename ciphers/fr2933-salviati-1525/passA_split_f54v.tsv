@@ -1,0 +1,31 @@
+line	pos	sign	conf	marks	note	id
+1	15	y	H		clean cursive y with looped tail, matches atlas y well	c011
+1	24	o.	H		ring with a dot inside, clean circular sign, matches o. exactly	c030
+2	7	g	M		stacked loop / 9-shape flourish, closest to g	c006
+2	12	?	L		box appears mostly blank/very faint paper texture with no clearly discernible ink sign; cannot confidently match any atlas code	c026
+3	6	e	H	dot	single bowl closed by a loop at the top, small dot mark above - matches e	c027
+3	17	wd	M		squared omega/U shape joined immediately to a curling descender tail (ud-like)	c015
+3	25	v	M		single curved stroke resembling a v/check-mark	c019
+4	3	m	H	~	cursive m with a wavy tilde-like mark above	c004
+4	4	m	M	5	m with a curly numeral-like mark above, closest defined mark is s/5-hook	c018
+4	21	f	H		long f with crossbar, standard shape, matches atlas f	c029
+4	22	v	M		curved v stroke, similar to c001/c016/c019	c023
+4	26	U	H		square cup shape, open at top, flat bottom, matches U cleanly	c010
+4	29	dl	M		hooked top with wavy tail below, same dl pattern as c005	c012
+4	30	dl	L		only a short curving stroke visible inside the box (rest of a wavy tail is outside); best guess dl by analogy with c005/c012/c024	c020
+5	2	WORD	M		loop+ascender+descender resembling plain cursive "dy"-type letters, not a fixed cipher code (plain d/ll are explicitly non-ciphertext); read as word fragment	c021
+5	12	nt	M	7	n+crossed-stroke ligature ("my"-like cursive), numeral-7-shaped mark directly above	c003
+5	15	eps	H		two stacked open bowls, open to the right, no closed loop - matches eps well	c017
+6	2	m	H	7	cursive m with a clear numeral-7-shaped mark directly above	c013
+6	21	m	H	~	cursive m with wavy tilde-like mark above	c025
+6	25	dl	M		hooked top with wavy tail below, same dl pattern as c005/c012	c024
+9	21	dl	M		hooked/curled top (delta) with long wavy tail below, matches dl pattern	c005
+10	3	v	L		small hooked curl on the baseline, no closed loop; closest match is a simplified v	c001
+11	10	WORD	H		plain cursive Italian word ("aggiu...")	c014
+11	12	WORD	H		plain cursive Italian word ("aggiungersi")	c028
+11	26	sq	H		clean closed square box, matches sq	c022
+14	25	v	M		rounded v / check-mark curve, no closed loop	c016
+18	4	y	M		cursive y with looped tail, "ry"-like rendering	c007
+18	9	wd	M		omega/w-shape joined to a tall right stroke crossed near the top (ud-like), matches wd	c002
+18	31	[	M		smooth curve open to the right, bracket-like; no sharp square corners as in atlas [ but closest match	c008
+19	14	v	M	5	curved u/v base with a small curly hook mark above right, closest mark is s/5-hook	c009

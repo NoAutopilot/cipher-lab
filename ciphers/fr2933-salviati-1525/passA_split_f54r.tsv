@@ -1,0 +1,13 @@
+line	pos	sign	conf	marks	note	id
+1	12	e	M	+	bowl loop with a cross mark above-right, same pattern as c006	c007
+2	18	v	M		similar curved v-hook shape to c003; a dot sits just outside the box upper-right, likely belongs to the neighbouring glyph rather than a mark on this sign, so left unmarked	c004
+4	4	v	H		curved hook with small loop at upper-left, low arc sweeping right, matches v cleanly	c003
+6	15	f	H		long f shape with crossbar and small hook at top, clean match	c011
+7	7	L	M		two close vertical strokes, left one short with a small hook (interior digit-like mark), right one a tall plain stem; alt candidate bh not excluded, hook position differs from bh's usual upper-right loop	c005
+8	11	phi	M		small circle joined by a stroke to a diagonally-crossed continuation on the right, resembles a slashed-o on a stem; alt candidate nt (n+) considered but the round component looks more circular than n-shaped	c009
+8	14	wd	M		vertical stem joined to an open loop below, tail hooks upward at right, omega+stem shape	c002
+12	3	tee	H		vertical stroke with a horizontal bar to the right, right-angle-bracket shape, clean match	c010
+12	26	]	H		rounded bracket open to the left, clean match to ]	c008
+13	9	f	H		long f shape with crossbar, same as c011	c012
+14	10	g	M		small loop at top curling into a hooked tail down-left, 9/g-like; alt candidate y (looped tail) not excluded	c001
+18	19	e	M	+	single bowl/loop with a crossing plus-shaped mark just above-right of the loop, matches e's usual "+/# above" pattern; alt candidate dl (loop+tail, no separate mark) considered less likely because of the distinct crossing stroke	c006

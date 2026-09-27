@@ -1,0 +1,14 @@
+line	pos	A_code	A_marks	A_conf	A_id	B_code	B_marks	B_conf	B_id
+2	7	g		M	c006	g	ot	L	c023
+3	25	v		M	c019	v	dot	M	c006
+3	6	e	dot	H	c027	e	+	H	c003
+4	29	dl		M	c012	rz	~	M	c022
+4	3	m	~	H	c004	m	5	H	c008
+4	30	dl		L	c020	?		L	c029
+5	2	WORD		M	c021	g		M	c027
+6	21	m	~	H	c025	m	5	M	c009
+9	21	dl		M	c005	rz	5	M	c007
+10	3	v		L	c001	?		L	c025
+14	25	v		M	c016	v	1|5	M	c016
+18	9	wd		M	c002	w		M	c020
+19	14	v	5	M	c009	U		M	c026

@@ -1,0 +1,6 @@
+line	pos	A_code	A_marks	A_conf	A_id	B_code	B_marks	B_conf	B_id
+1	12	e	+	M	c007	phi		M	c004
+7	7	L		M	c005	bh		M	c001
+8	14	wd		M	c002	dl		M	c012
+14	10	g		M	c001	eps	7	M	c011
+18	19	e	+	M	c006	dl		M	c009

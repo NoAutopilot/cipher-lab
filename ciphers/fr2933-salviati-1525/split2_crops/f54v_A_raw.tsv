@@ -1,0 +1,31 @@
+id	code	marks	conf	note
+c001	v		L	small hooked curl on the baseline, no closed loop; closest match is a simplified v
+c002	wd		M	omega/w-shape joined to a tall right stroke crossed near the top (ud-like), matches wd
+c003	nt	7	M	n+crossed-stroke ligature ("my"-like cursive), numeral-7-shaped mark directly above
+c004	m	~	H	cursive m with a wavy tilde-like mark above
+c005	dl		M	hooked/curled top (delta) with long wavy tail below, matches dl pattern
+c006	g		M	stacked loop / 9-shape flourish, closest to g
+c007	y		M	cursive y with looped tail, "ry"-like rendering
+c008	[		M	smooth curve open to the right, bracket-like; no sharp square corners as in atlas [ but closest match
+c009	v	5	M	curved u/v base with a small curly hook mark above right, closest mark is s/5-hook
+c010	U		H	square cup shape, open at top, flat bottom, matches U cleanly
+c011	y		H	clean cursive y with looped tail, matches atlas y well
+c012	dl		M	hooked top with wavy tail below, same dl pattern as c005
+c013	m	7	H	cursive m with a clear numeral-7-shaped mark directly above
+c014	WORD		H	plain cursive Italian word ("aggiu...")
+c015	wd		M	squared omega/U shape joined immediately to a curling descender tail (ud-like)
+c016	v		M	rounded v / check-mark curve, no closed loop
+c017	eps		H	two stacked open bowls, open to the right, no closed loop - matches eps well
+c018	m	5	M	m with a curly numeral-like mark above, closest defined mark is s/5-hook
+c019	v		M	single curved stroke resembling a v/check-mark
+c020	dl		L	only a short curving stroke visible inside the box (rest of a wavy tail is outside); best guess dl by analogy with c005/c012/c024
+c021	WORD		M	loop+ascender+descender resembling plain cursive "dy"-type letters, not a fixed cipher code (plain d/ll are explicitly non-ciphertext); read as word fragment
+c022	sq		H	clean closed square box, matches sq
+c023	v		M	curved v stroke, similar to c001/c016/c019
+c024	dl		M	hooked top with wavy tail below, same dl pattern as c005/c012
+c025	m	~	H	cursive m with wavy tilde-like mark above
+c026	?		L	box appears mostly blank/very faint paper texture with no clearly discernible ink sign; cannot confidently match any atlas code
+c027	e	dot	H	single bowl closed by a loop at the top, small dot mark above - matches e
+c028	WORD		H	plain cursive Italian word ("aggiungersi")
+c029	f		H	long f with crossbar, standard shape, matches atlas f
+c030	o.		H	ring with a dot inside, clean circular sign, matches o. exactly

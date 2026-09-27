@@ -2678,3 +2678,81 @@ and `ciphertext.split-candidate.txt` (committed). `plain_crops/*/*.png` and the 
 and the small canvas jpgs already on file stay tracked). No credentials, no reading, no novelty wording, no "new" or
 "first". Requests: gallica.bnf.fr 5. Subagents: 4 (plus 2 short follow-up messages to 2 of them for missed rows, not
 new calls).
+
+## SALV2-J1A: code+mark transcription of the confirmed boxes (27 Sept 2026, LANE SALV2)
+
+Worker SALV2-J1A (Sonnet), 02:02-02:19 UTC. Brief `.claude/briefs/runs/2026-09-27-lane-salv2-ytbiz-j1-transcribe.md`.
+Leaves f54r (12 confirmed boxes) and f54v (30). No decoding, no family run. Grades stay H0 C0 S0 M0 I0 except the
+per-token AB/M grades this job assigns to the 42 boxes it writes.
+
+**U0.** `bash regen_images.sh page src_ark_12148_btv1b90600674_f55_4085_0_4086_5513.jpg` (f54r native crop) and one
+direct curl at the f54v `/2400,/` region (same IIIF offset SALV-SPLIT used) -- 2 gallica.bnf.fr requests, >=2s apart,
+browser UA, both HTTP 200 and valid JPEGs. `crop_plain_leaf.py f54r`/`f54v` reproduced SALV-SPLIT's own box/line counts
+exactly (139/152 plain boxes marked). Confirmed-box lists (`split2_f54r_list.tsv`, `split2_f54v_list.tsv`) pulled from
+`ciphertext_<leaf>.split-candidate.tsv`'s rows whose `grade` ends `|split-candidate` (CRLF line endings in that file
+meant a naive awk match silently returned 0 rows -- caught by cross-checking the count against the brief's own 12/30
+before trusting it): 12 and 30 rows, matching the brief exactly. `crop_plain_leaf.py <leaf> --boxes ... --seed <N>`
+cut two independently-shuffled crop sets per leaf (seeds 101/202 for f54r, 303/404 for f54v); eye-checked one crop from
+each leaf before the first call (context and headroom correct, blue box round the target only, no plain/sign
+annotation drawn -- confirmed the per-box crop for the same (line,pos) is byte-identical between the A and B seed
+directories, since the crop region is computed from the box coordinates alone, not the shuffle).
+
+**U1, 4 blind Sonnet subagent calls** (f54r pass A/B, f54v pass A/B; a fresh subagent per pass, per the brief), each
+given only that leaf's shuffled per-box crops, the two atlas plates, the 36-code inventory descriptions and the 9-mark
+vocabulary -- nothing about flags, prior guesses, plain/sign status or hypotheses. All 4 came back with full coverage
+on the first reply (12/12, 12/12, 30/30, 30/30), no follow-up messages needed. Raw outputs: `split2_crops/<leaf>_<A|B>_raw.tsv`;
+mapped to (line,pos) via the `_key.tsv` files into `passA_split_<leaf>.tsv`/`passB_split_<leaf>.tsv` (long format:
+line, pos, sign, conf, marks, note, id).
+
+**U2, reconciliation.** The per-box samples are scattered positions on a line, not a line's full sign sequence, so
+`tools/reconcile_passes.py`'s Needleman-Wunsch line alignment does not fit (its own `--rows` shape); per the brief's
+fallback clause, wrote `reconcile_split_boxes.py` (committed, `--help`'d), which joins the two passes by the (line,pos)
+key directly and reports the transcription-error control figure:
+
+| leaf | n | code agree | marks agree | code+mark agree (control) | disagreements | AB | M | WORD |
+|---|---|---|---|---|---|---|---|---|
+| f54r | 12 | 7/12 = 58.3% | 9/12 = 75.0% | 7/12 = 58.3% | 5 | 7 | 5 | 0 |
+| f54v | 30 | 23/30 = 76.7% | 21/30 = 70.0% | 17/30 = 56.7% | 13 | 17 | 13 (incl. 1 `?`) | 2 (AB) |
+
+Both figures sit below bSALC's 6.4% per-sign measured error, as expected: bSALC measured disagreement on already-settled
+sign boxes with an established base code, while these are freshly-confirmed boxes with no prior sign reading at all --
+two independent blind reads of a genuinely new sign are a harder task than a third read arbitrating two mostly-agreeing
+prior passes. I (the worker, not a subagent) settled every one of the 18 disagreements from the crop images directly
+(`split2_settled_manual.tsv`, `recon_split_<leaf>/settled.tsv`'s `how` column has the per-box reasoning), comparing
+each disputed shape against the atlas plates at full resolution; one box (f54v line 4 pos 30) was genuinely
+undecidable -- a mostly-blank crop catching only the tail-end of the neighbouring line-4-pos-29 sign -- and is graded
+`?`/M rather than forced into a code. Two f54v boxes (line 11 pos 10 and 12) were called `WORD` by both blind passes
+independently (grade AB) and stay plain per the brief's own rule; they count against SALV-SPLIT's original
+confirmation for those two positions specifically.
+
+**Pass-0 agreement.** SALV-SPLIT's own one-pass `code` guess (never shown to either subagent) agreed with this job's
+settled code on 6/12 = 50.0% of f54r's confirmed boxes and 11/30 = 36.7% of f54v's -- consistent with NOTES.md's own
+characterization of that column as "a 'pass 0' of unknown grade," not a reading. 4 of the 6 f54v mismatches are cases
+where pass-0 guessed a real code and this job also settled on a different real code (no overlap in either direction
+with `UNK`); 2 (f54r line 12 pos 26; f54v line 2 pos 12 and line 4 pos 30) are pass-0 `UNK` against this job's own `]`
+or `?` -- conceptually the same "unclear" signal under different labels, not counted as agreement above.
+
+**Caveat, pre-existing marks on 3 now-reclassified plain rows.** Before this job, 3 of the 42 confirmed boxes
+(f54r line 4 pos 4, line 12 pos 3, line 12 pos 26) already carried a non-blank `marks` value (`dot`, `~`, `dot`)
+on their plain (`code='_'`) row -- some earlier plain-transcription pass evidently recorded a mark-like annotation
+even for boxes it read as plain Italian script. This job's two fresh blind passes agreed with each other (AB) on all
+three, and agreed on no mark present; per the brief's write-back instruction (replace code, marks and grade at the
+confirmed row), the legacy value is superseded, not merged. Flagged here since it is a real disagreement between two
+different sessions' work, not a script bug -- two independent fresh blind reads outweigh one now-superseded plain-pass
+annotation, but a future session cross-checking `marks` history on these exact 3 boxes should know the field changed.
+
+**Write-back.** `apply_split2_writeback.py <leaf>` (committed, `--help`'d) replaced exactly the 12 (f54r) and 30 (f54v)
+confirmed rows' `code`/`marks`/`grade` in the real `ciphertext_<leaf>.tsv` (grade `AB|split2` or `M|split2`), asserting
+each targeted row was still `_` before overwriting; every other row is untouched. `git diff --stat`: 24 changed lines
+(12 old + 12 new) in f54r, 60 (30 old + 30 new) in f54v -- exactly one old/new line pair per confirmed row, since each
+row is one line of the TSV; row counts unchanged (510/509 before and after, `wc -l`). `ciphertext_f{54r,54v}.split-candidate.tsv`,
+`specs/fr2933-salviati-1525.json`, `ciphertext.txt` and `ciphertext_with_plain.txt` are all untouched (`git diff --stat`
+empty on all four) -- `build_spec.py` was not run, per the brief (job 2's own step).
+
+Files: `split2_f54r_list.tsv`, `split2_f54v_list.tsv`, `split2_crops/*_key.tsv`, `split2_crops/*_raw.tsv`,
+`split2_settled_manual.tsv`, `passA_split_f54r.tsv`, `passB_split_f54r.tsv`, `passA_split_f54v.tsv`,
+`passB_split_f54v.tsv`, `recon_split_f54r/`, `recon_split_f54v/`, `reconcile_split_boxes.py`,
+`apply_split2_writeback.py`, `ciphertext_f54r.tsv`, `ciphertext_f54v.tsv` (all committed). `split2_crops/*/*.png`
+(the per-box crop images) are working files, `.gitignore`d this session (same convention as `plain_crops/*/*.png`).
+No credentials, no reading, no novelty wording, no "new"/"first"/"solved". Requests: gallica.bnf.fr 2. Subagents: 4
+(0 follow-ups needed). Status stays **partial**.

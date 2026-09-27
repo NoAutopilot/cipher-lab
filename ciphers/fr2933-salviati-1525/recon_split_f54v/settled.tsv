@@ -1,0 +1,31 @@
+line	pos	code	marks	grade	how
+1	15	y		AB	
+1	24	o.		AB	
+2	7	g	ot	M	a small mark is visible above the g loop (superscript squiggle); nearest listed mark is ot per pass B, pass A likely missed it
+2	12	?		AB	
+3	6	e	+	M	mark above the bowl is a small cross/tick shape (vertical stroke with short horizontal bar), matching + rather than a plain round dot
+3	17	wd		AB	
+3	25	v	dot	M	a single dot sits directly above the v inside the crop; matches pass B's dot reading
+4	3	m	5	M	mark above m is a distinct small s-shaped hook, matching the 5 mark rather than a simple tilde wave
+4	4	m	5	AB	
+4	21	f		AB	
+4	22	v		AB	
+4	26	U		AB	
+4	29	rz	5	M	low double-hump wave on the baseline matches rz (not dl's loop+tail shape); the squiggle above resembles a "3"/S-curve, closer to the 5/s-hook mark than the 2-like ~ wave
+4	30	?		M	box captures mostly blank space with a faint tail-curl continuing from the neighbouring sign at pos 29; no distinct sign body visible inside the box itself, undecidable
+5	2	g		M	loop+ascender shape matches g's atlas exemplars (loop with hooked tail) better than a plain cursive letter; the box was independently confirmed sign-like by SALV-SPLIT's own blind check
+5	12	nt	7	AB	
+5	15	eps		AB	
+6	2	m	7	AB	
+6	21	m	~	M	mark above m is a smooth wavy squiggle, matching ~ (tilde) rather than a hooked 5-shape
+6	25	dl		AB	
+9	21	rz	5	M	same low double-hump rz shape and "3"-like squiggle mark as line4 pos29, read the same way for consistency
+10	3	v		M	a small but discernible curved hook stroke is present (not blank), shape consistent with v's hooked-arm description, though minimal ink
+11	10	WORD		AB	
+11	12	WORD		AB	
+11	26	sq		AB	
+14	25	v	1|5	M	a compound "1"-then-s/5-hook mark is visible above the box, matching pass B's 1|5 reading; pass A likely missed it
+18	4	y		AB	
+18	9	w		M	the + shape to the right sits at the same baseline height as a separate neighbouring token, not integrated into a closed d-loop the way atlas wd exemplars show
+18	31	[		AB	
+19	14	U	5	M	rounded cup shape at the bottom matches U cleanly, not v's angular hook; a small s-hook squiggle above it matches the 5 mark pass A also noticed (on the wrong base code)

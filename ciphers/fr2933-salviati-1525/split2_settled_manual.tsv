@@ -1,0 +1,19 @@
+leaf	line	pos	code	marks	how
+f54r	1	12	e	+	closed round bowl with rising loop matches e's closed-bowl description; separate + cross to upper right sits where e's atlas exemplars carry the +/# mark, not phi's continuous stem+slash
+f54r	7	7	bh		short hooked lead-in stroke on the left plus a tall plain stem on the right matches bh's lead-in+hook+stem composition better than L's single angled stroke with a digit tucked in the corner
+f54r	8	14	dl		small loop/hook flowing into a wavy tail matches dl's own atlas exemplars (loop+long tilde tail); no closed U/omega cup as wd needs
+f54r	14	10	eps	7	stacked open-bowl "3"-like shape matches eps (two open bowls, no closed loop) with a clear 7-shaped mark above, not a single 9-loop as g needs
+f54r	18	19	dl	+	open hook flowing into a wavy tail matches dl (no closed round bowl as e needs); separate + cross above the tail's end read as a mark on this sign
+f54v	2	7	g	ot	a small mark is visible above the g loop (superscript squiggle); nearest listed mark is ot per pass B, pass A likely missed it
+f54v	3	25	v	dot	a single dot sits directly above the v inside the crop; matches pass B's dot reading
+f54v	3	6	e	+	mark above the bowl is a small cross/tick shape (vertical stroke with short horizontal bar), matching + rather than a plain round dot
+f54v	4	29	rz	5	low double-hump wave on the baseline matches rz (not dl's loop+tail shape); the squiggle above resembles a "3"/S-curve, closer to the 5/s-hook mark than the 2-like ~ wave
+f54v	4	3	m	5	mark above m is a distinct small s-shaped hook, matching the 5 mark rather than a simple tilde wave
+f54v	4	30	?		box captures mostly blank space with a faint tail-curl continuing from the neighbouring sign at pos 29; no distinct sign body visible inside the box itself, undecidable
+f54v	5	2	g		loop+ascender shape matches g's atlas exemplars (loop with hooked tail) better than a plain cursive letter; the box was independently confirmed sign-like by SALV-SPLIT's own blind check
+f54v	6	21	m	~	mark above m is a smooth wavy squiggle, matching ~ (tilde) rather than a hooked 5-shape
+f54v	9	21	rz	5	same low double-hump rz shape and "3"-like squiggle mark as line4 pos29, read the same way for consistency
+f54v	10	3	v		a small but discernible curved hook stroke is present (not blank), shape consistent with v's hooked-arm description, though minimal ink
+f54v	14	25	v	1|5	a compound "1"-then-s/5-hook mark is visible above the box, matching pass B's 1|5 reading; pass A likely missed it
+f54v	18	9	w		the + shape to the right sits at the same baseline height as a separate neighbouring token, not integrated into a closed d-loop the way atlas wd exemplars show
+f54v	19	14	U	5	rounded cup shape at the bottom matches U cleanly, not v's angular hook; a small s-hook squiggle above it matches the 5 mark pass A also noticed (on the wrong base code)
