@@ -417,3 +417,85 @@ not a reading). No image was added to the folder: it already held 29, over the 2
 fr.7131 f.228 image are in the worker's scratch and can be re-fetched from the URLs above. Requests: gallica.bnf.fr 3
 (1 SRU, 1 manifest via gallica_folio.py, 1 native image). Subagents: 4 Sonnet (two blind cipher passes, two blind key
 reads).
+
+## Glyph-matched re-transcription and key-cell pass (VB-DECODE2, 27 Sept 2026): gate NOT met
+
+Per `.claude/briefs/runs/2026-09-26-parent-vb-decode2.md`, the stuck-rule try named above. Status unchanged: `blocked`
+(the M9 gate). No class, no novelty wording, no grades (the gate was not cleared). **Verso only; the recto was not
+reached** (stopped on cost, 13 Sonnet calls, before the box ran out).
+
+**1. Transcription (`ciphertext_v2.txt`, verso 5 lines, 136 tokens).** Padded native crops of each line (two
+overlapping halves; scratch only, no image added to the folder). Two independent Sonnet passes per line. Each pass was
+shown the line crops, BnF fr.7131 f.228 and the f.275 alphabet block as pictures, and chose ids from a fixed inventory,
+with digits kept apart from letter-signs and diacritics as separate marks. The merge is mechanical and there was no
+eye reconciliation (rule in the file header). Agreement per line, then how much of v1 (`ciphertext.txt`, key-aware
+reconciliation) is found again in v2:
+
+| line | pass A / B tokens | v2 tokens | A = B | v1 tokens re-found in v2 |
+|---|---|---|---|---|
+| v1 | 26 / 28 | 27 | 17 (63%) | 17 of 27 (63%) |
+| v2 | 27 / 32 | 27 | 17 (63%) | 15 of 31 (48%) |
+| v3 | 31 / 28 | 29 | 15 (52%) | 16 of 34 (47%) |
+| v4 | 27 / 24 | 24 | 12 (50%) | 13 of 29 (45%) |
+| v5 | 29 / 29 | 29 | 16 (55%) | 16 of 29 (55%) |
+| verso | | 136 | 77 (57%) | 77 of 150 (51%) |
+
+Glyph matching did not raise agreement: 57% two-pass agreement against v1's 69% at-least-one-pass figure, and v2
+re-finds only half of v1. The big hook-and-curl family (the Hr/Hu/Hun/HZ hooks and the new stand-alone Ch hook) and
+the y / tailed-3 pair were marked l or m by every pass on every line. That is the unresolved part.
+The first line-4 A pass transcribed the wrong line (the brief's prompt said "top line", and the padded crop shows the
+foot of line 3). It was rerun after the prompt was fixed, and only the rerun is used.
+
+**2. Key cells (`keys/key_f275_v2.tsv`; `key_f275.tsv` untouched).** Scoped to the letter-sign alphabet block, not
+all 86 cells, because word-code values cannot move the letter-stream score under the class shuffle. Two Sonnet reads
+(left half a-m, right half n-z plus con) against f.228, plus the worker's own read of the same crops. A cell changed
+only where two reads agreed. Unclear 86 -> 80, counting 2 new rows: 8 cells confirmed and 1 cell changed. Changes:
+- x4 (crossed 4): f -> **g** (both reads place it in column g, row 2).
+- 3, ab, v, q, p, mt, 6, m: unclear -> clear. The column was confirmed by two reads.
+- **7: comme -> null (still unclear).** The f.275 notes say *"Nulles 7 et [circle with a cross on top]"*. The word
+  list also shows a 7-shape beside "Comme" (and a 6 with a C above beside "Combat"), so which form the block uses is
+  unresolved.
+- Added **Cx** (circle with a cross on top) as null, from the same note.
+- Added **Ch** (a large C-hook standing alone) as the sign that *"doublera son prochain"*, from the note. It is a new
+  decoder kind, `double`, and still unclear.
+- Crossed ff (xff) is **not** changed. The left-half read puts it under d and the right-half read under r, so the
+  reads conflict.
+- Defect found, not fixed in v2: the key has sign 6 twice (letter t, word combat) and sign 8 twice (letter b, word
+  cela). The loader keeps the last row, so every 6 and 8 decodes as a word, in v1 too. The diagnostic below drops
+  the two word rows.
+
+**3. Control, run before any decode was read.** `decode_f275.py --control --side v` (options added this pass; the
+defaults are unchanged and `reading.txt --check` is still current). 20 class-shuffled keys, fr16 model, verso lines:
+
+| transcription + key | verso z | rank /21 | v1 | v2 | v3 | v4 | v5 |
+|---|---|---|---|---|---|---|---|
+| v1 + v1 (VB-DECODE) | 1.16 | 3 | 2.44 | 0.06 | 3.34 | -1.28 | -0.21 |
+| v1 + 7 as null only | 1.54 | 2 | 2.31 | 0.07 | 2.38 | -1.39 | -0.07 |
+| v1 + key v2 | 1.45 | 2 | 2.48 | 0.06 | 2.27 | -1.21 | -0.02 |
+| v2 + v1 | 0.86 | 7 | 1.63 | -1.16 | 2.11 | 0.17 | -0.89 |
+| **v2 + key v2** | **0.84** | **5** | 1.66 | -1.60 | 2.38 | -0.01 | -1.42 |
+| v1 + key v2 without word rows 6/8 | 1.52 | 4 | 2.76 | -0.08 | 2.23 | -0.94 | -0.20 |
+| v2 + key v2 without word rows 6/8 | 1.04 | 4 | 2.38 | -1.77 | 1.23 | 0.41 | -0.83 |
+
+Over the whole block (both sides, v1 transcription), z goes from 1.06 (key v1) to 1.47 (7 as null only) to 1.77
+(key v2). fr16 judge (`tools/judge_plaintext.py`, scratch spec, language fr) on the verso decodes:
+v2+key v2 `FAIL language: score=-1.358, null_p99=-1.789, real_p05=-0.899, real_median=-0.779, N=227`; v1+key v1
+`FAIL language: score=-1.387, null_p99=-1.822, real_p05=-0.906, real_median=-0.794, N=233`.
+
+**4. Gate not met.** No verso line reaches z 3 in any row above. The only line above z 2 in both transcriptions and
+every key is v1, and verso line 3's z 3.34 does not survive the fresh transcription or the key change. No
+reading_v2.txt was written, and the check-solved sweep was not run. `decode_v2_verso.txt` is the mechanical decode
+for the record, not a reading.
+**The weaker leg is the transcription.** Replacing the transcription moved the verso z by -0.30 (key v1) and -0.61
+(key v2). Replacing the key moved it by +0.29 (v1 transcription) and -0.02 (v2 transcription).
+The glyph-matched blind passes re-find only half of the key-aware v1. So v1's two leading lines may partly reflect
+the key being in view during reconciliation, and are not yet evidence of the key.
+
+**Next step (a different instrument, not a third pass at the same crops):** a known-plaintext check. Take a sibling
+letter in the same cipher (f.253-f.267; the IMG-FETCH sweep shows cipher letters at f.258, f.260 and f.262-263) that
+carries an interlinear or marginal decipherment. It would fix which hook and tailed-3 forms are which letter, and
+settle 7/comme, 6/combat and xff d/r, before f.268 is transcribed again.
+
+Requests: gallica.bnf.fr 1 (fr.7131 f.228 native image, scratch). Subagents: 13 Sonnet (10 used line passes, 1
+discarded wrong-line pass, 2 key reads). Files: `ciphertext_v2.txt`, `keys/key_f275_v2.tsv`, `decode_v2_verso.txt`,
+`decode_f275.py` (options `--cipher/--key/--out/--side`, kind `double`).
