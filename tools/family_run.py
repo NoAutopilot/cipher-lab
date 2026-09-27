@@ -29,6 +29,9 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
                      matches the target's own sign-count profile; --param noise=p redraws a share p of control
                      tokens at the target's own type frequencies, GOLD-D1 25 Sept 2026)
   periodic_vigenere  Vigenere/Beaufort/variant-Beaufort, short repeating key (own solver; --param tabula=beau period=7)
+  periodic_masc      period-P general substitution: P independent monoalphabetic alphabets in rotation, not a shift
+                     (HES-PHASE 27 Sept 2026, hessen-1824): homophonic_anneal.py over composite (token, coset) signs,
+                     jointly annealed under one full-text n-gram objective; --param period=P is required, no scan
   running_key        book-key Vigenere: running_key.py two-stream beam decoder (needs >= 3 corpus texts; slow)
   keyed_running_key  book key through a keyword-mixed tableau (family B', 25 Sept 2026): stage 1 ranks keywords by the
                      ciphertext letter counts, stage 2 beam-decodes the top ones (--param kcorpus=tools/data/nl20 top=3)

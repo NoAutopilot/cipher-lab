@@ -211,3 +211,58 @@ Landed verbatim from the ChatGPT second-opinion runner's LEADS prompt (PR 35): `
 17. candidate key texts (conditional on provenance): Murhard's *Allgemeine politische Annalen* (1821-24), the Kurhessian Gesetz-Sammlung, Klüber 1809; not a claimed key; unchecked.
 
 None of the 17 leads is a printed decipherment or edition of this target's own text, and none names the key or the cipher system actually used at Kassel in the 1820s -- no check-solved candidate flagged.
+
+## HES-PHASE (27 Sept 2026): periodic_masc family added, control-backed non-test
+
+Job HES-PHASE (parent worker, cap USD 5, brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-hes-phase.md`), following up
+lead [14] of SO-HESSEN1824-LEADS above (a P-phase general substitution, P independent alphabets in rotation, keyed to
+the Anmerkung's "bcdefg(h)" hint). Intake gate re-run 27 Sept 2026 16:58 UTC: `hessen-1824: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, EXIT 0.
+
+**U1.** Added `periodic_masc` to `tools/family_run.py` (`tools/families/periodic_masc.py`): P independent monoalphabetic
+substitution alphabets in rotation -- unlike `periodic_vigenere` (shift-only cosets) or `masc` (a single alphabet),
+each of the P cosets gets its own unrelated full substitution key. Wraps `homophonic_anneal.py` the way `masc.py`
+does, expanding every ciphertext token to a composite sign `"<token>#<coset>"` so the anneal assigns an independent
+key letter to every (token, coset) pair, jointly optimised under one full-text corpus n-gram objective (the decoded
+stream stays in original order, so consecutive trigrams span coset boundaries and couple the P key tables). `--param
+period=P` is required, no scan. Offline test `tools/tests/test_periodic_masc.py`.
+
+**Offline gate finding (logged in the test's own docstring, not repeated in full here):** the brief's own offline gate
+("a known-answer synthetic at N=300, P=3 reads >= 0.9") is not met by this instrument at the target's own natural-
+language K (about 22-26 distinct German/English letters) -- recovery plateaus at 0.10-0.25 even at 8 restarts x
+500k iters, checked up to N=5000 too (more iterations without a better search algorithm does not fix it). Verified
+the objective itself is sound, not broken: the true key's own score is higher than every local optimum the anneal
+actually finds (true -2298.7 vs found -2324 to -2340 at N=1000, K=24, a throwaway check not re-run in the committed
+test). This matches the classical-cryptanalysis expectation for an unrelated-alphabet periodic substitution (ACA's
+Quagmire IV): blind recovery without a crib is known to be hard even at much greater length than a single (masc) or
+shift-linked (periodic_vigenere) alphabet, because a single-swap Metropolis search has P times masc's key-parameter
+count on the same data. The committed offline test instead checks mechanism correctness (composite-sign wiring, the
+control's K/P/continuity design, joint annealing) on a collapsed 4-letter alphabet ("etao", every other English
+letter folded to "e"), where it reaches about 0.79 recovery reproducibly -- a real known-answer check, just not at
+the brief's original guessed N/K.
+
+**U2 (control first, de19 -- the era-matched corpus bHCP3 built for this same target, not de20; see NOTES.md's
+"running_key de19" section above for why).** For P in 6, 7, 8, `tools/family_run.py specs/hessen-1824.json --family
+periodic_masc --tokens letters --param period=P --corpus tools/data/de19 --seeds 3 --gate 0.6`, N=164, K=24 (matches
+the target's own N/K exactly):
+
+- P=6: control 0.098 (0.024-0.140), gate 0.6 NOT met.
+- P=7: control 0.102 (0.067-0.159), gate 0.6 NOT met.
+- P=8: control 0.165 (0.091-0.238), gate 0.6 NOT met.
+
+All three rows in `ciphers/hessen-1824/HYPOTHESES.md`. Per `family_run.py`'s own control-first design (CLAUDE.md rule
+3), the target was never run for any P -- **outcome (c): control below gate at every P, untestable-by-this-tool at
+this N, not a negative.** This is not surprising given the offline-test finding above: N=164 is far shorter than the
+N=300-2000 range where even a collapsed low-entropy alphabet was needed to clear a control gate at all, and K=24 (the
+target's real German letter diversity) is well inside the natural-K regime this same anneal already failed to solve
+blind at N up to 5000. No judge call and no shuffle-target check were run (rule 3's ARM-C1 paragraph applies only
+once a target is actually decoded; here it never was).
+
+**Verdict:** `periodic_masc` joins `running_key`'s beam decoder as untestable-by-this-tool at N=164 (masc, homophonic
+and periodic_vigenere all excluded the target with passed controls; running_key's crib-drag instrument is a
+control-backed negative; running_key's beam decoder and now periodic_masc are non-tests, not negatives). The lead
+from SO-HESSEN1824-LEADS [14] is logged as tried, not refuted: a P-phase general substitution blind solve needs a
+much longer ciphertext (a sibling pool from the same office, as with every other target in NEAR.md whose reading
+came from a period key or a pool) or a crib (the Anmerkung's own worked key-table example, paleographic risk
+already flagged in `specs/hessen-1824.json`'s `anmerkung_note`, still untranscribed this pass -- out of this brief's
+scope, which named only the periodic_masc family test).

@@ -2865,10 +2865,10 @@
     },
     {
       "target": "hessen-1824",
-      "title": "Hessian 1824 polyalphabetic, N=164: periodic_vigenere (control 1.000), masc (0.823), homophonic profile=target (0.878) all control-passed target FAILs; running_key control 0.372 below gate -- a non-test",
-      "next": "running_key with an era-matched German corpus (de19, to build) and a wider beam, control first at N=164; if the control cannot reach 0.6 at this N, record the family as untestable at this length",
-      "lane": "B8",
-      "touched": "26 Sept 2026 07:30"
+      "title": "Hessian 1824 polyalphabetic, N=164: periodic_vigenere (control 1.000), masc (0.823), homophonic profile=target (0.878) all control-passed target FAILs; running_key crib-drag control-backed negative; running_key beam decoder and new periodic_masc (P=6/7/8 control 0.10-0.17 on de19, all below gate) both untestable at this N -- non-tests",
+      "next": "more ciphertext from the same office (HStAM 9 a Nr. 259 siblings), or a crib from the Anmerkung's own worked key-table example (untranscribed, paleographic risk flagged)",
+      "lane": "B8 / HES-DRAG / HES-PHASE",
+      "touched": "27 Sept 2026 17:19"
     },
     {
       "target": "fr3625-lauriere-1593",
