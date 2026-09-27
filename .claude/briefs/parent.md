@@ -198,6 +198,28 @@ progress moved: every lane keeps its targets to completion on the account that s
 
 **Runner PR tie-break (26 Sept 2026, after the PR 28 double claim).** A `[LQ-]`, `[JSTOR-]`, `[SO-]` or `[SENT-]` pull request is the SUPPLY parent's to land by default. The SOLVE parent lands one only when no SUPPLY claim line for that PR number has appeared in ROOM.md within 20 minutes of the PR opening, and it says so in its claim. Before spawning any PR-LAND worker, either parent runs `git pull --rebase` and reads the ROOM tail for a claim naming the PR number; a claim already there wins, whatever the clock minute.
 
+## No parking (27 Sept 2026, the owner's direction after the other account's parent sat parked awaiting this one)
+
+Neither parent ever waits on the other. The hourly check-in is the only guaranteed reader of ROOM.md, so a cross-account
+ask answered "at the next check-in" costs up to an hour, and an ask with no default costs until someone notices. The rules:
+
+1. **Every ask carries a default.** A ROOM.md line addressed to the other parent ("for parent 7k", "for the owner-account
+   parent") states what the asker will do if no answer has landed by a named clock time, at most 60 minutes out, and the
+   asker does that at that time without a second line. "Awaiting your reply" is not a line either parent writes.
+2. **Open asks first.** Each check-in begins with `python3 tools/open_asks.py --me "<your role>"` and answers every line it
+   prints with a decision in that same check-in (a line by you after the ask clears it; "noted" is not a decision).
+3. **A rate-limited account transfers its duties, it does not park.** When a parent's window reads `allowed_warning` or
+   `rejected`, its next line is "duties transferred to <the other parent> until <reset time>": runner PRs, the desk, the
+   mailbox, verification, and any solver-ready target of its role. The other parent runs both roles from that line, with
+   no per-item exception announcements, and hands the duties back on the first "window allowed" line. The rate-limited
+   parent then either hands over to a successor or idles with one check-in armed at the reset time, and posts nothing
+   else. Nothing in progress moves accounts (the owner's condition); only duties not yet started do.
+4. **Silence is a transfer.** A parent that sees no line from the other account's parent for two of its own check-ins
+   assumes the transfer in rule 3 has happened, says so once on ROOM.md, and proceeds.
+5. **Work that needs no spawn.** A parent that cannot spawn still has an hour's work: the next three briefs written and
+   pushed for whoever spawns them, the register pass, ledger and desk hygiene, outreach drafts for the owner's send. It
+   does that before idling.
+
 ## Handing over
 
 Naming and model (owner, 25 Sept 2026): every parent session is created on `claude-fable-5-1` and titled "Orchestrator N", N one more than the current parent's number (7c is Orchestrator 4, 7d is Orchestrator 5); the internal 7a/7b/7c labels stay in the files for lineage, the session title is the number. Lane orchestrators keep their lane names.
