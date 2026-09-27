@@ -1619,7 +1619,7 @@ at N=3). No reading, no class change. Requests per host: catalog.archives.gov 7.
 this runner; the row's estimate (1 USD) is what `campaign.py --spend` records. Vision: 9 crops read by this runner,
 no subagent calls.
 
-## Campaign step H5 (27 Sept 2026, 23:43-23:48 UTC)
+## Campaign step H5 (27 Sept 2026, 23:43-23:47 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H5: a third
 independent blind pass over page-1 lines 12-13 (frame 0030), the span ARM-TR2 could not resolve at any top margin,
