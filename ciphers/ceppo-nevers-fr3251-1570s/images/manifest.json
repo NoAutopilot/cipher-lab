@@ -1,0 +1,25 @@
+{
+  "source": "BnF fr.3251 (ark:/12148/btv1b9060248g), Gallica IIIF, mid-resolution (1000px wide) fetches",
+  "fetched": "27 Sept 2026",
+  "why": "INTAKE-3251: confirm the canvas-to-folio rule for this ark before handing the target to the SOLVE parent; no manifest folio labels exist (207 canvases, 0 labelled -- tools/gallica_folio.py reports all 'NP', the fr16092-shaped case CLAUDE.md warns about), so the rule was found by eye-checking ink foliation numbers against fetched canvases.",
+  "canvas_rule": "canvas = folio_number + 1 for a recto shown as the RIGHT page of an opening; the LEFT page of the same canvas is the previous leaf's verso (canvas X shows (X-2)v | (X-1)r). Confirmed at four points across the whole 207-canvas volume: canvas 12 = f.11r (this folder's own f.11 no.6, dated 14 Sept 1570 in the visible text -- matches Tomokiyo's date exactly), canvas 20 = f.19r, canvas 120 = f.119r (the birago-nevers-1571 excepted letter, ciphers/birago-nevers-1571's own cited image URL), canvas 190 = f.189r. Each recto's ink foliation number is doubled by an older, unrelated numbering visible faintly above/below it on some leaves (e.g. canvas 12 shows a larger '84' above the small '11') -- use the SMALL modern number, which is the one Tomokiyo's folio citations follow.",
+  "files": {
+    "f11r_canvas12.jpg": {
+      "folio": "11r",
+      "canvas": 12,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f12/full/1000,/0/native.jpg",
+      "note": "this folder's own target f.11 no.6, Saluzzo 14 September 1570 -- ink foliation '11' confirmed, letter text and date visible, cipher block not examined (no reading, no decoding, per this job's brief)"
+    }
+  },
+  "target_folios_not_yet_fetched": {
+    "f.21v no.11": "verso -- left page of canvas 23 (predicted canvas = 21+2, not eye-checked)",
+    "f.35 no.18": "recto -- canvas 36 (predicted = 35+1, not eye-checked)",
+    "f.87 no.45": "recto -- canvas 88 (predicted = 87+1, not eye-checked)",
+    "f.27 no.14 (witness, with decipherment)": "recto -- canvas 28 (predicted, not eye-checked)",
+    "f.39 no.20 (witness, with decipherment)": "recto -- canvas 40 (predicted, not eye-checked)",
+    "f.82 no.42 (witness, with decipherment)": "recto -- canvas 83 (predicted, not eye-checked)"
+  },
+  "requests": {
+    "gallica.bnf.fr": "used in confirming the shared canvas rule for this ark: 4 native.jpg fetches total across both fr.3251 folders (f11r canvas12, f19r canvas20, f119r canvas120, f189r canvas190; f138r canvas139 fetched for the sibling folder), 1 connection reset retried once per the good-citizen rule, all >=2s apart, descriptive script UA"
+  }
+}

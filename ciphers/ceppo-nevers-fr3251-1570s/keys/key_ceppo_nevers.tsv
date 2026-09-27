@@ -1,0 +1,8 @@
+# BLOCKED (INTAKE-3251, 27 Sept 2026): no rows. Tomokiyo's printed table for the Ceppo-Nevers Cipher
+# (reconstructed by him from BnF fr.4702's interlined decipherment) is the hand-drawn image nevers_add1.png,
+# embedded in sources/cryptiana/web/nevers.htm after the fr.4702 paragraph. That image is not present in this
+# repository's local mirror and is hosted on cryptiana.web.fc2.com, outside this job's network allowance
+# (Gallica IIIF and the BnF catalogue only). See ../NOTES.md "Key blocker" for the next step. Do not fill this
+# file from a guess or another cipher's table -- transcribe it from the actual image, with a second blind pass,
+# per CLAUDE.md rule 1 ("as transcribed, never silently repaired") and the fr7129 lesson.
+sign	value	kind	source	unclear	note

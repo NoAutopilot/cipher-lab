@@ -1,0 +1,26 @@
+{
+  "source": "BnF fr.3251 (ark:/12148/btv1b9060248g), Gallica IIIF, mid-resolution (1000px wide) fetches",
+  "fetched": "27 Sept 2026",
+  "why": "INTAKE-3251: same ark as ciphers/ceppo-nevers-fr3251-1570s -- see that folder's images/manifest.json for the full canvas-rule derivation (four eye-checked points across the volume). Recorded here again so this folder is self-contained.",
+  "canvas_rule": "canvas = folio_number + 1 for a recto shown as the RIGHT page of an opening; the LEFT page of the same canvas is the previous leaf's verso. No IIIF manifest folio labels exist for this ark (tools/gallica_folio.py: 207 canvases, 0 labelled).",
+  "files": {
+    "f138r_canvas139.jpg": {
+      "folio": "138r",
+      "canvas": 139,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f139/full/1000,/0/native.jpg",
+      "note": "this folder's own target f.138 no.71, Saluzzo -- ink foliation '138' confirmed; a marginal endorsement on the facing verso reads (partially) 'Lodovico Birago del Marchese... conto di Saluzza a Nevers... alli 7 di Gennaro 1572' (7 January, not Tomokiyo's stated 7 February 1572 -- a date discrepancy between the endorsement and the catalogue sentence, not resolved here, flagged for the SOLVE parent); cipher block not examined (no reading, no decoding, per this job's brief)"
+    }
+  },
+  "target_folios_not_yet_fetched": {
+    "f.144 no.73": "recto -- canvas 145 (predicted, not eye-checked)",
+    "f.152 no.77": "recto -- canvas 153 (predicted, not eye-checked)",
+    "f.160 no.82": "recto -- canvas 161 (predicted, not eye-checked)",
+    "f.168 no.85": "recto -- canvas 169 (predicted, not eye-checked)",
+    "f.174 no.86": "recto -- canvas 175 (predicted, not eye-checked)",
+    "f.184 no.90": "recto -- canvas 185 (predicted, not eye-checked)",
+    "f.178 no.87 (witness, with decipherment)": "recto -- canvas 179 (predicted, not eye-checked)"
+  },
+  "requests": {
+    "gallica.bnf.fr": "see ciphers/ceppo-nevers-fr3251-1570s/images/manifest.json -- one shared count for both folders (5 native.jpg fetches, 1 retried once after a connection reset)"
+  }
+}
