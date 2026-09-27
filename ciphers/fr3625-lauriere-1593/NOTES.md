@@ -941,3 +941,19 @@ Sonnet subagents (the two blind transcription passes, one call each, per this br
 Credit: S. Tomokiyo, "Catalogue of Ciphers (Mainly Related to Duke of Nevers) in BnF fr.3995"
 (cryptiana.web.fc2.com/code/nevers.htm) for the no.57 catalogue entry, the fol.58 citation, and the correspondent
 identification tested here. Status unchanged: `open`.
+
+## LAU-F58B (27 Sept 2026, parent worker LAU-F58B)
+
+Brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-lau-f58b.md`. `date -u` at claim: 27 Sept 2026 19:55 UTC. Intake
+gate: `fr3625-lauriere-1593: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+The one thing changed from LAU-F58 is the crop.
+
+### Pre-registered gate (written 20:02 UTC, before either vision pass)
+
+Numeral-sign agreement between the two blind passes on `tools/reconcile_passes.py`'s alignment (plaintext words
+dropped, its default): aligned columns where both passes read the same numeral / all aligned columns where at
+least one pass read a numeral. Gate >= 0.80. Below it: outcome (c), stop, do not run U4. If the gate holds, U4 is
+LAU-F58's own test unchanged (`key57/control_key57.py --apply-f58`, fr16 judge, 20 shuffled-meaning keys; pass
+needs judge PASS AND real above all 20), with the decode run on the reconciled ciphertext with the interlinear
+gloss-hand words removed (they are a second, period rendering of the same text, not part of the letter's own
+running text).

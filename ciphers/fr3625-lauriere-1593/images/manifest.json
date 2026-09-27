@@ -3463,7 +3463,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L01_s2.jpg",
@@ -3484,7 +3485,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L02_s1.jpg",
@@ -3505,7 +3507,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L02_s2.jpg",
@@ -3526,7 +3529,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L03_s1.jpg",
@@ -3547,7 +3551,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L03_s2.jpg",
@@ -3568,7 +3573,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L04_s1.jpg",
@@ -3589,7 +3595,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L04_s2.jpg",
@@ -3610,7 +3617,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L05_s1.jpg",
@@ -3631,7 +3639,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L05_s2.jpg",
@@ -3652,7 +3661,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L06_s1.jpg",
@@ -3673,7 +3683,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L06_s2.jpg",
@@ -3694,7 +3705,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L07_s1.jpg",
@@ -3715,7 +3727,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L07_s2.jpg",
@@ -3736,7 +3749,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L08_s1.jpg",
@@ -3757,7 +3771,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L08_s2.jpg",
@@ -3778,7 +3793,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L09_s1.jpg",
@@ -3799,7 +3815,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L09_s2.jpg",
@@ -3820,7 +3837,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L10_s1.jpg",
@@ -3841,7 +3859,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L10_s2.jpg",
@@ -3862,7 +3881,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L11_s1.jpg",
@@ -3883,7 +3903,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L11_s2.jpg",
@@ -3904,7 +3925,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L12_s1.jpg",
@@ -3925,7 +3947,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L12_s2.jpg",
@@ -3946,7 +3969,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L13_s1.jpg",
@@ -3967,7 +3991,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L13_s2.jpg",
@@ -3988,7 +4013,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L14_s1.jpg",
@@ -4009,7 +4035,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L14_s2.jpg",
@@ -4030,7 +4057,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L15_s1.jpg",
@@ -4051,7 +4079,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L15_s2.jpg",
@@ -4072,7 +4101,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L16_s1.jpg",
@@ -4093,7 +4123,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L16_s2.jpg",
@@ -4114,7 +4145,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L17_s1.jpg",
@@ -4135,7 +4167,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L17_s2.jpg",
@@ -4156,7 +4189,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L18_s1.jpg",
@@ -4177,7 +4211,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L18_s2.jpg",
@@ -4198,7 +4233,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L19_s1.jpg",
@@ -4219,7 +4255,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L19_s2.jpg",
@@ -4240,7 +4277,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L20_s1.jpg",
@@ -4261,7 +4299,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L20_s2.jpg",
@@ -4282,7 +4321,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L21_s1.jpg",
@@ -4303,7 +4343,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L21_s2.jpg",
@@ -4324,7 +4365,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L22_s1.jpg",
@@ -4345,7 +4387,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L22_s2.jpg",
@@ -4366,7 +4409,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L23_s1.jpg",
@@ -4387,7 +4431,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L23_s2.jpg",
@@ -4408,7 +4453,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L24_s1.jpg",
@@ -4429,7 +4475,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L24_s2.jpg",
@@ -4450,7 +4497,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L25_s1.jpg",
@@ -4471,7 +4519,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L25_s2.jpg",
@@ -4492,7 +4541,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L26_s1.jpg",
@@ -4513,7 +4563,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L26_s2.jpg",
@@ -4534,7 +4585,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L27_s1.jpg",
@@ -4555,7 +4607,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L27_s2.jpg",
@@ -4576,7 +4629,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L28_s1.jpg",
@@ -4597,7 +4651,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L28_s2.jpg",
@@ -4618,7 +4673,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L29_s1.jpg",
@@ -4639,7 +4695,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L29_s2.jpg",
@@ -4660,7 +4717,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L30_s1.jpg",
@@ -4681,7 +4739,8 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
   },
   {
    "crop": "f58r_L30_s2.jpg",
@@ -4702,7 +4761,407 @@
     "distance": 98,
     "prominence": 180.8
    },
-   "date": "27 Sep 2026"
+   "date": "27 Sep 2026",
+   "deleted": "27 Sep 2026 LAU-F58B: removed to keep images/ under 30 MB; regenerable: python3 tools/iiif_lines.py --ark btv1b90606498 --canvas 114 --region 850,400,3700,5100 --out ciphers/fr3625-lauriere-1593/images --prefix f58r --max-width 2000 --debug"
+  },
+  {
+   "crop": "f58s_L01.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L02.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L03.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L04.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L05.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L06.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L07.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L08.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L09.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L10.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L11.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L12.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L13.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L14.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L15.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L16.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L17.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L18.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L19.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L20.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L21.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L22.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L23.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L24.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L25.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L26.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L27.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L28.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L29.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L30.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L31.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L32.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L33.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L34.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L35.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L36.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L37.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L38.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L39.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L40.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L41.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L42.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L43.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L44.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L45.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L46.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L47.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L48.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_L49.jpg",
+   "source_file": "src_ark_12148_btv1b90606498_f114_850_400_3700_5100.jpg",
+   "method": "deskew -1.9 deg, tools/iiif_lines.py --distance 45 --prominence 120 --max-width 900, 3x LANCZOS, 5 segments stacked",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
+  },
+  {
+   "crop": "f58s_lines_debug.jpg",
+   "source_file": "(deskewed region)",
+   "regen": "sh ciphers/fr3625-lauriere-1593/images/regen_f58s_sheets.sh",
+   "date": "27 Sep 2026",
+   "by": "LAU-F58B"
   }
  ]
 }
