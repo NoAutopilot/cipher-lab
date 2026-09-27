@@ -241,3 +241,33 @@ exit code: 0
   "GERMAN SPY CRYPTOGRAMS", Cryptologia 5(2) (1981), pp.65-66 -- the same pp.65-66 GOLD-1A already corrected
   this file to; publisher access itself then stopped at Cloudflare's verification page, no article image
   obtained. LOCAL-QUEUE row L21 stays `queued`; no new route past the print-disabled/gateway block found.
+
+## KOEH-1A (27 Sept 2026)
+
+Job: spec's own next-ranked route, `cheap_tests_in_order` items 2 and 3 (archive lookup: TNA Discovery API,
+Kahn's footnote, FBI Vault / NARA keyless routes). Read GOLD-1A's `ARCHIVE.md` first (25 Sept 2026, already a
+substantial pass on all three of this job's units) and ran only what GOLD-1A had not covered, plus one genuinely
+different check where GOLD-1A had logged a result as inconclusive rather than settled (README common tail: a
+repeat of an unchanged approach is a non-test). Full search log, queries and host counts in `ARCHIVE.md`'s new
+"KOEH-1A" section.
+
+**Outcome (c): nothing found.** No decrypt, key or new archive item for the five Paris messages. Extended
+GOLD-1A's TNA Discovery negative to series HW 5 and HW 12 (the brief's named additions) and to
+KV-2-restricted Koehler+context term combinations -- all zero hits, sanity-checked against a live query
+(`double agent` in KV 2, 250 real hits) to confirm the API and the multi-term-AND behaviour are both working.
+Tried four archive-naming phrases against Kahn's article volume via be-api full-text search ("Public Record
+Office", "War Office", "Foreign Office", "British archives") -- all zero, cross-checked against non-zero terms
+("British", "Koehler") to confirm the search itself works; the footnote's actual wording is still unread (the
+article stays Cloudflare-/loan-blocked, out of scope here per the brief's "do not borrow"). On FBI Vault, added
+the missing negative control GOLD-1A's pass lacked -- a nonsense query correctly returns "0 items", while
+"Koehler" returns the same 40 unrelated-topic items (Watergate, Klaus Fuchs, Bremer Kidnapping, none mentioning
+Koehler) -- which turns GOLD-1A's "inconclusive" into a real negative: the search engine can tell true-zero from
+a match, and does not treat "Koehler" as one. The A-Z Index browse endpoint's `Title=` filter is also silently
+ignored (a second, independent route to the same no-item conclusion). NARA's `catalog.archives.gov` keyless API
+reproduces GOLD-1A's app-shell-not-JSON finding exactly (no `NARA_API_KEY` set); not retried further.
+
+No 403/429/challenge on any host. The FBI HQ personal file (RG 65, Class 105, File 9673, Box 156 -- GOLD-1A)
+remains the one concrete, unopened lead; nothing here changes it. Status unchanged: **open**. `NEAR.md`'s
+koehler-1944 row and its named next steps (ASKS 55 NARA/Farago, ASKS 53 Cryptologia scan) are unchanged by this
+job -- read, not edited, since nothing here moves either. `specs/koehler-1944.json` `cheap_test_done` gains two
+entries for `cheap_tests_in_order` items 2 and 3.

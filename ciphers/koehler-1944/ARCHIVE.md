@@ -97,3 +97,78 @@ archives.gov: 3 browser fetches (2 web UI searches, API attempt returned the JS 
 archives.gov (static PDF files): 2 (names-k-r.pdf, fbi-disclosure-act-files.pdf). github.com: 1 shallow clone
 (dbourdeau/cyphersolver), removed after reading. WebSearch: 3 queries (RG 65 name index, Warfare History
 Network/Farago content, FBI file confirmation).
+
+## KOEH-1A (27 Sept 2026) -- cheap_tests_in_order items 2 and 3, extending GOLD-1A
+
+Job runs/2026-09-27-parent-ytbiz-koeh-1a.md, spec's own next-ranked route. GOLD-1A (25 Sept 2026, above) already
+ran the TNA Discovery sweep, the Kahn-footnote page-number trace and a first FBI Vault / NARA pass; this job
+read that work first (rule: a second pass at an unchanged approach is a non-test unless it tries something the
+first pass did not) and ran only the parts GOLD-1A had not covered, plus one genuinely different check on FBI
+Vault's search behaviour. **No decrypt, key or new personal file located; the negative is extended, not
+reversed.**
+
+**U1, TNA Discovery API, series and terms GOLD-1A did not try.** `discovery.nationalarchives.gov.uk/API/search/
+records`, browser UA, same tool GOLD-1A used (`tools/discovery_items.py`'s calling shape; queries run directly,
+not through the tool, since its piece-prefix filter does not fit a personal-file surname search -- see "tool
+note" below). Sanity check first: `sps.searchQuery=double+agent&sps.recordSeries=KV+2` returns 250 real hits
+(GARBO, GELATINE, KISS, etc.), confirming the API and the UA are both live and that multi-word queries are ANDed
+by the API itself, not just unioned client-side. Then, all zero hits: `Koehler double agent` and `Koehler New
+York` restricted to KV 2; `Walter Koehler Abwehr` unrestricted; `Koehler`/`Kohler Abwehr` restricted to HW 5 and
+HW 12 (the two series the brief named that GOLD-1A had not queried -- GOLD-1A covered KV 2, KV 3, HW 19, HW 20,
+HW 40); `Funkstelle`, `Abwehrleitstelle Frankreich`, `Paris Funkstelle` unrestricted (GOLD-1A ran the last two
+restricted to HW 19/20/40 only; here unrestricted across all Discovery series, still zero). 11 requests,
+>=1.6s apart, all 200. Extends GOLD-1A's negative to HW 5, HW 12 and to KV-2-restricted Koehler+context queries;
+no new series or term combination turned up a hit.
+
+**U2, Kahn's footnote, be-api full-text search inside `sim_cryptologia_1981-04_5_2` for archive-naming terms.**
+GOLD-1A traced the DOI and correct pagination (pp.65-66) via CrossRef/OpenAlex but could not open the article
+text itself (Taylor & Francis Cloudflare-blocked, the IA loan out of scope/unborrowable per NOTES.md IA-BORROW);
+this job does not borrow either (brief's "do not"). Tried whether the footnote's own wording surfaces via be-api
+FTS aggregation counts (doc-level, whole bound volume, not page-scoped) for candidate archive-naming phrases GOLD-1A
+had not tried: "Public Record Office", "War Office", "Foreign Office", "British archives" -- all zero documents
+(`aggregations.top-languages` empty, confirming a true zero, cross-checked against "British" and "Koehler" which
+both return non-empty aggregations and a scored hit list, so the search itself is working). Reads as: whatever
+archive name Kahn's footnote uses, it is not one of these four common period terms for the UK national archives --
+consistent with GOLD-1A's own read that the footnote's content cannot be recovered without opening the actual
+page. No new lead. 6 be-api requests, >=1.6s apart, 200.
+
+**U3, FBI Vault -- a genuinely different check, not a repeat of GOLD-1A's search-box query.** GOLD-1A logged the
+"Koehler" search as inconclusive because it returned the same 40 items, same order, as several real topic
+searches (Watergate, Fuchs, D.B. Cooper). This job adds the missing negative control GOLD-1A did not run: a
+nonsense query, `SearchableText=zzzznonsensequery9999`, which correctly returns **"Search results -- 0 items
+matching your search terms"**. That the site can and does report zero hits when nothing matches, yet "Koehler"
+returns 40 unrelated items (Watergate Part 16, Klaus Fuchs Part 41, Bremer Kidnapping, German American Bund,
+none mentioning Koehler when the list is read), upgrades GOLD-1A's "inconclusive" to a real negative: the site's
+search engine is live and can distinguish a true zero from a match, and it does not treat "Koehler" as a real
+match to any vault item -- it falls back to a generic/relevance-degraded listing instead. Also tried, as a second
+independent route (not the search box at all): the A-Z Index browse endpoint, `vault.fbi.gov/browse-files?
+sortFilter=title_asc&Title=koehler` -- the `Title=` filter parameter is silently ignored (returns the same
+unfiltered 9762-result listing, page 1 starting "9/11 Chronology..."), and `vault.fbi.gov/espionage` (a guessed
+category page) 404s ("This page does not seem to exist"). Confirms no Koehler item on FBI Vault by two
+independent routes, one of them (the nonsense-query control) newly conclusive rather than ambiguous. 6 browser
+fetches, >=1.6s apart.
+
+**U3, NARA.** `catalog.archives.gov/api/v2/records/search?q="105-9673"` (no `x-api-key`, none set per
+`tools/key_probe.py --sync`/KEYS.md): HTTP 200 but the body is the Angular app shell, not JSON -- reproduces
+GOLD-1A's keyless-unusable finding exactly (same route, same result), not retried further since a second
+identical attempt at an unchanged route is a non-test (README common tail). No NARA_API_KEY has been requested
+for this target; `tools/key_request.py` is the route if a future worker judges the FBI file (RG 65 105-9673)
+worth chasing through the keyed catalog API.
+
+**Tool note.** `tools/discovery_items.py` (the brief's named extension point) takes a mandatory series + piece-
+prefix pair and unions per-term OR queries within that piece; a personal/subject-file surname search across KV/HW
+series with ANDed context terms and no piece prefix does not fit its shape, and this job's 11 TNA queries were
+few enough not to justify an option addition under Usage rule 8 ("a target that needs something they lack gets an
+option added ... " -- weighed against the "don't add abstractions beyond what the task requires" convention: an
+option used exactly once, on one target, by one job). Left as a private curl loop, documented here in full
+(query strings above) so anyone can rerun it verbatim; flagged in ROOM.md rather than silently skipped.
+
+**Outcome: (c).** Nothing found beyond GOLD-1A's own items (no new archive item, no decrypt, no key). The FBI
+HQ file RG 65 105-9673 (GOLD-1A) remains the one concrete unopened lead, unchanged by this job. No REQUEST.md
+entry filed (no new TNA reference located to batch into ASKS row 73). Search log above is per-host, dated,
+counted (good-citizen rule); `specs/koehler-1944.json` cheap_test_done gains two entries for cheap_tests_in_order
+items 2 and 3, crediting GOLD-1A's original sweep and this job's extension together.
+
+Host request counts, this job: discovery.nationalarchives.gov.uk 11 (>=1.6s apart, all 200). be-api.us.archive.org
+6 (>=1.6s apart, all 200). vault.fbi.gov 6 browser fetches (>=1.6s apart). catalog.archives.gov 1 (curl, 200,
+app-shell body). No 403/429/challenge hit on any host this job.

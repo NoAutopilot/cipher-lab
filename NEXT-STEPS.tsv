@@ -91,7 +91,7 @@ huntington-luzerne-destouches-1781	open	runnable	S	n		**Suggested follow-ups (no
 hza-hohenlohe-1679	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) read the *Archiv für hohenlohische Geschichte* Wolfgang Julius article for any mention of these reports, "Chiffre", Melchior, Pape or Köhler; (2) c…	529
 jan-van-nassau-1572-75	open	runnable	S	n	24 Sep	**Next step (one line):** either request page images for 4502/5808/7205's actual cipher leaves from KHAG/ARAB (a person-gated ask, since these are not in the digitised PDF), or fit-test the remaining…	367
 kaliningrad-2015	open	runnable	M	n	26 Sep	**Next steps.** Every convention-B Latin-alphabet language tried so far (German not tried at B; Russian S1/S3' already negative; nl/da/en/fr/it/es/pl/ru-s3 all now control-backed negatives) leaves Po…	1401
-koehler-1944	open	runnable	S	n	26 Sep	## Next steps (one-line suggestions only, per Usage rule 7 -- not run here)	75
+koehler-1944	open	needs-person	S	n	26 Sep	`NEAR.md`'s koehler-1944 row and its named next steps (ASKS 55 NARA/Farago, ASKS 53 Cryptologia scan) are unchanged by this job -- read, not edited, since nothing here moves either.	488
 konstanz-talleyrand-sieyes-1798	open	needs-triage	?	n			0
 la-garde-1577	open	runnable	S	n	26 Sep	**Left for whoever picks this up:** (1) whether "justifier le faict de Gand" belongs in `ciphertext_6467_v2.tsv`/a plaintext file as a C-grade (known-plaintext) clear-text insertion at this point in…	699
 lambeth-bacon-649	open	needs-triage	?	n			0
@@ -182,4 +182,4 @@ wvo-hessen-1564	open	runnable	M	n	26 Sep	**Next step for a successor, not pursue
 yogtze-1984	open	needs-triage	?	n	25 Sep		0
 zbz-busbecq-1587	open	needs-triage	?	n			0
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)	32
-# 183 rows -- needs-edition=9 needs-image=16 needs-key=2 needs-person=7 needs-triage=67 runnable=82
+# 183 rows -- needs-edition=9 needs-image=16 needs-key=2 needs-person=8 needs-triage=67 runnable=81
