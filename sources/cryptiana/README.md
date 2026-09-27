@@ -101,3 +101,21 @@ started: key-table extraction (CRYPT-KEYS) and methods digest (CRYPT-LESSONS), q
 | File | URL | Fetched | Bytes | For |
 |---|---|---|---|---|
 | `web/nevers_no57.png` | https://cryptiana.web.fc2.com/code/nevers_no57.png | 26 Sep 2026, ~09:34 UTC | 930301 | BnF fr.3995 no.57's key table image (fol.102, "Mons. de Laveriere" to Nevers) -- a candidate period key for fr.3625's Laurière cipher, structurally compatible on its face with Bourdeau's twelve already-published code meanings; not confirmed as the same system. See ciphers/fr3625-lauriere-1593/NOTES.md "NX-LAU2" section. |
+
+## Added 27 September 2026 (KEY-ADJACENT.tsv row 3 gate, parent worker INTAKE-3979)
+
+`mantua.htm` ("Reading an Undeciphered Letter of the Duke of Mantua (1590, 1593)") names BnF fr.3979 fol.92
+(no.42, Duke of Mantua to Duke of Nevers, 17 Sept 1590) as undeciphered in `league.htm`, readable with a cipher
+Tomokiyo reconstructed from three interlined 1593 letters in fr.3983 (ff.40, 43, 83). The page's three "The
+Letter" images turn out to already carry his own interlinear plaintext reading printed directly over the
+manuscript's cipher-digit lines, covering the full letter (recto, verso, and the following recto) -- not plain
+scans. KEY-ADJACENT.tsv row 3 is retired found-solved on this basis; no `ciphers/` folder was built.
+
+| File | URL | Fetched | Bytes | sha1 | For |
+|---|---|---|---|---|---|
+| `web/img/BnFfr3979f92.png` | https://cryptiana.web.fc2.com/code/BnFfr3979f92.png | 27 Sep 2026, ~05:50 UTC | 438438 | 11c102d8698e23f2aea0c645991259c7b4130ab7 | fol.92r, interlinear plaintext over cipher |
+| `web/img/BnFfr3979f92v.png` | https://cryptiana.web.fc2.com/code/BnFfr3979f92v.png | 27 Sep 2026, ~05:50 UTC | 434591 | 18d800b62c1229dd090e6b5a970250adc776fba6 | fol.92v, same |
+| `web/img/BnFfr3979f93.png` | https://cryptiana.web.fc2.com/code/BnFfr3979f93.png | 27 Sep 2026, ~05:50 UTC | 417422 | 0b4649001fdf7963bd68aab9629717531fe75a3e | fol.93r, same |
+
+(`web/mantua.png`, the reconstructed-cipher table itself, was already on disk before this session; not
+re-fetched.) See `sources/cryptiana/web/manifest_2026-09-27-mantua.tsv` for the manifest row per file.
