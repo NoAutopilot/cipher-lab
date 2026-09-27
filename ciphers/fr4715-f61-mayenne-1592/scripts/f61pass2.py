@@ -28,12 +28,12 @@ def main():
                         "--out-dir", d, "--method", "nw"], capture_output=True, text=True)
     if r.returncode: raise SystemExit("reconcile_passes.py failed:\n" + r.stdout + r.stderr)
     out = ["reconcile_passes.py summary: " + " | ".join(l for l in r.stdout.strip().splitlines()[-3:])]
-    cols = []   # (line, A, B) per aligned column, from agreement.tsv + disagreements.tsv
-    for fn in ("agreement.tsv", "disagreements.tsv"):
-        p = f"{d}/{fn}"
-        if not os.path.exists(p): continue
-        for row in csv.DictReader(open(p), delimiter="\t"):
-            cols.append((row.get("line"), row.get("A", ""), row.get("B", "")))
+    cols = []   # (line, A, B) per aligned column, from ciphertext_draft.tsv (sign = pass A's code; alt = 'B:<code>' or 'B:-' when they differ)
+    for row in csv.DictReader(open(f"{d}/ciphertext_draft.tsv"), delimiter="\t"):
+        a = row["sign"]; alt = row.get("alt", "")
+        b = a if row["why"].startswith("agree") else (alt.split(":", 1)[1] if alt.startswith("B:") else "")
+        if b == "-": b = ""
+        cols.append((row["line"], a, b))
     per = defaultdict(Counter)
     for line, a, b in cols:
         if a: per[fold(a)][fold(b) if b else "(gap)"] += 1
