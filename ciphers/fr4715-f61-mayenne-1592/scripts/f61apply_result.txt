@@ -1,0 +1,12 @@
+map (letter classes): 4TRI=c/p C43=a/n C6=a/n DBL=b/o EBR=l/y INF=h/u LOOPBAR=a/n PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x; all other codes null
+[positive control: five known span lines, pass A] letters 62; best-path mean log10 4-gram -0.992
+  L01	7 letters	nnuecet	-0.995
+  L03	12 letters	aestcapanabl	-1.196
+  L05	13 letters	grbpnunaapres	-0.967
+  L07	8 letters	axyaeufi	-1.022
+  L08	13 letters	raaubeaunpere	-0.872
+  L11	9 letters	ryentroit	-0.905
+[positive control: five known span lines, pass A] 20 permuted-cell maps: mean -1.159 max -0.959; judge reference at N=62: real p05 -0.531, shuffled-letters p99 -1.604
+[positive control: five known span lines, pass A] GATE (target above every permuted map): FAIL
+[positive control: five known span lines, pass A] best path vs Tomokiyo's letters at aligned positions: 32/51 = 0.627 (u=v, i=j not folded)
+[TARGET] scripts/read_call_U.tsv not present: unmarked lines not yet read
