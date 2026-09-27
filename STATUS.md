@@ -2289,6 +2289,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Parent note, owner account (27 Sept 2026, 03:44 UTC)
+
+- The refill worked on its first pass. SCOUT-OWN-6 (3.67 D) built KEY-ADJACENT.tsv from Tomokiyo's pages: 14 letters or groups he or a catalogue calls undeciphered whose key is already identified, 6 digitised, 6 digit-or-word ciphers, 13 with a sibling carrying a period decipherment, none already in the repository; the register is not exhaustive of the 90 pages and wants a second pass. The top five went to the SOLVE parent, who took the first (Henry III to Segur, Colbert 401, digits, key from an interlinear decipherment in the same volume) within forty minutes for a check-solved pass.
+- The second row is being made solver-ready here: INTAKE-3251 (Sonnet, cap 5) builds two folders for BnF fr.3251, the Ceppo-Nevers cipher (four undeciphered letters of 1570-71, three witnesses with decipherments) and the Nevers-Birago cipher of 1572 (seven undeciphered letters, one witness), with the keys of record transcribed from Tomokiyo's printed tables, blind-checked, and a Gallica manifest. Digit ciphers, so the symbol-transcription ceiling does not apply.
+- The nightly key cross-match ran after a one-line fix and reported three hits that were all against synthetic control texts; the tool now excludes control folders, 135 such rows left the register, and there is no real lead. fr.7129 idles with its next instrument written down.
+- Other account: the Salviati spec is rebuilt on the corrected split, but the code-model control sits below gate at the measured error, so the target was not run (a non-test, more restarts named); the last two plain-box leaves are being re-settled from the image.
+- Mailbox quiet; no open pull request; VO1 idle. Counts unchanged: 20 letters, 15 entries.
+
 ### Parent note, owner account (27 Sept 2026, 02:43 UTC)
 
 - Villeroy to Bongars 1604 (fr.7129 f.268) idles on this account. VB-KEY (19.33 D-, over cap) re-derived the key from the clerk's interlinear decipherments on f.258 and f.260: held-out letter agreement 0.34 against 0.25 for shuffled keys (z 9.9) but under the 0.70 bar, and no better than the earlier key. The limit is blind symbol transcription (two passes agree on 41 to 67 percent of signs), not the key. f.268 was not decoded. Five workers and about 67 USD went into this letter since yesterday evening; the lesson is in LESSONS.md (symbol ciphers: known plaintext first, then one careful reader with the key in view, never a fourth blind pass) and the next instrument is written in NOTES.md and NEXT-STEPS.tsv. Status stays blocked on the M9 gate.
