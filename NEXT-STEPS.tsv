@@ -170,7 +170,7 @@ sufi-fiddle	open	needs-triage	?	n	25 Sep		0
 taurello-roma-1527	open	needs-triage	?	n			0
 thurloe-printed	partial	needs-person	S	n	26 Sep	### L24 follow-up (ASKS row 30), 26 Sept 2026	45
 ula-degeer-1644	open	needs-triage	?	n			0
-untersberg-code	open	runnable	S	n	27 Sep	This closes the "align symA against the witnesses" step of NEAR.md's named next step for this target with a control-backed negative, consistent with bUNT5/bUNT7's prior finding that no Herzog witness…	684
+untersberg-code	open	needs-edition	S	n	27 Sep	Per job brief `.claude/briefs/runs/2026-09-27-parent-ytbiz-unt-lang2.md`, the named next step after UNT-LANG's block.	237
 vanbeuningen-dewitt-1657	partial	runnable	M	n	25 Sep	`NEXT-STEPS.tsv`'s extracted "next step" text ("Key recovery was not attempted...	1043
 vanspaen-vandergoes-1808	open	needs-triage	?	n			0
 viganego-torino-1717	open	needs-triage	?	n			0
@@ -182,4 +182,4 @@ wvo-hessen-1564	open	runnable	M	n	26 Sep	**Next step for a successor, not pursue
 yogtze-1984	open	needs-triage	?	n	25 Sep		0
 zbz-busbecq-1587	open	needs-triage	?	n			0
 zeschau-seebach-1841	blocked	runnable	M	n	26 Sep	## Next step (not run this pass)	32
-# 183 rows -- needs-edition=8 needs-image=17 needs-key=2 needs-person=6 needs-triage=67 runnable=83
+# 183 rows -- needs-edition=9 needs-image=17 needs-key=2 needs-person=6 needs-triage=67 runnable=82
