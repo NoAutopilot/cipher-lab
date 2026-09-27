@@ -1,0 +1,707 @@
+line	pos	sign	marks	conf
+L01	1	[PLAIN:?]		H
+L02	1	[PLAIN:12]		H
+L02	2	[PLAIN:Aoust]		H
+L02	3	[PLAIN:1593]		H
+L02	4	[PLAIN:58]	foliation	M
+L03	1	[PLAIN:Monseigneur]		H
+L03	2	[PLAIN:Je]		H
+L03	3	[PLAIN:ne]		H
+L03	4	[PLAIN:faillis]		M
+L03	5	[PLAIN:en]		H
+L03	6	[PLAIN:descendant]		H
+L03	7	[PLAIN:de]		H
+L03	8	[PLAIN:cheval]		H
+L03	9	[PLAIN:a]		M
+L03	10	[PLAIN:trouver]		L
+L03	11	[PLAIN:monsieur]		H
+L03	12	[PLAIN:de]		H
+L04	1	[PLAIN:?ne]		L
+L04	2	[PLAIN:sur]		H
+L04	3	[PLAIN:ce]		H
+L04	4	[PLAIN:que]		H
+L04	5	[PLAIN:me]		H
+L04	6	[PLAIN:commandastes]		H
+L04	7	[PLAIN:lequel]		H
+L04	8	[PLAIN:me]		H
+L04	9	[PLAIN:dict]		H
+L04	10	[PLAIN:que]		H
+L04	11	[PLAIN:monsieur]		H
+L04	12	[PLAIN:luy]		H
+L04	13	[PLAIN:avois]		M
+L05	1	[PLAIN:dict]		H
+L05	2	[PLAIN:quil]		H
+L05	3	[PLAIN:luy]		H
+L05	4	[PLAIN:envoyeroys]		M
+L05	5	[PLAIN:la]		H
+L05	6	[PLAIN:lie]		M
+L05	7	[PLAIN:dans]		H
+L05	8	[PLAIN:mancz]		L
+L05	9	[PLAIN:parle]		M
+L05	10	[PLAIN:avec]		M
+L05	11	[PLAIN:le]		H
+L05	12	[PLAIN:de]		M
+L05	13	[PLAIN:chiffre]		M
+L05	14	[PLAIN:mays]		M
+L06	1	[PLAIN:que]		H
+L06	2	[PLAIN:ses]		H
+L06	3	[PLAIN:papiers]		H
+L06	4	[PLAIN:estoient]		M
+L06	5	[PLAIN:desja]		H
+L06	6	[PLAIN:partis]		M
+L06	7	SYM:G	looped G preceded by open curve	M
+L06	8	75?	or plain js	L
+L06	9	[PLAIN:les]		H
+L06	10	[PLAIN:donnerais]		M
+L06	11	[PLAIN:es]		L
+L06	12	[PLAIN:mains]		M
+L06	13	[PLAIN:de]		H
+L06	14	[PLAIN:Renel]		L
+L07	1	[PLAIN:dont]		M
+L07	2	[PLAIN:Je]		H
+L07	3	[PLAIN:me]		H
+L07	4	[PLAIN:suis]		H
+L07	5	[PLAIN:enquis]		H
+L07	6	[PLAIN:dudit]		M
+L07	7	[PLAIN:s]		L
+L07	8	[PLAIN:sil]		H
+L07	9	[PLAIN:le]		M
+L07	10	[PLAIN:avoiz]		M
+L07	11	[PLAIN:qui]		H
+L07	12	[PLAIN:ma]		M
+L07	13	[PLAIN:dict]		M
+L07	14	[PLAIN:luy]		H
+L07	15	[PLAIN:avoir]		M
+L08	1	[PLAIN:?]	interline fragments only	L
+L09	1	[PLAIN:este]		M
+L09	2	[PLAIN:mis]		H
+L09	3	[PLAIN:en]		H
+L09	4	[PLAIN:main]		H
+L09	5	[PLAIN:ce]		M
+L09	6	[PLAIN:asseurement)]		M
+L09	7	SYM:at	looped a-in-circle	M
+L09	8	[PLAIN:moy]		H
+L09	9	[PLAIN:la]		H
+L09	10	[PLAIN:lie]		M
+L09	11	SYM:at	looped a-in-circle	M
+L09	12	SYM:G		M
+L09	13	SYM:long-s	or 7s/j-like stroke	L
+L09	14	[PLAIN:ne]		M
+L09	15	[PLAIN:faudrait]		M
+L10	1	[PLAIN:.]		M
+L10	2	[PLAIN:il]		M
+L10	3	[PLAIN:vous]		H
+L10	4	[PLAIN:en]		H
+L10	5	[PLAIN:envoyra]		M
+L10	6	[PLAIN:une]		H
+L10	7	[PLAIN:coppie]		M
+L10	8	[PLAIN:Quant]		M
+L10	9	[PLAIN:aux]		M
+L10	10	[PLAIN:aultres]		M
+L10	11	[PLAIN:quatre]		M
+L10	12	[PLAIN:pour]		H
+L11	1	[PLAIN:dont]		H
+L11	2	[PLAIN:maviez]		M
+L11	3	[PLAIN:en]		H
+L11	4	[PLAIN:charge]		H
+L11	5	[PLAIN:Je]		H
+L11	6	[PLAIN:nay]		H
+L11	7	[PLAIN:failly]		H
+L11	8	[PLAIN:de]		H
+L11	9	[PLAIN:pas]		M
+L11	10	[PLAIN:ung]		M
+L11	11	SYM:at	looped a-in-circle	M
+L11	12	[PLAIN:mons]		M
+L11	13	[PLAIN:de]		H
+L12	1	[PLAIN:?ance]	line body only in right segments	L
+L12	2	[PLAIN:au]		H
+L12	3	[PLAIN:service]		M
+L12	4	[PLAIN:du]		H
+L12	5	[PLAIN:Roy]		H
+L12	6	[PLAIN:luy]		H
+L13	1	[PLAIN:Renel]		M
+L13	2	[PLAIN:vous]		H
+L13	3	[PLAIN:en]		H
+L13	4	[PLAIN:rend]		H
+L13	5	[PLAIN:conte]		H
+L13	6	[PLAIN:mons]		H
+L13	7	[PLAIN:de]		H
+L13	8	[PLAIN:?]	word cut at strip top	L
+L14	1	[PLAIN:en]		H
+L14	2	[PLAIN:ayant]		H
+L14	3	[PLAIN:parle]		H
+L14	4	SYM:at	looped a-in-circle	M
+L14	5	[PLAIN:Croys]		M
+L14	6	[PLAIN:quil]		H
+L14	7	[PLAIN:fera]		H
+L14	8	[PLAIN:en]		H
+L14	9	[PLAIN:cella]		H
+L14	10	[PLAIN:tout]		H
+L14	11	[PLAIN:ce]		M
+L14	12	[PLAIN:quil]		M
+L15	1	[PLAIN:souvent]		L
+L15	2	[PLAIN:en]		M
+L15	3	[PLAIN:Lestre]		L
+L15	4	[PLAIN:est]		M
+L15	5	304		H
+L15	6	20		H
+L15	7	203		M
+L15	8	59		H
+L15	9	SYM:X		M
+L15	10	39		H
+L16	1	[PLAIN:pourra]		H
+L16	2	[PLAIN:le]		H
+L16	3	[PLAIN:plus]		H
+L16	4	[PLAIN:au]		H
+L16	5	[PLAIN:Roy]		H
+L16	6	[PLAIN:le]		H
+L16	7	[PLAIN:?]	word cut at strip top	L
+L16	8	[PLAIN:Je]		M
+L16	9	[PLAIN:ne]		M
+L16	10	[PLAIN:sait]		M
+L16	11	[PLAIN:a]		M
+L16	12	[PLAIN:qui]		M
+L16	13	[PLAIN:le]		M
+L16	14	[PLAIN:confieront]	grey corrections within word	M
+L16	15	[PLAIN:la]		M
+L17	1	[PLAIN:?ancois]	gloss	L
+L17	2	[PLAIN:de]	gloss	M
+L17	3	[PLAIN:Coucy]	gloss	M
+L17	4	[PLAIN:qui]	gloss	M
+L17	5	[PLAIN:desire]	gloss; some letters dark	M
+L17	6	[PLAIN:de]	gloss	M
+L17	7	[PLAIN:servir]	gloss; some letters dark	M
+L17	8	[PLAIN:ma]	gloss	M
+L17	9	[PLAIN:?]	dark ille/03-like marks after ma	L
+L17	10	440?	a-a-o shapes, cut at strip bottom	L
+L17	11	22		M
+L17	12	SYM:v		L
+L17	13	SYM:m	m/ffi-like with cross stroke	L
+L17	14	183		M
+L17	15	9?	with underline stroke	L
+L17	16	SYM:triangle		H
+L17	17	6	dot	H
+L17	18	300		H
+L17	19	39		H
+L17	20	262		H
+L17	21	154		M
+L17	22	17		M
+L18	1	160?	or plain bo	L
+L18	2	SYM:v		M
+L18	3	17		H
+L18	4	40		H
+L18	5	42		H
+L18	6	40	cross	M
+L18	7	88?	dot before; second digit blotted	L
+L18	8	SYM:pi		H
+L18	9	248?	last digit uncertain	M
+L18	10	22		H
+L18	11	SYM:pi		H
+L18	12	2?	second digit hidden by blot/descender	L
+L18	13	SYM:triangle		H
+L18	14	SYM:omega		M
+L18	15	39		H
+L18	16	20		H
+L18	17	117?	three barred strokes, third crossed (+); maybe 77+ symbol	L
+L18	18	5		M
+L18	19	[PLAIN:/]	slash	L
+L18	20	[PLAIN:bien]		L
+L18	21	[PLAIN:est]		M
+L18	22	[PLAIN:aime]		M
+L18	23	[PLAIN:du]		M
+L18	24	[PLAIN:Roma?]	partly grey	L
+L19	1	[PLAIN:vous]	gloss	L
+L19	2	[PLAIN:qui]	gloss	M
+L19	3	[PLAIN:luy]	gloss	M
+L19	4	[PLAIN:est]	gloss	M
+L19	5	[PLAIN:le]	gloss; heavy dark stroke	L
+L19	6	[PLAIN:plus]	gloss	M
+L19	7	[PLAIN:important]	gloss	M
+L19	8	[PLAIN:ma]	gloss	M
+L19	9	[PLAIN:dame]	gloss	M
+L19	10	[PLAIN:dans]	gloss	M
+L19	11	[PLAIN:sou]	gloss	L
+L19	12	[PLAIN:a?]	gloss	L
+L19	13	SYM:h	h-like sign, cut at strip bottom	L
+L19	14	84?	dot before; cut at strip bottom	L
+L19	15	550?	cut at strip bottom	L
+L19	16	17		M
+L19	17	SYM:oTo	o-cross-o, crossed tall stroke between two o's	M
+L19	18	185		H
+L19	19	20		H
+L19	20	SYM:lambda		H
+L19	21	44		M
+L19	22	SYM:crossed-loop	looped stem with cross bar (f/q-like)	M
+L19	23	30		M
+L20	1	200		M
+L20	2	SYM:bracket-H	square bracket joined to H	M
+L20	3	243		H
+L20	4	8	dot	H
+L20	5	2	dot	H
+L20	6	22	dot	H
+L20	7	70?	dot; second digit blotted, maybe 78	L
+L20	8	47		H
+L20	9	SYM:inverted-T		H
+L20	10	20	#	H
+L20	11	22		H
+L20	12	184		H
+L20	13	SYM:lambda		M
+L20	14	SYM:o	o-like loop	L
+L20	15	44?	two crossed strokes (++), maybe crossed 7s	L
+L20	16	59	dot	H
+L20	17	394		H
+L20	18	[PLAIN:?]	gloss fragments above/below	L
+L20	19	[PLAIN:soit]		M
+L20	20	[PLAIN:dict]		M
+L20	21	[PLAIN:Catholique]	gloss, partly dark	M
+L20	22	[PLAIN:soit]		M
+L21	1	[PLAIN:La]	gloss	M
+L21	2	[PLAIN:maison]	gloss	M
+L21	3	[PLAIN:de]	gloss	M
+L21	4	[PLAIN:?]	gloss	L
+L21	5	[PLAIN:du]	gloss	L
+L21	6	[PLAIN:mo?]	gloss, crossed	L
+L21	7	[PLAIN:?]	gloss	L
+L21	8	[PLAIN:et]	gloss	M
+L21	9	[PLAIN:le]	gloss	M
+L21	10	[PLAIN:plus]	gloss	M
+L21	11	[PLAIN:principal]	gloss	M
+L21	12	[PLAIN:appuy]	gloss	M
+L21	13	[PLAIN:qui]	gloss	M
+L21	14	[PLAIN:?]	gloss	L
+L21	15	17?	cut at strip bottom, dots after	L
+L21	16	220		H
+L21	17	339?	last digit 9 or 4	M
+L21	18	SYM:triangle		H
+L21	19	17		H
+L21	20	SYM:M		H
+L21	21	154		H
+L21	22	SYM:Y		H
+L21	23	84		M
+L21	24	334		H
+L21	25	SYM:qm	q/7-like with m; possibly plain	L
+L22	1	109?	E; small 10 then long dark 9/f stroke with E	L
+L22	2	SYM:lambda		H
+L22	3	66	x	H
+L22	4	39	E	H
+L22	5	SYM:lambda		H
+L22	6	SYM:o		M
+L22	7	SYM:Y		M
+L22	8	335		H
+L22	9	17	#	H
+L22	10	141?	or 14 + i	L
+L22	11	SYM:pi		M
+L22	12	335		H
+L22	13	17		H
+L22	14	6	dot; tops cut at strip top	L
+L22	15	SYM:cross		L
+L22	16	8?	cut at strip top	L
+L22	17	11?	cut at strip top	L
+L22	18	8?	dot; cut at strip top	L
+L22	19	?	further cut numerals under/above, illegible	L
+L22	20	[PLAIN:il]		M
+L22	21	[PLAIN:y]		M
+L22	22	[PLAIN:auroit]		M
+L22	23	SYM:VG	underlined	L
+L22	24	SYM:G	grey	L
+L22	25	[PLAIN:I]	gloss	L
+L22	26	[PLAIN:qui]	gloss	M
+L22	27	[PLAIN:?]		L
+L23	1	[PLAIN:de]	gloss	M
+L23	2	[PLAIN:rang?]	gloss	L
+L23	3	[PLAIN:de]	gloss	M
+L23	4	[PLAIN:la]	gloss	M
+L23	5	[PLAIN:religion]	gloss	M
+L23	6	[PLAIN:soit]	gloss	M
+L23	7	[PLAIN:de]	gloss	M
+L23	8	[PLAIN:ceste]	gloss	M
+L23	9	[PLAIN:maison]	gloss	M
+L23	10	[PLAIN:soit?]	cut at strip bottom	L
+L23	11	355?	cut at strip bottom	L
+L23	12	75?	cut at strip bottom	L
+L23	13	26		M
+L23	14	64	v (slanted stroke after)	M
+L23	15	88?		M
+L23	16	SYM:triangle		H
+L23	17	57	dot	H
+L23	18	6	dot	H
+L23	19	304		H
+L23	20	309		H
+L24	1	[PLAIN:seconderoyent]		M
+L24	2	[PLAIN:tousiours]		M
+L24	3	[PLAIN:pour]		H
+L24	4	[PLAIN:cela]		H
+L24	5	41	E	H
+L24	6	SYM:X		H
+L24	7	SYM:lambda		H
+L24	8	29		H
+L24	9	[PLAIN:soyt]		M
+L24	10	?	signs cut at strip top/seam (c3-like, 22?)	L
+L24	11	[PLAIN:?]	gloss	L
+L24	12	[PLAIN:de]	gloss	L
+L24	13	[PLAIN:la]	gloss	L
+L24	14	[PLAIN:?]	gloss	L
+L24	15	[PLAIN:et]	gloss	M
+L24	16	[PLAIN:fabour]	gloss	M
+L24	17	[PLAIN:la]	gloss	M
+L24	18	[PLAIN:ligue]	gloss	M
+L25	1	[PLAIN:muen?]		L
+L25	2	[PLAIN:bo]	gloss	L
+L25	3	[PLAIN:la]	gloss	M
+L25	4	SYM:x	dark, crossed	L
+L25	5	[PLAIN:di]		L
+L25	6	[PLAIN:quoy]		M
+L25	7	[PLAIN:/te?]	dark blot	L
+L25	8	[PLAIN:desir]	gloss	M
+L25	9	[PLAIN:fort]	gloss	M
+L25	10	[PLAIN:partios?]	gloss, partly dark	L
+L25	11	[PLAIN:dung]		M
+L25	12	SYM:5-hook	dark 5/ʃ-like sign	L
+L25	13	SYM:dagger	dark T/dagger with dots	L
+L25	14	[PLAIN:?]	gloss fragment	L
+L25	15	20?	cut at strip bottom	L
+L25	16	SYM:v		L
+L25	17	SYM:cross	t/+ sign	M
+L25	18	SYM:crossed-hook	7/f-like with cross bar	L
+L25	19	4	E	H
+L25	20	20		H
+L25	21	52		M
+L25	22	SYM:inverted-T		H
+L25	23	SYM:double-cross	stem with two cross bars	M
+L25	24	SYM:m	m with cross stroke	M
+L25	25	SYM:omega	preceded by c-like stroke	L
+L25	26	[PLAIN:a]	gloss, below	L
+L26	1	248		H
+L26	2	160	y	H
+L26	3	197	dot after	H
+L26	4	SYM:n-arch	arch/omega-like loop with stem	M
+L26	5	20		H
+L26	6	SYM:M	slash before	H
+L26	7	42		H
+L26	8	SYM:f		M
+L26	9	9		M
+L26	10	599		M
+L26	11	SYM:n-arch	arch loop with stem	M
+L26	12	22		H
+L26	13	17	E	H
+L26	14	20		H
+L26	15	327		H
+L26	16	185		H
+L26	17	340?	4 crossed; or 390	M
+L26	18	[PLAIN:mons]	gloss	M
+L26	19	2?		L
+L26	20	SYM:x	large dark blot x-shape, dot after	L
+L26	21	[PLAIN:la]		M
+L26	22	[PLAIN:fremonte?]	gloss, partly dark	L
+L27	1	[PLAIN:qui]		L
+L27	2	SYM:dagger	dark	L
+L27	3	[PLAIN:pouvoit]	struck through	L
+L27	4	[PLAIN:le]		L
+L27	5	[PLAIN:pourroit]	gloss, partly dark	M
+L27	6	[PLAIN:estre]	gloss, partly dark	L
+L27	7	[PLAIN:a]	gloss	L
+L27	8	[PLAIN:po]	dark, cipher-like	L
+L27	9	[PLAIN:Lorrain]	gloss, partly dark	M
+L27	10	[PLAIN:Jusques]	gloss, partly dark	M
+L27	11	[PLAIN:a]	gloss	L
+L27	12	[PLAIN:gagner]	gloss	M
+L27	13	?	numerals cut at strip bottom (2017?)	L
+L27	14	SYM:B	B/8-like loop	L
+L27	15	SYM:omega		M
+L27	16	SYM:triangle		H
+L27	17	40?	0 has bar, maybe 48	M
+L27	18	50		H
+L27	19	SYM:inverted-T		H
+L27	20	20		H
+L27	21	304		H
+L27	22	SYM:crossed-loop	venus-like loop with cross	M
+L27	23	SYM:Y		M
+L27	24	159		M
+L28	1	22		H
+L28	2	SYM:triangle		H
+L28	3	SYM:dagger	stroke with dot	L
+L28	4	SYM:cross		M
+L28	5	SYM:Y		M
+L28	6	[PLAIN:en]		H
+L28	7	[PLAIN:point]		H
+L28	8	48		H
+L28	9	SYM:triangle		H
+L28	10	SYM:Y	slash through	M
+L28	11	SYM:double-cross		M
+L28	12	295		H
+L28	13	5	dot	H
+L28	14	SYM:omega		M
+L28	15	23		H
+L28	16	SYM:cross	partly grey	M
+L28	17	50		H
+L28	18	SYM:crossed-loop	venus-like	H
+L28	19	SYM:#		H
+L28	20	4	grey slash through	L
+L28	21	SYM:Y		H
+L28	22	SYM:inverted-T		H
+L28	23	SYM:F		M
+L28	24	[PLAIN:?]	dark blot/word start	L
+L28	25	[PLAIN:Cuy?]	gloss	L
+L28	26	[PLAIN:de]		M
+L28	27	[PLAIN:frans]		M
+L29	1	[PLAIN:me]	gloss	M
+L29	2	[PLAIN:donne]	gloss	M
+L29	3	[PLAIN:aucung]	gloss	M
+L29	4	[PLAIN:soubs]	gloss	M
+L29	5	[PLAIN:Roy]	gloss	M
+L29	6	[PLAIN:a]	gloss	M
+L29	7	[PLAIN:cause]	gloss	M
+L29	8	[PLAIN:de]	gloss	M
+L29	9	[PLAIN:la]	gloss	M
+L29	10	[PLAIN:Religion]	gloss	M
+L29	11	[PLAIN:de]	gloss	L
+L29	12	[PLAIN:nature]	gloss	L
+L29	13	?	sign cut at strip bottom (loop)	L
+L29	14	17?	cut at strip bottom	L
+L29	15	22		M
+L29	16	SYM:omega		M
+L29	17	SYM:crossed-loop	9/q-like with bar	L
+L29	18	SYM:pi		M
+L29	19	[PLAIN:Quant]		H
+L30	1	SYM:omega		H
+L30	2	SYM:cross		H
+L30	3	589		M
+L30	4	SYM:hook	tall open arch/long-s	M
+L30	5	55		H
+L30	6	SYM:inverted-T		H
+L30	7	SYM:xi	stacked E/xi	M
+L30	8	334		H
+L30	9	SYM:lambda		H
+L30	10	16		H
+L30	11	SYM:inverted-T		H
+L30	12	SYM:infinity		H
+L30	13	17		H
+L30	14	SYM:long-s	tall stroke joined to next	L
+L30	15	8?		L
+L30	16	SYM:Omega	R/Omega-like	L
+L30	17	320		M
+L30	18	[PLAIN:estans]		H
+L30	19	[PLAIN:tous]		H
+L30	20	17		H
+L30	21	9	dot	H
+L30	22	70	dot	M
+L30	23	20		M
+L30	24	1?	cut at strip top	L
+L30	25	5?	cut at strip top	L
+L30	26	SYM:T	cut at strip top	L
+L31	1	[PLAIN:?]	strip mostly interline; words at bottom right only	L
+L31	2	[PLAIN:?nuic]		L
+L31	3	SYM:at	looped a-in-circle	L
+L31	4	[PLAIN:fort]		M
+L31	5	[PLAIN:fait]		M
+L31	6	SYM:at	looped a-in-circle	L
+L32	1	[PLAIN:?]		L
+L32	2	[PLAIN:la]		M
+L32	3	[PLAIN:conference]		M
+L32	4	[PLAIN:ilz]		M
+L32	5	[PLAIN:ne]		H
+L32	6	[PLAIN:font]		M
+L32	7	[PLAIN:que]		M
+L32	8	[PLAIN:luyter?]		L
+L32	9	[PLAIN:a]		M
+L32	10	[PLAIN:la]		M
+L32	11	[PLAIN:veue?]		L
+L32	12	SYM:at	looped a-in-circle	L
+L32	13	[PLAIN:la]		M
+L32	14	[PLAIN:plus?]		L
+L33	1	[PLAIN:aultre]	underlined	M
+L33	2	[PLAIN:beaucoup]		M
+L33	3	[PLAIN:plus]	partly grey	M
+L33	4	[PLAIN:?]	cut at strip bottom	L
+L33	5	[PLAIN:de]		L
+L33	6	[PLAIN:celuy]		L
+L33	7	[PLAIN:ministre]		M
+L33	8	[PLAIN:;]		L
+L33	9	6	dot	H
+L33	10	SYM:lambda		H
+L33	11	344?	last digit 4 or 9	M
+L34	1	[PLAIN:neust]		M
+L34	2	[PLAIN:grand]		M
+L34	3	[PLAIN:prins]		L
+L34	4	[PLAIN:le]		L
+L34	5	[PLAIN:?]	w-like word	L
+L34	6	[PLAIN:tempe?]		L
+L34	7	SYM:X	large crossed X with bars	L
+L34	8	[PLAIN:ce]		M
+L34	9	[PLAIN:trouvas]		M
+L34	10	[PLAIN:ce]		L
+L34	11	[PLAIN:?]	cut at strip top	L
+L34	12	[PLAIN:?]	gloss-like string ...ymol.brz	L
+L34	13	[PLAIN:atant?]	gloss	L
+L34	14	[PLAIN:?]	gloss	L
+L35	1	SYM:5-hook	dark 5/S-like hook	L
+L35	2	SYM:G	large looped G, dark with grey inner a	L
+L35	3	[PLAIN:?]	gloss fragments	L
+L35	4	SYM:dagger	dark t-like	L
+L35	5	[PLAIN:bourg?]	gloss	L
+L35	6	SYM:omega	grey	L
+L35	7	SYM:G	looped, with dark V	L
+L35	8	[PLAIN:duc]	gloss	M
+L35	9	[PLAIN:de?]	gloss	L
+L35	10	SYM:G	dark looped	L
+L35	11	[PLAIN:?]	dark letters	L
+L35	12	[PLAIN:?]	gloss	L
+L35	13	252	overlined	H
+L35	14	SYM:#	large crossed hatch with slanted bars	M
+L35	15	304		H
+L35	16	SYM:omega		H
+L35	17	14		H
+L35	18	SYM:crossed-loop	venus-like	H
+L35	19	284	crossed 4 or 7	M
+L35	20	SYM:omega		M
+L35	21	SYM:beta	beta/long-s with stroke	L
+L35	22	SYM:lambda		M
+L36	1	28	8 in grey ink	M
+L36	2	25		H
+L36	3	305?	blotted; or 303	L
+L36	4	203		H
+L36	5	SYM:crossed-hook	grey t + dark T with loop (H-like)	L
+L36	6	[PLAIN:de]		L
+L36	7	[PLAIN:ceb?]		L
+L36	8	[PLAIN:ilz]		M
+L36	9	[PLAIN:dict]		M
+L36	10	[PLAIN:qui]		M
+L36	11	SYM:8-loop	z over o, 8-like	L
+L36	12	[PLAIN:?]	cut at strip bottom	L
+L36	13	[PLAIN:quil]		L
+L36	14	[PLAIN:trouvera]		M
+L36	15	[PLAIN:.]		M
+L36	16	[PLAIN:Ce]		M
+L37	1	[PLAIN:La]	gloss	M
+L37	2	[PLAIN:plus]	gloss	L
+L37	3	[PLAIN:fleur]	gloss	L
+L37	4	[PLAIN:de]	gloss, dark slash through	L
+L37	5	[PLAIN:Car]	gloss	L
+L37	6	[PLAIN:de]	dark	L
+L37	7	[PLAIN:Roi]	dark	L
+L37	8	[PLAIN:les]		M
+L37	9	[PLAIN:loix]		M
+L37	10	[PLAIN:?]	G/6-like loop, cipher?	L
+L37	11	[PLAIN:Je]		M
+L37	12	[PLAIN:ne]		H
+L37	13	[PLAIN:croys]		M
+L38	1	300		H
+L38	2	17		H
+L38	3	SYM:M	M with looped top (Mf-like)	M
+L38	4	SYM:C	large open C	L
+L38	5	[PLAIN:?]	cut at strip top	L
+L38	6	[PLAIN:?]	cut at strip bottom	L
+L38	7	[PLAIN:allez?]		L
+L38	8	[PLAIN:celluy]		M
+L38	9	[PLAIN:ysse?]		L
+L38	10	[PLAIN:pour]		M
+L38	11	[PLAIN:aller]		M
+L38	12	[PLAIN:a]		M
+L38	13	[PLAIN:Nantes]		M
+L39	1	[PLAIN:Roy]		H
+L39	2	[PLAIN:est]		H
+L39	3	[PLAIN:alle]		H
+L39	4	[PLAIN:ce]		H
+L39	5	[PLAIN:jour]		H
+L39	6	[PLAIN:a]		H
+L39	7	[PLAIN:Foug]		M
+L39	8	[PLAIN:et]		M
+L39	9	[PLAIN:dous?]		L
+L39	10	[PLAIN:?]		L
+L39	11	[PLAIN:?]		L
+L39	12	[PLAIN:andely?]		L
+L39	13	[PLAIN:?]	struck through	L
+L39	14	[PLAIN:?]	struck through	L
+L39	15	[PLAIN:voilla]		H
+L39	16	[PLAIN:Monseigneur]		H
+L40	1	[PLAIN:de]		M
+L40	2	[PLAIN:la]		H
+L40	3	[PLAIN:Cappelle]		M
+L40	4	[PLAIN:ce]		M
+L40	5	[PLAIN:deux]		M
+L40	6	[PLAIN:de]		L
+L40	7	[PLAIN:?]		L
+L40	8	[PLAIN:.]		L
+L40	9	[PLAIN:Mr]		L
+L40	10	[PLAIN:de]		L
+L40	11	[PLAIN:Linars]		L
+L40	12	[PLAIN:le]		M
+L40	13	[PLAIN:pour]		H
+L40	14	[PLAIN:ce]		M
+L40	15	[PLAIN:Reste]		M
+L40	16	[PLAIN:de]		M
+L41	1	[PLAIN:faire]		M
+L41	2	[PLAIN:ce]		M
+L41	3	[PLAIN:que]		M
+L41	4	[PLAIN:vous]		H
+L41	5	[PLAIN:plaist]		M
+L41	6	[PLAIN:mander]		M
+L41	7	[PLAIN:Je]		L
+L41	8	[PLAIN:?]		L
+L41	9	[PLAIN:et]		L
+L41	10	[PLAIN:tiendray]		M
+L41	11	[PLAIN:la]		M
+L41	12	[PLAIN:main]		H
+L42	1	1000	probably plaintext sum (followed by escus sign)	M
+L42	2	[PLAIN:escus]	abbreviation sign	M
+L42	3	[PLAIN:a]		L
+L42	4	[PLAIN:mons]		H
+L42	5	[PLAIN:de]		H
+L42	6	[PLAIN:Sancy]		M
+L42	7	[PLAIN:et]		M
+L42	8	[PLAIN:Chomberg]		M
+L42	9	[PLAIN:et]		M
+L42	10	[PLAIN:?]		L
+L43	1	[PLAIN:?]	mostly cut; line body only in lower segments	L
+L43	2	[PLAIN:contans]		L
+L43	3	[PLAIN:les]		M
+L43	4	[PLAIN:ayans]		M
+L43	5	[PLAIN:tous]		M
+L43	6	[PLAIN:mis]		L
+L44	1	[PLAIN:pour]		L
+L44	2	[PLAIN:voulloir]		M
+L44	3	[PLAIN:que]		M
+L44	4	[PLAIN:vous]		H
+L44	5	[PLAIN:serez]		M
+L44	6	[PLAIN:?]		L
+L45	1	[PLAIN:Ce]		L
+L45	2	[PLAIN:?]	cut at strip top	L
+L45	3	[PLAIN:la]		L
+L45	4	[PLAIN:fortune]		M
+L45	5	[PLAIN:a]		M
+L45	6	[PLAIN:vous]		H
+L45	7	[PLAIN:servir]		M
+L45	8	[PLAIN:et]		M
+L45	9	[PLAIN:vous]		H
+L45	10	[PLAIN:suys]		M
+L45	11	[PLAIN:asseure]		M
+L46	1	[PLAIN:trouvez]	upper line fragment	L
+L46	2	[PLAIN:fort]	upper line fragment	L
+L46	3	[PLAIN:et]		M
+L46	4	[PLAIN:mons]		M
+L46	5	[PLAIN:de]		M
+L46	6	[PLAIN:Sancy]		M
+L46	7	[PLAIN:ny]		L
+L46	8	[PLAIN:ou]		L
+L46	9	[PLAIN:oublyez]		M
+L46	10	[PLAIN:rien]		M
+L46	11	[PLAIN:et]		M
+L46	12	[PLAIN:me]		M
+L46	13	[PLAIN:serez]		M
+L46	14	[PLAIN:a]		M
+L46	15	[PLAIN:jamais]		M
+L47	1	[PLAIN:Monseigneur]		H
+L48	1	[PLAIN:A]		M
+L48	2	[PLAIN:paris]		M
+L48	3	[PLAIN:ce]		M
+L48	4	[PLAIN:xij]		M
+L48	5	[PLAIN:aoust]		H
+L48	6	[PLAIN:1593]	date	H
+L48	7	[PLAIN:Votre]		M
+L48	8	[PLAIN:tres]		M
+L48	9	[PLAIN:humble]		H
+L48	10	[PLAIN:tres]		M
+L48	11	[PLAIN:affectionne]		M
+L48	12	[PLAIN:serviteur]		M
+L48	13	[PLAIN:Lauriere?]	signature, cut at strip bottom	L
+L49	1	[PLAIN:Lauriere?]	signature tail	L
