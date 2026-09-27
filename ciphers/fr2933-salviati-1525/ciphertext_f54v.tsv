@@ -278,9 +278,9 @@ line	pos	code	marks	grade
 11	7	p		AB
 11	8	S		split
 11	9	phi		AB
-11	10	WORD		AB|split2
+11	10	_		settledC
 11	11	_		settledC
-11	12	WORD		AB|split2
+11	12	_		AB
 11	13	eps		settledC
 11	14	_		split
 11	15	_		AB
