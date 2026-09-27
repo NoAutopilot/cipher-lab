@@ -767,3 +767,23 @@ at 1200-2400px across f203, f209, f166, f216, f235, f217, all HTTP 200, no 429/4
 ledger.
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
+
+## Second-opinion leads (SO-LAURIERE-LEADS, 27 Sept 2026)
+
+Landed verbatim from the runner's answer, PR 36; full text at
+`second-opinions/chatgpt-leads-2026-09-27.md`. Leads only, not verdicts -- every citation below is a claim to
+verify, never a fact.
+
+1. Archive/image request; BnF fr.3632 no.8 f.15, catalogued "avec chiffre et déchiffrement" -- request full colour reproduction recto/verso (archivesetmanuscrits.bnf.fr; repository NOTES.md "NX-LAU2"). unchecked.
+2. Comparator manuscript image; fr.3625 no.10 f.10r as the attested glossed comparator, 19/86 groups read per Bourdeau (Gallica ark:/12148/btv1b52511322v/f31.item; Bourdeau "Champagne news letters" §04). unchecked.
+3. Edition search, negative, unverified; *Les Mémoires de Monsieur le duc de Nevers*, seconde partie (Paris 1665) -- no Laurière/Chaalons letter found (Google Books H2eV4wAmIr0C; NOTES.md "scGOM2"). unchecked.
+4. Edition search, negative, unverified; E. Pérot, *Les luttes religieuses en Champagne au XVIe siècle: la Ligue* (1911) -- no Laurière found in repository OCR (repository NOTES.md log). unchecked.
+5. Methodological analogue, not direct evidence; Tomokiyo 2019 on a Bongars cipher whose later version adds a syllable table and reassigns nomenclature (BnF fr.7131 ff.230/245/255) -- shows related sheets can differ (academia.edu/40982854, pp.2-3). unchecked.
+6. Identification caution ("identity trap"); Tomokiyo's fr.3995 no.57 entry reportedly names "Mons. de Laveriere" = Honoré Mauroy La Verrière, not Laurière -- do not merge names on spelling resemblance (cryptiana.web.fc2.com/code/nevers.htm no.57; Gallica fr.3995 f.102v ark:/12148/btv1b525085665). unchecked.
+7. Scholar contact; Satoshi Tomokiyo -- ask whether he has seen a key sheet explicitly endorsed "Laurière" or a concordance linking fr.3632 no.8 with fr.3625 no.10 (Tomokiyo 2019 pp.2-3; cryptiana catalogue entry). unchecked.
+8. Scholar contact; Daniel Bourdeau -- check raw glyph alignment for the secure word-band anchors 335 and 346 before applying any new table (dbourdeau.github.io/cyphersolver/champagne1590.html §04). unchecked.
+9. Archive contact/request; BnF Département des Manuscrits -- request a precise item description and full images of fr.3632 no.8 (bnf.fr/fr/bnf-archives-et-manuscrits). unchecked.
+10. Cryptanalytic test design, positive control; validate key57.tsv against no.57's documented recipient/application -- La Verrière to Nevers, Poissy, 12 Aug 1593, BnF fr.3985 f.58 -- before applying it to Laurière's no.55 (Tomokiyo fr.3995 catalogue no.57; Gallica fr.3985 f.58 ark:/12148/btv1b90606498). unchecked.
+11. Cryptanalytic test design; after the positive control, apply the frozen key57 table to no.55, count only semantically constrained legible stretches beyond the twelve anchors, compare against other keys and a class-preserving shuffle, predeclare the score, require a held-out word-band match plus coherent syntax across runs (repository key57/key57.tsv, control_key57.py; NOTES.md "NX-LAU3"/"NX-LAU4"). unchecked.
+
+No lead names a printed decipherment or edition of no.55 itself, or the actual fr.55 key; leads 6 and 10 name the fr.3995 key family's word bank (no.57) as an untested comparator -- check-solved candidate for that word-bank angle, not for the target letter itself.
