@@ -17,7 +17,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def today(): return datetime.datetime.utcnow().strftime("%Y-%m-%d")
 def sprint_targets():
     t = open(os.path.join(ROOT, "SPRINT.md"), encoding="utf-8").read()
-    return re.findall(r"^\| (\S+)(?: \([^)]*\))? \| campaign", t, re.M)
+    return re.findall(r"^\| (\S+)(?: \(.*\))? \| campaign", t, re.M)  # the (trigger ... (bound to ...), :NN) note nests parentheses
 def parse(folder):
     p = os.path.join(ROOT, "ciphers", folder, "CAMPAIGN.md")
     text = open(p, encoding="utf-8").read()
