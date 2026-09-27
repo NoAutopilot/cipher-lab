@@ -1207,3 +1207,16 @@ unchecked.
 - lead; the engraved title page (PDF p.1, "Eccles. IX. 10.") carries a second shorthand rendering of the same verse for comparison, with visible differences from item 20 not yet resolved -- unchecked.
 - bibliographic-note; Stenophile's catalogue labels the scan "1770" but the letterpress title itself (p.7, "second edition... J. Smeeton") shows no visible year, and the Pocknell Collection list catalogues a matching Smeeton second-edition item as "[1760?]" (Alston 207, P28) -- edition date remains bibliographically unsettled -- unchecked.
 - next-step; the checkpoint's own named next action is transcribing exercise 2 on PDF p.17 into primitive/word-sign alternatives as held-out evidence, before any Armstrong target application -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 20:26, 27 Sept 2026)
+
+Landed from PR 46 (`second-opinions/chatgpt-checkpoint-2026-09-27-2026.md`, PR-LAND-18). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- experiment-negative; a mixed letter/whole-word-sign model (44-piece alphabet, <=2 homophones) recovers 94-97% of controls overall but only 54-63% of word-sign tokens specifically, and incorrect fitted readings score above the true key on all three controls -- the pooled 90% launch gate is too coarse to validate word-sign recognition -- unchecked.
+- experiment-result; the target (-343.10) beats 0/20 of its own symbol-order shuffles yet remains incoherent, with only six fitted word-sign tokens -- no reading or key claimed -- unchecked.
+- lead; a 16-shape/primitive answer-aware candidate lattice for Annet 1770 exercise 2 (13/16 candidate coverage, all grade M) is explicitly flagged as development/calibration data, not a held-out or blind recognition result -- unchecked.
+- archival-route/negative; the LOC Monroe-collection "about" page again returned HTTP 403 via the web reader, no key image obtained -- unchecked.
+- lead/negative; a 1811 pasigraphy exposition (Firmas, *Pasitélégraphie*, e-rara) was inspected but post-dates the 1808 target and describes Maimieux's earlier system without matching it; the actual 1797 source remains unretrieved (Internet Archive 502, Google Books image unavailable) -- unchecked.
