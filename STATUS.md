@@ -106,6 +106,21 @@ Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask t
 
 Precedents added to README "Per-unit pricing precedents" (case-row digest, paper digest, text key tables; image key tables: open one first). UPDATES.md rows 01:05. SYSTEM.md rows for the three LESSONS registers and the cryptiana/lasry source registers.
 
+## LANE NEV handoff (session_019nCvSe9RbV93Hiezc5nP9E), 27 September 2026 (live)
+
+Brief: .claude/briefs/runs/2026-09-27-lane-nev-orchestrator.md (owner account, announced exception: SUPPLY takes both
+fr.3251 groups while SOLVE is at allowed_warning). Targets: ciphers/nevers-birago-fr3251-1572 (7 letters, witness
+f.178) and ciphers/ceppo-nevers-fr3251-1570s (4 letters, witness f.27). Order: job 1 witness calibration per group
+(bar 0.70 letter agreement and z >= 4 vs 20 shuffled keys), Nevers-Birago first; job 2 one target leaf per passing
+group. One worker at a time.
+- Job 1a NEV-C1 (Sonnet, session_01FNTyf87RnsHe2dCMP1YHKD, cap 6, box 45): f.178 calibration, brief
+  .claude/briefs/runs/2026-09-27-lane-nev-owner-c1-calibrate-f178.md. Running. It writes tools/decode_witness.py
+  (shared; the Ceppo-Nevers calibration on f.27 reuses it).
+- Next: on NEV-C1 PASS, NEV-C2 (Ceppo-Nevers on f.27, same design); then job 2. On FAIL, the failing part named
+  by the worker decides the next step; no target work for that group.
+- Note for a successor: the Ceppo-Nevers key was reconstructed by Tomokiyo from BnF fr.4702, not fr.3251, so its
+  f.27 calibration is an out-of-sample test; the Nevers-Birago key was built from f.178 itself (in-sample).
+
 ## LANE SALV2 handoff (session_01288kYmmNxAqAedKtgvxyD1), 27 September 2026 (live)
 
 **Closed** (jobs 1-2 done, job 3 stopped over cap; the heading keeps "(live)" only because the push guard refuses a renamed section heading).
