@@ -1194,3 +1194,16 @@ unchecked.
 - archival-route/negative; repeated www.loc.gov requests returned HTTP 403 and Rotunda document-page clicks failed, so Founders' own editorial notes and its 21 Feb-31 Aug 1808 letter index remain unfetched -- unchecked.
 - lead; a printed 20 June 1804 Livingston passage (Hunt's Madison Writings VII, p.124) located by public search but not aligned to any particular coded manuscript span -- unchecked.
 - next-step; the checkpoint's own named next action is transcribing Annet 1770 PDF pp.16-17's paired known-answer examples before any further target test -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 20:04, 27 Sept 2026)
+
+Landed from PR 45 (`second-opinions/chatgpt-checkpoint-2026-09-27-2004.md`, PR-LAND-18). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- archival-route; two Annet shorthand manual PDFs (labelled 1770, primary; 1752, comparison) fetched via Dropbox mirrors linked from Stenophile's historical collection, SHA-256 hashes recorded; PDF p.16 gives 20 numbered plaintext explanations and p.17 the matching engraved exercises -- unchecked.
+- lead; item 20's printed answer ("For there is no work nor device nor knowledge nor wisdom in the grave whither thou goest") aligned to 17 provisional (grade M, one reader, answer-aware) sign/component readings, explicitly not a validated decoder -- unchecked.
+- lead; the engraved title page (PDF p.1, "Eccles. IX. 10.") carries a second shorthand rendering of the same verse for comparison, with visible differences from item 20 not yet resolved -- unchecked.
+- bibliographic-note; Stenophile's catalogue labels the scan "1770" but the letterpress title itself (p.7, "second edition... J. Smeeton") shows no visible year, and the Pocknell Collection list catalogues a matching Smeeton second-edition item as "[1760?]" (Alston 207, P28) -- edition date remains bibliographically unsettled -- unchecked.
+- next-step; the checkpoint's own named next action is transcribing exercise 2 on PDF p.17 into primitive/word-sign alternatives as held-out evidence, before any Armstrong target application -- unchecked.
