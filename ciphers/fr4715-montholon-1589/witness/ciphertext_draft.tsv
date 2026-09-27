@@ -1,0 +1,2525 @@
+line	position	sign	confidence	alt	why
+L02	1	T	M	B:	differ
+L02	2	'47	M	B:47	differ
+L02	3	20	M		agree-flagged
+L02	4	41	M		agree-flagged
+L02	5	26	M		agree-flagged
+L02	6	75	M		agree-flagged
+L02	7	03	M		agree-flagged
+L02	8	60	M	A:-	gap
+L02	9	93	M	A:-	gap
+L02	10	93	M	A:-	gap
+L02	11		M	B:03	differ
+L02	12		M	B:39	differ
+L02	13		M	B:45	differ
+L02	14		M		agree-flagged
+L02	15		M		agree-flagged
+L02	16	45	M	B:-	gap
+L03	1	93	M		agree-flagged
+L03	2	63	M		agree-flagged
+L03	3	63	M	B:03	differ
+L03	4	20	M		agree-flagged
+L03	5	25	M		agree-flagged
+L03	6	93	M		agree-flagged
+L03	7	05	M		agree-flagged
+L03	8	03	M		agree-flagged
+L03	9	11	M		agree-flagged
+L03	10	23	M		agree-flagged
+L03	11	60	M	B:-	gap
+L03	12	05	M	B:-	gap
+L03	13	73	M	B:-	gap
+L03	14	95	M	B:-	gap
+L03	15	60	M		agree-flagged
+L03	16	05	M		agree-flagged
+L03	17	73	M		agree-flagged
+L03	18	95	M		agree-flagged
+L03	19	123	M	B:23	differ
+L03	20	264	M	B:26	differ
+L03	21	40	M		agree-flagged
+L03	22	258	M	B:25	differ
+L03	23	25	M		agree-flagged
+L03	24	17	M		agree-flagged
+L03	25	05	M	A:-	gap
+L03	26	12	M	A:-	gap
+L03	27	512	M	B:05	differ
+L03	28	023	M	B:23	differ
+L03	29	50	M		agree-flagged
+L03	30	24	M		agree-flagged
+L03	31	50	M		agree-flagged
+L03	32	31	M	A:-	gap
+L03	33	319	M	B:95	differ
+L03	34	50	M	B:05	differ
+L03	35	63	M		agree-flagged
+L03	36	95	M		agree-flagged
+L03	37	16	M		agree-flagged
+L03	38	20	M	A:-	gap
+L03	39	12	M	A:-	gap
+L03	40	2012	M	B:23	differ
+L03	41	2324	M	B:24	differ
+L03	42	T	M		agree-flagged
+L03	43	65	M	B:05	differ
+L03	44	55	M		agree-flagged
+L03	45	60	M		agree-flagged
+L03	46	09	M	A:-	gap
+L03	47	77	M	A:-	gap
+L03	48	30	M		agree-flagged
+L03	49	20	M	A:-	gap
+L03	50	25	M		agree-flagged
+L03	51	93	M	B:95	differ
+L03	52	60	M		agree-flagged
+L03	53	40	M		agree-flagged
+L03	54	23	M	B:-	gap
+L03	55	93	M	B:25	differ
+L03	56	23	M	B:25	differ
+L03	57	15	M		agree-flagged
+L03	58	93	M		agree-flagged
+L03	59	702	M	B:70	differ
+L03	60	15	M	B:23	differ
+L03	61	93	M	B:73	differ
+L03	62	7023	M	B:30	differ
+L03	63	73	M	B:324	differ
+L03	64	0324	M	B:16	differ
+L03	65	1670	M	B:70	differ
+L04	1	95	M		agree-flagged
+L04	2	125	M	B:12	differ
+L04	3	73	M	B:573	differ
+L04	4	95	M		agree-flagged
+L04	5	23	M		agree-flagged
+L04	6	73	M		agree-flagged
+L04	7	05	M		agree-flagged
+L04	8	03	M	A:-	gap
+L04	9	60	M		agree-flagged
+L04	10	60	M		agree-flagged
+L04	11	23	M		agree-flagged
+L04	12	40	M		agree-flagged
+L04	13	50	M	B:05	differ
+L04	14	9	M	B:09	differ
+L04	15	32	M		agree-flagged
+L04	16	93	M		agree-flagged
+L04	17	50	M		agree-flagged
+L04	18	95	M		agree-flagged
+L04	19	50	M		agree-flagged
+L04	20	193	M	B:93	differ
+L04	21	63	M		agree-flagged
+L04	22	175	M	B:75	differ
+L04	23	93	M		agree-flagged
+L04	24	73	M	B:-	gap
+L04	25	05	M	B:-	gap
+L04	26	60	M	B:-	gap
+L04	27	16	M	B:-	gap
+L04	28	73	M		agree-flagged
+L04	29	05	M		agree-flagged
+L04	30	60	M		agree-flagged
+L04	31	16	M		agree-flagged
+L04	32	42	M		agree-flagged
+L04	33	50	M		agree-flagged
+L04	34	03	M		agree-flagged
+L04	35	95	M		agree-flagged
+L04	36	25	M		agree-flagged
+L04	37	10	M		agree-flagged
+L04	38	50	M		agree-flagged
+L04	39	61	M	B:-	gap
+L04	40	65	M	B:-	gap
+L04	41	25	M	B:63	differ
+L04	42		M	B:31	differ
+L04	43	65	M		agree-flagged
+L04	44	25	M		agree-flagged
+L04	45		M	B:60	differ
+L04	46		M	B:23	differ
+L04	47		M	B:40	differ
+L04	48		M	B:05	differ
+L04	49	60	M	B:73	differ
+L04	50	25	M	B:05	differ
+L04	51	10	M	B:17	differ
+L04	52	37	M		agree-flagged
+L04	53	09	M	A:-	gap
+L04	54	95	M	B:05	differ
+L04	55	60	M		agree-flagged
+L04	56	05	M		agree-flagged
+L04	57	73	M		agree-flagged
+L05	1	55	M		agree-flagged
+L05	2	50	M		agree-flagged
+L05	3	93	M		agree-flagged
+L05	4	23	M		agree-flagged
+L05	5	19	M		agree-flagged
+L05	6	123	M	B:12	differ
+L05	7	25	M	B:325	differ
+L05	8	10	M		agree-flagged
+L05	9	63	M		agree-flagged
+L05	10	50	M		agree-flagged
+L05	11	63	M		agree-flagged
+L05	12	95	M		agree-flagged
+L05	13	23	M		agree-flagged
+L05	14	1124	M	B:-	gap
+L05	15	65	M	B:-	gap
+L05	16	95	M	B:-	gap
+L05	17	23	M	B:11	differ
+L05	18	1124	M	B:46	differ
+L05	19	50	M		agree-flagged
+L05	20	65	M		agree-flagged
+L05	21	25	M		agree-flagged
+L05	22	03	M		agree-flagged
+L05	23	24	M	B:49	differ
+L05	24	93	M		agree-flagged
+L05	25	23	M		agree-flagged
+L05	26	93	M		agree-flagged
+L05	27	50	M		agree-flagged
+L05	28	95	M		agree-flagged
+L05	29	123	M	B:-	gap
+L05	30	60	M	B:-	gap
+L05	31	05	M	B:-	gap
+L05	32	7	M	B:-	gap
+L05	33	123	M	B:12	differ
+L05	34	60	M	B:360	differ
+L05	35	05	M		agree-flagged
+L05	36	73	M		agree-flagged
+L05	37	95	M		agree-flagged
+L05	38	12	M	A:-	gap
+L05	39	1271	M	B:31	differ
+L05	40	3	M	B:73	differ
+L05	41	05	M		agree-flagged
+L05	42	73	M	B:-	gap
+L05	43	73	M		agree-flagged
+L05	44	51	M	B:-	gap
+L05	45	65	M	B:-	gap
+L05	46		M	B:37	differ
+L05	47		M	B:81	differ
+L05	48		M	B:55	differ
+L05	49		M	B:60	differ
+L05	50	04	M		agree-flagged
+L05	51	19	M		agree-flagged
+L05	52	70	M		agree-flagged
+L05	53	20	M		agree-flagged
+L05	54	20	M		agree-flagged
+L05	55	30	M	B:-	gap
+L05	56	25	M	B:-	gap
+L05	57	93	M	B:-	gap
+L05	58	30	M		agree-flagged
+L05	59	25	M		agree-flagged
+L05	60	93	M	B:95	differ
+L05	61	35	M		agree-flagged
+L05	62	50	M		agree-flagged
+L05	63	25	M		agree-flagged
+L05	64	100	M		agree-flagged
+L05	65	3	M	B:03	differ
+L06	1	55	M	B:53	differ
+L06	2	37	M	B:70	differ
+L06	3	01	M		agree-flagged
+L06	4	05	M		agree-flagged
+L06	5	65	M		agree-flagged
+L06	6	40	M		agree-flagged
+L06	7	23	M		agree-flagged
+L06	8	70	M		agree-flagged
+L06	9	16	M		agree-flagged
+L06	10	73	M		agree-flagged
+L06	11	65	M		agree-flagged
+L06	12	23	M		agree-flagged
+L06	13	75	M		agree-flagged
+L06	14	93	M		agree-flagged
+L06	15	03	M		agree-flagged
+L06	16	25	M		agree-flagged
+L06	17	73	M		agree-flagged
+L06	18	30	M		agree-flagged
+L06	19	64	M		agree-flagged
+L06	20	25	M		agree-flagged
+L06	21	50	M		agree-flagged
+L06	22	50	M	B:05	differ
+L06	23	90	M		agree-flagged
+L06	24	24	M		agree-flagged
+L06	25	30	M		agree-flagged
+L06	26	75	M		agree-flagged
+L06	27	63	M		agree-flagged
+L06	28	95	M		agree-flagged
+L06	29	40	M		agree-flagged
+L06	30	75	M	B:-	gap
+L06	31	63	M	B:-	gap
+L06	32	95	M	B:-	gap
+L06	33	44	M	B:-	gap
+L06	34	99	M		agree-flagged
+L06	35	701	M	B:70	differ
+L06	36	63	M		agree-flagged
+L06	37	22	M	B:23	differ
+L06	38	05	M		agree-flagged
+L06	39	65	M		agree-flagged
+L06	40	25	M	B:-	gap
+L06	41	75	M	B:-	gap
+L06	42	23	M	B:-	gap
+L06	43	95	M	B:05	differ
+L06	44	73	M		agree-flagged
+L06	45		M	B:05	differ
+L06	46		M	B:23	differ
+L06	47	54	M	B:31	differ
+L06	48	05	M		agree-flagged
+L06	49	05	M		agree-flagged
+L06	50	23	M		agree-flagged
+L06	51	75	M	B:-	gap
+L06	52	231	M	B:-	gap
+L06	53	25	M	B:73	differ
+L06	54	25	M	B:23	differ
+L06	55	05	M		agree-flagged
+L06	56	91	M	A:-	gap
+L06	57	05	M		agree-flagged
+L06	58	93	M	B:-	gap
+L06	59	105	M	B:-	gap
+L06	60	73	M		agree-flagged
+L06	61	23	M		agree-flagged
+L06	62	65	M		agree-flagged
+L06	63	70	M		agree-flagged
+L06	64	50	M		agree-flagged
+L06	65	93	M		agree-flagged
+L07	1	50	M		agree-flagged
+L07	2	23	M		agree-flagged
+L07	3	26	M		agree-flagged
+L07	4	30	M		agree-flagged
+L07	5	25	M		agree-flagged
+L07	6	95	M		agree-flagged
+L07	7	73	M		agree-flagged
+L07	8	23	M		agree-flagged
+L07	9	93	M		agree-flagged
+L07	10	05	M	B:03	differ
+L07	11	93	M		agree-flagged
+L07	12	50	M		agree-flagged
+L07	13	75	M		agree-flagged
+L07	14	125	M	B:-	gap
+L07	15	05	M	B:-	gap
+L07	16	35	M	B:-	gap
+L07	17	07	M	B:-	gap
+L07	18	5	M	B:12	differ
+L07	19	125	M	B:50	differ
+L07	20	05	M		agree-flagged
+L07	21	93	M		agree-flagged
+L07	22	70	M		agree-flagged
+L07	23	05	M		agree-flagged
+L07	24	93	M		agree-flagged
+L07	25	125	M		agree-flagged
+L07	26	97	M	B:-	gap
+L07	27	75	M	B:977	differ
+L07	28	42	M		agree-flagged
+L07	29	13	M		agree-flagged
+L07	30	19	M		agree-flagged
+L07	31	4	M	B:40	differ
+L07	32	F	M	B:50	differ
+L07	33	5012	M	B:125	differ
+L07	34	5	M	B:05	differ
+L07	35	023	M	B:23	differ
+L07	36	03	M	B:05	differ
+L07	37	95	M	B:395	differ
+L07	38	63	M		agree-flagged
+L07	39	05	M		agree-flagged
+L07	40	73	M	B:77	differ
+L07	41	16	M		agree-flagged
+L07	42	123	M		agree-flagged
+L07	43	30	M		agree-flagged
+L07	44	25	M	B:-	gap
+L07	45	175	M	B:-	gap
+L07	46		M	B:-	gap
+L07	47		M	B:-	gap
+L07	48		M	B:-	gap
+L07	49	25	M		agree-flagged
+L07	50	80	M	B:-	gap
+L07	51	25	M	B:17	differ
+L07	52	03	M	B:05	differ
+L07	53	73	M		agree-flagged
+L07	54	5106	M	B:-	gap
+L07	55	5104	M	B:-	gap
+L07	56	69	M	B:-	gap
+L07	57	9	M	B:-	gap
+L07	58	97	M	B:-	gap
+L07	59	330	M	B:-	gap
+L07	60	25	M	B:-	gap
+L07	61	175	M	B:-	gap
+L07	62	271	M	B:-	gap
+L07	63	47	M	B:-	gap
+L07	64	20	M	B:-	gap
+L07	65	26	M	B:-	gap
+L07	66	97	M	B:02	differ
+L07	67	125	M	B:10	differ
+L07	68	0010	M	B:51	differ
+L07	69		M	B:03	differ
+L07	70	34	M	B:46	differ
+L07	71	69	M	B:99	differ
+L07	72	97	M		agree-flagged
+L07	73	23	M		agree-flagged
+L07	74	223	M		agree-flagged
+L07	75	05	M	B:03	differ
+L07	76	346	M	B:46	differ
+L08	1	05	M		agree-flagged
+L08	2	93	M		agree-flagged
+L08	3	65	M		agree-flagged
+L08	4	65	M		agree-flagged
+L08	5	23	M		agree-flagged
+L08	6	05	M	B:03	differ
+L08	7	0423	M	B:42	differ
+L08	8	93	M	B:39	differ
+L08	9	71	M	B:31	differ
+L08	10	35	M		agree-flagged
+L08	11	75	M		agree-flagged
+L08	12	05	M		agree-flagged
+L08	13	60	M		agree-flagged
+L08	14	63	M	A:-	gap
+L08	15	65	M	B:05	differ
+L08	16	75	M		agree-flagged
+L08	17	05	M		agree-flagged
+L08	18	60	M		agree-flagged
+L08	19	63	M		agree-flagged
+L08	20	73	M		agree-flagged
+L08	21	25	M		agree-flagged
+L08	22	73	M		agree-flagged
+L08	23	95	M		agree-flagged
+L08	24	25	M		agree-flagged
+L08	25	70	M		agree-flagged
+L08	26	25	M		agree-flagged
+L08	27	05	M		agree-flagged
+L08	28	30	M		agree-flagged
+L08	29	46	M		agree-flagged
+L08	30	3	M	B:-	gap
+L08	31	05	M	B:-	gap
+L08	32	73	M	B:-	gap
+L08	33	05	M	B:-	gap
+L08	34	63	M		agree-flagged
+L08	35	05	M		agree-flagged
+L08	36	73	M		agree-flagged
+L08	37	05	M		agree-flagged
+L08	38	93	M		agree-flagged
+L08	39	50	M		agree-flagged
+L08	40	25	M		agree-flagged
+L08	41	20	M		agree-flagged
+L08	42	05	M		agree-flagged
+L08	43	1	M	A:-	gap
+L08	44	16	M	B:65	differ
+L08	45	5273	M	B:23	differ
+L08	46	65	M		agree-flagged
+L08	47	24	M		agree-flagged
+L08	48	20	M		agree-flagged
+L08	49	25	M		agree-flagged
+L08	50	65	M	A:-	gap
+L08	51	125	M	A:-	gap
+L08	52	65	M		agree-flagged
+L08	53	125	M		agree-flagged
+L08	54	67	M	B:77	differ
+L08	55	73	M		agree-flagged
+L08	56	75	M		agree-flagged
+L08	57	122	M		agree-flagged
+L08	58	40	M	A:-	gap
+L08	59	4	M	B:73	differ
+L08	60	05	M		agree-flagged
+L08	61	73	M		agree-flagged
+L08	62	05	M		agree-flagged
+L08	63	103	M	B:93	differ
+L08	64	95	M	B:05	differ
+L08	65	03	M		agree-flagged
+L08	66	0023	M	B:-	gap
+L09	1	93	M		agree-flagged
+L09	2	30	M		agree-flagged
+L09	3	23	M		agree-flagged
+L09	4	125	M		agree-flagged
+L09	5	75	M		agree-flagged
+L09	6	23	M		agree-flagged
+L09	7	50	M		agree-flagged
+L09	8	23	M		agree-flagged
+L09	9	93	M		agree-flagged
+L09	10	23	M		agree-flagged
+L09	11	73	M		agree-flagged
+L09	12	23	M		agree-flagged
+L09	13	60	M		agree-flagged
+L09	14	23	M		agree-flagged
+L09	15	773	M	B:77	differ
+L09	16	95	M	B:93	differ
+L09	17	16	M		agree-flagged
+L09	18	35	M		agree-flagged
+L09	19	26	M		agree-flagged
+L09	20	46	M		agree-flagged
+L09	21	50	M		agree-flagged
+L09	22	T	M	B:-	gap
+L09	23	25	M		agree-flagged
+L09	24	70	M		agree-flagged
+L09	25	105	M	B:05	differ
+L09	26	95	M		agree-flagged
+L09	27	23	M		agree-flagged
+L09	28	05	M		agree-flagged
+L09	29	95	M		agree-flagged
+L09	30	23	M		agree-flagged
+L09	31	03	M		agree-flagged
+L09	32	95	M		agree-flagged
+L09	33	27	M		agree-flagged
+L09	34	16	M		agree-flagged
+L09	35	70	M		agree-flagged
+L09	36	123	M		agree-flagged
+L09	37	773	M		agree-flagged
+L09	38	75	M		agree-flagged
+L09	39	12	M		agree-flagged
+L09	40	4	M		agree-flagged
+L09	41	40	M	B:05	differ
+L09	42	16	M		agree-flagged
+L09	43	65	M		agree-flagged
+L09	44	05	M		agree-flagged
+L09	45	25	M		agree-flagged
+L09	46	60	M		agree-flagged
+L09	47	10	M		agree-flagged
+L09	48	25	M		agree-flagged
+L09	49	95	M		agree-flagged
+L09	50	122	M	B:-	gap
+L09	51	7	M	B:12	differ
+L09	52	T	M	B:77	differ
+L09	53	95	M	B:75	differ
+L09	54	7503	M	B:03	differ
+L09	55	23	M		agree-flagged
+L09	56	73	M		agree-flagged
+L09	57	23	M		agree-flagged
+L09	58	14	M	A:-	gap
+L09	59	1447	M	B:47	differ
+L09	60	50	M		agree-flagged
+L09	61	03	M		agree-flagged
+L10	1	70	M		agree-flagged
+L10	2	23	M		agree-flagged
+L10	3	65	M		agree-flagged
+L10	4	40	M		agree-flagged
+L10	5	23	M	A:-	gap
+L10	6	231	M	B:1	differ
+L10	7	19	M		agree-flagged
+L10	8	42	M		agree-flagged
+L10	9	T	M	B:-	gap
+L10	10	23	M		agree-flagged
+L10	11	93	M		agree-flagged
+L10	12	23	M		agree-flagged
+L10	13	73	M		agree-flagged
+L10	14	65	M		agree-flagged
+L10	15	12	M	A:-	gap
+L10	16	125	M	B:5	differ
+L10	17	T	M	B:5	differ
+L10	18	51	M	B:1	differ
+L10	19	25	M		agree-flagged
+L10	20	75	M		agree-flagged
+L10	21	05	M		agree-flagged
+L10	22	7	M	B:-	gap
+L10	23	05	M	B:73	differ
+L10	24	23	M		agree-flagged
+L10	25	60	M		agree-flagged
+L10	26	10	M		agree-flagged
+L10	27	50	M		agree-flagged
+L10	28	23	M		agree-flagged
+L10	29	73	M		agree-flagged
+L10	30	95	M		agree-flagged
+L10	31	60	M		agree-flagged
+L10	32	02	M	B:25	differ
+L10	33	550	M	B:50	differ
+L10	34	65	M		agree-flagged
+L10	35	05	M		agree-flagged
+L10	36	73	M		agree-flagged
+L10	37	75	M		agree-flagged
+L10	38	93	M		agree-flagged
+L10	39	63	M		agree-flagged
+L10	40	95	M		agree-flagged
+L10	41	243	M	B:-	gap
+L10	42	19	M	B:-	gap
+L10	43	25	M	B:23	differ
+L10	44	9	M	B:03	differ
+L10	45	19	M		agree-flagged
+L10	46	25	M		agree-flagged
+L10	47	93	M		agree-flagged
+L10	48	23	M		agree-flagged
+L10	49	65	M		agree-flagged
+L10	50	70	M		agree-flagged
+L10	51	23	M		agree-flagged
+L10	52	93	M		agree-flagged
+L10	53	16	M		agree-flagged
+L10	54	65	M		agree-flagged
+L10	55	05	M		agree-flagged
+L10	56	73	M		agree-flagged
+L10	57	05	M	B:03	differ
+L10	58	23	M		agree-flagged
+L10	59	65	M		agree-flagged
+L10	60	05	M	B:-	gap
+L10	61	95	M	B:-	gap
+L10	62	125	M	B:-	gap
+L10	63	95	M		agree-flagged
+L10	64	05	M	B:42	differ
+L10	65	05	M	B:59	differ
+L10	66	23	M		agree-flagged
+L10	67	65	M	A:-	gap
+L10	68	60	M	B:05	differ
+L10	69	95	M		agree-flagged
+L10	70	23	M		agree-flagged
+L10	71	50	M		agree-flagged
+L10	72	4	M		agree-flagged
+L11	1	95	M		agree-flagged
+L11	2	23	M		agree-flagged
+L11	3	50	M		agree-flagged
+L11	4	63	M		agree-flagged
+L11	5	70	M	B:30	differ
+L11	6	23	M		agree-flagged
+L11	7	73	M		agree-flagged
+L11	8	65	M		agree-flagged
+L11	9	23	M		agree-flagged
+L11	10	19	M		agree-flagged
+L11	11	'47	M	B:47	differ
+L11	12	50	M		agree-flagged
+L11	13	50	M		agree-flagged
+L11	14	23	M		agree-flagged
+L11	15	63	M		agree-flagged
+L11	16	50	M	B:-	gap
+L11	17	25	M	B:05	differ
+L11	18	73	M	B:12	differ
+L11	19	05	M	B:30	differ
+L11	20	42	M		agree-flagged
+L11	21	1	M	B:-	gap
+L11	22	73	M		agree-flagged
+L11	23	95	M	B:05	differ
+L11	24	700	M	B:70	differ
+L11	25	05	M		agree-flagged
+L11	26	03	M	A:-	gap
+L11	27	304	M	B:04	differ
+L11	28	2	M		agree-flagged
+L11	29	50	M	A:-	gap
+L11	30	50	M		agree-flagged
+L11	31	25	M	B:23	differ
+L11	32	63	M		agree-flagged
+L11	33	05	M		agree-flagged
+L11	34	4	M	B:-	gap
+L11	35	27	M	B:42	differ
+L11	36	73	M	B:7739	differ
+L11	37	95	M	B:05	differ
+L11	38	70	M		agree-flagged
+L11	39	05	M		agree-flagged
+L11	40	19	M	B:14	differ
+L11	41	05	M		agree-flagged
+L11	42	231	M		agree-flagged
+L11	43	25	M		agree-flagged
+L11	44	75	M		agree-flagged
+L11	45	23	M	B:05	differ
+L11	46	700	M	B:70	differ
+L11	47	05	M		agree-flagged
+L11	48	4	M	A:-	gap
+L11	49	304	M	B:23	differ
+L11	50	2	M	B:75	differ
+L11	51	375	M	B:23	differ
+L11	52	231	M	B:1	differ
+L11	53	25	M		agree-flagged
+L11	54	70	M		agree-flagged
+L11	55	231	M		agree-flagged
+L11	56	05	M		agree-flagged
+L11	57	05	M		agree-flagged
+L11	58	77	M	A:-	gap
+L11	59	32	M	A:-	gap
+L11	60	7323	M	B:3	differ
+L11	61	47	M		agree-flagged
+L11	62	73	M		agree-flagged
+L11	63	05	M		agree-flagged
+L11	64	73	M		agree-flagged
+L11	65	95	M		agree-flagged
+L11	66	50	M		agree-flagged
+L11	67	25	M		agree-flagged
+L11	68	20	M	A:-	gap
+L11	69	2020	M	B:20	differ
+L11	70	23	M		agree-flagged
+L11	71	65	M		agree-flagged
+L11	72	95	M		agree-flagged
+L11	73	63	M		agree-flagged
+L11	74	05	M		agree-flagged
+L11	75	73	M		agree-flagged
+L11	76	95	M		agree-flagged
+L11	77	63	M		agree-flagged
+L11	78	05	M		agree-flagged
+L11	79	73	M		agree-flagged
+L11	80	28	M		agree-flagged
+L11	81	95	M		agree-flagged
+L11	82	65	M		agree-flagged
+L11	83	7	M	B:-	gap
+L12	1	55	M		agree-flagged
+L12	2	73	M		agree-flagged
+L12	3	05	M		agree-flagged
+L12	4	23	M		agree-flagged
+L12	5	63	M	B:65	differ
+L12	6	50	M		agree-flagged
+L12	7	05	M		agree-flagged
+L12	8	3	M	B:-	gap
+L12	9	24	M		agree-flagged
+L12	10	77	M	A:-	gap
+L12	11	7327	M	B:27	differ
+L12	12	20	M		agree-flagged
+L12	13	25	M		agree-flagged
+L12	14	65	M		agree-flagged
+L12	15	05	M	B:75	differ
+L12	16	2	M	B:20	differ
+L12	17	05	M	B:25	differ
+L12	18	65	M		agree-flagged
+L12	19	05	M	B:-	gap
+L12	20	3	M	B:75	differ
+L12	21	05	M		agree-flagged
+L12	22	65	M		agree-flagged
+L12	23	93	M	B:95	differ
+L12	24	27	M		agree-flagged
+L12	25	05	M		agree-flagged
+L12	26	30	M	B:-	gap
+L12	27	25	M		agree-flagged
+L12	28	05	M	B:95	differ
+L12	29	i	M	B:16	differ
+L12	30	65	M	B:77	differ
+L12	31		M	B:05	differ
+L12	32	230	M	B:25	differ
+L12	33	30	M		agree-flagged
+L12	34	1010	M	B:05	differ
+L12	35	30	M	B:04	differ
+L12	36	46	M	B:63	differ
+L12	37	30	M	B:05	differ
+L12	38	773	M		agree-flagged
+L12	39	05	M		agree-flagged
+L12	40	347	M		agree-flagged
+L12	41	65	M		agree-flagged
+L12	42	25	M		agree-flagged
+L12	43	93	M		agree-flagged
+L12	44	67	M		agree-flagged
+L12	45	95	M	A:-	gap
+L12	46	93	M	B:05	differ
+L12	47	55	M	B:65	differ
+L12	48	67	M	B:77	differ
+L12	49	23	M	B:31	differ
+L12	50	47	M		agree-flagged
+L12	51	65	M		agree-flagged
+L12	52	25	M		agree-flagged
+L12	53	93	M		agree-flagged
+L12	54	05	M		agree-flagged
+L12	55	3	M	B:-	gap
+L12	56	23	M		agree-flagged
+L12	57	973	M	B:-	gap
+L12	58	9	M	B:95	differ
+L12	59	i	M	B:ib	differ
+L12	60	65	M		agree-flagged
+L12	61	03	M	B:05	differ
+L12	62	46	M		agree-flagged
+L12	63	373	M	B:73	differ
+L12	64	65	M		agree-flagged
+L12	65	03	M	B:05	differ
+L12	66	93	M		agree-flagged
+L12	67	3	M	B:-	gap
+L12	68	65	M	B:-	gap
+L12	69	05	M		agree-flagged
+L12	70	03	M	B:65	differ
+L12	71	93	M		agree-flagged
+L12	72	123	M	B:12	differ
+L12	73	05	M	B:3	differ
+L12	74	65	M		agree-flagged
+L13	1	23	M		agree-flagged
+L13	2	19	M		agree-flagged
+L13	3	23	M	A:-	gap
+L13	4	237	M	B:73	differ
+L13	5	365	M	B:65	differ
+L13	6	05	M		agree-flagged
+L13	7	123	M		agree-flagged
+L13	8	05	M		agree-flagged
+L13	9	65	M		agree-flagged
+L13	10	27	M	B:23	differ
+L13	11	50	M		agree-flagged
+L13	12	93	M		agree-flagged
+L13	13	90	M		agree-flagged
+L13	14	4	M		agree-flagged
+L13	15	05	M		agree-flagged
+L13	16	23	M	A:-	gap
+L13	17	237	M	B:73	differ
+L13	18	393	M	B:93	differ
+L13	19	05	M		agree-flagged
+L13	20	90	M		agree-flagged
+L13	21	22	M		agree-flagged
+L13	22	20	M		agree-flagged
+L13	23	09	M		agree-flagged
+L13	24	773	M	B:77	differ
+L13	25	07	M	B:30	differ
+L13	26	73	M	B:77	differ
+L13	27	05	M		agree-flagged
+L13	28	65	M		agree-flagged
+L13	29	65	M		agree-flagged
+L13	30	05	M	B:-	gap
+L13	31	773	M	B:-	gap
+L13	32	05	M	B:09	differ
+L13	33	65	M	B:5	differ
+L13	34	65	M	B:31	differ
+L13	35	13	M	B:93	differ
+L13	36		M	B:23	differ
+L13	37	31	M	B:10	differ
+L13	38	03	M	B:35	differ
+L13	39	50	M	B:02	differ
+L13	40	23	M	B:3	differ
+L13	41	26	M		agree-flagged
+L13	42	30	M		agree-flagged
+L13	43	25	M		agree-flagged
+L13	44	95	M		agree-flagged
+L13	45	52	M		agree-flagged
+L13	46	22	M		agree-flagged
+L13	47	75	M		agree-flagged
+L13	48	50	M		agree-flagged
+L13	49	23	M		agree-flagged
+L13	50	73	M		agree-flagged
+L13	51	23	M		agree-flagged
+L13	52	93	M		agree-flagged
+L13	53	05	M		agree-flagged
+L13	54	30	M		agree-flagged
+L13	55	42	M	A:-	gap
+L13	56	423	M	B:3	differ
+L13	57	65	M		agree-flagged
+L13	58	73	M		agree-flagged
+L13	59	95	M		agree-flagged
+L13	60	2	M	A:-	gap
+L13	61	23	M	B:3	differ
+L13	62	65	M		agree-flagged
+L13	63	373	M	B:73	differ
+L13	64	95	M		agree-flagged
+L13	65	23	M		agree-flagged
+L13	66	17	M	A:-	gap
+L13	67	170	M	B:05	differ
+L13	68	23	M		agree-flagged
+L13	69	5	M		agree-flagged
+L14	1	93	M		agree-flagged
+L14	2	46	M		agree-flagged
+L14	3	50	M		agree-flagged
+L14	4	24	M		agree-flagged
+L14	5	73	M		agree-flagged
+L14	6	23	M		agree-flagged
+L14	7	50	M		agree-flagged
+L14	8	70	M		agree-flagged
+L14	9	23	M		agree-flagged
+L14	10	93	M		agree-flagged
+L14	11	50	M		agree-flagged
+L14	12	95	M	B:-	gap
+L14	13	05	M	B:-	gap
+L14	14	93	M	B:-	gap
+L14	15	94	M	B:-	gap
+L14	16	16	M	B:-	gap
+L14	17	95	M		agree-flagged
+L14	18	05	M		agree-flagged
+L14	19	93	M		agree-flagged
+L14	20	94	M		agree-flagged
+L14	21	16	M		agree-flagged
+L14	22	31	M		agree-flagged
+L14	23	42	M		agree-flagged
+L14	24	05	M		agree-flagged
+L14	25	73	M		agree-flagged
+L14	26	419	M		agree-flagged
+L14	27	95	M	B:-	gap
+L14	28	65	M	B:05	differ
+L14	29	65	M		agree-flagged
+L14	30	97	M		agree-flagged
+L14	31	50	M		agree-flagged
+L14	32	65	M	A:-	gap
+L14	33	67	M	B:223	differ
+L14	34	22	M	B:15	differ
+L14	35	7152	M	B:2	differ
+L14	36	25	M		agree-flagged
+L14	37	05	M	A:-	gap
+L14	38	05	M	A:-	gap
+L14	39	05	M		agree-flagged
+L14	40	05	M		agree-flagged
+L14	41	95	M		agree-flagged
+L14	42	65	M		agree-flagged
+L14	43	05	M		agree-flagged
+L14	44	73	M		agree-flagged
+L14	45	05	M		agree-flagged
+L14	46	323	M		agree-flagged
+L14	47	65	M		agree-flagged
+L14	48	05	M		agree-flagged
+L14	49	023	M		agree-flagged
+L14	50	50	M	B:-	gap
+L14	51	67	M	B:-	gap
+L14	52	22	M	B:-	gap
+L14	53	7152	M	B:-	gap
+L14	54	225	M	B:-	gap
+L14	55	05	M	B:-	gap
+L14	56	7	M	B:-	gap
+L14	57	7	M	B:-	gap
+L14	58	05	M	B:-	gap
+L14	59	i	M	B:-	gap
+L14	60	32	M	B:-	gap
+L14	61	3	M	B:-	gap
+L14	62	65	M		agree-flagged
+L14	63	05	M		agree-flagged
+L14	64	023	M	B:231	differ
+L14	65	105	M	B:05	differ
+L14	66	05	M		agree-flagged
+L14	67	93	M		agree-flagged
+L14	68	10	M		agree-flagged
+L14	69	05	M		agree-flagged
+L14	70	05	M		agree-flagged
+L14	71	73	M		agree-flagged
+L14	72	23	M	A:-	gap
+L14	73	16	M	A:-	gap
+L14	74	40	M	A:-	gap
+L14	75	23	M		agree-flagged
+L14	76	122	M	A:-	gap
+L14	77	i6	M	B:30	differ
+L14	78	40	M		agree-flagged
+L14	79	23	M		agree-flagged
+L14	80	1223	M	B:122	differ
+L14	81	05	M	B:30	differ
+L14	82	65	M		agree-flagged
+L14	83	23	M		agree-flagged
+L14	84	2	M		agree-flagged
+L15	1	65	M		agree-flagged
+L15	2	50	M		agree-flagged
+L15	3	05	M		agree-flagged
+L15	4	95	M		agree-flagged
+L15	5	73	M		agree-flagged
+L15	6	25	M		agree-flagged
+L15	7	11	M		agree-flagged
+L15	8	50	M		agree-flagged
+L15	9	95	M		agree-flagged
+L15	10	123	M		agree-flagged
+L15	11	10	M		agree-flagged
+L15	12	93	M		agree-flagged
+L15	13	95	M		agree-flagged
+L15	14	'46	M	B:46	differ
+L15	15	16	M		agree-flagged
+L15	16	10	M		agree-flagged
+L15	17	93	M		agree-flagged
+L15	18	95	M		agree-flagged
+L15	19	'46	M	B:46	differ
+L15	20	16	M		agree-flagged
+L15	21	20	M		agree-flagged
+L15	22	25	M		agree-flagged
+L15	23	93	M		agree-flagged
+L15	24	05	M		agree-flagged
+L15	25	163	M	B:16	differ
+L15	26	03	M	B:305	differ
+L15	27	231	M		agree-flagged
+L15	28	272	M	B:27	differ
+L15	29	5	M	B:25	differ
+L15	30	75	M		agree-flagged
+L15	31	05	M	B:-	gap
+L15	32	i6	M	B:-	gap
+L15	33	1	M	B:-	gap
+L15	34	05	M	B:-	gap
+L15	35		M	B:-	gap
+L15	36	795	M	B:-	gap
+L15	37	40	M	B:-	gap
+L15	38	50	M	B:-	gap
+L15	39	10	M	B:-	gap
+L15	40	5	M	B:-	gap
+L15	41	03	M	B:-	gap
+L15	42	95	M	B:-	gap
+L15	43	35	M	B:-	gap
+L15	44	65	M	B:-	gap
+L15	45	23	M	B:-	gap
+L15	46	05	M		agree-flagged
+L15	47	i6	M	B:16	differ
+L15	48	1	M		agree-flagged
+L15	49	05	M		agree-flagged
+L15	50	907	M		agree-flagged
+L15	51	5	M	B:05	differ
+L15	52	11	M		agree-flagged
+L15	53	05	M		agree-flagged
+L15	54	95	M		agree-flagged
+L15	55	35	M		agree-flagged
+L15	56	65	M		agree-flagged
+L15	57	23	M		agree-flagged
+L15	58	05	M		agree-flagged
+L15	59	42	M	B:-	gap
+L15	60	5	M	B:042	differ
+L15	61	63	M	B:56	differ
+L15	62	123	M	B:3123	differ
+L15	63	05	M		agree-flagged
+L15	64	25	M		agree-flagged
+L15	65	65	M		agree-flagged
+L15	66	25	M		agree-flagged
+L15	67	73	M		agree-flagged
+L15	68	95	M		agree-flagged
+L15	69	'46	M	B:-	gap
+L15	70	50	M	B:-	gap
+L15	71	02	M	B:-	gap
+L15	72	39	M	B:-	gap
+L15	73	'46	M	B:46	differ
+L15	74	50	M		agree-flagged
+L15	75	23	M		agree-flagged
+L15	76	25	M		agree-flagged
+L15	77	63	M	B:65	differ
+L15	78	95	M		agree-flagged
+L16	1	73	M		agree-flagged
+L16	2	23	M		agree-flagged
+L16	3	50	M		agree-flagged
+L16	4	25	M		agree-flagged
+L16	5	20	M		agree-flagged
+L16	6	25	M		agree-flagged
+L16	7	63	M	B:-	gap
+L16	8	95	M	B:-	gap
+L16	9	52	M	B:65	differ
+L16	10	73	M	B:93	differ
+L16	11	05	M		agree-flagged
+L16	12	27	M	A:-	gap
+L16	13	73	M		agree-flagged
+L16	14	42	M	B:-	gap
+L16	15	05	M		agree-flagged
+L16	16	03	M	B:-	gap
+L16	17	9	M	B:-	gap
+L16	18	73	M		agree-flagged
+L16	19	42	M		agree-flagged
+L16	20	05	M		agree-flagged
+L16	21	03	M		agree-flagged
+L16	22	95	M		agree-flagged
+L16	23	231	M	B:123	differ
+L16	24	95	M	B:195	differ
+L16	25	05	M		agree-flagged
+L16	26	93	M		agree-flagged
+L16	27	95	M		agree-flagged
+L16	28	05	M		agree-flagged
+L16	29	3	M	B:73	differ
+L16	30	05	M		agree-flagged
+L16	31	93	M		agree-flagged
+L16	32	70	M		agree-flagged
+L16	33	05	M		agree-flagged
+L16	34	73	M	A:-	gap
+L16	35	3	M	B:225	differ
+L16	36	05	M		agree-flagged
+L16	37	7322	M	B:-	gap
+L16	38	5	M	B:73	differ
+L16	39	9	M	B:2	differ
+L16	40	0394	M	B:95	differ
+L16	41	05	M	B:43	differ
+L16	42	i6	M	B:50	differ
+L16	43	3	M	B:70	differ
+L16	44	05	M		agree-flagged
+L16	45	7322	M	B:-	gap
+L16	46	5	M	B:-	gap
+L16	47	03	M	B:-	gap
+L16	48	94	M	B:9394	differ
+L16	49	05	M		agree-flagged
+L16	50	i	M	B:-	gap
+L16	51	3	M	B:32	differ
+L16	52	2373	M	B:373	differ
+L16	53	95	M		agree-flagged
+L16	54	i6	M	B:16	differ
+L16	55	70	M		agree-flagged
+L16	56	93	M		agree-flagged
+L16	57	95	M		agree-flagged
+L16	58	231	M		agree-flagged
+L16	59	19	M		agree-flagged
+L16	60	73	M		agree-flagged
+L16	61	23	M		agree-flagged
+L16	62	03	M	B:05	differ
+L16	63	65	M		agree-flagged
+L16	64	25	M		agree-flagged
+L16	65	90	M		agree-flagged
+L16	66	42	M		agree-flagged
+L16	67	09	M	B:-	gap
+L17	1	23	M		agree-flagged
+L17	2	773	M	B:73	differ
+L17	3	65	M		agree-flagged
+L17	4	05	M		agree-flagged
+L17	5	15	M		agree-flagged
+L17	6	75	M		agree-flagged
+L17	7	93	M		agree-flagged
+L17	8	46	M		agree-flagged
+L17	9	50	M		agree-flagged
+L17	10	26	M		agree-flagged
+L17	11	16	M		agree-flagged
+L17	12	05	M		agree-flagged
+L17	13	3	M	B:73	differ
+L17	14	63	M		agree-flagged
+L17	15	120	M	B:-	gap
+L17	16	4	M	B:12	differ
+L17	17	0	M	B:20	differ
+L17	18	7	M	B:40	differ
+L17	19	422	M	B:42	differ
+L17	20	54	M	B:25	differ
+L17	21	1	M	B:41	differ
+L17	22	93	M		agree-flagged
+L17	23	23	M		agree-flagged
+L17	24	73	M		agree-flagged
+L17	25	63	M		agree-flagged
+L17	26	12	M		agree-flagged
+L17	27	5	M	B:-	gap
+L17	28	273	M	B:-	gap
+L17	29	0	M	B:52	differ
+L17	30		M	B:27	differ
+L17	31	25	M		agree-flagged
+L17	32	739	M	B:73	differ
+L17	33	54	M	B:95	differ
+L17	34	6	M	B:46	differ
+L17	35	99	M		agree-flagged
+L17	36	73	M		agree-flagged
+L17	37	05	M		agree-flagged
+L17	38	93	M		agree-flagged
+L17	39	10	M		agree-flagged
+L17	40	50	M		agree-flagged
+L17	41	63	M		agree-flagged
+L17	42	123	M		agree-flagged
+L17	43	05	M		agree-flagged
+L17	44	3	M	B:-	gap
+L17	45	97	M		agree-flagged
+L17	46	16	M		agree-flagged
+L17	47	14	M		agree-flagged
+L17	48	'47	M	B:47	differ
+L17	49	95	M		agree-flagged
+L17	50	05	M		agree-flagged
+L17	51	0	M	B:-	gap
+L17	52	5	M	B:05	differ
+L17	53	93	M		agree-flagged
+L17	54	65	M		agree-flagged
+L17	55	40	M		agree-flagged
+L17	56	3	M	B:-	gap
+L18	1	93	M		agree-flagged
+L18	2	037	M	B:05	differ
+L18	3	327	M		agree-flagged
+L18	4	64	M		agree-flagged
+L18	5	65	M		agree-flagged
+L18	6	24	M		agree-flagged
+L18	7	20	M		agree-flagged
+L18	8	95	M		agree-flagged
+L18	9	123	M		agree-flagged
+L18	10	03	M	B:05	differ
+L18	11	73	M		agree-flagged
+L18	12	23	M		agree-flagged
+L18	13	65	M		agree-flagged
+L18	14	23	M		agree-flagged
+L18	15	03	M	B:05	differ
+L18	16	424	M	B:42	differ
+L18	17	25	M	B:05	differ
+L18	18	63	M		agree-flagged
+L18	19	123	M		agree-flagged
+L18	20	'46	M	B:46	differ
+L18	21	20	M		agree-flagged
+L18	22	25	M		agree-flagged
+L18	23	63	M		agree-flagged
+L18	24	05	M	A:-	gap
+L18	25	752	M	B:72	differ
+L18	26	73	M	B:573	differ
+L18	27	05	M		agree-flagged
+L18	28	1	M		agree-flagged
+L18	29	4	M	B:-	gap
+L18	30	05	M		agree-flagged
+L18	31	90	M		agree-flagged
+L18	32	10	M		agree-flagged
+L18	33	75	M		agree-flagged
+L18	34	23	M		agree-flagged
+L18	35	60	M		agree-flagged
+L18	36	23	M		agree-flagged
+L18	37	93	M		agree-flagged
+L18	38	123	M	B:12	differ
+L18	39	1	M	B:31	differ
+L18	40	25	M		agree-flagged
+L18	41	93	M		agree-flagged
+L18	42	23	M		agree-flagged
+L18	43	65	M	B:-	gap
+L18	44	50	M	B:-	gap
+L18	45	9	M	B:-	gap
+L18	46	773	M	B:-	gap
+L18	47	05	M		agree-flagged
+L18	48	i	M	B:50	differ
+L18	49	93	M		agree-flagged
+L18	50	23	M		agree-flagged
+L18	51	65	M	B:05	differ
+L18	52	50	M		agree-flagged
+L18	53	93	M		agree-flagged
+L18	54	90	M		agree-flagged
+L18	55	'46	M	B:46	differ
+L18	56	26	M		agree-flagged
+L18	57	50	M		agree-flagged
+L18	58	23	M		agree-flagged
+L18	59	30	M		agree-flagged
+L18	60	25	M		agree-flagged
+L18	61	95	M		agree-flagged
+L18	62	123	M		agree-flagged
+L18	63	93	M		agree-flagged
+L18	64	73	M		agree-flagged
+L18	65	63	M		agree-flagged
+L18	66	05	M		agree-flagged
+L18	67	3	M	B:-	gap
+L18	68	93	M		agree-flagged
+L18	69	73	M		agree-flagged
+L18	70	63	M		agree-flagged
+L18	71	05	M		agree-flagged
+L18	72	3	M	B:-	gap
+L18	73	04	M	B:42	differ
+L18	74	22	M	B:23	differ
+L18	75	95	M	B:05	differ
+L19	1	40	M		agree-flagged
+L19	2	25	M		agree-flagged
+L19	3	10	M		agree-flagged
+L19	4	63	M		agree-flagged
+L19	5	50	M		agree-flagged
+L19	6	23	M		agree-flagged
+L19	7	25	M		agree-flagged
+L19	8	05	M		agree-flagged
+L19	9	3	M	B:-	gap
+L19	10	93	M		agree-flagged
+L19	11	65	M		agree-flagged
+L19	12	65	M		agree-flagged
+L19	13	23	M		agree-flagged
+L19	14	75	M		agree-flagged
+L19	15	123	M	B:-	gap
+L19	16	16	M	B:-	gap
+L19	17	5	M	B:-	gap
+L19	18	23	M		agree-flagged
+L19	19	75	M	B:-	gap
+L19	20	123	M	B:-	gap
+L19	21	16	M	B:-	gap
+L19	22	63	M	B:71	differ
+L19	23	65	M		agree-flagged
+L19	24	05	M	A:-	gap
+L19	25	25	M		agree-flagged
+L19	26	95	M		agree-flagged
+L19	27	40	M		agree-flagged
+L19	28	05	M		agree-flagged
+L19	29	50	M		agree-flagged
+L19	30	63	M		agree-flagged
+L19	31	4	M		agree-flagged
+L19	32	60	M		agree-flagged
+L19	33	7	M	B:-	gap
+L19	34	4	M	B:4722	differ
+L19	35	7	M	B:05	differ
+L19	36	23	M	B:95	differ
+L19	37	1	M	B:231	differ
+L19	38	23	M		agree-flagged
+L19	39	93	M		agree-flagged
+L19	40	73	M		agree-flagged
+L19	41	63	M		agree-flagged
+L19	42	05	M		agree-flagged
+L19	43	73	M		agree-flagged
+L19	44	24	M		agree-flagged
+L19	45	123	M		agree-flagged
+L19	46	65	M		agree-flagged
+L19	47	05	M		agree-flagged
+L19	48	30	M		agree-flagged
+L19	49	123	M		agree-flagged
+L19	50	65	M		agree-flagged
+L19	51	05	M		agree-flagged
+L19	52	30	M		agree-flagged
+L19	53	73	M		agree-flagged
+L19	54	05	M		agree-flagged
+L19	55	63	M		agree-flagged
+L19	56	05	M		agree-flagged
+L19	57	4	M	B:42	differ
+L19	58	23	M	B:3	differ
+L19	59	65	M		agree-flagged
+L19	60	23	M		agree-flagged
+L19	61	50	M		agree-flagged
+L19	62	93	M		agree-flagged
+L19	63	90	M		agree-flagged
+L19	64	'47	M	B:47	differ
+L19	65	20	M		agree-flagged
+L19	66	70	M		agree-flagged
+L19	67	50	M		agree-flagged
+L19	68	93	M		agree-flagged
+L20	1	24	M		agree-flagged
+L20	2	05	M		agree-flagged
+L20	3	39	M	A:-	gap
+L20	4	95	M	B:5	differ
+L20	5	123	M		agree-flagged
+L20	6	60	M		agree-flagged
+L20	7	63	M		agree-flagged
+L20	8	05	M		agree-flagged
+L20	9	3	M		agree-flagged
+L20	10	2373	M		agree-flagged
+L20	11	50	M		agree-flagged
+L20	12	63	M		agree-flagged
+L20	13	10	M		agree-flagged
+L20	14	23	M		agree-flagged
+L20	15	19	M		agree-flagged
+L20	16	5	M	B:5234	differ
+L20	17	23	M		agree-flagged
+L20	18	42	M	B:-	gap
+L20	19	30	M	B:-	gap
+L20	20	05	M	B:00	differ
+L20	21	25	M		agree-flagged
+L20	22	93	M		agree-flagged
+L20	23	9	M		agree-flagged
+L20	24	42	M	B:-	gap
+L20	25	3	M	B:423	differ
+L20	26	17	M		agree-flagged
+L20	27	73	M		agree-flagged
+L20	28	231	M		agree-flagged
+L20	29	19	M		agree-flagged
+L20	30	25	M		agree-flagged
+L20	31	75	M		agree-flagged
+L20	32	60	M		agree-flagged
+L20	33	65	M	B:63	differ
+L20	34	777	M		agree-flagged
+L20	35	65	M	B:05	differ
+L20	36	95	M	B:73	differ
+L20	37	14	M		agree-flagged
+L20	38	23	M		agree-flagged
+L20	39	95	M		agree-flagged
+L20	40	26	M		agree-flagged
+L20	41	20	M		agree-flagged
+L20	42	25	M		agree-flagged
+L20	43	05	M		agree-flagged
+L20	44	3237	M	B:327	differ
+L20	45	5	M	B:375	differ
+L20	46	23	M		agree-flagged
+L20	47	65	M		agree-flagged
+L20	48	50	M		agree-flagged
+L20	49	25	M		agree-flagged
+L20	50	123	M		agree-flagged
+L20	51	17	M		agree-flagged
+L20	52	T	M	A:-	gap
+L20	53	23	M		agree-flagged
+L20	54	95	M		agree-flagged
+L20	55	63	M		agree-flagged
+L20	56	93	M		agree-flagged
+L20	57	05	M		agree-flagged
+L20	58	3	M	B:-	gap
+L20	59	46	M		agree-flagged
+L20	60	05	M		agree-flagged
+L20	61	3	M	B:-	gap
+L20	62	25	M		agree-flagged
+L20	63	14	M		agree-flagged
+L20	64	'47	M	B:40	differ
+L20	65	70	M		agree-flagged
+L20	66	93	M		agree-flagged
+L20	67	63	M		agree-flagged
+L20	68	05	M		agree-flagged
+L20	69	72	M	B:2	differ
+L21	1	95	M		agree-flagged
+L21	2	73	M		agree-flagged
+L21	3	23	M		agree-flagged
+L21	4	70	M		agree-flagged
+L21	5	23	M	B:231	differ
+L21	6	160	M	B:60	differ
+L21	7	23	M		agree-flagged
+L21	8	95	M		agree-flagged
+L21	9	123	M		agree-flagged
+L21	10	46	M		agree-flagged
+L21	11	50	M		agree-flagged
+L21	12	25	M		agree-flagged
+L21	13	65	M		agree-flagged
+L21	14	05	M		agree-flagged
+L21	15	93	M		agree-flagged
+L21	16	05	M	A:-	gap
+L21	17	05	M	A:-	gap
+L21	18	15	M	A:-	gap
+L21	19	25	M	A:-	gap
+L21	20	05	M	A:-	gap
+L21	21	05	M	A:-	gap
+L21	22	111	M	A:-	gap
+L21	23	65	M	A:-	gap
+L21	24	40	M	A:-	gap
+L21	25	05	M	A:-	gap
+L21	26	05	M	A:-	gap
+L21	27	123	M	A:-	gap
+L21	28	4	M	A:-	gap
+L21	29	93	M	B:05	differ
+L21	30	25	M		agree-flagged
+L21	31	65	M		agree-flagged
+L21	32	05	M		agree-flagged
+L21	33	93	M		agree-flagged
+L21	34	1	M	B:31	differ
+L21	35	05	M		agree-flagged
+L21	36	7323	M	B:77	differ
+L21	37	05	M	B:23	differ
+L21	38	3	M	B:23	differ
+L21	39	05	M		agree-flagged
+L21	40	63	M		agree-flagged
+L21	41	95	M	B:-	gap
+L21	42	05	M		agree-flagged
+L21	43	93	M	A:-	gap
+L21	44	3	M	B:05	differ
+L21	45	05	M		agree-flagged
+L21	46	3	M	B:73	differ
+L21	47	95	M		agree-flagged
+L21	48	223	M	B:22	differ
+L21	49	24	M	B:34	differ
+L21	50	16	M		agree-flagged
+L21	51	05	M		agree-flagged
+L21	52	23	M		agree-flagged
+L21	53	93	M		agree-flagged
+L21	54	16	M		agree-flagged
+L21	55	05	M		agree-flagged
+L21	56	23	M		agree-flagged
+L21	57	93	M		agree-flagged
+L21	58	16	M		agree-flagged
+L21	59	05	M	A:-	gap
+L21	60	25	M	A:-	gap
+L21	61	67	M	A:-	gap
+L21	62	05	M		agree-flagged
+L21	63	23	M		agree-flagged
+L21	64	93	M		agree-flagged
+L21	65	16	M	A:-	gap
+L21	66	160	M	B:05	differ
+L21	67	25	M		agree-flagged
+L21	68	67	M		agree-flagged
+L21	69	05	M		agree-flagged
+L21	70	90	M	B:-	gap
+L21	71	25	M	B:23	differ
+L21	72	93	M		agree-flagged
+L21	73	50	M	B:16	differ
+L21	74	60	M	B:05	differ
+L21	75	23	M		agree-flagged
+L21	76	46	M		agree-flagged
+L21	77	20	M	B:2	differ
+L21	78	05	M		agree-flagged
+L21	79	T	M		agree-flagged
+L21	80	05	M		agree-flagged
+L21	81	63	M		agree-flagged
+L21	82	95	M		agree-flagged
+L21	83	16	M		agree-flagged
+L21	84	65	M		agree-flagged
+L21	85	50	M		agree-flagged
+L21	86	23	M		agree-flagged
+L21	87	123	M	B:-	gap
+L21	88	123	M		agree-flagged
+L21	89	30	M	B:12330	differ
+L21	90	23	M		agree-flagged
+L21	91	73	M		agree-flagged
+L21	92	95	M		agree-flagged
+L21	93	2	M		agree-flagged
+L22	1	95	M		agree-flagged
+L22	2	93	M		agree-flagged
+L22	3	67	M	B:65	differ
+L22	4	23	M		agree-flagged
+L22	5	73	M		agree-flagged
+L22	6	95	M		agree-flagged
+L22	7	23	M		agree-flagged
+L22	8	773	M	B:73	differ
+L22	9	63	M	B:65	differ
+L22	10	773	M	B:73	differ
+L22	11	95	M		agree-flagged
+L22	12	23	M		agree-flagged
+L22	13	773	M	B:73	differ
+L22	14	95	M		agree-flagged
+L22	15	65	M		agree-flagged
+L22	16	05	M		agree-flagged
+L22	17	3	M	B:33	differ
+L22	18	24	M		agree-flagged
+L22	19	23	M	A:-	gap
+L22	20	93	M		agree-flagged
+L22	21	60	M		agree-flagged
+L22	22	23	M		agree-flagged
+L22	23	773	M	B:73	differ
+L22	24	95	M		agree-flagged
+L22	25	23	M		agree-flagged
+L22	26	12	M	A:-	gap
+L22	27	125	M	B:55	differ
+L22	28	50	M	B:05	differ
+L22	29	23	M		agree-flagged
+L22	30	60	M		agree-flagged
+L22	31	25	M		agree-flagged
+L22	32	50	M	B:70	differ
+L22	33	25	M		agree-flagged
+L22	34	65	M	A:-	gap
+L22	35	05	M	A:-	gap
+L22	36	73	M	A:-	gap
+L22	37	95	M	A:-	gap
+L22	38	65	M		agree-flagged
+L22	39	05	M		agree-flagged
+L22	40	7722	M	B:77	differ
+L22	41	16	M		agree-flagged
+L22	42	05	M	A:-	gap
+L22	43	60	M		agree-flagged
+L22	44	25	M		agree-flagged
+L22	45	05	M	B:70	differ
+L22	46	25	M		agree-flagged
+L22	47	93	M		agree-flagged
+L22	48	50	M		agree-flagged
+L22	49	63	M		agree-flagged
+L22	50	23	M		agree-flagged
+L22	51	93	M		agree-flagged
+L22	52	16	M		agree-flagged
+L22	53	05	M	A:-	gap
+L22	54	27	M	A:-	gap
+L22	55	05	M	A:-	gap
+L22	56	41	M	A:-	gap
+L22	57	70	M	A:-	gap
+L22	58	23	M	A:-	gap
+L22	59	05	M	A:-	gap
+L22	60	24	M	A:-	gap
+L22	61	50	M	B:63	differ
+L22	62	22	M	B:05	differ
+L22	63	773	M	B:73	differ
+L22	64	40	M		agree-flagged
+L22	65	41	M		agree-flagged
+L22	66	20	M	A:-	gap
+L22	67	200	M	B:05	differ
+L22	68	5114	M	B:114	differ
+L22	69	25	M		agree-flagged
+L22	70	03	M	B:-	gap
+L22	71	04	M	B:-	gap
+L22	72	23	M	B:-	gap
+L22	73	93	M	B:-	gap
+L22	74	123	M	B:05	differ
+L22	75	4	M	B:30	differ
+L22	76	23	M	B:42	differ
+L22	77	93	M	B:39	differ
+L22	78	123	M		agree-flagged
+L22	79	46	M		agree-flagged
+L22	80	05	M	A:-	gap
+L22	81	i2	M	B:25	differ
+L22	82	50	M	B:09	differ
+L22	83	93	M	B:32	differ
+L22	84	23	M	B:3	differ
+L23	1	93	M	B:97	differ
+L23	2	95	M		agree-flagged
+L23	3	63	M		agree-flagged
+L23	4	05	M		agree-flagged
+L23	5	73	M		agree-flagged
+L23	6	25	M	B:52	differ
+L23	7	50	M		agree-flagged
+L23	8	73	M		agree-flagged
+L23	9	23	M		agree-flagged
+L23	10	60	M		agree-flagged
+L23	11	05	M		agree-flagged
+L23	12	75	M		agree-flagged
+L23	13	27	M		agree-flagged
+L23	14	12	M	A:-	gap
+L23	15	23	M	A:-	gap
+L23	16	123	M	B:19	differ
+L23	17	194	M	B:4	differ
+L23	18	05	M		agree-flagged
+L23	19	93	M		agree-flagged
+L23	20	05	M		agree-flagged
+L23	21	03	M	B:05	differ
+L23	22	03	M		agree-flagged
+L23	23	23	M		agree-flagged
+L23	24	127	M	B:-	gap
+L23	25	25	M	B:-	gap
+L23	26	75	M	B:-	gap
+L23	27	05	M	B:-	gap
+L23	28	16	M	B:-	gap
+L23	29	25	M	B:-	gap
+L23	30	7122	M	B:-	gap
+L23	31	3194	M	B:-	gap
+L23	32	05	M	B:-	gap
+L23	33	7	M	B:-	gap
+L23	34	22	M	B:12	differ
+L23	35	7	M		agree-flagged
+L23	36	05	M	B:-	gap
+L23	37	65	M	B:-	gap
+L23	38	c	M	B:-	gap
+L23	39	25	M		agree-flagged
+L23	40	75	M		agree-flagged
+L23	41	05	M		agree-flagged
+L23	42	316	M	A:-	gap
+L23	43	16	M	B:05	differ
+L23	44	25	M		agree-flagged
+L23	45	19	M		agree-flagged
+L23	46	05	M		agree-flagged
+L23	47	719	M		agree-flagged
+L23	48	1	M	A:-	gap
+L23	49	93	M	A:-	gap
+L23	50	19	M	B:63	differ
+L23	51	363	M	B:773	differ
+L23	52	7723	M	B:23	differ
+L23	53	1	M		agree-flagged
+L23	54	25	M		agree-flagged
+L23	55	70	M		agree-flagged
+L23	56	65	M	B:-	gap
+L23	57	7	M	B:-	gap
+L23	58	23	M	B:63	differ
+L23	59	13	M	B:05	differ
+L23	60	12	M		agree-flagged
+L23	61	19	M	B:05	differ
+L23	62	5	M	B:199	differ
+L23	63	03	M	B:05	differ
+L23	64	23	M	B:32	differ
+L23	65	73	M	B:373	differ
+L23	66	95	M		agree-flagged
+L23	67	50	M	B:-	gap
+L23	68	2	M	B:502	differ
+L23	69	7	M	B:05	differ
+L23	70	75	M	B:778	differ
+L23	71	03	M	B:05	differ
+L23	72	9	M	B:39	differ
+L23	73	5	M		agree-flagged
+L23	74	15	M		agree-flagged
+L23	75	46	M		agree-flagged
+L23	76	50	M		agree-flagged
+L23	77	23	M	B:02	differ
+L23	78	26	M	B:32	differ
+L23	79	30	M	B:60	differ
+L23	80	2	M	B:3	differ
+L24	1	70	M		agree-flagged
+L24	2	23	M		agree-flagged
+L24	3	16	M		agree-flagged
+L24	4	05	M	A:-	gap
+L24	5	02	M	B:23	differ
+L24	6	39	M	B:95	differ
+L24	7	5123	M	B:123	differ
+L24	8	46	M		agree-flagged
+L24	9	42	M		agree-flagged
+L24	10	25	M		agree-flagged
+L24	11	05	M	A:-	gap
+L24	12	03	M	B:73	differ
+L24	13	04	M	B:05	differ
+L24	14	55	M		agree-flagged
+L24	15	93	M		agree-flagged
+L24	16	9	M		agree-flagged
+L24	17	70	M	B:-	gap
+L24	18	4	M	B:-	gap
+L24	19	05	M		agree-flagged
+L24	20	93	M		agree-flagged
+L24	21	94	M		agree-flagged
+L24	22	63	M		agree-flagged
+L24	23	19	M		agree-flagged
+L24	24	93	M		agree-flagged
+L24	25	73	M		agree-flagged
+L24	26	23	M		agree-flagged
+L24	27	25	M		agree-flagged
+L24	28	60	M		agree-flagged
+L24	29	10	M		agree-flagged
+L24	30	63	M		agree-flagged
+L24	31	95	M		agree-flagged
+L24	32	63	M		agree-flagged
+L24	33	05	M	B:03	differ
+L24	34	77	M	B:72	differ
+L24	35	93	M		agree-flagged
+L24	36	73	M		agree-flagged
+L24	37	23	M		agree-flagged
+L24	38	93	M		agree-flagged
+L24	39	05	M		agree-flagged
+L24	40	90	M		agree-flagged
+L24	41	23	M		agree-flagged
+L24	42	75	M		agree-flagged
+L24	43	05	M		agree-flagged
+L24	44	93	M		agree-flagged
+L24	45	65	M		agree-flagged
+L24	46	23	M		agree-flagged
+L24	47	24	M		agree-flagged
+L24	48	20	M		agree-flagged
+L24	49	123	M		agree-flagged
+L24	50	05	M		agree-flagged
+L24	51	05	M		agree-flagged
+L24	52	63	M	A:-	gap
+L24	53	05	M		agree-flagged
+L24	54	05	M		agree-flagged
+L24	55	93	M		agree-flagged
+L24	56	10	M		agree-flagged
+L24	57	05	M		agree-flagged
+L24	58	73	M		agree-flagged
+L24	59	25	M	A:-	gap
+L24	60	'46	M	B:46	differ
+L24	61	50	M		agree-flagged
+L24	62	231	M	B:23	differ
+L24	63	123	M		agree-flagged
+L24	64	05	M	B:-	gap
+L24	65	05	M		agree-flagged
+L24	66	93	M		agree-flagged
+L24	67	75	M		agree-flagged
+L24	68	23	M		agree-flagged
+L24	69	50	M		agree-flagged
+L24	70	70	M		agree-flagged
+L24	71	23	M		agree-flagged
+L24	72	17	M	A:-	gap
+L24	73	175	M	B:05	differ
+L24	74	123	M		agree-flagged
+L24	75	70	M		agree-flagged
+L24	76	05	M		agree-flagged
+L24	77	07	M	A:-	gap
+L24	78	05	M		agree-flagged
+L24	79	25	M	A:-	gap
+L24	80	46	M	A:-	gap
+L24	81	50	M	A:-	gap
+L24	82	05	M	B:23	differ
+L24	83	95	M	B:123	differ
+L24	84	05	M		agree-flagged
+L24	85	70	M	A:-	gap
+L24	86	05	M		agree-flagged
+L24	87	05	M	B:07	differ
+L24	88	05	M	B:95	differ
+L25	1	40	M	B:-	gap
+L25	2	40	M	B:-	gap
+L25	3	05	M	B:70	differ
+L25	4	95	M	B:93	differ
+L25	5	94	M		agree-flagged
+L25	6	05	M	B:23	differ
+L25	7	230	M	B:03	differ
+L25	8	31	M	B:10	differ
+L25	9	023	M	B:23	differ
+L25	10	25	M		agree-flagged
+L25	11	93	M		agree-flagged
+L25	12	05	M		agree-flagged
+L25	13	05	M		agree-flagged
+L25	14	93	M		agree-flagged
+L25	15	70	M		agree-flagged
+L25	16	20	M		agree-flagged
+L25	17	05	M		agree-flagged
+L25	18	19	M	A:-	gap
+L25	19	195	M	B:95	differ
+L25	20	93	M		agree-flagged
+L25	21	73	M		agree-flagged
+L25	22	23	M		agree-flagged
+L25	23	65	M		agree-flagged
+L25	24	05	M		agree-flagged
+L25	25	05	M		agree-flagged
+L25	26	60	M		agree-flagged
+L25	27	93	M		agree-flagged
+L25	28	732	M	B:-	gap
+L25	29	2724	M	B:-	gap
+L25	30	05	M	B:73	differ
+L25	31	3	M	B:22	differ
+L25	32	05	M	B:24	differ
+L25	33	05	M		agree-flagged
+L25	34	93	M	B:-	gap
+L25	35	70	M	B:-	gap
+L25	36	42	M	B:-	gap
+L25	37	60	M	B:65	differ
+L25	38	05	M		agree-flagged
+L25	39	75	M	B:-	gap
+L25	40	231	M	B:-	gap
+L25	41	231	M	B:09	differ
+L25	42	50	M	B:94	differ
+L25	43	23	M	B:1	differ
+L25	44	05	M		agree-flagged
+L25	45	37	M	B:-	gap
+L25	46	523	M	B:13	differ
+L25	47	05	M		agree-flagged
+L25	48	3	M	B:23	differ
+L25	49	04	M		agree-flagged
+L25	50	2724	M	B:-	gap
+L25	51	05	M	B:-	gap
+L25	52	3	M	B:-	gap
+L25	53	05	M	B:-	gap
+L25	54	93	M	B:-	gap
+L25	55	94	M	B:-	gap
+L25	56	1	M	B:-	gap
+L25	57	05	M	B:-	gap
+L25	58	5	M		agree-flagged
+L25	59	10	M	A:-	gap
+L25	60	108	M	B:08	differ
+L25	61	25	M		agree-flagged
+L25	62	03	M	B:-	gap
+L25	63	3	M	B:05	differ
+L25	64	05	M		agree-flagged
+L25	65	73	M		agree-flagged
+L25	66	05	M		agree-flagged
+L25	67	3	M	B:-	gap
+L25	68	63	M		agree-flagged
+L25	69	95	M		agree-flagged
+L25	70	25	M		agree-flagged
+L25	71	63	M		agree-flagged
+L25	72	7373	M	B:-	gap
+L25	73	05	M	B:-	gap
+L25	74	3	M	B:-	gap
+L25	75	75	M	B:-	gap
+L25	76	093	M	B:-	gap
+L25	77	7	M	B:-	gap
+L25	78	5	M	B:-	gap
+L25	79	9	M	B:-	gap
+L25	80	7325	M	B:95	differ
+L25	81	3237	M	B:25	differ
+L25	82	3	M	B:63	differ
+L25	83	70	M	B:73	differ
+L25	84	05	M		agree-flagged
+L25	85	3	M	B:-	gap
+L25	86	75	M	B:390	differ
+L25	87	09	M	B:1	differ
+L25	88	325	M	B:93	differ
+L25	89	7373	M	B:73	differ
+L25	90	23	M		agree-flagged
+L25	91	24	M		agree-flagged
+L25	92	19	M		agree-flagged
+L25	93	'46	M	B:46	differ
+L25	94	05	M		agree-flagged
+L25	95	325	M		agree-flagged
+L25	96	65	M		agree-flagged
+L25	97	40	M		agree-flagged
+L25	98	25	M		agree-flagged
+L26	1	10	M		agree-flagged
+L26	2	05	M		agree-flagged
+L26	3	73	M		agree-flagged
+L26	4	23	M		agree-flagged
+L26	5	05	M		agree-flagged
+L26	6	19	M		agree-flagged
+L26	7	63	M	B:67	differ
+L26	8	93	M		agree-flagged
+L26	9	05	M		agree-flagged
+L26	10	3	M	B:39	differ
+L26	11	95	M	B:05	differ
+L26	12	27	M		agree-flagged
+L26	13	05	M		agree-flagged
+L26	14	19	M		agree-flagged
+L26	15	70	M		agree-flagged
+L26	16	10	M		agree-flagged
+L26	17	05	M		agree-flagged
+L26	18	70	M		agree-flagged
+L26	19	99	M		agree-flagged
+L26	20	42	M		agree-flagged
+L26	21	20	M		agree-flagged
+L26	22	25	M		agree-flagged
+L26	23	93	M		agree-flagged
+L26	24	05	M		agree-flagged
+L26	25	1	M		agree-flagged
+L26	26	025	M	B:25	differ
+L26	27	93	M		agree-flagged
+L26	28	05	M		agree-flagged
+L26	29	1	M		agree-flagged
+L26	30	3	M	B:-	gap
+L26	31	05	M		agree-flagged
+L26	32	3231	M		agree-flagged
+L26	33	05	M		agree-flagged
+L26	34	323	M		agree-flagged
+L26	35	05	M		agree-flagged
+L26	36	30	M		agree-flagged
+L26	37	25	M		agree-flagged
+L26	38	9	M		agree-flagged
+L26	39	5	M		agree-flagged
+L26	40	19	M		agree-flagged
+L26	41	'46	M	B:46	differ
+L26	42	75	M		agree-flagged
+L26	43	25	M		agree-flagged
+L26	44	63	M	B:65	differ
+L26	45	50	M	B:05	differ
+L26	46	23	M		agree-flagged
+L26	47	93	M		agree-flagged
+L26	48	1	M		agree-flagged
+L26	49	05	M	A:-	gap
+L26	50	99	M		agree-flagged
+L26	51	25	M		agree-flagged
+L26	52	93	M		agree-flagged
+L26	53	63	M	B:65	differ
+L26	54	23	M	B:323	differ
+L26	55	05	M		agree-flagged
+L26	56	25	M		agree-flagged
+L26	57	93	M		agree-flagged
+L26	58	63	M	B:65	differ
+L26	59	23	M	B:323	differ
+L26	60	05	M		agree-flagged
+L26	61	07	M	B:7	differ
+L26	62	93	M		agree-flagged
+L26	63	73	M		agree-flagged
+L26	64	23	M		agree-flagged
+L27	1	23	M		agree-flagged
+L27	2	73	M		agree-flagged
+L27	3	95	M		agree-flagged
+L27	4	23	M		agree-flagged
+L27	5	73	M		agree-flagged
+L27	6	75	M		agree-flagged
+L27	7	123	M		agree-flagged
+L27	8	05	M		agree-flagged
+L27	9	P	M	B:-	gap
+L27	10	25	M		agree-flagged
+L27	11	65	M		agree-flagged
+L27	12	40	M		agree-flagged
+L27	13	25	M		agree-flagged
+L27	14	123	M		agree-flagged
+L27	15	02	M	B:05	differ
+L27	16	23	M		agree-flagged
+L27	17	19	M		agree-flagged
+L27	18	41	M	A:-	gap
+L27	19	4	M	B:05	differ
+L27	20	19	M	B:39	differ
+L27	21	5	M		agree-flagged
+L27	22	25	M	A:-	gap
+L27	23	67	M	B:93	differ
+L27	24	12	M		agree-flagged
+L27	25	5	M		agree-flagged
+L27	26	00	M	B:-	gap
+L27	27	25	M	B:-	gap
+L27	28	05	M		agree-flagged
+L27	29	773	M	B:-	gap
+L27	30	95	M	B:63	differ
+L27	31	05	M		agree-flagged
+L27	32	12	M	A:-	gap
+L27	33	123	M	B:5	differ
+L27	34	594	M	B:99	differ
+L27	35	05	M		agree-flagged
+L27	36	725	M	B:-	gap
+L27	37	93	M	B:25	differ
+L27	38	12	M	B:02	differ
+L27	39	5	M		agree-flagged
+L27	40	95	M	B:-	gap
+L27	41	63	M	B:-	gap
+L27	42	05	M		agree-flagged
+L27	43	12	M	A:-	gap
+L27	44	125	M	B:5	differ
+L27	45	95	M		agree-flagged
+L27	46	63	M		agree-flagged
+L27	47	05	M		agree-flagged
+L27	48	73	M	B:773	differ
+L27	49	16	M		agree-flagged
+L27	50	25	M		agree-flagged
+L27	51	123	M		agree-flagged
+L27	52	50	M		agree-flagged
+L27	53	67	M		agree-flagged
+L27	54	70	M		agree-flagged
+L27	55	67	M		agree-flagged
+L27	56	05	M		agree-flagged
+L27	57	13	M	A:-	gap
+L27	58	1394	M	B:95	differ
+L27	59	05	M	B:23	differ
+L27	60	139	M		agree-flagged
+L27	61	4	M	B:05	differ
+L27	62	05	M		agree-flagged
+L27	63	73	M		agree-flagged
+L27	64	05	M		agree-flagged
+L27	65	3	M	B:73	differ
+L27	66	25	M		agree-flagged
+L27	67	93	M		agree-flagged
+L27	68	50	M		agree-flagged
+L27	69	95	M		agree-flagged
+L27	70	25	M		agree-flagged
+L27	71	773	M	B:77	differ
+L27	72	95	M		agree-flagged
+L27	73	05	M		agree-flagged
+L27	74	99	M		agree-flagged
+L27	75	27	M		agree-flagged
+L27	76	63	M		agree-flagged
+L27	77	93	M		agree-flagged
+L27	78	30	M		agree-flagged
+L27	79	23	M		agree-flagged
+L27	80	723	M	B:122	differ
+L27	81	05	M	B:3	differ
+L28	1	75	M		agree-flagged
+L28	2	63	M		agree-flagged
+L28	3	12	M		agree-flagged
+L28	4	373	M	B:377	differ
+L28	5	23	M		agree-flagged
+L28	6	05	M		agree-flagged
+L28	7	39	M		agree-flagged
+L28	8	5	M	B:-	gap
+L28	9	123	M		agree-flagged
+L28	10	30	M		agree-flagged
+L28	11	93	M		agree-flagged
+L28	12	23	M		agree-flagged
+L28	13	123	M		agree-flagged
+L28	14	05	M	A:-	gap
+L28	15	310	M	A:-	gap
+L28	16	63	M	A:-	gap
+L28	17	23	M		agree-flagged
+L28	18	05	M	A:-	gap
+L28	19	70123	M	A:-	gap
+L28	20	05	M		agree-flagged
+L28	21	71	M	A:-	gap
+L28	22	65	M	A:-	gap
+L28	23	3	M	B:50	differ
+L28	24	106	M	B:05	differ
+L28	25	3	M	B:42	differ
+L28	26	23	M		agree-flagged
+L28	27	05	M	A:-	gap
+L28	28	310	M	A:-	gap
+L28	29	73	M	B:63	differ
+L28	30	23	M		agree-flagged
+L28	31	37	M	B:73	differ
+L28	32	5	M		agree-flagged
+L28	33	7	M		agree-flagged
+L28	34	5	M	A:-	gap
+L28	35	42	M		agree-flagged
+L28	36	27	M		agree-flagged
+L28	37	60	M		agree-flagged
+L28	38	25	M		agree-flagged
+L28	39	93	M		agree-flagged
+L28	40	94	M		agree-flagged
+L28	41	25	M		agree-flagged
+L28	42	63	M		agree-flagged
+L28	43	05	M		agree-flagged
+L28	44	72	M	B:-	gap
+L28	45	55	M		agree-flagged
+L28	46	20	M	A:-	gap
+L28	47	20	M	A:-	gap
+L28	48	2020	M	B:05	differ
+L28	49	023	M		agree-flagged
+L28	50	773	M	B:73	differ
+L28	51	95	M		agree-flagged
+L28	52	42	M		agree-flagged
+L28	53	05	M		agree-flagged
+L28	54	73	M		agree-flagged
+L28	55	05	M	A:-	gap
+L28	56	93	M		agree-flagged
+L28	57	05	M		agree-flagged
+L28	58	90	M		agree-flagged
+L28	59	25	M		agree-flagged
+L28	60	30	M		agree-flagged
+L28	61	23	M		agree-flagged
+L28	62	25	M		agree-flagged
+L28	63	65	M	B:05	differ
+L28	64	373	M		agree-flagged
+L28	65	05	M		agree-flagged
+L28	66	390	M	B:90	differ
+L28	67	'46	M	B:46	differ
+L28	68	70	M		agree-flagged
+L28	69	75	M		agree-flagged
+L28	70	67	M		agree-flagged
+L28	71	05	M	B:95	differ
+L28	72	T	M	B:1	differ
+L28	73	19	M	B:91	differ
+L28	74	16	M	B:6	differ
+L28	75	50	M	B:05	differ
+L28	76	23	M		agree-flagged
+L28	77	05	M		agree-flagged
+L28	78	3	M	B:39	differ
+L28	79	95	M	B:5	differ
+L28	80	25	M		agree-flagged
+L28	81	95	M		agree-flagged
+L28	82	50	M		agree-flagged
+L28	83	23	M		agree-flagged
+L28	84	75	M		agree-flagged
+L28	85	65	M	A:-	gap
+L28	86	63	M	B:39	differ
+L28	87	95	M	B:5	differ
+L28	88	30	M		agree-flagged
+L28	89	63	M	B:65	differ
+L28	90	50	M	B:05	differ
+L28	91	05	M		agree-flagged
+L28	92	95	M		agree-flagged
+L28	93	9	M		agree-flagged
+L28	94	63	M	B:-	gap
+L28	95	50	M	B:-	gap
+L28	96	05	M	B:-	gap
+L28	97	95	M	B:-	gap
+L28	98	99	M	B:9	differ
+L28	99	20	M		agree-flagged
+L28	100	23	M		agree-flagged
+L28	101	773	M	B:-	gap
+L29	1	75	M		agree-flagged
+L29	2	23	M		agree-flagged
+L29	3	73	M		agree-flagged
+L29	4	95	M		agree-flagged
+L29	5	70	M		agree-flagged
+L29	6	12	M	A:-	gap
+L29	7	123	M	B:39	differ
+L29	8	95	M	B:52	differ
+L29	9	23	M	B:37	differ
+L29	10	73	M	B:39	differ
+L29	11	95	M	B:5	differ
+L29	12	57	M	B:7	differ
+L29	13	25	M		agree-flagged
+L29	14	70	M		agree-flagged
+L29	15	25	M		agree-flagged
+L29	16	123	M	B:12	differ
+L29	17	73	M	B:373	differ
+L29	18	65	M		agree-flagged
+L29	19	373	M		agree-flagged
+L29	20	70	M		agree-flagged
+L29	21	05	M		agree-flagged
+L29	22	05	M		agree-flagged
+L29	23	3	M	B:-	gap
+L29	24	231	M		agree-flagged
+L29	25	25	M		agree-flagged
+L29	26	93	M		agree-flagged
+L29	27	50	M		agree-flagged
+L29	28	95	M		agree-flagged
+L29	29	123	M		agree-flagged
+L29	30	60	M		agree-flagged
+L29	31	27	M	A:-	gap
+L29	32	273	M	B:73	differ
+L29	33	95	M		agree-flagged
+L29	34	'46	M	B:46	differ
+L29	35	73	M		agree-flagged
+L29	36	2	M		agree-flagged
+L29	37	70	M		agree-flagged
+L29	38	25	M		agree-flagged
+L29	39	12	M		agree-flagged
+L29	40	373	M	B:73	differ
+L29	41	65	M	B:230	differ
+L29	42	27	M	B:74	differ
+L29	43	75	M	B:62	differ
+L29	44	90	M	B:0	differ
+L29	45	70	M	B:20	differ
+L29	46	25	M		agree-flagged
+L29	47	102	M	B:-	gap
+L29	48	73	M	B:-	gap
+L29	49	27	M	B:-	gap
+L29	50	05	M	B:-	gap
+L29	51	773	M	B:63	differ
+L29	52	95	M		agree-flagged
+L29	53	46	M	B:-	gap
+L29	54	73	M	B:-	gap
+L29	55	23	M	B:-	gap
+L29	56	70	M	B:-	gap
+L29	57	123	M	B:19	differ
+L29	58	95	M	B:19	differ
+L29	59	23	M	B:25	differ
+L29	60	773	M	B:7	differ
+L29	61	75	M	B:20	differ
+L29	62	19	M		agree-flagged
+L29	63	25	M		agree-flagged
+L29	64	7	M		agree-flagged
+L29	65	20	M	B:-	gap
+L29	66	20	M		agree-flagged
+L29	67	25	M		agree-flagged
+L29	68	63	M		agree-flagged
+L29	69	95	M		agree-flagged
+L29	70	7	M	A:-	gap
+L29	71	75	M	B:5	differ
+L29	72	75	M		agree-flagged
+L29	73	25	M		agree-flagged
+L29	74	93	M		agree-flagged
+L29	75	50	M		agree-flagged
+L29	76	95	M		agree-flagged
+L29	77	122	M	A:-	gap
+L29	78	123	M	B:3	differ
+L29	79	7304	M	B:04	differ
+L29	80	65	M		agree-flagged
+L29	81	'46	M	B:46	differ
+L29	82	63	M		agree-flagged
+L29	83	239	M		agree-flagged
+L29	84	9	M		agree-flagged
+L29	85	70	M		agree-flagged
+L29	86	93	M		agree-flagged
+L29	87	63	M		agree-flagged
+L29	88	05	M		agree-flagged
+L29	89	7304	M	B:-	gap
+L29	90	65	M	B:-	gap
+L29	91	3	M	B:-	gap
+L29	92	2	M	B:-	gap
+L29	93	50	M	B:-	gap
+L29	94	5	M	B:-	gap
+L30	1	25	M		agree-flagged
+L30	2	93	M		agree-flagged
+L30	3	50	M		agree-flagged
+L30	4	95	M		agree-flagged
+L30	5	123	M		agree-flagged
+L30	6	60	M		agree-flagged
+L30	7	23	M		agree-flagged
+L30	8	03	M	B:05	differ
+L30	9	4	M	B:42	differ
+L30	10	25	M	B:5	differ
+L30	11	30	M		agree-flagged
+L30	12	231	M		agree-flagged
+L30	13	70	M		agree-flagged
+L30	14	25	M		agree-flagged
+L30	15	03	M	B:05	differ
+L30	16	2	M		agree-flagged
+L30	17	231	M		agree-flagged
+L30	18	70	M		agree-flagged
+L30	19	25	M		agree-flagged
+L30	20	03	M	B:05	differ
+L30	21	25	M	B:325	differ
+L30	22	73	M		agree-flagged
+L30	23	95	M		agree-flagged
+L30	24	25	M		agree-flagged
+L30	25	60	M		agree-flagged
+L30	26	05	M		agree-flagged
+L30	27	93	M		agree-flagged
+L30	28	50	M		agree-flagged
+L30	29	67	M		agree-flagged
+L30	30	773	M	B:-	gap
+L30	31	1210	M	B:-	gap
+L30	32	702	M	B:77	differ
+L30	33	393	M	B:05	differ
+L30	34	2	M	B:210	differ
+L30	35	10	M	B:70	differ
+L30	36	702	M	B:23	differ
+L30	37	393	M	B:93	differ
+L30	38	50	M		agree-flagged
+L30	39	95	M		agree-flagged
+L30	40	T5	M	B:T	differ
+L30	41	99	M		agree-flagged
+L30	42	23	M		agree-flagged
+L30	43	0765	M	B:05	differ
+L30	44	16	M	B:76	differ
+L30	45	7700	M	B:51	differ
+L30	46	5	M	B:67	differ
+L30	47	0	M	B:70	differ
+L30	48	3	M	B:05	differ
+L30	49	93	M		agree-flagged
+L30	50	2	M	A:-	gap
+L30	51	T	M		agree-flagged
+L30	52	40	M		agree-flagged
+L30	53	25	M		agree-flagged
+L30	54	11	M		agree-flagged
+L30	55	05	M	A:-	gap
+L30	56	'34	M	B:34	differ
+L30	57	60	M	B:65	differ
+L30	58	50	M		agree-flagged
+L30	59	05	M	A:-	gap
+L30	60	3	M	B:73	differ
+L30	61	50	M		agree-flagged
+L30	62	23	M		agree-flagged
+L30	63	70	M		agree-flagged
+L30	64	123	M		agree-flagged
+L30	65	60	M		agree-flagged
+L30	66	05	M	A:-	gap
+L30	67	63	M	B:73	differ
+L30	68	231	M	B:23	differ
+L30	69	70	M	B:170	differ
+L30	70	123	M		agree-flagged
+L30	71	05	M	A:-	gap
+L31	1	29	M		agree-flagged
+L31	2	20	M		agree-flagged
+L31	3	05	M		agree-flagged
+L31	4	50	M		agree-flagged
+L31	5	05	M		agree-flagged
+L31	6	90	M		agree-flagged
+L31	7	05	M		agree-flagged
+L31	8	323	M		agree-flagged
+L31	9	25	M		agree-flagged
+L31	10	93	M		agree-flagged
+L31	11	05	M		agree-flagged
+L31	12	3	M	B:-	gap
+L31	13	93	M		agree-flagged
+L31	14	1	M	B:-	gap
+L31	15	50	M	B:-	gap
+L31	16	25	M	B:-	gap
+L31	17	10	M	B:-	gap
+L31	18	125	M	B:-	gap
+L31	19	73	M	B:15	differ
+L31	20	05	M		agree-flagged
+L31	21	25	M		agree-flagged
+L31	22	10	M		agree-flagged
+L31	23	125	M	B:25	differ
+L31	24	73	M		agree-flagged
+L31	25	65	M	B:05	differ
+L31	26	40	M		agree-flagged
+L31	27	23	M		agree-flagged
+L31	28	25	M		agree-flagged
+L31	29	95	M	B:-	gap
+L31	30	237	M	B:05	differ
+L31	31	375	M	B:23	differ
+L31	32	5	M	B:77375	differ
+L31	33	25	M		agree-flagged
+L31	34	773	M	B:-	gap
+L31	35	95	M	B:-	gap
+L31	36	i	M	B:77	differ
+L31	37	05	M		agree-flagged
+L31	38	25	M	B:-	gap
+L31	39	75	M		agree-flagged
+L31	40	123	M	B:12	differ
+L31	41	05	M	B:3	differ
+L31	42	30	M		agree-flagged
+L31	43	423	M	B:42	differ
+L31	44	65	M		agree-flagged
+L31	45	40	M		agree-flagged
+L31	46	23	M		agree-flagged
+L31	47	05	M		agree-flagged
+L31	48	3	M	B:-	gap
+L31	49	9	M	B:93	differ
+L31	50	7	M		agree-flagged
+L31	51	75	M	B:-	gap
+L31	52	27	M	B:527	differ
+L31	53	50	M		agree-flagged
+L31	54	05	M	B:-	gap
+L31	55	95	M	B:-	gap
+L31	56	7	M	B:-	gap
+L31	57	125	M	B:-	gap
+L31	58	05	M		agree-flagged
+L31	59	73	M		agree-flagged
+L31	60	30	M		agree-flagged
+L31	61	93	M		agree-flagged
+L31	62	23	M		agree-flagged
+L31	63	50	M		agree-flagged
+L31	64	23	M		agree-flagged
+L31	65	95	M		agree-flagged
+L31	66	123	M		agree-flagged
+L31	67	'46	M	B:-	gap
+L31	68	63	M	B:-	gap
+L31	69	27	M	B:-	gap
+L31	70	73	M	B:-	gap
+L31	71	93	M	B:-	gap
+L31	72	05	M	B:46	differ
+L31	73	63	M		agree-flagged
+L31	74	27	M	B:23	differ
+L31	75	73	M		agree-flagged
+L31	76	93	M		agree-flagged
+L31	77	05	M		agree-flagged
+L31	78	90	M		agree-flagged
+L31	79	23	M		agree-flagged
+L31	80	4	M	B:-	gap
+L32	1	05	M	B:-	gap
+L32	2	93	M		agree-flagged
+L32	3	1	M	B:12	differ
+L32	4	94	M		agree-flagged
+L32	5	50	M		agree-flagged
+L32	6	123	M		agree-flagged
+L32	7	05	M	B:-	gap
+L32	8	30	M	B:-	gap
+L32	9	05	M		agree-flagged
+L32	10	93	M		agree-flagged
+L32	11	50	M		agree-flagged
+L32	12	75	M		agree-flagged
+L32	13	125	M	B:-	gap
+L32	14	16	M	B:-	gap
+L32	15	05	M	B:-	gap
+L32	16	30	M	B:-	gap
+L32	17	125	M	B:123	differ
+L32	18	16	M		agree-flagged
+L32	19	05	M		agree-flagged
+L32	20	30	M		agree-flagged
+L32	21	05	M		agree-flagged
+L32	22	73	M		agree-flagged
+L32	23	41	M		agree-flagged
+L32	24	95	M		agree-flagged
+L32	25	23	M		agree-flagged
+L32	26	60	M		agree-flagged
+L32	27	2377	M	B:277	differ
+L32	28	95	M		agree-flagged
+L32	29	05	M		agree-flagged
+L32	30	23	M		agree-flagged
+L32	31	47	M		agree-flagged
+L32	32	25	M		agree-flagged
+L32	33	93	M		agree-flagged
+L32	34	12	M		agree-flagged
+L32	35	5	M		agree-flagged
+L32	36	23	M	B:-	gap
+L32	37	05	M	B:230	differ
+L32	38	3	M	B:395	differ
+L32	39	95	M	B:227	differ
+L32	40	2374	M	B:4	differ
+L32	41	25	M		agree-flagged
+L32	42	75	M		agree-flagged
+L32	43	105	M	B:-	gap
+L32	44	95	M	B:10	differ
+L32	45	05	M		agree-flagged
+L32	46	25	M		agree-flagged
+L32	47	14	M		agree-flagged
+L32	48	'46	M	B:46	differ
+L32	49	03	M	B:05	differ
+L32	50	25	M	B:32	differ
+L32	51	90	M	B:590	differ
+L32	52	70	M		agree-flagged
+L32	53	23	M		agree-flagged
+L32	54	73	M		agree-flagged
+L32	55	03	M	B:05	differ
+L32	56	23	M	B:323	differ
+L32	57	75	M		agree-flagged
+L32	58	42	M		agree-flagged
+L32	59	50	M		agree-flagged
+L32	60	27	M		agree-flagged
+L32	61	60	M		agree-flagged
+L32	62	63	M		agree-flagged
+L32	63	270	M		agree-flagged
+L33	1	05	M		agree-flagged
+L33	2	323	M	A:-	gap
+L33	3	3231	M	B:1	differ
+L33	4	93	M		agree-flagged
+L33	5	63	M		agree-flagged
+L33	6	1	M		agree-flagged
+L33	7	237	M	B:23	differ
+L33	8	73	M	B:773	differ
+L33	9	93	M		agree-flagged
+L33	10	232	M		agree-flagged
+L33	11	05	M		agree-flagged
+L33	12	3	M	B:-	gap
+L33	13	50	M		agree-flagged
+L33	14	23	M		agree-flagged
+L33	15	50	M		agree-flagged
+L33	16	23	M		agree-flagged
+L33	17	30	M		agree-flagged
+L33	18	2	M		agree-flagged
+L33	19	23	M		agree-flagged
+L33	20	50	M		agree-flagged
+L33	21	23	M		agree-flagged
+L33	22	30	M		agree-flagged
+L33	23	25	M		agree-flagged
+L33	24	95	M		agree-flagged
+L33	25	65	M	A:-	gap
+L33	26	67	M	B:72	differ
+L33	27	22	M	B:23	differ
+L33	28	90	M	B:99	differ
+L33	29	05	M		agree-flagged
+L33	30	0770	M	B:-	gap
+L33	31	50	M	B:-	gap
+L33	32	95	M	B:07	differ
+L33	33	23	M	B:70	differ
+L33	34	37	M	B:05	differ
+L33	35	73	M	B:373	differ
+L33	36	70	M		agree-flagged
+L33	37	95	M		agree-flagged
+L33	38	23	M		agree-flagged
+L33	39	60	M		agree-flagged
+L33	40	05	M		agree-flagged
+L33	41	63	M		agree-flagged
+L33	42	30	M		agree-flagged
+L33	43	73	M		agree-flagged
+L33	44	25	M		agree-flagged
+L33	45	67	M		agree-flagged
+L33	46	7	M	B:-	gap
+L33	47	02	M	B:-	gap
+L33	48	3239	M	B:70	differ
+L33	49	05	M	B:23	differ
+L33	50	3239	M	B:239	differ
+L33	51	373	M	B:73	differ
+L33	52	05	M		agree-flagged
+L33	53	93	M		agree-flagged
+L33	54	05	M	B:03	differ
+L33	55	312	M	B:12	differ
+L33	56	330	M		agree-flagged
+L33	57	25	M		agree-flagged
+L33	58	17	M	A:-	gap
+L33	59	175	M	B:5	differ
+L33	60	23	M	B:231	differ
+L33	61	125	M	B:25	differ
+L33	62	277	M		agree-flagged
+L33	63	370	M		agree-flagged
+L34	1	93	M		agree-flagged
+L34	2	73	M		agree-flagged
+L34	3	23	M		agree-flagged
+L34	4	60	M		agree-flagged
+L34	5	23	M		agree-flagged
+L34	6	63	M		agree-flagged
+L34	7	50	M		agree-flagged
+L34	8	23	M		agree-flagged
+L34	9	93	M		agree-flagged
+L34	10	123	M		agree-flagged
+L34	11	05	M		agree-flagged
+L34	12	325	M		agree-flagged
+L34	13	65	M	B:63	differ
+L34	14	05	M		agree-flagged
+L34	15	T	M	B:-	gap
+L34	16	05	M	B:95	differ
+L34	17	77	M		agree-flagged
+L34	18	25	M		agree-flagged
+L34	19	65	M		agree-flagged
+L34	20	05	M		agree-flagged
+L34	21	T	M	B:-	gap
+L34	22	77	M		agree-flagged
+L34	23	65	M		agree-flagged
+L34	24	77	M	A:-	gap
+L34	25	26	M	A:-	gap
+L34	26	50	M		agree-flagged
+L34	27	70	M		agree-flagged
+L34	28	23	M	B:27	differ
+L34	29	07	M		agree-flagged
+L34	30	05	M		agree-flagged
+L34	31	23	M		agree-flagged
+L34	32	95	M		agree-flagged
+L34	33	123	M		agree-flagged
+L34	34	05	M		agree-flagged
+L34	35	34	M		agree-flagged
+L34	36	09	M	A:-	gap
+L34	37	093	M	B:3	differ
+L34	38	60	M		agree-flagged
+L34	39	10	M		agree-flagged
+L34	40	50	M		agree-flagged
+L34	41	27	M		agree-flagged
+L34	42	60	M		agree-flagged
+L34	43	27	M	A:-	gap
+L34	44	77	M	A:-	gap
+L34	45	05	M	A:-	gap
+L34	46	773	M	B:05	differ
+L34	47	39	M		agree-flagged
+L34	48	123	M		agree-flagged
+L34	49	75	M		agree-flagged
+L34	50	23	M		agree-flagged
+L34	51	511	M		agree-flagged
+L34	52	6	M		agree-flagged
+L34	53	70	M		agree-flagged
+L34	54	05	M		agree-flagged
+L34	55	51	M	A:-	gap
+L34	56	1	M	B:19	differ
+L34	57	95	M	B:5	differ
+L34	58	27	M		agree-flagged
+L34	59	60	M		agree-flagged
+L34	60	27	M	A:-	gap
+L34	61	2777	M	B:77	differ
+L34	62	05	M		agree-flagged
+L34	63	3	M	A:-	gap
+L34	64	70	M	A:-	gap
+L34	65	3	M		agree-flagged
+L35	1	23	M		agree-flagged
+L35	2	11	M		agree-flagged
+L35	3	6	M		agree-flagged
+L35	4	05	M		agree-flagged
+L35	5	3	M	B:-	gap
+L35	6	25	M	B:325	differ
+L35	7	65	M		agree-flagged
+L35	8	40	M		agree-flagged
+L35	9	25	M		agree-flagged
+L35	10	13	M		agree-flagged
+L35	11	0	M	B:02	differ
+L35	12	23	M	B:3	differ
+L35	13	19	M		agree-flagged
+L35	14	65	M		agree-flagged
+L35	15	63	M		agree-flagged
+L35	16	50	M		agree-flagged
+L35	17	05	M		agree-flagged
+L35	18	3	M	B:-	gap
+L35	19	63	M		agree-flagged
+L35	20	2	M		agree-flagged
+L35	21	05	M	A:-	gap
+L35	22	65	M	B:39	differ
+L35	23	05	M		agree-flagged
+L35	24	3	M	B:327	differ
+L35	25	63	M	B:05	differ
+L35	26	27	M	B:73	differ
+L35	27	05	M		agree-flagged
+L35	28	65	M		agree-flagged
+L35	29	05	M		agree-flagged
+L35	30	65	M	B:63	differ
+L35	31	73	M		agree-flagged
+L35	32	05	M		agree-flagged
+L35	33	5	M	B:-	gap
+L35	34	0	M	B:05	differ
+L35	35	20	M		agree-flagged
+L35	36	63	M	B:-	gap
+L35	37	95	M	B:-	gap
+L35	38	231	M	B:-	gap
+L35	39	25	M	B:-	gap
+L35	40	05	M	B:-	gap
+L35	41	3239	M	B:03	differ
+L35	42	95	M		agree-flagged
+L35	43	231	M		agree-flagged
+L35	44	25	M		agree-flagged
+L35	45	93	M		agree-flagged
+L35	46	70	M		agree-flagged
+L35	47	93	M		agree-flagged
+L35	48	10	M		agree-flagged
+L35	49	05	M	A:-	gap
+L35	50	50	M	B:05	differ
+L35	51	65	M		agree-flagged
+L35	52	05	M	B:-	gap
+L35	53	29	M		agree-flagged
+L35	54	05	M	B:50	differ
+L35	55	912	M	B:95	differ
+L35	56	123	M		agree-flagged
+L35	57	05	M	A:-	gap
+L35	58	9	M	B:99	differ
+L35	59	23	M		agree-flagged
+L35	60	73	M		agree-flagged
+L35	61	93	M		agree-flagged
+L35	62	05	M		agree-flagged
+L35	63	93	M		agree-flagged
+L35	64	05	M	B:50	differ
+L35	65	05	M		agree-flagged
+L35	66	63	M		agree-flagged
+L35	67	112	M	B:-	gap
+L35	68	3	M	B:123	differ
+L35	69	05	M		agree-flagged
+L35	70	70	M	B:-	gap
+L35	71	2	M	B:40	differ
+L35	72	3	M	B:23	differ
+L35	73	93	M		agree-flagged
+L35	74	50	M		agree-flagged
+L35	75	95	M		agree-flagged
+L36	1	10	M		agree-flagged
+L36	2	50	M	B:-	gap
+L36	3	23	M	B:-	gap
+L36	4	23	M	B:1023	differ
+L36	5	14	M	B:	differ
+L36	6	99	M		agree-flagged
+L36	7	60	M		agree-flagged
+L36	8	05	M	B:-	gap
+L36	9	73	M		agree-flagged
+L36	10	03	M		agree-flagged
+L36	11	23	M		agree-flagged
+L36	12	63	M		agree-flagged
+L36	13	73	M		agree-flagged
+L36	14	07	M		agree-flagged
+L36	15	73	M		agree-flagged
+L36	16	23	M		agree-flagged
+L36	17	93	M		agree-flagged
+L36	18	1	M		agree-flagged
+L36	19	4	M		agree-flagged
+L36	20	05	M	B:-	gap
+L36	21	23	M		agree-flagged
+L36	22	05	M		agree-flagged
+L36	23	25	M	A:-	gap
+L36	24	05	M		agree-flagged
+L36	25	7	M	B:-	gap
+L36	26	50	M	B:30	differ
+L36	27	93	M	B:19	differ
+L36	28	94	M	B:394	differ
+L36	29	63	M		agree-flagged
+L36	30	273	M		agree-flagged
+L36	31	732	M	B:73	differ
+L36	32	9	M	B:29	differ
+L36	33	16	M		agree-flagged
+L36	34	65	M		agree-flagged
+L36	35	23	M		agree-flagged
+L36	36	4	M		agree-flagged
+L36	37	05	M		agree-flagged
+L36	38	25	M		agree-flagged
+L36	39	20	M		agree-flagged
+L36	40	25	M		agree-flagged
+L36	41	65	M	B:63	differ
+L36	42	8	M	B:85	differ
+L36	43	75	M		agree-flagged
+L36	44	27	M		agree-flagged
+L36	45	5	M		agree-flagged
+L36	46	03	M	B:-	gap
+L36	47	03	M	B:-	gap
+L36	48	1	M	B:-	gap
+L36	49	4	M	B:0311	differ
+L36	50	05	M	B:02	differ
+L36	51	2	M	B:4052	differ
+L36	52	373	M	B:2373	differ
+L36	53	5	M		agree-flagged
+L36	54	63	M		agree-flagged
+L36	55	8	M	B:85	differ
+L36	56	75	M		agree-flagged
+L36	57	27	M		agree-flagged
+L36	58	5	M	B:-	gap

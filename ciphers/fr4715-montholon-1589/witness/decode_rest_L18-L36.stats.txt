@@ -1,0 +1,3 @@
+---
+grades: H=1039 M=12 I=419 total=1470
+unread fraction (I / total): 0.285

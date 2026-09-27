@@ -68,11 +68,19 @@ def main():
                 continue
             lookup = glyph_map.get(sign, sign)
             row = sign_to_row.get(lookup)
+            note = ""
+            if row is None and len(lookup) > 1 and lookup[0] == "0":
+                # A leading zero is common in the passes' output for the key's 1-digit
+                # signs (1, 5); the key has no sign beginning with "0", so try without it.
+                stripped = lookup.lstrip("0")
+                if stripped in sign_to_row:
+                    row = sign_to_row[stripped]
+                    note = f"stripped-leading-zero:{sign}"
             if row is None:
                 unmatched.append((r["line"], r["position"], sign))
                 out.write(f"{r['line']}\t{r['position']}\t?\tunmatched:{sign}\t{conf}\n")
                 continue
-            out.write(f"{r['line']}\t{r['position']}\t{row}\t\t{conf}\n")
+            out.write(f"{r['line']}\t{r['position']}\t{row}\t{note}\t{conf}\n")
 
     if unmatched:
         print(f"{len(unmatched)} unmatched (non-dotted, no exact key row) signs -- check by hand:", file=sys.stderr)

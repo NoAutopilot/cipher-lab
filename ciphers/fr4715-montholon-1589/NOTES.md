@@ -96,10 +96,11 @@ this unit (not needed -- no printed-volume page to confirm, unlike unit A). No c
   digitised cell and this NOTES.md's own citation above.
 - Once a reading exists: `tools/print_check.py` on the decoded phrases (rule 10).
 
-## MONT-4715 (27 Sept 2026) -- in progress, checkpoint
+## MONT-4715 (27 Sept 2026)
 
-Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-4715.md`. Job in progress; this is a mid-job checkpoint
-commit (two blind transcription subagents running in the background), not the final report.
+Per `.claude/briefs/runs/2026-09-27-parent-ytbiz-mont-4715.md`. Transcribed f.81r's cipher passage (two blind
+passes), decoded with `keys/key_vieuville_nevers.tsv`, calibrated against the printed opening. **Calibration
+FAILS the pre-registered gate.** Status stays `open`.
 
 **U1 crops.** `python3 tools/iiif_lines.py --ark btv1b52509819x --canvas 177 --region 326,1285,3630,2243 --out
 ciphers/fr4715-montholon-1589/images --prefix f81r --debug` (native region found by scaling the 1000px eye-check
@@ -129,3 +130,88 @@ Images folder: 25 MB (under the 30 MB limit) after the wide/intermediate crops w
 
 Network log this job: 0 new gallica.bnf.fr requests for the crop fix (region cut from the already-cached full-page
 source fetched by INTAKE-4715); the U1 region fetch itself was 1 request (cached locally after).
+
+**U2/U3 blind passes.** Two independent Sonnet subagents (`witness/pass_a.tsv`, `witness/pass_b.tsv`), each given
+only the 35 `f81rsheet_Lnn.jpg` sheets and the key's sign inventory (letters only, not meanings), transcribing
+L02-L36 (L02's tail and L36's head/tail carry the folio's own clear-French salutation/closing, marked
+`[PLAIN:word]`; the dense middle is cipher). Both passes succeeded this time (v. the v1 failure above) but both
+flagged the hand as genuinely hard even at 3x zoom: recurring 0/6, 1/7, 2/3, 3/5, 3/8, 9/g digit-shape confusions,
+named independently by both passes before they saw each other's output. Pass A: 2376 sign rows. Pass B: 2217 sign
+rows.
+
+**U4 reconciliation.** `python3 tools/reconcile_passes.py witness/pass_a.tsv witness/pass_b.tsv --out-dir
+witness --crops images` (NW alignment). **Pass agreement: 1487/2524 = 58.9%** pooled (per-line range roughly
+41-80%, `witness/agreement.tsv`) -- moderate, consistent with both passes' own stated difficulty, not a tool or
+convention error. `witness/ciphertext_draft.tsv` (2524 rows) is the agreed/majority sign per position, graded M
+throughout (reconcile_passes.py's own rule: agreed-but-flagged-by-either-pass -> M; almost every row was M/L
+confidence in at least one pass, so almost nothing reached H here) -- **not independently reconciled against the
+source crops by a human/model arbiter this job**, budget was spent on the crop-legibility fix instead; this is
+the auto-reconciled (majority/first-pass) draft, named as the next step's target below.
+`witness/disagreements.tsv` (1037 rows) is where the two passes differ.
+
+**Sign -> key_row conversion.** `scripts/signs_to_witness.py` (target-local, not promoted to tools/ this job --
+see its own docstring) converts `ciphertext_draft.tsv`'s raw digit strings to `decode_witness.py`'s `key_row`
+format by an **exact match** against `keys/key_vieuville_nevers.tsv`'s own sign column, not that tool's built-in
+`nNN` substring lookup: the key's row 22 (bold "1", -> r) is a substring of row 3's sign "10" (-> b), which sits
+earlier in the file, so decode_witness.py's own `_numeral_lookup` would silently resolve a bare "1" to "b" instead
+of "r" -- flagging this here as a landmine in `tools/decode_witness.py` for whoever next uses its `nNN` convention
+with a key that has any 1-digit sign sharing digits with an earlier 2-digit one. A leading zero (very common in
+both passes' output, e.g. "05") is stripped before lookup when the stripped form matches a key sign (the key's
+row 1, sign "5", has no "05" row -- almost certainly the passes' own formatting habit, not a real second digit).
+1053 raw signs were unmatched before this normalisation, 716 after (`witness/witness_signs.tsv`, 2525 rows); the
+remaining 716 are mostly 3-5 digit runs (segmentation disagreements between the passes on where one sign ends and
+the next begins in the dense hand) or genuinely off-inventory pairs, left as `key_row=?` (graded I in the decode,
+never guessed).
+
+**U5 calibration.** `plain` = `known_plaintext.txt`'s printed opening, chunked into 15 rows by its own printed line
+breaks (`witness/witness_opening_plain.tsv`). `python3 tools/decode_witness.py --key
+keys/key_vieuville_nevers.tsv --signs witness/witness_signs.tsv --plain witness/witness_opening_plain.tsv
+--shuffles 20 --seed 1 --key-rows-out witness/key_rows_calibration.tsv`:
+
+```
+full passage: real key 0.4636 (541/1167 aligned letters); 20 shuffled keys mean 0.4227 sd 0.0334 min 0.3470 max 0.4884; z 1.22; rank 2 of 21
+```
+
+Ran against the FULL `witness_signs.tsv` (all of L02-L36, not line-sliced): `decode_witness.py`'s alignment is
+global over the whole passage, so signs beyond the true opening's own extent (the opening runs roughly L02-L17,
+by cumulative sign count against `aligned_dump.txt`'s own 959 tokens -- see below) simply have nothing left to
+match once the clerk plaintext (1167 letters) is consumed, and cannot inflate the real-key score; a `--sample-lines`
+attempt to slice cleanly by folio line failed (`plain`'s own row ids, p1-p15, don't correspond to signs' Lnn ids --
+tool's own line-id-matching design, not built for this shape of witness; not fixed this job, worked around by
+running unsliced instead).
+
+**Gate (pre-registered, this job's brief): z >= 2 AND >= 30 aligned letters.** n=1167 aligned letters -- **well
+powered**, not the NEV lane's "calibration underpowered" shape. **z=1.22 does not clear the gate.** The real key
+still beats the shuffled mean (0.4636 vs 0.4227) and ranks 2nd of 21, so there is a real, non-trivial signal in
+the right direction, consistent with the key itself being correct and the shortfall being transcription noise
+(58.9% raw pass agreement) rather than a wrong key -- but this is short of the pre-registered bar, so **not** a
+pass, and this reading is not sent to a verifier.
+
+**Diagnostic decode, lines L18-L36 (beyond the calibration range).** `python3 scripts/decode_rest.py
+witness/witness_signs.tsv keys/key_vieuville_nevers.tsv L18 L36` (target-local script; grades H = letter
+homophone from the key table, M = dotted word-code resolved from `aligned_dump.txt`'s own gloss or, failing that,
+nevers.htm's fr.3633 sibling-letter list -- named M per rule 4, not guessed -- I = illegible/unmatched/unresolved
+dotted code). Written to `reading.txt`. **H=1039 M=12 I=419, total=1470, 28.5% unread.** The readable majority
+does not parse as French words (`reading.txt`) -- consistent with the failed calibration on the same
+transcription, not a contradiction of it. **This is not a reading and is not offered to a verifier.** Lines
+L02-L17 (the calibration range) are not separately re-decoded: Tomokiyo's own printed opening
+(`known_plaintext.txt` / `aligned_dump.txt`, grade C) already covers that span at a higher grade than anything
+this job's transcription could produce.
+
+**print_check.py:** not run. Rule 7's "once a reading exists" does not apply -- no reading exists this job.
+
+**Named next step, in order of expected value:** (1) a targeted reconciliation pass against the source crops on
+`witness/disagreements.tsv`'s 1037 rows (not a third independent blind full-page transcription -- the two passes
+already agree on the shape of the problem, recurring digit-shape confusion, not a segmentation or convention
+gap) -- Usage 6's own "reconciliation is a distinct priced step" applies; this job's budget went to the
+crop-legibility fix instead of a human/model arbiter pass. Raising real pass accuracy is the most direct lever on
+a calibration that is well-powered (1167 letters) but short on precision (58.9% raw agreement), not scarce
+material -- f.81v or a second witness letter would not fix a transcription-accuracy shortfall on f.81r itself. (2)
+Once reconciled, re-run `tools/decode_witness.py` unchanged; if the gate then passes, decode the rest of f.81r
+(L18-L36) properly and hand to a verifier. (3) `tools/decode_witness.py`'s `nNN` numeral lookup should get an
+exact-match fix or a documented caveat (flagged above) before another target relies on that convention with a
+key carrying 1-digit signs.
+
+Requests this job: 0 new gallica.bnf.fr fetches (crops cut from the already-cached region source). Subagents: 4
+(two blind-pass attempts on the too-wide crops, declined; two blind passes on the corrected crops, both
+completed). No credentials, no AskUserQuestion, no novelty wording, owner not named.

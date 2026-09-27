@@ -1,0 +1,39 @@
+# BnF fr.4715, no.58 (f.81r), Montholon to an unnamed recipient, Tours, 8 Nov 1589
+# MONT-4715, 27 Sept 2026. Regenerate with:
+#   python3 scripts/decode_rest.py witness/witness_signs.tsv keys/key_vieuville_nevers.tsv L18 L36
+#
+# STATUS: NOT a validated reading. The witness calibration against Tomokiyo's own printed opening
+# (known_plaintext.txt / aligned_dump.txt) FAILS the pre-registered gate (z=1.22, gate z>=2; well
+# powered at 1167 aligned letters, so this is a real failure, not an underpowered non-test -- see
+# NOTES.md "MONT-4715 (27 Sept 2026)"). The decode below, of lines L18-L36 (the folio's cipher text
+# beyond Tomokiyo's printed opening) through the same key and the same blind transcription, is
+# reported as a diagnostic only: it produces no readable French (28.5% of tokens unread, and the
+# readable majority does not parse as words), consistent with the failed calibration, not a
+# contradiction of it. Do not quote this as a reading; do not send it to a verifier.
+#
+# Grade counts (rule 4), lines L18-L36 only: H=1039 (letter homophone from keys/key_vieuville_nevers.tsv)
+# M=12 (dotted word-code resolved from aligned_dump.txt's own gloss or nevers.htm's fr.3633 sibling list)
+# I=419 (illegible / unmatched / unresolved dotted code) -- total 1470, 28.5% unread.
+# Lines L02-L17 (the calibration range) are NOT re-decoded here: Tomokiyo's own printed reading
+# (grade C, known_plaintext.txt / aligned_dump.txt) already covers that span at a higher grade than
+# anything this job's transcription could produce.
+
+L18	u__iceft__nece__ai_[que]faia_nar_aybdemeu_rauecl__a_uecluy[que]_legat_unia_unia___t
+L19	habileaa_ucced_raed_ricaathali_m___ereuniane_cag_cagnaia_eceluy[qui]fplu
+L20	ea_t_mia__liberae_gaau____n_radmc_ct_et_faa_aecla__xetiua__a_a_[qui]puia_
+L21	tnepe_et__lacauaa_aaa_chaa__uacaura_a_aitau_a_t_eraeuraeuraa_aeur_a_ayaulme_faxaitrcle__gent_
+L22	tu_ente_i_te_tca_eeume_te__lemalacantca_ramaaaulieura_a_peael__h_f__a__eu__eu__a_lue
+L23	utianalnemad__e__aua__e_adara__a___ac_ada_rara_rur__rapc_e__ra_entl__d__a__le_g_
+L24	pera_____aa___u_p_auuiruneambitia_uneuayedauceef_aaiaaubana[que]l__aaudelpe___pa_aa_latapaaa
+L25	hhatua__eauaaupfar_unecaamu__a_aaup_mad__lea__a___a_auuraab_a__ana_itai_a_du_a____pa_d___eer[que]a_cha
+L26	baneariua_t_arpbap__fauarauar_a_a_aga_ar[que]daileura_auieaauiea_une
+L27	entend_a_acha__er__raa__a_aa_ta___a_u_atia__tianra_l_p_a__a__ana_aulta_ta__iuge_a
+L28	di__ea_a_gue_a_iea_a_c___ea_ne_a_a__mauuaia__ff_e_t_anauayageac_a_[que]pd_axrrlea_tatledcitgilat_ilat_fe_
+L29	dentp__tent_apa_nc_paa__ault_m__t[que]n_pa__c_dypa_n_a_t_nep_te_dra_ffait_ddault___c[que]i__puia_c__la
+L30	ault_me__ag_pa___pa_antamaul______b__lt__e_r_a__u_xhara<'34?>mla_lep_mai_p_a
+L31	_falaya_aua_urlab_naab_ncheat__aa_t_aad_ag_chea___d_lat__anguelet_[que]i_nuai_nuaye_
+L32	aurul_agauld_rag_ragan_tem_tae_au_aea_t_ad_taa_[que]_aypen_ed_l_mi_
+L33	a__uir_nu_a_leleg_elegatc__ya_lte_nptemaigna____a__aua__a__e___
+L34	unemeileu_a_caxa_acax_c__lpe_aet_a__umbl_m__a___de__pa_rt_m__a_p_
+L35	er_a_acha__ercila_i_aca_i_acacnaa_fit_aa_t_aupubalca_a__a_enuauaai__ap__ult
+L36	blee__man_ein_neur_aeaaa_luui___rce_aafac_d_a__r_a__ai_d_a
