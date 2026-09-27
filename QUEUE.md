@@ -7127,3 +7127,29 @@ Borssele-Heinsius and (4) Oldenbarnevelt-Brederode both wait on a person (an arc
 literature lead) and are not cheap-test candidates today. Borssele-Heinsius (H.A. 1836) is already ASKS.md
 row 46 ("single most decisive item"); Oldenbarnevelt-Brederode has no ASKS row yet (its blocker is a dead-end
 search, not an owner-actionable request) and does not need one until a new lead surfaces.
+
+## SCOUT-OWN-6 key-adjacent candidates, 27 Sept 2026, 02:52 UTC
+
+Worker SCOUT-OWN-6 (Sonnet), for the owner-account parent. The 15 unique entries so far came almost entirely
+from letters with a key already on file next to them; that pool was spent, so this job re-swept Tomokiyo's 90
+Cryptiana pages carrying an undeciphered mention (`sources/cryptiana/CRYPTO-INDEX.tsv`) for the same shape:
+undeciphered by us AND a period key already identified in his own text ("can be deciphered with", "can be read
+with"). Full register: `KEY-ADJACENT.tsv` (14 rows this pass, ranked digitised-first, digits/words before
+symbols, key fully printed before partly, sibling decipherment yes before unknown; not exhaustive of the 90
+pages within this job's 60-minute box -- see KEY-ADJACENT.tsv's own note). Top 5 below; per the fr.7129 lesson
+(NOTES.md of `fr7129-villeroy-bongars-1604`, 26-27 Sept: blind shape transcription of a SYMBOL cipher caps at
+40-70% agreement even with the key on hand), digit-shaped and Gallica-confirmed rows rank above symbol ones.
+
+| Rank | Target | Source row | Kind | Shape | Key status | Digitised | Est. cost | Status |
+|---|---|---|---|---|---|---|---|---|
+| 1 | Henry III to Segur, BnF 500 de Colbert 401, f.321 (June 1586) + f.333 (10 July 1586) | KEY-ADJACENT.tsv row 1 (henryiii.htm) | cryptanalysis-adjacent (key from an interlinear decipherment on f.321 itself) | digits (numerical cipher) | key printed, from the same volume's own interlinear decipherment | yes, Gallica ark btv1b10035574w | $5, Sonnet | queued, key-adjacent, SCOUT-OWN-6 |
+| 2 | Lodovico Birago to Duke of Nevers, BnF fr.3251, 7 folios (Ceppo-Nevers cipher 1570-71: f.11/f.21v/f.35; Nevers-Birago 1572 cipher: f.138/f.144/f.152/f.160) | KEY-ADJACENT.tsv row 2 (nevers.htm) | recovery | digits | key printed, both ciphers reconstructed from decipherments in the same volume | yes, Gallica ark btv1b9060248g (fr.3251) | $8, Sonnet | queued, key-adjacent, SCOUT-OWN-6 |
+| 3 | Duke of Mantua to Duke of Nevers, BnF fr.3979, fol.92 no.42 (17 Sept 1590) | KEY-ADJACENT.tsv row 3 (league.htm / mantua.htm) | cryptanalysis-adjacent | unknown -- check mantua.htm before pricing | key printed, reconstructed from other 1593 letters | yes, Gallica ark btv1b9060544v | $4, Sonnet | queued, key-adjacent, SCOUT-OWN-6 |
+| 4 | Commandeur de Neuchaise ("Floridor") to Colbert, Melanges de Colbert 108, f.222 (cipher shown on f.218, 1662) | KEY-ADJACENT.tsv row 4 (louisxiv0.htm) | cryptanalysis-adjacent | symbols (simple substitution) | key printed, reconstructed from the sibling f.218 in the same letter | yes, Gallica ark btv1b10035507b | $3, Sonnet | queued, key-adjacent, SCOUT-OWN-6 |
+| 5 | Spinelli brothers' cipher letter, Spinelli Family Papers (Beinecke record 3811294) | KEY-ADJACENT.tsv row 5 (henryvii.htm) | cryptanalysis-adjacent | symbols (homophonic substitution with nulls) | key printed, reconstructed by Ekaterina Domnina (2015 paper) | yes, Beinecke Digital Collections link given | $4, Sonnet | queued, key-adjacent, SCOUT-OWN-6 |
+
+Rows 6-14 stay in `KEY-ADJACENT.tsv` only (not promoted here): three more Melanges de Colbert / Clair.577
+D'Estrades letters with a printed key but unconfirmed digitisation, a Manchester Papers word-code group
+(THE=454, Beinecke Osborn MSS) already mostly glossed by Tomokiyo, a BnF fr.20974/fr.3976 pair, a Simancas
+letter gated behind DECODE's account-wide image block, and one Habsburg row with no shelfmark yet (only a
+1970s-secondary-source figure) -- lowest rank, needs an archive/shelfmark lookup before it is a real candidate.
