@@ -1284,3 +1284,16 @@ unchecked.
 - lead; Monroe reel 9 frame 955 extends frame 954's undated table down through numbered value 1700; a new crop reads 812=the (M), making it provisionally a THE=812 table distinct from THE=968/972/15 -- unchecked.
 - archival-route; the 1963 Monroe index lists an undated "Jefferson Thomas -- Cipher Key" printed form (Series 1) and a key "prepared for JM2" (Series 2) as possible identification leads for the frame 954/955 table, not proof of attribution -- unchecked.
 - next-step; the checkpoint's own named next action is checking further occurrences of marked versus unmarked 1295 across mjm014115's remaining untranscribed pages (1033, 1038) before further primary-key work -- unchecked.
+
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 21:37, 27 Sept 2026)
+
+Landed from PR 52 (`second-opinions/chatgpt-checkpoint-2026-09-27-2137.md`, PR-LAND-19). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; a source-grounded plaintext/cipher alignment in the Livingston-to-Monroe 11 September 1803 duplicate (images 1033/1038) aligns a 12-group whole-run (476 168 510 1031 1601 1675[diamond] 976 164 1021 91 351 905[quote-mark]) to copy A's prose "you did make it after all those difficulties were removed" -- a whole-run alignment only, no word-by-word split licensed -- unchecked.
+- lead; two provisional anchors within that run (476=you, 510=make) are supported by separate interlinear annotations on images 1034.jpg and sep11-1031.jpg respectively -- unchecked.
+- correction/caution; a numeral discrepancy between the two manuscript copies is now recorded explicitly: copy A reads 1070, copy B reads 1072, at the same position (between groups 510 and 1421) -- both preserved, neither reading "repaired" to match the other -- unchecked.
+- lead/negative; no additional occurrence of the marked (diamond) 1295 was found in this batch's review of images 1033/1034/1038/1039, but this is not an exhaustive transcription or a verified-absence claim; images 1035 and 1040 remain unretrieved -- unchecked.
+- next-step; the checkpoint's own named next action is inspecting PR 43's existing 17/18 September Livingston images for a second annotated occurrence of the marked Talleyrand run or unmarked 1295, to decide whether the May/September 1295 discrepancy is a copying error, an alternate marked entry, or a key change -- unchecked.
