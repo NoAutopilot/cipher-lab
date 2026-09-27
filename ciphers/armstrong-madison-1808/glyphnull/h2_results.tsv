@@ -1,0 +1,3 @@
+model	N	K	target_score	controls_correct	n_shuffles	shuffle_mean	shuffle_sd	shuffle_p95	shuffle_max	shuffles_at_or_above_target	verdict
+null20	220	35	-274.415062	220/220;218/220;220/220	200	-287.867	4.392	-279.625	-275.804	0/200	PASS (target percentile 100.0)
+null20_22	207	34	-263.987431	207/207;205/207;207/207	200	-263.567	4.143	-257.430	-248.836	102/200	FAIL (target percentile 49.0)
