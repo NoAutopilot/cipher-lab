@@ -13,4 +13,4 @@ PR-LAND-19	owner	.claude/briefs/runs/2026-09-27-parent-pr-land-19.md	Sonnet	4	40
 PR-LAND-20	owner	.claude/briefs/runs/2026-09-27-parent-pr-land-20.md	Sonnet	4	40	done 2026-09-27 22:55	2026-09-27 22:43	PRs 53-54 Armstrong checkpoints; PRs 53/54/55 landed 870273da, closed unmerged
 RUNNER-CONT-2	other	.claude/briefs/runs/2026-09-27-parent-runner-cont-2.md	Sonnet	3	30	queued	2026-09-27 23:16	re-bind account-2 armstrong and mercy runners to continuous mode
 PR-LAND-21	owner	.claude/briefs/runs/2026-09-27-parent-pr-land-21.md	Sonnet	4	40	claimed session_012C1pHcSq1HT62QVA82ckR1 2026-09-27 23:45	2026-09-27 23:43	PR 56 Armstrong checkpoint
-VERIFY-F61-FRAG-1	owner	.claude/briefs/runs/2026-09-27-parent-verify-f61-frag-1.md	Opus	8	60	claimed session_01RLi8CixTqT7GzVC2UJm91K 2026-09-27 23:45	2026-09-27 23:43	audit 1 of the f61 L10 fragment (reading-ready 23:26)
+VERIFY-F61-FRAG-1	owner	.claude/briefs/runs/2026-09-27-parent-verify-f61-frag-1.md	Opus	8	60	done 2026-09-27 23:55	2026-09-27 23:43	audit 1 of the f61 L10 fragment (reading-ready 23:26); L10 fragment held: map control reproduced, judge control not, 5/8 cells S, letters M
