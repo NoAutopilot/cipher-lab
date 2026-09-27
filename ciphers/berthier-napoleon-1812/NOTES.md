@@ -325,3 +325,145 @@ codebreaking.htm "Statistical Analysis", kwic.htm), then Bazeries' probable-phra
 syllabic phrase the subject must contain (cf. "les en-ne-mi-s"), cribbed from the Chuquet 1912 clear letters of 22 Dec 1812
 cited above. Cost band S (script pass; `tools/freq.py --contacts/--kwic` added by the worker with an offline test). The
 control for the contact-table reading is the same table on a shuffled-order copy of the groups. Status stays open.
+
+## BER-KWIC (27 Sept 2026, parent worker BER-KWIC)
+
+Ran the named next step. Tool: `tools/freq.py` gained `--contacts K`, `--kwic TOKEN --width W --sort left|right`,
+`--repeats N` and `--split-at N`, with `--help` text and an offline test (`tools/tests/test_freq.py`, 22/22 checks
+pass on a synthetic ten-line fixture, default output unchanged when no new flag is given). SYSTEM.md section 8's
+three built rows (contacts+kwic, repeats, split-at) moved into the `tools/freq.py` row of section 3b;
+`system_map_check.py` prints ok.
+
+**Which file.** `ciphertext.txt` (the brief's named input) carries an uncommented second line
+("Berthier to Napoleon, 22 December 1812") that freq.py's default tokeniser would fold in as five
+extra non-numeric tokens plus the trailing "...." marker as a sixth -- a real defect in that file for
+this kind of run, not something to silently fix (rule 2). Used `ciphertext_full.tsv` instead (the
+two-pass, image-sourced, already-settled 325-group reading NOTES.md's own Y9 section names as "the
+one to use for any future crib or key work"), flattened to `structure/flat.txt` (325 tokens, 207
+distinct, matches the tsv exactly).
+
+**Tables** (`ciphers/berthier-napoleon-1812/structure/`: `contacts.tsv`, `repeats.tsv`,
+`kwic-918.tsv`, `kwic-13.tsv`, `kwic-73.tsv`, `split.tsv`, plus the shuffled-control pair
+`contacts_shuffled.tsv`/`repeats_shuffled.tsv`).
+
+`--contacts 20` head (real run, `structure/contacts.tsv`):
+
+| token | count | pct | self_succession | tag | preceders | followers |
+|---|---|---|---|---|---|---|
+| 918 | 8 | 2.5 | 0 | neither | 10:2;820:1;69:1;450:1;838:1;388:1 | 1045:2;86:2;215:1;1043:1;29:1;694:1 |
+| 13 | 8 | 2.5 | 0 | neither | 701:1;602:1;43:1;289:1;370:1;644:1;25:1;1148:1 | 572:1;782:1;821:1;741:1;1202:1;718:1;599:1;357:1 |
+| 73 | 5 | 1.5 | 0 | suffix-like | 463:3;1105:2 | 710:1;793:1;1187:1;798:1 |
+| 1100 | 4 | 1.2 | 0 | suffix-like | 1045:2;711:1;507:1 | 493:1;415:1;1109:1;173:1 |
+| 821 | 4 | 1.2 | 0 | prefix-like | 989:1;13:1;607:1;617:1 | 791:3;694:1 |
+| 168 | 4 | 1.2 | 0 | prefix-like | 851:1;1187:1;875:1;322:1 | 854:2;828:1;923:1 |
+
+The prefix-like/suffix-like tag is **not** computed from self-succession (self-succession counts the
+same "XX" adjacency from either direction, so "often preceded by itself" and "never followed by
+itself" cannot literally both hold for the same statistic -- checked directly). It implements
+Yardley's actual finding as quoted in `codebreaking.htm` ("it was often preceded by the same group
+but was always followed by a different group"): left-context CONCENTRATION (one particular preceding
+token accounts for >=40% of occurrences) with right-context DIVERSITY (every following token
+distinct) tags suffix-like; the mirror tags prefix-like. Documented in the tool's own docstring.
+Self-succession is reported as its own column regardless (all zero for the top 20 in this ciphertext,
+both real and shuffled -- see control below).
+
+`--repeats 2` head (`structure/repeats.tsv`, 57 lines total): 14 recurring bigrams and 2 recurring
+exact trigrams (`168 854 1148` at positions 52 and 258; `918 1045 1100` at positions 0 and 41), then
+41 near-repeat trigram pairs (differ in exactly one of three positions).
+
+`--kwic` on the three most frequent groups (918, 13, 73), width 3, both sorts -- head of `kwic-918.tsv`:
+
+| pos | left_context | token | right_context |
+|---|---|---|---|
+| 0 | (start) | 918 | 1045 1100 493 |
+| 282 | 409 653 10 | 918 | 694 972 426 |
+| 194 | 875 212 450 | 918 | 1043 340 607 |
+
+**Range split.** The lowest gap in the 207 sorted distinct values (2..1388) that leaves a <=40-value
+low block is a tie: gap=1 at 139|140 (low block 16 distinct values, 2-139) and gap=1 at 235|236 (low
+block 28 distinct values, 2-235); resolved in favour of the larger block since 28 sits closer to a
+full alphabet size (26 letters), the more plausible size for Wallis's "small substitution cipher
+inside the code" (Tomokiyo practice 1). `--split-at 236` (`structure/split.tsv`):
+
+| side | tokens | distinct | IC |
+|---|---|---|---|
+| low (<236) | 60 | 28 | 0.0395 |
+| high (>=236) | 265 | 179 | 0.0039 |
+
+(alternative split at 140: low 39 tokens/16 distinct/IC 0.0742, high 286/191/0.0037 -- both alternatives
+recorded, neither chosen as definitive; this is a lead, not a result, per rule 4).
+
+**Control (U2, rule 3): shuffled order, seed 1812, same 325 groups/207 distinct multiset.** Only
+order-dependent statistics can differ; a per-token frequency figure is not a valid control here
+(CLAUDE.md rule 3's bCAS paragraph) -- contacts/repeats are order-dependent, so this is a real test:
+
+| statistic | target | shuffled (seed 1812) |
+|---|---|---|
+| recurring bigrams | 16 | 1 |
+| longest repeat (tokens) | 3 | 2 |
+| of top-20 tagged prefix/suffix-like | 9 | 1 |
+| self-succession total (top 20) | 0 | 0 |
+
+The target separates cleanly from its own shuffled-order control on every statistic that order can
+move (16 vs 1 recurring bigrams, longest repeat 3 vs 2, 9 vs 1 tagged groups): **contact-table
+reading is licensed at N=325** (not "not licensed", the brief's fallback wording). One caveat found
+by the control itself: the shuffle's lone tagged token (637, count 3) is a false positive of the
+tag rule at low counts (its 2-way-split left context of {741:1, 1388:1} clears the 0.4 concentration
+threshold on a denominator of only 2) -- the 9-vs-1 gap still holds, but a tag on a count-3 token is
+weaker evidence than one on a count>=5 token, noted for any future use of this tag.
+
+**Hypothesis (U3).** (1) The contact-table and repeat-count signal is real and licensed by the control
+above (16 vs 1 recurring bigrams; 9 of the top 20 groups tagged), so this is a genuine nomenclator with
+word/phrase-level structure, not noise. (2) The range-split test gives no clean single answer -- two
+candidate low-block sizes (16 or 28 codes) both plausible for a spelling alphabet, neither showing the
+sharply higher IC a tight monoalphabetic block would give (0.0395-0.0742 vs the 0.0026 flat-207-symbol
+baseline, a real but modest lift) -- and a one-part-dictionary check (the ten most frequent groups'
+range-position mapped against tools/data/fr18's word-type initial-letter distribution, one volume,
+`mmoiresetlettre01margoog.txt.gz`, 11,256 types) scatters the two joint-most-frequent groups (918, 13,
+both count 8) to opposite ends of the alphabet (predicted initials p and a) rather than clustering them
+as the same handful of extremely common short function words would under a strict one-part-alphabetical
+code. (3) Taken together, a code with a real internal structure but not a simple fully one-part-alphabetical
+design is the better-supported working hypothesis (two-part, or blockwise one-part per Tomokiyo practice 3);
+family choice stays open, pending a period key, not decided from these tables alone -- no grade above M
+anywhere in this section.
+
+Caveat on the one-part check: word-TOKEN initial-letter shares (not used here) are dominated by function
+words ("je" alone was 3.8% of all tokens in the sample file); word-TYPE shares (used here) are closer to a
+dictionary's own headword distribution but still not a real period dictionary's page layout -- `--onepart-dict`
+(Tomokiyo C2, still not built into freq.py) wants an actual period dictionary's headword-initial counts, not a
+running-text corpus's, before this check is more than a rough lead.
+
+**Bazeries probable-phrase list (LIST, not a run -- no group assigned a value).** From
+`scripts/letters.json`'s 34 Chuquet Dec-1812 Berthier-to-Napoleon letters (computed cross-corpus doc
+frequency, since XIX and XXIII -- the only two actually dated 22 Dec -- share just one 3+-word phrase
+between themselves, "commandement de la"; the other nine are phrases the subject, a Berthier
+dispatch of this campaign, plausibly contains, ranked by how many of the 34 letters use them).
+Excluded: "la guerre de russie" / "guerre de russie" (12/34 by raw count) is a page running-header
+OCR artifact bleeding into the extracted text ("y LA GUERRE DE RUSSIE 197" mid-sentence in XIX, "200
+LA giehrk de Russie" in XXIII), not real letter content -- flagged, not used as a crib.
+
+| phrase | doc freq (of 34) | syllable decomposition | units | repeats.tsv match at this length? |
+|---|---|---|---|---|
+| à votre majesté | 18 | à / vo-tre / ma-jes-té | 6 | no (no exact 6-gram repeat; near-repeat check only built at length 3) |
+| de la division | 14 | de / la / di-vi-sion | 5 | no (no exact 5-gram repeat) |
+| duc de tarente | 13 | duc / de / ta-ren-te | 5 | no |
+| du duc de | 13 | du / duc / de | 3 | yes, but not diagnostic -- two exact 3-gram repeats and 41 near-repeat 3-gram pairs exist at N=325, none identifiable as this specific phrase without a key |
+| la division heudelet | 11 | la / di-vi-sion / heu-de-let | 7 | no (no exact 7-gram repeat) |
+| le duc de | 10 | le / duc / de | 3 | yes, same caveat as "du duc de" (same length, indistinguishable from it this way) |
+| de votre majesté | 9 | de / vo-tre / ma-jes-té | 6 | no |
+| que votre majesté | 8 | que / vo-tre / ma-jes-té | 6 | no |
+| commandement de la | 1 (shared XIX/XXIII only) | com-man-de-ment / de / la | 6 | no |
+| que je reçois | 7 | que / je / re-çois | 4 | no (no exact 4-gram repeat) |
+
+No source letter is confirmed for this cryptogram (NOTES.md's Y9/BBER sections: the XIX/XXIII pairing
+is explicitly unconfirmed, and the LANE R7 crib test's best length-fit candidate is XXIX, 28 Dec, not
+either 22-Dec letter) -- so "position compatible with the clear letters' order" cannot be checked
+against any single hypothesised source text; the yes/no column above answers only "does a matching-length
+repeat structurally exist in the ciphertext at all", not "does this specific phrase's position match".
+Grade: none of this is graded above M (rule 4); nothing here is a reading.
+
+**NEXT-STEPS.tsv regenerated** (`python3 tools/next_steps.py`). Named next step: a family run gated
+by this hypothesis -- `tools/family_run.py --family homophonic` (or a two-part/blockwise variant once
+one exists) on the target with the range split reported above as a starting constraint, matched control
+first (rule 3), not a further contact-table pass at this N. Status stays `open`; no "solved", "new",
+"first", "unpublished" anywhere in this section.

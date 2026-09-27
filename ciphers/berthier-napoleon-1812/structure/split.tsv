@@ -1,0 +1,9 @@
+split at 236
+side	tokens	distinct	IC
+low(<236)	60	28	0.0395
+high(>=236)	265	179	0.0039
+--- alt ---
+split at 140
+side	tokens	distinct	IC
+low(<140)	39	16	0.0742
+high(>=140)	286	191	0.0037

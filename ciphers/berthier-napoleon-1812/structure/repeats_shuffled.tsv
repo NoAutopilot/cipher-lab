@@ -1,0 +1,7 @@
+length	ngram	count	positions
+2	918 1074	2	101,268
+
+near-repeats (length 3, differ in exactly one position):
+43	718 644 821	~	300	718 1003 821
+100	1087 918 1074	~	267	318 918 1074
+101	918 1074 907	~	268	918 1074 889
