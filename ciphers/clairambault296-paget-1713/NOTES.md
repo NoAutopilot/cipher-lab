@@ -461,3 +461,15 @@ capture). Requests this section: gallica.bnf.fr 61 (55 canvases attempted at 300
 requests; 5 needed a retry -- 98/100/120 recovered, 28/36 did not -- = 5 more; plus 1 canvas, 26, fetched as
 an initial connectivity check before the scripted run, 1 first attempt + 1 retry = 2 more), all >=2s apart,
 one retry per failed URL, no 403/429/altcha seen at any point. No other host. No subagents.
+
+## Desk runner, 27 Sept 2026
+
+LOCAL-QUEUE row L23 (ASKS row 51): a run from ChatGPT's remote cloud browser (not the owner's own machine)
+opened the Gallica thumbnail view for ark:/12148/btv1b9000759b, confirmed the volume still holds 316 images
+matching `canvas_sweep.tsv`'s 316 distinct canvas numbers, and found no eligible canvas left to inspect under
+the row's instruction to skip every listed number -- canvases 28 and 36 remain unread (both "connection
+reset" failures logged earlier, not completed inspections) rather than skippable-as-checked. No image number
+is reported for Paget's 14 January 1713 letter; this is not a "not there" finding, since 28 and 36 are still
+open. Row set `done 2026-09-27` as an exhausted attempt at the current instruction's scope; a follow-up row
+would need to name canvases 28 and 36 explicitly to get them read. Target status stays `open` (ASKS row 51
+unresolved).

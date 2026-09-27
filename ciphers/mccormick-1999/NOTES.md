@@ -161,3 +161,39 @@ result turns on the control's near-zero recovery, not on the language-check PASS
 already calls not meaningful) -- the verdict stands as written, with that caveat on record.
 
 SO lead prompt, 26 Sept 2026, QUEUE-FILL.
+
+## Leads (Verifier runner, 27 Sept 2026)
+
+SO-MCCORMICK-LEADS (SECOND-OPINIONS-QUEUE.tsv; PR 30; verbatim answer in
+`second-opinions/chatgpt-leads-2026-09-27.md`; the runner was given the prompt only, not this target's own
+plaintext/ciphertext -- leads only, every citation unchecked until verified here):
+
+1. **Known keys/codebooks/shorthand (unverified).** FBI's 2011 *FBI Story* says family reported childhood
+   coded notes and that investigators wanted a comparison sample; Tritto's 2012 *Riverfront Times*
+   interviews instead have his mother and cousin denying he wrote in code, while CRRU's Dan Olson stood by
+   his assessment -- a sourced conflict, not evidence for any particular key. No Gregg training or personal
+   codebook found in print; Gregg is only a possible control design. FBI Vault's 2002/2009/2010 lab reports
+   print no key or partial decoding.
+2. **Printed/documentary beyond Cipherbrain (context, not decoding aids).** Tritto 2012 again for contextual
+   detail (address/map comparisons, a "task list" impression of the circled groups; Olson's own address
+   comparisons had not yielded a non-coincidental hit). FBI Vault's 11-page lab packet (a process record,
+   not plaintext).
+3. **Named analysts (conjectural, none a decipherment).** Nick Pelling (*Cipher Mysteries* 2013, 2024) --
+   phonetic/local-geography hypotheses, isolates WLDNCBE/WLD'S NCBE, PRSEON, SE and numeric groups for
+   comparison, asks for independent handwriting samples. Jessica Lorraine Scott (Dunn), "Beyond
+   Cryptography" (Zenodo, 2026) -- a structural reading of CB as a recurring root with cannabis as a
+   candidate (not confirmed); its PDF 429'd for this runner, body unread, abstract only. Elonka Dunin
+   questioned McCormick's authorship after learning more of his background; Olson disagreed -- authorship
+   itself is an open fork, not settled either way.
+4. **Named next steps (concrete, untried here) -- flagged for the parent.** (i) Seek authenticated ordinary
+   handwriting or earlier patterned notes for a blind comparison, since the FBI/family accounts conflict on
+   whether he wrote in code at all. (ii) A pre-registered structural test on the observed token families
+   (NCBE/WLDNCBE/WLD'S NCBE, the -RSE family) against shuffled-order/frequency-matched nulls, with held-out
+   lines required to fit. (iii) Before trusting cheap test 4's annealer either way, build a synthetic
+   control matched to the target's actual 132-token shape (singleton fraction, recurrent-token fraction,
+   lexicon size) rather than relying on a longer, easier control -- the runner notes the repository's
+   existing 132-token control recovers only 0.8% of its own mapping (rule 3's positive-control-subsampling
+   amendment applies here too).
+
+No lead is a printed decipherment of this target or its ciphertext, and none is a check-solved candidate;
+item 4 names two concrete untried steps. No first/new/unpublished wording (rule 10).

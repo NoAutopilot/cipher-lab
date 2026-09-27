@@ -214,3 +214,13 @@ Hosts, previous pass (25 Sept 2026, kept for the record): WebSearch 3, academia.
 web.archive.org (WebFetch 1 + curl 1, both failed/blocked), digibug.ugr.es (WebFetch 1 + curl 1, both 504),
 catalogo.bne.es (WebFetch 2, empty render), github.com 2 shallow clones (shared with D2/D3/D8, grep only, not
 counted twice).
+
+## Desk runner, 27 Sept 2026
+
+LOCAL-QUEUE row L22 (ASKS row 45): a run from ChatGPT's remote cloud browser (not the owner's own machine,
+despite the row's prescribed runner label) reached academia.edu/37751652 (Tomokiyo, "Spanish Ciphers before
+Accession of King Ferdinand: 1470-1479") and was held at the site's Cloudflare "Performing security
+verification" challenge for the whole attempt -- an access failure, not a negative finding about the paper.
+The "Cipher (1476-1479)" section and any item-123/item-126 source attribution remain unread; no login
+interface was reached and no credential was used. Row set `done 2026-09-27` as an exhausted attempt, not a
+found-solved or ruled-out verdict -- target status stays `blocked` (ASKS row 45 unresolved).
