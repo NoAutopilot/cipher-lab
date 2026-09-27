@@ -9,17 +9,36 @@
       "canvas": 12,
       "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f12/full/1000,/0/native.jpg",
       "note": "this folder's own target f.11 no.6, Saluzzo 14 September 1570 -- ink foliation '11' confirmed, letter text and date visible, cipher block not examined (no reading, no decoding, per this job's brief)"
+    },
+    "f27r_canvas28.jpg": {
+      "folio": "27r",
+      "canvas": 28,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f28/full/1000,/0/native.jpg",
+      "note": "NEV-C2, 27 Sept 2026: witness f.27 no.14 (with decipherment). Ink foliation '27' confirmed on the right page. Offset +1 holds here (consistent with the four points already confirmed elsewhere in the volume). Cipher passage: about 1.5 lines around the middle of f.27r, ending '...come feci intendere all'Ecc.a V.ra' then signs continuing onto the next line; a clerk's plaintext decipherment IS present, interlinear, squeezed into the line space below the second cipher line's signs (not one gloss letter per cipher line -- the whole passage's gloss sits in a single cramped row) -- but it is written in a much smaller, more cramped hand than either the prose or the cipher signs, and even at Gallica's maximum native resolution (8424x5832 for this canvas) individual letterforms mostly blur together; a Sonnet blind read got only about 6 confident letters out of an estimated 25-30 signs' worth of gloss."
+    },
+    "f27/src_ark_12148_btv1b9060248g_f28_4717_3412_3285_463.jpg": {
+      "note": "native-resolution region crop (x,y,w,h = 4717,3412,3285,463 on canvas 28) fetched via tools/iiif_lines.py, covering the two manuscript lines that carry the cipher passage and its interlinear gloss; line crops f27_L01..L04 (s1/s2) cut from it, see f27/manifest.json"
+    },
+    "f39_canvas40_test.jpg": {
+      "folio": "39r",
+      "canvas": 40,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f40/full/1000,/0/native.jpg",
+      "note": "NEV-C2, 27 Sept 2026: witness f.39 no.20 (with decipherment). Ink foliation '39' confirmed on the right page; offset +1 holds here too. The last ~7 lines of f.39r are a dense, evenly-spaced block of cipher signs (some groups underlined, likely a name/word-code convention) with NO interlinear gloss anywhere in the block (checked directly and by a contrast-enhanced zoom) -- the line pitch is uniform throughout, with no extra half-line gap that a squeezed-in gloss would need."
+    },
+    "f39v_canvas41_test.jpg": {
+      "folio": "39v (left page) / 40r (right page, mostly blank apart from bleed-through)",
+      "canvas": 41,
+      "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f41/full/1000,/0/native.jpg",
+      "note": "NEV-C2, 27 Sept 2026: f.39v continues the cipher block for about 5 more lines (still no interlinear gloss), then plain Italian prose resumes and the letter closes 'Da Saluzzo il 30 novembre 1570', signed Lodovico Birago -- matches no.20's 30 Nov 1570 date, confirming this is the whole letter and the cipher passage runs to its end. f.40r (right page) checked at contrast-enhanced zoom for a possible loose/tipped-in decipherment sheet (per the sibling folder's f.178/179 precedent): none found -- only scattered ink dots, a later pencil-style X, and bleed-through from the facing leaf's own prose, no legible writing of its own. No decipherment for no.20 located on Gallica within this job's request budget."
     }
   },
   "target_folios_not_yet_fetched": {
     "f.21v no.11": "verso -- left page of canvas 23 (predicted canvas = 21+2, not eye-checked)",
     "f.35 no.18": "recto -- canvas 36 (predicted = 35+1, not eye-checked)",
     "f.87 no.45": "recto -- canvas 88 (predicted = 87+1, not eye-checked)",
-    "f.27 no.14 (witness, with decipherment)": "recto -- canvas 28 (predicted, not eye-checked)",
-    "f.39 no.20 (witness, with decipherment)": "recto -- canvas 40 (predicted, not eye-checked)",
-    "f.82 no.42 (witness, with decipherment)": "recto -- canvas 83 (predicted, not eye-checked)"
+    "f.82 no.42 (witness, with decipherment)": "recto -- canvas 83 (predicted, not eye-checked; not fetched this job -- see NEV-C2 in NOTES.md, held in reserve on the request budget)"
   },
   "requests": {
-    "gallica.bnf.fr": "used in confirming the shared canvas rule for this ark: 4 native.jpg fetches total across both fr.3251 folders (f11r canvas12, f19r canvas20, f119r canvas120, f189r canvas190; f138r canvas139 fetched for the sibling folder), 1 connection reset retried once per the good-citizen rule, all >=2s apart, descriptive script UA"
+    "gallica.bnf.fr": "used in confirming the shared canvas rule for this ark: 4 native.jpg fetches total across both fr.3251 folders (f11r canvas12, f19r canvas20, f119r canvas120, f189r canvas190; f138r canvas139 fetched for the sibling folder), 1 connection reset retried once per the good-citizen rule, all >=2s apart, descriptive script UA. NEV-C2 (27 Sept 2026) added 7 more against this job's own 8-request allowance: canvas28 1000px (1 connection reset, retried once), canvas28 info.json, one malformed-URL request (double ark prefix, this worker's own typo, HTTP 500, no retry needed since the fix was on our side), canvas28 native region crop via tools/iiif_lines.py, canvas40 1000px, canvas41 1000px -- 1 request held in reserve, f.82 not fetched this job."
   }
 }
