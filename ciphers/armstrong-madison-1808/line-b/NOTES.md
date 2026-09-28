@@ -418,3 +418,14 @@ Genl T. inquiry), not the cipher. 26 ids failed both fetches and are being retri
 re-run with retries in progress. **Result so far: search result, no new sentence about the cipher beyond Graham's;
 the reply chain as far as 9 Aug 1808 is silent on the undecyphered letter after 15-20 May.** Requests:
 web.archive.org about 420 so far this step (single-threaded, 1.6 s apart, one retry per id); 0 subagents.
+
+**B6 complete (04:2x UTC).** The 26 failed Madison ids were all recovered on the retry pass (`madison_retry.tsv`, 0
+failures left): no further hit. Jefferson series ids 8003-8090 (15 May-early June 1808, 89 pages, 2 still failing
+after two retries): only the cross-listed 15 May sentence (8003) and a figurative "decypher" (8025, to Randolph
+Harrison); Jefferson's letters to Madison of 17-31 May say nothing more about Armstrong's cipher; Lafayette to
+Jefferson (8071) mentions Armstrong in the ordinary way. **Verdict: done, search result** -- in the whole reply chain
+reachable (Madison 21-25 Feb and 16 May-9 Aug 1808, Jefferson 15 May-early June 1808) the undecyphered letter is
+named twice only: Madison to Jefferson 15 May and, five days later, Graham's duplicate-with-postscript (B15). No
+letter names the correspondent, the key, or a later decipherment. B12 (Aug-Dec 1808) stays open at its rank.
+Requests this step: web.archive.org about 760 in total (3 passes, single-threaded, 1.6 s apart), loc.gov 9;
+0 subagents. Time: 03:03-04:25 UTC by the clock, mostly background waiting.
