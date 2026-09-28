@@ -1009,3 +1009,40 @@ R-graded p.[1] boxes are the transcription steps; a re-run of this tool is one c
 class change, rule 10 wording. **Files:** `tools/crib_pattern.py`, `tools/tests/test_crib_pattern.py`, SYSTEM.md
 row; outputs in the table above (seconds of CPU per row). **Cost:** CPU only, no vision calls, no requests, no
 credentials -- recorded as 1.0 USD (the est). No AskUserQuestion, no other target touched.
+
+## Campaign step H27 (28 Sept 2026, 02:09-02:12 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H27: shrink the HOOK share in the coded transcription with the
+part of the H14 HOOK split that IS supported -- the p.[1] HOOK boxes both blind passes (`passes/p1_HOOK_passE.tsv`,
+`passes/p1_HOOK_passF.tsv`) coded as the same v2 member shape -- and re-run H22's design-matched control on the
+reduced coding; one gated target run only if the control clears 0.6.
+
+**Built:** `passes/build_letter_codes.py` (rule 7 for a transcription: regenerates `letter_codes_v3.tsv` from the two
+reconciled files -- verified byte-identical to the committed H15/H10 file before anything else was written -- and
+`letter_codes_v3b.tsv`, plus `ciphertext_v3.txt` / `ciphertext_v3b.txt` as space tokens for family_run's `--cipher`;
+`--check` exits 1 if any is stale). v3b: 11 boxes both passes agreed on move from HOOK to their member sub-code at
+grade AB (L1.14, L1.31 ELOOP; L1.20, L6.18, L8.10 MU; L1.24, L4.4 TLOOP; L2.8 RHO; L3.2, L8.17 UCURL; L5.16 ECAP) and
+L7.17, which both passes called FRAG, is dropped as a fragment (the H14b corrections to L1.16/L7.24/L3.7/L3.29/L3.30
+were already in p1_reconciled). The other 33 HOOK boxes (the disagreements) stay HOOK. v3b: **261 codes, K=31, HOOK
+40 (15.3% of tokens, 18.7% of the letter tokens after the 47 null-shape tokens; v3 was 54 / 20.6% / 24.8%)**.
+
+**Result: negative with control -- the reduced coding does not make the solver route testable.** `family_run.py
+--family homophonic --cipher ciphertext_v3b.txt --param merge=5 nulls=0.17` (merge_share defaults to the new top
+share, 0.184): CONTROL recovery **0.066 (0.000-0.129)**, ceilings 0.88-0.92, gate 0.6 NOT met, target not run (exit 3;
+HYPOTHESES.md row 02:10). Lower than v3's 0.120: five extra sign types with 1-3 tokens each raise K to 31 and give
+the annealer more rare signs to place, which costs more than the smaller merged share saves. The pattern crib re-run
+on v3b (`tools/crib_pattern.py`, 200 shuffles each): strict 0 placements (shuffles mean 0.0, max 0), homophones 0
+(shuffles mean 2.5), homophones + 1 error 12 placements at the same 5 starts as v3 (start 46-47 and 112; shuffles
+mean 33.7, 70/200 at or above; best score -2.572, 45/200 at or above; 0/15 agreement with the key-as-read) -- unchanged
+from H28, at chance.
+
+**What this settles:** the supported part of the HOOK split is too small (11 of 54 boxes) to change either route,
+and the transcription brief's own rule stands against a third pass on the 33 disagreements (H14b: a 32.7% pair is a
+continuum, not two noisy readings), so no third-eye row is added. The coding is now as good as blind passes make it;
+what remains on the solver side is a solver that models the family sign (H25), and on the length side the pool (H26 ->
+H17). `ciphertext.txt` (H16, the spec's copy with a header) and `ciphertext_v3.txt` carry the same 262 tokens.
+
+**Controls:** the design-matched control battery (3 seeds) and the shuffled-order crib control (200) above. No reading,
+no class change, rule 10 wording. **Files:** `passes/build_letter_codes.py`, `passes/letter_codes_v3b.tsv`,
+`passes/ciphertext_v3.txt`, `passes/ciphertext_v3b.txt`, HYPOTHESES.md row. **Cost:** CPU only, no vision calls, no
+requests, no credentials -- recorded as 1.0 USD (est 1.5). No AskUserQuestion, no other target touched.
