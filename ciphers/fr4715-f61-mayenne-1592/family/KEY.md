@@ -299,3 +299,83 @@ signs at 73.2% agreement (`passes/recf97r/`), under v3 covered 0.970 / firm 0.09
 (CA 8, CROSS 7, LOOPBAR 3, ZHOOK 1, LL 1); the family census (`rare_contexts.tsv`, seven leaves) is 98: CA 31, ZHOOK 35,
 CROSS 15, LOOPBAR 14, LL 3, of which f.61r alone carries 20 of its 99 signs. De Diou's two leaves therefore add no period
 reading for the five classes even if their gloss were read: they hardly use them.
+
+## v4 (F61-FAMILY-6, 28 Sept 2026, 15:06-15:3x UTC): the four tile-sort splits applied to the family passes
+
+Parent worker F61-FAMILY-6 (Opus 5.5, session_01TPNoYGTE6dLBPfyEgZTLAc), campaign row H52 widened. The runner's blind tile
+sorts (H65/H67 SBS b/o, H69 4TRI c/p vs the 4-with-hook a/n, H70 VBAR s/t, H77 LOOPS = SBS o + INF u; controls H71/H73/H75
+failed as they should) showed that four of the family readers' classes each merged two glyphs. Key source stays `period`;
+Tomokiyo's table stays `published` and separate (`key_published_rare.tsv`, `../keys/key_mayenne_1592.tsv`), used by nothing here.
+
+**Re-coding (`recode_split.py`, design pre-registered in its docstring and pushed with the sheets, 58d4c7f0, before any call).**
+Five blind Opus shape sorts (cap 6), one per leaf and shape family, prompts in `recode/PROMPTS.md`. The labelled anchors are
+the runner's own H65/H67/H69/H70/H77 tiles of the same leaf whose blind group and period letter agree, re-cut from the native
+leaves exactly as the runner cut them and shown as "form 1/2/3" (no letters); max(2, ceil(n/10)) anchors per class were
+held out and mixed, unlabelled, among the query tiles as the check (gate 0.80 per class). The query is a stratified sample
+(stratum = leaf, reader class, period letter, letters under 8% pooled; up to 20 sorted tokens per stratum, the runner's
+earlier tiles counting toward the 20 by their own blind group); key rows are stratum-weighted estimates, `bands` = "est from
+k sorted tokens". Native f.101r and f.188r fetched once each (2 Gallica requests, requests.log; f.188r's byte stream,
+sha1 d6c5b0a1..., differs from MANIFEST's 00:28 sha1 at the same class of server re-encode F61-FAMILY-4 recorded; the
+H65-H77 anchors re-cut from it were recognised on every held-out tile), not committed.
+
+| call | forms | held-out check | query tiles (none) | result |
+|---|---|---|---|---|
+| f101r_loops | PHI / SBS / INF | 2/2, 4/4, 2/2 | 67 (10) | split applied |
+| f101r_4tri | 4TRI / 4HOOK | 2/2, 2/2 | 84 (9) | split applied |
+| f101r_vbar | VBAR_A / VBAR_B | 2/2, **1/2** | 21 (5) | **STOPPED**: VBAR_B below 0.80; VBAR_A keeps its v3 rows (t 138, s 93 ...) |
+| f188r_loops | PHI / SBS / INF (INF anchors from f.101r's hand) | 2/2, 2/2, 2/2 | 78 (1) | split applied |
+| f188r_4tri | 4TRI / 4HOOK | 2/2, 2/2 | 25 (0) | split applied |
+
+The held-out checks are small (2-4 tiles per class, the brief's tenth of 4-30 anchors): 1.00 on four calls says the reader
+reproduces the runner's groups, not that every query tile is right. f.188r's readers already code VBAR_A (t 19) and VBAR_B
+(s 27) apart, so no VBAR sort there. f.274r has no x positions (its align lines do not equal its draft): its PHI, 4TRI,
+VBAR_A, VBAR_B rows (14) are dropped from v4 as unsorted merged codes, its other 23 rows kept (`key_period_f274_v4.tsv`).
+Per-token recoding: `passes/f101r_align_v4.tsv`, `passes/f188r_align_v4.tsv` (column `split_v4`: the sorted class, `unsorted`
+for a token outside the sample, `=` for an unaffected class); the sign passes A/B themselves are unchanged. Result and
+per-class estimates: `recode/heldout.txt` (`recode_split.py score --check`).
+
+Per-leaf estimates of the split classes (letters with estimate >= 1; readers' own INF rows summed in):
+
+| class | f.101r (sorted tokens) | f.188r (sorted tokens) |
+|---|---|---|
+| PHI (trefoil) | e 198, r 75, u 18, b 12, l 8, o 7 ... (50) | e 56, r 23, q 5 ... (40) |
+| SBS (side by side) | o 79, b 37, e 22, u 6 ... (42) | o 19, b 12, e 9, u 4 ... (36) |
+| 4TRI (4 over triangle) | c 26, p 25, d 10, n 10, a 9 ... (48) | c 11, p 10, t 3 ... (30) |
+| 4HOOK (4 with hook / r-stroke / loop) | n 73, a 69, then 7 or fewer (42) | n 7, a 5 (12) |
+| INF (+ LOOPS sorted as INF) | u 130, h 10 ... | u 31, e 4, h 3, r 3, v 3 ... |
+
+SBS's e (f.101r 22, f.188r 9) is four earlier-tile misfits (H65/H67 group A under e, two per leaf) times the PHI-e stratum
+weight (about 11 on f.101r); it is the sort's own error rate carried by the pre-registered estimator, not a period
+attestation, and it keeps SBS three-way (o/b/e) under the n >= 0.1 x leaf-total rule. Not re-tuned.
+
+**key_period_v4.tsv** = f274_v4 + f101_v4 + f188_v4 (`merge_period_keys.py`, 459 rows, 25 classes; header conflicts 4: C43,
+CH, OTHER, RSIGN -- the 4TRI and VBAR_A conflicts of v3 are gone, VBAR_A because f.274r's rows left, not because of a split).
+Under the tests' rule (n >= 2, n >= 0.1 x leaf class total): PHI e/r, SBS b/e/o, 4TRI c/p/t, 4HOOK a/n, INF u, VBAR_A s/t,
+VBAR_B s; the rest as v3.
+
+**Tests, no refit** (`test_period_key.py --key key_period_v4.tsv --collapse-ebr --min 2 --frac 0.1 --sbs --perms 200`; `--sbs`
+applies H26/H51's loop relabel on f.61r and f.108r via `sbs_relabel.py`, H27's EBR relabel not applied; `--perms 200` is new):
+
+| key | f.61 five spans (55) | 200 permuted: mean / p95 / max, >= key | f.108r overlay (84) | 200 permuted: mean / p95 / max | f.61 coverage |
+|---|---|---|---|---|---|
+| v3 (same 200 perms) | 43/55 = 0.782 | 0.338 / 0.509 / 0.618, 0/200 | 66/84 = 0.786 | 0.324 / 0.452 / 0.512 | 0.80 |
+| **v4** | **48/55 = 0.873** | 0.319 / 0.436 / 0.527, 0/200 | 65/84 = 0.774 | 0.303 / 0.393 / 0.476 | 0.80 |
+
+Per span v4: S1 3/4, S2 9/10, S3 11/12, S4a 4/7, S4b 11/11, S5 10/11. f.108r loses one letter (T1 31 -> 30). Coverage
+unchanged: CA, CROSS, LL, LOOPBAR, ZHOOK still carry no period pair (none of the glossed hands writes them).
+
+**f.61r under v4** (`decode_period.py --key key_period_v4.tsv --frac 0.1 --sbs` -> `f61_decode_period_v4_frac0.1_sbs.tsv/.txt`):
+99 signs, **firm 20 (C 10, C+ 10) / two-way-or-wider M 59 / unread 20**, against v3's 14 / 65 / 20. Letter-set sizes among the
+M tokens: v3 two 19, three 35, four 9, seven 2; v4 two 36, three 18, four 3, seven 2. Every sign that moved (42 of 99):
+
+| moved | n | positions | why |
+|---|---|---|---|
+| INF u/e M -> u C+ | 6 | L01/4, L05/10, L07/8, L08/4, L08/8, L10/8 | LOOPS tokens sorted INF raise INF's total, so f.188r's e (4) falls under 0.1; u on two leaves |
+| PHI e/r/o -> e/r | 17 | L01/5,9; L02/1; L03/4; L05/4,15,17; L08/1,6,12,13,14; L10/3,5; L11/2,4,7 | o leaves PHI with the SBS tokens |
+| PHI e/r/o -> SBS o/b/e | 3 | L07/7, L10/6, L10/11 | H26 blind group G2 on f.61 (sbs_relabel) |
+| DBL e/r/u -> SBS o/b/e | 4 | L03/14, L05/5, L08/5, L11/10 | f.61's pass-A DBL is the side-by-side glyph (H26/H51) |
+| 4TRI n/a/c/p -> c/p/t | 6 | L01/6, L03/7,10, L05/6,14, L08/11 | a/n leave with the 4-with-hook tokens; t is f.188r's 3/30, at the 0.1 line |
+| VBAR_A t/s/f -> t/s | 6 | L01/10, L03/6, L05/3, L10/4, L11/6,12 | f.274r's merged rows dropped (its f 4); NOT the s/t split, which stopped |
+
+The .txt of v1-v3 is regenerated for one display fix: a C+ token was printed as `<CLASS>` like an unread sign (the .tsv and
+the header counts were always right). Not a reading of the letter; the choice inside every M set is not made here.

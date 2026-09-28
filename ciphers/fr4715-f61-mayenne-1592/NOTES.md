@@ -2017,3 +2017,24 @@ second-letter pair-choice test not yet done), the files with their `--check` com
 verifier can re-derive, and the questions only the verifier or a person can close. No new claim, no reading, no class.
 C6 checked on the way (the skeleton's null): settled as a null by the dash-share rule (5/6 under Tomokiyo's dashes) and
 rare in the family gloss (3 tokens, e) -- no lead.
+
+## Campaign step H52 (28 Sept 2026, 15:06-15:3x UTC, parent worker F61-FAMILY-6, session_01TPNoYGTE6dLBPfyEgZTLAc) -- key v4
+
+Row H52 widened by the orchestrator's brief (`.claude/briefs/runs/2026-09-28-parent-f61-family-6.md`) to the four splits of
+H65/H67, H69, H70 and H77. Full record in `family/KEY.md` "## v4"; the numbers:
+
+- Re-coding: five blind Opus shape sorts (design pushed 58d4c7f0 before the calls, `family/recode_split.py`), the runner's
+  H65-H77 tiles as labelled anchors, held-out anchors as the check. Held-out 1.00 on f.101r loops (8), f.101r 4TRI/4HOOK
+  (4), f.188r loops (6), f.188r 4TRI/4HOOK (4); **f.101r VBAR_A/VBAR_B STOPPED** (held-out VBAR_B 1/2), so VBAR_A keeps its
+  v3 rows. f.274r (no x positions) loses its merged-class rows. Recoded tokens: `family/passes/f101r_align_v4.tsv`,
+  `f188r_align_v4.tsv`.
+- Key v4 (`family/key_period_v4.tsv`, period): PHI e/r, SBS b/e/o (the e is the sort's misfit rate x stratum weight, kept as
+  pre-registered), 4TRI c/p/t, 4HOOK a/n, INF u, VBAR_A s/t, VBAR_B s.
+- Tests, no refit, 200 permuted keys: f.61 five spans **48/55 = 0.873** (v3 0.782; permuted p95 0.436, max 0.527, 0/200 at or
+  above), f.108r 65/84 = 0.774 (v3 0.786), coverage 0.80 (unchanged; CA, CROSS, LL, LOOPBAR, ZHOOK).
+- f.61r meter (`family/f61_decode_period_v4_frac0.1_sbs.txt`): **firm 20 / M 59 / unread 20** (v3 14 / 65 / 20); two-letter M
+  sets 36 (v3 19). The six new firm signs are the INF signs (u, two leaves). 42 signs moved; table in KEY.md.
+
+Brief step 5 condition met (known-letter test at least 0.782 and above every permuted key; firm count up): posted "reading
+ready" in ROOM.md for the orchestrator, in its two-way form. Not a reading of the letter; no class change; nothing here is
+solved, new or first.
