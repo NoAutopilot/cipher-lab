@@ -1,0 +1,8 @@
+missing /home/user/cipher-lab/ciphers/armstrong-madison-1808/h32/reads/f404L.tsv
+missing /home/user/cipher-lab/ciphers/armstrong-madison-1808/h32/reads/f404R.tsv
+missing /home/user/cipher-lab/ciphers/armstrong-madison-1808/h32/reads/f409L.tsv
+duplicate bands dropped: []
+groups read 245 (per page: f403R 103, f404L 0, f404R 0, f408R 142, f409L 0); clean digits 238, distinct 172, glossed 154
+values >= 100: 206, units 0/1 share 0.194, units 2/3/5/9 share 0.291, max 1698; top: 1657x12, 133x11, 244x7, 624x6, 424x5, 1578x4, 628x4, 165x3, 33x3, 400x3, 926x3, 1147x3
+same-table check vs H26 24 Mar 1807 (n=211, 128 distinct): shared distinct 36 vs random null mean 12.9 p95 18; top-5 of each: [1657, 133, 244, 624, 424] / [1651, 926, 133, 1661, 69]
+target overlap: shared distinct 18 vs random null mean 19.2 p05 13 p95 26; the 12 commonest legation values in the target: [(1657, 12, 0), (133, 11, 0), (244, 7, 0), (624, 6, 0), (424, 5, 0), (1578, 4, 0), (628, 4, 0), (165, 3, 0), (33, 3, 0), (400, 3, 0), (926, 3, 0), (1147, 3, 0)], expected 99.2 at the legation rate, observed 0

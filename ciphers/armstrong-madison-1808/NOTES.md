@@ -2747,3 +2747,50 @@ web.archive.org, mcnycatablog.org, lccn.loc.gov, corsair.themorgan.org, catalog.
 bioguideretro.congress.gov, archives.yale.edu: 50 in all. Plus 7 WebFetch tool calls (a separate egress; 5 of them 403) and
 12 WebSearch calls. No logins, no credentials printed (the Google Books key is redacted in the log), no subagents. Cost:
 own estimate about 8 USD; `get_session` carries no cost field for this session.
+
+## Campaign step H32 (28 Sept 2026, 02:55-05:05 UTC, interrupted 02:58-04:27 by the account session limit)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H32 (from
+H31): the Erving-Madison Madrid "Cypher of the Legation" pool, part 1 -- blind reads of the densest coded frames of
+NARA M31 reel 12 with their period interlinear decode, merged into a glossed group stream, screened against the
+target with `corr/screen.py`, and handed to the scout as a key-recovery candidate (not a target key: H26 MISS at n=211).
+
+**What happened to the box.** Four blind Sonnet reads (frames 403, 404 both pages, 408, 409) were launched at 02:57 UTC
+and all four died at about 02:58 on the account's session limit (HTTP 429 rate_limit, reset 03:40 UTC), with nothing
+written. Relaunched at 04:27 with two of the four (403 right page, 408 right page) because spent_today then read
+116.13 of 120 after the parent's reconciliations; frames 404 and 409 moved to H33 (their band crops are cut, refetch
+route in `h32/MANIFEST.tsv`). The two reads ran 15 and 35 minutes (201k and 325k tokens: the 408 page is dense and
+its numerals sit below the gloss line, so the reader cross-checked neighbouring crops throughout).
+
+**Material and crops.** Embedded microfilm images from the whole-reel PDF (1700x1556 and 1964x1780 for a two-page
+spread, so about 850-980 px per page -- the scan's own limit), coded pages cut by `h29/band_cut.py --scale 2.5` into
+fixed-pitch two-line windows with red guides (`tools/iiif_lines.py` centres are irregular under the glosses at this
+resolution); `h32/MANIFEST.tsv`.
+
+**Result: 245 groups (403R 103, 408R 142), 238 with clean digits, 172 distinct values, 154 glossed** (`h32/reads/`,
+`h32/legation_groups.tsv`, `h32/legation_screen_input.tsv`, `h32/summary.txt`, `h32/screen_output.txt`). Both readers
+report low-to-medium confidence on most digits (faint pencil numerals on an upscaled microfilm) -- grade M for the
+digits, C for glosses that recur consistently (1657 = "the" and 133 = "of" on six or more lines each, the 408 reader's
+own cross-check), M otherwise.
+
+| check | number |
+|---|---|
+| same-table check vs H26's 24 Mar 1807 letter of this cipher (n=211, 128 distinct) | 36 distinct values shared vs a random-draw null mean 12.9, p95 18 -- the same table; the commonest value reads 1651 in H26's native-crop eye transcription and 1657 here (both glossed "the"), a digit-level disagreement between readers at two resolutions, unresolved (M) |
+| target overlap (172 legation distinct vs the target's 216) | 18 shared vs random null mean 19.2 (p05 13, p95 26) -- chance |
+| the 12 commonest legation values (1657, 133, 244, 624, 424, 1578, 628, 165, 33, 400, 926, 1147; 26% of the stream) in the target's 369 groups | expected about 99 at the legation rate, observed 0 |
+| `corr/screen.py` (ARM3-LIVCODE/H26 statistics) | units 0/1 share on values >= 100: 0.19 vs the target's 0.55-0.63 at n; above 1700: 0.000 vs 0.08-0.11; under 100: 0.13 vs 0.33-0.39; top-20 overlap 5/238 (chance 0.475 for >= 3); **VERDICT: MISS** |
+
+So the Madrid legation cipher is not the target's code, now at n=238 on two more letters (H26's MISS at n=211 stands
+and is reinforced: the target does not contain the cipher's "the" or "of" once), and the pool is on file for the
+record: with H26's letter, about 450 groups of a 1807 US legation private cipher with the period's own decode beside
+them, plus frames 389-390, 404, 409, 426-429 still unread (H33). For the scout: a key-recovery candidate in its own
+right (values 1-1698 seen, syllable and word entries mixed, the/of at 1657(1651)/133), not for this target.
+`KEY-OFFICES.tsv` gets no row from this step: that register lists key files, and no table has been rebuilt here (a
+rebuilt table from the glosses is the recovery job the scout would file, not a campaign step on this target).
+
+No reading of the target, no class change; rule 10: the despatches are catalogued NARA items and the decode is the
+period's own. Requests: none this step (all images from the PDFs fetched in H31). Vision: 2 of 4 subagent calls
+completed (two more died on the rate limit before reading anything); this runner's one look (the four-frame view).
+Cost: get_session carries no cost figure; two Sonnet calls of 201k and 325k tokens are about 4-5 USD by H21's rate --
+`--spend` records 5, which takes spent_today past the 120 daily budget (116.13 before this step), so the runner stops
+after this step per the campaign brief.
