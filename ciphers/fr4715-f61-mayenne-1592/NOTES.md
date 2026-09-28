@@ -2858,3 +2858,12 @@ against the period gloss letters with the H136 word-lattice beam in place of the
 **GATE (>= 0.80 on >= 100 pooled): FAIL** by 0.018; f.188r alone clears 0.80. The lattice gains 3 points on both leaves over
 the plain beam, as on f.61's spans (H136). With the automatic gloss alignment's slips counted as errors, 0.78 is a lower
 bound on the instrument's choice accuracy in this hand. Not re-run. No reading, no class change.
+
+## Campaign step H139 (28 Sept 2026, 19:34 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61lattice_dashes.py` -> `scripts/f61lattice_dashes.tsv`: of Tomokiyo's dash positions inside his five spans, only
+**one** falls on a sign the 14 cells cover (S5, L11 pos 8, 4STEM a/n: lattice n, plain beam n -- "melente-noit" ->
+"melentenoit" with n, which is his own letters list's reading of that span). Every other dash sits on a null or an
+unmapped class (CA, C6, LL, CROSS, ZHOOK-free positions), so the within-pair instruments have nothing to add inside the
+spans; f.61r's open questions are the unmapped classes and the two-way choices of key v4, not the 14-cell pairs.
+No reading, no class change.
