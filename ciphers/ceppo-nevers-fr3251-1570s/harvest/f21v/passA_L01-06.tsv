@@ -1,0 +1,161 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S84		M	curly x | before: line start
+L01	2	S75		H	plus
+L01	3	S74		M	6 with tick
+L01	4	S65	S77	M	8 barred
+L01	5	S37	S47	M	8 with tail
+L01	6	S97		H	lambda
+L01	7	S67		H	f
+L01	8	S56		H	plus-3
+L01	9	S89		H	double bar
+L01	10	S65	S77	M	8 barred
+L01	11	S61	S94	M	q with foot
+L01	12	S52		H	3
+L01	13	S23	S16	M	triangle hooked
+L01	14	S75		H	plus
+L01	15	S49	S73	M	slash between dots
+L01	16	S94	S55	M	female sign
+L01	17	S35		H	m dot
+L01	18	S89		H	double bar
+L01	19	S75		H	plus
+L01	20	X_POUND		H	pound sign
+L01	21	S53		H	phi
+L01	22	S47		H	eps
+L01	23	S53		H	phi
+L01	24	S88		H	barred slash
+L01	25	S62		H	beta
+L01	26	S89		H	double bar
+L01	27	S65	S77	M	8 barred
+L01	28	S52		M	3 with tick
+L01	29	S74	S77	M	plain 6
+L01	30	S35		H	m dot
+L01	31	S52		H	3
+L01	32	S65		H	8
+L01	33	S52		H	3
+L01	34	S53		H	phi
+L01	35	S66		M	2 with dot
+L01	36	S93		H	w flourish
+L01	37	S23	S16	M	triangle
+L01	38	S56		H	dot plus-3
+L01	39	S75		H	plus at edge | after: line end
+L02.1	1	S47		H	eps | before: line start
+L02.1	2	S57		H	small c reversed
+L02.1	3	S88		H	barred slash
+L02.1	4	S23	S97	L	small lambda dot
+L02.1	5	S75		M	plus
+L02.1	6	S89		H	double bar
+L02.1	7	S17		H	Z tail
+L02.1	8	X_POUND		H	pound
+L02.1	9	S62		H	beta
+L02.1	10	S56		H	plus-3
+L02.1	11	S88		H	barred slash | after: quello
+L02.2	1	S61		M	q long tail | before: essi
+L02.2	2	S65	S77	M	8 barred | after: line end
+L03	1	S56		H	plus-3 | before: line start
+L03	2	S97		M	lambda
+L03	3	S23	S97	L	small lambda dot
+L03	4	S94		M	female sign
+L03	5	S75	S24	L	cross with ticks
+L03	6	S17		H	Z tail
+L03	7	S49	S73	M	slash dots
+L03	8	S53		H	phi
+L03	9	S75		H	plus
+L03	10	S49	S73	M	slash dots
+L03	11	S37		M	8 with tick
+L03	12	S93		H	w
+L03	13	S62		H	beta
+L03	14	S49	S73	M	slash dots
+L03	15	S75		H	plus
+L03	16	S74		M	6 tick
+L03	17	S62		H	beta
+L03	18	S57		H	small c
+L03	19	S88		H	barred slash
+L03	20	S65	S77	M	8 barred
+L03	21	S20		H	d
+L03	22	S47		H	eps
+L03	23	S75		H	plus
+L03	24	S26	S10	L	L shape with dot
+L03	25	S53		H	phi
+L03	26	S65	S77	M	8 barred
+L03	27	S37		M	8 tick
+L03	28	S65	S77	M	8 barred
+L03	29	S56		H	plus-3
+L03	30	S17		H	Z
+L03	31	S37		M	8 tick
+L03	32	S97		H	lambda
+L03	33	S94		M	female
+L03	34	S65	S77	M	8 barred
+L03	35	S89		H	double bar
+L03	36	S93		H	w
+L03	37	S25		M	n dot
+L03	38	S47		H	eps
+L03	39	S65	S77	M	8 barred at edge | after: line end
+L04	1	S37		M	8 tick | before: persone
+L04	2	S56		H	plus-3
+L04	3	S75		H	plus
+L04	4	S89		H	double bar
+L04	5	S62		H	beta
+L04	6	S84	S42	M	x
+L04	7	S52		H	3
+L04	8	S23	S97	L	small lambda dot
+L04	9	S75		H	plus
+L04	10	S26	S10	L	L with dot
+L04	11	S17		H	Z
+L04	12	S23	S16	M	triangle
+L04	13	S75		H	plus
+L04	14	S56		H	plus-3
+L04	15	S26	S10	L	L with dot
+L04	16	S47		H	eps
+L04	17	S65	S77	M	8 barred
+L04	18	S89		H	double bar | after: line end
+L05	1	S37		M	8 tick | before: line start
+L05	2	S17		H	Z
+L05	3	S62		H	beta
+L05	4	S84	S42	M	x
+L05	5	S23	S16	M	triangle
+L05	6	S62		H	beta
+L05	7	S26	S10	L	L with dot
+L05	8	S75		H	plus
+L05	9	S56		H	plus-3
+L05	10	X_POUND		H	pound
+L05	11	S93		H	w
+L05	12	S74		M	6 tick
+L05	13	S40	S58	L	n-like with 3 tail
+L05	14	S66		M	2 dot above
+L05	15	S75		H	plus
+L05	16	S89		H	double bar
+L05	17	S52		H	3
+L05	18	S56		H	plus-3
+L05	19	S47		H	eps
+L05	20	S17		H	Z
+L05	21	S47		H	eps
+L05	22	S75		H	plus
+L05	23	S23	S97	L	small lambda dot
+L05	24	S89		H	double bar
+L05	25	S62		H	beta
+L05	26	S52		H	3
+L05	27	S53		H	phi
+L05	28	S26	S10	L	L with dot
+L05	29	S75		H	plus
+L05	30	S56		H	plus-3
+L05	31	S47		H	eps
+L05	32	S75		H	plus
+L05	33	S23	S97	L	lambda dot
+L05	34	S89		H	double bar | after: line end
+L06.1	1	S17		H	Z | before: line start
+L06.1	2	S62		H	beta | after: Pero
+L06.2	1	S65	S77	M	8 barred | before: di
+L06.2	2	S47		H	eps
+L06.2	3	S97		M	lambda
+L06.2	4	S23	S97	L	small lambda dot
+L06.2	5	S95	S13	M	lone o
+L06.2	6	S65	S77	M	8 barred
+L06.2	7	S56		H	plus-3
+L06.2	8	S31		M	2 with tail
+L06.2	9	S17		H	Z
+L06.2	10	S23	S16	M	triangle
+L06.2	11	S62		H	beta
+L06.2	12	S60	S13	L	circle crossed by long bar
+L06.2	13	S65	S77	M	8 barred
+L06.2	14	S62		H	beta
+L06.2	15	S13		L	theta partly cut by margin | after: line end

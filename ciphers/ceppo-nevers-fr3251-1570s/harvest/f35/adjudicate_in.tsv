@@ -1,0 +1,8 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	4	S37 X_NEW S75	S70 S23 S97 S62	?	L	X_NEW	L	loop with dot, unclear	loop with dot and tail
+L01	13	S26 S52 S49 S94	S61 S80 S47 S75	S24	M	S88	M		barred
+L01	26	S35 S74 S17 S89	S34 S42 S17 S61	S47	M	X_NEW	L		ce w flourish
+L02	1		S23 S53 S69 S80	S91	M	X_NEW	L	prose before: line start	ce w hook; line start
+L02	25	S32 S69 S17 S37	S97 S40 S17 ?	S91	M	X_NEW	L		ds
+L02	29	? S97 S40 S17	S62 S74 S75 S52	S54	M	S53	L		
+L02	37	S52 S34 S49 S65	S53 S73	S26	M	S66	L		z w bar

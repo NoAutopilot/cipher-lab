@@ -1,0 +1,8 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01	4	4	?	L	4	X_NEW	L	split	loop with dot, unclear	loop with dot and tail
+L01	13	13	S24	M	13	S88	M	split		barred
+L01	26	26	S47	M	26	X_NEW	L	split		ce w flourish
+L02	1	1	S91	M	1	X_NEW	L	split	prose before: line start	ce w hook; line start
+L02	25	25	S91	M	25	X_NEW	L	split		ds
+L02	29	29	S54	M	29	S53	L	split		
+L02	37	37	S26	M	37	S66	L	split		z w bar

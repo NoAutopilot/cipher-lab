@@ -1,0 +1,77 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S37		H	line start
+L01	2	X_NEW		L	P-like
+L01	3	S75		H	plus
+L01	4	X_NEW	S45	L	loop with dot and tail
+L01	5	S70		H	
+L01	6	S23		H	dotted
+L01	7	S97		H	
+L01	8	S62		H	
+L01	9	S26		M	2 underlined w dot
+L01	10	S52		H	3
+L01	11	S49	S73	M	dotted slash
+L01	12	S94	S55	M	loop cross below
+L01	13	S88	S24	M	barred
+L01	14	S61		H	
+L01	15	S80		M	crossed 8
+L01	16	S47	S45	M	ce
+L01	17	S75		H	
+L01	18	S69	S13	M	crossed theta
+L01	19	S17		H	z
+L01	20	S42	S16	M	triangle
+L01	21	S56		M	+3
+L01	22	S35		H	m'
+L01	23	S74	S37	M	6 w tick
+L01	24	S17		H	z
+L01	25	S89		H	=
+L01	26	X_NEW	S47	L	ce w flourish
+L01	27	S34		H	is
+L01	28	S42	S16	M	barred triangle
+L01	29	S17		H	
+L01	30	S61		H	
+L01	31	S97		H	
+L01	32	S95	S13	M	open o
+L01	33	S17		H	
+L01	34	S49	S73	M	
+L01	35	S62		H	
+L01	36	X_POUND		H	pound
+L01	37	S75		H	line end; follows comma prose
+L02	1	X_NEW	S93	L	ce w hook; line start
+L02	2	S23		H	
+L02	3	S53	S54	M	
+L02	4	S69	S13	M	
+L02	5	S80		M	
+L02	6	S88	S24	M	
+L02	7	S52		H	
+L02	8	S75		H	
+L02	9	S53		M	
+L02	10	S74	S37	M	6 tick
+L02	11	S17		H	
+L02	12	S42	S16	M	
+L02	13	S70		H	
+L02	14	S23		H	
+L02	15	S13		H	
+L02	16	S45		M	
+L02	17	S49	S73	M	
+L02	18	S62		H	
+L02	19	X_POUND		H	
+L02	20	S93	S91	M	w-like
+L02	21	S32	S40	L	
+L02	22	S69	S13	M	
+L02	23	S17		H	
+L02	24	S37		H	
+L02	25	X_NEW	S34	L	ds
+L02	26	S97		H	
+L02	27	S40	S56	L	r;
+L02	28	S17		H	
+L02	29	S53	S54	L	
+L02	30	S62		H	
+L02	31	S74	S77	M	
+L02	32	S75		H	
+L02	33	S52		M	3 w tick
+L02	34	S34		H	
+L02	35	S49		M	
+L02	36	S65		M	8
+L02	37	S66	S67	L	z w bar
+L02	38	S53		M	
+L02	39	S73	S49	M	line end

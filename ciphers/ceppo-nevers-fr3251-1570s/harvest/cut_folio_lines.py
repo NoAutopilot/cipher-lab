@@ -13,12 +13,34 @@ from pathlib import Path
 from PIL import Image, ImageOps
 
 HERE = Path(__file__).resolve().parent
-FOLIOS = {
-    'f21v': ('c23_cipher_w.jpg', [120, 200, 280, 376, 456, 536, 610, 690, 760, 836, 910]),
-    'f35': ('c36_cipher_w.jpg', [206, 300]),
-    'f87': ('c88_cipher_w.jpg', [185, 290, 395, 500, 600, 700]),
+FOLIOS = {  # folio: (source region, nominal line centres at the LEFT edge, follow the slope?)
+    'f21v': ('c23_cipher_w.jpg', [120, 200, 280, 376, 456, 536, 610, 690, 760, 836, 910], False),
+    'f35': ('c36_cipher_w.jpg', [206, 300], False),
+    'f87': ('c88_cipher_w.jpg', [185, 290, 395, 500, 600, 700], True),
 }
 SEG, HALF = 1150, 68
+# f.87's lines rise to the right by about 25 px across the region at a 105 px pitch (HARVEST-D2 pass B of the flat
+# crops, 28 Sept 2026: "the neighbouring line intrudes"); its 2x crops follow the line: one shear per region from the
+# left/right row-profile correlation, the band sheared flat with an affine transform. f.21v and f.35 read fine flat.
+
+
+def region_shear(im):
+    """Vertical shift of the right third of the region against the left third (row ink profiles, best correlation over
+    -50..50 px, under half the line pitch so the match cannot slip one line), as a slope per px: the lines of a page photographed slightly askew rise or fall together."""
+    W, H = im.size; px = im.load()
+    def prof(x0, x1):
+        p = [sum(255 - px[x, y] for x in range(x0, x1, 4)) for y in range(H)]
+        mu = sum(p) / H; return [v - mu for v in p]
+    L, R = prof(0, W // 3), prof(2 * W // 3, W)
+    best = max(range(-50, 51), key=lambda d: sum(L[y] * R[y + d] for y in range(50, H - 50)))
+    return best / (2 * W / 3)
+
+
+def sheared_band(im, m, k, half):
+    """Band of height 2*half following y = m*x + k, sheared flat (output (x, y) <- input (x, y + m*x))."""
+    W, H = im.size
+    y0 = k - half
+    return im.transform((W, 2 * half), Image.AFFINE, (1, 0, 0, m, 1, y0), resample=Image.BICUBIC)
 
 
 def gap_cut(band, x, window=90):
@@ -33,8 +55,10 @@ def gap_cut(band, x, window=90):
     return bx
 
 
-for folio, (src, centres) in FOLIOS.items():
+for folio, (src, centres, follow) in FOLIOS.items():
     im = Image.open(HERE / folio / src).convert('L'); W, H = im.size
+    shear = region_shear(im) if follow else 0.0
+    print(f'{folio}: shear {shear * W:+.0f} px across the region' if follow else f'{folio}: flat')
     for sub in ('lines', 'lines2x'):
         (HERE / folio / sub).mkdir(exist_ok=True)
     out1, out2 = [], []
@@ -49,6 +73,8 @@ for folio, (src, centres) in FOLIOS.items():
             if b == W:
                 break
             a = b - 150; k += 1
+        if follow:  # re-band along the sheared line for the 2x crops (centres are given at the left edge)
+            m, k = shear, c; band = ImageOps.autocontrast(sheared_band(im, m, k, HALF), cutoff=1)
         cuts = [0]  # 2x, gap-aware, no overlap
         while W - cuts[-1] > SEG + 200:
             cuts.append(gap_cut(band, cuts[-1] + SEG))
@@ -58,7 +84,8 @@ for folio, (src, centres) in FOLIOS.items():
             name = f'lines2x/{folio}_L{i:02d}_s{k + 1}.png'
             seg = band.crop((a, 0, b, y1 - y0)); seg = seg.resize((seg.width * 2, seg.height * 2), Image.LANCZOS)
             seg.save(HERE / folio / name)
-            out2.append({'crop': name, 'src': src, 'box': [a, y0, b, y1], 'scale': 2})
+            out2.append({'crop': name, 'src': src, 'box': [a, y0, b, y1], 'scale': 2,
+                         **({'line': [round(m, 5), round(k, 1)], 'sheared': True} if follow else {})})
     json.dump(out1, open(HERE / folio / 'lines' / 'crops_manifest.json', 'w'), indent=0)
     json.dump(out2, open(HERE / folio / 'lines2x' / 'crops_manifest.json', 'w'), indent=0)
     print(folio, len(out1), len(out2))

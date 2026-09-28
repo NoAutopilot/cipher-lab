@@ -1,0 +1,228 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S40		M	prose before: "particolari"
+L01	2	S74		M	
+L01	3	S65		M	
+L01	4	S93		M	
+L01	5	S84		M	
+L01	6	S74		M	
+L01	7	S84		M	
+L01	8	S13		M	
+L01	9	S23		M	
+L01	10	S62		M	
+L01	11	X_THETA2		M	oval with two bars
+L01	12	S73		M	
+L01	13	S89		M	
+L01	14	S47		M	
+L01	15	S54		M	
+L01	16	S80		M	
+L01	17	S95		M	
+L01	18	S93		M	
+L01	19	S58		M	
+L01	20	S55		M	
+L01	21	S66		M	
+L01	22	S65		M	
+L01	23	S75		M	
+L01	24	S97		M	line end
+L02	1	S53		M	line start
+L02	2	S47		M	
+L02	3	S94		M	
+L02	4	S93		M	
+L02	5	S57		M	
+L02	6	X_THETA2		M	oval with two bars
+L02	7	S80		M	
+L02	8	S30		M	
+L02	9	S89		M	
+L02	10	S93		M	
+L02	11	S84		M	
+L02	12	S62		M	
+L02	13	S74		M	
+L02	14	S35		M	
+L02	15	S42		M	
+L02	16	S56		M	
+L02	17	S80		M	
+L02	18	S84		M	
+L02	19	S34		M	
+L02	20	S17		M	
+L02	21	S74		M	
+L02	22	S61		M	
+L02	23	S52		M	
+L02	24	S25		M	
+L02	25	S75		M	
+L02	26	S23		M	
+L02	27	S95		M	
+L02	28	S75		M	
+L02	29	S84		M	
+L02	30	S88		M	
+L02	31	S93		M	
+L02	32	S40		M	
+L02	33	S57		M	
+L02	34	X_THETA2		M	oval with two bars
+L02	35	S93		M	
+L02	36	S23		M	
+L02	37	S74		M	
+L02	38	S62		M	
+L02	39	S57		M	
+L02	40	S17		M	
+L02	41	S73		M	line end
+L03	1	S23		M	line start
+L03	2	S80		M	
+L03	3	S84		M	
+L03	4	S75		M	
+L03	5	S74		M	
+L03	6	S65		M	
+L03	7	S13		M	
+L03	8	S30		M	
+L03	9	S45		M	
+L03	10	S74		M	
+L03	11	S52		M	
+L03	12	S88		M	
+L03	13	S65		M	
+L03	14	S17		M	
+L03	15	S84		M	
+L03	16	S26		M	
+L03	17	S93		M	
+L03	18	S62		M	
+L03	19	S23		M	
+L03	20	S62		M	
+L03	21	X_THETA2		M	oval with two bars
+L03	22	S75		M	
+L03	23	S73		M	
+L03	24	S95		M	
+L03	25	S88		M	
+L03	26	S30		M	
+L03	27	S67		M	
+L03	28	S42		M	
+L03	29	?		L	L03 s3 own row cut off at crop bottom
+L03	30	?		L	L03 s3 own row cut off at crop bottom
+L03	31	?		L	L03 s3 own row cut off at crop bottom
+L03	32	?		L	L03 s3 own row cut off at crop bottom
+L03	33	?		L	L03 s3 own row cut off at crop bottom
+L03	34	?		L	L03 s3 own row cut off at crop bottom
+L03	35	S89		M	
+L03	36	S80		M	
+L03	37	S74		M	line end
+L04	1	S42		M	line start
+L04	2	S13		M	
+L04	3	S56		M	
+L04	4	S53		M	
+L04	5	S62		M	
+L04	6	S93		M	
+L04	7	X_THETA2		M	oval with two bars
+L04	8	S35		M	
+L04	9	S84		M	
+L04	10	S80		M	
+L04	11	S26		M	
+L04	12	S65		M	
+L04	13	S52		M	
+L04	14	S45		M	
+L04	15	S37		M	
+L04	16	S65		M	
+L04	17	S56		M	
+L04	18	S70		M	
+L04	19	S66		M	
+L04	20	S53		M	
+L04	21	S25		M	
+L04	22	S62		M	
+L04	23	S40		M	
+L04	24	S47		M	
+L04	25	S23		M	
+L04	26	S95		M	
+L04	27	S25		M	
+L04	28	S34		M	
+L04	29	S58		M	
+L04	30	S13		M	
+L04	31	S75		M	
+L04	32	S70		M	
+L04	33	S23		M	
+L04	34	S54		M	
+L04	35	S62		M	
+L04	36	S65		M	
+L04	37	S61		M	
+L04	38	S80		M	
+L04	39	S42		M	
+L04	40	S52		M	
+L04	41	S23		M	
+L04	42	S89		M	
+L04	43	S62		M	
+L04	44	S47		M	
+L04	45	S80		M	
+L04	46	S34		M	
+L04	47	S88		M	line end
+L05	1	S23		M	line start
+L05	2	S25		M	
+L05	3	S97		M	
+L05	4	S23		M	
+L05	5	S89		M	
+L05	6	S62		M	
+L05	7	S73		M	
+L05	8	S26		M	
+L05	9	S35		M	
+L05	10	S37		M	
+L05	11	X_THETA2		M	oval with two bars
+L05	12	S75		M	
+L05	13	S13		M	
+L05	14	S80		M	
+L05	15	S34		M	
+L05	16	S75		M	
+L05	17	S17		M	
+L05	18	S40		M	
+L05	19	S93		M	
+L05	20	S80		M	
+L05	21	S47		M	
+L05	22	S23		M	
+L05	23	S13		M	
+L05	24	S93		M	
+L05	25	S62		M	
+L05	26	X_THETA2		M	oval with two bars
+L05	27	S23		M	
+L05	28	S88		M	
+L05	29	S45		M	
+L05	30	S47		M	
+L05	31	S80		M	
+L05	32	S23		M	
+L05	33	S88		M	
+L05	34	S93		M	
+L05	35	S62		M	
+L05	36	S75		M	
+L05	37	S17		M	
+L05	38	S84		M	
+L05	39	S80		M	
+L05	40	S30		M	
+L05	41	S88		M	
+L05	42	S40		M	
+L05	43	S34		M	
+L05	44	S52		M	
+L05	45	S74		M	
+L05	46	S75		M	line end
+L06	1	S76		M	line start
+L06	2	S80		M	
+L06	3	S74		M	
+L06	4	S52		M	
+L06	5	S30		M	
+L06	6	S53		M	
+L06	7	S75		M	
+L06	8	S95		M	
+L06	9	S70		M	
+L06	10	S23		M	
+L06	11	S88		M	
+L06	12	S76		M	
+L06	13	S34		M	
+L06	14	S62		M	
+L06	15	S20		M	
+L06	16	S62		M	
+L06	17	X_THETA2		M	oval with two bars
+L06	18	S88		M	
+L06	19	S75		M	
+L06	20	S88		M	
+L06	21	S30		M	
+L06	22	S89		M	
+L06	23	S75		M	
+L06	24	S25		M	
+L06	25	S93		M	
+L06	26	S80		M	
+L06	27	S74		M	
+L06	28	S25		M	
+L06	29	S61		M	
+L06	30	S47		M	
+L06	31	S23		M	
+L06	32	S88		M	line end

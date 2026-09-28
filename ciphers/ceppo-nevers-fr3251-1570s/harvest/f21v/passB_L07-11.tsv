@@ -1,0 +1,108 @@
+passage	pos	sign_id	alt	conf	note
+L07	1	X_THETA2		H	theta two bars; before: line start
+L07	2	S80	S65	H	barred 8
+L07	3	S23	S16	M	italic triangle
+L07	4	S62		H	beta
+L07	5	X_THETA2		H	
+L07	6	S75		H	plus
+L07	7	S97		H	lambda
+L07	8	S47		H	epsilon
+L07	9	S80	S65	M	barred 8 at crop edge
+L07	10	S97	S23	M	dotted lambda
+L07	11	S53	S62	M	phi w/ slash
+L07	12	S17		H	Z
+L07	13	S20		H	d
+L07	14	S47		H	
+L07	15	S80		H	
+L07	16	X_POUND		H	lb-like
+L07	17	S37		M	loop with tick
+L07	18	S61		H	9
+L07	19	S75		H	
+L07	20	S23	S16	M	triangle
+L07	21	S80		H	
+L07	22	X_THETA2		H	
+L07	23	S53	S62	M	phi with tail
+L07	24	S17		H	
+L07	25	S53		M	
+L07	26	S62		H	
+L07	27	S97	S23	L	dotted A/lambda
+L07	28	X_POUND		H	
+L07	29	S75		H	
+L07	30	S47		H	
+L07	31	S80		H	
+L07	32	X_THETA2		H	
+L07	33	S31		M	Q with tail
+L07	34	S26	S66	M	2 with dash; after: line end
+L08.1	1	S17		H	before: line start
+L08.1	2	S20		H	
+L08.1	3	S47		H	
+L08.1	4	S80		H	after: Et
+L08.2	1	S80		H	barred 8; before: si; after: line end
+L09	1	S97	S23	M	dotted lambda; before: line start
+L09	2	S95	S13	M	lone o
+L09	3	S13	S57	L	reversed-3/theta with dot
+L09	4	S53		M	
+L09	5	S65	S80	M	8, faint bar
+L09	6	S97	S23	M	dotted
+L09	7	S53		M	
+L09	8	S62		H	
+L09	9	S89		H	=
+L09	10	S17		H	
+L09	11	S23	S16	M	triangle
+L09	12	S80		H	
+L09	13	X_THETA2	S69	M	
+L09	14	X_POUND		H	
+L09	15	S52		H	3
+L09	16	S17		H	
+L09	17	S97	S23	M	dotted
+L09	18	S89		H	=
+L09	19	S17		H	
+L09	20	S47		H	
+L09	21	S52		H	3
+L09	22	X_THETA2	S69	M	dotted theta
+L09	23	S66	S26	M	2 with dot
+L09	24	S35		H	m with dot
+L09	25	S37		M	
+L09	26	S88	S24	M	barred cross
+L09	27	X_NEW		M	1 with dot: L-shaped hook with dot, cf S10
+L09	28	S52		H	3; after: ch'io
+L10	1	S67		M	f with descender at crop edge; before: opra
+L10	2	S80		H	
+L10	3	S37		M	
+L10	4	S17		H	
+L10	5	S62		H	
+L10	6	S69	X_THETA2	M	barred theta
+L10	7	S52		H	3
+L10	8	S74	S77	M	6 with tick
+L10	9	S53	S54	M	phi
+L10	10	S17		H	
+L10	11	X_NEW		M	1 with dot, as L09
+L10	12	S75	S73	L	plus cut by margin; after: line end
+L11	1	S53		L	phi, cut at crop bottom; before: line start
+L11	2	S25	?	L	u-like with overbar, cut off
+L11	3	S74	S77	L	6 tick
+L11	4	S69	X_THETA2	L	theta single bar
+L11	5	S97		M	lambda
+L11	6	S53		M	
+L11	7	S88	S24	M	
+L11	8	S62		M	
+L11	9	S65	S80	L	8 cut
+L11	10	S84	S40	L	x with flourish
+L11	11	X_NEW		M	1 with dot, as L09
+L11	12	S75		H	
+L11	13	X_THETA2	S69	M	
+L11	14	S80		H	
+L11	15	S74	S77	M	6 tick
+L11	16	S75		H	
+L11	17	S73	S30	M	slash between dots
+L11	18	S95	S13	M	lone o
+L11	19	S97		H	
+L11	20	S89		H	=
+L11	21	S17		H	
+L11	22	S69	X_THETA2	M	theta
+L11	23	S17		H	
+L11	24	S37		M	
+L11	25	S47		H	
+L11	26	X_POUND		H	
+L11	27	S53		M	
+L11	28	S80		H	after: Io

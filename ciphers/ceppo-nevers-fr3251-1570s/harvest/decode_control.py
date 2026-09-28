@@ -14,7 +14,7 @@ harvest/sign_id_map.json (S## -> key value, cut from Tomokiyo's nevers_add1.png;
    disagreement), then the same N-shuffle test. The target's result means something only if the control's real key
    ranks first in most windows at that error.
 
-Usage: python3 decode_control.py SEQ.tsv [--shuffles 200] [--windows 20] [--err 0.2] [--seed 1] [--out reading.txt]
+Usage: python3 decode_control.py SEQ.tsv [--shuffles 200] [--windows 20] [--err 0.2] [--seed 1] [--out reading.txt] [--extra X_THETA2=r]
 """
 import argparse, csv, json, random, statistics, sys
 from pathlib import Path
@@ -24,8 +24,13 @@ sys.path.insert(0, str(HERE.parents[2] / "tools"))
 import judge_plaintext as jp  # noqa: E402
 
 
-def load_map():
-    return {e["id"]: e["value"] for e in json.load(open(HERE / "sign_id_map.json"))}
+def load_map(extra=()):
+    """extra: 'ID=value' strings for signs not on the printed sheet (HARVEST-D2: X_THETA2=r from the fr.3252 f.36v
+    period gloss); they join the map and so are shuffled with the rest in the control."""
+    m = {e["id"]: e["value"] for e in json.load(open(HERE / "sign_id_map.json"))}
+    for x in extra:
+        k, v = x.split("=", 1); m[k] = v
+    return m
 
 
 def decode(seq, m):
@@ -69,9 +74,10 @@ def main():
     ap.add_argument("--windows", type=int, default=20); ap.add_argument("--err", type=float, default=0.2)
     ap.add_argument("--seed", type=int, default=1); ap.add_argument("--out")
     ap.add_argument("--corpus", default="it16dip")
+    ap.add_argument("--extra", action="append", default=[], help="ID=value for a sign not on the sheet, e.g. X_THETA2=r")
     a = ap.parse_args()
     rng = random.Random(a.seed)
-    m = load_map()
+    m = load_map(a.extra)
     passages = {}
     for r in csv.DictReader(open(a.seq), delimiter="\t"):
         passages.setdefault(r["passage"], []).append(r["sign_id"].strip())
