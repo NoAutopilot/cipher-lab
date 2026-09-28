@@ -1,1 +1,2 @@
 control 0: score 554.7, words right 54/54 = 100%  e.g. first which had been given and the tone | truth first which had been given and the tone
+control 1: score 536.7, words right 54/54 = 100%  e.g. us through any war provided that in the | truth us through any war provided that in the
