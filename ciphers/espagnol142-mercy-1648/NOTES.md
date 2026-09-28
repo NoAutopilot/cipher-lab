@@ -2167,3 +2167,23 @@ they occur -- R960 48 = no, 65 = ba; R962 (Latin) 52 = re, 65 = s, 72 = san, 101
 word codes (au, de, du ...) run 12-89 and R961's syllabary starts at 35. So a syllable at 72 in a key of this office
 is the office's practice, not an exception; **the assumption the Burgsdorf crib rests on is consistent with the
 register's design, but no table gives 72 = do or 52 = ro** (these are other keys). No token, grade or class change.
+
+## Campaign step H57 (2026-09-28 16:15 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Usage attested both ways -- a caution for H42.** Google Books API (key present, country=US;
+7 queries, 1.6 s apart; `h57/gbooks.tsv`):
+
+- **"camarero mayor del Elector" for an elector's courtier is period usage**: *Mercurio histórico y político* (1739),
+  "el Conde de Preysing, Camarero Mayor del Elector" (Bavaria); *El gran diccionario histórico* (1753), "camarero mayor
+  del elector de Baviera". So a Spanish writer could call an electoral Oberkammerherr "su camarero mayor".
+- **But "camarero mayor" is also the Spanish title of the Elector of Brandenburg himself**, as Arch-Chamberlain of the
+  Empire (Erzkämmerer): *Crónica del emperador Carlos V* ("el Marqués de Brandemburgo, su Camarero mayor"), *Estado
+  político de la Europa* (1740), *El gran diccionario histórico* (1753, "Brandeburgo, Camarero Mayor"). Near "el Elector
+  de Brandenburg" the phrase could therefore name the Elector's own imperial office rather than a courtier.
+- Spanish print knows the man as "Conrado de Burgsdorf" only in modern works (1919, 2006); no 17th-century Spanish hit
+  for Burgsdorf; "Burgsdorf" with "camarero mayor" 0.
+
+Effect on the crib: the name fit (H41, H53) does not depend on the title; the title fit (H42, borderline) now has a
+second reading that does not need Burgsdorf at all ("... [Burgsdorf], su camarero mayor" vs a phrase about the Elector
+as camarero mayor del Imperio). H42 stays borderline, and the pair of fits is weaker evidence of one person than H42's
+note put it. No token, grade or class change.
