@@ -12,7 +12,7 @@ here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)
 out = os.path.join(here, 'h2_crops'); os.makedirs(out, exist_ok=True)
 pages = json.load(open(os.path.join(root, 'glyphs/pages.json')))
 bx0, by0 = pages['c1']['box'][0], pages['c1']['box'][1]
-page = Image.open(os.path.join(root, pages['c1']['image'])).convert('L')
+page = Image.open(os.path.join(root, 'images', os.path.basename(pages['c1']['image']))).convert('L')
 boxes = {(f"c1_L{int(r['line']):02d}", int(r['pos'])): r for r in csv.DictReader(open(os.path.join(root, 'glyphs/signs.tsv')), delimiter='\t') if r['page'] == 'c1'}
 disp = [(r['line'], int(r['position'])) for r in csv.DictReader(open(os.path.join(here, 'h2_disputed_positions.tsv')), delimiter='\t')]
 manifest = []

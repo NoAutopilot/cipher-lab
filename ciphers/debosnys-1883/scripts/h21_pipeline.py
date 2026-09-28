@@ -31,7 +31,7 @@ def crops():
     pages = json.load(open(os.path.join(root, 'glyphs/pages.json'))); out = os.path.join(here, 'h21_crops'); os.makedirs(out, exist_ok=True)
     boxes = {(f"{r['page']}_L{int(r['line']):02d}", int(r['pos'])): r for r in csv.DictReader(open(os.path.join(root, 'glyphs/signs.tsv')), delimiter='\t') if r['page'] in PAGES}
     disp = [(r['line'], int(r['position'])) for r in csv.DictReader(open(os.path.join(here, 'h21_disputed_positions.tsv')), delimiter='\t')]
-    imgs = {p: Image.open(os.path.join(root, pages[p]['image'])).convert('L') for p in PAGES}
+    imgs = {p: Image.open(os.path.join(root, 'images', os.path.basename(pages[p]['image']))).convert('L') for p in PAGES}
     for line, pos in disp:
         pg = line.split('_')[0]; bx0, by0 = pages[pg]['box'][0], pages[pg]['box'][1]; page = imgs[pg]
         r = boxes[(line, pos)]; x, y, w, h = (int(r[k]) for k in 'xywh'); x += bx0; y += by0; pad = 6; name = f"{line}_p{pos:02d}"
