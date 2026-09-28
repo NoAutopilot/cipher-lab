@@ -468,3 +468,28 @@ only the real-key one as Italian and found 0 words in the 20 shuffles. Recovered
 mandato (blind sequence only; HARVEST-A's P1 "premisente ... candaoo" not endorsed); P2 [pro]curare
 [la r]estitucio[ne]; P4 [al]chuni [l]ochi in Sauoia. Judge FAIL -1.267 (real_p05 -0.957). Next step: test the
 three variant signs against the ff.27/39/82 period glosses.
+
+## HARVEST-C intake: f.21v, f.35, f.87 (PARENT WORKER HARVEST-C, 28 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-28-parent-harvest-c.md`. Rule 10 wording only; no class, no status change here.
+
+**Intake gate** (`tools/intake_gate_check.py ceppo-nevers-fr3251-1570s`: exit 0, "open (line 1) -- edition/page or
+full-text-search citation found within 6 lines"). The web and blog step is HARVEST-A's section above (same day, both
+fr.3251 folders), plus three folio-specific web searches this session, 28 Sept 2026: `Birago Nevers "12 ottobre 1570"
+OR "12 octobre 1570" Saluzzo cifra` (f.21v), `Birago Nevers "15 novembre 1570" Saluzzo lettera cifra` (f.35),
+`Lodovico Birago Nevers "9 maggio 1571" OR "9 mai 1571" Saluzzo chiffre` (f.87). Hits: only the BnF finding aid of
+fr.3251 (cc49712p), fr.4702 (cc57752b) and other Nevers volumes, and Bourdeau's index page, which lists these folios
+as having no published reading. No reading found.
+
+**DECODE.** (a) Local mirrors `sources/decode/records-*-2026-09-24.tsv` and `keys-all-2026-09-28-merged.tsv` grepped
+for 3251 / birago / ceppo / nevers: no fr.3251 record (the Nevers hits are fr.3975/3976, 1587-88). (b) Aymeloglu's
+`catalogue/decode-catalog.csv` (10,106 rows, cloned fresh 28 Sept 2026) grepped the same way: its five "Lodovico Birago"
+records are BnF fr.3619 f.73, fr.3621 ff.42/48/49 and fr.3623 f.41 (1591-92, French or Italian, all Decrypted), in
+other volumes, twenty years later, and none is in fr.3251; the only "3251" hit is DECODE record id 3251, a 1911
+postcard. (c) Live DECODE catalogue (de-crypt.org RecordsList, no login, 28 Sept 2026): holder field
+`x_c_holder LIKE 3251` returned "No records found"; the same query with 3621 returned records 9444-9451 (the positive
+control, so the negative is a working search). A sender search (`x_sender LIKE Birago`) also returned none, but
+records with Birago as sender exist, so that field is not searchable this way. It is not a test. Result: no DECODE
+record for fr.3251 f.21v, f.35 or f.87, so none is found-solved.
+
+Requests so far: de-crypt.org 5 (1.5-2 s apart), web search 3, github.com 1 clone (Aymeloglu, read only).
