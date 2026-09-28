@@ -1725,3 +1725,25 @@ this calibration fails would only produce accepts that H30 already showed (24=h)
 Limits: decoys were the model's least-cost alternatives, yet mostly implausible letters (q->f, b->a), so decoy-reject
 1.00 overstates how the reader would treat a plausible wrong change; B's per-row verdicts are reconstructed from its
 summary (it named its two accepts). Cost: three Sonnet text calls, no vision. No token, grade or class change.
+
+## Campaign step H31 (2026-09-28 14:38-14:38 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Does the unread stretch read better as letters around word codes? The
+nomenclature-range tokens (72 at r16:21, 52 at r17:10, 48 at r17:20; 48 at r20:15; 65 at r24:4) removed from their
+stretch, the remaining key.tsv letters scored with the es17c7 trigram (per-trigram mean, so removal length does not
+bias), against 1,000 draws removing the same number of random non-nomenclature positions
+(`cheap_test_1/h31/nomen_remove.py`, `result.log`).
+
+| stretch | n | gain per trigram, nomenclature removed | random removal median / p95 | P(null >= obs) |
+|---|---|---|---|---|
+| r16+r17 (72, 52, 48) | 42 | -0.107 | -0.116 / +0.116 | 0.476 |
+| r20 (48) | 21 | -0.077 | -0.052 / +0.181 | 0.503 |
+| r24 (65) | 20 | -0.361 | -0.126 / +0.217 | 0.888 |
+
+**Negative, with low power.** Removing the nomenclature tokens gains nothing beyond a random removal on any stretch,
+so there is no local sign that these positions are word codes rather than letters; at r24 removal costs more than
+89% of random removals (65 = s gives "tres [r]egimient..."), and at r20 48 = d gives "propondreis de si", both
+letter-shaped, but neither passes a significance line the other way either. Power is limited: at n = 20-42 the null
+spread is +-0.12 to 0.22 per trigram, so only a large word-code effect could have shown. The stretch's letters
+without the three tokens ("gyeoneopuradlonburgsrfsucmaremayorparai") read no better than with them. The word-code
+question for 48/52/65/72 stays with the Brussels register (H17). No token, grade or class change; disk only.

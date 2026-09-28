@@ -1,0 +1,9 @@
+r16+r17: n=42 nomen at [21, 31, 41] (['72=z', '52=y', '48=d']); text gyeoneopuradlonburgszrfsucmareymayorparadi
+   gain per trigram -0.107; random-removal median -0.116, p95 +0.116; P(null>=obs) 0.476
+   without: gyeoneopuradlonburgsrfsucmaremayorparai
+r20: n=21 nomen at [15] (['48=d']); text lespropondreisdesisep
+   gain per trigram -0.077; random-removal median -0.052, p95 +0.181; P(null>=obs) 0.503
+   without: lespropondreisesisep
+r24: n=20 nomen at [4] (['65=s']); text tresegimientiyconque
+   gain per trigram -0.361; random-removal median -0.126, p95 +0.217; P(null>=obs) 0.888
+   without: treegimientiyconque
