@@ -12,8 +12,10 @@ HERE = os.path.dirname(os.path.abspath(__file__)); FAM = os.path.abspath(f"{HERE
 ARGS = sys.argv[1:]; sys.argv = sys.argv[:1]
 import f61hash4_108r as H
 jp = H.jp
+EXT = "--ext" in ARGS   # H133 (28 Sept 2026): KEY.md period equivalences added (LOOPS = h/u, H24 = i/x, ZBAR = f/s); gate unchanged
 def main():
     C = H.J.cells(); out = []; R = N = F = 0
+    if EXT: C = dict(C, LOOPS="h/u", H24="i/x", ZBAR="f/s")
     for leaf in ("f101r", "f188r"):
         lines = {}
         for r in csv.DictReader(open(f"{FAM}/{leaf}_align.tsv"), delimiter="\t"):
@@ -30,7 +32,7 @@ def main():
         R += right; N += n; F += first
     ok = N >= 100 and R / N >= 0.80
     out.append(f"pooled: beam {R}/{N} = {R / N:.3f}; always-first-letter {F / N:.3f}; GATE H130 (>= 0.80 on >= 100): {'PASS' if ok else 'FAIL'}")
-    txt = "\n".join(out) + "\n"; rp = f"{HERE}/f61beam_period_result.txt"
+    txt = "\n".join(out) + "\n"; rp = f"{HERE}/f61beam_period{'_ext' if EXT else ''}_result.txt"
     if "--check" in ARGS:
         good = os.path.exists(rp) and open(rp).read() == txt; print("fresh" if good else "STALE"); sys.exit(0 if good else 1)
     open(rp, "w").write(txt); print(txt, end="")
