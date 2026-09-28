@@ -1988,3 +1988,31 @@ decoded. Requests: archive.org about 27 (metadata, fulltext inside.php, OCR/scan
 >= 1.5 s apart, descriptive User-Agent, no 429/403; gutenberg.org 2 (one proxy reset, one retry). Cost: get_session
 8.72 USD at 00:43 UTC for the session, about 7 USD on this step against a 6 USD cap (two Sonnet calls about 1.1 each;
 the rest this runner's own image reads and setup); 2 of 4 vision calls used.
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 00:21, 28 Sept 2026)
+
+Landed from PR 58 (`second-opinions/chatgpt-checkpoint-2026-09-28-0021.md`, PR-LAND-22). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead/negative; Armstrong to Monroe, 30 May 1806 (LOC reel 3 frames 852-853) inspected -- ordinary prose, no coded passage observed -- unchecked.
+- lead/negative; Armstrong to Monroe, 27 February 1806 (frames 749-751) inspected -- ordinary prose, no coded passage observed -- unchecked.
+- lead; George W. Erving to Monroe, 5 Feb 1806 (frames 740-744) carries contemporary interlinear plaintext that agrees with the repository's WE028 table on 12 selected values (134+1379=Mister, 1399+1229+637=this government, 1576+1385+970=of the Floridas, 648=million(s), 794=dollar(s), 569+182=to him), with a small manuscript mark read as a suffix/plural operator in this witness -- a control for WE028, not for Armstrong's own cipher -- unchecked.
+- lead/negative; the 366-decimal-group target transcription overlaps these same 12 WE028 values only once (648 at position 357), called not probative -- unchecked.
+- lead/negative; the calendar-listed Armstrong-to-Monroe letter of 7 January 1806 is not in the immediate frame 739->740 chronological transition (frame 739 docketed 2 Jan 1806, frame 740 begins a 5 Feb 1806 letter) -- unchecked.
+- next-step; use the Monroe Papers 1963 index and 1904 chronological calendar to get an item-level locator for the 7 January 1806 letter before further scanning -- unchecked.
+
+No check-solved candidate (no printed decipherment of the Armstrong letter, its key, or the Livingston key is named; WE028 is stated to be a different code table from Armstrong's reported cipher).
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 00:31, 28 Sept 2026)
+
+Landed from PR 59 (`second-opinions/chatgpt-checkpoint-2026-09-28-0031.md`, PR-LAND-22). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; the 1963 Index to the James Monroe Papers (LOC, PDF page 18) prints a row "*ARMSTRONG JOHN TO JM2, 1806 JA 7, series 1, 4 indexed pages" -- a precise archival locator for the 7 January 1806 letter -- unchecked.
+- lead; the 1904 Calendar of the Correspondence of James Monroe (p.18) summarizes the same letter as "Negotiations with Spain... No time should be lost... The Emperor's arrival expected. fol. 3 pages" -- a content control, not a transcription -- unchecked.
+- lead/negative; the indexed four-surface item is absent from its expected chronological position in the public LOC reel 3 image sequence -- frames 720-739 are continuously occupied by other, dated material and frame 740 opens a different letter, with no gap or failed frame between 739 and 740 -- unchecked.
+- next-step; search for an alternate digital surrogate or duplicate of this exact four-surface item (another LOC reel/microfilm surrogate, an NYPL Monroe Papers duplicate, or a published quotation) matching the letter's heading/date, addressee and Spain/Emperor content -- unchecked.
+
+No check-solved candidate (the 1963 index and 1904 calendar are catalogue entries, not a printed decipherment of the Armstrong letter, its key, or the Livingston key).

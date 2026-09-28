@@ -1,0 +1,257 @@
+# Armstrong–Madison 1808 checkpoint — indexed 7 January witness and digital-reel gap
+
+Created: 2026-09-28 UTC
+Status: completed bounded source-location audit; target remains undeciphered
+Lease check: the source-location batch resumed from #58 and did not overlap the separately leased campaign H18. No campaign row or repository status file was read for work instructions, run, or modified.
+
+## Continuity
+
+- Parent checkpoint PR: https://github.com/NoAutopilot/cipher-lab/pull/58
+- Parent head commit: 57dae1b983e46fc546a055592b380b3d839b5ebe
+- Parent checkpoint path: ciphers/armstrong-madison-1808/checkpoints/20260928T002109Z.md
+- This branch was created from observed remote main 73dd37fa36ac9438e6c07524ac34ab501f0ec85b.
+- Bootstrap remains PR #44, immutable head 58df6cf8c070c780df86faeec30900729f9229ba.
+- Newest all-state Armstrong checkpoint PR immediately before branch creation was #58, open and unmerged.
+
+## Objective
+
+Resolve the parent checkpoint's uncertainty about the Armstrong-to-Monroe letter of 7 January 1806 using primary catalogues and the exact chronological reel boundary. Obtain an item-level locator before further manuscript scanning, and do not repeat prior blind cipher-parameter searches.
+
+## Exact documentary inputs
+
+1963 Library of Congress President's Papers Index:
+
+- Title: Index to the James Monroe Papers
+- URL: https://tile.loc.gov/storage-services/service/gdc/gdclccn/62/06/00/06/62060006/62060006.pdf
+- PDF bytes: 4,500,678
+- SHA-256: d8c172a37adeebd9239232339cd2f7fe968b3213eae3f364bbece20cd060db16
+- PDF pages: 41
+- Relevant printed index page: ARM–BID, PDF page 18
+- The index's own legend states that an asterisk indicates supplied information, in whole or part, or a doubtful reading of a name or date.
+
+1904 Department of State calendar:
+
+- Title: Calendar of the Correspondence of James Monroe
+- Public-domain scan URL: https://upload.wikimedia.org/wikipedia/commons/8/82/Calendar_of_the_correspondence_of_James_Monroe_%28IA_calendarofcorres00monr%29.pdf
+- PDF bytes: 14,285,555
+- SHA-256: 8d7ee3c392727f3bdb633f32c30bef85317877dc504f27563082d966003dc300
+- PDF pages: 388
+- Relevant printed page: 18
+
+LOC reel 3, 50% IIIF frames 720–740 use this URL pattern:
+
+https://tile.loc.gov/image-services/iiif/service:mss:mss33217:003:0700:NNNN/full/pct:50/0/default.jpg
+
+Exact image manifest:
+
+~~~text
+frame bytes sha256 dimensions
+720 256249 251b29eef0cbdd4026c5e72f664f2df5da2e9aaeb41a587bc40cbe3af1c2a50a 1413x1164
+721 262882 b9bbb0f79c9436b84fa3c3b15e9c3345edff8da81d00d980348967a11c6a2fa6 1189x1521
+722 296819 21b4aa5dbf9eaaa9f1b2df9e0937bbf7d1a14cd9acc10f768c5d8b42fb06bfa1 1201x1471
+723 283400 a1b5cae79bc8504b4e387aeea6e4a0d882c0a004e60080674358e0fbd920c71b 1193x1477
+724 293186 650753bdcd84a8a3c789a3fe962410b036579558fa4618aaae615c63e9ca6ed2 1200x1446
+725 290270 a837a8a4af4956eb03f38d3c03856f464135d46a88b8c244519c3431fb1da56d 1203x1453
+726 311534 20e121e21637f110b0eb2f60a759d2138098a5bf55cbf8456e0b423f128fc30a 1232x1466
+727 306255 6c0fad65e38e3338e9ded26b8d547a9a977be6b44e74c05c6fbde7d3c52fc21e 1211x1455
+728 291621 5d99cd097261b076966a15ef4b8e40d8a5323be24d7cbdc8c82a395e432425da 1200x1465
+729 326056 d38845e2fccce2190ae895fa45af67798ebafd5b5636854f4b0c3e47a0a8eb76 1192x1457
+730 334004 41844e600bb3089f7fa979eeb78ebd7dfc5e20361a1491e8b64f5d3642982590 1205x1467
+731 343056 7861c598adc6e16024362fd156a2046c5a42e2675b60d3c91ffc9e729cd9be04 1212x1457
+732 292918 46d64c24d729b6ae6a77366d081f873b758b76462d330874032a3a1645991aa7 1201x1443
+733 289214 9508b5335b774929fab1e261a393b53de016df0c0d9dda766a1bf7bc444ae2b5 1186x1479
+734 289768 d5566f24a47cbd9fd4be59a1e032108baf899a8e307d904bde66a024a13c108c 1176x1477
+735 259169 71a020428cd823564231415a6bddae4689f04438a1586ff0a07cd26eb8f6751a 1186x1500
+736 270297 1be17ba837b7d8afb77584711bd1147481e5f6b0c8954f5f5d47945abbe5cad1 1220x1445
+737 273372 7765862f5428dbdc31eee8921dd63fa7ce70fe9b1fe2be1bca117db432396ae2 1200x1500
+738 112979 a7700d01ef8bcd3030e9c74af93a06348dd490b80e4bb7a33ae6d683006c55ac 1198x1424
+739 68718 174a5ee5e6374c4ed167ee06183245a107576fd61f0e056f4e079f0c303d32f9 1269x1001
+740 298353 37d17b5015bf0141c1684f58832e5658a05840263a3257fbd60559475f488609 1127x1310
+~~~
+
+## Completed results
+
+### 1. The 7 January item has a precise archival locator
+
+The 1963 index visually prints this row:
+
+- writer/recipient: *ARMSTRONG JOHN TO JM2
+- date: 1806 JA 7
+- series: 1
+- indexed pages: 4
+
+The same index defines JM2 as James Monroe. Its “P.” count includes surfaces with writing such as docket entries and endorsements, explaining why a three-text-page letter can occupy four indexed surfaces.
+
+This materially corrects the previous checkpoint's uncertainty: the 7 January witness is not merely a calendar mention; it is indexed as a specific four-surface Series 1 item.
+
+### 2. The 1904 calendar gives a content control
+
+The calendar entry reads, with line-break hyphenation normalized:
+
+“1806, January 7. Negotiations with Spain, and his views and opinions thereon. No time should be lost, or we may lose a good occasion. The Emperor's arrival expected. fol. 3 pages.”
+
+This is a catalogue summary, not a transcription. It supplies three strong controls for identifying a candidate manuscript: negotiations with Spain, urgency about losing an occasion, and the Emperor's expected arrival.
+
+The same calendar lists the already inspected 27 February and 30 May items, and its page counts agree with the number of text pages observed in those witnesses.
+
+### 3. The expected chronological position is absent from the public reel sequence
+
+Frames 720–739 are continuously occupied by material dated/docketed 2 January 1806 and addressed to Mr. Madison, including a long multi-page letter and related surfaces. Frame 740 begins George W. Erving to James Monroe, Madrid, 5 February 1806. The manually inspected contact sheet of every frame 720–740 contains no intervening four-surface Armstrong item and no 7 January Armstrong heading or docket.
+
+The image labels also run continuously across this boundary; there is no unrequested or failed IIIF frame between 739 and 740. Therefore, the indexed four-surface item is not in its expected chronological position in the current public reel image sequence.
+
+This is not proof that the manuscript is lost or absent from the collection. Plausible explanations include filing elsewhere in Series 1, a microfilm/digitization omission, or an indexing/arrangement discrepancy.
+
+### 4. Cryptanalytic consequence
+
+The calendar summary shows that the missing witness discusses the same Spain/France diplomatic subject area as the target correspondence and therefore remains a high-value potential key-family/control witness. But without its manuscript surfaces it cannot establish a code number, graphic mark, or plaintext crib. No content was invented from the summary.
+
+The positive WE028 control in #58 remains a different code table. No WE028 parameter search was rerun.
+
+## Completed / running / blocked
+
+- Completed: obtain the item-level Series 1/four-surface locator; obtain the contemporaneous catalogue summary; audit and hash every public reel image in the expected frame interval; reproduce a high-resolution index crop and a complete 720–740 contact sheet.
+- Running: none in this checkpoint.
+- Blocked/uncertain: the four manuscript surfaces have not been located in the public chronological sequence; the catalogue summary cannot substitute for the primary text; no Armstrong key or target plaintext is claimed.
+
+## Source failures and exclusions
+
+- The 1963 PDF's embedded text layer drops the visually printed day “7” in this row. The recovery code therefore asserts the other row fields from extracted text and renders a deterministic 300-dpi crop for manual verification of the day.
+- The calendar's line-broken “Em-peror” is normalized only for the exact text assertion.
+- Handwriting observations at the reel boundary are manual visual observations tied to the hashes above. Automated handwriting recognition was not treated as evidence.
+- No archive outreach, account login, or request was attempted.
+
+## Concrete next action
+
+Search for an alternate digital surrogate or out-of-order copy of this exact four-surface Series 1 item using the three calendar content controls and the 7 January 1806 date. Prioritize: (1) another scan/microfilm surrogate of the LOC Monroe Papers; (2) an item-level duplicate in the New York Public Library James Monroe Papers; and (3) a published quotation in the Papers of James Monroe or contemporary diplomatic correspondence. Accept a candidate only if its heading/date, addressee, and Spain/Emperor content jointly match. Do not resume blind key-family searches without that primary evidence.
+
+## Recovery capsule
+
+The script verifies both PDFs and all 21 boundary images, asserts the extractable catalogue fields, renders the high-resolution Armstrong index crop, and builds the complete contact sheet outside the repository.
+
+Script SHA-256 as executed: 900c3982517d8379d35f8fe2162213e5c221dad1ed5ee967b48fe0f584ff8c62
+
+~~~python
+#!/usr/bin/env python3
+"""Reproduce the Jan. 7, 1806 locator and reel-boundary audit."""
+
+import argparse
+import hashlib
+import json
+import re
+import subprocess
+import urllib.request
+from pathlib import Path
+
+from PIL import Image, ImageOps, ImageDraw
+
+DOCS = {
+    "index-1963.pdf": ("https://tile.loc.gov/storage-services/service/gdc/gdclccn/62/06/00/06/62060006/62060006.pdf", 4500678, "d8c172a37adeebd9239232339cd2f7fe968b3213eae3f364bbece20cd060db16"),
+    "calendar-correspondence-1904.pdf": ("https://upload.wikimedia.org/wikipedia/commons/8/82/Calendar_of_the_correspondence_of_James_Monroe_%28IA_calendarofcorres00monr%29.pdf", 14285555, "8d7ee3c392727f3bdb633f32c30bef85317877dc504f27563082d966003dc300"),
+}
+
+MANIFEST = """720 256249 251b29eef0cbdd4026c5e72f664f2df5da2e9aaeb41a587bc40cbe3af1c2a50a 1413 1164
+721 262882 b9bbb0f79c9436b84fa3c3b15e9c3345edff8da81d00d980348967a11c6a2fa6 1189 1521
+722 296819 21b4aa5dbf9eaaa9f1b2df9e0937bbf7d1a14cd9acc10f768c5d8b42fb06bfa1 1201 1471
+723 283400 a1b5cae79bc8504b4e387aeea6e4a0d882c0a004e60080674358e0fbd920c71b 1193 1477
+724 293186 650753bdcd84a8a3c789a3fe962410b036579558fa4618aaae615c63e9ca6ed2 1200 1446
+725 290270 a837a8a4af4956eb03f38d3c03856f464135d46a88b8c244519c3431fb1da56d 1203 1453
+726 311534 20e121e21637f110b0eb2f60a759d2138098a5bf55cbf8456e0b423f128fc30a 1232 1466
+727 306255 6c0fad65e38e3338e9ded26b8d547a9a977be6b44e74c05c6fbde7d3c52fc21e 1211 1455
+728 291621 5d99cd097261b076966a15ef4b8e40d8a5323be24d7cbdc8c82a395e432425da 1200 1465
+729 326056 d38845e2fccce2190ae895fa45af67798ebafd5b5636854f4b0c3e47a0a8eb76 1192 1457
+730 334004 41844e600bb3089f7fa979eeb78ebd7dfc5e20361a1491e8b64f5d3642982590 1205 1467
+731 343056 7861c598adc6e16024362fd156a2046c5a42e2675b60d3c91ffc9e729cd9be04 1212 1457
+732 292918 46d64c24d729b6ae6a77366d081f873b758b76462d330874032a3a1645991aa7 1201 1443
+733 289214 9508b5335b774929fab1e261a393b53de016df0c0d9dda766a1bf7bc444ae2b5 1186 1479
+734 289768 d5566f24a47cbd9fd4be59a1e032108baf899a8e307d904bde66a024a13c108c 1176 1477
+735 259169 71a020428cd823564231415a6bddae4689f04438a1586ff0a07cd26eb8f6751a 1186 1500
+736 270297 1be17ba837b7d8afb77584711bd1147481e5f6b0c8954f5f5d47945abbe5cad1 1220 1445
+737 273372 7765862f5428dbdc31eee8921dd63fa7ce70fe9b1fe2be1bca117db432396ae2 1200 1500
+738 112979 a7700d01ef8bcd3030e9c74af93a06348dd490b80e4bb7a33ae6d683006c55ac 1198 1424
+739 68718 174a5ee5e6374c4ed167ee06183245a107576fd61f0e056f4e079f0c303d32f9 1269 1001
+740 298353 37d17b5015bf0141c1684f58832e5658a05840263a3257fbd60559475f488609 1127 1310"""
+
+
+def norm(text):
+    return " ".join(text.split())
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--asset-dir", required=True)
+    ap.add_argument("--fetch", action="store_true")
+    args = ap.parse_args()
+    out, src = Path(args.out), Path(args.asset_dir)
+    out.mkdir(parents=True, exist_ok=False)
+    src.mkdir(parents=True, exist_ok=True)
+    audit = {"documents": {}, "images": {}}
+
+    for name, (url, size, sha) in DOCS.items():
+        p = src / name
+        if args.fetch and not p.exists():
+            urllib.request.urlretrieve(url, p)
+        data = p.read_bytes()
+        actual = {"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest()}
+        assert actual == {"bytes": size, "sha256": sha}, (name, actual)
+        audit["documents"][name] = actual
+
+    index_text = subprocess.check_output(["pdftotext", "-layout", str(src / "index-1963.pdf"), "-"], text=True)
+    # The embedded text layer drops the visually printed day 7; preserve a
+    # deterministic high-resolution crop for the manual day reading.
+    assert re.search(r"\*ARMSTRONG JOHN TO JM2\s+1806 JA\s+1\s+4", index_text)
+    subprocess.check_call(["pdftoppm", "-f", "18", "-l", "18", "-r", "300", "-png", "-singlefile", str(src / "index-1963.pdf"), str(out / "index-p18")], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    with Image.open(out / "index-p18.png") as im:
+        im.crop((0, 0, 1500, 1100)).save(out / "index-armstrong-crop.png")
+    calendar_text = subprocess.check_output(["pdftotext", "-layout", str(src / "calendar-correspondence-1904.pdf"), "-"], text=True)
+    c = norm(calendar_text)
+    assert "1806, January 7. Negotiations with Spain, and his views and opinions thereon. No time should be lost, or we may lose a good occasion. The Em- peror's arrival expected. fol. 3 pages." in c
+
+    thumbs = []
+    for row in MANIFEST.splitlines():
+        frame, size, sha, width, height = row.split()
+        name = f"r3-{int(frame):04d}-50.jpg"
+        url = f"https://tile.loc.gov/image-services/iiif/service:mss:mss33217:003:0700:{int(frame):04d}/full/pct:50/0/default.jpg"
+        p = src / name
+        if args.fetch and not p.exists():
+            urllib.request.urlretrieve(url, p)
+        data = p.read_bytes()
+        with Image.open(p) as im:
+            dims = list(im.size)
+            thumb = ImageOps.contain(im.convert("RGB"), (360, 430))
+        actual = {"bytes": len(data), "sha256": hashlib.sha256(data).hexdigest(), "dimensions": dims}
+        assert actual == {"bytes": int(size), "sha256": sha, "dimensions": [int(width), int(height)]}, (name, actual)
+        audit["images"][frame] = actual
+        canvas = Image.new("RGB", (400, 480), "white")
+        canvas.paste(thumb, ((400 - thumb.width) // 2, 20))
+        ImageDraw.Draw(canvas).text((12, 452), f"LOC reel 3 frame {frame}", fill="black")
+        thumbs.append(canvas)
+
+    sheet = Image.new("RGB", (1200, 480 * 7), "white")
+    for i, thumb in enumerate(thumbs):
+        sheet.paste(thumb, ((i % 3) * 400, (i // 3) * 480))
+    sheet.save(out / "contact-720-740.jpg", quality=92)
+    audit["assertions"] = {
+        "index": "Armstrong to Monroe, 1806 Jan. 7, Series 1, four indexed pages",
+        "calendar": "three text pages; Spain negotiations; urgency; Emperor arrival expected",
+        "reel_boundary": "manual image review required; hashes and contact sheet reproduced"
+    }
+    (out / "audit.json").write_text(json.dumps(audit, indent=2, sort_keys=True) + "\n")
+    print(json.dumps(audit["assertions"], sort_keys=True))
+
+
+if __name__ == "__main__":
+    main()
+~~~
+
+Example, outside the repository:
+
+~~~sh
+python recovery59.py \
+  --out /tmp/armstrong-recovery59 \
+  --asset-dir /tmp/armstrong-assets59 \
+  --fetch
+~~~
+
+Expected assertions: Armstrong-to-Monroe 7 January is a four-surface Series 1 item; the calendar describes three text pages on Spain negotiations, urgency, and the Emperor's expected arrival; and all 21 boundary images match the recorded manifest.
