@@ -1,0 +1,9 @@
+pool gains: VBAR_A g/t, VBAR_B f/s 0.0874; VBAR_A g/t, VBAR_B s 0.0894; VBAR_A t/s, VBAR_B f/s 0.0827; VBAR_A t/s, VBAR_B s 0.0843
+  VBAR_A g/t, VBAR_B f/s  vs  VBAR_A g/t, VBAR_B s: first wins 0/30 -> second PREFERRED
+  VBAR_A g/t, VBAR_B f/s  vs  VBAR_A t/s, VBAR_B f/s: first wins 29/30 -> first PREFERRED
+  VBAR_A g/t, VBAR_B f/s  vs  VBAR_A t/s, VBAR_B s: first wins 24/30 -> undecided
+  VBAR_A g/t, VBAR_B s  vs  VBAR_A t/s, VBAR_B f/s: first wins 30/30 -> first PREFERRED
+  VBAR_A g/t, VBAR_B s  vs  VBAR_A t/s, VBAR_B s: first wins 29/30 -> first PREFERRED
+  VBAR_A t/s, VBAR_B f/s  vs  VBAR_A t/s, VBAR_B s: first wins 0/30 -> second PREFERRED
+f.108v gains: VBAR_A g/t, VBAR_B f/s 0.1521; VBAR_A g/t, VBAR_B s 0.1521; VBAR_A t/s, VBAR_B f/s 0.1409; VBAR_A t/s, VBAR_B s 0.1409
+known f.61 lines gains: VBAR_A g/t, VBAR_B f/s 0.2546; VBAR_A g/t, VBAR_B s 0.2600; VBAR_A t/s, VBAR_B f/s 0.2369; VBAR_A t/s, VBAR_B s 0.2248

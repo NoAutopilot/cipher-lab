@@ -2918,3 +2918,26 @@ class change.
 
 So the gap H141 found has two parts: sets widened by the frac-0.1 rule (a presentation choice of v4's decode), and two genuine
 cell conflicts (VBAR_A, VBAR_B) that the family pool can test with the H127 statistic (H146). No new key, no reading.
+
+## Campaign step H146 (28 Sept 2026, 19:55-20:02 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61vbar_cells.py` (rule in its docstring, pushed dee63f1c before the run; `f61vbar_cells_result.txt`): H145's two
+cell conflicts scored by sequence gain; family pool with 30 bootstrap resamples, f.108v and the known f.61 lines as is.
+
+| map | pool gain | f.108v | known f.61 lines |
+|---|---|---|---|
+| VBAR_A g/t, VBAR_B f/s (14 cells) | 0.0874 | 0.1521 | 0.2546 |
+| VBAR_A g/t, VBAR_B s | **0.0894** | 0.1521 | **0.2600** |
+| VBAR_A t/s (v4), VBAR_B f/s | 0.0827 | 0.1409 | 0.2369 |
+| VBAR_A t/s (v4), VBAR_B s (v4) | 0.0843 | 0.1409 | 0.2248 |
+
+- **VBAR_A: g/t preferred over v4's t/s** on the pool (29/30 and 30/30 resamples, both VBAR_B settings) and higher on f.108v
+  and on the known f.61 lines. v4's s for VBAR_A (period s 93) most likely comes from VBAR_B signs the family readers coded
+  VBAR_A (the two differ only by a second bar), which H145's table cannot see.
+- **VBAR_B: s alone preferred over f/s** on the pool (f/s wins 0/30) and on the known lines; f.108v cannot tell (no
+  difference). Caveat: a one-letter set removes a choice, so this says only that f is rarely right under VBAR_B, not what
+  VBAR_B's second letter is.
+
+For the verifier and the family worker: on this evidence the 14-cell g/t stands for VBAR_A against v4, and VBAR_B is s
+nearly always. Model-free, frequency-proof, out-of-sample on the family pool; not a period attestation and not a reading.
+No class change.
