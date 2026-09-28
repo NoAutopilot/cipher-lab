@@ -26,6 +26,10 @@ from f61crib4 import split_lines
 from f61joint import f108_lines
 SHEETS = ["f61sheetB_L01", "f61sheetB_L03", "f61sheetB_L05", "f61sheetB_L07", "f61sheetB_L08", "f61sheetB_L11", "f61sheetB_L10", "f108sheetB_L02", "f108sheetB_L03"]
 CLS = ("C43", "4STEM", "C6", "LOOPBAR"); CELLS = ("a", "n")
+# H24b (28 Sept 2026): --c43-only restricts the expected list to the 43 glyph (pass A's C43 on f.61, the draft's C43 on f.108)
+# and writes f61an_c43_result.txt; without the flag H24's expected list and result file are unchanged.
+if "--c43-only" in sys.argv: CLS = ("C43",)
+RES = "f61an_c43_result.txt" if "--c43-only" in sys.argv else "f61an_result.txt"
 def expected():
     lines = split_lines(load_read()); lines.update(f108_lines())
     u = {}
@@ -44,7 +48,7 @@ def expected():
         line = ("F108_" if sheet.startswith("f108") else "") + sheet.split("_")[1]
         for j, c in enumerate(lines.get(line, [])):
             if c in CLS:
-                L = letter.get((line, j), "-"); lab = ("a" if L == "a" else ("n" if L == "n" else "-")) if c in ("C43", "4STEM") else "-"   # C6/LOOPBAR listed (the reader must count them) but never scored: their a/n counts are the DP's, not Tomokiyo's (class_diag: dashes)
+                L = letter.get((line, j), "-"); lab = ("a" if L == "a" else ("n" if L == "n" else "-")) if c in ("C43", "4STEM") else "-"   # unchanged under --c43-only (4STEM is then not expected at all)   # C6/LOOPBAR listed (the reader must count them) but never scored: their a/n counts are the DP's, not Tomokiyo's (class_diag: dashes)
                 out.append((sheet, j + 1, c, L, lab))
     return out
 def stat(groups, labels):
@@ -85,7 +89,7 @@ def score(path):
         perm.sort(); p95 = perm[int(0.95 * 200) - 1]
         out.append(f"scored {n} (a {n - k}, n {k}); groups {len(set(groups))}; observed {obs}/{n}; {pnote}; permutation p95 {p95}/{n}")
         out.append(f"GATE H24: {'PASS' if obs > p95 and p < 0.05 else 'FAIL'}")
-    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61an_result.txt"
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/{RES}"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt, end="")
