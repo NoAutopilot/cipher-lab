@@ -965,3 +965,17 @@ were rebound or the aid's items 48/49 were numbered against the other leaf. Both
 aid is the authority for cote and folio and the leaf's own heading is quoted beside it, not silently reconciled (H32).
 No reading, no class change, no novelty wording; the owner not named.
 
+## Campaign step H9 (2026-09-28 01:27 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only. Six rows appended to `JSTOR-QUEUE.tsv` for the
+owner's local runner, in the verifier brief's two families: (i) "Mayenne" AND "Diou" AND chiffre; "duc de Mayenne" AND
+"commandeur de Diou" AND 1593; "Diou" AND "Jeannin" AND 1592 AND chiffre; (ii) the bare quoted phrases "pas paresseux si"
+(the clear words before the L10 run, both passes), "satisfaire ung seul au prejudice de plusieurs" (the period gloss of
+fr.3983 f.108r line 1, as Tomokiyo's overlay prints it) and "jalousie au beau-pere" (Tomokiyo's own f.61 reading). A
+queued row never blocks N3 or N4 on its own. No calls, no requests.
+
+**Runner hold.** Every remaining open row (H29, H30, H31, H33, H34 family leaves; H25 judge re-run; H26, H24 shape sorts)
+needs Opus or Sonnet subagent calls and H10 a person; the account is at its seven-day rate-limit warning (orchestrator,
+01:16 UTC), under which BUDGETS.md's scaling rule allows no new workers. The runner holds until the orchestrator clears
+the warning or the next firing finds it cleared; the campaign is neither budget-stopped nor closed.
+
