@@ -1123,3 +1123,20 @@ brief's 60% gate: the leaf is HELD, nothing merged, the alignment run for the re
 (`family/key_period_f106_held.tsv`, 109 rows, 15 classes). The six rows carry none of CA, LOOPBAR, ZHOOK. 4 Opus vision
 calls; Gallica 1 request (native refetch of canvas 191). Next cheap step (new CAMPAIGN row): a gloss-only recut around the
 gloss rows at 4x, or a person's reading of the six glosses; the sign passes stand.
+
+## Campaign step H33 (2026-09-28 02:4x UTC) -- context judge on the v3 skeleton: FAIL as pre-registered (F61-FAMILY-3)
+
+The every-class condition failed (CA, LOOPBAR, ZHOOK, CROSS, LL uncovered by all three glossed hands), so H33 ran on the v3
+skeleton in the H16 shape (`family/f61ctx.py`, prompt in family/passes/PROMPTS_f188_f184_f106.md written before the call,
+key withheld, 20 permutations of the period letter sets across the covered classes, seeds as H16, unread signs shown as ?).
+**Positive control** (six known span lines, Tomokiyo's letters withheld): the target set ranked 1st of 21 -- PASS on the
+pre-registered rank gate, but by half a point (5.0 vs 4.5 for a permuted key) and the judge's resolved reading of the target
+matched Tomokiyo's letters at only 14/34 (e.g. "arrestantpeines" for est ca-p-able): the wide v3 letter sets plus 20 ?
+wildcards let the judge write plausible French under almost any key. **Target** (all nine lines, 99 signs): the target
+ranked 2nd of 21 (4.5; a permuted key scored 7.0) -- FAIL. `family/f61_decode_period_v3_ctx.txt/.tsv` is written for the
+record (C 10, C+ 4, M-ctx 65, I 20) and is NOT reading-ready: every M-ctx choice is unlicensed. Reading of the result: at
+99 signs with 5 uncovered classes and 3-6-letter sets, a French-plausibility judge has no discriminating power (rule 3's
+control-near-ceiling shape inverted: the control barely passes and its reading is wrong), so this method is logged
+"untestable at this coverage", not a negative on the key -- the key itself reads the known spans at 0.782 vs 0.618 by the
+DP test. Two Opus text calls (about 160k subagent tokens each). Next: cover the five classes (H43 shape sort; H42 more of
+f.188r for LOOPBAR/CA if Desportes uses them further down; H41 f.106r gloss) before any further context pass.

@@ -1,0 +1,10 @@
+# f.61r under key_period_v3.tsv with the grade-M pairs resolved by context by a blind Opus text judge (H33, F61-FAMILY-3, 28 Sept 2026; sets in passes/f61ctx_full_sets.txt, verdict passes/f61ctx_full_verdict.tsv, control passes/f61ctx_known_result.txt): 99 signs, C 10, C+ 4, I 20, M-ctx 65. x[e/r] = the judge's choice within the period pair; x? = no period pair, the judge's guess (grade I). Not a reading of the letter (rule 10).
+L01: b? e a[a/n] u[u/e] e[e/r/o] p[n/a/c/p] r e? e[e/r/o] s[t/s/f] i[d/q/i] n[d/a/q/n]
+L02: e[e/r/o] t[e/q/i/p/r/s/t]
+L03: a? u? r e[e/r/o] s t[t/s/f] a[n/a/c/p] n[a/n] t? c[n/a/c/p] e l? a[a/n] e[e/r/u] s[l/s/a]
+L04: e? t[e/q/i/p/r/s/t]
+L05: s[q/s] e[e/m] f[t/s/f] o[e/r/o] r[e/r/u] c[n/a/c/p] e? r? a[a/n] e[u/e] n[a/n] e n[a/n] c[n/a/c/p] o[e/r/o] r? e[e/r/o] s
+L07: c? e? s? s[m/s] a[l/s/a] e r[e/r/o] e[u/e] s t? e?
+L08: o[e/r/o] n[a/n] e u[u/e] r[e/r/u] o[e/r/o] n[a/n] e[u/e] e n? c[n/a/c/p] o[e/r/o] r[e/r/o] e[e/r/o]
+L10: l[l/s/a] e? e[e/r/o] s[t/s/f] o[e/r/o] r[e/r/o] s u[u/e] l? e r[e/r/o] r? e
+L11: s[m/s] e[e/r/o] l[l/s/a] o[e/r/o] n[a/n] t[t/s/f] e[e/r/o] n[n/a/c/e] d[d/a/q/n] r[e/r/u] e? s[t/s/f]

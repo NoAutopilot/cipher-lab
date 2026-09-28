@@ -1,0 +1,4 @@
+known: target SET-13 scored 5.0; rank 1 of 21 (ties against the target)
+all scores: SET-13:5 SET-09:4.5 SET-01:4 SET-04:3.5 SET-03:3 SET-08:2.5 SET-14:2.5 SET-06:2 SET-11:2 SET-16:2 SET-17:2 SET-19:2 SET-02:1.5 SET-10:1.5 SET-15:1.5 SET-18:1.5 SET-21:1.5 SET-05:1 SET-07:1 SET-12:1 SET-20:0.5
+target reading as given by the judge: generardesin | arrestantpeines | setoucheauneacrues | desmaeresse | oneureneespere | selonsondeit
+GATE H33 (known): rank 1 of 21 -> PASS
