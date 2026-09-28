@@ -50,13 +50,21 @@ with open(os.path.join(HERE, "erving_groups.tsv"), "w") as fh:
     fh.write("frame\tcrop\tpos\tgroup\tgloss\tconf\twe028\tmatch\tnote\n")
     for r in out:
         fh.write("\t".join(str(r[k]) for k in ("frame", "crop", "pos", "group", "gloss", "conf", "we028", "match", "note")) + "\n")
+# a miss whose gloss matches the WE028 entry of the neighbouring group (the interline word sits between two groups in
+# dense lines) is a one-group shift of the gloss assignment, not a value mismatch: counted separately
+for i, r in enumerate(out):
+    if r["match"] != "miss":
+        continue
+    for j in (i - 1, i + 1):
+        if 0 <= j < len(out) and out[j]["frame"] == r["frame"] and out[j]["we028"] and match(r["gloss"], out[j]["we028"]) in ("exact", "partial"):
+            r["match"] = "shifted"; break
 c = Counter(r["match"] for r in out)
 toks = [int(r["group"]) for r in out if r["group"].isdigit()]
 hi = [v for v in toks if v >= 100]
 u = Counter(v % 10 for v in hi)
 lines = [f"groups read {len(out)} (per frame: " + ", ".join(f"{fr} {sum(1 for r in out if r['frame']==fr)}" for fr in ORDER) + ")",
          f"digits clean {len(toks)}, unread digit {c['unread']}, value not in WE028 (>1596 or 0) {c['notintable']}",
-         f"glossed {sum(1 for r in out if r['match'] in ('exact','partial','miss'))}: exact {c['exact']}, partial {c['partial']}, miss {c['miss']}; no gloss {c['nogloss']}",
+         f"glossed {sum(1 for r in out if r['match'] in ('exact','partial','miss','shifted'))}: exact {c['exact']}, partial {c['partial']}, shifted to a neighbour {c['shifted']}, miss {c['miss']}; no gloss {c['nogloss']}",
          f"distinct values {len(set(toks))}, values >= 100: {len(hi)} tokens, units 0/1 share {(u[0]+u[1])/max(1,len(hi)):.3f}, units 2/3/5/9 share {(u[2]+u[3]+u[5]+u[9])/max(1,len(hi)):.3f}, max value {max(toks) if toks else 0}",
          f"top values: " + ", ".join(f"{v}x{n}" for v, n in Counter(toks).most_common(12))]
 # the same stream through design/design_stats.py's stats() (the target and the four THE=972 letters use it)

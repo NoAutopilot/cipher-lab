@@ -1,0 +1,105 @@
+frame	crop	pos	group	gloss	conf	we028	match	note
+f0742R	1	1	900	-	low	-	nogloss	gloss cut at top page edge
+f0742R	1	2	660	and	medium	yoke	miss	
+f0742R	1	3	1385	the	medium	the	exact	
+f0742R	1	4	798	-	low	doth	nogloss	gloss cut at top page edge
+f0742R	6	1	134	mr	medium	mis	miss	
+f0742R	6	2	1379	-	medium	ter	nogloss	no distinct gloss seen
+f0742R	7	1	1357	bow	medium	bri	miss	part of split gloss "bow-do-in"
+f0742R	7	2	854	do	high	do	exact	part of split gloss "bow-do-in"
+f0742R	7	3	1426	in	high	in	exact	part of split gloss "bow-do-in"
+f0742R	8	1	1399	this	high	this	exact	
+f0742R	8	2	1229	govern	medium	govern	exact	part of split gloss "govern-ment"
+f0742R	8	3	637	ment	medium	ment	exact	part of split gloss "govern-ment"
+f0742R	9	1	1576	of	medium	of	exact	
+f0742R	9	2	1385	the	medium	the	exact	
+f0742R	9	3	970	floridas	high	florida	partial	
+f0742R	10	1	987	four	high	four	exact	
+f0742R	10	2	648	millions	high	million	partial	
+f0742R	10	3	794	dollars	high	dollar	partial	
+f0742R	10	4	1385	the	medium	the	exact	gloss partly at right edge
+f0742R	11	1	795	french	medium	dom	miss	
+f0742R	11	2	1229	govern	medium	govern	exact	part of split gloss "govern-ment"
+f0742R	11	3	837	ment	medium	differ	miss	part of split gloss "govern-ment"
+f0742R	11	4	1436	is	high	is	exact	
+f0742R	11	5	1238	guar	medium	gu	partial	part of split gloss, likely "guarantee[d]"
+f0742R	11	6	680	an	low	ar	miss	part of split gloss
+f0742R	11	7	1549	tee	low	an	miss	part of split gloss
+f0742R	11	8	1372	-	low	te	nogloss	unclear remainder of split gloss
+f0742R	13	1	1385	the	medium	the	exact	
+f0742R	13	2	1379	let	low	ter	miss	
+f0742R	13	3	1477	vit	low	rit	miss	
+f0742R	13	4	916	ory	low	ory	exact	digit "9" uncertain
+f0742R	13	5	992	stranger	medium	france	miss	
+f0742R	14	1	177	her	medium	her	exact	
+f0742R	14	2	240	six	medium	six	exact	
+f0742R	14	3	648	millions	high	million	partial	
+f0742R	14	4	151	more	medium	more	exact	
+f0742R	14	5	581	for	medium	hum	miss	
+f0742R	14	6	1440	of	medium	it	miss	
+f0742R	14	7	1387	than	medium	them	miss	
+f0742R	15	1	309	this	medium	faith	miss	
+f0742R	15	2	1393	they	medium	they	exact	
+f0742R	16	1	413	natur	medium	natur	exact	part of split gloss "natur-e"
+f0742R	16	2	501	e	low	E	exact	part of split gloss "natur-e"
+f0742R	16	3	660	2nd	low	yoke	miss	part of split gloss "2nd-character"
+f0742R	16	4	9	character	low	character	exact	part of split gloss "2nd-character"; single-digit group
+f0742R	16	5	134	mr	medium	mis	miss	
+f0742R	16	6	1379	-	low	ter	nogloss	no distinct gloss seen
+f0742R	16	7	880	-	low	li	nogloss	no distinct gloss seen
+f0742R	17	1	72	-	low	measure	nogloss	no distinct gloss seen
+f0742R	17	2	381	-	low	sto	nogloss	no distinct gloss seen
+f0742R	17	3	407	-	low	nant	nogloss	no distinct gloss seen
+f0742R	17	4	628	me	medium	me	exact	part of split gloss "me-et"
+f0742R	17	5	275	et	medium	et	exact	part of split gloss "me-et"
+f0742R	17	6	1190	with	medium	with	exact	
+f0742R	17	7	1385	for	low	the	miss	gloss uncertain, differs from other instances of 1385
+f0742R	17	8	1071	same	medium	same	exact	
+f0742R	18	1	16	lab	low	emperor	miss	part of possible split gloss "lab-el"
+f0742R	18	2	501	el	low	E	miss	part of possible split gloss "lab-el"
+f0742R	18	3	134	mr	medium	mis	miss	
+f0742R	18	4	1379	-	low	ter	nogloss	no distinct gloss seen
+f0742R	18	5	1351	bow	medium	bow	exact	part of split gloss "bow-do-in"
+f0742R	18	6	854	do	high	do	exact	part of split gloss "bow-do-in"
+f0742R	18	7	1426	in	high	in	exact	part of split gloss "bow-do-in"
+f0742R	19	1	569	to	medium	to	exact	
+f0742R	19	2	102	him	medium	Canada	miss	
+f0742R	20	1	169	he	medium	he	exact	
+f0742R	20	2	1186	will	medium	will	exact	
+f0742R	20	3	249	so	medium	so	exact	
+f0742R	20	4	1392	-	low	these	nogloss	gloss cut at top edge, cursive word not legible
+f0742R	20	5	31	to	medium	such	miss	
+f0742R	20	6	1372	-	low	te	nogloss	no distinct gloss seen
+f0742R	20	7	569	-	low	to	nogloss	gloss not visible in this crop
+f0742R	21	1	28	me	medium	opportunity	miss	
+f0742R	22	1	569	to	medium	to	exact	
+f0742R	22	2	182	him	high	him	exact	
+f0742R	22	3	1384	that	medium	that	exact	
+f0742R	22	4	361	not	low	noth	partial	
+f0742R	22	5	142	the	low	mod	miss	
+f0742R	23	1	149	-	low	month	nogloss	no distinct gloss seen
+f0742R	23	2	416	should	medium	nd	miss	
+f0742R	23	3	90	-	low	Should	nogloss	no distinct gloss seen
+f0742R	23	4	1310	-	low	be	nogloss	no distinct gloss seen
+f0742R	23	5	880	-	low	li	nogloss	no distinct gloss seen
+f0742R	23	6	260	-	low	spr	nogloss	no distinct gloss seen
+f0742R	23	7	1375	hon	low	ten	miss	
+f0742R	23	8	520	the	low	ed	miss	
+f0742R	23	9	569	to	medium	to	exact	
+f0742R	24	1	182	him	high	him	exact	part of split gloss "him-self"
+f0742R	24	2	1081	self	high	self	exact	part of split gloss "him-self"
+f0742R	24	3	831	-	low	det	nogloss	no distinct gloss seen
+f0742R	25	1	143	-	low	moderate	nogloss	no distinct gloss seen
+f0742R	25	2	601	of	low	M	miss	
+f0742R	25	3	1576	trans	low	of	miss	part of split gloss, likely "transmission"
+f0742R	25	4	752	mit	low	trans	miss	part of split gloss
+f0742R	25	5	137	tion	low	mit	miss	part of split gloss
+f0742R	25	6	564	to	low	tin	miss	
+f0742R	25	7	1201	-	low	G	nogloss	no distinct gloss seen
+f0742R	25	8	569	-	low	to	nogloss	no distinct gloss seen
+f0742R	26	1	352	at	medium	no	miss	
+f0742R	26	2	90	should	medium	Should	exact	part of split gloss "should-be"
+f0742R	26	3	1310	be	medium	be	exact	part of split gloss "should-be"
+f0742R	26	4	736	receiv	medium	receive	partial	part of split gloss "receiv-ed"
+f0742R	26	5	801	ed	medium	D	miss	part of split gloss "receiv-ed"
+f0742R	26	6	790	but	medium	but	exact	

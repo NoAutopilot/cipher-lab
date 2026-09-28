@@ -1,0 +1,6 @@
+groups read 104 (per frame: f0741R 0, f0742L 0, f0742R 104, f0743L 0)
+digits clean 104, unread digit 0, value not in WE028 (>1596 or 0) 0
+glossed 82: exact 41, partial 7, shifted to a neighbour 7, miss 27; no gloss 22
+distinct values 79, values >= 100: 97 tokens, units 0/1 share 0.289, units 2/3/5/9 share 0.392, max value 1576
+top values: 1385x5, 569x5, 1379x4, 134x3, 660x2, 854x2, 1426x2, 1229x2, 1576x2, 648x2, 1372x2, 501x2
+design_stats: N=104 D=79 D/N=0.760 low_share=0.067 low_distinct=6 hi_distinct=73 units_top1=0.175 units_top2=0.330 units_H=3.189 units_digit0_share=0.155 decades_occupied=56 decade_multi_frac=0.196 variants_per_decade=1.304 decade_units_modal=0.541 decade_units_null=0.376 decade_units_z=3.341 decade_units_rows=7 block_min=0 block_median=5 block_trough=0.000 block_pair_min=3 freqpos_jsd=0.011 top10_share=0.279 top10_pos_sd=0.283 onepart_dist=0.223 digit_order_rho=0.017 digits23_share=0.159 gap_median=497 gap_median_shuffled=492 gap_small_frac=0.019 gap_small_frac_shuffled=0.019

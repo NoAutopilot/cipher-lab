@@ -1,0 +1,111 @@
+crop	pos	group	gloss	conf	note
+1	1	900	-	low	gloss cut at top page edge
+1	2	660	and	medium
+1	3	1385	the	medium
+1	4	798	-	low	gloss cut at top page edge
+2	1	NONE	-	high	no group in target band
+3	1	NONE	-	high	no group in target band
+4	1	NONE	-	high	no group in target band
+5	1	NONE	-	high	no group in target band; gloss "Mr" visible belongs to next line's 134
+6	1	134	mr	medium
+6	2	1379	-	medium	no distinct gloss seen
+7	1	1357	bow	medium	part of split gloss "bow-do-in"
+7	2	854	do	high	part of split gloss "bow-do-in"
+7	3	1426	in	high	part of split gloss "bow-do-in"
+8	1	1399	this	high
+8	2	1229	govern	medium	part of split gloss "govern-ment"
+8	3	637	ment	medium	part of split gloss "govern-ment"
+9	1	1576	of	medium
+9	2	1385	the	medium
+9	3	970	floridas	high
+10	1	987	four	high
+10	2	648	millions	high
+10	3	794	dollars	high
+10	4	1385	the	medium	gloss partly at right edge
+11	1	795	french	medium
+11	2	1229	govern	medium	part of split gloss "govern-ment"
+11	3	837	ment	medium	part of split gloss "govern-ment"
+11	4	1436	is	high
+11	5	1238	guar	medium	part of split gloss, likely "guarantee[d]"
+11	6	680	an	low	part of split gloss
+11	7	1549	tee	low	part of split gloss
+11	8	1372	-	low	unclear remainder of split gloss
+12	1	NONE	-	high	no group in target band
+13	1	1385	the	medium
+13	2	1379	let	low
+13	3	1477	vit	low
+13	4	916	ory	low	digit "9" uncertain
+13	5	992	stranger	medium
+14	1	177	her	medium
+14	2	240	six	medium
+14	3	648	millions	high
+14	4	151	more	medium
+14	5	581	for	medium
+14	6	1440	of	medium
+14	7	1387	than	medium
+15	1	309	this	medium
+15	2	1393	they	medium
+16	1	413	natur	medium	part of split gloss "natur-e"
+16	2	501	e	low	part of split gloss "natur-e"
+16	3	660	2nd	low	part of split gloss "2nd-character"
+16	4	9	character	low	part of split gloss "2nd-character"; single-digit group
+16	5	134	mr	medium
+16	6	1379	-	low	no distinct gloss seen
+16	7	880	-	low	no distinct gloss seen
+17	1	72	-	low	no distinct gloss seen
+17	2	381	-	low	no distinct gloss seen
+17	3	407	-	low	no distinct gloss seen
+17	4	628	me	medium	part of split gloss "me-et"
+17	5	275	et	medium	part of split gloss "me-et"
+17	6	1190	with	medium
+17	7	1385	for	low	gloss uncertain, differs from other instances of 1385
+17	8	1071	same	medium
+18	1	16	lab	low	part of possible split gloss "lab-el"
+18	2	501	el	low	part of possible split gloss "lab-el"
+18	3	134	mr	medium
+18	4	1379	-	low	no distinct gloss seen
+18	5	1351	bow	medium	part of split gloss "bow-do-in"
+18	6	854	do	high	part of split gloss "bow-do-in"
+18	7	1426	in	high	part of split gloss "bow-do-in"
+19	1	569	to	medium
+19	2	102	him	medium
+20	1	169	he	medium
+20	2	1186	will	medium
+20	3	249	so	medium
+20	4	1392	-	low	gloss cut at top edge, cursive word not legible
+20	5	31	to	medium
+20	6	1372	-	low	no distinct gloss seen
+20	7	569	-	low	gloss not visible in this crop
+21	1	28	me	medium
+22	1	569	to	medium
+22	2	182	him	high
+22	3	1384	that	medium
+22	4	361	not	low
+22	5	142	the	low
+23	1	149	-	low	no distinct gloss seen
+23	2	416	should	medium
+23	3	90	-	low	no distinct gloss seen
+23	4	1310	-	low	no distinct gloss seen
+23	5	880	-	low	no distinct gloss seen
+23	6	260	-	low	no distinct gloss seen
+23	7	1375	hon	low
+23	8	520	the	low
+23	9	569	to	medium
+24	1	182	him	high	part of split gloss "him-self"
+24	2	1081	self	high	part of split gloss "him-self"
+24	3	831	-	low	no distinct gloss seen
+25	1	143	-	low	no distinct gloss seen
+25	2	601	of	low
+25	3	1576	trans	low	part of split gloss, likely "transmission"
+25	4	752	mit	low	part of split gloss
+25	5	137	tion	low	part of split gloss
+25	6	564	to	low
+25	7	1201	-	low	no distinct gloss seen
+25	8	569	-	low	no distinct gloss seen
+26	1	352	at	medium
+26	2	90	should	medium	part of split gloss "should-be"
+26	3	1310	be	medium	part of split gloss "should-be"
+26	4	736	receiv	medium	part of split gloss "receiv-ed"
+26	5	801	ed	medium	part of split gloss "receiv-ed"
+26	6	790	but	medium
+27	1	NONE	-	high	no group in target band; only archival foliation stamp "2060" visible, not a code group
