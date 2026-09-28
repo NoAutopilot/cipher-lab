@@ -3337,3 +3337,30 @@ verdict as H54: **the model reader with Tomokiyo's sheet is the limit, not the i
 clause, glyph type-reading by model readers is retired for this target as untested-by-this-tool (not refuted); the
 next attempt needs a different instrument (H57, added) or a person. No reading, no class change; nothing called new
 or first. Vision 0 (the step's two calls not spent), requests 0. Cost: about 0.5 USD (`--spend` records 0.5).
+
+## Campaign step H58 (28 Sept 2026, to 15:15 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H58: audit the 29 shorthand line crops (images/shorthand/) that every glyph step used (B35 and its successors, H54,
+H55), after H55's registration put page-2 crops on the wrong lines. Offline; one overlay look per page.
+
+**Method.** `h58/boxes.py` locates each crop in its frame by normalized cross-correlation (1.000 on page 1 in frame
+0030, 0.999 on pages 2-3 in frame 0031; `h58/crop_positions.tsv`) and draws the boxes; page 2's line centres from the
+row-ink profile of frame 0031. Result table: `h58/shorthand_lines.tsv`.
+
+**Result.** Pages 1 and 3: every shorthand-bearing line sits in a crop (page1_L03 is an empty band above the first
+line; the page-1 crop names run one line ahead of the leaf, the content is right). **Page 2 is wrong in six of nine
+crops:** page2_L01 is the blank header; L02/L03 and L06/L07 are each one physical line cut once per exposure (frames
+0032 and 0031); L10 and L13 are numeral-only lines (B35's readers found 0 and 1 glyphs there). **Five shorthand-bearing
+lines were never cut** -- physical lines 1, 4, 7, 11 and 13, about 14 signs in all (line 13's run and line 1's tail go
+into the gutter) -- now cut from frame 0031 into `h58/crops/` (five JPEGs, 72-91 KB). images/shorthand/ itself is left
+as it is (other steps cite it); the corrected map is h58/shorthand_lines.tsv.
+
+**What rests on the wrong crops.** B35's crop set (line B) held 29 crops of which 5 show no new shorthand (crops 11,
+13 or 12, 16 or 15, 17, 19); its agreement figures are unaffected in kind (the readers disagreed on real signs too,
+H54/H55) but its glyph totals (A 244, B 239 vs Tomokiyo 257) miss about 14 signs and double about 25; any sequence
+statistic over the B35 tokens (B30, B32, B38) mixed a duplicated line and missed five. The ms mark counts in
+ciphertext_ms.txt and images/shorthand/index.tsv's per-line mark counts come from the transcription, not the crops,
+and are not checked here; H18's attached-mark inventory used its own per-group crops (not re-checked). No reading, no
+class change; nothing called new or first. Vision: the runner's three overlay looks and one look at the new crops;
+requests 0. Cost: about 0.5 USD (`--spend` records 0.5).

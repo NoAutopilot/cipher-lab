@@ -1,0 +1,17 @@
+# H58 (28 Sept 2026): every shorthand-bearing physical line of pages 1-3 and the crop that shows it. Positions from
+# h58/crop_positions.tsv (NCC of each images/shorthand/ crop in its frame) and, for page 2, the row-ink peaks of frame
+# 0031 (y centres 352, 462, 587, 721, 870, 1022, 1156, 1281, 1436, 1578, 1742, 1880, 2053, 2191). B35 crop numbers from
+# line-b/b35/crops.tsv. Pages 1 and 3 checked on overlays: every shorthand line is in some crop (page1_L03 is the
+# empty band above the first line). Page 2 is where the crops miss.
+page	physical_line	shorthand_on_line	crop_showing_it	b35_crop	status
+2	1 (54.1631 ... 1801 ~)	1 sign at the tail, into the gutter	h58/crops/page2_phys01_f0031_y280-414.jpg	--	was missed: page2_L01 (B35 11) covers the blank header above it
+2	2 (- y = ~ ... 47 -)	whole line	images/shorthand/page2_L02 (frame 0032) and page2_L03 (frame 0031)	12, 13	cut twice, once per exposure
+2	3 (11 ~ 78.1364 ... 421 ~~)	start and end	images/shorthand/page2_L04	14	ok (named L04)
+2	4 (17.86.316.582.1017.18 ~~ 11 ~~ 1248)	about 4 signs mid-line	h58/crops/page2_phys04_f0031_y649-783.jpg	--	was missed
+2	6 (7 45.147.1158 ~~~)	most of the line	images/shorthand/page2_L06 (0032) and page2_L07 (0031)	15, 16	cut twice, once per exposure
+2	7 (~ 3 48.1240 ...)	2 signs at the start	h58/crops/page2_phys07_f0031_y1084-1218.jpg	--	was missed
+2	9 (1776.1830 ... 1894)	none	images/shorthand/page2_L10	17	numeral-only line cut as shorthand (both B35 readers found 0 glyphs)
+2	10 (~~ ~ - ~ 13.230.481 ~~)	most of the line	images/shorthand/page2_L11	18	ok (named L11)
+2	11 (1110.1267 ... 17 ~ 1480)	1 sign	h58/crops/page2_phys11_f0031_y1670-1804.jpg	--	was missed
+2	12 (1.1471.1480 ...)	none (dashes between groups)	images/shorthand/page2_L13	19	numeral-only line cut as shorthand (B35 readers: 1 glyph each)
+2	13 (17.1640 ... 1540 ~~~ = ~)	about 6 signs at the end, into the gutter	h58/crops/page2_phys13_f0031_y1981-2115.jpg	--	was missed
