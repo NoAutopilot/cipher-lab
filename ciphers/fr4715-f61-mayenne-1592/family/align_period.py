@@ -60,7 +60,8 @@ if os.path.exists(REC):   # a reconciled gloss file (the reconciler's settlement
         gloss.setdefault(r["line"], []).append({"w": r["word"], "kind": r["kind"], "conf": r["conf"], "x0": float(r["x0"]), "src": r["src"]})
     gstat["reconciled_file"] = sum(len(v) for v in gloss.values()); GA = GB = {}
 else:
-    GA, GB = words(f"{P}/{pre}_glossA.tsv"), words(f"{P}/{pre}_glossB.tsv")
+    GP = ("C", "D") if os.path.exists(f"{P}/{pre}_glossC.tsv") else ("A", "B")   # f.101r: C/D are the Opus gloss passes
+    GA, GB = words(f"{P}/{pre}_gloss{GP[0]}.tsv"), words(f"{P}/{pre}_gloss{GP[1]}.tsv")
 for line in sorted(set(GA) | set(GB)):
     a, b = GA.get(line, []), GB.get(line, []); wa, wb = [w["w"].lower() for w in a], [w["w"].lower() for w in b]
     sm = difflib.SequenceMatcher(None, wa, wb, autojunk=False); out = []

@@ -2,6 +2,10 @@
 # chunk and pass is in passes/prompts_f101r/<pass>_c<k>.txt (generated from these templates by this file's own script block below).
 # Chunks of 8 bands (5 segments each, 40 images per call): c1 = L01-L08; c2 = L09-L16; c3 = L17-L24; c4 = L25-L32; c5 = L33-L40; c6 = L41-L46.
 # Amended after chunk 1 (01:33 UTC, before any chunk-2 call): atlas rows LOOPS, ZBAR, RSIGN added (pass A's OTHER notes 'loop chain no stem' x60 / 'z-like with bar' x38 / 'r-like' x11 vs pass B's PHI/ZHOOK/BETA were one systematic split, 67.8% raw agreement), and the row-droop paragraph added to both templates (both chunk-1 sign readers found L01's row dropping out of s5 and read it from the top of L02). Chunk 1 ran on the templates as first written (the c1 files are unchanged).
+# Gloss on Opus (01:36 UTC, after chunk 1): the two Sonnet gloss passes (A, B) of chunk 1 agreed on 31/122 words (25.4%) and misread the
+# secretary hand systematically ('nona' for nous, 'boua' for vous, 'dedublea' for dernieres), the f.108v failure again; gloss passes C and D
+# (Opus, same template, output f101r_glossC/D_c<k>.tsv, prompt files glossC/D_c<k>.txt) replace them from chunk 1 on; the Sonnet files are
+# kept as written and voided (not used by the pipeline); the two Sonnet chunk-2 calls already in flight were stopped.
 # Per chunk: gloss passes A and B (Sonnet, blind, independent), sign passes A and B (Opus, blind, independent): 4 vision calls per chunk, 24 in all.
 
 ## Sign pass template
