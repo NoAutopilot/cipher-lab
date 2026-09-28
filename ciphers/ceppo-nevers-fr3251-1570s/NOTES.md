@@ -500,3 +500,29 @@ real decode above one isolated word. Endorsed fragments, printed key only: presi
 chuni, ochi, sauoia. The pound sign (l) and double-barred oval (r) stay I; the ticked 6 is printed s row 2 on the
 blind transcription. Next step: fr.3252 f.36 (Gallica btv1b9060232m), Birago to Nevers 5 April 1571, "avec chiffre
 et déchiffrement" per the BnF catalogue -- a possible Ceppo-Nevers witness to settle the two I signs.
+
+**Images: blocked, all three folios held (18:20-18:34 UTC, 28 Sept 2026).** Gallica refused this container for
+fr.3251 (btv1b9060248g): canvas 23 (f.21v, left page) `full/1600,` and `full/1000,` both HTTP 403 with Gallica's own
+JSON body `{"httpStatus":403,"error":"You are not authorized to access this resource."}`, `f23/info.json` HTTP 503
+"maintenance downtime or capacity problems", and a `pct:0,0,50,100/800,` region 403. After a 10-minute pause, one
+retry (18:32 UTC, `f23/full/1000,`) returned the same 403. Per the good-citizen rule the host was not hit again, so
+canvases 36 (f.35) and 88 (f.87) were never requested. HARVEST-A read canvas 12 from the same ark earlier the same day
+without trouble, so this looks like a host-side or per-address refusal, not a rights change on the volume. That is an
+inference, not tested. Fallbacks tried: the Wayback CDX API at web.archive.org (connection reset by the proxy relay on
+all four calls, `ws_closed_mid_exchange`), this repository (no image of ff.21v, 35 or 87 in the working tree or in
+git history), and Bourdeau's repository (cloned 28 Sept 2026: `targets/birago` holds only f.119's `cipher_full.png`
+and the three key images). No image means no blind passes, no decode and no controls. Nothing was read, and no
+finding either way.
+
+**Next step (named):** a fresh session, preferably after 29 Sept 2026 00:00 UTC, fetches canvas 23 once at 1000px
+(1 request) to test whether the refusal has lifted. If it has, it runs this section's steps unchanged: native
+region crops of the cipher lines (canvas 23 left page, f.21v; canvas 36 recto foot, about three lines, f.35;
+canvas 88, f.87), two value-blind passes against `harvest/sign_sheet_blind.png`, value-blind reconciliation,
+`harvest/decode_control.py` (200 shuffles and the power control), and a `harvest/verify_mk_blind.py` blind reader,
+with at most 20 Gallica requests per folio. The same block applies to the 1572 group
+(`ciphers/nevers-birago-fr3251-1572`, same ark). That group is also written in a different key: Tomokiyo reconstructs
+the 1572 letters from the f.178 decipherment (`keys/key_nevers_birago_1572.tsv`), not the Ceppo-Nevers table, so a
+blind sign sheet has to be cut from `NeversBirago.png` first, and the Ceppo key is not applied there.
+
+Requests this job: gallica.bnf.fr 5 (4 refused plus 1 retry, all refused); web.archive.org 4 (reset); de-crypt.org 5;
+github.com 2 clones (Aymeloglu, Bourdeau, read only, deleted after); web search 3. Subagents: 0.
