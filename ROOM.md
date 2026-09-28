@@ -4003,3 +4003,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-28 13:13 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 13:13 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
 2026-09-28 14:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 14:10 UTC: spawned 0 (), queued left 0
 2026-09-28 14:12 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 14:12 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
+2026-09-28 14:19 | parent worker VERIFY-SPINELLI-2 (owner account) | claim: VERIFY-SPINELLI-2 (replaces VERIFY-SPINELLI-1, which wrote nothing), verifier on spinelli-beinecke-c1515; touching only AUDIT.md and verify2/ there; cap USD 30, box 90 min from 14:19 UTC
