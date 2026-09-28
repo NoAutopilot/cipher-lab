@@ -505,3 +505,38 @@ ECAP) -- map them to v3 before any joint count (SEVENB->SEVEN, TWOFLAT->TWO, the
 **Cost:** 4 Sonnet vision calls (124k + 127k + 125k + 131k subagent tokens, about 506k) plus this runner's
 labelling, montage and settling turns -- recorded as 3.5 USD (the est). No network requests. No credentials, no
 AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H4 (28 Sept 2026, 00:11-00:13 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H4: apply the key on disk (Tomokiyo's reconstruction) to the
+atlas-coded transcription and test it against a shuffled-key control (rule 3).
+
+**Result: control-backed negative on the key as read.** `passes/key_control.py` (docstring has the method) maps
+each atlas-v3 code to the key value whose drawn shape it matches by eye (`passes/key_atlas_asread.tsv`, grade M
+throughout: SEVEN->o, NINE->p, FOUR->c, SIX->n, THREE->d, PHI->a, TEE->b, CIRCLE->e, ESS->s; OMEGABAR, PI, EIGHT, EM,
+EREV -> null; HOOK, TWO, XCURL, DIAMOND, THETA, ENN, HCURL, LL, EIGHTBAR, OMEGADOT, PLUS -> no key entry) over the whole
+letter (`passes/letter_codes_v3.tsv`, 265 signs: p.[1] 213 from H15, p.[2] 52 from H10 with v2 codes mapped to v3).
+Coverage: **94 signs (35%) map to a letter, 44 (17%) to a null, 127 (48%) to nothing in the key.** Score on the mapped
+positions, mean log unigram probability under the 16th-century Italian letters corpus `tools/data/it16` (v->u, j->i):
+**real key-as-read -2.925; 200 shuffled keys (the same nine letters permuted among the same nine codes) mean -2.982,
+sd 0.186, p95 -2.680; 83 of 200 shuffles score at or above the real key.** The key's assignment of these nine shapes
+is indistinguishable from a random assignment of the same letters (p about 0.42). Letter profile under the key: o
+27.7% (corpus 9.5%), p 18.1% (2.6%), d 14.9% (4.1%), n 12.8% (6.7%), a 9.6% (10.2%), c 8.5% (4.5%), b 4.3% (1.0%),
+s 3.2% (5.8%), e 1.1% (12.4%) -- the same shape as H2's finding 2, now on a reconciled transcription.
+
+**What this does and does not say.** It says: the shapes that look like Tomokiyo's 7, 9, 4, 6, 3 do not carry the
+values o, p, c, n, d in this letter with anything like Italian frequencies, and half the letter's signs are not in
+his table at all -- so the key on disk, read shape-for-shape, does not open this letter, and no decode via
+`tools/decode_key.py` is written (there is nothing to grade H). It does not say Tomokiyo or Domnina are wrong: their
+table may be right for the 1515 letters and this 1519 letter may use a re-issued or extended key; the shape match by
+eye may be wrong for one or two signs (M throughout); and the crib "la gubernation d'ispagnia" that Tomokiyo read has
+not been located (H2), so nothing has calibrated any sign against a known letter yet. The control is matched on the
+manipulation the key claims (which code gets which letter) and can fail differently from the target (a correct key
+would sit above the shuffle p95), so it is a test, not a non-test.
+
+**Next (table):** H12 (cluster frequencies as a homophonic-cipher profile) and a new H16: run the repository's own
+substitution families on the 265-code text with the matched control first (`tools/family_run.py` masc/homophonic,
+it16 corpus, N=265, K=26), which is the design-matched test the key-as-read could not be.
+
+**Cost:** no subagent; script only -- recorded as 0.5 USD (est 1.0). No network requests. No credentials, no
+AskUserQuestion, rule 10 wording, no other target touched.
