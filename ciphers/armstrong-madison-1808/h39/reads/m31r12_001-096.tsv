@@ -1,0 +1,99 @@
+frame	flag	note
+1	blank	film target card, large white letter shape, no text
+2	blank	title card "NATIONAL ARCHIVES MICROFILM PUBLICATIONS"
+3	blank	microcopy label card "MICROCOPY M31 ROLL 12"
+4	none	printed title page, Microcopy No. 31, no numerals
+5	none	printed "Notes on Roll 12" page, no numerals
+6	none	clear prose, letter to Madison, Aug 24 1805
+7	none	clear prose continued
+8	none	clear prose continued, signature
+9	none	clear prose (triplicate, re ship Recovery cargo)
+10	none	clear prose continued
+11	none	clear prose (letter to Barlow, Nov 17 1805); left leaf blank
+12	none	clear prose continued
+13	none	clear prose, dense letter
+14	none	clear prose, P.S. re French godson
+15	none	clear prose, letter No.2 to Madison Nov 25 1805
+16	none	clear prose continued with P.S.
+17	none	address leaf + clear prose, letter No.2 cont'd, signed Erving
+18	none	clear prose continued
+19	code	numeral runs on left page, several lines of 3-4 digit numbers separated by periods (e.g. 1042.1150.1424...; 1185.530.1003.1426...); text also names "Mr Pinckney's Cypher"
+20	none	clear prose, discusses losing "Mr Pinckney's Cypher" but no numerals on this frame
+21	none	clear prose, Private No.3 letter Nov 29 1805
+22	none	clear prose, Private No.4 + French telegraphic news annex, address leaf
+23	none	clear prose, short note
+24	none	clear prose, brig Hudson piracy case
+25	none	clear prose continued
+26	none	clear prose, copy letter Dec 6 1806
+27	none	clear prose continued, re Council of Prizes
+28	none	clear prose, copy of conversation with Prince of Peace
+29	none	clear prose continued
+30	none	clear prose continued
+31	code	left page, ~5 lines of numeral runs (3-4 digit numbers with periods, e.g. 1366.397.720.801; 1340.1576.249.162.1283.1031; 1454.1238.1524.569.182) inside otherwise clear prose about negotiations
+32	none	clear prose, conversation with Prince of Peace continued
+33	none	clear prose continued
+34	code	numeral run near bottom of left page (1407.1135.244...38.842.97.704.110.30.842.97.1147.149) inside clear prose
+35	none	clear prose continued
+36	none	clear prose continued
+37	code	left page, several lines of numeral runs (1366.897.720.801; 1390.1276.249.162.1293.1031; 1591.1233.1237.1293.1454; 1230.1224.599.807; 1300.489) inside clear prose, same passage as fr19/31/34
+38	none	clear prose, Private No.6 letter Oct 14 1806; right page mostly blank
+39	none	clear prose, French passage re peace terms; mostly blank leaves
+40	none	clear prose, letter to Prince of Peace re American citizen, Jan 21 1806
+41	none	clear prose, copy letters to Pedro Cevallos, July 10 1806
+42	none	clear prose (Spanish), Dalton & Tomball claim
+43	none	clear prose continued
+44	none	clear prose (Spanish), copy to Pedro Cevallos
+45	none	clear prose continued
+46	none	clear prose continued
+47	none	clear prose, re Intendant conduct
+48	none	clear prose (Spanish), re indemnification
+49	none	clear prose continued
+50	none	clear prose, Oct 21 letter + reply
+51	none	clear prose continued
+52	none	clear prose continued
+53	none	clear prose, translation of Cevallos note re ship Recovery
+54	none	clear prose, No.3 letter Dec 7 1806 continuation
+55	none	clear prose continued
+56	none	clear prose, copy letter
+57	none	clear prose, translation of Cevallos note, Dec 1806
+58	none	clear prose continued
+59	none	clear prose (Spanish copy letter), Aug 4 1806
+60	none	clear prose, No.4 duplicate, Jan 29 1806 to Madison
+61	none	clear prose; mentions word "Cipher" re letter from Bourdoin/Marquis, no numerals present
+62	none	clear prose; mentions word "Cypher" from Mr Jarvis, no numerals present
+63	none	clear prose, No.7 Private letter Jan 21 1806
+64	none	clear prose continued
+65	none	clear prose continued, re Miranda expedition
+66	none	clear prose continued
+67	none	clear prose continued
+68	none	address leaf + clear prose, letter to Prince of Peace Jan 16 1806
+69	none	clear prose continued
+70	none	clear prose, No.5 letter Feb 8 1806, address leaf
+71	none	clear prose continued
+72	none	clear prose, No.5 continuation, address leaf
+73	none	clear prose, duplicate letter to Mr Young, Lisbon Mar 4 1806
+74	none	clear prose continued + Spanish duplicate copy
+75	none	clear prose continued, No.6 Duplicate, London Apr 17 1806
+76	none	clear prose (Spanish copy letter to Prince of Peace, May 1806)
+77	none	clear prose continued
+78	none	clear prose continued, duplicate
+79	none	clear prose continued
+80	none	clear prose continued
+81	none	clear prose, letter to Prince of Peace, May 26 1806
+82	none	clear prose, letter to Mr Young + duplicate, June 17 1806
+83	none	clear prose continued
+84	none	clear prose continued, duplicate, signed G.W. Erving
+85	none	clear prose (mixed Spanish/English), re claims
+86	none	clear prose continued
+87	none	clear prose continued
+88	none	clear prose, letter to Pedro Cevallos + reply
+89	none	clear prose continued, signed George W Erving
+90	none	clear prose, duplicate letter July 8 1806; right page blank
+91	none	clear prose continued
+92	none	clear prose continued
+93	none	clear prose continued
+94	none	clear prose, No.8 letter July 15 1806 to Madison
+95	none	clear prose continued
+96	none	clear prose continued
+m30-65	code	upper-right column of right-hand leaf, short numeral run "184. 1779. 073. 1028. 654" mid-sentence inside clear prose
+m30-66	none	clear prose continued, no numerals
