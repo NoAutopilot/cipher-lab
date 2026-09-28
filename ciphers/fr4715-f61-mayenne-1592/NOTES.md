@@ -2477,3 +2477,20 @@ verdict is "does not move", but the step also shows something H112's judge did n
 rank 2 of 201 on f.108r L04-L06 (about the top 1%), close to the control's rank 1. One seed, one draft, beam-resolved
 (the beam's letter choices are made the same way for every map, so the Frenchness it adds is on both sides): a signal to
 replicate, not a reading. No class change.
+
+## Campaign step H115 (28 Sept 2026, 17:55-17:57 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61ngram108r_repl.py` (gate in its docstring, pushed be5a8458 before the run; `f61ngram108r_repl_result.txt`):
+H114's instrument on a fresh 1000-permutation null (seeds 115/116). The HASH4 split the row named was not run (amended
+before the run: the passes code every hash HASH4 and their notes do not separate bare hash from 4-over-hash).
+
+- Control, known f.61 span lines: fitted -0.906, **rank 2 of 1001** -> PASS.
+- f.108r L04-L06 pooled: fitted -1.092, **rank 13 of 1001** (10th-best permuted -1.089, median -1.368) -> **gate (rank
+  <= 10) FAIL, narrowly**: the fitted map sits in the top 1.3% of the null, not the pre-registered top 1%.
+- Per line: L05 alone rank 13, L06 alone rank 27, L04 alone rank 146 of 1001 -- the pooled figure comes mostly from L05
+  and L06; L04 carries little.
+
+Read together with H114 (rank 2 of 201 on another seed): a consistent lean toward the fitted map on f.108r, in the top
+1-2% on two nulls, just outside this step's gate, so no "signal on f.108r" is claimed. The judge (H107, H112) saw nothing
+on the same rows; the two instruments disagree at this length and neither licenses a reading. The deciding material is
+still the person's gloss of these rows (ASKS 88). No reading, no class change.
