@@ -2318,3 +2318,13 @@ v04:16, v04:19 cut by the photograph's edge (partial, 15/16/19). So the unread v
 tangle: every token but the gutter one is read the same by every pass, and the gutter token was already a wildcard in
 H46 and H55. No list crib gets a new substitution to test; the stretch waits for a period key or the gutter capture
 (H12, ASKS 81). No token, grade or class change.
+
+## Campaign step H68 (2026-09-28 16:44 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** BSB/MDZ (www.digitale-sammlungen.de): the search page is rendered client-side
+(plain curl returns the shell only), so `tools/browser_fetch.js` was used, one request at a time, 3-4 s apart (6
+requests; saved pages in `h68/`). MDZ's search covers metadata and full texts of the Theatrum Europaeum continuations
+(e.g. bsb10807452, vol. 14). Exact-phrase queries: **"Abt von Mercy" 0 matches, "Abbt von Mercy" 0**. Unquoted queries
+(Mercy Cleve Churfürst 1648; Mercy Burgsdorff) are OR-matched across the library (406,192 and 103,584 hits, topped by an
+English novel), so they are noise, not a test. Vol. 6 itself (1647-1651) was not opened page by page. No
+contemporary German print of the abbé's 1648 mission found by this route. No token, grade or class change.
