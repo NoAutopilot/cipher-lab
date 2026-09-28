@@ -1089,3 +1089,47 @@ cheaper route: length.
 **Files:** `tools/families/homophonic.py`, `tools/tests/test_homophonic_wild.py`, `tools/family_run.py` (listing),
 HYPOTHESES.md rows. **Cost:** CPU only (about 3 minutes in all), no vision calls, no requests, no credentials --
 recorded as 2.0 USD (est 4). No AskUserQuestion, no other target touched.
+
+## Campaign step H26 (28 Sept 2026, 02:18-02:40 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H26: the pool-length curve of the design-matched control
+(merge=6 nulls=0.17, it16, K=25, 3 seeds, 8 restarts, iterations scaled at 75 per sign), to price H17's
+reproduction order by the tool rather than by guess.
+
+**Result: the curve is noisy and NOT monotone at 3 seeds -- a pool of 1500-2000 signs gives the solver route a
+real chance (single seeds read 0.59-0.83 from N=1000 up, and all three seeds cleared the gate once, at N=2000), but
+the mean clears 0.6 at one length only and the N=3000 run does not confirm it.** HYPOTHESES.md rows 02:18-02:39
+(this step) and 01:53-02:02 (H22):
+
+| projected N | iters | recovery mean (range) | gate 0.6 |
+|---|---|---|---|
+| 262 (the letter) | 40000 | 0.120 (0.009-0.258) | no |
+| 500 | 37500 | 0.145 (0.000-0.253) | no |
+| 1000 | 40000 (H22) / 75000 | 0.479 (0.304-0.763) / 0.377 (0.180-0.593) | no |
+| 1500 | 112500 | 0.425 (0.124-0.829) | no |
+| 2000 | 40000 (H22) / 150000 (H22) | 0.294 (0.000-0.566) / **0.706 (0.610-0.761)** | no / **yes** |
+| 3000 | 225000 | 0.187 (0.054-0.291) | no |
+
+Reading: (1) the letter alone never reads -- the best single seed over every N=262 run this session is 0.258; (2) from
+N=1000 up, individual seeds read the design (0.593, 0.829, 0.763, 0.761, 0.747, 0.610), so the design is readable at
+pool length, but which seed reads is not predicted by the annealer's own score (at N=3000 the best-scoring seed,
+-8771, read worst, 0.054; at N=1500 the seed that read 0.829 had the lowest score) -- the anneal is landing in
+wrong optima that the objective prefers, the same shape H25 saw with the wild sign; (3) the N=3000 figure is
+therefore likely iteration- or restart-limited, not a property of the length, but that is untested here (a 300-per-sign
+run at N=3000 is about half an hour of CPU, beyond this step's box) -- logged as H26b, not asserted. A 3-seed mean is
+too few folds to be a gate figure for this curve (rule 3, the es17c fold-count paragraph): the per-seed spread at
+every N from 1000 up is wider than the gap to the gate.
+
+**Sizing for H17 (the honest sentence):** with the transcription as coded, the solver route is closed on the single
+letter (262 signs) and OPEN but unreliable at a pool of 1500-2000 or more signs -- the sign pool the selection rule
+already asks for -- provided the pool is transcribed to the same design (one hook family, the same null shapes). The
+reproduction order that would give it: GEN MSS 109 b.126 ff.2571-87 (Tommaso to Leonardo, the 1510-1522 letters of the
+86-letter run, whose 1492-1509 folders are online and plain, H20c; 254 pp. for the whole run) and ff.2560-65 (Piero
+Spinelli, 30 letters, 90 pp., "part in cipher", 1514-26), both from the finding aid on disk
+(`sources/archives-yale/11076_spinelli_archive_finding_aid.txt`). Written into H17's row; REQUEST.md is H17's own
+job, whose writing part needs no person (the order and payment do), so H17's needs is flipped to `nobody` for the
+next runner with the ASKS row as the hand-off to the owner.
+
+**Controls:** every number is a control run; no target run, no reading, no class change, rule 10 wording.
+**Files:** HYPOTHESES.md rows only. **Cost:** CPU only (about 21 minutes for the four batteries), no vision calls,
+no requests, no credentials -- recorded as 1.0 USD (the est). No AskUserQuestion, no other target touched.
