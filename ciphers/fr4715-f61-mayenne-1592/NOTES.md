@@ -2346,3 +2346,9 @@ disagreements fall mostly on PHI e/r and C43/4STEM a/n -- the within-cell choice
 H73) -- then ZHOOK i/x and BETA m/z. So L05's weaker 4-gram rank comes from the judge's within-pair choices, not from the
 transcription flags. For the verifier (H88): the e/r and a/n letters of the f.108v consensus are its softest,
 together with c/p/d/q (H105). No reading, no class change.
+
+## Campaign step H109 (28 Sept 2026, 16:14 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/H66_PAGE.md` brought up to H105-H107 (the c/p-d/q non-test, the e/r and a/n softness, the f.108r prediction FAIL
+and its handicap). `scripts/f61_glyph_splits.tsv` needs no change (no new tile test). No new claim.
+
