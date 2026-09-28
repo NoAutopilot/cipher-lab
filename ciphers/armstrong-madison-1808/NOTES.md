@@ -2850,3 +2850,44 @@ Files: `h15/align.py`, `h15/runs.tsv`, `h15/glyphs_reconciled.tsv`, `h15/glyphs_
 overrides for the glyph table and output paths (defaults unchanged). No network; no subagent (0 of 4 vision calls);
 this runner's two crop looks. Cost: the row's estimate (3 USD) is what `--spend` records (script work plus the H2
 C++ re-run, about 5 minutes on 4 cores).
+
+## Campaign step H33 (28 Sept 2026, 05:16-05:42 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H33 (from
+H31/H32): the Madrid legation cipher pool, part 2 -- the remaining coded frames of NARA M31 reel 12 read blind and
+merged into H32's stream, re-screened against the target; the record sweeps of the unswept reels were beyond the
+four-call limit and are left in a follow-on row (H38).
+
+**Reads.** Two blind Sonnet calls: frame 404 both pages (50 crops, cut in H32; 69 + 16 groups -- the right page's
+numeral layer is faint to absent from its fifth line on at this resolution, logged as NONE rather than guessed) and
+frame 409 left page (24 crops; 128 groups, 86 without an alignable gloss). Frames 389 and 390 are a clerk's fair copy
+in a neat hand with three short coded runs and no interlinear gloss, so this runner read them directly from 3x strips
+instead of spending two calls (`h33/reads/f389R.tsv`, `f390L.tsv`, 14 + 15 groups, M): "the Emperor has destined
+Augereau 677. 390. 475. 934. 38. 831. 594. 268. 869. 457. 742. 226. 525. 825 ..." and "what I have learnt here from
+891. 677. 704. 870. 138?. 1107. 1685. 248. 1407. 1651. 807. 1473. 133. 1286. 916. ought to be well informed" -- the
+neat hand writes 1651 plainly, which settles H32's open digit question: the value the faint-hand readers gave as 1657
+(12 tokens) and H26's native-crop reader as 1651 is 1651 (9 tokens read so here), one value, glossed "the".
+
+**Pool after H33 (`h32/legation_groups.tsv`, `h32/legation_screen_input.tsv`, `h33/summary.txt`,
+`h33/screen_output.txt`): 497 groups over seven coded pages (403R 103, 404L 69, 404R 16, 408R 142, 409L 138, 389R 14,
+390L 15), 489 clean digits, 311 distinct values, 275 glossed; with H26's 211 about 700 groups of the cipher on file.**
+
+| check | number |
+|---|---|
+| same-table check vs H26's 24 Mar 1807 letter (128 distinct) | 59 distinct values shared vs random-draw null mean 23.3, p95 30 -- one table |
+| target overlap (311 legation distinct vs the target's 216) | 43 shared vs random null mean 34.6, p05 27, p95 43 -- at the null's edge with 311 of 1,700 values drawn, not a signal on its own |
+| the 12 commonest legation values (133, 1657/1651, 624, 244, 1481, 628, 69, 165, 1578, 424, 1114; 21% of the stream) in the target's 369 groups | expected about 71 at the legation rate, observed 0 |
+| `corr/screen.py` at n=489 | units 0/1 share 0.24 vs the target's 0.59; above 1700 0.008 vs 0.09; under 100 0.12 vs 0.36; top-20 overlap 11/489 (chance); **MISS** |
+
+So the Madrid legation cipher is not the target's code at n=489 (third screen, same verdict as H26 at 211 and H32 at
+238), and the pool is on file for the scout as a key-recovery candidate of its own: a 1807 US legation private cipher
+(values 1-1698, syllable and word entries, the/of at 1651/133, Augereau, Prince of Asturias, Junot-era Portugal
+matter) with the period's interlinear decode beside about 275 of its groups. Digits are M throughout (faint pencil on
+an upscaled microfilm; two readers agree on the commonest values), glosses C where they recur consistently and M
+otherwise. Frames 426-429 (the last coded despatch of the run) are unread; the record sweeps of M31 reel 12 frames
+1-380 and reels 11 and 13 (about 1,177 frames) are unrun: H38.
+
+No reading of the target, no class change; rule 10: catalogued NARA despatches, the period's own decode, nothing
+called new or first. Requests: none (all images from the H31 PDFs). Vision: 2 of 4 subagent calls (Sonnet, 152k and
+329k tokens, 10 and 23 minutes) plus this runner's three looks (the two-frame view, two 3x strips). Cost: get_session
+carries no cost figure; about 6 USD by H21's rate -- `--spend` records 6 against the row's 8.

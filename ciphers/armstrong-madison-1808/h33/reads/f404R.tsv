@@ -1,1 +1,39 @@
 crop	pos	group	gloss	conf	note
+1	1	NONE	-	high	band empty, above first text line (page margin)
+2	1	1222	to	medium	fairly clear
+2	2	76	smooth	low	digits tentative
+2	3	725	-	medium	fairly clear
+2	4	1688	over	low	digits tentative
+2	5	814	but	low	digits tentative
+2	6	7411	this	medium	fairly clear
+2	7	553	will_not_f	medium	gloss spans "will not f[ail]", fairly clear
+3	1	163	the	medium	fairly clear
+3	2	68	-	low	faint
+3	3	1680	by	medium	fairly clear
+3	4	584	or	medium	fairly clear
+3	5	102	reconcile	medium	fairly clear
+3	6	226	to	low	digits tentative
+3	7	914	him	low	digits tentative
+4	1	310	received(edge)	low	word cut at left edge, digits faint
+4	2	399	his	low	very faint, tentative
+5	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+6	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+7	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+8	1	NONE	-	high	gloss text faintly legible ("so James that they conspire") but no numeral digits discernible
+9	1	NONE	-	high	gloss text faintly legible ("loose hold", "late") but no numeral digits discernible
+10	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+11	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+12	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+13	1	NONE	-	high	gloss text faintly legible ("who mentions", "3 has of St Carlos") but no numeral digits discernible
+14	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+15	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+16	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+17	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+18	1	NONE	-	high	gloss text faintly legible ("of the Prince has then") but no numeral digits discernible
+19	1	NONE	-	high	gloss text faintly legible ("the government") but no numeral digits discernible
+20	1	NONE	-	high	gloss text faintly legible ("immediately", "desire") but no numeral digits discernible
+21	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+22	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+23	1	NONE	-	high	band shows only faint illegible marks, no discernible gloss word or group
+24	1	NONE	-	high	band is blank page margin near bottom edge of leaf
+25	1	NONE	-	high	band entirely blank, below bottom edge of leaf (page margin)

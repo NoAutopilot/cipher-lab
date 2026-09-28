@@ -102,6 +102,91 @@ f403R	23	5	1291	-	low	digits uncertain, note edge
 f403R	23	6	48	-	low	digits uncertain, note edge
 f403R	23	7	153	-	low	note edge
 f403R	23	8	900	-	low	right margin, note edge, followed by an illegible smudge
+f404L	2	1	157	in	low	numerals very faint (ghost-level ink), digits tentative
+f404L	2	2	231	Prince	low	very faint, digits tentative
+f404L	2	3	200	Asturias	medium	faint but discernible
+f404L	2	4	393	-	low	faint, no clear word directly above
+f404L	2	5	846	be	low	very faint, digits tentative
+f404L	3	1	1509	which	medium	3rd digit ambiguous (0/8)
+f404L	3	2	466	will	low	middle digit ambiguous (4/7), faint
+f404L	3	3	10	-	low	small mark after 466, faint
+f404L	4	1	184	event	low	faint, 2nd digit could be 8
+f404L	4	2	40	his	medium	fairly clear
+f404L	4	3	148	Reign	medium	fairly clear
+f404L	4	4	1203	-	medium	bold left-margin number, no gloss word directly above
+f404L	5	1	1443	finished	medium	bold, clear digits
+f404L	6	1	04	-	low	faint, under "from"
+f404L	6	2	87	-	low	faint, under "these"
+f404L	6	3	654	-	low	faint, edge of crop, under "pro[ceedings]"
+f404L	7	1	1494	really	low	faint, digits tentative
+f404L	7	2	024	innocent	low	very faint, tentative
+f404L	8	1	625	believe	medium	bold, clear
+f404L	12	1	1586	by	medium	fairly bold
+f404L	12	2	901	night	low	digits tentative
+f404L	12	3	926	he	medium	fairly clear
+f404L	12	4	390	was	medium	fairly clear
+f404L	12	5	810	-	low	edge of crop, cut
+f404L	13	1	1373	Several	high	bold, clear
+f404L	13	2	149	-	low	faint, between "Several" and "visits"
+f404L	13	3	350	visits	medium	fairly clear
+f404L	13	4	1022	29th	medium	bold, fairly clear
+f404L	13	5	860	-	medium	follows 1022, fairly clear
+f404L	14	1	134	several	low	faint, digits tentative
+f404L	14	2	497	-	low	faint
+f404L	14	3	830	congress	low	gloss word uncertain (reads like "congress"), digits tentative
+f404L	14	4	159	-	low	faint
+f404L	15	1	651	emperor	low	digits tentative
+f404L	15	2	680	by	medium	fairly clear
+f404L	16	1	129	of	medium	fairly clear
+f404L	16	2	1851	the	medium	fairly clear
+f404L	16	3	100	Prince	low	tentative, possibly one of a run of codes for "Prince of Asturias"
+f404L	16	4	964	-	low	faint
+f404L	16	5	1051	the	medium	second "the" on same line, fairly clear
+f404L	17	1	1451	the	medium	fairly clear
+f404L	17	2	1801	Prince	medium	continues "Prince on his"
+f404L	17	3	538	examination	medium	bold, fairly clear
+f404L	17	4	133	-	low	faint, near "examination"
+f404L	18	1	165	certainty	medium	fairly clear
+f404L	18	2	69	-	low	faint
+f404L	18	3	300	and	medium	follows "the Emperor and", fairly clear
+f404L	19	1	1331	his	medium	bold, fairly clear
+f404L	19	2	514	-	low	faint, between "his" and "protection"
+f404L	19	3	107	-	low	faint
+f404L	19	4	982	protection	medium	bold, fairly clear
+f404L	19	5	408	-	medium	bold, left margin
+f404L	20	1	404	have	low	tentative, possible overlap with adjacent line's numbers
+f404L	20	2	243	James	medium	bold name, fairly clear
+f404L	20	3	99	-	low	faint
+f404L	21	1	908	sent	medium	fairly clear
+f404L	21	2	214	to	medium	fairly clear
+f404L	21	3	685	-	low	edge of crop
+f404L	22	1	97	the	low	edge, partial
+f404L	22	2	684	castle	medium	bold, fairly clear
+f404L	22	3	1203	-	medium	fairly clear (note: same digits recur at L04 pos4, likely coincidental)
+f404L	22	4	1511	-	medium	fairly clear
+f404L	23	1	130	Serveu(?)	low	gloss word uncertain, digits medium confidence
+f404L	23	2	900	-	medium	fairly clear
+f404L	23	3	06	-	low	faint
+f404L	25	1	165	Prince	medium	fairly clear, from "the Prince of Peace"
+f404L	25	2	1861	of	low	digits tentative
+f404L	25	3	133	Peace	medium	fairly clear
+f404L	25	4	628	-	medium	fairly clear
+f404R	2	1	1222	to	medium	fairly clear
+f404R	2	2	76	smooth	low	digits tentative
+f404R	2	3	725	-	medium	fairly clear
+f404R	2	4	1688	over	low	digits tentative
+f404R	2	5	814	but	low	digits tentative
+f404R	2	6	7411	this	medium	fairly clear
+f404R	2	7	553	will_not_f	medium	gloss spans "will not f[ail]", fairly clear
+f404R	3	1	163	the	medium	fairly clear
+f404R	3	2	68	-	low	faint
+f404R	3	3	1680	by	medium	fairly clear
+f404R	3	4	584	or	medium	fairly clear
+f404R	3	5	102	reconcile	medium	fairly clear
+f404R	3	6	226	to	low	digits tentative
+f404R	3	7	914	him	low	digits tentative
+f404R	4	1	310	received(edge)	low	word cut at left edge, digits faint
+f404R	4	2	399	his	low	very faint, tentative
 f408R	1	1	133	-	high	-
 f408R	1	2	1657	-	high	-
 f408R	1	3	1287	-	high	-
@@ -244,6 +329,144 @@ f408R	21	5	1657	the	high	-
 f408R	21	6	1024	behaviour	medium	-
 f408R	21	7	600	-	high	-
 f408R	21	8	1147	-	high	edge
+f409L	2	1	795	-	medium	gloss row sits above L02 top guide, visible in L01 crop but too soft/cursive to confidently align word-to-number
+f409L	2	2	133	-	medium	same gloss-row caveat as pos1
+f409L	2	3	1651	-	medium	same gloss-row caveat as pos1
+f409L	2	4	1524	-	low	second digit written high/small, could be 1524 or 15 24 as two groups; read as one 4-digit group
+f409L	2	5	1343	-	medium	same gloss-row caveat as pos1
+f409L	2	6	261	-	medium	same gloss-row caveat as pos1
+f409L	2	7	180	-	medium	same gloss-row caveat as pos1
+f409L	2	8	1651	-	medium	same gloss-row caveat as pos1
+f409L	2	9	1661	-	medium	same gloss-row caveat as pos1
+f409L	2	10	133	-	medium	same gloss-row caveat as pos1
+f409L	2	11	628	-	medium	same gloss-row caveat as pos1
+f409L	2	12	537	-	medium	same gloss-row caveat as pos1
+f409L	2	13	460	-	medium	same gloss-row caveat as pos1
+f409L	3	1	975	by	high	gloss word directly above, legible
+f409L	3	2	1686	body	high	gloss word directly above, legible
+f409L	3	3	825	at	medium	plain word "every" precedes this group inline (not a group); gloss "at" above, somewhat faint
+f409L	3	4	1299	the	medium	gloss faint
+f409L	3	5	742	gala	medium	gloss faint
+f409L	3	6	1651	of	high	gloss legible
+f409L	3	7	296	the	medium	gloss faint
+f409L	3	8	624	19th	medium	gloss written as superscript ordinal, faint
+f409L	3	9	133	-	medium	no legible gloss above
+f409L	3	10	1651	-	medium	no legible gloss above
+f409L	3	11	1623	-	medium	no legible gloss above
+f409L	3	12	158	-	low	edge, right side cut by crop boundary, note=edge
+f409L	4	1	870	their	low	small gloss word above, uncertain alignment; preceding text "instant by which these" appears to be plain prose, not gloss
+f409L	4	2	1380	confidence	low	gloss word above uncertain, may span more than one number
+f409L	4	3	915	-	medium	no legible gloss above
+f409L	4	4	69	-	medium	no legible gloss above
+f409L	5	1	69	instant	low	gloss row is prose-sized text from line above (L04 band); alignment approximate
+f409L	5	2	312	by	low	alignment approximate
+f409L	5	3	432	which	low	alignment approximate
+f409L	5	4	1686	these	low	alignment approximate
+f409L	5	5	674	-	medium	no legible gloss above
+f409L	5	6	877	-	medium	no legible gloss above
+f409L	6	1	1114	-	medium	crease/fold line crosses digits; gloss row above too sparse to align confidently
+f409L	6	2	1345	-	high	sparse gloss above ("and familiar ... receiving") but alignment to individual numbers uncertain
+f409L	6	3	17	-	medium	could be 17 or 77
+f409L	6	4	14	-	medium	-
+f409L	6	5	1145	-	high	-
+f409L	6	6	849	-	high	-
+f409L	6	7	555	-	high	-
+f409L	6	8	938	-	high	-
+f409L	6	9	216	-	low	edge, right side cut by crop boundary
+f409L	7	1	27	as	low	leftmost gloss word roughly above leftmost number, alignment approximate
+f409L	7	2	97	on	low	alignment approximate, could read "an"
+f409L	7	3	916	-	medium	plain word "intended" precedes this group inline (not a group)
+f409L	7	4	1340	-	medium	-
+f409L	7	5	1193	-	medium	-
+f409L	7	6	594	-	medium	-
+f409L	7	7	87	-	medium	-
+f409L	7	8	1518	-	medium	-
+f409L	7	9	745	-	medium	-
+f409L	7	10	1578	-	medium	-
+f409L	7	11	878	-	medium	-
+f409L	7	12	1411	-	medium	-
+f409L	7	13	555	-	low	near bottom guide, possibly slightly cut
+f409L	9	1	623	abandon	medium	gloss word above from previous crop's band, legible
+f409L	9	2	1348	him	medium	gloss word above, legible
+f409L	9	3	509	-	medium	no legible gloss above
+f409L	9	4	1114	-	medium	no legible gloss above; trailing blank underline after this group is not a group
+f409L	10	1	378	upon	medium	gloss legible above
+f409L	10	2	877	these	medium	gloss legible above
+f409L	10	3	731	grounds	medium	gloss legible above
+f409L	10	4	624	a	low	plain words "I conclude that" precede this group inline (not groups); gloss alignment approximate
+f409L	10	5	751	crisis	low	alignment approximate
+f409L	10	6	1484	is	low	alignment approximate
+f409L	10	7	101	approaching	low	alignment approximate
+f409L	10	8	1656	-	medium	no legible gloss above
+f409L	10	9	618	-	medium	no legible gloss above
+f409L	10	10	407	-	medium	no legible gloss above
+f409L	10	11	298	-	medium	no legible gloss above
+f409L	11	1	674	which	medium	gloss legible above
+f409L	11	2	1411	will	medium	gloss legible above
+f409L	11	3	1653	produce	medium	plain word "certainly" precedes this group inline (not a group)
+f409L	11	4	624	a	medium	gloss legible above
+f409L	11	5	653	new	low	gloss word uncertain, could be "new" or "few"
+f409L	11	6	605	change	medium	plain word "essential" precedes this group inline (not a group)
+f409L	11	7	69	in	medium	gloss legible above
+f409L	11	8	1651	the	medium	gloss legible above
+f409L	11	9	157	life	low	gloss word uncertain
+f409L	11	10	1481	it	medium	gloss legible above
+f409L	13	1	553	not	medium	plain word "does" precedes this group inline (not a group); gloss legible above
+f409L	13	2	335	entirely	medium	gloss legible above
+f409L	13	3	426	-	medium	no legible gloss above
+f409L	13	4	305	-	medium	no legible gloss above
+f409L	13	5	1362	subvert	medium	gloss legible above
+f409L	13	6	322	-	medium	no legible gloss above
+f409L	13	7	1162	-	medium	no legible gloss above
+f409L	13	8	111	the	low	gloss alignment approximate
+f409L	13	9	1651	reigning	low	gloss alignment approximate
+f409L	13	10	448	dynasty	low	gloss alignment approximate
+f409L	13	11	66	-	medium	no legible gloss above
+f409L	13	12	1299	-	medium	no legible gloss above
+f409L	13	13	390	-	medium	no legible gloss above
+f409L	14	1	1203	it	medium	gloss legible above
+f409L	14	2	1362	will	medium	gloss legible above
+f409L	14	3	1481	destroy	medium	gloss legible above
+f409L	14	4	1411	-	medium	no legible gloss above
+f409L	14	5	490	the	low	gloss alignment approximate
+f409L	14	6	111	independence	low	gloss alignment approximate, word may span more than one number
+f409L	14	7	116	-	medium	no legible gloss above
+f409L	14	8	1362	-	medium	no legible gloss above
+f409L	14	9	1651	-	medium	no legible gloss above
+f409L	14	10	69	-	medium	no legible gloss above
+f409L	14	11	492	-	medium	no legible gloss above
+f409L	14	12	945	-	medium	no legible gloss above; trailing plain words "of the" after this group are not a group
+f409L	16	1	1481	its	medium	plain words "country diminish" precede this group inline (not a group); gloss legible above
+f409L	16	2	525	territory	medium	gloss legible above
+f409L	16	3	1583	its	low	gloss alignment approximate
+f409L	16	4	137	power	low	gloss alignment approximate
+f409L	16	5	700	and	low	gloss alignment approximate
+f409L	16	6	1481	its	low	gloss alignment approximate
+f409L	16	7	525	-	medium	no legible gloss above
+f409L	16	8	572	-	medium	no legible gloss above
+f409L	16	9	1343	-	medium	no legible gloss above
+f409L	16	10	1481	-	medium	no legible gloss above
+f409L	16	11	52	-	low	edge, right side cut by crop boundary, digits incomplete
+f409L	17	1	582	political	medium	gloss legible above
+f409L	17	2	253	importance	medium	gloss legible above
+f409L	17	3	1683	and	medium	gloss legible above
+f409L	17	4	71	consequence	low	gloss word partly abbreviated/uncertain
+f409L	17	5	580	since	low	gloss alignment approximate
+f409L	17	6	1341	a	low	gloss alignment approximate
+f409L	17	7	1343	-	medium	no legible gloss above
+f409L	17	8	1387	-	medium	no legible gloss above
+f409L	17	9	1181	-	medium	no legible gloss above
+f409L	17	10	1630	-	medium	no legible gloss above
+f409L	17	11	432	-	medium	no legible gloss above
+f409L	17	12	38	-	medium	no legible gloss above
+f409L	17	13	301	-	medium	no legible gloss above
+f409L	17	14	624	-	medium	no legible gloss above
+f409L	19	1	1645	new	medium	gloss legible above
+f409L	19	2	84	face	medium	gloss legible above
+f409L	19	3	1298	to	medium	gloss legible above
+f409L	19	4	244	its	medium	gloss legible above
+f409L	19	5	1481	-	medium	no legible gloss above
+f409L	19	6	525	-	medium	no legible gloss above; trailing plain words "exterior relations" after this group are not a group
 f389R	1	1	677	-	medium	runner direct read at 3x, clerk fair copy, no gloss; line "the Emperor has destined Augereau ..."
 f389R	1	2	390	-	medium	runner direct read at 3x, clerk fair copy, no gloss; line "the Emperor has destined Augereau ..."
 f389R	1	3	475	-	medium	runner direct read at 3x, clerk fair copy, no gloss; line "the Emperor has destined Augereau ..."

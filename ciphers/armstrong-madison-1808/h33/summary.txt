@@ -1,0 +1,5 @@
+duplicate bands dropped: []
+groups read 497 (per page: f403R 103, f404L 69, f404R 16, f408R 142, f409L 138, f389R 14, f390L 15); clean digits 489, distinct 311, glossed 275
+values >= 100: 431, units 0/1 share 0.244, units 2/3/5/9 share 0.327, max 7411; top: 133x17, 1657x12, 624x10, 1651x9, 244x8, 1481x7, 628x6, 69x6, 165x5, 1578x5, 424x5, 1114x4
+same-table check vs H26 24 Mar 1807 (n=211, 128 distinct): shared distinct 59 vs random null mean 23.3 p95 30; top-5 of each: [133, 1657, 624, 1651, 244] / [1651, 926, 133, 1661, 69]
+target overlap: shared distinct 43 vs random null mean 34.6 p05 27 p95 43; the 12 commonest legation values in the target: [(133, 17, 0), (1657, 12, 0), (624, 10, 0), (1651, 9, 0), (244, 8, 0), (1481, 7, 0), (628, 6, 0), (69, 6, 0), (165, 5, 0), (1578, 5, 0), (424, 5, 0), (1114, 4, 0)], expected 70.9 at the legation rate, observed 0
