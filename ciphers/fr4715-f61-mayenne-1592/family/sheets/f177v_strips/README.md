@@ -1,0 +1,1 @@
+H177b (runner 6, 28 Sept 2026): fol. 177v (canvas 330, native 4951x6663) cut as 12 overlapping full-width strips (440 px high, step 330, scale 0.58), because line finding failed on this dense page; boxes in boxes.tsv (native px); crops not committed; regenerate by cropping each box from the native and scaling by 0.58.

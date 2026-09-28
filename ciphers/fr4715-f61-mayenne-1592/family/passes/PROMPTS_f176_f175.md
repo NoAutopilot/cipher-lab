@@ -56,3 +56,9 @@ verbatim): (1)(2) blind sign passes A/B of f.176r L13-L19 -> `passes/f176r_signs
 L21-L34 -> `passes/f177r_clearA_L21-L34.tsv`. Prompts = H177a's with the row ranges changed and "Write your transcription ... with the
 Write tool" replaced by "Reply inline ONLY with the TSV block (same header), nothing else". No gate at this stage; build_f176_key.py
 L01-L19 afterwards (same design, same wrong-text control).
+
+## H177b stage 2b (runner 6, 28 Sept 2026) -- WRITTEN BEFORE THE CALLS
+fol. 177r L01-L34 (2,589 letters read) covers about 39 cipher rows, so no clear read is needed for f.176r L20-L33. 4 Opus vision calls,
+inline replies (runner writes the files from the hand-back text): passes A/B of f.176r L20-L26 and of L27-L33, prompt = stage 2a's with the
+row range changed. Then build_f176_key.py L01-L33 (same design, same wrong-text control). fol. 177v is cut as strips for a later stage
+(`sheets/f177v_strips/`).
