@@ -2516,6 +2516,30 @@
       "reading_version": "reading_version not looked up: row not counted (class below N3 or not a reading)",
       "superseded_by": "",
       "fields_source": "rah-morillo-1817/AUDIT.md section 3; C 86, M 5, U 6 of 97"
+    },
+    {
+      "date": "28 Sept 2026",
+      "kind": "key application",
+      "key": "published",
+      "title": "BnF fr.3251 f.11r, Lodovico Birago to the Duke of Nevers, Saluzzo, 14 September 1570: word fragments read with Tomokiyo's printed Ceppo-Nevers key",
+      "grade": "N3 after two audits (VERIFY-CEPPO-1 17:35, VERIFY-CEPPO-2 18:31 UTC, held in part), key published (Tomokiyo, nevers_add1.png). 135 tokens: S 53, M 68, I 12, U 2. Key rank 1 of 201 on a value-blind re-transcription (z 5.54); 0 of 2,000 chance decodes give two words; blind reader picks only the real decode. Judge FAIL on the whole letter.",
+      "line": "Word fragments endorsed by the second audit: presidente, mandato; curare, estitucio(ne); chuni, ochi, Sauoia. Letters graded I (the pound-sign l, the double-barred r) are not endorsed as read.",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/ceppo-nevers-fr3251-1570s",
+      "novelty": "N3",
+      "document_id": "BnF fr.3251 f.11r (Gallica btv1b9060248g canvas 12), no.6, Birago to Nevers, Saluzzo, 14 Sept 1570",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N3",
+      "mapping_novelty": "N3",
+      "completeness": "53/135 at S (word fragments)",
+      "unresolved_spans": "68 M, 12 I, 2 U; no continuous text; the I-graded letters need the witness fr.3252 f.36 (5 Apr 1571, avec chiffre et dechiffrement)",
+      "audit_refs": [
+        "AUDIT.md first audit (VERIFY-CEPPO-1)",
+        "AUDIT.md '# Second audit (VERIFY-CEPPO-2, adversarial, 28 Sept 2026)'"
+      ],
+      "audit_status": "two audits",
+      "reading_version": "harvest/ decode at VERIFY-CEPPO-2 (harvest/v2/)",
+      "superseded_by": "",
+      "fields_source": "ceppo-nevers-fr3251-1570s/AUDIT.md, second audit verdict table"
     }
   ],
   "lanes": [
