@@ -103,3 +103,69 @@ f0742R	26	3	1310	be	medium	be	exact	part of split gloss "should-be"
 f0742R	26	4	736	receiv	medium	receive	partial	part of split gloss "receiv-ed"
 f0742R	26	5	801	ed	medium	D	miss	part of split gloss "receiv-ed"
 f0742R	26	6	790	but	medium	but	exact	
+f0743L	1	1	999	from	low	from	exact	gloss tiny, best guess
+f0743L	1	2	1385	the	medium	the	exact	third digit uncertain 8/0
+f0743L	1	3	995	fixed	low	french	miss	gloss uncertain
+f0743L	1	4	7229	-	low		notintable	leading digit uncertain 1/7; gloss illegible
+f0743L	1	5	887	having	low	lo	miss	gloss uncertain
+f0743L	2	1	632	meets	low	media	miss	gloss uncertain
+f0743L	2	2	565	the	medium	tion	miss	-
+f0743L	3	1	1067	-	medium	S	nogloss	small mark above illegible; second digit uncertain 0/3/6
+f0743L	3	2	692	-	low	as	nogloss	no clear gloss visible
+f0743L	5	1	134	mis	low	mis	exact	-
+f0743L	5	2	1379	liv	low	ter	miss	-
+f0743L	5	3	1351	bow	low	bow	exact	-
+f0743L	5	4	854	me	low	do	miss	-
+f0743L	5	5	1426	in	medium	in	exact	-
+f0743L	11	1	1401	i	low	I.J.	miss	small mark, possibly capital I
+f0743L	11	2	397	sub	medium	sus	miss	-
+f0743L	11	3	1119	pce	low	pec	miss	abbreviation uncertain
+f0743L	11	4	1361	-	low	T	nogloss	only a tick mark visible, no legible word
+f0743L	11	5	1384	that	medium	that	exact	-
+f0743L	12	1	169	be	medium	he	miss	-
+f0743L	12	2	731	re	medium	re	exact	-
+f0743L	12	3	327	fer	low	fer	exact	-
+f0743L	12	4	1067	s	low	S	exact	tiny superscript mark
+f0743L	12	5	509	to	medium	earth	miss	-
+f0743L	12	6	1043	comma	medium	come	miss	-
+f0743L	12	7	1071	same	medium	same	exact	-
+f0743L	13	1	704	quarter	low	quarter	exact	-
+f0743L	13	2	692	the	medium	as	miss	-
+f0743L	13	3	1305	others	medium	bal	miss	-
+f0743L	13	4	925	-	medium	other	nogloss	small square symbol follows digits, possibly a blot
+f0743L	13	5	184	his	medium	his	exact	-
+f0743L	13	6	9	character	medium	character	exact	-
+f0743L	15	1	169	be	medium	he	miss	matches crop12 pos1 gloss (same code)
+f0743L	15	2	1436	a	low	is	miss	-
+f0743L	15	3	395	sm-rou	low	sur	miss	compound gloss as written, uncertain
+f0743L	15	4	1491	-	low	rou	nogloss	no gloss visible
+f0743L	16	1	416	nd	medium	nd	exact	-
+f0743L	16	2	520	ed	medium	ed	exact	-
+f0743L	16	3	1428	in	medium	indies	miss	-
+f0743L	16	4	756	the	medium	tri	miss	-
+f0743L	16	5	1239	que	medium	gue	miss	-
+f0743L	17	1	225	prop	medium	prop	exact	-
+f0743L	17	2	1154	as	medium	pos	miss	-
+f0743L	17	3	1440	if	medium	it	miss	-
+f0743L	17	4	???	ious	low		unread	edge, digits obscured by ink blot at right margin
+f0743L	18	1	9	character	medium	character	exact	-
+f0743L	20	1	569	to	low	to	exact	-
+f0743L	20	2	182	him	low	him	exact	-
+f0743L	20	3	184	his	medium	his	exact	-
+f0743L	20	4	748	ms	low	res	miss	-
+f0743L	20	5	1407	id	low	id	exact	-
+f0743L	20	6	546	once	low	ence	miss	-
+f0743L	20	7	1426	in	medium	in	exact	-
+f0743L	20	8	1109	paris	medium	paris	exact	-
+f0743L	22	1	1242	-	low	H	nogloss	small illegible mark above
+f0743L	22	2	501	-	low	E	nogloss	no clear gloss
+f0743L	24	1	1501	a	medium	A	exact	-
+f0743L	24	2	1472	right	medium	right	exact	-
+f0743L	24	3	569	fol	low	to	miss	-
+f0743L	24	4	730	receives	low	rd	miss	-
+f0743L	25	1	1042	com	medium	com	exact	-
+f0743L	25	2	637	ment	medium	ment	exact	-
+f0743L	25	3	1384	that	medium	that	exact	matches crop11 pos5 gloss (same code)
+f0743L	25	4	1006	can	medium	can	exact	-
+f0743L	25	5	1310	be	medium	be	exact	-
+f0743L	25	6	605	made	medium	made	exact	-

@@ -30,6 +30,24 @@ for fr in ORDER:
             continue
         rows.append({"frame": fr, "crop": int(re.sub(r"\D", "", crop) or 0), "pos": pos, "group": group, "gloss": gloss,
                      "conf": p[4] if len(p) > 4 else "", "note": p[5] if len(p) > 5 else ""})
+# fixed-pitch bands can straddle one line twice (0743L crops 13/14, the reader's own flag): a crop whose group
+# sequence equals the previous crop's on the same page is dropped as a duplicate band
+dedup, dropped = [], []
+for r in rows:
+    prev = [x for x in dedup if x["frame"] == r["frame"] and x["crop"] == r["crop"] - 1]
+    same = [x for x in dedup if x["frame"] == r["frame"] and x["crop"] == r["crop"]]
+    if prev and not same:
+        cur = [x["group"] for x in rows if x["frame"] == r["frame"] and x["crop"] == r["crop"]]
+        if cur == [x["group"] for x in prev] and len(cur) >= 2:
+            if (r["frame"], r["crop"], len(cur)) not in dropped:
+                dropped.append((r["frame"], r["crop"], len(cur)))
+            continue
+    if any(d[0] == r["frame"] and d[1] == r["crop"] for d in dropped):
+        continue
+    dedup.append(r)
+rows = dedup
+
+
 def match(gloss, plain):
     g, t = fold(gloss), fold(plain)
     if not g or g == "-":
@@ -62,7 +80,7 @@ c = Counter(r["match"] for r in out)
 toks = [int(r["group"]) for r in out if r["group"].isdigit()]
 hi = [v for v in toks if v >= 100]
 u = Counter(v % 10 for v in hi)
-lines = [f"groups read {len(out)} (per frame: " + ", ".join(f"{fr} {sum(1 for r in out if r['frame']==fr)}" for fr in ORDER) + ")",
+lines = [f"duplicate bands dropped: {dropped}", f"groups read {len(out)} (per frame: " + ", ".join(f"{fr} {sum(1 for r in out if r['frame']==fr)}" for fr in ORDER) + ")",
          f"digits clean {len(toks)}, unread digit {c['unread']}, value not in WE028 (>1596 or 0) {c['notintable']}",
          f"glossed {sum(1 for r in out if r['match'] in ('exact','partial','miss','shifted'))}: exact {c['exact']}, partial {c['partial']}, shifted to a neighbour {c['shifted']}, miss {c['miss']}; no gloss {c['nogloss']}",
          f"distinct values {len(set(toks))}, values >= 100: {len(hi)} tokens, units 0/1 share {(u[0]+u[1])/max(1,len(hi)):.3f}, units 2/3/5/9 share {(u[2]+u[3]+u[5]+u[9])/max(1,len(hi)):.3f}, max value {max(toks) if toks else 0}",
