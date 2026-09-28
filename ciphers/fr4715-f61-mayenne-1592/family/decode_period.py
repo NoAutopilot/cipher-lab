@@ -17,10 +17,16 @@ key = defaultdict(dict)
 # leaves agree on the one letter) and counts leaves per pair from the 'leaf' column.
 KEYFILE = sys.argv[sys.argv.index("--key") + 1] if "--key" in sys.argv else f"{HERE}/key_period.tsv"
 SUF = "" if os.path.basename(KEYFILE) == "key_period.tsv" else "_" + os.path.basename(KEYFILE).replace("key_period_", "").replace(".tsv", "")
+if "--frac" in sys.argv: SUF += "_frac" + sys.argv[sys.argv.index("--frac") + 1]
 leaves = defaultdict(lambda: defaultdict(set))
-for r in csv.DictReader((l for l in open(KEYFILE) if not l.startswith("#")), delimiter="\t"):
+FRAC = float(sys.argv[sys.argv.index("--frac") + 1]) if "--frac" in sys.argv else 0.0   # same rule as test_period_key.py --frac
+_rows = [r for r in csv.DictReader((l for l in open(KEYFILE) if not l.startswith("#")), delimiter="\t")]
+_tot = defaultdict(int)
+for r in _rows:
+    if r["letter"] != "-": _tot[(r["class"], r["leaf"])] += int(r["n"])
+for r in _rows:
     cl = {"EBR_A": "EBR", "EBR_B": "EBR"}.get(r["class"], r["class"])
-    if r["letter"] != "-" and int(r["n"]) >= 2:
+    if r["letter"] != "-" and int(r["n"]) >= 2 and int(r["n"]) >= FRAC * _tot[(r["class"], r["leaf"])]:
         key[cl][r["letter"]] = key[cl].get(r["letter"], 0) + int(r["n"]); leaves[cl][r["letter"]].add(r["leaf"])
 lines = defaultdict(list)
 for path in (f"{S}/passA_classes.tsv", f"{S}/passU2_classes.tsv"):
@@ -37,7 +43,7 @@ for line in sorted(lines):
         rows.append((line, i, c, letters or "-", g)); out.append(letters if g == "C" else (f"[{letters}]" if g == "M" else f"<{c}>"))
     text.append(f"{line}: " + " ".join(out))
 cplus = f" C+ {tot['C+']}" if tot.get("C+") else ""
-hdr = f"# f.61r under {os.path.basename(KEYFILE)} (period pairs n>=2, no refit), 28 Sept 2026: {sum(tot.values())} signs, C {tot['C']}{cplus} M {tot['M']} unread {tot['-']}. [a/b] = period pair, choice by context not made here; <CLASS> = no period pair{'; C+ = two leaves agree on the one letter' if cplus else ''}.\n"
+hdr = f"# f.61r under {os.path.basename(KEYFILE)} (period pairs n>=2{f', n >= {FRAC:g} x the leaf class total' if FRAC else ''}, no refit), 28 Sept 2026: {sum(tot.values())} signs, C {tot['C']}{cplus} M {tot['M']} unread {tot['-']}. [a/b] = period pair, choice by context not made here; <CLASS> = no period pair{'; C+ = two leaves agree on the one letter' if cplus else ''}.\n"
 tsv = "line\tpos\tclass\tperiod_letters\tgrade\n" + "".join("\t".join(map(str, r)) + "\n" for r in rows)
 txt = hdr + "\n".join(text) + "\n"
 if "--check" in sys.argv:

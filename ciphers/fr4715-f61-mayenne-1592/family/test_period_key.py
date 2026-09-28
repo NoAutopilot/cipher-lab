@@ -20,10 +20,19 @@ MIN = int(sys.argv[sys.argv.index("--min") + 1]) if "--min" in sys.argv else 1
 # --collapse-ebr folds EBR_A/EBR_B rows (the H22 split, read on f.101r) into EBR, the unsplit class of f.61's own passes.
 KEYFILE = sys.argv[sys.argv.index("--key") + 1] if "--key" in sys.argv else f"{HERE}/key_period.tsv"
 COLLAPSE = {"EBR_A": "EBR", "EBR_B": "EBR"} if "--collapse-ebr" in sys.argv else {}
+# --frac F (F61-FAMILY-2): a (class, letter) row also needs n >= F x that leaf's total for the class -- at f.101r's 2,700
+# aligned tokens the alignment noise gives every class a tail of one-off letters that any permuted key matches too
+# (chunks 1-5 preliminary: 20-permutation max 0.76 at n >= 1), so the letter sets are cut to the letters the leaf
+# actually attests in proportion, per leaf, never summed across leaves.
+FRAC = float(sys.argv[sys.argv.index("--frac") + 1]) if "--frac" in sys.argv else 0.0
 def load_key():
-    key = {}
-    for r in csv.DictReader((l for l in open(KEYFILE) if not l.startswith("#")), delimiter="\t"):
+    key = {}; rows = [r for r in csv.DictReader((l for l in open(KEYFILE) if not l.startswith("#")), delimiter="\t")]
+    tot = Counter()
+    for r in rows:
+        if r["letter"] not in ("-", ""): tot[(r["class"], r["leaf"])] += int(r["n"])
+    for r in rows:
         if r["letter"] in ("-", "") or r["class"] in ("PLAIN", "OTHER", "DASH") or int(r["n"]) < MIN: continue
+        if int(r["n"]) < FRAC * tot[(r["class"], r["leaf"])]: continue
         key.setdefault(COLLAPSE.get(r["class"], r["class"]), set()).add(r["letter"])
     return {c: tuple(sorted(v)) for c, v in key.items()}
 def score(key, lines, spans):
@@ -32,7 +41,7 @@ def score(key, lines, spans):
         mt, _ = align(markup, lines[line], key); mat += mt; tot += sum(1 for c in markup if c != "-")
     return mat, tot
 def main():
-    key = load_key(); out = [f"{os.path.basename(KEYFILE)} (pairs with n >= {MIN}): {len(key)} classes with letters: " + " ".join(f"{c}={'/'.join(v)}" for c, v in sorted(key.items()))]
+    key = load_key(); out = [f"{os.path.basename(KEYFILE)} (pairs with n >= {MIN}{f', n >= {FRAC:g} x the leaf class total' if FRAC else ''}): {len(key)} classes with letters: " + " ".join(f"{c}={'/'.join(v)}" for c, v in sorted(key.items()))]
     lines = split_lines(load_read()); lines.update(f108_lines())
     spans61 = load_spans()
     spans108 = [(s, "F108_" + ("L02" if s == "T1" else "L03"), m) for s, _, m, _ in (l.rstrip("\n").split("\t") for l in open(f"{S}/tomokiyo_spans_3983.tsv") if l[0] == "T")]
@@ -52,6 +61,7 @@ def main():
     g = res["f.61 five known spans (55)"]
     out.append(f"GATE (brief step 5, 0.75 on the 55 known letters): {'PASS' if g >= 0.75 else 'FAIL'} ({g:.3f})")
     stem = "" if os.path.basename(KEYFILE) == "key_period.tsv" else "_" + os.path.basename(KEYFILE).replace("key_period_", "").replace(".tsv", "")
+    if FRAC: stem += f"_frac{FRAC:g}"
     txt = "\n".join(out) + "\n"; path = f"{HERE}/test_period_key_result{stem}{'' if MIN == 1 else '_min' + str(MIN)}.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(path) and open(path).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
