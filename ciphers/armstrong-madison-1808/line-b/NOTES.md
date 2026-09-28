@@ -682,3 +682,34 @@ with a written word division, carrying spans of running text (B27, B29). Named n
 substitution solver over the 54 segmented words that scores by an en18 WORD dictionary rather than a letter
 n-gram model (35 signs -> 26 letters with homophones; the ChatGPT annealers used n-grams and no word division on
 the target) -- planned as B32. Requests: none; 0 subagents.
+
+## Step B32 (28 Sept 2026, 04:50-05:1x UTC) -- dictionary-constrained sign-to-letter solver over B30's 54 words: controls read 54/54, the target reads at its shuffle floor -- control-backed negative for "one glyph = one English letter (<= 2 homophones), type 20 = space" on Tomokiyo's segmentation
+
+`b32/dict_solver.py` (log `run_full.txt`; pilot `run_pilot.txt`). Segmentation: the 28 fragments of `codex-2026-09-27b/
+glyphs.txt` split at type 20 -> 54 words, 34 sign types. Score of a sign-to-letter map: sum over words of 3 + log(1 +
+en18 frequency) when the decoded string is an en18 dictionary word (five volumes, Jefferson IX held out), else 0.15 x
+a letter-bigram log-probability; simulated annealing, 24 restarts x 25,000 proposals, at most two signs per letter
+(the pilot without that cap collapsed maps onto i/s/t/a and read 2 of 3 controls at 6-7%). Controls first
+(pre-registered gate 60% of words on 3 of 3): 54 consecutive words of the held-out volume, letters -> 34 signs with 8
+homophones on the commonest letters, spaces = sign 20.
+
+| run | score | words right / in dictionary | first words |
+|---|---|---|---|
+| control 0 | 554.7 | 54/54 right | first which had been given and the tone |
+| control 1 | 536.7 | 54/54 right | us through any war provided that in the |
+| control 2 | 514.4 | 54/54 right | informed you we were making in the too |
+| **target** | **198.5** | 32/54 in dictionary (one- and two-letter words) | i nqua ongonao c faona non a aladlanomdd ... |
+| shuffled floor 0 | 192.1 | 30/54 | i xaxh hllrioo e atlem oda a lflyscaelso ... |
+| pilot floors (6 x 8,000, no cap) | 220-233 | 32-36/54 | -- |
+
+**GATE MET (100% on 3 of 3); TARGET AT THE FLOOR.** A solver that recovers three design-matched controls exactly
+produces salad on the target, with a score inside the shuffled-target floor (198.5 vs 192.1; floors 1-2 re-running
+after the first process ended early, appended to the log when done). This is a control-backed negative for the design
+tested: the runs are NOT English spelled letter by letter in 34 signs with at most two homophones per letter and type
+20 as the word space, on Tomokiyo's segmentation. What it does not exclude: a different segmentation (ARM-S1's, or the
+16% pass-to-pass disagreement of the mark transcriptions -- rule 3's SALV-DIAG lesson applies, an error-injected
+control was not run), more than two homophones or word/syllable signs (B29 left "word signs" open), abbreviated or
+vowel-dropping spelling, French. It does agree with the ChatGPT space-aware and delete-20 models (incoherent target
+output against clean controls) and with H2's seed-dependence finding, from a different instrument (word dictionary
+rather than letter n-grams). Rule 5: the target stays `open`; no reading. Requests: none; 0 subagents; about 20
+minutes of CPU by the clock.
