@@ -1,0 +1,78 @@
+ Record Information
+ID:8350
+Name:BL_Add_MS_33531_101
+ Current Location
+Country:England
+City:London
+City:British Library, Add MS 33531 f 101-102.
+ Origin
+Dates: - 
+Author:...
+Sender:
+Receiver:
+Region:
+City:
+ Content
+Type:Cipher
+Status:Decrypted
+Cipher Type:Unknown
+Symbol Sets:Graphic signs, Alphabet, Numerical
+Pages:2
+ Creation
+Owner:22
+Creator:22
+Creation Date:2024-09-18 12:22:19
+Access mode:Authentication required
+ × 
+Go to the Image Manager to zoom and view/edit metadata [/decrypt-web/ImagesList?showmaster=records&fk_id=8350]
+1/4
+2/4
+3/4
+4/4
+ ❮ ❯ 
+ 	ID 	   8350   
+ 	Name 	   BL_Add_MS_33531_101   
+ 	Owner 	      
+ 	Current Location and Name 	   London,British Library, Add MS 33531 f 101-102. 
+BL_Add_MS_33531_101   
+ 	Dates 	   -    
+ 	Authors 	   ...
+ 	Languages 	   Cleartext:
+Plaintext:   
+ 	Country 	   England   
+ 	City 	   London   
+ 	Holder 	   British Library, Add MS 33531 f 101-102.   
+ 	Author 	   ...   
+ 	Sender 	      
+ 	Receiver 	      
+ 	Region 	      
+ 	Origin City 	      
+ 	Start Year 	      
+ 	Start Month 	      
+ 	Start Day 	      
+ 	End Year 	      
+ 	End Month 	      
+ 	End Day 	      
+ 	Record
+Type 	   Cipher   
+ 	Status 	   Decrypted   
+ 	Symbol Set 	   Graphic signsAlphabetNumerical   
+ 	Cipher Type 	   Unknown   
+ 	Cipher Type (notes) 	      
+ 	Symbol Sets (notes) 	      
+ 	No. of Pages 	   2   
+ 	Inline Cleartext 	   No   
+ 	Inline Plaintext 	   No   
+ 	Cleartext
+Language 	      
+ 	Plaintext
+Language 	      
+ 	Private Ciphertext 	   True   
+ 	Available Documents 	      
+ 	Paper 	      
+ 	Access Mode 	   Authentication required   
+ 	Creation Date 	   9/18/24   
+Additional Information
+The image is not in the public domain. Publishing it is only possible with the permission of the Library.
+(Satoshi Tomokiyo, 19 September 2024) I corrected the folio number from 99-100 to 101-102. I solved this in May 2023 and described it in Cryptiana [https://cryptiana.web.fc2.com/code/mary.htm] but has not published the details. I believe this is a letter of Mary, Queen of Scots (e.g., expression "my restitution").
+Created by:lehoanna
