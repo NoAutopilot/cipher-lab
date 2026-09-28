@@ -1,0 +1,1 @@
+(Sonnet adversarial reviewer, blind to all but h73/packet.md; verbatim summary of its 11 points and verdict is in NOTES.md "Campaign step H73".)

@@ -2382,3 +2382,41 @@ reach 6, and they are the model rebuilding the Burgsdorf pattern itself from its
 H53/H63 (the fit needs only 72 to stand for two letters, and 72 is one sign), the name fit is as strong as a
 cryptanalytic crib gets here without a key; it is still a candidate, not a reading, because the one assumption is
 unattested for this key. No token, grade or class change.
+
+## Campaign step H73 (2026-09-28 16:53 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Adversarial review of the Burgsdorf crib: one blind Sonnet reader given only
+`h73/packet.md` (the 29 NOTES sections H41-H72 that bear on the crib, plus candidates/candidates.tsv) and asked to argue
+against it. Its eleven objections, ranked by it, with the runner's answer to each:
+
+1. **"Fatal": H59 ranks "do" 134th of 506 for 72, so the campaign's own instrument contradicts the crib.** Not so: H59
+   is logged as a non-test by construction -- the Spanish word model contains no "burgsdorf", so no value at 72 could
+   earn a gain by completing it. H59 neither supports nor contradicts; the reviewer's point that nothing independent
+   *confirms* 72 = do stands, and is the crib's stated limit.
+2. **"Fatal": the null list is not independent -- it comes from the Brandenburg court's own chronicle, where Burgsdorf is
+   frequent.** A fair point about the list as null: a court-specific list is the right *competitor* set (anyone Mercy
+   could be told to see) but not a neutral null. H71 (read text of the letter never fits any of these names above 4) and
+   H72 (synthetic names) partly answer it; H74 is added to answer it directly with a Brandenburg-independent onomasticon.
+3. **H42 misses its bar (P 0.053) and passes only after a post-hoc merge.** Agreed; H42 has been logged "not met strictly,
+   borderline" throughout and is not counted as support.
+4. **"camarero mayor" may be the Elector's own imperial title (H57).** Agreed; recorded in H57 and candidates.tsv.
+5. **The tool's rule was revised twice against this target's data.** True; both revisions tightened the rule (H48 minimum
+   fit, H71 --min-score), neither changed Burgsdorf's numbers (7 agree / 0 disagree, P from the list and from H72), and
+   both are recorded with the cases that forced them. Researcher degrees of freedom remain in the choice of window and
+   list, which the controls below were built to bound.
+6. **No source names Mercy, a Spanish approach to Burgsdorf, or the levy.** Agreed: all corroboration is plausibility
+   (H43, H51, H65); the event itself is unconfirmed.
+7. **H44 shows famous-name bias; the hypothesis was formed by eye.** Agreed that it was formed by eye (stated in H41);
+   the list fit is mechanical, and H71/H72 test what a mechanical fit throws up by chance.
+8. **The 13 px gap is at the top of the intra-group range.** It is the largest intra-group gap but 20 px short of the
+   smallest between-group gap (33); the separation is clean, the call not borderline, though a better image would help.
+9. **H72's generator is trained on the same corpus.** True; H72 shows the fit beats names shaped like that court's names,
+   no more.
+10. **65 = sr is not evidence for syllable codes.** Agreed; it was never used as such (H45 states the omitted-r reading).
+11. **48 = qu sat in the candidates table though not met.** Fixed: candidates.tsv now marks 48 "not applied", and
+    reading_candidates.txt (regenerated, --check passes) no longer applies it at r17:20.
+
+Reviewer's overall verdict: "a carefully controlled and reasonably strong statistical candidate ... but it cannot bear
+the weight of an identification ... treat it as a flagged hypothesis for a separate verifier and the period-key search,
+not as a reading, and not as reportable outside the repo." The runner agrees with that verdict. No token, grade or class
+change.
