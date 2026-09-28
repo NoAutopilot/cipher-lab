@@ -5,3 +5,4 @@ error 15% control 0: words right 30/54 = 56%  e.g. first which gad feen given an
 error 15% control 1: words right 24/54 = 44%  e.g. us through agh war sronaded that ir the
 error 15% control 2: words right 7/54 = 13%  e.g. isfoemer ion st sert mllllh ia wme too
 error 20% control 0: words right 21/54 = 39%  e.g. frrst whrcu had feel hihen and due tone
+error 20% control 1: words right 12/54 = 22%  e.g. by tudhbsu anu mad oyouadid duat en rmi
