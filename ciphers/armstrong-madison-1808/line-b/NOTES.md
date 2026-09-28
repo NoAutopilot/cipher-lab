@@ -216,7 +216,7 @@ Requests: loc.gov 2, tile.loc.gov 0, findingaids.library.nyu.edu 3 (one 403), fd
 2, nypl 1 (403), oclc 1 (403), nyhistory 1 (403), jerseyhistory 1, gothamcenter 1, dartmouth 1; all >= 1.5 s apart;
 no logins; 0 subagents. Cost: about 20 minutes by the clock; PLAN.md records the row's 3 USD estimate.
 
-## Step B4 (28 Sept 2026, 03:0x-03:2x UTC) -- Jefferson's own cipher items at LOC, 1785-1810: no numeric key of the target's shape; the 1803 Jefferson-Monroe coded note screens flat
+## Step B4 (28 Sept 2026, 02:53-03:00 UTC) -- Jefferson's own cipher items at LOC, 1785-1810: no numeric key of the target's shape; the 1803 Jefferson-Monroe coded note screens flat
 
 **Method.** `www.loc.gov/collections/thomas-jefferson-papers/?q=cipher|cypher&dates=1785/1810&fo=json&c=100` (ARM-JEF
 had searched the same collection only for "Armstrong cipher", 0 hits): 53 + 36 results, 83 distinct items, titles
@@ -247,6 +247,20 @@ for this collection -- use the `resources[].files[]` URLs). Scratch: `scratch/b4
 **Verdict:** search result, not a negative -- the Jefferson Papers hold no numeric key catalogued in the target's
 years, and the one 1803 numeric witness screens flat. Requests: loc.gov 7 (2 collection searches, 5 item JSON; one
 timed out at 40 s and was not retried), tile.loc.gov 10 (9 previews, 1 master); >= 1.6 s apart; 0 subagents (this
-session's own looks only). Cost: about 20 minutes by the clock; PLAN.md records the row's 3 USD estimate.
+session's own looks only). Cost: about 7 minutes by the clock (02:53-03:00); PLAN.md records the row's 3 USD estimate.
 Container note for later steps: no PDF tooling and no Pillow at start (`pip install pillow` works; `pypdf` and
 `pdfminer.six` install but fail on the container's broken `cryptography` module; `apt-get` refused).
+
+## Step B9 (28 Sept 2026, 03:01-03:03 UTC) -- NARA frame 0029 read: a clear-text enclosure of the 17 Feb 1808 despatch, no lead
+
+`images/M34-014-0029.jpg` (on disk since ARM-IMG; ARM-TR set it aside as "a later cover memo referencing a 17 Feb
+letter") read in three bands by this session, grade H for the heading and M for the body (a fair copy in a clerk's
+hand, the left half of the spread blank): "Paris 15th Feby 1808. Translation of an Extract of a Letter from the
+Minister of Marine to Genl Armstrong, inclosed in Genl Armstrong's letter of the 17th Feby 1808 to the Secretary of
+State. -- Observe to you moreover that the question ... [is not] as to a vessel sequestered in Port, but is to a Prize
+made at sea and seized for a contravention of the Decree of the 17th Decr last; that the provisional sale ordered on
+account of the average is for the interest as well of the captured as of the captors and it is directed ...
+according to the case provided for by the Regulation of the 2d Frimaire 11th year." A translated extract of Decres
+(Minister of Marine) to Armstrong on prize procedure under the Milan decree, enclosed in the 17 Feb 1808 despatch
+(THE=972 family, the docket of frame 0645 already lists it); it names neither the 20 Feb letter nor a cipher.
+Result: no lead; done. Requests: none; 0 subagents; 2 minutes by the clock.
