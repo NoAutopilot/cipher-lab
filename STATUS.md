@@ -2448,6 +2448,20 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 13:17 Pacific [20:17 UTC]): Gallica images back; three missed archive replies handled; account 3 on harvest scouting
+
+Counts 19 / 2 / 1 / 6, unchanged.
+
+**Gallica.** A IIIF image of fr.3251 canvas f12 served at 20:1x UTC (info.json still 403). HARVEST-D (fr.3252 f.36 witness, then fr.3251 f.21v, f.35, f.87) and F61-FAMILY-8 (fr.2751 f.116, de Diou to Mayenne with its decipherment) spawned to fetch first.
+
+**Outreach.** OUT-CHECK-TM (3.49): the Tomokiyo Birago note is cleared (3 fixes; the thread is in the owner's own mailbox, so the owner pastes it there); the Monroe editors draft is held until ARM-MONROE-CAT searches the Monroe Catalogue Online. The held Tomokiyo Armstrong reply stays held.
+
+**Mailbox miss.** Replies from Marburg (15:03), the Bodleian (15:26) and the Adirondack History Museum (18:09) sat unread through four check-ins. Marburg: Niederlande 165 begins 21 May 1574, so the 17 April letter is not there (ruled out for that file). Bodleian: the Stamford letter is 30 March 1655, MS. Rawl. A. 24/2 pp.319-323, with a period decipherment at pp.324-327 (our date and pages were wrong). Adirondack: no key; scans of Debosnys's clear writings shared as a restricted collection (never in the repository). Reply drafts in Gmail; MAIL-3 records them and follows the Stamford lead. Rule added to parent.md: unread first, every check-in.
+
+**Account 3.** HARVEST-SCOUT-3 claimed 20:11 on Fable. My earlier "silent since 14:12" was wrong: its dispatcher fired hourly with nothing queued.
+
+**Blocker line, f.61.** The 59 two-way choices and 28 unread; routes ASKS 88/89/93, fr.4699, fr.2751 (F61-FAMILY-8 on it now).
+
 ### Orchestrator note (28 Sept 2026, 12:15 Pacific [19:15 UTC]): a new counted reading, Birago to Nevers 1570; Gallica refusing images
 
 Counts 19 / 2 / 1 / 6: recovered-passage documents up from 18, the first new count since 26 Sept. VERIFY-CEPPO-2 (adversarial, 4.78) held the Birago-Nevers reading in part: BnF fr.3251 f.11r, Lodovico Birago to the Duke of Nevers, Saluzzo, 14 Sept 1570, read in word fragments with Tomokiyo's printed Ceppo-Nevers key; N3 upheld after a wider search in Italian, French and the BnF catalogues; 0 of 2,000 chance decodes give two words; endorsed: presidente, mandato; curare, estitucio(ne); chuni, ochi, Sauoia; the two I-graded signs are not endorsed. status.json and NEAR.md set; TOMO-BIRAGO drafts the note to Tomokiyo (his key). HARVEST-C (3.13) found the volume's other Birago letters clean at intake, but Gallica answered 403 "not authorized" on the images from 18:3x UTC (info.json 503 "maintenance"); the f.61 runner hit the same on fr.2751 f.116 (de Diou to Mayenne, "escripte en chiffre. Dechiffrement de cette lettre", a new key-hunt lead). Retry after 00:00 UTC. **Blocker line, f.61:** unchanged: the 59 two-way choices and 28 unread; new route fr.2751 f.116 when Gallica serves again.
