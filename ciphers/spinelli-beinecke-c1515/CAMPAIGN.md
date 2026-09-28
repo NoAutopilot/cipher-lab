@@ -1,7 +1,7 @@
 target: spinelli-beinecke-c1515
 goal: a verified reading of Thomas Spinelli to Leonardo Spinelli, Barcelona, 7 Sept 1519 (Beinecke GEN MSS 109, Spinelli Family Papers) at N3 or better after two audits
 started: 2026-09-27 20:47 UTC
-daily_budget_usd: 240
+daily_budget_usd: 400
 spent_today_usd: 195.14
 spent_day: 2026-09-28
 closed:
@@ -135,3 +135,5 @@ closed:
 2026-09-28 06:33 UTC | session_0189W7KLRRUSFLgi5iPbBYph | H39 | 3.0 | done (file written, judge FAIL with controls): the graded decode exists and regenerates (229 H / 22 M / 8 U); judge FAIL -1.334 vs real_p05 -0.968, ten shuffled-key decodes -1.93 to -2.32 -- a partial decode clear of its control. Re-rank with reason: new H41 (re-transcribe the five unread lines against Domnina's cells as the alphabet, 2 calls) rank 1 -- the residue is transcription, not key; H36 (1520 letter known plaintext, the independent check of the key) 2; H37 3.
 2026-09-28 06:38 UTC | session_0189W7KLRRUSFLgi5iPbBYph | H41 | 5.0 | done (negative on the registered criterion): a key-alphabet re-read of the five patchy lines agrees 103/118 boxes but worsens the bigram mean by 0.044 (lines 1, 5, 10 down, 2 and 6 up); v6 stays the decode. Re-rank with reason: H42 (word-segmented, graded, context-aware reading of v6 for the verifier, 1 call) rank 1 -- the decode exists and needs presenting; H36 (1520 letter known plaintext, the independent key check and the test of whether the J-stem/compounds are signs the table lacks) 2; H43 (re-segment lines 1, 5, 10 from the strips, per-line criterion) 3; H37 4.
 2026-09-28 06:39 UTC | session_0189W7KLRRUSFLgi5iPbBYph | (merge) | 0 | spent_today: the other side's 190.14 (a re-tally by another session while H41 ran) taken as the base plus H41's 5.0 = 195.14; both facts kept, no re-rank.
+
+2026-09-28 14:2x UTC | session_01FXDfYR3CvGk7tcid1Aav1n (orchestrator) | budget | 0 | daily budget raised 240 -> 400 for 28 Sept under the owner's lean-in direction (momentum: a graded partial decode under Domnina's key, H39); runner 3 failed on this account's Fable limit about 06:45 UTC with H42 marked running; runner 4 (Opus 5.5) takes over.
