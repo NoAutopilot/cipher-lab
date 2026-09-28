@@ -1,3 +1,10 @@
+# key_period.tsv -- F61-FAMILY, 28 Sept 2026. Key source: period (CLAUDE.md rule 4 / rule 10 key-source vocabulary): every
+# (class, letter) pair is read from a contemporary interlinear decipherment written on the leaf itself, aligned to the
+# atlas-coded cipher signs by tools/interlinear_align.py (--code-prefix @ --null-cost -1 --clear-consumes), grade C for the
+# pair, no cryptanalysis and no refit. Classes are the f.61 shape atlas (scripts/f61_atlas.tsv) plus H24 (see KEY.md).
+# '-' = the sign took no letter in the alignment (a null or an abbreviation in the gloss). n = occurrences; bands = which
+# line bands of that leaf. Tomokiyo's mayenne.png reconstruction is a separate, published key and is not used here.
+# fr.3982 f.101r rows (F61-FAMILY-2, 28 Sept 2026): passes/f101r_keyrows.tsv from align_period.py f101r, PRELIMINARY chunks 1-5
 class	letter	n	leaf	bands
 4PI	d	5	fr.3982 f.101r	L01,L02,L05
 4PI	n	3	fr.3982 f.101r	L03,L17
