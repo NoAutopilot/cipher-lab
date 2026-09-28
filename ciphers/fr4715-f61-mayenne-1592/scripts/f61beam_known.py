@@ -23,8 +23,14 @@ def resolved(seq, m):
     idx = [k for k, c in enumerate(seq) if c in m]
     pairs = [tuple(jp.fold(x) for x in m[seq[k]].split("/")) for k in idx]
     s, _, _ = H.resolve(pairs); return dict(zip(idx, s)), dict(zip(idx, pairs))
+F108 = "--f108r" in ARGS   # H121 (28 Sept 2026): the same method on Tomokiyo's overlay of f.108r L02/L03 (84 letters), lines as f61joint builds them, H51 relabel
+def load108():
+    import f61joint, f61qo2
+    L = f61joint.f108_lines(); f61qo2.relabel(L)
+    spans = [(s, "F108_" + ("L02" if s == "T1" else "L03"), m) for s, _, m, _ in (l.rstrip("\n").split("\t") for l in open(f"{HERE}/tomokiyo_spans_3983.tsv") if l[0] == "T")]
+    return {k: L[k] for k in ("F108_L02", "F108_L03")}, spans
 def main():
-    C = J.cells(); L = J.lines("known_h51"); spans = load_spans()
+    C = J.cells(); L, spans = load108() if F108 else (J.lines("known_h51"), load_spans())
     key = {c: tuple(v.split("/")) for c, v in C.items()}
     placed = []   # (line, seq index, true letter)
     for s, line, markup in spans:
@@ -50,7 +56,7 @@ def main():
            f"(ii) beam choice accuracy {right}/{inpair} = {acc:.3f}; always-first-letter {first}/{inpair} = {first / inpair:.3f}; chance 0.5",
            f"(i) letters matched: fitted {fit}; permuted median {null[100]}, p95 {p95}, max {null[-1]} (200 maps, seed 116; positions from the fitted alignment)",
            f"GATE H116 ((ii) >= 0.75 and (i) > p95): {'PASS' if acc >= 0.75 and fit > p95 else 'FAIL'}"]
-    txt = "\n".join(out) + "\n"; rp = f"{HERE}/f61beam_known_result.txt"
+    txt = "\n".join(out) + "\n"; rp = f"{HERE}/f61beam_known{'_108r' if F108 else ''}_result.txt"
     if "--check" in ARGS:
         good = os.path.exists(rp) and open(rp).read() == txt; print("fresh" if good else "STALE"); sys.exit(0 if good else 1)
     open(rp, "w").write(txt); print(txt, end="")
