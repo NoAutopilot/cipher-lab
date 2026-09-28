@@ -3377,3 +3377,25 @@ overlapping halves with a position ruler, Tomokiyo's 38-type sheet, README with 
 and dropped real ones where a crop cuts them (page 2's crop is tight), so the person marks positions on a ruler and
 H60 matches them to components. **ASKS row 92** filed. H60 waits on it. No reading, no class change; nothing called
 new or first. Vision: the runner's four looks at trial sheets; requests 0. Cost: about 0.5 USD (`--spend` 0.5).
+
+## Campaign steps H62 and H63 (28 Sept 2026, to 15:19 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Question:
+Jefferson wrote Madison on 17 May 1808 "I retain till another post Pinckney's, Armstrong's, Livingston's & mr
+Gallatin's letters" (Founders Jefferson 99-01-02-8015, line B B6) -- did an Armstrong letter, a copy or a numeral
+enclosure stay in Jefferson's own papers?
+
+**H62, LOC Thomas Jefferson Papers** (loc.gov collection JSON; 4 requests): "armstrong" in 1808 gives 17 items -- the
+Armstrong-Jefferson letters of 15 Feb, 15 June, 28 July, 9 Aug and 20 Oct 1808 and Jefferson's to Armstrong of 2 May
+and 2 Dec (all read on Founders by line B, B20/B31), plus unrelated hits; no Armstrong-to-Madison letter, copy or
+enclosure. "cypher" in 1808: one item (Monroe to Jefferson, 22 Mar 1808); "cipher": none. The full item list for 15
+May-10 June 1808 (96 items) has only the Madison-Jefferson letters themselves (15, 16, 17, 19, 24, 27, 31 May; 2, 3
+June), no Armstrong item, no enclosure and no undated numeral page. Search result: the letters Jefferson retained were
+returned "by another post", as he wrote; nothing of them is catalogued in his papers at LOC.
+
+**H63, MHS Coolidge Collection:** the MHS Jefferson site says only "selections" of its single items are digitised;
+Founders' Jefferson series prints the MHS letters too, and line B read that series for 11 Feb-19 Oct 1808 (B20, B31;
+ids 7400-8900, 1,378 of 1,413 fetched), finding nothing on the 20 Feb letter. Covered; no separate MHS search run.
+
+No reading, no class change; search results, not negatives about the letter's existence. Requests: loc.gov 4,
+masshist.org 2. Vision 0. Cost: about 0.5 USD for both (`--spend` 0.5 and 0).
