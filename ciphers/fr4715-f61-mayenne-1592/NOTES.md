@@ -1677,3 +1677,23 @@ its gloss is unread by any model (ASKS 89 is the person route), so nothing here 
 the file shows the verifier and the desk: which rows a person's gloss reading would settle first (L01: 44 signs with 42
 covered), and that the hand's inventory is f.61's (VBAR_A/EBR_A/4TRI/INF/SBS/ZHOOK). No class change; nothing solved, new or
 first.
+
+## Campaign step H63 (2026-09-28 06:19 UTC) -- the CA signs inside the runs are in the cipher hand; the edge ones may be text
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). One Opus vision call (about 105k subagent tokens, 42 s), prompt in
+`scripts/PROMPTS.md` (H63) and scorer `scripts/f61ca.py` (verdict rule pre-registered) pushed 35b171fb before the call.
+Hypothesis H63 (F61-CA-HAND): are f.61's ten CA signs (Tomokiyo's nulls, H44) cipher signs at all, or letters of the clear
+text at the run edges?
+
+**Output (`scripts/read_call_CA.tsv`, verbatim).** 12 a-shaped marks in or at the cipher runs and 10 control a's from the
+clear words (all 10 judged text, as required). Its verdicts split by position, not by sheet: every a INSIDE a run "same
+size, pen weight and spacing as the signs, on their baseline, not joined" = cipher (8 of 12), every a at a run EDGE (after
+"Cambrey", before "le...", after "sont", after "ni mesme") = text at low-to-moderate confidence (4 of 12).
+
+**Result (`scripts/f61ca_result.txt`).** Reconciled sheets L01, L07, L08, L10 (6 CA positions): cipher 5, text 1 (L07/1,
+pass A's own "a-shape; run-break", the run's first sign); L03 and L05 listed one extra a each (an edge a pass A did not
+code) and were dropped by the rule. Control 10/10 text. **Verdict as pre-registered: CA = cipher signs; Tomokiyo's nulls
+stand** -- with the qualification the call itself supplies: the CA signs pass A placed at run starts or ends (L03/1, L05/7,
+L07/1) are the ones a reader takes for the text's own "a", and whether they are counted as a null sign or as the clear
+word "a" changes no cell and no letter of any reading (a null and an unread text letter render the same). The skeleton
+(H58) keeps them as nulls. No class change; nothing solved, new or first. Vision calls: 1 of 4.

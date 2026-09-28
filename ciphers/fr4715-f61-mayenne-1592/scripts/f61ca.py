@@ -20,7 +20,8 @@ def main(path):
     rows = list(csv.DictReader((l for l in open(f"{HERE}/{path}") if not l.startswith("#")), delimiter="\t"))
     ca = defaultdict(list); ctrl = []
     for r in rows:
-        (ctrl if r["kind"].strip().lower() == "control" else ca[r["sheet"].replace(".jpg", "")]).append(r)
+        sh = r["sheet"].replace(".jpg", "").strip(); sh = sh if sh.startswith("f61sheetB_") else "f61sheetB_" + sh   # the call wrote L01 for f61sheetB_L01.jpg
+        (ctrl if r["kind"].strip().lower() == "control" else ca[sh]).append(r)
     out = [f"{path}: {sum(len(v) for v in ca.values())} a-shaped marks in/at cipher runs listed, {len(ctrl)} control a's"]
     text = cipher = 0; scored = 0
     for sheet, pos in EXP.items():

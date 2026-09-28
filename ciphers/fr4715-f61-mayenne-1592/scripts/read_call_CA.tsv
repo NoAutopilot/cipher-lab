@@ -1,0 +1,24 @@
+# H63 blind hand judgement of the a-shaped marks (Opus vision subagent, 28 Sept 2026, one call, about 105k subagent tokens, 42 s; prompt verbatim in scripts/PROMPTS.md section H63; no letters, no key). Rows verbatim (the reader wrote the sheet as L01 etc. for f61sheetB_L01.jpg). Its count line: "run marks: 12, control a's: 10".
+kind	sheet	segment	x_px	hand	note
+run	L01	4	1025	cipher	Standalone a in the middle of the sign run (between two phi-loop signs). Same size, pen weight and spacing as the signs around it, sits on their baseline, not joined to anything.
+run	L03	1	2330	text	At the edge: comes after the clear word "Cambrey", and the run starts in segment 2. Large and heavily inked like the words beside it, spaced like a word. Low-to-moderate confidence.
+run	L03	2	2025	cipher	Inside the run, between a 4-like figure with a 3-tail and a crossed 4-like sign. Small, isolated, and on the signs' baseline and spacing.
+run	L03	3	1930	text	At the edge: after the last phi-loop sign and before the clear word "le...". The gap before "le" is word-like and the weight matches the text. Borderline, because its size is close to the run a's. Low confidence.
+run	L05	1	1680	text	At the edge: after "sont" and before the run. Spaced and sized like the word "sont", but it is also isolated like a sign. Borderline, low confidence.
+run	L05	2	1148	cipher	Inside the run, the first of two a's in a row, between a crossed 4-like sign and the second a. Same weight and spacing as the signs.
+run	L05	2	1404	cipher	Inside the run, the second a, followed by a 4-like figure with a 3-tail. Isolated like a sign and on the signs' spacing.
+run	L07	3	1485	text	At the edge: after the clear words "ni mesme'" and before the run. Its spacing continues the text rhythm and its weight matches "mesme". Moderate confidence.
+run	L08	2	815	cipher	Inside the run, between a 6-like figure and a crossed 4-like sign. Small and isolated, on the signs' baseline and spacing.
+run	L10	3	1440	cipher	Inside the run, after the bracket sign and before a phi-loop sign. The first sign-like mark after "si" follows it, so the a sits well inside the run. Isolated, same pen weight as the signs.
+run	L10	4	985	cipher	Inside the run, between a hooked-loop sign and a 6-like figure. Isolated, on the signs' spacing.
+run	L10	4	1820	cipher	Inside the run, between a double-loop sign and a 6-like figure. Isolated, on the signs' spacing.
+control	L01	1	823	text	The a of "auons": joined to the following u in running cursive.
+control	L01	2	1470	text	The a of "amplement": opens the word and is joined to the next letter.
+control	L01	1	1550	text	The a of "parlé": joined between p and r.
+control	L07	1	1026	text	The a of "Cependant": joined to the following nt.
+control	L07	2	1296	text	The a of "depar...": joined inside the word.
+control	L07	2	1890	text	The final a of "ella": joined to the ll.
+control	L08	3	150	text	The first a of "maintenant": joined inside the word.
+control	L08	3	755	text	The second a of "maintenant": joined to the following nt.
+control	L08	4	305	text	The a of "affere": opens the word and is joined to the ff.
+control	L10	2	1945	text	The a of "pas": joined between p and s.

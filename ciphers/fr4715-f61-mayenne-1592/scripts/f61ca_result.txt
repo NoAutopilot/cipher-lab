@@ -1,0 +1,11 @@
+read_call_CA.tsv: 12 a-shaped marks in/at cipher runs listed, 10 control a's
+  f61sheetB_L01/8 CA: cipher (Standalone a in the middle of the sign run (between two phi-loop signs). Same si)
+  f61sheetB_L03: expected 2, listed 3 -> NOT reconciled, dropped
+  f61sheetB_L05: expected 2, listed 3 -> NOT reconciled, dropped
+  f61sheetB_L07/1 CA: text (At the edge: after the clear words "ni mesme'" and before the run. Its spacing c)
+  f61sheetB_L08/10 CA: cipher (Inside the run, between a 6-like figure and a crossed 4-like sign. Small and iso)
+  f61sheetB_L10/2 CA: cipher (Inside the run, after the bracket sign and before a phi-loop sign. The first sig)
+  f61sheetB_L10/9 CA: cipher (Inside the run, between a hooked-loop sign and a 6-like figure. Isolated, on the)
+  f61sheetB_L10/12 CA: cipher (Inside the run, between a double-loop sign and a 6-like figure. Isolated, on the)
+scored 6 of 10 CA positions: text 1, cipher 5; control a's judged text 10/10
+VERDICT H63: CA = cipher signs (Tomokiyo's nulls stand)
