@@ -1,0 +1,49 @@
+# H2: cryptogram 1, third blind pass and adjudication rule
+
+Written 28 Sept 2026 21:2x UTC by DEBOSNYS-RUNNER-3 (session_018qnyJQbVSd2NyPvDVApXqS) BEFORE any per-sign
+crop was cut or looked at, and committed before the reader was spawned (CAMPAIGN.md H2). The reader is a
+separate Fable subagent that receives only crop paths and the inventory sheet tiles; it never sees passA_c1.tsv,
+passB_c1.tsv, ciphertext_c1_draft.tsv, disagreements_c1_passB.tsv or this file's adjudication section.
+
+## What the reader gets
+
+- Unit: the physical box (both passes read the same 136 pre-cut boxes, identical per-line counts), so the disputed set is
+  the positions where passA_c1.tsv and passB_c1.tsv differ (`scripts/h2_disputed_positions.tsv`, computed before any crop
+  was cut; GOLD-4E's 52 aligned columns include 4 alignment-gap artefacts of the Needleman-Wunsch step on L01 and L05).
+  For each disputed position:
+  a per-sign crop from `images/Debosnys-Cryptogram-1.png` (the Schmeh PNG's own pixels, 1111x481, the only
+  resolution on disk: "native" here means no re-encoding, upscaled 6x with Lanczos for legibility, the box padded
+  by 6 px each side), and a line-context strip with the target box outlined in red.
+- The 160-id inventory sheet `glyphs/inventory.png` cut into tiles (`scripts/h2_crops/inv_NN.png`), each tile
+  captioned with the sign ids it shows, plus `glyphs/inventory.tsv`'s id list.
+- Every crop is a real box; the reader may still answer MULTI or `_` for it.
+
+## Reader prompt (per call, one call per two lines, three calls)
+
+"You are reading a hand-drawn 1883 cipher. For each numbered crop below, name the ONE inventory id from the
+attached sheet tiles that best matches the sign inside the red box in the context strip, with a confidence
+H (unmistakable), M (best match, one plausible alternative) or L (guess), and your best alternative id. If the
+box holds more than one sign write MULTI; if it holds no sign (dust, bleed-through, a stray stroke) write `_`.
+Do not describe what the sign might mean. Write one line per crop: <crop id> <TAB> <sign id> <TAB> <H/M/L> <TAB>
+<alt id> <TAB> <five-word shape note>. Read every crop; never skip one."
+
+## Adjudication rule (fixed before looking; applied by scripts/h2_adjudicate.py, which prints the counts)
+
+1. For each column, C = the reader's id. Settled full id = the id named by at least two of A, B, C.
+   Grade H when all three agree or when C's confidence is H and one of A/B agrees; otherwise M.
+2. If no two agree on the full id but two agree at family level (`glyphs/inventory.tsv` `family` column, then
+   `glyphs/base_mark.tsv`'s base fold), the column is settled at the family/base value with the mark of the
+   majority (or none), graded M, flagged `family-settled`, and counts as settled only in the family-level number.
+3. A three-way split stays unsettled (M, all three values kept in `alt`).
+4. A MULTI or `_` verdict from C on a box the other two read as a sign is a segmentation flag: recorded, graded M,
+   the column stays unsettled unless one of A/B also has MULTI/`_`.
+5. Numbers reported, all computed by the script, none by hand: (a) pairwise blind agreement on the disputed
+   positions, A-C and B-C, full id and family level (the honest independent numbers); (b) the settled count after
+   majority and the new agreement (already-agreed + settled) over 136 boxes, full id and family level;
+   (c) the remaining unsettled positions; (d) the type-noise estimate the settled draft carries: unsettled/136
+   as the floor, and (unsettled + family-settled)/136 as the ceiling, read against the GOLD-D2 base-level
+   curve (0.816 at 2.5 pct, 0.385 at 5 pct).
+6. Gate: 80 pct full-id agreement over the 136 boxes after adjudication licenses writing cryptogram 1 into
+   `ciphertext.txt` from `ciphertext_c1_draft.tsv` (settled columns H/M as graded, unsettled M with alts);
+   below 80 pct the draft is updated and `ciphertext.txt` stays as it is.
+7. Nothing in this pass is a reading of the cipher; grade S/M throughout, 0 H-from-key, 0 C-from-plaintext.
