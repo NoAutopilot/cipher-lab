@@ -1,0 +1,58 @@
+# H35 (28 Sept 2026, runner session_0189W7KLRRUSFLgi5iPbBYph): atlas code (glyphs/atlas_v2 + v4's HOOK/JHOOK/EPSILON) -> value in
+# Domnina's corrected key (sources/domnina-2015-2016/p27_2016_plate_key_letter_decipherment.jpg, Ill. 1), settled from two
+# blind Opus matching passes (passes/keymatch_pass{K,L}.tsv: 52 signs in 28 cells each, matched against glyphs/atlas_v2.png)
+# and this runner's own look at the table. Grade AB = both passes gave this code for this cell (or the same cell for this
+# code) with no competing cell; M = one pass, or both at low confidence, or settled by the runner; ? = the atlas code
+# covers more than one of Domnina's cells (the atlas lumps shapes the key separates), value left open with the candidates.
+# Direction matters: this is code -> value; a value with several codes is a homophone set (o: EIGHT, TWO; n: DIAMOND, HCURL).
+code	value	grade	note
+OMEGABAR	a	AB	A sign 1, both H; OMEGA2 (A second choice) also a
+OMEGA2	a	M	both passes' second choice for A sign 1
+PLUS	b	AB	B, both (K M with TEE second, L H)
+LL	c	AB	C sign 1, both H
+PI	d	AB	D sign 1, both H
+THETA	d	AB	D sign 2, both H (K: EIGHTBAR second)
+ESS	h	AB	H, both H
+SEVENB	i	AB	I sign 2 (the long-bar 7), both H -- but v4 has no SEVENB code: its signs are inside SEVEN
+SEVEN	?	?	e|i: E sign 2 (the dotted 7, K M / L H) and I sign 2 (SEVENB, the bold long-bar 7) are both inside v4's SEVEN (25 signs); split needed
+NINE	?	?	e|null: E sign 1 (both H) and Nulla sign 4 (both H) both matched NINE; the print separates a straight-stemmed q-like E from a curl-tailed 9 null; split needed
+THREE	l	M	L sign 3 (both THREE/NINE M); L sign 1 (K NINE/SEVEN L, L THREE/SEVEN M) and P sign 2 (K THREE L, L THREE/SEVEN M) also point here: THREE may cover l and p2
+JHOOK	m	M	M sign 2, both JHOOK M
+DIAMOND	n	AB	N sign 1, both H (Que sign 1 also DIAMOND at M -- likely the mark over the Que epsilon, not a separate sign)
+HCURL	n	AB	N sign 2 (the x with dots), both H (K: XCURL second)
+EIGHT	o	AB	O sign 1, both H
+TWO	o	AB	O sign 2, both H (Z sign 1 TWO/TWOFLAT at M/L is the competing cell)
+XCURL	r	AB	R sign 1, both H
+ENN	s	AB	S sign 1, both H
+DEE	s	AB	S sign 2 (K M, L H)
+EM	u	AB	U/V sign 1 (K H, L M)
+PHI	g	M	G sign 1, both PHI/THETA M; I sign 1 gave PHI as K's first / L's second choice, so PHI may cover g and i1 -- and 17 signs is a lot for g
+OMEGADOT	g	AB	G sign 2, both H
+EPSILON	que	M	Que sign 2, both (K L, L M); K notes the sign has no dots in the print
+STROKE	nn	M	NN (a dotted vertical), both M; v4 carries no STROKE code
+FOUR	null	AB	Nulla sign 1, both H
+SIX	null	AB	Nulla sign 2, both H
+TWOFLAT	?	?	null|l|qua: Nulla sign 3 (both), L sign 2 (both H), Qua (K M, L H) all matched TWOFLAT; not in v4 anyway
+EIGHTBAR	?	?	rr|cc: RR (both H) and CC (both H) both matched EIGHTBAR
+TEE	?	?	f|p: F sign 1 (K PLUS/TEE, L TEE/PLUS) and P sign 1 (both TEE/THETA) both matched TEE
+HOOK	?	?	v4's merged hook family covers T signs 1-2 (ELOOP/ECAP/RHO), C sign 2 (TLOOP), M sign 1 and G sign 3 (UCURL), I sign 1 (TLOOP/PHI), R sign 2 and FF (RHO), U/V sign 2: at least t, c2, m, g3, i1, r2, ff -- unresolvable at v4's granularity
+MU	t	M	T sign 3, both MU/UCURL M; merged into HOOK in v4
+UCURL	?	?	m|g|tt: M sign 1, G sign 3, TT all matched UCURL; merged into HOOK in v4
+CARET	?	?	no cell matched to CARET by either pass
+CIRCLE	?	?	no cell matched (1 sign in v4)
+# v5 sub-codes (H38): CODE_CELL rows written by passes/build_v5_split.py from two blind sorting passes; grade AB = both passes named the cell
+EIGHT_O	o	AB	H38 shape sort, both passes
+EIGHT_R	r	AB	H38 shape sort, both passes
+HOOK_A	a	AB	H38 shape sort, both passes
+HOOK_C	c	AB	H38 shape sort, both passes
+HOOK_M	m	AB	H38 shape sort, both passes
+HOOK_R	r	AB	H38 shape sort, both passes
+HOOK_T	t	AB	H38 shape sort, both passes
+HOOK_U_V	u	AB	H38 shape sort, both passes
+NINE_E	e	AB	H38 shape sort, both passes
+NINE_NULLA	null	AB	H38 shape sort, both passes
+SEVEN_E	e	AB	H38 shape sort, both passes
+SEVEN_I	i	AB	H38 shape sort, both passes
+TWO_NULLA	null	AB	H38 shape sort, both passes
+TWO_O	o	AB	H38 shape sort, both passes
+TWO_P	p	AB	H38 shape sort, both passes

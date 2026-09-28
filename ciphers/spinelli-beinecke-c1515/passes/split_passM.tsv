@@ -1,0 +1,117 @@
+code	label	cell	conf	why
+SEVEN	p1.L1.b13	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L1.b26	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L2.b15	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L2.b21	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L3.b12	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L4.b14	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L6.b16	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L7.b2	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L7.b28	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p2.L1.b3	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p2.L1.b15	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p2.L1.b33	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p2.L2.b18	E	M	short top bar with long diagonal stem slanting down-left like the dotted 7 of cell E; dots not visible in crop
+SEVEN	p1.L1.b19	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p1.L3.b19	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p1.L3.b28	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p1.L4.b6	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p1.L7.b25	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p2.L1.b30	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p2.L2.b15	I	H	long flat top bar and straight vertical stem, the bold 7 of cell I
+SEVEN	p1.L6.b4	I	M	flat top bar with near-vertical stem, stem slightly curved
+SEVEN	p2.L1.b12	I	M	flat top bar with near-vertical stem, stem slightly curved
+SEVEN	p1.L3.b9	Nulla	M	extra stroke crossing above-left of the bar with vertical stem, like the 4-form in the Nulla cell
+SEVEN	p1.L5.b6	Nulla	M	extra stroke crossing above-left of the bar with vertical stem, like the 4-form in the Nulla cell
+SEVEN	p1.L4.b16	I	L	crop holds a small 7 with vertical stem beside a J-tailed 9; same label also on NINE sheet, box likely spans two signs
+NINE	p1.L1.b22	E	H	9 with straight near-vertical descending stem
+NINE	p1.L2.b18	E	H	9 with straight near-vertical descending stem
+NINE	p1.L3.b3	E	H	9 with straight near-vertical descending stem
+NINE	p1.L3.b25	E	H	9 with straight near-vertical descending stem
+NINE	p1.L4.b26	E	H	9 with straight near-vertical descending stem
+NINE	p1.L5.b11	E	H	9 with straight near-vertical descending stem
+NINE	p1.L6.b13	E	H	9 with straight near-vertical descending stem
+NINE	p1.L7.b11	E	H	9 with straight near-vertical descending stem
+NINE	p2.L1.b20	E	H	9 with straight near-vertical descending stem
+NINE	p2.L1.b28	E	H	9 with straight near-vertical descending stem
+NINE	p2.L1.b5	E	M	straight stem, bottom cut or crossed by a stroke from the next line
+NINE	p1.L8.b9	E	M	straight stem, bottom cut or crossed by a stroke from the next line
+NINE	p1.L2.b4	E	L	squat 9 with short straight stem, no curl, no descender
+NINE	p1.L1.b23	Nulla	H	stem sweeps in a long curve to lower left, the curled-tail 9 of the Nulla cell
+NINE	p2.L1.b14	Nulla	H	stem sweeps in a long curve to lower left, the curled-tail 9 of the Nulla cell
+NINE	p1.L1.b30	Nulla	M	9 whose stem ends in a J-curl to the left (a 6 beside it, also a Nulla form)
+NINE	p1.L4.b16	Nulla	L	9 with J-curled tail beside a 7; same label also on SEVEN sheet, box likely spans two signs
+EIGHT	p1.L2.b10	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L4.b17	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L5.b8	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L6.b6	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L6.b23	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L7.b9	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L7.b21	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L7.b26	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p2.L1.b9	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p2.L1.b26	O	H	compact closed figure 8, no bar, no tail
+EIGHT	p1.L3.b4	R	M	small top loop, long S-shaped neck, larger lower loop, like the tailed 8 of cell R
+EIGHT	p1.L5.b18	R	M	small top loop, long S-shaped neck, larger lower loop, like the tailed 8 of cell R
+EIGHT	p1.L7.b1	R	M	top loop with long diagonal neck into a lower loop
+EIGHT	p2.L2.b17	R	M	8 with a tail sweeping out to lower left from the lower loop
+EIGHT	p2.L2.b16	UNCLEAR	L	two crossing strokes forming a loop at top, open at bottom; no candidate matches
+TWO	p1.L2.b13	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L3.b10	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L4.b12	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L4.b23	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L6.b11	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L6.b15	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L6.b20	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L7.b4	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L7.b15	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L7.b19	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L8.b7	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L8.b16	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p2.L1.b13	O	H	round 2 whose base curls back up on the right, reversed-s of cell O
+TWO	p1.L6.b10	Nulla	M	angular z with flat top and long flat baseline, the Nulla z
+TWO	p2.L1.b19	Nulla	M	angular z with flat top and long flat baseline, the Nulla z
+TWO	p1.L6.b14	Nulla	M	hooked top dropping to a long flat horizontal baseline, no upturn
+TWO	p1.L7.b24	Nulla	M	hooked top dropping to a long flat horizontal baseline, no upturn
+TWO	p1.L8.b6	Nulla	M	hooked top dropping to a long flat horizontal baseline, no upturn
+TWO	p1.L3.b16	P	M	3/z form with a horizontal bar through it, the barred 3 of cell P (sits at top of crop beside another sign)
+TWO	p1.L4.b15	Z	L	D-like bowl under a top stroke extending left; nearest the looped cursive Z, not a clean match
+TWO	p2.L2.b13	Z	L	D-like bowl under a top stroke extending left; nearest the looped cursive Z, not a clean match
+HOOK	p1.L1.b28	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L4.b20	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L5.b2	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L5.b14	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L6.b25	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L8.b15	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L8.b23	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L2.b20	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p2.L2.b10	A	H	small loop at left then a wide open arc sweeping down and up to the right under the next sign
+HOOK	p1.L1.b31	A	L	small loop with a long stroke running right and slightly down; arc end not clearly rising
+HOOK	p1.L1.b14	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L2.b7	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L3.b8	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L3.b22	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L4.b25	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L5.b5	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L6.b17	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L7.b7	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p2.L1.b24	T	M	small loop with a tail rising from its top to upper right, like the upper signs of cell T
+HOOK	p1.L5.b16	C	M	loop with a separate diagonal stroke crossing through it, the crossed loop of cell C
+HOOK	p1.L5.b17	C	M	loop with a separate diagonal stroke crossing through it, the crossed loop of cell C
+HOOK	p1.L5.b19	C	M	loop with a separate diagonal stroke crossing through it, the crossed loop of cell C
+HOOK	p1.L1.b27	M	M	gamma-like curl: large lower-left loop with upper arm swinging right into a curl, as the upper sign of cell M (G lower is the alternative)
+HOOK	p1.L3.b2	M	M	gamma-like curl: large lower-left loop with upper arm swinging right into a curl, as the upper sign of cell M (G lower is the alternative)
+HOOK	p1.L7.b22	M	M	gamma-like curl: large lower-left loop with upper arm swinging right into a curl, as the upper sign of cell M (G lower is the alternative)
+HOOK	p1.L8.b17	M	M	gamma-like curl: large lower-left loop with upper arm swinging right into a curl, as the upper sign of cell M (G lower is the alternative)
+HOOK	p1.L2.b26	U_V	H	long f with crossbar and descender, the lower sign of cell U_V
+HOOK	p1.L6.b21	U_V	H	long f with crossbar and descender, the lower sign of cell U_V
+HOOK	p2.L2.b3	U_V	L	tall thin stroke with a small loop near the top, no clear crossbar
+HOOK	p1.L2.b5	FF	L	top loop, diagonal neck down right, crossing tail at bottom; FF vs R
+HOOK	p2.L1.b27	R	L	long stem descending into a lower loop, top cut off; R vs FF
+HOOK	p1.L1.b20	UNCLEAR	M	u with a long lead-in stroke from lower left: matches the LOWER sign of cell T, which is not in the candidate list
+HOOK	p1.L4.b10	UNCLEAR	M	u with a long lead-in stroke from lower left: matches the LOWER sign of cell T, which is not in the candidate list
+HOOK	p1.L6.b18	UNCLEAR	M	u with a long lead-in stroke from lower left: matches the LOWER sign of cell T, which is not in the candidate list
+HOOK	p1.L7.b18	UNCLEAR	L	u shape without lead-in; no listed candidate
+HOOK	p1.L2.b8	UNCLEAR	L	curl at top then a long stroke down to lower right; between the A arc and the H hook
+HOOK	p1.L3.b20	UNCLEAR	L	curl at top then a long stroke down to lower right; between the A arc and the H hook
+HOOK	p2.L2.b4	UNCLEAR	L	curl at top then a long stroke down to lower right; between the A arc and the H hook

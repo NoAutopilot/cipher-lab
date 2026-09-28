@@ -1,0 +1,117 @@
+code	label	cell	conf	why
+SEVEN	p1.L1.b13	E	H	diagonal stem from bar end to lower left
+SEVEN	p1.L1.b19	I	H	flat top bar with straight vertical stem
+SEVEN	p1.L1.b26	E	H	diagonal stem
+SEVEN	p1.L2.b15	E	H	diagonal stem
+SEVEN	p1.L2.b21	E	H	diagonal stem, mark at left may be the leading dot
+SEVEN	p1.L3.b9	I	H	bold bar and heavy vertical stem
+SEVEN	p1.L3.b12	E	H	long diagonal stem, mark at left
+SEVEN	p1.L3.b19	I	H	flat bar, straight vertical stem
+SEVEN	p1.L3.b28	I	H	flat bar, straight vertical stem
+SEVEN	p1.L4.b6	I	H	flat bar, straight vertical stem
+SEVEN	p1.L4.b14	E	M	thin diagonal stem, faded bar
+SEVEN	p1.L4.b16	I	L	crop holds a small 7 with vertical stem beside a 9 with J hook; target sign ambiguous
+SEVEN	p1.L5.b6	I	M	short bar with vertical stem; stem does not cross bar so not the Nulla 4-form
+SEVEN	p1.L6.b4	I	M	flat bar, near-vertical stem curving slightly
+SEVEN	p1.L6.b16	E	H	diagonal stem
+SEVEN	p1.L7.b2	E	H	diagonal stem
+SEVEN	p1.L7.b25	I	M	bold vertical stem; blob at left could be a dot
+SEVEN	p1.L7.b28	E	H	diagonal stem
+SEVEN	p2.L1.b3	E	H	diagonal stem
+SEVEN	p2.L1.b12	I	M	vertical stem rising slightly above bar end
+SEVEN	p2.L1.b15	E	H	long thin diagonal stem
+SEVEN	p2.L1.b30	I	H	flat bar, straight vertical stem
+SEVEN	p2.L1.b33	E	H	steep but diagonal stem
+SEVEN	p2.L2.b15	I	H	flat bar, vertical stem with small loop at foot
+SEVEN	p2.L2.b18	E	H	diagonal stem
+NINE	p1.L1.b22	E	H	straight near-vertical stem
+NINE	p1.L1.b23	Nulla	H	long tail sweeping to lower left
+NINE	p1.L1.b30	Nulla	L	9 whose stem hooks left at the foot (curled); hook may belong to a neighbour
+NINE	p1.L2.b4	E	M	wide loop, short straight stem
+NINE	p1.L2.b18	E	H	straight stem
+NINE	p1.L3.b3	E	H	straight stem
+NINE	p1.L3.b25	E	H	straight stem
+NINE	p1.L4.b16	UNCLEAR	L	crop shows 7 and a 9 with J hook; cannot tell target or whether hook is its tail
+NINE	p1.L4.b26	E	H	straight stem
+NINE	p1.L5.b11	E	H	straight stem
+NINE	p1.L6.b13	E	H	straight stem
+NINE	p1.L7.b11	E	H	straight stem
+NINE	p1.L8.b9	E	M	long straight stem, crowded crop
+NINE	p2.L1.b5	E	M	straight stem slanting moderately left, not a sweep
+NINE	p2.L1.b14	Nulla	H	long curved tail sweeping to lower left
+NINE	p2.L1.b20	E	H	straight stem
+NINE	p2.L1.b28	E	H	straight stem
+EIGHT	p1.L2.b10	O	H	closed plain 8
+EIGHT	p1.L3.b4	R	H	small top loop, open S body, bottom loop
+EIGHT	p1.L4.b17	O	H	closed plain 8
+EIGHT	p1.L5.b8	O	H	closed plain 8
+EIGHT	p1.L5.b18	R	H	open S-shaped 8 with small top loop
+EIGHT	p1.L6.b6	O	M	closed 8, top loop slightly open
+EIGHT	p1.L6.b23	O	H	closed plain 8
+EIGHT	p1.L7.b1	R	M	top loop, long diagonal link, bottom loop; no bar
+EIGHT	p1.L7.b9	O	H	closed plain 8
+EIGHT	p1.L7.b21	O	M	closed 8, faint top
+EIGHT	p1.L7.b26	O	M	closed 8, narrow
+EIGHT	p2.L1.b9	O	H	closed plain 8
+EIGHT	p2.L1.b26	O	H	closed plain 8
+EIGHT	p2.L2.b16	UNCLEAR	L	crossing strokes like an x/lambda, not an 8 form of any candidate
+EIGHT	p2.L2.b17	R	M	8-like loops with tail sweeping out to lower left
+TWO	p1.L2.b13	O	H	round 2 / reversed s with upturned tail
+TWO	p1.L3.b10	O	H	round 2
+TWO	p1.L3.b16	P	M	3 with bar through it at top of crop
+TWO	p1.L4.b12	O	H	round 2
+TWO	p1.L4.b15	UNCLEAR	L	D-like closed bowl with left flourish, matches no candidate
+TWO	p1.L4.b23	O	H	round 2
+TWO	p1.L6.b10	Nulla	H	flat z with long baseline
+TWO	p1.L6.b11	O	H	round 2
+TWO	p1.L6.b14	Nulla	M	curved top, flat baseline extending right
+TWO	p1.L6.b15	O	H	round 2
+TWO	p1.L6.b20	O	H	round 2
+TWO	p1.L7.b4	O	H	round 2
+TWO	p1.L7.b15	O	H	round 2
+TWO	p1.L7.b19	O	H	round 2
+TWO	p1.L7.b24	Nulla	H	flat z with baseline and dot above right as in print
+TWO	p1.L8.b6	Nulla	M	flat z with long baseline
+TWO	p1.L8.b7	O	H	round 2
+TWO	p1.L8.b16	O	H	round 2
+TWO	p2.L1.b13	O	H	round 2
+TWO	p2.L1.b19	Nulla	M	z with flat baseline, no curled ends of cell Z
+TWO	p2.L2.b13	UNCLEAR	L	D-like bowl with a cross stroke, matches no candidate
+HOOK	p1.L1.b14	T	M	small loop with long tail rising right
+HOOK	p1.L1.b20	T	M	mu-shape with long lead-in tail: matches the LOWER sign of cell T, not the two upper ones
+HOOK	p1.L1.b27	M	M	gamma with curled ram-horn arms and large loop
+HOOK	p1.L1.b28	A	H	small hook at left then wide open arc rising right
+HOOK	p1.L1.b31	A	M	hook at upper left then long descending arc
+HOOK	p1.L2.b5	UNCLEAR	L	tall top loop with long stroke descending right; no candidate fits
+HOOK	p1.L2.b7	T	H	loop at lower left, stem rising up-right to a blob
+HOOK	p1.L2.b8	A	L	blotted hook at top left with stroke down-right, arc truncated
+HOOK	p1.L2.b20	A	H	small loop then deep open arc rising right
+HOOK	p1.L2.b26	U_V	H	long f with crossbar
+HOOK	p1.L3.b2	M	M	gamma with curled arms and large loop
+HOOK	p1.L3.b8	T	M	loop at lower left, stem rising up-right
+HOOK	p1.L3.b20	A	L	hook at top left with straight stroke down-right
+HOOK	p1.L3.b22	T	H	loop at lower left, stem rising up-right to blob
+HOOK	p1.L4.b10	T	M	mu-shape with long lead-in tail (lower sign of cell T)
+HOOK	p1.L4.b20	A	H	small loop then wide open arc
+HOOK	p1.L4.b25	C	L	loop with a stroke crossing it and stem rising right
+HOOK	p1.L5.b2	A	H	small loop then wide open arc
+HOOK	p1.L5.b5	T	M	e-like loop with long tail rising right
+HOOK	p1.L5.b14	A	H	small loop then wide open arc
+HOOK	p1.L5.b16	T	L	blotted loop open to right; diagonal line likely a neighbour
+HOOK	p1.L5.b17	T	H	loop at lower left, stem rising up-right to blob
+HOOK	p1.L5.b19	C	M	loop crossed by a horizontal stroke, stem rising right
+HOOK	p1.L6.b17	T	H	loop at lower left, stem rising up-right to blob
+HOOK	p1.L6.b18	T	M	mu-shape with long lead-in tail (lower sign of cell T)
+HOOK	p1.L6.b21	U_V	H	long f with crossbar
+HOOK	p1.L6.b25	A	H	small loop then wide open arc
+HOOK	p1.L7.b7	T	L	large e-loop with thin tail rising right
+HOOK	p1.L7.b18	UNCLEAR	L	u-shape with two uprights, no candidate fits
+HOOK	p1.L7.b22	M	M	gamma with curled arms and large loop
+HOOK	p1.L8.b15	A	H	small loop then wide open arc
+HOOK	p1.L8.b17	M	M	gamma with curled arms and large loop
+HOOK	p1.L8.b23	A	H	small loop then wide open arc
+HOOK	p2.L1.b24	T	L	e-loop with thin tail rising right
+HOOK	p2.L1.b27	R	M	S-shaped stroke ending in bottom loop, forked top
+HOOK	p2.L2.b3	U_V	M	long f form with top loop, crossbar not visible
+HOOK	p2.L2.b4	A	M	hook at top left with long arc down-right
+HOOK	p2.L2.b10	A	M	small loop then long descending arc

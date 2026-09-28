@@ -1838,3 +1838,68 @@ change; the words solved/cracked/first/new are not used for anything this projec
 `keys/key_domnina_2016_atlasmap.tsv`, `passes/keymatch_pass{K,L}.tsv`, `passes/key_domnina_test.py`. **Cost:** 2
 Opus vision calls (about 212k tokens) plus this runner's turns and about 12 minutes of CPU for the variant battery
 -- recorded as 5.0 USD (the est). No requests, no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H38 (28 Sept 2026, 06:16-06:2x UTC) -- the lumped codes split by shape; the decode starts to read
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H38: split SEVEN, NINE, EIGHT, TWO and HOOK -- the atlas codes
+that each cover two or more of Domnina's cells -- on the signs' own crops, re-run the H35 test, then a graded decode.
+
+**Method.** The 4x per-sign crops were regenerated (`glyphs/montage.py`, 261 crops; scikit-image was missing in this
+container) and five sheets built, one per code, every v4 sign of that code at 4x with its page.line.box label (SEVEN
+25, NINE 17, EIGHT 15, TWO 21, HOOK 38 = 116 signs). Two blind Opus passes (`passes/split_pass{M,N}.tsv`, about 122k
+and 129k tokens) sorted each sign among the named candidate cells of Domnina's table by shape only (the brief forbade
+frequencies and word guesses; the cells were given as crops). `passes/build_v5_split.py`: both passes name the same
+cell -> the sign becomes CODE_CELL at AB; otherwise it keeps the lumped code. Agreement: SEVEN 23/25 (E 13, I 10),
+NINE 16/17 (E 13, Nulla 3), EIGHT 14/15 (O 10, R 4), TWO 19/21 (O 13, Nulla 5, P 1), HOOK 27/38 (A 10, T 8, M 4,
+U/V 3, C 1, R 1) -- **99 of 259 signs re-coded**, `passes/letter_codes_v5.tsv`, `passes/ciphertext_v5.txt`,
+`keys/key_domnina_2016_atlasmap_v5.tsv` (the H35 map plus one row per sub-code). Both passes flagged the same
+things: the E/I split of SEVEN rests on stem slant alone (the print's dots fall outside the crops), box p1.L4.b16
+holds two signs (a 7 and a J-tailed 9) and sits on two sheets, three HOOK signs are the LOWER T form (the mu with a
+lead-in) which the brief had not offered, and the D-like bowls under a bar (p1.L4.b15, p2.L2.b13) match no cell.
+
+**Registered re-test (`passes/key_domnina_test.py`, the same shuffled-value control, 200 shuffles, seed 7).** The row
+registered that the phrase distance and the bigram test must both improve for the split to be adopted; both did:
+
+| statistic | v4 map (H35) | **v5 map (H38)** | v5 shuffled mean (sd), p05 / p95 | shuffles at or beyond v5 |
+|---|---|---|---|---|
+| signs with a value / null / unmapped | 59% / 8% / 33% | **81% / 11% / 8%** | | |
+| mean log unigram | -2.928 (1/200) | -2.794 | -2.985 (0.084), -3.125 / -2.854 | 2/200 |
+| mean log bigram | -3.059 (17/200) | **-2.870** | -3.459 (0.217), -3.851 / -3.116 | **0/200** |
+| phrase best-window edit distance | 4 (0/200, mean 8.2) | **3** | 13.40 (0.88), 12 / 15 | **0/200** |
+
+The phrase window (position 41, the same place): `l a g u b m e r n a t ? o n e d g s p a g n i ?` -- the u after
+lag and the e of "-tione" now come from HOOK_U_V and SEVEN_E, the null 9 is gone, EIGHT_R gives the r. The three
+remaining misses are an m (HOOK_M, both passes M-confidence) where the print has nothing, a g (PHI) where the phrase
+has i, and a HOOK still unsorted before "one".
+
+**PHI: one further split the passes themselves pointed to.** H35's two matching passes gave PHI as their first or
+second choice for BOTH Domnina's G first form (the crossed phi) and her I first form (the curl with a hook). The
+decoded lines make the same point without the crib: `resolut g one` (L07), `d g spagni` (L03), `b g sogni` (L09)
+read as Italian only with i. Run as a variant with its own control (`keys/key_domnina_2016_atlasmap_v5_phi_i.tsv`):
+unigram -2.656 (0/200), bigram -2.592 (0/200), phrase distance 3 (0/200), window `l a i u b m e r n a t ? o n e d i s
+p a g n i ?`. It is not adopted as a fixed value -- PHI plainly covers both g and i (`el iuernatore di Bre` in L09
+wants g) and needs its own shape split (H40); the variant is reported as an S-grade hypothesis with the control.
+
+**What the decode reads under the v5 map with PHI as i (context for the orchestrator; each line as decoded, nulls
+dropped, ? = unsorted HOOK or unmapped; NOT a graded reading -- no decode file is written and no token is graded):**
+L02 end + L03 `... l a i u | b m e r n a t ? o n e d i s p a g n i ?` -- "la gubernatione d'Ispagni[a]" (Tomokiyo's
+phrase, with the m as the one intruder); L07 `r e s o l u t i o n e d c o s ? o r o m i i o r e` -- "resolutione
+d[i] cos[e] ... [ma]g[g]iore"; L08 `d i que ? o e l ? a l a d o m a n a a u u a` -- "di que[st]o ... a la doman[d]a";
+L09 `s e e b i s o g n i o e l i u e r n a t o r e d i b r e` -- "se bisogni o el g[o]uernatore di Bre[scia]" (the
+plain text below names "il gobernatore di Brescia mio signore et amico", H33b); L04 `d i n i l i n a ? i o n e ...`
+(a word in -tione); L10 `u ? a n d a h a i o u i o r e r i`. Lines 1, 5 and 6 do not yet read. Roughly half the
+letter's words are visible; the residue sits in HOOK's eleven unsorted signs, PHI's g/i, JHOOK (m?), and the
+transcription's own remaining errors (v4 pair agreement was 93%).
+
+**Grades (rule 4, for the codes, not yet for tokens):** the values come from a published key (Domnina 2015/2016,
+`published` in rule 10's key-source vocabulary) matched to the atlas by two blind passes -- H for the AB-matched
+codes once a decode file exists; PHI->i and any HOOK sub-code settled by one pass only are S with the control above.
+The decode file itself, `tools/decode_key.py` with a decode.json and per-token grades, is H39's job (this step's
+box). **Controls:** the shuffled-value battery on all three statistics for v5 and for the PHI variant; the two
+sorting passes' agreement per code as the transcription control; the registered improve-or-reject criterion met.
+Rule 10 wording: control-backed partial decode under Domnina's published key; the words solved/first/new are not
+used. **Files:** `passes/split_pass{M,N}.tsv`, `passes/build_v5_split.py`, `passes/letter_codes_v5.tsv`,
+`passes/ciphertext_v5.txt`, `keys/key_domnina_2016_atlasmap_v5.tsv`, `keys/key_domnina_2016_atlasmap_v5_phi_i.tsv`;
+`keys/key_spinelli_c1515.tsv` given a SUPERSEDED header (H6's finding). **Cost:** 2 Opus vision calls (about 251k
+tokens) plus this runner's turns -- recorded as 6.0 USD (the est). No requests, no credentials, no AskUserQuestion,
+no other target touched.
