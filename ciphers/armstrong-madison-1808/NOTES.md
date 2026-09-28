@@ -2570,3 +2570,62 @@ needs one call each (CLAUDE.md Usage 6: price per pass, not per frame).
 Files: `h29/MANIFEST.tsv`, `h29/band_cut.py`, `h29/check_we028.py`, `h29/append_stats_real.py`, `h29/reads/`
 (4 TSV), `h29/erving_groups.tsv`, `h29/summary.txt`, `h29/controls.txt`; `design/real_extra.tsv`,
 `design/stats_real.tsv` (one row added), `design/design_stats.py` (real_extra hook).
+
+## Campaign step H31 (28 Sept 2026, 02:42-02:55 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H31 (from
+H26): finish the NARA whole-reel sweeps at a scale that can catch a short coded enclosure -- M30 reel 11 (Pinkney,
+Apr 1806-Dec 1808) frame by frame, M31 reel 12 frames 1-480 (Erving, Aug 1805-Apr 1808), M31 reels 11 and 13; the
+control is the 5-group WE028 run on M30 reel 11 frame 65 (Pinkney to Madison 24 Jan 1808, H26 known answer), which
+must be flagged blind at the sweep scale before any negative is logged.
+
+**Route (new for this target: the whole-reel PDF, not per-frame IIIF).** `catalog.archives.gov/medialz/.../M30-011.pdf`
+etc. answer plain curl with the browser User-Agent at about 20 MB/s (four reels, 609 MB, 13 seconds; `h31/MANIFEST.tsv`),
+and `pymupdf` (installed this session) rasterises a page in about 0.15 s -- 1,749 frames on disk in under a minute, no
+per-frame request, no rate question. PDF page index i is microfilm frame i+1 (page 64 is pixel-identical to IIIF frame
+0065, `h31/control_compare.jpg` in scratch). Sweep scale: `h31/sheets.py` puts two frames side by side at 700 px each
+(sheet 1408 px wide, under the vision long edge of about 1568 px, so nothing is silently downscaled -- a 2x2 sheet at
+2266 px tall would have been shrunk to about 480 px per frame, H26's failing scale). Four blind Sonnet calls of 50-54
+sheets each: M30 reel 11 frames 1-108, 109-216, 217-324; M31 reel 12 frames 381-480 (the 1807 span nearest H26's
+400-px sweep of 481-628). M31 reel 12 frames 1-380 and reels 11 and 13 were NOT swept (four-call limit); their PDFs
+refetch in seconds.
+
+**CONTROL PASS.** The screener of frames 1-108, told nothing of frame 65, flagged it alone: "run 184.1779. 1023.1038.654
+mid-sentence in otherwise clear prose" -- the digits misread at 700 px (the run is 134 1379 1123 1028 454) but the
+frame flagged, which is what a sweep needs. So a "none" from this instrument at this scale is a test for a run of
+five groups in clear prose; it says nothing about a run of one or two.
+
+**M30 reel 11, 324 frames: no coded frame beyond the control.** 317 none, 6 blank/target cards, 1 code (frame 65).
+The screeners' notes name the ordinary numerals they set aside (enclosure numbers, tariff tables at 231-232 and 319,
+crew lists, "150,000 persons"). Pinkney's 1808 despatches to Madison carry no second coded item and no enclosure
+from Armstrong in cipher (`h31/reads/m30r11_*.tsv`).
+
+**M31 reel 12 frames 381-480: ten frames of dense code, one low-confidence flag.** Frames 389, 390, 403, 404, 408,
+409, 426, 427, 428, 429 flagged as dense numeral runs with interlinear words; 397 flagged low ("1607.1794 n.62 / 1603
+n.91" in a corner, an archival reference by the screener's own reading, not looked at further). One look at frame 403
+at 1500 px (this runner): a fully coded despatch on a faint microfilm, every group glossed interlinearly by a period
+hand -- "no doubt in the minds of those best acquainted with the intrigues of the court ... the object of the Prince of
+Peace ... the Prince of Asturias is under the special protection of the Emperor ... Buonaparte ... insurrection" -- the
+Escorial affair of October-November 1807, Erving to Madison. Its values (1651 and 133 the commonest, then 1657, 244,
+1578, 1104, 628, 65 ...) are the values of the "Cypher of the Legation" letter of 24 Mar 1807 that H26 read at n=211
+(1651 x17 and 133 x7 are that letter's two commonest values too; 5 of the 18 values noted on frame 403 occur there),
+so this is the same Madrid legation table, now with about ten frames of usage and a full period decode -- and NOT the
+target's code: H26 screened that table MISS at n=211, and the target's 369 groups contain no 1651 and no 133 at all
+(2 of the 18 frame-403 values appear in the target, once each, at chance). No transcription was made (no vision call
+left, and a screen of this table against the target is already on file); the frames are a pool for the record.
+
+**Verdict for the campaign.** Done, control-backed for M30 reel 11 (no coded enclosure at the five-group scale, control
+flagged blind) and for M31 reel 12 frames 381-480 (coded frames found, identified as the Madrid legation cipher already
+screened out). What it adds: the PDF route and `h31/sheets.py` make the remaining 1,177 unswept frames (M31 reel 12
+1-380, reels 11 and 13) a one-call-per-100-frames job; and the Erving-Madison legation cipher now has a pool of about
+ten frames with a period decode (frames 389-390, 403-404, 408-409, 426-429; probably three or four despatches of
+1807), a key-recovery candidate in its own right for the scout (a US diplomatic private cipher of 1807 with its
+plaintext beside it), filed as H32 for a transcription-plus-screen at n of several hundred, not for the target. No
+reading, no class change; rule 10: the letters are catalogued NARA despatches and the decode is the period's own.
+
+Requests: catalog.archives.gov 5 (four PDFs, one IIIF frame), browser User-Agent per the playbook, 1.6 s apart, no
+429/403; no other host (`corr/requests.log`). Vision: 4 of 4 subagent calls (Sonnet, 163-177k tokens, 2.5-5 minutes
+each) plus this runner's three looks (the control comparison, frame 403, one sheet check). Cost: get_session carries
+no cost figure; four Sonnet calls of that size are about 5 USD by H21's rate plus this runner's reads -- `--spend`
+records the row's 6. Files: `h31/MANIFEST.tsv`, `h31/sheets.py`, `h31/reads/` (4 TSV, one row per frame); PDFs,
+sheets and native renders in scratch only (609 MB), refetch per the manifest.

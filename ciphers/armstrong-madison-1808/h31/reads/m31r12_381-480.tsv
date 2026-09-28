@@ -1,0 +1,101 @@
+frame	flag	note
+381	none	clear prose, signed letter, no numerals beyond date
+382	none	clear prose, dispatch ref nos (No.1,4,5,9,20,28,29) not code
+383	none	clear prose diplomatic letter re captured vessels
+384	none	clear prose, continuation, ref nos only
+385	none	clear prose, ship-capture statistics (counts of vessels)
+386	none	cover/address leaf + Spanish copy letter, clear prose
+387	none	clear prose Spanish, closing/signature
+388	none	clear prose, No.34
+389	code	dense numeral run in right-hand column, ~14 numbers (e.g. 677.844.476.056.365.581...226.855.363.331)
+390	code	numeral run mid-first-column, ~15+ numbers (895.677.704.870.1387...1236.916; 226.855.363.331 lower down)
+391	none	Spanish prize-declaration copy, clear prose
+392	none	accounting/inventory-style list with dates and item numbers, not cipher
+393	none	clear prose letter to Prince Generalissimo
+394	none	clear prose, refs "39th Article"
+395	none	clear prose, closing formula
+396	none	clear prose, fraction "81 855/1000 parts" (cargo share), not code
+397	code	bottom-left corner marks "1607.1794 n.62 / 1603 n.91" -- likely archival/legajo ref, closer look warranted
+398	none	clear prose Spanish
+399	none	cover leaf + letter, clear prose
+400	none	clear prose, continuation
+401	none	clear prose, numbered paragraphs (5,6) and counts (32 guards)
+402	none	clear prose, counts "40 or 50", "no.36"
+403	code	interlinear numbers scattered above/below words throughout page, dozens (1899,1203,1509,1464, etc.)
+404	code	interlinear numbers scattered throughout page, dozens (1509,1203,1546,1231,504,665, etc.)
+405	none	clear prose letter No.35
+406	none	clear prose, dates only (26th,28th,29th)
+407	none	clear prose
+408	code	dense numeral runs across whole page, dozens (153.1031.1237...1298.500.1651...)
+409	code	dense numeral runs continue at top of page, dozens
+410	none	clear prose cover letter No.36
+411	none	clear prose, ship/troop counts (12, 18,000)
+412	none	clear prose letter; torn narrow strip at right edge with faint illegible marks
+413	none	clear prose Spanish
+414	none	clear prose diplomatic notes
+415	none	clear prose
+416	none	clear prose, duplicate text of 415
+417	none	clear prose Spanish
+418	none	clear prose
+419	none	clear prose
+420	none	clear prose
+421	none	clear prose
+422	none	clear prose, troop counts (40,000/80,000), dates
+423	none	clear prose, dollar amounts ($30,000/$36,000) and dates
+424	none	clear prose, blank second leaf
+425	none	clear prose, closing/signature, ink blots
+426	code	dense numeral run through right page, dozens ("supposed project 133.1651.153...", "1651.789.1084", "1651.730.found to go...")
+427	code	dense numeral code continues across whole page, dozens
+428	code	dense numeral code continues across whole page, dozens
+429	code	continuation of coded letter, numbers scattered/faint on smudged leaf
+430	none	clear prose letter No.37
+431	none	clear prose, money figure ($500,000) and hours (26)
+432	none	clear prose, date "21st of October"
+433	none	clear prose
+434	none	clear prose No.38
+435	none	blank/faint leaf, mostly illegible offset text
+436	none	clear prose
+437	none	clear prose No.30 + pasted printed Spanish decree fragment
+438	none	clear prose
+439	none	clear prose, troop count "80,000"
+440	none	clear prose
+441	none	printed decree (Spanish), clear prose
+442	none	printed decree, numbered articles 1-3
+443	none	printed decree numbered article 4 + prose letter No.1
+444	none	clear prose translation of decree
+445	none	clear prose Spanish
+446	none	clear prose Spanish
+447	none	clear prose Spanish
+448	none	clear prose
+449	none	clear prose No.40
+450	none	clear prose
+451	none	clear prose
+452	none	clear prose No.31 Private
+453	none	clear prose
+454	none	clear prose Spanish; faint docket marks on address leaf, not code
+455	none	clear prose
+456	none	clear prose Spanish
+457	none	clear prose Spanish
+458	none	clear prose No.4
+459	none	clear prose
+460	none	clear prose
+461	none	clear prose, duplicate copy
+462	none	clear prose French
+463	none	clear prose
+464	none	clear prose
+465	none	clear prose
+466	none	table of American vessels/captains/destinations (names only, no numerals)
+467	none	clear prose Spanish
+468	none	clear prose Spanish
+469	none	clear prose
+470	none	clear prose
+471	none	clear prose Spanish
+472	none	clear prose No.12
+473	none	clear prose
+474	none	clear prose
+475	none	clear prose
+476	none	clear prose, duplicate of 475
+477	none	clear prose
+478	none	clear prose
+479	none	clear prose
+480	none	clear prose, closing letter
