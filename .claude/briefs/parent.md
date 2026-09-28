@@ -195,6 +195,12 @@ SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and r
 TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
 line for the owner, not a close. The 48-hour number is verified readings per dollar.
 
+## Progress bars in every recap (owner's request, 28 Sept 2026 18:1x UTC)
+
+Every reply to the owner shows one bar per live target, in a code block, from the record only:
+`<target>  [#####.....] <firm>/<total> read   Found Key Read A1 A2 Counted Sent`
+The bar is the share of the letter's cipher tokens read at grade S or better (the audit's own counts; two-way or M-grade tokens are not firm). The stage row marks each step done (x), in progress (~) or not started (.): Found (transcribed), Key (none / partial / holds), Read (any audited passage), A1 and A2 (first and second audit), Counted (in status.json), Sent (outreach sent by the owner). A bar or stage moves only when a file on disk changes it; a stalled target shows the same bar twice, and that is the signal.
+
 ## Re-arm first (28 Sept 2026, after the 06:45-14:15 UTC outage)
 
 At every check-in the orchestrator re-arms its own next check-in (update_trigger, run_once_at one hour out) BEFORE any other work, then updates the prompt at the end. On 28 Sept this account hit its Fable limit mid-check-in, the re-arm at the end of the turn never ran, and nothing woke the orchestrator for about 7.5 hours while every runner sat failed. A runner whose get_session shows status_bucket FAILED with a model-limit message is replaced at once on the model the owner names (Opus 5.5 from 14:17 UTC 28 Sept).

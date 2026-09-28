@@ -1326,3 +1326,8 @@ the end of every wake.
 | 28 Sept 2026 | OUT-CHECK-ARM | session_01B28UUnvadEXEFPJAHiJXXn | owner | Opus 5.5 | cap 8 | running from 17:15 | fact check of Armstrong requests |
 | 28 Sept 2026 | ARM-KEYHUNT-2 | session_015U9LQgDbMrjdSZ1UTuXVif | owner | Opus 5.5 | cap 40 | running from 17:15 | 1805 Monroe-cipher specimen hunt |
 | 28 Sept 2026 | VERIFY-CEPPO-1 | session_01EpWWnYNwp1MkRSRriZy2pH | owner | Opus 5.5 | cap 25 | running from 17:16 | Birago-Nevers f.11r audit |
+| 28 Sept 2026 | OUT-CHECK-ARM | session_01B28UUnvadEXEFPJAHiJXXn | owner | Opus 5.5 | 3.68 | done 17:30, archived | NYPL/NYHS fixed, FDR clean |
+| 28 Sept 2026 | ARM-KEYHUNT-2 | session_015U9LQgDbMrjdSZ1UTuXVif | owner | Opus 5.5 | 4.79 | done 17:39, archived | no 1805 specimen; Monroe editors draft |
+| 28 Sept 2026 | VERIFY-CEPPO-1 | session_01EpWWnYNwp1MkRSRriZy2pH | owner | Opus 5.5 | 6.72 | done 17:35, archived | held: N3, recovered fragments |
+| 28 Sept 2026 | VERIFY-CEPPO-2 | session_01DTnzLDCCBHdGCCGdSxcNZv | owner | Opus 5.5 | cap 25 | running from 18:15 | adversarial second audit |
+| 28 Sept 2026 | HARVEST-C | session_01DJjsSDcdztEJ9PkRS82vkY | owner | Opus 5.5 | cap 50 | running from 18:15 | other Birago letters, Ceppo key |
