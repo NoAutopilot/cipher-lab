@@ -1,0 +1,12 @@
+# f.61r skeleton with attestation tags -- campaign H76, 28 Sept 2026, scripts/f61attest.py from scripts/f61_skeleton.txt (H58). NOT a reading: no letter chosen within any pair.
+# tags: {P} both cell letters period-attested by a blind tile sort (SBS b/o H65/H67, 4TRI c/p H69); {P1:x} one letter so attested (VBAR_A t, VBAR_B s, H70, one hand); {pub} published key (ZHOOK); {K} both letters in the period key's top 3 for the class on a leaf with n>=5; {K1} one letter; {F} our f.61 fit only.
+# counts over lettered/paired positions: P 13, P1 10, pub 3, K 39, K1 2, F 2 (of 69); L10: P 2, P1 2, K 4 (of 8)
+L01: - - T:a{K} T:v{K} T:e{K} T:c{P} - - [e/r]{K} [g/t]{P1:t} - [d/q]{K}
+L02: [e/r]{K} ?
+L03: - - - T:e{K} T:s{P1:s} T:t{P1:t} T:c{P} T:a{K} - T:p{P} - T:a{F} [a/n]{K} T:b{P} T:l{K}
+L04: - ?
+L05: - - T:t{P1:t} T:r{K} T:o{P} T:p{P} - - T:a{K} T:v{K} T:a{K} T:n{F} [a/n]{K} T:c{P} T:e{K} - T:e{K} T:s{P1:s}
+L07: - - T:j{pub} T:a{K1} T:l{K} - T:o{P} T:u{K} T:s{P1:s} - T:i{pub}
+L08: T:e{K} T:a{K} - T:u{K} T:b{P} T:e{K} T:a{K} T:u{K} - - T:p{P} T:e{K} T:r{K} T:e{K}
+L10: [l/y]{K} - [e/r]{K} [g/t]{P1:t} [e/r]{K} [b/o]{P} [f/s]{P1:s} [h/u]{K} - - [b/o]{P} - -
+L11: T:m{K1} T:e{K} T:l{K} T:e{K} T:n{K} T:t{P1:t} T:e{K} [a/n]{K} T:n{K} T:o{P} T:i{pub} T:t{P1:t}

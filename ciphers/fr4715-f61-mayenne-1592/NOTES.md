@@ -1902,3 +1902,15 @@ significant at this n and left unexplained. With this, the tile sort has one cle
 free-sort negatives (H71 e/r, H73 a/n) beside its four PASSes (H65 SBS o, H67 SBS b, H69 4TRI c/p, H70 VBAR s/t, the last
 thin): it does not manufacture a letter split on a shared-symbol cell, which is what the PASSes needed. No reading, no
 class change.
+
+## Campaign step H76 (28 Sept 2026, 14:54-14:57 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+For the verifier page (H66): `scripts/f61attest.py` (a sibling of f61skeleton.py rather than an option on it, so the
+H58 skeleton is untouched; both `--check` fresh) tags every lettered or paired position of `scripts/f61_skeleton.txt`
+by what its CELL rests on -- {P} both letters attested by a blind tile sort against the family period gloss (SBS b/o
+H65/H67, 4TRI c/p H69), {P1:x} one letter (VBAR_A t, VBAR_B s, H70, one hand), {pub} published (ZHOOK), {K} both letters
+in the period key's top 3 for the class on a leaf with n >= 5, {K1} one letter, {F} our f.61 fit only. Output
+`scripts/f61_skeleton_attest.txt`: of 69 positions, P 13, P1 10, pub 3, K 39, K1 2, F 2; L10's 8 pairs: P 2 ([b/o] x2),
+P1 2 ([g/t] t, [f/s] s), K 4 ([l/y], [e/r] x2, [h/u]). The tag grades the cell, not a letter choice within it, and
+not Tomokiyo's letters (still grade M as a reading); the two F positions are his a and n on C6 signs, a class his own
+markup elsewhere leaves as a dash (H44's null list). No reading, no class change.
