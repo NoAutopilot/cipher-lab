@@ -1,0 +1,12 @@
+span	line	pos	tomokiyo	i_or_j
+S4a	L07	3	j	yes
+S4a	L07	11	i	yes
+S5	L11	11	i	yes
+T1	F108_L02	4	i	yes
+T1	F108_L02	8	i	yes
+T1	F108_L02	23	j	yes
+T1	F108_L02	26	i	yes
+T1	F108_L02	35	i	yes
+T2	F108_L03	32	j	yes
+T2	F108_L03	40	i	yes
+i or j at 10/10 ZHOOK positions

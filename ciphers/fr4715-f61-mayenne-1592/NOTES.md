@@ -3528,3 +3528,20 @@ L20-L33, where both passes now agree on signs they split before:
 The row keeps its scope: a period key in Desportes's hand. Cross-hand use is H179/H180/H181's question (only VBAR_A t and the form-B
 bracket l have been carried over and checked). The CROSS figure is not proposed for f.61's CROSS: that is a different glyph by the
 atlas ("plus with a stroke rising to the upper right") and not tested. Nothing merged.
+
+## Campaign step H182 (28 Sept 2026, 23:20 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- ZHOOK: the period letter i against Tomokiyo's letters (script-only)
+
+Test key `family/key_period_v4n176z.tsv` = H179's `key_period_v4n176.tsv` + ZHOOK i/x from f.176r's period decipherment (H177b stage 2b:
+the ZHOOK both passes agree on reads i 23, x 3 of 46; the C43/ZHOOK-split sign i 35 of 48). A test key, not v4, not a merge.
+`test_period_key.py --key key_period_v4n176z.tsv --collapse-ebr --min 2 --frac 0.1 --sbs --perms 200`
+(`family/test_period_key_result_v4n176z_frac0.1_sbs_p200_min2.txt`): **f.61 five spans 50/55** (v4n176 48; permuted p95 0.436), f.108r
+overlay 62/84 (v4n176 57). `family/h182_zhook.py` (`--check`, `h182_zhook_result.txt`) lists Tomokiyo's letter at every ZHOOK position
+under that alignment: **i or j at 10/10**. On f.61: L07/3 j, L07/11 i, L11/11 i. On f.108r: T1 L02/4, 8, 26, 35 i and L02/23 j; T2 L03/40 i,
+L03/32 j. i and j are one letter in the period's spelling (the scorer keeps them apart, so the two j positions do not add to 50/55).
+
+Reading for the verifier: the rare class ZHOOK, unread under v4, has a period letter from Desportes's decipherment (i, cell partner x in
+the table) that equals Tomokiyo's published letter at every ZHOOK position in both of his read texts. Independence: the period letter is
+not his; his i's come from his own table's i/x cell (published). The glyph link across hands failed its blind tile gate (H178b: Desportes's
+form smaller and more cursive). The letter agreement (10/10, every position, two hands on his side) is the other kind of evidence the link
+needed. H157's sequence-gain lean to i/x on f.108v points the same way. No class change, nothing merged: the verifier grades whether f.61's 3
+ZHOOK tokens may be read i at S/C.

@@ -1,0 +1,4 @@
+key_period_v4n176z.tsv (pairs with n >= 2, n >= 0.1 x the leaf class total): 23 classes with letters: 4HOOK=a/n 4PI=a/d/n/q 4STEM=c/p 4TRI=c/p/t BETA=m/s C43=a/n C6=e CH=e/m DBL=e/r/u EBR=l ELOOP=r H24=i/j/y HASH4=d/q INF=u ISH=l LOOPSTEM1=q/s PHI=e/r RSIGN=c/m/n/p/s/t SBS=b/e/o VBAR_A=g/t VBAR_B=s ZBAR=f/s ZHOOK=i/x
+f.61 five known spans (55): period key 50/55 = 0.909; 200 permuted keys mean 0.285 max 0.527; p95 0.436, permuted keys >= period key 0/200; classes covered 0.84 of signs (uncovered: CA CROSS LL LOOPBAR); per span S1:3/4; S2:9/10; S3:11/12; S4a:5/7; S4b:11/11; S5:11/11
+f.108r overlay letters (84): period key 62/84 = 0.738; 200 permuted keys mean 0.293 max 0.476; p95 0.393, permuted keys >= period key 0/200; classes covered 0.95 of signs (uncovered: OTHER); per span T1:28/39; T2:34/45
+GATE (brief step 5, 0.75 on the 55 known letters): PASS (0.909)
