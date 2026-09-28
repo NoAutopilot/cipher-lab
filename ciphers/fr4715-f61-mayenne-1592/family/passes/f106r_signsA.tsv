@@ -1,0 +1,234 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	PLAIN	m	s1	110	large clear word in the row, reads like '...ons' (start of row; possibly continuation of a word)
+L01	2	PLAIN	m	s1	560	clear word in the row, 'Le'
+L01	3	PLAIN	m	s1	1000	clear word in the row, 'Romand' (large initial loop)
+L01	4	HASH4	m	s1	1410	crossed 4 with double bar below; alt 4STEM
+L01	5	PHI	h	s2	290	figure-8 loops on stem
+L01	6	4STEM	m	s2	510	4 with long crossed stem; alt 4TRI
+L01	7	HASH4	m	s2	770	dense crossed cluster
+L01	8	H24	h	s2	970	'24' sign
+L01	9	VBAR_A	m	s2	1210	R-like: triangle with top bar and long tail to right; alt OTHER
+L01	10	EBR_A	m	s2	1460	E-like bracket, foot bar longer; alt EBR_B
+L01	11	PHI	h	s3	270	loops on stem
+L01	12	VBAR_A	h	s3	495	small triangle with top bar
+L01	13	PHI	h	s3	680	loops on stem
+L01	14	BETA	l	s3	860	tall loop on long stem with h-like foot; alt LOOPSTEM1
+L01	15	4TRI	h	s3	1060	4 over small triangle
+L01	16	VBAR_A	m	s3	1280	R-like with curl below; alt OTHER
+L01	17	C6	m	s3	1510	delta-like loop with hooked top; alt ELOOP
+L01	18	H24	h	s4	340	'24' sign
+L01	19	PHI	h	s4	560	loops on stem
+L01	20	C43	h	s4	750	'43' mark
+L01	21	VBAR_A	h	s4	1000	triangle with bar and tail right
+L01	22	PHI	h	s4	1210	loops on stem
+L01	23	PHI	h	s4	1420	loops on stem
+L01	24	4TRI	m	s5	270	4 over loop/triangle
+L01	25	PHI	h	s5	480	loops on stem
+L01	26	H24	h	s5	700	'24' sign
+L01	27	OTHER	l	s5	950	horizontal bar over two curved stems (pi-like); alt 4PI
+L01	28	VBAR_A	l	s5	1210	blotted triangle with bar, horizontal line running right; alt VBAR_B
+L01	29	BETA	m	s5	1470	large beta-like loop on stem (inside stamp area)
+L01	30	PHI	m	s6	290	pair of loops on stem
+L01	31	4TRI	m	s6	500	4 over small v/hook
+L01	32	HASH4	m	s6	740	dense crossed 4 with stems; alt 4PI
+L01	33	PHI	h	s6	960	loops on stem
+L01	34	PHI	h	s6	1150	loops on stem
+L01	35	4TRI	m	s6	1350	4 over small v/hook, like pos 31
+L01	36	H24	h	s7	245	'24' sign
+L01	37	PHI	h	s7	450	loops on stem
+L01	38	PHI	h	s7	630	loops on stem
+L01	39	DASH	h	s7	800	long horizontal dash, end of row
+L02	1	HASH4	m	s1	110	dense double-loop cluster crossed, tail right; alt PHI
+L02	2	PHI	h	s1	350	pair of loops on stem
+L02	3	H24	h	s1	630	'24' sign
+L02	4	C43	h	s1	850	'43' mark
+L02	5	VBAR_A	h	s1	1080	triangle with top bar
+L02	6	PHI	h	s1	1270	loops on stem
+L02	7	C43	m	s1	1500	4 over 3-shaped tail
+L02	8	4TRI	m	s2	380	4 over small triangle/cross; alt HASH4
+L02	9	C43	h	s2	610	4 over 3
+L02	10	PHI	h	s2	860	loops on stem
+L02	11	H24	h	s2	1070	'24' sign
+L02	12	VBAR_A	m	s2	1310	R-like triangle with long tail right
+L02	13	PHI	h	s3	220	pair of loops on stem
+L02	14	HASH4	m	s3	490	dense double-loop cluster crossed; alt PHI
+L02	15	H24	h	s3	750	'24' sign
+L02	16	PHI	h	s3	975	loops on stem
+L02	17	VBAR_A	m	s3	1200	R-like triangle with bar
+L02	18	VBAR_A	m	s3	1400	small triangle with bar
+L02	19	PHI	h	s4	240	pair of loops on stem
+L02	20	H24	h	s4	540	'24' sign
+L02	21	VBAR_A	m	s4	820	R-like triangle, long tail right
+L02	22	H24	h	s4	1090	'24' sign
+L02	23	C43	m	s4	1370	4 over 3
+L02	24	VBAR_A	m	s5	240	R-like triangle with bar
+L02	25	VBAR_A	h	s5	420	small triangle with bar
+L02	26	C43	h	s5	590	4 over 3
+L02	27	BETA	m	s5	850	tall beta-like loop on long stem
+L02	28	PHI	m	s5	1060	loops with descender
+L02	29	4STEM	m	s5	1260	4/A-shape with stem down; alt 4TRI
+L02	30	VBAR_A	h	s5	1490	small triangle with bar
+L02	31	C43	m	s6	330	4 over 3; long thin vertical stroke just left (probably descender from above), not counted
+L02	32	4TRI	m	s6	590	4 over triangle/cross
+L02	33	4TRI	m	s6	780	4 over triangle/cross
+L02	34	PHI	h	s6	1030	tall loops on stem
+L02	35	ISH	m	s6	1200	closed I with top and foot bars; alt EBR_B
+L02	36	PHI	h	s6	1420	loops on stem
+L02	37	4TRI	m	s7	210	4 over small triangle; thin slanted stroke through left side
+L02	38	C43	h	s7	450	4 over 3
+L02	39	PHI	h	s7	680	loops on stem
+L03	1	ISH	m	s1	100	I with top and foot bars; alt EBR_B
+L03	2	PHI	h	s1	350	loops on stem
+L03	3	VBAR_A	m	s1	580	R-like triangle with bar, tail right
+L03	4	4TRI	m	s1	810	4 over triangle (lower part cut)
+L03	5	RSIGN	l	s1	1020	5-like sign: top bar, stem, bowl; alt OTHER
+L03	6	C43	m	s1	1220	4 over h/3-like tail; alt 4TRI
+L03	7	H24	h	s1	1480	'24' sign
+L03	8	C43	m	s2	350	4 over 3 with extra loop at foot
+L03	9	4TRI	m	s2	590	4 over triangle/cross
+L03	10	VBAR_A	m	s2	840	triangle with bar and tail
+L03	11	PHI	h	s2	1050	loops on stem
+L03	12	VBAR_A	m	s2	1260	R-like triangle with long tail right
+L03	13	4STEM	m	s2	1510	4 on tall vertical with crossed stem; alt HASH4
+L03	14	HASH4	m	s3	460	dense loop cluster crossed
+L03	15	H24	h	s3	700	'24' sign
+L03	16	BETA	m	s3	950	beta with long stem
+L03	17	PHI	m	s3	1160	loop with thick descender, crossed by a clear-word stroke
+L03	18	PHI	h	s3	1380	tall loops on stem
+L03	19	PHI	h	s4	190	large loops on stem with foot curl
+L03	20	4STEM	m	s4	460	4 with long crossed stem; alt 4TRI
+L03	21	PHI	h	s4	720	pair of loops on stem
+L03	22	HASH4	m	s4	960	dense crossed cluster
+L03	23	PHI	h	s4	1210	pair of loops on stem
+L03	24	EBR_A	m	s4	1460	E-like bracket; alt EBR_B
+L03	25	PHI	h	s5	300	pair of loops on stem
+L03	26	H24	h	s5	560	'24' sign
+L03	27	HASH4	m	s5	780	dense crossed loops, a long slanted stroke passes through
+L03	28	4STEM	m	s5	980	dark 4 with descender; alt 4TRI
+L03	29	RSIGN	m	s5	1200	small r-like sign
+L03	30	HASH4	m	s5	1420	dense crossed 4 with tall stem; alt 4STEM
+L03	31	HASH4	m	s6	320	crossed loops with stem and tail; alt PHI
+L03	32	PHI	h	s6	580	loops on stem
+L03	33	HASH4	m	s6	800	loops crossed by bar with tail; alt PHI
+L03	34	PHI	h	s6	1020	loops on stem
+L03	35	PHI	h	s6	1240	loops on stem
+L03	36	PHI	h	s6	1450	loops on stem
+L03	37	4TRI	m	s7	290	4 over cross/loops; alt 4STEM
+L03	38	HASH4	l	s7	580	pair of loops side by side crossed by bar; alt LOOPS
+L03	39	PHI	m	s7	780	figure-8 with short stem
+L04	1	HASH4	m	s1	160	dense loop cluster crossed; alt PHI
+L04	2	PHI	h	s1	400	loops on stem
+L04	3	PHI	h	s1	650	loops on stem
+L04	4	4STEM	m	s1	950	4 with crossed double-bar stem; alt HASH4
+L04	5	HASH4	m	s1	1220	dense crossed cluster
+L04	6	4STEM	m	s1	1490	4 with crossed double-bar stem; alt HASH4
+L04	7	PHI	h	s2	340	loops on stem
+L04	8	4STEM	m	s2	560	4 with crossed stem
+L04	9	ISH	m	s2	790	I with top and foot bars; alt EBR_B
+L04	10	LOOPS	m	s2	1010	chain of three loops, stroke below possibly a descender; alt PHI
+L04	11	PHI	h	s2	1270	loops on stem
+L04	12	C43	m	s2	1490	4 over 3
+L04	13	PHI	m	s3	420	pair of loops with stem; alt HASH4
+L04	14	EBR_A	m	s3	680	E-like bracket, foot bar longer; alt ISH
+L04	15	PHI	m	s3	880	loops on stem, crossed by long thin vertical stroke (probably from above)
+L04	16	PHI	h	s3	1090	loops on stem
+L04	17	VBAR_A	m	s3	1330	R-like triangle with bar
+L04	18	VBAR_A	h	s4	190	small triangle with bar
+L04	19	C43	h	s4	420	4 over 3
+L04	20	VBAR_A	m	s4	720	triangle with bar, stroke above; a separate thin vertical stroke at x~840 not counted (possible descender)
+L04	21	4STEM	m	s4	970	4 with long stem; alt 4TRI
+L04	22	HASH4	m	s4	1250	dense crossed cluster
+L04	23	HASH4	m	s4	1480	crossed 4 with tall stem; alt 4STEM
+L04	24	HASH4	m	s5	370	dense crossed cluster
+L04	25	PHI	h	s5	580	loops on stem
+L04	26	ISH	m	s5	800	I with top and foot bars
+L04	27	EBR_A	l	s5	1010	squared E/F-like bracket; alt OTHER
+L04	28	C43	m	s5	1220	4 over 3
+L04	29	4STEM	m	s5	1460	4 with crossed stem, tall vertical at left
+L04	30	H24	h	s6	370	'24' sign
+L04	31	4TRI	m	s6	600	4 over triangle/cross
+L04	32	VBAR_A	m	s6	820	R-like triangle with long tail
+L04	33	PHI	h	s6	1010	loops on stem
+L04	34	4TRI	l	s6	1230	4 over loops, thick vertical stroke just left (descender?); alt HASH4
+L04	35	H24	h	s6	1480	'24' sign
+L04	36	EBR_A	m	s7	330	E-like bracket with tail
+L04	37	EBR_A	m	s7	520	E-like bracket with tail
+L04	38	PHI	m	s7	720	loops on stem
+L04	39	DASH	l	s7	860	short dash at right edge
+L05	1	VBAR_A	m	s1	110	squared R-like triangle with bar
+L05	2	PHI	h	s1	330	loops on stem
+L05	3	PHI	h	s1	570	loops on stem
+L05	4	PHI	h	s1	790	loops on stem
+L05	5	VBAR_A	h	s1	990	triangle with bar; thin vertical stroke at x~900 just left not counted (possible descender)
+L05	6	PHI	h	s1	1200	loops on stem
+L05	7	PHI	h	s1	1450	pair of loops on stem
+L05	8	HASH4	m	s2	340	dense loops crossed by bar
+L05	9	HASH4	m	s2	620	dense loops crossed by bar
+L05	10	PHI	m	s2	880	dense pair of loops with stem
+L05	11	H24	h	s2	1140	'24' sign
+L05	12	VBAR_B	l	s2	1380	blotted triangle with bars; alt VBAR_A
+L05	13	PHI	m	s3	200	loops on tall stem
+L05	14	VBAR_A	h	s3	400	triangle with bar
+L05	15	4STEM	m	s3	600	4 with double-crossed stem; alt HASH4
+L05	16	PHI	h	s3	830	loops on stem
+L05	17	ISH	m	s3	1010	I with top and foot bars
+L05	18	4STEM	m	s3	1230	4 with stem and small hook; alt 4TRI
+L05	19	4STEM	m	s3	1460	4 with double-crossed stem; alt HASH4
+L05	20	PHI	h	s4	300	loops on stem
+L05	21	PHI	h	s4	520	loops on stem
+L05	22	HASH4	m	s4	760	dense crossed cluster
+L05	23	PHI	h	s4	990	loops on stem
+L05	24	C43	m	s4	1210	4 over 3
+L05	25	VBAR_A	m	s4	1470	R-like triangle with tail; alt EBR_A
+L05	26	H24	h	s5	340	'24' sign
+L05	27	VBAR_A	l	s5	630	large blotted triangle with bar; alt VBAR_B
+L05	28	C43	m	s5	900	4 over 3, long horizontal stroke runs right through following signs
+L05	29	BETA	l	s5	1060	tall loop on stem; alt PHI
+L05	30	HASH4	l	s5	1300	dark cluster on the long horizontal stroke
+L05	31	PHI	m	s5	1490	loops on stem, on the long stroke
+L05	32	LOOPS	l	s6	350	small loops on the long stroke; alt HASH4
+L05	33	VBAR_A	m	s6	580	R-like squared triangle
+L05	34	PHI	h	s6	790	loops on stem
+L05	35	C43	h	s6	1000	4 over 3
+L05	36	VBAR_A	m	s6	1260	R-like triangle with tail
+L05	37	4STEM	m	s6	1470	4 with crossed stem
+L05	38	PHI	h	s7	340	loops on stem
+L05	39	PHI	m	s7	550	pair of loops, stem crossed by stroke from above; alt HASH4
+L05	40	DASH	h	s7	780	horizontal dash
+L06	1	H24	h	s1	120	'24' sign
+L06	2	PHI	h	s1	390	loops on stem with dot
+L06	3	C43	h	s1	630	4 over 3
+L06	4	C43	h	s1	920	4 over 3; thin vertical stroke at x~810 just left not counted (possible descender)
+L06	5	HASH4	m	s1	1190	dense loop cluster crossed
+L06	6	PHI	h	s1	1440	pair of loops on stem
+L06	7	H24	h	s2	310	'24' sign
+L06	8	PHI	h	s2	560	loops on stem
+L06	9	C43	h	s2	800	4 over 3
+L06	10	VBAR_A	h	s2	1030	triangle with bar and tail
+L06	11	4STEM	m	s2	1290	4 with double-crossed stem; tall thin vertical at x~1170 just left not counted
+L06	12	PHI	h	s2	1510	loops on stem
+L06	13	VBAR_A	m	s3	390	R-like triangle with long tail
+L06	14	C43	h	s3	600	4 over 3
+L06	15	4STEM	m	s3	860	4 with double-crossed stem; alt HASH4
+L06	16	HASH4	m	s3	1150	dense crossed cluster with tail
+L06	17	PHI	h	s3	1420	loops on stem
+L06	18	HASH4	m	s4	280	dense loop cluster crossed
+L06	19	VBAR_A	h	s4	550	triangle with bar and tail
+L06	20	PHI	h	s4	800	loops on stem
+L06	21	PHI	h	s4	1040	tall loops on stem
+L06	22	VBAR_A	h	s4	1260	triangle with bar and tail
+L06	23	PHI	h	s4	1510	loops on stem
+L06	24	HASH4	m	s5	400	loops crossed by bar
+L06	25	4STEM	m	s5	710	4 with double-crossed stem; alt HASH4
+L06	26	4STEM	l	s5	970	cross with double bar and stem; alt CROSS
+L06	27	PHI	h	s5	1200	loops on stem
+L06	28	4STEM	m	s5	1460	4 with double-crossed stem
+L06	29	HASH4	m	s6	330	dense loop cluster crossed
+L06	30	H24	m	s6	600	blotted '24' sign
+L06	31	4STEM	m	s6	840	4 with crossed stem; alt HASH4
+L06	32	C43	m	s6	1030	4 over 3
+L06	33	PHI	h	s6	1280	loops on stem
+L06	34	PHI	h	s6	1460	pair of loops on stem
+L06	35	H24	h	s7	330	'24' sign
+L06	36	VBAR_A	m	s7	580	R-like triangle with bar
+L06	37	VBAR_A	m	s7	760	R-like triangle with long tail
