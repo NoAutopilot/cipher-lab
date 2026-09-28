@@ -98,6 +98,17 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - **f.108v rows:** L06, L04, L01, L03 fit f.61's cells alone (rank 1-7 of 201); L02, L05, L07 at chance, not explained by
   transcription grade or coverage (H155, H156). The ASKS 89 desk pack carries that reading order, no letters.
 
+## H162-H167 (runner 5, 28 Sept 2026, times from the clock)
+
+- **HASH4 forms (H162, one blind vision call, controls 17/20 PASS):** 23 of 24 HASH4 on f.108v/f.108r have a 4 above or joined
+  (the family's 4-over-hash, d/q); on f.108r L06 most are a looped variant, which by sequence gain fits h/u best (rank 1 of
+  201; i/x 3, d/q 27; one line, descriptive, H167) -- the passes note "alt INF" on them.
+- **f.108r by the word-lattice sequence gain:** rank 8 of 101, FAIL (H164); f.108r stays a lean.
+- **Key hunt:** fr.2751 f.116 is a clear copy, no cipher (F61-FAMILY-8; H144 closed); the Rome letter of 5 April has a second
+  copy, fr.5045 f.275, dated 1591 (H165). **New lead: fr.3984 fol. 7, Mayenne to de Diou, Paris, 13 May 1593, "avec chiffre
+  et déchiffrement"** -- Gallica btv1b9060633d canvas f15 carries cipher runs in the family's polyphonic signs, f17 a clear page,
+  f21 the address (). Row H168 checks whether it is in f.61's cells and whether f17 deciphers it.
+
 ## Files to read
 
 | what | path | step |

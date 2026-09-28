@@ -3146,3 +3146,7 @@ Whether the cipher runs are f.61's own cells, and whether f17 deciphers them, is
 loop, alt INF", points the same way (INF = h/u). Four values on one line of 40 signs, no gate: descriptive only -- a question
 for the person's gloss of L06 (ASKS 88) and for the family worker (whether the looped hash is a separate class from the
 4-over-hash d/q). No reading, no class change.
+
+## Campaign step H166 (20:28 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
+
+`scripts/H66_PAGE.md` gains a section "H162-H167". No new claim.
