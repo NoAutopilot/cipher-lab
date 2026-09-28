@@ -27,6 +27,13 @@ import csv, json, os, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); S = os.path.abspath(f"{HERE}/../scripts"); P = f"{HERE}/passes"
 KEYFILE = f"{HERE}/key_period_v3.tsv"; FRAC = 0.1
+# H57 (28 Sept 2026, runner session_01J8hunWPcE7QYcpCx59CUHV, the parent's row): --h26-split relabels f.61's signs by H26's blind
+# sort (scripts/f61qo2.py: group-G2 signs and every f.61 DBL -> SBS) and gives SBS the cell b/o (H26/H51: 6/6 and 7/7 under
+# Tomokiyo's b/o letters, a controlled fit) while PHI on this leaf becomes e/r (its period 'o' counts are the side-by-side glyph
+# the family readers folded into PHI, KEY.md); --published-zhook adds ZHOOK = i/x from key_published_rare.tsv (Tomokiyo,
+# labelled published, never a period pair). Tags gain the suffix '2' (known2, full2). Without the options every H33 output is
+# reproduced byte for byte. Pre-registered before the H57 calls.
+SPLIT = "--h26-split" in sys.argv; PUBZ = "--published-zhook" in sys.argv
 def load_key():
     rows = [r for r in csv.DictReader((l for l in open(KEYFILE) if not l.startswith("#")), delimiter="\t")]
     tot = defaultdict(int); key = defaultdict(dict); leaves = defaultdict(lambda: defaultdict(set))
@@ -36,12 +43,23 @@ def load_key():
         cl = {"EBR_A": "EBR", "EBR_B": "EBR"}.get(r["class"], r["class"])
         if r["letter"] != "-" and int(r["n"]) >= 2 and int(r["n"]) >= FRAC * tot[(r["class"], r["leaf"])]:
             key[cl][r["letter"]] = key[cl].get(r["letter"], 0) + int(r["n"]); leaves[cl][r["letter"]].add(r["leaf"])
-    return {c: "/".join(sorted(v, key=lambda k: -v[k])) for c, v in key.items()}, leaves
+    out = {c: "/".join(sorted(v, key=lambda k: -v[k])) for c, v in key.items()}
+    if SPLIT:
+        out["SBS"] = "b/o"; leaves["SBS"]["b"].add("H26/H51 fit"); leaves["SBS"]["o"].add("H26/H51 fit")
+        if "PHI" in out: out["PHI"] = "/".join(l for l in out["PHI"].split("/") if l != "o")
+    if PUBZ:
+        out["ZHOOK"] = "i/x"; leaves["ZHOOK"]["i"].add("published (Tomokiyo)"); leaves["ZHOOK"]["x"].add("published (Tomokiyo)")
+    return out, leaves
 def read_lines(tag):
     lines = defaultdict(list)
     for path in ([f"{S}/passA_classes.tsv"] if tag == "known" else [f"{S}/passA_classes.tsv", f"{S}/passU2_classes.tsv"]):
         for r in csv.DictReader((l for l in open(path) if not l.startswith("#")), delimiter="\t"):
             lines[r["line"]].append(r["sign"])
+    if SPLIT:
+        sys.path.insert(0, S); import f61qo2
+        for line, seq in lines.items():
+            for j, c in enumerate(seq):
+                if c in ("PHI", "DBL") and (f61qo2.G.get((line, j + 1)) == "G2" or c == "DBL"): seq[j] = "SBS"
     return dict(sorted(lines.items()))
 def maps(base):
     labs = sorted(base); rng = random.Random(1); out = [dict(base)]
@@ -52,6 +70,7 @@ def render(lines, cmap):
     return {line: " ".join((f"[{cmap[c]}]" if "/" in cmap[c] else cmap[c]) if c in cmap else "?" for c in seq) for line, seq in lines.items()}
 def build(tag):
     base, _ = load_key(); lines = read_lines(tag); ms = maps(base)
+    if SPLIT or PUBZ: tag = tag + "2"
     order = list(range(21)); random.Random(7).shuffle(order); key = {}; txt = []
     for k, mi in enumerate(order):
         lab = f"SET-{k+1:02d}"; key[lab] = {"map_index": mi, "target": mi == 0, "map": ms[mi]}

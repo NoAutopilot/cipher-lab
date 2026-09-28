@@ -1,0 +1,147 @@
+== SET-01
+L01: ? [s/f] [u/e] [e/r/u] [n/a/c/e] s [m/s] ? [n/a/c/e] [n/a/c/p] [u/o] r
+L03: ? ? [m/s] [n/a/c/e] e [n/a/c/p] s [u/e] ? s [s/f] ? [u/e] [i/x] [i/j/y]
+L05: [e/q/i/p/r/s/t] [e/m] [n/a/c/p] [n/a/c/e] [i/x] s ? ? [u/e] [e/r/u] [u/e] [s/f] [u/e] s [n/a/c/e] ? [n/a/c/e] e
+L07: ? ? [e/r] [q/s] [i/j/y] [s/f] [i/x] [e/r/u] e ? [e/r]
+L08: [n/a/c/e] [u/e] [s/f] [e/r/u] [i/x] [n/a/c/e] [u/e] [e/r/u] [s/f] ? s [n/a/c/e] [n/a/c/e] [n/a/c/e]
+L11: [q/s] [n/a/c/e] [i/j/y] [n/a/c/e] [u/e] [n/a/c/p] [n/a/c/e] [d/q/i] r [i/x] [e/r] [n/a/c/p]
+== SET-02
+L01: ? [b/o] l [a/n] [t/s/f] [e/m] [u/o] ? [t/s/f] [n/a/c/p] e [m/s]
+L03: ? ? [u/o] [t/s/f] [u/e] [n/a/c/p] [e/m] l ? [e/m] [b/o] ? l [l/s/a] [e/q/i/p/r/s/t]
+L05: [i/x] s [n/a/c/p] [t/s/f] [l/s/a] [e/m] ? ? l [a/n] l [b/o] l [e/m] [t/s/f] ? [t/s/f] [u/e]
+L07: ? ? [d/a/q/n] r [e/q/i/p/r/s/t] [b/o] [l/s/a] [a/n] [u/e] ? [d/a/q/n]
+L08: [t/s/f] l [b/o] [a/n] [l/s/a] [t/s/f] l [a/n] [b/o] ? [e/m] [t/s/f] [t/s/f] [t/s/f]
+L11: r [t/s/f] [e/q/i/p/r/s/t] [t/s/f] l [n/a/c/p] [t/s/f] [d/q/i] [m/s] [l/s/a] [d/a/q/n] [n/a/c/p]
+== SET-03
+L01: ? [e/m] [e/q/i/p/r/s/t] [d/q/i] l [i/x] [n/a/c/e] ? l [e/r/u] [t/s/f] [e/r]
+L03: ? ? [n/a/c/e] l s [e/r/u] [i/x] [e/q/i/p/r/s/t] ? [i/x] [e/m] ? [e/q/i/p/r/s/t] [s/f] [m/t/c/p/n/s]
+L05: r [d/a/q/n] [e/r/u] l [s/f] [i/x] ? ? [e/q/i/p/r/s/t] [d/q/i] [e/q/i/p/r/s/t] [e/m] [e/q/i/p/r/s/t] [i/x] l ? l s
+L07: ? ? [u/o] [n/a/c/p] [m/t/c/p/n/s] [e/m] [s/f] [d/q/i] s ? [u/o]
+L08: l [e/q/i/p/r/s/t] [e/m] [d/q/i] [s/f] l [e/q/i/p/r/s/t] [d/q/i] [e/m] ? [i/x] l l l
+L11: [n/a/c/p] l [m/t/c/p/n/s] l [e/q/i/p/r/s/t] [e/r/u] l [q/s] [e/r] [s/f] [u/o] [e/r/u]
+== SET-04
+L01: ? [l/s/a] [e/r/u] [e/q/i/p/r/s/t] l [b/o] [s/f] ? l [m/s] [u/o] [t/s/f]
+L03: ? ? [s/f] l [e/r] [m/s] [b/o] [e/r/u] ? [b/o] [l/s/a] ? [e/r/u] [i/j/y] [e/m]
+L05: [u/e] [i/x] [m/s] l [i/j/y] [b/o] ? ? [e/r/u] [e/q/i/p/r/s/t] [e/r/u] [l/s/a] [e/r/u] [b/o] l ? l [e/r]
+L07: ? ? [a/n] [d/a/q/n] [e/m] [l/s/a] [i/j/y] [e/q/i/p/r/s/t] [e/r] ? [a/n]
+L08: l [e/r/u] [l/s/a] [e/q/i/p/r/s/t] [i/j/y] l [e/r/u] [e/q/i/p/r/s/t] [l/s/a] ? [b/o] l l l
+L11: [d/a/q/n] l [e/m] l [e/r/u] [m/s] l [d/q/i] [t/s/f] [i/j/y] [a/n] [m/s]
+== SET-05
+L01: ? s [l/s/a] r [u/e] [a/n] [e/r] ? [u/e] [b/o] [i/j/y] [q/s]
+L03: ? ? [e/r] [u/e] e [b/o] [a/n] [l/s/a] ? [a/n] s ? [l/s/a] [e/q/i/p/r/s/t] l
+L05: [d/q/i] [d/a/q/n] [b/o] [u/e] [e/q/i/p/r/s/t] [a/n] ? ? [l/s/a] r [l/s/a] s [l/s/a] [a/n] [u/e] ? [u/e] e
+L07: ? ? [m/t/c/p/n/s] [n/a/c/p] l s [e/q/i/p/r/s/t] r e ? [m/t/c/p/n/s]
+L08: [u/e] [l/s/a] s r [e/q/i/p/r/s/t] [u/e] [l/s/a] r s ? [a/n] [u/e] [u/e] [u/e]
+L11: [n/a/c/p] [u/e] l [u/e] [l/s/a] [b/o] [u/e] [s/f] [q/s] [e/q/i/p/r/s/t] [m/t/c/p/n/s] [b/o]
+== SET-06
+L01: ? [d/a/q/n] [q/s] [e/q/i/p/r/s/t] e [d/q/i] [u/o] ? e [n/a/c/e] r [s/f]
+L03: ? ? [u/o] e [n/a/c/p] [n/a/c/e] [d/q/i] [q/s] ? [d/q/i] [d/a/q/n] ? [q/s] s l
+L05: [e/m] [b/o] [n/a/c/e] e s [d/q/i] ? ? [q/s] [e/q/i/p/r/s/t] [q/s] [d/a/q/n] [q/s] [d/q/i] e ? e [n/a/c/p]
+L07: ? ? [e/r] [t/s/f] l [d/a/q/n] s [e/q/i/p/r/s/t] [n/a/c/p] ? [e/r]
+L08: e [q/s] [d/a/q/n] [e/q/i/p/r/s/t] s e [q/s] [e/q/i/p/r/s/t] [d/a/q/n] ? [d/q/i] e e e
+L11: [t/s/f] e l e [q/s] [n/a/c/e] e [m/s] [s/f] s [e/r] [n/a/c/e]
+== SET-07
+L01: ? [s/f] [q/s] [d/a/q/n] [i/x] [u/e] [u/o] ? [i/x] [m/s] e l
+L03: ? ? [u/o] [i/x] r [m/s] [u/e] [q/s] ? [u/e] [s/f] ? [q/s] [e/q/i/p/r/s/t] [t/s/f]
+L05: [e/r] [e/r/u] [m/s] [i/x] [e/q/i/p/r/s/t] [u/e] ? ? [q/s] [d/a/q/n] [q/s] [s/f] [q/s] [u/e] [i/x] ? [i/x] r
+L07: ? ? [a/n] [n/a/c/e] [t/s/f] [s/f] [e/q/i/p/r/s/t] [d/a/q/n] r ? [a/n]
+L08: [i/x] [q/s] [s/f] [d/a/q/n] [e/q/i/p/r/s/t] [i/x] [q/s] [d/a/q/n] [s/f] ? [u/e] [i/x] [i/x] [i/x]
+L11: [n/a/c/e] [i/x] [t/s/f] [i/x] [q/s] [m/s] [i/x] [b/o] l [e/q/i/p/r/s/t] [a/n] [m/s]
+== SET-08
+L01: ? [a/n] r e [e/m] [n/a/c/p] [d/a/q/n] ? [e/m] [d/q/i] [b/o] [t/s/f]
+L03: ? ? [d/a/q/n] [e/m] [q/s] [d/q/i] [n/a/c/p] r ? [n/a/c/p] [a/n] ? r [m/t/c/p/n/s] [l/s/a]
+L05: [i/x] [m/s] [d/q/i] [e/m] [m/t/c/p/n/s] [n/a/c/p] ? ? r e r [a/n] r [n/a/c/p] [e/m] ? [e/m] [q/s]
+L07: ? ? l [s/f] [l/s/a] [a/n] [m/t/c/p/n/s] e [q/s] ? l
+L08: [e/m] r [a/n] e [m/t/c/p/n/s] [e/m] r e [a/n] ? [n/a/c/p] [e/m] [e/m] [e/m]
+L11: [s/f] [e/m] [l/s/a] [e/m] r [d/q/i] [e/m] [u/o] [t/s/f] [m/t/c/p/n/s] l [d/q/i]
+== SET-09
+L01: ? [d/q/i] [e/m] [t/s/f] s [d/a/q/n] [e/r/u] ? s [s/f] r [e/r]
+L03: ? ? [e/r/u] s [i/j/y] [s/f] [d/a/q/n] [e/m] ? [d/a/q/n] [d/q/i] ? [e/m] [n/a/c/p] e
+L05: [m/s] [n/a/c/e] [s/f] s [n/a/c/p] [d/a/q/n] ? ? [e/m] [t/s/f] [e/m] [d/q/i] [e/m] [d/a/q/n] s ? s [i/j/y]
+L07: ? ? [u/o] [m/t/c/p/n/s] e [d/q/i] [n/a/c/p] [t/s/f] [i/j/y] ? [u/o]
+L08: s [e/m] [d/q/i] [t/s/f] [n/a/c/p] s [e/m] [t/s/f] [d/q/i] ? [d/a/q/n] s s s
+L11: [m/t/c/p/n/s] s e s [e/m] [s/f] s l [e/r] [n/a/c/p] [u/o] [s/f]
+== SET-10
+L01: ? l s e [i/j/y] [e/q/i/p/r/s/t] r ? [i/j/y] [s/f] [m/t/c/p/n/s] [n/a/c/e]
+L03: ? ? r [i/j/y] [l/s/a] [s/f] [e/q/i/p/r/s/t] s ? [e/q/i/p/r/s/t] l ? s [u/o] [b/o]
+L05: [u/e] [i/x] [s/f] [i/j/y] [u/o] [e/q/i/p/r/s/t] ? ? s e s l s [e/q/i/p/r/s/t] [i/j/y] ? [i/j/y] [l/s/a]
+L07: ? ? [d/q/i] [e/r] [b/o] l [u/o] e [l/s/a] ? [d/q/i]
+L08: [i/j/y] s l e [u/o] [i/j/y] s e l ? [e/q/i/p/r/s/t] [i/j/y] [i/j/y] [i/j/y]
+L11: [e/r] [i/j/y] [b/o] [i/j/y] s [s/f] [i/j/y] [e/m] [n/a/c/e] [u/o] [d/q/i] [s/f]
+== SET-11
+L01: ? l [a/n] [i/j/y] [t/s/f] [e/r/u] [e/m] ? [t/s/f] [m/s] [b/o] e
+L03: ? ? [e/m] [t/s/f] [e/r] [m/s] [e/r/u] [a/n] ? [e/r/u] l ? [a/n] [u/o] [u/e]
+L05: [i/x] [s/f] [m/s] [t/s/f] [u/o] [e/r/u] ? ? [a/n] [i/j/y] [a/n] l [a/n] [e/r/u] [t/s/f] ? [t/s/f] [e/r]
+L07: ? ? r s [u/e] l [u/o] [i/j/y] [e/r] ? r
+L08: [t/s/f] [a/n] l [i/j/y] [u/o] [t/s/f] [a/n] [i/j/y] l ? [e/r/u] [t/s/f] [t/s/f] [t/s/f]
+L11: s [t/s/f] [u/e] [t/s/f] [a/n] [m/s] [t/s/f] [n/a/c/p] e [u/o] r [m/s]
+== SET-12
+L01: ? [u/e] [n/a/c/p] [n/a/c/e] r [m/t/c/p/n/s] [e/m] ? r [e/q/i/p/r/s/t] [d/a/q/n] [q/s]
+L03: ? ? [e/m] r [l/s/a] [e/q/i/p/r/s/t] [m/t/c/p/n/s] [n/a/c/p] ? [m/t/c/p/n/s] [u/e] ? [n/a/c/p] [s/f] [b/o]
+L05: [i/j/y] l [e/q/i/p/r/s/t] r [s/f] [m/t/c/p/n/s] ? ? [n/a/c/p] [n/a/c/e] [n/a/c/p] [u/e] [n/a/c/p] [m/t/c/p/n/s] r ? r [l/s/a]
+L07: ? ? e [d/q/i] [b/o] [u/e] [s/f] [n/a/c/e] [l/s/a] ? e
+L08: r [n/a/c/p] [u/e] [n/a/c/e] [s/f] r [n/a/c/p] [n/a/c/e] [u/e] ? [m/t/c/p/n/s] r r r
+L11: [d/q/i] r [b/o] r [n/a/c/p] [e/q/i/p/r/s/t] r [m/s] [q/s] [s/f] e [e/q/i/p/r/s/t]
+== SET-13
+L01: ? e [a/n] [u/e] [e/r] [n/a/c/p] r ? [e/r] [t/s/f] [d/q/i] [d/a/q/n]
+L03: ? ? r [e/r] s [t/s/f] [n/a/c/p] [a/n] ? [n/a/c/p] e ? [a/n] [b/o] [l/s/a]
+L05: [q/s] [e/m] [t/s/f] [e/r] [b/o] [n/a/c/p] ? ? [a/n] [u/e] [a/n] e [a/n] [n/a/c/p] [e/r] ? [e/r] s
+L07: ? ? [i/x] [m/s] [l/s/a] e [b/o] [u/e] s ? [i/x]
+L08: [e/r] [a/n] e [u/e] [b/o] [e/r] [a/n] [u/e] e ? [n/a/c/p] [e/r] [e/r] [e/r]
+L11: [m/s] [e/r] [l/s/a] [e/r] [a/n] [t/s/f] [e/r] [n/a/c/e] [d/a/q/n] [b/o] [i/x] [t/s/f]
+== SET-14
+L01: ? [e/r] [i/x] [l/s/a] [a/n] [n/a/c/p] [m/t/c/p/n/s] ? [a/n] [e/r/u] [i/j/y] [q/s]
+L03: ? ? [m/t/c/p/n/s] [a/n] [d/a/q/n] [e/r/u] [n/a/c/p] [i/x] ? [n/a/c/p] [e/r] ? [i/x] s [m/s]
+L05: e [e/q/i/p/r/s/t] [e/r/u] [a/n] s [n/a/c/p] ? ? [i/x] [l/s/a] [i/x] [e/r] [i/x] [n/a/c/p] [a/n] ? [a/n] [d/a/q/n]
+L07: ? ? [b/o] r [m/s] [e/r] s [l/s/a] [d/a/q/n] ? [b/o]
+L08: [a/n] [i/x] [e/r] [l/s/a] s [a/n] [i/x] [l/s/a] [e/r] ? [n/a/c/p] [a/n] [a/n] [a/n]
+L11: r [a/n] [m/s] [a/n] [i/x] [e/r/u] [a/n] [s/f] [q/s] s [b/o] [e/r/u]
+== SET-15
+L01: ? [d/q/i] [q/s] r [m/t/c/p/n/s] [n/a/c/p] [a/n] ? [m/t/c/p/n/s] [d/a/q/n] l [b/o]
+L03: ? ? [a/n] [m/t/c/p/n/s] [e/r/u] [d/a/q/n] [n/a/c/p] [q/s] ? [n/a/c/p] [d/q/i] ? [q/s] [e/m] [u/o]
+L05: [u/e] [m/s] [d/a/q/n] [m/t/c/p/n/s] [e/m] [n/a/c/p] ? ? [q/s] r [q/s] [d/q/i] [q/s] [n/a/c/p] [m/t/c/p/n/s] ? [m/t/c/p/n/s] [e/r/u]
+L07: ? ? e [n/a/c/e] [u/o] [d/q/i] [e/m] r [e/r/u] ? e
+L08: [m/t/c/p/n/s] [q/s] [d/q/i] r [e/m] [m/t/c/p/n/s] [q/s] r [d/q/i] ? [n/a/c/p] [m/t/c/p/n/s] [m/t/c/p/n/s] [m/t/c/p/n/s]
+L11: [n/a/c/e] [m/t/c/p/n/s] [u/o] [m/t/c/p/n/s] [q/s] [d/a/q/n] [m/t/c/p/n/s] [i/j/y] [b/o] [e/m] e [d/a/q/n]
+== SET-16
+L01: ? [d/a/q/n] [d/q/i] [e/q/i/p/r/s/t] s [n/a/c/p] [u/e] ? s [m/s] [s/f] [b/o]
+L03: ? ? [u/e] s [t/s/f] [m/s] [n/a/c/p] [d/q/i] ? [n/a/c/p] [d/a/q/n] ? [d/q/i] e [e/r/u]
+L05: [i/x] [m/t/c/p/n/s] [m/s] s e [n/a/c/p] ? ? [d/q/i] [e/q/i/p/r/s/t] [d/q/i] [d/a/q/n] [d/q/i] [n/a/c/p] s ? s [t/s/f]
+L07: ? ? l [n/a/c/e] [e/r/u] [d/a/q/n] e [e/q/i/p/r/s/t] [t/s/f] ? l
+L08: s [d/q/i] [d/a/q/n] [e/q/i/p/r/s/t] e s [d/q/i] [e/q/i/p/r/s/t] [d/a/q/n] ? [n/a/c/p] s s s
+L11: [n/a/c/e] s [e/r/u] s [d/q/i] [m/s] s [u/o] [b/o] e l [m/s]
+== SET-17
+L01: ? [n/a/c/e] e [l/s/a] [u/e] [a/n] [i/x] ? [u/e] s [m/s] [e/q/i/p/r/s/t]
+L03: ? ? [i/x] [u/e] [s/f] s [a/n] e ? [a/n] [n/a/c/e] ? e [e/r] [b/o]
+L05: l [n/a/c/p] s [u/e] [e/r] [a/n] ? ? e [l/s/a] e [n/a/c/e] e [a/n] [u/e] ? [u/e] [s/f]
+L07: ? ? [i/j/y] r [b/o] [n/a/c/e] [e/r] [l/s/a] [s/f] ? [i/j/y]
+L08: [u/e] e [n/a/c/e] [l/s/a] [e/r] [u/e] e [l/s/a] [n/a/c/e] ? [a/n] [u/e] [u/e] [u/e]
+L11: r [u/e] [b/o] [u/e] e s [u/e] [q/s] [e/q/i/p/r/s/t] [e/r] [i/j/y] s
+== SET-18
+L01: ? l s [n/a/c/e] [u/o] [i/x] [e/m] ? [u/o] [l/s/a] [e/r/u] [t/s/f]
+L03: ? ? [e/m] [u/o] [n/a/c/p] [l/s/a] [i/x] s ? [i/x] l ? s [m/s] r
+L05: [u/e] e [l/s/a] [u/o] [m/s] [i/x] ? ? s [n/a/c/e] s l s [i/x] [u/o] ? [u/o] [n/a/c/p]
+L07: ? ? [a/n] [e/r] r l [m/s] [n/a/c/e] [n/a/c/p] ? [a/n]
+L08: [u/o] s l [n/a/c/e] [m/s] [u/o] s [n/a/c/e] l ? [i/x] [u/o] [u/o] [u/o]
+L11: [e/r] [u/o] r [u/o] s [l/s/a] [u/o] [d/q/i] [t/s/f] [m/s] [a/n] [l/s/a]
+== SET-19
+L01: ? [m/t/c/p/n/s] [l/s/a] [u/o] e [e/r/u] [e/q/i/p/r/s/t] ? e [u/e] [n/a/c/p] l
+L03: ? ? [e/q/i/p/r/s/t] e [b/o] [u/e] [e/r/u] [l/s/a] ? [e/r/u] [m/t/c/p/n/s] ? [l/s/a] r [m/s]
+L05: [s/f] [q/s] [u/e] e r [e/r/u] ? ? [l/s/a] [u/o] [l/s/a] [m/t/c/p/n/s] [l/s/a] [e/r/u] e ? e [b/o]
+L07: ? ? [d/a/q/n] [d/q/i] [m/s] [m/t/c/p/n/s] r [u/o] [b/o] ? [d/a/q/n]
+L08: e [l/s/a] [m/t/c/p/n/s] [u/o] r e [l/s/a] [u/o] [m/t/c/p/n/s] ? [e/r/u] e e e
+L11: [d/q/i] e [m/s] e [l/s/a] [u/e] e [n/a/c/e] l r [d/a/q/n] [u/e]
+== SET-20
+L01: ? [i/x] [a/n] [l/s/a] [n/a/c/p] [i/j/y] [e/r/u] ? [n/a/c/p] [d/q/i] [e/m] [n/a/c/e]
+L03: ? ? [e/r/u] [n/a/c/p] e [d/q/i] [i/j/y] [a/n] ? [i/j/y] [i/x] ? [a/n] [e/r] [d/a/q/n]
+L05: [m/s] [e/q/i/p/r/s/t] [d/q/i] [n/a/c/p] [e/r] [i/j/y] ? ? [a/n] [l/s/a] [a/n] [i/x] [a/n] [i/j/y] [n/a/c/p] ? [n/a/c/p] e
+L07: ? ? l [q/s] [d/a/q/n] [i/x] [e/r] [l/s/a] e ? l
+L08: [n/a/c/p] [a/n] [i/x] [l/s/a] [e/r] [n/a/c/p] [a/n] [l/s/a] [i/x] ? [i/j/y] [n/a/c/p] [n/a/c/p] [n/a/c/p]
+L11: [q/s] [n/a/c/p] [d/a/q/n] [n/a/c/p] [a/n] [d/q/i] [n/a/c/p] [m/t/c/p/n/s] [n/a/c/e] [e/r] l [d/q/i]
+== SET-21
+L01: ? [d/a/q/n] [e/r/u] [u/o] [e/m] [q/s] [n/a/c/p] ? [e/m] [n/a/c/e] [m/t/c/p/n/s] [l/s/a]
+L03: ? ? [n/a/c/p] [e/m] l [n/a/c/e] [q/s] [e/r/u] ? [q/s] [d/a/q/n] ? [e/r/u] r [e/r]
+L05: [b/o] [u/e] [n/a/c/e] [e/m] r [q/s] ? ? [e/r/u] [u/o] [e/r/u] [d/a/q/n] [e/r/u] [q/s] [e/m] ? [e/m] l
+L07: ? ? s e [e/r] [d/a/q/n] r [u/o] l ? s
+L08: [e/m] [e/r/u] [d/a/q/n] [u/o] r [e/m] [e/r/u] [u/o] [d/a/q/n] ? [q/s] [e/m] [e/m] [e/m]
+L11: e [e/m] [e/r] [e/m] [e/r/u] [n/a/c/e] [e/m] [m/s] [l/s/a] r s [n/a/c/e]
