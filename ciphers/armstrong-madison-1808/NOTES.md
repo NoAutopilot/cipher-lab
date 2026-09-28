@@ -2104,3 +2104,63 @@ a time >= 1.6 s apart, no 429/403; archive.org 2 (1904 calendar OCR, advancedsea
 not refreshed at 00:57 (still 8.72 from 00:43); this step's own work is about 170 small image fetches, 12 contact-sheet
 looks and 5 native looks by this runner, no subagent -- the row's estimate (4 USD) is what `--spend` records, with the
 parent's reconciliation to follow from get_session.
+
+## Campaign step H20 (28 Sept 2026, 01:03-01:12 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01R2T5qwd7NBMWGnjRtj8ieX). Hypothesis H20 (the
+account-2 runner's row from H18): are the target's 901-1099 trough and its 0/1 units-digit skew what a
+syllable-spelling nomenclator on a 17x100 printed form with modifier marks produces -- the design family H14/H19
+point at, which ARM-DESIGN's contiguous WORD-table controls did not cover?
+
+**Method (`design/h20_form_syl.py`, script only, offline, 15 s; log `design/h20_run_log.txt`, table
+`design/h20_stats_sim.tsv`).** Six printed-form designs, 60 simulated 369-group letters each from en18 text, scored
+with ARM-DESIGN's own statistics (`design_stats.stats`, target vmax 1900, forms vmax 1700), target percentile per
+statistic. A form is 1,700 cells; entries are 564 syllable/letter fragments taken from the two sibling tables (WE028
+532 + THE972 116, deduped) plus 26 letters, and the commonest en18 forms for the rest; with or without a CATEGORY
+block in cells 901-1100 (212 number words, ordinals, months, days, places, period personal names and titles -- the
+kind of entries H12 read in that region of the reel-9 form: twelve 907, june 1007, friday 1016, virginia 1026); fill
+alphabetical (one-part) or random; a 300-fragment variant for sensitivity. The printed form's marks are modelled as
+free: a word is one group if the form holds it or its stem without -s/-es/-ed/-d (rules 1-2 make those a mark), or
+its form with doubled letters collapsed (rule 3); otherwise it is spelled greedily from fragments (32-36% of groups
+in every design; no word dropped). Each statistic can differ between the designs it compares (rule 3): the block
+changes `block_pair_min`, alphabetical vs random changes `digit_order_rho`/`low_share`, fragment count changes `D/N`.
+
+| statistic | target | form_alpha_cat | form_rand_cat | form_alpha_nocat | form_rand_nocat | F300 cat (alpha / rand) |
+|---|---|---|---|---|---|---|
+| block_pair_min (the 900-1099 trough) | 4 | 6.7 (p18) | 7.1 (p20) | 20.1 (p0) | 17.9 (p0) | 6.6 / 6.9 (p20) |
+| share of groups in 901-1100 | 0.011 | 0.018 | 0.019 | 0.114 | 0.122 | 0.019 / 0.019 |
+| units_top1 (values >= 100) | 0.388 | 0.200 (p100) | 0.164 (p100) | 0.152 (p100) | 0.165 (p100) | 0.150 / 0.171 (p100) |
+| units_H (bits) | 2.57 | 3.15 (p0) | 3.24 (p0) | 3.25 (p0) | 3.24 (p0) | 3.25 / 3.22 (p0) |
+| digits23_share | 0.083 | 0.137 (p0) | 0.239 (p0) | 0.171 (p0) | 0.228 (p0) | 0.197 / 0.219 (p0) |
+| decade_units_z | 2.76 | 15.7 (p0) | 19.1 (p0) | 17.2 (p0) | 19.3 (p0) | 18.1 / 20.1 (p0) |
+| low_share (groups < 100) | 0.358 | 0.083 (p100) | 0.059 (p100) | 0.074 (p100) | 0.055 (p100) | 0.075 / 0.060 (p100) |
+| D/N | 0.585 | 0.494 (p100) | 0.483 (p100) | 0.497 (p100) | 0.486 (p100) | 0.458 / 0.447 (p100) |
+| hi_distinct | 168 | 170 (p38) | 168 (p48) | 172 (p28) | 169 (p43) | 158 / 155 (p85-90) |
+
+**Reading.** (1) The trough IS what a category block produces: with 200 rarely-used entries in 901-1100 the
+simulated letters put 1.8-1.9% of their groups there and their pair-minimum sits at 6.6-7.1, the target's 4 inside
+the band (p18-20); without the block the same forms give 18-20 (p0). A category block is therefore a second
+sufficient explanation of the 901-1099 trough, alongside ARM-DESIGN's "sparsely occupied numbering" -- the two are
+not distinguished by this statistic, and the design prior should carry both. (2) Nothing else about the target is a
+syllabic printed form: the units-digit concentration (0.388 vs 0.15-0.20, p100 on every variant; entropy p0;
+digits 2/3 share p0), the decade/units dependence (2.8 vs 16-20: in a form the frequent words repeat inside their
+own decade, in the target they do not), the third of all groups under 100 (0.36 vs 0.06-0.08 even when the
+alphabetical fill puts a/an/and/as/at in cells 1-99), and the diversity (D/N 0.585 vs 0.45-0.50: syllable spelling
+repeats its fragments, the target repeats less than a 32-36%-spelled letter would). Sensitivity: halving the
+fragment inventory moves D/N further from the target, not nearer. (3) Marks modelled as free grammar do not change
+the picture (they only raise whole-word matches).
+
+**Verdict for the campaign: control-backed FAIL for "the target is a syllable-spelling printed form of the reel-9
+kind"** (six designs x 60 letters, the target outside the band on five independent statistics), with one retained
+finding: the 901-1099 trough needs no sparse numbering -- a category block explains it as well. ARM-DESIGN's
+conclusion stands and is sharpened: a separate particle list at 1-99 (the forms cannot make low_share), decade =
+family and units = fixed slot above 100, and the trough undecided between sparse numbering and a category block.
+Conditional on ciphertext.txt (match_ratio 0.984 after H17). Not a reading, no class change; rule 10 wording.
+Suggestion (not filed as a row: too weak at 4 tokens): under the category-block reading the target's four groups in
+901-1099 would be numbers, dates or names -- their positions in the text against the letter's date line and any sums
+could be looked at when a reading exists. For the lane close-out: `tools/key_design.py` / KEY-DESIGN.tsv gain the
+printed-form family (one-part 1-1700, category block, syllable+word, modifier marks) from H12/H14, with this step's
+statistics as its plaintext-free signature.
+
+Requests: none. Cost: script only, no subagent, no image; the row's estimate (3 USD) is what `--spend` records
+(get_session had not refreshed its cost figure since 00:43).
