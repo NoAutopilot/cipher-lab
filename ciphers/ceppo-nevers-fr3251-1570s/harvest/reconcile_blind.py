@@ -5,7 +5,9 @@ Aligns passA and passB per passage by sign id (Needleman-Wunsch: match +2, look-
 and writes:
   <out>_agreement.tsv     one row per aligned position: posA idA confA posB idB confB status merged merged_conf
   <out>_disagreements.tsv the positions a third blind eye must settle from the crop (status split/gapA/gapB)
-  <out>.tsv               the merged sequence (passage pos sign_id conf note), '?' where the split is unsettled
+  <out>.tsv               the merged sequence (passage pos sign_id conf note), '?' where the split is unsettled; a
+                          position the adjudicator marks NONE is dropped here (positions renumber), while the
+                          agreement file and the adjudication sheet keep the pre-adjudication numbering
 Rules, applied without any sign value (no file but the two passes is read):
   agree               same id -> keep, conf = the lower of the two
   split, one side H   the H side, conf M
@@ -72,7 +74,7 @@ def main():
     agree_f.write("passage\tposA\tidA\tconfA\tposB\tidB\tconfB\tstatus\tmerged\tmerged_conf\n")
     dis_f.write("passage\tmerged_pos\tposA\tidA\tconfA\tposB\tidB\tconfB\tstatus\tnoteA\tnoteB\n")
     mer_f.write("passage\tpos\tsign_id\tconf\tnote\n")
-    tot = agreed = 0; splits = 0
+    tot = agreed = 0; splits = 0; merged_rows = []  # (passage, sign, conf, note); NONE rows dropped at write time
     for p in list(A) + [q for q in B if q not in A]:
         la, lb = A.get(p, []), B.get(p, [])
         pos = 0
@@ -105,8 +107,13 @@ def main():
                             f"{ea[1] if ea else ''}\t{ib + 1 if ib is not None else ''}\t{eb[0] if eb else ''}\t"
                             f"{eb[1] if eb else ''}\t{st}\t{ea[3] if ea else ''}\t{eb[3] if eb else ''}\n")
             if mid is not None:
-                note = "" if st == "agree" else st
-                mer_f.write(f"{p}\t{pos}\t{mid}\t{mc}\t{note}\n")
+                merged_rows.append((p, mid, mc, "" if st == "agree" else st))
+    npos = {}
+    for p, mid, mc, note in merged_rows:
+        if mid == "NONE":  # adjudicator: no sign at that position (one reader's phantom); dropped, later positions renumber
+            continue
+        npos[p] = npos.get(p, 0) + 1
+        mer_f.write(f"{p}\t{npos[p]}\t{mid}\t{mc}\t{note}\n")
     print(f"aligned {tot}, agreed {agreed} ({agreed / tot:.2f}), unsettled {splits}")
 
 
