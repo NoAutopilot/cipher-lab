@@ -1,0 +1,8 @@
+line	ciphertext_tokens	blind_read	agree	note
+r05	3 17 22 32 10	3. 17 22 32 10 9	yes (5/5)	the trailing "9" is the clear word "y" of "y asi" (cursive y read as a digit); the dot after 3 is H13's r05:1 mark
+r07	13 16 19 28 [MARK:box]	13 16 19 28 [boxed 9]	yes (5/5 groups)	box interior read as 9 (alt 8) at native resolution; H2's three 4x reads gave 101 -- resolution, not a disagreement on the box itself
+r08	13	13	yes (1/1)	after "materia."
+r11	3 10 30 2 6	3 10 30 2. [G. excluded]	yes on shapes (5/5)	the 6 taken for a capital G with a period; the hand's 6 is G-shaped; both dots (2., 6.) are H13's r11:4-5 marks
+r13	3 17 6	3 17 6	yes (3/3)	after "della."
+v09	17 5 29 7 5 10	17 5 29 7 5 10 9	yes (6/6)	the trailing "9" is the clear "y" of "y Caso"; 17 alt 67 (M)
+v11	13 6 18 14 2 32 6	13 6 18 14 2 32 6	yes (7/7)	14 alt 19 (M)
