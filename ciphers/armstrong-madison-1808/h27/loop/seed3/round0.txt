@@ -1,0 +1,129 @@
+# round 0: N=122 values, cribs=0, best score -1735.5 (-3.403/token); restarts [-1754.36, -1735.53, -1756.36]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 * question of your * of * that the * of * and having * of them * that the of june * of that of and those of * that a  * in the * spirit which will be necessary in con  * with the present appearances united states on which the peace * the idea of * and england and the * the * of the * of * who * the general * the * of * year and * and whose present * of the same or to the * a  mr * and reporting * and that of of the late war  or peace it * <unk> * <unk> of * m  jones commodore * lost not  the case i  * of their country * of * in the year the laws and of * of which the * that the * ness and * which * the * or the * of * letter of july and that an * of * the * of in our naval force that would * etc  * it will certainly * the * of the most * to the general * of most * and * of * that of * with the * the of may  * in the con  * of that * of * of that for * in question and and the * convention * the * and the * of * their * for the * are * of * be * and the * of * the * of in * of * for * and the question and for reasons that the government * <unk> and * of <unk> october * of a  * from the * of his * to that * powers the * of <unk> of a  war  the most * means have * to jefferson * for * and even in that the * of it by the * that to * this * of his government to attend to or * of the * of the message that * as to in the other * tive * into the government the means of * the * of which <unk> to a  * and have no doubt can  exist that the * of * the power of * of * the * of <unk> which can  * that i  * the most * the * was in con  * them and * of * to a  * the the writings of those two of the * of * the <unk> tion is that to * his * in the con  gress the whole * of the * of the convention <unk> * <unk> of * m  jones commodore * lost not  this case of * of spain and the * at the * of * and * of * and the appearance of * i  of * for mr * instead of con  * of * from tions of * in * the * of the * may  * for in the * in * power
+    * 1220     82 1620 * 21 * 100  38  * 82 * 93  783    * 21 860  * 41   10  21 1060 * 45 100  82 93  380   21 * 41   96 * 3  38  * 830    90    56   67 1350      35 1410 * 1340 430 390     1811        930    1010   58 33    38  1870  * 22  790  21 * 91  980     91  38  * 69  * 82 69  * 45 * 680 * 38  1370    * 69  * 45 * 1380 91  * 17  1700  390     * 45 69  1460 88 48 38  * 96 27 * 91  883       * 17  41   82 45 69  1210 1710 88 1870  89 * 569   * 771   21 * 31 870   740       * 1160 1570 22  1430 20 * 45 72    60      * 21 * 3  69  1380 10  1721 17  21 * 21 33    38  * 41   10  * 620  93  * 90    * 38  * 88 22  * 45 * 70     21 220  91  41   32 * 45 * 69  * 45 3  49  1100  1510  730  1360  * 1560 * 89 56   710       * 69  * 45 69  210  * 19 69  1370    * 45 210  * 370 * 21 * 41   85 * 1340 10  * 360 45 1830 * 3  69  1140 * 45 41   * 21 * 45 41   450 * 3  1220     91  93  69  * 1730       * 430 * 93  69  * 45 * 72    * 450 430 * 640 * 82 * 67 * 93  69  * 45 * 69  * 45 3  * 45 * 450 * 91  360 1220     91  450 1030    730  22  86         * 761   93  * 82 761   750     * 21 96 * 23   69  * 45 71  * 48 730  * 1771   69  * 85 761   45 55 1710 69  210  * 1860  47   * 48 510       * 450 * 370 1320 3  41   10  * 21 89 78 360 * 41   48 * 770  * 85 71  86         19 500    48 88 * 85 69  * 85 38  250     41   * 11 19 3  69  1490  * 340  * 1530 69  86         10  1860  82 * 22  * 45 90    761   48 96 * 17  47   26 1330  1450 410   41   22  * 45 * 360 1770  82 * 21 * 22  * 45 761   33    1450 * 100  20 * 69  210  * 430 * 180 35 1140 * 860  17  * 82 * 48 96 * 22  69  1021     45 380   13  21 69  * 45 * 10  1063  1190 74 41   48 * 71  * 3  69  1410 1280  10  320   * 21 22  * 45 69  1730       569   * 771   21 * 31 870   740       * 1160 1570 770  1430 45 * 21 1150  17  69  * 2  10  * 21 * 91  * 21 * 17  69  1810       45 * 20 21 * 9   27 * 690     45 1410 * 82 * 23   1191  82 * 3  * 69  * 45 22  * 1830 * 9   35 22  * 3  * 1770 
+    - 3        9  3    - 6  - 6    9   - 9  - 3   3      - 6  6    - 6    9   6  3    - 3  6    9  3   3     6  - 6    6  - 3  9   - 3      3     3    3  3         3  6    - 3    3   3       3           3      3      3  3     9   6     - 9   3    6  - 6   6       6   9   - 6   - 9  6   - 3  - 3   - 9   3       - 6   - 3  - 3    6   - 9   3     3       - 3  6   3    3  3  9   - 6  6  - 6   3         - 9   6    9  3  6   3    3    3  6     3  - 9     - 9     6  - 3  3     3         - 3    3    9   3    3  - 3  3     3       - 6  - 3  6   3    9   3    9   6  - 6  3     9   - 6    9   - 3    3   - 3     - 9   - 3  9   - 3  - 3      6  6    6   6    3  - 3  - 6   - 3  3  3   3     3     6    3     - 3    - 3  3    3         - 6   - 3  6   6    - 3  6   3       - 3  6    - 6   - 6  - 6    6  - 3    9   - 3   3  3    - 3  6   6    - 3  6    - 6  - 3  6    3   - 3  3        6   3   6   - 3          - 3   - 3   6   - 3  - 3     - 3   3   - 3   - 9  - 3  - 3   6   - 3  - 6   - 3  3  - 3  - 3   - 6   3   3        6   3   3       6    9   3          - 9     3   - 9  9     3       - 6  6  - 3    6   - 3  3   - 3  6    - 3      6   - 6  9     3  3  3    6   6    - 3     3    - 3  3         - 3   - 6   3    3  6    9   - 6  3  3  3   - 6    3  - 6    - 6  3   3          3  3      3  3  - 6  6   - 6  9   6       6    - 3  3  3  6   3     - 3    - 3    6   3          9   3     9  - 9   - 3  3     9     3  6  - 9   3    3  3     3    3     6    9   - 3  - 3   3     9  - 6  - 9   - 3  9     3     3    - 6    3  - 6   6    - 3   - 3   3  6    - 6    9   - 9  - 3  6  - 9   6   3        3  3     3   6  6   - 3  - 9   3     3    3  6    3  - 3   - 3  6   6    6     9   6     - 6  9   - 3  6   3          9     - 9     6  - 3  3     3         - 3    3    6    3    3  - 6  3     9   6   - 3  9   - 6  - 6   - 6  - 9   6   3          3  - 3  6  - 3   6  - 3       3  6    - 9  - 3    3     9  - 3  - 6   - 3  9   - 3    - 3   3  9   - 3  - 3    
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   45  30 of             3 | june * [of] that of ; the * [of] * who ; the * [of] * year
+   69  29 the            6 | the * [the] * of ; * of [the] * of ; general * [the] * of
+   21  22 of             6 | your * [of] * that ; having * [of] them * ; that the [of] june *
+   41  13 that           6 | them * [that] the of ; of * [that] a * ; * and [that] of of
+   82  12 of             9 | * question [of] your * ; the * [of] * and ; of that [of] and those
+    3  11 in             3 | a * [in] the * ; of * [in] the year ; * of [in] our naval
+   22  11 the            9 | peace * [the] idea of ; lost not [the] case i ; * or [the] * of
+   38   9 the            9 | * that [the] * of ; * in [the] * spirit ; on which [the] peace *
+   10   9 the            9 | * that [the] of june ; the year [the] laws and ; * that [the] * ness
+   91   9 and            6 | of * [and] england and ; and england [and] the * ; * year [and] * and
+   48   8 to             3 | same or [to] the * ; his * [to] that * ; have * [to] jefferson *
+   93   7 and            3 | of * [and] having * ; that of [and] those of ; * ness [and] * which
+   17   7 and            9 | and * [and] whose present ; reporting * [and] that of ; the laws [and] of *
+   96   5 a              6 | * that [a] * in ; the * [a] mr * ; * of [a] * from
+   85   5 of             6 | * that [of] * with ; the * [of] <unk> of ; this * [of] his government
+  450   5 for            3 | of that [for] * in ; their * [for] the * ; of * [for] * and
+  761   5 <unk>          9 | government * [<unk>] and * ; * of [<unk>] october * ; * of [<unk>] of a
+  430   4 the            3 | * with [the] present appearances ; convention * [the] * and ; * for [the] * are
+   88   4 or             3 | the same [or] to the ; late war [or] peace it ; the * [or] the *
+  210   4 most           6 | of the [most] * to ; * of [most] * and ; war the [most] * means
+  360   4 the            3 | the * [the] of may ; * and [the] question and ; it by [the] * that
+ 1220   3 question       3 | * [question] of your ; * in [question] and and ; and the [question] and for
+  100   3 that           6 | of * [that] the * ; * of [that] of and ; can * [that] i *
+   90   3 which          3 | * spirit [which] will be ; and * [which] * the ; * of [which] <unk> to
+   35   3 in             3 | be necessary [in] con * ; * was [in] con * ; * for [in] the *
+ 1410   3 con            6 | necessary in [con] * with ; in the [con] gress the ; instead of [con] * of
+   33   3 which          3 | states on [which] the peace ; * of [which] the * ; of <unk> [which] can *
+   89   3 it             3 | or peace [it] * <unk> ; etc * [it] will certainly ; * of [it] by the
+   20   3 i              3 | the case [i] * of ; * that [i] * the ; of * [i] of *
+  730   3 that           6 | naval force [that] would * ; for reasons [that] the government ; * to [that] * powers
+   19   3 to             3 | most * [to] the general ; his government [to] attend to ; * as [to] in the
+   86   3 government     3 | that the [government] * <unk> ; of his [government] to attend ; into the [government] the means
+   71   3 his            3 | * of [his] * to ; * of [his] government to ; to * [his] * in
+  860   2 them           6 | * of [them] * that ; con * [them] and *
+  380   2 those          3 | of and [those] of * ; writings of [those] two of
+   56   2 will           3 | spirit which [will] be necessary ; * it [will] certainly *
+   67   2 be             3 | which will [be] necessary in ; of * [be] * and
+ 1340   2 with           3 | con * [with] the present ; of * [with] the *
+  390   2 present        3 | with the [present] appearances united ; and whose [present] * of
+ 1870   2 peace          6 | which the [peace] * the ; war or [peace] it *
+ 1370   2 general        3 | * the [general] * the ; to the [general] * of
+ 1380   2 year           3 | of * [year] and * ; in the [year] the laws
+   27   2 mr             6 | * a [mr] * and ; * for [mr] * instead
+ 1710   2 war            3 | the late [war] or peace ; of a [war] the most
+  569   2 <unk>          9 | it * [<unk>] * <unk> ; the convention [<unk>] * <unk>
+  771   2 <unk>          9 | <unk> * [<unk>] of * ; <unk> * [<unk>] of *
+   31   2 m              3 | of * [m] jones commodore ; of * [m] jones commodore
+  870   2 jones          3 | * m [jones] commodore * ; * m [jones] commodore *
+  740   2 commodore      3 | m jones [commodore] * lost ; m jones [commodore] * lost
+ 1160   2 lost           3 | commodore * [lost] not the ; commodore * [lost] not this
+ 1570   2 not            3 | * lost [not] the case ; * lost [not] this case
+ 1430   2 case           3 | not the [case] i * ; not this [case] of *
+   72   2 their          3 | * of [their] country * ; of * [their] * for
+  370   2 and            6 | most * [and] * of ; for * [and] even in
+ 1830   2 may            3 | the of [may] * in ; the * [may] * for
+ 1140   2 con            6 | in the [con] * of ; was in [con] * them
+ 1730   2 convention     3 | the * [convention] * the ; of the [convention] <unk> *
+   23   2 from           3 | a * [from] the * ; of * [from] tions of
+ 1860   2 means          3 | most * [means] have * ; government the [means] of *
+   47   2 have           3 | * means [have] * to ; * and [have] no doubt
+  770   2 this           6 | to * [this] * of ; lost not [this] case of
+ 1450   2 can            3 | no doubt [can] exist that ; <unk> which [can] * that
+ 1770   2 power          3 | * the [power] of * ; in * [power]
+    9   2 for            3 | of * [for] mr * ; may * [for] in the
+ 1620   1 your           3 | question of [your] * of
+  783   1 having         3 | * and [having] * of
+ 1060   1 june           3 | the of [june] * of
+  830   1 spirit         3 | the * [spirit] which will
+ 1350   1 necessary      3 | will be [necessary] in con
+ 1811   1 appearances    3 | the present [appearances] united states
+  930   1 united         3 | present appearances [united] states on
+ 1010   1 states         3 | appearances united [states] on which
+   58   1 on             3 | united states [on] which the
+  790   1 idea           3 | * the [idea] of *
+  980   1 england        6 | * and [england] and the
+  680   1 who            3 | of * [who] * the
+ 1700   1 whose          3 | * and [whose] present *
+ 1460   1 same           3 | of the [same] or to
+  883   1 reporting      3 | * and [reporting] * and
+ 1210   1 late           3 | of the [late] war or
+   60   1 country        3 | of their [country] * of
+ 1721   1 laws           3 | year the [laws] and of
+  620   1 ness           3 | the * [ness] and *
+   70   1 letter         3 | of * [letter] of july
+  220   1 july           6 | letter of [july] and that
+   32   1 an             3 | and that [an] * of
+   49   1 our            3 | of in [our] naval force
+ 1100   1 naval          3 | in our [naval] force that
+ 1510   1 force          3 | our naval [force] that would
+ 1360   1 would          3 | force that [would] * etc
+ 1560   1 etc            3 | would * [etc] * it
+  710   1 certainly      3 | it will [certainly] * the
+  640   1 are            3 | the * [are] * of
+ 1030   1 reasons        3 | and for [reasons] that the
+  750   1 october        3 | of <unk> [october] * of
+ 1771   1 powers         3 | that * [powers] the *
+   55   1 a              3 | <unk> of [a] war the
+  510   1 jefferson      3 | * to [jefferson] * for
+ 1320   1 even           3 | * and [even] in that
+   78   1 by             3 | of it [by] the *
+  500   1 attend         3 | government to [attend] to or
+  250   1 message        6 | of the [message] that *
+   11   1 as             3 | that * [as] to in
+ 1490   1 other          3 | in the [other] * tive
+  340   1 tive           3 | other * [tive] * into
+ 1530   1 into           3 | tive * [into] the government
+   26   1 no             3 | and have [no] doubt can
+ 1330   1 doubt          3 | have no [doubt] can exist
+  410   1 exist          3 | doubt can [exist] that the
+  180   1 was            3 | the * [was] in con
+ 1021   1 writings       3 | the the [writings] of those
+   13   1 two            3 | of those [two] of the
+ 1063   1 <unk>          3 | * the [<unk>] tion is
+ 1190   1 tion           3 | the <unk> [tion] is that
+   74   1 is             3 | <unk> tion [is] that to
+ 1280   1 gress          6 | the con [gress] the whole
+  320   1 whole          6 | gress the [whole] * of
+ 1150   1 spain          3 | * of [spain] and the
+    2   1 at             3 | the * [at] the *
+ 1810   1 appearance     3 | and the [appearance] of *
+  690   1 instead        3 | mr * [instead] of con
+ 1191   1 tions          3 | * from [tions] of *

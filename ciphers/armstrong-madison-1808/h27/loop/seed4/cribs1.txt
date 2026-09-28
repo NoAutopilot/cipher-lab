@@ -1,0 +1,4 @@
+# H27 round 1, seed 4, reader = the runner session, from the round-0 view only (hidden.json never opened):
+# "instead of", "to you his", "a young", "is at the", "is in this case", "at war with", "more than the",
+# "which they"; 62 (23x) taken as "and" by frequency since 77 carries the clearer "to" contexts
+56=the, 28=of, 62=and, 77=to, 46=a, 93=is, 78=in, 64=at, 42=more, 16=his, 29=which

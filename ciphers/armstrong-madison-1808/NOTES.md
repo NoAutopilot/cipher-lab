@@ -2355,3 +2355,94 @@ unchecked.
 - archival-route; a raw, pre-editing Rotunda transcription of an 8 Jan 1810 JQA-to-TBA letter (read via web reader after a direct curl 403) describes a sliding lock/key with four alternating letter columns; the checkpoint states no implementation or cryptanalytic exclusion was drawn from it -- unchecked.
 
 No check-solved candidate (no printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key is named; the checkpoint states explicitly that no numeric mapping, shape assignment, crib or plaintext candidate is licensed by these passages).
+
+## Campaign step H27 (28 Sept 2026, 01:45-02:10 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne, replacing
+session_01R2T5qwd7NBMWGnjRtj8ieX at its context line). Hypothesis H27 (the orchestrator's 00:26 row): a power test
+of ARM3-LOOP's crib loop on the two-level decade/slot design BEFORE any further crib round -- simulate the design on
+en18 text at the target's length, give the solver the slot grammar, and run the loop on three synthetic letters;
+30 percent of roots recovered licenses one target run, less does not. Pre-registration (gate, metric, reader
+protocol, the known design caveat) written at 01:50 UTC before any letter was built: `h27/PREREGISTRATION.md`.
+
+**Instrument (shared tool, Usage 8: an option, not a private copy).** `tools/families/nomenclator.py` gained
+`--param slot_grammar=1`: the book above 100 is one root lemma per decade with its inflected forms at fixed slots --
+0 root, 1 plural or past (the commoner of the two in the register; the other form becomes a root of its own), slots
+2-9 one suffix class each (ing, er, ly, ion, ment, ness, est, able) in a per-book random order. `inflect`/`deinflect`
+are deterministic and round-trip (offline test `tools/tests/test_nomenclator_grammar.py`). The control builder
+(`make_control_grammar`) keeps ARM-C1's shape (Jefferson Vol IX held out of the LM, 369 coded tokens, the target's
+wildcard runs, a cold 99-value particle block); the solver (`solve_grammar`) anneals over particle words and ONE ROOT
+PER OCCUPIED DECADE, all of a decade's forms following the slot map, which it is TOLD (`params["slot_map"]`, the
+most favourable case: its unknowns are the 99 particle words and 73-85 roots, against ARM3-LOOP's 181-216 free
+values). Root candidates come from the LM's neighbour tables at every occurrence of every value in the decade,
+de-inflected through the value's slot, plus the sibling-vocabulary prior. `tools/crib_rounds.py` writes the true
+roots into hidden.json (never opened by the reader) and its score verb reports root recovery beside the ARM3-LOOP
+columns. The plain path (`slot_grammar` unset) is unchanged: `tools/tests/test_nomenclator.py` and
+`tools/tests/test_crib_rounds.py` re-run after the change: both pass (the latter needed a one-line fix unrelated to this step -- it asserted 353 ms tokens, stale since H17 restored the witness to 369; now read from the file).
+
+**Synthetic letters (`h27/loop/seed{2,3,4}/`, state.json control_stats) beside the target.**
+
+| | seed 2 | seed 3 | seed 4 | target (ciphertext.txt) |
+|---|---|---|---|---|
+| coded tokens / distinct / singletons | 369 / 131 / 76 | 369 / 122 / 58 | 369 / 114 / 52 | 369 / 216 / 139 |
+| particle tokens / book tokens | 227 / 142 | 243 / 126 | 239 / 130 | 132 / 237 |
+| distinct book values / decades used | 90 / 85 | 78 / 73 | 74 / 73 | 168 / 99 |
+| repeated decades / single-token decades | 31 / 54 | 34 / 39 | 33 / 40 | 56 / 43 |
+| book forms in the key (180 roots) | 322 | 322 | 320 | 900-1800 est. (ARM-DESIGN Q3) |
+| wildcard tokens (OOV runs) | 142 | 141 | 139 | 35 |
+| units-digit share slot 0 / slot 1 | 0.90 / 0.05 | 0.87 / 0.10 | 0.86 / 0.08 | 0.388 / 0.20 |
+
+The design as the row states it (180 roots, fixed inflection slots) cannot reproduce the target's shape: a 180-root
+book holds about 320 forms, so more than half the letter's content words fall out as wildcards (139-142 vs 35), the
+book carries 126-142 tokens instead of 237, and the units digit sits at slot 0 nine times in ten where the target
+has it four times in ten -- ARM-DESIGN Q2/Q3's `hdec` finding (top1 0.76, coverage ~0.45) reproduced from the other
+side. This is the caveat the pre-registration named: the simulated letters are EASIER than the target on the book
+(fewer unknowns, known grammar, more repetition per decade) and harder only on context (more wildcards).
+
+**Results (rule 3: whatever they say; scores.tsv per seed; reader = this session from the view only, at most 12
+cribs a round, two rounds).**
+
+| seed | blind: blended (P / B) | roots | round 1: blended (P / B) | roots | round 2: blended (P / B) | roots | best roots | cribs right/new (r1, r2) |
+|---|---|---|---|---|---|---|---|---|
+| 2 | 29.0 (45.4 / 2.8) | 1/85 = 1.2% | 31.2 (49.8 / 1.4) | 2/85 = 2.4% | 32.5 (49.8 / 4.9) | 4/85 = 4.7% | 4.7% | 6/11, 0/1 |
+| 3 | 17.1 (25.5 / 0.8) | 1/73 = 1.4% | 16.8 (25.1 / 0.8) | 1/73 = 1.4% | 8.9 (13.6 / 0.0) | 0/73 = 0.0% | 1.4% | 2/12, 2/5 |
+| 4 | 17.1 (24.7 / 3.1) | 4/73 = 5.5% | 10.0 (14.2 / 2.3) | 3/73 = 4.1% | 0.5 (0.8 / 0.0) | 0/73 = 0.0% | 5.5% | 1/11, 0/11 |
+| mean | 21.1 (spread 11.9) | 2.7% | 19.3 | 2.6% | 14.0 | 1.6% | **3.9%** | 11 right / 51 new (22%) |
+
+Blended = share of coded tokens read right (percent); P particle class, B book class; roots = decades occurring in the
+letter whose solved root equals the true root; top-30 repeated values right blind 6 / 3 / 2 (floor gate 10, failed
+on every seed as in ARM3-LOOP). Headroom check passed (blind roots 1-6 percent, nowhere near ceiling).
+
+**GATE VERDICT: NOT MET, by an order of magnitude.** Best root recovery 4.7 / 1.4 / 5.5 percent, mean 3.9 against the
+row's 30; the blind solver with the grammar given reads 2.7 percent of roots, and the crib rounds move it by at most
++3.5 points on one seed and DOWN on the other two (the reader's cribs were right 22 percent of the time, below
+ARM3-LOOP's 33 -- with the book collapsed to 320 forms the decoded neighbours the reader works from are the solver's
+own wrong guesses, and the particle contexts that carried ARM3-LOOP's right cribs are thinner). ARM3-LOOP's crib
+gate (10 points blended, above the blind spread of 11.9) is not met either: +3.5 / -8.2 / -16.6. The book class
+never exceeds 4.9 percent. TARGET NOT RUN (the row's own condition). A slot-grammar constraint that hands the
+solver the inflection map and halves its unknowns does not lift root recovery off the floor at this length: what
+limits family C/D here is not the number of free values but the absence of any repeated content context to anchor
+them -- 39-54 of the 73-85 decades occur once, and the wildcard runs cut the trigram windows around the rest.
+
+**What this settles for the campaign.** Family D (model-in-the-loop crib rounds) on the two-level design is now
+measured twice on matched controls -- ARM3-LOOP without the grammar, H27 with it -- with the gate failed both times
+and every number moving the same way; per CLAUDE.md rule 3's "second attempt" paragraph the next attempt needs new
+material (more ciphertext in the same code, a sibling letter, a key or an editor's gloss), not a further knob on the
+loop. Logged as "untestable by this method at N=369" (not refuted): rule 5, the target stays `open`. Side finding
+for the design prior (`design/`, `family_C_spec.md`): a book of decade roots with fixed inflection slots is
+excluded as the target's design by its own slot-0 share (0.86-0.90 simulated vs 0.388), so the target's slots are
+separate entries with a book-wide popularity order, ARM-DESIGN's own reading, and a solver that treats a decade as
+one root has nothing extra to exploit on it -- the grammar the printed form of H14/H19 describes (marks as
+operators) is a different mechanism from a units-digit slot grammar and is untouched by this result.
+
+Files: `h27/PREREGISTRATION.md`; `h27/loop/seed{2,3,4}/` (cipher.tsv, hidden.json with `roots`, state.json with
+the slot map, round0-2.{json,txt}, cribs1-2.txt, scores.tsv), `h27/loop/seedN.roundR.log`; tool changes in
+`tools/families/nomenclator.py` (slot grammar block at the end), `tools/crib_rounds.py` (roots in hidden.json and
+the score verb), `tools/tests/test_nomenclator_grammar.py`. Reproduce: `python3 tools/crib_rounds.py --family
+nomenclator --spec specs/armstrong-madison-1808.json --target-cipher ciphers/armstrong-madison-1808/ciphertext.txt
+--dir ciphers/armstrong-madison-1808/h27/loop/seed2 --seed 2 --restarts 3 --param sweeps=30 --param phase1=20
+--param holdout=5 --param slot_grammar=1`, then `--round R --cribs .../cribsR.txt`, then `--score`. No network,
+0 requests to any host; no subagent, 0 of 4 vision calls. No reading, no class change, no target token decoded;
+rule 10: nothing here is called new or first. Cost: get_session carries no cost figure for this session; the
+row's estimate (5 USD) is what `campaign.py --spend` records (about 25 minutes of one Fable session, three parallel
+CPU runs of 2-3 minutes per round).

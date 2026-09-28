@@ -565,3 +565,452 @@ def split_decode(dec, msgs):
         out.append(" ".join(ws[pos:pos + len(m)]))
         pos += len(m)
     return out
+
+
+# ---------------------------------------------------------------- slot grammar (H27, 28 Sept 2026)
+# `--param slot_grammar=1`: the book above 100 is one ROOT lemma per decade with its inflected forms at fixed
+# slots (0 root, 1 plural/past, slots 2-9 one suffix class each, the class->slot map fixed per book and given to
+# the solver through params["slot_map"], the most favourable case). The solver's unknowns are then the particle
+# words and one root per occupied decade (campaign step H27 of ciphers/armstrong-madison-1808: a power test of
+# the crib loop on this design before any further crib round on the target).
+GRAMMAR_CLASSES = ["ing", "er", "ly", "ion", "ment", "ness", "est", "able"]  # slots 2-9, per-book order
+VOWELS = set("aeiou")
+
+
+def inflect(root, cls):
+    """surface form of root under suffix class cls ('' root, 's', 'ed', or one of GRAMMAR_CLASSES)."""
+    if cls == "" or not root:
+        return root
+    e = root.endswith("e")
+    cy = len(root) > 2 and root.endswith("y") and root[-2] not in VOWELS
+    if cls == "s":
+        if root.endswith(("s", "x", "z", "ch", "sh")):
+            return root + "es"
+        return root[:-1] + "ies" if cy else root + "s"
+    if cls == "ed":
+        return root + "d" if e else (root[:-1] + "ied" if cy else root + "ed")
+    if cls == "ing":
+        return root[:-1] + "ing" if e and not root.endswith("ee") else root + "ing"
+    if cls == "er":
+        return root + "r" if e else (root[:-1] + "ier" if cy else root + "er")
+    if cls == "ly":
+        if root.endswith("le"):
+            return root[:-1] + "y"
+        return root[:-1] + "ily" if cy else root + "ly"
+    if cls == "ion":
+        return root[:-1] + "ion" if e else root + "ion"
+    if cls == "ment":
+        return root + "ment"
+    if cls == "ness":
+        return root[:-1] + "iness" if cy else root + "ness"
+    if cls == "est":
+        return root + "st" if e else (root[:-1] + "iest" if cy else root + "est")
+    if cls == "able":
+        return root[:-1] + "able" if e else root + "able"
+    return root + cls
+
+
+def deinflect(form, cls):
+    """every root r with inflect(r, cls) == form (0, 1 or 2 candidates)."""
+    if cls == "":
+        return [form]
+    outs = set()
+    ends = {"s": ["s", "es", "ies"], "ed": ["d", "ed", "ied"], "ing": ["ing"], "er": ["r", "er", "ier"],
+            "ly": ["ly", "ily", "y"], "ion": ["ion"], "ment": ["ment"], "ness": ["ness", "iness"],
+            "est": ["st", "est", "iest"], "able": ["able"]}.get(cls, [cls])
+    for suf in ends:
+        if form.endswith(suf) and len(form) > len(suf) + 1:
+            base = form[:-len(suf)]
+            for r in (base, base + "e", base + "y", base + "le" if suf == "y" else None):
+                if r and len(r) >= 2 and inflect(r, cls) == form:
+                    outs.add(r)
+    return sorted(outs)
+
+
+def make_slot_map(rng):
+    order = list(GRAMMAR_CLASSES)
+    rng.shuffle(order)
+    return {0: "", 1: "s|ed", **{s: c for s, c in zip(range(2, 10), order)}}
+
+
+def _slot_map_param(params):
+    m = params.get("slot_map")
+    if isinstance(m, str):
+        m = dict(kv.split(":") for kv in m.split(";") if kv)
+    return {int(k): v for k, v in m.items()}
+
+
+def grammar_book(content, freq, rng, n_dec, slot_map):
+    """content words (frequency order) -> families {root: {slot: form}} under the slot grammar; decades assigned
+    to the n_dec most frequent families. A form that is another word's inflection joins that root's family; a
+    root's slot 1 holds its commoner of plural/past, the other form becomes a root of its own."""
+    cset = set(content)
+    cls_slot = {c: s for s, c in slot_map.items() if s >= 2}
+    fam, member_of = {}, {}
+    for w in content:
+        if w in member_of:
+            continue
+        best = None
+        for cls in ["s", "ed"] + GRAMMAR_CLASSES:
+            for r in deinflect(w, cls):
+                if r in cset and r != w and (best is None or freq(r) > freq(best[0])):
+                    best = (r, cls)
+        if best is None:
+            fam.setdefault(w, {0: w})
+            member_of[w] = w
+            continue
+        r, cls = best
+        fam.setdefault(r, {0: r})
+        member_of.setdefault(r, r)
+        slot = 1 if cls in ("s", "ed") else cls_slot[cls]
+        if slot in fam[r] and fam[r][slot] != w:
+            fam.setdefault(w, {0: w})  # slot taken by the commoner form: this form is its own root
+            member_of[w] = w
+        else:
+            fam[r][slot] = w
+            member_of[w] = r
+    order = sorted(fam, key=lambda r: (-sum(freq(f) for f in fam[r].values()), r))[:n_dec]
+    decades = list(range(100, 100 + 10 * n_dec, 10))
+    rng.shuffle(decades)
+    book, roots = {}, {}
+    for dec, r in zip(decades, order):
+        roots[dec // 10] = r
+        for slot, f in fam[r].items():
+            book[f] = dec + slot
+    return book, roots
+
+
+def make_control_grammar(spec, seed, corpora, params):
+    rng = random.Random(seed * 104729 + 17)
+    hold = _p(params, "holdout", 5)
+    if hold >= len(corpora):
+        hold = len(corpora) - 1
+    train = [c for i, c in enumerate(corpora) if i != hold]
+    held = corpora[hold]
+    tgt = _split(params.get("target_msgs") or [])
+    n_coded = sum(1 for k, v in tgt if k != "W") or _p(params, "N", 369)
+    lm = get_lm(train, _p(params, "vocab_min", 3))
+    ranked = [w for w, c in sorted(lm.freq.items(), key=lambda x: (-x[1], x[0])) if w in lm.vocab]
+    hw = words_of(held)
+    lo, hi = len(hw) // 20, len(hw) * 19 // 20
+    start = rng.randrange(lo, hi)
+    pfw, pfill = _p(params, "pblock_fw", 30), _p(params, "pblock_fill", 200)
+    plist = ranked[:pfw]
+    plist += [c for c in "abcdefghijklmnopqrstuvwxyz" if c not in plist]
+    plist += [w for w in ranked[pfill:] if w not in plist and len(w) > 1][:99 - len(plist)]
+    pvals = list(range(1, 100))
+    rng.shuffle(pvals)
+    key = dict(zip(plist[:99], pvals))
+    n_dec = _p(params, "decades", 180)
+    span = 3000
+    reg = Counter(hw[:max(0, start - span)] + hw[start + span:])
+    freq = lambda w: reg[w] + lm.freq[w] / 1e6
+    content = [w for w, c in sorted(reg.items(), key=lambda x: (-x[1], x[0])) if w in lm.vocab and w not in key and len(w) > 2]
+    slot_map = make_slot_map(rng)
+    book, roots = grammar_book(content, freq, rng, n_dec, slot_map)
+    key.update(book)
+    cipher, plain, classes, oov_words = [], [], [], 0
+    coded, i, last_wild = 0, start, False
+    while coded < n_coded and i < len(hw):
+        w = hw[i]
+        i += 1
+        if w in key:
+            v = key[w]
+            cipher.append(str(v)); plain.append(w); classes.append("P" if v < 100 else "B")
+            coded += 1; last_wild = False
+        else:
+            oov_words += 1
+            if not last_wild:
+                cipher.append("*"); plain.append("*"); classes.append("W"); last_wild = True
+    used_dec = {int(t) // 10 for t in cipher if t.isdigit() and int(t) >= 100}
+    _LAST_CONTROL["classes"] = classes
+    _LAST_CONTROL["roots"] = {d: roots[d] for d in used_dec}
+    _LAST_CONTROL["slot_map"] = slot_map
+    _LAST_CONTROL["stats"] = {"coded": coded, "distinct": len(set(cipher) - {"*"}),
+                              "distinct_book": len({t for t in cipher if t.isdigit() and int(t) >= 100}),
+                              "decades_used": len(used_dec), "book_forms": len(book), "book_roots": len(roots),
+                              "oov_words": oov_words, "wild_tokens": classes.count("W"),
+                              "particle_tokens": classes.count("P"),
+                              "distinct_particle": len({t for t in cipher if t.isdigit() and int(t) < 100}),
+                              "holdout_index": hold, "letter_start_word": start, "slot_grammar": 1}
+    print(f"  control build (slot grammar): {_LAST_CONTROL['stats']}")
+    return [cipher], " ".join(plain), train
+
+
+def solve_grammar(cipher_msgs, spec, seed, restarts, corpora, params):
+    """Gibbs anneal over particle words and one root per decade; forms follow the given slot map."""
+    lm = get_lm(corpora, _p(params, "vocab_min", 3))
+    particles, bookprior, ranked = build_priors(lm, params)
+    slot_map = _slot_map_param(params)
+    toks = _split(cipher_msgs)
+    n = len(toks)
+    sweeps, greedy = _p(params, "sweeps", 30), _p(params, "greedy", 3)
+    dup_w, oov_pen = _p(params, "dup_w", 2.0), _p(params, "oov_pen", 3.0)
+    T0, T1 = _p(params, "T0", 1.5), _p(params, "T1", 0.25)
+    max_cands = _p(params, "max_cands", 700)
+    values = sorted({v for k, v in toks if k != "W"})
+    occ = defaultdict(list)
+    for i, (k, v) in enumerate(toks):
+        if k != "W":
+            occ[v].append(i)
+    pvals = [v for v in values if v < 100]
+    dec_vals = defaultdict(list)
+    for v in values:
+        if v >= 100:
+            dec_vals[v // 10].append(v)
+    decs = sorted(dec_vals)
+    units = [("P", v) for v in pvals] + [("D", d) for d in decs]
+    cls_of = {v: slot_map.get(v % 10, "") for v in values if v >= 100}
+
+    def forms_of(root, d):
+        out = {}
+        for v in dec_vals[d]:
+            c = cls_of[v]
+            if c == "s|ed":
+                fs, fe = inflect(root, "s"), inflect(root, "ed")
+                out[v] = fs if lm.freq.get(fs, 0) >= lm.freq.get(fe, 0) else fe
+            else:
+                out[v] = inflect(root, c)
+        return out
+
+    fixed_p, fixed_r = {}, {}
+    for k_, w_ in (params.get("cribs") or {}).items():
+        v_ = int(k_)
+        if v_ not in occ:
+            continue
+        w = words_of(str(w_))[0] if words_of(str(w_)) else UNK
+        if v_ < 100:
+            fixed_p[v_] = w
+        else:
+            c = cls_of[v_]
+            cands = []
+            for cc in (["s", "ed"] if c == "s|ed" else [c]):
+                cands += deinflect(w, cc)
+            fixed_r[v_ // 10] = max(cands, key=lambda r: lm.freq.get(r, 0)) if cands else w
+    plist = sorted(particles & lm.vocab, key=lambda w: (-lm.freq[w], w))
+    blist = sorted(bookprior & lm.vocab, key=lambda w: (-lm.freq[w], w))
+    ranked_content = [w for w in ranked[len(plist):] if len(w) > 2][:3000]
+    rootprior = [w for w in blist if len(w) > 2]
+
+    def window_score(ws, positions):
+        s = 0.0
+        for j in positions:
+            a = ws[j - 2] if j >= 2 else "<s>"
+            b = ws[j - 1] if j >= 1 else "<s>"
+            s += lm.lp3(ws[j], a, b)
+        return s
+
+    def affected(vs):
+        out = set()
+        for v in vs:
+            for i in occ[v]:
+                out.update(j for j in (i, i + 1, i + 2) if j < n)
+        return sorted(out)
+
+    def total_score(assign, roots):
+        ws = [assign[v] if k != "W" else UNK for k, v in toks]
+        s = window_score(ws, range(n))
+        cnt = Counter(w for w in assign.values() if w != UNK)
+        s -= dup_w * sum(c - 1 for c in cnt.values() if c > 1)
+        for v in pvals:
+            if assign[v] not in particles:
+                s -= oov_pen
+        for d, r in roots.items():
+            if r != UNK and r not in bookprior:
+                s -= oov_pen
+            for v in dec_vals[d]:
+                if assign[v] != UNK and assign[v] not in lm.uni:
+                    s -= oov_pen
+        return s
+
+    def set_unit(u, x, assign, roots, ws, wcount):
+        kind, key_ = u
+        if kind == "P":
+            wcount[assign[key_]] -= 1
+            assign[key_] = x
+            wcount[x] += 1
+            for i in occ[key_]:
+                ws[i] = x
+        else:
+            roots[key_] = x
+            fm = forms_of(x, key_) if x != UNK else {v: UNK for v in dec_vals[key_]}
+            for v, f in fm.items():
+                wcount[assign[v]] -= 1
+                assign[v] = lm.norm(f) if f != UNK else UNK
+                wcount[assign[v]] += 1
+                for i in occ[v]:
+                    ws[i] = assign[v]
+
+    def cand_particles(v, ws, rng):
+        cands = {ws[occ[v][0]]}
+        cands.update(plist)
+        for i in occ[v][:6]:
+            a = ws[i - 2] if i >= 2 else "<s>"
+            b = ws[i - 1] if i >= 1 else "<s>"
+            c = ws[i + 1] if i + 1 < n else "</s>"
+            cands.update(w for w, _ in lm.succ3.get((a, b), Counter()).most_common(80))
+            cands.update(w for w, _ in lm.succ2.get(b, Counter()).most_common(120))
+            cands.update(w for w, _ in lm.pred2.get(c, Counter()).most_common(120))
+            cands.update(w for w, _ in lm.mid.get((b, c), Counter()).most_common(80))
+        cands.discard(UNK); cands.discard("<s>"); cands.discard("</s>")
+        return sorted(w for w in cands if w in lm.uni)
+
+    def cand_roots(d, roots, ws, rng):
+        cands = {roots[d]} if roots[d] != UNK else set()
+        cands.update(rootprior[:60])
+        cands.update(rng.sample(rootprior, min(120, len(rootprior))))
+        cands.update(rng.sample(ranked_content, min(40, len(ranked_content))))
+        for v in dec_vals[d]:
+            c = cls_of[v]
+            classes = ["s", "ed"] if c == "s|ed" else [c]
+            sugg = set()
+            for i in occ[v][:4]:
+                a = ws[i - 2] if i >= 2 else "<s>"
+                b = ws[i - 1] if i >= 1 else "<s>"
+                cn = ws[i + 1] if i + 1 < n else "</s>"
+                sugg.update(w for w, _ in lm.succ3.get((a, b), Counter()).most_common(60))
+                sugg.update(w for w, _ in lm.succ2.get(b, Counter()).most_common(100))
+                sugg.update(w for w, _ in lm.pred2.get(cn, Counter()).most_common(100))
+                sugg.update(w for w, _ in lm.mid.get((b, cn), Counter()).most_common(60))
+            for w in sugg:
+                if w in (UNK, "<s>", "</s>") or len(w) < 3:
+                    continue
+                for cc in classes:
+                    cands.update(r for r in deinflect(w, cc) if len(r) > 2)
+        cands = sorted(cands)
+        if len(cands) > max_cands:
+            keep = set(rng.sample(cands, max_cands))
+            if roots[d] != UNK:
+                keep.add(roots[d])
+            cands = sorted(keep)
+        return cands
+
+    def unit_score(u, x, assign, roots, ws, wcount):
+        kind, key_ = u
+        if kind == "P":
+            v = key_
+            old = assign[v]
+            s = 0.0 if x in particles else -oov_pen
+            others = wcount.get(x, 0) - (1 if old == x else 0)
+            if others > 0:
+                s -= dup_w * others
+            pos = affected([v])
+            for i in occ[v]:
+                ws[i] = x
+            s += window_score(ws, pos)
+            for i in occ[v]:
+                ws[i] = old
+            return s
+        d = key_
+        s = 0.0 if x in bookprior else -oov_pen
+        fm = forms_of(x, d)
+        olds = {v: assign[v] for v in dec_vals[d]}
+        seen = Counter()
+        for v, f in fm.items():
+            fn = lm.norm(f)
+            if fn == UNK:
+                s -= oov_pen
+            others = wcount.get(fn, 0) - (1 if olds[v] == fn else 0) + seen[fn]
+            if others > 0:
+                s -= dup_w * others
+            seen[fn] += 1
+            for i in occ[v]:
+                ws[i] = fn
+        s += window_score(ws, affected(dec_vals[d]))
+        for v, o in olds.items():
+            for i in occ[v]:
+                ws[i] = o
+        return s
+
+    def gibbs_sweep(order, assign, roots, ws, wcount, T, rng):
+        rng.shuffle(order)
+        for u in order:
+            cands = cand_particles(u[1], ws, rng) if u[0] == "P" else cand_roots(u[1], roots, ws, rng)
+            if not cands:
+                continue
+            scores = [unit_score(u, x, assign, roots, ws, wcount) for x in cands]
+            if T > 0:
+                m = max(scores)
+                x = rng.choices(cands, [math.exp((s - m) / T) for s in scores])[0]
+            else:
+                x = cands[max(range(len(cands)), key=scores.__getitem__)]
+            set_unit(u, x, assign, roots, ws, wcount)
+        if len(lm.cache) > 3_000_000:
+            lm.cache.clear()
+
+    is_fixed = lambda u: (u[0] == "P" and u[1] in fixed_p) or (u[0] == "D" and u[1] in fixed_r)
+    free = [u for u in units if not is_fixed(u)]
+    rep_u = [u for u in free if (u[0] == "P" and len(occ[u[1]]) > 1) or (u[0] == "D" and sum(len(occ[v]) for v in dec_vals[u[1]]) > 1)]
+    sing_u = [u for u in free if u not in rep_u]
+    phase1 = _p(params, "phase1", 20)
+    best, best_roots, best_score, best_info = None, None, -float("inf"), {}
+    restart_keys, restart_scores, restart_roots = [], [], []
+    for r in range(max(1, restarts)):
+        rng = random.Random(seed * 7919 + r)
+        assign, roots = {}, {}
+        ws = [UNK] * n
+        wcount = Counter()
+        pv = sorted(pvals, key=lambda v: -len(occ[v]))
+        for rk, v in enumerate(pv):
+            assign[v] = plist[rk] if rk < len(plist) else rng.choice(plist)
+        for d in decs:
+            roots[d] = UNK
+            for v in dec_vals[d]:
+                assign[v] = UNK
+        for v in pvals:
+            for i in occ[v]:
+                ws[i] = assign[v]
+        wcount = Counter(assign.values())
+        for v, w in fixed_p.items():
+            set_unit(("P", v), w, assign, roots, ws, wcount)
+        for d, rt in fixed_r.items():
+            set_unit(("D", d), rt, assign, roots, ws, wcount)
+        for d in decs:
+            if roots[d] == UNK and d not in fixed_r and ("D", d) not in rep_u:
+                pass
+        if phase1 > 0 and rep_u:
+            for u in rep_u:
+                if u[0] == "D":
+                    set_unit(u, rng.choice(rootprior[:1500]), assign, roots, ws, wcount)
+            for sw in range(phase1):
+                T = T0 * (T1 / T0) ** (sw / max(1, phase1 - 1))
+                gibbs_sweep(list(rep_u), assign, roots, ws, wcount, T, rng)
+        for u in sing_u:
+            if u[0] == "D":
+                set_unit(u, rootprior[0], assign, roots, ws, wcount)
+        gibbs_sweep(list(sing_u), assign, roots, ws, wcount, 0.0, rng)
+        for sw in range(sweeps + greedy):
+            T = T0 * (T1 / T0) ** (sw / max(1, sweeps - 1)) if sw < sweeps else 0.0
+            gibbs_sweep(list(free), assign, roots, ws, wcount, T, rng)
+        sc = total_score(assign, roots)
+        print(f"    restart {r}: score {sc:.1f}")
+        restart_keys.append({str(v): w for v, w in assign.items()})
+        restart_roots.append({str(d): w for d, w in roots.items()})
+        restart_scores.append(round(sc, 2))
+        if sc > best_score:
+            best, best_roots, best_score, best_info = dict(assign), dict(roots), sc, {"restart": r}
+    dec = " ".join(best[v] if k != "W" else "*" for k, v in toks)
+    info = {"family": "nomenclator", "slot_grammar": 1, "seed": seed, "restarts": restarts, "sweeps": sweeps,
+            "greedy": greedy, "T0": T0, "T1": T1, "dup_w": dup_w, "oov_pen": oov_pen, "vocab": lm.V,
+            "particle_prior": len(plist), "book_prior": len(blist), "values": len(values), "decades": len(decs),
+            "singletons": sum(1 for v in values if len(occ[v]) == 1), "phase1": phase1, "slot_map": slot_map,
+            "best_restart": best_info.get("restart"), "score_per_token": best_score / n,
+            "cribs": {**{str(v): w for v, w in fixed_p.items()}, **{str(d * 10): r for d, r in fixed_r.items()}},
+            "roots": {str(d): w for d, w in best_roots.items()}, "restart_roots": restart_roots,
+            "restart_keys": restart_keys, "restart_scores": restart_scores}
+    return dec, best_score, info
+
+
+_solve_plain, _make_control_plain = solve, make_control
+
+
+def solve(cipher_msgs, spec, seed, restarts, corpora, params):  # noqa: F811
+    if int(params.get("slot_grammar", 0) or 0):
+        return solve_grammar(cipher_msgs, spec, seed, restarts, corpora, params)
+    return _solve_plain(cipher_msgs, spec, seed, restarts, corpora, params)
+
+
+def make_control(spec, seed, corpora, params):  # noqa: F811
+    if int(params.get("slot_grammar", 0) or 0):
+        return make_control_grammar(spec, seed, corpora, params)
+    return _make_control_plain(spec, seed, corpora, params)

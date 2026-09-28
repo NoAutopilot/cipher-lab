@@ -1,0 +1,121 @@
+# round 0: N=114 values, cribs=0, best score -1715.5 (-3.377/token); restarts [-1715.54, -1751.56, -1736.84]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 * the * instead of * <unk> * to you his * and * by them * of the * of * the * a  young * the * and * is within the treaty other of the * was not  * of * the parties a  further * of * s  treaty to of our  * the * com * is at the * of * you and it is the * treaty and * of <unk> the * of * s  * to an * of the the in * but any * of <unk> of the * and  are of * party * his * the at * of * to the * of the * the at war  with of course under the * of * and  expenditures for  the * of them in any  other * and * of europe the to the subject of this * of * of the * any of the * the * of * of * to which they * to his * and * is in this case which were * some * of the more on * of the treaty of * a  general * of that party the writings of * to the * and  * are * of the * the * of the writings of on the subject of that of the * of other <unk> * in case of the * i  have time to * river perdido and * the * and the more only a  * of * tion of and * d  and of <unk> my letter of * and that * of a  * in its * our  treaty of * more than the receipts in the wars * this * of the senate * they * in the * which will * about one  million of war  is * l  * of our  * of the * at present than in the correspondence with and abandoned and and * for  * the case of is to be * and this is the * of the * has been * the * of a  more * of the * of the treaty which the * of the * states the * of * the * of the * of the * and * is in this case in which the * given to * of the treaty of * a  * that a  <unk> one  of the valuable with those of * in the * of * and part of the national * their of * of the * of * in a  * <unk> the other greatest * of each other and be within their * the * of was not deemed a  and * of * of the two  other not only * but of * of the * of * to the * of * or * and  * are not  but to points * of them * a  for  * those of not * qui * d  * the * or * the
+    * 56  * 450     28 * 861   * 77 190 16  * 96  * 57 1120 * 62 56  * 28 * 23  * 46 180   * 23  * 96  * 93 120    23  510    140   27 56  * 820 1300 * 28 * 56  741     46 290     * 7  * 17 510    3  7  1860 * 31  * 630 * 93 64 31  * 28 * 190 96  50 93 56  * 510    96  * 7  1559  56  * 62 * 17 * 77 30 * 28 31  900 78 * 440 520 * 62 1452  45 56  * 1110 660 27 * 150   * 16  * 18  64 * 62 * 77 56  * 62 56  * 18  64 1690 200  28 420    1170  23  * 27 * 1110 1500         1890 31  * 7  1120 49 1440 1266  * 90  * 28 1520   18  3  31  74      28 800  * 28 * 28 31  * 520 27 56  * 56  * 62 * 27 * 3  29    1490 * 77 16  * 96  * 93 78 350  270  300   1480 * 1610 * 45 18  42   21 * 45 23  510    62 * 65 810     * 28 760  150   31  1731     7  * 77 56  * 1110 * 660 * 7  56  * 900 * 7  56  1841     62 21 18  74      28 550  28 56  * 62 140   1452  * 78 270  28 56  * 80 1150 54   3  * 1880  1270    96  * 23  * 90  18  42   47   65 * 62 * 490  45 96  * 60 90  45 1559  86 1620   28 * 96  550  * 45 46 * 78 24  * 1860 510    62 * 42   1100 900 1401     49 18  1691 * 350  * 45 23  1570   * 1490 * 78 56  * 29    2    * 730   1760 930     28 1690 93 * 63 * 62 1860 * 45 750 * 64 1370    1100 78 23  1410           200  96  790       90  96  * 1080 * 750 270  27 93 3  85 * 96  800  93 23  * 62 18  * 640 40   * 56  * 62 46 42   * 7  56  * 28 56  510    29    56  * 27 56  * 1641   31  * 28 * 56  * 28 56  * 62 56  * 96  * 93 78 350  270  49 300   56  * 1000  77 * 62 23  510    62 * 65 * 760  46 1559  1760 27 23  1634     200  1800  62 * 49 900 * 28 * 96  5    7  18  1470     * 1750  27 * 7  56  * 62 * 49 46 * 861   56  140   1233     * 28 890  140   96  85 120    1750  * 23  * 62 820 960 1321   46 96  * 28 * 28 31  1780 140   960 47   * 440 7  * 27 56  * 62 * 77 56  * 62 * 70 * 1110 * 660 1300 440 77 1241   * 28 1120 * 46 1890 * 1800  62 960 * 230 * 60 * 750 * 70 * 56 
+    - 9   - 6       9  - 9     - 6  3   3   - 6   - 3  3    - 9  9   - 9  - 9   - 3  3     - 9   - 6   - 3  3      9   6      3     9  9   - 3   3    - 9  - 9   3       3  3       - 6  - 6  6      3  6  3    - 9   - 3   - 3  3  9   - 9  - 3   6   3  3  9   - 6      6   - 6  9     9   - 9  - 6  - 6  6  - 9  9   3   3  - 3   3   - 9  9     3  9   - 9    6   9  - 3     - 3   - 6   3  - 9  - 6  9   - 9  9   - 6   3  3    6    9  3      3     9   - 9  - 9    3            3    9   - 6  3    6  3    3     - 3   - 9  6      6   3  9   3       9  3    - 9  - 9  9   - 3   9  9   - 9   - 9  - 9  - 3  3     3    - 6  3   - 6   - 3  3  3    3    3     3    - 3    - 3  6   3    3  - 3  9   6      9  - 6  6       - 9  3    3     9   3        6  - 6  9   - 9    - 6   - 6  9   - 3   - 6  9   3        9  3  6   3       9  3    9  9   - 9  3     9     - 3  3    9  9   - 3  3    3    3  - 3     3       6   - 9   - 3   6   3    3    6  - 9  - 3    3  6   - 3  3   3  9     6  6      9  - 6   3    - 3  3  - 3  3   - 3    6      9  - 3    3    3   3        6  6   3    - 3    - 3  9   3      - 3    - 3  9   - 3     3    - 3     6    3       9  3    3  - 3  - 9  3    - 3  3   - 3  3       3    3  9   3              6    6   3         3   6   - 3    - 3   3    9  3  3  3  - 6   3    3  9   - 9  6   - 6   6    - 9   - 9  3  3    - 6  9   - 9  9   6      3     9   - 9  9   - 6      9   - 9  - 9   - 9  9   - 9  9   - 6   - 3  3  3    3    6  3     9   - 6     6  - 9  9   6      9  - 6  - 3    3  9     6    9  9   3        6    3     9  - 6  3   - 9  - 6   3    6  6   3        - 3     9  - 6  9   - 9  - 6  3  - 9     9   3     9        - 9  3    3     6   3  3      3     - 9   - 9  3   3   3      3  6   - 9  - 9  9   3    3     3   3    - 3   6  - 9  9   - 9  - 6  9   - 9  - 3  - 9    - 6   3    3   6  3      - 9  3    - 3  3    - 3     9  3   - 3   - 3  - 3   - 3  - 9  
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   56  31 the            9 | * [the] * instead ; * of [the] * of ; other of [the] * was
+   28  24 of             9 | * instead [of] * <unk> ; the * [of] * the ; not * [of] * the
+   62  23 of             9 | them * [of] the * ; the * [of] * s ; any * [of] <unk> of
+   96  15 and            6 | his * [and] * by ; the * [and] * is ; * you [and] it is
+   23  12 the            9 | of * [the] * a ; young * [the] * and ; is within [the] treaty other
+    7  11 of             6 | further * [of] * s ; treaty to [of] our * ; and * [of] <unk> the
+   27  10 of             9 | treaty other [of] the * ; and are [of] * party ; the * [of] * and
+   31   9 the            9 | our * [the] * com ; is at [the] * of ; * of [the] the in
+   18   9 the            6 | his * [the] at * ; the * [the] at war ; of europe [the] to the
+   77   8 to             6 | <unk> * [to] you his ; s * [to] an * ; of * [to] the *
+   46   8 a              3 | the * [a] young * ; the parties [a] further * ; * of [a] * in
+   93   8 is             3 | and * [is] within the ; com * [is] at the ; and it [is] the *
+   45   8 of             3 | of <unk> [of] the * ; some * [of] the more ; on * [of] the treaty
+  510   7 treaty         6 | within the [treaty] other of ; * s [treaty] to of ; the * [treaty] and *
+   78   7 in             3 | the the [in] * but ; * is [in] this case ; <unk> * [in] case of
+  140   5 other          3 | the treaty [other] of the ; * of [other] <unk> * ; <unk> the [other] greatest *
+    3   5 to             3 | s treaty [to] of our ; europe the [to] the subject ; of * [to] which they
+   49   5 in             6 | of them [in] any other ; the receipts [in] the wars ; this case [in] which the
+   64   4 at             3 | * is [at] the * ; * the [at] * of ; * the [at] war with
+  900   4 the            3 | of the [the] in * ; the * [the] * of ; more than [the] receipts in
+ 1110   4 and            9 | the * [and] are of ; of * [and] expenditures for ; the * [and] * are
+   90   4 and            3 | other * [and] * of ; the * [and] the more ; * d [and] of <unk>
+  270   4 case           3 | in this [case] which were ; * in [case] of the ; * the [case] of is
+   42   4 more           3 | of the [more] on * ; and the [more] only a ; of * [more] than the
+   16   3 his            3 | to you [his] * and ; party * [his] * the ; * to [his] * and
+ 1120   3 them           3 | * by [them] * of ; * of [them] in any ; * of [them] * a
+ 1860   3 our            3 | to of [our] * the ; its * [our] treaty of ; * of [our] * of
+ 1559   3 <unk>          9 | * of [<unk>] the * ; and of [<unk>] my letter ; that a [<unk>] one of
+  440   3 but            3 | in * [but] any * ; only * [but] of * ; are not [but] to points
+  660   3 are            6 | * and [are] of * ; and * [are] * of ; and * [are] not but
+  200   3 with           6 | at war [with] of course ; the correspondence [with] and abandoned ; the valuable [with] those of
+   29   3 which          3 | * to [which] they * ; the * [which] will * ; the treaty [which] the *
+  350   3 this           3 | is in [this] case which ; wars * [this] * of ; is in [this] case in
+   65   3 a              6 | of * [a] general * ; more only [a] * of ; of * [a] * that
+  750   3 the            3 | * of [the] * at ; for * [the] case of ; d * [the] * or
+  960   3 not            3 | of was [not] deemed a ; two other [not] only * ; those of [not] * qui
+  861   2 <unk>          9 | of * [<unk>] * to ; a * [<unk>] the other
+  190   2 you            3 | * to [you] his * ; of * [you] and it
+  120   2 within         3 | * is [within] the treaty ; and be [within] their *
+  820   2 was            3 | the * [was] not * ; * of [was] not deemed
+ 1300   2 not            3 | * was [not] * of ; * are [not] but to
+   17   2 s              6 | of * [s] treaty to ; of * [s] * to
+  520   2 any            3 | * but [any] * of ; the * [any] of the
+ 1452   2 <unk>          9 | * of [<unk>] of the ; of other [<unk>] * in
+  150   2 party          3 | of * [party] * his ; of that [party] the writings
+ 1690   2 war            3 | the at [war] with of ; million of [war] is *
+ 1890   2 for            3 | and expenditures [for] the * ; * a [for] * those
+   74   2 subject        3 | to the [subject] of this ; on the [subject] of that
+  800   2 this           3 | subject of [this] * of ; * and [this] is the
+ 1490   2 they           3 | to which [they] * to ; senate * [they] * in
+  300   2 which          3 | this case [which] were * ; case in [which] the *
+   21   2 on             3 | the more [on] * of ; writings of [on] the subject
+  760   2 that           3 | * of [that] party the ; a * [that] a <unk>
+  550   2 that           3 | subject of [that] of the ; * and [that] * of
+   47   2 only           3 | the more [only] a * ; other not [only] * but
+   60   2 d              3 | and * [d] and of ; qui * [d] * the
+ 1100   2 than           3 | * more [than] the receipts ; at present [than] in the
+ 1760   2 one            6 | * about [one] million of ; a <unk> [one] of the
+   85   2 be             3 | is to [be] * and ; other and [be] within their
+ 1800   2 those          3 | valuable with [those] of * ; for * [those] of not
+ 1750   2 their          3 | national * [their] of * ; be within [their] * the
+   70   2 or             3 | of * [or] * and ; the * [or] * the
+  450   1 instead        6 | the * [instead] of *
+   57   1 by             3 | and * [by] them *
+  180   1 young          3 | * a [young] * the
+  741   1 parties        3 | * the [parties] a further
+  290   1 further        3 | parties a [further] * of
+  630   1 com            3 | the * [com] * is
+   50   1 it             3 | you and [it] is the
+   30   1 an             6 | * to [an] * of
+  420   1 course         3 | with of [course] under the
+ 1170   1 under          3 | of course [under] the *
+ 1500   1 expenditures   3 | * and [expenditures] for the
+ 1440   1 any            3 | them in [any] other *
+ 1266   1 other          3 | in any [other] * and
+ 1520   1 europe         6 | * of [europe] the to
+ 1480   1 were           3 | case which [were] * some
+ 1610   1 some           3 | were * [some] * of
+  810   1 general        6 | * a [general] * of
+ 1731   1 writings       3 | party the [writings] of *
+ 1841   1 writings       3 | of the [writings] of on
+   80   1 i              3 | the * [i] have time
+ 1150   1 have           3 | * i [have] time to
+   54   1 time           3 | i have [time] to *
+ 1880   1 river          3 | to * [river] perdido and
+ 1270   1 perdido        3 | * river [perdido] and *
+  490   1 tion           3 | of * [tion] of and
+   86   1 my             6 | of <unk> [my] letter of
+ 1620   1 letter         6 | <unk> my [letter] of *
+   24   1 its            3 | * in [its] * our
+ 1401   1 receipts       3 | than the [receipts] in the
+ 1691   1 wars           3 | in the [wars] * this
+ 1570   1 senate         3 | of the [senate] * they
+    2   1 will           3 | * which [will] * about
+  730   1 about          3 | will * [about] one million
+  930   1 million        3 | about one [million] of war
+   63   1 l              3 | is * [l] * of
+ 1370   1 present        3 | * at [present] than in
+ 1410   1 correspondence 3 | in the [correspondence] with and
+  790   1 abandoned      3 | with and [abandoned] and and
+ 1080   1 for            3 | and * [for] * the
+  640   1 has            6 | the * [has] been *
+   40   1 been           6 | * has [been] * the
+ 1641   1 states         6 | the * [states] the *
+ 1000   1 given          6 | the * [given] to *
+ 1634   1 valuable       3 | of the [valuable] with those
+    5   1 part           3 | * and [part] of the
+ 1470   1 national       3 | of the [national] * their
+ 1233   1 greatest       9 | the other [greatest] * of
+  890   1 each           3 | * of [each] other and
+ 1321   1 deemed         3 | was not [deemed] a and
+ 1780   1 two            3 | of the [two] other not
+ 1241   1 points         3 | but to [points] * of
+  230   1 qui            3 | not * [qui] * d

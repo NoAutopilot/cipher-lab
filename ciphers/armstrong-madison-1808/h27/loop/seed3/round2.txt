@@ -1,0 +1,129 @@
+# round 2: N=122 values, cribs=11, best score -1874.6 (-3.676/token); restarts [-1883.85, -1878.2, -1874.64]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 * those of our  * to * object the * of * the existing * to him * that of to john * the object of the same to * that a  * in the * spirit which will be seen by the  * tion and any others but whether such be the vessel * a  disposition to * of some of the * of * of of * the * than * the great * of * the * state of * and without any * the of may  or and the * a  mr * of carrying * and that of the of any  ship or vessel it * <unk> * <unk> to * this last point * ces  sion a  complete as * the from madison * to * in of state of things and to * to be the * that of * ing the * which * the * or a  * the * or to speak of that treaty * the * of * the in case you  know that neither * nor  * it will not * of * the of war * was of great * the war * and * to * that in * tion of * with the for  * in of their * the that * to * the that the * in those of the of * his  * and * the of * the * from * the and * com * of * be * the of * the * of * the in * the * the * of with those of the principle that a  trade * <unk> the * of <unk> etc * to a  * s  of * the a  * and that * ones of * in <unk> the british ship of war * necessity we * and thereby * the * and even in that of * to it is with * that and * are * in a  trade was suspended and or * in of * in the message that * i  was in of them * thought * balance of trade of necessity of * a  * the which <unk> and a  * and we have been very probable that a  * the * with one  of * to * a  * the <unk> be very * object as * of war * and * only by their * him and * of * and a  * a  of nations the same time to of * the * of <unk> letter on that and * a  * in of the  nation of mere * to a  * the of his  <unk> * <unk> to * this last point * ces  sion are complete the * to england and of * writings of * to * of * to * and of other the * as to * if mr * contains the the  * of * s  letters of * in * of * the a  * for  * if by a  * in * one 
+    * 1220  82 1620 * 21 * 100    38  * 82 * 93  783      * 21 860 * 41   10 21 1060 * 45  100    82 93  380  21 * 41   96 * 3  38  * 830    90    56   67 1350 35 1410 * 1340 430 390 1811   930 1010    58   33 38  1870   * 22 790         21 * 91 980  91 38  * 69 * 82 69 * 45  * 680  * 38  1370  * 69 * 45  * 1380  91 * 17  1700    390 * 45  69 1460 88 48  38  * 96 27 * 91 883      * 17  41   82 45  69 1210 1710 88 1870   89 * 569   * 771   21 * 31   870  740   * 1160 1570 22 1430     20 * 45  72   60      * 21 * 3  69 1380  10 1721   17  21 * 21 33 38  * 41   10 * 620 93  * 90    * 38  * 88 22 * 45  * 70 21 220   91 41   32     * 45  * 69 * 45  3  49   1100 1510 730  1360    * 1560 * 89 56   710 * 69 * 45  69 210 * 19  69 1370  * 45  210 * 370 * 21 * 41   85 * 1340 10 * 360  45  1830 * 3  69 1140  * 45  41   * 21 * 45  41   450 * 3  1220  91 93  69 * 1730 * 430 * 93  69 * 45  * 72   * 450 430 * 640 * 82 * 67 * 93  69 * 45  * 69 * 45  3  * 45  * 450 * 91 360  1220  91 450 1030      730  22 86    * 761   93  * 82 761   750 * 21 96 * 23 69 * 45  71 * 48  730  * 1771 69 * 85 761   45  55      1710 69 210 * 1860      47 * 48  510     * 450 * 370 1320 3  41   10 * 21 89 78 360  * 41   48  * 770 * 85 71 86    19  500       48  88 * 85 69 * 85 38  250     41   * 11 19  3  69 1490 * 340     * 1530    69 86    10 1860      82 * 22 * 45  90    761   48  96 * 17  47 26   1330 1450 410      41   22 * 45  * 360  1770 82 * 21 * 22 * 45  761   33 1450 * 100    20 * 69 210 * 430 * 180  35 1140  * 860 17  * 82 * 48  96 * 22 69 1021    45  380  13   21 69 * 45  * 10 1063  1190   74 41   48  * 71 * 3  69 1410 1280   10 320  * 21 22 * 45  69 1730 569   * 771   21 * 31   870  740   * 1160 1570 770 1430     45  * 21 1150    17  69 * 2        10 * 21 * 91 * 21 * 17  69 1810  45  * 20 21 * 9  27 * 690      45  1410 * 82 * 23 1191    82 * 3  * 69 * 45  22 * 1830 * 9  35 22 * 3  * 1770
+    - 3     9  3    - *  - 3      9   - 9  - 9   9        - *  9   - *    3  *  3    - *   3      9  9   6    *  - *    3  - *  9   - 3      3     *    *  3    6  3    - 3    3   3   3      3   3       3    3  9   3      - *  9           *  - 6  6    6  9   - *  - 9  *  - *   - 6    - 9   9     - *  - *   - 6     6  - 9   3       3   - *   *  3    *  *   9   - 3  3  - 6  3        - 9   *    9  *   *  3    3    *  3      *  - 9     - 9     *  - 3    3    3     - 3    3    *  3        3  - *   3    3       - *  - *  *  6     3  3      9   *  - *  3  9   - *    3  - 3   9   - 3     - 9   - *  *  - *   - 6  *  6     6  *    6      - *   - *  - *   *  3    3    3    3    3       - 6    - *  *    9   - *  - *   *  3   - 3   *  9     - *   3   - 3   - *  - *    9  - 3    3  - 6    *   6    - *  *  3     - *   *    - *  - *   *    6   - *  3     6  9   *  - 3    - 3   - 9   *  - *   - 3    - 6   3   - 6   - 9  - *  - 9   *  - *   - *  - *   *  - *   - 6   - 6  6    3     6  6   3         3    *  3     - 9     9   - 9  9     9   - *  3  - 9  *  - *   6  - *   3    - 3    *  - 9  9     *   6       3    *  3   - 3         3  - *   6       - 6   - 3   3    *  *    3  - *  *  6  6    - *    *   - 3   - 9  6  3     3   3         *   *  - 9  *  - 9  9   9       *    - 3  3   *  *  3    - 3       - 3       *  3     3  3         9  - *  - *   3     9     *   3  - 9   3  3    3    3    3        *    *  - *   - 6    3    9  - *  - *  - *   9     3  3    - 3      3  - *  3   - 3   - 3    6  3     - 9   9   - 9  - *   3  - *  *  6       *   6    6    *  *  - *   - 3  3     6      6  *    *   - 6  - *  *  3    3      3  3    - *  *  - *   *  3    9     - 9     *  - 3    3    3     - 3    3    3   3        *   - *  9       9   *  - 3        3  - *  - 6  - *  - 9   *  3     *   - 3  *  - 3  3  - 3        *   3    - 9  - 9  6       9  - *  - *  - *   *  - 6    - 3  6  *  - *  - 3   
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   45  30 the            * | john * [the] object of ; of * [the] * than ; of * [the] * state
+   69  29 of             * | the * [of] * of ; * of [of] * the ; great * [of] * the
+   21  22 to             * | our * [to] * object ; existing * [to] him * ; that of [to] john *
+   41  13 that           * | him * [that] of to ; to * [that] a * ; * and [that] of the
+   82  12 of             9 | * those [of] our * ; the * [of] * the ; the object [of] the same
+    3  11 in             * | a * [in] the * ; to * [in] of state ; * the [in] case you
+   22  11 a              * | vessel * [a] disposition to ; ces sion [a] complete as ; * or [a] * the
+   38   9 the            9 | * object [the] * of ; * in [the] * spirit ; such be [the] vessel *
+   10   9 of             3 | * that [of] to john ; of state [of] things and ; * that [of] * ing
+   91   9 of             6 | to * [of] some of ; of some [of] the * ; * state [of] * and
+   48   8 and            * | may or [and] the * ; a * [and] that * ; we * [and] thereby *
+   93   7 the            9 | of * [the] existing * ; object of [the] same to ; * ing [the] * which
+   17   7 and            9 | of * [and] without any ; carrying * [and] that of ; of things [and] to *
+   96   5 a              3 | * that [a] * in ; the * [a] mr * ; * to [a] * s
+   85   5 in             9 | * that [in] * tion ; of * [in] <unk> the ; are * [in] a trade
+  450   5 the            6 | the that [the] * in ; from * [the] and * ; the * [the] * of
+  761   5 <unk>          9 | trade * [<unk>] the * ; * of [<unk>] etc * ; * in [<unk>] the british
+  430   4 and            3 | * tion [and] any others ; his * [and] * the ; * the [and] * com
+   88   4 or             * | of may [or] and the ; any ship [or] vessel it ; the * [or] a *
+  210   4 war            3 | the of [war] * was ; * the [war] * and ; ship of [war] * necessity
+  360   4 with           6 | of * [with] the for ; * of [with] those of ; it is [with] * that
+ 1220   3 those          3 | * [those] of our ; * in [those] of the ; of with [those] of the
+  100   3 object         3 | to * [object] the * ; * the [object] of the ; very * [object] as *
+   90   3 which          3 | * spirit [which] will be ; the * [which] * the ; * the [which] <unk> and
+   35   3 by             6 | be seen [by] the * ; * only [by] their * ; * if [by] a *
+ 1410   3 the            3 | seen by [the] * tion ; in of [the] nation of ; contains the [the] * of
+   33   3 be             3 | whether such [be] the vessel ; * to [be] the * ; the <unk> [be] very *
+   89   3 it             * | or vessel [it] * <unk> ; nor * [it] will not ; * to [it] is with
+   20   3 as             3 | a complete [as] * the ; * object [as] * of ; the * [as] to *
+  730   3 that           3 | you know [that] neither * ; the principle [that] a trade ; * and [that] * ones
+   19   3 was            3 | war * [was] of great ; a trade [was] suspended and ; * i [was] in of
+   86   3 trade          3 | that a [trade] * <unk> ; in a [trade] was suspended ; balance of [trade] of necessity
+   71   3 a              6 | * the [a] * and ; * in [a] trade was ; and * [a] * in
+  860   2 him            9 | * to [him] * that ; their * [him] and *
+  380   2 same           6 | of the [same] to * ; nations the [same] time to
+   56   2 will           * | spirit which [will] be seen ; * it [will] not *
+   67   2 be             * | which will [be] seen by ; of * [be] * the
+ 1340   2 tion           3 | the * [tion] and any ; in * [tion] of *
+  390   2 any            3 | tion and [any] others but ; and without [any] * the
+ 1870   2 vessel         3 | be the [vessel] * a ; ship or [vessel] it *
+ 1370   2 great          9 | * the [great] * of ; was of [great] * the
+ 1380   2 state          6 | the * [state] of * ; in of [state] of things
+   27   2 mr             3 | * a [mr] * of ; * if [mr] * contains
+ 1710   2 ship           3 | of any [ship] or vessel ; the british [ship] of war
+  569   2 <unk>          9 | it * [<unk>] * <unk> ; of his [<unk>] * <unk>
+  771   2 <unk>          9 | <unk> * [<unk>] to * ; <unk> * [<unk>] to *
+   31   2 this           3 | to * [this] last point ; to * [this] last point
+  870   2 last           3 | * this [last] point * ; * this [last] point *
+  740   2 point          3 | this last [point] * ces ; this last [point] * ces
+ 1160   2 ces            3 | point * [ces] sion a ; point * [ces] sion are
+ 1570   2 sion           3 | * ces [sion] a complete ; * ces [sion] are complete
+ 1430   2 complete       3 | sion a [complete] as * ; sion are [complete] the *
+   72   2 from           3 | * the [from] madison * ; the * [from] * the
+  370   2 and            3 | war * [and] * to ; the * [and] even in
+ 1830   2 for            6 | with the [for] * in ; a * [for] * if
+ 1140   2 their          3 | in of [their] * the ; only by [their] * him
+ 1730   2 his            3 | of * [his] * and ; the of [his] <unk> *
+   23   2 s              9 | a * [s] of * ; of * [s] letters of
+ 1860   2 necessity      3 | war * [necessity] we * ; trade of [necessity] of *
+   47   2 we             3 | * necessity [we] * and ; * and [we] have been
+  770   2 are            3 | and * [are] * in ; ces sion [are] complete the
+ 1450   2 very           3 | have been [very] probable that ; <unk> be [very] * object
+ 1770   2 one            3 | * with [one] of * ; in * [one]
+    9   2 if             3 | to * [if] mr * ; for * [if] by a
+ 1620   1 our            3 | those of [our] * to
+  783   1 existing       9 | * the [existing] * to
+ 1060   1 john           3 | of to [john] * the
+  830   1 spirit         3 | the * [spirit] which will
+ 1350   1 seen           3 | will be [seen] by the
+ 1811   1 others         3 | and any [others] but whether
+  930   1 but            3 | any others [but] whether such
+ 1010   1 whether        3 | others but [whether] such be
+   58   1 such           3 | but whether [such] be the
+  790   1 disposition    9 | * a [disposition] to *
+  980   1 some           6 | * of [some] of the
+  680   1 than           6 | the * [than] * the
+ 1700   1 without        3 | * and [without] any *
+ 1460   1 may            3 | the of [may] or and
+  883   1 carrying       3 | * of [carrying] * and
+ 1210   1 any            3 | the of [any] ship or
+   60   1 madison        3 | the from [madison] * to
+ 1721   1 things         3 | state of [things] and to
+  620   1 ing            3 | of * [ing] the *
+   70   1 or             6 | the * [or] to speak
+  220   1 speak          6 | or to [speak] of that
+   32   1 treaty         6 | of that [treaty] * the
+   49   1 case           3 | the in [case] you know
+ 1100   1 you            3 | in case [you] know that
+ 1510   1 know           3 | case you [know] that neither
+ 1360   1 neither        3 | know that [neither] * nor
+ 1560   1 nor            6 | neither * [nor] * it
+  710   1 not            9 | it will [not] * of
+  640   1 com            6 | and * [com] * of
+ 1030   1 principle      3 | of the [principle] that a
+  750   1 etc            9 | of <unk> [etc] * to
+ 1771   1 ones           3 | that * [ones] of *
+   55   1 british        6 | <unk> the [british] ship of
+  510   1 thereby        6 | * and [thereby] * the
+ 1320   1 even           3 | * and [even] in that
+   78   1 is             6 | to it [is] with *
+  500   1 suspended      3 | trade was [suspended] and or
+  250   1 message        9 | in the [message] that *
+   11   1 i              3 | that * [i] was in
+ 1490   1 them           3 | in of [them] * thought
+  340   1 thought        3 | them * [thought] * balance
+ 1530   1 balance        3 | thought * [balance] of trade
+   26   1 have           3 | and we [have] been very
+ 1330   1 been           3 | we have [been] very probable
+  410   1 probable       3 | been very [probable] that a
+  180   1 only           3 | and * [only] by their
+ 1021   1 nations        6 | a of [nations] the same
+   13   1 time           6 | the same [time] to of
+ 1063   1 <unk>          3 | * of [<unk>] letter on
+ 1190   1 letter         6 | of <unk> [letter] on that
+   74   1 on             6 | <unk> letter [on] that and
+ 1280   1 nation         3 | of the [nation] of mere
+  320   1 mere           3 | nation of [mere] * to
+ 1150   1 england        9 | * to [england] and of
+    2   1 writings       3 | of * [writings] of *
+ 1810   1 other          3 | and of [other] the *
+  690   1 contains       3 | mr * [contains] the the
+ 1191   1 letters        6 | * s [letters] of *

@@ -1,0 +1,84 @@
+{
+ "family": "nomenclator",
+ "spec": "specs/armstrong-madison-1808.json",
+ "corpus": [
+  "tools/data/en18/writingsjamesmo02unkngoog.txt.gz",
+  "tools/data/en18/writingsjamesmo11monrgoog.txt.gz",
+  "tools/data/en18/writingsalbertg01gallgoog.txt.gz",
+  "tools/data/en18/writingsofjamesm0007unse_s2a1.txt.gz",
+  "tools/data/en18/writingsofjamesm0008unse.txt.gz",
+  "tools/data/en18/writingsofthomas09jeffiala.txt.gz"
+ ],
+ "holdout": 5,
+ "seed": 2,
+ "restarts": 3,
+ "params": {
+  "sweeps": 30,
+  "phase1": 20,
+  "holdout": 5,
+  "slot_grammar": 1,
+  "slot_map": "0:;1:s|ed;2:ment;3:able;4:ing;5:ness;6:ion;7:ly;8:er;9:est"
+ },
+ "msg_lens": [
+  511
+ ],
+ "N": 369,
+ "K": 131,
+ "singletons": 76,
+ "singletons_particle": 13,
+ "singletons_book": 63,
+ "particle_tokens": 227,
+ "book_tokens": 142,
+ "wild_tokens": 142,
+ "is_target": false,
+ "control_stats": {
+  "coded": 369,
+  "distinct": 131,
+  "distinct_book": 90,
+  "decades_used": 85,
+  "book_forms": 322,
+  "book_roots": 180,
+  "oov_words": 196,
+  "wild_tokens": 142,
+  "particle_tokens": 227,
+  "distinct_particle": 41,
+  "holdout_index": 5,
+  "slot_grammar": 1
+ },
+ "rounds": {
+  "0": {
+   "cribs": {}
+  },
+  "1": {
+   "cribs": {
+    "36": "the",
+    "30": "of",
+    "51": "to",
+    "29": "and",
+    "1": "in",
+    "17": "a",
+    "66": "be",
+    "52": "is",
+    "48": "that",
+    "74": "by",
+    "35": "or"
+   }
+  },
+  "2": {
+   "cribs": {
+    "36": "the",
+    "30": "of",
+    "51": "to",
+    "29": "and",
+    "1": "in",
+    "17": "a",
+    "66": "be",
+    "52": "is",
+    "48": "that",
+    "74": "by",
+    "35": "or",
+    "93": "their"
+   }
+  }
+ }
+}

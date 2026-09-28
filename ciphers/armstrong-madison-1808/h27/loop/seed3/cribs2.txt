@@ -1,0 +1,3 @@
+# H27 round 2, seed 3: round 1 read 2 of 12 right, so the top four particle values are re-permuted (45/69 swap,
+# 21=to, 48=and), 22=a added, the weakest (96, 20) dropped; decoded neighbours are the solver's own and not trusted
+45=the, 69=of, 21=to, 48=and, 41=that, 3=in, 88=or, 56=will, 67=be, 89=it, 22=a

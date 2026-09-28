@@ -185,6 +185,10 @@ def nm_read_cribs(path):
     return out
 
 
+def stats_grammar(params):
+    return int(params.get("slot_grammar", 0) or 0)
+
+
 def nm_make(a):
     nm, jp = nm_mod()
     os.makedirs(a.dir, exist_ok=True)
@@ -208,7 +212,13 @@ def nm_make(a):
         classes = list(nm._LAST_CONTROL["classes"])
         words = plain.split()
         truth = {t: w for t, w in zip(cm[0], words) if t != "*"}
-        json.dump({"plain": words, "truth": truth, "classes": classes}, open(os.path.join(a.dir, "hidden.json"), "w"))
+        hid = {"plain": words, "truth": truth, "classes": classes}
+        if nm._LAST_CONTROL.get("roots") and stats_grammar(params):
+            # slot grammar (H27): true root per occupied decade for the score verb; the slot map is NOT hidden --
+            # the solver is told it (the most favourable case), so it goes into the state params
+            hid["roots"] = {str(d): r for d, r in nm._LAST_CONTROL["roots"].items()}
+            params["slot_map"] = ";".join(f"{k}:{v}" for k, v in nm._LAST_CONTROL["slot_map"].items())
+        json.dump(hid, open(os.path.join(a.dir, "hidden.json"), "w"))
         stats = dict(nm._LAST_CONTROL["stats"])
         stats.pop("letter_start_word", None)  # the window's position in the held-out file would let a reader find it
     seq = [t for m in cm for t in m]
@@ -252,7 +262,8 @@ def nm_round(d, st, r, cribs):
     keys = info["restart_keys"]
     conf = {v: sum(1 for k in keys if k.get(str(int(v))) == best[v]) / max(1, len(keys)) for v in best}
     json.dump({"round": r, "cribs": cribs, "key": best, "decoded": words, "conf": conf,
-               "restart_scores": info["restart_scores"], "score": round(score, 2)},
+               "restart_scores": info["restart_scores"], "score": round(score, 2),
+               "roots": info.get("roots"), "restart_roots": info.get("restart_roots")},
               open(os.path.join(d, f"round{r}.json"), "w"), indent=1)
     open(os.path.join(d, f"round{r}.txt"), "w").write(nm_render(seq, msgs, words, best, conf, cribs, r, score, info))
     st.setdefault("rounds", {})[str(r)] = {"cribs": cribs}
@@ -305,23 +316,28 @@ def nm_score(d, st, rounds):
         n = sum(tot.values())
         new = {v: w for v, w in cribs.items() if prev_cribs.get(v) != w}
         right = sum(1 for v, w in new.items() if truth.get(v) == w)
+        if hid.get("roots"):
+            tr, sr = hid["roots"], rj.get("roots") or {}
+            rr = sum(1 for d, w in tr.items() if sr.get(d) == w)
+            rj["_roots"] = f"{rr}/{len(tr)} ({100 * rr / max(1, len(tr)):.1f}%)"
         row = {"round": r, "blended": round(100 * sum(hit.values()) / n, 1),
                "particle": round(100 * hit["P"] / max(1, tot["P"]), 1), "book": round(100 * hit["B"] / max(1, tot["B"]), 1),
                "before": prev.get("blended"), "top30_right": sum(1 for v in top30 if key.get(v) == truth.get(v)),
                "top30_n": len(top30), "cribs_total": len(cribs), "cribs_new": len(new), "right": right,
-               "wrong": len(new) - right}
+               "wrong": len(new) - right, "roots": rj.get("_roots", "")}
         if rounds is None or r in rounds:
             rows.append(row)
         prev, prev_cribs = row, cribs
     f = os.path.join(d, "scores.tsv")
-    hdr = "round\tbefore\tblended\tparticle\tbook\ttop30_right\ttop30_n\tcribs_total\tcribs_new\tright\twrong\n"
+    hdr = "round\tbefore\tblended\tparticle\tbook\ttop30_right\ttop30_n\tcribs_total\tcribs_new\tright\twrong\troots\n"
     with open(f, "w") as fh:
         fh.write(hdr)
         for x in rows:
             fh.write("\t".join(str(x[k]) for k in hdr.strip().split("\t")) + "\n")
             print(f"round {x['round']}: blended {x['before']} -> {x['blended']}% (particle {x['particle']}%, book "
                   f"{x['book']}%); top-30 repeated values right {x['top30_right']}/{x['top30_n']}; cribs new "
-                  f"{x['cribs_new']} right {x['right']} wrong {x['wrong']} (total {x['cribs_total']})")
+                  f"{x['cribs_new']} right {x['right']} wrong {x['wrong']} (total {x['cribs_total']})"
+                  + (f"; roots right {x['roots']}" if x.get('roots') else ""))
     return rows
 
 

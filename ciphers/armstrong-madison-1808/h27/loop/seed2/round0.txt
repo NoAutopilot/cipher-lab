@@ -1,0 +1,138 @@
+# round 0: N=131 values, cribs=0, best score -1744.6 (-3.414/token); restarts [-1744.64, -1761.48, -1779.91]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 yet  received the papers for * our commerce of france and the state executive power during * of * for * of * in our * to bring the * of * in * and * in the which * to in the * by * not  only and which by * <unk> of * ing the * of and * are * in paris and of the * of and is a  * and the * and there is some of the people of the * after he had  * the * of * in the * or other of was the case of * as to navigation and commercial and both the president was * the * her  * or * as to the world * such a  letter to the  * of * they were generally * themselves to * in * by the * and * by the * in the * of any  such a  * in * that a  * to * that to paris in his to be * by the for * in * and of the * of * the * con  * to the united states * off  the * to either * or * a  * and * s  * mr * is very * never * the great * of those of our * is not  * the general * the * them to be of use  the * who  * and * when it * from which those of the general * of a  * a  proper * for * and  * the <unk> of * the * cases of * of * to them and of having yielded to the  * of * was very * to whom was <unk> and the * of * you will be * by * his * but in the the writings of the war it was in the * of the * of your * was not  the * of the ports of one of the * ity the * and the convention * perhaps be * department of * was not  to be * from the treasury to * the was not  to * with and * with those of the * to * of * with * or * from which the only * of * tion of the * of the members of the most * and  strongly * the * and to * or with and bringing them * the laws of nations the most * to in the * are * and * them * with and * and  the * and * to * con  * or with the british * d  to in which the * of their * a  * not  * the other * have with to the * of * in from these * and the the * of * and of those * but also the * of the other to * one of your request your * but one thousand * of * of * that of the 
+    1690 1820     58  891    130 * 160 620      30 38     29  93  120   910       1620  1480   * 5  * 90  * 30 * 76 160 * 51 350   93  * 30 * 34 * 29  * 83 62  1560  * 51 76 71  * 74 * 1060 970  29  1600  74 * 953   1  * 820 62  * 5  56  * 920 * 83 100   29  30 36  * 30 56  52 17 * 33  36  * 33  1680  52 7    30 36  420    30 36  * 1550  3  1210 * 36  * 30 * 83 58  * 77 1390  1  380 93  680  30 * 95 96 810        29  780        56  1010 62  1110      380 * 36  * 1040 * 35 * 95 51 36  1540  * 1190 17 25     51 1460 * 30 * 760  50   660       * 1700       51 * 76 * 74 36  * 29  * 74 36  * 34 71  * 31 1300 1190 17 * 76 * 48   17 * 51 * 48   51 100   34 700 51 66 * 74 36  130 * 83 * 460 1  36  * 1  * 36  * 1730 * 51 36  170    121    * 1280 71  * 96 1430   * 35 * 17 * 56  * 23 * 84 * 52 500  * 840   * 93  41    * 30 1750  30 160 * 52 1660 * 93  370     * 58  * 740  51 66 1  1720 93  * 1850 * 33  * 560  28 * 1120 1560  1750  30 36  370     * 30 60 * 17 1338   * 90  * 1050 * 36  1541  30 * 36  * 681   5  * 30 * 51 740  29  30 724    1260    96 1460 * 31 * 980 500  * 51 1890 380 1541  33  36  * 30 * 88  1450 66 * 74 * 700 * 930 34 62  93  1780     1  36  19  28 980 34 62  * 30 36  * 30 1830 * 380 1060 36  * 30 71  511   1  10  30 36  * 110 36  * 56  58  1876       * 770     66 * 1070       30 * 980 1060 51 66 * 1120 93  430      51 * 36  980 1060 51 * 1370 29  * 1140 1750  30 36  * 51 * 1  * 1370 * 77 * 1120 1560  93  970  * 1  * 1800 30 36  * 30 36  140     30 71  1410 * 1050 1587     * 93  * 460 51 * 35 1370 33  354      740  * 36  1511 30 1170    36  1410 * 96 76 93  * 750 * 33  * 740  * 1370 56  * 1050 62  * 460 * 51 * 1730 * 35 1370 36  1310    * 69 51 83 1560  36  * 30 89    * 60 * 1660 * 36  1390  * 720  1370 96 36  * 30 * 76 1120 1100  * 56  62  93  * 30 * 29  31 1750  * 930 1180 36  * 30 36  1390  51 * 200 1  1830 219     1830 * 930 200 520      * 30 * 5  * 48   5  1460
+    3    3        3   3      3   - 3   3        9  3      9   9   6     3         3     3      - 3  - 3   - 9  - 6  3   - 3  3     9   - 9  - 9  - 9   - 3  3   6     - 3  6  9   - 3  - 3    3    9   3     3  - 9     6  - 6   3   - 3  3   - 6   - 3  3     9   9  9   - 9  3   3  3  - 3   9   - 3   3     3  3    9  9   6      9  9   - 3     3  6    - 9   - 9  - 3  3   - 9  9     6  3   9   3    9  - 3  6  3          9   3          3   3    3   3         3   - 9   - 3    - 3  - 3  3  9   3     - 3    3  3      3  6    - 9  - 3    3    3         - 3          3  - 6  - 3  9   - 9   - 3  9   - 9  9   - 6  3    3    3  - 6  - 3    3  - 3  - 3    3  3     9  3   3  3  - 3  9   3   - 3  - 3   6  9   - 6  - 9   - 3    - 3  9   6      6      - 6    9   - 6  3      - 3  - 3  - 3   - 3  - 3  - 3  3    - 3     - 9   6     - 9  9     9  3   - 3  3    - 9   6       - 3   - 3    3  3  6  3    9   - 6    - 3   - 3    3  - 3    6     9     9  9   6       - 9  3  - 3  3      - 3   - 6    - 9   6     9  - 9   - 3     3  - 9  - 3  3    9   9  9      6       6  6    - 6  - 3   3    - 3  3    3   6     3   9   - 9  - 3   3    3  - 3  - 3   - 9   9  3   9   3        6  9   3   3  3   9  3   - 9  9   - 9  6    - 3   3    9   - 9  9   6     6  9   9  9   - 6   9   - 3   3   3          - 3       3  - 3          9  - 3   3    3  3  - 3    9   3        3  - 9   3   3    3  - 3    9   - 9    9     9  9   - 3  - 6  - 3    - 9  - 3    6     9   3    - 6  - 3    9  9   - 9  9   6       9  9   6    - 6    6        - 9   - 3   3  - 3  3    3   3        3    - 9   6    9  3       9   6    - 6  6  9   - 3   - 3   - 3    - 3    3   - 6    3   - 3   - 3  - 3    - 3  3    9   3       - 3  3  3  6     9   - 9  3     - 3  - 3    - 9   9     - 9    3    6  9   - 9  - 6  3    3     - 3   3   9   - 9  - 9   6  9     - 9   9    9   - 9  9   9     3  - 3   6  6    6       6    - 9   3   3        - 9  - 3  - 3    3  6   
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   36  34 the            9 | and of [the] * of ; * and [the] * and ; some of [the] people of
+   30  33 of             9 | our commerce [of] france and ; for * [of] * in ; the * [of] * in
+   51  20 to             3 | our * [to] bring the ; which * [to] in the ; * as [to] the world
+   93  12 the            9 | france and [the] state executive ; to bring [the] * of ; of was [the] case of
+    1  10 of             6 | * <unk> [of] * ing ; or other [of] was the ; * and [of] the *
+   29   9 and            9 | of france [and] the state ; in * [and] * in ; not only [and] which by
+   62   7 the            3 | * in [the] which * ; * ing [the] * of ; and both [the] president was
+   56   7 and            3 | * of [and] * are ; * of [and] is a ; and commercial [and] both the
+   76   6 in             6 | of * [in] our * ; * to [in] the * ; to * [in] * by
+   74   6 by             3 | the * [by] * not ; and which [by] * <unk> ; in * [by] the *
+   17   6 a              3 | and is [a] * and ; * such [a] letter to ; any such [a] * in
+   33   6 and            3 | a * [and] the * ; the * [and] there is ; who * [and] * when
+ 1370   6 with           3 | to * [with] and * ; of * [with] * or ; * or [with] and bringing
+    5   5 of             3 | during * [of] * for ; the * [of] and * ; * cases [of] * of
+   34   5 in             9 | of * [in] * and ; the * [in] the * ; to paris [in] his to
+   83   5 in             3 | and * [in] the which ; are * [in] paris and ; of * [in] the *
+   71   5 the            9 | to in [the] * by ; * in [the] * of ; * off [the] * to
+   96   5 to             6 | * as [to] navigation and ; the * [to] either * ; having yielded [to] the *
+   66   5 be             3 | his to [be] * by ; them to [be] of use ; you will [be] * by
+   58   4 the            3 | yet received [the] papers for ; * in [the] * or ; general * [the] * them
+ 1560   4 which          6 | in the [which] * to ; * from [which] those of ; * from [which] the only
+ 1060   4 not            3 | by * [not] only and ; * was [not] the * ; * was [not] to be
+   52   4 is             3 | of and [is] a * ; and there [is] some of ; mr * [is] very *
+  380   4 was            3 | other of [was] the case ; the president [was] * the ; to whom [was] <unk> and
+   35   4 or             3 | her * [or] * as ; either * [or] * a ; to * [or] with and
+ 1750   4 those          9 | * of [those] of our ; from which [those] of the ; * with [those] of the
+  740   4 them           3 | the * [them] to be ; * to [them] and of ; and bringing [them] * the
+ 1120   4 from           3 | it * [from] which those ; be * [from] the treasury ; or * [from] which the
+  980   4 was            3 | of * [was] very * ; war it [was] in the ; of * [was] not to
+  160   3 our            3 | for * [our] commerce of ; * in [our] * to ; those of [our] * is
+ 1390   3 other          9 | * or [other] of was ; * the [other] * have ; of the [other] to *
+ 1460   3 the            6 | letter to [the] * of ; yielded to [the] * of ; that of [the]
+   31   3 of             6 | the * [of] any such ; the * [of] * was ; * and [of] those *
+   48   3 that           3 | in * [that] a * ; to * [that] to paris ; of * [that] of the
+  460   3 and            3 | in * [and] of the ; the * [and] to * ; the * [and] * to
+ 1050   3 and            6 | for * [and] * the ; most * [and] strongly * ; and * [and] the *
+  930   3 but            9 | his * [but] in the ; those * [but] also the ; your * [but] one thousand
+ 1830   3 your           6 | * of [your] * was ; one of [your] request your ; your request [your] * but
+  130   2 for            3 | the papers [for] * our ; by the [for] * in
+   90   2 for            3 | of * [for] * of ; proper * [for] * and
+  970   2 only           3 | * not [only] and which ; which the [only] * of
+  100   2 paris          3 | * in [paris] and of ; that to [paris] in his
+   77   2 or             9 | the * [or] other of ; with * [or] * from
+   95   2 as             3 | of * [as] to navigation ; or * [as] to the
+ 1190   2 such           3 | world * [such] a letter ; of any [such] a *
+  700   2 his            3 | paris in [his] to be ; by * [his] * but
+ 1730   2 con            3 | the * [con] * to ; to * [con] * or
+  500   2 very           3 | * is [very] * never ; * was [very] * to
+ 1660   2 not            3 | * is [not] * the ; a * [not] * the
+  370   2 general        6 | * the [general] * the ; of the [general] * of
+   28   2 it             3 | * when [it] * from ; the war [it] was in
+   60   2 a              3 | * of [a] * a ; their * [a] * not
+ 1541   2 <unk>          6 | * the [<unk>] of * ; whom was [<unk>] and the
+ 1410   2 most           6 | of the [most] * and ; nations the [most] * to
+  200   2 one            3 | to * [one] of your ; * but [one] thousand *
+ 1690   1 yet            3 | [yet] received the
+ 1820   1 received       3 | yet [received] the papers
+  891   1 papers         3 | received the [papers] for *
+  620   1 commerce       3 | * our [commerce] of france
+   38   1 france         3 | commerce of [france] and the
+  120   1 state          6 | and the [state] executive power
+  910   1 executive      3 | the state [executive] power during
+ 1620   1 power          3 | state executive [power] during *
+ 1480   1 during         3 | executive power [during] * of
+  350   1 bring          3 | * to [bring] the *
+ 1600   1 which          3 | only and [which] by *
+  953   1 <unk>          9 | by * [<unk>] of *
+  820   1 ing            6 | of * [ing] the *
+  920   1 are            6 | and * [are] * in
+ 1680   1 there          3 | * and [there] is some
+    7   1 some           3 | there is [some] of the
+  420   1 people         6 | of the [people] of the
+ 1550   1 after          3 | the * [after] he had
+    3   1 he             3 | * after [he] had *
+ 1210   1 had            6 | after he [had] * the
+  680   1 case           3 | was the [case] of *
+  810   1 navigation     3 | as to [navigation] and commercial
+  780   1 commercial     3 | navigation and [commercial] and both
+ 1010   1 both           3 | commercial and [both] the president
+ 1110   1 president      3 | both the [president] was *
+ 1040   1 her            3 | the * [her] * or
+ 1540   1 world          3 | to the [world] * such
+   25   1 letter         3 | such a [letter] to the
+  760   1 they           3 | of * [they] were generally
+   50   1 were           3 | * they [were] generally *
+  660   1 generally      3 | they were [generally] * themselves
+ 1700   1 themselves     3 | generally * [themselves] to *
+ 1300   1 any            3 | * of [any] such a
+  170   1 united         6 | to the [united] states *
+  121   1 states         6 | the united [states] * off
+ 1280   1 off            6 | states * [off] the *
+ 1430   1 either         3 | * to [either] * or
+   23   1 s              3 | and * [s] * mr
+   84   1 mr             3 | s * [mr] * is
+  840   1 never          3 | very * [never] * the
+   41   1 great          6 | * the [great] * of
+ 1720   1 use            3 | be of [use] the *
+ 1850   1 who            6 | the * [who] * and
+  560   1 when           3 | and * [when] it *
+ 1338   1 proper         3 | * a [proper] * for
+  681   1 cases          3 | the * [cases] of *
+  724   1 having         9 | and of [having] yielded to
+ 1260   1 yielded        6 | of having [yielded] to the
+ 1890   1 whom           3 | * to [whom] was <unk>
+   88   1 you            3 | of * [you] will be
+ 1450   1 will           3 | * you [will] be *
+ 1780   1 writings       3 | the the [writings] of the
+   19   1 war            3 | of the [war] it was
+  511   1 ports          6 | of the [ports] of one
+   10   1 one            9 | ports of [one] of the
+  110   1 ity            6 | the * [ity] the *
+ 1876   1 convention     3 | and the [convention] * perhaps
+  770   1 perhaps        3 | convention * [perhaps] be *
+ 1070   1 department     3 | be * [department] of *
+  430   1 treasury       3 | from the [treasury] to *
+ 1140   1 with           9 | and * [with] those of
+ 1800   1 tion           3 | of * [tion] of the
+  140   1 members        6 | of the [members] of the
+ 1587   1 strongly       6 | * and [strongly] * the
+  354   1 bringing       3 | with and [bringing] them *
+ 1511   1 laws           6 | * the [laws] of nations
+ 1170   1 nations        3 | laws of [nations] the most
+  750   1 are            3 | the * [are] * and
+ 1310   1 british        3 | with the [british] * d
+   69   1 d              3 | british * [d] to in
+   89   1 their          3 | * of [their] * a
+  720   1 have           9 | other * [have] with to
+ 1100   1 these          3 | in from [these] * and
+ 1180   1 also           9 | * but [also] the *
+  219   1 request        6 | of your [request] your *
+  520   1 thousand       3 | but one [thousand] * of

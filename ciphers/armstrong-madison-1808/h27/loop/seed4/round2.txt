@@ -1,0 +1,121 @@
+# round 2: N=114 values, cribs=11, best score -1974.5 (-3.887/token); restarts [-2013.23, -1980.35, -1974.48]
+# decode by line: word / value / confidence digit (9 = all restarts agree, * = crib, - = wildcard)
+L01 * of * ing the * <unk> * a  man s  * and * its most * to of * the * in * that his * in * and * be necessary in order that the of * you have * the * of things that are * with * in order and with the  * of * min * be by of * the * man and may be of * order and * with <unk> of * to * in * a  general * the of which is * taken from * to <unk> and of * and  which the * state * s  * and by * to * a  of * to of * and by law  with the british cruizers in * the * and  say  nothing of * with most of their proper * them * the nation and and of all the will * the * the of * from the of * of * to * the * and if any  * a  s  * and * be is certain that the real * they * and and a  trade * and in order to * or rather * the present state of affairs with * a  of * and  * which * with of * which * with of neutrals to trade and all the other the of * to that <unk> * is that the of * has been made and * een  hundred and * in * them and a  government or * to * roads and and * to them and <unk> at least the * and other * and that * is not * the  order to * a  letter which consists of and laws * certain * and in some * any  * is of * if mr * who was  known the law  be * d  * to the  * and either * by this letter is in concert with and between them and * men  * either that the be and other * and will be in * to and * into an * of * to that a  * with of * the of order if of * the of * writings of * the * of * the of * to of * and * be is certain that of the of * under a  * to in order to * or * present that <unk> was  the in estimable with him  to * of which * the * and respect with and thereby * for  the * with of * to * of that * <unk> of that <unk> * the idea that and other necessary for  * in * to you his sentiments that and * the * the of march that his government * taken with * the of * to * a  of * to * or * and  * which have taken a  decided * the most * that nothing * him  to his * com * to * either * or * of
+    * 56 * 450 28  * 861   * 77 190 16 * 96  * 57  1120 * 62 56 * 28  * 23 * 46   180 * 23 * 96  * 93 120       23 510   140  27  56 * 820 1300 * 28  * 56 741    46   290 * 7    * 17 510   3   7    1860 * 31 * 630 * 93 64 31 * 28  * 190 96  50  93 56 * 510   96  * 7    1559  56 * 62 * 17 * 77 30      * 28  31 900   78 * 440   520  * 62 1452  45  56 * 1110 660   27  * 150   * 16 * 18  64 * 62 * 77 56 * 62 56 * 18  64 1690 200  28  420     1170     23 * 27  * 1110 1500 1890    31 * 7    1120 49 1440  1266   * 90   * 28  1520   18  3   31 74  28  800  * 28  * 28  31 * 520  27  56 * 56 * 62 * 27  * 3   29 1490 * 77 16 * 96  * 93 78 350     270  300 1480 * 1610 * 45  18  42 21    * 45  23 510   62 * 65 810    * 28  760     150   31 1731    7    * 77 56 * 1110 * 660   * 7    56 * 900   * 7    56 1841     62 21    18  74  28  550   28  56 * 62 140  1452  * 78 270  28  56 * 80  1150 54   3   * 1880 1270    96  * 23 * 90   18  42 47         65 * 62 * 490   45  96  * 60 90   45  1559  86 1620  28  * 96  550   * 45  46   * 78 24  * 1860 510   62 * 42 1100   900   1401     49 18  1691 * 350     * 45  23 1570 * 1490 * 78 56 * 29 2  * 730 1760 930   28  1690 93 * 63 * 62 1860 * 45  750    * 64 1370 1100   78 23 1410    200  96  790     90   96  * 1080 * 750    270  27  93 3   85    * 96  800  93 23 * 62 18  * 640  40 * 56 * 62 46   42 * 7    56 * 28  56 510   29 56 * 27  56 * 1641     31 * 28  * 56 * 28  56 * 62 56 * 96  * 93 78 350     270  49 300 56 * 1000  77 * 62 23 510   62 * 65 * 760     46   1559  1760 27  23 1634      200  1800 62 * 49 900   * 28  * 96  5       7    18  1470    * 1750 27  * 7    56 * 62 * 49 46   * 861   56 140  1233  * 28  890  140  96  85    120       1750 * 23 * 62 820 960 1321       46   96  * 28  * 28  31 1780  140  960 47         * 440   7    * 27  56 * 62 * 77 56 * 62 * 70 * 1110 * 660   1300 440   77 1241    * 28  1120 * 46   1890    * 1800 62 960 * 230 * 60 * 750    * 70 * 56
+    - *  - 6   *   - 9     - *  3   3  - *   - 6   6    - *  *  - *   - *  - *    9   - *  - *   - *  6         *  6     6    9   *  - 6   3    - *   - *  3      *    3   - *    - 9  6     3   *    9    - 9  - 3   - *  *  9  - *   - 3   *   3   *  *  - 6     *   - *    9     *  - *  - 9  - *  6       - *   9  6     *  - 3     6    - *  9     9   *  - 9    3     9   - 6     - 3  - 3   *  - *  - *  *  - *  *  - 3   *  9    6    *   6       6        *  - 9   - 9    3    3       9  - *    6    6  3     3      - 3    - *   3      3   3   9  3   *   9    - *   - *   9  - 6    9   *  - *  - *  - 9   - 3   3  3    - *  3  - *   - *  *  6       6    3   3    - 3    - 9   3   3  3     - 9   *  6     *  - 6  6      - *   6       6     9  6       *    - *  *  - 9    - 3     - *    *  - 6     - *    *  3        *  3     3   3   *   6     *   *  - *  6    9     - *  6    *   *  - 3   3    3    3   - 3    3       *   - *  - 3    3   3  6          6  - *  - 9     9   *   - 3  3    9   9     3  3     *   - *   6     - 9   *    - *  6   - 9    6     *  - 3  3      6     3        6  3   9    - 6       - 9   *  3    - 3    - *  *  - 3  3  - 3   3    3     *   9    *  - 6  - *  9    - 9   3      - *  6    3      *  *  6       6    *   3       3    *   - 3    - 3      6    9   *  3   3     - *   9    *  *  - *  3   - 9    9  - *  - *  *    3  - *    *  - *   *  6     3  *  - 9   *  - 9        9  - *   - *  - *   *  - *  *  - *   - *  *  6       6    6  3   *  - 9     *  - *  *  6     *  - 6  - 6       *    9     3    9   *  9         6    3    *  - 6  6     - *   - *   3       *    3   3       - 6    9   - *    *  - *  - 6  *    - 9     *  6    6     - *   6    6    *   3     6         6    - *  - *  6   3   3          *    *   - *   - *   9  6     6    3   6          - 3     *    - 9   *  - *  - *  *  - *  - 6  - 9    - 3     3    3     *  9       - *   6    - *    3       - 3    *  3   - 3   - 3  - 3      - 6  - * 
+
+# values by frequency: value count word conf | up to 3 decoded contexts (2 words either side)
+   56  31 of             * | * [of] * ing ; * to [of] * the ; that the [of] * you
+   28  24 the            * | * ing [the] * <unk> ; of * [the] * in ; have * [the] * of
+   62  23 to             * | most * [to] of * ; of * [to] * in ; from * [to] <unk> and
+   96  15 and            * | s * [and] * its ; in * [and] * be ; * man [and] may be
+   23  12 in             * | the * [in] * that ; his * [in] * and ; be necessary [in] order that
+    7  11 with           * | are * [with] * in ; order and [with] the * ; and * [with] <unk> of
+   27  10 the            9 | order that [the] of * ; and which [the] * state ; in * [the] * and
+   31   9 of             9 | the * [of] * min ; be by [of] * the ; * the [of] which is
+   18   9 and            3 | s * [and] by * ; of * [and] by law ; the nation [and] and of
+   77   8 a              * | <unk> * [a] man s ; in * [a] general * ; to * [a] of *
+   46   8 that           * | in * [that] his * ; of things [that] are * ; * and [that] * is
+   93   8 be             * | and * [be] necessary in ; min * [be] by of ; and may [be] of *
+   45   8 and            9 | to <unk> [and] of * ; they * [and] and a ; trade * [and] in order
+  510   7 order          6 | necessary in [order] that the ; * in [order] and with ; of * [order] and *
+   78   7 is             * | of which [is] * taken ; * be [is] certain that ; <unk> * [is] that the
+  140   5 that           6 | in order [that] the of ; * to [that] <unk> * ; <unk> of [that] <unk> *
+    3   5 and            3 | in order [and] with the ; nation and [and] of all ; the * [and] if any
+   49   5 of             6 | with most [of] their proper ; which consists [of] and laws ; certain that [of] the of
+   64   4 by             * | * be [by] of * ; * and [by] * to ; * and [by] law with
+  900   4 which          6 | the of [which] is * ; of * [which] * with ; a letter [which] consists of
+ 1110   4 and            9 | of * [and] which the ; the * [and] say nothing ; of * [and] * which
+   90   4 them           3 | proper * [them] * the ; in * [them] and a ; * to [them] and <unk>
+  270   4 that           6 | is certain [that] the real ; * is [that] the of ; * either [that] the be
+   42   4 a              3 | and and [a] trade * ; them and [a] government or ; to * [a] letter which
+   16   3 s              3 | a man [s] * and ; state * [s] * and ; * a [s] * and
+ 1120   3 most           6 | * its [most] * to ; * with [most] of their ; * the [most] * that
+ 1860   3 the            9 | and with [the] * of ; not * [the] order to ; * to [the] * and
+ 1559   3 <unk>          9 | * with [<unk>] of * ; them and [<unk>] at least ; present that [<unk>] was the
+  440   3 taken          3 | is * [taken] from * ; government * [taken] with * ; which have [taken] a decided
+  660   3 which          3 | * and [which] the * ; and * [which] * with ; and * [which] have taken
+  200   3 with           6 | by law [with] the british ; in concert [with] and between ; in estimable [with] him to
+   29   3 if             3 | * and [if] any * ; of * [if] mr * ; of order [if] of *
+  350   3 certain        6 | be is [certain] that the ; laws * [certain] * and ; be is [certain] that of
+   65   3 or             6 | to * [or] rather * ; a government [or] * to ; to * [or] * present
+  750   3 either         3 | * and [either] * by ; men * [either] that the ; to * [either] * or
+  960   3 his            3 | to you [his] sentiments that ; march that [his] government * ; him to [his] * com
+  861   2 <unk>          9 | the * [<unk>] * a ; that * [<unk>] of that
+  190   2 man            3 | * a [man] s * ; the * [man] and may
+  120   2 necessary      6 | * be [necessary] in order ; and other [necessary] for *
+  820   2 you            6 | of * [you] have * ; * to [you] his sentiments
+ 1300   2 have           3 | * you [have] * the ; * which [have] taken a
+   17   2 in             9 | with * [in] order and ; to * [in] * a
+  520   2 from           6 | * taken [from] * to ; of * [from] the of
+ 1452   2 <unk>          9 | * to [<unk>] and of ; to that [<unk>] * is
+  150   2 state          6 | the * [state] * s ; the present [state] of affairs
+ 1690   2 law            9 | and by [law] with the ; known the [law] be *
+ 1890   2 nothing        3 | and say [nothing] of * ; * that [nothing] * him
+   74   2 all            3 | and of [all] the will ; trade and [all] the other
+  800   2 will           9 | all the [will] * the ; * and [will] be in
+ 1490   2 any            3 | and if [any] * a ; some * [any] * is
+  300   2 the            3 | certain that [the] real * ; that of [the] of *
+   21   2 trade          3 | and a [trade] * and ; neutrals to [trade] and all
+  760   2 present        6 | * the [present] state of ; or * [present] that <unk>
+  550   2 other          6 | all the [other] the of ; * and [other] * and
+   47   2 government     6 | and a [government] or * ; that his [government] * taken
+   60   2 to             3 | and * [to] them and ; com * [to] * either
+ 1100   2 letter         3 | * a [letter] which consists ; by this [letter] is in
+ 1760   2 was            3 | * who [was] known the ; that <unk> [was] the in
+   85   2 other          3 | be and [other] * and ; that and [other] necessary for
+ 1800   2 him            3 | estimable with [him] to * ; nothing * [him] to his
+ 1750   2 for            6 | thereby * [for] the * ; other necessary [for] * in
+   70   2 or             6 | to * [or] * and ; either * [or] * of
+  450   1 ing            6 | of * [ing] the *
+   57   1 its            6 | and * [its] most *
+  180   1 his            9 | * that [his] * in
+  741   1 things         3 | * of [things] that are
+  290   1 are            3 | things that [are] * with
+  630   1 min            3 | of * [min] * be
+   50   1 may            3 | man and [may] be of
+   30   1 general        6 | * a [general] * the
+  420   1 british        6 | with the [british] cruizers in
+ 1170   1 cruizers       6 | the british [cruizers] in *
+ 1500   1 say            3 | * and [say] nothing of
+ 1440   1 their          3 | most of [their] proper *
+ 1266   1 proper         3 | of their [proper] * them
+ 1520   1 nation         3 | * the [nation] and and
+ 1480   1 real           3 | that the [real] * they
+ 1610   1 they           3 | real * [they] * and
+  810   1 rather         6 | * or [rather] * the
+ 1731   1 affairs        6 | state of [affairs] with *
+ 1841   1 neutrals       3 | with of [neutrals] to trade
+   80   1 has            3 | of * [has] been made
+ 1150   1 been           3 | * has [been] made and
+   54   1 made           3 | has been [made] and *
+ 1880   1 een            3 | and * [een] hundred and
+ 1270   1 hundred        3 | * een [hundred] and *
+  490   1 roads          9 | to * [roads] and and
+   86   1 at             3 | and <unk> [at] least the
+ 1620   1 least          3 | <unk> at [least] the *
+   24   1 not            6 | * is [not] * the
+ 1401   1 consists       3 | letter which [consists] of and
+ 1691   1 laws           9 | of and [laws] * certain
+ 1570   1 some           3 | and in [some] * any
+    2   1 mr             3 | * if [mr] * who
+  730   1 who            3 | mr * [who] was known
+  930   1 known          3 | who was [known] the law
+   63   1 d              6 | be * [d] * to
+ 1370   1 this           6 | * by [this] letter is
+ 1410   1 concert        6 | is in [concert] with and
+  790   1 between        3 | with and [between] them and
+ 1080   1 men            3 | and * [men] * either
+  640   1 into           9 | and * [into] an *
+   40   1 an             9 | * into [an] * of
+ 1641   1 writings       9 | of * [writings] of *
+ 1000   1 under          9 | of * [under] a *
+ 1634   1 estimable      9 | the in [estimable] with him
+    5   1 respect        3 | * and [respect] with and
+ 1470   1 thereby        3 | with and [thereby] * for
+ 1233   1 <unk>          6 | of that [<unk>] * the
+  890   1 idea           6 | * the [idea] that and
+ 1321   1 sentiments     3 | you his [sentiments] that and
+ 1780   1 march          6 | the of [march] that his
+ 1241   1 decided        9 | taken a [decided] * the
+  230   1 com            3 | his * [com] * to

@@ -1,0 +1,4 @@
+# H27 round 1, seed 3, reader = the runner session, from the round-0 view only (hidden.json never opened):
+# frequency order for the particle block with one value per word; "the same or to the", "which will be necessary",
+# "it will certainly", "the case i"; book values (>=100) reading as function words are wrong by design, left alone
+69=the, 45=of, 21=and, 48=to, 41=that, 3=in, 96=a, 88=or, 56=will, 67=be, 89=it, 20=i
