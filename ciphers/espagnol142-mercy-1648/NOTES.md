@@ -2033,3 +2033,15 @@ class change: 65 stays M, with "sr" logged as the candidate value in REGISTER-CH
 Note from DECODE-OPEN's H17 (merged this hour): the Brussels register 958-965, read at full size, holds no candidate
 period key for this letter and no values for the M codes or the boxed 101, so the register checklist's syllable
 questions (72, 52, 65, 48) have no period source on file; they stay cryptanalytic.
+
+## Campaign step H46 (2026-09-28 16:07-15:57 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** The other unread stretch, v04 after "y que corra por su": its letters with M
+and nomenclature tokens as "?" read "noladire?tnonysiiu?a". List built before scoring: every word after "por su" in the
+es17c7 Cartas corpus, 4-12 letters, 3+ occurrences (30 words, `h46/wordlist.tsv`); each aligned to v04:1 with H41's
+scorer (`h46/crib.py`, `h46/result.log`). Best: **"poca", fit 0** (two letters agree, two disagree), then vida / casa /
+alma -2. The pre-registered rule (unique best, P < 0.05) is met only formally (P 1/30 = 0.033): a fit of 0 means nothing
+aligns, so this is logged as no candidate, and the rule's gap is noted -- a list test also needs a minimum fit (for
+example most letters of the word agreeing), which H41's Burgsdorf (7 of 9 letters, no mismatch) met and this does not.
+v04 may not begin a word, or "por su" may not be the phrase boundary; the stretch stays unread. No token, grade or
+class change.
