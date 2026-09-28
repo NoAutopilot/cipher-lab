@@ -3442,3 +3442,25 @@ solution and its adjudication" above).**
 
 No flag raised. Conditional on the search engine's index (blog comment threads beyond the two Cryptiana posts fetched
 were not reachable except through search). Not a novelty statement (rule 10).
+
+## Campaign step H64 (28 Sept 2026, to 16:32 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). The key-hunt
+rule (a) added to the campaign brief at 15:31 (CHECK-SOLVED-WEB): LOCAL-QUEUE L27's catalogue reads (ARM-OWN H34, which
+tried curl and WebFetch only) retried once each through `tools/browser_fetch.js`, then Wayback.
+
+| catalogue | browser tool (one load each, 2 s apart) | Wayback |
+|---|---|---|
+| archives.nypl.org/mss/6743 (MssCol 6743) | Akamai "Access Denied" (303 B) | not reachable (below) |
+| discover.hsp.org, 'Armstrong, John, 1758-1843' | Cloudflare "Just a moment..." | not reachable |
+| corsair.themorgan.org, same heading | Cloudflare "Attention Required!" | not reachable |
+| researchworks.oclc.org/archivegrid, same heading | Cloudflare challenge (redirect with __cf_chl_rt_tk) | not reachable |
+| masshist.org collection-guide browse list | loaded (94 KB, 704 guides): no Armstrong, John guide; only "William Livingston Family Collection 1664-1839" (the New Jersey family, not Robert R.) and an unrelated Erving Winslow | -- |
+
+**Wayback:** web.archive.org resets the TLS handshake from this container (curl error 35, the agent proxy logs the
+tunnel "closed mid-exchange"; three tries between 16:28 and 16:32 UTC), while archive.org answers 200 -- an
+egress-path failure for that host in this environment, not a site verdict; per the good-citizen rule not retried
+further. **Result:** no catalogue opened beyond H34's; L27 stays on the owner's desk, now with the browser-tool and
+Wayback attempts logged, as rule (a) asks. No challenge was bypassed. No reading, no class change. Requests:
+archives.nypl.org 1, discover.hsp.org 1, corsair.themorgan.org 1, researchworks.oclc.org 1, masshist.org 1,
+web.archive.org 3 (reset). Cost: about 0.5 USD (`--spend` 0.5).
