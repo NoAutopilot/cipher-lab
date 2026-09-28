@@ -12,5 +12,21 @@
   "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f88/full/1400,/0/native.jpg",
   "bytes": 211101,
   "fetched": "2026-09-28 20:16-20:28 UTC"
+ },
+ {
+  "file": "c88_cipher_wt.jpg",
+  "shelfmark": "fr.3251",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f88/pct:52,67,43,18/full/0/native.jpg",
+  "bytes": 546281,
+  "fetched": "2026-09-28 22:4x UTC (HARVEST-D2)",
+  "note": "wide and tall: f.87's cipher lines fall 95-135 px to the right and the earlier 13%-high regions clipped line 5's right end; the crops of the third (used) reader pair come from this file. A first tall fetch at pct:55,67,40,18 (the narrow x-range, which clips the line starts) was discarded unused: 2 requests this job."
+ },
+ {
+  "file": "c88_cipher_w.jpg",
+  "shelfmark": "fr.3251",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f88/pct:52,69,43,13/full/0/native.jpg (HARVEST-D's wider re-fetch, url inferred from its width)",
+  "bytes": 410802,
+  "fetched": "2026-09-28 20:16-20:28 UTC (HARVEST-D)",
+  "note": "superseded by c88_cipher_wt.jpg for crops"
  }
 ]

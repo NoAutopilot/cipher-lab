@@ -1,0 +1,199 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S84	S42	M	prose before: "particolari"; x-like with loop
+L01	2	S54	S74	M	b, flag and bar on top
+L01	3	S65	S66	M	8, dot upper right
+L01	4	S93		M	w plus tall S flourish, black tick
+L01	5	S84	S31	L	big double loop
+L01	6	S74	S77	M	b with heavy tick above
+L01	7	S84	S31	L	loop x
+L01	8	S13	S95	L	o with dot/inner mark
+L01	9	S23		M	triangle-ish A
+L01	10	S62		H	beta
+L01	11	S60	S88	M	oval crossed by two bars
+L01	12	S73		H	cross with dots (from L02_s3 centre)
+L01	13	S89		H	=
+L01	14	S47	S25	M	e-like double loop, dot
+L01	15	S37	S74	L	tall b/delta with loop
+L01	16	S80	S65	M	8 with bar
+L01	17	S94	S55	M	circle over cross
+L01	18	S93		M	w+S
+L01	19	S40	S32	M	x with tail
+L01	20	S69	S60	M	theta with heavy bar
+L01	21	S94	S55	L	big circle over cross
+L01	22	S66	S26	L	x/z with dot above
+L01	23	S80	S65	M	8 with bar, black cap
+L01	24	S56		H	t3
+L01	25	S97		H	lambda
+L01	26	X_NEW	S74	L	u/a with black blob top-left, dash above (from L01_s4)
+L01	27	S89		H	=; line end
+L02	1	S62	S67	L	line start; P-like arc with stem and base
+L02	2	S45	S66	L	c with dot inside
+L02	3	S94	S55	M	circle w dot over cross
+L02	4	S93		M	w+S
+L02	5	S91	S58	L	e-loop, tick, tail below
+L02	6	S60	S69	M	oval crossed by bars
+L02	7	S80	S65	M	8 with bar
+L02	8	S30	S49	M	slash between two dots
+L02	9	S89		H	=
+L02	10	S93		M	w+S
+L02	11	S84	S31	M	loop x
+L02	12	S61	S66	L	j-like, dot above
+L02	13	S25	S23	L	a/u
+L02	14	X_NEW		L	tall S-curve with hook (L02_s2 own row start)
+L02	15	S74	S54	M	b with black flag
+L02	16	S35	S25	M	m with tick
+L02	17	S23	S97	M	Delta with flag
+L02	18	S56		H	t3
+L02	19	S80		M	8 with bar (from L03_s2 top)
+L02	20	S76	S58	L	cy with loop
+L02	21	S17		M	Z
+L02	22	S13		L	oval
+L02	23	S61	S26	L	q with base bar
+L02	24	S52		M	3
+L02	25	S22		L	wave u
+L02	26	S70	S75	M	cross with V
+L02	27	S23		M	A with dot
+L02	28	S94	S55	L	circle with tail
+L02	29	S70	S75	M	cross+V (L03_s3 centre)
+L02	30	S84	S31	M	loop
+L02	31	S88	S24	M	double bar with slash, tick
+L02	32	S93		M	w+S
+L02	33	S40	S32	M	x with hook tail
+L02	34	S57	S45	M	small c, heavy dot
+L02	35	S60	S69	M	oval, bars
+L02	36	S93		M	w+S
+L02	37	S23	S97	M	A with dot
+L02	38	S37	S13	L	tall stem loop, dot atop
+L02	39	S50	S59	L	6s
+L02	40	S57	S45	L	c heavy start
+L02	41	S17		M	Z
+L02	42	S73		H	cross with dots (also L02_s4; counted once); line end
+L03	1	S97		H	line start; lambda
+L03	2	S80		H	8 bar
+L03	3	S84	S31	M	loop x
+L03	4	S75	S73	M	cross, tiny dot atop
+L03	5	S74	S54	M	b big black flag
+L03	6	S80	S65	M	8 bar
+L03	7	S13	S95	L	theta with centre dot
+L03	8	S30	S49	M	slash between dots
+L03	9	S45	S66	L	c with dot
+L03	10	S54	S74	M	b flag over arc
+L03	11	S52		H	3
+L03	12	S88	S60	M	two bars with slash
+L03	13	S65	S66	L	8 with tick
+L03	14	S84	S31	L	big loop (L04_s2 top row)
+L03	15	S31	S84	L	loop
+L03	16	S26		L	base stroke, dot, loop
+L03	17	S93		M	w+S
+L03	18	S23		M	A dot
+L03	19	S62		H	beta
+L03	20	S60	S69	M	crossed oval
+L03	21	S75		M	cross w dot atop
+L03	22	S73		H	cross w dot
+L03	23	S94	S55	M	circle over cross
+L03	24	S88	S24	M	bars stem
+L03	25	S30		M	slash dots
+L03	26	S67		H	f with tail
+L03	27	S80		H	8 bar black cap
+L03	28	S84	S31	M	loop x
+L03	29	S69	S60	M	theta with tail bar
+L03	30	S70	S75	M	cross V (L04_s3 centre)
+L03	31	S23	S97	M	A dot
+L03	32	S74	S54	M	b black flag
+L03	33	S62		M	beta black cap
+L03	34	S37	S74	L	b/delta with flag
+L03	35	S61		H	q black cap
+L03	36	S80	S65	M	8 bar
+L03	37	S16	S42	L	big triangle
+L03	38	S52		H	3
+L03	39	S23		M	A dot
+L03	40	S89		H	=
+L03	41	S62		M	beta
+L03	42	S32	S47	L	e with tail
+L03	43	S80		M	8 bar
+L03	44	S84	S31	M	loop x
+L03	45	X_NEW		L	two vertical strokes with two dots above
+L03	46	S75	S73	L	cross with stem
+L03	47	S89		L	= (L03_s4 own crop; conflicts with L04_s3 row which ends at page margin after cross)
+L03	48	S80		L	8 bar
+L03	49	S74		L	b big flag with dot; line end
+L04	1	S23	S16	M	line start; big A with left arc
+L04	2	S45	S66	L	c with dot
+L04	3	S56		H	t3
+L04	4	S53		H	phi black cap
+L04	5	S93		M	w+S
+L04	6	S60		M	crossed oval
+L04	7	S35	S25	H	m with tick
+L04	8	S84	S31	M	loop x
+L04	9	S80		M	8 bar
+L04	10	S26		H	2 with dot and base
+L04	11	S13		L	oval with cap (L05_s2 top row; s1 edge partial dropped)
+L04	12	S80		M	8 bar
+L04	13	S56		M	t3
+L04	14	S70	S75	M	cross V
+L04	15	S17		M	Z
+L04	16	S62	S67	L	P arc
+L04	17	S93		M	w+S
+L04	18	S80	S65	M	8 dot top
+L04	19	S47	S25	M	e-like
+L04	20	S23		M	A dot
+L04	21	S13	S95	M	theta dot
+L04	22	S93		M	w+S
+L04	23	S62		M	beta
+L04	24	S60		M	crossed oval
+L04	25	S23		M	A dot
+L04	26	S88	S24	M	bars stem
+L04	27	S45	S66	M	c with dot (L05_s3 centre)
+L04	28	S47	S25	M	e-like
+L04	29	S80		M	8 bar
+L04	30	S23		M	A dot
+L04	31	S88		M	bars slash
+L04	32	S93		M	w+S
+L04	33	S75		M	cross
+L04	34	S17		M	Z
+L04	35	S84	S31	M	loop x
+L04	36	S80		M	8 bar
+L04	37	S30		M	slash dots
+L04	38	S88	S24	M	bars stem
+L04	39	S76	S58	L	cy with loop and two dots
+L04	40	S52		M	3
+L04	41	S74	S54	M	b
+L04	42	S75		M	cross (matches L04_s4 b + ; s4 not added twice); line end
+L05	1	S23	S97	M	line start; A with dot
+L05	2	S35	S25	M	m no dot
+L05	3	S97	S23	M	tick + lambda
+L05	4	S23		M	A dot
+L05	5	S89		H	=
+L05	6	S62		H	beta
+L05	7	S73	S75	M	cross with dot
+L05	8	S26		H	2 dot base
+L05	9	S35		H	m tick
+L05	10	S37		M	stem, loop, dot
+L05	11	S60		M	crossed oval
+L05	12	S75		M	cross
+L05	13	S76	S91	L	cy loop dot (L06_s2 centre)
+L05	14	S80		M	8 bar
+L05	15	S74	S37	L	plain b
+L05	16	S52		M	3
+L05	17	S30		M	slash dots
+L05	18	S53	S55	M	phi
+L05	19	S75	S56	M	cross tall stem
+L05	20	S37	S13	L	stem loop
+L05	21	S70		M	cross V
+L05	22	S23		M	A dot
+L05	23	S88	S24	M	bars stem
+L05	24	S76	S91	L	cy dots
+L05	25	S62		M	beta
+L05	26	S20		H	d black flag
+L05	27	S62		M	beta
+L05	28	S60	S69	M	crossed oval
+L05	29	S75		L	from L06_s3 bottom row, cut off at crop bottom
+L05	30	S88		L	bars stem
+L05	31	S45	S30	L	slash-6 with dot
+L05	32	S89		L	=
+L05	33	S75		L	cross
+L05	34	S22		L	wave
+L05	35	S93		L	w+S; row then leaves crop bottom
+L05	36	S76	S91	L	c/y pair from L05_s4
+L05	37	S88		L	bars stem; line end
+L06	1	?		L	line start; no L06 row visible in any of the four L06 crops or elsewhere; line end

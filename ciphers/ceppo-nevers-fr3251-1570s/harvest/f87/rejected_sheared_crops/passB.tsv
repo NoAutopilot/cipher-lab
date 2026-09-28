@@ -1,0 +1,219 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S84	S40	M	[src: L01 s2] x with tail | prose before: particolari
+L01	2	S54	S74	M	b, bar and flag blob
+L01	3	S65	S35	M	8 with dot
+L01	4	S93	S58	M	w
+L01	5	S37	S80	L	hooked 8 with flag
+L01	6	S84	S31	M	loop-L
+L01	7	S74	S54	M	b with flag
+L01	8	S84	S31	M	loop-L
+L01	9	S13	S95	L	dotted small o
+L01	10	S23		M	A
+L01	11	S62		M	beta
+L01	12	S60	S88	M	barred hash
+L01	13	S73	S30	L	[src: L02 s3 top row (L01 s3 own row lies cut off at crop bottom)] dot + cross
+L01	14	S89		M	=
+L01	15	S47	S31	M	epsilon-like
+L01	16	S74	S54	L	b
+L01	17	S80	S65	M	8 barred, ring on top
+L01	18	S94	S55	M	ring on cross
+L01	19	S93	S58	M	w
+L01	20	S37	S80	L	hooked
+L01	21	S40	S84	L	x with tail
+L01	22	S69	S13	M	oval barred
+L01	23	S55	S94	M	large ring on cross
+L01	24	S42	S24	L	x with dot above
+L01	25	S80	S65	M	8 barred
+L01	26	S56	S52	M	tick + 3
+L01	27	S97		H	lambda
+L01	28	X_NEW	S23	L	[src: L01 s4] a with heavy blob at top left
+L01	29	S89		H	= | line end
+L02	1	S87	S67	L	[src: L02 s1] P-like loop with foot bar | line start
+L02	2	S45	S13	M	c with dot
+L02	3	S94	S55	M	ring on cross
+L02	4	S93	S58	M	w
+L02	5	S37	S80	L	hooked 8
+L02	6	S56	S40	L	hook with tail
+L02	7	S69	S13	M	oval barred
+L02	8	S65	S35	L	8 with ticks
+L02	9	S73	S49	L	slash and dot
+L02	10	S89		H	=
+L02	11	S93	S58	M	w
+L02	12	S37	S80	L	hooked 8
+L02	13	S84	S31	L	loop
+L02	14	S13	S95	L	small o
+L02	15	X_NEW		L	j-like tail then u/n stroke at crop edge
+L02	16	S74	S54	L	[src: L03 s2 top row (L02 s2 own row is at crop bottom, cut)] b, no flag
+L02	17	S35		M	m with tick
+L02	18	S23	S16	M	triangle-like with tick
+L02	19	S56		M	bar + 3
+L02	20	S80	S94	M	8 barred with dot
+L02	21	S84	S40	M	x-loop
+L02	22	S76	S91	L	ey-like: loop, two dots, y hook
+L02	23	S17	S66	M	z
+L02	24	S69	S13	M	slanted oval barred
+L02	25	S61		H	q
+L02	26	S52		H	3
+L02	27	S22		H	wave
+L02	28	S70		H	V with bar
+L02	29	S23	S97	M	Lambda
+L02	30	S95	S13	L	partial o at crop edge
+L02	31	S70	S75	M	[src: L03 s3 top row (L02 s3 own row is cut off at crop bottom)] V with cross
+L02	32	S84	S31	M	double loop
+L02	33	S88	S24	M	hash with blob
+L02	34	S93	S58	M	w
+L02	35	S37	S80	M	hooked
+L02	36	S40	S84	M	x with tail
+L02	37	S57		M	small open c
+L02	38	S69	S13	M	oval barred
+L02	39	S88	S24	M	hash
+L02	40	S93	S58	M	w
+L02	41	S37	S80	M	hooked
+L02	42	S23	S97	M	Lambda with tail
+L02	43	S65	S37	L	8 with tick above
+L02	44	S74	S54	L	b flag
+L02	45	S57		M	small open c
+L02	46	S17	S66	M	z
+L02	47	S73	S30	M	cross with dots
+L02	48	S73	S30	H	[src: L02 s4] cross with dots | line end
+L03	1	S97	S23	M	[src: L03 s1] lambda with heavy foot | line start
+L03	2	S65	S80	L	8 with cross
+L03	3	S84	S31	M	loop
+L03	4	S75		H	+
+L03	5	S74	S54	M	b with flag
+L03	6	S65	S80	M	8 with bar
+L03	7	S13	S95	M	dotted oval
+L03	8	S49	S73	L	slash and dot
+L03	9	S45		M	c with dot
+L03	10	S54		M	b with bar and flag
+L03	11	S52		H	3
+L03	12	S88		H	hash
+L03	13	S65		M	8
+L03	14	?		L	partial sign at crop edge
+L03	15	S84	S31	M	[src: L04 s2 top row (L03 s2 own row lies at crop bottom)] loop
+L03	16	S84	S31	L	loop with dot
+L03	17	S93	S58	M	w
+L03	18	S47	S37	L	hooked epsilon
+L03	19	S23	S97	M	Lambda with dot
+L03	20	S62		M	beta
+L03	21	S69	S60	M	oval barred
+L03	22	S75		L	thin +
+L03	23	S73		M	cross with dot
+L03	24	S94	S55	H	ring on cross
+L03	25	S88		M	hash
+L03	26	S49	S73	L	slash and dot
+L03	27	S67		L	f-like
+L03	28	S80		M	8 barred
+L03	29	S84	S31	M	loop
+L03	30	S69	S13	L	oval
+L03	31	?		L	[src: L03 s3: row cut off at crop bottom, only tops of flagged signs visible in L03 s3 and bottoms in L04 s3; not legible] segment not legible in any crop, sign count unknown
+L03	32	S89		H	[src: L03 s4 own row] =
+L03	33	S80	S65	M	8 barred
+L03	34	S54	S74	M	b with flag and dot | line end
+L04	1	S23	S97	L	[src: L04 s1] big triangle-like sign with blob | line start
+L04	2	S45		M	c with dot
+L04	3	S56		M	bar + 3
+L04	4	S53		H	phi
+L04	5	S37		L	P-hook
+L04	6	S93	S58	M	w
+L04	7	S37	S80	L	hooked loop
+L04	8	S60	S69	M	oval with two bars
+L04	9	S35		M	m with tick
+L04	10	S84	S40	M	x-loop
+L04	11	S80	S65	M	8 barred
+L04	12	S26	S31	M	9 with dot, underline
+L04	13	X_NEW	S52	L	partial 2-3 sign at crop edge
+L04	14	S13	S95	L	[src: L05 s2 top row (L04 s2 own row lies at crop bottom, cut)] oval with tick, partial
+L04	15	S65		M	8
+L04	16	S56		M	bar + 3
+L04	17	S70		H	V with bar
+L04	18	S17		M	Z
+L04	19	S37		L	P-hook
+L04	20	S93	S58	M	w
+L04	21	S80		M	8 barred
+L04	22	S47		M	epsilon
+L04	23	S23		M	Lambda with dot
+L04	24	S13		M	dotted oval
+L04	25	S93	S58	M	w
+L04	26	S37		L	hooked
+L04	27	S62		M	beta
+L04	28	S69	S60	M	oval barred
+L04	29	S23		M	Lambda with dot
+L04	30	S88		H	hash
+L04	31	S75		M	[src: L04 s3 own row (visible at lower half)] +
+L04	32	S23	S97	M	Lambda with dot
+L04	33	S74	S54	M	b with tick
+L04	34	S62		M	beta
+L04	35	S37	S80	L	flagged hooked
+L04	36	S61		M	q
+L04	37	S65		M	8
+L04	38	S42	S16	L	triangle
+L04	39	S52		H	3
+L04	40	S23	S97	M	Lambda with dot
+L04	41	S89		H	=
+L04	42	S62		M	beta
+L04	43	S47		M	epsilon
+L04	44	S65	S80	M	8
+L04	45	S76	S91	L	ey-like
+L04	46	S75	S73	L	cross
+L04	47	S54	S74	M	[src: L04 s4 own row] b with long flag
+L04	48	S75		H	+ | line end
+L05	1	S23		M	[src: L05 s1] Lambda with dot | line start
+L05	2	S25	S35	M	m
+L05	3	S97	S23	M	lambda with dot
+L05	4	S23		M	Lambda with dot
+L05	5	S89		H	=
+L05	6	S62		M	beta
+L05	7	S73		M	cross with dot
+L05	8	S26		M	2 with dot
+L05	9	S35		M	m with tick
+L05	10	S37		L	tall hook with tick
+L05	11	S60		M	barred with peak
+L05	12	S75		L	partial + at crop edge
+L05	13	S91	S76	L	[src: L06 s2 centre row (L05 s2 own row lies at crop bottom, cut)] ey-like
+L05	14	S80	S65	M	8 barred
+L05	15	S74		M	b
+L05	16	S52		H	3
+L05	17	S49	S73	L	slash and dot
+L05	18	S53		H	phi
+L05	19	S75		H	+
+L05	20	S74		M	b with tick
+L05	21	S70		H	V with bar
+L05	22	S23		M	Lambda with dot
+L05	23	S88		H	hash
+L05	24	S76	S91	L	ey-like with dots
+L05	25	S62		M	beta
+L05	26	S20		M	d
+L05	27	S62		M	beta
+L05	28	S69	S60	M	oval barred
+L05	29	S89		L	= partial at crop edge
+L05	30	S45		M	[src: L05 s3 own row] c with dot
+L05	31	S47		M	epsilon
+L05	32	S80		M	8 barred
+L05	33	S23		M	Lambda with dot
+L05	34	S88		H	hash
+L05	35	S93		M	w
+L05	36	S37		M	hooked with tick
+L05	37	S75		M	+
+L05	38	S17		M	Z
+L05	39	S84	S31	M	loop
+L05	40	S65	S80	M	8 with dot
+L05	41	S49	S73	L	slash and dot
+L05	42	S88	S75	L	hash/cross
+L05	43	S76	S91	L	ey-like
+L05	44	S52		M	3
+L05	45	S74		M	b
+L05	46	S75		M	+
+L05	47	S76	S91	L	[src: L05 s4 top] ey-like at crop edge
+L05	48	S88	S24	M	hash with tick | line end
+L06	1	S88		L	[src: L06 s3 bottom row (cut at crop bottom)] hash
+L06	2	S75		L	+
+L06	3	S88		L	hash
+L06	4	S45		L	c
+L06	5	S89		L	=
+L06	6	S75		L	+
+L06	7	S22		L	wave
+L06	8	S93		L	w
+L06	9	S37		L	hooked
+L06	10	S74	S54	L	b with flag
+L06	11	S54	S74	L	[src: L05 s4 bottom] b with big flag, partial | line end
