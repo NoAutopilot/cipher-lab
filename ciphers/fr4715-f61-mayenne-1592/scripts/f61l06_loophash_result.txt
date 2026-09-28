@@ -1,0 +1,5 @@
+f.108r L06: 40 signs, HASH4 10
+HASH4 = d/q: gain 0.084, rank 27 of 201 (best permuted 0.302)
+HASH4 = i/x: gain 0.212, rank 3 of 201 (best permuted 0.302)
+HASH4 = h/u: gain 0.313, rank 1 of 201 (best permuted 0.302)
+HASH4 = dropped: gain 0.058, rank 60 of 201 (best permuted 0.203)

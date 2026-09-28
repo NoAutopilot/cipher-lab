@@ -3137,3 +3137,12 @@ Gallica (1 manifest via `tools/gallica_folio.py`, 5 image requests, all 200), lo
   "(a)" mark); canvas f17 is a page of clear text (possibly the decipherment), f21 the address to de Diou. Same correspondents,
   same months as f.108r/v (Mayenne to de Diou, Feb-Mar 1593). Images in `family/fr3984_f7/` with a README.
 Whether the cipher runs are f.61's own cells, and whether f17 deciphers them, is not checked here (H168). No key, no reading.
+
+## Campaign step H167 (28 Sept 2026, finished 20:27 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only, descriptive
+
+`scripts/f61l06_loophash.py` (pushed 15e2ea9f before the run; `f61l06_loophash_result.txt`): f.108r L06 alone (40 signs,
+10 "HASH4", mostly the looped 4-over-hash of H162), sequence-gain rank among 200 permuted maps by HASH4 value: **h/u rank 1**
+(gain 0.313), i/x rank 3 (0.212), d/q rank 27 (0.084), dropped rank 60. The passes' own note on these signs, "crossed double
+loop, alt INF", points the same way (INF = h/u). Four values on one line of 40 signs, no gate: descriptive only -- a question
+for the person's gloss of L06 (ASKS 88) and for the family worker (whether the looped hash is a separate class from the
+4-over-hash d/q). No reading, no class change.
