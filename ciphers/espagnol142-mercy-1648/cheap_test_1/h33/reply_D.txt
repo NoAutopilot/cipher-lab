@@ -1,0 +1,19 @@
+BEGIN
+id	verdict	confidence	evidence_words
+K01	reject	high	muchos
+K02	reject	high	contradictorios
+K03	accept	medium	comenzaron
+K04	reject	high	que
+K05	reject	low	menor/voluio
+K06	reject	high	que
+K07	reject	medium	fauer
+K08	reject	high	responder
+K09	reject	medium	sedendo
+K10	reject	high	comenzaron
+K11	reject	high	diciembre de
+K12	reject	high	por
+K13	reject	low	dbsayplaudir
+K14	reject	high	lugares, negaron
+K15	reject	high	que
+K16	reject	medium	si
+END
