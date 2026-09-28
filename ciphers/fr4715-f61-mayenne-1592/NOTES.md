@@ -1698,7 +1698,7 @@ L07/1) are the ones a reader takes for the text's own "a", and whether they are 
 word "a" changes no cell and no letter of any reading (a null and an unread text letter render the same). The skeleton
 (H58) keeps them as nulls. No class change; nothing solved, new or first. Vision calls: 1 of 4.
 
-## Campaign step H65 (28 Sept 2026, 14:19-14:30 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+## Campaign step H65 (28 Sept 2026, 14:19-14:28 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
 
 Question: is H26's two-loops-side-by-side glyph (SBS, b/o on f.61r and f.108r by our fit only) the glyph under which the
 period decipherers of the family leaves write o, i.e. does the period gloss itself separate it from the e/r trefoil PHI?
@@ -1740,7 +1740,7 @@ the point where they meet, without passing through either loop; in group B at le
 phi-like loop or a small top loop over a pair, making a trefoil) and the stem runs up through the loop or cluster."
 Group per tile in `scripts/read_call_SBS.tsv`.
 
-## Campaign step H67 (28 Sept 2026, 14:33-14:45 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+## Campaign step H67 (28 Sept 2026, 14:29-14:33 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
 
 The b half of the SBS b/o cell (H65 tested o only). Design pre-registered and pushed 4c057470 before the call
 (`scripts/f61sbs.py build-b` / `score-b`, gate in `score_b`'s docstring, prompt `scripts/PROMPTS.md` "H67" = H65's with
@@ -1766,7 +1766,7 @@ b/o is period-attested at grade C on both halves, matching the table's own b/o c
 H68 dropped: its "prior" (period o vs b counts under SBS) would be French letter frequency (o about six times b) and
 adds nothing a verifier does not already bring to L10 positions 6/11.
 
-## Campaign step H69 (28 Sept 2026, 14:47-14:58 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+## Campaign step H69 (28 Sept 2026, 14:33-14:37 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
 
 Is the readers' 4TRI class (atlas: "a 4-shaped element with a crossbar above a small triangle or V") one glyph, given
 that the period gloss puts letters of two table cells under it (a/n and c/p)? Design pre-registered and pushed
@@ -1796,7 +1796,7 @@ small closed triangle on the stem below the crossbar; B has a tall, mostly open 
 end; C has an open r/7 stroke beside the 4 at crossbar height with nothing on the lower stem; D has a closed round loop
 at crossbar height."
 
-## Campaign step H70 (28 Sept 2026, 15:00-15:12 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+## Campaign step H70 (28 Sept 2026, 14:37-14:42 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
 
 F61-CAL's open data conflict (the 'V with bar' class takes s and t, which the table splits across its f/s and g/t
 columns) against a period gloss. Design pre-registered and pushed d9b432c7 before the call: `scripts/f61sbs.py

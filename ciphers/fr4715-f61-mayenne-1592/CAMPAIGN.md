@@ -185,12 +185,12 @@ closed:
 
 2026-09-28 06:4x UTC | session_01FXDfYR3CvGk7tcid1Aav1n (orchestrator) | budget | 0 | daily budget raised 240 -> 400 for 28 Sept under the owner's lean-in direction of 00:15 UTC (cost not a constraint; real get_session spend reconciled at each check-in ran past 240); the runner continues.
 
-2026-09-28 14:30 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H65 done | 2 | PASS: blind sort of 40 period-glossed loop tiles (f.101r, f.188r) splits side-by-side = o 18/20, trefoil = e 18/19 (36/39, P<0.0005, p95 26/39), both hands; SBS o now period-attested (grade C), b untested; H67 (b half) and H68 (L10 prior, script-only) added; H52 (family worker) now has a positive sampled test behind it.
+2026-09-28 14:28 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H65 done | 2 | PASS: blind sort of 40 period-glossed loop tiles (f.101r, f.188r) splits side-by-side = o 18/20, trefoil = e 18/19 (36/39, P<0.0005, p95 26/39), both hands; SBS o now period-attested (grade C), b untested; H67 (b half) and H68 (L10 prior, script-only) added; H52 (family worker) now has a positive sampled test behind it.
 
-2026-09-28 14:46 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H67 done | 2 | PASS: b sorts with o under the side-by-side glyph (11/14 vs e 3/13, Fisher P 0.0056); SBS b/o period-attested on both halves.
+2026-09-28 14:33 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H67 done | 2 | PASS: b sorts with o under the side-by-side glyph (11/14 vs e 3/13, Fisher P 0.0056); SBS b/o period-attested on both halves.
 
-2026-09-28 14:46 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H68 dropped | 0 | would restate letter frequency; H69 (4TRI a/n vs c/p), H70 (VBAR_A s vs t, F61-CAL conflict), H71 (PHI e vs r, one-cell control) added from the family align census.
+2026-09-28 14:33 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H68 dropped | 0 | would restate letter frequency; H69 (4TRI a/n vs c/p), H70 (VBAR_A s vs t, F61-CAL conflict), H71 (PHI e vs r, one-cell control) added from the family align census.
 
-2026-09-28 14:59 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H69 done | 2 | PASS: the readers 4TRI class is two glyphs -- 4-over-triangle = c/p (18/20, both hands), a/n under hand-specific 4-with-hook forms (33/36, P<0.0005); H72 (apply to f.61 with family anchors) added.
+2026-09-28 14:37 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H69 done | 2 | PASS: the readers 4TRI class is two glyphs -- 4-over-triangle = c/p (18/20, both hands), a/n under hand-specific 4-with-hook forms (33/36, P<0.0005); H72 (apply to f.61 with family anchors) added.
 
-2026-09-28 15:12 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H70 done | 2 | PASS (thin, 3 over p95): VBAR s/t is two glyphs in f.101r (second stroke = s, top bar only = t), matching H15 on f.61 and the atlas VBAR_A/B; one hand.
+2026-09-28 14:42 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H70 done | 2 | PASS (thin, 3 over p95): VBAR s/t is two glyphs in f.101r (second stroke = s, top bar only = t), matching H15 on f.61 and the atlas VBAR_A/B; one hand.
