@@ -1827,7 +1827,7 @@ right (a Z-like form); group C has only a top bar, drawn long past the right sid
 short top bar with no long rightward extension (the A/C boundary is a matter of degree and less secure than the B
 distinction)."
 
-## Campaign step H72 (28 Sept 2026, 14:43-14:46 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+## Campaign step H72 (28 Sept 2026, 14:42-14:44 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
 
 The row asked for a vision sort of f.61's 4-shaped signs beside family anchors. The tally on disk answers it first
 (`scripts/f61h72.py`, `f61h72_result.txt`, `--check` OK; Tomokiyo's letters placed by the joint cell map's DP, the
