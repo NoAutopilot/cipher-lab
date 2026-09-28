@@ -1,0 +1,53 @@
+cell	sign	description	code	second	conf	why
+A	1	w-shape (double-bowl omega) with a horizontal bar over it	OMEGABAR	OMEGA2	H	barred omega exactly as the OMEGABAR examples
+A	2	large shallow open arc, like a smile, blob/hook at left end	NONE	STROKE	L	no atlas row has a broad open arc; only some curved STROKE examples come close
+H	1	5-shape, tall top stroke into a lower bowl	ESS	-	H	same stroke layout as both ESS examples
+R	1	alpha/fish curl, loop left with two tails right	XCURL	-	H	identical to the XCURL row
+R	2	figure-8 / delta, upper loop open, closed lower loop	RHO	EIGHT	M	8-like double loop with open top like the RHO 8-forms
+NN	1	short vertical stroke with a dot on each side	STROKE	-	M	a plain stroke; STROKE examples carry dots beside them
+B	1	plus cross, long horizontal arm	PLUS	TEE	H	matches PLUS
+I	1	slanted long oval with small loop on top and a tall rising tail	TLOOP	PHI	L	loop with a rising stroke like TLOOP, but longer and more slanted
+I	2	reversed 7: horizontal bar, stem drops from right end	SEVENB	SEVEN	H	square-cornered hanging 7 as in SEVENB
+S	1	N-shape with extra crossbar	ENN	-	H	matches ENN
+S	2	D-shape with a lead-in tail at left	DEE	-	H	matches the DEE examples
+PP	1	long wavy horizontal stroke, dot below, tick above right	NONE	HOOK	L	no row has a long tilde with dot; possibly a flat hook form
+C	1	upside-down Pi/Shin form, two uprights on a base bar	LL	PI	H	matches LL row
+C	2	small loop with stem and horizontal bar to right	TLOOP	THETA	M	loop plus bar like TLOOP's d-shapes
+L	1	small 3/7-like hook: curled top, bulging descending stem	THREE	SEVEN	M	top curl and single descender like a narrow 3
+L	2	2 with long flat base stroke	TWOFLAT	TWO	H	flat-bottomed 2 as in TWOFLAT
+L	3	3/z with long curving descender	THREE	NINE	M	3-shaped top with tail, a scribe's 3
+T	1	closed o-loop with tail rising to upper right	ELOOP	RHO	M	loop with exit stroke like ELOOP/HOOK family
+T	2	e-shape hook with a stem rising from the top	ECAP	ELOOP	M	open e with cap stroke as in ECAP
+T	3	small u with a long sweeping tail down-left	MU	UCURL	M	u-body with lead stroke as in MU
+Qua	1	flat-based 2 with a dot above right	TWOFLAT	TWO	H	flat 2 with a mark as in TWOFLAT
+D	1	Pi: top bar with two legs	PI	LL	H	matches PI row
+D	2	oval loop crossed by a long horizontal bar	THETA	PHI	H	barred loop as in THETA
+M	1	gamma: two arms curling out over a closed lower loop	UCURL	XCURL	M	loop with two curled arms like UCURL
+M	2	J-shaped hook with small loop at top	JHOOK	STROKE	M	J-hook form; no sheet row, JHOOK code named in brief
+U_V	1	m/omega on its side, two rounded humps	EM	OMEGA2	M	rounded m like EM
+U_V	2	long-s/f with a crossbar and foot curl	TEE	PHI	L	crossed upright like TEE, but much taller
+Que	1	small square/diamond blob above	DIAMOND	-	M	hollow quadrilateral like DIAMOND; may be the diacritic of sign 2
+Que	2	epsilon / reversed-3 open e	EPSILON	ECAP	M	e-shape with mark above; sheet has no EPSILON row
+E	1	9 with long straight tail	NINE	-	H	matches NINE
+E	2	7 with a dot at left and a dot at right	SEVEN	SEVENB	H	dotted slanting 7 as in SEVEN
+N	1	hollow square/diamond	DIAMOND	-	H	matches DIAMOND
+N	2	x/H shape with curled feet	HCURL	XCURL	H	matches HCURL
+Z	1	cursive Z with curled ends	TWOFLAT	TWO	L	flat-based 2-like stroke; no Z row
+RR	1	figure-8 crossed by a long horizontal bar	EIGHTBAR	THETA	H	barred 8 as in EIGHTBAR
+F	1	plus with curled left end and a dot above right	TEE	PLUS	M	cross with curled arm like TEE
+F	2	trident/psi: cup on a long stem sloping down-left	NONE	FOUR	L	no row resembles a trident
+O	1	8	EIGHT	-	H	matches EIGHT
+O	2	2	TWO	-	H	matches TWO
+Nulla	1	4 with open top	FOUR	-	H	matches FOUR
+Nulla	2	6 with long rising stem	SIX	-	H	matches SIX
+Nulla	3	z/flat 2 with dot above	TWOFLAT	TWO	H	flat-based 2 as in TWOFLAT
+Nulla	4	9 with long tail down-left	NINE	-	H	matches NINE
+SS	1	two tall strokes, left one looped at the bottom (ff-like)	NONE	JHOOK	L	looped descender like a J-hook but doubled; no row
+G	1	loop pierced by a vertical stroke with foot hook	PHI	THETA	M	loop crossed by a stroke as in PHI
+G	2	omega with dot above	OMEGADOT	OMEGA2	H	matches OMEGADOT
+G	3	gamma loop, two arms over a closed lower loop	UCURL	RHO	M	like UCURL's y-loops
+P	1	c/e-curve crossed by a long horizontal bar	TEE	THETA	M	crossed curve like TEE
+P	2	z/3 zigzag	THREE	SEVEN	M	angular 3-shape
+CC_FF	1	figure-8 crossed by a horizontal bar	EIGHTBAR	THETA	H	matches EIGHTBAR
+CC_FF	2	delta/8 double loop with long lead stroke from lower left	RHO	EIGHT	M	like RHO's 8-forms with lead stroke
+TT	1	gamma loop crossed by a horizontal bar	UCURL	PHI	M	UCURL loop with bar added; no barred-UCURL row

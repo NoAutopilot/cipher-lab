@@ -1,0 +1,53 @@
+cell	sign	description	code	second	conf	why
+A	1	omega-like double bowl with long horizontal bar over it	OMEGABAR	OMEGA2	H	w-shape under a bar exactly as the OMEGABAR examples
+A	2	wide shallow smile-curve, hooked blob at left end, thinning to right	STROKE	HOOK	L	no row has a bare arc; closest to the curved STROKE forms
+H	1	numeral-5 shape, tall back curving into open lower bowl	ESS	-	H	same 5-like form as ESS examples
+R	1	cursive x/alpha, looped cross with curled ends	XCURL	-	H	matches XCURL loop-cross
+R	2	8/delta shape: small top loop, diagonal, closed lower loop	RHO	EIGHT	M	delta-like 8 as in RHO examples, more open than EIGHT
+NN	1	short vertical stroke with one dot left-low and one dot right-high	STROKE	-	M	vertical stroke; dots may be punctuation as in manuscript
+B	1	cross with longer left arm, short vertical slightly below center	PLUS	TEE	M	plain cross, no curved foot as TEE has
+I	1	slanted flat ellipse with small loop at top-right and rising tail	PHI	TLOOP	M	oval body with looped stroke resembles PHI cuts
+I	2	reversed-gamma: horizontal top bar, vertical drop at right	SEVENB	SEVEN	H	square right-angle like SEVENB, not slanted like SEVEN
+S	1	N/H-like: two uprights joined by diagonal plus bar	ENN	HCURL	H	matches ENN barred-N
+S	2	D-shape with bowl on right and tail at left base	DEE	OMEGADOT	M	D-bowl with lead-in tail as DEE examples
+PP	1	long tilde curve, thick left end, upturned right tip, dot below and dot above-right	NONE	OMEGABAR	L	no atlas row is a lone tilde; dots may be marks
+C	1	three short uprights on a horizontal base	LL	-	H	same comb-on-base shape as LL
+C	2	small closed loop at lower left with stroke rising to top and arcing right	TLOOP	HOOK	M	loop-plus-rising-stem like TLOOP cuts
+L	1	small 7/z-like sign with wavy top and straight descending tail	NINE	SEVEN	L	small head plus tail; ambiguous between NINE and a curled SEVEN
+L	2	flat 2: curved top leading into long flat base	TWOFLAT	TWO	H	flat-based 2 as TWOFLAT
+L	3	3/9-like head (open double hook) with long tail down-left	NINE	THREE	M	head-and-tail proportions of NINE, head more open
+T	1	closed loop with thickened left and small tail up-right	ECAP	RHO	L	loop with exit tail; nearest the small hook family
+T	2	small loop at bottom-left, stroke rising right to thick dot	ECAP	ELOOP	M	e-like loop with rising stroke as ECAP
+T	3	u/mu shape on end of long diagonal lead-in from lower left	MU	UCURL	M	u with long descender like MU cuts
+Qua	1	flat z/2 shape with dot above right	TWOFLAT	TWO	M	flat z-base with dot as in TWOFLAT examples
+D	1	pi: horizontal bar with two legs	PI	-	H	identical to PI
+D	2	closed oval crossed by horizontal bar	THETA	EIGHTBAR	H	barred oval matches THETA
+M	1	ram-horn/gamma: two curled top arms over a lower loop	UCURL	HOOK	M	gamma-with-loop like UCURL
+M	2	J-shape: small loop at top, long curve down and round to left	JHOOK	TLOOP	M	J-hook form described for JHOOK
+U_V	1	rotated m / epsilon on its side: arch with three feet	EM	-	H	matches EM
+U_V	2	long-s/f with crossbar and left foot	NONE	TEE	L	no f-shaped row; crossed stem only loosely TEE
+Que	1	small bow-tie/quadrilateral with notch	DIAMOND	-	M	small closed four-sided blob like DIAMOND
+Que	2	epsilon/reversed-3 open to right, no dots	EPSILON	ECAP	L	e-shape but lacks the two dots of EPSILON
+E	1	9 with closed head and long straight tail	NINE	-	H	matches NINE
+E	2	7 slanted with dot left and dot right	SEVEN	SEVENB	M	slanted 7; side dots as in SEVEN cuts
+N	1	small hollow square	DIAMOND	-	H	hollow quad as DIAMOND
+N	2	H/x with curled feet	HCURL	XCURL	H	curled-leg H as HCURL
+Z	1	cursive Z: top stroke, diagonal, flat base with upturned end	TWO	TWOFLAT	M	2/z shape with flat base; between TWO and TWOFLAT
+RR	1	8 crossed by horizontal bar	EIGHTBAR	THETA	H	barred 8 as EIGHTBAR
+F	1	horizontal bar with hooked left end, short vertical, dot right	PLUS	TEE	M	cross with hooked arm; dot likely punctuation
+F	2	trident/psi: U-cup on a long diagonal stem	NONE	PHI	L	no trident row
+O	1	numeral 8	EIGHT	-	H	matches EIGHT
+O	2	numeral 2 with curled top	TWO	-	H	matches TWO
+Nulla	1	numeral 4 (open, crossed)	FOUR	-	H	matches FOUR
+Nulla	2	numeral 6 with long top stroke	SIX	-	H	matches SIX
+Nulla	3	z/2 with flat base and dot above	TWOFLAT	TWO	M	flat base with dot like TWOFLAT
+Nulla	4	9 with small head and long diagonal tail	NINE	-	H	matches NINE
+SS	1	two joined J-strokes: looped J at left, second upright at right	JHOOK	STROKE	L	looped J plus stroke; no ligature row
+G	1	circle pierced by vertical stem with foot turned left	PHI	THETA	M	vertical through oval like PHI
+G	2	omega with dot above	OMEGADOT	OMEGA2	H	dotted omega as OMEGADOT
+G	3	gamma/loop: two arms meeting in lower loop	UCURL	RHO	M	gamma-loop like UCURL
+P	1	c/e shape crossed by horizontal bar	TEE	THETA	H	curved t-with-bar as TEE examples
+P	2	z/3-like zigzag with flat top	THREE	TWOFLAT	L	zigzag closest to THREE
+CC_FF	1	8 crossed by horizontal bar	EIGHTBAR	THETA	H	barred 8 as EIGHTBAR
+CC_FF	2	8/delta loop with long leftward diagonal tail	RHO	EIGHT	M	delta-like loop with lead-in as RHO
+TT	1	gamma-loop crossed by horizontal bar	UCURL	PHI	L	gamma body as UCURL but barred; no crossed-gamma row

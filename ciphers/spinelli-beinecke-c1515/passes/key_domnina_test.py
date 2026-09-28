@@ -27,8 +27,8 @@ ap=argparse.ArgumentParser(); ap.add_argument('map'); ap.add_argument('--shuffle
 ap.add_argument('--seed',type=int,default=7); ap.add_argument('--show',action='store_true')
 ap.add_argument('--phrase',default="la gubernation d'ispagnia"); a=ap.parse_args()
 MAP={}
-for r in csv.DictReader(open(a.map),delimiter='\t'):
-    if r['code'].startswith('#'): continue
+_rows=[l for l in open(a.map).read().splitlines() if l.strip() and not l.startswith('#')]
+for r in csv.DictReader(_rows,delimiter='\t'):
     MAP[r['code'].strip()]=r['value'].strip().lower()
 lines=[l.split() for l in open(os.path.join(HERE,'ciphertext_v4.txt')).read().splitlines() if l.strip()]
 codes=[c for l in lines for c in l]; cnt=Counter(codes)

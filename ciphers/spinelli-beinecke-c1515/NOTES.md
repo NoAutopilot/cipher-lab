@@ -1770,3 +1770,71 @@ three cipher-bearing page images: `sources/domnina-2015-2016/` (README.md there;
 (the row's est was 0.5; the extra is the reading of the file's contents, done here rather than left for the next
 runner to rediscover). No credentials, no AskUserQuestion, no vision subagent calls (three page images read by this
 runner directly), no other target's folder touched (a shared `sources/` folder added).
+
+## Campaign step H35 (28 Sept 2026, 06:03-06:1x UTC) -- Domnina's key matched to the atlas, and the known phrase places
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H35: transcribe Domnina's corrected key into a code-to-value map
+for this folder's atlas, then re-run H4's shape-for-shape application with controls, with the right cipher's key.
+
+**Method.** The 2016 plate's key table (`sources/domnina-2015-2016/p27_2016_plate_key_letter_decipherment.jpg`, Ill. 1)
+was cut into its 28 symbol cells by its own grid lines (detected mechanically: 9 vertical, 7 horizontal), each cell at
+2x. Two blind Opus passes (`passes/keymatch_pass{K,L}.tsv`, about 106k tokens each) each listed every distinct sign in
+every cell (52 signs each, the same count) and matched it to a row of `glyphs/atlas_v2.png` (34 codes with manuscript
+exemplars) or NONE, with a second choice and H/M/L. The two passes agree on the first-choice code for 40 of 52 signs
+and share first/second choices on 9 more; the disagreements are the loop-and-hook cells (T, M, G, TT, SS, I sign 1)
+and three signs neither could place (PP's wavy stroke, F's trident, U/V's crossed f). The runner settled the
+direction the test needs -- **atlas code -> key value** -- in `keys/key_domnina_2016_atlasmap.tsv` (graded per row:
+AB both passes, M one pass or runner-settled, ? = the atlas code covers more than one of Domnina's cells): a OMEGABAR;
+b PLUS; c LL; d PI, THETA; h ESS; l THREE; m JHOOK; n DIAMOND, HCURL; o EIGHT, TWO; r XCURL; s ENN, DEE; u EM; g PHI,
+OMEGADOT; que EPSILON; null FOUR, SIX; and left open because the atlas lumps what the key separates: **SEVEN (e or i:
+Domnina's dotted 7 under E and her long-bar 7 under I are one v4 code), NINE (e or null: her q-stemmed E and her
+curl-tailed 9 null), HOOK (at least seven of her cells), TEE (f or p), EIGHTBAR (rr or cc), UCURL, TWOFLAT**. The
+2015 Fig. 1 (`p07_2015_fig1_key.jpg`) read alongside as second witness differs from the 2016 table exactly where a
+period decipherment would correct it: 2015 puts the long-bar 7 under E (three E forms), 2016 moves it to I; 2016 adds
+R's second form (the 8-with-tail loop) and the FF cell. Mapped with the settled values only: **152 of 259 signs (59%)
+carry a letter, 21 (8%) are nulls, 86 (33%) stay unmapped** (H4 with the wrong key: 35% / 17% / 48%).
+
+**Registered test (`passes/key_domnina_test.py`, the map as settled, nothing tuned to the crib; control = the same
+values permuted among the same mapped codes, 200 shuffles, seed 7):**
+
+| statistic | real map | shuffled mean (sd) | p05 / p95 | shuffles at or beyond real |
+|---|---|---|---|---|
+| mean log unigram, it16, mapped positions | -2.928 | -3.170 (0.094) | -3.315 / -3.021 | **1/200** |
+| mean log bigram, adjacent mapped letters | -3.059 | -3.568 (0.344) | -4.121 / -3.010 | 17/200 |
+| known phrase, best window edit distance (unmapped = wildcard) | **4** | 8.15 (0.89) | 7 / 10 | **0/200** |
+
+The phrase window sits at flattened position 43 = **the last four signs of cipher line 2 and the first 22 of line 3**
+(the null FOUR between them dropped): `THREE OMEGABAR PHI HOOK | PLUS HOOK NINE EIGHT HCURL OMEGABAR HOOK SEVEN TWO
+HCURL SEVEN THETA PHI ENN TWO OMEGABAR OMEGADOT DIAMOND SEVEN HOOK` -> `l a g ? b ? ? o n a ? ? o n ? d g s o a g n ? ?`
+against `l a g u b e r n a t i o n d i s p a g n i a`. Read sign by sign against Domnina's cells, every miss is one
+of the lumped codes: the two HOOKs after g and b fall where u and e stand (her U/V second form and her T/E hooks are
+in the HOOK family); the NINE after them falls where the phrase has nothing (her curl-9 null); the EIGHT falls on r
+(her R second form, added in 2016, is an 8-with-tail); HOOK SEVEN on t i (her long-bar 7 is I); the SEVEN before
+THETA has no phrase letter (a dotted 7 = e, "gubernatione", or a misread null); PHI falls on i (both passes' other
+candidate for PHI was her I first form); TWO falls on p (her P second form is a barred 3 -- a v4 misread, or her O
+second form is closer to P than the print suggests); DIAMOND SEVEN HOOK on n i a (her I long-bar 7, then her A second
+form, the open arc, which both passes could only call HOOK/STROKE). **This is Tomokiyo's phrase, in the place he
+would have read it (the opening of the cipher block), under a key matched blind to the atlas before the phrase was
+searched.** Rule 10: a control-backed key-identification signal, not a reading; no decode is written and no token is
+graded H by it.
+
+**Exploratory variants (not registered; each with its own 200-shuffle control; reported so nobody re-runs them as
+if new):** PHI->i: unigram 0/200, phrase distance 4 (0/200), window `lai?b??ona??on?disoagn??`; NINE->e: 0/200,
+distance 5; NINE->null: 1/200, distance 4; SEVEN->e: 0/200, distance 6; SEVEN->i: 0/200, distance 4 with
+`...ona?ionidgsoagni?`; the two three-way combinations 0/200 at distance 5-6. Every variant stays outside the
+shuffled distribution; none is adopted -- the choice among them belongs to a shape split of the lumped codes on the
+manuscript crops (H38), not to whichever fits the crib best (that would be tuning the key to the answer).
+
+**What follows (rows added):** H38, rank 1 -- split SEVEN, NINE, EIGHT, TWO and HOOK in the v4 transcription by
+shape against Domnina's cells (the per-sign crops exist in `glyphs/crops`; two blind Opus passes shown each sign
+beside the candidate cells, e.g. SEVEN: dotted 7 vs long-bar 7), re-run `key_domnina_test.py`, and only then apply
+the key with `tools/decode_key.py` for a graded decode; H36 (the 1520 letter as known plaintext, Leonardo's
+decipherment) stays at 2 as the independent check of the same key; H37 (the Yale order naming folders 2583/2611) 3.
+
+**Controls:** the shuffled-value battery on every statistic; the two blind matching passes with their agreement
+(40/52 first choices) as the transcription control; the 2015 table as a second witness for the cells. No class
+change; the words solved/cracked/first/new are not used for anything this project did -- the key is Domnina's
+(2015, corrected 2016 from Leonardo Spinelli's own decipherment), the phrase Tomokiyo's (January 2024). **Files:**
+`keys/key_domnina_2016_atlasmap.tsv`, `passes/keymatch_pass{K,L}.tsv`, `passes/key_domnina_test.py`. **Cost:** 2
+Opus vision calls (about 212k tokens) plus this runner's turns and about 12 minutes of CPU for the variant battery
+-- recorded as 5.0 USD (the est). No requests, no credentials, no AskUserQuestion, no other target touched.
