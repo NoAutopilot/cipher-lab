@@ -1,0 +1,37 @@
+34 components, 34 x-spans on r16 (native px)
+span  0 x  525- 579 (w  55, comps 1)  gap to next 9
+span  1 x  589- 626 (w  38, comps 1)  gap to next 74
+span  2 x  701- 715 (w  15, comps 1)  gap to next 14
+span  3 x  730- 775 (w  46, comps 1)  gap to next 65
+span  4 x  841- 860 (w  20, comps 1)  gap to next 7
+span  5 x  868- 905 (w  38, comps 1)  gap to next 62
+span  6 x  968-1014 (w  47, comps 1)  gap to next 54
+span  7 x 1069-1116 (w  48, comps 1)  gap to next 5
+span  8 x 1122-1156 (w  35, comps 1)  gap to next 72
+span  9 x 1229-1251 (w  23, comps 1)  gap to next 12
+span 10 x 1264-1306 (w  43, comps 1)  gap to next 52
+span 11 x 1359-1402 (w  44, comps 1)  gap to next 43
+span 12 x 1446-1497 (w  52, comps 1)  gap to next 47
+span 13 x 1545-1592 (w  48, comps 1)  gap to next 6
+span 14 x 1599-1640 (w  42, comps 1)  gap to next 43
+span 15 x 1684-1732 (w  49, comps 1)  gap to next 45
+span 16 x 1778-1802 (w  25, comps 1)  gap to next 5
+span 17 x 1808-1846 (w  39, comps 1)  gap to next 66
+span 18 x 1913-1942 (w  30, comps 1)  gap to next 7
+span 19 x 1950-2021 (w  72, comps 1)  gap to next 5
+span 20 x 2027-2081 (w  55, comps 1)  gap to next 12
+span 21 x 2094-2151 (w  58, comps 1)  gap to next 36
+span 22 x 2188-2228 (w  41, comps 1)  gap to next 41
+span 23 x 2270-2320 (w  51, comps 1)  gap to next 7
+span 24 x 2328-2372 (w  45, comps 1)  gap to next 57
+span 25 x 2430-2447 (w  18, comps 1)  gap to next 10
+span 26 x 2458-2497 (w  40, comps 1)  gap to next 70
+span 27 x 2568-2623 (w  56, comps 1)  gap to next 37
+span 28 x 2661-2699 (w  39, comps 1)  gap to next 53
+span 29 x 2753-2801 (w  49, comps 1)  gap to next 7
+span 30 x 2809-2848 (w  40, comps 1)  gap to next 33
+span 31 x 2882-2949 (w  68, comps 1)  gap to next 44
+span 32 x 2994-3040 (w  47, comps 1)  gap to next 13
+span 33 x 3054-3103 (w  50, comps 1)  gap to next None
+bimodal split at 25 px: intra-group gaps n=14 [5, 5, 5, 6, 7, 7, 7, 7, 9, 10, 12, 12, 13, 14]; between-group gaps n=19 [33, 36, 37, 41, 43, 43, 44, 45, 47, 52, 53, 54, 57, 62, 65, 66, 70, 72, 74]
+7-2 gap at r16:21 = 13 px (spans 32-33): 13/14 intra gaps are <= 13; minimum between-group gap 33 px

@@ -2252,3 +2252,16 @@ times and "Burgstorff" 15 times beside 57 "Burgsdorf" (grep of the H51 download)
 intra-group gaps"), the code 72 occurs only here, and a separate 7 followed by a separate 2 occurs nowhere else in the
 letter (0 pairs). So the crib now rests on a single transcription question -- one sign or two at r16:21 -- which an
 objective gap measurement on the image can settle (H63). No token, grade or class change; cipher_codes.tsv unchanged.
+
+## Campaign step H63 (2026-09-28 16:36 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. One sign: 72.** Objective gap measurement on line r16 of the native image
+(`images/f22r_canvas58.jpg`, band y 3019-3244, H15's settings: threshold < 100, components of area >= 40 px and height
+>= 12 px; `h63/gaps.py`, `h63/gaps.log`). The line's 34 ink spans map onto its 21 tokens from the end (72 = spans 32-33,
+6 = 31, 22 = 29-30, 5 = 28, ...). Gaps split cleanly at about 25 px: **inside a group 5-14 px** (n = 15), **between groups
+33-74 px** (n = 18). **The 7-2 gap at r16:21 is 13 px**, inside the intra-group range and 20 px below the smallest
+between-group gap on the line. So r16:21 is one code, 72, as H2's three reads had it; MEYE's "7, 2" alternative and
+H62's letter-for-letter "BURGSTORF" are disfavoured by the leaf's own spacing. The Burgsdorf crib therefore rests again
+on H53's one assumption, that the nomenclature code 72 stands for two letters (do) -- consistent with the office's
+habit (H56) but unattested for this key. H62's result stands as recorded (the fit if the split were real), with this
+measurement against the split. No token, grade or class change.
