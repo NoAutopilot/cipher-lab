@@ -1826,3 +1826,14 @@ Reader's criterion verbatim: "group B has a second, lower horizontal stroke leav
 right (a Z-like form); group C has only a top bar, drawn long past the right side of the triangle; group A has only a
 short top bar with no long rightward extension (the A/C boundary is a matter of degree and less secure than the B
 distinction)."
+
+## Campaign step H72 (28 Sept 2026, 14:43-14:46 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+The row asked for a vision sort of f.61's 4-shaped signs beside family anchors. The tally on disk answers it first
+(`scripts/f61h72.py`, `f61h72_result.txt`, `--check` OK; Tomokiyo's letters placed by the joint cell map's DP, the
+f61qo machinery): on f.61's span lines, L10 and f.108r L02/L03 our readers' 4TRI stands under c/p 10 of 10 lettered
+positions (c 5, p 5) and their C43 + 4STEM under a/n 18 of 19 (a 13, n 5, one b). So f.61's own coding already
+separates the 4-over-triangle (c/p) from the 43 (a/n), which is the split H69 found in the period gloss of two
+further hands; nothing to re-sort, no call spent. The family readers' 4TRI a/n tokens (H69 groups B-D) correspond to
+f.61's C43/4STEM, not to its 4TRI. This is a consistency tally on Tomokiyo's letters (grade H for the test), not a
+reading; no class change.

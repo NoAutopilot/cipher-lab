@@ -1,0 +1,16 @@
+class	letter	n
+4PI	-	1
+4PI	d	4
+4PI	n	1
+4PI	p	1
+4STEM	-	1
+4STEM	a	3
+4TRI	c	5
+4TRI	p	5
+C43	-	1
+C43	a	10
+C43	b	1
+C43	n	5
+HASH4	-	1
+4TRI under Tomokiyo letters: {'c': 5, 'p': 5} -- c/p 10 of 10 lettered
+C43+4STEM: {'a': 13, 'b': 1, '-': 2, 'n': 5} -- a/n 18 of 19 lettered
