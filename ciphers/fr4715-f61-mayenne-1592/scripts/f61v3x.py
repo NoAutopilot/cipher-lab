@@ -31,7 +31,7 @@ def gloss_words(path):
     by = defaultdict(list)
     for r in csv.DictReader((l for l in open(path) if not l.startswith("#")), delimiter="\t"):
         if r["kind"].strip().lower() != "gloss": continue
-        by[r["line"]].append((int(r["segment"]), float(r["x0_px"]), r["word"], r["conf"]))
+        by[r["line"]].append((int(str(r["segment"]).lstrip("s")), float(r["x0_px"]), r["word"], r["conf"]))
     return {b: sorted(v) for b, v in by.items()}
 def main():
     d = tempfile.mkdtemp(prefix="f61v3x_"); out = ["H29: fr.3983 f.108v at 3x, 7 cipher rows"]

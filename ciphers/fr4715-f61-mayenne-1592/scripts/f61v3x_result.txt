@@ -1,0 +1,12 @@
+H29: fr.3983 f.108v at 3x, 7 cipher rows
+signs: lines 7  signs A 230  B 254  agree 187/257 = 72.8%  (nw) (PLAIN rows dropped: A 230 signs, B 254)
+  gloss L01: A 0 words, B 0, kept 0 (0 both, 0 one pass), dropped 0
+  gloss L02: A 6 words, B 6, kept 3 (2 both, 1 one pass), dropped 3: ?guienne|?au?ne quel?|q?as? somme|Joinv?ille
+  gloss L03: A 11 words, B 9, kept 0 (0 both, 0 one pass), dropped 20: ?ege?t| ?age| ?aigne| ?ou?| ?e?| cor?| a| ?e?u?e| de| ?no| ?ca?| |?efgnia |?ag? |?agne |? |? |co?a?se? |? |? |?ea?
+  gloss L04: A 5 words, B 5, kept 1 (0 both, 1 one pass), dropped 4: Civill|?euill ayat|apr[es] ?ient|?tant pa?ue?|passant
+  gloss L05: A 4 words, B 4, kept 1 (1 both, 0 one pass), dropped 3: ?a|su ?ause|?aa? ?uacu|?maca
+  gloss L06: A 7 words, B 7, kept 5 (2 both, 3 one pass), dropped 6: ?e?| desquel?| |?ucoy? |?ue |i?se |desp?gn?
+  gloss L07: A 3 words, B 3, kept 0 (0 both, 0 one pass), dropped 3: ?a??|? contre|et que|contraire
+gloss: words A 36, B 34, both 5 -> agreement 0.139
+GATE H29: signs 0.728 (>= 0.80 NO), gloss 0.139 (>= 0.50 NO) -> FAIL
+alignment counts -> family/passes/f108v3x_counts.tsv: PHI g:2 p:1 e:1; DBL i:2 e:2; 4STEM l:3; VBAR_A a:3; EBR_B i:2 t:1; EBR_A o:1 s:1 e:1; 4TRI n:1 a:1; OTHER s:1 n:1; ZHOOK u:2; INF p:1; HASH4 e:1; BETA c:1; VBAR_B s:1

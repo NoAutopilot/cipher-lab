@@ -979,3 +979,23 @@ needs Opus or Sonnet subagent calls and H10 a person; the account is at its seve
 01:16 UTC), under which BUDGETS.md's scaling rule allows no new workers. The runner holds until the orchestrator clears
 the warning or the next firing finds it cleared; the campaign is neither budget-stopped nor closed.
 
+## Campaign step H29 (2026-09-28 01:54 UTC) -- dropped, the runner's crop parameters
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). Four Opus calls (two sign passes, two gloss passes, about
+106-120k subagent tokens each), prompts in `scripts/PROMPTS.md` before the calls. Hypothesis H29: fr.3983 f.108v re-cut
+at 3x for the family key.
+
+**Non-test.** The cut (`family/cut_bands.py`, region 840,540,3160,760, the family's seven centres, --up 45 --down 25
+--local 70 --scale 3.0 --seg 900 --overlap 60, as the row worded "70-px bands, --local 70") produced four byte-identical
+segment files across bands (md5: L04_s4 = L03_s4, L05_s2 = L04_s2, L06_s4 = L05_s4, L07_s1 = L06_s1 -- the +-70 px
+per-segment centre search jumped to the neighbouring row at pitch about 100) and 70-px bands that cut the gloss row off
+at the top. All four readers reported the defect unprompted (`family/passes/f108v3x_signsA/B.tsv`, `_glossA/B.tsv`,
+verbatim, with READMEs). For the record, `scripts/f61v3x.py` (pre-registered, one segment-format fix afterwards):
+signs: lines 7  signs A 230  B 254  agree 187/257 = 72.8%  (nw) (PLAIN rows dropped: A 230 signs, B 254); gloss: words A 36, B 34, both 5 -> agreement 0.139; GATE H29: signs 0.728 (>= 0.80 NO), gloss 0.139 (>= 0.50 NO) -> FAIL -- numbers of a defective cut, not of the leaf. A corrected cut (--up 62 --down 34 --local 30,
+3x, 288-px bands, 0 duplicate files) is installed as `family/sheets/f108v3y_*` with its `bands.json` and debug overlay;
+H35 re-runs the four passes on it. Not a reading; no class change; `key_period.tsv` untouched.
+
+**Runner handover.** This session's context is past the 700k line; the orchestrator replaces it before H35. State for the
+next runner: every prompt used is in `scripts/PROMPTS.md`; the corrected f.108v crops are on disk; the campaign's open
+rows are H35 (rank 4), H30, H31, H25, H26, H24, H33, H34, H10 (person); H28 is F61-FAMILY-2's.
+

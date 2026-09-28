@@ -1,0 +1,15 @@
+# f108v3x_counts.tsv (gate FAILED: not a key) -- campaign H29, 28 Sept 2026, fr.3983 f.108v at 3x. Key source: period (the leaf's own interlinear decipherment), grade C per pair; not merged into key_period.tsv.
+class	letters	n	bands
+PHI	g:2 p:1 e:1 r:1 o:1 i:1	7	L04,L05,L06
+DBL	i:2 e:2	4	L02,L06
+4STEM	l:3	3	L02,L06
+VBAR_A	a:3	3	L02,L05
+EBR_B	i:2 t:1	3	L02,L04
+EBR_A	o:1 s:1 e:1	3	L06
+4TRI	n:1 a:1	2	L02,L06
+OTHER	s:1 n:1	2	L02,L04
+ZHOOK	u:2	2	L06
+INF	p:1	1	L02
+HASH4	e:1	1	L04
+BETA	c:1	1	L06
+VBAR_B	s:1	1	L06
