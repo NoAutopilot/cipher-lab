@@ -1595,3 +1595,12 @@ are 200 x 284 px and that "no individual digit, letter or graphic-sign shape can
 same series; a look at two more would return "unreadable at served size" by construction (CLAUDE.md rule 3, a
 control that cannot fail differently). Dropped without spending requests; the full-size images stay behind ASKS
 row 1 / 82 (H17).
+
+## Campaign step H24 (2026-09-28 03:45-03:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Could a clear "y" have been swallowed into the cipher stream as a 9 (or the reverse)?
+Every cipher token at a run boundary (adjacent to a clear word) with sign 9, 19 or 29 was listed from
+`ciphertext.tsv`: exactly one, v13:7 (19, the last letter of "gente" before the clear "En todo"), which H22's blind
+reader had just read as "7 19" at H confidence with "En todo" following as words. The three clear "y" tokens that
+directly follow a cipher run (after r05:5, r07:5, v09:6) are already in the plain stream. **Nothing to move**; the
+y/9 confusion is a blind-reader effect at run edges, not a transcription fault. No reading or grade change.
