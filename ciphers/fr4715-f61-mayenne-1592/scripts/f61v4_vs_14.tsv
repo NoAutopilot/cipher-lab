@@ -1,0 +1,23 @@
+class	f61_signs	v4_set_on_f61	cell_14	v4_wider	v4_period_counts_top6
+PHI	17	e/r x17	e/r		e 254, r 98, u 20, b 12, l 8, o 8
+CA	10	- x10	null		- 2, c 2, s 2, q 1, t 1, p 1
+C43	9	a/n x9	a/n		a 75, n 68, - 5, o 2, q 2, u 2
+C6	8	e x8	a/n		e 3
+SBS	7	o/b/e x7	b/o	yes	o 98, b 49, e 31, u 10, s 4, q 2
+INF	6	u x6	h/u		u 177, h 14, - 11, r 7, v 4, e 4
+4TRI	6	c/p/t x6	c/p	yes	c 37, p 35, n 12, d 11, a 9, s 8
+VBAR_A	6	t/s x6	g/t		t 179, s 93, - 31, a 25, g 21, f 15
+LOOPBAR	4	- x4	a/n		e 1, u 1
+VBAR_B	4	s x4	f/s		s 57, - 6, a 3, f 2, l 2, n 1
+EBR	4	l/s/a x4		yes	l 7, - 1, c 1, y 1
+ZHOOK	3	- x3	i/x		a 1, e 1, r 1
+CROSS	2	- x2	null		p 1
+ELOOP	2	r x2	null		r 2, - 1, c 1, q 1, t 1, o 1
+4PI	2	d/a/q/n x2	d/q	yes	d 14, a 6, n 4, q 4, - 3, c 1
+OTHER	2	e/q/i/p/r/s/t x2	i/x	yes	- 38, q 19, e 17, i 12, t 10, c 8
+BETA	2	m/s x2	m/z		m 42, n 5, s 5, - 3, r 3, a 3
+HASH4	1	d/q/i x1	null	yes	d 60, q 32, i 14, - 11, p 7, s 6
+LOOPSTEM1	1	q/s x1	null		q 7, s 3, - 2, b 1, c 1, e 1
+CH	1	e/m x1	null		m 4, e 3, - 2, u 2, n 1
+LL	1	- x1	null		e 1
+4STEM	1	n/a/c/e x1	a/n	yes	n 28, a 24, - 13, e 12, c 10, d 10

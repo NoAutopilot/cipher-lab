@@ -2902,3 +2902,19 @@ the two-letter design Tomokiyo's table and the 14-cell map describe; within such
 freedom. For the verifier: the two-way choices AUDIT.md sec. 6 item 1 counts are choosable with a control only where the
 sign's set is a pair; widening the pairs is where v4 and the 14-cell map disagree, not a grading question. No reading, no
 class change.
+
+## Campaign step H145 (28 Sept 2026, 19:52-19:54 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only table
+
+`scripts/f61v4_vs_14.py` -> `scripts/f61v4_vs_14.tsv` (`--check` fresh): per f.61 class, key v4's set on f.61 (frac 0.1), the
+14-cell pair, and v4's pooled period counts. Where they differ:
+
+- **Wider in v4 (a third period letter admitted at frac 0.1):** SBS o/b/**e** (period o 98, b 49, e 31), 4TRI c/p/**t**, 4PI
+  d/q + **a/n**, 4STEM n/a + **c/e**, EBR l/s/a, OTHER seven letters, HASH4 d/q/**i** -- the sets that defeat any within-set
+  choice (H117/H141).
+- **A different second letter:** **VBAR_A t/s in v4 vs g/t in the 14 cells** (period t 179, s 93, g 21; six f.61 signs) and
+  **VBAR_B s in v4 vs f/s** (period s 57, f 2) -- here v4 and the fit disagree on the cell itself, not on its width.
+- **C6 e (v4) vs a/n (14 cells)**: VERIFY-F61-V4 regraded C6 on f.61 to unread/null (its three gloss tokens against
+  Tomokiyo's dashes); both are weak.
+
+So the gap H141 found has two parts: sets widened by the frac-0.1 rule (a presentation choice of v4's decode), and two genuine
+cell conflicts (VBAR_A, VBAR_B) that the family pool can test with the H127 statistic (H146). No new key, no reading.
