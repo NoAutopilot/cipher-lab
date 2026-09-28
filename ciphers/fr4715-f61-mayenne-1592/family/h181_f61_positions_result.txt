@@ -1,0 +1,9 @@
+span	line	pos	class	f176_letter	tomokiyo	agree
+S2	L03	6	VBAR_A	t	t	yes
+S2	L03	15	EBR	l	l	yes
+S3	L05	3	VBAR_A	t	t	yes
+S4a	L07	5	EBR	l	l	yes
+S5	L11	3	EBR	l	l	yes
+S5	L11	6	VBAR_A	t	t	yes
+S5	L11	12	VBAR_A	t	t	yes
+agree 7/7

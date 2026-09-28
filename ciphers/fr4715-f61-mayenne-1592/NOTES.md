@@ -3489,3 +3489,18 @@ The BnF finding aid on disk (`sources/bnf-aem/cc504266_francais3974-3995.html`, 
   using the mayenne.htm cipher, which is H168-H180's material.
 H176 dropped (wrong premise, a different cipher). H172 done. Only H177b (the rest of f.176r, then fol. 179 and f.176v) remains open
 among the fr.3984 rows.
+
+## Campaign step H181 (28 Sept 2026, 23:12-23:12 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- f.176r's letters at f.61's own positions (script-only)
+
+`family/h181_f61_positions.py` (`--check`, result `family/h181_f61_positions_result.txt`): the positions of f.61r's VBAR_A and bracket
+(EBR) tokens inside Tomokiyo's five spans, under H179's alignment, compared with the letter f.176r's period decipherment gives those
+classes (VBAR_A t, H177b; form-B bracket l, H180).
+
+**Agree 7/7:** VBAR_A t = Tomokiyo t at L03/6, L05/3, L11/6, L11/12; bracket l = Tomokiyo l at L03/15, L07/5, L11/3.
+f.61's 10 two-way tokens of these classes (v4: VBAR_A t/s x6, EBR l/s/a x4) all have a Desportes-hand period letter; the 3 outside his
+spans are L01/10 (VBAR_A), L10/1 (EBR) and L10/4 (VBAR_A; inside the L10 fragment of H16/H17, where the pair was [g/t]).
+Independence, for the verifier. The letters come from a period decipherment of another hand, so they are not Tomokiyo's. But f.61's
+VBAR_A/VBAR_B boundary was first set by blind sorts scored on his letters (H13/H15, VERIFY-F61-V4 section 2), so the VBAR_A half of the
+7/7 is not fully independent of him. The bracket half rests on H22's blind form sort (scored on his letters too, 10/10) and H180's
+attribute test. A cross-hand period reading, two classes, 7 agreeing positions: evidence for a verifier to grade. Not a reading of
+f.61, no class change, nothing merged.
