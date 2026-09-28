@@ -36,7 +36,7 @@ def gloss(path):
 def reconcile_gloss(A, B, out):
     rec = {}
     for band in BANDS:
-        a = [w for _, _, w, _ in A.get(band, [])]; b = [w for _, _, w, _ in B.get(band, [])]
+        a = [t[2] for t in A.get(band, [])]; b = [t[2] for t in B.get(band, [])]
         fa, fb = [fold(w) for w in a], [fold(w) for w in b]
         sm = difflib.SequenceMatcher(a=fa, b=fb, autojunk=False); words = []; dropped = []
         for tag, i1, i2, j1, j2 in sm.get_opcodes():
@@ -78,7 +78,7 @@ def gloss_long(path):
         w = r["word"].strip()
         if not w or w == "?": continue
         seg = int(re.sub(r"\D", "", r["segment"]) or 0)
-        by[r["line"].strip()].append((seg, float(r["x0_px"] or 0), w, r["conf"]))
+        by[r["line"].strip()].append((seg, float(r["x0_px"] or 0), w, r["conf"], float(r["x1_px"] or 0)))
     return {b: sorted(v) for b, v in by.items()}
 def main():
     global BANDS
@@ -89,6 +89,42 @@ def main():
         out = [f"H34 ({tag}): period gloss on fr.3983 f.108r (family cut) aligned to the atlas-coded signs; gloss {os.path.basename(ga)} + {os.path.basename(gb)}, signs {os.path.basename(sa)} + {os.path.basename(sb)}"]
         rec = reconcile_gloss(gloss_long(ga), gloss_long(gb), out)
         seq = signs(os.path.relpath(sa, HERE), os.path.relpath(sb, HERE), out, "all bands")
+        # H34 placement rule (pre-registered before the passes' outputs were read): the gloss on this leaf is SPARSE (words above
+        # some sign groups only), so a whole-band DP has to skip most signs; instead each reconciled gloss word is matched by
+        # x position to the signs directly under it in EACH sign pass (band coordinates: x + (segment-1) x 2640 at 3x, the
+        # segment step of the cut, so a sign listed after the red tick lands on the same axis; window = the word's x-range
+        # widened by XM px each side), and those (word, signs) pairs go to the aligner one pass at a time. A (class, letter)
+        # count is attested min(count in pass A's alignment, count in pass B's): a pair only one sign pass supports is not
+        # counted. The whole-band DP (H21's rule) is also run and printed, for comparison only; the gate uses the x-placed
+        # min-counts.
+        XM, STEP = 60, 2640
+        def xplace(gl, sp):
+            words = []
+            for band in BANDS:
+                for seg, x0, w, conf, x1 in gl.get(band, []):
+                    words.append((band, (seg - 1) * STEP + x0, (seg - 1) * STEP + x1, w))
+            out_pairs = []
+            for pf in (sa, sb):
+                rows = defaultdict(list)
+                for r in csv.DictReader((l for l in open(pf) if not l.startswith("#")), delimiter="\t"):
+                    if r["sign"].strip().upper() == "PLAIN": continue
+                    seg = int(re.sub(r"\D", "", r["segment"]) or 1); rows[r["line"].strip()].append(((seg - 1) * STEP + float(r["x_px"] or 0), r["sign"].strip()))
+                prs = []
+                for band, a, b, w in words:
+                    under = [c for x, c in sorted(rows.get(band, [])) if a - XM <= x <= b + XM]
+                    if under: prs.append((band, w, under))
+                out_pairs.append(prs)
+            return words, out_pairs
+        def align_pairs(prs, tagp):
+            d = tempfile.mkdtemp(prefix=f"f61gloss_x_{tagp}_"); pairs = f"{d}/pairs.tsv"
+            with open(pairs, "w") as f:
+                w = csv.writer(f, delimiter="\t", lineterminator="\n"); w.writerow(["plain_line", "plain_raw", "cipher_line", "cipher_raw"])
+                for i, (band, wd, under) in enumerate(prs): w.writerow([f"{band}_{i}", wd, f"{band}_{i}", " ".join("@" + c for c in under)])
+            subprocess.run([sys.executable, TOOL, "align", pairs, f"{d}/align.tsv", f"{d}/key.tsv", "--code-prefix", "@", "--wildcard", "-", "--null-cost", "-1", "--clear-consumes"], check=True, capture_output=True)
+            cnt = defaultdict(Counter)
+            for r in csv.DictReader(open(f"{d}/align.tsv"), delimiter="\t"):
+                if r["kind"] == "code" and r["plain_chunk"]: cnt[r["value"]][r["plain_chunk"]] += 1
+            return cnt
         # per-unit agreement figures (the family's H29 gates: signs >= 0.80 identical columns, gloss words >= 0.50 both passes)
         nb = sum(1 for b in BANDS for _ in rec.get(b, [])); both = sum(1 for b in BANDS for _, g in rec.get(b, []) if g == "C-C")
         A = gloss_long(ga); B = gloss_long(gb); na = sum(len(A.get(b, [])) for b in BANDS); nbb = sum(len(B.get(b, [])) for b in BANDS)
@@ -107,6 +143,28 @@ def main():
     for r in csv.DictReader(open(f"{d}/align.tsv"), delimiter="\t"):
         if r["kind"] == "code" and r["plain_chunk"]:
             counts[r["value"]][r["plain_chunk"]] += 1; bands[r["value"]].add(r["cipher_line"])
+    if tag:
+        out.append("whole-band DP (H21 rule, comparison only): " + "; ".join(f"{c} " + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in sorted(counts.items(), key=lambda kv: -sum(kv[1].values()))))
+        # x-placed alignment per word, both sign passes, min-counts (the gate)
+        A = gloss_long(ga); B = gloss_long(gb)
+        recx = {b: [] for b in BANDS}
+        for band in BANDS:  # reconciled words with the x-range of whichever pass carries them (A first)
+            keep = {w for w, _ in rec.get(band, [])}
+            seen = set()
+            for src in (A, B):
+                for seg, x0, w, conf, x1 in src.get(band, []):
+                    if w in keep and w not in seen: recx[band].append((seg, x0, w, conf, x1)); seen.add(w)
+        words, (pa_pairs, pb_pairs) = xplace(recx, None)
+        out.append(f"x-placement: {len(words)} reconciled gloss words; signs found under them in pass A for {len(pa_pairs)} words ({sum(len(u) for *_, u in pa_pairs)} signs), pass B {len(pb_pairs)} ({sum(len(u) for *_, u in pb_pairs)} signs); window +-{XM} px")
+        ca = align_pairs(pa_pairs, "A"); cb = align_pairs(pb_pairs, "B")
+        counts = defaultdict(Counter)
+        for c in set(ca) | set(cb):
+            for l in set(ca.get(c, {})) | set(cb.get(c, {})):
+                m = min(ca.get(c, Counter())[l], cb.get(c, Counter())[l])
+                if m: counts[c][l] = m
+        out.append("x-placed pass A: " + "; ".join(f"{c} " + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in sorted(ca.items(), key=lambda kv: -sum(kv[1].values()))))
+        out.append("x-placed pass B: " + "; ".join(f"{c} " + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in sorted(cb.items(), key=lambda kv: -sum(kv[1].values()))))
+        out.append("ZHOOK named check (H44): A " + " ".join(f"{l}:{n}" for l, n in ca.get("ZHOOK", Counter()).most_common()) + " | B " + " ".join(f"{l}:{n}" for l, n in cb.get("ZHOOK", Counter()).most_common()))
     # guard added after the first run (28 Sept 01:1x): the counts go to scripts/f61gloss_counts.tsv; keys/key_f108_gloss.tsv is
     # written only when the gate below passes, so a failed run never leaves a file that looks like a key.
     passed = all((lambda cnt: bool([l for l, _ in cnt.most_common(2)]) and all(l in cell.split("/") for l, _ in cnt.most_common(2) if len(l) == 1))(counts.get(c, Counter())) for c, cell in NINE.items())
@@ -114,8 +172,8 @@ def main():
     with open(keypath, "w") as f:
         f.write("# key_f108_gloss.tsv -- campaign H21, 28 Sept 2026. Key source: period (rule 10 vocabulary). Every (class, letter) pair is read\n# from the contemporary interlinear decipherment on BnF fr.3983 f.108r (two Sonnet gloss passes reconciled, two Opus sign\n# passes per band reconciled, tools/interlinear_align.py), grade C for the pair; no cryptanalysis, no refit. Classes are\n# scripts/f61_atlas.tsv codes (EBR is the pre-split code where a band's passes predate H22).\nclass\tletters\tn\tbands\n")
         for c, cnt in sorted(counts.items(), key=lambda kv: -sum(kv[1].values())):
-            f.write(f"{c}\t{' '.join(f'{l}:{n}' for l, n in cnt.most_common())}\t{sum(cnt.values())}\t{','.join(sorted(bands[c]))}\n")
-    out.append("gloss key (class: letters): " + "; ".join(f"{c} " + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in sorted(counts.items(), key=lambda kv: -sum(kv[1].values()))))
+            f.write(f"{c}\t{' '.join(f'{l}:{n}' for l, n in cnt.most_common())}\t{sum(cnt.values())}\t{','.join(sorted(bands.get(c, {'x-placed'})))}\n")
+    out.append(("x-placed min-count key (the gate)" if tag else "gloss key") + " (class: letters): " + "; ".join(f"{c} " + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in sorted(counts.items(), key=lambda kv: -sum(kv[1].values()))))
     agree = []; 
     for c, cell in NINE.items():
         cnt = counts.get(c, Counter()); top2 = [l for l, _ in cnt.most_common(2)]
