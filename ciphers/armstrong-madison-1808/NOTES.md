@@ -2016,3 +2016,18 @@ unchecked.
 - next-step; search for an alternate digital surrogate or duplicate of this exact four-surface item (another LOC reel/microfilm surrogate, an NYPL Monroe Papers duplicate, or a published quotation) matching the letter's heading/date, addressee and Spain/Emperor content -- unchecked.
 
 No check-solved candidate (the 1963 index and 1904 calendar are catalogue entries, not a printed decipherment of the Armstrong letter, its key, or the Livingston key).
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 00:46, 28 Sept 2026)
+
+Landed from PR 60 (`second-opinions/chatgpt-checkpoint-2026-09-28-0046.md`, PR-LAND-22). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- retraction; withdraws the immediately preceding 00:31 checkpoint's "missing 7 January witness" claim: frame 739 is read as 2 Feby 1806, not 2 January, and the 1963 index's PDF page 28 independently lists a Monroe-to-Madison letter of 2 February 1806 (Series 1, 38 pages) at that position, so the 739->740 transition is Feb 2 to Feb 5, not a gap -- unchecked, and marks the 00:31 section's "expected chronological position is absent" lead superseded pending independent recheck.
+- lead/negative; also corrects the 00:21 checkpoint's identification of the Erving letter's place as Paris -- frame 740 is read as Madrid -- unchecked; the WE028 interlinear examples from frames 742-743 are said to be unaffected by this correction.
+- lead; Armstrong to Monroe, 7 January 1806, located and inspected at LOC reel 3 frames 687-689 (heading "7th Jan. 1806, Paris", docket "7 Jany 1806 / General Armstrong") -- ordinary prose on the Spanish negotiation and the Emperor's expected arrival, no coded passage observed -- unchecked.
+- lead; Ford's Writings of John Quincy Adams vol. 3 (pp.322, 327-328 and 369-370) is cited as documenting a cipher shared among Short, Armstrong and Adams, and Adams's 3 Jan 1810 despatch acknowledging receipt of "Armstrong's cypher" -- said to verify transmission context only, not to recover a code table or connect it to the February 1808 target -- unchecked.
+- archival-route; Tatum, "Ten Unpublished Letters of John Quincy Adams 1796-1837," Huntington Library Quarterly 4(3) (1941), DOI 10.2307/3815711, pp.369-388, cited as discussing the 27 Nov 1809 Adams-to-Armstrong letter (Huntington mssHM 22922) at p.376; article text not acquired (JSTOR client challenge) -- unchecked.
+- next-step; use the MHS Adams Papers correspondence/letterbook calendar to find a publicly accessible copy of Adams to Armstrong, 27 Nov 1809 -- unchecked.
+
+No check-solved candidate (Ford's volume documents cipher transmission context and correspondence, not a printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key).
