@@ -1797,3 +1797,30 @@ rare letters (h, z) and corrections whose occurrences fall in corrupted stretche
 used: the gate was pooled and pre-registered, and moving it now would be threshold-shopping. No token, grade or class
 change. The whole-set version (H36) asks a question this per-change rule cannot: whether M2's set moves the text as far
 toward Spanish as a true key moves a control.
+
+## Campaign step H36 (2026-09-28 14:53-14:52 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** The whole correction set at once under H35's word-segmentation measure (wseg, log-
+likelihood per letter; `cheap_test_1/h36/wholeset.py` -> `result.log`), plus a selection control the row did not
+name but the first numbers required (`h36/greedy.py` -> `greedy.log`, 2 min CPU): M2's corrections were chosen by a
+reader to make words, so the fair null is a word-seeking search, not decoys.
+
+| packet | blind | + true set (control truth / target key.tsv) | + decoy set | shuffled keys | greedy 12 wseg moves: gain, right |
+|---|---|---|---|---|---|
+| A (5%) | -2.157 | -1.977 (+0.180) | -2.511 (-0.354) | -3.55..-3.43 | +0.186, 3 of 7 right |
+| B (10%) | -2.562 | -2.420 (+0.142) | -2.934 (-0.372) | -3.58..-3.50 | +0.209, 5 of 12 right |
+| D (5%) | -2.301 | -2.246 (+0.055) | -2.507 (-0.206) | -3.54..-3.48 | +0.072, 4 of 6 right |
+| **C target** | -2.387 | **-2.197 (+0.190)** | -2.664 (-0.276) | -3.58..-3.47 | +0.235, 5 of 9 agree with key.tsv |
+
+**Reading.** First pass: M2's set gains +0.190, at the top of the controls' true-set gains (+0.055 to +0.180), and every
+decoy set and shuffled key loses -- which looked like support. **The selection control voids it as a test:** on every
+control a greedy word-seeking search reaches a gain at or above the true key's with only 12 of 25 moves right (48%),
+so a word-model gain of this size is reachable by selection alone, half of it wrong. On the target the same relation
+holds (greedy +0.235 above key.tsv's +0.190), exactly as on the controls: consistent with M2's set being truth-like,
+but not able to tell it from a word-seeking set. Side result, independent of M2: the target's greedy search picks 5 of
+M2's corrections unprompted (22=g, 34=a, 20=f, 21=i, 15=n) and 4 others (24=n, 65=r, 25=t, 48=t) -- at the controls'
+48% move precision this agreement is suggestive only. Non-test by selection, not a negative; no token, grade or class
+change. With H30-H35 this closes the line "license M2's hand corrections without a period key": every instrument tried
+(blind reader, reader-verifier with decoys, iterated reader, per-correction script verifier, whole-set gain against a
+selection null) either misses its control gate or cannot separate truth from word-seeking selection. The Brussels
+register (H17, ASKS 82; checklist in REGISTER-CHECKLIST.md) is the instrument that decides them.
