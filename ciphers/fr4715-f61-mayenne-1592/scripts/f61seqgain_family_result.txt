@@ -1,0 +1,7 @@
+CONTROL known f.61 span lines: gain 0.255, rank 1 of 201 -> PASS
+f97r: 2485 signs, 1724 covered (0.69); gain 0.065, rank 1 of 201 (best permuted 0.044, median 0.001) -> in f.61's cells
+f101r: 3081 signs, 2172 covered (0.70); gain 0.053, rank 1 of 201 (best permuted 0.044, median 0.004) -> in f.61's cells
+f188r: 1206 signs, 784 covered (0.65); gain 0.110, rank 1 of 201 (best permuted 0.068, median 0.000) -> in f.61's cells
+f124r: 2839 signs, 2018 covered (0.71); gain 0.051, rank 2 of 201 (best permuted 0.052, median 0.005) -> in f.61's cells
+f106r: 240 signs, 175 covered (0.73); gain 0.074, rank 4 of 201 (best permuted 0.102, median 0.003) -> in f.61's cells
+f274: 167 signs, 129 covered (0.77); gain 0.079, rank 10 of 201 (best permuted 0.104, median 0.004) -> in f.61's cells

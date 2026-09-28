@@ -2734,3 +2734,25 @@ So S3's cluster is mostly the a/n cell -- the within-pair choice H106 already fo
 two low-confidence transcriptions; the nulls Tomokiyo dashes (CA CA at 7-8, C6 at 12, LL at 16) split the span into short
 pieces, which leaves the 4-gram little context. For the verifier: the beam's a/n and e/r letters are its weakest, and a span
 cut by nulls into runs of 2-4 letters is where it fails. No reading, no class change.
+
+## Campaign step H129 (28 Sept 2026, 18:48-18:55 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61seqgain_family.py` (pushed b6fbe4a0 before the run; `f61seqgain_family_result.txt`): the H127 sequence-gain rank
+(null on shuffled text, H128) of f.61's 14-cell map on the six family leaves' reconciled drafts; classes outside the map
+dropped (the family passes' LOOPS, H24, ZBAR, OTHER ...).
+
+| leaf | signs | covered | gain | rank of 201 | best permuted |
+|---|---|---|---|---|---|
+| CONTROL known f.61 lines | -- | -- | 0.255 | 1 | -- |
+| fr.3982 f.97r | 2,485 | 1,724 (0.69) | 0.065 | **1** | 0.044 |
+| f.101r | 3,081 | 2,172 (0.70) | 0.053 | **1** | 0.044 |
+| f.188r | 1,206 | 784 (0.65) | 0.110 | **1** | 0.068 |
+| f.124r | 2,839 | 2,018 (0.71) | 0.051 | 2 | 0.052 |
+| f.106r | 240 | 175 (0.73) | 0.074 | 4 | 0.102 |
+| f.274 | 167 | 129 (0.77) | 0.079 | 10 | 0.104 |
+
+All six at rank <= 10 -> by the pre-registered rule each is "in f.61's cells"; f.97r, f.101r and f.188r clearly (rank 1),
+f.124r, f.106r and f.274 at the edge (a permuted map comes within or above them). The 14 cells were fitted on f.61 and
+f.108r only, so this is out-of-sample for the family leaves. It supports the family route the campaign already takes (the
+period keys of these leaves feeding key v4) with a model-free, frequency-proof statistic, and it makes f.101r and f.188r --
+long, period-glossed, rank 1 -- the known-answer material for H130. No reading, no class change.
