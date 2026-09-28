@@ -93,3 +93,16 @@
 2026-09-28T22:16:17Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f14/full/2000,/0/native.jpg	200	928906	2f6e9b7bc71773f79d964904cf801a716c4b0346	fr3984_f7/c14_2000.jpg
 2026-09-28T22:16:23Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f16/full/2000,/0/native.jpg	200	816854	1dd76e864eaa12ed39d854181724b2b5fc418be8	fr3984_f7/c16_2000.jpg
 2026-09-28T22:18:18Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f18/full/2000,/0/native.jpg	200	607458	884ad497444d0d6d16854684e30302448311ee93	fr3984_f7/c18_2000.jpg
+2026-09-28T22:23:57Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f322/full/600,/0/native.jpg	200	71246	a3224d03958ca7be2c9fa7642f20f4be79f831b1	fr3984_f7/../images/thumb_3984_c322.jpg
+2026-09-28T22:24:00Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f323/full/600,/0/native.jpg	200	76433	485415320cd17dcbaa8baca21f220038d74c2fb0	fr3984_f7/../images/thumb_3984_c323.jpg
+2026-09-28T22:24:04Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f324/full/600,/0/native.jpg	200	71866	2462a57e9c492623cdc8e0d855568211566aa30e	fr3984_f7/../images/thumb_3984_c324.jpg
+2026-09-28T22:24:07Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f325/full/600,/0/native.jpg	200	32093	cc1a0d68aa76f4edec85acebee86aebc78d8dabf	fr3984_f7/../images/thumb_3984_c325.jpg
+2026-09-28T22:24:10Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f326/full/600,/0/native.jpg	200	47995	34ebfaf47857f375b9f83a7f9ae63685923633c4	fr3984_f7/../images/thumb_3984_c326.jpg
+2026-09-28T22:24:13Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f328/full/600,/0/native.jpg	200	87187	31c12bc8721b5400e90e6d3cfee4c2bdb71e17fa	fr3984_f7/../images/thumb_3984_c328.jpg
+2026-09-28T22:24:17Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f329/full/600,/0/native.jpg	200	85213	cf454c1ba94c4a2302e449ed1c4103d659f16ee1	fr3984_f7/../images/thumb_3984_c329.jpg
+2026-09-28T22:24:20Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f330/full/600,/0/native.jpg	200	79552	8ead6bcaf00beb9e590c35a4c6294cfbb52449f1	fr3984_f7/../images/thumb_3984_c330.jpg
+2026-09-28T22:24:23Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f331/full/600,/0/native.jpg	200	53998	70157aa891d1f0444ae4e89d4945e855bb3484ce	fr3984_f7/../images/thumb_3984_c331.jpg
+2026-09-28T22:24:26Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f332/full/600,/0/native.jpg	200	17668	422546e93493293743d3b63d9d6a06e201687ce2	fr3984_f7/../images/thumb_3984_c332.jpg
+2026-09-28T22:24:29Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f333/full/600,/0/native.jpg	200	56903	c19a15d6b3d601287e9f1ad2fc6f2292414d2f20	fr3984_f7/../images/thumb_3984_c333.jpg
+2026-09-28T22:24:32Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f334/full/600,/0/native.jpg	200	28874	4e88d64db05c76ec454459cef7195b5de2403109	fr3984_f7/../images/thumb_3984_c334.jpg
+2026-09-28T22:25:11Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f326/full/2000,/0/native.jpg	200	507302	b4e4e796ad9163c74038b47279354c469b56c781	images/3984_f175r_2000.jpg

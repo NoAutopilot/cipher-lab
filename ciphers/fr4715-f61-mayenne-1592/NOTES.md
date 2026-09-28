@@ -3208,3 +3208,22 @@ Re-scoped from the orchestrator's 22:14 brief: confirm that fr.3984 fol. 7 (canv
 - **What it opened:** mayenne.htm lists fr.3984 **f.176** (Desportes to Clement VIII, 22 July 1593) as polyphonic, "Deciphered on a
   separate sheet". The finding aid (NOTES F61-FAMILY table: item 84, "chiffre et déchiffrement") agrees, and `family/KEY.md` still
   marks that sheet "not located". Row H169 takes it. f.186 and f.189 (undeciphered, same design) are pool for a keyless step.
+
+## Campaign step H169 (28 Sept 2026, 22:26-22:33 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the f.176r decipherment located (candidate)
+
+H168's lesson applied first: `grep 176 sources/cryptiana/` finds only mayenne.htm's line "(f.176) Baudouin-Desportes to Pope
+Clement VIII, Paris, 22 July 1593. Deciphered on a separate sheet." It gives no folio for the sheet. 600-px thumbnails of fr.3984
+canvases 322-326 and 328-334 (12 Gallica requests, all 200, `family/requests.log`; `family/images/thumb_3984_c*.jpg`), one contact
+sheet looked at by the runner (no subagent), then canvas 326 at 2000 px (1 request, `family/images/3984_f175r_2000.jpg`). 13 requests.
+By eye, provisional:
+- **c326 = fol. 175r: a clear French page headed "22 de Juillet 1593"**, the date of f.176r, placed just before it. It carries a
+  one-word title (unread) and opens "depuis mes dernieres, on n'a proposé l'archiduc ... on nous a pressés de vouloir promptement
+  declarer Roy et proprietaire de cette couronne l'Infante ... au Roy d'Espagne ...". This is the Estates' debate on the Infanta,
+  the matter of a July 1593 letter to Rome. **It is the leading candidate for the separate-sheet decipherment of f.176r.**
+- c327-c328 = f.176r-v: headed "22 de Juillet 1593 / Tres saint pere", then cipher throughout in the family's signs (loops and
+  circles on stems, 4-shapes, square brackets). That design match is by eye and backed by Tomokiyo's listing, unlike H168's.
+- c329-c331 = fol. 177-178: clear pages in another hand (not identified). c332: a small docket leaf. c333 = **fol. 179: a full page
+  of cipher in what look like the family's signs, not in Tomokiyo's list** (by thumbnail only). c334: an address leaf. c322-c324:
+  Italian clear pages (fol. 173-174). c325: a docket.
+- **Not yet shown:** that fol. 175 renders f.176r's cipher rather than one of Desportes's three other letters of 22 July (f.186 to
+  Aldobrandini, f.189 to Frachetta; f.184 is already f.188's). That alignment gate is H170's first step. No key, no reading.
