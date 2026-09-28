@@ -1,0 +1,6 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+g43	g	z	high	arzobispado, alcazar
+g46	s	g	high	gobernador, iglesia
+END
+SEGMENTED: sezor cardenal boria gobernador del arzobispado de toledo dandole la mited de la sua cartes al que soy es gobernador le danyo de corias al confeo or del senor infante fray iuan de san apustin lode auilanndndeeuto es cierto sola se dice aunque
