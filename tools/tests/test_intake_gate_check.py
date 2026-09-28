@@ -40,7 +40,7 @@ def check_real(target, expect_code, expect_word_in_message):
     notes_path = os.path.join(ROOT, "ciphers", target, "NOTES.md")
     with open(notes_path, encoding="utf-8") as f:
         text = f.read()
-    code, message = gate.check(text)
+    code, message = gate.check(text, require_web=False)
     ok = code == expect_code and expect_word_in_message in message
     global fails
     fails += not ok
@@ -59,12 +59,12 @@ check_real("colbert26-lathuillerie-1644", 0, "open")
 
 # two real-repo `partial` verdicts with a citation right on the verdict line -- must pass, exit 0
 # (these were exiting 1 as ambiguous before partial was gated like open, 25 Sept 2026)
-check_real("clair349-este-guise-1556", 0, "partial")
+check_real("clair349-este-guise-1556", 0, "found-solved")  # status moved partial -> found-solved; expectation updated 28 Sept 2026 (CHECK-SOLVED-WEB), was failing before that change
 check_real("antt-msliv0638-brochado-1712", 0, "partial")
 
 # synthetic: bare `open` with no citation nearby -- must fail, exit 1
 SYNTH_OPEN_NO_CITATION = "open\n\n# A target with no citation\n\nNothing else here about editions or pages.\n"
-code, message = gate.check(SYNTH_OPEN_NO_CITATION)
+code, message = gate.check(SYNTH_OPEN_NO_CITATION, require_web=False)
 ok = code == 1 and "blocked" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-no-citation", f"-> code={code} message={message!r}")
@@ -74,35 +74,35 @@ SYNTH_OPEN_FAR_CITATION = (
     "open\n" + "\n".join(f"filler line {i}" for i in range(gate.CONTEXT_LINES + 2))
     + "\nRibier 1666 vol.2 pp.140-145 read by this worker, letter absent.\n"
 )
-code, message = gate.check(SYNTH_OPEN_FAR_CITATION)
+code, message = gate.check(SYNTH_OPEN_FAR_CITATION, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-citation-too-far", f"-> code={code} message={message!r}")
 
 # synthetic: an open verdict with a page citation right below it -- must pass
 SYNTH_OPEN_WITH_PAGES = "open\nRibier 1666 vol.2 pp.140-145 read by this worker, letter absent.\n"
-code, message = gate.check(SYNTH_OPEN_WITH_PAGES)
+code, message = gate.check(SYNTH_OPEN_WITH_PAGES, require_web=False)
 ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-with-pages", f"-> code={code} message={message!r}")
 
 # synthetic: `partial` with no citation nearby -- must fail, exit 1, same as bare open
 SYNTH_PARTIAL_NO_CITATION = "partial\n\n# A target with no citation\n\nNothing else here about editions or pages.\n"
-code, message = gate.check(SYNTH_PARTIAL_NO_CITATION)
+code, message = gate.check(SYNTH_PARTIAL_NO_CITATION, require_web=False)
 ok = code == 1 and "blocked" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic partial-no-citation", f"-> code={code} message={message!r}")
 
 # synthetic: `partial` with a page citation right below it -- must pass, exit 0
 SYNTH_PARTIAL_WITH_PAGES = "partial\nRibier 1666 vol.2 pp.140-145 read by this worker, letter absent.\n"
-code, message = gate.check(SYNTH_PARTIAL_WITH_PAGES)
+code, message = gate.check(SYNTH_PARTIAL_WITH_PAGES, require_web=False)
 ok = code == 0 and "partial" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic partial-with-pages", f"-> code={code} message={message!r}")
 
 # synthetic: no open/partial/blocked word at all -- must fail, erring toward blocked
 SYNTH_NO_VERDICT = "unclear\n\nSome prose that never uses the bare words open, partial or blocked as a line lead.\n"
-code, message = gate.check(SYNTH_NO_VERDICT)
+code, message = gate.check(SYNTH_NO_VERDICT, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic no-verdict-word", f"-> code={code} message={message!r}")
@@ -115,14 +115,14 @@ check_real("fr4687-paleologue-nevers", 0, "blocked")
 SYNTH_FOUND_SOLVED_WITH_CITATION = (
     "found-solved\nBirch 1742 vol.2 pp.685-686 read from page images this pass, letter and key both present.\n"
 )
-code, message = gate.check(SYNTH_FOUND_SOLVED_WITH_CITATION)
+code, message = gate.check(SYNTH_FOUND_SOLVED_WITH_CITATION, require_web=False)
 ok = code == 0 and "found-solved" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic found-solved-with-citation", f"-> code={code} message={message!r}")
 
 # synthetic: `found-solved` with no citation nearby -- must fail, exit 1, same as bare open
 SYNTH_FOUND_SOLVED_NO_CITATION = "found-solved\n\n# No citation here\n\nJust an assertion, no edition or page named.\n"
-code, message = gate.check(SYNTH_FOUND_SOLVED_NO_CITATION)
+code, message = gate.check(SYNTH_FOUND_SOLVED_NO_CITATION, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic found-solved-no-citation", f"-> code={code} message={message!r}")
@@ -135,7 +135,7 @@ SYNTH_OPEN_MIXED_CITATION_AND_UNREAD = (
     "open\nBoltanski 2006 pp.140-145 full-text search read by this worker, no hit; Ferrari 1999, "
     "the other named edition, is paywalled (academia.edu 403) and queued.\n"
 )
-code, message = gate.check(SYNTH_OPEN_MIXED_CITATION_AND_UNREAD)
+code, message = gate.check(SYNTH_OPEN_MIXED_CITATION_AND_UNREAD, require_web=False)
 ok = code == 1 and "blocked" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-mixed-citation-and-unread", f"-> code={code} message={message!r}")
@@ -144,14 +144,14 @@ print(("PASS" if ok else "FAIL"), "synthetic open-mixed-citation-and-unread", f"
 SYNTH_PARTIAL_COULD_NOT_OPEN = (
     "partial\nEdition A pp.10-12 read in full; Edition B could not open (paywalled), queued as next step.\n"
 )
-code, message = gate.check(SYNTH_PARTIAL_COULD_NOT_OPEN)
+code, message = gate.check(SYNTH_PARTIAL_COULD_NOT_OPEN, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic partial-could-not-open", f"-> code={code} message={message!r}")
 
 # synthetic: `open` with a citation and a nearby "not read" -- must fail, exit 1
 SYNTH_OPEN_NOT_READ = "open\nEdition A pp.5-9 read in full; Edition B, the sender's own letters, not read this pass.\n"
-code, message = gate.check(SYNTH_OPEN_NOT_READ)
+code, message = gate.check(SYNTH_OPEN_NOT_READ, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-not-read", f"-> code={code} message={message!r}")
@@ -163,7 +163,7 @@ SYNTH_OPEN_UNREADABLE_NOT_UNREAD = (
     "open\nEdition A (NO_PAGES/no-preview, so unreadable page-by-page) was read this pass through the "
     "search-within-volume endpoint, pp.12 and pp.40 confirmed present.\n"
 )
-code, message = gate.check(SYNTH_OPEN_UNREADABLE_NOT_UNREAD)
+code, message = gate.check(SYNTH_OPEN_UNREADABLE_NOT_UNREAD, require_web=False)
 ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-unreadable-is-not-unread", f"-> code={code} message={message!r}")
@@ -180,7 +180,7 @@ check_real("lambeth-casenowe-1586", 0, "open")
 SYNTH_OPEN_NOT_READ_COVER_TO_COVER = (
     "open\nEdition A pp.10-20 (queried by full-text search, not read cover to cover) names no match.\n"
 )
-code, message = gate.check(SYNTH_OPEN_NOT_READ_COVER_TO_COVER)
+code, message = gate.check(SYNTH_OPEN_NOT_READ_COVER_TO_COVER, require_web=False)
 ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-not-read-cover-to-cover", f"-> code={code} message={message!r}")
@@ -191,21 +191,21 @@ check_real("antt-fcc-costacabral-1865", 0, "solved")
 
 # synthetic: `solved` needs no citation nearby -- must pass, exit 0, labelled solved
 SYNTH_SOLVED_NO_CITATION = "solved\n\nNo edition or page named anywhere near this line.\n"
-code, message = gate.check(SYNTH_SOLVED_NO_CITATION)
+code, message = gate.check(SYNTH_SOLVED_NO_CITATION, require_web=False)
 ok = code == 0 and "solved" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic solved-no-citation", f"-> code={code} message={message!r}")
 
 # synthetic: `closed-negative` needs no citation nearby -- must pass, exit 0, labelled closed-negative
 SYNTH_CLOSED_NEGATIVE_NO_CITATION = "closed-negative\n\nNo edition or page named anywhere near this line.\n"
-code, message = gate.check(SYNTH_CLOSED_NEGATIVE_NO_CITATION)
+code, message = gate.check(SYNTH_CLOSED_NEGATIVE_NO_CITATION, require_web=False)
 ok = code == 0 and "closed-negative" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic closed-negative-no-citation", f"-> code={code} message={message!r}")
 
 # synthetic: `offline-only` needs no citation nearby -- must pass, exit 0, labelled offline-only
 SYNTH_OFFLINE_ONLY_NO_CITATION = "offline-only\n\nNo edition or page named anywhere near this line.\n"
-code, message = gate.check(SYNTH_OFFLINE_ONLY_NO_CITATION)
+code, message = gate.check(SYNTH_OFFLINE_ONLY_NO_CITATION, require_web=False)
 ok = code == 0 and "offline-only" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic offline-only-no-citation", f"-> code={code} message={message!r}")
@@ -218,7 +218,7 @@ SYNTH_VERDICT_WORD_IN_PROSE = (
     "and the target is not closed-negative or offline-only either -- just prose mentioning those "
     "words in passing.\n"
 )
-code, message = gate.check(SYNTH_VERDICT_WORD_IN_PROSE)
+code, message = gate.check(SYNTH_VERDICT_WORD_IN_PROSE, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic verdict-word-in-prose-only", f"-> code={code} message={message!r}")
@@ -231,7 +231,7 @@ print(("PASS" if ok else "FAIL"), "synthetic verdict-word-in-prose-only", f"-> c
 SYNTH_HEADING_NOT_VERDICT = (
     "# Thurloe printed cipher letters\n\nsome prose\n\n**Open, for the next owner (LANE W...**\n"
 )
-code, message = gate.check(SYNTH_HEADING_NOT_VERDICT)
+code, message = gate.check(SYNTH_HEADING_NOT_VERDICT, require_web=False)
 ok = code == 1 and "no" in message and "verdict word found" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic heading-not-verdict-thurloe-printed", f"-> code={code} message={message!r}")
@@ -243,7 +243,7 @@ SYNTH_OPEN_REUSED_SEARCH = (
     "open\nBourdeau's own 2026-09-21 search covers this edition; not re-run, per intake gate cost "
     "discipline. pp.10-12 named there.\n"
 )
-code, message = gate.check(SYNTH_OPEN_REUSED_SEARCH)
+code, message = gate.check(SYNTH_OPEN_REUSED_SEARCH, require_web=False)
 ok = code == 0 and "WARNING" in message and "reused/re-cited" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-reused-search-soft-warning", f"-> code={code} message={message!r}")
@@ -253,7 +253,7 @@ print(("PASS" if ok else "FAIL"), "synthetic open-reused-search-soft-warning", f
 # the whole Calendar of State Papers Spain II djvu.txt, so this must NOT trip the reused-search warning.
 with open(os.path.join(ROOT, "ciphers", "lope-hurtado-1522", "NOTES.md"), encoding="utf-8") as f:
     LOPE_HURTADO_TEXT = f.read()
-code, message = gate.check(LOPE_HURTADO_TEXT)
+code, message = gate.check(LOPE_HURTADO_TEXT, require_web=False)
 ok = code == 0 and "WARNING" not in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "real lope-hurtado-1522 partial, no reused-search false positive",
@@ -264,7 +264,7 @@ print(("PASS" if ok else "FAIL"), "real lope-hurtado-1522 partial, no reused-sea
 SYNTH_OPEN_SINGLE_TERM_FTS = (
     'open\nfull-text search for "Bellebourg" returns 0 hits in the volume.\n'
 )
-code, message = gate.check(SYNTH_OPEN_SINGLE_TERM_FTS)
+code, message = gate.check(SYNTH_OPEN_SINGLE_TERM_FTS, require_web=False)
 ok = code == 0 and "WARNING" in message and "one quoted term" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-single-term-fts-soft-warning", f"-> code={code} message={message!r}")
@@ -275,10 +275,48 @@ SYNTH_OPEN_WHOLE_VOLUME_FTS = (
     'open\nfull-text search for "Bellebourg" returns 0 hits; also searched "1586" and "Mayenne" '
     'and "Matignon", each logged separately, all read in full.\n'
 )
-code, message = gate.check(SYNTH_OPEN_WHOLE_VOLUME_FTS)
+code, message = gate.check(SYNTH_OPEN_WHOLE_VOLUME_FTS, require_web=False)
 ok = code == 0 and "WARNING" not in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic open-whole-volume-fts-no-warning", f"-> code={code} message={message!r}")
+
+# Fourth fix (28 Sept 2026, CHECK-SOLVED-WEB): the web/blog-comment check.
+WEB_CITED_OPEN = "open\nRibier 1666 vol.2 pp.140-145 read by this worker, letter absent.\n"
+code, message = gate.check(WEB_CITED_OPEN)
+ok = code == 1 and "web and blog-comment" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic cited-open-no-web-check -> blocked", f"-> code={code}")
+
+code, message = gate.check(WEB_CITED_OPEN + "\n## Web and blog check (CHECK-SOLVED-WEB, 28 Sept 2026)\n\nno hit.\n")
+ok = code == 0
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic cited-open-with-web-heading -> pass", f"-> code={code}")
+
+# must NOT block: the pass logged in prose under another heading, naming all three blogs
+code, message = gate.check(WEB_CITED_OPEN + "\n## Check-solved\n\nSearched Cipherbrain (klausis-krypto-kolumne), "
+                           "the Cryptiana blog and its comments, and ciphermysteries.com: no reading.\n")
+ok = code == 0
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic cited-open-three-blog-paragraph -> pass", f"-> code={code}")
+
+# two of three blogs only is not the logged pass
+code, message = gate.check(WEB_CITED_OPEN + "\nSearched Cipherbrain and the Cryptiana blog.\n")
+ok = code == 1
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic cited-open-two-blogs-only -> blocked", f"-> code={code}")
+
+# must NOT block a terminal verdict
+code, message = gate.check("closed-negative\nnothing else.\n")
+ok = code == 0
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic terminal-no-web-check -> pass", f"-> code={code}")
+
+# real repo: the three live campaigns logged the pass on 28 Sept 2026; spinelli-beinecke-c1515 never did
+for tgt in ("armstrong-madison-1808", "espagnol142-mercy-1648", "fr4715-f61-mayenne-1592"):
+    with open(os.path.join(ROOT, "ciphers", tgt, "NOTES.md"), encoding="utf-8") as f:
+        ok = gate.has_web_blog_check(f.read())
+    fails += not ok
+    print(("PASS" if ok else "FAIL"), tgt, "has the logged web/blog check")
 
 if fails:
     print(f"{fails} failure(s)")

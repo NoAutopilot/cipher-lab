@@ -4,6 +4,10 @@ started: 2026-09-27 20:31 UTC
 daily_budget_usd: 400
 spent_today_usd: 265.61
 spent_day: 2026-09-28
+key_known: no (a unique/private code; Madison, 15 May 1808: "No such Cypher is in the office"; THE=972 and every sibling table on file tested and excluded, NOTES.md ARM-A2/ARM3-*; Irving Brant Papers item located, not digitised)
+crib_available: no (no clear-text version or summary of the 20 Feb letter found; Krajcovic's 15 Feb crib does not check out, NOTES.md "What the cipher is"; no interlinear decipherment on the manuscript)
+pool_signs: 369 numeral groups plus 35 shorthand passages, one letter only (pool of 1, POOLS.tsv; roll-14 and Livingston/Jefferson channel surveys found no sibling in this code)
+keyless_threshold: ~2,000 signs for a homophonic design; this is a two-level nomenclator/code (ARM-DESIGN), whose keyless threshold is higher still -- target is far below either (triage written 28 Sept 2026, CHECK-SOLVED-WEB; web/blog check found no prior reading)
 closed:
 
 ## Attempts already made

@@ -5,6 +5,20 @@ tools/campaign.py's docstring): a ranked hypothesis table and a step log. The ru
 ONE step and exits; the trigger brings the next runner. Nothing here parks: a runner that finds no runnable
 hypothesis writes three new ones (from the folder's evidence) before it stops, and says so.
 
+## Two rules before the first step (28 Sept 2026, CHECK-SOLVED-WEB, after the Spinelli N0)
+
+**(a) KEY HUNT BEFORE CRYPTANALYSIS.** Before any keyless solver step (an anneal, a family run, a crib search without
+a key), a campaign runs the published-key and period-decipherment search: papers and articles on the cipher family,
+key sheets in the holding archive, Wayback copies of dead links, and sister letters in the same key that carry an
+interlinear or separate decipherment. A dead link is a Wayback lookup (CDX API, then the `if_` capture, CLAUDE.md
+access playbook item 2), never a `needs: doc` row until Wayback has been tried and logged.
+
+**(b) SOLVABILITY TRIAGE in every CAMPAIGN.md header,** written before the first step:
+`key_known: yes/no/partial` (which key, where), `crib_available: yes/no` (where), `pool_signs: <count of signs on file
+that share the key>` and `keyless_threshold: ~2,000 signs for a homophonic design` (or the design's own figure, with
+its source). A campaign whose pool is below the threshold and whose key is unknown ranks the key hunt first.
+Put these four lines ABOVE `closed:`, never directly below it: `tools/campaign.py`'s header regex reads the line after an empty `closed:` as its value and would report the campaign closed (found 28 Sept 2026 while adding them; checked with `--check` before pushing).
+
 ## Trigger shape (fixed 27 Sept 2026, 21:4x UTC): a standing session per target, created by the orchestrator WITH the repository (source_url), and a trigger bound to it (persistent_session_id, cron hourly, staggered minutes). A fresh-session trigger cannot clone the private repository and does nothing. The prompt below is what each firing delivers.
 
 ```

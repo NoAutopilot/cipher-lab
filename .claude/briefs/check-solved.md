@@ -5,6 +5,17 @@ attempt with a status. Verdict appended to NOTES.md with the date. + common tail
 The web-search source also covers model-solve announcements (Vals AI's blog, the AI labs' and evaluation
 companies' posts) as a source family for "already solved" since September 2026 (Vals AI, "Claude Fable 5.1
 Solves the Cyphral Distich", 31 Aug 2026): search the cipher's name with "solves" and "Claude" or "GPT".
+**Required step: Open web and blog comment threads (28 Sept 2026, CHECK-SOLVED-WEB).** Our print-check tools (IA,
+Google Books, OpenAlex, CrossRef) cannot see blog comments, and spinelli-beinecke-c1515 was closed at N0 because its
+letter had been read in public on 24 Mar 2017 in the comment thread of a Cipherbrain post -- one web search on sender,
+recipient and date finds it as the second result. For every target, before any verdict: (a) at least four plain web
+searches -- sender + recipient + date; shelfmark + "cipher"/"chiffre"/"cifra"; the most distinctive clear-text or
+decoded phrase in quotes; the folder's own descriptive title; (b) a site search of each of the three blogs by name --
+**Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne), the **Cryptiana blog** (cryptiana.blogspot.com, and
+Tomokiyo's pages), and **Cipher Mysteries** (ciphermysteries.com); (c) open every plausible hit and read its comment
+thread, not only the post. Log every query and every hit in a section headed "## Web and blog check (<worker>,
+<date>)" at the end of NOTES.md (`tools/intake_gate_check.py` fails a gated verdict without it). A decipherment or
+plaintext of the item in a comment thread is exactly like one in print: `found-solved`, and N0 for any later reading.
 The bare status word stays alone on NOTES.md's first line (CLAUDE.md rule 5) -- do not fold a citation into that
 line. Instead, the line immediately below the status word (before anything else, including "QUEUE row:") is one
 sentence naming the edition or calendar actually read by *this worker* and the page(s) checked, e.g. "Ribier 1666

@@ -43,6 +43,19 @@ and exited 1 as ambiguous (antt-fcc-costacabral-1865, status `solved` since 17:0
 labelled with their own word and gated for citation evidence exactly like `blocked` -- the
 intake gate has nothing to say about a target that is no longer in play.
 
+Fourth fix (28 Sept 2026, CHECK-SOLVED-WEB, after spinelli-beinecke-c1515 was closed at N0): that letter had
+been read in public on 24 Mar 2017 in the comment thread of a Cipherbrain post, which a single web search on
+sender, recipient and date finds as its second result -- but the gate asked only for a printed-edition
+citation, and our print-check tools (IA, Google Books, OpenAlex, CrossRef) cannot see blog comments. An
+`open`, `partial` or `found-solved` verdict now also needs a logged open-web and blog-comment check anywhere in
+NOTES.md: either a heading "Web and blog check" (the section `.claude/briefs/check-solved.md` step "Open web and
+blog comment threads" writes), or one paragraph that names all three blogs (Cipherbrain / klausis-krypto-kolumne,
+the Cryptiana blog / cryptiana.blogspot, and Cipher Mysteries / ciphermysteries). Scope, stated as rule 8a asks:
+it is meant to catch a gated target whose NOTES.md never logged the web/blog pass at all (the Spinelli shape);
+it must NOT block a terminal verdict (`blocked`, `solved`, `closed-negative`, `offline-only` -- nothing left to
+gate), and it must NOT block a gated target that logged the pass in its own prose under another heading, as
+long as that paragraph names the three blogs. It does not check the queries were good; the verifier does.
+
 Usage:
   tools/intake_gate_check.py <target>
     <target> is either a path (ciphers/<name>) or a bare target name under ciphers/.
@@ -52,7 +65,9 @@ Exit 0: the verdict word found in NOTES.md is `blocked`, `solved`, `closed-negat
   `found-solved` and the same NOTES.md names a standard edition together with a page number or
   a full-text-search phrase within a few lines of the verdict word, with no nearby phrase saying
   that (or another) named edition was not actually read.
-Exit 1: the verdict is `open`, `partial` or `found-solved` with no such citation nearby, or
+  The gated verdicts also need the logged web/blog check (fourth fix above) somewhere in NOTES.md.
+Exit 1: the verdict is `open`, `partial` or `found-solved` with no such citation nearby, or with no
+  logged web/blog check (heading or three-blog paragraph) anywhere in NOTES.md, or
   `open`/`partial` with a citation but also a nearby phrase (`unread`, `not read`, `could not
   open`, `paywalled`) saying a named edition was not read -- CLAUDE.md's Pipeline intake gate
   says either shape must read `blocked` instead -- or no recognised verdict word (open, partial,
@@ -200,6 +215,26 @@ def negative_evidence_phrase(context):
     return m.group(0).lower() if m else None
 
 
+# Fourth fix (28 Sept 2026, CHECK-SOLVED-WEB): a logged open-web and blog-comment check.
+WEB_HEADING_RE = re.compile(r'^\s*#+\s*Web and blog check\b', re.IGNORECASE | re.MULTILINE)
+BLOG_PATTERNS = (
+    re.compile(r'cipherbrain|klausis-krypto-kolumne', re.IGNORECASE),
+    re.compile(r'cryptiana\.blogspot|cryptiana blog', re.IGNORECASE),
+    re.compile(r'cipher ?mysteries', re.IGNORECASE),
+)
+
+
+def has_web_blog_check(notes_text):
+    """True when NOTES.md logs the open-web and blog-comment pass: the section heading
+    check-solved.md prescribes, or one paragraph naming all three blogs."""
+    if WEB_HEADING_RE.search(notes_text):
+        return True
+    for para in re.split(r'\n\s*\n', notes_text):
+        if all(p.search(para) for p in BLOG_PATTERNS):
+            return True
+    return False
+
+
 def resolve_target(target):
     if os.path.isdir(target):
         return target
@@ -212,8 +247,9 @@ def resolve_target(target):
     return None
 
 
-def check(notes_text):
-    """Pure check used by the offline test. Returns (exit_code, message)."""
+def check(notes_text, require_web=True):
+    """Pure check used by the offline test. Returns (exit_code, message).
+    require_web=False runs only the citation gate (the offline tests of the first three fixes use it)."""
     lines = notes_text.splitlines()
     word, idx = find_verdict(lines)
     if word is None:
@@ -233,6 +269,13 @@ def check(notes_text):
                 f"CLAUDE.md's Pipeline intake gate says this must read `blocked` instead"
             )
     if has_citation_evidence(context):
+        if require_web and not has_web_blog_check(notes_text):
+            return 1, (
+                f"{word} (line {idx + 1}) has an edition citation but no logged open-web and blog-comment check "
+                f"(no 'Web and blog check' heading, no paragraph naming Cipherbrain, the Cryptiana blog and Cipher "
+                f"Mysteries) -- run check-solved.md's 'Open web and blog comment threads' step first (CHECK-SOLVED-WEB, "
+                f"28 Sept 2026: spinelli-beinecke-c1515 was read in a Cipherbrain comment thread in 2017)"
+            )
         msg = f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines"
         for w in soft_warnings(context):
             msg += f"\n{w}"

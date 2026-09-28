@@ -4,6 +4,10 @@ started: 2026-09-27 20:29 UTC
 daily_budget_usd: 240
 spent_today_usd: 75.68
 spent_day: 2026-09-28
+key_known: partial (key.tsv is ours, cryptanalytic, S-grade, N3 after two audits; no period key found -- Brussels SEE "chiffres 1647-98" register, DECODE 958-965, Gayangos all checked, NOTES.md MERCY-KEY)
+crib_available: partial (the letter's own clear-text opening and interspersed clear words, reading.txt r01-r03; no separate decipherment or copy found)
+pool_signs: 522 tokens, K=38, one letter (siblings.tsv: no sibling in Espagnol 142-144; H38: none on Gallica/BnF)
+keyless_threshold: ~2,000 signs for a homophonic design -- target is about a quarter of that; the existing reading beat its matched control at this N (NOTES.md Y8) (triage written 28 Sept 2026, CHECK-SOLVED-WEB; web/blog check found no prior reading)
 closed:
 
 ## Goal corrected (28 Sept 2026, 05:5x UTC, orchestrator)

@@ -4,6 +4,10 @@ started: 2026-09-27 20:33 UTC
 daily_budget_usd: 400
 spent_today_usd: 304.02
 spent_day: 2026-09-28
+key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
+crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
+pool_signs: f.61 is about eleven lines; family leaves on disk are well above it (fr.3982 f.97r alone 2,424 signs, NOTES.md H45) -- total across the family not yet summed in one file
+keyless_threshold: ~2,000 signs for a homophonic design; this is polyphonic (each sign two letters, ~21 classes), so the pooled family, not f.61 alone, is what clears it (triage written 28 Sept 2026, CHECK-SOLVED-WEB; web/blog check found only Tomokiyo's own spans)
 closed:
 
 ## Attempts already made
