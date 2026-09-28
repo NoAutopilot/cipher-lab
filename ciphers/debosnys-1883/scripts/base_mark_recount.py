@@ -117,8 +117,8 @@ def report(rows):
         "",
         f"{'group':<24}{'N':>6}{'K_base':>8}{'IC_base':>10}{'K_160':>8}{'IC_160':>10}",
     ]
-    groups = {"c1": ["c1"], "c2 (2a+2b)": ["c2a", "c2b"], "c3": ["c3"], "c4 (4a+4b)": ["c4a", "c4b"],
-              "combined": ["c1", "c2a", "c2b", "c3", "c4a", "c4b"]}
+    groups = {"c1": ["c1"], "c2 (2a+2b)": ["c2a", "c2b"], "c3": ["c3"], "c4 (4a+4b)": ["c4a0", "c4a", "c4b"],
+              "combined": ["c1", "c2a", "c2b", "c3", "c4a0", "c4a", "c4b"]}
     for gname, pages in groups.items():
         gr = [r for r in signed if cryptogram_of(r["line"]) in pages]
         seq160 = [r["sign"] for r in gr]

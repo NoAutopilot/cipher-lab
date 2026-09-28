@@ -19,7 +19,8 @@ def ours():
     by = collections.OrderedDict()
     for r in csv.DictReader(open(os.path.join(root, 'passA.tsv')), delimiter='\t'):
         if r['line'].startswith('c4'): by.setdefault(r['line'], []).append(r['sign'])
-    return list(by.values())  # 19 lines, verse 2..20
+    keys = sorted(by, key=lambda k: (0 if k.startswith('c4a0') else 1 if k.startswith('c4a') else 2, k))
+    return [by[k] for k in keys]  # 20 lines once c4a0_L01 (H7) is in passA.tsv: verse 1..20
 def bourdeau():
     sys.path.insert(0, os.path.join(repo, 'sources/bourdeau/cyphersolver-targets-debosnys')); import verse_transcription as v
     return v.lines()  # 20 lines, punctuation stripped, '?' stripped
@@ -52,4 +53,4 @@ if __name__ == '__main__':
     B = bourdeau(); test('bourdeau-2026', B, 1, False, 'full')
     O = ours()
     for strip in (False, True):
-        for level in ('full', 'family'): test('ours-passA', O, 2, strip, level)
+        for level in ('full', 'family'): test('ours-passA', O, 1 if len(O) == 20 else 2, strip, level)

@@ -791,3 +791,19 @@ from 81.6 to 86.8 pct at K_fold 158; three or more (one slash-family component) 
 eleven ids into one component through pairwise links (X-PCT-Y-CURL-O-TILDE-WAVE...), 94.9 pct at 149, which is not
 one shape and not a legal fold. The row's condition (90 pct at K under 100) is not met: the confusions are reader
 quality (pass B) and the %-like slash family, not evidence of a smaller alphabet. No control box was bought.
+
+### H7 done: the verse's first line added (28 Sept 2026, 21:3x-21:45 UTC)
+
+Band `images/Debosnys-Cryptogram-4a.png` @ 280,372,740,436 segmented with `tools/glyph_atlas.py segment` alongside the
+six original page boxes of `glyphs/pages.json` (deterministic: every original box reproduces exactly, so
+`glyphs/signs.tsv`, `marks.tsv`, `bitmaps.npz`, `pages.json` were replaced by the seven-page run): 16 boxes, kNN read
+with `classify --exclude-page` against `labels_box.json` (`scripts/h7_knn_c4a0.tsv`), then one value-blind Fable eye
+pass with H2's prompt (rule in `scripts/PROMPTS_c1.md`, H7 section, written before the reader ran). Eye and kNN agree
+on 10 of 16; the eye labels (H when both agree and the eye says H, else M) are appended to `glyphs/box_labels.tsv` as
+page `c4a0`, line 1: DIAMOND PCT Y-CURL PCT-SLASH O-TILDE X-SLASH X VENUS `_` PCT-SLASH X O-TILDE `_` X WAVE `_` (13
+signs, a dot, a comma, a stain fragment; box 11's small x is the lower part of a slash-with-x composite the segmenter
+split, kept as labelled at L). Token for token that is Bourdeau's verse line 1 (DELTA_RING SL(o,o) GAM SL(t,d) N_O XS2 Y
+VENUS . SL(p,x) N_O? X TCURL ,). `lines.tsv` gains `c4a0_L01`; `scripts/gold4c_inventory.py` and
+`scripts/base_mark_recount.py` group `c4a0` under cryptogram 4 and were re-run (`--check` clean): c4 is 20 lines,
+pooled N 1264 (was 1251). `scripts/h5_couplets.py` on ten couplets: within 5/10, across 0/9, p < 0.0001 on ours
+(line 1 and 2 both end WAVE, his TCURL TCURL).

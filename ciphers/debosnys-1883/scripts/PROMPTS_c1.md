@@ -47,3 +47,13 @@ Do not describe what the sign might mean. Write one line per crop: <crop id> <TA
    `ciphertext.txt` from `ciphertext_c1_draft.tsv` (settled columns H/M as graded, unsettled M with alts);
    below 80 pct the draft is updated and `ciphertext.txt` stays as it is.
 7. Nothing in this pass is a reading of the cipher; grade S/M throughout, 0 H-from-key, 0 C-from-plaintext.
+
+## H7 (28 Sept 2026, written before the reader was spawned): the verse's first line, c4a0
+
+Band: images/Debosnys-Cryptogram-4a.png @ 280,372,740,436 (under the "monographe. verse." title, above GOLD-4A's c4a box),
+segmented with tools/glyph_atlas.py segment alongside the six original pages (deterministic: their boxes reproduce
+exactly), 16 boxes, kNN read with `classify --exclude-page` against labels_box.json (pass K). One value-blind Fable eye
+pass (pass E) on the 16 crops with the same prompt as H2's readers. Rule: label = E's id; grade H when K = E and E's
+confidence is H, else M; K's id kept in `alt`; E's MULTI / `_` verdict stands (segmentation). The rows are appended to
+glyphs/box_labels.tsv as page c4a, line 0 (sids c4a_00_NNN, source `eye:h7-c4a0|knn:<K id>`), and lines.tsv gets
+c4a_L00; scripts/gold4c_inventory.py then rebuilds passA.tsv and ciphertext_draft.tsv from box_labels.tsv as before.

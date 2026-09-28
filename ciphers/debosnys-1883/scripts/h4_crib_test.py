@@ -37,7 +37,7 @@ def load_cipher(path):
     seqs = collections.defaultdict(list)
     for r in csv.DictReader(open(os.path.join(root, path)), delimiter='\t'):
         if r['sign'] in ('_', 'MULTI'): continue
-        g = r['line'].split('_')[0]; g = {'c2a': 'c2', 'c2b': 'c2', 'c4a': 'c4', 'c4b': 'c4'}.get(g, g)
+        g = r['line'].split('_')[0]; g = {'c2a': 'c2', 'c2b': 'c2', 'c4a0': 'c4', 'c4a': 'c4', 'c4b': 'c4'}.get(g, g)
         seqs[g].append(r['sign']); seqs[g.rstrip('ab') if g in ('c2', 'c4') else g]
     return seqs
 def poem_lines():

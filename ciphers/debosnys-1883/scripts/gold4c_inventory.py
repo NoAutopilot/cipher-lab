@@ -76,8 +76,8 @@ def classes(bl, old_ids):
 
 def ic_table(bl, trials=20):
     fr = find_corpus_file('../../tools/data/fr16'); en = find_corpus_file('../../tools/data/en16_repo')
-    groups = {'c1': ['c1'], 'c2 (2a+2b)': ['c2a', 'c2b'], 'c3': ['c3'], 'c4 (4a+4b)': ['c4a', 'c4b'],
-              'combined (all)': ['c1', 'c2a', 'c2b', 'c3', 'c4a', 'c4b']}
+    groups = {'c1': ['c1'], 'c2 (2a+2b)': ['c2a', 'c2b'], 'c3': ['c3'], 'c4 (4a+4b)': ['c4a0', 'c4a', 'c4b'],
+              'combined (all)': ['c1', 'c2a', 'c2b', 'c3', 'c4a0', 'c4a', 'c4b']}
     out = io.StringIO()
     out.write('GOLD-4C inventory (box_labels.tsv), 25 Sept 2026. Controls: compute_ic.py, fr16 / en16_repo text at the\n'
               'same N (20 trials), uniform random string at the same N and K (20 trials). "excl" drops _ and MULTI boxes.\n')
