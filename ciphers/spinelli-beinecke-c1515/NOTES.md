@@ -768,3 +768,23 @@ H20c fetches those plus the last canvas (62).
 
 **Requests:** collections.library.yale.edu 5. **Cost:** recorded as 0.3 USD. No credentials, no AskUserQuestion,
 rule 10 wording, no other target touched.
+
+## Campaign step H20c (28 Sept 2026, 00:43-00:45 UTC) -- census closed
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Canvases 46, 49, 51, 59 and 62 of the bundle at 1000px (5 requests).
+Direct look: c46 (17296338) a plain letter opening, no cipher; c49 (17296341) a plain letter dated "... ultimo di
+luglio 1507" with a long postscript, no cipher; **c51 (17296343) folder cover "Box 126, Folder 2570 -- Spinelli
+Tommas[o] 1505-09"**; c59 (17296351) a plain letter opening, no cipher; **c62 (17296354), the last canvas, an address
+side pencilled "1509"**.
+
+**Result: negative for the pool. The 62 digitised images of catalog item 17296147 cover only folders 2566-2570,
+Tommaso's letters of 1492-1509** (2566: 1492-93, 3 letters; 2567: 1494-95, 6; 2568: 1497; 2569 and 2570: 1505-09);
+every page seen (14 of 62, both text pages and covers) is plain Italian, and the run ends in 1509 -- six years before
+the brothers began to use cipher (January 1515, per Domnina). The enciphered correspondence, ff. 2571-2587 (about
+1510-1522), is NOT online. So the sign pool named in H7 stays a reproduction request (H17, `needs: person`), now with
+its folio range narrowed to ff. 2571-87 plus Piero's ff. 2560-65, and the digitised 1492-1509 pages are one more
+same-hand plaintext resource. The census is closed; no H20d.
+
+**Requests:** collections.library.yale.edu 5 (this campaign's Beinecke total today: 6+4+6+5+5 = 26 across five
+steps, always 2 s apart, all HTTP 200). **Cost:** recorded as 0.3 USD. No credentials, no AskUserQuestion, rule 10
+wording, no other target touched.
