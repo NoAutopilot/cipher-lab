@@ -1,7 +1,7 @@
 target: espagnol142-mercy-1648
 goal: a verified reading of the letter at N3 or better after two audits
 started: 2026-09-27 20:29 UTC
-daily_budget_usd: 40
+daily_budget_usd: 120
 spent_today_usd: 2.00
 spent_day: 2026-09-28
 closed:
