@@ -1,0 +1,8 @@
+lag-1 autocorrelation of n(v), v=10..99: 0.351
+target: corr zero-form 0.574, nonzero-forms 0.493, whole decade 0.630
+zero-form      target 0.574  null mean 0.155  p95 0.375  p99 0.458  pct 99.9
+nonzero-forms  target 0.493  null mean 0.160  p95 0.359  p99 0.449  pct 99.8
+whole decade   target 0.630  null mean 0.214  p95 0.396  p99 0.468  pct 100.0
+as transcribed                                     distinct 216 singletons 139 max count 13
+strip trailing zeros                               distinct 189 singletons 114 max count 18
+strip one trailing digit from every value >= 100   distinct 116 singletons  40 max count 22
