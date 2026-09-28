@@ -430,7 +430,7 @@ letter names the correspondent, the key, or a later decipherment. B12 (Aug-Dec 1
 Requests this step: web.archive.org about 760 in total (3 passes, single-threaded, 1.6 s apart), loc.gov 9;
 0 subagents. Time: 03:03-04:25 UTC by the clock, mostly background waiting.
 
-**B15 closed (04:2x-04:5x UTC): the whole of roll 14 screened; no second copy of the 20 Feb letter on the reel.**
+**B15 closed (03:5x-04:27 UTC): the whole of roll 14 screened; no second copy of the 20 Feb letter on the reel.**
 Route change: NARA serves the entire roll as one PDF (`catalog.archives.gov/medialz/dc-metro/rg-059/603720/M34/
 M34-014/M34-014.pdf`, 68.9 MB, 668 pages, page N = frame N, checked on frames 0030-0033; one request, no throttle),
 the same form ARM-CORR used for M30/M31. Rendered with PyMuPDF (`pip install pymupdf` works in this container) at
@@ -450,3 +450,15 @@ two different letters, and no second witness of the target's ciphertext is reach
 lane (for the orchestrator): a NARA microfilm survey should fetch the whole-reel PDF once and screen every frame at
 26 dpi, not sample 1 frame in 6 through the throttled IIIF route; 18 contact sheets close a 668-frame reel in one
 session. Requests: catalog.archives.gov 1 (PDF) + 14 IIIF (9 of them answered with the app shell, throttled).
+
+## Step B18 (28 Sept 2026, 04:28-04:30 UTC) -- the two unsurveyed numeral letters on roll 14 are office code: screened out at sight
+
+Pages 0436-0437 (Paris, 10 November 1809, "Sir," then about 20 lines of numeral groups with a clear close "and
+whether it will be better with 305, for whom it is no doubt equally intended is very doubtful. 972 305 821 820 1404
+1165") and 0494 (Paris, 2 February 1810, to Robert Smith: "501 962 1187 576 [interlined: Mr Petry] called on me
+to-day to inform me that a proposition would be made to me in a day or two 1064 1065 1478 1201 470 [interlined: for
+forming a convention] on principles of reciprocal advantage 111 945 274 1116 1354 292 806 1219 811"), read at
+110 dpi from the reel PDF. Both are THE=972 usage: the group 972 ("the") recurs a dozen times on page 0436 and the
+period interlinear glosses on 0494 are the office key's readings; the target never uses 972 and has no interlinear
+gloss. Page 0232 (1809) likewise (972, 1116, 1201 in short runs inside clear prose). No pool candidate; done.
+Requests: none (local PDF); 0 subagents; 2 minutes by the clock.
