@@ -1,0 +1,4 @@
+list 402 names; burgsdorf: fit 7 at r16:16; rank 2; P(list fit >= it) 0.005
+top 12: [('brandenburg', 11, 'r15:11'), ('burgsdorf', 7, 'r16:16'), ('francenberg', 5, 'r15:11'), ('altenburg', 5, 'r15:13'), ('uuaidenburg', 5, 'r15:11'), ('hurgsdorf', 5, 'r16:16'), ('bnrgsdorf', 5, 'r16:16'), ('oranien', 4, 'r17:17'), ('uranien', 4, 'r17:17'), ('orauien', 4, 'r17:17'), ('garantie', 4, 'r17:16'), ('neuburg', 3, 'r15:15')]
+list 402 names; burgsdorf: fit 7 at r16:16; rank 1; P(list fit >= it) 0.002
+top 12: [('burgsdorf', 7, 'r16:16'), ('hurgsdorf', 5, 'r16:16'), ('bnrgsdorf', 5, 'r16:16'), ('oranien', 4, 'r17:17'), ('brandenburg', 4, 'r16:9'), ('uranien', 4, 'r17:17'), ('orauien', 4, 'r17:17'), ('garantie', 4, 'r17:16'), ('burgund', 3, 'r16:16'), ('rathen', 3, 'r17:18'), ('altenburg', 3, 'r16:11'), ('nouburg', 3, 'r16:13')]

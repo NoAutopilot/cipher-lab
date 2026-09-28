@@ -1887,3 +1887,32 @@ period key (H17, ASKS 82; REGISTER-CHECKLIST.md). No token, grade or class chang
 register comparison checks both sides. By the text alone 24 = h stands ("de Cheureuse", "tres mil hombres"; the H30
 blind reader also chose h), and the greedy n is a search artefact -- one of the 13 wrong moves in 25 its controls
 showed. 65, 25 and 48 stay open both ways (still M). Disk only; no token, grade or class change.
+
+## Campaign step H41 (2026-09-28 15:24-15:06 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. A crib candidate, not a reading.** The unread stretch after "el Elector de Brandenburg"
+(r16-r17) carries the letters "... d l o n b u r g s [72] r f s [25] c m a r e [52] m a y o r ...". Hypothesis (formed by
+eye from the context "pasareis a Cleues a ueros con el Elector de Brandenburg y con ..."): **BURGS[72]RF = Burgsdorf**,
+with the nomenclature code 72 standing for a syllable (do) -- Konrad von Burgsdorff, the Elector's Oberkämmerer in the
+1640s. Because the name was chosen after seeing the text, it is tested against every name a reader in that context
+could have chosen instead:
+
+- **Name list, built before scoring** (`h41/names.py` -> `h41/namelist.tsv`): 402 names -- every surname or place after
+  von / v. / Graf / Freiherr / Herr / Oberst / Kanzler or with a possessive 's, 6-12 letters, seen twice or more, in
+  *Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm von Brandenburg* Bd. 4 (1867) and Bd. 5
+  (1869), Internet Archive `urkundenundacten04berluoft`, `urkundenundacten05berluoft` (_djvu.txt; archive.org 3
+  requests). Burgsdorf is 5th by frequency (95); the list keeps OCR variants (hurgsdorf, bnrgsdorf) and places.
+- **Fit** (`h41/fit.py`, `h41/result.log`): each name aligned whole to the token stream, S-graded tokens +1 equal / -1
+  unequal, M-graded and nomenclature tokens (48/52/65/72, 9, 15, 25) as wildcards for one or two letters, best start.
+
+| window | Burgsdorf fit | rank | next real name | P (list fits >= Burgsdorf) |
+|---|---|---|---|---|
+| r15-r18, as pre-registered | 7 at r16:16 | 2 | brandenburg 11 at r15:11 (the already-read word) | 0.005 |
+| r16:2-r18 (after the read "Brandenburg") | **7 at r16:16** | **1** (unique) | oranien / garantie / brandenburg 4 | **0.002** |
+
+The pre-registered window ranked Burgsdorf second only behind the word the reading already holds at r15 ("Brandenburg"
+itself); on the unread part it is the list's unique best fit, three points clear of any other name (its two OCR
+variants aside), 7 of 9 letters matching at S-graded tokens with no mismatch. **By the row's rule it is a crib
+candidate**, with the window caveat stated. What it implies, untested here: 72 is a syllable code (do), which fits H2's
+nomenclature class; the next row (H42) tests the independent half of the same hypothesis ("su camarero mayor" after
+the name). No key.tsv, token, grade or class change; nothing here is a reading.
