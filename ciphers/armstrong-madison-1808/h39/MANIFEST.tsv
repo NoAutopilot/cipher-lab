@@ -1,0 +1,4 @@
+reel	frames	sheets	calls	control	status
+M31 reel 12 (NAID 188605361), frames 1-380	380	h31/sheets.py two-frame 700-px sheets (scratch sheets_m31r12a, 190 files)	4 blind Sonnet screeners (1-96, 97-190, 191-286, 287-380), 28 Sept 2026 06:10 UTC	M30 reel 11 sheet 0065-0066 (the 5-group WE028 run on frame 65) appended to every call's file list, unlabelled as a control	step 1 of H39
+M31 reel 11 (NAID 188605226), 137 frames	137	not yet built	--	same	step 2
+M31 reel 13 (NAID 188605987), 660 frames	660	not yet built	--	same	step 2-3
