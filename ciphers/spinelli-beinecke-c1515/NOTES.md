@@ -1541,3 +1541,38 @@ the manifest's own fit values and two independent readers, not by one runner's e
 `images/p2v_*` (54 crops, manifest), `passes/plainv_pass{C,D}.tsv`, `corpus/letter_plain_context_agreed_v2.tsv`.
 **Cost:** 2 Opus vision calls (about 247k tokens) plus this runner's turns -- recorded as 5.0 USD (the est). No
 requests (the canvases were re-read from the scratch copies), no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H33c (28 Sept 2026, 05:29-05:32 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H33c: the p.[2] upper block once more, flat cut (no slope tracking,
+`--prominence 60`): 12 contiguous, non-overlapping bands (manifest boxes 199-339, 339-485 ... 1823-1982; prefix
+`p2w`, the duplicate-band `p2v` crops removed), one Opus pair (`passes/p2w_pass{E,F}.tsv`, about 99k and 104k tokens).
+
+**Result: negative on the gate -- the bleed-through page does not reach 60% even with correct bands: word-level
+46/115 = 40.0%, folded-letter 72.6%** (H33's flat cut with one line missed: 51.8% / 81.1%; H33b's slope cut, 9
+distinct lines: 54.4% / 91.6%). The two readers diverge on whole words where the show-through is densest
+("Car(dina)le Medici ha promesso" vs "Carlo [.]edio ha promesso"; "Le galie sono" vs "Legati[o] sono"; line 10 mostly
+bracketed by both). What the three pass pairs of this block agree on across steps stays the H33 context: a promise
+"dal S(igno)re / dal Re d'una bona chiesia nel regno di Napoli", the galleys arrived, "l'armata fra quattro giorni
+... Dio li dia vittoria", "Mons. ... ha maritato la nipote al primogenito di Mons. Giorgio/di Bergha, pero non e ancora
+publicato". No AB-grade text for this block; `corpus/letter_plain_context_agreed_v2.tsv` carries the E/F agreed words
+appended per line. Three pass pairs on the same block with the bands now right is the rule-3 "same approach" limit: a
+fourth pair is not the next step; a different instrument is -- the red-channel cleaning that `glyphs/prepare.py`
+already applies to the cipher block (the bleed-through is light in red, the ink dark) before cutting the plain lines
+(H33d). No reading of the cipher, no class change.
+
+**Controls:** the pass-pair agreement against the pre-registered gate; band correctness verified from the manifest
+boxes before the calls. **Files:** `images/p2w_*` (24 crops, manifest), `passes/p2w_pass{E,F}.tsv`, the corpus
+file. **Cost:** 2 Opus vision calls (about 203k tokens) plus this runner's turns -- recorded as 3.0 USD (the est). No
+requests (scratch canvas), no credentials, no AskUserQuestion, no other target touched.
+
+**Session handover (this runner stops here, at about 665k context, under the 700k line):** steps run this session,
+01:44-05:32 UTC: H22, H28, H27, H25, H26, H29 (dropped, moot), H29b, H29c, H30, H31, H17, H26b, H21, H33, H34, H33b,
+H33c. Standing results: the solver route on the single letter is closed with design-matched controls (0.12-0.20 vs
+0.6; the design reads at a 2,000-sign pool in about half the seeds, 0.82-0.86 when it converges); the crib route on
+the letter as coded is closed (H28/H31/H34); the transcription is rebuilt from Opus pass pairs at 93% agreement (v4,
+259 codes, HOOK 38); the letter's own plain text is read around the cipher (p.[1] block at 70% word agreement, the
+confessor/Medici passage); the pool request is written (REQUEST.md, ASKS row 87). Runnable rows left: H33d (below),
+H21b; the rest need the owner (H17's order) or documents (H6/H8/H9). Tool flags for the owner of
+`tools/iiif_lines.py`: (1) the 30 MB guard downscales committed sources in place and rewrites manifest entries; (2)
+`--follow-slope` with a low prominence can duplicate bands (H33b). Both were undone by hand each time; neither is fixed.
