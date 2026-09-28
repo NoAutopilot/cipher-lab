@@ -20,3 +20,7 @@ square brackets.
     L01	que	7	8	
 
 Then push, or paste the rows into ASKS.md row 89. Nothing here asks for a reading of the cipher itself.
+
+Order to read, if time is short (campaign step H155, 28 Sept 2026; `scripts/f61108v_rows_result.txt`): **L06, L04, L01, L03**,
+then L07, L05, L02. The first four are the rows where the cipher already fits f.61's cell map best (a statistical fit only;
+nothing about the words is implied), so a gloss there tests the most signs. Any row is useful; this is only an order.

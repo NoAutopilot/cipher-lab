@@ -3027,3 +3027,11 @@ reading, no class change.
 So "f.108r L04-L06 in f.61's cells" is a lean, strongest with HASH4 = i/x, not a result that survives resampling its three
 lines -- unlike f.108v (29/30, H152). With three lines, a resample often drops the one that carries the signal (L06, H119).
 The f.108r predictions stay committed; the person's gloss (ASKS 88) remains the test. No reading, no class change.
+
+## Campaign step H155 (28 Sept 2026, 19:50-19:52 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61108v_rows.py` (pushed 5acfe7c9 before the run; `f61108v_rows_result.txt`): per f.108v row, the fitted map's
+sequence gain rank among 200 permuted maps: L06 1, L04 2, L01 2, L03 7, then L07 38, L05 40, L02 55 (single rows, one seed;
+each row 34-42 covered signs). The ASKS 89 desk pack (`images/person_pack_108v/README.md`) gains a reading order note
+(L06, L04, L01, L03 first) with no letters in it. Rows L02, L05, L07 fit no better than chance alone -- a transcription or
+null question for the verifier, the same rows H101 found weakest by the judge (L05). No reading, no class change.
