@@ -2876,3 +2876,17 @@ as further pre-registered predictions before ASKS 88/89 land. They differ from t
 per line (f.108r L05 "atquin.em.isilznem." vs "ngquin..."). `scripts/f61score_gloss108.py` now scores the lattice prediction
 too ("H140 lattice"); its selftest still PASSes (the synthetic gloss is H120's, so H140 scores 69/71 there by construction
 of the test, not as evidence). No reading, no class change.
+
+## Campaign step H143 (28 Sept 2026, 19:40-19:47 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe) -- key hunt, a new lead
+
+Campaign rule (a). BnF Archives et manuscrits, one plain POST search (`resultatRechercheSimple.html`, "Mayenne chiffre
+déchiffrement"): 119 results, page 1 (50) read; pagination needs a real browser (host table), not pursued. Beside the known
+fr.3641 f.126 (H/F61-FAMILY-7: a figure cipher) and Nevers-papers letters about Mayenne (other senders), one lead in the
+family's own correspondence: **Français 2751, fol. 116, item 45: « Lettre du sieur DE DIOU à monsieur le duc de Maienne,
+... escripte en chiffre ». Déchiffrement de cette lettre** (ark:/12148/cc49202m/cd0e560; a recueil of pieces 1549-1599).
+It is digitised (Gallica SRU: 1 record, ark:/12148/btv1b52523734p); the manifest gives f.116r = canvas f241, f.116v = f242.
+Every image request for that ark returned **HTTP 403** (four, then one retry after 60 s), so the cloud stopped per the
+good-citizen rule; whether the letter is in f.61's polyphonic signs is undetermined. Request written:
+`family/REQUEST_fr2751.md` (a desk look at f.241-f.244, or a later cloud retry, H144). Requests this step:
+archivesetmanuscrits 4, Gallica 7 (SRU 1, manifest 1, images 5 -- all 403), logged in `family/requests.log`.
+Not a key, not a reading; no class change.
