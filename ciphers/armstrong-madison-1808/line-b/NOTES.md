@@ -429,3 +429,24 @@ named twice only: Madison to Jefferson 15 May and, five days later, Graham's dup
 letter names the correspondent, the key, or a later decipherment. B12 (Aug-Dec 1808) stays open at its rank.
 Requests this step: web.archive.org about 760 in total (3 passes, single-threaded, 1.6 s apart), loc.gov 9;
 0 subagents. Time: 03:03-04:25 UTC by the clock, mostly background waiting.
+
+**B15 closed (04:2x-04:5x UTC): the whole of roll 14 screened; no second copy of the 20 Feb letter on the reel.**
+Route change: NARA serves the entire roll as one PDF (`catalog.archives.gov/medialz/dc-metro/rg-059/603720/M34/
+M34-014/M34-014.pdf`, 68.9 MB, 668 pages, page N = frame N, checked on frames 0030-0033; one request, no throttle),
+the same form ARM-CORR used for M30/M31. Rendered with PyMuPDF (`pip install pymupdf` works in this container) at
+26-40 dpi into contact sheets (`scratch/b15/sw_*.jpg`, `lo_sheet_*.jpg`, `pdf_sheet_50_61.jpg`) and every page 1-668
+looked at by this session: at that scale a page of numeral groups is unmistakable (frames 0030-0032 of the target,
+0024, 0039-0040, 0045, 0643-0644 all stand out as the positive control), and the only dense-numeral pages on the reel
+are those known ones plus 0121 (23 Aug 1808, THE=972 per ARM-POOL2), 0232 (1809, short runs), 0436-0437 (a numeral
+letter of Dec 1809) and 0494 (a numeral letter of Feb 1810) -- the last two never surveyed, screened at 110 dpi below.
+**Result: search result with its positive control -- roll 14 holds ONE copy of the 20 Feb letter (frames 0030-0033)
+and no duplicate.** (An automatic ink-run statistic, `page_screen.py`, was tried first and failed its known-answer
+control -- 5 of 7 cipher pages inside the clear-page range -- so the eye sweep, not the statistic, is the screen.)
+Reading of Graham's sentence, M: the "Duplicate ... with a Postscript on the back" was most probably the 22 Feb
+despatch's second copy -- roll 14's 22 Feb copy carries a cipher postscript on its back and the docket "by M.
+Patterson" (frame 0035), the 20 Feb copy carries none, and no second copy of either letter is on the reel or
+catalogued in the LOC Madison Papers -- so the undecyphered letter (15 May) and the forwarded duplicate (20 May) are
+two different letters, and no second witness of the target's ciphertext is reachable. B15 done. Lesson for the
+lane (for the orchestrator): a NARA microfilm survey should fetch the whole-reel PDF once and screen every frame at
+26 dpi, not sample 1 frame in 6 through the throttled IIIF route; 18 contact sheets close a 668-frame reel in one
+session. Requests: catalog.archives.gov 1 (PDF) + 14 IIIF (9 of them answered with the app shell, throttled).
