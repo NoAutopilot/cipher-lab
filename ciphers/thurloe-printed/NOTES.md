@@ -2164,3 +2164,40 @@ Special Collections), reply pending.
 - S: fetch page images for P25-P28 (Manning/Lockhart/Burton/Johnson letters) via tools/iiif_lines.py to replace the OCR-line pairs step -- named suggestion, section 23, not run; would likely raise the 74% C rate.
 - S: settle the P27/P28 'Zachary Johnson' 13%-agreement sub-key mismatch with a third Johnson letter search in the already-fetched Birch OCR text -- flagged, unresolved in section 23.
 - S: grep Birch's own OCR text for other 'vol. xxiv' cross-references near p.73/76 that might independently pin the modern A.24* folio for the Stamford/Calais item, without needing the Bodleian's reply.
+
+## 26. Bodleian reply (MAIL-3, 28 Sept 2026)
+
+The Bodleian's Curator of Early Modern Archives answered the 26 Sept 2026 reproduction request
+(outreach/bodleian-rawl-a24-p4.md, ASKS row 30) on 28 Sept 2026 at 15:26 UTC (read by the owner-account
+orchestrator; summary here, no personal data). He found **no Stamford letter of 13 March 1655**. He identified
+Stamford's letter "Callais, March 30, 1654 (1655)", in cipher at MS p.319 (pp.319-323, with an endorsement) and
+**deciphered** at pp.324-327, in **MS. Rawl. A. 24/2**; its pencil references p.275/276 correspond to Birch
+vol. 3 pp.274-276 (BHO https://www.british-history.ac.uk/thurloe-papers/vol3/pp261-276).
+
+**(a) Where our "13 March / pp.187-189 / Vol. xxiv p.76" came from: a different letter, not our error.** Re-read
+on BHO today (https://www.british-history.ac.uk/thurloe-papers/vol3/pp185-195, fetched 28 Sept 2026): Birch
+prints "A letter of W. S. from Calais." with the margin "Vol. xxiv. p. 76.", the cipher on [Page 188], dated
+"Callais, March 13, [1654/5. N. S.]" and signed "W. S." on [Page 189]; a short covering letter follows at
+"Vol. xxiv. p. 73.", "Callais, March 13.", signed "W. S.", and the endorsement "W. S. Calais, 13/3 March 1654/5.
+His desire of a correspondence ...". So P4 is Birch's own citation, and the letter the curator found is P5+P6
+(30 March), a different letter. One correction to this folder's wording: the P4 letter is signed **"W. S."**
+throughout, never "Stamford" in full; its attribution to William Stamford is ours (hand, content and the
+sibling letters, s.16; Macray's index line "Stamford, W., Calais ... A. 24. 73"), which may be why a search by
+name at the archive did not find it. The curator's answer confirms the MS keeps Birch's old pagination (pp.319,
+324 as Birch's margins say), so P4's leaves should sit at old pp.73-76, in **A. 24/1**, not A. 24/2. Its leaf is
+still unlocated; the sentence "Birch's margin Vol. xxiv p.76 = Bodleian MS Rawl. A. 24" stands as Birch's
+citation, not as a folio anyone has seen.
+
+**(b) Birch vol. 3 pp.274-276 on BHO, read 28 Sept 2026: Birch printed both.** The cipher ("A letter of
+intelligence", Vol. xxiv p.319, signed "W. Stamford", "Callais, March 30, [1654. N.S.]") and, directly after it,
+"The same letter decypher'd." (Vol. xxiv p.324, signed "William Stamford", "Calais, 30/20 March, 165 5/4").
+This is P5+P6, already **found-solved, N0** in AUDIT.md (LANE T V1, 24 Sept 2026); the curator's reply adds only
+that the office decipherment survives in the MS at pp.324-327 beside the cipher at pp.319-323. Because the
+plaintext is printed, no STAMFORD-KEY harvest and no reproduction request for pp.319-327 were written (the
+brief's "if not" branch): the office decipherment adds nothing Birch does not already print, and
+`pool_1654/key_stamford.tsv` was built from exactly that printed decipherment.
+
+**P4 status unchanged:** `partial`, AUDIT.md N4 (no prior decipherment located). The one open question the reply
+leaves: whether old pp.73-76 of MS. Rawl. A. 24/1 (a letter signed "W. S.", Calais, 13 March 1654/5) carry an
+office decipherment. Suggested for the owner's reply to the curator (not sent by this job): ask him to look at
+old pp.73-76 in A. 24/1 for a letter signed "W. S." rather than "Stamford".

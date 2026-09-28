@@ -958,3 +958,12 @@ an N0 already in print. Open-index pass: present (owner's 24 Sept run; V5). Seco
 
 **Verdict: gate 2 closed** for P4. Class unchanged: **N4**. No reply bears on P4 (the Bourdeau issue has no answer on file; the
 Bodleian reproduction request is a mailbox draft awaiting the owner).
+
+## Addendum, Bodleian reply (MAIL-3, 28 Sept 2026)
+
+P5+P6 (Stamford, Calais, 30 March 1655): the Bodleian's Curator of Early Modern Archives reports (email of
+28 Sept 2026) the cipher at MS. Rawl. A. 24/2 pp.319-323 and a contemporary decipherment at pp.324-327. Birch
+vol. 3 pp.274-276 prints both (BHO re-read 28 Sept 2026). Class **N0** unchanged, key source `period`. P4 (the
+13 March "W. S." letter, Birch's margin Vol. xxiv pp.73/76): the curator found no 13 March Stamford letter; the
+reply does not bear on P4's N4, whose "not excluded: a contemporary decipherment in MS Rawl. A. 24" caveat stands
+until old pp.73-76 of A. 24/1 are seen. See NOTES.md s.26.

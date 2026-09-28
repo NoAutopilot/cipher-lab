@@ -620,3 +620,19 @@ families**: no letter-substitution design (base level, K160, or c2 settled alone
 at the noise a settled two-pass transcription is expected to carry. A c1 or c2 image-settlement pass is not
 licensed by these numbers. No decoding, no images, no transcription; status stays `open` (rule 5: not
 `closed-negative`); grade S throughout, 0 H, 0 C.
+
+## Museum reply (MAIL-3, 28 Sept 2026)
+
+The Adirondack History Museum (Essex County Historical Society) answered the 26 Sept 2026 email
+(outreach/debosnys-museum.md, ASKS row 52) on 28 Sept 2026 at 18:09 UTC, read by the owner-account orchestrator:
+
+- **No key.** They found no key sheet or cipher alphabet among Debosnys's papers. The "key survives at the
+  museum" route is closed; the cryptograms stay a cryptanalysis question (status unchanged, `open`).
+- **Clear-text scans, restricted.** They shared scans of his clear-text writings (about 43 images, Google Drive)
+  as a restricted collection, for reference and research only, not to be shared or published without their
+  permission. The terms and the handling rules are in `RESTRICTED.md`: nothing from the scans (image, crop,
+  transcription, quotation) enters this repository or any public place, and findings derived from them are
+  published only after the museum's written permission. The scans were not downloaded in this job.
+- Next step (suggestion, not run): a research-only job reads the scans off-repo for the crib/host-text question
+  the spec already names (the clear poems), under RESTRICTED.md, and records here only whether a usable crib
+  exists; a thank-you reply is in Gmail for the owner.

@@ -1363,3 +1363,41 @@ harvest hit) opens an untried cheap step.
 Requests: resources.huygens.knaw.nl 9 (1 fit_controls.py re-run needs no network; 4 PDF fetches -- 5214, 5210,
 5812, 5810 -- plus 3 record-page fetches -- 4502, 5808, 7205 -- plus 2 spares not used), all >=1.5s apart,
 descriptive User-Agent. No other hosts touched.
+
+## Marburg reply (MAIL-3, 28 Sept 2026)
+
+Hessisches Staatsarchiv Marburg answered the 26 Sept 2026 email (outreach/marburg-wvo5551-copy.md, ASKS row 48)
+on 28 Sept 2026 at 15:03 UTC (read by the owner-account orchestrator). Glawischnig's "4f Nld. 165" is
+**HStAM, 4 f Staaten N, Niederlande 165** (Arcinsys detailid v1611224), 54 leaves, which **begins 21 May 1574**
+and runs to 22 Nov 1574, with Latin "Copia" letters at the end; the archivist found no preceding file.
+**Ruled out for that file:** the 17 April 1574 letter (WVO 5551) is not in Niederlande 165.
+
+Confirmed in Arcinsys today (curl, detail page): Niederlande 165, "Korrespondenz mit dem Grafen Joh. v. Nassau.
+besonders über die Angelegenheiten der Niederlande, Austausch von Zeitungen", Laufzeit 1574, provenance
+"Landgraf Wilhelm IV., Paket 6", filed under Niederlande > 21.8 Krieg; Militär; representations: original and
+microfiche (no online image).
+
+**Browse of the two nodes she named** (Niederlande g144137, Nassau-Dillenburg g144068): both are classification
+nodes, so every one of their 36 subject sub-nodes (16 + 20; ids from `navigatorjson.action?id=<node>` with an
+`X-Requested-With: XMLHttpRequest` header, which the 25 Sept pass could not get to answer) was listed in full,
+1,752 items. The 60 whose Laufzeit covers 1574 are in `marburg/arcinsys_1574_items.tsv`. Arcinsys gives years
+only, never months, so no file can be shown to cover March-April 1574 from the catalogue alone. Candidates, in
+order of fit (none confirmed to hold the letter):
+
+1. **HStAM, 4 f Staaten N, Frankreich 340** (filed "(in)" Nassau-Dillenburg > 5.14 Politik; detailid v976669):
+   "Korrespondenz mit Johann v. Nassau-Dillenburg betr. französische u. niederländische Verhältnisse", 1574;
+   original and microfiche. The Landgrave's correspondence with Jan in 1574 outside Niederlande 165, so the
+   likeliest home for a January-May 1574 Jan letter or copy.
+2. **HStAM, 4 f Staaten N, Niederlande 134** (Niederlande > 21.9 Politik; detailid v984529), 1573-1574,
+   provenance "Landgraf Wilhelm IV., Paket 5", the old Paket immediately before Niederlande 165's Paket 6:
+   "Anerbieten des Königs v. Frankreich, dem Prinzen v. Oranien zu helfen ...". Not a Jan file by title, but by old
+   Paket order it is the file before 165 that the archivist did not name.
+3. Lesser: Frankreich 327 (correspondence with Ludwig of Nassau, 1574, detailid v5440928); Frankreich 333, 337,
+   337a, 339, 340 ("Schicksal des Grafen v. Nassau", Krieg, 1574, likely the aftermath of Mook, 14 April 1574).
+
+No file in either node names Jan van Nassau writing to Willem van Oranje. Status unchanged (`open`). Next step
+(suggestion, not run): a follow-up question to HStAM asking whether Frankreich 340 or Niederlande 134 holds
+letters or copies from Jan dated March-April 1574, and whether either is on microfiche that could be copied.
+
+Requests this pass: arcinsys.hessen.de about 140 (36 sub-node counts, 96 list pages, 4 navigator JSON, 4 detail
+pages, a few node pages), 1.6 s apart, one at a time, no challenge or error.
