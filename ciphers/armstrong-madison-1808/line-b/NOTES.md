@@ -462,3 +462,17 @@ forming a convention] on principles of reciprocal advantage 111 945 274 1116 135
 period interlinear glosses on 0494 are the office key's readings; the target never uses 972 and has no interlinear
 gloss. Page 0232 (1809) likewise (972, 1116, 1201 in short runs inside clear prose). No pool candidate; done.
 Requests: none (local PDF); 0 subagents; 2 minutes by the clock.
+
+## Step B17 (28 Sept 2026, 04:28-04:3x UTC) -- roll 13 (Nov 1804-Dec 1807) screened whole: every numeral despatch is THE=972 with period interlinear decodes; no earlier letter in the target's code
+
+Whole-reel PDF `M34-013.pdf` (91.2 MB, 395 pages, one request), 14 contact sheets at 26 dpi read by this session
+(`scratch/b17/r13_*.jpg`), then the top third of every dense-numeral page at 110 dpi. Positive control met: the 27 Dec
+1807 duplicate at page 390 stands out on its sheet (ARM-POOL2's known THE=972 item). Dense-numeral pages found: 12,
+16, 58, 97 (10 Sept 1805), 110, 121-122 (17 Feb 1806, "Duplicate"), 141, 150-151, 160 (1 June 1806), 189, 193-201
+(a long 1806 despatch, pages numbered 6-13 in the hand), 224-225, 232-233 (29 March 1807, "Duplicate Private"),
+378, 390-391. Every one read at 110 dpi carries the office group 972 many times per page and a period interlinear
+pencil decode ("All the points in controversy between his Catholic Majesty and the U. States were..."; "Mr Monroe has
+no doubt communicated to you..."), the roll-13 marginal decodes Bourdeau harvested for his THE=972 table. None shows
+the target's 0/1-heavy units or shorthand runs. **Result: search result with its control -- Armstrong's despatches
+Nov 1804-Dec 1807 on roll 13 are all in the office code; no earlier use of the private code survives in DUSMF.**
+Requests: catalog.archives.gov 1; 0 subagents.
