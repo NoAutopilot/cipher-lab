@@ -1,0 +1,101 @@
+line	position	sign	confidence	alt	note
+c2a_L01	1	_	H	-	box on drawing hatching only
+c2a_L01	8	O-TILDE	M	QQ-O	tilde two dots over o
+c2a_L01	16	O-SLASH	H	X-LOOP	loop crossed by long slash
+c2a_L01	31	DOT-LINE-O	H	NINE	dotted line descending to o
+c2a_L02	4	LOOP-TAIL	H	CIRC-O	oval loop with flat tail
+c2a_L02	12	DAGGER-O	M	CROSS-T	cross stem over small base
+c2a_L02	22	Y-CURL	M	NINE	small curl with trailing dot
+c2a_L02	28	_	H	-	empty strip edge black border
+c2a_L03	9	VENUS	H	LOOP-STEM	circle with short stem below
+c2a_L03	13	CC-DASH	H	II-DASH	cc over two horizontal bars
+c2a_L03	19	_	L	BAR-SOLID	faint smear tiny dot only
+c2a_L03	23	Y-CURL	H	NINE	curly y with dot right
+c2a_L04	2	_	H	BAR-THIN	faint vertical shading at edge
+c2a_L04	10	AMP	M	CC-O	three arcs bar over o
+c2a_L04	16	BLOB	M	CIRC-O	small dark ring light centre
+c2a_L04	23	PCT	H	PCT-SLASH	clear percent solid dots
+c2a_L05	3	_	H	-	margin hatching no sign
+c2a_L05	12	_	M	BAR-SOLID	tiny dot after C sign
+c2a_L05	16	_	M	BAR-SOLID	small dot after O-TILDE
+c2a_L05	20	LAMBDA	M	A-LOOP	inverted V heavy left foot
+c2a_L05	30	CHEVRON2	M	CHEVRON	faint double left chevron
+c2a_L06	1	_	H	-	drawing hatching left margin
+c2a_L06	11	O-TILDE	M	WAVE	two tildes over small o
+c2a_L06	21	CHEVRON2	M	MULTI	double chevron small o right
+c2a_L06	29	X-DOT	M	X	X with dots lower left
+c2a_L07	5	_	M	BAR-SOLID	single dot after nine sign
+c2a_L07	18	MULTI	M	X-SLASH	two x plus barred o
+c2a_L07	22	Y-CURL	H	NINE	curled y with small o
+c2a_L08	2	BAR-THIN	M	DASH-V	solid vertical bar line start
+c2a_L08	6	PCT	M	PCT-SLASH	faint percent small x right
+c2a_L08	12	MULTI	M	II-O	x tick over bar o
+c2a_L08	21	OX-TILDE	M	MULTI	tilde hook over o x
+c2a_L09	5	X-O	L	EIGHT	X arms over small loop
+c2a_L09	15	_	M	DASH-V	tiny marks under letters row
+c2a_L09	22	B-SCRIPT	H	-	script b with slash
+c2a_L09	27	BOX-X	M	PICT-HOUSE	boxed scribble with X tail
+c2a_L09	34	Y-CURL	H	-	curly y with dot
+c2a_L09	38	PCT	L	_	lower o of percent fragment
+c2a_L10	2	VENUS	L	O-DOT-STEM	circle on stem dash above
+c2a_L10	8	X-DOT	M	X	X with dot above
+c2a_L10	13	CC-DASH	H	-	cc over double bar
+c2a_L10	20	PICT-BARREL	H	-	barrel with dot pictogram
+c2a_L10	27	V-DOT	H	-	dot V small o below
+c2a_L11	5	O-SLASH	M	LOOP-TAIL	alpha loop diagonal strike
+c2a_L11	10	OX-TILDE	M	ARC-LOOPS	arch hump over x o
+c2a_L11	15	O-SLASH	H	PHI	circle with diagonal slash through
+c2a_L11	21	DBL-SLASH	M	SLASH	two parallel backslash strokes
+c2a_L11	29	CC-O	H	CC-DASH	cc over bar over o
+c2a_L12	2	LOOP-STEM	M	NINE	loop with straight stem down
+c2a_L12	9	BAR-SOLID	M	_	small dark tick stroke
+c2a_L12	19	EIGHT	H	NOTE	two stacked loops figure eight
+c2a_L12	25	QUESTION	H	HOOK-L	question mark with dot below
+c2a_L12	32	X-CURL	M	X-DASH	wavy line over small x
+c2a_L13	3	ARCH-O	M	ARCH-DASH	arch over small circle below
+c2a_L13	10	CHEVRON2	M	DBL-SLASH	three stacked left-pointing chevrons
+c2a_L13	24	_	M	BLOB	faint smudge no sign
+c2a_L13	31	_	M	BLOB	single small dot only
+c2a_L13	39	_	M	BLOB	blank margin faint smudge
+c2a_L14	8	X-CURL	M	X-O	curl over x with o dot
+c2a_L14	24	PCT-SLASH	H	PCT	slash with dots percent-like
+c2a_L15	3	NOTE	H	LOOP-STEM	bottom loop vertical stem up
+c2a_L15	7	BAR-SOLID	L	_	dark tick in house dot-row
+c2a_L15	11	MULTI	M	LOOP-TAIL	filled Q blob plus II-dashes
+c2a_L15	22	_	H	BAR-SOLID	lone small dot after star
+c2a_L15	28	SIX-CURL	M	NOTE	bottom loop slanted rising tail
+c2a_L16	1	O-TILDE	H	OX-TILDE	wavy tilde over small circle
+c2a_L16	7	BLOB	M	LOOP-TAIL	small dark filled a-shape
+c2a_L16	17	X-DOT	M	X	thin X with dot above
+c2a_L16	24	Y-CURL	H	NINE	curled y with dot right
+c2a_L16	29	X-O	L	V-DOT	y-cross dot above ring below
+c2a_L17	6	MULTI	M	PICT-ANCHOR	anchor plus C-loops in box
+c2a_L17	14	CHEVRON2	H	CHEVRON	three nested left chevrons
+c2a_L17	20	OX	M	OX-TILDE	small o then X, tilde outside box
+c2a_L17	25	OX-TILDE	M	OX	tilde small o over Xo
+c2a_L17	31	_	H	-	empty right margin no ink
+c2b_L01	5	X-DOT	M	X	X with dot directly below
+c2b_L01	11	_	H	-	blank blur between text lines
+c2b_L01	22	V-DOT	M	VEE	V with small circle above
+c2b_L01	28	X-BAR-CC	H	CC-DASH	CC over bar over X
+c2b_L01	37	_	H	-	empty strip at right edge
+c2b_L02	10	O-DOT-STEM	M	LOOP-STEM	oval loop atop long stem
+c2b_L02	17	EIGHT	H	TAURUS	small circle over open cup
+c2b_L02	23	BAR-SOLID	M	_	small solid dark dot blob
+c2b_L03	3	O-SLASH	M	X-LOOP	oval loop with diagonal cross
+c2b_L03	15	X-DASH	M	X-BAR	single bar above an X
+c2b_L03	22	II-DASH	M	II-SLASH	two ticks bar two ticks
+c2b_L03	30	DBL-SLASH	M	CHEVRON2	two slashes over two backslashes
+c2b_L04	10	V-DOT	M	VEE	V with small circle above
+c2b_L04	15	X-BAR	M	X-DOT	X with dot tick above
+c2b_L04	27	EIGHT	M	S-CURL	C curve circle top blob bottom
+c2b_L05	11	XX-TILDE	M	WAVE	box holds tilde, xx beneath
+c2b_L05	19	X-DOT	M	X	upright X small dot above
+c2b_L06	5	II-DASH	M	O-II	two ticks, bar above them
+c2b_L06	21	CROSS-T	L	X	small blobby plus after pct
+c2b_L06	30	A-LETTER	L	MULTI	cursive A, bar through, dot
+c2b_L07	6	CHEVRON2	H	CHEVRON	double chevron with trailing dash
+c2b_L07	15	V-PCT-BLOB	H	MULTI	dotted V, pct, ink blob
+c2b_L07	23	XX-TILDE	M	MULTI	two X, dots above each
+c2b_L08	9	PCT-SLASH	H	PCT	slash between two dark blobs
+c2b_L09	5	_	H	-	shading inside drawing, no sign
