@@ -1,0 +1,4 @@
+known_h51_s104: target SET-21 scored 6.0; rank 1 of 21 (ties against the target)
+all scores: SET-21:6.0 SET-04:2.0 SET-09:1.5 SET-11:1.5 SET-18:1.5 SET-01:1.0 SET-05:1.0 SET-06:1.0 SET-07:1.0 SET-10:1.0 SET-12:1.0 SET-16:1.0 SET-02:0.5 SET-03:0.5 SET-08:0.5 SET-13:0.5 SET-14:0.5 SET-15:0.5 SET-17:0.5 SET-19:0.5 SET-20:0.5
+target reading as given by the judge: auecetd | estpacaol | tropauancers | imloust | enuoenuprere | melentendoit
+GATE H85 (known_h51_s104): rank 1 of 21 -> PASS
