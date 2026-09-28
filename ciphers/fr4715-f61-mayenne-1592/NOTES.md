@@ -2213,3 +2213,12 @@ the known lines, H90) replaced by "icelluy", "soubz", "advis", otherwise verbati
 choices lose a little accuracy without it (0.915 -> 0.861 on the known lines). Not a reading; grade M throughout; no
 class change. For the verifier (H88) the f.108v evidence is now four judge calls at rank 1 of 21 (margins 6.0, 0.5,
 1.5, 5.5) plus the 4-gram check H93.
+
+## Campaign step H95 (28 Sept 2026, 15:53 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs) -- dropped, no call
+
+fr.3983 f.211r (Mayenne to de Diou, camp of Han, 1 April 1593; the aid: "chiffre et déchiffrement"), looked at on the
+1600-px reference (`family/images/3983_f211r_ref1600.jpg`): the leaf is clear text but for one short cipher run of about
+15 signs on line 2, with small clear words written above it. It is not a third text for the judge (H85 needed hundreds
+of pair positions). What it is: a small period known answer in Mayenne's secretary's hand, used in no fit -- a held-out
+check of the f.61 cells once a person reads its gloss (the model gloss readers fail on this hand, H34/H35/H57). That is
+H96 (a desk pack). No cost.
