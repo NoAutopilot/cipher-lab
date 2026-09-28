@@ -1,0 +1,8 @@
+crops 12/13 same line, reader A vs itself: glyphs 15/15, positional 1.00, sequence ratio 1.00
+crops 12/13 same line, reader B vs itself: glyphs 15/9, positional 0.33, sequence ratio 0.75
+crop 12, reader A vs reader B: glyphs 15/15, positional 0.47, sequence ratio 0.60
+crop 13, reader A vs reader B: glyphs 15/9, positional 0.33, sequence ratio 0.58
+crops 15/16 same line, reader A vs itself: glyphs 12/12, positional 0.08, sequence ratio 0.17
+crops 15/16 same line, reader B vs itself: glyphs 12/10, positional 0.20, sequence ratio 0.45
+crop 15, reader A vs reader B: glyphs 12/12, positional 0.42, sequence ratio 0.42
+crop 16, reader A vs reader B: glyphs 12/10, positional 0.00, sequence ratio 0.18

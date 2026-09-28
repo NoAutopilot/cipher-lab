@@ -3311,3 +3311,29 @@ on 90 carries the weight). Consequences: H56 (a pattern-only name test) is dropp
 the two exposures of frames 31/32 as better material) is the only glyph step left, to be judged against this curve at
 the best-kappa size (about 10-20 classes). No reading, no class change; nothing called new or first. Vision 0,
 requests 0. Cost: about 0.3 USD (`--spend` records 0.5).
+
+## Campaign step H55 (28 Sept 2026, to 15:12 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H55: fusing the two exposures of the page-2/3 spread (frames 0031, 0032) gives readers better material (B35's named
+next step). Answered offline; the two vision calls were not spent.
+
+**Registration** (`h55/fuse.py`, log `h55/fuse_log.tsv`; fused images in scratch, not committed): each of the 19
+page-2/3 shorthand crops located in both frames by normalized cross-correlation (0.77-1.00) and registered by an ECC
+affine fit (0.93-0.98). The check images show the two exposures essentially identical and already crisp: the readers'
+disagreement is not microfilm noise, so averaging them cannot help much.
+
+**Found on the way (for line B, whose files were not edited):** B35's crops 12/13 (images/shorthand/page2_L02 and
+page2_L03) are the same physical line, one cut from frame 0032 and one from 0031 (both at y about 411/422, NCC 1.000
+and 0.999 in their own frames), and so are crops 15/16 (page2_L06 / page2_L07, y about 955/953). B35 took them for
+"two adjacent, similar lines"; ARM-TR2's page-2 off-by-one crop naming is the likely cause. So page 2 has two lines
+read twice and (probably) two lines not cut at all.
+
+**The duplicates are a free within-reader test** (`h55/self_consistency.py`, output `h55/self_consistency_output.txt`):
+on crops 15/16 (the same line, near-identical image) reader A agrees with itself at 0.08 positionally (sequence ratio
+0.17) and reader B at 0.20 (0.45) -- no better than the two readers agree with each other (0.00-0.42). Crops 12/13
+give reader A 1.00 but are not independent (B35's readers flagged them as identical). Two lines only, but the same
+verdict as H54: **the model reader with Tomokiyo's sheet is the limit, not the image.** By rule 3's unchanged-approach
+clause, glyph type-reading by model readers is retired for this target as untested-by-this-tool (not refuted); the
+next attempt needs a different instrument (H57, added) or a person. No reading, no class change; nothing called new
+or first. Vision 0 (the step's two calls not spent), requests 0. Cost: about 0.5 USD (`--spend` records 0.5).
