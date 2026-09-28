@@ -1552,3 +1552,26 @@ all-numeric two-digit homophonic alphabet of `key.tsv`; the only records whose s
 958-965's own numeric alphabets have never been read at full size (account-gated, ASKS row 1). A search result
 over 99% of the listing, searched by language and date on 28 Sept 2026 -- not a novelty or key verdict (rule 10).
 No reading change, no grade change. DECODE requests this session: 67 + 77 = 144, all 1.6 s apart.
+
+## Campaign step H21 (2026-09-28 02:40-02:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Design-matched control for H1: real Cartas windows (N=521, out of the es17 model's
+sample) enciphered the way `key.tsv` is built -- three homophones per vowel (occurrences drawn uniformly), one code
+per consonant, eight rare extra codes used once or twice (K 39-40) -- annealed with Y8's settings
+(`cheap_test_1/h21/vowel_control.py`, TSVs with `.plain` sidecars, JSON outputs). A stricter version that also
+imposed the target's exact 38-count profile under the vowel/consonant assignment found **no window in 20,000
+tries**: the profile is not realisable on real text with that assignment, because the target's five largest counts
+(57, 42, 41, 39, 38 = codes 18, 32, 5, 10, 6) are one vowel homophone and consonants -- the scribe used the vowel
+homophones very unevenly (e: 57 / 27 / 11; a: 39 / 17 / 9), not one in three. Disk only, no subagents.
+
+| model | design-matched control, 5 / 3 seeds | letters read | target |
+|---|---|---|---|
+| es17 | -1121.2, -1135.7, -1292.5 (stuck, 47%), -1087.9, -1118.5; mean -1151.1 | 94-98% | -1154.3 |
+| es17c7 | -1100.7, -1090.0, -1177.1; mean -1122.6 | 98% | -1138.5 |
+
+**Verdict: the same as H1 with the design matched rather than the profile** -- the target sits inside the band of
+real Spanish under its own design, at the lower part, exactly where a mostly-right decode with a few misread or
+nomenclature tokens would sit. Nothing here moves any grade; it closes the control question H1 opened. With H1,
+H3, H14 and H21 the reading has four controls of different kinds behind it and one instrument (the n-gram
+judge) that cannot decide at this length. The uneven homophone use is a scribal-habit observation worth carrying to
+KEY-DESIGN's notes and to any comparison with the Brussels SEE register when it arrives (ASKS 82).
