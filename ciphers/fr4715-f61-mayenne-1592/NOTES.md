@@ -2108,3 +2108,12 @@ five interlinear spans on `BnFfr4715f61.png` (see "What Tomokiyo already reads")
 | 8 | `site:ciphermysteries.com Mayenne OR "Catholic League" polyphonic cipher` | nothing on f.61. The Bourdeau snippet on Lebel -> Charles Emmanuel of Savoy 1593 read "with Tomokiyo's key" is the Savoy unit already on file (INTAKE-SAVOY, line 78). |
 
 No flag raised. Only Tomokiyo's own spans are public. Not a novelty statement (rule 10); AUDIT.md untouched.
+
+## Campaign step H87 (28 Sept 2026, 15:27-15:28 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+Why f.274 gave no tiles in H65-H80: its align lines equal its reconciled draft in length on every line (L01-L06: 26,
+25, 28, 31, 29, 28) but not in content, because the align was built after a relabel of some HASH4 signs as H24 (e.g.
+L02 pos 4, L04 pos 2, L05 pos 3), while `scripts/f61sbs.tokens` required exact equality. New opt-in flag `--len-match`
+(off by default; H65 rebuilt byte-identical, every earlier result `--check` unaffected) accepts an equal-length line,
+still requiring pass A to agree on the class at each position. With it, f.274 gives PHI e 24 / r 11 / o 7, 4TRI c 7 / p
+3, VBAR_A s 11 / t 7 -- a third glossed hand for the SBS o test and a second hand for H70's thin s/t split (H89).

@@ -25,7 +25,7 @@ import csv, difflib, itertools, json, math, os, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); TGT = os.path.dirname(HERE); FAM = f"{TGT}/family"
 LEAVES = [("f101r", "3982_f101r.jpg"), ("f274", "3984_f274r.jpg"), ("f188r", "3984_f188r.jpg")]
-LETS = ("o", "e"); CLS = "PHI"; STRAT = False; MINN = 30; RX, RY = 30, (-15, 45)   # re-centring window (H65-H69); H70 narrows it (--rc)
+LETS = ("o", "e"); CLS = "PHI"; STRAT = False; MINN = 30; LENMATCH = False; RX, RY = 30, (-15, 45)   # re-centring window (H65-H69); H70 narrows it (--rc)
 def rows(p): return list(csv.DictReader(open(p), delimiter="\t"))
 def tokens(leaf):
     al = rows(f"{FAM}/passes/{leaf}_align.tsv"); dr = rows(f"{FAM}/passes/rec{leaf}/ciphertext_draft.tsv")
@@ -37,7 +37,7 @@ def tokens(leaf):
     out = []
     for L, ar in al_l.items():
         d = dl.get(L, []); a = Al.get(L, [])
-        if [r["raw"].lstrip("@") for r in ar] != [r["sign"] for r in d]: continue   # align must be the draft
+        if [r["raw"].lstrip("@") for r in ar] != [r["sign"] for r in d] and not (LENMATCH and len(ar) == len(d)): continue   # align must be the draft (H87: --len-match accepts a later relabel of equal length, e.g. f.274's HASH4->H24)
         sm = difflib.SequenceMatcher(None, [r["sign"] for r in d], [r["sign"] for r in a], autojunk=False)
         for blk in sm.get_matching_blocks():
             for k in range(blk.size):
@@ -220,6 +220,7 @@ if __name__ == "__main__":
     if sys.argv[1] == "build-pair":   # build-pair NATIVE CLASS a,n c,p SEED TAG
         build_pair(sys.argv[2], sys.argv[3], sys.argv[4].split(","), sys.argv[5].split(","), int(sys.argv[6]), sys.argv[7], int(sys.argv[8]) if len(sys.argv) > 8 else 10); sys.exit(0)
     if "--strat" in sys.argv: sys.argv.remove("--strat"); STRAT = True
+    if "--len-match" in sys.argv: sys.argv.remove("--len-match"); LENMATCH = True   # H87+, off by default
     if "--min" in sys.argv: MINN = int(sys.argv.pop(sys.argv.index("--min") + 1)); sys.argv.remove("--min")   # H79+: a pre-registered smaller minimum
     if sys.argv[1] == "score-pair":   # score-pair TAG read_call.tsv [--check] [--strat]
         score_pair(sys.argv[2], sys.argv[3]); sys.exit(0)
