@@ -1,0 +1,3 @@
+model	N	K	target_score	controls_correct	n_shuffles	shuffle_mean	shuffle_sd	shuffle_p95	shuffle_max	shuffles_at_or_above_target	verdict
+null20	218	35	CONTROL BELOW GATE	88/218;216/218;218/218							target not run (rule 3)
+null20_22	206	34	-263.972794	204/206;204/206;204/206	200	-261.883	3.870	-255.327	-252.054	134/200	FAIL (target percentile 33.0)

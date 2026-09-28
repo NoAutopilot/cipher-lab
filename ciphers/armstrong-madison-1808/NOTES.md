@@ -2796,3 +2796,57 @@ Cost: get_session carries no cost figure; two Sonnet calls of 201k and 325k toke
 after this step per the campaign brief.
 
 **Correction (05:05 UTC):** the budget line above was written against a 120 USD daily budget; the orchestrator raised it to 240 during this step (CAMPAIGN.md header, spent 144.38/240 after this step), so the runner continues rather than stopping.
+
+## Campaign step H15 (28 Sept 2026, 05:05-05:16 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H15 (from
+H3): reconcile the two mark transcriptions -- `ciphertext_ms.txt` ('*' per mark, 35 runs, 218 marks, ARM-TR/TR2 with
+the H5/H17 corrections) and `codex-2026-09-27b/glyphs.tsv` (Tomokiyo-labelled shape tokens, 25 passages with '|'
+sub-runs, 257 tokens) -- into one graded mark sequence, then re-run `adj/pairs_test.py` test B and the H2 glyph-null
+shuffle on it, since the H2 and H3 caveats rest on the one-reader transcriptions. Line B's B28 (account 3, 04:47 UTC)
+had just shown that the codex inventory is Tomokiyo's own labelling re-tokenised and that ARM-S1's independent inventory
+differs on one point (Tomokiyo's three wave types 20/22/23 are one compound filler class there); this step does not
+redo B28, it takes that finding as the one defined alternative segmentation.
+
+**Alignment (`h15/align.py` -> `h15/runs.tsv`).** Each codex passage keyed to the ms runs it spans by its numeric
+context (spans fixed by hand after the automatic walk stopped one run short at every line break); 34 of the 35 ms
+runs matched (the lone '*' before "5" on page 4 has no codex passage; the p1d "passage" is the tick after 38, a mark on
+a numeral, not a run). Over the matched runs the ms counts 217 marks and the codex 257 tokens; 11 of 25 passages agree
+exactly (all short runs: 1-9 marks), the 40 extra codex tokens sit in the six longest runs (p1e 22 vs 32, p3d 12 vs
+20, p2a 20 vs 25, p1f 35 vs 39, p2b 5 vs 8, p3c 6 vs 8) and one passage runs the other way (p2c 6 vs 5).
+
+**What the image says at the two largest gaps (this runner's two looks, M).** `page1_L09_seq61-79_17marks.jpg` (ms line
+7, 15 marks; codex sub-run 17) shows about 21 separable signs plus 4 dots; `page3_L05_seq417-426_7marks.jpg` (ms line
+36, 7 marks; part of p3d) about 13-14 signs. So the two sources count different units: on long runs the ms '*' is a pen
+cluster (a joined group of two or three signs written without lifting), the codex/Tomokiyo token a single sign, and
+the codex count is the nearer to what the eye separates. The disagreement is a unit convention, not a reading error,
+so the "graded sequence" is the codex token sequence with grade H on the 11 passages where the cluster count equals
+the sign count and M on the rest (`h15/glyphs_reconciled.tsv`); a position-by-position reconciliation of the long runs
+would need fresh line crops (the `images/shorthand` crops are cut to the pre-H5/H17 ms) and a second sign-level reader,
+neither in this step's box.
+
+**Wave-merged variant (`h15/glyphs_wavemerged.tsv`, `.txt`).** ARM-S1's reading applied mechanically: consecutive
+tokens of Tomokiyo's wave types 20/22/23 collapsed to one -- it removes only 5 of 257 tokens (252 left), so it does
+not explain the 40-token gap either; it is the one alternative segmentation on file, and the two tests were re-run on it.
+
+| test | original (H2 / H3 on the codex tokens) | wave-merged variant |
+|---|---|---|
+| pairs_test B, odd-vs-even shape JSD vs the within-fragment shuffle null | 0.160, percentile 94.8 (32 vs 26 distinct shapes) | 0.135, percentile 74.8 (32 vs 27); pair controls unchanged (`h15/pairs_test_wavemerged.tsv`) |
+| H2 glyph-null shuffle, glyph-20-null model (150 restarts x 50,000, seed 731, 200 shuffles) | PASS at seed 731, inside the band over 11 seeds | CONTROL BELOW GATE: control 0 read 88/218 (controls 1-2 216/218, 218/218) -- one of three matched controls not solved at this K, target not run (rule 3; `h15/h2_results_wavemerged.tsv`) |
+| H2, glyphs 20+22 null model | FAIL, percentile 49 (102/200) | FAIL, percentile 33 (134/200 at or above the target; controls 204/206 x3) |
+
+**Verdict for the campaign.** Done; no reading, no class change. The marginal test-B signal of H3 (percentile 94.8)
+does not survive the only alternative segmentation on file (74.8), and the H2 glyph-null picture is unchanged (no
+model separates the target from its own shuffles; one control failure shows the solver's own restart luck at this K).
+What H15 establishes is that the two transcriptions are not two readings of the same units: any future sign-level
+work (line B's B32 solver, a per-position reconciliation) should start from Tomokiyo's/the codex token stream with the
+ms run counts as cluster boundaries, not treat the ms '*' count as a sign count. Suggested follow-up, not filed as a
+row (line B holds the glyph work): fresh line crops on the current ms lines for the six long runs and a second
+sign-level reader, then `tools/reconcile_passes.py` on the two sign-level passes.
+
+Files: `h15/align.py`, `h15/runs.tsv`, `h15/glyphs_reconciled.tsv`, `h15/glyphs_wavemerged.tsv`,
+`h15/glyphs_wavemerged.txt`, `h15/pairs_test_wavemerged.tsv`, `h15/h2_results_wavemerged.tsv`,
+`h15/h2_shuffle_scores_wavemerged.tsv`; `adj/pairs_test.py` and `glyphnull/h2_shuffles.py` gained environment
+overrides for the glyph table and output paths (defaults unchanged). No network; no subagent (0 of 4 vision calls);
+this runner's two crop looks. Cost: the row's estimate (3 USD) is what `--spend` records (script work plus the H2
+C++ re-run, about 5 minutes on 4 cores).
