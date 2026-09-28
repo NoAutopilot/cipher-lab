@@ -3084,3 +3084,24 @@ evidence against i/x; H157's f.108v result (20 signs, 30/30 for i/x) stands for 
 ## Campaign step H159 (20:18 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
 
 `scripts/H66_PAGE.md` gains a section "H153-H161". No new claim.
+
+## F61-FAMILY-8: BnF fr.2751 f.116 (de Diou to Mayenne, "escripte en chiffre"), 28 Sept 2026, 20:16-20:40 UTC (owner account, parent worker)
+
+Brief: .claude/briefs/runs/2026-09-28-parent-f61-family-8.md (steps 2-4 of F61-FAMILY-7). Images: 7 page images at 1200 px (canvases f241-f247 = f.116r-f.119r), committed in family/fr2751/; 3 native fetches (f241-f243) kept in the scratchpad only (30 MB rule; regen `python3 family/fetch_gallica.py btv1b52523734p 24N full OUT`). 10 Gallica requests, all HTTP 200, 2 s apart, in family/requests.log. Two native crops of the residual marks: family/fr2751/f242_marks_row20.jpg, f243_marks_rows1-2.jpg. No vision subagent calls; own looks only.
+
+**Result: a clean negative for the key hunt.** The item (f.116r-f.119r) is a later fair copy (17th-century italic book hand, a volume of copies) in **clear text only**. Its heading reads "Lettre du sieur de Diou a Monsieur le Duc de Maienne, lieutenant general de la couronne et Estat de France, escripte en chiffre, lequel signifie tout ce qui s'ensuit". So the finding aid's "Déchiffrement de cette lettre" is this copy itself. There is no cipher text on any of the seven pages: no polyphonic signs, no loops on stems, no 4-shapes, no barred triangles. The copy ends on f.119r: "Vostre treshumble et tresobeissant serviteur de Diou", "De Rome le 5 d'avril 1592", "Scellee d'un cachet", followed by a postscript naming letters from Cardinal Sfondrato.
+- Same cipher as f.61? **Not testable from this item.** The original cipher letter is not here, and no sign of key v4's classes appears.
+- Where is the decipherment? The whole item is the decipherment, as a copy. There is nothing to align it against.
+- Signs aligned 0; agreement with v4 n/a (0/0); rare classes (CA, CROSS, LL, LOOPBAR, ZHOOK, C6) glossed: none; v4 two-way cells decided: 0. No key_period_fr2751_v1.tsv was built, because there is no cipher and gloss pair.
+
+**What the copy does carry (recorded, not interpreted beyond grade I).** About 20 isolated marks are set between dashes inside the clear text, where the copyist evidently reproduced nomenclator name marks from the original. Examples: "Ambassade -- ‡ -- d'Espagne ≡" (f.117r row 2; again f.118r), "Cardinal Caietan -- & --" / "-- s --" (f.117r rows 1-2), "ce secours de mil -- :. -- six mille -- c -- &" (f.116v), "la Religion -- R/ --" (f.117r, f.118r), "le Pape -- G. --" and "du feu Pape -- G. Sixte" (f.118v), "-- A --", "-- π --" (twice, "Cardinal -- π --"), "-- ⊖ --", "-- o --", "-- 8 --". These are code marks for names and titles, not the letter-level polyphonic signs of f.61, and nothing in the copy glosses them independently.
+
+**Date (grade I, inferred).** The copy dates the letter 5 April 1592. The content fits spring 1591 better:
+- The pope is convalescent and his nephew is "le Cardinal" (Sfondrato).
+- "le feu Pape Sixte" is dead.
+- The "monitoires" and "le comte Sfondrato" with Italian and Swiss levies point to Gregory XIV's expedition.
+- Someone "y entra le deuxiesme de Mars" at Marseille and then embarked "avec Monsieur le President Jeannin ... pour passer en Espagne".
+
+Those details are consistent with Gregory XIV (Dec 1590-Oct 1591) and Savoy at Marseille in March 1591. This is unverified; the copy's own year stands as written.
+
+**Named next step (one line, not run):** find the ciphered original of de Diou's Rome letter of 5 April [1591/1592] among the Mayenne papers (fr.3977-3984 or the fr.4715-type recueils). If it is in the polyphonic cipher, this copy is a full-length period clear text for it: a known-plaintext alignment of the fr.101r kind over roughly 150 copy lines, with the name marks as a bonus.
