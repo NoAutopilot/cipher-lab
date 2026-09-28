@@ -2661,3 +2661,89 @@ unchecked.
 - next-step; the checkpoint's own next bounded action is to retrieve the contents or receipt docket of MHS OAC131321 (Thomas Barlow to JQA, 20 April 1813, reel415) via a public image or printed witness, checking whether it names the February dispatch and lack of key and whether its receipt is dated 14 June, else checking OAC131252 or OAC131335 -- unchecked.
 
 No check-solved candidate (no printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key is named).
+
+## Campaign step H34 (28 Sept 2026, 03:12-03:4x UTC) -- Armstrong's own papers and the Livingston papers, catalogue-first (ARM-OWN, account 3)
+
+Search result, not a negative. Line B's step B3 (02:52 UTC, `line-b/NOTES.md`) is the prior pass and is not repeated here
+(Skeen's Rokeby citations, NYPL MssCol 6743, the NYHS Livingston papers' missing public aid, MdHS Warden). What this step
+adds, per collection:
+
+**1. Library of Congress, John Armstrong papers, 1784-1834 (`mm78000058`, Miscellaneous Manuscripts, digitised, 15 images
+under `mssmmc.00129567533`).** All 15 pages fetched at pct:25 (`h34/loc_armstrong/`) and read by this worker: (1) Wyoming,
+24 Aug 1784, to John Dickinson (militia, the Pennsylvania claimants), pp.1-2; (2) War Department, 17 Aug 1814, to Gen. E. P.
+Gaines, pp.3-4; (3) pay warrant for William H. Paulding, 24th Infantry, 7 June 1814, signed as Secretary of War, pp.5-6;
+(4) Red Hook, 1 Dec 1824, to Ambrose Spencer, Albany (New York politics, the U.S. election), pp.7-11 with address leaf;
+(5) Red Hook, 30 March 1834, to Major Henry Lee at Mouy (Oise), postmarked 28 Mars 1834, pp.12-15. **Nothing from 1804-1810;
+no cipher.** The House history page's "1814-1834, 5 items" matches (the 1784 letter is the sixth).
+
+**2. Where the rest of Armstrong's papers are (House of Representatives History, Art & Archives, "Research Collections",
+read through the WebFetch route; the bioguideretro page itself 403s).** New-York Historical Society: **200 letters
+(1777-1843); microfilm of privately owned letters (1798-1833); a letterbook (1804); an unpublished biography; photostats of
+about 1,000 items in other collections.** Massachusetts Historical Society: about 90 items, 1778-1827. Pierpont Morgan
+Library: 17 items, 1785-1841. Historical Society of Pennsylvania: several collections (the letters to Callender Irvine
+1803-1843 are mostly 1813-14 War Department, per the HSP guide snippet). New York State Library: 15 items 1811-1836.
+Franklin D. Roosevelt Library: the Aldrich family papers (below). Library of Congress: the 5 items above plus the Henry
+Mason Morfit papers. Indiana Historical Society's "John Armstrong papers 1772-1950" are a different man (1755-1816, the
+frontiersman) -- dropped. **The 1804 letterbook is the only retained-copy series named anywhere, and it is dated 1804; no
+source names a letterbook or retained drafts for 1807-1808.** Whether the NYHS "microfilm of privately owned letters
+1798-1833" is the Rokeby roll (item 3) is inferred (I), not read.
+
+**3. Rokeby: FDR Library, Hudson River Valley and Dutchess County manuscript collection, Appendix I (PDF pp.17-18, read
+with pymupdf; line B could not parse it).** "Aldrich Family Papers, 1770-1895 (one roll). The collection consists of circa
+200 items, most of which deal with the career of John Armstrong (1758-1843) ... Correspondents include George Washington,
+Thomas Jefferson, Alexander Hamilton, James Madison, James Monroe, Lafayette, Kosciuszko, Talleyrand, Robert R. Livingston
+... Over half of the material deals with Armstrong's French ministry ... The papers are unarranged. Access to the papers
+is restricted; the permission of one of the collection's owners is required prior to its use. Citations ... 'From the
+Rokeby Collection, Barrytown, Dutchess County, New York, courtesy of Richard Aldrich and others.' The Library microfilmed
+the papers in 1966 for the National Historical Publications Commission; it received a positive copy of the microfilm from
+the Commission in 1972." This verifies the ChatGPT 22:44 checkpoint's sentence that B3 left unverified. Not digitised; a
+person's step (ASKS row 85).
+
+**4. Founders Online, read directly (the CloudFront 202 challenge passes for headless Chromium once the container's proxy
+CA is in Chromium's NSS store -- `certutil -N -d sql:$HOME/.pki/nssdb -f <empty-password file>` then `-A`; the
+`--empty-password` form hangs on a password prompt in this container).** (a) Source note of 99-01-02-2728 (20 Feb 1808)
+and of 99-01-02-2703 (15 Feb): "DNA: RG 59--DD--Diplomatic Despatches, France", nothing else -- the early-access documents
+carry no letterbook, draft, duplicate or decipherment note. (b) The live 20 Feb text has 369 numeral groups and 29 "symbol"
+markers and agrees with `ciphertext.txt` group for group (difflib on the integer sequence: no substitution; the three extra
+integers are the date and the record group). (c) Calendar, Author = "Armstrong, John, Jr." (the early-access facet; plain
+"Armstrong, John" returns nothing for 1808), 1 Jan-30 Jun 1808: 28 documents (26 to Madison, 2 to Jefferson), listed in
+`h34/founders_list_1808b.html`; the only coded ones are 20 Feb (the target) and **5 March 1808 with a 9 March postscript
+(`h34/founders_1808-03-05_groups.tsv`, 354 groups; `_03-09_`, 58) -- not in the repo before this step** (the known 15 March
+duplicate is roll 14 f.0045). Screened with `corr/screen.py` (the H26/ARM3-LIVCODE statistics, target and THE=972 usage
+beside it): 5 March units-digit 0/1 share on values >= 100 **0.19** vs target 0.59 (target-at-n p05 0.575), above 1700
+0.003 vs 0.092, under 100 0.02 vs 0.36, top-20 overlap 0/354; its top values are 972 x15, 1165 x12, 1116 x11, 962 x9 --
+the office code's own. **MISS: a THE=972 despatch, not a second letter in the target's code** (grade S screen, n=354).
+It is a fifth Armstrong THE=972 letter for Bourdeau's table, not for this target; noted in `corr/leads.tsv`.
+
+**5. Livingston side.** The NYHS Robert R. Livingston papers have a printed reel guide: **Jack T. Ericson and Donald L.
+Haggerty (eds), *The Robert R. Livingston Papers, 1658-1888: A Guide to the Microfilm Edition* (Sanford, N.C.: Microfilming
+Corporation of America, 1980), 53 pp., OCLC 7776177, LCCN 81137544** (Open Library work OL6123259W; Google Books
+NO_PAGES; HathiTrust bib API: no volume). Not online anywhere reached; it is the document a person needs to find the
+Armstrong-to-Livingston letters of 1806-1809 by reel (ASKS row 86). Reel count unresolved from the cloud: the ArchiveGrid
+record snippet says 18 reels 1658-1888, line B recorded 57 (NJHS MG 1194 page); the guide settles it. Museum of the City of
+New York, Livingston family papers 1719-1929 (aid PDF, 11 pp., read): no Armstrong, one Robert R. Livingston folder dated
+Aug 1807 -- not a pool. Columbia (Livingston family papers 1787-1915, James Duane Livingston, estate) and Yale (Livingston
+Family Papers, MS 808 -- host 202/403) not read. LOC `q="Livingston, Robert R."` manuscripts: only the Madison Papers items
+already screened by ARM-LIV/ARM3-LIVCODE; no LOC-held Livingston collection surfaces by that search (the NYHS microfilm copy
+in the Manuscript Reading Room is not item-catalogued on loc.gov).
+
+**6. Not reachable from the cloud (one attempt each, no retry loops; WebFetch tried where noted):** archives.nypl.org
+(403 curl and WebFetch), researchworks.oclc.org ArchiveGrid (403 both), hsp.org and discover.hsp.org (403 both),
+corsair.themorgan.org (403), archives.yale.edu (202 curl, 403 WebFetch), masshist.org collection-guide search (500 both;
+the browse list answers 200 and has no Armstrong-titled guide, so the ~90 items sit inside other collections),
+bioguideretro.congress.gov (403), bobcat.library.nyu.edu REST guess (404), web.archive.org (000), catalog.loc.gov (JS shell),
+lccn.loc.gov marcxml (404). These catalogue reads go to the owner's desk as LOCAL-QUEUE L27.
+
+**Result.** No retained copy of the 20 Feb 1808 letter and no letterbook or drafts for 1807-1808 are catalogued online
+anywhere reached; the two places a retained copy could still sit are the NYHS Armstrong papers (200 letters plus the
+microfilm of privately owned letters 1798-1833) and the Rokeby/Aldrich roll (over half French-ministry), both needing a
+person (ASKS 84, 85); the Livingston side needs the 1980 reel guide (ASKS 86). One digitised coded page found and screened
+(5 March 1808): MISS. Candidate plaintext: none.
+
+Requests (container, all >= 1.6 s apart, browser User-Agent, logged in `corr/requests.log` lines 73-122): tile.loc.gov 15,
+founders.archives.gov 9 (headless Chromium), www.loc.gov 4, openlibrary.org 3, masshist.org 2, bobcat.library.nyu.edu 2,
+archive.org 2, and one each to www2.hsp.org, discover.hsp.org, www.nypl.org, www.googleapis.com, www.fdrlibrary.org,
+web.archive.org, mcnycatablog.org, lccn.loc.gov, corsair.themorgan.org, catalog.loc.gov, catalog.hathitrust.org,
+bioguideretro.congress.gov, archives.yale.edu: 50 in all. Plus 7 WebFetch tool calls (a separate egress; 5 of them 403) and
+12 WebSearch calls. No logins, no credentials printed (the Google Books key is redacted in the log), no subagents. Cost:
+own estimate about 8 USD; `get_session` carries no cost field for this session.
