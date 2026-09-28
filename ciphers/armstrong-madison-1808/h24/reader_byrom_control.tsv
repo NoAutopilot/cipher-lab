@@ -1,0 +1,54 @@
+line	word	letters	note
+1	1	???	tilde+hook+curl cluster, no match to a clean printed shape
+1	2	?t	curl then a vertical-ish stroke resembling t's bar, low confidence
+1	3	t	single vertical stroke, closest printed match is t (|), followed by comma
+1	4	????	four joined strokes (hook, curl, right-angle, loop), no confident letter match
+1	5	??	hook then a small mark resembling the alphabet's "?"-shaped h/j sign, unmatched
+1	6	??	two tilde/wave strokes, no confident match
+1	7	?	single check-shaped stroke, could be f/v's slanted line but not a clean match
+1	8	??	tilde plus hook, unmatched, followed by end of line
+2	1	?	single small hook, unmatched
+2	2	d	curved stroke close to the printed "(" shape for d
+2	3	????	four-stroke cluster (hook, loop, hook, loop), no confident letter match
+2	4	?????	cluster including one backslash-like diagonal stroke resembling f/v's mark, rest unmatched
+2	5	??????t?	long cluster ending near a vertical stroke resembling t, rest unmatched
+3	1	??	two loop strokes at start of line, before a period
+3	2	?t?	hook, vertical stroke resembling t, hook
+3	3	t??t??	two vertical strokes resembling t separated by hooks/loops, rest unmatched
+3	4	??????	long wavy/hook cluster, no confident letter match
+3	5	?	single hook mark at end of line
+4	1	?dt??	cluster containing one "(" curve (d) and one vertical stroke (t), rest unmatched
+4	2	????	check-shaped stroke, two hooks, and a loop, no confident letter match
+4	3	??????	long cluster of hooks and a right-angle mark, no confident letter match
+4	4	????	final cluster of hooks, no confident letter match
+#
+# Alphabet summary from byrom1796_alphabet_p12.jpg, "On the Consonants":
+# b = a closing-parenthesis-like curve, and also a small hook (two forms given)
+# d = an open-parenthesis-like curve "("
+# f or v = a single diagonal stroke "\" (top-left to bottom-right)
+# g = a small looping swirl
+# h = two small hook/loop marks (two forms given)
+# j = two small curved marks (two forms given)
+# k or c hard = a single small hook
+# l = three curly stroke forms
+# m = a single backward-hook stroke
+# n = a small "u"/smile-shaped curve
+# p = a closing-parenthesis-like curve ")"
+# q = a hooked stroke with a short descender
+# r = a single diagonal stroke "/" (bottom-left to top-right)
+# s or c soft, and z = a short horizontal dash "-"
+# t = a single vertical stroke "|"
+# w = two small hook/loop marks (two forms given)
+# x = two marks, one check-shaped and one hooked
+# y = a single tilde-like hook
+# ch = a single backward-curve hook
+# sh = two small marks
+# th = two small hook marks
+# Vowels are shown only as a dot at one of several heights beside the consonant (not clearly visible as distinct dots in these four strips).
+#
+# Confidence: LOW. The printed alphabet gives many consonants very similar small hook/curl/loop shapes that are not
+# reliably distinguishable from each other at this image resolution and in an unfamiliar shorthand hand, and the
+# printed instructions state consonants run together in one continuous stroke per word without lifting the pen,
+# so individual letters within a joined mark could not be confidently separated in most words. Only the few strokes
+# that are simple, distinct straight lines or open curves (a vertical bar for t, a forward slash for r, an open
+# parenthesis for d, a backslash for f/v) were matched with any confidence; all other signs are recorded as "?".

@@ -1928,3 +1928,63 @@ page-3 readers who zoomed per group were the ones who agreed at H). No reading, 
 Housekeeping: `images/` tracked size was 37 MB after this session's sheets; the derived crops of H5, H13 and H18 are
 now untracked with regeneration scripts (`images/regen_derived_crops.py`, `images/crops_h18/regen_sheets.py`), tracked
 size 29.6 MB.
+
+## Campaign step H24 (28 Sept 2026, 00:30-00:45 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01R2T5qwd7NBMWGnjRtj8ieX). Hypothesis H24 (the
+orchestrator's 00:26 row, first numbered H20): Tomokiyo's six shorthand systems, with a different instrument from
+ARM-S2/S3's shape-vs-letter scoring -- a per-system KNOWN-ANSWER control run first, and the target read only for a
+system whose control passes.
+
+**Instrument.** A Sonnet subagent that sees only one period alphabet plate and four line strips of shorthand, is told
+nothing about the book, author, system or text, is forbidden web tools, and returns letters per word
+(`h24/reader_*_control.tsv`). Gate, scorer and null were fixed before any output existed (`h24/PREREGISTRATION.md`,
+00:39 UTC; `h24/score.py`: S1 = local-alignment match rate of the consonant skeleton against the reference passage,
+S2 = reader words whose skeleton equals a reference word skeleton; null = 200 random bijections of the consonant
+alphabet applied to the same output; PASS needs S1 > p95 and S2 >= 3 and S2 > p95). Self-test: reference words with
+30% of characters randomized read S1 0.316 vs p95 0.029, S2 17 vs 7 -- the scorer discriminates.
+
+**Known-answer specimens (fetched this step, archive.org, `h24/specimens/MANIFEST.tsv`).** Mavor 1792, the book's own
+Plate V, Job xxix 7-22 (leaf 74, engraved by Terry, 17 lines; lines 1-4 used; reference KJV Job 29:7-22). Byrom 1796
+abridgement, Plate I, the Lord's Prayer and Psalm 1 (leaf 94; the contents leaf 93 names them, "Common Prayer";
+lines 1-4 of the body; reference BCP and KJV, best of the two). Plates: the ones ARM-S1 put on disk
+(`images/shorthand/specimens/mavor1792_alphabet_plateI.jpg`, a clean engraved labelled alphabet with the vowel-place
+table; `byrom1796_alphabet_p12.jpg`, the typeset consonant list).
+
+**Results (both controls, rule 3 "whatever they say"):**
+
+| system | specimen | reader words | "?" signs | S1 | null p95 | p | S2 | null p95 | verdict |
+|---|---|---|---|---|---|---|---|---|---|
+| Mavor 1792 | Job 29:7-10, engraved, clean | 63 | 34 | 0.108 | 0.135 | 0.315 | 1 | 1 | CONTROL FAIL |
+| Byrom 1796 | Lord's Prayer, dark microfilm | 22 | most positions | 0.250 | 0.375 | 0.740 | 0 | 1 | CONTROL FAIL |
+
+Both readers report low confidence in their own "#" blocks: the plate's hook/loop/cup families (b/d, m/n, p/f/g/v,
+c/z, s/wh on Mavor; nearly every consonant on Byrom's typeset list) are not separable at line-strip scale, and the
+reader cannot map Mavor's vowel-place table back onto the strips. Mavor's read is a shape match at chance level (16
+of 63 words read as a bare "n" cup; the numeral-like "2" of the engraving read as a numeral), on the cleanest
+possible input -- an engraved specimen of the system's own inventor, with the inventor's own labelled plate.
+
+**Verdict for the campaign.** CONTROL BELOW GATE for both systems tried: the plate-only line-strip reader cannot read
+even the systems' own specimens, so the target's marks were NOT read with it (family_run.py order, rule 3). This is a
+non-test of the instrument, not a negative on Mavor or Byrom, and it says nothing about whether the target's marks
+are in either system. What it does say, retroactively: ARM-S2/S3's symbol-match scores came from the same class of
+reader (plate plus exemplar crops, no known-answer check), which this step shows reads a system's own specimen at
+chance -- consistent with those passes' own "non-test / not an identification" wording, and a reason not to cite
+their per-system numbers as exclusions. Weston, Macaulay, Gurney and Mitchell were not reached (4-call limit, 2 used;
+cap reached). Specimen leaves for the next attempt are fetched and on disk untracked (Weston 1727 leaf 59, "The Lord's
+Prayer"; Macaulay 1747 leaf 22, Psalm I "in the long shorthand, wherein all the vowels are inserted" -- the best
+known-answer specimen of the six, since the vowels are written), refetch route in `h24/specimens/MANIFEST.tsv`.
+
+**Named next step (one knob, once, per CLAUDE.md rule 3's "second attempt" paragraph):** the same control on Macaulay's
+Psalm I with per-word magnified crops (the H18 lesson: the readers who zoomed per group were the ones who agreed at H)
+and the plate's own worked examples on the same call; if that control also fails, the plate-only reader is retired
+for this family and the shorthand question needs a different instrument (a person who reads one of these systems, or
+a trained model), logged in HYPOTHESES.md as "untested-by-this-tool". Filed as H28.
+
+Files: `h24/PREREGISTRATION.md`, `h24/score.py`, `h24/ref_*.txt`, `h24/reader_mavor_control.tsv`,
+`h24/reader_byrom_control.tsv`, `h24/specimens/` (8 strips + MANIFEST.tsv), `h24/target_*.jpg` (five target line crops
+prepared for the read that was not licensed), `h24/en18_skeletons.txt`. No reading, no class change, no target token
+decoded. Requests: archive.org about 27 (metadata, fulltext inside.php, OCR/scandata downloads, 5 leaf images), all
+>= 1.5 s apart, descriptive User-Agent, no 429/403; gutenberg.org 2 (one proxy reset, one retry). Cost: get_session
+8.72 USD at 00:43 UTC for the session, about 7 USD on this step against a 6 USD cap (two Sonnet calls about 1.1 each;
+the rest this runner's own image reads and setup); 2 of 4 vision calls used.

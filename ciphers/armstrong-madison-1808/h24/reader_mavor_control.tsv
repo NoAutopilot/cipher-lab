@@ -1,0 +1,84 @@
+line	word	letters	note
+1	1	?	double-loop squiggle; plate shows a similar flourish for c and for z with no distinguishing detail visible at this resolution
+1	2	?r	small loop (vowel dot) touching a short upward hook; hook matches the h/r tick family, vowel position not confidently placed on the vowel-places table
+1	3	nn	two touching cup-shaped (⌣) strokes, each matching the n character
+1	4	c	tick-with-small-loop, closest match is the c flourish; a trailing point is not confidently a separate vowel mark
+1	5	pn	hook-with-loop (p) directly touching a cup (n); no clear vowel mark seen between them
+1	6	n	single cup stroke
+1	7	?	flat-topped angular hook; does not match any single or double-consonant shape on the plate closely enough to call
+1	8	h?	short upward tick (h) with an attached comma; vowel identity from the comma's position not resolved
+1	9	?	angular corner stroke followed by two small touching marks; no confident letter match
+1	10	n	cup stroke
+1	11	?	squiggle with a short descending tail; not a clean match to any plate character
+1	12	p?	hook with descending tail, closest to p (f is also plausible, plate shapes for p and f are similar); trailing marks unresolved
+1	13	?	two small comma-like marks with no attached consonant stroke; may be punctuation rather than a word
+1	14	n	cup stroke
+1	15	t?	vertical bar (t) immediately followed by the numeral "2", which is not on the alphabet plate
+1	16	?	final squiggle, c/z ambiguous as in word 1
+2	1	?	short curved stroke at the very start of the line, too small/faint to place against the plate with confidence
+2	2	p	hook-with-loop matching p
+2	3	q?	loop resembling the q curl, with an attached tail not accounted for
+2	4	n	cup stroke
+2	5	?	small flat wavy stroke, does not clearly match any single consonant on the plate
+2	6	?	similar short wavy stroke as word 5
+2	7	q?	looping stroke resembling q with an extra small loop; second loop unresolved
+2	8	m.	arc/cap stroke (m) with a following dot, dot's vowel value not resolved
+2	9	e	single comma-shaped stroke, matches the plate's e/vowel mark shape used here as a standalone consonant-position sign; low confidence
+2	10	n	cup stroke
+2	11	s	short horizontal dash, matches s
+2	12	n	cup stroke
+2	13	?c	wavy stroke followed by a small hooked loop (c); first part unresolved
+2	14	?	small loop with two short strokes, closest to the r/l family but not confidently placed
+2	15	p.	p hook followed by a dot, vowel value of the dot not resolved
+3	1	?	squiggle stroke opening the line, c/z ambiguous
+3	2	?	two small comma-like marks together, likely punctuation, no consonant stroke attached
+3	3	s	short horizontal dash, matches s
+3	4	n	cup stroke
+3	5	t?	vertical bar (t) followed immediately by the numeral "2", not on the plate
+3	6	o	dot-shaped stroke, closest to the o character
+3	7	n.	cup stroke (n) with a trailing dot, vowel value not resolved
+3	8	?	small hook with a short tail, does not match any plate character confidently
+3	9	n	cup stroke
+3	10	l?	single diagonal stroke matching l, with a small attached mark unresolved
+3	11	?	angular stroke, closest to the m/thr family of loops but not confidently placed
+3	12	o	dot-shaped stroke
+3	13	?	short curved stroke, ambiguous between several hook letters (h/r)
+3	14	?.	flat dash-like stroke with a following dot; dash could be s or wh, dot unresolved
+3	15	q	looping stroke matching q
+3	16	n?	cup stroke (n) with an attached tail not accounted for
+4	1	?	opening squiggle/hook, no confident plate match
+4	2	n	cup stroke
+4	3	t	vertical bar, matches t
+4	4	?.	small hook with a following dot; hook unresolved, dot's vowel value unresolved
+4	5	s	short horizontal dash
+4	6	i?	comma-like mark, closest to the i vowel sign; attached stroke unresolved
+4	7	t	vertical bar
+4	8	?	short curved stroke, ambiguous hook (h/r family)
+4	9	n	cup stroke
+4	10	?	wavy stroke, no confident single match
+4	11	n	cup stroke
+4	12	?	angular jagged stroke (double bend), does not match any single or double-consonant shape on the plate
+4	13	?	flat hook stroke, ambiguous
+4	14	q,	looping stroke (q) with an attached comma, vowel value unresolved
+4	15	n	cup stroke
+4	16	?	closing flat hook stroke, ambiguous
+# Plate summary (as read from mavor1792_alphabet_plateI.jpg only):
+# Vowels a, e, i are rendered as a small comma/apostrophe mark; o, u, y as a small dot. In isolation these six marks
+# look alike; the plate's separate "Vowel Places" table says the vowel is distinguished by WHERE the dot/comma sits
+# relative to a consonant's own character (a set of six positions, one column per vowel, shown for each consonant
+# row b,d,f,g,h,k,l,m,n,p,q,s,l,v,w,x). Consonants: b = small hook open left ("c"-like); d = the mirror hook open
+# right; c = a short tick with a small curling tail (also used, unlabelled, as the z abbrev-column filler, so c and
+# z are not visually distinguished on this plate); f = a hook with a small loop; g/j = a loop with a descending
+# tail; h = a short upward tick; k = a plain backslash diagonal; l = a plain forward-slash diagonal; m = a wide
+# arc opening downward (cap shape); n = a narrower arc opening upward (cup shape); p = a hook with a loop near the
+# top; q = a rounded loop like a cursive e; r = a short curved tick similar to h; s = a short horizontal dash; t =
+# a short vertical bar; v = a loop with a descending tail (similar to g/j); w = a short horizontal dash/hook; x = a
+# small loop with a short tail; z = a squiggle, drawn the same as the c abbrev filler. Double/triple consonants:
+# ch = a small hooked tick; sh = a "6"-shaped loop; th = a small tick similar to ch; thr = a looped tick with a
+# small tail; str = a "9"-shaped loop; wh = a plain short dash, drawn the same as s.
+# Confidence: LOW. The strip images are narrow, low-resolution photographs of fine 18th-century copperplate
+# engraving with no magnification available; several plate letters share near-identical stroke families (b/d,
+# m/n, p/f/g/v, c/z, s/wh) that are only distinguished in the source by small differences in curvature and closure
+# this reader could not reliably resolve, and the vowel marks could not be matched to the Vowel Places table with
+# confidence in most words. Roughly half of the signs in each line are marked "?" for this reason; letters given
+# without "?" are the shapes closest to an unambiguous plate match, not confirmed readings.
