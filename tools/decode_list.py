@@ -127,7 +127,7 @@ def pager_total(html):
     return int(m.group(1).replace(",", ""))
 
 
-def crawl_status(status_name, record_type_name, recperpage, delay, max_pages, budget, raw_dir):
+def crawl_status(status_name, record_type_name, recperpage, delay, max_pages, budget, raw_dir, start_page=1):
     status_code = STATUS_CODES[status_name]
     rtype_code = RECORD_TYPE_CODES[record_type_name]
     params = {
@@ -148,10 +148,10 @@ def crawl_status(status_name, record_type_name, recperpage, delay, max_pages, bu
     pages = (total + recperpage - 1) // recperpage if total else (1 if html else 0)
     if max_pages:
         pages = min(pages, max_pages)
-    rows = parse_rows(html, 1)
-    if raw_dir:
+    rows = parse_rows(html, 1) if start_page <= 1 else []   # page 1 is always fetched once, for the total
+    if raw_dir and start_page <= 1:
         (raw_dir / f"{status_name}_p1.html").write_text(html, encoding="utf-8")
-    for page in range(2, pages + 1):
+    for page in range(max(2, start_page), pages + 1):
         if budget[0] <= 0:
             print(f"  budget exhausted at page {page} of {pages} for {status_name}", file=sys.stderr)
             break
@@ -173,6 +173,9 @@ def main():
     ap.add_argument("--raw-dir", default=None, help="optional directory to save raw fetched HTML pages")
     ap.add_argument("--delay", type=float, default=1.5, help="seconds between requests (default 1.5, good-citizen minimum)")
     ap.add_argument("--recperpage", type=int, default=50, help="rows per page, max 50 (site limit)")
+    ap.add_argument("--start-page", type=int, default=1, help="resume a capped crawl from this page (page 1 is still "
+                    "fetched once for the total; its rows are kept only when start-page is 1) -- campaign "
+                    "espagnol142-mercy-1648 H18, 28 Sept 2026")
     ap.add_argument("--max-pages", type=int, default=0, help="cap pages per status (0 = no cap)")
     ap.add_argument("--max-requests", type=int, default=300, help="hard cap on total HTTP requests this run")
     args = ap.parse_args()
@@ -192,7 +195,7 @@ def main():
     budget = [args.max_requests]
     all_rows = []
     for status in statuses:
-        rows, total = crawl_status(status, rtype, args.recperpage, args.delay, args.max_pages, budget, raw_dir)
+        rows, total = crawl_status(status, rtype, args.recperpage, args.delay, args.max_pages, budget, raw_dir, args.start_page)
         print(f"{status}: {total} total, {len(rows)} fetched", file=sys.stderr)
         all_rows.extend(rows)
 
