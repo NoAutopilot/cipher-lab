@@ -1,0 +1,99 @@
+frame	flag	note
+191	none	clear prose, Spanish copy letter
+192	none	clear prose, English letter
+193	none	clear prose
+194	none	clear prose
+195	none	clear prose, dollar sums only (2000 Dollars)
+196	none	clear prose
+197	none	clear prose
+198	none	clear prose, one page mostly blank/short
+199	none	clear prose
+200	none	clear prose, dollar sums only (3-500,000 Dollars)
+201	none	clear prose
+202	none	clear prose
+203	none	clear prose, dollar sums (2000 Dollars, 300 Dollars)
+204	none	clear prose
+205	none	clear prose
+206	none	clear prose
+207	none	clear prose
+208	none	clear prose
+209	none	clear prose
+210	none	clear prose
+211	none	clear prose, one leaf blank verso
+212	none	clear prose
+213	none	clear prose
+214	none	clear prose (Spanish)
+215	none	clear prose, Private No.18 to James Madison, Madrid 16 Oct 1806
+216	none	clear prose
+217	none	clear prose, printed leaf page nos 4/5 visible top, not code
+218	none	clear prose, page nos 6/8 visible top
+219	none	clear prose, page nos 8/9; troop-figure numbers in text (e.g. "25,000")
+220	none	clear prose, page nos 10/11; troop figures (10,000/23,300) in text
+221	none	clear prose, page nos 12/13 (duplicate sheet of 222)
+222	none	clear prose, duplicate of 221
+223	none	clear prose, No.19 to James Madison, Madrid 24 Dec 1806
+224	none	clear prose
+225	none	clear prose
+226	none	clear prose, letter to James Madison, Madrid 16 Dec 1806
+227	none	clear prose, No.20 to James Madison, Madrid 7 Jan 1807
+228	none	clear prose
+229	none	memorandum/docket table of correspondence enclosed, dates paired with enclosure Nos.1-13; index list, not a cipher key
+230	none	clear prose, No.21 to James Madison, Madrid 9 Jan 1807
+231	none	clear prose
+232	none	clear prose
+233	none	clear prose, Private No.19 to James Madison, Madrid 10 Jan 1807; "5500 dollars" prose sum
+234	none	clear prose
+235	none	clear prose, duplicate of 234
+236	none	right page clear prose (Private No.20 duplicate to Madison, 21 Jan 1807, troop figures 10,000/25,000); left page has very faint illegible pencil marks, not clearly numerals
+237	none	clear prose, troop figure "25,000" in text
+238	none	clear prose
+239	none	clear prose, "10,000 men" troop figure in text
+240	none	clear prose, letter to James Madison, Madrid 8 Feb 1807; enclosure numbers 1-6 in text; left page faint bleed-through of a numbered list, not code
+241	none	clear prose
+242	none	clear prose, duplicate of 241
+243	none	clear prose, enclosure numbers (No.7,8,9; No.4,5,6) in text
+244	none	clear prose
+245	none	clear prose, one leaf mostly blank
+246	none	clear prose
+247	none	clear prose, dollar sums (2000/1800/1000 Dollars) in text
+248	none	clear prose, dollar sums (3400/3000 Dollars) in text
+249	none	clear prose, No.2 letter, Aranjuez 16 Jan 1807
+250	none	clear prose, No.4 letter, Madrid 20 Jan 1807; numbered list items 1st/2nd/3rd
+251	none	clear prose
+252	none	clear prose, No.6/No.7/No.3 letters, English & French
+253	none	clear prose, No.3 continued
+254	none	clear prose
+255	none	clear prose, duplicate of 247/248 letter
+256	none	clear prose, duplicate of 248
+257	none	clear prose, duplicate of 249/250 (No.2)
+258	none	clear prose, duplicate of 250 (No.4)
+259	none	clear prose, duplicate No.4 letter, 28 Jan 1807
+260	none	clear prose, duplicate of 251/252
+261	none	clear prose, duplicate of 252
+262	none	clear prose, duplicate of 253 (No.3 continued)
+263	none	clear prose, duplicate of 254 continued
+264	none	clear prose, No.3 continued/No.11 letter from Cevallos
+265	none	clear prose
+266	none	clear prose, No.1 duplicate letter, Madrid 11 Feb 1807
+267	none	clear prose
+268	none	clear prose, duplicates No.2/No.3/No.4
+269	none	clear prose, No.5 duplicate, Madrid 4 Mar 1807
+270	none	clear prose, No.6 duplicate, Madrid 5 Mar 1807 (French)
+271	none	clear prose, No.7/No.8 duplicate letters, 13 Mar 1807
+272	none	clear prose, No.24 to James Madison, Madrid 14 Mar 1807; No.9 duplicate letter
+273	none	clear prose, Spanish military dispatch; troop/artillery figures (25 piezas, 6000 hombres, 270 Artilleros) in text
+274	none	clear prose, continuation of Spanish military dispatch
+275	none	clear prose, No.26 to James Madison, Madrid 17 Mar 1807
+276	none	clear prose
+277	none	clear prose, No.1 letter 11 Feb 1807; troop figures (4000 cavalry, 15,900 infantry) in text
+278	none	clear prose, No.2 letter 24 Feb 1807
+279	none	clear prose, No.3/No.4 letters late Feb 1807
+280	none	clear prose, No.5/No.3 letters Mar 1807
+281	none	clear prose, No.6 letter 5 Mar 1807 (French); No.7 letter 13 Mar 1807
+282	none	clear prose, No.7 continued; No.8 letter to Turkish Highness; No.9 letter
+283	none	clear prose, plaintext cover incipit "Private No.21 In The Cipher of the Legation," Madrid 24 Mar 1807 - announces that an accompanying letter is enciphered but this leaf itself is plain text
+284	code	KEY FIND: full page densely packed with 3-4 digit numbers separated by periods (e.g. "421. 611. 795. 1686. 1851..."), small decode words penciled above many numbers (French, Minister, he, etc.) across both columns of the opening - numeral cipher text, continues from No.21 letter on fr283
+285	code	continuation of same numeral cipher letter (No.21), both pages full of 3-4 digit numbers with periods and interlinear decode words above many of them
+286	code	continuation/end of same numeral cipher letter (No.21), both pages full of numbers with interlinear decode words, ends with plaintext signature block ("very obt & obliged St", signed)
+m30-65	code	possible short run of numbers embedded mid-sentence in otherwise clear prose on right-hand leaf ("...great reliance, that [[unclear]] 1779. 073. 1028. 685 in a late conversation..."); reading uncertain at this resolution, flagged for a closer look
+m30-66	none	clear prose (British/Halifax affairs letter); troop figure "5,000 troops" in text, list of peers' names (Duke of Norfolk etc.), not code

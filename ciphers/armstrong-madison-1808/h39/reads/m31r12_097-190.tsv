@@ -1,0 +1,97 @@
+frame	flag	note
+97	none	clear prose (Spain/France instructions)
+98	none	clear prose, troop counts written out in narrative
+99	none	clear prose, continuation
+100	none	clear prose; facing page blank
+101	none	clear prose
+102	none	clear prose
+103	none	clear prose
+104	none	clear prose; left leaf blank/address
+105	none	clear prose
+106	none	clear prose
+107	none	clear prose
+108	none	clear prose
+109	none	clear prose; left leaf blank with docket note
+110	none	clear prose (Spanish, "Copia")
+111	none	clear prose (Spanish)
+112	none	clear prose
+113	none	clear prose
+114	code	mid-height right page: run of 6 numbers embedded in prose, "1831. 1607. 133. 3/3. 1114. 1419."
+115	code	both pages heavily coded: dozens of 3-4 digit number runs throughout (e.g. "1851.1861.133.500.508.1148", "958.329.1176", "1530.244.295.1364"); top-right margin has a small numbered list with tiny interlinear words above some entries
+116	none	clear prose (troop/money figures written in full, not code)
+117	none	clear prose, short letter close
+118	none	clear prose (ship names)
+119	none	clear prose
+120	none	clear prose; blank leaf facing
+121	none	clear prose (Spanish)
+122	none	clear prose
+123	none	clear prose; blank leaf facing
+124	none	clear prose
+125	none	clear prose; blank leaf with address/docket
+126	none	clear prose; lower right blank
+127	none	clear prose
+128	none	clear prose
+129	none	clear prose; blank leaf with address
+130	code	lower-left column: 3 runs of 3-4 numbers with tiny interlinear gloss words above them, e.g. "1657. 1841. 631. 620", "1687. 1230. 323. 574", "1237. 1810. 234"
+131	none	clear prose; one isolated 3-digit number ("764") mid-sentence, not a run of 2+
+132	none	clear prose (Spanish)
+133	none	left leaf blank; right leaf clear prose
+134	none	clear prose
+135	none	left leaf blank; right leaf clear prose
+136	none	clear prose
+137	none	left leaf blank/docket; right leaf clear prose
+138	none	clear prose
+139	none	clear prose
+140	none	clear prose
+141	none	left leaf blank; right leaf clear prose (Spanish)
+142	none	clear prose (Spanish)
+143	none	left leaf blank/docket; right leaf clear prose (Spanish)
+144	none	clear prose
+145	none	clear prose
+146	none	clear prose
+147	none	left leaf blank; right leaf clear prose
+148	none	left leaf blank/docket; right leaf clear prose
+149	none	left leaf blank; right leaf clear prose (Spanish)
+150	none	left leaf blank/docket; right leaf clear prose
+151	code	"Private No.14 Duplicate", Madrid Sept 27 1806: both pages numeral cipher mixed with connective prose throughout, dozens of numbers
+152	code	continuation of No.14: both pages numeral cipher; page ends with explicit note "the whole of these letters are in Cipher, but the French translation of them interlined..."
+153	code	continuation: left page top ~15 lines still numeral cipher, then switches to plain prose explanation of the correspondence; right page clear prose
+154	none	clear prose continuation and letter close/PS, no numbers
+155	none	left leaf blank/address; right leaf clear prose
+156	none	clear prose (about books)
+157	none	left leaf blank/address; right leaf clear prose
+158	none	left leaf blank; right leaf clear prose
+159	none	clear prose
+160	none	clear prose
+161	none	clear prose
+162	none	clear prose
+163	none	clear prose
+164	none	left leaf blank; right leaf clear prose
+165	none	clear prose
+166	none	clear prose
+167	none	clear prose
+168	none	clear prose
+169	code	"Private No.16", Madrid Oct 7 1806: full page numeral cipher throughout, opens "Dear Sir 1049.001.526.1501.1385.204.540.1501.903..."
+170	code	continuation of No.16: full page numeral cipher throughout
+171	none	left leaf blank/address; right leaf clear prose
+172	none	clear prose
+173	none	left leaf blank/address; right leaf clear prose
+174	none	left leaf blank; right leaf printed Spanish proclamation
+175	none	clear prose/printed proclamation continuation (Spanish)
+176	none	clear prose
+177	none	clear prose
+178	none	clear prose
+179	none	left leaf blank; right leaf clear prose
+180	none	left leaf blank; right leaf signature/closing only
+181	none	clear prose
+182	none	clear prose
+183	none	clear prose
+184	none	clear prose
+185	none	clear prose
+186	none	clear prose (Spanish military instructions)
+187	none	clear prose (Spanish)
+188	none	clear prose (Spanish)
+189	none	clear prose (Spanish)
+190	none	clear prose (Spanish)
+m30-65	code	right page, upper third: run of 5 numbers embedded in prose, "150. 1779. 025. 1038. 654"
+m30-66	none	clear prose
