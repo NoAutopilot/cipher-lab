@@ -3254,3 +3254,23 @@ unreconciled m/l-grade passes, has no positive control (rule 3: a failure needs 
 remain open: fol. 175r may render a different 22 July letter (f.186r or f.189r); or it may begin at a different point from
 f.176r's first cipher row (the DP is local on the signs but must consume all N letters). No key rows, nothing merged. Row H173
 (the scorer's positive control on the known pair f.188r/f.184r, script-only on disk) is added, and H170's continuation waits on it.
+
+## Campaign step H173 (28 Sept 2026, 23:02-23:06 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- H170's statistic has power; its FAIL stands
+
+`family/h173_power.py` (design pre-registered in its docstring, pushed 3687c5b5 before the run; result `family/h173_power_result.txt`,
+`--check`). Script-only, no calls. The known pair is fr.3984 f.188r (its blind passes A/B from F61-FAMILY-3, sign grades mostly m,
+like H170's) against its clear f.184r, under key v4 **without f.188r's own rows** (f.101r + f.274r only). Two all-cipher windows of
+four rows (W1 L19-L22, W2 L08-L11). Everything else is H170's statistic, N and gate.
+
+| window | pass | N | true clear | wrong: fol. 175r / other window | permuted p95 / max | gate |
+|---|---|---|---|---|---|---|
+| W1 | A | 210 | **0.648** | 0.329 / 0.386 | 0.400 / 0.490 | PASS |
+| W1 | B | 191 | **0.581** | 0.335 / 0.366 | 0.393 / 0.461 | PASS |
+| W2 | A | 186 | **0.575** | 0.392 / 0.355 | 0.403 / 0.462 | PASS |
+| W2 | B | 187 | **0.594** | 0.374 / 0.374 | 0.396 / 0.535 | PASS |
+
+On a true separate-sheet pair, H170's statistic separates the right clear from wrong clears of the same key and period by
+0.19-0.28 at N of about 200, on passes of the same grade. **H170's FAIL therefore stands as a control-backed result: fol. 175r's
+opening does not render f.176r's first four cipher rows** (f.176r scored 0.385-0.399, inside the wrong-text band). Still open: fol.
+175r is the decipherment of another 22 July letter, or f.176r's decipherment is elsewhere (fol. 177-178 are clear pages in another
+hand, H169). H174 is re-scoped to include fol. 177r.

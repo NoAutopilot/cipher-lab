@@ -1,0 +1,8 @@
+key v4 without f.188r rows: 22 classes
+W1 pass A: signs 263, true letters 233, N 210; true 0.648; wrong f175 0.329, other window 0.386; permuted mean 0.323 p95 0.400 max 0.490; PASS
+W1 pass B: signs 239, true letters 233, N 191; true 0.581; wrong f175 0.335, other window 0.366; permuted mean 0.310 p95 0.393 max 0.461; PASS
+W1: PASS both passes
+W2 pass A: signs 233, true letters 222, N 186; true 0.575; wrong f175 0.392, other window 0.355; permuted mean 0.296 p95 0.403 max 0.462; PASS
+W2 pass B: signs 234, true letters 222, N 187; true 0.594; wrong f175 0.374, other window 0.374; permuted mean 0.292 p95 0.396 max 0.535; PASS
+W2: PASS both passes
+POWER at H170's N and design: YES (H170 FAIL stands)
