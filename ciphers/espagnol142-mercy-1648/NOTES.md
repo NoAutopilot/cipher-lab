@@ -1863,3 +1863,19 @@ chiffr + 1648 or cifra/cifrada; Peñaranda + chiffr) and one record read (`h38/s
 
 **Negative for a pool on Gallica/BnF.** The pool for this key is the Brussels archive itself (AGR SEE, H7/H17, ASKS 82).
 No token, grade or class change.
+
+## Campaign step H40 (2026-09-28 15:09-15:01 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Gate not met; the target was not scored.** The rule fixed in CAMPAIGN.md before any new
+data -- accept a correction iff H35's word-segmentation delta > 0 OR H37's design violations fall -- tested on three
+fresh design-matched controls (h21/vowel_control.py on Cartas tomo 15 windows, seeds 11-13, 5% of signs corrupted as
+exactprof_noisy.py does; blind es17c7 anneal, order 3, 8 restarts x 40,000 iters, blind letters 93.5 / 70.1 / 90.6%)
+with their own true and least-cost-decoy candidates (h33's recipe): `cheap_test_1/h40/make.py`, `score.py`,
+`result.log`, `verdicts.tsv`, `anneal_seed*.log`. **Glyphs with 2+ occurrences: true accepted 13/21 = 0.62, decoys
+rejected 17/23 = 0.74.** Both sides miss 0.8; on held-out controls the OR rule is weaker than either measure looked on
+the data that suggested it (the H33 sets), which is what a post-hoc rule usually does.
+
+This is the second script-verifier attempt (H35, then H37, then this combination) and every number stayed below the
+gate: per CLAUDE.md rule 3 ("a second attempt ... that changes only the one knob"), single-correction licensing of M2's
+hand corrections is **untestable by script verifiers at this N**, not refuted. The instrument that decides them is a
+period key (H17, ASKS 82; REGISTER-CHECKLIST.md). No token, grade or class change.
