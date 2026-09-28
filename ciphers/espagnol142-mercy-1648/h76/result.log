@@ -1,0 +1,27 @@
+== h46/wordlist.tsv
+window: noladire?tnonysiiu?
+30 forms; best mano fit 1 (2 agree, 1 disagree) at v04:9; ties 2; P 0.067; candidate: False
+  mano	1	2/1	v04:9
+  turno	1	2/1	v04:9
+  camino	0	2/2	v04:8
+  poca	0	2/2	v04:1
+  causa	-1	1/2	v04:16
+  conseio	-1	3/4	v04:11
+== h55/wordlist.tsv
+window: noladire?tnonysiiu?
+17 forms; best dicen fit 2 (3 agree, 1 disagree) at v04:5; ties 1; P 0.059; candidate: False
+  dicen	2	3/1	v04:5
+  bueno	1	2/1	v04:9
+  creo	1	2/1	v04:6
+  esta	1	2/1	v04:8
+  este	1	2/1	v04:8
+  bien	0	1/1	v04:9
+== h74/onomasticon.tsv
+window: noladire?tnonysiiu?
+2702 forms; best relation fit 4 (5 agree, 1 disagree) at v04:7; ties 1; P 0.000; candidate: False
+  relation	4	5/1	v04:7
+  epernon	3	4/1	v04:8
+  arellano	2	4/2	v04:6
+  auinon	2	3/1	v04:9
+  cadereita	2	5/3	v04:3
+  cadereyta	2	5/3	v04:3

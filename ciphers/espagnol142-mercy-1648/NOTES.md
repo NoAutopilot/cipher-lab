@@ -2441,3 +2441,10 @@ Pillow for the H63 gap): H41 7 (7/0) at r16:16, P 0.002; H53 the same with only 
 none; H61 P 0.002 / 0.001 on 599 / 883 names; H62 split 8/1; H63 gap 13 px; H71 read windows at most 4; H72 0 of 10,000;
 H74 best independent name on the unread tokens 5 (cuaresma). `--check` passes. This is what a separate verifier session
 would run first; the crib stays a candidate. Disk only.
+
+## Campaign step H76 (2026-09-28 16:57 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** v04:1-19 with a free anchor, `tools/crib_list_fit.py` default floor
+(`h76/result.log`): words after "por su" (H46, 30) best "mano"/"turno" 1; words before "sera" (H55, 17) best "dicen" 2;
+the H74 onomasticon (2,702) best "relation" 4 (5 agree / 1 disagree at v04:7) -- the level read text reaches by chance
+(H71). No candidate; v04 stays unread. No token, grade or class change.
