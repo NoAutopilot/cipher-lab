@@ -195,6 +195,14 @@ SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and r
 TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
 line for the owner, not a close. The 48-hour number is verified readings per dollar.
 
+## Blocker question (28 Sept 2026, about 02:4x UTC; after the owner twice supplied the obvious next move)
+
+At every check-in, before spawning anything, the orchestrator writes one line for the CLOSEST target: the current
+blocker in plain words, and everything already on disk or in the record that bears on that blocker (sibling leaves,
+unglossed text under the same key, an unused witness, a tool that exists). Anything on that list that is not being
+worked gets a worker or a row now. Lessons: the four undeciphered Mayenne leaves were filed as follow-on targets when
+they were evidence for f.61's rare classes (28 Sept); the Mercy N4 wait needed the owner's prompt (27 Sept).
+
 ## Single orchestrator (27 Sept 2026, about 20:05 UTC, the owner's decision)
 
 From this line there is one orchestrator, on the owner account: this session and its successors. The other account has
