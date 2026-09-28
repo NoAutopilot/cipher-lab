@@ -1,0 +1,415 @@
+line	pos	sign	conf	segment	x_px	note
+L33	1	INF	l	s1	200	figure-8 on bar, top partly cut
+L33	2	HASH4	m	s1	300	4 with crossed stems
+L33	3	VBAR_A	l	s1	400	small v
+L33	4	EBR_B	m	s1	560	L-shaped
+L33	5	PHI	h	s1	620	
+L33	6	4STEM	m	s1	700	4 with crossed stem alt 4TRI
+L33	7	LOOPS	m	s1	850	chain ooo on a line alt INF
+L33	8	PHI	h	s1	1030	
+L33	9	PHI	h	s1	1150	
+L33	10	HASH4	m	s1	1290	
+L33	11	PHI	h	s1	1430	overlap
+L33	12	OTHER	l	s2	140	small c/e-like mark with dot
+L33	13	HASH4	m	s2	250	
+L33	14	LOOPS	m	s2	390	oo
+L33	15	ZBAR	l	s2	510	z/3-like with 4 above alt ZHOOK
+L33	16	VBAR_A	m	s2	640	
+L33	17	PHI	h	s2	740	
+L33	18	PHI	h	s2	850	
+L33	19	4TRI	m	s2	970	
+L33	20	PHI	h	s2	1100	loops either side of stem
+L33	21	H24	m	s2	1250	
+L33	22	4TRI	l	s2	1430	overlap
+L33	23	OTHER	l	s3	180	x-like with long bar
+L33	24	4TRI	m	s3	270	
+L33	25	PHI	h	s3	360	
+L33	26	H24	m	s3	490	
+L33	27	4TRI	m	s3	630	
+L33	28	4STEM	m	s3	760	
+L33	29	LL	l	s3	870	small u/ll-like
+L33	30	CROSS	m	s3	1000	alt 4STEM
+L33	31	4TRI	m	s3	1130	4 over 8-like
+L33	32	LOOPS	m	s3	1270	ooo
+L33	33	H24	m	s3	1430	overlap
+L33	34	PHI	l	s4	140	dark loop blob with stem
+L33	35	DASH	l	s4	240	
+L33	36	EBR_B	l	s4	340	C-shaped
+L33	37	HASH4	m	s4	1310	# with stem; row top cut in this segment
+L33	38	PHI	m	s5	140	ooφ
+L33	39	DBL	l	s5	260	8 on stem
+L33	40	DBL	l	s5	370	8 on stem
+L33	41	EBR_A	l	s5	480	L with tail
+L33	42	LOOPS	m	s5	560	oo
+L33	43	EBR_B	m	s5	640	
+L33	44	PHI	h	s5	780	long stem
+L33	45	LOOPS	m	s5	900	oo
+L33	46	ZBAR	l	s5	1040	xs-like with bar
+L34	1	4STEM	l	s1	80	top cut
+L34	2	H24	m	s1	230	
+L34	3	VBAR_A	m	s1	300	
+L34	4	OTHER	l	s1	400	single small loop
+L34	5	EBR_B	m	s1	520	L-shaped
+L34	6	PHI	h	s1	610	
+L34	7	EBR_B	m	s1	740	
+L34	8	4PI	l	s1	850	alt 4TRI
+L34	9	H24	m	s1	1010	
+L34	10	VBAR_A	m	s1	1130	
+L34	11	PHI	h	s1	1290	
+L34	12	EBR_B	m	s1	1390	
+L34	13	VBAR_A	m	s1	1470	overlap
+L34	14	PHI	m	s2	200	ooφ alt LOOPS
+L34	15	H24	m	s2	360	
+L34	16	OTHER	l	s2	470	small o-like
+L34	17	HASH4	m	s2	600	
+L34	18	DBL	m	s2	720	8 on stem
+L34	19	4TRI	m	s2	850	
+L34	20	LOOPS	m	s2	1000	ooo
+L34	21	EBR_B	m	s2	1150	alt VBAR_A
+L34	22	PHI	h	s2	1260	
+L34	23	HASH4	l	s2	1380	
+L34	24	LOOPS	l	s3	150	oo
+L34	25	PHI	h	s3	230	
+L34	26	ZHOOK	l	s3	350	dark blob with 7 hook
+L34	27	4TRI	m	s3	470	
+L34	28	PHI	m	s3	590	8 on stem
+L34	29	CH	l	s3	750	R/h-like on stem alt RSIGN
+L34	30	4TRI	m	s3	850	
+L34	31	H24	m	s3	990	
+L34	32	EBR_B	m	s3	1130	
+L34	33	C6	l	s3	1270	tall 8-like
+L34	34	EBR_B	m	s3	1400	overlap
+L34	35	4TRI	l	s3	1480	overlap
+L34	36	VBAR_A	h	s4	230	
+L34	37	4TRI	m	s4	310	
+L34	38	HASH4	l	s4	480	hatched 4 with loop
+L34	39	PHI	h	s4	590	
+L34	40	VBAR_A	m	s4	700	
+L34	41	VBAR_A	m	s4	790	
+L34	42	PHI	h	s4	870	o φ
+L34	43	PHI	h	s4	1020	
+L34	44	4TRI	m	s4	1130	
+L34	45	HASH4	m	s4	1250	
+L34	46	4TRI	m	s4	1360	
+L34	47	PHI	h	s5	130	
+L34	48	EBR_B	m	s5	230	
+L34	49	LOOPS	m	s5	320	oo
+L34	50	H24	m	s5	470	
+L34	51	VBAR_A	m	s5	570	dash through
+L34	52	PHI	m	s5	740	oo on long stem alt LOOPS
+L34	53	PHI	h	s5	880	
+L34	54	PHI	h	s5	970	
+L34	55	EBR_B	m	s5	1080	long bar
+L35	1	4TRI	m	s1	80	
+L35	2	LOOPS	l	s1	150	oo
+L35	3	PHI	m	s1	250	
+L35	4	LOOPS	m	s1	360	oo
+L35	5	EBR_B	m	s1	460	
+L35	6	PHI	h	s1	560	dark
+L35	7	PHI	h	s1	690	
+L35	8	4TRI	m	s1	810	
+L35	9	LOOPS	m	s1	930	ooo
+L35	10	OTHER	l	s1	1080	u/v-like open mark
+L35	11	4TRI	l	s1	1170	hatched
+L35	12	PHI	h	s1	1300	
+L35	13	LOOPS	m	s1	1440	overlap
+L35	14	EBR_B	l	s1	1500	overlap
+L35	15	CH	l	s2	230	R-like loop on stem alt BETA
+L35	16	PHI	m	s2	300	
+L35	17	EBR_B	m	s2	440	
+L35	18	PHI	m	s2	540	
+L35	19	H24	m	s2	700	
+L35	20	PHI	m	s2	800	φ8
+L35	21	4TRI	m	s2	940	
+L35	22	C6	l	s2	1080	tall 8 alt DBL
+L35	23	LOOPBAR	l	s2	1210	8 on bar
+L35	24	LOOPS	l	s3	150	oo; identical image content to band L34 segment s3; band centring may be off
+L35	25	PHI	h	s3	230	identical image content to band L34 segment s3; band centring may be off
+L35	26	ZHOOK	l	s3	350	dark blob with 7 hook; identical image content to band L34 segment s3; band centring may be off
+L35	27	4TRI	m	s3	470	identical image content to band L34 segment s3; band centring may be off
+L35	28	PHI	m	s3	590	8 on stem; identical image content to band L34 segment s3; band centring may be off
+L35	29	CH	l	s3	750	R/h-like on stem alt RSIGN; identical image content to band L34 segment s3; band centring may be off
+L35	30	4TRI	m	s3	850	identical image content to band L34 segment s3; band centring may be off
+L35	31	H24	m	s3	990	identical image content to band L34 segment s3; band centring may be off
+L35	32	EBR_B	m	s3	1130	identical image content to band L34 segment s3; band centring may be off
+L35	33	C6	l	s3	1270	tall 8-like; identical image content to band L34 segment s3; band centring may be off
+L35	34	EBR_B	m	s3	1400	overlap; identical image content to band L34 segment s3; band centring may be off
+L35	35	4TRI	l	s3	1480	overlap; identical image content to band L34 segment s3; band centring may be off
+L35	36	VBAR_A	h	s4	230	identical image content to band L34 segment s4; band centring may be off
+L35	37	4TRI	m	s4	310	identical image content to band L34 segment s4; band centring may be off
+L35	38	HASH4	l	s4	480	hatched 4 with loop; identical image content to band L34 segment s4; band centring may be off
+L35	39	PHI	h	s4	590	identical image content to band L34 segment s4; band centring may be off
+L35	40	VBAR_A	m	s4	700	identical image content to band L34 segment s4; band centring may be off
+L35	41	VBAR_A	m	s4	790	identical image content to band L34 segment s4; band centring may be off
+L35	42	PHI	h	s4	870	o φ; identical image content to band L34 segment s4; band centring may be off
+L35	43	PHI	h	s4	1020	identical image content to band L34 segment s4; band centring may be off
+L35	44	4TRI	m	s4	1130	identical image content to band L34 segment s4; band centring may be off
+L35	45	HASH4	m	s4	1250	identical image content to band L34 segment s4; band centring may be off
+L35	46	4TRI	m	s4	1360	identical image content to band L34 segment s4; band centring may be off
+L35	47	PHI	h	s5	130	identical image content to band L34 segment s5; band centring may be off
+L35	48	EBR_B	m	s5	230	identical image content to band L34 segment s5; band centring may be off
+L35	49	LOOPS	m	s5	320	oo; identical image content to band L34 segment s5; band centring may be off
+L35	50	H24	m	s5	470	identical image content to band L34 segment s5; band centring may be off
+L35	51	VBAR_A	m	s5	570	dash through; identical image content to band L34 segment s5; band centring may be off
+L35	52	PHI	m	s5	740	oo on long stem alt LOOPS; identical image content to band L34 segment s5; band centring may be off
+L35	53	PHI	h	s5	880	identical image content to band L34 segment s5; band centring may be off
+L35	54	PHI	h	s5	970	identical image content to band L34 segment s5; band centring may be off
+L35	55	EBR_B	m	s5	1080	long bar; identical image content to band L34 segment s5; band centring may be off
+L36	1	LOOPS	m	s1	80	oo
+L36	2	PHI	m	s1	170	
+L36	3	EBR_B	m	s1	260	
+L36	4	4TRI	m	s1	370	struck
+L36	5	LOOPS	m	s1	500	oo struck
+L36	6	HASH4	m	s1	620	struck
+L36	7	BETA	l	s1	790	
+L36	8	LOOPS	m	s1	880	ooo
+L36	9	H24	h	s1	1050	
+L36	10	4TRI	m	s1	1200	
+L36	11	HASH4	m	s1	1340	
+L36	12	PHI	h	s1	1460	overlap
+L36	13	PHI	h	s2	150	
+L36	14	EBR_B	m	s2	270	
+L36	15	HASH4	l	s2	400	under clear word
+L36	16	LOOPS	m	s2	520	ooo
+L36	17	PHI	m	s2	680	
+L36	18	VBAR_A	m	s2	800	
+L36	19	PHI	h	s2	890	
+L36	20	EBR_B	m	s2	990	
+L36	21	OTHER	l	s2	1130	o-z like
+L36	22	H24	m	s2	1230	
+L36	23	EBR_B	m	s2	1380	
+L36	24	H24	l	s2	1480	overlap
+L36	25	LOOPS	l	s3	160	top cut
+L36	26	LOOPS	l	s3	300	oo
+L36	27	4STEM	m	s3	400	
+L36	28	PHI	h	s3	510	
+L36	29	PHI	m	s3	650	ooφ
+L36	30	H24	m	s3	790	
+L36	31	VBAR_A	m	s3	900	
+L36	32	PHI	h	s3	1030	
+L36	33	EBR_B	m	s3	1160	
+L36	34	VBAR_A	m	s3	1240	
+L36	35	PHI	h	s3	1340	
+L36	36	PHI	h	s3	1450	overlap
+L36	37	EBR_B	m	s4	220	struck
+L36	38	PHI	m	s4	300	
+L36	39	LOOPS	m	s4	490	oo struck
+L36	40	LOOPS	l	s4	620	oo struck
+L36	41	PHI	h	s4	740	
+L36	42	4TRI	l	s4	900	
+L36	43	VBAR_A	m	s4	1010	
+L36	44	4TRI	m	s4	1150	
+L36	45	C6	l	s4	1250	delta-like
+L36	46	LOOPS	m	s4	1350	oo
+L36	47	PHI	h	s4	1460	overlap
+L36	48	PHI	h	s5	200	
+L36	49	VBAR_A	m	s5	330	
+L36	50	H24	m	s5	440	
+L36	51	PHI	h	s5	570	
+L36	52	H24	m	s5	710	
+L36	53	LOOPS	m	s5	810	oo
+L36	54	EBR_B	m	s5	920	
+L36	55	HASH4	m	s5	1020	
+L37	1	OTHER	l	s1	60	double-barred cross
+L37	2	ZBAR	l	s1	200	
+L37	3	LOOPS	m	s1	300	ooo
+L37	4	4TRI	m	s1	430	
+L37	5	VBAR_A	m	s1	570	
+L37	6	EBR_B	m	s1	690	L-shaped
+L37	7	PHI	h	s1	790	
+L37	8	EBR_B	m	s1	890	
+L37	9	4TRI	m	s1	1040	
+L37	10	LOOPS	m	s1	1180	oo struck
+L37	11	EBR_B	l	s1	1300	struck
+L37	12	PHI	h	s1	1440	overlap
+L37	13	LOOPS	m	s2	170	oo
+L37	14	PHI	m	s2	320	φ8
+L37	15	EBR_B	m	s2	460	
+L37	16	HASH4	m	s2	630	
+L37	17	PHI	h	s2	780	
+L37	18	EBR_B	m	s2	900	
+L37	19	PHI	m	s2	1060	ooφ
+L37	20	PHI	h	s2	1210	
+L37	21	LOOPS	l	s2	1320	ooo struck
+L37	22	ZBAR	l	s2	1480	overlap
+L37	23	H24	m	s3	150	
+L37	24	EBR_B	m	s3	230	F-like
+L37	25	EBR_B	m	s3	300	F-like
+L37	26	PHI	m	s3	380	8 on stem alt DBL
+L37	27	PHI	h	s3	500	
+L37	28	H24	m	s3	620	
+L37	29	PHI	h	s3	760	
+L37	30	EBR_B	m	s3	850	
+L37	31	OTHER	l	s3	1010	long-s curl
+L37	32	BETA	m	s3	1180	
+L37	33	H24	m	s3	1280	
+L37	34	EBR_B	m	s3	1420	overlap
+L37	35	4TRI	m	s4	160	
+L37	36	LOOPS	m	s4	300	oo
+L37	37	VBAR_A	m	s4	420	
+L37	38	PHI	h	s4	540	
+L37	39	PHI	h	s4	650	
+L37	40	EBR_B	m	s4	780	
+L37	41	4TRI	m	s4	880	
+L37	42	LOOPS	m	s4	1020	oo
+L37	43	PHI	m	s4	1130	
+L37	44	EBR_B	m	s4	1280	
+L37	45	PHI	h	s4	1410	overlap
+L37	46	EBR_B	m	s5	140	struck
+L37	47	H24	m	s5	290	
+L37	48	EBR_B	m	s5	420	F-like
+L37	49	LOOPS	m	s5	510	oo
+L37	50	PHI	m	s5	620	8 on stem
+L37	51	LOOPS	m	s5	740	oo
+L37	52	EBR_B	m	s5	860	
+L37	53	VBAR_A	m	s5	940	
+L38	1	EBR_B	m	s1	50	faint
+L38	2	VBAR_A	m	s1	120	faint
+L38	3	PHI	m	s1	200	faint
+L38	4	BETA	m	s1	260	
+L38	5	BETA	m	s1	360	
+L38	6	EBR_B	m	s1	520	
+L38	7	PHI	m	s1	620	dark
+L38	8	EBR_B	m	s1	780	
+L38	9	4TRI	l	s1	900	bottom cut
+L38	10	PHI	l	s1	1000	bottom cut
+L38	11	4STEM	l	s1	1060	bottom cut
+L38	12	LOOPS	l	s1	1300	bottom cut
+L38	13	CH	l	s2	200	R-like alt BETA
+L38	14	4TRI	m	s2	330	
+L38	15	EBR_B	m	s2	480	struck
+L38	16	VBAR_A	m	s2	570	struck
+L38	17	4TRI	m	s2	700	
+L38	18	H24	m	s2	860	
+L38	19	PHI	h	s2	960	
+L38	20	PHI	h	s2	1100	
+L38	21	CH	l	s2	1260	R-like
+L38	22	4TRI	m	s2	1380	
+L38	23	H24	m	s3	140	
+L38	24	EBR_B	m	s3	290	
+L38	25	PHI	m	s3	400	ooφ
+L38	26	4TRI	m	s3	550	
+L38	27	EBR_B	m	s3	720	F-like
+L38	28	LOOPS	m	s3	810	oo struck
+L38	29	EBR_B	m	s3	920	
+L38	30	PHI	m	s3	1040	
+L38	31	PHI	h	s3	1190	
+L38	32	HASH4	l	s3	1300	4 over cross
+L38	33	PHI	h	s3	1430	overlap
+L38	34	4TRI	l	s4	160	identical image content to band L37 segment s4; band centring may be off
+L38	35	LOOPS	l	s4	300	oo; identical image content to band L37 segment s4; band centring may be off
+L38	36	VBAR_A	l	s4	420	identical image content to band L37 segment s4; band centring may be off
+L38	37	PHI	l	s4	540	identical image content to band L37 segment s4; band centring may be off
+L38	38	PHI	l	s4	650	identical image content to band L37 segment s4; band centring may be off
+L38	39	EBR_B	l	s4	780	identical image content to band L37 segment s4; band centring may be off
+L38	40	4TRI	l	s4	880	identical image content to band L37 segment s4; band centring may be off
+L38	41	LOOPS	l	s4	1020	oo; identical image content to band L37 segment s4; band centring may be off
+L38	42	PHI	l	s4	1130	identical image content to band L37 segment s4; band centring may be off
+L38	43	EBR_B	l	s4	1280	identical image content to band L37 segment s4; band centring may be off
+L38	44	PHI	l	s4	1410	overlap; identical image content to band L37 segment s4; band centring may be off
+L38	45	EBR_B	l	s5	140	struck; identical image content to band L37 segment s5; band centring may be off
+L38	46	H24	l	s5	290	identical image content to band L37 segment s5; band centring may be off
+L38	47	EBR_B	l	s5	420	F-like; identical image content to band L37 segment s5; band centring may be off
+L38	48	LOOPS	l	s5	510	oo; identical image content to band L37 segment s5; band centring may be off
+L38	49	PHI	l	s5	620	8 on stem; identical image content to band L37 segment s5; band centring may be off
+L38	50	LOOPS	l	s5	740	oo; identical image content to band L37 segment s5; band centring may be off
+L38	51	EBR_B	l	s5	860	identical image content to band L37 segment s5; band centring may be off
+L38	52	VBAR_A	l	s5	940	identical image content to band L37 segment s5; band centring may be off
+L39	1	EBR_B	m	s1	530	
+L39	2	PHI	h	s1	640	long stem
+L39	3	EBR_B	m	s1	790	
+L39	4	4TRI	m	s1	920	
+L39	5	HASH4	m	s1	1050	
+L39	6	LOOPS	m	s1	1180	oo
+L39	7	H24	m	s1	1310	
+L39	8	EBR_B	m	s1	1440	overlap
+L39	9	EBR_B	m	s2	180	L-shaped
+L39	10	LOOPS	m	s2	250	oo
+L39	11	EBR_B	m	s2	370	
+L39	12	4TRI	m	s2	470	
+L39	13	PHI	h	s2	580	ooφ long stem
+L39	14	4TRI	m	s2	760	
+L39	15	4TRI	m	s2	880	
+L39	16	PHI	h	s2	1010	
+L39	17	PHI	h	s2	1170	
+L39	18	LOOPS	m	s2	1270	ooo
+L39	19	H24	m	s2	1400	
+L39	20	PHI	h	s3	130	
+L39	21	4TRI	m	s3	240	
+L39	22	VBAR_A	m	s3	360	
+L39	23	HASH4	m	s3	500	
+L39	24	LOOPS	m	s3	640	oo
+L39	25	EBR_B	m	s3	770	
+L39	26	PHI	m	s3	880	
+L39	27	LOOPS	m	s3	1000	oo
+L39	28	EBR_B	m	s3	1200	F-like
+L39	29	4TRI	l	s3	1300	
+L39	30	VBAR_A	m	s3	1420	overlap
+L39	31	PHI	h	s4	120	
+L39	32	BETA	m	s4	230	alt CH
+L39	33	PHI	h	s4	330	
+L39	34	HASH4	l	s4	500	dark
+L39	35	VBAR_A	m	s4	600	
+L39	36	H24	h	s4	760	
+L39	37	EBR_B	m	s4	930	F-like
+L39	38	4TRI	m	s4	1030	
+L39	39	HASH4	l	s4	1160	4 over cross
+L39	40	PHI	h	s4	1290	
+L39	41	PHI	h	s4	1420	overlap
+L39	42	EBR_B	m	s5	160	
+L39	43	4TRI	m	s5	270	
+L39	44	H24	m	s5	390	
+L39	45	EBR_B	m	s5	540	
+L39	46	VBAR_A	m	s5	640	
+L39	47	H24	m	s5	760	
+L39	48	4TRI	m	s5	880	alt HASH4
+L39	49	LOOPS	l	s5	980	oo
+L40	1	VBAR_A	l	s1	270	top cut
+L40	2	PHI	l	s1	400	ooφ
+L40	3	HASH4	m	s1	560	
+L40	4	VBAR_A	m	s1	670	
+L40	5	EBR_B	m	s1	790	
+L40	6	4TRI	m	s1	940	
+L40	7	H24	h	s1	1100	
+L40	8	VBAR_A	m	s1	1230	
+L40	9	PHI	h	s1	1320	
+L40	10	H24	m	s1	1460	overlap
+L40	11	EBR_B	m	s2	210	E-like
+L40	12	4TRI	m	s2	330	
+L40	13	PHI	h	s2	470	
+L40	14	LOOPS	m	s2	620	oo struck
+L40	15	PHI	h	s2	780	
+L40	16	LOOPS	m	s2	880	oo
+L40	17	VBAR_A	m	s2	990	
+L40	18	4TRI	m	s2	1150	
+L40	19	PHI	m	s2	1280	oφo
+L40	20	H24	m	s2	1440	overlap
+L40	21	4TRI	m	s3	150	
+L40	22	VBAR_A	m	s3	250	
+L40	23	PHI	m	s3	400	ooo on stem
+L40	24	LOOPS	m	s3	560	oo
+L40	25	H24	m	s3	680	
+L40	26	PHI	h	s3	850	
+L40	27	4TRI	l	s3	980	crossed 4
+L40	28	4TRI	m	s3	1110	
+L40	29	PHI	h	s3	1240	
+L40	30	EBR_B	m	s3	1370	
+L40	31	PHI	m	s3	1430	8 on stem, overlap
+L40	32	BETA	l	s4	230	alt CH; identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	33	PHI	l	s4	330	identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	34	HASH4	l	s4	500	dark; identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	35	VBAR_A	l	s4	600	identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	36	H24	l	s4	760	identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	37	EBR_B	l	s4	930	F-like; identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	38	4TRI	l	s4	1030	identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	39	HASH4	l	s4	1160	4 over cross; identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	40	PHI	l	s4	1290	identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	41	PHI	l	s4	1420	overlap; identical image content to band L39 segment s4; band centring may be off; own row cut by bottom edge
+L40	42	LOOPS	m	s5	150	oo
+L40	43	C6	l	s5	250	dark 8 alt DBL
+L40	44	EBR_B	m	s5	340	L-shaped
+L40	45	4TRI	m	s5	430	
+L40	46	4STEM	m	s5	560	alt CROSS
+L40	47	4TRI	m	s5	670	
+L40	48	H24	m	s5	800	
+L40	49	H24	m	s5	950	

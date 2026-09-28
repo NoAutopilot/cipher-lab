@@ -1,0 +1,131 @@
+line	pos	sign	conf	segment	x_px	note
+L41	1	4TRI	m	s1	35	faint 4 over triangle
+L41	2	4TRI	m	s1	175	4 over small dark triangle/3-like foot; alt ZHOOK
+L41	3	VBAR_A	m	s1	300	open v with top bar
+L41	4	PHI	h	s1	410	loop to left joined on bar, phi on long stem
+L41	5	EBR_B	m	s1	525	squared E/C bracket open right
+L41	6	H24	m	s1	610	2-like curl + u/H, joined to bracket; alt OTHER
+L41	7	4TRI	h	s1	730	4 over crossed stem; alt HASH4
+L41	8	LOOPS	m	s1	840	oo chain on bar leading into phi
+L41	9	PHI	h	s1	970	loops on long stem
+L41	10	OTHER	m	s1	1125	u-shape, two stems joined at foot; alt LL
+L41	11	4TRI	h	s1	1270	4 over crossed stem; alt HASH4
+L41	12	H24	h	s1	1350	2H
+L41	13	EBR_B	m	s1	1480	squared bracket, in overlap
+L41	14	4STEM	m	s2	200	4 with long hooked stem; alt 4TRI
+L41	15	4TRI	m	s2	380	4 over b-like foot
+L41	16	4TRI	m	s2	510	4 over b-like foot
+L41	17	VBAR_A	m	s2	620	v with top bar, long tail
+L41	18	4TRI	h	s2	790	4 over crossed stem; alt HASH4
+L41	19	PHI	h	s2	910	loop left + phi on stem
+L41	20	LOOPS	m	s2	1030	dense dark oo chain
+L41	21	4STEM	m	s2	1120	4 with stem, 7-like foot
+L41	22	OTHER	l	s2	1200	7-like hook; alt ZHOOK
+L41	23	4TRI	m	s2	1285	4 over small foot
+L41	24	VBAR_A	m	s2	1375	v with bar; row continues low in s3 (segment centred on clear line, row cut by bottom edge)
+L41	25	LOOPS	l	s3	160	oo with stroke through (struck?); row cut by bottom edge
+L41	26	H24	m	s3	300	2H; cut by bottom edge
+L41	27	PHI	l	s3	440	8-like loops on stem, cut; alt DBL
+L41	28	PHI	l	s3	545	8-like loops on stem, cut; alt DBL
+L41	29	4TRI	l	s3	675	4-shaped peak, lower part cut
+L41	30	4TRI	l	s3	820	4-shaped blob, cut
+L41	31	4TRI	l	s3	950	4-shaped peak, cut
+L41	32	CROSS	l	s3	1190	cross with double bar, cut; alt 4TRI
+L41	33	PHI	l	s3	1470	cut, in overlap; = phi at s4 x~35; alt 4TRI
+L41	34	PHI	h	s4	130	loops on long stem
+L41	35	4PI	m	s4	250	4 over two stems on a bar; alt 4TRI
+L41	36	LOOPS	m	s4	370	oo chain
+L41	37	LOOPBAR	m	s4	500	two loops on stem crossed by two bars; alt OTHER
+L41	38	PHI	h	s4	630	loops on long stem
+L41	39	4TRI	m	s4	770	4 over b-like foot
+L41	40	C6	m	s4	880	6-like with crossbar over triangle; alt 4TRI
+L41	41	PHI	h	s4	1000	loop chain on one stem
+L41	42	PHI	m	s4	1135	loops on stem, curling tail; alt ELOOP
+L41	43	PHI	h	s4	1245	loops on long stem
+L41	44	VBAR_B	m	s4	1360	triangle with top bar and second bar below
+L41	45	LOOPBAR	m	s4	1500	loops on stem with two bars, in overlap; alt OTHER
+L41	46	EBR_B	m	s5	210	squared bracket open right
+L41	47	ZBAR	m	s5	285	z with bar
+L41	48	PHI	h	s5	380	loops on long stem
+L41	49	VBAR_B	m	s5	480	triangle with two bars; alt ZBAR
+L41	50	ZBAR	m	s5	545	z-like with bar; alt VBAR_A
+L41	51	PHI	h	s5	620	loop left + phi, long stem
+L41	52	H24	h	s5	715	2H
+L41	53	VBAR_A	h	s5	860	v with top bar and tail; end of row
+L42	1	VBAR_B	m	s1	50	triangle with bar through; start of row
+L42	2	VBAR_A	m	s1	160	small triangle with top bar
+L42	3	PHI	h	s1	280	loop left + phi on long stem
+L42	4	LOOPS	m	s1	420	o-q-o chain, short tail
+L42	5	4TRI	h	s1	560	4 over crossed stem with bars; alt HASH4
+L42	6	4TRI	h	s1	700	4 over b-like foot
+L42	7	4TRI	m	s1	815	4 over loop foot; alt 4PI
+L42	8	VBAR_B	m	s1	955	triangle with top and lower bar; alt ZBAR
+L42	9	PHI	h	s1	1070	loop pair on stem, curl above
+L42	10	CH	m	s1	1280	cursive h; alt BETA
+L42	11	EBR_A	m	s1	1430	L/bracket with long tapering foot, overlap
+L42	12	LOOPS	m	s1	1490	oo on bar, overlap
+L42	13	EBR_B	m	s2	190	squared bracket
+L42	14	4TRI	h	s2	300	4 over crossed stems; alt HASH4
+L42	15	H24	h	s2	450	2H
+L42	16	PHI	h	s2	600	loop left + phi on stem
+L42	17	PHI	h	s2	700	loop on top of phi; alt DBL
+L42	18	4TRI	m	s2	830	4 over b-like foot
+L42	19	VBAR_A	h	s2	970	triangle with top bar
+L42	20	4TRI	h	s2	1100	4 over double bar; alt 4PI
+L42	21	EBR_B	m	s2	1250	squared bracket
+L42	22	BETA	m	s2	1330	beta-like
+L42	23	4TRI	m	s2	1460	4 over foot, overlap
+L42	24	LOOPS	m	s3	190	oo chain
+L42	25	PHI	m	s3	315	o-q loops on stem; alt LOOPSTEM1
+L42	26	H24	m	s3	450	z/2 + H
+L42	27	PHI	h	s3	590	loops on long stem
+L42	28	4TRI	h	s3	700	4 over b-like foot
+L42	29	VBAR_A	h	s3	810	triangle with top bar
+L42	30	VBAR_B	h	s3	960	triangle with two bars
+L42	31	PHI	h	s3	1080	loops on long stem
+L42	32	LOOPS	h	s3	1210	oo chain on bar
+L42	33	OTHER	m	s3	1360	loop at foot with tall stroke rising (d/delta-like); alt BETA
+L42	34	LOOPBAR	m	s3	1480	loops on stem crossed by two bars, overlap; alt OTHER
+L42	35	VBAR_B	m	s4	250	triangle with two bars
+L42	36	PHI	h	s4	355	loops on long stem
+L42	37	ZBAR	m	s4	460	e/z-like with bar; alt VBAR_B
+L42	38	VBAR_A	h	s4	570	triangle with top bar
+L42	39	PHI	h	s4	680	loop chain on stem
+L42	40	H24	h	s4	840	2H
+L42	41	VBAR_A	h	s4	960	triangle with top bar, long tail
+L42	42	VBAR_B	h	s4	1080	triangle with two bars
+L42	43	4TRI	m	s4	1200	4 over open triangle foot
+L42	44	H24	h	s4	1360	2H
+L42	45	VBAR_A	m	s4	1480	triangle with top bar, overlap
+L42	46	4TRI	h	s5	160	4 over double bar/triangle; alt 4PI
+L42	47	4TRI	m	s5	300	4 over b-like foot
+L42	48	VBAR_A	m	s5	450	triangle with top bar
+L42	49	PHI	m	s5	540	o-q-o chain on stem
+L42	50	EBR_B	m	s5	700	squared bracket
+L42	51	H24	m	s5	800	2u/2H
+L42	52	4TRI	h	s5	900	4 over crossed stem; alt HASH4
+L42	53	LOOPS	m	s5	1005	dark oo on bar, end of row; alt ELOOP
+L43	1	PHI	m	s1	30	loops on stem, start of row
+L43	2	H24	h	s1	140	2H
+L43	3	EBR_A	m	s1	250	E-bracket with tapering foot; alt EBR_B
+L43	4	EBR_B	m	s1	370	squared bracket open right
+L43	5	PHI	h	s1	450	loops on long stem
+L43	6	LOOPS	m	s1	530	oo chain on bar
+L43	7	PHI	h	s1	640	loops on long stem
+L43	8	4TRI	m	s1	760	4 over crossed stems; alt HASH4
+L43	9	H24	h	s1	890	2H
+L43	10	VBAR_B	h	s1	1030	triangle with two bars
+L43	11	VBAR_A	m	s1	1160	small v with long bar
+L43	12	4TRI	h	s1	1290	4 over double bar/triangle
+L43	13	PHI	m	s1	1370	98-like loops on stem
+L43	14	OTHER	l	s1	1500	cut dark mark at edge, overlap
+L43	15	VBAR_B	m	s2	130	row cut by bottom edge (segment centred on L42 row)
+L43	16	PHI	l	s2	250	o-q-o chain on short stem; alt LOOPS
+L43	17	4TRI	m	s2	390	4 over foot
+L43	18	VBAR_A	m	s2	520	triangle with top bar, long tail
+L43	19	4TRI	l	s2	690	4 with crossed stems, struck
+L43	20	LOOPS	l	s2	900	long loop chain, struck
+L43	21	LOOPS	l	s2	1100	loop chain, struck
+L43	22	PHI	l	s2	1290	loop on stem, struck
+L43	23	EBR_B	m	s2	1380	squared bracket
+L43	24	EBR_B	m	s2	1500	squared bracket, overlap; s3-s5 of L43 are byte-identical to L42 s3-s5, row not visible beyond here

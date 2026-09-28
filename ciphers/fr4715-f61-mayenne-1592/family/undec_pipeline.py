@@ -38,6 +38,17 @@ for pas in ("signsA", "signsB") + (("glossA", "glossB") if have_gloss else ()):
                         try: cells[j] = str(int(round(float(cells[j]) * 2 / 3)))
                         except ValueError: pass
                 rows.append("\t".join(cells[:8 if pas.startswith("gloss") else 7]))
+    # F61-FAMILY-5 (28 Sept 2026, f.97r): a band read again in a later chunk (a recut, e.g. c7 for L19/L24) replaces the same band's
+    # rows from the earlier chunk -- rows are tagged with their chunk number here and the highest chunk per band wins.
+    if pas.startswith("signs") and len(files) > 1:
+        tagged = []; k = 0
+        for f in files:
+            n = int(re.search(r"_c(\d+)g?\.tsv$", f).group(1)); cnt = sum(1 for line in open(f) if line.strip() and not line.startswith("#") and not line.startswith("line\t"))
+            tagged += [n] * cnt
+        if len(tagged) == len(rows):
+            best = {}
+            for r, n in zip(rows, tagged): best[r.split("\t")[0]] = max(best.get(r.split("\t")[0], 0), n)
+            rows = [r for r, n in zip(rows, tagged) if n == best[r.split("\t")[0]]]
     hdr = "line\tpos\tsign\tconf\tsegment\tx_px\tnote" if pas.startswith("signs") else "line\tpos\tkind\tword\tconf\tsegment\tx0_px\tx1_px"
     with open(f"{P}/{pre}_{pas}.tsv", "w") as out: out.write(hdr + "\n" + "\n".join(rows) + "\n")
     print(pas, len(files), "chunks", len(rows), "rows")

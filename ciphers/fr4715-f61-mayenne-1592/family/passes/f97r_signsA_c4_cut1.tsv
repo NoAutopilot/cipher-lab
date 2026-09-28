@@ -1,0 +1,449 @@
+line	pos	sign	conf	segment	x_px	note
+L25	1	OTHER	l	s1	130	dark loop on stem crossed by two bars below, alt VBAR_B
+L25	2	EBR_B	m	s1	230	
+L25	3	PHI	m	s1	320	
+L25	4	4STEM	m	s1	440	alt 4TRI
+L25	5	PHI	h	s1	580	
+L25	6	LOOPS	h	s1	690	
+L25	7	LOOPS	m	s1	820	
+L25	8	PHI	h	s1	920	
+L25	9	4STEM	m	s1	1050	4 with 7-hook, alt H24
+L25	10	RSIGN	l	s1	1120	hook
+L25	11	LOOPS	l	s1	1190	small loop
+L25	12	VBAR_A	m	s1	1310	
+L25	13	4STEM	m	s1	1440	4 with 7-hook
+L25	14	H24	h	s2	170	
+L25	15	PHI	h	s2	250	
+L25	16	4STEM	m	s2	350	
+L25	17	PHI	h	s2	450	
+L25	18	LOOPS	m	s2	570	alt PHI
+L25	19	H24	h	s2	720	
+L25	20	VBAR_A	m	s2	870	triangle points left
+L25	21	VBAR_A	l	s2	970	small v
+L25	22	PHI	h	s2	1060	
+L25	23	PHI	m	s2	1160	diagonal stroke crosses it (struck?)
+L25	24	4STEM	m	s2	1300	4 with 7-hook
+L25	25	LOOPS	m	s2	1450	
+L25	26	RSIGN	l	s3	200	tall hook; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	27	LOOPS	m	s3	330	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	28	H24	m	s3	480	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	29	4TRI	l	s3	580	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	30	EBR_B	l	s3	730	alt VBAR_A; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	31	OTHER	l	s3	810	8-like; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	32	4STEM	l	s3	950	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	33	PHI	m	s3	1060	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	34	LOOPS	m	s3	1250	ooo chain; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	35	H24	l	s3	1450	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	36	VBAR_A	l	s4	150	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	37	H24	m	s4	270	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	38	EBR_B	l	s4	350	F-like; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	39	4STEM	m	s4	460	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	40	LOOPS	m	s4	620	long chain, maybe two; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	41	H24	m	s4	830	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	42	DBL	l	s4	920	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	43	4STEM	l	s4	1060	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	44	DBL	l	s4	1200	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	45	VBAR_A	l	s4	1310	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	46	OTHER	l	s4	1470	b-like; row at bottom edge, lower part cut (followed by overlap continuity)
+L25	47	ZBAR	l	s5	180	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	48	VBAR_A	l	s5	260	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	49	CA	l	s5	330	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	50	LOOPS	l	s5	470	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	51	VBAR_A	l	s5	630	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	52	PHI	l	s5	760	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	53	PHI	l	s5	860	row at bottom edge, lower part cut (followed by overlap continuity)
+L25	54	VBAR_A	l	s5	950	row at bottom edge, lower part cut (followed by overlap continuity)
+L26	1	4STEM	m	s1	130	faint
+L26	2	EBR_B	m	s1	230	
+L26	3	LOOPS	h	s1	300	
+L26	4	VBAR_A	m	s1	400	
+L26	5	4TRI	m	s1	510	
+L26	6	LOOPS	h	s1	620	
+L26	7	PHI	h	s1	760	
+L26	8	H24	h	s1	850	
+L26	9	PHI	h	s1	980	
+L26	10	LOOPS	h	s1	1100	
+L26	11	H24	m	s1	1220	
+L26	12	4STEM	m	s1	1340	
+L26	13	PHI	h	s1	1460	
+L26	14	VBAR_A	m	s2	190	
+L26	15	LOOPS	m	s2	290	
+L26	16	4STEM	m	s2	430	
+L26	17	LOOPS	h	s2	540	
+L26	18	PHI	m	s2	650	
+L26	19	4TRI	m	s2	820	
+L26	20	4STEM	m	s2	930	
+L26	21	PHI	h	s2	1050	
+L26	22	LOOPS	h	s2	1220	
+L26	23	PHI	h	s2	1340	
+L26	24	DBL	m	s2	1480	8-like on stem, alt OTHER
+L26	25	4TRI	m	s3	160	
+L26	26	PHI	h	s3	250	
+L26	27	VBAR_A	m	s3	370	
+L26	28	VBAR_A	m	s3	490	long bar
+L26	29	PHI	h	s3	650	
+L26	30	4PI	m	s3	770	
+L26	31	4TRI	m	s3	910	
+L26	32	4PI	m	s3	1030	alt 4STEM
+L26	33	PHI	h	s3	1160	
+L26	34	VBAR_A	m	s3	1290	
+L26	35	H24	m	s3	1380	
+L26	36	PHI	h	s3	1480	
+L26	37	EBR_B	m	s4	200	
+L26	38	4STEM	m	s4	290	
+L26	39	4TRI	m	s4	420	
+L26	40	OTHER	l	s4	530	long s-like hook, alt RSIGN; struck
+L26	41	LOOPS	m	s4	600	struck
+L26	42	VBAR_A	m	s4	720	struck
+L26	43	VBAR_A	m	s4	860	
+L26	44	PHI	h	s4	950	
+L26	45	4STEM	m	s4	1080	
+L26	46	4STEM	m	s4	1220	alt 4PI
+L26	47	4TRI	m	s4	1370	
+L26	48	PHI	h	s4	1470	
+L26	49	4TRI	m	s5	170	struck
+L26	50	LOOPS	m	s5	300	struck
+L26	51	PHI	m	s5	480	
+L26	52	PHI	h	s5	580	
+L26	53	VBAR_A	m	s5	690	
+L26	54	PHI	h	s5	780	
+L26	55	OTHER	m	s5	890	8 with two stems rising, alt DBL
+L26	56	EBR_B	m	s5	970	L-shaped
+L26	57	PHI	m	s5	1060	
+L26	58	4STEM	m	s5	1150	
+L27	1	EBR_B	m	s1	130	
+L27	2	LOOPS	m	s1	190	
+L27	3	EBR_B	m	s1	300	
+L27	4	OTHER	m	s1	450	R-like with long descender, alt BETA
+L27	5	PHI	m	s1	520	
+L27	6	VBAR_A	m	s1	610	
+L27	7	VBAR_A	m	s1	750	
+L27	8	LOOPS	m	s1	830	
+L27	9	VBAR_A	m	s1	950	
+L27	10	OTHER	m	s1	1120	S/8-like with foot bar, alt LOOPBAR
+L27	11	EBR_B	m	s1	1240	
+L27	12	LOOPS	h	s1	1300	
+L27	13	EBR_B	m	s1	1400	
+L27	14	PHI	h	s1	1470	
+L27	15	LOOPS	m	s2	210	alt PHI
+L27	16	H24	h	s2	370	
+L27	17	PHI	h	s2	500	
+L27	18	4TRI	m	s2	620	alt 4STEM
+L27	19	VBAR_A	m	s2	760	
+L27	20	PHI	h	s2	870	
+L27	21	4STEM	m	s2	1000	
+L27	22	VBAR_A	m	s2	1100	long bar
+L27	23	4TRI	m	s2	1260	
+L27	24	PHI	h	s2	1380	
+L27	25	DBL	l	s2	1500	at right edge
+L27	26	4STEM	m	s3	150	alt 4TRI
+L27	27	PHI	h	s3	280	
+L27	28	EBR_B	m	s3	360	alt VBAR_A
+L27	29	VBAR_A	m	s3	460	
+L27	30	PHI	h	s3	560	
+L27	31	4TRI	m	s3	680	
+L27	32	DBL	m	s3	800	
+L27	33	4STEM	m	s3	900	
+L27	34	4TRI	m	s3	1030	
+L27	35	LOOPS	m	s3	1200	
+L27	36	EBR_B	m	s3	1330	
+L27	37	PHI	h	s3	1420	
+L27	38	4PI	l	s4	150	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	39	PHI	l	s4	250	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	40	4TRI	l	s4	390	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	41	PHI	l	s4	520	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	42	EBR_B	l	s4	610	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	43	EBR_B	l	s4	690	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	44	PHI	l	s4	810	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	45	4TRI	l	s4	950	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	46	LOOPS	l	s4	1060	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	47	4STEM	l	s4	1200	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	48	VBAR_A	l	s4	1310	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	49	H24	l	s4	1450	row cut by bottom edge of this band (segment window drifted; upper row = L26 s4); codes read from the same row centred in L28 s4
+L27	50	ISH	l	s5	180	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	51	VBAR_A	l	s5	300	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	52	PHI	l	s5	400	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	53	VBAR_A	l	s5	570	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	54	PHI	l	s5	690	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	55	LOOPS	l	s5	800	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	56	PHI	l	s5	880	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	57	LOOPS	l	s5	1000	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L27	58	DASH	l	s5	1120	row cut by bottom edge of this band (upper row = L26 s5); codes read from the same row centred in L28 s5
+L28	1	LOOPS	m	s1	150	faint
+L28	2	DBL	m	s1	280	alt PHI
+L28	3	4TRI	m	s1	390	
+L28	4	PHI	m	s1	520	
+L28	5	LOOPS	m	s1	640	
+L28	6	PHI	h	s1	790	
+L28	7	LOOPS	m	s1	880	
+L28	8	PHI	h	s1	1000	
+L28	9	LOOPS	m	s1	1100	
+L28	10	VBAR_A	m	s1	1260	
+L28	11	H24	h	s1	1360	
+L28	12	EBR_B	m	s1	1490	
+L28	13	PHI	h	s2	190	
+L28	14	VBAR_A	m	s2	290	struck
+L28	15	4STEM	m	s2	400	struck
+L28	16	VBAR_A	m	s2	520	struck
+L28	17	VBAR_A	m	s2	620	struck
+L28	18	4STEM	m	s2	760	alt 4TRI
+L28	19	H24	h	s2	900	
+L28	20	PHI	h	s2	1010	
+L28	21	PHI	h	s2	1120	
+L28	22	VBAR_A	m	s2	1210	
+L28	23	VBAR_A	m	s2	1330	
+L28	24	LOOPS	m	s2	1440	alt PHI
+L28	25	4STEM	l	s3	200	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	26	VBAR_A	l	s3	330	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	27	VBAR_A	l	s3	460	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	28	PHI	l	s3	580	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	29	LOOPS	l	s3	700	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	30	LOOPS	l	s3	1080	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	31	LOOPS	l	s3	1450	row at bottom edge, only tops visible (upper row duplicates L27 s3)
+L28	32	LOOPS	m	s4	170	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	33	PHI	m	s4	290	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	34	4STEM	m	s4	420	alt 4PI; band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	35	VBAR_A	l	s4	560	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	36	PHI	m	s4	610	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	37	VBAR_A	m	s4	750	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	38	4TRI	m	s4	880	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	39	ISH	l	s4	990	inverted-T/I shape, alt EBR_B; band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	40	4TRI	m	s4	1100	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	41	PHI	h	s4	1200	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	42	PHI	m	s4	1310	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	43	H24	m	s4	1440	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s4
+L28	44	4STEM	m	s5	220	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	45	PHI	m	s5	350	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	46	4TRI	l	s5	500	ink blot below; band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	47	EBR_B	m	s5	630	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	48	LOOPS	m	s5	700	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	49	VBAR_A	l	s5	800	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	50	HASH4	m	s5	960	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L28	51	PHI	m	s5	1060	band window drifted: this row cut at bottom edge here (centred row = L27 continuation); codes read from same row at top of L29 s5
+L29	1	4TRI	m	s1	110	faint
+L29	2	PHI	h	s1	210	
+L29	3	PHI	m	s1	320	alt DBL
+L29	4	VBAR_A	m	s1	430	
+L29	5	LOOPS	m	s1	530	alt PHI
+L29	6	4PI	m	s1	680	alt 4STEM
+L29	7	4STEM	m	s1	810	
+L29	8	PHI	h	s1	950	
+L29	9	VBAR_A	m	s1	1060	long bar
+L29	10	EBR_B	m	s1	1210	
+L29	11	4PI	m	s1	1310	alt 4STEM
+L29	12	4TRI	m	s1	1460	
+L29	13	PHI	h	s2	200	
+L29	14	VBAR_A	m	s2	290	
+L29	15	4TRI	m	s2	420	
+L29	16	PHI	h	s2	550	
+L29	17	4PI	m	s2	650	
+L29	18	4STEM	m	s2	800	
+L29	19	PHI	h	s2	920	
+L29	20	PHI	m	s2	1050	
+L29	21	4TRI	m	s2	1150	
+L29	22	VBAR_A	m	s2	1260	
+L29	23	PHI	h	s2	1340	
+L29	24	PHI	h	s2	1460	
+L29	25	4TRI	m	s3	180	
+L29	26	PHI	m	s3	300	alt LOOPS
+L29	27	H24	h	s3	420	
+L29	28	PHI	h	s3	560	
+L29	29	4TRI	m	s3	700	
+L29	30	PHI	h	s3	850	
+L29	31	4TRI	m	s3	960	
+L29	32	4TRI	m	s3	1110	
+L29	33	EBR_B	m	s3	1210	
+L29	34	LOOPS	m	s3	1300	alt PHI
+L29	35	H24	m	s3	1470	
+L29	36	LOOPS	l	s4	140	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	37	PHI	l	s4	200	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	38	PHI	m	s4	290	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	39	VBAR_A	l	s4	470	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	40	4TRI	m	s4	540	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	41	EBR_B	m	s4	640	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	42	VBAR_A	m	s4	770	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	43	PHI	h	s4	860	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	44	4TRI	m	s4	1000	diagonal stroke across (struck?); row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	45	LOOPS	m	s4	1120	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	46	4STEM	m	s4	1280	alt 4PI; row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	47	VBAR_A	l	s4	1390	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	48	4STEM	m	s4	1460	row cut at bottom edge here (overlap continuity from s3); codes read from same row at top of L30 s4
+L29	49	4TRI	m	s5	210	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	50	H24	m	s5	340	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	51	VBAR_A	m	s5	420	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	52	4STEM	m	s5	560	alt HASH4; row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	53	RSIGN	l	s5	620	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	54	PHI	m	s5	700	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	55	ZHOOK	m	s5	810	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	56	LOOPS	m	s5	930	row cut at bottom edge here; codes read from same row at top of L30 s5
+L29	57	PHI	m	s5	1030	row cut at bottom edge here; codes read from same row at top of L30 s5
+L30	1	LOOPS	m	s1	110	faint
+L30	2	PHI	h	s1	230	
+L30	3	PHI	h	s1	330	
+L30	4	VBAR_A	m	s1	450	
+L30	5	EBR_B	m	s1	550	
+L30	6	PHI	h	s1	620	
+L30	7	H24	h	s1	720	
+L30	8	PHI	m	s1	850	alt LOOPS
+L30	9	LOOPS	h	s1	990	
+L30	10	PHI	h	s1	1120	
+L30	11	ZBAR	m	s1	1290	large Z
+L30	12	PHI	h	s1	1390	
+L30	13	4STEM	m	s1	1490	
+L30	14	VBAR_A	m	s2	210	
+L30	15	PHI	h	s2	300	
+L30	16	4PI	m	s2	420	alt 4STEM
+L30	17	HASH4	m	s2	540	
+L30	18	PHI	h	s2	640	
+L30	19	PHI	m	s2	760	alt DBL
+L30	20	EBR_B	m	s2	890	
+L30	21	PHI	h	s2	980	
+L30	22	VBAR_A	m	s2	1110	
+L30	23	4TRI	m	s2	1250	
+L30	24	LOOPS	l	s2	1380	
+L30	25	VBAR_A	l	s2	1470	
+L30	26	LOOPS	l	s3	140	row at bottom edge, only tops visible (overlap continuity)
+L30	27	4TRI	l	s3	210	row at bottom edge, only tops visible (overlap continuity)
+L30	28	H24	l	s3	300	row at bottom edge, only tops visible (overlap continuity)
+L30	29	PHI	l	s3	420	row at bottom edge, only tops visible (overlap continuity)
+L30	30	DBL	l	s3	520	row at bottom edge, only tops visible (overlap continuity)
+L30	31	VBAR_A	l	s3	620	row at bottom edge, only tops visible (overlap continuity)
+L30	32	OTHER	l	s3	830	A/beta-like; row at bottom edge, only tops visible (overlap continuity)
+L30	33	VBAR_A	l	s3	980	row at bottom edge, only tops visible (overlap continuity)
+L30	34	4STEM	l	s3	1100	row at bottom edge, only tops visible (overlap continuity)
+L30	35	LOOPS	l	s3	1260	row at bottom edge, only tops visible (overlap continuity)
+L30	36	LL	l	s3	1360	row at bottom edge, only tops visible (overlap continuity)
+L30	37	4STEM	l	s3	1470	row at bottom edge, only tops visible (overlap continuity)
+L30	38	PHI	l	s4	140	row at bottom edge, only tops visible (overlap continuity)
+L30	39	DBL	l	s4	240	row at bottom edge, only tops visible (overlap continuity)
+L30	40	DBL	l	s4	400	row at bottom edge, only tops visible (overlap continuity)
+L30	41	PHI	l	s4	500	row at bottom edge, only tops visible (overlap continuity)
+L30	42	4STEM	l	s4	610	row at bottom edge, only tops visible (overlap continuity)
+L30	43	LOOPS	l	s4	800	row at bottom edge, only tops visible (overlap continuity)
+L30	44	4STEM	l	s4	980	row at bottom edge, only tops visible (overlap continuity)
+L30	45	LOOPS	l	s4	1150	row at bottom edge, only tops visible (overlap continuity)
+L30	46	PHI	l	s4	1250	row at bottom edge, only tops visible (overlap continuity)
+L30	47	VBAR_A	l	s4	1380	row at bottom edge, only tops visible (overlap continuity)
+L30	48	4STEM	l	s4	1470	row at bottom edge, only tops visible (overlap continuity)
+L30	49	PHI	l	s5	150	row at bottom edge, only tops visible (overlap continuity)
+L30	50	EBR_B	l	s5	230	row at bottom edge, only tops visible (overlap continuity)
+L30	51	EBR_B	l	s5	470	row at bottom edge, only tops visible (overlap continuity)
+L30	52	VBAR_A	l	s5	580	row at bottom edge, only tops visible (overlap continuity)
+L30	53	LOOPS	l	s5	700	row at bottom edge, only tops visible (overlap continuity)
+L30	54	LOOPS	l	s5	800	row at bottom edge, only tops visible (overlap continuity)
+L30	55	4STEM	l	s5	900	row at bottom edge, only tops visible (overlap continuity)
+L30	56	OTHER	l	s5	1020	row at bottom edge, only tops visible (overlap continuity)
+L31	1	ZBAR	l	s1	100	faint; row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	2	H24	m	s1	180	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	3	PHI	m	s1	320	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	4	4STEM	m	s1	490	alt 4PI; row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	5	VBAR_A	m	s1	600	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	6	ISH	m	s1	750	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	7	4STEM	m	s1	870	alt 4TRI; row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	8	LOOPS	m	s1	950	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	9	PHI	m	s1	1060	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	10	4PI	m	s1	1200	alt 4TRI; row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	11	4TRI	m	s1	1300	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	12	4STEM	m	s1	1420	row at top edge of band, tops cut slightly (overlap continuity with s2)
+L31	13	VBAR_A	m	s2	150	
+L31	14	4STEM	m	s2	270	alt ZHOOK
+L31	15	LOOPS	l	s2	380	
+L31	16	BETA	m	s2	430	
+L31	17	VBAR_A	m	s2	570	
+L31	18	4TRI	m	s2	700	
+L31	19	H24	h	s2	830	
+L31	20	PHI	m	s2	920	alt BETA
+L31	21	PHI	h	s2	1060	
+L31	22	H24	h	s2	1210	
+L31	23	4TRI	m	s2	1340	
+L31	24	RSIGN	m	s2	1480	R-like, alt BETA
+L31	25	4PI	m	s3	230	
+L31	26	H24	h	s3	330	
+L31	27	VBAR_A	m	s3	440	alt EBR_B; long bar tail
+L31	28	4STEM	l	s3	640	alt BETA; struck
+L31	29	LOOPS	m	s3	730	struck
+L31	30	4STEM	m	s3	900	
+L31	31	PHI	h	s3	1040	
+L31	32	BETA	m	s3	1200	alt RSIGN
+L31	33	PHI	h	s3	1290	
+L31	34	BETA	m	s3	1420	
+L31	35	4STEM	m	s4	150	
+L31	36	4TRI	m	s4	270	
+L31	37	LOOPS	m	s4	390	
+L31	38	4PI	m	s4	500	
+L31	39	4TRI	m	s4	650	
+L31	40	VBAR_A	m	s4	780	
+L31	41	LOOPS	h	s4	900	
+L31	42	4TRI	m	s4	1060	
+L31	43	OTHER	l	s4	1230	n-like double hook, alt RSIGN
+L31	44	BETA	m	s4	1380	
+L31	45	4TRI	m	s4	1470	
+L31	46	HASH4	m	s5	230	alt 4STEM
+L31	47	PHI	m	s5	300	
+L31	48	4TRI	m	s5	410	
+L31	49	PHI	h	s5	490	
+L31	50	VBAR_A	m	s5	570	
+L31	51	4TRI	m	s5	670	
+L31	52	LOOPS	h	s5	770	
+L31	53	PHI	h	s5	860	
+L31	54	H24	h	s5	950	
+L31	55	PHI	h	s5	1050	
+L32	1	4STEM	l	s1	100	faint; row at top edge of band (overlap continuity with s2); left part faint
+L32	2	4TRI	l	s1	200	faint; row at top edge of band (overlap continuity with s2); left part faint
+L32	3	H24	m	s1	330	row at top edge of band (overlap continuity with s2); left part faint
+L32	4	LOOPS	m	s1	570	row at top edge of band (overlap continuity with s2); left part faint
+L32	5	LOOPS	m	s1	700	row at top edge of band (overlap continuity with s2); left part faint
+L32	6	LOOPS	m	s1	850	long stroke through (struck?); row at top edge of band (overlap continuity with s2); left part faint
+L32	7	EBR_B	m	s1	960	row at top edge of band (overlap continuity with s2); left part faint
+L32	8	LOOPS	m	s1	1040	row at top edge of band (overlap continuity with s2); left part faint
+L32	9	4TRI	m	s1	1200	row at top edge of band (overlap continuity with s2); left part faint
+L32	10	H24	m	s1	1320	row at top edge of band (overlap continuity with s2); left part faint
+L32	11	PHI	h	s1	1450	row at top edge of band (overlap continuity with s2); left part faint
+L32	12	PHI	h	s2	160	
+L32	13	OTHER	l	s2	330	large d/delta-like with loop at foot
+L32	14	OTHER	l	s2	480	A-like with crossbar
+L32	15	4TRI	m	s2	640	
+L32	16	LOOPS	m	s2	740	
+L32	17	CA	l	s2	880	
+L32	18	ZBAR	l	s2	1000	
+L32	19	VBAR_A	m	s2	1100	
+L32	20	PHI	h	s2	1260	
+L32	21	4STEM	m	s2	1400	
+L32	22	PHI	l	s2	1490	at right edge
+L32	23	4STEM	m	s3	150	alt 4TRI
+L32	24	H24	h	s3	250	
+L32	25	VBAR_A	m	s3	330	
+L32	26	4TRI	m	s3	500	
+L32	27	LOOPS	h	s3	610	
+L32	28	PHI	h	s3	730	
+L32	29	EBR_B	m	s3	830	
+L32	30	4TRI	l	s3	900	
+L32	31	LOOPS	m	s3	980	
+L32	32	PHI	h	s3	1130	
+L32	33	4TRI	m	s3	1260	
+L32	34	LOOPS	m	s3	1370	
+L32	35	PHI	m	s3	1470	
+L32	36	PHI	m	s4	140	horizontal stroke through (struck?)
+L32	37	VBAR_A	l	s4	230	
+L32	38	PHI	m	s4	300	
+L32	39	4TRI	m	s4	430	
+L32	40	4TRI	m	s4	530	
+L32	41	LOOPS	l	s4	620	
+L32	42	PHI	h	s4	700	
+L32	43	4TRI	m	s4	830	
+L32	44	4TRI	m	s4	960	alt 4STEM
+L32	45	PHI	h	s4	1060	
+L32	46	VBAR_A	l	s4	1180	
+L32	47	HASH4	l	s4	1310	dark blob
+L32	48	LOOPS	m	s4	1430	
+L32	49	PHI	m	s5	150	
+L32	50	DBL	l	s5	250	crossed by slanted stroke
+L32	51	OTHER	l	s5	370	8-like loop, alt DBL
+L32	52	EBR_B	m	s5	500	
+L32	53	LOOPS	m	s5	570	
+L32	54	EBR_B	m	s5	680	
+L32	55	PHI	h	s5	770	
+L32	56	LOOPS	m	s5	870	
+L32	57	VBAR_A	l	s5	960	
+L32	58	ZBAR	l	s5	1040	
+L32	59	DASH	m	s5	1100	

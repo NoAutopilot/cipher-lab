@@ -1,0 +1,112 @@
+line	pos	sign	conf	segment	x_px	note
+L22	1	4TRI	m	s1	155	4 over small V/loop
+L22	2	EBR_B	m	s1	265	small gamma bracket
+L22	3	4TRI	m	s1	330	
+L22	4	EBR_A	m	s1	460	bracket with foot tail; alt EBR_B
+L22	5	H24	h	s1	550	
+L22	6	PHI	m	s1	680	loop chain on descending stem
+L22	7	PHI	m	s1	820	8-loop on stem
+L22	8	PHI	h	s1	935	8-loop on stem
+L22	9	C6	l	s1	1060	delta-like loop with stem up; alt LOOPSTEM1
+L22	10	4STEM	m	s1	1150	4 with long crossed stem
+L22	11	LOOPS	m	s1	1270	
+L22	12	H24	h	s1	1370	
+L22	13	VBAR_A	m	s1	1480	in overlap
+L22	14	LOOPBAR	l	s2	230	loops on stem(s) standing on bar; alt DBL
+L22	15	VBAR_A	m	s2	340	
+L22	16	4TRI	l	s2	440	4 over loop; alt C43
+L22	17	4STEM	l	s2	600	A-like 4 with stem; alt OTHER
+L22	18	ZBAR	l	s2	700	z with bar
+L22	19	C43	l	s2	810	alt 4TRI
+L22	20	VBAR_A	l	s2	930	small
+L22	21	LOOPS	m	s2	1030	
+L22	22	PHI	h	s2	1160	
+L22	23	PHI	h	s2	1270	
+L22	24	4STEM	l	s2	1440	in overlap; alt 4TRI
+L22	25	PHI	m	s3	180	8 on stem
+L22	26	HASH4	m	s3	330	dense dark cluster
+L22	27	PHI	m	s3	470	loop chain with stem
+L22	28	LOOPS	m	s3	650	
+L22	29	LOOPS	l	s3	760	a-like loops
+L22	30	PHI	m	s3	880	loop with descending stem
+L22	31	H24	h	s3	1060	
+L22	32	CROSS	l	s3	1180	T-like bar with stem; alt DASH
+L22	33	PHI	h	s3	1310	large
+L22	34	VBAR_A	m	s3	1430	in overlap
+L22	35	VBAR_A	l	s4	140	small v
+L22	36	PHI	h	s4	220	
+L22	37	VBAR_A	m	s4	370	
+L22	38	PHI	m	s4	470	
+L22	39	PHI	h	s4	620	
+L22	40	4STEM	m	s4	740	
+L22	41	PHI	m	s4	870	loop chain
+L22	42	PHI	h	s4	970	
+L22	43	4STEM	m	s4	1120	double crossbars on stem
+L22	44	EBR_A	l	s4	1230	bracket with loop at top; alt EBR_B
+L22	45	4TRI	l	s4	1370	alt 4STEM
+L22	46	PHI	m	s4	1480	in overlap
+L22	47	VBAR_A	m	s5	210	
+L22	48	VBAR_A	l	s5	310	small
+L22	49	PHI	m	s5	400	loop chain with stem
+L22	50	H24	h	s5	560	
+L22	51	VBAR_A	l	s5	650	small v
+L22	52	4TRI	l	s5	760	alt HASH4
+L22	53	PHI	m	s5	870	
+L22	54	H24	h	s5	1040	
+L31	1	VBAR_A	m	s1	110	
+L31	2	H24	h	s1	200	
+L31	3	PHI	m	s1	340	loop chain on stem
+L31	4	4TRI	m	s1	490	
+L31	5	VBAR_A	m	s1	610	
+L31	6	OTHER	l	s1	760	dark 3/J-like tall sign with bar; alt ZBAR
+L31	7	4TRI	m	s1	880	
+L31	8	RSIGN	l	s1	960	
+L31	9	PHI	m	s1	1060	
+L31	10	4TRI	m	s1	1180	
+L31	11	4STEM	m	s1	1300	
+L31	12	4TRI	m	s1	1430	in overlap
+L31	13	VBAR_A	m	s2	150	
+L31	14	4TRI	m	s2	270	
+L31	15	RSIGN	l	s2	330	
+L31	16	PHI	m	s2	420	8 on stem
+L31	17	VBAR_A	m	s2	560	
+L31	18	4TRI	m	s2	690	
+L31	19	H24	m	s2	820	
+L31	20	PHI	m	s2	900	
+L31	21	PHI	h	s2	1060	large
+L31	22	H24	h	s2	1200	
+L31	23	4TRI	m	s2	1340	
+L31	24	BETA	l	s2	1480	R-like; in overlap
+L31	25	4TRI	l	s3	210	possibly struck by long stroke
+L31	26	H24	l	s3	320	possibly struck
+L31	27	EBR_B	l	s3	430	possibly struck
+L31	28	DASH	m	s3	500	
+L31	29	BETA	l	s3	640	alt PHI
+L31	30	LOOPS	m	s3	740	
+L31	31	4TRI	l	s3	890	
+L31	32	RSIGN	l	s3	950	
+L31	33	PHI	h	s3	1060	large
+L31	34	BETA	m	s3	1200	R-like
+L31	35	PHI	m	s3	1310	
+L31	36	BETA	m	s3	1420	R-like; in overlap
+L31	37	4STEM	m	s4	140	alt PHI
+L31	38	4TRI	m	s4	280	
+L31	39	LOOPS	m	s4	400	
+L31	40	4TRI	m	s4	520	
+L31	41	4TRI	m	s4	650	
+L31	42	VBAR_A	m	s4	790	
+L31	43	PHI	m	s4	900	loop chain on stem
+L31	44	4TRI	m	s4	1060	
+L31	45	OTHER	l	s4	1230	n-like sign with overbar
+L31	46	BETA	m	s4	1390	R-like
+L31	47	4TRI	m	s4	1470	in overlap
+L31	48	HASH4	l	s5	230	alt 4STEM
+L31	49	PHI	m	s5	300	
+L31	50	4TRI	m	s5	400	
+L31	51	PHI	m	s5	490	
+L31	52	VBAR_A	m	s5	580	
+L31	53	4STEM	m	s5	660	
+L31	54	LOOPS	m	s5	760	
+L31	55	PHI	m	s5	860	
+L31	56	H24	h	s5	950	
+L31	57	PHI	m	s5	1060	

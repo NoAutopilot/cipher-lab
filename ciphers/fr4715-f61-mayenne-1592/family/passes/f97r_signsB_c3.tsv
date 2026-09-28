@@ -1,0 +1,413 @@
+line	pos	sign	conf	segment	x_px	note
+L17	1	C43	m	s1	230	40-like, alt 4TRI
+L17	2	4TRI	m	s1	330	4 over small triangle
+L17	3	PHI	h	s1	450	loops on stem
+L17	4	4TRI	m	s1	560	4 over triangle
+L17	5	PHI	h	s1	680	loops on stem
+L17	6	4STEM	l	s1	800	arrow-like 4 with two bars on stem, alt 4PI
+L17	7	PHI	m	s1	930	loops on stem
+L17	8	EBR_B	m	s1	1010	squared C open right
+L17	9	VBAR_A	m	s1	1130	triangle with top bar
+L17	10	4TRI	m	s1	1230	crossed 4 over triangle, alt HASH4
+L17	11	PHI	h	s1	1320	dark loops on stem
+L17	12	EBR_A	m	s1	1450	E-like bracket with tail
+L17	13	LOOPS	m	s2	150	oo
+L17	14	EBR_A	m	s2	230	E-like bracket
+L17	15	LOOPS	m	s2	360	oqo, alt PHI
+L17	16	LOOPS	h	s2	550	oo
+L17	17	H24	h	s2	660	24
+L17	18	EBR_A	m	s2	780	E-like bracket
+L17	19	C43	m	s2	870	40-like
+L17	20	C43	m	s2	1010	40-like
+L17	21	PHI	h	s2	1160	loops on stem
+L17	22	LOOPS	m	s2	1260	oqo, alt PHI
+L17	23	H24	m	s2	1420	24
+L17	24	VBAR_A	m	s3	140	triangle with bar
+L17	25	4TRI	m	s3	240	crossed 4, alt HASH4
+L17	26	PHI	h	s3	360	loops on long stem
+L17	27	EBR_B	m	s3	460	squared C
+L17	28	4TRI	m	s3	570	4 over triangle
+L17	29	PHI	m	s3	680	loops on stem
+L17	30	PHI	m	s3	820	loops on stem
+L17	31	VBAR_A	m	s3	940	triangle with bar
+L17	32	H24	m	s3	1060	24, alt HASH4
+L17	33	4TRI	m	s3	1180	4 over triangle
+L17	34	PHI	h	s3	1300	loops on stem
+L17	35	PHI	m	s3	1430	loops on stem
+L17	36	EBR_B	l	s4	170	bracket with bars, alt ZBAR
+L17	37	PHI	m	s4	330	loops on long stem
+L17	38	C43	m	s4	500	43-like
+L17	39	HASH4	m	s4	640	crossed 4 cluster
+L17	40	C43	m	s4	760	40-like
+L17	41	C43	m	s4	880	40-like
+L17	42	VBAR_A	m	s4	1020	triangle with bar
+L17	43	PHI	h	s4	1100	loops on stem
+L17	44	EBR_B	l	s4	1200	bracket with bars, alt ZBAR
+L17	45	C43	m	s4	1320	40-like
+L17	46	4TRI	m	s4	1450	4 over triangle
+L17	47	H24	m	s5	170	24
+L17	48	LOOPS	m	s5	270	oo
+L17	49	H24	m	s5	380	24
+L17	50	VBAR_A	m	s5	520	triangle with bar
+L17	51	H24	m	s5	600	24
+L17	52	LOOPS	m	s5	690	oqo, alt PHI
+L17	53	C43	m	s5	850	40-like
+L17	54	4TRI	m	s5	1000	crossed 4 over stems, alt HASH4
+L17	55	PHI	h	s5	1080	loops on stem
+L18	1	LOOPS	m	s1	190	ooo
+L18	2	PHI	m	s1	330	loop on stem
+L18	3	EBR_B	m	s1	440	bracket with bars
+L18	4	VBAR_A	m	s1	520	triangle with bar
+L18	5	PHI	h	s1	610	loops on stem
+L18	6	PHI	h	s1	720	loops on stem
+L18	7	PHI	h	s1	840	loops on stem
+L18	8	EBR_B	l	s1	930	bar bracket, alt ZBAR
+L18	9	VBAR_A	m	s1	1050	triangle with bar
+L18	10	PHI	m	s1	1120	qo loop on stem
+L18	11	VBAR_A	m	s1	1220	triangle with bar
+L18	12	BETA	m	s1	1350	loop above 3-like bowl
+L18	13	BETA	m	s1	1470	beta-like
+L18	14	H24	m	s2	180	24
+L18	15	EBR_A	m	s2	260	E-like bracket
+L18	16	C43	m	s2	370	43-like
+L18	17	LOOPS	m	s2	460	oo, possibly struck
+L18	18	VBAR_A	m	s2	560	triangle with bar
+L18	19	PHI	h	s2	700	loops on stem
+L18	20	PHI	h	s2	820	loops on stem
+L18	21	EBR_B	l	s2	950	bracket with bar, alt ZBAR
+L18	22	4STEM	l	s2	1080	4 with crossed stem, alt 4TRI
+L18	23	4TRI	m	s2	1170	4 over triangle
+L18	24	H24	h	s2	1320	24
+L18	25	4TRI	m	s2	1470	crossed 4
+L18	26	PHI	h	s3	190	loops on stem
+L18	27	C43	m	s3	290	43-like
+L18	28	EBR_B	m	s3	420	bracket with bars
+L18	29	4STEM	l	s3	550	arrow-like 4 with bars on stem, alt 4PI
+L18	30	EBR_B	m	s3	680	bracket
+L18	31	PHI	h	s3	780	loops on stem
+L18	32	4TRI	m	s3	900	crossed 4
+L18	33	PHI	h	s3	1000	loops on stem
+L18	34	LOOPS	m	s3	1080	oo
+L18	35	PHI	m	s3	1170	loop on stem
+L18	36	LOOPS	m	s3	1300	oqo, alt PHI
+L18	37	H24	m	s3	1440	24
+L18	38	PHI	h	s4	160	loops on stem
+L18	39	C43	m	s4	280	43-like
+L18	40	ZBAR	l	s4	400	x-like with bar, alt EBR_B
+L18	41	EBR_B	l	s4	520	bracket, possibly struck
+L18	42	C43	m	s4	640	43-like
+L18	43	LOOPS	m	s4	790	oo
+L18	44	PHI	m	s4	880	loop on stem
+L18	45	H24	h	s4	1050	24
+L18	46	PHI	h	s4	1160	loops on stem
+L18	47	BETA	m	s4	1310	beta-like
+L18	48	PHI	m	s4	1400	loops on stem
+L18	49	VBAR_A	l	s4	1500	triangle with bar at edge
+L18	50	EBR_B	l	s5	220	T-like bar bracket
+L18	51	PHI	h	s5	330	loops on stem
+L18	52	C43	m	s5	420	40-like
+L18	53	EBR_A	m	s5	540	E-like bracket
+L18	54	C43	m	s5	620	40-like
+L18	55	4TRI	m	s5	740	4 over triangle
+L18	56	LOOPS	h	s5	850	oo
+L18	57	H24	h	s5	960	24
+L18	58	EBR_B	m	s5	1100	bracket with bar, alt ZBAR
+L19	1	VBAR_A	m	s1	200	triangle with bar
+L19	2	4STEM	l	s1	280	4 with long stem
+L19	3	OTHER	l	s1	400	A-like with bar, alt 4STEM
+L19	4	4TRI	m	s1	530	4 over triangle
+L19	5	PHI	h	s1	620	loops on stem
+L19	6	4TRI	m	s1	740	crossed 4, alt HASH4
+L19	7	LOOPS	m	s1	860	ooo
+L19	8	LOOPS	m	s1	970	qo, alt PHI
+L19	9	RSIGN	l	s1	1090	k/r-like, alt BETA
+L19	10	PHI	m	s1	1230	loops on stem
+L19	11	CA	m	s1	1370	cursive a, alt INF
+L19	12	EBR_B	l	s1	1420	c-like bracket
+L19	13	EBR_A	m	s1	1490	E-like bracket
+L19	14	EBR_A	m	s2	110	E-like bracket
+L19	15	LOOPS	m	s2	190	oo
+L19	16	EBR_A	m	s2	290	E-like bracket
+L19	17	LOOPS	m	s2	390	oqo, alt PHI
+L19	18	EBR_B	l	s2	560	bracket with bar, alt ZBAR
+L19	19	LOOPS	m	s2	680	oo, possibly struck
+L19	20	EBR_B	l	s2	790	bracket with bar, alt ZBAR
+L19	21	4TRI	m	s2	910	crossed 4, struck
+L19	22	LOOPS	m	s2	1020	ooo
+L19	23	PHI	h	s2	1150	loops on stem
+L19	24	PHI	h	s2	1260	loops on stem
+L19	25	ZBAR	l	s2	1390	z with bar, alt EBR_B
+L19	26	PHI	m	s2	1490	loops on stem
+L19	27	EBR_B	l	s3	230	bracket with bar, alt ZBAR
+L19	28	RSIGN	l	s3	360	k-like, alt BETA
+L19	29	PHI	h	s3	440	loops on stem
+L19	30	PHI	h	s3	580	loops on stem
+L19	31	H24	h	s3	700	24
+L19	32	VBAR_A	m	s3	830	triangle with bar
+L19	33	PHI	h	s3	920	loops on stem
+L19	34	EBR_B	m	s3	1000	bracket
+L19	35	LOOPS	m	s3	1130	oqo, alt PHI
+L19	36	LOOPS	m	s3	1290	oo
+L19	37	EBR_B	l	s3	1400	bracket with bar, alt ZBAR
+L19	38	H24	m	s3	1490	24
+L19	39	EBR_A	m	s4	220	L-like bracket with tail
+L19	40	PHI	h	s4	330	loops on stem
+L19	41	EBR_B	l	s4	450	bracket with bar, alt ZBAR
+L19	42	4STEM	l	s4	540	4 with stem, alt 4TRI
+L19	43	PHI	h	s4	640	loops on stem
+L19	44	H24	m	s4	750	24
+L19	45	LOOPS	m	s4	870	oo
+L19	46	LOOPS	m	s4	990	oq, alt PHI
+L19	47	H24	m	s4	1110	24
+L19	48	VBAR_A	m	s4	1200	triangle with bar
+L19	49	ZBAR	l	s4	1330	x-like with bar, alt EBR_B
+L19	50	PHI	h	s4	1450	loops on stem
+L19	51	4TRI	m	s5	160	crossed 4 over triangle
+L19	52	EBR_B	l	s5	280	bracket with bar, alt ZBAR
+L19	53	LOOPS	l	s5	380	single loop
+L19	54	PHI	m	s5	520	dark loops on stem
+L19	55	LOOPS	m	s5	580	oo
+L19	56	H24	h	s5	760	24
+L19	57	VBAR_A	m	s5	850	triangle with bar
+L19	58	4TRI	l	s5	960	A-like, struck
+L19	59	LOOPS	m	s5	1100	oqo, alt PHI
+L20	1	LOOPS	m	s1	190	oo, struck
+L20	2	4TRI	m	s1	310	4 over triangle
+L20	3	PHI	h	s1	440	loops on stem
+L20	4	PHI	h	s1	530	loops on stem
+L20	5	EBR_A	m	s1	640	E-like bracket
+L20	6	C43	m	s1	720	4z/43-like
+L20	7	LOOPS	m	s1	870	oqo, alt PHI
+L20	8	PHI	h	s1	1010	loops on stem
+L20	9	LOOPS	m	s1	1130	oqu, alt PHI
+L20	10	4TRI	m	s1	1270	4 over triangle
+L20	11	LOOPS	m	s1	1400	oo
+L20	12	PHI	m	s1	1480	loops on stem
+L20	13	H24	h	s2	230	24
+L20	14	PHI	m	s2	350	loops on stem
+L20	15	EBR_A	m	s2	470	L-like bracket with tail
+L20	16	C43	l	s2	600	4z over t, alt 4TRI
+L20	17	EBR_A	m	s2	730	E-like bracket
+L20	18	LOOPS	m	s2	860	oo
+L20	19	PHI	m	s2	980	loops on stem
+L20	20	LOOPS	m	s2	1080	oo
+L20	21	EBR_A	m	s2	1240	L-like bracket, struck
+L20	22	LOOPS	m	s2	1340	oo, struck
+L20	23	PHI	m	s2	1480	loops on stem
+L20	24	HASH4	l	s3	190	crossed 4 cluster, struck, alt H24
+L20	25	4TRI	m	s3	330	crossed 4, struck
+L20	26	LOOPS	m	s3	450	oo, struck
+L20	27	EBR_B	m	s3	590	bracket, struck
+L20	28	PHI	h	s3	720	loops on stem
+L20	29	PHI	h	s3	850	loops on stem
+L20	30	BETA	m	s3	990	beta-like
+L20	31	C43	m	s3	1110	40-like
+L20	32	H24	h	s3	1230	24
+L20	33	EBR_B	l	s3	1370	bracket with bar, alt ZBAR
+L20	34	H24	m	s3	1490	24
+L20	35	PHI	h	s4	250	loops on stem
+L20	36	C43	m	s4	360	40-like
+L20	37	4TRI	m	s4	460	crossed 4
+L20	38	LOOPS	m	s4	560	oo
+L20	39	LOOPS	m	s4	660	oq, alt PHI
+L20	40	H24	h	s4	800	24
+L20	41	EBR_B	m	s4	960	bracket
+L20	42	EBR_B	m	s4	1080	bracket
+L20	43	H24	h	s4	1170	24
+L20	44	4TRI	m	s4	1290	4 over triangle
+L20	45	BETA	l	s4	1420	loop on tall stem, alt PHI
+L20	46	LOOPS	l	s4	1490	o at edge
+L20	47	LOOPS	m	s5	180	oo
+L20	48	4TRI	m	s5	280	4 over crossed stems
+L20	49	PHI	h	s5	390	loops on stem
+L20	50	EBR_B	m	s5	510	bracket with bar
+L20	51	LOOPS	m	s5	650	oo dark
+L20	52	H24	h	s5	760	24
+L20	53	PHI	h	s5	870	loops on stem
+L20	54	VBAR_A	m	s5	960	triangle with bar
+L20	55	DASH	m	s5	1100	long dash
+L21	1	4STEM	l	s1	180	pale 4 with bars on stem
+L21	2	EBR_B	l	s1	290	pale squared C
+L21	3	RSIGN	l	s1	410	pale k-like, alt BETA
+L21	4	EBR_B	l	s1	510	bracket with bar, struck, alt ZBAR
+L21	5	C43	m	s1	640	43-like, struck
+L21	6	LOOPS	m	s1	770	oo, struck
+L21	7	C43	m	s1	950	43-like, struck
+L21	8	PHI	h	s1	1120	loops on stem
+L21	9	LOOPS	m	s1	1240	ogo, alt PHI
+L21	10	H24	h	s1	1440	24
+L21	11	VBAR_A	m	s2	170	triangle with bar
+L21	12	C43	m	s2	330	43-like
+L21	13	LOOPS	m	s2	480	oo
+L21	14	LOOPS	m	s2	600	oqo, alt PHI
+L21	15	H24	h	s2	760	24
+L21	16	PHI	h	s2	900	loops on stem
+L21	17	4TRI	m	s2	1040	4 over triangle
+L21	18	EBR_A	m	s2	1150	L-like bracket
+L21	19	LOOPS	m	s2	1240	oo, struck
+L21	20	ZBAR	l	s2	1370	x with bar, alt EBR_B
+L21	21	4TRI	m	s2	1480	4 over triangle
+L21	22	PHI	h	s3	230	loops on stem
+L21	23	EBR_A	m	s3	340	L-like bracket
+L21	24	LOOPS	m	s3	440	oq, alt PHI
+L21	25	4TRI	m	s3	570	4 over triangle
+L21	26	PHI	m	s3	700	dark loop on stem, alt 4STEM
+L21	27	PHI	l	s3	800	loop on stem, alt 4STEM
+L21	28	C43	m	s3	930	40-like
+L21	29	4TRI	m	s3	1050	4 over triangle
+L21	30	PHI	h	s3	1150	loops on stem
+L21	31	BETA	m	s3	1280	tall beta-like
+L21	32	PHI	m	s3	1380	loops on stem
+L21	33	4TRI	m	s3	1490	4 over triangle
+L21	34	PHI	h	s4	200	loops on stem
+L21	35	PHI	m	s4	320	two loops on stem, alt LOOPS
+L21	36	VBAR_A	m	s4	440	triangle with bar
+L21	37	PHI	h	s4	530	loops on stem
+L21	38	EBR_B	l	s4	690	long bracket, alt VBAR_A
+L21	39	VBAR_A	m	s4	780	triangle with bar
+L21	40	C43	m	s4	910	40-like
+L21	41	C43	m	s4	1040	40-like
+L21	42	VBAR_A	m	s4	1150	triangle with bar
+L21	43	HASH4	l	s4	1260	q with crossed bars, alt 4STEM
+L21	44	EBR_B	m	s4	1370	F-like bracket
+L21	45	RSIGN	l	s4	1480	r/beta-like, alt BETA
+L21	46	PHI	h	s5	200	loops on stem
+L21	47	4TRI	m	s5	330	4 over triangle
+L21	48	C43	m	s5	450	43-like
+L21	49	PHI	h	s5	590	loops on stem
+L21	50	LOOPS	l	s5	720	dark oo, alt PHI
+L21	51	PHI	m	s5	800	loop on stem
+L21	52	H24	h	s5	930	24
+L21	53	VBAR_A	m	s5	1050	triangle with bar
+L22	1	C43	m	s1	170	40-like
+L22	2	EBR_A	m	s1	270	small E-like bracket
+L22	3	C43	m	s1	330	43-like
+L22	4	EBR_A	m	s1	460	F/E-like bracket
+L22	5	H24	h	s1	550	24
+L22	6	LOOPS	m	s1	680	oqu, alt PHI
+L22	7	PHI	h	s1	820	loops on stem
+L22	8	PHI	h	s1	940	loops on stem
+L22	9	OTHER	l	s1	1070	delta/8-like loop on short stem, alt BETA
+L22	10	4STEM	m	s1	1160	4 with long crossed stem
+L22	11	LOOPS	m	s1	1260	oo
+L22	12	H24	h	s1	1360	24
+L22	13	VBAR_A	m	s1	1480	triangle with bar
+L22	14	OTHER	l	s2	210	tall 8-like on stem, alt BETA; row sits at bottom edge of s2, lower parts cut
+L22	15	ZBAR	l	s2	330	z with bar; row at bottom edge
+L22	16	4TRI	l	s2	430	A-like 4; row at bottom edge
+L22	17	HASH4	l	s2	600	dark crossed cluster; row at bottom edge
+L22	18	4TRI	l	s2	710	4; row at bottom edge
+L22	19	PHI	l	s2	800	loops on stem; row at bottom edge
+L22	20	VBAR_A	l	s2	930	triangle with bar; row at bottom edge
+L22	21	LOOPS	l	s2	1010	oo; row at bottom edge
+L22	22	PHI	l	s2	1160	loops on stem; row at bottom edge
+L22	23	PHI	l	s2	1290	loops on stem; row at bottom edge
+L22	24	4TRI	l	s2	1480	4, cut by bottom edge
+L23	1	C43	m	s1	150	43-like
+L23	2	VBAR_A	m	s1	280	triangle with bar
+L23	3	LOOPS	m	s1	420	oo, crossed by a stroke
+L23	4	LOOPS	m	s1	540	qo, alt PHI
+L23	5	BETA	m	s1	670	tall beta-like
+L23	6	BETA	l	s1	770	beta-like, alt RSIGN
+L23	7	PHI	h	s1	890	loops on stem
+L23	8	4TRI	m	s1	990	crossed 4 over triangle, alt HASH4
+L23	9	C43	m	s1	1100	40-like
+L23	10	EBR_B	m	s1	1210	bracket
+L23	11	EBR_B	l	s1	1300	bracket with bar, alt ZBAR
+L23	12	C43	m	s1	1440	40-like
+L23	13	H24	m	s2	200	24, struck
+L23	14	PHI	h	s2	320	loops on stem
+L23	15	PHI	m	s2	430	loops on stem
+L23	16	ZBAR	m	s2	580	dark z with bar
+L23	17	OTHER	m	s2	750	large plain Z, alt ZBAR
+L23	18	LOOPS	m	s2	900	oo
+L23	19	LOOPS	m	s2	990	oqo, alt PHI
+L23	20	H24	h	s2	1140	24
+L23	21	PHI	h	s2	1250	loops on stem
+L23	22	PHI	h	s2	1400	loops on stem
+L23	23	EBR_B	m	s2	1490	bracket
+L23	24	4TRI	m	s3	190	4 over triangle
+L23	25	PHI	h	s3	320	loops on stem
+L23	26	H24	h	s3	440	24
+L23	27	PHI	h	s3	540	loops on stem
+L23	28	PHI	h	s3	670	loops on stem
+L23	29	C43	m	s3	800	4z/43-like
+L23	30	H24	m	s3	980	24
+L23	31	BETA	m	s3	1140	beta-like
+L23	32	PHI	h	s3	1260	loops on stem
+L23	33	EBR_B	l	s3	1370	bracket with bar, alt ZBAR
+L23	34	RSIGN	l	s3	1490	r-like hook
+L23	35	PHI	m	s4	170	loops on stem
+L23	36	OTHER	m	s4	310	large plain Z, alt ZBAR
+L23	37	VBAR_A	m	s4	440	triangle with bar
+L23	38	C43	m	s4	560	43-like
+L23	39	VBAR_A	m	s4	700	triangle with bar
+L23	40	C43	m	s4	830	43-like
+L23	41	PHI	h	s4	960	loops on stem
+L23	42	PHI	h	s4	1080	loops on stem
+L23	43	4TRI	m	s4	1210	crossed 4 over triangle
+L23	44	PHI	m	s4	1340	loops on stem
+L23	45	EBR_B	l	s4	1470	bracket with bar, alt ZBAR
+L23	46	LOOPS	m	s5	180	ooo
+L23	47	LOOPS	m	s5	300	oqo, alt PHI
+L23	48	RSIGN	l	s5	420	k/r-like
+L23	49	BETA	m	s5	530	beta-like
+L23	50	PHI	h	s5	620	loops on stem
+L23	51	EBR_B	l	s5	740	bracket with bar, alt ZBAR
+L23	52	4TRI	m	s5	870	4 over triangle
+L23	53	C43	m	s5	970	4y/43-like
+L23	54	PHI	h	s5	1110	loops on stem
+L24	1	4TRI	l	s1	150	pale 4 over triangle, alt 4STEM
+L24	2	LOOPS	m	s1	270	oq, alt PHI
+L24	3	EBR_B	l	s1	410	bracket with bar, alt ZBAR
+L24	4	PHI	m	s1	530	pale loops on stem
+L24	5	EBR_B	l	s1	620	bracket with bar, alt ZBAR
+L24	6	4TRI	m	s1	750	4 over triangle
+L24	7	PHI	h	s1	870	loops on stem
+L24	8	4TRI	m	s1	980	4 over crossed stem, alt 4STEM
+L24	9	PHI	h	s1	1110	loops on stem
+L24	10	RSIGN	l	s1	1180	r-like hook
+L24	11	H24	m	s1	1300	24
+L24	12	LOOPS	l	s1	1450	oq, alt PHI
+L24	13	H24	m	s2	250	24
+L24	14	RSIGN	l	s2	370	R/k-like, alt BETA
+L24	15	4TRI	m	s2	490	4 over triangle
+L24	16	LOOPS	m	s2	600	oqo, alt PHI
+L24	17	PHI	h	s2	750	loops on stem
+L24	18	VBAR_A	m	s2	900	long triangle with bar
+L24	19	C43	m	s2	1000	40-like
+L24	20	C43	m	s2	1140	40-like
+L24	21	4TRI	m	s2	1260	4 over triangle
+L24	22	PHI	h	s2	1370	loops on stem
+L24	23	4TRI	m	s3	150	crossed 4, alt HASH4
+L24	24	PHI	h	s3	250	loops on stem
+L24	25	EBR_B	l	s3	350	bracket with bar, alt ZBAR
+L24	26	PHI	h	s3	460	loops on stem
+L24	27	VBAR_A	m	s3	570	triangle with bar
+L24	28	PHI	h	s3	670	loops on stem
+L24	29	C43	m	s3	760	40-like
+L24	30	HASH4	m	s3	870	crossed cluster with stems
+L24	31	PHI	h	s3	970	loops on stem
+L24	32	PHI	h	s3	1100	loops on stem
+L24	33	C43	m	s3	1220	40-like
+L24	34	LOOPS	m	s3	1370	oqo, alt PHI
+L24	35	PHI	m	s3	1470	loop on stem
+L24	36	C43	m	s4	240	40-like
+L24	37	C43	m	s4	370	43-like
+L24	38	PHI	h	s4	470	loops on stem
+L24	39	LOOPS	m	s4	620	oq, alt PHI
+L24	40	4TRI	m	s4	760	4 over triangle
+L24	41	H24	h	s4	880	24
+L24	42	C43	m	s4	1030	43-like
+L24	43	H24	m	s4	1140	dark 24, alt HASH4
+L24	44	LOOPS	m	s4	1300	oq, alt PHI
+L24	45	C43	m	s4	1460	40-like
+L24	46	PHI	h	s5	200	loops on stem
+L24	47	C43	m	s5	300	40-like
+L24	48	LOOPS	m	s5	410	oo
+L24	49	PHI	h	s5	550	loops on stem
+L24	50	PHI	h	s5	650	loops on stem
+L24	51	EBR_B	l	s5	760	bracket with bar, alt ZBAR
+L24	52	PHI	h	s5	860	loops on stem
+L24	53	LOOPS	m	s5	960	oo
+L24	54	OTHER	l	s5	1080	x-like hook with descending tail, alt ZHOOK

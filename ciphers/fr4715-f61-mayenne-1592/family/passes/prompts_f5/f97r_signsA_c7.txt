@@ -1,0 +1,51 @@
+You are a blind transcriber of a 16th-century French cipher manuscript (BnF fr.3982 f.97r, de Diou to president Jeannin, Rome, dated on the leaf 27 October 1592). You will list every CIPHER SIGN, left to right, in each of 2 line bands (L19, L24). Each band is one cipher row of the leaf and is given as FIVE image segments s1..s5 (left to right), each 1520 px wide (s5 1300 px) and 250 px tall, scaled 2x from the native scan. Consecutive segments of a band OVERLAP by 120 px: the last 120 px of segment sN show the same signs as the first 120 px of segment sN+1 (red tick marks at the top edge mark the overlap zone). List a sign that falls in the overlap ONCE ONLY, in the earlier segment; in the later segment start listing after the red tick.
+
+What a band shows: the cipher row runs across the middle of the band (a sequence of invented signs: 4-like figures with loops, chains of small loops on stems, triangles with a bar, brackets, 43-like marks); ABOVE it, a line of small ordinary handwriting (French clear words and long dashes) -- IGNORE that clear line entirely, it is not signs. The rows are not perfectly level (they rise a little towards the right), and each segment was centred on the row separately, so the row may sit slightly higher or lower from one segment to the next. The band's bottom edge may cut through the NEXT clear line or the tops of the next cipher row, and its top edge may cut through the descenders of the previous cipher row: transcribe only the ONE complete cipher row of this band, never marks cut by the top or bottom edge. Some bands carry an ordinary clear word INSIDE the cipher row (in the row itself, not above it): list such a word as one row with sign = PLAIN and the word in the note. A long horizontal dash inside the cipher row (a stroke with no sign shape) is listed as sign = DASH. A stroke that crosses out signs (a cancellation) is noted on the signs it crosses ('struck') and the signs are still listed.
+
+Code every sign with the shape atlas below (the 'code' column). Use OTHER for a sign matching none, with a shape description in the note. If a sign is between two codes, give the best code and name the alternative in the note as 'alt CODE'. A chain of several small loops on one stem or bar is ONE sign (PHI) -- but two separate stems are two signs. Confidence h/m/l.
+
+Atlas (code TAB shape):
+PHI	loops (one or several) on a long vertical stem, phi-like
+C43	a mark shaped like the digits 43 written together
+CA	a mark shaped like a cursive a
+VBAR_A	closed down-pointing triangle whose top side is a horizontal bar, nothing above the bar, no second bar
+VBAR_B	closed down-pointing triangle with a top bar AND a second horizontal bar crossing its bottom point
+C6	a mark shaped like the digit 6
+4TRI	a 4-shaped element (4 with a crossbar) sitting above a small triangle or V
+INF	an infinity sign or figure-8 lying on a horizontal bar
+DBL	two loops on a stem, one above the other (o-T-o)
+LOOPBAR	a loop on a stem with a bar at the foot
+EBR_A	an E-like bracket open to the right whose top bar is joined to the foot of the vertical by a fine hairline diagonal, the foot bar longer than the top bar and tapering into a tail (H22 group A)
+EBR_B	a plain squared C or gamma open to the right: top bar and foot bar on a vertical, no diagonal, the top bar longest, often a short spur of the vertical above the top bar (H22 group B)
+ISH	a closed capital I: a thin vertical with a bar on both sides at top and foot (H22 group C)
+ZHOOK	a 7 or Z hook over two close slanted stems, crossed
+CROSS	a plain plus or cross, possibly with a stroke rising to the upper right
+ELOOP	a dark e-shaped loop with a curling tail
+4PI	a 4-shaped element above two stems on a bar (4 over pi)
+HASH4	a dense crossed-4 cluster, hash-like, with stems
+LOOPSTEM1	a single loop on a long stem (not phi-like, not double)
+CH	a mark shaped like a cursive h
+BETA	a beta-like shape: a loop at the top of a stem with a 3-like bowl below it
+LL	a mark shaped like ll
+4STEM	a 4 with a long crossed stem and no triangle below
+OTHER	any cipher sign matching none of the above (describe it in the note)
+H24	a 2-like curl joined to a crossed 4 (the '24' sign); distinct from HASH4, the plain dense crossed-4/hash cluster
+LOOPS	a chain of two or more small loops written side by side with NO stem and NO bar (like 'oo' or 'ooo'); a chain that sits on a vertical stem is PHI, not LOOPS
+ZBAR	a z-like or 2-like zigzag stroke with a horizontal bar through or under it and no stems; distinct from ZHOOK (a 7/Z hook over two slanted stems)
+RSIGN	a small r-like or 5-like sign, a short stem with a hook to the right, no loop (pass A of chunk 1 called it 'r-like, alt beta')
+
+Read the 10 images with the Read tool in this order: for each band, segment s1, s2, s3, s4, s5:
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L19_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L19_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L19_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L19_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L19_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L24_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L24_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L24_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L24_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f97r2/f97r2_L24_s5.jpg
+Write your transcription as a TSV file with the Write tool to the OUTPUT PATH given at the end of this prompt, header exactly:
+line	pos	sign	conf	segment	x_px	note
+one row per sign; 'line' is the band id (L01..L42); 'pos' counts from 1 within the band across all five segments; 'segment' is s1..s5; 'x_px' is the sign's horizontal centre in pixels within its segment image (0-1520); 'note' is free text (shape words, 'alt CODE', or the clear word for PLAIN). No letters of the alphabet are to be guessed for any sign: this is a shape transcription only, and no key or reading is to be attempted. When done, report only: the number of signs per band, and the total.
+OUTPUT PATH: /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/passes/f97r_signsA_c7.tsv

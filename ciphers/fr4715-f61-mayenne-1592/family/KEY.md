@@ -266,3 +266,29 @@ the five glossed hands does; H43's blind shape sort against the covered classes 
 check is script-only). The scattered n = 1 gloss tokens (CA c/q/s/t/p, ZHOOK a/e/r and f.108v's held a 7 / e 4 / u 4, LOOPBAR e/u,
 CROSS p, LL e) are listed in rare_classes.tsv for the record and used by nothing.
 
+
+## de Diou's gloss hand (f.124r, f.97r): a letter-aligned recipe, held after its own control (F61-FAMILY-5, 28 Sept 2026)
+
+H45 left f.124r's gloss HELD at 42% word agreement. The brief's recipe: read the gloss AS LETTERS ALIGNED TO SIGNS. Segments of
+8 signs were cut from the native leaf at 3x (`cut_segments.py`: cipher centre - 82 to + 42 native px, a white strip under the crop
+with a numbered red tick at every sign's x, the x recovered per draft position from pass A or B), and each blind Opus reader was
+given the image plus the v3 skeleton of the segment (the period letter SET per position, `?` where none). Control design: 40% of
+the covered positions were hidden as `?` (seed per segment) so that a reader cannot tell a hidden covered position from a truly
+uncovered one; agreement on the hidden positions measures reading, not copying (`sheets/f124s_segments.json`, `score_letters.py`,
+`place_letters.py`). Prompts in `passes/PROMPTS_f124r_gloss.md`, written before every call; the exact texts in `passes/prompts_f5/`.
+
+| form | unit | hidden positions in the v3 set (A / B / where A = B) | shown positions | word agreement A vs B |
+|---|---|---|---|---|
+| letter per tick (c0, 8 segments of L01-L02, 62 rows per pass) | one letter above each tick | 12/32 = 0.375 / 10/32 = 0.312 / 9/23 = 0.391 | 0.536 / 0.536 | (34/51 positions identical) |
+| word with tick span (same segments, the one knob change; letters placed by a monotone DP that scores +1 for a letter inside a shown set, 0 at a hidden or uncovered position) | word + first/last tick | 14/32 = 0.438 / 12/32 = 0.375 / 11/20 = 0.550 | 0.571 / 0.500 | 10/25 = 0.400 |
+
+Gate 0.8 on the hidden positions: FAIL both forms; the shown positions -- where the reader holds the answer set -- pass no better
+than 0.57, and the word agreement (0.40) is H45's 42% again. Why (from `sheets/f124s/f124s_L01_g8.jpg`, looked at by this session):
+the decipherer writes each clear word compactly over a span of signs ("tisfaict" over four struck signs, then a dash), so a letter
+does not sit above each sign, and the words themselves ("?rie"/"?ue", "estr"/"astr", "fin ss?r"/"tiu sse d?") are read differently
+by two readers at 3x with the signs marked. Per the brief (one knob, then hold) no target gloss call was spent on either leaf and
+no key rows come from de Diou's gloss: `key_period_f124_held.tsv` stands, no `key_period_f124.tsv`/`key_period_f97.tsv`, no v4.
+The readers' word files are kept (`passes/f124s_letters*_c0.tsv`, `passes/f124s_words*_c0.tsv`, `passes/f124s_placed_c0.tsv`) and
+used by nothing. What would settle it: a person's reading of six f.124r rows as a known-answer control (H46 option b), against
+which a reader's word list can be scored before any further gloss call; or a 4x recut of the gloss row alone with a word-level
+gate -- not a third pass at the same 3x segments (CLAUDE.md rule 3, the "same knob" lesson).

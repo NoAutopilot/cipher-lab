@@ -1375,3 +1375,39 @@ H26 puts in the b/o group) and for L10 6/11 -- H25 rebuilds its sets with the sp
 
 Files: `scripts/f61qo2.py`, `f61joint_h51_result.txt`, `f61joint_h51_map.tsv`, `scripts/f61fragment.py`,
 `scripts/fragment_L10.tsv`; HYPOTHESES.md row added. No class change; nothing solved, new or first.
+## Campaign step H46 (2026-09-28 04:32-05:0x UTC) -- de Diou's gloss hand, a letter-aligned recipe, HELD after its own control (F61-FAMILY-5)
+
+Parent worker F61-FAMILY-5 (Fable, session_015tVb7hadE1VHpChmm1nEYK, cap 45, box 150 min), owner account, working in
+family/ only. Both natives regenerated once (2 Gallica requests, family/requests.log; f.124r sha1 8b7e91c7 as the 03:15
+fetch, f.97r 87d4236c as the 00:xx fetch -- Gallica's byte stream alternates between two encodes, same dimensions).
+
+**Recipe (brief step 1).** The gloss on f.124r is a letter-by-letter interlinear decipherment (H45: L01 reads cleanly under
+v3), so it was read as letters aligned to signs, not as words: `family/cut_segments.py` cuts each coded band into segments of
+8 signs at 3x (cipher centre - 82 / + 42 native px, chosen after three segments were looked at by this session), with a
+numbered red tick under every sign's x (recovered per draft position from pass A, or B where A has a gap), and writes the
+v3 skeleton per segment (`family/f124r_decode_period_v3.tsv`) with 40% (control) / 30% (target) of the covered positions
+HIDDEN as `?` so a reader cannot tell a hidden covered position from an uncovered one. Two blind Opus passes per chunk,
+prompts in `family/passes/PROMPTS_f124r_gloss.md` written before every call (exact texts `family/passes/prompts_f5/`),
+reconciled by `tools/reconcile_passes.py` (nw) per (segment, position); scored by `family/score_letters.py` /
+`family/place_letters.py` on the hidden positions (in the v3 set or not), the shown positions and A-vs-B agreement.
+
+**Positive control (pre-registered gate 0.8 on the hidden positions; chunk c0 = 8 segments of L01-L02 whose classes
+are all covered, 32 hidden positions, 2 calls per form):**
+
+| form | hidden in set: A / B / A = B | shown in set: A / B | A vs B |
+|---|---|---|---|
+| letter per tick (62 rows per pass) | 12/32 = 0.375 / 10/32 = 0.312 / 9/23 = 0.391 | 15/28 = 0.536 / 0.536 | 34/51 positions |
+| word + tick span, letters placed by DP (the one knob change; 27 / 26 rows) | 14/32 = 0.438 / 12/32 = 0.375 / 11/20 = 0.550 | 16/28 = 0.571 / 14/28 = 0.500 | words 10/25 = 0.400 |
+
+FAIL both forms. The readers agree with each other on 40% of words, H45's 42% again, and even where the answer set is
+shown they pass at 0.5-0.57: the gloss is written compactly, one word over a span of signs, not a letter per sign
+(`family/sheets/f124s/f124s_L01_g8.jpg`: "tisfaict" over four struck signs, then a dash; own look), and the words
+themselves are read differently by two readers at 3x with the signs ticked ("?rie"/"?ue", "estr"/"astr", "fin ss?r"/"tiu sse
+d?"). Per the brief (one knob, then hold): no target gloss call on f.124r's 45 rows, none on f.97r; no key rows from de
+Diou's gloss; `key_period_f124_held.tsv` stands; no `key_period_f124.tsv`, no `key_period_f97.tsv`, no v4 (brief steps 3-4
+not reached, the every-class condition unchanged); v3 stands at 511 pairs / 24 classes, known spans 0.782 vs permuted max
+0.618, f.108r 0.786 vs 0.512, f.61 coverage 0.80. The pass files are kept for the record and used by nothing
+(`family/passes/f124s_letters*_c0.tsv`, `f124s_words*_c0.tsv`, `f124s_placed_c0.tsv`, `recf124s_c0/`). Calls: 4 (all
+vision). Untestable [by blind model readers at 2x-3x] on this hand, not refuted: what would settle it is a known answer --
+a person's reading of six f.124r rows (H46 option b) against which a reader's word list is scored before any further
+call, or a period gloss in a clearer hand for the same signs; not a further pass at the same segments (CLAUDE.md rule 3).

@@ -23,6 +23,14 @@ CA	f.61r	L08	10	[e/r/o] [a/n] [u/e] e	[n/a/c/p] [e/r/o] [e/r/o] [e/r/o]	1
 CA	f.61r	L10	2	| [l/s/a]	[e/r/o] [t/s/f] [e/r/o] [e/r/o]	0
 CA	f.61r	L10	9	[e/r/o] [e/r/o] s [u/e]	e [e/r/o] ? e	3
 CA	f.61r	L10	12	[u/e] ? e [e/r/o]	e |	2
+CA	f.97r	L02	15	[e/r/o] [u/o] [e/r/o] [u/o]	[n/a/c/p] [e/r/o] [s/f] [e/r/o]	0
+CA	f.97r	L03	54	[u/o] [e/r/o] [n/a/c/e] ?	[n/a/c/e] [n/a/c/p] [n/a/c/e] [e/r/o]	0
+CA	f.97r	L11	44	? [u/o] [s/f] [t/s/f]	[n/a/c/e] [u/o] [n/a/c/e] [i/j/y]	0
+CA	f.97r	L13	18	? [i/j/y] [e/r/o] [u/o]	? [t/s/f] [s/f] [m/s]	0
+CA	f.97r	L16	34	[t/s/f] [n/a/c/p] [e/r/o] [u/o]	[u/o] [e/r/o] ? ?	0
+CA	f.97r	L16	53	[n/a/c/p] [t/s/f] [u/o] [e/r/o]	[e/r/o] ? ? [e/r/o]	0
+CA	f.97r	L16	55	[u/o] [e/r/o] ? [e/r/o]	? [e/r/o] [m/s] [u/o]	0
+CA	f.97r	L19	12	[u/o] [u/o] [e/m] [e/r/o]	? ? ? [u/o]	0
 LOOPBAR	f.101r	L09	45	[t/s/f] ? r [e/r/o]	[d/q/i] [i/j/y] [t/s/f] [n/a/c/e]	1
 LOOPBAR	f.108v	L02	28	[u/e] [l/s/a] [e/r/o] [m/s]	[a/n] [t/s/f] [d/q/i] [u/e]	0
 LOOPBAR	f.108v	L03	34	[e/r/o] [a/n] ? [d/q/i]	[a/n] [e/r/o] [m/s] [d/q/i]	0
@@ -34,6 +42,9 @@ LOOPBAR	f.61r	L03	2	| ?	r [e/r/o] s [t/s/f]	2
 LOOPBAR	f.61r	L03	12	[a/n] ? [n/a/c/p] e	[a/n] [e/r/u] [l/s/a] |	1
 LOOPBAR	f.61r	L04	1	|	? |	0
 LOOPBAR	f.61r	L07	2	| ?	? [m/s] [l/s/a] e	1
+LOOPBAR	f.97r	L22	15	[n/a/c/e] [u/o] [i/j/y] [t/s/f]	[t/s/f] [n/a/c/p] [n/a/c/e] [s/f]	0
+LOOPBAR	f.97r	L41	42	[e/r/o] [e/r/o] [n/a/c/p] [u/o]	[e/r/o] [n/a/c/p] e [e/r/o]	1
+LOOPBAR	f.97r	L42	35	[s/f] [e/r/o] [u/o] ?	[s/f] [e/r/o] ? [t/s/f]	0
 ZHOOK	f.101r	L08	35	[n/a/c/e] [e/r/o] ? [e/r/u]	[m/t/c/p/n/s] [e/r/o] [s/f] [n/a/c/p]	0
 ZHOOK	f.101r	L17	2	| [n/a/c/e]	[u/o] [m/s] [e/r/o] ?	0
 ZHOOK	f.101r	L41	44	[e/r/o] [n/a/c/p] [t/s/f] [n/a/c/e]	[n/a/c/p] [t/s/f] [d/q/i] [u/o]	0
@@ -68,6 +79,7 @@ ZHOOK	f.124r	L39	45	? ? [u/o] [n/a/c/p]	[u/o] [u/o] [i/j/y] [e/r/o]	0
 ZHOOK	f.61r	L07	3	| ? ?	[m/s] [l/s/a] e [e/r/o]	1
 ZHOOK	f.61r	L07	11	[e/r/o] [u/e] s ?	|	1
 ZHOOK	f.61r	L11	11	[e/r/o] [n/a/c/e] [d/a/q/n] [e/r/u]	[t/s/f] |	0
+ZHOOK	f.97r	L32	14	[i/j/y] [e/r/o] [e/r/o] ?	[n/a/c/p] [e/r/o] [u/o] [s/f]	0
 CROSS	f.101r	L26	23	[d/q/i] [e/r/o] [e/r/o] [t/s/f]	[d/q/i] [n/a/c/p] [e/r/o] [t/s/f]	0
 CROSS	f.108v	L03	41	[m/s] [d/q/i] ? [l/s/a]	[e/r/o] s |	1
 CROSS	f.108v	L06	4	| [e/r/o] ? [n/a/c/e]	[e/r/o] ? [n/a/c/e] [t/s/f]	0
@@ -76,5 +88,13 @@ CROSS	f.124r	L17	14	[n/a/c/p] [u/o] [e/r/o] [i/j/y]	[e/r/o] [n/a/c/p] [e/r/o] [u
 CROSS	f.124r	L33	61	[d/q/i] ? ? [u/o]	? [m/s] |	0
 CROSS	f.61r	L01	1	|	e [a/n] [u/e] [e/r/o]	1
 CROSS	f.61r	L07	10	e [e/r/o] [u/e] s	? |	2
+CROSS	f.97r	L01	58	[s/f] [n/a/c/p] [u/o] [e/r/o]	[n/a/c/p] [e/r/o] [m/s] [e/r/o]	0
+CROSS	f.97r	L01	72	[u/o] [e/r/o] [e/r/o] [e/r/o]	[n/a/c/e] r |	1
+CROSS	f.97r	L07	11	[e/r/o] [t/s/f] [n/a/c/p] ?	[n/a/c/p] [e/r/o] [e/r/o] [e/r/o]	0
+CROSS	f.97r	L09	25	[n/a/c/e] [m/t/c/p/n/s] [e/r/o] [e/r/o]	[n/a/c/p] ? [s/f] [e/r/o]	0
+CROSS	f.97r	L22	33	[u/o] [u/o] [e/r/o] [i/j/y]	[e/r/o] [t/s/f] [t/s/f] [e/r/o]	0
+CROSS	f.97r	L26	14	[u/o] [i/j/y] [n/a/c/p] [e/r/o]	[u/o] [n/a/c/p] [u/o] [e/r/o]	0
+CROSS	f.97r	L41	37	[u/e] ? ? ?	[e/r/o] [e/r/o] [n/a/c/p] [u/o]	0
 LL	f.188r	L01	28	{ll-like} [n/a/c/e] [u/o] [n/a/c/e]	[n/a/c/e] [e/r/o] [s/f] [n/a/c/p]	0
 LL	f.61r	L05	16	e [a/n] [n/a/c/p] [e/r/o]	[e/r/o] s |	2
+LL	f.97r	L07	37	[u/o] [u/o] [s/f] [i/j/y]	[i/j/y] [u/o] [d/q/i] [n/a/c/p]	0

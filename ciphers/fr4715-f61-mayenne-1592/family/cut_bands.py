@@ -43,8 +43,13 @@ for n, c in enumerate(centres, 1):
             lo, hi = max(0, base - N), min(h, base + N); cc = lo + int(np.argmax(pr[lo:hi]))
         prev_cc = cc
         if '--local' in a:
-            N = opt('--local', 35); pr = (arr[:, x0:x1] < 150).sum(axis=1).astype(float); pr = np.convolve(pr, np.ones(k) / k, mode='same')
-            lo, hi = max(0, c - N), min(h, c + N); cc = lo + int(np.argmax(pr[lo:hi]))
+            # --slope S (F61-FAMILY-5, 28 Sept 2026, f.97r): the rows of this leaf descend about 0.011 px per px to the right, so a
+            # segment at the far right sits 30-45 px below the band centre -- outside a +-N window, where --local then locks onto the
+            # gloss row 45 px above (27 of 42 bands clipped at +-40). With --slope the window is centred on c + S * (segment mid x
+            # - first segment mid x), and N can stay small enough to exclude the gloss.
+            N = opt('--local', 35); base = c + int(round(opt('--slope', 0.0) * ((x0 + x1) / 2 - (starts[0] + min(w, starts[0] + seg)) / 2)))
+            pr = (arr[:, x0:x1] < 150).sum(axis=1).astype(float); pr = np.convolve(pr, np.ones(k) / k, mode='same')
+            lo, hi = max(0, base - N), min(h, base + N); cc = lo + int(np.argmax(pr[lo:hi]))
         y0, y1 = max(0, cc - up), min(h, cc + down)
         d.line((x0, cc, x1, cc), fill=(255, 0, 0), width=2); d.rectangle((x0, y0, x1 - 1, y1), outline=(0, 0, 255), width=2)
         band = im.crop((0, y0, w, y1)); crop = band.crop((x0, 0, x1, band.height)).convert('RGB')

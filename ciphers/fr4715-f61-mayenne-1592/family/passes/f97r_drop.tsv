@@ -1,0 +1,11 @@
+# f97r_drop.tsv -- F61-FAMILY-5, 28 Sept 2026: crops held out of the f.97r draft. chain_rows.py chained L35 s3-s5 onto the row L34 already reads (both readers: the same 31 signs listed twice), and L38 s3-s5 and L43 s3-s5 are byte-identical to L37 / L42 (the chain lost the row; both readers listed nothing or flagged it).
+line	segment
+L35	s3
+L35	s4
+L35	s5
+L38	s3
+L38	s4
+L38	s5
+L43	s3
+L43	s4
+L43	s5

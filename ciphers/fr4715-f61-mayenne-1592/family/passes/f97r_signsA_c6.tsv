@@ -1,0 +1,131 @@
+line	pos	sign	conf	segment	x_px	note
+L41	1	4TRI	m	s1	40	faint 4 over triangle
+L41	2	4STEM	m	s1	170	4 with crossed stem, alt 4TRI
+L41	3	RSIGN	l	s1	210	small r-like stem
+L41	4	VBAR_A	m	s1	285	open-looking triangle with top bar
+L41	5	PHI	h	s1	420	loop on long stem
+L41	6	EBR_A	m	s1	525	E-bracket, alt EBR_B
+L41	7	OTHER	l	s1	600	u-like double stem joined at foot, alt LL
+L41	8	4TRI	m	s1	720	4 over small triangle
+L41	9	LOOPS	m	s1	850	chain of small loops on a stroke
+L41	10	PHI	h	s1	975	loops on long stem
+L41	11	OTHER	m	s1	1120	u / square-cup shape with two stems
+L41	12	4TRI	m	s1	1260	4 over triangle, crossed
+L41	13	H24	l	s1	1350	2-like curl joined to crossed 4
+L41	14	EBR_A	l	s2	150	E-bracket with long foot bar
+L41	15	4TRI	m	s2	220	4 with small hook/triangle
+L41	16	4TRI	m	s2	380	4 over triangle
+L41	17	4STEM	l	s2	460	4 with stem, alt 4TRI
+L41	18	RSIGN	l	s2	510	r-like hook
+L41	19	VBAR_A	m	s2	620	triangle with top bar
+L41	20	4TRI	m	s2	790	4 over triangle, crossed
+L41	21	PHI	h	s2	900	loops on stem
+L41	22	ELOOP	l	s2	1000	dark heavy loop, alt LOOPS
+L41	23	LOOPS	m	s2	1050	small loops chain
+L41	24	4TRI	l	s2	1130	4 element, run-on
+L41	25	ZBAR	l	s2	1190	z-like stroke with bar
+L41	26	4TRI	l	s2	1290	4 element, run-on
+L41	27	VBAR_A	l	s2	1360	triangle, run-on
+L41	28	VBAR_A	l	s3	30	triangle; row here cut by bottom edge of segment
+L41	29	LOOPS	l	s3	160	loops chain, struck by a horizontal stroke
+L41	30	H24	l	s3	290	24 sign, bottom cut
+L41	31	INF	l	s3	420	figure-8 shape, bottom cut, alt PHI
+L41	32	INF	l	s3	530	figure-8 shape, bottom cut, alt PHI
+L41	33	OTHER	l	s3	700	sign tops only visible, bottom cut
+L41	34	OTHER	l	s3	840	sign tops only visible, bottom cut
+L41	35	OTHER	l	s3	960	sign tops only visible, bottom cut
+L41	36	CROSS	l	s3	1200	cross-like top visible, bottom cut
+L41	37	PHI	m	s4	130	loops on stem
+L41	38	4TRI	m	s4	250	4 over crossed stems, alt 4PI
+L41	39	LOOPS	m	s4	360	small loops chain
+L41	40	LOOPBAR	m	s4	490	loop on stem with crossbar, alt CROSS
+L41	41	PHI	h	s4	640	loop on stem
+L41	42	4TRI	m	s4	760	4 over triangle
+L41	43	C6	m	s4	880	6-like mark
+L41	44	PHI	m	s4	1000	loops on stem, loop chain before it
+L41	45	PHI	h	s4	1140	loops on stem
+L41	46	PHI	h	s4	1260	loops on stem
+L41	47	EBR_B	m	s4	1370	squared C open right
+L41	48	PHI	m	s4	1490	loops on stem (overlap zone; not repeated in s5)
+L41	49	EBR_B	m	s5	210	squared C open right
+L41	50	ZBAR	l	s5	290	z with bar, joined to next
+L41	51	PHI	h	s5	385	loops on long stem
+L41	52	ZBAR	m	s5	500	double z with bar, alt EBR_A
+L41	53	PHI	h	s5	630	large loops on stem
+L41	54	H24	h	s5	720	24 sign
+L41	55	VBAR_A	h	s5	850	triangle with top bar
+L42	1	VBAR_A	h	s1	50	triangle with top bar
+L42	2	VBAR_A	h	s1	160	triangle with top bar
+L42	3	PHI	h	s1	270	loops on stem
+L42	4	LOOPS	m	s1	400	loops chain with small o
+L42	5	4PI	m	s1	570	4 over crossed stems, alt 4TRI
+L42	6	4TRI	m	s1	700	4 over triangle
+L42	7	4TRI	m	s1	800	4 with loop, alt PHI
+L42	8	ZBAR	m	s1	950	z with bar, alt EBR_B
+L42	9	DBL	m	s1	1080	two loops on stem with tilde above, alt PHI
+L42	10	CH	l	s1	1270	h-like mark
+L42	11	EBR_A	m	s2	200	E-bracket
+L42	12	4PI	m	s2	300	4 over crossed stems
+L42	13	H24	h	s2	450	24 sign
+L42	14	PHI	h	s2	590	loops on stem
+L42	15	DBL	m	s2	690	two loops on stem, alt PHI
+L42	16	4TRI	m	s2	820	4 over triangle
+L42	17	VBAR_A	h	s2	950	triangle with top bar
+L42	18	4PI	m	s2	1090	4 over crossed stems, alt 4STEM
+L42	19	EBR_B	m	s2	1230	squared C open right
+L42	20	BETA	m	s2	1290	beta-like shape
+L42	21	4TRI	m	s2	1450	4 over triangle (overlap zone)
+L42	22	LOOPS	m	s3	200	three-loop chain
+L42	23	PHI	m	s3	320	loop on stem
+L42	24	H24	m	s3	420	3/2-curl joined to crossed 4
+L42	25	PHI	h	s3	590	loops on stem
+L42	26	4TRI	m	s3	690	4 over triangle
+L42	27	RSIGN	l	s3	745	r-like hook
+L42	28	VBAR_A	h	s3	800	triangle with top bar
+L42	29	ZBAR	m	s3	940	z with bar
+L42	30	PHI	h	s3	1060	loops on stem
+L42	31	LOOPS	h	s3	1200	loop chain
+L42	32	OTHER	l	s3	1340	large loop with rising tail stroke, alt ELOOP
+L42	33	LOOPBAR	m	s3	1480	loop on stem with bar (overlap zone)
+L42	34	ZBAR	m	s4	250	z with bar
+L42	35	PHI	h	s4	360	loops on stem
+L42	36	EBR_A	m	s4	460	E-like with bar
+L42	37	VBAR_A	h	s4	570	triangle with top bar
+L42	38	PHI	h	s4	680	loops on stem
+L42	39	H24	h	s4	830	24 sign
+L42	40	VBAR_A	h	s4	950	triangle with top bar
+L42	41	ZBAR	m	s4	1070	z with bar
+L42	42	4TRI	m	s4	1190	4 over triangle
+L42	43	H24	h	s4	1300	24 sign
+L42	44	VBAR_A	m	s4	1450	triangle (overlap zone)
+L42	45	4TRI	m	s5	160	4 over triangle with crossbar
+L42	46	4TRI	m	s5	290	4 over triangle
+L42	47	VBAR_A	h	s5	450	triangle with top bar
+L42	48	PHI	m	s5	560	loop chain on stem
+L42	49	EBR_B	m	s5	700	squared C open right
+L42	50	H24	h	s5	800	24 sign
+L42	51	4TRI	m	s5	900	4 over triangle
+L42	52	LOOPS	m	s5	1010	loop chain
+L43	1	PHI	m	s1	20	loops on stem
+L43	2	H24	h	s1	140	24 sign
+L43	3	EBR_B	m	s1	250	squared C open right
+L43	4	EBR_A	m	s1	370	E-bracket with long foot
+L43	5	PHI	h	s1	440	loops on stem
+L43	6	LOOPS	m	s1	520	loop chain
+L43	7	PHI	h	s1	640	loops on long stem
+L43	8	4TRI	m	s1	760	4 over triangle, crossed
+L43	9	H24	h	s1	890	24 sign
+L43	10	ZBAR	m	s1	1030	z with bar
+L43	11	RSIGN	m	s1	1150	r-like hook
+L43	12	4TRI	m	s1	1270	4 over triangle
+L43	13	PHI	m	s1	1380	loops on stem
+L43	14	ZBAR	l	s2	130	z with bar; row near bottom edge
+L43	15	LOOPS	l	s2	220	loop chain, alt PHI
+L43	16	4TRI	l	s2	380	4 over triangle
+L43	17	VBAR_A	l	s2	510	triangle with top bar
+L43	18	HASH4	l	s2	680	crossed-4 cluster, struck
+L43	19	LOOPS	l	s2	850	loops chain, struck
+L43	20	LOOPS	l	s2	1000	loops chain, struck
+L43	21	LOOPS	l	s2	1150	loops chain, struck
+L43	22	PHI	l	s2	1290	loop on stem, end of strike
+L43	23	EBR_B	l	s2	1420	squared C (overlap zone), bottom cut

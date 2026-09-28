@@ -1,0 +1,429 @@
+line	pos	sign	conf	segment	x_px	note
+L33	1	VBAR_A	l	s1	75	open V with slanted stroke, alt OTHER
+L33	2	4STEM	m	s1	185	4 with long stem, alt 4TRI
+L33	3	LOOPS	l	s1	225	small o between 4 and 24, alt ELOOP
+L33	4	H24	h	s1	320	
+L33	5	VBAR_A	m	s1	420	v with bar trailing right
+L33	6	EBR_B	m	s1	540	
+L33	7	PHI	h	s1	610	
+L33	8	4TRI	m	s1	710	4 above small triangle, alt 4PI
+L33	9	LOOPS	m	s1	830	o-o chain on bar
+L33	10	LOOPS	m	s1	940	oo chain
+L33	11	PHI	h	s1	1040	loops on stem
+L33	12	PHI	h	s1	1150	
+L33	13	HASH4	m	s1	1290	crossed-4 cluster 4tt
+L33	14	PHI	m	s1	1430	
+L33	15	VBAR_A	m	s2	140	alt VBAR_B
+L33	16	HASH4	m	s2	250	4tt
+L33	17	LOOPS	m	s2	390	ooo chain
+L33	18	ZBAR	l	s2	510	z-like with bar and stem below, alt OTHER
+L33	19	VBAR_A	m	s2	640	
+L33	20	PHI	h	s2	740	
+L33	21	PHI	h	s2	860	
+L33	22	4STEM	m	s2	985	alt 4TRI
+L33	23	PHI	m	s2	1100	o-phi-o loops on stem
+L33	24	H24	m	s2	1260	
+L33	25	HASH4	l	s2	1440	cut at right edge
+L33	26	DASH	l	s3	170	row at bottom of segment (continuity with s2); same row visible at top of L34 s3
+L33	27	4TRI	m	s3	260	
+L33	28	PHI	m	s3	370	
+L33	29	H24	h	s3	500	
+L33	30	4TRI	m	s3	630	alt 4STEM
+L33	31	4STEM	m	s3	760	
+L33	32	HASH4	m	s3	860	alt H24
+L33	33	4STEM	m	s3	1000	
+L33	34	4TRI	m	s3	1110	4 over 7-like
+L33	35	LOOPS	m	s3	1260	oo chain, stroke through
+L33	36	H24	m	s3	1440	
+L33	37	4TRI	m	s4	210	row at bottom edge, read with L34 s4 (same row centred there); alt HASH4
+L33	38	PHI	m	s4	310	
+L33	39	EBR_B	m	s4	440	
+L33	40	H24	m	s4	540	
+L33	41	4TRI	m	s4	680	
+L33	42	VBAR_B	m	s4	790	
+L33	43	VBAR_A	m	s4	930	
+L33	44	PHI	m	s4	1020	
+L33	45	LOOPS	m	s4	1120	oo
+L33	46	4STEM	m	s4	1220	
+L33	47	VBAR_A	m	s4	1380	
+L33	48	H24	m	s4	1470	
+L33	49	PHI	m	s5	160	row at bottom edge, read with L34 s5 (same row centred there)
+L33	50	4TRI	m	s5	330	
+L33	51	H24	h	s5	490	
+L33	52	EBR_B	m	s5	610	
+L33	53	4TRI	m	s5	700	alt HASH4
+L33	54	LOOPS	m	s5	800	ooo
+L33	55	LOOPS	m	s5	920	oo
+L33	56	VBAR_B	m	s5	1020	
+L34	1	HASH4	m	s1	60	alt 4STEM
+L34	2	H24	m	s1	230	
+L34	3	VBAR_A	m	s1	300	
+L34	4	OTHER	l	s1	400	delta/8-like with tail
+L34	5	EBR_B	m	s1	530	
+L34	6	PHI	h	s1	620	
+L34	7	VBAR_B	m	s1	740	
+L34	8	4TRI	m	s1	870	
+L34	9	H24	h	s1	1000	
+L34	10	VBAR_A	m	s1	1110	
+L34	11	PHI	h	s1	1270	
+L34	12	EBR_B	m	s1	1390	
+L34	13	LOOPS	l	s1	1470	
+L34	14	VBAR_A	m	s2	150	
+L34	15	PHI	m	s2	230	o-phi-o
+L34	16	H24	m	s2	350	alt HASH4
+L34	17	VBAR_A	m	s2	480	small
+L34	18	HASH4	m	s2	600	
+L34	19	PHI	h	s2	710	
+L34	20	4STEM	m	s2	860	
+L34	21	LOOPS	m	s2	980	ooo
+L34	22	VBAR_B	l	s2	1150	
+L34	23	PHI	m	s2	1250	
+L34	24	4TRI	l	s2	1460	cut at bottom right
+L34	25	PHI	m	s3	220	row at bottom of segment (continuity with s2), read with L35 s3 where centred
+L34	26	4STEM	m	s3	350	
+L34	27	4TRI	m	s3	470	
+L34	28	PHI	m	s3	600	
+L34	29	LOOPSTEM1	l	s3	760	b-like tall stem, alt OTHER
+L34	30	4TRI	m	s3	870	
+L34	31	H24	h	s3	1010	
+L34	32	VBAR_B	m	s3	1150	
+L34	33	DBL	l	s3	1270	8-shape, alt BETA
+L34	34	EBR_B	m	s3	1420	
+L34	35	VBAR_A	m	s4	230	row cut at bottom edge here; read with L35 s4 where centred
+L34	36	4TRI	m	s4	320	
+L34	37	EBR_A	l	s4	470	alt ZBAR
+L34	38	PHI	h	s4	600	
+L34	39	VBAR_A	m	s4	700	
+L34	40	VBAR_A	m	s4	790	
+L34	41	PHI	h	s4	880	
+L34	42	PHI	h	s4	1030	
+L34	43	4TRI	m	s4	1140	
+L34	44	HASH4	m	s4	1270	
+L34	45	OTHER	l	s4	1370	A-like, alt 4TRI
+L34	46	PHI	m	s4	1480	
+L34	47	EBR_B	m	s5	230	row cut at bottom edge here; read with L35 s5 where centred
+L34	48	LOOPS	m	s5	330	ooo
+L34	49	H24	h	s5	470	
+L34	50	VBAR_A	m	s5	580	
+L34	51	DASH	m	s5	650	
+L34	52	PHI	m	s5	760	
+L34	53	PHI	h	s5	880	
+L34	54	PHI	h	s5	970	
+L34	55	VBAR_B	m	s5	1070	alt EBR_B
+L35	1	4TRI	m	s1	70	
+L35	2	PHI	m	s1	200	o-phi-o on stem
+L35	3	LOOPS	m	s1	350	oo
+L35	4	VBAR_B	m	s1	460	
+L35	5	4STEM	m	s1	550	alt 4TRI
+L35	6	PHI	m	s1	610	
+L35	7	PHI	h	s1	690	
+L35	8	4TRI	m	s1	810	4 over 8
+L35	9	PHI	m	s1	930	o-phi-o
+L35	10	VBAR_A	m	s1	1100	small
+L35	11	4STEM	m	s1	1170	
+L35	12	PHI	m	s1	1230	
+L35	13	PHI	m	s1	1310	
+L35	14	LOOPS	m	s1	1390	oo
+L35	15	VBAR_B	l	s1	1490	
+L35	16	VBAR_B	m	s2	140	
+L35	17	BETA	l	s2	230	k-like tall stem, alt EBR_A
+L35	18	PHI	m	s2	320	
+L35	19	VBAR_B	m	s2	430	
+L35	20	PHI	m	s2	560	
+L35	21	H24	m	s2	710	
+L35	22	PHI	m	s2	820	
+L35	23	4TRI	m	s2	930	4 over 8
+L35	24	DBL	l	s2	1080	standing 8, alt LOOPS
+L35	25	4STEM	l	s2	1230	double-crossed stem
+L35	26	LOOPS	l	s2	1440	oo, low at right edge
+L35	27	PHI	m	s3	220	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here; row at bottom of segment (continuity with s2), read with L35 s3 where centred
+L35	28	4STEM	m	s3	350	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	29	4TRI	m	s3	470	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	30	PHI	m	s3	600	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	31	LOOPSTEM1	l	s3	760	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here; b-like tall stem, alt OTHER
+L35	32	4TRI	m	s3	870	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	33	H24	h	s3	1010	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	34	VBAR_B	m	s3	1150	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	35	DBL	l	s3	1270	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here; 8-shape, alt BETA
+L35	36	EBR_B	m	s3	1420	segment centred on a row that continues L34 s1-s2 (same signs as L34 s3); this band's own row not centred here
+L35	37	VBAR_A	m	s4	230	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here; row cut at bottom edge here; read with L35 s4 where centred
+L35	38	4TRI	m	s4	320	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	39	EBR_A	l	s4	470	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here; alt ZBAR
+L35	40	PHI	h	s4	600	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	41	VBAR_A	m	s4	700	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	42	VBAR_A	m	s4	790	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	43	PHI	h	s4	880	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	44	PHI	h	s4	1030	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	45	4TRI	m	s4	1140	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	46	HASH4	m	s4	1270	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	47	OTHER	l	s4	1370	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here; A-like, alt 4TRI
+L35	48	PHI	m	s4	1480	segment centred on a row that continues L34 s1-s2 (same signs as L34 s4); this band's own row not centred here
+L35	49	EBR_B	m	s5	230	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here; row cut at bottom edge here; read with L35 s5 where centred
+L35	50	LOOPS	m	s5	330	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here; ooo
+L35	51	H24	h	s5	470	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here
+L35	52	VBAR_A	m	s5	580	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here
+L35	53	DASH	m	s5	650	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here
+L35	54	PHI	m	s5	760	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here
+L35	55	PHI	h	s5	880	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here
+L35	56	PHI	h	s5	970	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here
+L35	57	VBAR_B	m	s5	1070	segment centred on a row that continues L34 s1-s2 (same signs as L34 s5); this band's own row not centred here; alt EBR_B
+L36	1	PHI	l	s1	80	faint, struck
+L36	2	VBAR_B	m	s1	250	struck
+L36	3	4TRI	m	s1	370	struck
+L36	4	LOOPS	m	s1	500	struck
+L36	5	HASH4	m	s1	620	struck
+L36	6	BETA	m	s1	760	
+L36	7	PHI	m	s1	880	o-phi-o
+L36	8	H24	h	s1	1060	
+L36	9	4TRI	m	s1	1180	
+L36	10	HASH4	m	s1	1330	
+L36	11	PHI	m	s1	1440	
+L36	12	PHI	h	s2	150	
+L36	13	VBAR_B	m	s2	260	
+L36	14	4STEM	m	s2	390	alt 4TRI
+L36	15	LOOPS	m	s2	510	ooo
+L36	16	PHI	m	s2	650	
+L36	17	VBAR_A	m	s2	800	
+L36	18	PHI	h	s2	890	
+L36	19	VBAR_B	m	s2	990	
+L36	20	VBAR_A	l	s2	1150	
+L36	21	H24	m	s2	1260	
+L36	22	EBR_B	m	s2	1380	
+L36	23	H24	l	s2	1480	
+L36	24	4TRI	m	s3	240	
+L36	25	4STEM	m	s3	360	
+L36	26	PHI	h	s3	460	
+L36	27	EBR_B	m	s3	590	
+L36	28	LOOPS	l	s3	680	dark o
+L36	29	HASH4	m	s3	810	
+L36	30	H24	h	s3	940	
+L36	31	LOOPS	m	s3	1070	oo
+L36	32	H24	h	s3	1200	
+L36	33	VBAR_B	m	s3	1330	
+L36	34	H24	m	s3	1460	
+L36	35	PHI	m	s4	170	
+L36	36	4TRI	m	s4	330	
+L36	37	HASH4	m	s4	460	
+L36	38	4TRI	l	s4	560	A-like
+L36	39	PHI	h	s4	720	
+L36	40	BETA	m	s4	880	
+L36	41	H24	h	s4	1000	
+L36	42	4TRI	m	s4	1160	
+L36	43	PHI	m	s4	1290	
+L36	44	BETA	m	s4	1440	
+L36	45	4TRI	m	s5	160	
+L36	46	PHI	h	s5	270	
+L36	47	H24	h	s5	390	
+L36	48	4TRI	m	s5	510	
+L36	49	HASH4	m	s5	650	alt 4STEM
+L36	50	PHI	m	s5	770	curling
+L36	51	VBAR_B	m	s5	900	
+L37	1	4PI	m	s1	60	alt 4STEM
+L37	2	VBAR_B	m	s1	190	
+L37	3	LOOPS	m	s1	290	ooo
+L37	4	4TRI	m	s1	440	
+L37	5	VBAR_A	m	s1	580	
+L37	6	EBR_B	m	s1	690	
+L37	7	PHI	m	s1	790	
+L37	8	VBAR_B	m	s1	900	
+L37	9	4TRI	m	s1	1030	
+L37	10	LOOPS	m	s1	1170	ooo, stroke through
+L37	11	VBAR_B	l	s1	1290	
+L37	12	PHI	m	s1	1440	
+L37	13	LOOPS	m	s2	190	ooo
+L37	14	PHI	h	s2	320	
+L37	15	VBAR_B	m	s2	470	
+L37	16	HASH4	m	s2	620	
+L37	17	PHI	h	s2	780	
+L37	18	VBAR_B	m	s2	900	
+L37	19	PHI	m	s2	1060	o-phi-o
+L37	20	PHI	h	s2	1200	
+L37	21	LOOPS	m	s2	1350	ooo, stroke through
+L37	22	H24	l	s2	1480	
+L37	23	EBR_B	m	s3	230	
+L37	24	EBR_B	m	s3	300	
+L37	25	PHI	m	s3	380	
+L37	26	PHI	h	s3	500	
+L37	27	H24	h	s3	630	
+L37	28	PHI	h	s3	750	
+L37	29	VBAR_B	m	s3	850	
+L37	30	OTHER	l	s3	1000	tall S-like stroke with loop, alt ZHOOK
+L37	31	BETA	m	s3	1180	
+L37	32	H24	h	s3	1290	
+L37	33	EBR_B	m	s3	1440	
+L37	34	4TRI	m	s4	160	
+L37	35	LOOPS	m	s4	320	oo
+L37	36	VBAR_A	m	s4	430	
+L37	37	PHI	m	s4	540	
+L37	38	PHI	h	s4	670	
+L37	39	VBAR_B	m	s4	800	
+L37	40	4TRI	m	s4	900	
+L37	41	LOOPS	m	s4	1030	
+L37	42	PHI	m	s4	1170	
+L37	43	VBAR_A	m	s4	1310	
+L37	44	PHI	m	s4	1440	
+L37	45	VBAR_B	m	s5	130	
+L37	46	H24	h	s5	280	
+L37	47	EBR_B	m	s5	420	
+L37	48	LOOPS	m	s5	500	oo
+L37	49	PHI	m	s5	630	
+L37	50	LOOPS	m	s5	740	oo
+L37	51	EBR_B	m	s5	850	
+L37	52	VBAR_A	m	s5	920	long tail
+L38	1	PHI	m	s1	90	faint
+L38	2	BETA	m	s1	220	
+L38	3	LOOPS	m	s1	380	alt PHI
+L38	4	4STEM	m	s1	480	
+L38	5	PHI	m	s1	550	
+L38	6	4TRI	m	s1	650	
+L38	7	VBAR_B	m	s1	780	
+L38	8	VBAR_B	m	s1	880	
+L38	9	PHI	m	s1	990	
+L38	10	PHI	h	s1	1140	
+L38	11	4STEM	m	s1	1270	
+L38	12	LOOPS	l	s1	1440	
+L38	13	BETA	l	s2	210	row at bottom edge of segment, cut
+L38	14	PHI	l	s2	330	cut
+L38	15	VBAR_B	l	s2	480	struck
+L38	16	VBAR_A	l	s2	570	struck
+L38	17	4TRI	l	s2	700	
+L38	18	H24	l	s2	850	
+L38	19	PHI	l	s2	1000	
+L38	20	PHI	l	s2	1120	
+L38	21	PHI	l	s2	1290	cut
+L38	22	EBR_B	m	s3	230	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	23	EBR_B	m	s3	300	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	24	PHI	m	s3	380	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	25	PHI	h	s3	500	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	26	H24	h	s3	630	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	27	PHI	h	s3	750	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	28	VBAR_B	m	s3	850	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	29	OTHER	l	s3	1000	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here; tall S-like stroke with loop, alt ZHOOK
+L38	30	BETA	m	s3	1180	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	31	H24	h	s3	1290	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	32	EBR_B	m	s3	1440	segment centred on a row that continues L37 s1-s2 (same signs as L37 s3); this band's own row not centred here
+L38	33	4TRI	m	s4	160	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	34	LOOPS	m	s4	320	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here; oo
+L38	35	VBAR_A	m	s4	430	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	36	PHI	m	s4	540	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	37	PHI	h	s4	670	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	38	VBAR_B	m	s4	800	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	39	4TRI	m	s4	900	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	40	LOOPS	m	s4	1030	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	41	PHI	m	s4	1170	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	42	VBAR_A	m	s4	1310	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	43	PHI	m	s4	1440	segment centred on a row that continues L37 s1-s2 (same signs as L37 s4); this band's own row not centred here
+L38	44	VBAR_B	m	s5	130	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here
+L38	45	H24	h	s5	280	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here
+L38	46	EBR_B	m	s5	420	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here
+L38	47	LOOPS	m	s5	500	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here; oo
+L38	48	PHI	m	s5	630	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here
+L38	49	LOOPS	m	s5	740	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here; oo
+L38	50	EBR_B	m	s5	850	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here
+L38	51	VBAR_A	m	s5	920	segment centred on a row that continues L37 s1-s2 (same signs as L37 s5); this band's own row not centred here; long tail
+L39	1	EBR_B	l	s1	60	faint
+L39	2	VBAR_A	l	s1	130	faint
+L39	3	PHI	l	s1	220	faint
+L39	4	BETA	l	s1	350	faint
+L39	5	VBAR_B	m	s1	530	
+L39	6	PHI	h	s1	650	
+L39	7	VBAR_B	m	s1	780	
+L39	8	4TRI	m	s1	900	
+L39	9	HASH4	m	s1	1050	
+L39	10	LOOPS	m	s1	1180	ooo
+L39	11	H24	h	s1	1310	
+L39	12	VBAR_B	m	s1	1440	
+L39	13	EBR_B	m	s2	170	
+L39	14	LOOPS	m	s2	250	oo
+L39	15	EBR_B	m	s2	370	
+L39	16	4TRI	m	s2	470	
+L39	17	PHI	m	s2	590	
+L39	18	4TRI	m	s2	740	
+L39	19	4TRI	m	s2	860	
+L39	20	PHI	m	s2	1000	
+L39	21	PHI	m	s2	1170	
+L39	22	LOOPS	m	s2	1300	ooo
+L39	23	H24	m	s2	1440	
+L39	24	VBAR_B	m	s3	280	
+L39	25	PHI	m	s3	420	
+L39	26	4TRI	m	s3	550	
+L39	27	EBR_B	m	s3	700	struck
+L39	28	LOOPS	m	s3	780	struck
+L39	29	EBR_B	m	s3	900	struck
+L39	30	PHI	m	s3	1040	
+L39	31	PHI	h	s3	1190	
+L39	32	4TRI	m	s3	1310	alt HASH4
+L39	33	PHI	m	s3	1430	
+L39	34	PHI	m	s4	130	
+L39	35	VBAR_B	m	s4	250	
+L39	36	PHI	h	s4	370	
+L39	37	4TRI	m	s4	500	
+L39	38	VBAR_A	m	s4	600	
+L39	39	PHI	h	s4	730	
+L39	40	VBAR_B	m	s4	870	
+L39	41	LOOPS	m	s4	970	ooo
+L39	42	PHI	h	s4	1140	
+L39	43	4TRI	m	s4	1290	
+L39	44	PHI	m	s4	1430	
+L39	45	VBAR_B	m	s5	160	struck
+L39	46	4TRI	m	s5	270	
+L39	47	H24	m	s5	400	
+L39	48	VBAR_B	m	s5	530	
+L39	49	VBAR_A	m	s5	620	
+L39	50	H24	h	s5	740	
+L39	51	HASH4	m	s5	870	
+L39	52	LOOPS	m	s5	990	oo
+L39	53	DASH	m	s5	1060	
+L40	1	PHI	m	s1	50	
+L40	2	VBAR_B	m	s1	160	faint
+L40	3	VBAR_A	m	s1	290	
+L40	4	PHI	m	s1	390	o-phi-o
+L40	5	HASH4	m	s1	560	alt H24
+L40	6	VBAR_A	m	s1	670	
+L40	7	VBAR_B	m	s1	780	long dash
+L40	8	4TRI	m	s1	950	
+L40	9	H24	h	s1	1090	
+L40	10	VBAR_A	m	s1	1240	
+L40	11	PHI	m	s1	1320	
+L40	12	H24	m	s1	1470	
+L40	13	EBR_B	m	s2	210	
+L40	14	4TRI	m	s2	320	
+L40	15	PHI	m	s2	470	
+L40	16	LOOPS	m	s2	620	oo
+L40	17	PHI	h	s2	780	
+L40	18	LOOPS	m	s2	890	oo
+L40	19	VBAR_A	m	s2	990	
+L40	20	4TRI	m	s2	1140	
+L40	21	PHI	m	s2	1270	
+L40	22	H24	m	s2	1440	
+L40	23	4TRI	m	s3	160	
+L40	24	VBAR_A	m	s3	250	
+L40	25	LOOPS	m	s3	400	ooo
+L40	26	LOOPS	m	s3	560	oo
+L40	27	ZBAR	l	s3	640	alt H24
+L40	28	H24	m	s3	720	
+L40	29	PHI	h	s3	850	
+L40	30	4TRI	m	s3	980	
+L40	31	4TRI	m	s3	1110	
+L40	32	PHI	h	s3	1250	
+L40	33	EBR_B	m	s3	1370	
+L40	34	PHI	m	s3	1440	
+L40	35	PHI	h	s4	130	
+L40	36	HASH4	m	s4	260	
+L40	37	LOOPS	m	s4	360	oo
+L40	38	PHI	l	s4	500	loops over cross-barred stem, alt CROSS
+L40	39	PHI	h	s4	640	
+L40	40	4TRI	m	s4	770	
+L40	41	4TRI	m	s4	880	
+L40	42	PHI	m	s4	990	
+L40	43	PHI	h	s4	1130	
+L40	44	PHI	h	s4	1240	
+L40	45	VBAR_B	m	s4	1370	
+L40	46	PHI	l	s4	1480	
+L40	47	EBR_B	m	s5	210	
+L40	48	VBAR_A	m	s5	300	
+L40	49	PHI	m	s5	380	
+L40	50	VBAR_B	m	s5	480	
+L40	51	PHI	m	s5	620	
+L40	52	H24	h	s5	730	
+L40	53	VBAR_A	m	s5	860	
