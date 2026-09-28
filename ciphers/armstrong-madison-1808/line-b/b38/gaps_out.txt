@@ -1,0 +1,18 @@
+known-answer control, page 1 (frame 0030), per manuscript line: units = ink runs split at gaps > threshold
+  numeral-only lines ['L08', 'L11', 'L14', 'L15', 'L16'] groups [10, 12, 10, 11, 10]
+  >15 px: numeral-only lines units [17, 23, 23, 26, 22] vs groups [10, 12, 10, 11, 10], MAE 11.60; all lines with >=5 items (groups+marks): MAE 7.57, r 0.06, sum 276 vs 170
+  >20 px: numeral-only lines units [12, 17, 18, 20, 16] vs groups [10, 12, 10, 11, 10], MAE 6.00; all lines with >=5 items (groups+marks): MAE 4.00, r 0.34, sum 226 vs 170
+  >25 px: numeral-only lines units [11, 12, 13, 14, 12] vs groups [10, 12, 10, 11, 10], MAE 1.80; all lines with >=5 items (groups+marks): MAE 1.86, r 0.72, sum 184 vs 170
+  >30 px: numeral-only lines units [10, 10, 10, 10, 10] vs groups [10, 12, 10, 11, 10], MAE 0.60; all lines with >=5 items (groups+marks): MAE 1.36, r 0.85, sum 153 vs 170
+  >35 px: numeral-only lines units [6, 8, 9, 6, 9] vs groups [10, 12, 10, 11, 10], MAE 3.00; all lines with >=5 items (groups+marks): MAE 3.21, r 0.64, sum 125 vs 170
+  >40 px: numeral-only lines units [4, 7, 8, 5, 9] vs groups [10, 12, 10, 11, 10], MAE 4.00; all lines with >=5 items (groups+marks): MAE 5.79, r -0.28, sum 89 vs 170
+  >45 px: numeral-only lines units [4, 4, 6, 4, 4] vs groups [10, 12, 10, 11, 10], MAE 6.20; all lines with >=5 items (groups+marks): MAE 7.36, r -0.04, sum 67 vs 170
+  >50 px: numeral-only lines units [2, 2, 5, 2, 2] vs groups [10, 12, 10, 11, 10], MAE 8.00; all lines with >=5 items (groups+marks): MAE 8.86, r -0.01, sum 46 vs 170
+  >55 px: numeral-only lines units [2, 1, 3, 2, 1] vs groups [10, 12, 10, 11, 10], MAE 8.80; all lines with >=5 items (groups+marks): MAE 9.43, r 0.04, sum 38 vs 170
+  >60 px: numeral-only lines units [1, 1, 1, 2, 1] vs groups [10, 12, 10, 11, 10], MAE 9.40; all lines with >=5 items (groups+marks): MAE 10.14, r 0.05, sum 28 vs 170
+  calibrated threshold (min MAE on numeral-only lines): 30 px
+  numeral-only lines: the 48 largest gaps per line (= group boundaries by count) median 43 px, p10 32; the remaining 161 within-group gaps median 12 px, p90 23
+pure-glyph lines: 122 ink runs for 79 glyphs; gaps median 29 px, p10 6, p90 57
+  units at the calibrated 30 px: [2, 14, 11, 2, 11, 10, 9] for mark counts [1, 16, 19, 1, 15, 9, 18]; glyphs per unit 1.34 (en18 letters per word about 4.2; a one-glyph-per-unit design gives 1.0)
+  log-gap mixture, numeral-only lines, all gaps (gaps < 200 px, n=209): BIC(1)-BIC(2) = 0.9; means 6 / 19 px, large weight 0.73, crossover 6 px
+  log-gap mixture, pure-glyph lines (gaps < 200 px, n=113): BIC(1)-BIC(2) = 22.7; means 10 / 31 px, large weight 0.69, crossover 12 px

@@ -822,3 +822,56 @@ is a line-B step (needs: doc/person).
 
 Cost: four Sonnet vision calls at about 12 minutes each, run in parallel; the step cost is read from the session's
 own metadata by the orchestrator, not estimated here.
+
+## Step B38 (28 Sept 2026, 06:35-06:40 UTC)
+
+Question: without any reader or glyph label, what do the gap widths between ink runs say about how the shorthand
+passages are grouped -- letters inside words with word spaces between (a substitution alphabet written normally), or a
+row of separately spaced signs each of the same rank as a numeral group? B30's word-space finding rested on the type-20
+label, which B35 showed the two readers do not share (46 vs 4 tokens), so this is the label-free version.
+
+Method (`b38/gaps.py`, output `gaps_out.txt`): the crops on disk are binarised; an ink column has at least 2 ink rows,
+runs under 3 px wide are dropped, no bridging. Gaps between consecutive runs are collected per line crop. A unit is a
+maximal set of runs joined by gaps at or under a threshold; the threshold is calibrated on the known answer, not chosen.
+
+Known-answer control (rule 3): page 1 (frame 0030) has five manuscript lines with numerals only, whose group counts are
+known from the two blind passes in `tr/page1_passA.tsv` and `page1_passB_norm.tsv` (L08 10, L11 12, L14 10, L15 11,
+L16 10). Digits inside a group are largely joined in this hand (520 runs on 17 lines, run width median 22 px, p90 56),
+so the recoverable unit is the group, not the digit.
+
+| threshold | units on the five numeral-only lines | MAE vs groups | all page-1 lines with 5+ items (groups + marks): MAE, r |
+|---|---|---|---|
+| >25 px | 11 12 13 14 12 | 1.80 | 1.86, 0.72 |
+| **>30 px** | **10 10 10 10 10** | **0.60** | **1.36, 0.85** |
+| >35 px | 6 8 9 6 9 | 3.00 | 3.21, 0.64 |
+| >20 / >40 px | 12-20 / 4-9 | 6.0 / 4.0 | 4.0, 0.34 / 5.8, -0.28 |
+
+Taking the transcription's group count per line, the largest gaps per line (the group boundaries) have median 43 px
+(p10 32) and the remaining within-group gaps median 12 px (p90 23): two populations that barely overlap, and the
+calibrated 30 px sits between them. The control can fail (thresholds 20 or 40 px miss by 4-6 groups per line) and did not.
+
+Target: the seven crops that both B35 readers read as glyphs only (page1 L03, L12, L13; page2 L01, L02, L03; page3 L13;
+79 glyphs by the index.tsv mark counts, which equal reader A's counts), 122 ink runs.
+
+| statistic | pure-glyph lines |
+|---|---|
+| gaps: median, p10, p90 | 29 px, 6, 57 |
+| units at the calibrated 30 px, per crop | 2 14 11 2 11 10 9 (59) for 1 16 19 1 15 9 18 glyphs |
+| glyphs per unit | 79 / 59 = 1.34 (en18 letters per word about 4.2; one sign per unit gives 1.0) |
+| log-gap mixture (gaps under 200 px, n 113) | two components, means 10 px and 31 px, weights 0.31 / 0.69, BIC margin 22.7 |
+
+The small component (10 px, about 35 of 113 gaps) is the within-glyph population: 122 runs for 79 glyphs means about 43
+broken-stroke gaps, the same share. The large component (31 px) is the gap between consecutive glyphs, and it sits in the
+numeral lines' *between-group* band (median 43, p10 32), not in their within-group band (median 12). There is no third,
+wider population that a word space would add: glyphs follow one another at the spacing of separate code groups.
+
+Reading: label-free, the shorthand passages are rows of separately spaced signs, each spaced like a numeral group, with no
+visible word grouping. A substitution alphabet written with word spaces at this resolution is not what the pixels show;
+what remains is either one sign per unit (word or syllable signs, the same rank as a code group) or letters written
+without word breaks. B30's label-based "type 20 acts as a word space" is not reproduced by the pixels and should be
+read as conditional on pass-specific labels. This is one more count-and-position result (the class B35 found reproducible),
+not a glyph-sequence result.
+
+Caveats: seven crops and 79 glyphs; the between-glyph band (31 px) and the between-group band (43 px) overlap in their
+tails, so a word space only slightly wider than a glyph space would not separate at this N; page-2 crop identities are
+by content (ARM-TR2). Files: `b38/gaps.py`, `gaps_out.txt`, `gaps.json`. Needs: nobody. Result: done.
