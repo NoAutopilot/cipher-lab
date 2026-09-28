@@ -142,7 +142,7 @@ surviving design rather than re-tuned (rule 3's repeated-attempt clause).
 a syllabic root set is not addressed here. Requests: none. Cost: one Fable session, about 4 minutes by the clock (02:40-02:43, the ROOM done line's '02:58' is a typing error), no subagent;
 PLAN.md records the row's 3 USD estimate.
 
-## Step B2b (28 Sept 2026, 02:44-02:50 UTC) -- operator digit vs grid slot by context similarity: CONTROL BELOW GATE, non-test
+## Step B2b (28 Sept 2026, 02:44-02:45 UTC) -- operator digit vs grid slot by context similarity: CONTROL BELOW GATE, non-test
 
 **Method.** `b2b/context_sim.py`: every group parsed as (row, form); each distinct value's context = a 12-cell histogram
 of the classes of its left and right neighbours (bare head, 3-digit, 4-digit, single digit, shorthand run, line edge);
@@ -165,4 +165,53 @@ points the right way but has no power at this N. Per rule 3 the target's own num
 evidence; the operator-vs-grid question is logged **untestable by this instrument at N=369**, not answered, and is not
 re-run with a finer class set or another knob (rule 3's repeated-attempt clause: a genuinely different instrument or
 new material is needed -- the two readings differ in what the rows MEAN, which a key, a second letter or a decode
-would settle at once). Row dropped (non-test). Requests: none; no subagent; about 6 minutes by the clock.
+would settle at once). Row dropped (non-test). Requests: none; no subagent; about 2 minutes by the clock (02:44-02:45).
+
+## Step B3 (28 Sept 2026, 02:51-03:0x UTC) -- Armstrong's own papers and the Livingston family papers: catalogued, nothing reachable from the cloud, two `needs: doc` branches named
+
+**Positive control (route check) first.** `www.loc.gov/search/?q=Livingston+cipher&dates=1800/1810&fo=json` returns the
+known cipher witnesses (mjm014121 Livingston to Madison 17 Sept 1803 "partly in cipher", mjm014115, mjm014276,
+mjm014252/3, mjm014224, mjm014277, mjm014123, mtjbib012450, mjm022021/022119/022027) in its first 14 rows -- the
+route surfaces what it should before any miss below is read as a search result. `findingaids.library.nyu.edu`
+answers a direct finding-aid URL with a browser User-Agent (200) but its search endpoint 403s with either UA;
+`archives.nypl.org`, `researchworks.oclc.org` (ArchiveGrid), `findingaids.loc.gov` and `nyhistory.org` all 403 from
+this container (one attempt each, no retry loop); `fdrlibrary.org` serves its PDF (200, 952 KB) but this container has
+no PDF text tooling (no poppler; `pypdf`/`pdfminer.six` install but fail on the container's broken `cryptography`
+module; a hand-rolled stream inflater found no text operators) -- the FDR aid was NOT read here, so the ChatGPT
+22:44 checkpoint's sentence about it ("Aldrich family/Rokeby material is one microfilm roll, roughly 200 items, over
+half concerning the French ministry") stands unverified.
+
+**What was found.**
+1. **Armstrong's own papers.** Skeen's biography (*John Armstrong, Jr., 1758-1843*, 1981; IA `johnarmstrongjr10000skee`,
+   lending-only, searched through the be-api full-text endpoint, 10 queries) cites the **Rokeby Collection** (the
+   Armstrong-Astor-Chanler-Aldrich family papers at Rokeby, Barrytown NY, private) for "Memoirs of Rokeby" and for
+   Armstrong letters of 1811-1836 (to Spencer, Mar. 1811 / Jan. 1812 / Mar. 1836); no Rokeby citation dated 1807-1808
+   surfaced (phrase queries "Rokeby Collection 1808" / "1807": 0 hits, a loose test). The word "cipher" does not occur
+   in the book; "cypher" once, in the 1813-14 War Department context (a suggestion to develop a cypher for naval
+   commanders). The 20 Feb 1808 letter is not discussed ("February 20, 1808": 0 hits). Skeen's Paris-years sources are
+   the DUSMF despatches, the Madison and Jefferson Papers (LC) and the **Warden Papers, MdHS** (Armstrong to Warden,
+   Sept. 1, 2, 4, 12-15, 24, 1808 among about twenty 1804-1810 letters, per Hoyt 1943 as the ChatGPT 22:44 checkpoint
+   also records) -- Maryland Center for History and Culture MS 871, microfilm, not digitised, catalogue reachable
+   (ChatGPT 22:44). NYPL MssCol 6743 "John Armstrong letters" (1 folder, 0.1 linear ft; minister-to-France and
+   Secretary-of-War correspondence per the search snippet) -- the record itself 403s. Dartmouth holds four 1764-1814
+   items, none from the Paris years (read). CBH 1974.002 (Brooklyn) Box 1 Folder 26 is a 1804 Jefferson dinner
+   invitation to Armstrong, not a cipher item (read in the finding aid); Folder 25 is the Livingston 1803 letter
+   already in ASKS 80 / campaign H8.
+2. **Livingston family papers.** The Robert R. Livingston papers (1707-1862, NYHS; 57-reel microfilm edition 1658-1888,
+   copies at LOC Manuscript Reading Room and NJHS MG 1194) have **no public finding aid** (Gotham Center page: "a
+   finding aid is not publicly available"; NJHS page: reel list absent) and are not digitised anywhere reached. Whether
+   they hold Armstrong-to-Livingston letters of 1807-1808 -- the natural home of a second letter in a cipher "concerted
+   with another correspondent" who was Armstrong's brother-in-law and the previous minister -- cannot be settled from
+   the cloud: it needs a person at NYHS or at the LOC microfilm (a reel index exists in the reading room).
+3. **LOC sweep** `q=Armstrong+Livingston&dates=1805/1812` (228 results): no manuscript item pairing the two names; the
+   hits are newspapers and the collection-level records already known.
+
+**Result: search result, not a negative.** No key and no second letter reachable; two document branches for the
+orchestrator (this line cannot edit ASKS.md): (a) `needs: doc` -- NYHS Robert R. Livingston papers, Armstrong
+letters 1807-1808 and any cipher/key sheet (reading room or LOC microfilm; reel index on site); (b) `needs: doc` --
+Rokeby Collection (private; Skeen's access was by the family's leave; approach through the Papers of James Madison
+editors, ASKS 66, who may already know it). The Warden Papers (MdHS MS 871) are the third pool, already named by the
+ChatGPT sprint and by ARM3-COR's LOC-side Warden check; a person's microfilm reading, not a cloud step.
+Requests: loc.gov 2, tile.loc.gov 0, findingaids.library.nyu.edu 3 (one 403), fdrlibrary.org 1, be-api 10, archive.org
+2, nypl 1 (403), oclc 1 (403), nyhistory 1 (403), jerseyhistory 1, gothamcenter 1, dartmouth 1; all >= 1.5 s apart;
+no logins; 0 subagents. Cost: about 20 minutes by the clock; PLAN.md records the row's 3 USD estimate.
