@@ -1,0 +1,28 @@
+You are a blind transcriber of a 16th-century French manuscript leaf (BnF fr.3982 f.124r, Rome, dated on the leaf 7 November 1592). The leaf carries a cipher (invented signs: 4-like figures with loops, chains of small loops, triangles, brackets, 43-like marks) and, ABOVE each cipher row, a contemporary interlinear decipherment in small ordinary handwriting: the decipherer wrote the clear words above the signs they stand for, roughly letter by letter but compactly, so a word sits over a span of a few signs (a short word such as 'que' or 'M[onsieu]r' can sit over ONE sign). 16th-century spelling and letterforms: u and v both written u, i and j written i, long s, 'nostre', 'aultre', 'faict', 'satisfaict'.
+
+You will read 8 SEGMENTS (f124s_L01_g8, f124s_L02_g4, f124s_L01_g5, f124s_L02_g1, f124s_L02_g6, f124s_L01_g2, f124s_L01_g3, f124s_L01_g7). Each segment is one image, 3x the native scan, showing a short stretch of one cipher row (6 to 10 signs) across the lower-middle of the image with the decipherer's clear words above it; the descenders of the previous row may hang in from the top edge and the tops of the next row's signs may show at the bottom edge (ignore both). Under the image is a white strip with red ticks numbered 1..k, one tick directly under each cipher sign of the row. Your job: list every clear word (or part of a word) written above this stretch of the row, left to right, exactly as written (16th-century spelling kept; an illegible letter as ?; a word cut by the left or right edge of the image as the letters you see, marked cut_left or cut_right in the note), and for each give the tick span it sits over: tick_from = the tick nearest to the word's first letter, tick_to = the tick nearest to its last letter (a word over one sign has tick_from = tick_to). A long horizontal dash with no letters is listed as word '-' with kind dash and its tick span. A word the decipherer crossed out is listed with kind struck. Report only what is written on the leaf: do not guess French from the signs, and do not attempt any key or reading of the cipher.
+
+For each segment a SKELETON is also given: for some positions the letter set already established for that sign's shape from other leaves, written 3:[a/n] (position 3 is a or n); ? means no set. It is a check on your reading only; report what the ink shows, and note a word whose letters contradict the sets.
+
+Read the 8 images with the Read tool in this order:
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L01_g8.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L02_g4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L01_g5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L02_g1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L02_g6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L01_g2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L01_g3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124s/f124s_L01_g7.jpg
+Skeletons (segment: position:set ...):
+f124s_L01_g8: 1:? 2:[t/s/f] 3:[d/q/i] 4:? 5:? 6:? 7:? 8:?
+f124s_L02_g4: 1:? 2:? 3:[i/j/y] 4:? 5:[e/r/o] 6:? 7:[u/o] 8:?
+f124s_L01_g5: 1:[u/o] 2:? 3:[a/n] 4:[l] 5:? 6:[e/r/o] 7:? 8:?
+f124s_L02_g1: 1:? 2:? 3:? 4:? 5:? 6:[d/q/i] 7:[t/s/f] 8:[n/a/c/p]
+f124s_L02_g6: 1:? 2:? 3:[t/s/f] 4:[e/r/o] 5:[u/o] 6:[t/s/f] 7:? 8:?
+f124s_L01_g2: 1:? 2:[e/r/o] 3:? 4:[t/s/f] 5:[e/r/o] 6:? 7:?
+f124s_L01_g3: 1:[a/n] 2:[u/o] 3:[e/r/o] 4:[e/m] 5:? 6:? 7:[n/a/c/e] 8:?
+f124s_L01_g7: 1:? 2:[u/o] 3:[e/r/o] 4:[d/q/i] 5:[t/s/f] 6:? 7:?
+Write your transcription as a TSV file with the Write tool to the OUTPUT PATH given at the end of this prompt, header exactly:
+segment	pos	kind	word	tick_from	tick_to	conf	note
+one row per word or dash, 'pos' counting from 1 within the segment; kind = gloss, dash or struck; word in lower case, u for u/v, i for i/j, no accents, abbreviation marks expanded in square brackets; conf h/m/l. When done, report only: the number of words per segment and the total.
+OUTPUT PATH: /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/passes/f124s_wordsA_c0.tsv

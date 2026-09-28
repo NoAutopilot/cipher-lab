@@ -49,7 +49,7 @@ def leaves():
     out["f.61r"] = d
     from f61joint import f108_lines
     out["f.108r"] = {k: [(s, "") for s in v] for k, v in f108_lines().items()}
-    for leaf, pre in (("f.101r", "f101r"), ("f.188r", "f188r"), ("f.108v", "108v"), ("f.124r", "f124r")):
+    for leaf, pre in (("f.101r", "f101r"), ("f.188r", "f188r"), ("f.108v", "108v"), ("f.124r", "f124r"), ("f.97r", "f97r")):   # f.97r added by F61-FAMILY-5 (28 Sept 2026)
         path = f"{P}/rec{pre}/ciphertext_draft.tsv"
         if not os.path.exists(path): continue
         d = defaultdict(list); A = {}

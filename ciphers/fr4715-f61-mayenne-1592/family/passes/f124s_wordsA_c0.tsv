@@ -1,0 +1,28 @@
+segment	pos	kind	word	tick_from	tick_to	conf	note
+f124s_L01_g8	1	gloss	tisfaict	1	4	m	cut_left (likely end of satisfaict); 'tis' over 1, 'faict' over 2-4
+f124s_L01_g8	2	dash	-	4	4	m	short dash after faict, ends before tick 5
+f124s_L02_g4	1	gloss	?rie	1	3	l	first letter unclear (3-like or b/t); faint
+f124s_L02_g4	2	gloss	sur	6	7	m	
+f124s_L02_g4	3	dash	-	7	8	m	dash following sur
+f124s_L01_g5	1	gloss	luy	1	2	m	cut_left (possibly end of celuy); skeleton 1:[u/o] fits u
+f124s_L01_g5	2	gloss	ay	3	4	m	
+f124s_L01_g5	3	dash	-	5	5	l	short faint dash after ay
+f124s_L01_g5	4	gloss	estr	7	8	l	cut_right; first letter faint
+f124s_L02_g1	1	gloss	sa	1	2	m	
+f124s_L02_g1	2	gloss	tisf	2	3	l	small cramped letters, possibly continuing sa (satisf...)
+f124s_L02_g1	3	gloss	par	4	4	m	
+f124s_L02_g1	4	gloss	luy	5	6	m	
+f124s_L02_g1	5	gloss	d	7	7	l	single letter, heavy ink
+f124s_L02_g1	6	gloss	es	8	8	l	cut_right
+f124s_L02_g6	1	gloss	ma	1	2	m	faint
+f124s_L02_g6	2	gloss	fin	3	4	m	
+f124s_L02_g6	3	gloss	ss?r	4	6	l	dark bold ink unlike gloss hand; may be letter's own hand or row-above descenders
+f124s_L01_g2	1	gloss	la	1	2	h	
+f124s_L01_g2	2	gloss	lettre	4	5	h	
+f124s_L01_g2	3	gloss	q	7	7	l	cut_right
+f124s_L01_g3	1	gloss	ur	1	1	l	cut_left
+f124s_L01_g3	2	gloss	auec	2	3	h	flourish under word
+f124s_L01_g3	3	gloss	suiu	7	8	m	cut_right; could be suit
+f124s_L01_g7	1	gloss	sauoir	1	3	m	cut_left; left letters darker (h/s)
+f124s_L01_g7	2	dash	-	3	4	m	dash after sauoir
+f124s_L01_g7	3	gloss	sa	7	7	l	cut_right; faint

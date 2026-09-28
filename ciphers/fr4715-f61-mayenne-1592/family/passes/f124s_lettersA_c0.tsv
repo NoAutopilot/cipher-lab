@@ -1,0 +1,63 @@
+segment	pos	letters	conf	how	note
+f124s_L01_g8	1	s	m	r	'ti' of 'tis' to the left, likely from previous sign(s)
+f124s_L01_g8	2	f	m	r	tall f
+f124s_L01_g8	3	a	l	r	outside the set: reads a; clear text 'faict'/'fadct' crowded over ticks 2-4
+f124s_L01_g8	4	ict	l	r	'i/d c t' with trailing stroke; alignment uncertain
+f124s_L01_g8	5	-	m	r	nothing above; only previous row's descenders
+f124s_L01_g8	6	-	m	r	
+f124s_L01_g8	7	-	m	r	
+f124s_L01_g8	8	-	m	r	
+f124s_L02_g4	1	y	l	r	3-shaped letter (y/z?) drifting right of sign
+f124s_L02_g4	2	r	l	r	faint
+f124s_L02_g4	3	o	l	r	outside the set: faint 'ro' between ticks 2-3
+f124s_L02_g4	4	-	m	r	
+f124s_L02_g4	5	-	m	r	nothing seen; set e/r/o
+f124s_L02_g4	6	s	h	r	'Sur'
+f124s_L02_g4	7	u	h	r	
+f124s_L02_g4	8	r	m	r	r sits left of sign, trailing line to it
+f124s_L01_g5	1	u	m	r	'Cuy', C to left of tick
+f124s_L01_g5	2	y	m	r	
+f124s_L01_g5	3	a	m	r	a written right of sign
+f124s_L01_g5	4	y	l	r	outside the set: reads y ('ay')
+f124s_L01_g5	5	r	l	r	faint
+f124s_L01_g5	6	-	l	r	nothing seen; set e/r/o
+f124s_L01_g5	7	a	l	r	faint a before f
+f124s_L01_g5	8	ftr	l	r	'ftr' crowded over sign 8 area
+f124s_L02_g1	1	-	m	r	
+f124s_L02_g1	2	sa	l	r	'Sa' left of tick
+f124s_L02_g1	3	in	l	r	faint letters with dots
+f124s_L02_g1	4	par	m	r	whole word 'par' near sign
+f124s_L02_g1	5	c	l	r	'Cuy'/'luy' begins here
+f124s_L02_g1	6	q	l	i	letters 'uy' region; unclear
+f124s_L02_g1	7	d	l	r	outside the set: reads d
+f124s_L02_g1	8	es	l	r	outside the set
+f124s_L02_g6	1	m	h	r	
+f124s_L02_g6	2	a	h	r	
+f124s_L02_g6	3	t	m	r	
+f124s_L02_g6	4	r	m	r	
+f124s_L02_g6	5	u	m	r	
+f124s_L02_g6	6	s	m	r	long s
+f124s_L02_g6	7	se	l	r	second s and e before tick
+f124s_L02_g6	8	d	m	r	
+f124s_L01_g2	1	l	h	r	
+f124s_L01_g2	2	a	h	r	outside the set: reads a ('La')
+f124s_L01_g2	3	-	m	r	
+f124s_L01_g2	4	le	m	r	outside the set: reads l(e)
+f124s_L01_g2	5	tt	m	r	outside the set
+f124s_L01_g2	6	re	l	r	'lettre' tail
+f124s_L01_g2	7	g	l	r	large g-like stroke, may be cipher ink
+f124s_L01_g3	1	a	m	r	'auec' drifted right
+f124s_L01_g3	2	u	m	r	
+f124s_L01_g3	3	e	m	r	
+f124s_L01_g3	4	c	l	r	outside the set: reads c
+f124s_L01_g3	5	-	m	r	
+f124s_L01_g3	6	-	m	r	
+f124s_L01_g3	7	su	l	r	'Suit'; outside the set
+f124s_L01_g3	8	it	l	r	
+f124s_L01_g7	1	a	l	r	faint; letters 'hs' at left edge from previous
+f124s_L01_g7	2	u	m	r	
+f124s_L01_g7	3	o	m	r	
+f124s_L01_g7	4	i	m	r	
+f124s_L01_g7	5	r	l	r	outside the set: reads r
+f124s_L01_g7	6	-	m	r	
+f124s_L01_g7	7	-	l	r	faint mark at top is previous row

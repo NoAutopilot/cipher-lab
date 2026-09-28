@@ -1,0 +1,63 @@
+segment	pos	letters	conf	how	note
+f124s_L01_g8	1	s	l	r	'ti s' drifts over 1; t,i may belong to previous sign
+f124s_L01_g8	2	f	m	r	long f
+f124s_L01_g8	3	ai	l	r	ink 'a' and a small i/d between 2 and 4; word reads fa?ct
+f124s_L01_g8	4	ct	l	r	'ct' then a trailing stroke
+f124s_L01_g8	5	-	m	r	nothing above
+f124s_L01_g8	6	-	m	r	nothing above
+f124s_L01_g8	7	-	m	r	nothing above
+f124s_L01_g8	8	-	m	r	nothing above
+f124s_L02_g4	1	b	l	r	b or 3-shape
+f124s_L02_g4	2	r	m	r	
+f124s_L02_g4	3	e	l	r	outside the set: looks e
+f124s_L02_g4	4	-	m	r	nothing above
+f124s_L02_g4	5	-	m	r	nothing above
+f124s_L02_g4	6	s	m	r	tall s
+f124s_L02_g4	7	u	m	r	
+f124s_L02_g4	8	r	m	r	followed by trailing line
+f124s_L01_g5	1	u	m	r	'l' of luy sits to the left
+f124s_L01_g5	2	y	m	r	
+f124s_L01_g5	3	a	m	r	
+f124s_L01_g5	4	y	m	r	outside the set: reads y
+f124s_L01_g5	5	e	l	r	faint grey mark, could be r
+f124s_L01_g5	6	-	l	r	nothing visible above
+f124s_L01_g5	7	a	l	r	faint
+f124s_L01_g5	8	s	l	r	long s; 'tr' continues to right edge
+f124s_L02_g1	1	sa	l	r	
+f124s_L02_g1	2	s	l	r	small s
+f124s_L02_g1	3	tti	l	r	letters crowded, unclear
+f124s_L02_g1	4	par	l	r	word over one sign or spread over 4-5
+f124s_L02_g1	5	l	l	r	l/b
+f124s_L02_g1	6	uy	l	r	outside the set: reads u/y
+f124s_L02_g1	7	d	l	r	outside the set: reads d
+f124s_L02_g1	8	is	l	r	partly cut at right edge
+f124s_L02_g6	1	m	m	r	faint
+f124s_L02_g6	2	a	m	r	faint
+f124s_L02_g6	3	t	m	r	
+f124s_L02_g6	4	r	m	r	
+f124s_L02_g6	5	u	m	r	
+f124s_L02_g6	6	s	l	r	letters 'ss pr' crowded over 5-6, unplaced remainder
+f124s_L02_g6	7	-	l	r	nothing directly above
+f124s_L02_g6	8	d	l	r	
+f124s_L01_g2	1	l	m	r	
+f124s_L01_g2	2	a	m	r	outside the set: reads a
+f124s_L01_g2	3	le	l	r	
+f124s_L01_g2	4	t	m	r	
+f124s_L01_g2	5	t	l	r	outside the set: t; 'tr' crowded
+f124s_L01_g2	6	re	l	r	
+f124s_L01_g2	7	q	l	r	q/g at right edge
+f124s_L01_g3	1	a	l	r	'ur' at far left belongs to previous
+f124s_L01_g3	2	u	m	r	
+f124s_L01_g3	3	e	m	r	
+f124s_L01_g3	4	c	l	r	outside the set: reads c
+f124s_L01_g3	5	-	m	r	nothing above
+f124s_L01_g3	6	-	m	r	nothing above
+f124s_L01_g3	7	s	l	r	outside the set: tall s
+f124s_L01_g3	8	uit	l	r	partly cut at right edge
+f124s_L01_g7	1	a	m	r	'hs' at far left belongs to previous
+f124s_L01_g7	2	u	m	r	
+f124s_L01_g7	3	o	m	r	
+f124s_L01_g7	4	i	m	r	
+f124s_L01_g7	5	r	l	r	outside the set: r with trailing stroke
+f124s_L01_g7	6	-	m	r	nothing above
+f124s_L01_g7	7	-	l	r	faint marks at top probably from row above

@@ -1,0 +1,27 @@
+segment	pos	kind	word	tick_from	tick_to	conf	note
+f124s_L01_g8	1	gloss	tisfaict	1	4	m	cut_left (likely end of satisfaict); pos2 s/f fits set [t/s/f]
+f124s_L01_g8	2	dash	-	4	4	m	short dash after word; nothing over ticks 5-8
+f124s_L02_g4	1	gloss	?ue	1	3	l	first letter 3-shaped (q or z?); faint
+f124s_L02_g4	2	gloss	sur	6	7	m	u over tick 7 fits [u/o]
+f124s_L02_g4	3	dash	-	7	8	m	long dash after sur
+f124s_L01_g5	1	gloss	luy	1	2	m	possibly cut_left
+f124s_L01_g5	2	gloss	ay?	3	5	l	faint trailing letter (r?)
+f124s_L01_g5	3	gloss	astr	7	8	l	cut_right; faint a
+f124s_L02_g1	1	gloss	satis	1	3	m	sa and tis slightly separated
+f124s_L02_g1	2	gloss	par	4	4	h	
+f124s_L02_g1	3	gloss	luy	5	6	h	
+f124s_L02_g1	4	gloss	des	7	8	l	cut_right; d over tick 7 contradicts set [t/s/f]
+f124s_L02_g6	1	gloss	ma	1	2	m	faint ink
+f124s_L02_g6	2	gloss	tiu	3	4	l	medium ink; may join ma
+f124s_L02_g6	3	gloss	sse	4	5	l	dark heavy ink, may be descender of row above rather than gloss
+f124s_L02_g6	4	gloss	d?	8	8	l	cut_right
+f124s_L01_g2	1	gloss	la	1	2	h	a over tick 2 contradicts set [e/r/o]
+f124s_L01_g2	2	gloss	lettre	4	6	h	l over tick 4 contradicts set [t/s/f]
+f124s_L01_g2	3	gloss	qu	7	7	m	cut_right
+f124s_L01_g3	1	gloss	ur	1	1	m	cut_left; u over tick 1 contradicts set [a/n]
+f124s_L01_g3	2	gloss	auec	2	3	h	underline stroke below
+f124s_L01_g3	3	gloss	suit	7	8	m	cut_right
+f124s_L01_g7	1	gloss	h?	1	1	l	cut_left
+f124s_L01_g7	2	gloss	auoir	2	3	h	
+f124s_L01_g7	3	dash	-	4	4	m	dash after auoir
+f124s_L01_g7	4	gloss	?a	7	7	l	cut_right; faint, high on image
