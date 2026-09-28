@@ -1,0 +1,21 @@
+# H178b key (not shown to the reader); f.176r C43/ZHOOK-disputed columns in L01-L12: 52
+tile	leaf	line	segment	x	class
+1	f61	L07	2	1430	ZHOOK
+2	f176	L01	s1	1045.0	?
+3	f176	L11	s1	890.0	?
+4	f176	L04	s2	625.0	?
+5	f176	L01	s3	815.0	?
+6	f61	L07	2	1795	C43
+7	f61	L05	2	1700	C43
+8	f176	L09	s1	925.0	?
+9	f61	L07	3	2080	ZHOOK
+10	f61	L11	2	1500	ZHOOK
+11	f61	L05	2	500	C43
+12	f176	L07	s2	380.0	?
+13	f176	L02	s2	590.0	?
+14	f61	L05	2	1190	C43
+15	f176	L03	s2	1390.0	?
+16	f61	L11	1	1565	C43
+17	f176	L05	s2	705.0	?
+18	f176	L10	s3	275.0	?
+19	f61	L05	1	2310	C43
