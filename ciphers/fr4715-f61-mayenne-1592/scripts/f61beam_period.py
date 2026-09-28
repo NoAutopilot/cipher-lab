@@ -12,7 +12,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); FAM = os.path.abspath(f"{HERE
 ARGS = sys.argv[1:]; sys.argv = sys.argv[:1]
 import f61hash4_108r as H
 jp = H.jp
-EXT = "--ext" in ARGS   # H133 (28 Sept 2026): KEY.md period equivalences added (LOOPS = h/u, H24 = i/x, ZBAR = f/s); gate unchanged
+EXT = "--ext" in ARGS or "--lattice" in ARGS; LAT = "--lattice" in ARGS   # H138: the H136 word-lattice beam in place of the plain beam (with the H133 equivalences)   # H133 (28 Sept 2026): KEY.md period equivalences added (LOOPS = h/u, H24 = i/x, ZBAR = f/s); gate unchanged
 def main():
     C = H.J.cells(); out = []; R = N = F = 0
     if EXT: C = dict(C, LOOPS="h/u", H24="i/x", ZBAR="f/s")
@@ -24,7 +24,9 @@ def main():
         for seq in lines.values():
             idx = [k for k, (c, _) in enumerate(seq) if c in C]
             pairs = [tuple(jp.fold(x) for x in C[seq[k][0]].split("/")) for k in idx]
-            s, _, _ = H.resolve(pairs)
+            if LAT:
+                import f61beam_lattice as BL; s = BL.best_lattice(pairs)
+            else: s, _, _ = H.resolve(pairs)
             for i, k in enumerate(idx):
                 t = jp.fold(seq[k][1]) if len(seq[k][1]) == 1 else ""
                 if t and t in pairs[i]: n += 1; right += s[i] == t; first += pairs[i][0] == t
@@ -32,7 +34,7 @@ def main():
         R += right; N += n; F += first
     ok = N >= 100 and R / N >= 0.80
     out.append(f"pooled: beam {R}/{N} = {R / N:.3f}; always-first-letter {F / N:.3f}; GATE H130 (>= 0.80 on >= 100): {'PASS' if ok else 'FAIL'}")
-    txt = "\n".join(out) + "\n"; rp = f"{HERE}/f61beam_period{'_ext' if EXT else ''}_result.txt"
+    txt = "\n".join(out) + "\n"; rp = f"{HERE}/f61beam_period{'_lattice' if LAT else ('_ext' if EXT else '')}_result.txt"
     if "--check" in ARGS:
         good = os.path.exists(rp) and open(rp).read() == txt; print("fresh" if good else "STALE"); sys.exit(0 if good else 1)
     open(rp, "w").write(txt); print(txt, end="")
