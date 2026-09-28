@@ -762,3 +762,63 @@ fragments would need ten to thirty consecutive sign-words). The only surviving w
 (word signs for common words plus letters for the rest), which has no control-first design at this transcription's
 reliability (B33). Dropped, one clause: the pure word-sign reading is excluded by B29's lengths, the mixed one is
 untestable until the glyph transcription is under 10 percent disagreement.
+
+## Step B35 (28 Sept 2026, 06:17-06:33 UTC)
+
+Question: how reproducible is a glyph transcription of the 29 shorthand line crops against Tomokiyo's 38-type sheet?
+Every solver on the runs (B32, ARM-S1's inventory, any future B36/B37) stands on such a transcription, and B33 showed the
+dictionary annealer's known-answer control collapses between 10 and 15 percent injected error, so the gate for any
+solver run was set beforehand at under 10 percent pass-to-pass disagreement.
+
+Design: two blind Sonnet readers (A, B), each given the sheet `b35/tomokiyo_sheet.png` first and then one crop at a
+time from `b35/crops.tsv` (29 lines, images/shorthand/*.jpg, 1846 px wide), in two halves each (crops 1-15, 16-29), so
+four vision calls, none seeing another's output or Tomokiyo's tokenisation. Tokens: numerals as digits, glyphs as
+`T<label>`, no match `T??`. Files: `b35/passA_1-15.tsv`, `passA_16-29.tsv`, `passB_1-15.tsv`, `passB_16-29.tsv`
+(pass A writes one token per tab cell, pass B space-separated; `reconcile.py` reads both). Third witness: Tomokiyo's own
+tokenisation, `codex-2026-09-27b/glyphs.txt` (28 fragments, 257 glyphs).
+
+Results (`b35/reconcile.py`, output in `b35/reconcile_out.txt`):
+
+| statistic | value |
+|---|---|
+| glyph tokens, pass A / pass B / Tomokiyo | 244 / 239 / 257 |
+| crops where both readers found the same glyph count | 17 of 29; within one, 26 of 29 |
+| positional label agreement on the equal-count crops | 31 of 135 = 23 pct |
+| summed Levenshtein distance over glyph labels / summed max length | 201 / 252 = 80 pct disagreement |
+| each pass's glyph stream vs Tomokiyo's (difflib ratio) | 0.104 (A), 0.105 (B); A vs B 0.170 |
+| `T??` | 24 in pass A, 1 in pass B |
+| top confusions (unordered pairs) | 29/35 x10, 10/14 x8, 35/48 x7; the top five pairs carry 33 of 104 |
+
+The two readers also converge on different personal subsets of the sheet: pass A's commonest labels are 20, 35, 64, 14,
+48; pass B's are 18, 35, 29, 10, 64; Tomokiyo's own are 20, 36, 65, 35, 22. Each reader is internally consistent about
+*where* a glyph is but not about *which* of 38 exemplars it is.
+
+Coarser-inventory check (`b35/coarse_test.py`, `coarse_out.txt`, held out): merging every label pair confused two or
+more times on crops 1-15 gives a 23-class inventory that lifts positional agreement on crops 16-29 from 0.09 to 0.17;
+the reverse split (train 16-29, 29 classes) lifts crops 1-15 from 0.26 to 0.34. Neither approaches the gate, so the
+disagreement is not a few near-duplicate exemplars but the sheet's granularity against this image quality.
+
+Reader flags: both readers on crops 1-15 called crops 12 and 13 (page2_L02, page2_L03) "visually identical"; the files
+differ (sha1 differ; Pillow: 5.8 percent of pixels differ by more than 40 grey levels, mean absolute difference 22.9),
+so they are two adjacent, similar lines, not one file twice -- but ARM-TR2 (HYPOTHESES.md) already found the page-2
+crop indices off by one for lines other than L02/L06, so the crop-to-line identity on page 2 is by content, not name.
+Pass B (16-29) labelled no attached marks (A/U) on the numeral lines 16, 17, 19, judging the faint ticks bleed-through;
+pass A did label them (A60, A00, A02), so the attached-mark layer is also unreproduced between readers.
+
+Control (rule 3): the readers' *segmentation* is the control that could have failed and did not -- per-line glyph
+counts agree within one on 26 of 29 lines and with Tomokiyo's fragment counts where the fragments align (crops 6-10:
+17/17/17, 10/11/10, 16/16/8*, 19/19/31*, 11/11/10; asterisks are lines Tomokiyo split differently). So the readers see
+the same strokes; the failure is at the type-assignment layer only.
+
+Verdict: a 38-type glyph transcription of these crops is not reproducible between blind readers (80 percent label
+disagreement against a 10 percent gate), while the stroke segmentation is. Every result that depends on a glyph
+*sequence* (B32's salad, ARM-S1's 12-class inventory statistics, Tomokiyo's 38-type tokenisation) is conditional on a
+transcription that no second reader reproduces; results that depend only on glyph *counts* and *positions* (B27, B29,
+B30's run lengths and the type-20 word-space behaviour insofar as it is a position statistic) stand. B36 and B37 are
+dropped as untestable at this reliability, not as negatives. Next material that would change this: higher-resolution
+images of the three shorthand pages (the NARA reel frames are the only source on disk; the M34 originals at NARA RG 59
+would need a person), or a reader trained on a glyph inventory with a per-type discriminability check, neither of which
+is a line-B step (needs: doc/person).
+
+Cost: four Sonnet vision calls at about 12 minutes each, run in parallel; the step cost is read from the session's
+own metadata by the orchestrator, not estimated here.
