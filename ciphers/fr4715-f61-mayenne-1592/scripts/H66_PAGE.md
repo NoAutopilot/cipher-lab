@@ -30,7 +30,16 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
    letters (`scripts/f108v_consensus.txt`, H91). Calibration (H90): on the known lines the judge picks Tomokiyo's letter
    within the right pair at 43/47, but a permuted set still scores 16/20 (a letter-frequency prior) and the reused prompt
    example "beau-pere" is one of his words there. Tomokiyo lists f.108v among the letters in this cipher
-   (`sources/cryptiana/web/mayenne.htm`), so its plaintext may be known: the print search is H88, yours. Before H85: f.108r/f.108v
+   (`sources/cryptiana/web/mayenne.htm`), and the BnF finding aid catalogues fr.3983 f.108 as "chiffre et
+   déchiffrement" (a sparse interlined gloss on f.108v), so its plaintext is at least partly known in period: the print
+   search and the known-answer weighing are H88, yours. Checks since (28 Sept, 15:38-16:06): H93 a model-free fr16
+   4-gram score puts the target resolution first against the same judge's 20 wrong-map resolutions in all three calls,
+   though below real 16th-c. prose (a noisy grade-M text); H94 the judge rerun without the leaked example word, control
+   6.0 vs 2.0 and f.108v 6.5 vs 1.0; H101 per row, rank 1 in 23 of 28 row-calls (rows L03, L04, L06, L07 in all four);
+   H100/H102 against 20 one-swap neighbour maps, the known lines 7.0 vs 5.5 and f.108v 5.0 vs 4.5, the runner-up on
+   f.108v being the 4TRI c/p <-> 4PI d/q swap, which the 4-gram score (H103) even prefers by a hair: f.108v resolves
+   every cell pair but c/p against d/q (Tomokiyo's own confusable pair), so the c/p and d/q letters of the consensus are
+   its least supported. Before H85: f.108r/f.108v
    gloss readings wait on a person (ASKS rows 88/89; desk packs in `images/person_pack/` and
    `images/person_pack_108v/`). The model routes on that hand's gloss FAILed (H34, H35, H57).
 
@@ -46,7 +55,9 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 | published rare-class values (ZHOOK i/x) | `family/key_published_rare.tsv` | H44 |
 | f.108v skeleton (same hand as f.61) | `scripts/f108v_skeleton.txt` | H62 |
 | f.108v judge (control + three calls) and its consensus | `scripts/f61judge_known_h51_s101_*`, `scripts/f61judge_f108v_s10{1,2,3}_*`, `scripts/f108v_consensus.txt` (`f61judge108v.py score ... --check`, `f108v_consensus.py --check`) | H85, H91 |
-| judge letter-choice calibration | `scripts/f61judgeletters_result.txt` (`f61judgeletters.py --check`) | H90 |
+| judge letter-choice calibration | `scripts/f61judgeletters_result.txt`, `f61judgeletters_known_h51_s104_result.txt` (`f61judgeletters.py [--tag known_h51_s104] --check`) | H90, H94 |
+| model-free checks and hard null | `scripts/f61judge_ngram_result.txt`, `f61judge_ngram_hard_result.txt` (`f61judge_ngram.py [--hard] --check`), `scripts/f108v_lines.txt`, `scripts/f61judge_{known_h51,f108v}_swaps105_*`, no-leak `*_s104_*` | H93, H94, H100-H103 |
+| coding merges found in the family readers' classes (for the family worker) | `scripts/family_relabel_proposal.tsv` | H99 |
 
 ## Counts the verifier can re-derive
 

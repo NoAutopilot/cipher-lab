@@ -2304,3 +2304,9 @@ c/p against d/q, where the judge barely prefers the fitted map and the 4-gram sc
 4-shaped cells Tomokiyo calls confusable. The f.61/f.108r fit decided that assignment from Tomokiyo's markup and the
 reprinted period gloss (H51); f.108v's text neither confirms nor contradicts it. For the verifier (H88): the c/p and
 d/q positions of the f.108v consensus are the least supported letters. Not a reading; no class change.
+
+## Campaign step H104 (28 Sept 2026, 16:06 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/H66_PAGE.md` brought up to H93, H94, H100-H103 and H99 for LANE VO3 (the finding aid's "chiffre et
+déchiffrement" for f.108, the model-free and no-leak checks, the per-row ranks, the one-swap hard null and the c/p-d/q
+near tie; the file table extended). No new claim.
