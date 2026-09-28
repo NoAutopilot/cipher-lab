@@ -2,7 +2,7 @@ target: espagnol142-mercy-1648
 goal: raise the existing counted reading (N3, key ours, two audits V6-MERCY/V6-MERCY2 25 Sept 2026; 496 of 522 tokens at S, 26 at M) to a completed reading with a period key (the Brussels register, ASKS 82) and N4 after the editions check
 started: 2026-09-27 20:29 UTC
 daily_budget_usd: 240
-spent_today_usd: 94.18
+spent_today_usd: 95.18
 spent_day: 2026-09-28
 key_known: partial (key.tsv is ours, cryptanalytic, S-grade, N3 after two audits; no period key found -- Brussels SEE "chiffres 1647-98" register, DECODE 958-965, Gayangos all checked, NOTES.md MERCY-KEY)
 crib_available: partial (the letter's own clear-text opening and interspersed clear words, reading.txt r01-r03; no separate decipherment or copy found)
@@ -138,7 +138,7 @@ The header goal as written on 27 Sept was already met before the sprint began: s
 | H63 | 1 | One sign or two at r16:21: measure objectively, H10's way, the horizontal gap between the 7 and the 2 against every intra-group gap and every between-group gap on the same line (r16) and the lines above and below, from the native image (images/f22r_canvas58.jpg, crop via tools/iiif_lines.py --image or the h2crops boxes), connected-component ink columns at 4x; report where the 7-2 gap falls in the two distributions (percentile in each). Script only, no vision call; a gap inside the between-group range would support two signs (Burgstorf), inside the intra-group range one sign (72). | nobody | 1 | done | one sign: the 7-2 gap is 13 px, inside r16's intra-group range (5-14 px, n 14 with it) and below every between-group gap (33-74, n 19); the Burgstorf split is disfavoured, the crib rests on 72 as a syllable (NOTES.md "Campaign step H63") |
 | H64 | 1 | Consolidate the crib record for the orchestrator: candidates/candidates.tsv and REGISTER-CHECKLIST.md gain H53 (fit rests on 72 alone), H61 (no rival name on 883), H62/H63 (72 is one sign by the leaf's spacing, so the syllable assumption stands), H57 (title ambiguity); regenerate reading_candidates.txt with --check. Disk only. | nobody | 0.5 | done | candidates.tsv and REGISTER-CHECKLIST.md carry H53-H63; --check passes; one-sentence state of the crib in NOTES.md "Campaign step H64" |
 | H65 | 2 | Brandenburg-side record of Mercy's visit: Meinardus, *Protokolle und Relationen des Brandenburgischen Geheimen Rates* (the volumes covering 1647-1649) on Internet Archive -- full-text grep for Mercy / Merci / spanisch- Gesandt / Abt / Leopold / Erzherzog / Werbung near June-July 1648; a hit would place the envoy at Cleves and may name whom he dealt with. Log identifiers and requests; corroboration only. | nobody | 1 | done | negative: no 1648 Mercy/Spanish-envoy passage in six Meinardus volumes; precedent: Bd. 3 no. 501, Ribaucourt sent by Leopold Wilhelm to the Elector at Cleve, 15 Aug 1647 (NOTES.md "Campaign step H65") |
-| H66 | 3 | Contemporary print: *Theatrum Europaeum* vol. 6 (1647-1651) and the *Diarium Europaeum* / Merian newsletters on IA or Google Books full view, full-text search for Mercy / Abt von Mercy / spanischer Abgesandter with Cleve / Brandenburg, 1648. Corroboration only; log requests. | nobody | 1 | running session_01K2B2cTCwujqmMqmGYyE6BY |  |
+| H66 | 3 | Contemporary print: *Theatrum Europaeum* vol. 6 (1647-1651) and the *Diarium Europaeum* / Merian newsletters on IA or Google Books full view, full-text search for Mercy / Abt von Mercy / spanischer Abgesandter with Cleve / Brandenburg, 1648. Corroboration only; log requests. | nobody | 1 | done | negative/unreached: Theatrum Europaeum vol. 6 not on IA (only vol. 1 found); Google Books 0 hits for Mercy + Cleve/Clèves 1648 in four phrasings (NOTES.md "Campaign step H66") |
 
 ## Log
 
@@ -214,3 +214,4 @@ The header goal as written on 27 Sept was already met before the sprint began: s
 2026-09-28 16:37 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | new rows | 0 | no runnable row: H64 consolidate the crib record (candidates, checklist), H65 Meinardus Geheimer Rat protocols 1647-49 for Mercy's Cleves visit, H66 Theatrum Europaeum vol. 6 for the same.
 2026-09-28 16:38 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H64 | 0.5 | done: crib record consolidated. Next H65.
 2026-09-28 16:39 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H65 | 1 | done: Meinardus protocols negative for Mercy 1648; Ribaucourt's 1647 Cleve mission from Leopold Wilhelm noted. Next H66.
+2026-09-28 16:41 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H66 | 1 | done: Theatrum Europaeum vol. 6 unreached; Google Books 0. No runnable rows left.

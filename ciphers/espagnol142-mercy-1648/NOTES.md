@@ -2298,3 +2298,12 @@ envoy, Abt or Erzherzog passage is dated 1648 or tied to Mercy. The one Leopold 
 1647"**, about restoring Count Schwarzenberg -- not Mercy's business, but a precedent a year earlier for the archduke
 sending an envoy to the Elector at Cleves (Ribaucourt, governor of Spanish Guelders, is the same man who wrote to
 Burgsdorf in Feb 1647, H43). Corroboration of the channel only. No token, grade or class change.
+
+## Campaign step H66 (2026-09-28 16:41 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative / partly unreachable.** *Theatrum Europaeum* vol. 6 (1647-1651) is not on Internet
+Archive under that title: the only IA copy found (`bub_gb_5L1OAAAAcAAJ`, 1662) is vol. 1 (1617-1629; no 1647-1651 dates
+in its text), so vol. 6 is **unreached**, not searched. Google Books API (key, country=US; 4 queries, `h66/gbooks.tsv`):
+"Theatrum Europaeum" Mercy Cleve 1648, "Abt von Mercy" Cleve, "Abbé de Mercy" Clèves Brandebourg 1648, and a German
+phrasing -- 0 volumes each. No contemporary print of Mercy's Cleves mission found by these routes. archive.org 2
+requests, googleapis 4. No token, grade or class change.
