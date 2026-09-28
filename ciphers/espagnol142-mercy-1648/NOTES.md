@@ -1653,3 +1653,17 @@ notable on its own: **34 (= a) carries a dot on 3 of its 9 occurrences** (expect
 14: the a of "alandose", "estas", "armas"), so a first-line habit cannot be separated from a code-specific one on
 this leaf. Codes 14 (2 of 14, P 0.09) and 8 (2 of 24, P 0.18) do not reach it. Logged for the comparison with the
 Brussels register (a dotted homophone would be a key feature); no token or grade changed.
+
+## Campaign step H29 (2026-09-28 05:39 UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Candidates for the boxed 101 name code, two occurrences: r07 "de la duquesa de
+Cheureuse y del [101]" and r09 "que el [101] uenga con uos". From what is on file only (AUDIT.md: Lonchay 1896
+p.445, which places Mercy's 1648 talks with the duchesse de Chevreuse and Saint-Ibal at Kerpen and Spa; the
+Cuvelier-Lefèvre VI no. 1499 calendar of the parallel dispatch; the letter's own clear text). Constraints: the first
+context wants a masculine person or title after "del" paired with Chevreuse; the second a person who could travel
+with Mercy. Persons named in the sources around the mission: the Elector of Brandenburg (spelled out in cipher, so
+not a code), Leopold Wilhelm (the inferred sender, cannot "come with you"), the duchesse de Chevreuse (feminine,
+spelled out), **Saint-Ibal** (Chevreuse's agent, in the same talks per Lonchay -- fits both contexts), the **duke of
+Lorraine** (a title after "del", could join Mercy -- fits both), Piccolomini (fits the second only). **Two names fit
+both contexts, so by this row's own rule no candidate is graded**; the boxed 101 stays `_` (M). If the Brussels
+register (H17, ASKS 82) lists a boxed 101, it decides. No hosts; no token or grade changed.
