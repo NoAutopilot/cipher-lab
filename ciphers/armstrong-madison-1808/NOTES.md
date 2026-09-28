@@ -3234,3 +3234,27 @@ cipher's low values the way the legation letters do, so no shared particle list;
 (no particle block in the legation code), the Madrid legation cipher is excluded as the target's code or its
 particle source at every level tested. No reading, no class change; nothing called new or first. Vision 0, requests
 0. Cost: about 0.5 USD (`--spend` records 0.5).
+
+## Campaign step H50 (28 Sept 2026, to 15:04 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Question:
+are the target's two oddities that ARM-CODES could not reproduce from any Department table or THE=972 usage -- the
+last-digit-0/1 excess and the 900-1099 gap -- a habit of period PRIVATE codes? The Madrid legation cipher is the
+first private sibling on file. Offline.
+
+**Test** (`h50/private_habits.py`, output `h50/output.txt`; streams loaded by h49/particle_list.py): on 1,000 random
+contiguous 369-group windows of the legation usage (1,738 groups), z0 = share of tokens >= 100 ending in 0, d01 =
+share of all tokens ending in 0 or 1, gap = distinct values in 900-1099.
+
+| statistic | target | legation windows p05 / median / p95 | target percentile | WE028 usage (250) |
+|---|---|---|---|---|
+| z0 | 0.388 | 0.074 / 0.097 / 0.121 | 100 | 0.109 |
+| d01 | 0.431 | 0.203 / 0.236 / 0.271 | 100 | 0.208 |
+| gap (distinct in 900-1099) | 4 | 14 / 19 / 24 | 0 | 23 |
+
+**Result:** the legation cipher's usage is flat in the last digit and fills 900-1099 like any other range; the target
+lies outside its whole band on all three. The statistics do vary across windows (the band is the null), so the test
+could have placed the target inside. So the oddities are not a habit of the one period private code on file; they
+stay target-specific design clues (ARM-DESIGN's decade/slot reading of the last digit, B1/B2's row design), as
+ARM-CODES left them. No reading, no class change; nothing called new or first. Vision 0, requests 0. Cost: about 0.3
+USD (`--spend` records 0.5).

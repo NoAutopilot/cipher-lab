@@ -1,0 +1,5 @@
+target: z0 0.388, d01 0.431, gap 4
+legation 369-windows z0: p05 0.074 median 0.097 p95 0.121; target percentile 100.0
+legation 369-windows d01: p05 0.203 median 0.236 p95 0.271; target percentile 100.0
+legation 369-windows gap: p05 14.000 median 19.000 p95 24.000; target percentile 0.0
+WE028 usage (250 groups, whole): z0 0.109, d01 0.208, gap 23.000
