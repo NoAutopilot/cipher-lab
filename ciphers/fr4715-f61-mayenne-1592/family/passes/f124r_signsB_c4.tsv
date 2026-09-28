@@ -1,0 +1,509 @@
+line	pos	sign	conf	segment	x_px	note
+L25	1	PHI	m	s1	240	loop on stem, first sign; alt LOOPSTEM1
+L25	2	PHI	h	s1	330	
+L25	3	EBR_B	m	s1	430	L-like bracket
+L25	4	H24	m	s1	480	
+L25	5	OTHER	l	s1	545	small o/v-like mark
+L25	6	H24	m	s1	610	
+L25	7	PHI	h	s1	780	loops on stem
+L25	8	4TRI	h	s1	940	
+L25	9	OTHER	m	s1	1085	ampersand/figure-8 with tail; alt INF
+L25	10	4TRI	m	s1	1170	
+L25	11	OTHER	l	s1	1240	small v
+L25	12	H24	m	s1	1310	
+L25	13	4TRI	h	s1	1440	
+L25	14	PHI	h	s2	150	
+L25	15	H24	m	s2	260	
+L25	16	PHI	h	s2	335	
+L25	17	4TRI	h	s2	435	
+L25	18	PHI	h	s2	530	
+L25	19	PHI	h	s2	660	
+L25	20	BETA	m	s2	760	
+L25	21	H24	m	s2	830	
+L25	22	HASH4	m	s2	910	crossed 4 with long trailing stroke
+L25	23	OTHER	h	s2	1065	up-pointing triangle on a stem crossed by two bars; alt VBAR_B
+L25	24	4TRI	h	s2	1200	
+L25	25	PHI	h	s2	1290	
+L25	26	LOOPS	m	s2	1370	
+L25	27	OTHER	l	s2	1480	small v
+L25	28	VBAR_A	m	s3	190	v with bar
+L25	29	PHI	h	s3	250	
+L25	30	PHI	h	s3	340	
+L25	31	LOOPS	m	s3	420	
+L25	32	H24	m	s3	520	
+L25	33	PHI	h	s3	630	
+L25	34	4TRI	h	s3	760	
+L25	35	LOOPS	m	s3	830	
+L25	36	PHI	h	s3	960	
+L25	37	VBAR_A	m	s3	1030	
+L25	38	OTHER	l	s3	1110	small v
+L25	39	OTHER	l	s3	1190	small loop
+L25	40	PHI	h	s3	1270	
+L25	41	PHI	h	s3	1340	
+L25	42	HASH4	m	s3	1460	
+L25	43	PHI	h	s4	170	
+L25	44	VBAR_A	m	s4	270	
+L25	45	4TRI	h	s4	380	
+L25	46	LOOPS	m	s4	460	
+L25	47	4TRI	m	s4	560	
+L25	48	PHI	h	s4	690	
+L25	49	OTHER	l	s4	760	small v
+L25	50	PHI	h	s4	850	
+L25	51	EBR_B	m	s4	990	alt ISH
+L25	52	PHI	h	s4	1060	
+L25	53	DBL	m	s4	1130	8-like on stem
+L25	54	C6	h	s4	1225	
+L25	55	PHI	h	s4	1330	
+L25	56	OTHER	l	s4	1420	small v
+L25	57	RSIGN	l	s4	1470	
+L25	58	OTHER	l	s4	1510	small v
+L25	59	HASH4	m	s5	230	
+L25	60	PHI	h	s5	300	
+L25	61	BETA	m	s5	400	
+L25	62	PHI	h	s5	480	
+L25	63	LOOPS	m	s5	560	
+L25	64	PHI	h	s5	640	
+L25	65	PHI	h	s5	720	
+L25	66	VBAR_A	m	s5	820	
+L25	67	LOOPS	l	s5	870	
+L25	68	PHI	h	s5	960	
+L25	69	OTHER	l	s5	1030	small v
+L25	70	VBAR_A	m	s5	1150	followed by long tail stroke
+L26	1	4TRI	m	s1	250	4 over small 3-like
+L26	2	VBAR_A	h	s1	390	
+L26	3	H24	h	s1	500	
+L26	4	VBAR_A	m	s1	600	a long stroke runs through 580-780 (struck?)
+L26	5	VBAR_A	m	s1	690	struck? by same stroke
+L26	6	4TRI	m	s1	810	
+L26	7	H24	h	s1	960	
+L26	8	VBAR_A	h	s1	1070	
+L26	9	4TRI	m	s1	1200	alt 4STEM
+L26	10	4TRI	m	s1	1330	
+L26	11	OTHER	l	s1	1400	small v
+L26	12	PHI	h	s1	1460	
+L26	13	H24	h	s2	180	
+L26	14	EBR_B	m	s2	290	
+L26	15	4TRI	h	s2	380	
+L26	16	PHI	h	s2	490	
+L26	17	PHI	h	s2	590	
+L26	18	H24	h	s2	690	
+L26	19	C6	m	s2	800	
+L26	20	LOOPS	m	s2	850	
+L26	21	H24	h	s2	1000	
+L26	22	OTHER	l	s2	1070	small v
+L26	23	OTHER	m	s2	1210	delta-like: loop with two horns above; alt DBL
+L26	24	EBR_B	m	s2	1300	
+L26	25	4TRI	m	s2	1370	
+L26	26	PHI	h	s2	1450	
+L26	27	VBAR_A	h	s3	190	
+L26	28	PHI	h	s3	290	
+L26	29	4TRI	h	s3	390	
+L26	30	OTHER	l	s3	480	small v
+L26	31	PHI	h	s3	640	
+L26	32	VBAR_A	m	s3	750	
+L26	33	OTHER	l	s3	880	small v
+L26	34	LOOPS	m	s3	940	
+L26	35	LOOPS	l	s3	1000	
+L26	36	H24	h	s3	1060	
+L26	37	OTHER	l	s3	1160	small v
+L26	38	4TRI	h	s3	1290	
+L26	39	PHI	m	s3	1420	
+L26	40	BETA	m	s4	160	
+L26	41	RSIGN	m	s4	230	alt BETA
+L26	42	LOOPS	m	s4	320	
+L26	43	4TRI	h	s4	430	
+L26	44	PHI	h	s4	540	
+L26	45	4TRI	h	s4	650	
+L26	46	OTHER	l	s4	820	m-like strokes + c + o with tilde above; possibly a plain abbreviation
+L26	47	4TRI	h	s4	990	
+L26	48	PHI	h	s4	1100	
+L26	49	BETA	m	s4	1210	
+L26	50	PHI	h	s4	1290	
+L26	51	PHI	h	s4	1380	
+L26	52	4STEM	m	s4	1480	
+L26	53	LOOPS	l	s5	170	
+L26	54	PHI	h	s5	230	
+L26	55	BETA	m	s5	300	
+L26	56	BETA	m	s5	400	
+L26	57	PHI	h	s5	490	
+L26	58	4TRI	m	s5	580	
+L26	59	LOOPS	m	s5	660	
+L26	60	H24	h	s5	800	
+L26	61	H24	h	s5	920	
+L26	62	4TRI	m	s5	1000	
+L26	63	4STEM	m	s5	1080	
+L26	64	PHI	h	s5	1150	
+L26	65	EBR_B	m	s5	1220	
+L27	1	OTHER	h	s1	225	delta-like: loop with two horns above; alt DBL
+L27	2	4TRI	h	s1	300	
+L27	3	PHI	h	s1	400	
+L27	4	4STEM	m	s1	520	
+L27	5	RSIGN	m	s1	570	
+L27	6	PHI	h	s1	650	
+L27	7	VBAR_A	m	s1	750	
+L27	8	OTHER	l	s1	860	small dark v/blot
+L27	9	PHI	m	s1	930	heavy loops on stem
+L27	10	OTHER	l	s1	1000	small loop
+L27	11	H24	h	s1	1090	
+L27	12	OTHER	h	s1	1190	delta-like; alt DBL
+L27	13	EBR_B	m	s1	1280	
+L27	14	4TRI	h	s1	1360	
+L27	15	PHI	h	s1	1470	
+L27	16	LOOPS	h	s2	190	
+L27	17	H24	m	s2	290	
+L27	18	4TRI	h	s2	390	
+L27	19	PHI	h	s2	490	
+L27	20	HASH4	m	s2	610	a stroke runs through 580-800 (struck?)
+L27	21	LOOPS	m	s2	720	struck?
+L27	22	4TRI	h	s2	850	
+L27	23	4TRI	h	s2	960	
+L27	24	H24	h	s2	1080	
+L27	25	VBAR_A	h	s2	1190	
+L27	26	PHI	h	s2	1300	
+L27	27	LOOPS	m	s2	1450	
+L27	28	VBAR_A	m	s3	150	
+L27	29	PHI	h	s3	260	
+L27	30	LOOPS	m	s3	380	
+L27	31	OTHER	l	s3	470	small v
+L27	32	PHI	h	s3	570	
+L27	33	VBAR_A	m	s3	680	
+L27	34	OTHER	l	s3	780	small v
+L27	35	PHI	h	s3	830	
+L27	36	H24	m	s3	920	
+L27	37	OTHER	l	s3	1010	small v
+L27	38	VBAR_A	m	s3	1140	
+L27	39	H24	m	s3	1260	line through (struck?)
+L27	40	VBAR_A	m	s3	1370	
+L27	41	PHI	h	s3	1470	
+L27	42	OTHER	l	s4	150	small v
+L27	43	PHI	h	s4	250	
+L27	44	PHI	h	s4	330	
+L27	45	H24	m	s4	410	
+L27	46	PHI	h	s4	540	
+L27	47	OTHER	m	s4	640	heavy dark loop blot
+L27	48	EBR_B	m	s4	760	
+L27	49	PHI	h	s4	850	
+L27	50	4TRI	m	s4	960	
+L27	51	4TRI	m	s4	1080	
+L27	52	HASH4	m	s4	1230	struck?
+L27	53	4TRI	m	s4	1400	
+L27	54	PHI	m	s4	1490	
+L27	55	4STEM	m	s4	1515	
+L27	56	PHI	h	s5	190	
+L27	57	4TRI	h	s5	280	
+L27	58	4TRI	m	s5	360	
+L27	59	PHI	h	s5	520	
+L27	60	H24	m	s5	610	
+L27	61	OTHER	l	s5	700	small v
+L27	62	4TRI	h	s5	900	
+L27	63	PHI	h	s5	990	
+L27	64	VBAR_A	m	s5	1060	
+L27	65	OTHER	l	s5	1130	small v
+L27	66	PHI	h	s5	1220	
+L28	1	4STEM	m	s1	230	
+L28	2	RSIGN	m	s1	290	
+L28	3	H24	m	s1	330	
+L28	4	PHI	h	s1	460	
+L28	5	HASH4	m	s1	600	
+L28	6	PHI	h	s1	690	
+L28	7	VBAR_A	h	s1	800	
+L28	8	4TRI	m	s1	950	
+L28	9	PHI	h	s1	1070	
+L28	10	BETA	m	s1	1190	
+L28	11	PHI	h	s1	1290	
+L28	12	PHI	h	s1	1370	
+L28	13	VBAR_A	h	s1	1470	
+L28	14	OTHER	h	s2	190	delta-like: loop with two horns above; alt DBL
+L28	15	EBR_B	m	s2	300	
+L28	16	4TRI	m	s2	390	
+L28	17	VBAR_A	h	s2	510	
+L28	18	PHI	h	s2	600	
+L28	19	4TRI	h	s2	720	
+L28	20	4TRI	h	s2	840	
+L28	21	4TRI	m	s2	970	
+L28	22	PHI	h	s2	1060	
+L28	23	4TRI	m	s2	1170	
+L28	24	PHI	h	s2	1240	
+L28	25	ISH	m	s2	1320	
+L28	26	4TRI	m	s2	1420	
+L28	27	PHI	m	s2	1500	
+L28	28	4TRI	m	s3	210	
+L28	29	4TRI	h	s3	350	
+L28	30	PHI	h	s3	430	
+L28	31	OTHER	m	s3	570	two slanted stems joined, dark; alt ZHOOK
+L28	32	4TRI	m	s3	680	
+L28	33	LOOPS	m	s3	830	
+L28	34	PHI	h	s3	950	
+L28	35	H24	m	s3	1060	
+L28	36	VBAR_A	h	s3	1170	
+L28	37	VBAR_A	m	s3	1270	
+L28	38	4TRI	m	s3	1370	
+L28	39	H24	m	s3	1480	
+L28	40	OTHER	l	s4	220	small v
+L28	41	EBR_B	m	s4	300	
+L28	42	PHI	h	s4	360	
+L28	43	LOOPS	m	s4	430	
+L28	44	PHI	h	s4	540	
+L28	45	4TRI	m	s4	640	
+L28	46	PHI	h	s4	770	
+L28	47	BETA	m	s4	860	
+L28	48	PHI	h	s4	960	
+L28	49	PHI	h	s4	1020	
+L28	50	EBR_B	m	s4	1100	
+L28	51	PHI	h	s4	1180	
+L28	52	LOOPS	m	s4	1270	
+L28	53	PHI	h	s4	1380	
+L28	54	HASH4	m	s4	1490	last sign visible; in s5 this row runs into the top edge and is cut (not transcribed); the complete row in the s5 image is the next band's
+L29	1	PHI	h	s1	250	small o above
+L29	2	HASH4	m	s1	370	
+L29	3	H24	m	s1	440	
+L29	4	4TRI	m	s1	560	
+L29	5	H24	m	s1	720	
+L29	6	PHI	h	s1	820	
+L29	7	4TRI	h	s1	980	
+L29	8	OTHER	m	s1	1110	ampersand/figure-8 with tail; alt INF
+L29	9	OTHER	l	s1	1290	n-o-n like strokes; possibly PLAIN non
+L29	10	PHI	h	s1	1440	
+L29	11	VBAR_A	m	s1	1500	
+L29	12	OTHER	l	s2	190	small v
+L29	13	PHI	h	s2	250	
+L29	14	H24	m	s2	330	
+L29	15	OTHER	l	s2	420	small v
+L29	16	PHI	h	s2	650	
+L29	17	PHI	h	s2	700	
+L29	18	HASH4	m	s2	800	
+L29	19	PHI	h	s2	860	
+L29	20	LOOPS	m	s2	960	
+L29	21	PHI	h	s2	1060	
+L29	22	4TRI	h	s2	1200	
+L29	23	PHI	h	s2	1300	
+L29	24	OTHER	m	s2	1420	delta-like; alt DBL
+L29	25	VBAR_A	m	s2	1490	
+L29	26	PHI	h	s3	190	
+L29	27	PHI	h	s3	300	
+L29	28	OTHER	l	s3	370	small v
+L29	29	4TRI	h	s3	490	
+L29	30	PHI	h	s3	600	
+L29	31	LOOPS	m	s3	700	
+L29	32	HASH4	m	s3	810	
+L29	33	PHI	h	s3	900	
+L29	34	OTHER	l	s3	990	small v
+L29	35	PHI	h	s3	1070	
+L29	36	4TRI	m	s3	1170	
+L29	37	VBAR_A	m	s3	1290	
+L29	38	OTHER	h	s3	1420	up-pointing triangle on a stem crossed by two bars; alt VBAR_B
+L29	39	EBR_B	m	s3	1500	
+L29	40	PHI	h	s4	200	
+L29	41	4TRI	h	s4	320	
+L29	42	H24	h	s4	440	
+L29	43	LOOPS	m	s4	560	
+L29	44	OTHER	l	s4	670	small v
+L29	45	PHI	h	s4	760	
+L29	46	PHI	m	s4	880	
+L29	47	H24	m	s4	1000	line through (struck?)
+L29	48	OTHER	l	s4	1090	small v
+L29	49	HASH4	m	s4	1200	
+L29	50	PHI	h	s4	1280	
+L29	51	BETA	m	s4	1420	
+L29	52	PHI	m	s4	1490	
+L29	53	OTHER	l	s5	130	small v; READ FROM f124r_L28_s5.jpg lower row (L29_s5 image is centred on next row; this row cut at its top edge)
+L29	54	BETA	m	s5	200	from L28_s5 image
+L29	55	PHI	h	s5	280	from L28_s5 image
+L29	56	ZBAR	m	s5	400	from L28_s5 image
+L29	57	HASH4	m	s5	510	dark; from L28_s5 image
+L29	58	PHI	h	s5	610	from L28_s5 image
+L29	59	EBR_B	m	s5	690	from L28_s5 image
+L29	60	EBR_B	m	s5	760	from L28_s5 image
+L29	61	PHI	h	s5	820	from L28_s5 image
+L29	62	VBAR_A	m	s5	910	from L28_s5 image
+L29	63	HASH4	m	s5	1040	from L28_s5 image
+L29	64	LOOPS	m	s5	1110	ooo; from L28_s5 image
+L29	65	C6	l	s5	1200	6-like with long tail; alt OTHER; from L28_s5 image
+L30	1	H24	m	s1	240	
+L30	2	EBR_B	m	s1	350	
+L30	3	EBR_B	m	s1	470	
+L30	4	LOOPS	m	s1	560	
+L30	5	EBR_B	m	s1	710	
+L30	6	4TRI	m	s1	810	
+L30	7	4TRI	m	s1	940	
+L30	8	H24	h	s1	1050	
+L30	9	OTHER	l	s1	1140	small v
+L30	10	OTHER	h	s1	1260	up-pointing triangle on a stem crossed by two bars; alt VBAR_B
+L30	11	EBR_B	m	s1	1380	
+L30	12	PHI	h	s1	1470	
+L30	13	VBAR_A	m	s2	190	
+L30	14	OTHER	l	s2	270	small v
+L30	15	PHI	h	s2	350	
+L30	16	H24	m	s2	470	
+L30	17	OTHER	l	s2	570	small v
+L30	18	PHI	h	s2	720	
+L30	19	H24	m	s2	830	
+L30	20	PHI	h	s2	940	
+L30	21	4TRI	h	s2	1030	
+L30	22	HASH4	m	s2	1150	
+L30	23	PHI	h	s2	1230	
+L30	24	4TRI	m	s2	1340	
+L30	25	PHI	h	s2	1480	
+L30	26	4TRI	h	s3	190	
+L30	27	PHI	h	s3	290	
+L30	28	VBAR_A	m	s3	370	
+L30	29	OTHER	l	s3	440	x-like crossed stroke; alt ZHOOK
+L30	30	H24	m	s3	490	
+L30	31	OTHER	l	s3	560	small v
+L30	32	PHI	h	s3	700	
+L30	33	4TRI	m	s3	840	
+L30	34	PHI	h	s3	950	
+L30	35	PHI	m	s3	1100	alt 4TRI
+L30	36	ZBAR	m	s3	1230	
+L30	37	VBAR_A	m	s3	1320	
+L30	38	OTHER	l	s3	1400	small v
+L30	39	PHI	h	s3	1480	
+L30	40	PHI	h	s4	190	
+L30	41	H24	m	s4	290	
+L30	42	EBR_B	m	s4	400	
+L30	43	H24	m	s4	480	
+L30	44	OTHER	l	s4	560	small v
+L30	45	PHI	h	s4	630	
+L30	46	4TRI	m	s4	750	
+L30	47	4TRI	m	s4	860	
+L30	48	PHI	h	s4	980	
+L30	49	EBR_B	m	s4	1080	
+L30	50	4TRI	m	s4	1160	
+L30	51	OTHER	l	s4	1280	large g-like sign with swash tail; possibly a plain letter
+L30	52	PHI	h	s4	1440	
+L30	53	VBAR_A	m	s4	1500	
+L30	54	OTHER	l	s5	240	small v; row is the top row of the s5 image (same signs as lower row of L29_s5 image)
+L30	55	PHI	h	s5	320	
+L30	56	H24	m	s5	440	
+L30	57	OTHER	l	s5	530	small v
+L30	58	PHI	h	s5	630	
+L30	59	4TRI	h	s5	730	
+L30	60	4STEM	m	s5	810	
+L30	61	PHI	m	s5	880	
+L30	62	LOOPS	m	s5	950	
+L30	63	PHI	h	s5	1010	
+L30	64	PHI	h	s5	1090	
+L30	65	VBAR_A	m	s5	1170	
+L31	1	VBAR_A	m	s1	260	
+L31	2	H24	m	s1	390	
+L31	3	LOOPS	m	s1	510	
+L31	4	4TRI	m	s1	620	
+L31	5	PHI	h	s1	780	
+L31	6	PHI	h	s1	920	
+L31	7	4TRI	h	s1	1050	
+L31	8	4TRI	m	s1	1190	alt HASH4
+L31	9	4TRI	h	s1	1320	
+L31	10	4TRI	h	s1	1460	
+L31	11	OTHER	l	s2	180	small v
+L31	12	PHI	h	s2	270	
+L31	13	OTHER	h	s2	410	delta-like; alt DBL
+L31	14	PHI	h	s2	520	
+L31	15	4TRI	h	s2	640	
+L31	16	EBR_A	m	s2	760	alt EBR_B
+L31	17	LOOPS	m	s2	880	line through (struck?)
+L31	18	HASH4	m	s2	990	
+L31	19	LOOPS	m	s2	1060	
+L31	20	PHI	h	s2	1180	
+L31	21	H24	m	s2	1280	
+L31	22	OTHER	l	s2	1400	small v
+L31	23	4TRI	m	s2	1490	
+L31	24	BETA	m	s3	250	
+L31	25	PHI	h	s3	330	
+L31	26	H24	m	s3	440	
+L31	27	EBR_B	m	s3	530	
+L31	28	EBR_B	m	s3	600	
+L31	29	PHI	h	s3	680	
+L31	30	LOOPS	m	s3	780	
+L31	31	PHI	h	s3	890	
+L31	32	4TRI	h	s3	1000	
+L31	33	PHI	h	s3	1100	
+L31	34	BETA	m	s3	1220	
+L31	35	OTHER	l	s3	1330	small v
+L31	36	PHI	h	s3	1420	
+L31	37	HASH4	m	s4	140	
+L31	38	PHI	h	s4	240	
+L31	39	4TRI	m	s4	320	alt HASH4
+L31	40	PHI	h	s4	420	
+L31	41	LOOPS	m	s4	490	
+L31	42	H24	m	s4	640	
+L31	43	VBAR_A	h	s4	770	
+L31	44	H24	m	s4	870	
+L31	45	PHI	h	s4	960	
+L31	46	PHI	h	s4	1030	
+L31	47	VBAR_A	m	s4	1120	
+L31	48	OTHER	m	s4	1210	delta-like with long hanging arc; alt DBL
+L31	49	HASH4	m	s4	1350	
+L31	50	4TRI	m	s4	1450	
+L31	51	4TRI	m	s5	150	
+L31	52	VBAR_A	m	s5	280	
+L31	53	OTHER	l	s5	410	tall bracket/brace descending into lines below
+L31	54	BETA	m	s5	520	
+L31	55	4TRI	m	s5	610	
+L31	56	H24	m	s5	700	
+L31	57	VBAR_A	m	s5	800	
+L31	58	4TRI	m	s5	960	
+L31	59	PHI	h	s5	1110	
+L31	60	VBAR_A	m	s5	1190	
+L31	61	PHI	h	s5	1250	
+L32	1	OTHER	l	s1	250	small v
+L32	2	PHI	h	s1	370	
+L32	3	LOOPS	m	s1	450	long stroke through 430-1010 (struck?)
+L32	4	LOOPS	m	s1	580	struck?
+L32	5	PHI	m	s1	690	
+L32	6	HASH4	m	s1	840	
+L32	7	OTHER	l	s1	960	small v
+L32	8	OTHER	h	s1	1070	up-pointing triangle on a stem crossed by two bars; alt VBAR_B
+L32	9	EBR_B	m	s1	1170	
+L32	10	BETA	m	s1	1230	
+L32	11	PHI	h	s1	1330	
+L32	12	LOOPS	m	s1	1460	
+L32	13	VBAR_A	m	s2	160	
+L32	14	VBAR_A	m	s2	260	
+L32	15	PHI	h	s2	340	
+L32	16	4TRI	m	s2	440	
+L32	17	OTHER	l	s2	540	small v
+L32	18	HASH4	m	s2	670	
+L32	19	PHI	h	s2	790	
+L32	20	4TRI	m	s2	920	
+L32	21	4TRI	m	s2	1030	
+L32	22	PHI	h	s2	1150	
+L32	23	PLAIN	l	s2	1390	Tavaia? clear cursive word in the row, continues into s3 to x180
+L32	24	HASH4	m	s3	270	
+L32	25	PHI	h	s3	330	
+L32	26	LOOPS	m	s3	420	
+L32	27	H24	m	s3	530	
+L32	28	4TRI	h	s3	680	
+L32	29	4TRI	m	s3	790	
+L32	30	H24	m	s3	900	
+L32	31	PHI	h	s3	1060	
+L32	32	VBAR_A	m	s3	1160	
+L32	33	4TRI	h	s3	1270	
+L32	34	EBR_B	m	s3	1380	
+L32	35	PHI	h	s3	1460	
+L32	36	LOOPS	m	s4	150	
+L32	37	PHI	h	s4	230	
+L32	38	VBAR_A	m	s4	310	
+L32	39	VBAR_A	m	s4	410	heavy dark
+L32	40	PHI	h	s4	510	
+L32	41	4TRI	l	s4	620	
+L32	42	VBAR_A	m	s4	700	
+L32	43	HASH4	m	s4	840	
+L32	44	PHI	h	s4	940	dark
+L32	45	VBAR_A	m	s4	1060	
+L32	46	LOOPS	m	s4	1140	
+L32	47	PHI	h	s4	1240	
+L32	48	PHI	h	s4	1360	
+L32	49	CA	m	s4	1450	alt PHI
+L32	50	PHI	h	s5	130	
+L32	51	ZBAR	h	s5	250	
+L32	52	OTHER	m	s5	370	open square box
+L32	53	PHI	h	s5	440	
+L32	54	OTHER	l	s5	560	small v
+L32	55	PHI	h	s5	640	
+L32	56	BETA	m	s5	740	
+L32	57	4STEM	l	s5	820	p-like with descender
+L32	58	ISH	m	s5	920	
+L32	59	OTHER	h	s5	1010	up-pointing triangle on a stem crossed by two bars; alt VBAR_B
+L32	60	EBR_B	m	s5	1080	
+L32	61	BETA	m	s5	1140	
+L32	62	4TRI	h	s5	1230	

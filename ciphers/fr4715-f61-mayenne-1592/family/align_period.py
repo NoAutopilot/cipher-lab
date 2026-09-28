@@ -19,6 +19,15 @@ import csv, difflib, json, os, subprocess, sys
 from collections import Counter, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(f"{HERE}/../../..")
 pre, leaf = sys.argv[1], sys.argv[2]
+# F61-FAMILY-4 (28 Sept 2026, f.124r): two options, both off by default (other leaves' outputs unchanged).
+# --numeral-other: run the shared tool in its Thurloe numeral mode instead of --code-prefix, every atlas class as a
+#   numeral below the floor (one letter at most) and OTHER as 200, ABOVE the floor, so the readers' uncoded sign can take
+#   a whole word -- on de Diou's hand OTHER is the word-code sign ("que", "Monsieur", "m'" on L01) and in code-prefix
+#   mode, where every code is floor, those words were forced onto the neighbouring signs and the key came out flat.
+# --wild-disagree: a gloss word the two passes read differently (or only one read) enters the plain line as a run of
+#   '?' of its length (the tool's --wildcard: a position that consumes one sign and counts as evidence for nothing), so
+#   only words both blind passes agree on contribute letters; the rest keep their places.
+NUMOTHER = "--numeral-other" in sys.argv; WILD = "--wild-disagree" in sys.argv
 P = f"{HERE}/passes"; bands = json.load(open(f"{HERE}/sheets/{pre}_bands.json")); sc = bands["scale"]
 def segx(box_name):
     return bands["boxes"][box_name][0]
@@ -82,18 +91,29 @@ print("gloss reconciliation:", dict(gstat))
 # --- pairs for the shared tool
 with open(f"{P}/{pre}_pairs.tsv", "w") as f:
     w = csv.writer(f, delimiter="\t", lineterminator="\n"); w.writerow(["plain_line", "plain_raw", "cipher_line", "cipher_raw"])
+    classes = sorted({s["code"] for v in signs.values() for s in v if s["code"] not in ("PLAIN", "OTHER")})
+    NUM = {c: str(i + 1) for i, c in enumerate(classes)}; NUM["OTHER"] = "200"; BACK = {v: k for k, v in NUM.items()}
+    def plainword(g):
+        if WILD and g.get("src", "AB") != "AB":
+            n = len([c for c in g["w"] if c.isalpha()]); n2 = len([c for c in g.get("alt", "") if c.isalpha()]) if g.get("alt") else n
+            return "?" * max(1, round((n + n2) / 2))
+        return g["w"]
     for line in sorted(signs):
-        plain = " ".join(g["w"] for g in gloss.get(line, []))
-        ciph = " ".join(("@" + s["code"]) if s["code"] != "PLAIN" else s["note"].strip().replace(" ", "_") or "PLAIN" for s in signs[line])
+        plain = " ".join(plainword(g) for g in gloss.get(line, []))
+        if NUMOTHER: ciph = " ".join(NUM[s["code"]] if s["code"] != "PLAIN" else s["note"].strip().replace(" ", "_") or "PLAIN" for s in signs[line])
+        else: ciph = " ".join(("@" + s["code"]) if s["code"] != "PLAIN" else s["note"].strip().replace(" ", "_") or "PLAIN" for s in signs[line])
         w.writerow([line, plain, line, ciph])
-r = subprocess.run([sys.executable, f"{ROOT}/tools/interlinear_align.py", "align", f"{P}/{pre}_pairs.tsv", f"{P}/{pre}_align.tsv", f"{P}/{pre}_key.tsv",
-                    "--code-prefix", "@", "--null-cost", "-1", "--clear-consumes"], capture_output=True, text=True)
+args = [sys.executable, f"{ROOT}/tools/interlinear_align.py", "align", f"{P}/{pre}_pairs.tsv", f"{P}/{pre}_align.tsv", f"{P}/{pre}_key.tsv", "--null-cost", "-1", "--clear-consumes"]
+if not NUMOTHER: args += ["--code-prefix", "@"]
+if WILD: args += ["--wildcard", "?"]
+r = subprocess.run(args, capture_output=True, text=True)
 print("interlinear_align:", r.stdout.strip(), r.stderr.strip()[-300:])
 # --- key rows from the tool's per-token alignment: (class, letter) with counts and bands
 pairs = Counter(); where = defaultdict(set)
 for t in rd(f"{P}/{pre}_align.tsv"):
-    if t["kind"] not in ("code",): continue
-    code = t["raw"].lstrip("@"); ch = t["plain_chunk"].strip()
+    if t["kind"] not in ("code", "num"): continue
+    code = BACK[t["raw"]] if NUMOTHER else t["raw"].lstrip("@"); ch = t["plain_chunk"].strip()
+    if WILD and ch and set(ch) == {"?"}: continue   # a wildcard position: no evidence
     val = ch if ch else "-"
     pairs[(code, val)] += 1; where[(code, val)].add(t["cipher_line"])
 with open(f"{P}/{pre}_keyrows.tsv", "w") as f:
