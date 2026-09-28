@@ -1,0 +1,7 @@
+target runs: [1, 1, 1, 1, 2, 3, 4, 5, 5, 5, 5, 6, 6, 8, 8, 8, 8, 8, 9, 9, 10, 10, 14, 17, 20, 25, 27, 31] n 28 mean 9.18 share>12 0.21
+function-word stretches (letters)    mean      band p05   4.25 p50   5.61 p95   7.25  target   9.18 pct  100
+function-word stretches (letters)    share>12  band p05   0.00 p50   0.07 p95   0.18  target   0.21 pct   98
+function-word stretches (letters)    max       band p05  10.00 p50  18.00 p95  32.00  target  31.00 pct   95
+proper-name stretches (letters)      mean      band p05   6.39 p50   7.61 p95   9.39  target   9.18 pct   93
+proper-name stretches (letters)      share>12  band p05   0.00 p50   0.07 p95   0.25  target   0.21 pct   88
+proper-name stretches (letters)      max       band p05  12.00 p50  15.00 p95  29.00  target  31.00 pct   97

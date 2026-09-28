@@ -645,3 +645,18 @@ tokens): the one substantive disagreement between the two schemes is whether the
 (one, two and three humps). No reading; done. What it changes: an alphabet of 36 for a glyph solver is Tomokiyo's
 choice, and a solver should be run under both segmentations (36 types; 34 with the waves merged) before a negative
 on either is called a design negative. Requests: cryptiana 2; 0 subagents.
+
+## Step B29 (28 Sept 2026, 04:47-04:49 UTC) -- run lengths: too long for function-word stretches, at the upper edge of name stretches; the runs read as spans of running text, not names alone
+
+`b29/run_lengths.py`: the 28 fragments of Tomokiyo's segmentation hold 1, 1, 1, 1, 2, 3, 4, 5, 5, 5, 5, 6, 6, 8, 8, 8, 8,
+8, 9, 9, 10, 10, 14, 17, 20, 25, 27, 31 glyphs (mean 9.18; 21% longer than 12; max 31). Bands of 60 samples of 28
+stretches from the raw en18 volumes: function-word stretches measured in letters (mean p05-p95 4.3-7.3; the target's
+9.18 at percentile 100; share > 12: 0.00-0.18, target 0.21 at 98) and proper-name stretches in letters (mean 6.4-9.4,
+target at 93; share > 12: 0.00-0.25, target at 88; max 12-29, target 31 at 97). **Result (band-controlled):** if one
+glyph is one letter, the runs are too long to be the function-word stretches alone (excluded at percentile 98-100)
+and sit at the top edge of what proper names give (93-97, not excluded, not typical); if one glyph is a word or
+syllable sign the letter bands do not apply. With B27 (the runs' numeral neighbours are head-poor, as if the runs
+held the connective words) the consistent reading is that the runs are spans of ordinary running text -- function
+and content words together, about one to two words' worth of letters or several word signs -- written in a personal
+shorthand, exactly what ARM-S1's two readers called it independently ("syllable- or word-shorthand-like"), not a
+name-only spelling device and not a function-word-only device. Requests: none; 0 subagents.
