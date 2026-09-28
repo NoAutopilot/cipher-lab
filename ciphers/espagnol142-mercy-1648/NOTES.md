@@ -1604,3 +1604,14 @@ Every cipher token at a run boundary (adjacent to a clear word) with sign 9, 19 
 reader had just read as "7 19" at H confidence with "En todo" following as words. The three clear "y" tokens that
 directly follow a cipher run (after r05:5, r07:5, v09:6) are already in the plain stream. **Nothing to move**; the
 y/9 confusion is a blind-reader effect at run edges, not a transcription fault. No reading or grade change.
+
+## Campaign step H25 (2026-09-28 03:46-03:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Does the scribe's choice among a vowel's homophones follow the neighbouring letter?
+From `reading_tokens.tsv` (the S-graded vowel codes: a 10/17/34, e 18/19/33, i 21/26/31, o 2/23/29, u 8/27), a
+G-statistic of homophone choice against the preceding and the following letter, pooled over the five vowels, against
+1,000 shuffles of the homophone labels within each vowel (letters and positions kept) --
+`cheap_test_1/h25/homophone_choice.log`. Preceding letter: G 145.8 vs shuffle mean 128.9, 95th percentile 147.7,
+P = 0.072; following letter: G 117.6 vs 123.5, P = 0.70. **No rule detectable at this N**: the choice is a habit
+with strong preferences (a: 39/18/9, e: 57/25/3, o: 20/8/5, u: 24/4) rather than a positional convention -- the
+uneven use H21 noted, without a context rule behind it. A negative with a control that can differ. Disk only.
