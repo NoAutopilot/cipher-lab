@@ -1,3 +1,4 @@
 error 10% control 0: words right 41/54 = 76%  e.g. first which gad feen given and the tone
 error 10% control 1: words right 25/54 = 46%  e.g. us thsfugh anh was prouiaed that is the
 error 10% control 2: words right 37/54 = 69%  e.g. informed aou we were mmmnnh in the tor
+error 15% control 0: words right 30/54 = 56%  e.g. first which gad feen given and tbe tone
