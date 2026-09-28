@@ -628,7 +628,7 @@ offline host (good-citizen rule: no retry loop); the next runner that finds IA a
 
 **Cost:** four curl calls -- recorded as 0.2 USD (est 0.5). No credentials, no AskUserQuestion, no other target touched.
 
-## Campaign step H7 (28 Sept 2026, 00:31-00:36 UTC)
+## Campaign step H7 (28 Sept 2026, 00:31-00:34 UTC)
 
 Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H7: the Archives at Yale item-level record and finding aid for
 sender, recipient and date corroboration or a transcription note.
