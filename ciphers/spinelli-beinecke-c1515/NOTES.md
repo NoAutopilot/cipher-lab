@@ -449,3 +449,59 @@ re-scored as the gate.
 **Cost:** 4 Sonnet vision calls (199k + 236k + 213k + 289k subagent tokens, about 940k) plus this runner's
 turn -- recorded as 3.0 USD (the est). No network requests. No credentials, no AskUserQuestion, rule 10 wording, no
 other target touched.
+
+## Campaign step H15 (28 Sept 2026, 00:01-00:10 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H15: coarser atlas codes, plain/cipher boundaries settled by eye,
+4x per-box montages instead of strips, two FRESH blind passes over p.[1] against the pre-registered 60% gate.
+
+**Result: the fresh pass pair PASSES the gate -- pooled exact agreement 145/204 = 71.1% on p.[1]** (lines 1-4:
+80/105 = 76.2%; lines 5-8: 65/99 = 65.7%), against H3's 58.4% on the same lines with v2 codes and strips. p.[1] is
+reconciled: **213 signs, `passes/p1_reconciled.tsv`**, per sign graded AB (both passes gave the code: 145 boxes) or
+R (settled by this runner's direct look at the montage: 68 boxes, 59 disagreements plus 9 extra signs from merged
+boxes). Together with H10's p.[2] (52 signs) the letter's cipher is now **265 atlas-coded signs** in two reconciled
+files -- a transcription in shape codes, NOT a reading.
+
+**What changed and why it worked:** (1) atlas v3 (`glyphs/labels.json`, v2 kept as `labels_v2.json`): 23 codes,
+the six small hook-and-loop codes merged into HOOK, SEVEN/SEVENB/CARET into SEVEN, TWO/TWOFLAT/DEE into TWO,
+OMEGABAR/OMEGA2 into OMEGABAR, STROKE = `_`; (2) boundaries settled by eye on the v2 strips before the passes ran:
+line 1 boxes 1-11 are the plain "al R.do frate mio" (cipher starts at box 12, a 4), line 8 boxes 18, 22, 24, 25, 27,
+28, 30, 32-35 are the plain "La morte" line on a lower baseline -- all excluded from the montages; (3)
+`glyphs/montage.py`: every remaining box cut at 4x with `tools/glyph_atlas.py crop --sid` (204 crops, regenerable,
+git-ignored) and laid out six to a row with its box number, one image per line (`glyphs/montage/p1_L0*.png`); each
+pass read 4 montages + `atlas.png` in one call (about 125k Sonnet tokens per call, half of H3's strip calls).
+Passes: `passes/p1_L{1-4,5-8}_v3_pass{C,D}.tsv`, disagreements `passes/p1_L{1-4,5-8}_v3_disagreements.tsv`.
+
+**Settling notes (the R rows carry them):** merged boxes expanded into their signs (L1 30 SIX+NINE, L2 20 HOOK+XCURL,
+L3 16 THREE+OMEGABAR, L4 16 SEVEN+HOOK, L4 20 HOOK+OMEGABAR, L5 2 and 14 HOOK+THREE, L6 25 HOOK+SIX, L8 9 NINE+THREE,
+L8 15 HOOK+THETA, L8 23 HOOK+EM); two signs outside atlas v3 found on line 8: a reversed E (box 4, code EREV; the
+key's null N9 shape) and a bold plain circle (box 5, code CIRCLE; the key's e); two bare strokes on line 7 (boxes
+13, 29) set to `_`. Flags for H14/H12: L3 boxes 29-30 (two bare curls, coded HOOK by both passes, AB) may be one
+split sign or fragments; the "e + 3 (+ b)" ligature recurs (L5 2, L5 14, L6 25) and may be one compound sign.
+
+**Reconciled p.[1] (atlas codes, 213 signs):**
+L1: HOOK SEVEN HOOK THREE HOOK THETA HOOK SEVEN HOOK HOOK NINE NINE HOOK SIX SEVEN HOOK PI OMEGABAR SIX NINE HOOK FOUR
+L2: OMEGABAR XCURL OMEGADOT NINE NINE PHI SIX HOOK HCURL EIGHT DIAMOND EM TWO THREE SEVEN OMEGABAR THETA NINE HOOK HOOK
+XCURL SEVEN ESS THREE OMEGABAR PHI HOOK FOUR
+L3: PLUS HOOK NINE EIGHT HCURL OMEGABAR HOOK HOOK SEVEN TWO HCURL SEVEN THETA HOOK ENN THREE OMEGABAR OMEGADOT DIAMOND
+SEVEN HOOK THREE HOOK HOOK SIX NINE FOUR TEE SEVEN HOOK HOOK
+L4: PI HOOK HCURL HOOK THREE SEVEN DIAMOND OMEGABAR FOUR HOOK PHI TWO HCURL SEVEN TWO SEVEN HOOK EIGHT ENN XCURL HOOK
+OMEGABAR THREE LL TWO DIAMOND HOOK NINE SIX
+L5: HOOK HOOK THREE SIX OMEGABAR HOOK SEVEN DIAMOND EIGHT TEE ESS NINE OMEGABAR THETA HOOK THREE SIX HOOK HOOK EIGHT HOOK ESS SIX
+L6: SIX OMEGABAR EIGHTBAR SEVEN EM EIGHT LL OMEGABAR XCURL TWO TWO TWO NINE TWO TWO SEVEN HOOK HOOK XCURL TWO PHI SIX
+EIGHT THREE HOOK SIX
+L7: HOOK SEVEN ENN TWO THREE EM HOOK PHI EIGHT DIAMOND NINE THETA LL TWO ENN HOOK HCURL TWO XCURL EIGHT HOOK PHI HOOK
+SEVEN EIGHT XCURL SEVEN
+L8: SEVEN PI PHI EREV CIRCLE TWO TWO HOOK NINE THREE HOOK TEE OMEGABAR TEE THREE HOOK THETA TWO HOOK OMEGABAR DIAMOND
+HOOK HOOK EM EM FOUR OMEGABAR
+Code counts (p.[1]): HOOK 49, SEVEN 19, TWO 17, OMEGABAR 15, THREE 13, NINE 13, SIX 11, EIGHT 10, XCURL 7, PHI 7,
+DIAMOND 7, THETA 6, HCURL 6, FOUR 5, EM 5, ENN 4, TEE 4, PI 3, ESS 3, LL 3, OMEGADOT 2, PLUS 1, EIGHTBAR 1, EREV 1,
+CIRCLE 1. HOOK at 23% is a family, not one sign; splitting it needs the zoomed crops and is H12/H14's job.
+
+**Controls:** the pre-registered 60% pooled-agreement gate (H10 64.0% pass, H3 58.4% fail, H15 71.1% pass). No
+reading, no class change; p2_reconciled.tsv still uses v2 codes (SEVENB, TWOFLAT, RHO, LONGS, UCURL, AMP, ELOOP,
+ECAP) -- map them to v3 before any joint count (SEVENB->SEVEN, TWOFLAT->TWO, the hook family->HOOK, AMP->HOOK).
+
+**Cost:** 4 Sonnet vision calls (124k + 127k + 125k + 131k subagent tokens, about 506k) plus this runner's
+labelling, montage and settling turns -- recorded as 3.5 USD (the est). No network requests. No credentials, no
+AskUserQuestion, rule 10 wording, no other target touched.
