@@ -599,3 +599,29 @@ closes DUSMF M34 rolls 12-15 (Oct 1801-1811) frame by frame: the 20 Feb 1808 let
 Requests: catalog.archives.gov 1; 0 subagents. Side note for B12: Madison to William Short, 8 Sept 1808 (Founders
 99-01-02-3504) instructs Short to obtain at Paris "a Copy of Genl Armstrongs Cypher also" -- the Department cypher
 circulated to Short and later to Adams (campaign H30), not the private code.
+
+## Step B27 (28 Sept 2026, 04:44-04:48 UTC) -- the shorthand runs' neighbours: per-letter gate not met, but the 60-letter bands place the target with runs-on-function-words, far from runs-on-names
+
+`b27/runs_role.py`: share of 2-digit heads among the numeral tokens flanking the 34 run markers of `ciphertext.txt`
+(both sides, 67 neighbours). Controls: en18 letters in B2's Bf layout with 34 runs placed on function-word stretches
+(runs = the connective tissue) and, separately, on content words (runs = names / OOV words). Per-letter gate
+(pre-registered, 45 of 60 letters beyond their own permutation null): NOT MET -- 36/60 and 36/60, 34 runs per
+letter are too few for a per-letter permutation verdict, so the target's own percentile (88.8, above its null p05
+0.236 / p95 0.418) is not read as a licensed per-letter result. Band readout (the two 60-letter distributions as
+controls, the B19 shape, which does separate: they do not overlap):
+
+| | p05 | p50 | p95 | target 0.396 |
+|---|---|---|---|---|
+| runs on function words | 0.269 | 0.359 | 0.500 | 73rd percentile, inside |
+| runs on content words (names) | 0.554 | 0.660 | 0.759 | 0th percentile, outside |
+
+**Result (band-controlled).** The runs' neighbours are far too head-poor for the runs to be names or other content
+words embedded in ordinary coded English (that would put the share near 0.66); the numbers fit runs that replace
+stretches containing the function words, i.e. B25's reading (b): part of the connective tissue of the letter is in
+the shorthand, not in the numerals -- which is also why the richest numeral rows do not collocate like the/of/to.
+This agrees in direction with ARM3-ADJ's one significant cell (particle share next to runs above its null) and
+sharpens it against a design-matched band. Together with B24 and B25 the picture of the numeral stream is: 73 rows
+used evenly, heads not the commonest function words, runs carrying connective material. What would settle it: a
+glyph solver run with the hypothesis that the runs spell function words (a small closed vocabulary), the one model
+the ChatGPT space/components attacks did not try (they assumed letters or names); logged as a proposal for the
+orchestrator, not run here (it needs a control-first design of its own). Requests: none; 0 subagents.

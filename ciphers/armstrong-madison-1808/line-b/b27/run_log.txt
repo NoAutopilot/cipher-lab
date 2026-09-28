@@ -1,0 +1,6 @@
+positive control (runs = function words): head share mean 0.368, below own p05: 36/60
+negative control (runs = content words):  head share mean 0.659, above own p95: 36/60
+GATE: NOT MET
+TARGET: head share of run neighbours 0.396; null p05 0.236 p95 0.418; percentile 88.8  [unlicensed]
+band, runs=function words: p05 0.269 p50 0.359 p95 0.500; target 0.396 at pct 73
+band, runs=content words:  p05 0.554 p50 0.660 p95 0.759; target 0.396 at pct 0
