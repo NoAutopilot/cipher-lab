@@ -2969,3 +2969,17 @@ the map refined by H119/H146 (HASH4 = i/x, VBAR_B = s alone). Refined: lattice 1
 the refinement costs one known letter on f.61's spans and gains nothing on f.108r. The family-pool preferences of H146 do not
 carry to the known texts at this size; the refined cells stay a family-key candidate, not a change to f.61's map. No reading,
 no class change.
+
+## Campaign step H148 (28 Sept 2026, 19:21-19:31 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61v4_widen.py` (rule in its docstring, pushed 2042a6d6 before the run; `f61v4_widen_result.txt`; `f61hash4_108r.resolve`
+generalised to sets of any size in the same commit, every earlier pair result `--check` fresh): each key-v4 widening added
+alone to the pool map, sequence gain on 30 bootstrap resamples of the family pool.
+
+- **REJECTED** (widened wins <= 1/30): SBS b/o/**e** (0/30), 4PI d/q/**a/n** (1/30), HASH4 d/q/**i** (0/30).
+- **OPEN**: 4TRI c/p/**t** (6/30), 4STEM a/n/**c/e** (7/30) -- leaning against, not decided.
+
+So the text does not want v4's third letters: three of the five widenings are rejected and none is supported. v4's wide sets
+(H145) come from its frac-0.1 admission rule letting in period letters that are gloss-alignment noise or reader coding merges,
+which is why the within-set choice on v4 failed (H117/H141). For the family worker: evidence to keep these classes at two
+letters in a key v5. No reading, no class change.

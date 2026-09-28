@@ -1,0 +1,5 @@
+SBS: b/o -> b/o/e: widened wins 0/30 -> REJECTED
+4TRI: c/p -> c/p/t: widened wins 6/30 -> OPEN
+4PI: d/q -> d/q/a/n: widened wins 1/30 -> REJECTED
+4STEM: a/n -> a/n/c/e: widened wins 7/30 -> OPEN
+HASH4: d/q -> d/q/i: widened wins 0/30 -> REJECTED
