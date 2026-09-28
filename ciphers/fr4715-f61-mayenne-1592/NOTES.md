@@ -1883,3 +1883,22 @@ across a/n. In the two glossed hands the period decipherers write a and n under 
 does not separate; with H24b this is the second instrument on the question, so a vs n is logged untestable by a blind
 shape sort (rule 3's two-attempt paragraph), and the table's two drawn a/n symbols stay unmatched to any hand. H74
 (e vs r with the stratified statistic) is dropped by its own condition (skip if H73 FAILs). No reading, no class change.
+
+## Campaign step H75 (28 Sept 2026, 14:50-14:52 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+The method's clean negative control: the table's d/q column is ONE shared symbol, so the period d and q under the
+readers' HASH4 should not split. Pre-registered and pushed ebbf0de0 before the call: `build-pair NATIVE HASH4 d q 75
+h75 20` (f.101r 15+15, f.188r 2+2), 34 tiles, a hash-4 prompt (`scripts/PROMPTS.md` "H75"), H73's leaf-stratified
+statistic. One blind Opus vision call; tiles 15 and 33 none (x misplacements).
+
+| reader's group | d | q |
+|---|---|---|
+| A 4 over a true hash (two stems, two bars) | 17 | 12 |
+| B 4 over a single stem crossed by two bars | 0 | 3 |
+
+Stratified observed 20/32, permutation P = 0.087, p95 20/32 -> **GATE FAIL**, as expected
+(`scripts/f61pair_h75_result.txt`, `--check` OK). The three "double cross" tiles are all q, a minority variant not
+significant at this n and left unexplained. With this, the tile sort has one clean one-symbol negative (H75) and two
+free-sort negatives (H71 e/r, H73 a/n) beside its four PASSes (H65 SBS o, H67 SBS b, H69 4TRI c/p, H70 VBAR s/t, the last
+thin): it does not manufacture a letter split on a shared-symbol cell, which is what the PASSes needed. No reading, no
+class change.
