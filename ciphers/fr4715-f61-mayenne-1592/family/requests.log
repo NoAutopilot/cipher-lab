@@ -106,3 +106,6 @@
 2026-09-28T22:24:29Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f333/full/600,/0/native.jpg	200	56903	c19a15d6b3d601287e9f1ad2fc6f2292414d2f20	fr3984_f7/../images/thumb_3984_c333.jpg
 2026-09-28T22:24:32Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f334/full/600,/0/native.jpg	200	28874	4e88d64db05c76ec454459cef7195b5de2403109	fr3984_f7/../images/thumb_3984_c334.jpg
 2026-09-28T22:25:11Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f326/full/2000,/0/native.jpg	200	507302	b4e4e796ad9163c74038b47279354c469b56c781	images/3984_f175r_2000.jpg
+2026-09-28T22:26:46Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f327/full/2000,/0/native.jpg	200	743295	c4133e48d7b433984e01629ef208b503ffdf408c	images/3984_f176r_2000.jpg
+2026-09-28T22:27:34Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f327/full/full/0/native.jpg	200	4357645	a2b0d98e3b2c470452f5110d6009db99cca6d17e	/tmp/claude-0/-home-user-cipher-lab/6ee100a4-5fee-5361-bb8d-1ce267cdee05/scratchpad/3984_f176r_native.jpg
+2026-09-28T22:28:18Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f326/full/full/0/native.jpg	200	3904782	f8205a9b60ec9bb69477e3e2f4ea1e8632dc2b51	/tmp/claude-0/-home-user-cipher-lab/6ee100a4-5fee-5361-bb8d-1ce267cdee05/scratchpad/3984_f175r_native.jpg
