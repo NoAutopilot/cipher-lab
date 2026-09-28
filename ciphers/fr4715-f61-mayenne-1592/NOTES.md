@@ -3035,3 +3035,11 @@ sequence gain rank among 200 permuted maps: L06 1, L04 2, L01 2, L03 7, then L07
 each row 34-42 covered signs). The ASKS 89 desk pack (`images/person_pack_108v/README.md`) gains a reading order note
 (L06, L04, L01, L03 first) with no letters in it. Rows L02, L05, L07 fit no better than chance alone -- a transcription or
 null question for the verifier, the same rows H101 found weakest by the judge (L05). No reading, no class change.
+
+## Campaign step H157 (28 Sept 2026, finished 19:52 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61zhook_108v.py` (pushed 7bb5fccf before the run; `f61zhook_108v_result.txt`): ZHOOK's value on f.108v (20
+signs) by sequence gain, 30 bootstrap resamples of the leaf's lines. **i/x beats a/e, a/u, e/u and null in 30/30 resamples
+each -> i/x CONFIRMED against all four.** The held f.108v alignment's a/e/u reading of this sign (the H44-era note) does not
+fit the text; Tomokiyo's i/x (from his markup and his f.108r reprint) does, on a leaf he did not mark. Model-free support for
+a published value, not a period attestation. No reading, no class change.

@@ -1,0 +1,5 @@
+f.108v ZHOOK signs: 20; map value i/x
+i/x vs a/e: i/x wins 30/30 -> i/x CONFIRMED
+i/x vs a/u: i/x wins 30/30 -> i/x CONFIRMED
+i/x vs e/u: i/x wins 30/30 -> i/x CONFIRMED
+i/x vs null: i/x wins 30/30 -> i/x CONFIRMED
