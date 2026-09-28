@@ -2173,3 +2173,24 @@ after its control) with the H90 calibration and its caveats, the H91 consensus f
 the "qo" item gains H89 (third hand) and the two-hand V-with-bar split; the file table gains the H85/H90/H91 files. No
 new claim.
 
+
+## Campaign step H93 (28 Sept 2026, 15:38-15:39 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+A model-free check of H85 with a matched null (gate pre-registered in the CAMPAIGN.md row before scoring):
+`scripts/f61judge_ngram.py` scores every set's resolution in each judge verdict with `tools/judge_plaintext.py`'s 4-gram
+model on fr16 (LANG_CORPORA["fr"], 16th-century French letters). The null is the same judge's resolutions of the 20
+wrong maps in the same call, so the Frenchness the judge's within-pair choices add sits on both sides.
+
+| call | target | best permuted | median permuted | rank |
+|---|---|---|---|---|
+| known lines (control) | -1.091 | -1.433 | -1.971 | 1 of 21 |
+| f.108v seed 101 | -1.227 | -1.610 | -2.017 | 1 of 21 |
+| f.108v seed 102 | -1.558 | -1.731 | -2.078 | 1 of 21 |
+| f.108v seed 103 | -1.255 | -1.560 | -2.007 | 1 of 21 |
+
+**GATE H93 PASS** (`scripts/f61judge_ngram_result.txt`, `--check` fresh). Context at 274 letters: fr16 real-text p05
+-0.870 (median -0.781), letter-shuffled p99 -1.798 -- the target resolutions sit between shuffled and real prose, well
+below real text: consistent with a noisy text (grade-M transcription, dropped nulls, some wrong cells) rather than a
+clean one, and not a language PASS in `judge_plaintext.py`'s sense. What it adds to H85: the true cell map's advantage
+on f.108v is visible to a mechanical score, not only to the model judge that produced the letters. Not a reading; no
+class change.

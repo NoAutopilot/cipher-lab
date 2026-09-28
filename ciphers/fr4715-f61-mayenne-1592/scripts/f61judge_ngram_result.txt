@@ -1,0 +1,6 @@
+known_h51_s101: target SET-05 -1.091 (58 letters); best permuted -1.433, median permuted -1.971; rank 1 of 21
+f108v_s101: target SET-05 -1.227 (274 letters); best permuted -1.610, median permuted -2.017; rank 1 of 21
+f108v_s102: target SET-10 -1.558 (274 letters); best permuted -1.731, median permuted -2.078; rank 1 of 21
+f108v_s103: target SET-06 -1.255 (274 letters); best permuted -1.560, median permuted -2.007; rank 1 of 21
+fr16 context at 274 letters: real-text p05 -0.870, median -0.781; letter-shuffled p99 -1.798
+GATE H93: target rank 1 of 21 in all three f.108v calls -> PASS
