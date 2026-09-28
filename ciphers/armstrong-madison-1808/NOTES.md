@@ -1772,7 +1772,7 @@ and one new value-bound lead. No reading, no class change. Requests: none. Cost:
 runner; the row's estimate (1.5 USD) is what `campaign.py --spend` records. Vision: 1 Sonnet subagent call (three
 sheets) + 6 sheets/zooms read by this runner.
 
-## Campaign step H14 (27-28 Sept 2026, 23:58-00:03 UTC)
+## Campaign step H14 (27-28 Sept 2026, 23:58-00:01 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H14: read the
 right-hand modifier column of Monroe Papers reel 9 frame 956 (the encode side of the 1-1700 table screened out in H12)
