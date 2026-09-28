@@ -385,3 +385,12 @@ rule: no further bursts on that host this session. Weber 1979 (IA `unitedstatesd
 queries) says only that Armstrong "wrote 40 letters in code to James Madison beginning in late 1804", that some
 DUSMF despatches "still remain only in code form", and lists "Gen. Armstrong XI" among the Brant worksheets (the
 Box 37 material of ASKS 77) -- no private cipher named.
+
+**B2 addendum (03:5x UTC, `b2/addendum_log.txt`).** Row-usage shape of the target against the same 60-letter
+simulations: rows used 73 (Bf mean 73.8, p05-p95 68-79; B 73.7; A 71.9), rows without a bare head 0.411 (Bf 0.460,
+0.368-0.558; B 0.448; A 0.200, p95 0.290 -- excluded again), rows whose only token is the head 0.110 (Bf 0.098,
+0.042-0.153; B 0.106), head share of family tokens 0.327 (Bf 0.497, p05 0.444; B 0.522; A 0.827 -- all three at
+percentile 0). So the target's rows are used the way an alphabetical-bucket layout uses them in three of four
+statistics, but its bare heads carry a third of the family tokens where a bucket headed by its commonest word gives
+half: the head is NOT the bucket's most frequent word (a bucket headed by its alphabetically first word, or a smaller
+bucket, would lower the share). This narrows B2's surviving constraint without settling it.

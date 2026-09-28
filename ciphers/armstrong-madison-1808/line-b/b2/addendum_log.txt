@@ -1,0 +1,13 @@
+TARGET {'head_share': 0.327, 'rows_used': 73, 'rows_without_head': 0.411, 'rows_head_only': 0.11}
+Bf  head_share         mean 0.497 p05 0.444 p95 0.561 target 0.327 pct 0
+Bf  rows_used          mean 73.800 p05 68.000 p95 79.000 target 73.000 pct 33
+Bf  rows_without_head  mean 0.460 p05 0.368 p95 0.558 target 0.411 pct 17
+Bf  rows_head_only     mean 0.098 p05 0.042 p95 0.153 target 0.110 pct 65
+B   head_share         mean 0.522 p05 0.466 p95 0.588 target 0.327 pct 0
+B   rows_used          mean 73.650 p05 66.000 p95 79.000 target 73.000 pct 35
+B   rows_without_head  mean 0.448 p05 0.354 p95 0.541 target 0.411 pct 25
+B   rows_head_only     mean 0.106 p05 0.050 p95 0.176 target 0.110 pct 53
+A   head_share         mean 0.827 p05 0.783 p95 0.875 target 0.327 pct 0
+A   rows_used          mean 71.933 p05 65.000 p95 78.000 target 73.000 pct 52
+A   rows_without_head  mean 0.200 p05 0.151 p95 0.290 target 0.411 pct 100
+A   rows_head_only     mean 0.485 p05 0.421 p95 0.569 target 0.110 pct 0
