@@ -1,0 +1,45 @@
+{
+ "image": "ciphers/fr4715-f61-mayenne-1592/images/stitch_f108r_f195_1250_450_3600_860.jpg",
+ "region": [
+  0,
+  0,
+  3600,
+  860
+ ],
+ "centres": [
+  504,
+  618,
+  712
+ ],
+ "pitch": 130,
+ "up": 72,
+ "down": 34,
+ "scale": 3.0,
+ "boxes": {
+  "f108h_L06_s1.jpg": [
+   0,
+   640,
+   960,
+   746
+  ],
+  "f108h_L06_s2.jpg": [
+   880,
+   650,
+   1840,
+   756
+  ],
+  "f108h_L06_s3.jpg": [
+   1760,
+   649,
+   2720,
+   755
+  ],
+  "f108h_L06_s4.jpg": [
+   2640,
+   652,
+   3600,
+   758
+  ]
+ },
+ "note": "H108: region 450-1310 page y stitched from the H34 720-px region and a 260-px strip (1050-1310), overlap 120 px pixel-identical; only band 3 (= f.108r L06, whole) kept, renamed L06; bands 1-2 equal f108g L04/L05"
+}
