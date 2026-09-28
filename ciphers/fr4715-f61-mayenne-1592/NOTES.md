@@ -2960,3 +2960,12 @@ closest one-swaps on 30 bootstrap resamples of the family pool. **Only INF<->SBS
 EBR_A<->ISH (the fitted map wins 9/30). So H132's "128 of 129 rejected" holds for the swaps with clear margins, but the
 closest 13 are within the pool's resampling noise; the family pool cannot yet decide them. The same bootstrap gave the H146
 VBAR results 29-30/30, so those stand. No reading, no class change.
+
+## Campaign step H147 (28 Sept 2026, 19:20-19:21 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61refined_known.py` (pushed e4425175 before the run; `f61refined_known_result.txt`): the known-answer scores under
+the map refined by H119/H146 (HASH4 = i/x, VBAR_B = s alone). Refined: lattice 110/125 (f.61 spans 43/49, f.108r overlay
+67/76), plain 106/125; unrefined: lattice 111/125 (44/49, 67/76), plain 107/125. **GATE (>= 113, no text worse): FAIL** --
+the refinement costs one known letter on f.61's spans and gains nothing on f.108r. The family-pool preferences of H146 do not
+carry to the known texts at this size; the refined cells stay a family-key candidate, not a change to f.61's map. No reading,
+no class change.
