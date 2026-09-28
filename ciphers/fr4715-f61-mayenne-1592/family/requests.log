@@ -57,3 +57,12 @@
 2026-09-28T18:43:57Z H143 GET gallica btv1b52523734p f243 1200px
 2026-09-28T18:43:59Z H143 GET gallica btv1b52523734p f244 1200px
 2026-09-28T18:45:07Z H143 single retry after 60 s pause: gallica btv1b52523734p f241 1200px default.jpg
+2026-09-28T20:16:37Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f241/full/1200,/0/native.jpg	200	223985	a18b143142b187a0db07f45089de4e10bcbec044	fr2751/f241_1200.jpg
+2026-09-28T20:16:41Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f242/full/1200,/0/native.jpg	200	265695	162e357c7eb4b00ffa70987ec054b9af524bb06d	fr2751/f242_1200.jpg
+2026-09-28T20:16:51Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f243/full/1200,/0/native.jpg	200	277607	062e41d622689741b5afe5352571dada1b3d15ab	fr2751/f243_1200.jpg
+2026-09-28T20:17:03Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f244/full/1200,/0/native.jpg	200	283551	cc7b9df8ed78d33ac6a5fc8e7aa77d4df5b010e5	fr2751/f244_1200.jpg
+2026-09-28T20:17:30Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f241/full/full/0/native.jpg	200	2453376	50c7b4ad55ce112aef9e7beb269f7d15a8fbdfac	/tmp/claude-0/-home-user-cipher-lab/83338386-02c4-56da-b690-0a95cd0b9d23/scratchpad/native/f241.jpg
+2026-09-28T20:17:39Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f242/full/full/0/native.jpg	200	2737523	22d9aa376c545196304c149aa7e9d384d8b9f338	/tmp/claude-0/-home-user-cipher-lab/83338386-02c4-56da-b690-0a95cd0b9d23/scratchpad/native/f242.jpg
+2026-09-28T20:18:12Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f245/full/1200,/0/native.jpg	200	277336	93fdedbcb303bfea3eee8346568d751ca667716e	fr2751/f245_1200.jpg
+2026-09-28T20:18:15Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f246/full/1200,/0/native.jpg	200	252850	de892afe56ddb5ffb3e42c1cc503faa9477703ce	fr2751/f246_1200.jpg
+2026-09-28T20:18:32Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f243/full/full/0/native.jpg	200	2865034	d041b94e758744ef1646e260863809f0187dc9a1	/tmp/claude-0/-home-user-cipher-lab/83338386-02c4-56da-b690-0a95cd0b9d23/scratchpad/native/f243.jpg
