@@ -1,0 +1,106 @@
+line	pos	code	note	conf
+1	12	FOUR	looped 4 with long bar, stroke above	M
+1	13	SEVEN	bold 7	H
+1	14	HOOK	script e with long rising tail	M
+1	15	THREE	zigzag 3	H
+1	16	PHI	loop over lower loop, stroke above, no bar seen	L
+1	17	THETA	loop hanging under long bar	M
+1	18	NEW:bold J hook	vertical with left foot	L
+1	19	SEVEN	flat top bar straight stem	M
+1	20	HOOK	mu shape with long lead	M
+1	21	NEW:bold J hook	same as box 18	L
+1	22	NINE	bold 9	H
+1	23	NINE	9 with long slanted tail	H
+1	24	SIX	loop at base, ascender, bar right	M
+1	25	ESS	5-like S curve	H
+1	26	SEVEN	bold 7	H
+1	27	HOOK	large open loop with arched top	L
+1	28	HOOK+PI	small loop with tail then pi	M
+1	29	OMEGABAR	omega with bar	H
+1	30	SIX+NINE	6 then 9 with long tail	H
+1	31	HOOK	c/e with long tail	M
+1	32	FOUR	4 with long bar	M
+2	1	OMEGABAR	faded omega with bar	M
+2	2	XCURL	curled x	M
+2	3	OMEGADOT	omega with loop above	M
+2	4	NINE	bold 9 loop	M
+2	5	HOOK	long-s with top loop	M
+2	6	PHI	loop over loop crossed by bar	M
+2	7	HOOK	d-like loop with ascender	M
+2	8	HOOK	bold broken e/rho	L
+2	9	HCURL	H curled serifs	H
+2	10	EIGHT	bold 8	H
+2	11	DIAMOND	rotated square	H
+2	12	EM	m zigzag	H
+2	13	TWO	bold round 2	H
+2	14	THREE	zigzag 3	H
+2	15	SEVEN	7	H
+2	16	OMEGABAR	omega with bar	H
+2	17	EIGHTBAR	two circles split by bar	H
+2	18	NINE	9	H
+2	19	NEW:x over loop	crossed strokes above a loop	L
+2	20	HOOK+XCURL	curl then small x	M
+2	21	SEVEN	7	H
+2	22	ESS	bold 5-like S	M
+2	23	THREE	3	H
+2	24	OMEGABAR	omega with bar	H
+2	25	PHI	circle on crossed descender	H
+2	26	HOOK	t-cross with loop top	M
+2	27	FOUR	4	H
+3	1	PLUS	plus sign	H
+3	2	HOOK	large loop with arched top	L
+3	3	NINE	9	H
+3	4	EIGHT	tall open 8	M
+3	5	HCURL	bold H curled	M
+3	6	OMEGABAR	omega with bar	H
+3	7	_	single vertical stroke	M
+3	8	HOOK	script e with tail	M
+3	9	SEVEN	bold caret 7	H
+3	10	TWO	round 2	H
+3	11	HCURL	H curled	H
+3	12	SEVEN	7	H
+3	13	THETA	loop crossed by bar	M
+3	14	PHI	loop with ascender crossed, loop below	M
+3	15	ENN	bold N	H
+3	16	TWO+OMEGABAR	Z-scribble then omega with bar	M
+3	17	OMEGADOT	omega with mark above	M
+3	18	DIAMOND	rotated square	H
+3	19	SEVEN	flat-top 7	H
+3	20	HOOK	rho with long tail	M
+3	21	THREE	7-like top with long curved foot	L
+3	22	HOOK	d-like loop ascender	M
+3	23	SIX	loop base, ascender, bar right	M
+3	24	ESS	S curve	H
+3	25	NINE	9	H
+3	26	FOUR	4	H
+3	27	TEE	t cross with curl	H
+3	28	SEVEN	flat-top 7	H
+3	29	_	bare slanted stroke	M
+3	30	NEW:thin J hook	thin curved stroke left foot	L
+4	1	PI	pi	H
+4	2	PHI	loop crossed, large loop below	M
+4	3	HCURL	H curled	M
+4	4	SIX	loop base, ascender, bar right	M
+4	5	THREE	3	H
+4	6	SEVEN	flat-top 7	H
+4	7	DIAMOND	rotated square	H
+4	8	OMEGABAR	omega with bar	H
+4	9	FOUR	4	H
+4	10	HOOK	mu with long lead	M
+4	11	PHI	loop crossed, faint loop below	M
+4	12	TWO	round 2	H
+4	13	HCURL	H curled	H
+4	14	SEVEN	thin 7	M
+4	15	TWO	D-shaped 2	H
+4	16	NEW:double J-hook form	two tops with long J hooks	L
+4	17	EIGHT	bold 8	H
+4	18	ENN	bold N	H
+4	19	XCURL	curled x	H
+4	20	HOOK+OMEGABAR	small loop with tail then omega bar	M
+4	21	THREE	3	H
+4	22	LL	two verticals on baseline	H
+4	23	TWO	round 2	H
+4	24	DIAMOND	rotated square	H
+4	25	HOOK	bold e with rising tail	M
+4	26	NINE	9	H
+4	27	SIX	6	H

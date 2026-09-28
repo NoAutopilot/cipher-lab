@@ -1,0 +1,106 @@
+line	pos	code	note	conf
+1	12	FOUR	thin 4 with long crossbar; separate hook stroke above	M
+1	13	SEVEN	bold 7 hook	H
+1	14	HOOK	script e with long rising tail	M
+1	15	THREE	3 zigzag	H
+1	16	OMEGADOT	w-like looped body with hook stroke above	L
+1	17	THETA	loop crossed by horizontal bar	M
+1	18	NEW:vertical with left-foot	bold vertical stroke turning left at base, no top bar	M
+1	19	SEVEN	flat top bar, vertical down right	H
+1	20	HOOK	mu shape with long left tail	H
+1	21	NEW:vertical with left-foot	same as box 18, bold vertical with left foot	M
+1	22	NINE	9 loop with tail	H
+1	23	NINE	9 loop with long curved tail	H
+1	24	PHI	vertical crossed by bar, loop at base left	M
+1	25	ESS	thin S/5 curve	H
+1	26	SEVEN	bold 7	H
+1	27	EIGHT	large open 8 loop with arm	M
+1	28	HOOK+PI	small e-loop with long under-sweep, then pi	M
+1	29	OMEGABAR	w under bar	H
+1	30	SIX+NINE	6 then 9 with long tail	M
+1	31	HOOK	e with long flat tail; fragment of next sign at right	M
+1	32	FOUR	4 with long crossbar	H
+2	1	OMEGABAR	faint w under bar	M
+2	2	XCURL	cursive x curled ends	H
+2	3	OMEGADOT	w with loop above	M
+2	4	NINE	bold 9 short tail	M
+2	5	HOOK	loop at top with long diagonal descender	L
+2	6	PHI	loop crossed by bar with lower loop	M
+2	7	HOOK	small e-loop with long ascender stroke	M
+2	8	HOOK	blotchy bent stroke, rho-like	L
+2	9	HCURL	H with curled serifs	H
+2	10	EIGHT	figure 8	H
+2	11	DIAMOND	rotated square outline	H
+2	12	EM	m zigzag	H
+2	13	TWO	round 2	H
+2	14	THREE	3 zigzag	H
+2	15	SEVEN	bold 7	H
+2	16	OMEGABAR	w under bar	H
+2	17	EIGHTBAR	two small loops divided by bar	H
+2	18	NINE	9 with long tail	H
+2	19	PHI	x-arms above, loop at base, crossed by bar	L
+2	20	HOOK+XCURL	curl with long sweep, then small x at upper right	M
+2	21	SEVEN	bold 7	H
+2	22	ESS	bold S curve	M
+2	23	THREE	3 zigzag	H
+2	24	OMEGABAR	w under bar	H
+2	25	PHI	circle on vertical descender	M
+2	26	HOOK	t-cross with loop at top	M
+2	27	FOUR	numeral 4	H
+3	1	PLUS	plus sign	H
+3	2	EIGHT	open 8 loop with curling top arm	M
+3	3	NINE	9 with tail	H
+3	4	EIGHT	thin elongated 8	M
+3	5	HCURL	bold H with curled serifs	M
+3	6	OMEGABAR	w under bar	H
+3	7	_	bare vertical stroke	M
+3	8	HOOK	script e with rising tail	M
+3	9	SEVEN	bold T-like 7 with thick stem	H
+3	10	TWO	round 2	H
+3	11	HCURL	H with curled serifs	H
+3	12	SEVEN	bold 7	H
+3	13	THETA	loop crossed by horizontal bar, small ascender	M
+3	14	PHI	loop on stroke crossed by bar, loop below	M
+3	15	ENN	bold N	H
+3	16	TWO+OMEGABAR	flat Z-shape then w under bar	M
+3	17	OMEGADOT	w with mark above	M
+3	18	DIAMOND	rotated square outline	H
+3	19	SEVEN	top bar, vertical down	H
+3	20	HOOK	curl at top with long diagonal tail	L
+3	21	THREE	3 with large open lower curve	M
+3	22	HOOK	small e-loop with long ascender	M
+3	23	PHI	vertical crossed by bar, loop at base left	M
+3	24	ESS	S/5 curve	H
+3	25	NINE	9 with tail	H
+3	26	FOUR	numeral 4	H
+3	27	TEE	t-cross with curl	H
+3	28	SEVEN	top bar, vertical down	H
+3	29	_	faint thin stroke	M
+3	30	NEW:vertical with left-foot	faint curved vertical with left foot	L
+4	1	PI	capital pi	H
+4	2	PHI	loop crossed by bar, large lower loop	M
+4	3	HCURL	bold H with curled serifs	M
+4	4	PHI	vertical crossed by bar, loop at base left	M
+4	5	THREE	3 zigzag	H
+4	6	SEVEN	top bar, vertical down	H
+4	7	DIAMOND	rotated square outline	H
+4	8	OMEGABAR	w under bar	H
+4	9	FOUR	numeral 4	H
+4	10	HOOK	mu shape with long tail	H
+4	11	PHI	faint loop crossed by bar, lower loop	M
+4	12	TWO	round 2	H
+4	13	HCURL	H with curled serifs	H
+4	14	SEVEN	7 with faint top bar	M
+4	15	TWO	D-shaped 2	H
+4	16	SEVEN+NINE	small 7 then 9 with long hooked tail	M
+4	17	EIGHT	bold figure 8	H
+4	18	ENN	bold N	M
+4	19	XCURL	cursive x curled ends	H
+4	20	HOOK+OMEGABAR	e-loop with long under-sweep, then w under bar	M
+4	21	THREE	3 zigzag	H
+4	22	LL	two verticals on a baseline	H
+4	23	TWO	round 2	H
+4	24	DIAMOND	rotated square outline	H
+4	25	HOOK	bold e with ascender stroke	M
+4	26	NINE	9 with tail	H
+4	27	SIX	6 loop with ascender	H

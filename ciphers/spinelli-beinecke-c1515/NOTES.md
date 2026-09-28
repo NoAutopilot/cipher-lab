@@ -1133,3 +1133,45 @@ next runner with the ASKS row as the hand-off to the owner.
 **Controls:** every number is a control run; no target run, no reading, no class change, rule 10 wording.
 **Files:** HYPOTHESES.md rows only. **Cost:** CPU only (about 21 minutes for the four batteries), no vision calls,
 no requests, no credentials -- recorded as 1.0 USD (the est). No AskUserQuestion, no other target touched.
+
+## Campaign step H29 dropped and H29b (28 Sept 2026, 02:42-02:47 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. The parent's rank-1 row H29 (02:30 UTC) held that every pass so far read
+1500-px canvases and asked for native-size fetches. **Checked before spending: the premise is false.** Since H2 the
+passes, the atlas and the montages come from two native-size IIIF region fetches --
+`images/src_2_10867298_450_440_3000_1740.jpg` (3000x1740 px) and `images/src_2_10867299_360_1997_3055_456.jpg`
+(3055x456 px), region requests at `/full/0/` of the 3577x4997 canvas (manifest `iiif_lines` entries) -- which
+`glyphs/prepare.py` cleans into `p1_clean.png` (3000x1740) and `p2_clean.png`, the inputs to the atlas, the strips
+and the 4x montages (a sign of median height 93 native px shown at about 370 px). Only H1's 1500-px whole-canvas
+files served direct looks and the census. No further server pixels exist to fetch; H29 dropped as moot (0.2 USD, no
+request). Its untested half -- the reader tier -- became H29b.
+
+**H29b: one blind Opus pass pair on the SAME native 4x montages of p.[1] lines 1-4** (`glyphs/montage/p1_L01-04.png`
++ `atlas.png`, the images H15's Sonnet pair C/D read), same protocol (box-numbered TSV, "+" for a box holding two
+signs, NEW:<description> for a shape outside the atlas, no plaintext or key shown), `passes/p1_L1-4_v3_passG.tsv`
+and `passH.tsv` (2 vision calls, about 110k tokens each).
+
+**Result: the Opus pair agrees on 94/105 boxes = 89.5%, against the Sonnet pair's 76.2% on the identical images
+(gate 60%, pre-registered).** The reader tier, not the pixels, was the larger part of the disagreement. Cross-tier
+agreement is 68.6-71.4% (G/H against C/D), and each Opus pass agrees with the current reconciled file on 77-79% of
+boxes (the Sonnet passes on 81-84% -- but that file was settled FROM the Sonnet passes, so the comparison is biased
+toward them; on the AB-graded boxes the Opus passes read 82-84%). `passes/p1_L1-4_v3_GH_disagreements.tsv` (11
+rows, unsettled). Three findings for the transcription:
+1. **A shape the atlas lacks:** both Opus readers independently flag boxes L1.18, L1.21 and L3.30 as the same
+   non-atlas sign (a bold vertical stroke turning left at the foot, "J-hook"); the Sonnet passes coded them HOOK,
+   and H14b's HOOK-split passes had already called L3.30 "not a hook". A JHOOK code is missing from labels.json.
+2. **Thirteen boxes where the Opus pair AGREES against the reconciled file**, six of them at grade AB from the Sonnet
+   pair: L1.12 FOUR (the previous runner's own direct look in H15 also called box 12 "a 4"; reconciled HOOK), L1.25 and
+   L3.24 ESS (reconciled SIX), L2.17 EIGHTBAR (reconciled THETA), L3.14 and L4.2 PHI (reconciled HOOK), L2.5 HOOK
+   (reconciled NINE); the rest are merged boxes the Opus pair reads as two signs the way H15's settling notes did
+   (L1.30 SIX+NINE, L2.20 HOOK+XCURL, L4.20 HOOK+OMEGABAR; L3.16 TWO+OMEGABAR where H15 settled THREE+OMEGABAR).
+3. The 11 Opus disagreements sit in the same places as before: HOOK vs EIGHT (L1.27, L3.2), SIX vs PHI (L1.24, L3.23,
+   L4.4), and the J-hook naming.
+An AB grade from a pass pair at 76% is not the same grade as one at 89.5%: the reconciled p.[1] should be rebuilt from
+Opus passes over all eight lines and p.[2] (H29c, then H30), with JHOOK added to the atlas, before any further
+solver or crib run uses it. No reading, no class change; this is a transcription-agreement result only.
+
+**Controls:** the pre-registered 60% gate and H15's own figure on the identical images (76.2%) as the comparison; the
+NEW-code and merged-box findings rest on two independent blind readers agreeing. **Cost:** 2 Opus vision calls plus
+this runner's turns -- recorded as 6.0 USD (the est). No network requests, no credentials, no AskUserQuestion, rule 10
+wording, no other target touched.
