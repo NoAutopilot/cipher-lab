@@ -91,5 +91,84 @@ def score(path):
     if "--check" in sys.argv:
         good = os.path.exists(rp) and open(rp).read() == txt and open(tp).read() == tsv; print("fresh" if good else "STALE"); sys.exit(0 if good else 1)
     open(rp, "w").write(txt); open(tp, "w").write(tsv); print(txt, end="")
+
+# H113 (28 Sept 2026, runner 5): the same 26 target tiles, controls from the f.108/family hands only -- 10 o + 10 e tiles of
+# H65 (period gloss letters on f.101r/f.188r, cut back out of images/h65/sbs_sheet*.jpg, seed 113) and H26's f.108 signs
+# (both G2 and 4 of G1/G3, seed 113). Gate (CAMPAIGN.md H113, pre-registered here before the call): >= 90% of controls
+# on the expected side (o, G2 -> side by side; e, G1/G3 -> single/stacked/trefoil). On a PASS the targets are relabelled
+# as in the H108 rule. build-h113 -> images/h113/loop_sheet*.jpg, scripts/f61loop108r_h113_tiles.tsv;
+# score-h113 read_call_H113.tsv [--check] -> scripts/f61loop108r_h113_result.txt, _h113_relabel.tsv
+def h65_tiles(seed):
+    key = rows(f"{HERE}/f61sbs_tiles.tsv"); rng = random.Random(seed)
+    o = [r for r in key if r["period_letter"] == "o"]; e = [r for r in key if r["period_letter"] == "e"]
+    out = []
+    for r in rng.sample(o, 10) + rng.sample(e, 10):
+        k = int(r["tile"]) - 1; sh = Image.open(f"{IMG}/h65/sbs_sheet{k // 10 + 1}.jpg").convert("RGB"); j = k % 10
+        X, Y = (j % 5) * 340, (j // 5) * 329 + 34
+        t = sh.crop((X, Y, X + 330, Y + 285)); t = Image.composite(Image.new("RGB", t.size, "white"), t, Image.new("L", t.size, 0))
+        a = np.asarray(t).copy(); red = (a[:, :, 0] > 150) & (a[:, :, 1] < 90) & (a[:, :, 2] < 90); a[red] = 255   # strip H65's ticks; ours are redrawn
+        out.append(("control", r["leaf"], r["tile"], "period_" + r["period_letter"], r["segment"], r["x_px"], Image.fromarray(a)))
+    return out
+def build_h113():
+    global IMG
+    rng = random.Random(113); qo = [r for r in rows(f"{HERE}/read_call_QO.tsv") if r.get("group") in ("G1", "G2", "G3") and r["sheet"].startswith("f108")]
+    g2 = [r for r in qo if r["group"] == "G2"]; g13 = rng.sample([r for r in qo if r["group"] != "G2"], 4)
+    tiles = target_tiles() + h65_tiles(113) + [t for t in control_tiles_from(g2 + g13)]
+    random.Random(113).shuffle(tiles); write_sheets(tiles, "h113", "f61loop108r_h113_tiles.tsv")
+def control_tiles_from(pick):
+    out = []
+    for r in pick:
+        im = Image.open(f"{IMG}/{r['sheet']}.jpg").convert("RGB"); a = np.asarray(im.convert("L"), float)
+        bars = [i for i, v in enumerate(a.mean(axis=1)) if v < 40]; cuts = [0]
+        for i in bars:
+            if not cuts or i - cuts[-1] > 20: cuts.append(i)
+        edges = [0] + [b + 12 for b in cuts[1:]]; segs = list(zip(edges, [c for c in cuts[1:]] + [a.shape[0]]))
+        y0, y1 = segs[int(r["segment"]) - 1]; x = float(r["x_px"])
+        g = a[y0:y1, max(0, int(x - 30)):int(x + 30)]; pr = np.convolve((g < THR).sum(axis=1), np.ones(27) / 27, "same")
+        pk = [i for i in range(1, len(pr) - 1) if pr[i] >= pr[i - 1] and pr[i] >= pr[i + 1] and pr[i] >= 0.5 * pr.max()]
+        cy = y0 + max(pk)
+        paper = tuple(int(v) for v in np.median(np.asarray(im.crop((0, y0, im.width, y1))).reshape(-1, 3), axis=0))
+        seg = Image.new("RGB", (im.width + 400, im.height + 400), paper); seg.paste(im.crop((0, y0, im.width, y1)), (200, y0 + 200))
+        t = seg.crop((int(x - 165) + 200, int(cy - 120) + 200, int(x + 165) + 200, int(cy + 165) + 200))
+        out.append(("control", r["sheet"], r["order_in_sheet"], r["group"], r["segment"], r["x_px"], t))
+    return out
+def write_sheets(tiles, tag, keyname):
+    os.makedirs(f"{IMG}/{tag}", exist_ok=True); W, H = 330, 285 + 34
+    for s in range(0, len(tiles), 10):
+        sheet = Image.new("RGB", (5 * (W + 10), 2 * (H + 10)), "white"); d = ImageDraw.Draw(sheet)
+        for k, tt in enumerate(tiles[s:s + 10]):
+            t = ImageOps.autocontrast(tt[6].convert("L"), cutoff=1).convert("RGB"); dd = ImageDraw.Draw(t)
+            dd.line([(165, 0), (165, 14)], fill=(220, 0, 0), width=3); dd.line([(165, t.height - 14), (165, t.height)], fill=(220, 0, 0), width=3)
+            X, Y = (k % 5) * (W + 10), (k // 5) * (H + 10); sheet.paste(t, (X, Y + 34)); d.text((X + 6, Y + 6), f"tile {s + k + 1}", fill=(0, 0, 200))
+            d.rectangle([X, Y + 34, X + W - 1, Y + 34 + t.height - 1], outline=(0, 0, 0))
+        sheet.save(f"{IMG}/{tag}/loop_sheet{s // 10 + 1}.jpg", quality=88)
+    with open(f"{HERE}/{keyname}", "w") as f:
+        f.write("tile\tkind\tline_or_sheet\tposition_or_order\tcode_or_h26group\tsegment\tx_px\n")
+        for n, tt in enumerate(tiles, 1): f.write("\t".join(map(str, (n,) + tt[:6])) + "\n")
+    print(f"{len(tiles)} tiles ({sum(t[0] == 'target' for t in tiles)} target, {sum(t[0] == 'control' for t in tiles)} control) on {(len(tiles) + 9) // 10} sheets images/{tag}/")
+def score_h113(path):
+    key = {r["tile"]: r for r in rows(f"{HERE}/f61loop108r_h113_tiles.tsv")}
+    rd = {r["tile"].strip().replace("tile ", ""): r for r in rows(path)}
+    ok = n = 0; lines, rel = [], []
+    for t, k in key.items():
+        if k["kind"] != "control": continue
+        a = rd.get(t, {}).get("arrangement", "none").strip(); exp_side = k["code_or_h26group"] in ("G2", "period_o"); n += 1
+        hit = side(a) if exp_side else (bool(a) and not side(a) and a.lower().startswith(("single", "two stacked", "trefoil")))
+        ok += hit; lines.append(f"control tile {t} {k['line_or_sheet']}/{k['position_or_order']} {k['code_or_h26group']} -> '{a}' {'ok' if hit else 'MISS'}")
+    gate = ok >= 0.9 * n
+    for t, k in sorted(key.items(), key=lambda kv: (kv[1]["line_or_sheet"], int(kv[1]["position_or_order"]) if kv[1]["kind"] == "target" else 0)):
+        if k["kind"] != "target": continue
+        a = rd.get(t, {}).get("arrangement", "none").strip(); al = a.lower()
+        new = "SBS" if side(a) else ("PHI" if al.startswith(("single", "two stacked", "trefoil")) else k["code_or_h26group"])
+        rel.append((k["line_or_sheet"], k["position_or_order"], k["code_or_h26group"], a, new if gate else k["code_or_h26group"]))
+    from collections import Counter
+    txt = [f"H113 loop classification: controls {ok}/{n} on the expected side; GATE (>= 90%): {'PASS' if gate else 'FAIL'}"] + lines
+    txt += [f"target {L}/{p}: draft {c} -> '{a}' -> {nw}" for L, p, c, a, nw in rel]
+    txt += ["relabel summary: " + " ".join(f"{a}->{b}:{m}" for (a, b), m in sorted(Counter((c, nw) for _, _, c, _, nw in rel).items()))]
+    txt = "\n".join(txt) + "\n"; tsv = "line\tposition\tdraft\tarrangement\tcode\n" + "".join("\t".join(map(str, r)) + "\n" for r in rel)
+    rp, tp = f"{HERE}/f61loop108r_h113_result.txt", f"{HERE}/f61loop108r_h113_relabel.tsv"
+    if "--check" in sys.argv:
+        good = os.path.exists(rp) and open(rp).read() == txt and open(tp).read() == tsv; print("fresh" if good else "STALE"); sys.exit(0 if good else 1)
+    open(rp, "w").write(txt); open(tp, "w").write(tsv); print(txt, end="")
 if __name__ == "__main__":
-    build() if sys.argv[1] == "build" else score(sys.argv[2])
+    {"build": lambda: build(), "score": lambda: score(sys.argv[2]), "build-h113": lambda: build_h113(), "score-h113": lambda: score_h113(sys.argv[2])}[sys.argv[1]]()
