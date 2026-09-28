@@ -526,3 +526,66 @@ blind sign sheet has to be cut from `NeversBirago.png` first, and the Ceppo key 
 
 Requests this job: gallica.bnf.fr 5 (4 refused plus 1 retry, all refused); web.archive.org 4 (reset); de-crypt.org 5;
 github.com 2 clones (Aymeloglu, Bourdeau, read only, deleted after); web search 3. Subagents: 0.
+
+## HARVEST-D witness: BnF fr.3252 f.36-37, Birago to Nevers, Saluzzo 5 April 1571 (PARENT WORKER HARVEST-D, 28 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-28-parent-harvest-d.md`. A key source, not a counted reading. No class, no status
+change here; rule 10 wording only.
+
+**Intake.** Web search, 28 Sept 2026: `Birago Nevers "5 aprile 1571" OR "5 avril 1571" Saluzzo chiffre "3252"` and
+`"Duca di Ferrara" Mirandola 1571 guarnigione trattato "Duca di Fiorenza" Birago Saluzzo`. Hits: BnF finding aids
+(fr.4702, fr.3623), the Treccani DBI life of Ludovico Birago (cites fr.3252 among its manuscript sources; no text of
+this letter), Wikipedia pages. No reading of this letter found. DECODE: live RecordsList `x_c_holder LIKE 3252`
+returned no records; the same query with 3621 returned records 9444ff (positive control). Aymeloglu's
+`catalogue/decode-catalog.csv` (cloned 28 Sept 2026): the only "3252" is DECODE record id 3252, a 1911 postcard.
+Tomokiyo's nevers.htm does not list fr.3252. Not found-solved.
+
+**Material.** Gallica btv1b9060232m (manifest: 184 canvases, every label NP). Canvas 37 right page carries foliation
+'36' (f.36r); canvas 38 is f.36v / f.37r; canvas 39 shows f.37v (address "Ill.mo mio oss.mo il sig. Duca di Nevers
+Pari di Francia ... a la Corte", endorsement '5 aprile 1571') and f.38r. The letter is in Italian with five cipher
+passages: f.36r foot (about 13 lines), f.36v top (6 lines), f.36v middle (3 lines plus 2 lines after
+"gentil'huomo"), f.37r (2 lines, after "come che Iddio è Iddio"). A small pasted slip at the foot of f.37r (left)
+carries a clear-text passage ("[Il] sig. Duca di Ferrara è andato [con] diligenza alla Mirandola et [per fa]rli
+mutare la guarnigione [a] causa d'un trattato quale se [...] li haveua il S. Duca di [F]iorenza. Mons. di [...]
+[...]garda quale veneva [a] giornate giunse hieri a [T]orino per le poste"); its left edge is in the gutter and it
+was not matched to a cipher passage. Every cipher passage carries the clerk's letter-by-letter decipherment: small
+letters written above each sign. At 1x these are too faint to read, but a 2x upscale of the native region makes them
+legible. Files: `harvest/witness_f36/` (overviews c36-c39, five native regions, the slip, `manifest.json`),
+`cut_lines.py` (regenerates `lines/` and `lines2x/`; only the five cited crops are committed, in `cited/`).
+
+**Same key.** On f.36v line 1 the 18 signs carry 18 gloss letters, "parlandone il signor", and every sheet sign in it
+takes its printed Ceppo-Nevers value: S16 p, S45 a, S84 l (twice), S80 a, S89 d, S62 o, S17 i, S26 s, S13 g, S70 o,
+S75 e, and the dotted slash (S30/S49) n. Pairs on f.36r agree (S17 i, S84 l, S16 p, S24 o, S31 m, S57 p, S26 s).
+So this letter is in the Ceppo-Nevers key, and its interlinear glosses are a period decipherment of it.
+Table: `harvest/witness_f36/alignment_pairs.tsv` (25 pairs, conf H/M/L per pair).
+
+**The double-barred oval (no cell in the printed table) = r.** It is glossed r twice on f.36v line 1: pa-r-landone
+(idx 3, conf H) and signo-r (idx 18, conf M). It has the same form as the sign on fr.3251 f.11r
+(`harvest/witness_f36/f11r_double_barred_oval_x4.png`). So the four f.11r positions HARVEST-A read r "from context"
+(procurare, restitucione) now have a period decipherment of the same key behind the value. Whether to regrade them
+is for the orchestrator and verifier; this section does not edit the f.11r files.
+
+**The pound-shaped sign: not settled, but the evidence moves.** No sign of that exact form turned up in the witness
+lines read (f.36v lines 1-5, f.36r lines 1-3 and 9-13, f.37r line 1; the rest not scanned). Two nearby observations:
+(a) S31, the cell the pound sign was assigned to on f.11r (printed m row 2), appears once on f.36r (upper line of
+crop r36_L12, a loop with a long tail sweeping right) and is glossed **m**, its printed value, not l. (b) S84 (printed
+l row 1) is glossed **l** three times. On f.36r it sits in the run z-sign / S84 / triangle, and f.11r P1 has the same
+run with the pound sign in S84's place. Side by side (`harvest/witness_f36/compare_f11pound_vs_witness_S84_S31.png`),
+the f.11r pound sign has S84's structure: a lower-left loop, a crossing stroke, and an upper-right loop, drawn
+upright instead of leaning. The likelier explanation is that the f.11r pound sign is S84 in a more upright hand, read
+at its printed value l. That would be a transcription look-alike (S84 taken for S31), not a variant sign outside the
+table. This is an inference (M), not a gloss on an f.11r sign. If it holds, the seven f.11r pound positions read l at the
+printed value of S84, and the override in `exceptions_f11.tsv` becomes a transcription relabel.
+
+**What was not done.** Four Sonnet blind passes on the 1x crops (A/B x two leaves) returned all glosses "?" and
+guessed sign ids. They were rejected unused (`harvest/witness_f36/passes/README.md`). No full alignment of the
+witness's several hundred glossed signs was made; the pairs above are the ones read to answer the brief's two
+questions. The slip was not matched to a passage.
+
+**Next step (named):** a full two-pass alignment of the witness (sign id + gloss per sign) on the 2x crops, one
+f.36v block or four f.36r lines per call, gives the complete period key for this letter. It also tests the other
+f.11r look-alike pairs (S30/S49, S24/S88, S37/S74). Then re-run `harvest/decode_control.py` on f.11r with S84 in the
+seven pound-sign positions and r for the double-barred oval.
+
+Requests (witness): gallica.bnf.fr 11 (manifest 1, four overviews, six regions), 2 s apart; de-crypt.org 2; web
+search 2; github.com 1 clone (read only). Subagents: 4 (rejected).

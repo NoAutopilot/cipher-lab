@@ -1,0 +1,31 @@
+# fr.3252 f.36-37 (no.24, Birago to Nevers, Saluzzo 5 April 1571): cipher sign vs the clerk's interlinear gloss letter
+# written above it. Read by HARVEST-D (Opus) from the 2x crops in lines2x/ (native Gallica regions, btv1b9060232m
+# canvases 37-38), 28 Sept 2026. sign = id on harvest/sign_sheet_blind.png (NEW = not on the sheet). printed = the
+# value Tomokiyo's printed Ceppo-Nevers table gives that sheet id (sign_id_map.json). conf = HARVEST-D's confidence in
+# the sign/gloss pairing (H sure, M probable, L weak). Only pairs read are listed; the witness has several hundred more.
+leaf	crop	idx	sign	gloss	printed	conf	note
+f36v	v36top_L01_s1	1	S16	p	p	H	parlandone il signor (18 signs, 18 gloss letters)
+f36v	v36top_L01_s1	2	S45	a	a	H
+f36v	v36top_L01_s1	3	NEW	r	-	H	oval with two horizontal bars through it (double-barred theta); the sheet's single-barred theta S69 is f
+f36v	v36top_L01_s1	4	S84	l	l	H
+f36v	v36top_L01_s1	5	S80	a	a	H
+f36v	v36top_L01_s1	6	S30/S49	n	r/n	M	dotted-slash pair not separated at this scale
+f36v	v36top_L01_s1	7	S89	d	d	H
+f36v	v36top_L01_s1	8	S62	o	o	H
+f36v	v36top_L01_s1	9	S30/S49	n	r/n	M
+f36v	v36top_L01_s1	10	S75	e	e	L	gloss faint
+f36v	v36top_L01_s2	11	S17	i	i	M
+f36v	v36top_L01_s2	12	S84	l	l	H
+f36v	v36top_L01_s2	13	S26	s	s	H
+f36v	v36top_L01_s2	14	S17	i	i	L	gloss under an ink blot
+f36v	v36top_L01_s2	15	S13	g	g	H
+f36v	v36top_L01_s2	16	S30/S49	n	r/n	H
+f36v	v36top_L01_s2	17	S70	o	o	H
+f36v	v36top_L01_s2	18	NEW	r	-	M	barred oval, same form as idx 3 (bar also runs into the neighbouring sign)
+f36r	r36_L02_s2	-	S17	i	i	M	sequence ... z-sign, loop sign, triangle ...
+f36r	r36_L02_s2	-	S84	l	l	M	the same three-sign run z / S84 / triangle occurs on fr.3251 f.11r with the "pound sign" in S84's place
+f36r	r36_L02_s2	-	S16	p	p	M
+f36r	r36_L12_s1	-	S24	o	o	M	upper line of the crop (L11)
+f36r	r36_L12_s1	-	S31	m	m	M	upper line (L11); loop with long tail sweeping right; the only S31 found in the lines read
+f36r	r36_L12_s1	-	S57	p	p	M	upper line (L11)
+f36r	r36_L09_s3	-	S26	s	s	M	lower line
