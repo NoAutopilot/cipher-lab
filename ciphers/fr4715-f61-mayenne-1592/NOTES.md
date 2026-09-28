@@ -2285,3 +2285,22 @@ confused ("the similarity of the symbols for a/n, c/p, and d/q", `sources/crypti
 one-swap map scores 2.5 or less (swaps touching PHI e/r, SBS b/o, C43 a/n, INF h/u, EBR, VBAR, ZHOOK, BETA among them).
 So the judge resolves the f.108v cells at the single-swap level except for c/p against d/q, where the text barely
 prefers the fitted assignment. Not a reading; grade M; no class change.
+
+## Campaign steps H102 and H103 (28 Sept 2026, 16:04-16:06 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+**H102, the control H100 lacked.** The one-swap hard null on the known f.61 span lines (`build known_h51 --seed 105
+--swap`, H94 no-leak control prompt; sets and prompt pushed e3a957f7 before the call; one Opus text call, verdict written
+to disk by the judge): target rank **1 of 21**, 7.0 vs 5.5 (runner-up swaps BETA m/z <-> 4STEM a/n) -> **PASS**
+(`f61judge_known_h51_swaps105_result.txt`, `--check` fresh). No swapped set renders identical to the target on either
+the known lines or f.108v (checked), so no tie is hidden.
+
+**H103, model-free check of H100/H102** (`scripts/f61judge_ngram.py --hard`, `f61judge_ngram_hard_result.txt`): by fr16
+4-gram the known-lines target ranks 1 of 21 (-1.349 vs -1.366, thin), but on f.108v the target ranks **2 of 21**
+(-1.260) behind SET-04 (-1.241) -- the same 4TRI c/p <-> 4PI d/q swap the judge placed second (4.5 vs 5.0); the next map
+is well below on both instruments (-1.301; judge 2.5). **GATE H103 FAIL** as pre-registered.
+
+Reading the two together: on f.108v the cell assignment is resolved at single-swap level for every pair of cells except
+c/p against d/q, where the judge barely prefers the fitted map and the 4-gram score barely prefers the swap -- the two
+4-shaped cells Tomokiyo calls confusable. The f.61/f.108r fit decided that assignment from Tomokiyo's markup and the
+reprinted period gloss (H51); f.108v's text neither confirms nor contradicts it. For the verifier (H88): the c/p and
+d/q positions of the f.108v consensus are the least supported letters. Not a reading; no class change.

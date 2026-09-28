@@ -1,0 +1,4 @@
+known_h51_swaps105: target SET-17 -1.349 (58 letters); best permuted -1.366, median permuted -1.669; rank 1 of 21
+f108v_swaps105: target SET-17 -1.260 (274 letters); best permuted -1.241, median permuted -1.524; rank 2 of 21
+fr16 context at 274 letters: real-text p05 -0.870, median -0.781; letter-shuffled p99 -1.798
+GATE H103: target rank 1 of 21 in the f.108v call -> FAIL

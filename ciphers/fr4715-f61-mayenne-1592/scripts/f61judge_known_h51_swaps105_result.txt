@@ -1,0 +1,4 @@
+known_h51_swaps105: target SET-17 scored 7.0; rank 1 of 21 (ties against the target)
+all scores: SET-17:7.0 SET-01:5.5 SET-05:4.0 SET-15:4.0 SET-16:4.0 SET-12:3.5 SET-02:3.0 SET-03:3.0 SET-04:2.5 SET-07:2.5 SET-10:2.5 SET-19:2.5 SET-06:2.0 SET-09:2.0 SET-11:2.0 SET-21:2.0 SET-08:1.5 SET-13:1.5 SET-14:1.5 SET-18:1.5 SET-20:1.5
+target reading as given by the judge: auecetq | estcapabl | tropauancers | imyousi | enuoeaupere | meyentendoit
+GATE H85 (known_h51_swaps105): rank 1 of 21 -> PASS

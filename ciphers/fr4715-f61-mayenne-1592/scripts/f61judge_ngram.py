@@ -15,7 +15,9 @@ def sc(reading):
     n = sum(len(l) - 3 for l in lines)
     return sum(M.score(l) * (len(l) - 3) for l in lines) / n if n else -9.9, sum(len(l) for l in lines)
 out, gate = [], []
-for tag in ("known_h51_s101", "f108v_s101", "f108v_s102", "f108v_s103"):
+HARD = "--hard" in sys.argv   # H103: the one-swap hard-null calls (H102 control, H100 target); gate: target rank 1 in the f.108v call
+TAGS = ("known_h51_swaps105", "f108v_swaps105") if HARD else ("known_h51_s101", "f108v_s101", "f108v_s102", "f108v_s103")
+for tag in TAGS:
     k = json.load(open(f"{HERE}/f61judge_{tag}_key.json"))["key"]; tgt = [l for l, m in k.items() if m == 0][0]
     rows = {r["label"].strip(): r for r in csv.DictReader((l for l in open(f"{HERE}/f61judge_{tag}_verdict.tsv") if not l.startswith("#")), delimiter="\t")}
     S = {l: sc(r["reading"]) for l, r in rows.items()}
@@ -25,8 +27,8 @@ for tag in ("known_h51_s101", "f108v_s101", "f108v_s102", "f108v_s103"):
     if tag.startswith("f108v"): gate.append(rank == 1)
 N = 274; real, null, _ = M.controls(N)
 out.append(f"fr16 context at {N} letters: real-text p05 {jp.pct(real, 0.05):.3f}, median {jp.pct(real, 0.5):.3f}; letter-shuffled p99 {jp.pct(null, 0.99):.3f}")
-out.append(f"GATE H93: target rank 1 of 21 in all three f.108v calls -> {'PASS' if all(gate) else 'FAIL'}")
-txt = "\n".join(out) + "\n"; res = f"{HERE}/f61judge_ngram_result.txt"
+out.append(f"GATE {'H103' if HARD else 'H93'}: target rank 1 of 21 in {'the f.108v call' if HARD else 'all three f.108v calls'} -> {'PASS' if all(gate) else 'FAIL'}")
+txt = "\n".join(out) + "\n"; res = f"{HERE}/f61judge_ngram{'_hard' if HARD else ''}_result.txt"
 if "--check" in sys.argv:
     ok = os.path.exists(res) and open(res).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
 open(res, "w").write(txt); print(txt, end="")
