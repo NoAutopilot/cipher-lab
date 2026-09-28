@@ -807,3 +807,39 @@ VENUS . SL(p,x) N_O? X TCURL ,). `lines.tsv` gains `c4a0_L01`; `scripts/gold4c_i
 `scripts/base_mark_recount.py` group `c4a0` under cryptogram 4 and were re-run (`--check` clean): c4 is 20 lines,
 pooled N 1264 (was 1251). `scripts/h5_couplets.py` on ten couplets: within 5/10, across 0/9, p < 0.0001 on ours
 (line 1 and 2 both end WAVE, his TCURL TCURL).
+
+### H8 and H9 (28 Sept 2026, CPU only)
+
+**H8, rhyme signs** (`scripts/h8_rhyme_signs.py`, `h8_rhyme.json`): on Bourdeau's read of the verse the ten couplet
+rhyme signs occur inside lines at or below the rate their overall share predicts (TCURL 6 interior vs 9.3 expected,
+XD 23 vs 23.2, VENUS 8 vs 9.3, SL(y,o) and EQ3_O 0 vs 1.9), and on ours likewise (WAVE 6 vs 5.1, X 33 vs 38.4): they
+are ordinary units that also fall line-final, not line markers. Marked/unmarked classes of his ten rhyme signs run
+S M S M S S S M S S (6 changes of 9; a strict masculine/feminine alternation would give 9; permutation p 0.16), so
+the stacked mark does not alternate the way a mute-e marker would; no corpus of French rimes plates is on disk, so
+this part has no control and claims nothing (rule 3). **H9, the controls H3 lacked** (`scripts/h9_controls.py`,
+`h9_controls.json`, 200 samples per condition): a coarse syllabary (fr19 syllables merged to the target's K) fits
+K, doubled-adjacent and bigram repetition but the target is more skewed than it (top-1 0.161, top-5 0.314, IC
+0.039 above the band) and has more hapax (0.31 above it); 15 pct injected type noise moves no verdict; Baudelaire's
+verse (`tools/data/fr19v`, fetched once) in place of prose changes nothing for c4 or pooled. Reading of H3+H9: a
+syllable-scale inventory carrying one letter-like dominant sign and a long one-off tail (the pictograms), i.e. a
+mixed design; H10 tests that shape directly. Grade S, no reading.
+
+### H10-H14, the design question narrowed and left open (28 Sept 2026, CPU only)
+
+`scripts/h10_mixed.py` (`h10_mixed.json`): a mixed design (a share q of words spelled letter by letter, the rest by a
+coarse syllabary merged to the target's K) fits the pooled profile on at most 2 of 7 statistics at any q, and c4 on 5
+of 7 at q 0.3-0.4 (misses: K higher and bigram repetition lower in the target, the direction transcription noise that
+invents ids pushes). `scripts/h11_line_lengths.py` (`h11_lines.json`): the verse carries 13-14 signs per line
+(ours mean 13.2, Bourdeau 13.95; both differ from a strict 12/13 alexandrine and from the clear poem's 9-15 syllables
+per line, permutation p under 0.01), about 1.2-1.3 signs per syllable of a 12-syllable line, far under a letter
+level. `scripts/h13_newtype_noise.py` (`h13_noise.json`, v2 K formula): with a noise model in which 5-20 pct of
+tokens are replaced and half of those become fresh singleton ids, the q 0.3 mixed design sits inside the band on all
+seven statistics for c4 (N 282, 5-10 pct noise) and for c1 (N 132, most settings) -- read as consistency across 72
+conditions, not proof -- while the pooled text (N 1264, tight bands) fits no design on more than 3 of 7: one sign
+(X) at 16 pct and a top-5 at 31 pct sit above every letters+syllables band. `--drop-x` (`h14_noise_noX.json`):
+removing X flips the pooled profile from too skewed to too flat on top-1, top-5, IC and bigram repetition, so X is
+not a null hiding a natural text. Where this leaves the design: syllable-scale units with couplet rhymes (H5), line
+lengths 1.2-1.3x a syllable count (H11), each cryptogram's own profile compatible with letters+syllables plus about
+10 pct invented-type noise (H13), but a pooled distribution -- one dominant sign over a tail flatter than any
+natural-unit model -- that none of these reproduce: the signature of spread homophones or a large code, which the
+GOLD-D1 `profile=target` control reproduced only by construction. Grade S throughout; no reading; status `open`.
