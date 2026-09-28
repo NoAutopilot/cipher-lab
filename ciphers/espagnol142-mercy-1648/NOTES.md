@@ -2081,3 +2081,13 @@ reads "... mayor, para quien se embian cartas de creencia que uan con esta" (to 
 which go with this), which is also the value H45 found best for 48 at this occurrence (+4.97) -- but H45 found the same
 value slightly worse at 48's other occurrence (r20:15, -0.55), so 48 stays d (M) and "qu" stays an observation. No
 token, grade or class change.
+
+## Campaign step H50 (2026-09-28 16:07 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** 48 as a three-letter unit: H45's search (`h50/syll3.py`, derived from
+`h45/syll.py`) over the 300 most frequent letter trigrams of es17c7 (`h50/values.tsv`, written before scoring; "que"
+is first), substituted at both occurrences (r17:20, r20:15), word-segmentation gain against key.tsv's d, with the same
+200-draw random-S-token control. **Best value "aqu": gain -1.64** (per occurrence +1.33, -2.97); control median -7.95,
+p95 +2.11. No three-letter value, "que" included, reads better than d at both places; with H45 (best two-letter "qu",
++4.42 but -0.55 at r20) that closes the value search for 48 by this instrument: 48 stays d (M). H49's "para quien se"
+remains an observation at one occurrence only. `h50/result.log`. No token, grade or class change.
