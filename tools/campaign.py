@@ -7,6 +7,8 @@ Header lines (key: value, one per line, before the first table):
 Table columns: id | rank | hypothesis | needs | est_usd | status | result
   needs is `nobody` (runnable now), `doc <what>` or `person <who>` (a branch that waits); status is open | running <session> | done | dropped.
 Step log: lines under "## Log" appended by runners: <UTC> | <session> | <hypothesis id> | <cost> | <one-line result>.
+  Row ids are H<n> or H<n><letter> (H19b, H29c): a lettered follow-up row is parsed like any other (fixed 28 Sept 2026,
+  spinelli H29c: the parser's H\d+ pattern silently skipped every lettered row, so --next never offered H19b/H20b/H20c/H26b/H29b/H29c).
 
   python3 tools/campaign.py --check                 every campaign in SPRINT.md: at least one open `nobody` row, spend within budget
   python3 tools/campaign.py --next <folder>         the top open `nobody` row (rank order) as a tab line, or "none"
@@ -24,7 +26,7 @@ def parse(folder):
     hdr = dict(re.findall(r"^(\w+):\s*(.*)$", text.split("\n## ")[0], re.M))
     rows = []
     for line in text.split("\n"):
-        if not re.match(r"^\| H\d+ \|", line): continue
+        if not re.match(r"^\| H\d+[a-z]? \|", line): continue
         cells = [c.strip() for c in line.strip().strip("|").split("|")]
         if len(cells) < 7: continue
         rid, rank = cells[0], cells[1]
