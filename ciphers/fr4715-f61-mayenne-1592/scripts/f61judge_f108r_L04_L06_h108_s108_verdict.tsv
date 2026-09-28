@@ -1,0 +1,23 @@
+# H112 seed 108 (Opus text subagent, 28 Sept 2026, one call; prompt verbatim in scripts/PROMPTS.md H112; tools used: Read, SubagentHandback). Rows verbatim.
+label	score_0_10	reading
+SET-01	0	osasllldalslllellddltilel | uetdailsamaasils | ieulccleclualuletltaaauesalleu
+SET-02	0.5	tleliiiueiliiiliiuuiscili | alsuecileseolcil | claiddmldiaeiamlsiseeeallemila
+SET-03	0	tuduaaaodauaaasaaooaleasa | cslodeaudidmueau | escaaalsaacdaclslaldddcsudlasc
+SET-04	0.5	lscseeelceseeeieelleoaeie | aiolcaescucmsaes | aiaeddtideaceatioeocccaiscteia
+SET-05	0	aalaccculcaccciccuucsdcic | misuldcaltlsadca | dimclloilcmlcmoiscslllmialocim
+SET-06	1.5	cmimeeeuiemeeeteeuuedaete | atquiaemisilmaem | ataeooltoeaiealtdediiiatmileta
+SET-07	1	omcmuuuscumuuutuussueautu | ntrespaumciclmaum | atauddstduacuasteuecccatmcsuta
+SET-08	0	autucccetcucccscceecaocsc | msaetocutstiuocu | osmclllslcmtcmlsacatttmsutlcsm
+SET-09	0.5	taaaiiisaiaiiioiissiduioi | codsauiaamalauia | uocisseosicaiceodidaaacoaaeioc
+SET-10	0	otmtcccimctcccscciicaucsc | ssaimuctmamltuct | ussclldslcsmcsdsacammmsstmdcss
+SET-11	0	lasaaaassaaaaamaassatiama | umtssiaasescaiaa | imuallomlausauomtatsssumasoamu
+SET-12	1	uieillldelilllallddlollal | saodelliesecilli | laslaamaalselsmaoloeeesaiemlas
+SET-13	0	smtmdddltdmdddeddlldalded | cealtldmtatomldm | lecduuseudctdcseadatttcemtsdec
+SET-14	1.5	asusiiiouisiiiciiooiemici | aprohmisudussmis | mcailllcliauialceieuuuacsulica
+SET-15	0	sucullleclulllalleelmilal | lamecilucdcsuilu | iallooaaollcllaamlmccclaucalal
+SET-16	0.5	salaeeeileaeeeceeiiemsece | acmilseallluasea | scaeddtcdealeatcmemlllacalteca
+SET-17	0	lucuaaatcauaaaaaattaolaaa | maotclaucdceulau | lamassiasamcamiaoaocccmauciaam
+SET-18	0.5	mslsuuuilusuuuduuiiueaudu | tdeilauslolasaus | adtusscdsutlutcdeuellltdslcudt
+SET-19	0	cllltttmltltttottmmteitot | soemlitlldlalitl | iostaasoatsltssoetelllsollstos
+SET-20	0.5	ueteiiiltieiiimiillilcimi | smlltcietatdecie | cmsiaaomaistisomliltttsmetoims
+SET-21	0	tdadlllsaldlllellssllmlel | aelsamldasaodmld | mealiiceilaalacelllaaaaedaclea
