@@ -1275,3 +1275,33 @@ Files: `images/f108g/` (bands.json, debug overlay, one sample committed; 24 crop
 `images/regen_f61r_sheets.sh` (stanza), `scripts/PROMPTS.md` (H34 sections), `scripts/gloss108gA/B.tsv`,
 `scripts/pass108gA/B_classes.tsv`, `scripts/f61gloss.py` (--tag/--gloss/--signs/--bands options, the H21 default byte-identical),
 `scripts/f61gloss_h34_result.txt`, `scripts/f61gloss_h34_counts.tsv`; HYPOTHESES.md row added. Vision calls: 4 of 4.
+
+## Campaign step H49 (2026-09-28 04:57 UTC) -- null test of the uncovered classes: untestable at this n
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV), script-only, no calls, no network. Hypothesis H49 (F61-NULLTEST):
+do CA, LOOPBAR, LL (and CROSS, ZHOOK) behave as nulls in the family's period alignments, as Tomokiyo's dashes say (H44)?
+`scripts/f61nulltest.py` (verdict rule pre-registered in its docstring; `f61nulltest_result.txt`, `--check` fresh).
+
+**Design.** Per class, on `family/key_period_v3.tsv`'s rows: top-2 letter share and normalised entropy of the lettered
+tokens, dash share of all tokens. Controls subsampled to the class's OWN lettered count n (rule 3, the ARM3-ADJ lesson):
+15 covered classes with 30+ lettered tokens, 2000 multinomial draws of n tokens each (the cell band), and a null model of
+2000 draws from the pooled letters of those classes (what a sign that takes a random neighbour's letter looks like under
+this aligner). Verdict 'null-like' only below every cell control's p05 and inside the null band; 'cell-like' only above the
+null's p95 and inside every cell band; else untestable.
+
+| class | v3 tokens (dash) | lettered n | letters | top-2 share | null model at n (p05 / median / p95), P(null >= obs) | cleanest cells' p05 at n (C43, EBR_B, INF, VBAR_B) | verdict |
+|---|---|---|---|---|---|---|---|
+| CA | 9 (2) | 7 | c 2, s 2, q, t, p | 0.57 | 0.29 / 0.43 / 0.71, **0.44** | 0.71 (reader-merged cells 4STEM 0.29, EBR_A 0.43) | **untestable at n=7** |
+| LOOPBAR | 2 (0) | 2 | e, u | | | | untestable (n < 7) |
+| LL | 1 | 1 | e | | | | untestable |
+| CROSS | 1 | 1 | p | | | | untestable |
+| ZHOOK | 3 | 3 | a, e, r | | | | untestable (its i/x reading rests on f.61/f.108r, H44) |
+
+**Result: untestable at this n, as the rule says.** CA's seven letters are what the null model produces at its median
+(P = 0.44) and fall below the 5th percentile of the four cleanest cells (C43, EBR_B, INF, VBAR_B at 0.71), but the
+reader-merged classes (4STEM, EBR_A, 4PI, HASH4, ZBAR) reach that low a top-2 share at n = 7 themselves, so the
+pre-registered 'below every cell control' condition is not met and no verdict is licensed either way. The three glossed
+hands write CA 9 times in 3,000 aligned tokens: the test would need about 30 tokens, which only f.61r's own hand supplies
+(10 CA signs on one leaf) -- i.e. the period alignments cannot settle the null question for this letter's hand; Tomokiyo's
+dashes (H44) remain the only published statement on it, and H4's dash-share rule the only working one. No class change;
+no reading; nothing new or first. Files: `scripts/f61nulltest.py`, `f61nulltest_result.txt`; HYPOTHESES.md row added.

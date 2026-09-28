@@ -1,0 +1,10 @@
+H49 null test on family/key_period_v3.tsv: cell controls = 15 covered classes with >= 30 lettered tokens (4PI 4STEM 4TRI BETA C43 EBR_A EBR_B H24 HASH4 INF LOOPS PHI VBAR_A VBAR_B ZBAR); null model = pooled letters of those classes; 2000 draws each, seed 1
+covered classes at full N (top-2 share / normalised entropy / dash share): 4PI 0.57/0.53/0.08; 4STEM 0.43/0.50/0.10; 4TRI 0.53/0.34/0.05; BETA 0.68/0.36/0.04; C43 0.90/0.24/0.03; EBR_A 0.50/0.53/0.04; EBR_B 0.80/0.22/0.06; H24 0.74/0.25/0.04; HASH4 0.59/0.42/0.07; INF 0.80/0.25/0.11; LOOPS 0.72/0.28/0.09; PHI 0.65/0.26/0.04; VBAR_A 0.65/0.33/0.07; VBAR_B 0.86/0.20/0.08; ZBAR 0.64/0.39/0.10
+CA: N=9 (dash 2), lettered n=7: c:2 s:2 q:1 t:1 p:1; top-2 share 0.57, entropy 0.80, dash share 0.22
+  null model at n=7: top-2 p05 0.29 median 0.43 p95 0.71; P(null >= 0.57) = 0.439
+  cell controls at n=7 (p05 / median): 4PI 0.43/0.71; 4STEM 0.29/0.57; 4TRI 0.43/0.57; BETA 0.57/0.86; C43 0.71/0.86; EBR_A 0.43/0.57; EBR_B 0.71/0.86; H24 0.57/0.86; HASH4 0.43/0.71; INF 0.71/0.86; LOOPS 0.57/0.86; PHI 0.57/0.71; VBAR_A 0.43/0.71; VBAR_B 0.71/1.00; ZBAR 0.43/0.71
+  below every cell control's p05: False; inside every cell band: False -> VERDICT untestable at this n
+LOOPBAR: N=2 (dash 0), lettered n=2: e:1 u:1 -> untestable at this n (< 7)
+LL: N=1 (dash 0), lettered n=1: e:1 -> untestable at this n (< 7)
+CROSS: N=1 (dash 0), lettered n=1: p:1 -> untestable at this n (< 7)
+ZHOOK: N=3 (dash 0), lettered n=3: a:1 e:1 r:1 -> untestable at this n (< 7)
