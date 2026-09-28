@@ -1,0 +1,39 @@
+code	runner_H35	blind_cells	blind_conf	verdict
+CARET	?	NONE	L	runner left open; blind ?
+CIRCLE	?			not in atlas_v2 list
+DEE	s	S	H	agree (first choice)
+DIAMOND	n	N	H	agree (first choice)
+ECAP		Que|E	M	not in runner H35 map
+EIGHT	o	O	H	agree (first choice)
+EIGHTBAR	?	CC	M	runner left open; blind cc
+ELOOP		T	L	not in runner H35 map
+EM	u	U/V	H	agree (first choice)
+ENN	s	S	H	agree (first choice)
+EPSILON	que			not in atlas_v2 list
+ESS	h	H	M	agree (first choice)
+FOUR	null	Nulla	H	agree (first choice)
+HCURL	n	N	H	agree (first choice)
+HOOK	?			not in atlas_v2 list
+JHOOK	m			not in atlas_v2 list
+LL	c	C	H	agree (first choice)
+MU	t	T	H	agree (first choice)
+NINE	?	E|Nulla	M	runner left open; blind e/null
+OMEGA2	a	G	M	DISAGREE
+OMEGABAR	a	A	H	agree (first choice)
+OMEGADOT	g	G	H	agree (first choice)
+PHI	g	G|F	L	agree (first choice)
+PI	d	D	H	agree (first choice)
+PLUS	b	B	H	agree (first choice)
+RHO		R|FF	M	not in runner H35 map
+SEVEN	?	L|I	M	runner left open; blind l/i
+SEVENB	i	I	H	agree (first choice)
+SIX	null	Nulla	H	agree (first choice)
+STROKE	nn	NN|E	L	agree (first choice)
+TEE	?	P	H	runner left open; blind p
+THETA	d	D	H	agree (first choice)
+THREE	l	P|L	M	agree (second choice)
+TLOOP		C	M	not in runner H35 map
+TWO	o	O|Nulla	M	agree (first choice)
+TWOFLAT	?	L|Nulla	M	runner left open; blind l/null
+UCURL	?	M|TT	L	runner left open; blind m/tt
+XCURL	r	R	H	agree (first choice)

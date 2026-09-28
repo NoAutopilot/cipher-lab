@@ -1,0 +1,35 @@
+code	cells	conf	note
+CARET	NONE	L	angular L-like stroke; no clear key form (faint resemblance to L)
+DEE	S	H	D-shape matches S second form
+DIAMOND	N	H	diamond matches N first form
+ECAP	Que|E	M	e-with-dot resembles Que epsilon; E second form less likely
+EIGHT	O	H	8 matches O first form
+EIGHTBAR	CC	M	8/dotted form on bar matches CC
+ELOOP	T	L	looped e-like; closest to T second form
+EM	U/V	H	m matches U/V first form
+ENN	S	H	barred A/N shape matches S first form
+ESS	H	M	5/S-like matches H
+FOUR	Nulla	H	4 matches Nulla
+HCURL	N	H	looped x matches N second form
+LL	C	H	barred ш matches C first form
+MU	T	H	mu matches T third form
+NINE	E|Nulla	M	9 matches E first form or Nulla 9
+OMEGA2	G	M	omega with dots matches G second form
+OMEGABAR	A	H	w over bar matches A first form
+OMEGADOT	G	H	omega with dots matches G second form
+PHI	G|F	L	barred loop; phi-like G first or F
+PI	D	H	pi matches D first form
+PLUS	B	H	+ matches B
+RHO	R|FF	M	delta/8-like loop matches R second or FF
+SEVEN	L|I	M	7 resembles L 7-forms or I second form
+SEVENB	I	H	flag-7 matches I second form
+SIX	Nulla	H	6 matches Nulla
+STROKE	NN|E	L	vertical stroke; possibly NN or E first
+TEE	P	H	crossed t matches P first form
+THETA	D	H	barred theta matches D second form
+THREE	P|L	M	3 matches P second (z/3) or L
+TLOOP	C	M	barred loop-d matches C second form
+TWO	O|Nulla	M	heavy 2 matches O second form; Nulla z possible
+TWOFLAT	L|Nulla	M	flat 2 matches L second form or Nulla z
+UCURL	M|TT	L	gamma-like curl matches M first form or TT
+XCURL	R	H	alpha/x curl matches R first form

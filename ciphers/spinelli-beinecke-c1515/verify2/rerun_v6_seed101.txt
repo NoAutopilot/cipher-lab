@@ -1,0 +1,5 @@
+signs 259: mapped to a value 222 (86%), null 29 (11%), unmapped 8 (3%)
+REAL map: mean log unigram -2.710 | mean log bigram -2.593 | phrase best window: distance 2 at 41: lagubmernat?onedispagnia
+unigram: shuffled mean -3.018 sd 0.068 p05 -3.125 p95 -2.912 | shuffles at or beyond real: 0/200
+bigram : shuffled mean -3.701 sd 0.213 p05 -4.084 p95 -3.370 | shuffles at or beyond real: 0/200
+phrase distance: shuffled mean 14.710 sd 0.952 p05 13.000 p95 16.000 | shuffles at or beyond real: 0/200

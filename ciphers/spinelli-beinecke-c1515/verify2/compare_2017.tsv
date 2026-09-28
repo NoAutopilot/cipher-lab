@@ -1,0 +1,12 @@
+line	decode	ref_2017	agree_real	shuf_mean	shuf_max	shuf_ge_real
+1	etlgdmitmethemadaa	etliditechemadama	0.71	0.03	0.35	0/200
+2	arge?itanonuolea?e?arehlagu	margeritanonuolearrettarelagu	0.76	0.11	0.28	0/200
+3	bmernat?onedispagnialthepim	bernationedispagniaetchepiu	0.81	0.07	0.26	0/200
+4	dintlinationesmmosraalcon?e	dinclinationesimosraalconte	0.89	0.09	0.30	0/200
+5	palat?noteatal?trch	palatinocheadaltri	0.61	0.02	0.28	0/200
+6	aciuocaroneoettrouola	arriuocaroneloettrouola	0.87	0.12	0.30	0/200
+7	resolutionedcostoromiiore	resolutionedicostoromiliore	0.93	0.12	0.26	0/200
+8	dique?oelpaladomanaauua	diqueloelpapadomandaua	0.82	0.08	0.27	0/200
+9	seebisognioelguernatoredibre	seebisognioelgubernatoredibressa	0.88	0.14	0.25	0/200
+10	uaandahaisuioreri	andaraisuieri	0.62	-0.16	0.15	0/200
+ALL			0.809	0.081	0.183	0/200

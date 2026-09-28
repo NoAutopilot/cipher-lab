@@ -38,4 +38,87 @@ Our decode is an independent re-decipherment under the same published key (the r
 Cipherbrain thread), so it is at most a corroboration of the 2017 reading; the rest of this audit grades what, if
 anything, is ours beyond it.
 
-(Sections 2-5 follow: key re-derivation, controls, reading against the 2017 text, verdict.)
+
+### 2. Key re-derivation, blind (one Opus vision subagent, 2 image reads; the verifier's own 2 image reads were for section 1)
+
+The subagent saw only the 2016 plate's key table (`verify2/plate_key_table.png`, a crop of Ill. 1), `glyphs/atlas_v2.png`
+and the atlas code list, told to ignore the atlas's "(key: ...)" hints from the superseded Tomokiyo key, and never
+opened `keys/` or `passes/`. Output `verify2/blind_keymatch.tsv` (34 codes: 18 H, 11 M, 5 L); comparison with the
+runner's H35 map (`keys/key_domnina_2016_atlasmap.tsv`) in `verify2/keymap_compare.tsv`.
+
+| comparison | count |
+|---|---|
+| runner-valued codes the blind pass also matched | **22 of 23 agree** (21 first choice, THREE l as second choice after P) |
+| disagreement | 1: OMEGA2 (runner a, M; blind G, M) -- both at M; 2 signs in the letter |
+| codes the runner left open (lumped) | 7: blind picks one of the runner's own candidates for NINE (e/null), TEE (p), EIGHTBAR (cc); SEVEN blind l/i vs runner e/i (the i half agrees); TWOFLAT, UCURL, CARET no comparison |
+| in one list only (naming drift between atlas_v2 and the H35 map) | 8 (CIRCLE, EPSILON, HOOK, JHOOK; ECAP, ELOOP, RHO, TLOOP) |
+
+The runner's key map is reproduced blind at the atlas-code level. The H38/H40 sub-code shape splits were not
+re-derived (budget: they take per-sign crops, 116 + 43 signs); section 4 tests them against the known answer instead.
+
+### 3. Controls re-run from the scripts on disk
+
+| test | runner (NOTES H40/H39) | this session | files |
+|---|---|---|---|
+| `passes/key_domnina_test.py` v6 map, 200 shuffles, seed 7 | unigram -2.710 (0/200), bigram -2.593 (0/200), phrase distance 2 at 41 (0/200; shuffled mean 14.68) | **identical, every figure** | `verify2/rerun_v6_seed7.txt` |
+| same, seed 101 (a fresh seed) | -- | unigram 0/200 (mean -3.018), bigram 0/200 (mean -3.701), phrase 0/200 (mean 14.71) | `verify2/rerun_v6_seed101.txt` |
+| `tools/judge_plaintext.py specs/spinelli-beinecke-c1515.json --file reading_letters_v6.txt` | FAIL -1.334 vs real_p05 -0.968, null_p99 -1.752, N 224 | **identical** (FAIL) | `verify2/judge_rerun.json` |
+| `tools/decode_key.py ... --check` | exit 0 | exit 0 ("reading up to date", H 229 M 22 U 8) | -- |
+
+**Reproduced.** The ten-shuffle judge family control was not re-run; the known-answer control below is stronger.
+
+### 4. The reading, line by line, against the 2017 known answer
+
+`verify2/compare_2017.py` (regenerates `verify2/compare_2017.tsv`): the committed v6 decode against the 2017 Cipherbrain
+reading (Norbert #7 p.1, Thomas #10 p.2), with the 2017 text's [bracketed] insertions and ?? dropped and u/v, i/j folded
+to the decode's convention (rule 3, PX-BRODEC: one convention before diffing). Agreement = 1 - edit distance / reference
+length. Control: the same statistic on 200 decodes under the values permuted among the mapped codes (seed 5). This
+replaces the brief's 20-permutation model judgement: once a published plaintext exists, a scripted known-answer
+diff is the stronger instrument (logged as a deviation from the brief).
+
+| line | v6 decode | 2017 reading (normalised) | agree | shuffled mean / max | verdict |
+|---|---|---|---|---|---|
+| p1 1 | etlgdmitmethemadaa | et li dite che madama | 0.71 | 0.03 / 0.35 | patchy |
+| p1 2 | arge?itanonuolea?e?arehlagu | Margerita non uole a(cc/rr)ettare la gu- | 0.76 | 0.11 / 0.28 | patchy |
+| p1 3 | bmernat?onedispagnialthepim | -bernatione di Spagnia et che piu | 0.81 | 0.07 / 0.26 | continuous (one intruding m; "lthe" for "etche") |
+| p1 4 | dintlinationesmmosraalcon?e | d'inclinatione si mos[t]ra al conte | 0.89 | 0.09 / 0.30 | continuous |
+| p1 5 | palat?noteatal?trch | Palatino che ad altri | 0.61 | 0.02 / 0.28 | patchy |
+| p1 6 | aciuocaroneoettrouola | arriuo caro nelo et trouo la | 0.87 | 0.12 / 0.30 | continuous |
+| p1 7 | resolutionedcostoromiiore | resolutione di costoro mi[g]liore | 0.93 | 0.12 / 0.26 | continuous |
+| p1 8 | dique?oelpaladomanaauua | di quelo el Papa domandaua | 0.82 | 0.08 / 0.27 | continuous letters, mis-segmented by the runner |
+| p2 1 | seebisognioelguernatoredibre | se e bisognio el gubernatore di Bressa | 0.88 | 0.14 / 0.25 | continuous |
+| p2 2 | uaandahaisuioreri | andarai sui ??eri | 0.62 | -0.16 / 0.15 | patchy |
+| all | | | **0.809** | 0.081 / 0.183 | 0/200 shuffles at or above |
+
+Every line beats every one of its 200 shuffles. The runner's "continuous" list (3, 7, 8, 9) is confirmed and lines 4
+and 6 (0.89, 0.87) belong in it at the letter level; 1, 2, 5 and 10 are patchy, as the runner said. The Italian is
+period Tuscan-Italian of the 1510s (gubernatione, bisognio, costoro, quelo) and consistent with the leaf's own clear
+text, which names "il gobernatore di Brescia mio signore et amico": the cipher's p2 "el gubernatore di Bressa" is the
+same office. The runner's and H42's word-level interpretations are wrong where the 2017 reading is fuller: p1 8
+"el pala[tino] doman[d]a" / H42 "el pala domana (tomorrow)" is **"el Papa domandava"** (the decoded l in "pala" is
+the key's p misread); p1 5 "palat[i]no te a tal" is **"Palatino che ad altri"**; p1 1 "et ... the ma" is **"et li dite
+che madama"**; p2 2 "anda ha" is **"andarai"**. The subject the runner did not reach -- **Madama Margherita** (Margaret of
+Austria) not accepting the governance of Spain, and more inclination shown to the Count Palatine -- is in the 2017 text.
+
+### 5. Verdict
+
+| field | value |
+|---|---|
+| Claim scope | **recovered-passages**, as an independent re-decipherment of an already-published reading; nothing outward-facing |
+| Key source | **published** (Domnina 2015 Fig. 1, corrected 2016 Ill. 1); the atlas-to-cell map is ours and reproduced blind 22/23 |
+| Novelty class | **N0** -- this leaf's cipher passages were deciphered with the same key in the Cipherbrain comments of 24 March 2017 (Norbert #7, Thomas #8-#13); text: **known** |
+| Token grades endorsed | H 229 / M 22 / U 8 as a grading of **provenance** (the value is read from the published key via two blind passes), not of correctness: against the 2017 text the decode's letters agree 0.81 overall, so some H letters are wrong (e.g. p1 8 "pala" for "papa", p1 1 "lgdmit" for "lidite"). No C: the 2017 reading is a modern decipherment, not a period key source; it may be used as C-grade known plaintext only with that stated. |
+| Reproducibility | `tools/decode_key.py --check` exit 0; the controls reproduce exactly (section 3) |
+| **Safe sentence** | "Using Ekaterina Domnina's published key (2015, corrected 2016), we independently re-deciphered the two cipher passages of Tommaso Spinelli's letter of 7 September 1519 (Beinecke GEN MSS 109); they had already been deciphered with the same key by readers of Klaus Schmeh's Cipherbrain blog on 24 March 2017, and our letter-level decode agrees with that reading at 81% (200 shuffled-key decodes: mean 8%, best 18%)." |
+| **Unsafe sentence** | "We have read the Spinelli cipher letter for the first time" / "a previously unread passage" / "the rest of the letter has no published reading" (Bourdeau's catalogue sentence, and INTAKE-SPINELLI's "Not found-solved", are both overtaken by the 2017 thread). |
+
+**Postmortem.** Failure: rule 1's named family "the comment threads of the list posts (Cryptiana blog, Cipherbrain)"
+was never searched for this target; INTAKE-SPINELLI's gate and 40-odd campaign steps rested on Tomokiyo's one phrase and
+Bourdeau's "read in part", both of which postdate or omit the 2017 thread. One web search on sender, recipient and date
+found it. Files that over-claim and need correcting by their owners (not edited here, per the brief): NOTES.md
+"Gate verdict (Job 0)" ("Not found-solved"; "Tomokiyo does not print any reading ... The rest of Gen. MSS 109 has no
+published reading" is true of Tomokiyo/Bourdeau but not of the leaf), the reading.txt header (should cite the 2017
+reading), `reading_words.tsv` glosses "domana = tomorrow" and "pala" (the 2017 text reads "el Papa domandava").
+No SECOND-OPINIONS-QUEUE row (N0). A contribution remains possible and is the orchestrator's to decide: Bourdeau's
+catalogue entry for GEN MSS 109 says "Read in part"; the Cipherbrain 2017 thread is a fuller prior reading it could cite.
+Requests this session are listed in section 1; vision: 2 image reads by the verifier, 2 by the blind subagent.
