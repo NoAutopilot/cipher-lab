@@ -1,0 +1,8 @@
+id	cipher_type	symbol_sets	match_to_H16a_design
+7259	Simple substitution, Homophonic substitution, Nomenclatures	Graphic signs, Numerical	no (graphic signs present)
+7308	Simple substitution, Nomenclatures	Alphabet, Numerical	no (alphabet symbols; no homophones)
+7358	Simple substitution, Homophonic substitution, Nomenclatures	Graphic signs, Alphabet, Numerical	no
+7362	Simple substitution, Homophonic substitution, Nomenclatures	Graphic signs, Alphabet, Numerical	no
+7368	Simple substitution, Nomenclatures	Graphic signs, Alphabet, Numerical	no
+7390	Simple substitution, Nomenclatures	Alphabet	no
+7391	Simple substitution, Nomenclatures	Alphabet	no

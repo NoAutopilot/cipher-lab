@@ -2,7 +2,7 @@ target: espagnol142-mercy-1648
 goal: a verified reading of the letter at N3 or better after two audits
 started: 2026-09-27 20:29 UTC
 daily_budget_usd: 120
-spent_today_usd: 23.00
+spent_today_usd: 24.00
 spent_day: 2026-09-28
 closed:
 
@@ -84,7 +84,7 @@ closed:
 | H17 | 13 | The Brussels SEE "chiffres 1647-98" register (AGR, Secretairerie d'Etat et de Guerre inv.nr. 2; DECODE 958-965, images account-gated): H16 shows the target's key is of that series' own style (vowel-only homophones in two-digit numbers plus a small nomenclature); a reproduction of the register's eight keys, read against key.tsv, is the one document that could give this letter its period key. | doc: AGR SEE inv.nr. 2 reproduction, added to the S3 form (ASKS row 82) | 0 | open | |
 | H18 | 4 | Finish the DECODE key listing: `tools/decode_list.py --record-type key --status n/a` from page 59 to 128 (about 70 requests, a second session's allowance; the tool has no --start-page, add one), merge with sources/decode/keys-all-2026-09-28.tsv, re-run the Spanish / 1640-1660 filter, and for any Brussels, Madrid or Vienna hit fetch its RecordsView page (login-free) and compare its stated design with H16(a). | nobody | 2 | open |  |
 | H19 | 3 | Register the recovered design in the shared registers the close-out requires (CLAUDE.md 8a: KEY-OFFICES.tsv, KEY-DESIGN.tsv; `tools/key_design.py`, `tools/design_prior.py`): office Spanish Netherlands / Leopold Wilhelm's secretariat 1648, design "homophonic, 3 homophones per vowel, 1 per consonant, numbers 2-34, small numeric nomenclature 48-72 + boxed 101", key `ours` at N3 -- and run design_prior.py to see which other open Spanish targets share the prior. | nobody | 1 | done | KEY-OFFICES.tsv row added, KEY-DESIGN.tsv rebuilt (--check 0), design_prior: homophonic 0.22 first, nearest key its own (NOTES.md "Campaign step H19") |
-| H20 | 5 | The seven Florentine ASF SIIVol6 Spanish keys (DECODE 7259, 7308, 7358, 7362, 7368, 7390, 7391; dated 1501-1700 at volume level): login-free RecordsView fetch of each (7 requests) to read their stated cipher type / symbol sets / nomenclature size against H16(a)'s design, and only for a stated match a thumbnail view (at most 4). Low prior (Florence, not Brussels), cheap. | nobody | 1 | running session_01V7xEY9JxjCxiXnQLtjFnfL |  |
+| H20 | 5 | The seven Florentine ASF SIIVol6 Spanish keys (DECODE 7259, 7308, 7358, 7362, 7368, 7390, 7391; dated 1501-1700 at volume level): login-free RecordsView fetch of each (7 requests) to read their stated cipher type / symbol sets / nomenclature size against H16(a)'s design, and only for a stated match a thumbnail view (at most 4). Low prior (Florence, not Brussels), cheap. | nobody | 1 | done | none of the seven matches: all declare graphic-sign and/or alphabet symbol sets, five are simple substitution (sources/decode/h20-2026-09-28/summary.tsv) |
 
 ## Log
 
@@ -103,3 +103,4 @@ closed:
 2026-09-28 01:0x UTC | session_01V7xEY9JxjCxiXnQLtjFnfL | H16 | 3 | partial: 958 is a design sibling (vowel-only homophones, two-digit numbers, small nomenclature -- key.tsv has exactly 3 per vowel, 1 per consonant), MERCY-KEY's ruling-out reason withdrawn, symbol-set difference stands; listing crawl 45% (2,850/6,351 keys), 39 Spanish, none of 1640-1660 from Brussels/Madrid in the slice. --next gives none again (doc rows only): H17 (doc: SEE inv.nr. 2, ASKS 82), H18 finish the listing (rank 3), H19 register the design in KEY-DESIGN.tsv (rank 4), H20 the seven Florentine keys' RecordsView pages (rank 5). Next H18.
 2026-09-28 00:51 UTC | session_01V7xEY9JxjCxiXnQLtjFnfL | re-rank | 0 | H19 (register the design, disk only) moved above H18 (70 more DECODE requests, a tool option to add): this session is at about 600k context and H18 is better started by a fresh runner with its own request allowance.
 2026-09-28 00:5x UTC | session_01V7xEY9JxjCxiXnQLtjFnfL | H19 | 1 | done: design registered (KEY-OFFICES.tsv row, KEY-DESIGN.tsv rebuilt, design_prior ranks homophonic first). Next H20 (seven Florentine key records, login-free pages), then this runner stops for context.
+2026-09-28 00:5x UTC | session_01V7xEY9JxjCxiXnQLtjFnfL | H20 | 1 | done: seven Florentine keys, stated designs all graphic-sign/alphabet, none the all-numeric vowel-homophone design; no thumbnails needed. Runner stops here for context (about 630k): next H18 (finish the DECODE key listing, pages 59-128) for a fresh runner; doc rows H7, H8, H12, H17 wait on ASKS 60/81/82 and LOCAL-QUEUE.

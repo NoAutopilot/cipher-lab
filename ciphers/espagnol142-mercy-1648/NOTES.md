@@ -1524,3 +1524,13 @@ key's row (office: Spanish Netherlands government, the governor-general's secret
 fine ranking homophonic 0.22 < nomenclator 0.25 < syllabary 0.34 < alphabet substitution 0.40; nearest key is this
 target's own (d=0.01), next Thurloe's Johnson nomenclator (synthetic, d=0.16). The prior agrees with the design on
 file. Disk only. No reading change, no grade change.
+
+## Campaign step H20 (2026-09-28 00:52-00:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** The seven Archivio di Stato di Firenze "SIIVol6" Spanish-language keys H16's listing
+slice returned for 1640-1660 (DECODE 7259, 7308, 7358, 7362, 7368, 7390, 7391): their RecordsView pages fetched
+login-free (7 requests, 1.6 s apart; saved in `sources/decode/h20-2026-09-28/`, parsed in `summary.tsv`). Every one
+declares graphic signs and/or alphabet letters among its symbol sets (7259: graphic signs + numerical; the rest
+alphabet with or without graphic signs), and five of seven are simple rather than homophonic substitution; none is
+the all-numeric, two-digit, vowel-homophone design of `key.tsv` (H16 a). No thumbnail was needed. A stated-design
+negative on seven records, not a key comparison. No reading change, no grade change.
