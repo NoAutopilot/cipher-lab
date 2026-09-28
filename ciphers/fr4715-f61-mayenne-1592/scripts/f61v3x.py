@@ -21,6 +21,11 @@ from collections import Counter, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(f"{HERE}/../../.."); sys.path.insert(0, HERE)
 from f61gloss import reconcile_gloss, TOOL
 FAM = f"{HERE}/../family/passes"; BANDS = [f"L0{i}" for i in range(1, 8)]
+# H35 (28 Sept 2026, runner session_01J8hunWPcE7QYcpCx59CUHV): --prefix P reads family/passes/P_signsA/B.tsv (and P_glossA/B.tsv
+# unless --signs-only) and writes scripts/f61v3x_P_result.txt; --signs-only reconciles the two sign passes alone (agreement vs
+# the 0.80 gate) and writes the reconciled draft to family/passes/P_draft.tsv, no gloss, no key. Defaults reproduce H29.
+PREFIX = sys.argv[sys.argv.index("--prefix") + 1] if "--prefix" in sys.argv else "f108v3x"
+SIGNS_ONLY = "--signs-only" in sys.argv
 def strip_plain(src, dst):
     rows = [r for r in csv.DictReader((l for l in open(src) if not l.startswith("#")), delimiter="\t") if r["sign"] != "PLAIN"]
     with open(dst, "w") as f:
@@ -34,14 +39,24 @@ def gloss_words(path):
         by[r["line"]].append((int(str(r["segment"]).lstrip("s")), float(r["x0_px"]), r["word"], r["conf"]))
     return {b: sorted(v) for b, v in by.items()}
 def main():
-    d = tempfile.mkdtemp(prefix="f61v3x_"); out = ["H29: fr.3983 f.108v at 3x, 7 cipher rows"]
-    na = strip_plain(f"{FAM}/f108v3x_signsA.tsv", f"{d}/A.tsv"); nb = strip_plain(f"{FAM}/f108v3x_signsB.tsv", f"{d}/B.tsv")
+    d = tempfile.mkdtemp(prefix="f61v3x_"); out = ["H29: fr.3983 f.108v at 3x, 7 cipher rows" if PREFIX == "f108v3x" else f"H35 ({PREFIX}): fr.3983 f.108v at 3x on the corrected cut, 7 cipher rows, sign passes only"]
+    na = strip_plain(f"{FAM}/{PREFIX}_signsA.tsv", f"{d}/A.tsv"); nb = strip_plain(f"{FAM}/{PREFIX}_signsB.tsv", f"{d}/B.tsv")
     r = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", f"{d}/A.tsv", f"{d}/B.tsv", "--out-dir", d, "--method", "nw"], capture_output=True, text=True)
     if r.returncode: raise SystemExit(r.stdout + r.stderr)
     summ = next(l for l in r.stdout.splitlines() if l.startswith("lines")); out.append("signs: " + summ + f" (PLAIN rows dropped: A {na} signs, B {nb})")
     agree_signs = float(summ.split("agree")[1].split("=")[1].split("%")[0]) / 100
     seq = defaultdict(list)
     for row in csv.DictReader(open(f"{d}/ciphertext_draft.tsv"), delimiter="\t"): seq[row["line"]].append(row["sign"])
+    if SIGNS_ONLY:
+        import shutil; shutil.copy(f"{d}/ciphertext_draft.tsv", f"{FAM}/{PREFIX}_draft.tsv")
+        inv = Counter(c for v in seq.values() for c in v)
+        out.append("draft -> family/passes/" + PREFIX + "_draft.tsv; class inventory: " + " ".join(f"{c}:{n}" for c, n in inv.most_common()))
+        out.append("ZHOOK per band: " + " ".join(f"{b}:{seq[b].count('ZHOOK')}" for b in BANDS))
+        out.append(f"GATE H35 (signs only): {agree_signs:.3f} (>= 0.80 {'ok' if agree_signs >= 0.80 else 'NO'}) -> {'PASS' if agree_signs >= 0.80 else 'FAIL'}; no gloss, no key (the gloss of this hand needs a person, H50)")
+        txt = "\n".join(out) + "\n"; res = f"{HERE}/f61v3x_{PREFIX}_result.txt"
+        if "--check" in sys.argv:
+            okc = os.path.exists(res) and open(res).read() == txt; print("fresh" if okc else "STALE"); sys.exit(0 if okc else 1)
+        open(res, "w").write(txt); print(txt, end=""); return
     A, B = gloss_words(f"{FAM}/f108v3x_glossA.tsv"), gloss_words(f"{FAM}/f108v3x_glossB.tsv")
     import f61gloss; f61gloss.BANDS = BANDS
     rec = reconcile_gloss(A, B, out)
