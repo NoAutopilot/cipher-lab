@@ -2822,3 +2822,13 @@ instrument (H136), not a weight on this one. No reading, no class change.
 
 `scripts/H66_PAGE.md` gains a section "H108-H134" (the f.108r draft, the retired loop instrument, the beam's known-answer
 figures, the H124 correction and the sequence-gain results, HASH4, the committed predictions) and a files row. No new claim.
+
+## Campaign step H137 (28 Sept 2026, 19:18-19:22 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61score_gloss108.py`, written and pushed before ASKS 88 is answered: reads the person's `scripts/gloss108_person.tsv`
+(the person pack's format), maps pass-A sign numbers to the H108 draft (L04/L05 by segment and x through the reconciliation
+task; L06 by nearest x within 90 px, since pass A read the half-cut row), places each gloss word on its covered signs with
+F61-CAL's DP, and scores the four committed predictions (H107, H112 s108/s109, H120 beam) letter by letter where the gloss
+letter is in the sign's pair, beside first-letter and 0.5 baselines. Today it prints "waiting". `--selftest` builds a
+synthetic gloss from H120's own letters (19 words): H120 scores 71/71 and the selftest PASSes; the other predictions'
+numbers in that run mean nothing (the synthetic gloss is H120's). H64 now only needs the file. No reading, no class change.
