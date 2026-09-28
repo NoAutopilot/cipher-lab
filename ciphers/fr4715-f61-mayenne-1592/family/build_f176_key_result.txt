@@ -1,0 +1,20 @@
+rows L01-L12: 788 signs, consensus 649 (0.82); clear lines L01-L20, 1365 letters, N 630
+whole-stretch match: fol. 177r 0.586 vs wrong f.184r 0.365 (margin +0.221)
+
+class	v4 set	true: letters (n)	wrong: letters (n)	in-set share true / wrong
+PHI	e/r	e81 r33 a4 p3 i2 l2 (130)	e59 r20 o7 n7 m6 u5 (147)	0.88 / 0.54
+4TRI	a/c/n/p/t	a34 n23 p5 c4 t3 e3 (78)	n15 t10 a8 e7 r7 c5 (78)	0.88 / 0.54
+VBAR_B	s	s41 f4 z2 b2 u1 t1 (53)	s12 e9 i4 o4 n3 u3 (53)	0.77 / 0.23
+EBR	a/l/s	l38 a4 i2 x1 s1 e1 (47)	s7 t5 a5 o4 i4 n3 (44)	0.91 / 0.27
+INF	u	u32 e2 d2 n1 i1 h1 (39)	u9 e7 i3 o3 r2 t2 (35)	0.82 / 0.26
+DBL	e/r/u	o21 r4 e3 b3 n2 i2 (37)	e13 u8 r6 i5 l2 t1 (41)	0.22 / 0.66
+VBAR_A	s/t	t23 e3 i2 o2 s1 c1 (35)	s9 t6 e5 m4 l4 r2 (41)	0.69 / 0.37
+4STEM	a/c/e/n	p11 c6 n3 e2 u1 a1 (24)	e7 n5 u4 a4 i2 t1 (25)	0.50 / 0.64
+HASH4	d/i/q	d15 q4 i1 e1 n1 (22)	i7 s4 d3 n2 o2 c1 (24)	0.91 / 0.46
+OTHER	-	e3 q1 f1 (5)	n2 e1 t1 s1 r1 (6)	0.00 / 0.00
+BETA	m/s	m3 r1 (4)	s2 i1 (3)	0.75 / 0.67
+SBS	b/e/o	e3 r1 (4)	o1 e1 (2)	0.75 / 1.00
+CH	e/m	t2 l1 (3)	m3 (3)	0.00 / 1.00
+CA	-	l1 (1)	r1 (1)	0.00 / 0.00
+
+rare CA: true top l 1 of 1, wrong-text count of l 0 -> not reported

@@ -3314,3 +3314,48 @@ merge is a verifier's.
 **Time correction (runner 6, 22:43 UTC by `date -u`):** the H169-H175 headings and CAMPAIGN log lines of this runner first carried
 times estimated by the runner (up to 40 minutes ahead of the clock, rule 6); they are now replaced by the commits' own times
 (`git log`, one clock). No result changes.
+
+## Campaign step H177a (28 Sept 2026, 22:43-22:53 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- key rows from f.176r/fol. 177r, stage 1 (rows L01-L12)
+
+Pre-registered in `family/passes/PROMPTS_f176_f175.md` section H177a (eb601579). The builder `family/build_f176_key.py` was pushed
+(491b48f8) before the stage-1 rows were read. Natives: canvases 328, 330 and 331 fetched once each (3 Gallica requests; 327 and 329 on
+hand), scratch only. Band boxes are committed (`family/sheets/f176r_full/`: 47 cipher rows; `family/sheets/f177r_full/`: 34 clear
+lines, centres set by eye on a ruler because line finding failed on the underlines). The crops are not committed (the folder is over
+30 MB). Three Opus vision calls: blind sign passes A/B of f.176r L05-L12 (`passes/f176r_signs{A,B}_L05-L12.tsv`, 519 / 523 signs,
+m/l; the readers could not separate EBR_A from EBR_B and coded every bracket EBR_B), and a blind read of fol. 177r L09-L20
+(`passes/f177r_clearA_L09-L20.tsv`, mostly l-grade). With H170's L01-L04 passes and H175's L01-L08 read, stage 1 covers f.176r
+L01-L12 against fol. 177r L01-L20.
+
+Method (the builder's docstring). A∩B consensus signs only (82%; a disputed column never matches and never yields a row). Key v4's
+letter sets decide only where signs and letters line up; the letter of each class comes from the period decipherment. Control: the
+same pipeline on a wrong clear (fr.3984 f.184r, same writer and day, same N). Result: `family/build_f176_key_result.txt`; rows
+`family/key_period_f176.tsv` (leaf `fr.3984 f.176r/f.177r`, `--check`).
+
+**Whole stretch (788 signs, N 630 letters): fol. 177r 0.586 vs the wrong text 0.365, margin +0.221.**
+
+| class (passes' code) | v4 set | fol. 177r (true) | f.184r (wrong) | in-set share true / wrong |
+|---|---|---|---|---|
+| PHI | e/r | e 81, r 33 (130) | e 59, r 20 ... (147) | 0.88 / 0.54 |
+| 4TRI (4HOOK merged, no atlas code) | a/c/n/p/t | a 34, n 23, p 5, c 4, t 3 (78) | n 15, t 10, a 8 ... | 0.88 / 0.54 |
+| VBAR_B | s | **s 41** (53) | s 12, e 9 ... | 0.77 / 0.23 |
+| EBR | a/l/s | **l 38**, a 4 (47) | s 7, t 5, a 5 ... | 0.91 / 0.27 |
+| INF | u | **u 32** (39) | u 9, e 7 ... | 0.82 / 0.26 |
+| DBL | e/r/u | **o 21**, r 4, e 3, b 3 (37) | e 13, u 8, r 6 ... | 0.22 / 0.66 |
+| VBAR_A | s/t | **t 23**, s 1 (35) | s 9, t 6 ... | 0.69 / 0.37 |
+| 4STEM | a/c/e/n | **p 11, c 6**, n 3 (24) | e 7, n 5 ... | 0.50 / 0.64 |
+| HASH4 | d/i/q | **d 15, q 4**, i 1 (22) | i 7, s 4, d 3 ... | 0.91 / 0.46 |
+| BETA | m/s | m 3 (4) | s 2 (3) | small |
+| C43, ZHOOK | a/n; none | **absent from the consensus**: pass A codes ZHOOK where pass B codes C43 on the same signs | | |
+| CA, CROSS, LL, LOOPBAR | none | 0-1 consensus occurrences | | |
+
+What this is. On f.176r, in Desportes's hand, the period decipherment gives single letters where v4 carries a merged pair. **VBAR_A =
+t** (v4 s/t: the VBAR split had stopped at 1/2, KEY.md v4). **EBR = l.** **HASH4 = d/q** (as H162 found on f.108v/r). **4STEM = p/c**
+(v4 a/c/e/n). **DBL = o**, the side-by-side glyph (v4's SBS relabel, H26/H51). PHI stays a genuine e/r cell. The same classes are flat
+under the wrong text.
+
+Against f.61r's 59 two-way tokens (`f61_decode_period_v4_frac0.1_sbs.tsv`), descriptive: VBAR_A t/s 6 tokens -> t on this leaf; EBR l/s/a
+4 -> l; BETA m/s 2 -> m (4 signs only); HASH4 d/q/i 1 -> d/q; 4STEM n/a/c/e 1 -> c/p. That is about 12-14 of 59 leaning to one letter,
+with PHI e/r (17) confirmed two-way. C43 a/n (9 tokens) and the rare class ZHOOK are exactly the signs the two passes split, so they are
+undecided until H178. Not decided here: any f.61 reading. A class on f.61 is f.61's reader's class; that f.176r's VBAR_A is f.61's
+VBAR_A is the atlas's claim, not tested here. Nothing is merged into v4 (a verifier's). Stage 1 is a third of f.176r (12 of 47 rows)
+and none of f.176v.
