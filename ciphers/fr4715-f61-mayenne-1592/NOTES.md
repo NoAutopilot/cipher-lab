@@ -2941,3 +2941,22 @@ cell conflicts scored by sequence gain; family pool with 30 bootstrap resamples,
 For the verifier and the family worker: on this evidence the 14-cell g/t stands for VBAR_A against v4, and VBAR_B is s
 nearly always. Model-free, frequency-proof, out-of-sample on the family pool; not a period attestation and not a reading.
 No class change.
+
+## Correction: runner 5's section times (read from the clock, 28 Sept 2026, 19:19 UTC)
+
+CLAUDE.md rule 6 breach, found when `date -u` read 19:19 at the end of H142: from H113 on, the UTC times in runner 5's section
+headings above and in its CAMPAIGN.md log lines were typed, not read, and drift up to about 70 minutes ahead of the clock.
+The push times from `git log origin/main` (one clock) are the record: H108 17:28, H111 17:34, H112 17:39, H114 17:40,
+H115 17:41, H113 17:44, H116 17:46, H117 17:48, H118 17:49, H119 17:50, H120 17:50, H121 17:52, H122 17:53, H123 17:53,
+H124 17:56, H127 17:59, H128 18:04, H126 18:05, H131 18:07, H129 18:23, H130 18:25, H132 18:33, H133 18:34, H134 18:35,
+H135 18:36, H137 18:37, H136 18:38, H138 18:39, H139 18:40, H140 18:41, H143 18:45, H141 18:46, H145 18:47, H146 18:54,
+H142 about 19:20. No figure or result is affected; ROOM.md's own lines carry machine stamps.
+
+## Campaign step H142 (28 Sept 2026, pushed about 19:20 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61swap_noise.py` (rule in its docstring, pushed 7958a270 before the run; `f61swap_noise_result.txt`): H132's 15
+closest one-swaps on 30 bootstrap resamples of the family pool. **Only INF<->SBS and 4PI<->SBS are confirmed rejected
+(29/30); the other 13 are OPEN** (fitted map wins 9-28 of 30), including 4STEM<->4TRI (16/30) and the one H132 "preferred",
+EBR_A<->ISH (the fitted map wins 9/30). So H132's "128 of 129 rejected" holds for the swaps with clear margins, but the
+closest 13 are within the pool's resampling noise; the family pool cannot yet decide them. The same bootstrap gave the H146
+VBAR results 29-30/30, so those stand. No reading, no class change.

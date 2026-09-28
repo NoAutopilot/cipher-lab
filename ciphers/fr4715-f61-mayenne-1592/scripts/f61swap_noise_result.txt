@@ -1,0 +1,15 @@
+EBR_A(f/s)<->ISH(l/y): fitted wins 9/30 -> OPEN
+SBS(b/o)<->ZHOOK(i/x): fitted wins 27/30 -> OPEN
+INF(h/u)<->ZHOOK(i/x): fitted wins 19/30 -> OPEN
+4STEM(a/n)<->4TRI(c/p): fitted wins 16/30 -> OPEN
+ISH(l/y)<->ZHOOK(i/x): fitted wins 20/30 -> OPEN
+ISH(l/y)<->SBS(b/o): fitted wins 24/30 -> OPEN
+4STEM(a/n)<->SBS(b/o): fitted wins 22/30 -> OPEN
+4STEM(a/n)<->ZHOOK(i/x): fitted wins 20/30 -> OPEN
+BETA(m/z)<->EBR_A(f/s): fitted wins 23/30 -> OPEN
+4PI(d/q)<->BETA(m/z): fitted wins 28/30 -> OPEN
+4STEM(a/n)<->INF(h/u): fitted wins 20/30 -> OPEN
+EBR_A(f/s)<->ZHOOK(i/x): fitted wins 27/30 -> OPEN
+EBR_A(f/s)<->SBS(b/o): fitted wins 28/30 -> OPEN
+INF(h/u)<->SBS(b/o): fitted wins 29/30 -> CONFIRMED REJECTED
+4PI(d/q)<->SBS(b/o): fitted wins 29/30 -> CONFIRMED REJECTED
