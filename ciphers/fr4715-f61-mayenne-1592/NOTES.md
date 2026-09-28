@@ -1903,7 +1903,7 @@ free-sort negatives (H71 e/r, H73 a/n) beside its four PASSes (H65 SBS o, H67 SB
 thin): it does not manufacture a letter split on a shared-symbol cell, which is what the PASSes needed. No reading, no
 class change.
 
-## Campaign step H76 (28 Sept 2026, 14:54-14:57 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+## Campaign step H76 (28 Sept 2026, 14:54-14:55 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
 
 For the verifier page (H66): `scripts/f61attest.py` (a sibling of f61skeleton.py rather than an option on it, so the
 H58 skeleton is untouched; both `--check` fresh) tags every lettered or paired position of `scripts/f61_skeleton.txt`
