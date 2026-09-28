@@ -24,6 +24,7 @@ for r in rows:
     if r["letter"] != "-": tot[(r["class"], r["leaf"])] += int(r["n"])
 for r in rows:
     cl = r["class"]; s = r.get("source", "period")
+    if cl in ("OTHER", "PLAIN", "DASH"): continue   # the readers' uncoded sign (a word code on de Diou's hand) is not a key class
     if r["letter"] != "-" and (s == "rare-S" or (int(r["n"]) >= 2 and int(r["n"]) >= FRAC * tot[(cl, r["leaf"])])):
         key[cl][r["letter"]] = key[cl].get(r["letter"], 0) + int(r["n"]); leaves[cl][r["letter"]].add(r["leaf"]); src[cl][r["letter"]] = s
 A = {(r["line"], r["pos"]): r for r in csv.DictReader(open(f"{P}/{pre}_signsA.tsv"), delimiter="\t")}

@@ -4,7 +4,7 @@ L01	2	LOOPS	u/o	M
 L01	3	C43	a/n	M
 L01	4	C43	a/n	M
 L01	5	VBAR_A	t/s/f	M
-L01	6	OTHER	e/q/i/p/r/s/t	M
+L01	6	OTHER		-
 L01	7	EBR_B	l	C+
 L01	8	C43	a/n	M
 L01	9	EBR_B	l	C+
@@ -13,7 +13,7 @@ L01	11	VBAR_A	t/s/f	M
 L01	12	VBAR_A	t/s/f	M
 L01	13	PHI	e/r/o	M
 L01	14	PHI	e/r/o	M
-L01	15	OTHER	e/q/i/p/r/s/t	M
+L01	15	OTHER		-
 L01	16	C43	a/n	M
 L01	17	LOOPS	u/o	M
 L01	18	PHI	e/r/o	M
@@ -26,8 +26,8 @@ L01	24	H24	i/j/y	M
 L01	25	VBAR_A	t/s/f	M
 L01	26	PHI	e/r/o	M
 L01	27	C43	a/n	M
-L01	28	OTHER	e/q/i/p/r/s/t	M
-L01	29	OTHER	e/q/i/p/r/s/t	M
+L01	28	OTHER		-
+L01	29	OTHER		-
 L01	30	EBR_B	l	C+
 L01	31	LOOPS	u/o	M
 L01	32	EBR_B	l	C+
@@ -44,7 +44,7 @@ L01	42	C43	a/n	M
 L01	43	4STEM	n/a/c/e	M
 L01	44	LOOPS	u/o	M
 L01	45	PHI	e/r/o	M
-L01	46	OTHER	e/q/i/p/r/s/t	M
+L01	46	OTHER		-
 L01	47	C43	a/n	M
 L01	48	LOOPS	u/o	M
 L01	49	PHI	e/r/o	M
@@ -60,7 +60,7 @@ L01	58	VBAR_A	t/s/f	M
 L01	59	4STEM	n/a/c/e	M
 L01	60	HASH4	d/q/i	M
 L01	61	VBAR_A	t/s/f	M
-L02	1	OTHER	e/q/i/p/r/s/t	M
+L02	1	OTHER		-
 L02	2	LOOPS	u/o	M
 L02	3	LOOPS	u/o	M
 L02	4	C43	a/n	M
@@ -76,7 +76,7 @@ L02	13	4TRI	n/a/c/p	M
 L02	14	PHI	e/r/o	M
 L02	15	4TRI	n/a/c/p	M
 L02	16	PHI	e/r/o	M
-L02	17	OTHER	e/q/i/p/r/s/t	M
+L02	17	OTHER		-
 L02	18	EBR_B	l	C+
 L02	19	4TRI	n/a/c/p	M
 L02	20	PHI	e/r/o	M
@@ -116,8 +116,8 @@ L02	53	4TRI	n/a/c/p	M
 L02	54	4TRI	n/a/c/p	M
 L02	55	H24	i/j/y	M
 L02	56	H24	i/j/y	M
-L02	57	OTHER	e/q/i/p/r/s/t	M
-L02	58	OTHER	e/q/i/p/r/s/t	M
+L02	57	OTHER		-
+L02	58	OTHER		-
 L02	59	H24	i/j/y	M
 L02	60	EBR_B	l	C+
 L02	61	EBR_B	l	C+
@@ -133,7 +133,7 @@ L03	6	4TRI	n/a/c/p	M
 L03	7	C43	a/n	M
 L03	8	C43	a/n	M
 L03	9	LOOPS	u/o	M
-L03	10	OTHER	e/q/i/p/r/s/t	M
+L03	10	OTHER		-
 L03	11	4TRI	n/a/c/p	M
 L03	12	PHI	e/r/o	M
 L03	13	PHI	e/r/o	M
@@ -141,7 +141,7 @@ L03	14	RSIGN	m/t/c/p/n/s	M
 L03	15	H24	i/j/y	M
 L03	16	PHI	e/r/o	M
 L03	17	PHI	e/r/o	M
-L03	18	OTHER	e/q/i/p/r/s/t	M
+L03	18	OTHER		-
 L03	19	4STEM	n/a/c/e	M
 L03	20	PHI	e/r/o	M
 L03	21	EBR_B	l	C+
@@ -155,7 +155,7 @@ L03	28	LOOPS	u/o	M
 L03	29	LOOPS	u/o	M
 L03	30	H24	i/j/y	M
 L03	31	PHI	e/r/o	M
-L03	32	OTHER	e/q/i/p/r/s/t	M
+L03	32	OTHER		-
 L03	33	VBAR_A	t/s/f	M
 L03	34	PHI	e/r/o	M
 L03	35	LOOPS	u/o	M
@@ -165,8 +165,8 @@ L03	38	C43	a/n	M
 L03	39	PHI	e/r/o	M
 L03	40	LOOPS	u/o	M
 L03	41	C43	a/n	M
-L03	42	OTHER	e/q/i/p/r/s/t	M
-L03	43	OTHER	e/q/i/p/r/s/t	M
+L03	42	OTHER		-
+L03	43	OTHER		-
 L03	44	EBR_B	l	C+
 L03	45	PHI	e/r/o	M
 L03	46	LOOPS	u/o	M
@@ -206,7 +206,7 @@ L04	15	VBAR_A	t/s/f	M
 L04	16	VBAR_A	t/s/f	M
 L04	17	HASH4	d/q/i	M
 L04	18	C43	a/n	M
-L04	19	OTHER	e/q/i/p/r/s/t	M
+L04	19	OTHER		-
 L04	20	4TRI	n/a/c/p	M
 L04	21	PHI	e/r/o	M
 L04	22	VBAR_A	t/s/f	M
@@ -234,8 +234,8 @@ L04	43	H24	i/j/y	M
 L04	44	H24	i/j/y	M
 L04	45	VBAR_A	t/s/f	M
 L04	46	PHI	e/r/o	M
-L04	47	OTHER	e/q/i/p/r/s/t	M
-L04	48	OTHER	e/q/i/p/r/s/t	M
+L04	47	OTHER		-
+L04	48	OTHER		-
 L04	49	EBR_B	l	C+
 L04	50	PHI	e/r/o	M
 L04	51	4TRI	n/a/c/p	M
@@ -250,7 +250,7 @@ L04	59	VBAR_A	t/s/f	M
 L04	60	VBAR_A	t/s/f	M
 L04	61	PHI	e/r/o	M
 L04	62	PHI	e/r/o	M
-L04	63	OTHER	e/q/i/p/r/s/t	M
+L04	63	OTHER		-
 L04	64	C43	a/n	M
 L04	65	LOOPS	u/o	M
 L05	1	LOOPS	u/o	M
@@ -299,7 +299,7 @@ L05	43	4TRI	n/a/c/p	M
 L05	44	PHI	e/r/o	M
 L05	45	LOOPS	u/o	M
 L05	46	PHI	e/r/o	M
-L05	47	OTHER	e/q/i/p/r/s/t	M
+L05	47	OTHER		-
 L05	48	C43	a/n	M
 L05	49	C43	a/n	M
 L05	50	LOOPS	u/o	M
@@ -328,7 +328,7 @@ L06	9	VBAR_A	t/s/f	M
 L06	10	C43	a/n	M
 L06	11	VBAR_A	t/s/f	M
 L06	12	PHI	e/r/o	M
-L06	13	OTHER	e/q/i/p/r/s/t	M
+L06	13	OTHER		-
 L06	14	EBR_B	l	C+
 L06	15	LOOPS	u/o	M
 L06	16	EBR_A	s/l/a	M
@@ -399,7 +399,7 @@ L07	18	C43	a/n	M
 L07	19	C43	a/n	M
 L07	20	VBAR_A	t/s/f	M
 L07	21	C43	a/n	M
-L07	22	OTHER	e/q/i/p/r/s/t	M
+L07	22	OTHER		-
 L07	23	VBAR_A	t/s/f	M
 L07	24	EBR_B	l	C+
 L07	25	PHI	e/r/o	M
@@ -437,7 +437,7 @@ L07	56	C43	a/n	M
 L07	57	4TRI	n/a/c/p	M
 L07	58	C43	a/n	M
 L07	59	VBAR_A	t/s/f	M
-L07	60	OTHER	e/q/i/p/r/s/t	M
+L07	60	OTHER		-
 L07	61	EBR_B	l	C+
 L07	62	PHI	e/r/o	M
 L07	63	VBAR_A	t/s/f	M
@@ -462,8 +462,8 @@ L08	16	LOOPS	u/o	M
 L08	17	C43	a/n	M
 L08	18	H24	i/j/y	M
 L08	19	VBAR_A	t/s/f	M
-L08	20	OTHER	e/q/i/p/r/s/t	M
-L08	21	OTHER	e/q/i/p/r/s/t	M
+L08	20	OTHER		-
+L08	21	OTHER		-
 L08	22	PHI	e/r/o	M
 L08	23	VBAR_A	t/s/f	M
 L08	24	VBAR_A	t/s/f	M
@@ -472,7 +472,7 @@ L08	26	RSIGN	m/t/c/p/n/s	M
 L08	27	PHI	e/r/o	M
 L08	28	C43	a/n	M
 L08	29	VBAR_A	t/s/f	M
-L08	30	OTHER	e/q/i/p/r/s/t	M
+L08	30	OTHER		-
 L08	31	EBR_B	l	C+
 L08	32	RSIGN	m/t/c/p/n/s	M
 L08	33	4TRI	n/a/c/p	M
@@ -607,20 +607,20 @@ L10	21	PHI	e/r/o	M
 L10	22	PHI	e/r/o	M
 L10	23	VBAR_A	t/s/f	M
 L10	24	PHI	e/r/o	M
-L10	25	OTHER	e/q/i/p/r/s/t	M
+L10	25	OTHER		-
 L10	26	4TRI	n/a/c/p	M
 L10	27	H24	i/j/y	M
 L10	28	4TRI	n/a/c/p	M
 L10	29	VBAR_A	t/s/f	M
 L10	30	H24	i/j/y	M
-L10	31	OTHER	e/q/i/p/r/s/t	M
+L10	31	OTHER		-
 L10	32	VBAR_A	t/s/f	M
 L10	33	4TRI	n/a/c/p	M
 L10	34	H24	i/j/y	M
 L10	35	VBAR_A	t/s/f	M
 L10	36	PHI	e/r/o	M
 L10	37	VBAR_A	t/s/f	M
-L10	38	OTHER	e/q/i/p/r/s/t	M
+L10	38	OTHER		-
 L10	39	H24	i/j/y	M
 L10	40	LOOPS	u/o	M
 L10	41	VBAR_A	t/s/f	M
@@ -639,7 +639,7 @@ L10	53	4TRI	n/a/c/p	M
 L10	54	PHI	e/r/o	M
 L10	55	PHI	e/r/o	M
 L10	56	VBAR_B	s	C+
-L10	57	OTHER	e/q/i/p/r/s/t	M
+L10	57	OTHER		-
 L10	58	VBAR_A	t/s/f	M
 L10	59	H24	i/j/y	M
 L10	60	4TRI	n/a/c/p	M
@@ -681,7 +681,7 @@ L11	30	PHI	e/r/o	M
 L11	31	VBAR_A	t/s/f	M
 L11	32	4TRI	n/a/c/p	M
 L11	33	PHI	e/r/o	M
-L11	34	OTHER	e/q/i/p/r/s/t	M
+L11	34	OTHER		-
 L11	35	PHI	e/r/o	M
 L11	36	LOOPS	u/o	M
 L11	37	H24	i/j/y	M
@@ -700,7 +700,7 @@ L11	49	4TRI	n/a/c/p	M
 L11	50	VBAR_A	t/s/f	M
 L11	51	EBR_B	l	C+
 L11	52	PHI	e/r/o	M
-L11	53	OTHER	e/q/i/p/r/s/t	M
+L11	53	OTHER		-
 L11	54	4STEM	n/a/c/e	M
 L11	55	4TRI	n/a/c/p	M
 L11	56	PHI	e/r/o	M
@@ -737,7 +737,7 @@ L12	20	4TRI	n/a/c/p	M
 L12	21	H24	i/j/y	M
 L12	22	PHI	e/r/o	M
 L12	23	PHI	e/r/o	M
-L12	24	OTHER	e/q/i/p/r/s/t	M
+L12	24	OTHER		-
 L12	25	4TRI	n/a/c/p	M
 L12	26	VBAR_A	t/s/f	M
 L12	27	PHI	e/r/o	M
@@ -747,10 +747,10 @@ L12	30	4TRI	n/a/c/p	M
 L12	31	VBAR_A	t/s/f	M
 L12	32	PHI	e/r/o	M
 L12	33	4TRI	n/a/c/p	M
-L12	34	OTHER	e/q/i/p/r/s/t	M
+L12	34	OTHER		-
 L12	35	4TRI	n/a/c/p	M
 L12	36	PLAIN	-	P
-L12	37	OTHER	e/q/i/p/r/s/t	M
+L12	37	OTHER		-
 L12	38	VBAR_A	t/s/f	M
 L12	39	EBR_B	l	C+
 L12	40	VBAR_A	t/s/f	M
@@ -809,7 +809,7 @@ L13	28	PHI	e/r/o	M
 L13	29	PHI	e/r/o	M
 L13	30	H24	i/j/y	M
 L13	31	EBR_B	l	C+
-L13	32	OTHER	e/q/i/p/r/s/t	M
+L13	32	OTHER		-
 L13	33	4TRI	n/a/c/p	M
 L13	34	VBAR_A	t/s/f	M
 L13	35	PHI	e/r/o	M
@@ -821,7 +821,7 @@ L13	40	PHI	e/r/o	M
 L13	41	LOOPS	u/o	M
 L13	42	PHI	e/r/o	M
 L13	43	VBAR_A	t/s/f	M
-L13	44	OTHER	e/q/i/p/r/s/t	M
+L13	44	OTHER		-
 L13	45	EBR_B	l	C+
 L13	46	VBAR_A	t/s/f	M
 L13	47	PHI	e/r/o	M
@@ -832,11 +832,11 @@ L13	51	PHI	e/r/o	M
 L13	52	4TRI	n/a/c/p	M
 L13	53	H24	i/j/y	M
 L13	54	PHI	e/r/o	M
-L13	55	OTHER	e/q/i/p/r/s/t	M
+L13	55	OTHER		-
 L13	56	4TRI	n/a/c/p	M
 L13	57	PHI	e/r/o	M
-L13	58	OTHER	e/q/i/p/r/s/t	M
-L13	59	OTHER	e/q/i/p/r/s/t	M
+L13	58	OTHER		-
+L13	59	OTHER		-
 L13	60	4TRI	n/a/c/p	M
 L13	61	EBR_B	l	C+
 L13	62	EBR_B	l	C+
@@ -846,7 +846,7 @@ L13	65	PHI	e/r/o	M
 L14	1	H24	i/j/y	M
 L14	2	PHI	e/r/o	M
 L14	3	C6	e	C
-L14	4	OTHER	e/q/i/p/r/s/t	M
+L14	4	OTHER		-
 L14	5	PHI	e/r/o	M
 L14	6	4TRI	n/a/c/p	M
 L14	7	PHI	e/r/o	M
@@ -870,14 +870,14 @@ L14	24	EBR_B	l	C+
 L14	25	EBR_B	l	C+
 L14	26	PHI	e/r/o	M
 L14	27	VBAR_A	t/s/f	M
-L14	28	OTHER	e/q/i/p/r/s/t	M
+L14	28	OTHER		-
 L14	29	EBR_B	l	C+
 L14	30	LOOPS	u/o	M
 L14	31	LOOPBAR		-
 L14	32	4TRI	n/a/c/p	M
 L14	33	H24	i/j/y	M
 L14	34	VBAR_A	t/s/f	M
-L14	35	OTHER	e/q/i/p/r/s/t	M
+L14	35	OTHER		-
 L14	36	4TRI	n/a/c/p	M
 L14	37	VBAR_A	t/s/f	M
 L14	38	PHI	e/r/o	M
@@ -887,7 +887,7 @@ L14	41	4TRI	n/a/c/p	M
 L14	42	LOOPS	u/o	M
 L14	43	H24	i/j/y	M
 L14	44	VBAR_A	t/s/f	M
-L14	45	OTHER	e/q/i/p/r/s/t	M
+L14	45	OTHER		-
 L14	46	4TRI	n/a/c/p	M
 L14	47	PHI	e/r/o	M
 L14	48	LOOPS	u/o	M
@@ -927,7 +927,7 @@ L15	16	VBAR_A	t/s/f	M
 L15	17	4TRI	n/a/c/p	M
 L15	18	LOOPS	u/o	M
 L15	19	ELOOP	r	C
-L15	20	OTHER	e/q/i/p/r/s/t	M
+L15	20	OTHER		-
 L15	21	LOOPBAR		-
 L15	22	4TRI	n/a/c/p	M
 L15	23	4TRI	n/a/c/p	M
@@ -993,7 +993,7 @@ L16	17	VBAR_A	t/s/f	M
 L16	18	H24	i/j/y	M
 L16	19	PHI	e/r/o	M
 L16	20	4TRI	n/a/c/p	M
-L16	21	OTHER	e/q/i/p/r/s/t	M
+L16	21	OTHER		-
 L16	22	VBAR_A	t/s/f	M
 L16	23	4TRI	n/a/c/p	M
 L16	24	H24	i/j/y	M
@@ -1078,7 +1078,7 @@ L17	36	4TRI	n/a/c/p	M
 L17	37	VBAR_A	t/s/f	M
 L17	38	PHI	e/r/o	M
 L17	39	EBR_B	l	C+
-L17	40	OTHER	e/q/i/p/r/s/t	M
+L17	40	OTHER		-
 L17	41	EBR_B	l	C+
 L17	42	PHI	e/r/o	M
 L17	43	VBAR_A	t/s/f	M
@@ -1089,7 +1089,7 @@ L17	47	LOOPS	u/o	M
 L17	48	PHI	e/r/o	M
 L17	49	PHI	e/r/o	M
 L17	50	VBAR_A	t/s/f	M
-L17	51	OTHER	e/q/i/p/r/s/t	M
+L17	51	OTHER		-
 L17	52	4TRI	n/a/c/p	M
 L17	53	PHI	e/r/o	M
 L17	54	EBR_B	l	C+
@@ -1115,7 +1115,7 @@ L18	5	LOOPS	u/o	M
 L18	6	H24	i/j/y	M
 L18	7	4TRI	n/a/c/p	M
 L18	8	LOOPS	u/o	M
-L18	9	OTHER	e/q/i/p/r/s/t	M
+L18	9	OTHER		-
 L18	10	VBAR_A	t/s/f	M
 L18	11	EBR_B	l	C+
 L18	12	4TRI	n/a/c/p	M
@@ -1132,7 +1132,7 @@ L18	22	HASH4	d/q/i	M
 L18	23	LOOPS	u/o	M
 L18	24	PHI	e/r/o	M
 L18	25	VBAR_A	t/s/f	M
-L18	26	OTHER	e/q/i/p/r/s/t	M
+L18	26	OTHER		-
 L18	27	EBR_B	l	C+
 L18	28	PHI	e/r/o	M
 L18	29	VBAR_A	t/s/f	M
@@ -1154,7 +1154,7 @@ L18	44	PHI	e/r/o	M
 L18	45	PHI	e/r/o	M
 L18	46	VBAR_A	t/s/f	M
 L18	47	PHI	e/r/o	M
-L18	48	OTHER	e/q/i/p/r/s/t	M
+L18	48	OTHER		-
 L18	49	HASH4	d/q/i	M
 L18	50	PHI	e/r/o	M
 L18	51	VBAR_A	t/s/f	M
@@ -1165,7 +1165,7 @@ L18	55	H24	i/j/y	M
 L18	56	PHI	e/r/o	M
 L18	57	4TRI	n/a/c/p	M
 L18	58	VBAR_A	t/s/f	M
-L18	59	OTHER	e/q/i/p/r/s/t	M
+L18	59	OTHER		-
 L18	60	EBR_B	l	C+
 L18	61	PHI	e/r/o	M
 L18	62	4TRI	n/a/c/p	M
@@ -1196,7 +1196,7 @@ L19	19	H24	i/j/y	M
 L19	20	VBAR_A	t/s/f	M
 L19	21	4TRI	n/a/c/p	M
 L19	22	LOOPS	u/o	M
-L19	23	OTHER	e/q/i/p/r/s/t	M
+L19	23	OTHER		-
 L19	24	VBAR_A	t/s/f	M
 L19	25	EBR_B	l	C+
 L19	26	4TRI	n/a/c/p	M
@@ -1254,7 +1254,7 @@ L20	15	VBAR_A	t/s/f	M
 L20	16	4TRI	n/a/c/p	M
 L20	17	4TRI	n/a/c/p	M
 L20	18	VBAR_A	t/s/f	M
-L20	19	OTHER	e/q/i/p/r/s/t	M
+L20	19	OTHER		-
 L20	20	EBR_B	l	C+
 L20	21	PHI	e/r/o	M
 L20	22	4TRI	n/a/c/p	M
@@ -1265,7 +1265,7 @@ L20	26	LOOPS	u/o	M
 L20	27	VBAR_A	t/s/f	M
 L20	28	HASH4	d/q/i	M
 L20	29	PHI	e/r/o	M
-L20	30	OTHER	e/q/i/p/r/s/t	M
+L20	30	OTHER		-
 L20	31	PHI	e/r/o	M
 L20	32	LOOPS	u/o	M
 L20	33	PHI	e/r/o	M
@@ -1307,14 +1307,14 @@ L21	3	PHI	e/r/o	M
 L21	4	PHI	e/r/o	M
 L21	5	VBAR_A	t/s/f	M
 L21	6	H24	i/j/y	M
-L21	7	OTHER	e/q/i/p/r/s/t	M
+L21	7	OTHER		-
 L21	8	EBR_B	l	C+
 L21	9	LOOPS	u/o	M
 L21	10	EBR_B	l	C+
 L21	11	HASH4	d/q/i	M
 L21	12	H24	i/j/y	M
 L21	13	VBAR_A	t/s/f	M
-L21	14	OTHER	e/q/i/p/r/s/t	M
+L21	14	OTHER		-
 L21	15	VBAR_B	s	C+
 L21	16	EBR_B	l	C+
 L21	17	PHI	e/r/o	M
@@ -1331,7 +1331,7 @@ L21	27	LOOPS	u/o	M
 L21	28	PHI	e/r/o	M
 L21	29	H24	i/j/y	M
 L21	30	PHI	e/r/o	M
-L21	31	OTHER	e/q/i/p/r/s/t	M
+L21	31	OTHER		-
 L21	32	EBR_B	l	C+
 L21	33	4TRI	n/a/c/p	M
 L21	34	LOOPS	u/o	M
@@ -1365,14 +1365,14 @@ L21	61	HASH4	d/q/i	M
 L21	62	PHI	e/r/o	M
 L21	63	EBR_B	l	C+
 L21	64	4TRI	n/a/c/p	M
-L21	65	OTHER	e/q/i/p/r/s/t	M
+L21	65	OTHER		-
 L21	66	HASH4	d/q/i	M
 L21	67	PHI	e/r/o	M
 L22	1	VBAR_A	t/s/f	M
 L22	2	PHI	e/r/o	M
 L22	3	4TRI	n/a/c/p	M
 L22	4	PLAIN	-	P
-L22	5	OTHER	e/q/i/p/r/s/t	M
+L22	5	OTHER		-
 L22	6	EBR_B	l	C+
 L22	7	4TRI	n/a/c/p	M
 L22	8	PHI	e/r/o	M
@@ -1391,7 +1391,7 @@ L22	20	4TRI	n/a/c/p	M
 L22	21	EBR_B	l	C+
 L22	22	LOOPS	u/o	M
 L22	23	VBAR_A	t/s/f	M
-L22	24	OTHER	e/q/i/p/r/s/t	M
+L22	24	OTHER		-
 L22	25	EBR_B	l	C+
 L22	26	PHI	e/r/o	M
 L22	27	4TRI	n/a/c/p	M
@@ -1441,7 +1441,7 @@ L23	9	VBAR_A	t/s/f	M
 L23	10	H24	i/j/y	M
 L23	11	PHI	e/r/o	M
 L23	12	4TRI	n/a/c/p	M
-L23	13	OTHER	e/q/i/p/r/s/t	M
+L23	13	OTHER		-
 L23	14	BETA	m/s	M
 L23	15	RSIGN	m/t/c/p/n/s	M
 L23	16	PHI	e/r/o	M
@@ -1457,7 +1457,7 @@ L23	25	LOOPS	u/o	M
 L23	26	VBAR_A	t/s/f	M
 L23	27	4TRI	n/a/c/p	M
 L23	28	PHI	e/r/o	M
-L23	29	OTHER	e/q/i/p/r/s/t	M
+L23	29	OTHER		-
 L23	30	VBAR_A	t/s/f	M
 L23	31	PHI	e/r/o	M
 L23	32	PHI	e/r/o	M
@@ -1478,8 +1478,8 @@ L23	46	4TRI	n/a/c/p	M
 L23	47	4TRI	n/a/c/p	M
 L23	48	PHI	e/r/o	M
 L23	49	ZBAR	s/f	M
-L23	50	OTHER	e/q/i/p/r/s/t	M
-L23	51	OTHER	e/q/i/p/r/s/t	M
+L23	50	OTHER		-
+L23	51	OTHER		-
 L23	52	BETA	m/s	M
 L23	53	4TRI	n/a/c/p	M
 L23	54	H24	i/j/y	M
@@ -1491,8 +1491,8 @@ L23	59	H24	i/j/y	M
 L23	60	PHI	e/r/o	M
 L23	61	EBR_B	l	C+
 L23	62	PHI	e/r/o	M
-L23	63	OTHER	e/q/i/p/r/s/t	M
-L24	1	OTHER	e/q/i/p/r/s/t	M
+L23	63	OTHER		-
+L24	1	OTHER		-
 L24	2	ISH	l	C+
 L24	3	LOOPS	u/o	M
 L24	4	ISH	l	C+
@@ -1505,7 +1505,7 @@ L24	10	LOOPS	u/o	M
 L24	11	HASH4	d/q/i	M
 L24	12	PHI	e/r/o	M
 L24	13	BETA	m/s	M
-L24	14	OTHER	e/q/i/p/r/s/t	M
+L24	14	OTHER		-
 L24	15	PHI	e/r/o	M
 L24	16	HASH4	d/q/i	M
 L24	17	PHI	e/r/o	M
@@ -1559,13 +1559,13 @@ L25	1	PHI	e/r/o	M
 L25	2	PHI	e/r/o	M
 L25	3	EBR_B	l	C+
 L25	4	H24	i/j/y	M
-L25	5	OTHER	e/q/i/p/r/s/t	M
+L25	5	OTHER		-
 L25	6	H24	i/j/y	M
 L25	7	PHI	e/r/o	M
 L25	8	4TRI	n/a/c/p	M
-L25	9	OTHER	e/q/i/p/r/s/t	M
+L25	9	OTHER		-
 L25	10	4TRI	n/a/c/p	M
-L25	11	OTHER	e/q/i/p/r/s/t	M
+L25	11	OTHER		-
 L25	12	H24	i/j/y	M
 L25	13	4TRI	n/a/c/p	M
 L25	14	PHI	e/r/o	M
@@ -1577,11 +1577,11 @@ L25	19	PHI	e/r/o	M
 L25	20	BETA	m/s	M
 L25	21	H24	i/j/y	M
 L25	22	HASH4	d/q/i	M
-L25	23	OTHER	e/q/i/p/r/s/t	M
+L25	23	OTHER		-
 L25	24	4TRI	n/a/c/p	M
 L25	25	PHI	e/r/o	M
 L25	26	LOOPS	u/o	M
-L25	27	OTHER	e/q/i/p/r/s/t	M
+L25	27	OTHER		-
 L25	28	VBAR_A	t/s/f	M
 L25	29	PHI	e/r/o	M
 L25	30	PHI	e/r/o	M
@@ -1592,8 +1592,8 @@ L25	34	4TRI	n/a/c/p	M
 L25	35	LOOPS	u/o	M
 L25	36	PHI	e/r/o	M
 L25	37	VBAR_A	t/s/f	M
-L25	38	OTHER	e/q/i/p/r/s/t	M
-L25	39	OTHER	e/q/i/p/r/s/t	M
+L25	38	OTHER		-
+L25	39	OTHER		-
 L25	40	PHI	e/r/o	M
 L25	41	PHI	e/r/o	M
 L25	42	HASH4	d/q/i	M
@@ -1603,16 +1603,16 @@ L25	45	4TRI	n/a/c/p	M
 L25	46	LOOPS	u/o	M
 L25	47	4TRI	n/a/c/p	M
 L25	48	PHI	e/r/o	M
-L25	49	OTHER	e/q/i/p/r/s/t	M
+L25	49	OTHER		-
 L25	50	PHI	e/r/o	M
 L25	51	EBR_B	l	C+
 L25	52	PHI	e/r/o	M
 L25	53	DBL	e/r/u	M
 L25	54	C6	e	C
 L25	55	PHI	e/r/o	M
-L25	56	OTHER	e/q/i/p/r/s/t	M
+L25	56	OTHER		-
 L25	57	ZBAR	s/f	M
-L25	58	OTHER	e/q/i/p/r/s/t	M
+L25	58	OTHER		-
 L25	59	HASH4	d/q/i	M
 L25	60	PHI	e/r/o	M
 L25	61	BETA	m/s	M
@@ -1623,8 +1623,8 @@ L25	65	PHI	e/r/o	M
 L25	66	VBAR_A	t/s/f	M
 L25	67	LOOPS	u/o	M
 L25	68	PHI	e/r/o	M
-L25	69	OTHER	e/q/i/p/r/s/t	M
-L25	70	OTHER	e/q/i/p/r/s/t	M
+L25	69	OTHER		-
+L25	70	OTHER		-
 L26	1	4TRI	n/a/c/p	M
 L26	2	VBAR_A	t/s/f	M
 L26	3	H24	i/j/y	M
@@ -1635,7 +1635,7 @@ L26	7	H24	i/j/y	M
 L26	8	VBAR_A	t/s/f	M
 L26	9	4STEM	n/a/c/e	M
 L26	10	4TRI	n/a/c/p	M
-L26	11	OTHER	e/q/i/p/r/s/t	M
+L26	11	OTHER		-
 L26	12	PHI	e/r/o	M
 L26	13	H24	i/j/y	M
 L26	14	EBR_B	l	C+
@@ -1646,22 +1646,22 @@ L26	18	H24	i/j/y	M
 L26	19	C6	e	C
 L26	20	PHI	e/r/o	M
 L26	21	H24	i/j/y	M
-L26	22	OTHER	e/q/i/p/r/s/t	M
-L26	23	OTHER	e/q/i/p/r/s/t	M
+L26	22	OTHER		-
+L26	23	OTHER		-
 L26	24	EBR_B	l	C+
 L26	25	4TRI	n/a/c/p	M
 L26	26	PHI	e/r/o	M
-L26	27	OTHER	e/q/i/p/r/s/t	M
+L26	27	OTHER		-
 L26	28	PHI	e/r/o	M
 L26	29	4TRI	n/a/c/p	M
-L26	30	OTHER	e/q/i/p/r/s/t	M
+L26	30	OTHER		-
 L26	31	PHI	e/r/o	M
 L26	32	VBAR_A	t/s/f	M
-L26	33	OTHER	e/q/i/p/r/s/t	M
+L26	33	OTHER		-
 L26	34	LOOPS	u/o	M
 L26	35	PHI	e/r/o	M
 L26	36	H24	i/j/y	M
-L26	37	OTHER	e/q/i/p/r/s/t	M
+L26	37	OTHER		-
 L26	38	4TRI	n/a/c/p	M
 L26	39	PHI	e/r/o	M
 L26	40	BETA	m/s	M
@@ -1670,7 +1670,7 @@ L26	42	LOOPS	u/o	M
 L26	43	4TRI	n/a/c/p	M
 L26	44	PHI	e/r/o	M
 L26	45	4TRI	n/a/c/p	M
-L26	46	OTHER	e/q/i/p/r/s/t	M
+L26	46	OTHER		-
 L26	47	4TRI	n/a/c/p	M
 L26	48	PHI	e/r/o	M
 L26	49	BETA	m/s	M
@@ -1690,18 +1690,18 @@ L26	62	4TRI	n/a/c/p	M
 L26	63	HASH4	d/q/i	M
 L26	64	PHI	e/r/o	M
 L26	65	VBAR_A	t/s/f	M
-L27	1	OTHER	e/q/i/p/r/s/t	M
+L27	1	OTHER		-
 L27	2	4TRI	n/a/c/p	M
 L27	3	PHI	e/r/o	M
 L27	4	4STEM	n/a/c/e	M
 L27	5	RSIGN	m/t/c/p/n/s	M
 L27	6	PHI	e/r/o	M
 L27	7	VBAR_A	t/s/f	M
-L27	8	OTHER	e/q/i/p/r/s/t	M
+L27	8	OTHER		-
 L27	9	PHI	e/r/o	M
-L27	10	OTHER	e/q/i/p/r/s/t	M
+L27	10	OTHER		-
 L27	11	H24	i/j/y	M
-L27	12	OTHER	e/q/i/p/r/s/t	M
+L27	12	OTHER		-
 L27	13	EBR_B	l	C+
 L27	14	4TRI	n/a/c/p	M
 L27	15	PHI	e/r/o	M
@@ -1717,32 +1717,32 @@ L27	24	H24	i/j/y	M
 L27	25	VBAR_A	t/s/f	M
 L27	26	PHI	e/r/o	M
 L27	27	LOOPS	u/o	M
-L27	28	OTHER	e/q/i/p/r/s/t	M
+L27	28	OTHER		-
 L27	29	PHI	e/r/o	M
 L27	30	LOOPS	u/o	M
-L27	31	OTHER	e/q/i/p/r/s/t	M
+L27	31	OTHER		-
 L27	32	PHI	e/r/o	M
 L27	33	VBAR_A	t/s/f	M
-L27	34	OTHER	e/q/i/p/r/s/t	M
+L27	34	OTHER		-
 L27	35	PHI	e/r/o	M
 L27	36	H24	i/j/y	M
-L27	37	OTHER	e/q/i/p/r/s/t	M
+L27	37	OTHER		-
 L27	38	VBAR_A	t/s/f	M
 L27	39	H24	i/j/y	M
 L27	40	VBAR_A	t/s/f	M
 L27	41	PHI	e/r/o	M
-L27	42	OTHER	e/q/i/p/r/s/t	M
+L27	42	OTHER		-
 L27	43	PHI	e/r/o	M
 L27	44	PHI	e/r/o	M
 L27	45	H24	i/j/y	M
 L27	46	PHI	e/r/o	M
-L27	47	OTHER	e/q/i/p/r/s/t	M
+L27	47	OTHER		-
 L27	48	EBR_B	l	C+
 L27	49	PHI	e/r/o	M
 L27	50	4TRI	n/a/c/p	M
 L27	51	4TRI	n/a/c/p	M
 L27	52	HASH4	d/q/i	M
-L27	53	OTHER	e/q/i/p/r/s/t	M
+L27	53	OTHER		-
 L27	54	PHI	e/r/o	M
 L28	1	4STEM	n/a/c/e	M
 L28	2	RSIGN	m/t/c/p/n/s	M
@@ -1757,7 +1757,7 @@ L28	10	BETA	m/s	M
 L28	11	PHI	e/r/o	M
 L28	12	PHI	e/r/o	M
 L28	13	VBAR_A	t/s/f	M
-L28	14	OTHER	e/q/i/p/r/s/t	M
+L28	14	OTHER		-
 L28	15	EBR_B	l	C+
 L28	16	4TRI	n/a/c/p	M
 L28	17	VBAR_A	t/s/f	M
@@ -1774,7 +1774,7 @@ L28	27	PHI	e/r/o	M
 L28	28	4TRI	n/a/c/p	M
 L28	29	4TRI	n/a/c/p	M
 L28	30	PHI	e/r/o	M
-L28	31	OTHER	e/q/i/p/r/s/t	M
+L28	31	OTHER		-
 L28	32	4STEM	n/a/c/e	M
 L28	33	LOOPS	u/o	M
 L28	34	PHI	e/r/o	M
@@ -1783,7 +1783,7 @@ L28	36	VBAR_A	t/s/f	M
 L28	37	VBAR_A	t/s/f	M
 L28	38	4TRI	n/a/c/p	M
 L28	39	H24	i/j/y	M
-L28	40	OTHER	e/q/i/p/r/s/t	M
+L28	40	OTHER		-
 L28	41	EBR_B	l	C+
 L28	42	PHI	e/r/o	M
 L28	43	LOOPS	u/o	M
@@ -1805,14 +1805,14 @@ L29	4	4TRI	n/a/c/p	M
 L29	5	H24	i/j/y	M
 L29	6	PHI	e/r/o	M
 L29	7	4TRI	n/a/c/p	M
-L29	8	OTHER	e/q/i/p/r/s/t	M
-L29	9	OTHER	e/q/i/p/r/s/t	M
+L29	8	OTHER		-
+L29	9	OTHER		-
 L29	10	PHI	e/r/o	M
 L29	11	VBAR_A	t/s/f	M
-L29	12	OTHER	e/q/i/p/r/s/t	M
+L29	12	OTHER		-
 L29	13	PHI	e/r/o	M
 L29	14	H24	i/j/y	M
-L29	15	OTHER	e/q/i/p/r/s/t	M
+L29	15	OTHER		-
 L29	16	PHI	e/r/o	M
 L29	17	PHI	e/r/o	M
 L29	18	HASH4	d/q/i	M
@@ -1821,33 +1821,33 @@ L29	20	LOOPS	u/o	M
 L29	21	PHI	e/r/o	M
 L29	22	4TRI	n/a/c/p	M
 L29	23	PHI	e/r/o	M
-L29	24	OTHER	e/q/i/p/r/s/t	M
+L29	24	OTHER		-
 L29	25	VBAR_A	t/s/f	M
 L29	26	PHI	e/r/o	M
 L29	27	PHI	e/r/o	M
 L29	28	PHI	e/r/o	M
-L29	29	OTHER	e/q/i/p/r/s/t	M
+L29	29	OTHER		-
 L29	30	4TRI	n/a/c/p	M
 L29	31	PHI	e/r/o	M
 L29	32	LOOPS	u/o	M
 L29	33	HASH4	d/q/i	M
 L29	34	PHI	e/r/o	M
-L29	35	OTHER	e/q/i/p/r/s/t	M
+L29	35	OTHER		-
 L29	36	PHI	e/r/o	M
 L29	37	4TRI	n/a/c/p	M
 L29	38	RSIGN	m/t/c/p/n/s	M
 L29	39	VBAR_A	t/s/f	M
-L29	40	OTHER	e/q/i/p/r/s/t	M
+L29	40	OTHER		-
 L29	41	EBR_B	l	C+
 L29	42	PHI	e/r/o	M
 L29	43	4TRI	n/a/c/p	M
 L29	44	H24	i/j/y	M
 L29	45	LOOPS	u/o	M
-L29	46	OTHER	e/q/i/p/r/s/t	M
+L29	46	OTHER		-
 L29	47	PHI	e/r/o	M
 L29	48	PHI	e/r/o	M
 L29	49	H24	i/j/y	M
-L29	50	OTHER	e/q/i/p/r/s/t	M
+L29	50	OTHER		-
 L29	51	HASH4	d/q/i	M
 L29	52	PHI	e/r/o	M
 L29	53	BETA	m/s	M
@@ -1863,15 +1863,15 @@ L30	5	EBR_B	l	C+
 L30	6	4TRI	n/a/c/p	M
 L30	7	HASH4	d/q/i	M
 L30	8	H24	i/j/y	M
-L30	9	OTHER	e/q/i/p/r/s/t	M
-L30	10	OTHER	e/q/i/p/r/s/t	M
+L30	9	OTHER		-
+L30	10	OTHER		-
 L30	11	EBR_B	l	C+
 L30	12	PHI	e/r/o	M
 L30	13	VBAR_A	t/s/f	M
-L30	14	OTHER	e/q/i/p/r/s/t	M
+L30	14	OTHER		-
 L30	15	PHI	e/r/o	M
 L30	16	H24	i/j/y	M
-L30	17	OTHER	e/q/i/p/r/s/t	M
+L30	17	OTHER		-
 L30	18	PHI	e/r/o	M
 L30	19	H24	i/j/y	M
 L30	20	PHI	e/r/o	M
@@ -1885,27 +1885,27 @@ L30	27	PHI	e/r/o	M
 L30	28	VBAR_A	t/s/f	M
 L30	29	VBAR_A	t/s/f	M
 L30	30	H24	i/j/y	M
-L30	31	OTHER	e/q/i/p/r/s/t	M
+L30	31	OTHER		-
 L30	32	PHI	e/r/o	M
 L30	33	4TRI	n/a/c/p	M
 L30	34	PHI	e/r/o	M
 L30	35	PHI	e/r/o	M
 L30	36	ZBAR	s/f	M
 L30	37	VBAR_A	t/s/f	M
-L30	38	OTHER	e/q/i/p/r/s/t	M
+L30	38	OTHER		-
 L30	39	PHI	e/r/o	M
 L30	40	PHI	e/r/o	M
 L30	41	H24	i/j/y	M
 L30	42	EBR_B	l	C+
 L30	43	H24	i/j/y	M
-L30	44	OTHER	e/q/i/p/r/s/t	M
+L30	44	OTHER		-
 L30	45	PHI	e/r/o	M
 L30	46	4STEM	n/a/c/e	M
 L30	47	4TRI	n/a/c/p	M
 L30	48	PHI	e/r/o	M
 L30	49	EBR_B	l	C+
 L30	50	4TRI	n/a/c/p	M
-L30	51	OTHER	e/q/i/p/r/s/t	M
+L30	51	OTHER		-
 L30	52	PHI	e/r/o	M
 L30	53	VBAR_A	t/s/f	M
 L31	1	VBAR_A	t/s/f	M
@@ -1918,9 +1918,9 @@ L31	7	4TRI	n/a/c/p	M
 L31	8	HASH4	d/q/i	M
 L31	9	4TRI	n/a/c/p	M
 L31	10	4TRI	n/a/c/p	M
-L31	11	OTHER	e/q/i/p/r/s/t	M
+L31	11	OTHER		-
 L31	12	PHI	e/r/o	M
-L31	13	OTHER	e/q/i/p/r/s/t	M
+L31	13	OTHER		-
 L31	14	PHI	e/r/o	M
 L31	15	4TRI	n/a/c/p	M
 L31	16	EBR_B	l	C+
@@ -1929,7 +1929,7 @@ L31	18	H24	i/j/y	M
 L31	19	LOOPS	u/o	M
 L31	20	PHI	e/r/o	M
 L31	21	H24	i/j/y	M
-L31	22	OTHER	e/q/i/p/r/s/t	M
+L31	22	OTHER		-
 L31	23	4TRI	n/a/c/p	M
 L31	24	BETA	m/s	M
 L31	25	PHI	e/r/o	M
@@ -1942,7 +1942,7 @@ L31	31	PHI	e/r/o	M
 L31	32	4TRI	n/a/c/p	M
 L31	33	PHI	e/r/o	M
 L31	34	BETA	m/s	M
-L31	35	OTHER	e/q/i/p/r/s/t	M
+L31	35	OTHER		-
 L31	36	PHI	e/r/o	M
 L31	37	HASH4	d/q/i	M
 L31	38	PHI	e/r/o	M
@@ -1950,33 +1950,33 @@ L31	39	HASH4	d/q/i	M
 L31	40	PHI	e/r/o	M
 L31	41	LOOPS	u/o	M
 L31	42	H24	i/j/y	M
-L31	43	OTHER	e/q/i/p/r/s/t	M
+L31	43	OTHER		-
 L31	44	H24	i/j/y	M
 L31	45	PHI	e/r/o	M
 L31	46	PHI	e/r/o	M
 L31	47	VBAR_A	t/s/f	M
-L31	48	OTHER	e/q/i/p/r/s/t	M
+L31	48	OTHER		-
 L31	49	HASH4	d/q/i	M
 L31	50	4STEM	n/a/c/e	M
 L31	51	4STEM	n/a/c/e	M
 L31	52	VBAR_A	t/s/f	M
-L31	53	OTHER	e/q/i/p/r/s/t	M
+L31	53	OTHER		-
 L31	54	BETA	m/s	M
 L31	55	4TRI	n/a/c/p	M
 L31	56	H24	i/j/y	M
 L31	57	VBAR_A	t/s/f	M
 L31	58	4TRI	n/a/c/p	M
 L31	59	PHI	e/r/o	M
-L31	60	OTHER	e/q/i/p/r/s/t	M
+L31	60	OTHER		-
 L31	61	PHI	e/r/o	M
-L32	1	OTHER	e/q/i/p/r/s/t	M
+L32	1	OTHER		-
 L32	2	PHI	e/r/o	M
 L32	3	LOOPS	u/o	M
 L32	4	LOOPS	u/o	M
 L32	5	PHI	e/r/o	M
 L32	6	HASH4	d/q/i	M
-L32	7	OTHER	e/q/i/p/r/s/t	M
-L32	8	OTHER	e/q/i/p/r/s/t	M
+L32	7	OTHER		-
+L32	8	OTHER		-
 L32	9	EBR_B	l	C+
 L32	10	BETA	m/s	M
 L32	11	PHI	e/r/o	M
@@ -1985,7 +1985,7 @@ L32	13	VBAR_A	t/s/f	M
 L32	14	VBAR_A	t/s/f	M
 L32	15	PHI	e/r/o	M
 L32	16	4TRI	n/a/c/p	M
-L32	17	OTHER	e/q/i/p/r/s/t	M
+L32	17	OTHER		-
 L32	18	H24	i/j/y	M
 L32	19	PHI	e/r/o	M
 L32	20	4TRI	n/a/c/p	M
@@ -2020,14 +2020,14 @@ L32	48	PHI	e/r/o	M
 L32	49	PHI	e/r/o	M
 L32	50	PHI	e/r/o	M
 L32	51	ZBAR	s/f	M
-L32	52	OTHER	e/q/i/p/r/s/t	M
+L32	52	OTHER		-
 L32	53	PHI	e/r/o	M
-L32	54	OTHER	e/q/i/p/r/s/t	M
+L32	54	OTHER		-
 L32	55	PHI	e/r/o	M
 L32	56	BETA	m/s	M
 L32	57	4TRI	n/a/c/p	M
 L32	58	VBAR_A	t/s/f	M
-L32	59	OTHER	e/q/i/p/r/s/t	M
+L32	59	OTHER		-
 L32	60	EBR_B	l	C+
 L32	61	BETA	m/s	M
 L32	62	4TRI	n/a/c/p	M
@@ -2046,7 +2046,7 @@ L33	12	PHI	e/r/o	M
 L33	13	PHI	e/r/o	M
 L33	14	4TRI	n/a/c/p	M
 L33	15	LOOPSTEM1	q/s	M
-L33	16	OTHER	e/q/i/p/r/s/t	M
+L33	16	OTHER		-
 L33	17	HASH4	d/q/i	M
 L33	18	PHI	e/r/o	M
 L33	19	VBAR_A	t/s/f	M
@@ -2068,7 +2068,7 @@ L33	34	4TRI	n/a/c/p	M
 L33	35	PHI	e/r/o	M
 L33	36	EBR_A	s/l/a	M
 L33	37	RSIGN	m/t/c/p/n/s	M
-L33	38	OTHER	e/q/i/p/r/s/t	M
+L33	38	OTHER		-
 L33	39	4STEM	n/a/c/e	M
 L33	40	LOOPS	u/o	M
 L33	41	4STEM	n/a/c/e	M
@@ -2088,7 +2088,7 @@ L33	54	PHI	e/r/o	M
 L33	55	4TRI	n/a/c/p	M
 L33	56	4TRI	n/a/c/p	M
 L33	57	HASH4	d/q/i	M
-L33	58	OTHER	e/q/i/p/r/s/t	M
+L33	58	OTHER		-
 L33	59	EBR_B	l	C+
 L33	60	LOOPS	u/o	M
 L33	61	CROSS		-
@@ -2147,7 +2147,7 @@ L34	50	LOOPS	u/o	M
 L34	51	4TRI	n/a/c/p	M
 L34	52	PHI	e/r/o	M
 L34	53	VBAR_A	t/s/f	M
-L34	54	OTHER	e/q/i/p/r/s/t	M
+L34	54	OTHER		-
 L34	55	BETA	m/s	M
 L34	56	H24	i/j/y	M
 L34	57	EBR_B	l	C+
@@ -2170,7 +2170,7 @@ L35	12	H24	i/j/y	M
 L35	13	PHI	e/r/o	M
 L35	14	EBR_B	l	C+
 L35	15	CA		-
-L35	16	OTHER	e/q/i/p/r/s/t	M
+L35	16	OTHER		-
 L35	17	EBR_A	s/l/a	M
 L35	18	PHI	e/r/o	M
 L35	19	VBAR_A	t/s/f	M
@@ -2217,10 +2217,10 @@ L35	59	BETA	m/s	M
 L36	1	PHI	e/r/o	M
 L36	2	4TRI	n/a/c/p	M
 L36	3	VBAR_B	s	C+
-L36	4	OTHER	e/q/i/p/r/s/t	M
+L36	4	OTHER		-
 L36	5	4TRI	n/a/c/p	M
 L36	6	PHI	e/r/o	M
-L36	7	OTHER	e/q/i/p/r/s/t	M
+L36	7	OTHER		-
 L36	8	EBR_B	l	C+
 L36	9	HASH4	d/q/i	M
 L36	10	H24	i/j/y	M
@@ -2264,7 +2264,7 @@ L36	47	LOOPS	u/o	M
 L36	48	H24	i/j/y	M
 L36	49	4TRI	n/a/c/p	M
 L36	50	VBAR_A	t/s/f	M
-L36	51	OTHER	e/q/i/p/r/s/t	M
+L36	51	OTHER		-
 L36	52	EBR_B	l	C+
 L36	53	DBL	e/r/u	M
 L36	54	ZBAR	s/f	M
@@ -2289,7 +2289,7 @@ L37	16	PHI	e/r/o	M
 L37	17	H24	i/j/y	M
 L37	18	PHI	e/r/o	M
 L37	19	4TRI	n/a/c/p	M
-L37	20	OTHER	e/q/i/p/r/s/t	M
+L37	20	OTHER		-
 L37	21	EBR_B	l	C+
 L37	22	PHI	e/r/o	M
 L37	23	HASH4	d/q/i	M
@@ -2320,7 +2320,7 @@ L37	47	HASH4	d/q/i	M
 L37	48	PHI	e/r/o	M
 L37	49	ZBAR	s/f	M
 L37	50	RSIGN	m/t/c/p/n/s	M
-L37	51	OTHER	e/q/i/p/r/s/t	M
+L37	51	OTHER		-
 L37	52	EBR_B	l	C+
 L37	53	ZBAR	s/f	M
 L37	54	4TRI	n/a/c/p	M
@@ -2343,7 +2343,7 @@ L38	10	H24	i/j/y	M
 L38	11	PHI	e/r/o	M
 L38	12	LOOPS	u/o	M
 L38	13	DASH		-
-L38	14	OTHER	e/q/i/p/r/s/t	M
+L38	14	OTHER		-
 L38	15	ZBAR	s/f	M
 L38	16	PHI	e/r/o	M
 L38	17	LOOPS	u/o	M
@@ -2380,7 +2380,7 @@ L38	47	VBAR_A	t/s/f	M
 L38	48	PHI	e/r/o	M
 L38	49	4TRI	n/a/c/p	M
 L38	50	ZBAR	s/f	M
-L38	51	OTHER	e/q/i/p/r/s/t	M
+L38	51	OTHER		-
 L38	52	VBAR_A	t/s/f	M
 L38	53	PHI	e/r/o	M
 L38	54	4TRI	n/a/c/p	M
@@ -2430,7 +2430,7 @@ L39	38	PHI	e/r/o	M
 L39	39	HASH4	d/q/i	M
 L39	40	LOOPS	u/o	M
 L39	41	EBR_A	s/l/a	M
-L39	42	OTHER	e/q/i/p/r/s/t	M
+L39	42	OTHER		-
 L39	43	LOOPS	u/o	M
 L39	44	4TRI	n/a/c/p	M
 L39	45	ZHOOK		-
@@ -2484,7 +2484,7 @@ L40	33	EBR_A	s/l/a	M
 L40	34	HASH4	d/q/i	M
 L40	35	PHI	e/r/o	M
 L40	36	LOOPSTEM1	q/s	M
-L40	37	OTHER	e/q/i/p/r/s/t	M
+L40	37	OTHER		-
 L40	38	ZBAR	s/f	M
 L40	39	4TRI	n/a/c/p	M
 L40	40	4TRI	n/a/c/p	M
@@ -2495,9 +2495,9 @@ L40	44	4TRI	n/a/c/p	M
 L40	45	H24	i/j/y	M
 L40	46	ZBAR	s/f	M
 L40	47	PHI	e/r/o	M
-L40	48	OTHER	e/q/i/p/r/s/t	M
+L40	48	OTHER		-
 L40	49	ZBAR	s/f	M
-L40	50	OTHER	e/q/i/p/r/s/t	M
+L40	50	OTHER		-
 L40	51	EBR_A	s/l/a	M
 L40	52	LOOPS	u/o	M
 L40	53	EBR_A	s/l/a	M
