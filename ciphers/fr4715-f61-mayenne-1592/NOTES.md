@@ -2443,3 +2443,18 @@ lines, the fitted map beats its one-swap neighbours on f.108v wherever a swap ha
 l/y<->f/s pair (1.5) and the powerless c/p<->d/q pair (1.0). The judge's own note: scattered French fragments under the
 target ("nous", "aurons", "seulement", "terre leur", "allez", "mais non", "aussi sont ilz ... necessaires", "tenir"), no
 set continuous French. One call; no reading claimed, no class change.
+
+## Campaign step H112 (28 Sept 2026, 17:40-17:47 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+The H107 f.108r L04-L06 prediction rerun on H108's corrected input (reconciled draft, L06 whole, DBL -> PHI by H26, no loop
+relabel): `f61judge108v.py build f108r_L04_L06_h108 --seed 108|109` (71 pair positions, 14 cells; sets pushed 59429f74,
+prompts `scripts/PROMPTS.md` "H112" pushed 10e2155f, both before the calls). Two Opus text calls, each VALID (transcript:
+one Read of its sets file and the hand-back, nothing else); verdicts verbatim `f61judge_f108r_L04_L06_h108_s10{8,9}_verdict.tsv`.
+
+Seed 108: target 1.5, **rank 2 of 21** (tied with one permutation; ties against) -> FAIL. Seed 109: target 1.5, **rank 8
+of 21** (two sets at 2.0) -> FAIL. Every set in both calls scored 2.0 or less: with the input corrected, the judge still
+finds no French on these rows under the 14-cell map or any permutation of it. So H107's FAIL was not only the handicapped
+input. What the map leaves out is large on these rows: HASH4 (10 of 85 draft columns, a null on f.61 but d/q under the
+4-over-hash on the family leaves, H98 PASS 17/19) is dropped, with OTHER 3 and LOOPSTEM1 1 -- 14 of 85 signs gone, and
+three of them are the "two loops side by side" OTHER signs H108's relabel could not license. The target resolutions stay
+committed as the pre-registered prediction for H64 (ASKS 88); expect them to score poorly. No reading, no class change.
