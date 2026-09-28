@@ -110,4 +110,35 @@ def main():
                     print('\t'.join(str(row[k]) for k in ('level', 'text', 'unit', 'cryptogram', 'n_cipher', 'n_units', 'S1', 'offset', 'nesting', 'null_p975', 'lineshuffle_p975', 'percentile', 'S2', 'S2_null_p975', 'clears')), flush=True)
     json.dump(results, open(os.path.join(root, 'h4_result.json'), 'w'), indent=1)
     print('cleared:', sum(r['clears'] for r in results), 'of', len(results))
-if __name__ == '__main__': main()
+def planted(trials=300):
+    """Positive control (rule 3): the poem's own units enciphered with a synthetic homophonic key at each cryptogram's
+    N-fitting length and K (K homophones spread over the units by frequency, profile like the target's: one dominant
+    sign), then type noise p redrawn per token; does max S1 clear the shuffle null? Reports per unit type, K and noise."""
+    rng = random.Random(2); lines = poem_lines(); out = []
+    C = load_cipher('ciphertext_draft.tsv')
+    for unit, fn in (('letter', letters), ('syllable', syllables), ('word', words)):
+        per_line = [fn(l) for l in lines]; U = [x for l in per_line for x in l]
+        for g in ('c1', 'c3', 'c4'):
+            K = len(set(C[g])); n = min(len(C[g]), len(U))
+            # homophone allotment: each distinct unit gets at least one sign; the rest go to the most frequent units
+            cnt = collections.Counter(U); units = [u for u, _ in cnt.most_common()]
+            if K < len(units): K_eff = len(units)
+            else: K_eff = K
+            alloc = {u: 1 for u in units}; extra = K_eff - len(units)
+            for i in range(extra): alloc[units[i % max(1, len(units) // 3)]] += 1
+            sign_of = {}; sid = 0
+            for u in units: sign_of[u] = list(range(sid, sid + alloc[u])); sid += alloc[u]
+            for noise in (0.0, 0.05, 0.15):
+                plain = U[:n]; c = [rng.choice(sign_of[u]) for u in plain]
+                c = [rng.randrange(sid) if rng.random() < noise else s for s in c]
+                cI, cJ = pairs_of(c); Ue = encode(U); obs, off, nest = best_enc(cI, cJ, len(c), Ue)
+                null = []
+                for t_ in range(trials):
+                    Us = Ue.copy(); rng.shuffle(Us); null.append(best_enc(cI, cJ, len(c), Us)[0])
+                null.sort(); q = null[int(0.975 * len(null)) - 1]
+                row = dict(unit=unit, like=g, n=n, K=sid, noise=noise, S1=round(obs, 4), offset=off, null_p975=round(q, 4), clears=bool(obs > q))
+                out.append(row); print('PLANTED\t' + '\t'.join(f'{k}={v}' for k, v in row.items()), flush=True)
+    json.dump(out, open(os.path.join(root, 'h4_planted.json'), 'w'), indent=1)
+if __name__ == '__main__':
+    if '--planted' in sys.argv: planted()
+    else: main()

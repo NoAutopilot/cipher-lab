@@ -715,3 +715,42 @@ adjudication, but the type noise the draft carries (14-18 pct) sits far past the
 settled c1 for the structural tests (H3, H5, H6) and a confusability list for the inventory. Settled K for c1: see
 `ciphertext_c1_draft.tsv` (grade S/M, 0 H-from-key, 0 C-from-plaintext). Costs: five Fable subagent calls of about
 135-145k tokens each; the orchestrator reads the session cost.
+
+### H4, crib test against the c3-page poem (28 Sept 2026, CPU only, `scripts/h4_crib_test.py`)
+
+Statistic S1 = share of repeated-sign pairs whose aligned plaintext units are also equal (1.0 for any one-sign-one-unit
+cipher at the right offset, minus transcription noise), maximised over every offset with the shorter sequence nested
+in the longer; nulls: 1000 unit-order shuffles and 1000 line-order shuffles of the poem, gate at the 97.5th percentile
+of both plus a secondary statistic. Cryptograms 1-4 (pass A; c1 also as the H2 settled draft) x letter / syllable /
+word x 160-id / base level: **0 of 24 clear** (`h4_result.json`; best c1-syllable at the 92nd percentile; the settled c1
+crosses p975 on S1 alone for syllables, 0.0436 vs 0.0403, and fails the other two statistics). Planted positive control
+(`--planted`, `h4_planted.json`): the poem's own letters / syllables / words enciphered with a homophonic key at each
+cryptogram's K, then 0 / 5 / 15 pct type noise, clears at every setting (S1 0.54-0.78 at 15 pct against nulls under
+0.21), so the test has power at the noise the H2 draft carries. **Control-backed negative**: the clear poem on the
+cryptogram-3 page is not the contiguous plaintext of any of the four cryptograms under those units. Bourdeau's
+isomorph test (15 Sept 2026) reached the same for the No.10 block with its own planted control. Untested: the Greek
+Anacreon-preface ode on the c4 reverse (not on disk), non-contiguous or reordered pairings.
+
+### H5, couplet rhyme on our transcription (28 Sept 2026, CPU only, `scripts/h5_couplets.py`)
+
+Bourdeau's 15 Sept 2026 observation on his own read of the cipher verse (cryptogram 4): line-final glyphs identical
+within 9 of 10 couplets, 0 of 9 across couplet boundaries. His transcription (`sources/bourdeau/cyphersolver-targets-
+debosnys/verse_transcription.py`, MIT, credited) reproduces that under a 20,000-permutation line-order null,
+p < 0.0001. **On our pass A** (19 lines: c4a's 14 are verse lines 2-15 and c4b's 5 are 16-20, see H7 below), with the
+segmenter's trailing punctuation boxes dropped (BLOB, HOOK-L, DASH-H, `_`, MULTI): **within-couplet identical 4 of 9,
+across 0 of 9, p = 0.0001** at full id and at family level (raw last box: 2/9 vs 0/9, p 0.09, since our last box is
+usually the comma or dot he strips). The five couplets that do not match on ours are two ids for one shape (NOTE vs
+PICT-ARROW for his "dark note with arrow, two dots below"; PCT-SLASH vs CIRC-O for his SL(y,o)), the OX / DAGGER-O pair
+he also reads as a near-rhyme, and two lines where our last non-punctuation token is QUESTION. So an independent
+transcription confirms: **the line-final sign encodes sound (rimes plates, AABB)**, which puts the unit at syllable
+scale and rules out a plain letter substitution for the verse, unless the rhyme is written at the letter level and the
+final letters happen to match, which 0 of 9 across boundaries argues against. Grade S, structural; no reading.
+
+### H7 finding: cryptogram 4's first verse line is missing from our transcription (28 Sept 2026)
+
+Checking our c4 lines against Bourdeau's: our c4a L01 opens with the heart pictogram that opens his verse line 2, our
+L03 with the sun of his line 4, L12 with the leaf of his line 13, L13 with the anchor of his line 14; and the page image
+carries a full cipher line directly under "monographe. verse." at page y about 385-420 (delta-ring, %, curl, slash,
+tilde-o, xx, y, venus, ., slash-x, tilde-o, X, curl, comma -- his line 1), above GOLD-4A's crop box (y from 425), which
+had been drawn to exclude the title and monogram. So the verse has 20 lines (as Sektu and Bourdeau count) and our N for
+c4 is short by about 13 signs. CAMPAIGN.md H7 is the fix (segment that band, classify, eye pass, append as c4a_L00).
