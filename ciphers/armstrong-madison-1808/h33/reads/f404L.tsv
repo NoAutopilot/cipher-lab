@@ -1,1 +1,10 @@
 crop	pos	group	gloss	conf	note
+1	1	NONE	-	high	band empty, above first text line (page margin)
+2	1	157	in	low	numerals very faint (ghost-level ink), digits tentative
+2	2	231	Prince	low	very faint, digits tentative
+2	3	200	Asturias	medium	faint but discernible
+2	4	393	-	low	faint, no clear word directly above
+2	5	846	be	low	very faint, digits tentative
+3	1	1509	which	medium	3rd digit ambiguous (0/8)
+3	2	466	will	low	middle digit ambiguous (4/7), faint
+3	3	10	-	low	small mark after 466, faint

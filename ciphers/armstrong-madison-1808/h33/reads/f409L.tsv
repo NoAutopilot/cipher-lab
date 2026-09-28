@@ -1,1 +1,99 @@
 crop	pos	group	gloss	conf	note
+1	1	NONE	-	high	target band is blank torn page corner; this text-line's gloss (see L01 own band, above top guide) and numbers (see L02) fall in neighboring crops
+2	1	795	-	medium	gloss row sits above L02 top guide, visible in L01 crop but too soft/cursive to confidently align word-to-number
+2	2	133	-	medium	same gloss-row caveat as pos1
+2	3	1651	-	medium	same gloss-row caveat as pos1
+2	4	1524	-	low	second digit written high/small, could be 1524 or 15 24 as two groups; read as one 4-digit group
+2	5	1343	-	medium	same gloss-row caveat as pos1
+2	6	261	-	medium	same gloss-row caveat as pos1
+2	7	180	-	medium	same gloss-row caveat as pos1
+2	8	1651	-	medium	same gloss-row caveat as pos1
+2	9	1661	-	medium	same gloss-row caveat as pos1
+2	10	133	-	medium	same gloss-row caveat as pos1
+2	11	628	-	medium	same gloss-row caveat as pos1
+2	12	537	-	medium	same gloss-row caveat as pos1
+2	13	460	-	medium	same gloss-row caveat as pos1
+3	1	975	by	high	gloss word directly above, legible
+3	2	1686	body	high	gloss word directly above, legible
+3	3	825	at	medium	plain word "every" precedes this group inline (not a group); gloss "at" above, somewhat faint
+3	4	1299	the	medium	gloss faint
+3	5	742	gala	medium	gloss faint
+3	6	1651	of	high	gloss legible
+3	7	296	the	medium	gloss faint
+3	8	624	19th	medium	gloss written as superscript ordinal, faint
+3	9	133	-	medium	no legible gloss above
+3	10	1651	-	medium	no legible gloss above
+3	11	1623	-	medium	no legible gloss above
+3	12	158	-	low	edge, right side cut by crop boundary, note=edge
+4	1	870	their	low	small gloss word above, uncertain alignment; preceding text "instant by which these" appears to be plain prose, not gloss
+4	2	1380	confidence	low	gloss word above uncertain, may span more than one number
+4	3	915	-	medium	no legible gloss above
+4	4	69	-	medium	no legible gloss above
+5	1	69	instant	low	gloss row is prose-sized text from line above (L04 band); alignment approximate
+5	2	312	by	low	alignment approximate
+5	3	432	which	low	alignment approximate
+5	4	1686	these	low	alignment approximate
+5	5	674	-	medium	no legible gloss above
+5	6	877	-	medium	no legible gloss above
+6	1	1114	-	medium	crease/fold line crosses digits; gloss row above too sparse to align confidently
+6	2	1345	-	high	sparse gloss above ("and familiar ... receiving") but alignment to individual numbers uncertain
+6	3	17	-	medium	could be 17 or 77
+6	4	14	-	medium	-
+6	5	1145	-	high	-
+6	6	849	-	high	-
+6	7	555	-	high	-
+6	8	938	-	high	-
+6	9	216	-	low	edge, right side cut by crop boundary
+7	1	27	as	low	leftmost gloss word roughly above leftmost number, alignment approximate
+7	2	97	on	low	alignment approximate, could read "an"
+7	3	916	-	medium	plain word "intended" precedes this group inline (not a group)
+7	4	1340	-	medium	-
+7	5	1193	-	medium	-
+7	6	594	-	medium	-
+7	7	87	-	medium	-
+7	8	1518	-	medium	-
+7	9	745	-	medium	-
+7	10	1578	-	medium	-
+7	11	878	-	medium	-
+7	12	1411	-	medium	-
+7	13	555	-	low	near bottom guide, possibly slightly cut
+8	1	NONE	-	high	band holds only small gloss text "abandon him" (for next line's numbers, see L09) and a blank underline; no numeral group between guides
+9	1	623	abandon	medium	gloss word above from previous crop's band, legible
+9	2	1348	him	medium	gloss word above, legible
+9	3	509	-	medium	no legible gloss above
+9	4	1114	-	medium	no legible gloss above; trailing blank underline after this group is not a group
+10	1	378	upon	medium	gloss legible above
+10	2	877	these	medium	gloss legible above
+10	3	731	grounds	medium	gloss legible above
+10	4	624	a	low	plain words "I conclude that" precede this group inline (not groups); gloss alignment approximate
+10	5	751	crisis	low	alignment approximate
+10	6	1484	is	low	alignment approximate
+10	7	101	approaching	low	alignment approximate
+10	8	1656	-	medium	no legible gloss above
+10	9	618	-	medium	no legible gloss above
+10	10	407	-	medium	no legible gloss above
+10	11	298	-	medium	no legible gloss above
+11	1	674	which	medium	gloss legible above
+11	2	1411	will	medium	gloss legible above
+11	3	1653	produce	medium	plain word "certainly" precedes this group inline (not a group)
+11	4	624	a	medium	gloss legible above
+11	5	653	new	low	gloss word uncertain, could be "new" or "few"
+11	6	605	change	medium	plain word "essential" precedes this group inline (not a group)
+11	7	69	in	medium	gloss legible above
+11	8	1651	the	medium	gloss legible above
+11	9	157	life	low	gloss word uncertain
+11	10	1481	it	medium	gloss legible above
+12	1	NONE	-	high	band holds only gloss/interline text ("not entirely ... subvert ... the Reigning dynasty") for next line's numbers; the numbers themselves sit below the bottom guide, see L13
+13	1	553	not	medium	plain word "does" precedes this group inline (not a group); gloss legible above
+13	2	335	entirely	medium	gloss legible above
+13	3	426	-	medium	no legible gloss above
+13	4	305	-	medium	no legible gloss above
+13	5	1362	subvert	medium	gloss legible above
+13	6	322	-	medium	no legible gloss above
+13	7	1162	-	medium	no legible gloss above
+13	8	111	the	low	gloss alignment approximate
+13	9	1651	reigning	low	gloss alignment approximate
+13	10	448	dynasty	low	gloss alignment approximate
+13	11	66	-	medium	no legible gloss above
+13	12	1299	-	medium	no legible gloss above
+13	13	390	-	medium	no legible gloss above
