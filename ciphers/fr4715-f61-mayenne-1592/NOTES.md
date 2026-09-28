@@ -3080,3 +3080,7 @@ By the pre-registered wording a/u (i/x wins 0/30) and e/u (1/30) come out "prefe
 a bootstrap resamples the same handful of positions, and each swap moves at most five letters in 8,500: a test with almost
 no power (rule 3's "control that cannot vary" shape at this n). **Logged as untestable on the pool at n = 5**, not as
 evidence against i/x; H157's f.108v result (20 signs, 30/30 for i/x) stands for f.61's hand. No reading, no class change.
+
+## Campaign step H159 (20:18 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
+
+`scripts/H66_PAGE.md` gains a section "H153-H161". No new claim.

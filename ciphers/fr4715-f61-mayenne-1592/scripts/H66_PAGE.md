@@ -87,6 +87,17 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - **Committed predictions**: lattice resolutions of f.108r L04-L06 and f.108v (`f61lattice_*_prediction.txt`, H140) beside
   H107/H112/H120/H123; `f61score_gloss108.py` scores all f.108r ones when the ASKS 88 gloss lands (H137).
 
+## H153-H161 (runner 5, 28 Sept 2026, times read from the clock)
+
+- **Bootstraps of the sequence-gain results:** f.108v in f.61's cells stands (29/30, H152); f.108r L04-L06 does not (5/30;
+  20/30 with HASH4 = i/x -- a lean, H154); family leaves: f.97r and f.188r robust, f.101r and f.124r at the edge, the short
+  f.106r and f.274 not robust (H158).
+- **Sign values by sequence gain on f.108v (f.61's hand):** ZHOOK = i/x (Tomokiyo's published value) beats a/e, a/u, e/u and
+  null 30/30 each (H157); HASH4 leans d/q over i/x (6/30) and is undecided -- the passes probably lump bare hash (i) and
+  4-over-hash (d/q), H160. On the family pool ZHOOK occurs 5 times: untestable (H161).
+- **f.108v rows:** L06, L04, L01, L03 fit f.61's cells alone (rank 1-7 of 201); L02, L05, L07 at chance, not explained by
+  transcription grade or coverage (H155, H156). The ASKS 89 desk pack carries that reading order, no letters.
+
 ## Files to read
 
 | what | path | step |

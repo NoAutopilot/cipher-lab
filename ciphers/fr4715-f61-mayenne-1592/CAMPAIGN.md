@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 600
-spent_today_usd: 357.32
+spent_today_usd: 357.52
 spent_day: 2026-09-28
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
 crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
@@ -185,7 +185,7 @@ closed:
 | H156 | 2 | F61-108V-WEAK-ROWS: H155 finds f.108v rows L02, L05, L07 at chance under f.61's cells while L01, L03, L04, L06 fit -- script-only diagnostic from family/passes/f108v3z_draft_reconciled.tsv: per row the share of grade L/M columns, reconciled columns, and dropped (uncovered) classes, to see whether the weak rows are a transcription problem (a re-read target) or something else (nulls, code words) | nobody | 0.1 | done | weak f.108v rows not explained by grade, reconciled share or coverage (L05 cleanest of all); not a re-read target |
 | H157 | 1 | F61-ZHOOK-108V: ZHOOK is i/x by Tomokiyo's markup and his f.108r reprint (H44, 10/10), but the held f.108v alignment read it a 7 / e 4 / u 4 (NOTES H44 era); f.108v writes it 20 times -- script-only: sequence gain on f.108v with ZHOOK = i/x vs a/e, a/u, e/u and null, 30 bootstrap resamples of its lines; i/x confirmed at >= 29/30 against each | nobody | 0.4 | done | ZHOOK i/x confirmed on f.108v against a/e, a/u, e/u and null (30/30 resamples each) |
 | H158 | 3 | F61-FAMILY-EDGE-BOOT: H129 put f.124r, f.106r and f.274 in f.61's cells only at the edge (rank 2, 4, 10 of 201) -- script-only: the H152 bootstrap (30 line resamples, 50 permuted maps) on each of the six family leaves, so the family worker knows which leaves share f.61's cells robustly | nobody | 0.8 | done | f.97r and f.188r robust (19, 20/20), f.101r and f.124r edge (17/20), f.106r and f.274 out (8, 6/20: short leaves) |
-| H159 | 3 | F61-PAGE-UPDATE-6: scripts/H66_PAGE.md brought up to H153-H158 (f.108r bootstrap lean, f.108v row order, ZHOOK i/x confirmed on f.108v, family leaves bootstrap); writing only | nobody | 0.2 | open | |
+| H159 | 3 | F61-PAGE-UPDATE-6: scripts/H66_PAGE.md brought up to H153-H158 (f.108r bootstrap lean, f.108v row order, ZHOOK i/x confirmed on f.108v, family leaves bootstrap); writing only | nobody | 0.2 | done | H66_PAGE.md updated to H161 |
 | H160 | 1 | F61-HASH4-108V: H119 found HASH4 = i/x best on f.108r (lean, H154) while the family key has HASH4 = d/q (4-over-hash); f.108v in f.61's hand writes HASH4 14 times (H59 draft) -- script-only: sequence gain on f.108v with HASH4 = i/x vs d/q vs null, 30 bootstrap resamples (H157 design); settles which value f.61's hand uses where the passes do not separate the bare hash | nobody | 0.4 | done | open: on f.108v i/x wins 6/30 against d/q (leaning d/q) and 20/30 against null; HASH4 likely lumps two forms |
 | H161 | 2 | F61-ZHOOK-POOL: H157 confirmed ZHOOK = i/x on f.108v (f.61's hand); the family pool (de Diou's hands) writes ZHOOK too -- script-only: the H157 test on the pool (i/x vs a/e, a/u, e/u, null; 30 resamples) to see whether the published value holds across hands | nobody | 0.6 | done | untestable at n = 5 ZHOOK signs on the pool (formal labels a/u, e/u "preferred" carry no power); H157 f.108v i/x stands |
 | H142 | 3 | F61-SWAP-NOISE: H132 had no noise scale, so its near-ties (under 0.002) could not be judged -- script-only: 30 bootstrap resamples of the family pool's lines (seed 142), the fitted-minus-swap gain for the 15 closest swaps of H132 in each; a swap is confirmed rejected when the fitted map wins in >= 95% of resamples, open otherwise | nobody | 0.5 | done | bootstrap: of H132 15 closest swaps only INF<->SBS and 4PI<->SBS confirmed rejected (29/30); 13 OPEN within resampling noise (incl. 4STEM<->4TRI 16/30, EBR_A<->ISH 9/30) |
@@ -506,3 +506,5 @@ closed:
 2026-09-28 20:09 (clock) | session_01RbeePKZVn83gNfES8yFmhe | H160 done | 0.4 | HASH4 on f.108v leans d/q, undecided.
 
 2026-09-28 20:17 (clock) | session_01RbeePKZVn83gNfES8yFmhe | H161 done | 0.6 | ZHOOK on the pool: 5 signs, untestable.
+
+2026-09-28 20:18 (clock) | session_01RbeePKZVn83gNfES8yFmhe | H159 done | 0.2 | verifier page to H161.
