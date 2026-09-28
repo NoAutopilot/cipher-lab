@@ -3545,3 +3545,8 @@ not his; his i's come from his own table's i/x cell (published). The glyph link 
 form smaller and more cursive). The letter agreement (10/10, every position, two hands on his side) is the other kind of evidence the link
 needed. H157's sequence-gain lean to i/x on f.108v points the same way. No class change, nothing merged: the verifier grades whether f.61's 3
 ZHOOK tokens may be read i at S/C.
+Addendum (same step, script run inline, nothing committed beyond this note): at the other rare or disputed classes' positions under
+the same alignment, Tomokiyo writes a dash (no letter) at every CROSS (f.61 L01/1, L07/10), CA (L03/9, L05/7, L05/8, L08/10) and LL
+(L05/16) position. His reading treats them as nulls or unread, so no period letter can be checked there. At 4PI he reads n (f.61 L11/9)
+and p, d, d, d, d (f.108r): v4's a/d/n/q fits, and f.176r's p/c for the readers' "4PI" does not. That class does not carry over, as
+4STEM p/c did not (H179).
