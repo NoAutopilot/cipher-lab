@@ -67,3 +67,15 @@
 2026-09-28T20:18:15Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f246/full/1200,/0/native.jpg	200	252850	de892afe56ddb5ffb3e42c1cc503faa9477703ce	fr2751/f246_1200.jpg
 2026-09-28T20:18:32Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f243/full/full/0/native.jpg	200	2865034	d041b94e758744ef1646e260863809f0187dc9a1	/tmp/claude-0/-home-user-cipher-lab/83338386-02c4-56da-b690-0a95cd0b9d23/scratchpad/native/f243.jpg
 2026-09-28T20:19:05Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52523734p/f247/full/1200,/0/native.jpg	200	195788	2f4fc5b7487d1f6d9c9557ab52110aef875809b9	fr2751/f247_1200.jpg
+2026-09-28T20:24:11Z H165 archivesetmanuscrits POST 'Diou Rome chiffre'
+2026-09-28T20:24:24Z H165 archivesetmanuscrits POST 'Diou avril 1592'
+2026-09-28T20:24:37Z H165 archivesetmanuscrits POST 'Diou avril 1591'
+2026-09-28T20:24:54Z H165 archivesetmanuscrits POST 'Diou Rome chiffre' (repeat for titles); GET cc58035k/cd0e1760
+2026-09-28T20:25:10Z H165 archivesetmanuscrits POST 'Diou chiffre'
+2026-09-28T20:25:34Z H165 archivesetmanuscrits GET cc504266/cd0e19002 (fr.3984 item 4)
+2026-09-28T20:25:48Z H165 gallica manifest btv1b9060633d (fr.3984) via gallica_folio.py --folio 7
+2026-09-28T20:25:59Z H165 GET gallica btv1b9060633d f15 600px
+2026-09-28T20:26:02Z H165 GET gallica btv1b9060633d f17 600px
+2026-09-28T20:26:05Z H165 GET gallica btv1b9060633d f19 600px
+2026-09-28T20:26:08Z H165 GET gallica btv1b9060633d f21 600px
+2026-09-28T20:26:24Z H165 GET gallica btv1b9060633d f15 pct:5,8,90,30 1600px

@@ -3124,3 +3124,16 @@ sequence gain with the word-lattice resolution (10 shuffles, 100 permuted maps).
 **rank 3 of 101 -> PASS** (weaker than the plain beam's rank 1: the lattice's word bonus lifts shuffled text too).
 **f.108r L04-L06 (HASH4 = d/q per H162): rank 8 of 101 -> FAIL** (gate 5). The lattice does not make the f.108r evidence
 stronger; it stays a lean (H154). No reading, no class change.
+
+## Campaign step H165 (28 Sept 2026, 20:24-20:27 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe) -- key hunt, a lead
+
+BnF Archives et manuscrits searches ("Diou Rome chiffre", "Diou avril 1592", "Diou avril 1591", "Diou chiffre"; 6 requests) and
+Gallica (1 manifest via `tools/gallica_folio.py`, 5 image requests, all 200), logged in `family/requests.log`.
+- The Rome letter of 5 April: a second copy only, **Français 5045 fol. 275, item 125, "5 avril 1591. Copie."** -- the finding
+  aid dates it 1591, as F61-FAMILY-8 inferred from content; no ciphered original found in fr.3982-3984's cipher items.
+- **Lead: Français 3984, fol. 7, item 4 -- Mayenne to de Diou, Paris, 13 May 1593, "avec chiffre et déchiffrement"**
+  (cc504266/cd0e19002). Not among the family leaves in KEY.md. Gallica canvas f15 (inferred fol. 7r) is a full page of cipher
+  runs mixed with clear lines in the polyphonic family's signs (4-shapes, barred triangles, loops on stems, 4-over-hash, the
+  "(a)" mark); canvas f17 is a page of clear text (possibly the decipherment), f21 the address to de Diou. Same correspondents,
+  same months as f.108r/v (Mayenne to de Diou, Feb-Mar 1593). Images in `family/fr3984_f7/` with a README.
+Whether the cipher runs are f.61's own cells, and whether f17 deciphers them, is not checked here (H168). No key, no reading.
