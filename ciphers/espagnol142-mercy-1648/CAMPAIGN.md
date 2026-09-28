@@ -1,10 +1,14 @@
 target: espagnol142-mercy-1648
-goal: a verified reading of the letter at N3 or better after two audits
+goal: raise the existing counted reading (N3, key ours, two audits V6-MERCY/V6-MERCY2 25 Sept 2026; 496 of 522 tokens at S, 26 at M) to a completed reading with a period key (the Brussels register, ASKS 82) and N4 after the editions check
 started: 2026-09-27 20:29 UTC
 daily_budget_usd: 240
 spent_today_usd: 37.00
 spent_day: 2026-09-28
 closed:
+
+## Goal corrected (28 Sept 2026, 05:5x UTC, orchestrator)
+
+The header goal as written on 27 Sept was already met before the sprint began: status.json carries the Mercy result as recovered-passages, N3, key ours, after two audits (25 Sept). The campaign's honest purpose is the next class, not the first one; the line above now says so. Scoreboard effect: none (already one of the 18).
 
 ## Attempts already made
 
