@@ -1944,3 +1944,9 @@ SBS mark. No reading, no class change; nothing solved, new or first.
 Reader's criterion verbatim: "group A is three loops with a stem from under a junction ("oqo"); group B is loops
 crossed or joined by a horizontal bar with no stem ("θθ-"); group C is plain loops with no stem or bar; group D is a
 chain whose tail comes from its last loop."
+
+## Campaign step H78 (28 Sept 2026, 14:59-15:00 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs) -- dropped, no call
+
+4STEM c vs a/n on the family leaves: only 4 period-c tokens under 4STEM match pass A on f.101r (a 8, n 5; f.188r a 5, n
+2, no c), 8 tiles at most against the row's pre-registered minimum of 18 scored. Untestable at this n by this recipe;
+no vision call spent. (Match counts from `scripts/f61sbs.tokens`, the same filter every H65-H77 build used.)
