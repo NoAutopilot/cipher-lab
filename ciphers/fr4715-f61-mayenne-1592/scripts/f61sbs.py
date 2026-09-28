@@ -79,7 +79,8 @@ def stat(groups, labels):
     gs = sorted(set(groups)); return max(sum(1 for g, l in zip(groups, labels) if dict(zip(gs, lets))[g] == l) for lets in itertools.product("eo", repeat=len(gs)))
 def score(path):
     key = {int(r["tile"]): r for r in rows(f"{HERE}/f61sbs_tiles.tsv")}
-    got = rows(f"{HERE}/{path}") if not path.startswith("/") else rows(path); out = [f"{path}: {len(got)} rows; {len(key)} tiles"]
+    src = path if path.startswith("/") else f"{HERE}/{path}"
+    got = list(csv.DictReader((l for l in open(src) if not l.startswith("#")), delimiter="\t")); out = [f"{path}: {len(got)} rows; {len(key)} tiles"]
     groups, labels, tab = [], [], defaultdict(lambda: defaultdict(int))
     for r in got:
         t = int(r["tile"]); k = key.get(t)

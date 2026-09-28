@@ -1,0 +1,6 @@
+read_call_SBS.tsv: 40 rows; 40 tiles
+  tile 24: not scored (ticks mark a long-s stem and a 4/cross-like sign)
+  group A: e 1, o 18
+  group B: e 18, o 2
+scored 39 (e 19, o 20); groups 2; observed 36/39; permutation P = 0.0000 over 2000 (seed 1); p95 26/39
+GATE H65: PASS

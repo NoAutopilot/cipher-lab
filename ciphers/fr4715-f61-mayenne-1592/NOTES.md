@@ -1697,3 +1697,45 @@ stand** -- with the qualification the call itself supplies: the CA signs pass A 
 L07/1) are the ones a reader takes for the text's own "a", and whether they are counted as a null sign or as the clear
 word "a" changes no cell and no letter of any reading (a null and an unread text letter render the same). The skeleton
 (H58) keeps them as nulls. No class change; nothing solved, new or first. Vision calls: 1 of 4.
+
+## Campaign step H65 (28 Sept 2026, 14:19-14:30 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+Question: is H26's two-loops-side-by-side glyph (SBS, b/o on f.61r and f.108r by our fit only) the glyph under which the
+period decipherers of the family leaves write o, i.e. does the period gloss itself separate it from the e/r trefoil PHI?
+
+Design (pre-registered, pushed 9c78f3f8 before the call; `scripts/f61sbs.py`, prompt in `scripts/PROMPTS.md` "H65"):
+every PHI token of `family/passes/{f101r,f274,f188r}_align.tsv` whose aligned period letter is a single o or e, placed
+by pass A's x (difflib match of the reconciled draft to pass A, A's own sign also PHI). Matched: f.101r 66 o / 220 e,
+f.188r 20 o / 64 e, f.274 none (its align lines do not equal its draft). Sample (seed 65): f.101r 10 o + 10 e, f.188r
+10 o + 10 e, 40 tiles cut from the native Gallica images (f.101r and f.188r fetched once each, 2 requests to
+gallica.bnf.fr, kept in the scratchpad, not committed), re-centred on the local ink row, the period gloss row above cut
+away so no letter is shown, shuffled, four contact sheets `images/h65/sbs_sheet1-4.jpg`; answer key
+`scripts/f61sbs_tiles.tsv` never named to the reader. One blind Opus vision call (1 of 4), told only to describe and
+sort the loop-on-stem sign between the ticks, no letters.
+
+Result: the reader made two groups -- A "two loops side by side at line height, stem hangs from their junction, through
+neither" and B "a loop raised above the line (phi-like) or a small top loop over a pair (trefoil), stem through it";
+tile 24 marked none (the ticks fall on a long-s and a 4-like sign: an x error in the pass, not scored).
+
+| group | period e | period o |
+|---|---|---|
+| A (side by side) | 1 | 18 |
+| B (trefoil / phi) | 18 | 2 |
+
+Scored 39 (e 19, o 20): observed 36/39, permutation P < 0.0005 (0 of 2000, seed 1), p95 26/39 -> **GATE H65 PASS**
+(`scripts/f61sbs_result.txt`, `--check` OK). Per leaf, the two hands separately: f.101r 17/19 (A: o 9, e 1; B: e 8,
+o 1), f.188r 19/20 (A: o 9; B: e 10, o 1). Balanced classes (19/20), so the blended figure is not a majority-class
+artefact (rule 3's AX-NAMES lesson).
+
+What it licenses: the period decipherers of two further hands write o under the side-by-side glyph and e under the
+trefoil, so the SBS cell's o value rests on a period gloss (grade C for o), not only on our f.61/f.108r fit (H26/H51).
+The b half of the b/o cell is NOT tested here (f.101r 13 and f.188r 8 PHI tokens carry a period b: H67). The
+readers' PHI code on the family leaves is therefore two glyphs; the family key's PHI e/r/o triple is a coding merge,
+and H52's per-leaf re-sort plus key rebuild (the family worker's row) now has a positive sampled test behind it. No
+reading claimed, no class change; nothing here is solved, new or first. Three misses (tiles 6, 28, 40) are left as
+they fell (alignment or x-placement noise, or a real variant): not re-read.
+
+Reader's criterion verbatim: "in group A the two loops sit side by side at writing-line height and the stem hangs from
+the point where they meet, without passing through either loop; in group B at least one loop rises above the line (a
+phi-like loop or a small top loop over a pair, making a trefoil) and the stem runs up through the loop or cluster."
+Group per tile in `scripts/read_call_SBS.tsv`.
