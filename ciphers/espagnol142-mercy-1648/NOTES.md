@@ -2432,3 +2432,12 @@ word that is there); then amiens / cuaresma 5, adrien / tamayo 4 on the unread p
 the independent onomasticon reaches Burgsdorf's 7 with no mismatch on the unread stretch.** With H71 (read text never above
 4), H72 (0 of 10,000 synthetic names) and H61 (no rival among 883 court names), the name fit is not an artefact of the
 list it was scored against. It remains conditional on 72 = two letters (H53, H63). No token, grade or class change.
+
+## Campaign step H75 (2026-09-28 16:56 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Rule 7 for the crib: `candidates/crib_evidence.py [--check] [--skip-image]` regenerates
+every number the Burgsdorf crib candidate stands on from committed files into `candidates/crib_evidence.tsv` (20 s; needs
+Pillow for the H63 gap): H41 7 (7/0) at r16:16, P 0.002; H53 the same with only nomenclature or only 72 wild, 1 (5/4) with
+none; H61 P 0.002 / 0.001 on 599 / 883 names; H62 split 8/1; H63 gap 13 px; H71 read windows at most 4; H72 0 of 10,000;
+H74 best independent name on the unread tokens 5 (cuaresma). `--check` passes. This is what a separate verifier session
+would run first; the crib stays a candidate. Disk only.

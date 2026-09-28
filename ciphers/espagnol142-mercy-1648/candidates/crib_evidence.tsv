@@ -1,0 +1,31 @@
+item	value
+H41.best	burgsdorf
+H41.burgsdorf	7 (7/0) at r16:16
+H41.P	0.002
+H41.candidate	True
+H53a_nomen_only.best	burgsdorf
+H53a_nomen_only.burgsdorf	7 (7/0) at r16:16
+H53a_nomen_only.P	0.002
+H53a_nomen_only.candidate	True
+H53b_72_only.best	burgsdorf
+H53b_72_only.burgsdorf	7 (7/0) at r16:16
+H53b_72_only.P	0.002
+H53b_72_only.candidate	True
+H53c_none.burgsdorf	1 (5/4)
+H61_599.best	burgsdorfs
+H61_599.burgsdorf	7 (7/0) at r16:16
+H61_599.P	0.002
+H61_599.candidate	True
+H61_883.best	burgsdorfs
+H61_883.burgsdorf	7 (7/0) at r16:16
+H61_883.P	0.001
+H61_883.candidate	True
+H62_split.best	burgsdorf
+H62_split.burgsdorf	7 (8/1) at r16:16
+H62_split.P	0.002
+H62_split.candidate	True
+H63.r16_21_gap_px	13
+H71	24 read windows of 62 tokens; best fit >= 7 with 0 mismatches: 0; full candidate rule met: 0
+H71.top_scores	[4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+H72	10000 synthetic names: fit >= 7 with 0 mismatches 0 (0.00%); fit >= 6 3 (0.03%)
+H74.best_on_unread_r16_2_r17_21	cuaresma 5 (6/1)
