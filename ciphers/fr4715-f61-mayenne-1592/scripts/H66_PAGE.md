@@ -46,6 +46,29 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
    gloss readings wait on a person (ASKS rows 88/89; desk packs in `images/person_pack/` and
    `images/person_pack_108v/`). The model routes on that hand's gloss FAILed (H34, H35, H57).
 
+## H108-H134 (runner 5, 28 Sept 2026, 17:17-19:16 UTC) -- what changed for the verifier
+
+- **f.108r L04-L06 input (H108).** L06 was cut in half by the H34 region; re-cut whole from a taller strip, two blind passes
+  (34/40 agree), reconciled draft `f61recon108r_draft.tsv` (gate PASS, 1/85 flagged; 13/85 grade L). The loop-sign relabel
+  instrument failed its control twice (H108 13/18, H113 18/26) and is retired for this question (rule 3).
+- **Judge on f.108r (H112): FAIL both seeds** on the corrected input (all sets <= 2.0). **Valid f.108v one-swap null (H111):
+  PASS thin**, 5.0 vs the powerless c/p-d/q swap 4.0, every swap with power <= 3.5 -- replaces the void H100.
+- **The 4-gram beam, known-answer accuracy of its within-pair choices** (14-cell map): f.61 spans 38/49 = 0.776 (H116),
+  f.108r overlay 69/76 = 0.908 (H121), period gloss of f.101r/f.188r 0.716 -> 0.753 with KEY.md equivalences (H130/H133, noisy
+  automatic alignment). Under key v4's wide sets it is near chance (H117, 23/42). Margin grading: FAIL by one (H126, 85/95);
+  the misses cluster on the a/n cell in span S3 (H131). Word rescoring changes nothing (H134).
+- **Correction (H124): a plain permutation rank is not evidence on long texts** -- the fitted map ranks first on f.108v even
+  with the signs shuffled (letter frequency). Use **sequence gain** instead (real order minus shuffled, `f61beam_seqgain.py`),
+  null on shuffled text (H128, 1 of 25 in the top 10). By sequence gain the fitted map ranks 1 of 201 on the known lines,
+  on f.108v (about twice the best permuted gain), thinly on f.108r with HASH4 = i/x (H127), and on the family leaves f.97r,
+  f.101r, f.188r (rank 1; f.124r, f.106r, f.274 at the edge, H129). On the pooled family leaves 128 of 129 one-swaps lose
+  (H132); the near-ties sit on classes the family passes merge (43 into 4TRI, mixed EBR_A).
+- **HASH4 on f.108r:** i/x best of four values (H118), replicated rank 1 of 1001 (H119); d/q hurts (H114).
+- **Committed predictions** for scoring when the glosses are read: f.108r L04-L06 by the judge (H107, H112) and the beam
+  (`f61beam_f108r_prediction.txt`, H120); f.108v by the beam (`f61beam_f108v_prediction.txt`, H123).
+- Nothing here reads f.61r: its text outside Tomokiyo's spans is 17 signs (H125 dropped); the beam is a grading aid at about
+  three right in four, not a reading.
+
 ## Files to read
 
 | what | path | step |
@@ -61,6 +84,7 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 | judge letter-choice calibration | `scripts/f61judgeletters_result.txt`, `f61judgeletters_known_h51_s104_result.txt` (`f61judgeletters.py [--tag known_h51_s104] --check`) | H90, H94 |
 | model-free checks and hard null | `scripts/f61judge_ngram_result.txt`, `f61judge_ngram_hard_result.txt` (`f61judge_ngram.py [--hard] --check`), `scripts/f108v_lines.txt`, `scripts/f61judge_{known_h51,f108v}_swaps105_*`, no-leak `*_s104_*` | H93, H94, H100-H103 |
 | coding merges found in the family readers' classes (for the family worker) | `scripts/family_relabel_proposal.tsv` | H99 |
+| runner 5 (H108-H134): f.108r draft, beam and sequence-gain scripts | `f61recon108r.py`, `f61loop108r.py`, `f61hash4_108r.py`, `f61ngram108r_repl.py`, `f61beam_known.py`, `f61beam_margin*.py`, `f61beam_shuffle.py`, `f61beam_seqgain.py`, `f61seqgain_shuffle.py`, `f61seqgain_family.py`, `f61swap_family.py`, `f61beam_period.py`, `f61beam_words.py`, `f61beam_f108r_predict.py` (each `--check`) | H108-H134 |
 
 ## Counts the verifier can re-derive
 

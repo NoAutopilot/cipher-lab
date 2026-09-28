@@ -2817,3 +2817,8 @@ overlay 69/76 both ways) -> **GATE (>= 115/125): FAIL, no change at all**. Why, 
 their last three letters, so its final 400 candidates differ only near the end of each line and a rescoring of them cannot
 reach an earlier choice. A word model would have to live inside the search (states carrying a word position), a different
 instrument (H136), not a weight on this one. No reading, no class change.
+
+## Campaign step H135 (28 Sept 2026, 19:17 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only writing
+
+`scripts/H66_PAGE.md` gains a section "H108-H134" (the f.108r draft, the retired loop instrument, the beam's known-answer
+figures, the H124 correction and the sequence-gain results, HASH4, the committed predictions) and a files row. No new claim.
