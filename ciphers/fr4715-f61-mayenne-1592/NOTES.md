@@ -2718,3 +2718,19 @@ beam 4/11 overall) gets a near-zero threshold from the other folds and its wrong
 rate is 81/84. No threshold is licensed, so no per-position firm/soft flag is offered to the verifier; the threshold is not
 tuned after the fact. What the step does show: the beam's errors cluster in a span (S3) rather than spreading evenly, so a
 margin alone cannot flag them. No reading, no class change.
+
+## Campaign step H131 (28 Sept 2026, 18:49 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only diagnostic
+
+From `scripts/f61beam_margin14_positions.tsv` and `scripts/passA_classes.tsv` (L05, span S3 "---trop--avance-es"): the beam
+reads the 11 known positions as g r b p . n . n . a p r . e s against Tomokiyo's t r o p . a . a . n c e . e s (dots:
+positions outside the known set). Seven wrong:
+
+- **three on C43 (a/n)**, positions 9, 11, 13 -- all three inverted (n n a for a a n), each at pass-A confidence h: the
+  a/n choice, not the sign;
+- two on signs pass A graded l: VBAR_A g/t at 3, 4TRI c/p at 14;
+- one on the DBL -> SBS relabel (b/o at 5, beam b for o) and one e/r (15).
+
+So S3's cluster is mostly the a/n cell -- the within-pair choice H106 already found softest on f.108v (e/r and a/n) -- plus
+two low-confidence transcriptions; the nulls Tomokiyo dashes (CA CA at 7-8, C6 at 12, LL at 16) split the span into short
+pieces, which leaves the 4-gram little context. For the verifier: the beam's a/n and e/r letters are its weakest, and a span
+cut by nulls into runs of 2-4 letters is where it fails. No reading, no class change.
