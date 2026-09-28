@@ -1,0 +1,38 @@
+# H24 blind 4-shape sort (Opus vision subagent, 28 Sept 2026, one call, about 129k subagent tokens, 132 s; prompt verbatim in scripts/PROMPTS.md section H24; no letters, no key). Rows verbatim. Its criterion, verbatim: "The groups split on what hangs off the 4-element: A is a closed 6-figure with no 4-element; B is a 4 with a 3-like curl joined low on its right; C is a lone 4 with nothing joined, on a long stem that is usually crossed by a second bar; D has no 4 at all, just a single small loop on a stem with a bar at its foot." Its exclusions, verbatim: "the f108 signs that are a 4 over two stems with two crossbars (a 4 on top of a #), at L02 seg3 x~1110 and ~2080, L03 seg3 x~960, and L03 seg4 x~1260. I treated them as the hash/pi family." Its count line: "four-signs found: 36".
+sheet	segment	x_px	order_in_sheet	group	four	right	stem	foot	weight	note
+f61sheetB_L01	3	1770	1	A	none (6-figure: open hook top, closed lower bowl)	nothing	short, plain	nothing	medium brown	6-like figure
+f61sheetB_L01	3	2080	2	B	open, crossbar, diagonal steep left-leaning	3-like curl	medium, plain	curl (tail of 3)	medium	43
+f61sheetB_L03	2	108	1	D	none (single small loop)	nothing	medium, plain	bar	medium	loop on stem, crossbar at foot
+f61sheetB_L03	2	1715	2	B	open, crossbar, moderate slant	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L03	3	135	3	A	none (6-figure)	nothing	short	nothing	heavy	6-like
+f61sheetB_L03	3	324	4	D	none (single loop)	nothing	medium, plain	bar	medium	loop on stem, bar at foot
+f61sheetB_L03	3	594	5	B	open, crossbar, moderate slant	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L05	1	1930	1	D	none (single loop)	nothing	medium, plain	bar	medium	loop on stem, bar at foot
+f61sheetB_L05	2	1715	2	B	open, crossbar, moderate slant	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L05	2	2350	3	B	open, crossbar	3-like curl (in seg 3 at x~30)	long, plain	curl	medium	43 cut on the seg2/3 boundary, counted once
+f61sheetB_L05	3	270	4	A	none (6-figure)	nothing	short	nothing	heavy	6-like
+f61sheetB_L05	3	500	5	B	open, crossbar, moderate slant	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L07	3	1715	1	D	none (single loop)	nothing	medium, plain	bar (long, sweeping)	medium	loop on stem, bar at foot
+f61sheetB_L07	3	2360	2	B	open, crossbar	3-like curl (in seg 4 at x~20)	long, plain	curl	medium	43 cut on the seg3/4 boundary, counted once
+f61sheetB_L07	4	580	3	A	none (6-figure)	nothing	short	nothing	heavy	6-like
+f61sheetB_L08	1	770	1	B	open, crossbar, moderate slant	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L08	1	1080	2	A	none (6-figure)	nothing	short	nothing	medium	6-like
+f61sheetB_L08	1	2280	3	B	open, crossbar	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L08	2	610	4	A	none (6-figure)	nothing	short	nothing	medium	6-like
+f61sheetB_L11	1	1565	1	B	open, crossbar, moderate slant	3-like curl	medium, plain	curl	medium	43
+f61sheetB_L11	1	2360	2	C	open, crossbar (a dash at seg2 x~30 may be its bar)	nothing	long, plain	nothing	medium	lone 4 on long stem at segment edge; uncertain
+f61sheetB_L10	4	1240	1	A	none (6-figure)	nothing	short	nothing	medium	6-like
+f61sheetB_L10	4	2090	2	A	none (6-figure)	nothing	short	nothing	heavy	6-like
+f108sheetB_L02	1	1280	1	B	open, crossbar, steep diagonal	small 3-like curl low right	medium, plain	curl	heavy black	43, small 3
+f108sheetB_L02	1	2400	2	B	open, crossbar, steep diagonal	tiny tick/curl low right	medium, plain	tick	heavy black	43 with reduced 3; could be read as a plain 4
+f108sheetB_L02	2	890	3	B	open, crossbar	3-like curl	medium, plain	curl	heavy black	43
+f108sheetB_L02	2	2190	4	B	open, crossbar	3-like curl	long, plain	curl	heavy black	43
+f108sheetB_L02	2	2600	5	C	open, crossbar	nothing	long, crossed by a 2nd lower bar	nothing	heavy black	4 on long crossed stem, after a vertical rule; runs into seg 3 x~0-50; counted once
+f108sheetB_L03	1	1100	1	B	open, crossbar	small 3-like curl	medium, plain	curl	heavy black	43
+f108sheetB_L03	1	2650	2	C	top obscured by a gloss letter, crossbar visible	nothing	long, crossed	nothing	heavy black	4/7 on crossed stem, runs into seg 2 left edge; uncertain
+f108sheetB_L03	2	1300	3	B	open, crossbar	3-like curl (at crop x~1350)	medium, plain	curl	heavy black	43
+f108sheetB_L03	2	1740	4	B	open, crossbar	small 3-like curl	medium, plain	curl	heavy black	43
+f108sheetB_L03	2	2170	5	B	open, crossbar	3-like curl	long, plain	curl	heavy black	43 after a vertical rule
+f108sheetB_L03	2	2620	6	B	open, crossbar	3-like curl	medium, plain	curl	heavy black	43 at right edge
+f108sheetB_L03	3	540	7	B	open, crossbar	small 3-like curl	medium, plain	curl	heavy black	43
+f108sheetB_L03	3	2640	8	B	open, crossbar	faint 3-curl in seg 4 at x~20	long, plain	curl	heavy black	43 cut on the seg3/4 boundary, counted once

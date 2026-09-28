@@ -1,0 +1,22 @@
+read_call_AN.tsv: 36 loop signs listed; expected 32 (18 labelled)
+  f61sheetB_L01/2 C6: group A (), letter - (-)
+  f61sheetB_L01/3 C43: group B (), letter a (a)
+  f61sheetB_L03/2 LOOPBAR: group D (), letter - (-)
+  f61sheetB_L03/8 C43: group B (), letter a (a)
+  f61sheetB_L03/11 C6: group A (), letter - (-)
+  f61sheetB_L03/12 LOOPBAR: group D (), letter a (-)
+  f61sheetB_L03/13 C43: group B (), letter b (-)
+  f61sheetB_L05: expected 4, listed 5 -> NOT reconciled, dropped
+  f61sheetB_L07: expected 2, listed 3 -> NOT reconciled, dropped
+  f61sheetB_L08/2 C43: group B (), letter a (a)
+  f61sheetB_L08/3 C6: group A (), letter - (-)
+  f61sheetB_L08/7 C43: group B (), letter a (a)
+  f61sheetB_L08/9 C6: group A (), letter - (-)
+  f61sheetB_L11/5 C43: group B (), letter n (n)
+  f61sheetB_L11/8 4STEM: group C (), letter - (-)
+  f61sheetB_L10/10 C6: group A (), letter - (-)
+  f61sheetB_L10/13 C6: group A (), letter - (-)
+  f108sheetB_L02: expected 4, listed 5 -> NOT reconciled, dropped
+  f108sheetB_L03: expected 7, listed 8 -> NOT reconciled, dropped
+scored 5 (a 4, n 1); groups 1; observed 4/5; exact P(>=obs) = 1.0000 over 5 arrangements; permutation p95 4/5
+GATE H24: FAIL

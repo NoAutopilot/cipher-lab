@@ -1491,3 +1491,30 @@ string proposed (`fragment_L10.tsv` as regenerated in H51 already claims none). 
 **Cost.** Six Opus text calls; the row's est (3) priced them at about half the ledger rate -- about 7 USD spent (own
 estimate; the orchestrator's get_session figure is the record). No class change; nothing solved, new or first; no
 credentials, no AskUserQuestion; the owner not named.
+
+## Campaign step H24 (2026-09-28 05:33 UTC) -- FAIL as pre-registered (a non-test): four of nine sheets did not reconcile
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). One Opus vision call (about 129k subagent tokens, 132 s), prompt in
+`scripts/PROMPTS.md` (H24) and scorer `scripts/f61an.py` pushed 68d3742c before the call; no network. Hypothesis H24
+(F61-AN-SORT): the table's two a/n symbols -- does a blind sort of the 4-shaped signs (C43, 4STEM, C6, LOOPBAR) separate the
+a positions from the n positions (32 expected signs, 18 labelled C43/4STEM: a 13, n 5)?
+
+**Output (`scripts/read_call_AN.tsv`, verbatim).** 36 signs in four groups: A "a closed 6-figure with no 4-element" (10),
+B "a 4 with a 3-like curl joined low on its right" (the 43; 20), C "a lone 4 on a long stem usually crossed by a second
+bar" (3), D "a single small loop on a stem with a bar at its foot" (4). It excluded four f.108 "4 over two stems with two
+crossbars" signs as the hash/pi family.
+
+**Result (`scripts/f61an_result.txt`).** Reconciled sheets: f.61 L01, L03, L08, L11, L10 (counts match); NOT reconciled and
+dropped by the rule: f.61 L05 (expected 4, listed 5: the reader's D at segment 1 is pass A's LOOPSTEM1, a class the expected
+list did not carry), L07 (2 vs 3: a "43 cut on the segment 3/4 boundary" where pass A has no C43), f.108 L02 (4 vs 5) and
+L03 (7 vs 8). Only 5 labelled positions survive (a 4, n 1), all in group B: **non-test** (exact P = 1.0 over 5
+arrangements). **FAIL as pre-registered.** Four of the five n labels sit on the dropped f.108 sheets, so nothing is
+licensed either way about a versus n.
+
+**What the call does show, ungated.** Every "43" the reader saw on both leaves went into ONE group (B, 20 signs, including
+f.61 L11/5 under n and the f.108 C43 signs under n on the dropped sheets): at this resolution the reader does not see two
+43 glyphs. That is an observation, not a verdict; the H13-H15 precedent (a count-mismatched first call, then a
+pre-registered re-run with the class scope fixed) is the route: H24b restricts the sort to the 43 glyph alone (18 expected
+C43 signs, labels a 13 / n 5), excludes the 6-figures, loops and lone 4s explicitly, and asks for x positions so a
+mismatch can be diagnosed -- a re-run with one pre-registered fix, not a third try of the same call. Not a reading; no class
+change; nothing solved, new or first. Vision calls: 1 of 4.
