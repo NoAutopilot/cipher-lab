@@ -2187,3 +2187,15 @@ Effect on the crib: the name fit (H41, H53) does not depend on the title; the ti
 second reading that does not need Burgsdorf at all ("... [Burgsdorf], su camarero mayor" vs a phrase about the Elector
 as camarero mayor del Imperio). H42 stays borderline, and the pair of fits is weaker evidence of one person than H42's
 note put it. No token, grade or class change.
+
+## Campaign step H58 (2026-09-28 16:18 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** The Brussels side in calendar form, for 1648 entries on Brandenburg / Cleves /
+a levy / Mercy that might name the persons Mercy was to see. (1) Cuvelier-Lefèvre VI, IA be-api full-text search
+(`correspondancede0006jose`; 8 queries, `h58/fts_*.json`): Brandebourg, Clèves, levée, "trois mille", Neubourg hit
+only early-century entries (Archduke Albert, the Jülich-Cleves question); Mercy hits only the known p.647 (no. 1499) and
+index lines; Burgsdorf 0. The API returns at most five snippets per query, so this is a sample, not a full read. (2)
+Lonchay 1896, *La rivalité de la France et de l'Espagne aux Pays-Bas*, full _djvu.txt (IA
+`la-rivalite-de-la-france-et-d-espagne-aux-pays-bas-1635-1700`, grep; `h58/lonchay_hits.txt`): one Brandenburg passage
+near 1647-49 dates (the 1658 imperial election), nothing on Mercy's Cleves mission beyond p.445 (already in
+siblings_brussels.md). archive.org 3 requests, be-api 8. No token, grade or class change.
