@@ -1642,3 +1642,14 @@ definition (-44.8 under es17, -22.9 under es17c7). M2's "control gains 0.0, targ
 compared a circular zero with the price of reading, and licenses nothing either way. The instrument for hand
 corrections is letter accuracy on a control with known truth read by a reader, not an anneal score; the gate line
 is retired here. No reading or grade change. Disk only.
+
+## Campaign step H28 (2026-09-28 04:41 UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** The 18 marks (H13's 16 plus H15's two on r06) against the codes they follow, versus
+1,000 draws of 18 marks at code-frequency weights (`h13marks/marks_vs_code_frequency.log`). Overall no code is
+dotted more than chance predicts (largest count for one code: observed 3, random mean 3.21, P = 0.81). One code is
+notable on its own: **34 (= a) carries a dot on 3 of its 9 occurrences** (expected 0.31, P = 0.003 uncorrected, about
+0.04 after correcting for the 13 codes tested), and all three are on r04, the first cipher line (positions 1, 12,
+14: the a of "alandose", "estas", "armas"), so a first-line habit cannot be separated from a code-specific one on
+this leaf. Codes 14 (2 of 14, P 0.09) and 8 (2 of 24, P 0.18) do not reach it. Logged for the comparison with the
+Brussels register (a dotted homophone would be a key feature); no token or grade changed.
