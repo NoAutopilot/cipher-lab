@@ -29,3 +29,44 @@ f428R_L04	5	1023	-	high	repeats value seen f428L L23, f428R L02
 f428R_L04	6	1481	if	low	faint gloss "if"(?) above, uncertain; repeats value seen f428L L03/L18/R03
 f428R_L04	7	69	-	high	repeats value seen f428L L19/L23
 f428R_L04	8	1209	-	medium	close to 1207 (f428L L25) but read with final digit 9 here
+f428R_L05	1	?	-	low	left edge, cut fragment before "1481."; line: "?.1481. self. This is 1651. [man]469. The immediate"
+f428R_L05	2	1481	-	medium	repeats value seen f428L L03/L18/R03/R04
+f428R_L05	3	1651	its	low	faint tiny gloss above, uncertain; repeats value seen f428R L01
+f428R_L05	4	469	man	medium	gloss "man" clearly written above
+f428R_L06	1	490	dispatch	low	line: "[conclusion] of those who before [dispatch?]490. 1229. 426. 975. 133[edge]"; gloss faint, uncertain
+f428R_L06	2	1229	-	high	-
+f428R_L06	3	426	-	high	-
+f428R_L06	4	975	-	high	repeats value seen f428L L21
+f428R_L06	5	133	-	medium	edge, cut; repeats value seen f428L L23/f428R L01/L04
+f428R_L07	1	NONE	-	high	prose only: [?]0. is that he had just learnt from his dispatches of
+f428R_L08	1	69	-	high	line: "[?]e change 69. 1651. 730. 1242. but it is just as reasonable"; faint phrase "on the emperors plan" above spans this group, not one-word-per-number
+f428R_L08	2	1651	-	high	repeats value seen f428R L05/L06 context
+f428R_L08	3	730	-	medium	small mark after (ordinal flourish?) not treated as digit
+f428R_L08	4	1242	-	high	-
+f428R_L09	1	66	-	high	line: "suppose that he. 66. [intended]1588. 975. [that]255. [to]244. [deceive]87. 163. 1023."
+f428R_L09	2	1588	intended	medium	gloss clearly above
+f428R_L09	3	975	-	high	repeats value seen f428L L21/f428R L06
+f428R_L09	4	255	that	medium	gloss above
+f428R_L09	5	244	to	medium	gloss above; repeats value seen f428L L23/L24, f428R L02/L04
+f428R_L09	6	87	deceive	medium	gloss above
+f428R_L09	7	163	-	high	-
+f428R_L09	8	1023	-	high	repeats value seen f428L L23, f428R L02/L04
+f428R_L10	1	1578	that	medium	line: "otherwise 1578. 926. 1114. 1419. 1484. 87. 310. 1158. and"; glosses that/he/himself/is/deceived over first five groups
+f428R_L10	2	926	he	medium	repeats value seen f428L L03 (glossed "he" there too - consistent)
+f428R_L10	3	1114	himself	medium	repeats value seen f428L L19 (there read "111?"/1114, now corroborated)
+f428R_L10	4	1419	is	medium	repeats value seen f428R L02
+f428R_L10	5	1484	deceived	medium	close to 1481 (frequent elsewhere) but read with final digit 4 here
+f428R_L10	6	87	-	high	repeats value seen f428R L09 (glossed "deceive" there)
+f428R_L10	7	310	-	high	-
+f428R_L10	8	1158	-	medium	edge area
+f428R_L11	1	NONE	-	high	prose only: after all perhaps the most correct judgements
+f428R_L12	1	NONE	-	high	prose only: to the future is to be formed, not upon what is
+f428R_L13	1	NONE	-	high	prose only: or appears to be doing but upon the known motives
+f428R_L14	1	1246	-	high	line: "1246. 381. 622. if not [justifiable]1478. 1203. 157. 1146. 208. cause"
+f428R_L14	2	381	-	high	-
+f428R_L14	3	622	-	high	-
+f428R_L14	4	1478	justifiable	medium	gloss clearly above; close to but distinct from the frequent 1481
+f428R_L14	5	1203	-	high	-
+f428R_L14	6	157	-	medium	matches value seen f428L L20 (recorded there as uncertain "1?7")
+f428R_L14	7	1146	-	medium	close to 1147 (f428L L23, f428R L02) but read with final digit 6 here
+f428R_L14	8	208	-	high	right edge area
