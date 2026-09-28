@@ -2756,3 +2756,22 @@ f.124r, f.106r and f.274 at the edge (a permuted map comes within or above them)
 f.108r only, so this is out-of-sample for the family leaves. It supports the family route the campaign already takes (the
 period keys of these leaves feeding key v4) with a model-free, frequency-proof statistic, and it makes f.101r and f.188r --
 long, period-glossed, rank 1 -- the known-answer material for H130. No reading, no class change.
+
+## Campaign step H130 (28 Sept 2026, 18:57-18:59 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_period.py` (pushed 2efb4bed before the run; `f61beam_period_result.txt`): the beam's within-pair choice
+under f.61's 14 cells against the period decipherer's letter aligned under each sign (`family/passes/<leaf>_align.tsv`).
+
+| leaf | scored positions | beam right | always-first-letter |
+|---|---|---|---|
+| f.101r | 1,042 | 724 = 0.695 | 0.583 |
+| f.188r | 491 | 373 = 0.760 | 0.554 |
+| pooled | 1,533 | 1,097 = **0.716** | 0.573 |
+
+**GATE H130 (>= 0.80 on >= 100): FAIL.** On the period-glossed leaves the beam beats the first-letter baseline by about 14
+points over 1,533 positions but does not reach the 0.86 it showed on Tomokiyo's known texts (H116/H121). Two causes the step
+does not separate: the period letters come from an automatic sign-to-gloss alignment (the align files mark 1,522 of 3,075
+f.101r rows "conflict"), so some "errors" are alignment slips whose letter happens to sit in the pair; and these leaves are in
+other hands with their own spelling and the family passes' coarser classes (PHI here still holds the side-by-side b/o
+form). The beam's accuracy on f.61 itself therefore stays the H116 figure (0.776 on 49), with 0.72 as a lower bound from a
+noisier known answer. No reading, no class change.
