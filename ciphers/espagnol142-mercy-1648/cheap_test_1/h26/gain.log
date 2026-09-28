@@ -1,0 +1,5 @@
+control (H21 design-matched, es17c7): blind -> held-words re-anneal
+  seed 1: score -1100.7 -> -1100.7 (gain +0.0); letters 98.5% -> 98.5%
+  seed 2: score -1090.0 -> -1090.0 (gain +0.0); letters 97.7% -> 97.7%
+  seed 3: score -1177.1 -> -1177.1 (gain +0.0); letters 98.1% -> 98.1%
+target (es17c7): free -1138.5 (H1) -> held-29 -1161.4 (H3): gain -22.9; under es17 (M2): -1154.3 -> -1199.1, gain -44.8

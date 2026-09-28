@@ -1615,3 +1615,16 @@ G-statistic of homophone choice against the preceding and the following letter, 
 P = 0.072; following letter: G 117.6 vs 123.5, P = 0.70. **No rule detectable at this N**: the choice is a habit
 with strong preferences (a: 39/18/9, e: 57/25/3, o: 20/8/5, u: 24/4) rather than a positional convention -- the
 uneven use H21 noted, without a context rule behind it. A negative with a control that can differ. Disk only.
+
+## Campaign step H26 (2026-09-28 03:47-03:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** M2's crib-loop gain gate re-run under es17c7 (the "While waiting" item). Control: the
+three H21 design-matched Cartas controls, blind es17c7 decode, every in-vocabulary stretch of 4+ letters in the decode
+held fixed (72-79 words, 35-38 of 39 signs, 32-33 of them right), re-annealed (`cheap_test_1/h26/`, `gain.log`).
+Control gain: **+0.0, +0.0, +0.0** anneal points, letters 98.5 / 97.7 / 98.1% before and after. Target under es17c7:
+free -1138.5 (H1) to held-29 -1161.4 (H3), gain -22.9 (under es17, M2: -44.8). **A non-test under both corpora, and
+now visibly so:** the control reads 98% blind, so holding words it already has can gain nothing -- the control has
+no headroom (CLAUDE.md rule 3, the "control already near ceiling" paragraph), which M2's own control (a 51.6% blind
+read that also gained 0.0) had hidden. The target's negative "gain" is the cost of holding hand-read words the
+trigram objective does not prefer, smaller under the register-matched corpus. The gate needs a control that can
+gain (H27). No reading or grade change. Disk only.
