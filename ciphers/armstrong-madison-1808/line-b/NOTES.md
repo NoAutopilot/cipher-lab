@@ -1010,3 +1010,23 @@ the Jefferson channel from June to October 1808 does not return to the undecyphe
 result, not a novelty verdict (rule 10). Files: scratch only (`jefferson_8091_8900.tsv`, fetched pages under
 `fo/`), not committed, per the B6 convention; the row's numbers are the record. Result: done (search result, nothing
 found). B31 (ids 7400-8002, Jan-May 1808) is running behind it on the same single-threaded loop.
+
+## Step B31 (28 Sept 2026, ran in the background 07:10-08:1x, written up 08:10 UTC) -- reply chain, Jefferson side Feb-May 1808: nothing on the undecyphered letter
+
+Route: the B6 Wayback loop, Jefferson Early Access ids 7400-8002, one request at a time; keyword flag on
+cypher/cipher/decypher, title flag on Armstrong. Yield: 603 ids attempted, 586 HTTP 200, the rest HTTP 000 on one
+try (7515 7547 7562 7573 7592 7612 7656 7730 7745 7754 7794 7854 7878 7918 7922 7923 8001 ), listed for a single later retry. Dated range: 11 February to 5 May 1808 (the B6 pass picked up at
+id 8003, 15 May).
+
+Results: 2 keyword hits, both noise -- a pseudonymous informer ("H. Churchill", 11 March 1808, id 7593) on "a
+Cyphered Letter ... written by Coll. Burr", and Monroe to Jefferson, 22 March 1808 (id 7682), "reduces the resident
+minister ... to a cypher". The two Armstrong-Jefferson items in the range: Armstrong to Jefferson, 15 February 1808
+(id 7420), a letter of introduction for a bearer, no cipher; Jefferson to Armstrong, 2 May 1808 (id 7944), a cover for
+letters to his French correspondents via Warden, which says in terms "I shall say nothing to you on the subject of our
+foreign relations, because you will get what is official on that subject from mr Madison" -- no acknowledgement of any
+letter received, no cipher. Twelve further items mention Armstrong without cipher context. With B6, B12 and B20 this
+closes the Founders reply chain from February 1808 to February 1809 on both the Madison and the Jefferson side: the
+undecyphered 20 February letter is named on 15 and 20 May 1808 only. A search result, not a novelty verdict (rule 10).
+Files: scratch only (`jefferson_7400_8002.tsv`, pages under `fo/`), per the B6 convention. Result: done (search
+result, nothing found). The single retry of the failed ids from B12, B20 and B31 is queued behind this loop
+(`wb_retry.sh`, `wb_retry_jeff.sh`) and will be noted here only if it finds anything.
