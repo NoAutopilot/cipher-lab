@@ -2988,3 +2988,11 @@ letters in a key v5. No reading, no class change.
 
 `family/PROPOSAL_H146.md`: candidate edits for a key v5 with their evidence (H119, H129, H132, H142, H146, H147, H148),
 for the family worker to weigh; nothing applied to KEY.md or any key file. No new claim.
+
+## Campaign step H150 (28 Sept 2026, 19:34 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), count only
+
+Occurrences of f.61's unmapped classes over the texts in f.61's hand on disk (f.61 span lines, f.108v H59 draft, f.108r
+L04-L06 H108 draft, f.108r L02/L03 of the joint fit): **CA 8, C6 6, LOOPBAR 4, CROSS 3, ELOOP 2, LL 1** (ZHOOK 40 is mapped,
+i/x, published). None reaches the pre-registered 10 -> **every rare class untestable by sequence gain on this material**;
+no value computed. AUDIT.md sec. 6 item 2 stands: these classes wait on more text in this hand or a period key sheet (the
+fr.2751 f.116 lead, H143/H144, is de Diou's hand, not f.61's). No reading, no class change.
