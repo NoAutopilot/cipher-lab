@@ -961,3 +961,31 @@ simulations beat their null in 0-12 percent of windows, chance level, so at N=36
 English inflection produces is below what a 10x10 MI table can see. Non-test at this N (rule 3), not a negative on the
 inflection reading; a design-family discrimination on this axis would need a pooled sign count an order of magnitude
 larger (the selection rule's pools-first argument). Dropped (non-test). Needs: nobody.
+
+## Step B41 (28 Sept 2026, 06:52-06:53 UTC)
+
+Question: can the superscript ticks above numerals (ARM-S1's finding, three recorded in `ciphertext_ms.txt` on page 1:
+L07's second "38", L08's "1640" and "1276"; B35 pass A read eight more A-marks on page2 L10, page2 L13 and page3 L01,
+pass B read none, calling them bleed-through) be counted from the pixels without a reader, so that the attached-mark
+layer gets a reproducible count?
+
+Instrument (`b41/ticks.py`, output `ticks_out.txt`): connected components on the full frame, binarised at 128; for each
+manuscript line (boxes from the crops' manifest) the band from 45 px above the line's own ink top to 12 px into it; a
+tick candidate is a component inside that band with height at most 30 px, width at most 50, area 15-600 px, placed over
+the line's B38 unit by x. Known answer: the three page-1 ticks must be found and other page-1 lines should be near empty.
+
+| frame | lines | candidates | known ticks recovered |
+|---|---|---|---|
+| page 1 (0030) | 17 | 74 | 0 of 3 (L07 unit 6-7: none; L08 units 6-7: none; L08's only candidate is at unit 1) |
+| page 2 (0031L) | 16 | 71 | pass A's page2 L10 / L13 claims not testable once the control fails |
+| page 3 (0031R) | 15 | 24 | -- |
+
+The detector fails its known answer on both sides: none of the three recorded ticks is found, and 74 candidates fire
+on page 1's other lines, concentrated on L01, L11, L12, L16, L17 -- the zoomed L08 crop shows what they are: grey
+bleed-through blobs from the verso that the 128 threshold turns into small black components, and the recorded ticks
+themselves are not visible as isolated components in the band (ARM-S1 described the tick as "the same physical stroke as
+the ordinary baseline dash, just repositioned", which on L08 reads as a slash crossing the digit, i.e. part of the
+numeral's own component, not a mark above it). A pixel detector for this layer needs a clean reference image of one
+confirmed tick to calibrate against, which the record does not contain, and the bleed-through cannot be separated by
+threshold on crops that are already near-binary. Dropped (instrument failed its known-answer control; not re-tuned; the
+A-mark disagreement between the B35 readers stays unresolved). Needs: doc (a higher-resolution or greyscale frame).
