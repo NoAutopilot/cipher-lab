@@ -1030,3 +1030,12 @@ undecyphered 20 February letter is named on 15 and 20 May 1808 only. A search re
 Files: scratch only (`jefferson_7400_8002.tsv`, pages under `fo/`), per the B6 convention. Result: done (search
 result, nothing found). The single retry of the failed ids from B12, B20 and B31 is queued behind this loop
 (`wb_retry.sh`, `wb_retry_jeff.sh`) and will be noted here only if it finds anything.
+
+### Retry of the once-failed Wayback ids (B12, B20, B31), written up 08:22 UTC, 28 Sept 2026
+
+Single retry, one request at a time. Madison (48 ids from B12): 48 of 48 HTTP 200, two keyword hits, both the Short
+cypher already recorded in B12 (Madison to Pinkney, 9 September 1808, "the cypher furnished to Mr. Short, being the
+same with yours"; Short to Madison, 14 September 1808, "with your dispatches I hope I shall find a cypher"). Jefferson
+(18 ids from B20 and B31): 17 of 18 HTTP 200, no keyword hit; id 8409 answered 403 twice and is left unread (good-citizen
+rule, no further retry). No change to B12, B20 or B31: nothing on the 20 February letter. The Founders reply chain
+February 1808 to February 1809 now has every id read except 8409 and the ids that never existed at Early Access.
