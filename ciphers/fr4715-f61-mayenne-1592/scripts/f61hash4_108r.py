@@ -24,10 +24,10 @@ import math
 def lp(g): return math.log10((M.c.get(g, 0) + M.k) / (M.ctx.get(g[:-1], 0) + 26 * M.k))
 def resolve(pairs, W=400):
     beam = [("", 0.0)]
-    for a, b in pairs:
+    for st in pairs:   # H148: any set size (pairs unchanged)
         nb = {}
         for s, v in beam:
-            for ch in (a, b):
+            for ch in st:
                 t = s + ch; w = v + (lp(t[-4:]) if len(t) >= 4 else 0.0)
                 if t[-3:] not in nb or nb[t[-3:]][1] < w: nb[t[-3:]] = (t, w)   # recombine on the 3-letter state
         beam = sorted(nb.values(), key=lambda x: -x[1])[:W]
