@@ -630,3 +630,76 @@ warning.
 
 Requests (folios): gallica.bnf.fr 6 (three overviews, three regions) + 3 (wider regions). Total Gallica this job: 20
 (11 for fr.3252, 9 for fr.3251), all 2 s apart, browser UA, no refusals.
+
+## HARVEST-D2: f.35 (no.18, Saluzzo 15 Nov 1570) decoded with the printed key (PARENT WORKER HARVEST-D2, 28 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-28-harvest-d2-3.md` (account 3, continues HARVEST-D). No class, no status change here;
+rule 10 wording only. Intake: HARVEST-C's section above (28 Sept 2026: folio-specific web search, DECODE local and live
+with the 3621 positive control, Aymeloglu's decode-catalog.csv) -- no prior reading, not found-solved;
+`tools/intake_gate_check.py ceppo-nevers-fr3251-1570s` exit 0 at 22:14 UTC. Rate limit on this account at start:
+`allowed` (the warning that held HARVEST-D was the owner account's).
+
+**Material.** HARVEST-D's native region `harvest/f35/c36_cipher_w.jpg` (canvas 36, f.35r foot, foliation '35'), no
+new Gallica request. Two cipher lines after "a questo particolare,"; the prose resumes "che sarebbe tanto come a dire".
+Crops: `harvest/cut_folio_lines.py` now also writes `lines2x/` -- segments of about 1150 px cut at the column-ink
+minimum nearest the nominal boundary (no overlap, no sign split) and upscaled 2x, since HARVEST-D's witness passes had
+shown 1x crops too small for a reader (3 + 4 crops here).
+
+**Blind transcription** (`harvest/blind_pass_brief.md`): two Sonnet passes on the crops and `sign_sheet_blind.png`
+only, with three off-sheet ids allowed (X_THETA2 double-barred oval, X_POUND, X_NEW). `f35/passA.tsv` 76 signs,
+`f35/passB.tsv` 76 signs (both 37 + 39 per line). **Value-blind reconciliation** by `harvest/reconcile_blind.py`
+(alignment by sign id; agreements kept, a split with one H side takes the H side, the rest go to a third eye):
+69 of 76 aligned positions agreed (0.91), 7 splits, none settled by confidence. A third Sonnet reader, blind to
+values, settled the 7 from the crops with the neighbours' ids as landmarks (`f35/adjudicate_in.tsv`,
+`f35/adjudicate_out.tsv`: S49, S24, S91 x3, S53, S26, all M). This worker saw no sign value while reconciling
+-- the merge is mechanical and the disputes went to a subagent that had not seen the map -- which answers HARVEST-A's
+bias caveat for this folio. Final `f35/passC.tsv`: 76 signs, 2 X_POUND, 1 X_NEW (L01 pos 2, a P-like loop with a
+stem, both readers), 0 X_THETA2, 0 '?'.
+
+**Decode** (`tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s`, job f35 in `decode.json`: key = `key_f11.tsv`
+(the printed table) + `key_extra.tsv` (X_THETA2 = r, S, from the fr.3252 f.36v period gloss; not used on this folio);
+`--check` passes). Tokens 76: H 0, C 0, S 35, M 38, I 0, U 3 (the two pound signs and the X_NEW, unkeyed):
+
+```
+f35 L01 | c·enonaosensohauefiuremidsiuihafino·e
+f35 L02 | sntfateetmiuongano·irficsalitomeein[et]st
+```
+
+S where the printed value is used and both blind passes agreed at M or better, M where a pass was L or the position was
+adjudicated (`reading_f35_tokens.tsv`). Word-like runs: "non", "haue", "fino" (L01), "fate", "et mi" (L02); nothing
+continuous. No exception, no override: the pound sign is left unkeyed here (its two f.35 occurrences cannot rank a value,
+see the fit line below).
+
+**Control (rule 3), `harvest/decode_control.py f35/passC.tsv --extra X_THETA2=r --seed 1`:** real key -1.306 (mean
+log10 4-gram per letter, it16dip, 73 letters) against 200 keys with the value column shuffled: mean -2.075, sd 0.173,
+max -1.579; **z 4.46, rank 1 of 201**. Preliminary runs on the two blind passes before any reconciliation: pass A
+rank 1 (z 4.64), pass B rank 1 (z 4.10). Power control (20 it16dip windows at the same passage lengths, same key,
+20% signs replaced): real key rank 1 in **19/20**, z median 4.25. Value fit for X_POUND (2 occurrences): n and d
+-1.293, t and r -1.303 -- no separation, not a test at this count.
+
+**Blind reader** (`harvest/verify_mk_blind.py f35/passC.tsv f35/blind 35 X_THETA2=r`: the real-key decode and 20
+shuffled-key decodes of the same signs, shuffled order; a Sonnet reader saw only `f35/blind/blind_decodes.txt`): it
+picked TEXT 09 as the one Italian text ("non, haue, fino, fate, -ano, mi", LANG; five others SOME with isolated
+fragments, the rest NONE), moderate-to-high confidence, no competitor. TEXT 09 is the real key
+(`f35/blind/blind_answer.json`, `blind_judgment.tsv`).
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file
+ciphers/ceppo-nevers-fr3251-1570s/harvest/reading_f35_letters.txt`, pasted):
+
+```
+FAIL language: score=-1.402, null_p99=-1.604, real_p05=-0.985, real_median=-0.829, mode=both, N=73
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Above the shuffled null, below real prose, as on f.11r: a partial reading with 38 M tokens on two lines.
+
+**What this shows and does not.** On f.35 the printed Ceppo-Nevers key beats 200 shuffles on both blind passes and on
+the reconciled sequence, at a power the same control reads 19/20, and a blind reader picks its decode out of 21. It gives
+word fragments, not a continuous text: 73 letters is short, and the M grades say where the readers were unsure. No
+prior reading located (HARVEST-C's search log); no novelty claim (rule 10). Not run: `tools/print_check.py` -- no
+phrase longer than a common word is read here to search for.
+
+Files: `harvest/f35/` (passA, passB, passC + agreement/disagreements, adjudicate_in/out, blind/),
+`harvest/ciphertext_f35.tsv`, `reading_f35.txt`, `reading_f35_tokens.tsv`, `reading_f35_letters.txt`,
+`harvest/key_extra.tsv`, `decode.json` (job f35). Requests: gallica.bnf.fr 0 (HARVEST-D's images). Subagents: 4
+(two blind passes, one adjudication, one blind reader), all Sonnet, no credentials, no AskUserQuestion.
