@@ -1,0 +1,1 @@
+s4=c,s0=a,s23=r,s5=d,s7=e,s17=n,s2=a,s15=l,s3=b,s19=o,s13=i,s10=s,s20=o,s12=i,s24=s,s21=p,s25=t,s6=e,s1=a,s26=u,s22=q,s11=s,s8=e,s18=o,s9=f,s29=y,s28=u,s14=i,s27=u,s37=i,s16=m,s34=a,s30=g,s36=a,s31=o

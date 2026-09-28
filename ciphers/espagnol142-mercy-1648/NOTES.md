@@ -1628,3 +1628,17 @@ no headroom (CLAUDE.md rule 3, the "control already near ceiling" paragraph), wh
 read that also gained 0.0) had hidden. The target's negative "gain" is the cost of holding hand-read words the
 trigram objective does not prefer, smaller under the register-matched corpus. The gate needs a control that can
 gain (H27). No reading or grade change. Disk only.
+
+## Campaign step H27 (2026-09-28 04:39-04:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** The crib-loop gain gate with controls that have headroom: the three H21 design-matched
+Cartas controls corrupted at 5% and 10% of signs (`cheap_test_1/h27/`), blind es17c7 anneal (5%: 92-94% letters
+right; 10%: 30-80%), every in-vocabulary stretch of the blind decode held (31-36 of 39 signs), re-anneal. Gain:
+**+0.0 on all six** (one +1.0), letters unchanged in every case (`gain.log`), as on the three clean controls (H26)
+and on M2's own control. **The numeric gate is a non-test by construction, not by ceiling:** holding words that
+the annealer itself produced fixes the annealer at its own optimum, so it can never gain; only corrections made
+against the anneal (M2's hand corrections, 13=y, 25=u, 33=e, ...) can move it, and those cost anneal points by
+definition (-44.8 under es17, -22.9 under es17c7). M2's "control gains 0.0, target gains negative" therefore
+compared a circular zero with the price of reading, and licenses nothing either way. The instrument for hand
+corrections is letter accuracy on a control with known truth read by a reader, not an anneal score; the gate line
+is retired here. No reading or grade change. Disk only.

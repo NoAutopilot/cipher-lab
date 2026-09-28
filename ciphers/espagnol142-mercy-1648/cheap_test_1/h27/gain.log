@@ -1,0 +1,8 @@
+crib-loop gate on corrupted design-matched controls, es17c7: blind -> held-words (letters right vs the clean plaintext)
+  5% seed 1: score -1187.7 -> -1187.7 (gain +0.0); letters 92.1% -> 92.1% (+0.0 points)
+  5% seed 2: score -1159.0 -> -1159.0 (gain +0.0); letters 93.5% -> 93.5% (+0.0 points)
+  5% seed 3: score -1266.9 -> -1266.9 (gain +0.0); letters 92.1% -> 92.1% (+0.0 points)
+  10% seed 1: score -1344.3 -> -1344.3 (gain +0.0); letters 40.1% -> 40.1% (+0.0 points)
+  10% seed 2: score -1252.4 -> -1252.4 (gain +0.0); letters 80.4% -> 80.4% (+0.0 points)
+  10% seed 3: score -1410.8 -> -1409.8 (gain +1.0); letters 29.8% -> 29.8% (+0.0 points)
+target es17c7: free -1138.5 -> held-29 -1161.4 (gain -22.9); es17: -1154.3 -> -1199.1 (-44.8)

@@ -1,0 +1,1 @@
+s5=d,s8=e,s23=r,s14=i,s2=a,s17=n,s15=l,s1=a,s24=s,s7=e,s10=g,s26=u,s12=i,s25=t,s0=a,s19=o,s13=i,s3=b,s22=q,s27=u,s6=e,s4=c,s16=m,s28=u,s35=e,s18=o,s32=n,s20=o,s30=l,s11=h,s37=o,s36=e,s9=s,s21=p,s31=e,s29=a
