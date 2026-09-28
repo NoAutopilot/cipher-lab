@@ -795,3 +795,89 @@ Files: `harvest/f21v/` (passes, passC + agreement/disagreements per half and mer
 blind/), `harvest/ciphertext_f21v.tsv`, `exceptions_f21v.tsv`, `reading_f21v.txt`, `reading_f21v_tokens.tsv`,
 `reading_f21v_letters.txt`, `phrases.txt`, `sources.tsv`, `print-check*.tsv`. Requests: gallica.bnf.fr 0. Subagents: 7
 (four blind passes, two adjudications, one blind reader), all Sonnet.
+
+## HARVEST-D2: f.87 (no.45, Saluzzo 9 May 1571) -- key clears its controls, the merged reading is the weakest of the three (PARENT WORKER HARVEST-D2, 28 Sept 2026)
+
+Same brief, same intake as the f.35 section above (HARVEST-C's search log, 28 Sept 2026; not found-solved). No class, no
+status change here; rule 10 wording only.
+
+**Material and a correction.** f.87 (canvas 88, recto) carries **five** cipher lines at the foot, not six: the cipher
+begins after "mandatome quà dal sig. Cornellio Benti-uoglio per alcuni suoi particolari" on that line (L01) and fills
+the next four (L02-L05). The lines fall to the right by 95-135 px across the region (a bowed page; the last line ends at
+the right margin about a line-height lower than it starts), and HARVEST-D's sixth nominal centre was that fallen right
+end of L05. Two reader pairs found this the hard way before it was measured: the first pair on flat crops and the
+second on crops sheared by one global slope of the wrong sign both reported the target line cut at the crop bottom from
+the second segment on and "L06" empty (`f87/rejected_flat_crops/`, `f87/rejected_sheared_crops/`, with READMEs; not
+used). The third cut (`cut_folio_lines.py`, `follow=True`) tracks every line's centre window by window from the joint
+row peaks of a smoothed ink profile and shears each segment flat between its two local centres, on a taller native
+region fetched this job (`f87/c88_cipher_wt.jpg`, pct:52,67,43,18; the 13%-high regions clipped L05's right end). The
+tracks were checked on an overlay before the readers ran. Gallica: 2 requests (one narrow tall fetch discarded).
+
+**Blind transcription.** Third pair, on the tracked crops (18 crops, 2x): `f87/passA.tsv` 204 signs, `f87/passB.tsv`
+214 (L01 27 both; L02-L05 44/47, 46/48, 45/48, 42/44). **Value-blind reconciliation:** 156 of 217 aligned positions
+agreed (**0.72**, against 0.91 on f.35 and 0.83/0.88 on f.21v -- this is the hardest hand of the four folios), 45
+splits and 16 one-reader signs. Two blind Sonnet adjudicators (L01-L03, L04-L05; `adjudicate_in/out_L01-03.tsv`,
+`_L04-05.tsv`, 48 rows) settled every split from the crops, siding with pass A 29 times and pass B 18; 13 one-reader
+signs at M or below were dropped, 3 at H were adjudicated. Their own confidence was low: the splits are the same
+look-alike pairs throughout (a 6/b with a tick, dot or bar: S54 null / S74 m / S77 s / S37 c; an 8 with a bar or a
+dot: S80 a / S65 et; the crossed sign with one or two bars: S24 o / S88 t; the loop with an ij flourish: S31 m / S32 r /
+S76 z), and on this hand the ink often does not decide them at 2x. Final `f87/passC.tsv`: 204 signs, 7 X_THETA2, 1
+X_POUND, 3 X_NEW, 0 '?'.
+
+**Decode** (`tools/decode_key.py`, job f87: `key_f11.tsv` + `key_extra.tsv`; no exceptions; `--check` passes).
+Tokens 204: H 0, C 0, S 134, M 66, I 0, U 4.
+
+```
+f87 L01 | l[et]immmgnorduasilgd··ea
+f87 L02 | ·usimr[et]ndizcmeneazimmhecenmrmtilpfoincpidam
+f87 L03 | aamem[et]gnaet[et]imsirnorestnalgenmochauendouazt
+f87 L04 | uaetirem[et]sqeacaeoc·i[et]ungiorntauantieim[et]ntzeme
+f87 L05 | neandosecrezamentecontzoorteondeciamlhunt
+```
+
+Runs read as Italian: "...mo ch'auendo..." (L03), "un giorn[o] ... auanti" (L04), "ne ando secre[t]amente cont[r]o
+... onde ..." (L05); the rest is not continuous. X_THETA2 (7 occurrences) again ranks **r first** by value fit (-1.735;
+i -1.739, a -1.751), the witness value; the single pound sign cannot be ranked.
+
+**Control (rule 3), `decode_control.py f87/... --extra X_THETA2=r --seed 1`:**
+
+| sequence | signs | real key | shuffles mean / max | z | rank of 201 | power (rank 1) |
+|---|---|---|---|---|---|---|
+| pass A (blind) | 204 | -1.634 | -2.069 / -1.736 | 3.49 | 1 | 10/10 |
+| pass B (blind) | 214 | -1.617 | -2.072 / -1.691 | 3.47 | 1 | 10/10 |
+| passC, all splits adjudicated | 204 | -1.735 | -2.065 / -1.695 | 2.48 | 2 | 20/20 (z median 7.5) |
+| passC, confidence rule only (H side wins, 20 splits not adjudicated) | 204 | -1.753 | -2.064 / -1.687 | 2.33 | 4 | 20/20 |
+
+The key beats 200 shuffles on each blind pass taken alone, at a power the same control reads 10/10, but the merged
+sequence scores *below* both passes: adjudication on this hand replaced two readers' independent errors with a third
+reader's, at the pairs above, rather than removing them. That is a transcription limit, not a key result.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file
+ciphers/ceppo-nevers-fr3251-1570s/harvest/reading_f87_letters.txt`, pasted):
+
+```
+FAIL language: score=-1.723, null_p99=-1.669, real_p05=-0.942, real_median=-0.816, mode=both, N=197
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+At the null ceiling (0.05 above null_p99), far from real prose.
+
+**Blind reader** (`verify_mk_blind.py f87/passC.tsv f87/blind 87 X_THETA2=r`; a Sonnet reader saw only
+`f87/blind/blind_decodes.txt`): picked TEXT 04 with high confidence as the only text reading as Italian in several places
+("secre[t]amente, auanti, giorn[o], [ch']auendo, che"); three texts SOME with one scrap each, seventeen NONE. TEXT 04 is
+the real key (`blind_answer.json`, `blind_judgment.tsv`).
+
+**Verdict for this folio: reading ready with the caveat above, the weakest of the three.** The printed key is supported
+on f.87 as on the other folios (each blind pass rank 1 of 201; a blind reader picks the real decode of 21; the
+double-barred oval fits r), but the reconciled transcription is poor: 66 M tokens on 204, the judge at the null, a
+merge that scores below its own inputs. What it gives is word-level fragments (secre[t]amente, un giorn[o], auanti,
+ch'auendo), not text. **Next step (named):** per-sign crops (one sign per image at 3-4x, cut at the column-ink gaps
+`cut_folio_lines.py` already finds) for the four look-alike pairs on this folio, read by two fresh blind passes on those
+crops only, then the same control; and, since the S24/S88 and S80/S65 splits recur on every folio, a witness check of
+those four pairs against the fr.3252 f.36 glosses (HARVEST-D's named next step) would settle them for all four letters
+at once.
+
+Files: `harvest/f87/` (three pass pairs, two rejected with READMEs; passC + agreement/disagreements; adjudicate_in/out
+whole and per half; blind/; `c88_cipher_wt.jpg`, `manifest.json`), `ciphertext_f87.tsv`, `reading_f87.txt`,
+`reading_f87_tokens.tsv`, `reading_f87_letters.txt`. Requests: gallica.bnf.fr 2. Subagents: 9 (six blind passes over
+three crop cuts, two adjudications, one blind reader), all Sonnet.
