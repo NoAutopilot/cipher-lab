@@ -2984,3 +2984,27 @@ carry nothing in any table, which closes the M31 series for this target except r
 No reading of the target, no class change; rule 10: catalogued NARA despatches, nothing called new or first.
 Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 173-180k tokens, 3.5-5 minutes each); no runner look. Cost:
 about 4 USD by H21's rate -- `--spend` records 4 of the row's 8.
+
+## Campaign step H41 (28 Sept 2026, 06:28-06:36 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H41 (H40's
+step 2): the last unswept span of the M31 series, reel 13 frames 301-660 (Erving, 1809-1810), same method as H31/H39/H40
+(`h31/sheets.py` 700-px sheets, four blind Sonnet screeners of 90 frames, the M30 reel 11 frame-65 control sheet in every
+call; `h41/MANIFEST.tsv`, `h41/reads/`).
+
+**CONTROL PASS 4 of 4.** **Result: no coded frame and no key table in frames 301-660** (clear despatches, printed Spanish
+gazettes, decrees and university fee tables, financial accounts; blank or docket frames 301, 354, 411, 413, 658-660).
+One frame, 396, is too dark and rotated to screen (its right column looks like an enclosure index): logged as
+unscreened, not as clear.
+
+**What the record sweeps add up to (H26, H31, H39, H40, H41).** M30 reel 11 (Pinkney, 324 frames) and M31 reels 11, 12
+and 13 (Bowdoin and Erving, 1,425 frames) are now swept end to end at a scale whose control passed 13 of 13 times.
+Every coded frame found belongs to one of two tables -- WE028 (Pinkney's and Erving's ordinary despatches, 1805-1808)
+and the Madrid legation private cipher (Erving to Madison, 1806-1807, about 1,260 groups on file with the period's
+decode) -- and neither reads the target (ARM-A2, H29; H26/H32/H33/H38). No key table and no third cipher anywhere in
+the four reels. The Armstrong-adjacent NARA despatch series that a coded enclosure from Paris could have reached are
+exhausted for this target; the remaining pools are people-gated (H8-H10, H35-H37).
+
+No reading of the target, no class change; rule 10: catalogued NARA despatches, nothing called new or first.
+Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 160-170k tokens, 3-5 minutes each); no runner look. Cost:
+about 4 USD by H21's rate -- `--spend` records 4.

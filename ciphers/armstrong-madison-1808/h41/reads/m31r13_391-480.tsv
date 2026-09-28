@@ -1,0 +1,93 @@
+frame	flag	note
+391	none	clear prose, English letter signed Narciso de Heredia, 15 Mar 1809
+392	none	clear prose, Spanish letter, 20 Mar 1809
+393	none	clear prose fragments, English/Spanish
+394	none	clear prose letter with wax-seal embossing, dense hand
+395	none	clear prose, dark/rotated crop, legible enough
+396	none	very dark, rotated ~90deg, mostly illegible; right column shows short "No" entries (looks like an enclosure/dispatch index list, not cipher) - unreadable, recommend closer look
+397	none	clear prose
+398	none	clear prose letter with seal
+399	none	clear prose, mentions troop count "18,000" in ordinary sentence
+400	none	clear prose, mentions "189,000 pounds sterling" as ordinary sum
+401	none	clear prose fragment, signature page
+402	none	clear prose, dispatch No.6, Cadiz May 14 1809
+403	none	clear prose
+404	none	clear prose, troop-strength figures (30,000/22,000/15,000 men) in ordinary sentences
+405	none	clear prose, customs duty-rate arithmetic (16 rials = 82 cents) ordinary commercial figures
+406	none	clear prose, dispatch No.68, Cadiz May 20 1809
+407	none	clear prose, dispatch No.69, Cadiz May 28 1809
+408	none	clear prose, troop numbers (13-14,000 men, 4000 sick) in ordinary sentences
+409	none	clear prose, troop number (20,000 men) in ordinary sentence
+410	none	clear prose letter signed J.C. Purvis, Cadiz harbor 26 May 1809
+411	blank	blank leaf with short docket note only (receipt date, no.9)
+412	none	printed Gazeta Extraordinaria, 27 Mayo 1809, clear prose
+413	blank	blank verso, only show-through of facing printed page
+414	none	printed Gazeta Extraordinaria, 19 Mayo 1809, clear prose
+415	none	clear prose, dispatch No.70, Cadiz May 30 1809
+416	none	clear prose, short sign-off page
+417	none	clear prose, Spanish letter to Robert Smith, 17 Mayo 1809
+418	none	clear prose, small dispatch pages, English
+419	none	clear prose, troop numbers (6000 men, 4300) in ordinary sentences
+420	none	clear prose, troop numbers (10,000/2000) in ordinary sentences
+421	none	clear prose, Spanish letter to Robert Smith
+422	none	clear prose, Spanish continuation
+423	none	clear prose, Spanish continuation
+424	none	clear prose, Spanish continuation, signed Albuquerque
+425	none	clear prose, English letter, Aranjuez 16 Nov 1808
+426	none	clear prose continuation
+427	none	clear prose continuation
+428	none	clear prose continuation/closing, "Your obt. servant"
+429	none	clear prose, Spanish copy, 7 Nov 1808, signed Pedro Cevallos
+430	none	printed Real Decreto de S.M. plus Spanish prose fragment, clear
+431	none	printed decree continuation, clear prose
+432	none	clear prose, dispatch No.72, Sevilla July 9 1809
+433	none	clear prose, "170,000 stands of arms"/"11 hundred thousand men" ordinary sentence figures
+434	none	clear prose, troop numbers (9000/14,000) in ordinary sentences
+435	none	clear prose continuation
+436	none	clear prose, translated letter re Luis de Onis appointment
+437	none	clear prose, Spanish copy, Seville 28 June 1809
+438	none	clear prose, Spanish letter, 27 July 1809
+439	none	clear prose, Spanish quarantine regulation text
+440	none	clear prose, Spanish copy (duplicate), 28 Junio 1809
+441	none	clear prose, English letter, Sevilla 4 July 1809
+442	none	printed Gazeta Extraordinaria (Talavera battle), 31 Julio 1809, clear prose w/ ordinary troop/date figures
+443	none	clear prose, dispatch No.73, Sevilla Aug 3 1809
+444	none	clear prose continuation
+445	none	clear prose continuation
+446	none	clear prose, troop-strength figures (22,000/12-14,000/37,000/7,000) in ordinary military-report sentences
+447	none	clear prose, troop-strength figures (75,000/46,000/18,000/8,000/70,000/27,000) ordinary sentences
+448	none	clear prose, troop-strength figures (5,000/19,000/12,000/9,000/18,000/10,000/30,000/190,000) ordinary sentences
+449	none	clear prose continuation
+450	none	clear prose continuation, battle-casualty counts in ordinary sentences
+451	none	clear prose, Spanish copy, large ink blot centre-right, 16 Julio 1809
+452	none	clear prose continuation
+453	none	clear prose, Spanish copy re Baton Rouge navigation
+454	none	clear prose continuation, dated 17 Julio 1809
+455	none	clear prose, Spanish copy (duplicate of 453)
+456	none	clear prose continuation (duplicate of 454)
+457	none	clear prose, Spanish copy re certificates/consuls
+458	none	clear prose, English letter, Sevilla July 22 1809
+459	none	clear prose continuation
+460	none	clear prose continuation, copy dated 19 July 1809
+461	none	printed Gazeta Extraordinaria (duplicate of frame 442), clear prose
+462	none	clear prose, dispatch No.74, Sevilla Aug 25 1809
+463	none	clear prose continuation
+464	none	clear prose continuation, troop numbers (15,000/25,000 men) ordinary sentences
+465	none	clear prose continuation, troop numbers (1800-2000/5000/70 days) ordinary sentences
+466	none	clear prose continuation
+467	none	clear prose continuation, troop number (40,000 Spaniards) ordinary sentence
+468	none	clear prose continuation, siege figures (10,000 french/6170 bombs/2846 balls) ordinary sentences
+469	none	clear prose, letter No.1, Sevilla Aug 20 1809
+470	none	clear prose, Spanish letter No.2
+471	none	clear prose, Spanish letter No.3, 18 Noviembre
+472	none	clear prose, Spanish copy No.4, duty-rate figures (36/18 per quintal) ordinary
+473	none	clear prose, dispatch No.75, Sevilla Aug 26 1809
+474	none	clear prose continuation, figures (150,000 stand/three millions of dollars) ordinary sentences
+475	none	clear prose, dispatch No.76, Sevilla Aug 27 1809
+476	none	clear prose continuation
+477	none	clear prose, copy letter, Sevilla Aug 27 1809, sum "212 Dolls" ordinary
+478	none	clear prose, dispatch No.77, Sevilla Sept 1 1809
+479	none	printed Gazeta Extraordinaria, 27 Agosto 1809, clear prose
+480	none	printed gazette continuation p.94, clear prose
+m30-65	code	numeral run "154.1779.023.1035.654" written mid-sentence in place of a name/word ("...whom I have great reliance, that 154.1779.023.1035.654 in a late conversation observed...")
+m30-66	none	clear prose, troop number (5,000 troops) in ordinary sentence
