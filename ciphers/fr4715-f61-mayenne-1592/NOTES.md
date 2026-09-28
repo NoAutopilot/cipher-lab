@@ -2608,3 +2608,22 @@ With H116 (f.61 spans, 38/49 = 0.776), the beam's two-way choices are right 107/
 cipher. Same caveat as H116: the cells were fitted partly on these letters; the choice within a cell was not. This makes
 the beam a controlled instrument for the within-pair choices wherever the cell map holds and the text is long enough to
 give it context (it failed on key v4's short, wide-set segments, H117). No reading, no class change.
+
+## Campaign step H122 (28 Sept 2026, 18:24-18:26 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61ngram108r_repl.py --f108v [--hash4-ix]` (option pushed ea7c36da before the run; results
+`f61ngram108v_repl_result.txt`, `f61ngram108v_repl_ix_result.txt`): the H115/H119 instrument on f.108v, the H59 reconciled
+draft (grade M transcription), 1000-permutation null (seeds 115/116), known-lines control first.
+
+| map | control (known lines) | f.108v pooled | margin to best permuted | lines at rank <= 10 alone |
+|---|---|---|---|---|
+| 14 cells | rank 2 | **rank 1 of 1001** (-1.011; best permuted -1.102) | 0.091 | 6 of 7 (L02 46) |
+| 14 cells + HASH4 = i/x | rank 1 | **rank 1 of 1001** (-1.003; best permuted -1.146) | 0.143 | 6 of 7 (L01 15) |
+
+**GATE (rank <= 10 of 1001, control also): PASS under both maps.** The model-free beam places f.61's cell map first of 1001
+on the longest text in f.61's hand, with the signal spread over the rows (L04, L06, L07 rank 1 alone under both maps), not
+carried by one line. This is the model-free counterpart of the H85/H94 judge results and the valid H111 one-swap result on
+f.108v, and it agrees with them. It says f.108v is enciphered in the same cells as f.61; it is not a reading of either leaf
+(the beam's within-pair choices run at about 0.86 on known text, H116/H121, and the transcription is grade M). H123 now
+commits the beam's f.108v resolution as a pre-registered prediction before the leaf's sparse period gloss is read. No class
+change.
