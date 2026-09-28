@@ -1,0 +1,16 @@
+crop	page	line	group	found_group	verdict	class	under_digit	what_it_is	confidence
+p1_w30_L07_1141.jpg	p1	7	1141	yes	MARK	LOW	penult	thin low horizontal stroke joining foot of 4 to foot of last 1; other multi-digit groups on this page show no such connector	M
+p1_w30_L05_1640.jpg	p1	5	1640	yes	NONE			tall ascender on 6 and flag on 1 match this hand's normal letterforms (same 6-shape recurs in 1760 later on the same line); nothing separately attached	H
+p1_w30_L05_1276.jpg	p1	5	1276	yes	NONE			faint pale specks above the 2/7 are show-through recurring at several points along this line, not ink marks	M
+p1_w30_L06_31.jpg	p1	6	31	yes	MARK	HIGH		the final digit (1) is written as an elaborate curling hook, distinctly more ornate than plain 1s elsewhere in the document; a separate diagonal stroke further above is an unrelated descender from the line above	M
+p1_w30_L12_65.jpg	p1	12	65	yes	MARK	LOW	last	solid black caret directly under the 5, clearly darker/sharper than the pale show-through arc nearby	H
+p1_w30_L12_1350.jpg	p1	12	1350	yes	NONE			two dark diagonal strokes below the group are part of a recurring inter-line margin pattern also seen below 1120 on this line and below 1320 on the next line; not specific to this group	M
+p1_w30_L13_1320.jpg	p1	13	1320	yes	NONE			clean digits; pale scattered specks below are faint bleed/show-through, not touching the group	M
+p4_w33_L01_1740.jpg	p4	1	1740	yes	NONE			clean digits, nothing attached	H
+p4_w33_L01_124.jpg	p4	1	124	yes	NONE			clean digits; crop is truncated at the right edge right at the 4, so anything immediately after is unverifiable	M
+p4_w33_L02_671.jpg	p4	2	671	yes	NONE			clean digits; faint thin diagonal hairlines crossing the tops of 6 and 7 look like paper texture/creasing, not ink	H
+p4_w33_L02_1207.jpg	p4	2	1207	yes	NONE			clean digits, nothing attached	H
+p4_w33_L03_1207.jpg	p4	3	1207	yes	NONE			clean digits, nothing attached	H
+p4_w33_L03_14.jpg	p4	3	14	yes	NONE			clean digits, nothing attached	H
+p4_w33_L03_47.jpg	p4	3	47	yes	NONE			clean digits, nothing attached	H
+p4_w33_L04_5.jpg	p4	4	5	yes	MARK	HIGH		small X-shaped crossing at the top of the digit's tall ascender, unlike the smooth curved ascenders seen on other digits (6, 1) elsewhere in the document	M

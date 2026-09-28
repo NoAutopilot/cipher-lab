@@ -1,0 +1,29 @@
+page	group	held_class	lines	second_reader	result
+p1	1141	HIGH	7	MARK:LOW:penult:thin low horizontal stroke joining foot of 4 to foot of last 1; other multi-digit groups on this page show no such connector (M)	held (mark seen, other class: LOW)
+p1	1640	HIGH	5	NONE:::tall ascender on 6 and flag on 1 match this hand's normal letterforms (same 6-shape recurs in 1760 later on the same line); nothing separately attached (H)	dropped
+p1	1276	HIGH	5	NONE:::faint pale specks above the 2/7 are show-through recurring at several points along this line, not ink marks (M)	dropped
+p1	31	HIGH	6	MARK:HIGH::the final digit (1) is written as an elaborate curling hook, distinctly more ornate than plain 1s elsewhere in the document; a separate diagonal stroke further above is an unrelated descender from the line above (M)	promoted
+p1	65	HIGH	12	MARK:LOW:last:solid black caret directly under the 5, clearly darker/sharper than the pale show-through arc nearby (H)	held (mark seen, other class: LOW)
+p1	1350	HIGH	12	NONE:::two dark diagonal strokes below the group are part of a recurring inter-line margin pattern also seen below 1120 on this line and below 1320 on the next line; not specific to this group (M)	dropped
+p1	1320	HIGH	13	NONE:::clean digits; pale scattered specks below are faint bleed/show-through, not touching the group (M)	dropped
+p2	1480	HIGH	13	MARK:HIGH::curl/squiggle stroke after the group, heavier than the plain periods used elsewhere on this same line (e.g. after 1471, after 1708) (M)	promoted
+p2	1540	HIGH	13 / 9	NONE:::separator period only; shorthand strokes follow further on but are not attached to this group (M); NONE:::separator period only, plain like most groups on this line (M)	dropped
+p2	17	HIGH	14	NONE:::separator period only (M)	dropped
+p2	1640	HIGH	14	MARK:HIGH::double dot after the group, clearly heavier/different from the single periods used after the other groups on this same line (H)	promoted
+p2	78	LOW	4	NONE:::group not found on this line; the digits present are 17.86.316.582.1017.18 followed by shorthand strokes and 1248.1430 -- no token reads 78 (M)	dropped (group not found on its line at zoom: the holding reader's value unconfirmed)
+p2	1158	HIGH	6	NONE:::separator period only, then an unrelated shorthand cluster follows; a stray stroke at the very start of the crop looks like a descender from the line above, not part of this group (M)	dropped
+p2	1741	HIGH	8	NONE:::separator period only, plain periods throughout this line, no marks visible (H)	dropped
+p2	28	HIGH	9	MARK:HIGH::short horizontal stroke/bar above the group, distinct from the plain periods after every other group on this line (H)	promoted
+p2	29	HIGH	11	NONE:::group not found on this line; the digits present are 1110.1267.84.19.41.364.17, a shorthand stroke, 1480.1762.12 -- the token that could be confused for it reads 19, not 29 (M)	dropped (group not found on its line at zoom: the holding reader's value unconfirmed)
+p3	760	HIGH	1	UNSURE:::faint/blurry token near a stray stroke that could be a descender from the line above or a partial digit; cannot confirm a clean reading of the group or rule out an attached mark (L)	held (unsure)
+p3	230	HIGH	1	NONE:::separator period only, clear region of the line, no marks visible (H)	dropped
+p3	1254	HIGH	1	NONE:::separator period only, followed by a separate group (1) then shorthand strokes further along, none touching this group (H)	dropped
+p3	740	LOW	4	NONE:::separator period only, then an unrelated shorthand cluster follows (this line also has a plain 74 group earlier, distinct from 740) (M)	dropped
+p3	1354	HIGH	9	NONE:::separator period only, plain periods throughout this line, no marks visible (H)	dropped
+p4	1740	HIGH	1	NONE:::clean digits, nothing attached (H)	dropped
+p4	124	HIGH	1	NONE:::clean digits; crop is truncated at the right edge right at the 4, so anything immediately after is unverifiable (M)	dropped
+p4	671	HIGH	2	NONE:::clean digits; faint thin diagonal hairlines crossing the tops of 6 and 7 look like paper texture/creasing, not ink (H)	dropped
+p4	1207	HIGH	2 / 3	NONE:::clean digits, nothing attached (H); NONE:::clean digits, nothing attached (H)	dropped
+p4	14	HIGH	3	NONE:::clean digits, nothing attached (H)	dropped
+p4	47	HIGH	3	NONE:::clean digits, nothing attached (H)	dropped
+p4	5	LOW	4	MARK:HIGH::small X-shaped crossing at the top of the digit's tall ascender, unlike the smooth curved ascenders seen on other digits (6, 1) elsewhere in the document (M)	held (mark seen, other class: HIGH)

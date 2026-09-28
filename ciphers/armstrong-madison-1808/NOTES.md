@@ -2224,3 +2224,44 @@ consul, Adams) is a KEY-OFFICES.tsv fact for the close-out; (b) for the scout, n
 (THE=972 / WE028 family) are partly on file -- a check-solved candidate for QUEUE.md, cheap because the key family is
 known. Rule 10 wording; no reading, no class change. Requests: archive.org 3 (advancedsearch + two OCR downloads).
 Cost: script only, no image; the row's estimate (1.5 USD) is what `--spend` records.
+
+## Campaign step H21 (28 Sept 2026, 01:14-01:29 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01R2T5qwd7NBMWGnjRtj8ieX). Hypothesis H21 (from
+H18): a second reader on the 26 held H18 marks with single-line zooms per group, promote or drop each, re-run the
+inventory.
+
+**Method.** `marks/h21/cut_zooms.py` cut one 2x line zoom per held mark (30 zooms for 28 held rows: 1540 and 1207 had
+two candidate lines) from the witness frame the holding reader used, the pass line number mapped through that
+witness's crop manifest (`marks/h21/zooms.tsv`; crops untracked in `images/crops_h21/`, rebuilt by the script). Two
+blind Sonnet calls (pages 1+4, pages 2+3; `marks/h21/task_*.tsv`), each given only the crops and the group value to
+examine -- never the holding reader's description or class -- and asked for MARK / NONE / UNSURE, class HIGH (after or
+above) or LOW (under which digit), and what else the stroke could be (descender from the line above, show-through,
+separator period, part of the digit). Verdicts `marks/h21/reader_p14.tsv`, `reader_p23.tsv`; merge `marks/h21/merge.py`
+-> `verdicts.tsv`, `drops.tsv`, second-source pass files `marks/h18_passes/p1_w30_C.tsv`, `p2_w31_C.tsv`,
+`p2_w32_C.tsv`; `marks/h18_inventory.py` now honours `h21/drops.tsv` and was re-run.
+
+**Result: 28 held -> 4 promoted, 20 dropped, 4 still held.**
+
+| outcome | groups | notes |
+|---|---|---|
+| promoted (second source, same class) | p1 31 HIGH; p2 1480 HIGH (curl after), p2 1640 HIGH (double dot after -- its third confirmation with H13), p2 28 HIGH (bar above) | 31 is the weakest: the readers agree on the class but describe different things (a colon before the group vs an ornate hook on its last digit) -- accepted by the reconciler's rule, graded M here |
+| dropped (zoom: nothing attached; show-through, a descender from the line above, a recurring margin pattern, or the separator period) | p1 1640, 1276, 1350, 1320; p2 1540, 17, 1158, 1741; p3 230, 1254, 740, 1354; p4 1740, 124, 671, 1207, 14, 47 | the page-4 "tick bands" H18 already suspected as descender tails all fall here; p1 1640/1276 confirm H13's bleed-through reading |
+| dropped (group not on its line at zoom) | p2 78 (line reads 17.86.316.582.1017.18...), p2 29 (line reads ...84.19.41...) | the holding reader's value is unconfirmed; the mark cannot be attached to anything |
+| held, class disagreement | p1 65: zoom reads a solid black CARET UNDER THE LAST DIGIT (H) where the holding reader saw a faint hook above; p1 1141: a thin low stroke under the penult digit (M) vs a stroke above; p4 5: an X-shaped crossing at the top of the ascender (M) vs a curl under the first digit | 65 is the one to look at again: a caret under the last figure is frame 956's rule 3 exactly (H14) and the office letter's own device (H19); one more independent look at that group settles it |
+| held, unsure | p3 760 (faint token beside a possible descender) | |
+
+**Inventory after H21 (`marks/h18_inventory.tsv`): 9 accepted (8 HIGH after/above: 200, 38, 36, 31, 1480, 1640, 28,
+1580; 1 LOW under the last digit: 49), 4 held, 20 dropped.** Rate 9 corroborated marks in 369 groups = 2.4% (office
+letter 2.5%, H18). Value-recurrence test re-run on the 9: five accepted values occur two or more times in the letter,
+none is marked at every occurrence (1640: marked on page 2, the page-1 tick dropped; 38: 1 of 10; 31, 28, 36 likewise
+partial); null (marked positions kept, values redrawn within digit length, 2,000 draws) mean 0.05, p95 0, max 2;
+target 0. H18's reading stands with a larger corroborated set: the marks attach to particular occurrences, the shape
+of the printed form's grammar operators, not to values.
+
+**Verdict for the campaign:** done; no reading, no class change. What it adds: a cleaner mark list for any future key
+work (9 corroborated, all but one after/above), the page-4 and page-1 faint ticks retired, and one specific open item
+-- the caret under the last digit of 65 (rule-3 shape) held on a class conflict, worth one more look when a reader is
+on page 1 for any other reason (not filed as a row: one group). Requests: none. Cost: two Sonnet calls (15 crops
+each; the second ran 11 minutes and about 210k tokens) plus this runner's merge; the row's estimate (2 USD) is what
+`--spend` records, the real figure is nearer 2.5.
