@@ -1614,3 +1614,13 @@ a person who reads the f.108r gloss gives the same cells period grade C and, wit
 leaf. No class change; nothing solved, new or first.
 
 [Correction 2026-09-28 05:55 UTC: the counts above were first written from a run before C6 joined the null set; the committed file reads 54 T / 15 pairs / 28 nulls / 2 unread, as `--check` confirms.]
+
+## Campaign step H60 (2026-09-28 05:56 UTC) -- the desk pack for ASKS 88 (f.108r gloss rows L04-L06)
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV), script-only, no calls. `images/person_pack/`: one contact sheet per
+row (`f108r_L01.jpg` as the worked example with its known gloss, `f108r_L04.jpg`, `f108r_L05.jpg`, `f108r_L06.jpg`; 1.9 MB
+in all) -- the H34 3x crops stacked with a numbered sign strip beneath each segment (pass A's sign order; PLAIN words named)
+-- and `README.md` with the paste-ready TSV template (`line, word, first_sign, last_sign, note`), so a person's ten-minute
+reading comes back positionally aligned to the signs and `scripts/f61gloss.py --tag h50` scores it unchanged. ASKS row 88's
+exact action now names the pack. Checked by eye on `f108r_L04.jpg`: the gloss ("La misere ... on Je me retourne ... dargent")
+is legible, the numbers sit under their signs. Nothing here reads the cipher; no class change.
