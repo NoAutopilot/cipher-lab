@@ -1,8 +1,8 @@
 target: spinelli-beinecke-c1515
 goal: a verified reading of Thomas Spinelli to Leonardo Spinelli, Barcelona, 7 Sept 1519 (Beinecke GEN MSS 109, Spinelli Family Papers) at N3 or better after two audits
 started: 2026-09-27 20:47 UTC
-daily_budget_usd: 120
-spent_today_usd: 95.96
+daily_budget_usd: 240
+spent_today_usd: 112.02
 spent_day: 2026-09-28
 closed:
 
