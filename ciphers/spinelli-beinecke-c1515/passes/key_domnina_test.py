@@ -25,12 +25,12 @@ from collections import Counter
 HERE=os.path.dirname(os.path.abspath(__file__)); T=os.path.dirname(HERE); REPO=os.path.dirname(os.path.dirname(T))
 ap=argparse.ArgumentParser(); ap.add_argument('map'); ap.add_argument('--shuffles',type=int,default=200)
 ap.add_argument('--seed',type=int,default=7); ap.add_argument('--show',action='store_true')
-ap.add_argument('--phrase',default="la gubernation d'ispagnia"); a=ap.parse_args()
+ap.add_argument('--phrase',default="la gubernation d'ispagnia"); ap.add_argument('--cipher',default='ciphertext_v4.txt'); a=ap.parse_args()
 MAP={}
 _rows=[l for l in open(a.map).read().splitlines() if l.strip() and not l.startswith('#')]
 for r in csv.DictReader(_rows,delimiter='\t'):
     MAP[r['code'].strip()]=r['value'].strip().lower()
-lines=[l.split() for l in open(os.path.join(HERE,'ciphertext_v4.txt')).read().splitlines() if l.strip()]
+lines=[l.split() for l in open(os.path.join(HERE,a.cipher) if not os.path.isabs(a.cipher) else a.cipher).read().splitlines() if l.strip()]
 codes=[c for l in lines for c in l]; cnt=Counter(codes)
 def val(c,m): 
     v=m.get(c,'?'); return v if v else '?'
