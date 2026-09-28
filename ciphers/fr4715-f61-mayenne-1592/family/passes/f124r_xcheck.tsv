@@ -1,0 +1,427 @@
+line	word	kind	letters	signs	codes
+L01	avant	gloss	5	5	C43 LOOPS C43 C43 VBAR_A
+L01	que	gloss	3	3	OTHER EBR_B C43
+L01	la	gloss	2	3	EBR_B PHI VBAR_A
+L01	lettre	gloss	6	3	VBAR_A PHI PHI
+L01	que	gloss	3	2	OTHER C43
+L01	auez	gloss	4	5	LOOPS PHI CH PHI VBAR_B
+L01	escrite	gloss	7	3	4STEM PHI H24
+L01	a	gloss	1	1	VBAR_A
+L01	Mons[ieu]r	gloss	8	4	PHI C43 OTHER OTHER
+L01	luy	gloss	3	4	EBR_B LOOPS EBR_B C43
+L01	aye	gloss	3	3	EBR_B PHI PHI
+L01	este	gloss	4	4	VBAR_B VBAR_A PHI PHI
+L01	rendue	gloss	6	3	PHI C43 4STEM
+L01	m'a	gloss	2	1	LOOPS
+L01	apporte	gloss	7	2	PHI OTHER
+L01	savoir	gloss	6	6	C43 LOOPS PHI HASH4 VBAR_A VBAR_A
+L01	satisfaict	gloss	10	9	C43 VBAR_A VBAR_A HASH4 VBAR_A VBAR_A 4STEM HASH4 VBAR_A
+L02	Sa	gloss	2	0	
+L02	S[ainc]te[té]	gloss	9	1	LOOPS
+L02	par	gloss	3	2	LOOPS C43
+L02	leur	gloss	4	2	4STEM HASH4
+L02	dissention	gloss	10	6	VBAR_A 4TRI PHI LOOPS PHI VBAR_A
+L02	la	gloss	2	2	4TRI PHI
+L02	ra	gloss	2	2	4TRI PHI
+L02	grand	gloss	5	3	OTHER EBR_B 4TRI
+L02	provision	gloss	9	10	PHI LOOPS LOOPS LOOPS H24 VBAR_A 4STEM H24 PHI PHI
+L02	sur	gloss	3	2	VBAR_A LOOPS
+L02	le	gloss	2	3	PHI EBR_B PHI
+L02	faict	gloss	5	4	VBAR_A C43 H24 VBAR_A
+L02	de	gloss	2	2	HASH4 PHI
+L02	ma[ni]feste	gloss	9	6	BETA C43 VBAR_A PHI LOOPS VBAR_A
+L02	de	gloss	2	2	VBAR_A H24
+L02	Cal	gloss	3	3	4STEM PHI ISH
+L02	par	gloss	3	3	C43 4TRI 4TRI
+L02	et	gloss	2	1	H24
+L02	du	gloss	2	1	H24
+L02	cardinal	gloss	8	1	OTHER
+L02	de	gloss	2	1	OTHER
+L02	Pel?	gloss	3	3	H24 EBR_B EBR_B
+L02	le	gloss	2	3	PHI 4TRI LOOPS
+L03	commune	gloss	7	3	BETA BETA LOOPS
+L03	?ra	gloss	2	4	C43 H24 4TRI C43
+L03	au	gloss	2	5	C43 LOOPS OTHER 4TRI PHI
+L03	seulement	gloss	9	5	PHI RSIGN H24 PHI PHI
+L03	que	gloss	3	2	OTHER 4STEM
+L03	de	gloss	2	3	PHI EBR_B PHI
+L03	la	gloss	2	2	VBAR_A C43
+L03	faveur	gloss	6	4	H24 PHI PHI LOOPS
+L03	leur	gloss	4	2	LOOPS H24
+L03	qui	gloss	3	3	PHI OTHER VBAR_A
+L03	trouva	gloss	6	3	PHI LOOPS LOOPS
+L03	a	gloss	1	2	LOOPS C43
+L03	la	gloss	2	2	PHI LOOPS
+L03	grande	gloss	6	3	C43 OTHER OTHER
+L03	le	gloss	2	1	EBR_B
+L03	le	gloss	2	1	PHI
+L03	un	gloss	2	2	LOOPS HASH4
+L03	estat	gloss	5	2	VBAR_A RSIGN
+L03	exemple	gloss	7	5	EBR_B PHI RSIGN 4TRI EBR_B
+L03	a	gloss	1	1	PHI
+L03	le	gloss	2	1	H24
+L03	cardinal	gloss	8	8	C43 EBR_B PHI 4TRI C43 PHI 4STEM H24
+L04	a	gloss	1	0	
+L04	alexandrin	gloss	10	13	C43 C43 EBR_B C43 EBR_B PHI H24 C43 C43 4TRI PHI H24 C43
+L04	aussy	gloss	5	1	C43
+L04	esté	gloss	4	3	VBAR_A VBAR_A HASH4
+L04	que	gloss	3	2	C43 OTHER
+L04	et	gloss	2	2	4TRI PHI
+L04	fut	gloss	3	3	VBAR_A LOOPS VBAR_A
+L04	avec	gloss	4	8	C43 LOOPS PHI 4TRI C43 LOOPS PHI 4TRI
+L04	tellement	gloss	9	6	VBAR_A PHI EBR_B EBR_B PHI C43
+L04	comme	gloss	5	3	PHI RSIGN RSIGN
+L04	de	gloss	2	1	PHI
+L04	la	gloss	2	1	H24
+L04	que	gloss	3	2	H24 VBAR_A
+L04	l'ayse	gloss	5	2	PHI OTHER
+L04	le	gloss	2	3	OTHER EBR_B PHI
+L04	paix	gloss	4	4	4TRI PHI LOOPS VBAR_A
+L04	fau?e?	gloss	4	5	VBAR_A PHI LOOPS INF VBAR_A
+L04	tant	gloss	4	0	
+L04	que	gloss	3	5	VBAR_A PHI PHI OTHER C43
+L05	?vain	gloss	4	2	LOOPS VBAR_A
+L05	fu	gloss	2	4	VBAR_B H24 VBAR_A 4TRI
+L05	paroistre	gloss	9	1	C43
+L05	?isten	gloss	5	8	PHI LOOPS H24 VBAR_A VBAR_A PHI PHI 4TRI
+L05	n[ost]re	inline	6	8	PLAIN C43 PHI LOOPS VBAR_A PHI PHI 4TRI
+L05	d'un	gloss	3	1	PHI
+L05	a?e	gloss	2	8	LOOPS C43 C43 VBAR_A C43 LOOPS PHI 4TRI
+L05	tant	gloss	4	6	VBAR_A C43 C43 VBAR_A 4STEM PHI
+L05	d'autre	gloss	6	0	
+L05	d'?ntr?eux	gloss	7	5	HASH4 PHI LOOPS INF 4TRI
+L05	que	gloss	3	3	PHI LOOPS PHI
+L05	n'aultre	gloss	7	6	OTHER C43 C43 LOOPS H24 PHI
+L05	telles	gloss	6	4	C43 VBAR_A PHI H24
+L05	a	gloss	1	0	
+L05	d?	gloss	1	1	PHI
+L05	?ivre	gloss	4	5	C43 C43 4STEM PHI VBAR_A
+L06	d'avantage	gloss	9	6	H24 C43 C43 C43 C43 VBAR_A
+L06	m'a	gloss	2	1	C43
+L06	apporte	gloss	7	4	VBAR_A PHI OTHER EBR_B
+L06	luy	gloss	3	2	LOOPS EBR_A
+L06	a	gloss	1	1	C43
+L06	promesse	gloss	8	6	4TRI PHI PHI RSIGN H24 VBAR_A
+L06	luy	gloss	3	3	LOOPS C43 C43
+L06	autre	gloss	5	5	LOOPS VBAR_A PHI DBL 4STEM
+L06	d'estonner	gloss	9	7	H24 VBAR_A 4TRI PHI LOOPS INF PHI
+L06	sur	gloss	3	2	VBAR_A VBAR_A
+L06	la	gloss	2	1	LOOPS
+L06	?	gloss	0	2	PHI EBR_B
+L06	asservir	gloss	8	9	PHI VBAR_A C43 VBAR_A VBAR_A C43 H24 DBL PHI
+L06	gualter	inline	7	1	VBAR_A
+L06	avec	gloss	4	4	PLAIN C43 LOOPS PHI
+L06	?arsoun	gloss	6	4	4TRI PHI C43 H24
+L07	d'	gloss	1	2	4STEM DBL
+L07	n[ost]re	inline	6	0	
+L07	partout	gloss	7	2	PLAIN 4STEM
+L07	d'autre	gloss	6	5	C43 LOOPS VBAR_A DBL DBL
+L07	mettant	gloss	7	6	RSIGN BETA PHI VBAR_A VBAR_A C43
+L07	a	gloss	1	1	C43
+L07	part	gloss	4	2	VBAR_A C43
+L07	le	gloss	2	3	OTHER VBAR_A EBR_B
+L07	?h?vette	gloss	6	3	PHI VBAR_A LOOPS
+L07	guerre	gloss	6	7	PHI PHI PHI VBAR_A HASH4 HASH4 LOOPS
+L07	dame	gloss	4	3	PHI VBAR_A 4TRI
+L07	de	gloss	2	5	PHI RSIGN RSIGN PHI HASH4
+L07	bien	gloss	4	2	PHI 4TRI
+L07	de	gloss	2	2	PHI H24
+L07	mom?ntre	gloss	7	7	HASH4 PHI RSIGN PHI RSIGN PHI C43
+L07	icy	gloss	3	2	VBAR_A PHI
+L07	campagne	gloss	8	9	C43 4TRI C43 VBAR_A OTHER EBR_B PHI VBAR_A 4TRI
+L08	Cou?	gloss	3	1	VBAR_A
+L08	catholique	gloss	10	8	PHI EBR_B H24 H24 LOOPS PHI VBAR_A VBAR_A
+L08	feussent	gloss	8	6	LOOPS VBAR_A VBAR_A PHI C43 VBAR_A
+L08	Ceux	gloss	4	4	LOOPS C43 H24 VBAR_A
+L08	et	gloss	2	2	OTHER OTHER
+L08	estimant	gloss	8	7	PHI VBAR_A VBAR_A H24 RSIGN PHI C43
+L08	quelz	gloss	5	4	VBAR_A OTHER EBR_B RSIGN
+L08	perdiront	gloss	9	10	4TRI PHI PHI H24 LOOPS HASH4 PHI LOOPS C43 VBAR_A
+L08	tout	gloss	4	4	VBAR_A PHI LOOPS INF
+L08	d?nge?e	gloss	5	12	VBAR_A 4TRI PHI C43 VBAR_A VBAR_A HASH4 VBAR_A VBAR_A PHI C43 4STEM
+L08	a	gloss	1	0	
+L08	donner	gloss	6	4	PHI C43 C43 DBL
+L08	semble	gloss	6	5	DBL VBAR_A PHI LOOPS INF
+L09	Sa	gloss	2	3	RSIGN 4TRI RSIGN
+L09	somme	gloss	5	5	PHI PHI LOOPS 4STEM 4TRI
+L09	?	gloss	0	1	4TRI
+L09	?urissions	gloss	9	0	
+L09	successivement	gloss	14	9	PHI VBAR_A H24 4TRI 4TRI PHI PHI VBAR_A VBAR_A
+L09	celuy	gloss	5	5	H24 LOOPS PHI 4TRI VBAR_A
+L09	qui	gloss	3	3	4TRI PHI EBR_B
+L09	?	gloss	0	1	LOOPS
+L09	celuy	gloss	5	3	CROSS ISH 4TRI
+L09	d'omme	gloss	5	5	EBR_B PHI LOOPS PHI 4TRI
+L09	l'en	gloss	3	3	PHI 4TRI 4TRI
+L09	present	gloss	7	3	PHI EBR_B PHI
+L09	soumettre	gloss	9	0	
+L09	soumett?	gloss	7	7	4TRI EBR_B LOOPS VBAR_A VBAR_A PHI LOOPS
+L09	de	gloss	2	1	LOOPS
+L09	quoy	gloss	4	5	PHI 4TRI VBAR_A 4TRI PHI
+L09	sou?	gloss	3	1	HASH4
+L09	cela	gloss	4	3	LOOPS PHI EBR_B
+L09	Estant	gloss	6	6	VBAR_A LOOPS PHI LOOPS EBR_A PHI
+L10	estre	gloss	5	4	VBAR_A 4TRI PHI H24
+L10	laisser	gloss	7	1	VBAR_A
+L10	?est	gloss	3	2	4TRI PHI
+L10	a	gloss	1	1	VBAR_A
+L10	celuy	gloss	5	5	VBAR_A 4TRI PHI EBR_B LOOPS
+L10	qui	gloss	3	2	EBR_B 4TRI
+L10	comporte	gloss	8	7	EBR_B PHI 4TRI 4TRI PHI PHI VBAR_A
+L10	pas	gloss	3	3	PHI OTHER 4TRI
+L10	aucuns	gloss	6	6	H24 4TRI VBAR_A H24 OTHER VBAR_A
+L10	faicte	gloss	6	4	4TRI H24 VBAR_A PHI
+L10	qui	gloss	3	3	VBAR_A OTHER H24
+L10	Jusqu'au	gloss	7	6	LOOPS VBAR_A 4TRI LOOPS PHI VBAR_A
+L10	au	gloss	2	3	4TRI LOOPS H24
+L10	moins	gloss	5	3	BETA PHI H24
+L10	un	gloss	2	3	4TRI 4TRI PHI
+L10	particulier	gloss	11	4	PHI VBAR_B OTHER VBAR_A
+L10	amy	gloss	3	7	H24 4TRI LOOPS EBR_B 4TRI PHI H24
+L11	ou	gloss	2	2	PHI 4TRI
+L11	?	gloss	0	2	PHI 4TRI
+L11	au	gloss	2	2	4TRI H24
+L11	admit	gloss	5	6	PHI 4TRI 4TRI LOOPS H24 VBAR_A
+L11	encore	gloss	6	5	PHI LOOPS VBAR_A PHI PHI
+L11	cela	gloss	4	3	EBR_B PHI DBL
+L11	desavouera	gloss	10	7	4TRI H24 VBAR_A 4TRI PHI LOOPS PHI
+L11	?respondra	gloss	9	6	VBAR_A 4TRI PHI OTHER PHI LOOPS
+L11	Je	gloss	2	2	H24 EBR_B
+L11	m'en?a	gloss	4	5	BETA PHI 4TRI 4TRI H24
+L11	absolum[en]t	gloss	10	0	
+L11	resoluement	gloss	11	5	PHI EBR_B H24 BETA PHI
+L11	entendue	gloss	8	0	
+L11	?	gloss	0	5	4TRI VBAR_A EBR_B PHI OTHER
+L11	Et	gloss	2	2	4STEM 4TRI
+L11	baudy	gloss	5	3	PHI LOOPS VBAR_A
+L11	mau?	gloss	3	4	4TRI PHI EBR_B 4TRI
+L11	ne	gloss	2	3	H24 VBAR_A VBAR_A
+L12	?ssadeurs	gloss	8	4	BETA PHI VBAR_A 4TRI
+L12	d'un	gloss	3	2	PHI 4TRI
+L12	traicte	gloss	7	7	VBAR_A PHI 4TRI H24 VBAR_A PHI PHI
+L12	et	gloss	2	2	LOOPBAR VBAR_A
+L12	tant	gloss	4	2	4TRI 4TRI
+L12	faict	gloss	5	3	4TRI VBAR_A 4TRI
+L12	lesd[its]	gloss	7	5	H24 PHI PHI OTHER 4TRI
+L12	Sinigaglia	gloss	10	7	VBAR_A PHI 4TRI VBAR_A 4TRI VBAR_A PHI
+L12	?	gloss	0	4	4TRI OTHER 4TRI PLAIN
+L12	partie	gloss	6	3	OTHER VBAR_A EBR_B
+L12	s?volt	gloss	5	5	VBAR_A PHI PHI PHI H24
+L12	rempli	gloss	6	8	VBAR_A PHI PHI 4TRI 4TRI EBR_B EBR_B HASH4
+L12	d'ambitieux	gloss	10	5	4TRI 4TRI PHI H24 VBAR_A
+L12	?	gloss	0	6	H24 PHI 4TRI PHI 4TRI 4TRI
+L12	rea	gloss	3	1	PHI
+L13	ne	gloss	2	3	4TRI PHI 4TRI
+L13	p?mettre	gloss	7	6	PHI LOOPS LOOPS PHI H24 VBAR_A
+L13	Je	gloss	2	2	H24 EBR_B
+L13	m'en	gloss	3	2	PHI 4TRI
+L13	embrasse	gloss	8	8	PHI BETA PHI PHI 4TRI VBAR_A VBAR_A PHI
+L13	l'ung	gloss	4	4	PHI LOOPS 4TRI 4TRI
+L13	autre	gloss	5	3	LOOPS VBAR_A PHI
+L13	le	gloss	2	2	PHI H24
+L13	y	gloss	1	1	EBR_B
+L13	a	gloss	1	1	OTHER
+L13	tiran	gloss	5	6	4TRI VBAR_A PHI PHI H24 VBAR_A
+L13	Jouera	gloss	6	5	H24 PHI LOOPS PHI VBAR_A
+L13	?	gloss	0	2	OTHER EBR_B
+L13	fera	gloss	4	4	VBAR_A PHI H24 VBAR_A
+L13	tenu	gloss	4	6	VBAR_A PHI 4TRI H24 PHI OTHER
+L13	de	gloss	2	1	4TRI
+L13	son	gloss	3	2	PHI OTHER
+L13	amour	gloss	5	5	OTHER 4TRI EBR_B EBR_B 4TRI
+L13	ulta	gloss	4	2	LOOPS PHI
+L14	vous	gloss	4	4	H24 PHI C6 OTHER
+L14	qui	gloss	3	3	PHI 4TRI PHI
+L14	c'est	gloss	4	2	VBAR_A VBAR_A
+L14	pour	gloss	4	2	ZBAR PHI
+L14	grandeur	gloss	8	7	4TRI VBAR_A 4TRI LOOPS PHI H24 PHI
+L14	commandem[en]t	gloss	12	9	4TRI PHI LOOPS LOOPS PHI EBR_B EBR_B PHI VBAR_A
+L14	qui	gloss	3	1	OTHER
+L14	celuy	gloss	5	0	
+L14	luy	gloss	3	3	EBR_B LOOPS LOOPBAR
+L14	dist	gloss	4	0	
+L14	dist	gloss	4	3	4TRI H24 VBAR_A
+L14	d'	gloss	1	0	
+L14	&	gloss	0	2	OTHER 4TRI
+L14	a	gloss	1	0	
+L14	a	gloss	1	1	VBAR_A
+L14	fin	gloss	3	3	PHI 4TRI 4TRI
+L14	adm?	gloss	3	3	4TRI LOOPS H24
+L14	le	gloss	2	1	VBAR_A
+L14	regard	gloss	6	3	OTHER 4TRI PHI
+L14	de	gloss	2	1	LOOPS
+L14	q.	gloss	1	1	H24
+L14	ne	gloss	2	1	PHI
+L14	?icaire	gloss	6	6	C43 4TRI PHI PHI H24 VBAR_A
+L14	point	gloss	5	3	4TRI PHI H24
+L14	nonobstant	gloss	10	6	4TRI VBAR_A 4TRI PHI 4TRI PHI
+L15	F	gloss	1	2	VBAR_A 4TRI
+L15	celuy	gloss	5	3	4TRI VBAR_A EBR_B
+L15	Brasciano	gloss	9	7	PHI VBAR_A PHI 4TRI H24 VBAR_A PHI
+L15	Jusques	gloss	7	2	4TRI VBAR_A
+L15	rard	gloss	4	4	4TRI LOOPS ELOOP OTHER
+L15	?	gloss	0	0	
+L15	t?	gloss	1	2	LOOPBAR 4TRI
+L15	l'autre	gloss	6	6	4TRI LOOPS VBAR_A PHI PHI VBAR_A
+L15	d'aute	gloss	5	5	4TRI PHI 4TRI VBAR_A H24
+L15	de	gloss	2	0	
+L15	Je	gloss	2	2	EBR_B BETA
+L15	voue	gloss	4	4	LOOPS PHI LOOPS VBAR_A
+L15	obstination	gloss	11	10	PHI PHI H24 PHI 4TRI VBAR_A PHI H24 PHI 4TRI
+L15	?elle	gloss	4	3	VBAR_A BETA H24
+L15	religion	gloss	8	6	EBR_B PHI 4TRI LOOPS PHI VBAR_A
+L15	naturel	gloss	7	7	PHI VBAR_A PHI 4TRI VBAR_A PHI PHI
+L16	l'autre	gloss	6	5	4TRI LOOPS VBAR_A PHI PHI
+L16	ca	gloss	2	3	VBAR_A EBR_B 4TRI
+L16	distribuer	gloss	10	11	HASH4 H24 VBAR_A VBAR_A PHI H24 PHI LOOPS VBAR_A H24 PHI
+L16	qui	gloss	3	2	4TRI OTHER
+L16	faisoy	gloss	6	6	VBAR_A 4TRI H24 VBAR_A H24 PHI
+L16	dire	gloss	4	4	BETA 4TRI PHI VBAR_A
+L16	benefices	gloss	9	8	PHI LOOPS 4TRI PHI VBAR_A H24 4TRI PHI
+L16	a	gloss	1	1	VBAR_A
+L16	?	gloss	0	6	HASH4 RSIGN VBAR_A PHI BETA BETA
+L16	it	gloss	2	2	PHI VBAR_A
+L16	?end	gloss	3	2	ELOOP VBAR_A
+L16	au	gloss	2	1	PHI
+L16	?nde	gloss	3	14	4TRI VBAR_A 4TRI 4TRI PHI BETA PHI VBAR_A 4TRI LOOPS 4TRI 4TRI PHI EBR_B
+L17	?ge	gloss	2	2	H24 EBR_B
+L17	faict	gloss	5	4	VBAR_A 4TRI EBR_B PHI
+L17	du	gloss	2	3	H24 VBAR_A VBAR_A
+L17	mieu?	gloss	4	6	4TRI LOOPS PHI H24 CROSS PHI
+L17	d?elle	gloss	5	4	4TRI PHI LOOPS HASH4
+L17	?es?u?	gloss	3	4	4TRI LOOPS PHI VBAR_A
+L17	fol	gloss	3	3	PHI VBAR_A ZBAR
+L17	estre	gloss	5	3	PHI VBAR_A VBAR_A
+L17	l	gloss	1	1	PHI
+L17	s	gloss	1	1	VBAR_A
+L17	?ulle	gloss	4	2	4TRI LOOPS
+L17	l'Eu	gloss	3	3	PHI EBR_B 4TRI
+L17	foy	gloss	3	3	VBAR_A PHI EBR_B
+L17	lEon	gloss	4	4	OTHER EBR_B PHI VBAR_A
+L17	ordinaire	gloss	9	4	PHI PHI LOOPS LOOPS
+L17	l	gloss	1	2	PHI PHI
+L17	que	gloss	3	3	VBAR_A OTHER 4TRI
+L17	de	gloss	2	0	
+L17	la	gloss	2	2	PHI EBR_B
+L17	affere	gloss	6	5	4TRI VBAR_A PHI EBR_B PHI
+L17	ace	gloss	3	4	EBR_A EBR_B PHI PHI
+L17	?tan	gloss	3	5	VBAR_A VBAR_A PHI H24 VBAR_A
+L18	en	gloss	2	1	4TRI
+L18	dire	gloss	4	4	4TRI PHI LOOPS H24
+L18	de	gloss	2	1	4TRI
+L18	n	gloss	1	1	LOOPS
+L18	party	gloss	5	4	OTHER VBAR_A EBR_B 4TRI
+L18	des	gloss	3	2	PHI VBAR_A
+L18	catholiques	gloss	11	9	4TRI 4TRI VBAR_A PHI DBL EBR_B H24 HASH4 LOOPS
+L18	qui	gloss	3	3	PHI VBAR_A OTHER
+L18	Cm	gloss	2	3	EBR_B PHI VBAR_A
+L18	?unds	gloss	4	3	LOOPS PHI PHI
+L18	au	gloss	2	3	LOOPS LOOPS PHI
+L18	Cn	gloss	2	3	PHI VBAR_A EBR_B
+L18	g?ivelle	gloss	7	5	PHI VBAR_A LOOPS PHI PHI
+L18	l'	gloss	1	1	PHI
+L18	?imp????	gloss	3	7	PHI VBAR_A PHI OTHER HASH4 PHI VBAR_A
+L18	m?	gloss	1	5	4TRI LOOPS PHI H24 PHI
+L18	q'm	gloss	2	3	4TRI VBAR_A OTHER
+L18	ch??	gloss	2	2	EBR_B PHI
+L18	?ug	gloss	2	1	4TRI
+L18	luy	gloss	3	4	4TRI H24 4TRI PHI
+L19	permect	gloss	7	5	LOOPS PHI H24 VBAR_A 4TRI
+L19	dauul?	gloss	5	0	
+L19	ordin?	gloss	5	9	PHI 4TRI 4TRI PHI PHI PHI PHI 4TRI PHI
+L19	l	gloss	1	1	PHI
+L19	?heaue	gloss	5	5	BETA 4TRI RSIGN H24 VBAR_A
+L19	du	gloss	2	2	4TRI LOOPS
+L19	party	gloss	5	3	OTHER VBAR_A EBR_B
+L19	l	gloss	1	1	4TRI
+L19	huistlacu	gloss	9	8	PHI 4TRI VBAR_A PHI 4TRI H24 PHI PHI
+L19	fe	gloss	2	0	
+L19	ce	gloss	2	2	H24 EBR_B
+L19	ny	gloss	2	0	
+L19	?y	gloss	1	2	4TRI H24
+L19	aubbe	gloss	5	0	
+L19	au?e	gloss	3	5	4TRI LOOPS PHI H24 VBAR_A
+L19	foy	gloss	3	3	VBAR_A PHI EBR_B
+L19	ny	gloss	2	2	4TRI H24
+L19	?cuw	gloss	3	3	PHI PHI LOOPS
+L19	?ra	gloss	2	3	LOOPS PHI PHI
+L19	a	gloss	1	1	VBAR_A
+L19	h?ifta?	gloss	5	6	4TRI VBAR_A VBAR_A H24 VBAR_A VBAR_A
+L20	leur	gloss	4	3	VBAR_A DBL 4TRI
+L20	heretiqu?	gloss	8	2	LOOPS PHI
+L20	qui	gloss	3	7	PHI PHI VBAR_A H24 HASH4 LOOPS PHI
+L20	faire	gloss	5	3	VBAR_A 4TRI 4TRI
+L20	bel	gloss	3	3	VBAR_A OTHER EBR_B
+L20	en	gloss	2	2	PHI 4TRI
+L20	fatiu?	gloss	5	6	VBAR_A 4TRI EBR_B LOOPS VBAR_A HASH4
+L20	demeures	gloss	8	5	PHI OTHER PHI LOOPS PHI
+L20	Ea	gloss	2	4	PHI PHI EBR_B 4TRI
+L20	d'affection	gloss	10	8	HASH4 4TRI VBAR_A VBAR_A H24 ZBAR VBAR_A PHI
+L20	du	gloss	2	1	PHI
+L20	tem?	gloss	3	4	4TRI LOOPS VBAR_A PHI
+L20	leur	gloss	4	3	LOOPS VBAR_A ISH
+L20	catholiques	gloss	11	12	PHI VBAR_A 4TRI 4TRI VBAR_A PHI EBR_B H24 HASH4 LOOPS PHI VBAR_A
+L21	apres	gloss	5	4	4TRI 4TRI PHI PHI
+L21	iceux	gloss	5	6	VBAR_A H24 OTHER EBR_B LOOPS EBR_B
+L21	de	gloss	2	1	HASH4
+L21	sa	gloss	2	1	H24
+L21	s[ainc]te[té]	gloss	9	6	VBAR_A OTHER VBAR_B EBR_B PHI VBAR_A
+L21	c'estoit	gloss	7	4	VBAR_A PHI H24 VBAR_A
+L21	alla	gloss	4	2	4TRI EBR_B
+L21	voue	gloss	4	4	EBR_B PHI LOOPS PHI
+L21	?ile	gloss	3	4	H24 PHI OTHER EBR_B
+L21	auan[t]	gloss	5	5	4TRI LOOPS PHI H24 VBAR_A
+L21	faict	gloss	5	3	VBAR_A 4TRI H24
+L21	faire	gloss	5	3	VBAR_A VBAR_A 4TRI
+L21	de	gloss	2	2	4TRI VBAR_A
+L21	protestatio[n]s	gloss	13	12	HASH4 PHI 4TRI PHI PHI VBAR_A PHI VBAR_A VBAR_A 4TRI VBAR_A H24
+L21	d'?ca	gloss	3	1	PHI
+L21	ca	gloss	2	2	4TRI VBAR_A
+L21	part	gloss	4	5	HASH4 PHI EBR_B 4TRI OTHER
+L21	de	gloss	2	2	HASH4 PHI
+L22	de	gloss	2	0	
+L22	?ses	gloss	3	3	VBAR_A PHI 4TRI
+L22	ma	gloss	2	2	PLAIN OTHER
+L22	Cela	gloss	4	4	EBR_B 4TRI PHI 4TRI
+L22	des	gloss	3	1	PHI
+L22	?seruice	gloss	7	4	VBAR_A H24 PHI PHI
+L22	tres	gloss	4	3	H24 PHI H24
+L22	plaine	gloss	6	4	PHI 4TRI 4TRI EBR_B
+L22	qui	gloss	3	1	LOOPS
+L22	que	gloss	3	3	VBAR_A OTHER EBR_B
+L22	c'est	gloss	4	2	PHI 4TRI
+L22	t'ay	gloss	3	1	PHI
+L22	bien	gloss	4	4	4TRI LOOPS H24 4TRI
+L22	a	gloss	1	1	VBAR_A
+L22	l'?lection	gloss	8	7	4TRI EBR_B PHI EBR_B PHI 4TRI VBAR_A
+L22	du	gloss	2	2	H24 PHI
+L22	Roy	gloss	3	5	4TRI HASH4 LOOPS 4TRI VBAR_A
+L22	catholique	gloss	10	10	HASH4 4TRI VBAR_A PHI EBR_B H24 HASH4 LOOPS PHI VBAR_A
+L22	j'aura	gloss	5	3	4TRI 4TRI VBAR_A
+L23	aultre	gloss	6	5	4TRI LOOPS VBAR_A PHI PHI
+L23	et	gloss	2	1	4TRI
+L23	affaires	gloss	8	4	4TRI VBAR_A VBAR_A H24
+L23	b?	gloss	1	3	PHI 4TRI OTHER
+L23	?nettetem	gloss	8	8	BETA RSIGN PHI VBAR_A VBAR_A PHI PHI H24
+L23	?aut	gloss	3	4	VBAR_A VBAR_A PHI LOOPS
+L23	en	gloss	2	1	VBAR_A
+L23	qui	gloss	3	4	4TRI PHI OTHER VBAR_A
+L23	?uoa	gloss	3	4	PHI PHI PHI H24
+L23	de	gloss	2	2	VBAR_A HASH4
+L23	sa	gloss	2	1	PHI
+L23	puissance	gloss	9	8	VBAR_A 4TRI 4TRI LOOPS HASH4 VBAR_A VBAR_A 4TRI
+L23	pour	gloss	4	3	4TRI 4TRI PHI
+L23	l'ambas?adeur	gloss	11	8	ZBAR OTHER OTHER BETA 4TRI H24 4TRI VBAR_A
+L23	?uy	gloss	2	1	PHI
+L23	?ay	gloss	2	5	4TRI H24 PHI EBR_B PHI
+L24	ceux	gloss	4	2	ISH LOOPS
+L24	la	gloss	2	7	ISH 4TRI PHI PHI 4TRI HASH4 LOOPS
+L24	rentre	gloss	6	0	
+L24	?entre	gloss	5	5	HASH4 PHI BETA OTHER PHI
+L24	de	gloss	2	3	HASH4 PHI EBR_B
+L24	l?serue	gloss	6	4	PHI LOOPS PHI VBAR_A
+L24	catiou	gloss	6	7	HASH4 4TRI VBAR_A H24 PHI 4TRI VBAR_A
+L24	?ppubus	gloss	6	7	4TRI PHI BETA PHI H24 PHI 4TRI
+L24	?unne	gloss	4	5	EBR_B PHI LOOPS PHI VBAR_A
+L24	cinq	gloss	4	2	EBR_B PHI
+L24	?uuu	gloss	3	18	4TRI VBAR_A LOOPS PHI LOOPS PHI VBAR_A VBAR_A PHI 4TRI VBAR_A HASH4 PHI PHI LOOPS 4TRI PHI 4TRI

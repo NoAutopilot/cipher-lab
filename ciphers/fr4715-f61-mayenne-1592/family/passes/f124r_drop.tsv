@@ -1,0 +1,6 @@
+# f124r_drop.tsv -- F61-FAMILY-4, 28 Sept 2026: crops held out of the f.124r draft. cut_bands.py --track 18 drifted one row at s5 on L27-L30 (both blind readers reported the s5 image centred a row lower: A listed L30 s5 as a duplicate of L29 s5, B read L29 s5 from L28's s5 image); the s5 signs of these bands are held rather than settled by a third look.
+line	segment
+L27	s5
+L28	s5
+L29	s5
+L30	s5
