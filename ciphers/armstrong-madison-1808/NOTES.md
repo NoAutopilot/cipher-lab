@@ -3286,3 +3286,28 @@ the lower-priority half.
 No reading, no class change; a catalogue search, nothing called new or first. Vision 0. Requests: archives.yale.edu
 4 (browser), collections.library.yale.edu 1 (browser), ead-pdfs.library.yale.edu 1. Cost: about 1 USD each (H51
 records 1, H53 records 0.5).
+
+## Campaign step H54 (28 Sept 2026, to 15:10 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Question:
+how coarse must the shorthand glyph inventory be before two blind readers agree? B35 (line B) found 80 percent label
+disagreement on Tomokiyo's 38 types and tried one merge (23/29 classes). Offline; line B's files read, not edited.
+
+**Method** (`h54/coarse_curve.py`, output `h54/output.txt`): B35's passes A and B via its own reconcile.py loader;
+greedy agglomeration on one half of the crops (merge the pair of classes the readers confuse most), scored on the other
+half at every class count from 29 down to 2: positional agreement, the agreement expected by chance from the readers'
+own class marginals, and Cohen's kappa. Both splits.
+
+| held-out half | aligned pairs | best kappa (classes, agreement) | agreement at 10 / 5 / 2 classes (chance) | 90 pct reached |
+|---|---|---|---|---|
+| crops 16-29 | 22 | +0.263 (10, 0.727) | 0.727 (0.630) / 0.727 (0.711) / 0.773 (0.723) | never |
+| crops 1-15 | 90 | +0.357 (about 20-22, 0.422) | 0.422 (0.185) / 0.511 (0.281) / 0.578 (0.449) | never |
+
+**Result:** at no inventory size, down to two classes, do the two readers reach B35's 90 percent gate, and kappa never
+passes 0.36 (fair agreement at best): the coarse merges raise raw agreement only as fast as chance agreement rises.
+So the readers' disagreement is not a granularity problem that a smaller sign list fixes; at this image quality the
+type assignment is unreproducible at every granularity (the 16-29 split rests on only 22 aligned pairs; the 1-15 split
+on 90 carries the weight). Consequences: H56 (a pattern-only name test) is dropped on its own condition; H55 (fusing
+the two exposures of frames 31/32 as better material) is the only glyph step left, to be judged against this curve at
+the best-kappa size (about 10-20 classes). No reading, no class change; nothing called new or first. Vision 0,
+requests 0. Cost: about 0.3 USD (`--spend` records 0.5).

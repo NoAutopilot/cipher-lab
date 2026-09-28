@@ -1,0 +1,28 @@
+train 1-15 / test 16-29: 22 held-out aligned glyph pairs
+  classes 29	agreement 0.091	chance 0.021	kappa +0.072
+  classes 25	agreement 0.182	chance 0.056	kappa +0.133
+  classes 20	agreement 0.227	chance 0.157	kappa +0.083
+  classes 15	agreement 0.500	chance 0.409	kappa +0.154
+  classes 12	agreement 0.636	chance 0.533	kappa +0.221
+  classes 10	agreement 0.727	chance 0.630	kappa +0.263
+  classes  8	agreement 0.727	chance 0.702	kappa +0.083
+  classes  6	agreement 0.727	chance 0.707	kappa +0.070
+  classes  5	agreement 0.727	chance 0.711	kappa +0.057
+  classes  4	agreement 0.773	chance 0.719	kappa +0.191
+  classes  3	agreement 0.773	chance 0.719	kappa +0.191
+  classes  2	agreement 0.773	chance 0.723	kappa +0.179
+  best kappa +0.263 at 10 classes (agreement 0.727); first class count reaching 90 pct agreement: none
+train 16-29 / test 1-15: 90 held-out aligned glyph pairs
+  classes 29	agreement 0.311	chance 0.060	kappa +0.268
+  classes 25	agreement 0.411	chance 0.095	kappa +0.349
+  classes 20	agreement 0.422	chance 0.101	kappa +0.357
+  classes 15	agreement 0.422	chance 0.103	kappa +0.356
+  classes 12	agreement 0.422	chance 0.175	kappa +0.300
+  classes 10	agreement 0.422	chance 0.185	kappa +0.291
+  classes  8	agreement 0.433	chance 0.213	kappa +0.280
+  classes  6	agreement 0.478	chance 0.247	kappa +0.306
+  classes  5	agreement 0.511	chance 0.281	kappa +0.320
+  classes  4	agreement 0.511	chance 0.301	kappa +0.301
+  classes  3	agreement 0.511	chance 0.308	kappa +0.293
+  classes  2	agreement 0.578	chance 0.449	kappa +0.234
+  best kappa +0.357 at 22 classes (agreement 0.422); first class count reaching 90 pct agreement: none
