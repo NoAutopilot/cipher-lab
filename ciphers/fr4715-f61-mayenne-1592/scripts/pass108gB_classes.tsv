@@ -1,0 +1,193 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	EBR_A	m	s1	1051	alt EBR_B
+L01	2	4STEM	m	s1	1282	alt 4TRI
+L01	3	VBAR_A	h	s1	1526	
+L01	4	ZHOOK	h	s1	1728	
+L01	5	EBR_B	m	s1	2002	alt EBR_A
+L01	6	EBR_A	m	s1	2218	alt EBR_B
+L01	7	4STEM	m	s1	2419	alt 4TRI
+L01	8	ZHOOK	h	s1	2678	
+L01	9	PHI	h	s2	302	
+L01	10	PHI	h	s2	490	
+L01	11	INF	m	s2	734	alt HASH4
+L01	12	C43	h	s2	950	
+L01	13	VBAR_A	h	s2	1166	
+L01	14	EBR_A	m	s2	1411	long tapering foot
+L01	15	INF	m	s2	1598	alt DBL
+L01	16	INF	h	s2	1800	
+L01	17	EBR_B	m	s2	2016	
+L01	18	C43	h	s2	2246	
+L01	19	INF	h	s2	2477	
+L01	20	4TRI	m	s2	2736	preceded by a vertical stroke; alt 4STEM
+L01	21	PHI	h	s3	317	
+L01	22	PHI	h	s3	533	
+L01	23	ZHOOK	h	s3	778	
+L01	24	INF	h	s3	1008	
+L01	25	4PI	m	s3	1238	alt HASH4
+L01	26	ZHOOK	h	s3	1483	
+L01	27	4TRI	m	s3	1714	
+L01	28	PHI	h	s3	1930	
+L01	29	4PI	m	s3	2189	alt HASH4
+L01	30	PHI	h	s3	2405	
+L01	31	4TRI	m	s3	2650	
+L01	32	EBR_B	m	s3	2822	
+L01	33	INF	h	s4	432	
+L01	34	EBR_A	m	s4	677	alt EBR_B
+L01	35	ZHOOK	h	s4	893	
+L01	36	INF	m	s4	1138	
+L01	37	INF	h	s4	1354	
+L01	38	PHI	h	s4	1613	
+L01	39	EBR_A	m	s4	1915	long foot tail, line end
+L02	1	C43	m	s1	1080	alt 4TRI
+L02	2	INF	m	s1	1339	alt HASH4
+L02	3	ISH	m	s1	1548	
+L02	4	VBAR_A	h	s1	1757	
+L02	5	PHI	h	s1	1973	
+L02	6	PHI	m	s1	2210	alt DBL
+L02	7	EBR_A	m	s1	2434	alt EBR_B
+L02	8	ISH	m	s1	2664	
+L02	9	BETA	h	s2	288	
+L02	10	PHI	h	s2	490	
+L02	11	4TRI	m	s2	706	
+L02	12	PHI	h	s2	922	
+L02	13	PHI	h	s2	1138	
+L02	14	C43	h	s2	1354	
+L02	15	INF	m	s2	1584	alt PHI
+L02	16	C43	h	s2	1800	
+L02	17	VBAR_A	h	s2	2002	
+L02	18	C43	m	s2	2189	preceded by a vertical stroke
+L02	19	VBAR_B	m	s2	2448	
+L02	20	C43	h	s2	2693	
+L02	21	PHI	h	s3	274	
+L02	22	PHI	m	s3	475	alt CA
+L02	23	C43	h	s3	662	
+L02	24	VBAR_A	h	s3	850	
+L02	25	HASH4	m	s3	1080	alt 4PI
+L02	26	PHI	h	s3	1296	
+L02	27	ISH	m	s3	1498	
+L02	28	PHI	h	s3	1685	
+L02	29	INF	m	s3	1886	alt HASH4
+L02	30	PHI	h	s3	2117	
+L02	31	EBR_A	m	s3	2290	
+L02	32	ZHOOK	m	s3	2534	preceded by a vertical stroke
+L02	33	C43	h	s3	2794	
+L02	34	4TRI	m	s4	389	
+L02	35	PHI	h	s4	634	
+L02	36	BETA	h	s4	835	
+L02	37	OTHER	l	s4	1037	long-s shaped stroke, no bowl; alt BETA
+L02	38	PHI	h	s4	1253	
+L02	39	4PI	m	s4	1440	alt HASH4
+L02	40	ZHOOK	h	s4	1656	
+L02	41	VBAR_A	h	s4	1829	
+L02	42	PHI	m	s4	2002	alt DBL
+L02	43	BETA	h	s4	2117	
+L03	1	PLAIN	h	s1	1166	Et
+L03	2	PLAIN	h	s1	1699	pour
+L03	3	PLAIN	h	s1	2333	cela
+L03	4	PLAIN	m	s1	2779	Je
+L03	5	PLAIN	h	s2	720	vous
+L03	6	PLAIN	h	s2	1440	laisse
+L03	7	PLAIN	h	s2	1944	a
+L03	8	PLAIN	m	s2	2376	juger
+L03	9	PLAIN	h	s3	475	quel
+L03	10	PLAIN	h	s3	1584	contentement
+L03	11	PLAIN	m	s3	2707	Je
+L03	12	PLAIN	h	s4	648	doibs
+L03	13	PLAIN	h	s4	1296	avoir
+L03	14	PHI	h	s4	1757	
+L03	15	VBAR_A	h	s4	1901	
+L03	16	EBR_B	m	s4	2059	alt ISH
+L04	1	C43	m	s1	1037	alt 4TRI
+L04	2	BETA	m	s1	1253	crossed by a stroke from the word above
+L04	3	ZHOOK	h	s1	1526	
+L04	4	BETA	h	s1	1800	
+L04	5	PHI	h	s1	2045	
+L04	6	PHI	h	s1	2246	
+L04	7	PHI	m	s1	2448	heavy ink, alt INF
+L04	8	OTHER	m	s1	2707	two side-by-side loops (w-like) on a short stem; alt INF
+L04	9	INF	h	s2	302	
+L04	10	ZHOOK	h	s2	547	
+L04	11	PHI	h	s2	821	
+L04	12	BETA	h	s2	1008	
+L04	13	PHI	h	s2	1253	
+L04	14	PHI	h	s2	1483	
+L04	15	PHI	h	s2	1670	
+L04	16	VBAR_A	h	s2	1872	
+L04	17	PHI	h	s2	2074	
+L04	18	PHI	m	s2	2304	overwritten by a curved stroke; alt OTHER
+L04	19	INF	h	s2	2534	
+L04	20	INF	h	s2	2779	
+L04	21	PHI	h	s3	360	
+L04	22	PLAIN	h	s3	648	Je
+L04	23	PLAIN	h	s3	1152	vous
+L04	24	PLAIN	h	s3	1656	ay
+L04	25	PLAIN	h	s3	2232	touche
+L04	26	PLAIN	m	s3	2808	le
+L04	27	PLAIN	h	s4	648	faict
+L04	28	4PI	m	s4	1238	alt HASH4
+L04	29	C43	h	s4	1483	
+L04	30	PHI	m	s4	1685	alt 4TRI
+L04	31	VBAR_A	h	s4	1872	
+L04	32	PHI	h	s4	2059	
+L05	1	4STEM	m	s1	1051	crossed by a vertical stroke; alt C43
+L05	2	VBAR_A	h	s1	1296	
+L05	3	PLAIN	h	s1	1656	Et
+L05	4	PLAIN	h	s1	2088	vous
+L05	5	PLAIN	m	s1	2664	diray
+L05	6	PLAIN	h	s2	806	d'un
+L05	7	PLAIN	h	s2	1440	avantage
+L05	8	PLAIN	h	s2	2376	que
+L05	9	PLAIN	m	s2	2808	depuis
+L05	10	4PI	m	s3	1094	alt HASH4
+L05	11	INF	m	s3	1296	
+L05	12	ZHOOK	m	s3	1526	
+L05	13	C43	h	s3	1800	
+L05	14	LOOPSTEM1	m	s3	2016	alt BETA
+L05	15	PHI	h	s3	2246	
+L05	16	BETA	h	s3	2448	
+L05	17	OTHER	m	s3	2707	two side-by-side loops (w-like) on a short stem; alt INF
+L05	18	ZHOOK	h	s4	331	
+L05	19	EBR_A	m	s4	562	alt EBR_B
+L05	20	ZHOOK	h	s4	806	
+L05	21	EBR_B	m	s4	1037	alt ISH
+L05	22	BETA	h	s4	1224	
+L05	23	C43	h	s4	1454	
+L05	24	PHI	h	s4	1656	
+L05	25	BETA	h	s4	1800	
+L05	26	OTHER	m	s4	2016	two side-by-side loops (w-like) on a short stem; alt INF
+L06	1	C43	l	s1	1080	alt 4STEM
+L06	2	VBAR_A	l	s1	1296	
+L06	3	4STEM	l	s1	1512	
+L06	4	PHI	l	s1	1728	
+L06	5	INF	l	s1	1930	
+L06	6	OTHER	l	s1	2203	two side-by-side loops (w-like)
+L06	7	INF	l	s1	2405	
+L06	8	INF	l	s1	2678	overlapped by a flourish
+L06	9	INF	l	s2	475	
+L06	10	EBR_B	l	s2	677	
+L06	11	INF	l	s2	893	
+L06	12	VBAR_B	l	s2	1166	alt VBAR_A
+L06	13	OTHER	l	s2	1440	two side-by-side loops
+L06	14	PHI	l	s2	1699	
+L06	15	PHI	l	s2	1930	
+L06	16	4STEM	l	s2	2131	alt 4TRI
+L06	17	ZHOOK	l	s2	2362	
+L06	18	PHI	l	s2	2592	
+L06	19	OTHER	l	s3	763	top of a sign only, cut off
+L06	20	OTHER	l	s3	936	top of a sign only, cut off
+L06	21	4STEM	l	s3	1181	
+L06	22	PHI	l	s3	1382	
+L06	23	OTHER	l	s3	1613	top only
+L06	24	INF	l	s3	1800	
+L06	25	OTHER	l	s3	2016	top only
+L06	26	PHI	l	s3	2246	
+L06	27	INF	l	s3	2477	
+L06	28	PHI	l	s3	2678	
+L06	29	LL	l	s4	360	
+L06	30	4STEM	l	s4	691	
+L06	31	PHI	l	s4	922	
+L06	32	OTHER	l	s4	1152	top only
+L06	33	OTHER	l	s4	1325	top only
+L06	34	PHI	l	s4	1526	
+L06	35	OTHER	l	s4	1728	top only
+L06	36	OTHER	l	s4	2131	top only

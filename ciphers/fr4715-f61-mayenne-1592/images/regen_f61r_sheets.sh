@@ -77,3 +77,10 @@ for line in os.environ["LINES"].split():
         if i < len(ims) - 1: d.rectangle((0, y, W, y + 11), fill=(0, 0, 0)); y += 12
     sheet.save(f"{T}/{P}sheetB_{line}.jpg", quality=90); print(line, sheet.size)
 PY
+
+# H34 (campaign, 28 Sept 2026): fr.3983 f.108r re-cut with the family cutter, a band per cipher row with its gloss riding above
+# (six rows of the 720-px region on disk; a taller region was refused by Gallica twice, images/requests_h34.log), 3x, 24 crops
+# under images/f108g/ (only f108g_bands.json, the debug overlay and one sample are committed).
+mkdir -p ciphers/fr4715-f61-mayenne-1592/images/f108g
+python3 ciphers/fr4715-f61-mayenne-1592/family/cut_bands.py ciphers/fr4715-f61-mayenne-1592/images/src_ark_12148_btv1b9059406b_f195_1250_450_3600_720.jpg 0,0,3600,720 \
+  ciphers/fr4715-f61-mayenne-1592/images/f108g f108g --centres 198,294,411,504,618,712 --up 72 --down 34 --local 20 --seg 960 --overlap 80 --scale 3.0

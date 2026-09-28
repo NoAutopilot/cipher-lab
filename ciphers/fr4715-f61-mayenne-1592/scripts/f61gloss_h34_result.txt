@@ -1,0 +1,18 @@
+H34 (h34): period gloss on fr.3983 f.108r (family cut) aligned to the atlas-coded signs; gloss gloss108gA.tsv + gloss108gB.tsv, signs pass108gA_classes.tsv + pass108gB_classes.tsv
+  gloss L01: A 10 words, B 11, kept 9 (7 both, 2 one pass), dropped 3: faueur| |patience |de
+  gloss L02: A 9 words, B 9, kept 8 (7 both, 1 one pass), dropped 1: seurete|seruice
+  gloss L03: A 1 words, B 1, kept 1 (0 both, 1 one pass), dropped 0
+  gloss L04: A 8 words, B 8, kept 6 (5 both, 1 one pass), dropped 2: retourne|ressouuiens fatigue|dargent
+  gloss L05: A 6 words, B 6, kept 6 (5 both, 1 one pass), dropped 0
+  gloss L06: A 11 words, B 9, kept 11 (7 both, 4 one pass), dropped 0
+  signs all bands: lines 6  signs A 192  B 192  agree 156/197 = 79.2%  (nw)
+  gloss word agreement: 31 words in both passes of A 45 / B 44 -> 0.697 (family gate 0.50); kept for alignment 41 (both + one-pass)
+whole-band DP (H21 rule, comparison only): PHI n:5 i:5 r:4; OTHER e:4 a:2 o:2; INF u:3 t:2 l:2; C43 i:4 e:2 s:1; ZHOOK i:3 e:3 q:1; VBAR_A e:4 u:2 i:1; EBR_B s:2 a:2 e:2; 4TRI a:3 e:2 n:1; BETA s:2 u:1 m:1; HASH4 g:1 d:1 v:1; PLAIN s:1 o:1 n:1; EBR_A s:2 -:1 e:1; 4PI e:2 -:1 j:1; 4STEM t:1 s:1 c:1; ISH m:1 q:1 a:1; DBL p:1
+x-placement: 39 reconciled gloss words; signs found under them in pass A for 39 words (84 signs), pass B 39 (84 signs); window +-60 px
+x-placed pass A: PHI e:5 d:3 t:2; OTHER o:4 e:3 u:2; INF u:3 i:1 r:1; VBAR_A n:2 a:1 s:1; EBR_B s:2 i:1 -:1; C43 e:2 c:1 a:1; BETA c:1 a:1 e:1; ZHOOK t:1 i:1 z:1; HASH4 m:1 e:1 n:1; 4TRI s:1 f:1 e:1; ISH t:1 i:1; 4STEM a:1 i:1; 4PI c:1; DBL e:1
+x-placed pass B: PHI e:8 s:3 d:3; OTHER o:3 u:2 n:1; INF u:3 e:3 n:2; C43 e:2 c:1 a:1; EBR_B i:1 -:1 a:1; BETA s:2 c:1 a:1; VBAR_A a:1 n:1 i:1; ZHOOK t:1 i:1 z:1; 4STEM s:1 f:1 e:1; EBR_A s:2; ISH t:1 i:1; 4TRI a:1 i:1; VBAR_B n:1; 4PI m:1; LOOPSTEM1 o:1
+ZHOOK named check (H44): A t:1 i:1 z:1 s:1 | B t:1 i:1 z:1 s:1
+x-placed min-count key (the gate) (class: letters): PHI e:5 d:3 i:2; OTHER o:3 u:2 e:1; C43 e:2 a:1 c:1; INF u:3 i:1 n:1; EBR_B -:1 a:1 i:1; BETA a:1 c:1 n:1; VBAR_A a:1 e:1 i:1; ZHOOK i:1 s:1 t:1; ISH i:1 t:1
+nine cells vs the gloss: PHI=e/r:e/d:NO C43=a/n:e/a:NO 4TRI=c/p:-:NO INF=h/u:u/i:NO VBAR_A=g/t:a/e:NO VBAR_B=f/s:-:NO DBL=b/o:-:NO EBR_A=f/s:-:NO EBR_B=l/y:-/a:NO
+new cells/word codes with 2+ counts: none
+GATE H21: nine cells NOT all agree; new material no -> FAIL

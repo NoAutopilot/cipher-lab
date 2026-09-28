@@ -158,8 +158,8 @@ def main():
         out.append(f"x-placement: {len(words)} reconciled gloss words; signs found under them in pass A for {len(pa_pairs)} words ({sum(len(u) for *_, u in pa_pairs)} signs), pass B {len(pb_pairs)} ({sum(len(u) for *_, u in pb_pairs)} signs); window +-{XM} px")
         ca = align_pairs(pa_pairs, "A"); cb = align_pairs(pb_pairs, "B")
         counts = defaultdict(Counter)
-        for c in set(ca) | set(cb):
-            for l in set(ca.get(c, {})) | set(cb.get(c, {})):
+        for c in sorted(set(ca) | set(cb)):  # sorted: set order is per-process (string hashes), and --check needs a stable tie order
+            for l in sorted(set(ca.get(c, {})) | set(cb.get(c, {}))):
                 m = min(ca.get(c, Counter())[l], cb.get(c, Counter())[l])
                 if m: counts[c][l] = m
         out.append("x-placed pass A: " + "; ".join(f"{c} " + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in sorted(ca.items(), key=lambda kv: -sum(kv[1].values()))))

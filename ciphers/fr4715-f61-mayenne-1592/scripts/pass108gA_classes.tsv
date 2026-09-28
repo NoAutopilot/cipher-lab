@@ -1,0 +1,193 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	VBAR_A	m	s1	1037	triangle with top bar, pennant-like
+L01	2	4TRI	h	s1	1282	
+L01	3	VBAR_A	m	s1	1526	
+L01	4	ZHOOK	h	s1	1728	
+L01	5	EBR_B	m	s1	2016	alt EBR_A
+L01	6	VBAR_A	m	s1	2218	
+L01	7	4TRI	h	s1	2419	
+L01	8	ZHOOK	h	s1	2693	in overlap
+L01	9	PHI	h	s2	302	
+L01	10	PHI	h	s2	497	long vertical stroke follows, not coded
+L01	11	INF	m	s2	734	alt HASH4
+L01	12	C43	h	s2	950	
+L01	13	VBAR_A	m	s2	1166	
+L01	14	EBR_A	m	s2	1397	alt EBR_B
+L01	15	PHI	m	s2	1598	alt DBL
+L01	16	INF	m	s2	1800	alt HASH4
+L01	17	EBR_B	m	s2	2016	
+L01	18	C43	h	s2	2246	
+L01	19	INF	m	s2	2491	alt HASH4
+L01	20	4PI	m	s2	2722	after vertical stroke; in overlap
+L01	21	PHI	h	s3	317	
+L01	22	PHI	h	s3	533	
+L01	23	ZHOOK	h	s3	763	
+L01	24	INF	m	s3	1008	alt HASH4
+L01	25	4PI	m	s3	1238	alt HASH4
+L01	26	ZHOOK	h	s3	1483	
+L01	27	4TRI	m	s3	1714	alt 4STEM
+L01	28	PHI	h	s3	1930	
+L01	29	4PI	m	s3	2203	alt HASH4
+L01	30	PHI	h	s3	2405	
+L01	31	4STEM	m	s3	2650	alt 4TRI
+L01	32	EBR_B	m	s3	2851	in overlap, edge of segment
+L01	33	INF	m	s4	432	alt HASH4
+L01	34	EBR_B	m	s4	662	
+L01	35	ZHOOK	h	s4	893	
+L01	36	INF	m	s4	1152	alt DBL; loops with c-like lead
+L01	37	INF	m	s4	1354	alt HASH4
+L01	38	PHI	h	s4	1613	
+L01	39	EBR_A	h	s4	1872	long tapering foot tail
+L02	1	4TRI	h	s1	1080	
+L02	2	INF	m	s1	1332	alt HASH4
+L02	3	ISH	m	s1	1548	alt EBR_B
+L02	4	VBAR_A	m	s1	1750	
+L02	5	PHI	h	s1	1973	
+L02	6	PHI	h	s1	2203	
+L02	7	EBR_A	m	s1	2419	alt EBR_B
+L02	8	ISH	m	s1	2678	alt EBR_B; in overlap
+L02	9	BETA	h	s2	288	
+L02	10	PHI	h	s2	490	
+L02	11	4STEM	m	s2	706	alt 4TRI
+L02	12	PHI	h	s2	922	
+L02	13	PHI	h	s2	1138	
+L02	14	C43	h	s2	1354	
+L02	15	DBL	m	s2	1584	alt PHI
+L02	16	C43	h	s2	1800	
+L02	17	VBAR_A	m	s2	2002	
+L02	18	C43	h	s2	2203	after vertical stroke
+L02	19	VBAR_A	l	s2	2462	overwritten by clear-hand flourish; alt VBAR_B
+L02	20	C43	h	s2	2693	in overlap
+L02	21	PHI	h	s3	288	
+L02	22	PHI	h	s3	475	
+L02	23	C43	h	s3	662	
+L02	24	VBAR_A	m	s3	850	vertical stroke follows
+L02	25	HASH4	m	s3	1080	alt ZHOOK
+L02	26	PHI	h	s3	1296	
+L02	27	ISH	m	s3	1498	alt EBR_B
+L02	28	PHI	h	s3	1685	
+L02	29	INF	m	s3	1886	alt HASH4
+L02	30	PHI	h	s3	2131	
+L02	31	EBR_A	m	s3	2304	alt EBR_B; vertical stroke follows
+L02	32	ZHOOK	h	s3	2549	
+L02	33	4TRI	m	s3	2794	in overlap
+L02	34	4STEM	m	s4	389	alt 4TRI
+L02	35	PHI	h	s4	619	
+L02	36	BETA	h	s4	835	
+L02	37	OTHER	m	s4	1037	long s-shaped stroke, tall curved stem, no loop
+L02	38	PHI	h	s4	1238	
+L02	39	HASH4	m	s4	1440	alt 4PI
+L02	40	ZHOOK	h	s4	1656	
+L02	41	VBAR_A	m	s4	1829	
+L02	42	PHI	h	s4	1973	
+L02	43	BETA	h	s4	2117	
+L03	1	PLAIN	h	s1	1181	Et
+L03	2	PLAIN	h	s1	1699	pour
+L03	3	PLAIN	h	s1	2333	cela
+L03	4	PLAIN	h	s1	2794	Je; in overlap
+L03	5	PLAIN	h	s2	720	vous
+L03	6	PLAIN	h	s2	1440	laisse
+L03	7	PLAIN	h	s2	1944	a
+L03	8	PLAIN	m	s2	2376	juger
+L03	9	PLAIN	h	s3	475	quel
+L03	10	PLAIN	h	s3	1656	contentement
+L03	11	PLAIN	h	s3	2693	Je; in overlap
+L03	12	PLAIN	h	s4	648	doibs
+L03	13	PLAIN	h	s4	1310	avoir
+L03	14	PHI	h	s4	1742	
+L03	15	VBAR_A	m	s4	1872	
+L03	16	EBR_B	m	s4	2045	
+L04	1	4TRI	h	s1	1037	
+L04	2	BETA	m	s1	1267	crossed by clear-hand stroke
+L04	3	ZHOOK	h	s1	1526	
+L04	4	BETA	h	s1	1800	
+L04	5	PHI	h	s1	2045	
+L04	6	PHI	h	s1	2261	
+L04	7	INF	l	s1	2462	under clear-hand flourish loop
+L04	8	OTHER	m	s1	2736	two loops side by side on a stem; alt INF; in overlap
+L04	9	INF	m	s2	302	alt HASH4
+L04	10	ZHOOK	h	s2	562	
+L04	11	PHI	h	s2	806	
+L04	12	BETA	h	s2	1022	
+L04	13	PHI	h	s2	1238	
+L04	14	PHI	h	s2	1483	
+L04	15	PHI	h	s2	1670	
+L04	16	VBAR_A	m	s2	1872	
+L04	17	PHI	h	s2	2074	
+L04	18	OTHER	l	s2	2304	two loops side by side on a stem with a curling lead stroke; alt INF
+L04	19	INF	m	s2	2563	alt HASH4
+L04	20	INF	m	s2	2779	alt HASH4; in overlap
+L04	21	PHI	h	s3	374	
+L04	22	PLAIN	h	s3	648	Je
+L04	23	PLAIN	h	s3	1152	vous
+L04	24	PLAIN	h	s3	1656	ay
+L04	25	PLAIN	h	s3	2304	touche
+L04	26	PLAIN	m	s3	2837	le; in overlap
+L04	27	PLAIN	h	s4	648	faict
+L04	28	4PI	m	s4	1238	alt HASH4
+L04	29	C43	h	s4	1469	
+L04	30	PHI	h	s4	1670	
+L04	31	VBAR_A	m	s4	1872	dot above
+L04	32	PHI	h	s4	2059	
+L05	1	4TRI	m	s1	1037	crossed by a vertical stroke from above
+L05	2	VBAR_A	m	s1	1296	
+L05	3	PLAIN	h	s1	1656	Et
+L05	4	PLAIN	h	s1	2088	vous
+L05	5	PLAIN	m	s1	2592	diray; runs into overlap
+L05	6	PLAIN	m	s2	1296	d'avantaige
+L05	7	PLAIN	h	s2	2376	que
+L05	8	PLAIN	h	s3	475	depuis; initial d in s2 overlap
+L05	9	4PI	m	s3	1080	alt HASH4
+L05	10	INF	m	s3	1325	alt HASH4
+L05	11	ZHOOK	m	s3	1526	crossed by clear-hand stroke
+L05	12	C43	h	s3	1800	
+L05	13	OTHER	m	s3	2030	loop at top of a curved stem, hooked foot; alt LOOPSTEM1
+L05	14	PHI	h	s3	2246	
+L05	15	BETA	h	s3	2448	
+L05	16	OTHER	m	s3	2707	two loops side by side on a stem; alt INF; in overlap
+L05	17	ZHOOK	h	s4	331	
+L05	18	EBR_A	m	s4	562	alt EBR_B
+L05	19	ZHOOK	h	s4	806	
+L05	20	EBR_B	m	s4	1037	
+L05	21	BETA	h	s4	1210	
+L05	22	C43	h	s4	1454	
+L05	23	PHI	h	s4	1670	
+L05	24	BETA	h	s4	1814	
+L05	25	OTHER	m	s4	2016	two loops side by side on a stem; alt INF
+L06	1	4TRI	l	s1	1080	lower half cut
+L06	2	VBAR_A	l	s1	1296	
+L06	3	4STEM	l	s1	1512	alt 4TRI
+L06	4	PHI	l	s1	1728	
+L06	5	HASH4	l	s1	1930	alt INF
+L06	6	OTHER	l	s1	2189	two loops side by side; alt INF
+L06	7	HASH4	l	s1	2376	alt INF
+L06	8	HASH4	l	s1	2664	in overlap
+L06	9	OTHER	l	s2	331	two loops side by side; alt INF
+L06	10	HASH4	l	s2	475	
+L06	11	EBR_B	l	s2	662	alt ISH
+L06	12	HASH4	l	s2	878	
+L06	13	VBAR_A	l	s2	1152	
+L06	14	INF	l	s2	1411	under clear-hand flourish
+L06	15	PHI	l	s2	1699	
+L06	16	PHI	l	s2	1930	
+L06	17	4TRI	l	s2	2131	
+L06	18	ZHOOK	l	s2	2376	
+L06	19	PHI	l	s2	2621	
+L06	20	OTHER	l	s3	475	tall stem only visible
+L06	21	OTHER	l	s3	749	loop top only
+L06	22	OTHER	l	s3	893	loop top only
+L06	23	4TRI	l	s3	1152	top only
+L06	24	PHI	l	s3	1339	top only
+L06	25	OTHER	l	s3	1584	loop top only
+L06	26	INF	l	s3	1728	top only
+L06	27	OTHER	l	s3	1872	loop top only
+L06	28	OTHER	l	s3	2246	loop top only
+L06	29	OTHER	l	s3	2448	loop top only
+L06	30	PHI	l	s3	2592	top only
+L06	31	OTHER	l	s4	302	two stems, top only
+L06	32	OTHER	l	s4	648	stem, top only
+L06	33	INF	l	s4	806	top only
+L06	34	OTHER	l	s4	950	loop top only
+L06	35	INF	l	s4	1152	top only
+L06	36	PHI	l	s4	1512	top only
+L06	37	OTHER	l	s4	2088	loop top only

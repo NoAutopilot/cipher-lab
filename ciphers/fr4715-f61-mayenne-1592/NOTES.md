@@ -1221,3 +1221,57 @@ reading, solved, new or first; the words are Tomokiyo's and the period deciphere
 Files: `scripts/f61published.py`, `scripts/f61published_result.txt`, `family/key_published_rare.tsv` (a new file in
 family/, as the row asked; no family file edited). HYPOTHESES.md row added. Requests: none. Vision calls: 0 of 4. No
 credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
+## Campaign step H34 (2026-09-28 04:54 UTC) -- FAIL as pre-registered: the f.108r gloss with the family cut; the readers, not the cut, are the limit
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). Four Opus vision calls (two gloss passes, two sign passes; about
+108-112k subagent tokens each, 94-117 s), prompts in `scripts/PROMPTS.md` before the calls; 2 Gallica requests, both refused
+(a 503 after two minutes, then an empty reply on the one permitted retry; `images/requests_h34.log`), so the cut is on the
+720-px region already on disk. Hypothesis H34 (F61-GLOSS2): H21 again with `family/cut_bands.py` -- a band per cipher row
+with the gloss riding above it.
+
+**Cut (`images/f108g/`, regen stanza in `images/regen_f61r_sheets.sh`).** Six cipher rows (centres 198, 294, 411, 504, 618,
+712 in region y; L03 is the clear main-line sentence with a few signs at its end, L04/L05 mix clear clauses and cipher, L06
+is cut through its lower half by the region's bottom edge -- stated in both prompts), `--up 72 --down 34 --local 20 --seg 960
+--overlap 80 --scale 3.0`: 24 crops of 2880 x 318 px, no duplicate files (the H29 defect), gloss inside every band except
+L01's, whose gloss sits 66 px above its row and is clipped at the top edge (both gloss readers said so).
+
+**Passes (verbatim: `scripts/gloss108gA.tsv`, `gloss108gB.tsv`, `pass108gA_classes.tsv`, `pass108gB_classes.tsv`).**
+Signs: both passes 192 rows, identical per-band counts (L01 39, L02 43 -- the same counts as H19's two passes on the other
+cut -- L03 16, L04 32, L05 25/26, L06 36/37), `tools/reconcile_passes.py` (nw) 156/197 = **79.2%** identical (family gate
+0.80: missed by one column; L06 all at confidence l). Gloss: A 45 / B 44 gloss words, 31 in both passes = **0.697** by word
+(family gate 0.50: met), and both readers agree on the same ZHOOK-rich bands.
+
+**Scoring (`scripts/f61gloss.py --tag h34`, the x-placement rule pre-registered in the script and pushed 992f4506 before
+any output was read; `f61gloss_h34_result.txt`, `f61gloss_h34_counts.tsv`).** Each reconciled gloss word matched by x
+position to the signs under it in each sign pass (39 words, 84 signs each pass), aligned per word, a pair counted at the
+minimum of the two passes' counts. Min-count key: PHI e:5 d:3 t:2; OTHER o:3 u:2; C43 e:2 c:1; INF u:3 n:1; ZHOOK t:1 s:1
+i:1; nothing else above 1. **Nine cells: 0 of 9 agree** (PHI's top letter e is the one right answer; C43 e/c, INF u/n,
+VBAR_A n/e are not the cells); new material: none. **GATE H21: FAIL.**
+
+**Why -- the known-answer check that the agreement gate cannot make.** Bands L01 and L02 are the two lines Tomokiyo's
+overlay reprints from this very gloss (`scripts/tomokiyo_spans_3983.tsv`), so their gloss is known. Against it the two
+Opus readers score **11/32 = 0.344** exact words (A: L01 2/7 "satisfaire en que au faueur plaisir", L02 3/9 "amitie qui
+sans preiudice a grands de seurete incommoditez"; B: 3/7, 3/9) -- the true words being "satisfaire ung seul au
+preiudice de plusieurs" and "aultres qui me prenent a garent de leurs iacommoditez". The readers agree with each other on
+wrong words ("amitie", "sans", "preiudice", "grands") as often as on right ones, so a two-pass word-agreement figure of
+0.70 measures a shared failure mode, not correctness -- the rule-3 shape of two passes that are not independent on the
+axis that matters. At 0.344 on the known bands, the unknown bands' words (L04-L06, about 25 gloss words: "misere", "Je me
+retourne/ressouuiens", "quinze mois", "peu on voulu seiourne pleur") license nothing, and the leaf stays **HELD**: no key
+row is offered, `f61gloss_h34_counts.tsv` is for the record only.
+
+**What this establishes.** Three units of Mayenne's secretary's gloss have now been read by the same instrument -- f.106r
+(H31, 33.9% agreement), f.108v (H29 non-test; H35 pending) and f.108r (this step, 0.697 agreement but 0.344 known-answer
+accuracy) -- and de Diou's by F61-FAMILY-4 (42%): an Opus vision read of this cramped secretary gloss at 3x is the limit,
+not the crop (CLAUDE.md rule 3's "unchanged approach" paragraph). The f.108r gloss is short (about 40 words on the six
+rows, 16 of them already known from the reprint) and the leaf is on Gallica at native zoom: a person's reading of the
+remaining 25 words is a ten-minute desk task that would turn ZHOOK and the d/q, m/z and word-code cells into period grade
+C -- filed as ASKS row 88 and CAMPAIGN.md row H50 (`needs: person`); H35 is re-ranked down and re-scoped to its sign passes.
+The sign side is fine: the four passes on L01/L02 now on disk (two cuts, four independent reads, identical counts) are
+the material for a reconciled draft of those two lines whenever a key needs it. Not a reading; no class change; nothing
+solved, new or first; no credentials, no AskUserQuestion; the owner not named.
+
+Files: `images/f108g/` (bands.json, debug overlay, one sample committed; 24 crops regenerable), `images/requests_h34.log`,
+`images/regen_f61r_sheets.sh` (stanza), `scripts/PROMPTS.md` (H34 sections), `scripts/gloss108gA/B.tsv`,
+`scripts/pass108gA/B_classes.tsv`, `scripts/f61gloss.py` (--tag/--gloss/--signs/--bands options, the H21 default byte-identical),
+`scripts/f61gloss_h34_result.txt`, `scripts/f61gloss_h34_counts.tsv`; HYPOTHESES.md row added. Vision calls: 4 of 4.

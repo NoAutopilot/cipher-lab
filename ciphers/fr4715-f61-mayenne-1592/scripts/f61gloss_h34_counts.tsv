@@ -1,0 +1,14 @@
+# key_f108_gloss.tsv -- campaign H21, 28 Sept 2026. Key source: period (rule 10 vocabulary). Every (class, letter) pair is read
+# from the contemporary interlinear decipherment on BnF fr.3983 f.108r (two Sonnet gloss passes reconciled, two Opus sign
+# passes per band reconciled, tools/interlinear_align.py), grade C for the pair; no cryptanalysis, no refit. Classes are
+# scripts/f61_atlas.tsv codes (EBR is the pre-split code where a band's passes predate H22).
+class	letters	n	bands
+PHI	e:5 d:3 i:2 m:2 n:2 r:2 s:2 t:2 -:1	21	L01,L02,L03,L04,L05,L06
+OTHER	o:3 u:2 e:1 n:1 p:1 r:1	9	L02,L04,L05,L06
+C43	e:2 a:1 c:1 d:1 m:1	6	L01,L02,L04,L05
+INF	u:3 i:1 n:1 r:1	6	L01,L02,L04,L05,L06
+EBR_B	-:1 a:1 i:1 s:1 u:1	5	L01,L03,L05,L06
+BETA	a:1 c:1 n:1 s:1	4	L02,L04,L05
+VBAR_A	a:1 e:1 i:1 n:1	4	L02,L03,L04,L06
+ZHOOK	i:1 s:1 t:1 z:1	4	L01,L02,L04,L05,L06
+ISH	i:1 t:1	2	L02
