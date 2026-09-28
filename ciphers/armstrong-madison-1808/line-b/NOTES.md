@@ -3,7 +3,7 @@
 One section per step, numbers and controls side by side (CLAUDE.md rule 3), files under `line-b/<id>/`. Nothing here is
 a reading; rule 10 wording throughout. The plan and its status column: `line-b/PLAN.md`.
 
-## Step B1 (28 Sept 2026, 02:22-03:1x UTC) -- trailing-zero padding: the zero-specific hypothesis dropped, a decade-family structure found instead
+## Step B1 (28 Sept 2026, 02:22-02:38 UTC) -- trailing-zero padding: the zero-specific hypothesis dropped, a decade-family structure found instead
 
 **Hypothesis as registered.** The frame-127 compact Livingston key permits zeros appended on the right without changing
 the meaning (ChatGPT PR 50; campaign H7 screened that key's values, not this rule on the target). If the target's key
@@ -82,5 +82,5 @@ its 2-digit head, a constraint no solver on file (ARM-C1, ARM3-LOOP, H27, the de
 The finding rests on Bourdeau's transcription, 98.4% matched to the manuscript witness (H17), and every statistic
 above is on the numeric groups only (the shorthand runs and the marks are untouched). Rule 5: the target stays `open`.
 
-**Requests:** none (0 to any host). **Cost:** one Fable session, about 50 minutes, no subagent; the row's estimate
+**Requests:** none (0 to any host). **Cost:** one Fable session, about 16 minutes by the clock (date -u at 02:37), no subagent; the row's estimate
 (2 USD) is what PLAN.md records; the real figure is the orchestrator's to read from get_session.
