@@ -1,0 +1,14 @@
+kind	pos	group	table	table_context	decode_context
+marked	55	817	al	1292=Et 1116=s 632=with 817=al 1089=im 801={801} 1090=in	Et? s with al im about in
+marked	89	741	ce	1086={1086} 1484=it 1146=suc 741=ce 1001=d 1116=s 1105={1105}	{1086} it suc ce d s {1105}
+marked	121	741	ce	765=does 1587=not 1146=suc 741=ce 1001=d 1105={1105} 972=the	(not aligned)
+marked	158	662	pres	772=e 1354=of 1089=im 662=pres 514=ment 1105={1105} 1484=it	(not aligned)
+marked	164	624	{624}	1484=it 405=would 1405=be 624={624} 1105={1105} 1587=not 947=only	(not aligned)
+marked	199	1165	to	1116=s 810=ag 1445={1445} 1165=to 1480=ion 1116=s 945=on	(not aligned)
+unmarked-control	34	741	ce	1020=do 1587=not 803=ac 741=ce 636=mp 578=t 590=this	do not ac ce mp t this
+unmarked-control	111	1165	to	1405=be 1078=I 368={368} 1165=to 1397={1397} 1132=sist 702=ance	be I {368} to {1397} sist* ance
+unmarked-control	127	817	al	972=the 1530=first 1172={1172} 817=al 630=will 819=also 1415=be	the first {1172} al will also be
+unmarked-control	148	1165	to	1121=se 1116=s 1225=as 1165=to 921=have 416={416} 1268=ed	se s as to have {416} ed
+unmarked-control	168	1165	to	1105={1105} 1587=not 947=only 1165=to 561=re 1482=is 578=t	{624} s. {1105} not only to re is t
+unmarked-control	184	1165	to	514=ment 1105={1105} 1428=but 1165=to 561=re 1284=ent 1090=in	ment {1105} but to re ent in
+unmarked-control	216	1165	to	316=should 921=have 473={473} 1165=to 1416={1416} 383=w 1116=s	should have {473} to {1416} w s

@@ -1819,3 +1819,50 @@ ASKS row 77 (Brant Box 37) and on ARM3-LIVCODE's negative, and is a question for
 reading, no class change. Requests: none (frame 956 was on disk from H12). Cost: get_session read 28.99 USD for this
 session at 23:57 UTC before this step; the row's estimate (1 USD) is what `campaign.py --spend` records. Vision: 3
 native strips read by this runner, no subagent.
+
+## Campaign step H19 (28 Sept 2026, 00:02-00:05 UTC) -- with H16 folded in
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H19: a
+known-answer test of the printed modifier rules (frame 956, step H14) on Armstrong's own office letter of 15 Feb 1808
+(frames 0024/0025), whose plaintext is known through Bourdeau's THE=972 decode.
+
+**Method (`marks/h19_known_answer.py` -> `h19_known_answer.tsv`).** The letter's 243-token numeric sequence
+(`tools/data/uscodes-1800/stats.py`, THE972_USAGE) is mapped through Bourdeau's table and aligned to his decode tokens
+(difflib, 205 of 243 aligned); the six groups that carry a mark under their last digit on frame 0024 (this runner's
+reading, 3x zooms in `marks/h19_hooks_zoom.jpg`: the same small curl, "ʃ"- or "5"-shaped, under the LAST digit every
+time -- 817, 741, 741, 662, 624, 1165) are read in context beside the unmarked occurrences of the same values.
+
+| group (pos) | table | context (table words) | word the plaintext needs | rule fit |
+|---|---|---|---|---|
+| 741 (89), marked | ce | it suc **ce** d s | succee-ds: suc + ce**e** + d + s | double the last letter: yes (C) |
+| 741 (121), marked | ce | does not suc **ce** d | succee-d | double the last letter: yes (C) |
+| 662 (158), marked | pres | of im **pres** ment | impres**s**ment | double the last letter: yes (C) |
+| 817 (55), marked | al | with **al** im [801] in | "with al(l) im..." plausible, not certain | consistent (M) |
+| 624 (164), marked | {624} | it would be [624]s not only to re-is-t | value unknown | undetermined |
+| 1165 (199), marked | to | s ag [1445] **to** ion s on | undetermined ("too"?) | undetermined |
+| 741 (34), plain | ce | do not ac **ce** mp t this | accept-type reading, no doubling | control: no mark, no doubling |
+| 817 (127), plain | al | the first [1172] **al** will also be | no doubling | control ok |
+| 1165 (111, 148, 168), plain | to | be I [368] to; as to have; not only to re-is-t | plain "to" | control ok |
+
+**Result: PASS on every decidable case.** Three of the six marked groups sit exactly where the plaintext needs the
+syllable's last letter doubled (succeeds, succeed, impressment), a fourth is consistent, two are undecidable; none of
+the five unmarked controls of the same values needs a doubled letter. So the office hand uses an under-last-digit
+mark as the printed form's "under the last figure doubles the last letter" operator -- drawn as a curl rather than the
+form's caret, and not the form's long-s "withdraw" (the known cases double, not drop). Grade C for the three decided
+cases (known plaintext, H-grade table entries). Caveat: Bourdeau's own decode does not mark these doublings; this is
+the first time (in this repository's record) the mark has been read as an operator, on one letter and six marks.
+
+**What it means for the target.** The 20 Feb letter's marks under and after groups (H13: a check after 38, a double
+dot after 1640 on both witnesses, R5 dashes, R4 curls) are now expected to be operators of this grammar rather than
+shorthand or a separate alphabet -- which makes H18's inventory (mark class and the digit it sits under) the step that
+turns them into evidence, and which raises the prior that the target's numeric part is a syllabic/spelling table of the
+same printed family (a 17x100 form, the H12 table's shape) even though it is not that table's fill.
+
+**H16, folded in (one look each side).** The office letter's under-digit curl and the target's R4 "backward comma"
+hooks are the same curl shape (compare `marks/h19_hooks_zoom.jpg` with `images/shorthand/page1_L06_seq26-39_8marks.jpg`
+idx2), but in the target the curls stand inside mark runs, not under digits; the R5 baseline dash has no counterpart in
+the office letter. Same pen shape, different placement -- H16 answered as "shape yes, placement no" (M), no further
+step of its own.
+
+No reading, no class change. Requests: none. Cost: get_session read 28.99 USD at 23:57 before H14; the rows' estimates
+(1 + 1) are what `campaign.py --spend` records for H19 and H16. Vision: 3 zoom/crop reads by this runner, no subagent.
