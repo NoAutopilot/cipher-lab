@@ -3209,7 +3209,7 @@ Re-scoped from the orchestrator's 22:14 brief: confirm that fr.3984 fol. 7 (canv
   separate sheet". The finding aid (NOTES F61-FAMILY table: item 84, "chiffre et déchiffrement") agrees, and `family/KEY.md` still
   marks that sheet "not located". Row H169 takes it. f.186 and f.189 (undeciphered, same design) are pool for a keyless step.
 
-## Campaign step H169 (28 Sept 2026, 22:26-22:33 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the f.176r decipherment located (candidate)
+## Campaign step H169 (28 Sept 2026, 22:23-22:25 UTC by commit times, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the f.176r decipherment located (candidate)
 
 H168's lesson applied first: `grep 176 sources/cryptiana/` finds only mayenne.htm's line "(f.176) Baudouin-Desportes to Pope
 Clement VIII, Paris, 22 July 1593. Deciphered on a separate sheet." It gives no folio for the sheet. 600-px thumbnails of fr.3984
@@ -3228,7 +3228,7 @@ By eye, provisional:
 - **Not yet shown:** that fol. 175 renders f.176r's cipher rather than one of Desportes's three other letters of 22 July (f.186 to
   Aldobrandini, f.189 to Frachetta; f.184 is already f.188's). That alignment gate is H170's first step. No key, no reading.
 
-## Campaign step H170 (28 Sept 2026, 22:40-23:00 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- alignment gate FAIL (not shown)
+## Campaign step H170 (28 Sept 2026, 22:26-22:36 UTC by commit times, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- alignment gate FAIL (not shown)
 
 Pre-registered in `family/passes/PROMPTS_f176_f175.md` with the scorer `family/h170_gate.py` (pushed 46228d45 before any call).
 Native f.176r (canvas 327) and fol. 175r (canvas 326), fetched once each (2 Gallica requests, 200; not committed, 4-5 MB each),
@@ -3255,7 +3255,7 @@ remain open: fol. 175r may render a different 22 July letter (f.186r or f.189r);
 f.176r's first cipher row (the DP is local on the signs but must consume all N letters). No key rows, nothing merged. Row H173
 (the scorer's positive control on the known pair f.188r/f.184r, script-only on disk) is added, and H170's continuation waits on it.
 
-## Campaign step H173 (28 Sept 2026, 23:02-23:06 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- H170's statistic has power; its FAIL stands
+## Campaign step H173 (28 Sept 2026, 22:36-22:38 UTC by commit times, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- H170's statistic has power; its FAIL stands
 
 `family/h173_power.py` (design pre-registered in its docstring, pushed 3687c5b5 before the run; result `family/h173_power_result.txt`,
 `--check`). Script-only, no calls. The known pair is fr.3984 f.188r (its blind passes A/B from F61-FAMILY-3, sign grades mostly m,
@@ -3275,7 +3275,7 @@ opening does not render f.176r's first four cipher rows** (f.176r scored 0.385-0
 175r is the decipherment of another 22 July letter, or f.176r's decipherment is elsewhere (fol. 177-178 are clear pages in another
 hand, H169). H174 is re-scoped to include fol. 177r.
 
-## Campaign step H174 (28 Sept 2026, 23:08-23:12 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the pairs by eye
+## Campaign step H174 (28 Sept 2026, 22:38-22:39 UTC by commit times, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the pairs by eye
 
 The 1600-px references of f.186r and f.189r already on disk (F61-FAMILY), and fol. 177r (canvas 329) at 2000 px (1 Gallica request,
 200; scratch, not committed). By the runner's eye, provisional:
@@ -3287,7 +3287,7 @@ The 1600-px references of f.186r and f.189r already on disk (F61-FAMILY), and fo
   its decipherment**.
 Rows H175 (fol. 177r vs f.176r with the passes on disk, one read call) and H176 (fol. 175r vs f.189r) follow.
 
-## Campaign step H175 (28 Sept 2026, 23:13-23:20 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- fol. 177r deciphers f.176r: gate PASS
+## Campaign step H175 (28 Sept 2026, 22:39-22:41 UTC by commit times, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- fol. 177r deciphers f.176r: gate PASS
 
 Pre-registered in `family/passes/PROMPTS_f176_f175.md` section H175 (a6d9a6c3), with one amendment logged before the call
 (d34ca3f7: the clear salutation dropped from the candidate). Native canvas 329 fetched once (1 Gallica request, scratch), crops
@@ -3310,3 +3310,7 @@ f.188r/f.184r. Key source: `period`. What this is not: no key row is built yet, 
 test of the pairing, not a reading. Next, H177: full passes of f.176r-v, a read of fol. 177r-178, and alignment into
 `family/key_period_f176.tsv` by align_separate.py's rule. Then the report against v4's two-way f.61 cells and rare classes. The
 merge is a verifier's.
+
+**Time correction (runner 6, 22:43 UTC by `date -u`):** the H169-H175 headings and CAMPAIGN log lines of this runner first carried
+times estimated by the runner (up to 40 minutes ahead of the clock, rule 6); they are now replaced by the commits' own times
+(`git log`, one clock). No result changes.

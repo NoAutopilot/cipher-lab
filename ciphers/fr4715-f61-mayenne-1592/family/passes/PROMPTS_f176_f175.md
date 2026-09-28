@@ -38,6 +38,6 @@ One blind Opus read of fol. 177r L01-L08 (canvas 329, native, crops `sheets/f177
 above with the paths f175 -> f177 and output `passes/f177r_clearA_h175.tsv`. Scorer `h175_gate.py`: h170_gate.py's statistic, N,
 key, 200 permuted keys (seed 1) and gate on the two f.176r passes on disk, the candidate text being fol. 177r's read and the
 wrong texts f.184r @0, f.184r @120 and fol. 175r's read (gate: candidate > permuted max AND candidate - max(wrong) >= 0.10, both passes).
-Amended before the call (runner 6, 23:16 UTC): f.176r writes its salutation "Tres saint pere" in clear above the cipher, so the
+Amended before the call (runner 6, 22:40 UTC by commit time): f.176r writes its salutation "Tres saint pere" in clear above the cipher, so the
 candidate text drops everything on fol. 177r L01 up to and including the first '/' (the scribe's own separator after the
 salutation); if the read has no '/', the words up to and including 'pere' are dropped. Implemented in h175_gate.py before the call.
