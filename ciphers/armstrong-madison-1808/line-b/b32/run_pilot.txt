@@ -1,0 +1,9 @@
+control 0: score 195.3, words right 4/54 = 7%  e.g. serss wuese eat isss taken ist ses dans | truth first which had been given and the tone
+control 1: score 202.9, words right 3/54 = 6%  e.g. it serrise ate sir ttomaeee seas it see | truth us through any war provided that in the
+control 2: score 422.9, words right 43/54 = 80%  e.g. informed not we were making in the too | truth informed you we were making in the too
+GATE (>= 60% on 3 of 3): NOT MET
+TARGET: score 243.7, dictionary words 35/54; map [('10', 'i'), ('12', 'l'), ('14', 'n'), ('16', 'a'), ('18', 'r'), ('22', 'i'), ('23', 't'), ('24', 't'), ('26', 't'), ('28', 'i'), ('29', 't'), ('32', 'i'), ('33', 't'), ('34', 's'), ('35', 'a'), ('36', 'i'), ('38', 's'), ('40', 'o'), ('42', 'n'), ('44', 'e'), ('46', 'w'), ('47', 'a'), ('48', 'a'), ('60', 's'), ('62', 'i'), ('64', 's'), ('65', 's'), ('66', 's'), ('68', 'a'), ('70', 'i'), ('72', 'i'), ('73', 'e'), ('74', 's'), ('76', 'i'), ('78', 'n')]
+TARGET decode: a sons ireisas a laira sir s atattasintt istsirtiss sir asii last t ts itiititiarattns writs tiasinsist ti tssaiai sit sittittsstsii ses a s its a i a rst is s iii is sstss a itsr sstair ieas ties its i sr ist siitaats ssetti it iii tttti istaaiin iaiiisatas nsisii ist s i
+shuffled floor 0: score 230.3, dictionary words 32/54  e.g. i sist tssrino t itstm ori i steniaitsio trossisisr snt
+shuffled floor 1: score 233.4, dictionary words 36/54  e.g. e ties ceistic a uteer see r esaededesee eseegeiees see
+shuffled floor 2: score 220.7, dictionary words 32/54  e.g. a seat miatimi a iastt mss t asineiiatis teinmiltss sel
