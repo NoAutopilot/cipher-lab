@@ -68,3 +68,13 @@ only (scripts/h21_pipeline.py crops, about 15 crops per call, the H2 prompt). Ad
 this file's first section) applied to c2, with the same numbers reported; gate 80 pct full id over the 734 boxes
 licenses writing the cryptogram 2 sections of ciphertext.txt in inventory ids. A pass-B line whose row count differs
 from the box count is realigned by position from the left and flagged; nothing is read.
+
+## H23 (28 Sept 2026, written before pass B landed): cryptograms 3 and 4
+
+The H21 recipe on c3 (4 lines, 118 boxes), c4a (14 lines, 214) and c4b (5 lines, 69): four value-blind Sonnet
+pass-B calls on the numbered strips, position reconcile, value-blind Fable third pass on the disputed boxes, the H2
+rule; c4a0 (verse line 1, 16 boxes) keeps its H7 eye+kNN labels (two witnesses already) and is not re-read. Bourdeau's
+verse read (H26 concordance) is a fourth vote on c4 three-way splits only, applied after the three-pass rule, graded
+M, flagged `bourdeau-vote` -- never as pass B. `scripts/h21_pipeline.py --pages c3,c4a,c4b` with pass files
+passB_c34.tsv / passC_c34.tsv writes ciphertext_c34_draft.tsv and, at the 80 pct gate, the cryptogram 3 and 4
+sections of ciphertext.txt.
