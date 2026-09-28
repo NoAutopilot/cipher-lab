@@ -1,7 +1,7 @@
 folder	status	blocker	cost_band	near_row	last_touched	next_step	parallel	next_step_full_len
 antt-linhares-chave	partial	runnable	M	n	25 Sep	This group was already M, not H, so the brief's downgrade rule does not apply to it; recorded here for the record, not resolved further -- a third count of this specific column, independent of both L…	--	1675
 antt-msliv0638-brochado-1712	partial	runnable	M	n	26 Sep	Leaf images are on disk (`images/full_PT-TT-MSLIV-0638_m0289/90/91.jpg.jpg`); named here as the concrete next step, same as AX2-BRO4 left it, now with the added caveat that `x` and `f` may have the s…	--	602
-armstrong-madison-1808	open	runnable	S	n	27 Sep	A second, unrelated passage on the same page: "successor as minister to France, General John Armstrong, wrote 40 letters in code to James Madison beginning in late 1804..." -- this is Weber's general…	--	1487
+armstrong-madison-1808	open	runnable	M	n	28 Sep	Suggested follow-up, not filed as a row (line B holds the glyph work): fresh line crops on the current ms lines for the six long runs and a second sign-level reader, then `tools/reconcile_passes.py`…	--	890
 arsenal-dallion-lanmary-1744	blocked	needs-edition	M	n		a Recueil des instructions volume for Sweden, was not run -- budget-limited, flagged as the next step for whoever returns to this row).	Full-text search a Recueil des instructions volume for Sweden 1744-46 on archive.org/Google Books -- the printed-edition leg the check-solved sweep flagged as unrun. S, tools/print_check.py.	1916
 arsenal-ms6829-1708	blocked	needs-triage	?	n			--	0
 arsenal6314-hanau-1635	blocked	needs-triage	?	n			--	0
@@ -72,7 +72,7 @@ fr3989-nevers-revol-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 si
 fr3990-nevers-henri4-1594	blocked	runnable	M	n		Next: LANE R5 G builds a no.60 sign atlas from the interlined leaves of the same copyist (fr.3985 f.126-130, fr.3986 f.151/152) and re-runs F1's leaves; if that passes 80%, this letter follows.	--	351
 fr3993-villeroy-1595	open	needs-triage	?	n	24 Sep		--	0
 fr4687-paleologue-nevers	blocked	runnable	S	n	25 Sep	Suggested follow-ups: that block; a nomenclator-aware solver (units allowed to stand for syllables or words); crib tests anchored on `suofratel` with 6 restarts and a matched control whose true crib…	--	395
-fr4715-f61-mayenne-1592	partial	runnable	M	n	27 Sep	**Next step (suggested, not run).** F61-CRIB: take the f.61 shape classes from a blind pass that uses the manuscript's own classes, not the table's drawings.	--	661
+fr4715-f61-mayenne-1592	partial	runnable	M	n	27-28 Sep	This is the third unit of Mayenne's secretary's hand read by two passes at 3x (f.106r 85% signs but gloss 34%; f.108r 79%; f.108v 52%): the sign agreement on this leaf is the worst of the family, and…	--	1219
 fr4715-montholon-1589	open	needs-person	S	n	27 Sep	**Next step.** A fail keeps the BnF-capture route first (ASKS 79, a new capture of f.81r).	Merge call C's digit/letter reads (met G0/G1) with call D's dot flags (met G2) on the same four lines -- both already on disk, each cleared a different gate. M.	422
 fr5160-letellier-1653	open	runnable	S	n		**Follow-up, not attempted here (stop when the brief is met):** if a later worker wants to close the "no cipher in item 2" question more firmly than a 9-canvas sample, the remaining ~135 canvases of…	--	310
 fr5761-election-1519	open	runnable	M	n		This needs f105-f109 atlas-coded before it can be answered for the document as a whole -- flagged as the next step for a worker extending the atlas past f104/f110, not concluded here either way.	--	1350
@@ -165,7 +165,7 @@ sp87-newcastle-1743	open	needs-triage	?	n	25 Sep		--	0
 sp90-raby-1704	open	runnable	S	n	25 Sep	- S: search the HMC printed series directly page-by-page (only web-searched so far) for a Strafford/Raby 1704 report -- this file's own named next step 2.	--	486
 sp90-raby-whitworth-1705	open	runnable	M	n	25 Sep	1722 (Add MS 37389) — none covers 1716-17, so SP 90/7/149,212 (dated 1716-17 in the QUEUE row) falls entirely outside this range regardless of content.** The correct BL range for that correspondence…	--	2097
 sp99-wotton-1622	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) resolve whether "159" in the description is a correspondent code-name or a folio cross-reference — read folio 159 itself ("Nys to [Carleton]") once…	--	634
-spinelli-beinecke-c1515	partial	runnable	M	n	27 Sep	**Next step:** locate "la gubernation d'ispagnia" on the image (Tomokiyo's own known-answer span, the "known answer first" discipline in `.claude/briefs/README.md`'s common tail) and calibrate `keys/…	--	907
+spinelli-beinecke-c1515	partial	runnable	M	n	28 Sep	The next step is not another statistic: it is a blind pass pair over the unread lines with Domnina's full cell set as the alphabet (not the atlas), i.e.	--	660
 ss-radio-lippert-1944	open	needs-triage	?	n	25 Sep		--	0
 stas-waldburg-1653	open	runnable	M	n	24 Sep	**Recommended next steps (not run this pass):** (1) search for a Waldburg-Trauchburg family archive Regesten or Zeitschrift für Hohenzollerische Geschichte covering 1653-54; (2) resolve the catalogue…	--	347
 sufi-fiddle	open	needs-triage	?	n	25 Sep		--	0
