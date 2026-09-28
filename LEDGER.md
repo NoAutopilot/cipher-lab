@@ -1289,3 +1289,6 @@ the end of every wake.
 | 28 Sep | campaign runner spinelli-beinecke-c1515 (runner 2, owner account): 17 steps H22-H34 in continuous mode 01:44-05:33 UTC (design-matched controls for the homophonic solver, the native-image Opus pass pairs that cleared the transcription gate at 89-97 percent, the v4 transcription, the pool priced and ASKS 87 filed, the letter's own plain text read at 70 percent word level with its context, the nine context cribs at chance); stopped at 630k context | Fable | session_01213SyYPVrRii7MWRZbyU3S | 53.40 (get_session, orchestrator at archive) | D+ (transcription blocker cleared; the length blocker priced; no reading) | replaced by runner 3 at 05:35 |
 | 28 Sept 2026 | MERCY-OUT | session_01SBqFqTJkY37SuXd6hjb6P9 | owner | Sonnet | cap 12 | running | outreach drafts |
 | 28 Sept 2026 | MERCY-N4 | session_0185wbSuc3VUYGpvy2MDHTQC | owner | Fable | cap 20 | running | N4 verifier |
+| 28 Sept 2026 | MERCY-OUT | session_01SBqFqTJkY37SuXd6hjb6P9 | owner | Sonnet | 2.51 | done 06:15 | three drafts, nothing sent |
+| 28 Sept 2026 | MERCY-N4 | session_0185wbSuc3VUYGpvy2MDHTQC | owner | Fable | 8.11 | done 06:22 | class N4, 1933 precis found |
+| 28 Sept 2026 | f61 runner 2 | session_01J8hunWPcE7QYcpCx59CUHV | owner | Fable | 61.12 | stopped on context 670k at 06:20, archived 06:4x | H24b-H63 |

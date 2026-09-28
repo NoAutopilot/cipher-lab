@@ -1,7 +1,7 @@
 target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
-daily_budget_usd: 240
+daily_budget_usd: 400
 spent_today_usd: 255.42
 spent_day: 2026-09-28
 closed:
@@ -176,3 +176,5 @@ closed:
 2026-09-28 06:11 | session_01J8hunWPcE7QYcpCx59CUHV | H62 done | 0.5 | f.108v skeleton written (274 pairs / 17 nulls / 13 unread of 304, coverage 0.96), no letter chosen; next H63 (CA as text letters, one vision call, est 2).
 
 2026-09-28 06:19 | session_01J8hunWPcE7QYcpCx59CUHV | H63 done | 2 | CA = cipher signs inside the runs (5/6, controls 10/10), the edge ones read as text at low confidence, no cell changes; no runnable row left: H64 (score the person's gloss on arrival, needs doc), H65 (SBS period attestation from existing alignments, one call), H66 (verifier review, LANE VO3) added; this runner stops on context (about 660k), the next incarnation takes H65.
+
+2026-09-28 06:4x UTC | session_01FXDfYR3CvGk7tcid1Aav1n (orchestrator) | budget | 0 | daily budget raised 240 -> 400 for 28 Sept under the owner's lean-in direction of 00:15 UTC (cost not a constraint; real get_session spend reconciled at each check-in ran past 240); the runner continues.

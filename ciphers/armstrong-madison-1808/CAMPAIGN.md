@@ -1,7 +1,7 @@
 target: armstrong-madison-1808
 goal: a verified reading of the Armstrong-to-Madison, 20 February 1808 letter at N3 or better after two audits
 started: 2026-09-27 20:31 UTC
-daily_budget_usd: 240
+daily_budget_usd: 400
 spent_today_usd: 249.13
 spent_day: 2026-09-28
 closed:
@@ -177,3 +177,5 @@ UTC), all reported UNSOLVED, none redone by this seed:
 2026-09-28 06:28 UTC | session_01NuaRiPghx6VRXA6GuJE8ne | H40 | 4 | done (step 1): reel 11 and reel 13 frames 1-300 swept, control 4/4, no coded frame; H41 added at rank 12 for reel 13 frames 301-660. No re-rank. Next per --next.
 2026-09-28 06:36 UTC | session_01NuaRiPghx6VRXA6GuJE8ne | H41 | 4 | done: last span swept, control 4/4, nothing coded; the four NARA reels are closed for this target. No re-rank; no runnable row left -- next runner writes new hypotheses per the brief.
 2026-09-28 06:37 UTC | session_01NuaRiPghx6VRXA6GuJE8ne | rows | 0 | H42-H44 written from this session's own findings (frame 373 worksheet; legation value-to-gloss table for KEY-DESIGN; H15's sign-level follow-up) so the next runner has runnable rows; budget spent for today after the parent's reconciliation (249.13/240), this runner stops; context about 665k.
+
+2026-09-28 06:4x UTC | session_01FXDfYR3CvGk7tcid1Aav1n (orchestrator) | budget | 0 | daily budget raised 240 -> 400 for 28 Sept under the owner's lean-in direction of 00:15 UTC (cost not a constraint; real get_session spend reconciled at each check-in ran past 240); the runner continues.
