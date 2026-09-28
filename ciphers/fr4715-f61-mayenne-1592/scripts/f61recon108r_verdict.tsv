@@ -1,0 +1,12 @@
+line	position	sign	conf	note
+L04	1	4TRI	m	f108g_L04_s1 x1037: 4 with a crossbar, small closed form below it (bottom cut by the crop edge); not a joined 43
+L04	7	PHI	m	f108g_L04_s1 x2462: dark loops on a vertical stem; the big handwriting flourish runs through it; no horizontal bar under a figure-8
+L04	18	PHI	m	f108g_L04_s2 x2304: dark loop-on-stem sign; the C-shaped curve to its left is a flourish, not part of the sign
+L05	1	4STEM	m	f108g_L05_s1 x1037: 4 with crossbar and a long stem crossed by a descending stroke; no triangle or V below
+L05	7	LOOPSTEM1	l	f108g_L05_s3 x2030: a single loop at the head of a long slanted stem ending in a curl at the foot; not phi-like; possibly partly a handwriting descender
+L06	6	SBS	h	f108h_L06_s1 x2189: two loops side by side at the head of one stem, nothing above them
+L06	9	SBS	m	f108h_L06_s2 x274: two loops side by side on a stem; a horizontal dash runs into it from the left
+L06	14	SBS	m	f108h_L06_s2 x1418: two loops side by side on a stem; the handwriting flourish curves above but does not touch the loops
+L06	24	4PI	m	f108h_L06_s3 x1166: 4 above two stems crossed by a bar (hash-like foot), not a single stem
+L06	26	4PI	m	f108h_L06_s3 x1598: 4 above two short stems on a bar; same form as pos 24
+L06	34	BETA	m	f108h_L06_s4 x880: loop at the top of a long stem with a bowl below it, beta-like; crossed by long handwriting stems
