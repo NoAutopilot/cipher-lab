@@ -477,7 +477,7 @@ the target's 0/1-heavy units or shorthand runs. **Result: search result with its
 Nov 1804-Dec 1807 on roll 13 are all in the office code; no earlier use of the private code survives in DUSMF.**
 Requests: catalog.archives.gov 1; 0 subagents.
 
-## Step B19 (28 Sept 2026, 04:32-04:36 UTC) -- B1's statistics under the REAL period tables: the family's own tables do not produce the target's row structure
+## Step B19 (28 Sept 2026, 04:31-04:32 UTC) -- B1's statistics under the REAL period tables: the family's own tables do not produce the target's row structure
 
 `b19/real_tables.py`: 60 en18 letters of 369 coded tokens encoded with WE028 (Monroe's table as transcribed by
 Tomokiyo, 1,228 single-word entries to value 1260 in `tools/data/uscodes-1800/WE028.tsv`) and with Bourdeau's THE=972
@@ -499,9 +499,9 @@ tables are partial and word-only, so their letters carry 90-127 distinct values 
 Department family gives r_fam and r_34 at zero, flat suffix digits and almost no 2-digit tokens; the target sits at
 percentile 100 or 0 on every row statistic. The target's decade-family structure (B1) is therefore not a property
 of the family's tables that ARM-A2 already excluded by value; it is a different design from the office codes. Requests:
-none; 0 subagents; 4 minutes by the clock.
+none; 0 subagents; about 1 minute by the clock.
 
-## Step B21 (28 Sept 2026, 04:33-04:37 UTC) -- Gallatin as the "other correspondent": nothing in print or in the reachable finding aid
+## Step B21 (28 Sept 2026, 04:31-04:33 UTC) -- Gallatin as the "other correspondent": nothing in print or in the reachable finding aid
 
 Step 1, offline: `tools/data/en18/writingsalbertg01gallgoog.txt.gz` (Adams, *Writings of Albert Gallatin* I, 1879):
 no Armstrong passage dated 1807-08 or naming France/Paris; the volume's seven cipher/cypher mentions are the 1813-14
