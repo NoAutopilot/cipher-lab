@@ -425,3 +425,46 @@ permission may be needed before any image is published).
 Tool change: `tools/decode_browser_login.js --listen CMDFILE` keeps the one logged-in context open and takes
 `page URL` / `get URL` lines from a command file, so a job whose later URLs depend on pages read earlier still
 uses a single login.
+
+### Formerly blocked records, full-size test (DECODE-OPEN, 28 Sept 2026)
+
+Same login (listener mode), 15:1x-15:3x UTC. For each record: its RecordsView page, then the first full-size
+image named in its zoom-modal alt text. Every one came back a real image, none the placeholder (all sha1s differ
+from `035489a0...`); images are in the worker's scratchpad only, never committed.
+
+| record | item (DECODE name, status) | images | first full-size file: dims, sha1 (12) | what it unblocks |
+|---|---|---|---|---|
+| R5005 | Zeschau to Seebach 18.01.1841, HStAD 10731 Nr. 12 (Partially) | 6 | 7214x5412 JPEG, f75e920f9eb2 | the rubbed pencil gloss Bourdeau read, at full size |
+| R5006 | same, 06.04.1842 (Partially) | 2 | 7214x5412, 483bbb1d719f | first ciphertext transcription on disk (none exists), then Bourdeau's 7 syllabary values tried (ASKS 64) |
+| R5007 | same, dated 13.06.1846 in DECODE's name (Partially) | 2 | 7214x5412, b5ec8e9e93cd | as R5006 |
+| R5008 | same, 26.10.1843 (Partially) | 2 | 7214x5412, 86e6105b60fe | as R5006 |
+| R4931 | BL Cotton MS Caligula C II f.277 (Non-decrypted) | 2 | 7280x10152, c60e24407f97 | rule-2 check of our f.277 transcription |
+| R4932 | BL Cotton MS Caligula C II ff.278-279 (Decrypted) | 4 | 7343x10055, 8de6b4a0c42f | the contemporary decipherment on f.278 that `randolph-sussex-1569` calls found-solved but never saw (bl.digirati.io blocked) |
+| R9634 | BRAH Salazar 9/26 no. 2 (Non-decrypted) | 3 | 3256x2365, c7a149da7b40 | the only ciphertext of R9634 anywhere (no transcription exists, lope-hurtado NOTES l.174) |
+| R9646 | BRAH 9/26 no. 15 (Non-decrypted) | 1 | 3440x2465, f58bbb5be686 | image check of the lope-hurtado R9646 work |
+| R9649 | BRAH 9/26 no. 18 (Non-decrypted) | 3 | 3496x2465, 2cc8b6062f40 | same, R9649 |
+| R1172 | BNE MSS/20211 item 123 (Non-decrypted) | 2 | 1114x1520 PNG, 11442cec6e3e | the target's own ciphertext at modest resolution (larger than the thumbnail, far smaller than the other hosts' scans) |
+| R1180 | BNE MSS/20211 item 126 (Decrypted) | 3 | 1123x1549 PNG, 57e0a770a907 | the sibling's decipherment pages: a crib or partial key for item 123 (ASKS 45) without Tomokiyo 2018 |
+| R9586 | ASN Esteri 2337 no. 37 (Non-decrypted) | 3 | 3056x4592, 940803e5b06a | rule-2 check of Bourdeau's castelcicala transcripts |
+| R9587 | ASN Esteri 2337 no. 38 | 3 | 2935x3599, 156bdb616cdd | same |
+| R9588 | ASN Esteri 2337 no. 39 | 2 | 3056x4592, cef33e2577e1 | same |
+| R2859, R2860, R2865, R2866 | Yale Beinecke OSB MSS fc37 (Decrypted) | 4 each | 4157x5812, 4143x5812, 4349x5899, 4330x5950 (046d79b99bfa, a9e0e1b935b2, 2c7f4a849fc6, 4bf1d417724e) | image check of the Manchester word-code letters (already found-solved) |
+| R4282, R4284 | Riksarkivet Chifferklaver låda II:113, II:114 (Non-decrypted) | **0** | -- | nothing: DECODE holds no image for either; riksarkivet-r4282-1628 still needs Riksarkivet's own route |
+
+**Ranked by what a full image would unblock (for the orchestrator to turn into rows after the sprint; breadth is
+frozen until 29 Sept 21:00 UTC):**
+
+1. **zeschau-seebach-1841** (R5005-R5008, ASKS 64): three letters with no ciphertext on disk anywhere now have
+   7214x5412 scans; transcribing R5006-R5008 lets Bourdeau's seven recovered values be tried on new material.
+2. **bne20211-ferdinand-1478** (R1172, R1180, ASKS 45): the Decrypted sibling's three pages may give a crib or a
+   partial key for item 123 without the academia.edu article; resolution is modest (about 1100x1500).
+3. **lope-hurtado-1522** (R9634, R9646, R9649): R9634's ciphertext exists nowhere else; the other two get an image check.
+4. **randolph-sussex-1569** (R4931, R4932): the found-solved verdict rests on Bourdeau's reading of f.278; the
+   f.278 image can now be checked by us (rule 2).
+5. **castelcicala-1816** (R9586-R9588): rule-2 check of Bourdeau's transcripts behind a `partial` target.
+6. **beinecke-manchester-1699-1700** (R2859-R2866): image check only; the group is already found-solved.
+7. **riksarkivet-r4282-1628** (R4282, R4284): nothing, since DECODE has no images for these records.
+
+Requests this job: de-crypt.org 73 (2 login, 1 primary RecordsView, 2 image fetches in the login run, 68 in the
+listener: 28 record pages, 5 documents, 35 images), all 1.7 s or more apart, one at a time, one login. No
+other hosts.
