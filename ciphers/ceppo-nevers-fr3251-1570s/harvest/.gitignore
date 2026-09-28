@@ -1,0 +1,8 @@
+# Regenerable line crops (HARVEST-D, 28 Sept 2026): witness_f36/cut_lines.py and cut_folio_lines.py rebuild them
+# from the committed native regions; kept out of git to hold the folder under the 30 MB image line.
+witness_f36/lines/
+witness_f36/lines2x/
+witness_f36/crops/
+f21v/lines/
+f35/lines/
+f87/lines/
