@@ -1,0 +1,50 @@
+label	code	note	conf
+L1.12	FOUR	numeral-4 gestalt, not a hook-family shape	M
+L1.14	ELOOP	compact loop with a very long wavy tail	M
+L1.16	OMEGA2	double hump merging into one larger closed loop	M
+L1.18	STROKE	smooth bare hook curve, no closed loop	H
+L1.20	MU	two connected humps with long diagonal tail	H
+L1.21	STROKE	smooth bare hook curve, no closed loop	H
+L1.24	TLOOP	small hook curl at top of vertical, short crossbar tick	M
+L1.27	UCURL	two upper hooks crossing down into one large teardrop loop	M
+L1.31	ELOOP	bold compact loop with internal flourish, long tail	M
+L2.8	RHO	compound loop at top merging into a long tail	M
+L2.19	UCURL	hook top-left, diagonal hook top-right, tick, teardrop loop	M
+L2.20	RHO	loop with long tail; separate X mark is bleed	M
+L2.26	TLOOP	ascender loop above a t-cross, long descender	M
+L3.2	UCURL	clean two-hook crossing into a single large teardrop loop	H
+L3.7	STROKE	plain diagonal bare stroke	H
+L3.8	RHO	open hook/loop at the base with a long straight tail	M
+L3.14	UCURL	double hook cluster at top plus ascender, large open C-loop below	M
+L3.20	RHO	loop at top opening left, long diagonal tail	M
+L3.22	RHO	loop at bottom-right, long diagonal tail	M
+L3.23	TLOOP	small hook at top, horizontal tick, bold terminal loop	H
+L3.29	STROKE	plain jagged vertical bare stroke	H
+L3.30	STROKE	single tall curved hook stroke, no closed loop	H
+L4.2	TLOOP	small hook at top, crossbar, extra small loop, terminal loop	M
+L4.4	TLOOP	hook curling at the very top, crossbar tick, rounded terminal loop	H
+L4.10	MU	diagonal stroke into a double-hump ending in a hook	M
+L4.16	UCURL	small loop at top merging into a long descender ending in a U-curl	M
+L4.20	RHO+OMEGABAR	merged: loop with long tail (RHO) and double-hump under a bar	L
+L4.25	ECAP	bold compact loop with a long tail to a blob tip	M
+L5.1	TLOOP	t-cross with a hook at the top and a small terminal curl	M
+L5.2	RHO	compact loop with a long smooth tail; 3-shaped zigzag to the right is bleed	M
+L5.5	PHI	small loop bisected by a straight diagonal that continues as a tail	M
+L5.14	ELOOP	hooked loop with a small counter, long smooth tail	M
+L5.16	ECAP	bold compact loop merging into a curling hook tail	H
+L5.17	RHO	compact loop at the base with a long tail to a blob tip	M
+L5.19	UCURL	small hook top-left, long ascender, crossbar, large teardrop loop	M
+L6.17	RHO	open hook/loop at the base, long straight tail	M
+L6.18	MU	two connected humps with a long tail	H
+L6.25	ELOOP	compact loop with a long smooth tail; adjacent DEE-like shape is bleed	M
+L7.1	UCURL	two crossing hooks at top descending into a closed oval loop	M
+L7.7	UCURL	small double-coil spiral at top merging into a large open hook	M
+L7.17	FRAG	heavy ink blot, no discernible loop or hook	L
+L7.22	UCURL	clean two-hook crossing into a single large teardrop loop	H
+L7.24	TWO	angular Z/2-shaped stroke, not a hook-family member	M
+L8.8	STROKE	single large bare hook stroke, no closed loop	H
+L8.10	MU	check-mark base curving into a double-hump	M
+L8.15	RHO+TLOOP	merged: loop with long tail and a triangular loop with hooked ascender	L
+L8.17	UCURL	clean two-hook crossing into a single large teardrop loop	H
+L8.21	FRAG	chain of small strokes ending in a simple hook	L
+L8.23	RHO	compact loop with a long smooth tail; multi-hump cluster top-right is bleed	M
