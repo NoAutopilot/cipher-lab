@@ -40,6 +40,13 @@
 // lands. Reaches a page the way a person would instead of guessing its request shape; use it only after --probe
 // shows the direct route is blocked, not as a first move. Pass "PAGE_URL|LINK_TEXT", comma-separate for several.
 //
+// --listen CMDFILE (added 28 Sept 2026, DECODE-OPEN): after everything above, keep the same logged-in context
+// open and poll CMDFILE (a plain text file, appended to by another process) for lines `page URL` (page.goto, saved
+// as .html), `get URL` (context.request.get, saved raw) or `quit`; each result is appended as one JSON line to
+// CMDFILE + '.out'. Lets one login serve a job whose later URLs depend on pages read earlier (the single-login
+// rule). Requests stay --delay apart; the listener stops at `quit`, at --listen-max requests (default 120) or after
+// --listen-idle minutes with no new command (default 30).
+//
 // Prints one JSON line: {loggedIn, url, title, incorrectMessage, saved, fetched:[{url,path,status,bytes}],
 // probed:[{url,hops:[{url,status,location}]}], clicked:[{page,linkText,landedUrl,path}]}. On success it saves
 // RecordsView/RECORD_ID as
@@ -121,12 +128,59 @@ const clickSpecs = collectUrls('--click').map((spec) => {
   return i === -1 ? { pageUrl: spec, linkText: '' } : { pageUrl: spec.slice(0, i), linkText: spec.slice(i + 1) };
 });
 
+const listenIdx = args.indexOf('--listen');
+const listenFile = listenIdx > -1 ? args[listenIdx + 1] : null;
+const listenMaxIdx = args.indexOf('--listen-max');
+const listenMax = listenMaxIdx > -1 ? parseInt(args[listenMaxIdx + 1], 10) : 120;
+const listenIdleIdx = args.indexOf('--listen-idle');
+const listenIdleMs = (listenIdleIdx > -1 ? parseFloat(args[listenIdleIdx + 1]) : 30) * 60000;
+
 const user = process.env.DECODE_USER, pass = process.env.DECODE_PASS;
 if (!user || !pass) { console.error('DECODE_USER/DECODE_PASS: unset'); process.exit(2); }
 
 const exe = process.env.CHROMIUM_PATH || (fs.existsSync('/opt/pw-browsers/chromium') ? '/opt/pw-browsers/chromium' : undefined);
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+async function listen(page) {
+  const ctx = page.context();
+  let done = 0, lastCmd = Date.now(), requests = 0;
+  const log = (o) => fs.appendFileSync(listenFile + '.out', JSON.stringify(o) + '\n');
+  if (!fs.existsSync(listenFile)) fs.writeFileSync(listenFile, '');
+  log({ listening: true, at: new Date().toISOString() });
+  for (;;) {
+    const lines = fs.readFileSync(listenFile, 'utf8').split('\n').filter((l) => l.trim());
+    if (lines.length > done) {
+      const line = lines[done++].trim();
+      lastCmd = Date.now();
+      if (line === 'quit') { log({ quit: true, requests }); return; }
+      if (requests >= listenMax) { log({ refused: line, reason: 'listen-max reached', requests }); return; }
+      const sp = line.indexOf(' ');
+      const verb = line.slice(0, sp), url = new URL(line.slice(sp + 1).trim(), BASE + '/').toString();
+      await sleep(delayMs);
+      requests++;
+      try {
+        if (verb === 'page') {
+          await page.goto(url, { waitUntil: 'networkidle', timeout: 90000 });
+          const p = path.join(outDir, safeFilename(url).replace(/\.[^.]*$/, '') + '.html');
+          fs.writeFileSync(p, await page.content());
+          log({ verb, url, landed: page.url(), path: p, bytes: fs.statSync(p).size, requests });
+        } else {
+          const resp = await ctx.request.get(url, { timeout: 90000 });
+          const body = await resp.body();
+          const p = path.join(outDir, safeFilename(url));
+          fs.writeFileSync(p, body);
+          log({ verb, url, status: resp.status(), type: resp.headers()['content-type'] || null, path: p, bytes: body.length, requests });
+        }
+      } catch (e) {
+        log({ verb, url, error: e.message.split('\n')[0], requests });
+      }
+    } else {
+      if (Date.now() - lastCmd > listenIdleMs) { log({ idle: true, requests }); return; }
+      await sleep(1000);
+    }
+  }
+}
 
 (async () => {
   const browser = await chromium.launch({ executablePath: exe, headless: true, args: ['--no-sandbox', '--disable-gpu'] });
@@ -243,6 +297,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
     }
     console.log(JSON.stringify(out));
     process.exitCode = out.loggedIn ? 0 : 4;
+    if (out.loggedIn && listenFile) await listen(page);
   } catch (e) {
     console.error('decode_browser_login failed:', e.message.split('\n')[0]);
     process.exitCode = 1;

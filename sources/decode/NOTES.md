@@ -404,3 +404,24 @@ login-free) + login-session (2 login, 1 primary RecordsView, 1 fetch-page, 10 fi
 apart, one at a time, well under the 40-request login-free cap and the 60-request login-session convention. One
 login. `su.se` 5 requests (2 search, 1 profile redirect, 1 profile, 1 staff-listing 404), >=1.5s apart, well
 under any per-host cap. No credentials printed.
+
+## Full-size images: access after the PI's extension (28 Sept 2026)
+
+**Verdict: access works.** DECODE-OPEN (parent worker, owner account, session_015RJ8kumxcx2XKtHHU1zzsU), one login
+through `tools/decode_browser_login.js` (real browser; `loggedIn: true`) at 14:54 UTC, 28 Sept 2026, repeating the
+24 Sept test on record 3754 with `--guess-fullsize`:
+
+| file | status | bytes | format / dims | sha1 |
+|---|---|---|---|---|
+| `TH_IMG_R3754_I23011_P.jpg` (thumbnail) | 200 | 9165 | JPEG | `47182c087ff704eb1bb9743e710ddb5b97032f0d` |
+| `IMG_R3754_I23011_P.jpg` (zoom-modal alt name) | 200 | 16287379 | JPEG 5512x3674 | `71272e28743fa57c80391f3e3f1d48d4911e92b8` |
+
+The full-size file is **not** the `forbidden.png` placeholder (`035489a0...`, 17947-byte 986x568 PNG): it is a
+16.3 MB JPEG at 5512x3674, the same dimensions Bourdeau's own login fetched for this record
+(`ciphers/florence-dieci-responsive/NOTES.md` "Job 1"). The account-role block of 24 Sept 2026 is lifted.
+Images stay in the session scratchpad, never in this repository (the PI's reminder: the holding archive's
+permission may be needed before any image is published).
+
+Tool change: `tools/decode_browser_login.js --listen CMDFILE` keeps the one logged-in context open and takes
+`page URL` / `get URL` lines from a command file, so a job whose later URLs depend on pages read earlier still
+uses a single login.
