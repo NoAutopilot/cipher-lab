@@ -1,0 +1,11 @@
+positive control (the=17, of=18): adjacency mean 24.1, above own p95: 59/60
+negative control (the split 17/18): adjacency mean 1.6, above own p95: 0/60
+GATE: MET
+TARGET rows 17/18: adjacent 2, null p95 5, percentile 28.4
+TARGET rows 47/48: adjacent 1, null p95 2, percentile 50.5
+TARGET rows 11/12: adjacent 0, null p95 1, percentile 0.0
+TARGET rows 17/38: adjacent 0, null p95 5, percentile 0.0
+TARGET rows 18/38: adjacent 4, null p95 4, percentile 93.6
+
+control (the/of/to/and/in on the five rows): adjacency mean 52.9, above own p95: 53/60
+TARGET five richest rows: adjacent 17, null p05 11 p95 22, percentile 51.0

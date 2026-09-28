@@ -556,3 +556,32 @@ Livingston / The Honble James Madison"), 368, 391, 394-395 (a five-page numeral 
 **Result: search result with its control -- DUSMF rolls 12, 13 and 14 (Oct 1801-Sept 1810) are now screened frame
 by frame; the 20 Feb 1808 letter is the only item in its code in the whole Paris legation series.** Requests:
 catalog.archives.gov 1; 0 subagents.
+
+## Step B25 (28 Sept 2026, 04:39-04:47 UTC) -- the richest rows do not collocate the way English function words do: control-backed
+
+`b25/homophone_bigram.py`: adjacency count of two rows in either order against a position-permutation null. Gate
+(pre-registered): positive control -- en18 letters (369 coded tokens) with "the" on row 17 and "of" on row 18 --
+adjacency mean 24.1, 59 of 60 above their own p95; negative control -- "the" split at random between rows 17 and 18
+(homophones) -- mean 1.6, 0 of 60 above p95. **GATE MET.** Target:
+
+| rows | adjacent | null p95 | percentile |
+|---|---|---|---|
+| 17 / 18 (the two richest) | 2 | 5 | 28 |
+| 47 / 48 | 1 | 2 | 51 |
+| 11 / 12 | 0 | 1 | 0 |
+| 17 / 38 | 0 | 5 | 0 |
+| 18 / 38 | 4 | 4 | 94 |
+| the five richest rows as a set (17, 18, 38, 14, 16) | 17 | p05 11, p95 22 | 51 |
+
+Addendum control: the five commonest function words (the, of, to, and, in) on those five rows give 52.9 adjacencies
+(53 of 60 above p95) against the target's 17 (inside its own null, 51st percentile).
+
+**Result.** The target's richest rows behave like the homophone control or like non-collocating words, never like
+the/of/to/and/in: the two richest rows are adjacent twice in 369 tokens where "the"/"of" would give about 24, and the
+five richest rows together sit exactly at chance where five function words give three times chance. Two readings
+survive, both control-backed: (a) the rich rows are homophones or grammatical variants of a few words (the split-"the"
+control reproduces the numbers), or (b) the numerals do not carry the letter's function words in the ordinary way --
+the commonest coded rows are content words or the function words are elsewhere (the shorthand runs, or omitted, as a
+telegraphic register would). What is excluded: any assignment of the five richest rows to five distinct common
+English function words (a family-C solver that seeds "the"/"of"/"to" onto the top particles -- ARM-C1's particle
+class -- is working against this structure). Requests: none; 0 subagents; about 8 minutes by the clock.
