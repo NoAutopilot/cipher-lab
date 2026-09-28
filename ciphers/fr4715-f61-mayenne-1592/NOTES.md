@@ -1344,3 +1344,34 @@ side-by-side form apart from the trefoil turns PHI's e/r/o triple into two cells
 ambiguity in every decode so far (family row H52). (3) `scripts/f61_atlas.tsv` gains a row SBS (two loops side by side at
 the head of a stem, nothing above) with the H26 note; passes before this date used PHI/DBL. No class change; not a reading;
 nothing here is solved, new or first (the letters are Tomokiyo's and the period decipherer's). Vision calls: 1 of 4.
+
+## Campaign step H51 (2026-09-28 05:10 UTC) -- the H26 split applied on disk; the L10 fragment regenerated
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV), script-only, no calls. Hypothesis H51 (F61-QO2): apply H26's
+groups through the joint fit and regenerate the fragment of record.
+
+**Joint fit with the loop split (`scripts/f61qo2.py`, pre-registered in its docstring; `f61joint_h51_result.txt`,
+`f61joint_h51_map.tsv`).** Relabel before the fit: every H26 group-G2 sign and every pass-A DBL on f.61 -> SBS; G1/G3 stay
+PHI; then H27's bracket relabel. Same folds, permutations (seed 1) and gate as H20/H27, the gated cells now ten with SBS in
+place of DBL.
+
+| fold | H27 (bracket split only) | H51 (+ loop split) | permuted max (H51) |
+|---|---|---|---|
+| (a) fit f.61, read f.108 | 57/84 = 0.679 | **59/84 = 0.702** | 0.405 |
+| (b) fit f.108, read f.61 | 41/55 = 0.745 | **46/55 = 0.836** | 0.400 |
+| (c) f.61 span folds pooled, f.108 in training | 48/55 = 0.873 | **49/55 = 0.891** | per fold 0.50-0.75 |
+| gated cells | ten, no conflict | PHI e/r 33 of 34 counts (the o's are gone), SBS b/o 7/7, no conflict; FAIL only on the absence rule (VBAR_B, EBR_A missing from one fold's training) | |
+
+Both transfer folds rise; PHI is now a clean e/r cell (33/34 counts) and SBS a clean b/o one (7/7). The absence rule fails
+as in H20/H27 and is not re-litigated. Grades unchanged (M: the reference letters are Tomokiyo's and the period
+decipherer's, reprinted).
+
+**Fragment (`scripts/f61fragment.py`, `fragment_L10.tsv` regenerated, `--check` fresh; the pre-H51 file is in git history
+at 310c85e5).** Positions 6 and 11 are SBS b/o (cell grade S with H26's control), their letter within the pair unresolved
+(the H16 judge chose within e/r; withdrawn). Pair sequence of the run after "pas paresseux si": **[l/y] [e/r] [g/t] [e/r]
+[b/o] [f/s] [h/u] [b/o]**, five nulls between and after. No reading is claimed; the fragment stays held with the verifier
+(AUDIT.md's solver-side paragraph, H26). For H25: the judge's candidate sets carry the old cell for L07/7 (a reader PHI that
+H26 puts in the b/o group) and for L10 6/11 -- H25 rebuilds its sets with the split, stated before its calls.
+
+Files: `scripts/f61qo2.py`, `f61joint_h51_result.txt`, `f61joint_h51_map.tsv`, `scripts/f61fragment.py`,
+`scripts/fragment_L10.tsv`; HYPOTHESES.md row added. No class change; nothing solved, new or first.

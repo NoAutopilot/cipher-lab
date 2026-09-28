@@ -1,0 +1,11 @@
+(a) fit f.61, read f.108: read 59/84 = 0.702; 20 permuted maps mean 0.217 max 0.405; cells 4PI=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n EBR_B=l/y HASH4=e/r INF=h/u LOOPBAR=a/n PHI=e/r SBS=b/o VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+(b) fit f.108, read f.61: read 46/55 = 0.836; 20 permuted maps mean 0.199 max 0.400; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n EBR_A=f/s EBR_B=l/y INF=h/u ISH=l/y OTHER=i/x PHI=e/r SBS=b/o VBAR_A=g/t ZHOOK=i/x
+(c) fit f.108 + f.61 minus S1, read S1: read 3/4 = 0.750; 20 permuted maps mean 0.287 max 0.750; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n EBR_A=f/s EBR_B=l/y INF=h/u ISH=l/y LOOPBAR=a/n OTHER=i/x PHI=e/r SBS=b/o VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+(c) fit f.108 + f.61 minus S2, read S2: read 9/10 = 0.900; 20 permuted maps mean 0.250 max 0.500; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n EBR_A=f/s EBR_B=l/y HASH4=e/r INF=h/u ISH=l/y OTHER=i/x PHI=e/r SBS=b/o VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+(c) fit f.108 + f.61 minus S3, read S3: read 11/12 = 0.917; 20 permuted maps mean 0.183 max 0.500; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n EBR_A=f/s EBR_B=l/y INF=h/u ISH=l/y LOOPBAR=a/n OTHER=i/x PHI=e/r SBS=b/o VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+(c) fit f.108 + f.61 minus S4a+S4b, read S4a+S4b: read 16/18 = 0.889; 20 permuted maps mean 0.253 max 0.500; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n EBR_A=f/s EBR_B=l/y INF=h/u ISH=l/y LOOPBAR=a/n OTHER=i/x PHI=e/r SBS=b/o VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+(c) fit f.108 + f.61 minus S5, read S5: read 10/11 = 0.909; 20 permuted maps mean 0.286 max 0.545; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n EBR_A=f/s EBR_B=l/y HASH4=e/r INF=h/u ISH=l/y LOOPBAR=a/n OTHER=i/x PHI=e/r SBS=b/o VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
+(c) pooled f.61 held-out with f.108 in training: 49/55 = 0.891  (H15b without f.108: 42/55)
+10 cells per fold: PHI=e/r C43=a/n 4TRI=c/p INF=h/u VBAR_A=g/t VBAR_B=f/s|null SBS=b/o EBR_A=f/s|null EBR_B=l/y ZHOOK=i/x
+GATE H20_h51 (a) PASS, (b) PASS, nine cells stable FAIL -> H20 FAIL
+joint map -> scripts/f61joint_h51_map.tsv; classes beyond the gated: 4PI=d/q(6) 4STEM=a/n(3) BETA=m/z(4) C6=a/n(2) ISH=l/y(2) LOOPBAR=a/n(2) OTHER=i/x(2)

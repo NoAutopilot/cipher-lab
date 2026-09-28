@@ -1,16 +1,16 @@
-# f.61r L10, after the clear words 'pas paresseux si' (both passes), run ends the line. 27 Sept 2026, campaign H16-H17.
-# 8 letters, all S/M; 5 nulls. Resolved fragment: letresur
+# f.61r L10, after the clear words 'pas paresseux si' (both passes), run ends the line. 27 Sept 2026, campaign H16-H17; revised 28 Sept 2026, H51 (positions 6 and 11 = SBS b/o after H26).
+# 8 letter signs, cells S, letters within pairs M (two unresolved); 5 nulls. Pair sequence: [l/y] [e/r] [g/t] [e/r] [b/o] [f/s] [h/u] [b/o] -- the H16 judge's string 'letresur' is withdrawn (it read positions 6 and 11 under e/r); no reading is claimed.
 pos	class	cell	letter	grade	note
 1	EBR	l/y	l	S/M	cell S (controlled map), letter within the pair M (judge)
 2	CA	-		S	null (dash share > 0.5 on the known lines)
 3	PHI	e/r	e	S/M	cell S (controlled map), letter within the pair M (judge)
 4	VBAR_A	g/t	t	S/M	cell S (controlled map), letter within the pair M (judge)
 5	PHI	e/r	r	S/M	cell S (controlled map), letter within the pair M (judge)
-6	PHI	e/r	e	S/M	cell S (controlled map), letter within the pair M (judge)
+6	SBS	b/o		S/M	cell S (H26 blind sort: side-by-side pair = b/o 6/6, 38/38 overall, P < 0.0005), letter within the pair unresolved M (the H16 judge saw e/r here; withdrawn H51)
 7	VBAR_B	f/s	s	S/M	cell S (controlled map), letter within the pair M (judge)
 8	INF	h/u	u	S/M	cell S (controlled map), letter within the pair M (judge)
 9	CA	-		S	null (dash share > 0.5 on the known lines)
 10	C6	-		S	null (dash share > 0.5 on the known lines)
-11	PHI	e/r	r	S/M	cell S (controlled map), letter within the pair M (judge)
+11	SBS	b/o		S/M	cell S (H26 blind sort: side-by-side pair = b/o 6/6, 38/38 overall, P < 0.0005), letter within the pair unresolved M (the H16 judge saw e/r here; withdrawn H51)
 12	CA	-		S	null (dash share > 0.5 on the known lines)
 13	C6	-		S	null (dash share > 0.5 on the known lines)

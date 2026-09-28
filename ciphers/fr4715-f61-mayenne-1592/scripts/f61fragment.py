@@ -15,6 +15,12 @@ of one run after the clear words 'pas paresseux si', not a reading of the letter
 import csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 from f61judge import CELLS
+# H51 (28 Sept 2026, runner session_01J8hunWPcE7QYcpCx59CUHV): H26's blind sort (scripts/f61qo.py, read_call_QO.tsv, 38/38,
+# P < 0.0005) put L10 positions 6 and 11 -- the two-loops-side-by-side form audit 1 questioned -- in the b/o group, so their
+# cell is SBS b/o (grade S with that control), not PHI e/r; the H16 judge's letter for them is withdrawn (it chose within
+# e/r), the letters within every pair stay M. The pre-H51 file is in git history (commit 310c85e5 and earlier).
+import f61qo2
+SBS_POS = {pos for (line, pos), g in f61qo2.G.items() if line == "L10" and g == "G2"}
 def signs(path):
     return [r["sign"] for r in csv.DictReader(open(f"{HERE}/{path}"), delimiter="\t") if r["line"] == "L10"]
 def main():
@@ -24,15 +30,19 @@ def main():
     resolved = verdict["reading"].split("|")[-1].strip()
     rows = []; k = 0
     for i, c in enumerate(a, 1):
-        if c in CELLS:
+        if c in CELLS and i in SBS_POS:
+            k += 1   # the judge resolved this position under e/r; that letter is withdrawn
+            rows.append((i, "SBS", "b/o", "", "S/M", "cell S (H26 blind sort: side-by-side pair = b/o 6/6, 38/38 overall, P < 0.0005), letter within the pair unresolved M (the H16 judge saw e/r here; withdrawn H51)"))
+        elif c in CELLS:
             pair = CELLS[c]; letter = resolved[k]; k += 1
             assert letter in pair.split("/"), (c, pair, letter)
             rows.append((i, c, pair, letter, "S/M", "cell S (controlled map), letter within the pair M (judge)"))
         else:
             rows.append((i, c, "-", "", "S", "null (dash share > 0.5 on the known lines)"))
     assert k == len(resolved)
-    txt = ("# f.61r L10, after the clear words 'pas paresseux si' (both passes), run ends the line. 27 Sept 2026, campaign H16-H17.\n"
-           "# 8 letters, all S/M; 5 nulls. Resolved fragment: " + resolved + "\n"
+    seq = " ".join(f"[{r[2]}]" for r in rows if r[2] != "-")
+    txt = ("# f.61r L10, after the clear words 'pas paresseux si' (both passes), run ends the line. 27 Sept 2026, campaign H16-H17; revised 28 Sept 2026, H51 (positions 6 and 11 = SBS b/o after H26).\n"
+           "# 8 letter signs, cells S, letters within pairs M (two unresolved); 5 nulls. Pair sequence: " + seq + " -- the H16 judge's string '" + resolved + "' is withdrawn (it read positions 6 and 11 under e/r); no reading is claimed.\n"
            "pos\tclass\tcell\tletter\tgrade\tnote\n" + "".join("\t".join(map(str, r)) + "\n" for r in rows))
     res = f"{HERE}/fragment_L10.tsv"
     if "--check" in sys.argv:
