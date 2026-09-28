@@ -136,3 +136,169 @@ b/o (6/6), the stacked figure-8 under e/r. L10 positions 6 and 11 are the side-b
 string 'le tresur' is withdrawn by the solver, the letters within pairs stay M, and `fragment_L10.tsv` is regenerated in H51.
 The fragment remains held; any N-class is the verifier's. No SECOND-OPINIONS-QUEUE.tsv row exists for this target.
 
+
+## VERIFY-F61-V4 (28 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V4 (Opus 5.5, session_014nSPzcuub15LNNfvGjJbRp), 16:12-16:3x UTC by the container clock.
+This session is separate from every solver on this target (campaign runner session_01NQpd6L9ZvLvjU1L7ttFmZs, F61-FAMILY-6
+session_01TPNoYGTE6dLBPfyEgZTLAc). Brief: `.claude/briefs/runs/2026-09-28-parent-verify-f61-v4.md`. Working files, each with a
+`--check`: `verify_v4/` (README.md is the step log). Vision and text calls: 6 Opus subagents, every prompt in
+`verify_v4/PROMPTS.md`, pushed before the calls (08e31a63, ce288ec1).
+
+**Claim under audit** (F61-FAMILY-6, ROOM.md 15:18 UTC): f.61r under period key v4 in two-way form, meter firm 20 / two-way 59 /
+unread 20 of 99 (v3 14/65/20); Tomokiyo's five known spans 48/55 = 0.873 against 200 permuted keys (p95 0.436, max 0.527, 0 of
+200 at or above); f.108r 65/84; coverage 0.80. Key v4 = `family/key_period_v4.tsv` (459 rows, 25 classes).
+
+### Verdict
+
+| item | result | grade / scope | key |
+|---|---|---|---|
+| key v4 as a period key (the rows) | **holds**: every row from a sister leaf's gloss, re-merged byte-identical, relabel scores `--check` fresh, 5/5 blind split re-sorts agree | pairs grade C (period gloss), as KEY.md says | `period` |
+| known-span test 48/55 = 0.873 | **reproduced** (fresh seeds: 2 x 2000 permuted keys, p95 0.455, max 0.618, 0/4000 at or above); **conservative figure 42/55 = 0.764** (0/2000) without the f.61-side SBS relabel, whose class naming was first scored on Tomokiyo's letters | test of the key, not a reading | `period` |
+| meter 20 / 59 / 20 | **recount reproduces 20/59/20 mechanically; does not hold as a grade statement.** 8 of the 20 firm tokens are C6 = e (three gloss tokens in about 4,000, and every one of the six C6 signs inside Tomokiyo's spans falls on his dash or is skipped: C6 is unread or a null on f.61, not a firm e). Defensible meter: **firm 12 / two-way+ 59 / unread-or-null 28**, and the 6 INF moves are a threshold effect (see below) | C6 tokens regraded I (inferred from 3 tokens, contradicted by the known answer) | `period` |
+| recovered passages outside Tomokiyo's spans | **none** | no French word is forced by firm letters anywhere (no run of 3 firm letters on the leaf); blind phrase control: the true key ranks 9 of 21 and passes the brief's rule no better than permuted keys (below) | -- |
+| Tomokiyo's five spans | his letters, our key agrees at 48/55 | N0-type for the plaintext: his published tentative reading (`sources/cryptiana/web/bnf4715.htm#no38`, img `BnFfr4715f61.png`) | `published` (his, credited) for the reading; `period` for our key |
+
+**Claim scope for f.61r: none** beyond "a period key rebuilt from the family's own decipherments reads Tomokiyo's five marked spans
+at 0.76-0.87 of letters against a permuted-key p95 of 0.40-0.46". No passage of the letter outside his spans is recovered. Nothing
+here is a reading of the letter.
+
+### 1. Reproduction
+
+`decode_period.py --key key_period_v4.tsv --frac 0.1 --sbs --check` fresh; `test_period_key.py --key key_period_v4.tsv
+--collapse-ebr --min 2 --frac 0.1 --sbs --perms 200 --check` fresh; `recode_split.py score --check` fresh; `merge_period_keys.py`
+re-run from the three per-leaf v4 files into scratch: identical to `key_period_v4.tsv` below the header. `verify_v4/repro.py`
+(the committed scorer's own functions, fresh seeds): 48/55 = 0.873; seed 20260928, 2000 keys: mean 0.324, p95 0.455, p99 0.545,
+max 0.618, 0/2000 at or above; seed 7331: mean 0.320, p95 0.455, max 0.618, 0/2000. The committed p95 0.436 and max 0.527 (200
+keys, seed 1) are a little low; the conclusion does not change. f.108r 65/84 is in the committed file (`--check` fresh), not
+re-run with other seeds.
+
+### 2. Leakage
+
+- **Key rows.** 459 rows: fr.3982 f.101r 267, fr.3984 f.188r/f.184r 169, fr.3984 f.274r 23. No row from f.61r or f.108r.
+- **Tile anchors.** Every anchor tile in `recode_split.py`'s PRIOR list (H65/H67 SBS, H69 4TRI, H70 VBAR, H77 LOOPS) is on
+  f.101r or f.188r (the tile files' `leaf` column). Group-to-class names on the anchors were set by the sister leaf's period letter.
+- **Where Tomokiyo's letters enter: the f.61 side, not the key.** f.61's own class boundaries came from blind shape sorts whose
+  group-to-cell naming was scored against his letters: H13/H15 (VBAR_A/VBAR_B) and H26 (SBS = the side-by-side loops). The whole
+  +5 of v4 over v3 comes from the `--sbs` relabel (`verify_v4/leak.py`: L03/13-15, L05/5, L08/5, L11/10 gained, L03/14 'e' lost).
+  The SBS boundary is independently backed on the sister leaves (H65: the period gloss writes o under the side-by-side glyph,
+  blind sort; this audit's blind f61 re-sort, below, puts f.61's G2 signs with the sister leaves' SBS form 7/7), so no letter
+  leaked into a cell. It is still a class decision first found on the test letters, so the figure for "the period key reads f.61
+  with no Tomokiyo information at all" is the no-relabel one. Ablations, 2000 fresh permutations each:
+
+  | variant | f.61 spans | perm p95 / max | >= key |
+  |---|---|---|---|
+  | v4 as committed | 48/55 = 0.873 | 0.455 / 0.618 | 0/2000 |
+  | without `--sbs` on f.61 | **42/55 = 0.764** | 0.455 / 0.655 | 0/2000 |
+  | SBS = b/o (its sort-artefact e removed) | 48/55 | 0.455 / 0.618 | 0/2000 |
+  | VBAR_A/VBAR_B merged on both sides | 48/55 | 0.473 / 0.673 | 0/2000 |
+  | VBAR_A, VBAR_B, SBS cells removed from the key | 36/55 = 0.655 | 0.400 / 0.600 | 0/2000 |
+
+  **Leakage: none into the key; one Tomokiyo-validated class decision on the f.61 side, worth 6 letters, independently backed.**
+- Scorer note: Tomokiyo's 'v' (avec, avance) is scored as a miss against INF = u (2 letters); with u = v the key reads 50/55.
+
+### 3. The relabel moves (blind re-sort, `verify_v4/split_sample.py`, one Opus vision call each, 5 calls)
+
+Tiles re-cut from the committed `family/recode` query sheets, reshuffled (seed 4), reference forms relabelled X/Y/Z at random;
+the family reader's answers and every letter withheld. Decoys from the other forms mixed in.
+
+| split | tiles agreeing with the v4 relabel | decoys |
+|---|---|---|
+| SBS (b/e/o) out of PHI | 10/10 | 5/5 |
+| PHI (e/r) trefoil | 10/10 | 5/5 |
+| INF (u), incl. LOOPS sorted INF | 10/10 | 5/5 |
+| 4TRI (c/p/t) vs 4HOOK (a/n) | 14/14 | -- |
+| f.61r's own loop signs: H26 G2 -> SBS (7), G1 -> PHI (5), against the sister leaves' reference forms | 12/12 | -- |
+
+**All five hold (>= 0.8); no cell graded down on this count.** Limits: the sample was drawn from tiles the family reader had
+placed (its "none" tiles excluded), and the reference forms are the runner's anchors, so this tests that the relabel is
+reproducible by a second blind reader, not that the anchor definitions are right. The f61 reader noted that f.61's hand is "a
+different hand or scan" with rounder loops, and still put every G2 sign with the sister leaves' side-by-side form.
+
+### 4. The meter (`verify_v4/meter.py`, `verify_v4/c6_check.py`)
+
+Recount from the committed decodes: v3 firm 14 (C 10, C+ 4) / M 65 / unread 20; v4 firm 20 (C 10, C+ 10) / M 59 / unread 20;
+M set sizes v4 two 36, three 18, four 3, seven 2. **The six signs that moved to firm** are all INF, u/e M -> u C+: L01/4,
+L05/10, L07/8, L08/4, L08/8, L10/8. Evidence: the tile sort (recode), not a period gloss and not print -- LOOPS tokens sorted as
+INF raise f.188r's INF total from 38 to 50, so its e (n 4) falls from 10.5% to 8% of the class, under the 0.1 rule; the e is
+still attested. f.101r's INF also carries h 10/156 (6%), and Tomokiyo's table cell is h/u. u is overwhelmingly the dominant
+value (f.101r 130/156, f.188r 31/50, f.274r 16/17), and Tomokiyo reads u/v at all five INF positions inside his spans, so C+ for
+u is defensible **as "u, h/e not excluded"**; it is not a new fact about the cipher.
+
+**The firm 20 by class:** C6 = e 8, INF = u 6, VBAR_B = s 4, ELOOP = r 2. C6 = e rests on 3 gloss tokens (f.101r 2, f.188r 1) in
+the family's ~4,000 aligned signs, yet f.61r writes C6 8 times in 99 signs; inside Tomokiyo's spans all six C6 positions are his
+dashes (5) or skipped by the alignment (1): L01/2, L03/11, L07/6, L08/3, L08/9, L05/12. He also dashed L10/12-13 ("a 6", audit
+1). A firm e there would give "eaeubeau" for his "ea-ubeau". **C6 on f.61 is regraded I (a null or an unread sign), not C.**
+ELOOP = r (2 tokens, L01/7, L03/3, outside the spans) rests on n = 2 of 7 on one leaf: kept firm under the key's own rule, but
+thin. So the meter, as a grade statement: **firm 12 (INF u 6, VBAR_B s 4, ELOOP r 2) / two-way-or-wider 59 / unread or null 28.**
+
+### 5. Reading in two-way form (`verify_v4/f61r_v4_twoway.txt`, `twoway.py --check`)
+
+Every line of f.61r under v4, with Tomokiyo's markup set under the signs of his five spans. His letters beside ours (T = his, sets
+= ours, * = no match): S1 "avec": a [a/n], v u*, e [e/r], c [c/p/t]. S2 "estcapable": e [e/r], s s, t [t/s], c [c/p/t], a [a/n],
+p [c/p/t], a [a/n], b [o/b/e], l [l/s/a]. S3 "tropavancees": t [t/s], r [e/r], o [o/b/e], p [c/p/t], a, v u*, a, n, c, e, e, s all
+in set. S4a "jalousi": j ZHOOK* (unread), a [m/s]*, l [l/s/a], o [o/b/e], u u, s s, i ZHOOK* (unread). S4b "eaubeaupere": all 11
+in set. S5 "melentenoit": m [m/s], e, l, e, n, t, e, n [d/a/q/n], o [o/b/e], i ZHOOK* (unread), t [t/s]. The seven misses: two v
+against u (S1, S3), three ZHOOK positions with no period pair (S4a j and i, S5 i), BETA against a (S4a), and S2's final e, which
+falls past the end of line L03's signs.
+
+**Outside the spans** (L01/7-12, L02, L03/1-3, L04, L07/1-2, L10): **no run of 3 or more firm letters exists anywhere on the
+leaf**, so no French word or phrase is forced by the firm letters alone, in any line. Blind control (`verify_v4/phrase_ctl.py`,
+one Opus text call on 21 renderings of that material -- the true sets and 20 keys with the sets permuted across f.61's classes,
+shuffled, key withheld; `verify_v4/phrase_result.txt`):
+
+- Mode (a), no choice inside any set: **0 items under the true key**; 1 in the 20 permuted ("sur", one permuted rendering).
+- Mode (b), choosing within sets: under the true key the reader listed 6 items, all short and at confidence 1-2 -- "rue" (L01/1-3),
+  "lors" (L10/1-4), "etre" (L10/3-6), "tres" (L10/4-7), "sur" (L10/7-9), "une" (L10/8-10), three of them by taking an unread
+  sign as a chosen letter. Each passes the brief's literal rule (at most 1 of 20 permuted renderings gives the same string).
+- **The rule has no power at this material.** Applied to each permuted rendering as if it were the true one, the same rule passes
+  3-7 items per rendering (mean 4.7; 3 of 20 at or above the true key's 6). Three permuted renderings give confidence-3 items the
+  true key does not ("ennemis" across L10/4-10, "rendre" across the whole of L01's tail, "quand"). The reader's own
+  French-likeness ranking puts the true rendering **9th of 21**.
+- So **no word or phrase outside Tomokiyo's spans is recovered**. The L10 stretch "etre/tres/sur" is the same material audit 1
+  held as "le tresur"; it stays a choice among sets, not a reading. (The rule-power line was added to `phrase_ctl.py score` after
+  the call and before this verdict; the call, its prompt and the rule itself were fixed beforehand.)
+
+### 6. What a completed reading still needs
+
+1. The **59 two-way (or wider) choices**, made with a control (audit 1's judge failed its gate on this leaf; H25 L10 3/3 FAIL;
+   the context route failed its control, H33/H57). Largest single sets: RSIGN (seven letters), 4STEM, 4PI, HASH4.
+2. The **five rare classes** CA, CROSS, LL, LOOPBAR, ZHOOK (20 of 99 signs) have no period pair: none of the glossed hands writes
+   them (rare_classes.tsv); plus **C6** (8 signs), which this audit moves to unread/null.
+3. The **person reads**: ASKS 88 (f.108r gloss, the pre-registered H107 prediction waiting on it) and ASKS 89; ASKS 93 (f.211r
+   glossed run) would add a held-out known answer.
+4. A period key sheet or decipherment of f.61 itself, if one exists (F61-FAMILY-7's fr.3641/fr.4699 leads).
+
+The runner's f.108v evidence (H85/H93/H94/H100-H103) was not re-audited here: it tests the f.61-fitted cell map, not key v4,
+and f.108v carries a sparse period gloss of its own (BnF "chiffre et déchiffrement"), so it is a partly known-answer check, to
+be weighed once that gloss is read.
+
+### Novelty
+
+The only plaintext on this leaf is Tomokiyo's own five spans (published, his tentative reading): for those, the plaintext is
+known (text: known) and our key's agreement with it is a test of the key. No passage outside the spans is recovered, so there is
+nothing to class; no N-class is assigned to the leaf and no SECOND-OPINIONS-QUEUE.tsv row is filed. A class for any future
+passage would need: the passage read at S or better with a control that a blind reader cannot pass on permuted keys, then the
+logged novelty search (CHECK-SOLVED-WEB in NOTES.md, 28 Sept, found no prior reading on the open web; still needed: the Mayenne
+correspondence editions and calendars for 1592-93, the BnF finding aid for fr.4715, Google Books/IA/HathiTrust phrase search on
+the passage, the open scholarship indexes, JSTOR rows) and a second adversarial audit before anything above N1 goes outward.
+
+**Safe sentence.** "A period key rebuilt from the interlinear decipherments of three sister leaves in the Mayenne cipher reads
+Tomokiyo's five marked spans on BnF fr. 4715 f.61r at 42-48 of 55 letters, against a permuted-key 95th percentile of about 25; no
+passage outside his spans can yet be read, and 59 of the leaf's 99 signs remain a choice between two or more letters."
+
+**Unsafe sentence.** "f.61r is now 20% read with firm letters and the rest two-way, so the letter is essentially recovered"
+(the firm share includes 8 C6 tokens contradicted by the known answer; no word outside the spans is forced; two-way sets are not
+readings).
+
+### Over-claims in the folder
+
+None corrected in NOTES.md or KEY.md (outside this brief's files). For the orchestrator: KEY.md "## v4" and ROOM 15:18 state the
+meter as firm 20; this section supersedes that figure with 12/59/28 as a grade statement. Their 0.873 stands with the 0.764
+conservative figure beside it.
+
+### Confidence
+
+Key v4's rows as period attestations: high. The known-span test as evidence that the key fits this cipher: high (0/4000 permuted
+keys; holds at 0.764 without the Tomokiyo-validated relabel). The meter as graded: moderate after the C6 regrade. Any reading of
+f.61r outside the spans: none exists.

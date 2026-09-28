@@ -49,6 +49,17 @@ def score():
     for mode, it, conf in items.get(true, []):
         n = sum(1 for l in key if l != true and any(norm(it) in norm(x) or norm(x) == norm(it) for _, x, _ in items.get(l, [])))
         out.append(f"  TRUE item ({mode}, conf {conf}) '{it}': found in {n}/20 permuted renderings -> {'RECOVERED' if n <= 1 else 'not recovered'}")
+    # rule-power control (added after the call, before the verdict): apply the same RECOVERED rule to each permuted
+    # rendering as if it were the true one; a rule that passes most permuted renderings too has no power here.
+    per = {}
+    for lab in key:
+        its = items.get(lab, []); rec = 0; best = 0
+        for mode, it, conf in its:
+            n = sum(1 for l in key if l != lab and any(norm(it) in norm(x) or norm(x) == norm(it) for _, x, _ in items.get(l, [])))
+            if n <= 1: rec += 1; best = max(best, int(conf) if conf.isdigit() else 0)
+        per[lab] = (rec, best)
+    pr = [per[l] for l in key if l != true]
+    out.append(f"rule-power control: true {true} 'recovered' {per[true][0]} (best conf {per[true][1]}); the 20 permuted renderings under the same rule: recovered " + " ".join(str(r) for r, _ in pr) + f" (mean {sum(r for r, _ in pr)/20:.1f}; {sum(1 for r, _ in pr if r >= per[true][0])}/20 at or above true); permuted renderings with a conf-3 item passing the rule: {sum(1 for _, b in pr if b == 3)}/20")
     rk = [r for r in rows if r["mode"] == "rank"]
     if rk: order = rk[0]["item"].split(); out.append(f"reader's French-likeness ranking: true at {order.index(true) + 1 if true in order else 'absent'} of {len(order)}")
     out.append(f"items with no choice (mode a) under true: {sum(1 for m, _, _ in items.get(true, []) if m == 'a')}; under the 20 permuted: {sum(1 for l in key if l != true for m, _, _ in items.get(l, []) if m == 'a')}")

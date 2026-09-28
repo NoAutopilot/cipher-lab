@@ -1,0 +1,10 @@
+true rendering = R12; reader listed items per rendering: R01:5 R02:5 R03:5 R04:5 R05:6 R06:6 R07:6 R08:5 R09:3 R10:5 R11:4 R12:6 R13:6 R14:6 R15:5 R16:7 R17:6 R18:4 R19:6 R20:6 R21:4
+  TRUE item (b, conf 1) 'rue': found in 1/20 permuted renderings -> RECOVERED
+  TRUE item (b, conf 2) 'lors': found in 0/20 permuted renderings -> RECOVERED
+  TRUE item (b, conf 2) 'etre': found in 1/20 permuted renderings -> RECOVERED
+  TRUE item (b, conf 2) 'tres': found in 0/20 permuted renderings -> RECOVERED
+  TRUE item (b, conf 2) 'sur': found in 1/20 permuted renderings -> RECOVERED
+  TRUE item (b, conf 2) 'une': found in 1/20 permuted renderings -> RECOVERED
+rule-power control: true R12 'recovered' 6 (best conf 2); the 20 permuted renderings under the same rule: recovered 3 4 5 5 5 6 5 4 3 5 4 4 5 5 7 6 4 5 5 3 (mean 4.7; 3/20 at or above true); permuted renderings with a conf-3 item passing the rule: 3/20
+reader's French-likeness ranking: true at 9 of 21
+items with no choice (mode a) under true: 0; under the 20 permuted: 1

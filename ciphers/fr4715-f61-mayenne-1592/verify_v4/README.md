@@ -23,3 +23,13 @@ Brief: `.claude/briefs/runs/2026-09-28-parent-verify-f61-v4.md`. Verdict: AUDIT.
   blind sort), so it is not a leak of letters; it is a class decision first found on the known spans, and the conservative
   figure for "the period key reads f.61 with no Tomokiyo information at all" is the no-relabel 42/55 = 0.764.
 - Scorer note: Tomokiyo's 'v' (avec, avance) is scored as a miss against INF = u; with u = v the key reads 50/55.
+
+## Steps 3-5 (16:1x-16:2x UTC)
+- Step 3, `split_sample.py` (5 Opus vision calls, prompts in PROMPTS.md pushed 08e31a63 before the calls): `split_result.txt` --
+  SBS 10/10, PHI 10/10, INF 10/10, 4TRI/4HOOK 14/14, f.61 G2/G1 against sister-leaf forms 12/12; decoys 15/15.
+- Step 4, `meter.py`, `c6_check.py`: 20/59/20 recounted; the 6 moves are INF u/e -> u (threshold: f.188r INF total 38 -> 50);
+  C6 = e (8 firm tokens, 3 gloss tokens) falls on Tomokiyo's dash or is skipped at all 6 span positions -> regraded I;
+  meter as graded 12 / 59 / 28.
+- Step 5, `twoway.py` -> `f61r_v4_twoway.txt` (no run of >= 3 firm letters on the leaf); `phrase_ctl.py` (1 Opus text call,
+  prompt pushed ce288ec1 before it) -> `phrase_result.txt`: true key 9th of 21, the rule passes 3-7 items on permuted keys too
+  (mean 4.7): nothing recovered outside the spans.

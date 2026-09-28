@@ -1,0 +1,113 @@
+label	mode	item	conf	note
+R01	b	vistes	1	L01 p1-6, ?=i
+R01	b	est	1	L10 p2-4, ?=e
+R01	b	son	1	L10 p5-7
+R01	b	que	2	L10 p8-10, ?=u
+R01	b	aide	1	L10 p7-10, ?=d
+R02	b	eus	1	L01 p1-3, ?=u
+R02	b	pose	1	L10 p1-4, ?=o
+R02	b	est	2	L10 p4-6
+R02	b	quant	2	L10 p7-11, ?=a
+R02	b	est quant a	2	L10 p4-13, p9 ?=a, p12 null
+R03	b	ces	1	L01 p1-3, ?=e
+R03	b	les	2	L10 p1-3, ?=e
+R03	b	mer	1	L10 p6-8
+R03	b	peut	2	L10 p10-13, ?=u
+R03	b	cest	1	L10 p10-13, ?=s
+R04	b	nest	2	L01 p3-6
+R04	b	on nest	2	L01 p1-6, ?=n
+R04	b	quand	3	L10 p1-5, ?=u
+R04	b	recu	2	L10 p7-10, ?=c (receu/recu)
+R04	b	scu	1	L10 p11-13, ?=c (old su)
+R05	b	les	1	L01 p1-3, ?=e
+R05	b	lasse	1	L01 p1-5, ?=a
+R05	b	est	1	L10 p1-3, ?=s
+R05	b	tas	1	L10 p5-7
+R05	b	bien	2	L10 p8-11, ?=i
+R05	b	as bien	1	L10 p6-11, ?=i
+R06	b	dans	2	L01 p1-4, ?=a
+R06	b	danse	1	L01 p1-5, ?=a
+R06	b	mot	1	L01 p4-6
+R06	b	sans	2	L10 p1-4, ?=a
+R06	b	sage	1	L10 p7-10, ?=g
+R06	b	meme	1	L10 p9-13, p9 ?=m, p12 null
+R07	b	quel	2	L01 p1-4, ?=u
+R07	b	quele	1	L01 p1-5, ?=u
+R07	b	ame	1	L01 p4-6
+R07	b	est	2	L10 p3-5
+R07	b	repas	1	L10 p1-5, ?=e
+R07	b	etre	2	L10 p10-13, ?=r
+R08	b	est	2	L01 p1-3, ?=s
+R08	b	aie	1	L01 p4-6
+R08	b	ses	1	L10 p3-5
+R08	b	rend	2	L10 p7-10, ?=n
+R08	b	rends	2	L10 p7-11, ?=n
+R09	b	rendre	3	L01 p1-6, ?=e
+R09	b	are	1	L10 p5-7
+R09	b	recus	2	L10 p6-10, ?=u
+R10	b	une	2	L01 p3-5
+R10	b	scu	1	L01 p1-3, ?=c
+R10	b	peu	2	L10 p1-3, ?=e
+R10	b	nus	1	L10 p4-6
+R10	b	sot	1	L10 p11-13, ?=o
+R11	b	rime	1	L01 p1-5, ?=null
+R11	b	existe	1	L01 p1-6, ?=x
+R11	b	avis	2	L10 p1-4, ?=u
+R11	b	estes	1	L10 p8-13, p9 null, p12=e
+R12	b	rue	1	L01 p1-3, ?=u
+R12	b	lors	2	L10 p1-4, ?=o
+R12	b	etre	2	L10 p3-6
+R12	b	tres	2	L10 p4-7
+R12	b	sur	2	L10 p7-9, ?=r
+R12	b	une	2	L10 p8-10, ?=n
+R13	a	sur	2	L01 p4-6 fixed
+R13	b	mot	1	L01 p1-3, ?=o
+R13	b	est	1	L10 p1-3, ?=s
+R13	b	des	1	L10 p7-10, p9 null, p10 s
+R13	b	elle	2	L10 p10-13, ?=l
+R13	b	de celle	2	L10 p7-13, p9 ?=c, p12 ?=l
+R14	b	vos	1	L01 p1-3, ?=o
+R14	b	case	1	L10 p1-4, ?=a
+R14	b	des	1	L10 p8-10, ?=e
+R14	b	sans	2	L10 p10-13, ?=n
+R14	b	tant	2	L10 p10-13, ?=n
+R14	b	de tant	2	L10 p8-13, p9 ?=e, p12 ?=n
+R15	b	prise	1	L01 p2-6, ?=p
+R15	b	par	2	L10 p1-3, ?=a
+R15	b	paris	1	L10 p1-5, ?=a
+R15	b	par des	2	L10 p1-6, ?=a
+R15	b	estes	1	L10 p9-13, ?=e both
+R16	b	bois	1	L01 p1-4, ?=o
+R16	b	oui	1	L01 p1-3, ?=u
+R16	b	sien	2	L10 p4-7
+R16	b	tient	2	L10 p4-8
+R16	b	roi tient	2	L10 p1-8, ?=o
+R16	b	roi tient ses	2	L10 p1-13, p9 p12 null
+R16	b	mes	1	L10 p10-13, ?=null
+R17	b	ton	1	L01 p1-3, ?=o
+R17	b	coqs	1	L01 p3-6
+R17	b	mon	2	L10 p1-3, ?=o
+R17	b	ennemis	3	L10 p4-10, ?=i (or ennemys)
+R17	b	son ennemi	2	L10 p1-9, p2 ?=o, p9 ?=i
+R17	b	nos	1	L10 p11-13, ?=o
+R18	b	tend	2	L10 p5-8
+R18	b	trait	2	L10 p5-9, ?=t
+R18	b	pend	1	L10 p5-8
+R18	b	dont	1	L10 p8-11, ?=o
+R19	b	repand	1	L01 p1-6, ?=e
+R19	b	entand	1	L01 p1-6, ?=n
+R19	b	est	1	L01 p1-3, ?=s
+R19	b	estat	2	L10 p1-5, ?=s
+R19	b	crue	1	L10 p5-8
+R19	b	bon	1	L10 p8-10, ?=o
+R20	b	ete	1	L01 p1-3, ?=t
+R20	b	que	2	L10 p1-3, ?=u
+R20	b	debte	1	L10 p1-5, ?=e
+R20	b	opera	1	L10 p3-7
+R20	b	arme	1	L10 p7-10, ?=m
+R20	b	terre	2	L10 p9-13, ?=t, ?=r
+R21	b	sus	1	L01 p3-5
+R21	b	est	1	L10 p1-3, ?=s
+R21	b	tel	1	L10 p5-7
+R21	b	non	1	L10 p10-13, ?=null
+ALL	rank	R17 R09 R04 R16 R02 R13 R14 R15 R12 R07 R20 R03 R06 R19 R05 R18 R11 R08 R01 R10 R21	-	-
