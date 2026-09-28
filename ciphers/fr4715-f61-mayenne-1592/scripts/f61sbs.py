@@ -19,13 +19,13 @@ period attestation (grade C) for the family worker to merge; a FAIL leaves SBS b
   python3 scripts/f61sbs.py build NATIVE_DIR     # tiles + sheets + scripts/f61sbs_tiles.tsv (answer key, not shown)
   python3 scripts/f61sbs.py score read_call_SBS.tsv [--check]
   python3 scripts/f61sbs.py build-b NATIVE_DIR ; python3 scripts/f61sbs.py score-b read_call_SBSB.tsv [--check]   (H67)
-  python3 scripts/f61sbs.py build-pair NATIVE_DIR 4TRI a,n c,p 69 h69 ; python3 scripts/f61sbs.py score-pair h69 read_call_H69.tsv [--check]   (H69-H71)
+  python3 scripts/f61sbs.py build-pair NATIVE_DIR 4TRI a,n c,p 69 h69 [CAP=10] ; python3 scripts/f61sbs.py score-pair h69 read_call_H69.tsv [--check]   (H69-H71)
 """
 import csv, difflib, itertools, json, math, os, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); TGT = os.path.dirname(HERE); FAM = f"{TGT}/family"
 LEAVES = [("f101r", "3982_f101r.jpg"), ("f274", "3984_f274r.jpg"), ("f188r", "3984_f188r.jpg")]
-LETS = ("o", "e"); CLS = "PHI"
+LETS = ("o", "e"); CLS = "PHI"; RX, RY = 30, (-15, 45)   # re-centring window (H65-H69); H70 narrows it (--rc)
 def rows(p): return list(csv.DictReader(open(p), delimiter="\t"))
 def tokens(leaf):
     al = rows(f"{FAM}/passes/{leaf}_align.tsv"); dr = rows(f"{FAM}/passes/rec{leaf}/ciphertext_draft.tsv")
@@ -64,8 +64,8 @@ def cut(pick, native, tag, keyname, sheet_name="sbs_sheet"):
         sc, up, down = bj["scale"], bj["up"], bj["down"]; cx = box[0] + x / sc; cy = box[1] + up
         img = ims.setdefault(lf, Image.open(f"{native}/{dict(LEAVES)[lf]}").convert("RGB"))
         import numpy as np   # re-centre on the heaviest ink row within +-45 px of the band centre, x +-30 (rows drift down the page)
-        g = np.asarray(img.crop((int(cx - 30), int(cy - 15), int(cx + 30), int(cy + 45))).convert("L")); pr = np.convolve((g < 140).sum(axis=1), np.ones(9) / 9, "same")
-        cy = cy - 15 + int(pr.argmax())
+        g = np.asarray(img.crop((int(cx - RX), int(cy + RY[0]), int(cx + RX), int(cy + RY[1]))).convert("L")); pr = np.convolve((g < 140).sum(axis=1), np.ones(9) / 9, "same")
+        cy = cy + RY[0] + int(pr.argmax())
         t = img.crop((int(cx - 55), int(cy - 40), int(cx + 55), int(cy + 55))).resize((330, 285))
         d = ImageDraw.Draw(t); d.line([(165, 0), (165, 14)], fill=(220, 0, 0), width=3); d.line([(165, t.height - 14), (165, t.height)], fill=(220, 0, 0), width=3)
         tiles.append((n, lf, L, pos, let, seg, x, t))
@@ -203,8 +203,10 @@ def score_pair(tag, path):
         ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt)
 if __name__ == "__main__":
+    if "--rc" in sys.argv:   # --rc RX,RY0,RY1
+        v = [int(x) for x in sys.argv.pop(sys.argv.index("--rc") + 1).split(",")]; sys.argv.remove("--rc"); RX, RY = v[0], (v[1], v[2])
     if sys.argv[1] == "build-pair":   # build-pair NATIVE CLASS a,n c,p SEED TAG
-        build_pair(sys.argv[2], sys.argv[3], sys.argv[4].split(","), sys.argv[5].split(","), int(sys.argv[6]), sys.argv[7]); sys.exit(0)
+        build_pair(sys.argv[2], sys.argv[3], sys.argv[4].split(","), sys.argv[5].split(","), int(sys.argv[6]), sys.argv[7], int(sys.argv[8]) if len(sys.argv) > 8 else 10); sys.exit(0)
     if sys.argv[1] == "score-pair":   # score-pair TAG read_call.tsv [--check]
         score_pair(sys.argv[2], sys.argv[3]); sys.exit(0)
     {"build": lambda: build(sys.argv[2]), "score": lambda: score(sys.argv[2]), "build-b": lambda: build_b(sys.argv[2]), "score-b": lambda: score_b(sys.argv[2])}[sys.argv[1]]()
