@@ -1,0 +1,84 @@
+== SET-01
+L02: [c/p]
+L04: 
+L10: [i/x] [c/p] [a/n] [c/p] [h/u] [f/s] [l/y] [h/u]
+== SET-02
+L02: [i/x]
+L04: 
+L10: [h/u] [i/x] [a/n] [i/x] [c/p] [e/r] [l/y] [c/p]
+== SET-03
+L02: [g/t]
+L04: 
+L10: [f/s] [g/t] [c/p] [g/t] [i/x] [b/o] [h/u] [i/x]
+== SET-04
+L02: [a/n]
+L04: 
+L10: [l/y] [a/n] [e/r] [a/n] [i/x] [h/u] [g/t] [i/x]
+== SET-05
+L02: [e/r]
+L04: 
+L10: [l/y] [e/r] [g/t] [e/r] [b/o] [f/s] [h/u] [b/o]
+== SET-06
+L02: [c/p]
+L04: 
+L10: [g/t] [c/p] [i/x] [c/p] [h/u] [e/r] [f/s] [h/u]
+== SET-07
+L02: [l/y]
+L04: 
+L10: [c/p] [l/y] [b/o] [l/y] [a/n] [f/s] [h/u] [a/n]
+== SET-08
+L02: [h/u]
+L04: 
+L10: [f/s] [h/u] [c/p] [h/u] [g/t] [l/y] [i/x] [g/t]
+== SET-09
+L02: [i/x]
+L04: 
+L10: [b/o] [i/x] [a/n] [i/x] [e/r] [f/s] [l/y] [e/r]
+== SET-10
+L02: [g/t]
+L04: 
+L10: [c/p] [g/t] [i/x] [g/t] [f/s] [h/u] [a/n] [f/s]
+== SET-11
+L02: [e/r]
+L04: 
+L10: [c/p] [e/r] [g/t] [e/r] [a/n] [i/x] [h/u] [a/n]
+== SET-12
+L02: [h/u]
+L04: 
+L10: [i/x] [h/u] [g/t] [h/u] [f/s] [a/n] [l/y] [f/s]
+== SET-13
+L02: [e/r]
+L04: 
+L10: [g/t] [e/r] [c/p] [e/r] [i/x] [l/y] [f/s] [i/x]
+== SET-14
+L02: [a/n]
+L04: 
+L10: [i/x] [a/n] [l/y] [a/n] [e/r] [c/p] [f/s] [e/r]
+== SET-15
+L02: [i/x]
+L04: 
+L10: [b/o] [i/x] [g/t] [i/x] [e/r] [f/s] [a/n] [e/r]
+== SET-16
+L02: [e/r]
+L04: 
+L10: [l/y] [e/r] [i/x] [e/r] [c/p] [b/o] [a/n] [c/p]
+== SET-17
+L02: [b/o]
+L04: 
+L10: [g/t] [b/o] [a/n] [b/o] [l/y] [c/p] [i/x] [l/y]
+== SET-18
+L02: [l/y]
+L04: 
+L10: [g/t] [l/y] [c/p] [l/y] [e/r] [i/x] [h/u] [e/r]
+== SET-19
+L02: [f/s]
+L04: 
+L10: [i/x] [f/s] [g/t] [f/s] [l/y] [h/u] [a/n] [l/y]
+== SET-20
+L02: [c/p]
+L04: 
+L10: [l/y] [c/p] [a/n] [c/p] [h/u] [i/x] [b/o] [h/u]
+== SET-21
+L02: [i/x]
+L04: 
+L10: [g/t] [i/x] [a/n] [i/x] [l/y] [c/p] [e/r] [l/y]
