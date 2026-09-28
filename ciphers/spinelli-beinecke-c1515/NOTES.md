@@ -1655,7 +1655,7 @@ fault is the snap-to-nearest-line step, not the seeding; a `--deskew` option (gl
 cross-correlation, then the flat finder -- `passes/p2x_cut.py` is the worked version) would have made this step one
 command and would serve every sloped plain page (H21's pl24/pl29 read 56/42 percent under flat bands).
 
-## Campaign step H33e (28 Sept 2026, 05:49-06:0x UTC)
+## Campaign step H33e (28 Sept 2026, 05:49-05:53 UTC)
 
 Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H33e, two halves: (a) settle the G/H disagreement columns of
 the p.[2] upper plain block with a third Opus pass as reconciler; (b) the control H33d could not run -- the same 11
@@ -1714,6 +1714,6 @@ from `passes/p2x_cut.py` with the cleaning skipped and are not committed: folder
 calls (about 306k tokens) plus this runner's turns -- recorded as 4.0 USD (the est). No requests for the step
 itself; 2 reachability probes at its close (below). No credentials, no AskUserQuestion, no other target touched.
 
-**Host probes at close-out (28 Sept 2026, about 06:00 UTC, 1 request each):** `web.archive.org/cdx/search/cdx`
+**Host probes at close-out (28 Sept 2026, 05:52 UTC clock read, 1 request each):** `web.archive.org/cdx/search/cdx`
 answers HTTP 200 with rows (the Internet Archive is back from the 00:29 UTC "Temporarily Offline" that parked H6),
 and `istina.msu.ru` answers HTTP 200 (it timed out at 00:29). H6 and H8's `needs` cells flip to nobody.
