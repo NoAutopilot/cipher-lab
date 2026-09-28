@@ -16,6 +16,7 @@ shuffled (seed N); classes outside the map are dropped, as in H25. Gate: control
 in all three calls. A FAIL of the control stops the step (the target files are not built).
 """
 import csv, json, os, random, sys
+SWAP = "--swap" in sys.argv   # H100 (28 Sept 2026): one-swap hard null; without it every earlier build is unchanged
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
 from f61crib import load_read
 from f61crib4 import split_lines
@@ -36,9 +37,14 @@ def lines(tag):
     return out
 def build(tag, seed):
     C = cells(); labs = sorted(C); rng = random.Random(seed); ms = [dict(C)]
-    for _ in range(20):
-        v = [C[l] for l in labs]; rng.shuffle(v); ms.append(dict(zip(labs, v)))
-    order = list(range(21)); random.Random(seed).shuffle(order); L = lines(tag); name = f"{tag}_s{seed}"
+    if SWAP:   # H100: 20 near-miss maps, each the fitted map with ONE swap of two classes whose cells differ (distinct swaps)
+        pairs = [(a, b) for i, a in enumerate(labs) for b in labs[i + 1:] if C[a] != C[b]]; rng.shuffle(pairs)
+        for a, b in pairs[:20]:
+            m = dict(C); m[a], m[b] = C[b], C[a]; ms.append(m)
+    else:
+        for _ in range(20):
+            v = [C[l] for l in labs]; rng.shuffle(v); ms.append(dict(zip(labs, v)))
+    order = list(range(21)); random.Random(seed).shuffle(order); L = lines(tag); name = f"{tag}_{'swap' if SWAP else ''}s{seed}"
     key, txt = {}, []
     for k, mi in enumerate(order):
         lab = f"SET-{k+1:02d}"; key[lab] = mi; txt.append(f"== {lab}")
