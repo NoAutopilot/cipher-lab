@@ -1,0 +1,4 @@
+aligned known letters 82; covered with the true letter in the pair 76
+(ii) beam choice accuracy 69/76 = 0.908; always-first-letter 40/76 = 0.526; chance 0.5
+(i) letters matched: fitted 69; permuted median 3, p95 15, max 27 (200 maps, seed 116; positions from the fitted alignment)
+GATE H116 ((ii) >= 0.75 and (i) > p95): PASS

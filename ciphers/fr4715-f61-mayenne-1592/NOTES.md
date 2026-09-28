@@ -2593,3 +2593,18 @@ Not a reading: a model-free resolution of two-way pairs under a cell map that H1
 within-pair accuracy of about 0.78 on known text (H116). For H64 only, and only after the person's gloss is in: the H34 model
 gloss readers' unverified words for these rows (NOTES H34: "misere" over L04, "quinze mois" over L05; 0.344 exact on known
 rows) are to be compared then, not now. No class change.
+
+## Campaign step H121 (28 Sept 2026, 18:22-18:23 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_known.py --f108r` (option pushed c0cf6b94 before the run; `f61beam_known_108r_result.txt`; the result
+file prints the shared gate's name "H116"): the H116 method on Tomokiyo's printed overlay of f.108r L02/L03 (84 letters;
+lines as f61joint.py builds them, H51 relabel, 14-cell map).
+
+- 82 known letters aligned; 76 on covered signs whose pair holds the true letter.
+- **Beam within-pair choice accuracy 69/76 = 0.908** (always-first-letter 40/76 = 0.526; chance 0.5).
+- Letters matched: fitted 69 vs 200 permuted maps median 3, p95 15, max 27 -> **gate PASS**.
+
+With H116 (f.61 spans, 38/49 = 0.776), the beam's two-way choices are right 107/125 = 0.856 over both known texts in this
+cipher. Same caveat as H116: the cells were fitted partly on these letters; the choice within a cell was not. This makes
+the beam a controlled instrument for the within-pair choices wherever the cell map holds and the text is long enough to
+give it context (it failed on key v4's short, wide-set segments, H117). No reading, no class change.
