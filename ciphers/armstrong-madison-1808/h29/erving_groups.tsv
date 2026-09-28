@@ -1,4 +1,23 @@
 frame	crop	pos	group	gloss	conf	we028	match	note
+f0741R	3	1	1385	the	high	the	exact	-
+f0741R	3	2	1044	con	high	con	exact	con-duct split across two groups
+f0741R	3	3	1280	duct	high	duct	exact	con-duct split across two groups
+f0741R	3	4	1576	of	high	of	exact	-
+f0741R	3	5	1385	the	high	the	exact	-
+f0741R	3	6	995	french	high	french	exact	-
+f0741R	4	1	28	-	high	opportunity	nogloss	paragraph number at line start, no interlinear gloss
+f0741R	23	1	1385	the	high	the	exact	-
+f0741R	23	2	995	french	high	french	exact	-
+f0741R	23	3	1229	govern	high	govern	exact	govern-ment split across two groups
+f0741R	23	4	637	ment	high	ment	exact	govern-ment split across two groups
+f0741R	23	5	1106	will	high	pan	miss	-
+f0741R	23	6	1365	take	high	take	exact	-
+f0741R	25	1	1094	she	high	she	exact	-
+f0741R	26	1	1385	the	high	the	exact	-
+f0741R	26	2	835	dic	high	die	miss	dic-tation split across two groups
+f0741R	26	3	1369	tation	high	tation	exact	dic-tation split across two groups
+f0741R	26	4	1576	of	high	of	exact	-
+f0741R	26	5	992	france	high	france	exact	-
 f0742R	1	1	900	-	low	-	nogloss	gloss cut at top page edge
 f0742R	1	2	660	and	medium	yoke	miss	
 f0742R	1	3	1385	the	medium	the	exact	

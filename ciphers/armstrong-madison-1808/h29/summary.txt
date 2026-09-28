@@ -1,7 +1,7 @@
 duplicate bands dropped: [('f0743L', 14, 6)]
-groups read 170 (per frame: f0741R 0, f0742L 0, f0742R 104, f0743L 66)
-digits clean 169, unread digit 1, value not in WE028 (>1596 or 0) 1
-glossed 139: exact 72, partial 7, shifted to a neighbour 8, miss 52; no gloss 29
-distinct values 117, values >= 100: 160 tokens, units 0/1 share 0.250, units 2/3/5/9 share 0.406, max value 7229
-top values: 569x7, 1385x6, 1379x5, 134x4, 1426x4, 854x3, 501x3, 9x3, 169x3, 182x3, 1384x3, 1310x3
-design_stats: N=169 D=117 D/N=0.692 low_share=0.053 low_distinct=6 hi_distinct=111 units_top1=0.175 units_top2=0.306 units_H=3.193 units_digit0_share=0.119 decades_occupied=77 decade_multi_frac=0.325 variants_per_decade=1.442 decade_units_modal=0.642 decade_units_null=0.403 decade_units_z=7.076 decade_units_rows=19 block_min=0 block_median=8 block_trough=0.000 block_pair_min=4 freqpos_jsd=0.012 top10_share=0.243 top10_pos_sd=0.335 onepart_dist=0.305 digit_order_rho=0.150 digits23_share=0.149 gap_median=502 gap_median_shuffled=562 gap_small_frac=0.018 gap_small_frac_shuffled=0.030
+groups read 189 (per frame: f0741R 19, f0742L 0, f0742R 104, f0743L 66)
+digits clean 188, unread digit 1, value not in WE028 (>1596 or 0) 1
+glossed 157: exact 88, partial 7, shifted to a neighbour 8, miss 54; no gloss 30
+distinct values 124, values >= 100: 178 tokens, units 0/1 share 0.230, units 2/3/5/9 share 0.427, max value 7229
+top values: 1385x10, 569x7, 1379x5, 1576x4, 134x4, 1426x4, 995x3, 1229x3, 637x3, 854x3, 501x3, 9x3
+design_stats: N=188 D=124 D/N=0.660 low_share=0.053 low_distinct=6 hi_distinct=118 units_top1=0.169 units_top2=0.303 units_H=3.184 units_digit0_share=0.112 decades_occupied=79 decade_multi_frac=0.342 variants_per_decade=1.494 decade_units_modal=0.649 decade_units_null=0.402 decade_units_z=8.649 decade_units_rows=24 block_min=0 block_median=10 block_trough=0.000 block_pair_min=6 freqpos_jsd=0.012 top10_share=0.245 top10_pos_sd=0.275 onepart_dist=0.419 digit_order_rho=-0.083 digits23_share=0.139 gap_median=497 gap_median_shuffled=558 gap_small_frac=0.016 gap_small_frac_shuffled=0.016
