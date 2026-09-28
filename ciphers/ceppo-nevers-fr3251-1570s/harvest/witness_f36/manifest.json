@@ -1,0 +1,72 @@
+[
+ {
+  "file": "c37_f36r_cipher.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f37/pct:59,49,36,36/full/0/native.jpg",
+  "bytes": 1077575,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "c38_f36v_mid.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f38/pct:7,45,46,13/full/0/native.jpg",
+  "bytes": 478430,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "c38_f36v_top.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f38/pct:7,11,46,18/full/0/native.jpg",
+  "bytes": 579317,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "c38_f37r_cipher.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f38/pct:57,54,37,7/full/0/native.jpg",
+  "bytes": 215527,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "c38_slip.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f38/pct:51,68,8,17/full/0/native.jpg",
+  "bytes": 105796,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "c38_slip_wide.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f38/pct:50,66,12,21/full/0/native.jpg",
+  "bytes": 188091,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "overview_c36.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f36/full/1400,/0/native.jpg",
+  "bytes": 191552,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "overview_c37.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f37/full/1400,/0/native.jpg",
+  "bytes": 264472,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "overview_c38.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f38/full/1400,/0/native.jpg",
+  "bytes": 286927,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ },
+ {
+  "file": "overview_c39.jpg",
+  "shelfmark": "fr.3252",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f39/full/1400,/0/native.jpg",
+  "bytes": 214795,
+  "fetched": "2026-09-28 20:17-20:35 UTC"
+ }
+]
