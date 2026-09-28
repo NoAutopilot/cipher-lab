@@ -611,3 +611,19 @@ outside.
 
 **Cost:** 2 Sonnet vision calls plus this runner's turn -- recorded as 1.5 USD (est 2.5). No network requests.
 No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H6 (28 Sept 2026, 00:28-00:30 UTC) -- not testable this hour
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H6: a Wayback Machine snapshot of Domnina's PDF
+(`istina.msu.ru/media/publications/article/a81/378/11992054/Domnina_Spinelli_cipher_EnglishRussian_-_kopiya.pdf`,
+the URL `henryvii.htm` links; live 404 to INTAKE-SPINELLI on 27 Sept).
+
+**Result: untestable at 00:29 UTC** -- `web.archive.org/cdx/search/cdx` answered every query (the exact URL, the
+`.../11992054/*` prefix) with the Internet Archive's own "Temporarily Offline" page instead of the index, and the
+third CDX query plus one live request to the istina publication page (`istina.msu.ru/publications/article/11992054/`,
+a different URL from the file, allowed as this step's one istina request) both timed out with no response (curl 28,
+HTTP 000). Nothing was learned about whether a snapshot exists. Requests: web.archive.org 3, istina.msu.ru 1.
+H6 goes to a `needs: doc` branch ("web.archive.org back online") rather than being re-run every firing against an
+offline host (good-citizen rule: no retry loop); the next runner that finds IA answering flips it back to `nobody`.
+
+**Cost:** four curl calls -- recorded as 0.2 USD (est 0.5). No credentials, no AskUserQuestion, no other target touched.
