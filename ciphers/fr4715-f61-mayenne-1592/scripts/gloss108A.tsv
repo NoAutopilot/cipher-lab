@@ -1,0 +1,26 @@
+sheet	segment	x_start	x_end	word	conf	note
+f108sheetB_L03.jpg	1	1460	1800	auue	l	cursive minims, letters uncertain; could be "auec"/"cuide" (open-a + 2-3 minim humps + rising stroke merging into cipher loop)
+f108sheetB_L03.jpg	2	300	610	sont	l	ascender + minims + loop; letters uncertain, could be "font"/"sont"
+f108sheetB_L03.jpg	2	730	900	p	m	abbreviated secretary "p" with loop through descender; likely "pour" or "par" abbreviation
+f108sheetB_L03.jpg	2	1080	1350	min	l	zigzag minim strokes above cipher sign, uncertain (m/n/u ambiguous), recurs with similar shape on L05
+f108sheetB_L03.jpg	3	0	350	camo	l	cursive fragment right at start of segment 3, ascender tip visible at very bottom of the segment2/3 divider bar (checked - nothing legible above the bar itself); letters uncertain, possibly "l'an"/"lano"/a name
+f108sheetB_L03.jpg	3	1580	2100	seruict	m	long-s + minims + clear "ct" ligature at end; earlier letters less certain, plausible "seruict" (service)
+f108sheetB_L03.jpg	4	80	1550	Jncompudite	l	long cursive run spanning most of the segment; initial capital ambiguous (I/J/pilcrow), "D"-like loop mid-word uncertain, could be a name or "incongneue"
+f108sheetB_L05.jpg	2	0	260	on	h	clear "on"
+f108sheetB_L05.jpg	2	600	750	J	l	isolated capital flourish, cut at top edge of its own crop; letter identity uncertain (J/S/pilcrow)
+f108sheetB_L05.jpg	2	1300	1550	min	l	zigzag minim strokes above cipher loop, same uncertain shape as L03 seg2
+f108sheetB_L05.jpg	2	2320	2500	on	m	similar "on"/"ou" shape, slightly less clear than the first instance
+f108sheetB_L05.jpg	3	550	650	u-tilde	l	vowel/hump with a horizontal nasal-abbreviation bar above; likely stands for "un"
+f108sheetB_L05.jpg	3	700	1420	poccla	l	cursive run before "touche", letters uncertain throughout
+f108sheetB_L05.jpg	3	1420	2100	touche	h	clear cursive "touche"
+f108sheetB_L05.jpg	4	109	761	faict	h	clear, common period spelling "faict" (fait)
+f108sheetB_L06.jpg	1	1525	1745	Et	h	clear "Et" with crossbar t
+f108sheetB_L06.jpg	1	1745	2100	pour	m	p+round o loop + ur cursive tail; plausibly "pour"
+f108sheetB_L06.jpg	1	2519	2700	J..	l	capital loop cut at the very right edge of segment 1 (true x-boundary with segment 2); likely continues as the fragment reported at the start of segment 2 below
+f108sheetB_L06.jpg	2	40	260	za	l	continuation of the segment-1/segment-2 boundary word above; letters uncertain
+f108sheetB_L06.jpg	2	550	1450	dautant	m	cursive run; "ct"-like shape probably a "ta" ligature; reads plausibly as "d'autant"
+f108sheetB_L06.jpg	2	1550	1850	que	h	clear "que"
+f108sheetB_L06.jpg	3	0	450	dictes	m	d + i(dot) + c + t(crossbar) + minims + s; plausible "dictes" (say/said)
+f108sheetB_L07.jpg	2	1230	1850	Toyonne	l	capital + "oyonne" cursive loops; letter identities uncertain, possibly a name (cf. "Joyeuse") or a place ending "-onne"
+f108sheetB_L07.jpg	3	276	798	leur	h	clear "leur" (their)
+f108sheetB_L07.jpg	4	906	1196	faict	m	zigzag + tall final stroke matching the "faict" pattern seen elsewhere, less crisp here

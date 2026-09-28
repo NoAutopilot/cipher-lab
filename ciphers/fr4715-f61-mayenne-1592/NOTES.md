@@ -898,3 +898,30 @@ absence rule is noted as too strict for a two-leaf set and left as written rathe
 class change. The atlas (`scripts/f61_atlas.tsv`) now carries EBR_A, EBR_B and ISH; passes before this date used EBR.
 No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H21 (2026-09-28 01:20 UTC) -- FAIL, the runner's crop design
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). Four calls, all prompts in `scripts/PROMPTS.md` before the
+calls: two Sonnet gloss passes (about 253k and 183k subagent tokens, slow: 23 and 15 minutes) and two Opus sign passes
+of bands L05-L07 (96k each). Hypothesis H21 (F61-GLOSS): the period interlinear decipherment on fr.3983 f.108r as a
+grade-C key source, by the Thurloe method.
+
+**What came back (`scripts/gloss108A.tsv`, `gloss108B.tsv`, `pass108C_classes.tsv`, `pass108D_classes.tsv`, verbatim).**
+Gloss: both passes find nothing above band L02 -- because the gloss of cipher line 1 ("satisfaire ... ung seul au
+prejudice de plusieurs") is band L01, cut as its own band above the cipher and never named in the prompt; on L03 the
+two passes agree on 1 of 7 words, on L05 on 1, on L07 on 0, and the 7 "gloss" words of L06 in pass A are the clear
+main-line clause ("Et ... d'autant que dictes"), which pass B correctly files as main line. Signs: L05 26 and L06 19 in
+both passes, L07 35 in both with both readers stating the band is cropped below the line's middle; agreement 44/82 =
+53.7% over the three (a systematic PHI/DBL split on L05 -- the audit's "qo" question again -- plus the unreadable L07).
+
+**Alignment (`scripts/f61gloss.py`, pre-registered a8310c2f; `f61gloss_result.txt`).** With 11 reconciled words the
+counts (`scripts/f61gloss_counts.tsv`) reach 2 on no class the map already has and agree with none of the nine cells;
+**FAIL as pre-registered**, and the script was guarded afterwards so that a failed run writes its counts to `scripts/`,
+never a file under `keys/` (the first run's `keys/key_f108_gloss.tsv` was deleted before commit). No key, no reading,
+no class change.
+
+**Cause and next step.** The failure is the runner's: `tools/iiif_lines.py`'s bands at pitch 96 separate each gloss row
+from its cipher line, which the family worker met on f.274 and solved with `family/cut_bands.py` (a band per cipher row,
+tall enough to hold its gloss, per-segment centres) -- H34 repeats H21 that way, ranked behind the family's f.101r
+(H28, about 60 interlined lines) and f.108v rows. The L05/L06 sign passes stay on disk for that step. Requests: none.
+No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+

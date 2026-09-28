@@ -76,8 +76,11 @@ def main():
     for r in csv.DictReader(open(f"{d}/align.tsv"), delimiter="\t"):
         if r["kind"] == "code" and r["plain_chunk"]:
             counts[r["value"]][r["plain_chunk"]] += 1; bands[r["value"]].add(r["cipher_line"])
-    os.makedirs(f"{HERE}/../keys", exist_ok=True)
-    with open(f"{HERE}/../keys/key_f108_gloss.tsv", "w") as f:
+    # guard added after the first run (28 Sept 01:1x): the counts go to scripts/f61gloss_counts.tsv; keys/key_f108_gloss.tsv is
+    # written only when the gate below passes, so a failed run never leaves a file that looks like a key.
+    passed = all((lambda cnt: bool([l for l, _ in cnt.most_common(2)]) and all(l in cell.split("/") for l, _ in cnt.most_common(2) if len(l) == 1))(counts.get(c, Counter())) for c, cell in NINE.items())
+    keypath = f"{HERE}/../keys/key_f108_gloss.tsv" if passed else f"{HERE}/f61gloss_counts.tsv"
+    with open(keypath, "w") as f:
         f.write("# key_f108_gloss.tsv -- campaign H21, 28 Sept 2026. Key source: period (rule 10 vocabulary). Every (class, letter) pair is read\n# from the contemporary interlinear decipherment on BnF fr.3983 f.108r (two Sonnet gloss passes reconciled, two Opus sign\n# passes per band reconciled, tools/interlinear_align.py), grade C for the pair; no cryptanalysis, no refit. Classes are\n# scripts/f61_atlas.tsv codes (EBR is the pre-split code where a band's passes predate H22).\nclass\tletters\tn\tbands\n")
         for c, cnt in sorted(counts.items(), key=lambda kv: -sum(kv[1].values())):
             f.write(f"{c}\t{' '.join(f'{l}:{n}' for l, n in cnt.most_common())}\t{sum(cnt.values())}\t{','.join(sorted(bands[c]))}\n")

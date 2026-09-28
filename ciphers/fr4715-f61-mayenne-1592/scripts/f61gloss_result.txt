@@ -1,0 +1,12 @@
+H21: period gloss on fr.3983 f.108r aligned to the atlas-coded signs
+  gloss L02: A 0 words, B 0, kept 0 (0 both, 0 one pass), dropped 0
+  gloss L03: A 7 words, B 7, kept 2 (1 both, 1 one pass), dropped 5: sont|sim. p|pti camo|d seruict|d[o] Jncompudite|force
+  gloss L05: A 8 words, B 5, kept 2 (1 both, 1 one pass), dropped 10: J| min| on| u-tilde| poccla| touche| faict| |je |m.. |le tout
+  gloss L06: A 7 words, B 0, kept 7 (0 both, 7 one pass), dropped 0
+  gloss L07: A 3 words, B 4, kept 0 (0 both, 0 one pass), dropped 7: Toyonne| leur| faict| |foyonne |feur |front |geurz
+  signs L02-L03: lines 2  signs A 82  B 82  agree 67/82 = 81.7%  (nw)
+  signs L05-L07: lines 3  signs A 80  B 80  agree 44/82 = 53.7%  (nw)
+gloss key (class: letters): BETA n:1 z:1 d:1; ZHOOK e:1 r:1 u:1; VBAR_A n:2 m:1 t:1; 4TRI l:1 e:1 j:1; OTHER a:2 t:1; PHI i:1 a:1 u:1; INF u:1 a:1 d:1; 4PI u:2; HASH4 o:2; 4STEM p:1
+nine cells vs the gloss: PHI=e/r:i/a:NO C43=a/n:-:NO 4TRI=c/p:l/e:NO INF=h/u:u/a:NO VBAR_A=g/t:n/m:NO VBAR_B=f/s:-:NO DBL=b/o:-:NO EBR_A=f/s:-:NO EBR_B=l/y:-:NO
+new cells/word codes with 2+ counts: BETA:n:1 z:1 d:1
+GATE H21: nine cells NOT all agree; new material yes -> FAIL
