@@ -264,3 +264,16 @@ according to the case provided for by the Regulation of the 2d Frimaire 11th yea
 (Minister of Marine) to Armstrong on prize procedure under the Milan decree, enclosed in the 17 Feb 1808 despatch
 (THE=972 family, the docket of frame 0645 already lists it); it names neither the 20 Feb letter nor a cipher.
 Result: no lead; done. Requests: none; 0 subagents; 2 minutes by the clock.
+
+## Step B7 (28 Sept 2026, 03:08-03:10 UTC) -- the 1700-1900 block is not a distinct sub-block: negative with nulls that can differ
+
+After B1 the question is whether rows 70-89 of the 4-digit tier (values 1700-1899, plus 1900; 27 distinct values,
+34 tokens) behave differently from the rest of that tier. `b7/block1700.py`: units-0 share of the block 0.294 (rest
+of the tier 0.429) against a null that permutes the block label among 4-digit values of the same count bin (2,000
+draws: mean 0.318, p05 0.176, p95 0.441, target at the 31st percentile); adjacent-pair count 5 against a
+position-shuffle null (mean 2.73, p95 5, target at the 87th percentile). Neither statistic leaves its null. Power:
+the hypothesised alternatives -- a spelling block with flat units (share about 0.10, below the null's p05 0.176 at
+this N) or spelled names of three or four groups (about 12 adjacent pairs from eight names, above p95 5) -- would
+have fallen outside these nulls, so the nulls can fail and the result is a control-backed negative at N=34: the
+1700-1900 values are ordinary prefix-1 rows, as B1's tier alignment already implied. Row dropped as a negative (not
+a non-test). Requests: none; 0 subagents; 2 minutes by the clock.
