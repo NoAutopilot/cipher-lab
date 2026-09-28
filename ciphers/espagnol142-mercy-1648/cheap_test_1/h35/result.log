@@ -1,0 +1,3 @@
+CONTROLS wseg: true-accept 0.59 (17/29), decoy-reject 0.93
+CONTROLS lex4: true-accept 0.52 (15/29), decoy-reject 0.72
+GATE NOT MET

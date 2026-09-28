@@ -1775,3 +1775,25 @@ converges at once -- two of three readers propose nothing in round 2 -- so itera
 this question: blind readers are precise and conservative, and M2's remaining 11 hand corrections cannot be licensed or
 refuted by any reader configuration tried (propose, verify with decoys, iterate). Script instruments that score each
 correction against known truth on the same controls are the next line (H35-H37). No token, grade or class change.
+
+## Campaign step H35 (2026-09-28 14:51-14:49 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Gate not met; the target's corrections were not scored.** Per-correction script
+verifier on H33's candidate sets (29 true corrections, 29 least-cost decoys, three controls with known truth): each
+change applied alone to the blind key, the decode scored by (a) wseg, a Viterbi word segmentation under an es17c7
+word-unigram model (words with 2+ corpus occurrences; unknown chunk -12 - 3 x length), and (b) lex4, letters in
+in-vocabulary words of 4+ letters in that segmentation (H14's measure without given word boundaries). Pre-registered
+rule: accept iff delta > 0; gate 0.8 / 0.8 on either measure (`cheap_test_1/h35/verify.py`, `deltas.tsv`,
+`result.log`; no hosts, no subagents, 4 s of CPU).
+
+| measure | true accepted | decoys rejected | glyphs with >= 2 occurrences: true / decoys rejected |
+|---|---|---|---|
+| wseg | 17/29 = 0.59 | 27/29 = 0.93 | 11/16 = 0.69 / 22/23 = 0.96 |
+| lex4 | 15/29 = 0.52 | 21/29 = 0.72 | 8/16 / 17/23 |
+
+wseg is the best discriminator this campaign has measured for single corrections (readers: 0.31 / 1.00 in H33), but
+it misses the gate on true-accept, including at n >= 2 where 10 of M2's 12 target corrections sit; its misses are the
+rare letters (h, z) and corrections whose occurrences fall in corrupted stretches. The subgroup figure is reported, not
+used: the gate was pooled and pre-registered, and moving it now would be threshold-shopping. No token, grade or class
+change. The whole-set version (H36) asks a question this per-change rule cannot: whether M2's set moves the text as far
+toward Spanish as a true key moves a control.
