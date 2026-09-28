@@ -18,11 +18,19 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
    - By the period gloss of two other hands (f.101r, f.188r), blind tile sorts with the gloss cut away:
      H65 o under the side-by-side glyph 18/20, e under the trefoil 18/19 (36/39, P < 0.0005, p95 26);
      H67 b goes with o (b 11/14 vs e 3/13 in the SBS group, Fisher P 0.0056); H77 the f.101r readers' LOOPS-under-o
-     is the same stemmed glyph (31/32).
+     is the same stemmed glyph (31/32); H89 a third hand, f.274: o 7/7 vs e 7/7 (exact P 0.0006). The s/t split of the
+     V-with-bar (H15 on f.61) is period-attested in two hands (H70 f.101r, thin; H89 f.274, 13/13).
    - Controls for the method: two clean one-symbol cells FAIL as they should, H75 d/q (20/32, P 0.087) and H80 g/t
      (12/20, P 0.84).
    - All ten tests in one table: `scripts/f61_glyph_splits.tsv` (H81, `scripts/f61splits.py --check`).
-3. **A pair-choice test the judge does not make alone (a second letter in this cipher).** Not done. f.108r/f.108v
+3. **A pair-choice test beyond L10 (a second letter in this cipher).** H85 (28 Sept): the f.61-fitted cells on fr.3983
+   f.108v (Mayenne to de Diou, Soissons, 4 March 1593, same secretary; reconciled draft H59, grade M; 274 pair
+   positions) -- control on the known lines under the same 14 cells PASS (7.5 vs 1.0), then the target ranks 1 of 21
+   in 3 of 3 blind calls (6.5 vs 0.5, 2.0 vs 1.5, 3.5 vs 2.0; thin on two); the three resolutions agree on 184/274
+   letters (`scripts/f108v_consensus.txt`, H91). Calibration (H90): on the known lines the judge picks Tomokiyo's letter
+   within the right pair at 43/47, but a permuted set still scores 16/20 (a letter-frequency prior) and the reused prompt
+   example "beau-pere" is one of his words there. Tomokiyo lists f.108v among the letters in this cipher
+   (`sources/cryptiana/web/mayenne.htm`), so its plaintext may be known: the print search is H88, yours. Before H85: f.108r/f.108v
    gloss readings wait on a person (ASKS rows 88/89; desk packs in `images/person_pack/` and
    `images/person_pack_108v/`). The model routes on that hand's gloss FAILed (H34, H35, H57).
 
@@ -33,10 +41,12 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 | f.61r skeleton, no letter chosen in any pair | `scripts/f61_skeleton.txt` (`f61skeleton.py --check`) | H58 |
 | the same with each cell's support tagged (period tile sort / period key / published / our fit) | `scripts/f61_skeleton_attest.txt` (`f61attest.py --check`) | H76 |
 | L10 fragment as revised (pos 6 and 11 as [b/o]) | `scripts/fragment_L10.tsv` (`f61fragment.py --check`) | H51 |
-| glyph-split tests H65-H80 | `scripts/f61_glyph_splits.tsv`, tiles `images/h65`..`images/h80`, prompts `scripts/PROMPTS.md` | H81 |
+| glyph-split tests H65-H89 | `scripts/f61_glyph_splits.tsv`, tiles `images/h65`..`images/h80`, prompts `scripts/PROMPTS.md` | H81 |
 | judge results | `scripts/f61judge_known_s10{1,2,3}_*`, `scripts/f61judge_unmarked_s10{1,2,3}_*` | H25 |
 | published rare-class values (ZHOOK i/x) | `family/key_published_rare.tsv` | H44 |
 | f.108v skeleton (same hand as f.61) | `scripts/f108v_skeleton.txt` | H62 |
+| f.108v judge (control + three calls) and its consensus | `scripts/f61judge_known_h51_s101_*`, `scripts/f61judge_f108v_s10{1,2,3}_*`, `scripts/f108v_consensus.txt` (`f61judge108v.py score ... --check`, `f108v_consensus.py --check`) | H85, H91 |
+| judge letter-choice calibration | `scripts/f61judgeletters_result.txt` (`f61judgeletters.py --check`) | H90 |
 
 ## Counts the verifier can re-derive
 
@@ -50,6 +60,7 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 ## Open questions only the verifier or a person can close
 
 - Whether anything on f.61r beyond "held" is classable at letter level (audit 1: 0 H, 0 C, 0 S, 8 M on L10).
+- H88: whether f.108v's plaintext is already in print or in the archive, and what H85's result is worth for this cipher.
 - Which of ASKS 88 (f.108r rows 4-6) and 89 (f.108v) goes on the desk first.
 - The table's two drawn a/n and e/r symbols are unmatched to any hand: H73 (a/n) and H71 (e/r) found no split in the
   period gloss (untestable by blind shape sort after H24b and H73).

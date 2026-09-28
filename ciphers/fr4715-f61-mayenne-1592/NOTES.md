@@ -2157,3 +2157,19 @@ reused verbatim by H85, gives "beau-pere" as a spelling example, and "beaupere" 
 lines, so the known-lines figure is inflated for that span (the f.108v calls carry the same example word but no reason
 to contain it). Applied to f.108v: a letter chosen by the judge is right well above chance where the cell is right, but
 H85's resolutions stay grade M and not a reading. For the verifier page (H92). No reading, no class change.
+
+## Campaign step H91 (28 Sept 2026, 15:36-15:37 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/f108v_consensus.py` -> `scripts/f108v_consensus.txt` (`--check` fresh), for the verifier's H88: the
+position-by-position majority of the three H85 target resolutions of f.108v, UPPER CASE where all three calls agree
+(184 of 274) and lower case where two do (90), with the draft's sign grade under each letter (12 positions sit on signs
+still flagged L after reconciliation). Grade M at every letter; not a reading; no word boundaries asserted. The
+verifier's print search (is this letter's text already known?) and any class are H88's, not the runner's.
+
+## Campaign step H92 (28 Sept 2026, 15:37 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/H66_PAGE.md` brought up to date for LANE VO3: audit 1's third ask now points at H85 (f.108v judge gate 3/3
+after its control) with the H90 calibration and its caveats, the H91 consensus file and the open print search H88;
+the "qo" item gains H89 (third hand) and the two-hand V-with-bar split; the file table gains the H85/H90/H91 files. No
+new claim.
+
