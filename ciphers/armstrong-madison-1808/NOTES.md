@@ -2184,3 +2184,43 @@ control for `design/`, a KEY-OFFICES row "WE028: Erving at Madrid to Monroe at L
 same checkpoints (00:31, 00:46) report the calendar's 7 January 1806 Armstrong-to-Monroe letter at reel 3 frames
 687-689, clear prose -- unchecked by this runner; if it holds, it is the "first 1806 letter" H25 could not place,
 leaving only the two December 1804 letters unlooked.
+
+## Campaign step H30 (28 Sept 2026, 01:09-01:12 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01R2T5qwd7NBMWGnjRtj8ieX). Hypothesis H30 (from the
+sprint's 00:46 checkpoint, unchecked there): Ford's *Writings of John Quincy Adams* documents "Armstrong's cypher"
+shared with Adams in 1809-10 -- if Armstrong supplied Adams a private cipher, the Adams Papers would be a pool for it.
+
+**Source read (archive.org OCR, `writingsofjohnqu03adam` vol. 3 1801-1810 and `fordsjohnadams04adamrich` vol. 4
+1811-1813; 98 distinct cypher/cipher passages grepped, the five near Armstrong/Short/key read in full).** The lead
+is real and it resolves the other way:
+- Robert Smith (Secretary of State) to Adams, instructions of 1809, printed p. 327-328 (running head "328 THE WRITINGS
+  OF [1809"): "The cypher with which you are furnished, being the same with that of our minister at London, you will
+  be able to correspond confidentially with him ... You will do well to obtain at Paris, a copy of General
+  Armstrong's cypher also, for the like purpose. The advantage of corresponding with those ministers, in cyphers
+  KNOWN TO THIS DEPARTMENT, is, that in their transmitting hither information received from you, the labor and delay
+  of translating it into another cypher may be avoided." (grade H, printed text.)
+- Adams to the Secretary of State, early 1810 (the checkpoint's pp. 369-370; the despatch of 3 Jan 1810): "With these
+  papers, I received also the copy of General Armstrong's cypher, of which I shall have immediate occasion to make
+  use." (H)
+- The same 1808-09 instructions also mention a cipher "of General Armstrong, a copy of which was transmitted to our
+  consul at St. Petersburg" (Harris) -- the same departmental copy circulating.
+- Vol. 4: Adams to Erving, St Petersburg 6/18 June 1811, footnoted "Cypher" (Adams and Erving corresponding in a
+  Department cipher); p. 117 (1811) prints "[one-half line of cipher not deciphered]" in a despatch -- an
+  undeciphered passage in Ford's edition, not this target's business (a scout note, below).
+
+**Reading.** "General Armstrong's cypher" in Ford is the Department's own cypher issued to the Paris legation -- a
+cypher "known to this Department", copied to the consul at St Petersburg and to Adams so that inter-legation traffic
+could be forwarded to Washington without re-enciphering. Armstrong's Department cypher in 1808 is THE=972 (Bourdeau's
+decodes of 15 Feb, 22 Feb and 30 Aug 1808, `tools/data/uscodes-1800/`), which does not read the target (Bourdeau;
+ARM-A2). So the Adams Papers would hold THE=972 traffic, not a second letter in the target's code; the "private
+cipher" premise of the row is not supported by the source it rests on.
+
+**Verdict for the campaign: done, lead resolved, no pool** -- a source reading (H), no statistic and no control needed
+(nothing here is a solver result). What stays useful: (a) the circulation of THE=972 copies (Paris, the St Petersburg
+consul, Adams) is a KEY-OFFICES.tsv fact for the close-out; (b) for the scout, not this target: Ford's vol. 4 p. 117
+"[one-half line of cipher not deciphered]" (Adams, St Petersburg, 1811) and the "few lines in cipher to the President"
+(vol. 4 p. 55, 1811) are printed undeciphered US diplomatic cipher of 1811 in a Department cypher whose tables
+(THE=972 / WE028 family) are partly on file -- a check-solved candidate for QUEUE.md, cheap because the key family is
+known. Rule 10 wording; no reading, no class change. Requests: archive.org 3 (advancedsearch + two OCR downloads).
+Cost: script only, no image; the row's estimate (1.5 USD) is what `--spend` records.
