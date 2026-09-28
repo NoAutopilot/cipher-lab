@@ -1,0 +1,31 @@
+vocabulary: 17400 words with >= 3 occurrences (1158822 tokens)
+== reading
+  reading.txt cipher words: words 44, in-vocab 11 (25.0%), letter-weighted 2.9%
+  the letter's own clear words (m2/clear_words_only.txt): words 171, in-vocab 150 (87.7%), letter-weighted 79.4%
+== 20 shuffles of the reading letters at the same word lengths: mean 21.5%, max 25.0%
+== exact-profile control decodes at their true word boundaries
+  exactprof_k38_oos_cartas13_seed1.json (share 0.958): words 124, in-vocab 105 (84.7%), letter-weighted 74.5%
+     its true plaintext: words 124, in-vocab 117 (94.4%), letter-weighted 90.4%
+  exactprof_k38_oos_cartas13_seed2.json (share 0.979): words 113, in-vocab 102 (90.3%), letter-weighted 84.8%
+  exactprof_k38_oos_cartas13_seed3.json (share 0.96): words 121, in-vocab 101 (83.5%), letter-weighted 72.9%
+  exactprof_k38_oos_cartas13_seed4.json (share 0.908): words 135, in-vocab 108 (80.0%), letter-weighted 68.3%
+  exactprof_k38_oos_cartas13_seed5.json (share 0.916): words 123, in-vocab 98 (79.7%), letter-weighted 63.7%
+  exactprof_k38_seed1.json (share 0.992): words 121, in-vocab 113 (93.4%), letter-weighted 88.5%
+     its true plaintext: words 121, in-vocab 114 (94.2%), letter-weighted 90.6%
+  exactprof_k38_seed2.json (share 0.987): words 136, in-vocab 127 (93.4%), letter-weighted 86.9%
+  exactprof_k38_seed3.json (share 0.985): words 134, in-vocab 115 (85.8%), letter-weighted 78.7%
+  exactprof_k38_seed4.json (share 0.925): words 124, in-vocab 94 (75.8%), letter-weighted 59.3%
+  exactprof_k38_seed5.json (share 0.977): words 132, in-vocab 114 (86.4%), letter-weighted 79.1%
+== corrupted controls (5%, 10%)
+  exactprof_cartas13_n0.05_seed1.json (letters right 76.8%): words 124, in-vocab 75 (60.5%), letter-weighted 39.3%
+  exactprof_cartas13_n0.05_seed2.json (letters right 92.7%): words 113, in-vocab 84 (74.3%), letter-weighted 59.9%
+  exactprof_cartas13_n0.05_seed3.json (letters right 82.1%): words 121, in-vocab 83 (68.6%), letter-weighted 48.9%
+  exactprof_cartas13_n0.10_seed1.json (letters right 50.5%): words 124, in-vocab 61 (49.2%), letter-weighted 25.7%
+  exactprof_cartas13_n0.10_seed2.json (letters right 81.2%): words 113, in-vocab 69 (61.1%), letter-weighted 41.5%
+  exactprof_cartas13_n0.10_seed3.json (letters right 63.0%): words 121, in-vocab 68 (56.2%), letter-weighted 34.7%
+  exactprof_dq_n0.05_seed1.json (letters right 91.6%): words 121, in-vocab 94 (77.7%), letter-weighted 65.8%
+  exactprof_dq_n0.05_seed2.json (letters right 84.6%): words 136, in-vocab 111 (81.6%), letter-weighted 68.3%
+  exactprof_dq_n0.05_seed3.json (letters right 29.8%): words 134, in-vocab 73 (54.5%), letter-weighted 32.2%
+  exactprof_dq_n0.10_seed1.json (letters right 76.8%): words 121, in-vocab 71 (58.7%), letter-weighted 41.5%
+  exactprof_dq_n0.10_seed2.json (letters right 87.5%): words 136, in-vocab 105 (77.2%), letter-weighted 62.4%
+  exactprof_dq_n0.10_seed3.json (letters right 63.3%): words 134, in-vocab 68 (50.7%), letter-weighted 30.1%

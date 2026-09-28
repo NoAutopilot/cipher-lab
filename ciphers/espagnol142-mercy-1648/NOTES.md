@@ -1360,7 +1360,7 @@ r04, the first cipher line. Plus three full stops in the clear text immediately 
 
 **Test (rule 3): are they word separators?** Under the current reading 1 of 16 falls at a word end (r11:5, the s of
 "sepamos" before the clear "Con"). Control: the same 16 marks placed at random cipher positions of the same lines,
-10,000 draws: mean 1.22 word-end hits, 95th percentile 3, P(>= 1) = 0.75. **The marks are not word separators under
+10,000 draws: mean 1.22 word-end hits, 95th percentile 3, P(>= 1) = 0.75. [Corrected in step H14, 28 Sept 2026: these boundaries were run ends, not word ends; with M2's segmentation 2 of 16 at word ends vs random mean 3.09, P(>= 2) = 0.86 -- same conclusion.] **The marks are not word separators under
 this reading, and not distinguishable from chance placement.** By the code they follow: 34 three times (all r04), 14
 twice, 6 twice, the rest once -- no code-specific pattern either. What they are stays open (pen rests, or a
 segmentation different from ours); they change no token.
@@ -1420,3 +1420,45 @@ instrument tuned four times without the numbers moving together toward the gate 
 "second attempt at an unchanged approach" paragraph). Logged "untestable by this judge at this N"; the next
 attempt at "is the reading Spanish" needs a different instrument (H14 below), not a fifth corpus. No reading
 change, no grade change.
+
+## Campaign step H14 (2026-09-28 00:40-00:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** A second instrument for "does the reading behave like Spanish", independent of the
+n-gram judge that H4 closed: lexicon coverage, the share of the reading's cipher words found in the Cartas
+vocabulary (`tools/data/es17c7`, 17,400 word types with 3 or more occurrences in 1.16M tokens). Script
+`cheap_test_1/h14/lexcov.py` (controls) plus the re-run in this section's log for the reading; the segmented reading
+used is M2's own word segmentation from its NOTES paragraph with MREV's four word changes applied
+(`cheap_test_1/h14/reading_segmented_m2.txt`; `reading.txt` itself writes each cipher run unsegmented, which is why
+the first pass of this step, and step H13's word-end test, had to be redone -- see the H13 correction below). No hosts,
+no subagents.
+
+| text | words | in vocabulary | letter-weighted | words of 4+ letters in vocabulary |
+|---|---|---|---|---|
+| **the reading (M2 segmentation, 121 words, 520 letters)** | 121 | **81.0%** | 63.8% | **51.7%** (56 words) |
+| 20 shuffles of the same letters at the same word lengths | 121 | 34.3% (31.4-37.2) | -- | 0.8% (max 1.8) |
+| the letter's own clear words (m2/clear_words_only.txt) | 171 | 87.7% | 79.4% | -- |
+| H1 exact-profile controls, Cartas windows, clean (91-98% letters) | 113-135 | 79.7-90.3% | 63.7-84.8% | -- |
+| H1 exact-profile controls, Don Quijote windows, clean (93-99%) | 121-136 | 75.8-93.4% | 59.3-88.5% | -- |
+| the controls' true plaintexts | 121-124 | 94.2-94.4% | 90.4-90.6% | -- |
+| corrupted controls, 5% signs (30-93% letters) | 113-136 | 54.5-81.6% | 32.2-68.3% | -- |
+| corrupted controls, 10% signs (50-88% letters) | 113-136 | 49.2-77.2% | 25.7-62.4% | -- |
+
+**Verdict: the pre-registered pass is met** -- the reading sits inside the clean-control band (81.0% vs 79.7-93.4%,
+at its low edge) and above every shuffle by 44 points, and on the discriminating measure (words of four or more
+letters) the separation is 51.7% against a shuffle maximum of 1.8%. Letter-weighted it sits with the 5%-corrupted
+controls (63.8% vs 60-68%), the same place H1's error bracket put the anneal score: a decode that is mostly right
+and carries a few wrong codes. The 23 words not in the vocabulary are the proper names and the unread stretch
+(brandenburg, eleues, oulay, lonburg, szrfsucmarey, noladirentnonysiiuna, ...) plus verb forms the newsletters do
+not use (pasareis, propondreis, permitira, embian). **This supports the reading as a cryptanalytic result; it is
+not a judge PASS and does not change any grade** (rule 10 wording; the verifier lane already holds this reading at
+N3 after two audits, and nothing here changes a token). Read together, H1 (score inside the real-text band), H3
+(permuted-key control 950-1,110 points worse) and H14 (lexicon coverage inside the real-text band, far above
+shuffle) are three controls of different kinds that the reading passes; the n-gram judge is the one instrument
+that cannot decide, and H4 showed why.
+
+**Correction to step H13 (word-end test).** H13's `word_ends()` took its word boundaries from `reading.txt`, which
+writes each cipher run as one unsegmented upper-case string, so it counted run ends, not word ends (11 "word ends"
+in 194 tokens). Redone with M2's segmentation: 2 of the 16 marks fall at word ends (r14:3 after "ARE" of
+"pasareis a"? -- the end of "PASAREIS"; r16:10 the end of "EOPURA"), random placement over the same lines gives a
+mean of 3.09, 95th percentile 6, P(>= 2) = 0.86. The conclusion stands (the marks are not word separators under
+this reading); the numbers in the H13 section and CAMPAIGN.md's H13 row are superseded by these.
