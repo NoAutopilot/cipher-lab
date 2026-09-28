@@ -1,0 +1,6 @@
+pooled, 50 resamples: g/t wins 41/50
+f97r: g/t 0.0786, t/s 0.0716 -> g/t
+f101r: g/t 0.0940, t/s 0.0886 -> g/t
+f188r: g/t 0.1512, t/s 0.1363 -> g/t
+f124r: g/t 0.0612, t/s 0.0656 -> t/s
+H151: DOES NOT STAND (pooled 41/50, leaves 3/4)

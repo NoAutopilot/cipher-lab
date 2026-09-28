@@ -9,7 +9,7 @@ of the pool's lines. None of this is a period attestation (grade C); it is a tex
 
 | class | key v4 | proposal | evidence (file) |
 |---|---|---|---|
-| VBAR_A | t/s | **g/t** | pool: g/t beats t/s in 29/30 and 30/30 resamples; also higher on f.108v and on f.61's known lines (`scripts/f61vbar_cells_result.txt`, H146). v4's s 93 probably VBAR_B signs coded VBAR_A. |
+| VBAR_A | t/s | g/t (a lean only) | pool: g/t beat t/s in 29/30 resamples (H146) but only 41/50 on a fresh bootstrap and on 3 of 4 leaves (f.124r prefers t/s) -- H151 DOES NOT STAND at the pre-registered 95% (`scripts/f61vbar_repl_result.txt`). v4's s 93 may still be VBAR_B signs coded VBAR_A; a period check on the leaves is the way to settle it. |
 | VBAR_B | s | **s** (f rarely right) | pool: s alone beats f/s 30/30; f.108v cannot tell (H146). Does not settle VBAR_B's second letter. |
 | SBS | o/b/e (frac 0.1) | **b/o** | the added e is rejected, 0/30 (`scripts/f61v4_widen_result.txt`, H148) |
 | 4PI | d/q/a/n | **d/q** | a/n rejected, 1/30 (H148) |

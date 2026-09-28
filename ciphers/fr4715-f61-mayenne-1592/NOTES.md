@@ -2996,3 +2996,10 @@ L04-L06 H108 draft, f.108r L02/L03 of the joint fit): **CA 8, C6 6, LOOPBAR 4, C
 i/x, published). None reaches the pre-registered 10 -> **every rare class untestable by sequence gain on this material**;
 no value computed. AUDIT.md sec. 6 item 2 stands: these classes wait on more text in this hand or a period key sheet (the
 fr.2751 f.116 lead, H143/H144, is de Diou's hand, not f.61's). No reading, no class change.
+
+## Campaign step H151 (28 Sept 2026, 19:34-19:39 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61vbar_repl.py` (pushed 82c61573 before the run; `f61vbar_repl_result.txt`): H146's VBAR_A g/t vs key v4's t/s on a
+fresh bootstrap and leaf by leaf. **Pooled: g/t wins 41/50** (gate >= 48); leaves: g/t higher on f.97r, f.101r, f.188r,
+t/s higher on f.124r (3 of 4). **DOES NOT STAND** as pre-registered: H146's 29/30 does not replicate at the 95% level (41/50
+= 82%). VBAR_A g/t is a lean, not a result; `family/PROPOSAL_H146.md` is corrected to say so. No reading, no class change.
