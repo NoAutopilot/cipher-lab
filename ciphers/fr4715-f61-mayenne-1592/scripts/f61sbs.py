@@ -17,12 +17,14 @@ and P < 0.05 AND at least 30 tiles scored (a tile the reader marks 'no sign / no
 A PASS licenses: the period gloss writes o under a glyph the blind reader separates from the e glyph -- SBS b/o gains a
 period attestation (grade C) for the family worker to merge; a FAIL leaves SBS b/o at grade M (our fit only).
   python3 scripts/f61sbs.py build NATIVE_DIR     # tiles + sheets + scripts/f61sbs_tiles.tsv (answer key, not shown)
-  python3 scripts/f61sbs.py score scripts/read_call_SBS.tsv [--check]
+  python3 scripts/f61sbs.py score read_call_SBS.tsv [--check]
+  python3 scripts/f61sbs.py build-b NATIVE_DIR ; python3 scripts/f61sbs.py score-b read_call_SBSB.tsv [--check]   (H67)
 """
 import csv, difflib, itertools, json, math, os, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); TGT = os.path.dirname(HERE); FAM = f"{TGT}/family"
 LEAVES = [("f101r", "3982_f101r.jpg"), ("f274", "3984_f274r.jpg"), ("f188r", "3984_f188r.jpg")]
+LETS = ("o", "e")
 def rows(p): return list(csv.DictReader(open(p), delimiter="\t"))
 def tokens(leaf):
     al = rows(f"{FAM}/passes/{leaf}_align.tsv"); dr = rows(f"{FAM}/passes/rec{leaf}/ciphertext_draft.tsv")
@@ -39,7 +41,7 @@ def tokens(leaf):
         for blk in sm.get_matching_blocks():
             for k in range(blk.size):
                 i, j = blk.a + k, blk.b + k
-                if ar[i]["value"] == "PHI" and ar[i]["plain_chunk"] in ("o", "e") and a[j]["sign"] == "PHI":
+                if ar[i]["value"] == "PHI" and ar[i]["plain_chunk"] in LETS and a[j]["sign"] == "PHI":
                     out.append((leaf, L, i + 1, ar[i]["plain_chunk"], a[j]["segment"], float(a[j]["x_px"])))
     return out
 def build(native):
@@ -52,8 +54,10 @@ def build(native):
     pick = []
     for lf in quota:
         pick += rng.sample(o[lf], quota[lf]) + rng.sample(e[lf], min(quota[lf], len(e[lf])))
-    rng.shuffle(pick)
-    os.makedirs(f"{TGT}/images/h65", exist_ok=True); tiles = []; ims = {}
+    rng.shuffle(pick); cut(pick, native, "h65", "f61sbs_tiles.tsv")
+def cut(pick, native, tag, keyname, sheet_name="sbs_sheet"):
+    from PIL import Image, ImageDraw
+    os.makedirs(f"{TGT}/images/{tag}", exist_ok=True); tiles = []; ims = {}
     for n, (lf, L, pos, let, seg, x) in enumerate(pick, 1):
         bj = json.load(open(f"{FAM}/sheets/{lf}_bands.json")); box = bj["boxes"][f"{lf}_{L}_{seg}.jpg"]
         sc, up, down = bj["scale"], bj["up"], bj["down"]; cx = box[0] + x / sc; cy = box[1] + up
@@ -70,11 +74,52 @@ def build(native):
         for k, tt in enumerate(tiles[s:s + 10]):
             X, Y = (k % 5) * (W + 10), (k // 5) * (H + 10); sheet.paste(tt[7], (X, Y + 34)); d.text((X + 6, Y + 6), f"tile {tt[0]}", fill=(0, 0, 200))
             d.rectangle([X, Y + 34, X + W - 1, Y + 34 + tt[7].height - 1], outline=(0, 0, 0))
-        sheet.save(f"{TGT}/images/h65/sbs_sheet{s // 10 + 1}.jpg", quality=88)
-    with open(f"{HERE}/f61sbs_tiles.tsv", "w") as f:
+        sheet.save(f"{TGT}/images/{tag}/{sheet_name}{s // 10 + 1}.jpg", quality=88)
+    with open(f"{HERE}/{keyname}", "w") as f:
         f.write("tile\tleaf\tline\tdraft_pos\tperiod_letter\tsegment\tx_px\n")
         for tt in tiles: f.write("\t".join(map(str, tt[:7])) + "\n")
-    print(len(tiles), "tiles;", sum(1 for t in tiles if t[4] == "o"), "o")
+    from collections import Counter
+    print(len(tiles), "tiles;", dict(Counter(t[4] for t in tiles)))
+def build_b(native):
+    """H67 (pre-registered with the call's prompt, scripts/PROMPTS.md 'H67'): every matched PHI token under a period b on
+    f.101r and f.188r, plus per leaf the same number of e and of o tokens (seed 67; the o tiles anchor which group is the
+    side-by-side glyph), cut exactly as H65, key scripts/f61sbs_b_tiles.tsv, sheets images/h67/sbsb_sheet*.jpg."""
+    global LETS
+    LETS = ("b", "e", "o"); rng = random.Random(67); pick = []
+    for lf in ("f101r", "f188r"):
+        t = tokens(lf); b = [x for x in t if x[3] == "b"]; n = len(b)
+        e = rng.sample([x for x in t if x[3] == "e"], n); o = rng.sample([x for x in t if x[3] == "o"], n)
+        print(lf, "matched b", n); pick += b + e + o
+    rng.shuffle(pick); cut(pick, native, "h67", "f61sbs_b_tiles.tsv", "sbsb_sheet")
+def score_b(path):
+    """H67 gate: the SBS group = the group holding the most o tiles (ties: no SBS group, non-test). 2x2 Fisher exact,
+    one-sided, b tiles vs e tiles in / out of the SBS group; PASS if P < 0.05 AND the b share in the SBS group is at least
+    half the o share (b behaves like o, not merely more than e); FAIL otherwise; NON-TEST if under 10 b tiles scored or
+    the o anchor is not recovered (o share in the SBS group under 0.7)."""
+    key = {int(r["tile"]): r for r in rows(f"{HERE}/f61sbs_b_tiles.tsv")}
+    got = list(csv.DictReader((l for l in open(f"{HERE}/{path}") if not l.startswith("#")), delimiter="\t"))
+    tab = defaultdict(lambda: defaultdict(int)); out = [f"{path}: {len(got)} rows; {len(key)} tiles"]
+    for r in got:
+        k = key.get(int(r["tile"])); g = r["group"].strip()
+        if k is None: continue
+        if g.lower() in ("", "none", "-", "x"): out.append(f"  tile {r['tile']} ({k['leaf']} {k['period_letter']}): not scored"); continue
+        tab[g][k["period_letter"]] += 1; tab[g][k["leaf"] + ":" + k["period_letter"]] += 1
+    for g in sorted(tab): out.append(f"  group {g}: " + ", ".join(f"{l} {tab[g][l]}" for l in ("b", "e", "o")) + "  (" + ", ".join(f"{k} {v}" for k, v in sorted(tab[g].items()) if ":" in k) + ")")
+    tot = {l: sum(tab[g][l] for g in tab) for l in "beo"}
+    og = sorted(tab, key=lambda g: -tab[g]["o"])
+    if not og or (len(og) > 1 and tab[og[0]]["o"] == tab[og[1]]["o"]): out.append("GATE H67: NON-TEST (no SBS group)")
+    else:
+        S = og[0]; sh = {l: tab[S][l] / tot[l] if tot[l] else 0 for l in "beo"}
+        a, b_, c, d = tab[S]["b"], tot["b"] - tab[S]["b"], tab[S]["e"], tot["e"] - tab[S]["e"]
+        def hyp(x): return math.comb(a + b_, x) * math.comb(c + d, a + c - x) / math.comb(a + b_ + c + d, a + c)
+        p = sum(hyp(x) for x in range(a, min(a + b_, a + c) + 1))
+        out.append(f"SBS group {S}: share of o {sh['o']:.2f} ({tab[S]['o']}/{tot['o']}), b {sh['b']:.2f} ({a}/{tot['b']}), e {sh['e']:.2f} ({c}/{tot['e']}); Fisher one-sided b vs e P = {p:.4g}")
+        if tot["b"] < 10 or sh["o"] < 0.7: out.append("GATE H67: NON-TEST (b under 10 or o anchor not recovered)")
+        else: out.append(f"GATE H67: {'PASS' if p < 0.05 and sh['b'] >= 0.5 * sh['o'] else 'FAIL'}")
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61sbs_b_result.txt"
+    if "--check" in sys.argv:
+        ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
+    open(res, "w").write(txt); print(txt)
 def stat(groups, labels):
     gs = sorted(set(groups)); return max(sum(1 for g, l in zip(groups, labels) if dict(zip(gs, lets))[g] == l) for lets in itertools.product("eo", repeat=len(gs)))
 def score(path):
@@ -112,4 +157,4 @@ def score(path):
         ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt)
 if __name__ == "__main__":
-    {"build": lambda: build(sys.argv[2]), "score": lambda: score(sys.argv[2])}[sys.argv[1]]()
+    {"build": lambda: build(sys.argv[2]), "score": lambda: score(sys.argv[2]), "build-b": lambda: build_b(sys.argv[2]), "score-b": lambda: score_b(sys.argv[2])}[sys.argv[1]]()
