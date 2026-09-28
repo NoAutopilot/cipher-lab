@@ -875,3 +875,60 @@ not a glyph-sequence result.
 Caveats: seven crops and 79 glyphs; the between-glyph band (31 px) and the between-group band (43 px) overlap in their
 tails, so a word space only slightly wider than a glyph space would not separate at this N; page-2 crop identities are
 by content (ARM-TR2). Files: `b38/gaps.py`, `gaps_out.txt`, `gaps.json`. Needs: nobody. Result: done.
+
+### B38 correction (28 Sept 2026, 06:48 UTC, found by B39's box alignment)
+
+B39 cut the B38 units into boxes and found the numeral-line units did not track the transcribed groups in order (unit widths
+of 4 px and 442 px on line L16 for two- and four-digit groups): the hand writes a period after every group, and the dot, a
+run under 12 px wide and 16 px tall, sat inside the between-group gap and split it into two short gaps, so neighbouring
+groups merged into one unit while the dot counted as one. The count match in B38's first table (10 10 10 10 10) was a
+coincidence of merges and dots, not a recovery of the groups. `gaps.py` v2 removes dots (`DOTW, DOTH = 12, 16`) and
+measures the gap between the real runs on either side (first-version output kept as `gaps_out_v1.txt`).
+
+Revised numbers (`gaps_out.txt`): numeral-only lines at 30 px give 11 11 11 12 11 units for 10 12 10 11 10 groups, and on
+L14, L15 and L16 the first n units track the n groups one by one (L16 widths 66 91 115 60 139 137 54 28 129 144 px for
+48 370 751 18 1540 1320 12 1 1170 1842; the eleventh unit is a line-end mark). The two numeral gap populations are now
+clean: between groups median 66 px (p10 49), within a group median 11 px (p90 22), mixture BIC margin 45. So the control
+clears at the unit level, not only at the count level.
+
+Pure-glyph lines under v2: 111 runs for 79 glyphs, gaps median 32 px (p10 10, p90 57), mixture components 17 px and 36 px
+(BIC margin 14). The between-glyph band (36 px) lies *between* the numeral within-group band (11) and between-group band
+(66): glyphs are written closer together than code groups and farther apart than digits inside a group. Units per
+threshold on the 79 glyphs: 61 at 30 px, 40 at 40, 33 at 45, 23 at 50 (3.4 glyphs per unit), 16 at 60 (4.9). The largest
+glyph gaps (50-65 px, about 15 of 100) reach the low edge of the numeral group-boundary band, and the per-crop gap lists
+are continua from 10 to 65 px with no break.
+
+Revised reading: the pixels do not show a separated word-space population, but they do not exclude one either -- the
+glyph gap distribution is continuous, and a split at the numeral group-boundary calibration (crossover 44 px) yields
+2.4-3.4 glyphs per unit, at the glyph lines' own mixture crossover (20 px) about 1.1. B38's first reading ("spaced like
+separate code groups, 1.34 per unit") is withdrawn; the result is *inconclusive on word grouping*, with the measured
+scale relation (digit 11 < glyph 36 < group 66 px) as the one label-free fact. B30's type-20 word space remains
+unreproduced without labels. PLAN row B38 amended.
+
+## Step B39 (28 Sept 2026, 06:41-06:48 UTC)
+
+Question: how many glyph types do the images themselves support, without a reader? Instrument: unit boxes (B38 v2 split
+at 30 px) from the seven pure-glyph crops (61 boxes for 79 glyphs) and from three page-1 numeral lines whose units track
+the transcribed groups (L14, L15, L16, 31 group boxes with known values); features = the box scaled to height 16 with
+its aspect kept (16x48, v2; v1 square-padded 16x16) plus log aspect and log width, standardised, PCA to 8; Ward
+clustering at k = 2..16; stability = mean adjusted Rand index between two 70 percent subsamples over 100 pairs; null =
+the same with every feature column permuted across items (marginals kept, shape destroyed), 20 nulls, p95.
+
+Known-answer control (rule 3): the numeral boxes' digit-count class (1-4 digits) is known, and the raw widths track it
+cleanly (1 digit 21-28 px; 2 digits 54-66 with two at 89, 98; 3 digits 84-135; 4 digits 129-148). The instrument must
+recover it: ARI between its k=4 clustering and the digit count.
+
+| version | control ARI (k=4 vs digit count) | glyph stability at k=6/8/10 vs null p95 |
+|---|---|---|
+| v1 (square pad, 16x16) | 0.043 | 0.66/0.64/0.66 vs 0.64/0.62/0.64 |
+| v2 (aspect kept, 16x48; boxes re-aligned after the dot fix) | -0.005 | 0.80/0.84/0.75 vs 0.59/0.62/0.60 |
+
+The control fails both times: the pixel-PCA-Ward instrument does not recover even the width class that the raw width
+gives trivially, while its split-half stability on the same numeral boxes reads "ABOVE null" at k = 4-10 -- stability
+without correctness. The glyph "ABOVE null" rows (k = 3-16, up to 0.84 vs 0.62) are therefore unlicensed: the null
+measures reproducibility of *some* partition, and the control shows that partition need not follow the one structure we
+know is there. Per rule 3's SALV-DIAG/AX2-4612S paragraphs this is logged untested-by-this-tool, not as a glyph-type
+count, and not re-tuned a third time on the same feature/PCA/Ward knob; a different instrument (explicit stroke
+descriptors, or a first-digit shape control on the left quarter of the numeral boxes) would be the next attempt, which is
+a new row, not a re-run. Files: `b39/boxes.py`, `cluster.py`, `boxes.npz`, `cluster_out_v1.txt`, `cluster_out.txt`.
+Needs: nobody. Result: dropped (instrument failed its known-answer control twice; no negative on the glyphs).

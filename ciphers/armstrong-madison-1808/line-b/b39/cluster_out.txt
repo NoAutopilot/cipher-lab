@@ -1,0 +1,19 @@
+glyph units (59)
+  k= 2: stability ARI 0.483 | permuted-feature null mean 0.530, p95 0.752 -> within null
+  k= 3: stability ARI 0.536 | permuted-feature null mean 0.440, p95 0.525 -> ABOVE
+  k= 4: stability ARI 0.669 | permuted-feature null mean 0.510, p95 0.615 -> ABOVE
+  k= 6: stability ARI 0.801 | permuted-feature null mean 0.500, p95 0.585 -> ABOVE
+  k= 8: stability ARI 0.835 | permuted-feature null mean 0.513, p95 0.620 -> ABOVE
+  k=10: stability ARI 0.753 | permuted-feature null mean 0.522, p95 0.604 -> ABOVE
+  k=12: stability ARI 0.734 | permuted-feature null mean 0.539, p95 0.630 -> ABOVE
+  k=16: stability ARI 0.692 | permuted-feature null mean 0.576, p95 0.636 -> ABOVE
+numeral groups (30)
+  positive control: ARI(k=4 clustering, digit count) = -0.005 ; digit-count classes {np.int64(1): np.int64(2), np.int64(2): np.int64(10), np.int64(3): np.int64(12), np.int64(4): np.int64(7)}
+  k= 2: stability ARI 0.470 | permuted-feature null mean 0.527, p95 0.653 -> within null
+  k= 3: stability ARI 0.497 | permuted-feature null mean 0.511, p95 0.690 -> within null
+  k= 4: stability ARI 0.718 | permuted-feature null mean 0.531, p95 0.674 -> ABOVE
+  k= 6: stability ARI 0.773 | permuted-feature null mean 0.549, p95 0.638 -> ABOVE
+  k= 8: stability ARI 0.731 | permuted-feature null mean 0.578, p95 0.650 -> ABOVE
+  k=10: stability ARI 0.749 | permuted-feature null mean 0.598, p95 0.674 -> ABOVE
+  k=12: stability ARI 0.723 | permuted-feature null mean 0.628, p95 0.751 -> within null
+  k=16: stability ARI 0.801 | permuted-feature null mean 0.654, p95 0.771 -> ABOVE

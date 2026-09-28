@@ -10,7 +10,8 @@ import glob, math, sys, json
 import numpy as np
 from PIL import Image
 ROOT = "/home/user/cipher-lab/ciphers/armstrong-madison-1808"
-MINROWS, MINRUN, MINGAP = 2, 3, 1  # MINGAP 1: no bridging (bridging at 3 px merged nothing useful, see gaps_out.txt)
+MINROWS, MINRUN, MINGAP = 2, 3, 1
+DOTW, DOTH = 12, 16  # a period: narrow and short; a thin glyph stroke is narrow but tall  # MINGAP 1: no bridging (bridging at 3 px merged nothing useful, see gaps_out.txt)
 PURE = ["page1_L03_seq2-2_1marks", "page1_L12_seq106-121_16marks", "page1_L13_seq122-141_19marks", "page2_L01_seq188-197_1marks",
         "page2_L02_seq198-212_15marks", "page2_L03_seq213-226_9marks", "page3_L13_seq511-528_18marks"]
 def runs_gaps(path):
@@ -18,6 +19,13 @@ def runs_gaps(path):
     col = im.sum(0) >= MINROWS
     r = np.diff(np.r_[0, col.astype(int), 0]); starts = np.where(r == 1)[0]; ends = np.where(r == -1)[0]
     runs = [(a, b) for a, b in zip(starts, ends) if b - a >= MINRUN]
+    # v2 (B39's control, 28 Sept 2026): the hand writes a period after each group; a dot (under DOTW px wide and under
+    # DOTH px tall) sits inside the between-group gap and split it into two short gaps, merging neighbouring groups
+    # into one unit while the dot itself counted as a unit (unit widths 4 px and 442 px on line L16, see b39/). Dots
+    # are removed and the gap measured between the real runs on either side.
+    def height(a, b):
+        rows = np.where(im[:, a:b].sum(1) > 0)[0]; return rows[-1] - rows[0] + 1 if len(rows) else 0
+    runs = [(a, b) for a, b in runs if not (b - a < DOTW and height(a, b) < DOTH)]
     merged = []
     for a, b in runs:
         if merged and a - merged[-1][1] < MINGAP: merged[-1] = (merged[-1][0], b)
