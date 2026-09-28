@@ -334,6 +334,11 @@ def main():
         rows.append((f"REAL THE972 usage {k}", "real", stats(v, random.Random(7), 1600)))
     pooled = [x for v in usage_instances().values() for x in v]
     rows.append(("REAL THE972 usage pooled", "real", stats(pooled, random.Random(7), 1600)))
+    extra = HERE / "real_extra.tsv"  # H29 (28 Sept 2026): further real-usage streams, one per line: dataset<TAB>tokens
+    if extra.exists():
+        for line in extra.read_text().splitlines()[1:]:
+            name, toks = line.split("\t")
+            rows.append((name, "real", stats([int(x) for x in toks.split()], random.Random(7), 1600)))
     sims = defaultdict(list)
     for name, mk in designs.items():
         for i in range(a.sims):
