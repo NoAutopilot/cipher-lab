@@ -2105,7 +2105,7 @@ not refreshed at 00:57 (still 8.72 from 00:43); this step's own work is about 17
 looks and 5 native looks by this runner, no subagent -- the row's estimate (4 USD) is what `--spend` records, with the
 parent's reconciliation to follow from get_session.
 
-## Campaign step H20 (28 Sept 2026, 01:03-01:12 UTC)
+## Campaign step H20 (28 Sept 2026, 01:03-01:07 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (owner account, session_01R2T5qwd7NBMWGnjRtj8ieX). Hypothesis H20 (the
 account-2 runner's row from H18): are the target's 901-1099 trough and its 0/1 units-digit skew what a
