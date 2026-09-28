@@ -1,0 +1,16 @@
+crop	page	line	group	found_group	verdict	class	under_digit	what_it_is	confidence
+p2_w31_L13_1480.jpg	p2	13	1480	yes	MARK	HIGH		curl/squiggle stroke after the group, heavier than the plain periods used elsewhere on this same line (e.g. after 1471, after 1708)	M
+p2_w32_L13_1540.jpg	p2	13	1540	yes	NONE			separator period only; shorthand strokes follow further on but are not attached to this group	M
+p2_w32_L09_1540.jpg	p2	9	1540	yes	NONE			separator period only, plain like most groups on this line	M
+p2_w31_L14_17.jpg	p2	14	17	yes	NONE			separator period only	M
+p2_w31_L14_1640.jpg	p2	14	1640	yes	MARK	HIGH		double dot after the group, clearly heavier/different from the single periods used after the other groups on this same line	H
+p2_w32_L04_78.jpg	p2	4	78	no	NONE			group not found on this line; the digits present are 17.86.316.582.1017.18 followed by shorthand strokes and 1248.1430 -- no token reads 78	M
+p2_w32_L06_1158.jpg	p2	6	1158	yes	NONE			separator period only, then an unrelated shorthand cluster follows; a stray stroke at the very start of the crop looks like a descender from the line above, not part of this group	M
+p2_w32_L08_1741.jpg	p2	8	1741	yes	NONE			separator period only, plain periods throughout this line, no marks visible	H
+p2_w32_L09_28.jpg	p2	9	28	yes	MARK	HIGH		short horizontal stroke/bar above the group, distinct from the plain periods after every other group on this line	H
+p2_w32_L11_29.jpg	p2	11	29	no	NONE			group not found on this line; the digits present are 1110.1267.84.19.41.364.17, a shorthand stroke, 1480.1762.12 -- the token that could be confused for it reads 19, not 29	M
+p3_w31_L01_760.jpg	p3	1	760	yes	UNSURE			faint/blurry token near a stray stroke that could be a descender from the line above or a partial digit; cannot confirm a clean reading of the group or rule out an attached mark	L
+p3_w31_L01_230.jpg	p3	1	230	yes	NONE			separator period only, clear region of the line, no marks visible	H
+p3_w32_L01_1254.jpg	p3	1	1254	yes	NONE			separator period only, followed by a separate group (1) then shorthand strokes further along, none touching this group	H
+p3_w31_L04_740.jpg	p3	4	740	yes	NONE			separator period only, then an unrelated shorthand cluster follows (this line also has a plain 74 group earlier, distinct from 740)	M
+p3_w31_L09_1354.jpg	p3	9	1354	yes	NONE			separator period only, plain periods throughout this line, no marks visible	H

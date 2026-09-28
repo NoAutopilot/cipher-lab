@@ -25,7 +25,10 @@ for key, zs in bykey.items():
     vs = [r['verdict'].strip().upper() for r in rs]
     same = [r for r in rs if r['verdict'].strip().upper() == 'MARK' and r['class'].strip().upper()[:4] == cls]
     other = [r for r in rs if r['verdict'].strip().upper() == 'MARK' and r['class'].strip().upper()[:4] != cls]
-    if same:
+    notfound = [r for r in rs if r['found_group'].strip().lower() == 'no']
+    if rs and len(notfound) == len(rs):
+        st = 'dropped (group not found on its line at zoom: the holding reader\'s value unconfirmed)'; drops.append((page, group, cls, rs[0]['what_it_is']))
+    elif same:
         st = 'promoted'; r = same[0]; z = [z for z in zs if z['crop'] == r['crop']][0]
         passfiles[(page, z['witness'])].append((z['line'], group, cls, r['what_it_is'], r['confidence']))
     elif other: st = 'held (mark seen, other class: %s)' % other[0]['class']
