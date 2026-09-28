@@ -2265,3 +2265,79 @@ work (9 corroborated, all but one after/above), the page-4 and page-1 faint tick
 on page 1 for any other reason (not filed as a row: one group). Requests: none. Cost: two Sonnet calls (15 crops
 each; the second ran 11 minutes and about 210k tokens) plus this runner's merge; the row's estimate (2 USD) is what
 `--spend` records, the real figure is nearer 2.5.
+
+## Campaign step H26 (28 Sept 2026, 01:11-01:33 UTC)
+
+Worker: PARENT WORKER ARM-CORR (account 2, Fable, session_01N9jSGgX5d2R8zEroPxtc5E), brief
+`.claude/briefs/runs/2026-09-28-parent-arm-corr.md`. H25 was not taken (the owner-account runner had done it at 01:03).
+Hypothesis H26: the Pinkney and Erving correspondent pools -- anything catalogued as cipher screened the ARM3-LIVCODE way;
+catalogue-only leads cited exactly. Files: `corr/leads.tsv` (every item, one row each), `corr/screen.py` (the screen,
+reusing `pool/cor/overlap_test.py` and the target/THE=972 baselines), `corr/screen_output.txt`, `corr/erving1807_groups.tsv`,
+`corr/pinkney1808_groups.tsv`, `corr/images/` (25 surfaces, 6.4 MB), `corr/crops_erving1807/`, `corr/requests.log` (every
+request, 67 lines), `corr/fetch.sh` (the logged fetch helper).
+
+**Pinkney half.**
+- Princeton C0027 (William Pinkney Papers, Series 1B letters received, Armstrong, Box 1 Folder 3): the three 1808 letters
+  the sprint checkpoint reported clear (29 Jan, 15 Oct, 30 Nov 1808) fetched from Figgy's public IIIF (manifests in
+  `corr/figgy_*_manifest.json`) at 1400 px and read directly by this worker: all twelve surfaces clear prose, no numeral
+  group (H). The 29 Jan letter mentions Monroe's arrival in the Chesapeake; 30 Nov mentions Mr Short's Russian mission --
+  ordinary friendly correspondence. A fourth item (21 June 1810) has no image link and is outside the window.
+- LOC James Madison Papers, `q=pinkney+cipher`, 1807-09: one item, **Pinkney to Madison, London 24 Jan 1808, "Partly in
+  cipher"** (mjm022250, 8 surfaces fetched at master resolution). Its only coded run is five groups on p.2,
+  `134 1379 1123 1028 454`, glossed above the line in a period hand "Mister Percival"; `tools/data/uscodes-1800/WE028.tsv`
+  reads 134=mis 1379=ter 1123=per 1028=ci 454=val -- a known-answer match on all five (grade C). So Pinkney's London
+  legation used **WE028** with Madison in January 1808, the same table H25 found Erving using privately with Monroe in
+  February 1806. Not the target's code (a known table; the target reads 25% under THE=972 and nothing under WE028 per
+  ARM-A2). KEY-OFFICES.tsv gains the usage row.
+- NARA M30 (Despatches from U.S. Ministers to Great Britain) is fully digitised (NARA's own "Digitized Microfilm" list,
+  Feb 2023): Vol. 15, 24 Apr 1806-29 Dec 1808 = reel 11, **NAID 188514748**, 320 frames, served as one whole-reel PDF
+  (`catalog.archives.gov/medialz/dc-metro/rg-059/603720/M30/M30-011/M30-011.pdf`, 289 MB, one request) besides the per-frame
+  IIIF v3 route ARM-IMG found. All 324 PDF pages rendered at 400 px and swept by eye on 17 contact sheets (scratch, not
+  committed): **no dense numeral-group passage on any frame** -- Pinkney's 1808 despatches and their enclosures (Canning
+  notes, Gazette clippings, consular letters) are clear. Sensitivity control (rule 3): the known five-group WE028 run in the
+  24 Jan 1808 despatch (frame 65 of this reel, the fair copy sent to the Department) is plainly readable at 1400 px but was
+  NOT spotted at sheet scale, so this negative covers passages of roughly twenty groups or more, not short runs; a short
+  Armstrong enclosure in cipher would need a frame-by-frame pass at 1400 px (324 frames, about 90 minutes of reads).
+- Maryland Center for History and Culture, Pinkney papers MS 1388 (ArchivesSpace at mdhistory.libraryhost.com, tree read
+  in full, 58 nodes): 41 family items 1796-1926, no Armstrong item, nothing catalogued as cipher; the only 1808 items are
+  two letters to his brother Ninian (28 Apr, 29 Aug 1808). mdhistory.org itself is Cloudflare-blocked; libraryhost is not.
+
+**Erving half** (H25 had already found the Erving-Monroe 5 Feb 1806 letter to be WE028 usage).
+- LOC James Madison Papers, `q=erving+cipher`: one item, **Erving to Madison, Madrid 24 March 1807, "Private No 21
+  Duplicate", headed "Cypher of the Legation", "Partly in cipher"** (mjm014714, 5 surfaces at master resolution, three
+  openings dense with groups, about 400 in all, no interlinear decode). 211 groups read at native from the second opening
+  (`corr/erving1807_groups.tsv`, grade S, one reader) and screened (`corr/screen_output.txt`): units 0/1 share on values
+  >= 100 **0.27** vs the target 0.59 (target subsampled at n=211: p05 0.54); groups above 1700 **0 of 211** vs the target
+  0.092 (p05 0.071); groups under 100 **0.07** vs 0.36 (p05 0.33); top-20 value overlap 5/211, exactly the random-draw
+  chance (0.41 of draws reach 3). **MISS, not the target's code on this sample.** It is not WE028 either: 1651, 1661 and 1603
+  (its three commonest values) are absent from the 1600-entry table and `926 594 524` would read "ou-lence-een"; the Madrid
+  legation's official cypher of 1807 is a third table, values to at least 1694, a repeated stock phrase
+  `1603 1583 926 594 524 1340 114 934 975` (three times on one opening) and superscript operator marks on some groups
+  (424^ 162^ 335^ 765^ 293^ 163^) -- the same after-group mark grammar the printed form of H14 describes. Recorded in
+  leads.tsv for KEY-OFFICES/KEY-DESIGN; not decoded (not this job).
+- NARA M31 (Spain) is digitised too: Vol. 10, 24 Aug 1805-19 Apr 1808 = reel 12, NAID 188605361 (628 PDF pages, 158 MB,
+  fetched); Vol. 9 = reel 11, NAID 188605226; Vol. 11, 14 May 1808-31 Dec 1810 = reel 13, NAID 188605987. Frames 481-628
+  of reel 12 (Erving's March-April 1808 despatches with their Diario de Madrid enclosures) swept at sheet scale: no dense
+  numeral passage. Frames 1-480 and reels 11 and 13 not swept in this box (H31 filed).
+- LOC Manuscript Division, George William Erving papers (300 items, 3 containers, 1 microfilm reel; chargé at Madrid
+  1804-09): the finding aid host findingaids.loc.gov is Cloudflare-challenged to curl and to `tools/browser_fetch.js`;
+  Wayback answered 503 (offline) at the same time; loc.gov's own search does not return the collection record. Owner's
+  desk: ASKS row 83. The 1890 memoir *Diplomatic services of George William Erving* (archive.org, OCR grepped) has no
+  Armstrong and its one "cipher" is a Monroe letter of 1814.
+- Founders Online / Rotunda: founders.archives.gov still answers 202 empty, Rotunda 403, Wayback 503 -- the Madison Papers
+  calendar for Pinkney/Erving enclosures could not be read from the cloud this pass (the LOC item-title tags above are the
+  substitute, and they are what found both coded letters).
+
+**Verdict for the target.** No second letter in the target's code in either pool; both coded items found are known tables
+(WE028 by known answer, the Madrid legation cypher by a control-backed screen at n=211). A pool that turns up nothing is a
+search result, not a negative (cycle 3's wording); the M30 sheet sweep is a negative for dense passages only. No target
+token decoded, no class change, status unchanged.
+
+Requests (all logged in `corr/requests.log`, one at a time, >= 1.6 s apart, browser UA, no 429): figgy.princeton.edu 3,
+iiif-cloud.princeton.edu 12, findingaids.library.upenn.edu 1, findingaids.princeton.edu 1 (Cloudflare), www.loc.gov 10,
+tile.loc.gov 13, archive.org 3, www.archives.gov 3, catalog.archives.gov 10 (3 headless renders, 4 HEAD, 3 GET incl. two
+whole-reel PDFs), mdhistory.libraryhost.com 3, www.mdhistory.org 1 (403), findingaids.loc.gov 2 (Cloudflare),
+web.archive.org 2 (000/503), founders.archives.gov 1 (202), masshist.org 1, genealogycenter.net 1 (404). No subagents; all
+image reads by this worker. Cost about 16 USD estimated (get_session carries no cost field on this session); the ROOM
+line at 01:26 that said "01:56 UTC" was an estimate, corrected at 01:30 (rule 6). Rate-limit status read allowed_warning at
+01:2x (BUDGETS.md: no new workers; none were started).

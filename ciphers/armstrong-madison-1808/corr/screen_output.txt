@@ -1,0 +1,25 @@
+REFERENCE
+target 20 Feb 1808           n= 369 dist= 216 max= 1900 | units0/1 >=100: 0.59 (n=237) 2-digit: 0.10 (n=115) | units2/3/5/9 >=100: 0.07 | >1700: 0.092 | <100: 0.36 | hundreds-blocks: 20 | top: 17x13 18x12 38x10 1x9 14x8 170x5 47x5 12x5
+THE=972 usage (4 letters)    n=  73 dist=  45 max= 1517 | units0/1 >=100: 0.07 (n=67) 2-digit: 0.00 (n=6) | units2/3/5/9 >=100: 0.42 | >1700: 0.000 | <100: 0.08 | hundreds-blocks: 14 | top: 1105x11 962x6 1086x5 38x3 1453x2 1097x2 897x2 427x2
+
+CANDIDATE ciphers/armstrong-madison-1808/corr/erving1807_groups.tsv
+erving1807_groups            n= 211 dist= 128 max= 1694 | units0/1 >=100: 0.27 (n=197) 2-digit: 0.14 (n=14) | units2/3/5/9 >=100: 0.34 | >1700: 0.000 | <100: 0.07 | hundreds-blocks: 17 | top: 1651x17 926x8 1661x7 133x7 69x5 1340x4 975x4 594x4
+   target@n     u01_big    p05=0.543 median=0.583 p95=0.635   candidate=0.269
+   target@n     above1700  p05=0.071 median=0.090 p95=0.109   candidate=0.000
+   target@n     under100   p05=0.327 median=0.360 p95=0.393   candidate=0.066
+   THE=972@n    u01_big    p05=0.075 median=0.075 p95=0.075   candidate=0.269
+   THE=972@n    above1700  p05=0.000 median=0.000 p95=0.000   candidate=0.000
+   THE=972@n    under100   p05=0.082 median=0.082 p95=0.082   candidate=0.066
+   top-20 overlap: candidate 5/211 shared with target top-20; THE=972 pooled sample 1/81; random-draw chance of >=3 at n=211: (0.41, [5, 3, 2, 2, 4, 3, 4, 2, 3, 1, 2, 2, 7, 1, 1, 2, 4, 2, 2, 2, 3, 6, 2, 0, 5, 3, 2, 1, 2, 1, 2, 1, 3, 2, 1, 2, 3, 3, 3, 0, 3, 1, 6, 0, 1, 0, 0, 2, 5, 0, 1, 1, 3, 1, 1, 3, 3, 4, 4, 2, 1, 2, 2, 5, 0, 3, 2, 0, 3, 3, 1, 3, 4, 2, 3, 5, 2, 2, 3, 1, 2, 2, 2, 0, 0, 6, 2, 3, 1, 3, 5, 1, 3, 5, 0, 2, 1, 0, 1, 3, 6, 2, 5, 4, 0, 3, 4, 3, 1, 0, 3, 1, 1, 2, 2, 1, 2, 2, 5, 3, 2, 3, 1, 2, 1, 3, 1, 2, 3, 3, 2, 3, 5, 3, 2, 5, 1, 2, 1, 1, 3, 3, 2, 1, 3, 2, 2, 2, 1, 2, 4, 4, 2, 3, 5, 5, 1, 3, 4, 4, 0, 0, 2, 3, 0, 3, 2, 2, 4, 1, 3, 0, 4, 2, 0, 3, 0, 2, 2, 3, 1, 4, 1, 4, 2, 3, 1, 2, 2, 0, 3, 2, 2, 3, 0, 2, 5, 3, 0, 0])
+   VERDICT: MISS (not the target's code on this sample)
+
+CANDIDATE ciphers/armstrong-madison-1808/corr/pinkney1808_groups.tsv
+pinkney1808_groups           n=   5 dist=   5 max= 1379 | units0/1 >=100: 0.00 (n=5) 2-digit: nan (n=0) | units2/3/5/9 >=100: 0.40 | >1700: 0.000 | <100: 0.00 | hundreds-blocks: 5 | top: 1379x1 1123x1 1028x1 454x1 134x1
+   target@n     u01_big    p05=0.333 median=0.500 p95=1.000   candidate=0.000
+   target@n     above1700  p05=0.000 median=0.000 p95=0.400   candidate=0.000
+   target@n     under100   p05=0.000 median=0.400 p95=0.800   candidate=0.000
+   THE=972@n    u01_big    p05=0.000 median=0.000 p95=0.333   candidate=0.000
+   THE=972@n    above1700  p05=0.000 median=0.000 p95=0.000   candidate=0.000
+   THE=972@n    under100   p05=0.000 median=0.000 p95=0.200   candidate=0.000
+   top-20 overlap: candidate 0/5 shared with target top-20; THE=972 pooled sample 1/81; random-draw chance of >=3 at n=5: (0.0, [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2])
+   VERDICT: MISS (not the target's code on this sample)
