@@ -1,0 +1,16 @@
+TARGET full: pairs 146, MI 0.293 bits, null mean 0.310, p95 0.395, percentile 38.3
+TARGET sub: pairs 236, MI 0.216 bits, null mean 0.214, p95 0.262, percentile 52.8
+
+design stat  windows mean MI mean null share>p95 share>p99
+A      full       60   0.205     0.212      0.08      0.02
+A      sub        60   0.115     0.120      0.07      0.02
+A2     full       60   0.133     0.196      0.00      0.00
+A2     sub        60   0.418     0.387      0.12      0.03
+B      full       60   0.898     0.875      0.10      0.03
+B      sub        60   0.406     0.393      0.05      0.00
+Bf     full       60   0.613     0.629      0.07      0.03
+Bf     sub        60   0.350     0.338      0.17      0.05
+C      full       60   1.369     1.341      0.13      0.05
+C      sub        60   0.521     0.508      0.07      0.05
+C2     full       60   1.341     1.318      0.05      0.02
+C2     sub        60   0.513     0.500      0.12      0.05

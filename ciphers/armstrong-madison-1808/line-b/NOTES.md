@@ -932,3 +932,32 @@ count, and not re-tuned a third time on the same feature/PCA/Ward knob; a differ
 descriptors, or a first-digit shape control on the left quarter of the numeral boxes) would be the next attempt, which is
 a new row, not a re-run. Files: `b39/boxes.py`, `cluster.py`, `boxes.npz`, `cluster_out_v1.txt`, `cluster_out.txt`.
 Needs: nobody. Result: dropped (instrument failed its known-answer control twice; no negative on the glyphs).
+
+## Step B40 (28 Sept 2026, 06:49-06:51 UTC)
+
+Question: do the units digits of consecutive 3- and 4-digit tokens depend on each other, as grammatical inflection slots
+would (ARM-DESIGN family C; B2's designs A/A2 put a fixed class in the units digit), rather than being arbitrary
+members of a row (designs B/Bf/C/C2)? Statistic: mutual information (bits) of the (unit_i, unit_{i+1}) table over
+consecutive token pairs both at or above 100, in the full reading order ("full", 146 pairs) and in the subsequence of
+tokens at or above 100 with particles skipped ("sub", 236 pairs). Null: the values at the positions at or above 100
+permuted among those positions, 1,000 draws. Controls: each of B2's six designs simulated on en18 at N=369, 60 windows,
+the same statistic and a 200-draw null per window, reported as the share of windows beating their own null p95 (chance
+0.05). Script `b40/unit_adjacency.py`, output `unit_adjacency_out.txt`.
+
+| | pairs | MI | null mean | null p95 | percentile |
+|---|---|---|---|---|---|
+| target, full | 146 | 0.293 | 0.310 | 0.395 | 38 |
+| target, sub | 236 | 0.216 | 0.214 | 0.262 | 53 |
+
+| design | share of windows > own p95 (full / sub) |
+|---|---|
+| A (inflection slots, two series) | 0.08 / 0.07 |
+| A2 (inflection slots, one series) | 0.00 / 0.12 |
+| B / Bf (alphabetical / frequency members) | 0.10 / 0.05, 0.07 / 0.17 |
+| C / C2 (three alphabetical tiers) | 0.13 / 0.07, 0.05 / 0.12 |
+
+Verdict: the target sits at its null, but the positive control has no power -- the inflection-slot designs' own
+simulations beat their null in 0-12 percent of windows, chance level, so at N=369 the units-digit order dependence
+English inflection produces is below what a 10x10 MI table can see. Non-test at this N (rule 3), not a negative on the
+inflection reading; a design-family discrimination on this axis would need a pooled sign count an order of magnitude
+larger (the selection rule's pools-first argument). Dropped (non-test). Needs: nobody.
