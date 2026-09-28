@@ -1,0 +1,97 @@
+frame	flag	note
+287	none	clear prose, letter no.26 to Madison, blank verso
+288	none	clear prose continuation
+289	none	clear prose; small marginal account figures (sum), not code
+290	none	clear prose, duplicate letters to Pedro Cevallos
+291	none	clear prose
+292	none	clear prose
+293	none	blank recto + clear prose (Spanish, No.1)
+294	none	clear prose
+295	none	clear prose
+296	none	clear prose (Spanish)
+297	none	clear prose
+298	none	clear prose (duplicate of 297)
+299	none	clear prose
+300	none	clear prose
+301	none	clear prose
+302	none	clear prose
+303	none	clear prose, letter no.28 to Madison
+304	none	clear prose
+305	none	clear prose
+306	none	clear prose
+307	none	clear prose
+308	none	clear prose
+309	none	clear prose
+310	none	clear prose
+311	none	clear prose
+312	none	clear prose
+313	none	clear prose
+314	none	clear prose
+315	none	clear prose
+316	none	clear prose
+317	none	clear prose
+318	none	clear prose
+319	none	clear prose
+320	none	clear prose
+321	none	clear prose
+322	none	clear prose/admin note, no numerals ("Nagotion" heading)
+323	none	clear prose, French numbered enumeration (items 1°-11°, ordinary list not code)
+324	none	clear prose (French)
+325	none	clear prose
+326	none	clear prose
+327	none	financial table: years 1807-1830 vs florin sums, total fl.38,463,136 - money table, not code
+328	blank	blank page, fold marks only
+329	none	clear prose
+330	blank	address/docket panel only ("Private", James Madison, June 22 1807)
+331	none	printed clear prose (Spanish periodical excerpt, p.1329)
+332	none	printed clear prose continuation
+333	none	printed clear prose + newspaper clipping (Rusia declaracion)
+334	none	printed clear prose (Gran Bretana declaration, p.1331)
+335	none	printed clear prose news items (Holanda/Espana), troop counts are ordinary narrative numerals
+336	none	mostly blank + clear prose Spanish letter start
+337	none	clear prose (Spanish legal doc, mentions 379 pesos - money)
+338	none	blank + clear prose English letter (no.29 to Madison)
+339	none	clear prose
+340	blank	mostly blank verso, only small docket/date jottings
+341	none	clear prose
+342	none	printed Gazeta Extraordinaria de Madrid, clear prose
+343	none	printed clear prose (war narrative, troop/cannon counts ordinary)
+344	none	printed clear prose continuation
+345	none	printed clear prose
+346	none	printed clear prose ("En la imprenta real")
+347	none	clear prose, letter to John Livingston Esq
+348	none	clear prose continuation
+349	none	blank + clear prose Spanish letter
+350	none	clear prose (duplicate of 349)
+351	none	clear prose
+352	none	clear prose
+353	none	clear prose
+354	none	clear prose
+355	none	clear prose
+356	none	clear prose
+357	none	clear prose
+358	none	clear prose
+359	none	clear prose, letter no.16 to Cevallos
+360	none	clear prose continuation (letter no.17), partial blank interleaf
+361	none	clear prose (Real/Havana case)
+362	code	despatch text refers to "Cypher writing" and carries embedded numeral groups amid prose, e.g. "143. 1210", "1651.134.43.1696.1651.738.133.1290.244", "1651.715.133.1651.134" (~20 numbers), alongside clear-prose letter no.24
+363	code	full page of numeral cipher text, ~150+ numbers separated by periods, occasional plain words interspersed
+364	code	full page continuing same numeral cipher, ~150+ numbers
+365	code	full page continuing numeral cipher, ~100+ numbers, ends "1519. 253. 262."
+366	none	clear prose (English letter, postscript)
+367	code	full page of numeral cipher continuing, ~100+ numbers
+368	code	top of page: ~15 numbers finishing cipher enclosure; rest of frame is blank + address panel ("Private", James Madison) + start of clear-prose letter no.26
+369	none	clear prose
+370	none	clear prose (quotes French phrases, no cipher numerals)
+371	none	clear prose
+372	code	full page of numeral cipher text, ~100+ numbers
+373	code	page mixing many numbers with words interlineated/above (draft cipher worksheet look), ~80+ numbers, signed by Irving
+374	none	blank + clear prose letter no.32 to Madison
+375	none	clear prose
+376	none	clear prose
+377	none	blank left + clear prose right
+378	none	clear prose
+379	none	clear prose
+380	none	clear prose
+m30-65	code	short run of 5 numbers embedded in prose: "154. 1779. 1075. 1058. 454"
+m30-66	none	clear prose
