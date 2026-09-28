@@ -2286,3 +2286,15 @@ row now carries H53, H61, H62/H63; 52's carries H57) and REGISTER-CHECKLIST.md (
 not change, only their evidence). In one sentence: the unread r16-r17 stretch fits the name Burgsdorf (the Elector's
 Oberkammerherr, at Cleves in 1647-48) better than any of 883 period names if, and only if, the nomenclature code 72 stands
 for the two letters "do" -- the office's habit, unattested for this key. Disk only; no token, grade or class change.
+
+## Campaign step H65 (2026-09-28 16:39 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative, with a precedent.** Meinardus, *Protokolle und Relationen des Brandenburgischen
+Geheimen Rates* (1889-1907), six IA copies (`bub_gb_EeYXAAAAYAAJ` = Bd. 3, `protokolleundre01meingoog`,
+`protokolleundre03meingoog`, `bub_gb_x-4XAAAAYAAJ`, `bub_gb_zuQXAAAAYAAJ`, `protokolleundre02meingoog`), _djvu.txt grepped on
+disk (archive.org 7 requests). "Mercy" occurs once in all six (a "Kapitän Mercy" in a muster list, Bd. 3); no Spanish
+envoy, Abt or Erzherzog passage is dated 1648 or tied to Mercy. The one Leopold Wilhelm mission found is Bd. 3 no. 501:
+**"Sendung des Freiherrn von Ribaucourt seitens des Erzherzogs Leopold Wilhelm an den Kurfürsten. Cleve. [15 August]
+1647"**, about restoring Count Schwarzenberg -- not Mercy's business, but a precedent a year earlier for the archduke
+sending an envoy to the Elector at Cleves (Ribaucourt, governor of Spanish Guelders, is the same man who wrote to
+Burgsdorf in Feb 1647, H43). Corroboration of the channel only. No token, grade or class change.
