@@ -1462,3 +1462,24 @@ in 194 tokens). Redone with M2's segmentation: 2 of the 16 marks fall at word en
 "pasareis a"? -- the end of "PASAREIS"; r16:10 the end of "EOPURA"), random placement over the same lines gives a
 mean of 3.09, 95th percentile 6, P(>= 2) = 0.86. The conclusion stands (the marks are not word separators under
 this reading); the numbers in the H13 section and CAMPAIGN.md's H13 row are superseded by these.
+
+## Campaign step H15 (2026-09-28 00:43-00:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Completeness check of the transcription by ink count (`h15count/README.md`,
+`counts.tsv`): numeral groups per full-cipher line from connected components, merged at 20 / 30 / 40 px, against
+`ciphertext.tsv`'s token count per line. Runner's own eye on the lines that stayed off; no subagent, no hosts.
+
+**Result.** Of 24 full-cipher lines, 13 match the token count exactly at one of the three thresholds, 8 are off by
+one at best, 3 are off by two or three at every threshold (r06 19 vs 22, r20 19 vs 21, r23 18 vs 20). All three
+were counted by eye on native-resolution crops: r06 22 groups, r20 21 (already counted in H2), r23 20 -- each
+exactly the transcription's count; the detector's deficit is touching digits written as one blob (r23 begins
+"18 6" written as "186"; r06 has "17 16" and "6 34" nearly joined). **No missing or extra token found on any
+full-cipher line at this instrument's resolution**; the eight off-by-one lines were not each re-read (five of
+them -- r14, r16, r17, v04, v07 -- already carry R7-MEYE's blind count, which agreed with the transcription, and
+r16/r17/v04 three further reads from H2/H10/H11). The mixed lines (r05, r07, r08, r11, r13, v09, v11, v13; 39
+cipher tokens between them) are outside this check.
+
+**Side finding for H13's inventory:** r06 carries two more dots the detector had merged into digits -- "18." at
+r06:16 and "8." at r06:17 (the r06 dot H13 could not place) -- so the mark inventory's floor is 18, not 16; the
+H13 conclusion (not word separators: 2 of 16, random mean 3.09) is unaffected in kind, and both new dots sit
+inside "Cheureuse" (e u r e u s e), not at a word end. No token changed, no grade changed.
