@@ -1,0 +1,47 @@
+{
+ "sets": {
+  "S00": "perm7",
+  "S01": "perm19",
+  "S02": "perm16",
+  "S03": "perm14",
+  "S04": "perm11",
+  "S05": "perm13",
+  "S06": "perm20",
+  "S07": "perm6",
+  "S08": "perm17",
+  "S09": "perm18",
+  "S10": "perm15",
+  "S11": "perm8",
+  "S12": "true",
+  "S13": "perm9",
+  "S14": "perm5",
+  "S15": "perm3",
+  "S16": "perm2",
+  "S17": "perm1",
+  "S18": "perm12",
+  "S19": "perm4",
+  "S20": "perm10"
+ },
+ "classes": {
+  "X1": "CA",
+  "X2": "LOOPBAR",
+  "X3": "ZHOOK",
+  "X4": "CROSS",
+  "X5": "LL"
+ },
+ "key_file": "key_period_v3.tsv",
+ "sizes": [
+  23,
+  11,
+  34,
+  8,
+  2
+ ],
+ "hidden_key": {
+  "CA": [],
+  "LOOPBAR": [],
+  "ZHOOK": [],
+  "CROSS": [],
+  "LL": []
+ }
+}

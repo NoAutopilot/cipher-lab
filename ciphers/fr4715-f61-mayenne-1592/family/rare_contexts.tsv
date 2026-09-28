@@ -6,6 +6,7 @@ CA	f.101r	L17	11	[d/a/q/n] [e/r/o] [u/o] [t/s/f]	[e/r/o] [n/a/c/p] [m/t/c/p/n/s]
 CA	f.101r	L21	25	[d/q/i] [e/r/o] [t/s/f] [t/s/f]	[e/r/o] [e/r/o] ? ?	0
 CA	f.101r	L21	55	[e/r/o] [i/j/y] [e/r/o] [n/a/c/p]	[s/f] [t/s/f] [e/r/o] [e/r/o]	0
 CA	f.101r	L41	54	[e/r/o] [u/e] [i/j/y] [n/a/c/p]	[e/r/o] [e/r/o] [t/s/f] [e/r/o]	0
+CA	f.124r	L35	15	[e/r/o] [i/j/y] [e/r/o] ?	? ? [e/r/o] [t/s/f]	0
 CA	f.188r	L02	40	[n/a/c/e] [e/r/o] [m/s] [i/j/y]	{dailleurs} |	0
 CA	f.188r	L17	34	[n/a/c/p] [n/a/c/p] [e/r/o] [n/a/c/p]	[e/r/o] s [t/s/f] [n/a/c/p]	1
 CA	f.188r	L21	23	[e/r/o] s [e/r/o] s	? [e/r/o] [e/m] [e/r/o]	2
@@ -25,6 +26,9 @@ CA	f.61r	L10	12	[u/e] ? e [e/r/o]	e |	2
 LOOPBAR	f.101r	L09	45	[t/s/f] ? r [e/r/o]	[d/q/i] [i/j/y] [t/s/f] [n/a/c/e]	1
 LOOPBAR	f.108v	L02	28	[u/e] [l/s/a] [e/r/o] [m/s]	[a/n] [t/s/f] [d/q/i] [u/e]	0
 LOOPBAR	f.108v	L03	34	[e/r/o] [a/n] ? [d/q/i]	[a/n] [e/r/o] [m/s] [d/q/i]	0
+LOOPBAR	f.124r	L12	14	[i/j/y] [t/s/f] [e/r/o] [e/r/o]	[t/s/f] [n/a/c/p] [n/a/c/p] [n/a/c/p]	0
+LOOPBAR	f.124r	L14	31	[t/s/f] ? ? [u/o]	[n/a/c/p] [i/j/y] [t/s/f] ?	0
+LOOPBAR	f.124r	L15	21	[n/a/c/p] [u/o] r ?	[n/a/c/p] [n/a/c/p] [u/o] [t/s/f]	1
 LOOPBAR	f.188r	L19	1	|	[i/j/y] ? s [e/r/o]	1
 LOOPBAR	f.61r	L03	2	| ?	r [e/r/o] s [t/s/f]	2
 LOOPBAR	f.61r	L03	12	[a/n] ? [n/a/c/p] e	[a/n] [e/r/u] [l/s/a] |	1
@@ -60,12 +64,16 @@ ZHOOK	f.108v	L06	33	[e/r/o] s s [a/n]	[e/r/o] [e/r/o] s ?	3
 ZHOOK	f.108v	L07	3	| [a/n] [t/s/f]	[l/s/a] [a/n] [l/s/a] [a/n]	0
 ZHOOK	f.108v	L07	31	[a/n] [t/s/f] [e/r/o] [a/n]	[e/r/o] ? [n/a/c/e] [e/r/o]	0
 ZHOOK	f.108v	L07	44	[a/n] [e/r/o] [l/s/a] s	|	1
+ZHOOK	f.124r	L39	45	? ? [u/o] [n/a/c/p]	[u/o] [u/o] [i/j/y] [e/r/o]	0
 ZHOOK	f.61r	L07	3	| ? ?	[m/s] [l/s/a] e [e/r/o]	1
 ZHOOK	f.61r	L07	11	[e/r/o] [u/e] s ?	|	1
 ZHOOK	f.61r	L11	11	[e/r/o] [n/a/c/e] [d/a/q/n] [e/r/u]	[t/s/f] |	0
 CROSS	f.101r	L26	23	[d/q/i] [e/r/o] [e/r/o] [t/s/f]	[d/q/i] [n/a/c/p] [e/r/o] [t/s/f]	0
 CROSS	f.108v	L03	41	[m/s] [d/q/i] ? [l/s/a]	[e/r/o] s |	1
 CROSS	f.108v	L06	4	| [e/r/o] ? [n/a/c/e]	[e/r/o] ? [n/a/c/e] [t/s/f]	0
+CROSS	f.124r	L09	30	[n/a/c/p] [e/r/o] ? [u/o]	l [n/a/c/p] ? [e/r/o]	1
+CROSS	f.124r	L17	14	[n/a/c/p] [u/o] [e/r/o] [i/j/y]	[e/r/o] [n/a/c/p] [e/r/o] [u/o]	0
+CROSS	f.124r	L33	61	[d/q/i] ? ? [u/o]	? [m/s] |	0
 CROSS	f.61r	L01	1	|	e [a/n] [u/e] [e/r/o]	1
 CROSS	f.61r	L07	10	e [e/r/o] [u/e] s	? |	2
 LL	f.188r	L01	28	{ll-like} [n/a/c/e] [u/o] [n/a/c/e]	[n/a/c/e] [e/r/o] [s/f] [n/a/c/p]	0
