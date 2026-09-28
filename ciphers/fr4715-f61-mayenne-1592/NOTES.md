@@ -3003,3 +3003,10 @@ fr.2751 f.116 lead, H143/H144, is de Diou's hand, not f.61's). No reading, no cl
 fresh bootstrap and leaf by leaf. **Pooled: g/t wins 41/50** (gate >= 48); leaves: g/t higher on f.97r, f.101r, f.188r,
 t/s higher on f.124r (3 of 4). **DOES NOT STAND** as pre-registered: H146's 29/30 does not replicate at the 95% level (41/50
 = 82%). VBAR_A g/t is a lean, not a result; `family/PROPOSAL_H146.md` is corrected to say so. No reading, no class change.
+
+## Campaign step H152 (28 Sept 2026, 19:40-19:42 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61seqgain_108v_boot.py` (pushed 9948e9f7 before the run; `f61seqgain_108v_boot_result.txt`): 30 bootstrap resamples
+of f.108v's seven lines, the fitted 14-cell map's sequence gain ranked among 50 permuted maps in each. **Rank 1 in 29 of 30
+(once rank 2) -> STANDS** (gate >= 27). H127's "f.108v is enciphered in f.61's cells" survives resampling of its lines. No
+reading, no class change.
