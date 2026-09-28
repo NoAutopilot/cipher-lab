@@ -70,3 +70,15 @@ f428R_L14	5	1203	-	high	-
 f428R_L14	6	157	-	medium	matches value seen f428L L20 (recorded there as uncertain "1?7")
 f428R_L14	7	1146	-	medium	close to 1147 (f428L L23, f428R L02) but read with final digit 6 here
 f428R_L14	8	208	-	high	right edge area
+f428R_L15	1	605	-	medium	line: "605. upon the well pronounced 603. 133. 1651. 730."; faint phrase "character of the [ambassador?]" above may belong to context row, not assigned
+f428R_L15	2	603	-	high	-
+f428R_L15	3	133	-	medium	repeats value seen f428L L23/f428R L01/L04/L06
+f428R_L15	4	1651	-	high	repeats value seen f428R L05/L06(context)/L08
+f428R_L15	5	730	-	medium	repeats value seen f428R L08
+f428R_L16	1	1651	the	low	line: "upon 1651. 1541. 1240. 674. 1512. 1166. 381."; faint phrase "the example which lay before us" above spans these 7 groups, alignment approximate
+f428R_L16	2	1541	example	low	4th char A-shaped glyph read as cursive 4 (cf. pattern elsewhere)
+f428R_L16	3	1240	which	low	-
+f428R_L16	4	674	lay	low	-
+f428R_L16	5	1512	before	low	-
+f428R_L16	6	1166	us	low	-
+f428R_L16	7	381	-	high	repeats value seen f428R L14
