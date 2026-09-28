@@ -72,22 +72,22 @@ def main():
            f"clear lines {order[0]}-{order[-1]}, {len(text)} letters, N {N}",
            f"whole-stretch match: fol. 177r {ft:.3f} vs wrong f.184r {fw:.3f} (margin {ft - fw:+.3f})", "",
            "class\tv4 set\ttrue: letters (n)\twrong: letters (n)\tin-set share true / wrong"]
-    for c in sorted(set(ct) | set(cw), key=lambda c: -sum(ct[c].values())):
+    for c in sorted(set(ct) | set(cw), key=lambda c: (-sum(ct[c].values()), c)):
         vs = key.get(c, ()); nt = sum(ct[c].values()); nw = sum(cw[c].values())
         st = sum(ct[c][x] for x in vs) / nt if nt else 0; sw = sum(cw[c][x] for x in vs) / nw if nw else 0
-        fmt = lambda C: " ".join(f"{x}{n}" for x, n in C.most_common(6))
+        fmt = lambda C: " ".join(f"{x}{n}" for x, n in sorted(C.items(), key=lambda t: (-t[1], t[0]))[:6])
         out.append(f"{c}\t{'/'.join(vs) or '-'}\t{fmt(ct[c])} ({nt})\t{fmt(cw[c])} ({nw})\t{st:.2f} / {sw:.2f}")
     out.append("")
     for c in RARE:
         if ct[c]:
-            x, n = ct[c].most_common(1)[0]; ok = n >= 3 and n > cw[c][x]
+            x, n = sorted(ct[c].items(), key=lambda t: (-t[1], t[0]))[0]; ok = n >= 3 and n > cw[c][x]
             out.append(f"rare {c}: true top {x} {n} of {sum(ct[c].values())}, wrong-text count of {x} {cw[c][x]} -> {'candidate' if ok else 'not reported'}")
     out.append(""); out.append("H178: letters opposite 1:1 disputed columns (A code | B code), true / wrong, pairs with n >= 3 under the true text")
-    for pr, C in sorted(DISP["true"].items(), key=lambda x: -sum(x[1].values())):
+    for pr, C in sorted(DISP["true"].items(), key=lambda x: (-sum(x[1].values()), x[0])):
         if sum(C.values()) >= 3:
-            W = DISP["wrong"][pr]; fmt = lambda C: " ".join(f"{x}{n}" for x, n in C.most_common(6))
+            W = DISP["wrong"][pr]; fmt = lambda C: " ".join(f"{x}{n}" for x, n in sorted(C.items(), key=lambda t: (-t[1], t[0]))[:6])
             out.append(f"{pr[0]}|{pr[1]}\t{fmt(C)} ({sum(C.values())})\t{fmt(W)} ({sum(W.values())})")
-    rows = [f"{c}\t{x}\t{n}\t{LEAF}\tDP stage {want[0]}-{want[-1]}" for c in sorted(ct) for x, n in ct[c].most_common()]
+    rows = [f"{c}\t{x}\t{n}\t{LEAF}\tDP stage {want[0]}-{want[-1]}" for c in sorted(ct) for x, n in sorted(ct[c].items(), key=lambda t: (-t[1], t[0]))]
     tsv = ("# key_period_f176.tsv -- H177 (runner 6), build_f176_key.py " + sys.argv[1] + ": set-anchored DP pairs, consensus signs only; "
            "key source period; NOT merged into v4 (a verifier's)\nclass\tletter\tn\tleaf\tbands\n" + "\n".join(rows) + "\n")
     txt = "\n".join(out) + "\n"; res = f"{HERE}/build_f176_key_result.txt"; kf = f"{HERE}/key_period_f176.tsv"
