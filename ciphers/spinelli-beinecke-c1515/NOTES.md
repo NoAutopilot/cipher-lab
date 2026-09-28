@@ -540,3 +540,37 @@ it16 corpus, N=265, K=26), which is the design-matched test the key-as-read coul
 
 **Cost:** no subagent; script only -- recorded as 0.5 USD (est 1.0). No network requests. No credentials, no
 AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H12 (28 Sept 2026, 00:14 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H12: the 265-sign code profile against Italian as a homophonic
+design, with controls. Script `passes/freq_profile.py`.
+
+**Result: no code is vowel-like above the shuffled-order null; the profile is that of a simple substitution with
+nulls and one over-merged family, not a flattened homophonic cipher.** Numbers: 25 distinct codes over N=265;
+**index of coincidence 0.0858** against 0.0754 for it16 Italian samples of the same N and 0.0384 for uniform random
+26-symbol text -- the cipher text is MORE repetitive than plain Italian, the opposite of what a homophonic key
+designed to flatten frequencies produces; the excess is HOOK (59 signs, 22.3%, a family of at least six shapes that
+H15 had to merge to pass the agreement gate) plus the nulls (OMEGABAR, PI, EIGHT, EM, EREV: 44 signs, 17%, if the
+key's null block is right). Rank/frequency: HOOK 22.3, SEVEN 9.8, TWO 7.5, OMEGABAR 6.8, NINE 6.4, THREE 5.3, EIGHT 5.3,
+SIX 4.5, XCURL 3.8, PHI 3.4, FOUR 3.0, DIAMOND 3.0, THETA 2.6, HCURL 2.6, EM 2.6 against it16 e 12.4, i 10.6, a 10.2,
+o 9.5, r 6.8, n 6.7, t 6.2, s 5.8, l 5.5, u 4.8, c 4.5, d 4.1. Sukhotin's vowel algorithm: calibrated on 20 it16 samples
+of N=265 it finds 4.0 of the 5 vowels with 1.4 false vowels, so it has power at this length on plain substitution;
+on the cipher it names HOOK, TWO, OMEGABAR, EIGHT, ESS, PLUS, EREV, OMEGADOT; on 20 order-shuffled copies of the
+cipher (no contact structure) it names HOOK 20/20, SEVEN 16/20, TWO 11/20, NINE 10/20, ENN 10/20, EIGHT 9/20,
+OMEGABAR 8/20 -- so HOOK and TWO being named on the real text is a frequency artefact the null reproduces, not
+evidence. The one signal beyond the null is negative: SEVEN, NINE, ENN and FOUR, which the shuffled null names
+vowel-like half the time or more, are NOT named on the real text, so they behave as consonants (or nulls). Nothing
+here identifies a vowel code.
+
+**What follows:** with HOOK carrying 22% of the text as one code, no solver can read it (six letters' worth of
+signal collapsed into one symbol); H16's family run must either treat HOOK as an unknown-multiplicity homophone
+group or wait for H14 to split HOOK on the zoomed crops into its v2 members (ELOOP, ECAP, RHO, TLOOP, UCURL, MU) with
+a fresh pass pair at the family level only. Re-rank: H14 (settle the segmentation and split HOOK on the crops4x
+montages, rank 5, still open) before H16; H13 (key word-code fix) stays a cheap cleanup.
+
+**Controls:** the it16 same-N calibration (power) and the order-shuffled null (specificity) above. No reading, no
+class change.
+
+**Cost:** script only -- recorded as 0.5 USD (est 1.0). No network requests. No credentials, no AskUserQuestion,
+rule 10 wording, no other target touched.
