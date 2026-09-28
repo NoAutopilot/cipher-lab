@@ -1,0 +1,5 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+g22	i	g	high	guarde;ninguna
+END
+SEGMENTED: oforde uartugol sucuneso a quien ello quisiese aepponde a que teneo orden desion de para slruor as mencuant alemos dose para pedir ninguna pade emias y se prido ee sdedr sesl canic nenos ootoas recibi esto semanales caias y con el correo lose

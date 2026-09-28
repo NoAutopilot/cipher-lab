@@ -1,0 +1,12 @@
+A high         changes  2 right  2 (prec 1.00) wrong-glyphs fixed 2/9 letters 0.921 -> 0.935 (ceiling 0.954)
+A high+medium  changes  2 right  2 (prec 1.00) wrong-glyphs fixed 2/9 letters 0.921 -> 0.935 (ceiling 0.954)
+A all          changes  2 right  2 (prec 1.00) wrong-glyphs fixed 2/9 letters 0.921 -> 0.935 (ceiling 0.954)
+B high         changes  1 right  1 (prec 1.00) wrong-glyphs fixed 1/12 letters 0.804 -> 0.818 (ceiling 0.906)
+B high+medium  changes  1 right  1 (prec 1.00) wrong-glyphs fixed 1/12 letters 0.804 -> 0.818 (ceiling 0.906)
+B all          changes  1 right  1 (prec 1.00) wrong-glyphs fixed 1/12 letters 0.804 -> 0.818 (ceiling 0.906)
+D high         changes  0 right  0 (prec 0.00) wrong-glyphs fixed 0/8 letters 0.921 -> 0.921 (ceiling 0.952)
+D high+medium  changes  0 right  0 (prec 0.00) wrong-glyphs fixed 0/8 letters 0.921 -> 0.921 (ceiling 0.952)
+D all          changes  0 right  0 (prec 0.00) wrong-glyphs fixed 0/8 letters 0.921 -> 0.921 (ceiling 0.952)
+C target: blind glyphs differing from key.tsv: 13
+  g47=24 l->h medium: key.tsv h AGREE
+  reader changes 1, agree with key.tsv 1; M2 changes recovered 1/12

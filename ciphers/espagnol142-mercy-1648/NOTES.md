@@ -1667,3 +1667,32 @@ spelled out), **Saint-Ibal** (Chevreuse's agent, in the same talks per Lonchay -
 Lorraine** (a title after "del", could join Mercy -- fits both), Piccolomini (fits the second only). **Two names fit
 both contexts, so by this row's own rule no candidate is graded**; the boxed 101 stays `_` (M). If the Brussels
 register (H17, ASKS 82) lists a boxed 101, it decides. No hosts; no token or grade changed.
+
+## Campaign step H30 (2026-09-28 14:20-14:28 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** The reader-on-control instrument H27 asked for. Four blind Sonnet readers, one packet
+each (`cheap_test_1/h30/packet_{A,B,C,D}.txt`, built by `h30/build.py`): the es17c7 blind decode, a key table and the
+glyph of every letter, glyphs relabelled `g10..` so no reader could tell target from control; asked for key changes
+(a glyph re-lettered everywhere) with confidence and evidence words, no single-position rewrites. A, D = 5%-corrupted
+design-matched controls (H27 seeds 1, 3), B = 10% seed 2 (the control with the most headroom, 12 wrong glyphs --
+the same count as M2's corrections on the target), C = the target (`target_marks_es17c7_seed2.json`, no clear context,
+as the controls have none). Scorer `h30/score.py`, output `h30/score.log`; truth for a control glyph is its majority
+plaintext letter, and "ceiling" is the best any key reaches (corrupted signs are unrecoverable).
+
+| packet | blind letters | reader changes | right | wrong glyphs fixed | letters after | ceiling |
+|---|---|---|---|---|---|---|
+| A (5%, s1) | 92.1% | 2 (high) | 2 | 2 of 9 | 93.5% | 95.4% |
+| B (10%, s2) | 80.4% | 1 (high) | 1 | 1 of 12 | 81.8% | 90.6% |
+| D (5%, s3) | 92.1% | 0 | 0 | 0 of 8 | 92.1% | 95.2% |
+| C target | 87.7% agree with key.tsv | 1 (medium): code 24 l->h ("mil hombres de infanteria") | agrees with key.tsv | 1 of M2's 12 | -- | -- |
+
+**Reading.** The instrument is **high-precision, low-recall**: 3 of 3 control proposals right (precision 1.00 on
+N=3 -- small), 3 of 29 wrong glyphs found (10%), gains of 0 to +1.4 letter points against 1-10 points of headroom.
+On the target the one proposal agrees with M2's key (24 = h). So (a) a reader proposal, where one is made, is
+trustworthy at this N on the controls, and the target's one agrees with M2 -- a small positive for M2's method;
+(b) a reader's *silence* is not evidence against a key value: at 10% recall, M2's other 11 corrections (13=y,
+15=n, 20=f, 21=i, 22=g, 25=u, 26=i, 33=e, 34=a, 65=s, 72=z) are neither confirmed nor refuted by this single
+blind pass. The gate this row set for hand corrections is therefore met on precision only; it cannot license M2's
+full correction set. The instrument that can is a verify mode (H33): hand the reader candidate changes, true and
+decoy mixed, on controls first, and measure accept/reject discrimination before putting M2's 11 through it.
+Cost: four Sonnet calls, text only (no vision). No token, grade or class change.
