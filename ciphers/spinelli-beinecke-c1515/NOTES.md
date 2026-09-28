@@ -841,3 +841,29 @@ remaining routes are documents: Domnina's Fig.1 (H6/H8/H23) and the reproduction
 
 **Controls:** the masc control above (0.959). No reading, no class change. **Cost:** three family_run invocations,
 seconds of CPU -- recorded as 1.0 USD (est 5). No requests. No credentials, no AskUserQuestion, rule 10 wording.
+
+## Campaign step H23 (28 Sept 2026, 00:50-00:51 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H23: an open-index copy of Domnina's paper. Keys checked by
+name only (CORE_API_KEY, OPENALEX_KEY, S2_KEY, GOOGLE_BOOKS_KEY all present), sent as headers or query parameter per
+CLAUDE.md's access playbook, never printed. Five requests, all HTTP 200.
+
+**Result: no open-access copy located; two later works that cite the paper found.**
+- CORE `"Ciphers in Early Tudor Diplomacy" OR (Domnina Spinelli cipher)`: 0 hits.
+- OpenAlex `Domnina "Early Tudor Diplomacy" ciphers`: 1 hit, not Domnina's -- **Sergey M. Ryabov, "Secrets of the
+  Foreign Policy of the Last Valois in Northern Europe: The Diplomatic Cipher of Charle[s IX?]...", Quaestio Rossica
+  2025, doi 10.15826/qr.2025.4.1034, open access at the DOI** -- a 2025 paper on 16th-century diplomatic ciphers that
+  OpenAlex matches to the query, so it likely cites Domnina; not fetched this step (H24).
+- Semantic Scholar: 1 hit, a 2013 review of Adams and Cox, *Diplomacy and Early Modern Culture* -- not it.
+- Google Books API (`country=US`): 3 hits; one relevant -- **Georg R. Kaulfersch, *Ein Gesandter in der ersten
+  Sattelzeit der Diplomatie* (2025), PARTIAL view, id y1ZVEQAAQBAJ**, whose snippet reads "Domnina, Ekaterina, Ciphers
+  in Early Tudor Diplomacy. The Case of Tommaso Spinelli's Private Le[tters ...]" -- the paper's full title, and a
+  2025 monograph on an early-16th-century envoy (Spinelli?) that cites it; the two 1848 *Documenti infami* hits are
+  noise. A second query (`"Ciphers in Early Tudor Diplomacy" Spinelli`) returned 0.
+So Domnina's PDF stays unreachable (istina 404 / timeout, IA offline, no OA mirror in three indexes); the paper's full
+title is now on file for the verifier's search log and a JSTOR row (H9), and two 2025 works cite it -- Kaulfersch's
+book may quote or reproduce her cipher table (a Google Books snippet search inside that volume for "Spinelli" and
+"cipher" is one cheap next request), and Ryabov's OA paper can be fetched and grepped (H24).
+
+**Requests:** api.core.ac.uk 1, api.openalex.org 1, api.semanticscholar.org 1, www.googleapis.com 2. **Cost:** recorded
+as 0.3 USD (est 0.5). No credentials printed, no AskUserQuestion, rule 10 wording, no other target touched.
