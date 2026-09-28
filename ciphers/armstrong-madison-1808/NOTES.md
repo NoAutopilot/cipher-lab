@@ -3082,3 +3082,46 @@ agrees with the legation table's family and with H38's MISS; the legation table 
 glosses are the period clerk's decode of catalogued NARA despatches, nothing called new or first.
 
 Requests: none. Vision: 0. Cost: about 1.5 USD (`--spend` records 1.5 of the row's 2).
+
+## Campaign step H45 (28 Sept 2026, container clock; see the CAMPAIGN.md log line)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H45: a cloud route to the Wouves 1797 table (H6's blocker) before H6 files an ASKS row.
+
+**Routes tried (one request each unless stated, 1.6 s apart):** Wellcome catalogue API (works/jegb9q9f): "Tableau
+syllabique et steganographique ... = A Syllabical and steganographical table", P. R. Wouves, Philadelphia, Benjamin
+Franklin Bache, 1797; availability "Online" only through EBSCO/ECCO (ebs13612692e), no Wellcome digitisation. Internet
+Archive advancedsearch (Wouves; title words in English and French): no item. Google Books API (key, country=US): the
+1797 volume EQtQkgAACAAJ, NO_PAGES; nothing else. HathiTrust bibliographic API (OCLC 55825890 from Open Library): no
+record. DPLA (key): 0. Gallica SRU: no hit. Evans-TCP at quod.lib.umich.edu: HTTP 403 (not retried). **Library of
+Congress, "Copyright Title Pages, 1790-1801" (item 2020365001, full-text file): Wouves's own copyright deposit No. 192,
+9 Nov 1797** -- the English and French title pages and the full printed "Elucidations", but **not the table**. Excerpt
+kept unmodified in `sources/loc-copyright-title-pages/` (README gives the URLs and sha1). So the table is still only
+behind ECCO (CB0131087164) or a physical copy: ASKS row filed (below), H6 stays `doc`.
+
+**What the deposit gives (primary, the author's own words; grade H for the mechanism, not for any value):** 62
+alphabetical columns; every numerical column "numbered from 1. to 99." (row 0 does not exist); each column gets a
+hundred "taken at random", recommended 100 to 6200 (one per column, so a full table spans 62 hundred-blocks); an
+entry is hundred + row (their example: third column at 6200, row 22 -> 6222); at most three letters per entry, a
+word divided into parts is hyphenated (5347-3928-6222) and every word ends with a stop; a dot under a number marks an
+accent; a list of hundreds and a sliding paper slip let one table serve several correspondents; and (French text,
+"De la Sureté du Secret") correspondents may add or subtract an agreed constant from every number.
+
+**Mechanism-level screen of the target (offline, counting; the table's syllables are not needed for it):** the target
+(ciphertext.txt, 369 groups, 216 distinct, values 1-1900) has 132 groups (48 distinct values) below 100 and uses 20
+hundred-blocks (0-19), none of them hyphen-joined (0 hyphens). Under the printed design without an offset, values below
+101 cannot occur: excluded. With the agreed-constant variant, a letter's values fall inside a 20-block window only if
+every column it uses drew its hundred from the same 20 consecutive of the 62; with m >= 20 columns used (each observed
+block needs at least one) and hundreds assigned at random as the author instructs, that probability is at most 43 x
+C(20,m)/C(62,m) <= 43/C(62,20), about 6e-15. And one column (two initial-letter classes of syllables) would carry 36
+percent of the text (the sub-100 block). So Wouves as printed and used as its author instructs does not fit the
+target's value range; what survives is a non-random hundred assignment (the text's columns all given hundreds 1-19),
+which the counting cannot exclude. This agrees with the ChatGPT continuity note (second-opinions/chatgpt-continuity-
+2026-09-27.md: offsets constrain but do not exclude) and line B's B1 (Wouves layout r_row -0.063). It is a structural
+screen, not H6's value-level screen, and is not logged as a design-family negative (no matched synthetic control:
+building one needs the table's column contents); H6 stays open on the document.
+
+No reading of the target, no class change; rule 10: a catalogued 1797 imprint, nothing called new or first.
+Requests: api.wellcomecollection.org 1, archive.org 4, googleapis.com 4, openlibrary.org 2, catalog.hathitrust.org 1,
+api.dp.la 1, gallica.bnf.fr 1, quod.lib.umich.edu 1 (403), loc.gov 4 (one HTTP/2 stream reset, not retried),
+tile.loc.gov 1. Vision 0. Cost: about 1 USD (`--spend` records 1 of the row's 2).
