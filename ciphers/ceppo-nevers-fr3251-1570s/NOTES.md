@@ -576,6 +576,11 @@ upright instead of leaning. The likelier explanation is that the f.11r pound sig
 at its printed value l. That would be a transcription look-alike (S84 taken for S31), not a variant sign outside the
 table. This is an inference (M), not a gloss on an f.11r sign. If it holds, the seven f.11r pound positions read l at the
 printed value of S84, and the override in `exceptions_f11.tsv` becomes a transcription relabel.
+**Counter-evidence, found later the same session:** fr.3251 f.21v cipher line 5 (`harvest/f21v/lines/f21v_L05_s1.png`)
+has a crossed-loop sign like S84 *and* a pound-shaped sign a few signs apart in one line. In Birago's own letters,
+then, the two forms may be distinct signs, and the upright-S84 explanation is weaker than stated above. The pound
+sign's value stays open between l (f.11r context, I grade) and whatever a gloss on the sign itself says. No witness
+gloss on that exact form has been read yet.
 
 **What was not done.** Four Sonnet blind passes on the 1x crops (A/B x two leaves) returned all glosses "?" and
 guessed sign ids. They were rejected unused (`harvest/witness_f36/passes/README.md`). No full alignment of the
@@ -589,3 +594,39 @@ seven pound-sign positions and r for the double-barred oval.
 
 Requests (witness): gallica.bnf.fr 11 (manifest 1, four overviews, six regions), 2 s apart; de-crypt.org 2; web
 search 2; github.com 1 clone (read only). Subagents: 4 (rejected).
+
+## HARVEST-D: fr.3251 f.21v, f.35, f.87 and the 1572 group -- images in hand, held before the blind passes (28 Sept 2026)
+
+**Intake.** HARVEST-C's section above covers these three folios, run the same day (28 Sept 2026): the web and blog
+step with three folio-specific searches, DECODE local and live (holder LIKE 3251: none, with the 3621 positive
+control), and Aymeloglu's decode-catalog.csv (no fr.3251 record). No prior reading, so none is found-solved.
+`tools/intake_gate_check.py ceppo-nevers-fr3251-1570s`: exit 0.
+
+**Images (the block HARVEST-C hit has lifted).** Gallica btv1b9060248g served again at 20:16-20:28 UTC, 28 Sept 2026.
+One 1400 px overview and one native region per folio, plus one wider re-fetch per folio after the first regions clipped
+the line starts (9 requests). The images confirm the layout. f.21v is the left page of canvas 23 (canvas 23's right
+page is foliated 22 and is blank); about 11 lines of cipher mixed with prose run from "quattro motti" to "Io Resto in
+pena". f.35 (canvas 36, recto, foliated 35) has two cipher lines near the foot, after "a questo particolare". f.87
+(canvas 88, recto, foliated 87) has six cipher lines at the foot, after "mandatome qua dal sig. Cornelio Benti-voglio
+per alcuni suoi particolari". None of the three has an interlinear gloss. Files: `harvest/f21v/`, `harvest/f35/`,
+`harvest/f87/` (overview, `c*_cipher_w.jpg` native region, `manifest.json`). `harvest/cut_folio_lines.py` cuts the
+1x line crops (f.21v 33 segments, f.35 6, f.87 18; crops are not committed, one command regenerates them). The line
+centres were checked by eye on one crop per folio.
+
+**Held: no blind passes, decode or controls run.** At 20:27 UTC, this worker's own session metadata read rate-limit
+status `allowed_warning`. Under BUDGETS.md's scaling rule that means no new workers anywhere, so the four subagent
+blind passes these folios need were not started. The only subagents this job ran were the four witness passes,
+launched before the warning was seen. The folios are held, not negative: nothing was read.
+
+**Next step (named):** once the rate-limit status reads `allowed`, a fresh session runs `python3
+harvest/cut_folio_lines.py` and gives two Sonnet passes per folio the crops and `harvest/sign_sheet_blind.png`. The
+passes must add a NEW row for signs not on the sheet: the double-barred oval, and the pound-shaped sign, which appears
+on f.21v line 5 next to an S84-like sign. Then comes a value-blind reconciliation, then `harvest/decode_control.py`
+(200 shuffles plus the power control) with r for the double-barred oval (witness f.36v, above), then
+`harvest/verify_mk_blind.py`. Order by size: f.87 (six lines), f.21v, f.35 (two lines, probably under the control's
+power floor). The 1572 group (`ciphers/nevers-birago-fr3251-1572`, key `keys/key_nevers_birago_1572.tsv` on disk)
+first needs a value-blind sign sheet cut from `NeversBirago.png`, then the same passes. It is held on the same
+warning.
+
+Requests (folios): gallica.bnf.fr 6 (three overviews, three regions) + 3 (wider regions). Total Gallica this job: 20
+(11 for fr.3252, 9 for fr.3251), all 2 s apart, browser UA, no refusals.
