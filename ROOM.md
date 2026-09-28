@@ -4317,3 +4317,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-28 18:06 | campaign runner fr4715-f61-mayenne-1592 (owner account, session_01RbeePKZVn83gNfES8yFmhe) | campaign fr4715-f61-mayenne-1592 step H129: sequence gain of the f.61 cells on six family leaves, script-only, cap 0.5 USD, box 60 min
 2026-09-28 18:07 | campaign runner fr4715-f61-mayenne-1592 (owner account, session_01RbeePKZVn83gNfES8yFmhe) | campaign fr4715-f61-mayenne-1592 step H131 done (script-only, run while H129 computes): the beam misses on span S3 are mostly the a/n cell (three C43 choices all inverted) plus two low-confidence signs; spent today 345.12/600
 2026-09-28 18:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 18:09 UTC: spawned 0 (), queued left 0
+2026-09-28 18:11 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 18:11 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued; Fable rate limit allowed), queued left 0
