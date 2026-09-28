@@ -1518,3 +1518,27 @@ pre-registered re-run with the class scope fixed) is the route: H24b restricts t
 C43 signs, labels a 13 / n 5), excludes the 6-figures, loops and lone 4s explicitly, and asks for x positions so a
 mismatch can be diagnosed -- a re-run with one pre-registered fix, not a third try of the same call. Not a reading; no class
 change; nothing solved, new or first. Vision calls: 1 of 4.
+
+## Campaign step H24b (2026-09-28 05:38 UTC) -- FAIL: the reader sorts the 43 glyph by hand, not by letter; a/n logged untestable by this instrument
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). One Opus vision call (about 114k subagent tokens, 98 s), prompt
+in `scripts/PROMPTS.md` (H24b) and the scorer's scope (`scripts/f61an.py --c43-only`) pushed 59fb2d77 before the call.
+Hypothesis H24b (F61-AN-SORT2): H24 with its scope fixed -- the 43 glyph alone (17 expected signs, labels a 10 / n 5),
+exclusions named with counts, x positions required.
+
+**Output (`scripts/read_call_AN2.tsv`, verbatim).** 20 signs in three groups, and its own criterion says what they are:
+A = the f.61 hand (a large two-bowled 3 joined high, on a 45-degree 4: all 9 f.61 signs), B = the f.108 hand (a steeper 4
+with a small 3 hanging low: 8 signs), C = "the f108 form with the curl reduced to a faint single hook" (3 signs, flagged
+uncertain) -- which are the draft's 4STEM signs at f.108 L02 pos 2 and 7 (pass 108A x 1283 and 2417 in segment 1, the
+reader's x 1280 and 2420), i.e. the readers' existing C43/4STEM split, not a new one.
+
+**Result (`scripts/f61an_c43_result.txt`).** f.61 sheets reconciled 5/5 (9 signs, 7 labelled: a 6, n 1, all group A); f.108
+L02 (2 expected, 4 listed) and L03 (6 vs 7) dropped again. One group over the scored positions: 6/7, exact P = 1.0.
+**FAIL.** With two calls of the same instrument -- the first sweeping in neighbouring classes, the second, with the
+scope fixed, separating the hands and the readers' own class boundary instead of the letters -- the a/n question is logged
+**untestable by a blind shape sort at this resolution** (CLAUDE.md rule 3's unchanged-approach paragraph): not refuted,
+not re-briefed on the same sheets. H23's finding stands: the polyphony of the a/n cell is genuine at the reader's class
+level, and the table's two a/n drawings do not correspond to a shape difference a model reader sees at 3x. What would
+test it: a person's eye on the 17 signs against the table's two drawings, or native crops of each sign side by side in
+one image (a different instrument), neither briefed here. Not a reading; no class change; nothing solved, new or first.
+Vision calls: 1 of 4.
