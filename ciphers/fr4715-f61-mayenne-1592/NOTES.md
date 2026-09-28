@@ -3150,3 +3150,14 @@ for the person's gloss of L06 (ASKS 88) and for the family worker (whether the l
 ## Campaign step H166 (20:28 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
 
 `scripts/H66_PAGE.md` gains a section "H162-H167". No new claim.
+
+## Campaign step H168a (28 Sept 2026, 20:47-20:48 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+fr.3984 canvases f15 and f17 at 2000 px (2 Gallica requests, 200; `family/fr3984_f7/c15_2000.jpg`, `c17_2000.jpg`), one Opus
+vision call (read the two images only; reply verbatim `scripts/read_call_H168a.tsv`; prompt pushed 079ce253 before the call).
+f15's one long clear stretch (the Suresnes conference delegates: "Messieurs l'Archevesque de Lyon, l'Evesque d'Avranches,
+l'Abbé de St Vincent de Laon ... le Baron de Talmay ... de ma part les Srs de Villars, de Villeroy ... Jeannin") **does not
+appear on f17**; f17 is continuous prose about religion, the crown and the people. **Gate (>= 3 clear lines of f15 found in
+f17 in order): FAIL** -- f17 is not the page-for-page decipherment of f15. The finding aid still says "avec chiffre et
+déchiffrement", so the decipherment may be on another canvas (f16, f18, or a separate sheet near the item); H168 is re-scoped
+to locate it first. Readings provisional (small hand, reduced image). No key, no reading.
