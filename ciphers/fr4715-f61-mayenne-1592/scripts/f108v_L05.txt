@@ -1,0 +1,48 @@
+row	positions	all_four_agree	disagree	disagree_on_L	disagree_classes
+L01	41	25	16	0	PHI 5, 4TRI 4, C43 3, SBS 2, 4STEM 1, INF 1
+L02	34	21	13	1	INF 3, 4TRI 2, 4STEM 2, C43 2, PHI 2, ISH 1, EBR_B 1
+L03	37	21	16	0	C43 6, PHI 4, SBS 2, ZHOOK 1, 4STEM 1, INF 1, BETA 1
+L04	42	32	10	0	PHI 5, 4STEM 2, INF 1, ZHOOK 1, C43 1
+L05	39	23	16	1	4STEM 4, PHI 4, C43 3, ZHOOK 3, SBS 1, BETA 1
+L06	41	23	18	1	PHI 7, ZHOOK 3, BETA 3, 4STEM 2, C43 2, INF 1
+L07	40	23	17	0	C43 6, 4STEM 4, PHI 3, EBR_B 2, ISH 1, SBS 1
+# L05 per position: pos, class, cell, draft grade, letters chosen in calls 101/102/103/104, * = disagreement
+L05	1	4STEM	a/n	L	aaan	*
+L05	2	PHI	e/r	M	rrre	*
+L05	3	4STEM	a/n	M	aana	*
+L05	4	C43	a/n	H	nnan	*
+L05	5	PHI	e/r	M	eeer	*
+L05	6	ZHOOK	i/x	M	ixii	*
+L05	7	EBR_A	f/s	M	ssss
+L05	8	C43	a/n	H	aaaa
+L05	9	SBS	b/o	M	oboo	*
+L05	10	C43	a/n	H	nann	*
+L05	11	4STEM	a/n	M	nnnn
+L05	12	C43	a/n	M	aaaa
+L05	13	PHI	e/r	M	rree	*
+L05	14	4STEM	a/n	M	aann	*
+L05	15	PHI	e/r	M	eree	*
+L05	16	VBAR_A	g/t	M	tttt
+L05	17	ZHOOK	i/x	M	iiii
+L05	18	VBAR_A	g/t	M	tttt
+L05	19	BETA	m/z	L	mmmm
+L05	20	PHI	e/r	M	eeee
+L05	21	EBR_A	f/s	M	ssss
+L05	22	EBR_A	f/s	M	ssss
+L05	23	PHI	e/r	M	eeee
+L05	24	ZHOOK	i/x	M	ixii	*
+L05	25	VBAR_A	g/t	M	tttt
+L05	26	BETA	m/z	H	mmmm
+L05	27	BETA	m/z	H	mmmm
+L05	28	C43	a/n	H	aaaa
+L05	29	ZHOOK	i/x	M	ixii	*
+L05	30	EBR_A	f/s	M	ssss
+L05	31	4STEM	a/n	M	aann	*
+L05	32	C43	a/n	M	nnaa	*
+L05	33	PHI	e/r	M	eeee
+L05	34	PHI	e/r	M	rrrr
+L05	35	VBAR_A	g/t	H	tttt
+L05	36	PHI	e/r	M	eeee
+L05	37	C43	a/n	H	nnnn
+L05	38	C43	a/n	H	aaaa
+L05	39	BETA	m/z	H	zmmm	*

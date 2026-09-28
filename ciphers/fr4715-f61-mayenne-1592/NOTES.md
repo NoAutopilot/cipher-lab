@@ -2336,3 +2336,13 @@ single uncorrected pass). The target's resolution ("pmimeruuiemereteuueqnete | p
 `f61judge_f108r_L04_L06_s107_result.txt`) stays committed as the pre-registered prediction for H64 to score against the
 person's gloss letter by letter; expect it to score poorly. A useful prediction on these rows needs the reconciled,
 H26-relabelled signs first (a later runner's row). No reading, no class change.
+
+## Campaign step H106 (28 Sept 2026, 16:13 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+f.108v row L05, the weak row of H101 (`scripts/f108v_L05.py`, `f108v_L05.txt`, `--check` fresh): the four target
+resolutions (H85 x3, H94) disagree on 16 of its 39 positions, the same order as L01 (16/41), L03 (16/37), L06 (18/41)
+and L07 (17/40), with L04 the steadiest (10/42); only one L05 disagreement sits on a flagged (L) sign. Over all rows the
+disagreements fall mostly on PHI e/r and C43/4STEM a/n -- the within-cell choices that no period glyph separates (H71,
+H73) -- then ZHOOK i/x and BETA m/z. So L05's weaker 4-gram rank comes from the judge's within-pair choices, not from the
+transcription flags. For the verifier (H88): the e/r and a/n letters of the f.108v consensus are its softest,
+together with c/p/d/q (H105). No reading, no class change.
