@@ -1,0 +1,119 @@
+line	box	reading	conf	why
+p1_L01	12	Nulla4	M	lower sign is an open 4 with crossbar; the J-hook with small loop above is a descender from the line above, ignored
+p1_L01	13	I2	H	heavy flat top bar with stem dropping from its right end, the key's 7
+p1_L01	14	T2	M	closed e-loop at left with a long thin tail rising to the upper right
+p1_L01	15	L1	L	3-shape with short top stroke and descending tail; L1 vs L3 not separable by stroke
+p1_L01	16	G3	L	v/w strokes above a closed lower loop (gamma-like), small; hook stroke above is a stray descender; I1 possible
+p1_L01	17	D2	H	closed oval crossed by a long horizontal bar, the key's barred theta
+p1_L01	18	M2	L	heavy vertical stem with foot turning left, like the lower half of the key's j-hook; no top curl visible
+p1_L01	19	I2	H	flat top bar with straight stem down from right end
+p1_L01	20	T3	H	mu: two humps with long lead-in stroke from lower left
+p1_L01	21	M2	L	same heavy J stem as box 18
+p1_L01	22	E1	H	small 9-bowl on a straight near-vertical stem
+p1_L01	23	Nulla9	M	9-bowl with long tail sweeping down-left, the Nulla 9's curved tail
+p1_L01	24	F1	M	loop at left with stem rising from it and bar running right, as box 9 of p1_L05 (heavy left end of the key's F1 bar)
+p1_L01	25	H	H	5-shape: tall stroke into lower open bowl
+p1_L01	26	I2	H	7 with heavy top bar
+p1_L01	27	M1	H	large gamma with curled arms and closed lower loop
+p1_L01	28	A2+D1	M	long smile curve with small hooked start (A2) and a barred pi drawn above its middle (D1); order uncertain
+p1_L01	29	A1	H	barred w (double loop under a long bar)
+p1_L01	30	Nulla6+Nulla9	H	a 6 then a 9 with long descender hooked left, two separate signs
+p1_L01	31	A2	L	hooked start then long stroke sweeping right; blob at top right belongs to box 32
+p1_L01	32	Nulla4	H	open 4 with bar and stem; stray stroke at lower left is a mark
+p1_L02	1	A1	M	smudged w-loops under a bar
+p1_L02	2	R1	H	alpha/x crossing curves with blob ends
+p1_L02	3	G2	H	omega with small closed loop above
+p1_L02	4	E1	M	open bowl on a straight stem, 9/q shape, bowl wide
+p1_L02	5	FF	L	tall slanted script 8: top loop and diagonal descending stroke crossing at foot; R2 possible
+p1_L02	6	I1	M	loop at lower left with a stem rising right and a crossing stroke and top curl
+p1_L02	7	T2	L	open c-loop at bottom left with thin stroke rising to upper right; I1 possible; right-edge ink belongs to box 8
+p1_L02	8	A2	L	blotchy curl top-left with heavy stroke sweeping down-right; damaged, shape uncertain
+p1_L02	9	N2	M	two looped strokes with hooked ends crossing like the key's loopy x
+p1_L02	10	O1	H	upright 8 with two closed loops
+p1_L02	11	N1	H	diamond/lozenge
+p1_L02	12	U1	H	m with curled ends
+p1_L02	13	O2	H	reversed-S/2 with curled bowl
+p1_L02	14	L3	M	3-shape with curled top hook and tail
+p1_L02	15	I2	H	7
+p1_L02	16	A1	H	barred w
+p1_L02	17	CC	H	small o above a bar and o below, the key's CC
+p1_L02	18	E1	H	9-bowl on straight stem
+p1_L02	19	TT	H	y with crossbar and closed lower loop
+p1_L02	20	A2+R1	M	smile curve with hooked start (A2) and alpha drawn above right (R1)
+p1_L02	21	I2	H	7
+p1_L02	22	H	M	5/S-shape: top stroke then open lower curve; lacks closed bowl
+p1_L02	23	L1	M	3-shape with short flat-ish top and tail
+p1_L02	24	A1	H	barred w
+p1_L02	25	G1	H	phi: stem through closed oval
+p1_L02	26	U2	M	f: top loop, crossbar, long stem
+p1_L02	27	Nulla4	H	open 4
+p1_L05	1	P1	H	t-cross: curved stroke through long horizontal bar
+p1_L05	2	A2+L1	M	smile curve with hooked start and a small 3-shape above it; right-edge ink belongs to box 3
+p1_L05	3	Nulla6	H	6; small dash at right is a mark or part of box 4
+p1_L05	4	A1	H	barred w
+p1_L05	5	T2	M	closed e-loop with long thin tail rising to upper right; right blob belongs to box 6
+p1_L05	6	I2	M	7 with bar and stem; tick at top left is tail end of box 5
+p1_L05	7	N1	H	diamond
+p1_L05	8	O1	H	8
+p1_L05	9	F1	M	heavy filled blob at left end of a horizontal bar with vertical stem rising, the key's F1 heavy-ended bar
+p1_L05	10	H	H	5-shape; dot at left is a stray mark
+p1_L05	11	E1	H	9 on straight stem
+p1_L05	12	A1	H	barred w
+p1_L05	13	D2	H	barred theta
+p1_L05	14	A2+L1	M	same as box 2: smile curve with a small 3 above; right-edge ink belongs to box 15
+p1_L05	15	Nulla6	H	6; tick at top left from box 14
+p1_L05	16	T2	M	heavy c-loop with thin stroke leaving it upward to the right
+p1_L05	17	FRAG	L	thin rising stroke ending in a blob, probably the tail of box 16's T2; left edge is crop mask
+p1_L05	18	R2	M	8 with open e-like top loop and closed lower loop
+p1_L05	19	I1	M	small curl and closed lower loop with long stem rising right
+p1_L05	20	H	L	S/5-shape with top stroke and open lower curve, no closed bowl
+p1_L05	21	Nulla6	H	6 with long rising stem
+p1_L06	1	Nulla6	H	6; dot at right is a stray mark
+p1_L06	2	A1	H	barred w
+p1_L06	3	RR	H	8 crossed by long horizontal bar
+p1_L06	4	I2	H	7 with curled stem end
+p1_L06	5	U1	H	m
+p1_L06	6	O1	H	8
+p1_L06	7	C1	H	u (two short stems) on a horizontal bar
+p1_L06	8	A1	H	barred w; edge blobs belong to neighbours
+p1_L06	9	R1	H	alpha with blob end
+p1_L06	10	NullaZ	H	flat z with long base, no dot (not Qua)
+p1_L06	11	O2	M	2/reversed-S with curled open bowl at base
+p1_L06	12	N1	H	diamond
+p1_L06	13	E1	H	9 on straight stem
+p1_L06	14	L2	H	2 with flat horizontal base
+p1_L06	15	O2	H	reversed-S/2 with curled bowl
+p1_L06	16	I2	H	7
+p1_L06	17	T2	M	closed loop at lower left with stroke rising through it to upper right
+p1_L06	18	T3	H	mu with long lead-in
+p1_L06	19	R1	H	alpha
+p1_L06	20	O2	H	reversed-S/2 with round bowl
+p1_L06	21	U2	H	f with top loop, crossbar and foot turned left
+p1_L06	22	Nulla6	H	6; edge ink belongs to box 23
+p1_L06	23	O1	H	8
+p1_L06	24	L1	M	3-shape with short top; L1 vs L3 uncertain
+p1_L06	25	A2+Nulla6	L	smile curve with hooked start and a small closed b/6 shape above it
+p2_L02	1	MARK	L	single thin diagonal stroke, no sign structure
+p2_L02	2	MARK	L	long thin vertical with small tick, probably a descender from the line above
+p2_L02	3	MARK	L	long thin s-curve stroke, descender-like; could be an unbarred f but no bar seen
+p2_L02	4	A2	L	curl at top left with long heavy stroke sweeping down-right; damaged, same shape as p1_L02 box 8
+p2_L02	5	Nulla4	H	open 4 with bar; stroke below is a stray
+p2_L02	6	A1	H	barred w
+p2_L02	7	N1	H	diamond
+p2_L02	8	D1	H	pi: two stems under a bar
+p2_L02	9	Nulla4	H	open 4 with long stem
+p2_L02	10	A2+FF	L	small loop and long curve (A2) with a thin script 8 above right (FF)
+p2_L02	11	A1	H	barred w; short stroke below is a stray mark
+p2_L02	12	I1	M	loop with crossing stem rising right and small top curl
+p2_L02	13	S2	H	D-shape with vertical stroke, the key's S2
+p2_L02	14	U1	H	m
+p2_L02	15	I2	H	7 with curled stem end
+p2_L02	16	R2	L	two strokes crossing at top, open legs, top loop cut off by crop; FF possible
+p2_L02	17	FF	M	thin script 8 with tail sweeping down-left; left ink belongs to box 16
+p2_L02	18	I2	H	7
+p2_L02	19	R1	H	alpha
+p2_L02	20	MARK	L	single diagonal stroke
+p2_L02	21	I1	M	blob-topped loop, crossing and stem rising right, as box 12
+p2_L02	22	MARK	L	single arc stroke, no sign structure; possibly part of a neighbour
+p2_L02	23	FRAG	L	tilde wave at top of box, like PP without its dot; the dot may be box 24's
+p2_L02	24	MARK	L	isolated dot plus cropped blob at lower right

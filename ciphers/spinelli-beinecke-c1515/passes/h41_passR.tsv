@@ -1,0 +1,119 @@
+line	box	reading	conf	why
+p1_L01	12	Nulla4	M	open-triangle 4 with long crossbar at bottom; the hooked vertical above is a descender from the line above (MARK), not counted
+p1_L01	13	I2	M	heavy flag bar with stem falling left-diagonal; key I2 bar+stem, stem more slanted in hand
+p1_L01	14	T2	L	small e-loop at left with long thin rising tail to right; nearest T2, could be PP/Qua
+p1_L01	15	L1	M	three-like z-curve with two bays and tail; L1/L3 identical in print, named L1
+p1_L01	16	I1	L	bottom: loop below with stroke rising right as key I1; hooked stroke at top is a descender from above
+p1_L01	17	D2	M	closed oval crossed by long horizontal bar near its top; single loop so not RR
+p1_L01	18	M2	L	bold vertical with foot turning left, no top bar; nearest the M2 hook, could be I2 with bar lost
+p1_L01	19	I2	H	horizontal top bar joined to heavy vertical stem, key I2 drawing
+p1_L01	20	T3	H	mu-shape with long lead-in stroke from lower left
+p1_L01	21	M2	L	same shape as box 18, vertical with left foot
+p1_L01	22	E1	H	9: small loop top-left, straight long stem
+p1_L01	23	Nulla9	M	9 with tail sweeping far down-left like the Nulla 9, not straight like E1
+p1_L01	24	C2	L	loop lower-left with upright stem and horizontal bar through it; nearest C2 (delta-like), could be RR/F1
+p1_L01	25	H	H	5-shape, key H
+p1_L01	26	I2	M	top bar with diagonal stem (7); I2 by bar+stem, E2 lacks dots
+p1_L01	27	M1	H	gamma: crossed loop body with right arm, key M1
+p1_L01	28	D1+A2	M	pi with two legs over a long swash starting from a small loop at left
+p1_L01	29	A1	H	bar over wavy double loop (varpi), key A1
+p1_L01	30	Nulla6+Nulla9	H	6 then 9 whose tail curls down-left, two signs run together
+p1_L01	31	A2	M	loop start and long curved swash to right; fragment at top right belongs to next box
+p1_L01	32	Nulla4	H	4 with long crossbar; stroke below-left is a stray mark
+p1_L02	1	A1	M	bar over double loop, ragged ink
+p1_L02	2	R1	H	x with curled ends, key R1
+p1_L02	3	G2	H	w-shape with small loop above, key G2
+p1_L02	4	E1	M	loop left with upright stem right (9/a), short
+p1_L02	5	FF	L	loop at top, long stroke down-right crossed by thin tail (open 8); FF or R2
+p1_L02	6	I1	M	loop below crossed by stroke rising right, curl at top; key I1
+p1_L02	7	T2	M	small loop at bottom with long stroke rising right; sliver at right edge is next sign
+p1_L02	8	T2	L	damaged: curl head with long tail down-right; shape uncertain, could be FRAG
+p1_L02	9	N2	M	bold two-armed shape with bottom hooks, like key N2
+p1_L02	10	O1	H	closed 8
+p1_L02	11	N1	H	diamond/quadrilateral
+p1_L02	12	U/V1	H	m with curled right leg
+p1_L02	13	O2	H	2/S curve, key O2
+p1_L02	14	L1	M	three-shape; L1/L3 identical in print
+p1_L02	15	I2	M	7: top bar, diagonal stem
+p1_L02	16	A1	H	bar over double loop
+p1_L02	17	CC	H	two small circles above and below a bar
+p1_L02	18	E1	H	9 with straight stem
+p1_L02	19	TT	H	crossed x with loop below, key TT
+p1_L02	20	A2+R1	M	curled start with long lower curve (A2) and an x above right (R1)
+p1_L02	21	I2	M	7: top bar, diagonal stem
+p1_L02	22	H	M	S/5-shape without top loop, key H
+p1_L02	23	L1	M	three-shape
+p1_L02	24	A1	H	bar over double loop
+p1_L02	25	G1	H	circle pierced by vertical (phi)
+p1_L02	26	U/V2	H	f with top loop and crossbar
+p1_L02	27	Nulla4	H	4 with crossbar
+p1_L05	1	P1	H	c-curve crossed by horizontal bar
+p1_L05	2	A2+L1	M	small loop start with long bottom curve (A2), three-shape inside above (L1); fragment at right is next box
+p1_L05	3	Nulla6	H	6; short dash at right is a stray mark
+p1_L05	4	A1	H	bar over double loop
+p1_L05	5	T2	M	e-loop with long thin rising tail
+p1_L05	6	I2	H	bar with vertical stem; teardrop at top-left is a stray mark
+p1_L05	7	N1	H	quadrilateral
+p1_L05	8	O1	H	closed 8
+p1_L05	9	C2	L	filled loop left, stem up, bar right; same form as p1_L01 box 24
+p1_L05	10	H	M	5-shape; dot at left is a stray mark
+p1_L05	11	E1	H	9 straight stem
+p1_L05	12	A1	H	bar over double loop
+p1_L05	13	D2	M	loop crossed by horizontal bar, stem rising
+p1_L05	14	A2+L1	M	same unit as box 2: loop-start swash with three-shape above
+p1_L05	15	Nulla6	H	6; stroke top-left stray
+p1_L05	16	T2	L	c-loop with diagonal hairline to right; hairline continues into box 17
+p1_L05	17	FRAG	L	blob plus rising hairline, cut at left; completes box 16
+p1_L05	18	FF	L	loop top, twist, lower loop (open 8 leaning); FF or R2
+p1_L05	19	I1	M	loop below with tall stroke rising right, curl at top
+p1_L05	20	H	M	S/5-shape
+p1_L05	21	Nulla6	H	6
+p1_L06	1	Nulla6	H	6; dot at right stray
+p1_L06	2	A1	H	bar over double loop
+p1_L06	3	RR	H	8 crossed by horizontal bar
+p1_L06	4	I2	H	top bar with vertical stem
+p1_L06	5	U/V1	H	m
+p1_L06	6	O1	H	closed 8
+p1_L06	7	C1	H	two uprights standing on bar
+p1_L06	8	A1	H	bar over double loop; dots at edges stray
+p1_L06	9	R1	H	x with curled ends
+p1_L06	10	NullaZ	H	flat z
+p1_L06	11	O2	H	2/S curve
+p1_L06	12	N1	H	quadrilateral
+p1_L06	13	E1	H	9 straight stem
+p1_L06	14	L2	H	2 with flat base, key L2
+p1_L06	15	O2	H	2/S curve
+p1_L06	16	I2	M	top bar with diagonal stem
+p1_L06	17	T2	M	loop at bottom with long rising stroke
+p1_L06	18	T3	H	mu with long lead-in
+p1_L06	19	R1	H	x with curled ends
+p1_L06	20	O2	H	2/S curve
+p1_L06	21	U/V2	H	f with loop and crossbar
+p1_L06	22	Nulla6	H	6
+p1_L06	23	O1	H	closed 8
+p1_L06	24	L1	M	three-shape
+p1_L06	25	A2+S2	L	loop-start long swash (A2) with small D/b-shaped loop above (nearest S2)
+p2_L02	1	MARK	L	lone diagonal hairline, likely descender from line above
+p2_L02	2	MARK	L	long thin vertical with small tick, descender
+p2_L02	3	MARK	L	long s-like thin descender
+p2_L02	4	A2	L	hooked head with long curve down-right, damaged
+p2_L02	5	Nulla4	H	4 with crossbar; stroke below-left stray
+p2_L02	6	A1	H	bar over double loop
+p2_L02	7	N1	H	quadrilateral
+p2_L02	8	D1	H	pi: bar with two legs
+p2_L02	9	Nulla4	H	4 with crossbar
+p2_L02	10	A2+FF	M	loop-start long swash (A2) with open 8 on ascender above (FF)
+p2_L02	11	A1	H	bar over double loop; stroke below stray
+p2_L02	12	I1	M	loop below crossed by rising stroke
+p2_L02	13	S2	H	D-shape, key S2
+p2_L02	14	U/V1	H	m
+p2_L02	15	I2	H	top bar with vertical stem
+p2_L02	16	R2	L	two strokes crossing to a loop at top, legs spread; nearest R2 (open 8)
+p2_L02	17	FF	M	leaning 8 with tail lower-left
+p2_L02	18	I2	M	top bar diagonal stem
+p2_L02	19	R1	H	x with curled ends
+p2_L02	20	MARK	M	lone diagonal stroke
+p2_L02	21	I1	M	loop below crossed by tall rising stroke, curl top-left
+p2_L02	22	FRAG	L	single arc, part of a curved sign (A2 or C) whose rest is outside the box
+p2_L02	23	PP	L	wavy horizontal stroke cut at bottom; tilde-like, could be MARK
+p2_L02	24	MARK	L	dot and ink corner

@@ -2006,3 +2006,46 @@ judge battery (10), the H35-H40 shuffled-value tests. Rule 10 wording throughout
 **Files:** `decode.json`, `key.tsv`, `ciphertext_v6.tsv`, `reading.txt`, `reading_tokens.tsv`, `reading_letters_v6.txt`.
 **Cost:** CPU only, about 3 minutes -- recorded as 3.0 USD (the est, this runner's turns). No requests, no vision
 calls, no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H41 (28 Sept 2026, 06:32-06:3x UTC) -- the five unread lines re-read against the key cells: not adopted
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H41: a blind Opus pass pair over the five cipher lines the v6
+decode leaves patchy (p1 lines 1, 2, 5, 6; p2 line 2), with Domnina's 28 key cells as the alphabet instead of the atlas.
+
+**Method.** `key_cells_sheet.png` (the 28 cells labelled) plus the five existing 4x line montages (`glyphs/montage/`,
+box numbers printed); each pass named every box as a key sign (A1, E2, Nulla4, T3 ...), two signs with '+', FRAG or
+MARK. Passes `passes/h41_pass{Q,R}.tsv` (about 121k and 119k tokens), 118 boxes each. `passes/build_v7_lines.py`:
+agreement per line 18/21, 23/27, 19/21, 22/25, 21/24 (**103 of 118 boxes read alike**, of which 6 agreed drops);
+disagreements keep the v6 code. Result: `passes/letter_codes_v7.tsv`, `passes/ciphertext_v7.txt` (255 tokens),
+`keys/key_domnina_2016_atlasmap_v7.tsv` (33 KEY_* codes). Both passes flagged the same residue: a heavy J-stem in
+p1 L1 boxes 18 and 21 that no cell matches ("M2 at low confidence"), the recurring A2 arc with a small sign above it
+(read as two signs by both, order uncertain), L1 vs L3 (drawn alike in the print), and I1 vs T2.
+
+**Registered re-test (bigram must not worsen) -- FAILED by 0.044, so v7 is not adopted as the decode:**
+
+| statistic | v6 (H40) | v7 (H41) | v7 shuffled mean (sd) | at or beyond |
+|---|---|---|---|---|
+| signs with a value / null / unmapped | 86% / 11% / 3% | 88% / 11% / 1% | | |
+| mean log unigram | -2.710 | -2.762 | -3.008 (0.064) | 0/200 |
+| mean log bigram | -2.593 | **-2.637** | -3.651 (0.159) | 0/200 |
+| phrase best-window edit distance | 2 | 2 | 15.19 (0.76) | 0/200 |
+| judge (it16 4-gram, letters only) | -1.334 (N 224) | -1.319 (N 233) | | both FAIL vs real_p05 -0.97 |
+
+Per line (mean log bigram, letters/bigrams), v6 -> v7: L01 -3.38 (18/17) -> -3.71 (17/16); L02 -2.72 (24/20) ->
+-2.68 (30/29); L05 -2.26 (17/14) -> -2.56 (19/18); L06 -2.50 (21/20) -> -2.42 (22/21); L10 -2.55 (17/16) -> -2.73
+(18/17); lines 3, 4, 7, 8, 9 identical by construction. So lines 2 and 6 improved while carrying more letters
+(L06 now opens `a rr i u o` -- "arriuo"), lines 1, 5 and 10 got worse, and the whole-letter mean moved 0.044 the wrong
+way (the shuffled sd is 0.16). The criterion was registered before the run and stands: **v6 stays the committed
+decode** (`decode.json`, `reading.txt` unchanged); v7 is on disk as the record of what a key-alphabet pass pair
+reads. Reading: re-reading the same boxes with a better alphabet does not fix lines 1, 5 and 10 -- rule 3's
+"second attempt at an unchanged approach" shape -- because their problem is the boxes themselves (segmentation:
+merged pairs, the J-stem no cell has, the A2-plus-a-small-sign compounds), not the names given to them. The next
+instrument is a re-segmentation of those three lines from the strips, or the second letter's known plaintext (H36),
+which would show whether the J-stem and the compounds are signs Domnina's table lacks.
+
+**Controls:** the shuffled-value battery (0/200 on every statistic for v7 as for v6); pass agreement 103/118 as the
+transcription control; the registered improve-or-reject rule applied against the runner's own preference. No class
+change; rule 10 wording. **Files:** `passes/h41_pass{Q,R}.tsv`, `passes/build_v7_lines.py`, `passes/letter_codes_v7.tsv`,
+`passes/ciphertext_v7.txt`, `keys/key_domnina_2016_atlasmap_v7.tsv`. **Cost:** 2 Opus vision calls (about 240k tokens)
+plus this runner's turns -- recorded as 5.0 USD (the est). No requests, no credentials, no AskUserQuestion, no other
+target touched.
