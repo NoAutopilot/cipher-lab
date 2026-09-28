@@ -1,0 +1,9 @@
+v3 (no --sbs) 43/55; v4 (--sbs) 48/55
+v4 matched positions by class: 4PI:1 4TRI:6 BETA:1 C43:9 EBR:3 INF:3 PHI:13 SBS:5 VBAR_A:4 VBAR_B:3
+v4 aligned known letters NOT matched: S1 L01/4 'v' INF=u; S3 L05/10 'v' INF=u; S4a L07/3 'j' ZHOOK=-; S4a L07/4 'a' BETA=m/s; S4a L07/11 'i' ZHOOK=-; S5 L11/11 'i' ZHOOK=-
+matched under v4 only: L03/13 'a'; L03/14 'b'; L03/15 'l'; L05/5 'o'; L08/5 'b'; L11/10 'o'
+matched under v3 only: L03/14 'e'
+A  v4 key, f.61 WITHOUT the --sbs relabel: 42/55 = 0.764; perm p95 0.455 max 0.655, >= 0/2000
+B  v4, SBS = b/o (artefact e removed): 48/55 = 0.873; perm p95 0.455 max 0.618, >= 0/2000
+C  v4, VBAR_A/B merged (f.61 and key): 48/55 = 0.873; perm p95 0.473 max 0.673, >= 0/2000
+D  v4 minus VBAR_A, VBAR_B, SBS cells: 36/55 = 0.655; perm p95 0.400 max 0.600, >= 0/2000
