@@ -97,3 +97,53 @@ crop	pos	group	gloss	conf	note
 13	11	66	-	medium	no legible gloss above
 13	12	1299	-	medium	no legible gloss above
 13	13	390	-	medium	no legible gloss above
+14	1	1203	it	medium	gloss legible above
+14	2	1362	will	medium	gloss legible above
+14	3	1481	destroy	medium	gloss legible above
+14	4	1411	-	medium	no legible gloss above
+14	5	490	the	low	gloss alignment approximate
+14	6	111	independence	low	gloss alignment approximate, word may span more than one number
+14	7	116	-	medium	no legible gloss above
+14	8	1362	-	medium	no legible gloss above
+14	9	1651	-	medium	no legible gloss above
+14	10	69	-	medium	no legible gloss above
+14	11	492	-	medium	no legible gloss above
+14	12	945	-	medium	no legible gloss above; trailing plain words "of the" after this group are not a group
+15	1	NONE	-	high	band holds only gloss/interline text ("its territory its Power and its") for next line's numbers; the numbers sit below the bottom guide, see L16
+16	1	1481	its	medium	plain words "country diminish" precede this group inline (not a group); gloss legible above
+16	2	525	territory	medium	gloss legible above
+16	3	1583	its	low	gloss alignment approximate
+16	4	137	power	low	gloss alignment approximate
+16	5	700	and	low	gloss alignment approximate
+16	6	1481	its	low	gloss alignment approximate
+16	7	525	-	medium	no legible gloss above
+16	8	572	-	medium	no legible gloss above
+16	9	1343	-	medium	no legible gloss above
+16	10	1481	-	medium	no legible gloss above
+16	11	52	-	low	edge, right side cut by crop boundary, digits incomplete
+17	1	582	political	medium	gloss legible above
+17	2	253	importance	medium	gloss legible above
+17	3	1683	and	medium	gloss legible above
+17	4	71	consequence	low	gloss word partly abbreviated/uncertain
+17	5	580	since	low	gloss alignment approximate
+17	6	1341	a	low	gloss alignment approximate
+17	7	1343	-	medium	no legible gloss above
+17	8	1387	-	medium	no legible gloss above
+17	9	1181	-	medium	no legible gloss above
+17	10	1630	-	medium	no legible gloss above
+17	11	432	-	medium	no legible gloss above
+17	12	38	-	medium	no legible gloss above
+17	13	301	-	medium	no legible gloss above
+17	14	624	-	medium	no legible gloss above
+18	1	NONE	-	high	band holds only gloss/interline text ("new face to its") for next line's numbers; the numbers sit below the bottom guide, see L19
+19	1	1645	new	medium	gloss legible above
+19	2	84	face	medium	gloss legible above
+19	3	1298	to	medium	gloss legible above
+19	4	244	its	medium	gloss legible above
+19	5	1481	-	medium	no legible gloss above
+19	6	525	-	medium	no legible gloss above; trailing plain words "exterior relations" after this group are not a group
+20	1	NONE	-	high	band holds only plain closing prose ("I have the honor to be here"), no numeral group; coded passage has ended by this line
+21	1	NONE	-	high	plain prose "I have the honor to be, Sir," no numeral group
+22	1	NONE	-	high	band is blank white space, no text or numeral group
+23	1	NONE	-	high	plain prose "With the most perfect respect & consideration," no numeral group
+24	1	NONE	-	high	band is blank white space, no text or numeral group
