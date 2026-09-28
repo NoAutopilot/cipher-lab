@@ -1575,3 +1575,23 @@ nomenclature tokens would sit. Nothing here moves any grade; it closes the contr
 H3, H14 and H21 the reading has four controls of different kinds behind it and one instrument (the n-gram
 judge) that cannot decide at this length. The uneven homophone use is a scribal-habit observation worth carrying to
 KEY-DESIGN's notes and to any comparison with the Brussels SEE register when it arrives (ASKS 82).
+
+## Campaign step H22 (2026-09-28 03:39-03:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** The 39 cipher tokens on the eight mixed lines (r05, r07, r08, r11, r13, v09, v11,
+v13) that H15's ink count could not cover: one blind Sonnet read from native half-line crops (no transcription,
+no key), reconciled in `h22mixed/blind_read.tsv`. **39 of 39 agree with `ciphertext.tsv`.** Two instructive
+non-disagreements: the reader twice appended a "9" after a cipher run (r05, v09) -- it is the clear word "y" that
+opens the next clause, whose cursive shape is a 9 with a tail -- and took r11's final 6 for a capital "G." (the
+hand's 6 is G-shaped; the dots after 2 and 6 there are H13's marks). The boxed 101 at r07:5 read as "boxed 9 (alt
+8)" at native resolution against 101 on three 4x reads in H2 -- resolution, not a new reading. With H15 this
+completes the per-token count check of the whole transcription: no missing or extra token found anywhere at the
+instruments' resolution. One subagent call; no hosts. No reading or grade change.
+
+## Campaign step H23 (2026-09-28 03:5x UTC): not run
+
+Served-size thumbnails of DECODE 941 and 946: MERCY-KEY U2 (27 Sept) already established that DECODE's thumbnails
+are 200 x 284 px and that "no individual digit, letter or graphic-sign shape can be made out" at that size for the
+same series; a look at two more would return "unreadable at served size" by construction (CLAUDE.md rule 3, a
+control that cannot fail differently). Dropped without spending requests; the full-size images stay behind ASKS
+row 1 / 82 (H17).
