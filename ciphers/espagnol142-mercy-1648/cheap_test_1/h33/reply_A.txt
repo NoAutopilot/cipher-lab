@@ -1,0 +1,21 @@
+BEGIN
+id	verdict	confidence	evidence
+K01	reject	high
+K02	accept	low
+K03	reject	high
+K04	reject	medium
+K05	reject	high
+K06	accept	medium
+K07	reject	high
+K08	reject	high
+K09	reject	high
+K10	accept	medium
+K11	reject	high
+K12	accept	medium
+K13	reject	low
+K14	accept	high
+K15	reject	low
+K16	reject	high
+K17	accept	high
+K18	reject	high
+END
