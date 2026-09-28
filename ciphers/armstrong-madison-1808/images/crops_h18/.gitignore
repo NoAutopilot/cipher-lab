@@ -1,4 +1,4 @@
-# subagent scratch sub-crops (H18 readers cut their own zooms here); not committed
-*_line[0-9]*.png
-*_L[0-9]*.png
+# H18 line sheets are derived (regen_sheets.py rebuilds them from the frames); not committed, images/ is at the 30 MB line
+*.jpg
 *.png
+_p4/

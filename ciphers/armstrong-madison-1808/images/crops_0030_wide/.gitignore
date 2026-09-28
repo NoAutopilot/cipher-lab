@@ -1,0 +1,2 @@
+# derived crops (images/regen_derived_crops.py rebuilds them); not committed, images/ is at the 30 MB line
+*.jpg

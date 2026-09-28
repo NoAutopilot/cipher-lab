@@ -1866,3 +1866,65 @@ step of its own.
 
 No reading, no class change. Requests: none. Cost: get_session read 28.99 USD at 23:57 before H14; the rows' estimates
 (1 + 1) are what `campaign.py --spend` records for H19 and H16. Vision: 3 zoom/crop reads by this runner, no subagent.
+
+## Campaign step H18 (28 Sept 2026, 00:12-00:25 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H18: a full
+inventory of marks attached to numeral groups over all four pages and both witnesses, by class (a HIGH mark after or
+above the group; a LOW mark under a specific digit, with the digit named) and a test of whether marks recur on the same
+value.
+
+**Method.** Top-margin line sheets (`images/crops_h18/`, five lines per sheet, each line box from the page's crop
+manifest widened to reach into the gutter, +55 px above; page 4 cut with `tools/iiif_lines.py --image`; the sheets are
+rebuilt by `images/crops_h18/regen_sheets.py`, not committed). Eight blind Sonnet passes, one per page per witness
+(page 1 has one frame, so two readers on the same sheets; page 4 one frame, one reader), each reporting per line the
+first groups and every marked group as GROUP:CLASS:DETAIL (`marks/h18_passes/*.tsv`). `marks/h18_inventory.py`
+reconciles by page + group + class (the two witnesses' crop manifests number lines with an offset): a mark is
+ACCEPTED when two independent sources report it, HELD when one does (`marks/h18_inventory.tsv`).
+
+**Inventory: 33 reported, 5 accepted, 2 near-matches, 26 held (most of them flagged "faint" by their own reader).**
+
+| page | group | class | detail | sources | status |
+|---|---|---|---|---|---|
+| 1 | 200 | HIGH | curl/loop above-left of the first digit (both readers; one says it may be the top of the 4-like "2") | 2 readers, 1 frame | accepted |
+| 1 | 38 | HIGH | check mark immediately after the group | 2 readers, 1 frame (+ H13, both readers) | accepted |
+| 1 | 36 | HIGH | small caret/arc above the group (the interlinear "36"-like mark of H5/H13) | 2 readers, 1 frame | accepted |
+| 3 | 1580 | HIGH | short tick above the third digit / two dots above | both witnesses | accepted |
+| 3 | 49 | LOW, under the LAST digit | curl swept beneath the group, attached to the 9 | both witnesses, both H | accepted |
+| 2 | 1640 | HIGH | double dot / colon after the group (0031 reader explicit; 0032 reader put a caret on the same line at "1540", a value not on that line) | 2 witnesses, mis-attributed once | near-match, held (+ H13: both witnesses by this runner and a second reader) |
+| 3 | 230 / 1254 | HIGH | a tick between "230." and "1254", attributed to either neighbour | both witnesses | near-match, held |
+| 3 | 740 | LOW, under the last digit | small dot beneath the 0 | 0031 only | held |
+| 1 | 1640, 1276 | HIGH | faint ticks above (one reader: "may be the ordinary 7 ligature") | 1 reader | held (H13: possibly verso bleed-through) |
+| 4 | 1740, 124, 671, 1207, 14, 47 | HIGH | "tick bands" between rows | 1 reader | held -- this runner's look at the sheet: these are the descender tails of 7s and 9s from the line above caught by the top margin, not marks |
+| 2, 4 | 78, 5 | LOW, under the first digit | faint curl / blot | 1 reader each | held |
+| others (16) | | HIGH | faint ticks above, single reader | 1 | held |
+
+**Value-recurrence test.** Accepted-marked values: 200 (1 occurrence in the letter), 38 (10), 36 (2), 1580 (1), 49 (1).
+Marked at every occurrence: 0 of the 2 multi-occurrence values (38 is marked at 1 of its 10 occurrences, 36 at 1 of 2);
+null (marked positions kept, values redrawn among groups of the same digit length, 2,000 draws): mean 0.01, p95 0.
+The one value that carries a mark at both occurrences is 1640 (page 2 corroborated, page 1 faint), outside the
+accepted set. Reading: marks are not labels bound to a value (a homophone or variant sign); they attach to a
+particular occurrence -- the 38 case (marked once in ten) decides it -- which is what the printed form's operators are
+(H14: plural / tense after the group, double / withdraw the letter under a digit), and what H19 found the same writer
+doing in his office letter (a curl under the last digit = double the last letter). Rate: 7 corroborated marks in 369
+groups (1.9%) against 6 in about 243 groups of the office letter (2.5%).
+
+**By class, corroborated:** HIGH after/above 6 (200, 38, 36, 1580, 1640 double dot, 230/1254 tick); LOW under a digit
+1 (49, under the last digit -- the printed form's "doubles the last letter"). Under the printed grammar the 49 group
+would be a syllable whose last letter is doubled; 1640 and 38 carry a grammatical mark (plural / genitive / third
+person, or participle / imperfect); that is a hypothesis about the design, not a reading, and it needs a key.
+
+**Verdict for the campaign:** inventory on file (grade M per mark, corroborated ones listed); marks are per-occurrence
+operators, not value-bound labels (control-backed: 38 marked 1 of 10; shuffle null p95 0); consistent with the printed
+form's mark grammar this writer demonstrably used in office usage. What it changes: the design prior for the target
+moves toward a syllabic / spelling nomenclator on a printed 17x100 form with modifier marks -- the family ARM-DESIGN's
+contiguous designs did not include (its "units digit = fixed member slot" finding was on a different axis). Named next
+steps: (1) H20: re-run ARM-DESIGN's design statistics with the marks stripped and with syllabic-table encoding
+controls built from the H12 table's own entry classes (words vs syllables per hundred), since the target's 901-1099
+trough and 0/1 units skew now need explaining against a syllabic printed-form design rather than a word nomenclator;
+(2) H21: a second reader on the 26 held marks with single-line zooms (the eight passes read stacked sheets; the
+page-3 readers who zoomed per group were the ones who agreed at H). No reading, no class change. Requests: none. Cost:
+8 Sonnet passes plus this runner's reconciliation; the row's estimate (8 USD) is what `campaign.py --spend` records.
+Housekeeping: `images/` tracked size was 37 MB after this session's sheets; the derived crops of H5, H13 and H18 are
+now untracked with regeneration scripts (`images/regen_derived_crops.py`, `images/crops_h18/regen_sheets.py`), tracked
+size 29.6 MB.
