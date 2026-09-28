@@ -3419,3 +3419,26 @@ crop-based read to an ms line (B35's per-crop glyph reads against the ms mark co
 H15 crop work, if it used these files) is off by one line on those seven. This corrects H58's own table, which had
 called the L04 and L11 files "ok"; h58/shorthand_lines.tsv now says which file shows which line. No reading, no class
 change; nothing called new or first. Vision 0 beyond H58's overlay; requests 0. Cost: about 0.2 USD (`--spend` 0.5).
+
+## Web and blog check (CHECK-SOLVED-WEB, 28 Sept 2026)
+
+Parent worker CHECK-SOLVED-WEB, 28 Sept 2026 15:23-15:27 UTC (clock-read), after the Spinelli N0 (a reading sitting in a Cipherbrain
+comment thread). Plain web search (WebSearch) plus WebFetch of every plausible hit. **Verdict: no prior reading of the
+20 Feb 1808 letter found beyond the AFIO contest claim already on file (and already rejected: "The AFIO claimed
+solution and its adjudication" above).**
+
+| # | Query / page | Hits and what they say |
+|---|---|---|
+| 1 | `Armstrong Madison 20 February 1808 cipher letter solved` | AFIO "We Have a Winner" (27 May 2025, the known claim); LoC mjm015002 (30 Aug 1808 postscript, a different letter, THE=972, read by Bourdeau); dbourdeau/cyphersolver + two forks (aryasn2026, arya1515); Founders 99-01-02-2728; our own SO PRs. The search engine's summary quotes the AFIO plaintext ("The French government has declared that American ships must not enter its ports ...") -- that is the AFIO claim, not a new source. |
+| 2 | `"Armstrong" 1808 cipher Madison "undecyphered" decrypted` | same set; no new site. |
+| 3 | `site:scienceblogs.de klausis-krypto-kolumne Armstrong Madison` (Cipherbrain) | two 2015 posts (1 and 3 Aug 2015) on a **1780** Madison cryptogram from Italy solved by Armin Krauß -- a different item; nothing on Armstrong 1808. |
+| 4 | `Cipherbrain "Armstrong" "1808" encrypted letter Madison` | same AFIO/LoC/Bourdeau set; Founders 28 and 30 Aug 1808; puzzculture.com/tag/codecracking (fetched: no Armstrong post). |
+| 5 | `ciphermysteries Armstrong Madison 1808 code`; `"Armstrong" 1808 Madison cipher site:ciphermysteries.com` | Cipher Mysteries: no Armstrong post (only generic pages, "Early American ciphers" 2009). |
+| 6 | `cryptiana blogspot Armstrong letter 1808 undecoded`; `"Armstrong" "Madison" 1808 "shorthand" code letter Paris unsolved cipher` | Cryptiana blog; same solver-repo set. |
+| 7 | WebFetch cryptiana.blogspot.com/2026/06/ | "Undecoded Armstrong's Letter (1808) Sent to Madison by Mistake", 4 June 2026: **0 comments**. |
+| 8 | WebFetch cryptiana.blogspot.com/2025/10/ | "Decoding Armstrong's Letter: Help Wanted for Madison Papers", 22 Oct 2025: **0 comments**. |
+| 9 | WebFetch github.com/aryasn2026/cyphersolver and github.com/arya1515/cyphersolver (forks of Bourdeau) | both list the 20 Feb letter under "Attempted and closed from the evidence": "The claim does not hold; the letter stays unsolved." |
+| 10 | WebFetch dbourdeau.github.io/cyphersolver/index.html | only the 30 Aug 1808 postscript (solved, 49/49 groups); no 20 Feb entry claiming a reading. |
+
+No flag raised. Conditional on the search engine's index (blog comment threads beyond the two Cryptiana posts fetched
+were not reachable except through search). Not a novelty statement (rule 10).

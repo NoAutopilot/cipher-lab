@@ -1975,3 +1975,23 @@ layout, and none gives a value for the M codes (9, 15, 25, 48, 52, 65, 72) or th
 that o-u = 2-8 is a habit of this office (R965 p6 and p7). That is a design point, not a key. key.tsv stays `ours`
 (cryptanalytic); the register closes as a period-key source for this letter. Images are not in the repository;
 the holding archive's permission may be needed before any is published.
+
+## Web and blog check (CHECK-SOLVED-WEB, 28 Sept 2026)
+
+Parent worker CHECK-SOLVED-WEB, 28 Sept 2026 15:23-15:27 UTC (clock-read; the Spinelli lesson: a Cipherbrain comment thread held a
+reading our print tools could not see). **Verdict: no prior reading, decipherment or transcription of this instruction
+found on the open web or in the three blogs.**
+
+| # | Query / page | Hits |
+|---|---|---|
+| 1 | `"abbé de Mercy" 1648 instruction chiffrée` | Geneanet, Maison de Mercy (fr.wikipedia), Mercy-Argenteau archive inventory (agatha.arch.be, 18th c.), BnF Ms-6829 record; nothing on this letter. |
+| 2 | `"Espagnol 142" BnF chiffre OR cifra Mercy` | BnF archivesetmanuscrits record Espagnol 142-144 (ark cc347546, already on file); nothing else. |
+| 3 | `"Baron de Mercy mi Sumiller de Cortina"` (the letter's opening clear text) | 0 exact hits; only dictionary pages for *sumiller de cortina*. |
+| 4 | `"Autre instruction chiffrée pour l'abbé de Mercy"` (catalogue title) | only our own PR #16 (SO-MERCY-F22). |
+| 5 | `Mercy 1648 Felipe IV Münster cifra instrucción Cipherbrain OR cryptiana OR ciphermysteries` | generic cipher pages; the Wikipedia "Mercy (cipher)" article is a 2000 block cipher, unrelated. |
+| 6 | `site:cryptiana.blogspot.com Mercy 1648` | no post on this item. |
+| 7 | `site:scienceblogs.de klausis-krypto-kolumne spanische Verschlüsselung 1648` (Cipherbrain) | 2015 "ungelöste Verschlüsselung aus dem Jahr 1645", 2016 Rabenhaupt (Thirty Years' War), 2018 Ferdinand II -- all different items. |
+| 8 | `site:ciphermysteries.com Mercy 1648 Spanish instruction cipher` | nothing on this item. |
+| 9 | `"Mercy" "1648" Spanish cipher instruction BnF Espagnol decipherment` | Bourdeau index + two forks (WebFetch of arya1515 fork: no Mercy / Espagnol 142 entry); unrelated Cryptologia/academia papers. |
+
+No flag raised. Not a novelty statement (rule 10); AUDIT.md untouched.

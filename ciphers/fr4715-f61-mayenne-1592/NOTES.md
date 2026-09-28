@@ -2090,3 +2090,21 @@ II or pi with a double bar); no 4 above it, so not 4PI" -- no atlas class and no
 to a b/d form, written after 'Come'; it may be a handwriting abbreviation (e.g. S.M.) rather than cipher" -- probably
 clear text. A blind atlas-match call would re-ask what the reader already answered in the atlas's own terms; neither
 sign joins a cell, so both stay unread in the skeleton. No cost.
+## Web and blog check (CHECK-SOLVED-WEB, 28 Sept 2026)
+
+Parent worker CHECK-SOLVED-WEB, 28 Sept 2026 15:23-15:27 UTC (clock-read; the Spinelli lesson). Known answer here is Tomokiyo's own
+five interlinear spans on `BnFfr4715f61.png` (see "What Tomokiyo already reads"); a hit repeating only those is not new.
+**Verdict: no reading of f.61 beyond Tomokiyo's spans found.**
+
+| # | Query / page | Hits |
+|---|---|---|
+| 1 | `Mayenne polyphonic cipher BnF fr.4715 f.61 solved` | Bourdeau index + forks, Bourdeau issue #11 (Gramont, unrelated), Tomokiyo's MysteryTwister PDF, ciphermysteries.com home. The Bourdeau snippet about "Henri III's murder ... Nevers-Piles alphabet ... fr.4715 f.2" is the **Orbais / fr.3413 no.62** item, not f.61 (WebFetch of the arya1515 fork confirms: no f.61 entry). |
+| 2 | `"jalousie au beau-pere" OR "jalousie au beau pere" Mayenne chiffre` (Tomokiyo's own distinctive span) | 0 relevant hits. |
+| 3 | `duc de Mayenne 1592 lettre chiffrée déchiffrement Ligue chiffre polyphonique` | BnF finding-aid records fr.3641, fr.4715, fr.3623, fr.3362, fr.3974-3995, fr.4699, fr.4718; bibmath Viète page. No reading of f.61. **Key-hunt lead (not a reading):** the search summaries describe fr.3641 as holding a letter "avec chiffre et déchiffrement" on Mayenne's taking of Noyon, and fr.4699 letters "chiffrées avec déchiffrement" of Feb 1593 to Mayenne from P. de Fortia -- neither shelfmark appears in this folder; both archivesetmanuscrits records answered WebFetch 403 (one attempt each, not retried). Whether either is in the polyphonic cipher is unchecked. |
+| 4 | `"fr.4715" OR "français 4715" chiffre Mayenne déchiffré` | noise only. |
+| 5 | `cryptiana.blogspot.com polyphonic Mayenne Catholic League cipher` + WebFetch cryptiana.blogspot.com/2018 | "Unsolved ciphers in the French archives (ca.1586-1593)", 30 Nov 2018: "no.38 seems to be in an interesting polyphonic cipher but I'm not sure yet"; **0 comments**; no reading. |
+| 6 | WebFetch mysterytwister.org mtc3-tomokiyo-02-polyphonic-01-en.pdf (Nov 2019) | a synthetic English challenge; cites `mayenne.htm` as ref [2]; no f.61 text. |
+| 7 | `site:scienceblogs.de klausis-krypto-kolumne polyphon Mayenne OR "Katholische Liga" OR Tomokiyo polyphone` (Cipherbrain) | Madison 1780, Catinat 1702, Danish West Indies telegram -- nothing on f.61. |
+| 8 | `site:ciphermysteries.com Mayenne OR "Catholic League" polyphonic cipher` | nothing on f.61. The Bourdeau snippet on Lebel -> Charles Emmanuel of Savoy 1593 read "with Tomokiyo's key" is the Savoy unit already on file (INTAKE-SAVOY, line 78). |
+
+No flag raised. Only Tomokiyo's own spans are public. Not a novelty statement (rule 10); AUDIT.md untouched.
