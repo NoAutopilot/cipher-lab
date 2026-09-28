@@ -2504,3 +2504,69 @@ descriptive User-Agent, >= 1.5 s apart, no 429/403; PyPI 2 (pillow, numpy). Visi
 about 146k tokens, 5 minutes) plus this runner's two looks (the leaf view, one overlay). No reading, no class
 change, no target token decoded; rule 10: nothing here is called new or first. Cost: get_session carries no cost
 figure for this session; the row's estimate (3 USD) is what `campaign.py --spend` records.
+
+## Campaign step H29 (28 Sept 2026, 02:19-02:45 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H29 (from
+H25): Erving to Monroe, Madrid 5 Feb 1806 (LOC Monroe Papers, Series 1 reel 3, frames 0741-0743), the one coded letter in
+the Monroe run with a full period interlinear decode, read blind at native resolution as a REAL WE028 usage control --
+a real-usage row beside the four THE=972 letters in `design/stats_real.tsv` (ARM-DESIGN had only simulated WE028
+letters), and a witness for `KEY-OFFICES.tsv`. Not a target key (ARM-A2, H25) -- that is re-checked below, not assumed.
+
+**Route and crops.** Frames 0741, 0742, 0743 fetched at native (4327x2656, 4306x2750, 4216x2716; tile.loc.gov IIIF
+`full/full`, 3 requests, kept out of git, `h29/MANIFEST.tsv`). Code sits on 0741's right page, both pages of 0742 and
+0743's left page (right page clear). `tools/iiif_lines.py --image` found only 20-23 of about 27 lines per page on 0742
+at every prominence tried -- the interlinear glosses fill the interlines and flatten the row ink profile -- so the
+crops were cut by `h29/band_cut.py`: fixed-pitch two-line windows (pitch 88-92.5 px, from the detected centres where
+regular) with two red guide lines around the target line, every line the target of exactly one crop, the reader told
+to read only between the guides (a variant worth adding to iiif_lines.py as an option if a third target needs it;
+noted, not done). Two bands straddled one line twice (0742L 26/27, 0743L 13/14); both readers flagged the duplicate
+and `check_we028.py` drops a crop whose group sequence repeats the previous crop's.
+
+**Readers.** Four blind Sonnet calls, one page each (0741R, 0742L, 0742R, 0743L; 27 crops per call), told nothing of
+the letter, the key or the earlier H25 reads; output group + gloss per crop (`h29/reads/f*.tsv`), merged in reading
+order by `h29/check_we028.py` -> `h29/erving_groups.tsv`, checked against `tools/data/uscodes-1800/WE028.tsv`
+(gloss folded; exact = equal, partial = prefix/suffix of 3+ letters, shifted = matches the neighbouring group's entry,
+the interline word sitting between two groups in dense lines).
+
+**Result: 251 groups (19 / 62 / 104 / 66 per page), 250 with clean digits, 166 distinct values, 206 glossed.**
+
+| check | number |
+|---|---|
+| glossed groups whose gloss matches WE028 at the value read | 114 exact + 11 partial + 8 shifted = 133 of 206 (0.646) |
+| misses | 73 (35 at the reader's own low confidence, 44 medium, 2 high; mostly gloss misreads of tiny interline script -- "rich" for ide, "di" for ling -- and a few value misreads: 837 for 637 = ment, 1357 for 1351 = bow) |
+| CONTROL A, gloss-shuffle null (1,000 permutations of the 206 glosses over the same groups, exact+partial) | real 125 vs null mean 3.3, p95 6, max 10 -- the pairing is 21x its p95 (`h29/controls.txt`) |
+| two-reader agreement on frame 0741 (H25's one reader at 1800 px vs this blind reader at native) | 16 of 19 digit groups identical; the 3 disagreements arbitrated by WE028: 637 = ment (native right, H25's 837 wrong), 1369 = tation and 1094 = she (native right), 835 = die (native "dic" nearer than H25's "de"); "will" at 1786 (H25) / 1106 (native) matches neither entry, open |
+| CONTROL B, value overlap with the target: 166 Erving distinct vs the target's 216 | 15 shared vs a random-draw null (166 values from 1-1600, 2,000 draws) mean 19.1, p05 13, p95 25 -- at chance |
+| the 12 commonest Erving values (WE028 the, to, of, in, he, ter, ment, character, mis, french, govern, our; 25.2% of Erving's groups) in the target's 369 | expected about 93 if the target were WE028 usage, observed 0 |
+
+So the letter IS WE028 usage, established from the manuscript rather than inferred from H25's 49 values (65% of the
+glossed groups agree with the published table at the value read, 21x the shuffle null; the residue is gloss
+legibility, not the table), and the target is NOT WE028 usage (H25/ARM-A2 reproduced on the full 251-group stream:
+none of the twelve commonest values appears once in 369 groups where 93 would be expected). Per-token grades: the
+group digits H where both readers agree or WE028 arbitrates (about 240), M elsewhere; the glosses are C where they
+match the table (133) and M otherwise; nothing here is a reading of the target.
+
+**Design row (`design/stats_real.tsv`, `REAL WE028 usage erving-monroe_1806-02-05`, via `h29/append_stats_real.py`;
+`design_stats.py` now reads `design/real_extra.tsv` so a full re-run keeps it).** N 250, D 166 (D/N 0.664), values
+under 100 share 0.048, units_top1 0.164, units_top2 0.298, units_H 3.225, decade_units_z 9.1, block_trough 0.000,
+block_pair_min 14, digits23_share 0.142 -- the first REAL WE028 stream lands where ARM-DESIGN's simulated WE028
+letters sit (units_top1 0.14-0.17, entropy 3.2-3.3) and where the four real THE=972 letters sit (0.15-0.20), and
+nowhere near the target (0.388 / 2.572 / trough 4): a fifth independent real letter confirming that the target's
+units skew and 901-1099 trough are not what a contiguous State Department table produces in use.
+
+**KEY-OFFICES.tsv.** The WE028 row (added by ARM-CORR at H26) already names this letter; its cell now carries the
+count and the match figure from this step. KEY-DESIGN.tsv is tool-built (`tools/key_design.py`) and not edited here.
+
+No target token decoded, no class change, no reading; rule 10: nothing here is called new or first (the letter is
+listed in the 1904 LOC calendar and the glosses are the period's own; WE028 is Weber's published table). Requests:
+tile.loc.gov 3 (native frames), >= 1.7 s apart, descriptive User-Agent, no 429/403; no other host. Vision: 4 of 4
+subagent calls (Sonnet; about 136k, 153k, 191k and 201k tokens; 6-18 minutes each) plus this runner's five looks
+(three page views, one band overlay, two crop checks). Cost: get_session carries no cost figure; four Sonnet calls
+of that size are about 5 USD by H21's rate (two calls of ~210k tokens ~ 2.5 USD), so `--spend` records 5 against the
+row's 1.5 estimate -- the estimate priced one pass per frame (H25's wording) but the letter has four coded pages and
+needs one call each (CLAUDE.md Usage 6: price per pass, not per frame).
+
+Files: `h29/MANIFEST.tsv`, `h29/band_cut.py`, `h29/check_we028.py`, `h29/append_stats_real.py`, `h29/reads/`
+(4 TSV), `h29/erving_groups.tsv`, `h29/summary.txt`, `h29/controls.txt`; `design/real_extra.tsv`,
+`design/stats_real.tsv` (one row added), `design/design_stats.py` (real_extra hook).

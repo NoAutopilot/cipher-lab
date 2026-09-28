@@ -1,0 +1,4 @@
+CONTROL A gloss-shuffle: glossed groups in table 206, real exact+partial matches 125 (0.607); shuffled-gloss null mean 3.3, p95 6, max 10 -> real is 20.8x the p95
+CONTROL B value overlap: Erving distinct 166, target distinct 216, observed shared 15; random-draw null mean 19.1, p05 13, p95 25
+top-12 Erving values in the target: [(1385, 11, 0, 'the'), (569, 10, 0, 'to'), (1576, 6, 0, 'of'), (1426, 5, 0, 'in'), (169, 5, 0, 'he'), (1379, 5, 0, 'ter'), (637, 4, 0, 'ment'), (9, 4, 0, 'character'), (134, 4, 0, 'mis'), (995, 3, 0, 'french'), (1229, 3, 0, 'govern'), (934, 3, 0, 'our')]
+those 12 carry 0.252 of Erving's groups; expected count in 369 target groups at that rate 93.0, observed 0

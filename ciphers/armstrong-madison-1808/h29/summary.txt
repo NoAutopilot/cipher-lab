@@ -1,7 +1,7 @@
-duplicate bands dropped: [('f0743L', 14, 6)]
-groups read 189 (per frame: f0741R 19, f0742L 0, f0742R 104, f0743L 66)
-digits clean 188, unread digit 1, value not in WE028 (>1596 or 0) 1
-glossed 157: exact 88, partial 7, shifted to a neighbour 8, miss 54; no gloss 30
-distinct values 124, values >= 100: 178 tokens, units 0/1 share 0.230, units 2/3/5/9 share 0.427, max value 7229
-top values: 1385x10, 569x7, 1379x5, 1576x4, 134x4, 1426x4, 995x3, 1229x3, 637x3, 854x3, 501x3, 9x3
-design_stats: N=188 D=124 D/N=0.660 low_share=0.053 low_distinct=6 hi_distinct=118 units_top1=0.169 units_top2=0.303 units_H=3.184 units_digit0_share=0.112 decades_occupied=79 decade_multi_frac=0.342 variants_per_decade=1.494 decade_units_modal=0.649 decade_units_null=0.402 decade_units_z=8.649 decade_units_rows=24 block_min=0 block_median=10 block_trough=0.000 block_pair_min=6 freqpos_jsd=0.012 top10_share=0.245 top10_pos_sd=0.275 onepart_dist=0.419 digit_order_rho=-0.083 digits23_share=0.139 gap_median=497 gap_median_shuffled=558 gap_small_frac=0.016 gap_small_frac_shuffled=0.016
+duplicate bands dropped: [('f0742L', 27, 4), ('f0743L', 14, 6)]
+groups read 251 (per frame: f0741R 19, f0742L 62, f0742R 104, f0743L 66)
+digits clean 250, unread digit 1, value not in WE028 (>1596 or 0) 2
+glossed 206: exact 114, partial 11, shifted to a neighbour 8, miss 73; no gloss 42
+distinct values 166, values >= 100: 238 tokens, units 0/1 share 0.206, units 2/3/5/9 share 0.424, max value 7229
+top values: 1385x11, 569x10, 1576x6, 1426x5, 169x5, 1379x5, 637x4, 9x4, 134x4, 995x3, 1229x3, 934x3
+design_stats: N=250 D=166 D/N=0.664 low_share=0.048 low_distinct=7 hi_distinct=159 units_top1=0.164 units_top2=0.298 units_H=3.225 units_digit0_share=0.109 decades_occupied=98 decade_multi_frac=0.418 variants_per_decade=1.622 decade_units_modal=0.615 decade_units_null=0.391 decade_units_z=9.087 decade_units_rows=30 block_min=0 block_median=14 block_trough=0.000 block_pair_min=14 freqpos_jsd=0.012 top10_share=0.228 top10_pos_sd=0.356 onepart_dist=0.362 digit_order_rho=-0.217 digits23_share=0.142 gap_median=499 gap_median_shuffled=459 gap_small_frac=0.016 gap_small_frac_shuffled=0.024

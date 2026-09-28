@@ -1,0 +1,79 @@
+crop	pos	group	gloss	conf	note
+1	1	1385	the	medium	-
+1	2	215	Prince	low	gloss faint cursive, best guess
+2	1	1094	She	medium	-
+3	1	NONE	-	high	no numeral group in target band
+4	1	NONE	-	high	no numeral group in target band
+5	1	NONE	-	high	no numeral group in target band
+6	1	NONE	-	high	no numeral group in target band
+7	1	NONE	-	high	no numeral group in target band
+8	1	NONE	-	high	no numeral group in target band
+9	1	NONE	-	high	no numeral group in target band
+10	1	NONE	-	high	no numeral group in target band
+11	1	545	en	low	gloss uncertain, possibly "on"
+11	2	1408	rich	low	last digit could be 0 instead of 8; gloss uncertain
+12	1	1426	in	medium	part of spelled gloss chain in-di-vi-du(e)-als
+12	2	883	di	medium	-
+12	3	467	vi	medium	code 467 recurs later (crop 17) with same gloss "vi"
+12	4	1278	due	medium	gloss may read "du" (individuals spelling)
+12	5	1535	als	medium	-
+12	6	295	-	low	faint mark above, illegible
+12	7	526	-	low	faint mark above, illegible
+12	8	1578	-	low	faint mark above, illegible
+13	1	934	our	medium	-
+13	2	1576	of	medium	-
+13	3	250	Spain	medium	-
+14	1	NONE	-	high	no numeral group in target band (numbers at bottom edge belong to crop 15)
+15	1	1576	d	low	repeat of code 1576; gloss illegible, possibly ditto mark
+15	2	934	on	low	repeat of code 934; gloss uncertain
+16	1	868	ago	medium	-
+16	2	1098	si	medium	part of spelled gloss chain si-ti-ations
+16	3	763	ti	medium	-
+16	4	864	ations	medium	small circle after digits, likely flourish not a digit
+17	1	1030	-	medium	no gloss visible above
+17	2	1182	-	medium	no gloss visible above
+17	3	9	-	medium	single digit, small circle/flourish after it
+17	4	1259	have	low	gloss sits in row above rather than immediate interline; position/row assignment uncertain, fully legible only in crop 18
+17	5	1386	their	low	same as above
+17	6	1051	country	low	same as above
+17	7	569	to	medium	-
+17	8	1330	better	medium	-
+17	9	1085	see	medium	part of spelled gloss chain se-vi-ces (services)
+17	10	467	vi	medium	matches code 467=vi seen in crop 12
+17	11	1022	ces	medium	-
+18	1	NONE	-	high	target row "as I find that Mr Bourdoin correspondents continues" has no digits (groups above red1 assigned to crop 17)
+19	1	NONE	-	high	no numeral group in target band
+20	1	NONE	-	high	no numeral group in target band (glosses at bottom edge belong to crop 21's numbers)
+21	1	793	by	medium	-
+21	2	208	Gen	medium	written "Gen:" abbreviation
+21	3	686	arm	medium	-
+21	4	382	5th	medium	gloss flanked by dashes
+21	5	1595	me	medium	-
+21	6	569	-	low	no clear gloss visible; repeat of code 569
+21	7	934	-	low	no clear gloss visible; repeat of code 934
+22	1	7226	govern	low	digits uncertain (last character loop resembles 6); number inserted below "government" via caret mark
+22	2	637	ment	low	inserted via caret below "government"
+22	3	169	he	medium	-
+22	4	1190	with	medium	part of spelled gloss chain with-held-his
+22	5	174	held	medium	-
+22	6	184	his	medium	-
+23	1	999	from	medium	-
+23	2	628	me	medium	-
+23	3	1599	on	low	last digit uncertain
+23	4	1399	this	medium	-
+23	5	384	subj	medium	part of spelled gloss chain subj-ject (subject)
+23	6	1411	ject	medium	-
+24	1	792	-	low	gloss faint/cut at top edge, illegible
+24	2	169	he	medium	repeat of code 169 seen in crop 22 with same gloss
+24	3	569	to	medium	repeat of code 569, same gloss as crop 17
+24	4	1510	-	low	gloss faint, possibly "act", not confident
+25	1	1592	on	medium	-
+25	2	23	-	medium	plain calendar date "May 23", not glossed, not a cipher code
+26	1	228	-	low	gloss above illegible, possibly "pres" or "mo"
+26	2	577	tra	low	gloss uncertain
+26	3	505	king	low	gloss uncertain
+26	4	1050	county	medium	-
+27	1	228	-	low	crop 27 duplicates crop 26's target line (same underlying line, end of crop set); gloss illegible
+27	2	577	tra	low	duplicate of crop 26
+27	3	505	king	low	duplicate of crop 26
+27	4	1050	county	medium	duplicate of crop 26
