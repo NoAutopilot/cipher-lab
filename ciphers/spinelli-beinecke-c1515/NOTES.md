@@ -1456,3 +1456,40 @@ p.[1]); no cipher reading is implied by any of the above. **Files:** 60 crops `i
 30 MB guard downscaled the committed native sources in place and rewrote 74 entries -- restored from git, copies
 removed, a `_note_sources_28sep2026` key explains). **Cost:** 4 Opus vision calls (about 425k tokens) plus this
 runner's turns -- recorded as 10.0 USD (the est). No credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H34 (28 Sept 2026, 05:22-05:22 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H34: the context cribs H33 yielded (confessore, medici, cardinale,
+arcivescovo, ispagnia, gubernation, fiandra, napoli, regina) dragged on the v4 coding with `tools/crib_pattern.py`
+(HOOK wild, the five null shapes skippable up to 4 times, strict then homophones, 200 shuffled-order copies each; 18
+runs, seconds of CPU; log in the runner's scratch, the numbers below).
+
+**Result: negative with controls -- no crib places above chance, and the short cribs cannot be tested at all by
+this instrument on this design.** Placement counts (real vs shuffled mean / p95) and best-score ranks (shuffles at or
+above the real, of 200):
+
+| crib (letters) | strict: real / mean / p95, score rank | homophones: real / mean / p95, score rank |
+|---|---|---|
+| confessore (10) | 20 / 18.7 / 46, 135 | 345 / 291 / 459, 85 |
+| gubernation (11) | 105 / 88.5 / 181, 117 | 253 / 203 / 358, 145 |
+| arcivescovo (11) | 8 / 16.3 / 38, 102 | 281 / 223 / 376, 105 |
+| cardinale (9) | 152 / 130 / 198, 180 | 389 / 327 / 493, 33 |
+| ispagnia (8) | 61 / 58.8 / 94, 150 | 466 / 405 / 559, 199 |
+| fiandra (7) | 173 / 162 / 221, **5** (a 2-code key, SIX=a THREE=i, 25 tokens covered: degenerate) | 482 / 434 / 571, 9 (same 2-code key) |
+| medici (6) | 171 / 168 / 219, 141 | 510 / 464 / 568, 183 |
+| napoli, regina (6) | 490 / 444 / 544 -- every start places | same |
+
+Reading: every count sits at the shuffled mean and every best score at or below the shuffled median, except the
+"fiandra" score, which comes from a placement that maps only two codes (the other five letters fall on HOOK
+wildcards) -- a best-score statistic over 25 covered tokens is not a test, and `tools/partial_key_test.py` is not
+run on a 2-code key. The six-letter cribs place at every start position (490 of 490): with HOOK wild at 15% of
+tokens and five null shapes skippable, a crib under about ten letters carries no constraint, so for those the
+result is "untestable by this instrument at this design", not a negative. For the longer cribs it is a negative at
+chance, on the v4 coding, subject to the coding (93% pair agreement) and to the null/wild assumptions. Together with
+H28 (Tomokiyo's phrase) and H31 this closes the crib route on the single letter as coded: what would reopen it is a
+key that fixes which shapes are nulls (Domnina's Fig.1, H6/H8) or more ciphertext (H17).
+
+**Controls:** the shuffled-order battery per run (200), the count and the score both reported. No reading, no class
+change, rule 10 wording. **Files:** none new (HYPOTHESES.md is family_run's table; the crib numbers are here).
+**Cost:** CPU only, seconds -- recorded as 1.0 USD (the est). No requests, no vision calls, no credentials, no
+AskUserQuestion, no other target touched.
