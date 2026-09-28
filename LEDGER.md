@@ -1308,3 +1308,4 @@ the end of every wake.
 | 28 Sept 2026 | spinelli runner 4 | session_01MHf6EKHuvKLG8nh18jCwqR | owner | Opus 5.5 | see get_session | retired 15:0x, campaign closed N0 | H42 |
 | 28 Sept 2026 | F61-FAMILY-6 | session_01TPNoYGTE6dLBPfyEgZTLAc | owner | Opus 5.5 | cap 40 | running from 15:04 | H52 key v4 on the H65-H77 splits |
 | 28 Sept 2026 | DECODE-OPEN | session_015RJ8kumxcx2XKtHHU1zzsU | owner | Opus 5.5 | 7.56 | done 15:11, archived | access works; Mercy register ruled out |
+| 28 Sept 2026 | CHECK-SOLVED-WEB | session_01Pd5PCGRBn6X3F958dK4qVb | owner | Opus 5.5 | cap 20 | running from 15:21 | web/blog check on three campaigns; intake gate fix |
