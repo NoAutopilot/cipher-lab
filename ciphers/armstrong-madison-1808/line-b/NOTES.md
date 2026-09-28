@@ -713,3 +713,19 @@ vowel-dropping spelling, French. It does agree with the ChatGPT space-aware and 
 output against clean controls) and with H2's seed-dependence finding, from a different instrument (word dictionary
 rather than letter n-grams). Rule 5: the target stays `open`; no reading. Requests: none; 0 subagents; about 20
 minutes of CPU by the clock.
+
+## Step B12 (28 Sept 2026, 04:27-06:12 UTC, background) -- reply chain Aug 1808-Feb 1809: no mention of the undecyphered letter; the only cypher traffic is the Department cypher for Short
+
+Founders Madison Early Access ids 3401-4100 (9 Aug 1808-late Feb 1809) through the B6 Wayback loop: 700 ids, 652
+read, 48 failed twice (retry queued behind the Jefferson passes, `scratch/b6/madison_retry2.tsv`). Armstrong-titled
+documents read: from Armstrong 13 Aug, 28 Aug, 30 Aug ("I have been honored by the receit of your private letter of
+the 20th. of July" -- Madison's 21/22 July letters, B6, which say nothing of the February letter), 8 Sept, 20/24/25
+Oct, 24 Nov, 6/12/14/26 Dec 1808, 2 Jan, 16/20 Feb 1809; Madison to Armstrong 9 Sept and 8 Dec 1808. None mentions
+a cypher, a key, the 20 Feb letter or an unread letter. Cypher hits in the run: Madison to William Short 8 Sept 1808
+(3504: Short's cypher is the London minister's, and he is to obtain "a Copy of Genl Armstrongs Cypher" at Paris --
+the Department cypher of campaign H30), Graham to Madison 13 and 19 Sept 1808 (3531, 3543: making out and sending
+Short's cypher), and Vincent Gray 29 Oct 1808 (3653: "cipher of Vincent Gray" is his signature mark, not a code).
+**Result: search result -- the Madison side of the chain, 21 Feb 1808 to Feb 1809 (B6 + B12, about 1,000 documents),
+names the undecyphered letter only on 15 May (Madison) and 20 May (Graham's duplicate, B15); the correspondent and
+the key are named nowhere.** Requests: web.archive.org about 750 for this pass (single-threaded, 1.6 s apart, one
+retry per id); 0 subagents.
