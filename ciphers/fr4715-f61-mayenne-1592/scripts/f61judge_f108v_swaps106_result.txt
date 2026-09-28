@@ -1,0 +1,4 @@
+f108v_swaps106: target SET-20 scored 5.0; rank 1 of 21 (ties against the target)
+all scores: SET-20:5.0 SET-09:4.5 SET-05:3.0 SET-02:2.5 SET-03:2.5 SET-04:2.5 SET-06:2.5 SET-13:2.5 SET-01:2.0 SET-07:2.0 SET-12:2.0 SET-14:2.0 SET-17:2.0 SET-18:2.0 SET-21:2.0 SET-08:1.5 SET-11:1.5 SET-15:1.5 SET-19:1.5 SET-10:1.0 SET-16:1.0
+target reading as given by the judge: tptsrpspurpnousneusauissionsmentresurloss | epsapusanuronsasleulementuuolsourn | iensnesseiuranlanonseruationenomilles | eullentestrereleuersetarinainallementaelle | neaneisaonnarnetitmesseitzmaisnaretenam | rialointmaussisontilzsersaenessairesatrem | ntilalanlusannaernarenontraienellelaessi
+GATE H85 (f108v_swaps106): rank 1 of 21 -> PASS

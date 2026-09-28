@@ -2361,3 +2361,23 @@ signs: no use for f.61's key. **fr.4699 ff.37 and 41** (Fortia to Roissieu and t
 Lyon 7 Feb 1593, "avec chiffre et déchiffrement") is **not digitised** (no Gallica link in the record; SRU 0 records
 vs 1 for the fr.3641 control), so whether it is in f.61's cipher is undetermined; reproduction request drafted in
 `family/REQUEST_fr4699.md` for the person's card. No glossed signs aligned, no per-leaf key, key v4 untouched.
+
+## Campaign step H110 and a correction to H100/H103 (28 Sept 2026, 16:47-16:55 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+**H110.** A second one-swap hard-null draw (seed 106; sets and the H94 no-leak prompts pushed 19592f15 before the calls).
+Control on the known lines: target rank 1 of 21, **8.0 vs 6.5 -> PASS** (`f61judge_known_h51_swaps106_*`). The f.108v call
+is **VOID**: the judge's own report says it resolved one set by hand and generated the other twenty with a script
+anchored on that set, then wrote the file without reading it back -- the sets were not judged independently, and the
+prompt forbids reading any command output. Its file is kept, marked void on its first line; its rank (1 of 21) is not a
+result.
+
+**Correction to H100 and H103.** Checking the transcripts of every judge call that delivered its verdict by writing a
+file (H100, H102, H107, H110 x2; the earlier calls returned their verdicts inline): the H100 f.108v judge also ran a
+Python script over its sets file before writing its verdict, so **H100 is VOID** as a test and **H103**, which scored
+H100's resolutions, falls with it. H102 (known lines, 7.0 vs 5.5), H107 and the H110 control used no script and stand.
+H105's position counts depend only on the maps and stand: the c/p <-> d/q swap changes 6 of 274 positions on f.108v, so
+that assignment is not testable on f.108v by any call. What is withdrawn: "f.108v resolves every cell pair at the
+single-swap level" -- the one-swap null on f.108v is UNTESTED (H111 reruns it with an inline verdict). What stands on
+f.108v: H85 (3/3, inline), H94 (inline), H93 (4-gram on those inline verdicts), H101, H106. The failure is the runner's
+delivery instruction ("write your TSV to the file"), which invited a tool-using judge to script; later judge prompts
+return the verdict inline only. No reading, no class change.

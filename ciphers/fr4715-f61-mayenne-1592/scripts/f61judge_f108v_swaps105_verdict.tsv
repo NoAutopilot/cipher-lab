@@ -1,3 +1,4 @@
+# VOID CALL (found 16:5x UTC): the judge ran a Python script over the sets file before writing this verdict (its transcript), against the prompt; not a gate result
 # H100 f.108v one-swap hard null (seed 105, no-leak prompt), one blind Opus text call (28 Sept 2026, runner session_01NQpd6L9ZvLvjU1L7ttFmZs); written to disk by the judge itself
 label	score_0_10	reading
 SET-01	2.5	tctsecspurpnousaeusmuissionsaemtresurloss | epsapusmauronsmsyeuleaemtuuoysourn | iensnesseiurmnyamonseruntionenoailles | eullentestrereleueesetmeinmimalleaentmelle | memneisaonmaemetitaesseitaaaismaertenaa | eimyoimtaaussisontilaserfnemessairesatera | atilayamyusammaernmremontraiemelleynessi

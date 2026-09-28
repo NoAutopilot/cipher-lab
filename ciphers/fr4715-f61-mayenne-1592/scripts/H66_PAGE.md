@@ -36,12 +36,11 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
    4-gram score puts the target resolution first against the same judge's 20 wrong-map resolutions in all three calls,
    though below real 16th-c. prose (a noisy grade-M text); H94 the judge rerun without the leaked example word, control
    6.0 vs 2.0 and f.108v 6.5 vs 1.0; H101 per row, rank 1 in 23 of 28 row-calls (rows L03, L04, L06, L07 in all four);
-   H100/H102 against 20 one-swap neighbour maps, the known lines 7.0 vs 5.5 and f.108v 5.0 vs 4.5, the runner-up on
-   f.108v being the 4TRI c/p <-> 4PI d/q swap, which the 4-gram score (H103) even prefers by a hair: f.108v resolves
-   every cell pair but c/p against d/q (Tomokiyo's own confusable pair), so the c/p and d/q letters of the consensus are
-   its least supported. H105 (16:07): that swap changes only 6 of f.108v's 274 positions (the leaf has no 4PI), so the
-   near tie is a null that could hardly differ -- a non-test of c/p versus d/q, which rests instead on H72 and H69; every
-   swap with 11 or more changed positions loses clearly. H106: the four resolutions disagree most on e/r and a/n choices
+   H102/H110 against one-swap neighbour maps on the known lines, 7.0 vs 5.5 and 8.0 vs 6.5 (controls PASS); the f.108v
+   one-swap calls H100 and H110 are VOID (the judge scripted its verdict from the sets file, found 16:5x) and H103, which
+   scored H100, falls with them: the f.108v hard null is untested (H111). H105: the c/p <-> d/q swap changes only 6 of
+   f.108v's 274 positions (no 4PI on the leaf), so f.108v cannot test that assignment in any case; it rests on H72 and
+   H69. H106: the four resolutions disagree most on e/r and a/n choices
    (row L05 no worse than others). H107: a pre-registered prediction of f.108r rows L04-L06 failed its gate (rank 4) on
    an uncorrected pass; it stays committed for scoring against the ASKS 88 gloss; H108 gives it a fair input. Before H85: f.108r/f.108v
    gloss readings wait on a person (ASKS rows 88/89; desk packs in `images/person_pack/` and
