@@ -3643,3 +3643,20 @@ Requests (`keyhunt2/requests.log`): catalog.archives.gov IIIF 10, tile.loc.gov 8
 5, digitalcollections.nypl.org 8 (browser), academics.umw.edu 3 (browser) + 1 curl (403), libraries.wm.edu 1, Google
 Books API 12; WebSearch 1; project mailbox search 1. Vision screener calls: 0 (sheets read by this worker). No logins.
 Status unchanged (`open`). Rule 10: nothing called new.
+
+## ARM-MONROE-CAT (28 Sept 2026)
+
+Parent worker ARM-MONROE-CAT (owner account, Opus), brief `.claude/briefs/runs/2026-09-28-parent-arm-monroe-cat.md`,
+20:16-20:2x UTC (container clock). Job: query the Papers of James Monroe's public Monroe Catalogue Online (UMW; FileMaker
+WebDirect at fms14.longtermsolutions.com, guest sign-in printed on
+https://academics.umw.edu/jamesmonroepapers/search-the-letters/catalogue/) for Armstrong to/from Monroe 1804-1808, above all
+12, 16/18 Mar and 1, 5 Apr 1805. **Result: not searched.** The catalogue page loaded (headless Chromium; it confirms ~38,000
+entries with "repository location of the original") and the WebDirect sign-in screen was reached, but this session's
+permission policy refused the sign-in step, and the worker did not try another route to it. No hit recorded;
+`keyhunt/monroe_catalogue.tsv` holds a single not-searched row. This is an unrun step, not a negative: the catalogue may
+well answer the draft's first question. Handed to the owner (ASKS 97): sign in as guest from the catalogue page, Quick
+Find "Armstrong", restrict to 1804-1808 (or search author Armstrong / recipient Monroe), and note date, repository and
+any cipher remark for 12, 18 Mar, 1, 5 Apr 1805 -- about five minutes in a browser. Or allow the sign-in for a cloud
+worker and re-run this brief. `outreach/armstrong-keyhunt-monroe-papers.md` kept, held until that lookup is done.
+Requests: academics.umw.edu 1, fms14.longtermsolutions.com 1 (`keyhunt/requests.log`). Rules 9 and 10: nothing named,
+nothing claimed.
