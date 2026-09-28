@@ -181,3 +181,174 @@ would turn I into S or C. After that, apply the same blind protocol to f.21v, f.
 ## Second-opinion claims not confirmed
 
 None filed yet. The SO row is queued below.
+
+---
+
+# Second audit (VERIFY-CEPPO-2, adversarial, 28 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-CEPPO-2 (owner account, session_01DTnzLDCCBHdGCCGdSxcNZv), a session separate
+from HARVEST-A and VERIFY-CEPPO-1. Brief `.claude/briefs/runs/2026-09-28-parent-verify-ceppo-2.md`. Clock read
+with `date -u` at 18:17 and 18:30 UTC, 28 Sept 2026. Scripts and outputs are in `harvest/v2/`.
+
+## Verdict: **held in part**
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| f.11r "presidente", "mandato" (P1), "curare", "estitucio" (P2), "chuni", "ochi", "sauoia" (P4), forced by the printed key on the blind transcription D | recovered-passages: word fragments | **N3** (upheld) | published | unknown | high that they are not chance; moderate on each word's exact letters (below) |
+| the I-graded letters: "di[l]", "[la]", "[r]estitucio[ne]", "[al]chuni [l]ochi", "[pro]curare" | none | not endorsed as read | - | - | I, unresolved by the witnesses |
+| P3, P5, continuous text | none | not classed | - | - | nothing read |
+
+Key source: `published` (Tomokiyo's Ceppo-Nevers table, nevers_add1.png; see the first audit).
+
+What held: novelty (nothing in print, wider search below), and the claim that the fragments are not chance
+(0 of 2,000 chance decodes come close, script and blind reader). What did not hold as the first audit wrote it:
+(a) two of the seven words rest on letters that neither independent blind pass A nor B saw, only the value-blind
+reconciler D (details below), so they are S-with-a-caveat, not clean S; (b) the pound-sign override does not
+survive a per-occurrence test, so "[al]chuni [l]ochi" and "[la r]estitucio[ne]" stay I and must not appear in an
+outward sentence as read; (c) the ticked-6 override is not an override at all on D (see 3).
+
+## 1. Novelty, harder (step 1)
+
+| family | what was searched (28 Sept 2026) | result |
+|---|---|---|
+| BnF catalogue record, fr.3251 | archivesetmanuscrits.bnf.fr/ark:/12148/cc49712p (1 request, 200) | "Fol. 11 • 6 Lettre, avec chiffre, de « LODOVICO BIRAGO » au « duca di Nivers,... Da Saluzzo, il 14 settembre 1570 ». En italien." -- "avec chiffre" only; the catalogue marks decipherment where present ("Fol. 39 • 20 ... avec chiffre et déchiffrement"). Confirms folio, date, parties and that no period decipherment exists on f.11. |
+| Printed BnF catalogue (Catalogue général des mss français, Ancien fonds, 1868) | IA p1cataloguegnr02bibluoft, _djvu.txt fetched once, parsed by script | same entry (no.6 "avec chiffre", fol.11); OCR prints the number as "3231" (3/5 confusion; order of neighbouring entries confirms it is fr.3251, and the OCR "3251" entry is fr.3231, Guise to Nemours). No decipherment printed. |
+| Google Books API (key, country=US), Italian and French | 17 queries: "Birago" "Nevers" 1570 lettere cifra; "Lodovico Birago" "duca di Nevers"; "Birago" "14 settembre 1570"; "Birago" "restituzione" Savoia 1570 Saluzzo; "restitutione" "luoghi" Savoia 1570 Birago; "Birago" Nevers "in cifra" Saluzzo; "Birague" "duc de Nevers" Saluces lettres; "Birague" Nevers "14 septembre 1570"; "Birague" "restitution" places Savoie 1570; "Birague" Nevers lettres chiffrées Saluces 1570; Boltanski "ducs de Nevers" Birague chiffre; "Ceppo" Nevers chiffre; Tomokiyo Nevers cipher Birago; and others | catalogues; Denina, *Rivoluzioni d'Italia*; Douais, *Lettres de Charles IX à Fourquevaux* (1897); Boltanski, *Les ducs de Nevers et l'État royal* (2006); Gribaudi, *Storia del Piemonte* (1960); *Il Marchesato di Saluzzo e la Riforma protestante* (1960, cites fr.3251-3252 for Birago's complaints to Bellegarde). All snippet-only; none shows a decipherment or the text of f.11. Not read in full (see "not reached"). |
+| Internet Archive full text (be-api) | "Birague au duc de Nevers"; "Birago al duca di Nevers"; "Birague" "duc de Nevers" "en chiffre" Saluces; "alchuni lochi"; "restitucione" Savoia | no hit on this letter. "alchuni lochi" is attested 16th-century Italian (Varthema, *Itinerario*; a Fugger newsletter), which supports the spelling as plausible, nothing more. |
+| OpenAlex (key) | Birago Nevers Saluzzo 1570; Birague Nevers Saluces; Ceppo Nevers cipher | 9 results, none relevant |
+| Semantic Scholar (key) | Birago Nevers; Birago Nevers Saluzzo | nothing relevant (first two calls returned no total; retry returned unrelated papers) |
+| CORE (key) | Birago AND Nevers | 12 hits, all BnF catalogue records of the Nevers recueils |
+| HAL | Birague AND Nevers | 0 |
+| Persée | Birague Nevers Saluces (articles) | top hit Machiavélien ou anti-machiavélien? (2013, Nevers and René de Birague as counsellors); nothing on the letters or the cipher |
+| Cryptiana blog | search "Ceppo" | "No posts matching the query" |
+| Web search (2) | Italian: Lodovico Birago lettera duca di Nevers 14 settembre 1570 cifra decifrazione; French: Birague Nevers 1570 lettre chiffrée déchiffrement Saluces restitution places Savoie | BnF finding aids (fr.3251, 4702, 4703, 4699), Bourdeau index, Wikipedia; no reading of f.11 |
+| Tomokiyo nevers.htm, Bourdeau, Aymeloglu/DECODE | not re-run; first audit's same-day checks stand (live page unchanged; Bourdeau lists f.11 unread; no DECODE record for fr.3251) | - |
+
+Not reached: the full text of *Il Marchesato di Saluzzo e la Riforma protestante* (1960) and of Boltanski 2006;
+these are the two books most likely to quote Birago's fr.3251 letters. Both cite the volumes; neither snippet
+shows a cipher reading. JSTOR rows for this target are already queued by the first audit (2 rows); fragments are
+too short for a family (ii) phrase row. Good-citizen note: one malformed loop of mine sent about 24 Google Books
+calls with no pause (about 18:24 UTC); it returned without a 429, and the later calls were spaced 1.6-2 s.
+Requests: googleapis.com about 45; archive.org 5; be-api 7; api.openalex.org 3; api.semanticscholar.org 3;
+api.core.ac.uk 1; api.archives-ouvertes.fr 1; persee.fr 1; cryptiana.blogspot.com 1; archivesetmanuscrits.bnf.fr 1;
+gallica.bnf.fr SRU 1; web search 2.
+
+**Class stays N3**: no print of the plaintext or of a decipherment of f.11r located; not N4 while the two Saluzzo
+monographs above are unread.
+
+**New witness lead (not a novelty matter).** The same catalogue lists in fr.3252 (Gallica ark:/12148/btv1b9060232m)
+"24. Lettre, avec chiffre et déchiffrement, de « Lodovico Birago » au « duca di Nevers,... Da Saluzzo, li 5 aprile
+1571 ». En italien. (Fol. 36.)" -- inside Tomokiyo's Ceppo-Nevers window (Sept 1570-May 1571) but not in his
+fr.3251 list and not in this folder. If it is the same cipher and its gloss is legible (ff.27/82's are not), it is
+the witness that can settle the pound sign and the double-barred oval. Not fetched: outside this brief.
+
+## 2. Chance controls (step 2): `harvest/v2/chance_control.py` (seed 2028)
+
+Transcription: the value-blind D. Metric (script, no model): Italian lexicon = every word type of it16dip with
+corpus count >= 3 (14,166 types, length >= 4); per decode, the longest lexicon word found as a substring, and the
+number of distinct lexicon words of 6+ letters.
+
+| arm | decodes | longest word >= 10 (real: presidente) | 7+ words of 6+ letters (real: 7) | longest-word distribution |
+|---|---|---|---|---|
+| real key, real order | 1 | yes (10) | yes (7) | - |
+| K: 1,000 shuffled keys | 1,000 | **0** | **0** | 0:196, 4:664, 5:130, 6:10 |
+| T: true key, sign order shuffled within each passage | 1,000 | **0** | **0** | 0:25, 4:713, 5:239, 6:22, 7:1 |
+
+The best chance decodes carry one word of 6-7 letters ("regale", "contro", "moderni"); never two. The T arm keeps
+the key's own letter frequencies, so Italian-like letter mix alone does not make the words: order does.
+
+Blind reader (one Sonnet subagent, no tools, decodes inline, answer key withheld,
+`harvest/v2/chance_reader_decodes.txt`, result `harvest/v2/reader_result.tsv`): 40 texts = the real decode, the 8
+highest-scoring decodes of each chance arm (an adversarial pick from the 2,000), and 23 random chance decodes.
+Only the real decode (TEXT 11) scored 2 ("presidente", "mandato", "curare"; "estitucio" noted as looking like
+"restitución"). Nine chance decodes scored 1, each an isolated word (setta, amati, regale, rateo, scuote, contro,
+Cristo, moderni, ostro); 30 scored 0. No chance decode had two words. The reader did not list "sauoia" or
+"chuni", so the blind reader supports P1 and P2 more strongly than P4.
+
+**Chance does not produce the fragments.** This part of the first audit holds.
+
+## 3. The overridden letters (step 3): `harvest/v2/override_test.py`
+
+**Without overrides** (printed values only, D):
+```
+P1 ircofedimpresidentemorfo_tmandatoham
+P2 npfocurarema_estitucioredihemf
+P4 ncamuioamchunimochiirsauoia
+```
+presidente, mandato, curare, estitucio, chuni, ochi, sauoia are all still there. The overrides only add the
+joining letters (di[l], [la r]-, [al]-, [l]-, [pro]-).
+
+- **Ticked 6.** Not an override on D. The value-blind reconciler matched the ticked 6 to sheet cell S77 = printed
+  s row 2 (4 places: P1 pos 14, P2 15, P3 15, P5 13); HARVEST-A's exception reads it as m row 1 and overrides to s.
+  On D the s in "presidente" and "estitucio" is the printed value. Caveat: s row 2 is one of the two key cells our
+  own key transcription graded M (its exact shape unresolved), and the passes A and B read those positions as S37
+  (c). Grade: S on the key, M on the sign.
+- **Pound sign S31 (printed m row 2), claimed l, 8 places on D.** An it16dip 4-gram model choosing the best of 19
+  letters in a +-6-letter window per occurrence puts l first in 3 of 8 (P2 11, P4 4, P4 9); the printed m first in
+  1 (P1 10, "dim presidente"); elsewhere l ranks 6-15. Pooled over all 8, l ranks first. That is what a
+  context-fitted value always does, and 3 of 8 is not a consistent sign. The witnesses do not help: in
+  `witness/key_rows_ceppo*.tsv` the m rows have 0 confirmations. **Stays I.**
+- **Double-barred oval (no sheet cell), claimed r, 3 places.** Best letter per occurrence: e, l, o; r ranks 4, 2 and
+  15. **Stays I.** The same mark appears in the f.27 witness (NOTES.md: position 9 "oval crossed by two close
+  parallel bars", unmatched), but that gloss is illegible, so its value is still unknown.
+
+## 4. How far each word depends on the reconciler D
+
+The two independent blind passes A and B, decoded alone with the printed key, give almost nothing ("peeeccdente",
+"peeecisente"). The words appear only after reconciliation. Per letter (A/B/C = agrees with pass A / B / the solver's
+value-aware reconciliation C; --- = D alone):
+
+| word | letters that D alone reads (neither A, B nor C) | letters D shares only with C | clean in B |
+|---|---|---|---|
+| presidente | s (the ticked 6 as S77) | r (S56 ligature) | p, e, n, t, e |
+| mandato | t (S88) | a | n, a, o |
+| curare | none | u, a | c, r, r, e |
+| estitucio | s (S77), t (S88) | c | e, i, t, i, o |
+| chuni / ochi | none | c | nearly all (B reads "ghunimochi") |
+| sauoia | none | s, a, a (S10, S80 missed by A and B) | u, o, i |
+
+D was value-blind (it saw only the unlabelled sign sheet), so its departures cannot lean toward Italian, and the
+chance tests above run on D. But "presidente" and "estitucio" each depend on at least one sign that only D saw, and
+"chuni ... ochi" is the only fragment that the raw pass B already gives. Grades: **S** for chuni, ochi, curare;
+**S with one M sign** for presidente (s), mandato (t), estitucio (s, t), sauoia (the D and C agreement against both
+raw passes). This is within the first audit's grade string; it is stated here so nobody reads "S 107" as 107
+letters seen by three eyes.
+
+## Passages endorsed
+
+- P1: "... presidente ... mandato ..." (sequence only; "di[l]" I).
+- P2: "... curare ... estitucio ..." ("[pro]", "[la r]", "[ne]" I).
+- P4: "... chuni ... ochi ... sauoia" ("[al]", "[l]" I; "in" M).
+Not endorsed: "procurare la restitucione", "alchuni lochi in Sauoia" as whole phrases; any gloss of the letter's
+subject.
+
+## Safe sentence (replaces the first audit's, which named I letters as recovered)
+
+"Birago's letter to Nevers of 14 Sept 1570 (BnF fr.3251 f.11r) reads in part with Tomokiyo's published
+Ceppo-Nevers key. On a value-blind transcription the printed key alone gives the word fragments 'presidente',
+'mandato', 'curare', 'estitucio', 'chuni', 'ochi' and 'sauoia'; none of 2,000 chance decodes (shuffled keys, or
+the key on shuffled sign order) gives more than one word of that length. No prior reading of this letter was
+located (search logged in AUDIT.md, 28 Sept 2026)."
+
+**Unsafe:** "procurare la restitucione", "alchuni lochi in Sauoia" as a reading; "the letter concerns the
+restitution of places in Savoy"; "deciphered"; "first".
+
+## Postmortem
+
+- The first audit's safe sentence quoted "[pro]curare [la r]estitucio[ne]" and "[al]chuni [l]ochi" with brackets.
+  Outside the repository the brackets fall off. Its overrides stay I. The sentence above uses printed-key letters
+  only. Corrected here, not rewritten in place (the first audit's section stays as its record).
+- The first audit listed the ticked 6 as an I override. On D it is the printed s row 2 cell; the override belongs
+  only to HARVEST-A's reconciliation C.
+- The first audit's grade string treated all D-alone signs as S. They are S on the key and M on the sign (table 4).
+
+## For the orchestrator
+
+- status.json: keep `partial`; result `recovered-passages`, class **N3**, key `published`, text `unknown`; second audit
+  **held in part**.
+- NEAR.md: add a row -- f.11r, printed key rank 1/201 on blind D (z 5.4-5.8), 0/2,000 chance decodes with two words;
+  pound sign and double-barred oval I. Named next step: fetch fr.3252 f.36 (Gallica btv1b9060232m, Birago to Nevers
+  5 April 1571, "avec chiffre et déchiffrement") and test whether it uses the Ceppo-Nevers signs and whether its
+  gloss gives the pound sign and the double-barred oval. Then f.21v, f.35, f.87 under the same blind protocol.
+- The second-opinion row already queued by the first audit should carry this safe sentence, not the first one
+  (rule 10 propagation).

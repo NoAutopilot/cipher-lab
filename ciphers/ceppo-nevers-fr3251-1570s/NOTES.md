@@ -493,3 +493,10 @@ records with Birago as sender exist, so that field is not searchable this way. I
 record for fr.3251 f.21v, f.35 or f.87, so none is found-solved.
 
 Requests so far: de-crypt.org 5 (1.5-2 s apart), web search 3, github.com 1 clone (Aymeloglu, read only).
+
+VERIFY-CEPPO-2, 28 Sept 2026 (second, adversarial audit; AUDIT.md "Second audit"): held in part. N3 upheld; 0 of
+2,000 chance decodes (1,000 shuffled keys, 1,000 sign-order shuffles) give two words; blind reader rates only the
+real decode above one isolated word. Endorsed fragments, printed key only: presidente, mandato, curare, estitucio,
+chuni, ochi, sauoia. The pound sign (l) and double-barred oval (r) stay I; the ticked 6 is printed s row 2 on the
+blind transcription. Next step: fr.3252 f.36 (Gallica btv1b9060232m), Birago to Nevers 5 April 1571, "avec chiffre
+et déchiffrement" per the BnF catalogue -- a possible Ceppo-Nevers witness to settle the two I signs.
