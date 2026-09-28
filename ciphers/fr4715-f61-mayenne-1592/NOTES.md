@@ -3504,3 +3504,27 @@ VBAR_A/VBAR_B boundary was first set by blind sorts scored on his letters (H13/H
 7/7 is not fully independent of him. The bracket half rests on H22's blind form sort (scored on his letters too, 10/10) and H180's
 attribute test. A cross-hand period reading, two classes, 7 agreeing positions: evidence for a verifier to grade. Not a reading of
 f.61, no class change, nothing merged.
+
+## Campaign step H177b stage 2b (28 Sept 2026, 23:17-23:19 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- key rows f.176r L01-L33
+
+Pre-registered in `family/passes/PROMPTS_f176_f175.md` (stage 2b, 2ae8bbcf). Four Opus vision calls, inline replies written verbatim
+by the runner: passes A/B of f.176r L20-L26 and L27-L33 (`passes/f176r_signs{A,B}_L20-L26.tsv`, 434/434 rows;
+`..._L27-L33.tsv`, 431/430). The readers note a struck-through run in L26 (pos 24-30), which the decipherment skips; the DP takes it as
+gaps. No new clear read: fol. 177r L01-L34 covers these rows. fol. 177v is cut as strips for the next stage (`family/sheets/f177v_strips/`).
+`build_f176_key.py L01-L33` (result and `key_period_f176.tsv` regenerated, `--check`):
+
+**2,140 signs, consensus 0.80, N 1,712: fol. 177r 0.532 vs the wrong text 0.344 (margin +0.188).** Stage 2a's classes hold at 1.7x the
+counts: VBAR_A t 69, s 7, g 6 (110); EBR l 68, a 12 (103); HASH4 d 33, q 5, i 5 (50); INF u 80 (114); VBAR_B s 57; PHI e 208, r 96. New in
+L20-L33, where both passes now agree on signs they split before:
+
+| class (agreed) | fol. 177r (true) | f.184r (wrong) | note |
+|---|---|---|---|
+| ZHOOK | **i 23**, s 3, x 3 (46) | s 8, i 8, u 6 (57) | agrees with the C43/ZHOOK-split sign (i 35/48): Desportes's i-sign |
+| C43 | **n 8, a 7** (19) | n 9, a 6, e 5 (37) | the real "43" glyph reads a/n, as v4 |
+| CROSS | s 16, i 7, l 4 (42) | i 10, e 8, m 5 (51) | Desportes's "x between bars" glyph; mixed, weak s |
+| 4PI | p 7, c 3 (16) | a 6, n 4 (17) | against v4's a/d/n/q (in-set 0.12); possibly the 4TRI c/p glyph coded 4PI |
+| disputed DBL/SBS | o 14, b 2 (26) | flat | the side-by-side b/o glyph again |
+
+The row keeps its scope: a period key in Desportes's hand. Cross-hand use is H179/H180/H181's question (only VBAR_A t and the form-B
+bracket l have been carried over and checked). The CROSS figure is not proposed for f.61's CROSS: that is a different glyph by the
+atlas ("plus with a stroke rising to the upper right") and not tested. Nothing merged.

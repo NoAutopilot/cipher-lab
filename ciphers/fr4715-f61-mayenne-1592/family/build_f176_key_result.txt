@@ -1,36 +1,47 @@
-rows L01-L19: 1262 signs, consensus 992 (0.79); clear lines L01-L34, 2589 letters, N 1009
-whole-stretch match: fol. 177r 0.550 vs wrong f.184r 0.368 (margin +0.182)
+rows L01-L33: 2140 signs, consensus 1713 (0.80); clear lines L01-L34, 2589 letters, N 1712
+whole-stretch match: fol. 177r 0.532 vs wrong f.184r 0.344 (margin +0.188)
 
 class	v4 set	true: letters (n)	wrong: letters (n)	in-set share true / wrong
-PHI	e/r	e126 r57 a7 i6 l5 u4 (221)	e98 r39 o11 u11 i11 m10 (243)	0.83 / 0.56
-4TRI	a/c/n/p/t	a46 n41 p10 c8 t7 e6 (135)	n31 t19 a14 e12 p8 o7 (134)	0.83 / 0.59
-VBAR_B	s	s57 f5 z3 b2 u1 t1 (72)	s13 e9 o7 n6 i5 u5 (70)	0.79 / 0.19
-INF	u	u46 n3 h3 e2 d2 i2 (64)	u23 i6 e6 l6 n4 r4 (64)	0.72 / 0.36
-VBAR_A	s/t	t45 e4 g4 i3 s2 o2 (64)	s12 t12 i7 e6 m5 l4 (66)	0.73 / 0.36
-EBR	a/l/s	l43 a5 i2 x1 s1 e1 (55)	s11 a8 t7 o5 i5 e4 (56)	0.89 / 0.36
-DBL	e/r/u	o26 e5 r5 b3 n2 i2 (45)	e10 u10 r9 t3 i3 o3 (47)	0.24 / 0.62
-HASH4	d/i/q	d23 q4 e2 i1 n1 (31)	i11 d5 a3 s3 o3 r3 (34)	0.90 / 0.47
-4STEM	a/c/e/n	p13 c7 n4 e2 a2 u1 (31)	e10 n9 u4 a2 i2 t1 (32)	0.48 / 0.69
-OTHER	-	e4 o2 q1 f1 u1 s1 (12)	e3 h2 u2 i2 n1 t1 (14)	0.00 / 0.00
-ZHOOK	-	d2 s2 l1 b1 r1 i1 (8)	l3 i2 a2 o1 t1 p1 (13)	0.00 / 0.00
-BETA	m/s	m4 r1 (5)	s3 i1 (4)	0.80 / 0.75
-CH	e/m	t2 l1 z1 (4)	m3 z1 (4)	0.00 / 0.75
-SBS	b/e/o	e3 r1 (4)	o1 e1 (2)	0.75 / 1.00
-CA	-	l1 (1)	r1 (1)	0.00 / 0.00
+PHI	e/r	e208 r96 i15 a13 u8 l7 (377)	e157 r46 o23 i23 u22 n18 (396)	0.81 / 0.51
+4TRI	a/c/n/p/t	n83 a76 p18 c15 t14 e7 (246)	n40 t34 a21 i17 c16 e11 (214)	0.84 / 0.57
+INF	u	u80 e7 n4 h4 d3 i3 (114)	u34 e21 i8 r8 a6 o6 (118)	0.70 / 0.29
+VBAR_A	s/t	t69 s7 g6 e5 i5 o4 (110)	s30 t22 e12 o8 u6 n6 (111)	0.69 / 0.47
+EBR	a/l/s	l68 a12 i7 s5 t3 e2 (103)	l19 s16 a12 e8 i5 o5 (99)	0.83 / 0.47
+VBAR_B	s	s57 f5 z3 b2 u1 t1 (72)	s11 e8 m4 r3 c3 n3 (47)	0.79 / 0.23
+HASH4	d/i/q	d33 i5 q5 e2 n2 f1 (50)	i17 d9 u5 t5 n4 q4 (62)	0.86 / 0.48
+DBL	e/r/u	o26 r6 e5 b3 n2 i2 (47)	e10 r5 u5 a2 n2 s2 (33)	0.26 / 0.61
+ZHOOK	-	i23 s3 x3 e3 a2 n2 (46)	s8 i8 u6 o5 e5 m3 (57)	0.00 / 0.00
+CROSS	-	s16 i7 l4 u2 p2 g2 (42)	i10 e8 m5 o5 a4 n3 (51)	0.00 / 0.00
+4STEM	a/c/e/n	p13 c7 n4 e2 a2 u1 (31)	e14 n3 i3 u2 c2 a2 (34)	0.48 / 0.62
+OTHER	-	q6 e3 c3 u2 s2 d2 (28)	e4 u4 o3 n3 m3 t3 (31)	0.00 / 0.00
+C43	a/n	n8 a7 i1 z1 c1 e1 (19)	n9 a6 e5 r4 s3 p2 (37)	0.79 / 0.41
+4PI	a/d/n/q	p7 c3 d1 r1 o1 s1 (16)	a6 n4 l3 d2 q1 f1 (17)	0.12 / 0.76
+SBS	b/e/o	e5 o4 r1 s1 u1 i1 (13)	e11 o2 i2 t1 p1 a1 (19)	0.69 / 0.68
+BETA	m/s	m5 z3 r1 s1 (10)	s3 m3 o1 d1 (8)	0.60 / 0.75
+CH	e/m	t2 l1 z1 e1 s1 (6)	a1 m1 e1 (3)	0.17 / 0.67
+CA	-	l1 (1)	 (0)	0.00 / 0.00
+LOOPSTEM1	q/s	 (0)	r1 (1)	0.00 / 0.00
 
 rare CA: true top l 1 of 1, wrong-text count of l 0 -> not reported
-rare ZHOOK: true top d 2 of 8, wrong-text count of d 0 -> not reported
+rare CROSS: true top s 16 of 42, wrong-text count of s 2 -> candidate
+rare ZHOOK: true top i 23 of 46, wrong-text count of i 8 -> candidate
 
 H178: letters opposite 1:1 disputed columns (A code | B code), true / wrong, pairs with n >= 3 under the true text
-C43|ZHOOK	i35 u2 g2 x1 e1 o1 (48)	e9 u8 a3 n3 s3 i3 (45)
-CROSS|ZHOOK	s4 e3 i2 d2 f1 o1 (16)	u4 i2 e2 q2 m2 p1 (15)
-BETA|LOOPSTEM1	m8 n1 l1 u1 o1 i1 (13)	l2 e2 n2 r1 g1 p1 (12)
-4PI|4STEM	e3 c2 p1 a1 t1 (8)	i2 n1 f1 r1 s1 l1 (7)
-BETA|OTHER	m2 n1 o1 e1 d1 i1 (8)	o3 e2 l2 p1 (8)
-PHI|SBS	e3 r3 i2 (8)	u2 d1 i1 m1 e1 q1 (9)
-4STEM|4TRI	a2 n2 d1 o1 (6)	u1 h1 e1 o1 i1 (5)
-OTHER|PHI	o2 a1 b1 m1 i1 (6)	i3 g1 m1 u1 e1 (7)
-4STEM|HASH4	d4 i1 (5)	p2 u1 e1 a1 (5)
-HASH4|ZHOOK	i1 r1 n1 (3)	s1 i1 (2)
-DBL|SBS	o2 b1 (3)	u1 q1 z1 d1 (4)
-VBAR_A|VBAR_B	s1 i1 l1 (3)	t1 (1)
+C43|ZHOOK	i35 u2 g2 x1 e1 o1 (48)	p4 e3 u3 o3 l2 s2 (25)
+DBL|SBS	o14 b2 a2 d1 z1 i1 (26)	e8 s5 i3 u3 o2 a2 (26)
+CROSS|ZHOOK	s8 i3 e3 d2 f2 g2 (23)	e5 o4 n3 r2 i2 u2 (26)
+OTHER|PHI	o9 b5 a1 m1 i1 e1 (20)	m4 e2 i2 s2 o2 c2 (20)
+BETA|LOOPSTEM1	m8 i2 n1 l1 u1 o1 (15)	l3 n2 r2 o2 s1 u1 (13)
+4PI|4STEM	p3 e3 c2 f2 a1 t1 (12)	a2 e2 r1 (5)
+BETA|OTHER	z3 m2 i2 n1 o1 e1 (12)	l2 r2 d2 t1 u1 i1 (9)
+VBAR_A|VBAR_B	s3 l2 r2 i1 e1 (9)	u4 n3 r2 s2 l2 a2 (22)
+PHI|SBS	e3 r3 i2 (8)	a1 (1)
+4PI|HASH4	d5 u1 t1 z1 (8)	u4 c2 s1 g1 (8)
+4STEM|4TRI	a2 n2 d1 o1 i1 (7)	i3 m1 (4)
+4STEM|HASH4	d5 i1 (6)	t1 o1 s1 l1 (4)
+HASH4|ZHOOK	i2 r1 n1 (4)	i1 (1)
+DBL|PHI	n1 i1 e1 o1 (4)	s2 r2 t2 o1 u1 l1 (10)
+CH|OTHER	r1 n1 m1 t1 (4)	s2 l2 e1 i1 u1 a1 (8)
+4PI|4TRI	p1 n1 c1 (3)	i1 m1 x1 u1 (4)
+EBR|OTHER	l1 t1 s1 (3)	u1 n1 x1 q1 (4)
+4STEM|C43	o2 n1 (3)	e2 t1 u1 (4)
