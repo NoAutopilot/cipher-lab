@@ -1990,3 +1990,13 @@ Opus vision call; tiles 17 and 21 none (ticks on clear-text letters).
 Stratified observed 12/20, permutation P = 0.836, p95 14/20 -> **GATE FAIL**, as expected
 (`scripts/f61pair_h80_result.txt`, `--check` OK). The tile method now has two clean one-symbol negatives (H75 d/q, H80
 g/t) beside its PASSes (H65, H67, H69, H70, H77). No reading, no class change.
+
+## Campaign step H81 (28 Sept 2026, 15:07-15:09 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/f61splits.py` writes `scripts/f61_glyph_splits.tsv`, one row per blind tile-sort test H65-H80 (numbers parsed
+from the committed result files, `--check` fresh; P 0.0000 means 0 of 2000 permutations): the family reader class, the
+letter sets, the leaves, scored / observed / p95 / P / gate, the glyph each set went to, the f.61 atlas class that glyph
+corresponds to, the table cell, and the kind (split, within-cell, control). Summary: five PASSes (H65 PHI o -> SBS, H67
+PHI b -> SBS, H69 4TRI a/n -> hook forms vs c/p triangle, H70 VBAR_A s -> VBAR_B-like vs t, thin, H77 LOOPS o -> SBS vs
+u -> INF), two within-cell FAILs (H71 e/r, H73 a/n), two clean one-symbol controls FAIL as expected (H75 d/q, H80 g/t),
+one near miss (H79 EBR_A). For the family worker's key rebuild (H52) and the verifier page (H66). Not a reading.
