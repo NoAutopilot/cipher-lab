@@ -28,6 +28,17 @@ more accounts join.
 
 **Runner sessions (fixed 21:4x UTC):** a trigger that spawns a fresh session gets no repository checkout and cannot clone the private repository, so the first four firings (20:35 to 21:35) did nothing at about 0.80 USD each. The runners are now four standing sessions created with the repository (session_01H27tXgYoK6tVYXUGAN1h5T armstrong, session_01TrimUWpSxSyUXp7w7FEMfR mercy, session_01UgTmQhR7wFtVFrTVdtsq9i f61, session_016fvFiTTAhQng2VqbiBDmRE spinelli) and the hourly triggers fire into them; a runner past 700k context says so in its done line and the orchestrator replaces it. Runners carry no connector tools: git, the repository's tools and their own subagents only.
 
+## Lean in (28 Sept 2026, about 00:15 UTC, owner's direction)
+
+The owner runs the work on a Max account, not on API keys, so the dollar cost of a step is not a constraint; the
+constraint is what the accounts can run at once. Where a campaign shows momentum the orchestrator leans in and decides
+what that means. Applied at once: daily_budget_usd raised to 240 for fr4715-f61-mayenne-1592 and to 120 for the other
+three (nobody idles on budget; the ledger still records real get_session cost, verified readings per dollar stays the
+number shown at the end); a parallel branch on f.61, PARENT WORKER F61-FAMILY (Fable, cap 40), gathers the whole cipher
+family Tomokiyo lists (fr.3982, fr.3983, fr.3984, eleven leaves, three with period decipherments) and rebuilds the period
+key from them while the campaign runner keeps working its rows; the Armstrong runner moved to this account
+(session_01R2T5qwd7NBMWGnjRtj8ieX, :25) when account 2's hit 620k context.
+
 ## Scoreboard (the orchestrator updates at each check-in)
 
 | UTC | Campaign | Steps run | Spent | Hypotheses open / done / dropped | Verified readings |
