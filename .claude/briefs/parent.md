@@ -346,3 +346,6 @@ The orchestrator runs on Fable; if Fable usage is out, Opus 5.5; nothing below O
 
 ## Account 3 runs Fable (owner, 28 Sept 2026 20:5x UTC)
 Every row queued to account 3 (tagged third) names Fable, with Opus 5.5 as the only fallback: runners, workers, verifiers and the standby. Vision-heavy transcription and adversarial audits go to Fable first. Nothing below Opus 5.5 anywhere.
+
+## Restricted material guard (28 Sept 2026, owner-requested)
+Material a holder shares on a no-publication condition lives only in NoAutopilot/cipher-lab-private, which the owner fills by hand. This public repository has three layers against a mistake: tools/room.py refuses any push whose outgoing files match tools/restricted_fingerprints.txt (one-way fingerprints only, never the words); the restricted-guard GitHub Action scans every push and the whole tree daily; and every worker that pushes with plain git runs `python3 tools/restricted_guard.py --outgoing` first. New restricted sets are added by the orchestrator with `--fingerprint` from a private scratch file; the source words are never committed. A guard finding is a stop: remove the file from the commit, say so in ROOM without quoting it, and tell the owner.

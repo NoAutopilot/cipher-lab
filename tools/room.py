@@ -364,6 +364,12 @@ def push(message, paths):
         bad = shrink_ok(shrink_watched)
         if bad:
             print("refusing to push: " + bad); return 8
+        # Restricted-material guard (28 Sept 2026): never push a file that carries material a holder shared on
+        # a no-publication condition (tools/restricted_guard.py; the material belongs in cipher-lab-private).
+        g = subprocess.run([sys.executable, os.path.join(ROOT, "tools", "restricted_guard.py"), "--outgoing"],
+                           cwd=ROOT, capture_output=True, text=True)
+        if g.returncode == 1:
+            print("refusing to push: " + g.stdout.strip()); return 9
         # Push HEAD, not the local branch name (27 Sept 2026, VO3 flag): a session that never ran --start can
         # be on a detached HEAD ahead of a stale local `main`, and `git push origin main` then pushes the
         # stale branch pointer and fails every retry. `HEAD:main` pushes what is actually checked out either way.

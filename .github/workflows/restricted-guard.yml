@@ -1,0 +1,21 @@
+name: restricted-guard
+
+# Backstop for restricted material (tools/restricted_guard.py): fails loudly if anything a holder shared
+# on a no-publication condition reaches this public repository. Runs on every push and once a day.
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+jobs:
+  guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Scan for restricted material
+        run: python3 tools/restricted_guard.py

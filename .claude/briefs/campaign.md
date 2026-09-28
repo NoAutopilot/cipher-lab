@@ -44,3 +44,6 @@ not a close.
 **Cadence (the owner, 27 Sept 2026, 21:58 UTC, plain form): a runner never waits for its scheduled minute when it could run. The trigger minute is a floor, not a schedule: the orchestrator fires a campaign's trigger by hand (fire_trigger) whenever the runner is idle and its last step is done, and at every check-in fires any runner that has been idle since its last done line. The hourly cron only catches what the orchestrator missed.
 
 **Continuous mode (27 Sept 2026, 22:3x UTC, after the owner's direction that runners never wait):** a runner does not stop after one step. Its firing prompt loops: done line, then straight back to step 1 and the next runnable row, until the daily budget is spent, the campaign is closed, three steps in a row are dropped (a ROOM red-line for the orchestrator), or the session's context passes 700k. The hourly cron only restarts a runner that has stopped. Hand-firing a bound trigger (fire_trigger) does not deliver and is not used.
+
+
+Restricted-material guard (28 Sept 2026): before any push with plain git, run `python3 tools/restricted_guard.py --outgoing`; on a finding, do not push, remove the file from the commit and post a ROOM line naming the file, never its content. tools/room.py runs the same check itself.
