@@ -1087,3 +1087,39 @@ already ranked).
 **Calls and cost.** 28 vision calls (Opus 24: 12 sign + 12 gloss; Sonnet 4: chunk-1 gloss A/B counted, chunk-2 gloss A/B
 stopped mid-way and counted as spent), about 120-150k subagent tokens each; Gallica 1 request. Cost about USD 40 (this
 worker's own estimate; the orchestrator's get_session figure is the record).
+
+## Campaign step H30 (2026-09-28 02:2x UTC) -- fr.3984 f.188r/f.184r, the separate-sheet pair (F61-FAMILY-3)
+
+**What was done.** The leaf is mixed clear-and-cipher (48 rows, cipher from row 10), not an 18-line block; rows 13-35 were
+read: 23 bands, two blind Opus sign passes in three chunks (6 calls, 77.6% identical over 1,206 aligned columns), and the
+whole clear copy f.184r (40 lines, two blind Opus passes, 95.5% by word, 2 calls). Alignment by the new separate-sheet mode
+`family/align_separate.py` (rule recorded in family/KEY.md "f.188/f.184"): clear-word anchors, proportional spans, then
+the shared `tools/interlinear_align.py` DP per band. Result `family/key_period_f188.tsv`, 186 rows / 23 classes from 1,006
+signs (band L23 dropped, defective crop). Grade C per pair (period decipherment, no cryptanalysis, no refit).
+
+**Control (rule 3).** Held-out against the f.274 key (the H30 gate): the nine shared classes give the same top letters read
+blind on a third hand (PHI e/r, C43 a/n, 4TRI c/p, INF u, VBAR_A t, EBR l, HASH4 d/q, H24 i, BETA m). Family key v3 (the
+three leaves merged, nothing summed): f.61 known spans 43/55 = 0.782 vs 20 permuted keys mean 0.372 max 0.618; f.108r
+66/84 = 0.786 vs 0.344 / 0.512 (`family/test_period_key_result_v3_frac0.1_min2.txt`). Coverage of f.61's signs 0.80;
+CA, LOOPBAR, ZHOOK, CROSS, LL still uncovered (Desportes' hand does not write them; 3 CA, 1 LOOPBAR, 0 ZHOOK read).
+
+**Failure log.** First alignment run: the first band's junk clear words (cipher runs the reader wrote as letters, 'gueu')
+anchored 276 words away and the open-ended spans took the rest of the page (letters per sign 12-40) -- fixed by
+length-weighted anchors, an off-trend anchor filter and a 1.0 letters-per-token cap on the open-ended spans; with the cap at
+1.4 the last five all-cipher bands read 1.35-1.45 letters per sign and the key degraded (C43 e/o/u), at 1.0 they read
+0.98-1.03 and the key matches the other leaves. L23's crop was cut at the bottom edge (region height set 4 px short): the
+brief's error, both readers flagged it, band excluded. Files: family/passes/f188r_*, recf188r/, f184r_*, f188r_spans.tsv
+(per-band letters per sign, anchors, underline share), f188r_separate_stats.json.
+
+**Calls and requests.** 8 Opus vision calls (about 125-130k subagent tokens each); Gallica 2 requests (native refetch of
+canvases 351 and 343). Cost: the orchestrator's get_session figure is the record.
+
+## Campaign step H31 (2026-09-28 02:2x UTC) -- fr.3983 f.106r at 3x: signs read, gloss HELD (F61-FAMILY-3)
+
+First six cipher rows cut at 3x with family/cut_bands.py (hand-set centres; sheets/f106r, 42 crops), prompts on disk first.
+Two blind Opus sign passes agree 204/240 = 85.0% (per band 0.76-0.92): the Mayenne-secretary hand reads at 3x, which
+answers the H29/H35 question for the sign side. Two blind Opus gloss passes agree on 20 words of 58/60 = 33.9%, under the
+brief's 60% gate: the leaf is HELD, nothing merged, the alignment run for the record only
+(`family/key_period_f106_held.tsv`, 109 rows, 15 classes). The six rows carry none of CA, LOOPBAR, ZHOOK. 4 Opus vision
+calls; Gallica 1 request (native refetch of canvas 191). Next cheap step (new CAMPAIGN row): a gloss-only recut around the
+gloss rows at 4x, or a person's reading of the six glosses; the sign passes stand.

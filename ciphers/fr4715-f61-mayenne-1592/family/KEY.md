@@ -147,3 +147,77 @@ known spans 43/55 = 0.782 (permuted mean 0.344, max 0.618), f.108r 65/84 = 0.774
 letters, so the plain n >= 1 / n >= 2 figures (0.855 / 0.800) are not tests at this N. Still uncovered on f.61: CA, LOOPBAR,
 ZHOOK (plus CROSS, LL); C6, DBL, VBAR_B, 4PI now covered. `f61_decode_period_v2_frac0.1.txt`: 99 signs, C 15, C+ 8, M 56,
 unread 20 -- a skeleton, not a reading.
+
+## f.188/f.184 (F61-FAMILY-3, 2026-09-28 02:2x UTC): the separate-sheet pair, Desportes' hand
+
+fr.3984 f.188r (Desportes to the Bishop of Lisieux, Paris, 22 July 1593) is not a "cipher block": its 48 lines mix clear French
+and cipher runs from row 10 to row 47, and fr.3984 f.184r is the whole letter in clear (40 lines, the deciphered stretches
+loosely underlined -- the underlines cover whole passages, not the cipher runs exactly, so they are a check, not the
+alignment). Both leaves refetched native (2 Gallica requests, requests.log), sha1 unchanged from the 00:28 fetch. Rows 13-35
+of f.188r cut as 23 bands (sheets/f188r, `cut_bands.py`, hand-set centres from the ink-row profile, 5 segments of 1520 x 216
+px at 2x); f.184r cut as 12 strips x 2 halves at native scale (sheets/f184r_strips.json). Prompts in
+passes/PROMPTS_f188_f184_f106.md, written before any call.
+
+Passes: two blind Opus sign passes per chunk of 8 bands (6 calls; A 1194 rows, B 1159; 936/1206 aligned columns identical =
+77.6%, bands under 70%: L01, L10, L15, L23), two blind Opus clear passes of f.184r (2 calls; 40 lines each; 803 words
+identical of 839/842 = 95.5%, underline flag agreement 787/803). Alignment by `align_separate.py`, the separate-sheet mode
+the brief asked for, recorded here as the rule: (1) the PLAIN words the sign passes read inside the cipher lines are
+anchored monotonically onto the clear copy's words (length-weighted similarity, words under 3 letters never anchor; one
+off-trend anchor dropped, a junk word matched 276 words away); (2) between two anchors the clear words are split among the
+bands' runs in proportion to their token count (about one letter per sign, the cipher is letter by letter), the open-ended
+spans before the first and after the last anchor capped at 1.0 letters per token; (3) one pair per band to
+`tools/interlinear_align.py --code-prefix @ --null-cost -1 --clear-consumes`, as for the interlinear leaves. 56 of 131 clear
+words anchored; letters per unit of cipher weight 0.76-1.49 per band, no band outside the drop window; L23 dropped by hand
+(its crop was cut at the bottom edge: the region ended 4 px below the row centre, the brief's error, both readers reported
+it). `key_period_f188.tsv`: 186 rows, 23 classes, from bands L01-L22 (1,006 signs).
+
+| class | f.188 period letters (n) | f.274r | f.101r | table cell |
+|---|---|---|---|---|
+| PHI | e 133, r 51, o 37 | e/r/o | e/r/o | e/r |
+| VBAR_A | t 41, e 4, g 3 | s/t/f | t/s | g/t |
+| EBR_B | l 41, s 3 | l | l | l/y |
+| H24 | i 33, j 3 | i/j | i | i/x |
+| VBAR_B | s 30 | f/s | s | f/s |
+| LOOPS | u 29, v 3 | -- | u/o | h/u |
+| ZBAR | s 28, f 5 | -- | s | f/s |
+| C43 | n 27, a 24 | a/n | a/n | a/n |
+| 4TRI | c 23, p 19, n 9 | c/p | n/a/c/p | c/p |
+| INF | u 21, e 4, h 3 | u/h | u | h/u |
+| 4STEM | n 15, a 12 | -- | n/a/c/e | -- |
+| HASH4 | d 12, i 10, q 3 | d/q | d/q | d/q |
+| 4PI | d 9, a 5, q 2 | -- | d/n/q | d/q |
+| BETA | m 9 | m | m | m/z |
+| OTHER | q 14, p 4 | | | (the readers' uncoded 'q'-sign of this hand) |
+| CA 3, LOOPBAR 1, ZHOOK 0, CROSS 0, LL 1 | | | | not attested: Desportes' hand does not use them either |
+
+Read blind by a third session on a third hand with a different kind of decipherment (a separate clear copy, not an
+interlinear gloss), every class shared with f.274r/f.101r gives the same top letters, and the H30 gate (top-2 agreement on
+the classes shared with key_period.tsv's f.274 rows: PHI, C43, INF, VBAR_A, 4TRI, EBR, HASH4, H24, BETA) is met on all nine
+(INF's second letter e 4 vs h 3 is the one near-miss). Conflicts recorded by merge_period_keys.py (v3 header): 4TRI (f.101r's
+readers merged a/n into it), C43 n-vs-a (a coin toss on every leaf: the a/n cell), VBAR_A s-vs-t (f.274 only), CH, RSIGN, OTHER.
+
+## f.106r (F61-FAMILY-3, 2026-09-28 02:2x UTC): held
+
+fr.3983 f.106r (Mayenne's secretary, headed 4 March 1593), first six cipher rows cut at 3x (sheets/f106r, region
+1540,600,3060,900, hand-set centres, 7 segments of 1560 x 360 px). Two blind Opus sign passes: 204/240 = 85.0% identical
+(L01 0.92 .. L05 0.76) -- this hand IS readable at 3x, the H29/H35 question. Two blind Opus gloss passes: 20 words identical
+of 58/60 = 33.9% (per band 0/8 to 5/11), both passes mostly '?'-marked at confidence l: the gloss is tiny, cramped between
+rows and half hidden by the verso's bleed-through. Under the brief's gate (60% on words) the leaf is HELD: no rows merged;
+the alignment is run for the record only (`key_period_f106_held.tsv`, 109 rows, 15 classes, not used by v3). Its sign
+inventory (PHI 71, VBAR_A 33, HASH4 26, C43 21, H24 20, 4STEM 20, 4TRI 13, EBR_A 6, ISH 5, BETA 5) carries none of CA,
+LOOPBAR, ZHOOK either. What would settle it: a gloss pass on crops cut around the gloss row itself (up 40 / down 25 around
+the gloss, not the cipher row) at 4x, or a person's reading of the six glosses; the sign passes need not be repeated.
+
+## v3 (F61-FAMILY-3): three leaves, three hands, two kinds of decipherment
+
+`key_period_v3.tsv` = f.274r + f.101r + f.188r/f.184r rows (merge_period_keys.py, 511 rows, 24 classes, 6 top-letter
+conflicts in the header, none resolved by preference). Tests, no refit (`test_period_key.py --key key_period_v3.tsv
+--collapse-ebr --min 2 --frac 0.1`, 20 permuted keys): f.61 known spans 43/55 = 0.782 (permuted mean 0.372, max 0.618),
+f.108r 66/84 = 0.786 (0.344 / 0.512; was 0.774 under v2); f.61 signs covered 0.80, uncovered CA, CROSS, LL, LOOPBAR, ZHOOK --
+unchanged from v2, because none of the three glossed hands writes those signs (f.106r's first rows do not either). The
+every-class condition for a reading-ready line therefore still FAILS. `f61_decode_period_v3_frac0.1.txt`: 99 signs, C 10,
+C+ 4, M 65, unread 20 -- fewer C than v2 (15) because f.188 attests a second letter at over 10% in INF (e) and 4STEM, so
+those tokens are now honestly M. The remaining route to the five uncovered classes is not another glossed leaf of this family
+(all five glossed leaves are now read or held and none carries them): it is f.61's own context (H33, run on this skeleton),
+or a period key sheet, or the classes being this hand's variants of covered signs (H40-style blind sort of CA/LOOPBAR/ZHOOK
+crops against the covered classes -- not attempted here, not in the brief).
