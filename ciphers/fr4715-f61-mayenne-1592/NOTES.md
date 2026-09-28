@@ -1542,3 +1542,29 @@ level, and the table's two a/n drawings do not correspond to a shape difference 
 test it: a person's eye on the 17 signs against the table's two drawings, or native crops of each sign side by side in
 one image (a different instrument), neither briefed here. Not a reading; no class change; nothing solved, new or first.
 Vision calls: 1 of 4.
+
+## Campaign step H57 (2026-09-28 05:47 UTC) -- FAIL: the context judge's positive control is below its gate on the corrected skeleton; the full leaf not run
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). One Opus TEXT call (the positive control only; the full-leaf call
+was not spent, per the control-first rule), prompt in `scripts/PROMPTS.md` (H57: the H33 prompt verbatim) and the sets
+pushed 61fdb59a before the call. Hypothesis H57 (F61-CTX2, the parent's row): the H33 design on the CORRECTED skeleton --
+`family/f61ctx.py --h26-split --published-zhook` (defaults unchanged, H33's outputs byte-identical): f.61's side-by-side
+signs as their own SBS b/o cell, PHI e/r on this leaf, ZHOOK i/x from `family/key_published_rare.tsv` (published), every
+other class its v3 period letter set (n >= 2, 10% rule), uncovered classes as ?.
+
+**Positive control (`family/passes/f61ctx_known2_{sets,key,verdict}`, `f61ctx.py score known2`).** Target SET-13 scored 1.5;
+best set 2.5, then 2, 2, and eight sets at 1.5: **rank 11 of 21, FAIL** (H33's control had ranked 1st by half a point). The
+judge's resolution of the target ("deauecreesia | eerestaneceenos | setroneeauaenceers | ...") is not Tomokiyo's text at any
+line. The full-leaf set (`f61ctx_full2_*`, built, on disk) was NOT judged.
+
+**Why, and what it settles.** The same judge, the same known lines, the same session window: with the nine f.61-fitted cells
+and the nulls dropped (H25) it ranks the true map first by 5 points three times out of three; with the period key's letter
+sets -- 4STEM n/a/c/e, 4TRI n/a/c/p, EBR l/s/a, OTHER seven letters, 4PI four -- and ? wildcards for the uncovered classes,
+it cannot tell the true map from a permutation. The width of the sets, inherited from the family readers' merged classes on
+other hands, is what removes the judge's power, not the judge and not the corrected cells (H33's near-miss was the same
+thing). So the context route on the period-key skeleton is closed at this coverage, as the row said a FAIL would do; the
+context route that works is the f.61-fitted cell map (H25), which has already been run on every line of f.61 that has
+cipher (the five spans: known; L10: FAIL 3/3; L02: one sign). H56 (the L10 nulls as wildcards) is dropped on the same
+ground: a judge set with three ? positions in an eight-letter run is the H33/H57 shape and would fail its own control by
+construction (rule 3's "a control that cannot vary" paragraph, from the judge's side). Not a reading; no class change;
+nothing solved, new or first. Text calls: 1 of 2.

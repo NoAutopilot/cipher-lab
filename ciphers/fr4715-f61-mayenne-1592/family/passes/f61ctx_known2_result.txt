@@ -1,0 +1,4 @@
+known2: target SET-13 scored 1.5; rank 11 of 21 (ties against the target)
+all scores: SET-07:2.5 SET-01:2 SET-14:2 SET-04:1.5 SET-05:1.5 SET-06:1.5 SET-08:1.5 SET-11:1.5 SET-13:1.5 SET-17:1.5 SET-19:1.5 SET-02:1 SET-03:1 SET-09:1 SET-10:1 SET-12:1 SET-16:1 SET-18:1 SET-20:1 SET-21:1 SET-15:0.5
+target reading as given by the judge: deauecreesia | eerestaneceenos | setroneeauaenceers | eeisaeousei | raeuoraueeceee | selentecaois
+GATE H33 (known2): rank 11 of 21 -> FAIL
