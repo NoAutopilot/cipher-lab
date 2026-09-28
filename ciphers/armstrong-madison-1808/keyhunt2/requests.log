@@ -1,0 +1,132 @@
+2026-09-28T17:18:43Z www.loc.gov madison search armstrong 1805
+2026-09-28T17:19:07Z www.loc.gov madison series1 1805
+2026-09-28T17:19:57Z www.loc.gov madison q=John+Armstrong+to+James+Madison
+2026-09-28T17:20:12Z www.loc.gov madison q=Armstrong+to+James+Monroe
+2026-09-28T17:20:15Z www.loc.gov madison q=cipher+Armstrong
+2026-09-28T17:21:00Z catalog.archives.gov iiif M34-013-0028 1600w
+2026-09-28T17:21:03Z catalog.archives.gov iiif M34-013-0029 1600w
+2026-09-28T17:21:09Z catalog.archives.gov iiif M34-013-0030 1600w
+2026-09-28T17:21:12Z catalog.archives.gov iiif M34-013-0031 1600w
+2026-09-28T17:21:15Z catalog.archives.gov iiif M34-013-0032 1600w
+2026-09-28T17:21:18Z catalog.archives.gov iiif M34-013-0033 1600w
+2026-09-28T17:21:21Z catalog.archives.gov iiif M34-013-0034 1600w
+2026-09-28T17:21:24Z catalog.archives.gov iiif M34-013-0035 1600w
+2026-09-28T17:21:32Z catalog.archives.gov iiif M34-013-0036 1600w
+2026-09-28T17:21:35Z catalog.archives.gov iiif M34-013-0037 1600w
+2026-09-28T17:22:22Z www.loc.gov item mss33217003 json
+2026-09-28T17:22:25Z www.loc.gov item mss33217004 json
+2026-09-28T17:23:03Z digitalcollections.nypl.org browser search monroe armstrong
+2026-09-28T17:23:26Z digitalcollections.nypl.org browser search Monroe+Armstrong
+2026-09-28T17:23:38Z digitalcollections.nypl.org browser search James+Monroe+papers
+2026-09-28T17:24:44Z digitalcollections.nypl.org browser search Armstrong+cipher
+2026-09-28T17:25:04Z digitalcollections.nypl.org browser search Monroe+Armstrong (retry read)
+2026-09-28T17:25:20Z digitalcollections.nypl.org browser search James+Monroe+papers (retry read)
+2026-09-28T17:26:32Z digitalcollections.nypl.org browser search Monroe%2C+James
+2026-09-28T17:26:44Z digitalcollections.nypl.org browser search Armstrong%2C+John
+2026-09-28T17:27:50Z digitalcollections.nypl.org browser search cipher+1805
+2026-09-28T17:28:11Z digitalcollections.nypl.org browser search John+Armstrong+letter
+2026-09-28T17:28:29Z digitalcollections.nypl.org browser search cypher
+2026-09-28T17:28:55Z GET https://libraries.wm.edu/scrc/collections/wjmo/about/pjm
+2026-09-28T17:28:57Z GET https://academics.umw.edu/jamesmonroepapers/biography/calendar/march/
+2026-09-28T17:29:07Z googleapis books q="Papers of James Monroe" Armstrong cipher
+2026-09-28T17:29:09Z googleapis books q="Armstrong to Monroe" 1805 cipher
+2026-09-28T17:29:12Z googleapis books q="cypher established between"
+2026-09-28T17:29:27Z googleapis books q=Armstrong Monroe "private cipher"
+2026-09-28T17:29:37Z googleapis books q=intitle:"Papers of James Monroe" Armstrong cypher
+2026-09-28T17:29:39Z googleapis books q=intitle:"Papers of James Monroe" Armstrong Madrid 1805
+2026-09-28T17:29:42Z googleapis books q=intitle:"Papers of James Monroe" "in code" Armstrong
+2026-09-28T17:29:44Z googleapis books q=Monroe Armstrong 1805 "in cipher" Madrid Talleyrand
+2026-09-28T17:29:54Z googleapis books q=Papers of James Monroe Selected Correspondence 1803-1811
+2026-09-28T17:29:57Z googleapis books q=Monroe Armstrong "cipher" Paris 1806 Bowdoin Florida
+2026-09-28T17:30:13Z googleapis books FDTSSmWm0q0C q=cipher
+2026-09-28T17:30:13Z books.google search-inside api FDTSSmWm0q0C cipher
+2026-09-28T17:30:28Z tile.loc.gov monroe r3 0590 pct:12
+2026-09-28T17:31:18Z tile.loc.gov monroe r3 0591 pct:12
+2026-09-28T17:31:21Z tile.loc.gov monroe r3 0593 pct:12
+2026-09-28T17:31:23Z tile.loc.gov monroe r3 0594 pct:12
+2026-09-28T17:31:26Z tile.loc.gov monroe r3 0596 pct:12
+2026-09-28T17:31:28Z tile.loc.gov monroe r3 0597 pct:12
+2026-09-28T17:31:30Z tile.loc.gov monroe r3 0599 pct:12
+2026-09-28T17:31:33Z tile.loc.gov monroe r3 0600 pct:12
+2026-09-28T17:31:35Z tile.loc.gov monroe r3 0602 pct:12
+2026-09-28T17:31:38Z tile.loc.gov monroe r3 0603 pct:12
+2026-09-28T17:31:40Z tile.loc.gov monroe r3 0605 pct:12
+2026-09-28T17:31:42Z tile.loc.gov monroe r3 0606 pct:12
+2026-09-28T17:31:58Z tile.loc.gov monroe r3 0608 pct:12
+2026-09-28T17:32:01Z tile.loc.gov monroe r3 0609 pct:12
+2026-09-28T17:32:03Z tile.loc.gov monroe r3 0611 pct:12
+2026-09-28T17:32:15Z tile.loc.gov monroe r3 0612 pct:12
+2026-09-28T17:32:18Z tile.loc.gov monroe r3 0614 pct:12
+2026-09-28T17:32:20Z tile.loc.gov monroe r3 0615 pct:12
+2026-09-28T17:32:33Z tile.loc.gov monroe r3 0617 pct:12
+2026-09-28T17:32:37Z tile.loc.gov monroe r3 0618 pct:12
+2026-09-28T17:32:40Z tile.loc.gov monroe r3 0620 pct:12
+2026-09-28T17:32:42Z tile.loc.gov monroe r3 0621 pct:12
+2026-09-28T17:32:44Z tile.loc.gov monroe r3 0623 pct:12
+2026-09-28T17:32:47Z tile.loc.gov monroe r3 0624 pct:12
+2026-09-28T17:32:49Z academics.umw.edu browser jamesmonroepapers contact
+2026-09-28T17:32:49Z tile.loc.gov monroe r3 0651 pct:12
+2026-09-28T17:32:54Z tile.loc.gov monroe r3 0653 pct:12
+2026-09-28T17:32:56Z tile.loc.gov monroe r3 0655 pct:12
+2026-09-28T17:33:08Z academics.umw.edu browser jamesmonroepapers/contact-us
+2026-09-28T17:33:20Z tile.loc.gov monroe r3 0657 pct:12
+2026-09-28T17:33:23Z tile.loc.gov monroe r3 0659 pct:12
+2026-09-28T17:33:25Z tile.loc.gov monroe r3 0661 pct:12
+2026-09-28T17:33:28Z tile.loc.gov monroe r3 0663 pct:12
+2026-09-28T17:33:30Z tile.loc.gov monroe r3 0665 pct:12
+2026-09-28T17:33:32Z tile.loc.gov monroe r3 0667 pct:12
+2026-09-28T17:33:35Z tile.loc.gov monroe r3 0669 pct:12
+2026-09-28T17:33:39Z tile.loc.gov monroe r3 0671 pct:12
+2026-09-28T17:33:41Z tile.loc.gov monroe r3 0673 pct:12
+2026-09-28T17:33:44Z tile.loc.gov monroe r3 0675 pct:12
+2026-09-28T17:33:48Z tile.loc.gov monroe r3 0677 pct:12
+2026-09-28T17:33:50Z tile.loc.gov monroe r3 0679 pct:12
+2026-09-28T17:33:53Z tile.loc.gov monroe r3 0681 pct:12
+2026-09-28T17:33:55Z tile.loc.gov monroe r3 0683 pct:12
+2026-09-28T17:33:58Z tile.loc.gov monroe r3 0685 pct:12
+2026-09-28T17:34:01Z tile.loc.gov monroe r3 0687 pct:12
+2026-09-28T17:34:04Z tile.loc.gov monroe r3 0689 pct:12
+2026-09-28T17:34:13Z tile.loc.gov monroe r3 0691 pct:12
+2026-09-28T17:34:15Z academics.umw.edu browser jamesmonroepapers/biography/calendar/march
+2026-09-28T17:34:16Z tile.loc.gov monroe r3 0693 pct:12
+2026-09-28T17:34:19Z tile.loc.gov monroe r3 0695 pct:12
+2026-09-28T17:34:22Z tile.loc.gov monroe r3 0697 pct:12
+2026-09-28T17:34:24Z tile.loc.gov monroe r3 0699 pct:12
+2026-09-28T17:34:59Z tile.loc.gov monroe r3 0674 pct:50
+2026-09-28T17:35:02Z tile.loc.gov monroe r3 0675 pct:50
+2026-09-28T17:35:05Z tile.loc.gov monroe r3 0676 pct:50
+2026-09-28T17:35:21Z tile.loc.gov monroe r4 0005 pct:12
+2026-09-28T17:35:25Z tile.loc.gov monroe r4 0018 pct:12
+2026-09-28T17:35:27Z tile.loc.gov monroe r4 0031 pct:12
+2026-09-28T17:35:34Z tile.loc.gov monroe r4 0044 pct:12
+2026-09-28T17:35:36Z tile.loc.gov monroe r4 0057 pct:12
+2026-09-28T17:35:38Z tile.loc.gov monroe r4 0070 pct:12
+2026-09-28T17:35:43Z tile.loc.gov monroe r4 0083 pct:12
+2026-09-28T17:35:45Z tile.loc.gov monroe r4 0096 pct:12
+2026-09-28T17:35:49Z tile.loc.gov monroe r4 0109 pct:12
+2026-09-28T17:35:51Z tile.loc.gov monroe r4 0122 pct:12
+2026-09-28T17:35:54Z tile.loc.gov monroe r4 0135 pct:12
+2026-09-28T17:35:56Z tile.loc.gov monroe r4 0148 pct:12
+2026-09-28T17:35:59Z tile.loc.gov monroe r4 0161 pct:12
+2026-09-28T17:36:01Z tile.loc.gov monroe r4 0174 pct:12
+2026-09-28T17:36:04Z tile.loc.gov monroe r4 0187 pct:12
+2026-09-28T17:36:06Z tile.loc.gov monroe r4 0200 pct:12
+2026-09-28T17:36:09Z tile.loc.gov monroe r4 0213 pct:12
+2026-09-28T17:36:11Z tile.loc.gov monroe r4 0226 pct:12
+2026-09-28T17:36:14Z tile.loc.gov monroe r4 0239 pct:12
+2026-09-28T17:36:16Z tile.loc.gov monroe r4 0252 pct:12
+2026-09-28T17:36:19Z tile.loc.gov monroe r4 0265 pct:12
+2026-09-28T17:36:21Z tile.loc.gov monroe r4 0278 pct:12
+2026-09-28T17:36:25Z tile.loc.gov monroe r4 0291 pct:12
+2026-09-28T17:36:27Z tile.loc.gov monroe r4 0304 pct:12
+2026-09-28T17:36:30Z tile.loc.gov monroe r4 0317 pct:12
+2026-09-28T17:36:32Z tile.loc.gov monroe r4 0330 pct:12
+2026-09-28T17:36:48Z tile.loc.gov monroe r4 0343 pct:12
+2026-09-28T17:36:51Z tile.loc.gov monroe r4 0356 pct:12
+2026-09-28T17:36:54Z tile.loc.gov monroe r4 0369 pct:12
+2026-09-28T17:36:56Z tile.loc.gov monroe r4 0382 pct:12
+2026-09-28T17:37:08Z tile.loc.gov monroe r4 0395 pct:12
+2026-09-28T17:37:10Z tile.loc.gov monroe r4 0408 pct:12
+2026-09-28T17:37:17Z tile.loc.gov monroe r4 0421 pct:12
+2026-09-28T17:37:19Z tile.loc.gov monroe r4 0434 pct:12
+2026-09-28T17:37:22Z tile.loc.gov monroe r4 0447 pct:12

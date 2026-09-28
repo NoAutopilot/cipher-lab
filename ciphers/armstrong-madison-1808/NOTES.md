@@ -3576,3 +3576,70 @@ founders.archives.gov 16 (headless Chromium), tile.loc.gov 84, www.loc.gov 2, ar
 digitalcollections.bowdoin.edu 5, digitalcollections.nypl.org 1 (bot check), web.archive.org 1 (reset), contact pages 6;
 WebSearch 9, WebFetch 5. No logins, no credentials, no subagents; images read by this worker. Request drafts (not sent):
 `outreach/armstrong-keyhunt-nypl.md`, `-nyhs.md`, `-fdr.md`, `-bowdoin.md`; ASKS rows 95-96 and notes on 84/85.
+
+## ARM-KEYHUNT-2 (28 Sept 2026)
+
+Parent worker ARM-KEYHUNT-2 (owner account, Opus), brief `.claude/briefs/runs/2026-09-28-parent-arm-keyhunt-2.md`,
+17:18-17:4x UTC (container clock). Job: find a surviving 1805 specimen of the cipher Armstrong kept with Monroe (the
+ARM-KEYHUNT lead above), screen it against the target, draft requests for what is not online. Files: `keyhunt2/`
+(MANIFEST.tsv, requests.log, contact sheets). **Result: no specimen of the Armstrong-Monroe cipher and no key found
+online; one correction to the lead's premise; one new request draft.**
+
+**1. The Madison side.**
+- Founders Online editorial notes (PJM-SS 9, re-read from `keyhunt/founders/r4.txt`, `r5.txt`): they **describe but do
+  not print** the cipher numbers. 18 Mar 1805 n.1: the enclosed copy of Armstrong to Monroe 18 Mar 1805 is "3 pp.;
+  partly in code; ... interlinearly decoded", with pencil notes "copies [...] as before stated" and "to be decyphered--
+  the cypher being here that [of] Genl. A."; 2 Apr 1805 n.8: the corrected duplicate "has not been found"; n.12: a copy
+  of Armstrong to Monroe 5 Apr 1805, "partially in code, interlinearly decoded by JM".
+- **Correction to the lead's premise (H for the digits and the decode, I for what it implies).** The one surviving
+  18 Mar 1805 copy -- NARA M34 roll 13 frames 0034 (right page, "(Copy) Paris March 18. 1805 Dear Sir") and 0035 (left
+  page, coded lines with an interlinear period decode) -- is in the **office code THE=972**, not in a private cipher:
+  60 of the 70 groups ARM-KEYHUNT read there are in Bourdeau's THE=972 table and decode to the Joseph Bonaparte passage
+  PJM summarises ("Joseph had embarked with us and had carried up ... directly to the Emperor ... his interposition had
+  hitherto been ineffectual ... I enclose a copy of a letter by which you will perceive the temper with which he
+  undertook the business"), with plain words ("and", "a") between groups as in the office code's usage; the 5 Apr copy
+  (frame 0058) likewise, 84 of 100. Frames 0028-0037 looked at at 1600 px (`keyhunt2/r13/`): there is only one copy of
+  the 18 Mar letter on the roll. So the copy "in the cypher established between him and me" is **not in RG 59 as
+  filmed**; the surviving copy is either the original re-enciphered or the corrected duplicate filed in its place
+  (inference, I; PJM calls the duplicate not found). Where a specimen of the private cipher survives, if anywhere, is
+  on Monroe's side (his received originals, 12 and 18 Mar, 1 and 5 Apr 1805, at Madrid).
+- LOC James Madison Papers (loc.gov item search, "John Armstrong to James Madison" / "Armstrong to James Monroe" /
+  "cipher Armstrong", dates 1804-1808): no item for 18 Mar or 2 Apr 1805 (both RCs are at NARA per PJM); Armstrong items
+  there are 2 and 15 July 1804, 4 May 1806 (THE=972, Tomokiyo's known-plaintext letter) and 30 Aug 1808 (THE=972,
+  already on file). Negative for the Madison side.
+
+**2. The Monroe side.**
+- LOC James Monroe Papers (mss33217; no whole-reel PDF exists, `resources[0].files` has jpeg/jp2/tiff per frame, so the
+  h31/sheets.py route does not apply; contact sheets were built from pct:12 frames instead): reel 3 frames 589-625 not
+  sampled by ARM-KEYHUNT (24 frames: Monroe's own long Madrid despatches, numbered pages, clear) and odd frames
+  651-699 (25: mid-1805 to Jan 1806, incl. Bowdoin's enclosure list f0671, a claimant's "Private, Paris 24 Nov 1805"
+  f0675 read at pct:50 -- clear, not Armstrong -- and the Jan 1806 run); reel 4 frames 5-447 every 13th (35: Jan-Dec
+  1807). **No page of numerals and no key table in any of the 84 frames** (a negative for dense numeral pages at this
+  scale only; a short coded passage inside prose would not show at pct:12). With H25 and ARM-KEYHUNT, every Armstrong
+  letter to Monroe in the 1904 calendar has now been seen except the second Dec 1804 letter (still unlocated), and all
+  seen are clear.
+- NYPL Digital Collections (headless Chromium, which loaded this time): searches "James Monroe papers Armstrong",
+  "Monroe Armstrong", "Monroe, James", "John Armstrong letter", "Armstrong cipher", "cypher" -- no MssCol 2035 item
+  digitised; the Monroe/Armstrong hits are portraits, Emmet-collection Revolutionary letters and single items. The
+  collection is not online; the ARM-KEYHUNT NYPL draft stands.
+
+**3. Printed Monroe.** *Writings* (Hamilton) and the NYPL *Bulletin* 1900 were read by ARM-KEYHUNT (clear). *The Papers
+of James Monroe* vol. 5 (1803-1811, Preston, 2014): Google Books NO_PAGES for every edition record (keyed API,
+country=US), and the Rotunda digital edition is subscription -- not read (unreachable, not a negative). The UMW project's
+online "calendar" is a biographical day-calendar, not a document calendar. American State Papers FR 2:636 prints only an
+extract of the 18 Mar 1805 letter (Google Books snippet) -- no cipher numbers. Peter P. Hill, *Napoleon's Troublesome
+Americans* (2005), snippet: Armstrong wrote "angrily to Monroe" when Bowdoin failed to use cipher in 1806 -- no specimen.
+Google Books phrase search "cypher established between": only the Jefferson 1784-85 and Marshall-Pinckney 1797 uses.
+
+**4. Specimen screen.** Nothing to screen: no Armstrong-Monroe cipher specimen found. (Frame 0035's THE=972 groups were
+already screened by ARM-KEYHUNT: MISS, `keyhunt/screen_m34r13_1805.txt`.)
+
+**5. Requests.** New: `outreach/armstrong-keyhunt-monroe-papers.md` -- to the Papers of James Monroe editors (UMW),
+asking only where the recipient's copies of the four 1805 letters are and whether any Armstrong-Monroe cipher or key is
+known in their document files (they calendar Monroe documents across repositories, the one finding aid that answers
+the "where" question); ASKS row 97. Standing: the ARM-KEYHUNT NYPL draft (the likeliest holder), ASKS 95.
+
+Requests (`keyhunt2/requests.log`): catalog.archives.gov IIIF 10, tile.loc.gov 87 (97 image requests of 120), www.loc.gov
+5, digitalcollections.nypl.org 8 (browser), academics.umw.edu 3 (browser) + 1 curl (403), libraries.wm.edu 1, Google
+Books API 12; WebSearch 1; project mailbox search 1. Vision screener calls: 0 (sheets read by this worker). No logins.
+Status unchanged (`open`). Rule 10: nothing called new.
