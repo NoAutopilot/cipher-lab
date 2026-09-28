@@ -6,3 +6,5 @@ error 15% control 1: words right 24/54 = 44%  e.g. us through agh war sronaded t
 error 15% control 2: words right 7/54 = 13%  e.g. isfoemer ion st sert mllllh ia wme too
 error 20% control 0: words right 21/54 = 39%  e.g. frrst whrcu had feel hihen and due tone
 error 20% control 1: words right 12/54 = 22%  e.g. by tudhbsu anu mad oyouadid duat en rmi
+error 20% control 2: words right 11/54 = 20%  e.g. ipsaford you mr mrce ogglgn in uhe toa
+b33 loop finished, 9 runs

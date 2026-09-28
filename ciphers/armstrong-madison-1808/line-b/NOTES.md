@@ -741,7 +741,7 @@ CPU and finished under a bash relaunch loop, `b33_loop.sh`, the script being res
 | 0 (B32) | 100 | 100 | 100 | 3 of 3 |
 | 10 percent | 76 | 46 | 69 | 2 of 3 |
 | 15 percent | 56 | 44 | 13 | 0 of 3 |
-| 20 percent | (running, appended to the log) | | | |
+| 20 percent | 39 | 22 | 20 | 0 of 3 |
 
 **Result.** The instrument's own recovery crosses its gate between 10 and 15 percent sign error; the two mark
 transcriptions on file disagree by about 16 percent (campaign H3; H15 counted the differences), and Tomokiyo's
