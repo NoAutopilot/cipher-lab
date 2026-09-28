@@ -1346,3 +1346,25 @@ the 522 stream (-1160.0, two of three seeds) lands on key.tsv's M values for 9, 
 **Not reading-ready:** the shuffled-key (permuted) control passes by a wide margin, but the judge gate (MJ,
 MERCY-JUDGE2: "judge cannot decide") is unchanged and no reading changed, so no reading-ready line is posted.
 Grades unchanged (S 496, M 26, H 0, C 0 of 522).
+
+## Campaign step H13 (2026-09-28 00:25-00:4x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Inventory of the dots and colons attached to numeral groups (H2 found four; are they
+separators?). Method and files in `h13marks/README.md`; the marks in `h13marks/marks.tsv`, the sheets in
+`h13marks/verified_marks_{1,2}.jpg`. Runner's own eye over 50 detector candidates, no subagent, no hosts.
+
+**Inventory: 16 marks after cipher groups** (a floor; the detector missed one the blind reads had found): dots after
+r04:1 (34), r04:2 (28), r04:12 (34), r04:14 (34), r05:1 (3), r06:6 (8), r06:12 (16), r10:18 (6), r11:4 (2), r11:5 (6),
+r14:3 (19), r16:10 (5), v01:1 (14), v05:9 (14), r23:8 (10), and the colon after v04:16 (21). Four of the sixteen sit on
+r04, the first cipher line. Plus three full stops in the clear text immediately before a cipher run (r08, r13, v11).
+
+**Test (rule 3): are they word separators?** Under the current reading 1 of 16 falls at a word end (r11:5, the s of
+"sepamos" before the clear "Con"). Control: the same 16 marks placed at random cipher positions of the same lines,
+10,000 draws: mean 1.22 word-end hits, 95th percentile 3, P(>= 1) = 0.75. **The marks are not word separators under
+this reading, and not distinguishable from chance placement.** By the code they follow: 34 three times (all r04), 14
+twice, 6 twice, the rest once -- no code-specific pattern either. What they are stays open (pen rests, or a
+segmentation different from ours); they change no token.
+
+**Side observation, no grade change:** all three clear-text full stops are followed by cipher 13, which key.tsv reads
+y ("y ..." opening the sentence, 13 = y is the M2 correction from Y8's s), the commonest sentence opener in a letter
+of this register -- an independent consistency point for 13 = y, logged for the verifier, not a new grade.

@@ -1,0 +1,119 @@
+{
+ "marks": [
+  {
+   "line": "r04",
+   "pos": 1,
+   "sign": "34",
+   "mark": "dot",
+   "src": "sheet_00 #3"
+  },
+  {
+   "line": "r04",
+   "pos": 2,
+   "sign": "28",
+   "mark": "dot",
+   "src": "sheet_00 #3"
+  },
+  {
+   "line": "r04",
+   "pos": 12,
+   "sign": "34",
+   "mark": "dot",
+   "src": "sheet_00 #0"
+  },
+  {
+   "line": "r04",
+   "pos": 14,
+   "sign": "34",
+   "mark": "dot",
+   "src": "sheet_00 #2"
+  },
+  {
+   "line": "r05",
+   "pos": 1,
+   "sign": "3",
+   "mark": "dot",
+   "src": "sheet_01 #6"
+  },
+  {
+   "line": "r06",
+   "pos": 12,
+   "sign": "16",
+   "mark": "dot",
+   "src": "sheet_01 #8"
+  },
+  {
+   "line": "r06",
+   "pos": 6,
+   "sign": "8",
+   "mark": "dot",
+   "src": "sheet_01 #9, H2"
+  },
+  {
+   "line": "r10",
+   "pos": 18,
+   "sign": "6",
+   "mark": "dot",
+   "src": "sheet_02 #14"
+  },
+  {
+   "line": "r11",
+   "pos": 4,
+   "sign": "2",
+   "mark": "dot",
+   "src": "sheet_02 #16"
+  },
+  {
+   "line": "r11",
+   "pos": 5,
+   "sign": "6",
+   "mark": "dot",
+   "src": "sheet_02 #17"
+  },
+  {
+   "line": "r14",
+   "pos": 3,
+   "sign": "19",
+   "mark": "dot",
+   "src": "sheet_03 #21"
+  },
+  {
+   "line": "r16",
+   "pos": 10,
+   "sign": "5",
+   "mark": "dot",
+   "src": "H10/H11 blind C+D"
+  },
+  {
+   "line": "v01",
+   "pos": 1,
+   "sign": "14",
+   "mark": "dot",
+   "src": "sheet, H2"
+  },
+  {
+   "line": "v04",
+   "pos": 16,
+   "sign": "21",
+   "mark": "colon",
+   "src": "sheet_06 #37, H2"
+  },
+  {
+   "line": "v05",
+   "pos": 9,
+   "sign": "14",
+   "mark": "dot",
+   "src": "sheet_06 #39"
+  },
+  {
+   "line": "r23",
+   "pos": 8,
+   "sign": "10",
+   "mark": "dot",
+   "src": "sheet_04 #24"
+  }
+ ],
+ "hits": 1,
+ "random_mean": 1.219,
+ "p_ge": 0.7536
+}

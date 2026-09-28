@@ -1,0 +1,17 @@
+line	pos	sign	mark	at_word_end	source
+r04	1	34	dot	False	sheet_00 #3
+r04	2	28	dot	False	sheet_00 #3
+r04	12	34	dot	False	sheet_00 #0
+r04	14	34	dot	False	sheet_00 #2
+r05	1	3	dot	False	sheet_01 #6
+r06	12	16	dot	False	sheet_01 #8
+r06	6	8	dot	False	sheet_01 #9, H2
+r10	18	6	dot	False	sheet_02 #14
+r11	4	2	dot	False	sheet_02 #16
+r11	5	6	dot	True	sheet_02 #17
+r14	3	19	dot	False	sheet_03 #21
+r16	10	5	dot	False	H10/H11 blind C+D
+v01	1	14	dot	False	sheet, H2
+v04	16	21	colon	False	sheet_06 #37, H2
+v05	9	14	dot	False	sheet_06 #39
+r23	8	10	dot	False	sheet_04 #24
