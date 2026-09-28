@@ -1,0 +1,4 @@
+You are checking proposed corrections to a machine decode of a short 17th-century Spanish diplomatic cipher (a homophonic substitution: each numbered glyph stands for one letter everywhere; vowels usually have several glyphs; a few individual glyphs may have been miscopied by the transcriber, which no key change can fix). Spelling is period Spanish (u/v and i/j interchange, no accents, words run together, no spaces).
+Below the decode is a list of CANDIDATE KEY CHANGES, each re-lettering one glyph everywhere it occurs. Some candidates are correct and some are wrong; the proportion is not given. For each candidate, look at every place its glyph occurs (the G lines give the glyph of each letter) and decide whether the text reads better as Spanish WITH the change than without it.
+Output ONLY a TSV block between lines BEGIN and END, header: id	verdict(accept/reject)	confidence(high/medium/low)	evidence_words
+One row per candidate, every candidate.

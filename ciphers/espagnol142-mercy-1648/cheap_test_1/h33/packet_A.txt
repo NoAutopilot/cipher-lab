@@ -1,0 +1,97 @@
+You are checking proposed corrections to a machine decode of a short 17th-century Spanish diplomatic cipher (a homophonic substitution: each numbered glyph stands for one letter everywhere; vowels usually have several glyphs; a few individual glyphs may have been miscopied by the transcriber, which no key change can fix). Spelling is period Spanish (u/v and i/j interchange, no accents, words run together, no spaces).
+Below the decode is a list of CANDIDATE KEY CHANGES, each re-lettering one glyph everywhere it occurs. Some candidates are correct and some are wrong; the proportion is not given. For each candidate, look at every place its glyph occurs (the G lines give the glyph of each letter) and decide whether the text reads better as Spanish WITH the change than without it.
+Output ONLY a TSV block between lines BEGIN and END, header: id	verdict(accept/reject)	confidence(high/medium/low)	evidence_words
+One row per candidate, every candidate.
+
+
+
+KEY TABLE (glyph, current letter, occurrences):
+g10	i	3
+g11	c	13
+g12	l	1
+g13	u	10
+g14	i	4
+g15	o	13
+g16	o	1
+g17	i	6
+g18	e	26
+g19	n	41
+g20	a	21
+g21	t	25
+g22	r	28
+g23	a	21
+g24	o	12
+g25	l	40
+g26	y	10
+g27	i	12
+g28	b	9
+g29	a	1
+g30	a	1
+g31	a	23
+g32	m	7
+g33	q	6
+g34	s	4
+g35	r	1
+g36	u	9
+g37	s	34
+g38	o	25
+g39	p	8
+g40	u	6
+g41	d	41
+g42	e	19
+g43	g	5
+g44	f	5
+g45	c	1
+g46	s	3
+g47	o	1
+g48	e	25
+
+TEXT (each L line is the decode; the G line under it gives the glyph of each letter in order):
+L01: segorcardenalboriasobernadordelargobispa
+G01: g37 g42 g43 g24 g22 g11 g31 g22 g41 g48 g19 g23 g25 g28 g38 g22 g27 g23 g46 g24 g28 g48 g22 g19 g23 g41 g38 g22 g41 g48 g25 g31 g22 g43 g24 g28 g17 g37 g39 g31
+L02: dodetoledodandolelamiteddelasuacartesalq
+G02: g41 g38 g41 g48 g21 g24 g25 g18 g41 g24 g41 g20 g19 g41 g38 g25 g48 g25 g23 g32 g27 g21 g48 g41 g41 g48 g25 g20 g37 g13 g20 g11 g31 g35 g21 g18 g37 g31 g25 g33
+L03: uesoyessobernadorledanyodecoriasalconfeo
+G03: g13 g18 g34 g38 g26 g18 g37 g46 g38 g28 g42 g22 g19 g20 g41 g24 g22 g25 g48 g41 g31 g19 g26 g15 g41 g18 g11 g15 g22 g27 g31 g37 g31 g25 g11 g24 g19 g44 g48 g15
+L04: ordelsenorinfantefrayiuandesanapustinlod
+G04: g38 g22 g41 g42 g25 g37 g48 g19 g15 g22 g27 g19 g44 g20 g19 g21 g42 g44 g22 g20 g26 g27 g40 g31 g19 g41 g48 g37 g20 g19 g23 g39 g13 g37 g21 g17 g19 g25 g15 g41
+L05: eauilanndndeeutoesciertosolasediceaunque
+G05: g18 g23 g13 g27 g25 g20 g19 g19 g41 g19 g41 g18 g42 g36 g21 g24 g48 g37 g11 g14 g42 g22 g21 g38 g37 g38 g25 g23 g37 g18 g41 g27 g11 g48 g31 g36 g19 g33 g13 g18
+L06: iosesiconbastantefundamentoestosniasconu
+G06: g10 g24 g37 g42 g37 g27 g11 g15 g19 g28 g31 g37 g21 g23 g19 g21 g42 g44 g13 g19 g41 g31 g32 g48 g19 g21 g38 g18 g37 g21 g38 g37 g19 g17 g23 g37 g11 g38 g19 g13
+L07: natempestadquesuloentoledocayerontresray
+G07: g19 g20 g21 g42 g32 g39 g18 g37 g21 g31 g41 g33 g40 g18 g34 g40 g25 g15 g42 g19 g21 g24 g25 g48 g41 g38 g11 g23 g26 g18 g22 g15 g19 g21 g22 g18 g37 g22 g31 g26
+L08: osyunodeellosenlapulataquellamandelperde
+G08: g24 g37 g26 g13 g19 g38 g41 g18 g18 g25 g25 g38 g37 g48 g19 g25 g23 g39 g13 g25 g30 g21 g23 g33 g36 g48 g25 g25 g23 g32 g20 g19 g41 g48 g25 g39 g42 g22 g41 g18
+L09: ndelaislesiamayorsigolrdedanomasaldunddl
+G09: g19 g41 g18 g25 g20 g14 g46 g25 g18 g37 g14 g20 g32 g31 g26 g38 g22 g34 g17 g43 g38 g25 g22 g41 g18 g41 g31 g19 g38 g32 g23 g37 g29 g12 g41 g40 g19 g41 g41 g25
+L10: sotroedelalcagaryentrandoporunasalaeonde
+G10: g37 g15 g21 g22 g15 g42 g41 g18 g25 g23 g25 g11 g31 g43 g23 g22 g26 g42 g19 g21 g22 g20 g19 g41 g38 g39 g47 g22 g40 g19 g23 g37 g20 g25 g20 g42 g38 g19 g41 g48
+L11: istabielalcaideescribiendoenunbufetediou
+G11: g10 g37 g21 g31 g28 g27 g48 g25 g31 g25 g11 g20 g17 g41 g42 g42 g37 g11 g22 g27 g28 g17 g18 g19 g41 g38 g42 g19 g36 g19 g28 g40 g44 g18 g21 g48 g41 g14 g38 g36
+L12: ieltaportodalasalaquemoloscuadrosypictur
+G12: g10 g18 g25 g21 g23 g39 g38 g22 g21 g24 g41 g23 g25 g31 g37 g20 g25 g23 g33 g36 g48 g32 g38 g25 g15 g37 g11 g13 g31 g41 g22 g38 g37 g26 g39 g27 g45 g21 g36 g22
+L13: aselestradoqueestabaenellayaulnolesigoda
+G13: g20 g37 g48 g25 g42 g37 g21 g22 g23 g41 g16 g33 g36 g42 g18 g37 g21 g20 g28 g31 g48 g19 g18 g25 g25 g20 g26 g20 g36 g25 g19 g15 g25 g48 g34 g27 g43 g15 g41 g31
+L14: n
+G14: g19
+
+CANDIDATE KEY CHANGES:
+K01	g33	q -> p	(6 occurrences)
+K02	g30	a -> r	(1 occurrences)
+K03	g40	u -> a	(6 occurrences)
+K04	g35	r -> n	(1 occurrences)
+K05	g17	i -> a	(6 occurrences)
+K06	g34	s -> h	(4 occurrences)
+K07	g44	f -> r	(5 occurrences)
+K08	g47	o -> e	(1 occurrences)
+K09	g32	m -> s	(7 occurrences)
+K10	g45	c -> n	(1 occurrences)
+K11	g14	i -> e	(4 occurrences)
+K12	g10	i -> n	(3 occurrences)
+K13	g12	l -> e	(1 occurrences)
+K14	g43	g -> z	(5 occurrences)
+K15	g29	a -> d	(1 occurrences)
+K16	g39	p -> c	(8 occurrences)
+K17	g46	s -> g	(3 occurrences)
+K18	g16	o -> u	(1 occurrences)
