@@ -702,7 +702,7 @@ homophones on the commonest letters, spaces = sign 20.
 | shuffled floors 0 / 1 / 2 | 192.1 / 201.5 / 200.9 | 30 / 33 / 33 of 54 | i xaxh hllrioo e atlem oda ... |
 | pilot floors (6 x 8,000, no cap) | 220-233 | 32-36/54 | -- |
 
-**GATE MET (100% on 3 of 3); TARGET AT THE FLOOR.** A solver that recovers three design-matched controls exactly
+**GATE MET (100% on 3 of 3); TARGET AT THE FLOOR -- but see B33: downgraded to a non-test at the transcription's error level.** A solver that recovers three design-matched controls exactly
 produces salad on the target, with a score inside the shuffled-target floor (198.5 against floors 192.1, 201.5 and
 200.9 -- the target sits between the floors). This is a control-backed negative for the design
 tested: the runs are NOT English spelled letter by letter in 34 signs with at most two homophones per letter and type
@@ -729,3 +729,26 @@ Short's cypher), and Vincent Gray 29 Oct 1808 (3653: "cipher of Vincent Gray" is
 names the undecyphered letter only on 15 May (Madison) and 20 May (Graham's duplicate, B15); the correspondent and
 the key are named nowhere.** Requests: web.archive.org about 750 for this pass (single-threaded, 1.6 s apart, one
 retry per id); 0 subagents.
+
+## Step B33 (28 Sept 2026, 05:13-06:2x UTC) -- error tolerance of the B32 instrument: it collapses between 10 and 15 percent injected sign error, inside the transcriptions' own 16 percent disagreement -- B32 downgraded to a non-test at the transcription's reliability (SALV-DIAG)
+
+`b32/b33_errors.py` (log `b33_log.txt`; the run was killed three times by the container after about ten minutes of
+CPU and finished under a bash relaunch loop, `b33_loop.sh`, the script being resumable): B32's three controls with
+10, 15 and 20 percent of the signs replaced by a random other sign, same solver (24 x 25,000, cap 2).
+
+| injected error | control 0 | control 1 | control 2 | above the 60 percent gate |
+|---|---|---|---|---|
+| 0 (B32) | 100 | 100 | 100 | 3 of 3 |
+| 10 percent | 76 | 46 | 69 | 2 of 3 |
+| 15 percent | 56 | 44 | 13 | 0 of 3 |
+| 20 percent | (running, appended to the log) | | | |
+
+**Result.** The instrument's own recovery crosses its gate between 10 and 15 percent sign error; the two mark
+transcriptions on file disagree by about 16 percent (campaign H3; H15 counted the differences), and Tomokiyo's
+segmentation is a third, single-reader inventory (B28). So B32's target result sits in an error band the
+transcription cannot back up: **B32 is re-logged as a non-test at this transcription's reliability, not a design
+negative** (CLAUDE.md rule 3, the SALV-DIAG paragraph). What would make it a test: a reconciled glyph transcription
+whose pass-to-pass disagreement is under 10 percent (two blind passes on native crops against Tomokiyo's sheet as
+the third witness), then the same solver -- the row for that is the campaign's H15 territory (the runner's H15 done
+line of 06:0x UTC counts the differences between the two mark transcriptions) and is left to it. Requests: none;
+0 subagents; about 60 minutes of CPU across four relaunches.
