@@ -1,0 +1,49 @@
+You are a blind transcriber of the small clear (ordinary handwriting) French words written ABOVE the cipher rows on a 16th-century manuscript leaf (BnF fr.3982 f.124r, Rome, dated on the leaf 7 November 1592; a contemporary interlinear decipherment written by a secretary above each cipher line). You will transcribe the clear line above the cipher row in each of 8 line bands (L33, L34, L35, L36, L37, L38, L39, L40). Each band is given as FIVE image segments s1..s5 (left to right), each 1520 px wide (s5 1300 px) and 250 px tall, scaled 2x from the native scan. Consecutive segments of a band overlap by 120 px (red tick marks at the top edge): a word in the overlap is listed ONCE ONLY, in the earlier segment; in the later segment start listing after the red tick.
+
+What a band shows: the cipher row (invented signs: 4-like figures with loops, chains of loops, triangles, brackets) runs across the middle of the band -- do not transcribe these; ABOVE it, the small clear words of the decipherment -- transcribe every one of them, left to right, exactly as written (16th-century spelling kept, e.g. 'nostre', 'aultre', 'tousiours', 'saincteté'; abbreviation marks expanded in square brackets, e.g. 'Cardin[al]', 's[ainc]te[té]'; an illegible word as '?' with as many letters as you can read, e.g. 'na?ent'). The clear line also carries long horizontal DASHES (a stroke with no letters, sometimes as long as several words): list each dash as its own row with word = '-' and kind = dash, with its x-range, in its place in the sequence -- they matter for alignment. A clear word written INSIDE the cipher row (in the row itself, not above it) is listed with kind = inline; the words above the row have kind = gloss; a word the decipherer crossed out is listed with '_struck' appended. The rows are not perfectly level (they rise a little towards the right) and each segment was centred on the row separately, so the clear line may sit slightly higher or lower from one segment to the next. The band's bottom edge may cut through the NEXT clear line (the one belonging to the next band): skip anything cut by the bottom edge; the top edge may show the descenders of the previous cipher row: skip those too. Transcribe only the one complete clear line that sits directly above this band's cipher row.
+
+Read the 40 images with the Read tool in this order: for each band, segment s1, s2, s3, s4, s5:
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L33_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L33_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L33_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L33_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L33_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L34_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L34_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L34_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L34_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L34_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L35_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L35_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L35_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L35_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L35_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L36_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L36_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L36_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L36_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L36_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L37_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L37_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L37_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L37_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L37_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L38_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L38_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L38_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L38_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L38_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L39_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L39_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L39_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L39_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L39_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L40_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L40_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L40_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L40_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f124r/f124r_L40_s5.jpg
+Write your transcription as a TSV file with the Write tool to the OUTPUT PATH given at the end of this prompt, header exactly:
+line	pos	kind	word	conf	segment	x0_px	x1_px
+one row per word or dash; 'line' is the band id (L01..L45); 'pos' counts from 1 within the band across all five segments; 'segment' is s1..s5; x0_px/x1_px are the word's left and right edges in pixels within its segment image (0-1520); conf h/m/l. No cipher sign is to be transcribed and no reading of the cipher is to be attempted. When done, report only: the number of words per band and the total.
+OUTPUT PATH: /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/passes/f124r_glossB_c5.tsv
