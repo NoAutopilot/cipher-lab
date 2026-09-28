@@ -1,0 +1,81 @@
+line	pos	sign	conf	segment	x_px	note
+L05	1	C43	m	1	1053	4 over a 3-shaped foot; 4TRI close
+L05	2	BETA	m	1	1296	beta, loop at top of a long slanted stem; PHI close
+L05	3	ZHOOK	m	1	1580	Z/7 hook over two crossed stems ("2H"); HASH4 close
+L05	4	BETA	m	1	1796	beta
+L05	5	DBL	m	1	2039	8-shaped double loop on a stem; PHI close
+L05	6	DBL	m	1	2268	double loop on stem
+L05	7	ELOOP	l	1	2484	large C-curl joined to a loop on a stem; OTHER/CA close
+L05	8	DBL	l	1	2670	cut at boundary, continues at seg2 x~20 as w-like loops; counted once
+L05	9	HASH4	m	2	243	dense hash cluster
+L05	10	ZHOOK	m	2	513	Z hook over crossed stems, same as pos 3
+L05	11	DBL	m	2	743	double loop on stem
+L05	12	BETA	h	2	945	beta with long stem
+L05	13	DBL	m	2	1188	double loop on stem
+L05	14	DBL	m	2	1418	double loop on stem
+L05	15	DBL	m	2	1620	double loop on stem
+L05	16	VBAR_A	m	2	1796	small down triangle with top bar, small
+L05	17	DBL	m	2	2012	double loop on stem
+L05	18	ELOOP	l	2	2214	large curl + loop on stem, same as pos 7
+L05	19	HASH4	m	2	2498	dense hash
+L05	20	HASH4	l	2	2660	cut at boundary, rest at seg3 x~40; counted once
+L05	21	DBL	m	3	257	double loop on stem; followed by handwriting (skipped)
+L05	22	HASH4	m	4	1053	hash, after handwriting "fait"
+L05	23	C43	m	4	1283	4 over 3
+L05	24	DBL	m	4	1499	double loop on stem
+L05	25	VBAR_A	m	4	1688	small triangle with bar, dot above
+L05	26	DBL	m	4	1877	double loop on stem, followed by dash
+L06	1	C43	m	1	1066	4 over 3
+L06	2	VBAR_A	m	1	1283	small triangle with top bar; then handwriting to seg3 (skipped)
+L06	3	HASH4	m	3	945	hash with long stems
+L06	4	INF	m	3	1188	infinity/8 on a bar, dark
+L06	5	ZHOOK	m	3	1445	Z hook over crossed stems, entangled with annotation stroke
+L06	6	C43	m	3	1674	4 over 3
+L06	7	BETA	m	3	1890	beta with large loop at foot
+L06	8	DBL	m	3	2120	double loop on stem
+L06	9	BETA	m	3	2322	beta
+L06	10	PHI	l	3	2592	infinity on a long stem with fork on top (psi-like); INF close
+L06	11	ZHOOK	m	4	148	Z hook over crossed stems ("24")
+L06	12	EBR_B	l	4	351	small squared bracket open right, E-like; EBR_A close
+L06	13	ZHOOK	m	4	621	Z hook over crossed stems
+L06	14	EBR_B	l	4	851	small r/bracket shape; EBR_A close
+L06	15	BETA	m	4	1026	beta
+L06	16	C43	m	4	1269	4 over 3
+L06	17	DBL	m	4	1485	double loop on stem
+L06	18	BETA	m	4	1661	beta
+L06	19	INF	m	4	1836	infinity on bar/stem, followed by dash
+L07	1	4TRI	l	1	1080	crop cuts sign bottom; 4 visible only; 4STEM close
+L07	2	VBAR_A	m	1	1283	triangle with top bar
+L07	3	4TRI	l	1	1512	4, bottom cut; 4STEM close
+L07	4	DBL	l	1	1728	double loop top, bottom cut
+L07	5	HASH4	m	1	1931	hash
+L07	6	INF	m	1	2160	infinity, bottom cut
+L07	7	HASH4	m	1	2403	hash
+L07	8	HASH4	l	1	2646	hash at right edge
+L07	9	OTHER	l	2	40	large left-open curl at segment start, bottom cut; may be ELOOP
+L07	10	INF	l	2	230	infinity top, bottom cut
+L07	11	HASH4	m	2	432	hash
+L07	12	EBR_B	l	2	621	small r/bracket shape
+L07	13	HASH4	m	2	824	hash
+L07	14	VBAR_A	m	2	1107	triangle with top bar
+L07	15	INF	l	2	1350	infinity top, cut
+L07	16	ELOOP	l	2	1620	curl + loop, cut, under annotation
+L07	17	DBL	l	2	1890	loop top only
+L07	18	DBL	l	2	2079	dark loop under annotation stroke, cut
+L07	19	ZHOOK	l	2	2322	7/Z hook with stems, cut
+L07	20	DBL	l	2	2592	loop top only
+L07	21	ISH	l	3	365	I-like with bars, under annotation; may be annotation stroke
+L07	22	INF	l	3	608	low hump only, cut
+L07	23	INF	l	3	756	low hump only, cut
+L07	24	4TRI	l	3	1040	4 top only; 4STEM close
+L07	25	DBL	l	3	1283	loop top only
+L07	26	4TRI	l	3	1485	small 4 top only
+L07	27	OTHER	l	3	1688	low curved hump, cut; unidentifiable
+L07	28	OTHER	l	3	1944	low curved hump, cut; unidentifiable
+L07	29	DBL	l	3	2228	loop top only
+L07	30	DBL	l	3	2498	loop top only
+L07	31	OTHER	l	3	2673	curl at right edge, cut
+L07	32	OTHER	l	4	54	humps at segment start, cut
+L07	33	4TRI	l	4	270	4 top only
+L07	34	OTHER	l	4	540	ascender stroke, cut
+L07	35	OTHER	l	4	729	e-like loop, cut; handwriting "fait"/"Jouz" further right skipped

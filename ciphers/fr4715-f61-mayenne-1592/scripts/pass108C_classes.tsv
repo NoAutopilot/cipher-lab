@@ -1,0 +1,81 @@
+line	pos	sign	conf	segment	x_px	note
+L05	1	4TRI	m	1	1050	4 with a 3-like/triangle foot; alt C43
+L05	2	BETA	h	1	1280	beta, long descender
+L05	3	ZHOOK	m	1	1570	Z-hook over two crossed stems ("24"-like); alt HASH4
+L05	4	BETA	h	1	1800	beta
+L05	5	PHI	m	1	2040	loops on stem; alt DBL
+L05	6	PHI	m	1	2280	loops on stem; alt DBL
+L05	7	ELOOP	m	1	2500	large curling loop around loops on stem; alt PHI
+L05	8	OTHER	l	1	2680	cut on segment 1/2 boundary, continues at segment 2 x~30; w-like loops, counted once; possibly ELOOP tail + PHI
+L05	9	HASH4	m	2	240	dense crossed loop cluster
+L05	10	ZHOOK	h	2	510	Z-hook over crossed stems
+L05	11	PHI	h	2	760	loops on stem
+L05	12	BETA	h	2	950	beta
+L05	13	PHI	h	2	1190	loops on stem
+L05	14	PHI	h	2	1420	loops on stem
+L05	15	PHI	h	2	1620	loops on stem
+L05	16	VBAR_A	m	2	1800	small down triangle with top bar; alt VBAR_B
+L05	17	PHI	h	2	2010	loops on stem
+L05	18	ELOOP	m	2	2220	big curling loop enclosing loops on stem; alt PHI
+L05	19	HASH4	h	2	2500	dense crossed cluster
+L05	20	HASH4	m	2	2680	cut on segment 2/3 boundary, continues at segment 3 x~40; counted once
+L05	21	PHI	h	3	260	loops on stem; followed by handwriting (skipped)
+L05	22	4STEM	m	4	1050	4 with long crossed stems, no triangle; alt HASH4
+L05	23	4TRI	m	4	1290	4 over 3-like foot; alt C43
+L05	24	PHI	h	4	1490	loops on stem
+L05	25	VBAR_A	m	4	1690	small down triangle with top bar; alt VBAR_B
+L05	26	PHI	h	4	1880	loops on stem, dash after
+L06	1	4TRI	m	1	1070	4 over 3-like foot; alt C43
+L06	2	VBAR_A	h	1	1280	closed down triangle with top bar; then handwriting (skipped)
+L06	3	4STEM	m	3	950	crossed 4 with two long stems; alt HASH4/4PI
+L06	4	HASH4	m	3	1190	dense crossed loop cluster
+L06	5	ZHOOK	m	3	1430	Z-hook over crossed stems; annotation stroke over it
+L06	6	4TRI	m	3	1690	4 over 3-like foot; alt C43
+L06	7	BETA	m	3	1890	beta with loop at foot
+L06	8	PHI	h	3	2130	loops on stem
+L06	9	BETA	h	3	2320	beta
+L06	10	INF	m	3	2590	infinity loops on a stem with top stroke; alt PHI
+L06	11	ZHOOK	m	4	150	Z-hook over crossed stems
+L06	12	OTHER	l	4	360	angular E/L-like mark with foot bar; alt EBR_B
+L06	13	ZHOOK	h	4	620	Z-hook over crossed stems
+L06	14	VBAR_A	l	4	850	small r/x-like mark, possibly triangle with bar
+L06	15	BETA	h	4	990	beta
+L06	16	4TRI	m	4	1240	4 over 3-like foot; alt C43
+L06	17	PHI	h	4	1470	loops on stem
+L06	18	BETA	h	4	1650	beta
+L06	19	INF	m	4	1840	infinity loops on stem; dash after
+L07	1	4TRI	l	1	1080	bottom of main line cropped away in all segments; only tops visible
+L07	2	VBAR_A	m	1	1300	down triangle with top bar
+L07	3	4TRI	l	1	1510	4-shape, foot cropped; alt 4STEM
+L07	4	PHI	l	1	1730	loops, stem cropped; alt DBL
+L07	5	HASH4	m	1	1930	dense crossed cluster
+L07	6	INF	m	1	2160	infinity loops, stem cropped
+L07	7	HASH4	m	1	2420	dense crossed cluster
+L07	8	HASH4	l	1	2650	at right edge, cropped
+L07	9	ELOOP	l	2	40	curl at left edge, cropped
+L07	10	INF	l	2	200	infinity-like loops, cropped
+L07	11	HASH4	l	2	400	crossed cluster, cropped
+L07	12	VBAR_A	l	2	610	small r-like mark, cropped
+L07	13	HASH4	m	2	820	crossed cluster
+L07	14	VBAR_A	m	2	1090	down triangle with bar
+L07	15	INF	l	2	1350	infinity loops, cropped
+L07	16	ELOOP	l	2	1510	large C-curl, cropped
+L07	17	PHI	l	2	1660	loop top only visible
+L07	18	PHI	l	2	1890	loop top only visible
+L07	19	PHI	l	2	2050	dark loop, cropped; alt ELOOP
+L07	20	ZHOOK	l	2	2300	7/Z hook over stems, cropped
+L07	21	PHI	l	2	2570	loop top only
+L07	22	ISH	l	3	370	vertical with bars under annotation; may be annotation stroke
+L07	23	OTHER	l	3	600	loop top only, unreadable
+L07	24	OTHER	l	3	810	loop top only, unreadable
+L07	25	4TRI	l	3	1050	4 top only
+L07	26	PHI	l	3	1280	loop top only
+L07	27	OTHER	l	3	1480	fragment, unreadable
+L07	28	OTHER	l	3	1700	fragment, unreadable
+L07	29	OTHER	l	3	1960	fragment, unreadable
+L07	30	PHI	l	3	2230	loop top only
+L07	31	PHI	l	3	2480	loop top only
+L07	32	OTHER	l	3	2650	fragment at right edge
+L07	33	OTHER	l	4	60	fragment, cropped
+L07	34	OTHER	l	4	270	fragment, cropped
+L07	35	OTHER	l	4	500	fragment, cropped; rest of segment is cropped/annotation
