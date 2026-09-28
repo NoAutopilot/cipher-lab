@@ -1,0 +1,5 @@
+sbs: 15 tiles, forms {'INF': 'X', 'PHI': 'Z', 'SBS': 'Y'}
+phi: 15 tiles, forms {'INF': 'Y', 'PHI': 'Z', 'SBS': 'X'}
+inf: 15 tiles, forms {'INF': 'X', 'PHI': 'Y', 'SBS': 'Z'}
+4tri: 14 tiles, forms {'4HOOK': 'Y', '4TRI': 'X'}
+f61: 12 tiles, forms {'INF': 'Z', 'PHI': 'X', 'SBS': 'Y'}

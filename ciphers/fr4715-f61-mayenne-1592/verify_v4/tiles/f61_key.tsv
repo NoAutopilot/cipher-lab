@@ -1,0 +1,14 @@
+# answer key, never shown to the reader. forms: Z = INF, X = PHI, Y = SBS
+tile	sheet	segment	x_px	H26_group	v4_class
+1	f61sheetB_L07	4	837	G2	SBS
+2	f61sheetB_L11	2	594	G2	SBS
+3	f61sheetB_L10	3	1688	G1	PHI
+4	f61sheetB_L11	1	1275	G1	PHI
+5	f61sheetB_L08	1	1688	G2	SBS
+6	f61sheetB_L05	2	567	G2	SBS
+7	f61sheetB_L08	1	1978	G1	PHI
+8	f61sheetB_L01	4	1340	G1	PHI
+9	f61sheetB_L10	4	70	G2	SBS
+10	f61sheetB_L11	1	641	G1	PHI
+11	f61sheetB_L03	3	960	G2	SBS
+12	f61sheetB_L10	4	1500	G2	SBS

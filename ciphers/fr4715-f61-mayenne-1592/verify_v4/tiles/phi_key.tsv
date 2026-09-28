@@ -1,0 +1,17 @@
+# answer key, never shown to the reader. forms: Y = INF, Z = PHI, X = SBS
+tile	src_call	src_tile	family_class	role
+1	f101r_loops	47	INF	decoy
+2	f188r_loops	13	PHI	target
+3	f188r_loops	83	PHI	target
+4	f101r_loops	19	PHI	target
+5	f188r_loops	33	PHI	target
+6	f101r_loops	55	SBS	decoy
+7	f101r_loops	49	PHI	target
+8	f188r_loops	36	PHI	target
+9	f101r_loops	70	PHI	target
+10	f101r_loops	60	PHI	target
+11	f188r_loops	70	PHI	target
+12	f188r_loops	44	SBS	decoy
+13	f101r_loops	7	PHI	target
+14	f101r_loops	6	SBS	decoy
+15	f188r_loops	15	INF	decoy

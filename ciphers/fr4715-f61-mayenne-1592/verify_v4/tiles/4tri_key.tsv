@@ -1,0 +1,16 @@
+# answer key, never shown to the reader. forms: Y = 4HOOK, X = 4TRI
+tile	src_call	src_tile	family_class	role
+1	f101r_4tri	20	4TRI	target
+2	f188r_4tri	22	4HOOK	target
+3	f101r_4tri	80	4HOOK	target
+4	f188r_4tri	20	4HOOK	target
+5	f101r_4tri	47	4TRI	target
+6	f101r_4tri	50	4HOOK	target
+7	f101r_4tri	39	4TRI	target
+8	f188r_4tri	19	4HOOK	target
+9	f101r_4tri	21	4HOOK	target
+10	f188r_4tri	24	4TRI	target
+11	f188r_4tri	10	4TRI	target
+12	f101r_4tri	4	4TRI	target
+13	f188r_4tri	8	4TRI	target
+14	f101r_4tri	65	4HOOK	target
