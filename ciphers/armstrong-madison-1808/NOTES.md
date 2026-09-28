@@ -3364,3 +3364,16 @@ ciphertext_ms.txt and images/shorthand/index.tsv's per-line mark counts come fro
 and are not checked here; H18's attached-mark inventory used its own per-group crops (not re-checked). No reading, no
 class change; nothing called new or first. Vision: the runner's three overlay looks and one look at the new crops;
 requests 0. Cost: about 0.5 USD (`--spend` records 0.5).
+
+## Campaign step H59 (28 Sept 2026, to 15:17 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H59: a person-read labelling pack for the shorthand signs, the one instrument H54/H55 leave. Offline build.
+
+Built by `h59/build_pack.py` into `h59/person_pack/`: four lines that are shorthand end to end (page 1 physical
+lines 9 and 10, page 2 physical line 2, page 3's last shorthand line; all four checked right by H58), each at 2x in two
+overlapping halves with a position ruler, Tomokiyo's 38-type sheet, README with the answer template, and an empty
+`h59/person_labels.tsv`. Automatic component numbering was tried first and abandoned: on these crops it split signs
+and dropped real ones where a crop cuts them (page 2's crop is tight), so the person marks positions on a ruler and
+H60 matches them to components. **ASKS row 92** filed. H60 waits on it. No reading, no class change; nothing called
+new or first. Vision: the runner's four looks at trial sheets; requests 0. Cost: about 0.5 USD (`--spend` 0.5).
