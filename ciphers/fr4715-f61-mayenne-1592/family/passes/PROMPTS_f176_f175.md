@@ -32,3 +32,9 @@ You are a reader of 16th-century French secretary hand. Use no tool other than y
 Write a TSV file with the Write tool to ciphers/fr4715-f61-mayenne-1592/family/passes/f175r_clearA_h170.tsv, header exactly:
 line	text	conf
 one row per line (L01..L08), conf h/m/l for the line as a whole. When done, report only "8 lines".
+
+## H175 (runner 6, 28 Sept 2026) -- WRITTEN BEFORE THE CALL
+One blind Opus read of fol. 177r L01-L08 (canvas 329, native, crops `sheets/f177r/f177_L01..L08_s1..s3.jpg`), prompt = call (3)
+above with the paths f175 -> f177 and output `passes/f177r_clearA_h175.tsv`. Scorer `h175_gate.py`: h170_gate.py's statistic, N,
+key, 200 permuted keys (seed 1) and gate on the two f.176r passes on disk, the candidate text being fol. 177r's read and the
+wrong texts f.184r @0, f.184r @120 and fol. 175r's read (gate: candidate > permuted max AND candidate - max(wrong) >= 0.10, both passes).

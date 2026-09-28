@@ -3274,3 +3274,15 @@ On a true separate-sheet pair, H170's statistic separates the right clear from w
 opening does not render f.176r's first four cipher rows** (f.176r scored 0.385-0.399, inside the wrong-text band). Still open: fol.
 175r is the decipherment of another 22 July letter, or f.176r's decipherment is elsewhere (fol. 177-178 are clear pages in another
 hand, H169). H174 is re-scoped to include fol. 177r.
+
+## Campaign step H174 (28 Sept 2026, 23:08-23:12 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the pairs by eye
+
+The 1600-px references of f.186r and f.189r already on disk (F61-FAMILY), and fol. 177r (canvas 329) at 2000 px (1 Gallica request,
+200; scratch, not committed). By the runner's eye, provisional:
+- **fol. 177r opens "Tres saint pere / Les larmes aux yeux et l'ame plaine de desespoir, j'oseray dire a V. Sainteté ..."**, f.176r's
+  salutation ("Tres saint pere", its only clear words), with underlined stretches as on f.184r (the decipherer's mark). It is **the
+  lead candidate for f.176r's separate-sheet decipherment**; fol. 175r was the wrong sheet (H170/H173).
+- f.186r (to Aldobrandini) opens in clear, "Illustrissime Monseigneur, Si je n'ay escript à Sa Sainteté ...": not fol. 175r's text.
+- f.189r (to Frachetta), headed "[Ju]illet 1593", is cipher from its first row, so **fol. 175r ("Depuis mes dernieres ...") may be
+  its decipherment**.
+Rows H175 (fol. 177r vs f.176r with the passes on disk, one read call) and H176 (fol. 175r vs f.189r) follow.
