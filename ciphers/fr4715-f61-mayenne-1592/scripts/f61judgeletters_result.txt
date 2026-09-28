@@ -1,0 +1,2 @@
+target SET-05: Tomokiyo letter inside the cell at 47 positions, judge chose it 43/47 = 0.915 (binomial P vs 0.5 = 1.4e-09); outside the cell 5; lines skipped for length mismatch 0
+best permutation SET-09: Tomokiyo letter inside the cell at 20 positions, judge chose it 16/20 = 0.800 (binomial P vs 0.5 = 0.0059); outside the cell 32; lines skipped for length mismatch 0

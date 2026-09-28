@@ -2140,3 +2140,20 @@ carries period o (and b) in three glossed hands (f.101r, f.188r, f.274); with H7
 carries period s and the top-bar triangle t in two (f.101r, f.274) -- the VBAR_A/VBAR_B split H15 found on f.61 from
 Tomokiyo's letters, now attested by two period decipherers. `scripts/f61_glyph_splits.tsv` gains rows H89P/H89V and
 `scripts/f61_skeleton_attest.txt`'s tag text now names both hands (counts unchanged). No reading, no class change.
+
+## Campaign step H90 (28 Sept 2026, 15:35-15:36 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+How reliable are the judge's WITHIN-PAIR letter choices, on which H85's f.108v resolutions rest? `scripts/f61judgeletters.py`
+(result `scripts/f61judgeletters_result.txt`, `--check` fresh) scores the H85 control call's resolution of the five f.61
+span lines against Tomokiyo's letters, placed exactly as the skeleton places them:
+
+- target set: his letter lies inside the cell at 47 positions; the judge chose it at **43/47 = 0.915** (one-sided
+  binomial P vs 0.5 = 1.4e-09); 5 positions have his letter outside the cell.
+- best permutation set (a floor): 16/20 = 0.80 at the 20 positions where the permuted cell happens to contain his letter.
+
+Two caveats, both lowering what the 0.915 licenses: (1) the floor shows much of the accuracy is the judge's
+French-frequency prior at the pair level (it picks the commoner letter), not sentence context; (2) the H16/H25 prompt,
+reused verbatim by H85, gives "beau-pere" as a spelling example, and "beaupere" is one of Tomokiyo's own words on these
+lines, so the known-lines figure is inflated for that span (the f.108v calls carry the same example word but no reason
+to contain it). Applied to f.108v: a letter chosen by the judge is right well above chance where the cell is right, but
+H85's resolutions stay grade M and not a reading. For the verifier page (H92). No reading, no class change.
