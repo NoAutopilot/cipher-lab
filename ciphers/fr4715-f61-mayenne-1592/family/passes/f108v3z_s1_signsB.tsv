@@ -1,0 +1,25 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	VBAR_A	h	s1	88	
+L01	2	4TRI	h	s1	304	
+L01	3	VBAR_A	h	s1	506	
+L01	4	EBR_A	m	s1	709	E-like bracket; alt EBR_B
+L01	5	PHI	h	s1	884	
+L01	6	4TRI	m	s1	1114	small V below; alt 4STEM
+L01	7	VBAR_A	m	s1	1350	filled triangle with top bar extended right as long tail; alt EBR_B
+L01	8	4TRI	h	s1	1532	
+L01	9	INF	m	s1	1748	two loops on a horizontal bar with stems; alt SBS
+L01	10	HASH4	h	s1	1958	
+L01	11	PHI	h	s1	2153	
+L01	12	4TRI	h	s1	2342	
+L01	13	OTHER	m	s1	2619	gamma-like: open V top crossing into a loop at the foot; alt DBL; overlap zone
+L02	1	PHI	m	s1	149	dark stacked loops on slanted stem; alt DBL
+L02	2	4TRI	m	s1	358	alt 4STEM
+L02	3	EBR_A	m	s1	614	E-like bracket; alt EBR_B
+L02	4	C43	m	s1	857	reads like '24' written together; alt 4STEM
+L02	5	HASH4	h	s1	1100	
+L02	6	CA	m	s1	1323	cursive-a like, a tall stroke from the gloss 'qyu' above descends just left of it
+L02	7	OTHER	m	s1	1526	gamma-like: open V top crossing into a loop at the foot with long foot tail; alt DBL
+L02	8	4TRI	h	s1	1748	
+L02	9	INF	m	s1	2012	two loops side by side on bar; alt SBS
+L02	10	HASH4	h	s1	2282	
+L02	11	EBR_A	m	s1	2579	E-like bracket with long foot tail; alt EBR_B; overlap zone

@@ -1,0 +1,25 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	VBAR_A	h	s1	88	
+L01	2	4TRI	m	s1	304	4 over a small 3-like mark; alt 4STEM
+L01	3	VBAR_A	h	s1	506	
+L01	4	EBR_B	m	s1	709	squared E/C bracket; alt EBR_A
+L01	5	PHI	h	s1	884	
+L01	6	4TRI	m	s1	1114	4 over small 3-like mark; alt 4STEM
+L01	7	EBR_A	m	s1	1350	bracket with foot tapering into long tail; alt EBR_B
+L01	8	4TRI	m	s1	1526	alt 4STEM
+L01	9	INF	m	s1	1748	loops lying on a horizontal bar; alt SBS
+L01	10	HASH4	h	s1	1958	
+L01	11	PHI	h	s1	2147	
+L01	12	4TRI	m	s1	2342	alt 4STEM
+L01	13	OTHER	m	s1	2612	gamma-like: V/x top crossing into a closed loop at the foot; overlap zone; alt BETA
+L02	1	DBL	m	s1	149	two stacked loops on slanted stem; alt PHI
+L02	2	4STEM	m	s1	358	alt 4TRI
+L02	3	EBR_B	m	s1	608	alt EBR_A
+L02	4	C43	l	s1	850	shaped like digits 24 joined; alt 4PI
+L02	5	HASH4	h	s1	1107	
+L02	6	CA	m	s1	1316	cursive-a mark under the gloss 'qu' (large q stroke above treated as gloss)
+L02	7	OTHER	m	s1	1512	gamma-like: V top crossing into foot loop with long tail to right; same shape as L01 pos 13
+L02	8	4STEM	m	s1	1755	alt 4TRI
+L02	9	INF	m	s1	2018	loops lying on a bar; alt SBS
+L02	10	HASH4	h	s1	2282	
+L02	11	EBR_A	m	s1	2592	bracket with long foot tail; overlap zone; alt EBR_B
