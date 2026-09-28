@@ -1,0 +1,5 @@
+CONTROL known f.61 span lines, 14 cells: gain 0.255, rank 1 of 201 (best permuted 0.194, median -0.014) -> PASS
+TARGET f.108v, 14 cells: gain 0.152, rank 1 of 201 (best permuted 0.077, median 0.000) -> PASS
+TARGET f.108v, HASH4=i/x: gain 0.165, rank 1 of 201 (best permuted 0.089, median 0.002) -> PASS
+TARGET f.108r L04-L06, 14 cells: gain 0.120, rank 6 of 201 (best permuted 0.156, median -0.002) -> PASS
+TARGET f.108r L04-L06, HASH4=i/x: gain 0.183, rank 1 of 201 (best permuted 0.175, median 0.000) -> PASS

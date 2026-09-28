@@ -2657,3 +2657,24 @@ H114/H115/H119 ranks on f.108r, where the shuffled ranks are lower (mean 80.8) b
 0.776, H121 0.908) are unaffected: they score the beam's choices against known letters, not a rank. The right statistic for
 the unknown texts is the gain of real order over shuffled order under the fitted map, compared with the same gain under
 permuted maps (H127). No reading, no class change.
+
+## Campaign step H127 (28 Sept 2026, 18:32-18:34 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_seqgain.py` (statistic and gates in its docstring, pushed 8b038c6a before the run; `f61beam_seqgain_result.txt`).
+Gain = beam score of the real sign order minus the mean over 20 within-line shuffles, under a map; the fitted map's gain
+ranked among 200 permuted maps (seed 127). Letter frequency alone gives no gain, so this is the statistic H124 called for.
+
+| text | gain (fitted) | rank of 201 | best permuted | median permuted |
+|---|---|---|---|---|
+| CONTROL known f.61 span lines, 14 cells | 0.255 | **1** | 0.194 | -0.014 |
+| f.108v, 14 cells | 0.152 | **1** | 0.077 | 0.000 |
+| f.108v, HASH4 = i/x | 0.165 | **1** | 0.089 | 0.002 |
+| f.108r L04-L06, 14 cells | 0.120 | 6 | 0.156 | -0.002 |
+| f.108r L04-L06, HASH4 = i/x | 0.183 | **1** | 0.175 | 0.000 |
+
+Control PASS; **all four targets PASS (rank <= 10 of 201)**. On f.108v the fitted map's sequence gain is about twice the
+best of 200 permuted maps', under both maps: the H122 conclusion (f.108v is enciphered in f.61's cells) is restored on a
+statistic that frequency cannot produce. On f.108r the margin is thin (0.183 vs 0.175 with HASH4 = i/x; rank 6 without).
+Post-hoc sanity check, not pre-registered (run once after the result, reported as such): f.108v with its signs shuffled gives
+the fitted map a gain of -0.008 (rank 120) and 0.027 (rank 40) on two shuffles -- the statistic behaves as a null on a
+shuffled target. H128 makes that check formal. No reading, no class change.
