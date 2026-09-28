@@ -3399,3 +3399,23 @@ ids 7400-8900, 1,378 of 1,413 fetched), finding nothing on the 20 Feb letter. Co
 
 No reading, no class change; search results, not negatives about the letter's existence. Requests: loc.gov 4,
 masshist.org 2. Vision 0. Cost: about 0.5 USD for both (`--spend` 0.5 and 0).
+
+## Campaign step H61 (28 Sept 2026, to 15:20 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Question:
+after H58, does ciphertext_ms.txt's page-2 line numbering (and images/shorthand/index.tsv's seq numbers and mark
+counts) follow the leaf? Offline; the numerals of each ms line read against frame 0031's lines (the runner's look at
+H58's page-2 overlay).
+
+**Result: the transcription is right, the crop images are shifted.** ciphertext_ms.txt's page-2 lines 1-15 are the
+leaf's physical lines 1-15 in order (54 1631 ... 1801 *; the all-shorthand line; * * * * 78 1364 ...; 17 86 316 ...;
+1176 1164 ...; * 45 147 1158 ...; * * 48 1240 ...; 45 38 18 ...; 1776 1830 ...; ... 13 230 481 ...; 1110 1267 ...;
+1 1471 1480 ...; 17 1640 ... 1540 * ...; 1161 14 ...; 2 471 ...), and index.tsv's page-2 names, seq ranges and mark
+counts match those lines (e.g. L01 = 9 numerals + 1 mark = seq 188-197; L02 = 15 marks; L04 = 6 marks). So the
+position statistics built on the transcription (B27, B29, B30's positions, H3, H18's per-group work on its own crops)
+are not affected. **The error is only in the crop image files:** seven of the nine page-2 files (L01, L03, L04, L07,
+L10, L11, L13) show the physical line above the one they are named for; L02 and L06 are named right. Any join of a
+crop-based read to an ms line (B35's per-crop glyph reads against the ms mark counts; the page-2 half of the H18 and
+H15 crop work, if it used these files) is off by one line on those seven. This corrects H58's own table, which had
+called the L04 and L11 files "ok"; h58/shorthand_lines.tsv now says which file shows which line. No reading, no class
+change; nothing called new or first. Vision 0 beyond H58's overlay; requests 0. Cost: about 0.2 USD (`--spend` 0.5).
