@@ -813,3 +813,31 @@ key as read maps 35% of the signs and fails its shuffled-key control, so nothing
 question only becomes testable with a key that reads the letter (or Domnina's own Fig.1, H8). Dropped with that
 reason; the plaintext frequency argument stands on its own (q, x, z together are under 1% of Italian text, so their
 absence from a 45-row reconstruction built from a few letters is expected either way).
+
+## Campaign step H16 (28 Sept 2026, 00:46-00:49 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H16: the repository's substitution families on the 262-code
+letter, matched control first (rule 3, `tools/family_run.py`).
+
+**Done: spec written, control run, target run as a labelled non-test.** `specs/spinelli-beinecke-c1515.json` (262
+atlas-v3 codes as space-separated symbols, 25 types, it16 judge corpora, the constraints and cheap tests recorded);
+`ciphertext.txt` (the coded sequence, ten lines, header says it is not a reading). `family_run.py --family masc`:
+- **CONTROL** (it16 Italian windows of N=262 under a random simple substitution, K=20-21 letters, 3 seeds, 8 restarts):
+  recovery **0.959 (0.927-0.989)**, gate 0.6 met -- a plain substitution IS readable by the tool at this length, so
+  length alone does not excuse a failure on this letter.
+- **TARGET** masc: best score -701.9, worse than every control decode (-547 to -657); judge FAIL (language score
+  -1.259 vs real_p05 -0.964, above null_p99 -1.753); the decode is not Italian ("eiesoreieettetie..."). **Logged as a
+  non-test for the letter, not a negative**: the control is a one-sign-per-letter substitution, the letter (as coded)
+  has one symbol, HOOK, standing for several letters (22% of the text; the H14 split failed at 32.7%) and about 17%
+  probable nulls, a design masc cannot represent -- the Salviati lesson (rule 3): match the design, not only N and K.
+Both rows are in `HYPOTHESES.md` (the tool's own table) and the spec's `cheap_test_done`.
+
+**What a real test needs (H22):** a control generator that takes Italian text of N=262, applies a substitution, merges
+the signs of about six letters into one symbol and inserts about 17% nulls, then runs the same anneal -- either a
+`--param merge=6 nulls=0.17` on `tools/families/homophonic.py` (Usage 8: an option, not a private script) or the
+family `block_homophonic`/`nomenclator` if one of them already models many-to-one symbols (not checked this step). If
+that control reads under the gate, the single letter is untestable by this route at its own length, and the campaign's
+remaining routes are documents: Domnina's Fig.1 (H6/H8/H23) and the reproduction order for the enciphered years (H17).
+
+**Controls:** the masc control above (0.959). No reading, no class change. **Cost:** three family_run invocations,
+seconds of CPU -- recorded as 1.0 USD (est 5). No requests. No credentials, no AskUserQuestion, rule 10 wording.
