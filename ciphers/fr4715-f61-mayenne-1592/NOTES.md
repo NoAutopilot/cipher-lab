@@ -3052,3 +3052,13 @@ distinguished by transcription grade, reconciled share or coverage**: L05 has th
 of all seven; only L02 carries more HASH4 (4, dropped by the map) than the rest. So the weak rows are not a re-read target on
 this evidence; the likelier causes (proper names, figures or code words inside the enciphered stretch, or single-row noise at
 about 40 signs) cannot be told apart without the gloss (ASKS 89). No reading, no class change.
+
+## Campaign step H158 (28 Sept 2026, 19:5x-20:08 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61family_boot.py` (design scaled and fixed in its docstring, pushed fc5b65e2 before the run;
+`f61family_boot_result.txt`): each family leaf's lines resampled 20 times, the fitted 14-cell map's sequence gain ranked
+among 20 permuted maps each time. **f.97r ROBUST (19/20), f.188r ROBUST (20/20); f.101r EDGE (17/20), f.124r EDGE (17/20);
+f.106r OUT (8/20), f.274 OUT (6/20).** H129's six "in f.61's cells" hold robustly for the two leaves of f.61's cipher family
+with the most text per line pattern (f.97r, f.188r), nearly for f.101r and f.124r, and not for the two short leaves (240 and
+167 signs), where the rank-1 of H129 was not robust -- a length limit, not evidence of another key. For the family worker.
+No reading, no class change.

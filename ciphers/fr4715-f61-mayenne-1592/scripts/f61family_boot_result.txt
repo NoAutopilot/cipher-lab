@@ -1,0 +1,6 @@
+f97r: rank 1 of 21 in 19/20 -> ROBUST
+f101r: rank 1 of 21 in 17/20 -> EDGE
+f188r: rank 1 of 21 in 20/20 -> ROBUST
+f124r: rank 1 of 21 in 17/20 -> EDGE
+f106r: rank 1 of 21 in 8/20 -> OUT
+f274: rank 1 of 21 in 6/20 -> OUT
