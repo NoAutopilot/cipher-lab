@@ -39,6 +39,14 @@ family Tomokiyo lists (fr.3982, fr.3983, fr.3984, eleven leaves, three with peri
 key from them while the campaign runner keeps working its rows; the Armstrong runner moved to this account
 (session_01R2T5qwd7NBMWGnjRtj8ieX, :25) when account 2's hit 620k context.
 
+**Armstrong, 28 Sept 2026 about 00:40 UTC (owner's direction).** The owner's ChatGPT runner works armstrong-madison-1808
+as a parallel sprint of its own and is not to be influenced: its checkpoint PRs are landed verbatim and closed with the
+landed commit only, no ROOM line is addressed to it, nothing is written into second-opinions/ by us, and its files are
+read as leads, never as verdicts. Our Armstrong work runs alongside on both accounts: the owner-account runner takes the
+shorthand (H24), account 2 takes the correspondent pools (ARM-CORR: H25 Monroe Papers, H26 Pinkney and Erving) through
+the queue; the owner's desk holds ASKS 80 (Brooklyn private Livingston letter, moved up) and 66 (editors, follow-up in a
+week); ASKS 77 (Brant Box 37) is deprioritised because that key family is the printed-form type and the target is not.
+
 ## Scoreboard (the orchestrator updates at each check-in)
 
 | UTC | Campaign | Steps run | Spent | Hypotheses open / done / dropped | Verified readings |
