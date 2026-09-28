@@ -1,0 +1,22 @@
+text	verdict	words_found	note
+01	NONE		l/n/r/i heavy, no words
+02	NONE		no words; f/p/m/o heavy
+03	NONE		'&' recurs among c/l/r; nothing readable
+04	NONE		s/r/d heavy; nothing
+05	NONE		nothing
+06	NONE		nothing beyond chance 'pe','ia'
+07	NONE		z/g/r heavy; nothing
+08	NONE		i/o heavy; nothing
+09	SOME	che	'che' in L07 'tqurtooequicheqsr' and L08.1 'cheq'; likely chance
+10	NONE		English-looking 'the' runs only; no Italian
+11	NONE		nothing
+12	NONE		nothing
+13	NONE		nothing
+14	NONE		nothing
+15	LANG	tutto, questa, casa, credo, tanto, fatto, difficulta, qualche, intencione, di qua, delle, vivendo(uiuendo), che	many connected Italian runs: 'tutto', 'intencione', 'questa casa di qua', 'credo', 'tanto di', 'fatto ... difficulta', 'qualche', 'uiuendo'
+16	NONE		nothing
+17	NONE		nothing
+18	NONE		nothing
+19	NONE		nothing
+20	NONE		nothing
+21	NONE		nothing

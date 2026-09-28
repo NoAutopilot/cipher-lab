@@ -43,6 +43,30 @@
     "M",
     "L"
    ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f21v.tsv",
+   "key": [
+    "harvest/key_f11.tsv",
+    "harvest/key_extra.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f21v.txt",
+   "tokens": "harvest/reading_f21v_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exceptions": "harvest/exceptions_f21v.tsv"
   }
  ]
 }

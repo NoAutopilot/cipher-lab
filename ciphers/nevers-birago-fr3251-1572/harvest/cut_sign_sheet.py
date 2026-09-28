@@ -42,7 +42,9 @@ cells = []
 for (x0, y0, x1, y1) in blobs(40, 235):
     cx = (x0 + x1) / 2; col = min(COLS, key=lambda c: abs(c[1] - cx))
     cells.append({"value": col[0], "box": [x0 - 3, y0 - 3, x1 + 4, y1 + 4], "kind": "letter"})
-for (x0, y0, x1, y1) in blobs(300, 350):
+for (x0, y0, x1, y1) in blobs(307, 352):
+    if x1 - x0 > 60 and y1 - y0 < 8:  # the row underline, not a sign
+        continue
     cx = (x0 + x1) / 2; col = min(WORDS, key=lambda c: abs(c[1] - cx))
     cells.append({"value": col[0], "box": [x0 - 3, y0 - 3, x1 + 4, y1 + 4], "kind": "word"})
 # the digit codes 85/86/89 are two blobs each: merge same-word blobs

@@ -1,0 +1,336 @@
+=== TEXT 01 ===
+L01	dicnslunorniorimqlqeanrargrqrani
+L02.1	lpenilmae
+L02.2	on
+L03	lnriloqiosaaoiaapen&lidqnsnlslrnauln
+L04	siadrnidlnidln
+L05	sladnadimaairirlllinarqdilin
+L06.1	la
+L06.2	nllnrnhlnasnas
+L07	snnasillnnql&lnmsoinnsqlqanmilnshr
+L08.1	l&ln
+L08.2	n
+L09	nr_qnnqalnnsmrlnllrsrse_r
+L10	unslamraql_i
+L11	q_amlqeagd_isnaiprllmlslmqn
+
+=== TEXT 02 ===
+L01	uqonlsraotrgapaispsmfaorprdrshlr
+L02.1	pdmamifrm
+L02.2	to
+L03	rlamgsgnlfgfdmofpqsonormnlaoallpo
+L04	nrafurqmrqpoa
+L05	nmfufqrilaharrpmpafrsqrpa
+L06.1	mf
+L06.2	oplcoremfoft
+L07	oflposmfpointosmsfipoes
+L08.1	mfpo
+L08.2	o
+L09	c_sosfamoirmamprhpnm_r
+L10	sonmforsm_
+L11	s_olsmfdu_occlamomnpiso
+
+=== TEXT 03 ===
+L01	rrecfglicsuqretirsc&cmlicuntupucfsqlr
+L02.1	&dmqrisllm
+L02.2	sc
+L03	lfqrecreslernldmco&raccclfcisi&c
+L04	lrilruqraqrla&ci
+L05	lrqlarlssndfriul&&rqilucarl&rqi
+L06.1	l
+L06.2	c&fqmclqqllcln
+L07	lcqllrf&cqco&cssrqclcclqsr&clqu
+L08.1	o&c
+L08.2	c
+L09	qm_ccqcliqclsuqi&ulftm_u
+L10	gclunc_r
+L11	c_nfcmlpr_rlcnrcmfi&scc
+
+=== TEXT 04 ===
+L01	rsotsqlropdsltrssmsarpetpcpiudls
+L02.1	mgsdsrrsals
+L02.2	o
+L03	lsdsrlsltualseagscmsttlrtsrunm
+L04	tlsrarpdstrdsltmr
+L05	trardatslsuesisrplmrmsdraptslmsdr
+L06.1	ra
+L06.2	msdrlnrdada
+L07	ddadssmdrcmstosddradssmdnc
+L08.1	rcm
+L08.2	
+L09	dr_darrddsprdrrmpditts_p
+L10	qtraiper_s
+L11	_eissacr_sdesersrrirtms
+
+=== TEXT 05 ===
+L01	inrahuprramainoscrnouqurdraalcaoaugirn
+L02.1	qtrinrmodrr
+L02.2	ma
+L03	ruisnmounohdonldtrasqnpuaharmhusarqqa
+L04	hrnrdiainpminrpqar
+L05	hmdiidpnroltgnrarqmqnirdaupnrqnir
+L06.1	md
+L06.2	aquisarmidead
+L07	eaidenuqaiumsqaohmniaeumudionqaef
+L08.1	msqa
+L08.2	a
+L09	is_uaiudrmiaeoamirmqaegchr_a
+L10	pahmdaalum_n
+L11	u_lauurdoi_nealnnsurmamhqoua
+
+=== TEXT 06 ===
+L01	oesaaurmqatgpelfqeqsisqagtfgdgsmrpme
+L02.1	icpeqiqm
+L02.2	ta
+L03	mupeilselarletcaziehsaaamiauaqrfia
+L04	ameqogpehipemhiaq
+L05	aiophemqrtdmeqgmiiiepqgshemiepq
+L06.1	i
+L06.2	aiupsamripeau
+L07	eapeeuiapsiziaqatepaesispqeiaers
+L08.1	izia
+L08.2	a
+L09	ps_sapsqipaeqgipqiigemfa_g
+L10	raaiogtsi_e
+L11	s_tousdo_eeateasuqioiaiqsa
+
+=== TEXT 07 ===
+L01	guadqpmcaeuzgreqcgrfpffcausqurufiozmg
+L02.1	pmfzgcrmf
+L02.2	ea
+L03	mqzegrfgrdorgsmfarpgofadamdqeacolpa
+L04	dmgcuzgozgmopac
+L05	dzogmrosligcumppgzcufogmpgzc
+L06.1	
+L06.2	apqzlamazrac
+L07	razrgqpazfrpardegzarffzrgparah
+L08.1	rpa
+L08.2	a
+L09	zl_fazfczarruzcpuriqdf_u
+L10	padousf_g
+L11	f_soqffr_grasgelqcodprfa
+
+=== TEXT 08 ===
+L01	moriiepllieiofulosscolieguesespfilo
+L02.1	aciolqolc
+L02.2	i
+L03	leioqfsofifofogoacitomsiiilqieilfli
+L04	ilolomeiomqiolmil
+L05	iqomiomolfghpolelqoiloesmoloil
+L06.1	qo
+L06.2	ieioiltqioniol
+L07	niionoeiisqtiioiinsqsoioint&
+L08.1	qti
+L08.2	i
+L09	io_siisolqiineqilqenpuic_e
+L10	piiqoregsq_o
+L11	s_grescosm_onigodoelqrqisi
+
+=== TEXT 09 ===
+L01	&opqronosqazuotlrsosieidrsqzprzcziauoo
+L02.1	eduoscsrod
+L02.2	aq
+L03	oouloctiotrartoprdqheoiiqrqocrolqsaqeq
+L04	roosr&zuoicuooieqs
+L05	rcr&urioosaposzoeceousrziiooeous
+L06.1	cr
+L06.2	qeousqolcurtqrt
+L07	tqurtooequicheqsraouqticirusoeqtln
+L08.1	cheq
+L08.2	q
+L09	us_iquirscuqtszcusceztrrd_z
+L10	nqrcrfzpic_o
+L11	i_pfoidrc&_otqpoisoscfcresiq
+
+=== TEXT 10 ===
+L01	strentpaeaiqtslmatahaiaeiomioiardqpt
+L02.1	hriqtapi
+L02.2	ae
+L03	ptqltsatsndstorierhteaenepntleadqhe
+L04	nptasiqteqtpehea
+L05	nsqetpdofrtaiphhtqaiaetphtqa
+L06.1	
+L06.2	ehtqepeqgeo
+L07	geqgttheqarhenatqegaaqtheges
+L08.1	rhe
+L08.2	e
+L09	q_aeqaaqegiqahigrmni_i
+L10	endioa_t
+L11	a_odtaios_tgeotstadnhae
+
+=== TEXT 11 ===
+L01	snhtcqidltnuqntrlnclsllsltuorurulmtqdn
+L02.1	solqnlcsdl
+L02.2	nt
+L03	dqqtnlnctsnosoltpsnoltctdcqttltdst
+L04	cdnlssuqnoqndostl
+L05	cssqsondctozmnludssnqlsulondsnql
+L06.1	s
+L06.2	tsqqstdeqsrtsa
+L07	rtqsrnqstqlpstccnnqtrllsqcnstrei
+L08.1	pst
+L08.2	t
+L09	qs_ltqlslqtrcuqlsurmrcl_u
+L10	itcseuol_n
+L11	l_oeqllsrs_nrton&sqlecsclt
+
+=== TEXT 12 ===
+L01	cstecfseonsrsdsrl&lteidllsfns
+L02.1	&atnsrt
+L02.2	oe
+L03	fnssrlsrcfrsiatei&szlececfsefa&e
+L04	cscnsznsz&e
+L05	ccnzsrfipss&&snlzs&sn
+L06.1	
+L06.2	e&fnueenrea
+L07	renrsf&enli&ercosnerllnrs&erei
+L08.1	i&e
+L08.2	e
+L09	nu_lenlnerrn&rsdct_
+L10	secpil_s
+L11	l_ipfltlc_sreiscufpc&rle
+
+=== TEXT 13 ===
+L01	mlzim&lrzalictgreppotrzlogldlpfnil
+L02.1	soiretlo
+L02.2	az
+L03	lmitcpcintcotsozupzizlimtzrnrz
+L04	ilrtmliilzr
+L05	itmitlenofrllirtlplir
+L06.1	t
+L06.2	zmiszloiteztu
+L07	ezitemzipuzeiaizepptiezeoa
+L08.1	uz
+L08.2	z
+L09	is_pziptrizeelirlefgio_l
+L10	&zitclop_
+L11	p_ocmpotdm_ezossmrciepz
+
+=== TEXT 14 ===
+L01	oimeonrmgseolunoezizlumstnsaszscero
+L02.1	ihleoqeurl
+L02.2	gm
+L03	roeuoqlzoleculotuhlmriodzmemrqeoumcdim
+L04	erouseodqeordim
+L05	equeudorectssosriqioeuszdorioe
+L06.1	qu
+L06.2	mioepmrrqeuomur
+L07	omeuoooimezqrimeegoemozqzueeoimor
+L08.1	qrim
+L08.2	m
+L09	ep_zmezuqemoesqeqisosnel_s
+L10	nmequqstzq_o
+L11	z_tqozlua_oomtompoqqqeiezm
+
+=== TEXT 15 ===
+L01	lesacardahenensedeltuttodaemee&etcinre
+L02.1	uptnedilort
+L02.2	ha
+L03	ranseintencionemoptaquestacaricasadiqua
+L04	credolenesinersuad
+L05	ciolnoserlimlcederuiuendoetseruend
+L06.1	io
+L06.2	auanfarminoraog
+L07	ranoreauantiqualchenartitonleuarms
+L08.1	iqua
+L08.2	a
+L09	nf_tantodinarleindiuercect_e
+L10	aciofemti_e
+L11	t_mfatto&l_eramefadificulta
+
+=== TEXT 16 ===
+L01	dsmrahzsarlssoroasmoqoliarseospsoccss
+L02.1	qrlsaqmisl
+L02.2	lr
+L03	shrsqoosoacioseirlrqsforarsqahrracfqr
+L04	assaidssfqssfqra
+L05	aqidifssmceccsassqqqsaisofssqsa
+L06.1	qi
+L06.2	rqhrsaqilrig
+L07	lrilshqroqqrmalsrloqoimsqrlar
+L08.1	qqr
+L08.2	r
+L09	_oroiaqrlmsqaqqslcoal_s
+L10	zraqilseoq_s
+L11	o_elholipd_slresshaqlqaqmor
+
+=== TEXT 17 ===
+L01	clsprdalqcifadcsslsg&dlualolsrpqc
+L02.1	ligqcdrs&g
+L02.2	a
+L03	pqfcriscisp&icu&ighlcissrspfdprl
+L04	scd&lqcirqcild
+L05	sr&q&icspuorcdllrlcqd&lsiclcqd
+L06.1	r&
+L06.2	lpqasrq&t&f
+L07	tq&tcplqsrhlssacqtsrs&qscltsm
+L08.1	rhl
+L08.2	
+L09	qa_sqs&drqtslrqdrlltrasg_l
+L10	rsr&nlusr_c
+L11	s_unpsg&o_ctucoapdrnrslss
+
+=== TEXT 18 ===
+L01	pougqnscstftesle&eqcssiesdseottn
+L02.1	&mqtsalcnq
+L02.2	c
+L03	ngttafefutcficmqs&meunaugtst&
+L04	unscpstmatnm&s
+L05	uacptcmnltirossn&a&tscsemn&ts
+L06.1	ac
+L06.2	&gtenratclcr
+L07	ltclg&teas&luctleaectl&lrs
+L08.1	as&
+L08.2	
+L09	te_etecsatllsatsa&sloeuq_s
+L10	quacpsiea_
+L11	e_ipgeqcdp_liiegsapau&le
+
+=== TEXT 19 ===
+L01	crdulsriueirzieira&p&saiusec&doirr
+L02.1	posiriqaars
+L02.2	eu
+L03	rsiirqz&rzloazrsaosurprl&ulurqlsiuiogpu
+L04	lrriacirlqirrlpui
+L05	lqacialrraosudrirpqpriia&lrrprii
+L06.1	qa
+L06.2	upsiurlqiaauar
+L07	auiaarspui&qrpualeriua&q&aiarpual
+L08.1	qrpu
+L08.2	u
+L09	i_&ui&aiqiuaaqiiqpadels_
+L10	ulqams&q_r
+L11	&_sms&sacc_rausrssiqmqlpa&u
+
+=== TEXT 20 ===
+L01	lrelsnnglraorzsagrtaaqtglasaaaaaironr
+L02.1	lqorgettnq
+L02.2	rl
+L03	nnosrezarzsrtzrstlqliralslnesnslgrl
+L04	snrgtlaoreornlg
+L05	setlotrntrsirganerogtaarnrog
+L06.1	et
+L06.2	lnocln&eotiltu
+L07	ilotirnloaeiltsrroliaeatotrli&h
+L08.1	eil
+L08.2	l
+L09	oc_aloatgeolitaeogeaiiasq_a
+L10	lsetfasae_r
+L11	a_sfnaqtal_rilsrocngefestal
+
+=== TEXT 21 ===
+L01	ushnspshr&clmfscdcdalsh&tf&n&dmscp
+L02.1	caacsqclpa
+L02.2	rh
+L03	pcmqldlnslltlaahrcdhnhpqnmhssdch
+L04	npslu&cqcpchs
+L05	nqluclpcstams&pcqccsl&dpccs
+L06.1	ql
+L06.2	hccohprqclehlf
+L07	ehclechcdqrchcnrchedqdlcccherr
+L08.1	qrch
+L08.2	h
+L09	co_dhcdlsqchec&qcsqc&emfna_&
+L10	shnqlt&tdq_
+L11	d_ttdalnu_ehtqosqtqnccdh
+

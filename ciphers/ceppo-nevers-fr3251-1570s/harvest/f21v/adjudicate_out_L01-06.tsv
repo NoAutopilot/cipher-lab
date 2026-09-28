@@ -1,0 +1,28 @@
+passage	pos	sign_id	conf	note
+L01	3	S77	M	6 with dot at upper left and a slash above; slash stroke prominent, S74 has only a dot
+L01	4	S80	H	8 with clear bar through waist (S65 is plain 8, no bar)
+L01	10	S80	M	8 with bar through waist plus faint tick above
+L01	11	S61	M	9/q with plain stem ending in flat foot; no crossing bar as on S94
+L01	15	S49	M	slash between two dots, no crossing bar (S73 has one); slash steeper than sheet S49
+L01	27	S80	H	8 with long bar through waist
+L02.2	2	S80	H	8 with bar through waist, at right margin edge
+L03	7	S49	M	slash between two dots, no crossbar
+L03	10	S49	M	slash between two dots, no crossbar
+L03	14	S49	M	slash between two dots, no crossbar
+L03	20	S80	H	8 with long bar
+L03	24	S10	H	L: vertical stem, long base line, dot inside right; matches S10
+L03	26	S80	H	8 with long bar
+L03	28	S80	H	8 with long bar
+L03	34	S80	H	8 with bar through waist and dot at left
+L03	39	S80	M	8 with bar and small left dot, next to margin
+L04	10	S10	H	L with stem, base line and dot
+L04	15	S10	H	L with stem, base line and dot
+L04	17	S80	M	8 with short bar through waist
+L05	7	S10	H	L with stem, base line and dot
+L05	13	S40	M	open hooked stroke on left plus separate 3-shaped tail; no closed loop as on S32
+L05	28	S10	H	L with stem, base line and dot
+L06.2	1	S80	M	8 with bar through waist
+L06.2	6	S80	M	8 with bar through waist
+L06.2	12	X_THETA2	M	oval crossed by two parallel bars (faint third line), not S60/S69 single bar
+L06.2	13	S80	H	8 with long bar
+L06.2	15	S13	M	oval with single bar mostly inside, cut by margin; smaller than S69 with no long loop bar

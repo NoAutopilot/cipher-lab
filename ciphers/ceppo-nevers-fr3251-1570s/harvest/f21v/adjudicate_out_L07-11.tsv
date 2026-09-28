@@ -1,0 +1,14 @@
+passage	pos	sign_id	conf	note
+L07	10	S23	M	small caret/A-shape with dot beneath, smaller than the plain lambda S97 at pos 7
+L07	27	S23	M	crossbar A shape (not lambda) with dot after
+L07	34	S26	L	2 with trailing dash at foot and small tick above; no underline as thick as S26 so weak
+L09	1	S23	M	caret with dot beneath, no lambda foot
+L09	3	X_NEW	M	reversed 3 / mirrored epsilon open to left with central dot; not a barred oval so not S13
+L09	5	S80	M	8 with faint crossing bar
+L09	6	S23	M	caret with dot beneath, same as pos 1
+L09	17	S23	M	small caret with dot inside, same form as pos 1
+L10	6	S69	M	theta with bar running through and beyond oval on both sides
+L11	2	X_NEW	L	u-shaped with i-like second stroke and overbar; not n-like S25
+L11	4	S69	M	oval with bar extending both sides through it
+L11	9	S65	M	clean 8, no bar visible in the fully shown crop
+L11	22	S69	M	theta oval with bar through, extends both sides
