@@ -2560,3 +2560,21 @@ value that hurts. Four values have now been tried on the same 201-map null, so r
 single pre-registered rank 1 (roughly a 4x look-elsewhere factor); the permutation null moves with the value, which partly
 controls for a value simply being easier French. Suggestive, not established: H119 replicates i/x alone on a fresh
 1000-permutation null. No reading, no class change.
+
+## Campaign step H119 (28 Sept 2026, 18:17-18:18 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61ngram108r_repl.py --hash4-ix` (the H115 design, option pushed 2bbd3d9a before the run;
+`f61ngram108r_repl_ix_result.txt`): HASH4 = i/x added to the 14-cell map, which then joins the permuted classes; the fresh
+1000-permutation null of H115 (seeds 115/116).
+
+- Control, known f.61 span lines (their one HASH4 sign now included): fitted -0.918, **rank 1 of 1001** -> PASS.
+- **f.108r L04-L06 pooled: fitted -1.013, rank 1 of 1001** (best permuted -1.046, 10th -1.121) -> **gate (<= 10) PASS**.
+- Per line: L06 alone rank 1, L05 rank 13, L04 rank 171 of 1001.
+
+Weight for the verifier: the value i/x was chosen as the best of four on H114's seed of this same text (H118), so the fresh
+null guards against seed luck, not against that choice; with four values tried, rank 1 of 1001 is roughly P <= 0.004 after
+the look-elsewhere factor. Read with H116 (the beam's within-pair choices 0.776 right on the known spans), this is the first
+model-free, controlled sign that f.108r L05-L06 decode toward French under f.61's cells plus HASH4 = i/x -- a family-key
+fact about f.108r (HASH4 as the bare-hash i, as H98 found on the period-glossed leaves), not a reading of f.61 or of f.108r.
+The judge calls (H107, H112) saw no French on the same rows; the disagreement stands. H120 commits the beam's resolution under
+this map as a second pre-registered prediction for H64 before the ASKS 88 gloss lands. No class change.

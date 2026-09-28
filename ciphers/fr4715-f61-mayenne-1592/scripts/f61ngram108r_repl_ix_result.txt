@@ -1,0 +1,6 @@
+CONTROL known f.61 span lines: fitted -0.918, rank 1 of 1001 (best permuted -0.983, 10th -1.035) -> PASS
+TARGET f.108r L04-L06 pooled: fitted -1.013, rank 1 of 1001 (best permuted -1.046, 10th -1.121, median -1.343)
+  L04 alone: fitted -1.126, rank 171 of 1001 (median permuted -1.372)
+  L05 alone: fitted -0.946, rank 13 of 1001 (median permuted -1.324)
+  L06 alone: fitted -0.969, rank 1 of 1001 (median permuted -1.349)
+GATE H115 (rank <= 10 of 1001, control also): PASS
