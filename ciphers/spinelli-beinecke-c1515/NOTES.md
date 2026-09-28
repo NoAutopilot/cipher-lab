@@ -627,3 +627,44 @@ H6 goes to a `needs: doc` branch ("web.archive.org back online") rather than bei
 offline host (good-citizen rule: no retry loop); the next runner that finds IA answering flips it back to `nobody`.
 
 **Cost:** four curl calls -- recorded as 0.2 USD (est 0.5). No credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H7 (28 Sept 2026, 00:31-00:36 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H7: the Archives at Yale item-level record and finding aid for
+sender, recipient and date corroboration or a transcription note.
+
+**Done.** `archives.yale.edu/repositories/11/archival_objects/2787659` answers curl with 403 but renders in headless
+Chromium (`tools/browser_fetch.js`, first try); text saved to `sources/archives-yale/2787659_spinelli_1519-09-07.txt`.
+It repeats the Beinecke record's title, dates the item **1519 Sep 7**, places it Spinelli archive (GEN MSS 109) >
+Spinelli family papers I > Spinelli Family Papers > Filze 161-168 "Lettere" > **Filza 163**, links the digital object
+(218136 -> catalog 10844890, our three canvases) and carries **no transcription or decipherment note**. The parent
+Filza 163 page (2785151) answered 503 twice (one retry after a pause; not hit again). The collection's PDF finding aid
+(`ead-pdfs.library.yale.edu/11076.pdf`, 4.6 MB, 357 pages, one fetch) is saved as
+`sources/archives-yale/11076_spinelli_archive_finding_aid.pdf` with its text extracted by PyMuPDF
+(`..._finding_aid.txt`, 27,734 lines) -- a script read it, per Usage 2.
+
+**What the finding aid adds (pp.139-142 of 357):**
+- Filza 163 (b. 123, ff. 2462-2467) is a run of Tommaso Spinelli's letters to "il Sig. Canonico Leonardo suo
+  fratello" -- **sender and recipient corroborated as brothers**, Tommaso writing as royal orator (1514 Ghent, 1517
+  London: "se ne vadi in Spagna per suo Oratore") -- with FOUR Barcelona letters of 1519: 24 Jan (2pp.), 29 May (4pp.),
+  6 Jul (4pp.) and **7 Sep (4pp., "part in cipher")** -- ours, f. 2466. The finding aid's "4pp." for a 3-canvas
+  digitisation matches H1's reading (the address leaf's blank side is the fourth page).
+- The phrase "part in cipher" occurs exactly TWICE in the whole 357-page finding aid: our letter, and **b. 126,
+  ff. 2560-65: "Spinelli, Piero. 30 letters; Anversa, Bruggia, Rignalla, Venezia. 90pp. part in cipher. 1514-26"**,
+  in the section "Lettere scritte...al...Leonardo Spinelli". The same section holds **b. 126, ff. 2566-87: "Spinelli,
+  Tommaso. 86 letters; ... Barchenonia (Barcelona), Seragosa, Villafrancha ... 254pp. 1492-1522"** -- Tommaso's own
+  letters to Leonardo, the correspondence Domnina describes as enciphered from 3 January 1515 onward, catalogued
+  without a per-item cipher flag. This is the **sign pool** the selection rule asks for (CLAUDE.md pipeline 3: one
+  sender, office and key family with 2,000 or more signs): 116 letters, 344 pp., of which an unknown share carries
+  cipher in the brothers' key. None of it is known to be digitised (only the Filza 163 item is online per Tomokiyo
+  and per the Archives at Yale digital-object link).
+
+**Next (table):** H18 (runnable): query the Beinecke digital catalogue for every digitised GEN MSS 109 item, to see
+whether any other Filza 163 / b. 126 letter is online (more ciphertext in the same hand would change the whole
+campaign); H17 (`needs: person`): a REQUEST.md / ASKS row for a Beinecke reproduction quote of b. 126 ff. 2560-87
+(Piero's 30 "part in cipher" and Tommaso's 86), the pool -- the first one that goes on the card only at stage 2,
+which this target has (check-solved verdict INTAKE-SPINELLI, 27 Sept).
+
+**Requests this step:** archives.yale.edu 4 (1 curl 403, 3 browser renders: item page 200, Filza page 503 x2),
+ead-pdfs.library.yale.edu 2 (HEAD, GET). No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
+**Cost:** browser and curl only -- recorded as 0.5 USD (the est).
