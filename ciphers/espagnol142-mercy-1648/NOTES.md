@@ -1916,3 +1916,23 @@ variants aside), 7 of 9 letters matching at S-graded tokens with no mismatch. **
 candidate**, with the window caveat stated. What it implies, untested here: 72 is a syllable code (do), which fits H2's
 nomenclature class; the next row (H42) tests the independent half of the same hypothesis ("su camarero mayor" after
 the name). No key.tsv, token, grade or class change; nothing here is a reading.
+
+## Campaign step H42 (2026-09-28 15:28-15:08 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Borderline; not a reading.** The independent half of H41's hypothesis: after the
+Burgsdorf candidate, r17 reads "s [25] c m a r e [52] m a y o r" -- "su camarero mayor" (Oberkämmerer) if 25 = u,
+one a is unwritten and 52 is a syllable (ro). Title list built before scoring (`h42/titles.py` -> `titlelist.tsv`): every
+word X in "X mayor" in the es17c7 Cartas corpus, 4-12 letters, 3+ occurrences (37 titles; camarero itself is not among
+them at that threshold -- camarera is -- so camarero was added as the tested item). Each phrase "su X mayor" aligned to
+r17-r18 with H41's scorer (S tokens +1/-1, M and nomenclature tokens one-or-two-letter wildcards, no deletions for any
+candidate); `h42/result.log`.
+
+**camarero: fit 9 at r17:3, rank 1, tied with camarera** (the same title, differing only in the letter that falls on
+the 52 wildcard); next correo 7 (correo mayor, also a real office), then guarda / alferez 5. P (list phrases fitting at
+least as well) = 2/38 = **0.053 -- the pre-registered P < 0.05 is not met by the strict count**; with camarera merged as
+a gendered variant of the same title (as H41 kept OCR variants apart but they are one name) it is 1/37 = 0.027. The list
+is small, so P cannot resolve finer than about 0.03. Read with H41: the name that best fits the stretch is the Elector's
+chief chamberlain, and the title that best fits the next words is chief chamberlain -- two fits that agree, one clearing
+its gate and one on the line. Both assume nomenclature codes stand for syllables (72 = do, 52 = ro), which no period key
+has confirmed. **Crib candidates for the orchestrator and the Brussels register comparison, not a reading**; no key.tsv,
+token, grade or class change. REGISTER-CHECKLIST.md gains the two syllable values to check.

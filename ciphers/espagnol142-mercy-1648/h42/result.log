@@ -1,0 +1,2 @@
+corpus titles n>=3 + camarero: 38 phrases "su X mayor" on r17-r18; camarero fit 9 at r17:3; rank 1; P(>=) 0.053
+ top 10: [('camarera', 9, 'r17:3'), ('camarero', 9, 'r17:3'), ('correo', 7, 'r17:3'), ('guarda', 5, 'r17:3'), ('alferez', 5, 'r17:3'), ('alcalde', 3, 'r17:3'), ('capilla', 3, 'r17:3'), ('colegio', 3, 'r17:3'), ('capitan', 3, 'r17:3'), ('tapicero', 3, 'r17:3')]

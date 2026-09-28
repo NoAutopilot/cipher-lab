@@ -48,3 +48,9 @@ Two of these the text itself settles against the search: 24 = h gives "de Cheure
 blind reader proposed h independently), where n gives neither. The other three are open both ways ("que el [101]
 uenga/tenga con uos"; "tres [r]egimient-" wants both an s and an r from one token; "propondreis de/te si"), so the
 register decides them.
+
+## Syllable values implied by the Burgsdorf crib candidate (H41, H42)
+If the stretch r16-r17 names "Burgsdorf, su camarero mayor" (Konrad von Burgsdorff, the Elector's Oberkämmerer),
+code 72 stands for "do" and 52 for "ro" (not z and y as key.tsv's M grades have them). Check the register's
+nomenclature for 72 and 52, and for 48 and 65 in the same class. H41 passed its name-list test (unique best of 402, P
+0.002 on the unread stretch); H42 was borderline (P 0.053 strict, 0.027 with camarera merged).
