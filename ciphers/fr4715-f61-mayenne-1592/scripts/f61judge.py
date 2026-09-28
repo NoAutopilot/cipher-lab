@@ -24,9 +24,15 @@ def read_pass(path):
     for r in csv.DictReader((l for l in open(path) if not l.startswith("#")), delimiter="\t"):
         lines.setdefault(r["line"], []).append(r["sign"])
     return lines
-def maps():
+# H25 (28 Sept 2026, runner session_01J8hunWPcE7QYcpCx59CUHV, audit 1's ask): `build known --order-seed N --perm-seed N` writes
+# f61judge_known_sN_sets.txt / _key.json with FRESH cell permutations (seed N) in a FRESH order (seed N); `score known_sN`
+# scores that verdict file. With no seed options every output of H16 is reproduced byte for byte. Scores are printed with
+# one decimal (the audit found the H16 result files rounded 2.5 to 2; the committed H16 files are not rewritten).
+def opt(name, default):
+    return int(sys.argv[sys.argv.index(name) + 1]) if name in sys.argv else default
+def maps(perm_seed=1):
     labs = sorted(CELLS); base = {l: CELLS[l] for l in labs}
-    rng = random.Random(1); out = [base]
+    rng = random.Random(perm_seed); out = [base]
     for _ in range(20):
         v = [CELLS[l] for l in labs]; rng.shuffle(v); out.append(dict(zip(labs, v)))
     return out
@@ -34,8 +40,9 @@ def render(lines, cmap):
     return {line: " ".join(f"[{cmap[c]}]" for c in seq if c in cmap) for line, seq in lines.items()}
 def build(tag):
     src = f"{HERE}/passA_classes.tsv" if tag == "known" else f"{HERE}/read_call_U.tsv"
-    lines = read_pass(src); ms = maps()
-    order = list(range(21)); random.Random(7).shuffle(order)
+    lines = read_pass(src); ps, os_ = opt("--perm-seed", 1), opt("--order-seed", 7); ms = maps(ps)
+    order = list(range(21)); random.Random(os_).shuffle(order)
+    if ps != 1 or os_ != 7: tag = f"{tag}_s{ps}" if ps == os_ else f"{tag}_p{ps}o{os_}"
     key = {}; txt = []
     for k, mi in enumerate(order):
         lab = f"SET-{k+1:02d}"; key[lab] = mi
@@ -52,7 +59,7 @@ def score(tag):
     tgt = [l for l, m in key.items() if m == 0][0]
     rank = 1 + sum(1 for l, v in sc.items() if l != tgt and v >= sc[tgt])   # ties count against the target
     out = [f"{tag}: target {tgt} scored {sc[tgt]:.1f}; rank {rank} of 21 (ties against the target)",
-           "all scores: " + " ".join(f"{l}:{sc[l]:.0f}" for l in sorted(sc, key=lambda l: -sc[l])),
+           "all scores: " + " ".join(f"{l}:{sc[l]:.0f}" if "_s" not in tag and "_p" not in tag else f"{l}:{sc[l]:.1f}" for l in sorted(sc, key=lambda l: -sc[l])),
            "target reading as given by the judge: " + next(r["reading"] for r in rows if r["label"].strip() == tgt),
            f"GATE H16 ({tag}): rank 1 of 21 -> {'PASS' if rank == 1 else 'FAIL'}"]
     open(f"{HERE}/f61judge_{tag}_result.txt", "w").write("\n".join(out) + "\n"); print("\n".join(out))
