@@ -1,0 +1,284 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	PLAIN	m	s1	69	et
+L01	2	PLAIN	m	s1	311	tant
+L01	3	PLAIN	l	s1	541	s (clear letter, reading uncertain)
+L01	4	PLAIN	l	s1	656	y? (clear word fragment, reading uncertain)
+L01	5	PLAIN	h	s1	1208	faudra
+L01	6	PLAIN	m	s1	1656	qu (with superscript abbreviation; que?)
+L01	7	PLAIN	m	s1	2047	nous? (clear word, reading uncertain)
+L01	8	HASH4	m	s2	80	dense crossed cluster
+L01	9	VBAR_B	m	s2	218	r-like triangle with foot bar and trailing dash
+L01	10	C43	h	s2	368	
+L01	11	PHI	m	s2	529	loops on stem; alt INF
+L01	12	HASH4	h	s2	667	
+L01	13	VBAR_B	h	s2	805	
+L01	14	4STEM	m	s2	966	4 with long stem below; alt C43
+L01	15	HASH4	h	s2	1115	
+L01	16	ZHOOK	m	s2	1276	2/7 hook over crossed stems (24-like)
+L01	17	VBAR_B	h	s2	1449	
+L01	18	VBAR_B	h	s2	1564	
+L01	19	ZHOOK	m	s2	1702	24-like; alt HASH4
+L01	20	INF	m	s2	1851	loops lying on bar with tail; alt PHI
+L01	21	C43	m	s2	1990	4 with dots
+L01	22	VBAR_B	m	s2	2139	in overlap zone
+L01	23	BETA	m	s2	2254	in overlap zone
+L01	24	PHI	m	s3	255	
+L01	25	4STEM	m	s3	398	4 with crossed stem; alt 4TRI
+L01	26	VBAR_A	m	s3	520	v with top bar, no foot bar
+L01	27	PHI	h	s3	663	
+L01	28	PHI	h	s3	806	long vertical stroke at x~890 after it, not coded (rule/stroke)
+L01	29	VBAR_B	m	s3	938	E-like; alt EBR
+L01	30	HASH4	m	s3	1061	dense looped cluster; alt DBL
+L01	31	PHI	h	s3	1193	
+L01	32	EBR	m	s3	1316	bracket open to right; alt VBAR_B
+L01	33	PHI	m	s3	1479	double loop on stem; alt INF
+L01	34	VBAR_B	h	s3	1632	
+L01	35	VBAR_B	h	s3	1765	line ends with filler dash (not coded)
+L02	1	VBAR_A	h	s1	58	
+L02	2	C43	h	s1	207	
+L02	3	VBAR_A	h	s1	334	
+L02	4	VBAR_B	h	s1	472	
+L02	5	PHI	m	s1	598	alt DBL
+L02	6	C43	h	s1	748	
+L02	7	VBAR_B	h	s1	897	
+L02	8	C43	h	s1	1012	
+L02	9	HASH4	h	s1	1162	
+L02	10	ZHOOK	m	s1	1300	#-like crossed stems; alt HASH4
+L02	11	PHI	h	s1	1426	
+L02	12	C43	h	s1	1564	
+L02	13	OTHER	m	s1	1737	gamma/8-like: loop at bottom, open crossed top; alt BETA
+L02	14	C43	h	s1	1886	
+L02	15	INF	m	s1	2047	double loop with comma; alt PHI
+L02	16	HASH4	m	s1	2208	in overlap zone
+L02	17	PHI	h	s2	196	
+L02	18	INF	m	s2	357	oo on stem; alt PHI
+L02	19	C43	h	s2	506	
+L02	20	VBAR_B	h	s2	667	
+L02	21	4STEM	m	s2	805	4 with long crossed stem
+L02	22	4STEM	m	s2	943	4 over bar; alt 4TRI
+L02	23	VBAR_B	h	s2	1092	
+L02	24	VBAR_B	h	s2	1230	
+L02	25	PHI	h	s2	1357	
+L02	26	HASH4	m	s2	1506	crossed looped cluster; alt DBL
+L02	27	EBR	l	s2	1633	small r/bracket; alt VBAR_A
+L02	28	DBL	m	s2	1782	8 on stem; alt PHI
+L02	29	BETA	h	s2	1897	
+L02	30	LOOPBAR	m	s2	2047	8 on stem with foot bar; alt DBL
+L02	31	HASH4	l	s2	2185	4 with loops, in overlap zone; alt 4PI
+L02	32	VBAR_A	h	s3	194	
+L02	33	HASH4	m	s3	347	4 over crossed stems
+L02	34	INF	m	s3	500	alt DBL
+L02	35	4STEM	m	s3	632	4 over bar
+L02	36	HASH4	m	s3	816	dense loops cluster; alt INF
+L02	37	INF	h	s3	959	
+L02	38	EBR	m	s3	1122	
+L02	39	VBAR_B	h	s3	1255	
+L02	40	PHI	m	s3	1397	alt INF
+L02	41	DBL	m	s3	1550	
+L02	42	PHI	h	s3	1703	
+L02	43	C43	h	s3	1836	line ends with filler dash
+L03	1	ZHOOK	m	s1	173	7/2 hook over crossed stems, cut at bottom
+L03	2	DBL	l	s1	334	cut at bottom; alt PHI
+L03	3	4STEM	m	s1	483	
+L03	4	EBR	m	s1	621	
+L03	5	C43	h	s1	759	
+L03	6	HASH4	m	s1	943	4 over crossed stems; alt 4PI
+L03	7	DBL	m	s1	1081	alt PHI
+L03	8	VBAR_B	h	s1	1242	
+L03	9	VBAR_B	h	s1	1368	
+L03	10	PHI	h	s1	1495	
+L03	11	CH	m	s1	1644	h/b-like dark mark
+L03	12	ZHOOK	m	s1	1771	
+L03	13	HASH4	h	s1	1943	
+L03	14	PHI	h	s1	2070	
+L03	15	4STEM	m	s1	2231	in overlap zone; alt C43
+L03	16	EBR	l	s2	242	P/bracket with bar; alt VBAR_B
+L03	17	C43	h	s2	380	
+L03	18	EBR	h	s2	518	
+L03	19	C43	h	s2	633	
+L03	20	4STEM	m	s2	782	4 on bar
+L03	21	INF	h	s2	943	
+L03	22	C43	h	s2	1092	
+L03	23	VBAR_B	h	s2	1230	
+L03	24	PHI	h	s2	1368	
+L03	25	PHI	m	s2	1506	alt LOOPSTEM1
+L03	26	HASH4	h	s2	1656	
+L03	27	C43	h	s2	1782	
+L03	28	VBAR_A	h	s2	1920	
+L03	29	ZHOOK	m	s2	2058	24-like
+L03	30	PHI	m	s2	2231	in overlap zone; alt INF
+L03	31	C43	h	s3	204	vertical stroke at x~316 after it, not coded
+L03	32	HASH4	m	s3	377	alt 4PI
+L03	33	PHI	h	s3	520	
+L03	34	C43	h	s3	673	
+L03	35	PHI	m	s3	857	alt INF
+L03	36	BETA	h	s3	1020	
+L03	37	HASH4	h	s3	1163	
+L03	38	ZHOOK	m	s3	1295	
+L03	39	EBR	h	s3	1428	
+L03	40	4STEM	l	s3	1550	f/4-like; alt CROSS
+L03	41	PHI	h	s3	1673	
+L03	42	VBAR_B	h	s3	1816	line ends with dash
+L04	1	HASH4	m	s1	311	cut at bottom
+L04	2	DBL	m	s1	437	
+L04	3	HASH4	h	s1	575	
+L04	4	VBAR_B	m	s1	702	narrow I-shape with top and foot bars; alt EBR
+L04	5	VBAR_B	m	s1	828	narrow; alt EBR
+L04	6	PHI	h	s1	943	
+L04	7	C43	h	s1	1070	
+L04	8	VBAR_A	h	s1	1185	slanted stroke after it, not coded
+L04	9	PHI	h	s1	1323	
+L04	10	VBAR_B	h	s1	1461	
+L04	11	VBAR_A	h	s1	1587	
+L04	12	PHI	h	s1	1725	
+L04	13	PHI	h	s1	1863	
+L04	14	DBL	h	s1	2013	
+L04	15	PHI	m	s1	2151	in overlap zone
+L04	16	VBAR_B	m	s1	2254	I-shape, in overlap zone
+L04	17	PHI	h	s2	265	
+L04	18	HASH4	m	s2	426	
+L04	19	DBL	m	s2	564	
+L04	20	PHI	l	s2	690	6-like loop on stem; alt C6
+L04	21	VBAR_B	m	s2	828	heavy L-like; alt EBR
+L04	22	PHI	h	s2	966	
+L04	23	VBAR_A	h	s2	1092	
+L04	24	4STEM	m	s2	1219	
+L04	25	PHI	h	s2	1392	
+L04	26	ZHOOK	m	s2	1506	24-like
+L04	27	C43	m	s2	1690	gloss stroke crosses it
+L04	28	4STEM	m	s2	1840	4 on bar
+L04	29	ZHOOK	m	s2	2001	24-like
+L04	30	4STEM	m	s2	2139	4 with long crossed stem, at overlap tick
+L04	31	4STEM	l	s2	2288	cut at right edge, in overlap zone; alt C43
+L04	32	C43	l	s3	173	cut at bottom edge
+L04	33	VBAR_B	l	s3	296	cut at bottom edge
+L04	34	VBAR_B	l	s3	418	cut at bottom edge
+L04	35	DBL	m	s3	551	
+L04	36	C6	m	s3	673	
+L04	37	PHI	m	s3	847	
+L04	38	4STEM	m	s3	979	
+L04	39	VBAR_A	h	s3	1102	slanted stroke after it, not coded
+L04	40	4STEM	m	s3	1244	
+L04	41	DBL	m	s3	1397	alt PHI
+L04	42	VBAR_B	m	s3	1520	small
+L04	43	VBAR_B	m	s3	1622	small
+L04	44	PHI	h	s3	1754	line ends with dash
+L05	1	4STEM	l	s1	150	cut at bottom
+L05	2	DBL	m	s1	276	
+L05	3	4STEM	m	s1	414	4 on bar
+L05	4	C43	h	s1	564	
+L05	5	DBL	m	s1	713	alt PHI
+L05	6	ZHOOK	m	s1	886	24-like
+L05	7	VBAR_B	h	s1	1047	
+L05	8	C43	m	s1	1208	
+L05	9	PHI	m	s1	1380	oo on stem; alt INF
+L05	10	C43	h	s1	1530	
+L05	11	4STEM	m	s1	1679	
+L05	12	HASH4	l	s1	1829	4 over crossed stems; alt ZHOOK
+L05	13	PHI	h	s1	1967	
+L05	14	4STEM	m	s1	2093	4 on bar over small mark; alt 4TRI
+L05	15	PHI	m	s1	2231	in overlap zone
+L05	16	OTHER	l	s2	667	s2: band's cipher row lies below the bottom edge; only tops of signs visible (loop top); row visible at the TOP edge of s2 repeats L04 and is not transcribed
+L05	17	OTHER	l	s2	840	bottom edge, only top visible (loop)
+L05	18	OTHER	l	s2	1242	bottom edge, only top visible (loop)
+L05	19	VBAR_A	l	s2	1484	bottom edge, v-top visible
+L05	20	OTHER	l	s2	1610	bottom edge, tall loop top (BETA or PHI)
+L05	21	OTHER	l	s2	1737	bottom edge, tall loop top (BETA or PHI)
+L05	22	VBAR_B	m	s3	71	E-like, left of tick (not visible in s2)
+L05	23	4STEM	m	s3	224	4 on bar
+L05	24	C43	m	s3	398	gloss stroke crosses it
+L05	25	PHI	h	s3	530	
+L05	26	ZHOOK	m	s3	683	alt HASH4
+L05	27	PHI	h	s3	806	
+L05	28	VBAR_B	m	s3	928	small; alt VBAR_A
+L05	29	PHI	h	s3	1040	
+L05	30	C43	h	s3	1173	
+L05	31	C43	h	s3	1316	
+L05	32	HASH4	h	s3	1448	
+L05	33	BETA	h	s3	1601	
+L05	34	EBR	l	s3	1724	r-like bracket with dash; alt VBAR_A
+L06	1	DBL	l	s1	150	cut at bottom
+L06	2	ZHOOK	m	s1	265	24-like
+L06	3	4STEM	m	s1	426	
+L06	4	VBAR_B	l	s1	552	small I/foot-bar mark; alt EBR
+L06	5	PHI	m	s1	690	oo on stem; alt INF
+L06	6	ZHOOK	m	s1	851	24-like
+L06	7	ZHOOK	m	s1	1012	crossed 7; alt 4STEM
+L06	8	VBAR_A	h	s1	1139	
+L06	9	BETA	h	s1	1254	
+L06	10	C43	h	s1	1403	
+L06	11	HASH4	h	s1	1587	
+L06	12	VBAR_B	h	s1	1748	
+L06	13	VBAR_B	h	s1	1875	
+L06	14	ZHOOK	m	s1	2013	24-like
+L06	15	VBAR_B	m	s1	2174	in overlap zone
+L06	16	PHI	m	s2	196	oo on stem; alt INF
+L06	17	C43	h	s2	357	
+L06	18	VBAR_A	h	s2	472	
+L06	19	ZHOOK	m	s2	621	24-like
+L06	20	EBR	m	s2	794	
+L06	21	BETA	h	s2	909	
+L06	22	VBAR_B	m	s2	1081	with loop tail below (g-like); alt OTHER
+L06	23	PHI	h	s2	1208	
+L06	24	PHI	h	s2	1334	
+L06	25	VBAR_B	h	s2	1484	
+L06	26	C43	h	s2	1622	
+L06	27	PHI	h	s2	1771	
+L06	28	4STEM	m	s2	1886	crossed 4
+L06	29	PHI	h	s2	2001	
+L06	30	VBAR_B	m	s2	2151	in overlap zone
+L06	31	VBAR_B	l	s2	2277	cut at right edge, in overlap zone
+L06	32	C43	h	s3	255	
+L06	33	ZHOOK	m	s3	408	24-like
+L06	34	PHI	h	s3	561	
+L06	35	PHI	m	s3	683	gloss letters below
+L06	36	VBAR_B	h	s3	796	vertical stroke after it, not coded
+L06	37	C43	h	s3	938	
+L06	38	4PI	l	s3	1061	crossed looped mark on stems; alt HASH4
+L06	39	VBAR_A	h	s3	1193	
+L06	40	PHI	h	s3	1326	
+L06	41	PHI	h	s3	1459	
+L06	42	BETA	h	s3	1591	
+L06	43	PHI	m	s3	1724	line ends with dash
+L07	1	C43	l	s1	115	cut at bottom
+L07	2	VBAR_B	l	s1	276	cut at bottom
+L07	3	ZHOOK	m	s1	437	24-like
+L07	4	VBAR_B	m	s1	587	alt EBR
+L07	5	C43	h	s1	748	
+L07	6	EBR	m	s1	886	F-like; alt VBAR_B
+L07	7	C43	h	s1	1012	
+L07	8	4STEM	m	s1	1185	
+L07	9	VBAR_B	m	s1	1311	gloss stem crosses it
+L07	10	HASH4	h	s1	1461	
+L07	11	VBAR_B	h	s1	1622	
+L07	12	HASH4	m	s1	1783	4 over crossed stems
+L07	13	C43	m	s1	1921	
+L07	14	4STEM	m	s1	2070	4 over crossed stem; alt 4TRI
+L07	15	4STEM	m	s1	2231	in overlap zone
+L07	16	C43	m	s2	230	
+L07	17	DBL	m	s2	380	alt PHI
+L07	18	PHI	h	s2	518	
+L07	19	C43	h	s2	644	
+L07	20	4STEM	m	s2	794	vertical stroke after it, not coded
+L07	21	DBL	m	s2	932	
+L07	22	HASH4	m	s2	1104	alt ZHOOK
+L07	23	PHI	h	s2	1242	
+L07	24	4STEM	m	s2	1392	4 on bar
+L07	25	INF	h	s2	1541	
+L07	26	C43	h	s2	1679	
+L07	27	VBAR_A	h	s2	1817	
+L07	28	PHI	h	s2	1955	
+L07	29	C43	h	s2	2105	
+L07	30	ZHOOK	m	s2	2254	24-like, in overlap zone
+L07	31	DBL	m	s3	286	alt PHI; vertical stroke after it, not coded
+L07	32	4STEM	m	s3	439	crossed 4
+L07	33	PHI	h	s3	581	
+L07	34	VBAR_B	m	s3	704	I-shape
+L07	35	EBR	h	s3	826	
+L07	36	INF	l	s3	969	alt DBL
+L07	37	EBR	h	s3	1122	
+L07	38	C43	h	s3	1244	
+L07	39	DBL	m	s3	1408	alt PHI
+L07	40	VBAR_B	m	s3	1550	E with tail; alt OTHER
+L07	41	VBAR_B	h	s3	1673	
+L07	42	ZHOOK	m	s3	1805	24-like; line ends with dash

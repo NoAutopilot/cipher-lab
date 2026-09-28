@@ -1,0 +1,10 @@
+# f.61r under key_period.tsv (period pairs n>=2, no refit), 28 Sept 2026: 99 signs, C 14 M 42 unread 43. [a/b] = period pair, choice by context not made here; <CLASS> = no period pair.
+L01: <CROSS> <C6> [a/n] u [e/r/o] [c/p] <ELOOP> <CA> [e/r/o] [s/t/f] [d/q] <4PI>
+L02: [e/r/o] t
+L03: <CA> <LOOPBAR> <ELOOP> [e/r/o] <VBAR_B> [s/t/f] [c/p] [a/n] <CA> [c/p] <C6> <LOOPBAR> [a/n] <DBL> l
+L04: <LOOPBAR> t
+L05: <LOOPSTEM1> <CH> [s/t/f] [e/r/o] <DBL> [c/p] <CA> <CA> [a/n] u [a/n] <C6> [a/n] [c/p] [e/r/o] <LL> [e/r/o] <VBAR_B>
+L07: <CA> <LOOPBAR> <ZHOOK> m l <C6> [e/r/o] u <VBAR_B> <CROSS> <ZHOOK>
+L08: [e/r/o] [a/n] <C6> u <DBL> [e/r/o] [a/n] u <C6> <CA> [c/p] [e/r/o] [e/r/o] [e/r/o]
+L10: l <CA> [e/r/o] [s/t/f] [e/r/o] [e/r/o] <VBAR_B> u <CA> <C6> [e/r/o] <CA> <C6>
+L11: m [e/r/o] l [e/r/o] [a/n] [s/t/f] [e/r/o] <4STEM> <4PI> <DBL> <ZHOOK> [s/t/f]

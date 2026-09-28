@@ -1,0 +1,306 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	VBAR_A	h	s1	60	
+L01	2	C43	h	s1	200	
+L01	3	VBAR_A	h	s1	340	
+L01	4	VBAR_B	h	s1	480	
+L01	5	PHI	h	s1	590	
+L01	6	C43	h	s1	740	
+L01	7	VBAR_B	h	s1	890	
+L01	8	C43	h	s1	1020	
+L01	9	INF	h	s1	1160	
+L01	10	HASH4	m	s1	1310	#-like with small 4 on top
+L01	11	PHI	m	s1	1430	upper small loop over crossed loop; alt DBL
+L01	12	C43	h	s1	1570	
+L01	13	OTHER	m	s1	1730	ARC gamma-like: V-shaped strokes crossing with a closed loop at the bottom
+L01	14	C43	h	s1	1870	
+L01	15	PHI	m	s1	2050	loops on stem with tail; alt INF
+L01	16	INF	h	s1	2210	
+L01	17	VBAR_B	h	s2	220	
+L01	18	C43	h	s2	370	
+L01	19	PHI	h	s2	530	
+L01	20	INF	h	s2	660	
+L01	21	VBAR_B	h	s2	800	
+L01	22	4STEM	m	s2	970	4 on long crossed stem; alt C43
+L01	23	INF	h	s2	1110	
+L01	24	ZHOOK	h	s2	1280	24-like
+L01	25	VBAR_B	h	s2	1440	
+L01	26	VBAR_B	h	s2	1570	
+L01	27	ZHOOK	h	s2	1700	
+L01	28	PHI	m	s2	1860	loops on stem with curling tail; alt INF
+L01	29	C43	h	s2	1990	
+L01	30	VBAR_B	h	s2	2140	
+L01	31	BETA	h	s2	2270	
+L01	32	PHI	h	s3	260	
+L01	33	4STEM	m	s3	410	4 over crossed stem with foot bar
+L01	34	VBAR_A	m	s3	520	filled V with top bar and stroke to right; alt 4TRI
+L01	35	PHI	h	s3	660	
+L01	36	PHI	h	s3	800	
+L01	37	OTHER	l	s3	890	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L01	38	VBAR_B	m	s3	940	Z/E-like; alt EBR
+L01	39	INF	m	s3	1060	tilted figure-8 over bar
+L01	40	PHI	h	s3	1190	
+L01	41	EBR	h	s3	1320	open bracket
+L01	42	PHI	h	s3	1480	
+L01	43	VBAR_B	h	s3	1640	
+L01	44	VBAR_B	h	s3	1780	
+L02	1	PHI	h	s1	100	
+L02	2	C43	m	s1	246	faint 3; alt 4STEM
+L02	3	VBAR_B	h	s1	406	
+L02	4	ZHOOK	h	s1	566	
+L02	5	HASH4	h	s1	746	
+L02	6	INF	m	s1	880	alt HASH4
+L02	7	OTHER	m	s1	1026	ARC gamma-like: V-shaped strokes crossing with a closed loop at the bottom
+L02	8	C43	m	s1	1174	
+L02	9	PHI	m	s1	1354	alt INF
+L02	10	HASH4	h	s1	1526	
+L02	11	VBAR_B	h	s1	1714	
+L02	12	4STEM	m	s1	1866	alt C43
+L02	13	C43	h	s1	2020	
+L02	14	INF	h	s1	2194	
+L02	15	PHI	h	s2	194	
+L02	16	PHI	h	s2	360	
+L02	17	C43	h	s2	514	
+L02	18	VBAR_B	h	s2	666	
+L02	19	4STEM	m	s2	814	crossed stem with foot; alt CROSS
+L02	20	4STEM	m	s2	954	alt C43
+L02	21	VBAR_B	h	s2	1094	
+L02	22	VBAR_B	h	s2	1234	
+L02	23	PHI	m	s2	1374	alt DBL
+L02	24	INF	m	s2	1526	alt HASH4
+L02	25	EBR	h	s2	1646	
+L02	26	PHI	m	s2	1774	stacked loops on long stem; alt DBL
+L02	27	BETA	h	s2	1900	
+L02	28	LOOPBAR	m	s2	2046	loops on stem with foot curling right; alt PHI
+L02	29	C43	m	s2	2174	alt 4STEM
+L02	30	VBAR_A	h	s3	194	
+L02	31	HASH4	h	s3	346	4 over #; alt 4PI
+L02	32	INF	m	s3	500	slanted loops, no stem
+L02	33	HASH4	h	s3	626	4 over #; alt 4PI
+L02	34	INF	m	s3	814	gloss overlaps
+L02	35	PHI	h	s3	966	
+L02	36	EBR	m	s3	1120	three bars open right; alt VBAR_B
+L02	37	VBAR_B	h	s3	1266	
+L02	38	PHI	h	s3	1400	
+L02	39	INF	m	s3	1554	alt DBL
+L02	40	PHI	h	s3	1714	
+L02	41	C43	h	s3	1846	
+L03	1	ZHOOK	h	s1	154	
+L03	2	PHI	h	s1	326	
+L03	3	C43	h	s1	480	
+L03	4	EBR	m	s1	620	E-like
+L03	5	C43	h	s1	760	
+L03	6	HASH4	h	s1	940	4 over #; alt 4PI
+L03	7	PHI	h	s1	1074	
+L03	8	VBAR_B	h	s1	1226	
+L03	9	VBAR_B	h	s1	1360	
+L03	10	PHI	h	s1	1494	
+L03	11	VBAR_A	m	s1	1634	filled triangle; next-line gloss touches below
+L03	12	ZHOOK	h	s1	1780	
+L03	13	HASH4	m	s1	1940	alt INF
+L03	14	PHI	h	s1	2066	
+L03	15	4STEM	m	s1	2214	alt C43
+L03	16	EBR	m	s2	246	F-like; loop at top right may be a gloss stroke; alt LOOPBAR
+L03	17	C43	h	s2	380	
+L03	18	EBR	m	s2	526	Gamma-like; alt VBAR_B
+L03	19	C43	h	s2	654	
+L03	20	4STEM	h	s2	800	
+L03	21	PHI	h	s2	946	
+L03	22	C43	m	s2	1094	faint 3; alt 4STEM
+L03	23	VBAR_B	h	s2	1246	
+L03	24	PHI	h	s2	1380	
+L03	25	PHI	h	s2	1526	
+L03	26	INF	h	s2	1654	
+L03	27	C43	h	s2	1780	
+L03	28	VBAR_A	h	s2	1934	
+L03	29	ZHOOK	h	s2	2066	
+L03	30	PHI	h	s2	2220	
+L03	31	C43	h	s3	214	
+L03	32	OTHER	l	s3	300	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L03	33	HASH4	h	s3	380	4 over #; alt 4PI
+L03	34	LOOPBAR	m	s3	520	loop on stem with foot bar; alt PHI
+L03	35	C43	h	s3	680	
+L03	36	PHI	h	s3	860	
+L03	37	BETA	h	s3	1020	
+L03	38	HASH4	m	s3	1180	
+L03	39	ZHOOK	h	s3	1314	
+L03	40	EBR	m	s3	1446	5-like; alt VBAR_B
+L03	41	CROSS	m	s3	1560	double-barred cross; alt 4STEM
+L03	42	PHI	h	s3	1674	
+L03	43	VBAR_B	h	s3	1800	
+L04	1	4STEM	m	s1	134	4 over crossed stem, sits low; alt 4TRI
+L04	2	INF	m	s1	314	alt HASH4
+L04	3	PHI	h	s1	440	
+L04	4	HASH4	m	s1	580	alt INF
+L04	5	EBR	m	s1	706	I-shape; alt VBAR_B
+L04	6	EBR	m	s1	834	I-shape
+L04	7	PHI	h	s1	946	
+L04	8	C43	h	s1	1074	
+L04	9	VBAR_A	h	s1	1174	
+L04	10	OTHER	l	s1	1240	short vertical stroke inside row; possibly separator
+L04	11	PHI	h	s1	1326	
+L04	12	VBAR_B	h	s1	1460	
+L04	13	VBAR_A	m	s1	1594	with tick to right
+L04	14	PHI	h	s1	1720	
+L04	15	PHI	h	s1	1860	
+L04	16	PHI	h	s1	2014	
+L04	17	PHI	h	s1	2154	
+L04	18	EBR	m	s1	2294	I-shape
+L04	19	PHI	h	s2	286	
+L04	20	HASH4	m	s2	440	alt INF
+L04	21	PHI	h	s2	574	
+L04	22	PHI	h	s2	694	
+L04	23	VBAR_B	h	s2	826	
+L04	24	OTHER	l	s2	920	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L04	25	PHI	m	s2	986	stacked loops; alt DBL
+L04	26	VBAR_A	h	s2	1100	
+L04	27	4STEM	h	s2	1234	
+L04	28	PHI	h	s2	1394	
+L04	29	ZHOOK	h	s2	1540	
+L04	30	C43	h	s2	1694	gloss descender touches top
+L04	31	4STEM	h	s2	1860	
+L04	32	ZHOOK	h	s2	2006	
+L04	33	4STEM	m	s2	2154	top merges with gloss p; alt CROSS
+L04	34	C43	h	s3	160	
+L04	35	EBR	h	s3	306	
+L04	36	EBR	h	s3	414	
+L04	37	PHI	h	s3	540	
+L04	38	BETA	h	s3	666	
+L04	39	HASH4	m	s3	826	alt INF
+L04	40	C43	h	s3	960	
+L04	41	VBAR_A	h	s3	1094	
+L04	42	OTHER	l	s3	1186	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L04	43	4STEM	h	s3	1254	
+L04	44	PHI	h	s3	1406	
+L04	45	EBR	m	s3	1540	r-like; alt VBAR_B
+L04	46	EBR	m	s3	1646	r-like; alt VBAR_B
+L04	47	PHI	h	s3	1766	
+L05	1	HASH4	h	s1	140	4 over #; alt 4PI
+L05	2	PHI	h	s1	286	
+L05	3	4STEM	h	s1	420	
+L05	4	C43	h	s1	574	
+L05	5	PHI	h	s1	726	
+L05	6	ZHOOK	h	s1	886	
+L05	7	VBAR_B	h	s1	1034	
+L05	8	C43	h	s1	1206	
+L05	9	PHI	h	s1	1380	gloss stroke crosses it
+L05	10	C43	h	s1	1534	
+L05	11	4STEM	h	s1	1686	
+L05	12	C43	h	s1	1826	
+L05	13	PHI	m	s1	1974	alt LOOPSTEM1
+L05	14	4STEM	h	s1	2100	
+L05	15	PHI	h	s1	2246	
+L05	16	VBAR_A	h	s2	240	
+L05	17	ZHOOK	h	s2	380	
+L05	18	VBAR_A	h	s2	526	with tick to right
+L05	19	BETA	m	s2	660	tangled with gloss below
+L05	20	PHI	h	s2	820	
+L05	21	VBAR_B	h	s2	954	
+L05	22	VBAR_B	m	s2	1100	gloss tangle above
+L05	23	PHI	h	s2	1226	
+L05	24	4STEM	m	s2	1354	top unclear (gloss); alt CROSS
+L05	25	VBAR_A	h	s2	1494	
+L05	26	BETA	h	s2	1614	
+L05	27	OTHER	l	s2	1686	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L05	28	BETA	h	s2	1754	
+L05	29	C43	h	s2	1900	
+L05	30	ZHOOK	h	s2	2074	
+L05	31	VBAR_B	h	s2	2214	
+L05	32	4STEM	h	s3	226	
+L05	33	C43	h	s3	400	
+L05	34	PHI	h	s3	546	
+L05	35	HASH4	h	s3	686	4 over #; alt 4PI
+L05	36	PHI	h	s3	814	
+L05	37	VBAR_A	h	s3	934	with tick to right
+L05	38	PHI	h	s3	1046	
+L05	39	C43	h	s3	1180	
+L05	40	C43	h	s3	1320	
+L05	41	HASH4	m	s3	1454	alt INF
+L05	42	BETA	h	s3	1600	
+L06	1	PHI	h	s1	120	
+L06	2	ZHOOK	h	s1	266	
+L06	3	4STEM	h	s1	420	
+L06	4	CROSS	m	s1	554	T-bar with crossed stem, gloss below; alt 4STEM
+L06	5	PHI	h	s1	686	
+L06	6	ZHOOK	h	s1	860	
+L06	7	4STEM	h	s1	1006	
+L06	8	VBAR_A	h	s1	1140	
+L06	9	BETA	h	s1	1254	
+L06	10	C43	h	s1	1414	
+L06	11	HASH4	m	s1	1586	alt INF
+L06	12	VBAR_B	h	s1	1746	
+L06	13	VBAR_B	h	s1	1874	
+L06	14	ZHOOK	h	s1	2014	
+L06	15	VBAR_B	h	s1	2180	
+L06	16	PHI	h	s2	186	
+L06	17	C43	h	s2	354	
+L06	18	VBAR_A	h	s2	480	
+L06	19	ZHOOK	h	s2	626	stray slanted stroke just before it
+L06	20	EBR	h	s2	780	
+L06	21	BETA	h	s2	914	
+L06	22	VBAR_A	m	s2	1080	A-like with crossbar; alt VBAR_B
+L06	23	PHI	h	s2	1200	
+L06	24	PHI	h	s2	1340	
+L06	25	VBAR_B	h	s2	1486	
+L06	26	C43	h	s2	1614	
+L06	27	PHI	h	s2	1760	
+L06	28	4STEM	h	s2	1874	
+L06	29	PHI	h	s2	2000	
+L06	30	VBAR_B	h	s2	2140	
+L06	31	VBAR_B	h	s2	2280	
+L06	32	C43	h	s3	266	
+L06	33	ZHOOK	h	s3	420	
+L06	34	PHI	h	s3	560	
+L06	35	PHI	m	s3	680	gloss below
+L06	36	VBAR_B	h	s3	800	
+L06	37	OTHER	l	s3	880	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L06	38	C43	h	s3	946	
+L06	39	HASH4	m	s3	1074	alt INF
+L06	40	VBAR_A	h	s3	1206	
+L06	41	PHI	h	s3	1334	
+L06	42	PHI	h	s3	1466	
+L06	43	BETA	m	s3	1580	tangled with gloss
+L06	44	INF	m	s3	1734	&-like small loops; alt HASH4
+L07	1	C43	h	s1	120	
+L07	2	VBAR_A	h	s1	266	
+L07	3	ZHOOK	h	s1	454	
+L07	4	EBR	m	s1	606	E-like
+L07	5	C43	m	s1	760	faint 3
+L07	6	EBR	m	s1	886	F-like; alt LOOPBAR
+L07	7	C43	h	s1	1020	
+L07	8	4STEM	h	s1	1186	
+L07	9	EBR	m	s1	1306	I-shape, top merges with gloss p; alt CROSS
+L07	10	INF	m	s1	1466	alt HASH4
+L07	11	VBAR_B	h	s1	1626	
+L07	12	HASH4	h	s1	1780	4 over #; alt 4PI
+L07	13	C43	h	s1	1926	
+L07	14	4STEM	h	s1	2066	
+L07	15	4STEM	h	s1	2234	
+L07	16	C43	h	s2	240	
+L07	17	PHI	h	s2	386	
+L07	18	PHI	h	s2	526	
+L07	19	C43	h	s2	654	
+L07	20	4STEM	h	s2	794	
+L07	21	OTHER	l	s2	866	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L07	22	PHI	h	s2	926	
+L07	23	HASH4	h	s2	1106	4 over #; alt 4PI
+L07	24	PHI	h	s2	1246	
+L07	25	4STEM	h	s2	1406	
+L07	26	PHI	m	s2	1546	gloss tangle below; alt INF
+L07	27	C43	h	s2	1686	
+L07	28	VBAR_A	h	s2	1834	
+L07	29	PHI	h	s2	1954	
+L07	30	C43	h	s2	2094	
+L07	31	ZHOOK	h	s2	2274	
+L07	32	PHI	h	s3	294	
+L07	33	OTHER	l	s3	374	thin long vertical/slanted pen stroke across the row; likely separator or stray descender, possibly not a cipher sign
+L07	34	4STEM	h	s3	440	
+L07	35	PHI	h	s3	586	
+L07	36	EBR	m	s3	700	I-shape
+L07	37	EBR	h	s3	834	
+L07	38	INF	m	s3	966	stacked loops, short stem; alt PHI
+L07	39	EBR	m	s3	1114	
+L07	40	C43	h	s3	1246	
+L07	41	PHI	h	s3	1414	
+L07	42	EBR	m	s3	1546	E-like, gloss below
+L07	43	VBAR_B	h	s3	1680	
+L07	44	ZHOOK	h	s3	1814	

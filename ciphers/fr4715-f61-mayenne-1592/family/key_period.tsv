@@ -1,0 +1,44 @@
+# key_period.tsv -- F61-FAMILY, 28 Sept 2026. Key source: period (CLAUDE.md rule 4 / rule 10 key-source vocabulary): every
+# (class, letter) pair is read from a contemporary interlinear decipherment written on the leaf itself, aligned to the
+# atlas-coded cipher signs by tools/interlinear_align.py (--code-prefix @ --null-cost -1 --clear-consumes), grade C for the
+# pair, no cryptanalysis and no refit. Classes are the f.61 shape atlas (scripts/f61_atlas.tsv) plus H24 (see KEY.md).
+# '-' = the sign took no letter in the alignment (a null or an abbreviation in the gloss). n = occurrences; bands = which
+# line bands of that leaf. Tomokiyo's mayenne.png reconstruction is a separate, published key and is not used here.
+class	letter	n	leaf	bands
+4TRI	c	7	fr.3984 f.274r	L01,L03,L04,L05,L06
+4TRI	p	3	fr.3984 f.274r	L03,L04,L05
+4TRI	-	2	fr.3984 f.274r	L01,L06
+4TRI	i	1	fr.3984 f.274r	L05
+BETA	m	2	fr.3984 f.274r	L05,L06
+BETA	l	1	fr.3984 f.274r	L05
+BETA	z	1	fr.3984 f.274r	L06
+C43	a	16	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+C43	n	8	fr.3984 f.274r	L02,L03,L04,L06
+C43	-	2	fr.3984 f.274r	L04
+EBR	l	7	fr.3984 f.274r	L01,L03,L04,L06
+EBR	-	1	fr.3984 f.274r	L02
+EBR	c	1	fr.3984 f.274r	L02
+EBR	y	1	fr.3984 f.274r	L05
+ELOOP	o	1	fr.3984 f.274r	L05
+H24	i	6	fr.3984 f.274r	L01,L02,L06
+H24	j	2	fr.3984 f.274r	L05,L06
+H24	y	2	fr.3984 f.274r	L03,L04
+H24	-	1	fr.3984 f.274r	L04
+H24	x	1	fr.3984 f.274r	L02
+HASH4	d	5	fr.3984 f.274r	L01,L02,L03,L06
+HASH4	q	5	fr.3984 f.274r	L01,L02,L04,L05
+HASH4	-	1	fr.3984 f.274r	L04
+INF	u	16	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+INF	h	1	fr.3984 f.274r	L03
+OTHER	t	2	fr.3984 f.274r	L05,L06
+OTHER	-	1	fr.3984 f.274r	L05
+PHI	e	24	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+PHI	r	11	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+PHI	o	7	fr.3984 f.274r	L03,L04,L05,L06
+PHI	-	2	fr.3984 f.274r	L04,L05
+VBAR_A	s	11	fr.3984 f.274r	L01,L02,L04,L05,L06
+VBAR_A	t	7	fr.3984 f.274r	L01,L03,L04,L05,L06
+VBAR_A	f	4	fr.3984 f.274r	L01,L02,L03
+VBAR_A	-	1	fr.3984 f.274r	L04
+VBAR_B	f	1	fr.3984 f.274r	L06
+VBAR_B	s	1	fr.3984 f.274r	L04

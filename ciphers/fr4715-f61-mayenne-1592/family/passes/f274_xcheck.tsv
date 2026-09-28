@@ -1,0 +1,39 @@
+line	word	kind	letters	signs	codes
+L01	duc	gloss	3	2	INF 4TRI
+L01	de	gloss	2	2	HASH4 PHI
+L01	feria	gloss	5	5	VBAR_A PHI PHI H24 C43
+L01	a	gloss	1	2	C43 PHI
+L01	escript	gloss	7	5	VBAR_A 4TRI PHI H24 VBAR_A
+L01	a	gloss	1	2	C43 HASH4
+L01	quelques	gloss	8	8	INF PHI EBR HASH4 INF PHI VBAR_A 4TRI
+L02	cardinaux	gloss	9	7	HASH4 H24 C43 C43 INF EBR H24
+L02	que	gloss	3	3	HASH4 INF PHI
+L02	ces	gloss	3	4	EBR PHI VBAR_A C43
+L02	affaires	gloss	8	6	VBAR_A VBAR_A C43 H24 PHI PHI
+L02	se	gloss	2	3	VBAR_A VBAR_A PHI
+L03	seschauffoyent	gloss	14	10	4TRI INF C43 INF VBAR_A PHI H24 PHI C43 VBAR_A
+L03	par	gloss	3	1	4TRI
+L03	dela	gloss	4	6	C43 PHI HASH4 PHI EBR C43
+L03	a	gloss	1	3	C43 EBR PHI
+L03	leur	gloss	4	3	INF PHI C43
+L03	aduantaige	gloss	10	5	HASH4 INF C43 C43 VBAR_A
+L04	plus	gloss	4	5	PHI 4TRI EBR INF VBAR_B
+L04	quelles	gloss	7	8	HASH4 INF PHI EBR EBR PHI VBAR_A C43
+L04	nauoyent	gloss	8	7	C43 INF PHI H24 PHI C43 VBAR_A
+L04	encores	gloss	7	8	PHI C43 4TRI PHI PHI VBAR_A C43 HASH4
+L05	fait	gloss	4	3	4TRI VBAR_A H24
+L05	Je	gloss	2	3	PHI 4TRI PHI
+L05	croy	gloss	4	3	PHI EBR HASH4
+L05	que	gloss	3	3	INF PHI 4TRI
+L05	cest	gloss	4	4	PHI VBAR_A OTHER 4TRI
+L05	pour	gloss	4	3	ELOOP INF PHI
+L05	amuser	gloss	6	6	C43 BETA INF VBAR_A PHI PHI
+L05	le	gloss	2	4	OTHER PHI BETA PHI
+L06	monde	gloss	5	4	C43 HASH4 PHI 4TRI
+L06	comme	gloss	5	4	PHI BETA PHI H24
+L06	ilz	gloss	3	2	EBR BETA
+L06	ont	gloss	3	4	PHI C43 OTHER VBAR_B
+L06	fait	gloss	4	5	C43 H24 4TRI VBAR_A VBAR_A
+L06	tousjours	gloss	9	8	PHI INF VBAR_A H24 PHI INF PHI VBAR_A
+L06	si	inline	2	1	PLAIN
+L06	vous	inline	4	0	

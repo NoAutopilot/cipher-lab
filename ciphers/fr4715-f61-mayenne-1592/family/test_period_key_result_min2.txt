@@ -1,0 +1,4 @@
+key_period.tsv (pairs with n >= 2): 9 classes with letters: 4TRI=c/p BETA=m C43=a/n EBR=l H24=i/j/y HASH4=d/q INF=u PHI=e/o/r VBAR_A=f/s/t
+f.61 five known spans (55): period key 40/55 = 0.727; 20 permuted keys mean 0.165 max 0.273; classes covered 0.56 of signs; per span S1:3/4; S2:7/10; S3:9/12; S4a:3/7; S4b:10/11; S5:8/11
+f.108r overlay letters (84): period key 51/84 = 0.607; 20 permuted keys mean 0.205 max 0.274; classes covered 0.77 of signs; per span T1:21/39; T2:30/45
+GATE (brief step 5, 0.75 on the 55 known letters): FAIL (0.727)

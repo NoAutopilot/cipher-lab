@@ -1,0 +1,168 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	INF	m	s1	112	
+L01	2	4TRI	m	s1	269	4 over small v
+L01	3	HASH4	h	s1	426	#-like
+L01	4	PHI	h	s1	577	
+L01	5	VBAR_A	h	s1	745	
+L01	6	PHI	h	s1	907	
+L01	7	PHI	h	s1	1058	
+L01	8	HASH4	m	s1	1198	2#-like, alt 4STEM
+L01	9	C43	h	s1	1372	
+L01	10	C43	h	s1	1546	
+L01	11	PHI	h	s1	1719	
+L01	12	VBAR_A	h	s1	1859	
+L01	13	4TRI	h	s1	2005	
+L01	14	PHI	h	s1	2150	overlap zone
+L01	15	HASH4	m	s2	235	2#-like, alt 4STEM
+L01	16	VBAR_A	m	s2	409	open triangle, bar faint
+L01	17	C43	h	s2	605	
+L01	18	HASH4	h	s2	784	
+L01	19	INF	h	s2	958	
+L01	20	PHI	h	s2	1120	
+L01	21	EBR	l	s2	1288	I-shape with foot bar, alt OTHER
+L01	22	HASH4	h	s2	1445	
+L01	23	INF	h	s2	1562	
+L01	24	PHI	h	s2	1719	
+L01	25	VBAR_A	m	s2	1893	alt VBAR_B
+L01	26	4TRI	m	s2	2016	
+L02	1	C43	h	s1	118	
+L02	2	PHI	m	s1	263	alt DBL
+L02	3	HASH4	h	s1	420	
+L02	4	HASH4	m	s1	594	2#-like, alt 4STEM
+L02	5	C43	h	s1	762	
+L02	6	C43	h	s1	946	
+L02	7	INF	h	s1	1131	
+L02	8	EBR	h	s1	1305	
+L02	9	HASH4	m	s1	1501	2#-like
+L02	10	HASH4	h	s1	1714	
+L02	11	INF	h	s1	1882	
+L02	12	PHI	h	s1	2033	
+L02	13	EBR	m	s1	2206	overlap zone
+L02	14	PHI	h	s2	263	
+L02	15	VBAR_A	h	s2	431	
+L02	16	C43	h	s2	633	
+L02	17	VBAR_A	h	s2	806	
+L02	18	VBAR_A	h	s2	991	
+L02	19	C43	h	s2	1165	
+L02	20	HASH4	m	s2	1338	2#-like
+L02	21	PHI	h	s2	1495	
+L02	22	PHI	h	s2	1635	
+L02	23	VBAR_A	h	s2	1798	
+L02	24	VBAR_A	h	s2	1915	
+L02	25	PHI	m	s2	2016	
+L03	1	4TRI	h	s1	106	
+L03	2	INF	h	s1	241	
+L03	3	C43	h	s1	403	
+L03	4	INF	h	s1	543	
+L03	5	VBAR_A	h	s1	694	
+L03	6	PHI	m	s1	862	several loops on stem
+L03	7	HASH4	m	s1	1036	2#-like
+L03	8	PHI	h	s1	1165	
+L03	9	C43	h	s1	1344	
+L03	10	VBAR_A	m	s1	1506	open triangle
+L03	11	4TRI	h	s1	1680	
+L03	12	C43	h	s1	1842	
+L03	13	PHI	h	s1	2005	
+L03	14	HASH4	h	s1	2167	overlap zone
+L03	15	PHI	h	s2	241	
+L03	16	EBR	m	s2	347	I-like bracket
+L03	17	C43	h	s2	476	
+L03	18	C43	h	s2	655	
+L03	19	EBR	m	s2	806	
+L03	20	PHI	h	s2	946	
+L03	21	INF	h	s2	1081	
+L03	22	PHI	h	s2	1215	
+L03	23	C43	h	s2	1383	
+L03	24	HASH4	h	s2	1523	
+L03	25	INF	h	s2	1646	
+L03	26	C43	h	s2	1770	
+L03	27	C43	h	s2	1887	
+L03	28	VBAR_A	m	s2	2016	open triangle at edge
+L04	1	C43	h	s1	129	
+L04	2	HASH4	m	s1	280	2#-like
+L04	3	VBAR_A	m	s1	403	open triangle
+L04	4	PHI	h	s1	538	
+L04	5	4TRI	h	s1	678	
+L04	6	EBR	h	s1	823	
+L04	7	INF	h	s1	946	
+L04	8	VBAR_B	m	s1	1103	alt VBAR_A
+L04	9	HASH4	h	s1	1288	
+L04	10	INF	h	s1	1434	
+L04	11	PHI	h	s1	1574	
+L04	12	EBR	h	s1	1691	
+L04	13	EBR	h	s1	1792	
+L04	14	PHI	h	s1	1893	
+L04	15	VBAR_A	h	s1	2050	
+L04	16	C43	m	s1	2212	overlap zone, cut
+L04	17	C43	h	s2	286	
+L04	18	INF	h	s2	420	
+L04	19	PHI	m	s2	560	several loops, alt DBL
+L04	20	HASH4	m	s2	700	2#-like
+L04	21	PHI	h	s2	829	
+L04	22	C43	h	s2	946	
+L04	23	VBAR_A	m	s2	1058	open triangle
+L04	24	PHI	h	s2	1198	
+L04	25	C43	h	s2	1310	
+L04	26	4TRI	h	s2	1422	
+L04	27	PHI	m	s2	1546	several loops
+L04	28	PHI	h	s2	1658	
+L04	29	VBAR_A	h	s2	1792	
+L04	30	C43	m	s2	1904	
+L04	31	HASH4	l	s2	2016	at edge, alt 4STEM
+L05	1	4TRI	h	s1	106	
+L05	2	VBAR_A	m	s1	230	open triangle
+L05	3	HASH4	m	s1	386	2#-like
+L05	4	PHI	h	s1	532	
+L05	5	4TRI	h	s1	694	
+L05	6	PHI	h	s1	846	
+L05	7	PHI	m	s1	986	several loops
+L05	8	EBR	m	s1	1109	I-like
+L05	9	HASH4	h	s1	1277	
+L05	10	INF	h	s1	1422	
+L05	11	PHI	h	s1	1546	
+L05	12	4TRI	h	s1	1702	
+L05	13	PHI	h	s1	1837	
+L05	14	VBAR_A	h	s1	1988	
+L05	15	OTHER	m	s1	2162	solid filled black triangle with dot, alt VBAR_A; overlap zone
+L05	16	4TRI	h	s2	274	
+L05	17	ELOOP	m	s2	459	dark blob loop with curling tail
+L05	18	INF	h	s2	616	
+L05	19	PHI	h	s2	762	
+L05	20	C43	h	s2	941	
+L05	21	BETA	h	s2	1070	
+L05	22	INF	h	s2	1165	
+L05	23	VBAR_A	h	s2	1322	
+L05	24	PHI	h	s2	1456	
+L05	25	PHI	h	s2	1568	
+L05	26	OTHER	l	s2	1680	small L-shaped bracket, alt EBR
+L05	27	PHI	m	s2	1781	
+L05	28	BETA	l	s2	1904	alt LOOPSTEM1
+L05	29	PHI	l	s2	2016	at edge
+L06	1	C43	h	s1	112	
+L06	2	HASH4	h	s1	280	
+L06	3	PHI	h	s1	414	
+L06	4	4TRI	h	s1	571	
+L06	5	PHI	m	s1	739	several loops
+L06	6	BETA	h	s1	874	
+L06	7	PHI	h	s1	986	
+L06	8	HASH4	m	s1	1165	2#-like
+L06	9	EBR	h	s1	1271	
+L06	10	BETA	h	s1	1372	
+L06	11	PHI	m	s1	1562	several loops
+L06	12	C43	h	s1	1658	
+L06	13	OTHER	m	s1	1792	solid filled black triangle, alt VBAR_A
+L06	14	VBAR_B	m	s1	1926	alt VBAR_A
+L06	15	C43	h	s1	2050	
+L06	16	HASH4	m	s1	2184	2#-like; overlap zone
+L06	17	4TRI	h	s2	286	
+L06	18	VBAR_A	m	s2	442	open triangle
+L06	19	VBAR_A	l	s2	605	open triangle no bar visible
+L06	20	PHI	m	s2	745	several loops
+L06	21	INF	h	s2	874	
+L06	22	VBAR_A	h	s2	1025	
+L06	23	HASH4	m	s2	1187	2#-like
+L06	24	PHI	m	s2	1344	several loops
+L06	25	INF	h	s2	1467	
+L06	26	PHI	h	s2	1602	
+L06	27	VBAR_A	h	s2	1725	
+L06	28	PLAIN	m	s2	1926	si vous

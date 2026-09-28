@@ -1,0 +1,168 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	INF	m	s1	112	two crossed loops on bar
+L01	2	4TRI	h	s1	263	
+L01	3	HASH4	h	s1	420	4 with double crossbar
+L01	4	PHI	h	s1	577	
+L01	5	VBAR_A	h	s1	745	
+L01	6	PHI	h	s1	913	
+L01	7	PHI	h	s1	1058	
+L01	8	4STEM	m	s1	1198	looks like 24 ligature; alt HASH4
+L01	9	C43	h	s1	1372	
+L01	10	C43	h	s1	1546	
+L01	11	PHI	h	s1	1725	
+L01	12	VBAR_A	h	s1	1848	raised
+L01	13	4TRI	h	s1	2005	
+L01	14	PHI	h	s1	2150	in overlap
+L01	15	4STEM	m	s2	235	24 ligature; alt HASH4
+L01	16	VBAR_A	m	s2	409	triangle, top bar thin
+L01	17	C43	h	s2	599	
+L01	18	HASH4	m	s2	784	alt 4STEM
+L01	19	INF	h	s2	958	
+L01	20	PHI	h	s2	1120	
+L01	21	EBR	m	s2	1288	I/E-like bracket
+L01	22	HASH4	h	s2	1434	
+L01	23	INF	h	s2	1562	
+L01	24	PHI	h	s2	1719	
+L01	25	VBAR_A	h	s2	1882	
+L01	26	4TRI	h	s2	2027	
+L02	1	C43	h	s1	112	
+L02	2	PHI	h	s1	263	
+L02	3	HASH4	h	s1	420	
+L02	4	4STEM	m	s1	594	24 ligature; alt HASH4
+L02	5	C43	h	s1	756	
+L02	6	C43	h	s1	946	
+L02	7	INF	h	s1	1131	
+L02	8	EBR	h	s1	1305	C/[ bracket
+L02	9	4STEM	m	s1	1506	24 ligature; alt HASH4
+L02	10	HASH4	h	s1	1708	
+L02	11	INF	h	s1	1870	
+L02	12	PHI	h	s1	2027	
+L02	13	EBR	m	s1	2212	in overlap, [ bracket
+L02	14	PHI	h	s2	263	
+L02	15	VBAR_A	h	s2	431	
+L02	16	C43	h	s2	633	
+L02	17	VBAR_A	h	s2	806	
+L02	18	VBAR_A	h	s2	986	
+L02	19	C43	h	s2	1165	
+L02	20	4STEM	m	s2	1338	24 ligature; alt HASH4
+L02	21	PHI	m	s2	1501	three loops; alt DBL
+L02	22	PHI	h	s2	1635	
+L02	23	VBAR_A	h	s2	1798	
+L02	24	VBAR_A	h	s2	1921	
+L02	25	PHI	h	s2	2022	
+L03	1	4TRI	h	s1	106	
+L03	2	INF	h	s1	241	
+L03	3	C43	h	s1	403	
+L03	4	INF	h	s1	538	
+L03	5	VBAR_A	h	s1	700	
+L03	6	PHI	m	s1	857	loops side by side on stem (qo); alt DBL
+L03	7	4STEM	m	s1	1030	24 ligature; alt HASH4
+L03	8	PHI	h	s1	1165	
+L03	9	C43	h	s1	1338	
+L03	10	VBAR_A	m	s1	1501	open-looking triangle
+L03	11	4TRI	h	s1	1691	
+L03	12	C43	h	s1	1837	
+L03	13	PHI	h	s1	1994	
+L03	14	HASH4	h	s1	2162	in overlap
+L03	15	PHI	h	s2	241	
+L03	16	EBR	h	s2	347	
+L03	17	C43	h	s2	476	
+L03	18	C43	h	s2	655	
+L03	19	EBR	h	s2	812	
+L03	20	PHI	h	s2	941	
+L03	21	INF	h	s2	1081	
+L03	22	PHI	h	s2	1215	
+L03	23	C43	h	s2	1389	
+L03	24	HASH4	h	s2	1529	row rising
+L03	25	INF	m	s2	1635	row rising
+L03	26	C43	m	s2	1764	
+L03	27	C43	m	s2	1882	
+L03	28	VBAR_A	m	s2	2010	
+L04	1	C43	h	s1	123	
+L04	2	4STEM	m	s1	280	24 ligature; alt HASH4
+L04	3	VBAR_A	m	s1	398	
+L04	4	DBL	m	s1	532	8 on stem; alt PHI
+L04	5	4TRI	h	s1	672	
+L04	6	EBR	h	s1	823	
+L04	7	INF	h	s1	946	
+L04	8	VBAR_A	h	s1	1109	
+L04	9	HASH4	h	s1	1282	
+L04	10	INF	h	s1	1434	
+L04	11	PHI	h	s1	1574	
+L04	12	EBR	h	s1	1697	
+L04	13	EBR	h	s1	1792	
+L04	14	PHI	h	s1	1893	
+L04	15	VBAR_A	h	s1	2050	
+L04	16	C43	m	s1	2212	cut at edge; read as 43 in s2 overlap
+L04	17	C43	h	s2	280	
+L04	18	INF	h	s2	420	
+L04	19	PHI	m	s2	560	qo loops side by side on stem; alt DBL
+L04	20	4STEM	m	s2	694	24 ligature; alt HASH4
+L04	21	PHI	h	s2	823	
+L04	22	C43	h	s2	946	
+L04	23	VBAR_A	m	s2	1058	open-looking
+L04	24	PHI	h	s2	1204	
+L04	25	C43	h	s2	1322	
+L04	26	4TRI	h	s2	1417	
+L04	27	PHI	m	s2	1546	qo; alt DBL
+L04	28	PHI	h	s2	1652	
+L04	29	VBAR_A	h	s2	1803	
+L04	30	C43	m	s2	1926	
+L04	31	HASH4	l	s2	2022	alt 4STEM; top edge
+L05	1	4TRI	h	s1	106	
+L05	2	VBAR_A	m	s1	230	
+L05	3	4STEM	m	s1	386	24 ligature; alt HASH4
+L05	4	PHI	h	s1	532	
+L05	5	4TRI	h	s1	694	
+L05	6	PHI	h	s1	846	
+L05	7	PHI	m	s1	980	qo; alt DBL
+L05	8	EBR	h	s1	1109	
+L05	9	HASH4	h	s1	1277	
+L05	10	INF	h	s1	1417	
+L05	11	PHI	h	s1	1546	
+L05	12	4TRI	h	s1	1702	
+L05	13	PHI	h	s1	1837	
+L05	14	VBAR_A	h	s1	1988	
+L05	15	OTHER	m	s1	2162	filled dark triangle with dot; alt VBAR_A; in overlap
+L05	16	4TRI	h	s2	274	
+L05	17	ELOOP	h	s2	459	
+L05	18	INF	h	s2	616	
+L05	19	PHI	h	s2	750	
+L05	20	C43	h	s2	935	
+L05	21	BETA	h	s2	1064	
+L05	22	INF	h	s2	1165	
+L05	23	VBAR_A	h	s2	1316	
+L05	24	PHI	h	s2	1450	
+L05	25	PHI	h	s2	1562	
+L05	26	OTHER	l	s2	1680	L-shaped angle stroke; alt EBR
+L05	27	PHI	l	s2	1770	qo loop with tail
+L05	28	LOOPSTEM1	l	s2	1904	P-like loop on stem, top edge
+L05	29	OTHER	l	s2	1982	f/y-like hook, top edge
+L06	1	C43	h	s1	112	
+L06	2	HASH4	m	s1	269	alt 4STEM
+L06	3	PHI	h	s1	414	
+L06	4	4TRI	h	s1	571	
+L06	5	PHI	m	s1	739	qo; alt DBL
+L06	6	BETA	h	s1	879	
+L06	7	PHI	h	s1	986	
+L06	8	4STEM	m	s1	1165	24 ligature; alt HASH4
+L06	9	EBR	h	s1	1266	
+L06	10	BETA	h	s1	1372	
+L06	11	PHI	m	s1	1551	qo; alt DBL
+L06	12	C43	h	s1	1658	
+L06	13	OTHER	m	s1	1792	filled dark triangle; alt VBAR_A
+L06	14	VBAR_B	m	s1	1926	alt VBAR_A
+L06	15	C43	h	s1	2055	
+L06	16	4STEM	m	s1	2184	24 ligature; in overlap
+L06	17	4TRI	h	s2	286	
+L06	18	VBAR_A	h	s2	442	
+L06	19	VBAR_A	m	s2	605	open, thin top
+L06	20	PHI	m	s2	739	qo; alt DBL
+L06	21	INF	h	s2	868	
+L06	22	VBAR_B	m	s2	1025	alt VBAR_A
+L06	23	4STEM	m	s2	1187	24 ligature; alt HASH4
+L06	24	PHI	m	s2	1344	qo; alt DBL
+L06	25	INF	h	s2	1456	
+L06	26	PHI	h	s2	1602	
+L06	27	VBAR_B	l	s2	1725	alt VBAR_A
+L06	28	PLAIN	m	s2	1994	si vous

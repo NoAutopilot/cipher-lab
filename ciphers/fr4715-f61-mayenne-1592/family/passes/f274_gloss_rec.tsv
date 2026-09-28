@@ -1,0 +1,45 @@
+# f.274r period gloss, RECONCILED by the F61-FAMILY worker (Fable) from the leaf itself (sheets/f274_bands_debug.jpg at
+# native resolution and the s2 crops) against the four blind Sonnet passes: f274_glossA/B (first cut, which lost the right
+# half of every gloss row -- the readers assigned segment-2 words to the wrong band; voided as the brief's crop error),
+# f274_glossA2/B2 (recut). x0 = native x within the region (2050,3260,2700,1040), read off the debug overlay; src = which
+# passes read the word (A2/B2/B) or 'rec' for a word read only by the reconciler from the leaf (grade M for that pair).
+# 'le' above the three signs at the end of the clear line above band 1 is outside the bands and not used.
+line	pos	kind	word	conf	src	x0
+L01	1	gloss	duc	h	A2,B2,A,B	60
+L01	2	gloss	de	h	A2,B2,A,B	220
+L01	3	gloss	feria	h	A2,B2,A,B	480
+L01	4	gloss	a	h	A2,B2,A,B	920
+L01	5	gloss	escript	m	A2	1150
+L01	6	gloss	a	m	rec	1690
+L01	7	gloss	quelques	h	A2,B2	1860
+L02	1	gloss	cardinaux	m	A2:Card[inal] de mayne,B:Cardin[al] ma?ys,A:Cardin[al]	190
+L02	2	gloss	que	h	A2,B,A	1060
+L02	3	gloss	ces	h	A2,A,B(as L01)	1380
+L02	4	gloss	affaires	h	A2,B(as L01)	1770
+L02	5	gloss	se	m	B(as L01)	2400
+L03	1	gloss	seschauffoyent	h	A2,A,B	60
+L03	2	gloss	par	h	A2,A,B	1000
+L03	3	gloss	dela	h	A2,A,B	1110
+L03	4	gloss	a	m	B(as L02)	1660
+L03	5	gloss	leur	m	B(as L02)	1920
+L03	6	gloss	aduantaige	m	B(as L02)	2180
+L04	1	gloss	plus	h	A2,A,B	320
+L04	2	gloss	quelles	h	A2,A,B	800
+L04	3	gloss	nauoyent	m	A2:na?ent(as L03),B2	1450
+L04	4	gloss	encores	h	A2(as L03),B(as L03)	2060
+L05	1	gloss	fait	h	A2,A,B	60
+L05	2	gloss	Je	h	A2,A,B	320
+L05	3	gloss	croy	h	A2,A,B	550
+L05	4	gloss	que	h	A2,A,B	820
+L05	5	gloss	cest	h	A2,A,B	1130
+L05	6	gloss	pour	h	A2,B(as L04)	1520
+L05	7	gloss	amuser	h	A2,B(as L04)	1900
+L05	8	gloss	le	m	B:ce(as L04)	2340
+L06	1	gloss	monde	h	A2,A,B	80
+L06	2	gloss	comme	h	A2,A,B	430
+L06	3	gloss	ilz	h	A2,A,B	770
+L06	4	gloss	ont	h	A2,A,B	990
+L06	5	gloss	fait	h	A2,B;A:fault	1280
+L06	6	gloss	tousjours	h	A2,B(as L05)	1700
+L06	7	inline	si	h	A2,A,B	2450
+L06	8	inline	vous	h	A2,A,B	2530
