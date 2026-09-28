@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """WORK-QUEUE.tsv: the single orchestrator's job list, pulled by the dispatcher routine on the other account.
 
-Columns: job_id, account (owner|other), brief, model, cap_usd, box_min, status, added, note.
+Columns: job_id, account (owner|other|third), brief, model, cap_usd, box_min, status, added, note.
 status is one of: queued | claimed <session_id> <UTC> | done <UTC> | bounced <UTC> <reason>.
 
   python3 tools/work_queue.py --check                      validate the file (exit 1 on a malformed row)
@@ -16,7 +16,7 @@ import argparse, csv, os, sys, datetime
 HERE = os.path.dirname(os.path.abspath(__file__))
 PATH = os.path.join(os.path.dirname(HERE), "WORK-QUEUE.tsv")
 COLS = ["job_id", "account", "brief", "model", "cap_usd", "box_min", "status", "added", "note"]
-ACCOUNTS = ("owner", "other")
+ACCOUNTS = ("owner", "other", "third")
 
 def now(): return datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M")
 def load():

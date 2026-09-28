@@ -47,6 +47,13 @@ shorthand (H24), account 2 takes the correspondent pools (ARM-CORR: H25 Monroe P
 the queue; the owner's desk holds ASKS 80 (Brooklyn private Livingston letter, moved up) and 66 (editors, follow-up in a
 week); ASKS 77 (Brant Box 37) is deprioritised because that key family is the printed-form type and the target is not.
 
+**Third account, 28 Sept 2026 about 02:1x UTC (owner's offer).** A third Claude account with GitHub access joins as
+a second worker pool: a standing dispatcher there polls WORK-QUEUE.tsv rows tagged `third` hourly (the account-2
+pattern), and one standing runner, Armstrong line B, works the committed target with its own hypothesis list in
+ciphers/armstrong-madison-1808/line-b/ (everything on disk as evidence, the paused ChatGPT checkpoints as leads to
+verify, never the campaign runner's rows). Bootstrap paste: .claude/briefs/runs/2026-09-28-account3-bootstrap.md. The
+orchestrator sends verifiers and long-box jobs there first while the owner account carries the seven-day warning.
+
 ## Scoreboard (the orchestrator updates at each check-in)
 
 | UTC | Campaign | Steps run | Spent | Hypotheses open / done / dropped | Verified readings |
