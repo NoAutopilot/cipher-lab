@@ -1,0 +1,103 @@
+frame	flag	note
+101	none	clear prose, letter to Madison + marginal note re Capt S
+102	none	clear prose, continuation
+103	none	clear prose, letter closing signed Irving
+104	none	clear prose
+105	none	clear prose
+106	none	clear prose
+107	none	clear prose
+108	none	clear prose
+109	none	clear prose
+110	none	clear prose
+111	none	clear prose
+112	none	clear prose
+113	none	clear prose
+114	none	clear prose
+115	none	clear prose
+116	none	clear prose
+117	none	clear prose
+118	none	clear prose, signature page + closing
+119	none	blank cover + Spanish-language letter, clear prose
+120	none	blank cover + English letter, clear prose
+121	none	clear prose
+122	none	clear prose, troop-count figures in running sentences (35,000 men etc), not code
+123	none	clear prose
+124	none	clear prose
+125	none	clear prose
+126	none	clear prose
+127	none	clear prose
+128	none	clear prose
+129	none	clear prose
+130	none	clear prose
+131	none	clear prose + narrow blank strip
+132	none	mostly-blank leaf + duplicate letter opening, clear prose
+133	none	clear prose
+134	none	clear prose
+135	blank	faint/blank leaf, no legible text
+136	none	printed Gazeta de Madrid, clear prose
+137	none	printed prose
+138	none	printed prose
+139	none	clear prose, ship names/dates, not code
+140	none	clear prose
+141	none	clear prose, sum of money ($33,864), not code
+142	none	clear prose
+143	none	clear prose
+144	none	clear prose
+145	none	clear prose
+146	none	clear prose
+147	none	clear prose
+148	none	clear prose
+149	none	clear prose
+150	none	clear prose
+151	none	clear prose
+152	none	printed title page, clear
+153	none	printed prose
+154	none	printed prose
+155	none	printed prose
+156	none	printed prose
+157	none	printed prose
+158	none	printed prose
+159	none	printed prose
+160	none	printed prose
+161	none	printed prose
+162	none	printed prose
+163	none	printed prose
+164	none	printed prose
+165	none	printed prose
+166	none	printed prose
+167	none	printed prose, footnote/page numbers only
+168	none	printed prose
+169	none	printed prose
+170	none	printed prose
+171	none	printed prose
+172	none	printed prose
+173	none	printed prose
+174	none	printed section-title page ("Pieces justificatives") + blank
+175	none	printed treaty text, clear
+176	none	printed treaty text (numbered articles), clear
+177	none	printed treaty text, clear
+178	none	printed treaty text, clear
+179	none	printed treaty text, clear
+180	none	printed treaty text, clear
+181	none	printed treaty text, clear
+182	none	printed treaty text + mostly blank verso
+183	none	printed prose
+184	none	printed prose
+185	none	printed prose
+186	none	printed prose
+187	none	printed prose
+188	none	printed prose
+189	none	printed prose
+190	none	clear manuscript letter to Madison
+191	none	clear manuscript letter
+192	none	clear manuscript letter
+193	none	clear manuscript letter (duplicate of earlier despatch)
+194	none	clear manuscript letter, troop-count figures in prose, not code
+195	none	clear manuscript letter
+196	none	clear manuscript letter
+197	none	clear manuscript letter
+198	none	faded/overlaid but legible prose
+199	none	faded but legible manuscript letter to Madison
+200	none	clear manuscript letter
+m30-65	code	right-hand page, mid-paragraph: run of ~5 bare numbers (3-4 digit, e.g. "150. 1779. 1023. 1028. 654.") inserted between "great reliance" and "in a late conversation observed", unlike surrounding prose
+m30-66	none	clear prose, list of names/lords
