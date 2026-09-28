@@ -1,0 +1,54 @@
+H113 loop classification: controls 18/26 on the expected side; GATE (>= 90%): FAIL
+control tile 1 f108sheetB_L02/1 G1 -> 'two stacked vertically (figure-8)' ok
+control tile 2 f188r/4 period_o -> 'single' MISS
+control tile 5 f101r/8 period_e -> 'two stacked vertically (figure-8)' ok
+control tile 6 f188r/13 period_e -> 'single' ok
+control tile 9 f101r/34 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 11 f101r/40 period_o -> 'none' MISS
+control tile 14 f108sheetB_L03/1 G1 -> 'trefoil or clover of three (one loop above two)' ok
+control tile 15 f101r/36 period_e -> 'other' MISS
+control tile 16 f101r/6 period_e -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 17 f101r/31 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 18 f101r/27 period_e -> 'two stacked vertically (figure-8)' ok
+control tile 19 f101r/33 period_e -> 'trefoil or clover of three (one loop above two)' ok
+control tile 20 f101r/17 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 22 f188r/5 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 26 f108sheetB_L03/14 G3 -> 'trefoil or clover of three (one loop above two)' ok
+control tile 34 f188r/9 period_e -> 'single' ok
+control tile 35 f188r/15 period_e -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 37 f188r/10 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 38 f101r/38 period_e -> 'other' MISS
+control tile 42 f108sheetB_L03/13 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 43 f188r/21 period_o -> 'single' MISS
+control tile 46 f188r/12 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 47 f188r/25 period_o -> 'two side by side at the top of the stem with nothing above' ok
+control tile 48 f108sheetB_L03/8 G3 -> 'two stacked vertically (figure-8)' ok
+control tile 50 f108sheetB_L03/12 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 51 f188r/11 period_e -> 'other' MISS
+target L04/5: draft PHI -> 'two stacked vertically (figure-8)' -> PHI
+target L04/6: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/7: draft PHI -> 'other' -> PHI
+target L04/8: draft OTHER -> 'two side by side at the top of the stem with nothing above' -> OTHER
+target L04/11: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/13: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/14: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/15: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/17: draft PHI -> 'two side by side at the top of the stem with nothing above' -> PHI
+target L04/18: draft PHI -> 'other' -> PHI
+target L04/21: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/24: draft PHI -> 'two stacked vertically (figure-8)' -> PHI
+target L04/26: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L05/7: draft LOOPSTEM1 -> 'other' -> LOOPSTEM1
+target L05/8: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L05/10: draft OTHER -> 'two side by side at the top of the stem with nothing above' -> OTHER
+target L05/17: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L05/19: draft OTHER -> 'two side by side at the top of the stem with nothing above' -> OTHER
+target L06/4: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/6: draft SBS -> 'two side by side at the top of the stem with nothing above' -> SBS
+target L06/9: draft SBS -> 'two side by side at the top of the stem with nothing above' -> SBS
+target L06/14: draft SBS -> 'other' -> SBS
+target L06/16: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/19: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/25: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/37: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+relabel summary: DBL->DBL:5 LOOPSTEM1->LOOPSTEM1:1 OTHER->OTHER:3 PHI->PHI:14 SBS->SBS:3

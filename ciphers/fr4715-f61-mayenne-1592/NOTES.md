@@ -2494,3 +2494,19 @@ Read together with H114 (rank 2 of 201 on another seed): a consistent lean towar
 1-2% on two nulls, just outside this step's gate, so no "signal on f.108r" is claimed. The judge (H107, H112) saw nothing
 on the same rows; the two instruments disagree at this length and neither licenses a reading. The deciding material is
 still the person's gloss of these rows (ASKS 88). No reading, no class change.
+
+## Campaign step H113 (28 Sept 2026, 18:00-18:05 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+H108's loop classification again, with controls from the f.108/family hands only (`scripts/f61loop108r.py build-h113 |
+score-h113`, sheets `images/h113/`, key `f61loop108r_h113_tiles.tsv`, reply verbatim `scripts/read_call_H113.tsv`,
+result `f61loop108r_h113_result.txt`; prompt pushed fe57d7d5 before the call; the reader read the six sheets only).
+26 targets, 26 controls: 20 H65 period-glossed tiles (10 o, 10 e, cut back out of the H65 sheets) and 6 H26 f.108 tiles.
+
+Controls **18/26 on the expected side -> gate (>= 90%) FAIL, no relabel**. By source: H26 f.108 tiles 6/6; H65 period
+tiles 12/20 (o 7/10, e 5/10) -- the reader called several of the pale period-hand tiles "single", "other" or ordinary
+handwriting ("hogo", "Eogo"), i.e. the H65 tiles re-cut from their contact sheets are too faint after re-contrast for this
+reader, not a shape failure it shows on the f.108r hand. This is the second failure of the same instrument (H108 13/18,
+H113 18/26) on the same question, each for a different control-side reason; by CLAUDE.md rule 3's unchanged-approach
+paragraph the loop relabel of f.108r L04-L06 is logged **untested by this tile classification**, not re-briefed a third
+time. What would settle it is a different instrument or material: the person's gloss (ASKS 88) gives o/b vs e/r directly
+under each sign. No reading, no class change.
