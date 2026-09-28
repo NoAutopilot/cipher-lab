@@ -1,0 +1,5 @@
+known f.61 span lines, 14 cells: shuffled-target ranks [97, 96, 116, 169, 14] -> H127 STANDS
+f.108v, 14 cells: shuffled-target ranks [66, 186, 135, 41, 97] -> H127 STANDS
+f.108v, HASH4=i/x: shuffled-target ranks [27, 172, 179, 49, 107] -> H127 STANDS
+f.108r L04-L06, 14 cells: shuffled-target ranks [173, 149, 53, 23, 101] -> H127 STANDS
+f.108r L04-L06, HASH4=i/x: shuffled-target ranks [195, 191, 128, 6, 72] -> H127 STANDS

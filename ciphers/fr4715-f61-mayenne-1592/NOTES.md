@@ -2678,3 +2678,22 @@ statistic that frequency cannot produce. On f.108r the margin is thin (0.183 vs 
 Post-hoc sanity check, not pre-registered (run once after the result, reported as such): f.108v with its signs shuffled gives
 the fitted map a gain of -0.008 (rank 120) and 0.027 (rank 40) on two shuffles -- the statistic behaves as a null on a
 shuffled target. H128 makes that check formal. No reading, no class change.
+
+## Campaign step H128 (28 Sept 2026, 18:35-18:40 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61seqgain_shuffle.py` (pushed before the run; `f61seqgain_shuffle_result.txt`): rule 3 (ARM-C1) for H127 -- every
+H127 text with its signs shuffled within lines (seeds 1281-1285), run through the same sequence-gain rank as a real target.
+Gate: shuffled versions rank > 10 of 201 in at least 4 of 5.
+
+| text | shuffled-target ranks | H127 |
+|---|---|---|
+| known f.61 span lines, 14 cells | 97, 96, 116, 169, 14 | stands |
+| f.108v, 14 cells | 66, 186, 135, 41, 97 | stands |
+| f.108v, HASH4 = i/x | 27, 172, 179, 49, 107 | stands |
+| f.108r L04-L06, 14 cells | 173, 149, 53, 23, 101 | stands |
+| f.108r L04-L06, HASH4 = i/x | 195, 191, 128, 6, 72 | stands |
+
+The sequence-gain statistic behaves as a null on shuffled text (one shuffle in 25 inside the top 10), so the H127 results
+stand as gates: f.108v is enciphered in f.61's 14 cells (rank 1 of 201, gain about twice the best permuted), with f.108r's
+L04-L06 thinly the same. This is evidence about the cell map on the family leaves, not a reading of any leaf; the within-pair
+letters are the beam's (about 0.86 right on known text, H116/H121) on a grade-M transcription. No class change.
