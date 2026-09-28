@@ -952,3 +952,60 @@ H17). No reading, no class change, rule 10 wording throughout.
 no decode files (control-only and gated runs write none). **Cost:** CPU only (each 3-seed battery 20 s to a few
 minutes), no vision calls, no network requests, no credentials -- recorded as 2.0 USD against the 4 est (the
 runner's own turns). No AskUserQuestion, no other target touched.
+
+## Campaign step H28 (28 Sept 2026, 02:04-02:07 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H28: the known answer -- the one phrase Tomokiyo reads from this
+letter, "la gubernation d'ispagnia" (22 letters after folding, v->u) -- dragged along the 262 atlas-coded signs
+(`passes/letter_codes_v3.tsv`, H15/H10) as a PATTERN, not through the key: same code -> same letter within a
+placement (and, unless homophones are allowed, different codes -> different letters), HOOK a per-position wildcard
+(the H14 split failed; 54 tokens), the five shapes the key-as-read calls null (OMEGABAR, EIGHT, EM, PI, ESS; 47
+tokens) skippable up to six times per placement, and, in relaxed runs, up to two positions whose code conflicts with
+the placement (a misread sign) tolerated. A different instrument from H2's `crib_search.py`, which needed key-coded
+passes (the Raince/Salviati lesson) and read 3/22 at best.
+
+**Tool (Usage 8, shared):** `tools/crib_pattern.py` (`--wild`, `--skip --max-skip`, `--homophones`, `--max-err`,
+`--group-col page` so no placement crosses the p.[1]/p.[2] boundary, `--compare` counts agreements with a key as
+read). Each consistent placement implies a partial key; its score is that key applied to the WHOLE text, the mean
+log unigram probability of the letters produced under it16 (the H4 statistic), so a true placement is one whose
+codes carry Italian frequencies over the rest of the letter too. Control (rule 3): the same drag over 200
+shuffled-ORDER copies of each page's sequence (N, K, HOOK and null shares unchanged; the placement count and the
+best score both depend on order, so the control can differ from the target). Offline test
+`tools/tests/test_crib_pattern.py`: a synthetic it16 text of this design (six letters merged into one wild code,
+17% nulls over five skip codes, the crib embedded) yields exactly one consistent placement, the true one, its
+implied key right on all 11 non-wild codes, score above every one of 30 shuffles (which place nothing) -- also with
+homophones and one tolerated error. The instrument has power on a clean design-matched synthetic; passes.
+
+**Result: negative with control -- the phrase does not place in the letter as coded, at any tolerance, above
+chance.** it16 corpora, 200 shuffles per row:
+
+| constraints | REAL placements (distinct starts) | shuffles: placements mean / p95 / max | REAL best score | shuffles best score mean / p95 | rank of real |
+|---|---|---|---|---|---|
+| strict, max-skip 6 | **0** | 0.0 / 0 / 4 | -- | -2.920 / -- | 200/200 shuffles at or above (0 = floor) |
+| strict, max-err 1 | 0 | 1.3 / 6 / 91 | -- | -2.800 / -2.725 | 200/200 |
+| strict, max-err 2 | 0 | 10.9 / 42 / 454 | -- | -2.764 / -2.570 | 200/200 |
+| homophones | 0 | 5.2 / 13 / 352 | -- | -2.687 / -2.565 | 200/200 |
+| homophones, max-err 1 | 12 (5 starts) | 46.6 / 186 / 1074 | -2.547 (cov 162) | -2.616 / -2.413 | placements 104/200, score 51/200 at or above |
+| homophones, max-err 2 | 161 (23 starts) | 255.4 / 923 / 1804 | -2.547 | -2.499 / -2.367 | placements 98/200, score 148/200 |
+
+Reading: under the strict pattern the real sequence admits NO placement even with two misreads tolerated, while
+shuffled copies of the same tokens admit some (mean 10.9 at two errors) -- the real order is, if anything, more
+hostile to the crib's letter-repeat pattern than a random order, consistent with H12's finding that the coded text
+is more repetitive than Italian (IC 0.0858 vs 0.0754). With homophones allowed and one or two misreads tolerated,
+placements appear (the best at start 46-47, p.[1] line 2, implied key DIAMOND=n NINE=e OMEGABAR=a SEVEN=i THREE=a
+TWO=o ...) but their number and their best score sit at the shuffled controls' median, and the best placement's
+key agrees with the key-as-read on 0 of 14 codes. Nothing here is an anchor. A caveat measured on the synthetic while writing the test: with `--max-err` above 0 the unigram score can be gamed -- a variant of the true placement that declares one rare-letter code an error outscores the true placement (true placement at rank 3 of 9 at one error, 5 of 19 at two, on the synthetic; first of 1 strict and first of 3 with homophones alone) -- so the two `max-err` rows above are read by their placement COUNT against the shuffled control (at the median both times), not by their best score; the strict and homophones-only rows, which rank the true placement first on the synthetic, both read zero on the letter. **Conditional on the transcription
+(rule 2):** the pass pair behind p.[1] agreed at 71.1% and p.[2] at 64.0%, so a 22-letter run with 3+ misread
+non-HOOK signs, or a null shape outside the five assumed, or a HOOK-family sign transcribed as a distinct code,
+would be missed at max-err 2; the negative is "the phrase is not findable as a pattern in this coding," not
+"the phrase is not in the letter." It also weakens the assumption behind the campaign's early steps that Tomokiyo's
+phrase sits in the p.[2] block or an early p.[1] line as a run of shapes readable shape-for-shape from his table.
+
+**What this suggests:** the coding, not the search, is now the limit on the crib route too -- the same conclusion
+as H22 from the solver side. H27 (partial HOOK split from the 16 agreed boxes) and a third-eye pass on the 68
+R-graded p.[1] boxes are the transcription steps; a re-run of this tool is one command once either lands.
+
+**Controls:** the shuffled-order battery in every row and the synthetic positive control in the test. No reading, no
+class change, rule 10 wording. **Files:** `tools/crib_pattern.py`, `tools/tests/test_crib_pattern.py`, SYSTEM.md
+row; outputs in the table above (seconds of CPU per row). **Cost:** CPU only, no vision calls, no requests, no
+credentials -- recorded as 1.0 USD (the est). No AskUserQuestion, no other target touched.
