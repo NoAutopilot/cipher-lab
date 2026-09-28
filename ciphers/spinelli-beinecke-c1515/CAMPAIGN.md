@@ -4,7 +4,7 @@ started: 2026-09-27 20:47 UTC
 daily_budget_usd: 400
 spent_today_usd: 204.18
 spent_day: 2026-09-28
-closed:
+closed: 2026-09-28 15:0x UTC by the orchestrator -- VERIFY-SPINELLI-2 (14:28) found this leaf deciphered in public on 24 Mar 2017 (Cipherbrain, Schmeh; comments #7-#13 read both cipher passages with Domnina's 2016 key): class N0, so the campaign goal (a reading at N3 or better) cannot be met by further steps. Our own control-backed decode under the same published key agrees (AUDIT.md). Open rows H36 H37 H43 H44 H21b are not run. Runner 4 retired.
 
 ## Attempts already made
 

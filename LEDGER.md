@@ -1304,3 +1304,5 @@ the end of every wake.
 | 28 Sept 2026 | spinelli runner 4 | session_01MHf6EKHuvKLG8nh18jCwqR | owner | Opus 5.5 | continuous | running from 14:17 | trig_01XmnhA3J4cWaSK8Cu6tTvRr :55 |
 | 28 Sept 2026 | VERIFY-SPINELLI-2 | session_01XuDMPYxhtzvBm8xU2z4ugJ | owner | Opus 5.5 | cap 30 | running from 14:17 | novelty first |
 | 28 Sept 2026 | DECODE-OPEN | session_015RJ8kumxcx2XKtHHU1zzsU | owner | Opus 5.5 | cap 30 | running from 14:51 | access test, Mercy 958-965 |
+| 28 Sept 2026 | VERIFY-SPINELLI-2 | session_01XuDMPYxhtzvBm8xU2z4ugJ | owner | Opus 5.5 | 4.34 | done 14:28 | N0: Cipherbrain 2017 decipherment of this leaf |
+| 28 Sept 2026 | spinelli runner 4 | session_01MHf6EKHuvKLG8nh18jCwqR | owner | Opus 5.5 | see get_session | retired 15:0x, campaign closed N0 | H42 |
