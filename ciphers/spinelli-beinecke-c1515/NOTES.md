@@ -788,3 +788,28 @@ same-hand plaintext resource. The census is closed; no H20d.
 **Requests:** collections.library.yale.edu 5 (this campaign's Beinecke total today: 6+4+6+5+5 = 26 across five
 steps, always 2 s apart, all HTTP 200). **Cost:** recorded as 0.3 USD. No credentials, no AskUserQuestion, rule 10
 wording, no other target touched.
+
+## Campaign step H13 (28 Sept 2026, 00:44-00:45 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H13: correct `keys/key_spinelli_c1515.tsv`'s word-code rows from
+the key image (H2's discrepancy).
+
+**Done.** From this runner's direct look at `sources/cryptiana/web/img/spinelly1515.png` (H2): the image has SIX
+word-code symbols under its five headers. Edits, all grade M (read by eye, no calibration): (1) the 4-with-plus
+ladder INTAKE-SPINELLI filed under "Prince of Castile" moves to "Emperor King of Arragon" as that header's second
+symbol (with the 2-with-bar, now marked row 1 of 2); (2) a new row, "capital H shape with curled serifs" = "Prince of
+Castile" -- the sixth symbol, missed by INTAKE's two blind passes (both counted five); it is the atlas code HCURL,
+which occurs 7 times in the 1519 letter, the only key word-code shape seen there; (3) a header paragraph recording
+that the letter's own inventory goes beyond the table (about 48% of signs unmapped) and that the shape-for-shape
+application fails a shuffled-key control (H4), so the table is a period-adjacent reconstruction of the 1515 cipher,
+not a key that opens the 1519 letter as read; total symbols 43 (was 42). `tools/key_design.py` rebuilt
+KEY-DESIGN.tsv (164 rows, 108 usable) and `--check` passes; `tools/decode_key.py`'s loader reads the table (44 rows).
+No reading, no class change. **Cost:** recorded as 0.3 USD (est 0.5). No requests.
+
+## Campaign step H5 (28 Sept 2026, 00:45 UTC) -- dropped as moot
+
+Hypothesis H5 asked whether q, x, z (the key's three blank columns) appear in H4's decode. H4 produced no decode: the
+key as read maps 35% of the signs and fails its shuffled-key control, so nothing can be said about q/x/z from it; the
+question only becomes testable with a key that reads the letter (or Domnina's own Fig.1, H8). Dropped with that
+reason; the plaintext frequency argument stands on its own (q, x, z together are under 1% of Italian text, so their
+absence from a 45-row reconstruction built from a few letters is expected either way).
