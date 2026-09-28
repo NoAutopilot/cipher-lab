@@ -2891,3 +2891,43 @@ No reading of the target, no class change; rule 10: catalogued NARA despatches, 
 called new or first. Requests: none (all images from the H31 PDFs). Vision: 2 of 4 subagent calls (Sonnet, 152k and
 329k tokens, 10 and 23 minutes) plus this runner's three looks (the two-frame view, two 3x strips). Cost: get_session
 carries no cost figure; about 6 USD by H21's rate -- `--spend` records 6 against the row's 8.
+
+## Campaign step H38 (28 Sept 2026, 05:41-06:10 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H38 (from
+H33): the last coded despatch of the M31 reel 12 run -- frames 426-429 -- into the legation cipher pool, for the
+record and the scout; the record sweeps of the unswept reels need twelve more calls and stay in H39.
+
+**Material.** Frame 426 heads "Private No 24, In the cypher of the Legation, Duplicate, Madrid Dec 22 1807" (Erving to
+Madison); coded pages 426 right, 427 both, 428 left (lower half) and right (upper part); 429 is the closing, signature
+and a postscript in clear (H31's screener flag on it was the letter's end, not code). Embedded microfilm images from
+the H31 PDF (1716-1804 px per spread), band crops by `h29/band_cut.py --scale 2.5` (`h38/MANIFEST.tsv`).
+
+**Reads.** Four blind Sonnet calls: 426R 97 groups, 427L 169, 427R 153, 428L 55 + 428R 79 = 553 groups; every reader
+reports the recurring cursive "4" that reads like an "A" (resolved by recurring values), gloss alignment mostly low
+or medium confidence, and 1651 = "the" at high confidence wherever the gloss is legible (six lines on 427R alone);
+`h38/reads/`.
+
+**Pool after H38 (`h32/legation_groups.tsv`, twelve coded pages of four despatches; `h38/summary.txt`,
+`h38/screen_output.txt`): 1,050 groups, 1,030 clean digits, 484 distinct values, 500 glossed; with H26's 211 about
+1,260 groups of the Madrid legation cipher on file.** Commonest values: 133 x41, 1651 x34 (+14 read as 1657 in the
+faint hand), 244 x20, 624 x19, 1481 x17, 926 x14, 69 x14, 1362 x12, 1114 x11, 1578 x10, 525 x10.
+
+| check | number |
+|---|---|
+| same-table check vs H26's 24 Mar 1807 letter (128 distinct) | 82 distinct values shared vs random-draw null mean 36.4, p95 44 -- one table across all five despatches |
+| target overlap (484 legation distinct vs the target's 216) | 66 shared vs random null mean 53.8, p05 44, p95 63 -- just above the null, which at 484 of 1,700 values drawn is the range effect of two 1-1700 codes, not a shared vocabulary: see the next row |
+| the 12 commonest legation values (21% of the stream; 133 and 1651 alone are 7%) in the target's 369 groups | expected about 77 at the legation rate, observed 0 |
+| `corr/screen.py` at n=1,030 | units 0/1 share 0.23 vs the target's 0.59; above 1700 0.006 vs 0.09; under 100 0.09 vs 0.36; top-20 overlap 18/1,030 (chance 1.0 for >= 3); **MISS** |
+
+Verdict for the campaign: done. The Madrid legation cipher is not the target's code at n=1,030 (fourth screen, the
+same verdict as at 211, 238 and 489; the target never uses the cipher's "the" or "of" once), and the pool is complete
+for the reel: every coded frame H31's sweep of frames 381-480 found is now read. For the scout (rule 10 wording: a
+catalogued NARA despatch series with the period's own interlinear decode): about 1,260 groups of a 1807 US Madrid
+legation private cipher, 500 of them glossed, values 1-1698, syllable and word entries mixed, the/of at 1651/133 --
+a key-recovery candidate in its own right, not for this target; digits M throughout (faint microfilm; recurring
+values corroborate the commonest), glosses C where they recur consistently, M otherwise.
+
+No reading of the target, no class change. Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 175k-239k tokens,
+13-25 minutes each) plus this runner's one look (the four-frame view). Cost: get_session carries no cost figure;
+about 8 USD by H21's rate -- `--spend` records 8 against the row's 12.
