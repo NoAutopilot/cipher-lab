@@ -1513,3 +1513,14 @@ fetched 45%: 39 Spanish-language keys; 7 with a date range touching 1640-1660, a
 2 Spanish keys undated. **A partial search result (45% of the key listing), not a negative** (rule 10 wording:
 "not found in the fetched slice, searched by status/language/date on 28 Sept 2026"); pages 59-128 remain (H18).
 No reading change, no grade change.
+
+## Campaign step H19 (2026-09-28 00:51-00:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** Bookkeeping the close-out requires (CLAUDE.md Usage 8a): `KEY-OFFICES.tsv` gains this
+key's row (office: Spanish Netherlands government, the governor-general's secretariat, inferred; correspondents;
+1648; the design as H2/H16 describe it; BnF Espagnol 144 f.22r-22v; key `ours`, N3), `tools/key_design.py` rebuilt
+`KEY-DESIGN.tsv` (the mercy row now carries the office instead of "(folder)"; `--check` exits 0), and
+`tools/design_prior.py --no-write` on `cipher_codes_522.tsv` reads: multi-sign d=0.14 (envelope 0.56) plausible,
+fine ranking homophonic 0.22 < nomenclator 0.25 < syllabary 0.34 < alphabet substitution 0.40; nearest key is this
+target's own (d=0.01), next Thurloe's Johnson nomenclator (synthetic, d=0.16). The prior agrees with the design on
+file. Disk only. No reading change, no grade change.
