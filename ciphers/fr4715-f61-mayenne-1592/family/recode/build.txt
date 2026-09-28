@@ -1,0 +1,5 @@
+f101r_loops: anchors form 1 PHI 12, form 2 SBS 30, form 3 INF 13 (6 sheet(s)); query 67 + held-out PHI 2, SBS 4, INF 2 = 75 tiles (8 sheets)
+f101r_4tri: anchors form 1 4TRI 6, form 2 4HOOK 4 (1 sheet(s)); query 84 + held-out 4TRI 2, 4HOOK 2 = 88 tiles (9 sheets)
+f101r_vbar: anchors form 1 VBAR_A 14, form 2 VBAR_B 12 (3 sheet(s)); query 21 + held-out VBAR_A 2, VBAR_B 2 = 25 tiles (3 sheets)
+f188r_loops: anchors form 1 PHI 8, form 2 SBS 14, form 3 INF 13 (4 sheet(s)); query 78 + held-out PHI 2, SBS 2, INF 2 = 84 tiles (9 sheets)
+f188r_4tri: anchors form 1 4TRI 8, form 2 4HOOK 7 (2 sheet(s)); query 25 + held-out 4TRI 2, 4HOOK 2 = 29 tiles (3 sheets)

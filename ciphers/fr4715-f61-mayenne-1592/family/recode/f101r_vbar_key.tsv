@@ -1,0 +1,27 @@
+# answer key -- never shown to the reader. forms: form 1 = VBAR_A, form 2 = VBAR_B
+tile	kind	leaf	line	pos	src	period_letter	held_class	segment	x_px
+1	heldout	f101r	L25	26	VBAR_A	s	VBAR_B	s2	1300.0
+2	query	f101r	L33	28	VBAR_A	f	-	s2	1430.0
+3	heldout	f101r	L30	5	VBAR_A	s	VBAR_B	s1	450.0
+4	heldout	f101r	L24	1	VBAR_A	t	VBAR_A	s1	120.0
+5	query	f101r	L32	25	VBAR_A	g	-	s2	1310.0
+6	query	f101r	L41	46	VBAR_A	r	-	s4	720.0
+7	query	f101r	L30	63	VBAR_A	l	-	s5	1060.0
+8	query	f101r	L33	10	VBAR_A	n	-	s1	940.0
+9	query	f101r	L35	55	VBAR_A	f	-	s5	130.0
+10	query	f101r	L41	42	VBAR_A	i	-	s4	330.0
+11	query	f101r	L27	29	VBAR_A	a	-	s3	420.0
+12	query	f101r	L06	3	VBAR_A	-	-	s1	440.0
+13	query	f101r	L11	59	VBAR_A	-	-	s5	320.0
+14	query	f101r	L42	40	VBAR_A	g	-	s3	900.0
+15	query	f101r	L15	2	VBAR_A	-	-	s1	265.0
+16	query	f101r	L35	1	VBAR_A	-	-	s1	70.0
+17	query	f101r	L42	56	VBAR_A	a	-	s4	1280.0
+18	query	f101r	L13	59	VBAR_A	g	-	s5	680.0
+19	query	f101r	L20	19	VBAR_A	-	-	s2	530.0
+20	heldout	f101r	L15	42	VBAR_A	t	VBAR_A	s3	1380.0
+21	query	f101r	L44	1	VBAR_A	d	-	s1	20.0
+22	query	f101r	L33	50	VBAR_A	a	-	s4	940.0
+23	query	f101r	L42	1	VBAR_A	i	-	s1	10.0
+24	query	f101r	L13	50	VBAR_A	u	-	s4	1100.0
+25	query	f101r	L21	23	VBAR_A	s	-	s2	990.0
