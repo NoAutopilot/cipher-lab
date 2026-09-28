@@ -1,0 +1,1364 @@
+SET S00
+  X1 (20 occurrences):
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+  X2 (20 occurrences):
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+  X3 (20 occurrences):
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+
+SET S01
+  X1 (20 occurrences):
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+  X2 (20 occurrences):
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+  X3 (20 occurrences):
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+
+SET S02
+  X1 (20 occurrences):
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+  X2 (20 occurrences):
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+  X3 (20 occurrences):
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+
+SET S03
+  X1 (20 occurrences):
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+  X2 (20 occurrences):
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+  X3 (20 occurrences):
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+
+SET S04
+  X1 (20 occurrences):
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+  X2 (20 occurrences):
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+  X3 (20 occurrences):
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+
+SET S05
+  X1 (20 occurrences):
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+  X2 (20 occurrences):
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+  X3 (20 occurrences):
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+
+SET S06
+  X1 (20 occurrences):
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+  X2 (20 occurrences):
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+  X3 (20 occurrences):
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+
+SET S07
+  X1 (20 occurrences):
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+  X2 (20 occurrences):
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+  X3 (20 occurrences):
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+
+SET S08
+  X1 (20 occurrences):
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+  X2 (20 occurrences):
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+  X3 (20 occurrences):
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+
+SET S09
+  X1 (20 occurrences):
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+  X2 (20 occurrences):
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+  X3 (20 occurrences):
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+
+SET S10
+  X1 (20 occurrences):
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+  X2 (20 occurrences):
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+  X3 (20 occurrences):
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+
+SET S11
+  X1 (20 occurrences):
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+  X2 (20 occurrences):
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+  X3 (20 occurrences):
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+
+SET S12
+  X1 (20 occurrences):
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+  X2 (20 occurrences):
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+  X3 (20 occurrences):
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+
+SET S13
+  X1 (20 occurrences):
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+  X2 (20 occurrences):
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+  X3 (20 occurrences):
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+
+SET S14
+  X1 (20 occurrences):
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+  X2 (20 occurrences):
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+  X3 (20 occurrences):
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+
+SET S15
+  X1 (20 occurrences):
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+  X2 (20 occurrences):
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+  X3 (20 occurrences):
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+
+SET S16
+  X1 (20 occurrences):
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+  X2 (20 occurrences):
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+  X3 (20 occurrences):
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+
+SET S17
+  X1 (20 occurrences):
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+  X2 (20 occurrences):
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+  X3 (20 occurrences):
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+
+SET S18
+  X1 (20 occurrences):
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+  X2 (20 occurrences):
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+  X3 (20 occurrences):
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+
+SET S19
+  X1 (20 occurrences):
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+  X2 (20 occurrences):
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+  X3 (20 occurrences):
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+
+SET S20
+  X1 (20 occurrences):
+    [t/s/f] [e/r/o] [n/a/c/p] ? _ [e/r/o] [n/a/c/e] [u/o] [i/j/y]
+    [m/t/c/p/n/s] [i/j/y] [e/r/o] [e/r/o] _ [i/j/y] [n/a/c/e] [u/o] [e/r/o]
+    [t/s/f] ? [t/s/f] [n/a/c/p] _ [i/j/y] [u/o] [e/r/o] [e/r/o]
+    ? [u/o] [e/r/o] [n/a/c/e] _ [i/j/y] [n/a/c/p] [t/s/f] [e/r/o]
+    [e/r/o] ? ? [n/a/c/e] _ ? [e/r/o] ? ?
+    ? [e/r/u] [e/r/o] [a/n] _ e ? [n/a/c/p] [e/r/o]
+    [i/j/y] [u/o] [t/s/f] [e/r/o] _ [e/r/o] [n/a/c/p] [t/s/f] |
+    [e/r/o] [t/s/f] [u/o] [u/o] _ [e/r/o] ? [e/r/o] ?
+    | _ [e/r/o] [l/s/a] [e/r/o] [a/n]
+    [t/s/f] ? [u/o] [u/o] _ [e/r/o] [e/r/o] [e/r/o] [n/a/c/p]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ [a/n] [e/r/o] ? [a/n]
+    [t/s/f] [e/r/o] [e/r/o] [t/s/f] _ |
+    ? ? [i/j/y] [e/r/o] _ [n/a/c/p] [e/r/o] ? [e/r/o]
+    [e/r/o] [u/o] [i/j/y] [t/s/f] _ [n/a/c/p] [i/j/y] [t/s/f] ?
+    ? [i/j/y] [t/s/f] [e/r/o] _ [e/r/o] ? [e/r/u] ?
+    ? [e/r/o] [e/r/o] [t/s/f] _ [e/r/o] s [n/a/c/p] [u/o]
+    [n/a/c/e] [n/a/c/p] [e/r/o] [n/a/c/p] _ ? [e/r/o] ? [i/j/y]
+    [a/n] [t/s/f] ? [l/s/a] _ [t/s/f] [e/r/o] [e/r/o] s
+    ? [e/r/o] ? ? _ [e/r/o] ? [n/a/c/p] ?
+    ? [l/s/a] ? ? _ [e/r/o] [l/s/a] |
+  X2 (20 occurrences):
+    [t/s/f] [e/r/o] [t/s/f] [t/s/f] _ [i/j/y] [e/r/o] [n/a/c/p] [t/s/f]
+    [e/r/o] [s/f] [s/f] [e/r/o] _ [a/n] ? ? [n/a/c/p]
+    [e/r/o] s [t/s/f] ? _ [n/a/c/e] ? [t/s/f] [e/r/o]
+    ? ? [a/n] [e/r/o] _ s [n/a/c/e] [a/n] ?
+    | {touvelin} {aertear} _ [i/j/y] [n/a/c/e] ? [n/a/c/p]
+    [t/s/f] [t/s/f] ? [e/r/o] _ [t/s/f] ? [e/r/o] [e/r/o]
+    [e/r/o] [t/s/f] ? [t/s/f] _ [e/r/o] s s [e/r/o]
+    ? [t/s/f] [e/r/o] [e/r/o] _ ? |
+    [t/s/f] [e/r/o] [i/j/y] [t/s/f] _ ? ? [t/s/f] [e/r/o]
+    ? s [n/a/c/e] [a/n] _ [e/r/o] [e/r/o] [a/n] s
+    [e/r/o] [n/a/c/p] ? [e/r/o] _ [i/j/y] [t/s/f] [n/a/c/p] [e/r/o]
+    [n/a/c/e] [e/r/o] [n/a/c/e] [e/r/o] _ [e/r/o] [n/a/c/p] ? [e/r/o]
+    [t/s/f] [e/r/o] ? [i/j/y] _ [t/s/f] [e/r/o] [d/a/q/n] [t/s/f]
+    [m/t/c/p/n/s] [e/r/o] [a/n] [e/r/o] _ [d/a/q/n] [e/r/o] [e/r/o] [a/n]
+    | [u/o] [e/r/o] _ ? [e/r/o] [u/o] [n/a/c/p]
+    ? ? [d/a/q/n] ? _ [e/r/o] [l/s/a] s [e/r/o]
+    | _ [e/r/o] ? [e/r/o] [e/r/o]
+    [e/r/o] [e/r/o] [n/a/c/p] [e/r/o] _ [e/r/o] [n/a/c/e] ? [e/r/o]
+    [e/r/o] [n/a/c/p] [e/r/o] [m/t/c/p/n/s] _ [u/o] ? [i/j/y] [t/s/f]
+    ? [n/a/c/e] [n/a/c/p] [e/r/o] _ ? [e/r/o] [d/a/q/n] ?
+  X3 (20 occurrences):
+    [e/r/o] [a/n] [a/n] ? _ ? |
+    [e/r/o] ? [i/j/y] [n/a/c/p] _ [n/a/c/p] [i/j/y] ? [n/a/c/p]
+    ? ? [e/r/o] [n/a/c/p] _ [n/a/c/p] ? [n/a/c/p] [t/s/f]
+    [t/s/f] [t/s/f] [e/r/o] [n/a/c/p] _ [e/r/o] [e/r/o] [n/a/c/p] [u/o]
+    | [n/a/c/p] [e/r/o] _ [e/r/o] [u/o] [e/r/o] [e/r/o]
+    [a/n] [e/r/o] ? [a/n] _ [s/f] [i/j/y] [e/r/o] ?
+    [n/a/c/p] ? ? s _ [e/r/o] [n/a/c/e] [m/t/c/p/n/s] [e/r/o]
+    [e/r/o] [e/r/o] ? [n/a/c/p] _ [e/r/o] [e/r/o] [t/s/f] ?
+    [t/s/f] [t/s/f] [e/r/o] [e/r/o] _ [a/n] [n/a/c/e] [t/s/f] [e/r/o]
+    [u/o] ? [i/j/y] ? _ [e/r/o] ? [i/j/y] [e/m]
+    [e/r/o] [i/j/y] [n/a/c/p] [u/o] _ [e/r/o] ? [e/r/o] [t/s/f]
+    [e/r/o] [u/o] [s/f] [e/r/o] _ [e/r/o] [e/r/o] [e/r/o] [u/o]
+    [e/r/o] [e/r/o] [e/r/o] [u/o] _ ? [e/r/o] [s/f] [e/r/o]
+    ? [e/r/o] [t/s/f] ? _ [e/r/o] [e/r/o] [e/r/o] [t/s/f]
+    [t/s/f] [n/a/c/e] [n/a/c/p] [u/o] _ [i/j/y] [e/r/o] [n/a/c/p] [n/a/c/e]
+    [e/r/o] ? s [n/a/c/e] _ ? s s ?
+    [t/s/f] [n/a/c/p] [n/a/c/p] ? _ [i/j/y] s [n/a/c/p] ?
+    [i/j/y] [t/s/f] ? ? _ [t/s/f] [e/r/o] [e/r/u] [e/r/o]
+    ? [i/j/y] [e/r/o] ? _ [e/r/o] [n/a/c/p] ? [n/a/c/p]
+    [n/a/c/p] ? ? [e/r/o] _ [s/f] [t/s/f] [n/a/c/p] [i/j/y]

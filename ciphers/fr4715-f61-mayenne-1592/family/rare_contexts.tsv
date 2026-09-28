@@ -1,0 +1,72 @@
+# rare_contexts.tsv -- F61-FAMILY-4, 28 Sept 2026: every occurrence of the five uncovered classes across the leaves on disk, neighbours rendered under key_period_v3.tsv (one letter = grade C, [a/b] = period pair, ? = no period pair, | = line end, {word} = a clear word in the row). Built by rare_classes.py contexts.
+class	leaf	line	pos	left	right	firm_neighbours
+CA	f.101r	L08	33	[e/r/o] [m/t/c/p/n/s] [n/a/c/e] [e/r/o]	[e/r/u] ? [m/t/c/p/n/s] [e/r/o]	0
+CA	f.101r	L12	46	[i/j/y] r [e/r/o] ?	[e/r/o] [d/q/i] ? [e/r/o]	1
+CA	f.101r	L17	11	[d/a/q/n] [e/r/o] [u/o] [t/s/f]	[e/r/o] [n/a/c/p] [m/t/c/p/n/s] [t/s/f]	0
+CA	f.101r	L21	25	[d/q/i] [e/r/o] [t/s/f] [t/s/f]	[e/r/o] [e/r/o] ? ?	0
+CA	f.101r	L21	55	[e/r/o] [i/j/y] [e/r/o] [n/a/c/p]	[s/f] [t/s/f] [e/r/o] [e/r/o]	0
+CA	f.101r	L41	54	[e/r/o] [u/e] [i/j/y] [n/a/c/p]	[e/r/o] [e/r/o] [t/s/f] [e/r/o]	0
+CA	f.188r	L02	40	[n/a/c/e] [e/r/o] [m/s] [i/j/y]	{dailleurs} |	0
+CA	f.188r	L17	34	[n/a/c/p] [n/a/c/p] [e/r/o] [n/a/c/p]	[e/r/o] s [t/s/f] [n/a/c/p]	1
+CA	f.188r	L21	23	[e/r/o] s [e/r/o] s	? [e/r/o] [e/m] [e/r/o]	2
+CA	f.188r	L23	23	s [t/s/f] [n/a/c/e] s	[n/a/c/e] [e/r/o] [u/o] s	3
+CA	f.188r	L23	38	[m/s] [n/a/c/e] [e/m] [u/o]	[u/e] [e/r/o] s ?	1
+CA	f.188r	L23	57	[t/s/f] [i/j/y] ? [e/r/o]	[n/a/c/p] [e/r/o] s [t/s/f]	1
+CA	f.61r	L01	8	[u/e] [e/r/o] [n/a/c/p] r	[e/r/o] [t/s/f] [d/q/i] [d/a/q/n]	1
+CA	f.61r	L03	1	|	? r [e/r/o] s	2
+CA	f.61r	L03	9	s [t/s/f] [n/a/c/p] [a/n]	[n/a/c/p] e ? [a/n]	2
+CA	f.61r	L05	7	[t/s/f] [e/r/o] [e/r/u] [n/a/c/p]	? [a/n] [u/e] [a/n]	0
+CA	f.61r	L05	8	[e/r/o] [e/r/u] [n/a/c/p] ?	[a/n] [u/e] [a/n] e	1
+CA	f.61r	L07	1	|	? ? [m/s] [l/s/a]	0
+CA	f.61r	L08	10	[e/r/o] [a/n] [u/e] e	[n/a/c/p] [e/r/o] [e/r/o] [e/r/o]	1
+CA	f.61r	L10	2	| [l/s/a]	[e/r/o] [t/s/f] [e/r/o] [e/r/o]	0
+CA	f.61r	L10	9	[e/r/o] [e/r/o] s [u/e]	e [e/r/o] ? e	3
+CA	f.61r	L10	12	[u/e] ? e [e/r/o]	e |	2
+LOOPBAR	f.101r	L09	45	[t/s/f] ? r [e/r/o]	[d/q/i] [i/j/y] [t/s/f] [n/a/c/e]	1
+LOOPBAR	f.108v	L02	28	[u/e] [l/s/a] [e/r/o] [m/s]	[a/n] [t/s/f] [d/q/i] [u/e]	0
+LOOPBAR	f.108v	L03	34	[e/r/o] [a/n] ? [d/q/i]	[a/n] [e/r/o] [m/s] [d/q/i]	0
+LOOPBAR	f.188r	L19	1	|	[i/j/y] ? s [e/r/o]	1
+LOOPBAR	f.61r	L03	2	| ?	r [e/r/o] s [t/s/f]	2
+LOOPBAR	f.61r	L03	12	[a/n] ? [n/a/c/p] e	[a/n] [e/r/u] [l/s/a] |	1
+LOOPBAR	f.61r	L04	1	|	? |	0
+LOOPBAR	f.61r	L07	2	| ?	? [m/s] [l/s/a] e	1
+ZHOOK	f.101r	L08	35	[n/a/c/e] [e/r/o] ? [e/r/u]	[m/t/c/p/n/s] [e/r/o] [s/f] [n/a/c/p]	0
+ZHOOK	f.101r	L17	2	| [n/a/c/e]	[u/o] [m/s] [e/r/o] ?	0
+ZHOOK	f.101r	L41	44	[e/r/o] [n/a/c/p] [t/s/f] [n/a/c/e]	[n/a/c/p] [t/s/f] [d/q/i] [u/o]	0
+ZHOOK	f.108r	F108_L02	4	| [l/s/a] [n/a/c/e] [t/s/f]	[l/s/a] [l/s/a] [n/a/c/e] ?	0
+ZHOOK	f.108r	F108_L02	8	? [l/s/a] [l/s/a] [n/a/c/e]	[e/r/o] [e/r/o] [u/e] [a/n]	0
+ZHOOK	f.108r	F108_L02	23	[u/e] [d/a/q/n] [e/r/o] [e/r/o]	[u/e] [d/a/q/n] ? [n/a/c/p]	0
+ZHOOK	f.108r	F108_L02	26	[e/r/o] ? [u/e] [d/a/q/n]	[n/a/c/p] [e/r/o] [d/a/q/n] [e/r/o]	0
+ZHOOK	f.108r	F108_L02	35	[n/a/c/p] [l/s/a] [u/e] [l/s/a]	[u/e] [u/e] [e/r/o] [l/s/a]	0
+ZHOOK	f.108r	F108_L03	32	[e/r/o] [u/e] [e/r/o] [l/s/a]	[n/a/c/e] [n/a/c/p] [e/r/o] [m/s]	0
+ZHOOK	f.108r	F108_L03	40	[m/s] ? [e/r/o] [d/a/q/n]	[t/s/f] [e/r/o] [m/s] |	0
+ZHOOK	f.108v	L01	25	[u/e] s [n/a/c/e] [u/e]	s s ? [e/r/o]	3
+ZHOOK	f.108v	L01	28	[u/e] ? s s	[e/r/o] [a/n] s [m/s]	3
+ZHOOK	f.108v	L02	4	| [e/r/o] [a/n] s	[d/q/i] [u/e] ? [a/n]	1
+ZHOOK	f.108v	L03	1	|	[e/r/o] [a/n] [l/s/a] [a/n]	0
+ZHOOK	f.108v	L03	12	s s [e/r/o] [t/s/f]	[d/q/i] [e/r/o] [n/a/c/e] [l/s/a]	2
+ZHOOK	f.108v	L03	29	[e/r/o] [u/e] [a/n] [t/s/f]	[e/r/o] [a/n] ? [d/q/i]	0
+ZHOOK	f.108v	L03	39	[a/n] [e/r/o] [m/s] [d/q/i]	[l/s/a] ? [e/r/o] s	1
+ZHOOK	f.108v	L04	29	[e/r/o] [t/s/f] [n/a/c/e] [e/r/o]	[a/n] [n/a/c/e] ? [n/a/c/e]	0
+ZHOOK	f.108v	L04	32	[e/r/o] ? [a/n] [n/a/c/e]	[n/a/c/e] [a/n] [l/s/a] [l/s/a]	0
+ZHOOK	f.108v	L05	6	[e/r/o] [n/a/c/e] [a/n] [e/r/o]	s [a/n] [e/r/o] [a/n]	1
+ZHOOK	f.108v	L05	17	[e/r/o] [n/a/c/e] [e/r/o] [t/s/f]	[t/s/f] [m/s] [e/r/o] s	1
+ZHOOK	f.108v	L05	30	[m/s] ? [m/s] [a/n]	s [n/a/c/e] [a/n] [e/r/o]	1
+ZHOOK	f.108v	L06	2	| [e/r/o]	[n/a/c/e] ? [e/r/o] ?	0
+ZHOOK	f.108v	L06	6	? [n/a/c/e] ? [e/r/o]	[n/a/c/e] [t/s/f] [m/s] [a/n]	0
+ZHOOK	f.108v	L06	14	[a/n] [d/q/i] s s	s [e/r/o] [a/n] [t/s/f]	3
+ZHOOK	f.108v	L06	19	s [e/r/o] [a/n] [t/s/f]	[l/s/a] [m/s] [t/s/f] [e/r/o]	1
+ZHOOK	f.108v	L06	33	[e/r/o] s s [a/n]	[e/r/o] [e/r/o] s ?	3
+ZHOOK	f.108v	L07	3	| [a/n] [t/s/f]	[l/s/a] [a/n] [l/s/a] [a/n]	0
+ZHOOK	f.108v	L07	31	[a/n] [t/s/f] [e/r/o] [a/n]	[e/r/o] ? [n/a/c/e] [e/r/o]	0
+ZHOOK	f.108v	L07	44	[a/n] [e/r/o] [l/s/a] s	|	1
+ZHOOK	f.61r	L07	3	| ? ?	[m/s] [l/s/a] e [e/r/o]	1
+ZHOOK	f.61r	L07	11	[e/r/o] [u/e] s ?	|	1
+ZHOOK	f.61r	L11	11	[e/r/o] [n/a/c/e] [d/a/q/n] [e/r/u]	[t/s/f] |	0
+CROSS	f.101r	L26	23	[d/q/i] [e/r/o] [e/r/o] [t/s/f]	[d/q/i] [n/a/c/p] [e/r/o] [t/s/f]	0
+CROSS	f.108v	L03	41	[m/s] [d/q/i] ? [l/s/a]	[e/r/o] s |	1
+CROSS	f.108v	L06	4	| [e/r/o] ? [n/a/c/e]	[e/r/o] ? [n/a/c/e] [t/s/f]	0
+CROSS	f.61r	L01	1	|	e [a/n] [u/e] [e/r/o]	1
+CROSS	f.61r	L07	10	e [e/r/o] [u/e] s	? |	2
+LL	f.188r	L01	28	{ll-like} [n/a/c/e] [u/o] [n/a/c/e]	[n/a/c/e] [e/r/o] [s/f] [n/a/c/p]	0
+LL	f.61r	L05	16	e [a/n] [n/a/c/p] [e/r/o]	[e/r/o] s |	2
