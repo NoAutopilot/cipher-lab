@@ -1,0 +1,106 @@
+line	pos	code	note	conf
+1	12	HOOK	script-e w/ loop+tail	M
+1	13	SEVEN	bold 7, long top bar, hooked foot	H
+1	14	HOOK	small open script-e loop	H
+1	15	THREE	curvy 3	H
+1	16	HOOK	entangled loop+hook, mu-like	M
+1	17	THETA	oval with straight bar across top	M
+1	18	HOOK	vertical stroke curving to hook	H
+1	19	SEVEN	bold 7	H
+1	20	EM	cursive m, two humps	H
+1	21	HOOK	vertical stroke curving to hook	H
+1	22	NINE	loop+tail	H
+1	23	NINE	loop+tail, open	H
+1	24	PHI	vertical+loop w/ rightward tail	M
+1	25	SIX	loop bottom, stem curving from top	M
+1	26	SEVEN	bold 7	H
+1	27	HOOK	double-lobed entangled loop, mu-like	M
+1	28	PI	two strokes w/ loops, bar+dot on top	M
+1	29	OMEGABAR	double hump w/ bar over top	H
+1	30	ESS	continuous S/5-curve, two lobes	M
+1	31	HOOK	open C-curl with hook	M
+1	32	FOUR	4 with long horizontal tail	H
+2	1	OMEGABAR	bar over double hump	H
+2	2	XCURL	crossed shape w/ curled tail	H
+2	3	OMEGABAR	double round hump, no clear bar	M
+2	4	NINE	loop+tail	H
+2	5	NINE	loop w/ long descending tail	M
+2	6	THETA	loop w/ diagonal cross stroke	M
+2	7	HOOK	diagonal stroke into loop	M
+2	8	HOOK	tangled loop, messy mu-like	M
+2	9	HCURL	double hump w/ curled feet	H
+2	10	EIGHT	stacked figure-8 loops	H
+2	11	XCURL	crossing strokes in loop	M
+2	12	EM	cursive m, humps	H
+2	13	TWO	round 2	H
+2	14	THREE	curvy 3	H
+2	15	SEVEN	bold 7	H
+2	16	OMEGABAR	bar over double hump	H
+2	17	THETA	circle+bar, small loop atop	H
+2	18	NINE	loop+tail	H
+2	19	PHI	vertical+crossbar+loop	M
+2	20	XCURL	loop crossed by diagonal	M
+2	21	SEVEN	bold 7	H
+2	22	ESS	cursive S/5 shape	H
+2	23	THREE	curvy 3	H
+2	24	OMEGABAR	bar over double hump	H
+2	25	PHI	vertical line through loop	H
+2	26	TEE	vertical+horizontal cross, small foot	M
+2	27	FOUR	4 with horizontal tail	H
+3	1	PLUS	simple cross	H
+3	2	HOOK	loop w/ tail, u-curl	M
+3	3	NINE	loop+tail	H
+3	4	EIGHT	stacked loops	M
+3	5	HCURL	double hump w/ curled feet	H
+3	6	OMEGABAR	bar over double hump	H
+3	7	HOOK	near-straight stroke, small top hook (rho/long-s-like)	M
+3	8	HOOK	script-e loop w/ diagonal tail	M
+3	9	SEVEN	short bold hook/caret	M
+3	10	TWO	round 2	H
+3	11	HCURL	double hump w/ curled feet	H
+3	12	SEVEN	bold 7	H
+3	13	THETA	oval w/ cross bar	M
+3	14	HOOK	looped shape w/ extra strokes	M
+3	15	ENN	straight zigzag, N-like	H
+3	16	THREE	curvy 3; extra stroke intrudes at right cell edge	M
+3	17	OMEGABAR	double connected loops	M
+3	18	DIAMOND	rotated square outline	H
+3	19	TEE	right-angle stroke, vertical+horizontal	M
+3	20	HOOK	open loop, c/e-like	M
+3	21	THREE	curvy 3	H
+3	22	HOOK	loop w/ tail	M
+3	23	EM	cursive m/mu, humps	M
+3	24	SIX	loop w/ stem	M
+3	25	NINE	loop+tail	H
+3	26	FOUR	4 with tail	H
+3	27	TEE	cross w/ small loop foot	M
+3	28	SEVEN	bold, long top bar, straight foot	M
+3	29	HOOK	simple ( curl	M
+3	30	HOOK	mirrored ) curl	L
+4	1	PI	two strokes, bar+dot on top	H
+4	2	HOOK	loop w/ descending tail	M
+4	3	HCURL	double hump w/ curled feet	H
+4	4	HOOK	loop w/ hook descender	M
+4	5	THREE	curvy 3	H
+4	6	SEVEN	bold 7	H
+4	7	DIAMOND	rotated square	H
+4	8	OMEGABAR	bar over double hump	H
+4	9	FOUR	4, serif top	H
+4	10	HOOK	crossbar top + two loopy legs, mu-like	M
+4	11	THETA	loop w/ diagonal cross	M
+4	12	TWO	round 2	H
+4	13	HCURL	double hump w/ curled feet	H
+4	14	SEVEN	bold 7	H
+4	15	TWO	D-shape variant	M
+4	16	SEVEN+HOOK	merged: hook stroke over loop-tail shape	M
+4	17	EIGHT	stacked loops	H
+4	18	ENN	straight zigzag, N-like	H
+4	19	XCURL	crossed curled shape	H
+4	20	OMEGADOT	small loop atop double hump	M
+4	21	THREE	curvy 3	H
+4	22	LL	two vertical strokes w/ cross ticks	M
+4	23	TWO	rounded S-like 2	H
+4	24	DIAMOND	rotated square	H
+4	25	HOOK	loop w/ diagonal stroke	M
+4	26	NINE	loop+tail	H
+4	27	SIX	loop bottom, curved stem	H
