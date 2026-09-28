@@ -3,7 +3,8 @@
 Must catch: H41's case -- on r16:2-r18:21 "burgsdorf" is the unique best against distractor names (including the
 place names that fitted next in H41), 7 letters agreeing, 0 disagreeing, candidate True.
 Must NOT pass: H46's case -- v04 anchored at v04:1 with a list whose unique best is "poca" at fit 0 (2 agree, 2
-disagree): the minimum-fit rule must refuse it even though it is unique and P < 0.05.
+disagree): the minimum-fit rule must refuse it even though it is unique and P < 0.05. And H71's case -- a read,
+name-free stretch (r19:6 onward, 62 tokens) where "xanten" fits 5 agree / 1 disagree (fit 4): --min-score must refuse it.
 Run: python3 tools/tests/test_crib_list_fit.py"""
 import os, sys
 ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -37,5 +38,16 @@ def test_minimum_fit_refuses():
     assert not v["candidate"], v
 
 
+def test_min_score_refuses_read_text():
+    toks = clf.load_window(CODES, KEY, None, None)
+    locs = [t[2] for t in toks]
+    st = locs.index("r19:6")
+    res = clf.rank(["xanten", "tarent"] + FILLER, toks[st:st + 62])
+    v = clf.verdict(res)
+    assert v["best"] == "xanten" and v["score"] == 4, v
+    assert not v["candidate"], v
+    assert clf.verdict(res, min_score=0)["candidate"], "without --min-score the H71 false positive would pass"
+
+
 if __name__ == "__main__":
-    test_positive(); test_minimum_fit_refuses(); print("test_crib_list_fit: ok")
+    test_positive(); test_minimum_fit_refuses(); test_min_score_refuses_read_text(); print("test_crib_list_fit: ok")

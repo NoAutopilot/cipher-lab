@@ -2349,3 +2349,24 @@ including the date listing, 2 s apart; `h69/cs_*.xml`): "Mercy" / "Merci" 6 hits
 des Confédérez", "se rendre à la merci du Parlement"), never the abbé; "Brandebourg" 14 hits, all the peace treaty,
 Pomerania, the Elector's levy in Prussia (PAG_572) and the Polish succession -- none on a Spanish envoy at Cleves. The
 Paris Gazette did not report Mercy's mission. No token, grade or class change.
+
+## Campaign step H71 (2026-09-28 16:49 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. The Burgsdorf fit does not occur by chance in this letter's read text; the tool's rule
+needed a floor, now added.** False-positive control for H41's method (`h71/fp.py`, `h71/windows.tsv`,
+`h71/result.log`): every 62-token window (the unread stretch's length), step 8, over the letter's cipher stream,
+excluding the unread stretch, v04, and the cipher spellings of Brandenburg, Cleues and Cheureuse -- 24 read, name-free
+windows -- scored against the 883-name list (Urkunden Bd. 1-6) with the same wildcard rule.
+
+- **No window reaches Burgsdorf's fit**: the best fit in any read window is **4** (24 of 24 at most 4), against **7 with
+  no mismatch** for Burgsdorf on r16:16 (8 for the genitive burgsdorfs). Read Spanish text of this letter does not throw
+  up a name-fit anywhere near the one on the unread stretch.
+- **But the tool's candidate rule (H48) passed short names at fit 4** in 10 of the 24 windows -- two distinct spots,
+  "xanten" (5 agree / 1 disagree) around r19-r21 and "tarent" in v05-v06 -- because uniqueness, P and "60% of letters,
+  at most one mismatch" are all easy for a six-letter name. Fixed in `tools/crib_list_fit.py`: `--min-score` (default
+  6) requires an absolute fit above what the target's read text produces; `tools/tests/test_crib_list_fit.py` gains the
+  H71 must-not case (xanten at r19:6 refused, and passing without the floor); SYSTEM.md's entry updated. Re-run with the
+  floor: 0 of 24 read windows pass, and H41's Burgsdorf (7) still passes. H46, H47, H49, H54, H55 were all negatives
+  under the old rule, so the floor changes none of them.
+
+No token, grade or class change.

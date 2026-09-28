@@ -10,7 +10,10 @@ uncertain value). --anchor start fixes the word's first letter at --start, --anc
 least as well as the best. Rule (all must hold for a candidate): the best word is the list's UNIQUE best, P < --p-max,
 at least --min-agree of its letters agree at fixed tokens, and at most --max-mismatch disagree. The minimum-fit terms
 were added after H46, where a list's unique best fitted 0 (two letters agreeing, two disagreeing) and would have passed
-on uniqueness and P alone.
+on uniqueness and P alone. --min-score (default 6) was added after H71 (28 Sept 2026): on 24 read, name-free windows of
+the same letter the rule without it passed short names at fit 4 (xanten 5 agree / 1 disagree at r19-r21, tarent at
+v05-v06 -- two distinct spots), while no window reached 7 with no mismatch; a candidate must also clear an absolute fit
+above what read text of the target throws up. Calibrate it per target the H71 way when the default is in doubt.
 
 Catches (tests/test_crib_list_fit.py): the Mercy H41 case -- "burgsdorf" is the unique best on r16:2-r18 against
 distractors, 7 of 9 letters agreeing, no mismatch, rule met. Must NOT pass: the H46 case -- v04 with a list whose best
@@ -78,11 +81,12 @@ def rank(words, toks, anchor="free", forms=("{w}",)):
     return res
 
 
-def verdict(res, p_max=0.05, min_agree=0.6, max_mismatch=1):
+def verdict(res, p_max=0.05, min_agree=0.6, max_mismatch=1, min_score=6):
     best = res[0]
     ties = sum(1 for r in res if r[0] == best[0])
     p = sum(1 for r in res if r[0] >= best[0]) / len(res)
-    ok = ties == 1 and p < p_max and best[1] >= min_agree * len(best[4]) and best[2] <= max_mismatch
+    ok = (ties == 1 and p < p_max and best[1] >= min_agree * len(best[4]) and best[2] <= max_mismatch
+          and best[0] >= min_score)
     return {"best": best[4], "score": best[0], "agree": best[1], "mismatch": best[2], "at": best[3], "ties": ties,
             "P": p, "candidate": ok}
 
@@ -100,12 +104,13 @@ def main():
     ap.add_argument("--p-max", type=float, default=0.05)
     ap.add_argument("--min-agree", type=float, default=0.6)
     ap.add_argument("--max-mismatch", type=int, default=1)
+    ap.add_argument("--min-score", type=int, default=6, help="minimum absolute fit (agree - disagree); H71 calibration")
     ap.add_argument("--top", type=int, default=12)
     a = ap.parse_args()
     words = [l.split("\t")[0].strip() for l in open(a.words) if l.strip()]
     toks = load_window(a.codes, a.key, a.start, a.end, tuple(a.fixed_grades), tuple(a.wild_codes))
     res = rank(words, toks, a.anchor, tuple(a.forms))
-    v = verdict(res, a.p_max, a.min_agree, a.max_mismatch)
+    v = verdict(res, a.p_max, a.min_agree, a.max_mismatch, a.min_score)
     print("window:", "".join("?" if w else l for l, w, _ in toks))
     print(f"{len(res)} forms; best {v['best']} fit {v['score']} ({v['agree']} agree, {v['mismatch']} disagree) at "
           f"{v['at']}; ties {v['ties']}; P {v['P']:.3f}; candidate: {v['candidate']}")
