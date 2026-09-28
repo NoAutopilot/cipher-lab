@@ -1,0 +1,18 @@
+pool 9611 signs; fitted gain 0.0874; 129 one-swaps
+swaps PREFERRED over the fitted map (gain higher): 1; rejected: 128
+closest 15 (fitted minus swap gain, classes, cells, positions changed):
+  -0.0007  EBR_A(f/s)<->ISH(l/y)  154
+  +0.0004  SBS(b/o)<->ZHOOK(i/x)  5
+  +0.0006  INF(h/u)<->ZHOOK(i/x)  116
+  +0.0007  4STEM(a/n)<->4TRI(c/p)  1626
+  +0.0010  ISH(l/y)<->ZHOOK(i/x)  28
+  +0.0012  ISH(l/y)<->SBS(b/o)  23
+  +0.0018  4STEM(a/n)<->SBS(b/o)  291
+  +0.0020  4STEM(a/n)<->ZHOOK(i/x)  296
+  +0.0022  BETA(m/z)<->EBR_A(f/s)  319
+  +0.0028  4PI(d/q)<->BETA(m/z)  242
+  +0.0030  4STEM(a/n)<->INF(h/u)  402
+  +0.0034  EBR_A(f/s)<->ZHOOK(i/x)  136
+  +0.0037  EBR_A(f/s)<->SBS(b/o)  131
+  +0.0042  INF(h/u)<->SBS(b/o)  111
+  +0.0043  4PI(d/q)<->SBS(b/o)  54

@@ -2775,3 +2775,19 @@ f.101r rows "conflict"), so some "errors" are alignment slips whose letter happe
 other hands with their own spelling and the family passes' coarser classes (PHI here still holds the side-by-side b/o
 form). The beam's accuracy on f.61 itself therefore stays the H116 figure (0.776 on 49), with 0.72 as a lower bound from a
 noisier known answer. No reading, no class change.
+
+## Campaign step H132 (28 Sept 2026, 19:03-19:10 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61swap_family.py` (rule in its docstring, pushed f7903848 before the run; `f61swap_family_result.txt`): every
+one-swap neighbour of f.61's cell map (plus KEY.md's period equivalences LOOPS = h/u, H24 = i/x, ZBAR = f/s) scored by
+sequence gain on the pooled family drafts (f.97r, f.101r, f.188r, f.124r: 9,611 signs, 8,488 covered). Fitted gain 0.0874.
+
+**128 of 129 swaps have a lower gain than the fitted map (rejected); 1 is higher.** The close ones (fitted minus swap):
+EBR_A f/s <-> ISH l/y -0.0007 (the one preferred; 154 positions), SBS <-> ZHOOK +0.0004 (5 positions: no power),
+INF <-> ZHOOK +0.0006 (116), **4STEM a/n <-> 4TRI c/p +0.0007 on 1,626 positions**, ISH <-> ZHOOK +0.0012 (28); every other swap
++0.0018 or more. The two near-ties on many positions have a known cause in KEY.md, not in the cells: this hand's readers put
+the "43" (a/n) sign into 4TRI (f.124r: n 140, a 121, c 45, p 34), so 4TRI on these drafts is half a/n already and swapping it
+with a/n costs little; and EBR_A on these drafts is mixed (s 18, l 13, a 8), so f/s <-> l/y is near even. Where the family
+classes are clean, the pool confirms f.61's assignments one swap at a time -- including c/p vs d/q (4TRI <-> 4PI), which f.108v
+could not test (H105). No noise scale was pre-registered, so differences under about 0.002 are reported, not judged. No
+reading, no class change.
