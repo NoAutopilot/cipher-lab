@@ -2446,3 +2446,61 @@ nomenclator --spec specs/armstrong-madison-1808.json --target-cipher ciphers/arm
 rule 10: nothing here is called new or first. Cost: get_session carries no cost figure for this session; the
 row's estimate (5 USD) is what `campaign.py --spend` records (about 25 minutes of one Fable session, three parallel
 CPU runs of 2-3 minutes per round).
+
+## Campaign step H28 (28 Sept 2026, 02:08-02:20 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H28
+(H24's named one-knob re-run): the H24 known-answer control on the best specimen of Tomokiyo's six systems --
+Macaulay 1747, Psalm I "written in the long Short-hand, wherein all ye Vowels are included in each Word" -- with
+PER-GROUP magnified crops and the book's own worked example on the same blind call; PASS licenses one target read,
+FAIL retires the plate-only reader for this family. Pre-registration `h28/PREREGISTRATION.md` (02:11 UTC, before
+any reader output); scorer, gate and null unchanged from H24 (`h24/score.py`, `h24/PREREGISTRATION.md`).
+
+**Material.** Leaf 22 (the book's page 13) of archive.org `bim_eighteenth-century_polygraphy-or-short-hand_macaulay-
+aulay_1747`, fetched at native 4136x7025 through the BookReaderImages.php `scale=1` form (H24's route; the full leaf
+is kept out of git, images/ is at the 30 MB line). The leaf carries the worked example "In the Word Man" (m, a, n
+joined, `h28/crops/leaf22_worked_example_man.jpg`) and five ruled lines of the Psalm, engraved, clean, with the
+engraver's own captions "a stop" and "verse ends". Reference: KJV Psalm 1 (`h28/ref_psalm1_kjv.txt`, Gutenberg pg10).
+Crops: five native line strips and 44 per-group crops at 2x (`h28/crops/`, `manifest.json` with native coordinates),
+cut at ink gaps of 10 view px after dropping the printed rule rows (`PIL`/`numpy` installed this session; the
+container had neither, so `tools/iiif_lines.py` could not run until then). Plate: the comparative alphabet on the
+book's own page 3 (`images/shorthand/specimens/macaulay1747_alphabet_p3.jpg`, ARM-S1).
+
+**Reader.** One Sonnet subagent, given the plate, the worked example, the five strips and the 44 crops in reading
+order, told nothing of the book, author, system or text, web tools forbidden, letters per crop with `?` and `#`
+for unreadable and non-letter strokes (`h28/reader_macaulay_control.tsv`, 48 rows after its own a/b splits).
+Its own report: confidence low-to-medium throughout; the plain tall vertical (read as `l`) and the symmetric `V`
+(read as `nw`) recur and have no clean plate match; only the "an" join learned from the worked example reached medium
+confidence.
+
+**Result (rule 3, the control's number whatever it says).**
+
+| specimen | reader rows | `?` / `#` rows | S1 | null p95 | p | S2 | null p95 | verdict |
+|---|---|---|---|---|---|---|---|---|
+| Macaulay 1747 Psalm I, lines 1-5, per-group 2x crops + worked example | 48 | 1 / 15 | 0.057 | 0.075 | 0.745 | 0 | 3 | **CONTROL FAIL** |
+| (H24, for comparison) Mavor 1792 Job xxix, line strips | 63 | 34 | 0.108 | 0.135 | 0.315 | 1 | 1 | CONTROL FAIL |
+| (H24) Byrom 1796 Lord's Prayer, line strips | 22 | most | 0.250 | 0.375 | 0.740 | 0 | 1 | CONTROL FAIL |
+
+The reader's letters against the Psalm's opening ("Blessed is the man that walketh not in the counsel") read `z an
+l nw l mp w an lanpl`: chance-level alignment (S1 at the 25th percentile of its own consonant-bijection null) and not
+one exact word skeleton, on the cleanest known-answer material the six systems offer (engraved, vowels written,
+the system's own worked example on the same page, per-group zoom). The knob H24 named (per-group crops, worked
+example) did not move the instrument at all -- S1 is lower than on Mavor's line strips.
+
+**Verdict for the campaign: the plate-only reader is RETIRED for the shorthand family, "untested-by-this-tool"
+(CLAUDE.md rule 3, second-attempt paragraph: two attempts, three specimens, the one named knob changed, the gate
+failed every time with the numbers not moving toward it).** Target not read (no licence). Nothing here is a
+negative on Macaulay, Mavor or Byrom as the target's system, and nothing is a negative on the target's marks
+being shorthand: it says a model reader given a period plate cannot read even the plate's own author's specimen,
+so no "does not read as system X" result from this instrument class -- including ARM-S2/S3's symbol-match scores
+-- can be cited as an exclusion. The shorthand question now needs a different instrument: a person who reads one
+of these systems (an ASKS row when a name exists), a trained recogniser (the repository has none), or an
+independent crib that fixes what one passage says. HYPOTHESES.md family S gains the retirement line.
+
+Files: `h28/PREREGISTRATION.md`, `h28/ref_psalm1_kjv.txt`, `h28/crops/` (2.5 MB: 5 strips, 44 crops, the worked
+example, manifest.json), `h28/reader_macaulay_control.tsv`, `h28/score_output.txt`. Requests: archive.org 3
+(metadata JSON, djvu.txt -- answered 302, not followed -- and one leaf image), gutenberg.org 1, all with the
+descriptive User-Agent, >= 1.5 s apart, no 429/403; PyPI 2 (pillow, numpy). Vision: 1 of 4 subagent calls (Sonnet,
+about 146k tokens, 5 minutes) plus this runner's two looks (the leaf view, one overlay). No reading, no class
+change, no target token decoded; rule 10: nothing here is called new or first. Cost: get_session carries no cost
+figure for this session; the row's estimate (3 USD) is what `campaign.py --spend` records.

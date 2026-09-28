@@ -1,0 +1,49 @@
+line	word	letters	notes
+1	1a	z	Large hook opening down-left curving into a tight closed loop with a short tail flicking right; closest plate match is z (zeal, a looped stroke with descending tail); could also be a run-together f+e. Confidence: low.
+1	1b	an	Flat horizontal foot then a diagonal stroke rising to the upper right from that foot -- matches the worked example's a (flat dash at the foot) + n (diagonal sloping from the a) join exactly. Confidence: medium.
+1	2	l	Plain tall vertical stroke, no crossbar visible at this resolution; the only plate character with a vertical-stroke component is l (Lord, let), so taken as l despite the missing cross-tick. Confidence: low.
+1	3	nw	Symmetric V: a diagonal down-stroke followed by a diagonal up-stroke meeting at one point on the baseline. No single plate glyph is a clean V; read as two joined diagonals, n (down) then w (up). Confidence: low.
+1	4	l	Vertical stroke, a horizontal foot to the right, then a short further downward tick -- matches l's vertical+crossbar shape reasonably well. Confidence: medium.
+1	5	mp	Angular peak (up-stroke then down-stroke meeting at a point, as m is drawn in the worked "man" example) followed immediately by a loop-with-descending-tail shape resembling a numeral 9, matching plate p (put). Confidence: medium.
+1	6	w	Single long steep diagonal stroke rising left-to-right; matches w (with) in the plate rather than the shorter m/n diagonals. Confidence: medium.
+1	7	an	Same flat-foot-then-rising-diagonal shape as row 1b/the worked man example (a then n). Confidence: medium.
+1	8	lanpl	Multi-stroke compound: leading tall vertical (l), an open curve resembling a or the y/g hook, a diagonal riser (n), a loop-with-tail (p, numeral-9-like), and a trailing tall vertical (l). Internal segmentation is uncertain; reported stroke-by-stroke best guess. Confidence: low.
+2	1	#	Isolated round dot with no attached tail or hook; the plate's e is a dot with a curved tail, so a bare dot with nothing else is read as a punctuation point, not a letter. Confidence: medium.
+2	2	l	Plain tall vertical stroke, same shape/match as line 1 row 2. Confidence: low.
+2	3	kb	Large compound hook/loop curving back on itself (resembles a cursive K or two joined loops) followed by a tall vertical stroke; read tentatively as k (keep, an arc) then b (but, a hooked loop), but the compound curve does not cleanly match either. Confidence: low.
+2	4	#	Small italic caption "a stop" printed beside a dot in the source -- this is the specimen's own printed label identifying the adjacent dot as a full stop, not a shorthand letter written by the same hand. Marked as punctuation. Confidence: medium (as a non-letter identification).
+2	5	l	Plain tall vertical stroke, same match as rows 2/2 and 1/2. Confidence: low.
+2	6	l	Plain tall vertical stroke. Confidence: low.
+2	7a	an	Flat foot with rising diagonal, same shape as the worked-example a+n join. Confidence: medium.
+2	7b	#	Isolated round dot between the an-shape and the stepped stroke that follows; no tail, read as a punctuation point. Confidence: medium.
+2	7c	now	Stepped zigzag line with a small loop partway along, ending in a long diagonal riser; tentatively segmented as n (short riser), o (the small loop), w (the final long riser), but the whole shape could equally be one continuous flourish. Confidence: low.
+3	1	s	Diagonal stroke rising into a small loop at the top with a hooked tail curling back down-right; closest to plate s (said, a hook with a tail). Confidence: medium.
+3	2	pn	Loop-with-descending-tail (numeral-9-like, matching p) directly above a flat-topped box/arch shape with two near-vertical sides; the arch is open at the bottom rather than the top, so it fits n (an arch) better than the bowl-shaped qu/u characters, but the match is uncertain. Confidence: low.
+3	3	w	Single diagonal stroke rising left-to-right with a very short flat foot at its base; matches w (with). Confidence: medium.
+3	4	l	Plain tall vertical stroke, same match as line 1/2. Confidence: low.
+3	5	m	Faint stroke resolving into a peak (up then down, meeting at a point) with a short curved tail; matches the worked-example m shape. Confidence: low-medium.
+3	6	#	Isolated bold round dot, no tail; read as a punctuation point as in line 2 rows 1 and 7b. Confidence: medium.
+3	7	l	Plain tall vertical stroke. Confidence: low.
+3	8	wn#	Long diagonal riser (w) into an arch/hook shape (read as n, though it could be y); followed by a small italic caption "verse ends" next to an X mark -- the X is the specimen's own printed mark for the end of a verse line, not a letter stroke, so it is coded #. Confidence: low for wn, medium for the # identification.
+3	9	?	No clear ink in this crop beyond faint speckling/noise; possibly a blank gap left by the automatic segmentation, or the very faint edge of an adjoining stroke. Unreadable. Confidence: low.
+3	10	olnw	Small loop at the lower left (o), a tall central vertical (l), then a symmetric V of two diagonals meeting at a peak (read as n then w, as in line 1 row 3). Confidence: low.
+4	1	#	No visible ink in this crop, only background speckling; likely an empty gap produced by the automatic ink-gap segmentation. Confidence: low.
+4	2	an	Flat horizontal foot with a diagonal riser to the upper right -- the same a+n join as line 1 rows 1b/7. Confidence: medium.
+4	3	an	Same flat-foot-plus-riser shape repeated. Confidence: medium.
+4	4	l	Plain tall vertical stroke. Confidence: low.
+4	5	nw	Symmetric V of two diagonals meeting at the baseline, same shape as line 1 row 3 and line 3 row 10. Confidence: low.
+4	6	#	Isolated bold round dot, no tail; punctuation point. Confidence: medium.
+4	7	l	Tall vertical stroke with a small tick/flick to the right partway down; closest to l's vertical component, with the tick perhaps standing in for its crossbar. Confidence: medium.
+4	8	lr	Tall vertical stroke joined at the foot to an arch that curves right then down into a short diagonal tail; read as l (the vertical) then r (the shallow arch, "right"), though it could be a single letter such as h or k. Confidence: low-medium.
+4	9	#	Two round dots stacked vertically, like a colon; no letter-shaped stroke present. Confidence: medium.
+4	10	#	Two very faint short dashes above a single bold round dot; the dashes are too faint to resolve as strokes and the dot has no tail, so the whole group is read as punctuation/noise. Confidence: low.
+4	11	#	Single round dot, no tail; punctuation point. Confidence: medium.
+4	12	anan	Two flat-foot-plus-diagonal-riser shapes side by side, each matching the a+n join seen elsewhere in this specimen. Confidence: medium.
+5	1a	nw	Symmetric V of two diagonals meeting at the baseline, same shape as line 1 row 3. Confidence: low.
+5	1b	lv	To the right of the V: a short vertical tick above a shorter diagonal stroke; read tentatively as l then v, but the two marks may instead be a single character split by the automatic crop. Confidence: low.
+5	2	o	Small closed loop sitting on the baseline; matches plate o (out/otherwise). Confidence: medium.
+5	3	yan	A diagonal stroke with a small loop at its foot (resembling the hooked-open-left shape of y, "you") joined to a flat-foot-plus-riser (an) immediately to its right. Confidence: low for the first letter, medium for "an".
+5	4	lp	Tall vertical stroke (l) beside a vertical stroke topped by a loop, numeral-9-like, matching p (put). Confidence: low-medium.
+5	5	an	Flat foot with a shorter diagonal riser, the same a+n family shape, slightly compressed. Confidence: medium.
+5	6	#	Single round dot near the baseline with a fainter speck above it; no attached tail, read as punctuation. Confidence: medium.
+5	7	m##owy	Cluster at the line's end: an angular peak (m) merges into an X mark (a verse-end caption mark like line 3 row 8, coded #), then a small dot (#), then a closed loop (o), a long diagonal riser (w), and a small hooked loop (y). Multiple marks bundled by the automatic crop; segmentation uncertain. Confidence: low.

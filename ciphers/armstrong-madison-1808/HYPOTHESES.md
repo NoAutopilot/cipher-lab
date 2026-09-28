@@ -1360,3 +1360,15 @@ Hazeldean Brant used to reconstruct WE027 from Madison's own encoded dispatches 
 Digitised: no (collection "open to research", no viewer link, stored off-site). Next: a Manuscript Reading
 Room request/visit for Box 37 (REQUEST.md, ASKS row 77) -- an actual WE027 table (not a specimen) is the one
 witness that could test family E directly.
+
+## Family S, campaign steps H24 and H28 (28 Sept 2026, campaign runner, owner account): plate-only reader retired
+
+Known-answer controls with a pre-registered gate (`h24/PREREGISTRATION.md`, `h24/score.py`, 200-bijection null):
+a blind Sonnet reader given one period alphabet plate reads the system's OWN engraved specimen at chance -- Mavor 1792
+Job xxix S1 0.108 vs p95 0.135, S2 1 (H24); Byrom 1796 Lord's Prayer 0.250 vs 0.375, S2 0 (H24); Macaulay 1747 Psalm I
+with vowels written, per-group 2x crops and the book's worked example on the same call 0.057 vs 0.075, S2 0 (H28).
+Three specimens, the one named knob changed, every control FAIL: the instrument is **retired: untested-by-this-tool**
+for the shorthand family (rule 3, second-attempt paragraph), the target was never read with it, and no per-system
+score from a plate-plus-crops model reader (ARM-S2/S3 included) is an exclusion. Not a negative on any system or on
+the marks being shorthand. Next instrument: a person who reads one of these systems, a trained recogniser, or an
+independent crib for one passage. NOTES.md steps H24 and H28.
