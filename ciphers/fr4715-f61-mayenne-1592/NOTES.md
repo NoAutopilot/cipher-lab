@@ -2222,3 +2222,11 @@ fr.3983 f.211r (Mayenne to de Diou, camp of Han, 1 April 1593; the aid: "chiffre
 of pair positions). What it is: a small period known answer in Mayenne's secretary's hand, used in no fit -- a held-out
 check of the f.61 cells once a person reads its gloss (the model gloss readers fail on this hand, H34/H35/H57). That is
 H96 (a desk pack). No cost.
+
+## Campaign step H96 (28 Sept 2026, 15:54-15:55 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+Desk pack for f.211r's one glossed cipher run: the native fetched once from Gallica (btv1b9059406b f362, 1 request, kept in
+the scratchpad, not committed), the run cut at 2x with a numbered ruler (`images/person_pack_211r/f211r_run.jpg`, the
+whole run and its four gloss words checked by eye) and `README.md` with the TSV template; ASKS row 93 filed. On arrival
+(`scripts/gloss211r_person.tsv`) the run's signs are coded with the atlas and the gloss letters are compared with the
+f.61 cells (H64's recipe) -- a held-out period check, independent of every fit. No reading.
