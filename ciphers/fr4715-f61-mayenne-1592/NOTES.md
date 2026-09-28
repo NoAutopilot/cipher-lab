@@ -3359,3 +3359,25 @@ with PHI e/r (17) confirmed two-way. C43 a/n (9 tokens) and the rare class ZHOOK
 undecided until H178. Not decided here: any f.61 reading. A class on f.61 is f.61's reader's class; that f.176r's VBAR_A is f.61's
 VBAR_A is the atlas's claim, not tested here. Nothing is merged into v4 (a verifier's). Stage 1 is a third of f.176r (12 of 47 rows)
 and none of f.176v.
+
+## Campaign step H178 (28 Sept 2026, 22:54-22:54 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- the ZHOOK/C43 split on f.176r reads i (script-only)
+
+Re-scoped script-first. `family/build_f176_key.py` now keeps, in its consensus, the code pair of each 1:1 disputed column (pass A code
+| pass B code) and reports the letters the stage-1 DP puts opposite those columns under the true and the wrong clear. The key rows are
+unchanged: disputed columns still yield none (`key_period_f176.tsv` byte-identical; `build_f176_key_result.txt` gains the section).
+No calls.
+
+| disputed pair (A, B sorted) | fol. 177r (true) | f.184r (wrong) |
+|---|---|---|
+| C43 / ZHOOK | **i 25**, g 2, x 1, e 1, o 1, b 1 (37) | e 8, u 8, o 4, a 3, c 2, n 2 (37) |
+| BETA / LOOPSTEM1 | m 5, n 1, l 1, u 1 (8) | l 2, r 1 ... (9) |
+| 4PI / 4STEM | e 3, c 2 ... (8) | flat (7) |
+| PHI / SBS | e 3, r 3, i 2 (8) | flat (9) |
+| 4STEM / HASH4 | d 3, i 1 (4) | flat (4) |
+
+**The sign the two passes split between C43 and ZHOOK stands for i (25 of 37) in Desportes's cipher on f.176r**, per its period
+decipherment. It is not C43's a/n: pass A's ZHOOK is the right reading of its value. This fits the i/x cell of Tomokiyo's table and
+H157's f.108v result (ZHOOK = i/x in f.61's hand, by sequence gain). The wrong text is flat on the same columns. For f.61: ZHOOK is one of
+f.61's five rare classes (3 tokens, unread under v4), with no period reading until now. What is **not** shown: that f.176r's sign is the
+same glyph as f.61's ZHOOK signs (the atlas's shape description is shared, the hands differ). H178b tests that link by a blind tile
+match before anything is proposed for f.61. Nothing merged. BETA/LOOPSTEM1 -> m (5 of 8) supports BETA = m.

@@ -33,6 +33,7 @@ def consensus(a, b):
     out = []
     for op, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
         if op == "equal": out += a[i1:i2]
+        elif op == "replace" and i2 - i1 == j2 - j1: out += [f"?{x}|{y}" for x, y in zip(a[i1:i2], b[j1:j2])]   # H178: 1:1 disputes keep their pair
         else: out += ["?"] * max(i2 - i1, j2 - j1)
     return out
 def clear_text():
@@ -45,11 +46,14 @@ def clear_text():
         if l == "L01": x = x.split("/", 1)[1] if "/" in x else x
         t += g.fold(x)
     return t, order
-def run(seq, text, key):
+DISP = {"true": defaultdict(Counter), "wrong": defaultdict(Counter)}
+def run(seq, text, key, tag):
     _, pairs = align(text, seq, key); c = defaultdict(Counter); m = 0
     for i, j in pairs:
         s = seq[j]
-        if s == "?": continue
+        if s.startswith("?"):
+            if s != "?": DISP[tag][tuple(sorted(s[1:].split("|")))][text[i]] += 1
+            continue
         c[s][text[i]] += 1; m += text[i] in key.get(s, ())
     return c, m / len(text)
 def main():
@@ -59,8 +63,8 @@ def main():
     seq = [s for l in want for s in consensus(A[l], B[l])]; key = g.load_key()
     text, order = clear_text(); N = min(len(text), int(0.8 * len(seq)))
     w184 = g.fold(" ".join(r["word"] for r in g.rd(f"{P}/f184r_clear_rec.tsv")))[:N]
-    ct, ft = run(seq, text[:N], key); cw, fw = run(seq, w184, key)
-    out = [f"rows {want[0]}-{want[-1]}: {len(seq)} signs, consensus {sum(s != '?' for s in seq)} ({sum(s != '?' for s in seq)/len(seq):.2f}); "
+    ct, ft = run(seq, text[:N], key, "true"); cw, fw = run(seq, w184, key, "wrong")
+    out = [f"rows {want[0]}-{want[-1]}: {len(seq)} signs, consensus {sum(not s.startswith('?') for s in seq)} ({sum(not s.startswith('?') for s in seq)/len(seq):.2f}); "
            f"clear lines {order[0]}-{order[-1]}, {len(text)} letters, N {N}",
            f"whole-stretch match: fol. 177r {ft:.3f} vs wrong f.184r {fw:.3f} (margin {ft - fw:+.3f})", "",
            "class\tv4 set\ttrue: letters (n)\twrong: letters (n)\tin-set share true / wrong"]
@@ -74,6 +78,11 @@ def main():
         if ct[c]:
             x, n = ct[c].most_common(1)[0]; ok = n >= 3 and n > cw[c][x]
             out.append(f"rare {c}: true top {x} {n} of {sum(ct[c].values())}, wrong-text count of {x} {cw[c][x]} -> {'candidate' if ok else 'not reported'}")
+    out.append(""); out.append("H178: letters opposite 1:1 disputed columns (A code | B code), true / wrong, pairs with n >= 3 under the true text")
+    for pr, C in sorted(DISP["true"].items(), key=lambda x: -sum(x[1].values())):
+        if sum(C.values()) >= 3:
+            W = DISP["wrong"][pr]; fmt = lambda C: " ".join(f"{x}{n}" for x, n in C.most_common(6))
+            out.append(f"{pr[0]}|{pr[1]}\t{fmt(C)} ({sum(C.values())})\t{fmt(W)} ({sum(W.values())})")
     rows = [f"{c}\t{x}\t{n}\t{LEAF}\tDP stage {want[0]}-{want[-1]}" for c in sorted(ct) for x, n in ct[c].most_common()]
     tsv = ("# key_period_f176.tsv -- H177 (runner 6), build_f176_key.py " + sys.argv[1] + ": set-anchored DP pairs, consensus signs only; "
            "key source period; NOT merged into v4 (a verifier's)\nclass\tletter\tn\tleaf\tbands\n" + "\n".join(rows) + "\n")

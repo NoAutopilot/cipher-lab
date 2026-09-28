@@ -18,3 +18,14 @@ CH	e/m	t2 l1 (3)	m3 (3)	0.00 / 1.00
 CA	-	l1 (1)	r1 (1)	0.00 / 0.00
 
 rare CA: true top l 1 of 1, wrong-text count of l 0 -> not reported
+
+H178: letters opposite 1:1 disputed columns (A code | B code), true / wrong, pairs with n >= 3 under the true text
+C43|ZHOOK	i25 g2 x1 e1 o1 b1 (37)	e8 u8 o4 a3 c2 n2 (37)
+4PI|4STEM	e3 c2 p1 a1 t1 (8)	i2 n1 f1 r1 s1 l1 (7)
+PHI|SBS	e3 r3 i2 (8)	u2 d1 i1 m1 e1 q1 (9)
+BETA|LOOPSTEM1	m5 n1 l1 u1 (8)	l2 r1 e1 n1 g1 p1 (9)
+4STEM|4TRI	a2 n2 d1 o1 (6)	u1 h1 e1 o1 i1 (5)
+BETA|OTHER	m1 n1 o1 e1 d1 (5)	o2 e1 p1 l1 (5)
+4STEM|HASH4	d3 i1 (4)	p1 u1 e1 a1 (4)
+HASH4|ZHOOK	i1 r1 n1 (3)	s1 i1 (2)
+VBAR_A|VBAR_B	s1 i1 l1 (3)	t1 e1 o1 (3)
