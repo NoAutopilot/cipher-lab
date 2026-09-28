@@ -3125,3 +3125,20 @@ No reading of the target, no class change; rule 10: a catalogued 1797 imprint, n
 Requests: api.wellcomecollection.org 1, archive.org 4, googleapis.com 4, openlibrary.org 2, catalog.hathitrust.org 1,
 api.dp.la 1, gallica.bnf.fr 1, quod.lib.umich.edu 1 (403), loc.gov 4 (one HTTP/2 stream reset, not retried),
 tile.loc.gov 1. Vision 0. Cost: about 1 USD (`--spend` records 1 of the row's 2).
+
+## Campaign step H46 (28 Sept 2026, to 14:41 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H46: tools/key_crossmatch.py on every pair the H43 legation table touches.
+
+**Run:** `python3 tools/key_crossmatch.py --since-hours 1 --out-tsv <scratch>` (8.9 s; 2 key files changed since
+f85334f0, the legation table and a spinelli verify2 file; KEY-CROSSMATCH.tsv not touched). Legation rows kept in
+`h46/xmatch_legation.tsv`: **64 pairs, 0 scored.** The tool's calibrated gate (stat >= 3.292, n >= 100) applies only
+at coverage >= 0.5, and no ciphertext on disk reaches it with this table: the highest are maurice-rupert-1645 0.444 (n
+99), lodewijk-van-nassau 4503/4612/4614 0.41-0.42, the Armstrong target 0.181 (n 404). **A non-test, not a MISS:** a
+partial table of 313 glossed values out of a code of about 2,000 cannot cover half of any other text, the target
+included; the coverage floor is the instrument saying it cannot decide. The target's evidence stays H38's
+corr/screen.py MISS at n=1,030 (usage frequency, not table coverage). What would make the crossmatch able to test:
+the table's coverage of the whole code, i.e. more glossed legation pages (H47 adds the 24 Mar 1807 letter's three
+frames) -- a matter for the scout, not the target. No reading, no class change; nothing called new or first.
+Requests 0, vision 0. Cost: about 0.5 USD (`--spend` records 0.5 of the row's 1).
