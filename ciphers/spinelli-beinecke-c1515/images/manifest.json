@@ -1,530 +1,649 @@
 {
- "_comment": "Beinecke Library (Yale), Spinelli Family Papers, GEN MSS 109, Filza 163. Item catalogued as vufind Record 3811294 (dead route, 302 -> collections.library.yale.edu); current Blacklight catalog OID 10844890. IIIF Presentation API 3.0 manifest, no login. Fetched INTAKE-SPINELLI, 27 Sept 2026.",
- "record_url": "https://collections.library.yale.edu/catalog/10844890",
- "record_url_legacy": "https://brbl-dl.library.yale.edu/vufind/Record/3811294",
- "manifest_url": "https://collections.library.yale.edu/manifests/10844890",
- "manifest_fetched": "27 Sep 2026, ~19:50 UTC",
- "manifest_bytes": 9369,
- "title": "\"Il Sig. Tommaso scrive di Barcellona al Sig. Canonico Leonardo che il Confessore della Maestà del Re per Una sua Indisposizione è partito di lì e volendo applicare a questo posto le dice che preghi il Rev. de'Medici a interporsi per farli avere tal Carica...\" Barchenonia (Barcelona). 4pp. part in cipher.",
- "date_published_created": "1519 Sep 7",
- "language": "Italian",
- "call_number": "GEN MSS 109",
- "collection_note": "Beinecke Rare Book and Manuscript Library > Spinelli archive (GEN MSS 109) > Spinelli Archive: Spinelli family papers I > Spinelli Family Papers > Filze 161-168: \"Lettere\" > Filza 163",
- "provenance": "Purchase, 1988.",
- "orbis_id": "3906653",
- "object_id_oid": "10844890",
- "finding_aid": "https://hdl.handle.net/10079/fa/beinecke.spinelliarchive",
- "archives_at_yale_item_page": "https://archives.yale.edu/repositories/11/archival_objects/2787659",
- "note": "'4pp. part in cipher' in the catalogue title vs. 3 digitised canvases: the manuscript leaf is described as 4 written pages but only 3 canvases are digitised (p.[1], p.[2], p.[3: address leaf]) -- not resolved this job, flagged for a future worker (possibly pp.[1-2] are recto/verso of one physical leaf photographed as one canvas each, or the address leaf itself is being counted as carrying the 4th written side). No transcription or decipherment is named anywhere in the record, its metadata, or its finding aid (per this job's Job 0(c) gate check; the Archives at Yale item page itself, archives.yale.edu, was not fetched -- a different host, out of this job's allowed network scope).",
- "canvases": [
-  {
-   "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867298",
-   "label": "p. [1]",
-   "width": 3577,
-   "height": 4997,
-   "image_service": "https://collections.library.yale.edu/iiif/2/10867298/full/full/0/default.jpg",
-   "fetched_this_job": true,
-   "fetched_as": "images/beinecke3811294_p1_canvas10867298.jpg",
-   "fetched_url": "https://collections.library.yale.edu/iiif/2/10867298/full/1500,/0/default.jpg",
-   "fetched_width": 1500,
-   "bytes": 648970,
-   "sha1": "71b26ff42e76fa157e267a06d8db0d6fbff9d58c",
-   "fetched": "27 Sep 2026, ~20:01 UTC",
-   "content_note": "Direct look this job (no vision subagent call): roughly the top 9 written lines are continuous hand-drawn cipher symbols (several shapes match this folder's key table on sight, e.g. pi-like, w/omega-like, H-like, numeral-like marks), with a few plain words interspersed at the very top ('Scrissi un'altra ... che ... non ho vra ...'); below that the text switches to plain Italian ('L'amorte del Car[dinale]... de Rossi e dispiaciuta...'). Matches the catalogue's own '4pp. part in cipher' -- this leaf mixes cipher and clear text, it is not entirely enciphered. Not transcribed or decoded this job (out of scope, see NOTES.md next step)."
+  "_comment": "Beinecke Library (Yale), Spinelli Family Papers, GEN MSS 109, Filza 163. Item catalogued as vufind Record 3811294 (dead route, 302 -> collections.library.yale.edu); current Blacklight catalog OID 10844890. IIIF Presentation API 3.0 manifest, no login. Fetched INTAKE-SPINELLI, 27 Sept 2026.",
+  "record_url": "https://collections.library.yale.edu/catalog/10844890",
+  "record_url_legacy": "https://brbl-dl.library.yale.edu/vufind/Record/3811294",
+  "manifest_url": "https://collections.library.yale.edu/manifests/10844890",
+  "manifest_fetched": "27 Sep 2026, ~19:50 UTC",
+  "manifest_bytes": 9369,
+  "title": "\"Il Sig. Tommaso scrive di Barcellona al Sig. Canonico Leonardo che il Confessore della Maestà del Re per Una sua Indisposizione è partito di lì e volendo applicare a questo posto le dice che preghi il Rev. de'Medici a interporsi per farli avere tal Carica...\" Barchenonia (Barcelona). 4pp. part in cipher.",
+  "date_published_created": "1519 Sep 7",
+  "language": "Italian",
+  "call_number": "GEN MSS 109",
+  "collection_note": "Beinecke Rare Book and Manuscript Library > Spinelli archive (GEN MSS 109) > Spinelli Archive: Spinelli family papers I > Spinelli Family Papers > Filze 161-168: \"Lettere\" > Filza 163",
+  "provenance": "Purchase, 1988.",
+  "orbis_id": "3906653",
+  "object_id_oid": "10844890",
+  "finding_aid": "https://hdl.handle.net/10079/fa/beinecke.spinelliarchive",
+  "archives_at_yale_item_page": "https://archives.yale.edu/repositories/11/archival_objects/2787659",
+  "note": "'4pp. part in cipher' in the catalogue title vs. 3 digitised canvases: the manuscript leaf is described as 4 written pages but only 3 canvases are digitised (p.[1], p.[2], p.[3: address leaf]) -- not resolved this job, flagged for a future worker (possibly pp.[1-2] are recto/verso of one physical leaf photographed as one canvas each, or the address leaf itself is being counted as carrying the 4th written side). No transcription or decipherment is named anywhere in the record, its metadata, or its finding aid (per this job's Job 0(c) gate check; the Archives at Yale item page itself, archives.yale.edu, was not fetched -- a different host, out of this job's allowed network scope).",
+  "canvases": [
+    {
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867298",
+      "label": "p. [1]",
+      "width": 3577,
+      "height": 4997,
+      "image_service": "https://collections.library.yale.edu/iiif/2/10867298/full/full/0/default.jpg",
+      "fetched_this_job": true,
+      "fetched_as": "images/beinecke3811294_p1_canvas10867298.jpg",
+      "fetched_url": "https://collections.library.yale.edu/iiif/2/10867298/full/1500,/0/default.jpg",
+      "fetched_width": 1500,
+      "bytes": 648970,
+      "sha1": "71b26ff42e76fa157e267a06d8db0d6fbff9d58c",
+      "fetched": "27 Sep 2026, ~20:01 UTC",
+      "content_note": "Direct look this job (no vision subagent call): roughly the top 9 written lines are continuous hand-drawn cipher symbols (several shapes match this folder's key table on sight, e.g. pi-like, w/omega-like, H-like, numeral-like marks), with a few plain words interspersed at the very top ('Scrissi un'altra ... che ... non ho vra ...'); below that the text switches to plain Italian ('L'amorte del Car[dinale]... de Rossi e dispiaciuta...'). Matches the catalogue's own '4pp. part in cipher' -- this leaf mixes cipher and clear text, it is not entirely enciphered. Not transcribed or decoded this job (out of scope, see NOTES.md next step)."
+    },
+    {
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867299",
+      "label": "p. [2]",
+      "width": 3577,
+      "height": 4997,
+      "image_service": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+      "fetched_this_job": false,
+      "fetched_campaign_step": "H1 (session_016fvFiTTAhQng2VqbiBDmRE), 27 Sep 2026 21:57 UTC",
+      "fetched_as": "images/beinecke3811294_p2_canvas10867299.jpg",
+      "fetched_url": "https://collections.library.yale.edu/iiif/2/10867299/full/1500,/0/default.jpg",
+      "fetched_width": 1500,
+      "fetched_height": 2096,
+      "bytes": 596831,
+      "sha1": "36972a12ab5566e275ebc567d2ed45fa0aa5ea7c",
+      "fetched": "27 Sep 2026, 21:57 UTC",
+      "content_note": "Direct look, campaign step H1 (no vision subagent call): about 13 lines of plain Italian continuing p.[1]'s text (begins 'alcuna promessa ...', mentions on sight 'Regno di Napoli et Sardigna', galleys arriving and the fleet 'fra quattro giorni', a marriage 'pero non e ancora publicato /'), then TWO lines of continuous cipher symbols (about 35 and about 20 signs by eye, +-5; shapes on sight match this folder's key table: 4-like, N-like, 8/9-like, omega, pi-like, x, +, 7), then plain closing 'Rispondetemi con qualche fondamento circa il ritorno mio et valete', the date line 'Barchinonia ... septembris M.D.XIX' and a signature flourish. Lower half blank with heavy bleed-through from the recto. Plain-text words here are a direct look, grade I, not a transcription.",
+      "cipher_region_1500px_xywh": [
+        168,
+        854,
+        1247,
+        158
+      ],
+      "cipher_region_native_xywh": [
+        401,
+        2037,
+        2973,
+        376
+      ],
+      "cipher_lines_native_xywh": {
+        "line1": [
+          401,
+          2037,
+          2973,
+          188
+        ],
+        "line2": [
+          401,
+          2225,
+          2973,
+          188
+        ]
+      },
+      "region_note": "Regions measured by eye on the 1500px image and scaled by 3577/1500; pad by ~40 native px before cropping with tools/iiif_lines.py --image."
+    },
+    {
+      "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867300",
+      "label": "p. [3: address leaf]",
+      "width": 3577,
+      "height": 4997,
+      "image_service": "https://collections.library.yale.edu/iiif/2/10867300/full/full/0/default.jpg",
+      "fetched_this_job": false,
+      "fetched_campaign_step": "H1 (session_016fvFiTTAhQng2VqbiBDmRE), 27 Sep 2026 21:57 UTC",
+      "fetched_as": "images/beinecke3811294_p3_canvas10867300.jpg",
+      "fetched_url": "https://collections.library.yale.edu/iiif/2/10867300/full/1500,/0/default.jpg",
+      "fetched_width": 1500,
+      "fetched_height": 2096,
+      "bytes": 478844,
+      "sha1": "1d563b18beec007bf6bacaa266dcf8f7fd1d6930",
+      "fetched": "27 Sep 2026, 21:57 UTC",
+      "content_note": "Direct look, campaign step H1 (no vision subagent call): address leaf. NO cipher. Top: a 5-line later archival summary in a different hand, the text the Beinecke record's title quotes ('Il Sig. Tommaso scrive di Barcellona ... 1519 ...'). Lower left: the address 'no Leonardo de Spinellis Floren[tie] ... hon[oran]do' with a monogram; lower right: seal remnant, '1519' and a filing note written sideways. Rest blank.",
+      "cipher_region_native_xywh": null
+    }
+  ],
+  "requests_this_job": {
+    "brbl-dl.library.yale.edu": 1,
+    "collections.library.yale.edu": 3,
+    "note": "1 curl to brbl-dl (302 redirect, empty body); collections.library.yale.edu: 1 browser_fetch.js render of the catalog page + 1 curl for the IIIF manifest JSON + 1 curl for the one page-1 image = 3. Total 4 of the allowed 6 combined, 2s apart."
   },
-  {
-   "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867299",
-   "label": "p. [2]",
-   "width": 3577,
-   "height": 4997,
-   "image_service": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
-   "fetched_this_job": false,
-   "fetched_campaign_step": "H1 (session_016fvFiTTAhQng2VqbiBDmRE), 27 Sep 2026 21:57 UTC",
-   "fetched_as": "images/beinecke3811294_p2_canvas10867299.jpg",
-   "fetched_url": "https://collections.library.yale.edu/iiif/2/10867299/full/1500,/0/default.jpg",
-   "fetched_width": 1500,
-   "fetched_height": 2096,
-   "bytes": 596831,
-   "sha1": "36972a12ab5566e275ebc567d2ed45fa0aa5ea7c",
-   "fetched": "27 Sep 2026, 21:57 UTC",
-   "content_note": "Direct look, campaign step H1 (no vision subagent call): about 13 lines of plain Italian continuing p.[1]'s text (begins 'alcuna promessa ...', mentions on sight 'Regno di Napoli et Sardigna', galleys arriving and the fleet 'fra quattro giorni', a marriage 'pero non e ancora publicato /'), then TWO lines of continuous cipher symbols (about 35 and about 20 signs by eye, +-5; shapes on sight match this folder's key table: 4-like, N-like, 8/9-like, omega, pi-like, x, +, 7), then plain closing 'Rispondetemi con qualche fondamento circa il ritorno mio et valete', the date line 'Barchinonia ... septembris M.D.XIX' and a signature flourish. Lower half blank with heavy bleed-through from the recto. Plain-text words here are a direct look, grade I, not a transcription.",
-   "cipher_region_1500px_xywh": [
-    168,
-    854,
-    1247,
-    158
-   ],
-   "cipher_region_native_xywh": [
-    401,
-    2037,
-    2973,
-    376
-   ],
-   "cipher_lines_native_xywh": {
-    "line1": [
-     401,
-     2037,
-     2973,
-     188
-    ],
-    "line2": [
-     401,
-     2225,
-     2973,
-     188
-    ]
-   },
-   "region_note": "Regions measured by eye on the 1500px image and scaled by 3577/1500; pad by ~40 native px before cropping with tools/iiif_lines.py --image."
+  "note_4pp_resolved_h1": "Campaign step H1, 27 Sep 2026: the letter's own text ends on p.[2] (date line and signature), and p.[3] is the address leaf, so the three digitised canvases carry every written side of the letter that bears text; the record's '4pp.' most likely counts the blank side of the address leaf. No cipher line is missing from the digitised set.",
+  "requests_campaign_step_H1": {
+    "collections.library.yale.edu": 2,
+    "note": "two curl image fetches, 2 s apart, browser UA, both HTTP 200 image/jpeg"
   },
-  {
-   "canvas_id": "https://collections.library.yale.edu/manifests/oid/10844890/canvas/10867300",
-   "label": "p. [3: address leaf]",
-   "width": 3577,
-   "height": 4997,
-   "image_service": "https://collections.library.yale.edu/iiif/2/10867300/full/full/0/default.jpg",
-   "fetched_this_job": false,
-   "fetched_campaign_step": "H1 (session_016fvFiTTAhQng2VqbiBDmRE), 27 Sep 2026 21:57 UTC",
-   "fetched_as": "images/beinecke3811294_p3_canvas10867300.jpg",
-   "fetched_url": "https://collections.library.yale.edu/iiif/2/10867300/full/1500,/0/default.jpg",
-   "fetched_width": 1500,
-   "fetched_height": 2096,
-   "bytes": 478844,
-   "sha1": "1d563b18beec007bf6bacaa266dcf8f7fd1d6930",
-   "fetched": "27 Sep 2026, 21:57 UTC",
-   "content_note": "Direct look, campaign step H1 (no vision subagent call): address leaf. NO cipher. Top: a 5-line later archival summary in a different hand, the text the Beinecke record's title quotes ('Il Sig. Tommaso scrive di Barcellona ... 1519 ...'). Lower left: the address 'no Leonardo de Spinellis Floren[tie] ... hon[oran]do' with a monogram; lower right: seal remnant, '1519' and a filing note written sideways. Rest blank.",
-   "cipher_region_native_xywh": null
+  "iiif_lines": [
+    {
+      "crop": "p2c_L01_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
+      "source_file": "src_2_10867299_360_1997_3055_456.jpg",
+      "box": [
+        360,
+        1999,
+        2760,
+        2213
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 217,
+        "distance": 151,
+        "prominence": 120.0
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p2c_L01_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
+      "source_file": "src_2_10867299_360_1997_3055_456.jpg",
+      "box": [
+        1015,
+        1999,
+        3415,
+        2213
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 217,
+        "distance": 151,
+        "prominence": 120.0
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p2c_L02_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
+      "source_file": "src_2_10867299_360_1997_3055_456.jpg",
+      "box": [
+        360,
+        2213,
+        2760,
+        2428
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 217,
+        "distance": 151,
+        "prominence": 120.0
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p2c_L02_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
+      "source_file": "src_2_10867299_360_1997_3055_456.jpg",
+      "box": [
+        1015,
+        2213,
+        3415,
+        2428
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 217,
+        "distance": 151,
+        "prominence": 120.0
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L01_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        455,
+        2850,
+        644
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L01_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        455,
+        3450,
+        644
+      ],
+      "lines_in_crop": 1,
+      "band": 1,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L02_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        644,
+        2850,
+        831
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L02_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        644,
+        3450,
+        831
+      ],
+      "lines_in_crop": 1,
+      "band": 2,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L03_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        831,
+        2850,
+        1017
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L03_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        831,
+        3450,
+        1017
+      ],
+      "lines_in_crop": 1,
+      "band": 3,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L04_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        1017,
+        2850,
+        1237
+      ],
+      "lines_in_crop": 1,
+      "band": 4,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L04_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        1017,
+        3450,
+        1237
+      ],
+      "lines_in_crop": 1,
+      "band": 4,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L05_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        1237,
+        2850,
+        1475
+      ],
+      "lines_in_crop": 1,
+      "band": 5,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L05_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        1237,
+        3450,
+        1475
+      ],
+      "lines_in_crop": 1,
+      "band": 5,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L06_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        1475,
+        2850,
+        1681
+      ],
+      "lines_in_crop": 1,
+      "band": 6,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L06_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        1475,
+        3450,
+        1681
+      ],
+      "lines_in_crop": 1,
+      "band": 6,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L07_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        1681,
+        2850,
+        1909
+      ],
+      "lines_in_crop": 1,
+      "band": 7,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L07_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        1681,
+        3450,
+        1909
+      ],
+      "lines_in_crop": 1,
+      "band": 7,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L08_s1.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        450,
+        1909,
+        2850,
+        2136
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 1,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    },
+    {
+      "crop": "p1c_L08_s2.jpg",
+      "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
+      "source_file": "src_2_10867298_450_440_3000_1740.jpg",
+      "box": [
+        1050,
+        1909,
+        3450,
+        2136
+      ],
+      "lines_in_crop": 1,
+      "band": 8,
+      "segment": 2,
+      "method": "tools/iiif_lines.py row ink profile",
+      "params": {
+        "pitch_autocorr": 201,
+        "distance": 140,
+        "prominence": 148.2
+      },
+      "date": "27 Sep 2026"
+    }
+  ],
+  "sibling_letters_filza163": [
+    {
+      "oid": "10844891",
+      "title": "Tommaso to Canon Leonardo, Barcelona, 24 Jan 1519 (Filza 163; finding aid f.2467 area, 2pp.)",
+      "date": "1519 Jan 24",
+      "manifest_url": "https://collections.library.yale.edu/manifests/10844891",
+      "manifest_file": "images/manifest_10844891.json",
+      "canvases": [
+        {
+          "label": "recto",
+          "canvas_id": "10867301",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867301/full/full/0/default.jpg"
+        },
+        {
+          "label": "verso",
+          "canvas_id": "10867302",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867302/full/full/0/default.jpg"
+        }
+      ],
+      "fetched": [
+        {
+          "label": "recto",
+          "canvas_id": "10867301",
+          "file": "images/beinecke_10844891_p1_canvas10867301.jpg",
+          "width": 1500,
+          "bytes": 469529,
+          "sha1": "cae7f75d9162c040e00138e014d00efcb01711be",
+          "fetched": "28 Sep 2026, 00:37 UTC (campaign step H19)"
+        }
+      ],
+      "content_note_direct_look": "recto: one page of plain Italian (Don Giovanni Manuel passing through Florence), dated Barchinonie xxiiij Ianuarij MDXIX, signed Vr Thomas de Spinellis Or[ator]; NO cipher. Verso not fetched (address side). A same-hand plaintext specimen."
+    },
+    {
+      "oid": "10844888",
+      "title": "Tommaso to Canon Leonardo, Barcelona, 29 May 1519 (Filza 163, 4pp.)",
+      "date": "1519 May 29",
+      "manifest_url": "https://collections.library.yale.edu/manifests/10844888",
+      "manifest_file": "images/manifest_10844888.json",
+      "canvases": [
+        {
+          "label": "p. [1]",
+          "canvas_id": "10867290",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867290/full/full/0/default.jpg"
+        },
+        {
+          "label": "p. [2]",
+          "canvas_id": "10867291",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867291/full/full/0/default.jpg"
+        },
+        {
+          "label": "p. [3]",
+          "canvas_id": "10867292",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867292/full/full/0/default.jpg"
+        },
+        {
+          "label": "p. [4: address leaf]",
+          "canvas_id": "10867293",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867293/full/full/0/default.jpg"
+        }
+      ],
+      "fetched": [
+        {
+          "label": "p. [1]",
+          "canvas_id": "10867290",
+          "file": "images/beinecke_10844888_p1_canvas10867290.jpg",
+          "width": 1500,
+          "bytes": 716379,
+          "sha1": "57c66755629c6f32e478f7c142b2195418f48fa2",
+          "fetched": "28 Sep 2026, 00:37 UTC (campaign step H19)"
+        }
+      ],
+      "content_note_direct_look": "p.[1]: dense plain Italian (court news, Monsignor de Cieures, Burgos, the French), NO cipher on this page; pp.[2]-[3] not yet fetched (H19b)."
+    },
+    {
+      "oid": "10844889",
+      "title": "Tommaso to Canon Leonardo, Barcelona, 6 Jul 1519 (Filza 163, 4pp.)",
+      "date": "1519 Jul 6",
+      "manifest_url": "https://collections.library.yale.edu/manifests/10844889",
+      "manifest_file": "images/manifest_10844889.json",
+      "canvases": [
+        {
+          "label": "p. [1]",
+          "canvas_id": "10867294",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867294/full/full/0/default.jpg"
+        },
+        {
+          "label": "p. [2]",
+          "canvas_id": "10867295",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867295/full/full/0/default.jpg"
+        },
+        {
+          "label": "p. [3]",
+          "canvas_id": "10867296",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867296/full/full/0/default.jpg"
+        },
+        {
+          "label": "p. [4: address leaf]",
+          "canvas_id": "10867297",
+          "image_service": "https://collections.library.yale.edu/iiif/2/10867297/full/full/0/default.jpg"
+        }
+      ],
+      "fetched": [
+        {
+          "label": "p. [1]",
+          "canvas_id": "10867294",
+          "file": "images/beinecke_10844889_p1_canvas10867294.jpg",
+          "width": 1500,
+          "bytes": 660870,
+          "sha1": "2d669ef6d46438865a14240aac7c83f3a9d982d5",
+          "fetched": "28 Sep 2026, 00:37 UTC (campaign step H19)"
+        }
+      ],
+      "content_note_direct_look": "p.[1]: dense plain Italian (the Electors publish the Catholic Majesty King of the Romans, audience with the King), NO cipher on this page; pp.[2]-[3] not yet fetched (H19b)."
+    }
+  ],
+  "requests_campaign_step_H19": {
+    "collections.library.yale.edu": 6,
+    "note": "3 manifests + 3 p.1 images, 2 s apart, browser UA, all HTTP 200"
   }
- ],
- "requests_this_job": {
-  "brbl-dl.library.yale.edu": 1,
-  "collections.library.yale.edu": 3,
-  "note": "1 curl to brbl-dl (302 redirect, empty body); collections.library.yale.edu: 1 browser_fetch.js render of the catalog page + 1 curl for the IIIF manifest JSON + 1 curl for the one page-1 image = 3. Total 4 of the allowed 6 combined, 2s apart."
- },
- "note_4pp_resolved_h1": "Campaign step H1, 27 Sep 2026: the letter's own text ends on p.[2] (date line and signature), and p.[3] is the address leaf, so the three digitised canvases carry every written side of the letter that bears text; the record's '4pp.' most likely counts the blank side of the address leaf. No cipher line is missing from the digitised set.",
- "requests_campaign_step_H1": {
-  "collections.library.yale.edu": 2,
-  "note": "two curl image fetches, 2 s apart, browser UA, both HTTP 200 image/jpeg"
- },
- "iiif_lines": [
-  {
-   "crop": "p2c_L01_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
-   "source_file": "src_2_10867299_360_1997_3055_456.jpg",
-   "box": [
-    360,
-    1999,
-    2760,
-    2213
-   ],
-   "lines_in_crop": 1,
-   "band": 1,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 217,
-    "distance": 151,
-    "prominence": 120.0
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p2c_L01_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
-   "source_file": "src_2_10867299_360_1997_3055_456.jpg",
-   "box": [
-    1015,
-    1999,
-    3415,
-    2213
-   ],
-   "lines_in_crop": 1,
-   "band": 1,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 217,
-    "distance": 151,
-    "prominence": 120.0
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p2c_L02_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
-   "source_file": "src_2_10867299_360_1997_3055_456.jpg",
-   "box": [
-    360,
-    2213,
-    2760,
-    2428
-   ],
-   "lines_in_crop": 1,
-   "band": 2,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 217,
-    "distance": 151,
-    "prominence": 120.0
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p2c_L02_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/360,1997,3055,456/full/0/default.jpg",
-   "source_file": "src_2_10867299_360_1997_3055_456.jpg",
-   "box": [
-    1015,
-    2213,
-    3415,
-    2428
-   ],
-   "lines_in_crop": 1,
-   "band": 2,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 217,
-    "distance": 151,
-    "prominence": 120.0
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L01_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    455,
-    2850,
-    644
-   ],
-   "lines_in_crop": 1,
-   "band": 1,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L01_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    455,
-    3450,
-    644
-   ],
-   "lines_in_crop": 1,
-   "band": 1,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L02_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    644,
-    2850,
-    831
-   ],
-   "lines_in_crop": 1,
-   "band": 2,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L02_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    644,
-    3450,
-    831
-   ],
-   "lines_in_crop": 1,
-   "band": 2,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L03_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    831,
-    2850,
-    1017
-   ],
-   "lines_in_crop": 1,
-   "band": 3,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L03_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    831,
-    3450,
-    1017
-   ],
-   "lines_in_crop": 1,
-   "band": 3,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L04_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    1017,
-    2850,
-    1237
-   ],
-   "lines_in_crop": 1,
-   "band": 4,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L04_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    1017,
-    3450,
-    1237
-   ],
-   "lines_in_crop": 1,
-   "band": 4,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L05_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    1237,
-    2850,
-    1475
-   ],
-   "lines_in_crop": 1,
-   "band": 5,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L05_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    1237,
-    3450,
-    1475
-   ],
-   "lines_in_crop": 1,
-   "band": 5,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L06_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    1475,
-    2850,
-    1681
-   ],
-   "lines_in_crop": 1,
-   "band": 6,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L06_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    1475,
-    3450,
-    1681
-   ],
-   "lines_in_crop": 1,
-   "band": 6,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L07_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    1681,
-    2850,
-    1909
-   ],
-   "lines_in_crop": 1,
-   "band": 7,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L07_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    1681,
-    3450,
-    1909
-   ],
-   "lines_in_crop": 1,
-   "band": 7,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L08_s1.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    450,
-    1909,
-    2850,
-    2136
-   ],
-   "lines_in_crop": 1,
-   "band": 8,
-   "segment": 1,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  },
-  {
-   "crop": "p1c_L08_s2.jpg",
-   "source_url": "https://collections.library.yale.edu/iiif/2/10867298/450,440,3000,1740/full/0/default.jpg",
-   "source_file": "src_2_10867298_450_440_3000_1740.jpg",
-   "box": [
-    1050,
-    1909,
-    3450,
-    2136
-   ],
-   "lines_in_crop": 1,
-   "band": 8,
-   "segment": 2,
-   "method": "tools/iiif_lines.py row ink profile",
-   "params": {
-    "pitch_autocorr": 201,
-    "distance": 140,
-    "prominence": 148.2
-   },
-   "date": "27 Sep 2026"
-  }
- ]
 }

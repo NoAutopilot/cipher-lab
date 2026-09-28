@@ -691,3 +691,23 @@ wording, no other target touched. **Cost:** recorded as 0.3 USD (est 0.5).
 **Consequence:** the campaign's material is no longer one letter of 265 signs. Next: H19 (the three other 1519
 Barcelona letters, manifests + page images, direct look for cipher lines, 6 requests), then H20 (the 86-letter
 bundle's manifest and a first look at its 62 images, in request-capped batches).
+
+## Campaign step H19 (28 Sept 2026, 00:38-00:40 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H19: the three other 1519 Barcelona letters -- do they carry
+cipher? Six requests (3 manifests, 3 first pages at 1500px), all HTTP 200, written into `images/manifest.json`
+under `sibling_letters_filza163` with sha1s; manifests saved as `images/manifest_<oid>.json`.
+
+**Result so far (first pages only, direct look, no vision call):**
+- **10844891, 24 Jan 1519** (2 canvases, recto + verso): the recto is one page of plain Italian recommending Don
+  Giovanni Manuel, dated "Barchinonie xxiiij Ianuarij MDXIX", signed "Vr Thomas de Spinellis Or[ator]" -- **no
+  cipher**; the verso is the address side (not fetched). A same-hand plaintext specimen, useful for the hand.
+- **10844888, 29 May 1519** (4 canvases): p.[1] is dense plain Italian (court news), **no cipher on p.[1]**; pp.[2]-[3]
+  not yet fetched.
+- **10844889, 6 Jul 1519** (4 canvases; same 3577x4997 scan size as ours): p.[1] plain Italian (the Electors, the
+  audience), **no cipher on p.[1]**; pp.[2]-[3] not yet fetched.
+So on the pages seen the cataloguer's "part in cipher" flag on the 7 Sep letter alone holds; the four inner pages of
+the May and July letters are the remaining places cipher could sit -- H19b, four requests.
+
+**Requests:** collections.library.yale.edu 6 (this step's cap). No credentials, no AskUserQuestion, rule 10 wording,
+no other target touched. **Cost:** recorded as 0.5 USD (est 1.0).
