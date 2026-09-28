@@ -195,6 +195,10 @@ SPRINT.md scoreboard, argue with the rankings, ledger the runner sessions, and r
 TLDR every hour; close a campaign only with a written reason; three dropped steps in a row with no new hypothesis is a red
 line for the owner, not a close. The 48-hour number is verified readings per dollar.
 
+## Re-arm first (28 Sept 2026, after the 06:45-14:15 UTC outage)
+
+At every check-in the orchestrator re-arms its own next check-in (update_trigger, run_once_at one hour out) BEFORE any other work, then updates the prompt at the end. On 28 Sept this account hit its Fable limit mid-check-in, the re-arm at the end of the turn never ran, and nothing woke the orchestrator for about 7.5 hours while every runner sat failed. A runner whose get_session shows status_bucket FAILED with a model-limit message is replaced at once on the model the owner names (Opus 5.5 from 14:17 UTC 28 Sept).
+
 ## Blocker question (28 Sept 2026, about 02:4x UTC; after the owner twice supplied the obvious next move)
 
 At every check-in, before spawning anything, the orchestrator writes one line for the CLOSEST target: the current

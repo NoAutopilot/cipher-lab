@@ -1294,3 +1294,12 @@ the end of every wake.
 | 28 Sept 2026 | f61 runner 2 | session_01J8hunWPcE7QYcpCx59CUHV | owner | Fable | 61.12 | stopped on context 670k at 06:20, archived 06:4x | H24b-H63 |
 | 28 Sept 2026 | f61 runner 3 | session_01Ek99Vo12NhAfsPY7FEFWhx | owner | Fable | continuous | running from 06:37 | trig_01LSuzyGmbct8ViYncr5S9WM :45 |
 | 28 Sept 2026 | VERIFY-SPINELLI-1 | session_01SCWXexNRimHBDRaT1SrmX8 | owner | Opus | cap 30 | running from 06:37 | novelty first, then the partial decode audit |
+| 28 Sept 2026 | armstrong runner 2 (final) | session_01NuaRiPghx6VRXA6GuJE8ne | owner | Fable | 127.82 | failed on the Fable limit, archived 14:2x | H33-H41 |
+| 28 Sept 2026 | spinelli runner 3 (final) | session_0189W7KLRRUSFLgi5iPbBYph | owner | Fable | 37.21 | failed on the Fable limit, archived 14:2x | H33d-H39, H42 unfinished |
+| 28 Sept 2026 | f61 runner 3 | session_01Ek99Vo12NhAfsPY7FEFWhx | owner | Fable | 4.20 | failed on the Fable limit at start, archived 14:2x | none |
+| 28 Sept 2026 | VERIFY-SPINELLI-1 | session_01SCWXexNRimHBDRaT1SrmX8 | owner | Opus | 2.24 | stopped 06:43 without writing, archived 14:2x | none |
+| 28 Sept 2026 | armstrong runner 3 | session_01BuquErzUYdSB116KPAM8qh | owner | Opus 5.5 | continuous | running from 14:17 | trig_01KsXywGFVrwoCH1teUNned5 :25 |
+| 28 Sept 2026 | mercy runner (owner account) | session_01K2B2cTCwujqmMqmGYyE6BY | owner | Opus 5.5 | continuous | running from 14:17 | trig_01FiLDeivjm7E4BcEL4B9iLh :30 |
+| 28 Sept 2026 | f61 runner 4 | session_01NQpd6L9ZvLvjU1L7ttFmZs | owner | Opus 5.5 | continuous | running from 14:17 | trig_015n8G1rbU745hZLgeo7FMSw :45 |
+| 28 Sept 2026 | spinelli runner 4 | session_01MHf6EKHuvKLG8nh18jCwqR | owner | Opus 5.5 | continuous | running from 14:17 | trig_01XmnhA3J4cWaSK8Cu6tTvRr :55 |
+| 28 Sept 2026 | VERIFY-SPINELLI-2 | session_01XuDMPYxhtzvBm8xU2z4ugJ | owner | Opus 5.5 | cap 30 | running from 14:17 | novelty first |

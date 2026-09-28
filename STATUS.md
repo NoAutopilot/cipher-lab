@@ -2448,6 +2448,18 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 07:20 Pacific [14:20 UTC]): a 7.5-hour outage on the Fable limit; every runner re-spun on Opus 5.5
+
+Counts 18 / 2 / 1 / 6, unchanged. f.61 meter unchanged: 14 firm / 65 two-way / 20 unread.
+
+**What happened.** This account reached its Fable limit at about 06:45 UTC. The armstrong runner (after H41), the spinelli runner (with H42 marked running) and the brand-new f.61 runner 3 all failed at their next turn and sat failed until 14:15. The orchestrator's own 06:45 check-in ended before its re-arm step, so no check-in fired in the window. The mercy runner on account 2 had already stopped above 700k context at 05:40 and paused its own trigger at 08:39, with no replacement. VERIFY-SPINELLI-1 (Opus) ended its turn at 06:43 with a summary and wrote nothing. Line B on account 3 stopped at 06:54 on three consecutive drops (B39-B41), then finished its search tail (Jefferson Papers and the Founders reply chain Feb 1808-Feb 1809: nothing on the 20 Feb letter). The account-2 and account-3 dispatchers fired every hour with nothing queued. MERCY-OUT-CHECK (account 3) did finish at 07:03: the three Mercy drafts carry the N4 safe sentence and the 1933 précis, fact-checked, nothing sent.
+
+**What was done at 14:17-14:2x.** On the owner's word that this account is out of Fable, four Opus 5.5 runners were spawned with bound hourly triggers: armstrong runner 3 (session_01BuquErzUYdSB116KPAM8qh, :25), mercy on the owner account (session_01K2B2cTCwujqmMqmGYyE6BY, :30), f.61 runner 4 (session_01NQpd6L9ZvLvjU1L7ttFmZs, :45, next row H65), spinelli runner 4 (session_01MHf6EKHuvKLG8nh18jCwqR, :55). Each prompt voids rows marked running by the retired session and says never to end a turn with a summary while steps remain. VERIFY-SPINELLI-2 (session_01XuDMPYxhtzvBm8xU2z4ugJ, Opus 5.5, cap 30) replaces the first verifier with an instruction to push as it goes. The old triggers were deleted and the four dead sessions retitled ARCHIVED and archived. Spinelli's budget was raised to 400 for today under the lean-in direction. parent.md gains "Re-arm first".
+
+**Blocker line, f.61 (closest).** Unchanged from 06:45: the 65 two-way choices and the five rare classes; H65 (SBS period attestation) is next for runner 4; ASKS 88 and 89 are a person's reading of the gloss words.
+
+**Line B.** Its red line stands: three consecutive drops with no new hypothesis. It is the owner's call whether it gets a new plan; nothing here restarts it.
+
 ### Orchestrator note (28 Sept 2026, 23:45 Pacific 27 Sept [06:45 UTC]): Mercy verified N4; Spinelli reads in part under Domnina's key, unverified; f.61 meter unchanged
 
 Counts 18 / 2 / 1 / 6, unchanged. This session compacted (context 125k after the boundary); no successor needed.
