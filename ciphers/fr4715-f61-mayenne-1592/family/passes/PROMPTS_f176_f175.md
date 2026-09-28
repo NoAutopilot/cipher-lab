@@ -49,3 +49,10 @@ in scratch, not committed): the H170 calls (1)(2) prompt with rows L05..L12 and 
 H170 call (3) prompt with lines L09..L20, output `passes/f177r_clearA_L09-L20.tsv`. No gate at this stage: the rows feed the
 align_separate-style key build (H177's step 4), which carries the checks align_separate.py already reports (anchors, letters
 per sign, share of assigned plain in the decipherer's underlines) and whose per-class rows are then compared with key v4.
+
+## H177b stage 2a (runner 6, 28 Sept 2026) -- WRITTEN BEFORE THE CALLS
+3 Opus vision calls, inline replies (the 22:45 firing's rule: no tool use but reading the named images; the runner writes the files
+verbatim): (1)(2) blind sign passes A/B of f.176r L13-L19 -> `passes/f176r_signs{A|B}_L13-L19.tsv`; (3) blind read of fol. 177r
+L21-L34 -> `passes/f177r_clearA_L21-L34.tsv`. Prompts = H177a's with the row ranges changed and "Write your transcription ... with the
+Write tool" replaced by "Reply inline ONLY with the TSV block (same header), nothing else". No gate at this stage; build_f176_key.py
+L01-L19 afterwards (same design, same wrong-text control).
