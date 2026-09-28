@@ -1,0 +1,33 @@
+You are a blind transcriber of a 16th-century French manuscript page in ordinary handwriting (BnF fr.3984 f.184r, a contemporary clear copy, 1593; about 46 lines). You will transcribe every line of the page, exactly as written. The page is given as 12 horizontal strips S01..S12 from top to bottom, each about 4 lines tall, and each strip as TWO halves h1 (left) and h2 (right), each 1700 px wide and 460 px tall at the native scan resolution. The two halves of a strip overlap by 100 px (a red tick at the top edge marks the overlap): the words in the overlap are read once, as part of the line. Consecutive strips overlap by 85 px vertically: a line cut by the TOP edge of a strip is skipped (it is complete in the previous strip); a line cut by the BOTTOM edge is skipped too (it is complete in the next strip); a line that is complete near the bottom of strip k AND complete near the top of strip k+1 is listed once, under strip k. Number the lines of the page consecutively from 1 across all strips.
+
+Transcription rules: 16th-century spelling kept exactly (nostre, aultre, tousiours, ie/je as written, u/v as written); abbreviation marks expanded in square brackets (Mons[eigneu]r, s[ainc]te[té], q[ue]); a word you cannot read as '?' with the letters you can read (na?ent); a word or stretch that is UNDERLINED on the page is wrapped in curly braces, {like this} -- mark every underline exactly (word by word if the underline starts or stops mid-word, write the underlined part inside the braces); a word crossed out on the page is wrapped in double square brackets [[like this]]; a long dash written as a filler is written as '--'. Keep the writer's word order and line breaks; do not modernise, do not correct, do not add punctuation the page does not carry.
+
+Read the 24 images with the Read tool in this order: for each strip, half h1 then h2:
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S01_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S01_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S02_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S02_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S03_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S03_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S04_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S04_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S05_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S05_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S06_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S06_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S07_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S07_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S08_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S08_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S09_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S09_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S10_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S10_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S11_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S11_h2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S12_h1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f184r/f184r_S12_h2.jpg
+Write your transcription as a TSV file with the Write tool to the OUTPUT PATH given at the end of this prompt, header exactly:
+line	strip	conf	text
+one row per line of the page; 'line' counts from 1 across the page; 'strip' is the strip id (S01..S12) the line was read in; conf h/m/l for the line; 'text' is the line exactly as written under the rules above (no tab characters inside it). When done, report only: the number of lines per strip and the total.
+OUTPUT PATH: /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/passes/f184r_clearB.tsv

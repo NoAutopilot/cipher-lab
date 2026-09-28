@@ -1,0 +1,83 @@
+You are a blind transcriber of a 16th-century French cipher manuscript (BnF fr.3983 f.106r, headed '4 de mars 1593'). You will list every CIPHER SIGN, left to right, in each of 6 line bands (L01..L06, the first six cipher rows of the leaf). Each band is one cipher row of the leaf and is given as SEVEN image segments s1..s7 (left to right), each 1560 px wide and about 360 px tall, scaled 3x from the native scan. Consecutive segments of a band OVERLAP by 180 px: the last 180 px of segment sN show the same marks as the first 180 px of segment sN+1 (red tick marks at the top edge mark the overlap zone). List a sign that falls in the overlap ONCE ONLY, in the earlier segment; in the later segment start listing after the red tick.
+
+What a band shows: the cipher row runs across the LOWER-MIDDLE of the band, about 125 px above the bottom edge (a sequence of invented signs: 4-like figures with loops, chains of small loops on stems, triangles with a bar, brackets, 43-like marks, crossed 4s, '24'-like marks); ABOVE it, in the upper part of the band, a few small ordinary clear words (a sparse French decipherment) and the descenders of the previous cipher row -- IGNORE the clear words entirely, they are not signs, and never transcribe marks cut by the top or bottom edge. The leaf is thin: the writing of the other side shows through as a lighter, mirror-image grey ghost between and behind the signs -- transcribe only the dark, right-reading ink of this side, never the ghost. The signs are written close together; a sign is one connected ink figure with its own stem or body. A clear word written INSIDE the cipher row (in the row itself) is listed as one row with sign = PLAIN and the word in the note. A long horizontal dash inside the row is listed as sign = DASH.
+
+Code every sign with the shape atlas below (the 'code' column). Use OTHER for a sign matching none, with a shape description in the note. If a sign is between two codes, give the best code and name the alternative in the note as 'alt CODE'. A chain of several small loops on one stem or bar is ONE sign (PHI) -- but two separate stems are two signs. Confidence h/m/l.
+
+Atlas (code TAB shape):
+PHI	loops (one or several) on a long vertical stem, phi-like
+C43	a mark shaped like the digits 43 written together
+CA	a mark shaped like a cursive a
+VBAR_A	closed down-pointing triangle whose top side is a horizontal bar, nothing above the bar, no second bar
+VBAR_B	closed down-pointing triangle with a top bar AND a second horizontal bar crossing its bottom point
+C6	a mark shaped like the digit 6
+4TRI	a 4-shaped element (4 with a crossbar) sitting above a small triangle or V
+INF	an infinity sign or figure-8 lying on a horizontal bar
+DBL	two loops on a stem, one above the other (o-T-o)
+LOOPBAR	a loop on a stem with a bar at the foot
+EBR_A	an E-like bracket open to the right whose top bar is joined to the foot of the vertical by a fine hairline diagonal, the foot bar longer than the top bar and tapering into a tail (H22 group A)
+EBR_B	a plain squared C or gamma open to the right: top bar and foot bar on a vertical, no diagonal, the top bar longest, often a short spur of the vertical above the top bar (H22 group B)
+ISH	a closed capital I: a thin vertical with a bar on both sides at top and foot (H22 group C)
+ZHOOK	a 7 or Z hook over two close slanted stems, crossed
+CROSS	a plain plus or cross, possibly with a stroke rising to the upper right
+ELOOP	a dark e-shaped loop with a curling tail
+4PI	a 4-shaped element above two stems on a bar (4 over pi)
+HASH4	a dense crossed-4 cluster, hash-like, with stems
+LOOPSTEM1	a single loop on a long stem (not phi-like, not double)
+CH	a mark shaped like a cursive h
+BETA	a beta-like shape: a loop at the top of a stem with a 3-like bowl below it
+LL	a mark shaped like ll
+4STEM	a 4 with a long crossed stem and no triangle below
+OTHER	any cipher sign matching none of the above (describe it in the note)
+H24	a 2-like curl joined to a crossed 4 (the '24' sign); distinct from HASH4, the plain dense crossed-4/hash cluster
+LOOPS	a chain of two or more small loops written side by side with NO stem and NO bar (like 'oo' or 'ooo'); a chain that sits on a vertical stem is PHI, not LOOPS
+ZBAR	a z-like or 2-like zigzag stroke with a horizontal bar through or under it and no stems; distinct from ZHOOK (a 7/Z hook over two slanted stems)
+RSIGN	a small r-like or 5-like sign, a short stem with a hook to the right, no loop
+
+Read the 42 images with the Read tool in this order: for each band, segment s1 .. s7:
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L01_s7.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L02_s7.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L03_s7.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L04_s7.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L05_s7.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s1.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s2.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s3.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s4.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s5.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s6.jpg
+/home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f106r/f106r_L06_s7.jpg
+Write your transcription as a TSV file with the Write tool to the OUTPUT PATH given at the end of this prompt, header exactly:
+line	pos	sign	conf	segment	x_px	note
+one row per sign; 'line' is the band id (L01..L06); 'pos' counts from 1 within the band across all seven segments; 'segment' is s1..s7; 'x_px' is the sign's horizontal centre in pixels within its segment image (0-1560); 'note' is free text. No letters of the alphabet are to be guessed for any sign: this is a shape transcription only, and no key or reading is to be attempted. When done, report only: the number of signs per band, and the total.
+OUTPUT PATH: /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/passes/f106r_signsB.tsv
