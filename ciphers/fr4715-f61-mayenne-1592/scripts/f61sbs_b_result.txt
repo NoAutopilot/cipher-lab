@@ -1,0 +1,7 @@
+read_call_SBSB.tsv: 42 rows; 42 tiles
+  tile 28 (f101r e): not scored
+  group A: b 11, e 3, o 12  (f101r:b 6, f101r:e 1, f101r:o 6, f188r:b 5, f188r:e 2, f188r:o 6)
+  group B: b 1, e 4, o 2  (f101r:o 2, f188r:b 1, f188r:e 4)
+  group C: b 2, e 6, o 0  (f101r:b 2, f101r:e 6)
+SBS group A: share of o 0.86 (12/14), b 0.79 (11/14), e 0.23 (3/13); Fisher one-sided b vs e P = 0.005553
+GATE H67: PASS

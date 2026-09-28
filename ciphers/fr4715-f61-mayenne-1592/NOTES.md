@@ -1739,3 +1739,29 @@ Reader's criterion verbatim: "in group A the two loops sit side by side at writi
 the point where they meet, without passing through either loop; in group B at least one loop rises above the line (a
 phi-like loop or a small top loop over a pair, making a trefoil) and the stem runs up through the loop or cluster."
 Group per tile in `scripts/read_call_SBS.tsv`.
+
+## Campaign step H67 (28 Sept 2026, 14:33-14:45 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+The b half of the SBS b/o cell (H65 tested o only). Design pre-registered and pushed 4c057470 before the call
+(`scripts/f61sbs.py build-b` / `score-b`, gate in `score_b`'s docstring, prompt `scripts/PROMPTS.md` "H67" = H65's with
+file names and count changed): every PHI token under a period b matched to pass A (f.101r 8, f.188r 6) plus per leaf
+as many e and o tokens (seed 67; some o/e tiles may repeat H65's, drawn from the same pool), 42 tiles
+(`images/h67/sbsb_sheet1-5.jpg`, key `scripts/f61sbs_b_tiles.tsv`), one blind Opus vision call (1 of 4 this step).
+
+The reader made three groups: A two loops side by side, stem from the junction; B the same pair with a bare ascender
+through it; C a head loop stacked over a pair (the trefoil). Tile 28 none (tick on ruled strokes).
+
+| group | b | e | o |
+|---|---|---|---|
+| A (side by side) | 11 | 3 | 12 |
+| B (bare ascender) | 1 | 4 | 2 |
+| C (head loop / trefoil) | 2 | 6 | 0 |
+
+SBS group = A (o share 12/14 = 0.86, the anchor recovered); b 11/14 = 0.79 vs e 3/13 = 0.23, Fisher one-sided
+P = 0.0056 -> **GATE H67 PASS** (`scripts/f61sbs_b_result.txt`, `--check` OK). Per leaf, b in A: f.101r 6/8, f.188r 5/6.
+With H65: the period decipherers write both b and o under the side-by-side glyph and e under the trefoil; the SBS cell
+b/o is period-attested at grade C on both halves, matching the table's own b/o cell. The reader's own B/C boundary
+("B may be a lighter or less careful form of C") is not scored. No reading, no class change; nothing solved, new or first.
+
+H68 dropped: its "prior" (period o vs b counts under SBS) would be French letter frequency (o about six times b) and
+adds nothing a verifier does not already bring to L10 positions 6/11.
