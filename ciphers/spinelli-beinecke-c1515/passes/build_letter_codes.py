@@ -7,7 +7,10 @@ a script rebuilds the committed file and exits non-zero if it is stale).
   letter_codes_v3b.tsv = the same, with the p.[1] HOOK boxes that BOTH H14 blind passes (p1_HOOK_passE/F.tsv) coded
                          as the same v2 member shape written as that sub-code at grade AB (H27, 28 Sept 2026); a box
                          both passes called FRAG is dropped as a fragment. Boxes the two passes disagreed on stay HOOK.
-  ciphertext_v3.txt / ciphertext_v3b.txt = the codes as space-separated tokens, one line per cipher line, for
+  letter_codes_v4.tsv  = p1_reconciled_v4.tsv + p2_reconciled_v4.tsv (passes/reconcile_opus.py: the Opus blind pass
+                         pairs G/H, I/J, K/L reconciled, H29b/H29c/H30, 28 Sept 2026), fragments dropped; codes are
+                         atlas v3 plus JHOOK and EPSILON.
+  ciphertext_v3.txt / ciphertext_v3b.txt / ciphertext_v4.txt = the codes as space-separated tokens, one line per cipher line, for
                          tools/family_run.py --cipher ... --tokens space.
 
   python3 passes/build_letter_codes.py            # write all four files
@@ -39,7 +42,9 @@ def agreed_hook_subcodes():
 def build(variant):
     sub = agreed_hook_subcodes() if variant == "v3b" else {}
     out = []
-    for page, path in (("p1", "p1_reconciled.tsv"), ("p2", "p2_reconciled.tsv")):
+    src = (("p1", "p1_reconciled_v4.tsv"), ("p2", "p2_reconciled_v4.tsv")) if variant == "v4" else \
+          (("p1", "p1_reconciled.tsv"), ("p2", "p2_reconciled.tsv"))
+    for page, path in src:
         for r in rows(path):
             code = r["code"].strip()
             grade = r["grade"].strip()
@@ -72,7 +77,7 @@ def txt(out):
 def main():
     check = "--check" in sys.argv
     stale = 0
-    for variant in ("v3", "v3b"):
+    for variant in ("v3", "v3b", "v4"):
         out = build(variant)
         for name, content in ((f"letter_codes_{variant}.tsv", tsv(out)), (f"ciphertext_{variant}.txt", txt(out))):
             p = os.path.join(HERE, name)

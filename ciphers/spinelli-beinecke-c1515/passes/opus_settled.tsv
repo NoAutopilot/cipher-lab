@@ -1,0 +1,19 @@
+unit	line	pos	code	grade	note
+p1	1	16	OMEGADOT	R	G PHI / H OMEGADOT; omega with a curl above, the OMEGADOT exemplar shape
+p1	1	18	JHOOK	AB	both Opus readers: the same non-atlas shape (bold vertical, left foot), named NEW by each
+p1	1	21	JHOOK	AB	both Opus readers: same shape as box 18
+p1	1	24	PHI	R	G SIX / H PHI; loop at base with ascender AND a cross bar -- the bar settles PHI
+p1	1	27	HOOK	R	G HOOK / H EIGHT; large lower loop with curled top (g-loop subtype of HOOK, the atlas HOOK row's rightmost exemplar)
+p1	2	19	PHI	R	G NEW x-over-loop / H PHI; crossed loop on a descender = PHI
+p1	3	2	HOOK	R	G HOOK / H EIGHT; g-loop subtype, as L1.27
+p1	3	23	SIX	R	G SIX / H PHI; loop at base with ascender, no cross bar -- SIX
+p1	3	30	JHOOK	R	G thin J hook / H vertical with left foot; thin; H14b's pair read a fragment -- kept as a sign at R
+p1	4	4	PHI	R	G SIX / H PHI; loop at base, ascender, cross bar at mid height -- PHI as L1.24
+p1	4	16	SEVEN+NINE	R	G NEW double J-hook / H SEVEN+NINE; a small 7 then a tall 9 with a long hooked tail; C read SEVEN+HOOK
+p1	7	1	EIGHT	R	I EIGHT / J SIX; open cursive 8 (loop above, loop below on a diagonal), the atlas EIGHT row's cursive variant
+p1	7	13	_	R	I JHOOK / J fragment; bold vertical with no foot -- a bare stroke, as the H15 reconciliation had it
+p1	7	22	HOOK	R	I PHI / J HOOK; g-loop subtype, no cross bar
+p1	8	4	EPSILON	AB	both Opus readers: bold epsilon opening right (the H15 EREV, renamed: it is not reversed)
+p1	8	17	HOOK	R	I PHI / J HOOK; g-loop with a short bar at top right; settled HOOK with the g-loop note
+p2	2	4	HOOK	R	K HOOK / L fragment; a bold hooked arc, the second of H10's two long-s signs at this point (v1 L2 boxes 2-3)
+p2	2	10	HOOK+ESS	R	K HOOK+EIGHT / L HOOK; a small loop-with-tail then an S-curve with a bottom loop; H10 read RHO then LONGS here

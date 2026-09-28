@@ -1212,3 +1212,61 @@ expected direction. Findings for the rebuild (H30):
 **Controls:** the pre-registered 60% gate and the Sonnet pairs' figures on the same images. No reading, no class
 change, rule 10 wording. **Cost:** 4 Opus vision calls plus this runner's turns -- recorded as 12.0 USD (the est).
 No network requests, no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H30 (28 Sept 2026, 02:54-02:58 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H30: rebuild the coded transcription from the Opus blind pass pairs
+(H29b/H29c), then re-run the two instruments that had failed on the Sonnet coding.
+
+**Built (all regenerable, `--check` on each):** `passes/opus_settled.tsv` (this runner's direct-look decision for each
+of the 18 pair disagreements, from the 4x montages, one line of reasoning per box), `passes/reconcile_opus.py` (pair
+agrees -> AB; disagrees -> the settled code, grade R unless both readers agreed on a shape outside the atlas; "A+B"
+boxes expanded into two rows) -> `p1_reconciled_v4.tsv` (216 rows) and `p2_reconciled_v4.tsv` (58 rows): **257 AB,
+17 R**, against v3's 145 AB / 68 R on p.[1] alone. `passes/build_letter_codes.py` now also emits `letter_codes_v4.tsv`
+and `ciphertext_v4.txt` (fragments dropped): **259 codes, K=26** -- HOOK 38 (14.7% of tokens, 18.2% of the letter
+tokens; v3 54 / 20.6% / 24.8%), SEVEN 25, TWO 21, OMEGABAR 19, NINE 17, PHI 17, EIGHT 15, THREE 13, SIX 12, XCURL 10,
+DIAMOND 10, FOUR 9, EM 7, HCURL 6, ENN 6, THETA 5, ESS 5, OMEGADOT 4, PI 4, JHOOK 3, PLUS 3, TEE 3, LL 3, EIGHTBAR 2,
+EPSILON 1, CIRCLE 1; null-shape tokens (OMEGABAR, EIGHT, EM, PI, ESS) 50 = 19.3%. `glyphs/labels.json` gains JHOOK and
+EPSILON descriptions (EREV marked superseded for L8.4); `atlas.png` itself is not regenerated (the two new codes have
+3 and 1 tokens). Settling notes worth keeping: the SIX/PHI split both readers made in the same three boxes (L1.24,
+L3.23, L4.4) was settled by the presence of a cross bar (bar = PHI); a "large lower loop with a curled top" (g-loop)
+recurs at L1.27, L3.2, L7.22, L8.17 and is kept inside HOOK, as the atlas's own rightmost HOOK exemplar, rather than
+given a code on one runner's eye; L4.16 is two signs (SEVEN+NINE); L7.13 is a bare stroke.
+
+**Re-runs on v4:**
+1. **Design-matched control** (`family_run.py --family homophonic --cipher ciphertext_v4.txt --param merge=5
+   nulls=0.19`, it16, 3 seeds, 8 restarts): recovery **0.197 (0.071-0.262)**, ceilings 0.87-0.93, gate NOT met, target
+   not run (HYPOTHESES.md row 02:5x). Better than v3's 0.120 and v3b's 0.066, still far under 0.6: the solver route
+   stays closed on the single letter (H22/H26 stand).
+2. **Pattern crib** (`tools/crib_pattern.py`, 200 shuffles each): strict **0** placements (shuffles mean 0.1, max 13);
+   **homophones allowed: 4 placements at ONE start, index 13 = p.[1] line 1 pos 14 (box 25) running into line 2, best
+   score -2.523 -- 2 of 200 shuffled-order copies reach that score and 13 of 200 reach 4 placements**; homophones +
+   1 error: 48 placements at 5 starts, best still the same -2.523 (12/200 at or above), count 24/200. On v3 and v3b
+   the same runs gave nothing above the shuffled median (H28, H27).
+
+**The placement, stated with its caveats (a candidate anchor under the tool's own rule, never a reading):** the window
+ESS SEVEN HOOK HOOK PI OMEGABAR SIX NINE HOOK FOUR [OMEGABAR skipped] XCURL OMEGADOT NINE HOOK PHI HOOK HOOK HCURL
+[EIGHT skipped] DIAMOND EM TWO THREE reads the 22 letters with six HOOK wildcards (g, u, a, d, s, p) and two null
+skips; the implied partial key is ESS=l, SEVEN=a, PI=b, OMEGABAR=e, SIX=r, NINE=n, FOUR=t, XCURL=i, OMEGADOT=o,
+PHI=i, HCURL=a, DIAMOND=g, EM=n, TWO=i, THREE=a. Against it: (a) it needs three codes for a (SEVEN, THREE, HCURL)
+and three for i (TWO, PHI, XCURL) where Tomokiyo's table has at most pairs, and agrees with the key-as-read on 0 of
+15 codes (SEVEN o, NINE p, THREE d, FOUR c, PHI a, SIX n, ESS s there); (b) applied to the whole letter it puts about
+44% of the letter tokens on a and i (Italian about 23%) -- a mean log unigram of -2.523 is BETTER than real Italian's
+own entropy (about -2.6 nats), the signature of a key that games the unigram statistic by loading frequent codes
+onto frequent vowels, which is exactly what the selection statistic rewards; (c) it was found on the third coding
+tried and in the second of three constraint settings, so the 2/200 is not a clean p-value; (d) it consumes
+OMEGABAR as a letter (e) although the key-as-read calls that shape a null. For it: the shuffled-order control at the
+same statistic was passed at both the count and the score for the first time, the placement is unique (one start),
+and it sits where a first sentence's opening business would sit (line 1, after the plain "al R.do frate mio" and 13
+signs). What would settle it is a statistic NOT used to select it: H31 -- the bigram/trigram log-probability of the
+adjacent mapped pairs under the implied key against 200 shuffled-KEY controls (the same 15 letters permuted over the
+same 15 codes, the H4 design) and the Italian letter-distribution distance of the mapped text against the same
+controls; a placement that survives both is worth a subagent's blind look at the partial decode, and one that does
+not is logged as the unigram artefact (b) predicts. No reading is claimed; status unchanged; rule 10 wording.
+
+**Controls:** the design-matched control battery; the shuffled-order crib control (200 per row); the pass pairs'
+agreement (89.5-96.5%) behind the AB grades. **Files:** `passes/opus_settled.tsv`, `passes/reconcile_opus.py`,
+`passes/p1_reconciled_v4.tsv`, `passes/p2_reconciled_v4.tsv`, `passes/build_letter_codes.py`,
+`passes/letter_codes_v4.tsv`, `passes/ciphertext_v4.txt`, `glyphs/labels.json`, HYPOTHESES.md row. **Cost:** this
+runner's direct-look turns over six montages and CPU -- recorded as 2.0 USD (the est). No vision calls, no requests,
+no credentials, no AskUserQuestion, no other target touched.

@@ -106,6 +106,9 @@
   "PHI": "phi loop on a descender, crossed (key: a)",
   "TEE": "t-like cross with a curl, or a plus with a foot (key: b = T? or t)",
   "ESS": "S curve (key: N11 or s)",
-  "HOOK": "small hook-and-loop family: script e, bold e, rho/long-s with loop, t-cross with loop, u-curl, mu (v2 codes ELOOP/ECAP/RHO/TLOOP/UCURL/MU merged in v3: H3 passes could not separate them)"
+  "HOOK": "small hook-and-loop family: script e, bold e, rho/long-s with loop, t-cross with loop, u-curl, mu (v2 codes ELOOP/ECAP/RHO/TLOOP/UCURL/MU merged in v3: H3 passes could not separate them)",
+  "JHOOK": "bold vertical stroke turning left at the foot, a J without a top bar (H29b/H30, 28 Sept 2026: both Opus readers flagged it as outside the atlas at L1.18, L1.21, L3.30; NOT in key)",
+  "EPSILON": "bold epsilon opening RIGHT (L8.4; H15 called it EREV, both Opus readers in H29c read it as an ordinary epsilon, not reversed; key: null N8 is a capital E, N9 the reversed E -- which of the two this is stays M)",
+  "EREV": "reversed capital E -- superseded in v4 by EPSILON for L8.4 (H30)"
  }
 }
