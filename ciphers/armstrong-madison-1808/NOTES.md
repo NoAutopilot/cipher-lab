@@ -3009,7 +3009,7 @@ No reading of the target, no class change; rule 10: catalogued NARA despatches, 
 Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 160-170k tokens, 3-5 minutes each); no runner look. Cost:
 about 4 USD by H21's rate -- `--spend` records 4.
 
-## Campaign step H42 (28 Sept 2026, 14:20-14:30 UTC)
+## Campaign step H42 (28 Sept 2026, 14:19-14:28 UTC, container clock)
 
 Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
 H42: M31 reel 12 frame 373 (H39's "worksheet with words interlined", spring 1807) is a period KEY SHEET of the Madrid
@@ -3043,7 +3043,7 @@ nothing here is called new or first.
 Vision: 1 of 4 subagent calls (Sonnet, about 135k tokens, 6.4 minutes) plus the runner's two looks at the frame.
 Requests: catalog.archives.gov 1. Cost: about 2 USD by H21's rate (`--spend` records 2 of the row's 3).
 
-## Campaign step H43 (28 Sept 2026, 14:33-14:50 UTC)
+## Campaign step H43 (28 Sept 2026, 14:28-14:32 UTC, container clock)
 
 Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
 H43: the Madrid legation cipher's value-to-gloss table, written down and entered in KEY-DESIGN.tsv so the design prior
