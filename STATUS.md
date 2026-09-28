@@ -2448,6 +2448,20 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 14:20 Pacific [21:20 UTC]): Fable is out on the owner account until 3 Oct; Debosnys is a fourth track on account 3
+
+Counts 19 / 2 / 1 / 6, unchanged.
+
+- Model: a Fable probe on the owner account failed (seven-day limit, resets about 05:00 UTC 3 Oct). The owner's rule: orchestrator on Fable, else Opus 5.5, never below; this session stays on Opus 5.5. Account 3 runs Fable for every role.
+- Debosnys (owner's decision to lean in): DEBOSNYS-RUNNER-3 started 21:11 on Fable (check earlier claims, settle cryptogram 1 to 80 pct, system identification with controls, crib test). The museum's restricted scans are reachable from this session's Drive connector; unpacking them was refused by the permission classifier, so they stay untouched pending the owner's choice.
+- Birago: HARVEST-D read the 1571 witness in part (double-barred oval = r, manual; pound sign unresolved); HARVEST-D2 queued to account 3 for f.21v, f.35, f.87 and the 1572 group.
+- f.61: F61-FAMILY-8 found fr.2751 f.116 is a clear copy, not a cipher leaf (ruled out as a key source). Runner 5 at 618k.
+- Armstrong: ARM-MONROE-CAT could not pass the Monroe Catalogue sign-in (ASKS 97: a five-minute lookup for the owner).
+- Thurloe: our P4 (13 Mar 1655) references were right; the curator found the 30 Mar letter (already N0). Reply draft corrected.
+- Standby: ORCH-STANDBY-3 spawned 21:11 on account 3.
+
+**Blocker line, f.61.** The 59 two-way choices and 28 unread; routes ASKS 88/89/93, fr.4699 (fr.2751 closed).
+
 ### Orchestrator note (28 Sept 2026, 13:17 Pacific [20:17 UTC]): Gallica images back; three missed archive replies handled; account 3 on harvest scouting
 
 Counts 19 / 2 / 1 / 6, unchanged.
