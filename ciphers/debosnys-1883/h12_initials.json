@@ -1,0 +1,34 @@
+{
+ "c2": {
+  "N": 734,
+  "best": 0.9415,
+  "offset": 639,
+  "null_p975": 0.9591,
+  "null_max": 0.9708,
+  "clears": false
+ },
+ "c1": {
+  "N": 132,
+  "best": 0.9415,
+  "offset": 59,
+  "null_p975": 0.9532,
+  "null_max": 0.9708,
+  "clears": false
+ },
+ "c3": {
+  "N": 116,
+  "best": 0.9298,
+  "offset": 95,
+  "null_p975": 0.9532,
+  "null_max": 0.9708,
+  "clears": false
+ },
+ "c4": {
+  "N": 282,
+  "best": 0.9357,
+  "offset": 262,
+  "null_p975": 0.9532,
+  "null_max": 0.9649,
+  "clears": false
+ }
+}

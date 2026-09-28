@@ -1,0 +1,110 @@
+{
+ "c1-c2": {
+  "N": [
+   132,
+   734
+  ],
+  "spearman": 0.399,
+  "shared_band": [
+   0.182,
+   0.464
+  ],
+  "shared_median": 0.331,
+  "indep_band": [
+   -0.252,
+   0.067
+  ],
+  "indep_median": -0.103,
+  "verdict": "shared-key band"
+ },
+ "c1-c3": {
+  "N": [
+   132,
+   116
+  ],
+  "spearman": 0.066,
+  "shared_band": [
+   -0.207,
+   0.162
+  ],
+  "shared_median": -0.024,
+  "indep_band": [
+   -0.615,
+   -0.302
+  ],
+  "indep_median": -0.481,
+  "verdict": "shared-key band"
+ },
+ "c1-c4": {
+  "N": [
+   132,
+   282
+  ],
+  "spearman": 0.059,
+  "shared_band": [
+   -0.044,
+   0.249
+  ],
+  "shared_median": 0.076,
+  "indep_band": [
+   -0.46,
+   -0.101
+  ],
+  "indep_median": -0.285,
+  "verdict": "shared-key band"
+ },
+ "c2-c3": {
+  "N": [
+   734,
+   116
+  ],
+  "spearman": 0.342,
+  "shared_band": [
+   0.21,
+   0.469
+  ],
+  "shared_median": 0.336,
+  "indep_band": [
+   -0.276,
+   0.067
+  ],
+  "indep_median": -0.098,
+  "verdict": "shared-key band"
+ },
+ "c2-c4": {
+  "N": [
+   734,
+   282
+  ],
+  "spearman": 0.245,
+  "shared_band": [
+   0.258,
+   0.509
+  ],
+  "shared_median": 0.392,
+  "indep_band": [
+   -0.232,
+   0.056
+  ],
+  "indep_median": -0.087,
+  "verdict": "between / outside both"
+ },
+ "c3-c4": {
+  "N": [
+   116,
+   282
+  ],
+  "spearman": 0.099,
+  "shared_band": [
+   -0.095,
+   0.269
+  ],
+  "shared_median": 0.06,
+  "indep_band": [
+   -0.465,
+   -0.1
+  ],
+  "indep_median": -0.288,
+  "verdict": "shared-key band"
+ }
+}
