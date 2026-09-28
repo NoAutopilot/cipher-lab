@@ -5,7 +5,7 @@ band edges fall between gloss and cipher. This cutter finds the CIPHER line cent
 and cuts each band from centre-UP to centre+DOWN so the gloss above rides with its cipher line; each band is cut into
 segments no wider than --seg native px with --overlap px shared (boundary tick drawn), scaled by --scale, and a debug
 overlay is written. Native boxes go to sheets/<prefix>_bands.json.
-  python3 cut_bands.py IMAGE x,y,w,h OUTDIR PREFIX [--pitch 130] [--up 95] [--down 60] [--seg 1400] [--overlap 100] [--scale 1.6] [--centres y1,y2,...  (hand-set cipher-row centres in region y, overriding detection)]
+  python3 cut_bands.py IMAGE x,y,w,h OUTDIR PREFIX [--pitch 130] [--up 95] [--down 60] [--seg 1400] [--overlap 100] [--scale 1.6] [--centres y1,y2,...  (hand-set cipher-row centres in region y, overriding detection)] [--track N (follow the row slope: each segment's centre is the peak within +-N of the previous segment's)]
 """
 import sys, json, numpy as np
 from PIL import Image, ImageDraw
@@ -33,6 +33,15 @@ for n, c in enumerate(centres, 1):
         # so a row that rises across the leaf keeps its gloss inside the band in every segment (28 Sept 2026: the first
         # f.274 cut lost the right half of every gloss row and the readers assigned them to the wrong band)
         cc = c
+        # --track N (F61-FAMILY-2, 28 Sept 2026, f.101r): follow the row slope segment by segment -- this segment's centre is
+        # the local ink-profile peak within +-N px of the PREVIOUS segment's centre (segment 1: the band centre), so a row
+        # that rises or falls across the leaf is followed gradually and the gloss row (about 50 px above) is never reached
+        # in one step; --local (below) re-centres every segment around the same band centre instead.
+        if '--track' in a:
+            N = opt('--track', 25); base = c if s == 1 else prev_cc
+            pr = (arr[:, x0:x1] < 150).sum(axis=1).astype(float); pr = np.convolve(pr, np.ones(k) / k, mode='same')
+            lo, hi = max(0, base - N), min(h, base + N); cc = lo + int(np.argmax(pr[lo:hi]))
+        prev_cc = cc
         if '--local' in a:
             N = opt('--local', 35); pr = (arr[:, x0:x1] < 150).sum(axis=1).astype(float); pr = np.convolve(pr, np.ones(k) / k, mode='same')
             lo, hi = max(0, c - N), min(h, c + N); cc = lo + int(np.argmax(pr[lo:hi]))
