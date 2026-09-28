@@ -2265,3 +2265,15 @@ H62's letter-for-letter "BURGSTORF" are disfavoured by the leaf's own spacing. T
 on H53's one assumption, that the nomenclature code 72 stands for two letters (do) -- consistent with the office's
 habit (H56) but unattested for this key. H62's result stands as recorded (the fit if the split were real), with this
 measurement against the split. No token, grade or class change.
+
+## Campaign step H61 (2026-09-28 16:37 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** H41 against larger lists built the same way (`h41/names.py`) from the Urkunden volumes
+H41 did not use -- Bd. 1, 2, 3, 6 alone (599 names, `h61/names_bd1236.tsv`) and all six volumes (883,
+`h61/names_bd1to6.tsv`) -- through `tools/crib_list_fit.py` on r16:2-r18:21, with only 72 wild (every other token at its
+key.tsv letter) and with the default wildcards (`h61/result.log`). In all four runs **every fit of 5 or more is a
+spelling of the one name** -- burgsdorfs 8/0 (the genitive, its s landing on the s of "su"), burgsdorf 7/0,
+burgstorff 7/1, buigsdorf / bnrgsdorf / hurgsdorf (OCR variants) 6/1 -- and the best other name is "brandenburg" at 3-4,
+the word already read at r16:9. P (list fits >= best) 0.002 (599) and 0.001 (883). The name fit is stable to the list:
+a list three times larger from independent volumes turns up no rival. It still rests on 72 standing for two letters
+(H53, H63). No token, grade or class change.

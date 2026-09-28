@@ -1,0 +1,36 @@
+== names_bd1236 (72 wild only, other tokens fixed)
+window: yeoneopuradlonburgs?rfsucmareymayorparadienseiembiancartasdecr
+599 forms; best burgsdorfs fit 8 (8 agree, 0 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorfs	8	8/0	r16:16
+  burgsdorf	7	7/0	r16:16
+  burgstorff	6	7/1	r16:16
+  buigsdorf	5	6/1	r16:16
+  burgstorffen	4	7/3	r16:16
+  brandenburg	3	7/4	r16:9
+== names_bd1236 (default wildcards)
+window: yeoneop?radlonburgs?rfs?cmare?mayorpara?ienseiembiancartasdecr
+599 forms; best burgsdorfs fit 8 (8 agree, 0 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorfs	8	8/0	r16:16
+  burgsdorf	7	7/0	r16:16
+  burgstorff	6	7/1	r16:16
+  burgstorffen	6	7/1	r16:16
+  buigsdorf	5	6/1	r16:16
+  brandenburg	4	7/3	r16:9
+== names_bd1to6 (72 wild only, other tokens fixed)
+window: yeoneopuradlonburgs?rfsucmareymayorparadienseiembiancartasdecr
+883 forms; best burgsdorfs fit 8 (8 agree, 0 disagree) at r16:16; ties 1; P 0.001; candidate: True
+  burgsdorfs	8	8/0	r16:16
+  burgsdorf	7	7/0	r16:16
+  burgstorff	6	7/1	r16:16
+  bnrgsdorf	5	6/1	r16:16
+  buigsdorf	5	6/1	r16:16
+  hurgsdorf	5	6/1	r16:16
+== names_bd1to6 (default wildcards)
+window: yeoneop?radlonburgs?rfs?cmare?mayorpara?ienseiembiancartasdecr
+883 forms; best burgsdorfs fit 8 (8 agree, 0 disagree) at r16:16; ties 1; P 0.001; candidate: True
+  burgsdorfs	8	8/0	r16:16
+  burgsdorf	7	7/0	r16:16
+  burgstorff	6	7/1	r16:16
+  burgstorffen	6	7/1	r16:16
+  bnrgsdorf	5	6/1	r16:16
+  buigsdorf	5	6/1	r16:16
