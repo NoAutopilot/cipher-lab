@@ -1771,3 +1771,51 @@ transcribed ticks are themselves faint). One correction to the mark record (page
 and one new value-bound lead. No reading, no class change. Requests: none. Cost: no get_session figure to this
 runner; the row's estimate (1.5 USD) is what `campaign.py --spend` records. Vision: 1 Sonnet subagent call (three
 sheets) + 6 sheets/zooms read by this runner.
+
+## Campaign step H14 (27-28 Sept 2026, 23:58-00:03 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (account 2, session_013E5jUS9GV1AsxLeUcwgbf6). Hypothesis H14: read the
+right-hand modifier column of Monroe Papers reel 9 frame 956 (the encode side of the 1-1700 table screened out in H12)
+and compare its marks with the target's.
+
+**The column is printed, not handwritten (grade H, typeset text; native crops `images/monroe_rules/`).** Frame 956
+is a pre-printed cipher form: typeset alphabetical headwords (X 1685, xy 1475, ya 1683, yea 1350 ... you 1243, your
+1570, Z 1346, zeal 1566, &c 1677), a typeset digit and punctuation list with hand-filled numbers (0 102, 1 426, 2 739,
+3 377, 4 980, 5 858, 6 271, 7 311, 8 642, 9 461; , 1240; ; 1342; : 1671; . 1462; ! 1234; ? 1563; -- 1668; ( ) 1230;
+" 1344; ¶ 1560), and four typeset modifier rules, read verbatim:
+
+1. "’ to a noun makes it's gen. or plur. to a verb makes it's 3.p.si.act" (an apostrophe-like mark after a group);
+2. "‘ to a verb makes it's part pas. or imperf. indic." (a second, mirrored mark);
+3. "^ under the last figure doubles the last letter of those represented by that n°. under the penult figure it
+   doubles the penult letter: under the antepenult figure doubles the antepenult letter &c." -- a caret placed UNDER a
+   specific digit of the number, the digit's position selecting which letter of the syllable is doubled;
+4. "ʃ under a figure withdraws the letter corresponding as in the last article. u.& v. are convertible always so are
+   i.& j." -- a long-s under a digit removes the corresponding letter.
+
+So in this key family a group carries two classes of mark: a high mark AFTER the group (grammar: plural, genitive,
+person, tense) and a low mark UNDER one particular digit (spelling: double or drop that letter). The reel-9 table's
+hand-filled entries (H12) are largely syllables, which is what rules 3-4 serve. Bourdeau's THE=972 table for
+Armstrong's office code is also syllable-heavy (741 = ce, 817 = al, 1116 = s, 1268 = ed, all H in
+`tools/data/uscodes-1800/THE972_bourdeau.tsv`).
+
+**Match against the marks already on file for this writer.** (a) The office letter of 15 Feb 1808 (frames 0024/0025,
+step H4) has subscript hooks UNDER the last digit of five groups -- 741 (= ce), 817 (= al), 1165 (= to), 624, 66 -- the
+placement rules 3-4 describe, on syllable/particle groups; H4 called them "possibly last-digit corrections". (b) The
+target's page-2 1640 carries a double dot AFTER the group on both witnesses (step H13), the placement of rules 1-2;
+38 carries a check after it; the R5 baseline dashes and R4 hooks of ARM-S1's inventory are low marks. (c) The
+office letter's raised terminal 6s are not a modifier (a digit habit). No mark on the target was counted by digit
+position yet (H18), so the positional test the row named is not run here: the inventory it needs does not exist.
+
+**Verdict for the campaign:** the rule column is read (H); the mark grammar of this key family is now on file and it
+matches, in placement, both the office letter's under-digit hooks and the target's after-group marks -- a lead, not a
+result, since no mark has yet been tied to a decoded word. Two consequences recorded as hypotheses: H19, a
+known-answer test on the office letter (Bourdeau's 15 Feb decode is known plaintext: do the five hooked groups read
+as "double/withdraw the last letter" of ce, al, to ...? an H-grade check of the convention on this writer), and a
+sharpening of H18 (inventory marks by class -- after-group vs under-digit -- and by the digit they sit under). For
+the orchestrator and the verifier lane: frame 956 shows that reel-9 frames 954-956 are a commercially PRINTED
+1,700-entry cipher form filled by hand; Weber 1979's WE027 (Livingston's own nomenclator, "over 1000 elements
+reconstructed", ARM3-LIVCODE) is of that size, and this may be WE027 itself or its printed blank -- which bears on
+ASKS row 77 (Brant Box 37) and on ARM3-LIVCODE's negative, and is a question for the verifier, not settled here. No
+reading, no class change. Requests: none (frame 956 was on disk from H12). Cost: get_session read 28.99 USD for this
+session at 23:57 UTC before this step; the row's estimate (1 USD) is what `campaign.py --spend` records. Vision: 3
+native strips read by this runner, no subagent.
