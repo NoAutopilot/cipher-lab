@@ -10,7 +10,7 @@ and writes:
                           agreement file and the adjudication sheet keep the pre-adjudication numbering
 Rules, applied without any sign value (no file but the two passes is read):
   agree               same id -> keep, conf = the lower of the two
-  split, one side H   the H side, conf M
+  split, one side H   the H side, conf M (unless --adjudicated names the position: the third reader's verdict wins)
   split, otherwise    '?' pending adjudication (row listed in disagreements)
   gap (one pass only) kept as '?' with a note if the present side is H, else dropped -- listed either way
 Agreement = agreed positions / aligned positions (gaps count as aligned).  --adjudicated FILE applies a third reader's
@@ -96,7 +96,7 @@ def main():
             if mid is not None:
                 pos += 1
                 key = (p, pos)
-                if mid == "?" and key in adj:
+                if key in adj and st != "agree":  # a third reader's verdict overrides the confidence rule too
                     mid, mc = adj[key]; st += "+adj"
             agree_f.write(f"{p}\t{ia + 1 if ia is not None else ''}\t{ea[0] if ea else ''}\t{ea[1] if ea else ''}\t"
                           f"{ib + 1 if ib is not None else ''}\t{eb[0] if eb else ''}\t{eb[1] if eb else ''}\t{st}\t"

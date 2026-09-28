@@ -1,0 +1,31 @@
+passage	pos	sign_id	conf	note
+L01	2	S54	L	b with slanted top stroke, no dot; no crossbar seen, either S74 or S54
+L01	6	S74	M	plain b with tiny top tick, no bar
+L01	16	S80	M	8 crossed by horizontal bar running past both sides
+L01	17	S94	M	ring, stem, short bar at very bottom of stem
+L01	21	S55	L	ring cropped at top, bar mid-stem with stem barely below
+L01	22	X_NEW	L	x-like mark with dot above between ring-cross and dotted 8; count vs context uncertain, not a plain 8
+L02	1	X_POUND	L	P/lb-like loop with vertical stem and foot bar; no sheet cell
+L02	3	S94	M	ring with dot, stem, bar at bottom
+L02	7	S65	M	8 with dot on top; bar is extension of preceding crossed oval, ends at 8
+L02	11	S76	M	loop with ij/y flourish
+L02	12	S22	L	wide two-hump wavy mark with tail; no vertical bar/P seen
+L02	15	S23	M	triangle with tick at top-left
+L02	18	S76	M	loop with ij dots and y tail
+L02	19	S17	H	z shape, no dot above
+L02	20	S31	L	loop with tail sweeping right; blob ambiguous
+L02	21	S74	L	b stem with dot near tail; one blob, low confidence a sign is separate
+L02	27	S31	M	ring with descending curled tail, no crossbar
+L02	28	S56	M	plus with hooked tail
+L02	34	S69	M	oval crossed by a bar
+L03	2	S80	M	8 with crossing bar and dot
+L03	5	S74	M	bold b with tick top
+L03	6	S65	M	8 plain, short dash before it only
+L03	9	S45	M	single-bowl c with dot near
+L03	10	S54	M	b with horizontal bar
+L03	18	S32	M	loop with lower curl, more elaborate than S31
+L03	24	S94	M	ring stem bar at bottom
+L03	25	S88	M	two horizontal bars plus slanted stroke
+L03	35	S37	M	b with looped top, no crossbar
+L03	45	S76	M	loop with ij flourish
+L03	46	S88	M	two bars with stem, dot above
