@@ -1,0 +1,135 @@
+crop	pos	group	gloss	conf	note
+1	1	343	-	medium	leading number at line start, no gloss seen, possible margin/paragraph number
+1	2	7	stated	high
+1	3	313	Eo	medium	gloss word reads uncertain, "Eo"-like
+1	4	97	me	high
+1	5	244	-	medium
+1	6	295	-	medium	small heart-like flourish after
+2	1	1651	-	high	target line mostly clear text "he the Emperor is well acquainted with the secret" then this group; "the" above "with" is an inserted correction, not a gloss for a number
+2	2	1181	-	high
+2	3	1531	-	high	near right edge of crop
+3	1	763	disposition	medium	gloss row is the line above ("920 disposition ... of this Gov't ... and of")
+3	2	394	-	medium
+3	3	1481	-	medium
+3	4	424	-	medium
+3	5	133	of	low	alignment approximate
+3	6	884	this	low	alignment approximate
+3	7	1010	Gov't	low	group has small raised mark; gloss abbreviation for "Government", alignment approximate
+3	8	284	-	medium
+3	9	1343	and	low	alignment approximate
+3	10	133	of	low	alignment approximate
+4	1	85	-	medium	leading number, small mark after, possible margin/paragraph number
+4	2	1661	Thence	medium
+5	1	1651	the	low	target text unclear before numbers, reads like "[sa]fety doing" with a small star/mark after "doing"
+5	2	134	offer	low	gloss row above reads "the offer is/not one"
+5	3	1484	is/not	low	gloss shows two stacked alternate words "is" over "not"
+5	4	553	one	low
+5	5	1422	-	low
+6	1	1481	it	low	gloss row above reads "it ... for its objects"
+6	2	1481	for its objects	low	second occurrence of 1481, carries small superscript mark; gloss phrase spans this and possibly the group before, exact split uncertain
+6	3	58	-	low	superscript triangle mark after
+6	4	528	-	low
+7	1	8	-	medium	possible margin/paragraph number
+7	2	861	concerning	low	gloss row above reads "concerning of share by"
+7	3	133	of	low
+7	4	1210	share	low
+7	5	1686	by	low
+7	6	1503	-	medium	at far right edge of line
+8	1	NONE	-	-	target line reads only plain text "had a portion of its force" with a small insertion mark after "force"; no numeric group on this line. Small text "the Prence[Prince] by 1606"-like appears upper right but reads as gloss for the following line's numbers, not this line's
+9	1	2	-	medium	possible margin/paragraph number
+9	2	624	had	medium	gloss row above is the line "had a portion of its force ... the Prence by 1606"
+9	3	580	a	medium
+9	4	424	portion	medium
+9	5	133	of	medium
+9	6	1481	its	medium	small superscript triangle mark on this group
+9	7	477	force	medium
+9	8	1651	the	medium
+9	9	1061	Prence	medium	gloss reads like "Prence" (Prince)
+9	10	884	by	low	small extra mark/figure nearby reads uncertain, possibly "1606"
+10	1	133	-	low	target reads "uncertain, state of [mark] 133. affairs" with small mark before 133 and a superscript triangle after "affairs"; no clear interlinear gloss seen directly above 133
+11	1	9	-	medium	possible margin/paragraph number
+11	2	610	-	medium
+11	3	110	-	medium
+11	4	69	-	medium
+11	5	313	-	medium
+11	6	123	-	low	digits underlined, reading uncertain (could be "1273" or similar)
+11	7	1094	-	medium
+12	1	3	-	medium	possible margin/paragraph number
+12	2	120	-	low	digit reading uncertain, possibly "120" or "140"
+12	3	1201	-	medium
+12	4	1290	-	medium
+12	5	1613	-	medium
+12	6	1027	-	medium
+12	7	1651	-	medium	trailing group after clear text "of importance by"
+13	1	83	-	medium	possible margin/paragraph number
+13	2	1497	-	medium
+13	3	1298	-	medium	followed by a dash then clear text "Again to raise up an insufferable"
+14	1	1181	separate	medium	gloss row above reads "separate peace between Spain and England"
+14	2	1743	peace	medium	ink shows as "1.743"; read as single 4-digit group 1743
+14	3	628	between	medium
+14	4	500	Spain	medium
+14	5	1210	and	medium
+14	6	1343	England	medium
+14	7	970	-	medium
+15	1	1651	-	medium	no clear interlinear gloss visible above these groups on this crop
+15	2	1661	-	medium
+15	3	408	-	medium
+15	4	1013	-	medium
+15	5	1212	-	medium
+16	1	133	lastly	low	gloss row above reads "lastly to get / of the Prince may be first ... from a"; alignment uncertain, low confidence throughout
+16	2	1651	to	low
+16	3	1661	get	low
+16	4	1280	of	low
+16	5	1027	the	low
+16	6	772	Prince	low
+16	7	825	first	low
+16	8	593	from	low
+17	1	40	-	low	leading digit unclear (reads like "40" or "90"), possible margin/paragraph number
+17	2	1500	-	low
+17	3	1686	by	low	gloss row above reads "[?]ite by acquiescence"
+17	4	618	acquiescence	low
+17	5	855	-	low
+17	6	1554	-	low
+17	7	982	-	low
+17	8	945	-	low
+18	1	133	of	medium	gloss row above reads "of the death of the King[?]"
+18	2	1651	the	medium
+18	3	89	death	medium
+18	4	742	of	medium
+18	5	725	the	medium
+18	6	133	King	medium
+18	7	1651	-	medium
+18	8	1524	-	medium
+18	9	1415	-	medium	small mark near this group
+18	10	925	-	medium
+19	1	521	-	medium	possible margin/paragraph number
+19	2	1580	-	medium
+19	3	114	-	low
+19	4	1419	-	low	small inserted word "himself" appears above "cause" on the target line itself (a correction to the clear text), not a gloss for a number
+20	1	NONE	-	-	target line reads only plain text "his retreat in Ha[?] --- or under the wing"; a dash/blank mid-line may mark an illegible or omitted word; no numeric group on this line
+21	1	PA	-	low	leading mark unclear, possibly abbreviation "P.A." rather than a digit code
+21	2	52	his	low	gloss row above reads "his retreat in Ha --- or under the wing"
+21	3	189	retreat	low
+21	4	742	in	low
+21	5	89	Ha	low	gloss possibly an abbreviated place name matching clear-text "Ha" on the line above
+21	6	724	-	low
+21	7	529	or	low
+21	8	934	under	low
+21	9	360	the	low
+21	10	1651	wing	low
+21	11	1413	-	low
+22	1	9g	-	low	leading mark unclear
+22	2	133	France	low	small gloss "a France" visible above; alignment uncertain
+22	3	1290	-	low
+23	1	6	-	medium	possible margin/paragraph number
+23	2	609	in	low	small gloss "in a" visible above; alignment uncertain
+23	3	1216	a	low
+23	4	69	-	low
+23	5	624	-	low
+24	1	26	-	medium	possible margin/paragraph number
+24	2	347	has	medium	gloss row above reads "has reason to believe"
+24	3	534	reason	medium
+24	4	244	to	medium
+24	5	116	believe	low	digit reading uncertain, could be "1169" or "1109"
+24	6	310	-	low
+24	7	1023	-	low

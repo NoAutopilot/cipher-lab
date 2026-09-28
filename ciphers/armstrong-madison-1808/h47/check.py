@@ -22,13 +22,20 @@ def _add(g, gl):
 for r in csv.DictReader(open(os.path.join(T, "h32", "legation_groups.tsv")), delimiter="\t"): _add(r["group"], r["gloss"])
 for r in csv.DictReader(open(os.path.join(T, "h42", "reads", "f373L.tsv")), delimiter="\t"): _add(r["group"], r["gloss"])
 key = {g: c.most_common(1)[0][0] for g, c in occ.items()}
-reads = []
+reads = []; dropped = []
 for fr in ORDER:
     f = os.path.join(H, "reads", fr + ".tsv")
     if not os.path.exists(f): print("missing", fr); continue
+    crops = {}
     for r in csv.DictReader(open(f), delimiter="\t"):
         g = re.sub(r"\D", "", r.get("group") or "")
-        if g: reads.append((fr, g, (r.get("gloss") or "").strip().lower()))
+        if g: crops.setdefault(int(re.sub(r"\D", "", r["crop"]) or 0), []).append((fr, g, (r.get("gloss") or "").strip().lower()))
+    prev = None
+    for c in sorted(crops):  # duplicate-band guard (h29/check_we028.py, h32/merge_screen.py): a crop repeating the
+        seq = [g for _, g, _ in crops[c]]  # previous crop's group sequence (the same physical line) is dropped
+        if prev and len(seq) >= 2 and difflib.SequenceMatcher(None, seq, prev).ratio() >= 0.6:
+            dropped.append((fr, c)); continue
+        reads.extend(crops[c]); prev = seq
 def words(s): return set(re.findall(r"[a-z]+", s))
 def match(g, gl): return key.get(g) is not None and gl not in ("", "-") and (key[g] == gl or key[g] in words(gl))
 glossed = [(g, gl) for _, g, gl in reads if gl not in ("", "-")]
@@ -40,6 +47,7 @@ for _ in range(2000):
 null.sort()
 print(f"groups read {len(reads)} (distinct {len(set(g for _,g,_ in reads))}), glossed {len(glossed)}; per region " +
       ", ".join(f"{fr} {sum(1 for x in reads if x[0]==fr)}" for fr in ORDER))
+print(f"duplicate bands dropped: {dropped}")
 print(f"(1) glossed groups whose value is in the legation table: {len(test)}; agree with its majority gloss: {hits}; "
       f"gloss-shuffle null mean {sum(null)/len(null):.2f}, p95 {null[int(.95*len(null))]}")
 loc = []

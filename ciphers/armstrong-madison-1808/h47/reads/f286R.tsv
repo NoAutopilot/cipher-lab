@@ -1,0 +1,69 @@
+crop	pos	group	gloss	conf	note
+1	1	1651	me	high	line is otherwise clear text "[ex]pected that she will declare against France" then this group, glossed "me" directly above
+2	1	624	-	medium	leading number, possible margin/paragraph number
+2	2	661	-	medium
+2	3	242	-	medium
+2	4	97	-	medium
+2	5	1603	Mr	low	alignment approximate
+2	6	1583	Henry	medium	gloss word carries a small mark after it
+2	7	926	-	medium
+2	8	594	that	medium
+2	9	524	-	medium
+2	10	157	he	low	group carries a small mark, digit reading uncertain (possibly "1570")
+2	11	926	-	medium	second occurrence of 926 on this line
+3	1	474	knew	medium	gloss row above reads "knew that"; "she had" gloss seen above the 1370/723 pair further right
+3	2	1645	that	medium
+3	3	1578	-	medium
+3	4	1370	she	medium
+3	5	723	had	medium
+3	6	614	-	medium
+4	1	019	-	medium	leading mark unclear, read as "019"
+4	2	38	-	medium
+4	3	87	-	medium
+4	4	1518	declared	low	gloss word "declared" visible above, alignment approximate
+4	5	975	-	medium
+5	1	NONE	-	-	target line reads only plain text "in be placed on his Assertions; tho it may probably"; no numeric group on this line
+6	1	NONE	-	-	target line reads only plain text "on this belief & on a general view of affairs more"; no numeric group on this line. Small gloss "*that he has" visible lower right, appears to belong to the following line's numbers rather than this line
+7	1	1578	that	medium	group carries a small asterisk-like mark; gloss row above reads "that he has"
+7	2	926	he	medium
+7	3	347	has	medium
+8	1	1518	-	medium	no clear interlinear gloss directly above these groups
+8	2	975	-	medium
+8	3	1114	-	medium
+8	4	1419	-	medium
+8	5	709	-	medium	small text "manner to the" visible nearby but alignment unclear, may belong to the following line
+9	1	521	and	low	gloss row above reads "and explicit!"; alignment approximate, only first two groups glossed
+9	2	1343	explicit	low
+9	3	176	-	medium
+9	4	226	-	medium
+9	5	268	-	medium
+9	6	111	-	medium
+9	7	409	-	medium
+9	8	583	-	medium
+9	9	244	-	medium
+9	10	1051	-	medium
+10	1	523	Russian	medium	gloss row above reads "Russian Minister and authorized ... his"
+10	2	594	Minister	medium
+10	3	1607	and	medium
+10	4	1343	authorized	medium
+10	5	748	-	low
+10	6	887	-	low
+10	7	136	-	low
+10	8	97	-	low
+10	9	408	his	medium
+11	1	244	to	medium	gloss row above reads "to his Court his sentiments"
+11	2	408	his	medium	first occurrence
+11	3	1530	Court	medium
+11	4	408	his	medium	second occurrence, matches gloss "his" again
+11	5	398	sentiments	medium
+11	6	71	-	low
+11	7	335	-	low
+12	1	525	and	medium	gloss row above reads "and intentions[mark] in favor of the allies[mark]"
+12	2	1343	intentions	medium	gloss word carries a small triangle mark in source
+12	3	69	in	medium
+12	4	1584	favor	medium	group carries a small mark
+12	5	69	of	medium	second occurrence of 69
+12	6	832	the	medium
+12	7	133	allies	medium	gloss word carries a small triangle mark in source
+12	8	1651	-	medium
+12	9	1494	-	medium	line ends with a dash (plain punctuation, not a group)
