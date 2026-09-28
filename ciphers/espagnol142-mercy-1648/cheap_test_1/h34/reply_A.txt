@@ -1,0 +1,4 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+g45	c	n	high	cuadros y pinturas
+END

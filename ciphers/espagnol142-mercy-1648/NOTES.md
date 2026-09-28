@@ -1756,3 +1756,22 @@ the boxed 101 to decide, the uneven homophone use of H21/H25, the dots and colon
 13). KEY-OFFICES.tsv's row for this key names the checklist in its notes_source, and its stale "N3 after two audits"
 now reads N4 (AUDIT.md "N4 decision (28 Sept 2026, MERCY-N4)"); `tools/key_design.py --check`: KEY-DESIGN.tsv is
 current. No token, grade or class change.
+
+## Campaign step H34 (2026-09-28 14:44-14:47 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Iterated blind reader: each H30 control's decode with the H30 reader's changes applied
+(`cheap_test_1/h34/build.py`, `round1_keys.json`, same relabelling and format) read by a fresh blind Sonnet reader
+(round 2); scorer `h34/score.py`, output `h34/score.log`.
+
+| control | round-2 changes (right) | wrong glyphs fixed: blind -> round 1 -> round 2 | letters |
+|---|---|---|---|
+| A (5%) | 1 (1): s38 c->n, "cuadros y pinturas" | 2 -> 3 of 9 | 92.1 -> 93.5 -> 93.7% |
+| B (10%) | 0 | 1 -> 1 of 12 | 80.4 -> 81.8 -> 81.8% |
+| D (5%) | 0 | 0 -> 0 of 8 | 92.1% throughout |
+
+Cumulative over two rounds: **4 of 4 proposals right, 4 of 29 wrong glyphs found (14%)**, no glyph broken. The loop
+converges at once -- two of three readers propose nothing in round 2 -- so iteration does not raise recall materially
+(10% -> 14%) and the target round was not run (the row's condition). With H30 and H33 the reader family is closed for
+this question: blind readers are precise and conservative, and M2's remaining 11 hand corrections cannot be licensed or
+refuted by any reader configuration tried (propose, verify with decoys, iterate). Script instruments that score each
+correction against known truth on the same controls are the next line (H35-H37). No token, grade or class change.
