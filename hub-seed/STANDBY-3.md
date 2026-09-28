@@ -19,7 +19,7 @@ The owner-account orchestrator posts a ROOM line as `| orchestrator (owner accou
 
 1. Post `| orchestrator (account 3) | TAKEOVER: last owner-account line <time>, reason <stale / handoff>`.
 2. Read `hub-seed/CHECKIN-PROMPT.md`, SPRINT.md "Re-plan", NEAR.md, the last STATUS.md orchestrator note, and ROOM since the last owner-account line.
-3. Owner-account runners and workers are presumed stopped (the same usage ran out). You cannot see or change owner-account sessions or triggers; never try. For each live track in the mirror, check ROOM: a track whose owner-account runner posted in the last 90 minutes is still alive, leave it; otherwise start an account-3 runner for it (Fable if its rate limit reads allowed, else Opus 5.5; source_url https://github.com/NoAutopilot/cipher-lab; prompt modelled on the track's CAMPAIGN.md and the mirror; its own bound hourly trigger). Runner rows marked running by owner-account session ids are void (the runner prompts already say so).
+3. Owner-account runners and workers are presumed stopped (the same usage ran out). You cannot see or change owner-account sessions or triggers; never try. For each live track in the mirror, check ROOM: a track whose owner-account runner posted in the last 90 minutes is still alive, leave it; otherwise start an account-3 runner for it (Fable if its rate limit reads allowed, else Opus 5.5, never below; source_url https://github.com/NoAutopilot/cipher-lab; prompt modelled on the track's CAMPAIGN.md and the mirror; its own bound hourly trigger). Runner rows marked running by owner-account session ids are void (the runner prompts already say so).
 4. Arm your own hourly check-in trigger and run the mirror's check-in yourself, with these changes: every "owner account" role becomes "account 3"; the owner-account trigger ids are not yours; post ROOM lines as `| orchestrator (account 3) |`; the Gmail steps apply only if this account has the Gmail connector for the project mailbox, otherwise list "mailbox not visible from account 3" under NEEDS YOU.
 5. Keep the mirror current: write `hub-seed/CHECKIN-PROMPT.md` whenever your state changes.
 6. The owner talks to you in this session while you hold the role. Same reply format (TLDR, progress bars, RUNNING / STALLED / NEEDS YOU), same rules (CLAUDE.md, parent.md; rule 9: never name the owner; rule 10 wording; never send email; never print credentials; never force-push main).
@@ -30,6 +30,10 @@ When a new `| orchestrator (owner account) |` line appears after your TAKEOVER l
 - The owner-account orchestrator reads your ROOM lines and the mirror, then posts `| orchestrator (owner account) | HANDBACK accepted: runners <kept on account 3 / to retire>`.
 - On that line, you retire what it names (delete their triggers, retitle ARCHIVED, archive), disable your own check-in trigger, post `| orchestrator (account 3) | back to standby`, and return to the hourly standby check.
 - Until a HANDBACK accepted line appears, keep running; if both post check-ins for two hours without a handback line, the owner-account orchestrator holds the role and you stand down.
+
+## Model rule (owner, 28 Sept 2026 20:3x UTC)
+
+The orchestrator runs on Fable; if Fable usage is out, Opus 5.5; never anything below Opus 5.5 (no Sonnet, no Haiku), for the orchestrator or for any runner or worker it starts. If neither Fable nor Opus 5.5 is available on any account, all work pauses until a usage reset: post `| orchestrator (account 3) | paused: no Fable or Opus 5.5 usage, resumes at <reset>` once and do nothing else. A paused state is acceptable; a downgraded model is not.
 
 ## Limits
 

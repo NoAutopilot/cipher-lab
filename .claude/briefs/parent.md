@@ -340,3 +340,6 @@ Three archive replies (Marburg 15:03, Bodleian 15:26, Adirondack 18:09 UTC) sat 
 
 ## Standby on account 3 (28 Sept 2026, 20:3x UTC, owner-requested)
 A standby orchestrator on account 3 (hub-seed/STANDBY-3.md) takes over if no "| orchestrator (owner account) |" ROOM line appears for 150 minutes, or on a "HANDOFF to account 3" line. So: post that ROOM line at every check-in; mirror the check-in prompt to hub-seed/CHECKIN-PROMPT.md whenever it changes; post HANDOFF when this account's rate limit reads rejected; on a TAKEOVER line newer than yours, follow the file's Handback before anything else.
+
+## Model floor (owner, 28 Sept 2026 20:3x UTC)
+The orchestrator runs on Fable; if Fable usage is out, Opus 5.5; nothing below Opus 5.5 for the orchestrator, runners or workers on any account (no Sonnet or Haiku rows in WORK-QUEUE.tsv from now on). With neither model available on any account, all work pauses until a reset; that is acceptable, a downgrade is not. The orchestrator cannot switch its own session's model: when this account has Fable again, ask the owner to switch this session with /model, or move the role per hub-seed/STANDBY-3.md.
