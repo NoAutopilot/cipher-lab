@@ -1,0 +1,7 @@
+alphabetical       vs bare heads: rho -0.090  null p05 -0.168 p95 +0.169 p99 +0.235  pct 18.1
+alphabetical       vs families  : rho -0.188  null p05 -0.168 p95 +0.161 p99 +0.229  pct 3.1
+frequency-ordered  vs bare heads: rho -0.022  null p05 -0.168 p95 +0.165 p99 +0.230  pct 41.9
+frequency-ordered  vs families  : rho +0.135  null p05 -0.165 p95 +0.168 p99 +0.228  pct 91.0
+alphabetical list, first 20: ['a', 'against', 'all', 'an', 'and', 'any', 'are', 'as', 'at', 'be', 'been', 'british', 'but', 'by', 'can', 'case', 'could', 'do', 'every', 'for']
+observed heads with count >= 3: [(17, 13), (18, 12), (38, 10), (1, 9), (14, 8), (12, 5), (47, 5), (11, 4), (48, 4), (3, 3), (41, 3), (45, 3), (76, 3)]
+positive control (heads = alphabetical en18 list, 60 letters): rho mean +0.537 p05 +0.423 p95 +0.652

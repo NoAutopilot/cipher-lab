@@ -277,3 +277,27 @@ this N) or spelled names of three or four groups (about 12 adjacent pairs from e
 have fallen outside these nulls, so the nulls can fail and the result is a control-backed negative at N=34: the
 1700-1900 values are ordinary prefix-1 rows, as B1's tier alignment already implied. Row dropped as a negative (not
 a non-test). Requests: none; 0 subagents; 2 minutes by the clock.
+
+## Step B8 (28 Sept 2026, 03:13-03:16 UTC, re-scoped after B1/B2) -- the 2-digit heads follow neither an alphabetical nor a frequency order of the function words: negative, control-backed
+
+`b8/head_order.py`: predicted count of head v under (a) an alphabetical 99-word function list (the 99 most frequent
+en18 words in alphabetical order, head v = the v-th word) and (b) a frequency-ordered list; Spearman rho against the
+observed bare-head counts and against the family totals (head + members) over v = 1..99; null = the 99 predicted
+counts permuted (10,000 draws). Positive control: 60 en18 letters of 369 tokens whose heads ARE the alphabetical
+list, rho mean +0.54 (p05 +0.42, p95 +0.65) -- the statistic separates at this N.
+
+| prediction | observed | rho | null p05 / p95 / p99 | percentile |
+|---|---|---|---|---|
+| alphabetical | bare heads | -0.090 | -0.168 / +0.169 / +0.235 | 18.1 |
+| alphabetical | families | -0.188 | -0.168 / +0.161 / +0.229 | 3.1 |
+| frequency-ordered | bare heads | -0.022 | -0.168 / +0.165 / +0.230 | 41.9 |
+| frequency-ordered | families | +0.135 | -0.165 / +0.168 / +0.228 | 91.0 |
+
+**Result: negative with a control that can differ.** The heads are not the en18 function words in alphabetical order
+(rho -0.09 against a positive control at +0.54) nor in frequency order. Either the row order is not alphabetical
+(a two-part layout), or the rows are alphabetical buckets of uneven size headed by something other than the bucket's
+commonest word, or the head list is not a function-word list at all (a syllabary or a root list). The observed heads
+with three or more tokens: 17 (13), 18 (12), 38 (10), 1 (9), 14 (8), 12 (5), 47 (5), 11 (4), 48 (4), 3, 41, 45, 76 (3).
+The original B8 (transition-profile assignment of particle identities with an LM-free instrument) is not run: B2b
+showed neighbour-class contexts carry no usable signal at N=369, and the same coarse contexts would feed it.
+Requests: none; 0 subagents; 3 minutes by the clock.
