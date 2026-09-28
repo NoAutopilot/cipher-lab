@@ -1,0 +1,85 @@
+set	label	letters	consistency_0_10	note
+S00	X1	d,l,v	3	primary d in 9/20 contexts
+S00	X2	d,l,v	4	primary d in 10/20 contexts
+S00	X3	d,l,m	2	primary d in 7/20 contexts
+S00	SET	-	3	mean primary-letter share 0.43
+S01	X1	d,l,m	3	primary d in 9/20 contexts
+S01	X2	d,l,v	4	primary d in 10/20 contexts
+S01	X3	l,d,v	3	primary l in 9/20 contexts
+S01	SET	-	4	mean primary-letter share 0.47
+S02	X1	d,l,m	3	primary d in 8/20 contexts
+S02	X2	d,l,m	4	primary d in 10/20 contexts
+S02	X3	d,l,m	3	primary d in 8/20 contexts
+S02	SET	-	3	mean primary-letter share 0.43
+S03	X1	d,l,m	3	primary d in 8/20 contexts
+S03	X2	d,l,v	6	primary d in 12/20 contexts
+S03	X3	l,d,v	2	primary l in 7/20 contexts
+S03	SET	-	4	mean primary-letter share 0.45
+S04	X1	d,l,v	4	primary d in 10/20 contexts
+S04	X2	l,d,m	3	primary l in 8/20 contexts
+S04	X3	d,l,m	3	primary d in 9/20 contexts
+S04	SET	-	4	mean primary-letter share 0.45
+S05	X1	d,l,v	6	primary d in 12/20 contexts
+S05	X2	l,d,v	2	primary l in 7/20 contexts
+S05	X3	l,d,m	3	primary l in 8/20 contexts
+S05	SET	-	4	mean primary-letter share 0.45
+S06	X1	l,d,m	3	primary l in 8/20 contexts
+S06	X2	d,l,v	4	primary d in 10/20 contexts
+S06	X3	d,l,v	3	primary d in 9/20 contexts
+S06	SET	-	4	mean primary-letter share 0.45
+S07	X1	l,d,m	3	primary l in 9/20 contexts
+S07	X2	d,l,v	3	primary d in 9/20 contexts
+S07	X3	d,l,v	5	primary d in 11/20 contexts
+S07	SET	-	5	mean primary-letter share 0.48
+S08	X1	d,l,m	2	primary d in 7/20 contexts
+S08	X2	l,d,v	3	primary l in 8/20 contexts
+S08	X3	d,l,m	5	primary d in 11/20 contexts
+S08	SET	-	3	mean primary-letter share 0.43
+S09	X1	d,l,v	3	primary d in 8/20 contexts
+S09	X2	l,d,v	3	primary l in 9/20 contexts
+S09	X3	d,l,m	4	primary d in 10/20 contexts
+S09	SET	-	4	mean primary-letter share 0.45
+S10	X1	d,l,v	3	primary d in 8/20 contexts
+S10	X2	l,d,v	3	primary l in 8/20 contexts
+S10	X3	d,l,m	5	primary d in 11/20 contexts
+S10	SET	-	4	mean primary-letter share 0.45
+S11	X1	d,l,v	3	primary d in 8/20 contexts
+S11	X2	d,l,m	2	primary d in 7/20 contexts
+S11	X3	d,l,v	5	primary d in 11/20 contexts
+S11	SET	-	3	mean primary-letter share 0.43
+S12	X1	d,l,v	6	primary d in 12/20 contexts
+S12	X2	l,d,m	2	primary l in 7/20 contexts
+S12	X3	d,l,m	3	primary d in 9/20 contexts
+S12	SET	-	4	mean primary-letter share 0.47
+S13	X1	d,l,m	3	primary d in 8/20 contexts
+S13	X2	d,v,l	3	primary d in 9/20 contexts
+S13	X3	l,d,v	4	primary l in 10/20 contexts
+S13	SET	-	4	mean primary-letter share 0.45
+S14	X1	d,l,v	3	primary d in 8/20 contexts
+S14	X2	d,l,v	3	primary d in 8/20 contexts
+S14	X3	d,l,m	4	primary d in 10/20 contexts
+S14	SET	-	3	mean primary-letter share 0.43
+S15	X1	d,l,m	5	primary d in 11/20 contexts
+S15	X2	v,l,d	2	primary v in 7/20 contexts
+S15	X3	d,l,m	5	primary d in 11/20 contexts
+S15	SET	-	5	mean primary-letter share 0.48
+S16	X1	d,v,l	6	primary d in 12/20 contexts
+S16	X2	d,l,m	4	primary d in 10/20 contexts
+S16	X3	l,d,v	5	primary l in 11/20 contexts
+S16	SET	-	6	mean primary-letter share 0.55
+S17	X1	d,l,m	3	primary d in 8/20 contexts
+S17	X2	d,l,v	5	primary d in 11/20 contexts
+S17	X3	l,d,m	3	primary l in 9/20 contexts
+S17	SET	-	4	mean primary-letter share 0.47
+S18	X1	d,l,v	6	primary d in 12/20 contexts
+S18	X2	d,l,m	2	primary d in 7/20 contexts
+S18	X3	d,l,v	2	primary d in 7/20 contexts
+S18	SET	-	3	mean primary-letter share 0.43
+S19	X1	l,d,m	3	primary l in 8/20 contexts
+S19	X2	d,l,m	3	primary d in 8/20 contexts
+S19	X3	d,l,v	4	primary d in 10/20 contexts
+S19	SET	-	3	mean primary-letter share 0.43
+S20	X1	d,l,v	3	primary d in 8/20 contexts
+S20	X2	d,l,m	4	primary d in 10/20 contexts
+S20	X3	d,l,v	3	primary d in 8/20 contexts
+S20	SET	-	3	mean primary-letter share 0.43

@@ -221,3 +221,48 @@ those tokens are now honestly M. The remaining route to the five uncovered class
 (all five glossed leaves are now read or held and none carries them): it is f.61's own context (H33, run on this skeleton),
 or a period key sheet, or the classes being this hand's variants of covered signs (H40-style blind sort of CA/LOOPBAR/ZHOOK
 crops against the covered classes -- not attempted here, not in the brief).
+
+## The undeciphered leaves (F61-FAMILY-4, 2026-09-28 03:4x UTC): two of the four are glossed
+
+On the native images fr.3982 f.124r (de Diou to Mayenne, headed "7 de Nove[mbre] 1592") is interlined THROUGHOUT -- 45 cipher rows,
+each with the period decipherer's clear line above it -- and fr.3982 f.97r (de Diou to Jeannin, 27 Oct 1592) is interlined throughout
+too (about 38 rows); the family table's "partly interlined" / "none seen" came from 1200-px thumbnails. That makes a FOURTH glossed
+hand (de Diou's secretary) with about 5,000 signs between the two leaves. fr.3984 f.186r and f.189r (Desportes) remain the family's
+undeciphered leaves; they were not cut in this job (H48).
+
+f.124r signs: 45 bands at 2x (sheets/f124r; hand-set centres from a long-stroke profile, the ink-weight detectors lock onto the gloss
+rows on this leaf as on f.101r; `cut_bands.py --track 18` drifted one row at s5 on L27-L30, those four crops are held out), two blind
+Opus passes per chunk of 8 with the f.101r atlas unchanged (passes/PROMPTS_undec.md), 2387/2839 = 84.1% identical (0.70-0.94 per band),
+`passes/recf124r/ciphertext_draft.tsv`. Class inventory of the draft: PHI 705, VBAR_A 419, 4TRI 245, H24 232, C43 205, LOOPS 195,
+EBR_B 175, HASH4 141, OTHER 151 (this hand's word-code sign), 4STEM 84, ... and of the rare classes only LOOPBAR 3, CROSS 3, CA 1,
+ZHOOK 1: de Diou's hand does not write f.61's five uncovered classes either.
+
+f.124r gloss: HELD (`key_period_f124_held.tsv`). Two blind Opus gloss passes agree on 42% of words over 24 bands (2x cipher-centred
+bands 49%/43% on chunks 1-2; a gloss-centred 3x recut, the H41 recipe, 36% on chunk 3; both readers mostly '?' at confidence l) --
+under the family's 60% gate, and the alignment of the agreed words alone is flat (top-letter share 0.205). Yet band L01 (82% word
+agreement) reads under key_period_v3 with no refit: "auant" C43 LOOPS C43 C43 VBAR_A, "la lettre" EBR_B C43 EBR_B PHI VBAR_A VBAR_A PHI
+PHI, "escrite" PHI VBAR_B 4STEM PHI H24 VBAR_A PHI, "luy" EBR_B LOOPS EBR_B, "aye" C43 EBR_B PHI, "este" PHI VBAR_B VBAR_A PHI, "rendue"
+PHI PHI C43 4STEM LOOPS PHI, and the readers' OTHER takes "que", "Mons[ieu]r", "m'" whole. So (1) the family key applies to the fourth
+hand, (2) the leaf is a letter-by-letter interlinear decipherment with word codes, (3) the readers' EBR_B is l/y and LOOPS u/v here as
+on f.101r, and (4) the hold is the gloss READING, not the leaf: H46 names the recipes to try. Tool note: `tools/interlinear_align.py`
+in `--code-prefix` mode gives every code at most one letter, so a word-code OTHER pushed its letters onto the neighbours and flattened
+the key; `align_period.py --numeral-other` (OTHER as an above-floor Thurloe numeral) and `--wild-disagree` (disagreed words as `?`
+wildcards) are the fix, off by default.
+
+Under v3, `decode_leaf_period.py f124r`: 2,782 signs, covered 0.939, firm 0.061 (C 6, C+ 163, M 2,444, unread 169) -- the skeleton of
+the leaf, the same polyphonic pairs as f.61's.
+
+## Rare classes (F61-FAMILY-4, 2026-09-28 03:42 UTC): untestable by context inference at this coverage
+
+CA, LOOPBAR, ZHOOK, CROSS, LL occur 78 times across f.61r, f.108r, f.101r, f.188r, f.108v and f.124r (`rare_contexts.tsv`; 20 of
+f.61r's 99 signs but a handful on every other leaf, 8 on f.124r's 2,782). The brief's H16-shaped inference -- a blind Opus text judge
+proposing letters from the French around each occurrence, 21 sets with the contexts re-dealt among the classes at random -- was gated
+on a positive control first (`rare_classes.py build control`: HASH4 d/q, BETA m, INF u hidden from the key, 20 contexts each): the
+judge ranks the true set 13 of 21 and proposes the same filler letters (d, l, m) for all three labels, missing INF's u. FAIL, so the
+target call was not spent and no grade-S row exists (`rare_classes.tsv`). The reason is structural: rendered under v3 the neighbours
+are period pairs for nearly every class, 0-1 firm letters per context, so there is no French to read -- H33's limit met from the class
+side. What would test it: firm neighbours (the polyphonic cells resolved, H24/H40) or a period source that writes these signs (none of
+the five glossed hands does; H43's blind shape sort against the covered classes remains the open route, and H44's published-table
+check is script-only). The scattered n = 1 gloss tokens (CA c/q/s/t/p, ZHOOK a/e/r and f.108v's held a 7 / e 4 / u 4, LOOPBAR e/u,
+CROSS p, LL e) are listed in rare_classes.tsv for the record and used by nothing.
+

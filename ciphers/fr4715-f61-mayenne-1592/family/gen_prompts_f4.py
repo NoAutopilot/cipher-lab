@@ -18,6 +18,12 @@ for ck, rng in chunks.items():
     for pas in "AB":
         w(f"f124r_signs{pas}_{ck}", fmt(sec["Sign pass template (f.124r)"], nb=len(bands), bands=", ".join(bands), atlas=atlas, ni=len(paths), paths="\n".join(paths), out=f"{P}/f124r_signs{pas}_{ck}.tsv"))
         w(f"f124r_gloss{pas}_{ck}", fmt(sec["Gloss pass template (f.124r)"], nb=len(bands), bands=", ".join(bands), ni=len(paths), paths="\n".join(paths), out=f"{P}/f124r_gloss{pas}_{ck}.tsv"))
+# gloss-centred 3x recut (chunks 3-6 template; files _c<k>g), added 03:3x UTC before the chunk-3 call
+gt = [v for k, v in sec.items() if k.startswith("Gloss pass template, gloss-centred")][0]
+for ck, rng in chunks.items():
+    bands = [f"L{i:02d}" for i in rng]; paths = [f"{HERE}/sheets/f124g/f124g_{b}_s{s}.jpg" for b in bands for s in range(1, 6)]
+    for pas in "AB":
+        w(f"f124r_gloss{pas}_{ck}g", fmt(gt, nb=len(bands), bands=", ".join(bands), ni=len(paths), paths="\n".join(paths), out=f"{P}/f124r_gloss{pas}_{ck}g.tsv"))
 # sign-only leaves: generated when their bands exist (sheets/<pre>_bands.json), chunks of 8
 import json
 for pre, desc in (("f97r", "BnF fr.3982 f.97r, de Diou to president Jeannin, Rome, 27 October 1592"), ("f186r", "BnF fr.3984 f.186r, Desportes to Pietro Aldobrandini, Paris, 22 July 1593"), ("f189r", "BnF fr.3984 f.189r, Desportes to Hieronimo Frachetta, Paris, 22 July 1593")):
@@ -30,4 +36,8 @@ for pre, desc in (("f97r", "BnF fr.3982 f.97r, de Diou to president Jeannin, Rom
         bands = lines[k:k + 8]; paths = [f"{HERE}/sheets/{pre}/{pre}_{ln}_s{s}.jpg" for ln in bands for s in range(1, ns + 1) if os.path.exists(f"{HERE}/sheets/{pre}/{pre}_{ln}_s{s}.jpg")]
         for pas in "AB":
             w(f"{pre}_signs{pas}_c{k // 8 + 1}", fmt(sec["Sign pass template (leaves without gloss: f.97r, f.186r, f.189r)"], leafdesc=desc, nb=len(bands), bands=", ".join(bands), ns=ns, segw=im.width, segh=im.height, atlas=atlas, ni=len(paths), paths="\n".join(paths), out=f"{P}/{pre}_signs{pas}_c{k // 8 + 1}.tsv"))
+# rare-class judge prompts (step 3), from the "Rare-class judge template" section; the sets files come from rare_classes.py build
+jt = [v for k, v in sec.items() if k.startswith("Rare-class judge")][0]
+for tag, nlab in (("control", 3), ("target", 5)):
+    w(f"rare_judge_{tag}", fmt(jt, nsets=21, last=20, nlab=nlab, labels=", ".join(f"X{i+1}" for i in range(nlab)), setsfile=f"{P}/rare_{tag}_sets.txt", outfile=f"{P}/rare_{tag}_verdict.tsv").replace("{{word}}", "{word}"))
 print("written", len(os.listdir(f"{P}/prompts_f4")))
