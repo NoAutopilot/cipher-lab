@@ -109,6 +109,27 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   et déchiffrement"** -- Gallica btv1b9060633d canvas f15 carries cipher runs in the family's polyphonic signs, f17 a clear page,
   f21 the address (`family/fr3984_f7/`). Row H168 checks whether it is in f.61's cells and whether f17 deciphers it.
 
+## H168-H180 (runner 6, 28 Sept 2026, times from the clock and commits)
+
+- **fr.3984 fol. 7 is not this cipher** (H168): Tomokiyo's mayenne.htm gives ff.7-10 (Mayenne to de Diou, 13 May 1593) as a different
+  homophonic cipher (table fr.3995 no.55; decipherment fol. 8). H165's "in the family's signs" is withdrawn (NOTES H168).
+- **A second separate-sheet period pair (H169-H175):** fr.3984 f.176r (Desportes to Clement VIII, 22 July 1593, polyphonic per
+  Tomokiyo) is rendered by **fol. 177r**: pre-registered DP gate PASS on two blind passes (0.577/0.606 vs best wrong text 0.413/0.452,
+  permuted max 0.447/0.500, N 208). The statistic's power is shown on the known pair f.188r/f.184r (H173: true 0.58-0.65 vs wrong
+  0.33-0.39). The first candidate, fol. 175r, FAILED the same gate (H170; probably f.189r's decipherment, H176 open).
+- **Key rows `family/key_period_f176.tsv`** (H177, H177b; `family/build_f176_key.py L01-L19 --check`): f.176r L01-L19 (1,262 signs,
+  A/B consensus 0.79) against fol. 177r L01-L34; v4's letter SETS fix only the alignment, and the letter within a set comes from the
+  period decipherment. Whole stretch 0.550 vs wrong text 0.368. Single letters where v4 carries merged pairs: VBAR_A t (partner g),
+  EBR l, HASH4 d/q, 4STEM p/c, DBL o (the side-by-side glyph), INF u, VBAR_B s, BETA m. The sign the passes split C43/ZHOOK reads
+  **i 35/48** (H178); its glyph link to f.61's ZHOOK FAILED a blind tile gate (H178b: another hand and size, NO LINK).
+- **Cross-hand transfer is class by class (H179, test key `family/key_period_v4n176.tsv`):** f.61 48/55 unchanged (these cells barely
+  occur in Tomokiyo's spans); f.108r overlay 65 -> 67 with VBAR_A = t/g, but 58 with EBR = l and 62 with 4STEM = p/c.
+- **Bracket form (H180):** f.176r's brackets are H22's form B, f.61's form (blind attribute test: anchors 14/14, f.176r 11/11 no
+  diagonal), and fol. 177r reads them l (43/55). f.108r's are mostly form A (f/s), which is H179's -7. For f.61's form-B brackets the period
+  evidence reads l (cell l/y).
+- For the verifier: whether a Desportes-hand period reading (VBAR_A t, form-B bracket l) may grade f.61's tokens of the same atlas class
+  (two hands, one table). Nothing merged into v4; no class change.
+
 ## Files to read
 
 | what | path | step |
@@ -123,6 +144,7 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 | f.108v judge (control + three calls) and its consensus | `scripts/f61judge_known_h51_s101_*`, `scripts/f61judge_f108v_s10{1,2,3}_*`, `scripts/f108v_consensus.txt` (`f61judge108v.py score ... --check`, `f108v_consensus.py --check`) | H85, H91 |
 | judge letter-choice calibration | `scripts/f61judgeletters_result.txt`, `f61judgeletters_known_h51_s104_result.txt` (`f61judgeletters.py [--tag known_h51_s104] --check`) | H90, H94 |
 | model-free checks and hard null | `scripts/f61judge_ngram_result.txt`, `f61judge_ngram_hard_result.txt` (`f61judge_ngram.py [--hard] --check`), `scripts/f108v_lines.txt`, `scripts/f61judge_{known_h51,f108v}_swaps105_*`, no-leak `*_s104_*` | H93, H94, H100-H103 |
+| runner 6 (H168-H180): f.176r/fol. 177r pair | `family/passes/PROMPTS_f176_f175.md`, `family/h170_gate.py`, `family/h173_power.py`, `family/h175_gate.py`, `family/build_f176_key.py`, `family/key_period_f176.tsv`, `family/narrow_v4_f176.py`, `scripts/h178b_*`, `scripts/h180_*`, `family/sheets/f176r_full/`, `family/sheets/f177r_full/` (crops regenerable, not committed) | H168-H180 |
 | coding merges found in the family readers' classes (for the family worker) | `scripts/family_relabel_proposal.tsv` | H99 |
 | runner 5 (H108-H134): f.108r draft, beam and sequence-gain scripts | `f61recon108r.py`, `f61loop108r.py`, `f61hash4_108r.py`, `f61ngram108r_repl.py`, `f61beam_known.py`, `f61beam_margin*.py`, `f61beam_shuffle.py`, `f61beam_seqgain.py`, `f61seqgain_shuffle.py`, `f61seqgain_family.py`, `f61swap_family.py`, `f61beam_period.py`, `f61beam_words.py`, `f61beam_f108r_predict.py` (each `--check`) | H108-H134 |
 
