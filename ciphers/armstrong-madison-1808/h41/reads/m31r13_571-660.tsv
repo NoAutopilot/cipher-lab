@@ -1,0 +1,93 @@
+frame	flag	note
+571	none	left ms English letter (Cordova, Albuquerque's army), clear prose; right printed pamphlet title page "Instruccion..."
+572	none	blank + printed Spanish pamphlet p.1, clear prose
+573	none	printed pamphlet Capitulo I arts I-IX, clear prose
+574	none	printed table [4] Provincias/Poblacion/Diputados, demographic statistics not a cipher key
+575	none	printed pamphlet arts, clear prose
+576	none	printed pamphlet Capitulo III, clear prose
+577	none	printed pamphlet arts VII-XVI, clear prose
+578	none	printed pamphlet Capitulo IV, clear prose
+579	none	printed pamphlet arts XII-XVII, clear prose
+580	none	printed pamphlet Capitulo V/Formula, clear prose
+581	none	blank Nota/Firmas page + printed title "Informe del Tesorero General"
+582	none	printed prose pp II/III, clear prose
+583	none	printed prose pp IV/V, clear prose
+584	none	printed prose pp VI/VII, clear prose
+585	none	printed prose pp VIII/IX, clear prose
+586	none	printed prose pp X/XI, clear prose
+587	none	printed prose pp XII/XIII, clear prose
+588	none	printed prose pp XIV/XV, clear prose
+589	none	printed prose pp XVI/XVII, clear prose
+590	none	printed prose p XVIII/XIX + Nota, clear prose
+591	none	printed financial table "Num I" Estado, sums of money (treasury), not code
+592	none	printed financial table "Num II" Noticia, sums of money
+593	none	printed financial table "Estado" Real Armada, sums of money
+594	none	printed financial table "Numero IV" Noticia, sums of money
+595	none	printed financial table "Num V" Relacion de pagos, sums of money
+596	none	left page faint/illegible account-table remnant; right page starts ms letter (South Carolina, Cadiz, Feby 7 1810), clear prose
+597	none	ms letters continuing (No 82, No 83), clear prose
+598	none	blank docket + ms letter (No 83 dup, Cadiz Feby 9 1810), clear prose
+599	none	ms letter continuing (military dispatch, French troops), clear prose
+600	none	ms letter continuing, clear prose
+601	none	ms letter continuing (signed Geo W Erving), clear prose
+602	none	ms letter/postscript (Gibraltar Feby 15 1810), clear prose
+603	none	end of letter (signed Erving) + blank page
+604	none	blank + printed Spanish decree "El Rey Nuestro Senor Don Fernando VII...", clear prose
+605	none	printed decree continuing, clear prose
+606	none	printed decree "El Consejo Supremo de Espana...", clear prose
+607	none	left page very faint/illegible ("Nota, address of Supreme Council to the Indies"); right new letter (Gibraltar Feby 17 1810), clear prose
+608	none	ms letter continuing (Franklin case, consuls), clear prose
+609	none	ms letter continuing, clear prose
+610	none	ms letter continuing, mentions sums "12,500 Dollars"/"7500" (money, not code)
+611	none	ms letter with expense list by ship name (Crescent 278.60, Vigilant 2128.95, Frank(lin) 1193.67) - dollar sums, not code
+612	none	ms letter continuing, clear prose
+613	none	blank + ms letter "To Mr de Garay, Cadiz April 7 1809", clear prose
+614	none	ms letter continuing, clear prose
+615	none	blank + Spanish ms letter "Num 2, From Mr de Garay", clear prose
+616	none	blank + Spanish ms letter "No 3" continuing, clear prose
+617	none	blank + Spanish ms letter continuing, clear prose
+618	none	ms letter continuing (English), clear prose
+619	none	ms letter continuing, clear prose
+620	none	ms letter continuing, clear prose
+621	none	ms letter continuing, clear prose
+622	none	blank + ms letter "To Mr de Garay Numero 5, Sevilla July 7 1809", clear prose
+623	none	blank + ms letter "Num 6, Sevilla July 24 1809", clear prose
+624	none	ms letter continuing, clear prose
+625	none	blank + ms letter "No 7, Sevilla Aug 15 1809", clear prose
+626	none	ms letter continuing "No 8, Sevilla Aug 20 1809", clear prose
+627	none	blank + ms letter "No 9, Sevilla Sep 6 1809", clear prose
+628	none	ms letter continuing, clear prose
+629	none	ms letter continuing, clear prose
+630	none	ms letter continuing, clear prose
+631	none	ms letter continuing, clear prose
+632	none	ms letter continuing, clear prose
+633	none	ms letter continuing, clear prose
+634	none	ms letter continuing, mentions "7500 Dollars" (money, not code)
+635	none	ms letter continuing, mentions "2000 Dollars" (money, not code)
+636	none	blank + faint docket/address page
+637	none	blank + faint docket/address page, mostly illegible scribbles, no numeral run seen
+638	none	blank + ms letter "To John Graham, Dept of State, Gibraltar March 2 1810", clear prose
+639	none	ms letter continuing + list of addressee names (Jefferson, Mason, Thornton, Barlow) - names not numbers
+640	none	docket/address pages, faint scribbled notes, mostly blank
+641	none	blank + Spanish ms letter, clear prose
+642	none	Spanish ms letter continuing + docket
+643	none	docket pages, faint scribbled cursive notes/addresses, illegible, no numeral run seen
+644	none	docket + printed "El Consejo de Regencia...A los Americanos Espanoles", clear prose
+645	none	printed prose continuing, clear prose
+646	none	printed prose continuing, clear prose
+647	none	printed prose continuing, clear prose
+648	none	blank + printed "Real Decreto", clear prose
+649	none	printed prose + docket, clear prose
+650	none	docket + printed "El Consejo de Regencia...A la Nacion Espanola", clear prose
+651	none	printed prose continuing, clear prose
+652	none	docket + ms letter "To Robert Smith, Washington, Philada Aug 5 1810", clear prose
+653	none	ms letter continuing + new letter "To Robert Smith, Washington, Dec 22 1810", clear prose
+654	none	blank + ms letter continuing, clear prose
+655	none	ms letter continuing, clear prose
+656	none	ms letter continuing, clear prose
+657	none	ms letter continuing (end of letter), clear prose
+658	blank	"END OF VOLUME" typed card
+659	blank	large volume-label card "31-13"
+660	blank	large target/arrow mark card
+m30-65	code	right-hand page, ~4 lines down: numeral run "130. 1779. 023. 1058. 052." embedded mid-sentence ("by a person... that 130. 1779. 023. 1058. 052. in a late conversation observed...") - cipher-style numbers standing in for a name/subject
+m30-66	none	ms letter continuing (Lord Erskine, Duke of Norfolk, named persons), clear prose
