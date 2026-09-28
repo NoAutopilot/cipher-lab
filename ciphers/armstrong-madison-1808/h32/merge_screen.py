@@ -8,9 +8,12 @@ import os, re, random, sys
 from collections import Counter
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(HERE)
 ORDER = ["f403R", "f404L", "f404R", "f408R", "f409L"]
+H33 = ["f404L", "f404R", "f409L", "f389R", "f390L"]  # H33 reads live in h33/reads/
 rows = []
-for fr in ORDER:
+for fr in ORDER + [x for x in H33 if x not in ORDER]:
     f = os.path.join(HERE, "reads", fr + ".tsv")
+    if not os.path.exists(f) and fr in H33:
+        f = os.path.join(os.path.dirname(HERE), "h33", "reads", fr + ".tsv")
     if not os.path.exists(f):
         print("missing", f); continue
     for line in open(f, encoding="utf-8"):
@@ -35,7 +38,7 @@ with open(os.path.join(HERE, "legation_groups.tsv"), "w") as fh:
     for r in out: fh.write("\t".join(str(r[k]) for k in ("frame", "crop", "pos", "group", "gloss", "conf", "note")) + "\n")
 with open(os.path.join(HERE, "legation_screen_input.tsv"), "w") as fh:
     fh.write("# Erving to Madison, Madrid, autumn 1807, Cypher of the Legation; NARA M31 reel 12 frames 403/404/408/409, blind Sonnet reads (H32)\nline\tgroups\n")
-    for fr in ORDER:
+    for fr in ORDER + [x for x in H33 if x not in ORDER]:
         crops = sorted({r["crop"] for r in out if r["frame"] == fr})
         for c in crops:
             gs = [r["group"] for r in out if r["frame"] == fr and r["crop"] == c and r["group"].isdigit()]
@@ -43,7 +46,7 @@ with open(os.path.join(HERE, "legation_screen_input.tsv"), "w") as fh:
 toks = [int(r["group"]) for r in out if r["group"].isdigit()]
 c = Counter(toks)
 print(f"duplicate bands dropped: {dropped}")
-print(f"groups read {len(out)} (per page: " + ", ".join(f"{fr} {sum(1 for r in out if r['frame']==fr)}" for fr in ORDER) + f"); clean digits {len(toks)}, distinct {len(c)}, glossed {sum(1 for r in out if r['gloss'] not in ('', '-'))}")
+print(f"groups read {len(out)} (per page: " + ", ".join(f"{fr} {sum(1 for r in out if r['frame']==fr)}" for fr in ORDER + [x for x in H33 if x not in ORDER]) + f"); clean digits {len(toks)}, distinct {len(c)}, glossed {sum(1 for r in out if r['gloss'] not in ('', '-'))}")
 hi = [v for v in toks if v >= 100]; u = Counter(v % 10 for v in hi)
 print(f"values >= 100: {len(hi)}, units 0/1 share {(u[0]+u[1])/max(1,len(hi)):.3f}, units 2/3/5/9 share {(u[2]+u[3]+u[5]+u[9])/max(1,len(hi)):.3f}, max {max(toks) if toks else 0}; top: " + ", ".join(f"{v}x{n}" for v, n in c.most_common(12)))
 # same-table check against H26's 24 Mar 1807 letter
