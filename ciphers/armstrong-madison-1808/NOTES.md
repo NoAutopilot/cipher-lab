@@ -3464,3 +3464,21 @@ further. **Result:** no catalogue opened beyond H34's; L27 stays on the owner's 
 Wayback attempts logged, as rule (a) asks. No challenge was bypassed. No reading, no class change. Requests:
 archives.nypl.org 1, discover.hsp.org 1, corsair.themorgan.org 1, researchworks.oclc.org 1, masshist.org 1,
 web.archive.org 3 (reset). Cost: about 0.5 USD (`--spend` 0.5).
+
+## Campaign steps H65 and H66 (28 Sept 2026, to 16:34 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Rule (a)
+retries of two more desk rows.
+
+**H65, ASKS 83 (LOC George William Erving papers finding aid):** web.archive.org resets from this container (H64);
+loc.gov JSON search for the collection record: '"George William Erving papers"' 0 results, 'Erving papers Madrid' in the
+Manuscript Division 16 unrelated hits, a manuscript-format facet query returned a non-JSON page (not retried); one guessed
+finding-aid PDF id was a different collection (logged, not used). Not reached; ASKS 83 stays on the desk. Low value for
+the target in any case: the Madrid legation cipher is excluded at every level tested (H38, H48-H50).
+
+**H66, ASKS 86 (Ericson and Haggerty 1980, Livingston papers microfilm guide, OCLC 7776177):** HathiTrust bibliographic
+API by OCLC: no record; Internet Archive advancedsearch: 0; Google Books API (country=US): 0; Open Library: the
+catalogue record (OL6123259W, OCLC 7776177) with no IA scan. Not online; ASKS 86 stays with the owner.
+
+No reading, no class change. Requests: loc.gov 3, tile.loc.gov 1, catalog.hathitrust.org 1, archive.org 1,
+googleapis.com 1, openlibrary.org 1. Cost: about 0.5 USD for both (`--spend` 0.5).
