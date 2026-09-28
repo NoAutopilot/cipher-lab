@@ -1244,3 +1244,33 @@ start of "tre[s r]egimient..") and the one candidate value change (r06:3 as 4) e
 as H10 and H11. v04:19 needs a different image (H12, ASKS row 81: add f.22v's gutter edge to the BnF batch).
 
 Requests: none (disk only). Subagents: 2 Sonnet vision calls (12 crops each) of the 4 allowed. Cost: est 3 USD.
+
+## Campaign step H9 (2026-09-28 00:12-00:2x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** CAMPAIGN.md H9: the error-tolerant solve (`tools/homophonic_anneal.py --noise 0.05`,
+anneal_noisy, which names the positions it treats as misread) on the target, 3 seeds each under the es17 and es17c7
+models, with a matched control run first (rule 3): the same solve on the three 5%-corrupted exact-profile Cartas
+controls from step H1 (`cheap_test_1/noisy/exactprof_cartas13_n0.05_seed{1,2,3}.tsv`), whose truly corrupted
+positions are known (`noisy_solve/control_truth_seed*.json`, 22-24 letter-changing corruptions each). Files:
+`cheap_test_1/noisy_solve/` (9 JSON outputs, truth files, `analyse.py` which prints every number below). Settings
+as always: order 3, 8 restarts x 40,000 iters, `--skip NONE`. No hosts, no subagents.
+
+**Control (can the solver find corrupted positions at N=521, K=38?)** Named 7-9 positions per run against 22-24
+real ones: precision 0.44 / 0.11 / 0.57, recall 0.17 / 0.05 / 0.17 (seeds 1-3), and the letter it put at a
+correctly named position was right in 2 / 0 / 3 cases. Its corrected decode read 92.9% / 34.4% / 81.0% -- no better
+than the plain solver on the same corrupted inputs (H1: -1279.5 / -1157.2 / -1173.7 plain vs -1230.9 / -1361.5 /
+-1165.3 noisy; seed 2 stuck). **Verdict: at this N and noise level the instrument does not locate misread
+positions** (recall under one in five; one run in three sticks). Any position list from it on the target is
+weakly evidenced by construction, and this is logged as "untestable by this tool at this N", not as a negative
+on the target (CLAUDE.md rule 3, the "same instrument, second attempt" paragraph: the next attempt at locating
+misreads needs a different instrument -- the eye, H10/H11 -- not a tuned noise level).
+
+**Target.** Scores: es17 -1156.3 / -1155.5 / -1303.9 (plain solver on file: -1154.3 -- the free positions buy
+nothing); es17c7 -1137.7 / -1133.3 / -1133.5 (plain -1138.5: about 5 points for 3-5 free positions). The solver
+used only 3-7 of the 40 free positions it was allowed, on every seed -- consistent with a transcription that is
+mostly clean under this design, the same reading H1's error bracket gave. 21 distinct positions were named across
+the six runs; only two by three or more runs: r18:5 (code 26, reading i, S; solver wants d on 3 of 4) and r16:9
+(code 25, reading u, M -- the M-graded code whose r16 occurrence "copura" does not read; solver wants a/o). All 19
+others were named once or twice, and 20 of the 21 are S-graded. Given the control's precision, at most one or two
+of the 21 are expected to be real misreads; r18:5 and r16:9 are handed to the H10/H11 eye-check job as two extra
+crops (cheap, same subagent call), nothing more. No reading change, no grade change.
