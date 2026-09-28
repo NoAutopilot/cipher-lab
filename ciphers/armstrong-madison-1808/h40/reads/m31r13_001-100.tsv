@@ -1,0 +1,103 @@
+frame	flag	note
+1	blank	target/emulsion card, "D" shape
+2	blank	NARA title card, no text body
+3	blank	Microcopy M31 Roll 13 cover card
+4	blank	printed title page, Microcopy No.31 Dispatches Spain
+5	none	printed "Notes on Roll 13" page, clear prose
+6	none	clear prose, No.44 letter, Madrid May 14 1808
+7	none	clear prose
+8	none	clear prose
+9	none	clear prose
+10	none	clear prose
+11	none	clear prose
+12	none	clear prose
+13	none	clear prose
+14	none	clear prose
+15	none	clear prose
+16	none	clear prose
+17	none	clear prose
+18	none	clear prose, casualty counts in sentence ("4 or 5 hundred", "2000")
+19	none	clear prose, troop counts in sentence ("12,000", "20,000")
+20	none	clear prose
+21	none	clear prose, list of enclosures No.1-No.5 w/ dates (index, not code)
+22	none	clear prose, list of enclosures No.4-No.9 w/ dates (index)
+23	none	clear prose, list of enclosures No.10-No.13 w/ dates (index)
+24	none	clear prose, enclosures list continuing
+25	none	clear prose
+26	none	clear prose, signed George W Erving
+27	none	clear prose, pen-blot scribbles bottom left, not code
+28	none	small wrapper note "No.17"
+29	none	clear prose, Postscript May 23
+30	none	clear prose
+31	none	clear prose, signed George W Erving
+32	none	clear prose, "No.36 Private" letter to Madison
+33	none	clear prose
+34	none	clear prose + Latin verse quoted at end
+35	none	clear prose
+36	none	clear prose, signed
+37	none	clear prose, Postscript May 23
+38	none	clear prose
+39	none	clear prose, signed, P.S. note bottom
+40	none	printed Diario de Madrid, clear prose
+41	none	printed Diario de Madrid, clear prose
+42	none	printed Diario de Madrid, clear prose
+43	none	printed newspaper; "Rifa de Gerona" table of letters & lottery amounts, not a cipher key
+44	none	printed proclamation "La Junta Suprema de Gobierno"
+45	none	printed proclamation continuing + Rifa de Gerona table again
+46	none	printed decree text, clear
+47	none	clear prose treaty text
+48	none	clear prose copy/triplicate letter
+49	none	clear prose, Spanish, re American ships
+50	none	clear prose, copy/triplicate
+51	none	clear prose
+52	none	clear prose, Spanish copy
+53	none	clear prose, Spanish, signed
+54	none	clear prose, "No.45 Triplicate" letter to James Madison
+55	none	clear prose
+56	none	clear prose (near-duplicate content of fr55, same letter)
+57	none	clear prose, P.S. notes
+58	none	printed Gazeta Extraordinaria de Madrid, 29 Sept 1808
+59	none	printed text, clear
+60	none	printed Gazeta Extraordinaria de Madrid, 12 June 1808
+61	none	printed text, clear
+62	none	printed Gazeta Extraordinaria de Madrid
+63	none	printed proclamation, clear
+64	none	clear prose, copy of royal decree (Fernando)
+65	none	clear prose, decree continuing
+66	none	clear prose, decree continuing, signed "Yo El Rey"
+67	none	clear prose, "No.46 Triplicate" letter, Madrid June 22 1808
+68	none	clear prose
+69	none	clear prose
+70	none	clear prose
+71	none	clear prose
+72	none	clear prose
+73	none	clear prose, troop counts in sentence ("20,000 men", "12,000 men")
+74	none	clear prose
+75	none	clear prose
+76	none	clear prose, troop count in sentence ("3000 french", "10,000 effective")
+77	none	clear prose
+78	none	clear prose
+79	none	clear prose, list of enclosures No.1-No.9 (index, not code)
+80	none	clear prose, signed
+81	none	clear prose, signed George W Erving
+82	none	printed Gazeta Extraordinaria de Madrid No.5, 12 June 1808
+83	none	printed text continuing, clear
+84	none	printed decree text, clear
+85	none	printed decree, "Articulo 1-4" numbered clauses, ordinary
+86	none	printed decree continuing + list of council members' names
+87	none	printed proclamation, clear
+88	none	printed text + handwritten "No.2 Ministerio de Sevilla" declaration of war note, clear
+89	none	clear prose, declaration continuing
+90	none	clear prose, "No.3 Triplicate" letter copy
+91	none	clear prose, signed
+92	none	clear prose, "No.4 Triplicate" letter
+93	none	clear prose
+94	none	printed decree text "No.3", clear
+95	none	printed decree continuing + handwritten "No.8 Copy Triplicate" heading
+96	none	clear prose continuing (Consejo representation to Napoleon)
+97	none	printed Gazeta Extraordinaria de Madrid, 14 June 1808
+98	none	printed text continuing, clear
+99	none	printed proclamation w/ list of signatory names, "En la Imprenta Real"
+100	none	clear prose, naval battle account (Samuel Smith privateer); ship/gun/crew numbers in ordinary sentences, not code
+m30-65	code	mid-page fragment: numeral run "154. 1779. 023. 1038. 654" written inside a sentence ("...declared, that 154. 1779. 023. 1038. 654 in a late conversation...")
+m30-66	none	clear prose, dinner-guest list and diplomatic report; "5,000 troops" is an ordinary contextual number, not a code run
