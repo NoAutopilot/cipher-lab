@@ -1,0 +1,33 @@
+sheet	segment	x_start	x_end	word	conf	note
+L03	1	1520	1900	cuu[e/o]	l	cursive fragment above cipher, letters after initial "cu" uncertain (could be "cume"/"cuiue"); first occurrence
+L03	2	280	500	sim.	l	first letter f or long-s uncertain, small flourish above resembles abbreviation
+L03	2	780	1050	pti	m	abbreviation mark (tilde/dot) over "ti"
+L03	2	1050	1650	min.	m	ends in a point or flourish, could be "min." (abbreviated) rather than full "mine"
+L03	2	2100	2160	d	l	isolated letter above cipher, ambiguous, possibly abbreviation for "de"
+L03	3	0	350	canto	m	main line: large clear cursive at very start of line, spans the segment2/segment3 boundary (top "ca" sits in segment 2's bottom, "nto" here)
+L03	3	800	950	d[o]	l	loop-shaped abbreviation mark, ambiguous, possibly "de"/"do"
+L03	3	1550	1950	force	m	reads plausibly as French "force"
+L03	4	0	1000	Incompudites	l	main line: large connected cursive continuing from segment 3's clear text; exact reading uncertain (possibly "Incompudites"/"Iucompudites")
+L05	1	1150	1280	La	l	cut off by the top edge of the sheet; possibly the bottom of the line above this cipher line rather than this line's own gloss
+L05	2	0	150	on	l	word cut at left edge of segment, presumably continuing an illegible word from segment 1's cut-off text
+L05	2	550	650	je	l	small squiggle, uncertain reading
+L05	2	1300	1750	m..	l	illegible cursive fragment, first letter looks like "m", rest unclear
+L05	2	2100	2700	le tout	l	cut at the right edge of the segment; reading uncertain, second word could be "tout"
+L05	3	650	820	Je	m	main line: begins a clear clause written on the line itself, only one cipher sign precedes it in this segment
+L05	3	850	1200	vous	m	main line, continues "Je vous..."
+L05	3	1220	1380	ay	m	main line
+L05	3	1750	2450	touche	m	main line; word continues past the segment boundary (see "le" below)
+L05	3	2450	2700	le	m	main line; only the ascender is visible before the segment3/segment4 cut, continues as "faist" in segment 4
+L05	4	180	780	faist	m	main line; completes "...touche le faist" begun in segment 3
+L06	1	1580	1780	Et	h	main line: clear French clause after two cipher signs at the start of the segment
+L06	1	1880	2100	vous	h	main line
+L06	1	2200	2450	di	h	main line; word continues as "ray" in segment 2 ("diray")
+L06	2	0	260	ray	h	main line; completes "diray" begun in segment 1
+L06	2	320	1750	d'auantage	m	main line; apostrophe + "d" then "auantage" (davantage)
+L06	2	1900	2200	que	h	main line
+L06	2	2350	2420	l[?]	l	main line; cut ascender at right edge of segment, continues into segment 3
+L06	3	0	650	de[?]	l	main line; reads "d" "e" then an ambiguous ligature (tall s/f + loop + tail), possibly "cestuy" or similar; connects from "que" in segment 2, precedes the cipher run
+L07	2	1280	2050	foyonne	l	first letter (f or long-s) and final letters uncertain; possibly "soyonne"/"foyonner"
+L07	3	280	620	feur	m	clear "feur" (period spelling)
+L07	4	650	950	front	m	reads plausibly as "front"
+L07	4	1550	1980	geurz	l	hard to read, ends with what looks like a final -z abbreviation stroke
