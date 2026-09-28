@@ -542,3 +542,17 @@ candidates), or a plaintext whose function words are largely NOT coded (carried 
 non-English-like token stream. Named next step (not run here): a homophone test -- do rows 17 and 18 (or 47/48)
 ever stand adjacent, and do their neighbour profiles match -- needs an instrument with a passing control, which B2b
 showed neighbour classes are not at this N. Requests: none; 0 subagents; about 3 minutes by the clock each.
+
+## Step B23 (28 Sept 2026, 04:36-04:45 UTC) -- roll 12 (Livingston, Oct 1801-Nov 1804) screened whole: every numeral passage is Livingston's THE=968 usage; nothing in the target's code
+
+Whole-reel PDF `M34-012.pdf` (92.1 MB, 455 pages, one request), 16 contact sheets at 26 dpi read by this session
+(`scratch/b23/r12_*.jpg`), four numeral pages checked at 110 dpi. Positive control met: the 1803 despatches ARM3-LIVCODE
+screened stand out as numeral pages. Numeral pages on the reel: 49, 62, 75, 88, 118, 144 (1803-04 Livingston to
+Madison with the period interlinear pencil decodes: "but your Minister must be ... 1157. 477. 764. 317. 1059 ...",
+"968. 654. 689. 1087. 1667. 1583 ..."), 321-322, 349-350 ("1043. 1433. 470 ... 968. 1318. 1556. 1456 ... Rob R
+Livingston / The Honble James Madison"), 368, 391, 394-395 (a five-page numeral despatch, "In consideration of this
+937. 599. 924. 601. 849 ... 968 ..."), 405-407. Every one carries the THE=968 signature values (968, 849, 1221, 1667,
+1583, 1456, 1011) and flat units; none shows the target's 0/1-heavy units, its 2-digit block or shorthand runs.
+**Result: search result with its control -- DUSMF rolls 12, 13 and 14 (Oct 1801-Sept 1810) are now screened frame
+by frame; the 20 Feb 1808 letter is the only item in its code in the whole Paris legation series.** Requests:
+catalog.archives.gov 1; 0 subagents.
