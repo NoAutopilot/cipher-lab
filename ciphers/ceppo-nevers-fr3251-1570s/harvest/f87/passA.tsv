@@ -1,0 +1,205 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S40		M	with g tail; prose 'ticolari' before
+L01	2	S74	S54	M	with top stroke
+L01	3	S65		H	
+L01	4	S93		M	join
+L01	5	S31		M	L
+L01	6	S74	S54	M	
+L01	7	S31		M	L
+L01	8	S13	S95	M	with inner dot
+L01	9	X_NEW		L	black dot
+L01	10	S23		M	lambda-like
+L01	11	S62		H	
+L01	12	X_THETA2		H	two long bars
+L01	13	S73		M	with dots
+L01	14	S89		H	bar
+L01	15	S47		M	with dot
+L01	16	S54	S69	L	crossed by bar
+L01	17	S80	S65	M	with bar
+L01	18	S94		M	with bar
+L01	19	S93		M	delta
+L01	20	S40		M	g
+L01	21	S13		M	
+L01	22	S55		M	cross-stem ring
+L01	23	X_NEW	S42	L	with dot above
+L01	24	S80	S65	M	with bar
+L01	25	S52		M	(vertical bar before it)
+L01	26	S97	S23	M	long
+L01	27	S73		M	with dots; line end
+L02	1	X_POUND		M	with loop; line start
+L02	2	S47		M	dot
+L02	3	S94		M	cross
+L02	4	S93		M	delta
+L02	5	S31		L	
+L02	6	X_THETA2		M	theta
+L02	7	S80		M	dot bar
+L02	8	S49	S30	M	with dots
+L02	9	S89		H	
+L02	10	S93		M	delta
+L02	11	S76		L	x j
+L02	12	S22	S93	L	tail
+L02	13	S74		M	
+L02	14	S35		H	with tick
+L02	15	S42	S16	M	with tick
+L02	16	S52		M	(bar before)
+L02	17	S80		H	bar
+L02	18	S76	S58	M	
+L02	19	S17		H	
+L02	20	S54	S62	L	tail
+L02	21	S61		H	
+L02	22	S52		H	
+L02	23	S22		M	wave
+L02	24	S75	S60	L	with blob
+L02	25	S23		M	dot
+L02	26	S31		L	
+L02	27	S75		L	plus
+L02	28	S31		M	L
+L02	29	S88	S24	M	dot
+L02	30	S93		M	delta
+L02	31	S40		M	g
+L02	32	S57		M	c
+L02	33	S69	S60	L	theta
+L02	34	S24		M	
+L02	35	S93		M	delta
+L02	36	S23		M	dot
+L02	37	S37		L	
+L02	38	S54	S62	L	
+L02	39	S57		M	
+L02	40	S17		M	
+L02	41	S73		M	dots
+L02	42	S89		H	
+L02	43	S80		H	bar
+L02	44	S74		M	line end
+L03	1	S97	S23	M	line start
+L03	2	S80		M	
+L03	3	S31		M	L
+L03	4	S75		H	
+L03	5	S74		H	
+L03	6	S65		H	
+L03	7	S13		M	dot
+L03	8	S49		M	dot
+L03	9	S45		M	dot
+L03	10	S54	S69	M	barred
+L03	11	S52		H	
+L03	12	S88		M	
+L03	13	S65		M	
+L03	14	S17		H	
+L03	15	S31		M	
+L03	16	S26		M	dot
+L03	17	S93		M	delta
+L03	18	S31	S32	L	
+L03	19	S23		M	dot
+L03	20	S62		H	
+L03	21	X_THETA2		M	theta
+L03	22	S75		M	
+L03	23	S73		M	dots
+L03	24	S94		M	cross
+L03	25	S24		M	
+L03	26	S49		M	dots
+L03	27	S67		M	
+L03	28	S80		M	bar
+L03	29	S84	S31	L	x
+L03	30	S13		M	
+L03	31	S75		M	plus
+L03	32	S23		M	dot
+L03	33	S74		M	
+L03	34	S62		M	
+L03	35	S54	S74	L	
+L03	36	S61		H	
+L03	37	S80		H	bar
+L03	38	S42		H	
+L03	39	S52		H	
+L03	40	S23		M	dot
+L03	41	S89		H	
+L03	42	S62		H	
+L03	43	S47		H	
+L03	44	S80		H	bar
+L03	45	S76	S58	M	ij
+L03	46	S24		M	line end
+L04	1	S42	S16	M	triangle; line start
+L04	2	S45		M	dot
+L04	3	S52		M	(bar before)
+L04	4	S53		M	
+L04	5	S93		M	s
+L04	6	X_THETA2		M	theta
+L04	7	S35		H	tick
+L04	8	S31		H	
+L04	9	S65	S80	M	
+L04	10	S26		H	dot
+L04	11	S25	S37	L	
+L04	12	S52		M	
+L04	13	S45		M	dot
+L04	14	S37		M	
+L04	15	S80		M	bar
+L04	16	S52		M	(bar before)
+L04	17	S70		M	
+L04	18	S66		H	dot
+L04	19	X_POUND		M	loop
+L04	20	S93		M	delta
+L04	21	S80		M	dots
+L04	22	S47		H	
+L04	23	S23		H	dot
+L04	24	S13		H	
+L04	25	S93		M	delta
+L04	26	S62		M	
+L04	27	X_THETA2		H	theta
+L04	28	S23		H	dot
+L04	29	S24		M	
+L04	30	S45		M	dot
+L04	31	S47		H	
+L04	32	S80		M	bar
+L04	33	S23		H	dot
+L04	34	S24		M	
+L04	35	S93		M	delta
+L04	36	S75		H	
+L04	37	S17		H	
+L04	38	S31		H	
+L04	39	S65	S80	M	
+L04	40	S49		M	dots
+L04	41	S88	S24	M	
+L04	42	S76		M	ij
+L04	43	S52		H	
+L04	44	S74		H	
+L04	45	S75		H	line end
+L05	1	S23		H	dot; line start
+L05	2	S35		H	tick
+L05	3	S97	S23	M	dot
+L05	4	S23		H	dot
+L05	5	S89		H	
+L05	6	S62		H	
+L05	7	S73		M	dots
+L05	8	S26		H	dot
+L05	9	S35		H	tick
+L05	10	S37		M	
+L05	11	X_THETA2		M	theta
+L05	12	S75		H	
+L05	13	S76		M	ij
+L05	14	S80		M	bar
+L05	15	S74		H	
+L05	16	S52		H	
+L05	17	S49		H	dots
+L05	18	S53		M	
+L05	19	S75		H	
+L05	20	S74	S37	M	
+L05	21	S70		M	
+L05	22	S23		H	dot
+L05	23	S24		M	
+L05	24	S76		M	ij
+L05	25	S62		M	(possible repeat across s2/s3 boundary)
+L05	26	?		L	fragment at s3 left edge
+L05	27	S62		M	
+L05	28	X_THETA2		M	theta
+L05	29	S24		M	
+L05	30	S75		M	
+L05	31	S24		M	
+L05	32	S49		M	dots
+L05	33	S89		H	
+L05	34	S75		M	
+L05	35	S22		M	wave
+L05	36	S93		M	delta
+L05	37	S80		M	dot bar
+L05	38	S74		M	
+L05	39	S40		M	g
+L05	40	S47	S76	M	loop epsilon
+L05	41	S23		H	dot
+L05	42	S88		M	line end

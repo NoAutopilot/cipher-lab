@@ -24,10 +24,10 @@ sys.path.insert(0, str(HERE.parents[2] / "tools"))
 import judge_plaintext as jp  # noqa: E402
 
 
-def load_map(extra=()):
+def load_map(extra=(), path=None):
     """extra: 'ID=value' strings for signs not on the printed sheet (HARVEST-D2: X_THETA2=r from the fr.3252 f.36v
     period gloss); they join the map and so are shuffled with the rest in the control."""
-    m = {e["id"]: e["value"] for e in json.load(open(HERE / "sign_id_map.json"))}
+    m = {e["id"]: e["value"] for e in json.load(open(path or HERE / "sign_id_map.json"))}
     for x in extra:
         k, v = x.split("=", 1); m[k] = v
     return m
@@ -75,11 +75,13 @@ def main():
     ap.add_argument("--seed", type=int, default=1); ap.add_argument("--out")
     ap.add_argument("--corpus", default="it16dip")
     ap.add_argument("--extra", action="append", default=[], help="ID=value for a sign not on the sheet, e.g. X_THETA2=r")
+    ap.add_argument("--map", help="sign id -> value JSON (default: sign_id_map.json beside this script; the 1572 group "
+                    "uses ../../nevers-birago-fr3251-1572/harvest/sign_id_map_1572.json)")
     ap.add_argument("--fit-sign", action="append", default=[], help="score the target with this sign id set to each letter "
                     "in turn (and null); reports the ranking -- a value-fit test for one unkeyed sign, e.g. X_POUND")
     a = ap.parse_args()
     rng = random.Random(a.seed)
-    m = load_map(a.extra)
+    m = load_map(a.extra, a.map)
     passages = {}
     for r in csv.DictReader(open(a.seq), delimiter="\t"):
         passages.setdefault(r["passage"], []).append(r["sign_id"].strip())

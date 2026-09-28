@@ -1,0 +1,215 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S40		M	prose before: particolari
+L01	2	S54	S74	M	
+L01	3	S65		H	
+L01	4	S93		H	
+L01	5	S31		M	
+L01	6	S54	S74	M	
+L01	7	S31		M	
+L01	8	S13		H	
+L01	9	S23		H	
+L01	10	S62		H	
+L01	11	X_THETA2		M	oval crossed by two bars
+L01	12	S73		H	
+L01	13	S89		H	
+L01	14	S47		H	
+L01	15	S54		M	
+L01	16	S65		H	
+L01	17	S55	S94	M	
+L01	18	S93		H	
+L01	19	S40		M	
+L01	20	S13		H	
+L01	21	S94	S55	M	
+L01	22	S42	S40	M	
+L01	23	S65		H	
+L01	24	X_NEW		M	bar/P-like shape (vertical bar, or P with foot)
+L01	25	S52		H	
+L01	26	S97		H	
+L01	27	S73		H	line end
+L02	1	X_NEW		M	line start; bar/P-like shape (vertical bar, or P with foot)
+L02	2	S47		H	
+L02	3	S55	S94	M	
+L02	4	S93		H	
+L02	5	S31	S32	M	
+L02	6	X_THETA2		M	oval crossed by two bars
+L02	7	S65		H	
+L02	8	S49	S30	M	
+L02	9	S89		H	
+L02	10	S93		H	
+L02	11	S84		M	
+L02	12	X_NEW		M	bar/P-like shape (vertical bar, or P with foot)
+L02	13	S93	S58	M	
+L02	14	S74		H	
+L02	15	S35		H	
+L02	16	S23	S42	M	
+L02	17	X_NEW		M	bar/P-like shape (vertical bar, or P with foot)
+L02	18	S52		H	
+L02	19	S80	S65	M	
+L02	20	S32	S58	M	
+L02	21	S66	S26	M	
+L02	22	S31	S17	M	
+L02	23	S74		H	
+L02	24	S61		H	
+L02	25	S52		H	
+L02	26	S22		H	
+L02	27	S75	S56	M	
+L02	28	S23	S97	M	
+L02	29	S94		M	
+L02	30	S56	S75	M	
+L02	31	S31		M	
+L02	32	S88	S24	M	
+L02	33	S93		H	
+L02	34	S40		M	
+L02	35	S57		H	
+L02	36	S13	S95	M	
+L02	37	S24		H	
+L02	38	S93		H	
+L02	39	S23		H	
+L02	40	S37		H	
+L02	41	S54	S74	M	
+L02	42	S57		H	
+L02	43	S17	S31	M	
+L02	44	S73		H	
+L02	45	S89		H	
+L02	46	S80		H	
+L02	47	S74		H	line end
+L03	1	S97		H	line start
+L03	2	S65		H	
+L03	3	S31		M	
+L03	4	S75		H	
+L03	5	S54		M	
+L03	6	S80		H	
+L03	7	S13		H	
+L03	8	S49		H	
+L03	9	S47		H	
+L03	10	S74		H	
+L03	11	S52		H	
+L03	12	S88		H	
+L03	13	S65		H	
+L03	14	S17		H	
+L03	15	S31		M	
+L03	16	S31		M	
+L03	17	S26		H	
+L03	18	S93		H	
+L03	19	S32	S58	M	
+L03	20	S23		H	
+L03	21	S62		H	
+L03	22	X_THETA2		M	oval crossed by two bars
+L03	23	S75		H	
+L03	24	S73		H	
+L03	25	S55		M	
+L03	26	S88		H	
+L03	27	S49		H	
+L03	28	S67		H	
+L03	29	S80		H	
+L03	30	S84	S31	M	
+L03	31	S13		H	
+L03	32	S75		H	
+L03	33	S23		H	
+L03	34	S74		H	
+L03	35	S62		H	
+L03	36	S37		H	
+L03	37	S61		H	
+L03	38	S80		H	
+L03	39	S42	S16	M	
+L03	40	S52		H	
+L03	41	S23		H	
+L03	42	S89		H	
+L03	43	S62		H	
+L03	44	S47		H	
+L03	45	S80		H	
+L03	46	S32	S58	M	
+L03	47	S66		M	
+L03	48	S88		H	line end
+L04	1	S42	S16	M	line start
+L04	2	S45	S13	M	
+L04	3	X_NEW		M	bar/P-like shape (vertical bar, or P with foot)
+L04	4	S52		H	
+L04	5	S53		H	
+L04	6	S93		H	
+L04	7	X_THETA2		M	oval crossed by two bars
+L04	8	S35		H	
+L04	9	S31		M	
+L04	10	S65		H	
+L04	11	S26		H	
+L04	12	S40	S84	M	
+L04	13	S52		H	
+L04	14	S45		H	
+L04	15	S37		H	
+L04	16	S80		H	
+L04	17	X_NEW		M	bar/P-like shape (vertical bar, or P with foot)
+L04	18	S52		H	
+L04	19	S70		H	
+L04	20	S66		M	
+L04	21	X_NEW		M	bar/P-like shape (vertical bar, or P with foot)
+L04	22	S93		H	
+L04	23	S65		H	
+L04	24	S47		H	
+L04	25	S23		H	
+L04	26	S13		H	
+L04	27	S93		H	
+L04	28	S62		H	
+L04	29	X_THETA2		M	oval crossed by two bars
+L04	30	S23		H	
+L04	31	S88		H	
+L04	32	S45		H	
+L04	33	S47		H	
+L04	34	S80		H	
+L04	35	S23		H	
+L04	36	S88		H	
+L04	37	S93		H	
+L04	38	S75		H	
+L04	39	S17		H	
+L04	40	S84		M	
+L04	41	S65		H	
+L04	42	S49		H	
+L04	43	S88		H	
+L04	44	S32		M	
+L04	45	S66		M	
+L04	46	S52		H	
+L04	47	S54		M	
+L04	48	S75		H	line end
+L05	1	S23		H	line start
+L05	2	S25		H	
+L05	3	S97		H	
+L05	4	S23		H	
+L05	5	S89		H	
+L05	6	S62		H	
+L05	7	S73		H	
+L05	8	S26		H	
+L05	9	S35		H	
+L05	10	S37		H	
+L05	11	X_THETA2		M	oval crossed by two bars
+L05	12	S75		H	
+L05	13	S32		M	
+L05	14	S66		M	
+L05	15	S80		H	
+L05	16	S54		M	
+L05	17	S52		H	
+L05	18	S49		H	
+L05	19	S53		H	
+L05	20	S75		H	
+L05	21	S37		H	
+L05	22	S70		H	
+L05	23	S23		H	
+L05	24	S88		H	
+L05	25	S32		M	
+L05	26	S66		M	
+L05	27	S62		H	
+L05	28	S62		H	
+L05	29	X_THETA2		M	oval crossed by two bars
+L05	30	S88		H	
+L05	31	S75		H	
+L05	32	S88		H	
+L05	33	S49		H	
+L05	34	S89		H	
+L05	35	S75		H	
+L05	36	S22		H	
+L05	37	S93		H	
+L05	38	S80		H	
+L05	39	S54		M	
+L05	40	S40	S84	M	
+L05	41	S61		H	
+L05	42	S47	S45	M	
+L05	43	S23		H	
+L05	44	S88		H	line end
