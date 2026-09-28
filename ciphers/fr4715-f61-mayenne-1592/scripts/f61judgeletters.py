@@ -24,8 +24,9 @@ for s, line, markup in load_spans():
     _, pairs = align(markup, lines[line], key)
     for mi, sj in pairs:
         if markup[mi] != "-": tomo[(line, sj)] = markup[mi]
-meta = json.load(open(f"{HERE}/f61judge_known_h51_s101_key.json")); maps = meta["maps"]
-rows = {r["label"].strip(): r for r in csv.DictReader((l for l in open(f"{HERE}/f61judge_known_h51_s101_verdict.tsv") if not l.startswith("#")), delimiter="\t")}
+TAG = sys.argv[sys.argv.index("--tag") + 1] if "--tag" in sys.argv else "known_h51_s101"   # H94: --tag known_h51_s104 (the no-leak control)
+meta = json.load(open(f"{HERE}/f61judge_{TAG}_key.json")); maps = meta["maps"]
+rows = {r["label"].strip(): r for r in csv.DictReader((l for l in open(f"{HERE}/f61judge_{TAG}_verdict.tsv") if not l.startswith("#")), delimiter="\t")}
 tgt = [l for l, m in meta["key"].items() if m == 0][0]
 best = max((l for l in rows if l != tgt), key=lambda l: float(rows[l]["score_0_10"]))
 def score(lab):
@@ -41,7 +42,7 @@ def score(lab):
             else: out_ += 1
     p = sum(math.comb(inc, x) for x in range(ok, inc + 1)) / 2 ** inc if inc else 1.0
     return f"{lab}: Tomokiyo letter inside the cell at {inc} positions, judge chose it {ok}/{inc} = {ok / inc if inc else 0:.3f} (binomial P vs 0.5 = {p:.2g}); outside the cell {out_}; lines skipped for length mismatch {n_len_bad}"
-txt = f"target {score(tgt)}\nbest permutation {score(best)}\n"; res = f"{HERE}/f61judgeletters_result.txt"
+txt = f"target {score(tgt)}\nbest permutation {score(best)}\n"; res = f"{HERE}/f61judgeletters_result.txt" if TAG == "known_h51_s101" else f"{HERE}/f61judgeletters_{TAG}_result.txt"
 if "--check" in sys.argv:
     ok = os.path.exists(res) and open(res).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
 open(res, "w").write(txt); print(txt, end="")

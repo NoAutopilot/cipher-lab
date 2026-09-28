@@ -2194,3 +2194,22 @@ below real text: consistent with a noisy text (grade-M transcription, dropped nu
 clean one, and not a language PASS in `judge_plaintext.py`'s sense. What it adds to H85: the true cell map's advantage
 on f.108v is visible to a mechanical score, not only to the model judge that produced the letters. Not a reading; no
 class change.
+
+## Campaign step H94 (28 Sept 2026, 15:40-15:52 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+H85 rerun with the prompt's spelling examples ("estoit", "avecques", "beau-pere" -- the last one of Tomokiyo's words on
+the known lines, H90) replaced by "icelluy", "soubz", "advis", otherwise verbatim; fresh permutations and order (seed
+104); prompts and sets pushed 12f9eac9 before the calls (`scripts/PROMPTS.md` "H94"). Two Opus text calls.
+
+- **Control, known lines** (`f61judge_known_h51_s104_*`): target rank 1 of 21, 6.0 vs next 2.0 -> PASS. The resolution
+  no longer writes "beaupere" (it gives "enuoenuprere") but still reads "tropau..." and "melentendoit". Within-pair
+  letters against Tomokiyo (`scripts/f61judgeletters.py --tag known_h51_s104`, `f61judgeletters_known_h51_s104_result.txt`):
+  31/36 = 0.861 (binomial P 6.5e-06; one line skipped for a length mismatch), against 43/47 with the leaked example.
+- **f.108v** (`f61judge_f108v_s104_*`): target rank 1 of 21, **6.5 vs next 1.0** -> PASS, the widest margin of the
+  four f.108v calls; its resolution repeats the runs of H85 ("...missionsmentresurloss", "seulement", "conservation",
+  "sont ilz", "necessaires").
+
+**GATE H94 PASS** (both calls rank 1 of 21). H85 does not depend on the leaked example word; the judge's letter
+choices lose a little accuracy without it (0.915 -> 0.861 on the known lines). Not a reading; grade M throughout; no
+class change. For the verifier (H88) the f.108v evidence is now four judge calls at rank 1 of 21 (margins 6.0, 0.5,
+1.5, 5.5) plus the 4-gram check H93.
