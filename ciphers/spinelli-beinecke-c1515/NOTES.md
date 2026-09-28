@@ -1903,3 +1903,52 @@ used. **Files:** `passes/split_pass{M,N}.tsv`, `passes/build_v5_split.py`, `pass
 `keys/key_spinelli_c1515.tsv` given a SUPERSEDED header (H6's finding). **Cost:** 2 Opus vision calls (about 251k
 tokens) plus this runner's turns -- recorded as 6.0 USD (the est). No requests, no credentials, no AskUserQuestion,
 no other target touched.
+
+## Campaign step H40 (28 Sept 2026, 06:25-06:2x UTC) -- PHI and the residue split; 86% of the signs now carry a value
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H40: split PHI (Domnina's G crossed phi vs her I curl vs T) and
+the 26 residue signs on the 4x crops, two blind Opus passes, then the registered re-test.
+
+**Method and agreement.** Two sheets (PHI 17 signs; residue 26: the 11 unsorted HOOK, 3 JHOOK, the SEVEN/NINE/EIGHT/
+TWO/TEE/EIGHTBAR/CIRCLE signs H38's passes did not agree on), candidates = Domnina's cells with the lower T form (T3),
+the D-bowl (S2) and both M forms offered this time. Two blind Opus passes (`passes/split2_pass{O,P}.tsv`, about 106k
+and 104k tokens). `passes/build_v6_split.py`: **PHI 16/17 agreed -- I 10, G 2, T 4** ("most of the PHI code is
+actually the I curl; only 2 of 17 are real phis", both passes independently); HOOK 8/11 (T3 4, A 3, T1 1); TEE 3/3
+-> P1 (the c-with-bar); TWO leftovers 2/2 -> S2; JHOOK 2/3 -> M2; EIGHTBAR 1/2 -> C (the 8-with-waist-bar; both
+passes said the other, p1.L2.b17, is the UPPER CC_FF sign exactly, which the brief had not offered -- so EIGHTBAR is
+cc, one sign, and left '?' here); the two leftover SEVENs split E2/I2 between the passes (kept); the CIRCLE is a
+bare ring no cell has. 12 new sub-codes, `passes/letter_codes_v6.tsv`, `passes/ciphertext_v6.txt`,
+`keys/key_domnina_2016_atlasmap_v6.tsv`. The four PHI->T signs are L-confidence in both passes and both say the shape
+(loop at the base, stem rising, a bar) is nearer the lower C form than any offered candidate: grade M in any decode.
+
+**Registered re-test (same instrument and control; the row's criterion was that bigram and phrase must not worsen):**
+
+| statistic | v5 (H38) | **v6 (H40)** | v6 shuffled mean (sd), p05 / p95 | at or beyond |
+|---|---|---|---|---|
+| signs with a value / null / unmapped | 81% / 11% / 8% | **86% / 11% / 3%** | | |
+| mean log unigram | -2.794 (2/200) | -2.710 | -3.020 (0.072), -3.139 / -2.902 | **0/200** |
+| mean log bigram | -2.870 (0/200) | **-2.593** | -3.717 (0.231), -4.141 / -3.369 | **0/200** |
+| phrase best-window edit distance | 3 (0/200, mean 13.4) | **2** | 14.68 (0.87), 13 / 16 | **0/200** |
+
+Phrase window (position 41, unchanged place): `l a g u b m e r n a t ? o n e d i s p a g n i a` -- "la gubernatione
+d'ispagnia" with one intruding m (a HOOK_M/JHOOK sign, M-confidence in H38's passes) and one HOOK still unsorted.
+
+**The decode under the v6 map (context for the orchestrator; ? = unsorted; not a graded reading until H39 writes
+the decode file):** L01 `e t l g d m i t m e t h e m a d a a`; L02 `a r g e ? i t a n o n u o l e a ? e ? a r e h l
+a g u` ("... non uole a ... la gu-"); L03 `b m e r n a t ? o n e d i s p a g n i a l t h e p i m` ("-bernatione
+d'Ispagnia ..."); L04 `d i n t l i n a t i o n e s m m o s r a a l c o n ? e` ("d'in[c]linatione ... mostra al
+con[t]e"?); L05 `p a l a t ? n o t e a t a l ? t r c h` ("palat[i]no ..."); L06 `a c i u o c a r o n e o e t t r o u o
+l a`; L07 `r e s o l u t i o n e d c o s t o r o m i i o r e` ("resolutione d[i] costoro m[igl]iore"); L08 `d i que ?
+o e l p a l a d o m a n a a u u a` ("di que[st]o el pala[tino] doman[d]a ..."); L09 `s e e b i s o g n i o e l g u e r
+n a t o r e d i b r e` ("se bisogni o el gu[b]ernatore di Bre[scia]"); L10 `u a a n d a h a i s u i o r e r i`. The
+Italian is continuous over lines 3, 7, 8, 9 and readable in patches elsewhere; what remains is (a) the transcription's
+own errors (v4 pair agreement 93%, segmentation: "m i i o r e" is one sign short of migliore), (b) the four low-
+confidence PHI->T signs, (c) the one unsorted HOOK per line. Words that recur in the letter's own plain text (H33b):
+gobernatore di Brescia, domandarne; and the Count Palatine ("palatino") fits the court news of September 1519.
+
+**Controls / claims:** the shuffled-value battery on all three statistics (0/200 each); pass agreement per code as
+the transcription control; the registered criterion met. Rule 10: a control-backed partial decode under Domnina's
+published key; not called a reading until the graded file exists (H39); no class change. **Files:**
+`passes/split2_pass{O,P}.tsv`, `passes/build_v6_split.py`, `passes/letter_codes_v6.tsv`, `passes/ciphertext_v6.txt`,
+`keys/key_domnina_2016_atlasmap_v6.tsv`. **Cost:** 2 Opus vision calls (about 210k tokens) plus this runner's turns
+-- recorded as 5.0 USD (the est). No requests, no credentials, no AskUserQuestion, no other target touched.

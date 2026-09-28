@@ -1,0 +1,44 @@
+sheet	label	cell	conf	why
+PHI	p1.L1.b24	T	L	loop at lower left with stem rising from its top-right plus a bar to the right; stem does not pass through the loop (not phi); shape also resembles lower sign of cell C
+PHI	p1.L2.b6	I	H	small top loop over a large open oval with a tall rising stroke at right, no stem through the loop
+PHI	p1.L2.b19	UNCLEAR	L	crossed strokes forming a loop at the bottom with a bar across; neither a phi stem-through-loop nor the I curl
+PHI	p1.L2.b25	G	H	closed loop with vertical stem passing through it top to bottom, bar across: phi
+PHI	p1.L3.b14	I	H	small top loop, large lower oval, tall stroke rising at right
+PHI	p1.L4.b2	I	H	small top loop, large lower oval, tall stroke rising at right
+PHI	p1.L4.b4	T	L	same form as L1.b24: loop at base with stem rising from its top and a bar right; no stem through loop; also like lower sign of C
+PHI	p1.L4.b11	I	M	small top loop over open oval with rising stroke; thin faint ink
+PHI	p1.L5.b9	T	L	ink-filled loop at left with stem rising from its top and bar right; same family as L1.b24
+PHI	p1.L5.b13	T	L	loop with a tail rising from its top and a horizontal bar through it; no vertical stem through loop
+PHI	p1.L7.b8	I	H	small top loop, large open oval, tall rising stroke
+PHI	p1.L7.b23	I	M	small top loop over compact oval with rising stroke; loop inked heavily
+PHI	p1.L8.b3	I	H	small top loop, large lower oval, tall rising stroke
+PHI	p2.L1.b7	I	H	small top loop, large lower oval, tall rising stroke
+PHI	p2.L1.b17	G	H	vertical stem passing through a closed loop: phi
+PHI	p2.L2.b12	I	H	small top loop, open lower oval, tall rising stroke
+PHI	p2.L2.b21	I	M	small top loop over oval with rising stroke; blotted
+HOOKRES	p1.L1.b18	M2	M	vertical stem turning left into a foot at the bottom (J-hook); top may be cropped
+HOOKRES	p1.L1.b20	T3	H	mu/u-shape with long lead-in stroke from lower left
+HOOKRES	p1.L1.b21	M2	M	vertical stem turning left at bottom (J-hook), as L1.b18
+HOOKRES	p1.L2.b5	FF	L	loop at top with long tail descending right and a faint stroke crossing from lower left; could be R2
+HOOKRES	p1.L2.b8	A	L	curl at top-left opening into a long stroke sweeping down-right; blotted, same form as L3.b20
+HOOKRES	p1.L2.b17	UNCLEAR	H	loop above and loop below a horizontal bar: matches the UPPER sign of cell CC_FF, which is not in the candidate list
+HOOKRES	p1.L3.b9	E2	M	7 with short bar and heavy stem plus a detached mark at upper left (dotted 7)
+HOOKRES	p1.L3.b20	A	M	small hook at top-left then long stroke sweeping down to the right, like the lower sign of cell A
+HOOKRES	p1.L3.b27	P1	H	c-shape crossed by a horizontal bar at the top
+HOOKRES	p1.L3.b30	M2	L	faint arc descending and curling left at the bottom; J-like but no clear top loop
+HOOKRES	p1.L4.b10	T3	H	mu with long lead-in stroke
+HOOKRES	p1.L4.b15	S2	H	D-like bowl with top stroke extending left
+HOOKRES	p1.L4.b16	M2	M	centre sign is a loop-topped stem curling left into a J (g/J hook); a 7-like neighbour sits at left edge
+HOOKRES	p1.L4.b25	T2	M	small loop with a tail rising up-right and a dot beside it
+HOOKRES	p1.L5.b1	P1	H	c-shape crossed by a long horizontal bar
+HOOKRES	p1.L5.b6	E2	M	7 with a dot/tick at upper left (dotted 7)
+HOOKRES	p1.L5.b16	T1	L	heavy bowl with a thin stroke rising up-right; no dot seen; stroke may belong to a neighbour
+HOOKRES	p1.L5.b17	T1	M	small loop at lower left with a long tail rising up-right, no dot
+HOOKRES	p1.L6.b3	C	M	8-like double loop crossed by a horizontal stroke at the waist
+HOOKRES	p1.L6.b18	T3	H	mu with long lead-in stroke
+HOOKRES	p1.L7.b18	T3	L	u-shape with taller right stem; lead-in stroke not visible (faint)
+HOOKRES	p1.L8.b5	UNCLEAR	M	plain closed thick ring with no stem, bar, tail or dot; no candidate is a bare circle
+HOOKRES	p1.L8.b11	P1	H	c-shape crossed by a horizontal bar
+HOOKRES	p2.L2.b4	A	M	curl at top then long arc sweeping down to lower right
+HOOKRES	p2.L2.b13	S2	H	D-like bowl with top stroke extending left
+HOOKRES	p2.L2.b16	FF	L	crossed loop with open bottom and two feet, lead-in from lower left; top cropped, could be R2

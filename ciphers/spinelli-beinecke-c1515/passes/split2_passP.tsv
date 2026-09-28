@@ -1,0 +1,44 @@
+sheet	label	cell	conf	why
+PHI	p1.L1.b24	T	L	loop at lower left with stem rising from its top and exit stroke running right, loop not centred on stem so not a phi
+PHI	p1.L2.b6	I	H	small top curl, large lower oval, tall right ascender and crossing stroke as in I upper
+PHI	p1.L2.b19	UNCLEAR	L	X-like crossing strokes over a pointed bottom loop; neither a centred phi nor the I curl
+PHI	p1.L2.b25	G	H	closed loop centred on a straight vertical stem running above and below
+PHI	p1.L3.b14	I	H	small top loop, big lower oval, tall ascender, crossing stroke
+PHI	p1.L4.b2	I	H	small top curl on large oval with tall right ascender
+PHI	p1.L4.b4	T	L	same shape as p1.L1.b24: bottom-left loop, stem rising from top, stroke off to right
+PHI	p1.L4.b11	I	H	thin small top loop, lower oval, long ascender, cross stroke
+PHI	p1.L5.b9	T	L	filled loop at left with stem rising and bar to right, as p1.L1.b24; stem does not pass through loop
+PHI	p1.L5.b13	T	L	loop with curl rising from its top, crossed by a bar, no stem below the loop
+PHI	p1.L7.b8	I	H	top curl, large lower oval, ascender, cross stroke
+PHI	p1.L7.b23	I	M	small filled top loop on oval with ascender; compact
+PHI	p1.L8.b3	I	H	top curl, large lower oval, tall ascender, crossing stroke
+PHI	p2.L1.b7	I	H	top loop, big oval, tall ascender, crossing stroke
+PHI	p2.L1.b17	G	H	loop centred on a long vertical stem through it
+PHI	p2.L2.b12	I	H	small top loop, lower oval, tall ascender, crossing stroke
+PHI	p2.L2.b21	I	M	top curl, lower oval, tall ascender; heavier ink
+HOOKRES	p1.L1.b18	M2	L	vertical stem turning into a foot to the left (J-hook); top of sign cut off so the M2 head is not visible
+HOOKRES	p1.L1.b20	T3	H	mu/u-shape with long diagonal lead-in stroke
+HOOKRES	p1.L1.b21	M2	L	same J-hook as p1.L1.b18, top cut off
+HOOKRES	p1.L2.b5	R2	M	loop at top with long stroke descending to the right, hint of a lower crossing
+HOOKRES	p1.L2.b8	A	L	curl at upper left then heavy stroke sweeping down-right like an open arc; blotchy
+HOOKRES	p1.L2.b17	UNCLEAR	H	dot above bar and circle below (divide-like); matches the UPPER sign of CC_FF, which is not a listed candidate
+HOOKRES	p1.L3.b9	I2	M	heavy horizontal bar with thick vertical stem at right; tick at upper left may be a dot (E2) or neighbour
+HOOKRES	p1.L3.b20	A	L	curled head at top then long stroke down-right, open arc
+HOOKRES	p1.L3.b27	P1	H	c-shape crossed by a horizontal bar
+HOOKRES	p1.L3.b30	UNCLEAR	L	faint thin reversed curve like a closing bracket; no diagnostic loop or bar
+HOOKRES	p1.L4.b10	T3	H	mu/u-shape with long lead-in stroke
+HOOKRES	p1.L4.b15	S2	H	D-like bowl with a top stroke
+HOOKRES	p1.L4.b16	M2	M	dominant sign is a hook with a small head loop and long stem curving into a J bowl; a 7-like neighbour at left
+HOOKRES	p1.L4.b25	UNCLEAR	L	loopy e-like mark with a diagonal stroke and a small c beside it; no clear match
+HOOKRES	p1.L5.b1	P1	H	c-shape crossed by a long horizontal bar
+HOOKRES	p1.L5.b6	I2	M	bar with vertical stem at right, tick above left as p1.L3.b9
+HOOKRES	p1.L5.b16	UNCLEAR	L	open c/hook with blob head and a neighbour diagonal across it, no bar
+HOOKRES	p1.L5.b17	T1	M	small loop at lower left with long tail rising up-right
+HOOKRES	p1.L6.b3	C	M	8-like double loop crossed by a horizontal stroke
+HOOKRES	p1.L6.b18	T3	H	mu/u-shape with long lead-in stroke
+HOOKRES	p1.L7.b18	T3	M	u-shape with right stem; faint lead-in at left
+HOOKRES	p1.L8.b5	UNCLEAR	M	thick closed ring, no tail or bar; no candidate is a plain circle
+HOOKRES	p1.L8.b11	P1	H	c-shape crossed by a horizontal bar
+HOOKRES	p2.L2.b4	A	L	curled head at top with long stroke sweeping down-right, open arc
+HOOKRES	p2.L2.b13	S2	H	D-like bowl with a top stroke
+HOOKRES	p2.L2.b16	O1	L	two strokes crossing into a top loop with open legs below, like an 8 cut at the crop top
