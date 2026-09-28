@@ -867,3 +867,30 @@ book may quote or reproduce her cipher table (a Google Books snippet search insi
 
 **Requests:** api.core.ac.uk 1, api.openalex.org 1, api.semanticscholar.org 1, www.googleapis.com 2. **Cost:** recorded
 as 0.3 USD (est 0.5). No credentials printed, no AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H24 (28 Sept 2026, 00:51-00:53 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H24: do the two 2025 works that cite Domnina quote her table or
+her reading? Three requests (the Ryabov DOI landing page; two Google Books API snippet queries with `inauthor:Kaulfersch`).
+
+**Result: neither quotes the key, but both fix the citation and one adds a fact about the key's use.**
+- Ryabov 2025 (Quaestio Rossica, `qr.urfu.ru/ojs/index.php/qr/article/view/qr.1034`): the landing page carries the
+  reference list only (no PDF link visible to curl); it gives Domnina's citation in full -- **Domnina, E. (2015).
+  "Ciphers in Early Tudor Diplomacy: The Case of Tommaso Spinelli's Private Letters", in *Geheime Post. Kryptologie und
+  Stenographie der diplomatischen Korrespondenz europäischer Höfe während der Frühen Neuzeit* (Historische
+  Forschungen, vol. 106), pp. 181-194** -- and a second Domnina paper, "Nicodemo Tranchedini's Diplomatic Cipher: New
+  Evidence", *HistoCrypt 2018*, pp. 3-7 (open proceedings, a possible route to her contact details or method).
+- Kaulfersch 2025 (*Ein Gesandter in der ersten Sattelzeit der Diplomatie. Die Vielfalt der Rollen und Praktiken bei
+  Johann Maria Warschitz (d. 1541/42)*, Böhlau, 526 pp., Google Books id y1ZVEQAAQBAJ, partial view): two snippets --
+  "... Spinelli, der dreimal um die konsequente Anwendung seines Schlüssels bitten musste, bevor ihm Lordkanzler
+  Thomas [Wolsey?] ... Chiffre konversierte" and "... Spinelli für den Rest seiner diplomatischen Laufbahn auf einen
+  Schlüssel zu verlassen schien ... Domnina, Ciphers, 185" -- i.e. Kaulfersch reads Domnina p.185 as saying **Spinelli
+  seems to have relied on ONE key for the rest of his diplomatic career**. If that is right, the 1519 letter should
+  use the same key as the 1515 letters Domnina reconstructed, and the failure of the key as read (H4) points at the
+  transcription and atlas (HOOK, the 48% of unmapped shapes) or at Tomokiyo's redrawing being incomplete relative to
+  Domnina's Fig.1 -- not at a re-issued key. That sharpens H8 (Domnina's own Fig.1 is the document to get) and H21/H22.
+Both are secondary sources for the verifier's log and for a JSTOR row on *Geheime Post* (H9); neither prints a reading
+of the 7 Sept 1519 letter.
+
+**Requests:** doi.org -> qr.urfu.ru 1, www.googleapis.com 2. **Cost:** recorded as 0.3 USD (est 0.5). No credentials
+printed, no AskUserQuestion, rule 10 wording, no other target touched.
