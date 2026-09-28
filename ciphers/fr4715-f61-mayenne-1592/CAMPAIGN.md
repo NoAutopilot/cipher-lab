@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 240
-spent_today_usd: 108.77
+spent_today_usd: 119.30
 spent_day: 2026-09-28
 closed:
 
@@ -73,6 +73,7 @@ closed:
 | H41 | 6 | F61-FAM-106G: f.106r gloss-only recut -- bands cut around the GLOSS rows (centre = gloss row, up 40 / down 25 native, 4x) for the six rows whose signs H31 read at 85%, two Opus gloss passes (prompts in family/passes/PROMPTS_f188_f184_f106.md, gloss template), gate 60% on words; on a pass align_period.py f106r and merge under the H28 gate | nobody | 3 | open |  |
 | H42 | 7 | F61-FAM-188B: the rest of f.188r (rows 10-12 and 36-47, about 15 bands, plus a recut of L23 = row 35 with the region 60 px taller) with the H30 recipe (family/align_separate.py, f.184r clear passes already on disk), 4 sign calls; adds about 600 signs of Desportes' hand to key_period_f188.tsv | nobody | 6 | open |  |
 | H43 | 5 | F61-GAPS: the five uncovered classes of f.61r (CA 10, LOOPBAR 4, ZHOOK 3, CROSS 2, LL 1 signs) are written by none of the three glossed hands -- one blind Opus shape sort of their crops (from images/regen_f61r_sheets.sh) against crops of the covered classes of f.274r/f.101r/f.188r (no letters shown), the H22/H40 design, to test whether they are this hand's variants of covered signs; scored by whether each gap class sorts with one covered class in both of two calls | nobody | 3 | open |  |
+| H44 | 1 | PUBLISHED-CHECK of the rare classes: the five sign classes with no period reading (CA, LOOPBAR, ZHOOK, CROSS, LL) are looked up in Tomokiyo's published reconstruction (keys/key_mayenne_1592.tsv from mayenne.png), script-only: for each class, does one of his 16 table drawings match its atlas shape (the H1 matching of shape classes to table drawings is on disk), and what letters does he give it; record the answer as `published` pairs in a SEPARATE file family/key_published_rare.tsv (credit Tomokiyo; never merged into key_period_*), and test the period key plus these published pairs on the 55 known letters and f.108r against 20 permuted keys; the verifier records the key source as mixed (period plus published for those classes) if they are used in a decode | nobody | 1 | open |  |
 
 ## Log
 
@@ -106,3 +107,4 @@ closed:
 
 2026-09-28 02:28 | session_019kszqWVtfkrdrrUqf8LuHV (PARENT WORKER F61-FAMILY-3) | H30 done | 14 | f.188/f.184 separate-sheet key: 186 rows / 23 classes, all nine classes shared with f.274 give the same top letters blind on a third hand; v3 reads f.61 known spans 0.782 vs permuted max 0.618, f.108r 0.786 vs 0.512, coverage 0.80, gaps CA/LOOPBAR/ZHOOK/CROSS/LL unchanged; H42 (rest of the leaf) and H43 (gap-class shape sort) added.
 2026-09-28 02:28 | session_019kszqWVtfkrdrrUqf8LuHV (PARENT WORKER F61-FAMILY-3) | H31 done (held) | 7 | f.106r signs read at 3x (85.0%) but the gloss passes agree 33.9% (< 60%): held, nothing merged, H41 (gloss-only recut) added; every-class condition still fails, so H33 runs next on the v3 skeleton (control first).
+2026-09-28 02:43 | orchestrator session_01FXDfYR3CvGk7tcid1Aav1n | H44 | 0 | blocker question: the rare classes have no period reading; Tomokiyo's published table is on disk and was walled off from the period key on purpose, but as a separately labelled published source it bears on exactly these five classes and nobody has looked; rank 1 for the next runner, script-only
