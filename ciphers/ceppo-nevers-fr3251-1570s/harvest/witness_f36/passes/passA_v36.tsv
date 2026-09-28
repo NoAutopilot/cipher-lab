@@ -1,0 +1,424 @@
+crop	idx	sign	gloss	conf	note
+r37_L01_s1	1	S26	?	L	top row; glosses cut off by crop top; follows plaintext 'Iddio'
+r37_L01_s1	2	S75	?	L	
+r37_L01_s1	3	S95	?	M	
+r37_L01_s1	4	S70	?	M	
+r37_L01_s1	5	S74	?	M	blob top
+r37_L01_s1	6	S30	?	L	slanted divide sign with dots (S30/S49 undecided)
+r37_L01_s1	7	S76	?	L	e-loop + y
+r37_L01_s1	8	S69	?	L	theta struck by bar
+r37_L01_s1	9	S75	?	M	
+r37_L01_s1	10	NEW	?	L	plain triangle with left tail, no X inside (like S16 without the X)
+r37_L01_s1	11	S31	?	L	angular 2 on long base with dot
+r37_L01_s1	12	S95	?	M	
+r37_L01_s1	13	S17	?	M	
+r37_L01_s1	14	S58	?	L	loop + y
+r37_L01_s1	15	S52	?	M	
+r37_L01_s1	16	S65	?	M	
+r37_L01_s1	17	S89	?	H	
+r37_L01_s1	18	S93	?	L	omega
+r37_L01_s1	19	S74	?	M	
+r37_L01_s1	20	S47	?	M	
+r37_L01_s1	21	S40	?	L	last sign of s1 'x' (x with tail); s2 resumed after 'b e x' overlap
+r37_L01_s2	1	S34	?	M	resumed after overlap b,e,x
+r37_L01_s2	2	S53	?	M	
+r37_L01_s2	3	S70	?	M	
+r37_L01_s2	4	S95	?	M	tall plain oval (S13?)
+r37_L01_s2	5	S80	?	M	
+r37_L01_s2	6	S56	?	M	
+r37_L01_s2	7	S35	?	L	m without visible dot
+r37_L01_s2	8	S56	?	L	cross-bar faint
+r37_L01_s2	9	S30	?	L	slanted divide sign with dot
+r37_L01_s2	10	S47	?	M	
+r37_L01_s2	11	S58	?	L	loop + y
+r37_L01_s2	12	S62	?	M	
+r37_L01_s2	13	S17	?	M	
+r37_L01_s2	14	S40	?	L	x with tail, at right edge
+r37_L02_s1	1	?	?	L	partial sign cut at left edge
+r37_L02_s1	2	S70	o	L	gloss read from r37_L01 view of same line
+r37_L02_s1	3	S30	n	L	slanted divide sign with dots
+r37_L02_s1	4	S74	?	M	blob top
+r37_L02_s1	5	S66	i	L	z with dot
+r37_L02_s1	6	S74	?	M	
+r37_L02_s1	7	S93	?	L	omega, gloss illegible
+r37_L02_s1	8	S70	?	M	
+r37_L02_s1	9	S94	?	M	circle, stem, cross at bottom
+r37_L02_s1	10	S66	?	L	z with dot
+r37_L02_s1	11	S40	?	L	x with dot and small tail
+r37_L02_s1	12	S75	?	M	
+r37_L02_s1	13	S74	?	M	
+r37_L02_s1	14	S80	?	M	8 struck with dash
+r37_L02_s1	15	S53	?	M	
+r37_L02_s1	16	S45	?	M	c with dot
+r37_L02_s1	17	S56	?	M	cross-stem + 3
+r37_L02_s1	18	S89	?	H	
+r37_L02_s1	19	S97	?	M	lambda with top-left loop; S23/S97
+v36mid_L01_s1	1	S75	?	M	
+v36mid_L01_s1	2	S58	?	L	loop + j, then S62
+v36mid_L01_s1	3	S62	?	M	
+v36mid_L01_s1	4	S74	?	M	plain 6
+v36mid_L01_s1	5	S66	?	M	z with dot
+v36mid_L01_s1	6	NEW	?	L	like S94 (circle on stem) but the stem curves down-right and hooks up, no cross; same shape as NEW in v36mid_L03_s1
+v36mid_L01_s1	7	S30	?	L	slanted divide with dots
+v36mid_L01_s1	8	S70	?	M	
+v36mid_L01_s1	9	S60	?	L	theta struck by two bars
+v36mid_L01_s1	10	S45	?	M	
+v36mid_L01_s1	11	S66	?	L	at right edge, next to dark margin
+v36mid_L02_s1	1	S13	?	M	theta with dot
+v36mid_L02_s1	2	S93	?	L	omega
+v36mid_L02_s1	3	S24	?	L	hash sign, S24/S88
+v36mid_L02_s1	4	S74	?	M	
+v36mid_L02_s1	5	S93	?	L	omega with dot
+v36mid_L02_s1	6	S87	?	L	rho with bar
+v36mid_L02_s1	7	S45	?	M	
+v36mid_L02_s1	8	S89	?	H	
+v36mid_L02_s1	9	S75	?	M	
+v36mid_L02_s1	10	S58	?	L	loop + y
+v36mid_L02_s1	11	S24	?	L	hash sign
+v36mid_L02_s1	12	S65	?	M	
+v36mid_L02_s1	13	S74	?	M	
+v36mid_L02_s1	14	S93	?	L	
+v36mid_L02_s1	15	S62	?	M	
+v36mid_L02_s1	16	NEW	?	L	plain triangle with left flourish, no X (like S16 without the X)
+v36mid_L02_s1	17	S52	?	M	
+v36mid_L02_s1	18	S23	?	M	dotted lambda-like, S23/S97
+v36mid_L02_s1	19	S31	?	L	2 on long foot with dot
+v36mid_L02_s1	20	S80	?	M	
+v36mid_L02_s1	21	S47	?	M	
+v36mid_L02_s1	22	S45	?	M	
+v36mid_L02_s1	23	S94	?	M	
+v36mid_L02_s1	24	S66	?	L	z with dot at right edge
+v36mid_L02_s2	1	S74	?	M	resumed after overlap eps,C,female,z (last skipped: z)
+v36mid_L02_s2	2	S45	?	M	
+v36mid_L02_s2	3	S23	?	M	dotted lambda, S23/S97
+v36mid_L02_s2	4	S89	?	H	
+v36mid_L02_s2	5	S80	?	M	
+v36mid_L02_s2	6	S60	?	L	theta struck by bars
+v36mid_L02_s2	7	S52	?	M	
+v36mid_L02_s2	8	S66	?	L	z with dot
+v36mid_L02_s2	9	S40	?	L	x with tail
+v36mid_L02_s2	10	S37	?	M	o with stem up
+v36mid_L02_s2	11	S80	?	M	8 with loop top, struck
+v36mid_L02_s2	12	S57	?	M	
+v36mid_L02_s2	13	S93	?	L	omega with long flourish
+v36mid_L02_s2	14	S88	?	L	hash with bars, S24/S88
+v36mid_L02_s2	15	S80	?	M	
+v36mid_L02_s2	16	S30	?	L	slanted divide at page edge
+v36mid_L03_s1	1	S25	?	M	n with loop tail at right
+v36mid_L03_s1	2	S67	?	M	
+v36mid_L03_s1	3	S74	?	M	flourish top
+v36mid_L03_s1	4	S87	?	M	circle on stem with tick at top right
+v36mid_L03_s1	5	S84	?	M	
+v36mid_L03_s1	6	S45	?	M	
+v36mid_L03_s1	7	S56	?	M	
+v36mid_L03_s1	8	S89	?	H	
+v36mid_L03_s1	9	S16	?	M	X above triangle
+v36mid_L03_s1	10	S31	?	L	2 on long foot with dot
+v36mid_L03_s1	11	S93	?	L	
+v36mid_L03_s1	12	S75	?	M	
+v36mid_L03_s1	13	S60	?	L	theta struck by bars
+v36mid_L03_s1	14	S80	?	M	
+v36mid_L03_s1	15	S45	?	M	
+v36mid_L03_s1	16	S74	?	M	
+v36mid_L03_s1	17	S80	?	M	8 with hat, struck
+v36mid_L03_s1	18	S87	?	M	
+v36mid_L03_s1	19	NEW	?	L	oval with long tail sweeping down-right and hooking up
+v36mid_L03_s1	20	no cross (like S94 with curved stem)	?	M	
+v36mid_L03_s1	21	S34	?	M	dotted lambda + s
+v36mid_L03_s1	22	S60	?	L	
+v36mid_L03_s1	23	S80	?	M	
+v36mid_L03_s2	1	S30	?	L	slanted divide with dot
+v36mid_L03_s2	2	resumed after overlap theta-struck, 8-struck	?	M	
+v36mid_L03_s2	3	S94	?	M	
+v36mid_L03_s2	4	S70	?	M	
+v36mid_L03_s2	5	S84	?	M	
+v36mid_L03_s2	6	S80	?	M	
+v36mid_L03_s2	7	S87	?	M	
+v36mid_L03_s2	8	S22	?	M	wavy two-hump
+v36mid_L03_s2	9	S24	?	L	hash sign
+v36mid_L03_s2	10	S30	?	L	
+v36mid_L03_s2	11	S89	?	H	
+v36mid_L03_s2	12	S47	?	M	
+v36mid_L03_s2	13	S37	?	M	o with stem up
+v36mid_L03_s2	14	S75	?	M	
+v36mid_L03_s2	15	S30	?	L	
+v36mid_L03_s2	16	S53	?	M	
+v36mid_L03_s2	17	?	?	L	tall thin stroke at page edge (may be line-end mark)
+v36mid_L04_s1	1	S67	?	M	f with tail at left edge
+v36mid_L04_s1	2	S74	?	M	small hook to upper left
+v36mid_L04_s1	3	S70	?	M	
+v36mid_L04_s1	4	S84	?	M	
+v36mid_L04_s1	5	S89	?	H	
+v36mid_L04_s1	6	S80	?	M	
+v36mid_L04_s1	7	S24	?	L	hash sign
+v36mid_L04_s1	8	S93	?	L	omega
+v36mid_L04_s1	9	S37	?	L	o-like with S-shaped top
+v36mid_L04_s1	10	S87	?	M	circle on stem with tick
+v36mid_L05_s1	1	?	?	L	partial hooked sign cut at left edge
+v36mid_L05_s1	2	S40	?	M	x with blob and tail
+v36mid_L05_s1	3	S45	?	M	
+v36mid_L05_s1	4	S94	?	M	cross at base
+v36mid_L05_s1	5	S93	?	M	omega with s flourish
+v36mid_L05_s1	6	NEW	?	L	cross with 4/7-like stroke from top-left bar (like S56 without the 3)
+v36mid_L05_s1	7	S34	?	M	
+v36mid_L05_s1	8	S22	?	M	u-like wave with tilde
+v36mid_L05_s1	9	S32	?	M	3 with loop at top left
+v36mid_L05_s1	10	S40	?	M	x with loops
+v36mid_L05_s1	11	S24	?	L	hash sign
+v36mid_L05_s1	12	S80	?	M	8 with hat, struck
+v36mid_L05_s1	13	S65	?	M	8 with ornament
+v36mid_L05_s1	14	S74	?	M	
+v36mid_L05_s1	15	?	?	L	partial sign cut by page edge
+v36mid_L06_s1	1	?	?	L	vertical wavy stroke at left edge (probably descender of the line above)
+v36mid_L06_s1	2	S45	?	M	
+v36mid_L06_s1	3	S66	?	M	z with dot
+v36mid_L06_s1	4	S23	?	M	dotted lambda
+v36mid_L06_s1	5	S30	?	L	slanted divide with dot
+v36mid_L06_s1	6	S52	?	M	
+v36mid_L06_s1	7	S84	?	M	
+v36mid_L06_s1	8	S40	?	M	x with tail
+v36mid_L06_s1	9	S80	?	M	struck 8
+v36mid_L06_s1	10	S58	?	L	loop + j
+v36mid_L06_s1	11	S80	?	M	
+v36mid_L06_s1	12	S60	?	L	theta struck by bars
+v36mid_L06_s1	13	S75	?	M	
+v36mid_L06_s1	14	S57	?	M	large reversed c
+v36mid_L06_s1	15	S45	?	M	
+v36mid_L06_s1	16	S58	?	L	loop + j
+v36mid_L06_s1	17	S97	?	M	lambda without dots
+v36mid_L06_s1	18	S56	?	M	cross-stem + 3
+v36mid_L06_s1	19	S67	?	M	
+v36mid_L06_s1	20	S61	?	L	circle on stem, struck by the deletion line
+v36mid_L06_s1	21	S35	?	L	m struck out
+v36mid_L06_s1	22	?	?	L	g-like tail struck out at right edge (repeated at start of s2)
+v36mid_L06_s2	1	S73	?	M	cross with dot, struck
+v36mid_L06_s2	2	resumed after overlap m,g (struck)	?	M	
+v36mid_L06_s2	3	NEW	?	M	digit-like 7 (diagonal with top bar)
+v36mid_L06_s2	4	NEW	?	M	digit-like 4
+v36mid_L06_s2	5	S25	?	L	n with loop, struck by line
+v36mid_L06_s2	6	S80	?	M	8 with blob on top
+v36mid_L06_s2	7	S84	?	M	x with curl
+v36mid_L06_s2	8	S45	?	M	c with dot
+v36mid_L06_s2	9	S58	?	L	loop + j
+v36mid_L06_s2	10	S24	?	L	hash sign
+v36mid_L06_s2	11	S25	?	M	n with loop tail
+v36mid_L06_s2	12	S67	?	M	
+v36mid_L06_s2	13	S87	?	M	circle on stem with tick
+v36mid_L06_s2	14	ends with period	?	M	
+v36top_L01_s1	1	NEW	?	M	plain triangle with curl at top-left apex (like S16 without the X)
+v36top_L01_s1	2	glosses of this row cut off by crop top	?	M	
+v36top_L01_s1	3	S45	?	M	c with dot
+v36top_L01_s1	4	S60	?	M	theta struck by two bars
+v36top_L01_s1	5	S84	?	M	x with loop, struck
+v36top_L01_s1	6	S80	?	M	8 struck by bar
+v36top_L01_s1	7	S30	?	L	slanted divide with dot
+v36top_L01_s1	8	S89	?	H	
+v36top_L01_s1	9	S62	?	M	
+v36top_L01_s1	10	S30	?	L	
+v36top_L01_s1	11	S75	?	M	
+v36top_L01_s1	12	S66	?	M	z with dot
+v36top_L01_s1	13	S40	?	M	x with blob and tail
+v36top_L01_s1	14	S31	?	L	2 on long foot with dot
+v36top_L01_s1	15	S17	?	M	z with curl
+v36top_L01_s1	16	S13	?	M	o with dot
+v36top_L01_s1	17	S30	?	L	
+v36top_L01_s1	18	S70	?	M	struck
+v36top_L01_s1	19	S60	?	M	
+v36top_L01_s1	20	S87	?	M	circle on stem with tick
+v36top_L01_s1	21	S67	?	M	
+v36top_L01_s1	22	S25	?	M	n with loop tail (comma follows)
+v36top_L01_s1	23	S50	?	M	6 with s (s cut by crop end; s2 shows 6s); followed by comma
+v36top_L01_s2	1	S50	?	M	resumed after overlap n-loop,comma,6s
+v36top_L01_s2	2	comma follows	?	M	
+v36top_L01_s2	3	S87	?	M	circle on stem with tick
+v36top_L01_s2	4	S74	?	M	6 with top hook
+v36top_L01_s2	5	S25	?	M	
+v36top_L01_s2	6	S47	?	M	
+v36top_L01_s2	7	S45	?	M	c with dot
+v36top_L01_s2	8	S74	?	M	
+v36top_L01_s2	9	S93	?	M	omega with dot and s flourish
+v36top_L01_s2	10	S95	?	M	plain oval
+v36top_L01_s2	11	S24	?	L	hash sign
+v36top_L01_s2	12	S74	?	M	b with heavy blob
+v36top_L01_s2	13	S75	?	M	
+v36top_L01_s2	14	S74	?	M	
+v36top_L01_s2	15	S94	?	M	cross at base
+v36top_L01_s2	16	S52	?	M	
+v36top_L01_s2	17	S61	?	M	oval on stem, no dash
+v36top_L02_s1	1	S80	?	M	8 struck by bar
+v36top_L02_s1	2	S88	?	L	two bars with diagonal slash
+v36top_L02_s1	3	S24	?	L	two bars with vertical
+v36top_L02_s1	4	S89	?	H	
+v36top_L02_s1	5	S66	?	M	z with dot
+v36top_L02_s1	6	S58	?	L	loop + j
+v36top_L02_s1	7	S35	?	M	m with tick
+v36top_L02_s1	8	S20	?	M	d
+v36top_L02_s1	9	S47	?	M	
+v36top_L02_s1	10	S75	?	M	
+v36top_L02_s1	11	S74	?	M	blob top
+v36top_L02_s1	12	S53	?	M	
+v36top_L02_s1	13	S34	?	M	dotted lambda + s
+v36top_L02_s1	14	S22	?	M	u-like wave
+v36top_L02_s1	15	S24	?	L	two bars with vertical
+v36top_L02_s1	16	S74	?	M	
+v36top_L02_s1	17	S93	?	L	omega with s flourish
+v36top_L02_s1	18	S62	?	M	
+v36top_L02_s1	19	S30	?	L	slanted divide with dot
+v36top_L02_s1	20	S17	?	M	
+v36top_L02_s1	21	S87	?	M	circle on stem with tick
+v36top_L02_s2	1	NEW	?	M	short stem with dot above and hook at foot (i-like)
+v36top_L02_s2	2	resumed after overlap Z, circle-on-stem	?	M	
+v36top_L02_s2	3	S74	?	M	
+v36top_L02_s2	4	S25	?	M	n with loop tail
+v36top_L02_s2	5	S61	?	M	closed loop on stem (q)
+v36top_L02_s2	6	S80	?	M	8 with hat, struck
+v36top_L02_s2	7	S30	?	L	slanted divide with dot
+v36top_L02_s2	8	S62	?	M	
+v36top_L02_s2	9	S47	?	M	vertical epsilon
+v36top_L02_s2	10	S80	?	M	
+v36top_L02_s2	11	S58	?	L	x-like loop + y
+v36top_L02_s2	12	S24	?	L	two bars with vertical
+v36top_L02_s2	13	S57	?	M	
+v36top_L02_s2	14	S45	?	M	c with dot
+v36top_L02_s2	15	S56	?	L	cross + 3-like
+v36top_L02_s2	16	cut by crop bottom	?	M	
+v36top_L02_s2	17	S24	?	L	partial, cut by crop bottom and page edge
+v36top_L03_s1	1	S53	?	M	phi with dot above
+v36top_L03_s1	2	S24	?	L	two bars with vertical
+v36top_L03_s1	3	S31	?	L	2 on long foot with dot
+v36top_L03_s1	4	S93	?	M	omega
+v36top_L03_s1	5	S89	?	H	
+v36top_L03_s1	6	S80	?	M	8 with hat, struck
+v36top_L03_s1	7	S70	?	M	with dot
+v36top_L03_s1	8	S60	?	M	theta struck by bars with blob on top
+v36top_L03_s1	9	S42	?	L	plain x with dot at foot
+v36top_L03_s1	10	S24	?	L	two bars with vertical
+v36top_L03_s1	11	S80	?	M	8 with hat, struck
+v36top_L03_s1	12	S84	?	M	
+v36top_L03_s1	13	S87	?	M	circle on stem with tick
+v36top_L03_s1	14	comma follows	?	M	
+v36top_L03_s1	15	NEW	?	M	short stem with dot above and hook at foot (i-like)
+v36top_L03_s1	16	S52	?	M	3
+v36top_L03_s1	17	comma follows	?	M	
+v36top_L03_s1	18	S67	?	M	
+v36top_L03_s1	19	S25	?	M	n with loop tail
+v36top_L03_s1	20	S80	?	M	
+v36top_L03_s1	21	S84	?	M	
+v36top_L03_s1	22	S62	?	M	
+v36top_L03_s1	23	S56	?	M	cross-stem + 3
+v36top_L03_s1	24	S93	?	M	omega with flourish, at right end of s1
+v36top_L03_s2	1	S40	?	M	x with hook/tail
+v36top_L03_s2	2	resumed after overlap (dagger-3, omega with flourish)	?	M	
+v36top_L03_s2	3	S17	?	M	z with hook
+v36top_L03_s2	4	S75	?	M	
+v36top_L03_s2	5	S47	?	M	vertical epsilon
+v36top_L03_s2	6	S80	?	M	8 with hat
+v36top_L03_s2	7	S30	?	L	slanted divide with dot
+v36top_L03_s2	8	S24	?	L	two bars with vertical
+v36top_L03_s2	9	S37	?	M	tall o with curl on top
+v36top_L03_s2	10	S66	?	M	z with dot
+v36top_L03_s2	11	S74	?	M	blob top
+v36top_L03_s2	12	S57	?	M	large reversed c
+v36top_L03_s2	13	S52	?	M	flat 3 with bar
+v36top_L03_s2	14	S31	?	L	2 on long foot with dot
+v36top_L03_s2	15	S45	?	M	c with dot
+v36top_L03_s2	16	S95	?	M	plain oval
+v36top_L03_s2	17	S17	?	L	z partial at page edge
+v36top_L04_s1	1	S17	?	M	z with tail
+v36top_L04_s1	2	S47	?	M	epsilon with curl
+v36top_L04_s1	3	S89	?	H	
+v36top_L04_s1	4	S93	?	M	omega with left hook
+v36top_L04_s1	5	S47	?	M	epsilon joined to omega
+v36top_L04_s1	6	S23	?	M	dotted lambda
+v36top_L04_s1	7	S70	?	M	
+v36top_L04_s1	8	S95	?	M	slanted plain oval
+v36top_L04_s1	9	S17	?	M	
+v36top_L04_s1	10	S74	?	M	dot at left
+v36top_L04_s1	11	S93	?	M	omega with flourish
+v36top_L04_s1	12	S24	?	L	two bars with vertical
+v36top_L04_s1	13	S30	?	L	slanted divide with dot
+v36top_L04_s1	14	S52	?	M	
+v36top_L04_s1	15	S94	?	M	cross at foot (seen fully in v36top_L05_s1 top edge)
+v36top_L04_s1	16	S62	?	M	
+v36top_L04_s1	17	S60	?	M	theta struck by bars
+v36top_L04_s1	18	S24	?	L	two bars with vertical
+v36top_L04_s1	19	S84	?	M	
+v36top_L04_s1	20	S80	?	M	8 with hat, struck
+v36top_L04_s1	21	S65	?	M	8 with dot above
+v36top_L04_s1	22	S70	?	M	
+v36top_L04_s1	23	S65	?	L	8 with S-shaped top at right end
+v36top_L04_s2	1	S74	?	M	6 with hook at top
+v36top_L04_s2	2	resumed after overlap (dotted 8, forall, 8 with S-top)	?	M	
+v36top_L04_s2	3	S80	?	M	8 struck by bar
+v36top_L04_s2	4	S60	?	M	theta struck by bars with blob on top
+v36top_L04_s2	5	S75	?	M	
+v36top_L04_s2	6	NEW	?	M	short stem with dot above and hook at foot (i-like)
+v36top_L04_s2	7	S35	?	M	m
+v36top_L04_s2	8	S74	?	M	6 with heavy blob top
+v36top_L04_s2	9	S75	?	M	
+v36top_L04_s2	10	S94	?	L	oval on stem, cross cut off by crop bottom
+v36top_L04_s2	11	NEW	?	L	plain triangle with mark on apex (like S16 without X)
+v36top_L04_s2	12	S17	?	M	
+v36top_L04_s2	13	S88	?	L	two bars with diagonal
+v36top_L04_s2	14	S62	?	M	
+v36top_L04_s2	15	S89	?	M	bars cut by crop bottom
+v36top_L05_s1	1	S35	?	M	m with tick
+v36top_L05_s1	2	S31	?	L	2 with dot
+v36top_L05_s1	3	S70	?	M	struck by long line
+v36top_L05_s1	4	S60	?	M	theta struck by bars
+v36top_L05_s1	5	S89	?	H	
+v36top_L05_s1	6	S52	?	M	
+v36top_L05_s1	7	S30	?	L	slanted divide with dot
+v36top_L05_s1	8	S17	?	M	
+v36top_L05_s1	9	S75	?	M	
+v36top_L05_s1	10	S20	?	M	d
+v36top_L05_s1	11	S47	?	M	
+v36top_L05_s1	12	S80	?	M	8 struck by bar
+v36top_L05_s1	13	S35	?	M	m with tick
+v36top_L05_s1	14	S45	?	M	c with dot
+v36top_L05_s1	15	S84	?	M	
+v36top_L05_s1	16	S88	?	L	two bars with diagonal
+v36top_L05_s1	17	S60	?	M	
+v36top_L05_s1	18	S70	?	M	with dot
+v36top_L05_s1	19	S47	?	M	epsilon with hat
+v36top_L05_s1	20	S75	?	M	
+v36top_L05_s1	21	S75	?	M	
+v36top_L05_s1	22	S53	?	L	phi partial at right edge
+v36top_L05_s2	1	S42	?	L	plain x
+v36top_L05_s2	2	resumed after overlap (plus, plus, phi)	?	M	
+v36top_L05_s2	3	NEW	?	M	digit-like 7 (diagonal with top bar and hook)
+v36top_L05_s2	4	S74	?	M	large 6 with blob
+v36top_L05_s2	5	S70	?	M	with dot
+v36top_L05_s2	6	S13	?	M	tall oval with dot inside
+v36top_L05_s2	7	S30	?	L	slanted divide with dot
+v36top_L05_s2	8	S45	?	M	c with dot
+v36top_L05_s2	9	S65	?	M	8 with ornament at top
+v36top_L05_s2	10	S31	?	L	2 on foot with dot
+v36top_L05_s2	11	NEW	?	M	digit-like 7 with top bar
+v36top_L05_s2	12	NEW	?	L	U-shaped bowl with small hook at upper left
+v36top_L05_s2	13	NEW	?	L	plain triangle (like S16 without X)
+v36top_L05_s2	14	S80	?	M	8 struck by bar
+v36top_L05_s2	15	S60	?	M	theta struck by bars
+v36top_L05_s2	16	S94	?	L	oval on stem at right edge, cross cut off by crop bottom (seen in v36top_L06_s2)
+v36top_L06_s1	1	S93	?	M	omega with heavy blob on top
+v36top_L06_s1	2	S25	?	M	n with loop tail
+v36top_L06_s1	3	NEW	?	M	digit-like 2, no dot
+v36top_L06_s1	4	NEW	?	M	digit-like 7
+v36top_L06_s1	5	S67	?	M	f with top hook
+v36top_L06_s1	6	S52	?	M	3
+v36top_L06_s1	7	S88	?	L	two bars with slash
+v36top_L06_s1	8	NEW	?	L	circle with horizontal bar to the right, no stem
+v36top_L06_s1	9	NEW	?	M	digit-like 4
+v36top_L06_s1	10	NEW	?	M	digit-like 7
+v36top_L06_s1	11	S54	?	M	6 with bar over the top
+v36top_L06_s1	12	S25	?	M	n with loop tail
+v36top_L06_s1	13	S37	?	M	o with stem up and curl
+v36top_L06_s1	14	S62	?	M	
+v36top_L06_s1	15	S95	?	M	tall oval
+v36top_L06_s1	16	S75	?	M	
+v36top_L06_s1	17	S30	?	L	slanted divide with dot
+v36top_L06_s1	18	S70	?	M	
+v36top_L06_s1	19	S93	?	M	omega with tall flourish
+v36top_L06_s1	20	NEW	?	L	circle with horizontal bar to the right, no stem
+v36top_L06_s1	21	S54	?	M	6 with bar over the top, last sign before plaintext
+# no cipher row in r37_L02_s2, v36mid_L04_s2, v36top_L06_s2 (plaintext / partial upper line only)
