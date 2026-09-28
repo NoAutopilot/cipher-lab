@@ -8,10 +8,11 @@ HERE = Path(__file__).resolve().parent; REPO = HERE.parents[3]
 def load(*names):
     rows = {}
     for n in names:
+        if not (HERE / n).exists(): print(f"missing {n}", file=sys.stderr); continue
         for line in open(HERE / n, encoding="utf-8"):
             p = line.rstrip("\n").split("\t")
             if len(p) < 3 or not p[0].strip().isdigit(): continue
-            rows[int(p[0])] = p[2].split()
+            rows[int(p[0])] = " ".join(p[2:]).split()  # pass A files are tab-separated per token, pass B space-separated
     return rows
 A = load("passA_1-15.tsv", "passA_16-29.tsv"); B = load("passB_1-15.tsv", "passB_16-29.tsv")
 def glyphs(toks): return [t[1:] for t in toks if t.startswith("T")]
@@ -36,3 +37,23 @@ sa = [g for k in sorted(A) for g in glyphs(A[k])]; sb = [g for k in sorted(B) fo
 sm = difflib.SequenceMatcher(None, sa, sb, autojunk=False); print(f"pass A stream vs pass B stream: ratio {sm.ratio():.3f}")
 from collections import Counter
 print("type counts A:", sorted(Counter(sa).items(), key=lambda kv: -kv[1])[:12]); print("type counts B:", sorted(Counter(sb).items(), key=lambda kv: -kv[1])[:12]); print("type counts Tomokiyo:", sorted(Counter(tom).items(), key=lambda kv: -kv[1])[:12])
+
+# --- count-level agreement and positional confusion (crops where both readers found the same number of glyphs)
+eq = [k for k in sorted(set(A) & set(B)) if len(glyphs(A[k])) == len(glyphs(B[k]))]
+print(f"crops with equal glyph counts: {len(eq)}/{len(set(A) & set(B))}; count agreement within 1: "
+      f"{sum(abs(len(glyphs(A[k])) - len(glyphs(B[k]))) <= 1 for k in set(A) & set(B))}")
+conf = Counter(); same = tot = 0
+for k in eq:
+    for x, y in zip(glyphs(A[k]), glyphs(B[k])):
+        tot += 1
+        if x == y: same += 1
+        else: conf[tuple(sorted((x, y)))] += 1
+print(f"positional label agreement on equal-count crops: {same}/{tot} = {same/max(tot,1):.3f}")
+print("top confusions (unordered label pairs):", conf.most_common(15))
+# how concentrated are the confusions? a systematic near-duplicate pair shows as a few pairs carrying most mass
+m = sum(conf.values()); print(f"top 5 pairs carry {sum(c for _, c in conf.most_common(5))}/{m} of the disagreements")
+# per-crop glyph counts against Tomokiyo's 28 fragments (crops.tsv has 29 lines; identity by order, page 2 shifted by ARM-TR2)
+frag = [len(l.strip().split(";")) for l in open(REPO / "ciphers/armstrong-madison-1808/codex-2026-09-27b/glyphs.txt") if l.strip()]
+print("Tomokiyo fragment glyph counts:", frag)
+print("pass A per-crop counts:        ", [len(glyphs(A[k])) for k in sorted(A)])
+print("pass B per-crop counts:        ", [len(glyphs(B[k])) for k in sorted(B)])
