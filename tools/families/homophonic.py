@@ -26,7 +26,24 @@ per sign under a unit n-gram model (order param, default 2 for units: on a 48-un
 too sparse for the anneal to find the true key even when it scores it higher -- measured bMALN, clean N=1500 K=60:
 order 3 recovered 0.00-0.26, order 2 0.16-0.87 per restart; use --param iters=150000 and >= 8 restarts). The control is
 a unit window of N units under the same profile/noise options; recovery = share of unit positions read correctly.
-The target decode is written expanded back to letters (split_decode), so the judge reads ordinary text."""
+The target decode is written expanded back to letters (split_decode), so the judge reads ordinary text.
+
+merge=k nulls=p (H22, 28 Sept 2026, spinelli-beinecke-c1515): a "merged-symbol + nulls" design -- a substitution in
+which the signs of k plaintext letters have collapsed into ONE cipher symbol (a family of small hook shapes two blind
+readers cannot tell apart, or a table whose several letters share a sign) and a share p of the N cipher tokens are
+nulls drawn from `null_types` (default 6) null signs, carrying no letter. The control window is M = N - round(N*p)
+letters long (so the control's N is the target's N, nulls included); the k merged letters are the random k-subset
+of the window's own letters (2000 draws) whose combined share of the window is nearest `merge_share` (default: the
+target's own top sign count over its letter tokens, N - round(N*p) -- Spinelli: HOOK 54 of 218 = 0.248); the
+remaining letters get the remaining K - 1 - null_types signs by the ordinary at-least-one-then-largest-remainder
+allotment (ha.make_control's rule); nulls are placed at random positions and drawn uniformly over the null signs.
+The plain string returned carries '-' at null positions and score_recovery skips them, so recovery is the share of
+LETTER positions read correctly; the merged symbol can read at most one of its k letters right, so make_control
+prints the design's recovery ceiling (1 - (merged count - largest member count)/M) beside the merged letters --
+compare the control's recovery with that ceiling, not only with the gate. Must catch: a solver that reads a clean
+homophonic control but not this design (a control under the gate then says the design, not the length, is the
+limit -- rule 3's Salviati lesson). Must NOT change: merge=0 nulls=0 (or absent) is byte-for-byte the old
+behaviour (tools/tests/test_homophonic_merge.py checks both)."""
 import math
 import random
 import re
@@ -36,7 +53,8 @@ from collections import Counter
 
 DESCRIPTION = ("homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; "
                "--param profile=target matches the target's own sign-count profile; --param noise=p redraws a "
-               "share p of control tokens at the target's own type frequencies)")
+               "share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses "
+               "k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026)")
 
 
 SYL_DE = "und,der,die,das,sch,ein,ch,en,er,ei,ie,st,ge,be,in,an,te,de,nd,ss,ck,au,ng,re"
@@ -168,6 +186,14 @@ def make_control(spec, seed, corpora, params):
     if _is_units(params):
         return _make_control_units(corpora, N, K, seed, params)
     text = ha.fold("\n".join(corpora))
+    merge, nulls = int(params.get("merge", 0) or 0), float(params.get("nulls", 0) or 0)
+    if merge or nulls:
+        seq, plain, truth, info = _make_control_merged(text, N, K, seed, params, _target_sign_counts(params))
+        print("homophonic merge/nulls control (seed %d): merged letters %s (share %.3f of %d letter tokens), "
+              "%d null tokens over %d null signs, %d signs in all, recovery ceiling %.3f" % (
+                  seed, "".join(info["merged"]) or "-", info["merged_share"], info["M"], info["n_null"],
+                  info["null_types"], len(set(seq)), info["ceiling"]))
+        return [seq], plain, [info["rest"]]
     plain, rest = draw_window(text, N, seed, lambda w: len(set(w)) <= K)
     model = ha.Model([rest], _p(params, "order", 3))
     noise = float(params.get("noise", 0) or 0)
@@ -180,6 +206,70 @@ def make_control(spec, seed, corpora, params):
     if noise:
         seq = _inject_noise(seq, noise, target_counts, seed)
     return [seq], p, [rest]
+
+
+def _make_control_merged(text, N, K, seed, params, target_counts):
+    """merge=k nulls=p: see module docstring. Returns (seq of N tokens, plain of N chars with '-' at null
+    positions, truth sign -> letter or '-', info dict with merged letters, shares, ceiling and the training rest)."""
+    merge, nulls = int(params.get("merge", 0) or 0), float(params.get("nulls", 0) or 0)
+    null_types = int(params.get("null_types", 6) or 0) if nulls > 0 else 0
+    n_null = int(round(N * nulls)) if nulls > 0 else 0
+    M = N - n_null
+    if M < 10:
+        raise SystemExit(f"homophonic merge/nulls: nulls={nulls} leaves only {M} letter tokens of N={N}")
+    K_letters = K - (1 if merge else 0) - null_types
+    if K_letters < 1:
+        raise SystemExit(f"homophonic merge/nulls: K={K} too small for merge={merge} null_types={null_types}")
+    # the window's distinct letters, less the k merged into one sign, must fit the K_letters remaining signs
+    plain, rest = draw_window(text, M, seed, lambda w: len(set(w)) - max(0, merge - 1) <= K_letters)
+    rng = random.Random(seed + 4000)
+    cnt = Counter(plain)
+    letters = [a for a, _ in cnt.most_common()]
+    merged = []
+    if merge:
+        merge = min(merge, len(letters))
+        share = params.get("merge_share")
+        if share is None or share == "":
+            share = (target_counts[0] / M) if target_counts else None
+        else:
+            share = float(share)
+        best, best_d = None, None
+        for _ in range(2000):
+            sub = rng.sample(letters, merge)
+            if share is None:
+                best = sub
+                break
+            d = abs(sum(cnt[a] for a in sub) / M - share)
+            if best_d is None or d < best_d:
+                best, best_d = sub, d
+        merged = sorted(best)
+    others = [a for a in letters if a not in merged]
+    alloc = {a: 1 for a in others}
+    extra = K_letters - len(others)
+    while extra > 0 and others:
+        a = max(others, key=lambda a: cnt[a] / alloc[a])
+        alloc[a] += 1
+        extra -= 1
+    homs, i = {}, 0
+    for a in others:
+        homs[a] = [f"s{i + j}" for j in range(alloc[a])]
+        i += alloc[a]
+    for a in merged:
+        homs[a] = ["sM"]
+    letter_seq = [rng.choice(homs[a]) for a in plain]
+    null_labels = [f"n{j}" for j in range(null_types)]
+    seq, out_plain = list(letter_seq), list(plain)
+    if n_null:
+        for pos in sorted(rng.sample(range(N), n_null)):
+            seq.insert(pos, rng.choice(null_labels))
+            out_plain.insert(pos, "-")
+    truth = {s: a for a, ss in homs.items() for s in ss}
+    truth.update({n: "-" for n in null_labels})
+    merged_count = sum(cnt[a] for a in merged)
+    top_member = max((cnt[a] for a in merged), default=0)
+    info = {"merged": merged, "merged_share": merged_count / M if M else 0.0, "M": M, "n_null": n_null,
+            "null_types": null_types, "ceiling": 1.0 - (merged_count - top_member) / M, "rest": rest}
+    return seq, "".join(out_plain), truth, info
 
 
 def _make_control_units(corpora, N, K, seed, params):
@@ -263,5 +353,8 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
 
 
 def score_recovery(plain, truth):
-    n = max(1, len(truth))
-    return sum(1 for a, b in zip(plain, truth) if a == b) / n
+    """Share of positions read correctly; a '-' in truth marks a null token (merge/nulls control) and is skipped,
+    so the figure is over LETTER positions only."""
+    pairs = [(a, b) for a, b in zip(plain, truth) if b != "-"]
+    n = max(1, len(pairs))
+    return sum(1 for a, b in pairs if a == b) / n
