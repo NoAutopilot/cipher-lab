@@ -1,0 +1,93 @@
+frame	flag	note
+481	none	cover/1st page, address+date, clear prose
+482	none	clear prose, troop estimate "35,000" narrative
+483	none	clear prose
+484	none	blank cover margin + letter start, clear prose
+485	none	clear prose
+486	none	clear prose, troop estimate "20,000" narrative
+487	none	clear prose
+488	none	clear prose
+489	none	clear prose, troop figures 17,000/22,000/14,000 narrative
+490	none	printed Spanish gazette (Correo de Sevilla), clear prose
+491	none	printed pamphlet cover/title, mostly blank
+492	none	printed Spanish gazette, clear prose
+493	none	printed gazette, clear prose, imprenta closing
+494	none	manuscript letter to Garay, clear prose
+495	none	clear prose, duty-rate figures narrative
+496	none	blank left + translation letter, clear prose
+497	none	blank cover + closing signature
+498	none	cover "Dispatch No 81" blank + letter, clear prose
+499	none	clear prose
+500	none	clear prose
+501	none	clear prose
+502	none	clear prose
+503	none	clear prose, troop estimates 52,000/25,000 narrative
+504	none	clear prose, troop estimates 18,000/12,000-equipped narrative
+505	none	clear prose, troop counts 3000/1200 narrative
+506	none	clear prose, troop counts 300,000/150,000 narrative
+507	none	clear prose
+508	none	Spanish letter, clear prose
+509	none	blank left + Spanish prose letter
+510	none	blank left + Spanish prose letter
+511	none	cover note "Recd in Mr Erving's letter No 81", blank
+512	none	printed title page "La Junta Suprema...", mostly blank
+513	none	printed pamphlet "Espanoles:", clear prose
+514	none	printed pamphlet, clear prose
+515	none	printed pamphlet, clear prose
+516	none	printed pamphlet, clear prose
+517	none	printed pamphlet, clear prose
+518	none	printed pamphlet + closing signatures, clear prose
+519	none	blank left + printed Gazeta Extraordinaria, clear prose
+520	none	printed Gazeta de Madrid, clear prose
+521	none	printed gazette, clear prose
+522	none	printed gazette, clear prose w/ footnotes
+523	none	printed gazette, decree articles, clear prose
+524	none	printed gazette, military promotions/appointments list, clear prose
+525	none	printed gazette, legal/property notices w/ prices, clear prose
+526	none	printed French gazette, clear prose
+527	none	printed gazette, treaty articles, clear prose
+528	none	printed French gazette prose + printed public-debt payment schedule table (bureau letters A-Z, semester amounts); a genuine Tresor public finance table, not a cipher key
+529	none	cover "Dispatch No 81", blank
+530	none	printed pamphlet "Espanoles:", clear prose
+531	none	printed pamphlet, clear prose
+532	none	printed pamphlet, clear prose
+533	none	printed pamphlet, clear prose
+534	none	printed pamphlet, clear prose
+535	none	printed pamphlet + closing signatures, clear prose
+536	none	printed French gazette, clear prose
+537	none	printed Gazeta de Madrid, clear prose
+538	none	printed Suplemento gazette, clear prose
+539	none	printed Real Cedula (Almirantazgo), clear prose
+540	none	printed Real Cedula, closing "Madrid en la Imprenta Real"
+541	none	cover "Dispatch No 81", blank
+542	none	printed pamphlet "Espanoles:", clear prose
+543	none	printed pamphlet, clear prose
+544	none	printed pamphlet, clear prose
+545	none	printed pamphlet, clear prose
+546	none	printed pamphlet, clear prose
+547	none	printed pamphlet + closing signatures + Suplemento title
+548	none	printed Real Cedula, clear prose
+549	none	printed Real Cedula, closing
+550	none	printed title page "Real Cedula...Universidades", blank body
+551	none	printed royal decree opening "Don Carlos por la Gracia de Dios", clear prose
+552	none	printed decree prose + curriculum fee table (Plan de gramatica latina: subject/book/florins/reales), fee schedule not cipher key
+553	none	printed prose, curriculum explanation
+554	none	printed prose + fee table (Filosofia: subject/book/florins/reales)
+555	none	printed prose + fee table (Medicina)
+556	none	printed prose + fee table (Leyes)
+557	none	printed prose + fee table (Canones)
+558	none	printed prose + fee table (Derecho Canonico)
+559	none	printed prose + fee table (Teologia)
+560	none	printed prose, Reglas para ejecucion de planes
+561	none	printed prose, Reglas continued
+562	none	printed prose
+563	none	printed prose
+564	none	printed prose
+565	none	printed decree (Bloqueo) + closing signatures, clear prose
+566	none	manuscript letter (No 82, Cadiz Jany 25 1810), clear prose
+567	none	manuscript prose
+568	none	manuscript prose, troop estimates 40,000/28,000/22,000/1,000/57,000 narrative
+569	none	manuscript prose, troop estimates 25,000/30-40 thousand/2000 narrative
+570	none	manuscript prose
+m30-65	code	2nd page fragment ~mid-page, run of ~3 four-digit numbers embedded before "in a late conversation declared"
+m30-66	none	manuscript prose (Council/Sir George Prevost), clear
