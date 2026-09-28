@@ -3452,3 +3452,23 @@ neutral, 4STEM = p/c (-3) and above all EBR = l (-7) are contradicted.** The EBR
 EBR_A from EBR_B and coded every bracket EBR_B. v4's f.101r rows split them, with EBR_A reading s 18, l 13, a 8, so "l" is one form's
 value, not the class's. Conclusion for a verifier: f.176r's rows are a period key for Desportes's hand. Only VBAR_A's t, and HASH4's d/q
 (already H162), carry over to the Mayenne hands by this test. No class change, nothing merged.
+
+## Campaign step H180 (28 Sept 2026, 23:06-23:08 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- f.176r's brackets are form B (f.61's form): PASS
+
+Pre-registered in `scripts/H180_PROMPT.md` (bedd290e), with the design change logged before the call: fixed attributes, not a free
+grouping, because H178b's free sort grouped by hand. Tiles `images/h180/tiles.jpg` (`scripts/h180_tiles.py`, key `scripts/h180_key.tsv`):
+H22's blind bracket-sort anchors, form A 8 (hairline diagonal; f/s under Tomokiyo's letters, f.108) and form B 6 (plain squared C; l/y,
+every f.61 bracket), plus 12 f.176r brackets that both H177b passes code as a bracket (L13-L19). One Opus vision call, inline reply
+(`scripts/h180_reply.tsv`), asking per centre sign "diagonal from the top bar to the foot? yes/no/unclear".
+
+- **Control: 14/14 anchors right** (A yes 8/8, B no 6/6; gate >= 12).
+- **Target: 11 of 11 readable f.176r brackets "no" diagonal** (1 tile unclear, no bracket at its centre); gate >= 80% with >= 7 tiles:
+  **PASS -> form B.**
+
+Joined with the earlier steps: f.176r's form-B brackets read **l** in its period decipherment (H177b: l 43, a 5 of 55; the other
+letters 1 each). Under Tomokiyo's letters, H22 put f.61's form-B brackets in the l/y cell (4/4). H179's -7 on f.108r is the other form:
+f.108r's brackets are mostly form A (f/s, H22 A 6/6). So **for f.61's bracket form the period evidence now reads l** (partner y in the
+table), where v4's merged EBR row gives l/s/a. That bears on f.61's 4 two-way EBR tokens (v4 l/s/a), 3 of which H22 saw as form B; all
+of f.61's brackets are B. Scope: the form test used 11 tiles from rows L13-L19, while the letter count is over L01-L19 (every bracket there
+coded EBR_B by both readers). Two hands (Desportes; f.61's), one form, one cell: a verifier's question whether that licenses grading
+f.61's form-B brackets l at C. Not merged, no class change.

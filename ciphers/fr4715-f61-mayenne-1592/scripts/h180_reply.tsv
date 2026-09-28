@@ -1,0 +1,28 @@
+# H180 blind attribute reply (Opus vision, inline, verbatim); key in h180_key.tsv
+tile	diagonal	foot	note
+1	yes	yes	looks like a triangle
+2	yes	yes	looks like a triangle
+3	no	unclear	plain bracket followed by "ee"
+4	no	unclear	centre bracket is between an L-like sign and a phi
+5	unclear	unclear	no bracket at the centre, only loops
+6	yes	yes	blurred, looks like a triangle
+7	no	yes	plain bracket followed by a phi
+8	no	unclear	plain bracket followed by a phi
+9	yes	unclear	cut at the right edge
+10	yes	yes	blurred
+11	yes	yes	sign at lower right, with other strokes above it
+12	no	yes	foot runs out on both sides, like a plus-minus sign
+13	no	unclear	plain bracket among several brackets
+14	no	yes	plain bracket followed by a triangle
+15	no	unclear	left half blacked out, top bar long
+16	yes	yes	
+17	no	unclear	plain bracket followed by a phi
+18	no	unclear	plain bracket followed by a phi
+19	no	yes	plain bracket followed by a phi
+20	no	yes	foot runs out on both sides, like a plus-minus sign
+21	no	no	top bar long and curved
+22	no	unclear	plain bracket followed by "ee"
+23	no	unclear	top and foot about equal
+24	no	unclear	Gamma-like sign followed by a Lambda-like sign
+25	no	yes	foot runs out on both sides, like a plus-minus sign
+26	yes	yes	blurred
