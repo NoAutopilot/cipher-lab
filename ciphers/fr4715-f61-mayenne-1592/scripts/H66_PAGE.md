@@ -130,6 +130,13 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - For the verifier: whether a Desportes-hand period reading (VBAR_A t, form-B bracket l) may grade f.61's tokens of the same atlas class
   (two hands, one table). Nothing merged into v4; no class change.
 
+- **At f.61's own positions (H181, H182):** f.176r's period letters equal Tomokiyo's letters at every position of the checked classes
+  inside his spans: VBAR_A t 4/4, form-B bracket l 3/3 (`family/h181_f61_positions.py`); and ZHOOK, unread under v4, whose period letter
+  from f.176r is i (agreed 23/46, split 35/48), equals his i/j at 10/10 ZHOOK positions on f.61 (3) and f.108r (7) (`family/h182_zhook.py`;
+  test key with ZHOOK i/x: f.61 50/55). Caveats: the VBAR_A boundary on f.61 was set partly on his letters (H13/H15); his i's come from
+  his own table; the ZHOOK glyph link across hands failed a blind tile gate (H178b). CROSS, CA and LL are dashes in his reading (no letter
+  to check); f.176r's 4STEM/4PI p/c do not carry over (H179, H182 addendum).
+
 ## Files to read
 
 | what | path | step |
