@@ -1309,3 +1309,26 @@ after which the same drag runs as a key test rather than a pattern search.
 **Controls:** the two control families above and the tool's synthetic positive/negative test. **Files:**
 `tools/partial_key_test.py`, `tools/tests/test_partial_key_test.py`, SYSTEM.md. **Cost:** CPU only (seconds) --
 recorded as 1.0 USD (the est). No vision calls, no requests, no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H17 (28 Sept 2026, 03:59-04:00 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H17: the pool access request, sized by H22/H26.
+
+**Done: `REQUEST.md` written and ASKS.md row 87 filed.** Route found on Yale's own pages (3 requests this step,
+collections not touched): the finding aid (p. 13) says reproductions are ordered by email to beinecke.images@yale.edu
+with call number, box and folder numbers; Yale Library's "Request Digitization" page (library.yale.edu, read 28 Sept
+2026) says the digitization service is **free of charge**, **up to 4 folders per request** for unbound documents,
+**TIFF 400-600 ppi or PDF 300 ppi**, MASV delivery, **10-14 weeks**, no rush orders, requested through Archives at
+Yale's Request button ("Request Digitization" in the unsubmitted-requests list). The order: b. 126 f. 2560-65 (Piero,
+30 letters, 90 pp., "part in cipher", 1514-26) first, then f. 2571-87 (Tommaso's 1510-1522 letters) in four-folder
+batches, TIFF, every leaf. The request quotes the numbers that size it (single letter 0.12-0.20 on the design-matched
+control vs 0.6; the design reads at about 2,000 signs, noisily) and promises nothing about a reading.
+
+**Status of the campaign after this step:** every cheap route on the single letter is closed with a control
+(solver: H22/H25/H27/H30; crib: H28/H31; transcription: rebuilt at 93% pair agreement, H29b/H29c/H30); the open rows
+are the pool (this request, needs: person), H26b (firming the pool-length figure, CPU), H21 (same-hand plaintext
+corpus, useful only once there is something to judge), and the document branches (Domnina's Fig.1: H6/H8; H9 the
+JSTOR row). No reading, no class change, rule 10 wording.
+
+**Cost:** 3 network requests (library.yale.edu, beinecke.library.yale.edu; 2 s apart), no vision calls, no
+credentials -- recorded as 0.5 USD (the est). No AskUserQuestion, no other target touched.
