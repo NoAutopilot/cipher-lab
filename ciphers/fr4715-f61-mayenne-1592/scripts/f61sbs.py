@@ -25,7 +25,7 @@ import csv, difflib, itertools, json, math, os, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); TGT = os.path.dirname(HERE); FAM = f"{TGT}/family"
 LEAVES = [("f101r", "3982_f101r.jpg"), ("f274", "3984_f274r.jpg"), ("f188r", "3984_f188r.jpg")]
-LETS = ("o", "e"); CLS = "PHI"; STRAT = False; MINN = 30; LENMATCH = False; RX, RY = 30, (-15, 45)   # re-centring window (H65-H69); H70 narrows it (--rc)
+LETS = ("o", "e"); CLS = "PHI"; STRAT = False; MINN = 30; LENMATCH = False; RX, RY = 30, (-15, 45); THR = 140   # re-centring window (H65-H69); H70 narrows it (--rc)
 def rows(p): return list(csv.DictReader(open(p), delimiter="\t"))
 def tokens(leaf):
     al = rows(f"{FAM}/passes/{leaf}_align.tsv"); dr = rows(f"{FAM}/passes/rec{leaf}/ciphertext_draft.tsv")
@@ -64,7 +64,7 @@ def cut(pick, native, tag, keyname, sheet_name="sbs_sheet"):
         sc, up, down = bj["scale"], bj["up"], bj["down"]; cx = box[0] + x / sc; cy = box[1] + up
         img = ims.setdefault(lf, Image.open(f"{native}/{dict(LEAVES)[lf]}").convert("RGB"))
         import numpy as np   # re-centre on the heaviest ink row within +-45 px of the band centre, x +-30 (rows drift down the page)
-        g = np.asarray(img.crop((int(cx - RX), int(cy + RY[0]), int(cx + RX), int(cy + RY[1]))).convert("L")); pr = np.convolve((g < 140).sum(axis=1), np.ones(9) / 9, "same")
+        g = np.asarray(img.crop((int(cx - RX), int(cy + RY[0]), int(cx + RX), int(cy + RY[1]))).convert("L")); pr = np.convolve((g < THR).sum(axis=1), np.ones(9) / 9, "same")
         cy = cy + RY[0] + int(pr.argmax())
         t = img.crop((int(cx - 55), int(cy - 40), int(cx + 55), int(cy + 55))).resize((330, 285))
         d = ImageDraw.Draw(t); d.line([(165, 0), (165, 14)], fill=(220, 0, 0), width=3); d.line([(165, t.height - 14), (165, t.height)], fill=(220, 0, 0), width=3)
@@ -214,7 +214,52 @@ def score_pair(tag, path):
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt)
+def build_h89(native):
+    """H89 (pre-registered with its prompt, scripts/PROMPTS.md 'H89'): f.274 only, --len-match; family P = PHI under o
+    (all matched) vs as many PHI under e; family V = VBAR_A under s vs t, as many of each as the smaller; seed 89; one
+    shuffled tile run; key scripts/f61pair_h89_tiles.tsv with a 'family' column; each family scored alone (score_h89)."""
+    global LETS, CLS, LENMATCH, RX, RY, THR
+    LENMATCH = True; rng = random.Random(89); pick, fam = [], {}
+    RX, RY, THR = 25, (-60, 60), 80   # f.274's larger, heavier cipher hand: a wide window on dark ink only (the gloss is lighter);
+                                       # chosen by eye on three trial cuts (runner only, never shown to a reader) before the call
+    for f, cls, ga, gb in (("P", "PHI", ("o",), ("e",)), ("V", "VBAR_A", ("s",), ("t",))):
+        CLS = cls; LETS = ga + gb; t = tokens("f274"); A = [x for x in t if x[3] in ga]; B = [x for x in t if x[3] in gb]
+        n = min(len(A), len(B)); sel = rng.sample(A, n) + rng.sample(B, n); pick += sel
+        for x in sel: fam[x] = (f, "A" if x[3] in ga else "B")
+    rng.shuffle(pick); cut(pick, native, "h89", "f61pair_h89_tiles.tsv", "pair_sheet")
+    k = f"{HERE}/f61pair_h89_tiles.tsv"; rs = rows(k); byt = {(r["leaf"], r["line"], int(r["draft_pos"])): r for r in rs}
+    with open(k, "w") as f:
+        f.write("tile\tleaf\tline\tdraft_pos\tperiod_letter\tsegment\tx_px\tfamily\tset\n")
+        for x in pick:
+            r = byt[(x[0], x[1], x[2])]; f.write("\t".join(r[c] for c in ("tile", "leaf", "line", "draft_pos", "period_letter", "segment", "x_px")) + "\t" + "\t".join(fam[x]) + "\n")
+def score_h89(path):
+    """Each family alone: best group-to-set match over that family's scored tiles; exact null over all C(n, k) label
+    arrangements; p95 of the exact distribution; gate P < 0.05 and observed > p95, at least 12 scored."""
+    key = {int(r["tile"]): r for r in rows(f"{HERE}/f61pair_h89_tiles.tsv")}
+    got = list(csv.DictReader((l for l in open(f"{HERE}/{path}") if not l.startswith("#")), delimiter="\t")); out = [f"{path}: {len(got)} rows; {len(key)} tiles"]
+    def st(gr, lb):
+        gs = sorted(set(gr)); return max(sum(1 for g, l in zip(gr, lb) if dict(zip(gs, ls))[g] == l) for ls in itertools.product("AB", repeat=len(gs)))
+    for F, name in (("P", "PHI o vs e (SBS)"), ("V", "VBAR_A s vs t")):
+        G, L, tab = [], [], defaultdict(lambda: defaultdict(int))
+        for r in got:
+            k = key.get(int(r["tile"])); g = r["group"].strip()
+            if k is None or k["family"] != F: continue
+            if g.lower() in ("", "none", "-", "x"): out.append(f"  [{F}] tile {r['tile']} ({k['period_letter']}): not scored"); continue
+            G.append(g); L.append(k["set"]); tab[g][k["period_letter"]] += 1
+        out.append(f"family {F} ({name}): " + "; ".join(f"group {g}: " + ", ".join(f"{l} {v}" for l, v in sorted(tab[g].items())) for g in sorted(tab)))
+        n = len(L); k_ = L.count("B")
+        if n < 12: out.append(f"  scored {n} < 12: NON-TEST"); out.append(f"GATE H89{F}: FAIL (non-test)"); continue
+        obs = st(G, L); ex = sorted(st(G, ["B" if i in c else "A" for i in range(n)]) for c in itertools.combinations(range(n), k_))
+        p = sum(v >= obs for v in ex) / len(ex); p95 = ex[int(0.95 * len(ex)) - 1]
+        out.append(f"  scored {n} (A {n - k_}, B {k_}); observed {obs}/{n}; exact P = {p:.4f} over {len(ex)}; p95 {p95}/{n}")
+        out.append(f"GATE H89{F}: {'PASS' if obs > p95 and p < 0.05 else 'FAIL'}")
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61pair_h89_result.txt"
+    if "--check" in sys.argv:
+        ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
+    open(res, "w").write(txt); print(txt)
 if __name__ == "__main__":
+    if sys.argv[1] == "build-h89": build_h89(sys.argv[2]); sys.exit(0)
+    if sys.argv[1] == "score-h89": score_h89(sys.argv[2]); sys.exit(0)
     if "--rc" in sys.argv:   # --rc RX,RY0,RY1
         v = [int(x) for x in sys.argv.pop(sys.argv.index("--rc") + 1).split(",")]; sys.argv.remove("--rc"); RX, RY = v[0], (v[1], v[2])
     if sys.argv[1] == "build-pair":   # build-pair NATIVE CLASS a,n c,p SEED TAG
