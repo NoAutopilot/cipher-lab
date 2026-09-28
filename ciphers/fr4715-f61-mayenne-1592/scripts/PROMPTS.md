@@ -138,3 +138,5 @@ For each set, resolve every line into the most plausible French text you can (on
 Report ONLY a TSV block with the header label score_0_10 reading and one row per set, in label order SET-01 .. SET-21, where "reading" is your resolved text for the six lines joined with " | " in line order. Nothing else.
 
 Gate (pre-registered, CAMPAIGN.md H25): the target ranks 1 of 21 in ALL THREE calls, ties counted against it (p about 1e-4 under the null); one miss retires the judge as a gate for this cipher and leaves the fragment's letters M. Only on a PASS are the same three calls made on the unmarked lines (build unmarked with the same seeds).
+
+Amendment before any H25 call (28 Sept 2026, after H26/H51): the three set files were rebuilt with `--h26-split` (the loop family split by H26's blind sort: L07/7 and the f.61 DBL signs render as [b/o] under the target map, DBL leaves the cell list, SBS = b/o takes its place among the nine permuted cells); the prompt text is unchanged and the target's label per file was re-drawn by the same seeds. Recorded here before the calls.

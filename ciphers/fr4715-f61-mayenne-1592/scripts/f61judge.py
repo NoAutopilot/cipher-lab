@@ -30,17 +30,28 @@ def read_pass(path):
 # one decimal (the audit found the H16 result files rounded 2.5 to 2; the committed H16 files are not rewritten).
 def opt(name, default):
     return int(sys.argv[sys.argv.index(name) + 1]) if name in sys.argv else default
+# --h26-split (H25 prep, 28 Sept 2026): the loop family split by H26's blind sort -- every group-G2 sign and every f.61 DBL
+# becomes SBS with the cell b/o (scripts/f61qo2.py's relabel), DBL leaves the cell list; without the flag H16's sets are
+# reproduced byte for byte.
+SPLIT = "--h26-split" in sys.argv
+CELLS_SPLIT = {k: v for k, v in CELLS.items() if k != "DBL"}; CELLS_SPLIT["SBS"] = "b/o"
 def maps(perm_seed=1):
-    labs = sorted(CELLS); base = {l: CELLS[l] for l in labs}
+    C = CELLS_SPLIT if SPLIT else CELLS
+    labs = sorted(C); base = {l: C[l] for l in labs}
     rng = random.Random(perm_seed); out = [base]
     for _ in range(20):
-        v = [CELLS[l] for l in labs]; rng.shuffle(v); out.append(dict(zip(labs, v)))
+        v = [C[l] for l in labs]; rng.shuffle(v); out.append(dict(zip(labs, v)))
     return out
 def render(lines, cmap):
     return {line: " ".join(f"[{cmap[c]}]" for c in seq if c in cmap) for line, seq in lines.items()}
 def build(tag):
     src = f"{HERE}/passA_classes.tsv" if tag == "known" else f"{HERE}/read_call_U.tsv"
     lines = read_pass(src); ps, os_ = opt("--perm-seed", 1), opt("--order-seed", 7); ms = maps(ps)
+    if SPLIT:
+        import f61qo2
+        for line, seq in lines.items():
+            for j, c in enumerate(seq):
+                if c in ("PHI", "DBL") and (f61qo2.G.get((line, j + 1)) == "G2" or c == "DBL"): seq[j] = "SBS"
     order = list(range(21)); random.Random(os_).shuffle(order)
     if ps != 1 or os_ != 7: tag = f"{tag}_s{ps}" if ps == os_ else f"{tag}_p{ps}o{os_}"
     key = {}; txt = []
@@ -49,7 +60,7 @@ def build(tag):
         txt.append(f"== {lab}")
         for line, r in render(lines, ms[mi]).items(): txt.append(f"{line}: {r}")
     open(f"{HERE}/f61judge_{tag}_sets.txt", "w").write("\n".join(txt) + "\n")
-    json.dump({"tag": tag, "source": os.path.basename(src), "key": key, "maps": ms}, open(f"{HERE}/f61judge_{tag}_key.json", "w"), indent=1)
+    json.dump({"tag": tag, "source": os.path.basename(src), "key": key, "maps": ms, "h26_split": SPLIT}, open(f"{HERE}/f61judge_{tag}_key.json", "w"), indent=1)
     print(f"wrote f61judge_{tag}_sets.txt ({len(order)} sets) and the withheld key")
 def score(tag):
     key = json.load(open(f"{HERE}/f61judge_{tag}_key.json"))["key"]
