@@ -1,0 +1,7 @@
+read_call_H70.tsv: 40 rows; 40 tiles
+  tile 15 (f101r s): not scored
+  group A: set A 4, set B 11  (f101r:A 4, f101r:B 11, let:s 4, let:t 11)
+  group B: set A 14, set B 4  (f101r:A 14, f101r:B 4, let:s 14, let:t 4)
+  group C: set A 1, set B 5  (f101r:A 1, f101r:B 5, let:s 1, let:t 5)
+scored 39 (A 19, B 20); groups 3; observed 30/39; permutation P = 0.0025 over 2000 (seed 1); p95 27/39
+GATE: PASS

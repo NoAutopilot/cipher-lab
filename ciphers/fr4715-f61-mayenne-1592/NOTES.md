@@ -1795,3 +1795,34 @@ Reader's criterion verbatim: "the groups split by where the right-hand element a
 small closed triangle on the stem below the crossbar; B has a tall, mostly open hook hanging from the crossbar's right
 end; C has an open r/7 stroke beside the 4 at crossbar height with nothing on the lower stem; D has a closed round loop
 at crossbar height."
+
+## Campaign step H70 (28 Sept 2026, 15:00-15:12 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+F61-CAL's open data conflict (the 'V with bar' class takes s and t, which the table splits across its f/s and g/t
+columns) against a period gloss. Design pre-registered and pushed d9b432c7 before the call: `scripts/f61sbs.py
+build-pair NATIVE VBAR_A s t 70 h70 20 --rc 20,-20,30` -- the f.101r readers' VBAR_A tokens under a period s (55
+matched) or t (88), 20 + 20 (f.188r gives none: its readers already code s as VBAR_B), 40 tiles `images/h70/`, key
+`scripts/f61pair_h70_tiles.tsv`; the re-centring window was narrowed after a first cut (looked at by the runner,
+discarded, never shown to a reader) caught gloss rows; H65-H69's builds are unchanged (default window; H65 rebuilt
+byte-identical). Triangle prompt in `scripts/PROMPTS.md` "H70"; one blind Opus vision call. Tile 15 none.
+
+| reader's group | s | t |
+|---|---|---|
+| B second lower stroke from the point, running right (Z-like) | 14 | 4 |
+| A short top bar only | 4 | 11 |
+| C top bar only, drawn long past the right side | 1 | 5 |
+
+Scored 39: observed 30/39, permutation P = 0.0025, p95 27/39 -> **GATE PASS** (`scripts/f61pair_h70_result.txt`,
+`--check` OK); margin thinner than H65/H67/H69 (3 over p95). One hand only (f.101r). What it licenses: in f.101r's
+hand the period decipherer writes s mostly under the triangle with a second stroke at its point and t under the
+triangle with a top bar only -- the same A/B split H15 found on f.61 from Tomokiyo's letters (B = s, A = t, 7/7) and the
+atlas's own VBAR_A/VBAR_B wording, which f.188r's readers applied and f.101r's merged. F61-CAL's s/t conflict reads as a
+glyph merge by the readers, consistent with the table's two columns, now with a period-gloss attestation in one further
+hand (grade C for the split on f.101r; f.61's own split stays at its H15 grade). Eight of 39 misfit (4 s under A, 4 t
+under B), which a reader who draws the lower stroke faintly, or a gloss alignment slip, would produce. No reading, no
+class change; nothing solved, new or first.
+
+Reader's criterion verbatim: "group B has a second, lower horizontal stroke leaving the triangle's point and running
+right (a Z-like form); group C has only a top bar, drawn long past the right side of the triangle; group A has only a
+short top bar with no long rightward extension (the A/C boundary is a matter of degree and less secure than the B
+distinction)."
