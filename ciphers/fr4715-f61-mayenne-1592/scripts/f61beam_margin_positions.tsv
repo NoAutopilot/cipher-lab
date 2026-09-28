@@ -1,0 +1,60 @@
+line	pos	set	beam	margin	span	true
+L01	3	a/n	n	0.3157	S1	a
+L01	5	e/r	e	1.5757	S1	e
+L01	6	c/p/t	t	0.1845	S1	c
+L01	9	e/r	e	0.0915		
+L01	10	t/s	t	0.0576		
+L01	11	d/q/i	i	0.1442		
+L01	12	d/a/q/n	n	0.1287		
+L02	1	e/r	e	0.0		
+L02	2	e/q/i/p/r/s/t	e	0.0		
+L03	4	e/r	e	0.2325	S2	e
+L03	6	t/s	t	0.2325	S2	t
+L03	7	c/p/t	p	0.2325	S2	c
+L03	8	a/n	a	2.2012	S2	a
+L03	10	c/p/t	c	0.0	S2	p
+L03	13	a/n	a	0.0	S2	a
+L03	14	o/b/e	o	0.0	S2	b
+L03	15	l/s/a	l	0.0	S2	l
+L04	2	e/q/i/p/r/s/t	e	0.0		
+L05	1	q/s	s	0.666		
+L05	2	e/m	m	0.0286		
+L05	3	t/s	t	0.1013	S3	t
+L05	4	e/r	e	0.0286	S3	r
+L05	5	o/b/e	e	0.2888	S3	o
+L05	6	c/p/t	t	0.0286	S3	p
+L05	9	a/n	n	0.0643	S3	a
+L05	11	a/n	n	0.4705	S3	a
+L05	13	a/n	n	0.4161	S3	n
+L05	14	c/p/t	t	0.4161	S3	c
+L05	15	e/r	e	0.4161	S3	e
+L05	17	e/r	e	0.0	S3	e
+L07	4	m/s	m	0.0434	S4a	
+L07	5	l/s/a	l	0.0434	S4a	l
+L07	7	o/b/e	o	0.2596	S4a	o
+L08	1	e/r	e	0.3262	S4b	e
+L08	2	a/n	a	0.3262	S4b	a
+L08	5	o/b/e	e	1.1815	S4b	b
+L08	6	e/r	e	2.1493	S4b	e
+L08	7	a/n	n	1.1815	S4b	a
+L08	11	c/p/t	c	0.1097	S4b	p
+L08	12	e/r	r	0.1097	S4b	e
+L08	13	e/r	r	0.8115	S4b	r
+L08	14	e/r	e	0.72	S4b	e
+L10	1	l/s/a	l	0.0		
+L10	3	e/r	r	0.0119		
+L10	4	t/s	t	0.2714		
+L10	5	e/r	r	1.5398		
+L10	6	o/b/e	e	1.9871		
+L10	11	o/b/e	o	0.0		
+L11	1	m/s	m	0.2218	S5	m
+L11	2	e/r	r	0.0942	S5	e
+L11	3	l/s/a	a	0.0942	S5	l
+L11	4	e/r	e	2.3928	S5	e
+L11	5	a/n	n	1.1185	S5	n
+L11	6	t/s	t	1.7139	S5	t
+L11	7	e/r	e	0.1142	S5	e
+L11	8	n/a/c/e	n	0.1142		
+L11	9	d/a/q/n	d	1.0359	S5	n
+L11	10	o/b/e	e	0.6337	S5	o
+L11	12	t/s	t	0.0	S5	t

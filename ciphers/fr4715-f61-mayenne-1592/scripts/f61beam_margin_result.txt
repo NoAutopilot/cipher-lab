@@ -1,0 +1,7 @@
+set positions 59; with a known letter in the set 42; overall beam accuracy on them 23/42
+fold S1: no tau on the training spans; held-out 3 not scored
+fold S2: no tau on the training spans; held-out 8 not scored
+fold S3: tau 1.576; held-out above tau 0/0 (of 10)
+fold S4a+S4b: tau 1.119; held-out above tau 1/3 (of 11)
+fold S5: no tau on the training spans; held-out 10 not scored
+GATE H117 (pooled held-out >= 0.85 on >= 8): 1/3 = 0.333 -> FAIL

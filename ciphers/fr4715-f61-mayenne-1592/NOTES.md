@@ -2527,3 +2527,18 @@ Caveats for the verifier: the 14 cells were fitted partly on these very spans (f
 (ii) tests anything; (ii) is the beam's own choice between the two letters of a cell and uses no span letter. 49 positions:
 the accuracy's 95% interval is roughly 0.64-0.87. This licenses the beam as a grading aid for two-way choices at about three
 right in four on text of this kind -- it does not by itself read any unmarked passage. No reading, no class change.
+
+## Campaign step H117 (28 Sept 2026, 18:12-18:14 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_margin.py` (design and gate in its docstring, pushed 3450e76d before the run; `f61beam_margin_result.txt`,
+per-position `f61beam_margin_positions.tsv`). The H116 beam applied to f.61r in VERIFY-F61-V4's two-way form under key v4
+(sets of 2-7 letters, lines cut at the unread <CLASS> signs), margin per position, leave-one-span-out calibration.
+
+- 59 set positions (the audit's 59); 42 carry a Tomokiyo letter inside the set; **beam right on 23/42 = 0.548**.
+- Calibration: three of five folds find no margin threshold at 90% on their training spans; the other two score 1/3
+  held out. **GATE H117 (>= 0.85 on >= 8 held out): FAIL (1/3)**; nothing is applied outside the spans.
+
+So H116's 0.776 does not carry over to key v4's two-way form: there the beam is near chance. Two differences, not separated
+here: v4's sets are wider (up to seven letters, e.g. [e/q/i/p/r/s/t]) than the 14-cell pairs, and cutting each line at its
+unread signs leaves segments of two to six letters, too short for a 4-gram model to choose within. The two-way choices on
+f.61r stay unmade by any controlled instrument (AUDIT.md sec. 6 item 1 unchanged). No reading, no class change.
