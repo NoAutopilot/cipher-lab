@@ -50,7 +50,7 @@ def words(path):
         x0 = int(r["x0_px"]) / sc + (segx(f"{pre}_{r['line']}_{seg}.jpg") - bands["region"][0])
         # f.101r (F61-FAMILY-2, 28 Sept 2026): the decipherer's long dashes are listed by the gloss passes as kind = dash
         # (word '-'); they carry no letters and are dropped here (they sit over signs the decipherer left unread or over nulls)
-        if r["kind"].strip().lower() == "dash" or r["word"].strip() in ("-", "--", "\u2014", "_"): continue
+        if r["kind"].strip().lower() == "dash" or r["word"].strip() in ("-", "--", "\u2014", "_") or r["word"].strip().endswith("_struck"): continue   # _struck: a word the decipherer crossed out (pass D, chunk 3)
         out[r["line"]].append({"w": r["word"].strip(), "kind": r["kind"], "conf": r["conf"], "x0": x0})
     return out
 gloss = {}; gstat = Counter()
