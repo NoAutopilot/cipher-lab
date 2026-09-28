@@ -1,0 +1,93 @@
+frame	flag	note
+301	blank	end of printed pamphlet page, mostly blank
+302	none	handwritten letter (Cevallos to Erving), clear prose, only docket "No 12"
+303	none	printed title page "Real Provision del Consejo", clear prose
+304	none	printed text, clear prose
+305	none	printed text, clear prose
+306	none	printed text, clear prose
+307	none	printed text, clear prose
+308	none	printed text, clear prose
+309	none	printed text, clear prose
+310	none	printed text (signature list) + blank verso, clear prose
+311	none	blank recto + handwritten letter (Erving to Madison, Cadiz Jan 1 1809), clear prose
+312	none	letter continued, clear prose
+313	none	letter continued, closing signature, clear prose
+314	none	letter (Yrnady appointing Hackley), clear prose
+315	none	"Article of agreement" letter, clear prose
+316	none	agreement continued, clear prose
+317	none	agreement continued, clear prose
+318	none	agreement continued, dollar figures (ordinary salary/allowance sums) in running prose, clear prose
+319	none	agreement continued + letter, clear prose
+320	none	duplicate of 319, clear prose
+321	none	letter closing + letter to Erving, clear prose
+322	none	docket/address panel (blank) + a financial account/ledger page with dollar-figure columns; ordinary money sums, not run-in numeral cipher
+323	none	closing signature block (Madison) + letter, clear prose
+324	none	letter to Madison, clear prose
+325	none	letter (Erving to Madison, Cadiz Jan 9 1809), clear prose
+326	none	letter continued + No.60 letter to Madison, clear prose
+327	none	letter continued, clear prose
+328	none	letter continued, clear prose
+329	none	letter continued + postscript, clear prose
+330	none	blank leaf + copy letter (No.1 to Cevallos), clear prose
+331	none	faint memo list of enclosure numbers with plain dates (1. Nov 14 1808; 2. Dec 23 1808; 3. Jan 2 1809) + copy letter (No.2 to Cevallos); dispatch/date references, not cipher
+332	none	copy letter No.3 (Spanish), clear prose
+333	none	copy letter No.4 (Garay), clear prose
+334	none	blank/signature panel + No.5 unofficial letter, clear prose
+335	none	No.63 letter to Madison; ordinary dollar sums (1400, 500, 700, 1260) named in prose about bills of exchange, not cipher
+336	none	letter continued + Spanish list of Consejo de Regencia members' names, clear prose
+337	none	Spanish text continued + closing, clear prose
+338	none	No.64 letter to Madison, clear prose
+339	none	letter continued, clear prose
+340	none	letter continued, signature Erving, clear prose
+341	none	blank leaf + copy letter (Garay, Sevilla 12 Feb 1809), clear prose
+342	none	copy letter (Garay, Sevilla 20 Feb 1809), clear prose
+343	none	letter to Secretary of State, faint but clear prose
+344	none	letter continued, faint microfilm, appears clear prose (partly hard to read)
+345	none	letter continued, faint, clear prose
+346	none	letter continued, faint, clear prose
+347	none	letter with eagle seal + continuation, faint, clear prose
+348	none	letter continued, faint, clear prose
+349	none	letter continued, faint, clear prose
+350	none	letter continued, faint, clear prose
+351	none	letter with eagle seal + continuation, faint, clear prose
+352	none	letter continued, faint, clear prose
+353	none	letter closing (Erving) with ordinary dollar figures (bill amounts) + short note, clear prose
+354	blank	"Deposited March 1809" docket note, mostly blank with a short annotation
+355	none	"Copy, correspondence with Mr de Heredia" letter, clear prose
+356	none	letter continued + second letter (Heredia), clear prose
+357	none	letter continued (Erving), clear prose
+358	none	letter continued + copy/translation letter from Heredia, clear prose
+359	none	letter continued (Heredia) + Feb 18 1809 letter, clear prose
+360	none	No.14 letter (Heredia) + March 1809 letter, clear prose
+361	none	blank/address panel + short dispatch note (No.17), clear prose
+362	none	Spanish decree text (Junta Gubernativa) listing ship names (Monk, Aurora, etc.) released; ship names, not code, clear prose
+363	none	decree text continued, clear prose
+364	none	letter (Garay, re Florida conduct), clear prose
+365	none	postscript letter (Erving), clear prose
+366	none	letter continued, mostly blank page with signature "GWE", clear prose
+367	none	letter (Garay, Foreign Affairs) + eagle seal, faint, clear prose
+368	none	letter continued (faint) + blank eagle-seal panel, clear prose
+369	none	letter continued, faint, clear prose
+370	none	short note, mostly blank, faint, clear prose
+371	none	No.3 letter (Spanish, re Comandante de Marina de la Habana), clear prose
+372	none	Spanish text continued + No.4 draft letter to Garay (English), clear prose
+373	none	letter continued (English), clear prose
+374	none	blank leaf + No.5 letter (Spanish, Garay), clear prose
+375	none	No.6 letter (Erving to Garay), clear prose
+376	none	printed "Gazeta del Gobierno" No.9, clear prose (printed gazette)
+377	none	printed gazette continued (España/Francia news), clear prose
+378	none	printed gazette continued (Sevilla news), clear prose
+379	none	printed gazette continued, clear prose
+380	none	copy No.7 letter (Spanish, Garay), clear prose
+381	none	letter with eagle seal, faint, clear prose
+382	none	No.9 copy letter + "Answer" copy letter, clear prose
+383	none	letter continued + No.10 copy letter (Garay), clear prose
+384	none	letter continued (faint) + March 9 1809 letter (Erving), clear prose
+385	none	No.11 letter (Garay) + printed certification (Jones), clear prose
+386	none	printed "BANDO" proclamation (Felix Jones), clear prose
+387	none	printed "EDICTO" proclamation (Felix Jones), clear prose
+388	none	printed "Junta Central Suprema del Reyno al Pueblo de Cadiz", clear prose
+389	none	French letter "Monsieur le Ministre des Affaires Etrangeres...", clear prose
+390	none	copy letter re Don Estevan de Madrid (English), clear prose
+m30-65	code	mid-page in a sentence re a "late conversation", a run of ~4 numbers (each 3-4 digits, e.g. ~150, 1779, 1023, 1058) embedded in the prose; second page-panel on same frame is clear prose
+m30-66	none	letter continued from 65 + further letter pages, clear prose, no embedded numeral runs seen
