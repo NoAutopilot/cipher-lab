@@ -2,11 +2,7 @@ target: armstrong-madison-1808
 goal: a verified reading of the Armstrong-to-Madison, 20 February 1808 letter at N3 or better after two audits
 started: 2026-09-27 20:31 UTC
 daily_budget_usd: 400
-<<<<<<< Updated upstream
-spent_today_usd: 265.11
-=======
-spent_today_usd: 264.61
->>>>>>> Stashed changes
+spent_today_usd: 265.61
 spent_day: 2026-09-28
 closed:
 
@@ -229,3 +225,4 @@ UTC), all reported UNSOLVED, none redone by this seed:
 2026-09-28 15:19 UTC | session_01BuquErzUYdSB116KPAM8qh | H62 | 0.5 | done: search result, nothing retained in the LOC Jefferson Papers.
 2026-09-28 15:19 UTC | session_01BuquErzUYdSB116KPAM8qh | H63 | 0 | done: covered by line B's Founders read. H61 next.
 2026-09-28 15:20 UTC | session_01BuquErzUYdSB116KPAM8qh | H61 | 0.5 | done: transcription right, page-2 crop files off by one line (seven of nine). No runnable row left; the target is waiting on ASKS 84-86, 90-92 and the U.Va./Brant rows.
+2026-09-28 15:21 UTC | session_01BuquErzUYdSB116KPAM8qh | fix | 0 | conflict markers removed from the header: the orchestrator's 15:20 check-in commit (c68889bc) left '<<<<<<< Updated upstream / 265.11 / 264.61' in spent_today_usd; kept its reconciled 264.61 plus this runner's two spends since (H62 0.5, H61 0.5) = 265.61.
