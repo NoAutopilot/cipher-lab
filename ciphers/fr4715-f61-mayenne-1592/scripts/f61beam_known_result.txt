@@ -1,0 +1,4 @@
+aligned known letters 54; covered with the true letter in the pair 49
+(ii) beam choice accuracy 38/49 = 0.776; always-first-letter 29/49 = 0.592; chance 0.5
+(i) letters matched: fitted 38; permuted median 2, p95 12, max 20 (200 maps, seed 116; positions from the fitted alignment)
+GATE H116 ((ii) >= 0.75 and (i) > p95): PASS

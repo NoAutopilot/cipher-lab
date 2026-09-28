@@ -2510,3 +2510,20 @@ H113 18/26) on the same question, each for a different control-side reason; by C
 paragraph the loop relabel of f.108r L04-L06 is logged **untested by this tile classification**, not re-briefed a third
 time. What would settle it is a different instrument or material: the person's gloss (ASKS 88) gives o/b vs e/r directly
 under each sign. No reading, no class change.
+
+## Campaign step H116 (28 Sept 2026, 18:09-18:11 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_known.py` (method and gate in its docstring, pushed e9fd8d73 before the run; `f61beam_known_result.txt`,
+`--check` fresh). The H114/H115 4-gram beam's within-pair letter choices scored against Tomokiyo's known span letters on
+f.61r (the known_h51 lines, 14-cell map; markup placed by F61-CAL's DP).
+
+- 54 known letters aligned; 49 on covered signs whose pair contains the true letter.
+- **Choice accuracy 38/49 = 0.776** (always the pair's first letter 29/49 = 0.592; chance 0.5, one-sided binomial P about
+  5e-5 against 0.5).
+- Letters matched: fitted map 38 vs 200 permuted maps median 2, p95 12, max 20.
+- **GATE H116 (>= 0.75 and > p95): PASS.**
+
+Caveats for the verifier: the 14 cells were fitted partly on these very spans (f61joint_h51_map), so (i) is circular and only
+(ii) tests anything; (ii) is the beam's own choice between the two letters of a cell and uses no span letter. 49 positions:
+the accuracy's 95% interval is roughly 0.64-0.87. This licenses the beam as a grading aid for two-way choices at about three
+right in four on text of this kind -- it does not by itself read any unmarked passage. No reading, no class change.
