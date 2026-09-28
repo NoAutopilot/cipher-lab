@@ -3043,3 +3043,12 @@ signs) by sequence gain, 30 bootstrap resamples of the leaf's lines. **i/x beats
 each -> i/x CONFIRMED against all four.** The held f.108v alignment's a/e/u reading of this sign (the H44-era note) does not
 fit the text; Tomokiyo's i/x (from his markup and his f.108r reprint) does, on a leaf he did not mark. Model-free support for
 a published value, not a period attestation. No reading, no class change.
+
+## Campaign step H156 (28 Sept 2026, finished 19:53 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), diagnostic
+
+Per f.108v row of the H59 draft (`family/passes/f108v3z_draft_reconciled.tsv`): signs 41-47, grade H 7-11 / M 28-35 / L 1-6,
+reconciled columns 13-19, uncovered 2-7, SBS 0-3. The three rows at chance under f.61's cells (H155: L02, L05, L07) are **not
+distinguished by transcription grade, reconciled share or coverage**: L05 has the fewest L columns (2) and uncovered signs (2)
+of all seven; only L02 carries more HASH4 (4, dropped by the map) than the rest. So the weak rows are not a re-read target on
+this evidence; the likelier causes (proper names, figures or code words inside the enciphered stretch, or single-row noise at
+about 40 signs) cannot be told apart without the gloss (ASKS 89). No reading, no class change.
