@@ -292,3 +292,10 @@ The readers' word files are kept (`passes/f124s_letters*_c0.tsv`, `passes/f124s_
 used by nothing. What would settle it: a person's reading of six f.124r rows as a known-answer control (H46 option b), against
 which a reader's word list can be scored before any further gloss call; or a 4x recut of the gloss row alone with a word-level
 gate -- not a third pass at the same 3x segments (CLAUDE.md rule 3, the "same knob" lesson).
+
+f.97r (H47, same job): signs read, gloss not. 42 cipher rows recut by `chain_rows.py` (rows chained per segment column
+after the fixed-centre and --track cuts drifted on this leaf's curving rows), two blind Opus sign passes per chunk, 2,485
+signs at 73.2% agreement (`passes/recf97r/`), under v3 covered 0.970 / firm 0.091. Rare classes on the leaf: 20 of 2,424
+(CA 8, CROSS 7, LOOPBAR 3, ZHOOK 1, LL 1); the family census (`rare_contexts.tsv`, seven leaves) is 98: CA 31, ZHOOK 35,
+CROSS 15, LOOPBAR 14, LL 3, of which f.61r alone carries 20 of its 99 signs. De Diou's two leaves therefore add no period
+reading for the five classes even if their gloss were read: they hardly use them.

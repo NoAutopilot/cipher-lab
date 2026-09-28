@@ -1411,3 +1411,39 @@ not reached, the every-class condition unchanged); v3 stands at 511 pairs / 24 c
 vision). Untestable [by blind model readers at 2x-3x] on this hand, not refuted: what would settle it is a known answer --
 a person's reading of six f.124r rows (H46 option b) against which a reader's word list is scored before any further
 call, or a period gloss in a clearer hand for the same signs; not a further pass at the same segments (CLAUDE.md rule 3).
+
+## Campaign step H47 (2026-09-28 04:4x-05:2x UTC) -- fr.3982 f.97r: signs read on de Diou's second leaf, gloss not read (F61-FAMILY-5)
+
+Same worker as H46. **Cut.** 42 cipher rows between native y 621 and 5031 (region 880,560,3450,4540). The first cut
+(`cut_bands.py`, ink-weight centres plus three hand inserts, `--track 18`, sheets/f97r, bands.json committed) let the
+rising-then-falling rows drift out of the s3-s5 windows on the lower two thirds of the leaf (both readers of chunks 3-5
+reported windows one row off and duplicate crops; the brief's error, not the readers'), so the leaf was recut by
+`family/chain_rows.py` (rows detected per segment column from the ink-weight profile and chained by continuity, 43 bands,
+two of them extrapolated phantoms) into sheets/f97r3 (bands.json, debug overlay and one sample committed; regen line in
+MANIFEST.tsv), and the two bands the chain lost (L22, L31) were cut with hand-set per-segment centres (sheets/f97r4,
+committed). **Passes.** Two blind Opus sign passes per chunk of 8 bands with the f.101r atlas unchanged (the f.124r sign
+template with the leaf description swapped, `passes/PROMPTS_f124r_gloss.md` "f.97r sign passes"; exact texts
+`passes/prompts_f5/`): chunks 1-2 on the first cut (L01-L16), chunks 3-7 on the recut (L17-L43; the first cut's chunk
+3-5 files kept as `*_cut1.tsv`, superseded). Reconciled by `undec_pipeline.py` (a later chunk's rows replace an earlier
+chunk's for the same band): **2,485 signs, 1,820/2,485 aligned columns identical = 73.2%** (L17-L32 of the recut 72-93%;
+L01-L16 57-83%, the 4TRI/4STEM/C43 split of f.101r again; L34, L35, L38, L41, L43 under 70% where the chain still shared
+a row between two bands -- `passes/f97r_drop.tsv` holds L35/L38/L43 s3-s5 out). One caveat on blindness: the chunk-3
+pass-A reader reported that a concurrent pass overwrote its draft files in the shared scratchpad and rebuilt its rows
+privately; the two passes of a chunk run at the same time, so this is logged as a possible leak between passes, not
+ruled out. `passes/recf97r/ciphertext_draft.tsv`; inventory PHI 634, 4TRI 348, LOOPS 308, VBAR_A 233, H24 196, EBR_B 167,
+4STEM 106, ZBAR 67, BETA 65, HASH4 63, VBAR_B 52, EBR_A 48.
+
+**Under v3, no refit** (`decode_leaf_period.py f97r --key key_period_v3.tsv --frac 0.1 --drop passes/f97r_drop.tsv`,
+`family/f97r_decode_period_v3.txt`): 2,424 signs, covered 0.970, firm 0.091 (C 7, C+ 214, M 2,130, unread 73) -- the same
+polyphonic skeleton as f.124r (0.939) and f.61. **Rare classes on f.97r: 20 of 2,424 signs** -- CA 8, CROSS 7, LOOPBAR 3,
+ZHOOK 1, LL 1 (`family/rare_contexts.tsv`, rebuilt by `rare_classes.py contexts` with f.97r added): de Diou's second leaf
+does not write f.61's five uncovered classes either. Across every leaf read (f.61r, f.108r, f.101r, f.188r, f.108v, f.124r,
+f.97r) the census is now 98 occurrences: CA 31, ZHOOK 35, CROSS 15, LOOPBAR 14, LL 3 -- on f.61r 20 of 99 signs, on every
+other leaf 0.3-2%. **Gloss:** not read (H47's own condition, "gloss passes only with whichever H46 recipe clears 60%":
+neither form did), so no `key_period_f97.tsv`, no v4, not reading-ready. Calls this job: 24 vision (4 gloss-recipe control,
+20 sign passes), 0 text; Gallica 2 requests. Family folder size: the tracked family/ tree was 41 MB before this job (over
+the 30 MB line already); this job adds about 3 MB (control segments, bands and samples), the 20 MB of f97r/f97r3 crops are
+not committed (regen lines in MANIFEST.tsv). What would settle f.97r's gloss: the same known-answer control as f.124r
+(H53). What the census says for the blocker: the five classes are f.61r's own, rare on every sibling (0.3-2%), so a period
+gloss over them will come from f.61r-like density only on f.108r/f.108v (ZHOOK 27 there, gloss held at 3x) or from a shape
+identification against the covered classes (H43), not from more de Diou leaves.
