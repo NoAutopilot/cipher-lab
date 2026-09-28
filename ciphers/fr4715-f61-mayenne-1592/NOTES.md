@@ -2983,3 +2983,8 @@ So the text does not want v4's third letters: three of the five widenings are re
 (H145) come from its frac-0.1 admission rule letting in period letters that are gloss-alignment noise or reader coding merges,
 which is why the within-set choice on v4 failed (H117/H141). For the family worker: evidence to keep these classes at two
 letters in a key v5. No reading, no class change.
+
+## Campaign step H149 (28 Sept 2026, 19:32 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
+
+`family/PROPOSAL_H146.md`: candidate edits for a key v5 with their evidence (H119, H129, H132, H142, H146, H147, H148),
+for the family worker to weigh; nothing applied to KEY.md or any key file. No new claim.
