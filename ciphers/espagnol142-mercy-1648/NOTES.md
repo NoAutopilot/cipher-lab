@@ -2045,3 +2045,15 @@ aligns, so this is logged as no candidate, and the rule's gap is noted -- a list
 example most letters of the word agreeing), which H41's Burgsdorf (7 of 9 letters, no mismatch) met and this does not.
 v04 may not begin a word, or "por su" may not be the phrase boundary; the stretch stays unread. No token, grade or
 class change.
+
+## Campaign step H47 (2026-09-28 15:59-15:59 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** A given name before the Burgsdorf candidate? The tokens ending at r16:15 read
+"...y e o n e o p ? r a d l o n". List built before scoring (`h47/given.py` -> `h47/namelist.tsv`): 217 words standing
+before "von <Name>" in Urkunden Bd. 4-5 (mostly given names -- Iohann, Conrad, Friedrich, Moritz, Wilhelm -- with some
+nouns), each fitted as "X" and "X de" ending at r16:15, H41's scorer. Best: **"anton", 3 letters agree and 2 disagree
+(fit +1)**; then garnison 0, the rest below. The pre-registered rule (unique best, P < 0.05, >= 60% of letters
+agreeing, at most one mismatch) is **not met**. Conrad fits badly in every form (conrad / conrad de / conrado: 0 letters
+agreeing; conrado de: 3 agree, 4 disagree). So the words before the name are not his given name in any form the list
+holds; the stretch before "burgs" stays unread, and the H41 name candidate neither gains nor loses. `h47/result.log`.
+No token, grade or class change.
