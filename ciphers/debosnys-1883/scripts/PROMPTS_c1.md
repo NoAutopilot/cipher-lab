@@ -57,3 +57,14 @@ pass (pass E) on the 16 crops with the same prompt as H2's readers. Rule: label 
 confidence is H, else M; K's id kept in `alt`; E's MULTI / `_` verdict stands (segmentation). The rows are appended to
 glyphs/box_labels.tsv as page c4a, line 0 (sids c4a_00_NNN, source `eye:h7-c4a0|knn:<K id>`), and lines.tsv gets
 c4a_L00; scripts/gold4c_inventory.py then rebuilds passA.tsv and ciphertext_draft.tsv from box_labels.tsv as before.
+
+## H21 (28 Sept 2026, written before pass B landed and before any disputed crop was cut): cryptogram 2
+
+Pass B: five value-blind Sonnet calls on the numbered line strips of c2a (17 lines) and c2b (9 lines) rendered by
+`tools/glyph_atlas.py classify --strips` (2x copies), against the inventory tiles, box counts per line given in the
+brief; never a pass file. Reconciliation: by position (both passes read the same boxes), disputed = positions where
+passA.tsv and pass B differ. Third pass C: value-blind Fable calls on per-sign 6x crops of the disputed positions
+only (scripts/h21_pipeline.py crops, about 15 crops per call, the H2 prompt). Adjudication: the H2 rule (rules 1-7 of
+this file's first section) applied to c2, with the same numbers reported; gate 80 pct full id over the 734 boxes
+licenses writing the cryptogram 2 sections of ciphertext.txt in inventory ids. A pass-B line whose row count differs
+from the box count is realigned by position from the left and flagged; nothing is read.
