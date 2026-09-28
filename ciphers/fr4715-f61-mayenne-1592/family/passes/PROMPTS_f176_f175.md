@@ -75,3 +75,8 @@ top to bottom; a line cut at a strip's top or bottom edge is skipped there (it a
 appears whole in two strips is written once. Letter by letter, period spelling, abbreviations not expanded (superscripts as '^'), '?' for
 an illegible letter, [brackets] for an uncertain word; ignore marginal notes left of the text block. Reply inline ONLY with a TSV block,
 header 'line<TAB>text<TAB>conf', lines numbered V01, V02, ... in reading order. Nothing else."
+
+## H177b stage 2d (runner 6, 28 Sept 2026) -- WRITTEN BEFORE THE CALLS
+3 Opus vision calls, inline replies written verbatim: passes A/B of f.176r L41-L47 (stage 2a prompt; L47 is the short last row) and a read
+of fol. 177v strips 5-8 (stage 2c strip prompt, strips 05-08, lines numbered V15, V16, ... continuing, and the first line of strip 05
+skipped if it repeats V14) -> `passes/f177v_clearA_S05-S08.tsv`. Then build_f176_key.py L01-L47 (the whole of f.176r).
