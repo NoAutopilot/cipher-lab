@@ -1,0 +1,2 @@
+2026-09-28T04:47:04Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059406b/f195/1250,450,3600,900/full/0/native.jpg	503	299	8d4297d99520825f3012334e6d30613b6d2df462	images/src_ark_12148_btv1b9059406b_f195_1250_450_3600_900.jpg
+2026-09-28T04:47:56Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9059406b/f195/1250,450,3600,900/full/0/native.jpg	000			images/src_ark_12148_btv1b9059406b_f195_1250_450_3600_900.jpg	retry 1 after 503

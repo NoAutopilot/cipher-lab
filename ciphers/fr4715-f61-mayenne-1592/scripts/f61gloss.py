@@ -56,16 +56,47 @@ def reconcile_gloss(A, B, out):
     return rec
 def signs(pa, pb, out, tag):
     d = tempfile.mkdtemp(prefix=f"f61gloss_{tag}_")
-    r = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", f"{HERE}/{pa}", f"{HERE}/{pb}", "--out-dir", d, "--method", "nw"], capture_output=True, text=True)
+    r = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", os.path.join(HERE, pa), os.path.join(HERE, pb), "--out-dir", d, "--method", "nw"], capture_output=True, text=True)
     if r.returncode: raise SystemExit(r.stdout + r.stderr)
     out.append(f"  signs {tag}: " + " | ".join(l for l in r.stdout.strip().splitlines() if l.startswith("lines")))
     seq = defaultdict(list)
     for row in csv.DictReader(open(f"{d}/ciphertext_draft.tsv"), delimiter="\t"): seq[row["line"]].append(row["sign"])
     return seq
+# H34 (28 Sept 2026, runner session_01J8hunWPcE7QYcpCx59CUHV): options for a re-cut of the same leaf; with none of them the
+# H21 run above is reproduced byte for byte (--check). --gloss A B: two gloss pass files (long format: line pos kind word
+# conf segment x0_px x1_px, the family's template; 'line' = band id); --signs A B: two sign pass files covering every band
+# (line pos sign conf segment x_px note); --bands L01,...: the band ids; --tag NAME: result -> f61gloss_NAME_result.txt,
+# counts -> f61gloss_NAME_counts.tsv (never a keys/ file: a PASS still writes to scripts/ and is offered, not merged).
+def opt(name, default=None):
+    if name not in sys.argv: return default
+    v = sys.argv[sys.argv.index(name) + 1:]; return v[:2] if name in ("--gloss", "--signs") else v[0]
+def gloss_long(path):
+    """the family's gloss template (line pos kind word conf segment x0_px x1_px): gloss and dash rows, inline skipped."""
+    by = defaultdict(list)
+    for r in csv.DictReader((l for l in open(path) if not l.startswith("#")), delimiter="\t"):
+        if r.get("kind", "gloss").strip().lower() == "inline": continue
+        w = r["word"].strip()
+        if not w or w == "?": continue
+        seg = int(re.sub(r"\D", "", r["segment"]) or 0)
+        by[r["line"].strip()].append((seg, float(r["x0_px"] or 0), w, r["conf"]))
+    return {b: sorted(v) for b, v in by.items()}
 def main():
-    out = ["H21: period gloss on fr.3983 f.108r aligned to the atlas-coded signs"]
-    rec = reconcile_gloss(gloss("gloss108A.tsv"), gloss("gloss108B.tsv"), out)
-    seq = signs("pass108A_classes.tsv", "pass108B_classes.tsv", out, "L02-L03"); seq.update(signs("pass108C_classes.tsv", "pass108D_classes.tsv", out, "L05-L07"))
+    global BANDS
+    tag = opt("--tag")
+    if tag:
+        BANDS = opt("--bands", ",".join(BANDS)).split(",")
+        ga, gb = opt("--gloss"); sa, sb = opt("--signs")
+        out = [f"H34 ({tag}): period gloss on fr.3983 f.108r (family cut) aligned to the atlas-coded signs; gloss {os.path.basename(ga)} + {os.path.basename(gb)}, signs {os.path.basename(sa)} + {os.path.basename(sb)}"]
+        rec = reconcile_gloss(gloss_long(ga), gloss_long(gb), out)
+        seq = signs(os.path.relpath(sa, HERE), os.path.relpath(sb, HERE), out, "all bands")
+        # per-unit agreement figures (the family's H29 gates: signs >= 0.80 identical columns, gloss words >= 0.50 both passes)
+        nb = sum(1 for b in BANDS for _ in rec.get(b, [])); both = sum(1 for b in BANDS for _, g in rec.get(b, []) if g == "C-C")
+        A = gloss_long(ga); B = gloss_long(gb); na = sum(len(A.get(b, [])) for b in BANDS); nbb = sum(len(B.get(b, [])) for b in BANDS)
+        out.append(f"  gloss word agreement: {both} words in both passes of A {na} / B {nbb} -> {2*both/max(1,na+nbb):.3f} (family gate 0.50); kept for alignment {nb} (both + one-pass)")
+    else:
+        out = ["H21: period gloss on fr.3983 f.108r aligned to the atlas-coded signs"]
+        rec = reconcile_gloss(gloss("gloss108A.tsv"), gloss("gloss108B.tsv"), out)
+        seq = signs("pass108A_classes.tsv", "pass108B_classes.tsv", out, "L02-L03"); seq.update(signs("pass108C_classes.tsv", "pass108D_classes.tsv", out, "L05-L07"))
     d = tempfile.mkdtemp(prefix="f61gloss_align_"); pairs = f"{d}/pairs.tsv"
     with open(pairs, "w") as f:
         w = csv.writer(f, delimiter="\t", lineterminator="\n"); w.writerow(["plain_line", "plain_raw", "cipher_line", "cipher_raw"])
@@ -79,7 +110,7 @@ def main():
     # guard added after the first run (28 Sept 01:1x): the counts go to scripts/f61gloss_counts.tsv; keys/key_f108_gloss.tsv is
     # written only when the gate below passes, so a failed run never leaves a file that looks like a key.
     passed = all((lambda cnt: bool([l for l, _ in cnt.most_common(2)]) and all(l in cell.split("/") for l, _ in cnt.most_common(2) if len(l) == 1))(counts.get(c, Counter())) for c, cell in NINE.items())
-    keypath = f"{HERE}/../keys/key_f108_gloss.tsv" if passed else f"{HERE}/f61gloss_counts.tsv"
+    keypath = (f"{HERE}/f61gloss_{tag}_counts.tsv" if tag else (f"{HERE}/../keys/key_f108_gloss.tsv" if passed else f"{HERE}/f61gloss_counts.tsv"))
     with open(keypath, "w") as f:
         f.write("# key_f108_gloss.tsv -- campaign H21, 28 Sept 2026. Key source: period (rule 10 vocabulary). Every (class, letter) pair is read\n# from the contemporary interlinear decipherment on BnF fr.3983 f.108r (two Sonnet gloss passes reconciled, two Opus sign\n# passes per band reconciled, tools/interlinear_align.py), grade C for the pair; no cryptanalysis, no refit. Classes are\n# scripts/f61_atlas.tsv codes (EBR is the pre-split code where a band's passes predate H22).\nclass\tletters\tn\tbands\n")
         for c, cnt in sorted(counts.items(), key=lambda kv: -sum(kv[1].values())):
@@ -94,7 +125,7 @@ def main():
     new = {c: cnt for c, cnt in counts.items() if c not in NINE and sum(n for l, n in cnt.items() if l in "dqmz" or len(l) > 1) >= 2}
     out.append("new cells/word codes with 2+ counts: " + (" ".join(f"{c}:" + " ".join(f"{l}:{n}" for l, n in cnt.most_common(3)) for c, cnt in new.items()) or "none"))
     out.append(f"GATE H21: nine cells {'all agree' if all(ok for *_, ok in agree) else 'NOT all agree'}; new material {'yes' if new else 'no'} -> {'PASS' if all(ok for *_, ok in agree) and new else 'FAIL'}")
-    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61gloss_result.txt"
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61gloss_{tag}_result.txt" if tag else f"{HERE}/f61gloss_result.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt, end="")
