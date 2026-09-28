@@ -703,3 +703,95 @@ Files: `harvest/f35/` (passA, passB, passC + agreement/disagreements, adjudicate
 `harvest/ciphertext_f35.tsv`, `reading_f35.txt`, `reading_f35_tokens.tsv`, `reading_f35_letters.txt`,
 `harvest/key_extra.tsv`, `decode.json` (job f35). Requests: gallica.bnf.fr 0 (HARVEST-D's images). Subagents: 4
 (two blind passes, one adjudication, one blind reader), all Sonnet, no credentials, no AskUserQuestion.
+
+## HARVEST-D2: f.21v (no.11, Saluzzo 12 Oct 1570) decoded with the printed key (PARENT WORKER HARVEST-D2, 28 Sept 2026)
+
+Same brief, same intake as the f.35 section above (HARVEST-C's search log, 28 Sept 2026; not found-solved). No class, no
+status change here; rule 10 wording only.
+
+**Material.** HARVEST-D's native region `harvest/f21v/c23_cipher_w.jpg` (canvas 23, left page = f.21v), no new Gallica
+request. Eleven lines from the line after "quattro motti ... alla sua uenuta" to the line ending "Io Resto in pena per";
+prose and cipher alternate on six of them, so the passages are L01, L02.1, L02.2, L03, L04, L05, L06.1, L06.2, L07, L08.1,
+L08.2, L09, L10, L11 (the prose between runs is named in `blind_pass_brief.md`'s per-line layout given to the readers).
+Crops: `lines2x/`, flat bands (this page's lines are straight; 33 crops), read at 2x.
+
+**Blind transcription.** Two Sonnet passes per half (L01-L06: `f21v/passA_L01-06.tsv`, `passB_L01-06.tsv`, 160 signs
+each; L07-L11: `passA_L07-11.tsv`, `passB_L07-11.tsv`, 107 each), value-blind, off-sheet ids allowed. **Value-blind
+reconciliation** (`reconcile_blind.py`): 133 of 160 aligned positions agreed on the first half (0.83), 94 of 107 on
+the second (0.88); 40 splits, none settled by confidence, all sent to a third blind Sonnet reader per half
+(`adjudicate_in/out_L01-06.tsv`, `_L07-11.tsv`). The splits were systematic look-alike pairs, and the adjudicator
+decided them from the ink: the barred 8 (14 positions, all S80 -- the bar is there), the L-with-dot (5, all S10), the
+slash between dots (4, S49, no crossing bar), the small dotted caret against the plain lambda (5, S23), theta with one
+bar or two (S69 x3, S13, X_THETA2), and single cases. Final `f21v/passC.tsv`: 267 signs, of which 8 X_THETA2
+(double-barred oval), 7 X_POUND, 5 X_NEW (an "L-like 1 with a dot" three times, a reversed 3 with a dot, a barred u), 0
+'?'. This worker saw no value during the merge.
+
+**Decode** (`tools/decode_key.py`, job f21v: `key_f11.tsv` + `key_extra.tsv` [X_THETA2 = r, S, fr.3252 witness] +
+`exceptions_f21v.tsv` [X_POUND = l at the 7 positions, grade I]; `--check` passes). Tokens 267: H 0, C 0, S 179, M 76,
+I 7, U 5. S = printed value with both blind passes at H and agreeing; M = a pass at M/L or an adjudicated position; I =
+the pound sign; U = X_NEW.
+
+```
+f21v L01   | lesacardahenensedeltuttodaemee[et]etcinre
+f21v L02.1 | uptnedilort
+f21v L02.2 | ha
+f21v L03   | ranseintencionemoptaquestacaricasadiqua
+f21v L04   | credolenesinersuad
+f21v L05   | ciolnoserlimlcederuiuendoetseruend
+f21v L06.1 | io
+f21v L06.2 | auanfarminoraog
+f21v L07   | ranoreauantiqualchenartitonleuarms
+f21v L08.1 | iqua
+f21v L08.2 | a
+f21v L09   | nf·tantodinarleindiuercect·e
+f21v L10   | aciofemti·e
+f21v L11   | t·mfatto[et]l·eramefadificulta
+```
+
+Runs read as Italian: "del tutto da ... et" (L01), "intencione ... questa carica ... di qua" (L03), "credo le ne ...
+[p]ersuad[e]" (L04; the prose before it is "Et spinto dalla passione ... con più persone"), "ceder uiuendo et seruend[o]"
+(L05), "auanti qualche ..." (L07), "tanto dinar[i] ... in diuer[s]e" (L09), "fatto [et] ... fa dificulta" (L11, before
+"Io Resto in pena"). The rest is fragments with M tokens in them.
+
+**The two off-sheet signs.** `decode_control.py --fit-sign` scores the whole folio with one sign set to each value in
+turn: X_POUND (7 occurrences) ranks **l first** (-1.099; null -1.122, r -1.127, i -1.129), and X_THETA2 (8 occurrences)
+ranks **r first** (-1.111; n -1.113, l -1.128) -- r is the value the fr.3252 f.36v period gloss gives it (HARVEST-D),
+found here from the text alone. The pound-sign l is what HARVEST-A read from f.11r context; it is graded I here, as
+there, since no gloss on the sign exists yet.
+
+**Control (rule 3), `harvest/decode_control.py f21v/passC.tsv --extra X_THETA2=r --seed 1`** (X_POUND unkeyed in the
+control): real key -1.111 (254 letters) against 200 value-shuffled keys: mean -2.053, sd 0.147, max -1.583; **z 6.40,
+rank 1 of 201**. Power control (20 it16dip windows at the same passage lengths, same key, 20% signs replaced): real key
+rank 1 in **20/20**, z median 6.76, min 5.46.
+
+**Blind reader** (`verify_mk_blind.py f21v/passC.tsv f21v/blind 21 X_THETA2=r X_POUND=l`; a Sonnet reader saw only
+`f21v/blind/blind_decodes.txt`): picked TEXT 15 with high confidence as the only text reading as Italian prose ("tutto,
+questa, casa, credo, tanto, fatto, difficulta, qualche, intencione, di qua, uiuendo, che"); one other text SOME ("che"
+twice), nineteen NONE. TEXT 15 is the real key (`blind_answer.json`, `blind_judgment.tsv`).
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file
+ciphers/ceppo-nevers-fr3251-1570s/harvest/reading_f21v_letters.txt`, pasted):
+
+```
+FAIL language: score=-1.136, null_p99=-1.702, real_p05=-0.931, real_median=-0.824, mode=both, N=261
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Closer to real prose than f.11r (-1.267) or f.35 (-1.402), still short of the p05 gate: 76 M and 5 U tokens on 267.
+
+**Print check** (`tools/print_check.py ciphers/ceppo-nevers-fr3251-1570s`, `phrases.txt`: uiuendo et seruendo, questa
+carica, intencione, fa dificulta, tanto dinari; `print-check.tsv`): IA full text, Google Books and OpenAlex answer the
+common phrases with unrelated texts (Notitia Dignitatum, Atti e memorie, a 1687 Guerras de Flandes); "uiuendo et
+seruendo" has no hit anywhere; Semantic Scholar answered 429 once and was not retried. A search result, not a novelty
+verdict (rule 10). Requests: be-api 5, googleapis 5, openalex 6, crossref 2, s2 1.
+
+**What this shows and does not.** The printed key reads f.21v far better than chance (z 6.4, 20/20 power, a blind
+reader's unprompted pick), the two variant signs take the values the witness and f.11r gave them by the text's own
+statistics, and several phrases are continuous Italian. It is not a full reading: the judge fails, and about a third of
+the tokens are M or unkeyed. No prior reading located (HARVEST-C's search log and the print check above); no novelty
+claim.
+
+Files: `harvest/f21v/` (passes, passC + agreement/disagreements per half and merged, adjudicate_in/out per half,
+blind/), `harvest/ciphertext_f21v.tsv`, `exceptions_f21v.tsv`, `reading_f21v.txt`, `reading_f21v_tokens.tsv`,
+`reading_f21v_letters.txt`, `phrases.txt`, `sources.tsv`, `print-check*.tsv`. Requests: gallica.bnf.fr 0. Subagents: 7
+(four blind passes, two adjudications, one blind reader), all Sonnet.
