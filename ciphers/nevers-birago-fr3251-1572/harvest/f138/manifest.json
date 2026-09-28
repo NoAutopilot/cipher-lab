@@ -1,0 +1,10 @@
+[
+ {
+  "file": "c140_2000.jpg",
+  "canvas": 140,
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f140/full/2000,/0/native.jpg",
+  "bytes": 459886,
+  "fetched": "2026-09-28 22:5x UTC (HARVEST-D2)",
+  "note": "f.138v (left) and f.139r (right, ink foliation 139): prose throughout at this scale, no cipher block seen. A 2400 px fetch of canvas 139's right half (f.138r, pct:50,0,50,100) was read the same way -- all clear text -- and discarded unused: 2 requests this job."
+ }
+]

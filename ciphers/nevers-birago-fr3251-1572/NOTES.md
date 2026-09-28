@@ -185,3 +185,33 @@ gives a reading); site:ciphermysteries.com Nevers cipher Birago (no hit). (c) Bo
 28 Sept 2026 and grepped for 3251 / birago: only targets/birago (f.119). Result: no reading or decipherment of
 the ff.11, 21v, 35, 87 (Ceppo-Nevers) or ff.138-184 (1572) letters located on the open web or the three blogs.
 Requests: web search 7, cryptiana.blogspot.com 2, github.com 1 clone.
+
+## HARVEST-D2: value-blind sign sheet cut; targets held for a cipher-locating pass (PARENT WORKER HARVEST-D2, 28 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-28-harvest-d2-3.md` item 2, second part. The key is on disk (`keys/key_nevers_birago_1572.tsv`,
+KEY-IMG-3251), so the group is not blocked on the key. Status stays `open`; no reading, no class.
+
+**Sheet.** `harvest/cut_sign_sheet.py` cuts the 51 signs of Tomokiyo's `NeversBirago.png` (44 letter homophones plus the
+7 word codes; one per key row, q/x/y blank as in the table) by ink blobs assigned to the header columns, relabels them
+T## by a seeded shuffle and writes `harvest/sign_sheet_blind_1572.png` (headers removed, for readers) and
+`harvest/sign_id_map_1572.json` (id -> value, never shown to a reader). Column assignment checked by eye against the
+key table on a labelled render (D and the n-like zigzag under i, T under g, B under l, R under m, as the table has them).
+The same reader brief, reconciliation and control scripts as the Ceppo-Nevers folder
+(`../ceppo-nevers-fr3251-1570s/harvest/{blind_pass_brief.md,reconcile_blind.py,adjudication_sheet.py,decode_control.py}`)
+apply with this sheet and map.
+
+**Images: no cipher located yet.** f.138 (no.71): canvas 139 right half at 2400 px (f.138r) and canvas 140 at 2000 px
+(f.138v, f.139r) are clear text throughout -- a long report on the Pinerolo fortification money, the Conte da Coconato's
+company and Capitano Voluera -- with no cipher block visible; the letter runs on past f.139r and its cipher insertions,
+if short, sit on a later leaf. The other six letters (ff.144, 152, 160, 168, 174, 184) have no image on disk, and the
+canvas offset drifts from +1 to +3 across this span (NEV-C1), so each needs its own eye-checked canvas. Gallica served
+every request this job (3 here, 2 s apart). Held, not negative: nothing was read.
+
+**Next step (named):** one worker fetches each letter's canvases at 1200 px until its cipher passage is found (about
+2-4 requests per letter, well inside 20), records the canvas and the region in `harvest/<folio>/manifest.json`, fetches
+the native region, cuts 2x crops with `cut_folio_lines.py`'s tracked mode if the lines slope, and runs two blind passes
+against `sign_sheet_blind_1572.png`, the value-blind reconciliation, `decode_control.py` with a `--map` pointing at
+`sign_id_map_1572.json` (one line to add: the script reads the Ceppo map by name), and the blind reader. Order by
+cipher length once located.
+
+Requests this job: gallica.bnf.fr 3. Subagents: 0.
