@@ -1335,3 +1335,9 @@ the end of every wake.
 | 28 Sept 2026 | HARVEST-C | session_01DJjsSDcdztEJ9PkRS82vkY | owner | Opus 5.5 | 3.13 | done 18:35, archived | intake clean; Gallica 403, held |
 | 28 Sept 2026 | TOMO-BIRAGO | session_01K2rbMsdgKZ2hEnxNZCEHYQ | owner | Opus 5.5 | 1.64 | done 19:17, archived | Tomokiyo Birago note drafted |
 | 28 Sept 2026 | OUT-CHECK-TM | session_01U5CUtkgMyxhxCbExRdTfup | owner | Opus 5.5 | cap 10 | running from 19:59 | gate 7 on Tomokiyo Birago note and Monroe editors draft |
+| 28 Sept 2026 | OUT-CHECK-TM | session_01U5CUtkgMyxhxCbExRdTfup | owner | Opus 5.5 | 3.49 | done 20:09, archived | Tomokiyo note cleared; Monroe draft held for the catalogue |
+| 28 Sept 2026 | HARVEST-D | session_01VNki6zXN7JCznzVYXsiMKm | owner | Opus 5.5 | cap 50 | running from 20:14 | fr.3252 f.36 witness, fr.3251 folios |
+| 28 Sept 2026 | F61-FAMILY-8 | session_01TKCU9auh3nAaVyq3Z9D2x4 | owner | Opus 5.5 | cap 30 | running from 20:14 | fr.2751 f.116 de Diou with decipherment |
+| 28 Sept 2026 | ARM-MONROE-CAT | session_01AQWCc9ZbH2vHC5mqGru2Au | owner | Opus 5.5 | cap 8 | running from 20:14 | Monroe Catalogue Online, Armstrong 1805 |
+| 28 Sept 2026 | MAIL-3 | session_01RikRo279wJ7Cnn1nFaqi7f | owner | Opus 5.5 | cap 12 | running from 20:16 | Adirondack, Bodleian, Marburg replies |
+| 28 Sept 2026 | HARVEST-SCOUT-3 | session_01GW6eQyidQiQPEsKbdokSVs | third | Fable | cap 60 | running from 20:11 | key-adjacent pool outside Cryptiana |
