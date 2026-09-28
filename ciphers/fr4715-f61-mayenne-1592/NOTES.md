@@ -3010,3 +3010,7 @@ t/s higher on f.124r (3 of 4). **DOES NOT STAND** as pre-registered: H146's 29/3
 of f.108v's seven lines, the fitted 14-cell map's sequence gain ranked among 50 permuted maps in each. **Rank 1 in 29 of 30
 (once rank 2) -> STANDS** (gate >= 27). H127's "f.108v is enciphered in f.61's cells" survives resampling of its lines. No
 reading, no class change.
+
+## Campaign step H153 (28 Sept 2026, 19:44 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
+
+`scripts/H66_PAGE.md` gains a section "H135-H152". No new claim.

@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 600
-spent_today_usd: 354.22
+spent_today_usd: 354.42
 spent_day: 2026-09-28
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
 crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
@@ -179,7 +179,7 @@ closed:
 | H150 | 1 | F61-RARE-CLASSES: AUDIT.md sec. 6 item 2 -- f.61's unmapped classes (CA 10, C6 8, LOOPBAR 4, CROSS 2, ELOOP 2, LL 1; ZHOOK published i/x) have no period pair; H49 found them untestable on f.61 alone -- script-only: count each class on f.61 + f.108v + f.108r (all in f.61's hand), and for any class with >= 10 occurrences there, the sequence gain (H127) of each candidate value (null, and each of the map's cells) on those texts pooled, with 30 bootstrap resamples; a value SUPPORTED over null at >= 29/30; classes under 10 reported untestable | nobody | 0.5 | done | untestable: over the f.61-hand texts CA 8, C6 6, LOOPBAR 4, CROSS 3, ELOOP 2, LL 1, all under 10 |
 | H151 | 2 | F61-VBAR-REPL: before the family worker acts on PROPOSAL_H146.md, replicate H146's VBAR_A g/t vs t/s result on a fresh bootstrap (seed 151, 50 resamples) and on each family leaf alone (f.97r, f.101r, f.188r, f.124r); stands if g/t wins >= 95% pooled and on at least three of four leaves | nobody | 0.5 | done | does not stand: g/t wins 41/50 fresh resamples (gate 48), 3 of 4 leaves (f.124r t/s); proposal file downgraded to a lean |
 | H152 | 3 | F61-108V-BOOT: H127's "f.108v in f.61's cells" rests on one set of shuffles and 200 permutations -- script-only: 30 bootstrap resamples of f.108v's seven lines, the fitted map's sequence-gain rank among 50 permuted maps in each; stands if the fitted map ranks first in >= 27 of 30 | nobody | 0.4 | done | stands: fitted map rank 1 of 51 in 29/30 line resamples of f.108v |
-| H153 | 1 | F61-PAGE-UPDATE-5: scripts/H66_PAGE.md brought up to H135-H152 for LANE VO3 (lattice beam figures, key-hunt lead fr.2751, v4 vs 14-cell table and widening tests, VBAR lean not replicated, f.108v bootstrap, rare classes untestable, the time correction); writing only | nobody | 0.2 | open | |
+| H153 | 1 | F61-PAGE-UPDATE-5: scripts/H66_PAGE.md brought up to H135-H152 for LANE VO3 (lattice beam figures, key-hunt lead fr.2751, v4 vs 14-cell table and widening tests, VBAR lean not replicated, f.108v bootstrap, rare classes untestable, the time correction); writing only | nobody | 0.2 | done | H66_PAGE.md updated to H152 |
 | H154 | 2 | F61-108R-IX-BOOT: H127 put f.108r L04-L06 in f.61's cells only thinly (with HASH4 = i/x, 0.183 vs best permuted 0.175) -- script-only: the H152 bootstrap on f.108r's three lines (30 resamples, 50 permuted maps) under the 14 cells with HASH4 dropped and with HASH4 = i/x; stands per map at rank 1 in >= 27/30 | nobody | 0.3 | open | |
 | H155 | 3 | F61-108V-ROWS-FOR-DESK: ASKS 89 asks a person to read f.108v's sparse gloss; script-only: per f.108v row, the sequence gain of the fitted map alone (rank among 200 permuted maps) and the lattice resolution, so the desk pack can say which rows' gloss would test the most letters first; appended to images/person_pack_108v/README.md as an ordering note, no letters shown to the reader | nobody | 0.3 | open | |
 | H142 | 3 | F61-SWAP-NOISE: H132 had no noise scale, so its near-ties (under 0.002) could not be judged -- script-only: 30 bootstrap resamples of the family pool's lines (seed 142), the fitted-minus-swap gain for the 15 closest swaps of H132 in each; a swap is confirmed rejected when the fitted map wins in >= 95% of resamples, open otherwise | nobody | 0.5 | done | bootstrap: of H132 15 closest swaps only INF<->SBS and 4PI<->SBS confirmed rejected (29/30); 13 OPEN within resampling noise (incl. 4STEM<->4TRI 16/30, EBR_A<->ISH 9/30) |
@@ -480,3 +480,5 @@ closed:
 2026-09-28 19:42 (clock) | session_01RbeePKZVn83gNfES8yFmhe | H152 done | 0.4 | f.108v sequence-gain result stands under bootstrap (29/30).
 
 2026-09-28 19:43 (clock) | session_01RbeePKZVn83gNfES8yFmhe | rows | 0 | none runnable after H152: H153 (verifier page), H154 (f.108r bootstrap), H155 (f.108v row order for ASKS 89) added.
+
+2026-09-28 19:44 (clock) | session_01RbeePKZVn83gNfES8yFmhe | H153 done | 0.2 | verifier page to H152.

@@ -69,6 +69,24 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - Nothing here reads f.61r: its text outside Tomokiyo's spans is 17 signs (H125 dropped); the beam is a grading aid at about
   three right in four, not a reading.
 
+## H135-H152 (runner 5, 28 Sept 2026; section times in NOTES.md before H142 were typed, see its correction)
+
+- **Word-lattice beam** (`f61beam_lattice.py`): known letters 111/125 (f.61 spans 44/49 = 0.898, f.108r overlay 67/76; gate 115
+  FAIL, H136); against the period gloss of f.101r/f.188r 0.782 (gate 0.80 FAIL, H138). Under key v4's wide sets it is near
+  chance (23/42, H141): the obstacle is v4's sets, not the instrument.
+- **Key v4 vs the 14-cell map** (`f61v4_vs_14.tsv`, H145): v4 widens seven classes at frac 0.1; on the family pool the third
+  letters are rejected for SBS, 4PI, HASH4 and open for 4TRI, 4STEM (H148); VBAR_A g/t over v4's t/s is a lean that did not
+  replicate (29/30 then 41/50, H146/H151); VBAR_B s over f/s. Candidates for the family worker in `family/PROPOSAL_H146.md`;
+  none changes f.61's map (H147: the refined map scores 110 vs 111 known letters).
+- **Sequence-gain results bootstrapped**: f.108v in f.61's cells stands (rank 1 of 51 in 29/30 line resamples, H152); on the
+  family pool 13 of the 15 closest one-swaps are within resampling noise (H142).
+- **Rare classes** (CA, C6, LOOPBAR, CROSS, ELOOP, LL): under 10 occurrences each in all f.61-hand text on disk, untestable
+  (H150). Only one Tomokiyo dash falls on a mapped sign (H139).
+- **Key-hunt lead** (H143): BnF Français 2751 fol. 116, de Diou to Mayenne "escripte en chiffre" with its decipherment
+  (Gallica btv1b52523734p f241-f242); images 403 from the cloud; `family/REQUEST_fr2751.md`, retry row H144.
+- **Committed predictions**: lattice resolutions of f.108r L04-L06 and f.108v (`f61lattice_*_prediction.txt`, H140) beside
+  H107/H112/H120/H123; `f61score_gloss108.py` scores all f.108r ones when the ASKS 88 gloss lands (H137).
+
 ## Files to read
 
 | what | path | step |
