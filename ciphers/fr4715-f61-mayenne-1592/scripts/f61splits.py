@@ -20,6 +20,7 @@ STEPS = [  # step, result file, family reader class, letter sets, leaves, glyph 
     ("H79", "f61pair_h79_result.txt", "EBR_A", "l,y | f,s", "f.101r", "leans f/s -> diagonal/triangle form, l/y -> forms without a diagonal; not significant", "EBR_B | EBR_A/VBAR_B", "l/y | f/s", "split (near miss)"),
     ("H89P", "f61pair_h89_result.txt", "PHI", "o | e", "f.274", "o: flat row of loops, stem hanging from below (SBS) | e: trefoil, stem through the centre", "SBS | PHI", "b/o | e/r", "split (third hand)"),
     ("H89V", "f61pair_h89_result.txt", "VBAR_A", "s | t", "f.274", "s: triangle with a long second stroke at the point | t: top bar only", "VBAR_B | VBAR_A", "f/s | g/t", "split (second hand)"),
+    ("H98", "f61pair_h98_result.txt", "HASH4", "i | d,q", "f.101r f.188r", "i: bare hash / H-like cluster, no 4 | d/q: a 4 joined above the hash", "H24 | HASH4 (4PI on f.61)", "i/x | d/q", "split"),
     ("H80", "f61pair_h80_result.txt", "VBAR_A", "g | t", "f.101r f.188r", "no letter split", "VBAR_A", "g/t (one shared symbol)", "control"),
 ]
 rows = ["step\tfamily_class\tletter_sets\tleaves\tscored\tobserved\tp95\tP\tgate\tglyph_per_set\tf61_class\ttable_cell\tkind"]

@@ -1,0 +1,6 @@
+read_call_H98.tsv: 20 rows; 20 tiles; statistic stratified by leaf
+  tile 2 (f101r i): not scored
+  group A: set A 1, set B 9  (f101r:B 2, f188r:A 1, f188r:B 7, let:d 7, let:i 1, let:q 2)
+  group B: set A 8, set B 1  (f101r:A 2, f101r:B 1, f188r:A 6, let:d 1, let:i 8)
+scored 19 (A 9, B 10); groups 2; observed 17/19; permutation P = 0.0015 over 2000 (seed 1); p95 14/19
+GATE: PASS

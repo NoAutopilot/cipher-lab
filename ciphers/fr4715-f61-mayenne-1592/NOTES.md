@@ -2238,3 +2238,20 @@ e 2 / r 2 / b 1, VBAR_A t 2, 4TRI a 3 / n 1 (its gloss is HELD, 34% words, so fe
 f.124r gives none for PHI, VBAR_A/B, 4TRI or LOOPS (its align, built in the numeral-OTHER mode for de Diou's hand, does
 not line up with the draft by length either); f.97r has no align file. No fourth glossed hand for the tile tests; the
 SBS and VBAR attestations stay at three and two hands. No cost beyond the census.
+
+## Campaign step H98 (28 Sept 2026, 15:56-15:58 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+For the family key only (HASH4 is a null on f.61): the readers' HASH4 carries a period i 7 times on f.188r, where the
+H24 glyph carries i 26 times. Pre-registered and pushed 768bdb8f before the call: `build-pair NATIVE HASH4 i d,q 98 h98 7`
+(f.101r 3+3, f.188r 7+7, 20 tiles), a prompt that does not presume the 4, `score-pair --strat --min 16`. One blind Opus
+vision call; tile 2 none.
+
+| reader's group | i | d/q |
+|---|---|---|
+| A a 4 joined above a hash cluster | 1 | 9 (d 7, q 2) |
+| B a bare hash / H-like cluster, no 4 | 8 | 1 |
+
+Stratified observed 17/19, permutation P = 0.0015, p95 14/19 -> **GATE PASS** (`scripts/f61pair_h98_result.txt`,
+`--check` OK; row H98 in `scripts/f61_glyph_splits.tsv`). The family readers' HASH4-under-i is the bare hash glyph
+(the family atlas's H24, i/x in the table) coded HASH4: one more coding merge for the family worker's key rebuild (H52),
+beside PHI/SBS, LOOPS/SBS+INF, 4TRI/hook forms and VBAR_A/VBAR_B. No f.61 cell changes. No reading, no class change.
