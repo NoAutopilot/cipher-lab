@@ -2808,3 +2808,12 @@ as H130 predicted (context was a limit). Logged as the beam's accuracy against t
 about 20 points over the first-letter baseline on 2,008 positions. A third pass at this gate with another tweak would be
 the rule-3 "same knob" pattern; the remaining gap is at least partly the automatic gloss alignment, which only a cleaner
 alignment (or a person's gloss reading) can remove. No reading, no class change.
+
+## Campaign step H134 (28 Sept 2026, 19:14-19:15 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_words.py` (pushed bcc87a73 before the run; `f61beam_words_result.txt`): the beam's final states rescored
+with a fixed word-cover bonus (0.5 per covered letter). Word beam 107/125 = plain beam 107/125 (f.61 spans 38/49, f.108r
+overlay 69/76 both ways) -> **GATE (>= 115/125): FAIL, no change at all**. Why, structurally: the beam recombines states on
+their last three letters, so its final 400 candidates differ only near the end of each line and a rescoring of them cannot
+reach an earlier choice. A word model would have to live inside the search (states carrying a word position), a different
+instrument (H136), not a weight on this one. No reading, no class change.
