@@ -1,0 +1,6 @@
+legation (all glossed)	codes<100 39	FW share 0.513	codes>=100 356	FW share 0.463	diff +0.049	null p95 +0.135	p 0.3315
+legation (grade C)	codes<100 1	FW share 1.000	codes>=100 33	FW share 0.727	diff +0.273	null p95 +0.273	p 0.7485
+WE028.tsv	codes<100 98	FW share 0.020	codes>=100 1164	FW share 0.060	diff -0.040	null p95 +0.038	p 0.9800
+THE972_bourdeau.tsv	codes<100 14	FW share 0.071	codes>=100 566	FW share 0.166	diff -0.095	null p95 +0.198	p 0.9165
+control: legation values with a built 1-99 particle block	codes<100 39	FW share 1.000	codes>=100 356	FW share 0.410	diff +0.590	null p95 +0.135	p 0.0000
+control: half-particle 1-99 block	codes<100 39	FW share 0.487	codes>=100 356	FW share 0.466	diff +0.021	null p95 +0.135	p 0.4690

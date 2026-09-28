@@ -3179,3 +3179,31 @@ reading or class. Rule 10: catalogued NARA despatches decoded by the period cler
 
 Vision: 3 of 4 subagent calls (Sonnet, about 167-183k tokens each, 11-13 minutes) plus the runner's looks at the
 three frames and five overlays. Requests: 0 (reel on disk). Cost: about 3 USD (`--spend` records 3, the row's est).
+
+## Campaign step H48 (28 Sept 2026, to 15:01 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Question:
+is the Madrid legation cipher (the one 1806-1807 US private code on file with its decode, H43/H47) a period precedent
+for the target's design family C (a 1-99 particle block, a book >= 100)? Offline.
+
+**Test** (`h48/particle_block.py`, output `h48/output.txt`): per table, the share of valued codes below 100 whose
+value is an English function word (a fixed list of about 120 in the script) minus the same share at >= 100; null = the
+table's own values permuted over its codes, 2,000 draws.
+
+| table | codes < 100 | FW share | codes >= 100 | FW share | diff | null p95 | p |
+|---|---|---|---|---|---|---|---|
+| legation, all glossed | 39 | 0.513 | 356 | 0.463 | +0.049 | +0.135 | 0.33 |
+| legation, grade C only | 1 | -- | 33 | 0.727 | -- | -- | (n too small) |
+| WE028 (Department) | 98 | 0.020 | 1164 | 0.060 | -0.040 | +0.038 | 0.98 |
+| THE972 Bourdeau (Department) | 14 | 0.071 | 566 | 0.166 | -0.095 | +0.198 | 0.92 |
+| control: legation values, function words moved into all 39 low codes | 39 | 1.000 | 356 | 0.410 | +0.590 | +0.135 | 0.0000 |
+| control: half the low codes function words | 39 | 0.487 | 356 | 0.466 | +0.021 | +0.135 | 0.47 |
+
+**Result:** no full particle block in the legation cipher (its low codes are no likelier to be function words than
+its high ones), a result the full-block control shows the test could have detected. A partial block is **untestable**
+here: the half-block control does not clear either, because 46 percent of the legation's glossed values are already
+function words (the letters' glossed runs are short connective words plus the readers' phrase-alignment spread), so
+the base rate leaves no headroom (rule 3, headroom clause). Neither Department table has one either (known: they are
+alphabetical one-part codes). So no period table on file is a real instance of family C; H27's synthetic slot design
+stays the only family-C control, and this step gives it no period grounding. No reading, no class change; nothing
+called new or first. Vision 0, requests 0. Cost: about 0.5 USD (`--spend` records 0.5).
