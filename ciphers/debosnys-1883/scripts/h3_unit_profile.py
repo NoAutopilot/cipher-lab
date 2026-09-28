@@ -59,6 +59,13 @@ def target(level):
         seqs['c1'] = [r['sign'].rstrip('?') for r in csv.DictReader(open(os.path.join(root, 'ciphertext_c1_draft.tsv')), delimiter='\t') if r['sign'].rstrip('?') not in ('_', 'MULTI')]
         p2 = os.path.join(root, 'ciphertext_c2_draft.tsv')
         if os.path.exists(p2): seqs['c2'] = [r['sign'].rstrip('?') for r in csv.DictReader(open(p2), delimiter='\t') if r['sign'].rstrip('?') not in ('_', 'MULTI')]
+        p34 = os.path.join(root, 'ciphertext_c34_draft.tsv')
+        if os.path.exists(p34):
+            seqs['c3'] = []; seqs['c4'] = []
+            for r in csv.DictReader(open(p34), delimiter='\t'):
+                s_ = r['sign'].rstrip('?')
+                if s_ in ('_', 'MULTI'): continue
+                seqs['c3' if r['line'].startswith('c3') else 'c4'].append(s_)
         seqs['all'] = seqs['c1'] + seqs['c2'] + seqs['c3'] + seqs['c4']
     return seqs
 def main():

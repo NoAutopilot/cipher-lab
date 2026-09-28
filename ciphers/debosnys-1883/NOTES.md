@@ -871,3 +871,21 @@ bigram repetition 0.383; the mixed letters+syllables design with 5 pct invented-
 on 5 of 7 statistics (top-1 still above, bigram repetition still below); merging doubled X adds nothing. A settled
 transcription moved the pooled skew about halfway to the design. Grade S/M; nothing read; status `open`. Costs: the
 orchestrator reads the session (5 Sonnet + 27 Fable subagent calls for this row).
+
+### H23, cryptograms 3 and 4 settled; the whole transcription three-pass (28 Sept 2026, 22:3x-22:5x UTC)
+
+Same recipe as H21 (`scripts/PROMPTS_c1.md`, H23 section): four value-blind Sonnet calls on the numbered strips of c3
+(4 lines), c4a (14) and c4b (5) gave `passB_c34.tsv` (401 rows); position agreement with pass A 240/401 = 59.9 pct
+(family 61.1); 161 disputed boxes read by eleven value-blind Fable calls (`passC_c34.tsv`, H 34 / M 114 / L 13);
+`scripts/h21_pipeline.py adjudicate --pages c3,c4a,c4b` (`--check` clean): A-C 61/161 = 0.379, B-C 60/161 = 0.373;
+settled 121 full + 4 family + 2 base; **agreement 361/401 = 90.0 pct full id** (91.0 family, 91.5 base); 31 three-way
+splits and 3 segmentation flags; type-noise floor 8.5 pct, ceiling 10.0 pct. The verse's first line (c4a0, H7) rides on
+its two H7 witnesses (eye pass and kNN; H where they agree). `ciphertext.txt` now carries all four cryptograms in
+inventory ids from three-pass drafts (`ciphertext_c1_draft.tsv`, `ciphertext_c2_draft.tsv`, `ciphertext_c34_draft.tsv`),
+each regenerable and checked by its script. Settled per cryptogram: c1 81.6 pct (noise 14-18), c2 82.8 (14-17),
+c3+c4 90.0 (8.5-10). On the settled verse the couplet-rhyme test (H5 re-run) still gives within 5/10, across 0/9,
+p < 0.0001. Pooled on all settled text (N 1184 excluding `_`/MULTI): K 160, X 12.8 pct, top-5 0.270, IC 0.029,
+doubled 0.030, bigram repetition 0.369; the mixed letters+syllables design with invented-type noise fits 4 of 7 (top-1
+above the band, hapax and bigram repetition below) -- the residual survives a settled transcription, so it is a
+property of the system, not of the reading. Grade S/M throughout; nothing read; status `open`. Costs: 4 Sonnet + 11
+Fable subagent calls for this row (the orchestrator reads the session).

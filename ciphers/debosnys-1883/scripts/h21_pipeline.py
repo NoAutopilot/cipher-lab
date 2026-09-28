@@ -43,6 +43,9 @@ def crops():
     print(len(disp), 'crops in', out)
 def adjudicate(check=False):
     A = load_A(); B = load(f'passB_{TAG}.tsv'); C = load(f'passC_{TAG}.tsv'); rows = []; n = collections.Counter()
+    if TAG == 'c34':  # verse line 1 (c4a0, H7): eye pass E and kNN K already agree on 10 of 16; carried as its own two-witness row set
+        for r in csv.DictReader(open(os.path.join(root, 'passA.tsv')), delimiter='\t'):
+            if r['line'].startswith('c4a0'): rows.append(dict(line=r['line'], position=int(r['position']), sign=r['sign'], confidence=r['confidence'], alt='', why='H7-eye+knn' if r['confidence'] == 'H' else 'H7-eye-only')); n['c4a0'] += 1
     for k in sorted(A):
         a = A[k]['sign']; b = B[k]['sign'] if k in B else None
         if b is None: rows.append(dict(line=k[0], position=k[1], sign=a, confidence='M', alt='', why='no-B')); n['unsettled'] += 1; continue
@@ -58,7 +61,8 @@ def adjudicate(check=False):
         bv = collections.Counter([Bs(a), Bs(b), Bs(c)]); bt, bc = bv.most_common(1)[0]
         if bc >= 2: rows.append(dict(line=k[0], position=k[1], sign=bt, confidence='M', alt=f'A:{a};B:{b};C:{c}', why='base-settled')); n['settled-base'] += 1; continue
         rows.append(dict(line=k[0], position=k[1], sign=a, confidence='M', alt=f'B:{b};C:{c}', why='three-way')); n['unsettled'] += 1; n['three-way'] += 1
-    N = len(rows); out = 'line\tposition\tsign\tconfidence\talt\twhy\n' + ''.join('\t'.join(str(r[c]) for c in ('line', 'position', 'sign', 'confidence', 'alt', 'why')) + '\n' for r in rows)
+    rows.sort(key=lambda r: ((0 if r['line'].startswith('c4a0') else 1 if r['line'].startswith('c4a') else 2 if r['line'].startswith('c4b') else -1), r['line'], r['position']))
+    N = len(rows) - n['c4a0']; out = 'line\tposition\tsign\tconfidence\talt\twhy\n' + ''.join('\t'.join(str(r[c]) for c in ('line', 'position', 'sign', 'confidence', 'alt', 'why')) + '\n' for r in rows)
     p = os.path.join(root, f'ciphertext_{TAG}_draft.tsv')
     if check:
         if open(p).read() != out: print(f'STALE: ciphertext_{TAG}_draft.tsv'); sys.exit(1)
@@ -74,7 +78,7 @@ def adjudicate(check=False):
         for pg, hdr in secs.items():
             lines = collections.OrderedDict()
             for r in rows:
-                if r['line'].startswith(pg) or (pg == 'c4' and r['line'].startswith('c4')): lines.setdefault(r['line'], []).append(r['sign'] + ('' if r['why'] in ('agree-AB', 'settled-majority') else '?'))
+                if r['line'].startswith(pg) or (pg == 'c4' and r['line'].startswith('c4')): lines.setdefault(r['line'], []).append(r['sign'] + ('' if r['why'] in ('agree-AB', 'settled-majority', 'H7-eye+knn') else '?'))
             sec = hdr + f"\n# 28 Sept 2026 ({'H21' if TAG == 'c2' else 'H23'}): 160-id inventory ids, three passes adjudicated by scripts/PROMPTS_c1.md; a trailing ? marks a box unsettled at full id (alts in ciphertext_c2_draft.tsv)\n" + ''.join(' '.join(v) + '\n' for v in lines.values()) + '\n'
             i = new.index(hdr); j = new.find('=== Cryptogram', i + 1); j = len(new) if j < 0 else j; new = new[:i] + sec + new[j:]
         if check:

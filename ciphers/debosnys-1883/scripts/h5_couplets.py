@@ -17,7 +17,9 @@ PUNCT = {'BLOB', 'HOOK-L', 'DASH-H', '_', 'MULTI'}
 fam = {r['sign']: r['family'] for r in csv.DictReader(open(os.path.join(root, 'glyphs/inventory.tsv')), delimiter='\t')}
 def ours():
     by = collections.OrderedDict()
-    for r in csv.DictReader(open(os.path.join(root, 'passA.tsv')), delimiter='\t'):
+    src = os.path.join(root, 'ciphertext_c34_draft.tsv') if os.path.exists(os.path.join(root, 'ciphertext_c34_draft.tsv')) else os.path.join(root, 'passA.tsv')  # settled c4 after H23
+    for r in csv.DictReader(open(src), delimiter='\t'):
+        r = dict(r); r['sign'] = r['sign'].rstrip('?')
         if r['line'].startswith('c4'): by.setdefault(r['line'], []).append(r['sign'])
     keys = sorted(by, key=lambda k: (0 if k.startswith('c4a0') else 1 if k.startswith('c4a') else 2, k))
     return [by[k] for k in keys]  # 20 lines once c4a0_L01 (H7) is in passA.tsv: verse 1..20

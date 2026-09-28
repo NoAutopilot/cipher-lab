@@ -1,0 +1,162 @@
+line	position	sign	confidence	alt	note
+c3_L01	2	OX-TILDE	H	OX	tilde over small o x
+c3_L01	4	DOTS-TILDE	L	O-DOTS	small curl over two dots
+c3_L01	5	DOTS-TILDE	L	ARCH-DOTS	flat arc over two dots
+c3_L01	7	O-DASH2	M	II-O	ticks two bars over o
+c3_L01	8	PCT	M	PCT-SLASH	percent with small x below
+c3_L01	9	HOOK-P	H	U-CROSS	hooked u crossed by bar
+c3_L01	10	X-DOT	M	X	upright X dot above
+c3_L01	11	II-O	M	O-DASH2	two ticks over small o
+c3_L01	12	X-SLASH	H	X	slash with x each end
+c3_L01	13	LAMBDA	M	A-LOOP	lambda dot above o inside
+c3_L01	15	DIAMOND	M	BOX-8	tilted square small o below
+c3_L01	16	X-DOT	M	X	X dot above and below
+c3_L01	19	CHEVRON2	H	CHEVRON	double left-pointing chevron
+c3_L01	23	CIRC-O	M	OX-TILDE	small o of split ox-tilde
+c3_L01	24	X	M	OX-TILDE	small x of split ox-tilde
+c3_L01	28	O-TILDE	M	OX-TILDE	wave above small open c
+c3_L01	30	O-II	H	II-O	dash above o two strokes
+c3_L01	34	BLOB	M	CIRC-O	small dark squarish ring blob
+c3_L01	35	_	H	-	right margin edge no ink
+c3_L02	1	_	M	BLOB	edge-cut dark ink mass margin
+c3_L02	4	CIRC-O	M	O-TILDE	small ring under tilde only
+c3_L02	6	X	M	PCT-SLASH	small x beside percent slash
+c3_L02	8	X-O	M	X-DOT	tall X small ring below
+c3_L02	12	NOTE	M	SIX-CURL	stem up loop at bottom
+c3_L02	15	O-TILDE	M	O-DASHBELOW	ring curl above dash below
+c3_L02	16	X-DOT	M	X-BAR	clean X single dot above
+c3_L02	17	Y-CURL	L	NINE	k-like stem small o right
+c3_L02	18	CIRC-O	M	BLOB	small ring beside k stem
+c3_L02	19	A-DASH	H	TWO	two shape over barred cross
+c3_L02	21	II-SLASH	M	II-DASH	double slash bar small vee
+c3_L02	23	ARCH-O	M	CIRC-O	small arch above small o
+c3_L02	25	SCROLL-X	H	Z-CURL	three-E scroll knot joined
+c3_L02	28	PCT-SLASH	M	PCT	o slash x lower right
+c3_L03	2	X-CURL	H	XX-TILDE	wavy tilde above small x
+c3_L03	3	PCT-SLASH	M	PCT	backslash dot upper dot lower
+c3_L03	4	HOOK-P	M	TRIDENT	u loop with right bar
+c3_L03	5	VEE	M	V-DOT	V with blobbed arm tips
+c3_L03	7	X-DOT	M	X	x with dot above centre
+c3_L03	9	II-O	H	O-DASH2	two ticks bar over o
+c3_L03	17	_	M	BAR-SOLID	tiny vertical dot stray mark
+c3_L03	18	O-SLASH	H	X-LOOP	loop struck by diagonal stroke
+c3_L03	19	X-DASH	H	X-BAR	two bars above small x
+c3_L03	20	C-DOT	M	BAR-THIN	open arc with inner blob
+c3_L03	21	_	M	SUN	grey gap before sun rays
+c3_L03	23	EIGHT	M	NOTE	cursive d-loop neighbour fragments intrude
+c3_L03	26	TILDE-DASH	L	O-BAR-CC	wave over bar over cc
+c3_L03	27	X-DOT	M	X	X with dot above
+c3_L03	28	Y-CURL	L	QUESTION	bold reversed-c two dots
+c3_L03	29	X-DOT	M	X	X with dot lower-left
+c3_L04	1	LOOP-STEM	M	ARCH-O	arch over crossed stem
+c3_L04	2	CIRC-O	M	BLOB	small lone ring
+c3_L04	3	DBL-SLASH	M	PCT-SLASH	two slashes with marks
+c3_L04	6	DASH-H	M	WAVE	single horizontal looped squiggle
+c3_L04	7	DAGGER-O	H	CROSS-T	cross atop dotted ring
+c3_L04	9	DASH-H	M	_	thin faint horizontal line
+c3_L04	12	TRIDENT	M	V-LOOP	curled U cross above
+c3_L04	13	V-DOT	M	VEE	V ring above ring below
+c3_L04	14	C-BAR-X	H	ARCH-DASH	arch over bar over X
+c3_L04	16	_	M	BAR-SOLID	trailing dot after question
+c3_L04	17	_	M	BAR-SOLID	last trailing dot mark
+c3_L04	18	_	L	BAR-SOLID	dark smudge after trailing dots
+c4a_L01	4	PHI	M	O-SLASH	long slash through narrow oval
+c4a_L01	7	NOTE	M	LOOP-TAIL	bottom loop stem curving right
+c4a_L01	8	_	M	-	small comma stroke below line
+c4a_L01	12	PCT	H	PCT-SLASH	clear percent two round rings
+c4a_L02	1	TILDE-DASH	L	RAM	two joined curls over dashes
+c4a_L02	6	LAMBDA	M	A-LOOP	inverted vee small dot above
+c4a_L02	8	O-SLASH	M	X-LOOP	oval loop crossed by diagonal
+c4a_L03	3	BLOB	M	BAR-SOLID	solid dark square blob alone
+c4a_L03	6	II-DASH	M	DOTS-DASH	two bars above two ticks
+c4a_L03	9	Y-CURL	H	NINE	curly y loop tail left
+c4a_L03	10	O-SLASH	M	LOOP-TAIL	alpha loop diagonal tail down
+c4a_L03	13	DASH-H	H	BAR-SOLID	short solid horizontal dash alone
+c4a_L04	2	PCT	H	PCT-SLASH	percent ring above solid dot
+c4a_L04	9	PCT-SLASH	M	PCT	slash with tiny dot marks
+c4a_L04	10	BAR-SOLID	M	_	small dark oval after slash
+c4a_L04	12	CHEVRON2	H	CHEVRON	double left-pointing chevron strokes
+c4a_L04	13	CIRC-O	H	BLOB	small open ring alone
+c4a_L04	16	SLASH	M	Y-CURL	plain y-shaped slash branch
+c4a_L04	17	CIRC-O	M	BLOB	tiny ring after y sign
+c4a_L05	1	V-DOT	M	VEE	vee with ring above
+c4a_L05	9	CIRC-O	M	OO-TILDE	second ring under tilde group
+c4a_L05	10	X-CURL	M	X	x below tilde stroke
+c4a_L05	11	O-SLASH	M	LOOP-TAIL	oval slashed with tail
+c4a_L05	12	PCT-SLASH	M	PCT	ring slash x below
+c4a_L05	14	_	M	BAR-SOLID	comma stroke after sign
+c4a_L05	15	PCT-SLASH	M	SLASH	slash with two small marks
+c4a_L05	16	SLASH	M	Y-CURL	plain y slash ring outside
+c4a_L05	17	CIRC-O	M	BLOB	small ring after y sign
+c4a_L05	18	_	M	BLOB	round period dot line end
+c4a_L06	4	DASH-H	M	_	short solid horizontal dash only
+c4a_L06	12	TRIDENT	M	SCROLL-X	curled loops with rightward tail
+c4a_L06	15	_	M	HOOK-L	line-end comma below baseline
+c4a_L07	3	Y-CURL	M	S-CURL	hooked curl sweeping down-left dot
+c4a_L07	4	VENUS	M	PICT-ANCHOR	small circle over down arrow
+c4a_L07	7	DBL-SLASH	L	X-CURL	tilde over two parallel slashes
+c4a_L07	10	PHI	H	O-SLASH	circle with long diagonal stroke
+c4a_L08	1	MULTI	M	TWO	two digit-two shapes together
+c4a_L08	7	O-SLASH	M	X-O	small o beside long backslash
+c4a_L08	8	CIRC-O	L	X-O	small raised circle alone
+c4a_L08	17	_	M	HOOK-L	line-end comma below baseline
+c4a_L09	2	SLASH	M	VEE	thin forked Y-shaped stroke
+c4a_L09	3	VENUS	M	ARROW-O	circle with downward arrowhead below
+c4a_L09	4	_	M	BAR-SOLID	single small dot only
+c4a_L09	13	CC-DASH	H	II-DASH	two c-hooks over double bar
+c4a_L09	15	BAR-SOLID	M	BLOB	small solid slanted dash end
+c4a_L10	2	O-DOT-STEM	M	LOOP-STEM	oval head on straight stem
+c4a_L10	4	MULTI	M	PICT-RUNNER	percent sign plus running figure
+c4a_L10	9	BAR-THIN	M	DASH-V	short thin vertical stroke only
+c4a_L10	10	X-DOT	M	X	cross with dot above it
+c4a_L10	11	MULTI	M	PICT-HOUSE	loop-tail sign plus house drawing
+c4a_L10	15	LOOP-TAIL	M	NOTE	small loop tail rising right
+c4a_L10	17	_	M	HOOK-L	faint comma after line gap
+c4a_L11	6	O-SLASH	L	PCT-SLASH	blurred loop crossed by slash
+c4a_L11	8	PCT-SLASH	M	PCT	slash with tick and dot
+c4a_L11	11	BAR-SOLID	M	_	small solid dot after delta
+c4a_L12	2	LOOP-STEM	M	LOOP-TAIL	loop with stem down left
+c4a_L12	4	PCT-SLASH	M	PCT	slash tick above blob below
+c4a_L12	5	OX-TILDE	M	X-CURL	wavy tilde over o x
+c4a_L12	6	ARCH-DASH	M	ARCH-O	arch over thick double bar
+c4a_L12	8	TRIDENT	M	SCROLL-X	dark double-loop curly scroll
+c4a_L12	10	_	M	V-DOT	lone baseline dot after V
+c4a_L12	13	O-DASHBELOW	M	PCT	small o, two slashes beneath
+c4a_L12	14	DASH-H	L	_	two short stacked horizontal bars
+c4a_L12	18	X-DOT	M	X	upright X with dot above
+c4a_L13	3	ARCH-DASH	M	ARCH-O	hooked arch, bar, dotted stem
+c4a_L13	4	F-LETTER	M	Y-CURL	curly F-like flourished letter
+c4a_L13	5	N-LETTER	L	X-LOOP	narrow crossed N-like strokes
+c4a_L13	7	Y-LOOPS	H	TRIDENT	Y with curled loop feet
+c4a_L13	8	VEE	H	Y-CURL	plain open V stroke
+c4a_L13	9	U-DASH	H	U-CUP	cup with bar above it
+c4a_L13	13	VENUS	H	O-DOT-STEM	circle over crossed stem
+c4a_L13	16	O-TILDE	M	GEAR-DOT	tilde above small ring
+c4a_L14	1	TWO	H	THREE	numeral two, underlined base
+c4a_L14	3	X-DOT	M	X	X with dot above it
+c4a_L14	4	X-DOT	M	X	upright X dot above
+c4a_L14	8	U-DASH	H	CC-DASH	small u over double bar
+c4a_L14	13	_	H	BAR-SOLID	isolated dark blot below line
+c4b_L01	9	SLASH	M	Y-CURL	thin straight Y dot right
+c4b_L01	10	NOTE	M	S-CURL	filled teardrop hooked top
+c4b_L02	4	CC-O	H	CC-DASH	cc over bar two rings
+c4b_L02	6	X-DOT	M	X	X with dot above
+c4b_L02	9	X-BAR	L	SLASH	V shape bar hooked arm
+c4b_L02	10	II-SLASH	H	PCT-SLASH	two slashes bar ring below
+c4b_L02	13	SCROLL-X	M	X	bold cursive curled x
+c4b_L02	15	WAVE	M	DASH-H	lower wavy stroke of pair
+c4b_L03	2	C-BAR-X	H	X-BAR-CC	arch over bar over x
+c4b_L03	5	CIRC-O	M	BLOB	small hollow ring between chevrons
+c4b_L03	6	CHEVRON2	M	CHEVRON	double chevron pointing right
+c4b_L03	8	PICT-FACE	H	OO-DASH	arc two dots over bar
+c4b_L03	11	O-TILDE	M	ARCH-O	peaked wave over small o
+c4b_L04	4	X-BAR	M	X	upright X, dot above
+c4b_L04	6	DAGGER-O	M	MULTI	asterisk over ring, dots below
+c4b_L04	7	DAGGER-O	M	NOTE	small cross over filled o
+c4b_L04	8	CHEVRON	M	CHEVRON2	left stroke of double chevron
+c4b_L04	9	CHEVRON	M	CHEVRON2	right stroke of double chevron
+c4b_L04	13	CIRC-O	M	BLOB	left small o under tilde
+c4b_L04	14	CIRC-O	M	BLOB	right small o, dot inside
+c4b_L04	16	Y-CURL	H	S-CURL	curly y with terminal dot
+c4b_L05	13	X-BAR	M	X	X with bar above
+c4b_L05	14	Y-CURL	M	S-CURL	curly y, heavy flourish
