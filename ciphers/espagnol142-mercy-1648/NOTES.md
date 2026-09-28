@@ -1936,3 +1936,27 @@ chief chamberlain, and the title that best fits the next words is chief chamberl
 its gate and one on the line. Both assume nomenclature codes stand for syllables (72 = do, 52 = ro), which no period key
 has confirmed. **Crib candidates for the orchestrator and the Brussels register comparison, not a reading**; no key.tsv,
 token, grade or class change. REGISTER-CHECKLIST.md gains the two syllable values to check.
+
+## Campaign step H43 (2026-09-28 15:31-15:10 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Context corroboration for the H41-H42 crib candidates; not a reading, no print of this
+letter.** Full text of *Urkunden und Actenstücke ... Friedrich Wilhelm* Bd. 4 and 5 (the H41 downloads, grepped on
+disk) and IA be-api full-text search of Cuvelier-Lefèvre VI (`correspondancede0006jose`; positive control "Brandebourg"
+and "Clèves" both hit; `h43/fts_cuvelier6_*.json`; be-api 4 requests):
+
+- **Title and place match the crib.** Urkunden Bd. 4 prints an "Instruction für den **Oberkammerherrn Conrad von
+  Burgsdorf** zur Verhandlung mit dem Pfalzgrafen, Dat. **Cleve** 9. Febr. 1647" and a "Kurfürstliche Attestation für
+  Burgsdorf dat. Cleve 10. Sept. 1647 -- Der Oberkammerherr etc. Conrad von Burgsdorf"; Bd. 5 calls him "den
+  einflussreichen Oberkammerherrn Konrad v. Burgsdorf". Oberkammerherr is literally camarero mayor, and in 1647 he was at
+  Cleves, the town the letter sends Mercy to ("pasareis a Cleues a ueros con el Elector de Brandenburg").
+- **Spanish contact in the same business:** Bd. 4 records the Spanish governor of Guelders (Baron de Ribeaucourt,
+  Roermond, 13 Feb 1647) sending a letter that the Elector forwarded to Burgsdorf at Düsseldorf, and Burgsdorf reporting
+  "die spanische Mahnung zum Frieden an den Pfalzgrafen" (18 Feb 1647); and a 1647-48 section "Burgsdorfs an Kursachsen
+  und Braunschweig". Spanish Netherlands officials dealt with him directly the year before.
+- **Not found:** no 1648 passage naming Mercy, a Spanish envoy's approach to Burgsdorf, or a levy of 3,000 infantry in
+  Bd. 4-5 (grep of Burgsdorf within three lines of spani-/Leopold/Erzherzog/Brüssel/Mercy/Niederland: five hits, all
+  1647 or general); Cuvelier-Lefèvre VI has no Burgsdorf at all (0 hits, both spellings).
+
+Corroboration of plausibility only: the man the name crib picks was the Elector's chief chamberlain, at Cleves, dealing
+with Spanish officials, in the months before the letter. The crib stays a candidate until the Brussels register gives 72
+and 52 (REGISTER-CHECKLIST.md). No key.tsv, token, grade or class change.
