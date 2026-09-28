@@ -1,0 +1,25 @@
+# key_period_f274_v4.tsv -- F61-FAMILY-6, 28 Sept 2026: key_period.tsv (f.274r) without its PHI/4TRI/VBAR_A/VBAR_B/LOOPS rows (reader-merged classes, no x position to re-sort). Key source: period.
+class	letter	n	leaf	bands
+BETA	m	2	fr.3984 f.274r	L05,L06
+BETA	l	1	fr.3984 f.274r	L05
+BETA	z	1	fr.3984 f.274r	L06
+C43	a	16	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+C43	n	8	fr.3984 f.274r	L02,L03,L04,L06
+C43	-	2	fr.3984 f.274r	L04
+EBR	l	7	fr.3984 f.274r	L01,L03,L04,L06
+EBR	-	1	fr.3984 f.274r	L02
+EBR	c	1	fr.3984 f.274r	L02
+EBR	y	1	fr.3984 f.274r	L05
+ELOOP	o	1	fr.3984 f.274r	L05
+H24	i	6	fr.3984 f.274r	L01,L02,L06
+H24	j	2	fr.3984 f.274r	L05,L06
+H24	y	2	fr.3984 f.274r	L03,L04
+H24	-	1	fr.3984 f.274r	L04
+H24	x	1	fr.3984 f.274r	L02
+HASH4	d	5	fr.3984 f.274r	L01,L02,L03,L06
+HASH4	q	5	fr.3984 f.274r	L01,L02,L04,L05
+HASH4	-	1	fr.3984 f.274r	L04
+INF	u	16	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+INF	h	1	fr.3984 f.274r	L03
+OTHER	t	2	fr.3984 f.274r	L05,L06
+OTHER	-	1	fr.3984 f.274r	L05

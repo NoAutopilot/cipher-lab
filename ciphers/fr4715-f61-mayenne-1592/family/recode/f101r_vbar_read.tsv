@@ -1,0 +1,27 @@
+# form 1: inverted triangle alone, at most a top-edge tail to the right, no stroke beneath; form 2: inverted triangle sitting on a separate horizontal base bar that runs out beyond it (usually both sides).
+tile	form	note
+1	1	top stroke runs right; no base bar seen
+2	2	heavy triangle on long base bar
+3	2	base bar extends both sides
+4	1	faint plain triangle
+5	2	long base bar under triangle
+6	none	empty paper at ticks
+7	1	small plain triangle in cluster; uncertain
+8	2	base bar both sides
+9	2	short bar beneath triangle
+10	2	base bar joining next sign
+11	none	script at centre; triangle at bottom edge
+12	1	plain triangle before q
+13	2	bar beneath, joined to 4; tentative
+14	none	script at centre; triangle at bottom edge
+15	1	plain triangle with top tail
+16	none	only a horizontal rule
+17	2	base bar running right
+18	none	plain script, no sign
+19	1	bold plain triangle
+20	1	plain triangle; barred one is left
+21	2	faint triangle on base line
+22	2	base bar running right
+23	1	plain triangle with top tail
+24	2	base line running right
+25	2	base bar under triangle

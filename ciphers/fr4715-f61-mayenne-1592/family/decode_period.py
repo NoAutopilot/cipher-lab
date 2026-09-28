@@ -32,6 +32,12 @@ lines = defaultdict(list)
 for path in (f"{S}/passA_classes.tsv", f"{S}/passU2_classes.tsv"):
     for r in csv.DictReader((l for l in open(path) if not l.startswith("#")), delimiter="\t"):
         lines[r["line"]].append(r["sign"])
+# F61-FAMILY-6 (28 Sept 2026): --sbs relabels f.61r's side-by-side loop signs (H26 G2 + pass-A DBL) as SBS (sbs_relabel.py),
+# the class key v4 carries (b/o, split out of PHI by the family re-sort); the output files gain '_sbs'.
+if "--sbs" in sys.argv:
+    sys.path.insert(0, HERE); from sbs_relabel import relabel; relabel(lines); SUF += "_sbs"
+# F61-FAMILY-6 (28 Sept 2026): a C+ token is now printed as its letter in the .txt (it was printed as <CLASS>, like an
+# unread sign; the .tsv and the header counts were always right). v1-v3 .txt files regenerated for this display fix only.
 rows = []; tot = {"C": 0, "M": 0, "-": 0}; text = []
 for line in sorted(lines):
     out = []
@@ -40,7 +46,7 @@ for line in sorted(lines):
         g = "C" if len(v) == 1 else ("M" if v else "-")
         if g == "C" and SUF and len(leaves[c][letters]) >= 2: g = "C+"
         tot[g] = tot.get(g, 0) + 1
-        rows.append((line, i, c, letters or "-", g)); out.append(letters if g == "C" else (f"[{letters}]" if g == "M" else f"<{c}>"))
+        rows.append((line, i, c, letters or "-", g)); out.append(letters if g in ("C", "C+") else (f"[{letters}]" if g == "M" else f"<{c}>"))
     text.append(f"{line}: " + " ".join(out))
 cplus = f" C+ {tot['C+']}" if tot.get("C+") else ""
 hdr = f"# f.61r under {os.path.basename(KEYFILE)} (period pairs n>=2{f', n >= {FRAC:g} x the leaf class total' if FRAC else ''}, no refit), 28 Sept 2026: {sum(tot.values())} signs, C {tot['C']}{cplus} M {tot['M']} unread {tot['-']}. [a/b] = period pair, choice by context not made here; <CLASS> = no period pair{'; C+ = two leaves agree on the one letter' if cplus else ''}.\n"

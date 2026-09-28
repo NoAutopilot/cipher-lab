@@ -1,0 +1,32 @@
+# F61-FAMILY-6 held-out check (gate 0.80 per class) and per-stratum sample sizes; recode_split.py score
+f101r_loops: held-out PHI 2/2 = 1.00 PASS
+f101r_loops: held-out SBS 4/4 = 1.00 PASS
+f101r_loops: held-out INF 2/2 = 1.00 PASS
+f101r_loops: query tiles 67, read 'none' 10
+f101r_4tri: held-out 4TRI 2/2 = 1.00 PASS
+f101r_4tri: held-out 4HOOK 2/2 = 1.00 PASS
+f101r_4tri: query tiles 84, read 'none' 9
+f101r_vbar: held-out VBAR_A 2/2 = 1.00 PASS
+f101r_vbar: held-out VBAR_B 1/2 = 0.50 -- STOPPED (below 0.80 or no held-out tiles)
+f101r_vbar: query tiles 21, read 'none' 5
+f101r_vbar: a class below 0.80 on its held-out tiles -> the whole split STOPPED: its source class(es) VBAR_A keep the v3 rows unchanged
+f188r_loops: held-out PHI 2/2 = 1.00 PASS
+f188r_loops: held-out SBS 2/2 = 1.00 PASS
+f188r_loops: held-out INF 2/2 = 1.00 PASS
+f188r_loops: query tiles 78, read 'none' 1
+f188r_4tri: held-out 4TRI 2/2 = 1.00 PASS
+f188r_4tri: held-out 4HOOK 2/2 = 1.00 PASS
+f188r_4tri: query tiles 25, read 'none' 0
+f101r: tokens in affected classes 919, sorted (v4 call or earlier tile) 217; strata 12
+  f101r 4HOOK: n 73, a 69, c 7, t 7, l 7, r 4, e 4, o 4  (from 42 sorted tokens)
+  f101r 4TRI: c 26, p 25, d 10, n 10, a 9, s 7, g 4, u 4, q 4, r 4, t 4  (from 48 sorted tokens)
+  f101r INF: u 99, h 10, r 4, q 2, n 2, t 2, c 2  (from 28 sorted tokens)
+  f101r PHI: e 198, r 75, u 18, b 12, l 8, o 7, i 6, f 6, t 6, h 2, n 2  (from 50 sorted tokens)
+  f101r SBS: o 79, b 37, e 22, u 6, q 2, t 2, s 2  (from 42 sorted tokens)
+f188r: tokens in affected classes 231, sorted (v4 call or earlier tile) 151; strata 11
+  f188r 4HOOK: n 7, a 5  (from 12 sorted tokens)
+  f188r 4TRI: c 11, p 10, t 3, e 2, n 2, d 1, s 1  (from 30 sorted tokens)
+  f188r INF: u 10, r 1, v 1  (from 12 sorted tokens)
+  f188r PHI: e 56, r 23, q 5, p 2, u 2, c 2, t 2, o 1  (from 40 sorted tokens)
+  f188r SBS: o 19, b 12, e 9, u 4, s 2, r 2, n 2, f 1  (from 36 sorted tokens)
+f274: 14 rows of the merged classes dropped, 23 kept

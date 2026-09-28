@@ -1,0 +1,77 @@
+# form 1: loops with an extra loop ON TOP (trefoil/clover) above a long descending stem; form 2: three loops in one horizontal row (oqo) with a stem hanging from the middle loop and no top loop; form 3: two loops side by side (oo) joined/crossed by a horizontal stroke, with no top loop and no descending stem.
+tile	form	note
+1	1	trefoil with top loop, stem
+2	none	ruled line, no sign
+3	none	plaintext, sign off-centre
+4	2	three loops in row, stem
+5	1	dark, top loop, stem
+6	2	loop row, stem from middle
+7	1	top loop over pair, stem
+8	1	faint, top blob, stem
+9	none	plaintext, sign off-centre
+10	1	top loop, stem
+11	1	top loop, stem
+12	1	top loop, stem
+13	3	two loops, stroke, no stem
+14	1	small top loop, stem
+15	1	dark, top loop
+16	1	blurred, likely top loop
+17	1	top loop, stem
+18	none	plaintext letters
+19	1	top loop, stem
+20	3	two loops, stroke
+21	3	oo after stemmed sign
+22	none	plaintext letters
+23	1	top loop, stem
+24	3	two loops, stroke
+25	2	faint oqo, stem
+26	1	top loop, stem
+27	3	two loops, stroke
+28	1	top loop, stem
+29	1	small top bump, uncertain
+30	1	dark, top loop, stem unclear
+31	2	oqo, stem
+32	1	top loop, stem
+33	1	top loop, stem
+34	1	dark blob, top loop, stem
+35	3	two loops, stroke
+36	3	two loops, stroke
+37	2	oqo, stem
+38	1	top loop, stem
+39	1	faint, top loop, stem
+40	1	slight top loop, uncertain vs 2
+41	2	oqo slightly left of ticks
+42	3	faint loop row, no stem, uncertain
+43	2	opo, stem
+44	1	top loop, stem
+45	2	oqo, stem
+46	1	top loop, stem
+47	3	loop row, no stem seen, uncertain
+48	1	top loop, stem
+49	1	top loop, stem
+50	3	oo on lower line
+51	3	two loops, stroke
+52	3	two loops, stroke
+53	none	plain o beside form 1
+54	3	two loops, stroke
+55	2	oqo, stem
+56	3	two loops, stroke
+57	3	two loops, stroke
+58	3	two loops, stroke
+59	1	top loop, stem
+60	1	top loop, stem
+61	3	two loops, stroke
+62	1	top loop, stem
+63	3	dark two loops, stroke
+64	1	top loop, stem
+65	1	small top loop, stem
+66	1	top loop, stem
+67	none	plaintext, loops off-centre
+68	1	top loop, stem
+69	1	top loop, stem
+70	1	dark, top loop, stem
+71	3	two loops, stroke
+72	1	top loop, stem
+73	none	plaintext letters
+74	none	plaintext letter
+75	none	plaintext, loops off-centre

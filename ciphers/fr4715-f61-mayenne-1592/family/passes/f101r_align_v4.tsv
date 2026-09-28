@@ -1,0 +1,3079 @@
+# F61-FAMILY-6 (28 Sept 2026): split_v4 = the class after the blind shape sort (recode_split.py); 'unsorted' = a PHI/4TRI/VBAR_A/LOOPS token not in the sample (the key estimates it by stratum weight); '=' = class not affected
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status	split_v4	split_source
+L01	0	@HASH4	code	HASH4		p	conflict:d	=	
+L01	1	@4STEM	code	4STEM		a	conflict:n	=	
+L01	2	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L01	3	@PHI	code	PHI		r	conflict:e	unsorted	
+L01	4	@C43	code	C43		n	conflict:a	=	
+L01	5	@PHI	code	PHI		o	conflict:e	unsorted	
+L01	6	@BETA	code	BETA		s	conflict:m	=	
+L01	7	@4PI	code	4PI		d	agrees	=	
+L01	8	@PHI	code	PHI		e	agrees	unsorted	
+L01	9	@PHI	code	PHI		n	conflict:e	unsorted	
+L01	10	@C43	code	C43		u	conflict:a	=	
+L01	11	@HASH4	code	HASH4		b	conflict:d	=	
+L01	12	@H24	code	H24		i	agrees	=	
+L01	13	@PHI	code	PHI		a	conflict:e	unsorted	
+L01	14	@PHI	code	PHI		l	conflict:e	unsorted	
+L01	15	@ZBAR	code	ZBAR		u	conflict:s	=	
+L01	16	@EBR_B	code	EBR_B		c	conflict:l	=	
+L01	17	@PHI	code	PHI		a	conflict:e	unsorted	
+L01	18	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L01	19	@VBAR_A	code	VBAR_A		b	conflict:t	=	
+L01	20	@PHI	code	PHI		o	conflict:e	unsorted	
+L01	21	@PHI	code	PHI		n	conflict:e	unsorted	
+L01	22	@PHI	code	PHI		a	conflict:e	unsorted	
+L01	23	@ZBAR	code	ZBAR		a	conflict:s	=	
+L01	24	@OTHER	code	OTHER		n	conflict:e	=	
+L01	25	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L01	26	@PHI	code	PHI		a	conflict:e	unsorted	
+L01	27	@LOOPS	code	LOOPS		m	conflict:u	unsorted	
+L01	28	@ZBAR	code	ZBAR		a	conflict:s	=	
+L01	29	@OTHER	code	OTHER		n	conflict:e	=	
+L01	30	@4STEM	code	4STEM		d	conflict:n	=	
+L01	31	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L01	32	@C43	code	C43		q	conflict:a	=	
+L01	33	@ZBAR	code	ZBAR		u	conflict:s	=	
+L01	34	@BETA	code	BETA		e	conflict:m	=	
+L01	35	@C43	code	C43		l	conflict:a	=	
+L01	36	@4STEM	code	4STEM		e	conflict:n	=	
+L01	37	@OTHER	code	OTHER		p	conflict:e	=	
+L01	38	@4PI	code	4PI		a	conflict:d	=	
+L01	39	@DBL	code	DBL		p	conflict:e	=	
+L01	40	@OTHER	code	OTHER		e	agrees	=	
+L01	41	@OTHER	code	OTHER		n	conflict:e	=	
+L01	42	@C43	code	C43		o	conflict:a	=	
+L01	43	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L01	44	@ELOOP	code	ELOOP			null-or-unaligned	=	
+L01	45	@ZBAR	code	ZBAR		s	agrees	=	
+L01	46	@C43	code	C43		a	agrees	=	
+L01	47	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L01	48	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L01	49	@H24	code	H24		i	agrees	=	
+L01	50	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L01	51	@PHI	code	PHI		r	conflict:e	unsorted	
+L01	52	@PHI	code	PHI		e	agrees	unsorted	
+L01	53	@BETA	code	BETA		n	conflict:m	=	
+L01	54	@H24	code	H24		u	conflict:i	=	
+L01	55	@ZBAR	code	ZBAR		s	agrees	=	
+L01	56	@C43	code	C43		a	agrees	=	
+L01	57	@C43	code	C43		n	conflict:a	=	
+L01	58	@PHI	code	PHI		o	conflict:e	unsorted	
+L01	59	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L01	60	@ZBAR	code	ZBAR		s	agrees	=	
+L01	61	@OTHER	code	OTHER			null-or-unaligned	=	
+L01	62	@PHI	code	PHI		o	conflict:e	unsorted	
+L01	63	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L01	64	@H24	code	H24		y	conflict:i	=	
+L01	65	@PHI	code	PHI		e	agrees	unsorted	
+L01	66	@ZBAR	code	ZBAR		s	agrees	=	
+L01	67	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L01	68	@PHI	code	PHI		r	conflict:e	unsorted	
+L01	69	@EBR_B	code	EBR_B		l	agrees	=	
+L01	70	@PHI	code	PHI		e	agrees	unsorted	
+L01	71	@ZBAR	code	ZBAR		a	conflict:s	=	
+L02	0	@4STEM	code	4STEM		p	conflict:n	=	
+L02	1	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L02	2	@H24	code	H24		i	agrees	=	
+L02	3	@C43	code	C43		n	conflict:a	=	
+L02	4	@ZBAR	code	ZBAR		s	agrees	=	
+L02	5	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L02	6	@PHI	code	PHI		r	conflict:e	unsorted	v4 sort
+L02	7	@H24	code	H24		i	agrees	=	
+L02	8	@C43	code	C43		n	conflict:a	=	
+L02	9	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L02	10	@H24	code	H24		i	agrees	=	
+L02	11	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L02	12	@C43	code	C43		a	agrees	=	
+L02	13	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L02	14	@H24	code	H24		x	conflict:i	=	
+L02	15	@4PI	code	4PI		d	agrees	=	
+L02	16	@PHI	code	PHI		e	agrees	unsorted	
+L02	17	@C43	code	C43		n	conflict:a	=	
+L02	18	@PHI	code	PHI		o	conflict:e	unsorted	
+L02	19	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L02	20	@VBAR_A	code	VBAR_A		t	agrees	=	
+L02	21	@PHI	code	PHI		r	conflict:e	unsorted	
+L02	22	@PHI	code	PHI		e	agrees	unsorted	
+L02	23	@HASH4	code	HASH4		i	conflict:d	=	
+L02	24	@C43	code	C43		n	conflict:a	=	
+L02	25	@4STEM	code	4STEM		s	conflict:n	=	
+L02	26	@VBAR_A	code	VBAR_A		t	agrees	=	
+L02	27	@PHI	code	PHI		r	conflict:e	unsorted	
+L02	28	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L02	29	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L02	30	@VBAR_A	code	VBAR_A		t	agrees	=	
+L02	31	@H24	code	H24		i	agrees	=	
+L02	32	@PHI	code	PHI		o	conflict:e	unsorted	
+L02	33	@C43	code	C43		n	conflict:a	=	
+L02	34	@EBR_B	code	EBR_B		l	agrees	=	
+L02	35	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L02	36	@PHI	code	PHI		r	conflict:e	unsorted	
+L02	37	@ZBAR	code	ZBAR		s	agrees	=	
+L02	38	@4PI	code	4PI		q	conflict:d	=	
+L02	39	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L02	40	@PHI	code	PHI		e	agrees	unsorted	
+L02	41	@EBR_B	code	EBR_B		l	agrees	=	
+L02	42	@EBR_A	code	EBR_A		l	conflict:s	=	
+L02	43	@PHI	code	PHI		e	agrees	unsorted	
+L02	44	@C43	code	C43		a	agrees	=	
+L02	45	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L02	46	@PHI	code	PHI		r	conflict:e	unsorted	
+L02	47	@H24	code	H24		i	agrees	=	
+L02	48	@VBAR_A	code	VBAR_A		t	agrees	=	
+L02	49	@RSIGN	code	RSIGN		m	agrees	=	
+L02	50	@PHI	code	PHI		u	conflict:e	PHI	v4 sort
+L02	51	@H24	code	H24			null-or-unaligned	=	
+L02	52	@EBR_B	code	EBR_B		l	agrees	=	
+L02	53	@EBR_B	code	EBR_B		t	conflict:l	=	
+L02	54	@PHI	code	PHI		i	conflict:e	unsorted	
+L02	55	@PHI	code	PHI		p	conflict:e	unsorted	
+L02	56	@LOOPS	code	LOOPS		l	conflict:u	unsorted	
+L02	57	@PHI	code	PHI		i	conflict:e	unsorted	
+L02	58	@PHI	code	PHI		e	agrees	unsorted	
+L02	59	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L02	60	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L02	61	@RSIGN	code	RSIGN		m	agrees	=	
+L02	62	@BETA	code	BETA		m	agrees	=	
+L02	63	@LOOPS	code	LOOPS		a	conflict:u	unsorted	
+L02	64	@HASH4	code	HASH4		n	conflict:d	=	
+L02	65	@H24	code	H24		d	conflict:i	=	
+L02	66	@VBAR_A	code	VBAR_A		e	conflict:t	=	
+L02	67	@PHI	code	PHI		i	conflict:e	unsorted	
+L02	68	@ZBAR	code	ZBAR		l	conflict:s	=	
+L03	0	@C43	code	C43		a	agrees	=	
+L03	1	@C43	code	C43		q	conflict:a	=	
+L03	2	@ZBAR	code	ZBAR		u	conflict:s	=	
+L03	3	@OTHER	code	OTHER		e	agrees	=	
+L03	4	@C43	code	C43		n	conflict:a	=	
+L03	5	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	6	@EBR_B	code	EBR_B		l	agrees	=	
+L03	7	@EBR_B	code	EBR_B		l	agrees	=	
+L03	8	@PHI	code	PHI		e	agrees	unsorted	
+L03	9	@C43	code	C43		a	agrees	=	
+L03	10	@C43	code	C43		u	conflict:a	=	
+L03	11	@VBAR_A	code	VBAR_A		t	agrees	=	
+L03	12	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L03	13	@PHI	code	PHI		e	agrees	unsorted	
+L03	14	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L03	15	@LOOPS	code	LOOPS		h	conflict:u	INF	v4 sort
+L03	16	@PHI	code	PHI		o	conflict:e	SBS	v4 sort
+L03	17	@ZBAR	code	ZBAR		s	agrees	=	
+L03	18	@PHI	code	PHI		e	agrees	unsorted	
+L03	19	@EBR_B	code	EBR_B		l	agrees	=	
+L03	20	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	21	@ZBAR	code	ZBAR		y	conflict:s	=	
+L03	22	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L03	23	@PHI	code	PHI		e	agrees	unsorted	
+L03	24	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	25	@VBAR_A	code	VBAR_A		l	conflict:t	=	
+L03	26	@HASH4	code	HASH4		t	conflict:d	=	
+L03	27	@LOOPS	code	LOOPS		d	conflict:u	unsorted	
+L03	28	@4STEM	code	4STEM		o	conflict:n	=	
+L03	29	@C43	code	C43		n	conflict:a	=	
+L03	30	@C43	code	C43		n	conflict:a	=	
+L03	31	@PHI	code	PHI		e	agrees	unsorted	
+L03	32	@PHI	code	PHI		r	conflict:e	unsorted	
+L03	33	@OTHER	code	OTHER			null-or-unaligned	=	
+L03	34	@HASH4	code	HASH4		d	agrees	=	
+L03	35	@H24	code	H24		o	conflict:i	=	
+L03	36	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	37	@PHI	code	PHI			null-or-unaligned	unsorted	
+L03	38	@PHI	code	PHI		b	conflict:e	PHI	H65-H77 tile
+L03	39	@VBAR_A	code	VBAR_A		t	agrees	=	
+L03	40	@H24	code	H24		e	conflict:i	=	
+L03	41	@ZBAR	code	ZBAR		s	agrees	=	
+L03	42	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L03	43	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L03	44	@PHI	code	PHI		e	agrees	unsorted	
+L03	45	@BETA	code	BETA			null-or-unaligned	=	
+L03	46	@BETA	code	BETA		m	agrees	=	
+L03	47	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L03	48	@4PI	code	4PI		n	conflict:d	=	
+L03	49	@VBAR_A	code	VBAR_A		t	agrees	=	
+L03	50	@ZBAR	code	ZBAR		s	agrees	=	
+L03	51	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	52	@H24	code	H24		y	conflict:i	=	
+L03	53	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	54	@C43	code	C43		a	agrees	=	
+L03	55	@4PI	code	4PI		n	conflict:d	=	
+L03	56	@ZBAR	code	ZBAR			null-or-unaligned	=	
+L03	57	@VBAR_A	code	VBAR_A		t	agrees	=	
+L03	58	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L03	59	@PHI	code	PHI		e	agrees	unsorted	
+L03	60	@VBAR_A	code	VBAR_A		t	agrees	=	
+L03	61	@PHI	code	PHI		e	agrees	unsorted	
+L03	62	@PHI	code	PHI		r	conflict:e	unsorted	
+L03	63	@PHI	code	PHI		e	agrees	unsorted	
+L03	64	@ZBAR	code	ZBAR		s	agrees	=	
+L03	65	@PHI	code	PHI		o	conflict:e	unsorted	
+L03	66	@EBR_B	code	EBR_B		l	agrees	=	
+L03	67	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L03	68	@VBAR_A	code	VBAR_A		t	agrees	=	
+L03	69	@H24	code	H24		i	agrees	=	
+L03	70	@PHI	code	PHI		o	conflict:e	unsorted	
+L03	71	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L04	0	@C43	code	C43		a	agrees	=	
+L04	1	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L04	2	@PHI	code	PHI		o	conflict:e	unsorted	
+L04	3	@C43	code	C43		n	conflict:a	=	
+L04	4	@PHI	code	PHI		e	agrees	unsorted	
+L04	5	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L04	6	@LOOPS	code	LOOPS		h	conflict:u	INF	v4 sort
+L04	7	@H24	code	H24		i	agrees	=	
+L04	8	@PHI	code	PHI		e	agrees	unsorted	
+L04	9	@PHI	code	PHI		r	conflict:e	unsorted	
+L04	10	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L04	11	@H24	code	H24		i	agrees	=	
+L04	12	@BETA	code	BETA		m	agrees	=	
+L04	13	@C43	code	C43		a	agrees	=	
+L04	14	@C43	code	C43		n	conflict:a	=	
+L04	15	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L04	16	@LOOPS	code	LOOPS		h	conflict:u	PHI	v4 sort
+L04	17	@PHI	code	PHI		e	agrees	unsorted	
+L04	18	@C43	code	C43		a	agrees	=	
+L04	19	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L04	20	@HASH4	code	HASH4		d	agrees	=	
+L04	21	@H24	code	H24		i	agrees	=	
+L04	22	@PHI	code	PHI		e	agrees	unsorted	
+L04	23	@C43	code	C43		n	conflict:a	=	
+L04	24	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L04	25	@PHI	code	PHI		e	agrees	unsorted	
+L04	26	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L04	27	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L04	28	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L04	29	@C43	code	C43		a	agrees	=	
+L04	30	@OTHER	code	OTHER		s	conflict:e	=	
+L04	31	@4TRI	code	4TRI		a	conflict:n	4TRI	v4 sort
+L04	32	@C43	code	C43		n	conflict:a	=	
+L04	33	@PHI	code	PHI		e	agrees	PHI	v4 sort
+L04	34	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L04	35	@PHI	code	PHI		e	agrees	unsorted	
+L04	36	@LOOPS	code	LOOPS		q	conflict:u	SBS	v4 sort
+L04	37	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L04	38	@H24	code	H24		i	agrees	=	
+L04	39	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L04	40	@VBAR_A	code	VBAR_A		t	agrees	=	
+L04	41	@PHI	code	PHI		e	agrees	unsorted	
+L04	42	@ZBAR	code	ZBAR		s	agrees	=	
+L04	43	@VBAR_A	code	VBAR_A		t	agrees	=	
+L04	44	@PHI	code	PHI		r	conflict:e	unsorted	
+L04	45	@PHI	code	PHI		e	agrees	unsorted	
+L04	46	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L04	47	@EBR_B	code	EBR_B		l	agrees	=	
+L04	48	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L04	49	@ZBAR	code	ZBAR		s	agrees	=	
+L04	50	@ISH	code	ISH			null-or-unaligned	=	
+L04	51	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L04	52	@C43	code	C43		a	agrees	=	
+L04	53	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L04	54	@PHI	code	PHI		r	conflict:e	unsorted	
+L04	55	@C43	code	C43		a	agrees	=	
+L04	56	@PHI	code	PHI		b	conflict:e	SBS	H65-H77 tile
+L04	57	@EBR_B	code	EBR_B		l	agrees	=	
+L04	58	@PHI	code	PHI			null-or-unaligned	unsorted	
+L04	59	@PHI	code	PHI		e	agrees	unsorted	
+L04	60	@ZBAR	code	ZBAR			null-or-unaligned	=	
+L04	61	@4STEM	code	4STEM		a	conflict:n	=	
+L04	62	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L04	63	@PHI	code	PHI		e	agrees	unsorted	
+L04	64	@4STEM	code	4STEM		c	conflict:n	=	
+L04	65	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L04	66	@4STEM	code	4STEM		p	conflict:n	=	
+L04	67	@EBR_B	code	EBR_B		l	agrees	=	
+L05	0	@LOOPS	code	LOOPS			null-or-unaligned	INF	v4 sort
+L05	1	@ZBAR	code	ZBAR			null-or-unaligned	=	
+L05	2	@4PI	code	4PI		d	agrees	=	
+L05	3	@PHI	code	PHI		e	agrees	unsorted	
+L05	4	@4PI	code	4PI		d	agrees	=	
+L05	5	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L05	6	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L05	7	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L05	8	@PHI	code	PHI		e	agrees	unsorted	
+L05	9	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L05	10	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L05	11	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L05	12	@PHI	code	PHI		e	agrees	unsorted	
+L05	13	@OTHER	code	OTHER		e	agrees	=	
+L05	14	@C43	code	C43		n	conflict:a	=	
+L05	15	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L05	16	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L05	17	@ZBAR	code	ZBAR		s	agrees	=	
+L05	18	@EBR_B	code	EBR_B		l	agrees	=	
+L05	19	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L05	20	@EBR_B	code	EBR_B		y	conflict:l	=	
+L05	21	@C43	code	C43		a	agrees	=	
+L05	22	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L05	23	@PHI	code	PHI		o	conflict:e	unsorted	
+L05	24	@C43	code	C43		n	conflict:a	=	
+L05	25	@ZBAR	code	ZBAR		s	agrees	=	
+L05	26	@4TRI	code	4TRI		d	conflict:n	4TRI	v4 sort
+L05	27	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L05	28	@HASH4	code	HASH4		d	agrees	=	
+L05	29	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L05	30	@H24	code	H24		i	agrees	=	
+L05	31	@VBAR_A	code	VBAR_A		t	agrees	=	
+L05	32	@4TRI	code	4TRI		s	conflict:n	4TRI	v4 sort
+L05	33	@PHI	code	PHI		i	conflict:e	PHI	v4 sort
+L05	34	@ZBAR	code	ZBAR		t	conflict:s	=	
+L05	35	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L05	36	@PHI	code	PHI		e	agrees	unsorted	
+L05	37	@EBR_B	code	EBR_B		s	conflict:l	=	
+L05	38	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L05	39	@ZBAR	code	ZBAR		s	agrees	=	
+L05	40	@4TRI	code	4TRI		r	conflict:n	unsorted	
+L05	41	@LOOPS	code	LOOPS		q	conflict:u	INF	v4 sort
+L05	42	@H24	code	H24		u	conflict:i	=	
+L05	43	@C43	code	C43		a	agrees	=	
+L05	44	@VBAR_A	code	VBAR_A		t	agrees	=	
+L05	45	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L05	46	@PHI	code	PHI		e	agrees	unsorted	
+L05	47	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L05	48	@PHI	code	PHI		o	conflict:e	unsorted	
+L05	49	@H24	code	H24		i	agrees	=	
+L05	50	@HASH4	code	HASH4		n	conflict:d	=	
+L05	51	@RSIGN	code	RSIGN		c	conflict:m	=	
+L05	52	@VBAR_A	code	VBAR_A		t	agrees	=	
+L05	53	@ZBAR	code	ZBAR		z	conflict:s	=	
+L05	54	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L05	55	@PHI	code	PHI		r	conflict:e	unsorted	
+L05	56	@H24	code	H24		i	agrees	=	
+L05	57	@C43	code	C43		n	conflict:a	=	
+L05	58	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L05	59	@H24	code	H24		i	agrees	=	
+L05	60	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L05	61	@C43	code	C43		a	agrees	=	
+L05	62	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L05	63	@EBR_B	code	EBR_B		l	agrees	=	
+L05	64	@H24	code	H24		x	conflict:i	=	
+L05	65	@4PI	code	4PI		d	agrees	=	
+L05	66	@PHI	code	PHI		e	agrees	unsorted	
+L05	67	@LOOPS	code	LOOPS		n	conflict:u	unsorted	
+L06	0	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L06	1	@ZBAR	code	ZBAR			null-or-unaligned	=	
+L06	2	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L06	3	@PHI	code	PHI			null-or-unaligned	unsorted	
+L06	4	@PHI	code	PHI			null-or-unaligned	unsorted	
+L06	5	@H24	code	H24		i	agrees	=	
+L06	6	@C43	code	C43		n	conflict:a	=	
+L06	7	@ZBAR	code	ZBAR		s	agrees	=	
+L06	8	@VBAR_A	code	VBAR_A		t	agrees	=	
+L06	9	@PHI	code	PHI		r	conflict:e	unsorted	
+L06	10	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L06	11	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L06	12	@VBAR_A	code	VBAR_A		t	agrees	=	
+L06	13	@H24	code	H24		i	agrees	=	
+L06	14	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L06	15	@C43	code	C43		n	conflict:a	=	
+L06	16	@4STEM	code	4STEM		q	conflict:n	=	
+L06	17	@EBR_B	code	EBR_B		l	agrees	=	
+L06	18	@C43	code	C43		a	agrees	=	
+L06	19	@H24	code	H24		i	agrees	=	
+L06	20	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L06	21	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L06	22	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L06	23	@H24	code	H24		i	agrees	=	
+L06	24	@C43	code	C43		n	conflict:a	=	
+L06	25	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L06	26	@H24	code	H24		i	agrees	=	
+L06	27	@4TRI	code	4TRI		n	agrees	unsorted	
+L06	28	@H24	code	H24		i	agrees	=	
+L06	29	@RSIGN	code	RSIGN		m	agrees	=	
+L06	30	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L06	31	@4TRI	code	4TRI		n	agrees	unsorted	
+L06	32	@VBAR_A	code	VBAR_A		t	agrees	=	
+L06	33	@4TRI	code	4TRI		d	conflict:n	4TRI	v4 sort
+L06	34	@H24	code	H24		i	agrees	=	
+L06	35	@ZBAR	code	ZBAR		f	agrees	=	
+L06	36	@H24	code	H24		i	agrees	=	
+L06	37	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L06	38	@H24	code	H24		i	agrees	=	
+L06	39	@EBR_B	code	EBR_B		l	agrees	=	
+L06	40	@PHI	code	PHI		l	conflict:e	PHI	v4 sort
+L06	41	@ZBAR	code	ZBAR		e	conflict:s	=	
+L06	42	@CH	code	CH		e	agrees	=	
+L06	43	@HASH4	code	HASH4		d	agrees	=	
+L06	44	@PHI	code	PHI		e	agrees	unsorted	
+L06	45	@H24	code	H24		x	conflict:i	=	
+L06	46	@RSIGN	code	RSIGN		t	conflict:m	=	
+L06	47	@PHI	code	PHI		r	conflict:e	unsorted	
+L06	48	@PHI	code	PHI		e	agrees	unsorted	
+L06	49	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L06	50	@RSIGN	code	RSIGN		m	agrees	=	
+L06	51	@PHI	code	PHI		e	agrees	unsorted	
+L06	52	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L06	53	@PHI	code	PHI		o	conflict:e	unsorted	
+L06	54	@C43	code	C43		n	conflict:a	=	
+L06	55	@4TRI	code	4TRI		s	conflict:n	4TRI	v4 sort
+L06	56	@PHI	code	PHI		e	agrees	unsorted	
+L06	57	@4PI	code	4PI		q	conflict:d	=	
+L06	58	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L06	59	@PHI	code	PHI		e	agrees	unsorted	
+L06	60	@C43	code	C43		n	conflict:a	=	
+L06	61	@4TRI	code	4TRI		c	conflict:n	4TRI	H65-H77 tile
+L06	62	@PHI	code	PHI		e	agrees	unsorted	
+L06	63	@OTHER	code	OTHER		b	conflict:e	=	
+L06	64	@LOOPS	code	LOOPS		i	conflict:u	unsorted	
+L06	65	@PHI	code	PHI		e	agrees	unsorted	
+L06	66	@LOOPS	code	LOOPS		n	conflict:u	PHI	v4 sort
+L07	0	@EBR_B	code	EBR_B		l	agrees	=	
+L07	1	@C43	code	C43		a	agrees	=	
+L07	2	@HASH4	code	HASH4		q	conflict:d	=	
+L07	3	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L07	4	@C43	code	C43		a	agrees	=	
+L07	5	@EBR_B	code	EBR_B		l	agrees	=	
+L07	6	@H24	code	H24		i	agrees	=	
+L07	7	@VBAR_A	code	VBAR_A		t	agrees	=	
+L07	8	@PHI	code	PHI		e	agrees	unsorted	
+L07	9	@OTHER	code	OTHER			null-or-unaligned	=	
+L07	10	@HASH4	code	HASH4		d	agrees	=	
+L07	11	@PHI	code	PHI		e	agrees	unsorted	
+L07	12	@EBR_B	code	EBR_B		s	conflict:l	=	
+L07	13	@C43	code	C43		a	agrees	=	
+L07	14	@C43	code	C43		n	conflict:a	=	
+L07	15	@C43	code	C43		a	agrees	=	
+L07	16	@VBAR_A	code	VBAR_A		t	agrees	=	
+L07	17	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L07	18	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L07	19	@PHI	code	PHI		e	agrees	unsorted	
+L07	20	@OTHER	code	OTHER		l	conflict:e	=	
+L07	21	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L07	22	@C43	code	C43		a	agrees	=	
+L07	23	@PHI	code	PHI		e	agrees	unsorted	
+L07	24	@ZBAR	code	ZBAR		s	agrees	=	
+L07	25	@VBAR_A	code	VBAR_A		t	agrees	=	
+L07	26	@PHI	code	PHI		e	agrees	unsorted	
+L07	27	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L07	28	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L07	29	@PHI	code	PHI		r	conflict:e	unsorted	
+L07	30	@PHI	code	PHI		t	conflict:e	unsorted	
+L07	31	@4TRI	code	4TRI		g	conflict:n	4TRI	v4 sort
+L07	32	@PHI	code	PHI		r	conflict:e	unsorted	
+L07	33	@ZBAR	code	ZBAR		a	conflict:s	=	
+L07	34	@4TRI	code	4TRI		u	conflict:n	4TRI	v4 sort
+L07	35	@PHI	code	PHI		e	agrees	unsorted	
+L07	36	@PHI	code	PHI		p	conflict:e	unsorted	
+L07	37	@LOOPS	code	LOOPS		o	conflict:u	unsorted	v4 sort
+L07	38	@RSIGN	code	RSIGN		t	conflict:m	=	
+L07	39	@PHI	code	PHI		e	agrees	unsorted	
+L07	40	@ZBAR	code	ZBAR		s	agrees	=	
+L07	41	@VBAR_A	code	VBAR_A		t	agrees	=	
+L07	42	@C43	code	C43		a	agrees	=	
+L07	43	@VBAR_A	code	VBAR_A		t	agrees	=	
+L07	44	@H24	code	H24		i	agrees	=	
+L07	45	@PHI	code	PHI		o	conflict:e	SBS	v4 sort
+L07	46	@C43	code	C43		n	conflict:a	=	
+L07	47	@ZBAR	code	ZBAR		s	agrees	=	
+L07	48	@4TRI	code	4TRI		q	conflict:n	4TRI	v4 sort
+L07	49	@EBR_B	code	EBR_B		l	agrees	=	
+L07	50	@C43	code	C43		n	conflict:a	=	
+L07	51	@C43	code	C43		a	agrees	=	
+L07	52	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L07	53	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L07	54	@H24	code	H24		i	agrees	=	
+L07	55	@VBAR_A	code	VBAR_A		t	agrees	=	
+L07	56	@C43	code	C43		a	agrees	=	
+L07	57	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L07	58	@EBR_B	code	EBR_B		l	agrees	=	
+L07	59	@EBR_A	code	EBR_A		r	conflict:s	=	
+L07	60	@PHI	code	PHI		e	agrees	unsorted	
+L07	61	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L07	62	@C43	code	C43		a	agrees	=	
+L07	63	@ZBAR	code	ZBAR		s	agrees	=	
+L07	64	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L07	65	@ZBAR	code	ZBAR		s	agrees	=	
+L07	66	@H24	code	H24		i	agrees	=	
+L07	67	@PHI	code	PHI		o	conflict:e	unsorted	
+L07	68	@C43	code	C43		n	conflict:a	=	
+L08	0	@PHI	code	PHI		e	agrees	unsorted	
+L08	1	@C43	code	C43		n	conflict:a	=	
+L08	2	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L08	3	@PHI	code	PHI		e	agrees	unsorted	
+L08	4	@EBR_B	code	EBR_B		l	agrees	=	
+L08	5	@C43	code	C43		a	agrees	=	
+L08	6	@C43	code	C43		n	conflict:a	=	
+L08	7	@PHI	code	PHI		e	agrees	unsorted	
+L08	8	@C43	code	C43		a	agrees	=	
+L08	9	@LOOPS	code	LOOPS		n	conflict:u	INF	v4 sort
+L08	10	@RSIGN	code	RSIGN		t	conflict:m	=	
+L08	11	@PHI	code	PHI		m	conflict:e	unsorted	
+L08	12	@4STEM	code	4STEM		o	conflict:n	=	
+L08	13	@H24	code	H24		i	agrees	=	
+L08	14	@C43	code	C43		n	conflict:a	=	
+L08	15	@ZBAR	code	ZBAR		s	agrees	=	
+L08	16	@C43	code	C43		n	conflict:a	=	
+L08	17	@LOOPS	code	LOOPS		o	conflict:u	unsorted	H65-H77 tile
+L08	18	@PHI	code	PHI		u	conflict:e	unsorted	
+L08	19	@OTHER	code	OTHER		s	conflict:e	=	
+L08	20	@C43	code	C43		a	agrees	=	
+L08	21	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L08	22	@PHI	code	PHI		o	conflict:e	unsorted	
+L08	23	@C43	code	C43		n	conflict:a	=	
+L08	24	@ZBAR	code	ZBAR		s	agrees	=	
+L08	25	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L08	26	@PHI	code	PHI		e	agrees	unsorted	
+L08	27	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L08	28	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L08	29	@RSIGN	code	RSIGN		n	conflict:m	=	
+L08	30	@4STEM	code	4STEM		e	conflict:n	=	
+L08	31	@PHI	code	PHI		u	conflict:e	PHI	v4 sort
+L08	32	@CA	code	CA		q	conflict:c	=	
+L08	33	@DBL	code	DBL		u	conflict:e	=	
+L08	34	@ZHOOK	code	ZHOOK		e	conflict:a	=	
+L08	35	@RSIGN	code	RSIGN		p	conflict:m	=	
+L08	36	@PHI	code	PHI		o	conflict:e	unsorted	
+L08	37	@ZBAR	code	ZBAR		u	conflict:s	=	
+L08	38	@4TRI	code	4TRI		r	conflict:n	4TRI	v4 sort
+L08	39	@LOOPS	code	LOOPS		l	conflict:u	PHI	v4 sort
+L08	40	@PHI	code	PHI		e	agrees	unsorted	
+L08	41	@LOOPS	code	LOOPS		s	conflict:u	unsorted	
+L08	42	@H24	code	H24		d	conflict:i	=	
+L08	43	@OTHER	code	OTHER		e	agrees	=	
+L08	44	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L08	45	@PHI	code	PHI		r	conflict:e	unsorted	
+L08	46	@PHI	code	PHI		e	agrees	PHI	v4 sort
+L08	47	@RSIGN	code	RSIGN		m	agrees	=	
+L08	48	@H24	code	H24		i	agrees	=	
+L08	49	@PHI	code	PHI		e	agrees	unsorted	
+L08	50	@PHI	code	PHI		r	conflict:e	unsorted	
+L08	51	@OTHER	code	OTHER		s	conflict:e	=	
+L08	52	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L08	53	@OTHER	code	OTHER		u	conflict:e	=	
+L08	54	@H24	code	H24			null-or-unaligned	=	
+L08	55	@PHI	code	PHI			null-or-unaligned	unsorted	
+L08	56	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L08	57	@BETA	code	BETA		d	conflict:m	=	
+L08	58	@H24	code	H24		i	agrees	=	
+L08	59	@EBR_B	code	EBR_B		c	conflict:l	=	
+L08	60	@C43	code	C43		t	conflict:a	=	
+L08	61	@OTHER	code	OTHER		z	conflict:e	=	
+L08	62	@H24	code	H24		i	agrees	=	
+L08	63	@ZBAR	code	ZBAR		l	conflict:s	=	
+L09	0	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L09	1	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L09	2	@EBR_B	code	EBR_B		l	agrees	=	
+L09	3	@VBAR_A	code	VBAR_A		t	agrees	=	
+L09	4	@4STEM	code	4STEM		n	agrees	=	
+L09	5	@INF	code	INF		u	agrees	=	
+L09	6	@EBR_B	code	EBR_B		l	agrees	=	
+L09	7	@PHI	code	PHI		e	agrees	unsorted	
+L09	8	@BETA	code	BETA		m	agrees	=	
+L09	9	@PHI	code	PHI		e	agrees	unsorted	
+L09	10	@4TRI	code	4TRI		n	agrees	unsorted	
+L09	11	@VBAR_A	code	VBAR_A		t	agrees	=	
+L09	12	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L09	13	@PHI	code	PHI		e	agrees	unsorted	
+L09	14	@4STEM	code	4STEM		n	agrees	=	
+L09	15	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L09	16	@PHI	code	PHI		e	agrees	unsorted	
+L09	17	@PHI	code	PHI		e	agrees	unsorted	
+L09	18	@OTHER	code	OTHER			null-or-unaligned	=	
+L09	19	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L09	20	@PHI	code	PHI		e	agrees	unsorted	
+L09	21	@EBR_B	code	EBR_B		s	conflict:l	=	
+L09	22	@VBAR_A	code	VBAR_A		t	agrees	=	
+L09	23	@H24	code	H24		a	conflict:i	=	
+L09	24	@4TRI	code	4TRI		n	agrees	unsorted	
+L09	25	@VBAR_A	code	VBAR_A		t	agrees	=	
+L09	26	@PHI	code	PHI		o	conflict:e	unsorted	
+L09	27	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L09	28	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L09	29	@PHI	code	PHI		e	agrees	unsorted	
+L09	30	@VBAR_A	code	VBAR_A		t	agrees	=	
+L09	31	@EBR_B	code	EBR_B		l	agrees	=	
+L09	32	@H24	code	H24		i	agrees	=	
+L09	33	@OTHER	code	OTHER		b	conflict:e	=	
+L09	34	@PHI	code	PHI		e	agrees	unsorted	
+L09	35	@PHI	code	PHI		e	agrees	unsorted	
+L09	36	@BETA	code	BETA		m	agrees	=	
+L09	37	@PHI	code	PHI		e	agrees	unsorted	
+L09	38	@4STEM	code	4STEM		n	agrees	=	
+L09	39	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L09	40	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L09	41	@EBR_B	code	EBR_B		u	conflict:l	=	
+L09	42	@ELOOP	code	ELOOP		r	agrees	=	
+L09	43	@PHI	code	PHI		l	conflict:e	unsorted	
+L09	44	@LOOPBAR	code	LOOPBAR		e	single	=	
+L09	45	@HASH4	code	HASH4		r	conflict:d	=	
+L09	46	@H24	code	H24		o	conflict:i	=	
+L09	47	@VBAR_A	code	VBAR_A		y	conflict:t	=	
+L09	48	@4STEM	code	4STEM		d	conflict:n	=	
+L09	49	@PHI	code	PHI		e	agrees	unsorted	
+L09	50	@OTHER	code	OTHER		n	conflict:e	=	
+L09	51	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L09	52	@LOOPSTEM1	code	LOOPSTEM1		u	conflict:q	=	
+L09	53	@EBR_B	code	EBR_B		a	conflict:l	=	
+L09	54	@4STEM	code	4STEM		r	conflict:n	=	
+L09	55	@4TRI	code	4TRI		r	conflict:n	unsorted	
+L09	56	@4STEM	code	4STEM		e	conflict:n	=	
+L09	57	@LOOPS	code	LOOPS		d	conflict:u	unsorted	
+L09	58	@H24	code	H24		i	agrees	=	
+L09	59	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L09	60	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L09	61	@4STEM	code	4STEM		n	agrees	=	
+L09	62	@4STEM	code	4STEM		t	conflict:n	=	
+L09	63	@4STEM	code	4STEM		q	conflict:n	=	
+L09	64	@PHI	code	PHI		e	agrees	unsorted	
+L09	65	@4TRI	code	4TRI		l	conflict:n	unsorted	
+L09	66	@PHI	code	PHI		a	conflict:e	unsorted	
+L10	0	@H24	code	H24		d	conflict:i	=	
+L10	1	@H24	code	H24		i	agrees	=	
+L10	2	@PHI	code	PHI		e	agrees	unsorted	
+L10	3	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L10	4	@VBAR_A	code	VBAR_A		l	conflict:t	=	
+L10	5	@PHI	code	PHI		e	agrees	unsorted	
+L10	6	@EBR_B	code	EBR_B		s	conflict:l	=	
+L10	7	@VBAR_A	code	VBAR_A		t	agrees	=	
+L10	8	@4TRI	code	4TRI		n	agrees	unsorted	
+L10	9	@4STEM	code	4STEM		d	conflict:n	=	
+L10	10	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L10	11	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L10	12	@H24	code	H24		i	agrees	=	
+L10	13	@EBR_B	code	EBR_B		l	agrees	=	
+L10	14	@EBR_B	code	EBR_B		l	agrees	=	
+L10	15	@INF	code	INF		u	agrees	=	
+L10	16	@EBR_B	code	EBR_B		y	conflict:l	=	
+L10	17	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L10	18	@EBR_B	code	EBR_B		l	agrees	=	
+L10	19	@4STEM	code	4STEM		a	conflict:n	=	
+L10	20	@H24	code	H24		i	agrees	=	
+L10	21	@VBAR_A	code	VBAR_A		t	agrees	=	
+L10	22	@HASH4	code	HASH4		q	conflict:d	=	
+L10	23	@DBL	code	DBL		e	agrees	=	
+L10	24	@PHI	code	PHI		e	agrees	unsorted	
+L10	25	@EBR_B	code	EBR_B		l	agrees	=	
+L10	26	@EBR_B	code	EBR_B		l	agrees	=	
+L10	27	@PHI	code	PHI		e	agrees	unsorted	
+L10	28	@EBR_B	code	EBR_B		l	agrees	=	
+L10	29	@PHI	code	PHI		e	agrees	unsorted	
+L10	30	@4STEM	code	4STEM		p	conflict:n	=	
+L10	31	@PHI	code	PHI		e	agrees	unsorted	
+L10	32	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L10	33	@EBR_B	code	EBR_B		l	agrees	=	
+L10	34	@VBAR_A	code	VBAR_A		t	agrees	=	
+L10	35	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L10	36	@4STEM	code	4STEM		a	conflict:n	=	
+L10	37	@H24	code	H24		i	agrees	=	
+L10	38	@PHI	code	PHI		r	conflict:e	unsorted	
+L10	39	@PHI	code	PHI		e	agrees	unsorted	
+L10	40	@OTHER	code	OTHER		r	conflict:e	=	
+L10	41	@PHI	code	PHI		e	agrees	unsorted	
+L10	42	@PHI	code	PHI		o	conflict:e	unsorted	
+L10	43	@4TRI	code	4TRI		g	conflict:n	unsorted	
+L10	44	@LOOPS	code	LOOPS		n	conflict:u	unsorted	
+L10	45	@VBAR_A	code	VBAR_A		o	conflict:t	=	
+L10	46	@4STEM	code	4STEM		i	conflict:n	=	
+L10	47	@ZBAR	code	ZBAR		s	agrees	=	
+L10	48	@LOOPS	code	LOOPS		t	conflict:u	unsorted	
+L10	49	@PHI	code	PHI		r	conflict:e	unsorted	
+L10	50	@H24	code	H24		e	conflict:i	=	
+L10	51	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L10	52	@VBAR_A	code	VBAR_A		o	conflict:t	=	
+L10	53	@PHI	code	PHI		y	conflict:e	unsorted	
+L10	54	@PHI	code	PHI		d	conflict:e	unsorted	
+L10	55	@PHI	code	PHI		e	agrees	unsorted	
+L10	56	@LOOPS	code	LOOPS		f	conflict:u	unsorted	
+L10	57	@EBR_B	code	EBR_B		r	conflict:l	=	
+L10	58	@PHI	code	PHI		a	conflict:e	unsorted	
+L10	59	@4STEM	code	4STEM		n	agrees	=	
+L10	60	@OTHER	code	OTHER		c	conflict:e	=	
+L10	61	@OTHER	code	OTHER		e	agrees	=	
+L10	62	@BETA	code	BETA		m	agrees	=	
+L10	63	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L10	64	@H24	code	H24		i	agrees	=	
+L10	65	@VBAR_B	code	VBAR_B		s	agrees	=	
+L10	66	@DBL	code	DBL		q	conflict:e	=	
+L10	67	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L10	68	@PHI	code	PHI		e	agrees	unsorted	
+L10	69	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L11	0	@LOOPS	code	LOOPS		t	conflict:u	SBS	v4 sort
+L11	1	@H24	code	H24		p	conflict:i	=	
+L11	2	@VBAR_B	code	VBAR_B		a	conflict:s	=	
+L11	3	@OTHER	code	OTHER		r	conflict:e	=	
+L11	4	@EBR_A	code	EBR_A		l	conflict:s	=	
+L11	5	@PHI	code	PHI		e	agrees	unsorted	
+L11	6	@BETA	code	BETA		m	agrees	=	
+L11	7	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L11	8	@EBR_B	code	EBR_B		y	conflict:l	=	
+L11	9	@PHI	code	PHI		e	agrees	unsorted	
+L11	10	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L11	11	@HASH4	code	HASH4		d	agrees	=	
+L11	12	@PHI	code	PHI		e	agrees	unsorted	
+L11	13	@EBR_B	code	EBR_B		l	agrees	=	
+L11	14	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L11	15	@EBR_B	code	EBR_B		y	conflict:l	=	
+L11	16	@VBAR_B	code	VBAR_B		s	agrees	=	
+L11	17	@PHI	code	PHI		o	conflict:e	unsorted	
+L11	18	@4STEM	code	4STEM		n	agrees	=	
+L11	19	@LOOPS	code	LOOPS		t	conflict:u	INF	v4 sort
+L11	20	@H24	code	H24		i	agrees	=	
+L11	21	@4TRI	code	4TRI		t	conflict:n	4TRI	v4 sort
+L11	22	@4STEM	code	4STEM		e	conflict:n	=	
+L11	23	@H24	code	H24		r	conflict:i	=	
+L11	24	@PHI	code	PHI		q	conflict:e	unsorted	
+L11	25	@PHI	code	PHI		u	conflict:e	PHI	v4 sort
+L11	26	@DBL	code	DBL		e	agrees	=	
+L11	27	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L11	28	@EBR_B	code	EBR_B		l	agrees	=	
+L11	29	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L11	30	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L11	31	@VBAR_A	code	VBAR_A		t	agrees	=	
+L11	32	@PHI	code	PHI		o	conflict:e	unsorted	
+L11	33	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L11	34	@OTHER	code	OTHER		t	conflict:e	=	
+L11	35	@H24	code	H24			null-or-unaligned	=	
+L11	36	@EBR_B	code	EBR_B		e	conflict:l	=	
+L11	37	@OTHER	code	OTHER		t	conflict:e	=	
+L11	38	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L11	39	@PHI	code	PHI		e	agrees	unsorted	
+L11	40	@VBAR_B	code	VBAR_B		s	agrees	=	
+L11	41	@H24	code	H24		i	agrees	=	
+L11	42	@PHI	code	PHI		o	conflict:e	unsorted	
+L11	43	@PHI	code	PHI		n	conflict:e	unsorted	
+L11	44	@EBR_B	code	EBR_B		l	agrees	=	
+L11	45	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L11	46	@BETA	code	BETA		m	agrees	=	
+L11	47	@PHI	code	PHI		o	conflict:e	unsorted	
+L11	48	@PHI	code	PHI		r	conflict:e	unsorted	
+L11	49	@VBAR_A	code	VBAR_A		t	agrees	=	
+L11	50	@HASH4	code	HASH4		d	agrees	=	
+L11	51	@PHI	code	PHI		e	agrees	unsorted	
+L11	52	@VBAR_B	code	VBAR_B		a	conflict:s	=	
+L11	53	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L11	54	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L11	55	@VBAR_A	code	VBAR_A		l	conflict:t	=	
+L11	56	@PHI	code	PHI		t	conflict:e	unsorted	
+L11	57	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L11	58	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L11	59	@4STEM	code	4STEM		e	conflict:n	=	
+L11	60	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L11	61	@PHI	code	PHI		e	agrees	unsorted	
+L11	62	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L11	63	@4STEM	code	4STEM		a	conflict:n	=	
+L11	64	@BETA	code	BETA		m	agrees	=	
+L11	65	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L11	66	@H24	code	H24		i	agrees	=	
+L11	67	@EBR_B	code	EBR_B		s	conflict:l	=	
+L11	68	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L12	0	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L12	1	@H24	code	H24			null-or-unaligned	=	
+L12	2	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L12	3	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L12	4	@PHI	code	PHI			null-or-unaligned	PHI	v4 sort
+L12	5	@VBAR_B	code	VBAR_B			null-or-unaligned	=	
+L12	6	@VBAR_A	code	VBAR_A		t	agrees	=	
+L12	7	@H24	code	H24		i	agrees	=	
+L12	8	@PHI	code	PHI		e	agrees	unsorted	
+L12	9	@4TRI	code	4TRI		n	agrees	unsorted	
+L12	10	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L12	11	@EBR_B	code	EBR_B		e	conflict:l	=	
+L12	12	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L12	13	@4TRI	code	4TRI		a	conflict:n	4HOOK	H65-H77 tile
+L12	14	@4TRI	code	4TRI		n	agrees	unsorted	
+L12	15	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L12	16	@OTHER	code	OTHER			null-or-unaligned	=	
+L12	17	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L12	18	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L12	19	@H24	code	H24		i	agrees	=	
+L12	20	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L12	21	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L12	22	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L12	23	@4STEM	code	4STEM		n	agrees	=	
+L12	24	@4TRI	code	4TRI		c	conflict:n	4TRI	H65-H77 tile
+L12	25	@PHI	code	PHI		e	agrees	unsorted	
+L12	26	@OTHER	code	OTHER			null-or-unaligned	=	
+L12	27	@PHI	code	PHI		e	agrees	unsorted	
+L12	28	@VBAR_A	code	VBAR_A		t	agrees	=	
+L12	29	@OTHER	code	OTHER			null-or-unaligned	=	
+L12	30	@VBAR_B	code	VBAR_B		s	agrees	=	
+L12	31	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L12	32	@4TRI	code	4TRI		n	agrees	unsorted	
+L12	33	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L12	34	@EBR_B	code	EBR_B		a	conflict:l	=	
+L12	35	@OTHER	code	OTHER		u	conflict:e	=	
+L12	36	@4TRI	code	4TRI		c	conflict:n	4HOOK	H65-H77 tile
+L12	37	@LOOPS	code	LOOPS			null-or-unaligned	INF	v4 sort
+L12	38	@VBAR_A	code	VBAR_A		t	agrees	=	
+L12	39	@PHI	code	PHI		o	conflict:e	unsorted	
+L12	40	@PHI	code	PHI		r	conflict:e	unsorted	
+L12	41	@H24	code	H24		i	agrees	=	
+L12	42	@ELOOP	code	ELOOP		t	conflict:r	=	
+L12	43	@PHI	code	PHI		e	agrees	unsorted	
+L12	44	@OTHER	code	OTHER		a	conflict:e	=	
+L12	45	@CA	code	CA			null-or-unaligned	=	
+L12	46	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L12	47	@HASH4	code	HASH4		n	conflict:d	=	
+L12	48	@OTHER	code	OTHER		c	conflict:e	=	
+L12	49	@PHI	code	PHI		o	conflict:e	unsorted	
+L12	50	@PHI	code	PHI		r	conflict:e	unsorted	
+L12	51	@PHI	code	PHI		e	agrees	unsorted	
+L12	52	@VBAR_B	code	VBAR_B		s	agrees	=	
+L12	53	@HASH4	code	HASH4		q	conflict:d	=	
+L12	54	@EBR_B	code	EBR_B		l	agrees	=	
+L12	55	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L12	56	@PHI	code	PHI		o	conflict:e	unsorted	
+L12	57	@H24	code	H24		i	agrees	=	
+L12	58	@VBAR_A	code	VBAR_A		t	agrees	=	
+L12	59	@HASH4	code	HASH4		d	agrees	=	
+L12	60	@LOOPS	code	LOOPS		h	conflict:u	unsorted	v4 sort
+L12	61	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L12	62	@BETA	code	BETA		m	agrees	=	
+L12	63	@PHI	code	PHI		e	agrees	unsorted	
+L12	64	@PHI	code	PHI		u	conflict:e	unsorted	
+L12	65	@PHI	code	PHI		r	conflict:e	INF	v4 sort
+L12	66	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L12	67	@VBAR_B	code	VBAR_B		s	agrees	=	
+L12	68	@VBAR_B	code	VBAR_B		l	conflict:s	=	
+L12	69	@PHI	code	PHI		e	agrees	unsorted	
+L12	70	@VBAR_B	code	VBAR_B			null-or-unaligned	=	
+L13	0	@PHI	code	PHI		e	agrees	unsorted	
+L13	1	@PHI	code	PHI		n	conflict:e	unsorted	
+L13	2	@VBAR_A	code	VBAR_A		n	conflict:t	=	
+L13	3	@PHI	code	PHI		e	agrees	unsorted	
+L13	4	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L13	5	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L13	6	@PHI	code	PHI			null-or-unaligned	unsorted	
+L13	7	@4STEM	code	4STEM		i	conflict:n	=	
+L13	8	@EBR_A	code	EBR_A		l	conflict:s	=	
+L13	9	@4TRI	code	4TRI		n	agrees	unsorted	
+L13	10	@PHI	code	PHI		e	agrees	unsorted	
+L13	11	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L13	12	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L13	13	@PHI	code	PHI		r	conflict:e	unsorted	
+L13	14	@PHI	code	PHI		e	agrees	unsorted	
+L13	15	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L13	16	@4TRI	code	4TRI		a	conflict:n	4HOOK	H65-H77 tile
+L13	17	@VBAR_B	code	VBAR_B		s	agrees	=	
+L13	18	@PHI	code	PHI		b	conflict:e	SBS	H65-H77 tile
+L13	19	@PHI	code	PHI		e	agrees	unsorted	
+L13	20	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L13	21	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L13	22	@4TRI	code	4TRI		c	conflict:n	4TRI	v4 sort
+L13	23	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L13	24	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L13	25	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L13	26	@H24	code	H24		i	agrees	=	
+L13	27	@EBR_B	code	EBR_B		l	agrees	=	
+L13	28	@4TRI	code	4TRI		n	agrees	unsorted	
+L13	29	@PHI	code	PHI		e	agrees	unsorted	
+L13	30	@4TRI	code	4TRI		n	agrees	unsorted	
+L13	31	@PHI	code	PHI		o	conflict:e	unsorted	
+L13	32	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L13	33	@VBAR_B	code	VBAR_B		s	agrees	=	
+L13	34	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L13	35	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L13	36	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L13	37	@PHI	code	PHI		e	agrees	unsorted	
+L13	38	@PHI	code	PHI		t	conflict:e	unsorted	
+L13	39	@4TRI	code	4TRI		p	conflict:n	4TRI	H65-H77 tile
+L13	40	@PHI	code	PHI		e	agrees	unsorted	
+L13	41	@4TRI	code	4TRI		n	agrees	unsorted	
+L13	42	@VBAR_A	code	VBAR_A		t	agrees	=	
+L13	43	@PHI	code	PHI		r	conflict:e	unsorted	
+L13	44	@PHI	code	PHI		e	agrees	unsorted	
+L13	45	@VBAR_A	code	VBAR_A		t	agrees	=	
+L13	46	@PHI	code	PHI		e	agrees	unsorted	
+L13	47	@HASH4	code	HASH4		p	conflict:d	=	
+L13	48	@LOOPS	code	LOOPS		o	conflict:u	unsorted	v4 sort
+L13	49	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L13	50	@ZBAR	code	ZBAR		r	conflict:s	=	
+L13	51	@VBAR_B	code	VBAR_B		f	agrees	=	
+L13	52	@4TRI	code	4TRI		a	conflict:n	unsorted	v4 sort
+L13	53	@H24	code	H24		i	agrees	=	
+L13	54	@PHI	code	PHI		r	conflict:e	unsorted	
+L13	55	@PHI	code	PHI		e	agrees	unsorted	
+L13	56	@H24	code	H24		i	agrees	=	
+L13	57	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L13	58	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L13	59	@PHI	code	PHI		e	agrees	unsorted	
+L13	60	@BETA	code	BETA		m	agrees	=	
+L13	61	@PHI	code	PHI		e	agrees	unsorted	
+L13	62	@4TRI	code	4TRI		n	agrees	unsorted	v4 sort
+L13	63	@VBAR_A	code	VBAR_A		t	agrees	=	
+L14	0	@HASH4	code	HASH4		q	conflict:d	=	
+L14	1	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L14	2	@H24	code	H24		i	agrees	=	
+L14	3	@EBR_B	code	EBR_B		l	agrees	=	
+L14	4	@4TRI	code	4TRI		n	agrees	unsorted	
+L14	5	@PHI	code	PHI		e	agrees	unsorted	
+L14	6	@VBAR_B	code	VBAR_B		s	agrees	=	
+L14	7	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L14	8	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L14	9	@PHI	code	PHI		a	conflict:e	unsorted	
+L14	10	@VBAR_B	code	VBAR_B		s	agrees	=	
+L14	11	@ZBAR	code	ZBAR		p	conflict:s	=	
+L14	12	@PHI	code	PHI		o	conflict:e	unsorted	
+L14	13	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L14	14	@EBR_B	code	EBR_B		r	conflict:l	=	
+L14	15	@H24	code	H24		s	conflict:i	=	
+L14	16	@RSIGN	code	RSIGN		u	conflict:m	=	
+L14	17	@VBAR_B	code	VBAR_B		y	conflict:s	=	
+L14	18	@PHI	code	PHI		u	conflict:e	unsorted	
+L14	19	@BETA	code	BETA		r	conflict:m	=	
+L14	20	@PHI	code	PHI		e	agrees	unsorted	
+L14	21	@EBR_B	code	EBR_B		l	agrees	=	
+L14	22	@PHI	code	PHI		e	agrees	unsorted	
+L14	23	@HASH4	code	HASH4		q	conflict:d	=	
+L14	24	@EBR_B	code	EBR_B		u	conflict:l	=	
+L14	25	@EBR_B	code	EBR_B		l	agrees	=	
+L14	26	@PHI	code	PHI		l	conflict:e	unsorted	
+L14	27	@VBAR_B	code	VBAR_B		a	conflict:s	=	
+L14	28	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L14	29	@H24	code	H24		y	conflict:i	=	
+L14	30	@VBAR_A	code	VBAR_A		t	agrees	=	
+L14	31	@OTHER	code	OTHER			null-or-unaligned	=	
+L14	32	@PHI	code	PHI		e	agrees	unsorted	
+L14	33	@4TRI	code	4TRI		n	agrees	unsorted	
+L14	34	@BETA	code	BETA		m	agrees	=	
+L14	35	@PHI	code	PHI		i	conflict:e	unsorted	
+L14	36	@VBAR_B	code	VBAR_B		s	agrees	=	
+L14	37	@HASH4	code	HASH4		a	conflict:d	=	
+L14	38	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L14	39	@H24	code	H24		t	conflict:i	=	
+L14	40	@VBAR_B	code	VBAR_B		n	conflict:s	=	
+L14	41	@OTHER	code	OTHER		m	conflict:e	=	
+L14	42	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L14	43	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L14	44	@H24	code	H24		x	conflict:i	=	
+L14	45	@HASH4	code	HASH4		d	agrees	=	
+L14	46	@PHI	code	PHI		e	agrees	unsorted	
+L14	47	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L14	48	@H24	code	H24		x	conflict:i	=	
+L14	49	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L14	50	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L14	51	@VBAR_A	code	VBAR_A		t	agrees	=	
+L14	52	@PHI	code	PHI		r	conflict:e	unsorted	
+L14	53	@PHI	code	PHI		e	agrees	unsorted	
+L14	54	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L14	55	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L14	56	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L14	57	@VBAR_A	code	VBAR_A		t	agrees	=	
+L14	58	@H24	code	H24		i	agrees	=	
+L14	59	@4TRI	code	4TRI		c	conflict:n	4TRI	H65-H77 tile
+L14	60	@EBR_B	code	EBR_B		l	agrees	=	
+L14	61	@PHI	code	PHI		e	agrees	unsorted	
+L14	62	@VBAR_B	code	VBAR_B		s	agrees	=	
+L14	63	@H24	code	H24		i	agrees	=	
+L14	64	@EBR_B	code	EBR_B		l	agrees	=	
+L14	65	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L14	66	@PHI	code	PHI		e	agrees	unsorted	
+L15	0	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L15	1	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L15	2	@HASH4	code	HASH4		p	conflict:d	=	
+L15	3	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L15	4	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	5	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L15	6	@PHI	code	PHI		e	agrees	unsorted	
+L15	7	@HASH4	code	HASH4		q	conflict:d	=	
+L15	8	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L15	9	@PHI	code	PHI		e	agrees	unsorted	
+L15	10	@EBR_B	code	EBR_B		l	agrees	=	
+L15	11	@HASH4	code	HASH4		q	conflict:d	=	
+L15	12	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L15	13	@PHI	code	PHI		e	agrees	unsorted	
+L15	14	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	15	@HASH4	code	HASH4		d	agrees	=	
+L15	16	@H24	code	H24		e	conflict:i	=	
+L15	17	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	18	@4TRI	code	4TRI		c	conflict:n	4TRI	H65-H77 tile
+L15	19	@LOOPS	code	LOOPS		u	agrees	SBS	H65-H77 tile
+L15	20	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L15	21	@PHI	code	PHI		e	agrees	unsorted	
+L15	22	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	23	@RSIGN	code	RSIGN		m	agrees	=	
+L15	24	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L15	25	@H24	code	H24		i	agrees	=	
+L15	26	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L15	27	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	28	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L15	29	@H24	code	H24		i	agrees	=	
+L15	30	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L15	31	@PHI	code	PHI		a	conflict:e	unsorted	
+L15	32	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L15	33	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L15	34	@PHI	code	PHI		r	conflict:e	unsorted	
+L15	35	@PHI	code	PHI		e	agrees	unsorted	
+L15	36	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	37	@HASH4	code	HASH4		q	conflict:d	=	
+L15	38	@EBR_B	code	EBR_B		l	agrees	=	
+L15	39	@PHI	code	PHI		e	agrees	unsorted	
+L15	40	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	41	@VBAR_A	code	VBAR_A		t	agrees	=	
+L15	42	@BETA	code	BETA		m	agrees	=	
+L15	43	@4TRI	code	4TRI		a	conflict:n	4TRI	v4 sort
+L15	44	@EBR_B	code	EBR_B		l	agrees	=	
+L15	45	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L15	46	@H24	code	H24		y	conflict:i	=	
+L15	47	@VBAR_B	code	VBAR_B		s	agrees	=	
+L15	48	@PHI	code	PHI		e	agrees	unsorted	
+L15	49	@OTHER	code	OTHER			null-or-unaligned	=	
+L15	50	@4STEM	code	4STEM		d	conflict:n	=	
+L15	51	@PHI	code	PHI		e	agrees	unsorted	
+L15	52	@4TRI	code	4TRI		n	agrees	unsorted	
+L15	53	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L15	54	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L15	55	@PHI	code	PHI		r	conflict:e	unsorted	
+L15	56	@EBR_B	code	EBR_B		l	agrees	=	
+L15	57	@PHI	code	PHI		e	agrees	unsorted	
+L15	58	@PHI	code	PHI		r	conflict:e	unsorted	
+L15	59	@PHI	code	PHI		r	conflict:e	unsorted	
+L15	60	@PHI	code	PHI		e	agrees	unsorted	
+L15	61	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L15	62	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L15	63	@4TRI	code	4TRI		n	agrees	unsorted	
+L15	64	@4TRI	code	4TRI		a	conflict:n	unsorted	v4 sort
+L15	65	@H24	code	H24			null-or-unaligned	=	
+L15	66	@4TRI	code	4TRI		n	agrees	unsorted	
+L15	67	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L15	68	@VBAR_A	code	VBAR_A		t	agrees	=	
+L15	69	@PHI	code	PHI			null-or-unaligned	unsorted	
+L15	70	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L15	71	@OTHER	code	OTHER			null-or-unaligned	=	
+L16	0	@H24	code	H24		i	agrees	=	
+L16	1	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L16	2	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L16	3	@PHI	code	PHI		r	conflict:e	unsorted	
+L16	4	@VBAR_B	code	VBAR_B		s	agrees	=	
+L16	5	@OTHER	code	OTHER			null-or-unaligned	=	
+L16	6	@VBAR_B	code	VBAR_B		s	agrees	=	
+L16	7	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L16	8	@PHI	code	PHI		r	conflict:e	unsorted	
+L16	9	@VBAR_B	code	VBAR_B		s	agrees	=	
+L16	10	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L16	11	@4TRI	code	4TRI		n	agrees	4TRI	v4 sort
+L16	12	@HASH4	code	HASH4		f	conflict:d	=	
+L16	13	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L16	14	@PHI	code	PHI		a	conflict:e	unsorted	
+L16	15	@BETA	code	BETA		n	conflict:m	=	
+L16	16	@H24	code	H24		i	agrees	=	
+L16	17	@PHI	code	PHI		s	conflict:e	unsorted	
+L16	18	@PHI	code	PHI		e	agrees	unsorted	
+L16	19	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L16	20	@PHI	code	PHI		o	conflict:e	unsorted	
+L16	21	@H24	code	H24		i	agrees	=	
+L16	22	@4TRI	code	4TRI		n	agrees	unsorted	
+L16	23	@VBAR_A	code	VBAR_A		t	agrees	=	
+L16	24	@OTHER	code	OTHER		q	conflict:e	=	
+L16	25	@OTHER	code	OTHER		i	conflict:e	=	
+L16	26	@EBR_B	code	EBR_B		l	agrees	=	
+L16	27	@4TRI	code	4TRI		n	agrees	4HOOK	H65-H77 tile
+L16	28	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L16	29	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L16	30	@PHI	code	PHI		o	conflict:e	unsorted	
+L16	31	@H24	code	H24		i	agrees	=	
+L16	32	@VBAR_A	code	VBAR_A		t	agrees	=	
+L16	33	@4TRI	code	4TRI		n	agrees	unsorted	
+L16	34	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L16	35	@EBR_B	code	EBR_B		l	agrees	=	
+L16	36	@EBR_B	code	EBR_B		l	agrees	=	
+L16	37	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L16	38	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L16	39	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L16	40	@VBAR_A	code	VBAR_A		t	agrees	=	
+L16	41	@PHI	code	PHI		r	conflict:e	unsorted	
+L16	42	@PHI	code	PHI		e	agrees	unsorted	
+L16	43	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L16	44	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L16	45	@VBAR_B	code	VBAR_B		s	agrees	=	
+L16	46	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L16	47	@H24	code	H24		i	agrees	=	
+L16	48	@PHI	code	PHI		o	conflict:e	unsorted	
+L16	49	@4TRI	code	4TRI		n	agrees	unsorted	
+L16	50	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L16	51	@EBR_B	code	EBR_B		l	agrees	=	
+L16	52	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L16	53	@PHI	code	PHI		r	conflict:e	unsorted	
+L16	54	@PHI	code	PHI		e	agrees	unsorted	
+L16	55	@EBR_B	code	EBR_B		l	agrees	=	
+L16	56	@H24	code	H24		i	agrees	=	
+L16	57	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L16	58	@H24	code	H24		i	agrees	=	
+L16	59	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L16	60	@4TRI	code	4TRI		n	agrees	unsorted	v4 sort
+L16	61	@OTHER	code	OTHER		i	conflict:e	=	
+L16	62	@PHI	code	PHI			null-or-unaligned	unsorted	
+L16	63	@VBAR_B	code	VBAR_B			null-or-unaligned	=	
+L16	64	@EBR_B	code	EBR_B		l	agrees	=	
+L16	65	@PHI	code	PHI			null-or-unaligned	unsorted	v4 sort
+L16	66	@PHI	code	PHI		l	conflict:e	unsorted	
+L16	67	@PHI	code	PHI		e	agrees	unsorted	
+L17	0	@4STEM	code	4STEM		r	conflict:n	=	
+L17	1	@ZHOOK	code	ZHOOK		r	conflict:a	=	
+L17	2	@LOOPS	code	LOOPS		a	conflict:u	unsorted	
+L17	3	@BETA	code	BETA		i	conflict:m	=	
+L17	4	@PHI	code	PHI		n	conflict:e	unsorted	
+L17	5	@OTHER	code	OTHER		s	conflict:e	=	
+L17	6	@4PI	code	4PI		p	conflict:d	=	
+L17	7	@PHI	code	PHI		e	agrees	unsorted	
+L17	8	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L17	9	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L17	10	@CA	code	CA		s	conflict:c	=	
+L17	11	@PHI	code	PHI		e	agrees	unsorted	
+L17	12	@4TRI	code	4TRI		n	agrees	unsorted	
+L17	13	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L17	14	@VBAR_A	code	VBAR_A		t	agrees	=	
+L17	15	@PHI	code	PHI		e	agrees	unsorted	
+L17	16	@EBR_A	code	EBR_A		s	agrees	=	
+L17	17	@VBAR_A	code	VBAR_A		t	agrees	=	
+L17	18	@PHI	code	PHI		r	conflict:e	unsorted	
+L17	19	@PHI	code	PHI		e	agrees	unsorted	
+L17	20	@BETA	code	BETA		m	agrees	=	
+L17	21	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L17	22	@H24	code	H24		i	agrees	=	
+L17	23	@4TRI	code	4TRI		n	agrees	unsorted	
+L17	24	@VBAR_A	code	VBAR_A		t	agrees	=	
+L17	25	@PHI	code	PHI		e	agrees	unsorted	
+L17	26	@4PI	code	4PI		n	conflict:d	=	
+L17	27	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L17	28	@EBR_A	code	EBR_A		e	conflict:s	=	
+L17	29	@EBR_A	code	EBR_A		s	agrees	=	
+L17	30	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L17	31	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L17	32	@4TRI	code	4TRI		z	conflict:n	unsorted	
+L17	33	@LOOPS	code	LOOPS		v	agrees	unsorted	
+L17	34	@4TRI	code	4TRI		n	agrees	unsorted	
+L17	35	@PHI	code	PHI		r	conflict:e	unsorted	
+L17	36	@PHI	code	PHI		o	conflict:e	unsorted	
+L17	37	@EBR_B	code	EBR_B		y	conflict:l	=	
+L17	38	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L17	39	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L17	40	@VBAR_A	code	VBAR_A		t	agrees	=	
+L17	41	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L17	42	@PHI	code	PHI			null-or-unaligned	unsorted	
+L17	43	@PHI	code	PHI		o	conflict:e	unsorted	
+L17	44	@EBR_B	code	EBR_B		l	agrees	=	
+L17	45	@H24	code	H24		i	agrees	=	
+L17	46	@HASH4	code	HASH4		q	conflict:d	=	
+L17	47	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L17	48	@PHI	code	PHI		e	agrees	unsorted	
+L17	49	@OTHER	code	OTHER		q	conflict:e	=	
+L17	50	@OTHER	code	OTHER		i	conflict:e	=	
+L17	51	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L17	52	@PHI	code	PHI		e	agrees	unsorted	
+L17	53	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L17	54	@ISH	code	ISH		l	agrees	=	
+L17	55	@VBAR_A	code	VBAR_A		t	agrees	=	
+L17	56	@ZBAR	code	ZBAR		d	conflict:s	=	
+L17	57	@PHI	code	PHI		o	conflict:e	unsorted	
+L17	58	@LOOPS	code	LOOPS		n	conflict:u	unsorted	
+L17	59	@PHI	code	PHI		n	conflict:e	unsorted	
+L17	60	@PHI	code	PHI		e	agrees	unsorted	
+L17	61	@4STEM	code	4STEM		b	conflict:n	=	
+L17	62	@4STEM	code	4STEM		o	conflict:n	=	
+L17	63	@PHI	code	PHI		n	conflict:e	unsorted	
+L17	64	@PHI	code	PHI		n	conflict:e	unsorted	
+L17	65	@VBAR_A	code	VBAR_A		e	conflict:t	=	
+L17	66	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L17	67	@4TRI	code	4TRI		n	agrees	unsorted	
+L17	68	@VBAR_A	code	VBAR_A		o	conflict:t	=	
+L18	0	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L18	1	@PHI	code	PHI		r	conflict:e	unsorted	
+L18	2	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L18	3	@H24	code	H24		i	agrees	=	
+L18	4	@4TRI	code	4TRI		n	agrees	unsorted	
+L18	5	@VBAR_A	code	VBAR_A		t	agrees	=	
+L18	6	@PHI	code	PHI		e	agrees	unsorted	
+L18	7	@4TRI	code	4TRI		n	agrees	unsorted	
+L18	8	@H24	code	H24		e	conflict:i	=	
+L18	9	@EBR_A	code	EBR_A		s	agrees	=	
+L18	10	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L18	11	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L18	12	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L18	13	@H24	code	H24		i	agrees	=	
+L18	14	@VBAR_A	code	VBAR_A		t	agrees	=	
+L18	15	@H24	code	H24		i	agrees	=	
+L18	16	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L18	17	@4TRI	code	4TRI		n	agrees	unsorted	
+L18	18	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L18	19	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L18	20	@PHI	code	PHI		e	agrees	unsorted	
+L18	21	@EBR_B	code	EBR_B		l	agrees	=	
+L18	22	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L18	23	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L18	24	@4STEM	code	4STEM		n	agrees	=	
+L18	25	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L18	26	@HASH4	code	HASH4		q	conflict:d	=	
+L18	27	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L18	28	@PHI	code	PHI		e	agrees	unsorted	
+L18	29	@4STEM	code	4STEM			null-or-unaligned	=	
+L18	30	@HASH4	code	HASH4		d	agrees	=	
+L18	31	@H24	code	H24		i	agrees	=	
+L18	32	@4TRI	code	4TRI		n	agrees	unsorted	
+L18	33	@VBAR_A	code	VBAR_A		t	agrees	=	
+L18	34	@PHI	code	PHI		r	conflict:e	unsorted	
+L18	35	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L18	36	@HASH4	code	HASH4		d	agrees	=	
+L18	37	@OTHER	code	OTHER			null-or-unaligned	=	
+L18	38	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L18	39	@H24	code	H24		i	agrees	=	
+L18	40	@PHI	code	PHI		r	conflict:e	unsorted	
+L18	41	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L18	42	@EBR_B	code	EBR_B		e	conflict:l	=	
+L18	43	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L18	44	@PHI	code	PHI		e	agrees	unsorted	
+L18	45	@PHI	code	PHI		r	conflict:e	unsorted	
+L18	46	@PHI	code	PHI		e	agrees	unsorted	
+L18	47	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L18	48	@H24	code	H24		i	agrees	=	
+L18	49	@PHI	code	PHI		e	agrees	unsorted	
+L18	50	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L18	51	@PHI	code	PHI		o	conflict:e	unsorted	
+L18	52	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L18	53	@H24	code	H24		n	conflict:i	=	
+L18	54	@VBAR_A	code	VBAR_A		b	conflict:t	=	
+L18	55	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L18	56	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L18	57	@LOOPS	code	LOOPS		n	conflict:u	unsorted	
+L18	58	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L18	59	@BETA	code	BETA		m	agrees	=	
+L18	60	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L18	61	@4TRI	code	4TRI		n	agrees	unsorted	
+L18	62	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L18	63	@PHI	code	PHI			null-or-unaligned	unsorted	
+L18	64	@H24	code	H24		i	agrees	=	
+L18	65	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L18	66	@4TRI	code	4TRI		n	agrees	unsorted	
+L18	67	@PHI	code	PHI		e	agrees	unsorted	
+L19	0	@LOOPS	code	LOOPS		d	conflict:u	unsorted	
+L19	1	@PHI	code	PHI		o	conflict:e	unsorted	
+L19	2	@INF	code	INF		u	agrees	=	
+L19	3	@OTHER	code	OTHER			null-or-unaligned	=	
+L19	4	@PHI	code	PHI		a	conflict:e	unsorted	
+L19	5	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	6	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L19	7	@LOOPS	code	LOOPS		l	conflict:u	unsorted	
+L19	8	@VBAR_A	code	VBAR_A		t	agrees	=	
+L19	9	@PHI	code	PHI		r	conflict:e	unsorted	
+L19	10	@PHI	code	PHI		e	agrees	unsorted	
+L19	11	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L19	12	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L19	13	@PHI	code	PHI		r	conflict:e	unsorted	
+L19	14	@PHI	code	PHI		e	agrees	unsorted	
+L19	15	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L19	16	@PHI	code	PHI		b	conflict:e	unsorted	
+L19	17	@EBR_B	code	EBR_B		l	agrees	=	
+L19	18	@PHI	code	PHI		e	agrees	unsorted	
+L19	19	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L19	20	@LOOPS	code	LOOPS		v	agrees	unsorted	
+L19	21	@4TRI	code	4TRI		n	agrees	unsorted	
+L19	22	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L19	23	@4TRI	code	4TRI		h	conflict:n	unsorted	
+L19	24	@LOOPS	code	LOOPS		a	conflict:u	unsorted	
+L19	25	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L19	26	@H24	code	H24		c	conflict:i	=	
+L19	27	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	28	@4TRI	code	4TRI		n	agrees	unsorted	
+L19	29	@EBR_A	code	EBR_A		s	agrees	=	
+L19	30	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	31	@PHI	code	PHI		r	conflict:e	unsorted	
+L19	32	@HASH4	code	HASH4		q	conflict:d	=	
+L19	33	@PHI	code	PHI			null-or-unaligned	unsorted	
+L19	34	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	35	@OTHER	code	OTHER		o	conflict:e	=	
+L19	36	@4STEM	code	4STEM		y	conflict:n	=	
+L19	37	@4TRI	code	4TRI		n	agrees	unsorted	
+L19	38	@PHI	code	PHI		o	conflict:e	unsorted	
+L19	39	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L19	40	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	41	@EBR_A	code	EBR_A		s	agrees	=	
+L19	42	@ISH	code	ISH		l	agrees	=	
+L19	43	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	44	@EBR_A	code	EBR_A		y	conflict:s	=	
+L19	45	@PHI	code	PHI		b	conflict:e	unsorted	
+L19	46	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L19	47	@H24	code	H24		i	agrees	=	
+L19	48	@EBR_A	code	EBR_A		s	agrees	=	
+L19	49	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L19	50	@BETA	code	BETA		m	agrees	=	
+L19	51	@PHI	code	PHI		e	agrees	unsorted	
+L19	52	@EBR_B	code	EBR_B		s	conflict:l	=	
+L19	53	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L19	54	@PHI	code	PHI		r	conflict:e	unsorted	
+L19	55	@PHI	code	PHI		e	agrees	unsorted	
+L19	56	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L19	57	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L19	58	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L19	59	@BETA	code	BETA		m	agrees	=	
+L19	60	@PHI	code	PHI		b	conflict:e	unsorted	
+L19	61	@EBR_B	code	EBR_B		l	agrees	=	
+L19	62	@PHI	code	PHI		e	agrees	unsorted	
+L19	63	@BETA	code	BETA		m	agrees	=	
+L19	64	@PHI	code	PHI		e	agrees	unsorted	
+L19	65	@4TRI	code	4TRI		n	agrees	unsorted	
+L19	66	@RSIGN	code	RSIGN		t	conflict:m	=	
+L20	0	@VBAR_A	code	VBAR_A		o	conflict:t	=	
+L20	1	@PHI	code	PHI		n	conflict:e	unsorted	
+L20	2	@EBR_A	code	EBR_A		p	conflict:s	=	
+L20	3	@4TRI	code	4TRI		r	conflict:n	unsorted	v4 sort
+L20	4	@HASH4	code	HASH4		i	conflict:d	=	
+L20	5	@PHI	code	PHI		e	agrees	unsorted	
+L20	6	@HASH4	code	HASH4		d	agrees	=	
+L20	7	@BETA	code	BETA		a	conflict:m	=	
+L20	8	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L20	9	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L20	10	@PHI	code	PHI		x	conflict:e	unsorted	
+L20	11	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L20	12	@EBR_A	code	EBR_A		a	conflict:s	=	
+L20	13	@PHI	code	PHI		m	conflict:e	unsorted	
+L20	14	@PHI	code	PHI		e	agrees	unsorted	
+L20	15	@BETA	code	BETA		m	agrees	=	
+L20	16	@PHI	code	PHI		e	agrees	unsorted	
+L20	17	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L20	18	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L20	19	@VBAR_A	code	VBAR_A		t	agrees	=	
+L20	20	@PHI	code	PHI		o	conflict:e	unsorted	
+L20	21	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L20	22	@VBAR_A	code	VBAR_A		t	agrees	=	
+L20	23	@PHI	code	PHI		e	agrees	unsorted	
+L20	24	@EBR_A	code	EBR_A		f	agrees	=	
+L20	25	@PHI	code	PHI		o	conflict:e	unsorted	
+L20	26	@H24	code	H24		i	agrees	=	
+L20	27	@EBR_A	code	EBR_A		s	agrees	=	
+L20	28	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L20	29	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L20	30	@EBR_A	code	EBR_A		y	conflict:s	=	
+L20	31	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L20	32	@LOOPS	code	LOOPS		u	agrees	INF	v4 sort
+L20	33	@H24	code	H24		i	agrees	=	
+L20	34	@PHI	code	PHI		t	conflict:e	unsorted	
+L20	35	@BETA	code	BETA		d	conflict:m	=	
+L20	36	@H24	code	H24			null-or-unaligned	=	
+L20	37	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L20	38	@BETA	code	BETA		m	agrees	=	
+L20	39	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L20	40	@H24	code	H24		i	agrees	=	
+L20	41	@EBR_A	code	EBR_A		a	conflict:s	=	
+L20	42	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L20	43	@PHI	code	PHI		e	agrees	unsorted	
+L20	44	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L20	45	@EBR_B	code	EBR_B		s	conflict:l	=	
+L20	46	@PHI	code	PHI		i	conflict:e	unsorted	
+L20	47	@OTHER	code	OTHER		c	conflict:e	=	
+L20	48	@LOOPSTEM1	code	LOOPSTEM1		e	conflict:q	=	
+L20	49	@4TRI	code	4TRI		n	agrees	unsorted	
+L20	50	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L20	51	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L20	52	@H24	code	H24		u	conflict:i	=	
+L20	53	@PHI	code	PHI		i	conflict:e	unsorted	
+L20	54	@BETA	code	BETA		z	conflict:m	=	
+L20	55	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L20	56	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L20	57	@EBR_A	code	EBR_A		l	conflict:s	=	
+L20	58	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L20	59	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L20	60	@VBAR_A	code	VBAR_A		l	conflict:t	=	
+L20	61	@PHI	code	PHI		t	conflict:e	unsorted	
+L20	62	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L20	63	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L20	64	@PHI	code	PHI		e	agrees	unsorted	
+L20	65	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L20	66	@EBR_A	code	EBR_A			null-or-unaligned	=	
+L21	0	@PHI	code	PHI		e	agrees	unsorted	
+L21	1	@H24	code	H24		i	agrees	=	
+L21	2	@4TRI	code	4TRI		n	agrees	unsorted	v4 sort
+L21	3	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L21	4	@DBL	code	DBL		e	agrees	=	
+L21	5	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L21	6	@PHI	code	PHI		e	agrees	unsorted	
+L21	7	@4TRI	code	4TRI		n	agrees	unsorted	
+L21	8	@EBR_A	code	EBR_A		s	agrees	=	
+L21	9	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L21	10	@H24	code	H24		y	conflict:i	=	
+L21	11	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L21	12	@PHI	code	PHI		r	conflict:e	unsorted	
+L21	13	@PHI	code	PHI		e	agrees	unsorted	
+L21	14	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L21	15	@LOOPS	code	LOOPS			null-or-unaligned	INF	v4 sort
+L21	16	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L21	17	@EBR_A	code	EBR_A		a	conflict:s	=	
+L21	18	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L21	19	@4TRI	code	4TRI		n	agrees	unsorted	
+L21	20	@HASH4	code	HASH4			null-or-unaligned	=	
+L21	21	@PHI	code	PHI		o	conflict:e	unsorted	
+L21	22	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L21	23	@VBAR_A	code	VBAR_A		t	agrees	=	
+L21	24	@CA	code	CA			null-or-unaligned	=	
+L21	25	@PHI	code	PHI		r	conflict:e	unsorted	
+L21	26	@PHI	code	PHI		e	agrees	unsorted	
+L21	27	@EBR_A	code	EBR_A		l	conflict:s	=	
+L21	28	@OTHER	code	OTHER		e	agrees	=	
+L21	29	@LOOPSTEM1	code	LOOPSTEM1		s	conflict:q	=	
+L21	30	@EBR_A	code	EBR_A		t	conflict:s	=	
+L21	31	@PHI	code	PHI		e	agrees	unsorted	
+L21	32	@EBR_A	code	EBR_A		t	conflict:s	=	
+L21	33	@4PI	code	4PI		c	conflict:d	=	
+L21	34	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L21	35	@BETA	code	BETA		m	agrees	=	
+L21	36	@RSIGN	code	RSIGN		m	agrees	=	
+L21	37	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L21	38	@4TRI	code	4TRI		n	agrees	unsorted	
+L21	39	@4STEM	code	4STEM			null-or-unaligned	=	
+L21	40	@HASH4	code	HASH4		d	agrees	=	
+L21	41	@PHI	code	PHI		e	agrees	unsorted	
+L21	42	@BETA	code	BETA		m	agrees	=	
+L21	43	@PHI	code	PHI		e	agrees	unsorted	
+L21	44	@4TRI	code	4TRI		n	agrees	unsorted	
+L21	45	@EBR_A	code	EBR_A		t	conflict:s	=	
+L21	46	@OTHER	code	OTHER		i	conflict:e	=	
+L21	47	@PHI	code	PHI		e	agrees	unsorted	
+L21	48	@EBR_A	code	EBR_A		s	agrees	=	
+L21	49	@VBAR_A	code	VBAR_A		t	agrees	=	
+L21	50	@PHI	code	PHI		o	conflict:e	unsorted	
+L21	51	@H24	code	H24		i	agrees	=	
+L21	52	@PHI	code	PHI		e	agrees	unsorted	
+L21	53	@4TRI	code	4TRI		n	agrees	unsorted	
+L21	54	@CA	code	CA		t	conflict:c	=	
+L21	55	@ZBAR	code	ZBAR		p	conflict:s	=	
+L21	56	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L21	57	@PHI	code	PHI		r	conflict:e	unsorted	
+L21	58	@PHI	code	PHI		s	conflict:e	unsorted	
+L21	59	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L21	60	@H24	code	H24		i	agrees	=	
+L21	61	@PHI	code	PHI		r	conflict:e	unsorted	
+L21	62	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L21	63	@HASH4	code	HASH4		d	agrees	=	
+L21	64	@H24	code	H24		i	agrees	=	
+L21	65	@PHI	code	PHI		e	agrees	unsorted	
+L21	66	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L21	67	@ELOOP	code	ELOOP		c	conflict:r	=	
+L22	0	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L22	1	@PHI	code	PHI		e	agrees	unsorted	
+L22	2	@BETA	code	BETA		m	agrees	=	
+L22	3	@PHI	code	PHI		e	agrees	unsorted	
+L22	4	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L22	5	@PHI	code	PHI			null-or-unaligned	unsorted	
+L22	6	@PHI	code	PHI		r	conflict:e	unsorted	
+L22	7	@PHI	code	PHI		e	agrees	unsorted	
+L22	8	@VBAR_A	code	VBAR_A		t	agrees	=	
+L22	9	@PHI	code	PHI		r	conflict:e	unsorted	
+L22	10	@PHI	code	PHI		e	agrees	unsorted	
+L22	11	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L22	12	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L22	13	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L22	14	@RSIGN	code	RSIGN		m	agrees	=	
+L22	15	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L22	16	@PHI	code	PHI		b	conflict:e	unsorted	
+L22	17	@EBR_B	code	EBR_B		l	agrees	=	
+L22	18	@PHI	code	PHI		e	agrees	unsorted	
+L22	19	@HASH4	code	HASH4		f	conflict:d	=	
+L22	20	@H24	code	H24		i	agrees	=	
+L22	21	@EBR_B	code	EBR_B		l	agrees	=	
+L22	22	@BETA	code	BETA		z	conflict:m	=	
+L22	23	@HASH4	code	HASH4		d	agrees	=	
+L22	24	@PHI	code	PHI		e	agrees	unsorted	
+L22	25	@EBR_B	code	EBR_B		l	agrees	=	
+L22	26	@PHI	code	PHI		e	agrees	unsorted	
+L22	27	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L22	28	@OTHER	code	OTHER		l	conflict:e	=	
+L22	29	@H24	code	H24		i	agrees	=	
+L22	30	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L22	31	@PHI	code	PHI		e	agrees	unsorted	
+L22	32	@OTHER	code	OTHER			null-or-unaligned	=	
+L22	33	@H24	code	H24		i	agrees	=	
+L22	34	@EBR_B	code	EBR_B		l	agrees	=	
+L22	35	@4TRI	code	4TRI		n	agrees	unsorted	
+L22	36	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L22	37	@PHI	code	PHI		o	conflict:e	unsorted	
+L22	38	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L22	39	@LOOPS	code	LOOPS		s	conflict:u	unsorted	
+L22	40	@H24	code	H24			null-or-unaligned	=	
+L22	41	@HASH4	code	HASH4		d	agrees	=	
+L22	42	@PHI	code	PHI		e	agrees	unsorted	
+L22	43	@BETA	code	BETA		m	agrees	=	
+L22	44	@RSIGN	code	RSIGN		a	conflict:m	=	
+L22	45	@4TRI	code	4TRI		n	agrees	unsorted	
+L22	46	@HASH4	code	HASH4		d	agrees	=	
+L22	47	@4STEM	code	4STEM			null-or-unaligned	=	
+L22	48	@OTHER	code	OTHER			null-or-unaligned	=	
+L22	49	@PHI	code	PHI		e	agrees	unsorted	
+L22	50	@EBR_A	code	EBR_A		p	conflict:s	=	
+L22	51	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L22	52	@PHI	code	PHI		r	conflict:e	unsorted	
+L22	53	@H24	code	H24			null-or-unaligned	=	
+L22	54	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L22	55	@VBAR_A	code	VBAR_A		t	agrees	=	
+L22	56	@PHI	code	PHI		r	conflict:e	unsorted	
+L22	57	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L22	58	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L22	59	@PHI	code	PHI			null-or-unaligned	unsorted	
+L22	60	@EBR_A	code	EBR_A		k	conflict:s	=	
+L22	61	@EBR_B	code	EBR_B		t	conflict:l	=	
+L22	62	@PHI	code	PHI		h	conflict:e	unsorted	
+L22	63	@EBR_A	code	EBR_A		r	conflict:s	=	
+L22	64	@PHI	code	PHI		o	conflict:e	unsorted	
+L22	65	@4TRI	code	4TRI		u	conflict:n	unsorted	
+L22	66	@H24	code	H24		g	conflict:i	=	
+L22	67	@EBR_A	code	EBR_A		h	conflict:s	=	
+L22	68	@PHI	code	PHI		e	agrees	unsorted	
+L23	0	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L23	1	@EBR_A	code	EBR_A			null-or-unaligned	=	
+L23	2	@H24	code	H24			null-or-unaligned	=	
+L23	3	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L23	4	@4TRI	code	4TRI		n	agrees	unsorted	
+L23	5	@VBAR_A	code	VBAR_A		t	agrees	=	
+L23	6	@PHI	code	PHI		i	conflict:e	unsorted	
+L23	7	@BETA	code	BETA		n	conflict:m	=	
+L23	8	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L23	9	@PHI	code	PHI		e	agrees	unsorted	
+L23	10	@BETA	code	BETA		r	conflict:m	=	
+L23	11	@EBR_A	code	EBR_A		a	conflict:s	=	
+L23	12	@PHI	code	PHI		e	agrees	unsorted	
+L23	13	@OTHER	code	OTHER		n	conflict:e	=	
+L23	14	@EBR_B	code	EBR_B		l	agrees	=	
+L23	15	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L23	16	@LOOPSTEM1	code	LOOPSTEM1			null-or-unaligned	=	
+L23	17	@H24	code	H24		i	agrees	=	
+L23	18	@HASH4	code	HASH4			null-or-unaligned	=	
+L23	19	@RSIGN	code	RSIGN		n	conflict:m	=	
+L23	20	@EBR_A	code	EBR_A		s	agrees	=	
+L23	21	@VBAR_A	code	VBAR_A		t	agrees	=	
+L23	22	@LOOPS	code	LOOPS		r	conflict:u	unsorted	
+L23	23	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L23	24	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L23	25	@VBAR_A	code	VBAR_A		t	agrees	=	
+L23	26	@H24	code	H24		i	agrees	=	
+L23	27	@PHI	code	PHI		o	conflict:e	unsorted	
+L23	28	@4TRI	code	4TRI		n	agrees	unsorted	
+L23	29	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L23	30	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L23	31	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L23	32	@PHI	code	PHI		e	agrees	unsorted	
+L23	33	@LOOPS	code	LOOPS		n	conflict:u	unsorted	
+L23	34	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L23	35	@EBR_A	code	EBR_A		s	agrees	=	
+L23	36	@EBR_B	code	EBR_B		l	agrees	=	
+L23	37	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L23	38	@EBR_B	code	EBR_B		y	conflict:l	=	
+L23	39	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L23	40	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L23	41	@PHI	code	PHI		o	conflict:e	unsorted	
+L23	42	@4STEM	code	4STEM		n	agrees	=	
+L23	43	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L23	44	@EBR_A	code	EBR_A		p	conflict:s	=	
+L23	45	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L23	46	@PHI	code	PHI		e	agrees	unsorted	
+L23	47	@PHI	code	PHI		r	conflict:e	unsorted	
+L23	48	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L23	49	@PHI	code	PHI		l	conflict:e	unsorted	
+L23	50	@PHI	code	PHI		e	agrees	unsorted	
+L23	51	@EBR_A	code	EBR_A		s	agrees	=	
+L23	52	@OTHER	code	OTHER		i	conflict:e	=	
+L23	53	@CH	code	CH		e	agrees	=	
+L23	54	@INF	code	INF		u	agrees	=	
+L23	55	@ELOOP	code	ELOOP		r	agrees	=	
+L23	56	@EBR_B	code	EBR_B		s	conflict:l	=	
+L23	57	@LOOPS	code	LOOPS		d	conflict:u	unsorted	
+L23	58	@4STEM	code	4STEM		e	conflict:n	=	
+L23	59	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L23	60	@EBR_B	code	EBR_B		o	conflict:l	=	
+L23	61	@PHI	code	PHI		r	conflict:e	unsorted	
+L23	62	@LOOPS	code	LOOPS		t	conflict:u	unsorted	
+L23	63	@PHI	code	PHI		i	conflict:e	unsorted	
+L23	64	@EBR_A	code	EBR_A		a	conflict:s	=	
+L23	65	@BETA	code	BETA		s	conflict:m	=	
+L23	66	@PHI	code	PHI		e	agrees	unsorted	
+L23	67	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L23	68	@BETA	code	BETA		a	conflict:m	=	
+L23	69	@PHI	code	PHI		a	conflict:e	unsorted	
+L23	70	@LOOPS	code	LOOPS		l	conflict:u	unsorted	
+L24	0	@VBAR_A	code	VBAR_A		t	agrees	=	
+L24	1	@PHI	code	PHI		e	agrees	unsorted	
+L24	2	@4TRI	code	4TRI		n	agrees	unsorted	
+L24	3	@EBR_A	code	EBR_A		f	agrees	=	
+L24	4	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L24	5	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L24	6	@H24	code	H24		i	agrees	=	
+L24	7	@EBR_A	code	EBR_A		s	agrees	=	
+L24	8	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L24	9	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L24	10	@4TRI	code	4TRI		n	agrees	unsorted	
+L24	11	@VBAR_A	code	VBAR_A		t	agrees	=	
+L24	12	@EBR_A	code	EBR_A		l	conflict:s	=	
+L24	13	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L24	14	@OTHER	code	OTHER			null-or-unaligned	=	
+L24	15	@VBAR_A	code	VBAR_A		t	agrees	=	
+L24	16	@4TRI	code	4TRI		r	conflict:n	4HOOK	v4 sort
+L24	17	@4STEM	code	4STEM		a	conflict:n	=	
+L24	18	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L24	19	@HASH4	code	HASH4		d	agrees	=	
+L24	20	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L24	21	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L24	22	@VBAR_A	code	VBAR_A		t	agrees	=	
+L24	23	@H24	code	H24		i	agrees	=	
+L24	24	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L24	25	@4TRI	code	4TRI		n	agrees	unsorted	
+L24	26	@EBR_A	code	EBR_A		s	agrees	=	
+L24	27	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L24	28	@PHI	code	PHI		r	conflict:e	unsorted	
+L24	29	@EBR_B	code	EBR_B		l	agrees	=	
+L24	30	@PHI	code	PHI		e	agrees	unsorted	
+L24	31	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L24	32	@LOOPS	code	LOOPS		h	conflict:u	INF	v4 sort
+L24	33	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L24	34	@BETA	code	BETA		m	agrees	=	
+L24	35	@4TRI	code	4TRI		p	conflict:n	4TRI	v4 sort
+L24	36	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L24	37	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L24	38	@EBR_A	code	EBR_A		f	agrees	=	
+L24	39	@H24	code	H24		i	agrees	=	
+L24	40	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L24	41	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L24	42	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L24	43	@PHI	code	PHI		i	conflict:e	unsorted	
+L24	44	@EBR_B	code	EBR_B		l	agrees	=	
+L24	45	@EBR_B	code	EBR_B		n	conflict:l	=	
+L24	46	@PHI	code	PHI		e	agrees	unsorted	
+L24	47	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L24	48	@PHI	code	PHI		t	conflict:e	unsorted	
+L24	49	@EBR_A	code	EBR_A		r	conflict:s	=	
+L24	50	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L24	51	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L24	52	@EBR_A	code	EBR_A		k	conflict:s	=	
+L24	53	@PHI	code	PHI		t	conflict:e	unsorted	
+L24	54	@LOOPS	code	LOOPS		h	conflict:u	INF	v4 sort
+L24	55	@PHI	code	PHI		r	conflict:e	unsorted	
+L24	56	@HASH4	code	HASH4		o	conflict:d	=	
+L24	57	@PHI	code	PHI		u	conflict:e	unsorted	
+L24	58	@4TRI	code	4TRI		g	conflict:n	unsorted	
+L24	59	@PHI	code	PHI		h	conflict:e	unsorted	
+L24	60	@PHI	code	PHI		f	conflict:e	PHI	v4 sort
+L24	61	@EBR_A	code	EBR_A		u	conflict:s	=	
+L24	62	@PHI	code	PHI		s	conflict:e	unsorted	
+L24	63	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L24	64	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L24	65	@PHI	code	PHI		t	conflict:e	unsorted	
+L24	66	@BETA	code	BETA		r	conflict:m	=	
+L24	67	@4TRI	code	4TRI		u	conflict:n	unsorted	
+L25	0	@HASH4	code	HASH4		e	conflict:d	=	
+L25	1	@VBAR_A	code	VBAR_A		b	conflict:t	=	
+L25	2	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L25	3	@EBR_B	code	EBR_B		e	conflict:l	=	
+L25	4	@4TRI	code	4TRI		n	agrees	unsorted	
+L25	5	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L25	6	@PHI	code	PHI		u	conflict:e	unsorted	
+L25	7	@EBR_B	code	EBR_B		e	conflict:l	=	
+L25	8	@EBR_B	code	EBR_B		d	conflict:l	=	
+L25	9	@PHI	code	PHI		e	agrees	unsorted	
+L25	10	@PHI	code	PHI		m	conflict:e	unsorted	v4 sort
+L25	11	@VBAR_A	code	VBAR_A		o	conflict:t	=	
+L25	12	@VBAR_A	code	VBAR_A		n	conflict:t	=	
+L25	13	@PHI	code	PHI		s	conflict:e	unsorted	
+L25	14	@LOOPS	code	LOOPS		c	conflict:u	INF	v4 sort
+L25	15	@PHI	code	PHI		a	conflict:e	unsorted	
+L25	16	@LOOPS	code	LOOPS		m	conflict:u	unsorted	
+L25	17	@PHI	code	PHI		b	conflict:e	PHI	H65-H77 tile
+L25	18	@LOOPSTEM1	code	LOOPSTEM1		r	conflict:q	=	
+L25	19	@4STEM	code	4STEM		a	conflict:n	=	
+L25	20	@PHI	code	PHI		y	conflict:e	unsorted	
+L25	21	@LOOPS	code	LOOPS		q	conflict:u	unsorted	
+L25	22	@DBL	code	DBL		u	conflict:e	=	
+L25	23	@OTHER	code	OTHER		i	conflict:e	=	
+L25	24	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L25	25	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L25	26	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L25	27	@H24	code	H24		i	agrees	=	
+L25	28	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L25	29	@VBAR_A	code	VBAR_A		t	agrees	=	
+L25	30	@PHI	code	PHI		e	agrees	unsorted	
+L25	31	@VBAR_A	code	VBAR_A		t	agrees	=	
+L25	32	@PHI	code	PHI			null-or-unaligned	unsorted	
+L25	33	@PHI	code	PHI		o	conflict:e	unsorted	
+L25	34	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L25	35	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L25	36	@H24	code	H24		i	agrees	=	
+L25	37	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L25	38	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L25	39	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L25	40	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L25	41	@PHI	code	PHI		e	agrees	unsorted	
+L25	42	@4TRI	code	4TRI		n	agrees	unsorted	
+L25	43	@4TRI	code	4TRI		n	agrees	unsorted	
+L25	44	@PHI	code	PHI		o	conflict:e	unsorted	
+L25	45	@VBAR_A	code	VBAR_A		z	conflict:t	=	
+L25	46	@4STEM	code	4STEM			null-or-unaligned	=	
+L25	47	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L25	48	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L25	49	@HASH4	code	HASH4		d	agrees	=	
+L25	50	@H24	code	H24		i	agrees	=	
+L25	51	@PHI	code	PHI		c	conflict:e	unsorted	
+L25	52	@4TRI	code	4TRI		t	conflict:n	4HOOK	v4 sort
+L25	53	@4STEM	code	4STEM		n	agrees	=	
+L25	54	@PHI	code	PHI		o	conflict:e	PHI	H65-H77 tile
+L25	55	@ISH	code	ISH		v	conflict:l	=	
+L25	56	@OTHER	code	OTHER			null-or-unaligned	=	
+L25	57	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L25	58	@PHI	code	PHI		e	agrees	unsorted	
+L25	59	@VBAR_A	code	VBAR_A		t	agrees	=	
+L25	60	@C43	code	C43		n	conflict:a	=	
+L25	61	@4TRI	code	4TRI		e	conflict:n	4HOOK	v4 sort
+L25	62	@HASH4	code	HASH4		f	conflict:d	=	
+L25	63	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L25	64	@PHI	code	PHI		i	conflict:e	unsorted	
+L25	65	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L25	66	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L26	0	@PHI	code	PHI		q	conflict:e	unsorted	
+L26	1	@H24	code	H24		u	conflict:i	=	
+L26	2	@PHI	code	PHI		e	agrees	unsorted	
+L26	3	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L26	4	@LOOPSTEM1	code	LOOPSTEM1			null-or-unaligned	=	
+L26	5	@HASH4	code	HASH4		d	agrees	=	
+L26	6	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L26	7	@4TRI	code	4TRI		n	agrees	unsorted	
+L26	8	@4STEM	code	4STEM		c	conflict:n	=	
+L26	9	@PHI	code	PHI		o	conflict:e	unsorted	
+L26	10	@RSIGN	code	RSIGN		m	agrees	=	
+L26	11	@RSIGN	code	RSIGN		m	agrees	=	
+L26	12	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L26	13	@4TRI	code	4TRI		n	agrees	unsorted	
+L26	14	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L26	15	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L26	16	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L26	17	@4STEM	code	4STEM		o	conflict:n	=	
+L26	18	@HASH4	code	HASH4		d	agrees	=	
+L26	19	@PHI	code	PHI		e	agrees	unsorted	
+L26	20	@PHI	code	PHI		t	conflict:e	unsorted	
+L26	21	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L26	22	@CROSS	code	CROSS		p	single	=	
+L26	23	@HASH4	code	HASH4			null-or-unaligned	=	
+L26	24	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L26	25	@PHI	code	PHI		r	conflict:e	unsorted	
+L26	26	@VBAR_A	code	VBAR_A		t	agrees	=	
+L26	27	@H24	code	H24		i	agrees	=	
+L26	28	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L26	29	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L26	30	@4TRI	code	4TRI		n	agrees	unsorted	
+L26	31	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L26	32	@4STEM	code	4STEM		d	conflict:n	=	
+L26	33	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L26	34	@OTHER	code	OTHER		c	conflict:e	=	
+L26	35	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L26	36	@LOOPS	code	LOOPS		d	conflict:u	unsorted	
+L26	37	@PHI	code	PHI		i	conflict:e	unsorted	
+L26	38	@4TRI	code	4TRI		n	agrees	unsorted	
+L26	39	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L26	40	@LOOPS	code	LOOPS		l	conflict:u	unsorted	
+L26	41	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L26	42	@PHI	code	PHI		e	agrees	unsorted	
+L26	43	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L26	44	@PHI	code	PHI		o	conflict:e	unsorted	
+L26	45	@PHI	code	PHI		n	conflict:e	unsorted	
+L26	46	@VBAR_A	code	VBAR_A		d	conflict:t	=	
+L26	47	@VBAR_A	code	VBAR_A		y	conflict:t	=	
+L26	48	@PHI	code	PHI		p	conflict:e	unsorted	
+L26	49	@4TRI	code	4TRI		o	conflict:n	unsorted	
+L26	50	@4TRI	code	4TRI		u	conflict:n	unsorted	
+L26	51	@HASH4	code	HASH4		r	conflict:d	=	
+L26	52	@PHI	code	PHI		r	conflict:e	unsorted	
+L26	53	@H24	code	H24		e	conflict:i	=	
+L26	54	@4TRI	code	4TRI		n	agrees	unsorted	
+L26	55	@VBAR_A	code	VBAR_A		t	agrees	=	
+L26	56	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L26	57	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L26	58	@H24	code	H24		o	conflict:i	=	
+L26	59	@4TRI	code	4TRI		n	agrees	unsorted	
+L26	60	@PHI	code	PHI			null-or-unaligned	unsorted	
+L26	61	@HASH4	code	HASH4		t	conflict:d	=	
+L26	62	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L26	63	@H24	code	H24		n	conflict:i	=	
+L26	64	@OTHER	code	OTHER		e	agrees	=	
+L27	0	@4TRI	code	4TRI		v	conflict:n	unsorted	v4 sort
+L27	1	@H24	code	H24		i	agrees	=	
+L27	2	@PHI	code	PHI		e	agrees	unsorted	
+L27	3	@4TRI	code	4TRI		n	agrees	unsorted	
+L27	4	@4TRI	code	4TRI		n	agrees	unsorted	
+L27	5	@PHI	code	PHI		e	agrees	unsorted	
+L27	6	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L27	7	@OTHER	code	OTHER		r	conflict:e	=	
+L27	8	@4TRI	code	4TRI		o	conflict:n	unsorted	
+L27	9	@OTHER	code	OTHER		m	conflict:e	=	
+L27	10	@PHI	code	PHI		e	agrees	unsorted	
+L27	11	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L27	12	@LOOPS	code	LOOPS		o	conflict:u	unsorted	H65-H77 tile
+L27	13	@PHI	code	PHI		o	conflict:e	unsorted	
+L27	14	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L27	15	@VBAR_A	code	VBAR_A		t	agrees	=	
+L27	16	@4TRI	code	4TRI		a	conflict:n	4HOOK	H65-H77 tile
+L27	17	@4TRI	code	4TRI		n	agrees	unsorted	
+L27	18	@VBAR_A	code	VBAR_A		t	agrees	=	
+L27	19	@4STEM	code	4STEM		c	conflict:n	=	
+L27	20	@PHI	code	PHI		e	agrees	unsorted	
+L27	21	@OTHER	code	OTHER		q	conflict:e	=	
+L27	22	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L27	23	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L27	24	@CH	code	CH		e	agrees	=	
+L27	25	@4TRI	code	4TRI		l	conflict:n	4HOOK	v4 sort
+L27	26	@PHI	code	PHI		u	conflict:e	unsorted	
+L27	27	@VBAR_A	code	VBAR_A		y	conflict:t	=	
+L27	28	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L27	29	@PHI	code	PHI		e	agrees	unsorted	
+L27	30	@BETA	code	BETA		s	conflict:m	=	
+L27	31	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L27	32	@4TRI	code	4TRI		m	conflict:n	unsorted	
+L27	33	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L27	34	@4STEM	code	4STEM		n	agrees	=	
+L27	35	@PHI	code	PHI		d	conflict:e	unsorted	
+L27	36	@RSIGN	code	RSIGN		p	conflict:m	=	
+L27	37	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L27	38	@PHI	code	PHI		r	conflict:e	unsorted	
+L27	39	@LOOPS	code	LOOPS		s	conflict:u	SBS	v4 sort
+L27	40	@LOOPS	code	LOOPS		a	conflict:u	unsorted	
+L27	41	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L27	42	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L27	43	@PHI	code	PHI		i	conflict:e	unsorted	
+L27	44	@VBAR_A	code	VBAR_A		n	conflict:t	=	
+L27	45	@4TRI	code	4TRI		c	conflict:n	unsorted	v4 sort
+L27	46	@LOOPS	code	LOOPS		t	conflict:u	unsorted	
+L27	47	@PHI	code	PHI		e	agrees	unsorted	
+L27	48	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L27	49	@4TRI	code	4TRI		n	agrees	unsorted	
+L27	50	@HASH4	code	HASH4			null-or-unaligned	=	
+L27	51	@PHI	code	PHI		o	conflict:e	unsorted	H65-H77 tile
+L27	52	@OTHER	code	OTHER		u	conflict:e	=	
+L27	53	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L27	54	@H24	code	H24		n	conflict:i	=	
+L27	55	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L27	56	@PHI	code	PHI		e	agrees	unsorted	
+L27	57	@PHI	code	PHI		s	conflict:e	unsorted	
+L27	58	@4TRI	code	4TRI		c	conflict:n	4HOOK	v4 sort
+L28	0	@BETA	code	BETA		p	conflict:m	=	
+L28	1	@4TRI	code	4TRI		r	conflict:n	unsorted	
+L28	2	@H24	code	H24		i	agrees	=	
+L28	3	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L28	4	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L28	5	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L28	6	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L28	7	@VBAR_A	code	VBAR_A		y	conflict:t	=	
+L28	8	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L28	9	@LOOPS	code	LOOPS		a	conflict:u	unsorted	
+L28	10	@PHI	code	PHI		s	conflict:e	unsorted	
+L28	11	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L28	12	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L28	13	@4TRI	code	4TRI		n	agrees	unsorted	
+L28	14	@4STEM	code	4STEM		c	conflict:n	=	
+L28	15	@PHI	code	PHI		t	conflict:e	unsorted	
+L28	16	@ZBAR	code	ZBAR		e	conflict:s	=	
+L28	17	@VBAR_A	code	VBAR_A		t	agrees	=	
+L28	18	@LOOPSTEM1	code	LOOPSTEM1		s	conflict:q	=	
+L28	19	@HASH4	code	HASH4		y	conflict:d	=	
+L28	20	@VBAR_A	code	VBAR_A		t	agrees	=	
+L28	21	@PHI	code	PHI		e	agrees	unsorted	
+L28	22	@4TRI	code	4TRI		n	agrees	unsorted	
+L28	23	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L28	24	@PHI	code	PHI		e	agrees	unsorted	
+L28	25	@LOOPS	code	LOOPS		f	conflict:u	unsorted	
+L28	26	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L28	27	@PHI	code	PHI		r	conflict:e	unsorted	
+L28	28	@OTHER	code	OTHER		t	conflict:e	=	
+L28	29	@PHI	code	PHI		p	conflict:e	unsorted	
+L28	30	@PHI	code	PHI		r	conflict:e	unsorted	
+L28	31	@RSIGN	code	RSIGN		e	conflict:m	=	
+L28	32	@H24	code	H24		s	conflict:i	=	
+L28	33	@PHI	code	PHI		s	conflict:e	unsorted	
+L28	34	@PHI	code	PHI		e	agrees	unsorted	
+L28	35	@VBAR_A	code	VBAR_A		e	conflict:t	=	
+L28	36	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L28	37	@PHI	code	PHI		l	conflict:e	unsorted	
+L28	38	@PHI	code	PHI		a	conflict:e	unsorted	
+L28	39	@OTHER	code	OTHER		g	conflict:e	=	
+L28	40	@4TRI	code	4TRI		u	conflict:n	unsorted	
+L28	41	@EBR_B	code	EBR_B		e	conflict:l	=	
+L28	42	@PHI	code	PHI		r	conflict:e	unsorted	
+L28	43	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L28	44	@4TRI	code	4TRI		e	conflict:n	unsorted	
+L28	45	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L28	46	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L28	47	@OTHER	code	OTHER		i	conflict:e	=	
+L28	48	@EBR_B	code	EBR_B		l	agrees	=	
+L28	49	@EBR_B	code	EBR_B		y	conflict:l	=	
+L28	50	@PHI	code	PHI		v	conflict:e	unsorted	
+L28	51	@PHI	code	PHI		a	conflict:e	unsorted	
+L28	52	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L28	53	@PHI	code	PHI		e	agrees	unsorted	
+L28	54	@EBR_B	code	EBR_B		l	agrees	=	
+L28	55	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L28	56	@PHI	code	PHI		o	conflict:e	unsorted	
+L28	57	@4TRI	code	4TRI		n	agrees	unsorted	
+L28	58	@4TRI	code	4TRI		n	agrees	unsorted	
+L28	59	@PHI	code	PHI		e	agrees	unsorted	
+L28	60	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L28	61	@PHI	code	PHI		r	conflict:e	unsorted	
+L28	62	@HASH4	code	HASH4		d	agrees	=	
+L28	63	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L29	0	@HASH4	code	HASH4		d	agrees	=	
+L29	1	@PHI	code	PHI		e	agrees	unsorted	
+L29	2	@EBR_B	code	EBR_B		f	conflict:l	=	
+L29	3	@PHI	code	PHI		f	conflict:e	unsorted	
+L29	4	@PHI	code	PHI		e	agrees	unsorted	
+L29	5	@H24	code	H24		n	conflict:i	=	
+L29	6	@PHI	code	PHI		d	conflict:e	unsorted	
+L29	7	@H24	code	H24		r	conflict:i	=	
+L29	8	@PHI	code	PHI		e	agrees	unsorted	
+L29	9	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L29	10	@VBAR_A	code	VBAR_A		m	conflict:t	=	
+L29	11	@PHI	code	PHI		o	conflict:e	unsorted	
+L29	12	@4TRI	code	4TRI		n	agrees	unsorted	
+L29	13	@HASH4	code	HASH4		s	conflict:d	=	
+L29	14	@PHI	code	PHI		i	conflict:e	unsorted	
+L29	15	@PHI	code	PHI		e	agrees	unsorted	
+L29	16	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L29	17	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L29	18	@4TRI	code	4TRI		r	conflict:n	unsorted	
+L29	19	@4STEM	code	4STEM		c	conflict:n	=	
+L29	20	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L29	21	@PHI	code	PHI		r	conflict:e	unsorted	
+L29	22	@4STEM	code	4STEM		d	conflict:n	=	
+L29	23	@H24	code	H24		i	agrees	=	
+L29	24	@4TRI	code	4TRI		n	agrees	unsorted	
+L29	25	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L29	26	@EBR_B	code	EBR_B		l	agrees	=	
+L29	27	@HASH4	code	HASH4		d	agrees	=	
+L29	28	@PHI	code	PHI		e	agrees	unsorted	
+L29	29	@VBAR_A	code	VBAR_A		v	conflict:t	=	
+L29	30	@PHI	code	PHI		e	agrees	unsorted	
+L29	31	@4TRI	code	4TRI		n	agrees	unsorted	
+L29	32	@H24	code	H24		i	agrees	=	
+L29	33	@PHI	code	PHI		r	conflict:e	unsorted	
+L29	34	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L29	35	@OTHER	code	OTHER		e	agrees	=	
+L29	36	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L29	37	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L29	38	@H24	code	H24		i	agrees	=	
+L29	39	@EBR_B	code	EBR_B		l	agrees	=	
+L29	40	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L29	41	@EBR_B	code	EBR_B		f	conflict:l	=	
+L29	42	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L29	43	@H24	code	H24		i	agrees	=	
+L29	44	@EBR_B	code	EBR_B		l	agrees	=	
+L29	45	@EBR_B	code	EBR_B		l	agrees	=	
+L29	46	@EBR_B	code	EBR_B		y	conflict:l	=	
+L29	47	@H24	code	H24		q	conflict:i	=	
+L29	48	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L29	49	@PHI	code	PHI		o	conflict:e	unsorted	
+L29	50	@4TRI	code	4TRI		n	agrees	unsorted	
+L29	51	@EBR_B	code	EBR_B		l	agrees	=	
+L29	52	@PHI	code	PHI		e	agrees	unsorted	
+L29	53	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L29	54	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L29	55	@4TRI	code	4TRI		n	agrees	unsorted	
+L29	56	@H24	code	H24		i	agrees	=	
+L29	57	@LOOPS	code	LOOPS		s	conflict:u	unsorted	
+L29	58	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L29	59	@PHI	code	PHI		e	agrees	unsorted	
+L30	0	@4TRI	code	4TRI		n	agrees	unsorted	
+L30	1	@PHI	code	PHI		o	conflict:e	unsorted	
+L30	2	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L30	3	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L30	4	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L30	5	@H24	code	H24		j	conflict:i	=	
+L30	6	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L30	7	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L30	8	@PHI	code	PHI		e	agrees	unsorted	
+L30	9	@PHI	code	PHI		o	conflict:e	unsorted	
+L30	10	@4TRI	code	4TRI		n	agrees	unsorted	
+L30	11	@ISH	code	ISH		s	conflict:l	=	
+L30	12	@4STEM	code	4STEM		q	conflict:n	=	
+L30	13	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L30	14	@H24	code	H24		i	agrees	=	
+L30	15	@EBR_B	code	EBR_B		l	agrees	=	
+L30	16	@4TRI	code	4TRI		n	agrees	unsorted	
+L30	17	@PHI	code	PHI		e	agrees	unsorted	
+L30	18	@ZBAR	code	ZBAR		s	agrees	=	
+L30	19	@EBR_B	code	EBR_B		y	conflict:l	=	
+L30	20	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L30	21	@PHI	code	PHI		e	agrees	unsorted	
+L30	22	@PHI	code	PHI		r	conflict:e	unsorted	
+L30	23	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L30	24	@PHI	code	PHI		r	conflict:e	unsorted	
+L30	25	@H24	code	H24		i	agrees	=	
+L30	26	@PHI	code	PHI		e	agrees	unsorted	
+L30	27	@4TRI	code	4TRI		n	agrees	unsorted	
+L30	28	@HASH4	code	HASH4		d	agrees	=	
+L30	29	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L30	30	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L30	31	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L30	32	@4TRI	code	4TRI		n	agrees	unsorted	
+L30	33	@VBAR_A	code	VBAR_A		t	agrees	=	
+L30	34	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L30	35	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L30	36	@PHI	code	PHI		e	agrees	PHI	v4 sort
+L30	37	@LOOPS	code	LOOPS		v	agrees	unsorted	
+L30	38	@PHI	code	PHI		e	agrees	unsorted	
+L30	39	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L30	40	@EBR_B	code	EBR_B		l	agrees	=	
+L30	41	@PHI	code	PHI		e	agrees	unsorted	
+L30	42	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L30	43	@VBAR_A	code	VBAR_A		t	agrees	=	
+L30	44	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L30	45	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L30	46	@VBAR_A	code	VBAR_A		t	agrees	=	
+L30	47	@4STEM	code	4STEM		d	conflict:n	=	
+L30	48	@PHI	code	PHI		e	agrees	unsorted	
+L30	49	@4STEM	code	4STEM		c	conflict:n	=	
+L30	50	@PHI	code	PHI		e	agrees	unsorted	
+L30	51	@BETA	code	BETA		m	agrees	=	
+L30	52	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L30	53	@4TRI	code	4TRI		n	agrees	unsorted	
+L30	54	@HASH4	code	HASH4		d	agrees	=	
+L30	55	@PHI	code	PHI		e	agrees	unsorted	
+L30	56	@OTHER	code	OTHER		i	conflict:e	=	
+L30	57	@PHI	code	PHI		e	agrees	unsorted	
+L30	58	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L30	59	@VBAR_A	code	VBAR_A		t	agrees	=	
+L30	60	@HASH4	code	HASH4		a	conflict:d	=	
+L30	61	@LOOPS	code	LOOPS		u	agrees	INF	v4 sort
+L30	62	@VBAR_A	code	VBAR_A		l	conflict:t	=	
+L30	63	@PHI	code	PHI		t	conflict:e	unsorted	
+L31	0	@PHI	code	PHI		e	agrees	unsorted	
+L31	1	@OTHER	code	OTHER			null-or-unaligned	=	
+L31	2	@EBR_B	code	EBR_B		l	agrees	=	
+L31	3	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L31	4	@4TRI	code	4TRI		n	agrees	unsorted	
+L31	5	@4TRI	code	4TRI		n	agrees	unsorted	
+L31	6	@OTHER	code	OTHER			null-or-unaligned	=	
+L31	7	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L31	8	@HASH4	code	HASH4		d	agrees	=	
+L31	9	@H24	code	H24		i	agrees	=	
+L31	10	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L31	11	@PHI	code	PHI		o	conflict:e	unsorted	
+L31	12	@H24	code	H24		i	agrees	=	
+L31	13	@VBAR_A	code	VBAR_A		t	agrees	=	
+L31	14	@PHI	code	PHI		e	agrees	unsorted	
+L31	15	@4TRI	code	4TRI		n	agrees	unsorted	
+L31	16	@OTHER	code	OTHER		e	agrees	=	
+L31	17	@HASH4	code	HASH4		d	agrees	=	
+L31	18	@PHI	code	PHI		e	agrees	unsorted	
+L31	19	@4STEM	code	4STEM		p	conflict:n	=	
+L31	20	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L31	21	@H24	code	H24		i	agrees	=	
+L31	22	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L31	23	@HASH4	code	HASH4		q	conflict:d	=	
+L31	24	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L31	25	@PHI	code	PHI		e	agrees	unsorted	
+L31	26	@OTHER	code	OTHER		l	conflict:e	=	
+L31	27	@HASH4	code	HASH4		q	conflict:d	=	
+L31	28	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L31	29	@PHI	code	PHI		e	agrees	unsorted	
+L31	30	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L31	31	@H24	code	H24		j	conflict:i	=	
+L31	32	@PHI	code	PHI		o	conflict:e	unsorted	
+L31	33	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L31	34	@PHI	code	PHI		r	conflict:e	unsorted	
+L31	35	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L31	36	@HASH4	code	HASH4		q	conflict:d	=	
+L31	37	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L31	38	@PHI	code	PHI		e	agrees	unsorted	
+L31	39	@OTHER	code	OTHER		l	conflict:e	=	
+L31	40	@HASH4	code	HASH4		q	conflict:d	=	
+L31	41	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L31	42	@PHI	code	PHI		e	agrees	unsorted	
+L31	43	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L31	44	@LOOPS	code	LOOPS		h	conflict:u	INF	v4 sort
+L31	45	@HASH4	code	HASH4		b	conflict:d	=	
+L31	46	@H24	code	H24		n	conflict:i	=	
+L31	47	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L31	48	@PHI	code	PHI		b	conflict:e	SBS	H65-H77 tile
+L31	49	@H24	code	H24		i	agrees	=	
+L31	50	@PHI	code	PHI		e	agrees	unsorted	
+L31	51	@4TRI	code	4TRI		n	agrees	unsorted	
+L31	52	@HASH4	code	HASH4		p	conflict:d	=	
+L31	53	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L31	54	@PHI	code	PHI		e	agrees	unsorted	
+L31	55	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L31	56	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L31	57	@PHI	code	PHI		r	conflict:e	unsorted	
+L31	58	@PHI	code	PHI		s	conflict:e	unsorted	
+L31	59	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L31	60	@PHI	code	PHI		e	agrees	unsorted	
+L31	61	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L31	62	@VBAR_A	code	VBAR_A		t	agrees	=	
+L31	63	@PHI	code	PHI		o	conflict:e	unsorted	
+L31	64	@H24	code	H24		i	agrees	=	
+L32	0	@PHI	code	PHI		e	agrees	unsorted	
+L32	1	@4TRI	code	4TRI		z	conflict:n	unsorted	
+L32	2	@RSIGN	code	RSIGN		p	conflict:m	=	
+L32	3	@4TRI	code	4TRI		o	conflict:n	4HOOK	v4 sort
+L32	4	@OTHER	code	OTHER		u	conflict:e	=	
+L32	5	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L32	6	@PHI	code	PHI		r	conflict:e	unsorted	
+L32	7	@BETA	code	BETA			null-or-unaligned	=	
+L32	8	@ZBAR	code	ZBAR		f	agrees	=	
+L32	9	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L32	10	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L32	11	@H24	code	H24		i	agrees	=	
+L32	12	@PHI	code	PHI		r	conflict:e	unsorted	
+L32	13	@PHI	code	PHI		e	agrees	unsorted	
+L32	14	@OTHER	code	OTHER			null-or-unaligned	=	
+L32	15	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L32	16	@4TRI	code	4TRI		n	agrees	unsorted	
+L32	17	@PHI	code	PHI		e	agrees	unsorted	
+L32	18	@PHI	code	PHI		o	conflict:e	unsorted	
+L32	19	@HASH4	code	HASH4		f	conflict:d	=	
+L32	20	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L32	21	@H24	code	H24		i	agrees	=	
+L32	22	@4STEM	code	4STEM		c	conflict:n	=	
+L32	23	@PHI	code	PHI		e	agrees	unsorted	
+L32	24	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L32	25	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L32	26	@H24	code	H24		i	agrees	=	
+L32	27	@EBR_B	code	EBR_B		l	agrees	=	
+L32	28	@OTHER	code	OTHER		l	conflict:e	=	
+L32	29	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L32	30	@PHI	code	PHI		e	agrees	unsorted	
+L32	31	@HASH4	code	HASH4		d	agrees	=	
+L32	32	@PHI	code	PHI		e	agrees	unsorted	
+L32	33	@4TRI	code	4TRI		c	conflict:n	4HOOK	v4 sort
+L32	34	@4STEM	code	4STEM		e	conflict:n	=	
+L32	35	@PHI	code	PHI		i	conflict:e	unsorted	
+L32	36	@LOOPSTEM1	code	LOOPSTEM1		s	conflict:q	=	
+L32	37	PLAIN	clear			asainc	clear	=	
+L32	38	@PHI	code	PHI		e	agrees	unsorted	
+L32	39	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L32	40	@VBAR_A	code	VBAR_A		t	agrees	=	
+L32	41	@PHI	code	PHI		r	conflict:e	unsorted	
+L32	42	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L32	43	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L32	44	@RSIGN	code	RSIGN		t	conflict:m	=	
+L32	45	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L32	46	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L32	47	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L32	48	@EBR_B	code	EBR_B		l	agrees	=	
+L32	49	@PHI	code	PHI		e	agrees	unsorted	
+L32	50	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L32	51	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L32	52	@PHI	code	PHI		o	conflict:e	unsorted	
+L32	53	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L32	54	@4TRI	code	4TRI		n	agrees	unsorted	
+L32	55	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L32	56	@H24	code	H24		i	agrees	=	
+L32	57	@HASH4	code	HASH4		d	agrees	=	
+L32	58	@PHI	code	PHI		e	agrees	unsorted	
+L32	59	@PHI	code	PHI		r	conflict:e	unsorted	
+L32	60	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L32	61	@VBAR_A	code	VBAR_A		t	agrees	=	
+L32	62	@H24	code	H24		i	agrees	=	
+L32	63	@PHI	code	PHI		o	conflict:e	unsorted	
+L33	0	@OTHER	code	OTHER		d	conflict:e	=	
+L33	1	@OTHER	code	OTHER		i	conflict:e	=	
+L33	2	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L33	3	@HASH4	code	HASH4		t	conflict:d	=	
+L33	4	@PHI	code	PHI		a	conflict:e	unsorted	
+L33	5	@VBAR_A	code	VBAR_A		t	agrees	=	
+L33	6	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L33	7	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L33	8	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L33	9	@VBAR_A	code	VBAR_A		n	conflict:t	=	
+L33	10	@4STEM	code	4STEM		a	conflict:n	=	
+L33	11	@PHI	code	PHI		e	agrees	unsorted	
+L33	12	@4TRI	code	4TRI			null-or-unaligned	4HOOK	v4 sort
+L33	13	@VBAR_B	code	VBAR_B		s	agrees	=	
+L33	14	@PHI	code	PHI			null-or-unaligned	PHI	v4 sort
+L33	15	@VBAR_A	code	VBAR_A		t	agrees	=	
+L33	16	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L33	17	@PHI	code	PHI		v	conflict:e	unsorted	
+L33	18	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L33	19	@H24	code	H24		i	agrees	=	
+L33	20	@PHI	code	PHI		o	conflict:e	unsorted	
+L33	21	@INF	code	INF		u	agrees	=	
+L33	22	@VBAR_A	code	VBAR_A		t	agrees	=	
+L33	23	@PHI	code	PHI		r	conflict:e	unsorted	
+L33	24	@PHI	code	PHI		e	agrees	unsorted	
+L33	25	@4TRI	code	4TRI		a	conflict:n	4HOOK	H65-H77 tile
+L33	26	@INF	code	INF		u	agrees	=	
+L33	27	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L33	28	@C43	code	C43		a	agrees	=	
+L33	29	@H24	code	H24		i	agrees	=	
+L33	30	@VBAR_A	code	VBAR_A		t	agrees	=	
+L33	31	@HASH4	code	HASH4		d	agrees	=	
+L33	32	@PHI	code	PHI		e	agrees	unsorted	
+L33	33	@EBR_B	code	EBR_B		l	agrees	=	
+L33	34	@C43	code	C43		a	agrees	=	
+L33	35	@PHI	code	PHI		r	conflict:e	unsorted	
+L33	36	@PHI	code	PHI		e	agrees	unsorted	
+L33	37	@EBR_B	code	EBR_B		l	agrees	=	
+L33	38	@H24	code	H24		i	agrees	=	
+L33	39	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L33	40	@H24	code	H24		i	agrees	=	
+L33	41	@PHI	code	PHI		o	conflict:e	unsorted	
+L33	42	@4TRI	code	4TRI		n	agrees	unsorted	
+L33	43	@OTHER	code	OTHER		p	conflict:e	=	
+L33	44	@EBR_A	code	EBR_A		a	conflict:s	=	
+L33	45	@PHI	code	PHI		r	conflict:e	unsorted	
+L33	46	@VBAR_A	code	VBAR_A		e	conflict:t	=	
+L33	47	@BETA	code	BETA		l	conflict:m	=	
+L33	48	@PHI	code	PHI		t	conflict:e	unsorted	
+L33	49	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L33	50	@BETA	code	BETA		n	conflict:m	=	
+L33	51	@PHI	code	PHI		u	conflict:e	unsorted	
+L33	52	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L33	53	@PHI	code	PHI		h	conflict:e	unsorted	
+L33	54	@4TRI	code	4TRI		u	conflict:n	unsorted	
+L33	55	@H24	code	H24		n	conflict:i	=	
+L33	56	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L33	57	@PHI	code	PHI		r	conflict:e	unsorted	
+L33	58	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L33	59	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L33	60	@HASH4	code	HASH4		s	conflict:d	=	
+L33	61	@PHI	code	PHI		o	conflict:e	PHI	v4 sort
+L33	62	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L33	63	@VBAR_A	code	VBAR_A		n	conflict:t	=	
+L33	64	@4TRI	code	4TRI		n	agrees	unsorted	
+L34	0	@VBAR_B	code	VBAR_B			null-or-unaligned	=	
+L34	1	@H24	code	H24		i	agrees	=	
+L34	2	@EBR_B	code	EBR_B		l	agrees	=	
+L34	3	@EBR_B	code	EBR_B		l	agrees	=	
+L34	4	@PHI	code	PHI		e	agrees	unsorted	
+L34	5	@INF	code	INF		u	agrees	=	
+L34	6	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L34	7	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L34	8	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L34	9	@H24	code	H24		i	agrees	=	
+L34	10	@VBAR_A	code	VBAR_A		t	agrees	=	
+L34	11	@DBL	code	DBL		r	conflict:e	=	
+L34	12	@DBL	code	DBL		e	agrees	=	
+L34	13	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L34	14	@4TRI	code	4TRI		p	conflict:n	4TRI	H65-H77 tile
+L34	15	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L34	16	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L34	17	@4STEM	code	4STEM		t	conflict:n	=	
+L34	18	@PHI	code	PHI		q	conflict:e	unsorted	
+L34	19	@OTHER	code	OTHER		i	conflict:e	=	
+L34	20	@4TRI	code	4TRI		l	conflict:n	4HOOK	v4 sort
+L34	21	@DBL	code	DBL		u	conflict:e	=	
+L34	22	@EBR_B	code	EBR_B		l	agrees	=	
+L34	23	@PHI	code	PHI		e	agrees	unsorted	
+L34	24	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L34	25	@PHI	code	PHI		r	conflict:e	unsorted	
+L34	26	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L34	27	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L34	28	@VBAR_A	code	VBAR_A		t	agrees	=	
+L34	29	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L34	30	@HASH4	code	HASH4			null-or-unaligned	=	
+L34	31	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L34	32	@PHI	code	PHI		r	conflict:e	unsorted	
+L34	33	@PHI	code	PHI		e	agrees	unsorted	
+L34	34	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L34	35	@PHI	code	PHI		b	conflict:e	SBS	H65-H77 tile
+L34	36	@EBR_B	code	EBR_B		l	agrees	=	
+L34	37	@PHI	code	PHI		e	agrees	unsorted	
+L34	38	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L34	39	@PHI	code	PHI		e	agrees	unsorted	
+L34	40	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L34	41	@VBAR_A	code	VBAR_A		t	agrees	=	
+L34	42	@4STEM	code	4STEM		p	conflict:n	=	
+L34	43	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L34	44	@OTHER	code	OTHER			null-or-unaligned	=	
+L34	45	@H24	code	H24		i	agrees	=	
+L34	46	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L34	47	@HASH4	code	HASH4		q	conflict:d	=	
+L34	48	@INF	code	INF		u	agrees	=	
+L34	49	@PHI	code	PHI		e	agrees	unsorted	
+L34	50	@C43	code	C43		n	conflict:a	=	
+L34	51	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L34	52	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L34	53	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L34	54	@4STEM	code	4STEM		c	conflict:n	=	
+L34	55	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L34	56	@4TRI	code	4TRI		n	agrees	unsorted	
+L34	57	@OTHER	code	OTHER			null-or-unaligned	=	
+L34	58	@BETA	code	BETA		m	agrees	=	
+L34	59	@PHI	code	PHI		e	agrees	PHI	v4 sort
+L34	60	@VBAR_A	code	VBAR_A		t	agrees	=	
+L34	61	@PHI	code	PHI		e	agrees	unsorted	
+L34	62	@4TRI	code	4TRI		n	agrees	unsorted	
+L34	63	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L34	64	@INF	code	INF		u	agrees	=	
+L34	65	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L34	66	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L35	0	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L35	1	@EBR_A	code	EBR_A		l	conflict:s	=	
+L35	2	@H24	code	H24		i	agrees	=	
+L35	3	@4TRI	code	4TRI		n	agrees	unsorted	
+L35	4	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L35	5	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	6	@PHI	code	PHI		e	agrees	unsorted	
+L35	7	@DBL	code	DBL		r	conflict:e	=	
+L35	8	@PHI	code	PHI		e	agrees	unsorted	
+L35	9	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L35	10	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	11	@HASH4	code	HASH4		d	agrees	=	
+L35	12	@PHI	code	PHI		e	agrees	unsorted	
+L35	13	@EBR_B	code	EBR_B		l	agrees	=	
+L35	14	@PHI	code	PHI		e	agrees	unsorted	
+L35	15	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L35	16	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	17	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L35	18	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	19	@HASH4	code	HASH4		q	conflict:d	=	
+L35	20	@INF	code	INF		u	agrees	=	
+L35	21	@H24	code	H24		i	agrees	=	
+L35	22	@EBR_B	code	EBR_B		l	agrees	=	
+L35	23	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L35	24	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L35	25	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	26	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L35	27	@H24	code	H24		i	agrees	=	
+L35	28	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	29	@PHI	code	PHI		b	conflict:e	SBS	H65-H77 tile
+L35	30	@H24	code	H24		i	agrees	=	
+L35	31	@PHI	code	PHI		e	agrees	unsorted	
+L35	32	@4TRI	code	4TRI		n	agrees	unsorted	
+L35	33	@PHI	code	PHI		r	conflict:e	unsorted	
+L35	34	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L35	35	@H24	code	H24		i	agrees	=	
+L35	36	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L35	37	@PHI	code	PHI		o	conflict:e	unsorted	
+L35	38	@4TRI	code	4TRI		n	agrees	unsorted	
+L35	39	@4TRI	code	4TRI		n	agrees	unsorted	
+L35	40	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L35	41	@PHI	code	PHI		b	conflict:e	SBS	H65-H77 tile
+L35	42	@EBR_B	code	EBR_B		l	agrees	=	
+L35	43	@PHI	code	PHI		e	agrees	unsorted	
+L35	44	@OTHER	code	OTHER		q	conflict:e	=	
+L35	45	@OTHER	code	OTHER		e	agrees	=	
+L35	46	@EBR_B	code	EBR_B		l	agrees	=	
+L35	47	@DBL	code	DBL		e	agrees	=	
+L35	48	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L35	49	@H24	code	H24		i	agrees	=	
+L35	50	@PHI	code	PHI		e	agrees	unsorted	
+L35	51	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L35	52	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L35	53	@PHI	code	PHI		e	agrees	unsorted	
+L35	54	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L35	55	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L35	56	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	57	@4TRI	code	4TRI		p	conflict:n	4TRI	H65-H77 tile
+L35	58	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L35	59	@H24	code	H24		i	agrees	=	
+L35	60	@4TRI	code	4TRI		n	agrees	unsorted	
+L35	61	@VBAR_A	code	VBAR_A		t	agrees	=	
+L35	62	@PHI	code	PHI		o	conflict:e	unsorted	
+L35	63	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L35	64	@ZBAR	code	ZBAR			null-or-unaligned	=	
+L36	0	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L36	1	@EBR_B	code	EBR_B		n	conflict:l	=	
+L36	2	@H24	code	H24		t	conflict:i	=	
+L36	3	@PHI	code	PHI		r	conflict:e	unsorted	
+L36	4	@RSIGN	code	RSIGN		e	conflict:m	=	
+L36	5	@PHI	code	PHI		b	conflict:e	unsorted	
+L36	6	@H24	code	H24		i	agrees	=	
+L36	7	@PHI	code	PHI		e	agrees	unsorted	
+L36	8	@4TRI	code	4TRI		n	agrees	unsorted	
+L36	9	@HASH4	code	HASH4		q	conflict:d	=	
+L36	10	@EBR_B	code	EBR_B		l	agrees	=	
+L36	11	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L36	12	@H24	code	H24		i	agrees	=	
+L36	13	@4TRI	code	4TRI		m	conflict:n	unsorted	
+L36	14	@HASH4	code	HASH4		p	conflict:d	=	
+L36	15	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L36	16	@VBAR_A	code	VBAR_A		t	agrees	=	
+L36	17	@PHI	code	PHI		r	conflict:e	unsorted	
+L36	18	@PHI	code	PHI		o	conflict:e	unsorted	
+L36	19	@4TRI	code	4TRI		n	agrees	unsorted	
+L36	20	@H24	code	H24		i	agrees	=	
+L36	21	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L36	22	@DBL	code	DBL		e	agrees	=	
+L36	23	@HASH4	code	HASH4		d	agrees	=	
+L36	24	@PHI	code	PHI		i	conflict:e	unsorted	
+L36	25	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L36	26	@DBL	code	DBL		r	conflict:e	=	
+L36	27	@PHI	code	PHI		o	conflict:e	unsorted	
+L36	28	@H24	code	H24		y	conflict:i	=	
+L36	29	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L36	30	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L36	31	@BETA	code	BETA		m	agrees	=	
+L36	32	@PHI	code	PHI		e	agrees	unsorted	
+L36	33	@EBR_B	code	EBR_B		l	agrees	=	
+L36	34	@PHI	code	PHI		a	conflict:e	unsorted	
+L36	35	@VBAR_A	code	VBAR_A		d	conflict:t	=	
+L36	36	@4STEM	code	4STEM		e	conflict:n	=	
+L36	37	@PHI	code	PHI		p	conflict:e	unsorted	
+L36	38	@PHI	code	PHI		r	conflict:e	unsorted	
+L36	39	@INF	code	INF		u	agrees	=	
+L36	40	@H24	code	H24		i	agrees	=	
+L36	41	@4TRI	code	4TRI		n	agrees	unsorted	
+L36	42	@H24	code	H24		c	conflict:i	=	
+L36	43	@PHI	code	PHI		e	agrees	unsorted	
+L36	44	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L36	45	@PHI	code	PHI		r	conflict:e	unsorted	
+L36	46	@4TRI	code	4TRI		o	conflict:n	unsorted	
+L36	47	@H24	code	H24		u	conflict:i	=	
+L36	48	@PHI	code	PHI		i	conflict:e	unsorted	
+L36	49	@DBL	code	DBL		n	conflict:e	=	
+L36	50	@PHI	code	PHI		c	conflict:e	unsorted	
+L36	51	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L36	52	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L36	53	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L36	54	@H24	code	H24		i	agrees	=	
+L36	55	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L36	56	@VBAR_A	code	VBAR_A		o	conflict:t	=	
+L36	57	@PHI	code	PHI		r	conflict:e	unsorted	
+L36	58	@H24	code	H24		i	agrees	=	
+L36	59	@VBAR_A	code	VBAR_A		u	conflict:t	=	
+L36	60	@H24	code	H24		a	conflict:i	=	
+L36	61	@EBR_B	code	EBR_B		a	conflict:l	=	
+L37	0	@HASH4	code	HASH4		q	conflict:d	=	
+L37	1	@INF	code	INF		u	agrees	=	
+L37	2	@PHI	code	PHI		e	agrees	unsorted	
+L37	3	@EBR_B	code	EBR_B		l	agrees	=	
+L37	4	@HASH4	code	HASH4		q	conflict:d	=	
+L37	5	@INF	code	INF		u	agrees	=	
+L37	6	@PHI	code	PHI		e	agrees	unsorted	
+L37	7	@OTHER	code	OTHER		c	conflict:e	=	
+L37	8	@4TRI	code	4TRI		h	conflict:n	unsorted	
+L37	9	@INF	code	INF			null-or-unaligned	=	
+L37	10	@PHI	code	PHI		o	conflict:e	unsorted	
+L37	11	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L37	12	@PHI	code	PHI		e	agrees	unsorted	
+L37	13	@OTHER	code	OTHER			null-or-unaligned	=	
+L37	14	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L37	15	@OTHER	code	OTHER		u	conflict:e	=	
+L37	16	@HASH4	code	HASH4		p	conflict:d	=	
+L37	17	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L37	18	@VBAR_A	code	VBAR_A		t	agrees	=	
+L37	19	@PHI	code	PHI		r	conflict:e	unsorted	
+L37	20	@H24	code	H24		i	agrees	=	
+L37	21	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L37	22	@DBL	code	DBL		r	conflict:e	=	
+L37	23	@H24	code	H24		c	conflict:i	=	
+L37	24	@INF	code	INF			null-or-unaligned	=	
+L37	25	@PHI	code	PHI			null-or-unaligned	unsorted	
+L37	26	@4TRI	code	4TRI		h	conflict:n	unsorted	
+L37	27	@DBL	code	DBL		e	agrees	=	
+L37	28	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L37	29	@INF	code	INF			null-or-unaligned	=	
+L37	30	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L37	31	@OTHER	code	OTHER		d	conflict:e	=	
+L37	32	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L37	33	@DBL	code	DBL		e	agrees	=	
+L37	34	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L37	35	@PHI	code	PHI		o	conflict:e	unsorted	
+L37	36	@4TRI	code	4TRI		n	agrees	unsorted	
+L37	37	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L37	38	@VBAR_A	code	VBAR_A		t	agrees	=	
+L37	39	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L37	40	@4TRI	code	4TRI		n	agrees	unsorted	
+L37	41	@VBAR_A	code	VBAR_A		t	agrees	=	
+L37	42	@H24	code	H24		i	agrees	=	
+L37	43	@4TRI	code	4TRI		n	agrees	unsorted	
+L37	44	@PHI	code	PHI		o	conflict:e	unsorted	
+L37	45	@PHI	code	PHI		p	conflict:e	unsorted	
+L37	46	@EBR_B	code	EBR_B		l	agrees	=	
+L37	47	@PHI	code	PHI		e	agrees	unsorted	
+L37	48	@DBL	code	DBL		s	conflict:e	=	
+L37	49	@H24	code	H24		c	conflict:i	=	
+L37	50	@PHI	code	PHI		r	conflict:e	unsorted	
+L37	51	@PHI	code	PHI		e	agrees	unsorted	
+L37	52	@H24	code	H24		a	conflict:i	=	
+L37	53	@4TRI	code	4TRI		n	agrees	unsorted	
+L37	54	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L37	55	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L37	56	@VBAR_B	code	VBAR_B		s	agrees	=	
+L37	57	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L37	58	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L37	59	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L37	60	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L37	61	@PHI	code	PHI		r	conflict:e	unsorted	
+L37	62	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L37	63	@PHI	code	PHI		e	agrees	unsorted	
+L37	64	@ZBAR	code	ZBAR		p	conflict:s	=	
+L38	0	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L38	1	@PHI	code	PHI		u	conflict:e	unsorted	
+L38	2	@H24	code	H24		i	agrees	=	
+L38	3	@PHI	code	PHI		e	agrees	unsorted	
+L38	4	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L38	5	@VBAR_A	code	VBAR_A		t	agrees	=	
+L38	6	@HASH4	code	HASH4		d	agrees	=	
+L38	7	@PHI	code	PHI		e	agrees	unsorted	
+L38	8	@EBR_B	code	EBR_B		l	agrees	=	
+L38	9	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L38	10	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L38	11	@4STEM	code	4STEM		p	conflict:n	=	
+L38	12	@HASH4	code	HASH4		i	conflict:d	=	
+L38	13	@PHI	code	PHI		r	conflict:e	unsorted	
+L38	14	@H24	code	H24		i	agrees	=	
+L38	15	@VBAR_A	code	VBAR_A		t	agrees	=	
+L38	16	@INF	code	INF		u	agrees	=	
+L38	17	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L38	18	@EBR_B	code	EBR_B		l	agrees	=	
+L38	19	@H24	code	H24		i	agrees	=	
+L38	20	@OTHER	code	OTHER		t	conflict:e	=	
+L38	21	@VBAR_A	code	VBAR_A		e	conflict:t	=	
+L38	22	@PHI	code	PHI		c	conflict:e	unsorted	
+L38	23	@DBL	code	DBL		t	conflict:e	=	
+L38	24	@H24	code	H24		i	agrees	=	
+L38	25	@VBAR_A	code	VBAR_A		t	agrees	=	
+L38	26	@INF	code	INF		u	agrees	=	
+L38	27	@DBL	code	DBL		r	conflict:e	=	
+L38	28	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L38	29	@PHI	code	PHI		e	agrees	unsorted	
+L38	30	@H24	code	H24		i	agrees	=	
+L38	31	@VBAR_A	code	VBAR_A		t	agrees	=	
+L38	32	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L38	33	@OTHER	code	OTHER		e	agrees	=	
+L38	34	@OTHER	code	OTHER		e	agrees	=	
+L38	35	@HASH4	code	HASH4		d	agrees	=	
+L38	36	@H24	code	H24		i	agrees	=	
+L38	37	@PHI	code	PHI		e	agrees	unsorted	
+L38	38	@INF	code	INF		u	agrees	=	
+L38	39	@4TRI	code	4TRI		n	agrees	unsorted	
+L38	40	@PHI	code	PHI		e	agrees	unsorted	
+L38	41	@INF	code	INF		v	agrees	=	
+L38	42	@PHI	code	PHI		e	agrees	unsorted	
+L38	43	@INF	code	INF		u	agrees	=	
+L38	44	@EBR_B	code	EBR_B		l	agrees	=	
+L38	45	@EBR_B	code	EBR_B		l	agrees	=	
+L38	46	@PHI	code	PHI		e	agrees	unsorted	
+L38	47	@OTHER	code	OTHER			null-or-unaligned	=	
+L38	48	@PHI	code	PHI		e	agrees	unsorted	
+L38	49	@H24	code	H24		n	conflict:i	=	
+L38	50	@HASH4	code	HASH4		c	conflict:d	=	
+L38	51	@PHI	code	PHI		o	conflict:e	unsorted	
+L38	52	@PHI	code	PHI		r	conflict:e	unsorted	
+L38	53	@PHI	code	PHI		e	agrees	unsorted	
+L38	54	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L38	55	@OTHER	code	OTHER			null-or-unaligned	=	
+L38	56	@EBR_B	code	EBR_B		l	agrees	=	
+L38	57	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L38	58	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L38	59	@H24	code	H24		i	agrees	=	
+L38	60	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L38	61	@4TRI	code	4TRI		n	agrees	unsorted	
+L38	62	@H24	code	H24		i	agrees	=	
+L38	63	@VBAR_A	code	VBAR_A		t	agrees	=	
+L38	64	@PHI	code	PHI		e	agrees	unsorted	
+L38	65	@ZBAR	code	ZBAR		p	conflict:s	=	
+L39	0	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L39	1	@DBL	code	DBL		u	conflict:e	=	
+L39	2	@H24	code	H24		i	agrees	=	
+L39	3	@DBL	code	DBL		r	conflict:e	=	
+L39	4	@PHI	code	PHI		e	agrees	unsorted	
+L39	5	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L39	6	@INF	code	INF			null-or-unaligned	=	
+L39	7	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L39	8	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L39	9	@PHI	code	PHI		r	conflict:e	unsorted	
+L39	10	@HASH4	code	HASH4		d	agrees	=	
+L39	11	@PHI	code	PHI		e	agrees	unsorted	
+L39	12	@EBR_B	code	EBR_B		l	agrees	=	
+L39	13	@DBL	code	DBL		e	agrees	=	
+L39	14	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L39	15	@EBR_B	code	EBR_B		l	agrees	=	
+L39	16	@H24	code	H24		i	agrees	=	
+L39	17	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L39	18	@PHI	code	PHI		e	agrees	unsorted	
+L39	19	@HASH4	code	HASH4		d	agrees	=	
+L39	20	@PHI	code	PHI		i	conflict:e	unsorted	
+L39	21	@BETA	code	BETA		m	agrees	=	
+L39	22	@DBL	code	DBL		i	conflict:e	=	
+L39	23	@INF	code	INF		n	conflict:u	=	
+L39	24	@DBL	code	DBL		u	conflict:e	=	
+L39	25	@DBL	code	DBL		t	conflict:e	=	
+L39	26	@PHI	code	PHI		i	conflict:e	unsorted	
+L39	27	@LOOPS	code	LOOPS		o	conflict:u	unsorted	
+L39	28	@H24	code	H24		n	conflict:i	=	
+L39	29	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L39	30	@BETA	code	BETA		m	agrees	=	
+L39	31	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L39	32	@H24	code	H24		i	agrees	=	
+L39	33	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L39	34	@OTHER	code	OTHER		l	conflict:e	=	
+L39	35	@PHI	code	PHI		a	conflict:e	unsorted	
+L39	36	@VBAR_A	code	VBAR_A		h	conflict:t	=	
+L39	37	@OTHER	code	OTHER			null-or-unaligned	=	
+L39	38	@INF	code	INF			null-or-unaligned	=	
+L39	39	@PHI	code	PHI		e	agrees	unsorted	
+L39	40	@PHI	code	PHI		r	conflict:e	unsorted	
+L39	41	@PHI	code	PHI		e	agrees	unsorted	
+L39	42	@VBAR_A	code	VBAR_A		t	agrees	=	
+L39	43	@H24	code	H24		i	agrees	=	
+L39	44	@OTHER	code	OTHER			null-or-unaligned	=	
+L39	45	@HASH4	code	HASH4		q	conflict:d	=	
+L39	46	@INF	code	INF		u	agrees	=	
+L39	47	@PHI	code	PHI		e	agrees	unsorted	
+L39	48	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L39	49	@OTHER	code	OTHER			null-or-unaligned	=	
+L39	50	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L39	51	@VBAR_B	code	VBAR_B		s	agrees	=	
+L39	52	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L39	53	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L39	54	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L39	55	@HASH4	code	HASH4		d	agrees	=	
+L39	56	@INF	code	INF		u	agrees	=	
+L39	57	@PHI	code	PHI		e	agrees	unsorted	
+L39	58	@4TRI	code	4TRI		e	conflict:n	unsorted	
+L39	59	@H24	code	H24		m	conflict:i	=	
+L39	60	@HASH4	code	HASH4		d	agrees	=	
+L39	61	@INF	code	INF		u	agrees	=	
+L39	62	@VBAR_A	code	VBAR_A		t	agrees	=	
+L39	63	@PHI	code	PHI		o	conflict:e	unsorted	
+L39	64	@INF	code	INF		u	agrees	=	
+L39	65	@VBAR_A	code	VBAR_A		t	agrees	=	
+L39	66	@OTHER	code	OTHER			null-or-unaligned	=	
+L39	67	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L39	68	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L40	0	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L40	1	@PHI	code	PHI		o	conflict:e	unsorted	
+L40	2	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	3	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	4	@PHI	code	PHI		e	agrees	unsorted	
+L40	5	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	6	@OTHER	code	OTHER			null-or-unaligned	=	
+L40	7	@ZBAR	code	ZBAR		s	agrees	=	
+L40	8	@H24	code	H24		i	agrees	=	
+L40	9	@PHI	code	PHI		o	conflict:e	unsorted	
+L40	10	@4TRI	code	4TRI		n	agrees	unsorted	
+L40	11	@OTHER	code	OTHER		e	agrees	=	
+L40	12	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L40	13	@PHI	code	PHI		e	agrees	unsorted	
+L40	14	@H24	code	H24		i	agrees	=	
+L40	15	@PHI	code	PHI		e	agrees	unsorted	
+L40	16	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	17	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	18	@HASH4	code	HASH4		d	agrees	=	
+L40	19	@DBL	code	DBL		e	agrees	=	
+L40	20	@EBR_B	code	EBR_B		l	agrees	=	
+L40	21	@PHI	code	PHI		o	conflict:e	unsorted	
+L40	22	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L40	23	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L40	24	@H24	code	H24		i	agrees	=	
+L40	25	@OTHER	code	OTHER		c	conflict:e	=	
+L40	26	@PHI	code	PHI		e	agrees	unsorted	
+L40	27	@HASH4	code	HASH4		d	agrees	=	
+L40	28	@H24	code	H24		i	agrees	=	
+L40	29	@INF	code	INF		u	agrees	=	
+L40	30	@H24	code	H24		i	agrees	=	
+L40	31	@4TRI	code	4TRI		n	agrees	unsorted	
+L40	32	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	33	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L40	34	@4TRI	code	4TRI		n	agrees	unsorted	
+L40	35	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	36	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L40	37	@OTHER	code	OTHER		e	agrees	=	
+L40	38	@PHI	code	PHI		r	conflict:e	unsorted	
+L40	39	@4TRI	code	4TRI		r	conflict:n	unsorted	
+L40	40	@H24	code	H24		i	agrees	=	
+L40	41	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	42	@PHI	code	PHI		o	conflict:e	unsorted	
+L40	43	@4TRI	code	4TRI		n	agrees	unsorted	
+L40	44	@HASH4	code	HASH4		d	agrees	=	
+L40	45	@PHI	code	PHI		e	agrees	unsorted	
+L40	46	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	47	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	48	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L40	49	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	50	@H24	code	H24		i	agrees	=	
+L40	51	@EBR_B	code	EBR_B		l	agrees	=	
+L40	52	@PHI	code	PHI		e	agrees	unsorted	
+L40	53	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	54	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	55	@PHI	code	PHI		o	conflict:e	unsorted	
+L40	56	@H24	code	H24		i	agrees	=	
+L40	57	@VBAR_A	code	VBAR_A		t	agrees	=	
+L40	58	@HASH4	code	HASH4		o	conflict:d	=	
+L40	59	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L40	60	@INF	code	INF		u	agrees	=	
+L40	61	@VBAR_A	code	VBAR_A		p	conflict:t	=	
+L40	62	@PHI	code	PHI		l	conflict:e	unsorted	
+L40	63	@DBL	code	DBL		u	conflict:e	=	
+L40	64	@PHI	code	PHI			null-or-unaligned	unsorted	
+L40	65	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L40	66	@H24	code	H24		o	conflict:i	=	
+L40	67	@HASH4	code	HASH4		b	conflict:d	=	
+L41	0	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L41	1	@PHI	code	PHI		c	conflict:e	unsorted	
+L41	2	@C43	code	C43		o	conflict:a	=	
+L41	3	@4TRI	code	4TRI		n	agrees	4TRI	H65-H77 tile
+L41	4	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L41	5	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L41	6	@H24	code	H24		i	agrees	=	
+L41	7	@PHI	code	PHI		x	conflict:e	unsorted	
+L41	8	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L41	9	@INF	code	INF		u	agrees	=	
+L41	10	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L41	11	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L41	12	@INF	code	INF		u	agrees	=	
+L41	13	@H24	code	H24		e	conflict:i	=	
+L41	14	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L41	15	@PHI	code	PHI		e	agrees	unsorted	
+L41	16	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L41	17	@PHI	code	PHI		e	agrees	unsorted	
+L41	18	@VBAR_A	code	VBAR_A		t	agrees	=	
+L41	19	@H24	code	H24		i	agrees	=	
+L41	20	@HASH4	code	HASH4		c	conflict:d	=	
+L41	21	@PHI	code	PHI		q	conflict:e	unsorted	
+L41	22	@PHI	code	PHI		u	conflict:e	unsorted	
+L41	23	@EBR_A	code	EBR_A		a	conflict:s	=	
+L41	24	@4PI	code	4PI		m	conflict:d	=	
+L41	25	@ELOOP	code	ELOOP		q	conflict:r	=	
+L41	26	@4STEM	code	4STEM		u	conflict:n	=	
+L41	27	@C43	code	C43		a	agrees	=	
+L41	28	@4TRI	code	4TRI		n	agrees	unsorted	
+L41	29	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L41	30	@EBR_B	code	EBR_B		l	agrees	=	
+L41	31	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L41	32	@INF	code	INF		u	agrees	=	
+L41	33	@VBAR_A	code	VBAR_A		t	agrees	=	
+L41	34	@PHI	code	PHI		e	agrees	unsorted	
+L41	35	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L41	36	@4TRI	code	4TRI		n	agrees	unsorted	
+L41	37	@PHI	code	PHI		u	conflict:e	unsorted	
+L41	38	@HASH4	code	HASH4		p	conflict:d	=	
+L41	39	@PHI	code	PHI		r	conflict:e	unsorted	
+L41	40	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L41	41	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L41	42	@4STEM	code	4STEM		n	agrees	=	
+L41	43	@ZHOOK	code	ZHOOK		a	single	=	
+L41	44	@4TRI	code	4TRI		n	agrees	unsorted	
+L41	45	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L41	46	@HASH4	code	HASH4		q	conflict:d	=	
+L41	47	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L41	48	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L41	49	@PHI	code	PHI		i	conflict:e	unsorted	
+L41	50	@INF	code	INF		a	conflict:u	=	
+L41	51	@H24	code	H24		i	agrees	=	
+L41	52	@4TRI	code	4TRI		n	agrees	4HOOK	v4 sort
+L41	53	@CA	code	CA		c	single	=	
+L41	54	@PHI	code	PHI		u	conflict:e	unsorted	
+L41	55	@PHI	code	PHI		r	conflict:e	unsorted	
+L41	56	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L41	57	@PHI	code	PHI		e	agrees	SBS	H65-H77 tile
+L41	58	@VBAR_A	code	VBAR_A		t	agrees	=	
+L41	59	@4STEM	code	4STEM			null-or-unaligned	=	
+L41	60	@PHI	code	PHI		o	conflict:e	unsorted	H65-H77 tile
+L41	61	@PHI	code	PHI		t	conflict:e	PHI	v4 sort
+L41	62	@PHI	code	PHI		a	conflict:e	unsorted	
+L41	63	@PHI	code	PHI		m	conflict:e	unsorted	
+L41	64	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L42	0	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L42	1	@EBR_A	code	EBR_A		s	agrees	=	
+L42	2	@PHI	code	PHI			null-or-unaligned	unsorted	
+L42	3	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L42	4	@EBR_A	code	EBR_A		s	agrees	=	
+L42	5	@H24	code	H24		i	agrees	=	
+L42	6	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L42	7	@PHI	code	PHI		u	conflict:e	unsorted	
+L42	8	@OTHER	code	OTHER		g	conflict:e	=	
+L42	9	@H24	code	H24		i	agrees	=	
+L42	10	@INF	code	INF			null-or-unaligned	=	
+L42	11	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L42	12	@PHI	code	PHI		a	conflict:e	unsorted	
+L42	13	@4PI	code	4PI		s	conflict:d	=	
+L42	14	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L42	15	@C6	code	C6		e	agrees	=	
+L42	16	@PHI	code	PHI		n	conflict:e	unsorted	
+L42	17	@4TRI	code	4TRI		t	conflict:n	4HOOK	v4 sort
+L42	18	@RSIGN	code	RSIGN		c	conflict:m	=	
+L42	19	@4TRI	code	4TRI		o	conflict:n	unsorted	
+L42	20	@PHI	code	PHI		m	conflict:e	unsorted	
+L42	21	@CH	code	CH		m	conflict:e	=	
+L42	22	@CH	code	CH		u	conflict:e	=	
+L42	23	@PHI	code	PHI		n	conflict:e	unsorted	
+L42	24	@PHI	code	PHI		i	conflict:e	unsorted	
+L42	25	@EBR_B	code	EBR_B		l	agrees	=	
+L42	26	@EBR_A	code	EBR_A		l	conflict:s	=	
+L42	27	@PHI	code	PHI		e	agrees	unsorted	
+L42	28	@PHI	code	PHI		e	agrees	unsorted	
+L42	29	@EBR_A	code	EBR_A		s	agrees	=	
+L42	30	@VBAR_A	code	VBAR_A		t	agrees	=	
+L42	31	@PHI	code	PHI		o	conflict:e	unsorted	
+L42	32	@4STEM	code	4STEM		i	conflict:n	=	
+L42	33	@VBAR_A	code	VBAR_A		t	agrees	=	
+L42	34	@PHI	code	PHI		r	conflict:e	unsorted	
+L42	35	@PHI	code	PHI		e	agrees	unsorted	
+L42	36	@4TRI	code	4TRI		c	conflict:n	4TRI	H65-H77 tile
+L42	37	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L42	38	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L42	39	@VBAR_A	code	VBAR_A		g	conflict:t	=	
+L42	40	@4TRI	code	4TRI		n	agrees	unsorted	
+L42	41	@PHI	code	PHI			null-or-unaligned	unsorted	
+L42	42	@INF	code	INF		u	agrees	=	
+L42	43	@PHI	code	PHI		e	agrees	unsorted	
+L42	44	@PHI	code	PHI		e	agrees	unsorted	
+L42	45	@4TRI	code	4TRI		n	agrees	unsorted	
+L42	46	@4STEM	code	4STEM		a	conflict:n	=	
+L42	47	@ZBAR	code	ZBAR			null-or-unaligned	=	
+L42	48	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L42	49	@H24	code	H24		i	agrees	=	
+L42	50	@EBR_B	code	EBR_B		l	agrees	=	
+L42	51	@EBR_A	code	EBR_A		l	conflict:s	=	
+L42	52	@PHI	code	PHI		e	agrees	unsorted	
+L42	53	@INF	code	INF		u	agrees	=	
+L42	54	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L42	55	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L42	56	@PHI	code	PHI		o	conflict:e	unsorted	
+L42	57	@INF	code	INF		u	agrees	=	
+L42	58	@EBR_A	code	EBR_A		l	conflict:s	=	
+L42	59	@PHI	code	PHI		e	agrees	unsorted	
+L42	60	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L42	61	@PHI	code	PHI		h	conflict:e	unsorted	
+L42	62	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L42	63	@PHI	code	PHI		r	conflict:e	unsorted	
+L42	64	@PHI	code	PHI		e	agrees	unsorted	
+L42	65	@VBAR_A	code	VBAR_A		t	agrees	=	
+L42	66	@H24	code	H24		i	agrees	=	
+L42	67	@HASH4	code	HASH4		q	conflict:d	=	
+L42	68	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L43	0	@LOOPS	code	LOOPS			null-or-unaligned	unsorted	
+L43	1	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L43	2	@PHI	code	PHI		e	agrees	unsorted	
+L43	3	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L43	4	@VBAR_A	code	VBAR_A		t	agrees	=	
+L43	5	@INF	code	INF		o	conflict:u	=	
+L43	6	@H24	code	H24		i	agrees	=	
+L43	7	@PHI	code	PHI		e	agrees	unsorted	
+L43	8	@4TRI	code	4TRI		n	agrees	unsorted	
+L43	9	@VBAR_A	code	VBAR_A		t	agrees	=	
+L43	10	@EBR_A	code	EBR_A		l	conflict:s	=	
+L43	11	@PHI	code	PHI		a	conflict:e	unsorted	
+L43	12	@VBAR_A	code	VBAR_A		m	conflict:t	=	
+L43	13	Ma_(clear_abbreviation,_superscript_a)	clear			aisteamasaquellequillesoitlapu	clear	=	
+L43	14	@OTHER	code	OTHER		i	conflict:e	=	
+L43	15	@HASH4	code	HASH4		s	conflict:d	=	
+L43	16	@PHI	code	PHI		s	conflict:e	unsorted	
+L43	17	@PHI	code	PHI		a	conflict:e	unsorted	
+L43	18	@EBR_A	code	EBR_A		n	conflict:s	=	
+L43	19	@EBR_B	code	EBR_B		c	conflict:l	=	
+L43	20	@PHI	code	PHI		e	agrees	unsorted	
+L43	21	@VBAR_A	code	VBAR_A		d	conflict:t	=	
+L43	22	@PHI	code	PHI		e	agrees	unsorted	
+L43	23	@PHI	code	PHI		a	conflict:e	unsorted	
+L43	24	@LOOPS	code	LOOPS		a	conflict:u	unsorted	
+L43	25	@H24	code	H24		p	conflict:i	=	
+L43	26	@VBAR_A	code	VBAR_A		t	agrees	=	
+L43	27	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L43	28	@EBR_A	code	EBR_A		a	conflict:s	=	
+L43	29	@4TRI	code	4TRI		e	conflict:n	unsorted	
+L43	30	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L43	31	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L43	32	@H24	code	H24		n	conflict:i	=	
+L43	33	@VBAR_B	code	VBAR_B		f	agrees	=	
+L43	34	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L43	35	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L43	36	@4TRI	code	4TRI		n	agrees	unsorted	
+L43	37	@4STEM	code	4STEM		c	conflict:n	=	
+L43	38	@PHI	code	PHI			null-or-unaligned	unsorted	
+L43	39	@4TRI	code	4TRI			null-or-unaligned	unsorted	
+L43	40	@PHI	code	PHI			null-or-unaligned	unsorted	
+L43	41	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L43	42	@OTHER	code	OTHER			null-or-unaligned	=	
+L43	43	@PHI	code	PHI		e	agrees	unsorted	
+L43	44	@4STEM	code	4STEM			null-or-unaligned	=	
+L43	45	@4STEM	code	4STEM			null-or-unaligned	=	
+L43	46	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L43	47	@H24	code	H24		i	agrees	=	
+L43	48	@LOOPS	code	LOOPS		e	conflict:u	unsorted	
+L43	49	@4TRI	code	4TRI		n	agrees	unsorted	
+L43	50	@PHI	code	PHI		r	conflict:e	unsorted	
+L43	51	@PHI	code	PHI		o	conflict:e	unsorted	
+L43	52	@EBR_B	code	EBR_B		y	conflict:l	=	
+L43	53	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L43	54	@PHI	code	PHI		e	agrees	unsorted	
+L43	55	@PHI	code	PHI		r	conflict:e	unsorted	
+L43	56	@PHI	code	PHI		e	agrees	unsorted	
+L43	57	@VBAR_A	code	VBAR_A		t	agrees	=	
+L43	58	@H24	code	H24		i	agrees	=	
+L43	59	@HASH4	code	HASH4		q	conflict:d	=	
+L43	60	@PHI	code	PHI		u	conflict:e	unsorted	
+L43	61	@PHI	code	PHI		e	agrees	unsorted	
+L43	62	@PHI	code	PHI		o	conflict:e	unsorted	
+L43	63	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L43	64	@VBAR_A	code	VBAR_A		f	conflict:t	=	
+L43	65	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L43	66	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L44	0	@VBAR_A	code	VBAR_A		d	conflict:t	=	
+L44	1	@PHI	code	PHI			null-or-unaligned	unsorted	
+L44	2	@LOOPS	code	LOOPS		h	conflict:u	unsorted	
+L44	3	@PHI	code	PHI			null-or-unaligned	INF	v4 sort
+L44	4	@HASH4	code	HASH4			null-or-unaligned	=	
+L44	5	@PHI	code	PHI		e	agrees	unsorted	
+L44	6	@PHI	code	PHI		r	conflict:e	unsorted	
+L44	7	@PHI	code	PHI		e	agrees	unsorted	
+L44	8	@EBR_A	code	EBR_A		s	agrees	=	
+L44	9	@H24	code	H24		i	agrees	=	
+L44	10	@PHI	code	PHI		e	agrees	unsorted	
+L44	11	@4TRI	code	4TRI		i	conflict:n	unsorted	
+L44	12	@PHI	code	PHI		g	conflict:e	unsorted	
+L44	13	@4TRI	code	4TRI		n	agrees	unsorted	
+L44	14	@LOOPS	code	LOOPS		o	conflict:u	SBS	H65-H77 tile
+L44	15	@H24	code	H24		i	agrees	=	
+L44	16	@VBAR_A	code	VBAR_A		r	conflict:t	=	
+L44	17	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L44	18	@EBR_A	code	EBR_A		y	conflict:s	=	
+L44	19	@4TRI	code	4TRI		d	conflict:n	4TRI	v4 sort
+L44	20	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L44	21	@RSIGN	code	RSIGN		m	agrees	=	
+L44	22	@H24	code	H24		i	agrees	=	
+L44	23	@4TRI	code	4TRI		c	conflict:n	4HOOK	v4 sort
+L44	24	@C43	code	C43		a	agrees	=	
+L44	25	@PHI	code	PHI		l	conflict:e	unsorted	
+L44	26	@PHI	code	PHI		l	conflict:e	unsorted	
+L44	27	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L44	28	@PHI	code	PHI		e	agrees	unsorted	
+L44	29	@EBR_B	code	EBR_B		l	agrees	=	
+L44	30	@INF	code	INF		u	agrees	=	
+L44	31	@EBR_A	code	EBR_A		y	conflict:s	=	
+L44	32	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L44	33	@BETA	code	BETA		m	agrees	=	
+L44	34	@4STEM	code	4STEM		a	conflict:n	=	
+L44	35	@4TRI	code	4TRI		d	conflict:n	unsorted	
+L44	36	@H24	code	H24		i	agrees	=	
+L44	37	@VBAR_A	code	VBAR_A		c	conflict:t	=	
+L44	38	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L44	39	@PHI	code	PHI		e	agrees	PHI	H65-H77 tile
+L44	40	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L44	41	@VBAR_A	code	VBAR_A		t	agrees	=	
+L44	42	@PHI	code	PHI		e	agrees	unsorted	
+L44	43	@4STEM	code	4STEM		n	agrees	=	
+L44	44	@LOOPS	code	LOOPS		o	conflict:u	unsorted	v4 sort
+L44	45	@LOOPS	code	LOOPS		u	agrees	unsorted	v4 sort
+L44	46	@LOOPS	code	LOOPS		v	agrees	unsorted	
+L44	47	@PHI	code	PHI		e	agrees	unsorted	
+L44	48	@EBR_A	code	EBR_A		l	conflict:s	=	
+L44	49	@EBR_A	code	EBR_A		l	conflict:s	=	
+L44	50	@PHI	code	PHI		e	agrees	unsorted	
+L44	51	@4TRI	code	4TRI		c	conflict:n	unsorted	v4 sort
+L44	52	@PHI	code	PHI		r	conflict:e	unsorted	
+L44	53	@LOOPS	code	LOOPS		o	conflict:u	unsorted	v4 sort
+L44	54	@H24	code	H24		i	agrees	=	
+L44	55	@VBAR_A	code	VBAR_A		t	agrees	=	
+L44	56	@OTHER	code	OTHER		q	conflict:e	=	
+L44	57	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L44	58	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L44	59	@C43	code	C43		a	agrees	=	
+L44	60	@PHI	code	PHI		l	conflict:e	unsorted	
+L44	61	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L44	62	@VBAR_A	code	VBAR_A		t	agrees	=	
+L44	63	@PHI	code	PHI			null-or-unaligned	unsorted	
+L44	64	@PHI	code	PHI		e	agrees	unsorted	
+L44	65	@VBAR_A	code	VBAR_A			null-or-unaligned	=	
+L44	66	@INF	code	INF			null-or-unaligned	=	
+L45	0	@BETA	code	BETA		n	conflict:m	=	
+L45	1	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L45	2	@EBR_B	code	EBR_B		l	agrees	=	
+L45	3	@PHI	code	PHI		m	conflict:e	unsorted	
+L45	4	@4TRI	code	4TRI		o	conflict:n	unsorted	
+L45	5	@4STEM	code	4STEM		r	conflict:n	=	
+L45	6	@RSIGN	code	RSIGN		d	conflict:m	=	
+L45	7	@PHI	code	PHI		o	conflict:e	unsorted	
+L45	8	@HASH4	code	HASH4		s	conflict:d	=	
+L45	9	@H24	code	H24		i	agrees	=	
+L45	10	@4TRI	code	4TRI		n	agrees	unsorted	
+L45	11	@4STEM	code	4STEM		q	conflict:n	=	
+L45	12	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L45	13	@EBR_A	code	EBR_A			null-or-unaligned	=	
+L45	14	@BETA	code	BETA			null-or-unaligned	=	
+L45	15	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L45	16	@PHI	code	PHI		e	agrees	unsorted	
+L45	17	@PHI	code	PHI		s	conflict:e	unsorted	
+L45	18	@C43	code	C43		a	agrees	=	
+L45	19	@HASH4	code	HASH4		s	conflict:d	=	
+L45	20	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L45	21	@H24	code	H24		i	agrees	=	
+L45	22	@4TRI	code	4TRI		n	agrees	4HOOK	H65-H77 tile
+L45	23	@LOOPSTEM1	code	LOOPSTEM1		c	conflict:q	=	
+L45	24	@VBAR_A	code	VBAR_A		t	agrees	=	
+L45	25	@PHI	code	PHI		e	agrees	unsorted	
+L45	26	@OTHER	code	OTHER		t	conflict:e	=	
+L45	27	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L45	28	@RSIGN	code	RSIGN			null-or-unaligned	=	
+L45	29	@PHI	code	PHI		e	agrees	unsorted	
+L45	30	@LOOPS	code	LOOPS		u	agrees	INF	v4 sort
+L45	31	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L45	32	@PHI	code	PHI		a	conflict:e	unsorted	
+L45	33	@VBAR_A	code	VBAR_A		p	conflict:t	=	
+L45	34	@4STEM	code	4STEM		a	conflict:n	=	
+L45	35	@4TRI	code	4TRI		r	conflict:n	unsorted	
+L45	36	@PHI	code	PHI		o	conflict:e	unsorted	
+L45	37	@LOOPS	code	LOOPS		l	conflict:u	unsorted	v4 sort
+L45	38	@EBR_B	code	EBR_B		l	agrees	=	
+L45	39	@PHI	code	PHI		e	agrees	unsorted	
+L45	40	@EBR_A	code	EBR_A		i	conflict:s	=	
+L45	41	@CH	code	CH			null-or-unaligned	=	
+L45	42	@C6	code	C6		e	agrees	=	
+L45	43	@LOOPSTEM1	code	LOOPSTEM1		q	agrees	=	
+L45	44	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L45	45	@PHI	code	PHI		e	agrees	SBS	H65-H77 tile
+L45	46	@H24	code	H24		e	conflict:i	=	
+L45	47	@4TRI	code	4TRI		n	agrees	unsorted	
+L45	48	@HASH4	code	HASH4		y	conflict:d	=	
+L45	49	@RSIGN	code	RSIGN		a	conflict:m	=	
+L45	50	@VBAR_A	code	VBAR_A		n	conflict:t	=	
+L45	51	@PHI	code	PHI		t	conflict:e	unsorted	
+L45	52	@4TRI	code	4TRI		q	conflict:n	unsorted	
+L45	53	@LOOPS	code	LOOPS		u	agrees	INF	H65-H77 tile
+L45	54	@HASH4	code	HASH4		i	conflict:d	=	
+L45	55	@EBR_B	code	EBR_B		l	agrees	=	
+L45	56	@4TRI	code	4TRI		n	agrees	unsorted	
+L45	57	@H24	code	H24		y	conflict:i	=	
+L45	58	@4TRI	code	4TRI		a	conflict:n	4HOOK	v4 sort
+L45	59	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L45	60	@RSIGN	code	RSIGN		c	conflict:m	=	
+L45	61	@INF	code	INF		u	agrees	=	
+L45	62	@4TRI	code	4TRI		n	agrees	unsorted	
+L45	63	@PHI	code	PHI		o	conflict:e	SBS	H65-H77 tile
+L45	64	@PHI	code	PHI		r	conflict:e	PHI	v4 sort
+L46	0	@H24	code	H24		g	conflict:i	=	
+L46	1	@PHI	code	PHI		r	conflict:e	unsorted	
+L46	2	@PHI	code	PHI		a	conflict:e	unsorted	
+L46	3	@4TRI	code	4TRI		c	conflict:n	unsorted	
+L46	4	@PHI	code	PHI		e	agrees	unsorted	
+L46	5	@VBAR_A	code	VBAR_A		l	conflict:t	=	
+L46	6	@PHI	code	PHI		e	agrees	unsorted	
+L46	7	@4TRI	code	4TRI		p	conflict:n	unsorted	
+L46	8	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L46	9	@PHI	code	PHI		p	conflict:e	unsorted	
+L46	10	@PHI	code	PHI		e	agrees	unsorted	
+L46	11	@OTHER	code	OTHER			null-or-unaligned	=	
+L46	12	@PHI	code	PHI		e	agrees	unsorted	
+L46	13	@4TRI	code	4TRI		n	agrees	unsorted	
+L46	14	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L46	15	@LOOPS	code	LOOPS		u	agrees	unsorted	
+L46	16	@VBAR_A	code	VBAR_A		t	agrees	=	
+L46	17	@PHI	code	PHI		r	conflict:e	unsorted	
+L46	18	@PHI	code	PHI		e	agrees	unsorted	
+L46	19	@H24	code	H24		d	conflict:i	=	
+L46	20	@PHI	code	PHI		e	agrees	unsorted	
+L46	21	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L46	22	@VBAR_A	code	VBAR_A		s	conflict:t	=	
+L46	23	@PHI	code	PHI			null-or-unaligned	unsorted	
+L46	24	@H24	code	H24		i	agrees	=	
+L46	25	@4TRI	code	4TRI		n	agrees	unsorted	
+L46	26	@H24	code	H24		g	conflict:i	=	
+L46	27	@EBR_B	code	EBR_B			null-or-unaligned	=	
+L46	28	@VBAR_A	code	VBAR_A		d	conflict:t	=	
+L46	29	@PHI	code	PHI		e	agrees	unsorted	
+L46	30	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L46	31	@LOOPS	code	LOOPS		y	conflict:u	unsorted	
+L46	32	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L46	33	@4TRI	code	4TRI		a	conflict:n	unsorted	
+L46	34	@PHI	code	PHI		q	conflict:e	unsorted	
+L46	35	@PHI	code	PHI		u	conflict:e	unsorted	
+L46	36	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L46	37	@PHI	code	PHI		m	conflict:e	unsorted	
+L46	38	@PHI	code	PHI		e	agrees	unsorted	
+L46	39	@4TRI	code	4TRI		s	conflict:n	unsorted	
+L46	40	@4STEM	code	4STEM		c	conflict:n	=	
+L46	41	@H24	code	H24		e	conflict:i	=	
+L46	42	@HASH4	code	HASH4		b	conflict:d	=	
+L46	43	@VBAR_A	code	VBAR_A		a	conflict:t	=	
+L46	44	@LOOPS	code	LOOPS		p	conflict:u	unsorted	
+L46	45	@4TRI	code	4TRI		o	conflict:n	unsorted	
+L46	46	@4TRI	code	4TRI		u	conflict:n	unsorted	
+L46	47	@PHI	code	PHI		r	conflict:e	unsorted	
+L46	48	@OTHER	code	OTHER		b	conflict:e	=	
+L46	49	@PHI	code	PHI		i	conflict:e	unsorted	
+L46	50	@4STEM	code	4STEM		e	conflict:n	=	
+L46	51	@4TRI	code	4TRI		n	agrees	unsorted	
+L46	52	@4TRI	code	4TRI		g	conflict:n	unsorted	
+L46	53	@PHI	code	PHI		r	conflict:e	unsorted	
+L46	54	@4STEM	code	4STEM		a	conflict:n	=	
+L46	55	@4TRI	code	4TRI		n	agrees	unsorted	
+L46	56	@LOOPS	code	LOOPS		d	conflict:u	unsorted	
+L46	57	@VBAR_A	code	VBAR_A		i	conflict:t	=	
+L46	58	@PHI	code	PHI		p	conflict:e	unsorted	
+L46	59	@LOOPSTEM1	code	LOOPSTEM1		b	conflict:q	=	
+L46	60	@4TRI	code	4TRI		t	conflict:n	unsorted	
+L46	61	@PHI	code	PHI		e	agrees	unsorted	
+L46	62	@H24	code	H24		s	conflict:i	=	
+L46	63	@PHI	code	PHI		a	conflict:e	unsorted	
+L46	64	@4TRI	code	4TRI		s	conflict:n	unsorted	

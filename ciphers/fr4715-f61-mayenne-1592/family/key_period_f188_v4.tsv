@@ -1,0 +1,171 @@
+# key_period_f188_v4.tsv -- F61-FAMILY-6, 28 Sept 2026: key_period_f188.tsv with 4TRI/LOOPS/PHI replaced by the blind-sort estimate (recode_split.py); readers' own classes of the same name summed in. Key source: period.
+class	letter	n	leaf	bands
+4HOOK	n	7	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+4HOOK	a	5	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+4PI	d	9	fr.3984 f.188r/f.184r	L09,L10,L12,L13,L14,L15
+4PI	a	5	fr.3984 f.188r/f.184r	L17,L18,L20,L22
+4PI	-	3	fr.3984 f.188r/f.184r	L11,L15,L19
+4PI	q	2	fr.3984 f.188r/f.184r	L09,L11
+4PI	e	1	fr.3984 f.188r/f.184r	L19
+4PI	h	1	fr.3984 f.188r/f.184r	L20
+4PI	n	1	fr.3984 f.188r/f.184r	L20
+4PI	r	1	fr.3984 f.188r/f.184r	L09
+4STEM	n	15	fr.3984 f.188r/f.184r	L02,L03,L05,L07,L08,L19,L21
+4STEM	a	12	fr.3984 f.188r/f.184r	L02,L04,L05,L07,L08,L17,L21,L22
+4STEM	-	6	fr.3984 f.188r/f.184r	L05,L07,L17,L21,L22
+4STEM	d	3	fr.3984 f.188r/f.184r	L01,L03,L08
+4STEM	e	3	fr.3984 f.188r/f.184r	L01,L04
+4STEM	s	3	fr.3984 f.188r/f.184r	L01,L04
+4STEM	b	2	fr.3984 f.188r/f.184r	L19,L20
+4STEM	r	2	fr.3984 f.188r/f.184r	L08
+4STEM	i	1	fr.3984 f.188r/f.184r	L01
+4STEM	l	1	fr.3984 f.188r/f.184r	L01
+4STEM	m	1	fr.3984 f.188r/f.184r	L20
+4STEM	x	1	fr.3984 f.188r/f.184r	L01
+4STEM	y	1	fr.3984 f.188r/f.184r	L04
+4TRI	c	11	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	p	10	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	t	3	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	e	2	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	n	2	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	d	1	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	s	1	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+BETA	m	9	fr.3984 f.188r/f.184r	L01,L02,L09,L13,L14,L15
+BETA	s	2	fr.3984 f.188r/f.184r	L02,L16
+BETA	a	1	fr.3984 f.188r/f.184r	L20
+BETA	d	1	fr.3984 f.188r/f.184r	L20
+C43	n	27	fr.3984 f.188r/f.184r	L09,L10,L11,L12,L13,L14,L15
+C43	a	24	fr.3984 f.188r/f.184r	L09,L10,L11,L12,L13,L14,L15
+C43	-	3	fr.3984 f.188r/f.184r	L10,L14
+C43	e	2	fr.3984 f.188r/f.184r	L11
+C43	c	1	fr.3984 f.188r/f.184r	L10
+C43	d	1	fr.3984 f.188r/f.184r	L09
+C43	i	1	fr.3984 f.188r/f.184r	L10
+C43	m	1	fr.3984 f.188r/f.184r	L09
+C43	p	1	fr.3984 f.188r/f.184r	L10
+C43	s	1	fr.3984 f.188r/f.184r	L10
+C6	e	1	fr.3984 f.188r/f.184r	L04
+CA	c	1	fr.3984 f.188r/f.184r	L17
+CA	p	1	fr.3984 f.188r/f.184r	L21
+CA	s	1	fr.3984 f.188r/f.184r	L02
+CH	m	3	fr.3984 f.188r/f.184r	L02,L19,L21
+CH	-	1	fr.3984 f.188r/f.184r	L08
+CH	n	1	fr.3984 f.188r/f.184r	L20
+CH	u	1	fr.3984 f.188r/f.184r	L08
+EBR_A	g	1	fr.3984 f.188r/f.184r	L17
+EBR_A	l	1	fr.3984 f.188r/f.184r	L05
+EBR_B	l	41	fr.3984 f.188r/f.184r	L02,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L17,L19,L21,L22
+EBR_B	s	3	fr.3984 f.188r/f.184r	L06,L16,L20
+EBR_B	-	1	fr.3984 f.188r/f.184r	L21
+EBR_B	a	1	fr.3984 f.188r/f.184r	L04
+EBR_B	c	1	fr.3984 f.188r/f.184r	L19
+EBR_B	e	1	fr.3984 f.188r/f.184r	L04
+EBR_B	o	1	fr.3984 f.188r/f.184r	L20
+EBR_B	t	1	fr.3984 f.188r/f.184r	L04
+EBR_B	y	1	fr.3984 f.188r/f.184r	L13
+H24	i	33	fr.3984 f.188r/f.184r	L01,L02,L04,L05,L06,L08,L09,L10,L11,L13,L14,L15,L17,L19,L20,L21,L22
+H24	-	3	fr.3984 f.188r/f.184r	L10,L11,L14
+H24	j	3	fr.3984 f.188r/f.184r	L05,L15,L21
+H24	a	2	fr.3984 f.188r/f.184r	L08,L19
+H24	e	2	fr.3984 f.188r/f.184r	L08,L10
+H24	d	1	fr.3984 f.188r/f.184r	L19
+H24	f	1	fr.3984 f.188r/f.184r	L04
+H24	l	1	fr.3984 f.188r/f.184r	L10
+H24	m	1	fr.3984 f.188r/f.184r	L20
+H24	n	1	fr.3984 f.188r/f.184r	L20
+H24	o	1	fr.3984 f.188r/f.184r	L17
+H24	r	1	fr.3984 f.188r/f.184r	L19
+H24	t	1	fr.3984 f.188r/f.184r	L04
+H24	x	1	fr.3984 f.188r/f.184r	L10
+H24	y	1	fr.3984 f.188r/f.184r	L12
+HASH4	d	12	fr.3984 f.188r/f.184r	L02,L05,L13,L17,L19,L20,L21,L22
+HASH4	i	10	fr.3984 f.188r/f.184r	L04,L09,L11,L14,L15,L20
+HASH4	-	4	fr.3984 f.188r/f.184r	L01,L07,L19
+HASH4	q	3	fr.3984 f.188r/f.184r	L04,L08,L17
+HASH4	x	3	fr.3984 f.188r/f.184r	L09,L10
+HASH4	e	2	fr.3984 f.188r/f.184r	L02,L20
+HASH4	n	2	fr.3984 f.188r/f.184r	L04,L08
+HASH4	o	2	fr.3984 f.188r/f.184r	L19,L20
+HASH4	u	2	fr.3984 f.188r/f.184r	L01,L08
+HASH4	a	1	fr.3984 f.188r/f.184r	L04
+HASH4	s	1	fr.3984 f.188r/f.184r	L08
+HASH4	y	1	fr.3984 f.188r/f.184r	L10
+INF	u	31	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+INF	-	4	fr.3984 f.188r/f.184r	L04,L17
+INF	e	4	fr.3984 f.188r/f.184r	L04,L19,L20
+INF	h	3	fr.3984 f.188r/f.184r	L18,L19,L22
+INF	r	3	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+INF	v	3	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+INF	l	2	fr.3984 f.188r/f.184r	L08,L17
+INF	a	1	fr.3984 f.188r/f.184r	L20
+INF	c	1	fr.3984 f.188r/f.184r	L04
+INF	p	1	fr.3984 f.188r/f.184r	L22
+INF	t	1	fr.3984 f.188r/f.184r	L19
+ISH	l	3	fr.3984 f.188r/f.184r	L03,L04,L08
+ISH	a	1	fr.3984 f.188r/f.184r	L20
+ISH	y	1	fr.3984 f.188r/f.184r	L22
+LL	e	1	fr.3984 f.188r/f.184r	L01
+LOOPBAR	u	1	fr.3984 f.188r/f.184r	L19
+OTHER	q	14	fr.3984 f.188r/f.184r	L02,L04,L06,L11,L12,L13,L14,L15,L21,L22
+OTHER	-	5	fr.3984 f.188r/f.184r	L05,L08,L20
+OTHER	p	4	fr.3984 f.188r/f.184r	L01,L08,L09,L13
+OTHER	r	4	fr.3984 f.188r/f.184r	L04,L08,L19,L20
+OTHER	s	4	fr.3984 f.188r/f.184r	L01,L02,L04
+OTHER	e	3	fr.3984 f.188r/f.184r	L03,L08,L15
+OTHER	t	3	fr.3984 f.188r/f.184r	L05,L10,L11
+OTHER	c	2	fr.3984 f.188r/f.184r	L04
+OTHER	a	1	fr.3984 f.188r/f.184r	L04
+OTHER	d	1	fr.3984 f.188r/f.184r	L08
+OTHER	i	1	fr.3984 f.188r/f.184r	L11
+OTHER	m	1	fr.3984 f.188r/f.184r	L19
+OTHER	u	1	fr.3984 f.188r/f.184r	L16
+PHI	e	56	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	r	23	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	q	5	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	c	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	p	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	t	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	u	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	o	1	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+RSIGN	-	3	fr.3984 f.188r/f.184r	L17,L21,L22
+RSIGN	n	2	fr.3984 f.188r/f.184r	L21,L22
+RSIGN	s	2	fr.3984 f.188r/f.184r	L06,L17
+RSIGN	o	1	fr.3984 f.188r/f.184r	L20
+SBS	o	19	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	b	12	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	e	9	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	u	4	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	n	2	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	r	2	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	s	2	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+SBS	f	1	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+VBAR_A	t	41	fr.3984 f.188r/f.184r	L02,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L17,L19,L20,L21,L22
+VBAR_A	-	8	fr.3984 f.188r/f.184r	L01,L04,L07,L17,L20,L22
+VBAR_A	e	4	fr.3984 f.188r/f.184r	L04,L08,L16
+VBAR_A	g	3	fr.3984 f.188r/f.184r	L13,L17
+VBAR_A	c	2	fr.3984 f.188r/f.184r	L22
+VBAR_A	l	2	fr.3984 f.188r/f.184r	L10,L12
+VBAR_A	n	2	fr.3984 f.188r/f.184r	L15,L18
+VBAR_A	y	2	fr.3984 f.188r/f.184r	L20,L21
+VBAR_A	d	1	fr.3984 f.188r/f.184r	L08
+VBAR_A	i	1	fr.3984 f.188r/f.184r	L11
+VBAR_A	r	1	fr.3984 f.188r/f.184r	L20
+VBAR_B	s	30	fr.3984 f.188r/f.184r	L17,L19,L20,L21,L22
+VBAR_B	-	2	fr.3984 f.188r/f.184r	L17
+VBAR_B	e	1	fr.3984 f.188r/f.184r	L19
+VBAR_B	l	1	fr.3984 f.188r/f.184r	L19
+VBAR_B	x	1	fr.3984 f.188r/f.184r	L20
+VBAR_B	z	1	fr.3984 f.188r/f.184r	L21
+ZBAR	s	28	fr.3984 f.188r/f.184r	L01,L02,L04,L05,L08,L09,L11,L12,L13,L14,L15
+ZBAR	-	5	fr.3984 f.188r/f.184r	L07,L12,L14,L15
+ZBAR	f	5	fr.3984 f.188r/f.184r	L07,L10,L11,L13,L14
+ZBAR	l	3	fr.3984 f.188r/f.184r	L01,L04
+ZBAR	r	2	fr.3984 f.188r/f.184r	L04,L13
+ZBAR	z	2	fr.3984 f.188r/f.184r	L15,L18
+ZBAR	c	1	fr.3984 f.188r/f.184r	L13
+ZBAR	e	1	fr.3984 f.188r/f.184r	L09
+ZBAR	i	1	fr.3984 f.188r/f.184r	L08
+ZBAR	n	1	fr.3984 f.188r/f.184r	L04
+ZBAR	o	1	fr.3984 f.188r/f.184r	L12
+ZBAR	t	1	fr.3984 f.188r/f.184r	L10
+ZBAR	u	1	fr.3984 f.188r/f.184r	L01

@@ -1,10 +1,10 @@
 # f.61r under key_period_v3.tsv (period pairs n>=2, n >= 0.1 x the leaf class total, no refit), 28 Sept 2026: 99 signs, C 10 C+ 4 M 65 unread 20. [a/b] = period pair, choice by context not made here; <CLASS> = no period pair; C+ = two leaves agree on the one letter.
 L01: <CROSS> e [a/n] [u/e] [e/r/o] [n/a/c/p] r <CA> [e/r/o] [t/s/f] [d/q/i] [d/a/q/n]
 L02: [e/r/o] [e/q/i/p/r/s/t]
-L03: <CA> <LOOPBAR> r [e/r/o] <VBAR_B> [t/s/f] [n/a/c/p] [a/n] <CA> [n/a/c/p] e <LOOPBAR> [a/n] [e/r/u] [l/s/a]
+L03: <CA> <LOOPBAR> r [e/r/o] s [t/s/f] [n/a/c/p] [a/n] <CA> [n/a/c/p] e <LOOPBAR> [a/n] [e/r/u] [l/s/a]
 L04: <LOOPBAR> [e/q/i/p/r/s/t]
-L05: [q/s] [e/m] [t/s/f] [e/r/o] [e/r/u] [n/a/c/p] <CA> <CA> [a/n] [u/e] [a/n] e [a/n] [n/a/c/p] [e/r/o] <LL> [e/r/o] <VBAR_B>
-L07: <CA> <LOOPBAR> <ZHOOK> [m/s] [l/s/a] e [e/r/o] [u/e] <VBAR_B> <CROSS> <ZHOOK>
+L05: [q/s] [e/m] [t/s/f] [e/r/o] [e/r/u] [n/a/c/p] <CA> <CA> [a/n] [u/e] [a/n] e [a/n] [n/a/c/p] [e/r/o] <LL> [e/r/o] s
+L07: <CA> <LOOPBAR> <ZHOOK> [m/s] [l/s/a] e [e/r/o] [u/e] s <CROSS> <ZHOOK>
 L08: [e/r/o] [a/n] e [u/e] [e/r/u] [e/r/o] [a/n] [u/e] e <CA> [n/a/c/p] [e/r/o] [e/r/o] [e/r/o]
-L10: [l/s/a] <CA> [e/r/o] [t/s/f] [e/r/o] [e/r/o] <VBAR_B> [u/e] <CA> e [e/r/o] <CA> e
+L10: [l/s/a] <CA> [e/r/o] [t/s/f] [e/r/o] [e/r/o] s [u/e] <CA> e [e/r/o] <CA> e
 L11: [m/s] [e/r/o] [l/s/a] [e/r/o] [a/n] [t/s/f] [e/r/o] [n/a/c/e] [d/a/q/n] [e/r/u] <ZHOOK> [t/s/f]

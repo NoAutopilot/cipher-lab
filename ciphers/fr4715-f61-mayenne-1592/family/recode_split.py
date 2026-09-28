@@ -161,7 +161,7 @@ def build(native):
     open(f"{OUT}/build.txt", "w").write("\n".join(summary) + "\n"); print("\n".join(summary))
 def RC_of(src): return src if src in RC else "PHI"
 def score():
-    out = ["# F61-FAMILY-6 held-out check (gate 0.80 per class) and per-stratum sample sizes; recode_split.py score"]; stopped = set()
+    out = ["# F61-FAMILY-6 held-out check (gate 0.80 per class) and per-stratum sample sizes; recode_split.py score"]; stopped_calls = set()
     got_all = {}
     for call in CALLS:
         leaf, srcs, tgts, toks, st, pr, anc, held, query = plan(call)
@@ -177,13 +177,15 @@ def score():
             else: got_all[(leaf, k["line"], int(k["pos"]))] = (c, k["src"], call)
         for c in tgts:
             a, n = acc[c]; ok = n > 0 and a / n >= 0.8
-            if not ok: stopped.add((leaf, c))
+            if not ok: stopped_calls.add(call)
             out.append(f"{call}: held-out {c} {a}/{n}" + (f" = {a/n:.2f}" if n else "") + (" PASS" if ok else " -- STOPPED (below 0.80 or no held-out tiles)"))
         nq = sum(1 for k in key if k["kind"] == "query"); nn = sum(1 for k in key if k["kind"] == "query" and form.get(rd.get(k["tile"], "none")) is None)
         out.append(f"{call}: query tiles {nq}, read 'none' {nn}")
+        if call in stopped_calls: out.append(f"{call}: a class below 0.80 on its held-out tiles -> the whole split STOPPED: its source class(es) {', '.join(srcs)} keep the v3 rows unchanged")
     # per-leaf: recoded tokens and weighted key rows
     for leaf, keyname in (("f101r", "key_period_f101"), ("f188r", "key_period_f188")):
-        srcs = sorted({s for c, (lf, ss, _) in CALLS.items() if lf == leaf for s in ss}); pr = prior(leaf)
+        # a stopped call's source classes are not re-coded: they keep their v3 rows (a one-sided split would bias the estimate)
+        srcs = sorted({s for c, (lf, ss, _) in CALLS.items() if lf == leaf and c not in stopped_calls for s in ss}); pr = prior(leaf)
         toks = [t for c in srcs for t in tokens(leaf, c)]; st = strata(toks)
         est = defaultdict(float); samp = defaultdict(int); tot = defaultdict(int)
         rec = {}
@@ -193,7 +195,6 @@ def score():
                 p = (t["line"], t["pos"]); c = None
                 if (leaf,) + p in got_all and got_all[(leaf,) + p][1] == src: c = got_all[(leaf,) + p][0]
                 elif p in pr and pr[p]["src"] == src and pr[p]["target"]: c = pr[p]["target"]
-                if c and (leaf, c) in stopped: c = None
                 rec[p] = c
                 if c: sorted_.append((t, c))
             if not sorted_: continue
@@ -208,13 +209,13 @@ def score():
             f.write("\t".join(hdr) + "\n")
             for r in al:
                 p = (r["cipher_line"], int(r["idx"]) + 1)
-                if r["value"] in ("PHI", "4TRI", "VBAR_A", "LOOPS"):
+                if r["value"] in srcs:
                     c = rec.get(p); srcv = "v4 sort" if (leaf,) + p in got_all else ("H65-H77 tile" if p in pr else "")
                     sp = c if c else "unsorted"
                 else: sp, srcv = "=", ""
                 f.write("\t".join(list(r.values()) + [sp, srcv]) + "\n")
         # key rows: unaffected classes copied from the v3 per-leaf file; affected source classes replaced by the estimate
-        base = rows(f"{FAM}/{keyname}.tsv"); affected = set(srcs) | ({"VBAR_A"} if leaf == "f101r" else set())
+        base = rows(f"{FAM}/{keyname}.tsv"); affected = set(srcs)
         new = [r for r in base if r["class"] not in affected]
         for (c, l), v in sorted(est.items()):
             n = int(round(v))
@@ -224,7 +225,7 @@ def score():
         for r in new:
             merged[(r["class"], r["letter"])] += int(r["n"]); info[(r["class"], r["letter"])] = r
         with open(f"{FAM}/{keyname}_v4.tsv", "w") as f:
-            f.write(f"# {keyname}_v4.tsv -- F61-FAMILY-6, 28 Sept 2026: {keyname}.tsv with PHI/4TRI/LOOPS" + ("/VBAR_A" if leaf == "f101r" else "") + " replaced by the blind-sort estimate (recode_split.py); readers' own classes of the same name summed in. Key source: period.\n")
+            f.write(f"# {keyname}_v4.tsv -- F61-FAMILY-6, 28 Sept 2026: {keyname}.tsv with {'/'.join(srcs)} replaced by the blind-sort estimate (recode_split.py); readers' own classes of the same name summed in. Key source: period.\n")
             f.write("class\tletter\tn\tleaf\tbands\n")
             for (c, l), n in sorted(merged.items(), key=lambda kv: (kv[0][0], -kv[1], kv[0][1])):
                 f.write(f"{c}\t{l}\t{n}\t{info[(c, l)]['leaf']}\t{info[(c, l)]['bands']}\n")
@@ -232,6 +233,13 @@ def score():
         for c in sorted({c for c, _ in est}):
             top = sorted(((l, v) for (cc, l), v in est.items() if cc == c), key=lambda kv: -kv[1])
             out.append(f"  {leaf} {c}: " + ", ".join(f"{l} {v:.0f}" for l, v in top if v >= 0.5) + f"  (from {samp[c]} sorted tokens)")
+    # f.274r: no x positions (its align lines do not equal its draft), so its rows for the affected reader classes are dropped
+    base = [l for l in open(f"{FAM}/key_period.tsv")]; hdr_i = next(i for i, l in enumerate(base) if l.startswith("class\t"))
+    drop = ("PHI", "4TRI", "VBAR_A", "VBAR_B", "LOOPS"); kept = [l for l in base[hdr_i + 1:] if l.split("\t")[0] not in drop]
+    with open(f"{FAM}/key_period_f274_v4.tsv", "w") as f:
+        f.write("# key_period_f274_v4.tsv -- F61-FAMILY-6, 28 Sept 2026: key_period.tsv (f.274r) without its PHI/4TRI/VBAR_A/VBAR_B/LOOPS rows (reader-merged classes, no x position to re-sort). Key source: period.\n")
+        f.write(base[hdr_i]); f.writelines(kept)
+    out.append(f"f274: {len(base) - hdr_i - 1 - len(kept)} rows of the merged classes dropped, {len(kept)} kept")
     txt = "\n".join(out) + "\n"; res = f"{OUT}/heldout.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)

@@ -25,6 +25,9 @@ COLLAPSE = {"EBR_A": "EBR", "EBR_B": "EBR"} if "--collapse-ebr" in sys.argv else
 # (chunks 1-5 preliminary: 20-permutation max 0.76 at n >= 1), so the letter sets are cut to the letters the leaf
 # actually attests in proportion, per leaf, never summed across leaves.
 FRAC = float(sys.argv[sys.argv.index("--frac") + 1]) if "--frac" in sys.argv else 0.0
+# --perms N (F61-FAMILY-6, 28 Sept 2026): N permuted keys instead of 20 (same seed 1, the first 20 are the old ones); with
+# N >= 100 the line also reports the permuted p95 and how many permuted keys reach the period key's score.
+NP = int(sys.argv[sys.argv.index("--perms") + 1]) if "--perms" in sys.argv else 20
 def load_key():
     key = {}; rows = [r for r in csv.DictReader((l for l in open(KEYFILE) if not l.startswith("#")), delimiter="\t")]
     tot = Counter()
@@ -43,11 +46,13 @@ def score(key, lines, spans):
 def main():
     key = load_key(); out = [f"{os.path.basename(KEYFILE)} (pairs with n >= {MIN}{f', n >= {FRAC:g} x the leaf class total' if FRAC else ''}): {len(key)} classes with letters: " + " ".join(f"{c}={'/'.join(v)}" for c, v in sorted(key.items()))]
     lines = split_lines(load_read()); lines.update(f108_lines())
+    if "--sbs" in sys.argv:   # F61-FAMILY-6: H26/H51's SBS relabel on f.61r and f.108r (sbs_relabel.py), for key v4's SBS class
+        sys.path.insert(0, HERE); from sbs_relabel import relabel; relabel(lines)
     spans61 = load_spans()
     spans108 = [(s, "F108_" + ("L02" if s == "T1" else "L03"), m) for s, _, m, _ in (l.rstrip("\n").split("\t") for l in open(f"{S}/tomokiyo_spans_3983.tsv") if l[0] == "T")]
     rng = random.Random(1); labs = sorted(key); vals = [key[l] for l in labs]
     perms = []
-    for _ in range(20):
+    for _ in range(NP):
         v = list(vals); rng.shuffle(v); perms.append(dict(zip(labs, v)))
     res = {}
     for tag, spans in (("f.61 five known spans (55)", spans61), ("f.108r overlay letters (84)", spans108)):
@@ -56,12 +61,15 @@ def main():
         per = "; ".join(f"{s}:{align(m, lines[l], key)[0]}/{sum(1 for c in m if c != '-')}" for s, l, m in spans)
         miss = sorted(c for c in cls if c not in key)
         unc = f" (uncovered: {' '.join(miss) or 'none'})" if "--key" in sys.argv else ""
-        out.append(f"{tag}: period key {mt}/{tot} = {mt/tot:.3f}; 20 permuted keys mean {sum(cs)/20/tot:.3f} max {max(cs)/tot:.3f}; classes covered {cov:.2f} of signs{unc}; per span {per}")
+        p95 = f" p95 {sorted(cs)[int(0.95 * NP) - 1]/tot:.3f}, permuted keys >= period key {sum(c >= mt for c in cs)}/{NP};" if NP >= 100 else ""
+        out.append(f"{tag}: period key {mt}/{tot} = {mt/tot:.3f}; {NP} permuted keys mean {sum(cs)/NP/tot:.3f} max {max(cs)/tot:.3f};{p95} classes covered {cov:.2f} of signs{unc}; per span {per}")
         res[tag] = mt / tot
     g = res["f.61 five known spans (55)"]
     out.append(f"GATE (brief step 5, 0.75 on the 55 known letters): {'PASS' if g >= 0.75 else 'FAIL'} ({g:.3f})")
     stem = "" if os.path.basename(KEYFILE) == "key_period.tsv" else "_" + os.path.basename(KEYFILE).replace("key_period_", "").replace(".tsv", "")
     if FRAC: stem += f"_frac{FRAC:g}"
+    if "--sbs" in sys.argv: stem += "_sbs"
+    if NP != 20: stem += f"_p{NP}"
     txt = "\n".join(out) + "\n"; path = f"{HERE}/test_period_key_result{stem}{'' if MIN == 1 else '_min' + str(MIN)}.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(path) and open(path).read() == txt; print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)
