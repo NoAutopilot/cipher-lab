@@ -3286,3 +3286,27 @@ The 1600-px references of f.186r and f.189r already on disk (F61-FAMILY), and fo
 - f.189r (to Frachetta), headed "[Ju]illet 1593", is cipher from its first row, so **fol. 175r ("Depuis mes dernieres ...") may be
   its decipherment**.
 Rows H175 (fol. 177r vs f.176r with the passes on disk, one read call) and H176 (fol. 175r vs f.189r) follow.
+
+## Campaign step H175 (28 Sept 2026, 23:13-23:20 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- fol. 177r deciphers f.176r: gate PASS
+
+Pre-registered in `family/passes/PROMPTS_f176_f175.md` section H175 (a6d9a6c3), with one amendment logged before the call
+(d34ca3f7: the clear salutation dropped from the candidate). Native canvas 329 fetched once (1 Gallica request, scratch), crops
+`family/sheets/f177r/`. One Opus vision call: blind read of fol. 177r L01-L08 (`passes/f177r_clearA_h175.tsv`, 564 letters, lines
+graded m/l): "Tressainct pere / Vn larme aux yeux et lame plaine de desespoir, Je [scay] dire a v^re sainctete [ql] me desplaist
+infiniment. Elle ayt a me trouuer si veritable sur ce que tant de fois [ie] [luy] [ay] asseure que ce que le R. dhespaigne ... sa
+fille Royne de france ... du Roy de Nauarre ...". `family/h175_gate.py` (result `h175_gate_result.txt`, `--check`) on the two
+f.176r passes of H170, key v4, h170_gate.py's statistic and gate:
+
+| pass | N | fol. 177r | wrong: f.184r @0 / @120 / fol. 175r | 200 permuted mean / p95 / max | gate |
+|---|---|---|---|---|---|
+| A | 208 | **0.577** | 0.413 / 0.361 / 0.399 | 0.337 / 0.409 / 0.447 | PASS |
+| B | 208 | **0.606** | 0.452 / 0.389 / 0.385 | 0.359 / 0.442 / 0.500 | PASS |
+
+**GATE PASS on both passes: fol. 177r renders f.176r's first four cipher rows.** The margin over the best wrong text is
+0.16 / 0.15, and the scores sit in the range the true f.188r/f.184r pair gave under the same statistic (H173: 0.58-0.65). f.176r
+(Baudouin-Desportes to Clement VIII, Paris, 22 July 1593, in the polyphonic design per Tomokiyo) and its separate-sheet period
+decipherment fol. 177r(-178?) are therefore a **second separate-sheet known-plaintext pair for the family key**, after
+f.188r/f.184r. Key source: `period`. What this is not: no key row is built yet, and nothing is merged into v4. The statistic is a
+test of the pairing, not a reading. Next, H177: full passes of f.176r-v, a read of fol. 177r-178, and alignment into
+`family/key_period_f176.tsv` by align_separate.py's rule. Then the report against v4's two-way f.61 cells and rare classes. The
+merge is a verifier's.

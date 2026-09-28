@@ -1,0 +1,4 @@
+fol. 177r letters read 564
+pass A: N 208; fol.177r 0.577; wrong f184@0 0.413 f184@120 0.361 f175 0.399; permuted mean 0.337 p95 0.409 max 0.447; PASS
+pass B: N 208; fol.177r 0.606; wrong f184@0 0.452 f184@120 0.389 f175 0.385; permuted mean 0.359 p95 0.442 max 0.500; PASS
+GATE (both passes): PASS
