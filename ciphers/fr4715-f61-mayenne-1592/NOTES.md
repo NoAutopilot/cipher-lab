@@ -2362,7 +2362,7 @@ Lyon 7 Feb 1593, "avec chiffre et déchiffrement") is **not digitised** (no Gall
 vs 1 for the fr.3641 control), so whether it is in f.61's cipher is undetermined; reproduction request drafted in
 `family/REQUEST_fr4699.md` for the person's card. No glossed signs aligned, no per-leaf key, key v4 untouched.
 
-## Campaign step H110 and a correction to H100/H103 (28 Sept 2026, 16:47-16:55 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+## Campaign step H110 and a correction to H100/H103 (28 Sept 2026, 16:47-16:52 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
 
 **H110.** A second one-swap hard-null draw (seed 106; sets and the H94 no-leak prompts pushed 19592f15 before the calls).
 Control on the known lines: target rank 1 of 21, **8.0 vs 6.5 -> PASS** (`f61judge_known_h51_swaps106_*`). The f.108v call

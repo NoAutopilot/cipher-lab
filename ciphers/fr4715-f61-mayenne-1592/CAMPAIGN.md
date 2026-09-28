@@ -329,4 +329,4 @@ closed:
 
 2026-09-28 16:47 | session_01NQpd6L9ZvLvjU1L7ttFmZs | order | 0 | the 16:45 firing reached this runner (no replacement yet): H110 taken ahead of H108 because its two file-written text calls fit the context left (about 625k of 700k); H108 (four calls and a reconciliation) stays first for the next runner.
 
-2026-09-28 16:55 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H110 done | 3 | control PASS 8.0 vs 6.5; f.108v call VOID (scripted). Correction: H100 and H103 VOID (H100's judge also scripted); H111 added to rerun inline.
+2026-09-28 16:52 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H110 done | 3 | control PASS 8.0 vs 6.5; f.108v call VOID (scripted). Correction: H100 and H103 VOID (H100's judge also scripted); H111 added to rerun inline.
