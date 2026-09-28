@@ -1,0 +1,7 @@
+id	holder	shelfmark	dates	cipher_type	symbol_sets	pages	match_to_H16a_design
+941	Brussels, Algemeen Rijksarchief, Secretairerie d'Etat (SEA inv.nr. 1 key 5)	ARA_Brus_SEA_inr.1_key5	1553-1729 (series)	Homophonic substitution, Nomenclatures	Alphabet, Graphic signs, Numerical	3	no by stated symbol sets (alphabet + graphic signs); a numeric block may exist inside, image-gated
+944	Brussels, same series, key 8	ARA_Brus_SEA_inr.1_key8	1553-1729	Nomenclatures	Numerical	2	no (word nomenclator, no letter substitution stated)
+946	Brussels, same series, key 10	ARA_Brus_SEA_inr.1_key10	1553-1729	Homophonic substitution, Nomenclatures	Alphabet, Graphic signs, Numerical	2	no by stated symbol sets; as 941
+1485	Vienna, OeStA HHStA Staatskanzlei Interiora Chiffrenschluessel	OeStA_HHStA_Stk_Int	1600-1799 (series)	Simple substitution, Nomenclatures	Alphabet, Numerical	1	no (simple substitution, alphabet symbols)
+10182	Barcelona (undated)	--	--	Unknown	Graphic signs, Alphabet, Numerical	2	no (graphic signs, alphabet)
+10183	Barcelona (undated)	--	--	Unknown	Graphic signs, Alphabet, Numerical	2	no

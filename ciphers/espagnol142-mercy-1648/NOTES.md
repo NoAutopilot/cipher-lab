@@ -1534,3 +1534,21 @@ declares graphic signs and/or alphabet letters among its symbol sets (7259: grap
 alphabet with or without graphic signs), and five of seven are simple rather than homophonic substitution; none is
 the all-numeric, two-digit, vowel-homophone design of `key.tsv` (H16 a). No thumbnail was needed. A stated-design
 negative on seven records, not a key comparison. No reading change, no grade change.
+
+## Campaign step H18 (2026-09-28 01:39-01:5x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** The DECODE key listing finished: `tools/decode_list.py --start-page` (new option, offline
+test passes) resumed the status-N/A crawl from page 59; 71 requests, 1.6 s apart, no login. Merged snapshot
+`sources/decode/keys-all-2026-09-28-merged.tsv`: 6,324 of the 6,374 key records DECODE lists (99%). **62 Spanish-
+language keys; 21 with a date range touching 1640-1660:** the eight Brussels SEE "chiffres 1647-98" keys (958-965,
+MERCY-KEY and H16), three Brussels SEA inv.nr. 1 keys (941, 944, 946; series dated 1553-1729), Vienna HHStA
+Staatskanzlei 1485 (1600-1799), two TNA SP 106 Charles II keys (1660-1685, out of scope), and the seven Florentine
+SIIVol6 keys (H20); plus two undated Barcelona keys (10182, 10183). The six not yet examined were read on their
+login-free RecordsView pages (`sources/decode/h18-2026-09-28/`, `summary.tsv`): 941 and 946 are homophonic
+substitution with nomenclatures over alphabet + graphic signs + numerals, 944 a numeric word nomenclator, 1485 a
+simple substitution with alphabet symbols, the Barcelona pair "unknown" over mixed symbol sets. **None states the
+all-numeric two-digit homophonic alphabet of `key.tsv`; the only records whose stated design contains it are
+958-965** (H16). What remains open is inside the images: 941 and 946 carry a numerical set among others, and
+958-965's own numeric alphabets have never been read at full size (account-gated, ASKS row 1). A search result
+over 99% of the listing, searched by language and date on 28 Sept 2026 -- not a novelty or key verdict (rule 10).
+No reading change, no grade change. DECODE requests this session: 67 + 77 = 144, all 1.6 s apart.
