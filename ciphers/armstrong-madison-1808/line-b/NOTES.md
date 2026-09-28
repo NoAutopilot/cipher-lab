@@ -394,3 +394,27 @@ percentile 0). So the target's rows are used the way an alphabetical-bucket layo
 statistics, but its bare heads carry a third of the family tokens where a bucket headed by its commonest word gives
 half: the head is NOT the bucket's most frequent word (a bucket headed by its alphabetically first word, or a smaller
 bucket, would lower the share). This narrows B2's surviving constraint without settling it.
+
+## Step B6 (28 Sept 2026, 03:03 UTC onward; Madison half done 04:10) -- the reply chain on Founders Online via Wayback: one new sentence (Graham's duplicate), nothing else from mid-May to 9 August 1808
+
+**Route.** LOC's own transcription search failed its positive control (`q=undecyphered` returns 0 in the Madison and
+Jefferson collections for 1808-09 although the 15 May 1808 sentence exists), so the instrument is Founders Online's
+Early Access pages through the Wayback Machine (`web.archive.org/web/2025id_/https://founders.archives.gov/documents/
+<series>/99-01-02-<id>`), enumerated from the CDX index (4,290 captured Madison ids; 1,395 in 2700-4300), fetched one
+at a time 1.6 s apart with one retry (`scratch/b6/wb_loop.sh`; the host resets about half the connections, as
+ARM-REC3 found). Positive control: id 3082 returns "The undecyphered letter from A. ..." verbatim (met).
+
+**Read: Madison series ids 2729-2745 (21-25 Feb 1808) and 3084-3400 (16 May-9 Aug 1808), 319 pages, grep for
+cypher / cipher / decypher / "20th Feb" / "no key" etc.** Armstrong-titled documents in the run: 16 May, 31 May,
+6 June, 25/27/29 June, 7/8/18/23/25/26/31 July, 7 Aug (x2) from Armstrong; Madison to Armstrong 21 and 22 July 1808
+(the two instruction letters: neither mentions the February letter, a cypher, or a key). Hits: only (1) Madison to
+Jefferson 15 May (the known sentence) and (2) **John Graham to Madison, 20 May 1808 (id 3101)**: "Among the Letters
+forwarded by this Mail you will find one in Cypher from Genl Armstrong. It is the Duplicate of the one sent before &
+is forwarded to you now because there is a Postscript on the back of it, which I beleive was not on the one before
+sent" -- followed up as B15. Graham's 27 May letter refers to Madison's "letter of the 20th" on another matter (a
+Genl T. inquiry), not the cipher. 26 ids failed both fetches and are being retried after the Jefferson run
+(`chain2.sh`). Jefferson series ids 8000-8040 (15-23 May 1808) read in the first pass: Jefferson to Madison 17 May
+(8015) "I retain till another post Pinckney's, Armstrong's, Livingston's & mr Gallatin's letters"; 8003-8090
+re-run with retries in progress. **Result so far: search result, no new sentence about the cipher beyond Graham's;
+the reply chain as far as 9 Aug 1808 is silent on the undecyphered letter after 15-20 May.** Requests:
+web.archive.org about 420 so far this step (single-threaded, 1.6 s apart, one retry per id); 0 subagents.
