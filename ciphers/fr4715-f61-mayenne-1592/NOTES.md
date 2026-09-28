@@ -3381,3 +3381,24 @@ H157's f.108v result (ZHOOK = i/x in f.61's hand, by sequence gain). The wrong t
 f.61's five rare classes (3 tokens, unread under v4), with no period reading until now. What is **not** shown: that f.176r's sign is the
 same glyph as f.61's ZHOOK signs (the atlas's shape description is shared, the hands differ). H178b tests that link by a blind tile
 match before anything is proposed for f.61. Nothing merged. BETA/LOOPSTEM1 -> m (5 of 8) supports BETA = m.
+
+## Campaign step H178b (28 Sept 2026, 23:0x-22:58 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- tile link f.176r i-sign / f.61 ZHOOK: NO LINK by the gate
+
+Tiles, key and prompt pre-registered in `scripts/H178B_PROMPT.md` (4dfffe1c), with the gate amended before the call: centre sign or
+'unclear'. The tiles are `images/h178b/tiles.jpg`, built by `scripts/h178b_tiles.py`: f.61r's 3 ZHOOK and 6 C43 signs located by the
+runner's eye on its line sheets, and 10 of f.176r's 52 C43/ZHOOK-disputed columns cut at pass A's x. One Opus vision call, inline reply
+(`scripts/h178b_reply.tsv`):
+
+| group (reader's description) | f.61 ZHOOK (3) | f.61 C43 (6) | f.176r (10) |
+|---|---|---|---|
+| G1 large hooked 7/z top over two long crossed slanting strokes | **3** | 0 | 0 |
+| G2 "43" | 0 | **6** | 0 |
+| G3 small z/3 body run into two short crossed strokes, "may be a smaller, cursive version of G1" | 0 | 0 | **7** |
+| unclear | 0 | 0 | 3 (tiles holding two signs or off the row) |
+
+**Gate (f.61 ZHOOK and >= 80% of the clear f.176r tiles in one group): FAIL, NO LINK.** The reader keeps Desportes's smaller cursive
+form (G3) apart from f.61's large ZHOOK (G1). The size and the hand differ, and the gate cannot separate "another glyph" from "the same
+glyph in another hand". The f.176r i-reading (H178) therefore stays a result about Desportes's sign only, and nothing is proposed for
+f.61's ZHOOK. What the call does show: none of the 7 f.176r signs groups with f.61's C43 (0/7), which agrees with the letter evidence
+(i, not a/n). A same-hand link would need a family leaf in f.61's own hand writing this sign with a period gloss. Among the glossed
+leaves only f.108v (H157) is in that hand, and it has no gloss over its ZHOOK signs. No further row.
