@@ -660,3 +660,25 @@ held the connective words) the consistent reading is that the runs are spans of 
 and content words together, about one to two words' worth of letters or several word signs -- written in a personal
 shorthand, exactly what ARM-S1's two readers called it independently ("syllable- or word-shorthand-like"), not a
 name-only spelling device and not a function-word-only device. Requests: none; 0 subagents.
+
+## Step B30 (28 Sept 2026, 04:48-04:52 UTC) -- the common glyph types never double, and type 20 behaves as a word space: control-backed
+
+`b30/wave_position.py` on Tomokiyo's segmentation (codex glyphs.txt, 257 glyphs, 28 fragments). (1) Same-type
+adjacency against a within-fragment permutation null (3,000 draws): the wave family 20/22/23 (61 tokens in fragments
+of >= 2) stands next to another wave 16% of the time where the null gives 30-53% (percentile 0); type 20 alone 6% vs
+6-33% (pct 1); type 36 0% vs 0-29% (pct 0); type 65 0% vs 0-22% (pct 0); 35 and 33 inside their nulls. The commonest
+signs are dispersed the way letters (no doubling) or dividers are, not the way fillers scattered at random would be.
+Edge share of the waves 0.262 (null p95 0.262, pct 94): 20 closes 6 of the 28 fragments, 22 opens 5. (2) Word-length
+test: splitting every fragment at type 20 gives 54 segments (lengths 1-15) whose mean, 4.07 glyphs, sits inside the
+en18 word-length band (p05-p95 3.94-5.22, percentile 12; share of segments >= 8: 0.15, band 0.07-0.24, pct 42; share
+<= 2: 0.37 vs 0.15-0.35, pct 97; max 15 vs 9-14, pct 97). Splitting at all three wave types gives segments of mean
+2.91, outside the band (pct 0; 60% of them 1-2 glyphs) -- **20 alone is the divider; 22 and 23 are signs.**
+
+**Result.** Type 20 (37-40 tokens, the commonest glyph, the one the ChatGPT components model deleted as a null and
+the space-aware model allowed as "a sign may be a space") behaves as a word space on two independent statistics
+(dispersal; the English word-length band), and the other common signs alternate like letters. Under this reading
+the runs hold 54 words of about 4.1 signs each in a sign set of about 35 -- a letter-level (or near-letter) shorthand
+with a written word division, carrying spans of running text (B27, B29). Named next step, with a control first: a
+substitution solver over the 54 segmented words that scores by an en18 WORD dictionary rather than a letter
+n-gram model (35 signs -> 26 letters with homophones; the ChatGPT annealers used n-grams and no word division on
+the target) -- planned as B32. Requests: none; 0 subagents.
