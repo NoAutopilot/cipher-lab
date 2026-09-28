@@ -1,0 +1,2 @@
+key v4 two-way form, unread signs dropped: lattice 23/42, plain beam 22/42 (H117 plain beam with cuts 23/42)
+GATE H141 (lattice >= 34/42): FAIL

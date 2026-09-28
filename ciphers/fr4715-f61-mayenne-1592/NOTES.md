@@ -2890,3 +2890,15 @@ good-citizen rule; whether the letter is in f.61's polyphonic signs is undetermi
 `family/REQUEST_fr2751.md` (a desk look at f.241-f.244, or a later cloud retry, H144). Requests this step:
 archivesetmanuscrits 4, Gallica 7 (SRU 1, manifest 1, images 5 -- all 403), logged in `family/requests.log`.
 Not a key, not a reading; no class change.
+
+## Campaign step H141 (28 Sept 2026, 19:49-19:51 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61lattice_v4.py` (pushed a6699ad5 before the run; `f61lattice_v4_result.txt`): the H136 word-lattice beam on key
+v4's two-way form with unread signs dropped rather than cut. **Lattice 23/42, plain beam 22/42** (H117, with cuts: 23/42)
+-> **GATE (>= 34/42): FAIL**. Neither H117 cause was the limit: dropping the unread signs and adding a word model leave the
+choice near chance, while the same instruments under the 14-cell pairs choose 0.78-0.90 right on the same leaf (H116, H136).
+So the obstacle is v4's sets themselves -- up to seven letters per sign ([e/q/i/p/r/s/t], [n/a/c/e], [o/b/e]), wider than
+the two-letter design Tomokiyo's table and the 14-cell map describe; within such a set a language model has too much
+freedom. For the verifier: the two-way choices AUDIT.md sec. 6 item 1 counts are choosable with a control only where the
+sign's set is a pair; widening the pairs is where v4 and the 14-cell map disagree, not a grading question. No reading, no
+class change.
