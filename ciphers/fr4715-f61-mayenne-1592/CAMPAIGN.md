@@ -1,7 +1,7 @@
 target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
-daily_budget_usd: 400
+daily_budget_usd: 600
 spent_today_usd: 319.92
 spent_day: 2026-09-28
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
@@ -313,3 +313,5 @@ closed:
 2026-09-28 16:07 | session_01NQpd6L9ZvLvjU1L7ttFmZs | rows | 0 | none runnable after H104: H105 (swap power count), H106 (f.108v L05 look), H107 (pre-registered f.108r prediction ahead of ASKS 88) added.
 
 2026-09-28 16:07 | session_01NQpd6L9ZvLvjU1L7ttFmZs | H105 done | 0.2 | swap power: the c/p<->d/q swap touches 6/274 f.108v positions -- H103 is a non-test of it, not a negative.
+
+2026-09-28 16:1x UTC | session_01FXDfYR3CvGk7tcid1Aav1n (orchestrator) | budget | 0 | daily budget raised 400 -> 600 for 28 Sept under the lean-in direction: key v4 (F61-FAMILY-6) moved the meter 14/65/20 -> 20/59/20 with known spans 0.873 vs permuted p95 0.436; VERIFY-F61-V4 and F61-FAMILY-7 (fr.3641/fr.4699 decipherment leads) spawned.
