@@ -585,3 +585,17 @@ the commonest coded rows are content words or the function words are elsewhere (
 telegraphic register would). What is excluded: any assignment of the five richest rows to five distinct common
 English function words (a family-C solver that seeds "the"/"of"/"to" onto the top particles -- ARM-C1's particle
 class -- is working against this structure). Requests: none; 0 subagents; about 8 minutes by the clock.
+
+## Step B26 (28 Sept 2026, 04:41-04:45 UTC) -- roll 15 (Sept 1810-1811, Russell) screened whole: the office code again; nothing in the target's code
+
+Whole-reel PDF `M34-015.pdf` (72.6 MB, 363 pages, one request), 13 contact sheets at 26 dpi read by this session
+(`scratch/b26/r15_*.jpg`); the three non-prose pages checked at 110 dpi. Numeral pages: 171 (Russell to the
+Secretary of State, a paragraph "971 1367 925 1020 1507 623 705 1201 665 ... 972 32 1217 590 646 217" -- THE=972 usage,
+972 present, an interlinear "424" correction) and 313-314 (Russell, "Duplicate, Confidential, Paris 2 Sept 1811",
+docketed "decyphered within", a full numeral page with the period decode -- the office code again); page 186 is a
+list of vessels, not a table. **Result: search result with its control (the 972 pages stand out as on rolls 13-14):
+no successor use of the target's code and no key sheet filed with the legation papers.** With B15, B17 and B23 this
+closes DUSMF M34 rolls 12-15 (Oct 1801-1811) frame by frame: the 20 Feb 1808 letter is the only item in its code.
+Requests: catalog.archives.gov 1; 0 subagents. Side note for B12: Madison to William Short, 8 Sept 1808 (Founders
+99-01-02-3504) instructs Short to obtain at Paris "a Copy of Genl Armstrongs Cypher also" -- the Department cypher
+circulated to Short and later to Adams (campaign H30), not the private code.
