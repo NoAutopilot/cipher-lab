@@ -1,0 +1,344 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	PLAIN	m	s1	500	touvelin (letter-like run, reading uncertain)
+L01	2	PLAIN	l	s1	890	aertear (letter-like run, reading uncertain)
+L01	3	BETA	m	s1	1125	beta/S-like loop on stem with bowl
+L01	4	H24	m	s1	1235	r-curl joined to crossed 4
+L01	5	4STEM	m	s1	1365	4 with long stem, r-hook at foot right
+L01	6	HASH4	l	s1	1490	crossed 4 cluster, runs into overlap
+L01	7	ZBAR	m	s2	200	x-like zigzag with bar
+L01	8	VBAR_A	l	s2	260	small v/triangle
+L01	9	OTHER	l	s2	300	small c-like hook
+L01	10	PHI	h	s2	385	loop on long stem
+L01	11	PHI	h	s2	450	loop on long stem
+L01	12	ZBAR	m	s2	555	x-like with bar
+L01	13	4STEM	m	s2	655	4 with crossed stem; alt HASH4
+L01	14	PHI	h	s2	760	loop on long stem
+L01	15	HASH4	m	s2	870	dense crossed cluster; colon-like dots after it
+L01	16	PLAIN	l	s2	1250	oiuseiuza (letter-like run, reading uncertain, may be cipher)
+L01	17	PLAIN	m	s3	200	Pieri
+L01	18	PLAIN	m	s3	560	descaufo
+L01	19	PLAIN	m	s3	880	Je
+L01	20	PLAIN	l	s3	1250	Lenrabillo
+L01	21	4STEM	m	s4	220	4 with stem, r-hook at foot
+L01	22	LOOPS	m	s4	350	two loops no stem
+L01	23	4STEM	m	s4	420	4 with stem; alt H24
+L01	24	LL	m	s4	465	ll-like pair of strokes
+L01	25	4STEM	m	s4	560	crossed 4 with stem; alt HASH4
+L01	26	PHI	h	s4	660	loop on long stem
+L01	27	ZBAR	m	s4	780	x-like with bar
+L01	28	4TRI	m	s4	880	4 above small triangle
+L01	29	PHI	h	s4	955	loop on long stem
+L01	30	4STEM	m	s4	1070	4 with stem, r-hook at foot
+L01	31	ZBAR	m	s4	1170	x-like with bar
+L01	32	4STEM	m	s4	1270	crossed 4; alt HASH4
+L01	33	PHI	h	s4	1350	loop on long stem
+L01	34	OTHER	m	s4	1455	cross above a bar above a delta/8 loop; alt LOOPBAR
+L01	35	PLAIN	l	s5	330	tollirmiln (reading uncertain)
+L01	36	PLAIN	l	s5	600	gueu (superscript mark)
+L01	37	PLAIN	l	s5	940	Laur
+L02	1	PLAIN	l	s1	440	scxiq (reading uncertain)
+L02	2	PLAIN	m	s1	800	estonne
+L02	3	PLAIN	l	s1	1300	commeboz
+L02	4	PLAIN	m	s2	260	cy
+L02	5	PLAIN	m	s2	500	parlo
+L02	6	PLAIN	m	s2	730	S[eigneu]r
+L02	7	PLAIN	m	s2	870	le
+L02	8	PLAIN	l	s2	1200	mamaia
+L02	9	4STEM	m	s2	1490	4 with stem, r-hook at foot (runs into overlap)
+L02	10	PHI	m	s3	265	loops either side of stem
+L02	11	CH	m	s3	380	cursive h-like hook
+L02	12	OTHER	m	s3	495	triangle above a stem crossed by two bars; alt VBAR_B
+L02	13	EBR_B	m	s3	590	squared bracket, hooked top
+L02	14	HASH4	m	s3	690	dense crossed 4 with stems
+L02	15	PHI	h	s3	800	loops on stem
+L02	16	4STEM	m	s3	930	4 with stem, delta at foot
+L02	17	4STEM	m	s3	1060	4 with stem, delta at foot
+L02	18	PHI	h	s3	1160	loop on long stem
+L02	19	4STEM	m	s3	1290	4 with stem, r-hook at foot
+L02	20	INF	m	s3	1430	two loops on a bar
+L02	21	OTHER	m	s4	180	cross above a delta/curl
+L02	22	ZBAR	m	s4	290	x-like with bar
+L02	23	HASH4	m	s4	400	crossed 4 cluster
+L02	24	PHI	h	s4	490	loop on stem
+L02	25	VBAR_A	l	s4	575	small v
+L02	26	PHI	h	s4	670	loops on stem
+L02	27	BETA	l	s4	790	S-like with r; alt CH
+L02	28	4STEM	m	s4	900	4 with long stem, delta at foot
+L02	29	OTHER	m	s4	1060	cross above a bar above a delta/8 loop
+L02	30	OTHER	m	s4	1200	gamma-like open loop
+L02	31	EBR_B	m	s4	1290	squared bracket; alt ISH
+L02	32	PHI	m	s4	1350	loop on crossed stem
+L02	33	ZBAR	m	s4	1450	x-like with bar
+L02	34	PHI	h	s5	150	loop on stem
+L02	35	4STEM	m	s5	250	4 with stem, delta at foot
+L02	36	4STEM	m	s5	380	4 with stem, delta at foot
+L02	37	PHI	h	s5	460	loop on stem
+L02	38	BETA	m	s5	540	beta/S-like
+L02	39	H24	m	s5	640	r-curl joined to crossed double 4
+L02	40	CA	l	s5	760	cursive a-like
+L02	41	PLAIN	m	s5	1000	dailleurs
+L03	1	PLAIN	m	s1	360	ne
+L03	2	PLAIN	m	s1	700	sparguent
+L03	3	PLAIN	m	s1	1090	pas
+L03	4	PLAIN	m	s1	1420	tantost
+L03	5	PLAIN	m	s2	380	que
+L03	6	PLAIN	l	s2	580	long
+L03	7	PLAIN	m	s2	930	subiect
+L03	8	PLAIN	m	s2	1250	puis
+L03	9	PLAIN	m	s2	1460	sur
+L03	10	PLAIN	l	s3	360	long
+L03	11	PLAIN	m	s3	660	autre
+L03	12	PLAIN	m	s3	940	Il
+L03	13	PLAIN	m	s3	1110	y
+L03	14	PLAIN	m	s3	1170	a
+L03	15	PLAIN	m	s3	1320	deux
+L03	16	PLAIN	m	s4	300	Iours
+L03	17	PLAIN	m	s4	620	quils
+L03	18	PLAIN	m	s4	1000	soffrirent
+L03	19	PLAIN	l	s4	1370	de
+L03	20	PLAIN	m	s4	1470	faire
+L03	21	PLAIN	m	s5	470	leur
+L03	22	LOOPS	m	s5	650	two loops no stem
+L03	23	4STEM	m	s5	760	4 with stem, delta at foot
+L03	24	PHI	h	s5	870	loop on long stem
+L03	25	ISH	m	s5	960	capital I with bars; alt EBR_B
+L03	26	PHI	h	s5	1030	loop on stem
+L03	27	OTHER	l	s5	1100	single loop with bar; alt LOOPBAR
+L03	28	4STEM	m	s5	1240	4 with stem, r-hook, raised
+L04	1	VBAR_A	m	s1	320	down triangle with top bar
+L04	2	PHI	h	s1	410	loops on stem
+L04	3	PHI	h	s1	490	loops on stem
+L04	4	HASH4	m	s1	610	dense crossed 4 with stems
+L04	5	INF	m	s1	710	two loops on a bar
+L04	6	C6	l	s1	820	delta/6-like loop; alt OTHER
+L04	7	4TRI	m	s1	950	4 above triangle; superscript x above
+L04	8	H24	m	s1	1070	curl joined to crossed 4
+L04	9	PHI	h	s1	1190	loops on stem
+L04	10	VBAR_A	m	s1	1270	small down triangle with bar
+L04	11	PHI	h	s1	1360	loops on stem
+L04	12	PHI	h	s1	1460	loops on stem
+L04	13	OTHER	m	s2	210	sideways open 8 / gamma loops, no bar; alt INF
+L04	14	EBR_B	m	s2	360	squared bracket
+L04	15	4STEM	m	s2	450	4 with stem, delta at foot
+L04	16	HASH4	m	s2	580	dense crossed 4
+L04	17	INF	m	s2	680	two loops on a bar
+L04	18	PHI	h	s2	800	loops on stem
+L04	19	EBR_B	m	s2	890	squared bracket
+L04	20	EBR_B	m	s2	945	squared bracket
+L04	21	PHI	h	s2	1010	loops on stem
+L04	22	H24	m	s2	1150	curl joined to crossed 4
+L04	23	EBR_B	m	s2	1245	squared bracket
+L04	24	ISH	m	s2	1320	capital I with bars
+L04	25	PHI	h	s2	1395	loops on stem
+L04	26	INF	m	s2	1480	dark two loops on a bar; alt LOOPS
+L04	27	PHI	h	s3	170	loops on stem
+L04	28	PHI	h	s3	270	loop on stem
+L04	29	ZBAR	m	s3	360	x-like with bar
+L04	30	4TRI	m	s3	440	4 above triangle
+L04	31	PHI	h	s3	530	loop on stem
+L04	32	H24	m	s3	610	curl joined to crossed 4
+L04	33	VBAR_A	m	s3	710	down triangle with bar, dash after
+L04	34	OTHER	m	s3	840	gamma-like open loop
+L04	35	OTHER	m	s3	950	cross/bars above a delta loop
+L04	36	PHI	h	s3	1045	loop on stem
+L04	37	4STEM	m	s3	1160	4 with stem, delta at foot
+L04	38	4TRI	m	s3	1290	4 above triangle
+L04	39	4STEM	m	s3	1430	4 with stem, r-hook
+L04	40	ZBAR	m	s4	150	flattened x with bar
+L04	41	OTHER	m	s4	240	gamma-like open loop
+L04	42	OTHER	m	s4	360	loop on stem crossed by two bars; alt PHI
+L04	43	4STEM	m	s4	490	4 with stem, r-hook
+L04	44	PHI	h	s4	600	loop on stem
+L04	45	ZBAR	m	s4	720	x-like with bar
+L04	46	PHI	h	s4	810	loop on stem
+L04	47	ZBAR	m	s4	930	x-like with bar
+L04	48	4STEM	m	s4	1050	4 with stem, delta at foot
+L04	49	4TRI	m	s4	1170	4 above triangle
+L04	50	PHI	h	s4	1250	loop on stem
+L04	51	4TRI	m	s4	1380	4 above triangle
+L04	52	HASH4	m	s4	1490	crossed 4 with stems; alt 4STEM
+L04	53	INF	l	s5	240	heavily inked loops on bar; alt LOOPS
+L04	54	PHI	h	s5	330	loops either side of stem
+L04	55	EBR_B	m	s5	440	hooked bracket
+L04	56	H24	m	s5	520	curl joined to crossed slashes; alt HASH4
+L04	57	HASH4	m	s5	620	dense crossed 4
+L04	58	INF	m	s5	700	two loops on a bar
+L04	59	PHI	h	s5	800	loops on stem
+L04	60	OTHER	m	s5	900	triangle above a stem crossed by two bars; alt VBAR_B
+L04	61	EBR_B	m	s5	1000	hooked bracket
+L04	62	EBR_B	m	s5	1075	squared bracket
+L04	63	PHI	h	s5	1130	loops on stem
+L05	1	PHI	h	s1	310	loops on stem
+L05	2	PHI	h	s1	400	loops on stem
+L05	3	4TRI	m	s1	510	4 above triangle
+L05	4	PHI	h	s1	610	loops on stem
+L05	5	INF	m	s1	700	two loops on a bar
+L05	6	PHI	h	s1	790	loops on stem
+L05	7	4STEM	m	s1	880	4 with stem, delta at foot
+L05	8	EBR_A	l	s1	1020	E-like bracket with tail; alt EBR_B
+L05	9	PHI	h	s1	1105	loops on stem
+L05	10	4TRI	m	s1	1210	4 above triangle
+L05	11	PHI	h	s1	1310	loops on stem
+L05	12	PHI	h	s1	1420	loops on stem
+L05	13	ZBAR	m	s2	140	x-like with bar
+L05	14	H24	m	s2	260	curl joined to crossed 4
+L05	15	HASH4	m	s2	350	dense crossed 4
+L05	16	PHI	h	s2	450	loop on stem
+L05	17	4STEM	m	s2	560	4 with stem, delta at foot
+L05	18	VBAR_A	l	s2	680	small v-triangle with tail
+L05	19	H24	m	s2	810	curl joined to crossed 4
+L05	20	4STEM	m	s2	930	4 with stem, delta at foot
+L05	21	4STEM	m	s2	1060	4 with stem, delta at foot
+L05	22	4STEM	m	s2	1190	4 with stem, delta at foot
+L05	23	H24	m	s2	1320	curl joined to crossed 4
+L05	24	4STEM	m	s2	1440	4 with stem, delta at foot
+L05	25	PHI	h	s3	150	loops on stem
+L05	26	4STEM	m	s3	260	4 with stem, delta at foot
+L05	27	PHI	h	s3	380	loop on stem
+L05	28	ZBAR	m	s3	470	x-like with bar
+L05	29	VBAR_A	m	s3	565	small v
+L05	30	OTHER	l	s3	600	small c-like hook
+L05	31	PHI	h	s3	650	loops either side of stem
+L05	32	H24	m	s3	800	3-curl joined to crossed 4
+L05	33	VBAR_A	m	s3	900	small v
+L05	34	VBAR_A	m	s3	1030	small v
+L05	35	OTHER	l	s3	1060	small c-like hook
+L05	36	PHI	h	s3	1100	loops either side of stem
+L05	37	INF	m	s3	1210	two loops on a bar
+L05	38	VBAR_A	m	s3	1340	small v
+L05	39	OTHER	l	s3	1370	small c-like hook
+L05	40	PHI	h	s3	1440	loop on stem
+L05	41	PHI	h	s4	150	loops either side of stem
+L05	42	INF	m	s4	250	loops on a bar
+L05	43	PHI	h	s4	390	loops either side of stem
+L05	44	EBR_B	m	s4	520	squared bracket
+L05	45	PHI	h	s4	600	loop on stem
+L05	46	PLAIN	m	s4	830	mais
+L05	47	PLAIN	m	s4	1030	Je
+L05	48	PLAIN	m	s4	1200	lay
+L05	49	PLAIN	m	s4	1420	asseure
+L05	50	PLAIN	m	s5	420	que
+L05	51	PLAIN	m	s5	640	la
+L05	52	PLAIN	m	s5	900	estoit
+L05	53	4STEM	l	s5	1230	4 with delta, raised near right margin, may be interlinear
+L06	1	PLAIN	l	s1	380	faulx
+L06	2	PLAIN	m	s1	800	surquoy
+L06	3	PLAIN	m	s1	1200	Jeno
+L06	4	PLAIN	l	s1	1420	maesto
+L06	5	PLAIN	m	s2	620	malaise
+L06	6	PLAIN	l	s2	1150	blarotiac (preceded by a dot, dash after)
+L06	7	PLAIN	m	s3	230	dela
+L06	8	PLAIN	m	s3	460	peine
+L06	9	PLAIN	m	s3	670	ou
+L06	10	PLAIN	m	s3	810	dela
+L06	11	PLAIN	l	s3	1130	lauori
+L06	12	PLAIN	l	s3	1420	mia
+L06	13	PLAIN	m	s4	250	car
+L06	14	PLAIN	m	s4	420	Je
+L06	15	PLAIN	m	s4	650	nest
+L06	16	PLAIN	m	s4	980	possible
+L06	17	OTHER	m	s4	1260	gamma-like open loop
+L06	18	EBR_B	m	s4	1340	squared bracket
+L06	19	PHI	h	s4	1430	loop on stem
+L06	20	RSIGN	l	s5	120	5-like sign; superscript z/2 above
+L06	21	4TRI	m	s5	290	4 above triangle
+L06	22	H24	m	s5	380	curl joined to crossed 4
+L06	23	PHI	h	s5	460	loop on stem
+L06	24	VBAR_A	m	s5	560	small v
+L06	25	PHI	h	s5	640	double loop on stem; alt DBL
+L06	26	PHI	h	s5	710	loops on stem
+L06	27	PHI	h	s5	820	loop on stem
+L06	28	INF	m	s5	920	dark loops on bar
+L06	29	EBR_B	l	s5	1000	squared bracket; alt ISH
+L06	30	VBAR_A	m	s5	1090	small v
+L06	31	4TRI	m	s5	1210	4 above triangle, raised
+L07	1	ZBAR	m	s1	300	x-like with long bar
+L07	2	4STEM	m	s1	440	4 with stem, delta at foot
+L07	3	HASH4	m	s1	550	crossed 4 cluster
+L07	4	VBAR_A	m	s1	670	down triangle with bar
+L07	5	INF	m	s1	790	two loops on a bar
+L07	6	4STEM	m	s1	910	4 with stem, delta at foot
+L07	7	PHI	h	s1	1010	loops on stem
+L07	8	VBAR_A	m	s1	1140	small v
+L07	9	PHI	h	s1	1230	dark loop on stem
+L07	10	EBR_B	m	s1	1310	squared bracket
+L07	11	EBR_B	m	s1	1380	squared bracket
+L07	12	PHI	h	s1	1470	loops on stem
+L07	13	ZBAR	m	s2	200	x-like with bar
+L07	14	4STEM	m	s2	300	4 with stem, r-hook
+L07	15	INF	m	s2	420	two loops on a bar
+L07	16	VBAR_A	m	s2	560	small v
+L07	17	PHI	h	s2	640	loops on stem
+L07	18	PLAIN	m	s2	900	estant
+L07	19	PLAIN	m	s2	1350	raisonnable
+L07	20	PLAIN	m	s3	440	que
+L07	21	PLAIN	m	s3	740	nous
+L07	22	PLAIN	m	s3	1000	ez
+L07	23	PLAIN	l	s3	1300	schissions
+L07	24	PLAIN	l	s4	270	lieu
+L07	25	PLAIN	m	s4	630	premiere
+L07	26	PLAIN	m	s4	1100	aduertis
+L07	27	PLAIN	m	s4	1420	pour
+L07	28	PLAIN	m	s5	450	pouuoir
+L07	29	PLAIN	m	s5	830	bastir
+L07	30	ZBAR	l	s5	1175	x-like with bar, raised near margin
+L07	31	HASH4	l	s5	1230	crossed 4, raised near margin; alt H24
+L08	1	PLAIN	l	s1	420	surce
+L08	2	PLAIN	m	s1	900	fondement
+L08	3	4TRI	m	s1	1270	4 above triangle
+L08	4	PHI	h	s1	1360	loops on stem
+L08	5	PHI	h	s1	1460	loop on stem
+L08	6	ZBAR	m	s2	175	x-like with bar
+L08	7	PHI	h	s2	240	loop on stem
+L08	8	4STEM	m	s2	370	4 with stem, delta at foot
+L08	9	VBAR_A	m	s2	480	small v
+L08	10	OTHER	l	s2	510	small c-like hook
+L08	11	PHI	h	s2	550	loop on stem
+L08	12	CH	m	s2	620	cursive h-like long hook
+L08	13	PHI	h	s2	720	loops on stem
+L08	14	4STEM	m	s2	820	4 with stem, r-hook
+L08	15	VBAR_A	m	s2	930	small v
+L08	16	PHI	h	s2	1040	loops either side of stem
+L08	17	4STEM	m	s2	1200	4 with stem, delta at foot
+L08	18	CH	m	s2	1300	cursive h-like long hook
+L08	19	PHI	h	s2	1410	dark loop on stem
+L08	20	INF	m	s3	135	two loops on a bar
+L08	21	H24	m	s3	260	curl joined to crossed 4
+L08	22	PHI	h	s3	370	several loops on stem
+L08	23	4STEM	m	s3	470	4 with stem, r-hook
+L08	24	VBAR_A	m	s3	580	small v
+L08	25	HASH4	m	s3	680	dense crossed 4 with stems
+L08	26	PHI	h	s3	800	loop on stem
+L08	27	HASH4	m	s3	900	crossed 4
+L08	28	H24	m	s3	1010	curl joined to crossed 4
+L08	29	PHI	h	s3	1100	loops on stem
+L08	30	PHI	h	s3	1190	loops on stem
+L08	31	OTHER	m	s3	1280	gamma-like open loop
+L08	32	OTHER	m	s3	1350	loop on stem crossed by two bars; alt PHI
+L08	33	4STEM	m	s3	1470	4 with stem, delta at foot
+L08	34	4TRI	m	s4	210	4 above triangle
+L08	35	PHI	h	s4	290	loops on stem
+L08	36	H24	m	s4	380	curl joined to crossed 4
+L08	37	ZBAR	m	s4	490	x-like with bar; colon after
+L08	38	INF	m	s4	610	two loops on a bar
+L08	39	4STEM	m	s4	710	4 with stem, r-hook
+L08	40	PHI	h	s4	800	loops on stem
+L08	41	ISH	l	s4	910	I with bars; alt EBR_B
+L08	42	PHI	h	s4	980	loop on stem
+L08	43	VBAR_A	m	s4	1060	small v
+L08	44	VBAR_A	m	s4	1150	small v
+L08	45	PHI	h	s4	1220	loops on stem
+L08	46	PHI	h	s4	1300	loops on stem
+L08	47	HASH4	m	s4	1420	dense crossed 4
+L08	48	PHI	h	s4	1500	loop on stem
+L08	49	OTHER	m	s5	190	cross/bars above a delta loop
+L08	50	OTHER	m	s5	300	sideways open loops, no bar; alt INF
+L08	51	EBR_B	m	s5	440	squared bracket
+L08	52	4STEM	m	s5	520	4 with stem, delta at foot
+L08	53	HASH4	m	s5	640	dense crossed 4
+L08	54	INF	m	s5	720	two loops on a bar
+L08	55	PHI	h	s5	810	loops on stem
+L08	56	EBR_B	m	s5	890	squared bracket
+L08	57	EBR_B	m	s5	950	squared bracket
+L08	58	PHI	h	s5	1010	loop on stem
+L08	59	PHI	l	s5	1210	loop on stem, raised near right margin

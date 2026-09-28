@@ -1,0 +1,17 @@
+{
+ "anchor_min": 0.72,
+ "anchors": 56,
+ "plain_tokens": 131,
+ "sign_agreement": [
+  936,
+  1206
+ ],
+ "clear_word_agreement": [
+  803,
+  839,
+  842
+ ],
+ "dropped": [
+  "L23"
+ ]
+}

@@ -28,6 +28,7 @@ Grade C for every pair: the meaning is the period decipherer's, nothing is fitte
 import csv, difflib, glob, json, os, re, subprocess, sys, unicodedata
 from collections import Counter, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); ROOT = os.path.abspath(f"{HERE}/../../.."); P = f"{HERE}/passes"
+OPEN_LPS = float(sys.argv[sys.argv.index("--open-lps") + 1]) if "--open-lps" in sys.argv else 1.0
 ANCHOR_MIN = float(sys.argv[sys.argv.index("--anchor-min") + 1]) if "--anchor-min" in sys.argv else 0.72
 LEAF = "fr.3984 f.188r/f.184r"
 def rd(path):
@@ -61,12 +62,24 @@ print(f"SIGN AGREEMENT {agree}/{tot} = {agree/tot if tot else 0:.3f}; bands unde
 draft = rd(f"{P}/recf188r/ciphertext_draft.tsv"); A = rd(f"{P}/f188r_signsA.tsv"); B = rd(f"{P}/f188r_signsB.tsv")
 ax = {(r["line"], int(r["pos"])): r for r in A}; bx = {(r["line"], int(r["pos"])): r for r in B}
 toks = []   # in leaf order: dict(band, kind S/P, val, conf)
+def clean_word(n):
+    n = re.sub(r"\(.*?\)", "", n); n = re.split(r"[;,]", n)[0]
+    n = re.sub(r"^(plain|clear|word)[:\s]+", "", n.strip(), flags=re.I).strip(" '\"")
+    return n.split()[0] if n.split() and len(n.split()) > 2 else n            # a shape description is not a word
+# the draft's 'position' is the aligned column, not pass A's pos (gap columns shift it), so a PLAIN token's word is taken
+# from the passes by ORDER: the k-th PLAIN of the band in the draft takes pass A's k-th PLAIN note (pass B's when A has none)
+plainA = defaultdict(list); plainB = defaultdict(list)
+for r in A:
+    if r["sign"] == "PLAIN": plainA[r["line"]].append(clean_word(r["note"]))
+for r in B:
+    if r["sign"] == "PLAIN": plainB[r["line"]].append(clean_word(r["note"]))
+kseen = Counter()
 for r in draft:
-    line, pos = r["line"], int(r["position"]); a = ax.get((line, pos)); code = r["sign"]
+    line, pos = r["line"], int(r["position"]); code = r["sign"]
     if code == "DASH": continue
     if code == "PLAIN":
-        w = (a["note"].strip() if a else "") or (bx.get((line, pos), {}).get("note", "").strip())
-        w = re.sub(r"^(plain|clear|word)[:\s]+", "", w, flags=re.I).strip(" '\"")
+        k = kseen[line]; kseen[line] += 1
+        w = plainA[line][k] if k < len(plainA[line]) else (plainB[line][k] if k < len(plainB[line]) else "")
         toks.append({"band": line, "kind": "P", "val": w, "conf": r["confidence"]})
     else:
         toks.append({"band": line, "kind": "S", "val": code, "conf": r["confidence"]})
@@ -116,14 +129,33 @@ for i in range(1, NP + 1):
     for j in range(1, W + 1):
         best[i][j], back[i][j] = best[i - 1][j], "up"
         if best[i][j - 1] > best[i][j]: best[i][j], back[i][j] = best[i][j - 1], "left"
-        s = sim(toks[pi[i - 1]]["val"], words[j - 1]["w"])
-        if s >= ANCHOR_MIN and best[i - 1][j - 1] + s > best[i][j]: best[i][j], back[i][j] = best[i - 1][j - 1] + s, "diag"
+        wf = fold(toks[pi[i - 1]]["val"]); s = sim(toks[pi[i - 1]]["val"], words[j - 1]["w"])
+        # anchors are weighted by length: a short function word (de, que, le) matches anywhere and would drift the
+        # monotone path, so words under 3 letters never anchor, 3-letter words need an exact match, longer ones ANCHOR_MIN
+        ok = (len(wf) >= 4 and s >= ANCHOR_MIN) or (len(wf) == 3 and s >= 0.99)
+        if ok and best[i - 1][j - 1] + s * len(wf) > best[i][j]: best[i][j], back[i][j] = best[i - 1][j - 1] + s * len(wf), "diag"
 i, j = NP, W; match = {}
 while i > 0 and j > 0:
     if back[i][j] == "diag": match[pi[i - 1]] = j - 1; i -= 1; j -= 1
     elif back[i][j] == "up": i -= 1
     else: j -= 1
-print(f"anchors: {len(match)}/{NP} clear words of f.188 matched to the clear copy (min similarity {ANCHOR_MIN})")
+# outlier anchors: a junk clear word (a cipher run read as letters) can match a real word many lines away; the anchor set
+# must follow one monotone trend (word index vs token index), so anchors whose residual from a least-squares line through
+# the others exceeds 60 words are dropped one at a time, worst first, and the line refitted
+def refit(m):
+    xs = sorted(m); ys = [m[x] for x in xs]; n = len(xs)
+    if n < 3: return {}
+    mx, my = sum(xs) / n, sum(ys) / n; sxx = sum((x - mx) ** 2 for x in xs) or 1.0
+    b = sum((x - mx) * (y - my) for x, y in zip(xs, ys)) / sxx; a = my - b * mx
+    return {x: m[x] - (a + b * x) for x in xs}
+dropped = []
+while True:
+    res = refit(match)
+    if not res: break
+    worst = max(res, key=lambda x: abs(res[x]))
+    if abs(res[worst]) <= 60: break
+    dropped.append((toks[worst]["val"], words[match[worst]]["w"], round(res[worst]))); del match[worst]
+print(f"anchors: {len(match)}/{NP} clear words of f.188 matched to the clear copy (min similarity {ANCHOR_MIN}); off-trend anchors dropped: {dropped}")
 # ---------- 4. spans: split the clear words between anchors among the token runs in proportion to token count
 assign = [None] * len(toks)          # token index -> (w0, w1) word span for the band piece it belongs to (filled per piece)
 anchors = sorted(match.items())       # (token idx, word idx)
@@ -142,6 +174,14 @@ prev_t, prev_w = -1, -1
 for (ti, wi) in anchors + [(len(toks), W)]:
     if ti < len(toks): band_words[toks[ti]["band"]].append(wi)                  # the anchor word itself
     pcs = pieces(prev_t + 1, ti); wl = list(range(prev_w + 1, wi))
+    # before the first anchor and after the last one the clear copy runs on for the rest of the page: cap those two
+    # open-ended spans at about OPEN_LPS letters per token (default 1.0, --open-lps), counted outward from the anchor (the rest of the page is not ours)
+    if pcs and wl and (prev_t < 0 or ti >= len(toks)):
+        budget = OPEN_LPS * sum(weight(k) for _, ks in pcs for k in ks); keep = []; acc = 0
+        for w_ in (reversed(wl) if prev_t < 0 else wl):
+            if acc >= budget: break
+            keep.append(w_); acc += len(fold(words[w_]["w"]))
+        wl = sorted(keep)
     if pcs and wl:
         tw = sum(weight(k) for _, ks in pcs for k in ks); letters = [len(fold(words[w]["w"])) for w in wl]; L = sum(letters)
         cum_target = 0.0; wpos = 0; assigned = 0
@@ -167,16 +207,17 @@ r = subprocess.run([sys.executable, f"{ROOT}/tools/interlinear_align.py", "align
                     "--code-prefix", "@", "--null-cost", "-1", "--clear-consumes"], capture_output=True, text=True)
 print("interlinear_align:", r.stdout.strip()[-400:], r.stderr.strip()[-300:])
 # per-band checks: letters per sign, underline share, and the drop list
-report = []; drop = set()
+report = []; drop = set(sys.argv[sys.argv.index("--drop") + 1].split(",")) if "--drop" in sys.argv else set()   # --drop L23: bands excluded from the key by hand (a defective crop), listed in KEY.md
 for band in bands:
     widx = sorted(set(band_words[band])); nS = sum(1 for t in toks if t["band"] == band and t["kind"] == "S")
     nP = [t for t in toks if t["band"] == band and t["kind"] == "P"]; anch = sum(1 for k, t in enumerate(toks) if t["band"] == band and k in match)
     cw = [words[i] for i in widx if i not in match.values()]     # words not anchors
     ul = sum(1 for x in cw if x["ul"]); L = sum(len(fold(x["w"])) for x in cw)
-    lps = L / nS if nS else 0.0
+    wt = nS + sum(len(fold(t["val"])) for k, t in enumerate(toks) if t["band"] == band and t["kind"] == "P" and k not in match)
+    lps = L / wt if wt else 0.0        # plain letters per unit of cipher weight (a sign = 1, an unmatched clear word = its letters)
     bad = nS >= 5 and (lps < 0.55 or lps > 1.6)
     if bad: drop.add(band)
-    report.append((band, nS, len(nP), anch, len(cw), L, round(lps, 2), f"{ul}/{len(cw)}", "DROP" if bad else ""))
+    report.append((band, nS, len(nP), anch, len(cw), L, round(lps, 2), f"{ul}/{len(cw)}", "DROP" if band in drop else ""))
 with open(f"{P}/f188r_spans.tsv", "w") as f:
     f.write("band\tsigns\tclear_words\tanchors\tplain_words\tplain_letters\tletters_per_sign\tunderlined\tverdict\n")
     for r_ in report: f.write("\t".join(map(str, r_)) + "\n")

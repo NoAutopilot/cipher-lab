@@ -1,0 +1,24 @@
+value	meaning	n	agree	others
+4PI	d	21	9	a:5,n:2,q:2,e:1,h:1,r:1
+4STEM	n	52	17	a:13,d:3,e:3,s:3,b:2,o:2,r:2,i:1,l:1,m:1,t:1,u:1,x:1,y:1
+4TRI	c	77	24	p:19,n:10,e:6,a:5,s:4,d:3,t:3,m:1,u:1,z:1
+BETA	m	13	9	s:2,a:1,d:1
+C43	n	59	27	a:24,e:2,c:1,d:1,i:1,m:1,p:1,s:1
+C6	e	1	1	
+CA	p	5	2	c:1,s:1,z:1
+CH	m	5	3	n:1,u:1
+EBR_A	g	2	1	l:1
+EBR_B	l	52	43	s:3,a:1,c:1,e:1,o:1,t:1,y:1
+H24	i	55	34	a:3,d:3,j:3,e:2,t:2,l:1,m:1,n:1,o:1,r:1,f:1,x:1,y:1
+HASH4	d	39	12	i:10,q:3,x:3,e:2,n:2,o:2,u:2,a:1,s:1,y:1
+INF	u	42	25	e:4,h:3,l:2,r:2,t:2,a:1,c:1,n:1,p:1
+ISH	l	5	3	a:1,y:1
+LL	e	1	1	
+LOOPBAR	u	1	1	
+LOOPS	u	43	32	r:4,n:2,c:1,e:1,i:1,p:1,f:1
+OTHER	q	42	15	p:4,r:4,s:4,e:3,t:3,c:2,m:2,a:1,d:1,i:1,n:1,u:1
+PHI	e	298	141	r:52,o:37,a:10,b:8,n:8,s:7,t:7,u:6,i:4,q:4,p:3,c:2,d:2,g:2,h:2,m:2,l:1
+RSIGN	n	7	2	s:2,e:1,o:1,p:1
+VBAR_A	t	63	44	e:4,g:3,l:3,c:2,n:2,y:2,d:1,i:1,r:1
+VBAR_B	s	41	33	t:2,c:1,e:1,l:1,o:1,x:1,z:1
+ZBAR	s	47	33	l:3,r:2,z:2,c:1,e:1,i:1,n:1,o:1,t:1,u:1
