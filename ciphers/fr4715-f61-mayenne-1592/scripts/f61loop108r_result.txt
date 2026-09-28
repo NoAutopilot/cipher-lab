@@ -1,0 +1,46 @@
+H108 loop classification: controls 13/18 on H26's side; GATE (>= 15/18): FAIL
+control tile 1 f61sheetB_L03/2 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 3 f61sheetB_L10/3 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 5 f108sheetB_L03/10 H26 G1 -> 'trefoil or clover of three (one loop above two)' ok
+control tile 9 f108sheetB_L02/1 H26 G1 -> 'trefoil or clover of three (one loop above two)' ok
+control tile 10 f61sheetB_L07/1 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 13 f61sheetB_L11/1 H26 G1 -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 16 f108sheetB_L03/12 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 20 f61sheetB_L08/6 H26 G1 -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 21 f61sheetB_L08/2 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 22 f61sheetB_L10/4 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 25 f61sheetB_L05/2 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 26 f108sheetB_L03/13 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 27 f61sheetB_L11/2 H26 G1 -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 28 f61sheetB_L08/1 H26 G1 -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 32 f61sheetB_L11/4 H26 G2 -> 'two side by side at the top of the stem with nothing above' ok
+control tile 34 f108sheetB_L02/4 H26 G1 -> 'trefoil or clover of three (one loop above two)' ok
+control tile 38 f61sheetB_L03/1 H26 G1 -> 'two side by side at the top of the stem with nothing above' MISS
+control tile 40 f61sheetB_L05/4 H26 G1 -> 'trefoil or clover of three (one loop above two)' ok
+target L04/5: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/6: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/7: draft PHI -> 'other: blotted cluster' -> PHI
+target L04/8: draft OTHER -> 'two side by side at the top of the stem with nothing above' -> OTHER
+target L04/11: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/13: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/14: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/15: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/17: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/18: draft PHI -> 'two side by side at the top of the stem with nothing above' -> PHI
+target L04/21: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/24: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L04/26: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L05/7: draft LOOPSTEM1 -> 'other: single loop crossed by a slanted stroke, with a curved hook below and a tail to the right' -> LOOPSTEM1
+target L05/8: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L05/10: draft OTHER -> 'two side by side at the top of the stem with nothing above' -> OTHER
+target L05/17: draft PHI -> 'trefoil or clover of three (one loop above two)' -> PHI
+target L05/19: draft OTHER -> 'two side by side at the top of the stem with nothing above' -> OTHER
+target L06/4: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/6: draft SBS -> 'two side by side at the top of the stem with nothing above' -> SBS
+target L06/9: draft SBS -> 'two side by side at the top of the stem with nothing above' -> SBS
+target L06/14: draft SBS -> 'other: three small loops in a horizontal row at top of stem' -> SBS
+target L06/16: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/19: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/25: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+target L06/37: draft DBL -> 'trefoil or clover of three (one loop above two)' -> DBL
+relabel summary: DBL->DBL:5 LOOPSTEM1->LOOPSTEM1:1 OTHER->OTHER:3 PHI->PHI:14 SBS->SBS:3

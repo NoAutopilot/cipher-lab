@@ -2381,3 +2381,47 @@ single-swap level" -- the one-swap null on f.108v is UNTESTED (H111 reruns it wi
 f.108v: H85 (3/3, inline), H94 (inline), H93 (4-gram on those inline verdicts), H101, H106. The failure is the runner's
 delivery instruction ("write your TSV to the file"), which invited a tool-using judge to script; later judge prompts
 return the verdict inline only. No reading, no class change.
+
+## Campaign step H108 (28 Sept 2026, 17:17-17:28 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+Fair input for the f.108r L04-L06 prediction (H107 failed its gate on an uncorrected pass A with L06 half cut). Row amended
+before any call (CAMPAIGN.md H108, `scripts/PROMPTS.md` "H108", pushed 833a6435): four Opus vision calls, the judge rerun
+moved to H112.
+
+**Re-cut.** The H34 region (y 450-1170 of canvas 195) cuts L06 through its lower half, so both H34 passes graded every
+L06 sign l ("top only"). One Gallica IIIF request (200, `images/requests_h34.log`) fetched the strip y 1050-1310
+(`images/src_ark_12148_btv1b9059406b_f195_1250_1050_3600_260.jpg`); its 120-px overlap with the H34 region is
+pixel-identical (mean abs diff 0.0; 38.1 at a 10-px shift), stitched to `images/stitch_f108r_f195_1250_450_3600_860.jpg`
+and L06 re-cut whole with the H34 cutter parameters (`images/f108h/`, 4 crops; the L04/L05 boxes come out identical to
+the H34 cut, so their passes stand).
+
+**Calls 1-2: two blind passes of L06 on the whole row** (`scripts/pass108hC_L06.tsv`, `pass108hD_L06.tsv`; each read
+the atlas and the four crops only, no script): 40 signs each, 34/40 columns identical (the half-cut H34 passes had
+agreed on none of L06 at better than l).
+
+**Call 3: reconciliation** (`scripts/f61recon108r.py task|apply`, `f61recon108r_task.tsv`, `_verdict.tsv`, `_draft.tsv`,
+`_result.txt`; `apply --check` fresh). 85 aligned columns (L04 26, L05 19, L06 40, PLAIN dropped), 11 to settle: h 1,
+m 9, l 1, none 0. Still flagged 1/85 = 0.012 -> **draft gate (the H59 gate, <= 10%) PASS**. Stated alongside: 12 L06
+columns are agreed by both passes but both at l (agree-flagged, not settled by the pre-registered rule), so 13/85 = 15%
+of the draft is grade L; L04 and L05 carry no L beyond the one flagged column. Inventory PHI 14, ZHOOK 10, HASH4 10,
+VBAR_A 8, BETA 7, 4STEM 6, DBL 5, INF 4, 4PI 4, C43 4, OTHER 3, SBS 3, ISH 3, others 1 each.
+
+**Call 4: loop-arrangement classification on tiles** (`scripts/f61loop108r.py build|score`, sheets `images/h108/`,
+key `scripts/f61loop108r_tiles.tsv` never named, reply verbatim `scripts/read_call_H108.tsv`; the reader read the five
+sheets only). 26 target tiles (every PHI/DBL/SBS/LOOPSTEM1/OTHER of the draft) and 18 controls from H26's own sort
+(9 G2 side-by-side, 9 G1/G3; all tiles greyed and contrast-stretched so the f.61 colour sheets do not stand out).
+Controls **13/18 on H26's side -> gate (>= 15/18) FAIL, so no relabel is applied**, as pre-registered. The misses are
+one-sided: G2 9/9 right; G1/G3 4/9, and all five misses are f.61-hand trefoils called "two side by side" (the f.108 G1
+controls 3/3 right). So at this tile scale the reader cannot be trusted to see a trefoil's small top loop in the f.61
+hand; whether it can in the f.108 hand is untested at 5 controls (a per-leaf breakdown, not a pass). For the record only
+(not applied): the reader put the three draft OTHER signs described by the passes as "two loops side by side" (L04/8,
+L05/10, L05/19) and PHI L04/18 in "side by side", the three draft SBS on L06 two side by side and one "three small loops
+in a row", and all five L06 DBL and 12 of 14 PHI in "trefoil".
+
+**What this leaves for H112.** The corrected input is the reconciled draft (`f61recon108r_draft.tsv`) without a loop
+relabel from this call: OTHER, DBL and LOOPSTEM1 are outside the 14-cell map and would drop, as HASH4 does. H112 must
+pre-register, before its build, how the draft's DBL is rendered; H26's own result (the stacked figure-8 G3 = e/r, 5/5,
+f.108 only) is the established rule for it, independent of this call's failed gate. No reading, no class change.
+
+Files: as named above; `images/regen_f61r_sheets.sh` unchanged (the H108 stanza is the commands in this section).
+Vision calls: 4 of 4. Requests: Gallica 1. No credentials, no AskUserQuestion; the owner not named.
