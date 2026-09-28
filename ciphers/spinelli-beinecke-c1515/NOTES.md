@@ -729,3 +729,24 @@ passage of the September letter (Tomokiyo's crib), though it locates nothing.
 
 **Requests:** collections.library.yale.edu 4. No credentials, no AskUserQuestion, rule 10 wording, no other target
 touched. **Cost:** recorded as 0.3 USD (est 0.5).
+
+## Campaign step H20, batch 1 (28 Sept 2026, 00:39-00:42 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H20: a cipher census of the digitised 86-letter Tommaso bundle
+(catalog 17296147, b. 126 ff. 2566-87). Manifest fetched (`images/manifest_17296147.json`): **62 canvases, no
+labels**, mixed sizes -- nine wide canvases (about 4400-5350 x 2900-3980: nos. 8, 21, 23, 35, 37, 46, 49, 51, 59)
+between runs of portrait pages, i.e. folder covers or openings between letter runs. Canvases 1-5 fetched at 800px
+into `images/bundle17296147/` (5 requests):
+- c1 (17296293): the archival folder cover, pencilled "Box 126, Folder 2566 ... (3) Spinelli, Tommaso 1492-93" -- the
+  first folder holds three letters of 1492-93;
+- c2 (17296294): a full page of plain Italian, dated "... octobris MCCCCLXXXXII" and signed "Vr fr Tommaso Spinelli";
+  c3 (17296295): its address side, "Ven. Dno Leonardo ... canonico Flor[entino] honorando", Florence; no cipher;
+- c4 (17296296): a full page of plain Italian, dated "in Anversa adi xiij di luglio MCCCCLXXXXIII", signed the same;
+  c5 (17296297): its address side, "Ven. Domino Leonardo Spinelli canonico Floren[tino]"; no cipher.
+So the digitised run begins with the 1492-93 folder, in chronological order; the cipher years (1515 onward, per
+Domnina) sit further in, if the 62 images reach them at all. **Next batch: the wide canvases first** (8, 21, 23, 35,
+37, then 46, 49, 51, 59), since each is a folder cover pencilled with its folio range and dates -- nine requests map the
+whole bundle's chronology and say which portrait pages to look at for cipher, instead of paging through all 57.
+
+**Requests:** collections.library.yale.edu 6 (manifest + 5 images). No credentials, no AskUserQuestion, rule 10
+wording, no other target touched. **Cost:** recorded as 0.3 USD (of est 3 for the whole census).
