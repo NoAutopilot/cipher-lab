@@ -1,0 +1,172 @@
+crop	pos	group	gloss	conf	note
+1	1	312	-	low	slash-like stroke read as 1, could be 3/2
+1	2	1589	stated	medium	gloss alignment approx
+1	3	69	in	medium	short gloss fits above
+1	4	1851	-	medium	-
+1	5	618	the	low	gloss alignment approx
+1	6	951	-	medium	-
+1	7	12	accompany	low	group cut at page/right edge, edge
+2	1	1362	-	high	-
+2	2	66	official	medium	gloss alignment approx
+2	3	133	letter	medium	gloss alignment approx
+2	4	1526	-	high	-
+2	5	227	-	high	-
+3	1	NONE	-	high	target line is plain text, no groups
+4	1	1362	were	low	gloss alignment approx
+4	2	672	attended	low	gloss alignment approx
+4	3	742	-	medium	small mark above digits, possibly insertion caret not a digit
+4	4	1586	-	high	-
+4	5	408	his	low	gloss alignment approx
+4	6	315	step	low	gloss alignment approx
+4	7	1230	-	high	-
+4	8	1351	-	high	-
+4	9	1411	-	high	-
+5	1	103	anticipate	medium	gloss left-aligned above
+5	2	1143	-	high	-
+5	3	1147	-	high	-
+5	4	632	-	high	-
+5	5	1298	-	high	-
+5	6	1027	be	low	gloss alignment approx, faint
+5	7	1651	the	low	gloss alignment approx, faint
+5	8	447	-	medium	-
+5	9	968	beginning	low	digits and gloss both faint/cut near right margin
+6	1	1107	-	high	small caret mark above, insertion mark not digit
+6	2	543	-	high	-
+6	3	66	effects	low	gloss alignment approx
+6	4	970	-	high	-
+6	5	1487	-	medium	-
+6	6	133	on	low	gloss alignment approx
+6	7	624	a	low	digit shape resembles A/4, read as 624; gloss alignment approx
+6	8	356	visit	low	gloss alignment approx
+6	9	1481	to	low	gloss alignment approx
+6	10	244	this	low	digit shape resembles A/4, read as 244; gloss alignment approx
+6	11	884	-	medium	-
+7	1	134	offers	low	gloss alignment approx
+7	2	525	-	high	-
+7	3	718	most	low	gloss alignment approx
+7	4	1246	plausible	low	gloss alignment approx
+7	5	381	plea	low	gloss alignment approx
+7	6	1144	-	medium	-
+7	7	1511	-	high	-
+8	1	470	for	low	digit shape resembles A/4, read as 470; gloss alignment approx
+8	2	324	such	low	digit shape resembles A/4, read as 324; gloss alignment approx
+8	3	624	a	low	digit shape resembles A/4, read as 624; gloss alignment approx
+8	4	356	visit	low	gloss alignment approx
+8	5	1481	the	low	gloss alignment approx
+8	6	1651	emperor	low	gloss alignment approx
+8	7	738	-	medium	-
+9	1	1578	that	low	gloss alignment approx
+9	2	916	at	low	gloss alignment approx
+9	3	1651	the	low	gloss alignment approx
+9	4	1661	prince	low	gloss alignment approx
+9	5	133	of	low	gloss alignment approx
+9	6	200	asturias	low	gloss alignment approx
+9	7	380	-	medium	-
+9	8	1146	-	medium	small superscript mark (ordinal-like "a") after number, not treated as gloss
+10	1	604	charged	low	gloss alignment approx
+10	2	967	with	low	gloss alignment approx
+10	3	1407	their	low	gloss alignment approx
+10	4	1651	blacke	low	gloss alignment approx
+10	5	209	crime	low	gloss alignment approx
+10	6	262	-	medium	-
+10	7	1685	-	medium	small mark under last digit, likely period
+10	8	651	-	high	-
+10	9	1298	of	low	gloss alignment approx
+10	10	133	treason	low	gloss alignment approx
+10	11	189	-	medium	tiny mark at top right page edge, likely unrelated folio numeral, ignored
+11	1	1201	against	medium	gloss aligns above
+11	2	408	his	medium	gloss aligns above
+11	3	168	father	medium	gloss aligns above
+11	4	874	he	medium	gloss aligns above
+11	5	926	-	high	-
+12	1	77	finish	low	sequential gloss guess
+12	2	74	on	low	sequential gloss guess
+12	3	1362	france	low	sequential gloss guess
+12	4	133	till	low	sequential gloss guess
+12	5	1290	he	low	sequential gloss guess
+12	6	252	had	low	sequential gloss guess
+12	7	1521	been	low	sequential gloss guess
+12	8	926	paid	low	sequential gloss guess
+12	9	723	-	medium	-
+12	10	1164	-	medium	small mark after digits, likely period
+12	11	709	-	medium	-
+12	12	38	-	medium	-
+11	6	1494	alleging	low	row appears fully in the gloss/context zone below crop11's own guides and above crop12's guides, never squarely inside any single crop's target band; included here per cross-check instruction
+11	7	66	him	low	cross-check row, see note pos6
+11	8	1114	by	low	cross-check row, see note pos6
+11	9	1686	marriage	low	cross-check row, see note pos6
+11	10	463	to	low	cross-check row, see note pos6
+11	11	642	the	low	cross-check row, see note pos6; bold/retraced digit "2"
+11	12	960	royal	low	digit shapes unclear (looks like "g6o"), cross-check row, see note pos6
+11	13	244	-	low	digit shape resembles A/4, read as 244; cross-check row, see note pos6
+11	14	1651	-	high	cross-check row, see note pos6
+11	15	148	-	medium	cross-check row, see note pos6
+11	16	1362	-	high	cross-check row, see note pos6
+13	1	885	acquitted	low	sequential gloss guess
+13	2	1589	from	low	sequential gloss guess
+13	3	704	that	low	digit shape resembles A/4, read as 704; sequential gloss guess
+13	4	1578	charge	low	sequential gloss guess
+13	5	269	-	medium	-
+14	1	921	held	low	sequential gloss guess; inline "to me will be" precedes numbers, not a group
+14	2	276	out	low	sequential gloss guess
+14	3	916	as	low	sequential gloss guess
+14	4	624	a	low	digit shape resembles A/4, read as 624; sequential gloss guess
+14	5	1588	temptation	low	sequential gloss guess
+14	6	1593	to	low	sequential gloss guess
+14	7	244	the	low	digit shape resembles A/4, read as 244; sequential gloss guess
+14	8	1651	-	high	-
+15	1	133	at	medium	gloss aligns above, within target band
+15	2	628	peace	medium	gloss aligns above, within target band
+15	3	244	to	low	digit shape resembles A/4, read as 244; gloss alignment approx
+15	4	1473	keep	medium	gloss aligns above, within target band
+15	5	938	him	medium	gloss aligns above, within target band
+15	6	1114	-	high	-
+15	7	252	-	high	-
+15	8	1521	-	high	-
+15	9	1657	-	medium	-
+15	10	139	-	high	-
+16	1	139	at	medium	gloss aligns above, within target band
+16	2	1497	the	low	digit shape resembles A/4, read as 1497
+16	3	133	emperor	medium	gloss aligns above, within target band
+16	4	1651	-	high	-
+16	5	738	-	high	-
+17	1	691	-	high	-
+17	2	102	-	high	-
+17	3	880	-	high	-
+17	4	305	-	medium	trailing dash/period mark
+17	5	1183	-	high	-
+17	6	1411	-	low	digit shape resembles A/4, read as 1411
+17	7	1027	-	high	-
+17	8	301	-	high	-
+17	9	594	-	medium	small mark above last digit, possibly superscript ordinal
+18	1	1114	-	high	-
+18	2	926	he	low	gloss alignment approx
+18	3	1114	himself	low	gloss alignment approx
+18	4	1419	-	low	digit shape resembles A/4, read as 1419
+18	5	1680	-	high	-
+18	6	1027	-	high	-
+18	7	1219	-	medium	-
+19	1	310	-	high	-
+19	2	1158	-	high	-
+19	3	250	-	high	-
+19	4	1578	-	high	-
+19	5	92	-	low	group cut at right crop edge, edge
+20	1	1027	been	low	sequential gloss guess
+20	2	737	offered	low	sequential gloss guess
+20	3	134	to	low	sequential gloss guess; bold/retraced digit "4", insertion mark
+20	4	975	the	low	sequential gloss guess
+20	5	624	kingdom	low	digit shape resembles A/4, read as 624; sequential gloss guess
+20	6	1524	and	low	digit shape resembles A/4, read as 1524; sequential gloss guess
+20	7	1136	disavowed	low	sequential gloss guess
+20	8	1343	-	high	-
+20	9	1451	-	medium	small mark after digits, likely period
+21	1	120	-	high	-
+21	2	975	-	high	-
+22	1	463	marriage	medium	gloss aligns above, within target band
+22	2	642	proposed	medium	gloss aligns above, within target band
+22	3	968	-	high	-
+22	4	1642	-	high	-
+22	5	578	-	high	-
+22	6	1481	-	high	-
+22	7	424	-	high	-
+23	1	NONE	-	high	target band is blank, bottom edge of the leaf, no text

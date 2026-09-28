@@ -3,3 +3,20 @@ crop	pos	group	gloss	conf	note
 2	1	NONE	-	high	blank target band, heading area
 3	1	NONE	-	high	heading: Private No 29 / James Madison line
 4	1	NONE	-	high	heading: James Madison / In the Cypher of the Legation
+5	1	NONE	-	high	heading: Duplicate line
+6	1	NONE	-	high	blank band between Duplicate and Madrid date line
+7	1	NONE	-	high	heading: Madrid Dec 22 1809 date line
+8	1	NONE	-	high	In my last unofficial letter which was dated - no numerals
+9	1	133	-	high	project 133.
+9	2	1651	-	high	project 133. 1651.
+9	3	738	-	high	1651. 738.
+10	1	1651	he	medium	tiny 'he' above, respect to 1651.
+10	2	739	-	high	1651. 739.
+10	3	1154	-	high	739. 1154.
+11	1	1651	-	medium	on the subject; it is somewhat remarkable however 1651. (numbers sit low in band, per line11)
+11	2	738	-	medium	however 1651. 738.
+11	3	704	-	medium	should be so long 704.
+11	4	414	-	medium	704. 414.
+11	5	915	com	low	faint cursive gloss 'commanding' split over 915/469/1453; digits clear, gloss syllable uncertain
+11	6	469	mand	low	see note on 915; syllable 2 of 'commanding'
+11	7	1453	ing	low	see note on 915; syllable 3 of 'commanding'; digits confirmed 1453 not 1953

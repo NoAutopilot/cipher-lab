@@ -1,1 +1,72 @@
 crop	pos	group	gloss	conf	note
+f428L_L01	1	NONE	-	high	blank band, no text
+f428L_L02	1	NONE	-	high	blank band; gloss/number row visible only below guide, belongs to L03
+f428L_L03	1	1481	it	high	-
+f428L_L03	2	926	he	high	-
+f428L_L03	3	1280	may	high	-
+f428L_L03	4	1027	be	high	-
+f428L_L03	5	1118	here	high	-
+f428L_L03	6	15?6	however	low	3rd digit unclear, cursive shape between 5/9/A
+f428L_L04	1	NONE	-	high	prose only: with respect to the present affairs of this country a[nd]
+f428L_L05	1	NONE	-	high	prose only: the future prospects of its government; nothing can be
+f428L_L06	1	NONE	-	high	prose only: said on which any considerable reliance is to be place[d]
+f428L_L07	1	NONE	-	high	prose only: because in all probability the Emperors plans must be
+f428L_L08	1	NONE	-	high	prose only: changed or varied according as new circumstances presen[t]
+f428L_L09	1	NONE	-	high	prose only: themselves; nor is likely that he communicates more of
+f428L_L10	1	NONE	-	high	prose only: his intentions to his ministers or agents than is necess[ary]
+f428L_L11	1	NONE	-	high	prose only: for present operations. Thus I find that the opinions of
+f428L_L12	1	NONE	-	high	prose only: the best informed people here are continually fluctuat[ing]
+f428L_L13	1	NONE	-	high	prose only: & are regulated by the most trifling circumstances / Ambassador, Every
+f428L_L14	1	NONE	-	high	prose only: Every word which falls from the Ambassador; ... supposed to be of importance
+f428L_L15	1	NONE	-	high	prose only: movement or gesture is supposed to be of importance
+f428L_L16	1	NONE	-	high	prose only: in fact generally speaking no calculation ought to be m[ade]
+f428L_L17	1	NONE	-	high	prose only: on any thing which comes from a man in his situat[ion]
+f428L_L18	1	408	-	high	no gloss visible above; full sentence line "yet there are moments in which 408. 1020. 1481. 1362"
+f428L_L18	2	1020	-	high	-
+f428L_L18	3	1481	-	high	matches code 1481 seen glossed "it" in L03
+f428L_L18	4	1362	-	medium	right edge of crop, slant raises it near bottom guide
+f428L_L19	1	9?	-	low	first group of line, near left margin/gutter, 2nd digit unclear
+f428L_L19	2	525	-	high	-
+f428L_L19	3	1114	-	medium	4th char is A-shaped glyph, read as cursive 4 (cf. 1424 in L21)
+f428L_L19	4	422	-	medium	1st char is A-shaped glyph, read as cursive 4 (cf. 1424 in L21)
+f428L_L19	5	69	-	high	-
+f428L_L19	6	781	-	high	-
+f428L_L19	7	?52	-	low	1st digit obscured by faint bleed-through text from verso ("industry"-like ghost)
+f428L_L19	8	424	-	medium	-
+f428L_L19	9	255	-	high	-
+f428L_L19	10	1358	-	high	line continues "after[wards]" beyond crop edge
+f428L_L20	1	1?7	-	low	line reads: some dispatches just received from Italy he said "1?7." middle digit ambiguous (5 or 9)
+f428L_L21	1	723	had	medium	line: "queen of Etruria [had]723. [followed]803. 1424. 975. [my]595 [advice]1698. 656."
+f428L_L21	2	803	followed	high	-
+f428L_L21	3	1424	-	medium	4th char A-shaped glyph read as cursive 4
+f428L_L21	4	975	-	high	-
+f428L_L21	5	595	my	medium	gloss "my" above, underlined in ms
+f428L_L21	6	1698	advice	medium	gloss "advice" above; small circle over 9 likely flourish not digit
+f428L_L21	7	656	-	medium	right edge, continues from L20's context row
+f428L_L22	1	1370	she	medium	line: "there. [she]1370. [would]217. [not]553. [be]1027. 69. 11[cut]"
+f428L_L22	2	217	would	low	gloss inference based on word-per-number pattern; alignment not fully certain
+f428L_L22	3	553	not	low	gloss inference based on word-per-number pattern; alignment not fully certain
+f428L_L22	4	1027	be	low	gloss inference based on word-per-number pattern; alignment not fully certain
+f428L_L22	5	69	-	medium	-
+f428L_L22	6	11	-	low	edge; cut by right margin, continues into L23 context, likely a longer number
+f428L_L23	1	1462	-	medium	line: "he was ambassador 1462. 1497. 1147. 986. 244. 526. 1023. 1119"
+f428L_L23	2	1497	-	medium	trailing flourish/mark above 97 treated as decorative not digit
+f428L_L23	3	1147	-	low	3rd char ambiguous cursive glyph (resembles 4/A as elsewhere)
+f428L_L23	4	986	-	low	could be 906; 2nd digit unclear
+f428L_L23	5	244	-	high	-
+f428L_L23	6	526	-	high	-
+f428L_L23	7	1023	-	high	-
+f428L_L23	8	1119	-	medium	right edge of crop
+f428L_L24	1	792	-	high	line: "792. 531. 742. 248. [caret ins. "advice"?]47."
+f428L_L24	2	531	-	high	-
+f428L_L24	3	742	-	high	-
+f428L_L24	4	248	-	high	-
+f428L_L24	5	?47	advice	low	preceded by caret insertion mark with tiny gloss "advice" above; leading digit(s) obscured/uncertain, may not be a true code group
+f428L_L25	1	1207	in	low	line: "in 1207 to 133. 595. 1696. 982. 1370. 217. ally 11[cut]"; baseline sits high in target band near top guide, blank paper below to page edge
+f428L_L25	2	133	to	low	-
+f428L_L25	3	595	-	medium	-
+f428L_L25	4	1696	-	medium	small mark over 9 likely flourish not digit
+f428L_L25	5	982	-	medium	-
+f428L_L25	6	1370	-	medium	repeats value seen in L22 group1; plausible code reuse
+f428L_L25	7	217	ally	low	repeats value seen in L22 group2
+f428L_L25	8	11	-	low	edge, cut by right margin, note "ally" gloss/word precedes it, likely continues to longer number
