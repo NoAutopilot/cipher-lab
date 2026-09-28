@@ -2,7 +2,7 @@ target: espagnol142-mercy-1648
 goal: raise the existing counted reading (N3, key ours, two audits V6-MERCY/V6-MERCY2 25 Sept 2026; 496 of 522 tokens at S, 26 at M) to a completed reading with a period key (the Brussels register, ASKS 82) and N4 after the editions check
 started: 2026-09-27 20:29 UTC
 daily_budget_usd: 240
-spent_today_usd: 103.68
+spent_today_usd: 104.18
 spent_day: 2026-09-28
 key_known: partial (key.tsv is ours, cryptanalytic, S-grade, N3 after two audits; no period key found -- Brussels SEE "chiffres 1647-98" register, DECODE 958-965, Gayangos all checked, NOTES.md MERCY-KEY)
 crib_available: partial (the letter's own clear-text opening and interspersed clear words, reading.txt r01-r03; no separate decipherment or copy found)
@@ -151,8 +151,8 @@ The header goal as written on 27 Sept was already met before the sprint began: s
 | H76 | 2 | v04 with a free anchor: H46/H55 fixed the start or the end; run tools/crib_list_fit.py over v04:1-v04:19 with --anchor free on the Cartas word list after "por su" (H46), the words before "sera" (H55) and the H74 onomasticon, default floor. | nobody | 0.5 | done | negative: free-anchor list cribs on v04 at most 4 (relation), the read-text chance level (NOTES.md "Campaign step H76") |
 | H77 | 3 | Other names in the reading: the out-of-vocabulary words H14 listed (oulay, eleues, szrfsucmarey, noladirentnonysiiuna, ...) located in the token stream, and each span fitted with tools/crib_list_fit.py against the H74 onomasticon and the 883 Urkunden names (default floor), to see whether any other unread proper name surfaces; candidates only, as H41. | nobody | 1 | done | negative: around "oulay" (r10) best fits 3 (onomasticon) and 2 (Urkunden names); no other name surfaces (NOTES.md "Campaign step H77") |
 | H78 | 3 | A period value for 72 (the crib's one assumption): DECODE access was extended on 28 Sept (H17, DECODE-OPEN); read the other Brussels Secretaría keys of 1640-1660 on DECODE at full size -- SEA inv.nr. 1 keys 941, 944, 946 (H18) and DECODE's own transcription of R961's syllabary 35-468 (D2770) -- for any value of 72, 52, 48 or 65 and for boxed numerals; one login, tools/decode_browser_login.js, at most 4 vision calls on crops of the relevant cells. A table of this office giving 72 = do (or anything else) decides the crib. | nobody | 4 | open |  |
-| H79 | 2 | The 15 April 1648 sibling instruction (Lonchay p.445 n.2: SEE t. LXIV f.16, in clear, H7): check whether the Archives générales du Royaume publish SEE t. LXIV online (search.arch.be / agatha.arch.be inventory and viewer), one catalogue lookup quoting the availability flag (CLAUDE.md access playbook); if images exist, fetch f.16 only. A clear sibling may name the persons at Cleves. | nobody | 1 | open |  |
-| H80 | 1 | The gutter token v04:19 (H12, ASKS 81): fetch Gallica's IIIF info.json for canvas 59 and the full/max image of the right edge of f.22v (the committed images/f22v_canvas59.jpg may be a reduced copy); if the native image shows more of the cut numeral than the crop, read it with the H63 ink method. 2-3 requests. | nobody | 0.5 | running session_01K2B2cTCwujqmMqmGYyE6BY |  |
+| H79 | 2 | The 15 April 1648 sibling instruction (Lonchay p.445 n.2: SEE t. LXIV f.16, in clear, H7): check whether the Archives générales du Royaume publish SEE t. LXIV online (search.arch.be / agatha.arch.be inventory and viewer), one catalogue lookup quoting the availability flag (CLAUDE.md access playbook); if images exist, fetch f.16 only. A clear sibling may name the persons at Cleves. | nobody | 1 | running session_01K2B2cTCwujqmMqmGYyE6BY |  |
+| H80 | 1 | The gutter token v04:19 (H12, ASKS 81): fetch Gallica's IIIF info.json for canvas 59 and the full/max image of the right edge of f.22v (the committed images/f22v_canvas59.jpg may be a reduced copy); if the native image shows more of the cut numeral than the crop, read it with the H63 ink method. 2-3 requests. | nobody | 0.5 | done | negative: the committed f22v image is already native (3546 x 5245 = info.json); the gutter token needs a new capture (H12, ASKS 81) |
 
 ## Log
 
@@ -244,3 +244,4 @@ The header goal as written on 27 Sept was already met before the sprint began: s
 2026-09-28 16:57 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H76 | 0.5 | done: v04 free anchor negative. Next H77.
 2026-09-28 16:58 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H77 | 1 | done: no other name around oulay. New rows: H78 DECODE sibling keys for a period value of 72, H79 AGR online check for SEE t. LXIV f.16, H80 Gallica max-size image of the f.22v gutter.
 2026-09-28 16:58 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | re-rank | 0 | H80 (0.5, 2-3 requests) and H79 (1) moved above H78 (4, DECODE login + vision): this session is past 550k context; H78 is better started by a fresh runner with its own context and login.
+2026-09-28 16:58 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H80 | 0.5 | done: f22v image already native. Next H79.

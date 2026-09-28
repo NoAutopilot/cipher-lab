@@ -2456,3 +2456,10 @@ szrfsucmarey = H41-H74, noladirent... = H46/H55/H76, eleues = Cleues, read) leav
 oulay sepamos"). r10:1-19 ("enosinf?medeoulayse") with a free anchor against the H74 onomasticon (best "infante" /
 "remedio" 3) and the 883 Urkunden names (best "frieden" 2): nothing near the floor (`h77/result.log`). No other proper
 name surfaces by this method. No token, grade or class change.
+
+## Campaign step H80 (2026-09-28 16:58 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** Gallica's IIIF info.json for canvas 59 (ark btv1b10035717h/f59; 1 request)
+gives 3546 x 5245 px, exactly the size of the committed `images/f22v_canvas59.jpg`: the file on disk is already the
+native image, so no larger Gallica image of f.22v's right edge exists to recover the gutter token v04:19. The token
+needs a new capture of the leaf (H12, ASKS 81). No token, grade or class change.
