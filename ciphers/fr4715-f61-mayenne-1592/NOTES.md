@@ -2352,3 +2352,12 @@ together with c/p/d/q (H105). No reading, no class change.
 `scripts/H66_PAGE.md` brought up to H105-H107 (the c/p-d/q non-test, the e/r and a/n softness, the f.108r prediction FAIL
 and its handicap). `scripts/f61_glyph_splits.tsv` needs no change (no new tile test). No new claim.
 
+## F61-FAMILY-7: fr.3641 and fr.4699 leads (28 Sept 2026, 16:12-16:25 UTC)
+
+Detail and evidence in `family/FR3641_FR4699.md`. **fr.3641 f.126r-v** (Gallica btv1b52508089f canvases 269-270; the
+Noyon letter, Reims 4 May 1593, Italian) carries an interlined decipherment but is in a **two-digit figure cipher**
+(e.g. "45 74 46 46 81 75 46 90 75 16 56", about thirty distinct groups in four rows), not the Mayenne polyphonic
+signs: no use for f.61's key. **fr.4699 ff.37 and 41** (Fortia to Roissieu and to La Chapelle, Mayenne's secretaries,
+Lyon 7 Feb 1593, "avec chiffre et déchiffrement") is **not digitised** (no Gallica link in the record; SRU 0 records
+vs 1 for the fr.3641 control), so whether it is in f.61's cipher is undetermined; reproduction request drafted in
+`family/REQUEST_fr4699.md` for the person's card. No glossed signs aligned, no per-leaf key, key v4 untouched.

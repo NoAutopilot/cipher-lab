@@ -44,3 +44,10 @@
 2026-09-28T04:35:38Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060543f/f202/full/full/0/native.jpg	200	5366941	87d4236c51935c77278d8f5b15b971cf0b55d6e6	images/3982_f97r.jpg
 2026-09-28T15:09:14Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060543f/f210/full/full/0/native.jpg	200	5562607	313f92b30f325f332d3b153528b5a54dbdf6fe25	/tmp/claude-0/-home-user-cipher-lab/acb44f3e-38a3-5661-8c3d-bf6e97e630f9/scratchpad/native/3982_f101r.jpg
 2026-09-28T15:09:30Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060633d/f351/full/full/0/native.jpg	200	4325788	d6c5b0a1a14a94d9b8228ac2e99aa9e8869c97d6	/tmp/claude-0/-home-user-cipher-lab/acb44f3e-38a3-5661-8c3d-bf6e97e630f9/scratchpad/native/3984_f188r.jpg
+2026-09-28T16:16:24Z	GET	https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&maximumRecords=10&query=gallica%20all%20%22Fran%C3%A7ais%204699%22	200 28767	-	-	F61-FAMILY-7 SRU
+2026-09-28T16:16:35Z	GET	https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&maximumRecords=10&query=dc.source%20adj%20%22Fran%C3%A7ais%204699%22	200 824	-	-	F61-FAMILY-7 SRU
+2026-09-28T16:16:45Z	GET	https://gallica.bnf.fr/SRU?operation=searchRetrieve&version=1.2&maximumRecords=10&query=dc.source%20adj%20%22Fran%C3%A7ais%203641%22	200 13915	-	-	F61-FAMILY-7 SRU control
+2026-09-28T16:17:02Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52508089f/manifest.json	via gallica_folio.py	-	-	F61-FAMILY-7 manifest
+2026-09-28T16:17:11Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52508089f/f269/full/1200,/0/native.jpg	200	394043	9d228d59e357188ff08c5d49e3b82f2448c9cf14	images/fr3641/f269_1200.jpg
+2026-09-28T16:17:17Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52508089f/f270/full/1200,/0/native.jpg	200	397916	ba7c770c72fa862112e50d860fc7cd406dd6ebee	images/fr3641/f270_1200.jpg
+2026-09-28T16:17:47Z	GET	https://gallica.bnf.fr/iiif/ark:/12148/btv1b52508089f/f269/500,850,3000,750/full/0/native.jpg	200 456292	34971a67bfe7a6a97d983956d8311f87ca573c5d	images/fr3641/f269_native_rows1-4.jpg
