@@ -85,7 +85,7 @@ above is on the numeric groups only (the shorthand runs and the marks are untouc
 **Requests:** none (0 to any host). **Cost:** one Fable session, about 16 minutes by the clock (date -u at 02:37), no subagent; the row's estimate
 (2 USD) is what PLAN.md records; the real figure is the orchestrator's to read from get_session.
 
-## Step B2 (28 Sept 2026, 02:40-02:5x UTC) -- which hierarchical layout reproduces B1? None of six; the column profile is the discriminating unknown
+## Step B2 (28 Sept 2026, 02:40-02:43 UTC) -- which hierarchical layout reproduces B1? None of six; the column profile is the discriminating unknown
 
 **Method.** `b2/designs.py`: six generative layouts encoded on en18 text (60 windows of 369 coded tokens per design,
 words outside the design's vocabulary dropped as the target's shorthand-run wildcards), scored with B1's statistics
@@ -139,5 +139,30 @@ The cheap Bf-style simulations cannot separate them (they have no notion of cont
 surviving design rather than re-tuned (rule 3's repeated-attempt clause).
 
 **What this is not.** No reading, no key, no class change; the simulations are en18 English, so a French plaintext or
-a syllabic root set is not addressed here. Requests: none. Cost: one Fable session, about 15 minutes by the clock, no
-subagent; PLAN.md records the row's 3 USD estimate.
+a syllabic root set is not addressed here. Requests: none. Cost: one Fable session, about 4 minutes by the clock (02:40-02:43, the ROOM done line's '02:58' is a typing error), no subagent;
+PLAN.md records the row's 3 USD estimate.
+
+## Step B2b (28 Sept 2026, 02:44-02:50 UTC) -- operator digit vs grid slot by context similarity: CONTROL BELOW GATE, non-test
+
+**Method.** `b2b/context_sim.py`: every group parsed as (row, form); each distinct value's context = a 12-cell histogram
+of the classes of its left and right neighbours (bare head, 3-digit, 4-digit, single digit, shorthand run, line edge);
+statistic = the count-weighted mean over the 51 rows with two or more forms of the pairwise similarity (1 - JSD) between
+the row's forms; null = row labels permuted among values of the same tier and count bin (2,000 draws). Gate,
+pre-registered in the docstring: positive control (en18 letters encoded with a real stem + suffix-class grammar,
+design A of B2, 3 seeds) above its own null p95 on 3 of 3 seeds, negative control (B2's Bf layout, different words per
+row) not, before the target is read.
+
+| letter | rows >= 2 forms | statistic | null mean | null p95 | percentile |
+|---|---|---|---|---|---|
+| positive: stem grammar seed 0 / 1 / 2 | 21 / 30 / 30 | 0.606 / 0.518 / 0.552 | 0.549 / 0.488 / 0.544 | 0.629 / 0.561 / 0.596 | 87.5 / 74.8 / 59.6 |
+| negative: Bf buckets seed 0 / 1 / 2 | 51 / 51 / 40 | 0.455 / 0.445 / 0.404 | 0.479 / 0.451 / 0.427 | 0.511 / 0.488 / 0.462 | 9.8 / 39.4 / 12.2 |
+| target (printed by the script, NOT licensed by the gate) | 51 | 0.372 | 0.358 | 0.382 | 82.8 |
+
+**Result: GATE NOT MET (positives at the 60th-88th percentile of their own null, 0 of 3 above p95).** Six neighbour
+classes on either side of a token carry too little information at 369 tokens to tell inflected forms of one word
+from different words in one bucket; the negative control behaves as it should (below its null), so the instrument
+points the right way but has no power at this N. Per rule 3 the target's own number (pct 82.8) is not read as
+evidence; the operator-vs-grid question is logged **untestable by this instrument at N=369**, not answered, and is not
+re-run with a finer class set or another knob (rule 3's repeated-attempt clause: a genuinely different instrument or
+new material is needed -- the two readings differ in what the rows MEAN, which a key, a second letter or a decode
+would settle at once). Row dropped (non-test). Requests: none; no subagent; about 6 minutes by the clock.
