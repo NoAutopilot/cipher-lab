@@ -2049,3 +2049,70 @@ change; rule 10 wording. **Files:** `passes/h41_pass{Q,R}.tsv`, `passes/build_v7
 `passes/ciphertext_v7.txt`, `keys/key_domnina_2016_atlasmap_v7.tsv`. **Cost:** 2 Opus vision calls (about 240k tokens)
 plus this runner's turns -- recorded as 5.0 USD (the est). No requests, no credentials, no AskUserQuestion, no other
 target touched.
+
+## Campaign step H42 (28 Sept 2026, 14:1x-14:2x UTC) -- a word-segmented reading of the v6 decode, with a matched control
+
+Runner 4, session_01MHf6EKHuvKLG8nh18jCwqR (replaces runner 3, which left H42 `running` at about 06:40 UTC with nothing
+pushed; row reset and retaken). Hypothesis H42: word breaks, per-word grades and an English gloss for the v6 decode
+(`reading.txt`), a presentation step for the verifier -- no key change, no re-scoring of the decode itself.
+
+**Method.** `passes/h42_build.py` writes two texts in the same format (letters per cipher line, nulls dropped, `?` for an
+unkeyed sign, the per-letter grade row under each line): REAL = `reading_tokens.tsv` as decoded; CTRL = the same tokens
+with the letter values permuted among the 40 letter-bearing sign codes (seed 42, 1 fixed point; nulls, `?` positions and
+grades kept) -- H39's shuffled-key design, here the matched control for a model-in-the-loop reading step (CLAUDE.md rule 3's
+gain-gate paragraph: how much Italian does the same reader "find" in a decode of the same length and grade pattern under a
+wrong key?). One prompt (`passes/h42_prompt_head.txt`: the key's structure, the writer's spelling, the letter's own agreed
+plain context from `corpus/letter_plain_context_agreed_v2.tsv` and `corpus/p2x_plain_agreed.tsv`; Tomokiyo's phrase NOT
+given) was sent to two separate blind Opus calls, labels A and B (`passes/h42_prompt_{A,B}.txt`; which is which in
+`passes/h42_blind_map.json`, A = control). Each tiled every line into spans with a reading, a kind (kept / emended / cont /
+unread) and supplied `[x]`, dropped `{x}` and changed `{x>y}` letters marked; "prefer unread over a forced word".
+`passes/h42_score.py` checks the tiling (both exact) and scores. No vision calls, no requests.
+
+**Result (230 letter-units per text):**
+
+| | REAL (B) | CONTROL (A, shuffled key) |
+|---|---|---|
+| units in words read unchanged | **94 (40.9%)** | 4 (1.7%) |
+| units in emended words | 79 (34.3%) | 0 |
+| units left unread | 57 (24.8%) | 226 (98.3%) |
+| edits (supplied/dropped/changed letters) | 16 | 0 |
+| unchanged words of 3+ letters | 12 | 1 ("item", flagged by the reader itself as a chance match) |
+| per-word grades (rule 4) | H 18, M 9, I 13 | H 1 |
+
+The same reader under the same instructions leaves the wrong-key decode almost wholly unread and reads 41% of the real
+decode's letters as Italian words without changing a letter -- the reading is not something the reader brings to any
+string of this shape. The emended third is where the transcription's known faults sit (H39/H41: dropped, merged and
+unkeyed signs), and every one of those words is graded I.
+
+**The reading as proposed** (`reading_words.tsv`, per word; `{?>x}` = an unkeyed sign resolved by context, grade I):
+
+```
+p1 1  et [.......] {t>c}he ma [...]                          and ... that but ...
+p1 2  [........] non uole a{?>cc}e{?>tt}are [.] la gu-        ... does not want to accept ... the gov-
+p1 3  -b{m}ernat{?>i}one di spagnia [.] {t>c}he [...]         -ernance of Spain ... that ...
+p1 4  d'in{t>c}linatione s{m>i}mos[t]ra al con{?>t}e          of inclination, shows itself (weak) to the Count
+p1 5  palat{?>i}no [...] tal [.....]                          Palatine ... such ...
+p1 6  [.....] caro [...] et trouo la                          ... dear ... and I find the
+p1 7  resolutione d[i] costoro mi[gl]iore                     resolution of these people better
+p1 8  di que{?>st}o el [....] domana [....]                   of this, the ... tomorrow ...
+p2 1  se e bisognio el gu[b]ernatore di bre-                  if there is need, the governor of Bre-
+p2 2  -{u>ss}a anda ha [.........]                            -sse (uncertain) goes, has ...
+```
+
+Two things the reader reached without being told them: (1) Tomokiyo's one printed phrase, "la gubernation d'ispagnia",
+at the p1 2-3 line turn (the reader was given the writer's spelling "gobernatore" from the plain lines, not the phrase)
+-- consistent with H35-H40's phrase placement at edit distance 2; (2) a second "gu[b]ernatore" in the p.[2] block. The
+readings "al conte palatino" (p1 4-5) and "gubernatore di Bressa" (p2 1-2) each rest on an I-graded resolution of a `?`
+sign or a changed letter; they are the reader's proposals, not readings, and are named here only as what a verifier or
+the next transcription step (H43's re-segmentation of p1 1/5 and p2 2) should test -- no identification of persons is
+made by this step. Rule 4 counts, per word: H 18, M 9, I 13 (40 words proposed, 17 spans unread); per letter the decode's
+own grades are unchanged (H 229 / M 22 / U 8 of 259 tokens, `reading.txt`).
+
+**Limits.** One call per text (no second reader on REAL, so the split points and glosses are a single proposal; a second
+blind reader would give a word-level agreement figure); the control's letter frequencies follow the permuted code values,
+not Italian's, so it is the H39 family control, not a frequency-matched one. **Controls:** the shuffled-key text above
+(4 vs 94 unchanged units); both tilings verified exact by script. No class change; rule 10 wording; the words solved /
+first / new not used. **Files:** `passes/h42_build.py`, `passes/h42_prompt_head.txt`, `passes/h42_prompt_{A,B}.txt`,
+`passes/h42_text_{real,ctrl}.txt`, `passes/h42_blind_map.json`, `passes/h42_out_{A,B}.tsv`, `passes/h42_score.py`,
+`passes/h42_score.json`, `reading_words.tsv`. **Cost:** 2 Opus text calls (about 186k tokens) plus this runner's turns --
+recorded as 2.0 USD (the est). No requests, no vision calls, no credentials, no AskUserQuestion, no other target touched.

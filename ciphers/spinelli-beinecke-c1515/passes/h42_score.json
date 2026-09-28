@@ -1,0 +1,32 @@
+{
+ "ctrl": {
+  "kept": 4,
+  "emended": 0,
+  "unread": 226,
+  "edits": 0,
+  "words_kept3": 1,
+  "units": 230,
+  "kept_share": 0.017,
+  "emended_share": 0.0,
+  "unread_share": 0.983,
+  "word_grades": {
+   "H": 1
+  }
+ },
+ "real": {
+  "kept": 94,
+  "emended": 79,
+  "unread": 57,
+  "edits": 16,
+  "words_kept3": 12,
+  "units": 230,
+  "kept_share": 0.409,
+  "emended_share": 0.343,
+  "unread_share": 0.248,
+  "word_grades": {
+   "H": 18,
+   "I": 13,
+   "M": 9
+  }
+ }
+}

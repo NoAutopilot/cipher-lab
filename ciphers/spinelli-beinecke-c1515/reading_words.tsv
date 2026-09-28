@@ -1,0 +1,57 @@
+# H42 (28 Sept 2026): word-segmented reading of the v6 decode (reading.txt) by one blind Opus call, scored by passes/h42_score.py.
+# grade: H = word read unchanged from letters all graded H; M = unchanged but a letter graded M; I = inferred/repaired (any supplied, dropped or changed letter, rule 4); - = unread.
+# Matched control: the same call on a shuffled-key decode (passes/h42_out_A.tsv). NOT verified; rule 10 wording.
+line	span	reading	kind	grade	letter_grades	gloss
+p1 1	et	et	kept	H	HH	and
+p1 1	lgdmitme	-	unread	-	MMHHHHHH	
+p1 1	the	{t>c}he	emended	I	MHH	that/which
+p1 1	ma	ma	kept	H	HH	but
+p1 1	daa	-	unread	-	HHH	
+p1 2	arge?ita	-	unread	-	HHHHUHHH	
+p1 2	non	non	kept	H	HHH	not
+p1 2	uole	uole	kept	M	HHMH	wants
+p1 2	a?e?are	a{?>cc}e{?>tt}are	emended	I	HUHUHHH	to accept (? read as the cc and tt doubled-letter cells)
+p1 2	h	-	unread	-	H	
+p1 2	la	la	kept	M	MH	the
+p1 2	gu	gu	cont	H	HH	first part of gu-bernatione, continues on p1 3
+p1 3	bmernat?one	b{m}ernat{?>i}one	cont	I	HHHHHHHUHHH	rest of gubernatione (governance); emended: m dropped, ? read as i
+p1 3	di	di	kept	H	HH	of
+p1 3	spagnia	spagnia	kept	H	HHHHHHH	Spain
+p1 3	l	-	unread	-	M	
+p1 3	the	{t>c}he	emended	I	HHH	that/which
+p1 3	pim	-	unread	-	HHM	
+p1 4	dintlinatione	d'in{t>c}linatione	emended	I	HHHMMHHHHHHHH	of inclination
+p1 4	smmosra	s{m>i}mos[t]ra	emended	I	HHHHHHH	shows itself (si mostra); weak
+p1 4	al	al	kept	M	HM	to the
+p1 4	con?e	con{?>t}e	emended	I	HHHUH	count
+p1 5	palat?no	palat{?>i}no	emended	I	HHMHHUHH	Palatine (al conte palatino = to the Count Palatine)
+p1 5	tea	-	unread	-	MHH	
+p1 5	tal	tal	kept	M	MHM	such
+p1 5	?trch	-	unread	-	UHHHH	
+p1 6	aciuo	-	unread	-	HHHHH	
+p1 6	caro	caro	kept	H	HHHH	dear
+p1 6	neo	-	unread	-	HHH	
+p1 6	et	et	kept	H	HH	and
+p1 6	trouo	trouo	kept	H	HHHHH	I find
+p1 6	la	la	kept	M	MH	the
+p1 7	resolutione	resolutione	kept	M	HHHHMHHHHHH	resolution/decision
+p1 7	d	d[i]	emended	I	H	of
+p1 7	costoro	costoro	kept	H	HHHHHHH	these people
+p1 7	miiore	mi[gl]iore	emended	I	HHHHHH	better
+p1 8	di	di	kept	H	HH	of
+p1 8	que?o	que{?>st}o	emended	I	MUH	this (? read as st, not a listed cell; weak)
+p1 8	el	el	kept	M	HM	the
+p1 8	pala	-	unread	-	HHMH	
+p1 8	domana	domana	kept	H	HHHHHH	tomorrow (Venetian form of domani)
+p1 8	auua	-	unread	-	HHHH	
+p2 1	se	se	kept	H	HH	if
+p2 1	e	e	kept	H	H	is
+p2 1	bisognio	bisognio	kept	H	HHHHHHHH	need/necessity
+p2 1	el	el	kept	M	HM	the
+p2 1	guernatore	gu[b]ernatore	emended	I	HHHHHHHHHH	governor
+p2 1	di	di	kept	H	HH	of
+p2 1	bre	bre	cont	H	HHH	first part of Bre-ssa (Bresse?), continues on p2 2
+p2 2	ua	{u>ss}a	cont	I	HH	rest of Bressa (Bresse, the governor of Bresse?); emended: u read as the ss cell; uncertain
+p2 2	anda	anda	kept	H	HHHH	goes
+p2 2	ha	ha	kept	M	MH	has
+p2 2	isuioreri	-	unread	-	HHHHHHHHH	

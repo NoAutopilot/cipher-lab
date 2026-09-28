@@ -1,0 +1,45 @@
+You are reading a letter-for-letter decipherment of a short enciphered passage in a private Italian business/family letter (Florentine merchant writing from Barcelona to his brother, 1519). The decipherment was produced by applying a published key to a transcription of the cipher signs. It may be partly or wholly wrong: signs may be misread, dropped or merged, and the key match may be wrong. Your job is to say honestly how much of it reads as Italian, NOT to make it read.
+
+Do not use any tools and do not read any files. Work only from what is below. Answer with one TSV block and nothing else after it.
+
+About the key (the cipher's structure): simple substitution with several homophones per letter; there are cells for doubled letters (cc, ff, nn, pp, rr, ss, tt) and for the syllables 'qua' and 'que'; nulls have already been removed. Word breaks are not marked in the cipher. '?' is a sign with no key value (one unknown letter, or possibly a doubled letter or a syllable). Under each line is a grade per letter: H = the sign's key cell was agreed by two blind readers, M = uncertain.
+
+Spelling of the writer (from his own plain lines in the same letter): Florentine/Venetian-influenced chancery Italian of 1519, u for v, abbreviations, doubled letters inconsistent, e.g. "gobernatore", "confessore dell Re", "Car(dina)le", "Borgognia", "arriuate", "bisognia"/"bixogna", "migliore", "promessa", "napoli".
+
+The letter's own plain text around the cipher passages (context only; the cipher may be about the same matters or others):
+p.[1] after the first cipher block: "La morte del Car(dina)le de Rossi ... franzesi habbimo questo anno mala sorte ... pronosticho per loro sia / Il gobernatore di mio et amico intrinsecho / parte fra dua giorni per andarsene ... et di la in Borgognia et doue aspettera il Re / ... arborensi confessore dell Re / per la sua indispositione e partito per andarsene in ... et trouasi ch(e) della eta ... / se la cosi dessi et ch(e) della uacantia auessi prima ... che qui notitia et che al R(everendissi)mo de medici piacessi ... farej bene assaj il detto confessoro ... mio no(n) ho uoluto anticiparmi"
+p.[2] before the second cipher block: "alcuna promessa che lo offendera per suo detta / che non nomina uostro / el prefato reuerendissimo ma bixogna piu di bona perche / cardinale ha promesso bona [chiesia] / nel regno di napoli et benche questo non sia / della migliore credo sempre pigliarebbe a / le galee sono arriuate qui in ... fra quattro / giorni partira per dio li dia uictoria / monsignore da ... ha maritato la / al primogenito di monsignore di bergha pero n[on e publichato]"
+
+TASK. For each cipher line, split its letters, in order, into consecutive spans, and for each span give your best Italian word (or say it is unread). Every letter of the line must belong to exactly one span, in the original order; the spans' letters concatenated must reproduce the line exactly ('que' counts as one letter-unit; '?' is one unit). A word may run across a line break: then end the line with the partial span and mark kind 'cont'. 
+
+Output columns (TSV, header row first):
+line	span	reading	kind	gloss
+- line: as given (e.g. "p1 3")
+- span: the decoded letters this word consumes, with no spaces, exactly as given (keep '?' and 'que')
+- reading: the Italian word you propose, in the writer's spelling. Put any letter you SUPPLY that is not in the span in square brackets, e.g. mig[l]iore; write any span letter you DROP as {x}; write a changed letter as {x>y}. A '?' you resolve counts as a change: {?>t}.
+- kind: kept (reading = span letters exactly, u/v and i/j equivalent), emended (you changed, supplied or dropped at least one letter), cont (a word split across lines -- say in gloss), unread (you cannot honestly see an Italian word here; reading = -)
+- gloss: an English gloss of the word (or for unread, blank)
+
+Be conservative: a span you would only 'read' by changing half its letters is unread. Prefer unread over a forced word. After the table, nothing.
+
+THE DECIPHERMENT:
+p1 1	e t l g d m i t m e t h e m a d a a
+p1 1 grades	H H M M H H H H H H M H H H H H H H
+p1 2	a r g e ? i t a n o n u o l e a ? e ? a r e h l a g u
+p1 2 grades	H H H H U H H H H H H H H M H H U H U H H H H M H H H
+p1 3	b m e r n a t ? o n e d i s p a g n i a l t h e p i m
+p1 3 grades	H H H H H H H U H H H H H H H H H H H H M H H H H H M
+p1 4	d i n t l i n a t i o n e s m m o s r a a l c o n ? e
+p1 4 grades	H H H M M H H H H H H H H H H H H H H H H M H H H U H
+p1 5	p a l a t ? n o t e a t a l ? t r c h
+p1 5 grades	H H M H H U H H M H H M H M U H H H H
+p1 6	a c i u o c a r o n e o e t t r o u o l a
+p1 6 grades	H H H H H H H H H H H H H H H H H H H M H
+p1 7	r e s o l u t i o n e d c o s t o r o m i i o r e
+p1 7 grades	H H H H M H H H H H H H H H H H H H H H H H H H H
+p1 8	d i que ? o e l p a l a d o m a n a a u u a
+p1 8 grades	H H M U H H M H H M H H H H H H H H H H H
+p2 1	s e e b i s o g n i o e l g u e r n a t o r e d i b r e
+p2 1 grades	H H H H H H H H H H H H M H H H H H H H H H H H H H H H
+p2 2	u a a n d a h a i s u i o r e r i
+p2 2 grades	H H H H H H M H H H H H H H H H H
