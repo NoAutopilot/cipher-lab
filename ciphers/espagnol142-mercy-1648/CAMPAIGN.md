@@ -2,7 +2,7 @@ target: espagnol142-mercy-1648
 goal: raise the existing counted reading (N3, key ours, two audits V6-MERCY/V6-MERCY2 25 Sept 2026; 496 of 522 tokens at S, 26 at M) to a completed reading with a period key (the Brussels register, ASKS 82) and N4 after the editions check
 started: 2026-09-27 20:29 UTC
 daily_budget_usd: 240
-spent_today_usd: 97.68
+spent_today_usd: 98.68
 spent_day: 2026-09-28
 key_known: partial (key.tsv is ours, cryptanalytic, S-grade, N3 after two audits; no period key found -- Brussels SEE "chiffres 1647-98" register, DECODE 958-965, Gayangos all checked, NOTES.md MERCY-KEY)
 crib_available: partial (the letter's own clear-text opening and interspersed clear words, reading.txt r01-r03; no separate decipherment or copy found)
@@ -142,7 +142,7 @@ The header goal as written on 27 Sept was already met before the sprint began: s
 | H67 | 1 | v04 alternates on disk (the H60 check for the other unread stretch): passA/passB, disagreements.tsv, meye/blind_pass.tsv, h2crops/reconcile.tsv and h22mixed for v03-v05 -- every token where any pass read something else, with the alternates; then tools/crib_list_fit.py with H46/H55's lists on the stream with each alternate substituted, to see whether a transcription alternative lets a word fit. Disk only. | nobody | 0.5 | done | negative: all passes agree on v04 except the gutter token v04:19 (already wild) and the colon after 21; no alternates to substitute (NOTES.md "Campaign step H67") |
 | H68 | 2 | *Theatrum Europaeum* vol. 6 (1647-1651) through the BSB/MDZ route the host table documents (api.digitale-sammlungen.de; bavarikon search via the browser tool if the API has no full-text search), full-text search for Mercy / Abt / spanisch with Cleve 1648; H66 found it unreachable on IA. Log requests per host rules (bavarikon >= 3 s). | nobody | 1 | done | negative: MDZ full-text search (browser tool) "Abt von Mercy" 0, "Abbt von Mercy" 0; unquoted queries OR-match (noise) (NOTES.md "Campaign step H68") |
 | H69 | 3 | The French *Gazette* (Renaudot) for 1648 on Gallica (SRU full text, gallica all within the 1648 volume): "Mercy" with Clèves / Brandebourg / l'Archiduc, June-August 1648 -- the Paris side reported Spanish envoys to German princes; corroboration only, 2 s apart. | nobody | 1 | done | unreached at issue level: SRU hits are the whole Gazette collection (1631-1761), not 1648 issues; route for later: date1648 listing + ContentSearch on the June-August issues (~15 requests) (NOTES.md "Campaign step H69") |
-| H70 | 3 | The Gazette 1648 June-August issues (H69's route): one request for https://gallica.bnf.fr/ark:/12148/cb32780022t/date1648 to list the issue arks, then services/ContentSearch?ark=<issue>&query=Mercy (and Brandebourg) on the issues of 15 June - 31 August 1648 only, 2 s apart, about 15 requests; any hit read in context. Corroboration only. | nobody | 1 | running session_01K2B2cTCwujqmMqmGYyE6BY |  |
+| H70 | 3 | The Gazette 1648 June-August issues (H69's route): one request for https://gallica.bnf.fr/ark:/12148/cb32780022t/date1648 to list the issue arks, then services/ContentSearch?ark=<issue>&query=Mercy (and Brandebourg) on the issues of 15 June - 31 August 1648 only, 2 s apart, about 15 requests; any hit read in context. Corroboration only. | nobody | 1 | done | negative: Gazette 1648 (bpt6k6391523f) ContentSearch -- "Mercy/Merci" only the word merci, "Brandebourg" 14 hits on the treaty and Prussia, nothing on Mercy at Cleves (NOTES.md "Campaign step H70") |
 
 ## Log
 
@@ -223,3 +223,4 @@ The header goal as written on 27 Sept was already met before the sprint began: s
 2026-09-28 16:42 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H67 | 0.5 | done: v04 has no transcription alternates. Next H68.
 2026-09-28 16:44 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H68 | 1 | done: MDZ exact phrases 0. Next H69.
 2026-09-28 16:45 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H69 | 1 | done: Gazette reached only at collection level; H70 added with the issue-level route.
+2026-09-28 16:47 UTC | session_01K2B2cTCwujqmMqmGYyE6BY | H70 | 1 | done: Gazette 1648 negative. No runnable rows left.

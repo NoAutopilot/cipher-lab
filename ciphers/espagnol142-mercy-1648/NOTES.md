@@ -2340,3 +2340,12 @@ listing (`https://gallica.bnf.fr/ark:/12148/cb32780022t/date1648`) and a Content
 more than this row's cap and the host's per-session rule allow. Left as the route for a later worker: list the 1648
 issues once, then `services/ContentSearch?ark=<issue>&query=Mercy` for the June-August issues only (about 15 requests).
 No token, grade or class change.
+
+## Campaign step H70 (2026-09-28 16:47 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** The *Gazette* (Renaudot) for 1648 is one annual volume on Gallica
+(`ark:/12148/bpt6k6391523f`, the collection's only 1648 date, 16480101). Gallica ContentSearch inside it (5 requests
+including the date listing, 2 s apart; `h69/cs_*.xml`): "Mercy" / "Merci" 6 hits, all the word *merci* ("à la merci
+des Confédérez", "se rendre à la merci du Parlement"), never the abbé; "Brandebourg" 14 hits, all the peace treaty,
+Pomerania, the Elector's levy in Prussia (PAG_572) and the Polish succession -- none on a Spanish envoy at Cleves. The
+Paris Gazette did not report Mercy's mission. No token, grade or class change.
