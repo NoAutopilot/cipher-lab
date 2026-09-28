@@ -1483,3 +1483,33 @@ cipher tokens between them) are outside this check.
 r06:16 and "8." at r06:17 (the r06 dot H13 could not place) -- so the mark inventory's floor is 18, not 16; the
 H13 conclusion (not word separators: 2 of 16, random mean 3.09) is unaffected in kind, and both new dots sit
 inside "Cheureuse" (e u r e u s e), not at a word end. No token changed, no grade changed.
+
+## Campaign step H16 (2026-09-28 00:46-01:0x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** DECODE catalogue search for a Spanish key of 1640-1660 with the design H2 found. Two
+parts. No login, no credentials read; 60 requests to de-crypt.org (RecordsList only, 1.6 s apart, descriptive UA),
+no thumbnails fetched; no subagents.
+
+**(a) Record 958 re-read against H2 (saved page, no network).** 958's own description: "a homophonic substitution
+cipher with homophones only for the vowels and a small nomenclature, 50 codegroups in sum total. Two-digit numbers
+are reserved for the cipher, capital letters for the nomenclature." Our `key.tsv`, tabulated by letter, is exactly
+the first half of that: **three homophones for each of a, e, i, o, u (15 codes) and one code for each consonant
+(15 codes), all two-digit numbers 2-34**, plus the small nomenclature H2 identified (48, 52, 65, 72, the boxed
+101 -- numerals, not capital letters; the second "codes" key.tsv lists for q, s, y, c, n, d are these rare codes
+and the marks). MERCY-KEY (27 Sept) ruled 958 out for having a nomenclature at all; that reason is withdrawn (this
+cipher has one), but the symbol-set difference stands: 958's name class is capital letters, ours is boxed and
+high numerals, so 958 is a **design sibling of the same office's key family, not this letter's key**. The Brussels
+SEE "chiffres 1647-98" register (inv.nr. 2, DECODE 958-965, images account-gated, ASKS row 1) is therefore the
+one document whose reading could settle the key: if any of its eight keys has vowel-only homophones in 2-34 with a
+numeric name class, it is a candidate; the thumbnails were unreadable at served size (MERCY-KEY U2). Filed as
+H17 (`needs: doc`, ASKS row 82: add inv.nr. 2 to the AGR reproduction request that S3 already carries for
+t. LXIV f.16).
+
+**(b) Listing crawl (`tools/decode_list.py --record-type key`, all four statuses).** Keys sit under status N/A:
+6,351 records, of which 2,850 (pages 1-58 of 128) were fetched before the 60-request cap; plus 19 Decrypted and 4
+Non-decrypted key records (complete). `sources/decode/keys-all-2026-09-28.tsv` (2,873 rows, a snapshot). In the
+fetched 45%: 39 Spanish-language keys; 7 with a date range touching 1640-1660, all Archivio di Stato di Firenze
+"SIIVol6" keys dated 1501-1700 (a volume-level range, not a date), none from Brussels or Madrid in that slice;
+2 Spanish keys undated. **A partial search result (45% of the key listing), not a negative** (rule 10 wording:
+"not found in the fetched slice, searched by status/language/date on 28 Sept 2026"); pages 59-128 remain (H18).
+No reading change, no grade change.
