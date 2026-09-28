@@ -31,6 +31,11 @@ def cells():
 def lines(tag):
     if tag == "known_h51":
         ls = split_lines(load_read()); f61qo2.relabel(ls); return {l: ls[l] for l in SPANS}
+    if tag == "f108r_L04_L06":   # H107: f.108r rows L04-L06 of the family cut, pass A (the person pack's numbering, pre-H26: PHI includes side-by-side signs)
+        out = {}
+        for r in csv.DictReader((l for l in open(f"{HERE}/pass108gA_classes.tsv") if not l.startswith("#")), delimiter="\t"):
+            if r["line"] in ("L04", "L05", "L06"): out.setdefault(r["line"], []).append(r["sign"])
+        return out
     out = {}
     for r in csv.DictReader((l for l in open(f"{HERE}/../family/passes/f108v3z_draft_reconciled.tsv") if not l.startswith("#")), delimiter="\t"):
         out.setdefault(r["line"], []).append(r["sign"])
