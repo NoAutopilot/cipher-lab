@@ -1,0 +1,103 @@
+ Record Information
+ID:2765
+Name:BnF_Baluze178_f73
+ Current Location
+Country:France
+City:Paris
+City:Bibliothèque nationale de France, Baluze 178, f.73-74
+ Origin
+Dates: - 
+Author:Charles Colbert (later Colbert de Croissy)
+Sender:
+Receiver:Cardinal Mazarin
+Region:
+City:Danzig
+ Content
+Type:Cipher
+Status:Decrypted
+Cipher Type:Homophonic substitution, Nomenclatures
+Symbol Sets:Graphic signs, Numerical
+Pages:4
+ Creation
+Owner:83
+Creator:83
+Creation Date:2021-06-04 00:00:00
+Access mode:Authentication required
+ × 
+Go to the Image Manager to zoom and view/edit metadata [/decrypt-web/ImagesList?showmaster=records&fk_id=2765]
+1/4
+2/4
+3/4
+4/4
+ ❮ ❯ 
+Croissy-Mazarin Cipher (1660) (DE=42~) [key]
+ [/decrypt-custom/filesrv/?file=DOC_R2765_D3842_3842.png] 
+ 	ID 	   2765   
+ 	Name 	   BnF_Baluze178_f73   
+ 	Owner 	      
+ 	Current Location and Name 	   Paris,Bibliothèque nationale de France, Baluze 178, f.73-74 
+BnF_Baluze178_f73   
+ 	Dates 	   1660 -    
+ 	Authors 	   Charles Colbert (later Colbert de Croissy)
+ Danzig   
+ 	Languages 	   Cleartext:French
+Plaintext:French   
+ 	Country 	   France   
+ 	City 	   Paris   
+ 	Holder 	   Bibliothèque nationale de France, Baluze 178, f.73-74   
+ 	Author 	   Charles Colbert (later Colbert de Croissy)   
+ 	Sender 	      
+ 	Receiver 	   Cardinal Mazarin   
+ 	Region 	      
+ 	Origin City 	   Danzig   
+ 	Start Year 	   1660   
+ 	Start Month 	   5   
+ 	Start Day 	   9   
+ 	End Year 	      
+ 	End Month 	      
+ 	End Day 	      
+ 	Record
+Type 	   Cipher   
+ 	Status 	   Decrypted   
+ 	Symbol Set 	   Graphic signsNumerical   
+ 	Cipher Type 	   Homophonic substitutionNomenclatures   
+ 	Cipher Type (notes) 	   symbols for syllables   
+ 	Symbol Sets (notes) 	   diacritics   
+ 	No. of Pages 	   4   
+ 	Inline Cleartext 	   Yes   
+ 	Inline Plaintext 	   No   
+ 	Cleartext
+Language 	   French   
+ 	Plaintext
+Language 	   French   
+ 	Private Ciphertext 	   False   
+ 	Available Documents 	   Key   
+ 	Paper 	   shadow in the image   
+ 	Access Mode 	   Authentication required   
+ 	Creation Date 	   6/4/21   
+ 	Key: encoded plaintext type 	      
+ 	Key: numbers 	      
+ 	Key: content words 	      
+ 	Key: function words 	      
+ 	Key: syllables 	      
+ 	Key: morphological endings 	      
+ 	Key: phrases 	      
+ 	Key: sentences 	      
+ 	Key: punctuation 	      
+ 	Key: nomenclature size 	      
+ 	Key: sections 	      
+ 	Key: headings 	      
+ 	Key: plaintext arrangement 	      
+ 	Key: ciphertext arrangement 	      
+ 	Key: memorability 	      
+ 	Key: symbol set 	      
+ 	Key: diacritics 	      
+ 	Key: code length 	      
+ 	Key: code types 	      
+ 	Key: metaphors 	      
+ 	Key: material properties 	      
+ 	Key: instructions 	      
+Additional Information
+F.93 (Nouvelles de Francfort) and f.98 (Autres nouvelles de Nuremberg) in the same volume use the same cipher.
+ For an overview of contemporary ciphers, see S. Tomokiyo, "Ciphers Early in the Reign of Louis XIV" (http://cryptiana.web.fc2.com/code/louisxiv0.htm).
+Created by:tomokiyo
