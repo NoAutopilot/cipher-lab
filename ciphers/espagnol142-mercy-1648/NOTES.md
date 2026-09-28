@@ -2370,3 +2370,15 @@ windows -- scored against the 883-name list (Urkunden Bd. 1-6) with the same wil
   under the old rule, so the floor changes none of them.
 
 No token, grade or class change.
+
+## Campaign step H72 (2026-09-28 16:50 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Synthetic-name null for H41, finer than the list's 1/883 (`h72/synth.py`,
+`h72/result.log`): a character trigram model trained on the 883 Urkunden names sampled 10,000 name-shaped strings of
+6-12 letters (seed 72, list names excluded), each fitted to r16:2-r18:21 with `tools/crib_list_fit.py`'s default
+wildcards. **0 of 10,000 reach Burgsdorf's fit (7 agree, 0 disagree): P < 0.0001 (95% upper bound about 0.0003).** Three
+reach 6, and they are the model rebuilding the Burgsdorf pattern itself from its training names ("burgsdorfdrg",
+"urgsburf", "lenburgse"). With H71 (read text of the letter never above 4), H61 (no rival among 883 real names) and
+H53/H63 (the fit needs only 72 to stand for two letters, and 72 is one sign), the name fit is as strong as a
+cryptanalytic crib gets here without a key; it is still a candidate, not a reading, because the one assumption is
+unattested for this key. No token, grade or class change.
