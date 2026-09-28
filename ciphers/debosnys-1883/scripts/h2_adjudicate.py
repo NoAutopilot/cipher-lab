@@ -54,3 +54,13 @@ print(f"(b) settled by majority full id {n['settled-full']}, family {n['settled-
 print(f"(c) unsettled {n['unsettled']} (three-way {n['three-way']}, seg-flag {n['seg-flag']}, no C read {n['unsettled']-n['three-way']-n['seg-flag']})")
 print(f"(d) type-noise estimate: floor {n['unsettled']}/{N} = {100*n['unsettled']/N:.1f} pct, ceiling {(n['unsettled']+n['settled-family']+n['settled-base'])}/{N} = {100*(n['unsettled']+n['settled-family']+n['settled-base'])/N:.1f} pct (GOLD-D2 base curve: 0.816 at 2.5 pct, 0.385 at 5 pct)")
 print(f"gate 80 pct full id: {'MET' if full/N >= 0.8 else 'NOT MET'}")
+# rule 6: the gate met licenses writing cryptogram 1 into ciphertext.txt from the draft (unsettled boxes carry a trailing ?)
+if full / N >= 0.8:
+    lines = collections.OrderedDict()
+    for r in rows: lines.setdefault(r['line'], []).append(r['sign'] + ('' if r['why'] in ('agree-AB', 'settled-majority') else '?'))
+    sec = "=== Cryptogram 1 ===\n# 28 Sept 2026 (H2): 160-id inventory ids (glyphs/inventory.tsv), three passes adjudicated by scripts/PROMPTS_c1.md;\n# a trailing ? marks a box unsettled at full id (family- or base-settled value, or pass A's value on a three-way split; alts in ciphertext_c1_draft.tsv)\n" + "".join(" ".join(v) + "\n" for v in lines.values()) + "\n"
+    cp = os.path.join(root, 'ciphertext.txt'); ct = open(cp).read(); i = ct.index('=== Cryptogram 1 ==='); j = ct.index('=== Cryptogram 2')
+    new = ct[:i] + sec + ct[j:]
+    if '--check' in sys.argv:
+        if new != ct: print('STALE: ciphertext.txt cryptogram 1 section differs from the draft'); sys.exit(1)
+    else: open(cp, 'w').write(new)

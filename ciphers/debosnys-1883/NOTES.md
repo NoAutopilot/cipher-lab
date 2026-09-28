@@ -636,3 +636,82 @@ The Adirondack History Museum (Essex County Historical Society) answered the 26 
 - Next step (suggestion, not run): a research-only job reads the scans off-repo for the crib/host-text question
   the spec already names (the clear poems), under RESTRICTED.md, and records here only whether a usable crib
   exists; a thank-you reply is in Gmail for the owner.
+
+## Campaign (28 Sept 2026, DEBOSNYS-RUNNER-3, Fable, session_018qnyJQbVSd2NyPvDVApXqS)
+
+Brief: `.claude/briefs/runs/2026-09-28-debosnys-runner-3.md` (owner decision 20:4x UTC: lean in on this target as a
+fourth campaign). Rows, budget and log: `CAMPAIGN.md`. Nothing below is a reading; rule 10 throughout.
+
+### H1, check-solved refresh (28 Sept 2026, three Sonnet search subagents, 21:16-21:27 UTC)
+
+`checksolved_2026-09-28.tsv` (133 rows: 71 no-claim pages, 28 system guesses, 17 partial claims, 0 N0 candidates;
+saved page texts stay in the session's scratch, not committed). Covered: Cipherbrain's Debosnys tag (all 8 posts,
+2015-2021, every comment thread; the solved-cryptograms category has no Debosnys entry), Cipher Mysteries (the
+2015 "Thoughts" post with its 90 comments, the Cimbria and 2021 Keff/DNA/Sektu posts with comments),
+cipherfoundation.org's Debosnys page (six scans, no transcription or reading), Google Books snippet search on
+Farnsworth 2010 and Bauer 2017 (Bauer's index: "Debosnys 195-217, Greek poem 216"; no reading in any snippet;
+Farnsworth has no preview, no IA item and no HathiTrust record under OCLC 495995946/963914459, so its reported
+cipher appendix stays unchecked), IA full text (33 be-api calls, nothing beyond 1883 reportage and Bauer's
+teaching passages), OpenAlex 0 / CrossRef 0 / Semantic Scholar generic only, Reddit (OAuth search: three casual
+threads, r/codes r/cryptography r/ciphers r/UnresolvedMysteries 0 hits), Wikipedia article + talk + List of
+ciphertexts (unsolved), podcast and news pages (Dark Histories notes, Crime Capsule, History.com, Spyscape),
+zodiackillerciphers.com site search (none), voynich.ninja (one Voynich thread, member-only), Sektu's feed (no
+Debosnys post after 7 Aug 2017), 38 web searches. Unreachable: schmeh.org (connection reset), Quora (403),
+puzzling.stackexchange (fetch refused), darkhistories.com (bot interstitial), YouTube comments.
+
+Both solver repositories now carry Debosnys work (both absent from the 23 Sept snapshots GOLD-0D grepped):
+- **Bourdeau, cyphersolver `targets/debosnys/NOTES.md` (15 Sept 2026; clone at commit 648309e, 26 Sept; code MIT,
+  text CC BY 4.0):** "nobody has published a decryption of a single word". His own transcriptions (verse 279 tokens
+  / 111 types; No.10 block 99 / 72; No.9 597 / 239) and results: (i) the verse's line-final glyphs are identical
+  within 9 of 10 couplets and match 0 of 9 across couplet boundaries (rimes plates, AABB), so the line-final glyph
+  encodes sound at syllable scale; (ii) crib **No.10 cipher = lines 1-8 of the clear poem below it**: isomorph
+  alignment 58 against random French verse median 59 / max 66, while a planted encoding of the same poem scores
+  86-88 (control max 74-80) -- a control-backed negative; (iii) the verse against 7,821 twenty-line couplet windows
+  of 28 French verse volumes: no outlier, planted window ranks 1st of 7,821; (iv) Delille's Aeneid V, Moore,
+  Stoddart, his own English poems: chance level; (v) a mark-stack "monograph" letter reading: real order does not
+  beat shuffled; (vi) a clean one-to-one syllabary positive control at 1,000 glyphs recovers 0.0 pct of tokens
+  (5.4 pct at 5,000), and a unicity estimate of 800-2,000 glyphs for a 333-type syllabary key. His conclusion: a
+  syllabary too short for a key-only attack; a crib (a copied source, or a key sheet at the museum) is the only route.
+- **Aymeloglu, unsolved-ciphers `TARGETS.md` row 9 (17 Sept 2026; no licence, cited only):** "open, eleven rounds",
+  transcription 1,139 groups / 365 labels, no cross-block repeat over three glyphs, matched controls fail at the
+  target density, "needs human palaeography"; no reading.
+
+The one concrete reading claim on record is still Rick A. Roberts's comment of 23 Nov 2015 on Cipher Mysteries ("the
+last line of the 'L.M.F.' page deciphers to 'ULTIME'"), with no method, key or follow-up: a partial claim, not
+checkable without a stated key. Numerology comments (dots under H.D.D.L.M.F. = missing letters; "X = 66 = W") give no
+table and no plaintext. **Verdict: open, no N0.** The campaign continues. Requests: scienceblogs.de 13,
+ciphermysteries.com 18, cipherfoundation.org 2, googleapis 26, be-api 33, archive.org 2, openlibrary 2, hathitrust 2,
+openalex 1, semanticscholar 2, crossref 1, oauth.reddit.com 12, reddit.com 2 (403), sektu 3, wikipedia 3, others 1
+each; no 429 except one Semantic Scholar 429 cleared on a single retry.
+
+### H2, cryptogram 1 third pass and adjudication (28 Sept 2026, 21:19-21:28 UTC)
+
+Rule written and committed before any crop was cut (`scripts/PROMPTS_c1.md`, commit 610a4675). Unit: the physical
+box (both passes read the same 136 pre-cut boxes), so the disputed set is the 52 positions where `passA_c1.tsv` and
+`passB_c1.tsv` differ (`scripts/h2_disputed_positions.tsv`; GOLD-4E's 52 aligned columns include 4 alignment-gap
+artefacts; position-based agreement 84/136 = 61.8 pct, family 66.2 pct). Crops: `scripts/h2_crops.py` (6x Lanczos
+per-sign crops from the Schmeh PNG's own pixels plus a row-context strip with the box outlined; the inventory sheet in
+17 tiles; regenerable, not committed). Reader: five value-blind Fable subagent calls (lines 1-2, 3-4, 5, 6, and two
+line-5 boxes the third call's list had mis-numbered), given only crop paths and the inventory tiles, never a pass file:
+`passC_c1.tsv` (52 rows; self-graded H 28 / M 17 / L 7). Adjudication: `scripts/h2_adjudicate.py` (`--check` exits
+non-zero if `ciphertext_c1_draft.tsv` or the cryptogram-1 section of `ciphertext.txt` is stale).
+
+| number (rule 5 of PROMPTS_c1.md) | value |
+|---|---|
+| (a) pairwise blind, disputed 52, full id | A-C 22/52 = 0.423; B-C 5/52 = 0.096 |
+| (a) pairwise blind, disputed 52, family | A-C 25/52; B-C 10/52 |
+| (b) settled by majority | full id 27, family 3, base 3 |
+| (b) agreement over 136 boxes after adjudication | full 111/136 = 81.6 pct; family 114/136 = 83.8 pct; base 117/136 = 86.0 pct |
+| (c) unsettled | 19 (17 three-way splits, 2 segmentation flags: C read MULTI/`_`) |
+| (d) type-noise estimate of the settled draft | floor 19/136 = 14.0 pct, ceiling 25/136 = 18.4 pct |
+| gate 80 pct full id | met; cryptogram 1 written to `ciphertext.txt` in inventory ids per rule 6 |
+
+Reading these honestly: the third reader sides with pass A on 42 pct of the disputed boxes and with pass B on 10 pct,
+so the settled c1 is mostly pass A (GOLD-4C's own by-eye labels) with GOLD-4E's rushed pass B as the outlier; and a
+third of the disputed boxes (17 of 52) drew three different ids from three readers, which is the inventory-confusion
+shape GOLD-4C found on c4 (several ids for one shape) rather than illegibility. The 80 pct gate is met by majority
+adjudication, but the type noise the draft carries (14-18 pct) sits far past the GOLD-D2 knee (0.816 at 2.5 pct,
+0.385 at 5 pct), so **no letter-substitution attack on c1 is licensed by this pass either**; what it buys is a
+settled c1 for the structural tests (H3, H5, H6) and a confusability list for the inventory. Settled K for c1: see
+`ciphertext_c1_draft.tsv` (grade S/M, 0 H-from-key, 0 C-from-plaintext). Costs: five Fable subagent calls of about
+135-145k tokens each; the orchestrator reads the session cost.
