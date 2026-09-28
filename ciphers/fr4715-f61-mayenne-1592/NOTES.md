@@ -3550,3 +3550,15 @@ the same alignment, Tomokiyo writes a dash (no letter) at every CROSS (f.61 L01/
 (L05/16) position. His reading treats them as nulls or unread, so no period letter can be checked there. At 4PI he reads n (f.61 L11/9)
 and p, d, d, d, d (f.108r): v4's a/d/n/q fits, and f.176r's p/c for the readers' "4PI" does not. That class does not carry over, as
 4STEM p/c did not (H179).
+
+## Campaign step H177b stage 2c (28 Sept 2026, 23:24-23:26 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- key rows f.176r L01-L40
+
+Pre-registered (`family/passes/PROMPTS_f176_f175.md` stage 2c, 787bf38b). The builder now appends fol. 177v's lines after fol. 177r's (L01-L33
+output unchanged, `--check` OK before the calls). Three Opus vision calls, inline replies written verbatim: passes A/B of f.176r L34-L40
+(`passes/f176r_signs{A,B}_L34-L40.tsv`, 418/417 rows) and a read of fol. 177v strips 1-4 (`passes/f177v_clearA_S01-S04.tsv`, V01-V14,
+mostly M/L). The two passes split systematically in L34-L40: A codes ZHOOK and LL where B codes VBAR_B and ZHOOK. Those columns leave
+the consensus (0.74 over the stretch).
+`build_f176_key.py L01-L40`: **2,638 signs, N 2,110; fol. 177r-v 0.531 vs the wrong text 0.345 (margin +0.186)**, steady across four
+stages (+0.221, +0.182, +0.188, +0.186). With the new rows: C43 (agreed) n 26, a 20 of 61 -> a/n, as v4. HASH4 d 35, i 17, q 8 (70): the i
+share rose with L34-L40's LL/HASH4 confusions. VBAR_A t 81, s 14, g 8 (138). EBR l 83, a 14 (124). ZHOOK i 23 of 48. VBAR_A/VBAR_B
+disputes read s 16 of 33 (VBAR_B's s). Nothing merged. Remaining: L41-L47 and f.176v (47 rows), then fol. 179 (item 84's last leaf).
