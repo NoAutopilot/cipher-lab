@@ -1394,3 +1394,29 @@ letter solver is weaker than homophonic_anneal on this stream. Whether 48, 52, 6
 codes stays open on the design evidence of H2 (their range and the box) alone; the instrument that could settle it
 is a period key or a sibling letter reusing the same codes (H7, H8), not a further anneal. No reading change, no
 grade change.
+
+## Campaign step H4 (2026-09-28 00:36-00:4x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** The within-tome homogeneity split `tools/data/es17c7/README.md` named as the next
+step: `tools/data/es17c7/holdout_split_check.py` (new) cuts each of the seven Cartas tomes into C contiguous
+chunks (chronological newsletters, so a chunk is a date range), builds the judge model from everything except the
+held-out chunk (the same tome's other chunks stay in), and scores 200 held-out windows of N=519 against that
+model's own real_p05, exactly as `holdout_check.py` does by whole tome. Full output in
+`tools/data/es17c7/holdout_split_2026-09-28.log`. No hosts, no subagents.
+
+| split | folds | blended false-negative rate | per-fold spread | folds over 10% |
+|---|---|---|---|---|
+| by tome (MERCY-JUDGE2, on file) | 7 | 11.1% | 2.0-23.0% (11.5x) | 4/7 |
+| 2 chunks per tome | 14 | 10.5% | 3.5-19.0% (5.4x) | 6/14 |
+| 4 chunks per tome | 28 | 11.1% | 1.0-34.0% (34x) | 11/28 |
+
+**Pre-registered gate (blended under 10%, spread under 2x) not met on either split**, and the picture is now
+clear: the variance is inside tomes, not between them. Tomo XVII's four chunks read 34.0 / 17.0 / 23.5 / 14.5%,
+tomo XIX's 1.0 / 8.5 / 5.5 / 30.0%, tomo XVIII's 14.5 / 17.5 / 3.5 / 7.0% -- a corpus whose held-out real prose
+fails its own judge at up to a third in some stretches and one in a hundred in others (OCR quality, inserted
+documents, verse and Latin, none of it separable by date). The judge stays "cannot decide" for this target at
+N 519-1342, and this closes the corpus-tuning line: es17 -> es17c -> es17c7 -> a within-tome split is the same
+instrument tuned four times without the numbers moving together toward the gate (CLAUDE.md rule 3, the
+"second attempt at an unchanged approach" paragraph). Logged "untestable by this judge at this N"; the next
+attempt at "is the reading Spanish" needs a different instrument (H14 below), not a fifth corpus. No reading
+change, no grade change.
