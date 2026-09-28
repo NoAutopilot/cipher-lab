@@ -1,0 +1,48 @@
+groups read 129, distinct 88, glossed 64
+values also in the pool 37 of 88 distinct
+glossed groups whose value has a pool gloss: 43; agree with pool majority: 20; gloss-shuffle null mean 2.32, p95 5
+per group (value, frame gloss, pool majority, agree):
+  244	to	to (11)	Y
+  133	of	of (26)	Y
+  1651	the	the (19)	Y
+  1118	who	here (1)	-
+  624	a	a (13)	Y
+  1290	renewing	he (1)	-
+  1407	with	with (3)	Y
+  1651	the	the (19)	Y
+  165	idea	the (5)	-
+  926	he	he (9)	Y
+  1651	the	the (19)	Y
+  1003	misfortunes	prince (1)	-
+  1343	and	oppose (1)	-
+  525	here	territory (1)	-
+  1114	of	himself (6)	-
+  133	of	of (26)	Y
+  579	portugal	portugal (1)	Y
+  1343	&	oppose (1)	-
+  926	he	he (9)	Y
+  1387	conducted	ostentatiously (1)	-
+  133	the	of (26)	-
+  1651	emperor	the (19)	-
+  738	as	emperor (1)	-
+  916	formerly	at (2)	-
+  906	and	could (1)	-
+  982	connect	protection (1)	-
+  1407	with	with (3)	Y
+  1373	severity	several (1)	-
+  244	to	to (11)	Y
+  1114	have	himself (6)	-
+  470	want	for (1)	-
+  244	will	to (11)	-
+  408	if	his (6)	-
+  1411	the	will (1)	-
+  1343	ally	oppose (1)	-
+  1651	the	the (19)	Y
+  133	of	of (26)	Y
+  1651	the	the (19)	Y
+  1661	prince	prince (2)	Y
+  1343	co-operate	oppose (1)	-
+  133	of	of (26)	Y
+  1411	will	will (1)	Y
+  1027	be	be (6)	Y
+glossed values with no pool gloss (21): 832=favorably, 622=moment, 1413=the, 380=war in, 571=president, 384=this, 935=great, 1386=concern, 478=for, 301=quick, 250a=better, 1696=an advice, 878=they, 21=would, 1212=speaks, 805=of, 720=more, 387=of, 1643=promises, 1210=spain, 878=they

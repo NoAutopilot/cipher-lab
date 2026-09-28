@@ -3008,3 +3008,37 @@ exhausted for this target; the remaining pools are people-gated (H8-H10, H35-H37
 No reading of the target, no class change; rule 10: catalogued NARA despatches, nothing called new or first.
 Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 160-170k tokens, 3-5 minutes each); no runner look. Cost:
 about 4 USD by H21's rate -- `--spend` records 4.
+
+## Campaign step H42 (28 Sept 2026, 14:20-14:30 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H42: M31 reel 12 frame 373 (H39's "worksheet with words interlined", spring 1807) is a period KEY SHEET of the Madrid
+legation cipher rather than usage.
+
+**Method.** Reel PDF refetched once (catalog.archives.gov medialz, M31-012.pdf, 158 MB, one request; not committed);
+frame 373 rendered at native (1700x1564, pymupdf page 372). The runner looked at the whole frame first; then
+`h29/band_cut.py n373.png ... f373L 30 0 905 1030 82 43 22 --scale 2.0` (19 code lines of the left page used, 20-22 are the
+subscription), one blind Sonnet call on the 19 crops (`h42/reads/f373L.tsv`: 129 group rows, 88 distinct, 64 glossed),
+scored by `h42/check.py` against the majority period gloss per value in `h32/legation_groups.tsv` (1,050 groups), with a
+gloss-shuffle null (the frame's own glosses permuted over its glossed groups, 2,000 draws). Output: `h42/check_output.txt`.
+
+**Result: usage, not a key sheet -- H42's key-sheet hypothesis is dropped by the look.** The left page of frame 373 is
+the closing page of an Erving letter to Madison written in mixed clear text and legation-cipher groups, with a period
+decode interlined over the groups, closing "Dear Sir with sincere respect and very truly your most obliged ... George W.
+Erving"; the right page is "No. 30 Duplicate", Madrid 26 July 1807, in clear (the Tilsit armistice gazette). There is no
+value-to-word list anywhere on the frame. The "worksheet look" H39's screener reported is the mixed clear/code layout.
+
+**Same table, control-backed:** of 43 glossed groups whose value has a pool gloss, 20 agree with the pool's majority gloss
+(1651 the x5, 133 of x4, 244 to x2, 926 he x2, 1407 with x2, 624 a, 579 Portugal, 1661 prince, 1411 will, 1027 be) vs a
+gloss-shuffle null mean 2.3, p95 5. Most of the 23 disagreements are the reader's alignment of one gloss phrase over
+several groups (e.g. "conducted of the Emperor as formerly" spread over 1387 805 133 1651 738 916, putting "the" on 133
+and "emperor" on 1651), not conflicting period values; digits and glosses are single-reader, grade M. 21 glossed values
+had no pool gloss (e.g. 1210 Spain, 1643 promises, 1696 an advice, 571 president); they go to H43's table at grade M.
+
+**Target:** not re-screened -- the legation cipher is already a control-backed MISS against the target at n=1,030 (H38).
+For the record: 14 of the frame's 88 distinct values also occur in the target's 216, mostly low values (1, 2, 10, 15, 16,
+21, 38, 88) that any 1-1999 code shares; no reading of the target, no class change. Rule 10: a catalogued NARA despatch;
+nothing here is called new or first.
+
+Vision: 1 of 4 subagent calls (Sonnet, about 135k tokens, 6.4 minutes) plus the runner's two looks at the frame.
+Requests: catalog.archives.gov 1. Cost: about 2 USD by H21's rate (`--spend` records 2 of the row's 3).
