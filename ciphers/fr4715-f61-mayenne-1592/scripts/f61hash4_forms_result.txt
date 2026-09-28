@@ -1,0 +1,45 @@
+H162 controls 17/20; GATE (>= 17/20): PASS
+control tile 4 period i set A -> four 'no' ok
+control tile 5 period i set A -> four 'no' ok
+control tile 7 period d set B -> four 'no' MISS
+control tile 12 period i set A -> four 'no' ok
+control tile 13 period i set A -> four 'no' ok
+control tile 15 period d set B -> four 'yes' ok
+control tile 16 period d set B -> four 'yes' ok
+control tile 17 period d set B -> four 'yes' ok
+control tile 18 period d set B -> four 'yes' ok
+control tile 20 period q set B -> four 'yes' ok
+control tile 22 period d set B -> four 'yes' ok
+control tile 24 period i set A -> four 'yes' MISS
+control tile 30 period i set A -> four 'none' MISS
+control tile 31 period d set B -> four 'yes' ok
+control tile 35 period i set A -> four 'no' ok
+control tile 36 period d set B -> four 'yes' ok
+control tile 38 period q set B -> four 'yes' ok
+control tile 39 period i set A -> four 'no' ok
+control tile 41 period i set A -> four 'no' ok
+control tile 43 period i set A -> four 'no' ok
+target f108v/L05/34: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L03/33: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L03/6: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/40: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/7: four 'no' -> H24 (bare hash)
+target f108r/L06/8: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/29: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/15: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/30: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L02/33: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L04/2: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L01/10: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/5: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L02/10: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/10: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/22: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L05/40: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L03/38: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L06/39: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L02/5: four 'yes' -> HASH4 (4-over-hash)
+target f108r/L06/12: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L07/13: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L07/24: four 'yes' -> HASH4 (4-over-hash)
+target f108v/L02/31: four 'yes' -> HASH4 (4-over-hash)

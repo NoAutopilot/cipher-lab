@@ -3105,3 +3105,14 @@ Brief: .claude/briefs/runs/2026-09-28-parent-f61-family-8.md (steps 2-4 of F61-F
 Those details are consistent with Gregory XIV (Dec 1590-Oct 1591) and Savoy at Marseille in March 1591. This is unverified; the copy's own year stands as written.
 
 **Named next step (one line, not run):** find the ciphered original of de Diou's Rome letter of 5 April [1591/1592] among the Mayenne papers (fr.3977-3984 or the fr.4715-type recueils). If it is in the polyphonic cipher, this copy is a full-length period clear text for it: a known-plaintext alignment of the fr.101r kind over roughly 150 copy lines, with the name marks as a bonus.
+
+## Campaign step H162 (28 Sept 2026, 20:1x-20:21 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+One Opus vision call (the reader read the five sheets only; reply verbatim `scripts/read_call_H162.tsv`; tiles and prompt
+pushed b0d19a43 before the call; `scripts/f61hash4_forms.py score`, `f61hash4_forms_result.txt`). Controls (H98's
+period-labelled tiles) **17/20 -> gate PASS** (misses: one period-d tile called "no", one period-i called "yes", one "none").
+Targets: **23 of 24 HASH4 signs have a 4 above or joined** (f.108v 14/14; f.108r 9/10) -- the 4-over-hash, d/q on the family
+leaves; one f.108r sign (L06/7) is a bare hash. So the passes' HASH4 on these leaves is almost entirely one form, and H160's
+lean to d/q on f.108v fits it. H119's i/x lean on f.108r is then not the bare-hash i: on f.108r L06 the reader describes most
+of these as "4-like apex, looped feet" (the passes' "crossed double loop, alt INF"), a looped variant whose value is open.
+H163 (split values) is moot: a split moves one sign. No reading, no class change.
