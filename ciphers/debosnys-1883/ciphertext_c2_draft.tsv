@@ -2,17 +2,17 @@ line	position	sign	confidence	alt	why
 c2a_L01	1	_	H	A:BAR-THIN	settled-majority
 c2a_L01	2	BRACKET	M		agree-AB
 c2a_L01	3	X	M		agree-AB
-c2a_L01	4	CC-DASH	M	B:E-BAR	differ-noC
+c2a_L01	4	CC-DASH	H	B:E-BAR	settled-majority
 c2a_L01	5	EIGHT	M		agree-AB
-c2a_L01	6	Y-CURL	M	B:X	differ-noC
-c2a_L01	7	N-LETTER	M	B:X-LOOP	differ-noC
+c2a_L01	6	X	H	A:Y-CURL	settled-majority
+c2a_L01	7	N-LETTER	M	B:X-LOOP;C:O-SLASH	three-way
 c2a_L01	8	QQ-O	M	B:PICT-FACE;C:O-TILDE	three-way
-c2a_L01	9	C-DOT	M	B:BLOB	differ-noC
-c2a_L01	10	X	M	B:BLOB	differ-noC
+c2a_L01	9	C-DOT	M	B:BLOB;C:CC-DASH	three-way
+c2a_L01	10	X	M	B:BLOB;C:CC-DASH	three-way
 c2a_L01	11	PCT-SLASH	H		agree-AB
 c2a_L01	12	AMP	H		agree-AB
 c2a_L01	13	X	M		agree-AB
-c2a_L01	14	CIRC-O	M	B:_	differ-noC
+c2a_L01	14	CIRC-O	M	B:_;C:IOI-TILDE	three-way
 c2a_L01	15	X	H		agree-AB
 c2a_L01	16	O-SLASH	H	B:X-LOOP	settled-majority
 c2a_L01	17	O-DASH2	M		agree-AB
@@ -21,26 +21,26 @@ c2a_L01	19	V-DOT	M		agree-AB
 c2a_L01	20	_	M		agree-AB
 c2a_L01	21	BAR-THIN	M		agree-AB
 c2a_L01	22	CIRC-O	M		agree-AB
-c2a_L01	23	DASH-H	M	B:_	differ-noC
+c2a_L01	23	_	H	A:DASH-H	settled-majority
 c2a_L01	24	IOI-TILDE	M		agree-AB
 c2a_L01	25	PCT	H		agree-AB
-c2a_L01	26	CIRC-O	M	B:BLOB	differ-noC
-c2a_L01	27	DASH-H	M	B:X	differ-noC
+c2a_L01	26	CIRC-O	M	B:BLOB;C:O-TILDE	three-way
+c2a_L01	27	DASH-H	M	B:X;C:_	seg-flag-C
 c2a_L01	28	X	M		agree-AB
 c2a_L01	29	X	H		agree-AB
 c2a_L01	30	LOOP-STEM	H		agree-AB
 c2a_L01	31	DOT-LINE-O	H	B:PCT-SLASH	settled-majority
-c2a_L01	32	X	M	B:BAR-THIN	differ-noC
+c2a_L01	32	X	M	B:BAR-THIN;C:PCT	three-way
 c2a_L01	33	BLOB	M		agree-AB
-c2a_L01	34	DASH-V	M	B:_	differ-noC
+c2a_L01	34	_	H	A:DASH-V	settled-majority
 c2a_L02	1	PICT-LEAF	H		agree-AB
 c2a_L02	2	BOX-GRID	M		agree-AB
-c2a_L02	3	O-TILDE	M	B:_	differ-noC
+c2a_L02	3	O-TILDE	M	B:_;C:DOTS-TILDE	three-way
 c2a_L02	4	LOOP-TAIL	H	B:M-LETTER	settled-majority
-c2a_L02	5	TRIDENT	M	B:A-DASH	differ-noC
+c2a_L02	5	TRIDENT	M	B:A-DASH;C:X-CURL	three-way
 c2a_L02	6	PCT-SLASH	H		agree-AB
-c2a_L02	7	II-DASH	M	B:O-DASH2	differ-noC
-c2a_L02	8	TRIDENT	M	B:U-CROSS	differ-noC
+c2a_L02	7	O-DASH2	M	A:II-DASH	settled-majority
+c2a_L02	8	U-CROSS	M	A:TRIDENT	settled-majority
 c2a_L02	9	PICT-BOTTLE	H		agree-AB
 c2a_L02	10	PICT-TREE	H		agree-AB
 c2a_L02	11	SUN	H		agree-AB
@@ -48,113 +48,113 @@ c2a_L02	12	X	M	B:EIGHT;C:DAGGER-O	three-way
 c2a_L02	13	NINE	M		agree-AB
 c2a_L02	14	FIVE	M		agree-AB
 c2a_L02	15	BAR-THIN	M		agree-AB
-c2a_L02	16	TRIDENT	M	B:SIX-CURL	differ-noC
-c2a_L02	17	BAR-THIN	M	B:_	differ-noC
+c2a_L02	16	TRIDENT	M	B:SIX-CURL	settled-majority
+c2a_L02	17	_	H	A:BAR-THIN	settled-majority
 c2a_L02	18	PICT-FACE	M		agree-AB
 c2a_L02	19	PCT	H		agree-AB
-c2a_L02	20	DAGGER-O	M	B:B-SCRIPT	differ-noC
+c2a_L02	20	DAGGER-O	H	B:B-SCRIPT	settled-majority
 c2a_L02	21	X	M		agree-AB
 c2a_L02	22	X	M	B:CIRC-O;C:Y-CURL	three-way
-c2a_L02	23	II-DASH	M	B:BLOB	differ-noC
-c2a_L02	24	BLOB	M	B:_	differ-noC
+c2a_L02	23	II-DASH	M	B:BLOB;C:DOTS-TILDE	three-way
+c2a_L02	24	_	M	A:BLOB	settled-majority
 c2a_L02	25	PHI	H		agree-AB
-c2a_L02	26	OX-TILDE	M	B:OX	differ-noC
+c2a_L02	26	OX-TILDE	H	B:OX	settled-majority
 c2a_L02	27	BUCKET	M		agree-AB
 c2a_L02	28	DASH-V	M	B:BAR-THIN;C:_	seg-flag-C
 c2a_L03	1	PICT-EAGLE	H		agree-AB
 c2a_L03	2	V-LOOP	M		agree-AB
-c2a_L03	3	VENUS	M	B:LOOP-STEM	differ-noC
+c2a_L03	3	LOOP-STEM	H	A:VENUS	settled-majority
 c2a_L03	4	CC-DASH	M		agree-AB
-c2a_L03	5	X	M	B:E-BAR	differ-noC
-c2a_L03	6	X	M	B:X-DOT	differ-noC
+c2a_L03	5	E-BAR	H	A:X	settled-majority
+c2a_L03	6	X-DOT	M	A:X	settled-majority
 c2a_L03	7	PHI	H		agree-AB
 c2a_L03	8	X-CURL	M		agree-AB
 c2a_L03	9	VENUS	H	B:O-DOT-STEM	settled-majority
-c2a_L03	10	EIGHT	M	B:ARC-LOOPS	differ-noC
-c2a_L03	11	X	M	B:PCT-SLASH	differ-noC
-c2a_L03	12	O-DASH2	M	B:BLOB	differ-noC
+c2a_L03	10	ARC-LOOPS	H	A:EIGHT	settled-majority
+c2a_L03	11	PCT-SLASH	H	A:X	settled-majority
+c2a_L03	12	O-DASH2	H	B:BLOB	settled-majority
 c2a_L03	13	CC-DASH	H	B:DASH-H	settled-majority
-c2a_L03	14	LAMBDA	M	B:A-LOOP	differ-noC
-c2a_L03	15	PCT	M	B:PCT-SLASH	differ-noC
+c2a_L03	14	A-LOOP	M	A:LAMBDA	settled-majority
+c2a_L03	15	PCT-SLASH	H	A:PCT	settled-majority
 c2a_L03	16	X	H		agree-AB
-c2a_L03	17	O-SLASH	M	B:LOOP-TAIL	differ-noC
+c2a_L03	17	O-SLASH	M	B:LOOP-TAIL	settled-majority
 c2a_L03	18	BOX-GRID	H		agree-AB
 c2a_L03	19	_	M	A:BAR-SOLID	settled-majority
-c2a_L03	20	X	M	B:_	differ-noC
-c2a_L03	21	TRIDENT	M	B:U-CROSS	differ-noC
-c2a_L03	22	BAR-SOLID	M	B:_	differ-noC
+c2a_L03	20	X	M	A:X;B:_;C:X-DOT	base-settled
+c2a_L03	21	TRIDENT	M	B:U-CROSS;C:V-LOOP	three-way
+c2a_L03	22	_	M	A:BAR-SOLID	settled-majority
 c2a_L03	23	Y-CURL	H	B:PCT-SLASH	settled-majority
 c2a_L03	24	O-DASH2	M		agree-AB
-c2a_L03	25	X	M	B:XX-TILDE	differ-noC
-c2a_L03	26	BAR-THIN	M	B:_	differ-noC
-c2a_L04	1	BAR-THIN	M	B:_	differ-noC
+c2a_L03	25	XX-TILDE	M	A:X	settled-majority
+c2a_L03	26	_	H	A:BAR-THIN	settled-majority
+c2a_L04	1	_	H	A:BAR-THIN	settled-majority
 c2a_L04	2	_	H	A:BAR-THIN	settled-majority
-c2a_L04	3	BAR-THIN	M	B:_	differ-noC
-c2a_L04	4	BAR-SOLID	M	B:_	differ-noC
+c2a_L04	3	_	H	A:BAR-THIN	settled-majority
+c2a_L04	4	_	M	A:BAR-SOLID	settled-majority
 c2a_L04	5	VENUS	M		agree-AB
 c2a_L04	6	X	M		agree-AB
-c2a_L04	7	X	M	B:SIX-CURL	differ-noC
+c2a_L04	7	X	M	B:SIX-CURL;C:NOTE	three-way
 c2a_L04	8	ARCH-DOTS	M		agree-AB
 c2a_L04	9	SMILE	M		agree-AB
 c2a_L04	10	AMP	M	B:O-BAR-CC	settled-majority
-c2a_L04	11	II-DASH	M	B:ARCH-DOTS	differ-noC
-c2a_L04	12	NINE	M	B:Y-CURL	differ-noC
+c2a_L04	11	II-DASH	M	B:ARCH-DOTS	settled-majority
+c2a_L04	12	Y-CURL	H	A:NINE	settled-majority
 c2a_L04	13	SCROLL-X	M		agree-AB
 c2a_L04	14	V-DOT	M		agree-AB
-c2a_L04	15	DBL-SLASH	M	B:CHEVRON2	differ-noC
+c2a_L04	15	CHEVRON2	H	A:DBL-SLASH	settled-majority
 c2a_L04	16	BLOB	M	B:_	settled-majority
 c2a_L04	17	WAVE	M		agree-AB
 c2a_L04	18	DAGGER-O	H		agree-AB
-c2a_L04	19	X	M	B:X-O	differ-noC
+c2a_L04	19	X-O	M	A:X	settled-majority
 c2a_L04	20	X	H		agree-AB
-c2a_L04	21	BLOB	M	B:_	differ-noC
-c2a_L04	22	C-BAR-X	M	B:LOOP-STEM	differ-noC
+c2a_L04	21	_	M	A:BLOB	settled-majority
+c2a_L04	22	C-BAR-X	M	B:LOOP-STEM	settled-majority
 c2a_L04	23	PCT	H	B:PCT-SLASH	settled-majority
-c2a_L04	24	OX-TILDE	M	B:X-O	differ-noC
+c2a_L04	24	OX-TILDE	M	B:X-O	settled-majority
 c2a_L04	25	BAR-THIN	M		agree-AB
-c2a_L04	26	BAR-THIN	M	B:DASH-V	differ-noC
-c2a_L04	27	DASH-V	M	B:_	differ-noC
+c2a_L04	26	DASH-V	M	A:BAR-THIN	settled-majority
+c2a_L04	27	_	H	A:DASH-V	settled-majority
 c2a_L05	1	_	M		agree-AB
 c2a_L05	2	_	M		agree-AB
 c2a_L05	3	_	H	A:DASH-V	settled-majority
-c2a_L05	4	BAR-SOLID	M	B:_	differ-noC
+c2a_L05	4	_	M	A:BAR-SOLID	settled-majority
 c2a_L05	5	PICT-HOUSE	H		agree-AB
-c2a_L05	6	EIGHT	M	B:THREE	differ-noC
-c2a_L05	7	X	M	B:_	differ-noC
+c2a_L05	6	EIGHT	M	B:THREE;C:DAGGER-O	three-way
+c2a_L05	7	X	M	B:_;C:II-DASH	three-way
 c2a_L05	8	OX-TILDE	H		agree-AB
 c2a_L05	9	LOOP-STEM	H		agree-AB
 c2a_L05	10	C-DOT	H		agree-AB
 c2a_L05	11	C-DOT	H		agree-AB
 c2a_L05	12	_	M	A:BAR-SOLID	settled-majority
-c2a_L05	13	BAR-THIN	M	B:_	differ-noC
-c2a_L05	14	X	M	B:X-DOT	differ-noC
-c2a_L05	15	CIRC-O	M	B:O-DASH2	differ-noC
+c2a_L05	13	_	M	A:BAR-THIN	settled-majority
+c2a_L05	14	X-DOT	M	A:X	settled-majority
+c2a_L05	15	O	M	A:CIRC-O;B:O-DASH2;C:O-TILDE	base-settled
 c2a_L05	16	_	M	A:BLOB	settled-majority
-c2a_L05	17	X	M	B:PCT-SLASH	differ-noC
-c2a_L05	18	X	M	B:Z-CURL	differ-noC
-c2a_L05	19	X	M	B:X-DOT	differ-noC
+c2a_L05	17	X	M	B:PCT-SLASH;C:Y-CURL	three-way
+c2a_L05	18	X	M	B:Z-CURL;C:SCROLL-X	three-way
+c2a_L05	19	X-DOT	M	A:X	settled-majority
 c2a_L05	20	X	M	B:A-LOOP;C:LAMBDA	three-way
 c2a_L05	21	MULTI	M		agree-AB
 c2a_L05	22	T-LETTER	M		agree-AB
-c2a_L05	23	S-CURL	M	B:O-BRACKET	differ-noC
+c2a_L05	23	S-CURL	M	B:O-BRACKET;C:QQ-O	three-way
 c2a_L05	24	PCT	H		agree-AB
 c2a_L05	25	O-TILDE	M		agree-AB
-c2a_L05	26	X	M	B:X-DOT	differ-noC
+c2a_L05	26	X-DOT	M	A:X	settled-majority
 c2a_L05	27	PHI	H		agree-AB
 c2a_L05	28	O-TILDE	M		agree-AB
-c2a_L05	29	DBL-SLASH	M	B:CHEVRON	differ-noC
+c2a_L05	29	DBL-SLASH	M	B:CHEVRON;C:CHEVRON2	three-way
 c2a_L05	30	DBL-SLASH	M	B:BAR-THIN;C:CHEVRON2	three-way
 c2a_L05	31	_	M		agree-AB
-c2a_L05	32	DAGGER-O	M	B:SIX-CURL	differ-noC
-c2a_L05	33	X	M	B:X-DOT	differ-noC
-c2a_L05	34	BAR-THIN	M	B:_	differ-noC
+c2a_L05	32	DAGGER-O	M	B:SIX-CURL;C:NOTE	three-way
+c2a_L05	33	X	H	B:X-DOT	settled-majority
+c2a_L05	34	_	H	A:BAR-THIN	settled-majority
 c2a_L06	1	_	H	A:BAR-THIN	settled-majority
-c2a_L06	2	X	M	B:_	differ-noC
+c2a_L06	2	_	H	A:X	settled-majority
 c2a_L06	3	_	M		agree-AB
-c2a_L06	4	BAR-THIN	M	B:_	differ-noC
+c2a_L06	4	_	H	A:BAR-THIN	settled-majority
 c2a_L06	5	DOLLAR	M		agree-AB
 c2a_L06	6	X	H		agree-AB
-c2a_L06	7	PCT-SLASH	M	B:O-DASH-DOTS	differ-noC
+c2a_L06	7	PCT-SLASH	M	B:O-DASH-DOTS;C:DOT-LINE-O	three-way
 c2a_L06	8	X	M		agree-AB
 c2a_L06	9	X	M		agree-AB
 c2a_L06	10	THREE	M		agree-AB
@@ -165,68 +165,68 @@ c2a_L06	14	CROSS-T	H		agree-AB
 c2a_L06	15	CC-DASH	H		agree-AB
 c2a_L06	16	II-DASH	H		agree-AB
 c2a_L06	17	PHI	H		agree-AB
-c2a_L06	18	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L06	19	X	M	B:PCT	differ-noC
-c2a_L06	20	DBL-SLASH	M	B:CHEVRON	differ-noC
+c2a_L06	18	PCT-SLASH	H	A:PCT	settled-majority
+c2a_L06	19	PCT	M	A:X	settled-majority
+c2a_L06	20	DBL-SLASH	M	B:CHEVRON;C:CHEVRON2	three-way
 c2a_L06	21	DBL-SLASH	M	B:C-DOT;C:CHEVRON2	three-way
 c2a_L06	22	CIRC-O	M		agree-AB
-c2a_L06	23	O-DASH2	M	B:II-O	differ-noC
-c2a_L06	24	C-BAR-X	M	B:X-CURL	differ-noC
-c2a_L06	25	CIRC-O	M	B:THETA-BAR	differ-noC
+c2a_L06	23	II-O	M	A:O-DASH2	settled-majority
+c2a_L06	24	C-BAR-X	M	B:X-CURL	settled-majority
+c2a_L06	25	CIRC-O	M	B:THETA-BAR;C:O-PLUS	three-way
 c2a_L06	26	VEE	H		agree-AB
 c2a_L06	27	WAVE-V	M		agree-AB
 c2a_L06	28	PCT	H		agree-AB
 c2a_L06	29	X	M	A:X;B:SLASH;C:X-DOT	base-settled
 c2a_L06	30	VENUS	H		agree-AB
-c2a_L06	31	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L07	1	X-DOT	M	B:X-CURL	differ-noC
+c2a_L06	31	PCT-SLASH	M	A:PCT	settled-majority
+c2a_L07	1	X	M	A:X-DOT;B:X-CURL;C:X	base-settled
 c2a_L07	2	ARCH-DASH	M		agree-AB
 c2a_L07	3	II-DASH	H		agree-AB
-c2a_L07	4	NINE-BAR	M	B:II-SLASH	differ-noC
+c2a_L07	4	NINE-BAR	H	B:II-SLASH	settled-majority
 c2a_L07	5	_	M	A:BAR-SOLID	settled-majority
 c2a_L07	6	DAGGER-O	H		agree-AB
 c2a_L07	7	C-DOT	M		agree-AB
-c2a_L07	8	QQ-O	M	B:MULTI	differ-noC
+c2a_L07	8	QQ-O	M	B:MULTI	settled-majority
 c2a_L07	9	X	M		agree-AB
 c2a_L07	10	OX-TILDE	H		agree-AB
 c2a_L07	11	STAR	H		agree-AB
-c2a_L07	12	VENUS	M	B:LOOP-STEM	differ-noC
+c2a_L07	12	LOOP-STEM	H	A:VENUS	settled-majority
 c2a_L07	13	OO-TILDE	H		agree-AB
-c2a_L07	14	X	M	B:PCT-SLASH	differ-noC
+c2a_L07	14	PCT-SLASH	M	A:X	settled-majority
 c2a_L07	15	PICT-FIGURE	M		agree-AB
 c2a_L07	16	PICT-ARROW	H		agree-AB
 c2a_L07	17	PICT-TREE	M		agree-AB
 c2a_L07	18	X	M	B:X-SLASH;C:MULTI	seg-flag-C
-c2a_L07	19	O-DASH2	M	B:SIX-CURL	differ-noC
-c2a_L07	20	CC-DASH	M	B:QQ-DASH	differ-noC
-c2a_L07	21	X	M	B:X-DOT	differ-noC
+c2a_L07	19	O	M	A:O-DASH2;B:SIX-CURL;C:O-TILDE	base-settled
+c2a_L07	20	CC-DASH	M	B:QQ-DASH	settled-majority
+c2a_L07	21	X-DOT	M	A:X	settled-majority
 c2a_L07	22	Y-CURL	H	A:X	settled-majority
 c2a_L07	23	CROSS-T	H		agree-AB
-c2a_L07	24	C-DOT	M	B:PICT-FACE	differ-noC
+c2a_L07	24	C-DOT	M	B:PICT-FACE	settled-majority
 c2a_L07	25	STAR	H		agree-AB
-c2a_L07	26	AMP	M	B:QQ-DASH	differ-noC
+c2a_L07	26	AMP	M	B:QQ-DASH;C:CC-DASH	three-way
 c2a_L07	27	PHI	H		agree-AB
 c2a_L07	28	SCROLL-X	M		agree-AB
 c2a_L07	29	SLASH	H		agree-AB
-c2a_L07	30	X	M	B:X-O	differ-noC
+c2a_L07	30	X	M	A:X;B:X-O;C:O-SLASH	base-settled
 c2a_L07	31	OX-TILDE	H		agree-AB
 c2a_L07	32	_	M		agree-AB
 c2a_L08	1	DASH-H	H		agree-AB
 c2a_L08	2	BAR-THIN	M	B:DASH-V	settled-majority
-c2a_L08	3	X	M	B:O-SLASH	differ-noC
-c2a_L08	4	X	M	B:S-CURL	differ-noC
-c2a_L08	5	_	M	B:BAR-THIN	differ-noC
+c2a_L08	3	O-SLASH	M	A:X	settled-majority
+c2a_L08	4	S-CURL	M	A:X	settled-majority
+c2a_L08	5	_	M	B:BAR-THIN	settled-majority
 c2a_L08	6	PCT	M	B:PCT-SLASH	settled-majority
-c2a_L08	7	X	M	B:BLOB	differ-noC
+c2a_L08	7	X	M	B:BLOB	settled-majority
 c2a_L08	8	Y-CURL	H		agree-AB
-c2a_L08	9	X	M	B:BLOB	differ-noC
-c2a_L08	10	CIRC-O	M	B:BLOB	differ-noC
+c2a_L08	9	X	M	B:BLOB;C:_	seg-flag-C
+c2a_L08	10	CIRC-O	M	B:BLOB;C:O-TILDE	three-way
 c2a_L08	11	PICT-CROSSED	M		agree-AB
 c2a_L08	12	MULTI	M	B:II-O	settled-majority
-c2a_L08	13	QQ-O	M	B:ARCH-DOTS	differ-noC
+c2a_L08	13	QQ-O	M	B:ARCH-DOTS;C:QUESTION	three-way
 c2a_L08	14	X	M		agree-AB
-c2a_L08	15	GEAR-DOT	M	B:C-DOT	differ-noC
-c2a_L08	16	XX-TILDE	M	B:MULTI	differ-noC
+c2a_L08	15	GEAR-DOT	M	B:C-DOT;C:O-DASH2	three-way
+c2a_L08	16	MULTI	H	A:XX-TILDE	settled-majority
 c2a_L08	17	XX-TILDE	M		agree-AB
 c2a_L08	18	II-O	M		agree-AB
 c2a_L08	19	O-DOTS	M		agree-AB
@@ -235,156 +235,156 @@ c2a_L08	21	OX-TILDE	M	B:MULTI	settled-majority
 c2a_L08	22	ARCH-DASH	M		agree-AB
 c2a_L08	23	MULTI	M		agree-AB
 c2a_L08	24	MULTI	M		agree-AB
-c2a_L08	25	XX-TILDE	M	B:X-CURL	differ-noC
+c2a_L08	25	XX-TILDE	M	B:X-CURL;C:MULTI	seg-flag-C
 c2a_L08	26	_	M		agree-AB
-c2a_L09	1	GEAR-DOT	M	B:O-TILDE	differ-noC
-c2a_L09	2	AMP	M	B:II-O	differ-noC
+c2a_L09	1	O-TILDE	M	A:GEAR-DOT	settled-majority
+c2a_L09	2	II-O	H	A:AMP	settled-majority
 c2a_L09	3	DOUBLE-LOOP	M		agree-AB
 c2a_L09	4	LAMBDA	H		agree-AB
 c2a_L09	5	X	M	A:X;B:X-LOOP;C:X-O	base-settled
-c2a_L09	6	II-DASH	M	B:II-O	differ-noC
+c2a_L09	6	II	M	A:II-DASH;B:II-O;C:II-TILDE	base-settled
 c2a_L09	7	H-LETTER	M		agree-AB
-c2a_L09	8	BAR-SOLID	M	B:_	differ-noC
+c2a_L09	8	_	H	A:BAR-SOLID	settled-majority
 c2a_L09	9	D-LETTER	M		agree-AB
 c2a_L09	10	D-LETTER	M		agree-AB
 c2a_L09	11	L-LETTER	M		agree-AB
 c2a_L09	12	M-LETTER	M		agree-AB
-c2a_L09	13	BAR-SOLID	M	B:_	differ-noC
+c2a_L09	13	_	H	A:BAR-SOLID	settled-majority
 c2a_L09	14	F-LETTER	M		agree-AB
 c2a_L09	15	_	M	A:BLOB	settled-majority
-c2a_L09	16	BAR-SOLID	M	B:_	differ-noC
-c2a_L09	17	BAR-SOLID	M	B:_	differ-noC
+c2a_L09	16	_	H	A:BAR-SOLID	settled-majority
+c2a_L09	17	_	H	A:BAR-SOLID	settled-majority
 c2a_L09	18	MULTI	M		agree-AB
 c2a_L09	19	DAGGER-O	H		agree-AB
-c2a_L09	20	CROSS-T	M	B:BOX-X	differ-noC
+c2a_L09	20	CROSS-T	M	B:BOX-X;C:X-DASH	three-way
 c2a_L09	21	PHI	H		agree-AB
 c2a_L09	22	B-SCRIPT	H	B:BLOB	settled-majority
 c2a_L09	23	II-DASH	M		agree-AB
-c2a_L09	24	MULTI	M	B:HOOK-P	differ-noC
-c2a_L09	25	DBL-SLASH	M	B:S-CURL	differ-noC
-c2a_L09	26	BLOB	M	B:_	differ-noC
+c2a_L09	24	MULTI	M	B:HOOK-P;C:X-SLASH	three-way
+c2a_L09	25	DBL-SLASH	M	B:S-CURL;C:II-SLASH	three-way
+c2a_L09	26	BLOB	M	B:_;C:GEAR-DOT	three-way
 c2a_L09	27	MULTI	M	B:SCROLL-X;C:BOX-X	three-way
 c2a_L09	28	C-DOT	M		agree-AB
-c2a_L09	29	BAR-SOLID	M	B:_	differ-noC
+c2a_L09	29	_	M	A:BAR-SOLID	settled-majority
 c2a_L09	30	O-TILDE	M		agree-AB
-c2a_L09	31	X	M	B:X-BAR	differ-noC
-c2a_L09	32	PHI	M	B:O-DOT-STEM	differ-noC
+c2a_L09	31	X	H	B:X-BAR	settled-majority
+c2a_L09	32	PHI	H	B:O-DOT-STEM	settled-majority
 c2a_L09	33	ARC-LOOPS	M		agree-AB
 c2a_L09	34	Y-CURL	H	B:X-O	settled-majority
-c2a_L09	35	BLOB	M	B:_	differ-noC
-c2a_L09	36	CIRC-O	M	B:_	differ-noC
-c2a_L09	37	PCT-SLASH	M	B:PCT	differ-noC
+c2a_L09	35	_	H	A:BLOB	settled-majority
+c2a_L09	36	_	M	A:CIRC-O	settled-majority
+c2a_L09	37	PCT	H	A:PCT-SLASH	settled-majority
 c2a_L09	38	CC-DASH	M	B:_;C:PCT	three-way
 c2a_L09	39	OX	H		agree-AB
-c2a_L09	40	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L09	41	DASH-V	M	B:_	differ-noC
-c2a_L10	1	FIVE	M	B:S-CURL	differ-noC
+c2a_L09	40	PCT-SLASH	M	A:PCT	settled-majority
+c2a_L09	41	_	H	A:DASH-V	settled-majority
+c2a_L10	1	FIVE	M	B:S-CURL	settled-majority
 c2a_L10	2	VENUS	M	B:O-DOT-STEM	settled-majority
 c2a_L10	3	_	M		agree-AB
 c2a_L10	4	II-DASH	H		agree-AB
-c2a_L10	5	PCT-SLASH	M	B:_	differ-noC
-c2a_L10	6	F-LETTER	M	B:PICT-LEAF	differ-noC
-c2a_L10	7	QQ-O	M	B:TWO	differ-noC
+c2a_L10	5	_	M	A:PCT-SLASH	settled-majority
+c2a_L10	6	F-LETTER	H	B:PICT-LEAF	settled-majority
+c2a_L10	7	QQ-O	M	B:TWO	settled-majority
 c2a_L10	8	X-DOT	M	A:X	settled-majority
 c2a_L10	9	SUN	H		agree-AB
-c2a_L10	10	LOOP-TAIL	M	B:O-PLUS	differ-noC
-c2a_L10	11	PCT	M	B:MULTI	differ-noC
-c2a_L10	12	NOTE	M	B:SIX-CURL	differ-noC
+c2a_L10	10	LOOP-TAIL	M	B:O-PLUS	settled-majority
+c2a_L10	11	PCT	M	B:MULTI;C:EIGHT	three-way
+c2a_L10	12	NOTE	M	B:SIX-CURL	settled-majority
 c2a_L10	13	CC-DASH	H	B:QQ-DASH	settled-majority
 c2a_L10	14	X-O	M		agree-AB
-c2a_L10	15	MULTI	M	B:C-BAR-X	differ-noC
+c2a_L10	15	MULTI	M	B:C-BAR-X;C:X-DASH	three-way
 c2a_L10	16	PICT-FISH	M		agree-AB
-c2a_L10	17	PCT-SLASH	M	B:PCT	differ-noC
-c2a_L10	18	O-SLASH	M	B:LOOP-STEM	differ-noC
+c2a_L10	17	PCT	H	A:PCT-SLASH	settled-majority
+c2a_L10	18	O-SLASH	M	B:LOOP-STEM;C:NINE	three-way
 c2a_L10	19	DOTS-TILDE	M		agree-AB
 c2a_L10	20	PICT-BARREL	H	B:GEAR-DOT	settled-majority
-c2a_L10	21	DBL-SLASH	M	B:DASH-H	differ-noC
+c2a_L10	21	DBL-SLASH	M	B:DASH-H	settled-majority
 c2a_L10	22	SIX-CURL	M		agree-AB
 c2a_L10	23	X	M		agree-AB
-c2a_L10	24	X	M	B:X-CURL	differ-noC
-c2a_L10	25	Y-CURL	M	B:O-DASH2	differ-noC
+c2a_L10	24	X-CURL	H	A:X	settled-majority
+c2a_L10	25	O-DASH2	H	A:Y-CURL	settled-majority
 c2a_L10	26	SCROLL-X	M		agree-AB
 c2a_L10	27	Y-CURL	M	B:VEE;C:V-DOT	three-way
 c2a_L10	28	DOTS-TILDE	M		agree-AB
 c2a_L10	29	PCT	H		agree-AB
 c2a_L10	30	X	H		agree-AB
 c2a_L10	31	X	H		agree-AB
-c2a_L10	32	O-DASH2	M	B:LOOP-TAIL	differ-noC
-c2a_L10	33	BAR-THIN	M	B:_	differ-noC
+c2a_L10	32	O	M	A:O-DASH2;B:LOOP-TAIL;C:O-TILDE	base-settled
+c2a_L10	33	_	H	A:BAR-THIN	settled-majority
 c2a_L11	1	GEAR-DOT	M		agree-AB
-c2a_L11	2	VENUS	M	B:SLASH	differ-noC
+c2a_L11	2	VENUS	M	B:SLASH;C:PCT	three-way
 c2a_L11	3	_	M		agree-AB
 c2a_L11	4	X	M		agree-AB
 c2a_L11	5	EIGHT	M	B:X-LOOP;C:O-SLASH	three-way
-c2a_L11	6	CC-O	M	B:PICT-FACE	differ-noC
-c2a_L11	7	CROSS-T	M	B:X	differ-noC
-c2a_L11	8	CC-DASH	M	B:QQ-DASH	differ-noC
+c2a_L11	6	CC-O	M	B:PICT-FACE	settled-majority
+c2a_L11	7	CROSS-T	M	B:X;C:X-CURL	three-way
+c2a_L11	8	CC-DASH	H	B:QQ-DASH	settled-majority
 c2a_L11	9	XX-TILDE	H		agree-AB
 c2a_L11	10	OX-TILDE	M	A:MULTI	settled-majority
-c2a_L11	11	S-CURL	M	B:_	differ-noC
-c2a_L11	12	SQUIG-DOT	M	B:QUESTION	differ-noC
+c2a_L11	11	S-CURL	M	B:_	settled-majority
+c2a_L11	12	SQUIG-DOT	M	B:QUESTION	settled-majority
 c2a_L11	13	X	H		agree-AB
-c2a_L11	14	WAVE	M	B:DASH-H	differ-noC
+c2a_L11	14	WAVE	H	B:DASH-H	settled-majority
 c2a_L11	15	PCT	M	B:PHI;C:O-SLASH	three-way
-c2a_L11	16	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L11	17	AMP	M	B:II-O	differ-noC
-c2a_L11	18	Y-CURL	M	B:V-DOT	differ-noC
+c2a_L11	16	PCT	H	B:PCT-SLASH	settled-majority
+c2a_L11	17	AMP	M	B:II-O;C:CC-O	three-way
+c2a_L11	18	V-DOT	H	A:Y-CURL	settled-majority
 c2a_L11	19	XX-TILDE	H		agree-AB
 c2a_L11	20	STAR	H		agree-AB
 c2a_L11	21	LOOP-STEM	M	B:SLASH;C:DBL-SLASH	three-way
 c2a_L11	22	BAR-THIN	M		agree-AB
-c2a_L11	23	CC-O	M	B:O-BRACKET	differ-noC
+c2a_L11	23	CC-O	M	B:O-BRACKET	settled-majority
 c2a_L11	24	X	M		agree-AB
 c2a_L11	25	WAVE-V	M		agree-AB
 c2a_L11	26	C-DOT	M		agree-AB
-c2a_L11	27	Y-CURL	M	B:PCT-SLASH	differ-noC
-c2a_L11	28	X	M	B:X-BAR	differ-noC
+c2a_L11	27	PCT-SLASH	H	A:Y-CURL	settled-majority
+c2a_L11	28	X	M	A:X;B:X-BAR;C:X-SLASH	base-settled
 c2a_L11	29	CC-O	H	B:O-BAR-CC	settled-majority
-c2a_L11	30	X	M	B:X-DOT	differ-noC
+c2a_L11	30	X-DOT	M	A:X	settled-majority
 c2a_L11	31	O-BAR-O	H		agree-AB
-c2a_L11	32	DASH-V	M	B:_	differ-noC
-c2a_L12	1	X	M	B:X-O	differ-noC
+c2a_L11	32	_	H	A:DASH-V	settled-majority
+c2a_L12	1	X-O	M	A:X	settled-majority
 c2a_L12	2	LOOP-STEM	M	A:VENUS	settled-majority
-c2a_L12	3	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L12	4	BAR-THIN	M	B:_	differ-noC
+c2a_L12	3	PCT-SLASH	M	A:PCT	settled-majority
+c2a_L12	4	BAR-THIN	M	B:_;C:BAR-SOLID	three-way
 c2a_L12	5	X	M		agree-AB
 c2a_L12	6	S-CURL	M		agree-AB
-c2a_L12	7	BAR-SOLID	M	B:_	differ-noC
+c2a_L12	7	BLOB	M	A:BAR-SOLID;B:_;C:BLOB	family-settled
 c2a_L12	8	PCT-SLASH	M		agree-AB
 c2a_L12	9	BAR-SOLID	M	B:_	settled-majority
-c2a_L12	10	X	M	B:X-O	differ-noC
+c2a_L12	10	X-O	M	A:X	settled-majority
 c2a_L12	11	MULTI	M		agree-AB
 c2a_L12	12	X	M		agree-AB
 c2a_L12	13	X-DASH	M		agree-AB
-c2a_L12	14	AMP	M	B:O-BAR-CC	differ-noC
-c2a_L12	15	AMP	M	B:MULTI	differ-noC
+c2a_L12	14	AMP	M	B:O-BAR-CC;C:CC-O	three-way
+c2a_L12	15	MULTI	M	A:AMP	settled-majority
 c2a_L12	16	C-BAR-X	M		agree-AB
 c2a_L12	17	LOOP-STEM	H		agree-AB
 c2a_L12	18	PICT-LEAF	H		agree-AB
 c2a_L12	19	EIGHT	H	B:DAGGER-O	settled-majority
-c2a_L12	20	C-DOT	M	B:PICT-FACE	differ-noC
+c2a_L12	20	C-DOT	M	B:PICT-FACE	settled-majority
 c2a_L12	21	STAR	H		agree-AB
-c2a_L12	22	MULTI	M	B:LOOP-STEM	differ-noC
-c2a_L12	23	NOTE	M	B:SIX-CURL	differ-noC
+c2a_L12	22	MULTI	M	B:LOOP-STEM;C:II-O	three-way
+c2a_L12	23	NOTE	M	B:SIX-CURL	settled-majority
 c2a_L12	24	QUESTION	M		agree-AB
 c2a_L12	25	QUESTION	H	B:HOOK-L	settled-majority
-c2a_L12	26	CIRC-O	M	B:O-TILDE	differ-noC
+c2a_L12	26	O-TILDE	M	A:CIRC-O	settled-majority
 c2a_L12	27	X	M		agree-AB
 c2a_L12	28	X	M		agree-AB
 c2a_L12	29	C-DOT	M		agree-AB
-c2a_L12	30	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L12	31	BAR-SOLID	M	B:_	differ-noC
+c2a_L12	30	PCT-SLASH	M	A:PCT	settled-majority
+c2a_L12	31	_	M	A:BAR-SOLID	settled-majority
 c2a_L12	32	CROSS-T	M	B:X-DASH;C:X-CURL	three-way
 c2a_L12	33	PHI	H		agree-AB
 c2a_L12	34	X-SLASH	M		agree-AB
 c2a_L12	35	PICT-JUG	M		agree-AB
-c2a_L12	36	DASH-V	M	B:_	differ-noC
-c2a_L13	1	BLOB	M	B:_	differ-noC
-c2a_L13	2	ARCH-DASH	M	B:CC-DASH	differ-noC
+c2a_L12	36	_	H	A:DASH-V	settled-majority
+c2a_L13	1	_	M	A:BLOB	settled-majority
+c2a_L13	2	ARCH-DASH	M	B:CC-DASH;C:U-DASH	three-way
 c2a_L13	3	VENUS	M	B:QQ-O;C:ARCH-O	three-way
-c2a_L13	4	BAR-SOLID	M	B:_	differ-noC
-c2a_L13	5	BAR-THIN	M	B:_	differ-noC
-c2a_L13	6	BLOB	M	B:_	differ-noC
+c2a_L13	4	BAR-SOLID	M	B:_	settled-majority
+c2a_L13	5	BAR-THIN	M	B:_;C:BAR-SOLID	three-way
+c2a_L13	6	BLOB	M	A:BLOB;B:_;C:BAR-SOLID	family-settled
 c2a_L13	7	ARC-LOOPS	H		agree-AB
 c2a_L13	8	WAVE	H		agree-AB
 c2a_L13	9	PCT	H		agree-AB
@@ -393,36 +393,36 @@ c2a_L13	11	CIRC-O	M		agree-AB
 c2a_L13	12	X	H		agree-AB
 c2a_L13	13	V-DOT	M		agree-AB
 c2a_L13	14	X-CURL	M		agree-AB
-c2a_L13	15	STAR	M	B:THETA-BAR	differ-noC
+c2a_L13	15	THETA-BAR	H	A:STAR	settled-majority
 c2a_L13	16	PCT	H		agree-AB
 c2a_L13	17	PICT-TREE	H		agree-AB
 c2a_L13	18	Y-CURL	H		agree-AB
 c2a_L13	19	PHI	H		agree-AB
-c2a_L13	20	LOOP-STEM	M	B:THREE	differ-noC
-c2a_L13	21	CIRC-O	M	B:_	differ-noC
+c2a_L13	20	LOOP-STEM	M	B:THREE	settled-majority
+c2a_L13	21	CIRC-O	M	B:_;C:BLOB	three-way
 c2a_L13	22	PICT-HOUSE	H		agree-AB
 c2a_L13	23	DOTS-TILDE	M		agree-AB
 c2a_L13	24	_	M	A:BAR-SOLID	settled-majority
-c2a_L13	25	BAR-SOLID	M	B:_	differ-noC
+c2a_L13	25	_	M	A:BAR-SOLID	settled-majority
 c2a_L13	26	X	H		agree-AB
 c2a_L13	27	_	M		agree-AB
-c2a_L13	28	BLOB	M	B:DASH-V	differ-noC
-c2a_L13	29	BAR-THIN	M	B:_	differ-noC
+c2a_L13	28	BLOB	M	A:BLOB;B:DASH-V;C:BAR-SOLID	family-settled
+c2a_L13	29	_	M	A:BAR-THIN	settled-majority
 c2a_L13	30	X	H		agree-AB
 c2a_L13	31	_	M	A:BAR-SOLID	settled-majority
 c2a_L13	32	X	M		agree-AB
-c2a_L13	33	LOOP-STEM	M	B:O-DOT-STEM	differ-noC
+c2a_L13	33	LOOP-STEM	M	B:O-DOT-STEM;C:NOTE	three-way
 c2a_L13	34	O-BAR-CC	M		agree-AB
 c2a_L13	35	X	H		agree-AB
-c2a_L13	36	CROSS-T	M	B:X	differ-noC
-c2a_L13	37	O-TILDE	M	B:U-DASH	differ-noC
+c2a_L13	36	CROSS-T	M	B:X;C:X-CURL	three-way
+c2a_L13	37	O-TILDE	M	B:U-DASH	settled-majority
 c2a_L13	38	BUCKET	M		agree-AB
 c2a_L13	39	_	M	A:BAR-THIN	settled-majority
 c2a_L14	1	PCT	H		agree-AB
-c2a_L14	2	O-SLASH	M	B:X-LOOP	differ-noC
+c2a_L14	2	O-SLASH	H	B:X-LOOP	settled-majority
 c2a_L14	3	LOOP-STEM	H		agree-AB
-c2a_L14	4	QQ-O	M	B:TILDE-DASH	differ-noC
-c2a_L14	5	EIGHT	M	B:DAGGER-O	differ-noC
+c2a_L14	4	QQ-O	M	B:TILDE-DASH;C:O-TILDE	three-way
+c2a_L14	5	DAGGER-O	H	A:EIGHT	settled-majority
 c2a_L14	6	VENUS	H		agree-AB
 c2a_L14	7	X	H		agree-AB
 c2a_L14	8	X-CURL	M	B:X-O	settled-majority
@@ -432,195 +432,195 @@ c2a_L14	11	A-LOOP	H		agree-AB
 c2a_L14	12	X-CURL	M		agree-AB
 c2a_L14	13	PHI	H		agree-AB
 c2a_L14	14	WAVE	H		agree-AB
-c2a_L14	15	X	M	B:X-DOT	differ-noC
+c2a_L14	15	X-DOT	M	A:X	settled-majority
 c2a_L14	16	X	M		agree-AB
-c2a_L14	17	SLASH	M	B:X-CURL	differ-noC
+c2a_L14	17	SLASH	M	B:X-CURL;C:X-DASH	three-way
 c2a_L14	18	CIRC-O	M		agree-AB
 c2a_L14	19	CC-DASH	H		agree-AB
 c2a_L14	20	PCT	H		agree-AB
 c2a_L14	21	X	M		agree-AB
 c2a_L14	22	X	M		agree-AB
-c2a_L14	23	O-BAR-CC	M	B:AMP	differ-noC
+c2a_L14	23	O-BAR-CC	M	B:AMP;C:CC-O	three-way
 c2a_L14	24	PCT-SLASH	H	A:Y-CURL	settled-majority
-c2a_L14	25	X	M	B:SCROLL-X	differ-noC
+c2a_L14	25	SCROLL-X	H	A:X	settled-majority
 c2a_L14	26	X	H		agree-AB
 c2a_L14	27	CIRC-O	M		agree-AB
 c2a_L14	28	PCT-SLASH	H		agree-AB
 c2a_L14	29	PHI	H		agree-AB
-c2a_L14	30	_	M	B:O-DASH2	differ-noC
-c2a_L14	31	BAR-THIN	M	B:_	differ-noC
+c2a_L14	30	O-DASH2	M	A:_	settled-majority
+c2a_L14	31	_	H	A:BAR-THIN	settled-majority
 c2a_L15	1	PICT-ANCHOR	H		agree-AB
 c2a_L15	2	THREE	M		agree-AB
 c2a_L15	3	NOTE	H	B:SIX-CURL	settled-majority
-c2a_L15	4	BLOB	M	B:_	differ-noC
-c2a_L15	5	BAR-SOLID	M	B:_	differ-noC
-c2a_L15	6	BAR-SOLID	M	B:_	differ-noC
+c2a_L15	4	BLOB	M	B:_;C:DASH-V	three-way
+c2a_L15	5	BAR-SOLID	M	B:_;C:DASH-V	three-way
+c2a_L15	6	BAR-SOLID	M	B:_;C:DASH-V	three-way
 c2a_L15	7	BAR-SOLID	M	B:_	settled-majority
-c2a_L15	8	BAR-THIN	M	B:_	differ-noC
-c2a_L15	9	BAR-SOLID	M	B:_	differ-noC
-c2a_L15	10	BAR-SOLID	M	B:_	differ-noC
+c2a_L15	8	BAR-THIN	M	B:_;C:DASH-V	three-way
+c2a_L15	9	_	M	A:BAR-SOLID	settled-majority
+c2a_L15	10	_	M	A:BAR-SOLID	settled-majority
 c2a_L15	11	MULTI	M	B:LOOP-STEM	settled-majority
 c2a_L15	12	II-DASH	M		agree-AB
 c2a_L15	13	C-DOT	M		agree-AB
 c2a_L15	14	X	H		agree-AB
 c2a_L15	15	O-DASH2	H		agree-AB
-c2a_L15	16	PCT	M	B:PCT-SLASH	differ-noC
+c2a_L15	16	PCT	H	B:PCT-SLASH	settled-majority
 c2a_L15	17	C-DOT	M		agree-AB
 c2a_L15	18	PCT	H		agree-AB
-c2a_L15	19	X	M	B:X-DASH	differ-noC
+c2a_L15	19	X	M	A:X;B:X-DASH;C:X-BAR	base-settled
 c2a_L15	20	CIRC-O	M		agree-AB
-c2a_L15	21	X	M	B:STAR	differ-noC
+c2a_L15	21	STAR	H	A:X	settled-majority
 c2a_L15	22	_	H	A:BLOB	settled-majority
-c2a_L15	23	X	M	B:X-DOT	differ-noC
+c2a_L15	23	X	M	A:X;B:X-DOT;C:X-BAR	base-settled
 c2a_L15	24	X-SLASH	M		agree-AB
-c2a_L15	25	Y-CURL	M	B:V-DOT	differ-noC
+c2a_L15	25	V-DOT	M	A:Y-CURL	settled-majority
 c2a_L15	26	X	M		agree-AB
-c2a_L15	27	CHEVRON2	M	B:PICT-ARROW	differ-noC
+c2a_L15	27	PICT-ARROW	M	A:CHEVRON2	settled-majority
 c2a_L15	28	SIX-CURL	M	A:NOTE	settled-majority
 c2a_L15	29	O-BRACKET	M		agree-AB
-c2a_L15	30	AMP	M	B:EIGHT	differ-noC
-c2a_L15	31	X	M	B:X-DOT	differ-noC
-c2a_L15	32	DOUBLE-LOOP	M	B:U-CUP	differ-noC
+c2a_L15	30	EIGHT	M	A:AMP	settled-majority
+c2a_L15	31	X	M	A:X;B:X-DOT;C:X-BAR	base-settled
+c2a_L15	32	DOUBLE-LOOP	H	B:U-CUP	settled-majority
 c2a_L15	33	PCT	H		agree-AB
 c2a_L15	34	DAGGER-O	H		agree-AB
 c2a_L15	35	X-SLASH	M		agree-AB
 c2a_L15	36	_	M		agree-AB
 c2a_L16	1	O-TILDE	H	B:O-DASH2	settled-majority
 c2a_L16	2	X	H		agree-AB
-c2a_L16	3	BAR-SOLID	M	B:_	differ-noC
+c2a_L16	3	_	M	A:BAR-SOLID	settled-majority
 c2a_L16	4	PICT-CROWN	M		agree-AB
-c2a_L16	5	MULTI	M	B:O-DASH-DOTS	differ-noC
-c2a_L16	6	CC-DASH	M	B:ARCH-DOTS	differ-noC
+c2a_L16	5	MULTI	M	B:O-DASH-DOTS	settled-majority
+c2a_L16	6	CC-DASH	M	B:ARCH-DOTS;C:DOTS-TILDE	three-way
 c2a_L16	7	X	M	B:AMP;C:BLOB	three-way
 c2a_L16	8	OX-TILDE	H		agree-AB
-c2a_L16	9	PCT	M	B:PCT-SLASH	differ-noC
+c2a_L16	9	PCT	H	B:PCT-SLASH	settled-majority
 c2a_L16	10	WAVE	H		agree-AB
-c2a_L16	11	PCT	M	B:PCT-SLASH	differ-noC
-c2a_L16	12	C-DOT	M	B:_	differ-noC
+c2a_L16	11	PCT	H	B:PCT-SLASH	settled-majority
+c2a_L16	12	_	M	A:C-DOT	settled-majority
 c2a_L16	13	HOOK-P	M		agree-AB
 c2a_L16	14	A-LOOP	M		agree-AB
 c2a_L16	15	BLOB-LOOP	M		agree-AB
 c2a_L16	16	QQ-O	M		agree-AB
 c2a_L16	17	X-DOT	M	A:X	settled-majority
 c2a_L16	18	X	H		agree-AB
-c2a_L16	19	BLOB	M	B:_	differ-noC
+c2a_L16	19	_	M	A:BLOB	settled-majority
 c2a_L16	20	PCT	H		agree-AB
 c2a_L16	21	X-CURL	M		agree-AB
-c2a_L16	22	X-DASH	M	B:X-CURL	differ-noC
-c2a_L16	23	X	M	B:X-SLASH	differ-noC
+c2a_L16	22	X-DASH	M	B:X-CURL	settled-majority
+c2a_L16	23	X-SLASH	M	A:X	settled-majority
 c2a_L16	24	Y-CURL	H	B:D-LETTER	settled-majority
-c2a_L16	25	BAR-SOLID	M	B:_	differ-noC
+c2a_L16	25	_	M	A:BAR-SOLID	settled-majority
 c2a_L16	26	X	M		agree-AB
-c2a_L16	27	BAR-SOLID	M	B:_	differ-noC
-c2a_L16	28	BLOB	M	B:_	differ-noC
+c2a_L16	27	BAR-SOLID	M	B:_	settled-majority
+c2a_L16	28	BLOB	M	A:BLOB;B:_;C:BAR-SOLID	family-settled
 c2a_L16	29	X-O	M	A:Y-CURL	settled-majority
 c2a_L16	30	X	H		agree-AB
 c2a_L16	31	WAVE	H		agree-AB
 c2a_L16	32	PCT	H		agree-AB
-c2a_L17	1	BAR-THIN	M	B:_	differ-noC
-c2a_L17	2	Y-CURL	M	B:II-O	differ-noC
+c2a_L17	1	BAR-THIN	M	B:_;C:II-DASH	three-way
+c2a_L17	2	Y-CURL	M	B:II-O;C:O-BAR-O	three-way
 c2a_L17	3	CROSS-T	H		agree-AB
 c2a_L17	4	NOTE	H		agree-AB
-c2a_L17	5	PCT	M	B:MULTI	differ-noC
+c2a_L17	5	PCT	M	B:MULTI;C:OO-TILDE	three-way
 c2a_L17	6	MULTI	M	A:PICT-ANCHOR	settled-majority
 c2a_L17	7	VEE	H		agree-AB
-c2a_L17	8	X	M	B:_	differ-noC
-c2a_L17	9	II-DASH	M	B:II-TILDE	differ-noC
-c2a_L17	10	O-SLASH	M	B:SIX-CURL	differ-noC
+c2a_L17	8	X	M	B:_	settled-majority
+c2a_L17	9	II-TILDE	M	A:II-DASH	settled-majority
+c2a_L17	10	O-SLASH	M	B:SIX-CURL;C:PHI	three-way
 c2a_L17	11	C-BAR-X	M		agree-AB
 c2a_L17	12	MULTI	M		agree-AB
 c2a_L17	13	BOX-X	H		agree-AB
 c2a_L17	14	DBL-SLASH	M	B:CHEVRON;C:CHEVRON2	three-way
-c2a_L17	15	LOOP-TAIL	M	B:D-LETTER	differ-noC
+c2a_L17	15	LOOP-TAIL	M	B:D-LETTER;C:CIRC-O	three-way
 c2a_L17	16	TILDE-DASH	M		agree-AB
-c2a_L17	17	C-DOT	M	B:NINE	differ-noC
+c2a_L17	17	C-DOT	M	B:NINE;C:QUESTION	three-way
 c2a_L17	18	VENUS	M		agree-AB
-c2a_L17	19	AMP	M	B:MULTI	differ-noC
+c2a_L17	19	AMP	M	B:MULTI;C:EIGHT	three-way
 c2a_L17	20	OX	M	B:OX-TILDE	settled-majority
-c2a_L17	21	BAR-SOLID	M	B:_	differ-noC
-c2a_L17	22	BAR-SOLID	M	B:_	differ-noC
+c2a_L17	21	BAR-SOLID	M	B:_;C:O-BAR-O	three-way
+c2a_L17	22	BAR-SOLID	M	B:_;C:DASH-V	three-way
 c2a_L17	23	M-LETTER	M		agree-AB
-c2a_L17	24	NOTE	M	B:ARROW-O	differ-noC
+c2a_L17	24	NOTE	M	B:ARROW-O	settled-majority
 c2a_L17	25	OX-TILDE	M	B:X-O	settled-majority
 c2a_L17	26	X	H		agree-AB
-c2a_L17	27	NINE	M	B:SLASH	differ-noC
-c2a_L17	28	BLOB	M	B:_	differ-noC
+c2a_L17	27	NINE	M	B:SLASH;C:PCT-SLASH	three-way
+c2a_L17	28	_	M	A:BLOB	settled-majority
 c2a_L17	29	PICT-BIRD	H		agree-AB
-c2a_L17	30	_	M	B:DASH-H	differ-noC
+c2a_L17	30	_	M	B:DASH-H	settled-majority
 c2a_L17	31	_	H	A:DASH-V	settled-majority
-c2b_L01	1	X	M	B:LAMBDA	differ-noC
+c2b_L01	1	LAMBDA	M	A:X	settled-majority
 c2b_L01	2	_	M		agree-AB
-c2b_L01	3	PCT-SLASH	M	B:X	differ-noC
-c2b_L01	4	X	M	B:_	differ-noC
+c2b_L01	3	PCT	M	A:PCT-SLASH;B:X;C:PCT	family-settled
+c2b_L01	4	X	M	B:_;C:CROSS-T	three-way
 c2b_L01	5	X-DOT	M	A:X	settled-majority
 c2b_L01	6	PHI	H		agree-AB
 c2b_L01	7	PICT-LEAF	M		agree-AB
-c2b_L01	8	BAR-THIN	M	B:_	differ-noC
-c2b_L01	9	BAR-THIN	M	B:_	differ-noC
-c2b_L01	10	CROSS-T	M	B:X	differ-noC
+c2b_L01	8	BAR-THIN	M	B:_;C:CC-DASH	three-way
+c2b_L01	9	BAR-THIN	M	B:_;C:CC-DASH	three-way
+c2b_L01	10	CROSS-T	M	B:X;C:X-CURL	three-way
 c2b_L01	11	_	H	A:DASH-H	settled-majority
 c2b_L01	12	BAR-THIN	M		agree-AB
 c2b_L01	13	X	H		agree-AB
 c2b_L01	14	A-LOOP	M		agree-AB
-c2b_L01	15	X-DASH	M	B:X	differ-noC
+c2b_L01	15	X-DASH	H	B:X	settled-majority
 c2b_L01	16	_	M		agree-AB
-c2b_L01	17	X	M	B:LAMBDA	differ-noC
-c2b_L01	18	CIRC-O	M	B:_	differ-noC
+c2b_L01	17	X	M	B:LAMBDA;C:PCT	three-way
+c2b_L01	18	_	M	A:CIRC-O	settled-majority
 c2b_L01	19	OX-TILDE	M		agree-AB
 c2b_L01	20	X	H		agree-AB
 c2b_L01	21	PHI	H		agree-AB
 c2b_L01	22	V-DOT	M	A:VEE	settled-majority
 c2b_L01	23	CROSS-T	H		agree-AB
-c2b_L01	24	X	M	B:STAR	differ-noC
-c2b_L01	25	BAR-SOLID	M	B:_	differ-noC
+c2b_L01	24	STAR	H	A:X	settled-majority
+c2b_L01	25	_	H	A:BAR-SOLID	settled-majority
 c2b_L01	26	DAGGER-O	H		agree-AB
-c2b_L01	27	X	M	B:PCT-SLASH	differ-noC
+c2b_L01	27	PCT-SLASH	H	A:X	settled-majority
 c2b_L01	28	CC-DASH	M	B:C-BAR-X;C:X-BAR-CC	three-way
-c2b_L01	29	TRIDENT	M	B:DOTS-TILDE	differ-noC
-c2b_L01	30	PCT-SLASH	M	B:PCT	differ-noC
+c2b_L01	29	DOTS-TILDE	M	A:TRIDENT	settled-majority
+c2b_L01	30	PCT-SLASH	H	B:PCT	settled-majority
 c2b_L01	31	Z-CURL	M		agree-AB
 c2b_L01	32	BAR-THIN	M		agree-AB
 c2b_L01	33	BOX-8	H		agree-AB
-c2b_L01	34	O-DASH2	M	B:II-O	differ-noC
+c2b_L01	34	II-O	H	A:O-DASH2	settled-majority
 c2b_L01	35	DOUBLE-LOOP	H		agree-AB
 c2b_L01	36	OO-DASH	M		agree-AB
 c2b_L01	37	_	H	A:BAR-THIN	settled-majority
 c2b_L02	1	VEE	M		agree-AB
-c2b_L02	2	PCT	M	B:SLASH	differ-noC
-c2b_L02	3	MULTI	M	B:NOTE	differ-noC
+c2b_L02	2	PCT	M	A:PCT;B:SLASH;C:PCT-SLASH	family-settled
+c2b_L02	3	NOTE	M	A:MULTI	settled-majority
 c2b_L02	4	CC-DASH	H		agree-AB
 c2b_L02	5	CHAIN	M		agree-AB
 c2b_L02	6	Y-CURL	M		agree-AB
 c2b_L02	7	X	H		agree-AB
 c2b_L02	8	O-SLASH	M		agree-AB
-c2b_L02	9	BAR-SOLID	M	B:BLOB	differ-noC
+c2b_L02	9	BAR-SOLID	M	B:BLOB	settled-majority
 c2b_L02	10	Y-CURL	M	B:_;C:O-DOT-STEM	three-way
 c2b_L02	11	X-BAR-CC	M		agree-AB
 c2b_L02	12	MULTI	M		agree-AB
-c2b_L02	13	BLOB	M	B:_	differ-noC
-c2b_L02	14	X	M	B:_	differ-noC
+c2b_L02	13	_	M	A:BLOB	settled-majority
+c2b_L02	14	X	M	B:_;C:SEVEN	three-way
 c2b_L02	15	CC-DASH	H		agree-AB
-c2b_L02	16	X-BAR-CC	M	B:II-O	differ-noC
+c2b_L02	16	II-O	H	A:X-BAR-CC	settled-majority
 c2b_L02	17	EIGHT	H	B:DOUBLE-LOOP	settled-majority
 c2b_L02	18	X	M		agree-AB
 c2b_L02	19	OX-TILDE	H		agree-AB
-c2b_L02	20	X	M	B:X-DOT	differ-noC
-c2b_L02	21	BLOB	M	B:_	differ-noC
-c2b_L02	22	BAR-SOLID	M	B:_	differ-noC
+c2b_L02	20	X-DOT	M	A:X	settled-majority
+c2b_L02	21	_	M	A:BLOB	settled-majority
+c2b_L02	22	_	M	A:BAR-SOLID	settled-majority
 c2b_L02	23	BLOB	M	A:BLOB;B:_;C:BAR-SOLID	family-settled
-c2b_L02	24	Y-CURL	M	B:V-DOT	differ-noC
-c2b_L02	25	BLOB	M	B:_	differ-noC
-c2b_L02	26	BAR-THIN	M	B:_	differ-noC
+c2b_L02	24	V-DOT	M	A:Y-CURL	settled-majority
+c2b_L02	25	_	M	A:BLOB	settled-majority
+c2b_L02	26	_	H	A:BAR-THIN	settled-majority
 c2b_L03	1	II-DASH	H		agree-AB
 c2b_L03	2	X	M		agree-AB
 c2b_L03	3	O-SLASH	M	A:X-LOOP	settled-majority
-c2b_L03	4	QQ-DASH	M	B:II-DASH	differ-noC
+c2b_L03	4	QQ-DASH	M	B:II-DASH	settled-majority
 c2b_L03	5	X	M		agree-AB
 c2b_L03	6	BAR-THIN	M		agree-AB
 c2b_L03	7	SLASH3	H		agree-AB
 c2b_L03	8	CIRC-O	H		agree-AB
-c2b_L03	9	X	M	B:V-DOT	differ-noC
-c2b_L03	10	X	M	B:X-DOT	differ-noC
+c2b_L03	9	V-DOT	M	A:X	settled-majority
+c2b_L03	10	X-DOT	M	A:X	settled-majority
 c2b_L03	11	O-SLASH	H		agree-AB
 c2b_L03	12	SUN	M		agree-AB
 c2b_L03	13	X	M		agree-AB
@@ -628,46 +628,46 @@ c2b_L03	14	O-SLASH	M		agree-AB
 c2b_L03	15	X	M	A:X-CURL;B:X;C:X-DASH	base-settled
 c2b_L03	16	II-O	H		agree-AB
 c2b_L03	17	ARCH-DASH	H		agree-AB
-c2b_L03	18	X	M	B:X-O	differ-noC
-c2b_L03	19	TRIDENT	M	B:PCT	differ-noC
-c2b_L03	20	VEE	M	B:V-DOT	differ-noC
+c2b_L03	18	X	M	A:X;B:X-O;C:X-DOT	base-settled
+c2b_L03	19	PCT	H	A:TRIDENT	settled-majority
+c2b_L03	20	VEE	M	B:V-DOT	settled-majority
 c2b_L03	21	E-BAR	M		agree-AB
 c2b_L03	22	II-DASH	M	A:II-O	settled-majority
-c2b_L03	23	AMP	M	B:O-BAR-CC	differ-noC
+c2b_L03	23	AMP	M	B:O-BAR-CC;C:CC-O	three-way
 c2b_L03	24	WAVE	H		agree-AB
 c2b_L03	25	PCT	H		agree-AB
-c2b_L03	26	Y-CURL	M	B:QUESTION	differ-noC
+c2b_L03	26	Y-CURL	H	B:QUESTION	settled-majority
 c2b_L03	27	BLOB	M		agree-AB
-c2b_L03	28	CIRC-O	M	B:_	differ-noC
+c2b_L03	28	CIRC-O	M	B:_;C:O-TILDE	three-way
 c2b_L03	29	X	H		agree-AB
 c2b_L03	30	DBL-SLASH	M	B:CHEVRON	settled-majority
 c2b_L03	31	O-SLASH	M		agree-AB
 c2b_L04	1	Y-CURL	H		agree-AB
-c2b_L04	2	BLOB	M	B:_	differ-noC
-c2b_L04	3	O-DASHBELOW	M	B:II-DASH	differ-noC
+c2b_L04	2	_	M	A:BLOB	settled-majority
+c2b_L04	3	O-DASHBELOW	H	B:II-DASH	settled-majority
 c2b_L04	4	X	H		agree-AB
-c2b_L04	5	II-DASH	M	B:ARCH-DASH	differ-noC
+c2b_L04	5	II-DASH	M	B:ARCH-DASH	settled-majority
 c2b_L04	6	OX-TILDE	H		agree-AB
 c2b_L04	7	ARCH	H		agree-AB
 c2b_L04	8	DAGGER-O	H		agree-AB
 c2b_L04	9	MULTI	M		agree-AB
 c2b_L04	10	V-DOT	M	A:VEE	settled-majority
-c2b_L04	11	Y-CURL	M	B:X-DASH	differ-noC
-c2b_L04	12	X	M	B:X-DOT	differ-noC
+c2b_L04	11	X-DASH	H	A:Y-CURL	settled-majority
+c2b_L04	12	X-DOT	M	A:X	settled-majority
 c2b_L04	13	O-TILDE	M		agree-AB
-c2b_L04	14	CRESCENT	M	B:BAR-THIN	differ-noC
+c2b_L04	14	CRESCENT	M	B:BAR-THIN;C:QUESTION	three-way
 c2b_L04	15	X	M	A:X;B:X-DOT;C:X-BAR	base-settled
 c2b_L04	16	PCT	H		agree-AB
 c2b_L04	17	WAVE	H		agree-AB
 c2b_L04	18	DAGGER-O	H		agree-AB
 c2b_L04	19	X-SLASH	M		agree-AB
 c2b_L04	20	CIRC-O	M		agree-AB
-c2b_L04	21	X	M	B:X-O	differ-noC
+c2b_L04	21	X-O	M	A:X	settled-majority
 c2b_L04	22	VEE	H		agree-AB
 c2b_L04	23	Y-CURL	H		agree-AB
 c2b_L04	24	OX-TILDE	H		agree-AB
-c2b_L04	25	X	M	B:X-DOT	differ-noC
-c2b_L04	26	SEVEN	M	B:SLASH	differ-noC
+c2b_L04	25	X-DOT	M	A:X	settled-majority
+c2b_L04	26	SEVEN	H	B:SLASH	settled-majority
 c2b_L04	27	EIGHT	M	B:O-BRACKET	settled-majority
 c2b_L04	28	BUCKET	M		agree-AB
 c2b_L05	1	O-SLASH	M		agree-AB
@@ -677,37 +677,37 @@ c2b_L05	4	PCT	H		agree-AB
 c2b_L05	5	WAVE	H		agree-AB
 c2b_L05	6	VEE	M		agree-AB
 c2b_L05	7	VENUS	H		agree-AB
-c2b_L05	8	OX	M	B:X-O	differ-noC
-c2b_L05	9	MULTI	M	B:SCROLL-X	differ-noC
-c2b_L05	10	AMP	M	B:O-BAR-CC	differ-noC
+c2b_L05	8	OX	H	B:X-O	settled-majority
+c2b_L05	9	SCROLL-X	H	A:MULTI	settled-majority
+c2b_L05	10	AMP	M	B:O-BAR-CC;C:CC-O	three-way
 c2b_L05	11	XX-TILDE	M	A:WAVE	settled-majority
 c2b_L05	12	PCT	H		agree-AB
 c2b_L05	13	PICT-D	M		agree-AB
 c2b_L05	14	NINE	M		agree-AB
 c2b_L05	15	X-BAR-CC	M		agree-AB
-c2b_L05	16	DBL-SLASH	M	B:CHEVRON	differ-noC
-c2b_L05	17	CHEVRON	M	B:SLASH	differ-noC
-c2b_L05	18	CIRC-O	M	B:BLOB	differ-noC
+c2b_L05	16	DBL-SLASH	M	B:CHEVRON;C:CHEVRON2	three-way
+c2b_L05	17	CHEVRON	M	B:SLASH;C:CHEVRON2	three-way
+c2b_L05	18	CIRC-O	H	B:BLOB	settled-majority
 c2b_L05	19	X-DOT	M	A:X	settled-majority
 c2b_L05	20	PCT	H		agree-AB
-c2b_L05	21	CIRC-O	M	B:_	differ-noC
+c2b_L05	21	CIRC-O	M	B:_;C:PCT	three-way
 c2b_L05	22	O-SLASH	M		agree-AB
-c2b_L05	23	BAR-THIN	M	B:_	differ-noC
+c2b_L05	23	_	M	A:BAR-THIN	settled-majority
 c2b_L06	1	WAVE	M		agree-AB
-c2b_L06	2	GEAR-DOT	M	B:CIRC-O	differ-noC
+c2b_L06	2	GEAR-DOT	M	B:CIRC-O;C:O-TILDE	three-way
 c2b_L06	3	X	M		agree-AB
 c2b_L06	4	ARCH-O	H		agree-AB
 c2b_L06	5	II-DASH	M	A:X	settled-majority
 c2b_L06	6	X	H		agree-AB
 c2b_L06	7	PHI	H		agree-AB
-c2b_L06	8	X-SLASH	M	B:DBL-SLASH	differ-noC
+c2b_L06	8	X-SLASH	M	B:DBL-SLASH;C:PCT-SLASH	three-way
 c2b_L06	9	O-DASH2	H		agree-AB
 c2b_L06	10	CROSS-T	H		agree-AB
 c2b_L06	11	VENUS	H		agree-AB
 c2b_L06	12	OX-TILDE	M		agree-AB
 c2b_L06	13	X	H		agree-AB
-c2b_L06	14	QQ-O	M	B:II-O	differ-noC
-c2b_L06	15	CROSS-T	M	B:ARCH-DASH	differ-noC
+c2b_L06	14	QQ-O	M	B:II-O;C:CC-O	three-way
+c2b_L06	15	CROSS-T	M	B:ARCH-DASH;C:II-TILDE	three-way
 c2b_L06	16	PICT-FACE	H		agree-AB
 c2b_L06	17	X	M		agree-AB
 c2b_L06	18	NINE	M		agree-AB
@@ -716,39 +716,39 @@ c2b_L06	20	PCT	M		agree-AB
 c2b_L06	21	CROSS-T	M	B:_	settled-majority
 c2b_L06	22	PHI	H		agree-AB
 c2b_L06	23	ARROW-O	M		agree-AB
-c2b_L06	24	X	M	B:X-O	differ-noC
-c2b_L06	25	X	M	B:C-BAR-X	differ-noC
-c2b_L06	26	O-SLASH	M	B:LOOP-TAIL	differ-noC
+c2b_L06	24	X	M	A:X;B:X-O;C:X-BAR	base-settled
+c2b_L06	25	C-BAR-X	H	A:X	settled-majority
+c2b_L06	26	O-SLASH	H	B:LOOP-TAIL	settled-majority
 c2b_L06	27	_	M		agree-AB
 c2b_L06	28	_	M		agree-AB
 c2b_L06	29	J-DOTS	M		agree-AB
 c2b_L06	30	A-LOOP	M	B:MULTI;C:A-LETTER	three-way
-c2b_L06	31	BAR-THIN	M	B:_	differ-noC
+c2b_L06	31	_	M	A:BAR-THIN	settled-majority
 c2b_L07	1	SUN	H		agree-AB
-c2b_L07	2	VENUS	M	B:LOOP-STEM	differ-noC
+c2b_L07	2	LOOP-STEM	M	A:VENUS	settled-majority
 c2b_L07	3	CROSS-T	H		agree-AB
 c2b_L07	4	CC-DASH	H		agree-AB
-c2b_L07	5	CHEVRON2	M	B:CHEVRON	differ-noC
+c2b_L07	5	CHEVRON2	M	B:CHEVRON	settled-majority
 c2b_L07	6	CHEVRON2	H	B:CHEVRON	settled-majority
 c2b_L07	7	DASH-H	H		agree-AB
 c2b_L07	8	MULTI	M		agree-AB
 c2b_L07	9	X	M		agree-AB
-c2b_L07	10	O-TILDE	M	B:O-DASH2	differ-noC
-c2b_L07	11	Y-CURL	M	B:PCT-SLASH	differ-noC
+c2b_L07	10	O-TILDE	H	B:O-DASH2	settled-majority
+c2b_L07	11	PCT-SLASH	M	A:Y-CURL	settled-majority
 c2b_L07	12	X	M		agree-AB
 c2b_L07	13	E-BAR	H		agree-AB
-c2b_L07	14	S-CURL	M	B:V-LOOP	differ-noC
+c2b_L07	14	V-LOOP	M	A:S-CURL	settled-majority
 c2b_L07	15	V-PCT-BLOB	H	B:MULTI	settled-majority
-c2b_L07	16	CC-DASH	M	B:O-BAR-CC	differ-noC
+c2b_L07	16	CC-DASH	M	B:O-BAR-CC	settled-majority
 c2b_L07	17	X	M		agree-AB
-c2b_L07	18	DASH-H	M	B:TILDE-DASH	differ-noC
-c2b_L07	19	DASH-H	M	B:_	differ-noC
+c2b_L07	18	DASH-H	M	B:TILDE-DASH;C:CC-DASH	three-way
+c2b_L07	19	DASH-H	M	B:_;C:CC-DASH	three-way
 c2b_L07	20	QUESTION	M		agree-AB
 c2b_L07	21	O-SLASH	M		agree-AB
 c2b_L07	22	C-DOT	H		agree-AB
 c2b_L07	23	X	M	B:MULTI;C:XX-TILDE	three-way
-c2b_L07	24	MULTI	M	B:X-CURL	differ-noC
-c2b_L07	25	Z-CURL	M	B:HOOK-P	differ-noC
+c2b_L07	24	X-CURL	M	A:MULTI	settled-majority
+c2b_L07	25	Z-CURL	M	B:HOOK-P;C:TRIDENT	three-way
 c2b_L07	26	WAVE-V	M		agree-AB
 c2b_L08	1	DOTS-TILDE	M		agree-AB
 c2b_L08	2	DAGGER-O	H		agree-AB
@@ -757,18 +757,18 @@ c2b_L08	4	TRIDENT	H		agree-AB
 c2b_L08	5	PCT	H		agree-AB
 c2b_L08	6	O-SLASH	H		agree-AB
 c2b_L08	7	VEE	H		agree-AB
-c2b_L08	8	X	M	B:X-BAR	differ-noC
+c2b_L08	8	X	M	A:X;B:X-BAR;C:X-DASH	base-settled
 c2b_L08	9	PCT-SLASH	H	A:PCT	settled-majority
-c2b_L08	10	S-CURL	M	B:DOT-LINE-O	differ-noC
-c2b_L08	11	CIRC-O	M	B:_	differ-noC
-c2b_L08	12	PICT-FACE	M	B:MULTI	differ-noC
+c2b_L08	10	S-CURL	M	B:DOT-LINE-O;C:SIX-CURL	three-way
+c2b_L08	11	CIRC-O	M	B:_	settled-majority
+c2b_L08	12	MULTI	H	A:PICT-FACE	settled-majority
 c2b_L08	13	STAR	H		agree-AB
 c2b_L09	1	_	M		agree-AB
 c2b_L09	2	_	M		agree-AB
 c2b_L09	3	_	M		agree-AB
 c2b_L09	4	_	M		agree-AB
 c2b_L09	5	_	H	A:DBL-SLASH	settled-majority
-c2b_L09	6	X	M	B:_	differ-noC
+c2b_L09	6	_	H	A:X	settled-majority
 c2b_L09	7	_	M		agree-AB
 c2b_L09	8	CC-DASH	H		agree-AB
 c2b_L09	9	X	M		agree-AB

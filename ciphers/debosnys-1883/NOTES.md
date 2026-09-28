@@ -843,3 +843,31 @@ lengths 1.2-1.3x a syllable count (H11), each cryptogram's own profile compatibl
 10 pct invented-type noise (H13), but a pooled distribution -- one dominant sign over a tail flatter than any
 natural-unit model -- that none of these reproduce: the signature of spread homophones or a large code, which the
 GOLD-D1 `profile=target` control reproduced only by construction. Grade S throughout; no reading; status `open`.
+
+### H21 and H21b, cryptogram 2 settled (28 Sept 2026, 22:0x-22:4x UTC)
+
+Pass B: five value-blind Sonnet calls on the numbered line strips of c2a (17 lines) and c2b (9 lines) rendered by
+`tools/glyph_atlas.py classify --strips` at 2x, against the inventory tiles (`passB_c2.tsv`, 778 rows: H 141 / M 464
+/ L 173). Position-based agreement with pass A (GOLD-4C's by-eye kNN labels): 380/778 = 48.8 pct full id, 51.0 pct
+family; 398 disputed. Third pass: 27 value-blind Fable calls on per-sign 6x crops of the disputed boxes only
+(`scripts/h21_pipeline.py crops`; rule in `scripts/PROMPTS_c1.md`, H21 section, written before pass B landed;
+`passC_c2.tsv`, H 134 / M 235 / L 29). Adjudication (`scripts/h21_pipeline.py adjudicate`, `--check` clean):
+
+| number | value |
+|---|---|
+| pairwise blind on the 398 disputed, full id | A-C 100/398 = 0.251; B-C 164/398 = 0.412 |
+| pairwise blind, family | A-C 116/398; B-C 172/398 |
+| settled by majority | full 264, family 7, base 18 |
+| agreement over 778 boxes | full 644/778 = 82.8 pct; family 83.7; base 86.0 |
+| unsettled | 109 (104 three-way, 5 segmentation flags) |
+| type-noise estimate | floor 14.0 pct, ceiling 17.2 pct |
+| gate 80 pct | met; cryptogram 2 (pages a and b) written to `ciphertext.txt` in inventory ids, `?` on unsettled boxes |
+
+On c2 the third reader sides with pass B (the strip read) more than with pass A (the kNN-seeded eye labels), the
+reverse of c1, so neither earlier pass is the reliable one across pages; the majority of three is what the draft
+rests on, and its 14-17 pct residual noise is the same band as c1's. Pooled profile on the settled c1+c2 (H3/H13
+scripts now read both settled drafts; N 1197 excluding `_`/MULTI): X 13.9 pct (was 16.1), top-5 0.286, IC 0.032,
+bigram repetition 0.383; the mixed letters+syllables design with 5 pct invented-type noise now sits inside the band
+on 5 of 7 statistics (top-1 still above, bigram repetition still below); merging doubled X adds nothing. A settled
+transcription moved the pooled skew about halfway to the design. Grade S/M; nothing read; status `open`. Costs: the
+orchestrator reads the session (5 Sonnet + 27 Fable subagent calls for this row).

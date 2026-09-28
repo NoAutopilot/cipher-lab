@@ -55,8 +55,11 @@ def target(level):
     for r in csv.DictReader(open(os.path.join(root, p)), delimiter='\t'):
         if r['sign'] in ('_', 'MULTI'): continue
         g = r['line'].split('_')[0]; g = {'c2a': 'c2', 'c2b': 'c2', 'c4a0': 'c4', 'c4a': 'c4', 'c4b': 'c4'}.get(g, g); seqs[g].append(r['sign']); seqs['all'].append(r['sign'])
-    if level == 'id160':  # c1 from the H2-settled draft
+    if level == 'id160':  # c1 from the H2-settled draft, c2 from the H21-settled draft when present (28 Sept 2026)
         seqs['c1'] = [r['sign'].rstrip('?') for r in csv.DictReader(open(os.path.join(root, 'ciphertext_c1_draft.tsv')), delimiter='\t') if r['sign'].rstrip('?') not in ('_', 'MULTI')]
+        p2 = os.path.join(root, 'ciphertext_c2_draft.tsv')
+        if os.path.exists(p2): seqs['c2'] = [r['sign'].rstrip('?') for r in csv.DictReader(open(p2), delimiter='\t') if r['sign'].rstrip('?') not in ('_', 'MULTI')]
+        seqs['all'] = seqs['c1'] + seqs['c2'] + seqs['c3'] + seqs['c4']
     return seqs
 def main():
     rng = random.Random(1); W = corpus_words(); print('corpus words', len(W), file=sys.stderr)
