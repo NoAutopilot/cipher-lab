@@ -1,0 +1,5 @@
+H59: f.108v reconciled draft -- 315 aligned columns, 136 to settle: reconciler answered 136 (h 29, m 96, l 11), none 11, unanswered 0
+still flagged (l or unanswered) 10/315 = 0.032; kept columns 304
+inventory: PHI:64 C43:41 EBR_A:37 4STEM:25 ZHOOK:20 VBAR_A:18 INF:17 HASH4:14 OTHER:13 SBS:13 EBR_B:12 BETA:11 ISH:10 4TRI:6 CA:1 CROSS:1 LOOPBAR:1
+ZHOOK per band: L01:2 L02:0 L03:4 L04:2 L05:4 L06:5 L07:3
+GATE H59 (<= 10% still flagged): PASS -- grade of every settled column M (one reconciler), never higher; a transcription for a person's gloss reading, not a key

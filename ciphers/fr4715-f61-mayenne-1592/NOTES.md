@@ -1624,3 +1624,37 @@ in all) -- the H34 3x crops stacked with a numbered sign strip beneath each segm
 reading comes back positionally aligned to the signs and `scripts/f61gloss.py --tag h50` scores it unchanged. ASKS row 88's
 exact action now names the pack. Checked by eye on `f108r_L04.jpg`: the gloss ("La misere ... on Je me retourne ... dargent")
 is legible, the numbers sit under their signs. Nothing here reads the cipher; no class change.
+
+## Campaign step H59 (2026-09-28 06:09 UTC) -- f.108v by the reconciler route: PASS on its gate (3.2% still flagged), a grade-M transcription, not a key
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). Three Opus vision calls (two small re-reads of the recut segment,
+about 87k subagent tokens each; one reconciliation call, about 174k, 365 s), prompts in `scripts/PROMPTS.md` (H59, two
+sections) and the task file pushed before each call; no network. Hypothesis H59 (F61-108V-RECON): the reconciler route
+(Usage item 6's priced reconciliation step) instead of a third blind pass.
+
+**Cut defect confirmed and fixed.** On `family/sheets/f108v3y_bands_debug.jpg` the segment-1 centre of band L01 sits on the
+clear line above the row (y 63 in region coordinates; the cipher row is at 128, plain-ink 277 vs 53) and L02 s1 leaves its
+row at the bottom edge (189 vs 217): the `--local 30` per-segment search jumped to the heavier clear line on the first
+segment. Both recut with hand-set centres (`family/sheets/f108v3z_L01_s1.jpg`, `_L02_s1.jpg`, `f108v3z_bands.json`); the
+other 26 segments were not questioned by either reader and stand. Two blind re-reads of the two crops (`passes/
+f108v3z_s1_signsA/B.tsv`): 13 and 11 signs in both. Merged into the H35 passes (`f108v3z_signsA/B.tsv`, old s2 rows inside
+the overlap dropped, positions renumbered): agreement **179/315 = 56.8%** (from 52.2%) -- the cut was a small part of the
+gap; the readers' coding of PHI/DBL/SBS, INF/DBL and VBAR_A/EBR_A, and B's separator strokes, is the rest.
+
+**Reconciliation (`passes/f108v3z_recon_task.tsv`: the NW draft, 136 columns to settle = 123 differ + 13 gap; the 117
+agree-flagged columns are agreed and were not the reconciler's).** One Opus call with the 28 crops settled all 136
+(`f108v3z_recon_verdict.tsv`, verbatim): h 29 / m 96 / l 11 by the file (the call's own count line says 24/91/10), none 11
+(7 end-of-line dashes, 2 separator strokes, 2 alignment duplicates: it noticed NW column shifts in L03 7-13, L04 1-2 and
+48-49, L06 22-25 and 45-46, L07 45-46 and placed each sign by x). `scripts/f61recon108v.py` (gate pre-registered in its
+docstring, `--check` fresh): **still flagged 10/315 = 0.032, GATE PASS**; `passes/f108v3z_draft_reconciled.tsv`, 304
+columns: PHI 64, C43 41, EBR_A 37, 4STEM 25, **ZHOOK 20**, VBAR_A 18, INF 17, HASH4 14, OTHER 13, SBS 13, EBR_B 12, BETA 11,
+ISH 10, 4TRI 6, CA/CROSS/LOOPBAR 1 each.
+
+**What it is.** A sign transcription of the seven rows of f.108v with every disagreement settled by one reconciler from the
+crops: grade M on the 136 settled columns and on the 117 agreed-at-low-confidence ones, H only on the 62 columns both passes
+gave confidently -- a transcription a person's gloss reading can be aligned to (the leaf carries a sparse period gloss, the
+one that read ZHOOK a 7 / e 4 / u 4 in the held f108vg alignment, against i at 10/10 published positions), not a key and not
+a reading; nothing is merged into `key_period_*`. Rule 3 caveat: a reconciler is one more Opus eye on the same 3x crops --
+the same instrument that agrees with itself at 57% -- so the 10% gate measures how often it was unsure, not how often it
+was right; no known-answer control exists for this leaf's signs (Tomokiyo reprints none of its lines). Not solved, new or
+first. Vision calls: 3 of 4. Cost: about 3.5 USD (two small calls, one large) against est 3.

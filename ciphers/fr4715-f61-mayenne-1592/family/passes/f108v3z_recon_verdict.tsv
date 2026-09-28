@@ -1,0 +1,137 @@
+line	position	sign	conf	note
+L01	4	EBR_A	m	f108v3z_L01_s1 x709: filled bracket, hairline diagonal, foot tail
+L01	7	EBR_A	m	f108v3z_L01_s1 x1350: bracket with diagonal, foot tapering to long tail; not a closed triangle
+L01	15	SBS	m	f108v3y_L01_s2 x554: two loops side by side on stem
+L01	17	EBR_A	m	f108v3y_L01_s2 x1026: bracket with diagonal and long foot tail
+L01	21	EBR_A	m	f108v3y_L01_s2 x1890: filled bracket with diagonal and foot tail; spur at top right
+L01	24	ZHOOK	h	f108v3y_L01_s2 x2592: 7/Z hook over crossed stems
+L01	25	EBR_A	m	f108v3y_L01_s3 x338: hairline diagonal visible, foot bar longer
+L01	26	EBR_A	m	f108v3y_L01_s3 x526: same form as pos 25
+L01	27	ZHOOK	h	f108v3y_L01_s3 x716: 7/Z hook over crossed stems
+L01	28	SBS	m	f108v3y_L01_s3 x945: two loops side by side on stem
+L01	30	EBR_A	m	f108v3y_L01_s3 x1390: bracket with diagonal, long foot tail
+L01	32	PHI	m	f108v3y_L01_s3 x1755: stacked loops on stem, as agreed PHI L01.11
+L01	35	PHI	m	f108v3y_L01_s3 x2349: stacked loops on stem
+L01	36	PHI	m	f108v3y_L01_s3 x2565: stacked loops on stem
+L01	38	EBR_A	m	f108v3y_L01_s4 x280: E bracket with hairline diagonal, foot tail
+L01	40	PHI	m	f108v3y_L01_s4 x650: stacked loops on stem
+L01	42	SBS	h	f108v3y_L01_s4 x1080: two loops side by side on stem
+L01	45	none	h	f108v3y_L01_s4 x1780: horizontal dash, line filler
+L02	1	PHI	m	f108v3z_L02_s1 x149: dark stacked loops on slanted stem, top clipped by gloss
+L02	2	4TRI	m	f108v3z_L02_s1 x358: 4 with small mark lower right, as agreed 4TRI L01.2
+L02	3	EBR_A	m	f108v3z_L02_s1 x608: bracket with diagonal, foot tail
+L02	8	4TRI	m	f108v3z_L02_s1 x1755: 4 with small hooked mark lower right
+L02	18	EBR_A	m	f108v3y_L02_s2 x1688: bracket with diagonal, foot tail
+L02	21	EBR_A	m	f108v3y_L02_s2 x2322: bracket with diagonal, foot bar
+L02	22	ISH	m	f108v3y_L02_s2 x2538: wide top bar and foot bar on both sides of stem (capital I)
+L02	23	PHI	m	f108v3y_L02_s3 x216: stacked loops on stem
+L02	26	PHI	m	f108v3y_L02_s3 x824: stacked loops on stem
+L02	28	PHI	m	f108v3y_L02_s3 x1242: stacked loops on stem
+L02	32	INF	l	f108v3y_L02_s3 x2120: two slanted loops lying on a bar, no descending stem
+L02	35	SBS	h	f108v3y_L02_s4 x300: two loops side by side on stem
+L02	38	SBS	h	f108v3y_L02_s4 x960: two loops side by side on stem
+L02	39	INF	m	f108v3y_L02_s4 x1190: loop cluster crossed by bar, short stem, as agreed INF L01.23
+L02	42	none	h	f108v3y_L02_s4 x1800: horizontal dash, line filler
+L03	1	ZHOOK	h	f108v3y_L03_s1 x230: 7/Z hook over crossed stems
+L03	2	PHI	m	f108v3y_L03_s1 x500: stacked loops on stem
+L03	7	PHI	m	f108v3y_L03_s1 x1620: stacked loops on stem (B read it in col 8)
+L03	8	EBR_A	m	f108v3y_L03_s1 x1850: filled bracket, foot tail (B read it in col 9)
+L03	9	EBR_A	m	f108v3y_L03_s1 x2039: bracket with diagonal (B read it in col 10)
+L03	10	PHI	m	f108v3y_L03_s1 x2228: stacked loops on stem (B read it in col 11)
+L03	11	OTHER	m	f108v3y_L03_s1 x2444: filled triangle on top of a z-curl with loop descender; not ZHOOK (B read it in col 12)
+L03	13	none	m	f108v3y_L03_s1 x2646: duplicate: B reading of the sign at s1 x2646 already carried by col 12 (A ZHOOK, image agrees)
+L03	15	PHI	m	f108v3y_L03_s2 x580: stacked loops on stem
+L03	17	LOOPBAR	l	f108v3y_L03_s2 x1066: stem with top bar curling to a loop and foot bar; gloss descender enters from above
+L03	22	SBS	h	f108v3y_L03_s2 x2106: two loops side by side on stem
+L03	25	PHI	m	f108v3y_L03_s3 x230: stacked loops on stem
+L03	26	PHI	m	f108v3y_L03_s3 x446: stacked loops on stem
+L03	30	ZHOOK	h	f108v3y_L03_s3 x1282: 7/Z hook over crossed stems
+L03	31	SBS	h	f108v3y_L03_s3 x1498: two loops side by side on stem
+L03	35	PHI	m	f108v3y_L03_s3 x2160: stacked loops, crossed by gloss descender
+L03	37	SBS	m	f108v3y_L03_s3 x2632: loops side by side on stem, near right edge
+L03	40	ZHOOK	m	f108v3y_L03_s4 x820: hook over crossed stems, gloss overlaps hook
+L03	42	ISH	l	f108v3y_L03_s4 x1200: bars both sides at top and lower stem; gloss above and below overlap
+L03	43	PHI	m	f108v3y_L03_s4 x1380: stacked loops on stem
+L03	44	EBR_A	m	f108v3y_L03_s4 x1580: filled bracket with long foot tail
+L04	1	OTHER	l	f108v3y_L04_s1 x81: dark cut blob at left edge (A read it at x54 in col 2; col 2 then = B partial at x230)
+L04	4	PHI	m	f108v3y_L04_s1 x648: stacked loops on stem
+L04	8	PHI	m	f108v3y_L04_s1 x1404: stacked loops on stem
+L04	12	PHI	m	f108v3y_L04_s1 x1985: stacked loops on stem
+L04	15	PHI	m	f108v3y_L04_s1 x2565: stacked loops on stem
+L04	16	PHI	m	f108v3y_L04_s2 x270: stacked loops on stem
+L04	17	PHI	m	f108v3y_L04_s2 x500: stacked loops on stem
+L04	18	PHI	m	f108v3y_L04_s2 x716: stacked loops on stem
+L04	20	PHI	m	f108v3y_L04_s2 x1107: stacked loops on stem
+L04	22	PHI	m	f108v3y_L04_s2 x1552: stacked loops on stem
+L04	23	PHI	m	f108v3y_L04_s2 x1742: stacked loops on stem
+L04	25	none	m	f108v3y_L04_s2 x2025: thin slanted pen stroke, no sign
+L04	26	PHI	m	f108v3y_L04_s2 x2160: stacked loops on stem
+L04	29	PHI	m	f108v3y_L04_s3 x256: stacked loops on stem
+L04	30	ZHOOK	h	f108v3y_L04_s3 x473: 7/Z hook over crossed stems
+L04	33	ZHOOK	h	f108v3y_L04_s3 x1188: 7/Z hook over crossed stems
+L04	38	PHI	m	f108v3y_L04_s3 x2187: stacked loops on stem
+L04	40	PHI	l	f108v3y_L04_s3 x2606: loops at head of stem, foot split/crossed like hash; also seen s4 x~86
+L04	45	PHI	m	f108v3y_L04_s4 x970: stacked loops on stem, hook above (gloss/pen)
+L04	48	PHI	m	f108v3y_L04_s4 x1510: stacked loops on stem (B read it in col 49)
+L04	49	none	h	f108v3y_L04_s4 x1740: horizontal dash, line filler
+L05	2	PHI	m	f108v3y_L05_s1 x432: stacked loops on stem
+L05	5	PHI	m	f108v3y_L05_s1 x1080: stacked loops on stem
+L05	6	ZHOOK	h	f108v3y_L05_s1 x1323: 7/Z hook over crossed stems
+L05	7	EBR_A	m	f108v3y_L05_s1 x1566: bracket with foot tail
+L05	9	SBS	h	f108v3y_L05_s1 x2066: two loops side by side on stem
+L05	13	PHI	m	f108v3y_L05_s2 x446: stacked loops on stem
+L05	15	PHI	m	f108v3y_L05_s2 x850: stacked loops on stem
+L05	17	ZHOOK	h	f108v3y_L05_s2 x1242: 7/Z hook over crossed stems
+L05	20	PHI	m	f108v3y_L05_s2 x1917: stacked loops on stem
+L05	21	EBR_A	m	f108v3y_L05_s2 x2133: bracket with diagonal, foot bar
+L05	23	PHI	m	f108v3y_L05_s2 x2524: stacked loops on stem
+L05	24	ZHOOK	m	f108v3y_L05_s3 x189: hook over crossed stems, gloss overlaps top
+L05	27	none	m	f108v3y_L05_s3 x702: thin slanted stroke between two BETA (separator/pen stroke)
+L05	30	ZHOOK	h	f108v3y_L05_s3 x1269: 7/Z hook over crossed stems
+L05	34	PHI	m	f108v3y_L05_s3 x2187: stacked loops, gloss descender through it
+L05	36	PHI	m	f108v3y_L05_s3 x2592: stacked loops on stem
+L05	38	PHI	m	f108v3y_L05_s4 x420: stacked loops on slanted stem
+L05	43	none	l	f108v3y_L05_s4 x1450: faint dash (line filler) plus a mark cut at bottom edge, likely handwriting
+L06	1	PHI	l	f108v3y_L06_s1 x202: loop head, cut at bottom
+L06	2	ZHOOK	h	f108v3y_L06_s1 x392: 7/Z hook over crossed stems
+L06	4	ISH	l	f108v3y_L06_s1 x837: bar both sides on stem, foot obscured by blot
+L06	6	ZHOOK	h	f108v3y_L06_s1 x1282: 7/Z hook over crossed stems
+L06	12	EBR_A	m	f108v3y_L06_s1 x2619: filled bracket, foot tail
+L06	13	EBR_A	m	f108v3y_L06_s2 x284: bracket with foot tail
+L06	14	ZHOOK	h	f108v3y_L06_s2 x500: 7/Z hook over crossed stems
+L06	15	EBR_A	m	f108v3y_L06_s2 x729: bracket with foot tail
+L06	16	SBS	h	f108v3y_L06_s2 x945: two loops side by side on stem
+L06	19	ZHOOK	h	f108v3y_L06_s2 x1620: 7/Z hook over crossed stems
+L06	20	EBR_B	m	f108v3y_L06_s2 x1877: thin squared C, top bar longest, no diagonal
+L06	22	EBR_A	l	f108v3y_L06_s2 x2322: bracket with diagonal (triangular gap), foot curls into a big loop; same sign A read at x2308 in col 23
+L06	23	none	m	f108v3y_L06_s2 x2308: duplicate: A reading of the sign at x2308-2322 settled in col 22
+L06	24	PHI	m	f108v3y_L06_s2 x2484: stacked loops on stem at x2484 (B read it in col 23; B x2660 is the overlap copy of col 25)
+L06	25	PHI	m	f108v3y_L06_s3 x189: stacked loops on stem
+L06	28	PHI	m	f108v3y_L06_s3 x810: stacked loops on stem
+L06	30	PHI	m	f108v3y_L06_s3 x1174: stacked loops on stem
+L06	34	ZHOOK	h	f108v3y_L06_s3 x1998: 7/Z hook over crossed stems
+L06	35	PHI	m	f108v3y_L06_s3 x2228: stacked loops on stem
+L06	36	PHI	m	f108v3y_L06_s3 x2403: stacked loops on stem
+L06	37	EBR_A	m	f108v3y_L06_s3 x2578: filled bracket with foot tail
+L06	42	PHI	m	f108v3y_L06_s4 x860: stacked loops on stem
+L06	43	PHI	m	f108v3y_L06_s4 x1060: stacked loops, gloss above
+L06	45	OTHER	l	f108v3y_L06_s4 x1460: faint: knob atop a crossed stem with loops at lower left (B read it in col 46)
+L06	46	none	h	f108v3y_L06_s4 x1700: horizontal dash, line filler
+L07	1	C43	l	f108v3y_L07_s1 x189: 4 with 3-like curve at right, cut at bottom
+L07	3	ZHOOK	h	f108v3y_L07_s1 x662: 7/Z hook over crossed stems
+L07	8	none	m	f108v3y_L07_s1 x1755: slanted pen stroke before the 4STEM at x1796
+L07	15	4STEM	m	f108v3y_L07_s2 x580: 4 on a long stem with second crossbar, as agreed 4STEM L01.22
+L07	18	PHI	m	f108v3y_L07_s2 x1269: stacked loops on stem
+L07	19	PHI	m	f108v3y_L07_s2 x1485: stacked loops on stem
+L07	23	PHI	m	f108v3y_L07_s2 x2079: stacked loops on stem
+L07	25	PHI	m	f108v3y_L07_s2 x2565: stacked loops on stem
+L07	27	SBS	m	f108v3y_L07_s3 x486: two loops side by side, faint
+L07	30	PHI	m	f108v3y_L07_s3 x1107: stacked loops on stem
+L07	32	ZHOOK	h	f108v3y_L07_s3 x1580: 7/Z hook over crossed stems
+L07	33	PHI	m	f108v3y_L07_s3 x1809: stacked loops on stem
+L07	36	PHI	m	f108v3y_L07_s3 x2241: stacked loops on stem
+L07	38	ISH	m	f108v3y_L07_s3 x2619: capital I: bars both sides at top and foot
+L07	39	PHI	m	f108v3y_L07_s4 x320: stacked loops on stem
+L07	42	PHI	m	f108v3y_L07_s4 x980: stacked loops on stem
+L07	45	ZHOOK	h	f108v3y_L07_s4 x1580: 7/Z hook over crossed stems (B read it in col 46)
+L07	46	none	h	f108v3y_L07_s4 x1800: horizontal dash, line filler
