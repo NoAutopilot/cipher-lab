@@ -5,7 +5,7 @@
  "manifest_url": "https://collections.library.yale.edu/manifests/10844890",
  "manifest_fetched": "27 Sep 2026, ~19:50 UTC",
  "manifest_bytes": 9369,
- "title": "\"Il Sig. Tommaso scrive di Barcellona al Sig. Canonico Leonardo che il Confessore della Maest\u00e0 del Re per Una sua Indisposizione \u00e8 partito di l\u00ec e volendo applicare a questo posto le dice che preghi il Rev. de'Medici a interporsi per farli avere tal Carica...\" Barchenonia (Barcelona). 4pp. part in cipher.",
+ "title": "\"Il Sig. Tommaso scrive di Barcellona al Sig. Canonico Leonardo che il Confessore della Maestà del Re per Una sua Indisposizione è partito di lì e volendo applicare a questo posto le dice che preghi il Rev. de'Medici a interporsi per farli avere tal Carica...\" Barchenonia (Barcelona). 4pp. part in cipher.",
  "date_published_created": "1519 Sep 7",
  "language": "Italian",
  "call_number": "GEN MSS 109",
@@ -3599,6 +3599,414 @@
     "prominence": 60.0
    },
    "date": "28 Sep 2026"
+  },
+  {
+   "crop": "p2x_L01_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    263,
+    2700,
+    453
+   ],
+   "band": 1,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L01_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    263,
+    3500,
+    453
+   ],
+   "band": 1,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L02_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    410,
+    2700,
+    600
+   ],
+   "band": 2,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L02_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    410,
+    3500,
+    600
+   ],
+   "band": 2,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L03_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    551,
+    2700,
+    741
+   ],
+   "band": 3,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L03_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    551,
+    3500,
+    741
+   ],
+   "band": 3,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L04_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    715,
+    2700,
+    905
+   ],
+   "band": 4,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L04_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    715,
+    3500,
+    905
+   ],
+   "band": 4,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L05_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    874,
+    2700,
+    1064
+   ],
+   "band": 5,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L05_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    874,
+    3500,
+    1064
+   ],
+   "band": 5,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L06_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    1035,
+    2700,
+    1225
+   ],
+   "band": 6,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L06_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    1035,
+    3500,
+    1225
+   ],
+   "band": 6,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L07_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    1195,
+    2700,
+    1385
+   ],
+   "band": 7,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L07_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    1195,
+    3500,
+    1385
+   ],
+   "band": 7,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L08_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    1330,
+    2700,
+    1520
+   ],
+   "band": 8,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L08_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    1330,
+    3500,
+    1520
+   ],
+   "band": 8,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L09_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    1488,
+    2700,
+    1678
+   ],
+   "band": 9,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L09_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    1488,
+    3500,
+    1678
+   ],
+   "band": 9,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L10_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    1677,
+    2700,
+    1867
+   ],
+   "band": 10,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L10_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    1677,
+    3500,
+    1867
+   ],
+   "band": 10,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L11_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    1849,
+    2700,
+    2039
+   ],
+   "band": 11,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L11_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    1849,
+    3500,
+    2039
+   ],
+   "band": 11,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L12_s1.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    300,
+    2070,
+    2700,
+    2260
+   ],
+   "band": 12,
+   "segment": 1,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
+  },
+  {
+   "crop": "p2x_L12_s2.jpg",
+   "source_url": "https://collections.library.yale.edu/iiif/2/10867299/full/full/0/default.jpg",
+   "source_file": "scratch p2_full.jpg (3577x4997), red channel / 61x61 closing background-normalised / stretched 0.20-0.80 (glyphs/prepare.py step, no component drop), deskewed y'=y-b*x",
+   "deskew_b": -0.03857,
+   "box_deskewed": [
+    1100,
+    2070,
+    3500,
+    2260
+   ],
+   "band": 12,
+   "segment": 2,
+   "method": "H33d: global shear estimate from 8 column-window ink-profile cross-correlations, then scipy find_peaks on the deskewed row profile (distance 100, prominence 8 percent of max)",
+   "date": "28 Sep 2026",
+   "regen": "python3 passes/p2x_cut.py FULL_CANVAS.jpg OUT (same geometry; mean grey difference 0.19 levels from the committed files, a rounding in the normalisation step)"
   }
  ],
  "sibling_letters_filza163": [

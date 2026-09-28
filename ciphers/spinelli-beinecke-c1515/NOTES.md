@@ -1576,3 +1576,81 @@ confessor/Medici passage); the pool request is written (REQUEST.md, ASKS row 87)
 H21b; the rest need the owner (H17's order) or documents (H6/H8/H9). Tool flags for the owner of
 `tools/iiif_lines.py`: (1) the 30 MB guard downscales committed sources in place and rewrites manifest entries; (2)
 `--follow-slope` with a low prominence can duplicate bands (H33b). Both were undone by hand each time; neither is fixed.
+
+## Campaign step H33d (28 Sept 2026, 05:40-05:5x UTC)
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph (replacing runner 2 at 665k context). Hypothesis H33d: clean the p.[2]
+upper plain block before cutting -- `glyphs/prepare.py`'s red-channel + background-normalise step -- then the same
+band cut and one Opus pair against the 60% word gate that three raw pairs missed (H33 51.8, H33b 54.4, H33c 40.0).
+
+**What was actually done, and one deviation from the row.** The full canvas was fetched once to scratch (1 IIIF
+request, 3,253,418 bytes). Cleaning: red channel, divided by a 61x61 grey closing, stretched so 0.20 x background is
+black and 0.80 x background white -- prepare.py's step without its 200-px component drop, which would remove i-dots
+and thin strokes a reader needs. **The row said "cut the same 12 bands"; that was not done, because the raw
+p2w bands were not line-aligned:** a direct look at `images/p2w_L08_s1.jpg` shows the bottom of "Le galie sono
+arriuate ..." and the top of "giorni partira ..." in one 154-px band -- the lines rise to the right by about 123 px
+over the 3200-px block (measured below), so a flat band centred on the left-hand profile crosses two lines by the
+middle. H33c's "12 correct bands" were non-overlapping but not centred, and the readers' E/F rows 9-11 are the same
+sloped line read in two pieces. `tools/iiif_lines.py --follow-slope 400` on the cleaned image reproduced the H33b
+fault exactly (bands L01/L02, L06/L07, L09/L10 with one intercept each: 172/185, 974/987, 1417/1452 -- three real
+lines unbanded), so the block was **deskewed** instead: the row ink profile of eight 400-px column windows, each
+cross-correlated with its neighbour (shift within +-60 px), the cumulative shifts (0, 25, 50, 66, 81, 94, 105, 107)
+fitted to a line, slope b = -0.0386; `cv2.warpAffine` with y' = y - b x; then the flat finder (scipy `find_peaks`,
+Gaussian sigma 6, distance 100, prominence 8% of max) on the deskewed profile: **12 peaks** at deskewed y 358, 505,
+646, 810, 969, 1130, 1290, 1425, 1583, 1772, 1944, 2165 (spacings 135-221), per-window residuals mostly within
++-15 px. Bands of +-95 px, two segments (x 300-2700, 1100-3500), JPEG q80: `images/p2x_L01-12_s{1,2}.jpg` (24 crops,
+1.19 MB; folder 29 MB; manifest entries with the method and the deskew slope). `passes/p2x_cut.py` regenerates them
+from the canvas (same geometry; mean grey difference 0.19 levels from the committed files, from a rounding in the
+normalisation step; the committed files are the ones the readers saw). **The 12th cut line is the first cipher line**
+(both readers reported "not alphabetic, a run of cipher symbols" unprompted, 32 look-alike tokens each -- not used;
+the cipher block has its own atlas transcription, v4): the p.[2] upper plain block has **11 lines**, not 12, and
+H33/H33b's "missed line" was a slope artefact.
+
+**Two Opus blind passes** (`passes/p2x_passG.tsv`, `passes/p2x_passH.tsv`; about 103k and 102k tokens, 27 tool uses
+each, one look per crop, brief `reader_brief.md` in the runner's scratch: semi-diplomatic, expansions in round
+brackets, uncertainties in square brackets, no context given), 11 plain rows each.
+
+**Result: gate missed on the registered measure, the largest move of any pair on this block, and met once the two
+passes' bracket conventions are normalised.** Same instrument on both pairs (`tools/reconcile_passes.py`, NW over
+whitespace tokens, default flags):
+
+| pair (block cut) | reconciler word agreement | exact-word (difflib, virgules dropped) | normalised words (brackets/parentheses dropped, u=v, unreadable tokens excluded) | folded-letter |
+|---|---|---|---|---|
+| E/F, H33c raw flat bands, 12 rows | 48/116 = 41.4% (H33c logged 46/115 = 40.0 with its own flags) | 43/109 = 39.4% | 47/92 = 51.1% | 70.7% |
+| **G/H, H33d cleaned + deskewed, 11 rows** | **62/112 = 55.4%** | 57/104 = 54.8% | **71/102 = 69.6%** | **86.2%** |
+
+The 60% gate was registered on the reconciler's raw figure (H33b's 70.3 for the p.[1] block is that figure), and on
+that figure this block reads 55.4%: **missed**. On the normalised figure -- the convention rule 3 asks for before two
+renderings of one text are diffed (PX-BRODEC lesson; here "promess(a)" vs "promess[a]", "a(n)cora" vs "ancora",
+"chiesa" vs "chiesia" count as disagreements raw) -- it reads 69.6% against E/F's 51.1% under the identical
+normalisation, and the letter level rises from 70.7 to 86.2. Per line (normalised, agreed/max): 8/12, 4/10, 9/12,
+4/10, 9/11, 6/8, 8/11, 7/8, 5/9, 10/10, 1/1 -- lines 2, 4 and 9 (the "s[u]o damno" opening, the Cardinal's name, the
+"maiordomo da Ri..." name) carry most of the residue. **Attribution is untested:** cleaning and deskew were applied
+together (the row's own design plus the band correction it forced), so how much of the 14-18-point move is the
+red channel and how much the line alignment is not separable from this pair; a deskewed-but-raw pair (2 calls) would
+separate them and is not the next step unless the AB-grade context of this block matters (H33e below).
+
+**What the block says (agreed words only, `corpus/p2x_plain_agreed.tsv`; context, not a cipher reading):** "alcuna
+promessa che ... lo offendera / e per suo [danno] ... detta / ... che ... non ... [supplicare] nomina vostro ... / [al]
+mio el prefato Reverendissimo / ma bixogna piu di bona [sorte] perche el / Cardinale [C.sidio] ha promesso [dal
+Signore d'una] bona [chiesa] / nel regno di napoli [o Sardegna] / et benche questo non sia / della migliore credo
+sempre pigliarebbe a [bon ...] / Le galee sono arriuate qui in [parte] ... fra quattro / giorni partira per [Affrica]
+dio li dia uictoria / Monsignore [lo maiordomo] da [Ri...] ha maritato la [nipote] / al primogenito di monsignore di
+Bergha pero non e ancora / publicato /". Two corrections to the H33/H33c context, both from words the G/H pair agrees
+on and E/F did not: the marriage is made by "Monsignore lo maiordomo" (the mayordomo; E/F read a name here) and the
+church promise is followed by "et benche questo non sia della migliore, credo sempre pigliarebbe" (he would take it
+even though it is not the best) -- the writer weighing a Neapolitan benefice for himself or Leonardo; the "Cardinale
+[C.sidio]" (G "Cesedio", H "C[e]sidio") replaces E's "Car(dina)le [M]edici" for the promiser and is left in brackets.
+No crib is added to H34's list from this (the new agreed words are short or already tested).
+
+**Controls:** the E/F pair re-scored on the identical instrument and normalisation (the matched comparison), the
+pre-registered gate reported as missed on its own measure; band correctness checked by eye on the crops and by the
+per-window residuals, not asserted from non-overlap. No reading of the cipher, no class change, rule 10 wording.
+**Files:** `images/p2x_*` (24) + manifest entries; `passes/p2x_cut.py`, `passes/p2x_pass{G,H}.tsv`,
+`passes/p2x_GH_disagreements.tsv` (50 columns); `corpus/p2x_plain_agreed.tsv`. **Cost:** 2 Opus vision calls (about
+205k tokens) plus this runner's turns -- recorded as 3.0 USD (the est). 1 IIIF request. No credentials, no
+AskUserQuestion, no other target touched. **Tool flags (for the owner of `tools/iiif_lines.py`, added to H33c's
+two):** (3) `--follow-slope` duplicates bands on this block with the default prominence too, cleaned or raw, so the
+fault is the snap-to-nearest-line step, not the seeding; a `--deskew` option (global shear from column-window
+cross-correlation, then the flat finder -- `passes/p2x_cut.py` is the worked version) would have made this step one
+command and would serve every sloped plain page (H21's pl24/pl29 read 56/42 percent under flat bands).
