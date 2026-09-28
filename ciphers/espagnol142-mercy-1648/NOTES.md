@@ -2057,3 +2057,15 @@ agreeing, at most one mismatch) is **not met**. Conrad fits badly in every form 
 agreeing; conrado de: 3 agree, 4 disagree). So the words before the name are not his given name in any form the list
 holds; the stretch before "burgs" stays unread, and the H41 name candidate neither gains nor loses. `h47/result.log`.
 No token, grade or class change.
+
+## Campaign step H48 (2026-09-28 16:00 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** The list-crib instrument of H41/H42/H46/H47 is now a shared tool,
+`tools/crib_list_fit.py` (a keyed code stream, a window, a word list built before scoring; S tokens +1/-1, other
+grades 1-2-letter wildcards; the list as the null; anchors start/end/free; forms such as '{w}de' or 'su{w}mayor'), with
+the minimum-fit rule H46 showed was missing (candidate only as unique best, P < 0.05, >= 60% of letters agreeing, at
+most one mismatch). Offline test `tools/tests/test_crib_list_fit.py`: catches H41 (burgsdorf unique best, 7 agree / 0
+disagree at r16:16, candidate) and refuses H46 (poca unique best at P < 0.05 but 2 agree / 2 disagree). Re-run on H41's
+402-name list it reproduces H41 exactly (burgsdorf 7, P 0.002, candidate True). SYSTEM.md names it (system_map_check
+ok); h41/fit.py and h46/crib.py carry a pointer to it. Under the new rule H42's "su camarero mayor" would also need
+checking against its minimum fit (it agrees on its S letters; its borderline was P, not fit). No token change.

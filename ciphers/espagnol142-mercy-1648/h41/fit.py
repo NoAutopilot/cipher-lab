@@ -1,3 +1,4 @@
+# Superseded for new work by tools/crib_list_fit.py (H48), which reproduces this script's numbers; kept because NOTES cite it.
 """H41 fit: best alignment of a name to the r15-r18 token stream (key.tsv letters). S-graded tokens match exactly one
 name letter (+1 equal, -1 unequal); M-graded / nomenclature tokens (grade M or code >= 48) are wildcards absorbing one
 or two name letters at 0. The name must be aligned whole and contiguously; fit = best (matches - mismatches) over all

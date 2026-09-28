@@ -1,3 +1,4 @@
+# Superseded for new work by tools/crib_list_fit.py (H48), which reproduces this script's numbers; kept because NOTES cite it.
 """H46: which word follows "y que corra por su" at v04? List built before scoring: every word after "por su" in the
 es17c7 Cartas corpus, 4-12 letters, 3+ occurrences (folded as the target). Each word aligned to the start of v04 with
 H41's scorer (S-graded tokens +1/-1, M and nomenclature tokens one-or-two-letter wildcards; start fixed at v04:1).
