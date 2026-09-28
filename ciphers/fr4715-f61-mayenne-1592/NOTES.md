@@ -3402,3 +3402,31 @@ glyph in another hand". The f.176r i-reading (H178) therefore stays a result abo
 f.61's ZHOOK. What the call does show: none of the 7 f.176r signs groups with f.61's C43 (0/7), which agrees with the letter evidence
 (i, not a/n). A same-hand link would need a family leaf in f.61's own hand writing this sign with a period gloss. Among the glossed
 leaves only f.108v (H157) is in that hand, and it has no gloss over its ZHOOK signs. No further row.
+
+## Campaign step H177b stage 2a (28 Sept 2026, 22:59-23:03 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- key rows f.176r L01-L19
+
+Pre-registered in `family/passes/PROMPTS_f176_f175.md` section H177b (2dc56b33). Three Opus vision calls, inline replies written verbatim
+by the runner (from the agents' own hand-back messages, `extract.py` in scratch): passes A/B of f.176r L13-L19
+(`passes/f176r_signs{A,B}_L13-L19.tsv`, 444 / 449 rows) and a read of fol. 177r L21-L34 (`passes/f177r_clearA_L21-L34.tsv`, mostly m).
+`build_f176_key.py L01-L19` (result and `key_period_f176.tsv` regenerated, `--check`):
+
+**Whole stretch: 1,262 signs, consensus 0.79, N 1,009 letters; fol. 177r 0.550 vs the wrong text 0.368 (margin +0.182).**
+
+| class | v4 set | fol. 177r (true) | f.184r (wrong) | in-set share true / wrong |
+|---|---|---|---|---|
+| PHI | e/r | e 126, r 57 (221) | e 98, r 39 (243) | 0.83 / 0.56 |
+| 4TRI (+4HOOK) | a/c/n/p/t | a 46, n 41, p 10, c 8, t 7 (135) | n 31, t 19, a 14 ... | 0.83 / 0.59 |
+| VBAR_B | s | **s 57** (72) | s 13, e 9 ... | 0.79 / 0.19 |
+| INF | u | **u 46** (64) | u 23, i 6 ... | 0.72 / 0.36 |
+| VBAR_A | s/t | **t 45, g 4**, s 2 (64) | s 12, t 12 ... | 0.73 / 0.36 |
+| EBR | a/l/s | **l 43**, a 5 (55) | s 11, a 8, t 7 ... | 0.89 / 0.36 |
+| DBL | e/r/u | **o 26**, e 5, r 5, b 3 (45) | e 10, u 10, r 9 ... | 0.24 / 0.62 |
+| HASH4 | d/i/q | **d 23, q 4** (31) | i 11, d 5 ... | 0.90 / 0.47 |
+| 4STEM | a/c/e/n | **p 13, c 7** (31) | e 10, n 9 ... | 0.48 / 0.69 |
+| BETA | m/s | m 4 (5); BETA/LOOPSTEM1 disputes m 8 of 13 | | |
+
+Disputed columns: **C43/ZHOOK -> i 35 of 48** (wrong: e 9, u 8, flat); ZHOOK/CROSS (a new split in L13-L19, A ZHOOK = B CROSS) -> s 4,
+e 3, i 2, d 2 of 16: mixed, a different glyph from the i-sign, undecided. Agreed ZHOOK 8: mixed. CA 1. The stage-1 picture holds at
+1.6x the length, and VBAR_A's partner letter now shows as g (4), Tomokiyo's g/t cell. Descriptive against f.61 as before: VBAR_A t
+(6 two-way tokens), EBR l (4), HASH4 d/q (1), 4STEM p/c (1), BETA m (2). Nothing merged. Remaining for H177b: f.176r L20-L47 against
+fol. 177v-178r (bands not yet cut), then f.176v.
