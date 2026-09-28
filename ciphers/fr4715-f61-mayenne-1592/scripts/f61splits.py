@@ -18,6 +18,8 @@ STEPS = [  # step, result file, family reader class, letter sets, leaves, glyph 
     ("H75", "f61pair_h75_result.txt", "HASH4", "d | q", "f.101r f.188r", "no letter split", "4PI / HASH4", "d/q (one shared symbol)", "control"),
     ("H77", "f61pair_h77_result.txt", "LOOPS", "o | u", "f.101r", "o: stemmed side-by-side loops (SBS) | u: barred stemless pair (INF)", "SBS | INF", "b/o | h/u", "split"),
     ("H79", "f61pair_h79_result.txt", "EBR_A", "l,y | f,s", "f.101r", "leans f/s -> diagonal/triangle form, l/y -> forms without a diagonal; not significant", "EBR_B | EBR_A/VBAR_B", "l/y | f/s", "split (near miss)"),
+    ("H89P", "f61pair_h89_result.txt", "PHI", "o | e", "f.274", "o: flat row of loops, stem hanging from below (SBS) | e: trefoil, stem through the centre", "SBS | PHI", "b/o | e/r", "split (third hand)"),
+    ("H89V", "f61pair_h89_result.txt", "VBAR_A", "s | t", "f.274", "s: triangle with a long second stroke at the point | t: top bar only", "VBAR_B | VBAR_A", "f/s | g/t", "split (second hand)"),
     ("H80", "f61pair_h80_result.txt", "VBAR_A", "g | t", "f.101r f.188r", "no letter split", "VBAR_A", "g/t (one shared symbol)", "control"),
 ]
 rows = ["step\tfamily_class\tletter_sets\tleaves\tscored\tobserved\tp95\tP\tgate\tglyph_per_set\tf61_class\ttable_cell\tkind"]
@@ -25,6 +27,8 @@ for st, f, cls, sets, lv, gl, f61, cell, kind in STEPS:
     t = open(f"{HERE}/{f}").read()
     m = re.search(r"scored (\d+) .*?observed (\d+)/\d+; (?:permutation |exact )?P(?:\(>=obs\))? = ([\d.]+).*?p95 (\d+)/", t)
     g = re.search(r"GATE[^:]*: (\w+)", t)
+    if st.startswith("H89"):
+        blk = t.split(f"family {st[-1]} ")[1]; m = re.search(r"scored (\d+) .*?observed (\d+)/\d+; exact P = ([\d.]+).*?p95 (\d+)/", blk, re.S); g = re.search(r"GATE H89" + st[-1] + r": (\w+)", t)
     if st == "H67":
         m2 = re.search(r"Fisher one-sided b vs e P = ([\d.e-]+)", t); sc = re.search(r"(\d+) tiles", t)
         rows.append("\t".join([st, cls, sets, lv, "41", "b 11/14 vs e 3/13 in the SBS group", "-", m2.group(1), g.group(1), gl, f61, cell, kind])); continue

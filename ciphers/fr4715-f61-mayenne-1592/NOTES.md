@@ -2117,3 +2117,26 @@ L02 pos 4, L04 pos 2, L05 pos 3), while `scripts/f61sbs.tokens` required exact e
 (off by default; H65 rebuilt byte-identical, every earlier result `--check` unaffected) accepts an equal-length line,
 still requiring pass A to agree on the class at each position. With it, f.274 gives PHI e 24 / r 11 / o 7, 4TRI c 7 / p
 3, VBAR_A s 11 / t 7 -- a third glossed hand for the SBS o test and a second hand for H70's thin s/t split (H89).
+
+## Campaign step H89 (28 Sept 2026, 15:29-15:33 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+Third-hand replication of H65 (SBS o) and second-hand replication of H70 (VBAR s/t, thin on f.101r alone), on f.274's
+glossed cipher (recovered by H87's `--len-match`). Pre-registered and pushed 240c7085 before the call: `scripts/f61sbs.py
+build-h89` (seed 89; the window x +-25, y -60..+60 on ink darker than 80, fixed in the builder after three trial cuts
+the runner looked at and discarded -- f.274's cipher hand is larger and heavier than its gloss), family P = PHI under
+o 7 (all) + under e 7, family V = VBAR_A under s 7 + under t 7, 28 tiles in one shuffled run; each family scored alone
+with an exact null (`score-h89`). One blind Opus vision call; tile 1 none (a numeral-like form).
+
+| family | reader's group | letters |
+|---|---|---|
+| P | A flat row of 2-3 loops, stem hanging from below | o 7 |
+| P | B stacked / trefoil loops, stem through the centre | e 7 |
+| V | C barred triangle, top bar only | t 6 |
+| V | D top bar plus a long second stroke at the point | s 7 |
+
+P: 14/14, exact P = 0.0006 over 3432, p95 10/14 -> **GATE H89P PASS**. V: 13/13, exact P = 0.0006 over 1716, p95
+10/13 -> **GATE H89V PASS** (`scripts/f61pair_h89_result.txt`, `--check` OK). With H65/H67/H77 the side-by-side glyph
+carries period o (and b) in three glossed hands (f.101r, f.188r, f.274); with H70 the triangle with a second stroke
+carries period s and the top-bar triangle t in two (f.101r, f.274) -- the VBAR_A/VBAR_B split H15 found on f.61 from
+Tomokiyo's letters, now attested by two period decipherers. `scripts/f61_glyph_splits.tsv` gains rows H89P/H89V and
+`scripts/f61_skeleton_attest.txt`'s tag text now names both hands (counts unchanged). No reading, no class change.

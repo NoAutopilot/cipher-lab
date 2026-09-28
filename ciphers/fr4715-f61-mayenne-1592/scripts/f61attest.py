@@ -5,8 +5,8 @@ every lettered or paired position tagged by what its cell rests on. NOT a readin
 
 Tags (the strongest that applies):
   {P}  both letters of the cell period-attested by a blind tile sort against the period gloss of the family leaves:
-       SBS b/o (H65 o, H67 b), 4TRI c/p (H69)
-  {P1:x} one letter of the cell so attested: VBAR_A t, VBAR_B s (H70, f.101r's hand only, thin PASS)
+       SBS b/o (H65 o, H67 b, H89 o on f.274), 4TRI c/p (H69)
+  {P1:x} one letter of the cell so attested: VBAR_A t, VBAR_B s (H70 f.101r, thin; H89 f.274, 13/13)
   {pub} published key value (ZHOOK i/x, Tomokiyo's table: family/key_published_rare.tsv, H44)
   {K}  period key (family/key_period_v3.tsv) has both cell letters among the class's top 3 on at least one leaf with n >= 5
   {K1} period key has one of the two cell letters in that top 3
@@ -30,7 +30,7 @@ def ktag(cls, cell):
 sk = open(f"{HERE}/f61_skeleton.txt").read().splitlines()
 cells = dict(x.split("=") for x in next(l for l in sk if l.startswith("# cells used:")).split(":", 1)[1].split())
 out = ["# f.61r skeleton with attestation tags -- campaign H76, 28 Sept 2026, scripts/f61attest.py from scripts/f61_skeleton.txt (H58). NOT a reading: no letter chosen within any pair.",
-       "# tags: {P} both cell letters period-attested by a blind tile sort (SBS b/o H65/H67, 4TRI c/p H69); {P1:x} one letter so attested (VBAR_A t, VBAR_B s, H70, one hand); {pub} published key (ZHOOK); {K} both letters in the period key's top 3 for the class on a leaf with n>=5; {K1} one letter; {F} our f.61 fit only."]
+       "# tags: {P} both cell letters period-attested by a blind tile sort (SBS b/o H65/H67/H89, 4TRI c/p H69); {P1:x} one letter so attested (VBAR_A t, VBAR_B s, H70 f.101r + H89 f.274, two hands); {pub} published key (ZHOOK); {K} both letters in the period key's top 3 for the class on a leaf with n>=5; {K1} one letter; {F} our f.61 fit only."]
 tot, l10 = Counter(), Counter(); lines = {}
 for l in sk:
     m = re.match(r"(L\d\d) \(\d+ signs\): (.*)", l)

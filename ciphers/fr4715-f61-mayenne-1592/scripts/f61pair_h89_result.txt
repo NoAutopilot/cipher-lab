@@ -1,0 +1,8 @@
+read_call_H89.tsv: 28 rows; 28 tiles
+family P (PHI o vs e (SBS)): group A: o 7; group B: e 7
+  scored 14 (A 7, B 7); observed 14/14; exact P = 0.0006 over 3432; p95 10/14
+GATE H89P: PASS
+  [V] tile 1 (t): not scored
+family V (VBAR_A s vs t): group C: t 6; group D: s 7
+  scored 13 (A 7, B 6); observed 13/13; exact P = 0.0006 over 1716; p95 10/13
+GATE H89V: PASS
