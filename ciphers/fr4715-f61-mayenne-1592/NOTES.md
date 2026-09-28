@@ -3472,3 +3472,20 @@ table), where v4's merged EBR row gives l/s/a. That bears on f.61's 4 two-way EB
 of f.61's brackets are B. Scope: the form test used 11 tiles from rows L13-L19, while the letter count is over L01-L19 (every bracket there
 coded EBR_B by both readers). Two hands (Desportes; f.61's), one form, one cell: a verifier's question whether that licenses grading
 f.61's form-B brackets l at C. Not merged, no class change.
+
+## Campaign steps H172 and H176 (28 Sept 2026, 23:12-23:11 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- answered from the finding aid and Tomokiyo
+
+The BnF finding aid on disk (`sources/bnf-aem/cc504266_francais3974-3995.html`, fr.3984 section) gives items 83-90:
+- **Fol. 175 = item 83, "Déchiffrement de la lettre portée sous le n° 74"**, where item 74 (fol. 153) is "Lettre, avec chiffre et
+  déchiffrement, du baron DE TALMET, député de Bourgogne, au gouverneur de Bourgogne. « A Paris, ce XXe juillet 1593 »". Fol. 175r
+  deciphers Talmet's letter. That is why it failed H170's gate against f.176r, and H176's premise (fol. 175r = f.189r's decipherment) is wrong.
+- **Item 84 (Desportes to Clement VIII, "avec chiffre et déchiffrement") runs fol. 176-179** (item 85 starts at fol. 180). So **fol. 179
+  (canvas 333, the cipher page H169 saw) belongs to the same letter**, most likely the rest of its cipher, in Desportes's hand. It is
+  not a new correspondent or a new hand. That answers H172.
+- Tomokiyo's league.htm lists "no.74 (fol.153) Baron de Talmet ... / no.83 (fol.175) Dechipherment of no.74" with its own image
+  `league5.png`, fetched once (1 request, 200; `sources/cryptiana/web/img/league5.png`, manifest row). It is his **"Cipher Reconstructed
+  from BnF fr.3984, f.153"**: a homophonic table of figures and symbols with nulls and double letters, not the polyphonic family.
+  A published key for a different cipher: nothing for f.61. He then lists nos. 84-115 (the Desportes letters and the Lisieux reply) as
+  using the mayenne.htm cipher, which is H168-H180's material.
+H176 dropped (wrong premise, a different cipher). H172 done. Only H177b (the rest of f.176r, then fol. 179 and f.176v) remains open
+among the fr.3984 rows.
