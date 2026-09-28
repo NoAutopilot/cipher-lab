@@ -1696,3 +1696,32 @@ blind pass. The gate this row set for hand corrections is therefore met on preci
 full correction set. The instrument that can is a verify mode (H33): hand the reader candidate changes, true and
 decoy mixed, on controls first, and measure accept/reject discrimination before putting M2's 11 through it.
 Cost: four Sonnet calls, text only (no vision). No token, grade or class change.
+
+## Campaign step H33 (2026-09-28 14:29-14:37 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Calibration gate not met; the target call was not run** (CLAUDE.md rule 3, calibration
+before target). Verify mode for hand corrections: each H30 control packet plus a list of candidate key changes, half
+true (the control's own wrong glyphs to their majority plaintext letter) and half decoys (a glyph whose blind letter
+is right, moved to the alternative letter that costs least under the es17c7 trigram score, matched to the true set's
+occurrence counts), shuffled, glyphs relabelled (`cheap_test_1/h33/build.py`, `answers.json`, `packet_{A,B,D}.txt`;
+the target packet `packet_C.txt`, M2's 12 corrections plus 12 decoys, is built but unread). One blind Sonnet reader
+per control; scorer `h33/score.py`, output `h33/score.log`.
+
+| control | true accepted | decoys rejected | glyphs with >= 2 occurrences: true / decoys rejected |
+|---|---|---|---|
+| A (5%, s1) | 6/9 | 9/9 | 4/4 / 7/7 |
+| B (10%, s2) | 2/12 | 12/12 | 0/8 / 10/10 |
+| D (5%, s3) | 1/8 | 8/8 | 1/4 / 6/6 |
+| pooled | **9/29 = 0.31** | **29/29 = 1.00** | 5/16 / 23/23 |
+
+Gate (true-accept >= 0.8 and decoy-reject >= 0.8): **not met** on true-accept. The reader is a strongly conservative
+verifier: it never accepted a decoy, but it rejected most true corrections, including B's two largest (s1 o->a, 17
+occurrences; s20 a->o, 12 -- a swapped vowel pair, each change alone breaks words the other still spells wrong) and
+B's s10 i->g, which the H30 reader on the same packet had itself proposed. A's 4/4 on its multi-occurrence glyphs
+against B's 0/8 shows the per-packet variance is large at this N. With H30 the picture is consistent: **a reader's
+accept is informative (0 false accepts in 29 decoys plus H30's 3/3), a reader's reject or silence is not**; nothing
+in this family can license or refute M2's other 11 corrections one by one. Reading the target through a verifier
+this calibration fails would only produce accepts that H30 already showed (24=h) and rejects that mean nothing.
+Limits: decoys were the model's least-cost alternatives, yet mostly implausible letters (q->f, b->a), so decoy-reject
+1.00 overstates how the reader would treat a plausible wrong change; B's per-row verdicts are reconstructed from its
+summary (it named its two accepts). Cost: three Sonnet text calls, no vision. No token, grade or class change.

@@ -1,0 +1,4 @@
+A: true accepted 6/9, decoys rejected 9/9; n>=2: true 4/4, decoys rejected 7/7
+B: true accepted 2/12, decoys rejected 12/12; n>=2: true 0/8, decoys rejected 10/10
+D: true accepted 1/8, decoys rejected 8/8; n>=2: true 1/4, decoys rejected 6/6
+CONTROLS POOLED: true-accept 0.31 (9/29), decoy-reject 1.00; gate 0.8/0.8
