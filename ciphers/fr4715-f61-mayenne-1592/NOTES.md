@@ -2578,3 +2578,18 @@ model-free, controlled sign that f.108r L05-L06 decode toward French under f.61'
 fact about f.108r (HASH4 as the bare-hash i, as H98 found on the period-glossed leaves), not a reading of f.61 or of f.108r.
 The judge calls (H107, H112) saw no French on the same rows; the disagreement stands. H120 commits the beam's resolution under
 this map as a second pre-registered prediction for H64 before the ASKS 88 gloss lands. No class change.
+
+## Campaign step H120 (28 Sept 2026, 18:19-18:20 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_f108r_predict.py` -> `scripts/f61beam_f108r_prediction.txt` (per draft position: class, pair, beam letter;
+`--check` fresh), pushed before the ASKS 88 gloss lands, as a second pre-registered prediction of f.108r L04-L06 beside the
+judge's (H107, H112). The beam's strings ('.' = a class outside the map: OTHER, LOOPSTEM1, ...):
+
+    L04: czimere.uiemeretrehuedarge
+    L05: ngquin.em.isilznem.
+    L06: agneioiibilitbieniralitdedixiiintmiletai
+
+Not a reading: a model-free resolution of two-way pairs under a cell map that H119 ranks first of 1001 on these rows, with a
+within-pair accuracy of about 0.78 on known text (H116). For H64 only, and only after the person's gloss is in: the H34 model
+gloss readers' unverified words for these rows (NOTES H34: "misere" over L04, "quinze mois" over L05; 0.344 exact on known
+rows) are to be compared then, not now. No class change.
