@@ -1,0 +1,5 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+g47	l	h	medium	millombresdeenianteria->milhombresdeinfanteria(tresmilhombres)
+END
+SEGMENTED: olandose estos ormas en compaina de la duqueso de eeheureuses de las que a la ieni a con uos para que nosiniime de oulos sepamos pasare eso ela uesau eros con el elector de brandenburis eoneo pirad lonburis crisi emareymasor paradiense e embia
