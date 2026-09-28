@@ -2,109 +2,109 @@
  "c1-c2": {
   "N": [
    132,
-   734
+   667
   ],
-  "spearman": 0.399,
+  "spearman": 0.376,
   "shared_band": [
-   0.182,
-   0.464
+   0.184,
+   0.471
   ],
-  "shared_median": 0.331,
+  "shared_median": 0.323,
   "indep_band": [
-   -0.252,
-   0.067
+   -0.276,
+   0.039
   ],
-  "indep_median": -0.103,
+  "indep_median": -0.126,
   "verdict": "shared-key band"
  },
  "c1-c3": {
   "N": [
    132,
-   116
+   110
   ],
-  "spearman": 0.066,
+  "spearman": -0.008,
   "shared_band": [
-   -0.207,
-   0.162
+   -0.194,
+   0.165
   ],
-  "shared_median": -0.024,
+  "shared_median": -0.021,
   "indep_band": [
-   -0.615,
-   -0.302
+   -0.634,
+   -0.306
   ],
-  "indep_median": -0.481,
+  "indep_median": -0.477,
   "verdict": "shared-key band"
  },
  "c1-c4": {
   "N": [
    132,
-   282
+   275
   ],
-  "spearman": 0.059,
+  "spearman": 0.067,
   "shared_band": [
-   -0.044,
-   0.249
+   -0.104,
+   0.21
   ],
-  "shared_median": 0.076,
+  "shared_median": 0.06,
   "indep_band": [
-   -0.46,
-   -0.101
+   -0.446,
+   -0.117
   ],
-  "indep_median": -0.285,
+  "indep_median": -0.29,
   "verdict": "shared-key band"
  },
  "c2-c3": {
   "N": [
-   734,
-   116
+   667,
+   110
   ],
-  "spearman": 0.342,
+  "spearman": 0.417,
   "shared_band": [
-   0.21,
-   0.469
+   0.16,
+   0.507
   ],
-  "shared_median": 0.336,
+  "shared_median": 0.335,
   "indep_band": [
-   -0.276,
-   0.067
+   -0.289,
+   0.091
   ],
-  "indep_median": -0.098,
+  "indep_median": -0.118,
   "verdict": "shared-key band"
  },
  "c2-c4": {
   "N": [
-   734,
-   282
+   667,
+   275
   ],
-  "spearman": 0.245,
+  "spearman": 0.305,
   "shared_band": [
-   0.258,
-   0.509
+   0.226,
+   0.474
   ],
-  "shared_median": 0.392,
+  "shared_median": 0.349,
   "indep_band": [
-   -0.232,
-   0.056
+   -0.265,
+   0.065
   ],
-  "indep_median": -0.087,
-  "verdict": "between / outside both"
+  "indep_median": -0.098,
+  "verdict": "shared-key band"
  },
  "c3-c4": {
   "N": [
-   116,
-   282
+   110,
+   275
   ],
-  "spearman": 0.099,
+  "spearman": 0.199,
   "shared_band": [
-   -0.095,
-   0.269
+   -0.078,
+   0.23
   ],
-  "shared_median": 0.06,
+  "shared_median": 0.053,
   "indep_band": [
-   -0.465,
-   -0.1
+   -0.472,
+   -0.099
   ],
-  "indep_median": -0.288,
+  "indep_median": -0.309,
   "verdict": "shared-key band"
  }
 }
