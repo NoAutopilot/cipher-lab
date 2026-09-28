@@ -1,0 +1,23 @@
+# H107 f.108r L04-L06 prediction (seed 107, no-leak prompt), one blind Opus text call (28 Sept 2026, runner session_01NQpd6L9ZvLvjU1L7ttFmZs); written to disk by the judge itself
+label	score_0_10	reading
+SET-01	0	demepcuumpecpcapuucsicap | dasumipemlmyeice | danclaucpdmcqpucuuc
+SET-02	0.5	msaspcllacscpcecllcyicec | mellaicsadnssics | metpselcpmncmplcllc
+SET-03	1	nipianttcainansattadonsa | asdtcoaipsclioni | aslaystannpanatatta
+SET-04	0.5	omimllerilmlylalerlyulal | onleiulmisicmulm | onalcarlloilolelerl
+SET-05	1	ldadoorrabdobonoeroitono | laientodasamqtod | layomarbolaoyoroero
+SET-06	1	seorccuuopecpcicuhplacip | siluonceomotrape | silptiucpsocfpuchup
+SET-07	0	idtqccootpdcpclcooparclp | ilaotecqtatsdepd | ilspslocpitcipocoop
+SET-08	0.5	tlaynaiinalanauaixnslaun | tusinlaynqapllay | tusapuinatantainixa
+SET-09	1.5	pmimeruuiemereteuueqnete | ptduinemisilmarm | ctaelturepieceuruue
+SET-10	0	romouhdqmuohuusudquilusu | esidmluomsmtoluo | eslutsduhrmueuduqdu
+SET-11	1.5	sonoanttanonansattaydasa | ssltadaonuncoqno | ssencstansansatatta
+SET-12	0	tdmqllanmldlylslanlsylsl | tssamlldmimndllq | tsclasalltmltlalnal
+SET-13	2	nalaremmleneresemmeqtese | asdmltenliyunten | aspeusmernlenemezme
+SET-14	1	nesruhdqsuehuuluqdulouyu | alldsoursasmeour | alpumlduhasunuduqdu
+SET-15	1	pleyanmmenlanatammaulnta | ptumelayrienllay | ctsantmancenpamazma
+SET-16	0	usfsttanstsgtgltantpqtyt | ulcasdtsfoslsqts | ulmtlyattustutatnat
+SET-17	0	alcyllooplyllysloolasysl | asnopslycupdlsyl | asildsolyaplayolool
+SET-18	0	ltsgsfccfstsfsasppseisas | laecsistslfatist | lamsancsslfslscspcs
+SET-19	1.5	deuroottuorobonottonmono | dantumoruiulemor | dasolatobduoqotogto
+SET-20	0	eclplyssllplylslfslmtlsy | esmsltyclaynptlc | esdlasslleylelslfsl
+SET-21	0.5	epicllanilcyllalnalymlay | ralaimlpisidcmlc | enuldanlleilelalnal

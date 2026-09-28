@@ -2322,3 +2322,17 @@ it. That assignment rests on H72 (our 4TRI under Tomokiyo's c/p 10 of 10) and H6
 period c/p in two glossed hands). Every swap with real power (11 or more positions) scores well below the fitted map
 under both the judge and the 4-gram score. The H103 FAIL stays logged as run; this is its reading. No reading, no class
 change.
+
+## Campaign step H107 (28 Sept 2026, 16:09-16:12 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+A pre-registered judge prediction of f.108r rows L04-L06 ahead of the person's gloss (ASKS 88): sets from the family cut's
+pass A (`scripts/pass108gA_classes.tsv`, the person pack's numbering; 94 signs, of which 18 OTHER and 12 PLAIN leave 59
+cell positions; pre-H26, so side-by-side signs sit in PHI as [e/r]); the H94 no-leak prompt; ONE Opus text call (amended
+from three before the call, recorded in `scripts/PROMPTS.md` "H107"); sets and prompt pushed 275dae78 before it.
+
+Target rank **4 of 21** (1.5; best 2.0; every set scored 2 or less) -> **gate FAIL**: on these rows the judge finds no
+French under any map, which fits the handicapped input (a third of the signs uncovered, the loop split not applied, a
+single uncorrected pass). The target's resolution ("pmimeruuiemereteuueqnete | ptduinemisilmarm | ctaelturepieceuruue",
+`f61judge_f108r_L04_L06_s107_result.txt`) stays committed as the pre-registered prediction for H64 to score against the
+person's gloss letter by letter; expect it to score poorly. A useful prediction on these rows needs the reconciled,
+H26-relabelled signs first (a later runner's row). No reading, no class change.

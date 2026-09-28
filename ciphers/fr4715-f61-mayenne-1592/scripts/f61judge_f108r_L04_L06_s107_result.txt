@@ -1,0 +1,4 @@
+f108r_L04_L06_s107: target SET-09 scored 1.5; rank 4 of 21 (ties against the target)
+all scores: SET-13:2.0 SET-09:1.5 SET-11:1.5 SET-19:1.5 SET-03:1.0 SET-05:1.0 SET-06:1.0 SET-14:1.0 SET-15:1.0 SET-02:0.5 SET-04:0.5 SET-08:0.5 SET-21:0.5 SET-01:0.0 SET-07:0.0 SET-10:0.0 SET-12:0.0 SET-16:0.0 SET-17:0.0 SET-18:0.0 SET-20:0.0
+target reading as given by the judge: pmimeruuiemereteuueqnete | ptduinemisilmarm | ctaelturepieceuruue
+GATE H85 (f108r_L04_L06_s107): rank 1 of 21 -> FAIL
