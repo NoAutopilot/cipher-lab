@@ -2001,7 +2001,7 @@ PHI b -> SBS, H69 4TRI a/n -> hook forms vs c/p triangle, H70 VBAR_A s -> VBAR_B
 u -> INF), two within-cell FAILs (H71 e/r, H73 a/n), two clean one-symbol controls FAIL as expected (H75 d/q, H80 g/t),
 one near miss (H79 EBR_A). For the family worker's key rebuild (H52) and the verifier page (H66). Not a reading.
 
-## Campaign steps H82 and H83 (28 Sept 2026, 15:10-15:11 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs) -- dropped, no call
+## Campaign steps H82 and H83 (28 Sept 2026, 15:09 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs) -- dropped, no call
 
 Both rested on the idea that narrowing H57's wide period-key letter sets with the tile-attested splits would give the
 context judge back its power. Re-reading H57's own section: narrowed to their table cells, those sets ARE the
