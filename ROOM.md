@@ -4000,3 +4000,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-28 12:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 12:10 UTC: spawned 0 (), queued left 0
 2026-09-28 12:12 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 12:12 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
 2026-09-28 13:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 13:11 UTC: spawned 0 (), queued left 0
+2026-09-28 13:13 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 13:13 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
