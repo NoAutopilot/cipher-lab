@@ -2328,3 +2328,15 @@ requests; saved pages in `h68/`). MDZ's search covers metadata and full texts of
 (Mercy Cleve Churfürst 1648; Mercy Burgsdorff) are OR-matched across the library (406,192 and 103,584 hits, topped by an
 English novel), so they are noise, not a test. Vol. 6 itself (1647-1651) was not opened page by page. No
 contemporary German print of the abbé's 1648 mission found by this route. No token, grade or class change.
+
+## Campaign step H69 (2026-09-28 16:45 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Unreached at issue level.** Gallica SRU (6 requests, 2 s apart, `h69/sru.tsv`): "abbé de
+Mercy", Mercy + Clèves, Mercy + Brandebourg, each with dc.date 1648, match the *Gazette* (Paris, 1631-1761,
+ark:/12148/cb32780022t) only **as a whole collection** -- the date filter does not narrow a periodical record, so these
+hits say only that the words occur somewhere in 130 years of the Gazette -- plus 1648 books unrelated to the mission
+(Dupleix, *Le Tacite françois*). The 1648 issues are not separate SRU records; reaching them needs the collection's date
+listing (`https://gallica.bnf.fr/ark:/12148/cb32780022t/date1648`) and a ContentSearch per issue (about 100 requests),
+more than this row's cap and the host's per-session rule allow. Left as the route for a later worker: list the 1648
+issues once, then `services/ContentSearch?ark=<issue>&query=Mercy` for the June-August issues only (about 15 requests).
+No token, grade or class change.
