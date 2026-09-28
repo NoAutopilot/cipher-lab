@@ -1,0 +1,133 @@
+passage	pos	sign_id	alt	conf	note
+P1	1	S22	S93	M	closed loop, w-like shape (leading plain "a." before it ignored)
+P1	2	S30	S49	M	diagonal dash with two dots (division-sign form)
+P1	3	S74	S37	M	small loop with vertical tick/dot above
+P1	4	S60	S73	M	vertical stroke crossed by two horizontal bars (hash)
+P1	5	S24	S88	M	oval crossed by one horizontal stroke
+P1	6	S75	S24	M	plain vertical+horizontal cross
+P1	7	S89		H	two stacked horizontal lines
+P1	8	S17	S71	M	cursive Z with curl at top
+P1	9	S31		H	cursive L with loop at foot
+P1	10	S16	S23	M	closed triangle/delta shape
+P1	11	S75	S24	M	plain cross
+P1	12	S52		H	numeral 3
+P1	13	S75	S24	M	plain cross, small dot near foot
+P1	14	S37	S74	M	loop with apostrophe-like tick above; sheet has no exact tick variant
+P1	15	S22	S93	M	rounded bowl merging into loop (w-like), lower confidence
+P1	16	S55	S94	M	circle over cross, female-symbol shape
+P1	17	S52		H	numeral 3, overline likely stray flourish from line above
+P1	18	S23	S16	M	slanted cursive A
+P1	19	S53	S54	M	looped shape with diagonal cross stroke
+P1	20	S35		H	cursive m with tick/dot above
+P1	21	?		L	two small stacked dots, possibly punctuation/separator, no sheet match
+P1	22	S24	S88	M	oval crossed by one horizontal stroke
+P1	23	S62		M	beta-like loop with long descending tail
+P1	24	S88	S24	M	oval crossed by two horizontal strokes
+P1	25	S37	S50	M	simple loop like numeral 6
+P1	26	S65	?	M	figure-8 (8) with a stray horizontal line through it
+P1	27	S23	S16	M	slanted A with a stray dot nearby
+P1	28	S89		H	two stacked horizontal lines
+P1	29	S97	?	M	looped ascender with long descending tail
+P1	30	S24	S88	M	two diagonal strokes crossed by a horizontal
+P1	31	S62		M	beta-like loop with tail
+P1	32	S61	S94	M	loop with descending tail like numeral 9
+P1	33	S65	?	M	figure-8 with stray crossing line
+P1	34	S31		H	cursive L with loop
+P1	35	S50		H	joined "6s"-like cursive pair, matches sheet closely
+P2	1	S23	S16	M	slanted cursive A
+P2	2	S16	S23	M	closed triangle/delta shape
+P2	3	S88	S24	M	oval crossed by two horizontal strokes
+P2	4	S24	S88	M	two diagonal strokes crossed by a horizontal
+P2	5	S74	S37	M	loop with tick/dot above
+P2	6	?	S57	L	open loop with hook above, like small e/c, no confident match
+P2	7	S75	S24	M	plain cross
+P2	8	S52		H	numeral 3
+P2	9	S65	?	M	figure-8 with stray crossing line
+P2	10	S75	S24	M	plain cross
+P2	11	S52		H	numeral 3
+P2	12	S75	S24	M	plain cross
+P2	13	S31		H	cursive L with loop
+P2	14	S97	?	M	angular ascender/tail shape, loop unclear
+P2	15	S88	S24	M	oval crossed by two horizontal strokes
+P2	16	S52		H	numeral 3, overline likely stray flourish
+P2	17	S37	S74	M	loop with apostrophe-like tick above
+P2	18	S24	S88	M	two diagonal strokes crossed by a horizontal
+P2	19	S17	S71	M	angular Z/7-like shape, curl less pronounced
+P2	20	S53	S54	M	looped shape with diagonal cross stroke
+P2	21	S57	S45	L	small open loop, resembling backward c
+P2	22	S74	S37	M	loop with tick/dot above
+P2	23	S17		H	cursive Z with clear curl
+P2	24	S62		M	beta-like loop with tail
+P2	25	?		L	two small stacked dots, no sheet match
+P2	26	S75	S24	M	plain cross
+P2	27	S55	S94	M	circle over cross, female-symbol shape
+P2	28	S22	S93	M	closed loop, w-like shape
+P2	29	S71	S17	M	angular zigzag shape
+P2	30	S61	S94	M	loop with descending tail like numeral 9
+P2	31	S75	S24	M	plain cross
+P2	32	S40	?	M	stacked z-over-loop pair, matches sheet's joined "zg" form
+P2	33	S95		H	plain circle/o (cipher ends before plain word "Con")
+P3	1	S65	?	M	figure-8 with crossing line; crop starts mid-sign, partial at left edge
+P3	2	?		L	two small stacked dots, no sheet match
+P3	3	S74	S37	M	loop with tick/dot above
+P3	4	S62		M	beta-like loop with tail
+P3	5	S89		H	two stacked horizontal lines
+P3	6	S17	S71	M	cursive Z shape
+P3	7	S31		H	cursive L with loop
+P3	8	S61	S94	M	loop with descending tail like numeral 9
+P3	9	S13	S57	M	small open circle with dot beside it
+P3	10	S88	S24	M	oval crossed by two horizontal strokes
+P3	11	S74	S37	M	loop with tick/dot above
+P3	12	S61	S94	M	loop with descending tail like numeral 9
+P3	13	S75	S24	M	plain cross
+P3	14	S37	S74	M	loop with apostrophe-like tick above
+P3	15	S65	?	M	figure-8 with stray crossing line
+P3	16	S24	S88	M	two diagonal strokes crossed by a horizontal
+P3	17	S62		M	beta-like loop with tail
+P3	18	S89		H	two stacked horizontal lines
+P3	19	S17	S71	M	cursive Z shape
+P3	20	?	S57	L	cursive lowercase-s-like double curve, no confident match
+P3	21	S65		M	clean figure-8, no crossing line (end of line)
+P4	1	S23	S16	M	slanted cursive A (after plain "Proponendo")
+P4	2	S74	S37	M	loop with tick/dot above
+P4	3	S65	?	M	figure-8 with dense crossing lines
+P4	4	S31		H	cursive L with loop
+P4	5	S42		M	simple X cross
+P4	6	S17	S71	M	angular Z shape
+P4	7	S62		M	beta-like loop with tail
+P4	8	S65	?	M	figure-8 with stray crossing line
+P4	9	S31		H	cursive L with loop
+P4	10	S74	S37	M	loop with tick/dot above
+P4	11	S61	S94	M	loop with descending tail like numeral 9
+P4	12	S57	S47	L	double-curl shape like cursive E, uncertain match
+P4	13	S23	S16	M	slanted cursive A
+P4	14	S75	S24	M	plain cross
+P4	15	S22	S93	M	closed loop, w-like shape
+P4	16	S31		H	cursive L with loop
+P4	17	S62		M	beta-like loop with tail
+P4	18	S74	S37	M	loop with tick/dot above
+P4	19	S61	S94	M	loop with descending tail like numeral 9
+P4	20	S17	S71	M	cursive Z shape
+P4	21	S22	S93	M	closed loop, w-like shape
+P4	22	S30	S49	M	diagonal stroke with a dot
+P4	23	S65	?	M	figure-8 with stray crossing line
+P4	24	S57	S47	L	double-curl shape like cursive E, uncertain match
+P4	25	S22	S93	M	closed loop, w-like shape
+P4	26	S65	?	M	figure-8 with crossing line (cipher ends before plain "alche")
+P5	1	S65	?	L	heavily inked blot, shape unclear, possibly smudged figure-8
+P5	2	S67	?	M	cursive f-like shape with cross stroke, matches sheet's hooked f form
+P5	3	S95		H	plain circle/o
+P5	4	S70	S16	M	X-like shape with hooked/curled terminals
+P5	5	S62		M	beta-like loop with tail
+P5	6	S22	S93	M	closed loop, w-like shape
+P5	7	S57	S47	L	double-curl shape like cursive E, uncertain match
+P5	8	S17	S71	M	cursive Z shape
+P5	9	S30	S49	M	diagonal stroke with a dot
+P5	10	S70		H	V-like shape crossed by a line, matches sheet closely
+P5	11	S31		H	cursive L with loop
+P5	12	S24	S88	M	two diagonal strokes crossed by a horizontal
+P5	13	S37	S74	M	loop with apostrophe-like tick above
+P5	14	S75	S24	M	plain cross
+P5	15	S97	?	M	looped ascender with long descending tail
+P5	16	S37	S65	M	simple loop like numeral 6, no crossing line
+P5	17	S74	S37	M	loop with tick/dot above (end of crop)
