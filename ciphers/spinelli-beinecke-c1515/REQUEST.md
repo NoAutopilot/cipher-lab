@@ -11,7 +11,7 @@ The one cipher letter online (Tommaso Spinelli to Canon Leonardo, Barcelona 7 Se
 cipher of the same length, sign count and design (one hook-shaped sign family standing for several letters, about a
 fifth of the tokens nulls) reads 0.12-0.20 for the repository's annealer against a 0.6 gate (HYPOTHESES.md rows of
 28 Sept 2026, steps H22/H27/H30), while the same design at a projected pool of 2,000 signs read 0.706 once (N=2000,
-iterations scaled) and single seeds read 0.59-0.83 from 1,000 signs up (H26; noisy, see NOTES.md). The route that
+iterations scaled) and single seeds read 0.59-0.83 from 1,000 signs up (H26; noisy, see NOTES.md). Firmed 28 Sept 2026 (H26b, 300 iterations per sign): at 2,000 signs 3 of 5 seeds read 0.82-0.86 (mean 0.639, gate met), at 3,000 signs 1 of 3 reads 0.84 (mean 0.464); every converged run reads 0.82-0.86, the stuck ones are search failures the annealer's own score tells apart. The route that
 remains for a reading is length: more ciphertext in the same hand and key. The selection rule in CLAUDE.md asks for a
 pool of 2,000 or more signs of one sender, office and key family.
 

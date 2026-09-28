@@ -1332,3 +1332,37 @@ JSTOR row). No reading, no class change, rule 10 wording.
 
 **Cost:** 3 network requests (library.yale.edu, beinecke.library.yale.edu; 2 s apart), no vision calls, no
 credentials -- recorded as 0.5 USD (the est). No AskUserQuestion, no other target touched.
+
+## Campaign step H26b (28 Sept 2026, 04:01-05:03 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H26b: firm up the pool-length figure before it is quoted -- the
+merge=6 nulls=0.17 design-matched control at projected N=2000 (5 seeds) and N=3000 (3 seeds), 300 iterations per sign
+(600,000 and 900,000), 8 restarts, it16. Pre-registered: N=3000 clearing 0.6 on the mean says the design reads at
+pool length; else "the route needs more than length".
+
+**Result (HYPOTHESES.md rows 04:47 and 05:02): the mean clears the gate at N=2000 and misses it at N=3000, and in
+both batteries the outcome is bimodal, not a spread around a mean.**
+
+| projected N | iters | seeds | recovery per seed | mean | gate 0.6 |
+|---|---|---|---|---|---|
+| 2000 | 600000 | 5 | **0.830, 0.817, 0.856**, 0.308, 0.384 | **0.639** | met |
+| 3000 | 900000 | 3 | **0.841**, 0.498, 0.052 | 0.464 | not met |
+| (H22) 2000 | 150000 | 3 | 0.610, 0.761, 0.747 | 0.706 | met |
+| (H26) 3000 | 225000 | 3 | 0.216, 0.291, 0.054 | 0.187 | not met |
+
+Reading: every seed that converges reads 0.82-0.86 (seven of them now, across N=2000 and 3000), the ceiling for this
+design being 0.83-0.85; the seeds that do not read 0.05-0.50; and within each battery the converged seeds' best
+scores are 300-400 better than the stuck seeds' (-5320/-5351/-5449 against -5750/-5762 at N=2000; -8514 against
+-8875/-8933 at N=3000), so the stuck runs are search failures the objective itself can tell apart, not a property of
+the length. On the pre-registered criterion the N=3000 mean fails; on the per-seed evidence the design IS readable by
+this annealer at 2,000-3,000 signs whenever the search converges, which at 8 restarts happens in 3 of 5 and 1 of 3
+seeds. A 3- or 5-seed mean is the wrong summary of a bimodal outcome (rule 3's fold-spread lesson); the number to
+quote is the pair: converged reads 0.82-0.86, convergence rate about half at 8 restarts. Per the rule-3 "same knob"
+paragraph this is not re-run with more restarts here: the figure is firm enough for what it is for (H17's request,
+which says "about 2,000 signs, noisily"; one sentence added to REQUEST.md), and the order of magnitude -- the
+single letter never, the pool often -- is the point.
+
+**Controls:** every number is a control run; no target run, no reading, no class change, rule 10 wording.
+**Files:** HYPOTHESES.md rows; REQUEST.md sentence. **Cost:** CPU only, two background batteries of 45 and 60
+minutes on separate cores, no vision calls, no requests, no credentials -- recorded as 1.5 USD (the est). No
+AskUserQuestion, no other target touched.
