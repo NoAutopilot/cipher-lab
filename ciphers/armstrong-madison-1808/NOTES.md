@@ -2341,3 +2341,17 @@ web.archive.org 2 (000/503), founders.archives.gov 1 (202), masshist.org 1, gene
 image reads by this worker. Cost about 16 USD estimated (get_session carries no cost field on this session); the ROOM
 line at 01:26 that said "01:56 UTC" was an estimate, corrected at 01:30 (rule 6). Rate-limit status read allowed_warning at
 01:2x (BUDGETS.md: no new workers; none were started).
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 01:07, 28 Sept 2026)
+
+Landed from PR 61 (`second-opinions/chatgpt-checkpoint-2026-09-28-0107.md`, PR-LAND-23). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; Adams to Armstrong, 27 Nov 1809 (Morrison, 2nd series, vol. I (A-B), 1893, pp.10-12; MHS OAC120595/120596, Huntington HM22922) is read as enclosing "a copy of a cypher, the corresponding part of which I retain," a temporary cipher distinct from the Department cipher Adams was still awaiting from Armstrong -- unchecked.
+- lead; five MHS catalogue records of undated or loosely-dated Adams cipher/key sheets, on microfilm reel 602 (OAC081697, 120623, 120693, 130946) and reel 135 (OAC120739), none identified by the catalogue as the November 27 enclosure or connected to the 1808 target -- unchecked.
+- archival-route; Tatum, "Ten Unpublished Letters of John Quincy Adams 1796-1837," Huntington Library Quarterly 4(3) (1941), DOI 10.2307/3815711, cited (refining PR 60's single-page locator) as discussing the 27 Nov 1809 letter across pp.374-376; article text still not acquired -- unchecked.
+- next-step; Adams diary entry for 15 June 1813 (editorial transcription, not checked against the manuscript image) describes a cipher letter sent via Delprat toward Paris with a clear duplicate withheld for personal delivery, and Paris reporting the key unavailable; next step named is to locate both witness letters via the diary's surrounding entries -- unchecked.
+- archival-route; a raw, pre-editing Rotunda transcription of an 8 Jan 1810 JQA-to-TBA letter (read via web reader after a direct curl 403) describes a sliding lock/key with four alternating letter columns; the checkpoint states no implementation or cryptanalytic exclusion was drawn from it -- unchecked.
+
+No check-solved candidate (no printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key is named; the checkpoint states explicitly that no numeric mapping, shape assignment, crib or plaintext candidate is licensed by these passages).
