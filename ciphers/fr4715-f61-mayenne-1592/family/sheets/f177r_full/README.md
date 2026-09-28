@@ -1,0 +1,2 @@
+centres 112,228,339,462,570,690,816,936,1056,1164,1284,1395,1515,1650,1770,1896,2026,2144,2264,2384,2480,2600,2714,2816,2936,3050,3149,3245,3365,3479,3560,3665,3764,3866
+H177 (runner 6, 28 Sept 2026): 34 clear lines of fr.3984 fol. 177r (canvas 329, native), centres set by eye on a ruler overlay (automatic line finding failed on the underlines); crops not committed; regenerate: python3 cut_bands.py <native c329> 400,1900,4500,4600 <outdir> f177 --up 62 --down 52 --seg 2250 --overlap 120 --scale 0.8 --centres <above>.
