@@ -2832,3 +2832,14 @@ F61-CAL's DP, and scores the four committed predictions (H107, H112 s108/s109, H
 letter is in the sign's pair, beside first-letter and 0.5 baselines. Today it prints "waiting". `--selftest` builds a
 synthetic gloss from H120's own letters (19 words): H120 scores 71/71 and the selftest PASSes; the other predictions'
 numbers in that run mean nothing (the synthetic gloss is H120's). H64 now only needs the file. No reading, no class change.
+
+## Campaign step H136 (28 Sept 2026, 19:23-19:27 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_lattice.py` (design and the one bonus weight fixed in its docstring, pushed 2c63d308 before the run;
+`f61beam_lattice_result.txt`): a beam whose state carries a position in a trie of the fr16 word list (15,402 words), bonus
+0.5 per letter of a completed word, width 2000. On the 125 known positions: **lattice 111/125 vs plain 107/125 -> GATE
+(>= 115) FAIL**. By text: f.61 spans **44/49 = 0.898** (plain 38/49), f.108r overlay 67/76 (plain 69/76). The word model helps
+exactly where H131 said the plain beam fails (f.61's spans, cut by nulls into short runs) and costs two letters on the longer
+f.108r lines. Not re-tuned (one weight, fixed before the run). For the verifier: on f.61 itself the lattice's within-pair
+choices are about 0.9 right on known letters, the best figure any instrument has shown on this leaf, but on 49 positions and
+below this step's pooled gate. No reading, no class change.

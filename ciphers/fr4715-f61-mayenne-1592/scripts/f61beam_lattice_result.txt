@@ -1,0 +1,4 @@
+trie nodes 35563 from 15402 words
+f.61 spans: lattice beam 44/49, plain beam 38/49
+f.108r overlay: lattice beam 67/76, plain beam 69/76
+pooled: lattice beam 111/125, plain beam 107/125; GATE H136 (>= 115/125): FAIL
