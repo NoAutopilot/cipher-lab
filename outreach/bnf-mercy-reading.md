@@ -1,4 +1,4 @@
-status: drafted, not sent
+status: drafted, not sent; Gmail draft created in the project mailbox 28 Sept 2026 16:5x UTC (French text; the person adds the signature and sends)
 subject: BnF Espagnol 144, f.22 (Espagnol 142-144, TOME III) : une lecture cryptanalytique et une question sur un déchiffrement antérieur / a cryptanalytic reading and a question about a prior decipherment
 to: manuscrits@bnf.fr (Département des Manuscrits ; adresse générale déjà utilisée pour ce projet via SINDBAD/courriel direct le 23 Sept 2026 -- Dupuy 468 -- et le 27 Sept 2026 -- devis de reproduction, outreach/bnf-manuscrits-arsenal-quote-batch.md, CONTRIBUTIONS.md row 37/ASKS row 78). No general BnF enquiry address other than this one and the SINDBAD web form (www.bnf.fr/fr/une-question-pensez-sindbad) is on file in this repository. Send from the same account used for the 27 Sept 2026 BnF correspondence, per outreach/README.md rule 8, not from the project mailbox.
 targets: ciphers/espagnol142-mercy-1648
