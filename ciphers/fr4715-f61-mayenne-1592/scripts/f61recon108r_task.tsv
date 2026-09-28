@@ -1,0 +1,87 @@
+# H108 reconciliation task (28 Sept 2026): f.108r L04/L05 (H34 passes A/B) and L06 (H108 passes C/D, whole row), NW-aligned; sign = the first pass's code (or the other's where the first has none); alt = the other pass's code; settle = yes where they differ.
+line	position	sign	confidence	alt	why	settle	segA	xA	segB	xB	crop
+L04	1	4TRI	M	B:C43	differ	yes	s1	1037	s1	1037	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	2	BETA	M		agree	no	s1	1267	s1	1253	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	3	ZHOOK	H		agree	no	s1	1526	s1	1526	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	4	BETA	H		agree	no	s1	1800	s1	1800	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	5	PHI	H		agree	no	s1	2045	s1	2045	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	6	PHI	H		agree	no	s1	2261	s1	2246	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	7	INF	L	B:PHI	differ	yes	s1	2462	s1	2448	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	8	OTHER	M		agree	no	s1	2736	s1	2707	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s1.jpg
+L04	9	INF	M		agree	no	s2	302	s2	302	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	10	ZHOOK	H		agree	no	s2	562	s2	547	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	11	PHI	H		agree	no	s2	806	s2	821	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	12	BETA	H		agree	no	s2	1022	s2	1008	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	13	PHI	H		agree	no	s2	1238	s2	1253	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	14	PHI	H		agree	no	s2	1483	s2	1483	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	15	PHI	H		agree	no	s2	1670	s2	1670	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	16	VBAR_A	M		agree	no	s2	1872	s2	1872	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	17	PHI	H		agree	no	s2	2074	s2	2074	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	18	OTHER	L	B:PHI	differ	yes	s2	2304	s2	2304	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	19	INF	M		agree	no	s2	2563	s2	2534	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	20	INF	M		agree	no	s2	2779	s2	2779	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s2.jpg
+L04	21	PHI	H		agree	no	s3	374	s3	360	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s3.jpg
+L04	22	4PI	M		agree	no	s4	1238	s4	1238	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s4.jpg
+L04	23	C43	H		agree	no	s4	1469	s4	1483	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s4.jpg
+L04	24	PHI	M		agree	no	s4	1670	s4	1685	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s4.jpg
+L04	25	VBAR_A	M		agree	no	s4	1872	s4	1872	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s4.jpg
+L04	26	PHI	H		agree	no	s4	2059	s4	2059	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L04_s4.jpg
+L05	1	4TRI	M	B:4STEM	differ	yes	s1	1037	s1	1051	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s1.jpg
+L05	2	VBAR_A	M		agree	no	s1	1296	s1	1296	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s1.jpg
+L05	3	4PI	M		agree	no	s3	1080	s3	1094	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	4	INF	M		agree	no	s3	1325	s3	1296	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	5	ZHOOK	M		agree	no	s3	1526	s3	1526	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	6	C43	H		agree	no	s3	1800	s3	1800	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	7	OTHER	M	B:LOOPSTEM1	differ	yes	s3	2030	s3	2016	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	8	PHI	H		agree	no	s3	2246	s3	2246	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	9	BETA	H		agree	no	s3	2448	s3	2448	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	10	OTHER	M		agree	no	s3	2707	s3	2707	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s3.jpg
+L05	11	ZHOOK	H		agree	no	s4	331	s4	331	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	12	EBR_A	M		agree	no	s4	562	s4	562	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	13	ZHOOK	H		agree	no	s4	806	s4	806	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	14	EBR_B	M		agree	no	s4	1037	s4	1037	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	15	BETA	H		agree	no	s4	1210	s4	1224	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	16	C43	H		agree	no	s4	1454	s4	1454	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	17	PHI	H		agree	no	s4	1670	s4	1656	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	18	BETA	H		agree	no	s4	1814	s4	1800	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L05	19	OTHER	M		agree	no	s4	2016	s4	2016	ciphers/fr4715-f61-mayenne-1592/images/f108g/f108g_L05_s4.jpg
+L06	1	C43	H		agree	no	s1	1100	s1	1087	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	2	VBAR_A	M		agree	no	s1	1296	s1	1296	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	3	4STEM	M		agree	no	s1	1505	s1	1505	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	4	DBL	L		agree-flagged	no	s1	1721	s1	1728	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	5	HASH4	L		agree-flagged	no	s1	1922	s1	1922	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	6	SBS	M	B:PHI	differ	yes	s1	2189	s1	2189	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	7	HASH4	L		agree-flagged	no	s1	2390	s1	2398	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	8	HASH4	L		agree-flagged	no	s1	2650	s1	2650	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s1.jpg
+L06	9	SBS	M	B:PHI	differ	yes	s2	274	s2	274	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	10	HASH4	L		agree-flagged	no	s2	475	s2	482	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	11	ISH	M		agree	no	s2	677	s2	677	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	12	HASH4	M		agree	no	s2	878	s2	878	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	13	VBAR_A	M		agree	no	s2	1166	s2	1166	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	14	SBS	M	B:PHI	differ	yes	s2	1418	s2	1411	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	15	HASH4	M		agree	no	s2	1685	s2	1692	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	16	DBL	L		agree-flagged	no	s2	1901	s2	1915	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	17	4STEM	M		agree	no	s2	2131	s2	2131	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	18	ZHOOK	M		agree	no	s2	2376	s2	2376	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	19	DBL	L		agree-flagged	no	s2	2606	s2	2599	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s2.jpg
+L06	20	4STEM	M		agree	no	s3	259	s3	259	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	21	ISH	L		agree-flagged	no	s3	475	s3	475	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	22	HASH4	M		agree	no	s3	720	s3	720	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	23	VBAR_A	M		agree	no	s3	936	s3	936	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	24	4STEM	M	B:4PI	differ	yes	s3	1166	s3	1152	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	25	DBL	L		agree-flagged	no	s3	1368	s3	1375	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	26	4STEM	M	B:4PI	differ	yes	s3	1598	s3	1613	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	27	ZHOOK	M		agree	no	s3	1843	s3	1850	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	28	ZHOOK	M		agree	no	s3	2102	s3	2102	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	29	HASH4	M		agree	no	s3	2347	s3	2333	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	30	HASH4	M		agree	no	s3	2578	s3	2578	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s3.jpg
+L06	31	ZHOOK	M		agree	no	s4	202	s3	2822	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	32	4STEM	M		agree	no	s4	446	s4	446	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	33	VBAR_A	L		agree-flagged	no	s4	662	s4	662	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	34	OTHER	L	B:BETA	differ	yes	s4	880	s4	893	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	35	ZHOOK	M		agree	no	s4	1123	s4	1123	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	36	ISH	M		agree	no	s4	1310	s4	1310	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	37	DBL	L		agree-flagged	no	s4	1505	s4	1498	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	38	VBAR_A	M		agree	no	s4	1714	s4	1699	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	39	4STEM	M		agree	no	s4	1901	s4	1901	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg
+L06	40	HASH4	L		agree-flagged	no	s4	2117	s4	2117	ciphers/fr4715-f61-mayenne-1592/images/f108h/f108h_L06_s4.jpg

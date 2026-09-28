@@ -1,0 +1,41 @@
+line	pos	sign	conf	segment	x_px	note
+L06	1	C43	h	s1	1087
+L06	2	VBAR_A	m	s1	1296	small triangle with top bar
+L06	3	4STEM	m	s1	1505	alt 4TRI
+L06	4	DBL	m	s1	1728	stacked loops on stem; alt PHI
+L06	5	HASH4	h	s1	1922
+L06	6	PHI	h	s1	2189
+L06	7	HASH4	h	s1	2398	dot below
+L06	8	HASH4	h	s1	2650	overlap zone; same as s2 x~29
+L06	9	PHI	m	s2	274
+L06	10	HASH4	h	s2	482
+L06	11	ISH	m	s2	677	alt EBR_B
+L06	12	HASH4	h	s2	878
+L06	13	VBAR_A	h	s2	1166
+L06	14	PHI	m	s2	1411
+L06	15	HASH4	m	s2	1692	crossed by clear-hand flourish
+L06	16	DBL	m	s2	1915	alt PHI
+L06	17	4STEM	m	s2	2131
+L06	18	ZHOOK	m	s2	2376
+L06	19	DBL	m	s2	2599	alt PHI
+L06	20	4STEM	m	s3	259	a pen flourish stroke precedes it (skipped)
+L06	21	ISH	m	s3	475	alt EBR_B
+L06	22	HASH4	h	s3	720
+L06	23	VBAR_A	m	s3	936
+L06	24	4PI	m	s3	1152	alt HASH4
+L06	25	DBL	m	s3	1375	alt PHI
+L06	26	4PI	m	s3	1613
+L06	27	ZHOOK	h	s3	1850
+L06	28	ZHOOK	h	s3	2102
+L06	29	HASH4	h	s3	2333
+L06	30	HASH4	h	s3	2578
+L06	31	ZHOOK	m	s3	2822	overlap zone; same as s4 x~202
+L06	32	4STEM	m	s4	446
+L06	33	VBAR_A	l	s4	662	small v-like; may be clear writing
+L06	34	BETA	l	s4	893	long stem with looped bowl; alt OTHER (long-s like), possibly clear writing
+L06	35	ZHOOK	m	s4	1123
+L06	36	ISH	m	s4	1310	alt EBR_B
+L06	37	DBL	m	s4	1498	alt PHI
+L06	38	VBAR_A	m	s4	1699
+L06	39	4STEM	m	s4	1901
+L06	40	HASH4	m	s4	2117	crossed by long stroke; alt 4PI

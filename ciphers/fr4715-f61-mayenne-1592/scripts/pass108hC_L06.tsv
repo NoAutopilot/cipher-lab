@@ -1,0 +1,41 @@
+line	pos	sign	conf	segment	x_px	note
+L06	1	C43	h	s1	1100
+L06	2	VBAR_A	m	s1	1296	small closed down-pointing triangle
+L06	3	4STEM	m	s1	1505	alt 4TRI; 4 with long stem descending
+L06	4	DBL	l	s1	1721	alt PHI; figure-8 on stem under clear word
+L06	5	HASH4	l	s1	1922	alt INF; crossed double-loop cluster
+L06	6	SBS	m	s1	2189	alt PHI; two loops side by side on stem
+L06	7	HASH4	l	s1	2390	alt INF; crossed double loop, dot below
+L06	8	HASH4	l	s1	2650	alt INF; crossed double loop, in overlap zone
+L06	9	SBS	m	s2	274	alt PHI; preceded by curling lead-in stroke
+L06	10	HASH4	l	s2	475	alt DBL; crossed 8-like cluster
+L06	11	ISH	m	s2	677
+L06	12	HASH4	m	s2	878
+L06	13	VBAR_A	m	s2	1166
+L06	14	SBS	m	s2	1418	alt PHI
+L06	15	HASH4	m	s2	1685	curling stroke to its left
+L06	16	DBL	l	s2	1901	alt PHI; 8 on stem
+L06	17	4STEM	m	s2	2131	alt 4TRI
+L06	18	ZHOOK	m	s2	2376	shaped like 24 over stems
+L06	19	DBL	l	s2	2606	alt PHI; 8 on stem
+L06	20	4STEM	m	s3	259	alt 4TRI; long slash stroke above-left
+L06	21	ISH	l	s3	475	alt EBR_B; small t-like mark with foot bar
+L06	22	HASH4	m	s3	720
+L06	23	VBAR_A	m	s3	936
+L06	24	4STEM	m	s3	1166	alt HASH4; 4 with long crossed stem
+L06	25	DBL	l	s3	1368	alt PHI; 8 on stem
+L06	26	4STEM	m	s3	1598
+L06	27	ZHOOK	m	s3	1843	shaped like 24
+L06	28	ZHOOK	m	s3	2102	shaped like 24
+L06	29	HASH4	m	s3	2347
+L06	30	HASH4	m	s3	2578
+L06	31	ZHOOK	m	s4	202	shaped like 24; also at s3 right edge overlap
+L06	32	4STEM	m	s4	446	alt 4TRI
+L06	33	VBAR_A	l	s4	662	small v mark followed by long crossing strokes (possibly struck or ruling)
+L06	34	OTHER	l	s4	880	tall looped stroke like long-s pair / beta-like, alt BETA
+L06	35	ZHOOK	m	s4	1123	shaped like 24
+L06	36	ISH	m	s4	1310
+L06	37	DBL	l	s4	1505	alt PHI; 8 on stem
+L06	38	VBAR_A	m	s4	1714
+L06	39	4STEM	m	s4	1901	alt 4TRI
+L06	40	HASH4	l	s4	2117	alt 4STEM; crossed cluster with flourish
