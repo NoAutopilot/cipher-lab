@@ -406,3 +406,46 @@ check (33 vs 32, 24 vs 20, excess explained above). No reading, no class change.
 
 **Cost:** no subagent; this runner's own turn -- recorded as 1.0 USD (est 1.5). No network requests. No credentials,
 no AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H3 (27 Sept 2026, 23:41-00:02 UTC, 27-28 Sept)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H3: two independent blind Sonnet passes over p.[1]'s eight
+cipher lines on the v2 numbered strips (two halves each, 4 vision calls), coded against the v2 atlas, reconciled.
+
+**Result: the pass pair FAILS the transcription brief's 60% agreement gate -- pooled exact agreement 136/233 =
+58.4% on p.[1]** (lines 1-4: 66/119 = 55.5%; lines 5-8: 70/114 = 61.4%); whole letter including H10's p.[2] pair
+168/283 = 59.4%. Per the brief ("if pass agreement is under 60%, stop and report the blocker; a third pass does not
+help"), p.[1] is NOT reconciled this step and no p.[1] sign sequence is written. Files: `passes/p1_L1-4_atlas_passA.tsv`,
+`passes/p1_L1-4_atlas_passB.tsv`, `passes/p1_L5-8_atlas_passA.tsv`, `passes/p1_L5-8_atlas_passB.tsv` (as reported; each
+pass saw only the strips and `glyphs/atlas.png`), `passes/p1_L1-4_atlas_disagreements.tsv` (53 rows),
+`passes/p1_L5-8_atlas_disagreements.tsv` (44 rows). Unboxed additions: pass A added 14 "unboxed" signs on line 1
+that sit below the baseline (line 2's signs showing through the strip's bottom edge, which the brief told it to ignore)
+and 2 elsewhere; pass B added 12 on lines 5 and 7, mostly tiny ticks it flagged itself as possible noise; one pass
+called boxes 8-11 of line 1 plain text (the tail of "mio"), the other cipher fragments -- the plain/cipher boundary on
+line 1 needs settling by eye. Both passes agree line 8's strip b carries the plain "La morte" line from about box 30
+(pass A) or 20/22 (pass B) onward.
+
+**The blocker, from the disagreement pairs (whole letter, first codes):** ECAP/RHO 7, STROKE/_ 6, ECAP/ELOOP 6,
+ELOOP/PHI 4, TWO/TWOFLAT 4, DEE/PHI 3, then FOUR/STROKE, SIX/TLOOP, CARET/STROKE, DIAMOND/PHI, SIX/XCURL,
+CARET/SEVENB, MU/UCURL, SEVEN/TEE at 2 each. The atlas's small hook-and-loop codes (ELOOP, ECAP, RHO, TLOOP, UCURL, MU)
+cannot be told apart by a pass reading a strip at this scale, and the passes disagree on whether a fragment box is a
+sign (STROKE) or nothing (_). **Post-hoc diagnostic, NOT a gate result:** re-scoring the same four passes with those
+six hook codes as one family, SEVEN/SEVENB/CARET as one, TWO/TWOFLAT/DEE as one and STROKE = _ gives 203/283 = 71.7%
+-- so about two thirds of the disagreement is within-family, which says where the atlas is too fine, not that the
+passes agree at 72% (a gate is set before the passes run, not fitted to them afterwards; rule 3's threshold-shopping
+lesson).
+
+**Next (into the table, H15):** (a) merge the atlas codes along the confusion families above into a v3 labels.json
+(fewer, coarser codes; the family split can be re-attempted later on zoomed crops if it carries information); (b) give
+each pass 4x per-box crops from `tools/glyph_atlas.py crop --out glyphs --sid ...` grouped per line, not the strips,
+so a small hook is read at a size where its tail is visible; (c) settle the plain/cipher boundary of line 1 and line
+8 by this runner's eye before the passes run, so those boxes are excluded rather than argued; (d) TWO FRESH blind
+passes under the v3 codes against the same pre-registered 60% gate. The old passes stay on file; they are not
+re-scored as the gate.
+
+**Controls:** the gate itself (pre-registered 60% pooled exact agreement, H10 passed it at 64.0%, H3 fails it at
+58.4%). No reading, no class change.
+
+**Cost:** 4 Sonnet vision calls (199k + 236k + 213k + 289k subagent tokens, about 940k) plus this runner's
+turn -- recorded as 3.0 USD (the est). No network requests. No credentials, no AskUserQuestion, rule 10 wording, no
+other target touched.
