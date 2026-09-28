@@ -2542,3 +2542,21 @@ So H116's 0.776 does not carry over to key v4's two-way form: there the beam is 
 here: v4's sets are wider (up to seven letters, e.g. [e/q/i/p/r/s/t]) than the 14-cell pairs, and cutting each line at its
 unread signs leaves segments of two to six letters, too short for a 4-gram model to choose within. The two-way choices on
 f.61r stay unmade by any controlled instrument (AUDIT.md sec. 6 item 1 unchanged). No reading, no class change.
+
+## Campaign step H118 (28 Sept 2026, 18:15-18:16 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61hash4_values.py` (pushed 064fc71c before the run; `f61hash4_values_result.txt`): H114's beam and 200-permutation
+null (seed 114) on f.108r L04-L06 with HASH4 given INF's cell or the bare hash's period value.
+
+| HASH4 as | fitted | rank of 201 | best permuted |
+|---|---|---|---|
+| dropped (H114) | -1.092 | 2 | -1.075 |
+| d/q (H114) | -1.200 | 12 | -0.988 |
+| h/u | -1.038 | 2 | -0.993 |
+| i/x | -1.013 | **1** | -1.018 |
+
+HASH4 = i/x (H98's bare-hash value, period i 8/9 on the family leaves) gives the best fitted score and rank 1; d/q is the only
+value that hurts. Four values have now been tried on the same 201-map null, so rank 1 for the best of four is weaker than a
+single pre-registered rank 1 (roughly a 4x look-elsewhere factor); the permutation null moves with the value, which partly
+controls for a value simply being easier French. Suggestive, not established: H119 replicates i/x alone on a fresh
+1000-permutation null. No reading, no class change.

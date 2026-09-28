@@ -1,0 +1,3 @@
+f.108r L04-L06, 14 cells + HASH4=h/u: fitted -1.038, rank 2 of 201; best permuted -0.993, median -1.376
+f.108r L04-L06, 14 cells + HASH4=i/x: fitted -1.013, rank 1 of 201; best permuted -1.018, median -1.339
+for comparison (H114): 14 cells rank 2 of 201; + HASH4=d/q rank 12 of 201
