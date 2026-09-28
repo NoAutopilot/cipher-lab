@@ -1,0 +1,4 @@
+  72: crib value do rank 134 of 506, gain -3.00; top 8 [('e', 3.07), ('u', 0.8), ('a', 0.0), ('b', 0.0), ('c', 0.0), ('d', 0.0), ('f', 0.0), ('g', 0.0)]
+code 72 at ['r16:21'] (key.tsv z): best value "e" gain +3.07, per-occurrence [3.07]; control gain median +0.00 p95 +7.08; candidate: False
+  52: crib value ro rank 390 of 506, gain -5.69; top 8 [('s', 2.43), ('l', 1.85), ('n', 1.59), ('a', 1.3), ('y', 0.0), ('sy', -0.7), ('ra', -1.02), ('sa', -1.22)]
+code 52 at ['r17:10'] (key.tsv y): best value "s" gain +2.43, per-occurrence [2.43]; control gain median +0.00 p95 +7.01; candidate: False

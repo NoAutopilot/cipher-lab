@@ -2199,3 +2199,22 @@ Lonchay 1896, *La rivalité de la France et de l'Espagne aux Pays-Bas*, full _dj
 `la-rivalite-de-la-france-et-d-espagne-aux-pays-bas-1635-1700`, grep; `h58/lonchay_hits.txt`): one Brandenburg passage
 near 1647-49 dates (the 1658 imperial election), nothing on Mercy's Cleves mission beyond p.445 (already in
 siblings_brussels.md). archive.org 3 requests, be-api 8. No token, grade or class change.
+
+## Campaign step H59 (2026-09-28 16:32 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Non-test by construction, not a negative.** A list-free check of the crib: H45's value
+search (506 one- and two-letter values, word-segmentation gain, 200 random-S-token draws) run for 72 and 52
+(`h59/syll_72_52.py`, `h59/result.log`).
+
+| code | best value (gain) | crib value: rank of 506, gain | control p95 | candidate |
+|---|---|---|---|---|
+| 72 (r16:21) | "e" (+3.07) | **do: 134th, -3.00** | +7.08 | no |
+| 52 (r17:10) | "s" (+2.43) | **ro: 390th, -5.69** | +7.01 | no |
+
+Neither crib value is favoured, but neither could have been by this instrument, and the control could not show it
+(CLAUDE.md rule 3, "a control that cannot vary on the same axis"): the word model is es17c7's Spanish vocabulary, in
+which "burgsdorf" occurs 0 times, so "burgs-do-rf" makes no known word and earns nothing; and "camarero" (17
+occurrences) cannot be formed at 52 by any value, because the stretch reads "s u c m a r e [52]" -- the a after c is
+missing, which a value at 52 cannot supply. A list-free value search can only confirm a value that completes a word
+the corpus knows with no other letter missing. The crib's evidence stays H41/H53 (name fit, list null) with H43/H51/H56
+as context. No token, grade or class change.
