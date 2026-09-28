@@ -84,3 +84,60 @@ above is on the numeric groups only (the shorthand runs and the marks are untouc
 
 **Requests:** none (0 to any host). **Cost:** one Fable session, about 16 minutes by the clock (date -u at 02:37), no subagent; the row's estimate
 (2 USD) is what PLAN.md records; the real figure is the orchestrator's to read from get_session.
+
+## Step B2 (28 Sept 2026, 02:40-02:5x UTC) -- which hierarchical layout reproduces B1? None of six; the column profile is the discriminating unknown
+
+**Method.** `b2/designs.py`: six generative layouts encoded on en18 text (60 windows of 369 coded tokens per design,
+words outside the design's vocabulary dropped as the target's shorthand-run wildcards), scored with B1's statistics
+(r_fam, r_1xyz, r_34, r_row, S_w) plus the suffix-digit profile per tier (z0 share; share of the rare digits 2,3,5,9),
+the 2-digit token share, distinct and singleton counts; target percentile per statistic. Designs: A stem + fixed
+inflection-class digits, two stem series; A2 one stem series with a second class dimension at 1000+; B alphabetical
+buckets headed by the bucket's most frequent word, members alphabetical in 10h+z then 1hz; Bf the same with members
+in frequency order; C three separately alphabetical tiers (the two content tiers dealt alternately over the alphabet);
+C2 as C with a frequency split between the tiers. Offline, 2.4 s, no subagent. Log: `b2/run_log.txt`.
+
+| statistic | target | A | A2 | B | Bf | C | C2 |
+|---|---|---|---|---|---|---|---|
+| r_fam (head ~ 3-digit family) | 0.630 | -0.107 (p95 -0.06) | -0.112 | 0.064 (p95 0.27) | **0.491 sd 0.13, p95 0.715, pct 83** | -0.042 (p95 0.12) | 0.011 (p95 0.27) |
+| r_34 (3-digit ~ 4-digit family) | 0.422 | -0.021 (p95 0.24) | 0.000 | 0.090 (p95 0.30) | 0.056 (p95 0.30) | -0.032 (p95 0.22) | 0.019 (p95 0.27) |
+| r_1xyz (head ~ 4-digit family) | 0.208 | 0.093 (pct 80) | 0.000 | 0.252 (pct 35) | 0.024 (pct 92) | -0.032 | 0.010 (pct 95) |
+| S_w | 0.621 | 0.005 | 0.006 | 0.085 | **0.604 (pct 55)** | 0.062 | 0.098 |
+| z0 share, 3-digit tier | 0.387 | 0.541 | 0.538 | 0.109 | **0.354 (pct 77)** | 0.132 | 0.100 |
+| z0 share, 4-digit tier | 0.390 | 0.809 | 0.017 | 0.085 | 0.157 (pct 100) | 0.088 | 0.095 |
+| rare digits 2,3,5,9, 3-digit tier | 0.076 | 0.083 | 0.081 | 0.405 | 0.287 (pct 0) | 0.389 | 0.416 |
+| rare digits 2,3,5,9, 4-digit tier | 0.059 | 0.000 | 0.000 | 0.326 | 0.392 (pct 0) | 0.393 | 0.404 |
+| 2-digit token share | 0.358 | 0.827 | 0.959 | 0.522 | 0.497 | 0.626 | 0.620 |
+| distinct / singletons | 216 / 139 | 98 / 44 | 68 / 20 | 168 / 115 | 170 / 116 | 169 / 116 | 171 / 118 |
+
+**Result.** Every design is excluded on at least two statistics at percentile 0 or 100 over 60 letters. A and A2
+(stem + inflection): r_fam is NEGATIVE in 60 of 60 letters -- the most frequent stems are function words, which do not
+inflect, so under a stem design the richest heads have empty families, whereas in the target the three most frequent
+heads (17, 18, 38) own the three richest families (26, 17, 17 tokens); the 2-digit share (0.83-0.96) and the
+vocabulary (68-98 distinct) are also far off. C and C2 (three alphabetical tiers): r_fam and r_34 sit at 0 +/- 0.1, so
+letter-frequency alignment between separately alphabetical lists does NOT produce the decade alignment -- the tiers
+are linked by construction, not by the alphabet. B (alphabetical buckets, alphabetical members) fails r_fam. Bf
+(alphabetical buckets whose members are ordered by frequency) is the only design that reproduces the ROW statistics --
+r_fam 0.49 +/- 0.13 with the target inside its band, S_w 0.60 vs 0.62, z0 (3-digit) 0.35 vs 0.39, distinct and
+singletons within range -- but it fails the COLUMN statistics decisively: it gives the rare digits 2,3,5,9 a 29-39%
+share where the target has 6-8% in BOTH tiers, it puts z0 in the 4-digit tier at 0.16 vs 0.39, and it gives no 3-digit
+to 4-digit alignment (r_34 0.06 vs 0.42). Any layout that fills ten slots per row with distinct words in frequency or
+alphabetical order gives the tail digits 30-40% of the tokens; the target's rows put 85-90% of their tokens on the head
+and the digits 0, 1, 4, 6, 7, 8, in the same proportions in the 3-digit and 4-digit tiers.
+
+**What survives, as constraints for the next step (not a design yet):** (i) rows (decades 10-99) are the organising
+unit and a row's popularity is shared by its bare head, its 3-digit members and its 4-digit members (B1); (ii) the
+column digit carries a FIXED profile across the whole table -- 0 >> 1 > 4, 6, 7 > 8 >> 2, 3, 5, 9 -- identical in both
+tiers, which a table of distinct words filled row by row does not produce; (iii) the bare head is the row's most used
+member. (ii) is what an OPERATOR digit looks like (a fixed set of modifications applied to a root, with four of the ten
+rarely needed), the same shape as the printed-form marks H14/H19 found this writer using in his office code -- a
+compositional reading in which a group is root + optional prefix operator + optional suffix operator, 73 roots in use.
+It is also what a sparsely filled grid looks like (rows with the head and a few members, the compiler using columns
+0, 1, 4, 6, 7, 8 by habit). The two readings differ in a testable way: under operators, forms of one row are the same
+word in different grammatical shapes and share their contexts; under a sparse grid they are different words that
+happen to share a bucket. B2b (next) tests context similarity within rows against a row-label permutation null.
+The cheap Bf-style simulations cannot separate them (they have no notion of context), so B2 is logged done with no
+surviving design rather than re-tuned (rule 3's repeated-attempt clause).
+
+**What this is not.** No reading, no key, no class change; the simulations are en18 English, so a French plaintext or
+a syllabic root set is not addressed here. Requests: none. Cost: one Fable session, about 15 minutes by the clock, no
+subagent; PLAN.md records the row's 3 USD estimate.
