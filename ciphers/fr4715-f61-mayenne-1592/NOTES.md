@@ -2867,3 +2867,12 @@ bound on the instrument's choice accuracy in this hand. Not re-run. No reading, 
 unmapped class (CA, C6, LL, CROSS, ZHOOK-free positions), so the within-pair instruments have nothing to add inside the
 spans; f.61r's open questions are the unmapped classes and the two-way choices of key v4, not the 14-cell pairs.
 No reading, no class change.
+
+## Campaign step H140 (28 Sept 2026, 19:35-19:37 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_f108r_predict.py --lattice [--f108v]` -> `scripts/f61lattice_f108r_prediction.txt`,
+`scripts/f61lattice_f108v_prediction.txt`: the H136 word-lattice beam's resolutions of f.108r L04-L06 and f.108v, committed
+as further pre-registered predictions before ASKS 88/89 land. They differ from the plain beam's (H120/H123) on a few letters
+per line (f.108r L05 "atquin.em.isilznem." vs "ngquin..."). `scripts/f61score_gloss108.py` now scores the lattice prediction
+too ("H140 lattice"); its selftest still PASSes (the synthetic gloss is H120's, so H140 scores 69/71 there by construction
+of the test, not as evidence). No reading, no class change.

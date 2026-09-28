@@ -70,6 +70,9 @@ def predictions():
     for r in rows(f"{HERE}/f61beam_f108r_prediction.txt"):
         if r["beam"] != ".": d[(r["line"], int(r["position"]))] = r["beam"]
     P["H120 beam"] = d
+    lp_ = f"{HERE}/f61lattice_f108r_prediction.txt"   # H140 (28 Sept 2026): the word-lattice beam's prediction, committed before the gloss
+    if os.path.exists(lp_):
+        P["H140 lattice"] = {(r["line"], int(r["position"])): r["beam"] for r in rows(lp_) if r["beam"] != "."}
     return P
 def score(gloss_rows):
     C = dict(J.cells(), HASH4="i/x"); key = {c: tuple(v.split("/")) for c, v in C.items()}
