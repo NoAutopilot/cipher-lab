@@ -2447,7 +2447,7 @@ rule 10: nothing here is called new or first. Cost: get_session carries no cost 
 row's estimate (5 USD) is what `campaign.py --spend` records (about 25 minutes of one Fable session, three parallel
 CPU runs of 2-3 minutes per round).
 
-## Campaign step H28 (28 Sept 2026, 02:08-02:20 UTC)
+## Campaign step H28 (28 Sept 2026, 02:08-02:18 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H28
 (H24's named one-knob re-run): the H24 known-answer control on the best specimen of Tomokiyo's six systems --
