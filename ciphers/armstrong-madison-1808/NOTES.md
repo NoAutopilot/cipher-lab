@@ -2645,3 +2645,19 @@ unchecked.
 - next-step; the checkpoint's own next bounded action is to identify and read the incoming Paris answer Adams received 14 June 1813, searching both T. Barlow and Warden via MHS catalogue and printed sources, checked against the OAC131078/reel138 outgoing letter -- unchecked.
 
 No check-solved candidate (no printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key is named).
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 01:57, 28 Sept 2026)
+
+Landed from PR 63 (`second-opinions/chatgpt-checkpoint-2026-09-28-0157.md`, PR-LAND-24). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- archival-route; MHS OAC131321, Thomas Barlow to JQA, Paris American Legation, 20 April 1813, reel415, named as the specific incoming candidate for the 14 June answer Adams reported receiving; text and receipt docket not read -- unchecked.
+- archival-route; MHS OAC131335, JQA to Thomas Barlow, St Petersburg, 22 April 1813, letterbook copy reel138, named as an outgoing witness candidate; the checkpoint states the two April 20/22 letters are not established as a letter-and-reply pair -- unchecked.
+- archival-route; MHS OAC131200 (Delprat to JQA, Brodie, 23 March 1813) and OAC131252 (Delprat to JQA, Vienna, 7 April 1813), reel415, named as potential transit/forwarding evidence; contents unverified -- unchecked.
+- archival-route; MHS OAC131327, JQA to David B. Warden, St Petersburg, 21 April 1813, letterbook copy reel138, named as parallel outgoing correspondence; contents unverified -- unchecked.
+- lead; a date-bounded MHS catalogue query (1 March-14 June 1813, num=1000) reported 480 of 480 results, and a Thomas Barlow author/recipient query for all of 1813 reported exactly 2 results (OAC131321, 131335) -- catalogue scope only, not asserted to be exhaustive of surviving letters -- unchecked.
+- lead; the 1913 AAS pamphlet *Correspondence of John Quincy Adams, 1811-1814* (archive.org `correspondenceof01adam`), full OCR searched case-insensitively for Barlow, Delprat, cypher, cipher, returned zero hits; stated as one OCR witness, not proof of absence from all editions -- unchecked.
+- next-step; the checkpoint's own next bounded action is to retrieve the contents or receipt docket of MHS OAC131321 (Thomas Barlow to JQA, 20 April 1813, reel415) via a public image or printed witness, checking whether it names the February dispatch and lack of key and whether its receipt is dated 14 June, else checking OAC131252 or OAC131335 -- unchecked.
+
+No check-solved candidate (no printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key is named).
