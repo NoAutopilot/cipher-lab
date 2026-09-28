@@ -1,0 +1,27 @@
+{
+ "image": "ciphers/fr4715-f61-mayenne-1592/family/images/3983_f108v.jpg",
+ "region": [
+  840,
+  540,
+  3160,
+  760
+ ],
+ "note": "H59 recut of segment 1 of bands L01/L02 with hand-set centres 128/217 (the 3y local search had jumped to the clear line at 63 / left the row at the bottom edge); other segments as f108v3y",
+ "up": 62,
+ "down": 34,
+ "scale": 3.0,
+ "boxes": {
+  "f108v3z_L01_s1.jpg": [
+   840,
+   606,
+   1740,
+   702
+  ],
+  "f108v3z_L02_s1.jpg": [
+   840,
+   695,
+   1740,
+   791
+  ]
+ }
+}
