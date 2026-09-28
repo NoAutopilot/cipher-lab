@@ -1838,3 +1838,28 @@ token, grade or class change.
 Note for H40: H35's wseg and this measure fail on largely different true corrections (wseg misses h/z letters, design
 misses vowel swaps), so an OR of the two might pass where each alone does not -- but that rule is chosen after
 seeing these data and may be tested only on fresh controls.
+
+## Campaign step H38 (2026-09-28 15:04-14:58 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Pools first, beyond Espagnol 142-144: eight Gallica SRU queries (Galarreta / Galaretta;
+Léopold-Guillaume or Leopoldo Guillermo with chiffr/cifra; Mercy + chiffr on manuscripts; dc.source "Espagnol" with
+chiffr + 1648 or cifra/cifrada; Peñaranda + chiffr) and one record read (`h38/sru.py`, `sru_hits.tsv`,
+`fr3854.xml`; gallica.bnf.fr 9 requests, 2 s apart, browser UA, no errors).
+
+- **Galarreta**: the only manuscript hit is Espagnol 144 itself (the target's own recueil, already swept, siblings.tsv).
+- **Léopold + chiffre**: BnF Français 3854 (ark btv1b52520094g), Fronde papers of 1649 -- the prince de Conti's
+  instructions and letters to and from Leopold Wilhelm, with Conti's mémoires "avec chiffre" (items 41-42) and "avec
+  chiffre et déchiffrement" (item 43), and Leopold Wilhelm's replies in Spanish (items 12, 13, 18, in clear per the
+  record). The ciphers are Conti's (Paris, the Frondeurs' side), not the Brussels secretariat's, so not a pool for
+  this key; the shelfmark is already in the repository's 23 Sept digitised sweep
+  (`sources/solver-diffs/2026-09-23-digitised-excluded.tsv`, "noise-on-inspection", "bourdeau-named:fr.3xxx"). A lead for the
+  orchestrator, not for this folder: item 43 carries its own decipherment.
+- **Mercy + chiffre, Espagnol + cifra, Peñaranda + chiffre**: no manuscript of 1647-1649 from this office (the hits
+  are medieval manuscripts and sale catalogues matched in their full text).
+- The BnF finding aid (archivesetmanuscrits) was not queried again: the 24 Sept cipher sweeps of it (LEDGER, LANE G2 F,
+  G2 X, G3 B; 894 arks) hold no Léopold/Galarreta/Mercy item, and its pagination is unreliable from here (host table).
+- Also on file, not a pool: QUEUE row DA5 (Leopold Wilhelm's command letters to Hatzfeldt, partly ciphered, German,
+  Neuenstein) -- the imperial chancery, a different office and language.
+
+**Negative for a pool on Gallica/BnF.** The pool for this key is the Brussels archive itself (AGR SEE, H7/H17, ASKS 82).
+No token, grade or class change.

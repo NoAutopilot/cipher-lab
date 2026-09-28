@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<srw:searchRetrieveResponse xmlns:ns6="http://gallica.bnf.fr/namespaces/gallica/" xmlns:diag="http://www.loc.gov/zing/srw/diagnostic/" xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:srw="http://www.loc.gov/zing/srw/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <srw:version>1.2</srw:version>
+    <srw:echoedSearchRetrieveRequest>
+        <srw:query>dc.source all "Français 3854"</srw:query>
+        <srw:version>1.2</srw:version>
+    </srw:echoedSearchRetrieveRequest>
+    <srw:numberOfRecords>1</srw:numberOfRecords>
+    <srw:extraResponseData>&lt;numberOfRecordsDecollapser&gt;1&lt;/numberOfRecordsDecollapser&gt;</srw:extraResponseData>
+    <srw:records>
+        <srw:record>
+            <srw:recordSchema>http://www.openarchives.org/OAI/2.0/OAIdc.xsd</srw:recordSchema>
+            <srw:recordPacking>xml</srw:recordPacking>
+            <srw:recordData>
+                <oai_dc:dc>
+                    <dc:date>1601-1700</dc:date>
+                    <dc:description>Contient : 1 Protestation des princes, ducs et autres grands seigneurs du royaume réunis, à Paris, contre le cardinal Mazarin ; 2 Lettre d'ANTOINE III, maréchal duc « DE GRAMONT,... à monseigneur le prince de Conty,... Du quartier de Vileré, ce 2 septembre 1649 » ; 3 Lettre de « LOUIS [XIII]... au cappitaine Seguin,... Escript à St Germain en Laye, le XXVIIe janvier 1649 » ; 4 « Instruction D'ARMAND DE BOURBON [prince DE CONTI] pour Mr de Laigue, pour aller traicter en Flandre... Faict à Paris, ce 3e jour de fevrier 1649 » ; 5 Lettre de l'archiduc « LEOPOLD GUIL[LAUME, gouverneur des Pays-Bas]... à monsieur le prince de Conti,... De Bruxelles, le 10 de febvrier 1649 » ; 6 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à Mr le marquis de Noirmoutier, « pour traicter avec monseigneur l'archiduc [Léopold-Guillaume], du 10 febvrier 1649 » ; 7 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à monsieur de Bréquigny, envoyé vers l'archiduc Léopold-Guillaume. « A Paris, ce 25 febvrier 1649 » ; 8 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à madame la mareschalle d'Effiat,... A Paris, ce 6e febvrier » ; 9 « Tres humble Remonstrance du parlement au roy et à la reyne regente... A Paris, en parlement, le 21 janvier 1649 » ; 10 Lettre des « gens tenans la cour de parlement de Paris » au parlement de Rouen, « ce 18 janvier 1649 » ; 11 Lettre de l'archiduc « LEOPOLD GUIL » LAUME au prince de Conti. « De Valenciennes, le 9 de mars 1649 » ; 12 Réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions qui lui avaient été faites de la part du prince de Conti. « En Valencianas, a 15 de marzo 1549 ». En espagnol ; 13 Autre réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions du prince de Conti. « En la villa de Landresie, a veinte y ocho de marzo de mill seiscientos y quarenta y nueve años ». En espagnol ; 14 « Declaration du roy LOUIS [XIV], par laquelle les princes, ducs, seigneurs et leurs adherans qui ont pris les armes contre son service, sont declarez criminelz de leze majesté, s'ils ne se rendent pres de sa personne dans trois jours apres la publication d'icelle... Donné à St Germain en Laye, le 23 jour de janvier, l'an de grace 1649 ». Copie ; 15 « Lettre du roy, envoyée aux gouverneurs des provinces de ce royaume, sur les mouvemens de Paris... Fait à Saint Germain en Laye, le trente septembre 1648 » ; 16 et 17 « Placars imprimés », contenant l'apologie du cardinal Mazarin ; 18 Réponse de l'archiduc LEOPOLD-GUILLAUME aux propositions du prince de Conti. « En Landrechies, a 28 de março 1649 ». En espagnol ; 19 Passeport donné par le roi « LOUIS » XIV au duc de Brissac. « Donné à St Germain en Layé, le XVIe mars 1649 » ; 20 « Discours prononcé en presence du roy, par le sieur FOURNIER, president en l'eslection et premier eschevin de la ville de Paris, deputé d'icelle vers Sa Majesté, le huictieme jour de janvier mil six cens quarante neuf » ; 21 Pouvoir donné par « ARMAND DE BOURBON », prince DE CONTI, à messieurs les duc de Brissac, comte de Maure, Mrs de Barriere et de Gressy, pour prendre part à « la conference qui se tiendra à Ruel ou ailleurs », et « traitter » des « interets » des princes et des parlements unis « pour le soulagement des peuples... Faict à Paris, ce 17 mars 1649 » ; 22 Instruction d'«ARMAND DE BOURBON », prince DE CONTI, à monsieur de Noirmoustier ; 23 « Copie de lettre de monsieur le prince DE CONTI à S. A. [l'archiduc Léopold Guillaume, gouverneur des Pays-Bas]... A Paris, ce 10 de mars 1649 » ; 24 Passeport donné par « ARMAND DE BOURBON », prince DE CONTI, à « Mr le comte de Bethune,... Faict à Paris, le 19e jour de mars 1649 » ; 25 Lettre d'«ARMAND DE BOURBON », prince DE CONTI, à M. de Brissac. « A Paris, ce XXIIe mars 1649, à deux heures apres midy » ; 26 Mémoire d'«ARMAND DE BOURBON », prince DE CONTI, pour les députés de la conférence de Ruel. « A Paris, ce 25 mars 1649 » ; 27 Déclaration d'«ARMAND DE BOURBON », prince DE CONTI, sur l'état des négociations entamées à Ruel ; 28 Protestation des princes et autres seigneurs du royaume pour confirmer leur union ensemble et avec le parlement de Paris. « Faict à Paris, le 25 mars 1649 » ; 29 Lettre du « mareschal [PHILIPPE] DE LA MOTTE » HOUDANCOURT et de FRANÇOIS DE VENDOME, « duc DE BEAUFORT », à monsieur de Brissac. « A Paris, ce 29e mars 1649 » ; 30 à 32 Trois lettres d'«ARMAND DE BOURBON », prince DE CONTI, aux députés à la conférence de Ruel ; 33 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur le duc de Brissac,... A Paris, ce 17 mars 1649 » ; 34 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur le marquis de Noirmoustier,... A Paris, ce 22 mars 1649, au soir » ; 35 et 36 Deux lettres du Sr DE « ST AMAN,... à monsieur Sarrazin, secretaire de Mr le prince de Conti ». 1649 ; 37 Manifeste de MM. LOUIS DE LA TREMOILLE, marquis DE NOIRMOUSTIER, et DE LAIGUE sur ce qui s'est passé lorsqu'ils furent envoyés vers l'archiduc gouverneur des Pays-Bas, pour y traiter de la part du prince de Conti ; 38 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... monsieur le duc de Brissac,... Ce 7e apvril 1649 » ; 39 Lettre d'«ARMAND DE BOURBON [prince DE CONTI]... à monsieur de Legue,... Ce 7e apvril 1649 » ; 40 Lettre d'«A[RMAND] DE BOURBON [prince DE CONTI]... à monsieur le marquis de Noirmoustier,... De Paris, ce 2e d'avril » ; 41 Mémoire, avec chiffre, du prince DE CONTI. « A Paris, ce 26 mars 1649 » ; 42 Mémoire, avec chiffre, d'«ARMAND DE BOURBON [prince DE CONTI]... A Paris, ce 27 mars 1649 » ; 43 Mémoire, avec chiffre et déchiffrement, du prince de Conti, pour un de ses envoyés auprès de l'archiduc gouverneur des Pays-Bas ; 44 Lettre au prince de Conti pour le prier de se hâter de conclure avec l'archiduc gouverneur des Pays-Bas. « A une lieue de Soissons, ce 1 avril » ; 45 Lettre du prince DE CONTI à la duchesse de Longueville, sa soeur ; 46 Lettre annonçant que les députés du parlement ont ordre de se joindre à ceux du prince de Conti pour demander l'éloignement du cardinal Mazarin ; 47 Lettre au prince de Conti pour lui annoncer les offres de secours faites par l'archiduc gouverneur des Pays-Bas ; 48 Résumé des faits qui donnent « lieu de croire que la conferance [de Ruel] se rompra »</dc:description>
+                    <dc:description>Numérisation effectuée à partir d'un document original : Français 3854.</dc:description>
+                    <dc:format>Papier</dc:format>
+                    <dc:identifier>https://gallica.bnf.fr/ark:/12148/btv1b52520094g</dc:identifier>
+                    <dc:language>fre</dc:language>
+                    <dc:relation>Notice du catalogue : http://archivesetmanuscrits.bnf.fr/ark:/12148/cc502952</dc:relation>
+                    <dc:rights>domaine public</dc:rights>
+                    <dc:rights>public domain</dc:rights>
+                    <dc:source>Bibliothèque nationale de France. Département des Manuscrits. Français 3854</dc:source>
+                    <dc:subject>Conti, Armand de Bourbon, prince de.</dc:subject>
+                    <dc:subject>Lettres.</dc:subject>
+                    <dc:subject>Conti, François de Bourbon, prince de.</dc:subject>
+                    <dc:subject>Lettres.</dc:subject>
+                    <dc:subject>France.</dc:subject>
+                    <dc:subject>Pitorre (Louis XIV).</dc:subject>
+                    <dc:subject>Fronde.</dc:subject>
+                    <dc:subject>Notes, pièces et recueils divers.</dc:subject>
+                    <dc:subject>La Trémoille, Louis de, duc de Noirmoutiers.</dc:subject>
+                    <dc:subject>Mission (1649).</dc:subject>
+                    <dc:subject>Léopold-Guillaume, archiduc d'Autriche.</dc:subject>
+                    <dc:subject>Négociations (1649).</dc:subject>
+                    <dc:subject>Louis XIV, roi de France.</dc:subject>
+                    <dc:subject>Actes et lettres.</dc:subject>
+                    <dc:subject>Louis XIV, roi de France.</dc:subject>
+                    <dc:subject>Recueils et pièces diverses.</dc:subject>
+                    <dc:subject>Mazarin, Jules, cardinal.</dc:subject>
+                    <dc:subject>Pièces diverses.</dc:subject>
+                    <dc:subject>Pays-Bas.</dc:subject>
+                    <dc:subject>Relations, avec la France.</dc:subject>
+                    <dc:subject>Saint-Amant, Marc-Antoine Gérard, sr de.</dc:subject>
+                    <dc:subject>Lettres.</dc:subject>
+                    <dc:title>Recueil de lettres et pièces originales, et de copies de pièces indiquées comme telles dans le dépouillement qui suit.</dc:title>
+                    <dc:type>manuscript</dc:type>
+                    <dc:type>manuscrit</dc:type>
+                </oai_dc:dc>
+            </srw:recordData>
+            <srw:recordIdentifier>ark</srw:recordIdentifier>
+            <srw:recordPosition>0</srw:recordPosition>
+            <srw:extraRecordData>
+                <epubFile></epubFile>
+                <highres>https://gallica.bnf.fr/ark:/12148/btv1b52520094g.highres</highres>
+                <infoSupModifiable></infoSupModifiable>
+                <link>https://gallica.bnf.fr/ark:/12148/btv1b52520094g</link>
+                <lowres>https://gallica.bnf.fr/ark:/12148/btv1b52520094g.lowres</lowres>
+                <medres>https://gallica.bnf.fr/ark:/12148/btv1b52520094g.medres</medres>
+                <nqamoyen>0.0</nqamoyen>
+                <provenance>Gallica</provenance>
+                <thumbnail>https://gallica.bnf.fr/ark:/12148/btv1b52520094g.thumbnail</thumbnail>
+                <typedoc>manuscrits</typedoc>
+                <uri>btv1b52520094g</uri>
+            </srw:extraRecordData>
+        </srw:record>
+    </srw:records>
+    <srw:nextRecordPosition>2</srw:nextRecordPosition>
+</srw:searchRetrieveResponse>
