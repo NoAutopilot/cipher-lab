@@ -2,8 +2,8 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 240
-spent_today_usd: 39.25
-spent_day: 2026-09-27
+spent_today_usd: 7.04
+spent_day: 2026-09-28
 closed:
 
 ## Attempts already made
