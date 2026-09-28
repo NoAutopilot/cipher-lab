@@ -2,7 +2,7 @@ target: espagnol142-mercy-1648
 goal: raise the existing counted reading (N3, key ours, two audits V6-MERCY/V6-MERCY2 25 Sept 2026; 496 of 522 tokens at S, 26 at M) to a completed reading with a period key (the Brussels register, ASKS 82) and N4 after the editions check
 started: 2026-09-27 20:29 UTC
 daily_budget_usd: 240
-spent_today_usd: 68.12
+spent_today_usd: 75.68
 spent_day: 2026-09-28
 closed:
 

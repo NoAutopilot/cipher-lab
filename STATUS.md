@@ -2448,6 +2448,22 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 08:20 Pacific [15:20 UTC]): DECODE opens and rules out the Brussels register for Mercy; Spinelli closed at N0; f.61 key v4 under way
+
+Counts 18 / 2 / 1 / 6, unchanged. f.61 meter 14 firm / 65 two-way / 20 unread in its own terms until F61-FAMILY-6 reports key v4.
+
+**DECODE.** Prof. Megyesi extended the project account's rights (her reply 14:16 UTC). DECODE-OPEN (Opus 5.5, 7.56) confirmed full-size access (record 3754 at 5512x3674, not the placeholder), read the eight Brussels register records 958-965 at full size and transcribed six letter tables in two passes: best agreement with the Mercy key 7 of 28 (record 965 p.7), the design sibling 958 1 of 24, and neither the M codes nor the boxed 101 appear in the register. Ruled out: this register does not hold the Mercy key. ASKS 82 (the register on the AGR request) is answered by it. It also listed 18 formerly blocked records now visible, ranked in sources/decode/NOTES.md (zeschau-seebach first), for rows after the sprint. The reply to the PI is drafted in Gmail for the owner.
+
+**Spinelli.** VERIFY-SPINELLI-2 found the leaf deciphered in public on 24 Mar 2017 (Cipherbrain comments, Domnina's key): N0. Campaign closed 15:0x by the orchestrator, runner 4 retired. Our miss: the intake skipped the Cipherbrain comment-thread check that rule 1 names; one web search finds the post. Offered to the owner: the same check on the three live campaigns and in the intake gate.
+
+**Blocker line, f.61 (closest).** Blocker: the 65 two-way choices and the five rare classes. On disk: the runner's tile sorts H65-H80 (five PASS splits: SBS o, SBS b, 4TRI c/p vs hook, VBAR s/t thin, LOOPS = SBS + INF; two within-cell FAILs e/r and a/n; two one-symbol negative controls d/q and g/t FAIL as they should), scripts/f61_glyph_splits.tsv, the H76 attestation tags, the H58 skeleton, ASKS 88/89 desk packs. Being worked: F61-FAMILY-6 (session_01TPNoYGTE6dLBPfyEgZTLAc, Opus 5.5) re-coded the family passes (four of five splits hold on held-out tiles; VBAR stopped at 1/2) and is rebuilding the key as v4; the runner is on H85 (the judge on f.108v). Not workable by a model: ASKS 88/89.
+
+**Mercy.** The runner closed the route of licensing the 26 M-token corrections without a period key (H30, H33-H37, H40: every instrument misses its control gate). New: a crib candidate for the unread r16-r17 stretch, BURGS[72]RF = Conrad von Burgsdorf, the Elector's Oberkammerherr (unique best of 402 names, P 0.002; "su camarero mayor" P 0.053, borderline), with 1647 context in Urkunden Bd. 4. Not a reading; H44 blind replication next.
+
+**Armstrong.** Runner 3 (13.61): the Madrid legation cipher is not the target's code (H49 rank correlation +0.002 vs p95 0.172; H50 last-digit and 900-1099 habits outside the legation band); Yale MS 857 items not digitised (ASKS 91); found that six of nine page-2 shorthand crops sat on the wrong lines and five shorthand lines were never cut (H58, recut): line B's glyph counts B35/H54 rest partly on those crops, flagged to line B.
+
+**Other accounts.** RESTART-2 (account 2): nothing stopped on a model limit; the mercy and armstrong runners there retired and the paused trigger deleted; two finished workers archived; dispatcher kept. RESTART-3 queued for the account-3 dispatcher.
+
 ### Orchestrator note (28 Sept 2026, 07:20 Pacific [14:20 UTC]): a 7.5-hour outage on the Fable limit; every runner re-spun on Opus 5.5
 
 Counts 18 / 2 / 1 / 6, unchanged. f.61 meter unchanged: 14 firm / 65 two-way / 20 unread.
