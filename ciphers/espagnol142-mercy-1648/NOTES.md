@@ -2112,3 +2112,13 @@ So in the months around 6 June 1648 the Elector's court sat at Cleves, Burgsdorf
 man foreign courts approached (the French proposing to pay him), which is what the H41-H42 crib has the Brussels court
 telling Mercy to do. Corroboration of plausibility, not of the reading; absence of a Spanish passage refutes nothing.
 No token, grade or class change.
+
+## Campaign step H52 (2026-09-28 16:09 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** For the orchestrator's decision whether to send the r16-r17 crib to a separate verifier
+session: `candidates/candidates.tsv` lists each candidate value with its step, test and result (72 = do, H41 met; 52 =
+ro, H42 not met strictly; 65 = sr, H45 met but indistinguishable from an omitted r; 48 = qu at r17:20 only, not met,
+observation), and `candidates/make_candidates.py [--check]` writes `candidates/reading_candidates.txt`: every cipher
+line under key.tsv (K) and, where a candidate applies, the same line with it in braces (C):
+r16 "GYEONEOPURADLONBURGS{do}", r17 "RFSUCMARE{ro}MAYORPARA{qu}I", r24 "TRE{sr}EGIMIENTIYCONQUE". --check passes.
+reading.txt, key.tsv and every grade are unchanged; the file's header says these are candidates, not a reading.
