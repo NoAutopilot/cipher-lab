@@ -1333,3 +1333,5 @@ the end of every wake.
 | 28 Sept 2026 | HARVEST-C | session_01DJjsSDcdztEJ9PkRS82vkY | owner | Opus 5.5 | cap 50 | running from 18:15 | other Birago letters, Ceppo key |
 | 28 Sept 2026 | VERIFY-CEPPO-2 | session_01DTnzLDCCBHdGCCGdSxcNZv | owner | Opus 5.5 | 4.78 | done 18:31, archived | held in part: N3, counted |
 | 28 Sept 2026 | HARVEST-C | session_01DJjsSDcdztEJ9PkRS82vkY | owner | Opus 5.5 | 3.13 | done 18:35, archived | intake clean; Gallica 403, held |
+| 28 Sept 2026 | TOMO-BIRAGO | session_01K2rbMsdgKZ2hEnxNZCEHYQ | owner | Opus 5.5 | 1.64 | done 19:17, archived | Tomokiyo Birago note drafted |
+| 28 Sept 2026 | OUT-CHECK-TM | session_01U5CUtkgMyxhxCbExRdTfup | owner | Opus 5.5 | cap 10 | running from 19:59 | gate 7 on Tomokiyo Birago note and Monroe editors draft |
