@@ -3161,3 +3161,16 @@ appear on f17**; f17 is continuous prose about religion, the crown and the peopl
 f17 in order): FAIL** -- f17 is not the page-for-page decipherment of f15. The finding aid still says "avec chiffre et
 déchiffrement", so the decipherment may be on another canvas (f16, f18, or a separate sheet near the item); H168 is re-scoped
 to locate it first. Readings provisional (small hand, reduced image). No key, no reading.
+
+## Campaign step H168b (28 Sept 2026, 21:46-21:46 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+Nine 600-px thumbnails of fr.3984 (canvases f13, f14, f16, f18, f20, f22-f25; Gallica, 9 requests, all 200;
+`family/fr3984_f7/thumb600_c*.jpg`), one contact sheet looked at by the runner. By eye, provisional:
+- **f14 = fol. 7r** (a "7" at the top right): a dense full page of cipher runs; **f15 = fol. 7v**, its continuation (cipher runs
+  and the Suresnes clear lines).
+- **f16-f18: clear pages** (f16 with a date line at its head, apparently "13 may 1593"; a "9" at the top right of f18): the likely
+  decipherment of fol. 7r-v, starting at f16 -- which is why H168a found f15's clear stretch absent from f17 (the order runs
+  f16 -> f18, and f17 need not face f15).
+- f13 and f19/f21: address and docket leaves; f20: a clear page signed "Charles de Lorraine" (another item);
+  f22-f23: clear letters; **f24-f25: further dense cipher pages** (a later item, not identified here).
+For H168: compare f15's Suresnes delegates list against f16 and f18 (not f17) first. No key, no reading.
