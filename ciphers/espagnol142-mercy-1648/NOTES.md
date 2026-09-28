@@ -2069,3 +2069,15 @@ disagree at r16:16, candidate) and refuses H46 (poca unique best at P < 0.05 but
 402-name list it reproduces H41 exactly (burgsdorf 7, P 0.002, candidate True). SYSTEM.md names it (system_map_check
 ok); h41/fit.py and h46/crib.py carry a pointer to it. Under the new rule H42's "su camarero mayor" would also need
 checking against its minimum fit (it agrees on its S letters; its borderline was P, not fit). No token change.
+
+## Campaign step H49 (2026-09-28 16:01 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. No candidate by the rule (tie).** The word after "para" at r17:20, window "?iense i embian
+cartas de cr..." (48 as wildcard): list built before scoring = every word after "para" in the es17c7 corpus, 4-12
+letters, 3+ occurrences (299 words, `h49/wordlist.tsv`); `tools/crib_list_fit.py --anchor start --start r17:20`
+(`h49/result.log`). Best: **"bien" and "quien" tied, 3 letters agreeing and 0 disagreeing** (P 0.007); next defensa /
+hacerse / poderse at 3/2. Not unique, so not a candidate. Observation only, for the record: with 48 = "qu" the passage
+reads "... mayor, para quien se embian cartas de creencia que uan con esta" (to whom letters of credence are sent,
+which go with this), which is also the value H45 found best for 48 at this occurrence (+4.97) -- but H45 found the same
+value slightly worse at 48's other occurrence (r20:15, -0.55), so 48 stays d (M) and "qu" stays an observation. No
+token, grade or class change.
