@@ -1,0 +1,14 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L07	10	S75 S97 S47 S80	S53 S17 S20 S47	S23	L	S97	M	lambda dot	dotted lambda
+L07	27	S53 S17 S53 S62	X_POUND S75 S47 S80	S23	M	S97	L	A dot	dotted A/lambda
+L07	34	S47 S80 X_THETA2 S31		X_NEW	L	S26	M	2 with dash; prose after: line end	2 with dash; after: line end
+L09	1		S95 ? S53 ?	S23	M	S97	M	lambda dot; prose before: line start	dotted lambda; before: line start
+L09	3	? S95	S53 ? ? S53	X_NEW	L	S13	L	theta-like with dot	reversed-3/theta with dot
+L09	5	? S95 ? S53	? S53 S62 S89	S80	M	S65	M		8, faint bar
+L09	6	S95 ? S53 ?	S53 S62 S89 S17	S23	M	S97	M	lambda dot	dotted
+L09	17	X_THETA2 X_POUND S52 S17	S89 S17 S47 S52	S23	M	S97	M	lambda dot	dotted
+L10	6	S80 S37 S17 S62	S52 S74 S53 S17	S13	L	S69	M	single-bar theta	barred theta
+L11	2	S53	S74 ? S97 S53	X_NEW	L	S25	L	u with bar	u-like with overbar, cut off
+L11	4	S53 ? S74	S97 S53 S88 S62	S13	L	S69	L	single bar	theta single bar
+L11	9	S97 S53 S88 S62	S84 X_NEW S75 X_THETA2	S80	M	S65	L		8 cut
+L11	22	S95 S97 S89 S17	S17 S37 S47 X_POUND	S13	L	S69	M		theta

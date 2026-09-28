@@ -1,0 +1,28 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	3	S84 S75	? S37 S97 S67	S74	M	S77	M	6 with tick	6 with tick above
+L01	4	S84 S75 ?	S37 S97 S67 S56	S65	M	S80	M	8 barred	8 with bar
+L01	10	S97 S67 S56 S89	? S52 S23 S75	S65	M	S80	M	8 barred	8 barred
+L01	11	S67 S56 S89 ?	S52 S23 S75 ?	S61	M	S94	M	q with foot	q with foot bar
+L01	15	? S52 S23 S75	S94 S35 S89 S75	S49	M	S73	M	slash between dots	slash with dots
+L01	27	S53 S88 S62 S89	S52 S74 S35 S52	S65	M	S80	M	8 barred	8 barred
+L02.2	2	S61		S65	M	S80	M	8 barred | after: line end	8 barred; after: line end
+L03	7	S23 S94 S75 S17	S53 S75 ? S37	S49	M	S73	M	slash dots	slash dots
+L03	10	S17 ? S53 S75	S37 S93 S62 ?	S49	M	S73	M	slash dots	slash dots
+L03	14	? S37 S93 S62	S75 S74 S62 S57	S49	M	S73	M	slash dots	slash dots
+L03	20	S74 S62 S57 S88	S20 S47 S75 ?	S65	M	S80	M	8 barred	8 barred
+L03	24	? S20 S47 S75	S53 ? S37 ?	S26	L	S10	M	L shape with dot	L base dot
+L03	26	S47 S75 ? S53	S37 ? S56 S17	S65	M	S80	M	8 barred	8 barred
+L03	28	? S53 ? S37	S56 S17 S37 S97	S65	M	S80	M	8 barred	8 barred
+L03	34	S17 S37 S97 S94	S89 S93 S25 S47	S65	M	S80	M	8 barred	8 barred
+L03	39	S89 S93 S25 S47		S65	M	S80	M	8 barred at edge | after: line end	8 barred; after: line end
+L04	10	S84 S52 S23 S75	S17 S23 S75 S56	S26	L	S10	M	L with dot	L base dot
+L04	15	S17 S23 S75 S56	S47 ? S89	S26	L	S10	M	L with dot	L base dot
+L04	17	S75 S56 ? S47	S89	S65	M	S80	M	8 barred	8 barred
+L05	7	S62 S84 S23 S62	S75 S56 X_POUND S93	S26	L	S10	M	L with dot	L base dot
+L05	13	S56 X_POUND S93 S74	S66 S75 S89 S52	S40	L	S32	M	n-like with 3 tail	hooked 3
+L05	28	S89 S62 S52 S53	S75 S56 S47 S75	S26	L	S10	M	L with dot	L base dot
+L06.2	1		S47 S97 S23 S95	S65	M	S80	M	8 barred | before: di	before: di; 8 barred
+L06.2	6	S47 S97 S23 S95	S56 S31 S17 S23	S65	M	S80	M	8 barred	8 barred
+L06.2	12	S31 S17 S23 S62	? S62 ?	S60	L	S69	M	circle crossed by long bar	theta barred
+L06.2	13	S17 S23 S62 ?	S62 ?	S65	M	S80	M	8 barred	8 barred
+L06.2	15	S62 ? ? S62		S13	L	S69	L	theta partly cut by margin | after: line end	theta at edge; after: line end

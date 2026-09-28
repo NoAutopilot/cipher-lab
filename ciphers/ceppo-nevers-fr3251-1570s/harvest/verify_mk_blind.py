@@ -2,6 +2,8 @@ import csv,json,random,sys
 seqf,outdir,seed=sys.argv[1],sys.argv[2],int(sys.argv[3])
 import os; H=os.path.dirname(os.path.abspath(__file__))+'/'
 m={e['id']:e['value'] for e in json.load(open(H+'sign_id_map.json'))}
+for x in sys.argv[4:]:  # extra ID=value (HARVEST-D2: X_THETA2=r)
+    k,val=x.split('=',1); m[k]=val
 P={}
 for r in csv.DictReader(open(seqf),delimiter='\t'): P.setdefault(r['passage'],[]).append(r['sign_id'].strip())
 def dec(mm):

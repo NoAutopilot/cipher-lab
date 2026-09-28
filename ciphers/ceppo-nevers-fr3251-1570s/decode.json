@@ -20,6 +20,29 @@
     "M",
     "L"
    ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f35.tsv",
+   "key": [
+    "harvest/key_f11.tsv",
+    "harvest/key_extra.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f35.txt",
+   "tokens": "harvest/reading_f35_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
   }
  ]
 }

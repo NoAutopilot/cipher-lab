@@ -1,0 +1,8 @@
+passage	pos	sign_id	conf	note
+L01	4	S49	M	slash between two dots (dot above-left, dot below-right); the left arc and stem are the descender loop of prose g above, not part of the sign; alt X_NEW
+L01	13	S24	M	two horizontal bars crossed by a near-vertical stroke (not the diagonal slash of S88)
+L01	26	S91	M	c plus e-lobe with a long tail curling up to a blob; two-lobed like S91, not single-loop S47; alt S76
+L02	1	S91	M	c plus lobe with dot and long S-tail; same shape as L01 pos26; alt X_NEW
+L02	25	S91	M	same c+lobe with blob and hooked tail as L01 pos26 and L02 pos1; alt X_NEW
+L02	29	S53	M	stem with blob top, loop at right and long descender through the loop; no crossbar so not S54
+L02	37	S26	M	z with dot at upper right and horizontal bar below/through; matches S26, S66 has no bar

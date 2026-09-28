@@ -75,6 +75,8 @@ def main():
     ap.add_argument("--seed", type=int, default=1); ap.add_argument("--out")
     ap.add_argument("--corpus", default="it16dip")
     ap.add_argument("--extra", action="append", default=[], help="ID=value for a sign not on the sheet, e.g. X_THETA2=r")
+    ap.add_argument("--fit-sign", action="append", default=[], help="score the target with this sign id set to each letter "
+                    "in turn (and null); reports the ranking -- a value-fit test for one unkeyed sign, e.g. X_POUND")
     a = ap.parse_args()
     rng = random.Random(a.seed)
     m = load_map(a.extra)
@@ -96,6 +98,14 @@ def main():
     nlet = sum(len(decode(s, m).replace("_", "")) for s in passages.values())
     print(f"TARGET: {nsig} signs, {nnull} nulls, {nlet} letters; real key {real:.4f}; {a.shuffles} shuffled keys mean "
           f"{mu:.4f} sd {sd:.4f} max {mx:.4f}; z {z:.2f}; rank {rank} of {a.shuffles + 1}")
+    for sid in a.fit_sign:  # value-fit test for one sign: which single value scores best, given the rest of the key
+        rows = []
+        for v in sorted(set(m.values()) - {"et"}) + ["null"]:
+            mm = dict(m); mm[sid] = v; rows.append((score(model, passages, mm), v))
+        rows.sort(reverse=True)
+        n_occ = sum(1 for s in passages.values() for x in s if x == sid)
+        print(f"FIT {sid} ({n_occ} occurrences): " + ", ".join(f"{v} {sc:.3f}" for sc, v in rows[:6]) +
+              f"; unkeyed {score(model, passages, m):.3f}")
     # power control
     corpus = jp.fold("".join(texts)).replace("j", "i").replace("v", "u")
     corpus = "".join(c for c in corpus if c not in "bxykw")

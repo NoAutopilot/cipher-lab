@@ -1,0 +1,14 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L07	10	10	S23	L	10	S97	M	split	lambda dot	dotted lambda
+L07	27	27	S23	M	27	S97	L	split	A dot	dotted A/lambda
+L07	34	34	X_NEW	L	34	S26	M	split	2 with dash; prose after: line end	2 with dash; after: line end
+L09	1	1	S23	M	1	S97	M	split	lambda dot; prose before: line start	dotted lambda; before: line start
+L09	3	3	X_NEW	L	3	S13	L	split	theta-like with dot	reversed-3/theta with dot
+L09	5	5	S80	M	5	S65	M	split		8, faint bar
+L09	6	6	S23	M	6	S97	M	split	lambda dot	dotted
+L09	17	17	S23	M	17	S97	M	split	lambda dot	dotted
+L10	6	6	S13	L	6	S69	M	split	single-bar theta	barred theta
+L11	2	2	X_NEW	L	2	S25	L	split	u with bar	u-like with overbar, cut off
+L11	4	4	S13	L	4	S69	L	split	single bar	theta single bar
+L11	9	9	S80	M	9	S65	L	split		8 cut
+L11	22	22	S13	L	22	S69	M	split		theta
