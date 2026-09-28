@@ -28,7 +28,7 @@ def relabel_c1(pas, cells):
 def norm_conf(v):
     v = (v or "").strip().lower(); return {"high": "h", "medium": "m", "med": "m", "low": "l"}.get(v, v or "m")[0]
 for pas in ("signsA", "signsB", "glossC", "glossD"):   # gloss C/D = the Opus passes (A/B, Sonnet, voided after chunk 1)
-    files = sorted(glob.glob(f"{P}/f101r_{pas}_c*.tsv"), key=lambda f: int(re.search(r"_c(\d+)\.tsv", f).group(1)))
+    files = sorted((f for f in glob.glob(f"{P}/f101r_{pas}_c*.tsv") if re.search(r"_c(\d+)\.tsv$", f)), key=lambda f: int(re.search(r"_c(\d+)\.tsv$", f).group(1)))
     if want: files = [f for f in files if int(re.search(r"_c(\d+)\.tsv", f).group(1)) in want]
     rows = []; hdr = None
     for f in files:
