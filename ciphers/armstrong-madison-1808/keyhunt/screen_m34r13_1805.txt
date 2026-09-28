@@ -1,0 +1,14 @@
+REFERENCE
+target 20 Feb 1808           n= 369 dist= 216 max= 1900 | units0/1 >=100: 0.59 (n=237) 2-digit: 0.10 (n=115) | units2/3/5/9 >=100: 0.07 | >1700: 0.092 | <100: 0.36 | hundreds-blocks: 20 | top: 17x13 18x12 38x10 1x9 14x8 170x5 47x5 12x5
+THE=972 usage (4 letters)    n=  73 dist=  45 max= 1517 | units0/1 >=100: 0.07 (n=67) 2-digit: 0.00 (n=6) | units2/3/5/9 >=100: 0.42 | >1700: 0.000 | <100: 0.08 | hundreds-blocks: 14 | top: 1105x11 962x6 1086x5 38x3 1453x2 1097x2 897x2 427x2
+
+CANDIDATE keyhunt/m34r13_1805_groups.tsv
+m34r13_1805_groups           n= 170 dist= 118 max= 1844 | units0/1 >=100: 0.19 (n=168) 2-digit: 0.00 (n=1) | units2/3/5/9 >=100: 0.41 | >1700: 0.006 | <100: 0.01 | hundreds-blocks: 16 | top: 972x9 1354x5 1165x5 1078x4 916x4 1484x3 1268x3 1116x3
+   target@n     u01_big    p05=0.530 median=0.584 p95=0.636   candidate=0.190
+   target@n     above1700  p05=0.059 median=0.088 p95=0.118   candidate=0.006
+   target@n     under100   p05=0.318 median=0.365 p95=0.406   candidate=0.012
+   THE=972@n    u01_big    p05=0.075 median=0.075 p95=0.075   candidate=0.190
+   THE=972@n    above1700  p05=0.000 median=0.000 p95=0.000   candidate=0.006
+   THE=972@n    under100   p05=0.082 median=0.082 p95=0.082   candidate=0.012
+   top-20 overlap: candidate 0/170 shared with target top-20; THE=972 pooled sample 1/81; random-draw chance of >=3 at n=170: (0.32, [4, 3, 2, 1, 2, 4, 1, 5, 2, 1, 2, 2, 2, 0, 3, 6, 0, 1, 1, 2, 3, 2, 2, 1, 2, 2, 5, 4, 0, 1, 3, 3, 3, 1, 1, 1, 1, 2, 1, 0, 3, 2, 0, 2, 2, 2, 3, 2, 1, 0, 3, 1, 3, 3, 0, 1, 0, 0, 1, 2, 4, 0, 0, 2, 0, 3, 1, 1, 2, 2, 3, 3, 3, 2, 1, 1, 2, 1, 5, 1, 1, 2, 2, 0, 2, 3, 1, 1, 2, 2, 3, 2, 3, 2, 3, 3, 1, 2, 1, 1, 4, 0, 2, 0, 0, 1, 6, 1, 2, 2, 1, 4, 3, 1, 2, 2, 4, 0, 2, 1, 0, 0, 1, 3, 3, 3, 3, 4, 4, 0, 1, 3, 3, 3, 1, 0, 0, 3, 1, 1, 0, 3, 1, 1, 2, 1, 3, 5, 1, 2, 1, 3, 0, 2, 1, 3, 1, 0, 2, 3, 1, 2, 3, 3, 3, 4, 2, 3, 3, 0, 1, 2, 1, 1, 2, 1, 4, 0, 1, 4, 1, 1, 1, 3, 0, 1, 4, 3, 2, 2, 2, 3, 7, 1, 2, 2, 4, 1, 3, 0])
+   VERDICT: MISS (not the target's code on this sample)

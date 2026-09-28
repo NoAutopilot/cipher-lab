@@ -1,0 +1,14 @@
+REFERENCE
+target 20 Feb 1808           n= 369 dist= 216 max= 1900 | units0/1 >=100: 0.59 (n=237) 2-digit: 0.10 (n=115) | units2/3/5/9 >=100: 0.07 | >1700: 0.092 | <100: 0.36 | hundreds-blocks: 20 | top: 17x13 18x12 38x10 1x9 14x8 170x5 47x5 12x5
+THE=972 usage (4 letters)    n=  73 dist=  45 max= 1517 | units0/1 >=100: 0.07 (n=67) 2-digit: 0.00 (n=6) | units2/3/5/9 >=100: 0.42 | >1700: 0.000 | <100: 0.08 | hundreds-blocks: 14 | top: 1105x11 962x6 1086x5 38x3 1453x2 1097x2 897x2 427x2
+
+CANDIDATE keyhunt/bt_groups.tsv
+bt_groups                    n= 512 dist= 215 max= 1899 | units0/1 >=100: 0.17 (n=495) 2-digit: 0.18 (n=17) | units2/3/5/9 >=100: 0.39 | >1700: 0.008 | <100: 0.03 | hundreds-blocks: 18 | top: 1576x25 1067x24 1385x20 637x17 1229x16 1426x12 934x10 501x10
+   target@n     u01_big    p05=0.586 median=0.586 p95=0.586   candidate=0.172
+   target@n     above1700  p05=0.092 median=0.092 p95=0.092   candidate=0.008
+   target@n     under100   p05=0.358 median=0.358 p95=0.358   candidate=0.033
+   THE=972@n    u01_big    p05=0.075 median=0.075 p95=0.075   candidate=0.172
+   THE=972@n    above1700  p05=0.000 median=0.000 p95=0.000   candidate=0.008
+   THE=972@n    under100   p05=0.082 median=0.082 p95=0.082   candidate=0.033
+   top-20 overlap: candidate 0/512 shared with target top-20; THE=972 pooled sample 1/81; random-draw chance of >=3 at n=512: (0.89, [9, 7, 8, 5, 5, 7, 7, 4, 9, 6, 8, 3, 4, 5, 4, 8, 3, 7, 1, 6, 2, 4, 4, 8, 6, 6, 6, 3, 7, 6, 6, 8, 5, 6, 0, 8, 6, 7, 8, 3, 2, 10, 9, 5, 6, 3, 4, 4, 7, 6, 6, 5, 4, 6, 10, 7, 5, 3, 6, 6, 4, 6, 7, 11, 4, 10, 2, 3, 6, 5, 6, 4, 3, 4, 8, 5, 6, 4, 5, 5, 6, 4, 1, 5, 6, 10, 2, 10, 5, 8, 9, 12, 0, 3, 6, 8, 6, 6, 7, 2, 1, 2, 3, 5, 4, 0, 3, 3, 4, 6, 7, 4, 4, 5, 3, 6, 6, 3, 4, 7, 10, 4, 4, 6, 4, 2, 6, 5, 4, 7, 5, 3, 7, 12, 4, 2, 3, 6, 6, 4, 8, 5, 7, 5, 4, 9, 6, 5, 7, 2, 3, 4, 5, 2, 4, 5, 2, 6, 5, 5, 4, 2, 8, 6, 1, 7, 6, 3, 5, 5, 5, 3, 6, 6, 8, 3, 7, 4, 2, 1, 8, 6, 6, 3, 9, 4, 8, 5, 8, 6, 8, 8, 5, 7, 5, 5, 3, 1, 5, 4])
+   VERDICT: MISS (not the target's code on this sample)

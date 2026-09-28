@@ -3482,3 +3482,97 @@ catalogue record (OL6123259W, OCLC 7776177) with no IA scan. Not online; ASKS 86
 
 No reading, no class change. Requests: loc.gov 3, tile.loc.gov 1, catalog.hathitrust.org 1, archive.org 1,
 googleapis.com 1, openlibrary.org 1. Cost: about 0.5 USD for both (`--spend` 0.5).
+
+## ARM-KEYHUNT (28 Sept 2026)
+
+Parent worker ARM-KEYHUNT (owner account, Opus), brief `.claude/briefs/runs/2026-09-28-parent-arm-keyhunt.md`, 16:36-17:1x UTC
+(container clock). Job: a key or a second letter in the target's private code in Bowdoin's, Pinkney's, Erving's and
+Armstrong's own papers; screen every numeral-cipher item; draft requests for undigitised holdings (nothing sent). Files:
+`keyhunt/` (requests.log, the extraction and screen scripts and outputs, the Founders texts read). Prior steps not repeated:
+ARM3-COR, ARM-CORR H26 (Princeton C0027, LOC Pinkney 24 Jan 1808 = WE028, MdHS MS 1388), H25 (LOC Monroe Papers 1806-07),
+H34 (Armstrong's own papers), H39-H41 (NARA M30/M31 sweeps), H64-H66.
+
+**Result: no key and no sibling letter found online; one new, documented lead on who the "other correspondent" could be.**
+
+**1. The lead: a private Armstrong-Monroe cipher existed, and Armstrong made the same mistake with it once before.**
+Founders Online (read in headless Chromium, `keyhunt/founders/r4.txt`, `r5.txt`, `r6.txt`):
+- Armstrong to Madison, 18 March 1805 (PJM-SS 9, Founders Madison/02-09-02-0150): the RC is docketed by Wagner "N.B. One of
+  the enclosures contains passages of inexplicable cypher"; the enclosures were copies of Armstrong's letters to Monroe
+  (then at Madrid) of 12 and 18 March 1805.
+- Armstrong to Madison, 2 April 1805 (02-09-02-0222): "In copying my letter of the 16th [sic, = 18th] March to Mr Monroe,
+  **the cypher established between him and me was employed, instead of that common to you and myself.** This error is now
+  corrected in the duplicate copy transmitted herewith."
+- Madison to Monroe, 23 May 1805 (02-09-02-0438): "The passages of this last in cypher, having not been copied into that
+  used by this Department with Genl Armstrong remain locked up".
+So in 1805 Armstrong's office sent Madison a letter in a private cipher concerted with another correspondent, and the
+Department could not read it -- the same event Madison describes in 1808 ("No such Cypher is in the office, and must be one
+concerted with another correspondent"). This does not show the 1808 letter is in the Armstrong-Monroe cipher (grade I,
+inference only); it names a concrete private code of Armstrong's, with a known partner, that nobody has screened.
+Against it: Armstrong to Bowdoin, Paris 22 July 1806 (printed, item 3 below): "Having no cypher in which I can write to
+Messrs Monroe & Pinckney, and recollecting that you have ..." -- by mid-1806 Armstrong either no longer held the Monroe
+cipher or did not use it for the joint London mission; and Monroe was back in Virginia from December 1807.
+- Where the specimens are: NARA M34 roll 13 (NAID 188671172, vol. 10, whole-roll PDF fetched once, 395 pages) frames 29-35
+  are the 18 March 1805 despatch and its enclosures, frames 56-58 the 2 April duplicate and a copy of Armstrong to Monroe
+  5 April 1805. **Both coded copies on the roll are in the office code THE=972** (972 = the throughout, a period interlinear
+  decode on each; `keyhunt/m34r13_1805_groups.tsv`, 170 groups read at the PDF's resolution, grade S one reader; screen
+  `keyhunt/screen_m34r13_1805.txt`: units 0/1 0.19 vs target 0.59, above 1700 0.006 vs 0.092, under 100 0.01 vs 0.36, top-20
+  overlap 0 -- MISS). The "inexplicable cypher" copy itself was not found on roll 13 at this pass (frames 1-60 looked at on
+  contact sheets and 34, 35, 58 at page resolution): either it was withdrawn when the corrected duplicate came, or it sits
+  elsewhere in the roll. The Monroe side: where the RCs of Armstrong to Monroe of 12 and 18 March and 1 and 5 April 1805
+  (addressed to Madrid) are is not established -- the 1904 LOC calendar lists no 1805 Armstrong letter (H25); the Madison
+  Papers cite Monroe's Madrid-period incoming letters to "NN: Monroe Papers" (NYPL, MssCol 2035; e.g. Erving to Monroe 2 Mar
+  1805, 02-09-02-0094), and a web-search snippet of the LOC Monroe finding aid places Monroe's letterbook Nov 1804-May 1805
+  at NYPL (I, not read on the page) -- so NYPL is the likeliest home. archives.nypl.org is Akamai-blocked and digitalcollections.nypl.org behind a bot check from
+  here (H34/H64 and this pass). Request drafted (below).
+- LOC Monroe Papers (mss33217, series 1 reel 3): H25's two unlocated "Dec 1804" Armstrong-to-Monroe letters -- one found,
+  **reel 3 frame 0638, Armstrong to Monroe, Paris 24 Dec 1804, clear** (frames 562-650 sampled every third at pct:15, then
+  626-650 every frame; frame 0638 read at pct:40); Dec 1804-Apr 1805 spans frames about 589-648, no numeral page seen at that
+  scale (a negative for dense pages only). No key sheet seen.
+- Printed Monroe: *Writings of James Monroe* vol. IV (Hamilton, 1900; IA writingsjamesmo03monrgoog) prints Monroe to
+  Armstrong 2 July, 26 Aug, 2 Sept, 14 Nov 1805 and 11 Mar 1806 in clear; a footnote says the *Bulletin of the NYPL* IV no. 2
+  (Feb 1900) print "gives also cipher numbers". Read that Bulletin (IA bulletinnewyork34librgoog): its cipher numbers belong
+  to Monroe's letters **to Madison** (6 July and 22 Nov 1805: 1385 the, 569 to, 1576 of -- WE028), not to Armstrong; the
+  Armstrong letters are clear there too. Negative for a printed Armstrong-Monroe specimen.
+
+**2. Pinkney (brief item 3).** Nothing new to screen: Pinkney to Madison 24 Jan 1808 is WE028 by known answer (H26); Princeton
+C0027 and MdHS MS 1388 read (H26); M30 reel 11 swept (H26/H31). Founders adds Madison to Pinkney 19 Feb 1808 with a cipher
+postscript (office-to-legation, the Department's own code) -- not Armstrong's. No Pinkney letterbook found digitised in this
+pass (not searched beyond Founders and the H26 catalogues). No draft: every Pinkney holding named is already read.
+
+**3. Bowdoin (brief item 2).** Reachable and read: *The Bowdoin and Temple Papers* pt. II (Collections MHS 7th ser. vol. 6,
+1907; IA collectionsofmas00mass_17, full text, public; pt. I = 6th ser. vol. 9, IA bowdointemplepap00bowdrich, 1756-1782, no
+Armstrong). Pt. II prints 17 Armstrong-Bowdoin items 1806-07 and dozens of Bowdoin-Erving letters with **bracketed period
+decipherments** (`keyhunt/extract_bt.py` -> `bt_pairs.tsv`, 123 runs). Screened: 78 of 123 runs read MATCH under WE028
+("Mr Monroe's cypher"; most of the rest are OCR damage or entries missing from our WE028 table; `bt_we028_check.tsv`), and
+Madison to Bowdoin 25 May 1807 (four runs, 1651 frequent) is in the Madrid legation cipher ("Mr Pinckney's cypher"). Screen
+of all 512 groups (`screen_bt.txt`): MISS (units 0/1 0.17, above 1700 0.008, under 100 0.03, top-20 overlap 0). What the
+volume says about Armstrong: the 22 July 1806 "no cypher" letter above; Bowdoin to Erving 1807, "for my own part with the
+exception of a few lines in one of my letters to the President, I have used no cyphers"; and the Aug-Sept 1807 exchanges
+between Armstrong and Bowdoin are open quarrels ("On these points I disdain to answer your questions") -- a private cipher
+between the two by Feb 1808 is unlikely (inference). Bowdoin was in London by 17 Feb 1808 (ARM3-COR). Bowdoin College's
+own holdings (Bowdoin family collection, James Bowdoin III letterbooks 1791-1811 incl. 1806-1811): archivesspace.bowdoin.edu
+is Cloudflare-challenged to curl, the browser tool and WebFetch; Wayback resets from this container; Bowdoin Digital
+Collections (reachable) has no letterbook scan ("Armstrong cipher", "Bowdoin Armstrong 1807": no results). Request drafted.
+
+**4. Erving (brief item 4).** No catalogue shows Armstrong correspondence in Erving's private papers (LOC Erving papers aid
+unreachable, ASKS 83; Yale MS 857 Series II: "No correspondence of Erving is preserved here", H53). The printed Bowdoin volume
+shows Erving and Bowdoin in WE028 1805-07. No draft (brief: only if a catalogue shows Armstrong correspondence in 1808).
+
+**5. Armstrong's own key copy (brief item 5).** Nothing online beyond H34/H64: NYHS aids 403 (WebFetch too), NYPL Akamai.
+Requests drafted for NYHS (ASKS 84) and the FDR Library (Rokeby/Aldrich roll, ASKS 85).
+
+**6. Printed editions (brief item 6).** Founders Online full-text "Armstrong AND cypher" (27 hits, all read in the list,
+twelve opened, `keyhunt/founders/`): nothing names a private cipher between Armstrong and anyone other than Monroe; Graham to
+Madison 10 and 20 May 1808 (the target and its duplicate with a postscript, "a Cypher to which we have no Key") already known
+(H62, line B). The Livingston microfilm guide (ASKS 86) is still not online (H66).
+
+**Numeral-cipher items screened this pass: 3 sets** -- Bowdoin-Temple printed runs (WE028 + legation, 512 groups, MISS),
+M34 roll 13 1805 enclosures (THE=972, 170 groups, MISS), NYPL Bulletin 1900 Monroe-Madison runs (WE028 by values read,
+not screened further). Candidate key or sibling: none. Status unchanged (`open`). Rule 10: printed and catalogued material,
+nothing called new; the Armstrong-Monroe cipher is named in the printed Madison Papers (PJM-SS 9) and its annotation.
+
+Requests (all logged in `keyhunt/requests.log`): archive.org 31, catalog.archives.gov 4 (one whole-roll PDF, 91 MB),
+founders.archives.gov 16 (headless Chromium), tile.loc.gov 84, www.loc.gov 2, archivesspace.bowdoin.edu 4 (Cloudflare),
+digitalcollections.bowdoin.edu 5, digitalcollections.nypl.org 1 (bot check), web.archive.org 1 (reset), contact pages 6;
+WebSearch 9, WebFetch 5. No logins, no credentials, no subagents; images read by this worker. Request drafts (not sent):
+`outreach/armstrong-keyhunt-nypl.md`, `-nyhs.md`, `-fdr.md`, `-bowdoin.md`; ASKS rows 95-96 and notes on 84/85.
