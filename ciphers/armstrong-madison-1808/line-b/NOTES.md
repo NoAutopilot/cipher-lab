@@ -301,3 +301,20 @@ with three or more tokens: 17 (13), 18 (12), 38 (10), 1 (9), 14 (8), 12 (5), 47 
 The original B8 (transition-profile assignment of particle identities with an LM-free instrument) is not run: B2b
 showed neighbour-class contexts carry no usable signal at N=369, and the same coarse contexts would feed it.
 Requests: none; 0 subagents; 3 minutes by the clock.
+
+## Step B11 (28 Sept 2026, 03:17-03:20 UTC) -- row order: the alphabetical-bucket positive control has no power (non-test); the rows' own clustering recorded as an observation
+
+`b11/row_autocorr.py`: lag-1 and lag-2 autocorrelation of family totals (head + 3-digit + 4-digit members) over rows
+10-99, null = rows permuted (10,000 draws for the target, 2,000 per control letter). Positive control: B2's Bf layout
+(alphabetical buckets headed by the commonest word), 60 en18 letters: lag-1 mean +0.096, only 12 of 60 letters above
+their own p95 (gate 45); negative control (same layout, rows shuffled): -0.061, 0 of 60. **GATE NOT MET**: an
+alphabetical-bucket layout of 90 buckets does not itself produce row-neighbour correlation at this N (22-word buckets
+average out), so the instrument cannot license an alphabetical verdict either way. Non-test for the row-order
+question; dropped. What the script printed for the target, recorded as an OBSERVATION and not as a licensed result:
+lag-1 +0.308 (own null p95 +0.169, 99.6th percentile), lag-2 +0.253 (p95 +0.168, 99.1st) -- family popularity
+clusters in row index (rows 11-18, 36-38, 45-48, 74-78 are jointly rich; rows 80-99 and 20-29 poor), the same fact
+ARM-DESIGN's hundreds profile of the 3-digit tier and B1's head autocorrelation (0.351) show from other angles. It
+means the row index is not random with respect to usage (a two-part layout with rows in random order would give
+about 0), and it is stronger than an alphabetical-bucket layout gives; a layout that groups words by frequency class
+into blocks of rows, or a table read column-wise from a printed page, would produce it -- to be tested only with an
+instrument that has a passing positive control. Requests: none; 0 subagents; 3 minutes by the clock.

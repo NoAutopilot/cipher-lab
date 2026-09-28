@@ -1,0 +1,4 @@
+positive control (Bf, alphabetical rows): lag-1 mean +0.096, letters above own p95: 12/60; lag-2 mean +0.228
+negative control (Bf, rows shuffled):    lag-1 mean -0.061, letters above own p95: 0/60
+GATE: NOT MET
+TARGET: lag-1 +0.308 (null p95 +0.169, pct 99.6); lag-2 +0.253 (null p95 +0.168, pct 99.1)  [printed, not licensed]
