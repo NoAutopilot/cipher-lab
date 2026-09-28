@@ -1,0 +1,9 @@
+read_call_H80.tsv: 22 rows; 22 tiles; statistic stratified by leaf
+  tile 17 (f101r g): not scored
+  tile 21 (f101r g): not scored
+  group A: set A 7, set B 9  (f101r:A 6, f101r:B 8, f188r:A 1, f188r:B 1, let:g 7, let:t 9)
+  group B: set A 1, set B 1  (f101r:A 1, f101r:B 1, let:g 1, let:t 1)
+  group C: set A 0, set B 1  (f101r:B 1, let:t 1)
+  group D: set A 1, set B 0  (f101r:A 1, let:g 1)
+scored 20 (A 9, B 11); groups 4; observed 12/20; permutation P = 0.8360 over 2000 (seed 1); p95 14/20
+GATE: FAIL

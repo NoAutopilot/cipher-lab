@@ -1971,3 +1971,22 @@ VBAR_B s glyph of H70 and the atlas's EBR_A "hairline diagonal"; l/y mostly unde
 squared C), but it does not clear its own gate, and every matched f/s token is already in the sample, so more tiles
 cannot be drawn from f.101r. Logged as a near miss, untestable at this n by this recipe -- not a split and not a
 negative. No reading, no class change.
+
+## Campaign step H80 (28 Sept 2026, 15:04-15:06 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+Second clean one-symbol control: the table's g/t column is ONE shared symbol, so the period g and t under the top-bar
+triangle (VBAR_A, the t glyph of H70) should not split. Tiles pushed 397a72c4 and the prompt 994bc22e, both before the
+call (the prompt commit followed a failed assertion in my own script, not a change of design): `build-pair NATIVE
+VBAR_A g t 80 h80 10 --rc 20,-20,30`, f.101r 10+10 and f.188r 1+1, 22 tiles, H70's prompt, `--strat --min 18`. One blind
+Opus vision call; tiles 17 and 21 none (ticks on clear-text letters).
+
+| reader's group | g | t |
+|---|---|---|
+| A plain barred triangle | 7 | 9 |
+| B upturned hook at the bar's end | 1 | 1 |
+| C vertical stroke crossing the bar | 0 | 1 |
+| D second bar under the point (low confidence) | 1 | 0 |
+
+Stratified observed 12/20, permutation P = 0.836, p95 14/20 -> **GATE FAIL**, as expected
+(`scripts/f61pair_h80_result.txt`, `--check` OK). The tile method now has two clean one-symbol negatives (H75 d/q, H80
+g/t) beside its PASSes (H65, H67, H69, H70, H77). No reading, no class change.
