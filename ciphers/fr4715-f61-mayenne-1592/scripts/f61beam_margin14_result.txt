@@ -1,0 +1,9 @@
+known positions 125; beam right 107/125
+fold S1: tau 0.950; held-out above tau 2/2 (of 3, 3 right overall)
+fold S2: tau 0.950; held-out above tau 6/6 (of 9, 6 right overall)
+fold S3: tau 0.009; held-out above tau 4/11 (of 11, 4 right overall)
+fold S4a+S4b: tau 1.093; held-out above tau 8/8 (of 16, 15 right overall)
+fold S5: tau 0.950; held-out above tau 7/7 (of 10, 10 right overall)
+fold T1: tau 1.589; held-out above tau 30/31 (of 36, 32 right overall)
+fold T2: tau 1.093; held-out above tau 28/30 (of 40, 37 right overall)
+GATE H126 (pooled held-out >= 0.90 on >= 20): 85/95 = 0.895 -> FAIL

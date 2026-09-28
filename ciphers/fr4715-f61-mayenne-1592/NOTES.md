@@ -2705,3 +2705,16 @@ of which the 14-cell map covers 7-8 (L10: PHI VBAR_A PHI PHI VBAR_B INF PHI; CA,
 sequence-gain statistic can be run on 7 letters with a control at the same length (rule 3), and the one thing the beam could
 emit -- seven letters of L10 -- is the fragment audit 1 already weighed (AUDIT.md "Fragment L10"). Dropped: no step can test
 anything here; f.61's own unread text is inside the span lines, where Tomokiyo's letters already stand.
+
+## Campaign step H126 (28 Sept 2026, 18:43-18:45 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_margin14.py` (gate in its docstring, pushed 6443cc88 before the run; `f61beam_margin14_result.txt`,
+per-position `f61beam_margin14_positions.tsv`): H117's leave-one-out margin calibration under the 14-cell pairs, seven folds
+over both known texts (f.61 spans S1-S5, f.108r overlay T1-T2). 125 known positions, beam right 107/125 = 0.856.
+
+Held-out positions above their fold's margin threshold: S1 2/2, S2 6/6, S3 **4/11**, S4 8/8, S5 7/7, T1 30/31, T2 28/30 --
+pooled **85/95 = 0.895 -> GATE (>= 0.90 on >= 20) FAIL, by one position**. The miss is one fold: S3 ("trop avancees",
+beam 4/11 overall) gets a near-zero threshold from the other folds and its wrong choices pass it; without S3 the held-out
+rate is 81/84. No threshold is licensed, so no per-position firm/soft flag is offered to the verifier; the threshold is not
+tuned after the fact. What the step does show: the beam's errors cluster in a span (S3) rather than spreading evenly, so a
+margin alone cannot flag them. No reading, no class change.
