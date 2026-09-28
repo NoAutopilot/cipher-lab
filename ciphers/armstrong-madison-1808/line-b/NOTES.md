@@ -329,3 +329,42 @@ RIGHT page opens the 22 Feb 1808 despatch (ARM-POOL2). The vertical endorsement 
 receipt docket; no "in cypher", no "not decyphered", no key or correspondent named. A second marginal text at the
 fold belongs to the 22 Feb despatch's left margin ("...nes have ... to the ... Sec. M. ... 's letter ... rch", M) and
 is the extract-forwarding note of the docket-0645 kind, not a cipher note. No lead; done.
+
+## Step B15 (28 Sept 2026, 03:28-03:5x UTC, in progress) -- Graham's "duplicate in cypher with a postscript on the back": roll 14 frames 0632-0664 hold no second copy of the 20 Feb letter; the 22 Feb despatch's own back page carries a cipher postscript and a "by M. Patterson" docket
+
+**Lead (from B6's Wayback pass).** John Graham, chief clerk, to Madison at Montpelier, 20 May 1808 (Founders Madison
+99-01-02-3101, Early Access): "Among the Letters forwarded by this Mail you will find one in Cypher from Genl
+Armstrong. It is the Duplicate of the one sent before & is forwarded to you now because there is a Postscript on the
+back of it, which I beleive was not on the one before sent." Five days after Madison's "undecyphered letter from A."
+sentence to Jefferson (15 May, 99-01-02-3082, confirmed by this pass's positive control fetch), and three days after
+Jefferson wrote Madison (17 May, Jefferson 99-01-02-8015) that he retained "Pinckney's, Armstrong's, Livingston's &
+mr Gallatin's letters" till another post.
+
+**Search 1: NARA M34 roll 14, the unsurveyed duplicates batch.** Frames 0632-0664 fetched at 600 px through the
+keyless IIIF v3 route (`catalog.archives.gov/iiif/3/lz%2F...%2FM34-014-NNNN.jpg/full/600,/0/default.jpg`, 33 requests,
+1.6 s apart) and read as four contact sheets by this session. Positive control met: the known 9 March 1808 duplicate
+(numeral code, "Friday" heading) is recognisable at 0643-0644 and the docket at 0645. Content: 0632-0641 are 1810
+items (Armstrong to Daniel Parker, Somers's deposition, Parker's reply), 0642 an 1811 letter, 0646-0664 the printed
+Douanes Imperiales sale catalogue of 1 Aug 1810. **No copy of the 20 Feb letter there.**
+
+**Search 2: the frames between the 22 Feb despatch and 29 Feb.** Frames 0035 and 0036 (unsurveyed by ARM-POOL's
+1-in-6 stride and by ARM-POOL2) fetched at 1400 px and read (H for the headings and docket, M for the body). 0035 LEFT
+page = the last page of the 22 Feb despatch: a postscript "P.S. Another attempt on the two offensive decrees will I am
+assured be made on wednesday next -- It will be 3.1001.1429.1351.963.307.1268.1490.1538.608.744.794.1217.855.659.
+1288.1429.965.860.864.1001.962. The news of the Embargo came in good time -- by verifying one of my predictions, it
+gave new weight to others. The ministerial belief now is that the present policy is dangerous, but till this
+conviction shall be wrought in the Emperor also, no change will take place for the better." (THE=972 usage by its
+values: 1001, 1429, 963, 962 ...), with the dockets "22d feb. to M. Madison by M. Patterson" and, vertically, "Genl
+Armstrong 22d Feby 1808". 0035 RIGHT and 0036 = the 28 Feb 1808 despatch (Armstrong's complaints to the Prince of
+Benevent and the answer). The 22 Feb despatch opens "Mr Patterson offers so good a conveyance that I cannot but
+employ it" (frame 0033).
+
+**Reading of the lead so far (M, to be settled by the Founders entry for 22 Feb).** Graham's "Duplicate ... with a
+Postscript on the back" matches the roll-14 copy of the 22 FEBRUARY despatch (a postscript on its back, sent "by M.
+Patterson", i.e. a second conveyance) at least as well as the 20 Feb letter, and the 20 Feb letter's own copy on roll
+14 (frames 0030-0033) carries no postscript. If so, the duplicate is not a second witness of the target's ciphertext,
+and Madison's undecyphered letter (15 May) and Graham's duplicate (20 May) are two different letters. What settles it:
+the Founders Early Access entry for Armstrong to Madison, 22 Feb 1808 (id 2733, the one fetch in the 2729-2745 run
+that failed twice; retried next) -- the editors print "Duplicate"/"RC"/postscript notes -- and, failing that, the
+LOC Madison Papers Series 1 for a May 1808 receipt. Requests so far: catalog.archives.gov 35, web.archive.org 17 for
+this step (plus B6's loop); 0 subagents.
