@@ -1,0 +1,262 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	PLAIN	m	1	81	clear word "et"
+L01	2	PLAIN	m	1	450	clear word "tant"
+L01	3	PLAIN	l	1	1000	clear word(s) "s dz"? illegible
+L01	4	PLAIN	m	1	1795	clear word "faudra"
+L01	5	PLAIN	m	1	2590	clear word "qu" (in overlap)
+L01	6	4TRI	m	2	297	
+L01	7	PHI	m	2	553	alt INF
+L01	8	INF	m	2	797	crossed; alt HASH4
+L01	9	VBAR_A	m	2	1026	
+L01	10	4TRI	m	2	1235	alt 4STEM
+L01	11	PHI	m	2	1485	
+L01	12	INF	m	2	1667	crossed by bar
+L01	13	VBAR_A	h	2	1890	
+L01	14	4STEM	m	2	2147	
+L01	15	HASH4	m	2	2342	alt INF
+L01	16	ZHOOK	h	2	2592	in overlap
+L01	17	VBAR_A	h	3	331	
+L01	18	VBAR_B	m	3	520	
+L01	19	ZHOOK	h	3	716	
+L01	20	INF	m	3	945	alt PHI
+L01	21	4TRI	m	3	1161	
+L01	22	VBAR_A	m	3	1390	long foot tail; alt EBR_A
+L01	23	BETA	m	3	1573	
+L01	24	HASH4	m	3	1755	alt DBL
+L01	25	4STEM	m	3	1971	
+L01	26	VBAR_A	h	3	2174	
+L01	27	DBL	m	3	2356	alt HASH4
+L01	28	DBL	m	3	2592	in overlap
+L01	29	EBR_B	m	4	371	alt ISH
+L01	30	HASH4	m	4	621	alt DBL
+L01	31	DBL	m	4	878	alt PHI
+L01	32	EBR_B	m	4	1148	
+L01	33	PHI	h	4	1458	
+L01	34	EBR_A	m	4	1782	
+L01	35	EBR_A	m	4	2066	
+L01	36	OTHER	l	4	2403	horizontal line-filler dash (end of row)
+L02	1	VBAR_A	h	1	95	
+L02	2	4TRI	h	1	304	
+L02	3	VBAR_A	h	1	513	
+L02	4	VBAR_A	m	1	716	alt VBAR_B
+L02	5	PHI	m	1	891	alt DBL
+L02	6	4TRI	h	1	1121	
+L02	7	VBAR_A	m	1	1350	tail; alt EBR_A
+L02	8	4TRI	h	1	1532	
+L02	9	INF	m	1	1742	alt HASH4
+L02	10	HASH4	h	1	1958	
+L02	11	PHI	m	1	2147	
+L02	12	4TRI	h	1	2363	
+L02	13	OTHER	l	1	2612	gamma-like loop at foot with rising stroke; in overlap
+L02	14	4STEM	m	2	277	
+L02	15	4TRI	m	2	506	
+L02	16	INF	m	2	776	alt HASH4
+L02	17	PHI	h	2	986	
+L02	18	PHI	m	2	1229	
+L02	19	4TRI	h	2	1472	
+L02	20	VBAR_A	m	2	1688	alt EBR_A
+L02	21	ISH	m	2	1910	alt CROSS
+L02	22	4STEM	m	2	2120	alt 4TRI
+L02	23	VBAR_A	m	2	2322	
+L02	24	VBAR_A	m	2	2531	in overlap
+L02	25	DBL	m	3	209	alt HASH4
+L02	26	HASH4	m	3	446	alt INF
+L02	27	EBR_B	l	3	648	alt ISH
+L02	28	PHI	m	3	830	alt DBL
+L02	29	BETA	h	3	1040	
+L02	30	DBL	m	3	1242	alt PHI
+L02	31	4TRI	m	3	1431	
+L02	32	VBAR_A	h	3	1681	
+L02	33	HASH4	h	3	1904	
+L02	34	INF	m	3	2133	alt DBL
+L02	35	4PI	m	3	2322	alt 4STEM
+L02	36	HASH4	m	3	2565	in overlap
+L02	37	PHI	m	4	405	
+L02	38	EBR_B	l	4	736	small; alt OTHER
+L02	39	VBAR_A	m	4	1026	alt EBR_A
+L02	40	PHI	m	4	1296	
+L02	41	DBL	m	4	1607	alt PHI
+L02	42	PHI	m	4	1931	
+L02	43	4TRI	h	4	2201	
+L02	44	OTHER	l	4	2444	line-filler dash
+L03	1	DBL	m	1	155	alt PHI
+L03	2	4TRI	m	1	365	
+L03	3	VBAR_A	h	1	614	
+L03	4	ZHOOK	h	1	851	
+L03	5	HASH4	h	1	1121	
+L03	6	LOOPSTEM1	l	1	1316	alt CA
+L03	7	OTHER	l	1	1526	gamma-like crossed loop with long trailing foot stroke; alt DBL
+L03	8	4TRI	m	1	1748	
+L03	9	INF	m	1	2025	alt HASH4
+L03	10	HASH4	h	1	2288	
+L03	11	EBR_A	m	1	2572	in overlap; alt VBAR_A
+L03	12	ZHOOK	l	2	155	straddles overlap tick; may duplicate pos 11 (shapes differ)
+L03	13	HASH4	h	2	385	
+L03	14	PHI	m	2	594	alt DBL
+L03	15	4TRI	m	2	810	
+L03	16	OTHER	l	2	1053	bracket open right with loop on top bar; alt EBR_B
+L03	17	4TRI	h	2	1269	
+L03	18	EBR_B	m	2	1485	
+L03	19	4TRI	h	2	1661	
+L03	20	4STEM	m	2	1883	alt HASH4
+L03	21	PHI	m	2	2113	
+L03	22	4TRI	h	2	2329	
+L03	23	EBR_A	m	2	2565	in overlap
+L03	24	PHI	m	3	243	alt DBL
+L03	25	DBL	m	3	452	alt PHI
+L03	26	HASH4	m	3	641	alt INF
+L03	27	4TRI	h	3	851	
+L03	28	VBAR_A	h	3	1073	
+L03	29	ZHOOK	h	3	1289	
+L03	30	PHI	m	3	1505	
+L03	31	4TRI	h	3	1701	
+L03	32	4STEM	m	3	1944	alt 4PI
+L03	33	PHI	m	3	2167	alt DBL
+L03	34	4TRI	h	3	2403	
+L03	35	PHI	m	3	2633	in overlap
+L03	36	4TRI	m	4	405	
+L03	37	VBAR_A	h	4	689	
+L03	38	4STEM	m	4	999	alt 4TRI
+L03	39	DBL	m	4	1310	alt BETA
+L03	40	EBR_B	m	4	1553	
+L03	41	EBR_B	m	4	1796	
+L03	42	PHI	m	4	2039	
+L03	43	OTHER	l	4	2349	line-filler dash
+L04	1	HASH4	l	1	473	cut at bottom edge
+L04	2	DBL	l	1	662	alt PHI
+L04	3	HASH4	m	1	864	
+L04	4	ISH	m	1	1053	alt CROSS
+L04	5	EBR_B	m	1	1256	
+L04	6	HASH4	m	1	1411	alt DBL
+L04	7	4TRI	m	1	1600	
+L04	8	VBAR_A	m	1	1755	
+L04	9	DBL	m	1	1991	alt PHI
+L04	10	EBR_A	m	1	2194	alt VBAR_A
+L04	11	VBAR_A	m	1	2396	
+L04	12	DBL	m	1	2585	in overlap
+L04	13	DBL	m	3	257	alt HASH4
+L04	14	ZHOOK	h	3	479	
+L04	15	4TRI	m	3	702	
+L04	16	4STEM	m	3	959	alt 4PI
+L04	17	ZHOOK	h	3	1195	
+L04	18	4STEM	m	3	1404	alt HASH4
+L04	19	4TRI	h	3	1613	
+L04	20	EBR_B	m	3	1850	
+L04	21	EBR_B	m	3	2025	
+L04	22	DBL	m	3	2180	alt PHI
+L04	23	BETA	m	3	2349	alt LOOPSTEM1
+L04	24	HASH4	m	3	2612	in overlap; alt DBL
+L04	25	4TRI	m	4	405	L04_s4 image appears IDENTICAL to L03_s4 - possible crop duplication
+L04	26	VBAR_A	h	4	689	dup of L03_s4?
+L04	27	4STEM	m	4	999	dup of L03_s4?
+L04	28	DBL	m	4	1310	dup of L03_s4?
+L04	29	EBR_B	m	4	1553	dup of L03_s4?
+L04	30	EBR_B	m	4	1796	dup of L03_s4?
+L04	31	PHI	m	4	2039	dup of L03_s4?
+L04	32	OTHER	l	4	2349	dash; dup of L03_s4?
+L05	1	4STEM	l	1	203	cut at bottom
+L05	2	DBL	m	1	432	alt PHI
+L05	3	4STEM	m	1	628	
+L05	4	4TRI	m	1	851	
+L05	5	DBL	m	1	1080	alt PHI
+L05	6	ZHOOK	h	1	1330	
+L05	7	VBAR_A	m	1	1580	alt EBR_A
+L05	8	4TRI	h	1	1823	
+L05	9	PHI	m	1	2066	
+L05	10	4TRI	h	1	2295	
+L05	11	4STEM	m	1	2511	at overlap tick; alt 4PI
+L05	12	4TRI	m	3	203	
+L05	13	VBAR_A	h	3	398	
+L05	14	BETA	m	3	594	
+L05	15	BETA	h	3	797	
+L05	16	4TRI	h	3	1013	
+L05	17	ZHOOK	h	3	1283	
+L05	18	VBAR_A	m	3	1485	alt EBR_A
+L05	19	4STEM	m	3	1728	
+L05	20	4TRI	m	3	1971	
+L05	21	DBL	m	3	2187	alt PHI
+L05	22	HASH4	m	3	2403	alt 4STEM
+L05	23	PHI	m	3	2585	in overlap
+L05	24	PLAIN	l	4	1256	large clear word(s) "aul Rigny"? through middle of band; possibly not cipher row
+L06	1	DBL	l	1	196	alt PHI
+L06	2	ZHOOK	h	1	392	
+L06	3	4STEM	m	1	635	
+L06	4	EBR_B	m	1	830	alt ISH
+L06	5	PHI	m	1	1053	tall stroke on left
+L06	6	ZHOOK	h	1	1283	
+L06	7	4STEM	m	1	1505	alt HASH4
+L06	8	VBAR_A	h	1	1715	
+L06	9	BETA	h	1	1877	
+L06	10	4TRI	h	1	2106	
+L06	11	HASH4	m	1	2369	alt INF
+L06	12	VBAR_A	m	1	2606	in overlap; alt EBR_A
+L06	13	VBAR_A	m	2	290	alt EBR_A
+L06	14	ZHOOK	h	2	500	
+L06	15	EBR_A	m	2	743	alt VBAR_A
+L06	16	PHI	h	2	965	
+L06	17	4TRI	h	2	1215	
+L06	18	VBAR_A	h	2	1411	
+L06	19	ZHOOK	h	2	1634	
+L06	20	EBR_B	m	2	1877	
+L06	21	BETA	h	2	2052	
+L06	22	VBAR_B	m	2	2322	alt EBR_A
+L06	23	DBL	m	2	2484	alt PHI
+L06	24	PHI	l	2	2666	in overlap, cut at edge
+L06	25	DBL	m	3	189	alt HASH4
+L06	26	EBR_A	m	3	405	alt VBAR_A
+L06	27	4TRI	h	3	594	
+L06	28	PHI	m	3	830	alt DBL
+L06	29	4STEM	m	3	972	alt 4PI
+L06	30	DBL	m	3	1175	alt PHI
+L06	31	VBAR_A	m	3	1377	alt VBAR_B
+L06	32	EBR_A	m	3	1600	alt VBAR_A
+L06	33	4TRI	h	3	1769	
+L06	34	ZHOOK	h	3	1998	
+L06	35	PHI	m	3	2214	
+L06	36	PHI	m	3	2376	alt LOOPSTEM1
+L06	37	VBAR_A	m	3	2579	in overlap; vertical rule after it
+L06	38	PLAIN	l	4	1256	L06_s4 image appears IDENTICAL to L05_s4 ("aul Rigny"?) - possible crop duplication
+L07	1	DBL	l	1	196	L07_s1 image appears IDENTICAL to L06_s1 - possible crop duplication; alt PHI
+L07	2	ZHOOK	h	1	392	dup of L06_s1?
+L07	3	4STEM	m	1	635	dup of L06_s1?
+L07	4	EBR_B	m	1	830	dup of L06_s1?
+L07	5	PHI	m	1	1053	dup of L06_s1?
+L07	6	ZHOOK	h	1	1283	dup of L06_s1?
+L07	7	4STEM	m	1	1505	dup of L06_s1?
+L07	8	VBAR_A	h	1	1715	dup of L06_s1?
+L07	9	BETA	h	1	1877	dup of L06_s1?
+L07	10	4TRI	h	1	2106	dup of L06_s1?
+L07	11	HASH4	m	1	2369	dup of L06_s1?
+L07	12	VBAR_A	m	1	2606	dup of L06_s1?
+L07	13	HASH4	m	2	162	in overlap zone, kept because s1 looks duplicated; alt 4STEM
+L07	14	4TRI	h	2	371	
+L07	15	4STEM	m	2	594	
+L07	16	4STEM	m	2	830	alt HASH4
+L07	17	4TRI	h	2	1053	
+L07	18	PHI	m	2	1269	alt LOOPSTEM1
+L07	19	DBL	m	2	1472	alt PHI
+L07	20	4TRI	h	2	1654	
+L07	21	4STEM	m	2	1877	
+L07	22	PHI	m	2	2079	
+L07	23	HASH4	h	2	2356	
+L07	24	PHI	m	2	2565	in overlap
+L07	25	4STEM	m	3	277	
+L07	26	INF	m	3	486	alt HASH4
+L07	27	4TRI	h	3	702	
+L07	28	VBAR_A	h	3	918	
+L07	29	PHI	m	3	1100	alt DBL
+L07	30	4TRI	h	3	1316	
+L07	31	ZHOOK	h	3	1580	
+L07	32	PHI	m	3	1816	alt DBL
+L07	33	4STEM	m	3	2039	alt HASH4
+L07	34	PHI	m	3	2248	
+L07	35	ISH	m	3	2430	alt EBR_B
+L07	36	EBR_B	m	3	2626	in overlap; alt ISH
+L07	37	DBL	m	4	432	alt PHI
+L07	38	EBR_B	m	4	729	
+L07	39	4TRI	h	4	999	
+L07	40	DBL	m	4	1330	alt PHI
+L07	41	EBR_A	m	4	1620	alt EBR_B
+L07	42	VBAR_B	m	4	1863	alt VBAR_A
+L07	43	ZHOOK	h	4	2133	
+L07	44	OTHER	l	4	2430	line-filler dash with dot
