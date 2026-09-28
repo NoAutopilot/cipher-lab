@@ -2931,3 +2931,36 @@ values corroborate the commonest), glosses C where they recur consistently, M ot
 No reading of the target, no class change. Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 175k-239k tokens,
 13-25 minutes each) plus this runner's one look (the four-frame view). Cost: get_session carries no cost figure;
 about 8 USD by H21's rate -- `--spend` records 8 against the row's 12.
+
+## Campaign step H39, step 1 of 3 (28 Sept 2026, 06:09-06:20 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H39 (from
+H31/H38): the record sweeps of the NARA reels H26 and H31 left unswept, at the 700-px two-frame sheet scale whose
+control passed in H31; this step is M31 reel 12 frames 1-380 (Erving, Aug 1805-early 1807). Reels 11 and 13 follow (H40).
+
+**Method.** `h31/sheets.py` on the H31 PDF (190 sheets), four blind Sonnet screeners of 95 frames each; the M30 reel
+11 sheet holding frame 65 (the 5-group WE028 run, H26 known answer) was appended to every call's file list without
+comment. **CONTROL PASS 4 of 4:** every screener flagged m30-65 as code (three read the run's digits approximately,
+one flagged it "possible, closer look" -- flagged either way, which is what a sweep needs). `h39/reads/m31r12_*.tsv`,
+one row per frame; `h39/MANIFEST.tsv`.
+
+**Result: 24 coded frames in 5 clusters, no key table, all in the two tables already on file.**
+
+| frames | letter | cipher (from the screeners' noted values and this runner's one look) |
+|---|---|---|
+| 19, 31, 34, 37 | Erving to Madison, 1805, the despatch itself naming "Mr Pinckney's Cypher" | WE028: in/of/to/him at 1426/1576/569/182 among the noted values (14 of 56 in H29's Erving-Monroe WE028 stream) |
+| 114, 115, 130 | late 1806, short runs and one dense opening with interlinear glosses | legation cipher (133, 1114, 1657/1651 among the noted values) |
+| 151, 152, 153 | "Private No. 14 Duplicate", Madrid 27 Sept 1806, three frames in cipher, a clerk's note that "the whole of these letters are in Cipher, but the French translation of them interlined" | WE028, read from the leaf (this runner, 1400 px): 1385 the, 1576 of, 569 to, 182 him, 184 his, 1426 in, 999 from, 992 France, 169 he -- a received original without glosses |
+| 169, 170 | "Private No. 16", Madrid 7 Oct 1806, two frames in cipher, opening 1385 | WE028 (by the opening value; M, not looked at) |
+| 284, 285, 286 | "No. 21, In the Cipher of the Legation", Madrid 24 Mar 1807, three frames with pencilled decode words | the legation cipher: the NARA original of the letter H26 read from the LOC copy (`corr/erving1807_groups.tsv`) |
+| 362, 363, 364, 365, 367, 368, 372, 373 | spring 1807, a despatch naming "Cypher writing", letter no. 2 (private) and no. 26, six full cipher pages and a worksheet with words interlined (373) | legation cipher (1651 x4 and 133 x2 among 18 noted values; 23 of 29 in the H32-H38 pool) |
+
+Neither table is the target's (WE028: ARM-A2 and H29; the legation cipher: H26/H32/H33/H38), so no frame goes to
+`corr/screen.py`; a third cipher would have. For the record and the scout: the legation pool can grow by about ten
+more full pages (284-286, 363-373, with the 373 worksheet a decode source), and WE028 usage by about eight
+(19-37, 151-153, 169-170); the reel's earlier and later runs are now both swept (H26 481-628 at 400 px, H31 381-480
+and this step 1-380 at 700 px). Blank/target frames: 1-5, 328, 330, 340.
+
+No reading of the target, no class change; rule 10: catalogued NARA despatches, nothing called new or first.
+Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 168-177k tokens, 3.5-6.5 minutes each) plus this runner's one
+look (frame 151 right page). Cost: about 4 USD by H21's rate -- `--spend` records 4 of the row's 12.
