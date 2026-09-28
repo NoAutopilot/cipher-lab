@@ -1,0 +1,7 @@
+read_call_H79.tsv: 24 rows; 24 tiles; statistic stratified by leaf
+  group A: set A 3, set B 9  (f101r:A 3, f101r:B 9, let:f 2, let:l 1, let:s 7, let:y 2)
+  group B: set A 5, set B 2  (f101r:A 5, f101r:B 2, let:l 4, let:s 2, let:y 1)
+  group C: set A 3, set B 0  (f101r:A 3, let:l 3)
+  group D: set A 1, set B 1  (f101r:A 1, f101r:B 1, let:f 1, let:l 1)
+scored 24 (A 12, B 12); groups 4; observed 18/24; permutation P = 0.0565 over 2000 (seed 1); p95 18/24
+GATE: FAIL

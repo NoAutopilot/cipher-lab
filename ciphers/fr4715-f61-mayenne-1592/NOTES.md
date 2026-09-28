@@ -1950,3 +1950,24 @@ chain whose tail comes from its last loop."
 4STEM c vs a/n on the family leaves: only 4 period-c tokens under 4STEM match pass A on f.101r (a 8, n 5; f.188r a 5, n
 2, no c), 8 tiles at most against the row's pre-registered minimum of 18 scored. Untestable at this n by this recipe;
 no vision call spent. (Match counts from `scripts/f61sbs.tokens`, the same filter every H65-H77 build used.)
+
+## Campaign step H79 (28 Sept 2026, 15:01-15:03 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+f.101r's EBR_A under l/y vs under f/s (two table columns; f.61's readers keep EBR_A f/s apart from EBR_B l/y by H22).
+Pre-registered and pushed 5da60743 before the call: `build-pair NATIVE EBR_A l,y f,s 79 h79 15 --rc 20,-10,35`, 24
+tiles (12 + 12, every matched f/s token), a form-neutral prompt (the runner had seen several ticks fall on a barred
+triangle), `score-pair --strat --min 18`. One blind Opus vision call; no tile none.
+
+| reader's group | l/y | f/s |
+|---|---|---|
+| A bars joined by a diagonal (triangle / Sigma-E bracket) | 3 | 9 (s 7, f 2) |
+| B upright with top and bottom bars, no diagonal (L / squared C) | 5 | 2 |
+| C F-like, top and middle bars, stem below | 3 | 0 |
+| D fits none | 1 | 1 |
+
+Observed 18/24, permutation P = 0.0565, p95 18/24 -> **GATE FAIL** (observed equals p95; `scripts/f61pair_h79_result.txt`,
+`--check` OK). The direction is the expected one (f/s mostly under the diagonal/triangle form, which is also the
+VBAR_B s glyph of H70 and the atlas's EBR_A "hairline diagonal"; l/y mostly under forms without a diagonal, EBR_B's
+squared C), but it does not clear its own gate, and every matched f/s token is already in the sample, so more tiles
+cannot be drawn from f.101r. Logged as a near miss, untestable at this n by this recipe -- not a split and not a
+negative. No reading, no class change.
