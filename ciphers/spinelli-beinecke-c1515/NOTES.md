@@ -1046,3 +1046,46 @@ H17). `ciphertext.txt` (H16, the spec's copy with a header) and `ciphertext_v3.t
 no class change, rule 10 wording. **Files:** `passes/build_letter_codes.py`, `passes/letter_codes_v3b.tsv`,
 `passes/ciphertext_v3.txt`, `passes/ciphertext_v3b.txt`, HYPOTHESES.md row. **Cost:** CPU only, no vision calls, no
 requests, no credentials -- recorded as 1.0 USD (est 1.5). No AskUserQuestion, no other target touched.
+
+## Campaign step H25 (28 Sept 2026, 02:13-02:17 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H25: the solver side of the design that H22 showed the annealer
+cannot read -- let the family sign (HOOK; the control's merged sign sM) be a per-position free letter, so its ceiling
+is 1.0 instead of the merge= control's 0.84, and re-run the design-matched control; one gated target run only if it
+clears 0.6.
+
+**Tool change (Usage 8):** `--param wild=<sign>[,<sign>]` on `tools/families/homophonic.py`: every occurrence of a
+wild sign becomes its own pseudo-sign before `homophonic_anneal.solve`, so the anneal assigns it a letter of its own
+under the n-gram model and the unigram KL term; the same param reaches control and target, hence `wild=sM,HOOK`. The
+info dict reports the letters each wild sign was read as. Offline test `tools/tests/test_homophonic_wild.py` (shape:
+N letters out, the merged sign read as several letters, no pseudo-sign in the key, the no-wild path unchanged)
+passes; `test_homophonic_merge.py` still passes; family_run's listing names the option.
+
+**Result: negative with control -- the wild-sign solver lifts the design-matched control from 0.12 to about 0.28
+at the letter's length, still far under the gate, and neither more iterations, more restarts nor a projected pool
+of 1000 signs brings it there; the target was never run** (HYPOTHESES.md rows 02:14-02:15, it16, merge=6 nulls=0.17,
+3 seeds, wild=sM,HOOK):
+
+| run | recovery mean (range) | best scores | gate 0.6 |
+|---|---|---|---|
+| N=262, iters 40000, 8 restarts | 0.281 (0.134-0.562) | -565 to -592 | NOT met |
+| N=262, iters 150000, 8 restarts | 0.272 (0.078-0.406) | -558 to -581 | NOT met |
+| N=262, iters 40000, 24 restarts | 0.255 (0.069-0.562) | -565 to -591 (seeds 1 and 3 identical to 8 restarts) | NOT met |
+| projected pool N=1000, iters 150000, 8 restarts | 0.379 (0.090-0.558) | -2289 to -2295 | NOT met |
+| for reference, no wild (H22): N=262 0.120; N=1000 0.479 (iters 40000); N=2000 0.706 (iters 150000) | | | |
+
+Reading: with the family sign free, the annealer finds decodes that SCORE far better than the true key's neighbourhood
+(-565 vs the no-wild -702 at N=262) but read worse -- 54 free positions let the objective be satisfied by wrong
+per-position fills, and 24 restarts return the same best-scoring restart as 8 (the objective, not the search, is the
+limit; the "more restarts alone" check of rule 3 is negative). At N=1000 the wild control reads LOWER than the no-wild
+one (0.379 vs 0.479): the freedom costs more than the ceiling gains once the text is long enough for the merged sign
+to be placed as one letter. A per-position wildcard under an n-gram objective is therefore logged as untestable /
+not a route for this design at these lengths -- a different instrument (a Viterbi fill of the wild positions given the
+key, or a model that scores the family sign as a distribution over its members) would be a new hypothesis, not a
+re-tuning of this one; not added, since H22's pool result (0.706 at N=2000 without any of this) already names the
+cheaper route: length.
+
+**Controls:** every number above is a control run; no target run. No reading, no class change, rule 10 wording.
+**Files:** `tools/families/homophonic.py`, `tools/tests/test_homophonic_wild.py`, `tools/family_run.py` (listing),
+HYPOTHESES.md rows. **Cost:** CPU only (about 3 minutes in all), no vision calls, no requests, no credentials --
+recorded as 2.0 USD (est 4). No AskUserQuestion, no other target touched.

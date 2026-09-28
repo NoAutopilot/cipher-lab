@@ -28,7 +28,8 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
   homophonic         homophonic substitution: homophonic_anneal.py with the spec's K (--param profile=target
                      matches the target's own sign-count profile; --param noise=p redraws a share p of control
                      tokens at the target's own type frequencies, GOLD-D1 25 Sept 2026; --param merge=k nulls=p
-                     collapses k letters' signs into one symbol and makes a share p of tokens nulls, H22 28 Sept 2026)
+                     collapses k letters' signs into one symbol and makes a share p of tokens nulls, H22 28 Sept 2026;
+                     --param wild=sM,HOOK anneals each occurrence of a wild sign as its own letter, H25 28 Sept 2026)
   periodic_vigenere  Vigenere/Beaufort/variant-Beaufort, short repeating key (own solver; --param tabula=beau period=7)
   periodic_masc      period-P general substitution: P independent monoalphabetic alphabets in rotation, not a shift
                      (HES-PHASE 27 Sept 2026, hessen-1824): homophonic_anneal.py over composite (token, coset) signs,

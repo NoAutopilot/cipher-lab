@@ -43,7 +43,14 @@ prints the design's recovery ceiling (1 - (merged count - largest member count)/
 compare the control's recovery with that ceiling, not only with the gate. Must catch: a solver that reads a clean
 homophonic control but not this design (a control under the gate then says the design, not the length, is the
 limit -- rule 3's Salviati lesson). Must NOT change: merge=0 nulls=0 (or absent) is byte-for-byte the old
-behaviour (tools/tests/test_homophonic_merge.py checks both)."""
+behaviour (tools/tests/test_homophonic_merge.py checks both).
+
+wild=<sign>[,<sign>] (H25, 28 Sept 2026, spinelli-beinecke-c1515): solver side of the same design -- every occurrence of
+a wild sign is annealed as its own pseudo-sign, i.e. a per-position free letter chosen by the n-gram model with the
+unigram KL term keeping the letter distribution honest, so a family sign standing for several letters (Spinelli's HOOK)
+has a recovery ceiling of 1.0 instead of the merge= control's 1 - (merged - top)/M. The same param reaches the control
+and the target, so name both signs: --param wild=sM,HOOK (sM is the merge= control's merged sign). The info dict's
+`wild_letters` gives the letters each wild sign was read as, with counts. Test: tools/tests/test_homophonic_wild.py."""
 import math
 import random
 import re
@@ -54,7 +61,8 @@ from collections import Counter
 DESCRIPTION = ("homophonic substitution (homophonic_anneal.py, control = make_control at the target's N and K; "
                "--param profile=target matches the target's own sign-count profile; --param noise=p redraws a "
                "share p of control tokens at the target's own type frequencies; --param merge=k nulls=p collapses "
-               "k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026)")
+               "k letters' signs into one symbol and makes a share p of the tokens nulls, H22 28 Sept 2026; --param wild=SIGN,... "
+               "anneals every occurrence of a wild sign as its own letter, H25 28 Sept 2026)")
 
 
 SYL_DE = "und,der,die,das,sch,ein,ch,en,er,ei,ie,st,ge,be,in,an,te,de,nd,ss,ck,au,ng,re"
@@ -347,6 +355,17 @@ def solve(cipher_msgs, spec, seed, restarts, corpora, params):
                                                  "key": {k: expand_units(v, params) for k, v in key.items()}}
     model = ha.Model(corpora, _p(params, "order", 3))
     seq = [s for m in cipher_msgs for s in m]
+    wild = {w for w in str(params.get("wild", "")).split(",") if w}
+    if wild:
+        # H25 (28 Sept 2026): every occurrence of a wild sign is its own pseudo-sign, so the anneal gives it a
+        # per-position letter under the n-gram model and the unigram KL term (ceiling 1.0 for a family sign)
+        seq_w = [f"{x}#{i}" if x in wild else x for i, x in enumerate(seq)]
+        res = ha.solve(seq_w, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
+        sc, key = res[0]
+        dec = "".join(key[x] for x in seq_w)
+        wl = {w: dict(Counter(key[f"{w}#{i}"] for i, x in enumerate(seq) if x == w)) for w in wild if w in seq}
+        return dec, sc, {"restart_scores": [round(r[0], 1) for r in res],
+                         "key": {k: v for k, v in key.items() if "#" not in k}, "wild_letters": wl}
     res = ha.solve(seq, model, restarts, _p(params, "iters", 40000), seed, _p(params, "uni_weight", 1.0))
     sc, key = res[0]
     return "".join(key[x] for x in seq), sc, {"restart_scores": [round(r[0], 1) for r in res], "key": key}
