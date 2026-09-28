@@ -3062,3 +3062,12 @@ f.106r OUT (8/20), f.274 OUT (6/20).** H129's six "in f.61's cells" hold robustl
 with the most text per line pattern (f.97r, f.188r), nearly for f.101r and f.124r, and not for the two short leaves (240 and
 167 signs), where the rank-1 of H129 was not robust -- a length limit, not evidence of another key. For the family worker.
 No reading, no class change.
+
+## Campaign step H160 (28 Sept 2026, finished 20:09 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61zhook_108v.py --hash4` (option pushed ae81249b before the run; `f61hash4_108v_result.txt`; the ZHOOK default
+re-checked fresh): HASH4 on f.108v (14 signs) by sequence gain, 30 bootstrap resamples. **i/x vs d/q: i/x wins 6/30 (OPEN,
+leaning d/q); i/x vs null: 20/30 (OPEN).** On f.108v the family value d/q leans ahead of the i/x that fitted f.108r best
+(H118/H119, itself only a lean, H154) -- consistent with the passes' HASH4 lumping two forms (bare hash, period i; 4-over-hash,
+period d/q, H98) in different proportions on the two leaves. Nothing decided; a sign-shape split of HASH4 on these leaves
+(the H98 tile design) is what would separate them. No reading, no class change.

@@ -1,0 +1,3 @@
+f.108v HASH4 signs: 14; map value i/x
+i/x vs d/q: i/x wins 6/30 -> OPEN
+i/x vs null: i/x wins 20/30 -> OPEN
