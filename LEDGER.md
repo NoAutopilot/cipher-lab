@@ -1313,3 +1313,6 @@ the end of every wake.
 | 28 Sept 2026 | CHECK-SOLVED-WEB | session_01Pd5PCGRBn6X3F958dK4qVb | owner | Opus 5.5 | 4.49 | done 15:31, archived | no prior reading on the web; gate fixed |
 | 28 Sept 2026 | VERIFY-F61-V4 | session_014nSPzcuub15LNNfvGjJbRp | owner | Opus 5.5 | cap 40 | running from 16:10 | audit of key v4 |
 | 28 Sept 2026 | F61-FAMILY-7 | session_01UnUDkJzBPMGtkTLUukueM8 | owner | Opus 5.5 | cap 30 | running from 16:10 | fr.3641 / fr.4699 decipherment leads |
+| 28 Sept 2026 | ARM-KEYHUNT | session_016AAYdrR1XwDKAE1SKaowev | owner | Opus 5.5 | cap 40 | running from 16:34 | private-cipher key hunt |
+| 28 Sept 2026 | HARVEST-A | session_01SfpD5spXsfwXpLx63sDp6R | owner | Opus 5.5 | cap 50 | running from 16:34 | KEY-ADJACENT ranks 2, 3, 8 |
+| 28 Sept 2026 | HARVEST-B | session_017ZKFLiSHTrLRNnv3DRyEAn | owner | Opus 5.5 | cap 50 | running from 16:34 | KEY-ADJACENT ranks 10-14 |

@@ -112,3 +112,13 @@ orchestrator sends verifiers and long-box jobs there first while the owner accou
 | 28 Sept 16:12 | armstrong-madison-1808 | 47 done 4 dropped; runner 3 holds: every open row needs a document or a person (ASKS 84-86, 90-92); open-web check: no prior reading | 265.61 | 47 / 4 / 0 | 0 |
 | 28 Sept 16:12 | espagnol142-mercy-1648 | N4 stands; crib work (Burgsdorf name fit; 65 = sr passes its control but ambiguous); open-web check: no prior reading | 82.68 | 43 / 2 / 0 | 0 |
 | 28 Sept 16:12 | fr4715-f61-mayenne-1592 | METER 20 / 59 / 20 under key v4 (v3 14 / 65 / 20): known spans 0.873 vs permuted p95 0.436; f.108v held-out checks pass (H85, H93, H94, H100/H102); VERIFY-F61-V4 and F61-FAMILY-7 (fr.3641/fr.4699 decipherment leads) spawned; budget 600 | 319.72 | 76 / 11 / 0 | 0 |
+
+## Re-plan (28 Sept 2026, 16:3x UTC, orchestrator, after the owner's review)
+
+Record, not impression: 82 of the project's 100 results are dated 23-24 Sept and nearly all came from applying an existing key (period or published) to a letter nobody had read with it; no counted result has been added since 26 Sept. The four-campaign sprint turned to keyless hard targets: Mercy was already counted (now N4), Spinelli proved N0, Armstrong has no route without a key or a second letter, f.61 is the one that moved (key v4, meter 20/59/20). The last two days also lost time to operations (the 7.5-hour Fable outage, restarts, three-account coordination).
+
+From 16:3x UTC 28 Sept, three tracks, all on the owner account (accounts 2 and 3 get no new work; their dispatchers stay idle):
+1. **Armstrong, the owner's first goal** (Tomokiyo's June 2026 post: a solution could go into the next volume of the Papers of James Madison). Keyless work stops; it has failed every control at 369 groups. The route is a key or a second letter in the private cipher Madison says was "concerted with another correspondent": ARM-KEYHUNT (Bowdoin, Pinkney, Erving, Armstrong's own papers), request drafts for what is not online, and a reel/scan sweep by AI the day any arrives.
+2. **The harvest, reopened now** (the breadth freeze ends early for this vein only): HARVEST-A and HARVEST-B work the open KEY-ADJACENT rows with the new web and blog gate first; each reading that clears its control goes to two audits.
+3. **f.61** continues on its momentum (VERIFY-F61-V4, F61-FAMILY-7, the runner).
+Mercy is counted at N4 and its outreach is ready to send; its runner continues cheaply on crib work.
