@@ -1,0 +1,75 @@
+You are reading a machine decode of a short 17th-century Spanish diplomatic cipher (a homophonic substitution: each numbered glyph stands for one letter; vowels usually have several glyphs; a few glyphs may be rare or stand for a name). The decode was produced by a statistical solver and may assign some glyphs the wrong letter; a few individual glyphs may also have been miscopied by the transcriber (those cannot be fixed by a key change). Spelling is period Spanish (u/v and i/j interchange, no accents, words run together, no spaces).
+Task: read the text, segment it into Spanish words in your head, and propose KEY CHANGES: a glyph whose letter should be different everywhere it occurs. Only propose a change you would defend from at least one clear word; do not rewrite single positions.
+Output ONLY a TSV block between lines BEGIN and END, header: glyph	from	to	confidence(high/medium/low)	evidence_words
+Then one line: SEGMENTED: the first 200 letters of your corrected text with spaces between words.
+
+
+KEY TABLE (glyph, current letter, occurrences):
+g10	d	1
+g11	i	12
+g12	h	1
+g13	o	17
+g14	t	17
+g15	i	3
+g16	d	31
+g17	a	12
+g18	y	6
+g19	l	22
+g20	i	3
+g21	u	12
+g22	g	8
+g23	e	30
+g24	m	17
+g25	q	7
+g26	s	45
+g27	i	13
+g28	n	2
+g29	p	14
+g30	e	12
+g31	c	20
+g32	y	2
+g33	t	1
+g34	u	6
+g35	e	24
+g36	a	20
+g37	o	18
+g38	l	1
+g39	r	36
+g40	u	9
+g41	b	5
+g42	o	17
+g43	e	10
+g44	f	1
+g45	n	36
+g46	e	1
+g47	a	29
+
+TEXT (each L line is the decode; the G line under it gives the glyph of each letter in order):
+L01: ofordeuartugolsucunesoaquienelloquisiese
+G01: g42 g44 g13 g39 g10 g35 g21 g17 g39 g14 g40 g22 g37 g19 g26 g21 g31 g40 g45 g43 g26 g13 g47 g25 g21 g11 g30 g45 g35 g19 g19 g42 g25 g21 g11 g26 g27 g35 g26 g23
+L02: aeppondeaqueteneoordendesiondeparaslruor
+G02: g36 g35 g29 g29 g13 g45 g16 g43 g17 g25 g21 g23 g14 g35 g45 g43 g42 g13 g39 g16 g30 g45 g16 g35 g26 g15 g37 g45 g16 g23 g29 g47 g39 g47 g26 g19 g39 g40 g37 g39
+L03: asmencuantalemosdoseparapedirningunapade
+G03: g36 g26 g24 g35 g45 g31 g40 g36 g45 g14 g17 g19 g35 g24 g42 g26 g16 g42 g26 g35 g29 g47 g39 g47 g29 g23 g16 g11 g39 g45 g27 g45 g22 g34 g45 g47 g29 g47 g16 g23
+L04: emiasysepridoeesdedrseslcanicnenosootoas
+G04: g30 g24 g27 g17 g26 g32 g26 g23 g29 g39 g11 g16 g42 g30 g23 g26 g16 g30 g16 g39 g26 g35 g26 g19 g31 g47 g45 g20 g31 g45 g23 g45 g42 g26 g42 g13 g14 g13 g36 g26
+L05: recibiestosemanalescaiasyconelcorreolose
+G05: g39 g23 g31 g27 g41 g11 g30 g26 g14 g42 g26 g23 g24 g36 g45 g47 g19 g43 g26 g31 g36 g11 g47 g26 g18 g31 g13 g45 g35 g19 g31 g37 g39 g39 g23 g37 g19 g42 g26 g23
+L06: stampasunoyaerdcomodemanodeurbanssrmaueu
+G06: g26 g14 g47 g24 g29 g47 g26 g21 g45 g37 g18 g17 g30 g39 g16 g31 g13 g24 g37 g16 g30 g24 g36 g45 g37 g16 g35 g34 g39 g41 g17 g45 g26 g26 g39 g24 g17 g40 g43 g21
+L07: amilanosparaqaesiempremencgocorididyesta
+G07: g47 g24 g27 g19 g36 g45 g37 g26 g29 g47 g39 g36 g25 g47 g23 g26 g27 g35 g24 g29 g39 g23 g24 g23 g28 g31 g22 g42 g31 g13 g39 g11 g16 g15 g16 g18 g46 g26 g14 g36
+L08: ntaladeurntaapocoloyudleseruoqueestoycar
+G08: g45 g14 g36 g19 g47 g16 g35 g21 g39 g45 g14 g47 g47 g29 g13 g31 g13 g19 g37 g32 g21 g16 g19 g23 g26 g43 g39 g21 g37 g25 g40 g30 g23 g26 g14 g37 g18 g31 g17 g39
+L09: redounasctoharmedioionquesoloreelantasob
+G09: g39 g43 g16 g13 g34 g45 g17 g26 g31 g14 g37 g12 g47 g39 g24 g23 g16 g11 g37 g27 g37 g45 g25 g21 g35 g26 g42 g19 g13 g39 g23 g35 g38 g36 g45 g14 g36 g26 g13 g41
+L10: ldgocionessinaconsuplecarlememandoydsoca
+G10: g19 g16 g22 g42 g31 g27 g13 g45 g30 g26 g26 g27 g45 g17 g31 g37 g45 g26 g40 g29 g19 g43 g31 g47 g39 g19 g35 g24 g23 g24 g47 g45 g16 g42 g18 g16 g26 g13 g31 g47
+L11: sianiarasatistaeerconodgunesdeellasadios
+G11: g26 g11 g17 g45 g11 g47 g39 g36 g26 g47 g14 g27 g26 g33 g36 g35 g23 g39 g31 g13 g45 g42 g16 g22 g34 g45 g23 g26 g16 g23 g23 g19 g19 g47 g26 g47 g16 g15 g37 g26
+L12: mepadrequeguardeauueptrareuerenciademadr
+G12: g24 g43 g29 g36 g16 g39 g23 g25 g34 g23 g22 g21 g36 g39 g16 g23 g47 g40 g40 g30 g29 g14 g39 g36 g39 g35 g34 g35 g39 g30 g45 g31 g11 g47 g16 g35 g24 g36 g16 g39
+L13: idysetiembredesebagtionganiollianerenito
+G13: g27 g16 g18 g26 g35 g14 g27 g35 g24 g41 g39 g35 g16 g23 g26 g23 g41 g47 g22 g14 g27 g42 g45 g22 g17 g45 g20 g42 g19 g19 g20 g36 g28 g43 g39 g23 g45 g11 g14 g37
+L14: l
+G14: g19

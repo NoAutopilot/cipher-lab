@@ -1,0 +1,75 @@
+You are reading a machine decode of a short 17th-century Spanish diplomatic cipher (a homophonic substitution: each numbered glyph stands for one letter; vowels usually have several glyphs; a few glyphs may be rare or stand for a name). The decode was produced by a statistical solver and may assign some glyphs the wrong letter; a few individual glyphs may also have been miscopied by the transcriber (those cannot be fixed by a key change). Spelling is period Spanish (u/v and i/j interchange, no accents, words run together, no spaces).
+Task: read the text, segment it into Spanish words in your head, and propose KEY CHANGES: a glyph whose letter should be different everywhere it occurs. Only propose a change you would defend from at least one clear word; do not rewrite single positions.
+Output ONLY a TSV block between lines BEGIN and END, header: glyph	from	to	confidence(high/medium/low)	evidence_words
+Then one line: SEGMENTED: the first 200 letters of your corrected text with spaces between words.
+
+
+KEY TABLE (glyph, current letter, occurrences):
+g10	o	9
+g11	c	1
+g12	t	23
+g13	u	24
+g14	b	5
+g15	e	6
+g16	o	5
+g17	l	22
+g18	d	2
+g19	u	4
+g20	o	8
+g21	q	8
+g22	c	1
+g23	c	14
+g24	i	11
+g25	m	14
+g26	d	20
+g27	g	2
+g28	a	39
+g29	e	57
+g30	n	42
+g31	i	10
+g32	s	13
+g33	q	1
+g34	i	4
+g35	a	17
+g36	r	41
+g37	a	2
+g38	s	38
+g39	e	8
+g40	e	27
+g41	o	20
+g42	a	3
+g43	d	1
+g44	p	11
+g45	y	1
+g46	i	5
+g47	h	2
+
+TEXT (each L line is the decode; the G line under it gives the glyph of each letter in order):
+L01: olandoseestosormasencompainadeladuquesod
+G01: g10 g17 g28 g30 g26 g20 g38 g40 g29 g38 g12 g10 g38 g10 g36 g25 g35 g38 g40 g30 g23 g10 g25 g44 g35 g31 g30 g28 g26 g29 g17 g35 g26 g13 g33 g19 g29 g38 g10 g26
+L02: eeheureusesdelasquealaieniaconuosparaque
+G02: g29 g40 g47 g29 g13 g36 g40 g19 g38 g40 g32 g26 g40 g17 g37 g32 g21 g13 g40 g42 g17 g37 g46 g29 g30 g31 g28 g23 g41 g30 g13 g16 g38 g44 g28 g36 g28 g21 g13 g29
+L03: nosiniimedeoulossepamospasareesoelauesau
+G03: g30 g41 g38 g24 g30 g34 g46 g25 g40 g26 g29 g41 g13 g17 g10 g32 g38 g40 g44 g28 g25 g41 g38 g44 g35 g38 g28 g36 g40 g39 g38 g10 g40 g17 g42 g19 g40 g38 g28 g13
+L04: erosconelelectordebrandenburiseoneopirad
+G04: g29 g36 g41 g38 g23 g41 g30 g40 g17 g29 g17 g40 g23 g12 g16 g36 g26 g29 g14 g36 g35 g30 g26 g29 g30 g14 g19 g36 g31 g32 g40 g41 g30 g40 g41 g44 g46 g36 g28 g26
+L05: lonburiscrisiemareymasorparadienseeembia
+G05: g17 g41 g30 g14 g13 g36 g31 g38 g11 g36 g34 g38 g46 g40 g25 g28 g36 g29 g45 g25 g28 g32 g16 g36 g44 g35 g36 g28 g18 g24 g29 g30 g38 g29 g15 g40 g25 g14 g24 g28
+L06: ncartasdecreencioqueianconestaslespropon
+G06: g30 g23 g28 g36 g12 g35 g38 g26 g29 g23 g36 g29 g40 g30 g23 g24 g10 g21 g13 g40 g46 g28 g30 g23 g41 g30 g40 g38 g12 g28 g32 g17 g29 g38 g44 g36 g41 g44 g20 g30
+L07: dreesdeseseparmeteraseleuantenenaquelpae
+G07: g26 g36 g29 g15 g38 g18 g40 g38 g15 g38 g29 g44 g42 g36 g25 g15 g12 g39 g36 g28 g38 g29 g17 g29 g13 g28 g30 g12 g40 g30 g40 g30 g28 g21 g13 g29 g17 g44 g28 g15
+L08: stresmilhombresdeenianteriaendosotredeie
+G08: g38 g12 g36 g29 g38 g25 g24 g17 g47 g41 g25 g14 g36 g29 g38 g26 g29 g39 g30 g34 g28 g30 g12 g29 g36 g24 g35 g29 g30 g26 g16 g38 g16 g12 g36 g29 g43 g29 g31 g39
+L09: mientesconquecondiceonessaleamaremosorse
+G09: g25 g24 g29 g30 g12 g15 g32 g23 g20 g30 g21 g13 g29 g23 g41 g30 g26 g24 g22 g39 g41 g30 g29 g38 g32 g28 g17 g40 g28 g25 g35 g36 g29 g25 g10 g32 g20 g36 g38 g39
+L10: querraencariaedellasquecorraporsunoladir
+G10: g21 g13 g29 g36 g36 g28 g29 g30 g23 g28 g36 g31 g35 g29 g26 g29 g17 g17 g28 g32 g21 g13 g29 g23 g41 g36 g36 g28 g44 g41 g36 g38 g13 g30 g41 g17 g28 g26 g24 g36
+L11: egtnonsseiugaseramasconuenientarotratant
+G11: g29 g27 g12 g30 g41 g30 g32 g38 g39 g24 g13 g27 g28 g38 g29 g36 g28 g25 g35 g38 g23 g41 g30 g13 g29 g30 g24 g29 g30 g12 g28 g36 g20 g12 g36 g35 g12 g28 g30 g12
+L12: aientedequeaaleuantadatidolasensuluiarle
+G12: g35 g31 g29 g30 g12 g29 g26 g29 g21 g13 g29 g28 g35 g17 g29 g13 g28 g30 g12 g35 g26 g28 g12 g31 g26 g20 g17 g35 g32 g29 g30 g38 g13 g17 g13 g31 g28 g36 g17 g29
+L13: uaarotrasseconsueeseelirutodetenertaient
+G13: g13 g28 g35 g36 g20 g12 g36 g28 g32 g38 g29 g23 g41 g30 g38 g13 g39 g29 g38 g29 g40 g17 g34 g36 g13 g12 g20 g26 g29 g12 g29 g30 g29 g36 g12 g28 g31 g29 g30 g12
+L14: e
+G14: g40
