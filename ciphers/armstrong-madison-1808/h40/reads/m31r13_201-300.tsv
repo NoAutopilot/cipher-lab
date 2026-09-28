@@ -1,0 +1,103 @@
+frame	flag	note
+201	none	clear prose (letter No.19 Erving-Madison, Madrid 20 Sep 1808)
+202	none	clear prose (No.20, Madrid 22 Sep 1808)
+203	none	clear prose
+204	none	clear prose
+205	none	clear prose
+206	none	clear prose (No.52, 29 Sep 1808)
+207	none	clear prose (Spanish)
+208	none	clear prose (Spanish/English)
+209	none	clear prose
+210	none	clear prose (printed Gazeta Extraordinaria, list of deputy names)
+211	none	clear prose (printed gazette cont.)
+212	none	clear prose (No.53 duplicate, 6 Oct 1808)
+213	none	clear prose
+214	none	clear prose; ordinary troop-count numbers (180.000, 50-60.000, 17.000 men) mid-page, not cipher runs
+215	none	clear prose
+216	none	clear prose
+217	none	clear prose
+218	none	clear prose
+219	none	clear prose (printed title page, Real Provision, AÑO 1808)
+220	none	clear prose (printed decree text)
+221	none	clear prose (printed, list of provincial deputy names)
+222	none	clear prose (printed cont.)
+223	none	clear prose (printed)
+224	none	clear prose (printed, mirrored/upside-down text through page)
+225	none	faint clear prose (manuscript, Spanish)
+226	none	faint clear prose (manuscript, Spanish)
+227	none	clear prose (letter No.54 to Madison, Aranjuez 2 Nov 1808)
+228	none	clear prose
+229	none	clear prose
+230	none	clear prose; ordinary counts (vessels ~14, ~20), signed Erving
+231	none	clear prose
+232	none	faint clear prose (Spanish)
+233	none	faint clear prose (Spanish)
+234	none	clear prose (Spanish)
+235	none	clear prose (French, note to Duc d'Infantado)
+236	none	clear prose (French/Spanish/English)
+237	none	faint clear prose (French)
+238	none	faint clear prose (French)
+239	none	faint clear prose (Spanish/English, Duke of Infantado)
+240	none	clear prose (Spanish/French, No.3)
+241	none	clear prose (French, No.5)
+242	none	clear prose (French/Spanish, No.6)
+243	none	clear prose (French)
+244	none	clear prose (English, No.7, to Baron Strogonoff)
+245	none	clear prose (English)
+246	none	clear prose (French, No.1)
+247	none	clear prose (letter No.55 to Madison, Aranjuez 14 Nov 1808)
+248	none	clear prose
+249	none	clear prose (copy to Cevallos, 8 Nov 1808)
+250	none	clear prose
+251	none	clear prose
+252	none	clear prose (Spanish)
+253	none	clear prose; enumerated articles "1.","2.","3." (treaty clauses), not cipher
+254	none	clear prose; article-number references continue (1st Article of the Treaty)
+255	none	clear prose (ship names Ruby, John, Augusta, Davis)
+256	none	faint clear prose
+257	none	faint clear prose
+258	none	clear prose (to Don Pedro Cevallos, 8 Nov 1808)
+259	none	clear prose
+260	none	clear prose; right page mostly blank with faint marginal note
+261	none	clear prose
+262	none	clear prose (Spanish)
+263	none	clear prose (Spanish)
+264	none	clear prose (Spanish)
+265	none	left page blank; right page clear prose (No.2, to Cevallos, 16 Nov 1808)
+266	none	clear prose
+267	none	clear prose
+268	none	left page blank; right page clear prose (No.56 to Madison, 1 Dec 1808); dispatch numbers only (No.55, No.11, No.54, No.5A), not cipher
+269	none	clear prose
+270	none	clear prose, signed Erving
+271	none	clear prose
+272	none	clear prose (No.57 to Madison, Cadiz 31 Dec 1808)
+273	none	clear prose
+274	none	clear prose
+275	none	clear prose
+276	none	clear prose; ordinary troop-count numbers ("20 to 30.000 men")
+277	none	clear prose; ordinary troop-count numbers ("30.000 fighting men")
+278	none	clear prose; ordinary troop-count numbers (12,000; near 70.000), signed Erving
+279	none	clear prose; right page addressed to Madison, mentions enclosures No.11 & 12
+280	none	clear prose (Spanish, addressed to James Madison)
+281	none	clear prose (Spanish)
+282	none	clear prose (English, to Count Florida Blanca, Badajos 9 Nov 1808)
+283	none	clear prose (Spanish/English)
+284	none	clear prose (Spanish/English, No.7 to Don Pedro Cevallos)
+285	none	clear prose (English)
+286	none	clear prose (English, No.7 duplicate, Cadiz 26 Dec 1808)
+287	none	clear prose (English, No.8 duplicate cont.)
+288	none	clear prose (English, repeats content of fr0287)
+289	none	clear prose (printed proclamation, signed Josef Virues, No.9)
+290	none	clear prose (printed "Noticias Interesantes" newssheet, No.10)
+291	none	clear prose (Spanish note, No.11 copy duplicate, 19 Nov 1808)
+292	none	clear prose (printed title page "La Suprema Junta Gubernativa del Reyno", No.11)
+293	none	clear prose (printed "Españoles:" pamphlet start)
+294	none	clear prose (printed pages [a],[3])
+295	none	clear prose (printed pages [4],[5])
+296	none	clear prose (printed pages [6],[7])
+297	none	clear prose (printed pages [8],[9]; troop numbers spelled out "cincuenta mil", not cipher)
+298	none	clear prose (printed pages [10],[11])
+299	none	clear prose (printed pages [12],[13])
+300	none	clear prose (printed pages [14],[15])
+m30-65	code	right-hand page, mid-paragraph run of five numbers "134 1779 1023 1058 654" inline in otherwise clear English prose (Erving-type despatch on British ministry attitudes)
+m30-66	none	clear prose (English); ordinary troop-count number ("5,000 troops"), list of Lords' names, not cipher

@@ -2964,3 +2964,23 @@ and this step 1-380 at 700 px). Blank/target frames: 1-5, 328, 330, 340.
 No reading of the target, no class change; rule 10: catalogued NARA despatches, nothing called new or first.
 Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 168-177k tokens, 3.5-6.5 minutes each) plus this runner's one
 look (frame 151 right page). Cost: about 4 USD by H21's rate -- `--spend` records 4 of the row's 12.
+
+## Campaign step H40, step 1 of 2 (28 Sept 2026, 06:19-06:28 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H40 (H39's
+steps 2-3): the record sweeps of M31 reel 11 (Bowdoin's Madrid despatches, Dec 1804-Apr 1808, 137 frames) and reel 13
+(Erving, May 1808 on, 660 frames); this step reel 11 whole and reel 13 frames 1-300. Same method as H31/H39
+(`h31/sheets.py`, 700-px two-frame sheets, four blind Sonnet screeners, the M30 reel 11 frame-65 control sheet in
+every call's file list; `h40/MANIFEST.tsv`, `h40/reads/`).
+
+**CONTROL PASS 4 of 4** (frame 65 flagged code by every screener, its digits read approximately each time).
+
+**Result: no coded frame and no key table on reel 11 (137 frames: 7 target/title cards, 130 clear prose) or on reel 13
+frames 1-300 (clear despatches, printed Gazeta/Diario de Madrid enclosures, the Bayonne and Fontainebleau documents, a
+Gerona lottery table; blank leaves at 1-4 and 135).** Reel 11 frames 24 and 110 mention a cipher in passing (an
+enclosure, "my cipher" carried) with no coded numbers on the page. So Bowdoin's channel and Erving's 1808 despatches
+carry nothing in any table, which closes the M31 series for this target except reel 13 frames 301-660 (H41).
+
+No reading of the target, no class change; rule 10: catalogued NARA despatches, nothing called new or first.
+Requests: none. Vision: 4 of 4 subagent calls (Sonnet, 173-180k tokens, 3.5-5 minutes each); no runner look. Cost:
+about 4 USD by H21's rate -- `--spend` records 4 of the row's 8.
