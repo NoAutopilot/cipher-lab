@@ -2149,3 +2149,11 @@ r16:2-15 "y e o n e o p ? r a d l o n": list built before scoring = every 2-5-wo
 the rule. The span may hold a title or particle the newsletters do not use ("y con el Oberkammerherr" has no Spanish
 form in the corpus), or carry misread tokens; it stays unread and the H41 name candidate is unaffected. No token,
 grade or class change.
+
+## Campaign step H55 (2026-09-28 16:13 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** v04 anchored at its end (the clear "sera mas conuenient" follows): list =
+every word before "sera" in es17c7, 4-12 letters, 3+ occurrences (17, `h55/wordlist.tsv`), `tools/crib_list_fit.py
+--anchor end` at v04:19 (the gutter token, 15, M, wild) and at v04:18 (`h55/result.log`). Best "cual" fit 0 (1/1) at
+v04:19, "bien" -2 at v04:18; no word meets the rule. With H46 (start-anchored) both ends of v04 are tested by list and
+neither fits; the stretch stays unread. No token, grade or class change.
