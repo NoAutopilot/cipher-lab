@@ -3227,3 +3227,30 @@ By eye, provisional:
   Italian clear pages (fol. 173-174). c325: a docket.
 - **Not yet shown:** that fol. 175 renders f.176r's cipher rather than one of Desportes's three other letters of 22 July (f.186 to
   Aldobrandini, f.189 to Frachetta; f.184 is already f.188's). That alignment gate is H170's first step. No key, no reading.
+
+## Campaign step H170 (28 Sept 2026, 22:40-23:00 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- alignment gate FAIL (not shown)
+
+Pre-registered in `family/passes/PROMPTS_f176_f175.md` with the scorer `family/h170_gate.py` (pushed 46228d45 before any call).
+Native f.176r (canvas 327) and fol. 175r (canvas 326), fetched once each (2 Gallica requests, 200; not committed, 4-5 MB each),
+plus one 2000-px f.176r (1 request, superseded by the native and deleted). Crops: `family/sheets/f176r/` (4 cipher rows, native
+px, about 117 px high), `family/sheets/f175r/` (8 clear lines). Three Opus vision calls:
+- blind sign passes A/B of f.176r L01-L04 (`passes/f176r_signs{A,B}_h170.tsv`): 261 / 263 rows (PLAIN at the start of L01, not
+  read). Every sign graded m or l. The passes disagree on major classes: A codes 27 ZHOOK where B codes 24 C43, and B has
+  HASH4 10 / 4STEM 10 where A has 4PI 9. Not reconciled (the gate scores each pass separately).
+- blind read of fol. 175r L01-L08 (`passes/f175r_clearA_h170.tsv`, 688 letters; lines graded l/m): "Depuis [mon] [dernier]
+  decembre, on no^s a propose Larchiduc ... apres on no^s a presse de voulloir promptemen declarer Roy et proprietaire de ceste
+  couronne, l'Infante et celluy [qu'elle] ... prenne francois quil plairoit au Roy despagne ...".
+
+`h170_gate.py` (result `family/h170_gate_result.txt`, `--check`):
+
+| pass | signs (v4 coverage) | N | fol. 175r | wrong: f.184r @0 / @120 | 200 permuted keys mean / p95 / max | gate |
+|---|---|---|---|---|---|---|
+| A | 260 (0.87) | 208 | 0.399 | 0.413 / 0.361 | 0.319 / 0.404 / 0.433 | FAIL |
+| B | 261 (0.95) | 208 | 0.385 | 0.452 / 0.389 | 0.334 / 0.413 / 0.471 | FAIL |
+
+**GATE FAIL on both passes: that fol. 175r renders f.176r's head is not shown.** The candidate does no better than another letter
+of the same writer and day, or than permuted keys. This is not a negative on the pairing. The scorer's power at N = 208, on two
+unreconciled m/l-grade passes, has no positive control (rule 3: a failure needs a matched control that reads). Two other readings
+remain open: fol. 175r may render a different 22 July letter (f.186r or f.189r); or it may begin at a different point from
+f.176r's first cipher row (the DP is local on the signs but must consume all N letters). No key rows, nothing merged. Row H173
+(the scorer's positive control on the known pair f.188r/f.184r, script-only on disk) is added, and H170's continuation waits on it.

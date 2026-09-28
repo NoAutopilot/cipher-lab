@@ -1,0 +1,4 @@
+key v4 classes 22; f175 letters read 688
+pass A: signs 260 (key coverage 0.87), N 208; f175 0.399; wrong f184@0 0.413, f184@120 0.361; permuted mean 0.319 p95 0.404 max 0.433; gate FAIL
+pass B: signs 261 (key coverage 0.95), N 208; f175 0.385; wrong f184@0 0.452, f184@120 0.389; permuted mean 0.334 p95 0.413 max 0.471; gate FAIL
+GATE (both passes): FAIL
