@@ -668,3 +668,26 @@ which this target has (check-solved verdict INTAKE-SPINELLI, 27 Sept).
 **Requests this step:** archives.yale.edu 4 (1 curl 403, 3 browser renders: item page 200, Filza page 503 x2),
 ead-pdfs.library.yale.edu 2 (HEAD, GET). No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
 **Cost:** browser and curl only -- recorded as 0.5 USD (the est).
+
+## Campaign step H18 (28 Sept 2026, 00:35-00:37 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H18: which GEN MSS 109 items are digitised?
+
+**Result: the pool is partly online.** The Beinecke catalogue answers curl with a 202 challenge (as INTAKE-SPINELLI
+found) but renders in headless Chromium: the search `"GEN MSS 109"` returns **92 digitised items**, parsed into
+`digitised_genmss109.tsv` (oid, title, image count, date). Among them:
+- **all four 1519 Barcelona letters of Filza 163**: 10844891 (24 Jan, 2 images), 10844888 (29 May, 4 images), 10844889
+  (6 Jul, 4 images) and ours, 10844890 (7 Sep, 3 images) -- three more letters in the same hand, same year, same
+  correspondent, not yet looked at for cipher passages (the finding aid flags only the 7 Sep letter, but its flag is a
+  cataloguer's description, not a page-by-page survey);
+- eight earlier Tommaso -> Leonardo letters, 1512-1517 (10844878/79/80/81/83/85/86/87), 2-5 images each -- 1517 Jul 22
+  (10844886, 4 images) and the undated 10844887 (5 images) fall in the years Domnina says the brothers used cipher;
+- **17296147: "Spinelli, Tommaso. 86 letters; ... 1492-1522, n.d." -- 62 images**: the b. 126 ff. 2566-87 bundle
+  named in H7 as the pool is itself (partly: 62 images against 254 pp.) digitised;
+- 10641921 Filzetta 13, Tommaso's will of 29 Aug 1522, 19 images (context, not cipher).
+Requests: collections.library.yale.edu 2 (1 curl 202, 1 browser render). No credentials, no AskUserQuestion, rule 10
+wording, no other target touched. **Cost:** recorded as 0.3 USD (est 0.5).
+
+**Consequence:** the campaign's material is no longer one letter of 265 signs. Next: H19 (the three other 1519
+Barcelona letters, manifests + page images, direct look for cipher lines, 6 requests), then H20 (the 86-letter
+bundle's manifest and a first look at its 62 images, in request-capped batches).
