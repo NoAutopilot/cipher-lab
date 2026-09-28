@@ -3207,3 +3207,30 @@ the base rate leaves no headroom (rule 3, headroom clause). Neither Department t
 alphabetical one-part codes). So no period table on file is a real instance of family C; H27's synthetic slot design
 stays the only family-C control, and this step gives it no period grounding. No reading, no class change; nothing
 called new or first. Vision 0, requests 0. Cost: about 0.5 USD (`--spend` records 0.5).
+
+## Campaign step H49 (28 Sept 2026, to 15:03 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Question:
+do the target and the Madrid legation cipher share a particle list (the same values 1-99 used at the same rates)?
+H38's screen used the commonest legation values, all >= 100; the particle block alone was never compared. Offline.
+
+**Test** (`h49/particle_list.py`, output `h49/output.txt`): Spearman rho between the target's count of each value
+1-99 and a reference stream's count of the same value, over all 99 values; null = the reference's counts permuted over
+the values, 5,000 draws. Streams: target 369 groups (132 below 100, 48 distinct); legation usage 1,738 groups (h32 +
+h42 + h47 with the duplicate guard; 174 below 100, 64 distinct); WE028 usage (h29, Erving to Monroe 1806; 12 below
+100) as a negative reference. Control (power at the target's N): 50 windows of 369 groups from the legation stream,
+each against the rest of the stream.
+
+| comparison | rho | null p95 | p |
+|---|---|---|---|
+| target vs legation | +0.002 | +0.172 | 0.50 |
+| target vs WE028 usage | -0.093 | +0.169 | 0.82 |
+| control: legation 369-windows vs rest | mean +0.284 | -- | clear their null p95 in 39 of 50 |
+
+**Result: MISS, control-backed** (78 percent power at N=369; the windows share their letter's vocabulary with the
+neighbouring rest of the stream, so that figure is if anything optimistic). The target does not use the legation
+cipher's low values the way the legation letters do, so no shared particle list; and the shares differ outright
+(36 percent of the target's groups are below 100, 10 percent of the legation's). With H38 (commonest values) and H48
+(no particle block in the legation code), the Madrid legation cipher is excluded as the target's code or its
+particle source at every level tested. No reading, no class change; nothing called new or first. Vision 0, requests
+0. Cost: about 0.5 USD (`--spend` records 0.5).

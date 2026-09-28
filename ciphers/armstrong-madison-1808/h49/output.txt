@@ -1,0 +1,4 @@
+streams: target 369 groups, legation 1738, WE028 Erving-Monroe 250
+target vs legation	low-value tokens 132 vs 174	distinct 48 vs 64	rho +0.002	null p95 +0.172	p 0.4958
+target vs WE028 usage (negative reference)	low-value tokens 132 vs 12	distinct 48 vs 7	rho -0.093	null p95 +0.169	p 0.8174
+control: 369-group windows of the legation stream vs the rest: rho mean +0.284, clear their null p95 in 39/50
