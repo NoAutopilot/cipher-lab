@@ -1,0 +1,4 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+END
+SEGMENTED: a ter der esponder ian en la segunda iunta a a areto les adiieron que lleuaban que si quide uiantabi lla doctrina in qua sunt multa contradictorias

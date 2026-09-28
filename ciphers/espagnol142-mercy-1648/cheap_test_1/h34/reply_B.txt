@@ -1,0 +1,4 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+END
+SEGMENTED: oforde uartugol sucuneso aquien ello quisiese aepponde aque teneo orden desionde para slruor asmen cuanta lemos dose para pedir ninguna pade emiasy sepridoe esdedrses lcanicnenosootoas recibi estos emanales caias y con el correo lose
