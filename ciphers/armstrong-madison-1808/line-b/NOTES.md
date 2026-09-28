@@ -752,3 +752,13 @@ whose pass-to-pass disagreement is under 10 percent (two blind passes on native 
 the third witness), then the same solver -- the row for that is the campaign's H15 territory (the runner's H15 done
 line of 06:0x UTC counts the differences between the two mark transcriptions) and is left to it. Requests: none;
 0 subagents; about 60 minutes of CPU across four relaunches.
+
+## Step B34 (28 Sept 2026, 06:2x UTC) -- word-sign reading: dropped on the run-length numbers before any solver
+
+If every glyph were a word sign, the 28 fragments would be 1-31 words each (mean 9.2) with no letters at all -- a
+31-word stretch written entirely in signs for common words, inside a letter whose content words are coded as numerals,
+does not occur in the en18 band (B29: function-word stretches run 4-7 letters, i.e. one to two words; the longest
+fragments would need ten to thirty consecutive sign-words). The only surviving word-sign reading is the mixed one
+(word signs for common words plus letters for the rest), which has no control-first design at this transcription's
+reliability (B33). Dropped, one clause: the pure word-sign reading is excluded by B29's lengths, the mixed one is
+untestable until the glyph transcription is under 10 percent disagreement.
