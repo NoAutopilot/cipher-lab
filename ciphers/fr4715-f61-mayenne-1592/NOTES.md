@@ -3430,3 +3430,25 @@ e 3, i 2, d 2 of 16: mixed, a different glyph from the i-sign, undecided. Agreed
 1.6x the length, and VBAR_A's partner letter now shows as g (4), Tomokiyo's g/t cell. Descriptive against f.61 as before: VBAR_A t
 (6 two-way tokens), EBR l (4), HASH4 d/q (1), 4STEM p/c (1), BETA m (2). Nothing merged. Remaining for H177b: f.176r L20-L47 against
 fol. 177v-178r (bands not yet cut), then f.176v.
+
+## Campaign step H179 (28 Sept 2026, 23:05 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- does f.176r's narrowing hold on f.61 and f.108r? (script-only)
+
+`family/narrow_v4_f176.py` (pre-registered in its docstring, pushed before the run) builds a TEST key `family/key_period_v4n176.tsv` (not
+v4, not a merge): v4's rows with VBAR_A narrowed to t/g, EBR (EBR, EBR_A, EBR_B) to l, 4STEM to p/c and HASH4 to d/q, as f.176r's period
+decipherment reads them (H177b). `test_period_key.py --key key_period_v4n176.tsv --collapse-ebr --min 2 --frac 0.1 --sbs --perms 200`
+(`family/test_period_key_result_v4n176_frac0.1_sbs_p200_min2.txt`):
+
+| key | f.61 five known spans (55) | 200 permuted mean / p95 / max | f.108r overlay (84) |
+|---|---|---|---|
+| v4 | 48/55 | 0.319 / 0.436 / 0.527 | 65/84 |
+| v4 narrowed on all four | **48/55** | 0.290 / 0.400 / 0.564 | **57/84** |
+
+One class at a time (20 permutations each, counts only): VBAR_A t/g: f.61 48, **f.108r 67 (+2)**; HASH4 d/q: 48, 65 (0); 4STEM p/c: 48,
+62 (-3); **EBR l: 48, 58 (-7)**.
+
+Reading. On f.61's 55 known letters nothing is lost: these cells barely occur in Tomokiyo's spans, so f.61 cannot test them. On f.108r,
+in the Mayenne secretary's hand, the transfer is class by class: **VBAR_A = t transfers and improves the overlay (+2), HASH4 = d/q is
+neutral, 4STEM = p/c (-3) and above all EBR = l (-7) are contradicted.** The EBR loss has a known cause. f.176r's readers could not tell
+EBR_A from EBR_B and coded every bracket EBR_B. v4's f.101r rows split them, with EBR_A reading s 18, l 13, a 8, so "l" is one form's
+value, not the class's. Conclusion for a verifier: f.176r's rows are a period key for Desportes's hand. Only VBAR_A's t, and HASH4's d/q
+(already H162), carry over to the Mayenne hands by this test. No class change, nothing merged.
