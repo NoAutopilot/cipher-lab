@@ -1,0 +1,11 @@
+read_call_H69.tsv: 40 rows; 40 tiles
+  tile 11 (f101r c): not scored
+  tile 28 (f101r n): not scored
+  tile 33 (f101r n): not scored
+  tile 35 (f101r a): not scored
+  group A: set A 2, set B 18  (f101r:A 1, f101r:B 8, f188r:A 1, f188r:B 10, let:c 10, let:n 2, let:p 8)
+  group B: set A 9, set B 0  (f188r:A 9, let:a 3, let:n 6)
+  group C: set A 4, set B 1  (f101r:A 4, f101r:B 1, let:a 3, let:c 1, let:n 1)
+  group D: set A 2, set B 0  (f101r:A 2, let:a 1, let:n 1)
+scored 36 (A 17, B 19); groups 4; observed 33/36; permutation P = 0.0000 over 2000 (seed 1); p95 24/36
+GATE: PASS

@@ -1765,3 +1765,33 @@ b/o is period-attested at grade C on both halves, matching the table's own b/o c
 
 H68 dropped: its "prior" (period o vs b counts under SBS) would be French letter frequency (o about six times b) and
 adds nothing a verifier does not already bring to L10 positions 6/11.
+
+## Campaign step H69 (28 Sept 2026, 14:47-14:58 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+Is the readers' 4TRI class (atlas: "a 4-shaped element with a crossbar above a small triangle or V") one glyph, given
+that the period gloss puts letters of two table cells under it (a/n and c/p)? Design pre-registered and pushed
+959055ff before the call: `scripts/f61sbs.py build-pair NATIVE 4TRI a,n c,p 69 h69` (the H65 recipe generalised; pass A
+must agree on 4TRI), 10 a/n + 10 c/p tokens per leaf (f.101r matched 161 a/n / 58 c/p, f.188r 14 / 21), 40 tiles
+`images/h69/pair_sheet1-4.jpg`, key `scripts/f61pair_h69_tiles.tsv`; a 4-shape prompt (`scripts/PROMPTS.md` "H69"); one
+blind Opus vision call. Four tiles none (f.101r x misplacements: empty space, a rule, an 8-like and a w-like sign).
+
+| reader's group | a/n (set A) | c/p (set B) |
+|---|---|---|
+| A closed triangle on the stem below the crossbar | 2 | 18 (c 10, p 8) |
+| B tall open hook from the crossbar end (f.188r only) | 9 | 0 |
+| C open r/7 stroke beside the 4 (f.101r only) | 4 | 1 |
+| D closed loop at crossbar height (f.101r only) | 2 | 0 |
+
+Scored 36 (A 17, B 19): observed 33/36, permutation P < 0.0005 (0/2000), p95 24/36 (the p95 is taken over the reader's
+own four groups, so the extra groups are paid for) -> **GATE PASS** (`scripts/f61pair_h69_result.txt`, `--check` OK).
+Per leaf: f.188r 19/20, f.101r 14/16. What it licenses: the 4-over-triangle glyph is the c/p cell in both hands, as the
+table draws it; the a/n tokens the family readers also coded 4TRI are a different, hand-specific 4-with-hook form
+(f.188r a hook from the crossbar end; f.101r an r/7 stroke or a loop beside the 4) -- a reader merge like SBS, not
+polyphony across two cells. The key's "4TRI n/a/c/p" wide set (H57's control failure named it) is two glyphs. Not
+applied to any f.61 cell here (whether f.61's own 4TRI signs carry the triangle is a separate test: H72). No reading,
+no class change; nothing solved, new or first.
+
+Reader's criterion verbatim: "the groups split by where the right-hand element attaches and whether it closes: A has a
+small closed triangle on the stem below the crossbar; B has a tall, mostly open hook hanging from the crossbar's right
+end; C has an open r/7 stroke beside the 4 at crossbar height with nothing on the lower stem; D has a closed round loop
+at crossbar height."
