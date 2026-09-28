@@ -625,3 +625,23 @@ used evenly, heads not the commonest function words, runs carrying connective ma
 glyph solver run with the hypothesis that the runs spell function words (a small closed vocabulary), the one model
 the ChatGPT space/components attacks did not try (they assumed letters or names); logged as a proposal for the
 orchestrator, not run here (it needs a control-first design of its own). Requests: none; 0 subagents.
+
+## Step B28 (28 Sept 2026, 04:46-04:5x UTC) -- the three mark inventories are two: the codex/ChatGPT glyph file is Tomokiyo's own labelling re-tokenised
+
+Tomokiyo's symbol sheet (`cryptiana.web.fc2.com/code/madison_armstrong_graphic.png`, sha256 870a2831..., 1 request,
+read by this session) lists 38 labelled types with totals: 00:1, 02:2, 10:3, 12:3, 14:4, 16:9, 18:9, 20:(cut off in
+the sheet; 40 by subtraction from 257), 22:15, 23:13, 24:8, 26:4, 28:7, 29:7, 32:3, 33:12, 34:6, 35:16, 36:20, 38:12,
+40/42/44/46/47/48:1 each, 60:6, 62:5, 64:8, 65:19, 66:3, 68:1, 70:2, 72:5, 73:4, 74:1, 76:2, 78:1. The codex
+`glyphs.txt` (257 tokens, 28 fragments, "36 types") uses exactly these labels: 20:37, 36:21, 65:18, 35:15, 22:13,
+33:12, 23:12, 18:11, 38:11, 64:10, 16:9, 34:9, 29:9, 24:7, 60:6, 26:6, 28:5, 72:5, 62:5, 14:4, 32:4, 76:4, 73:4, 10:3,
+66:3, 12:2, 70:2, 48:2, seven singletons; types 00 and 02 (dots) dropped. Agreement per type: 16 of 36 exact, the
+rest within 1-3 tokens (18: 9 vs 11; 22: 15 vs 13; 26: 4 vs 6; 28: 7 vs 5; 29: 7 vs 9; 34: 6 vs 9; 64: 8 vs 10; 76: 2
+vs 4), i.e. one reader re-tokenising the other's scheme, not an independent inventory. So every glyph attack on file
+(codex ARM-GLYPHS/PIECES/GLYPH-ALT, the ChatGPT space and components models, campaign H2/H3) rests on Tomokiyo's
+38-type segmentation. The repository's only independent inventory is ARM-S1/S2's (two Sonnet passes, 35-47 raw
+shapes, reconciled to 12 classes R1-R12 in `images/shorthand/INVENTORY_reconciled.tsv`), whose dominant class R1
+(75 tokens, "low horizontal wave, dominant filler stroke") merges Tomokiyo's 20 + 22 + 23 (37-40 + 15 + 13 = 65-68
+tokens): the one substantive disagreement between the two schemes is whether the wave strokes are one class or three
+(one, two and three humps). No reading; done. What it changes: an alphabet of 36 for a glyph solver is Tomokiyo's
+choice, and a solver should be run under both segmentations (36 types; 34 with the waves merged) before a negative
+on either is called a design negative. Requests: cryptiana 2; 0 subagents.
