@@ -2791,3 +2791,20 @@ with a/n costs little; and EBR_A on these drafts is mixed (s 18, l 13, a 8), so 
 classes are clean, the pool confirms f.61's assignments one swap at a time -- including c/p vs d/q (4TRI <-> 4PI), which f.108v
 could not test (H105). No noise scale was pre-registered, so differences under about 0.002 are reported, not judged. No
 reading, no class change.
+
+## Campaign step H133 (28 Sept 2026, 19:11-19:13 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_period.py --ext` (option pushed 129e0e0f before the run; `f61beam_period_ext_result.txt`): H130 with KEY.md's
+period equivalences for this hand added to the map (LOOPS = h/u, H24 = i/x, ZBAR = f/s).
+
+| leaf | scored | beam right | always-first-letter |
+|---|---|---|---|
+| f.101r | 1,420 | 1,047 = 0.737 (H130 0.695) | 0.561 |
+| f.188r | 588 | 465 = 0.791 (H130 0.760) | 0.529 |
+| pooled | 2,008 | 1,512 = **0.753** (H130 0.716) | 0.551 |
+
+**GATE (>= 0.80 on >= 100): FAIL**, closer: coverage up by a third and accuracy up about 4 points on both leaves together,
+as H130 predicted (context was a limit). Logged as the beam's accuracy against the period gloss at this alignment: 0.75,
+about 20 points over the first-letter baseline on 2,008 positions. A third pass at this gate with another tweak would be
+the rule-3 "same knob" pattern; the remaining gap is at least partly the automatic gloss alignment, which only a cleaner
+alignment (or a person's gloss reading) can remove. No reading, no class change.
