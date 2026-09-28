@@ -2697,3 +2697,11 @@ The sequence-gain statistic behaves as a null on shuffled text (one shuffle in 2
 stand as gates: f.108v is enciphered in f.61's 14 cells (rank 1 of 201, gain about twice the best permuted), with f.108r's
 L04-L06 thinly the same. This is evidence about the cell map on the family leaves, not a reading of any leaf; the within-pair
 letters are the beam's (about 0.86 right on known text, H116/H121) on a grade-M transcription. No class change.
+
+## Campaign step H125 (28 Sept 2026, 18:41 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe) -- dropped before any run
+
+f.61r's cipher runs outside Tomokiyo's spans are 17 signs on disk (`scripts/passU1/U2_classes.tsv`: L02 2-3, L04 1-2, L10 13),
+of which the 14-cell map covers 7-8 (L10: PHI VBAR_A PHI PHI VBAR_B INF PHI; CA, C6, EBR and OTHER outside it). No rank or
+sequence-gain statistic can be run on 7 letters with a control at the same length (rule 3), and the one thing the beam could
+emit -- seven letters of L10 -- is the fragment audit 1 already weighed (AUDIT.md "Fragment L10"). Dropped: no step can test
+anything here; f.61's own unread text is inside the span lines, where Tomokiyo's letters already stand.
