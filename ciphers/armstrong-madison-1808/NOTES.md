@@ -2629,3 +2629,19 @@ each) plus this runner's three looks (the control comparison, frame 403, one she
 no cost figure; four Sonnet calls of that size are about 5 USD by H21's rate plus this runner's reads -- `--spend`
 records the row's 6. Files: `h31/MANIFEST.tsv`, `h31/sheets.py`, `h31/reads/` (4 TSV, one row per frame); PDFs,
 sheets and native renders in scratch only (609 MB), refetch per the manifest.
+
+## Second-opinion checkpoint (SO-ARMSTRONG-CHECKPOINT 01:50, 28 Sept 2026)
+
+Landed from PR 62 (`second-opinions/chatgpt-checkpoint-2026-09-28-0150.md`, PR-LAND-24). A runner checkpoint
+report, not a leads-prompt answer or a reading; every citation below is a claim to verify, never a fact --
+unchecked.
+
+- lead; Adams diary, manuscript p457, 14 Feb 1813 (primarysourcecoop.org, editorial text and page image both read) is read as saying Adams gave Delprat two copies of a letter to the US chargé d'affaires at Paris, one enciphered to forward if detained, one plain to deliver personally -- unchecked.
+- lead; Adams diary, manuscript p490, 15 June 1813 (primarysourcecoop.org) is read as saying Delprat, detained at Vienna, forwarded the cipher copy by post, and Adams's 14 June answer reported no key at Paris; does not name the predecessor or the table -- unchecked.
+- archival-route; MHS OAC131078, Adams to the chargé d'affaires at Paris, St Petersburg, 12 Feb 1813, letterbook copy reel138, catalogued with "[David B. Warden]" in brackets, named as the candidate locator for the Delprat dispatch; neither the letterbook pages nor a received cipher/plain pair were obtained -- unchecked.
+- lead; Ford, *Writings of John Quincy Adams* vol4, Adams to John Speyer, 20 Apr 1813, pp474-475 (archive.org, printed pages visually read) is read as saying the legation's seal, cipher and archives properly remain with Barlow, questioning both Barlow's and Warden's authority to act as chargé -- unchecked.
+- lead; same volume, Adams to Secretary of State, 16 Feb 1813 no106, pp441-444 (archive.org, printed pages visually read) is read as explaining Romanzoff's request to locate Russian embassy archives deposited with Joel Barlow, and Adams's own wish to learn who handled US affairs after Barlow's death -- unchecked.
+- archival-route; MHS OAC131142, Warden to Adams, Paris, 4 March 1813, reel415, the sole hit of an author-scoped catalogue query for Warden 1 March-14 June 1813; text not obtained, not asserted to be the cipher-key reply -- unchecked.
+- next-step; the checkpoint's own next bounded action is to identify and read the incoming Paris answer Adams received 14 June 1813, searching both T. Barlow and Warden via MHS catalogue and printed sources, checked against the OAC131078/reel138 outgoing letter -- unchecked.
+
+No check-solved candidate (no printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key is named).
