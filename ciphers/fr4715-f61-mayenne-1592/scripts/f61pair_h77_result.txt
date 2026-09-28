@@ -1,0 +1,15 @@
+read_call_H77.tsv: 40 rows; 40 tiles; statistic stratified by leaf
+  tile 2 (f101r o): not scored
+  tile 5 (f101r o): not scored
+  tile 8 (f101r u): not scored
+  tile 11 (f101r o): not scored
+  tile 14 (f101r u): not scored
+  tile 30 (f101r o): not scored
+  tile 33 (f101r u): not scored
+  tile 38 (f101r u): not scored
+  group A: set A 14, set B 1  (f101r:A 14, f101r:B 1, let:o 14, let:u 1)
+  group B: set A 0, set B 15  (f101r:B 15, let:u 15)
+  group C: set A 1, set B 0  (f101r:A 1, let:o 1)
+  group D: set A 1, set B 0  (f101r:A 1, let:o 1)
+scored 32 (A 16, B 16); groups 4; observed 31/32; permutation P = 0.0000 over 2000 (seed 1); p95 22/32
+GATE: PASS

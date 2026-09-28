@@ -1914,3 +1914,33 @@ in the period key's top 3 for the class on a leaf with n >= 5, {K1} one letter, 
 P1 2 ([g/t] t, [f/s] s), K 4 ([l/y], [e/r] x2, [h/u]). The tag grades the cell, not a letter choice within it, and
 not Tomokiyo's letters (still grade M as a reading); the two F positions are his a and n on C6 signs, a class his own
 markup elsewhere leaves as a dash (H44's null list). No reading, no class change.
+
+## Campaign step H77 (28 Sept 2026, 14:55-14:58 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+The family readers' LOOPS class (their atlas: "a chain of two or more small loops written side by side with NO stem")
+takes u 158 / o 31 / h 17 on f.101r. Pre-registered and pushed 911b7d48 before the call: `build-pair NATIVE LOOPS o u 77
+h77 20 --rc 20,-10,35` (f.101r only: 20 o, all matched, and 20 of 105 u; f.188r has no LOOPS under o), 40 tiles, a
+loop-chain prompt (`scripts/PROMPTS.md` "H77"). One blind Opus vision call; 8 tiles none (x/row misplacements, as the
+pre-registration expected).
+
+| reader's group | o | u |
+|---|---|---|
+| A three loops, a stem from under the middle junction ("oqo") | 14 | 1 |
+| B loops crossed or joined by a horizontal bar, no stem | 0 | 15 |
+| C plain loops, no stem or bar | 1 | 0 |
+| D a tail from the last loop | 1 | 0 |
+
+Scored 32: observed 31/32, permutation P < 0.0005 (0/2000), p95 22/32 -> **GATE PASS**
+(`scripts/f61pair_h77_result.txt`, `--check` OK). One hand (f.101r). What it licenses: the f.101r readers' LOOPS class
+is two glyphs, both matching atlas classes the f.61 and f.188r readers already keep apart -- under period o the
+stemmed form (two loops side by side on a stem, with a neighbouring loop in the chain: the SBS glyph of H26/H65,
+b/o), under period u the barred stemless pair (the INF sign, "an infinity sign or figure-8 lying on a horizontal
+bar", h/u, which f.188r's readers code INF with u 23). So the family key's LOOPS u/o/h triple is a coding merge of
+SBS and INF, not a further polyphony; for the family worker's key rebuild (H52), LOOPS-under-o joins the SBS
+evidence (period o now attested in a third coding of the same glyph) and LOOPS-under-u joins INF. That the "oqo"
+reading counts three loops (one of them the next sign) is the reader's framing; the stem from the junction is the
+SBS mark. No reading, no class change; nothing solved, new or first.
+
+Reader's criterion verbatim: "group A is three loops with a stem from under a junction ("oqo"); group B is loops
+crossed or joined by a horizontal bar with no stem ("θθ-"); group C is plain loops with no stem or bar; group D is a
+chain whose tail comes from its last loop."
