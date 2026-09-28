@@ -1,0 +1,32 @@
+== (0) H41 as run: every non-S token wild
+window: yeoneop?radlonburgs?rfs?cmare?mayorpara?ienseiembiancartasdecr
+402 forms; best burgsdorf fit 7 (7 agree, 0 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorf	7	7/0	r16:16
+  bnrgsdorf	5	6/1	r16:16
+  hurgsdorf	5	6/1	r16:16
+  brandenburg	4	7/3	r16:9
+  garantie	4	5/1	r17:16
+== (a) only nomenclature 48/52/65/72 wild (9, 15, 25 fixed at key letters)
+window: yeoneopuradlonburgs?rfsucmare?mayorpara?ienseiembiancartasdecr
+402 forms; best burgsdorf fit 7 (7 agree, 0 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorf	7	7/0	r16:16
+  bnrgsdorf	5	6/1	r16:16
+  hurgsdorf	5	6/1	r16:16
+  garantie	4	5/1	r17:16
+  oranien	4	5/1	r17:17
+== (b) only 72 wild
+window: yeoneopuradlonburgs?rfsucmareymayorparadienseiembiancartasdecr
+402 forms; best burgsdorf fit 7 (7 agree, 0 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorf	7	7/0	r16:16
+  bnrgsdorf	5	6/1	r16:16
+  hurgsdorf	5	6/1	r16:16
+  altenburg	3	6/3	r16:11
+  brandenburg	3	7/4	r16:9
+== (c) nothing wild (72 = z)
+window: yeoneopuradlonburgszrfsucmareymayorparadienseiembiancartasdecr
+402 forms; best altenburg fit 3 (6 agree, 3 disagree) at r16:11; ties 7; P 0.017; candidate: False
+  altenburg	3	6/3	r16:11
+  brandenburg	3	7/4	r16:9
+  nouburg	3	5/2	r16:13
+  oranien	3	5/2	r17:17
+  orauien	3	5/2	r17:17

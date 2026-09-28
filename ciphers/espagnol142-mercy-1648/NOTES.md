@@ -2122,3 +2122,20 @@ observation), and `candidates/make_candidates.py [--check]` writes `candidates/r
 line under key.tsv (K) and, where a candidate applies, the same line with it in braces (C):
 r16 "GYEONEOPURADLONBURGS{do}", r17 "RFSUCMARE{ro}MAYORPARA{qu}I", r24 "TRE{sr}EGIMIENTIYCONQUE". --check passes.
 reading.txt, key.tsv and every grade are unchanged; the file's header says these are candidates, not a reading.
+
+## Campaign step H53 (2026-09-28 16:11 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Robustness of H41 to its wildcard set: the same 402-name list and window (r16:2-r18:21)
+through `tools/crib_list_fit.py` with fewer wildcards (`h53/result.log`):
+
+| wildcards | Burgsdorf | next real name | P | candidate |
+|---|---|---|---|---|
+| (0) every non-S token (H41 as run) | 7 agree / 0 disagree, unique best | brandenburg / garantie 4 | 0.002 | yes |
+| (a) only nomenclature 48/52/65/72 (9, 15, 25 at key.tsv letters) | 7 / 0, unique best | garantie / oranien 4 | 0.002 | yes |
+| (b) only 72 | 7 / 0, unique best | altenburg / brandenburg 3 | 0.002 | yes |
+| (c) none (72 = z) | not in the top 5 | altenburg 3 (6/3), 7-way tie | 0.017 | no |
+
+The crib does not lean on the uncertain letter codes (9, 15, 25) at all: it stands on **one assumption, that the
+nomenclature code 72 is a two-letter unit** (do); with 72 as the single letter z nothing on the list fits the stretch.
+That is the one question a period key of this office, or another letter using 72, would settle. No token, grade or
+class change.
