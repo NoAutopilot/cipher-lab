@@ -67,9 +67,15 @@ def load_fps():
 
 def git_files(outgoing):
     if outgoing:
+        # Compare against what origin actually has (FETCH_HEAD after an explicit fetch; clones made with a
+        # single-branch refspec have no origin/main ref). Fail safe: if the diff cannot be computed, scan
+        # every tracked file instead of passing on an empty list.
         subprocess.run(["git", "fetch", "-q", "origin", "main"], cwd=ROOT, capture_output=True)
-        out = subprocess.run(["git", "diff", "--name-only", "--diff-filter=AMR", "origin/main", "HEAD"],
-                             cwd=ROOT, capture_output=True, text=True).stdout
+        d = subprocess.run(["git", "diff", "--name-only", "--diff-filter=AMR", "FETCH_HEAD", "HEAD"],
+                           cwd=ROOT, capture_output=True, text=True)
+        if d.returncode == 0:
+            return [f for f in d.stdout.splitlines() if f]
+        out = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True).stdout
     else:
         out = subprocess.run(["git", "ls-files"], cwd=ROOT, capture_output=True, text=True).stdout
     return [f for f in out.splitlines() if f]
