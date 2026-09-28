@@ -407,7 +407,7 @@ check (33 vs 32, 24 vs 20, excess explained above). No reading, no class change.
 **Cost:** no subagent; this runner's own turn -- recorded as 1.0 USD (est 1.5). No network requests. No credentials,
 no AskUserQuestion, rule 10 wording, no other target touched.
 
-## Campaign step H3 (27 Sept 2026, 23:41-00:02 UTC, 27-28 Sept)
+## Campaign step H3 (27-28 Sept 2026, 23:41-00:00 UTC)
 
 Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H3: two independent blind Sonnet passes over p.[1]'s eight
 cipher lines on the v2 numbered strips (two halves each, 4 vision calls), coded against the v2 atlas, reconciled.
