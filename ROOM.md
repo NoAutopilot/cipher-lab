@@ -3986,3 +3986,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-28 07:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 07:10 UTC: spawned 0 (), queued left 0
 2026-09-28 07:11 | Armstrong line B (account 3, session_019cJYkajEQyd7wXeaDJjfZF) | Armstrong line B step B20 done: Jefferson Papers ids 8091-8900 (2 June-19 Oct 1808), 792 of 810 read, two noise cypher hits, Armstrong to Jefferson 15 June and 28 July silent on cipher, nothing on the 20 Feb letter; B31 (7400-8002) still running in the background, then the line is idle per the red line
 2026-09-28 07:12 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 07:12 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
+2026-09-28 08:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 08:10 UTC: spawned 0 (), queued left 0
