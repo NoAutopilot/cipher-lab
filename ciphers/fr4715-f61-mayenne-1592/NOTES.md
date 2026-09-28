@@ -2627,3 +2627,12 @@ f.108v, and it agrees with them. It says f.108v is enciphered in the same cells 
 (the beam's within-pair choices run at about 0.86 on known text, H116/H121, and the transcription is grade M). H123 now
 commits the beam's f.108v resolution as a pre-registered prediction before the leaf's sparse period gloss is read. No class
 change.
+
+## Campaign step H123 (28 Sept 2026, 18:27 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_f108r_predict.py --f108v` -> `scripts/f61beam_f108v_prediction.txt` (per H59 draft position: class, pair,
+beam letter), committed before f.108v's sparse period gloss is read, as a pre-registered prediction under the H122 map with
+the wider margin (14 cells + HASH4 = i/x). For scale: the pooled per-letter score of this resolution (-1.003) sits below
+fr16 real prose at the same length (p05 -0.870, median -0.781; letter-shuffled p99 -1.798, `f61judge_ngram_result.txt`),
+i.e. between shuffled text and real prose -- expected with a grade-M transcription, dropped classes and about one wrong
+choice in seven. Not a reading. No class change.
