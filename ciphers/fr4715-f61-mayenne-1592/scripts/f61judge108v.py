@@ -36,6 +36,11 @@ def lines(tag):
         for r in csv.DictReader((l for l in open(f"{HERE}/pass108gA_classes.tsv") if not l.startswith("#")), delimiter="\t"):
             if r["line"] in ("L04", "L05", "L06"): out.setdefault(r["line"], []).append(r["sign"])
         return out
+    if tag == "f108r_L04_L06_h108":   # H112: H108's reconciled draft (L06 whole); DBL -> PHI by H26 (the f.108 stacked figure-8 is G3 = e/r, 5/5); no loop relabel (H108 call 4 failed its control)
+        out = {}
+        for r in csv.DictReader((l for l in open(f"{HERE}/f61recon108r_draft.tsv") if not l.startswith("#")), delimiter="\t"):
+            out.setdefault(r["line"], []).append("PHI" if r["sign"] == "DBL" else r["sign"])
+        return out
     out = {}
     for r in csv.DictReader((l for l in open(f"{HERE}/../family/passes/f108v3z_draft_reconciled.tsv") if not l.startswith("#")), delimiter="\t"):
         out.setdefault(r["line"], []).append(r["sign"])
