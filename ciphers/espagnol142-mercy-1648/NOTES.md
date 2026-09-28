@@ -2448,3 +2448,11 @@ would run first; the crib stays a candidate. Disk only.
 (`h76/result.log`): words after "por su" (H46, 30) best "mano"/"turno" 1; words before "sera" (H55, 17) best "dicen" 2;
 the H74 onomasticon (2,702) best "relation" 4 (5 agree / 1 disagree at v04:7) -- the level read text reaches by chance
 (H71). No candidate; v04 stays unread. No token, grade or class change.
+
+## Campaign step H77 (2026-09-28 16:58 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** Of H14's out-of-vocabulary words, the ones not already worked (lonburg /
+szrfsucmarey = H41-H74, noladirent... = H46/H55/H76, eleues = Cleues, read) leave "oulay" at r10 ("... nos infume de
+oulay sepamos"). r10:1-19 ("enosinf?medeoulayse") with a free anchor against the H74 onomasticon (best "infante" /
+"remedio" 3) and the 883 Urkunden names (best "frieden" 2): nothing near the floor (`h77/result.log`). No other proper
+name surfaces by this method. No token, grade or class change.
