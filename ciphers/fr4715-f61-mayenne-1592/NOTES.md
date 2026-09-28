@@ -999,3 +999,91 @@ H35 re-runs the four passes on it. Not a reading; no class change; `key_period.t
 next runner: every prompt used is in `scripts/PROMPTS.md`; the corrected f.108v crops are on disk; the campaign's open
 rows are H35 (rank 4), H30, H31, H25, H26, H24, H33, H34, H10 (person); H28 is F61-FAMILY-2's.
 
+## Campaign step H28 (2026-09-28 01:56 UTC) -- fr.3982 f.101r period interlinear key (F61-FAMILY-2)
+
+Parent worker F61-FAMILY-2 (Fable, session_01Vs8P4sQjDByybDuR8xhQBB, brief .claude/briefs/runs/2026-09-28-parent-f61-family-2.md),
+01:18-01:5x UTC. Key source `period` (rule 10 vocabulary): every pair below is the contemporary decipherer's own word,
+aligned to the atlas-coded signs; grade C per pair, no cryptanalysis, no refit on f.61; f.61's known letters are used only as
+the held-out test. Nothing here is called solved, new or first.
+
+**Material.** fr.3982 f.101r (Bishop of Lisieux to "monseigneur", Rome, 27 Oct 1592; Gallica canvas 210 of btv1b9060543f),
+native scan refetched once (1 Gallica request, family/requests.log 01:2x UTC; sha1 313f92b3..., identical to F61-FAMILY's
+fetch). 46 cipher rows (not "about 60": the leaf carries 46 cipher rows, each with a clear line above it, plus the clear
+opening line), region 940,1440,3440,4680 native px. The cutter's ink-profile detector and a stem-density detector both
+locked onto the gloss rows on this leaf (gloss and cipher are equally heavy here), so the 46 row centres were set by hand
+from four overlay strips and cut with `family/cut_bands.py --centres ... --up 80 --down 60 --seg 760 --overlap 60 --scale 2.0`
+(140 native px tall so a row that droops up to 35 px at the right margin stays inside; segments 1520 px wide at 2x so the
+vision reader gets them undownscaled; a `--track` option was added and rejected -- it drifts onto the next gloss row).
+230 crops in family/sheets/f101r/ (24 MB, NOT committed: the family folder is at the 30 MB line; L01's five crops are
+committed as the sample and sheets/f101r/f101r_bands.json holds every box; regenerate with the two commands in
+family/MANIFEST.tsv's storage note).
+
+**Passes (28 vision calls of the 32 allowed; every prompt on disk before its call, family/passes/PROMPTS_f101r.md and
+passes/prompts_f101r/*.txt).** Six chunks of 8 bands (c6: 6 bands), 40-42 images per call. Per chunk two blind Opus sign
+passes (atlas codes only) and two blind gloss passes.
+- Chunk 1 ran on the atlas as first written: sign passes agreed 67.8% raw, with one systematic split -- pass A wrote OTHER
+  with a shape note (60 "loop chain, no stem", 38 "z-like with bar", 11 "r-like") where pass B wrote PHI / ZHOOK / BETA. The
+  atlas lacked three signs of this hand; rows LOOPS, ZBAR, RSIGN were added before any chunk-2 call and chunk 1's two passes
+  were relabelled by the rule in f101r_pipeline.py (each pass by its own text, raw files kept): 80.2% after relabel.
+- Gloss: the two Sonnet passes of chunk 1 (the brief's model) agreed on 31/122 words = 25.4% and misread the secretary hand
+  systematically ("nona" for nous, "boua" for vous, "dedublea" for dernieres) -- the f.108v failure again. Gloss moved to
+  Opus (passes C and D, same prompt text; the two Sonnet chunk-2 calls already in flight were stopped and their partial
+  output discarded; the Sonnet chunk-1 files are kept as written and not used). Opus passes agree 72.4% by identical word
+  (532/735), and both readers still write "Bona anona" where the leaf reads vous avons on L01 -- a b/v confusion the
+  alignment inherits (recorded, not corrected by hand).
+- Sign agreement over all 46 bands: 2472/3081 aligned columns = 80.2% (tools/reconcile_passes.py, nw). Per band 65-95%;
+  one band, L23, at 47/72 = 65% is under the brief's 70% line (chunk 3 as a whole 74.7%, above it) -- L23 is kept in the
+  alignment and named in H38 for a re-cut. L46's right end (s4-s5) droops out of its band with no next band to read it
+  from: both readers graded those signs l.
+- Independence caveat: the chunk-5 sign-A reader reported that another pass overwrote two of its scratch working files
+  (shared scratchpad, same file names) and that it rebuilt them from its own reading before writing its TSV; chunk-6 gloss D
+  was told to use a pass-named subfolder. Chunk 5's sign agreement (80.4%) is in line with the other chunks.
+
+**Alignment (family/align_period.py f101r; tools/interlinear_align.py --code-prefix @ --null-cost -1 --clear-consumes,
+one pair per band).** 3,077 sign tokens against the reconciled gloss (dashes and struck-through words dropped): 1,352 take
+their class's top meaning, 1,522 a secondary meaning (the polyphony plus reader class merges), 197 null. 288 (class, letter)
+rows over 27 classes -> family/key_period_f101.tsv. At n >= 2 and n >= 10% of the class's total on this leaf (the threshold
+the tests use, see below), the leaf's key reads: PHI e/r/o (742 tokens), 4TRI a/n/c (438: this hand's readers merged the
+"43" sign into 4TRI -- C43 itself a/n on only 76), VBAR_A t/s (368), LOOPS u (263; the h/u cell, f.274's INF, which also
+reads u here on 35), H24 i (235), EBR_B l (146), HASH4 d/q (108), 4STEM a/n/c/e (77, the third 4-shape merge), C43 a/n (76),
+EBR_A s/l (62), BETA m (52), ZBAR s (49), VBAR_B s (35), DBL e/r/u (29), 4PI d/n/q (15), RSIGN m/t (30), LOOPSTEM1 q (15),
+C6 e (2 -- too few to use). Against family/key_period.tsv (f.274r, same secretary hand) every shared class gives the same
+top letters (PHI e/r, C43 a/n, INF u, VBAR_A t/s, 4TRI c/p within its a/n/c/p set, EBR l, HASH4 d/q, H24 i, BETA m);
+merge_period_keys.py records two top-letter conflicts, both reader merges rather than key conflicts: 4TRI (f.274 top c, f.101r
+top n) and OTHER.
+
+**Merge.** family/key_period_v2.tsv = key_period.tsv rows + key_period_f101.tsv rows, one row per (class, letter, leaf), nothing
+summed across leaves, conflicts in the header (merge_period_keys.py). 325 rows, 24 classes.
+
+**Tests, no refit (family/test_period_key.py --key key_period_v2.tsv --collapse-ebr; 20 permuted keys, seed 1; results in
+test_period_key_result_v2*.txt).** At this token count the letter sets need a threshold: with every n >= 1 letter kept, a
+permuted key already reads 0.836 of f.61's known letters (every class carries a tail of one-off alignment letters), so
+n >= 1 and n >= 2 alone are NOT tests here (permuted max 0.836 and 0.818 against targets 0.855 and 0.800). The figure this
+step reports is the n >= 2 AND n >= 10%-of-class rule (--min 2 --frac 0.1, per leaf):
+
+| key | f.61 five known spans (55) | permuted mean / max | f.108r overlay (84) | mean / max | f.61 signs covered |
+|---|---|---|---|---|---|
+| key_period.tsv (f.274 only, n >= 2; F61-FAMILY) | 40/55 = 0.727 | 0.165 / 0.273 | 51/84 = 0.607 | 0.205 / 0.274 | 0.56 |
+| key_period_v2.tsv, n >= 2, >= 10% of class | 43/55 = 0.782 | 0.344 / 0.618 | 65/84 = 0.774 | 0.317 / 0.488 | 0.80 |
+| key_period_v2.tsv, n >= 2 (no fraction) | 44/55 = 0.800 | 0.642 / 0.818 | 69/84 = 0.821 | 0.551 / 0.690 | 0.80 |
+
+Gate (brief step 5, 0.75 on the 55 known letters): PASS at 0.782, above the permuted max (0.618) but with a thinner margin
+than f.274 alone had (0.382), because the wider letter sets help permuted keys too. Coverage of f.61's signs rises from
+0.56 to 0.80: of the seven classes named in the brief, **C6, DBL, VBAR_B and 4PI are now covered** (C6 only by 2 tokens);
+**CA, LOOPBAR and ZHOOK are not** (this hand does not use them, or its readers coded them otherwise), and CROSS and LL
+(one and two signs on f.61) are not either.
+
+**Step-5 decision.** The 0.75 condition holds but the every-class condition does not (CA, LOOPBAR, ZHOOK, CROSS, LL
+uncovered), so no "reading ready" line is posted. For the record, family/decode_period.py --key key_period_v2.tsv --frac 0.1
+writes the C/M skeleton f61_decode_period_v2_frac0.1.txt: 99 signs, C 15, C+ 8 (two leaves agree on the one letter),
+M 56 (period pair, choice by context not made), unread 20 (was C 14 / M 42 / unread 43 under f.274 alone). Not a reading of
+the letter.
+
+**Left undone, as CAMPAIGN.md rows:** L23 re-cut and re-run (H38); L46 s4-s5 droop re-cut with a taller band (H39); a blind
+shape sort of this leaf's 4-shaped signs (4TRI / C43 / 4STEM / HASH4 / H24 / 4PI) to undo the reader merges before the
+family key is used further (H40); the gloss b/v reading; the missing classes come only from another hand (H29/H31 as
+already ranked).
+
+**Calls and cost.** 28 vision calls (Opus 24: 12 sign + 12 gloss; Sonnet 4: chunk-1 gloss A/B counted, chunk-2 gloss A/B
+stopped mid-way and counted as spent), about 120-150k subagent tokens each; Gallica 1 request. Cost about USD 40 (this
+worker's own estimate; the orchestrator's get_session figure is the record).

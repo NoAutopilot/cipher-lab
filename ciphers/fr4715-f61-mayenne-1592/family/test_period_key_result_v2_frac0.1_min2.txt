@@ -1,4 +1,4 @@
-key_period_v2.tsv (pairs with n >= 2, n >= 0.1 x the leaf class total): 20 classes with letters: 4PI=d/n/q 4STEM=a/c/d/e/n 4TRI=a/c/n/p BETA=m C43=a/n CH=e DBL=e/r/u EBR=a/l/s ELOOP=r H24=i/j/y HASH4=d/q INF=h/u ISH=l LOOPS=o/u LOOPSTEM1=e/q/s PHI=e/o/r RSIGN=m/p/t VBAR_A=f/s/t VBAR_B=s ZBAR=a/s
-f.61 five known spans (55): period key 43/55 = 0.782; 20 permuted keys mean 0.290 max 0.418; classes covered 0.73 of signs (uncovered: C6 CA CROSS LL LOOPBAR ZHOOK); per span S1:3/4; S2:7/10; S3:10/12; S4a:4/7; S4b:10/11; S5:9/11
-f.108r overlay letters (84): period key 65/84 = 0.774; 20 permuted keys mean 0.293 max 0.452; classes covered 0.87 of signs (uncovered: OTHER ZHOOK); per span T1:30/39; T2:35/45
+key_period_v2.tsv (pairs with n >= 2, n >= 0.1 x the leaf class total): 21 classes with letters: 4PI=d/n/q 4STEM=a/c/e/n 4TRI=a/c/n/p BETA=m C43=a/n C6=e CH=e DBL=e/r/u EBR=a/l/s ELOOP=r H24=i/j/y HASH4=d/q INF=u ISH=l LOOPS=o/u LOOPSTEM1=q/s PHI=e/o/r RSIGN=c/m/p/t VBAR_A=f/s/t VBAR_B=s ZBAR=s
+f.61 five known spans (55): period key 43/55 = 0.782; 20 permuted keys mean 0.344 max 0.618; classes covered 0.80 of signs (uncovered: CA CROSS LL LOOPBAR ZHOOK); per span S1:3/4; S2:7/10; S3:10/12; S4a:4/7; S4b:10/11; S5:9/11
+f.108r overlay letters (84): period key 65/84 = 0.774; 20 permuted keys mean 0.317 max 0.488; classes covered 0.87 of signs (uncovered: OTHER ZHOOK); per span T1:30/39; T2:35/45
 GATE (brief step 5, 0.75 on the 55 known letters): PASS (0.782)

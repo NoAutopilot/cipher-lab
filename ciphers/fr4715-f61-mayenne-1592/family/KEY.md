@@ -102,3 +102,48 @@ signs, read blind and aligned by the shared tool, reads f.61's known letters at 
 cheap steps are new CAMPAIGN.md rows: f.101r bands (the same hand, ten times the material), f.106r/f.108v at 3x for
 the missing classes, and the f.188/f.184 pair (separate-sheet decipherment, Desportes' hand). Nothing here is called
 solved, new or first; the counts are what a verifier would check.
+
+## f.101r (F61-FAMILY-2, 2026-09-28 01:56 UTC): the same hand, ten times the material
+
+fr.3982 f.101r, Lisieux's secretary again, 46 cipher rows each with the decipherer's clear line above it. Cut by hand-set
+centres (both automatic detectors locked onto the gloss rows here), 230 crops at 2x (sheets/f101r/, sample and boxes
+committed, regen recipe in MANIFEST.tsv). Two blind Opus sign passes per chunk of 8 bands, 80.2% identical over 3,081
+aligned columns after the atlas gained three rows this hand needed (LOOPS = a stemless loop chain, ZBAR = a z with a bar,
+RSIGN = a small r-like hook; passes/PROMPTS_f101r.md); two blind Opus gloss passes, 72.4% identical by word (the brief's
+Sonnet passes read this hand at 25% and were replaced before chunk 2). Alignment as for f.274 (align_period.py), 3,077
+tokens, 288 rows -> `key_period_f101.tsv`; merged with f.274's rows into `key_period_v2.tsv` (merge_period_keys.py, both
+leaves' rows kept, nothing summed, conflicts in the header).
+
+| class | f.101r period letters (n, of class total) | f.274r | table cell | note |
+|---|---|---|---|---|
+| PHI | e 350, r 127, o 101 (742) | e 24, r 11, o 7 | e/r | o = DBL (b/o) merged by the readers, both leaves |
+| 4TRI | n 140, a 121, c 45, p 34 (438) | c 7, p 3 | c/p | this hand's readers put the "43" sign into 4TRI: a/n + c/p |
+| VBAR_A | t 138, s 93 (368) | s 11, t 7, f 4 | g/t and f/s | |
+| LOOPS | u 158, o 31 (263) | -- | h/u | new atlas row; the h/u sign of this hand (f.274's INF, u 31 here too) |
+| H24 | i 170 (235) | i 6, j 2, y 2 | i/x | |
+| EBR_B | l 104 (146) | EBR l 7 | l/y | |
+| HASH4 | d 43, q 24 (108) | d 5, q 5 | d/q | |
+| C43 | a 35, n 33 (76) | a 16, n 8 | a/n | |
+| 4STEM | n 13, a 12, c 10, e 9 (77) | -- | -- | a third 4-shape merge; see H40 |
+| EBR_A | s 18, l 13, a 8 (62) | -- | f/s | |
+| BETA | m 31 (52) | m 2 | m/z | |
+| ZBAR | s 26 (49) | -- | f/s | new atlas row |
+| VBAR_B | s 27 (35) | f 1, s 1 | f/s | |
+| INF | u 31 (35) | u 16 | h/u | |
+| DBL | e 10, r 6, u 6 (29) | -- | b/o | too mixed to use at n >= 10% |
+| 4PI | d 5, n 3, q 2 (15) | -- | d/q | |
+| RSIGN | m 11, t 5 (30) | -- | m/z | new atlas row |
+| C6 | e 2 (2) | -- | | too few |
+
+Every class the two leaves share gives the same top letters, read blind on each leaf by different sessions with no key in
+the prompt: the same secretary's decipherment is consistent across the two letters, and the pairs are the polyphonic cells
+of Tomokiyo's table (compared only after the fact). The reader merges (4TRI taking a/n, 4STEM taking a/n/c) are the readers'
+class boundaries on this hand, not the key's: a blind shape sort of the 4-shaped signs (H40) is the next step before the
+family key is refined further.
+
+Tests, no refit (`test_period_key.py --key key_period_v2.tsv --collapse-ebr --min 2 --frac 0.1`, 20 permuted keys): f.61
+known spans 43/55 = 0.782 (permuted mean 0.344, max 0.618), f.108r 65/84 = 0.774 (0.317 / 0.488); f.61 signs covered 0.80
+(was 0.56). Without the 10%-of-class rule the letter sets are wide enough that a permuted key reads 0.818-0.836 of the known
+letters, so the plain n >= 1 / n >= 2 figures (0.855 / 0.800) are not tests at this N. Still uncovered on f.61: CA, LOOPBAR,
+ZHOOK (plus CROSS, LL); C6, DBL, VBAR_B, 4PI now covered. `f61_decode_period_v2_frac0.1.txt`: 99 signs, C 15, C+ 8, M 56,
+unread 20 -- a skeleton, not a reading.
