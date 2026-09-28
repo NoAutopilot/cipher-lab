@@ -2091,3 +2091,24 @@ is first), substituted at both occurrences (r17:20, r20:15), word-segmentation g
 p95 +2.11. No three-letter value, "que" included, reads better than d at both places; with H45 (best two-letter "qu",
 +4.42 but -0.55 at r20) that closes the value search for 48 by this instrument: 48 stays d (M). H49's "para quien se"
 remains an observation at one occurrence only. `h50/result.log`. No token, grade or class change.
+
+## Campaign step H51 (2026-09-28 16:08 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Context corroboration only.** The remaining *Urkunden und Actenstücke* volumes, Bd. 1
+(1864), 2 (1865), 3 (1866) and 6 (1872) (IA `urkundenundacten0{1,2,3,6}berluoft` _djvu.txt; archive.org 4 requests),
+grepped for Burgsdorf within three lines of spani-/Leopold/Erzherzog/Brüssel/Mercy/Werbung/Infanterie/1648
+(`h43/h51_hits.txt`; Burgsdorf occurs 57 / 20 / 1 / 18 times). Eight hits; the relevant ones:
+
+- **Bd. 2 (French side), Cleve, January-February 1648:** Wicquefort to Lionne, "Dat. Cleve 14. Jan. 1648 -- Burgsdorf
+  und ein anderer Vertreter der 'guten Partei' an diesem Hofe zu Gratificationen vorgeschlagen"; Schwerin to Wicquefort,
+  Cleve 20 Feb 1648, calling him "M. le grand-chambellan" (the French for Oberkammerherr, i.e. camarero mayor), and the
+  editors' note that the Elector's Oberkammerherr Conrad von Burgsdorf was then working on a "third" armed party in the
+  Empire with the Brunswick courts and Saxony.
+- **Bd. 1:** a copy sent to Conrad v. Burgsdorf "nach Cleve" (Königsberg, 7 Oct 1648): he was at Cleves in 1648.
+- No passage names Mercy, a Spanish envoy, or a Spanish request for troops through Burgsdorf; Bd. 3 has nothing; Bd. 6
+  only a 1651 mission.
+
+So in the months around 6 June 1648 the Elector's court sat at Cleves, Burgsdorf was its chief chamberlain and the
+man foreign courts approached (the French proposing to pay him), which is what the H41-H42 crib has the Brussels court
+telling Mercy to do. Corroboration of plausibility, not of the reading; absence of a Spanish passage refutes nothing.
+No token, grade or class change.
