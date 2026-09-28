@@ -1,0 +1,5 @@
+family pool ZHOOK signs: 5
+i/x vs a/e: i/x wins 11/30 -> OPEN
+i/x vs a/u: i/x wins 0/30 -> a/u PREFERRED
+i/x vs e/u: i/x wins 1/30 -> e/u PREFERRED
+i/x vs null: i/x wins 2/30 -> OPEN

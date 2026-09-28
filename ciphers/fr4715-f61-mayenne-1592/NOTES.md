@@ -3071,3 +3071,12 @@ leaning d/q); i/x vs null: 20/30 (OPEN).** On f.108v the family value d/q leans 
 (H118/H119, itself only a lean, H154) -- consistent with the passes' HASH4 lumping two forms (bare hash, period i; 4-over-hash,
 period d/q, H98) in different proportions on the two leaves. Nothing decided; a sign-shape split of HASH4 on these leaves
 (the H98 tile design) is what would separate them. No reading, no class change.
+
+## Campaign step H161 (28 Sept 2026, finished 20:17 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61zhook_pool.py` (pushed 7901599c before the run; `f61zhook_pool_result.txt`): the H157 ZHOOK test on the family
+pool. The pool carries **only 5 ZHOOK signs** in 9,611 (the family passes code this hand's z-shapes as ZBAR, f/s by KEY.md).
+By the pre-registered wording a/u (i/x wins 0/30) and e/u (1/30) come out "preferred" and a/e, null open -- but on five signs
+a bootstrap resamples the same handful of positions, and each swap moves at most five letters in 8,500: a test with almost
+no power (rule 3's "control that cannot vary" shape at this n). **Logged as untestable on the pool at n = 5**, not as
+evidence against i/x; H157's f.108v result (20 signs, 30/30 for i/x) stands for f.61's hand. No reading, no class change.
