@@ -3382,7 +3382,7 @@ f.61's five rare classes (3 tokens, unread under v4), with no period reading unt
 same glyph as f.61's ZHOOK signs (the atlas's shape description is shared, the hands differ). H178b tests that link by a blind tile
 match before anything is proposed for f.61. Nothing merged. BETA/LOOPSTEM1 -> m (5 of 8) supports BETA = m.
 
-## Campaign step H178b (28 Sept 2026, 23:0x-22:58 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- tile link f.176r i-sign / f.61 ZHOOK: NO LINK by the gate
+## Campaign step H178b (28 Sept 2026, 22:55-22:58 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- tile link f.176r i-sign / f.61 ZHOOK: NO LINK by the gate
 
 Tiles, key and prompt pre-registered in `scripts/H178B_PROMPT.md` (4dfffe1c), with the gate amended before the call: centre sign or
 'unclear'. The tiles are `images/h178b/tiles.jpg`, built by `scripts/h178b_tiles.py`: f.61r's 3 ZHOOK and 6 C43 signs located by the
