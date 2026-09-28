@@ -1747,3 +1747,12 @@ letter-shaped, but neither passes a significance line the other way either. Powe
 spread is +-0.12 to 0.22 per trigram, so only a large word-code effect could have shown. The stretch's letters
 without the three tokens ("gyeoneopuradlonburgsrfsucmaremayorparai") read no better than with them. The word-code
 question for 48/52/65/72 stays with the Brussels register (H17). No token, grade or class change; disk only.
+
+## Campaign step H32 (2026-09-28 14:39 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** The campaign's measured key features and scribal habits are now one checklist for the
+Brussels register comparison (H17, ASKS 82): `REGISTER-CHECKLIST.md` (vowel homophones with counts, the M codes and
+the boxed 101 to decide, the uneven homophone use of H21/H25, the dots and colon of H13/H15/H28, the full stops before
+13). KEY-OFFICES.tsv's row for this key names the checklist in its notes_source, and its stale "N3 after two audits"
+now reads N4 (AUDIT.md "N4 decision (28 Sept 2026, MERCY-N4)"); `tools/key_design.py --check`: KEY-DESIGN.tsv is
+current. No token, grade or class change.
