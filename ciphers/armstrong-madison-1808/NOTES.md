@@ -2505,7 +2505,7 @@ about 146k tokens, 5 minutes) plus this runner's two looks (the leaf view, one o
 change, no target token decoded; rule 10: nothing here is called new or first. Cost: get_session carries no cost
 figure for this session; the row's estimate (3 USD) is what `campaign.py --spend` records.
 
-## Campaign step H29 (28 Sept 2026, 02:19-02:45 UTC)
+## Campaign step H29 (28 Sept 2026, 02:19-02:42 UTC)
 
 Runner: campaign runner armstrong-madison-1808 (owner account, session_01NuaRiPghx6VRXA6GuJE8ne). Hypothesis H29 (from
 H25): Erving to Monroe, Madrid 5 Feb 1806 (LOC Monroe Papers, Series 1 reel 3, frames 0741-0743), the one coded letter in
