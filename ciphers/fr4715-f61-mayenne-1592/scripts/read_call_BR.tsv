@@ -1,0 +1,20 @@
+# H22 blind bracket sort (Opus vision subagent, 28 Sept 2026, one call, prompt verbatim in scripts/PROMPTS.md section H22; no letters, no key). Rows verbatim. Its criterion, verbatim: "group A (f108 only) has a fine hairline diagonal from the right end of the top bar down to the foot of the vertical and a foot bar longer than the top bar that tapers into a tail; group B is a plain squared C open to the right with no diagonal and the top bar longest (the f61 examples also have a short spur of the vertical above the top bar); group C is closed like a capital I, with bars on both sides of a thin vertical." Caveats verbatim: "group A's hairline diagonal nearly closes the sign into a triangle. It is kept here because of its squared-C frame and foot bar. Separate signs on f108 that have a top bar and a descending point but no foot bar were counted as triangles and excluded (...). The f108sheetB_L07 sheet cuts the cipher line off at the bottom of every segment, so its two rows are uncertain. f108sheetB_L05 has no bracket signs." "bracket signs found: 18 (16 clear + 2 uncertain on f108sheetB_L07)".
+sheet	segment	x_px	order_in_sheet	group	bars	attach	open	joined	longest	weight	note
+f61sheetB_L03	3	1230	1	B	2	top+foot	right	joined	top	medium	squared C; foot bar sticks out a little left of the vertical; no diagonal
+f61sheetB_L07	4	215	1	B	2	top+foot	right	joined	top	medium	vertical rises a little above the top bar as a short spur; foot bar runs out left of the vertical
+f61sheetB_L11	1	870	1	B	2	top+foot	right	joined	top	medium	top bar crosses a little to the left of the vertical; small spur above the top bar
+f61sheetB_L10	3	1110	1	B	2	top+foot	right	joined	top (nearly equal)	medium	spur above the top bar; foot bar runs out left; no diagonal
+f108sheetB_L02	1	985	1	A	2	top+foot	right	joined	foot	heavy	fine hairline diagonal runs from the right end of the top bar down to the foot of the vertical; foot bar tapers into a tail
+f108sheetB_L02	1	1950	2	A	2	top+foot	right	joined	foot	heavy	hairline diagonal inside; foot tail
+f108sheetB_L02	1	2150	3	A	2	top+foot	right	joined	foot	heavy	hairline diagonal inside; long tapering foot tail
+f108sheetB_L02	2	1270	4	A	2	top+foot	right	joined	foot	heavy	hairline diagonal inside; foot bar long
+f108sheetB_L02	2	1920	5	B	2	top+foot	right	joined	top	heavy	plain squared C, no diagonal; foot bar short
+f108sheetB_L02	4	0	6	B	2	top+foot	right	joined	top	heavy	sits on the segment 3/4 boundary, counted once here; no diagonal visible
+f108sheetB_L02	4	455	7	A	2	top+foot	right	joined	foot	heavy	hairline diagonal inside; foot runs past the top bar
+f108sheetB_L02	4	1635	8	A	2	top+foot	right	joined	foot	heavy	hairline diagonal; foot bar drawn out into a very long line-filler of about 300+ px
+f108sheetB_L03	1	1515	1	C	2	top+foot	closed	joined	equal	medium	capital-I shape: bars on both sides of a thin vertical
+f108sheetB_L03	1	2370	2	A	2	top+foot	right	joined	foot	heavy	hairline diagonal; foot tail runs on to the right
+f108sheetB_L03	3	1325	3	C	2	top+foot	closed	joined	top	medium	capital-I shape, thin vertical
+f108sheetB_L03	3	2130	4	A	2	top+foot	right	joined	foot	heavy	hairline diagonal; foot tail
+f108sheetB_L07	2	590	1	B?	1+	top(+?)	right?	joined	top	heavy	UNCERTAIN: the sheet's crop cuts off the lower half; only a gamma-like top bar and vertical show; no diagonal in the visible part
+f108sheetB_L07	3	340	2	C?	2	top+foot	closed	joined	equal	heavy	UNCERTAIN: I-shape under the gloss "peur", overlaps the gloss p's descender; foot cut at the crop edge; may be part of the gloss

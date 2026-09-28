@@ -1,0 +1,17 @@
+read_call_BR.tsv: 18 bracket signs listed; expected 18 (14 labelled)
+  f61sheetB_L03/15 EBR: group B, letter e (-)
+  f61sheetB_L07/5 EBR: group B, letter l (l/y)
+  f61sheetB_L11/3 EBR: group B, letter l (l/y)
+  f61sheetB_L10/1 EBR: group B, letter - (-)
+  f108sheetB_L02/1 EBR: group A, letter s (f/s)
+  f108sheetB_L02/5 EBR: group A, letter s (f/s)
+  f108sheetB_L02/6 EBR: group A, letter f (f/s)
+  f108sheetB_L02/14 EBR: group A, letter s (f/s)
+  f108sheetB_L02/17 EBR: group B, letter l (l/y)
+  f108sheetB_L02/32 EBR: group B, letter l (l/y)
+  f108sheetB_L02/34 EBR: group A, letter s (f/s)
+  f108sheetB_L02/39 EBR: group A, letter s (f/s)
+  f108sheetB_L03: expected 6, listed 4 -> NOT reconciled, dropped
+  f108sheetB_L07: expected 0, listed 2 -> NOT reconciled, dropped
+scored 10 (f/s 6, l/y 4); groups 2; observed 10/10; exact P(>=obs) = 0.005 over 210; permutation p95 8/10
+GATE H22: PASS

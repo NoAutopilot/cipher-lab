@@ -846,3 +846,34 @@ no class change. Day's budget after this step 39.25/40 (the orchestrator's 23:43
 estimates since): the next steps (H22 est 2, H21 est 4) wait for the new day's budget or a raise. No credentials, no
 AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H22 (2026-09-28 00:53 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i). One Opus vision call (about 131k subagent tokens), prompt
+written to `scripts/PROMPTS.md` before the call (audit 1's ask), no network. Hypothesis H22 (F61-BRACKET): H20's one real
+conflict -- the bracket class reads f/s on f.108 and l/y on f.61 -- is two glyphs the atlas merges.
+
+**Design, pre-registered (`scripts/f61bracket.py`, commit aa00572e).** Expected positions computed from disk: 18
+bracket-class signs (EBR and OTHER I-shapes) on the eight sheets, 14 labelled by Tomokiyo's letters under the joint
+alignment (8 f/s, 6 l/y). The call sorts every bracket-like cipher sign on both leaves into 2-3 shape groups with fixed
+attributes, no letters shown. Pairing per sheet in order (sheets B do not overlap); a sheet whose count differs is
+dropped. Statistic: best group-to-letter match; exact null over all label arrangements, plus 200 permutations.
+
+**Output (`scripts/read_call_BR.tsv`, verbatim).** 18 signs, three groups: A "a fine hairline diagonal from the right
+end of the top bar down to the foot of the vertical and a foot bar longer than the top bar that tapers into a tail"
+(f.108 only, 9 signs); B "a plain squared C open to the right with no diagonal and the top bar longest" (all four f.61
+signs, two on f.108, one uncertain on f.108 L07); C "closed like a capital I" (f.108 L03's two I-shapes, one uncertain on
+L07). The call itself notes that A's hairline diagonal "nearly closes the sign into a triangle" -- the table's own f/s
+drawing is an E-like bracket, its l/y a squared C or gamma (keys/key_mayenne_1592.tsv rows f and l).
+
+**Result (`scripts/f61bracket_result.txt`).** Reconciled sheets: f.61 L03, L07, L11, L10 (1 each) and f.108 L02 (8);
+f.108 L03 dropped (expected 6 because the expected list carried two non-bracket OTHER shapes; the call listed 4) and
+L07 unscored (no reference). Scored 10 labelled positions: **A = f/s 6/6, B = l/y 4/4, 10/10, exact p = 0.005** (210
+arrangements), permutation p95 8/10. **PASS.** The unlabelled f.61 L10/1 (the fragment's first sign) is group B, the
+squared C, consistent with its l/y cell.
+
+**Consequence.** The bracket class splits as the V class did: EBR_A (E with hairline diagonal) = f/s, EBR_B (squared C)
+= l/y, on both leaves; the I-shape (C) stays its own class (l/y by 2 counts in the joint fit, unsettled). H27 re-runs the
+joint fit with the split, which should close H20's stability gate. Not a reading; no class change. Files:
+`scripts/f61bracket.py`, `read_call_BR.tsv`, `f61bracket_result.txt`, `scripts/PROMPTS.md` (H22 section); HYPOTHESES.md
+row added. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
