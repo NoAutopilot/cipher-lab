@@ -1,0 +1,9 @@
+row	cell_signs	flagged_L	rank_s101	rank_s102	rank_s103	rank_s104
+L01	41	0	1	4	1	1
+L02	34	3	1	4	1	1
+L03	37	1	1	1	1	1
+L04	42	1	1	1	1	1
+L05	39	2	1	6	4	3
+L06	41	3	1	1	1	1
+L07	40	2	1	1	1	1
+# target ranks 1 of 21 in 23 of 28 row-calls; a row at rank 1 in all four calls carries the signal on its own

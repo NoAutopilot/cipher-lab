@@ -2263,3 +2263,11 @@ worker's key rebuild (H52) -- PHI o/b -> SBS (three hands), LOOPS o -> SBS and L
 forms (C43/4STEM on f.61), VBAR_A s -> VBAR_B (two hands), HASH4 i -> the bare hash (H24) -- with steps, leaves, tiles and
 the blind sorts' own shape criteria, plus the tested non-merges (e/r, a/n, d/q, g/t) and the EBR_A near miss. A
 proposal only; nothing in family/ touched.
+
+## Campaign step H101 (28 Sept 2026, 15:59 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/f108v_lines.py` -> `scripts/f108v_lines.txt` (`--check` fresh): per row of f.108v, the fr16 4-gram rank of the
+judge's target resolution among the 21 resolutions of the same call, in the four calls (H85 seeds 101-103, H94 seed 104).
+The target ranks 1 of 21 in 23 of 28 row-calls; rows L03, L04, L06 and L07 rank 1 in all four calls on their own (L06
+with 3 flagged signs); L01 and L02 miss once (rank 4, seed 102); L05 is the weak row (ranks 1, 6, 4, 3; 2 flagged
+signs). For the verifier (H88): the signal is spread across the leaf, not carried by one lucky row. Not a reading.
