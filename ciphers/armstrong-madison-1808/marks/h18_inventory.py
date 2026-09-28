@@ -5,7 +5,8 @@ witnesses, with a value-recurrence test.
 Inputs: marks/h18_passes/<page>_<witness>_<pass>.tsv -- one blind Sonnet reader's report per page per witness (page 1 has
 one frame, so two readers on the same sheets), lines "line<n> TAB first groups TAB marked groups TAB conf", marked groups
 as "GROUP:HIGH|LOW:detail; ...". A mark is ACCEPTED when two independent reports (the other witness, or the other reader
-on page 1) list the same group with the same class on the same line; a mark seen once is HELD (grade M).
+on page 1) list the same group value with the same class on the same page (line numbers differ between the witnesses' crop
+manifests by an offset, so the match is by page + group + class); a mark seen once is HELD (grade M).
 
 Test: do marks recur on the same VALUE? Statistic = number of distinct values carrying an accepted mark at every one of
 their occurrences in ciphertext_ms.txt (value-bound marks), vs a null that keeps the marked positions and shuffles the
@@ -36,10 +37,14 @@ for f in sorted(glob.glob(str(HERE/'h18_passes'/'*.tsv'))):
             det = parts[2].strip() if len(parts) > 2 else ''
             if g: reports[(page, ln)].append((wit, pas, g, cls, det, conf))
 rows = []
-for (page, ln), items in sorted(reports.items()):
+bypage = collections.defaultdict(list)
+for (page, ln), items in reports.items():
+    for it in items: bypage[page].append((ln,)+it)
+for page, items in sorted(bypage.items()):
     byg = collections.defaultdict(list)
-    for it in items: byg[(it[2], it[3])].append(it)
+    for it in items: byg[(it[3], it[4])].append(it)   # key: (group, class); the two witnesses' line numbers differ by an offset
     for (g, cls), its in byg.items():
+        ln = '/'.join(sorted({str(i[0]) for i in its})); its = [i[1:] for i in its]
         sources = {(i[0], i[1]) for i in its}
         status = 'accepted' if len(sources) >= 2 else 'held'
         under = ''
