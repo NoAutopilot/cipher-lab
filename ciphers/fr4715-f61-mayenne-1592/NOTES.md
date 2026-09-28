@@ -2230,3 +2230,11 @@ the scratchpad, not committed), the run cut at 2x with a numbered ruler (`images
 whole run and its four gloss words checked by eye) and `README.md` with the TSV template; ASKS row 93 filed. On arrival
 (`scripts/gloss211r_person.tsv`) the run's signs are coded with the atlas and the gloss letters are compared with the
 f.61 cells (H64's recipe) -- a held-out period check, independent of every fit. No reading.
+
+## Campaign step H97 (28 Sept 2026, 15:55-15:56 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`--len-match` census on the other family leaves (`scripts/f61sbs.tokens`, pass A agreeing on the class): f.106r gives PHI
+e 2 / r 2 / b 1, VBAR_A t 2, 4TRI a 3 / n 1 (its gloss is HELD, 34% words, so few positions carry an aligned letter);
+f.124r gives none for PHI, VBAR_A/B, 4TRI or LOOPS (its align, built in the numeral-OTHER mode for de Diou's hand, does
+not line up with the draft by length either); f.97r has no align file. No fourth glossed hand for the tile tests; the
+SBS and VBAR attestations stay at three and two hands. No cost beyond the census.
