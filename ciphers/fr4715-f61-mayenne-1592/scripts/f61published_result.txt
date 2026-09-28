@@ -1,0 +1,51 @@
+H44 PUBLISHED-CHECK of the rare classes (script-only; sources: keys/key_mayenne_1592.tsv, read_call_A.tsv, tomokiyo_spans.tsv, class_diag.tsv)
+
+(a) F61-CAL reader's table-drawing labels per rare class (read_call_A.tsv symbol column; '?' = matched no drawing):
+  CA: 7 signs on the span lines (L01/8 L03/1 L03/9 L05/7 L05/8 L07/1 L08/10); labels ? x7; marks {'a-shape': 7}
+  LOOPBAR: 3 signs on the span lines (L03/2 L03/12 L07/2); labels ? x3; marks {'loop on stem with bar at foot': 3}
+  ZHOOK: 3 signs on the span lines (L07/3 L07/11 L11/11); labels S02=n x3; marks {'7/Z hook over two close slanted stems crossed': 3}
+  CROSS: 2 signs on the span lines (L01/1 L07/10); labels S01=a x2; marks {'cross, stroke rising to upper right (f-like plus)': 1, 'plus/cross': 1}
+  LL: 1 signs on the span lines (L05/16); labels ? x1; marks {'ll-shape': 1}
+
+(b) Tomokiyo's own markup over the rare positions (class_diag.tsv: ZHOOK i:2 j:1; CA, LOOPBAR, LL, CROSS, C6 dashes only). DP placement with v3 + published pairs in the key:
+  L01/1 CROSS: '-'
+  L03/9 CA: '-'
+  L03/12 LOOPBAR: 'a'
+  L05/7 CA: '-'
+  L05/8 CA: '-'
+  L05/16 LL: '-'
+  L07/3 ZHOOK: 'j'
+  L07/10 CROSS: '-'
+  L07/11 ZHOOK: 'i'
+  L08/10 CA: '-'
+  L11/11 ZHOOK: 'i'
+  (a position missing from this list took a gap in the DP: no markup character over it)
+
+(c) runner's reading of the two shape descriptions:
+  CA: no table drawing is a cursive a
+  LOOPBAR: no table drawing is a loop on a stem with a bar at the foot (que = converging strokes into a loop; pour = a hook into one long diagonal)
+  ZHOOK: no table drawing of a 7/Z hook over crossed stems; the i/x drawing is 'a small knot above a long horizontal bar crossed by a short vertical stroke' (grade ? in the key file)
+  CROSS: table row a: 'cross/plus shape with a short diagonal stroke rising from the crossing point toward the upper right' = atlas CROSS 'a plain plus or cross, possibly with a stroke rising to the upper right'; the table's a/n column draws TWO symbols (a: this cross; n: a heavier, blockier cross), so the cell is a alone or a/n
+  LL: no table drawing is an ll
+
+TESTS (20 permuted keys, seed 1, test_period_key.py filter re-implemented: --collapse-ebr --min 2 --frac 0.1):
+K0 = key_period_v3.tsv baseline (must equal family/test_period_key_result_v3_frac0.1_min2.txt: 43/55 mean 0.372 max 0.618; 66/84 mean 0.344 max 0.512)
+  f.61 known (55): 43/55 = 0.782; 20 permuted keys mean 0.372 max 0.618; covered 0.80 (uncovered: CA CROSS LL LOOPBAR ZHOOK)
+  f.108r overlay (84): 66/84 = 0.786; 20 permuted keys mean 0.344 max 0.512; covered 0.87 (uncovered: OTHER ZHOOK)
+K1 = v3 + ZHOOK i/x (published: Tomokiyo's f.61 markup + the table cell partner)
+  f.61 known (55): 45/55 = 0.818; 20 permuted keys mean 0.381 max 0.618; covered 0.84 (uncovered: CA CROSS LL LOOPBAR)
+  f.108r overlay (84): 71/84 = 0.845; 20 permuted keys mean 0.345 max 0.560; covered 0.95 (uncovered: OTHER)
+    of the 55, letters matched AT the added classes' positions (circular for ZHOOK): 2 of 3 letters placed there; 55-letter score without them 43/53
+K2 = K1 + CROSS a/n (the table's a/n column, drawing matched)
+  f.61 known (55): 45/55 = 0.818; 20 permuted keys mean 0.332 max 0.473; covered 0.87 (uncovered: CA LL LOOPBAR)
+  f.108r overlay (84): 71/84 = 0.845; 20 permuted keys mean 0.335 max 0.452; covered 0.95 (uncovered: OTHER)
+    of the 55, letters matched AT the added classes' positions (circular for ZHOOK): 2 of 3 letters placed there; 55-letter score without them 43/53
+K3 = K1 + CROSS a (the drawing's own letter only)
+  f.61 known (55): 45/55 = 0.818; 20 permuted keys mean 0.326 max 0.473; covered 0.87 (uncovered: CA LL LOOPBAR)
+  f.108r overlay (84): 71/84 = 0.845; 20 permuted keys mean 0.332 max 0.452; covered 0.95 (uncovered: OTHER)
+    of the 55, letters matched AT the added classes' positions (circular for ZHOOK): 2 of 3 letters placed there; 55-letter score without them 43/53
+
+GATE (pre-registered, f.108r only, non-circular): K1 reads more than K0 (71 vs 66) and beats every permuted key (max 47/84 = 0.560): PASS
+  f.108r overlay letters the DP places on its 7 ZHOOK signs under K1 (Tomokiyo's reprint of the leaf's period gloss): L02/4:i L02/8:i L02/23:j L02/26:i L02/35:i L03/32:j L03/40:i
+  K2 vs K1: f.61 45 vs 45, f.108r 71 vs 71 (CROSS absent from f.108r's two lines; on f.61 Tomokiyo's dashes make CROSS = a a conflict with his markup: recorded, not used)
+  K3 vs K1: f.61 45 vs 45, f.108r 71 vs 71 (CROSS absent from f.108r's two lines; on f.61 Tomokiyo's dashes make CROSS = a a conflict with his markup: recorded, not used)

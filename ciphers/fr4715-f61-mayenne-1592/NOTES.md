@@ -1160,3 +1160,64 @@ Brief: `.claude/briefs/runs/2026-09-28-parent-f61-family-4.md` (its row id H41 w
 **Calls and cost.** 19 subagent calls (18 Opus vision: 12 sign, 6 gloss; 1 Opus text), 2 Gallica requests; own estimate about USD 33 (18 x 1.43 at F61-FAMILY-2's ledger rate + the text call + this session's own reading of debug strips); the orchestrator's get_session figure is the record.
 
 **Left undone (rows H46-H48):** f.124r gloss with a recipe for this hand; f.97r the f.124r way (native on disk, regen line in MANIFEST.tsv; the stroke detector found 38 rows with 4-5 missed at gaps of about 200 px -- hand-check before cutting); f.186r/f.189r sign passes (Desportes, genuinely undeciphered).
+
+## Campaign step H44 (2026-09-28 04:40 UTC) -- PUBLISHED-CHECK of the five uncovered classes
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV, replacing session_01UgTmQhR7wFtVFrTVdtsq9i), script-only, no
+calls, no network. Hypothesis H44 (the orchestrator's 02:43 row): the five sign classes of f.61r with no period reading
+(CA, LOOPBAR, ZHOOK, CROSS, LL; family/KEY.md) looked up in the one PUBLISHED source on disk -- Tomokiyo's reconstructed
+table (`keys/key_mayenne_1592.tsv` from `mayenne.png`) and his own interlinear markup of f.61 (`scripts/tomokiyo_spans.tsv`)
+-- written as `published` pairs to a separate file, never merged into `key_period_*`. Script `scripts/f61published.py`
+(pre-registered gate in its docstring, `--check` fresh), result `scripts/f61published_result.txt`, pairs
+`family/key_published_rare.tsv`.
+
+**What the published source says, per class** (three facts each: the F61-CAL reader's drawing label in
+`read_call_A.tsv`, Tomokiyo's markup letters over the class's positions per `class_diag.tsv` and the DP, the runner's
+own reading of the two shape descriptions):
+
+| class | f.61 signs (spans) | reader's drawing label | Tomokiyo's markup | table drawing of the same construction | published value |
+|---|---|---|---|---|---|
+| ZHOOK | 3 (L07/3, L07/11, L11/11) | S02 = n (x3) | **j, i, i** | none (the i/x drawing is a knot over a crossed bar, grade ? in the key file) | **i/x** (his letters; the cell partner x unattested) |
+| CROSS | 2 (L01/1, L07/10) | S01 = a (x2) | dash, dash | **row a**: "cross/plus with a short diagonal rising to the upper right" = the atlas's CROSS | **conflict**: the drawing says a (or the a/n cell), his own markup leaves both signs unread |
+| CA | 7 in the spans, 10 on the leaf | ? | dashes only | none is a cursive a | null |
+| LOOPBAR | 3 (+1 on L04) | ? | dashes only by eye (H4's DP rule 2/3) | none (que and pour are other constructions) | null |
+| LL | 1 (L05/16) | ? | dash | none | null |
+
+So the published source reads ONE of the five classes, ZHOOK, and it does so from the leaf itself (his own partial
+decode, "Solution Incomplete", grade M as a reading) rather than from a drawing: the reader's drawing match (S02 = n) is
+one of F61-CAL's eight consistent mislabels, and the table has no 7/Z-hook glyph at all. Three of the five are nulls in
+his reading, which is what H4's dash-share rule and `class_diag.tsv` already had.
+
+**Test (rule 3, pre-registered).** `key_period_v3.tsv` under `test_period_key.py`'s own filter (`--collapse-ebr --min 2
+--frac 0.1`, re-implemented and checked: K0 reproduces 43/55 and 66/84 with the same permuted mean and max) plus the
+published pairs, 20 keys with the letter sets permuted across classes (seed 1):
+
+| key | f.61 known 55 | permuted mean / max | f.108r overlay 84 | permuted mean / max | f.61 covered |
+|---|---|---|---|---|---|
+| K0 v3 | 43/55 = 0.782 | 0.372 / 0.618 | 66/84 = 0.786 | 0.344 / 0.512 | 0.80 |
+| **K1 v3 + ZHOOK i/x** | 45/55 = 0.818 (2 of the 3 ZHOOK letters are the reference itself: circular; 43/53 without them) | 0.381 / 0.618 | **71/84 = 0.845** | 0.345 / **0.560** | 0.84 |
+| K2 K1 + CROSS a/n | 45/55 | 0.332 / 0.473 | 71/84 | 0.335 / 0.452 | 0.87 |
+| K3 K1 + CROSS a | 45/55 | 0.326 / 0.473 | 71/84 | 0.332 / 0.452 | 0.87 |
+
+**Gate (f.108r only, the non-circular leaf): PASS** -- ZHOOK i/x raises f.108r from 66 to 71 of 84 and the result stays
+above every permuted key (max 47/84). The seven ZHOOK signs of f.108r's two overlaid lines carry i, i, j, i, i, j, i in
+Tomokiyo's overlay, which reprints the leaf's own period interlinear decipherment (H19) -- so the ZHOOK = i/x pair is
+published (Tomokiyo, 10 of 10 positions over the two leaves) and, at one remove, period (the f.108r gloss, not yet read by
+us: H21 failed on the runner's crop, H34 is the recut). CROSS adds nothing on either leaf (absent from f.108r's two lines;
+under dashes on f.61) and stays a recorded conflict, unused. CA, LOOPBAR, LL: published nulls, no drawing, no test possible.
+
+**What this changes.** (1) ZHOOK is not a gap in the key, it is a gap in the period *sources on disk*: the sign is written
+by Mayenne's own secretary (f.61 3, f.108r 7, f.108v 20 in `family/rare_contexts.tsv`) and by no other hand of the family
+(f.101r 3, f.124r 1, f.188r 0), whose i/x sign is the readers' H24 ("2 joined to a crossed 4", i 170 on f.101r) -- the
+same cell, most likely the same glyph coded twice across atlases (the H43/H22-style blind sort would test it). The one
+period source that writes ZHOOK and has a readable gloss is f.108r, so **H34 (the f.108r gloss with the family recipe)
+moves from rank 8 to rank 3**: it is the step that turns ZHOOK = i from `published` into `period` grade C and adds the
+d/q, m/z and word-code cells with counts. (2) The held f.108v alignment (`key_period_held.tsv`, passes at 65%) reads ZHOOK
+a 7 / e 4 / u 4 -- against i at 10 of 10 published positions; H35 (the corrected f.108v re-run) now carries that as its
+named check. (3) A decode of f.61r under v3 + ZHOOK i/x is `mixed` (period + published for that class) and is not run
+here: the skeleton's C count would rise by three tokens and nothing else changes. (4) No class change; nothing here is a
+reading, solved, new or first; the words are Tomokiyo's and the period decipherer's.
+
+Files: `scripts/f61published.py`, `scripts/f61published_result.txt`, `family/key_published_rare.tsv` (a new file in
+family/, as the row asked; no family file edited). HYPOTHESES.md row added. Requests: none. Vision calls: 0 of 4. No
+credentials, no AskUserQuestion, no novelty wording; the owner not named.
