@@ -730,7 +730,7 @@ passage of the September letter (Tomokiyo's crib), though it locates nothing.
 **Requests:** collections.library.yale.edu 4. No credentials, no AskUserQuestion, rule 10 wording, no other target
 touched. **Cost:** recorded as 0.3 USD (est 0.5).
 
-## Campaign step H20, batch 1 (28 Sept 2026, 00:39-00:42 UTC)
+## Campaign step H20, batch 1 (28 Sept 2026, 00:39-00:41 UTC)
 
 Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H20: a cipher census of the digitised 86-letter Tommaso bundle
 (catalog 17296147, b. 126 ff. 2566-87). Manifest fetched (`images/manifest_17296147.json`): **62 canvases, no
@@ -750,3 +750,21 @@ whole bundle's chronology and say which portrait pages to look at for cipher, in
 
 **Requests:** collections.library.yale.edu 6 (manifest + 5 images). No credentials, no AskUserQuestion, rule 10
 wording, no other target touched. **Cost:** recorded as 0.3 USD (of est 3 for the whole census).
+
+## Campaign step H20b (28 Sept 2026, 00:42-00:43 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Covers-first census: canvases 8, 21, 23, 35, 37 of the bundle at 1000px
+(5 requests, `images/bundle17296147/`). Direct look:
+- c8 (17296300): folder cover, "Box 126, Folder 2567 -- (6) Spinelli Tommas[o] 1494-95";
+- c21 (17296313): folder cover, "Folder 2568 -- Spinelli Tommas 1497";
+- c23 (17296315): not a cover: a wide opening, a plain Italian letter page beside a blank leaf (no cipher);
+- c35 (17296327): folder cover, "Folder 2569 -- Spinelli Tommas 1505-9";
+- c37 (17296329): not a cover: a plain Italian letter page dated "in Bruggia ... di gennaio 1505", signed "T. de
+  Spinellis" (no cipher).
+So canvases 1-7 = folder 2566 (1492-93, 3 letters), 8-20 = folder 2567 (1494-95, 6 letters), 21-34 = folder 2568
+(1497), 35-? = folder 2569 (1505-9). The digitised run is chronological and, at canvas 35 of 62, has reached 1505;
+whether it reaches the cipher years (1515 onward) depends on the four remaining wide canvases (46, 49, 51, 59) --
+H20c fetches those plus the last canvas (62).
+
+**Requests:** collections.library.yale.edu 5. **Cost:** recorded as 0.3 USD. No credentials, no AskUserQuestion,
+rule 10 wording, no other target touched.
