@@ -1,0 +1,8 @@
+# VERIFY-SPINELLI-2, 28 Sept 2026: decoded phrases from reading.txt (letter level, segmented by the verifier)
+la gubernation d'ispagnia
+la gubernatione di spagnia
+resolutione di costoro
+bisognio el guernatore di brescia
+inclinatione
+Tommaso Spinelli Barcellona 1519 cifra
+Spinelli Leonardo canonico 1519 lettera cifra

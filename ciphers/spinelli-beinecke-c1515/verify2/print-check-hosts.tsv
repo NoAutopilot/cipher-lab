@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	3	ok
+api.openalex.org	9	ok
+api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22la%20gubernation%20d%27ispagnia%22
+be-api.us.archive.org	7	ok
+www.googleapis.com	7	ok

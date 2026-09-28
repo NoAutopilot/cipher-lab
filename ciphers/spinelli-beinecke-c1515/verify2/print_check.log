@@ -1,0 +1,3 @@
+7 phrases, 3 listed sources: 35 rows, 9 with hits -> ciphers/spinelli-beinecke-c1515/verify2/print-check.tsv
+requests: be-api.us.archive.org 7, www.googleapis.com 7, api.openalex.org 9, api.semanticscholar.org 1, api.crossref.org 3
+  api.semanticscholar.org: blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22la%20gubernation%20d%27ispagnia%22

@@ -1,0 +1,115 @@
+ Von Klaus Schmeh [https://scienceblogs.de/klausis-krypto-kolumne/author/kschmeh/] / 24. März 2017 / 17 Kommentare [https://scienceblogs.de/klausis-krypto-kolumne/2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/#comments] 
+ Teilen: 
+     Mehr 
+Today I’m going to report about an unsolved encrypted document created five centuries ago and now owned by the Beinecke Library in Connecticut. And no, I’m not talking about the Voynich manuscript.
+One of the nice things about internet shopping is that each time you have bought something you can be certain to receive numerous hints of the kind “customers, who have bought this have also bought …”. And sometimes one of this hints is even valuable and directs you to something interesting you want to purchase, too.
+Something similar has happened to me when I recently looked at the scans of the Voynich manuscript [https://brbl-dl.library.yale.edu/vufind/Record/3519597] provided by the Beincke Library on its website.
+At the bottom of the page I discovered a number of links headlined “Similar Items”.
+ [https://scienceblogs.de/klausis-krypto-kolumne/files/2017/03/Tomasso-Voynich-similar.png]
+To me this headline sounded almost like an oxymoron. After all, the Voynich manuscript is unique, which means that there is nothing similar. Nevertheless, one of the items linked looked very interesting. It’s a letter written by some Tommaso from Barcelona, Spain, to an Italian named Leonardo di Guasparri Spinelli. The language is Italian.
+Two paragraphs of this letter are encrypted. No solution is given.
+### The cryptogram
+The letter consists of three pages. Here’s page #1 (with one paragraph encrypted):  [https://scienceblogs.de/klausis-krypto-kolumne/files/2017/03/Tommaso-1.jpg]
+Here’s page #2 (with two encrypted lines):
+ [https://scienceblogs.de/klausis-krypto-kolumne/files/2017/03/Tommaso-2.jpg]
+Here’s page #3 (no encryption):
+ [https://scienceblogs.de/klausis-krypto-kolumne/files/2017/03/Tommaso-3.jpg]
+### How to solve it?
+The ciphers used in the early 16th century were not the best. With the exception of the Voynich manuscript, I don’t know an encrypted text from this time that has withstood serious codebreaking efforts. The encryption used here is probably a simple letter substitution. The cipher itself is probably less a problem than dealing with the 16th century Italian.
+Can a reader decrypt these encrypted paragraphs? And does somebody know who the sender and recipient of this letter were?
+ Follow @KlausSchmeh [https://twitter.com/KlausSchmeh]
+ Further reading: Kaliningrad’s second mystery: Who can break this encrypted bottle post? [https://scienceblogs.de/klausis-krypto-kolumne/2016/09/12/kaliningrads-second-mystery-who-can-break-this-encrypted-bottle-post/]
+Linkedin: https://www.linkedin.com/groups/13501820 [https://www.linkedin.com/groups/13501820]
+ Facebook: https://www.facebook.com/groups/763282653806483/ [https://www.facebook.com/groups/763282653806483/]
+## Subscribe to Blog via Email
+Enter your email address to subscribe to this blog and receive notifications of new posts by email.
+  Email Address   
+      Subscribe  
+### Share this:
+Facebook [https://scienceblogs.de/klausis-krypto-kolumne/2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/?share=facebook]
+Stichworte: Tommaso cryptogram [https://scienceblogs.de/klausis-krypto-kolumne/tag/tommaso-cryptogram/]
+ Teilen: 
+     Mehr 
+## Kommentare (17) [https://scienceblogs.de/klausis-krypto-kolumne/2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/#comments]
+ #1 [#comment-863257] Ellie Velinska  
+ 24. März 2017  
+There is an article I am trying to find
+Title: Ciphers in early Tudor diplomacy: the case of Tommaso Spinelli’s private letters
+ Author(s): Domnina, E., Домнина Е.
+ Source: Geheime Post. Kryptologie und Stenographie der diplomatischen Korrespondenz europaeischer Hoefe waerend der Fruehen Neuzeit Volume: 106 Pages: 181-194 Published: 2015
+ #2 [#comment-863302] Ellie Velinska  
+ 24. März 2017  
+Found it
+ https://istina.msu.ru/media/publications/article/a81/378/11992054/Domnina_Spinelli_cipher_EnglishRussian_-_kopiya.pdf [https://istina.msu.ru/media/publications/article/a81/378/11992054/Domnina_Spinelli_cipher_EnglishRussian_-_kopiya.pdf]
+ #3 [#comment-863304] Ellie Velinska  
+ 24. März 2017  
+There is a key on page 7 of the pdf
+ #4 [#comment-863317] Klaus Schmeh  
+ 24. März 2017  
+Ellie Velinska via Facebook:
+ Is it Spanish? I have similar example that is solved – BNF Espagnol 103
+ #5 [#comment-863318] Klaus Schmeh  
+ 24. März 2017  
+Ellie: Thank you very much!
+ #6 [#comment-863342] Thomas  
+ 24. März 2017  
+Chapeau, Ellie!
+But the cipher table on page 186 (p. 7 of the pdf) seems to be not complete. The encrypted letter above and the letter on page 189 have some signs which are not in the table. E.g. there is a second sign for “R” in both letters (see the decryption on page 191).
+ #7 [#comment-863363] Norbert  
+ 24. März 2017  
+In the same paper an improved key is given on the last page (p.27), including one more symbol for R 🙂 I don’t know if the plaintext of our ciphertext is given in the paper, but here is a try for page #1, using the improved key (I only had to add one more null symbol):
+et li dite che madama
+ Marg[h]erita non vole arrettare la gu-
+ bernatione di Spagnia et che più
+ d’inclinatione si mos[t]ra al Conte
+ Palatino che ad altri.
+ Arrivo caro nelo(?) et trovo la
+ resolutione di costoro mi[g]liore
+ di quelo el Papa domandava.
+ #8 [#comment-863366] Thomas  
+ 24. März 2017  
+An attempt to decipher the encrypted parts on p. 1 (corrections appreciated):
+ET LIDITE CHE MADAMA MARGERITA NON VOLE ACCETTARE LA GUBERNATIONE DI SPAGNIA ET CHE PIU DINCLINATIONE SI MOSTRA AL CONTE PALATINO CHE AD AL TRI? ARRIVO CARZONELO (?) ET …. RESOLUTIONE DE COSTORO (?) MILIORE DI QUE LO EL PAPA DOMANDAVA
+ #9 [#comment-863371] Thomas  
+ 24. März 2017  
+Page 2.
+SE E BISOGNIO EL GUBERNATORE DEBRESSA ANADARAI SUE ??ERI
+ #10 [#comment-863375] Thomas  
+ 24. März 2017  
+There is another sign for I; this yields:
+SE E BISOGNIO EL GUBERNATORE DI BRESSA ANDARAI SUI ??ERI
+ #11 [#comment-863380] Thomas  
+ 24. März 2017  
+@ Norbert:
+ Also the improved key in the Russian part seems to be incomplete. I couldn`t find the two symbols between “sui” and “eri”.
+ #12 [#comment-863384] Norbert  
+ 24. März 2017  
+@Thomas: Ich denke, auf Seite 1 tatsächlich “arrettare” im Sinne von “zurückweichen”, entspricht wohl dem modernen “arretrare”, siehe z.B. hier (Wörterbuch von 1789) [https://books.google.de/books?id=Zf9eAAAAcAAJ&pg=RA3-PA44&dq=arrettare&hl=de&sa=X&ved=0ahUKEwi6zoXg1u_SAhXsbZoKHbaFAt0Q6AEITzAJ#v=onepage&q=arrettare&f=false].
+Am Schluss von Seite 2 fehlen mir auch die zwei Symbole …
+ #13 [#comment-863401] Thomas  
+ 24. März 2017  
+Steht das %-ähnliche Zeichen nicht für “cc”, so das es “accettare” heißt? Dann nämlich wollte (Erzherzogin) Margarete (von Österreich) eine spanische Regierung (wohl in den Niederlanden) nicht akzeptieren, sie war auch selbst Statthalterin der Niederlande gewesen.
+ #14 [#comment-863707] Thomas  
+ 25. März 2017  
+Some signs are similar to the unbroken Ranzo cipher which also dates around the year 1520. https://scienceblogs.de/klausis-krypto-kolumne/2016/05/17/wer-loest-diesen-verschluesselten-brief-aus-dem-franzoesischen-nationalarchiv/ [https://scienceblogs.de/klausis-krypto-kolumne/2016/05/17/wer-loest-diesen-verschluesselten-brief-aus-dem-franzoesischen-nationalarchiv/]
+ #15 [#comment-864832] Torbjörn Andersson  
+Kalmar, Sweden
+ 28. März 2017  
+Thomas’ comment just reminded me, that I broke the Ranzo cipher back in June. I did post the solution here then, but for some reason, it didn’t appear.
+ I have just reposted the key on the appropriate page, for those of you interested (follow Thomas’ link above).
+ #16 [#comment-865059] Thomas  
+ 29. März 2017  
+@Torbjörn Andersson
+Where did you post the key? Still can’t find it in the thread #14.
+ #17 [#comment-865074] Torbjörn Andersson  
+Kalmar, Sweden
+ 29. März 2017  
+How very strange! I definitely posted the solution yesterday evening, but nothing shows – for the second time around…
+ I’ll try again tonight (the key sits on my desk at home, and I can’t access it right now).
+ For the time being though, I’ll tell you that the plaintext is in English, and knowing that, it’s very simple to decipher.
+  Kommentieren 
+  Antwort löschen [/klausis-krypto-kolumne/2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/#respond] 
+## Abonnieren
+ Abonnieren mit: 
+ RSS2 [https://scienceblogs.de/klausis-krypto-kolumne/feed/] 
+ Atom [https://scienceblogs.de/klausis-krypto-kolumne/feed/atom/] 
