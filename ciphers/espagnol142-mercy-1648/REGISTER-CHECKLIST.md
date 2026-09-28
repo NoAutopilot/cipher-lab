@@ -54,3 +54,11 @@ If the stretch r16-r17 names "Burgsdorf, su camarero mayor" (Konrad von Burgsdor
 code 72 stands for "do" and 52 for "ro" (not z and y as key.tsv's M grades have them). Check the register's
 nomenclature for 72 and 52, and for 48 and 65 in the same class. H41 passed its name-list test (unique best of 402, P
 0.002 on the unread stretch); H42 was borderline (P 0.053 strict, 0.027 with camarera merged).
+
+## Update, 28 Sept 2026 (H45; DECODE-OPEN H17)
+- H17 (DECODE-OPEN): the Brussels register 958-965 was read at full size. It is not this letter's key (best 7 of 28
+  shared codes) and gives no value for 9, 15, 25, 48, 52, 65, 72 or the boxed 101. The checks above stay open for any
+  other key of this office that turns up.
+- H45: under the syllable reading, 65 reads best as "sr" ("tres regimientos", +15.2 over s, above a random-token
+  control's 95th percentile +7.1); the same gain would come from s with the scribe leaving out the r. 48 has no
+  syllable that helps both of its occurrences.

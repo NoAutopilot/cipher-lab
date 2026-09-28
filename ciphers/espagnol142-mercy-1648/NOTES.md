@@ -2010,3 +2010,26 @@ from world knowledge where the letters are few and uncertain. A target reader na
 have been independent evidence either -- Burgsdorff is the best-known courtier of that Elector. The letter-fit test
 against a list built before scoring (H41) is the right instrument for the name, and it stands as it was. One text
 call. No token, grade or class change.
+
+## Campaign step H45 (2026-09-28 15:45-15:56 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** If the nomenclature codes stand for syllables (H41-H42's reading of 72 and 52), which one-
+or two-letter value reads best for 48 and 65? Every value of 1-2 letters (506) substituted at all of a code's
+occurrences in the key.tsv decode, scored by H35's word segmentation (es17c7 word unigram); control: 200 draws of the
+same number of random S-graded positions searched the same way (`h45/syll.py`, `h45/result.log`, 16 min CPU).
+Pre-registered: a candidate must improve every occurrence and beat the control's 95th percentile.
+
+| code | occurrences | key.tsv | best value | gain | per occurrence | control median / p95 | candidate |
+|---|---|---|---|---|---|---|---|
+| 48 | r17:20, r20:15 | d | "qu" | +4.42 | +4.97, -0.55 | -1.47 / +6.54 | no |
+| 65 | r24:4 | s | **"sr"** | **+15.16** | +15.16 | 0.00 / +7.08 | **yes** |
+
+65 = "sr" gives "tres regimient-" at r24 ("en dos o tres regimientos"); key.tsv's s leaves "tres egimient-". The test
+cannot separate two readings of that gain: 65 as a two-letter unit (s + r, across a word boundary -- unusual for a
+syllable code) or 65 = s with the scribe leaving out the r. Either way the word is "regimientos" and the passage reads
+"en dos o tres regimientos". 48 has no value that helps both occurrences; it stays d (M). No key.tsv, token, grade or
+class change: 65 stays M, with "sr" logged as the candidate value in REGISTER-CHECKLIST.md.
+
+Note from DECODE-OPEN's H17 (merged this hour): the Brussels register 958-965, read at full size, holds no candidate
+period key for this letter and no values for the M codes or the boxed 101, so the register checklist's syllable
+questions (72, 52, 65, 48) have no period source on file; they stay cryptanalytic.

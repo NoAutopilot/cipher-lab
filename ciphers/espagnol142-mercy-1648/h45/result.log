@@ -1,0 +1,2 @@
+code 48 at ['r17:20', 'r20:15'] (key.tsv d): best value "qu" gain +4.42, per-occurrence [4.97, -0.55]; control gain median -1.47 p95 +6.54; candidate: False
+code 65 at ['r24:4'] (key.tsv s): best value "sr" gain +15.16, per-occurrence [15.16]; control gain median +0.00 p95 +7.08; candidate: True
