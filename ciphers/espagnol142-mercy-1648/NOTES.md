@@ -2157,3 +2157,13 @@ every word before "sera" in es17c7, 4-12 letters, 3+ occurrences (17, `h55/wordl
 --anchor end` at v04:19 (the gutter token, 15, M, wild) and at v04:18 (`h55/result.log`). Best "cual" fit 0 (1/1) at
 v04:19, "bien" -2 at v04:18; no word meets the rule. With H46 (start-anchored) both ends of v04 are tested by list and
 neither fits; the stretch stays unread. No token, grade or class change.
+
+## Campaign step H56 (2026-09-28 16:14 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** Is H53's one assumption (72 is a multi-letter unit) this office's habit? Answered from
+DECODE-OPEN's transcriptions already on disk (`period_keys/README.md`, section "The M codes and the H41/H42 syllable
+reading"; no new fetch): in the Brussels register's own keys, codes just above the letter alphabet are syllables where
+they occur -- R960 48 = no, 65 = ba; R962 (Latin) 52 = re, 65 = s, 72 = san, 101 = vu; R963 101 = ay; R959's two-letter
+word codes (au, de, du ...) run 12-89 and R961's syllabary starts at 35. So a syllable at 72 in a key of this office
+is the office's practice, not an exception; **the assumption the Burgsdorf crib rests on is consistent with the
+register's design, but no table gives 72 = do or 52 = ro** (these are other keys). No token, grade or class change.
