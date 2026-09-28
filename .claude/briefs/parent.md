@@ -337,3 +337,6 @@ Every message to the owner that carries a board update opens with a three-line T
 
 ## Mailbox: unread first (28 Sept 2026, 20:2x UTC)
 Three archive replies (Marburg 15:03, Bodleian 15:26, Adirondack 18:09 UTC) sat unread through four check-ins because the check-in skimmed thread previews. Every check-in now runs search_threads "is:unread in:inbox" FIRST and reads each hit in full with get_thread before anything else in the mailbox step; a reply is recorded (folder NOTES, CONTRIBUTIONS, ASKS), a reply draft made for the owner, and its lead given to a worker the same hour.
+
+## Standby on account 3 (28 Sept 2026, 20:3x UTC, owner-requested)
+A standby orchestrator on account 3 (hub-seed/STANDBY-3.md) takes over if no "| orchestrator (owner account) |" ROOM line appears for 150 minutes, or on a "HANDOFF to account 3" line. So: post that ROOM line at every check-in; mirror the check-in prompt to hub-seed/CHECKIN-PROMPT.md whenever it changes; post HANDOFF when this account's rate limit reads rejected; on a TAKEOVER line newer than yours, follow the file's Handback before anything else.
