@@ -2310,3 +2310,15 @@ d/q positions of the f.108v consensus are the least supported letters. Not a rea
 `scripts/H66_PAGE.md` brought up to H93, H94, H100-H103 and H99 for LANE VO3 (the finding aid's "chiffre et
 déchiffrement" for f.108, the model-free and no-leak checks, the per-row ranks, the one-swap hard null and the c/p-d/q
 near tie; the file table extended). No new claim.
+
+## Campaign step H105 (28 Sept 2026, 16:07 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+How many positions does each one-swap map actually change (`scripts/f61swappower.py`, `f61swappower_result.txt`,
+`--check` fresh)? On f.108v the 4TRI <-> 4PI (c/p <-> d/q) swap changes **6 of 274** pair positions -- the fewest of all
+twenty (f.108v's draft has 6 4TRI signs and no 4PI); every other swap changes 11 to 101. On the known lines the same
+swap changes 8 of 58. So H100's runner-up and H103's near tie are a null that could hardly differ from the fitted map
+(rule 3's "a control that cannot vary"): f.108v is a NON-TEST of the c/p-versus-d/q assignment, not evidence against
+it. That assignment rests on H72 (our 4TRI under Tomokiyo's c/p 10 of 10) and H69 (the 4-over-triangle carries the
+period c/p in two glossed hands). Every swap with real power (11 or more positions) scores well below the fitted map
+under both the judge and the 4-gram score. The H103 FAIL stays logged as run; this is its reading. No reading, no class
+change.
