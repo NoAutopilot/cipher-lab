@@ -1493,3 +1493,51 @@ key that fixes which shapes are nulls (Domnina's Fig.1, H6/H8) or more ciphertex
 change, rule 10 wording. **Files:** none new (HYPOTHESES.md is family_run's table; the crib numbers are here).
 **Cost:** CPU only, seconds -- recorded as 1.0 USD (the est). No requests, no vision calls, no credentials, no
 AskUserQuestion, no other target touched.
+
+## Campaign step H33b (28 Sept 2026, 05:24-05:28 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H33b: re-cut the two blocks the H33 readers flagged and read them
+again with one Opus pair.
+
+**Diagnosis first:** the p.[1] "second line at the bottom edge" the H33 reader reported was the line ENDS -- the
+lines slope down to the right (the tool's slope fit measures a drift of -192 px across the 3150-px region), so a
+flat band centred on a line's left end catches the next line at the right. Re-cut with `tools/iiif_lines.py --image
+--region 350,2120,3150,2700 --follow-slope 400 --slope-margin 20` (prefix `p1v`, 15 sheared bands, overlay checked:
+one band per line). The p.[2] upper block was re-cut with `--prominence 60 --follow-slope 400` (prefix `p2v`, 12 bands
+-- the short "Mons. ... ha maritato la nipote" line now has one). The drifted `p1b_`/`p2t_` crops and their manifest
+entries were removed (folder 28 MB; the tool's 30 MB guard fired again during the cut and downscaled the two
+committed native cipher-block sources in place, restored from git as in H33). Two Opus passes over both blocks
+(54 crops each, about 124k tokens each): `passes/plainv_passC.tsv`, `passes/plainv_passD.tsv`.
+
+**A second tool fault, found by both readers independently:** on p.[2] the crops of bands 2, 7 and 10 are the same
+lines as bands 1, 6 and 9 (manifest `slope_fit` intercepts 177.5/187.6, 959.6/972.0, 1416.7/1468.0): with the low
+prominence the finder seeded spurious centres between lines, and the slope tracker then snapped each to the nearest
+real line, so three real lines of the block got no band at all. `--follow-slope` needs a guard that drops a band
+whose fitted intercept lies within about half a pitch of the previous band's (flagged in ROOM.md for the tool's
+owner; not changed here). The p.[2] upper block therefore stays at the H33 reading (11 bands, one line missed) plus
+the 9 distinct p2v lines; H33c re-cuts it without slope tracking.
+
+**Result: the p.[1] lower block, the passage the campaign's cribs come from, now clears the gate.** Pass pair C/D on
+the 15 slope-tracked lines: **word-level 102/145 = 70.3% (gate 60%), folded-letter 93.3%** (H33's flat cut: 51.5% /
+67.3%); on the 9 distinct p.[2] lines 49/90 = 54.4% word-level, 91.6% letter-level (the bleed-through page).
+`corpus/letter_plain_context_agreed_v2.tsv` holds the agreed words per line. Read together with both passes' full
+rows, the passage says (context, not a cipher reading; spelling as the passes give it, disagreements in brackets):
+"La morte del Car(dina)le de Rossi e dispiaciuta ... / franzesi habbimo questo anno mala sorte ne so ... pronosticho
+per loro sia / Il gobernatore di Brescia mio S(ig)nore et amico intrinsecho parte fra dua giorni per andarsene a vedere
+casa sua et di la in Borgognia et Fiandra dove aspettera il Re / L'arcivescovo Arborensi confessore dell[a] M(aes)ta
+del Re per la sua indispositione e partito per andarsene in Fiandra et trovasi [in termine / mezo morire] che a causa
+della eta et mal regime credo non habbi a condurre a casa; se la sorte va cosi, dessi et che della vacantia avessi
+prima costi che qui notitia et che al R(everendissi)mo de Medici piacessi farlo a voi conferire, fusse sul placito di
+questa [entrata]; dove farei bene assai che per essere il detto confessoro molto mio non ho voluto anticiparmi a
+domandarne". So the plain text asks Leonardo, should the King's confessor (the Archbishop of Arborea) die on his way
+to Flanders, to have the Rev. de' Medici get the vacant post conferred on Leonardo ("a voi"), Tommaso not wishing to
+ask for it himself while the confessor, his friend, lives. The cipher passages sit immediately before this (p.[1]) and
+before the closing (p.[2]); Tomokiyo's "la gubernation d'Ispagnia" belongs to the same court news (Charles's coming
+departure and who governs Spain). Vocabulary the passage adds to the crib list (H34 found the earlier list at chance):
+vacantia, conferire, placito, confessoro, arborensi, aspettera, il re.
+
+**Controls:** the pass-pair agreement (gate met on p.[1], missed on p.[2]); the duplicate-band fault is established by
+the manifest's own fit values and two independent readers, not by one runner's eye. **Files:** `images/p1v_*`,
+`images/p2v_*` (54 crops, manifest), `passes/plainv_pass{C,D}.tsv`, `corpus/letter_plain_context_agreed_v2.tsv`.
+**Cost:** 2 Opus vision calls (about 247k tokens) plus this runner's turns -- recorded as 5.0 USD (the est). No
+requests (the canvases were re-read from the scratch copies), no credentials, no AskUserQuestion, no other target touched.
