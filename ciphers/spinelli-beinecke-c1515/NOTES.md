@@ -574,3 +574,40 @@ class change.
 
 **Cost:** script only -- recorded as 0.5 USD (est 1.0). No network requests. No credentials, no AskUserQuestion,
 rule 10 wording, no other target touched.
+
+## Campaign step H14, second half (28 Sept 2026, 00:15-00:27 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. Re-opened H14: split the HOOK family (49 p.[1] signs, 22% of the text) back
+into its six v2 member shapes with a blind pass pair on a 4x montage of just those boxes (`glyphs/montage/p1_HOOK.png`,
+labels L<line>.<box>) against the v2 atlas image (`glyphs/atlas_v2.png`, kept beside the v3 `atlas.png`).
+
+**Result: FAILS -- the six hook shapes are not separable by blind passes even at 4x.** `passes/p1_HOOK_passE.tsv`,
+`passes/p1_HOOK_passF.tsv` (2 vision calls, 103k + 233k subagent tokens): **exact agreement 16/49 = 32.7%** against
+the 60% gate; even counting "member vs not a hook at all" as the only distinction, 20/49 = 40.8%. Disagreement pairs:
+ELOOP/RHO 7, STROKE/UCURL 3, FRAG/STROKE 3, RHO/UCURL 2, TLOOP/UCURL 2, ELOOP/UCURL 2, ECAP/ELOOP 2, ECAP/UCURL 2, then
+singletons. Pass E leaned ELOOP (11) and pass F leaned UCURL (10) and RHO (9) for the same cells: the two readers
+drew the family boundaries in different places, which is what a continuum of hand-drawn hooks looks like, not two
+noisy readings of six discrete shapes. `passes/p1_HOOK_disagreements.tsv` (33 rows) is on file, unsettled: this
+runner does not arbitrate a pair this far under the gate by eye (a reconciler's vote on a 33% pair would be a third
+pass, which the transcription brief says does not help).
+
+**What stands:** HOOK stays ONE code in `p1_reconciled.tsv` and `letter_codes_v3.tsv`; the two passes did agree that
+a few HOOK cells are not hooks at all (both: L1.16 OMEGA2, L7.24 TWO, L6.18/L1.20 MU, L3.7/L3.29/L3.30 bare strokes)
+-- those seven are corrected in `p1_reconciled.tsv` only where BOTH passes agree (grade AB), the rest untouched:
+L1.16 -> OMEGABAR (v3 for OMEGA2), L7.24 -> TWO, L3.7 / L3.29 / L3.30 -> `_` (fragments; the two bare curls of L3.29-30
+flagged in H15 are confirmed fragments by both passes). MU is a HOOK member in v3, so L1.20 and L6.18 stay HOOK.
+
+**Consequence for the solver step (H16):** the letter cannot be attacked as a plain simple substitution: one symbol
+(HOOK, now 20% of the text after the corrections) stands for an unknown set of several plaintext letters, and 17%
+of the signs are probable nulls. A matched control for that design is Italian text under a substitution with about
+six letters' signs merged into one symbol plus nulls -- not a family `tools/family_run.py` has; running masc or
+homophonic against a standard control would be a design-mismatched test (rule 3, Salviati headline). H16 is
+re-worded to name that control (a `--param merge=` option on the homophonic family, or a purpose-built control
+generator) before any target run, and moved behind the two cheap document steps (H6, H7) that could bring in
+Domnina's original Fig.1, which may show a fuller key than Tomokiyo's table and settle the sign inventory from
+outside.
+
+**Controls:** the 60% gate (pre-registered). No reading, no class change.
+
+**Cost:** 2 Sonnet vision calls plus this runner's turn -- recorded as 1.5 USD (est 2.5). No network requests.
+No credentials, no AskUserQuestion, rule 10 wording, no other target touched.
