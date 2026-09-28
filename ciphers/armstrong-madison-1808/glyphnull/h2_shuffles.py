@@ -17,7 +17,7 @@ a reading, and the reproducer's own raw outputs are not readable English.
 Usage (repository root): python3 ciphers/armstrong-madison-1808/glyphnull/h2_shuffles.py SCRATCH_DIR [--nshuf 200]
 Writes glyphnull/h2_results.tsv and h2_shuffle_scores.tsv in the repository; sequences, model and binaries in SCRATCH_DIR.
 """
-import collections, concurrent.futures, gzip, json, random, re, statistics, subprocess, sys
+import os, collections, concurrent.futures, gzip, json, random, re, statistics, subprocess, sys
 from pathlib import Path
 import numpy as np
 
@@ -106,7 +106,7 @@ def main():
     if not lm.exists(): model(lm)
     (OUT/'solve.cpp').write_text(FLAT_CPP)
     subprocess.run(['g++', '-O3', '-std=c++17', str(OUT/'solve.cpp'), '-o', str(OUT/'solve')], check=True)
-    raw = [[int(t) for t in line.split(';')] for line in (ROOT/'ciphers/armstrong-madison-1808/codex-2026-09-27b/glyphs.txt').read_text().splitlines() if line]
+    raw = [[int(t) for t in line.split(';')] for line in Path(os.environ.get('H15_GLYPHS_TXT', ROOT/'ciphers/armstrong-madison-1808/codex-2026-09-27b/glyphs.txt')).read_text().splitlines() if line]
     held = norm(gzip.open(next((ROOT/'tools/data/en18').glob('*thomas*')), 'rt').read())
     rows, shuf_rows = [], []
     for tag, nulls in [('null20', [20]), ('null20_22', [20, 22])]:
@@ -151,10 +151,10 @@ def main():
         verdict = 'PASS' if ge < max(1, round(.05*n)) else 'FAIL'
         rows.append((tag, N, K, f'{tsc:.6f}', ';'.join(f'{c[1]}/{c[2]}' for c in ctrl), n, f'{statistics.mean(v):.3f}', f'{statistics.pstdev(v):.3f}', f'{p95:.3f}', f'{v[-1]:.3f}', f'{ge}/{n}', verdict + (f' (target percentile {100*(n-ge)/n:.1f})')))
         print(tag, 'shuffles', n, 'mean', statistics.mean(v), 'p95', p95, 'max', v[-1], 'at/above target', ge, verdict, flush=True)
-    with (HERE/'h2_results.tsv').open('w') as f:
+    with Path(os.environ.get('H15_H2_RESULTS', HERE/'h2_results.tsv')).open('w') as f:
         f.write('model\tN\tK\ttarget_score\tcontrols_correct\tn_shuffles\tshuffle_mean\tshuffle_sd\tshuffle_p95\tshuffle_max\tshuffles_at_or_above_target\tverdict\n')
         for r in rows: f.write('\t'.join(map(str, r))+'\n')
-    with (HERE/'h2_shuffle_scores.tsv').open('w') as f:
+    with Path(os.environ.get('H15_H2_SCORES', HERE/'h2_shuffle_scores.tsv')).open('w') as f:
         f.write('model\tshuffle\tscore\n')
         for r in shuf_rows: f.write('\t'.join(map(str, r))+'\n')
 

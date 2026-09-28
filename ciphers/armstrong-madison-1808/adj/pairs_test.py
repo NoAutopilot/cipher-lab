@@ -24,7 +24,7 @@ tested (CLAUDE.md rule 3, the bCAS/AX-5799 lesson) and a positive control built 
 
 Offline, stdlib only.  python3 adj/pairs_test.py  (from the target folder or anywhere) -> adj/pairs_test.tsv
 """
-import math, random, re, statistics, csv
+import os, math, random, re, statistics, csv
 from collections import Counter
 from pathlib import Path
 HERE = Path(__file__).resolve().parent; T = HERE.parent
@@ -42,7 +42,7 @@ def ms_runs():
 
 def glyph_frags():
     frags = []
-    for r in csv.DictReader(open(T/'codex-2026-09-27b/glyphs.tsv'), delimiter='\t'):
+    for r in csv.DictReader(open(os.environ.get('H15_GLYPHS', T/'codex-2026-09-27b/glyphs.tsv')), delimiter='\t'):  # H15: alternative glyph table
         for part in r['symbols'].split('|'):
             toks = part.split()
             if toks: frags.append(toks)
@@ -136,7 +136,7 @@ def main():
                 cn = sorted(pos_stats(within_shuffle(cf))[0] for _ in range(100))
                 js.append(cj); hits += cj > cn[94]
             rows.append(('B', f'pair control ({variant}), error {e:.2f}', 'JSD mean; fraction of 200 controls above their own shuffle p95', f'{statistics.mean(js):.4f}; {hits/200:.2f}', 'power of the statistic at this error level'))
-    with open(HERE/'pairs_test.tsv', 'w') as f:
+    with open(os.environ.get('H15_OUT', HERE/'pairs_test.tsv'), 'w') as f:
         f.write('test\tsource\tstatistic\tvalue\tnote\n')
         for r in rows: f.write('\t'.join(r)+'\n')
     for r in rows: print(' | '.join(r))

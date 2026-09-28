@@ -1,0 +1,22 @@
+test	source	statistic	value	note
+A	ms_runs	runs / marks	28 / 218	
+A	ms_runs	even-length runs	8/28 = 0.286	coin-flip null: P(<=k) 0.018, P(>=k) 0.994
+A	ms_runs	pair-design control, error 0.00: even fraction	mean 1.000, p05 1.000	target even fraction below the control p05 = a pair design at that error level is excluded
+A	ms_runs	pair-design control, error 0.05: even fraction	mean 0.652, p05 0.500	target even fraction below the control p05 = a pair design at that error level is excluded
+A	ms_runs	pair-design control, error 0.10: even fraction	mean 0.555, p05 0.393	target even fraction below the control p05 = a pair design at that error level is excluded
+A	ms_runs	pair-design control, error 0.20: even fraction	mean 0.500, p05 0.357	target even fraction below the control p05 = a pair design at that error level is excluded
+A	glyph_frags	runs / marks	28 / 252	
+A	glyph_frags	even-length runs	14/28 = 0.500	coin-flip null: P(<=k) 0.575, P(>=k) 0.575
+A	glyph_frags	pair-design control, error 0.00: even fraction	mean 1.000, p05 1.000	target even fraction below the control p05 = a pair design at that error level is excluded
+A	glyph_frags	pair-design control, error 0.05: even fraction	mean 0.631, p05 0.500	target even fraction below the control p05 = a pair design at that error level is excluded
+A	glyph_frags	pair-design control, error 0.10: even fraction	mean 0.548, p05 0.393	target even fraction below the control p05 = a pair design at that error level is excluded
+A	glyph_frags	pair-design control, error 0.20: even fraction	mean 0.499, p05 0.357	target even fraction below the control p05 = a pair design at that error level is excluded
+B	glyph_frags	JSD odd vs even positions (bits); distinct shapes odd / even	0.1346; 32 / 27	within-fragment shuffle null: mean 0.1205, p95 0.1629, target percentile 74.8
+B	pair control (30 row shapes + 10 column shapes), error 0.00	JSD mean; fraction of 200 controls above their own shuffle p95	1.0000; 1.00	power of the statistic at this error level
+B	pair control (3 row shapes + 10 column shapes), error 0.00	JSD mean; fraction of 200 controls above their own shuffle p95	1.0000; 1.00	power of the statistic at this error level
+B	pair control (30 row shapes + 10 column shapes), error 0.05	JSD mean; fraction of 200 controls above their own shuffle p95	0.2238; 0.82	power of the statistic at this error level
+B	pair control (3 row shapes + 10 column shapes), error 0.05	JSD mean; fraction of 200 controls above their own shuffle p95	0.1969; 0.93	power of the statistic at this error level
+B	pair control (30 row shapes + 10 column shapes), error 0.10	JSD mean; fraction of 200 controls above their own shuffle p95	0.1642; 0.49	power of the statistic at this error level
+B	pair control (3 row shapes + 10 column shapes), error 0.10	JSD mean; fraction of 200 controls above their own shuffle p95	0.1271; 0.59	power of the statistic at this error level
+B	pair control (30 row shapes + 10 column shapes), error 0.20	JSD mean; fraction of 200 controls above their own shuffle p95	0.1418; 0.17	power of the statistic at this error level
+B	pair control (3 row shapes + 10 column shapes), error 0.20	JSD mean; fraction of 200 controls above their own shuffle p95	0.1211; 0.22	power of the statistic at this error level
