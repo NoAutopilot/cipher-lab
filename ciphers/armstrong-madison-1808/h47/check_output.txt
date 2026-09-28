@@ -1,0 +1,6 @@
+groups read 564 (distinct 273), glossed 270; per region f284L 81, f284R 157, f285L 111, f285R 131, f286L 18, f286R 66
+duplicate bands dropped: [('f284L', 6), ('f284L', 11), ('f284R', 17), ('f284R', 24), ('f285L', 13), ('f285L', 20)]
+(1) glossed groups whose value is in the legation table: 168; agree with its majority gloss: 64; gloss-shuffle null mean 6.27, p95 10
+(2) LOC copy stream 211 groups; groups matched in order with the NARA read: 172 (shuffled-NARA null mean 22.0, p95 31)
+glossed values not in the table (97): 7=stated, 025=bonaparte, 52=his, 087=the, 89=death, 89=ha, 115=suspected, 116=believe, 125=that, 146=troops, 169=gibraltar, 189=retreat, 216=wrapped, 234=left, 242=told, 248=which, 257=thro, 284=minister, 295=me, 305=of, 313=stated, 313=the, 313=eo, 333=english, 333=must, 377=her, 398=sentiments, 410=house, 421=intercepted, 474=knew, 477=force, 488=detail, 500=spain, 517=note, 521=and, 523=russian, 529=or, 534=reason, 574=frous, 578=possible, 593=and, 593=from, 594=minister, 594=stated, 594=that, 609=in, 611=by, 634=more, 665=were, 673=it, 724=itk, 725=the, 755=country, 763=disposition, 769=despatches, 772=prince, 792=si, 792=prussian, 795=the, 861=concerning
+(2b) one-for-one aligned groups 185: identical 172, differing 13 (7.0 pct); unpaired NARA 379 (the NARA pages outside the LOC copy's pages 2-3 among them), unpaired LOC 26

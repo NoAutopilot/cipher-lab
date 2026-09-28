@@ -64,3 +64,12 @@ print(f"(2) LOC copy stream {len(loc)} groups; groups matched in order with the 
       f"(shuffled-NARA null mean {sum(nl)/len(nl):.1f}, p95 {nl[int(.95*len(nl))]})")
 new = sorted({(g, gl) for g, gl in glossed if g not in key}, key=lambda x: int(x[0]))
 print(f"glossed values not in the table ({len(new)}): " + ", ".join(f"{g}={gl}" for g, gl in new[:60]))
+# digit-level disagreement between the two witnesses on the stretches difflib pairs one-for-one (an upper bound on
+# the NARA read's digit error there, since the LOC copy is itself one eye transcription at grade S)
+eq = rep = unp_n = unp_l = 0
+for op, a1, a2, b1, b2 in difflib.SequenceMatcher(None, nara, loc, autojunk=False).get_opcodes():
+    if op == "equal": eq += a2 - a1
+    elif op == "replace" and a2 - a1 == b2 - b1: rep += a2 - a1
+    else: unp_n += a2 - a1; unp_l += b2 - b1
+print(f"(2b) one-for-one aligned groups {eq + rep}: identical {eq}, differing {rep} ({100 * rep / max(1, eq + rep):.1f} pct); "
+      f"unpaired NARA {unp_n} (the NARA pages outside the LOC copy's pages 2-3 among them), unpaired LOC {unp_l}")

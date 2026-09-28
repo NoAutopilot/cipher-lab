@@ -3142,3 +3142,40 @@ corr/screen.py MISS at n=1,030 (usage frequency, not table coverage). What would
 the table's coverage of the whole code, i.e. more glossed legation pages (H47 adds the 24 Mar 1807 letter's three
 frames) -- a matter for the scout, not the target. No reading, no class change; nothing called new or first.
 Requests 0, vision 0. Cost: about 0.5 USD (`--spend` records 0.5 of the row's 1).
+
+## Campaign step H47 (28 Sept 2026, to 14:59 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H47 (record and scout, not the target): the NARA original of Erving to Madison No 21, Madrid 24 Mar 1807 ("In the
+Cipher of the Legation"), M31 reel 12 frames 284-286, read into the legation table.
+
+**Method.** Reel PDF on disk from H42 (not committed); frames rendered at native (1764x1180, 1684x1612, 1724x1188).
+`h29/band_cut.py --scale 2.0` on five regions, each checked on its debug overlay and re-cut where the guides sat a
+half pitch off: f284L (20,470-880,1010; centre 56, pitch 43, 12 lines), f284R (875,40-1730,1125; 37, 44.5, 24), f285L
+(0,0-860,1110; 82, 39.3, 26), f285R (790,470-1684,1612; 42, 43, 24), f286L (20,0-880,200; 90, 46, 2), f286R
+(815,0-1724,660; 80, 48, 12) -- 100 crops. Three blind Sonnet calls (the row's cap): f284L+R, f285L+f286L, f285R+f286R,
+reads in `h47/reads/`. Scored by `h47/check.py` (output `h47/check_output.txt`); a crop repeating the previous
+crop's group sequence is dropped as the same physical line (6 dropped: f284L 6, 11; f284R 17, 24; f285L 13, 20).
+
+**Results (564 groups, 273 distinct, 270 glossed):**
+- **Digits, against an independent witness of the same letter:** ARM-CORR's eye transcription of the LOC "Duplicate"
+  (corr/erving1807_groups.tsv, pages 2-3, 211 groups) is matched in order by 172 groups of the NARA read, against a
+  shuffled-NARA null mean 22, p95 31. On the 185 groups difflib pairs one-for-one, 13 differ (7.0 percent, an upper
+  bound on this read's digit error there, since the LOC transcription is itself one reader). The same letter, and the
+  two witnesses agree group for group.
+- **Glosses, against the legation table's majority** (recomputed in check.py from H43's inputs only, so no leakage):
+  64 of 168 testable glossed groups agree, against a gloss-shuffle null mean 6.3, p95 10. Most disagreements are the
+  readers' positional alignment of a phrase over a run of groups (the readers say so); 97 glossed values were new to
+  the table (e.g. 421 intercepted, 523 Russian, 763 disposition, 769 despatches, 1560 contents).
+- Readers' flags carried as M: leading 2-3 digit fragments at the fold of f285R (groups cut at the page edge, kept as
+  read), caret marks after some groups (noted), one struck gloss.
+
+**Table rebuilt** (`h43/build_key.py`, now with the H47 reads and the same duplicate guard): 622 values seen, 395
+glossed (831 glossed occurrences), **grade C 34** (was 21), M 361; KEY-DESIGN.tsv rebuilt, still **code numbers**
+(395 codes, 394 valued), `--check` current. Newly C: 293 means, 347 has, 478 for, 523 Russian, 674 which, 720
+more, 723 had, 870 their, 1340 an, 1343 and, 1370 she, 1560 contents, 1583 Henry (with 1603 = "Mister" before it: a
+two-group name, per the glosses). Not the target's code (H38 MISS at n=1,030); nothing here touches the target's
+reading or class. Rule 10: catalogued NARA despatches decoded by the period clerk; nothing called new or first.
+
+Vision: 3 of 4 subagent calls (Sonnet, about 167-183k tokens each, 11-13 minutes) plus the runner's looks at the
+three frames and five overlays. Requests: 0 (reel on disk). Cost: about 3 USD (`--spend` records 3, the row's est).

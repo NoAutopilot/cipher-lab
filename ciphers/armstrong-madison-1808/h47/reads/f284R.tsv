@@ -1,0 +1,175 @@
+crop	pos	group	gloss	conf	note
+1	1	421	intercepted	medium	gloss row "intercepted by the French Mister Hon-" sits above the single guide line at page/column top (no line above, edge of crop)
+1	2	611	by	medium	approx alignment
+1	3	795	the	medium	approx alignment
+1	4	1686	French	medium	approx alignment
+1	5	1651	Mister	medium	approx alignment
+1	6	1287	Hon	medium	gloss word "Hon-" appears truncated/hyphenated above this group
+1	7	1603	-	low	no gloss beyond 6 words
+1	8	1583	-	low	no gloss visible
+1	9	926	-	low	no gloss visible
+1	10	594	-	low	no gloss visible; plain word "him" follows last group, not counted
+2	1	1651	-	low	digit uncertain (could read 1851); plain clause "that he did not know" precedes this group on the line; small interlined correction "my answered" nearby, not a gloss for this group
+2	2	1661	-	low	no gloss visible
+2	3	242	-	low	no gloss visible
+2	4	97	-	low	no gloss visible
+2	5	11	-	low	triangle/caret mark after this group (note: mark); digit may be 114, partly obscured by the mark
+2	6	524	-	low	second numeral run on same crop, likely start of the following manuscript line shown as context; no gloss visible
+2	7	1340	-	low	no gloss visible
+2	8	114	-	low	no gloss visible
+2	9	934	-	low	no gloss visible
+2	10	975	-	low	no gloss visible; plain text "[he] had received ... Howick" (partly struck through) follows, not counted as groups
+2	11	1578	-	low	no gloss visible; continues from row above
+2	12	926	-	low	no gloss visible; marginal bracketed note "926 &c" visible at right edge, skipped as marginal
+3	1	69	information	low	gloss "information ... from Lord Howick" is carried context above top guide; plain word "private" precedes this group on the line; digit could be 6g/69
+3	2	253	-	low	no gloss visible
+3	3	40	-	low	no gloss visible
+3	4	248	-	low	no gloss visible
+3	5	704	-	low	no gloss visible
+3	6	1428	-	low	no gloss visible
+3	7	1545	-	low	no gloss visible
+3	8	1412	-	low	no gloss visible; row continues to "thro' the Russian Minister" (next line's gloss preview) below
+4	1	257	thro	medium	gloss "thro' the Russian Minister" above top guide; plain "which was given" precedes group 1 on the line
+4	2	1651	the	medium	approx alignment
+4	3	523	Russian	medium	approx alignment
+4	4	594	Minister	medium	approx alignment
+4	5	1607	-	low	no gloss beyond 4 words; plain "to that" follows, continues to next crop
+5	1	1651	the	low	gloss row "the contents ... of the" partly above top guide, partly within band; plain "effect who recited" precedes group 1 on the line
+5	2	1560	contents	medium	approx alignment
+5	3	335	-	low	small mark/caret above this group (note: mark)
+5	4	133	of	low	approx alignment
+5	5	1651	the	low	approx alignment
+5	6	765	-	low	small mark/caret above this group (note: mark); row cut at right edge
+6	1	926	he	medium	gloss "he the Prince suspected" above top guide; plain "but that" precedes group 1
+6	2	1651	the	medium	approx alignment
+6	3	1661	Prince	medium	approx alignment
+6	4	115	suspected	low	approx alignment
+6	5	62	-	low	no gloss visible
+6	6	2589	-	low	digit run uncertain (could be 2 separate groups, e.g. 258/9); no gloss visible; plain "this to be" follows, continues to next crop
+7	1	133	of	medium	gloss "of the English Government Minister" above top guide; plain "a mere artifice" precedes group 1
+7	2	1651	the	medium	approx alignment
+7	3	333	English	medium	approx alignment
+7	4	1010	Government	medium	approx alignment
+7	5	284	Minister	medium	approx alignment
+7	6	1603	-	low	no gloss beyond 5 words
+7	7	1583	-	low	no gloss visible
+8	1	NONE	-	-	no numeric code group visible on the row between the two guides; only plain/interlined text: small marginal-looking word "Honnius"(?) then "answered ... that could not" (a clause); numerals visible at the very bottom edge of the crop belong to the next line (see crop 9)
+9	1	926	-	low	gloss row above ("Honnius"/"answered") is sparse; "answered" may gloss one of these groups but alignment is uncertain
+9	2	594	-	low	no clear gloss
+9	3	524	answered	low	best-guess approx alignment with "answered" from row above
+9	4	1340	-	low	no clear gloss
+9	5	114	-	low	no clear gloss
+9	6	934	-	low	no clear gloss
+9	7	975	-	low	no clear gloss; plain "that could not" precedes group 1 on the line; small gloss words "contents/were/correctly" appear later in this crop, positioned above the following line's numerals (see crop 10)
+10	1	1560	contents	medium	gloss "contents were correctly" sits low in this crop, just above top guide of crop's own numeral row; plain "by, because the" precedes group 1
+10	2	335	were	medium	approx alignment
+10	3	665	-	low	small mark/caret above this group (note: mark)
+10	4	908	correctly	medium	approx alignment
+10	5	533	-	low	no gloss beyond 3 words
+10	6	111	-	low	no gloss visible
+10	7	38	-	low	no gloss visible; plain "at them" follows, continues to next crop
+11	1	313	the	low	gloss "the English must" above top guide; plain "stated" precedes group 1
+11	2	97	English	low	approx alignment
+11	3	333	must	low	approx alignment
+11	4	1250	-	low	no gloss beyond 3 words; plain "at the" precedes this group on the line
+11	5	1203	-	low	no gloss visible
+11	6	742	-	low	no gloss visible; plain "have got" precedes this group on the line
+11	7	87	-	low	no gloss visible; digit uncertain, cut at edge; plain "at them" precedes, continues to next crop
+12	1	1886	by	medium	gloss/plain row "by means of their spies" sits directly above this numeral row, both between the guides
+12	2	293	means	medium	approx alignment
+12	3	733	of	medium	small mark/caret near this group (note: mark)
+12	4	870	their	medium	approx alignment
+12	5	1212	spies	medium	approx alignment
+12	6	163	-	low	no gloss beyond 5 words; small mark after this group (note: mark); row continues "this subject" (next context) at right edge
+13	1	236	-	low	gloss row "lost / 3 Meiter Henry" above top guide; alignment to individual groups uncertain
+13	2	1603	Meiter	low	digit uncertain (1603/1609); approx alignment with "Meiter" (Mister?)
+13	3	1583	Henry	low	approx alignment; "Henry" likely a proper name
+13	4	926	-	low	ink overlap in source makes this and next group hard to separate cleanly
+13	5	594	-	low	overlapping ink with previous group, digits uncertain
+13	6	524	-	low	no gloss visible
+13	7	244	-	low	no gloss visible
+13	8	1212	-	low	no gloss visible
+13	9	133	-	low	no gloss visible; row continues "the march of troops" (next line's gloss preview) below
+14	1	1651	the	medium	gloss "the march of troops" above top guide; gloss phrase likely spans only first few groups
+14	2	463	march	medium	approx alignment
+14	3	608	of	medium	approx alignment
+14	4	133	troops	medium	approx alignment
+14	5	111	-	low	no gloss beyond 4 words
+14	6	146	-	low	no gloss visible
+14	7	1094	-	low	small mark/caret above this group (note: mark)
+14	8	422	-	low	no gloss visible
+14	9	1290	-	low	no gloss visible; plain "into France" follows last group on the line, not counted
+15	1	1343	and	medium	gloss "and the Prince told him that Bonaparte" above top guide; plain "and the Prince told" also legible directly on/near the line
+15	2	1651	the	medium	approx alignment
+15	3	1661	Prince	medium	approx alignment
+15	4	242	told	medium	approx alignment
+15	5	97	him	medium	approx alignment
+15	6	1114	that	low	small mark/caret near this group (note: mark); digit could be 111 + mark
+15	7	1570	Bonaparte	low	small mark/caret above this group (note: mark)
+15	8	825	-	low	no gloss beyond 7 words
+15	9	593	-	low	no gloss visible; row continues to next crop
+16	1	648	-	low	digit hard to read in this crop (clearer in crop 17); gloss "to him offering" positioned later in the row, not over this group
+16	2	1590	-	low	digit hard to read in this crop (clearer in crop 17)
+16	3	244	to	low	plain "had written" precedes this group on the line; approx gloss alignment
+16	4	1114	him	low	small mark/caret near this group (note: mark); approx gloss alignment
+16	5	134	offering	low	approx gloss alignment
+16	6	66	-	low	no gloss visible; plain word "him" follows last group, not counted
+17	1	648	-	low	crop re-shows same line as crop 16 (overlapping band), digits read more clearly here; independent read
+17	2	1590	-	low	digit clearer than crop 16 but still uncertain
+17	3	244	to	low	plain "had written" precedes this group on the line
+17	4	1114	him	low	small mark/caret near this group (note: mark)
+17	5	134	offering	low	approx gloss alignment
+17	6	66	-	low	no gloss visible; plain "him" follows, not counted
+18	1	305	of	low	gloss row above reads roughly "[Secretary] of Hanover under/or for"; plain "the" precedes group 1 on the line
+18	2	977	Hanover	low	approx alignment
+18	3	691	-	low	no gloss beyond 2 words
+18	4	743	-	low	no gloss visible
+18	5	133	-	low	no gloss visible
+18	6	724	-	low	no gloss visible
+18	7	529	-	low	no gloss visible
+18	8	934	-	low	no gloss visible
+18	9	47	-	low	small mark/caret after this group (note: mark); digit uncertain, cut at edge; plain "himself" follows on next line
+19	1	111	-	low	small mark/caret with this group (note: mark); digit possibly 114; no clear gloss above (context row only shows "himself")
+19	2	1419	-	low	no gloss visible
+19	3	926	-	low	plain "and that" precedes this group on the line
+19	4	377	-	low	plain "therefore sent" precedes this group on the line; word "sent" uncertain, cursive
+19	5	111	-	low	no gloss visible; row continues "troops to occupy that Country" (next line's gloss preview) below
+20	1	146	troops	medium	gloss "troops ... to ... occupy ... that Country" above top guide, spanning across the row
+20	2	1198	to	low	small mark/caret with this group (note: mark)
+20	3	244	occupy	medium	approx alignment
+20	4	125	that	medium	approx alignment
+20	5	755	Country	medium	approx alignment
+20	6	1635	-	low	no gloss beyond 5 words
+20	7	1578	-	low	small mark/caret above this group (note: mark)
+20	8	903	-	low	small mark/caret above this group (note: mark)
+20	9	1603	-	low	no gloss visible; row continues "Minister Henry" / "stated" (next line's gloss preview) below
+21	1	1583	Mister	low	"Mister/Minister Henry" appears to be plain text (a name) on this line rather than a decode gloss; gloss word "stated" (small) sits above, uncertain which group it glosses
+21	2	926	Henry	low	plain text (name), see note pos1
+21	3	594	stated	low	best-guess approx alignment with gloss "stated"
+21	4	524	-	low	no clear gloss
+21	5	313	-	low	no clear gloss
+21	6	97	-	low	no clear gloss; row continues "a great many / to discourage" (next line's gloss preview) below
+22	1	244	a	low	gloss "a great many to discourage" above top guide; plain "sensible & strong objections" precedes group 1 on the line; digit uncertain, may read as letters "2AA" in source, interpreted as 244
+22	2	1451	great	low	approx alignment
+22	3	956	many	low	approx alignment
+22	4	380	discourage	low	approx alignment; gloss word "to" may belong between this and prior group
+23	1	1000	-	low	no distinct gloss row visible above (context row reused from crop 22); plain clause "the [crossed-out] project, all the Prince seemed" appears on this line before/around the numerals; digit could be 1000 or 1900
+23	2	1651	-	low	no gloss visible
+23	3	1656	-	low	no gloss visible
+23	4	162	-	low	no gloss visible
+23	5	1497	-	low	small mark/caret above this group (note: mark)
+23	6	1521	-	low	no gloss visible
+23	7	377	-	low	no gloss visible
+23	8	1651	-	low	no gloss visible
+23	9	1661	-	low	no gloss visible
+23	10	1183	-	low	no gloss visible; last group before page/column edge
+24	1	1000	-	low	crop re-shows the same final line as crop 23 (tail of column, page edge below); no gloss row visible in this crop (cut off at top)
+24	2	1651	-	low	no gloss visible
+24	3	1656	-	low	no gloss visible
+24	4	162	-	low	no gloss visible
+24	5	1497	-	low	small mark/caret above this group (note: mark)
+24	6	1521	-	low	no gloss visible
+24	7	377	-	low	no gloss visible
+24	8	1651	-	low	no gloss visible
+24	9	1661	-	low	no gloss visible
+24	10	1183	-	low	no gloss visible; below this row the crop is blank (bottom margin of the page)
