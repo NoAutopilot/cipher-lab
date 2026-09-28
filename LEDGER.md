@@ -1316,3 +1316,13 @@ the end of every wake.
 | 28 Sept 2026 | ARM-KEYHUNT | session_016AAYdrR1XwDKAE1SKaowev | owner | Opus 5.5 | cap 40 | running from 16:34 | private-cipher key hunt |
 | 28 Sept 2026 | HARVEST-A | session_01SfpD5spXsfwXpLx63sDp6R | owner | Opus 5.5 | cap 50 | running from 16:34 | KEY-ADJACENT ranks 2, 3, 8 |
 | 28 Sept 2026 | HARVEST-B | session_017ZKFLiSHTrLRNnv3DRyEAn | owner | Opus 5.5 | cap 50 | running from 16:34 | KEY-ADJACENT ranks 10-14 |
+| 28 Sept 2026 | VERIFY-F61-V4 | session_014nSPzcuub15LNNfvGjJbRp | owner | Opus 5.5 | 10.32 | done 16:28, archived | key v4 holds; meter 12/59/28 |
+| 28 Sept 2026 | F61-FAMILY-7 | session_01UnUDkJzBPMGtkTLUukueM8 | owner | Opus 5.5 | 3.46 | done 16:19, archived | fr.3641 other cipher; fr.4699 not digitised |
+| 28 Sept 2026 | HARVEST-A | session_01SfpD5spXsfwXpLx63sDp6R | owner | Opus 5.5 | 15.76 | done 17:07, archived | Birago-Nevers f.11r reading ready |
+| 28 Sept 2026 | HARVEST-B | session_017ZKFLiSHTrLRNnv3DRyEAn | owner | Opus 5.5 | 5.05 | done 16:47, archived | 3 found-solved, 2 blocked |
+| 28 Sept 2026 | ARM-KEYHUNT | session_016AAYdrR1XwDKAE1SKaowev | owner | Opus 5.5 | 9.68 | done 17:02, archived | 1805 Armstrong-Monroe cipher lead |
+| 28 Sept 2026 | f61 runner 4 | session_01NQpd6L9ZvLvjU1L7ttFmZs | owner | Opus 5.5 | 54.03 | retired 17:16 at 650k, archived | H65-H110 |
+| 28 Sept 2026 | f61 runner 5 | session_01RbeePKZVn83gNfES8yFmhe | owner | Opus 5.5 | continuous | running from 17:16 | trig_01XTmr23DCp4QiKvnptoVYVo :45 |
+| 28 Sept 2026 | OUT-CHECK-ARM | session_01B28UUnvadEXEFPJAHiJXXn | owner | Opus 5.5 | cap 8 | running from 17:15 | fact check of Armstrong requests |
+| 28 Sept 2026 | ARM-KEYHUNT-2 | session_015U9LQgDbMrjdSZ1UTuXVif | owner | Opus 5.5 | cap 40 | running from 17:15 | 1805 Monroe-cipher specimen hunt |
+| 28 Sept 2026 | VERIFY-CEPPO-1 | session_01EpWWnYNwp1MkRSRriZy2pH | owner | Opus 5.5 | cap 25 | running from 17:16 | Birago-Nevers f.11r audit |

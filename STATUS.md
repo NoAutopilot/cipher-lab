@@ -2448,6 +2448,24 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 10:18 Pacific [17:18 UTC]): f.61 meter corrected to 12/59/28 by its verifier; the harvest vein is mostly mined; Armstrong gets a named lead
+
+Counts 18 / 2 / 1 / 6, unchanged.
+
+**Corrections to what the owner was told at 16:12 and 16:35.** VERIFY-F61-V4 (10.32) holds key v4 (known spans 48/55 = 0.873 reproduced, fresh 4,000 permuted keys p95 0.455, none at or above; no leakage into the key; all five splits re-sorted blind 10/10-14/14), but grades the meter 12 firm / 59 two-way / 28 unread, not 20/59/20: eight of the twenty "firm" signs rest on one class (C6 = e) supported by three gloss tokens, which falls on Tomokiyo's dashes at all six span positions and is regraded I. Recovered passages: none (no run of three firm letters; the blind phrase control ranks the true key 9th of 21). The runner also voided two of its own f.108v results (H100 and H110 judge calls, and H103 with them): the judges ran scripts against the prompt. H85, H93, H94 and the known-line controls stand.
+
+**Harvest.** HARVEST-A (15.76) and HARVEST-B (5.05) ran the web and blog gate first on eight KEY-ADJACENT rows: five were already read elsewhere (Bourdeau's lebel1593; DECODE records 2765, 8346 and 8350 marked Decrypted with Tomokiyo keys; Tomokiyo's charlesii reading), two are blocked on an undigitised volume (Clairambault 577, ASKS 94), and one gives a partial reading: Birago to Nevers, Saluzzo 14 Sept 1570 (BnF fr.3251 f.11r) under Tomokiyo's printed Ceppo-Nevers key, key rank 1 of 201 shuffles (reconciled, not blind) and 2 of 201 on a blind pass, judge FAIL. VERIFY-CEPPO-1 (session_01EpWWnYNwp1MkRSRriZy2pH) spawned 17:16. Lesson recorded: the gate now catches prior readings in minutes instead of days; the open KEY-ADJACENT pool is mostly exhausted, and the next harvest must cross-check DECODE's catalogue before briefing.
+
+**Armstrong.** ARM-KEYHUNT (9.68): Bowdoin-Temple printed runs, Founders Online, NARA M34 roll 13, LOC Monroe reel 3 screened; no candidate. Named lead: in March-April 1805 Armstrong's office sent Madison a copy of a letter to Monroe in "the cypher established between him [Monroe] and me", docketed "inexplicable cypher" -- the same thing Madison says happened in 1808. ARM-KEYHUNT-2 (session_015U9LQgDbMrjdSZ1UTuXVif) hunts a surviving 1805 specimen (LOC Madison Papers, all LOC Monroe reels, NYPL). Request drafts to NYPL (Monroe papers MssCol 2035), NYHS (Armstrong papers) and the FDR Library (Rokeby microfilm) are in the project Gmail as drafts; OUT-CHECK-ARM (session_01B28UUnvadEXEFPJAHiJXXn) is fact-checking them before the owner sends.
+
+**f.61.** F61-FAMILY-7 (3.46): fr.3641 f.126 is a different cipher; fr.4699 (Fortia, Lyon, 7 Feb 1593, with its decipherment) is not digitised, request drafted (family/REQUEST_fr4699.md). Runner 4 retired at 650k (54.03, archived); runner 5 session_01RbeePKZVn83gNfES8yFmhe (trig_01XTmr23DCp4QiKvnptoVYVo :45) takes H108 and H111 with judge prompts that forbid tool use.
+
+**Blocker line, f.61.** The 59 two-way choices, the 28 unread (the five rare classes and C6), and nothing firm enough for a phrase; routes: ASKS 88, 89, 93 (a person reads the gloss words), fr.4699 (a fourth glossed hand), H111/H108.
+
+**Mercy.** Counted N4. Its runner paused its own trigger near 590k at 17:00 after the Burgsdorf crib passed four nulls and a blind adversarial review (a strong candidate, not an identification); the campaign holds; no replacement runner.
+
+**GitHub.** Posting the Mercy notes on the two solver repositories from this session was refused by the classifier; the owner posts them from the pre-filled links in outreach/.
+
 ### Orchestrator note (28 Sept 2026, 09:12 Pacific [16:12 UTC]): f.61 key v4 moves the meter to 20 / 59 / 20; verifier on it; no prior reading on the web for the three live campaigns
 
 Counts 18 / 2 / 1 / 6, unchanged. Check-in run early at the owner's request; the 16:15 wake moved to 17:08.
