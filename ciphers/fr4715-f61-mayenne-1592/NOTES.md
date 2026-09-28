@@ -1271,7 +1271,7 @@ The sign side is fine: the four passes on L01/L02 now on disk (two cuts, four in
 the material for a reconciled draft of those two lines whenever a key needs it. Not a reading; no class change; nothing
 solved, new or first; no credentials, no AskUserQuestion; the owner not named.
 
-Files: `images/f108g/` (bands.json, debug overlay, one sample committed; 24 crops regenerable), `images/requests_h34.log`,
+Files: `images/f108g/` (bands.json, debug overlay and, since the close of this runner, all 24 crops committed as the H34 pass inputs, 3.3 MB; regenerable by the stanza), `images/requests_h34.log`,
 `images/regen_f61r_sheets.sh` (stanza), `scripts/PROMPTS.md` (H34 sections), `scripts/gloss108gA/B.tsv`,
 `scripts/pass108gA/B_classes.tsv`, `scripts/f61gloss.py` (--tag/--gloss/--signs/--bands options, the H21 default byte-identical),
 `scripts/f61gloss_h34_result.txt`, `scripts/f61gloss_h34_counts.tsv`; HYPOTHESES.md row added. Vision calls: 4 of 4.
