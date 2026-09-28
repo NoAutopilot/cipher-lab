@@ -40,7 +40,11 @@ def clear_text():
     files = sorted(glob.glob(f"{P}/f177r_clearA_*.tsv")); lines = {}
     for f in files:
         for r in g.rd(f): lines.setdefault(r["line"], r["text"])
-    order = sorted(lines, key=lambda l: int(l[1:])); t = ""
+    order = sorted(lines, key=lambda l: int(l[1:]))
+    for f in sorted(glob.glob(f"{P}/f177v_clearA_*.tsv")):    # H177b stage 2c: fol. 177v lines (V01...) follow fol. 177r
+        for r in g.rd(f): lines.setdefault("V" + r["line"].lstrip("LV"), r["text"])
+    order += sorted([l for l in lines if l.startswith("V")], key=lambda l: int(l[1:]))
+    order = [l for l in order if not l.startswith("V")] + [l for l in order if l.startswith("V")]; order = list(dict.fromkeys(order)); t = ""
     for l in order:
         x = lines[l]
         if l == "L01": x = x.split("/", 1)[1] if "/" in x else x

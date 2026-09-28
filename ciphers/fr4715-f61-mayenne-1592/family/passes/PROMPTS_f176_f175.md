@@ -62,3 +62,16 @@ fol. 177r L01-L34 (2,589 letters read) covers about 39 cipher rows, so no clear 
 inline replies (runner writes the files from the hand-back text): passes A/B of f.176r L20-L26 and of L27-L33, prompt = stage 2a's with the
 row range changed. Then build_f176_key.py L01-L33 (same design, same wrong-text control). fol. 177v is cut as strips for a later stage
 (`sheets/f177v_strips/`).
+
+## H177b stage 2c (runner 6, 28 Sept 2026) -- WRITTEN BEFORE THE CALLS
+3 Opus vision calls, inline replies (runner writes the files verbatim): passes A/B of f.176r L34-L40 (stage 2a prompt, rows changed) and one
+read of fol. 177v strips 1-4 (`sheets/f177v_strips/`, crops in scratch) -> `passes/f177v_clearA_S01-S04.tsv`, lines numbered V01...
+in reading order. build_f176_key.py now appends fol. 177v lines after fol. 177r's (code change pushed with this section; L01-L33 output
+unchanged, --check OK before the calls).
+Strip prompt: "You are a reader of 16th-century French secretary hand. Use no tool other than your image reader on the files named
+here; run no command, write no file. Read four overlapping horizontal strips of one manuscript page, in order: <strip01..04>. Each strip
+shows about four lines of writing and overlaps the next by about one line. Transcribe every line whose writing is fully inside a strip,
+top to bottom; a line cut at a strip's top or bottom edge is skipped there (it appears whole in the neighbouring strip); a line that
+appears whole in two strips is written once. Letter by letter, period spelling, abbreviations not expanded (superscripts as '^'), '?' for
+an illegible letter, [brackets] for an uncertain word; ignore marginal notes left of the text block. Reply inline ONLY with a TSV block,
+header 'line<TAB>text<TAB>conf', lines numbered V01, V02, ... in reading order. Nothing else."
