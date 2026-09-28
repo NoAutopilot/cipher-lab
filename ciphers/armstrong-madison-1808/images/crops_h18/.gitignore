@@ -1,2 +1,4 @@
 # subagent scratch sub-crops (H18 readers cut their own zooms here); not committed
 *_line[0-9]*.png
+*_L[0-9]*.png
+*.png
