@@ -989,3 +989,24 @@ numeral's own component, not a mark above it). A pixel detector for this layer n
 confirmed tick to calibrate against, which the record does not contain, and the bleed-through cannot be separated by
 threshold on crops that are already near-binary. Dropped (instrument failed its known-answer control; not re-tuned; the
 A-mark disagreement between the B35 readers stays unresolved). Needs: doc (a higher-resolution or greyscale frame).
+
+## Step B20 (28 Sept 2026, queued 05:2x, ran in the background, finished 07:10; written up 07:11 UTC) -- reply chain, Jefferson side June-Oct 1808: no mention of the undecyphered letter
+
+Route: the B6 Wayback loop (`web.archive.org/web/2025id_/https://founders.archives.gov/documents/Jefferson/99-01-02-<id>`),
+ids 8091-8900, one request at a time, keyword flag on "cypher"/"cipher"/"decypher" and a title flag on Armstrong.
+Positive control: the same loop returned the 15 May 1808 sentence at id 8003 (B6). Yield: 810 ids attempted, 792
+HTTP 200, 17 HTTP 000 (proxy or Wayback miss) and one 403, not retried inside the loop (good-citizen rule); the 18
+failed ids are 8100 8115 8142 8153 8156 8160 8183 8239 8261 8409 8420 8424 8478 8562 8753 8754 8846 8868, listed here
+for one later retry pass. Dated range covered: 2 June to 19 October 1808 (Early Access ids run beyond the B20 row's
+"June-Dec" label only to mid-October at id 8900).
+
+Results: two keyword hits, both noise -- Wilkinson to Jefferson, 16 July 1808 (a voucher "lost or mislaid together
+with a Cypher" of his Mexican agent) and Jefferson to Robert Smith, 9 August 1808 ("a person of Boston whose name I
+cannot decypher"). Armstrong's own two letters to Jefferson in the range (15 June 1808, id 8145; 28 July 1808, id 8403)
+carry no cypher, cipher, code or February reference (raw HTML grep). The 30 Armstrong-titled or Armstrong-mentioning
+items (Warden, Short, Lafayette, Du Pont, Madison-Jefferson exchanges of 7, 13 and 18 September 1808) name him without
+any cipher context. Taken with B6 (15 and 20 May 1808 are the only mentions) and B12 (Aug 1808-Feb 1809, Madison side),
+the Jefferson channel from June to October 1808 does not return to the undecyphered 20 Feb 1808 letter. A search
+result, not a novelty verdict (rule 10). Files: scratch only (`jefferson_8091_8900.tsv`, fetched pages under
+`fo/`), not committed, per the B6 convention; the row's numbers are the record. Result: done (search result, nothing
+found). B31 (ids 7400-8002, Jan-May 1808) is running behind it on the same single-threaded loop.
