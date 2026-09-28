@@ -13,6 +13,8 @@ their occurrences in ciphertext_ms.txt (value-bound marks), vs a null that keeps
 values among all groups of the same digit length (2,000 draws). Also reports marks by class and, for LOW marks, by the
 digit they sit under (frame 956's printed rules give meaning to last / penult / antepenult).
 Writes marks/h18_inventory.tsv and prints the summary.
+H21 (28 Sept 2026): a held mark listed in marks/h21/drops.tsv (second reader's zoom: no mark) is written with status
+'dropped (H21 zoom)' and left out of the accepted set; promoted marks arrive as h18_passes/*_C.tsv pass files.
 """
 import collections, csv, glob, random, re
 from pathlib import Path
@@ -53,6 +55,10 @@ for page, items in sorted(bypage.items()):
             for k in ('last', 'penult', 'antepenult', 'first', 'second'):
                 if k in d: under = k; break
         rows.append((page, ln, g, cls, under, status, len(sources), ' | '.join(f'{i[0]}/{i[1]}: {i[4]} ({i[5]})' for i in its)))
+drops = set()
+if (HERE/'h21'/'drops.tsv').exists():
+    for r in csv.DictReader(open(HERE/'h21'/'drops.tsv'), delimiter='\t'): drops.add((r['page'], r['group'], r['class']))
+rows = [r if (r[0], r[2], r[3]) not in drops or r[5] == 'accepted' else r[:5] + ('dropped (H21 zoom)',) + r[6:] for r in rows]
 with open(HERE/'h18_inventory.tsv', 'w') as f:
     f.write('page\tline\tgroup\tclass\tunder_digit\tstatus\tn_sources\tdetails\n')
     for r in rows: f.write('\t'.join(map(str, r))+'\n')
