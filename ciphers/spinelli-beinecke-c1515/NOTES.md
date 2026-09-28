@@ -1270,3 +1270,42 @@ agreement (89.5-96.5%) behind the AB grades. **Files:** `passes/opus_settled.tsv
 `passes/letter_codes_v4.tsv`, `passes/ciphertext_v4.txt`, `glyphs/labels.json`, HYPOTHESES.md row. **Cost:** this
 runner's direct-look turns over six montages and CPU -- recorded as 2.0 USD (the est). No vision calls, no requests,
 no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H31 (28 Sept 2026, 03:57-03:58 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H31: test the H30 crib placement (p.[1] line 1 pos 14, the 15-code
+partial key ESS=l SEVEN=a PI=b OMEGABAR=e SIX=r NINE=n FOUR=t XCURL=i OMEGADOT=o PHI=i HCURL=a DIAMOND=g EM=n TWO=i
+THREE=a) with a statistic it was NOT selected by. Pre-registered pass: above the shuffled-key p95 on the bigram
+statistic and not worse than Italian on the letter distribution; else the placement is logged as the unigram artefact
+H30 predicted and the crib route on this coding is closed.
+
+**Tool (Usage 8, shared):** `tools/partial_key_test.py` -- mean log P(b|a) over adjacent mapped pairs and log
+P(c|ab) over mapped triples under the it16 bigram/trigram model (add-0.5), and KL(mapped letters || Italian);
+controls: 200 shuffled KEYS (the same 15 letters permuted over the same 15 codes -- unigram total unchanged, only the
+order structure can move) and the best crib placement of each of 50 shuffled-ORDER copies scored on its own text
+(placements selected exactly as the real one was). Offline test `tools/tests/test_partial_key_test.py`: on a real
+Italian window under a substitution, the true 15-code partial key scores bigram -2.367 against a shuffled-key p95 of
+-3.319, and a wrong assignment (-3.538) is not flagged -- the instrument has power on a clean case. SYSTEM.md row added.
+
+**Result: FAIL on the pre-registered criterion -- the placement carries no letter-order structure beyond what a
+random assignment of its own letters gives.** 179 mapped tokens of 259, 119 adjacent pairs, 79 triples:
+
+| statistic | real | shuffled-key (200): mean / p95 / max | rank of real | shuffled-order placements (5 of 50 copies placed) |
+|---|---|---|---|---|
+| bigram mean log P(b\|a) | -2.903 | -3.046 / -2.859 / -2.724 | 26/200 at or above (p about 0.13) | mean -3.153, max -2.765; real 1/5 at or above |
+| trigram mean log P(c\|ab) | -3.031 | -3.297 / -3.002 / -2.780 | 17/200 at or above (p about 0.085) | mean -3.469, max -2.779; 1/5 |
+| KL from Italian (nats) | 0.555 | 0.614 / p05 0.477 / min 0.449 | 60/200 at or below | mean 0.554; 2/5 |
+
+Reading: the bigram and trigram means sit above the shuffled-key mean but under the p95 (a real Italian partial key
+of this size clears the p95 by about one nat on the synthetic), and the letter distribution is no closer to Italian
+than a random permutation of the same letters (KL 0.555 against a control mean of 0.614 and a p05 of 0.477). With the
+selection caveats already logged in H30 (third coding tried, second of three settings, 0/15 agreement with the
+key-as-read, three codes each for a and i), this is the unigram artefact: a 22-letter crib rich in a, i, n placed so
+that the letter's most frequent codes carry the most frequent Italian vowels. **The crib route on the v4 coding is
+closed** as pre-registered; no anchor, no reading, no class change. What remains for the crib is a different
+instrument, not a re-tuning: Domnina's Fig.1 (H6/H8, needs: doc) would fix which shapes are letters and which nulls,
+after which the same drag runs as a key test rather than a pattern search.
+
+**Controls:** the two control families above and the tool's synthetic positive/negative test. **Files:**
+`tools/partial_key_test.py`, `tools/tests/test_partial_key_test.py`, SYSTEM.md. **Cost:** CPU only (seconds) --
+recorded as 1.0 USD (the est). No vision calls, no requests, no credentials, no AskUserQuestion, no other target touched.
