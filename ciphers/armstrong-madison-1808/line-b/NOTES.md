@@ -476,3 +476,40 @@ no doubt communicated to you..."), the roll-13 marginal decodes Bourdeau harvest
 the target's 0/1-heavy units or shorthand runs. **Result: search result with its control -- Armstrong's despatches
 Nov 1804-Dec 1807 on roll 13 are all in the office code; no earlier use of the private code survives in DUSMF.**
 Requests: catalog.archives.gov 1; 0 subagents.
+
+## Step B19 (28 Sept 2026, 04:32-04:36 UTC) -- B1's statistics under the REAL period tables: the family's own tables do not produce the target's row structure
+
+`b19/real_tables.py`: 60 en18 letters of 369 coded tokens encoded with WE028 (Monroe's table as transcribed by
+Tomokiyo, 1,228 single-word entries to value 1260 in `tools/data/uscodes-1800/WE028.tsv`) and with Bourdeau's THE=972
+table (527 words to 1600), scored with B2's statistics (words the table lacks dropped as wildcards; caveat: both
+tables are partial and word-only, so their letters carry 90-127 distinct values against the target's 216).
+
+| statistic | target | WE028 letters: mean, p05-p95 (pct) | THE=972 letters: mean, p05-p95 (pct) |
+|---|---|---|---|
+| r_fam | 0.630 | -0.021, -0.10 to 0.15 (100) | -0.023, -0.05 to 0.00 (100) |
+| r_34 | 0.422 | -0.012, -0.08 to 0.09 (100) | -0.057, -0.09 to -0.02 (100) |
+| r_1xyz | 0.208 | -0.046, -0.09 to 0.11 (97) | 0.131, -0.04 to 0.41 (65) |
+| r_row | -0.063 | 0.058, -0.06 to 0.27 (5) | 0.000, -0.06 to 0.09 (2) |
+| S_w | 0.621 | 0.072, 0.00 to 0.25 (100) | 0.023 (98) |
+| z0 share 3-digit / 4-digit | 0.387 / 0.390 | 0.089 / 0.144 (100 / 100) | 0.094 / 0.100 (100 / 100) |
+| rare digits 2,3,5,9, 3-digit / 4-digit | 0.076 / 0.059 | 0.462 / 0.335 (0 / 0) | 0.615 / 0.332 (0 / 0) |
+| 2-digit token share | 0.358 | 0.042 (100) | 0.006 (100) |
+
+**Result, control-backed (the 60-letter bands are the control):** a real blockwise-alphabetical table of the State
+Department family gives r_fam and r_34 at zero, flat suffix digits and almost no 2-digit tokens; the target sits at
+percentile 100 or 0 on every row statistic. The target's decade-family structure (B1) is therefore not a property
+of the family's tables that ARM-A2 already excluded by value; it is a different design from the office codes. Requests:
+none; 0 subagents; 4 minutes by the clock.
+
+## Step B21 (28 Sept 2026, 04:33-04:37 UTC) -- Gallatin as the "other correspondent": nothing in print or in the reachable finding aid
+
+Step 1, offline: `tools/data/en18/writingsalbertg01gallgoog.txt.gz` (Adams, *Writings of Albert Gallatin* I, 1879):
+no Armstrong passage dated 1807-08 or naming France/Paris; the volume's seven cipher/cypher mentions are the 1813-14
+Ghent-mission correspondence (Crawford's cipher). Step 2: be-api full text on Adams's *Life of Albert Gallatin*
+(IA `bwb_P8-BXX-928`; queries "Armstrong 1808", "Armstrong cipher", "General Armstrong"): Armstrong appears only in
+the 1804 nomination fight, the 1810 Cadore letter and the Clinton politics; no cipher. Step 3: the NYHS Gallatin
+Papers Project records finding aid (`findingaids.library.nyu.edu/archives/rg_21_3_1/all/`, 70 KB, read): no Armstrong
+and no cipher entry; the Gallatin Papers themselves (NYHS, microfilm edition) have no item-level aid reachable from
+the cloud. Positive control for step 1 not run explicitly (the volume's 1808 embargo letters were not grepped); the
+result is a search result at the print level only: **no evidence that Gallatin was the correspondent; not excluded.**
+Requests: archive.org 1, be-api 3, findingaids.library.nyu.edu 1; 0 subagents.
