@@ -1,0 +1,6 @@
+You are helping read a damaged passage of a 17th-century Spanish letter. The passage below between the clear context is given as a run of letters with no spaces; '?' marks a sign that could stand for one or two letters, and a few letters may be wrong. Spelling is period Spanish (u/v and i/j interchange, no accents).
+Question: what does the damaged run most likely say? In particular, name the PERSON it refers to (the proper name, as exactly as you can) and any OFFICE or title given to that person. Give your best reading with word spaces, then one line 'PERSON: ...' and one line 'OFFICE: ...', then one line of confidence (high/medium/low) and the letters that support it. Use your knowledge of the period if it helps.
+
+CLEAR CONTEXT BEFORE (a letter of June 1648 from the Brussels court to an envoy): ... y confiar della. Pasareis a Cleues a ueros con el Elector de Brandenburg
+DAMAGED RUN: yeoneop?radlonburgs?rfs?cmare?mayorpara?iensei
+CLEAR CONTEXT AFTER: embian cartas de creencia que uan con esta, y les propondreis si se permitira se leuanten en aquel pais tres mil hombres de infanteria ...

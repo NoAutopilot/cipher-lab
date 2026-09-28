@@ -1995,3 +1995,18 @@ found on the open web or in the three blogs.**
 | 9 | `"Mercy" "1648" Spanish cipher instruction BnF Espagnol decipherment` | Bourdeau index + two forks (WebFetch of arya1515 fork: no Mercy / Espagnol 142 entry); unrelated Cryptologia/academia papers. |
 
 No flag raised. Not a novelty statement (rule 10); AUDIT.md untouched.
+## Campaign step H44 (2026-09-28 15:38-15:40 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Control failed on the name; the target reader was not run.** Blind replication of the
+H41-H42 crib, control first (`h44/build.py`, `packet_control.txt`, `packet_target.txt`, `reply_control.txt`). Control: a
+Cartas sentence with a known person and title ("y al conde de Baynete, su caballerizo mayor"), encoded as the target
+stretch is shown (letters run together, 4 of 35 as "?", 2 wrong letters), with its clear context. The blind Sonnet
+reader returned **"y al conde de Basto es su caballerizo mayor" -- office right, name wrong**: it read the damaged
+"baysete" as a better-known title ("Basto") and explained the mismatching letters away as damage. By the row's rule the
+control must recover its known name before the target counts, so the target packet was not read.
+
+What this shows about the instrument: a reader recovers a common office from damaged letters but fills a proper name
+from world knowledge where the letters are few and uncertain. A target reader naming Burgsdorf would therefore not
+have been independent evidence either -- Burgsdorff is the best-known courtier of that Elector. The letter-fit test
+against a list built before scoring (H41) is the right instrument for the name, and it stands as it was. One text
+call. No token, grade or class change.

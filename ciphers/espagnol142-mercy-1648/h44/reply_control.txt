@@ -1,0 +1,4 @@
+y al conde de Basto es su caballerizo mayor
+PERSON: (el) Conde de Basto
+OFFICE: caballerizo mayor (Master of the Horse)
+Confidence: medium -- high on "su caballerizo mayor"; the name span "baysete" read as "Basto es" by run length, several letters taken as damage.
