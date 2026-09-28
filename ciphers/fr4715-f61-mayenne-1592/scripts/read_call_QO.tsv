@@ -1,0 +1,48 @@
+# H26 blind loop-sign sort (Opus vision subagent, 28 Sept 2026, one call, about 134k subagent tokens, 157 s; prompt verbatim in scripts/PROMPTS.md section H26; no letters, no key). Rows verbatim. Its criterion, verbatim: "G1 has a third loop sitting above two side-by-side loops with the stem running up through the cluster (trefoil); G2 has only two loops side by side hanging either side of the stem head, with nothing above; G3 has two loops stacked one above the other as a figure-8, with the stem leaving from the bottom loop (seen only on f108)." Its count line: "loop signs found: 46".
+sheet	segment	x_px	order_in_sheet	group	loops	arrangement	position	through	size	weight	note
+f61sheetB_L01	4	300	1	G1	3	trefoil: small top loop at upper right, two loops side by side below	top	through	loops ~1/2 of stem	medium	left lower loop slightly open
+f61sheetB_L01	4	1340	2	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	stem leans left and curves at foot
+f61sheetB_L03	2	650	1	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	clean, upright
+f61sheetB_L03	3	960	2	G2	2	side by side, joined at stem head by a dark knot	top	loops hang either side of the stem head	loops ~1/3 of stem	medium, dark knot	no upper loop; long straight stem
+f61sheetB_L03	3	1600	3	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L05	2	277	1	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L05	2	567	2	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	medium	right loop wider
+f61sheetB_L05	3	1067	3	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L05	3	1607	4	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	stem slants left
+f61sheetB_L07	4	837	1	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	heavy/dark	
+f61sheetB_L08	1	432	1	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L08	1	1688	2	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	medium	
+f61sheetB_L08	1	1978	3	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L08	2	1451	4	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L08	2	1755	5	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L08	2	2086	6	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	small tick above top loop
+f61sheetB_L11	1	641	1	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L11	1	1275	2	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy, blotted	top loop open hook; interior partly ink-filled
+f61sheetB_L11	1	2126	3	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L11	2	594	4	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	medium	
+f61sheetB_L10	3	1688	1	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L10	3	2207	2	G1	3	trefoil	top	through	loops ~1/2 of stem	medium	
+f61sheetB_L10	4	70	3	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	medium	left loop's edge cut at seg3/seg4 boundary; counted once
+f61sheetB_L10	4	1500	4	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	heavy stem	thick stem
+f108sheetB_L02	2	240	1	G1	3	trefoil, tilted right	top	through	loops ~1/2 of stem	heavy, black	
+f108sheetB_L02	2	450	2	G1	3	trefoil, tilted	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L02	2	1530	3	G3	2	stacked diagonally (figure-8)	top	stem leaves bottom loop	loops ~1/2 of stem	light/faint	faint stem; uncertain
+f108sheetB_L02	3	210	4	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L02	3	420	5	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	ink blob at stem foot
+f108sheetB_L02	3	1820	6	G1	2-3	large top loop with small loop(s) inside/below	top	through	loops ~1/2 of stem	heavy	lower loops hard to resolve (M)
+f108sheetB_L02	3	2290	7	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	lower loops dot-like
+f108sheetB_L02	4	1440	8	G1	3	trefoil, strongly tilted	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	1	1990	1	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	1	2210	2	G3	2	stacked (figure-8)	top	stem leaves bottom loop	loops ~1/2 of stem	heavy	
+f108sheetB_L03	2	430	3	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	2	860	4	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	2	1070	5	G1	3	trefoil	top	through	loops ~1/2 of stem	very heavy, ink-filled	
+f108sheetB_L03	2	1530	6	G3	2	stacked (figure-8)	top	stem leaves bottom loop	loops ~1/2 of stem	heavy	
+f108sheetB_L03	3	150	7	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	3	350	8	G3	2	stacked (figure-8), tilted	top	stem leaves bottom loop	loops ~1/2 of stem	heavy	
+f108sheetB_L03	3	1180	9	G1	3	trefoil, small	top	through	loops ~1/3 of stem	medium	small ticks above
+f108sheetB_L03	3	1565	10	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	3	1990	11	G1	3	trefoil	top	through	loops ~1/2 of stem	heavy	
+f108sheetB_L03	4	440	12	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	heavy	
+f108sheetB_L03	4	1055	13	G2	2	side by side	top	hang beside stem head	loops ~1/3 of stem	heavy	
+f108sheetB_L03	4	1805	14	G3	2	stacked (figure-8)	top	stem leaves bottom loop	loops ~1/2 of stem	heavy	stem short, tails left; uncertain whether a stem (M)

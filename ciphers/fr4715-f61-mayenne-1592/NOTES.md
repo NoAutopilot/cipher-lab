@@ -1305,3 +1305,42 @@ hands write CA 9 times in 3,000 aligned tokens: the test would need about 30 tok
 (10 CA signs on one leaf) -- i.e. the period alignments cannot settle the null question for this letter's hand; Tomokiyo's
 dashes (H44) remain the only published statement on it, and H4's dash-share rule the only working one. No class change;
 no reading; nothing new or first. Files: `scripts/f61nulltest.py`, `f61nulltest_result.txt`; HYPOTHESES.md row added.
+
+## Campaign step H26 (2026-09-28 05:08 UTC) -- PASS: the loop family is three glyphs; the side-by-side pair is b/o, the audit's 'qo' signs are b/o
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). One Opus vision call (about 134k subagent tokens, 157 s), prompt in
+`scripts/PROMPTS.md` (H26) and scorer `scripts/f61qo.py` (the H22 design) pushed dc1b693a before the call; no network.
+Hypothesis H26 (F61-QO): audit 1's question -- the atlas folds every loops-on-a-stem sign into PHI (e/r) except the stacked
+o-T-o form (DBL, b/o); on L10 the verifier saw a two-loops-SIDE-BY-SIDE form at positions 6 and 11, coded PHI, that pass 1
+itself had flagged 'could be DBL-like'. Is the loop family more than one glyph, and where does the side-by-side form go?
+
+**Design, pre-registered.** Expected positions from disk: the PHI and DBL signs of the six span lines (`passA_classes.tsv`),
+of L10 (`read_call_U.tsv`) and of f.108r bands L02/L03 (the reconciled draft) -- 45 signs on nine sheets B, 39 under a
+Tomokiyo letter (e/r 33, b/o 6) by the joint cell map's DP. One blind sort into 2-4 shape groups, no letters shown; pairing
+per sheet in reading order, a sheet with a count mismatch dropped; statistic = best group-to-cell match; null = 2000 label
+permutations (C(38,6) = 2.76M arrangements, above the exact threshold), plus the 200-permutation p95. Gate: above p95, p < 0.05.
+
+**Output (`scripts/read_call_QO.tsv`, verbatim).** 46 signs, three groups, its criterion: "G1 has a third loop sitting above
+two side-by-side loops with the stem running up through the cluster (trefoil); G2 has only two loops side by side hanging
+either side of the stem head, with nothing above; G3 has two loops stacked one above the other as a figure-8, with the stem
+leaving from the bottom loop (seen only on f108)." f.61 L03 listed 3 against 2 expected (dropped by the rule); every other
+sheet reconciled.
+
+**Result (`scripts/f61qo_result.txt`).** Scored 38 labelled positions (e/r 32, b/o 6), three groups: **38/38**, permutation
+P(>= obs) = 0.0000 over 2000 (seed 1), p95 32/38 -- **PASS**. Group by cell: G1 trefoil = e/r 26/26 (both leaves); **G2
+side-by-side = b/o 6/6** -- the three f.61 signs the atlas had as DBL (L05/5 o, L08/5 b, L11/10 o) AND three signs the
+readers had coded PHI (f.61 L07/7 under o; f.108 L03/35 and L03/38 under o); G3 stacked figure-8 = e/r 5/5 (f.108 only:
+L02/15, L03/6, L03/15, L03/22, L03/42, every one under e). So the atlas's DBL wording ("two loops on a stem, one above the
+other, o-T-o") named the wrong glyph: the b/o sign of this cipher is the two loops SIDE BY SIDE at the stem head; the stacked
+pair is an e/r variant of the trefoil. **L10 positions 6 and 11 are both G2** -- b/o, not e/r.
+
+**Consequences.** (1) The held L10 fragment (audit 1, AUDIT.md): its cells at positions 6 and 11 change from PHI e/r (audit
+grade M) to side-by-side b/o (grade S with this control), so the letter sequence is [l/y][e/r][g/t][e/r][b/o][f/s][h/u][b/o]
+and the judge's string 'le tresur' is withdrawn by the solver; a solver-side revision paragraph is appended to AUDIT.md (rule
+10's propagation requirement), the class stays the verifier's. H51 re-derives `fragment_L10.tsv` and the joint fit with the
+split (script-only). (2) The period key: family/KEY.md already notes "PHI e 507, r 189, o 145 -- o = DBL (b/o) merged into PHI
+by the readers" on f.101r; this call shows which glyph carries the o (side by side), so a family pass that codes the
+side-by-side form apart from the trefoil turns PHI's e/r/o triple into two cells on every leaf -- the largest single
+ambiguity in every decode so far (family row H52). (3) `scripts/f61_atlas.tsv` gains a row SBS (two loops side by side at
+the head of a stem, nothing above) with the H26 note; passes before this date used PHI/DBL. No class change; not a reading;
+nothing here is solved, new or first (the letters are Tomokiyo's and the period decipherer's). Vision calls: 1 of 4.
