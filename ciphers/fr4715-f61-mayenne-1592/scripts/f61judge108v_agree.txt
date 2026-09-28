@@ -1,0 +1,2 @@
+target: lines of equal length in all three 7/7; pairwise letter agreement 0.781; all three agree 184/274 = 0.672
+best_permutation: lines of equal length in all three 5/7; pairwise letter agreement 0.110; all three agree 0/272 = 0.000

@@ -2038,3 +2038,46 @@ H65/H67, H69, H70 and H77. Full record in `family/KEY.md` "## v4"; the numbers:
 Brief step 5 condition met (known-letter test at least 0.782 and above every permuted key; firm count up): posted "reading
 ready" in ROOM.md for the orchestrator, in its two-way form. Not a reading of the letter; no class change; nothing here is
 solved, new or first.
+
+## Campaign step H85 (28 Sept 2026, 15:12-15:26 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+Audit 1's third ask, a pair-choice test beyond the 13-sign L10, on the longest text in f.61's hand: fr.3983 f.108v's
+reconciled draft (`family/passes/f108v3z_draft_reconciled.tsv`, H59, a grade-M transcription: two blind passes, 136
+disagreement columns settled by one reconciliation call, 10 still flagged) under the 14 cells of its skeleton (H62: the
+H51 map, n >= 2 both leaves, no tie, minus the skeleton's nulls), nulls and uncovered classes dropped. Builder and gates:
+`scripts/f61judge108v.py` (docstring); prompts (H25's verbatim, only the file name and for f.108v the line list
+changed) in `scripts/PROMPTS.md` "H85", pushed 66704c30 before any call.
+
+**Positive control first** (the 14-cell set differs from H25's nine): one Opus text call on the five known span lines
+(`f61judge_known_h51_s101_*`, 58 pair positions per set): target rank 1 of 21, 7.5 vs next 1.0; its resolution reads
+"...tropaunapres | ... | enubeaupere | melentendoit" blind -> **PASS**.
+
+**Target, three Opus text calls** (`f61judge_f108v_s10{1,2,3}_*`, 274 pair positions per set, fresh permutations and
+order per seed; sets pushed 3d84b841 before the calls):
+
+| seed | target score | next best | rank |
+|---|---|---|---|
+| 101 | 6.5 | 0.5 | 1 of 21 |
+| 102 | 2.0 | 1.5 | 1 of 21 |
+| 103 | 3.5 | 2.0 | 1 of 21 |
+
+**GATE H85 PASS** as pre-registered (rank 1 of 21 in all three, ties against; `--check` fresh on every result). The
+margins on seeds 102 and 103 are thin (0.5 and 1.5 points), and the scores themselves are low (2.0 to 6.5 of 10): the
+judge finds the true cell map the most French-like of 21, not a clean text.
+
+Consistency of the three independent resolutions of the target (`scripts/f61judge108v_agree.py`,
+`f61judge108v_agree.txt`, reported, not gated): all seven lines the same length in all three; letters agreeing in all
+three 184/274 = 0.672, pairwise 0.781 -- against 0.25 and 0.50 if each within-pair choice were a coin flip. (The script
+also prints the best permutation of each call, 0/272, but that is not a fair floor: each call's permutations are
+different maps.) Seed 101's resolution, verbatim, grade M at every letter (M transcription, M cell, choice by the judge):
+"tctsepspurcnousaeusnuissionsmentresurloss | ecsacusanueonsasleulementuuolsouen |
+iensaesseiuranlanonseruationenomilles | eullentesterreleuresetneinainallementaelle |
+araneisaonnaraetitmesseitmmaisanertenaz | rialointzaussisontilzsersnenessairesatrez |
+atilnyanyusananeraneraonteniraellelarssi" -- runs such as "seulement", "conseruation", "terre", "sont ilz",
+"necessaires", "il n'y a" recur across the calls. Not a reading: no letter has been chosen by anything but the
+judge, the transcription is grade M, and whether f.108v is already read in print has not been searched (a verifier's
+job). What it licenses: the f.61-fitted cell map gives French-like text under a blind judge on 274 pair positions of a
+second letter in the same hand, with the permuted-map control beaten three times out of three -- the kind of
+second-letter support audit 1 said the L10 fragment lacked. For LANE VO3 / the orchestrator: H86-H87 do not depend on
+this; a verifier pass on f.108v (print search, the resolution's word list against the reconciled draft's flagged
+columns) is the next step it suggests (H88).

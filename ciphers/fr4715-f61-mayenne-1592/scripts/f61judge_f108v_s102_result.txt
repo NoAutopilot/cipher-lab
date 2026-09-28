@@ -1,0 +1,4 @@
+f108v_s102: target SET-10 scored 2.0; rank 1 of 21 (ties against the target)
+all scores: SET-10:2.0 SET-06:1.5 SET-08:1.0 SET-12:1.0 SET-18:1.0 SET-19:1.0 SET-01:0.5 SET-04:0.5 SET-05:0.5 SET-07:0.5 SET-09:0.5 SET-11:0.5 SET-13:0.5 SET-14:0.5 SET-15:0.5 SET-16:0.5 SET-21:0.5 SET-02:0.0 SET-03:0.0 SET-17:0.0 SET-20:0.0
+target reading as given by the judge: tctsecscuecabusarusahissibasmentersueloss | ecsacusanuronsaslehlementuholsohen | irasarssexuranlanonseruntibarabmilles | eullentesterrelehersetarinaxanllementarlle | aranexsabanarartitmessextmmaxsanertenam | exaloxatmahssisontilmsersararssaxersaterm | atilalanlusananeranerabatenirarllelarssi
+GATE H85 (f108v_s102): rank 1 of 21 -> PASS
