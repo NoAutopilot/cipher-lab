@@ -2008,3 +2008,12 @@ context judge back its power. Re-reading H57's own section: narrowed to their ta
 f.61-fitted cell map, and that map has already been judged on every f.61 line that carries cipher (H25: known lines
 PASS 3/3, L10 FAIL 3/3). A rerun would be H25 again under another name (rule 3's same-instrument paragraph), and the
 projection (H82) had no other consumer -- the family worker already has `scripts/f61_glyph_splits.tsv` (H81). No cost.
+
+## Campaign step H84 (28 Sept 2026, 15:10-15:11 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/H66_PAGE.md`: the runner side of the verifier's H66 -- audit 1's three asks and where each stands (judge
+re-run H25; the "qo" form by our fit H26 and by the period gloss H65/H67/H77 with the H75/H80 controls; the
+second-letter pair-choice test not yet done), the files with their `--check` commands (all fresh at 15:11), the counts a
+verifier can re-derive, and the questions only the verifier or a person can close. No new claim, no reading, no class.
+C6 checked on the way (the skeleton's null): settled as a null by the dash-share rule (5/6 under Tomokiyo's dashes) and
+rare in the family gloss (3 tokens, e) -- no lead.
