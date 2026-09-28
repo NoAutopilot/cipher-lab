@@ -445,7 +445,7 @@ Far above the shuffled null, below real prose: a partial reading with 68 M token
 
 **What this shows and does not.** The Ceppo-Nevers key as printed reads Birago's f.11r insertions better than 200 of
 200 shuffles on the reconciled transcription and 199 of 200 on a fully blind pass, with Italian words recoverable
-(procurare la restitucione; alchuni lochi in Sauoia). It does not give a continuous text: P1, P3 and P5 are mostly
+(procurare la restitucione; alchuni lochi in Sauoia). [VERIFY-CEPPO-1 correction, 28 Sept 2026: of these, only "curare", "estitucio", "chuni", "ochi" and "sauoia" are forced by the printed key; "pro-", "la r-" and both l's are I overrides. See AUDIT.md.] It does not give a continuous text: P1, P3 and P5 are mostly
 unread. Searched for a prior reading as logged in the web and blog section above; not found there. No novelty
 claim (rule 10).
 
@@ -458,3 +458,13 @@ same way, which would also test the three variant values. Suggested status for t
 Requests: gallica.bnf.fr 4 (three native regions of canvas 12, one 1000px overview of canvas 36), all >=2s apart,
 browser UA; archive.org 2 (advancedsearch, one _djvu.txt for rank 8); web search 7; cryptiana.blogspot.com 2;
 github.com 1 clone. Subagents: 2 (the blind passes).
+
+## VERIFY-CEPPO-1 (verifier, 28 Sept 2026)
+
+See `AUDIT.md`. Novelty N3 for the fragments (key published, Tomokiyo). A value-blind Opus re-reconciliation
+(`harvest/passD_blind_verify.tsv`, graded in `harvest/passD_blind_verify_graded.tsv`) ranks the printed key 1 of
+201 shuffles (z 5.54, and 5.38-5.82 on three seeds; power control 20/20). A blind reader of 21 decodes picked
+only the real-key one as Italian and found 0 words in the 20 shuffles. Recovered fragments: P1 presidente,
+mandato (blind sequence only; HARVEST-A's P1 "premisente ... candaoo" not endorsed); P2 [pro]curare
+[la r]estitucio[ne]; P4 [al]chuni [l]ochi in Sauoia. Judge FAIL -1.267 (real_p05 -0.957). Next step: test the
+three variant signs against the ff.27/39/82 period glosses.

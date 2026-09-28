@@ -1,0 +1,22 @@
+text	score_0_3	one_line_reason
+TEXT01	0	no Italian words in any line; consonant clusters inconsistent with Italian phonotactics
+TEXT02	0	no Italian words in any line; heavy c/s/q/f clustering, not readable
+TEXT03	0	no Italian words in any line; dense consonant runs (ncflutcfncm etc.)
+TEXT04	0	no Italian words apart from the & (et) markers themselves; rest unreadable
+TEXT05	0	no Italian words in any line
+TEXT06	0	no Italian words in any line
+TEXT07	0	no Italian words in any line; extreme r/s/t/c consonant density
+TEXT08	1	two isolated real words in P1 ("presidente" pos10, "mandato" pos27) separated by gibberish; no other line yields anything, so not connected running text
+TEXT09	0	no Italian words in any line
+TEXT10	0	no Italian words in any line
+TEXT11	0	no Italian words in any line
+TEXT12	0	no Italian words in any line
+TEXT13	0	no Italian words in any line despite several & markers
+TEXT14	0	no Italian words in any line
+TEXT15	0	no Italian words in any line
+TEXT16	0	no Italian words in any line; heavy s/z/u/q clustering
+TEXT17	0	no Italian words in any line despite vowel-rich look
+TEXT18	0	no Italian words in any line
+TEXT19	0	no Italian words in any line
+TEXT20	0	no Italian words in any line
+TEXT21	0	no Italian words in any line despite several & markers

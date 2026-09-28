@@ -134,3 +134,5 @@ ciphers/fr4715-f61-mayenne-1592	"Diou" AND "Jeannin" AND 1592 AND chiffre	2026-0
 ciphers/fr4715-f61-mayenne-1592	"pas paresseux si"	2026-09-28	queued	
 ciphers/fr4715-f61-mayenne-1592	"satisfaire ung seul au prejudice de plusieurs"	2026-09-28	queued	
 ciphers/fr4715-f61-mayenne-1592	"jalousie au beau-pere"	2026-09-28	queued	
+ciphers/ceppo-nevers-fr3251-1570s	"Birago" AND "Nevers" AND "Saluzzo" AND (cipher OR cifra OR chiffre)	2026-09-28	queued	
+ciphers/ceppo-nevers-fr3251-1570s	"Lodovico Birago" AND 1570 AND (Savoia OR Savoie) AND restitu*	2026-09-28	queued	

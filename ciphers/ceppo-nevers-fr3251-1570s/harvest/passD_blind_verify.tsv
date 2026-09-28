@@ -1,0 +1,137 @@
+passage	pos	sign_id	conf	note
+P1	1	S67	M	
+P1	2	S93	M	
+P1	3	S30	M	steep slash with dots; S30/S49 indistinguishable
+P1	4	S37	M	straight vertical stem with knob, loop at foot
+P1	5	S24	M	DEP-both: near-vertical stroke with two bars (band x~815); A S60, B apparently read as S75
+P1	6	S69	H	DEP-both: oval crossed by one long horizontal bar extending both sides (x~850); matches S69
+P1	7	S75	M	
+P1	8	S89	H	
+P1	9	S17	H	
+P1	10	S31	H	
+P1	11	S16	M	
+P1	12	S56	H	DEP-both: cross whose right arm runs into a 3 (x~1210); both passes split into S75+S52; matches S56 ligature
+P1	13	S75	M	
+P1	14	S77	M	DEP-both: 6 with separate apostrophe-tick above-left (x~1330); alt S74
+P1	15	S93	M	
+P1	16	S55	M	wide crossbar; alt S94
+P1	17	S52	H	
+P1	18	S23	M	
+P1	19	S53	M	
+P1	20	S35	H	
+P1	21	S74	M	plain 6, no tick; alt S37
+P1	22	S62	H	
+P1	23	S30	M	slash with dots above-left and below-right
+P1	24	S69	H	DEP-both: barred oval (x~1845); A S24, B ?
+P1	25	S62	H	
+P1	26	?	L	oval crossed by TWO parallel horizontal bars (x~1930); body = S69 but sheet S69 has one bar; recurs P2 pos13, P3 pos11
+P1	27	S53	M	
+P1	28	S74	M	plain 6; alt S37
+P1	29	S80	H	DEP-both: 8 crossed by horizontal bar (x~2090); both read S65; matches S80
+P1	30	S23	M	
+P1	31	S89	H	B omitted this =
+P1	32	S97	M	
+P1	33	S88	H	DEP-both: slanted stem crossed by two bars (x~2290); both passes S24
+P1	34	S62	H	
+P1	35	S61	M	tilted oval with tail from its foot; alt S87
+P1	36	S80	H	DEP-both: barred 8 (x~2490); both S65
+P1	37	S31	H	
+P1	38	S50	M	6 and s written with a small gap; possible split 6+s
+P2	1	S23	M	
+P2	2	S16	H	
+P2	3	S69	H	DEP-both: barred oval (x~440); A S88, B ?
+P2	4	S24	M	vertical stroke two bars
+P2	5	S37	M	
+P2	6	S47	H	DEP-both: epsilon with inner loop (x~600); A ?, B S45
+P2	7	S56	H	
+P2	8	S80	H	DEP-both: barred 8 (x~700); both S65
+P2	9	S56	H	A split S75+S52? A read S65 here
+P2	10	S75	M	
+P2	11	S31	H	
+P2	12	S97	M	
+P2	13	?	L	oval crossed by two parallel bars (x~985), same as P1 pos26; A S88, B ?+S89 (B split off an =)
+P2	14	S52	H	
+P2	15	S77	M	DEP-both: apostrophe-tick 6 (x~1100); both S37
+P2	16	S88	H	DEP-both: slanted stem two bars (x~1135); both S24
+P2	17	S17	H	
+P2	18	S53	M	
+P2	19	S47	H	
+P2	20	S37	H	DEP-both: vertical knobbed stem over loop (x~1345); A S74, B S13
+P2	21	S17	H	
+P2	22	S62	H	
+P2	23	S30	M	
+P2	24	S75	M	
+P2	25	S55	M	wide crossbar; alt S94
+P2	26	S93	M	alt S22
+P2	27	S67	L	long stroke descending from line A beta area ending in bottom-left curl (x~1690); may be beta descender + separate curl
+P2	28	S61	H	
+P2	29	S75	M	
+P2	30	S54	L	DEP-both: 6 whose ascender merges with line-A beta tail and is crossed by a short bar (x~1880); A S40, B ?; alt S77
+P2	31	S74	M	DEP-both: plain 6 (x~1950), top loop is line-A phi descender; A merged into S40, B S37
+P2	32	S95	H	plain open o before "Con"
+P3	1	S61	H	DEP-both: clear 9 with long descender (x~2375) right after "gionta."; outside crop f11_B_2410, missed by both
+P3	2	S80	H	DEP-both: barred 8 (x~2430); both S65
+P3	3	S30	M	
+P3	4	S37	M	DEP-both: loop with curving stem (x~2510); A S74, B S13
+P3	5	S62	H	
+P3	6	S89	H	
+P3	7	S17	H	
+P3	8	S31	H	
+P3	9	S61	M	tilted oval with tail from foot (x~2825); alt S87/S53
+P3	10	S57	M	reversed C with dot inside
+P3	11	?	L	oval crossed by two parallel bars (x~2915), same as P1 pos26
+P3	12	S37	H	DEP-both: vertical knobbed stem over loop (x~2980); A S74, B S13
+P3	13	S61	H	
+P3	14	S75	M	
+P3	15	S77	M	DEP-both: apostrophe-tick 6 (x~3110); both S37
+P3	16	S80	H	DEP-both: barred 8 (x~3160); both S65
+P3	17	S88	H	DEP-both: slanted stem two bars (x~3190); both S24
+P3	18	S62	H	
+P3	19	S89	H	
+P3	20	S17	H	
+P3	21	?	L	standalone cursive s (x~3390); nearest the s-tail of S50, or S71
+P3	22	S65	H	plain 8
+P4	1	S23	M	
+P4	2	S37	M	
+P4	3	S80	H	DEP-both: barred 8 (x~670); both S65
+P4	4	S31	M	oval with long tail sweeping down-right; alt S87
+P4	5	S42	H	
+P4	6	S17	H	
+P4	7	S62	H	
+P4	8	S80	H	DEP-both: barred 8 (x~910); both S65
+P4	9	S31	H	
+P4	10	S37	H	DEP-both: knobbed stem over loop (x~1045); A S74, B S13
+P4	11	S61	H	
+P4	12	S47	H	
+P4	13	S23	M	
+P4	14	S93	M	
+P4	15	S31	H	
+P4	16	S62	H	
+P4	17	S37	M	stem joins a line-B descender
+P4	18	S61	H	
+P4	19	S17	H	
+P4	20	S93	M	
+P4	21	S30	M	
+P4	22	S10	H	DEP-both: vertical stroke on long base line with dot (x~1600); missed by both; matches S10
+P4	23	S80	H	DEP-both: barred 8 (x~1655); both S65
+P4	24	S47	M	
+P4	25	S62	H	A omitted
+P4	26	S93	M	
+P4	27	S80	H	DEP-both: barred 8 (x~1880) before ",alche"; both S65
+P5	1	S65	M	heavily blotted 8; bar could be hidden (alt S80)
+P5	2	S67	M	
+P5	3	S87	M	DEP-both: loop on descending stem with horizontal dash to the right (x~2780); A S95, B S61
+P5	4	S42	H	
+P5	5	S62	H	
+P5	6	S93	M	alt S22
+P5	7	S47	M	
+P5	8	S17	H	
+P5	9	S30	M	
+P5	10	S70	H	
+P5	11	S31	H	
+P5	12	S24	M	near-vertical stroke two bars, tick at top
+P5	13	S77	M	DEP-both: apostrophe-tick 6 (x~3270); A S37, B S61
+P5	14	S75	M	
+P5	15	S25	H	
+P5	16	S47	M	
+P5	17	S37	H	DEP-both: knobbed stem over loop (x~3460), last sign before final dot; A S74, B S13
