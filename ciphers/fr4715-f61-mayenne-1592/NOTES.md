@@ -1658,3 +1658,11 @@ a reading; nothing is merged into `key_period_*`. Rule 3 caveat: a reconciler is
 the same instrument that agrees with itself at 57% -- so the 10% gate measures how often it was unsure, not how often it
 was right; no known-answer control exists for this leaf's signs (Tomokiyo reprints none of its lines). Not solved, new or
 first. Vision calls: 3 of 4. Cost: about 3.5 USD (two small calls, one large) against est 3.
+
+## Campaign step H61 (2026-09-28 06:10 UTC) -- the desk pack for f.108v's sparse gloss (ASKS row 89)
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV), script-only, no calls. `images/person_pack_108v/`: seven contact
+sheets (`f108v_L01.jpg` .. `f108v_L07.jpg`: the f108v3y crops, the f108v3z recut for L01/L02 segment 1, with pass A's sign
+numbers beneath each segment, PLAIN words named) and `README.md` with the TSV template; ASKS row 89 filed. The person's
+reading is scored by the H34 x-placement scorer against pass A's positions (the same file the numbers come from). Nothing
+here reads the cipher; no class change.
