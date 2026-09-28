@@ -1,0 +1,13 @@
+# Proposal for the family worker's key rebuild (CAMPAIGN.md H52), campaign step H99, 28 Sept 2026, runner session_01NQpd6L9ZvLvjU1L7ttFmZs.
+# NOT applied: family/ is the family workers'. Each row is a coding merge a blind tile sort found against the period gloss
+# (scripts/f61sbs.py, results in scripts/f61_glyph_splits.tsv). Only the TESTED tokens are shown to be the other glyph; a
+# rebuild relabels the rest of each class by the same shape criterion (the sort's own words, below), with its own check.
+reader_class	period_letters	glyph_it_goes_with	f61_atlas_class	table_cell	steps	leaves	tiles_scored	result	shape_criterion
+PHI	o, b	two loops side by side on a stem	SBS	b/o	H65, H67, H89P	f.101r, f.188r, f.274	39 + 41 + 14	PASS x3	stem hangs from the junction of two side-by-side loops, passing through neither
+LOOPS	o	two loops side by side on a stem	SBS	b/o	H77	f.101r	32	PASS	three loops in a row with a stem from under the middle junction
+LOOPS	u	barred stemless pair	INF	h/u	H77	f.101r	32	PASS	loops crossed or joined by a horizontal bar, no stem
+4TRI	a, n	4 with a hook or stroke beside it (hand-specific)	C43 / 4STEM	a/n	H69	f.101r, f.188r	36	PASS	no closed triangle on the stem below the crossbar
+VBAR_A	s	triangle with a second stroke at the point	VBAR_B	f/s	H70, H89V	f.101r, f.274	39 + 13	PASS x2	a second, lower stroke leaving the triangle's point
+HASH4	i	bare hash, no 4	H24	i/x	H98	f.101r, f.188r	19	PASS	no figure 4 above the cluster
+# Not merges (tested, no split): PHI e/r (H71), C43 a/n (H73), HASH4 d/q (H75), VBAR_A g/t (H80) -- one glyph each for these letters.
+# Near miss, untested at n: EBR_A l/y vs f/s (H79, f.101r only, 18/24 = p95).

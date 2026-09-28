@@ -2255,3 +2255,11 @@ Stratified observed 17/19, permutation P = 0.0015, p95 14/19 -> **GATE PASS** (`
 `--check` OK; row H98 in `scripts/f61_glyph_splits.tsv`). The family readers' HASH4-under-i is the bare hash glyph
 (the family atlas's H24, i/x in the table) coded HASH4: one more coding merge for the family worker's key rebuild (H52),
 beside PHI/SBS, LOOPS/SBS+INF, 4TRI/hook forms and VBAR_A/VBAR_B. No f.61 cell changes. No reading, no class change.
+
+## Campaign step H99 (28 Sept 2026, 15:59 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs), script-only
+
+`scripts/family_relabel_proposal.tsv`: the six tile-tested coding merges of the family readers in one table for the family
+worker's key rebuild (H52) -- PHI o/b -> SBS (three hands), LOOPS o -> SBS and LOOPS u -> INF, 4TRI a/n -> the hook
+forms (C43/4STEM on f.61), VBAR_A s -> VBAR_B (two hands), HASH4 i -> the bare hash (H24) -- with steps, leaves, tiles and
+the blind sorts' own shape criteria, plus the tested non-merges (e/r, a/n, d/q, g/t) and the EBR_A near miss. A
+proposal only; nothing in family/ touched.
