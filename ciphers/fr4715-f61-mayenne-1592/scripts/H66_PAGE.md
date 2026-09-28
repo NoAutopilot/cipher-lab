@@ -107,7 +107,7 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - **Key hunt:** fr.2751 f.116 is a clear copy, no cipher (F61-FAMILY-8; H144 closed); the Rome letter of 5 April has a second
   copy, fr.5045 f.275, dated 1591 (H165). **New lead: fr.3984 fol. 7, Mayenne to de Diou, Paris, 13 May 1593, "avec chiffre
   et déchiffrement"** -- Gallica btv1b9060633d canvas f15 carries cipher runs in the family's polyphonic signs, f17 a clear page,
-  f21 the address (). Row H168 checks whether it is in f.61's cells and whether f17 deciphers it.
+  f21 the address (`family/fr3984_f7/`). Row H168 checks whether it is in f.61's cells and whether f17 deciphers it.
 
 ## Files to read
 
