@@ -1,0 +1,100 @@
+line	pos	code	note	conf
+5	1	HOOK	t-cross with a loop	M
+5	2	PHI	loop+curving tail, compound	M
+5	3	SIX	small dash at edge ignored	H
+5	4	OMEGABAR		H
+5	5	HOOK	diagonal top stroke may be intrusion from neighbor	M
+5	6	SEVEN	bold 7, long top bar, hooked foot	H
+5	7	DIAMOND		H
+5	8	EIGHT		H
+5	9	TEE	heavy ink blot at junction, uncertain	M
+5	10	SIX	small dot at edge	M
+5	11	NINE		H
+5	12	OMEGABAR		H
+5	13	THETA	double loop, complex rendering	M
+5	14	PHI	loop+tail, small hook at end	M
+5	15	SIX		H
+5	16	HOOK	diagonal cross stroke may be bleed from neighbor	M
+5	17	HOOK	script e with rising tail	H
+5	18	EIGHT	small tick at edge ignored	H
+5	19	HOOK	script e with rising tail	H
+5	20	ESS		H
+5	21	SIX		H
+6	1	SIX	small mark below ignored	H
+6	2	OMEGABAR	trailing dot, not the simpler OMEGADOT shape	M
+6	3	EIGHT		H
+6	4	SEVEN		H
+6	5	EM		H
+6	6	EIGHT		H
+6	7	LL	two verticals with broken crossbar, cf PI	M
+6	8	OMEGABAR	trailing dot	M
+6	9	XCURL		H
+6	10	TWO	flat Z-like	H
+6	11	TWO		H
+6	12	DIAMOND	rotated-square/D outline, cf TWO D-shape	M
+6	13	NINE		H
+6	14	TWO		H
+6	15	TWO		H
+6	16	SEVEN	bold, long top bar	H
+6	17	HOOK	script e with loop	H
+6	18	HOOK	u-curl/mu-like double hump, cf HCURL	M
+6	19	XCURL		H
+6	20	TWO		M
+6	21	PHI	vertical stroke with small top loop, f-like	M
+6	22	SIX		H
+6	23	EIGHT		H
+6	24	THREE		H
+6	25	HOOK	double-loop complex shape	M
+7	1	HOOK	rho/long-s with loop, spiral form	M
+7	2	SEVEN	thin variant	H
+7	3	ENN	ladder with diagonal cross	H
+7	4	TWO		H
+7	5	THREE	small, tilted	M
+7	6	EM		H
+7	7	HOOK	script e with rising tail	H
+7	8	PHI	compound loop, ampersand-like	M
+7	9	EIGHT		H
+7	10	DIAMOND	thick rotated-square	M
+7	11	NINE		H
+7	12	OMEGADOT	small loop with dot	M
+7	13	HOOK	mostly plain stroke with tiny top hook, uncertain	L
+7	14	LL		H
+7	15	NINE	flourished tail below loop	M
+7	16	ENN	extra diagonal tail may be bleed	M
+7	17	HOOK	irregular partial shape, low confidence	L
+7	18	HCURL		H
+7	19	TWO		H
+7	20	XCURL		H
+7	21	EIGHT		H
+7	22	PHI	compound script loop	M
+7	23	TWO	Z-like with dot	M
+7	24	HOOK	small hook fragment	M
+7	25	THREE		H
+7	26	THETA	circle+cross+loop compound	M
+7	27	TWO		H
+7	28	PHI	script loop/ampersand-like	M
+7	29	NEW	thick plain vertical stroke with blotted foot, no loop or cross	L
+8	1	SEVEN	thin, near-straight stroke	M
+8	2	PI	two legs, solid top crossbar, cf LL	M
+8	3	PHI	small loop + curve, script d/g-like	M
+8	4	THREE	angular, open	H
+8	5	HOOK	plain closed loop/circle	M
+8	6	TWO	flat Z-like with top serif	H
+8	7	TWO	curvy open shape	H
+8	8	HOOK	u-curl, small hook at foot	M
+8	9	SIX	compound loop, ascender+loop	M
+8	10	HOOK	complex compound loop, uncertain	M
+8	11	HOOK	t-cross with loop	H
+8	12	OMEGABAR		H
+8	13	TEE	small flag/triangle top, uncertain	M
+8	14	LL	three vertical strokes	H
+8	15	TWO		H
+8	16	ENN	ladder with ascending tail	H
+8	17	HOOK	small loop family	M
+8	19	HCURL		H
+8	20	DIAMOND		H
+8	21	PHI	compound loop+hook cluster	M
+8	23	THETA	double loop with cross	M
+8	26	EM		H
+8	29	FOUR		H
+8	31	OMEGABAR	leading dot	H
