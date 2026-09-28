@@ -3258,3 +3258,31 @@ could have placed the target inside. So the oddities are not a habit of the one 
 stay target-specific design clues (ARM-DESIGN's decade/slot reading of the last digit, B1/B2's row design), as
 ARM-CODES left them. No reading, no class change; nothing called new or first. Vision 0, requests 0. Cost: about 0.3
 USD (`--spend` records 0.5).
+
+## Campaign steps H51 and H53 (28 Sept 2026, to 15:07 UTC, container clock)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). The Yale
+Humphreys-Marvin-Olmstead Collection (MS 857) lead that the owner's ChatGPT checkpoint of 27 Sept 22:44 UTC located
+in the finding aid but did not acquire (second-opinions/chatgpt-checkpoint-2026-09-27-2244.md).
+
+**Route.** archives.yale.edu answers curl with an empty HTTP 202 (bot check); `tools/browser_fetch.js` renders it
+(4 page loads, 2 s apart). Finding aid PDF fetched once by curl (ead-pdfs.library.yale.edu/4476.pdf, 48 pp.).
+
+**H51, b.4 f.116** (archival object 1473122, Series I David Humphreys Papers > Diplomatic Miscellany > [Smith, John,
+1735-1816?]): "Statement re letter of [John?] Armstrong, 1758-1843, about the purchase of Florida by the United
+States, with a covering memorandum of the same date, 1808 April 25". Holding record: "Box: 4, Folder: 116 (Mixed
+Materials) -- Stored offsite", "The materials are open for research", **no digital object**; Yale's digital
+collections search returns 0 results for the collection. Not digitised, not readable from the cloud: **ASKS row 91**
+(a scan request to Yale; contact address as printed on the record page). H52 (which Armstrong letter it concerns,
+and any crib) waits on it. The same search also lists, in Series II, a pre-1803 copy letter to Barbe-Marbois with an
+Erving memorandum on the purchase of Florida (the Louisiana-era negotiation, not 1808).
+
+**H53, Series II George William Erving Papers 1803-1808** (archival object 1473249): scope note -- "No correspondence
+of Erving is preserved here"; a memoranda book "in the form of a diary" for Oct 1805-Feb 1806 "with scattered entries
+through July 1808", plus printed matter and copies of documents on Spain and the Napoleonic wars; one fifth of a box;
+no digital object. A diary of conversations is an unlikely home for a key list; its 1808 entries go into ASKS 91 as
+the lower-priority half.
+
+No reading, no class change; a catalogue search, nothing called new or first. Vision 0. Requests: archives.yale.edu
+4 (browser), collections.library.yale.edu 1 (browser), ead-pdfs.library.yale.edu 1. Cost: about 1 USD each (H51
+records 1, H53 records 0.5).
