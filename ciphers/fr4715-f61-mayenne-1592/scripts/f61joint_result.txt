@@ -6,6 +6,6 @@
 (c) fit f.108 + f.61 minus S4a+S4b, read S4a+S4b: read 14/18 = 0.778; 20 permuted maps mean 0.289 max 0.611; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n DBL=b/o EBR=f/s INF=h/u LOOPBAR=a/n OTHER=l/y PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
 (c) fit f.108 + f.61 minus S5, read S5: read 9/11 = 0.818; 20 permuted maps mean 0.309 max 0.545; cells 4PI=d/q 4STEM=a/n 4TRI=c/p BETA=m/z C43=a/n C6=a/n DBL=b/o EBR=f/s HASH4=e/r INF=h/u LOOPBAR=a/n OTHER=l/y PHI=e/r VBAR_A=g/t VBAR_B=f/s ZHOOK=i/x
 (c) pooled f.61 held-out with f.108 in training: 44/55 = 0.800  (H15b without f.108: 42/55)
-nine cells per fold: PHI=e/r C43=a/n 4TRI=c/p INF=h/u VBAR_A=g/t VBAR_B=f/s|null DBL=b/o|null EBR=f/s|l/y ZHOOK=i/x
+9 cells per fold: PHI=e/r C43=a/n 4TRI=c/p INF=h/u VBAR_A=g/t VBAR_B=f/s|null DBL=b/o|null EBR=f/s|l/y ZHOOK=i/x
 GATE H20 (a) PASS, (b) PASS, nine cells stable FAIL -> H20 FAIL
-joint map -> scripts/f61joint_map.tsv; classes beyond the nine: 4PI=d/q(7) 4STEM=a/n(3) BETA=m/z(4) C6=a/n(2) HASH4=e/r(1) LOOPBAR=a/n(2) OTHER=l/y(4)
+joint map -> scripts/f61joint_map.tsv; classes beyond the gated: 4PI=d/q(7) 4STEM=a/n(3) BETA=m/z(4) C6=a/n(2) HASH4=e/r(1) LOOPBAR=a/n(2) OTHER=l/y(4)

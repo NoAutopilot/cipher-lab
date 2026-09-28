@@ -31,16 +31,20 @@ def f108_lines():
     for r in csv.DictReader(open(f"{d}/ciphertext_draft.tsv"), delimiter="\t"):
         lines.setdefault("F108_" + r["line"], []).append(r["sign"])
     return lines
-def main():
+def main(relabel=None, tag="", nine=None):
+    """relabel(lines) may rename classes in place (H27: EBR split, I-shape class); tag suffixes the output files;
+    nine overrides the list of cells whose stability is gated."""
+    NINE_ = nine or NINE
     lines = split_lines(load_read()); lines.update(f108_lines())
+    if relabel: relabel(lines)
     spans61 = load_spans()
     spans108 = [(s, "F108_" + ("L02" if s == "T1" else "L03"), m) for s, _, m, _ in (l.rstrip("\n").split("\t") for l in open(f"{HERE}/tomokiyo_spans_3983.tsv") if l[0] == "T")]
     cells = load_cells(); rng = random.Random(1); NC = 20
-    out = []; cellsets = {c: set() for c in NINE}; gates = []
+    out = []; cellsets = {c: set() for c in NINE_}; gates = []
     def one(tag, train, test):
         cm = cell_map(fit(train, lines, tag, OPTS, keep_dashes=True), cells); kmap = values(cm)
         mt, tot = score(kmap, lines, test)
-        for c in NINE: cellsets[c].add(cm[c][0] if c in cm else "null")
+        for c in NINE_: cellsets[c].add(cm[c][0] if c in cm else "null")
         labs = sorted(kmap); vals = [kmap[l] for l in labs]; cs = []
         for _ in range(NC):
             v = list(vals); rng.shuffle(v); cs.append(score(dict(zip(labs, v)), lines, test)[0])
@@ -53,16 +57,16 @@ def main():
         r = one(f"(c) fit f.108 + f.61 minus {'+'.join(held)}, read {'+'.join(held)}", spans108 + [by[s] for s in by if s not in held], [by[s] for s in held]); pooled += r[1]
     out.append(f"(c) pooled f.61 held-out with f.108 in training: {pooled}/55 = {pooled/55:.3f}  (H15b without f.108: 42/55)")
     stable = all(len(v) == 1 for v in cellsets.values())
-    out.append("nine cells per fold: " + " ".join(f"{c}={'|'.join(sorted(v))}" for c, v in cellsets.items()))
-    out.append(f"GATE H20 (a) {'PASS' if gates[0] else 'FAIL'}, (b) {'PASS' if gates[1] else 'FAIL'}, nine cells stable {'PASS' if stable else 'FAIL'} -> H20 {'PASS' if all(gates) and stable else 'FAIL'}")
+    out.append(f"{len(NINE_)} cells per fold: " + " ".join(f"{c}={'|'.join(sorted(v))}" for c, v in cellsets.items()))
+    out.append(f"GATE H20{tag} (a) {'PASS' if gates[0] else 'FAIL'}, (b) {'PASS' if gates[1] else 'FAIL'}, nine cells stable {'PASS' if stable else 'FAIL'} -> H20 {'PASS' if all(gates) and stable else 'FAIL'}")
     full = cell_map(fit(spans61 + spans108, lines, "joint_all", OPTS, keep_dashes=True), cells)
     classes = Counter(c for l in lines.values() for c in l)
-    with open(f"{HERE}/f61joint_map.tsv", "w") as f:
+    with open(f"{HERE}/f61joint{tag}_map.tsv", "w") as f:
         f.write("# F61-JOINT map fitted on f.61 (55 letters) + f.108 (84 letters): class -> Mayenne table cell, 27 Sept 2026. Grade M (cells from Tomokiyo's markup / the period gloss he reprints); the pair is the key's.\nclass\tn_signs_both_leaves\tcell\tcell_counts\ttie\n")
         for c, n in classes.most_common():
             v = full.get(c); f.write(f"{c}\t{n}\t{v[0] if v else 'null'}\t{' '.join(f'{k}:{m}' for k, m in v[1].most_common()) if v else ''}\t{'yes' if v and v[2] else ''}\n")
-    out.append("joint map -> scripts/f61joint_map.tsv; classes beyond the nine: " + " ".join(f"{c}={full[c][0]}({sum(full[c][1].values())})" for c in full if c not in NINE))
-    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61joint_result.txt"
+    out.append(f"joint map -> scripts/f61joint{tag}_map.tsv; classes beyond the gated: " + " ".join(f"{c}={full[c][0]}({sum(full[c][1].values())})" for c in full if c not in NINE_))
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61joint{tag}_result.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt
         print("fresh" if ok else "STALE"); sys.exit(0 if ok else 1)

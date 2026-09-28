@@ -1,0 +1,26 @@
+# F61-JOINT map fitted on f.61 (55 letters) + f.108 (84 letters): class -> Mayenne table cell, 27 Sept 2026. Grade M (cells from Tomokiyo's markup / the period gloss he reprints); the pair is the key's.
+class	n_signs_both_leaves	cell	cell_counts	tie
+PHI	37	e/r	e/r:32 b/o:3	
+C43	17	a/n	a/n:14	
+INF	14	h/u	h/u:13 e/r:1	
+VBAR_A	12	g/t	g/t:11	
+4TRI	10	c/p	c/p:9	
+ZHOOK	10	i/x	i/x:7	
+EBR_A	8	f/s	f/s:8	
+CA	7	null		
+4PI	7	d/q	d/q:4 c/p:2 a/n:1	
+C6	6	a/n	a/n:2	
+EBR_B	5	l/y	l/y:5	
+BETA	5	m/z	m/z:4	
+DBL	4	b/o	b/o:4	
+4STEM	4	a/n	a/n:3	
+LOOPBAR	3	a/n	a/n:2	
+VBAR_B	3	f/s	f/s:3	
+CROSS	2	null		
+ELOOP	2	null		
+ISH	2	l/y	l/y:2	
+OTHER	2	i/x	i/x:1 m/z:1	yes
+HASH4	1	e/r	e/r:1	
+LOOPSTEM1	1	null		
+CH	1	null		
+LL	1	null		

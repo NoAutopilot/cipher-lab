@@ -877,3 +877,24 @@ joint fit with the split, which should close H20's stability gate. Not a reading
 `scripts/f61bracket.py`, `read_call_BR.tsv`, `f61bracket_result.txt`, `scripts/PROMPTS.md` (H22 section); HYPOTHESES.md
 row added. No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign step H27 (2026-09-28 00:55 UTC)
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), script-only. Hypothesis H27 (F61-JOINT2): the joint fit with
+the bracket class split by H22's blind groups (`scripts/f61joint2.py`, a relabel hook added to `scripts/f61joint.py`
+whose default output is unchanged; `f61joint_h27_result.txt`, `f61joint_h27_map.tsv`).
+
+| fold | H20 (one EBR class) | H27 (EBR_A / EBR_B, ISH) | permuted max (H27) |
+|---|---|---|---|
+| (a) fit f.61, read f.108 | 57/84 = 0.679 | 57/84 = 0.679 | 0.286 |
+| (b) fit f.108, read f.61 | 37/55 = 0.673 | **41/55 = 0.745** | 0.400 |
+| (c) f.61 span folds pooled, f.108 in training | 44/55 = 0.800 | **48/55 = 0.873** | per fold 0.42-0.73 |
+| gated cells | EBR f/s vs l/y | EBR_A f/s 8/8, EBR_B l/y 5/5, ISH l/y 2/2; no cell differs between folds | |
+
+**FAIL on the letter of the pre-registered gate** (VBAR_B, DBL and EBR_A read "null" in the one fold whose training leaf
+has none of them, and the gate counts an absence as instability, as in H20) -- and **no real conflict remains**. Every
+one of the ten gated cells is the same wherever it is fitted. The f.61 held-out pool crosses F61-CAL's original 0.85
+level for the first time (48/55), with the map fitted on Tomokiyo's markup of both leaves (grade M reference). The
+absence rule is noted as too strict for a two-leaf set and left as written rather than re-litigated. Not a reading; no
+class change. The atlas (`scripts/f61_atlas.tsv`) now carries EBR_A, EBR_B and ISH; passes before this date used EBR.
+No credentials, no AskUserQuestion, no novelty wording; the owner not named.
+
