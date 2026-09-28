@@ -2458,3 +2458,22 @@ input. What the map leaves out is large on these rows: HASH4 (10 of 85 draft col
 4-over-hash on the family leaves, H98 PASS 17/19) is dropped, with OTHER 3 and LOOPSTEM1 1 -- 14 of 85 signs gone, and
 three of them are the "two loops side by side" OTHER signs H108's relabel could not license. The target resolutions stay
 committed as the pre-registered prediction for H64 (ASKS 88); expect them to score poorly. No reading, no class change.
+
+## Campaign step H114 (28 Sept 2026, 17:50-17:53 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61hash4_108r.py` (gates in its docstring, pushed 87aae8b6 before the first run; `f61hash4_108r_result.txt`,
+`--check` fresh): each line resolved by a 4-gram beam (fr16, width 400) over the x/y choices, the fitted map ranked against
+200 cell permutations (seed 114). No model call.
+
+- **Control, known f.61 span lines, 14 cells: fitted -0.906, rank 1 of 201** (best permuted -0.959, median -1.293) -> PASS:
+  the instrument sees the known key at this length.
+- **f.108r L04-L06 (H108 draft), 14 cells: fitted -1.092, rank 2 of 201** (best permuted -1.075, median -1.364).
+- **Same with HASH4 = d/q: fitted -1.200, rank 12 of 201** (81 covered signs; best permuted -0.988).
+
+So HASH4 = d/q does **not** help these rows: it drops the fitted map from rank 2 to rank 12, which fits HASH4 behaving
+as on f.61 (a null or another value) rather than as the family leaves' 4-over-hash d/q -- or the passes' HASH4 here
+lumping the bare hash (H24, period i by H98) with the 4-over-hash; not separated on this draft. The row's pre-registered
+verdict is "does not move", but the step also shows something H112's judge did not: model-free, the 14-cell map sits at
+rank 2 of 201 on f.108r L04-L06 (about the top 1%), close to the control's rank 1. One seed, one draft, beam-resolved
+(the beam's letter choices are made the same way for every map, so the Frenchness it adds is on both sides): a signal to
+replicate, not a reading. No class change.

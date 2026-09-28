@@ -1,0 +1,4 @@
+CONTROL known f.61 span lines, 14 cells: fitted -0.906, rank 1 of 201 (best permuted -0.959, median -1.293, 5th-best -1.106) -> PASS (rank <= 10)
+TARGET f.108r L04-L06 (a) 14 cells: 71 covered signs; fitted -1.092, rank 2 of 201 (percentile 0.5); best permuted -1.075, median -1.364
+TARGET f.108r L04-L06 (b) 14 cells + HASH4=d/q: 81 covered signs; fitted -1.200, rank 12 of 201 (percentile 5.5); best permuted -0.988, median -1.393
+VERDICT: HASH4 = d/q does not move f.108r L04-L06 into the top 5% where the 14 cells were not already
