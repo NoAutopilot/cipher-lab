@@ -1,0 +1,14 @@
+# spinelli-beinecke-c1515: Tommaso Spinelli to Leonardo Spinelli, Barcelona 7 Sept 1519 (Beinecke GEN MSS 109, OID 10844890), the two cipher passages
+# decoded with Domnina's corrected key (2016 plate; sources/domnina-2015-2016/) matched to this folder's sign atlas by blind pass pairs (campaign H35/H38/H40, 28 Sept 2026)
+# tokens 259: H 229, C 0, S 0, M 22, I 0, U 8 (H = both blind passes matched the sign's code to a cell of the published key; M = one pass or low confidence; U = no key value)
+# Italian as decoded, one line per manuscript cipher line (page + line), nulls dropped, ? = U; NOT verified -- a control-backed partial decode (NOTES H35-H40), rule 10 wording; judge output in NOTES H39
+p1 1	e t l g d m i t m e t h e m a d a a
+p1 2	a r g e [HOOK] i t a n o n u o l e a [EIGHTBAR] e [PHI] a r e h l a g u
+p1 3	b m e r n a t [SEVEN] o n e d i s p a g n i a l t h e p i m
+p1 4	d i n t l i n a t i o n e s m m o s r a a l c o n [HOOK] e
+p1 5	p a l a t [SEVEN] n o t e a t a l [HOOK] t r c h
+p1 6	a c i u o c a r o n e o e t t r o u o l a
+p1 7	r e s o l u t i o n e d c o s t o r o m i i o r e
+p1 8	d i que [CIRCLE] o e l p a l a d o m a n a a u u a
+p2 1	s e e b i s o g n i o e l g u e r n a t o r e d i b r e
+p2 2	u a a n d a h a i s u i o r e r i

@@ -1,0 +1,55 @@
+# key.tsv for tools/decode_key.py (H39, 28 Sept 2026): keys/key_domnina_2016_atlasmap_v6.tsv with grades mapped -- AB (both blind
+# matching/sorting passes agree on the code -> Domnina 2016 cell) = H (read from a published key source, rule 4/10 "published");
+# M (one pass, runner-settled, or both passes low-confidence: PHI_T) = M; rows with value ? are omitted (decode grades them U).
+code	value	grade	note
+OMEGABAR	a	H	A sign 1, both H; OMEGA2 (A second choice) also a
+OMEGA2	a	M	both passes' second choice for A sign 1
+PLUS	b	H	B, both (K M with TEE second, L H)
+LL	c	H	C sign 1, both H
+PI	d	H	D sign 1, both H
+THETA	d	H	D sign 2, both H (K: EIGHTBAR second)
+ESS	h	H	H, both H
+SEVENB	i	H	I sign 2 (the long-bar 7), both H -- but v4 has no SEVENB code: its signs are inside SEVEN
+THREE	l	M	L sign 3 (both THREE/NINE M); L sign 1 (K NINE/SEVEN L, L THREE/SEVEN M) and P sign 2 (K THREE L, L THREE/SEVEN M) also point here: THREE may cover l and p2
+JHOOK	m	M	M sign 2, both JHOOK M
+DIAMOND	n	H	N sign 1, both H (Que sign 1 also DIAMOND at M -- likely the mark over the Que epsilon, not a separate sign)
+HCURL	n	H	N sign 2 (the x with dots), both H (K: XCURL second)
+EIGHT	o	H	O sign 1, both H
+TWO	o	H	O sign 2, both H (Z sign 1 TWO/TWOFLAT at M/L is the competing cell)
+XCURL	r	H	R sign 1, both H
+ENN	s	H	S sign 1, both H
+DEE	s	H	S sign 2 (K M, L H)
+EM	u	H	U/V sign 1 (K H, L M)
+OMEGADOT	g	H	G sign 2, both H
+EPSILON	que	M	Que sign 2, both (K L, L M); K notes the sign has no dots in the print
+STROKE	nn	M	NN (a dotted vertical), both M; v4 carries no STROKE code
+FOUR	null	H	Nulla sign 1, both H
+SIX	null	H	Nulla sign 2, both H
+MU	t	M	T sign 3, both MU/UCURL M; merged into HOOK in v4
+EIGHT_O	o	H	H38 shape sort, both passes
+EIGHT_R	r	H	H38 shape sort, both passes
+HOOK_A	a	H	H38 shape sort, both passes
+HOOK_C	c	H	H38 shape sort, both passes
+HOOK_M	m	H	H38 shape sort, both passes
+HOOK_R	r	H	H38 shape sort, both passes
+HOOK_T	t	H	H38 shape sort, both passes
+HOOK_U_V	u	H	H38 shape sort, both passes
+NINE_E	e	H	H38 shape sort, both passes
+NINE_NULLA	null	H	H38 shape sort, both passes
+SEVEN_E	e	H	H38 shape sort, both passes
+SEVEN_I	i	H	H38 shape sort, both passes
+TWO_NULLA	null	H	H38 shape sort, both passes
+TWO_O	o	H	H38 shape sort, both passes
+TWO_P	p	H	H38 shape sort, both passes
+EIGHTBAR_C	c	H	H40 shape sort, both passes
+HOOK_A	a	H	H40 shape sort, both passes
+HOOK_T1	t	H	H40 shape sort, both passes
+HOOK_T3	t	H	H40 shape sort, both passes
+JHOOK_M2	m	H	H40 shape sort, both passes
+NINE_M2	m	H	H40 shape sort, both passes
+PHI_G	g	H	H40 shape sort, both passes
+PHI_I	i	H	H40 shape sort, both passes
+PHI_T	t	M	H40 shape sort, both passes
+SEVEN_I_M2	m	H	H40 shape sort, both passes
+TEE_P1	p	H	H40 shape sort, both passes
+TWO_S2	s	H	H40 shape sort, both passes

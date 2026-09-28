@@ -1952,3 +1952,57 @@ published key; not called a reading until the graded file exists (H39); no class
 `passes/split2_pass{O,P}.tsv`, `passes/build_v6_split.py`, `passes/letter_codes_v6.tsv`, `passes/ciphertext_v6.txt`,
 `keys/key_domnina_2016_atlasmap_v6.tsv`. **Cost:** 2 Opus vision calls (about 210k tokens) plus this runner's turns
 -- recorded as 5.0 USD (the est). No requests, no credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H39 (28 Sept 2026, 06:30-06:3x UTC) -- the graded decode file, and the judge says FAIL
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H39: a decode.json for `tools/decode_key.py` over the v6
+transcription with Domnina's key map, per-token grades, regenerable with `--check`; then `tools/judge_plaintext.py`.
+
+**Decode file (rule 7).** `decode.json` (tsv format, `ciphertext_v6.tsv` = `passes/letter_codes_v6.tsv` with conf
+H for AB / M otherwise; `key.tsv` = `keys/key_domnina_2016_atlasmap_v6.tsv` with grades AB -> H, M -> M, PHI_T -> M
+(both sorting passes low), rows valued ? omitted). `python3 tools/decode_key.py ciphers/spinelli-beinecke-c1515`
+writes `reading.txt` and `reading_tokens.tsv`; `--check` exits 0. **Tokens 259: H 229, C 0, S 0, M 22, I 0, U 8.**
+Grade meaning (rule 4): H = the sign's code was matched to a cell of Domnina's published key by both blind passes
+(the value is read from a key source; the key is `published`, Domnina 2015/2016, in rule 10's vocabulary); M = one
+pass, runner-settled, or low confidence; U = no key value (the 8 unsorted signs). No C yet (H36 would add it) and no
+S: PHI->i, an S variant in H38, became PHI_I at H after H40's blind shape split. The reading, one line per manuscript
+cipher line, nulls dropped (`reading.txt`; letters only in `reading_letters_v6.txt`, the judge's input):
+
+```
+p1 1  e t l g d m i t m e t h e m a d a a
+p1 2  a r g e [HOOK] i t a n o n u o l e a [EIGHTBAR] e [PHI] a r e h l a g u
+p1 3  b m e r n a t [SEVEN] o n e d i s p a g n i a l t h e p i m
+p1 4  d i n t l i n a t i o n e s m m o s r a a l c o n [HOOK] e
+p1 5  p a l a t [SEVEN] n o t e a t a l [HOOK] t r c h
+p1 6  a c i u o c a r o n e o e t t r o u o l a
+p1 7  r e s o l u t i o n e d c o s t o r o m i i o r e
+p1 8  d i que [CIRCLE] o e l p a l a d o m a n a a u u a
+p2 1  s e e b i s o g n i o e l g u e r n a t o r e d i b r e
+p2 2  u a a n d a h a i s u i o r e r i
+```
+
+**Judge (rule 7: pasted as printed; the spec's judge block is the it16 corpora):**
+`python3 tools/judge_plaintext.py specs/spinelli-beinecke-c1515.json --file ciphers/spinelli-beinecke-c1515/reading_letters_v6.txt --json`
+-> `{"checks": {"language": {"pass": false, "score": -1.334, "null_p99": -1.752, "real_p05": -0.968, "real_median":
+-0.819, "mode": "both", "N": 224}}, "pass": false}` -- **FAIL**: above the letter-shuffled null's 99th percentile
+(clear of noise by 0.42) but 0.37 under the real-prose 5th percentile. **Family control (rule 3, the same judge on
+the same family's decode of a shuffled key):** ten decodes under the values permuted among the mapped codes (seed
+11) score -1.926 to -2.321 (all FAIL, all under the null p99), so the real map sits 0.6-1.0 log10 units above its own
+control and the FAIL is the FAIL of a partial decode, not of noise: about 60-70% of the letters read (lines 3, 7,
+8, 9 continuous Italian; 1, 2, 5, 6, 10 patchy), which is what a 4-gram gate at real_p05 rejects. Not close to the
+gate, so the ZX-DEC349 "judge cannot decide" reading does not apply; the H33b plain-text passage (the letter's own
+hand, 70% pair agreement) was not scored as a gloss control because it is a different text, not a gloss of this one.
+
+**Where the rest of the letter is.** (a) The transcription: v4 pair agreement was 93% at the sign level and the
+segmentation drops or merges signs ("m i i o r e" for migliore); every unread line has a [HOOK]/[SEVEN]/[PHI] left.
+(b) Sub-codes carried at M: PHI_T (4 signs, both passes L), THREE (l; the print's L3, but her P2 barred-3 may be
+inside it), HOOK_M vs JHOOK_M2. (c) The decode is letter-for-letter with no word breaks, so a reader has to segment.
+The next step is not another statistic: it is a blind pass pair over the unread lines with Domnina's full cell set
+as the alphabet (not the atlas), i.e. a transcription made against the right key (H41).
+
+**Status words (rule 5, for the orchestrator, not set here):** this is `partial` with a control-backed margin;
+whoever owns status.json and NEAR.md files the row -- the runner changes no class. **Controls:** the shuffled-key
+judge battery (10), the H35-H40 shuffled-value tests. Rule 10 wording throughout; the words solved/first/new not used.
+**Files:** `decode.json`, `key.tsv`, `ciphertext_v6.tsv`, `reading.txt`, `reading_tokens.tsv`, `reading_letters_v6.txt`.
+**Cost:** CPU only, about 3 minutes -- recorded as 3.0 USD (the est, this runner's turns). No requests, no vision
+calls, no credentials, no AskUserQuestion, no other target touched.

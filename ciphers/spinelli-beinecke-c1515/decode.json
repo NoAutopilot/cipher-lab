@@ -1,0 +1,23 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "ciphertext_v6.tsv",
+   "key": "key.tsv",
+   "format": "tsv",
+   "line_column": "line",
+   "folio_column": "page",
+   "style": "spaced",
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv",
+   "null_values": [
+    "null"
+   ],
+   "header": [
+    "# spinelli-beinecke-c1515: Tommaso Spinelli to Leonardo Spinelli, Barcelona 7 Sept 1519 (Beinecke GEN MSS 109, OID 10844890), the two cipher passages",
+    "# decoded with Domnina's corrected key (2016 plate; sources/domnina-2015-2016/) matched to this folder's sign atlas by blind pass pairs (campaign H35/H38/H40, 28 Sept 2026)",
+    "# tokens {total}: {HCSMIU} (H = both blind passes matched the sign's code to a cell of the published key; M = one pass or low confidence; U = no key value)",
+    "# Italian as decoded, one line per manuscript cipher line (page + line), nulls dropped, ? = U; NOT verified -- a control-backed partial decode (NOTES H35-H40), rule 10 wording; judge output in NOTES H39"
+   ]
+  }
+ ]
+}
