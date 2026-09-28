@@ -1,0 +1,50 @@
+label	code	note	conf
+L1.12	TLOOP	cross-stroke with loop tail, 4-like	M
+L1.14	ELOOP	small e-loop with short tail	M
+L1.16	OMEGA2	tangled small double loop, not a hook member	M
+L1.18	UCURL	vertical stroke curling into hook at bottom (J-shape)	M
+L1.20	MU	clear two-hump fishhook shape	H
+L1.21	UCURL	vertical stroke curling at bottom, same family as L1.18	M
+L1.24	TLOOP	horizontal cross near top, long tail below	M
+L1.27	RHO	large loop with long trailing tail	M
+L1.31	ELOOP	small tight curl/loop	M
+L2.8	RHO	tangled loop with tail, messy ink	L
+L2.19	TLOOP	cross-shape with loop merging on one side	M
+L2.20	ELOOP+XCURL	e-loop fused with x-cross shape	M
+L2.26	FRAG	mostly bare vertical stroke, tiny top mark	M
+L3.2	UCURL	gamma-like loop with tail	M
+L3.7	FRAG	bare vertical stroke	H
+L3.8	ELOOP	e-loop with tail	M
+L3.14	ELOOP	loop with dot and tail	M
+L3.20	ECAP	bold loop with tail, heavier ink	M
+L3.22	ELOOP	small c-loop with dot	M
+L3.23	UCURL	loop with long tail to the right	M
+L3.29	FRAG	curved bare stroke	M
+L3.30	FRAG	curved bare stroke	H
+L4.2	ELOOP	loop with tail	M
+L4.4	TLOOP	cross tick with loop	M
+L4.10	TLOOP+MU	cross shape adjacent to fishhook shape	M
+L4.16	SEVEN+NINE	two digit-like hook shapes, not HOOK family members	L
+L4.20	ELOOP+OMEGABAR	small e-loop fused to wavy tw-like shape	L
+L4.25	ELOOP	double-loop e variant	M
+L5.1	TEE	plain cross, no loop, not a hook member	M
+L5.2	RHO	loop plus tail with extra digit-like marks	L
+L5.5	ELOOP	small loop with dot	M
+L5.14	NEW	loop with attached digit-like marks, no clean match	L
+L5.16	ECAP	bold closed loop	M
+L5.17	ELOOP	small loop with diagonal tail	M
+L5.19	ECAP	loop with hook flourish	M
+L6.17	ELOOP	small loop with tail	M
+L6.18	MU	clear two-hump shape	H
+L6.25	ECAP	loop with circular tail	M
+L7.1	RHO	loop with extra circle attached	M
+L7.7	ECAP	bold e-loop	M
+L7.17	FRAG	ambiguous marks, unclear stroke	L
+L7.22	ELOOP+XCURL	e-loop fused with x-cross	M
+L7.24	TWO	zigzag numeral shape, not a hook member	M
+L8.8	UCURL	curved stroke	M
+L8.10	MU	double-hump wavy shape	M
+L8.15	ELOOP	loop with dot	M
+L8.17	UCURL	gamma-like loop	M
+L8.21	OMEGABAR	wavy tw-like shape, not a hook member	M
+L8.23	RHO	loop with extra loop attached	L
