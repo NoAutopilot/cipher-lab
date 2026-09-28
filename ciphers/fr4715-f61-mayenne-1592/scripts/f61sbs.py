@@ -19,12 +19,13 @@ period attestation (grade C) for the family worker to merge; a FAIL leaves SBS b
   python3 scripts/f61sbs.py build NATIVE_DIR     # tiles + sheets + scripts/f61sbs_tiles.tsv (answer key, not shown)
   python3 scripts/f61sbs.py score read_call_SBS.tsv [--check]
   python3 scripts/f61sbs.py build-b NATIVE_DIR ; python3 scripts/f61sbs.py score-b read_call_SBSB.tsv [--check]   (H67)
+  python3 scripts/f61sbs.py build-pair NATIVE_DIR 4TRI a,n c,p 69 h69 ; python3 scripts/f61sbs.py score-pair h69 read_call_H69.tsv [--check]   (H69-H71)
 """
 import csv, difflib, itertools, json, math, os, random, sys
 from collections import defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); TGT = os.path.dirname(HERE); FAM = f"{TGT}/family"
 LEAVES = [("f101r", "3982_f101r.jpg"), ("f274", "3984_f274r.jpg"), ("f188r", "3984_f188r.jpg")]
-LETS = ("o", "e")
+LETS = ("o", "e"); CLS = "PHI"
 def rows(p): return list(csv.DictReader(open(p), delimiter="\t"))
 def tokens(leaf):
     al = rows(f"{FAM}/passes/{leaf}_align.tsv"); dr = rows(f"{FAM}/passes/rec{leaf}/ciphertext_draft.tsv")
@@ -41,7 +42,7 @@ def tokens(leaf):
         for blk in sm.get_matching_blocks():
             for k in range(blk.size):
                 i, j = blk.a + k, blk.b + k
-                if ar[i]["value"] == "PHI" and ar[i]["plain_chunk"] in LETS and a[j]["sign"] == "PHI":
+                if ar[i]["value"] == CLS and ar[i]["plain_chunk"] in LETS and a[j]["sign"] == CLS:
                     out.append((leaf, L, i + 1, ar[i]["plain_chunk"], a[j]["segment"], float(a[j]["x_px"])))
     return out
 def build(native):
@@ -156,5 +157,54 @@ def score(path):
     if "--check" in sys.argv:
         ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt)
+def build_pair(native, cls, ga, gb, seed, tag, cap=10):
+    """H69-H71 (the H65 recipe for any reader class and two letter groups; each run pre-registered in scripts/PROMPTS.md
+    before its call): tokens of CLS whose period letter is in group A (ga) or group B (gb), pass A agreeing on CLS; per
+    leaf n = min(#A, #B, cap) of each, seed SEED; tiles cut exactly as H65; key scripts/f61pair_<tag>_tiles.tsv with the
+    period letter and its group (A/B), sheets images/<tag>/pair_sheet*.jpg."""
+    global LETS, CLS
+    CLS = cls; LETS = tuple(ga + gb); rng = random.Random(seed); pick = []
+    for lf in ("f101r", "f188r"):
+        t = tokens(lf); A = [x for x in t if x[3] in ga]; B = [x for x in t if x[3] in gb]; n = min(len(A), len(B), cap)
+        print(lf, cls, "matched", len(A), "A", len(B), "B -> take", n, "each"); pick += rng.sample(A, n) + rng.sample(B, n)
+    rng.shuffle(pick); cut(pick, native, tag, f"f61pair_{tag}_tiles.tsv", "pair_sheet")
+    k = f"{HERE}/f61pair_{tag}_tiles.tsv"; rs = rows(k)
+    with open(k, "w") as f:
+        f.write("tile\tleaf\tline\tdraft_pos\tperiod_letter\tsegment\tx_px\tset\n")
+        for r in rs: f.write("\t".join(r[c] for c in ("tile", "leaf", "line", "draft_pos", "period_letter", "segment", "x_px")) + "\t" + ("A" if r["period_letter"] in ga else "B") + "\n")
+def score_pair(tag, path):
+    """The H65 statistic on the letter-group labels (A/B): best group-to-set match, 2000 permutations seed 1, p95 of 200;
+    gate: observed > p95 and P < 0.05 with at least 30 tiles scored; per leaf reported."""
+    key = {int(r["tile"]): r for r in rows(f"{HERE}/f61pair_{tag}_tiles.tsv")}
+    got = list(csv.DictReader((l for l in open(f"{HERE}/{path}") if not l.startswith("#")), delimiter="\t"))
+    groups, labels, tab = [], [], defaultdict(lambda: defaultdict(int)); out = [f"{path}: {len(got)} rows; {len(key)} tiles"]
+    for r in got:
+        k = key.get(int(r["tile"])); g = r["group"].strip()
+        if k is None: continue
+        if g.lower() in ("", "none", "-", "x"): out.append(f"  tile {r['tile']} ({k['leaf']} {k['period_letter']}): not scored"); continue
+        groups.append(g); labels.append(k["set"]); tab[g][k["set"]] += 1; tab[g][k["leaf"] + ":" + k["set"]] += 1; tab[g]["let:" + k["period_letter"]] += 1
+    for g in sorted(tab): out.append(f"  group {g}: set A {tab[g]['A']}, set B {tab[g]['B']}  (" + ", ".join(f"{k} {v}" for k, v in sorted(tab[g].items()) if ":" in k) + ")")
+    n = len(labels)
+    if n < 30: out.append(f"scored {n} < 30: NON-TEST"); out.append("GATE: FAIL (non-test)")
+    else:
+        def st(gr, lb):
+            gs = sorted(set(gr)); return max(sum(1 for g, l in zip(gr, lb) if dict(zip(gs, ls))[g] == l) for ls in itertools.product("AB", repeat=len(gs)))
+        obs = st(groups, labels); rng = random.Random(1); c = 0
+        for _ in range(2000):
+            l2 = list(labels); rng.shuffle(l2); c += st(groups, l2) >= obs
+        p = c / 2000; rng = random.Random(1); perm = []
+        for _ in range(200):
+            l2 = list(labels); rng.shuffle(l2); perm.append(st(groups, l2))
+        perm.sort(); p95 = perm[189]
+        out.append(f"scored {n} (A {labels.count('A')}, B {labels.count('B')}); groups {len(tab)}; observed {obs}/{n}; permutation P = {p:.4f} over 2000 (seed 1); p95 {p95}/{n}")
+        out.append(f"GATE: {'PASS' if obs > p95 and p < 0.05 else 'FAIL'}")
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/f61pair_{tag}_result.txt"
+    if "--check" in sys.argv:
+        ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
+    open(res, "w").write(txt); print(txt)
 if __name__ == "__main__":
+    if sys.argv[1] == "build-pair":   # build-pair NATIVE CLASS a,n c,p SEED TAG
+        build_pair(sys.argv[2], sys.argv[3], sys.argv[4].split(","), sys.argv[5].split(","), int(sys.argv[6]), sys.argv[7]); sys.exit(0)
+    if sys.argv[1] == "score-pair":   # score-pair TAG read_call.tsv [--check]
+        score_pair(sys.argv[2], sys.argv[3]); sys.exit(0)
     {"build": lambda: build(sys.argv[2]), "score": lambda: score(sys.argv[2]), "build-b": lambda: build_b(sys.argv[2]), "score-b": lambda: score_b(sys.argv[2])}[sys.argv[1]]()
