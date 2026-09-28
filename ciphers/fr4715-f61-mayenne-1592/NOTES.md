@@ -2425,3 +2425,21 @@ f.108 only) is the established rule for it, independent of this call's failed ga
 
 Files: as named above; `images/regen_f61r_sheets.sh` unchanged (the H108 stanza is the commands in this section).
 Vision calls: 4 of 4. Requests: Gallica 1. No credentials, no AskUserQuestion; the owner not named.
+
+## Campaign step H111 (28 Sept 2026, 17:30-17:36 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe)
+
+The f.108v one-swap hard null of H100, rerun with a VALID judge call (H100 and H110's f.108v calls were void: their judges
+scripted the verdict). Same sets file (`scripts/f61judge_f108v_swaps105_sets.txt`, unchanged), the H94 no-leak prompt plus
+one sentence forbidding any tool but reading that file (`scripts/PROMPTS.md` "H111", pushed a2425db4 before the call). The
+transcript shows two Read calls of the sets file (the second an offset read of its tail) and the hand-back, nothing else:
+the call stands. Verdict verbatim `scripts/f61judge_f108v_swaps105i_verdict.tsv`, scored under the copied key
+(`f61judge108v.py score f108v_swaps105i`, `f61judge_f108v_swaps105i_result.txt`).
+
+Target **rank 1 of 21 (5.0) -> gate PASS**, thin. Runner-up SET-04 (4.0) is the 4TRI<->4PI (c/p<->d/q) swap, which changes
+only 6 of 274 positions (H105: a swap with no power, so its near tie is a non-test of that assignment, not a negative);
+next SET-16 (3.5), EBR_B<->VBAR_B (l/y<->f/s, 12 positions); every swap changing 17 or more positions scores 2.5 or less
+(`scripts/f61swappower_result.txt` for the counts). With the H102 (7.0 vs 5.5) and H110 (8.0 vs 6.5) controls on the known
+lines, the fitted map beats its one-swap neighbours on f.108v wherever a swap has power, by at least 1.5 points except the
+l/y<->f/s pair (1.5) and the powerless c/p<->d/q pair (1.0). The judge's own note: scattered French fragments under the
+target ("nous", "aurons", "seulement", "terre leur", "allez", "mais non", "aussi sont ilz ... necessaires", "tenir"), no
+set continuous French. One call; no reading claimed, no class change.
