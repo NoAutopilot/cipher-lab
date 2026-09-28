@@ -2218,3 +2218,16 @@ occurrences) cannot be formed at 52 by any value, because the stretch reads "s u
 missing, which a value at 52 cannot supply. A list-free value search can only confirm a value that completes a word
 the corpus knows with no other letter missing. The crib's evidence stays H41/H53 (name fit, list null) with H43/H51/H56
 as context. No token, grade or class change.
+
+## Campaign step H60 (2026-09-28 16:33 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** The crib's own tokens (r16:14-21, r17:1-12) in every pass on disk: pass A and pass B
+(Y6) agree on every token (A grades 72 and 52 m, B h); `disagreements.tsv` has no r16/r17 row; MEYE's blind pass
+(`meye/blind_pass.tsv`) reads the same codes, with 72 at r16:21 graded M: **"written as one run-together stroke pair
+with no visible gap; could be a single two-digit code 72 or two adjacent single tokens 7, 2"**; H2's three reads
+(`h2crops/reconcile.tsv`) settle 72 as one group, 3 of 3 ("7 has the hand's leading top bar; gap 7-2 matches
+intra-group gaps"); 52 is one group 3 of 3. So the transcription of the crib's letters is solid, and the one
+alternative any pass raised is at 72 itself: **if r16:21 were the two tokens 7 (t) and 2 (o), both S-graded letters,
+the stretch would read BURGS-T-O-RF, "Burgstorf", with no syllable assumption at all.** H2's gap measurement favours one
+group; the question is filed as H62 (score the split reading with the same list and rule). No token, grade or class
+change.
