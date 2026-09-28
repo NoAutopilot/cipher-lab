@@ -318,3 +318,14 @@ means the row index is not random with respect to usage (a two-part layout with 
 about 0), and it is stronger than an alphabetical-bucket layout gives; a layout that groups words by frequency class
 into blocks of rows, or a table read column-wise from a printed page, would produce it -- to be tested only with an
 instrument that has a passing positive control. Requests: none; 0 subagents; 3 minutes by the clock.
+
+## Step B14 (28 Sept 2026, 03:20-03:27 UTC) -- the 20 Feb letter's own docket: "Armstrong 20th Feby 1808", nothing more
+
+Frame 0033 (on disk) is the two-page spread whose LEFT page ends the target letter (last numeral lines "79 14 1160 ...
+580 170", the closing "I have the honor to be, Sir, with very high consideration your most obedient & very humble
+servant, John Armstrong", and the address "Mr. Madison Secretary of State of the United States Washington") and whose
+RIGHT page opens the 22 Feb 1808 despatch (ARM-POOL2). The vertical endorsement beside the address, cut and rotated
+(`scratch/b9/f33_docket_vert2.png`, read by this session, grade H): "Armstrong 20th Feby 1808" -- the office's plain
+receipt docket; no "in cypher", no "not decyphered", no key or correspondent named. A second marginal text at the
+fold belongs to the 22 Feb despatch's left margin ("...nes have ... to the ... Sec. M. ... 's letter ... rch", M) and
+is the extract-forwarding note of the docket-0645 kind, not a cipher note. No lead; done.
