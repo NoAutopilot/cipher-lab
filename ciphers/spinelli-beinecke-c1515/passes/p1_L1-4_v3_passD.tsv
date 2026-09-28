@@ -1,0 +1,106 @@
+line	pos	code	note	conf
+1	12	HOOK	loop-with-descender, rho/long-s type	M
+1	13	SEVEN	bold 7, hooked foot	H
+1	14	HOOK	script-e loop	H
+1	15	THREE	clean 3-shape	H
+1	16	PHI	loop with crossing tail, isolated top stroke	L
+1	17	OMEGABAR	omega with bar	H
+1	18	HOOK	u-curl / long descender hook	M
+1	19	SEVEN	bold 7, hooked foot	H
+1	20	HOOK	mu (double hump) shape	H
+1	21	HOOK	u-curl / long descender hook	M
+1	22	NINE	loop+tail	H
+1	23	NINE	loop+long tail	H
+1	24	HOOK	t-cross-with-loop variant	M
+1	25	SIX	h-like six exemplar	H
+1	26	SEVEN	bold 7	H
+1	27	HOOK	loop/rho variant	M
+1	28	PI	pi with dots	H
+1	29	OMEGABAR	omega with bar	H
+1	30	SIX	six with tail flourish	H
+1	31	ESS	S/5-curve	L
+1	32	FOUR	4 with crossbar	H
+2	1	OMEGABAR	omega with bar+dash	H
+2	2	HCURL	interlocking curved H/X	M
+2	3	OMEGADOT	small loop over squiggle base	M
+2	4	NINE	loop+tail	H
+2	5	NINE	loop+tail	H
+2	6	HOOK	loop connected to hook	M
+2	7	SIX	six with squiggle	M
+2	8	PHI	loop+diagonal tail	M
+2	9	HCURL	two-hump curvy shape	M
+2	10	EIGHT	stacked loops	H
+2	11	DIAMOND	rotated square, busy strokes	M
+2	12	EM	triple-hump cursive m	H
+2	13	TWO	round 2	H
+2	14	THREE	clean 3	H
+2	15	SEVEN	bold 7	H
+2	16	OMEGABAR	omega with bar	H
+2	17	THETA	circle crossed by bar(s)	M
+2	18	NINE	loop+tail	H
+2	19	SEVEN	thin 7 shape	M
+2	20	HCURL	interlocking curved shape	M
+2	21	SEVEN	bold 7	H
+2	22	ESS	S/5-curve	M
+2	23	THREE	clean 3	H
+2	24	OMEGABAR	omega with bar	H
+2	25	PHI	circle with vertical stroke through	H
+2	26	HOOK	t-cross-with-loop	M
+2	27	FOUR	4 with crossbar	H
+3	1	PLUS	simple cross	H
+3	2	HOOK	loop with rising tail	M
+3	3	NINE	loop+tail	H
+3	4	EIGHT	stacked loops	H
+3	5	HCURL	two-hump curvy shape	M
+3	6	OMEGABAR	omega with bar	H
+3	7	HOOK	bare curved stroke, minimal loop	L
+3	8	HOOK	script-e with tail	H
+3	9	SEVEN	thin 7, stray mark at top	M
+3	10	TWO	flat Z-2	H
+3	11	HCURL	two-hump curvy shape	M
+3	12	SEVEN	bold 7	H
+3	13	PHI	loop with extending tail-stroke	M
+3	14	HOOK	small loop with diagonal tail	L
+3	15	ENN	capital N zigzag	H
+3	16	THREE+OMEGABAR	merged: two signs in one cell	M
+3	17	OMEGADOT	loop over w-squiggle, no bar	M
+3	18	DIAMOND	rotated square outline	H
+3	19	SEVEN	thin 7 (top bar + vertical)	M
+3	20	SIX	curl with diagonal tail	M
+3	21	THREE	3 with hook	H
+3	22	HOOK	small loop with tail	M
+3	23	HOOK	rounded loop with bar tail	L
+3	24	SIX	h-like six	M
+3	25	NINE	loop+tail	H
+3	26	FOUR	4 with crossbar	H
+3	27	HOOK	t-cross with loop	H
+3	28	SEVEN	thin 7 (top bar + vertical/hook)	M
+3	29	HOOK	bare curved bracket-like stroke	L
+3	30	HOOK	bare curved stroke with tick	L
+4	1	PI	pi with dots	H
+4	2	HOOK	loop with diagonal tail	M
+4	3	HCURL	two-hump curvy shape	M
+4	4	HOOK	small loop with stem	M
+4	5	THREE	clean 3	H
+4	6	SEVEN	bold 7	H
+4	7	DIAMOND	rotated square	H
+4	8	OMEGABAR	omega with bar	H
+4	9	FOUR	4 with crossbar	H
+4	10	HOOK	mu (double hump), stray mark left	M
+4	11	PHI	loop with diagonal cross-stroke	M
+4	12	TWO	flat Z-2	H
+4	13	HCURL	two-hump curvy shape	M
+4	14	SEVEN	thin 7, stray mark at top	M
+4	15	TWO	closed D-shape	M
+4	16	HOOK	long-s/loop, ascender+loop	M
+4	17	EIGHT	stacked loops	H
+4	18	ENN	capital N zigzag	H
+4	19	XCURL	clear X with curled ends	H
+4	20	HOOK+OMEGABAR	merged: two signs in one cell	M
+4	21	THREE	clean 3	H
+4	22	LL	triple/double vertical strokes on base	M
+4	23	TWO	flat Z-2	H
+4	24	DIAMOND	rotated square	H
+4	25	HOOK	loop with tail, complex	L
+4	26	NINE	loop+tail	H
+4	27	SIX	six with curl	H

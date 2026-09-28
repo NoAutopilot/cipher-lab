@@ -1,0 +1,100 @@
+line	pos	code	note	conf
+5	1	HOOK	t-cross with a loop (fishhook foot)	M
+5	2	THREE	curly-top 3, tick at right may be neighbor bleed	M
+5	3	SIX	loop+ascender; small dash at right may be intrusion	M
+5	4	OMEGABAR	three-hump w with top bar	H
+5	5	PHI	loop with diagonal cross-stroke	M
+5	6	TEE	cross with diagonal leg; small loop at left likely bleed from box5	L
+5	7	DIAMOND	clean rhombus	H
+5	8	EIGHT	figure-8	H
+5	9	HOOK	heavy ink blob with hook tail	L
+5	10	ESS	script 5/S curve with loop	M
+5	11	NINE	loop+tail	H
+5	12	OMEGABAR	three-hump w with bar	H
+5	13	THETA	loop with horizontal bar through middle	M
+5	14	HOOK	loop with long flourish tail	M
+5	15	SIX	loop+ascender with small tick	H
+5	16	PHI	open curve with diagonal slash	M
+5	17	HOOK	loop with ascender	M
+5	18	EIGHT	figure-8 with small mark at edge	M
+5	19	HOOK	loop with tall ascender	M
+5	20	ESS	script S-curve	H
+5	21	SIX	loop+ascender	H
+6	1	SIX	loop+ascender with dot beside	H
+6	2	OMEGABAR	three-hump w with bar+dot	H
+6	3	EIGHTBAR	figure-8 with leading dash	M
+6	4	SEVEN	bold stroke with hooked foot	M
+6	5	EM	three-hump m	H
+6	6	EIGHT	figure-8	H
+6	7	LL	double vertical with top bar, trailing dash	M
+6	8	OMEGABAR	dotted three-hump w	H
+6	9	XCURL	X with curled terminals	H
+6	10	TWO	flat Z-like 2	M
+6	11	TWO	round 2	H
+6	12	TWO	D-shape variant	M
+6	13	NINE	loop+tail	H
+6	14	TWO	round 2	H
+6	15	TWO	2 with extra closed loop at bottom	M
+6	16	SEVEN	bold 7, long top bar	H
+6	17	HOOK	loop with ascender	M
+6	18	DIAMOND	rhombus	H
+6	19	XCURL	X with curled terminals	H
+6	20	TWO	cursive 2	M
+6	21	TEE	vertical stroke with small flag near top, no clear crossbar	L
+6	22	SIX	loop+ascender+dot	H
+6	23	EIGHT	figure-8, tilted	H
+6	24	THREE	numeral 3	H
+6	25	HOOK+SIX	merged: small loop (e) ligatured into loop+ascender (6/b)	L
+7	1	OMEGADOT	coiled loop with tail and dot	M
+7	2	SEVEN	thin diagonal 7	H
+7	3	ENN	blocky capital N	H
+7	4	TWO	script 2	H
+7	5	THREE	thin numeral 3	H
+7	6	EM	three-hump m	H
+7	7	HOOK	cursive e/hook	M
+7	8	PHI	loop with diagonal cross (ay/cy-like ligature)	M
+7	9	EIGHT	figure-8, curly top	M
+7	10	DIAMOND	thick rhombus	M
+7	11	NINE	loop+tail	H
+7	12	OMEGABAR	rough three-hump w with hatching	M
+7	13	SEVEN	thin vertical/diagonal stroke, small top hook	L
+7	14	LL	double vertical with top bar	M
+7	15	TWO	cursive 2	H
+7	16	ENN	blocky N, diagonal tail likely bleed from neighbor	M
+7	17	HOOK	ascender with loop (u-curl/mu variant)	M
+7	18	HOOK	U-shape with ink blot	M
+7	19	TWO	script 2 with hook top	H
+7	20	XCURL	X shape, diagonal crossing strokes	H
+7	21	EIGHT	figure-8, rotated	M
+7	22	ENN	blocky N shape	M
+7	23	HOOK	ascender with loop	M
+7	24	HOOK	u-curl/mu shape	M
+7	25	SEVEN	diagonal stroke with hooked foot	M
+7	26	EIGHT	figure-8	H
+7	27	XCURL	X with flourish at top	M
+7	28	SEVEN	bold diagonal, hooked foot	H
+7	29	_	solitary bold vertical stroke, no crossbar or loop visible	L
+8	1	SEVEN	thin diagonal stroke, no crossbar	L
+8	2	PI	two legs, flat top	H
+8	3	PHI	small loop with diagonal cross and tick	M
+8	4	HCURL	curvy backwards-E / three-arch shape opening left	L
+8	5	DIAMOND	rounded loop, softer corners than typical rhombus	L
+8	6	TWO	flat Z-like 2	M
+8	7	TWO	cursive 2, hook top + loop bottom	H
+8	8	HOOK	ascender with loop (r/long-s variant)	M
+8	9	NINE+THREE	merged: 9-shape beside 3-shape, connected	M
+8	10	HOOK	u-curl/w-loop shape	M
+8	11	TEE	clear t with crossbar	H
+8	12	OMEGABAR	three-hump w with bar	H
+8	13	TEE	vertical stroke with small flag at top, minimal	L
+8	14	THREE	bold zigzag 3	M
+8	15	OMEGADOT	loop+circle-with-bar (eyeglasses-like) ligature	M
+8	16	TWO	cursive 2	H
+8	17	HOOK	loop with diagonal tail (g/y ligature)	M
+8	19	OMEGABAR	dotted three-hump w	H
+8	20	DIAMOND	clean rhombus	H
+8	21	HOOK	loop+ascender+hook, complex ligature	L
+8	23	HOOK+EM	merged: small loop (e/o) beside three-hump m squiggle	L
+8	26	EM	three-hump m, slanted	H
+8	29	FOUR	cursive 4 with dot beside	M
+8	31	OMEGABAR	dotted three-hump w, compact	H
