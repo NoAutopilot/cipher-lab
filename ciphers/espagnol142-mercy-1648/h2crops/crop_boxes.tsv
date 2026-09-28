@@ -1,13 +1,19 @@
-crop	source	x0	y0	x1	y1	zoom
-crop_r07_p4-6.jpg	f22r_canvas58.jpg	850	1394	1350	1575	4
-crop_r09_p5-7.jpg	f22r_canvas58.jpg	1000	1752	1500	1918	4
-crop_r16_p19-21.jpg	f22r_canvas58.jpg	2650	3019	3200	3244	4
-crop_r17_p4-6.jpg	f22r_canvas58.jpg	1350	3233	1850	3417	4
-crop_r17_p9-11.jpg	f22r_canvas58.jpg	1450	3233	1950	3417	4
-crop_r17_p19-21.jpg	f22r_canvas58.jpg	2650	3233	3200	3417	4
-crop_r20_p14-16.jpg	f22r_canvas58.jpg	2150	3823	2650	4021	4
-crop_r24_p3-5.jpg	f22r_canvas58.jpg	780	4603	1280	4787	4
-crop_v01_p1.jpg	f22v_canvas59.jpg	950	270	1300	470	4
-crop_v01_p5-7.jpg	f22v_canvas59.jpg	1400	270	1900	470	4
-crop_v04_p8-10.jpg	f22v_canvas59.jpg	1650	850	2150	1030	3
-crop_v04_p16-19.jpg	f22v_canvas59.jpg	2900	850	3546	1030	3
+crop	source	x0	y0	x1	y1	zoom	note
+crop_r07_p4-6.jpg	f22r_canvas58.jpg	850	1394	1350	1575	4	
+crop_r09_p5-7.jpg	f22r_canvas58.jpg	1000	1752	1500	1918	4	
+crop_r16_p19-21.jpg	f22r_canvas58.jpg	2650	3019	3200	3244	4	
+crop_r17_p4-6.jpg	f22r_canvas58.jpg	1350	3233	1850	3417	4	
+crop_r17_p9-11.jpg	f22r_canvas58.jpg	1450	3233	1950	3417	4	
+crop_r17_p19-21.jpg	f22r_canvas58.jpg	2650	3233	3200	3417	4	
+crop_r20_p14-16.jpg	f22r_canvas58.jpg	2150	3823	2650	4021	4	
+crop_r24_p3-5.jpg	f22r_canvas58.jpg	780	4603	1280	4787	4	
+crop_v01_p1.jpg	f22v_canvas59.jpg	950	270	1300	470	4	
+crop_v01_p5-7.jpg	f22v_canvas59.jpg	1400	270	1900	470	4	
+crop_v04_p8-10.jpg	f22v_canvas59.jpg	1650	850	2150	1030	3	
+crop_v04_p16-19.jpg	f22v_canvas59.jpg	2900	850	3546	1030	3	
+h10h11_crop_A.jpg	f22r_canvas58.jpg	700	4603	1400	4787	4	r24 pos 2-6, the 65 and the crease
+h10h11_crop_A_tall.jpg	f22r_canvas58.jpg	850	4380	1250	4787	2	r23-r24 strip showing the crease across two lines
+h10h11_crop_B.jpg	f22r_canvas58.jpg	900	1218	1400	1394	4	r06 pos 2-5, the code-9 glyph
+h10h11_crop_C.jpg	f22r_canvas58.jpg	1350	3019	1850	3244	4	r16 pos 7-11, code 25 at pos 9
+h10h11_crop_D.jpg	f22r_canvas58.jpg	900	3437	1400	3623	4	r18 pos 3-7, code 26 at pos 5
+h10h11_ref_strip.jpg	f22r_canvas58.jpg					3	unlabeled 4/9 reference: r09 500-900, r20 1150-1650, r24 2250-2750
