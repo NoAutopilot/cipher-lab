@@ -2,6 +2,8 @@ You are a blind transcriber of a 16th-century French cipher manuscript (BnF fr.3
 
 What a band shows: the cipher row runs across the middle of the band (a sequence of invented signs: 4-like figures with loops, chains of small loops on stems, triangles with a bar, brackets, 43-like marks); ABOVE it, a line of small ordinary handwriting (French clear words and long dashes) -- IGNORE that clear line entirely, it is not signs. The rows are not perfectly level: towards the right of the leaf the cipher row may sit a little higher or lower in the band than on the left. The band's bottom edge may cut through the NEXT clear line or the tops of the next cipher row, and its top edge may cut through the descenders of the previous cipher row: transcribe only the ONE complete cipher row of this band, never marks cut by the top or bottom edge. Some bands carry an ordinary clear word INSIDE the cipher row (in the row itself, not above it): list such a word as one row with sign = PLAIN and the word in the note. A long horizontal dash inside the cipher row (a stroke with no sign shape) is listed as sign = DASH.
 
+Row droop at the right end: on this leaf a cipher row can drop below the band's bottom edge in segments s4-s5 (the row curves down towards the right margin). Where that happens, the same row is visible, cut by the TOP edge, in segment s4/s5 of the NEXT band: read this band's dropped signs there and list them under THIS band (segment s4/s5, x within that image), and never list them again under the next band. For the last band of this chunk the two extra images at the end of the list (the next band's s4 and s5) are given for that purpose only: nothing in them is transcribed except this band's dropped row.
+
 Code every sign with the shape atlas below (the 'code' column). Use OTHER for a sign matching none, with a shape description in the note. If a sign is between two codes, give the best code and name the alternative in the note as 'alt CODE'. A chain of several small loops on one stem or bar is ONE sign (PHI) -- but two separate stems are two signs. Confidence h/m/l.
 
 Atlas (code TAB shape):
@@ -30,8 +32,11 @@ LL	a mark shaped like ll
 4STEM	a 4 with a long crossed stem and no triangle below
 OTHER	any cipher sign matching none of the above (describe it in the note)
 H24	a 2-like curl joined to a crossed 4 (the '24' sign); distinct from HASH4, the plain dense crossed-4/hash cluster
+LOOPS	a chain of two or more small loops written side by side with NO stem and NO bar (like 'oo' or 'ooo'); a chain that sits on a vertical stem is PHI, not LOOPS
+ZBAR	a z-like or 2-like zigzag stroke with a horizontal bar through or under it and no stems; distinct from ZHOOK (a 7/Z hook over two slanted stems)
+RSIGN	a small r-like or 5-like sign, a short stem with a hook to the right, no loop (pass A of chunk 1 called it 'r-like, alt beta')
 
-Read the 40 images with the Read tool in this order: for each band, segment s1, s2, s3, s4, s5:
+Read the 42 images with the Read tool in this order: for each band, segment s1, s2, s3, s4, s5:
   /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L09_s1.jpg
   /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L09_s2.jpg
   /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L09_s3.jpg
@@ -72,6 +77,8 @@ Read the 40 images with the Read tool in this order: for each band, segment s1, 
   /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L16_s3.jpg
   /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L16_s4.jpg
   /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L16_s5.jpg
+  /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L17_s4.jpg   (extra: next band's s4, reference only for L16's dropped row)
+  /home/user/cipher-lab/ciphers/fr4715-f61-mayenne-1592/family/sheets/f101r/f101r_L17_s5.jpg   (extra: next band's s5, reference only for L16's dropped row)
 Write your transcription as a TSV file with the Write tool to the OUTPUT PATH given at the end of this prompt, header exactly:
 line	pos	sign	conf	segment	x_px	note
 one row per sign; 'line' is the band id (L01..L46); 'pos' counts from 1 within the band across all five segments; 'segment' is s1..s5; 'x_px' is the sign's horizontal centre in pixels within its segment image (0-1520); 'note' is free text (shape words, 'alt CODE', or the clear word for PLAIN). No letters of the alphabet are to be guessed for any sign: this is a shape transcription only, and no key or reading is to be attempted. When done, report only: the number of signs per band, and the total.

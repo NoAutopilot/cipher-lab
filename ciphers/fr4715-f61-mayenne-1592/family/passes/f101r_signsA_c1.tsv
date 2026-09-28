@@ -1,0 +1,532 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	HASH4	m	s1	210	crossed 4 with bowl, alt 4TRI
+L01	2	4STEM	m	s1	330	
+L01	3	OTHER	l	s1	375	5-like hook
+L01	4	PHI	h	s1	430	
+L01	5	C43	h	s1	530	
+L01	6	PHI	m	s1	650	loop chain with stem
+L01	7	BETA	h	s1	760	
+L01	8	4PI	m	s1	870	
+L01	9	PHI	h	s1	950	
+L01	10	PHI	m	s1	1030	
+L01	11	C43	h	s1	1150	
+L01	12	H24	m	s1	1280	alt HASH4
+L01	13	PHI	m	s1	1390	
+L01	14	PHI	h	s2	185	
+L01	15	OTHER	m	s2	260	z-like with bar
+L01	16	EBR_B	m	s2	350	L-shape
+L01	17	PHI	h	s2	410	
+L01	18	VBAR_A	m	s2	520	
+L01	19	VBAR_A	m	s2	590	
+L01	20	PHI	h	s2	680	
+L01	21	PHI	h	s2	740	
+L01	22	OTHER	m	s2	810	z-like with bar
+L01	23	OTHER	l	s2	880	slash
+L01	24	OTHER	m	s2	960	loop chain, small loops no stem
+L01	25	PHI	m	s2	1080	
+L01	26	OTHER	m	s2	1160	loop chain, small loops no stem
+L01	27	OTHER	m	s2	1250	z-like with bar
+L01	28	OTHER	l	s2	1300	slash
+L01	29	4STEM	l	s2	1340	
+L01	30	OTHER	m	s3	170	loop chain, small loops no stem
+L01	31	C43	h	s3	250	
+L01	32	OTHER	m	s3	370	z-like with bar
+L01	33	BETA	h	s3	480	
+L01	34	C43	h	s3	560	
+L01	35	4STEM	m	s3	670	
+L01	36	OTHER	l	s3	720	single loop
+L01	37	4PI	m	s3	800	
+L01	38	DBL	m	s3	900	
+L01	39	OTHER	l	s3	990	8 over v on stem
+L01	40	OTHER	m	s3	1100	lambda-like
+L01	41	C43	h	s3	1220	
+L01	42	OTHER	m	s3	1320	loop chain, small loops no stem
+L01	43	OTHER	m	s4	150	z-like with bar
+L01	44	C43	h	s4	250	
+L01	45	OTHER	m	s4	430	loop chain, small loops no stem
+L01	46	H24	m	s4	590	
+L01	47	VBAR_A	m	s4	720	
+L01	48	PHI	h	s4	810	
+L01	49	PHI	h	s4	880	
+L01	50	BETA	m	s4	1000	
+L01	51	H24	m	s4	1080	
+L01	52	OTHER	m	s4	1170	z-like with bar
+L01	53	C43	m	s4	1260	
+L01	54	PHI	l	s5	150	row cut at band bottom
+L01	55	OTHER	l	s5	260	loop chain, small loops no stem
+L01	56	OTHER	l	s5	330	z-like with bar
+L01	57	OTHER	l	s5	370	slash
+L01	58	PHI	l	s5	470	
+L01	59	OTHER	l	s5	580	loop chain, small loops no stem
+L01	60	H24	l	s5	680	
+L01	61	PHI	l	s5	750	
+L01	62	OTHER	l	s5	840	z-like with bar
+L01	63	OTHER	l	s5	900	loop chain, small loops no stem
+L01	64	PHI	l	s5	1010	
+L01	65	EBR_B	l	s5	1110	
+L01	66	PHI	l	s5	1170	
+L01	67	OTHER	l	s5	1230	z-like with bar
+L02	1	4STEM	m	s1	240	
+L02	2	OTHER	m	s1	340	loop chain, small loops no stem
+L02	3	H24	h	s1	470	
+L02	4	C43	m	s1	590	
+L02	5	OTHER	m	s1	720	z-like with bar
+L02	6	4TRI	m	s1	820	
+L02	7	PHI	h	s1	920	
+L02	8	H24	h	s1	1020	
+L02	9	C43	m	s1	1130	
+L02	10	4TRI	m	s1	1240	
+L02	11	H24	h	s1	1340	
+L02	12	4TRI	m	s1	1440	
+L02	13	C43	m	s2	150	
+L02	14	OTHER	m	s2	250	loop chain, small loops no stem
+L02	15	H24	h	s2	340	
+L02	16	4PI	m	s2	480	
+L02	17	PHI	h	s2	590	
+L02	18	C43	m	s2	690	
+L02	19	PHI	m	s2	760	
+L02	20	VBAR_A	m	s2	900	
+L02	21	VBAR_A	m	s2	970	
+L02	22	PHI	m	s2	1050	
+L02	23	PHI	m	s2	1120	
+L02	24	HASH4	m	s2	1250	alt H24
+L02	25	4STEM	m	s2	1350	
+L02	26	VBAR_A	m	s3	160	
+L02	27	PHI	h	s3	260	
+L02	28	OTHER	m	s3	360	loop chain, small loops no stem
+L02	29	4TRI	m	s3	470	
+L02	30	VBAR_A	m	s3	610	
+L02	31	H24	m	s3	670	
+L02	32	PHI	m	s3	740	
+L02	33	C43	m	s3	830	
+L02	34	EBR_B	m	s3	1000	
+L02	35	OTHER	m	s3	1080	loop chain, small loops no stem
+L02	36	PHI	h	s3	1180	
+L02	37	OTHER	m	s3	1300	z-like with bar
+L02	38	4PI	m	s3	1360	
+L02	39	PHI	m	s4	230	
+L02	40	EBR_B	m	s4	330	
+L02	41	EBR_A	m	s4	370	
+L02	42	PHI	m	s4	420	
+L02	43	C43	m	s4	490	
+L02	44	PHI	m	s4	680	
+L02	45	H24	h	s4	850	
+L02	46	VBAR_A	m	s4	950	
+L02	47	OTHER	l	s4	1060	small R-like sign, alt BETA
+L02	48	PHI	m	s4	1110	
+L02	49	H24	h	s4	1220	
+L02	50	EBR_B	m	s4	1300	
+L02	51	EBR_B	m	s4	1360	
+L02	52	OTHER	m	s5	170	loop chain, small loops no stem
+L02	53	PHI	m	s5	220	
+L02	54	PHI	m	s5	290	
+L02	55	4TRI	m	s5	380	
+L02	56	PHI	m	s5	500	
+L02	57	OTHER	l	s5	560	small R-like sign, alt BETA
+L02	58	BETA	m	s5	610	
+L02	59	OTHER	m	s5	680	loop chain, small loops no stem
+L02	60	HASH4	m	s5	810	
+L02	61	H24	h	s5	880	
+L02	62	VBAR_A	m	s5	950	
+L02	63	PHI	m	s5	1030	
+L02	64	OTHER	m	s5	1150	z-like with bar; alt VBAR_B
+L03	1	C43	m	s1	260	
+L03	2	C43	m	s1	370	
+L03	3	OTHER	m	s1	470	z-like with bar
+L03	4	OTHER	l	s1	530	loop on stem b-like, alt PHI
+L03	5	C43	m	s1	640	
+L03	6	OTHER	m	s1	750	loop chain, small loops no stem
+L03	7	EBR_B	m	s1	830	
+L03	8	EBR_B	m	s1	890	
+L03	9	PHI	h	s1	950	
+L03	10	C43	m	s1	1040	
+L03	11	C43	m	s1	1140	
+L03	12	VBAR_A	m	s1	1260	
+L03	13	PHI	h	s1	1340	
+L03	14	PHI	m	s1	1420	
+L03	15	4TRI	m	s2	140	
+L03	16	OTHER	m	s2	260	loop chain, small loops no stem
+L03	17	PHI	m	s2	330	
+L03	18	OTHER	l	s2	420	z-like with bar; r-like
+L03	19	PHI	h	s2	530	
+L03	20	EBR_B	m	s2	620	
+L03	21	OTHER	m	s2	700	loop chain, small loops no stem
+L03	22	OTHER	m	s2	800	z-like with bar
+L03	23	4TRI	m	s2	910	
+L03	24	PHI	m	s2	1000	
+L03	25	OTHER	l	s2	1080	loop chain, small loops no stem
+L03	26	VBAR_A	m	s2	1200	
+L03	27	HASH4	m	s2	1300	
+L03	28	OTHER	m	s2	1370	loop chain, small loops no stem
+L03	29	4STEM	m	s3	140	heavy
+L03	30	C43	m	s3	180	
+L03	31	C43	m	s3	270	
+L03	32	PHI	h	s3	370	
+L03	33	PHI	h	s3	460	
+L03	34	OTHER	l	s3	530	thin stem 1-like
+L03	35	HASH4	m	s3	580	
+L03	36	H24	h	s3	680	
+L03	37	OTHER	m	s3	800	loop chain, small loops no stem
+L03	38	PHI	m	s3	890	
+L03	39	PHI	h	s3	980	
+L03	40	VBAR_A	m	s3	1090	
+L03	41	H24	m	s3	1160	
+L03	42	OTHER	m	s3	1260	z-like with bar
+L03	43	VBAR_A	m	s3	1320	
+L03	44	OTHER	l	s4	140	small R-like sign, alt BETA
+L03	45	PHI	m	s4	210	
+L03	46	4PI	m	s4	320	
+L03	47	VBAR_A	m	s4	400	
+L03	48	OTHER	m	s4	530	z-like with bar
+L03	49	OTHER	m	s4	600	loop chain, small loops no stem
+L03	50	H24	m	s4	710	
+L03	51	OTHER	m	s4	800	loop chain, small loops no stem
+L03	52	C43	m	s4	910	
+L03	53	4PI	m	s4	1020	
+L03	54	VBAR_A	m	s4	1150	
+L03	55	4TRI	m	s4	1240	
+L03	56	PHI	m	s4	1310	
+L03	57	VBAR_A	m	s4	1390	
+L03	58	PHI	m	s5	150	
+L03	59	PHI	h	s5	250	
+L03	60	PHI	h	s5	330	
+L03	61	OTHER	m	s5	430	z-like with bar
+L03	62	PHI	m	s5	520	
+L03	63	EBR_B	m	s5	630	
+L03	64	OTHER	m	s5	700	loop chain, small loops no stem
+L03	65	VBAR_A	m	s5	800	
+L03	66	H24	m	s5	880	
+L03	67	PHI	m	s5	1000	
+L03	68	4TRI	m	s5	1110	
+L04	1	C43	m	s1	240	
+L04	2	OTHER	m	s1	340	loop chain, small loops no stem
+L04	3	PHI	m	s1	440	
+L04	4	C43	m	s1	560	
+L04	5	PHI	h	s1	670	
+L04	6	OTHER	m	s1	780	loop chain, small loops no stem
+L04	7	OTHER	m	s1	900	loop chain, small loops no stem
+L04	8	H24	m	s1	980	
+L04	9	PHI	h	s1	1060	
+L04	10	PHI	h	s1	1160	
+L04	11	4TRI	m	s1	1260	alt HASH4
+L04	12	H24	h	s1	1360	
+L04	13	C43	m	s2	150	
+L04	14	C43	m	s2	270	
+L04	15	4TRI	m	s2	390	alt HASH4
+L04	16	OTHER	l	s2	500	loop chain, small loops no stem
+L04	17	PHI	m	s2	590	
+L04	18	C43	m	s2	700	
+L04	19	OTHER	m	s2	830	loop chain, small loops no stem
+L04	20	HASH4	m	s2	960	
+L04	21	H24	m	s2	1080	
+L04	22	PHI	m	s2	1140	
+L04	23	C43	m	s2	1250	
+L04	24	4TRI	m	s2	1370	
+L04	25	PHI	m	s2	1430	
+L04	26	4TRI	m	s3	150	
+L04	27	PHI	h	s3	260	
+L04	28	VBAR_A	m	s3	350	
+L04	29	C43	m	s3	430	
+L04	30	OTHER	l	s3	550	stem with three bars, alt ISH
+L04	31	4TRI	m	s3	640	
+L04	32	C43	m	s3	760	
+L04	33	PHI	m	s3	860	
+L04	34	4TRI	m	s3	1000	
+L04	35	PHI	m	s3	1080	
+L04	36	OTHER	m	s3	1150	loop chain, small loops no stem
+L04	37	OTHER	m	s3	1300	loop chain, small loops no stem
+L04	38	H24	m	s4	150	
+L04	39	OTHER	m	s4	170	loop chain, small loops no stem
+L04	40	VBAR_A	m	s4	250	
+L04	41	PHI	h	s4	370	
+L04	42	OTHER	m	s4	450	z-like with bar
+L04	43	VBAR_A	m	s4	520	
+L04	44	PHI	h	s4	600	
+L04	45	PHI	h	s4	690	
+L04	46	4TRI	m	s4	800	
+L04	47	EBR_B	m	s4	880	
+L04	48	OTHER	m	s4	960	loop chain, small loops no stem
+L04	49	OTHER	m	s4	1030	z-like with bar
+L04	50	ISH	l	s4	1090	
+L04	51	VBAR_A	m	s4	1130	
+L04	52	C43	m	s4	1200	
+L04	53	OTHER	m	s4	1260	loop chain, small loops no stem
+L04	54	PHI	m	s5	160	
+L04	55	C43	m	s5	240	
+L04	56	PHI	m	s5	360	
+L04	57	EBR_B	m	s5	450	
+L04	58	PHI	m	s5	520	
+L04	59	PHI	m	s5	630	
+L04	60	OTHER	m	s5	690	z-like with bar
+L04	61	4STEM	m	s5	780	
+L04	62	OTHER	m	s5	880	loop chain, small loops no stem
+L04	63	PHI	m	s5	960	
+L04	64	4TRI	m	s5	1070	
+L04	65	4STEM	m	s5	1130	
+L04	66	EBR_B	m	s5	1200	
+L05	1	OTHER	l	s1	240	loop chain, small loops no stem; faint
+L05	2	OTHER	m	s1	330	z-like with bar
+L05	3	4PI	m	s1	430	
+L05	4	PHI	m	s1	520	
+L05	5	4PI	m	s1	650	
+L05	6	OTHER	m	s1	750	loop chain, small loops no stem
+L05	7	OTHER	m	s1	870	loop chain, small loops no stem
+L05	8	4TRI	m	s1	990	
+L05	9	PHI	m	s1	1080	
+L05	10	OTHER	m	s1	1190	loop chain, small loops no stem
+L05	11	PHI	h	s1	1300	
+L05	12	4TRI	m	s1	1400	
+L05	13	PHI	m	s1	1490	
+L05	14	OTHER	l	s2	180	small loop, alt DBL
+L05	15	C43	m	s2	300	
+L05	16	PHI	m	s2	400	
+L05	17	OTHER	m	s2	540	loop chain, small loops no stem
+L05	18	OTHER	l	s2	640	z-like with bar; dark, alt HASH4
+L05	19	EBR_B	m	s2	750	
+L05	20	OTHER	m	s2	830	loop chain, small loops no stem
+L05	21	EBR_B	m	s2	910	
+L05	22	C43	m	s2	1030	
+L05	23	OTHER	m	s2	1150	loop chain, small loops no stem
+L05	24	PHI	m	s2	1230	
+L05	25	C43	m	s2	1340	
+L05	26	OTHER	m	s2	1470	z-like with bar
+L05	27	4TRI	m	s3	190	
+L05	28	PHI	m	s3	270	
+L05	29	HASH4	m	s3	390	
+L05	30	OTHER	m	s3	480	loop chain, small loops no stem
+L05	31	H24	m	s3	570	
+L05	32	VBAR_A	m	s3	650	
+L05	33	4TRI	m	s3	780	
+L05	34	PHI	m	s3	880	
+L05	35	OTHER	m	s3	990	z-like with bar
+L05	36	VBAR_A	m	s3	1100	
+L05	37	PHI	m	s3	1160	
+L05	38	EBR_B	m	s3	1270	
+L05	39	PHI	h	s3	1340	
+L05	40	OTHER	m	s3	1450	z-like with bar
+L05	41	4TRI	m	s4	140	alt HASH4
+L05	42	OTHER	m	s4	220	loop chain, small loops no stem
+L05	43	H24	l	s4	290	
+L05	44	C43	m	s4	350	
+L05	45	VBAR_A	m	s4	440	
+L05	46	PHI	m	s4	510	
+L05	47	PHI	m	s4	600	
+L05	48	4TRI	m	s4	700	
+L05	49	PHI	m	s4	800	
+L05	50	H24	m	s4	940	
+L05	51	HASH4	m	s4	1050	
+L05	52	OTHER	l	s4	1140	r-like
+L05	53	VBAR_A	m	s4	1240	
+L05	54	4TRI	m	s4	1340	
+L05	55	PHI	m	s4	1460	
+L05	56	H24	m	s5	160	
+L05	57	C43	m	s5	260	
+L05	58	4TRI	m	s5	350	
+L05	59	H24	m	s5	440	
+L05	60	4TRI	m	s5	540	
+L05	61	C43	m	s5	620	
+L05	62	OTHER	m	s5	720	loop chain, small loops no stem
+L05	63	EBR_B	m	s5	790	
+L05	64	H24	m	s5	850	
+L05	65	4PI	m	s5	960	
+L05	66	PHI	m	s5	1040	
+L05	67	OTHER	m	s5	1160	loop chain, small loops no stem
+L06	1	OTHER	l	s1	250	loop chain, small loops no stem; faint
+L06	2	OTHER	m	s1	360	z-like with bar
+L06	3	VBAR_A	m	s1	440	
+L06	4	PHI	m	s1	520	
+L06	5	PHI	h	s1	610	
+L06	6	H24	m	s1	700	
+L06	7	C43	m	s1	800	
+L06	8	OTHER	m	s1	950	z-like with bar
+L06	9	VBAR_A	m	s1	1040	
+L06	10	PHI	h	s1	1120	
+L06	11	OTHER	m	s1	1230	loop chain, small loops no stem
+L06	12	4TRI	m	s1	1340	
+L06	13	VBAR_A	m	s1	1440	
+L06	14	H24	m	s2	140	
+L06	15	PHI	m	s2	230	
+L06	16	C43	m	s2	370	alt 4TRI
+L06	17	4STEM	l	s2	480	4 top on stem with bars
+L06	18	EBR_B	m	s2	560	
+L06	19	C43	m	s2	690	
+L06	20	H24	m	s2	830	
+L06	21	OTHER	m	s2	900	loop chain, small loops no stem
+L06	22	VBAR_A	m	s2	1000	
+L06	23	PHI	m	s2	1100	
+L06	24	H24	m	s2	1240	
+L06	25	C43	m	s2	1320	
+L06	26	VBAR_A	m	s2	1430	
+L06	27	H24	l	s2	1500	cut at edge
+L06	28	4TRI	m	s3	210	
+L06	29	H24	m	s3	310	
+L06	30	OTHER	l	s3	450	small R-like sign, alt BETA
+L06	31	PHI	h	s3	540	
+L06	32	4TRI	m	s3	660	
+L06	33	VBAR_A	m	s3	760	
+L06	34	4TRI	m	s3	900	
+L06	35	H24	m	s3	1000	
+L06	36	OTHER	m	s3	1120	z-like with bar
+L06	37	H24	m	s3	1220	
+L06	38	4TRI	m	s3	1330	
+L06	39	H24	m	s3	1430	
+L06	40	EBR_B	m	s4	140	
+L06	41	PHI	h	s4	210	
+L06	42	OTHER	m	s4	310	z-like with bar
+L06	43	CH	l	s4	430	
+L06	44	HASH4	m	s4	530	
+L06	45	PHI	h	s4	610	
+L06	46	H24	m	s4	710	
+L06	47	OTHER	l	s4	820	r-like
+L06	48	PHI	m	s4	880	
+L06	49	PHI	h	s4	960	
+L06	50	VBAR_A	m	s4	1060	alt z
+L06	51	OTHER	l	s4	1140	small R-like sign, alt BETA
+L06	52	PHI	m	s4	1260	
+L06	53	4TRI	m	s4	1360	
+L06	54	PHI	l	s4	1460	
+L06	55	C43	m	s5	220	
+L06	56	4TRI	m	s5	310	
+L06	57	PHI	h	s5	410	
+L06	58	4PI	m	s5	510	
+L06	59	OTHER	m	s5	590	loop chain, small loops no stem
+L06	60	PHI	h	s5	670	
+L06	61	C43	m	s5	790	
+L06	62	4TRI	m	s5	880	
+L06	63	PHI	h	s5	970	
+L06	64	OTHER	l	s5	1020	thin stem 1-like
+L06	65	OTHER	m	s5	1070	loop chain, small loops no stem
+L06	66	PHI	m	s5	1150	
+L06	67	OTHER	m	s5	1210	loop chain, small loops no stem
+L07	1	EBR_B	l	s1	240	faint
+L07	2	C43	m	s1	300	
+L07	3	HASH4	m	s1	420	
+L07	4	OTHER	m	s1	530	loop chain, small loops no stem
+L07	5	C43	m	s1	640	
+L07	6	EBR_B	m	s1	750	
+L07	7	H24	m	s1	850	
+L07	8	VBAR_A	m	s1	960	
+L07	9	PHI	m	s1	1020	
+L07	10	OTHER	l	s1	1090	thin stem 1-like
+L07	11	HASH4	m	s1	1130	
+L07	12	PHI	m	s1	1250	
+L07	13	EBR_B	m	s1	1370	
+L07	14	C43	m	s1	1450	
+L07	15	C43	m	s2	200	
+L07	16	C43	m	s2	320	
+L07	17	VBAR_A	m	s2	480	
+L07	18	OTHER	m	s2	580	loop chain, small loops no stem
+L07	19	PHI	m	s2	680	
+L07	20	PHI	m	s2	790	
+L07	21	OTHER	l	s2	850	slash
+L07	22	OTHER	l	s2	890	S or 5-like
+L07	23	C43	m	s2	990	
+L07	24	PHI	h	s2	1130	
+L07	25	OTHER	m	s2	1200	z-like with bar
+L07	26	VBAR_A	m	s2	1290	
+L07	27	PHI	m	s2	1390	
+L07	28	VBAR_A	m	s2	1490	
+L07	29	OTHER	m	s3	180	loop chain, small loops no stem
+L07	30	PHI	m	s3	230	
+L07	31	PHI	m	s3	330	
+L07	32	4TRI	m	s3	420	
+L07	33	PHI	h	s3	530	
+L07	34	OTHER	m	s3	620	z-like with bar
+L07	35	4TRI	m	s3	700	
+L07	36	PHI	m	s3	830	
+L07	37	PHI	h	s3	930	
+L07	38	OTHER	m	s3	1000	loop chain, small loops no stem
+L07	39	OTHER	l	s3	1090	S or 5-like
+L07	40	PHI	m	s3	1160	
+L07	41	OTHER	m	s3	1260	z-like with bar
+L07	42	VBAR_A	m	s3	1330	
+L07	43	C43	m	s3	1420	
+L07	44	VBAR_A	m	s4	200	
+L07	45	H24	m	s4	260	
+L07	46	PHI	m	s4	400	
+L07	47	C43	m	s4	520	
+L07	48	OTHER	m	s4	620	z-like with bar
+L07	49	4TRI	m	s4	740	
+L07	50	EBR_B	m	s4	820	
+L07	51	C43	m	s4	930	
+L07	52	C43	m	s4	1050	
+L07	53	OTHER	m	s4	1200	loop chain, small loops no stem
+L07	54	PHI	m	s4	1280	
+L07	55	H24	m	s4	1390	
+L07	56	VBAR_A	m	s4	1490	
+L07	57	C43	m	s5	230	
+L07	58	OTHER	m	s5	320	loop chain, small loops no stem
+L07	59	EBR_B	m	s5	400	
+L07	60	EBR_A	m	s5	440	
+L07	61	PHI	m	s5	510	
+L07	62	4TRI	m	s5	640	
+L07	63	C43	m	s5	720	
+L07	64	OTHER	m	s5	830	z-like with bar
+L07	65	VBAR_A	m	s5	900	
+L07	66	H24	m	s5	990	
+L07	67	PHI	m	s5	1070	
+L07	68	C43	m	s5	1180	
+L08	1	PHI	m	s1	240	
+L08	2	C43	m	s1	340	
+L08	3	4TRI	m	s1	450	
+L08	4	PHI	m	s1	540	
+L08	5	EBR_B	m	s1	620	
+L08	6	C43	m	s1	700	
+L08	7	C43	m	s1	840	
+L08	8	PHI	h	s1	950	
+L08	9	C43	m	s1	1050	
+L08	10	OTHER	m	s1	1150	loop chain, small loops no stem
+L08	11	OTHER	l	s1	1260	small R-like sign, alt BETA
+L08	12	PHI	m	s1	1330	
+L08	13	4STEM	m	s1	1470	
+L08	14	H24	m	s2	130	
+L08	15	C43	m	s2	210	
+L08	16	OTHER	m	s2	320	z-like with bar
+L08	17	C43	m	s2	450	
+L08	18	OTHER	m	s2	570	loop chain, small loops no stem
+L08	19	PHI	m	s2	660	
+L08	20	OTHER	l	s2	800	dark blot with bar, alt VBAR_B
+L08	21	C43	m	s2	960	
+L08	22	OTHER	m	s2	1080	loop chain, small loops no stem
+L08	23	PHI	m	s2	1190	
+L08	24	C43	m	s2	1330	
+L08	25	OTHER	m	s2	1440	z-like with bar
+L08	26	PHI	m	s3	180	
+L08	27	PHI	m	s3	240	
+L08	28	4TRI	m	s3	330	
+L08	29	PHI	m	s3	470	
+L08	30	OTHER	l	s3	580	r-like
+L08	31	4STEM	m	s3	700	
+L08	32	PHI	m	s3	800	
+L08	33	CA	l	s3	900	
+L08	34	DBL	l	s3	1040	
+L08	35	ZHOOK	l	s3	1150	large Z
+L08	36	OTHER	l	s3	1300	r-like
+L08	37	PHI	m	s3	1360	
+L08	38	OTHER	m	s3	1460	z-like with bar
+L08	39	4TRI	m	s4	190	
+L08	40	OTHER	m	s4	260	loop chain, small loops no stem
+L08	41	PHI	m	s4	310	
+L08	42	OTHER	m	s4	450	loop chain, small loops no stem
+L08	43	H24	m	s4	540	
+L08	44	OTHER	l	s4	620	slash
+L08	45	4TRI	m	s4	660	
+L08	46	PHI	m	s4	760	
+L08	47	PHI	m	s4	850	
+L08	48	OTHER	l	s4	960	small R-like sign, alt BETA
+L08	49	H24	m	s4	1060	
+L08	50	PHI	h	s4	1180	
+L08	51	PHI	m	s4	1280	
+L08	52	OTHER	l	s4	1380	v with z-tail
+L08	53	VBAR_A	m	s4	1480	
+L08	54	OTHER	l	s5	180	A-like with loop
+L08	55	H24	m	s5	290	
+L08	56	PHI	m	s5	400	
+L08	57	VBAR_A	m	s5	490	
+L08	58	BETA	m	s5	580	
+L08	59	H24	m	s5	700	
+L08	60	EBR_B	m	s5	780	
+L08	61	C43	m	s5	880	
+L08	62	OTHER	l	s5	950	z or 3-like
+L08	63	H24	m	s5	1020	
+L08	64	OTHER	m	s5	1150	z-like with bar; alt VBAR_B
