@@ -754,3 +754,40 @@ carries a full cipher line directly under "monographe. verse." at page y about 3
 tilde-o, xx, y, venus, ., slash-x, tilde-o, X, curl, comma -- his line 1), above GOLD-4A's crop box (y from 425), which
 had been drawn to exclude the title and monogram. So the verse has 20 lines (as Sektu and Bourdeau count) and our N for
 c4 is short by about 13 signs. CAMPAIGN.md H7 is the fix (segment that band, classify, eye pass, append as c4a_L00).
+
+### H3, unit profile with matched French controls (28 Sept 2026, CPU only, `scripts/h3_unit_profile.py`)
+
+Seven token statistics of the target (pooled and per cryptogram, 160-id and base level, c1 as the H2-settled draft)
+against 200 samples of fr19 prose at the same N under six unit hypotheses, each a control that can differ from the
+target on every statistic: letter, phonetic-shorthand alphabet (letters with silent finals and doubles dropped, the
+token profile a Duployé-style writing leaves), syllable (crude onset-nucleus-coda), rime (nucleus+coda, Sektu's 2017
+rhyme-group unit), word (nomenclator), and a K-matched flat homophonic. Pooled, id160, N 1251 (band = 2.5-97.5 pct):
+
+| statistic | target | letter | shorthand | syllable | rime | word | homophonic K160 |
+|---|---|---|---|---|---|---|---|
+| K | 160 | 22-25 | 23-25 | 357-455 | 98-127 | 473-599 | 159-160 (by construction) |
+| hapax share | 0.31 | 0-0.08 | 0-0.08 | 0.50-0.62 | **0.29-0.47** | 0.66-0.80 | 0-0.02 |
+| top-1 share | 0.161 | **0.147-0.193** | **0.120-0.165** | 0.034-0.054 | 0.245-0.321 | 0.030-0.067 | 0.011-0.015 |
+| top-5 share | 0.314 | 0.467-0.517 | 0.468-0.510 | 0.136-0.181 | 0.512-0.604 | 0.122-0.174 | 0.053-0.064 |
+| IC | 0.039 | 0.073-0.083 | 0.069-0.077 | 0.008-0.011 | 0.091-0.130 | 0.007-0.010 | 0.006 |
+| doubled-adjacent | 0.047 | **0.023-0.048** | 0.004-0.014 | 0.001-0.008 | 0.079-0.130 | 0-0.005 | 0.001-0.006 |
+| bigram-repeat share | 0.434 | 0.937-0.963 | 0.934-0.958 | 0.184-0.346 | 0.676-0.752 | 0.116-0.223 | 0.066-0.112 |
+
+No unit fits more than two of seven (per-cryptogram rows in `h3_profile.json` say the same). The target sits between
+the syllable and the rime bands on K, top-5, IC and bigram repetition, with one letter-like dominant sign (X, 16 pct):
+a syllable-scale inventory of about 160 types plus a dominant sign, which is also what H5's couplet rhymes and
+Bourdeau's line-length arithmetic point to, and not a letter substitution (K alone excludes it, before any solver).
+Shape census from the inventory names (descriptive): 23 pictogram ids, 15 Latin/Greek letters, 15 typographic or
+astronomical symbols, 55 composites (base plus stacked marks), 52 abstract strokes; 33 pct of ids and 27 pct of tokens
+are not strokes, so a period stenography (Duployé 1867, Prévost-Delaunay, Aimé-Paris, Pitman: closed stroke alphabets
+of 25-40 signs) is excluded on shape and on K without a shorthand-sample control being needed. Caveats: prose, not
+verse; no injected transcription noise (14-18 pct on c1 inflates K and hapax); crude syllabification. H9 covers those.
+
+### H6, confusability fold (28 Sept 2026, CPU only, `scripts/h6_confusability.py`, `h6_folds.json`)
+
+79 distinct id pairs are confused across the 52 disputed c1 boxes (A, B, C triples): PCT/PCT-SLASH 8, X/X-CURL 5,
+PCT/X 3, twelve pairs at 2. Folding pairs confused five or more times (PCT+PCT-SLASH, X+X-CURL) lifts c1 agreement
+from 81.6 to 86.8 pct at K_fold 158; three or more (one slash-family component) to 87.5 pct at 157; two or more chains
+eleven ids into one component through pairwise links (X-PCT-Y-CURL-O-TILDE-WAVE...), 94.9 pct at 149, which is not
+one shape and not a legal fold. The row's condition (90 pct at K under 100) is not met: the confusions are reader
+quality (pass B) and the %-like slash family, not evidence of a smaller alphabet. No control box was bought.
