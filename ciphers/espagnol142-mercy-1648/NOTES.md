@@ -1221,7 +1221,7 @@ both. `sheet_4_vs_9.jpg` settles it by the leaf's own hand: every 9 inside 19 an
 curved tail sweeping left; the first digit of both 48s is an open loop with a straight descending tail; and that
 looped-open form is exactly the glyph at r06:3 that both transcription passes read as code 9 -- the one position
 where key.tsv itself flags 9 as "homophone of 4 or a slip", because the plaintext there ("du-q-uesa") needs q = 4.
-So the hand has two 4 forms (angular open 4, and looped 4 with a straight tail), and the 48s are 48. The same
+So the hand has two 4 forms (angular open 4, and looped 4 with a straight tail), and the 48s are 48. [Corrected in steps H10+H11 below, 28 Sept 2026: two blind reads call the r06:3 glyph a 9; this inference was not blind and is withdrawn; the 48s stand on their own three reads at M with 98 as the alternate.] The same
 sheet says r06:3 is probably 4, not 9 (H11 below: a blind re-read of that one glyph would drop code 9 from the key
 and K from 38 to 37; not changed here, one runner's eye is not two passes).
 
@@ -1274,3 +1274,37 @@ the six runs; only two by three or more runs: r18:5 (code 26, reading i, S; solv
 others were named once or twice, and 20 of the 21 are S-graded. Given the control's precision, at most one or two
 of the 21 are expected to be real misreads; r18:5 and r16:9 are handed to the H10/H11 eye-check job as two extra
 crops (cheap, same subagent call), nothing more. No reading change, no grade change.
+
+## Campaign steps H10 + H11 (2026-09-28 00:16-00:3x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** One job for two transcription questions left open by H2, plus the two positions H9
+nominated. Two fresh blind Sonnet reads (C, D; crops only, plus an unlabeled strip of the leaf's own 4s and 9s,
+`h2crops/h10h11_ref_strip.jpg`), the runner's own eye, and one objective measure. Files: `h2crops/h10h11_*.jpg`,
+boxes in `h2crops/crop_boxes.tsv`, reads and verdicts in `h2crops/h10h11_reads.tsv`. Two subagent calls, no hosts.
+
+**H10, r24:4 -- 65 or "6 5".** One group. Blind C and D both call 65 (M each); H2's B called 65 (H); only H2's A
+called "6 5". Objective: blank-column runs across the 4x crop are 36-95 px inside two-digit groups, 179-263 px
+between groups, and 13 px between the 6 and the 5. The faint vertical line between them continues through the
+row above at the same x (`h10h11_crop_A_tall.jpg`, C and D both): a paper fold, not a space. `ciphertext.tsv`
+unchanged; code 65 stays (value M in key.tsv); token count stays 522. C's report is internally inconsistent (its
+body says 65, its summary line says "6 5"); logged, and the body's reasoning with gap sizes is what counts.
+
+**H11, r06:3 -- code 9 or a looped 4.** 9 stands. Both blind reads call it 9 (C: H, closed loop with a curved tail
+and no open angle; D: M, closed small loop, near-straight drop with a leftward flick); Y6's two transcription
+passes also read 9; only the runner's own non-blind eye (H2, `sheet_4_vs_9.jpg`) read it as a looped 4. **Correction
+to step H2:** the sentence there that "the looped-open form is exactly the glyph at r06:3 ... so the hand has two 4
+forms, and the 48s are 48" was an unblinded inference and is withdrawn; the two 48s stand on their own three reads
+(H2: A 48 M, B 48 with 98 as alternate at r17:20 and 98 at r20:15, runner 48) at grade M, with 98 as the recorded
+alternate at both places. Code 9 keeps its single occurrence and its M grade ("homophone of 4 or a slip" -- now
+"homophone of 4", since the glyph is a 9); K stays 38.
+
+**H9's two nominations (r16:9 code 25, r18:5 code 26):** both correctly transcribed, 25 and 26 one group each, H on
+both blind reads. Neither is a transcription error; whatever is wrong at r16:9 is the code's value (25, M), not the
+digits. This closes H9's list: 0 of 2 nominations were misreads, consistent with the control's verdict there.
+
+**New mark:** both blind reads see a dot after the 5 at r16:10 ("5."), in addition to the dots after 8 (r06:2) and
+14 (v01:1) and the colon after 21 (v04:16) found in H2. Under the current reading none of the four sits at a word
+end (du.quesa, c.ondiciones, opur.adlon...), so they are not obvious word separators; an inventory of every dot and
+colon on both pages, with the reading letter before and after each, is a cheap step (H13).
+
+No reading change, no grade change (S 496, M 26, H 0, C 0 of 522). ciphertext.tsv, key.tsv untouched.
