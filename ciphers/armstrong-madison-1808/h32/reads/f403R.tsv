@@ -1,0 +1,112 @@
+crop	pos	group	gloss	conf	note
+1	1	NONE	-	high	band holds only gloss text "proportion is a[?] motion thing is detected", no digits in band
+2	1	746	proportion	low	very faint pencil digits below "proportion", best-guess
+2	2	40	-	low	faint mark between "proportion" and "as", gloss unclear/absent
+2	3	6	as	low	faint, possible extra digit before 6 illegible
+2	4	9	thing	medium	-
+2	5	484	is	medium	-
+2	6	47	detected	low	last digit uncertain, possible 3rd digit cut
+3	1	1500	-	medium	left margin group, no distinct word above it (blank margin); rest of band too faint to be sure it is numeral vs text
+4	1	NONE	-	medium	band holds faint cursive text ("...form by no means...for...information"), no digit shapes
+5	1	NONE	-	medium	band holds faint cursive text, no digit shapes
+6	1	702	doubt	low	faint pencil digits under "doubt"
+6	2	1110	-	low	faint, gloss above uncertain
+6	3	66	in	low	-
+6	4	165	the	low	possible extra mark after, uncertain if part of group
+6	5	800	minds	low	possible mark after (#), uncertain if part of group
+6	6	133	of	medium	-
+6	7	483	those	low	first digit uncertain
+6	8	368	best	medium	-
+7	1	63	court	medium	right end of line, text row "the intrigues of the court that"
+7	2	1530	that	medium	-
+7	3	1578	-	low	near right edge, no clear gloss above
+8	1	104	been	medium	text row "been the object of the Prince of Peace"; skipped non-numeric tokens "At"/"always" above this row
+8	2	105	the	low	-
+8	3	53	object	low	digit before 3 uncertain
+8	4	651	of	medium	-
+8	5	661	the	medium	-
+8	6	135	prince	medium	-
+8	7	628	peace	medium	-
+9	1	26	one	low	small prefix mark, digits uncertain
+9	2	1494	incapable	medium	-
+9	3	253	or	medium	-
+9	4	15	other	low	preceding mark unclear, may be extra digit
+9	5	274	to	medium	-
+9	6	33	remove	medium	-
+9	7	449	these	medium	-
+9	8	584	the	low	middle digit(s) uncertain
+9	9	1651	great	low	last digit uncertain (1 vs l)
+9	10	55	-	low	trailing group, gloss unclear (part of "greatest"?)
+10	1	903	to	low	first digit uncertain (2 or 9)
+10	2	334	his	medium	-
+10	3	424	ambition	medium	-
+10	4	543	and	low	-
+10	5	872	then	medium	-
+10	6	244	to	medium	-
+11	1	6	the	low	leading digit, may be stray mark
+11	2	524	very	medium	-
+11	3	244	to	medium	-
+11	4	165	commit	low	digit(s) uncertain
+11	5	744	the	low	digit(s) uncertain
+11	6	224	regency	medium	-
+11	7	1114	to	low	trailing group, may belong to "him" instead
+12	1	65	and	low	-
+12	2	601	queen	medium	-
+12	3	133	the	medium	-
+12	4	628	prince	medium	-
+12	5	07	peace	low	digits uncertain, possibly "079" or "097", note edge word after (non-numeric) not transcribed
+13	1	??	itself	low	leading faint marks, digits illegible
+13	2	??	to	low	faint marks, digits illegible
+13	3	??	a	low	faint marks, digits illegible
+13	4	33	very	medium	-
+13	5	268	fine	medium	-
+13	6	1319	politician	medium	-
+14	1	??	-	low	faint mark near left margin, digits illegible
+14	2	26	occasions	low	digits uncertain
+14	3	1367	shot	medium	-
+15	1	400	his	low	-
+15	2	165	mark	low	-
+15	3	66	the	low	-
+15	4	130	prince	low	-
+15	5	200	of	low	-
+15	6	64	asturias	low	written slightly raised/superscript, may be an insertion mark rather than a code group
+15	7	149	is	low	-
+15	8	360	under	medium	-
+16	1	209	special	low	-
+16	2	149	protection	low	-
+16	3	34	of	low	-
+16	4	424	the	low	-
+16	5	105	emperor	low	last digit uncertain
+16	6	98	if	low	-
+16	7	157	-	low	trailing group, gloss unclear
+17	1	1	-	low	small leading margin digit, gloss unclear
+17	2	1003	prince	low	-
+17	3	424	of	low	-
+17	4	400	peace	low	-
+17	5	1040	head	low	-
+17	6	452	assures	low	-
+18	1	NONE	-	medium	band holds only text "well inevitably follows" and a circled "0" caret-like insertion mark, not read as a code group
+19	1	109	believe	low	-
+19	2	310	that	low	-
+19	3	1033	he	low	-
+19	4	158	would	low	digit(s) uncertain
+19	5	926	not	low	-
+19	6	555	-	low	trailing group, gloss unclear
+20	1	733	roland	low	proper name; digits uncertain (7 vs 4)
+20	2	091	after	low	-
+20	3	824	such	low	-
+20	4	624	a	low	-
+21	1	131	counting	low	digits uncertain
+21	2	638	popular	low	-
+22	1	NONE	-	medium	band holds only the word "insurrection", no digits; a circled "0" caret-like mark appears in the crop's context zone (L21), not read as a code group
+23	1	641	buonaparte	low	-
+23	2	509	for	low	-
+23	3	624	vengeance	low	digits uncertain, could be "024"
+23	4	607	-	low	right of "vengeance", beyond visible gloss word, note edge
+23	5	1291	-	low	digits uncertain, note edge
+23	6	48	-	low	digits uncertain, note edge
+23	7	153	-	low	note edge
+23	8	900	-	low	right margin, note edge, followed by an illegible smudge
+24	1	NONE	-	high	band holds only the marginal annotator's remark "I presume that there is a word almost here", no digits
+25	1	NONE	-	medium	band mostly blank (bottom margin); one small "0"-shaped fleck visible with no gloss above, likely a mark/artifact rather than a code group
+26	1	NONE	-	high	band is blank/black (edge of page beyond the leaf), no content

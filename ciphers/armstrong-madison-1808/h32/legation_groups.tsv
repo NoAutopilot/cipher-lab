@@ -1,0 +1,127 @@
+frame	crop	pos	group	gloss	conf	note
+f403R	2	1	746	proportion	low	very faint pencil digits below "proportion", best-guess
+f403R	2	2	40	-	low	faint mark between "proportion" and "as", gloss unclear/absent
+f403R	2	3	6	as	low	faint, possible extra digit before 6 illegible
+f403R	2	4	9	thing	medium	-
+f403R	2	5	484	is	medium	-
+f403R	2	6	47	detected	low	last digit uncertain, possible 3rd digit cut
+f403R	3	1	1500	-	medium	left margin group, no distinct word above it (blank margin); rest of band too faint to be sure it is numeral vs text
+f403R	6	1	702	doubt	low	faint pencil digits under "doubt"
+f403R	6	2	1110	-	low	faint, gloss above uncertain
+f403R	6	3	66	in	low	-
+f403R	6	4	165	the	low	possible extra mark after, uncertain if part of group
+f403R	6	5	800	minds	low	possible mark after (#), uncertain if part of group
+f403R	6	6	133	of	medium	-
+f403R	6	7	483	those	low	first digit uncertain
+f403R	6	8	368	best	medium	-
+f403R	7	1	63	court	medium	right end of line, text row "the intrigues of the court that"
+f403R	7	2	1530	that	medium	-
+f403R	7	3	1578	-	low	near right edge, no clear gloss above
+f403R	8	1	104	been	medium	text row "been the object of the Prince of Peace"; skipped non-numeric tokens "At"/"always" above this row
+f403R	8	2	105	the	low	-
+f403R	8	3	53	object	low	digit before 3 uncertain
+f403R	8	4	651	of	medium	-
+f403R	8	5	661	the	medium	-
+f403R	8	6	135	prince	medium	-
+f403R	8	7	628	peace	medium	-
+f403R	9	1	26	one	low	small prefix mark, digits uncertain
+f403R	9	2	1494	incapable	medium	-
+f403R	9	3	253	or	medium	-
+f403R	9	4	15	other	low	preceding mark unclear, may be extra digit
+f403R	9	5	274	to	medium	-
+f403R	9	6	33	remove	medium	-
+f403R	9	7	449	these	medium	-
+f403R	9	8	584	the	low	middle digit(s) uncertain
+f403R	9	9	1651	great	low	last digit uncertain (1 vs l)
+f403R	9	10	55	-	low	trailing group, gloss unclear (part of "greatest"?)
+f403R	10	1	903	to	low	first digit uncertain (2 or 9)
+f403R	10	2	334	his	medium	-
+f403R	10	3	424	ambition	medium	-
+f403R	10	4	543	and	low	-
+f403R	10	5	872	then	medium	-
+f403R	10	6	244	to	medium	-
+f403R	11	1	6	the	low	leading digit, may be stray mark
+f403R	11	2	524	very	medium	-
+f403R	11	3	244	to	medium	-
+f403R	11	4	165	commit	low	digit(s) uncertain
+f403R	11	5	744	the	low	digit(s) uncertain
+f403R	11	6	224	regency	medium	-
+f403R	11	7	1114	to	low	trailing group, may belong to "him" instead
+f403R	12	1	65	and	low	-
+f403R	12	2	601	queen	medium	-
+f403R	12	3	133	the	medium	-
+f403R	12	4	628	prince	medium	-
+f403R	12	5	07	peace	low	digits uncertain, possibly "079" or "097", note edge word after (non-numeric) not transcribed
+f403R	13	1	??	itself	low	leading faint marks, digits illegible
+f403R	13	2	??	to	low	faint marks, digits illegible
+f403R	13	3	??	a	low	faint marks, digits illegible
+f403R	13	4	33	very	medium	-
+f403R	13	5	268	fine	medium	-
+f403R	13	6	1319	politician	medium	-
+f403R	14	1	??	-	low	faint mark near left margin, digits illegible
+f403R	14	2	26	occasions	low	digits uncertain
+f403R	14	3	1367	shot	medium	-
+f403R	15	1	400	his	low	-
+f403R	15	2	165	mark	low	-
+f403R	15	3	66	the	low	-
+f403R	15	4	130	prince	low	-
+f403R	15	5	200	of	low	-
+f403R	15	6	64	asturias	low	written slightly raised/superscript, may be an insertion mark rather than a code group
+f403R	15	7	149	is	low	-
+f403R	15	8	360	under	medium	-
+f403R	16	1	209	special	low	-
+f403R	16	2	149	protection	low	-
+f403R	16	3	34	of	low	-
+f403R	16	4	424	the	low	-
+f403R	16	5	105	emperor	low	last digit uncertain
+f403R	16	6	98	if	low	-
+f403R	16	7	157	-	low	trailing group, gloss unclear
+f403R	17	1	1	-	low	small leading margin digit, gloss unclear
+f403R	17	2	1003	prince	low	-
+f403R	17	3	424	of	low	-
+f403R	17	4	400	peace	low	-
+f403R	17	5	1040	head	low	-
+f403R	17	6	452	assures	low	-
+f403R	19	1	109	believe	low	-
+f403R	19	2	310	that	low	-
+f403R	19	3	1033	he	low	-
+f403R	19	4	158	would	low	digit(s) uncertain
+f403R	19	5	926	not	low	-
+f403R	19	6	555	-	low	trailing group, gloss unclear
+f403R	20	1	733	roland	low	proper name; digits uncertain (7 vs 4)
+f403R	20	2	091	after	low	-
+f403R	20	3	824	such	low	-
+f403R	20	4	624	a	low	-
+f403R	21	1	131	counting	low	digits uncertain
+f403R	21	2	638	popular	low	-
+f403R	23	1	641	buonaparte	low	-
+f403R	23	2	509	for	low	-
+f403R	23	3	624	vengeance	low	digits uncertain, could be "024"
+f403R	23	4	607	-	low	right of "vengeance", beyond visible gloss word, note edge
+f403R	23	5	1291	-	low	digits uncertain, note edge
+f403R	23	6	48	-	low	digits uncertain, note edge
+f403R	23	7	153	-	low	note edge
+f403R	23	8	900	-	low	right margin, note edge, followed by an illegible smudge
+f408R	1	1	133	-	high	-
+f408R	1	2	1657	-	high	-
+f408R	1	3	1287	-	high	-
+f408R	1	4	28	-	high	-
+f408R	1	5	1698	-	high	-
+f408R	1	6	691	-	high	-
+f408R	1	7	742	-	high	faint tick mark above, not a legible word
+f408R	1	8	1657	-	high	faint mark above, not a legible word
+f408R	1	9	250	-	medium	written with internal gap "2 50"; faint tick mark above, not legible
+f408R	2	1	1586	-	medium	-
+f408R	2	2	975	-	medium	-
+f408R	2	3	09	-	medium	leading-zero form, possibly 09 or 89
+f408R	2	4	1657	-	high	-
+f408R	2	5	1191	-	high	-
+f408R	2	6	133	-	high	-
+f408R	2	7	1497	-	high	-
+f408R	2	8	1521	-	high	-
+f408R	2	9	408	his	high	-
+f408R	2	10	958	colleagues	high	-
+f408R	2	11	1510	-	high	tail of "colleagues" overlaps this number, no distinct gloss
+f408R	2	12	728	-	high	small triangle/delta mark above, not a legible word
+f408R	2	13	244	-	high	illegible squiggle above, not legible
+f408R	2	14	939	com	medium	gloss reads like "com" with a flourish, possibly abbreviation
