@@ -2000,3 +2000,11 @@ corresponds to, the table cell, and the kind (split, within-cell, control). Summ
 PHI b -> SBS, H69 4TRI a/n -> hook forms vs c/p triangle, H70 VBAR_A s -> VBAR_B-like vs t, thin, H77 LOOPS o -> SBS vs
 u -> INF), two within-cell FAILs (H71 e/r, H73 a/n), two clean one-symbol controls FAIL as expected (H75 d/q, H80 g/t),
 one near miss (H79 EBR_A). For the family worker's key rebuild (H52) and the verifier page (H66). Not a reading.
+
+## Campaign steps H82 and H83 (28 Sept 2026, 15:10-15:11 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs) -- dropped, no call
+
+Both rested on the idea that narrowing H57's wide period-key letter sets with the tile-attested splits would give the
+context judge back its power. Re-reading H57's own section: narrowed to their table cells, those sets ARE the
+f.61-fitted cell map, and that map has already been judged on every f.61 line that carries cipher (H25: known lines
+PASS 3/3, L10 FAIL 3/3). A rerun would be H25 again under another name (rule 3's same-instrument paragraph), and the
+projection (H82) had no other consumer -- the family worker already has `scripts/f61_glyph_splits.tsv` (H81). No cost.
