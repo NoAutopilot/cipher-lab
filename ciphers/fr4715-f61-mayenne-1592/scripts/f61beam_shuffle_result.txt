@@ -1,0 +1,3 @@
+H119 f.108r L04-L06, HASH4=i/x: real order rank 1 of 1001; shuffled-order ranks [56, 181, 8, 93, 66] (mean 80.8) -> STANDS
+H122 f.108v, 14 cells: real order rank 1 of 1001; shuffled-order ranks [2, 3, 2, 1, 2] (mean 2.0) -> VOID as a gate
+H122 f.108v, HASH4=i/x: real order rank 1 of 1001; shuffled-order ranks [1, 7, 5, 1, 4] (mean 3.6) -> VOID as a gate

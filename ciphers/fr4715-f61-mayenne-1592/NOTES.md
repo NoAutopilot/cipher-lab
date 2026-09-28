@@ -2636,3 +2636,24 @@ the wider margin (14 cells + HASH4 = i/x). For scale: the pooled per-letter scor
 fr16 real prose at the same length (p05 -0.870, median -0.781; letter-shuffled p99 -1.798, `f61judge_ngram_result.txt`),
 i.e. between shuffled text and real prose -- expected with a grade-M transcription, dropped classes and about one wrong
 choice in seven. Not a reading. No class change.
+
+## Campaign step H124 (28 Sept 2026, 18:29-18:31 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only -- a correction to H122
+
+`scripts/f61beam_shuffle.py` (pushed 09377899 before the run; `f61beam_shuffle_result.txt`): CLAUDE.md rule 3's ARM-C1 check
+on the beam's rank-1 results -- each target's signs shuffled within their lines (five seeds), ranked by the same instrument
+against the same 1000 permutations. A result stands only if the shuffled targets' mean rank is outside the top 5% (> 50).
+
+| result | real order | shuffled-order ranks (mean) | verdict |
+|---|---|---|---|
+| H119 f.108r L04-L06, HASH4 = i/x | 1 | 56, 181, 8, 93, 66 (80.8) | stands (thin: one shuffle ranks 8) |
+| H122 f.108v, 14 cells | 1 | 2, 3, 2, 1, 2 (2.0) | **VOID as a gate** |
+| H122 f.108v, HASH4 = i/x | 1 | 1, 7, 5, 1, 4 (3.6) | **VOID as a gate** |
+
+**Correction:** H122's "rank 1 of 1001 on f.108v" is not evidence of sequence: on 274 positions the fitted map ranks at the
+top even when the signs are shuffled, i.e. the rank measures how well the map's letter frequencies suit French, which a
+fitted map does by construction. My 18:26 ROOM line and the H122 section above overstate it; H122 is void as a gate (rule 3),
+and H123's prediction stands only as a committed resolution, with no rank behind it. The same concern applies in part to the
+H114/H115/H119 ranks on f.108r, where the shuffled ranks are lower (mean 80.8) but not null. The known-answer results (H116
+0.776, H121 0.908) are unaffected: they score the beam's choices against known letters, not a rank. The right statistic for
+the unknown texts is the gain of real order over shuffled order under the fitted map, compared with the same gain under
+permuted maps (H127). No reading, no class change.
