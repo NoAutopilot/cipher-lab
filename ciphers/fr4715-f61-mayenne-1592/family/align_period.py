@@ -33,6 +33,7 @@ for r in draft:
     line, pos = r["line"], int(r["position"]); a = ax.get((line, pos))
     seg = a["segment"] if a else "s1"; x = int(a["x_px"]) / sc + (segx(f"{pre}_{line}_{seg}.jpg") - bands["region"][0]) if a else 0
     code = r["sign"]; note = a["note"] if a else ""
+    if code == "DASH": continue   # f.101r: a dash inside the cipher row is a separator, not a sign (dropped from the alignment)
     # f.274 (28 Sept 2026): the two blind readers split one atlas class systematically -- pass A codes both the plain
     # '#/4#' sign and the '2 joined to a crossed 4' sign HASH4, pass B codes the latter 4STEM (alt HASH4). The period
     # gloss reads them differently (d/q under the plain sign, i/x under the '24' sign), so the pair (A, B) defines two
@@ -47,6 +48,9 @@ def words(path):
     for r in rd(path):
         seg = r["segment"] if r["segment"].startswith("s") else "s" + r["segment"]
         x0 = int(r["x0_px"]) / sc + (segx(f"{pre}_{r['line']}_{seg}.jpg") - bands["region"][0])
+        # f.101r (F61-FAMILY-2, 28 Sept 2026): the decipherer's long dashes are listed by the gloss passes as kind = dash
+        # (word '-'); they carry no letters and are dropped here (they sit over signs the decipherer left unread or over nulls)
+        if r["kind"].strip().lower() == "dash" or r["word"].strip() in ("-", "--", "\u2014", "_"): continue
         out[r["line"]].append({"w": r["word"].strip(), "kind": r["kind"], "conf": r["conf"], "x0": x0})
     return out
 gloss = {}; gstat = Counter()
