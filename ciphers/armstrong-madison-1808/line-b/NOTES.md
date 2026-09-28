@@ -1015,7 +1015,7 @@ found). B31 (ids 7400-8002, Jan-May 1808) is running behind it on the same singl
 
 Route: the B6 Wayback loop, Jefferson Early Access ids 7400-8002, one request at a time; keyword flag on
 cypher/cipher/decypher, title flag on Armstrong. Yield: 603 ids attempted, 586 HTTP 200, the rest HTTP 000 on one
-try (7515 7547 7562 7573 7592 7612 7656 7730 7745 7754 7794 7854 7878 7918 7922 7923 8001 ), listed for a single later retry. Dated range: 11 February to 5 May 1808 (the B6 pass picked up at
+try (7515 7547 7562 7573 7592 7612 7656 7730 7745 7754 7794 7854 7878 7918 7922 7923 8001 ), listed for a single later retry. Dated range: 11 February to 15 May 1808 (the B6 pass picked up at
 id 8003, 15 May).
 
 Results: 2 keyword hits, both noise -- a pseudonymous informer ("H. Churchill", 11 March 1808, id 7593) on "a
