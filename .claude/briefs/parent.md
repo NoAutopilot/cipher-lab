@@ -343,3 +343,6 @@ A standby orchestrator on account 3 (hub-seed/STANDBY-3.md) takes over if no "| 
 
 ## Model floor (owner, 28 Sept 2026 20:3x UTC)
 The orchestrator runs on Fable; if Fable usage is out, Opus 5.5; nothing below Opus 5.5 for the orchestrator, runners or workers on any account (no Sonnet or Haiku rows in WORK-QUEUE.tsv from now on). With neither model available on any account, all work pauses until a reset; that is acceptable, a downgrade is not. The orchestrator cannot switch its own session's model: when this account has Fable again, ask the owner to switch this session with /model, or move the role per hub-seed/STANDBY-3.md.
+
+## Account 3 runs Fable (owner, 28 Sept 2026 20:5x UTC)
+Every row queued to account 3 (tagged third) names Fable, with Opus 5.5 as the only fallback: runners, workers, verifiers and the standby. Vision-heavy transcription and adversarial audits go to Fable first. Nothing below Opus 5.5 anywhere.
