@@ -2843,3 +2843,18 @@ exactly where H131 said the plain beam fails (f.61's spans, cut by nulls into sh
 f.108r lines. Not re-tuned (one weight, fixed before the run). For the verifier: on f.61 itself the lattice's within-pair
 choices are about 0.9 right on known letters, the best figure any instrument has shown on this leaf, but on 49 positions and
 below this step's pooled gate. No reading, no class change.
+
+## Campaign step H138 (28 Sept 2026, 19:29-19:33 UTC, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61beam_period.py --lattice` (option pushed 30bc3063 before the run; `f61beam_period_lattice_result.txt`): H133's scoring
+against the period gloss letters with the H136 word-lattice beam in place of the plain beam.
+
+| leaf | scored | lattice | plain beam (H133) | first-letter |
+|---|---|---|---|---|
+| f.101r | 1,420 | 1,091 = 0.768 | 0.737 | 0.561 |
+| f.188r | 588 | 480 = **0.816** | 0.791 | 0.529 |
+| pooled | 2,008 | 1,571 = **0.782** | 0.753 | 0.551 |
+
+**GATE (>= 0.80 on >= 100 pooled): FAIL** by 0.018; f.188r alone clears 0.80. The lattice gains 3 points on both leaves over
+the plain beam, as on f.61's spans (H136). With the automatic gloss alignment's slips counted as errors, 0.78 is a lower
+bound on the instrument's choice accuracy in this hand. Not re-run. No reading, no class change.
