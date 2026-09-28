@@ -2420,3 +2420,15 @@ Reviewer's overall verdict: "a carefully controlled and reasonably strong statis
 the weight of an identification ... treat it as a flagged hypothesis for a separate verifier and the period-key search,
 not as a reading, and not as reportable outside the repo." The runner agrees with that verdict. No token, grade or class
 change.
+
+## Campaign step H74 (2026-09-28 16:54 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** H73's objection 2 answered with a Brandenburg-independent null: every capitalised word of
+6-12 letters, 3+ occurrences, in the es17c7 Cartas newsletters (1634-48, the whole Spanish monarchy's people and places)
+and in Lonchay 1896 -- 2,702 words (`h74/onomasticon.tsv`; Burgsdorf is absent; Luneburg, Luxemburg, Brandemburg, Burgos
+present) -- fitted to r16:2-r18:21 with `tools/crib_list_fit.py` (default floor; `h74/result.log`). Best: **"cartas" 6/0
+at r18:12 -- the real, already-read word of "y embian cartas de creencia"**, which the window includes (the tool finding a
+word that is there); then amiens / cuaresma 5, adrien / tamayo 4 on the unread part; luneburg and burgos 3. **No word of
+the independent onomasticon reaches Burgsdorf's 7 with no mismatch on the unread stretch.** With H71 (read text never above
+4), H72 (0 of 10,000 synthetic names) and H61 (no rival among 883 court names), the name fit is not an artefact of the
+list it was scored against. It remains conditional on 72 = two letters (H53, H63). No token, grade or class change.
