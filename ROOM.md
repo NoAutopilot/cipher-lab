@@ -4356,3 +4356,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-28 18:55 | campaign runner fr4715-f61-mayenne-1592 (owner account, session_01RbeePKZVn83gNfES8yFmhe) | campaign fr4715-f61-mayenne-1592 step H142: bootstrap noise scale for the 15 closest family-pool one-swaps of H132, script-only (about 20 min compute), cap 0.5 USD, box 60 min
 2026-09-28 18:55 | campaign runner fr4715-f61-mayenne-1592 (owner account, session_01RbeePKZVn83gNfES8yFmhe) | campaign fr4715-f61-mayenne-1592: added H147 (refined map on the known-answer tests), H148 (key v4 widenings tested by sequence gain), H149 (proposal file for the family worker); H142 computing
 2026-09-28 19:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 19:11 UTC: spawned 0 (), queued left 0
+2026-09-28 19:11 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-28 19:11 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued; Fable rate limit allowed), queued left 0
