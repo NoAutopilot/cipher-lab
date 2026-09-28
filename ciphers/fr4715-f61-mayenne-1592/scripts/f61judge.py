@@ -60,7 +60,9 @@ def build(tag):
         txt.append(f"== {lab}")
         for line, r in render(lines, ms[mi]).items(): txt.append(f"{line}: {r}")
     open(f"{HERE}/f61judge_{tag}_sets.txt", "w").write("\n".join(txt) + "\n")
-    json.dump({"tag": tag, "source": os.path.basename(src), "key": key, "maps": ms, "h26_split": SPLIT}, open(f"{HERE}/f61judge_{tag}_key.json", "w"), indent=1)
+    meta = {"tag": tag, "source": os.path.basename(src), "key": key, "maps": ms}
+    if SPLIT: meta["h26_split"] = True   # only in split-mode files, so H16's key.json stays byte-identical
+    json.dump(meta, open(f"{HERE}/f61judge_{tag}_key.json", "w"), indent=1)
     print(f"wrote f61judge_{tag}_sets.txt ({len(order)} sets) and the withheld key")
 def score(tag):
     key = json.load(open(f"{HERE}/f61judge_{tag}_key.json"))["key"]
