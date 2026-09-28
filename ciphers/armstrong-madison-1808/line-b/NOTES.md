@@ -330,7 +330,7 @@ receipt docket; no "in cypher", no "not decyphered", no key or correspondent nam
 fold belongs to the 22 Feb despatch's left margin ("...nes have ... to the ... Sec. M. ... 's letter ... rch", M) and
 is the extract-forwarding note of the docket-0645 kind, not a cipher note. No lead; done.
 
-## Step B15 (28 Sept 2026, 03:28-03:5x UTC, in progress) -- Graham's "duplicate in cypher with a postscript on the back": roll 14 frames 0632-0664 hold no second copy of the 20 Feb letter; the 22 Feb despatch's own back page carries a cipher postscript and a "by M. Patterson" docket
+## Step B15 (28 Sept 2026, 03:22 UTC onward, in progress) -- Graham's "duplicate in cypher with a postscript on the back": roll 14 frames 0632-0664 hold no second copy of the 20 Feb letter; the 22 Feb despatch's own back page carries a cipher postscript and a "by M. Patterson" docket
 
 **Lead (from B6's Wayback pass).** John Graham, chief clerk, to Madison at Montpelier, 20 May 1808 (Founders Madison
 99-01-02-3101, Early Access): "Among the Letters forwarded by this Mail you will find one in Cypher from Genl
@@ -368,3 +368,20 @@ the Founders Early Access entry for Armstrong to Madison, 22 Feb 1808 (id 2733, 
 that failed twice; retried next) -- the editors print "Duplicate"/"RC"/postscript notes -- and, failing that, the
 LOC Madison Papers Series 1 for a May 1808 receipt. Requests so far: catalog.archives.gov 35, web.archive.org 17 for
 this step (plus B6's loop); 0 subagents.
+
+**B15, continued (03:30-03:4x UTC).** The Founders Early Access entry for the 22 Feb despatch (id 2733, fetched on
+the third try) prints the roll-14 text including the postscript and cites only "DNA: RG 59--DD--Diplomatic
+Despatches, France"; no "Duplicate" note either way, so the Founders apparatus does not settle which letter Graham's
+duplicate was. The Founders entry for the 20 Feb letter (id 2728) was already read by ARM-REC3: bare citation, no
+apparatus. LOC's James Madison Papers catalogue (`?q=Armstrong&dates=1808/1808`, 21 results) lists no Armstrong item
+between January and August 1808, so a duplicate that reached Madison at Montpelier is not catalogued in his own
+papers as an item (search result; the LOC item list for 1808 is complete at the item level for the Series 1
+correspondence, but a duplicate could have been returned to the Department's files). Roll 14 was then closed for
+February-March 1808 as far as the route allows: frames 0049 (clear), 0050 (a French clerical enclosure, clear) read;
+frames 0051-0054 and 0056-0060 are being fetched one per 75 s (`scratch/b15/slow_fetch.sh`) because
+catalog.archives.gov began answering the 600-px IIIF request with its HTML app shell after about 35 requests in
+quick succession -- a throttle, cleared by a 45-s pause on one retry, re-triggered by a 3-s cadence; good-citizen
+rule: no further bursts on that host this session. Weber 1979 (IA `unitedstatesdipl0000webe`, be-api full text, 8
+queries) says only that Armstrong "wrote 40 letters in code to James Madison beginning in late 1804", that some
+DUSMF despatches "still remain only in code form", and lists "Gen. Armstrong XI" among the Brant worksheets (the
+Box 37 material of ASKS 77) -- no private cipher named.
