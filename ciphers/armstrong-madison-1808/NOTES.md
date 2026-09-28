@@ -2794,3 +2794,5 @@ completed (two more died on the rate limit before reading anything); this runner
 Cost: get_session carries no cost figure; two Sonnet calls of 201k and 325k tokens are about 4-5 USD by H21's rate --
 `--spend` records 5, which takes spent_today past the 120 daily budget (116.13 before this step), so the runner stops
 after this step per the campaign brief.
+
+**Correction (05:05 UTC):** the budget line above was written against a 120 USD daily budget; the orchestrator raised it to 240 during this step (CAMPAIGN.md header, spent 144.38/240 after this step), so the runner continues rather than stopping.
