@@ -1,0 +1,1475 @@
+soпderdruck аus:
+Historische Forschungen
+Band 106
+Geheime post
+Kryptologie und Steganographie
+der diplomatischen Korrespondenz
+europilischer Hiife wilhrend
+der Friihen Neuzeit
+Herausgegeben чоп
+Аппе-Simопе Rous
+маrtiп Mulsow
+Duncker & НumЬlоt . Berlin 2015
+гr,^ ь
+r?ъo rе 
+й 
+F гr + 
+tzZ пq 7'Q 11- ,"/
+Ву Ekateriпa Dоmпiпа
+I would like to start this discussion frоm recalling one of the most well-
+known examples of the early Tudor interest in cryptology, the Utopian al-
+phabet, which appeared in the first edition of Thomas More's book in 1516.
+Based оп the simple substitution principle this cipher uses а constructed
+script, thought to have been devised Ьу Thomas Моrе himself and his
+friend, the actual printer of the book Pieter Gillis. Leaving aside а long and
+interesting discussion on the паturе and meaning of these signs fоr More's
+philosophical concept, I would like to point out only опе aspect of the
+message conveyed thTough this artif,rcial language: it was designed to keep
+information save frоm those, who wеrе not entitled to get access to it.t
+Being one of the key-politicians at Непrу VIII's соurt Thomas More cer-
+tainly knew well the dangers of losing keys to the state secrets.
+Indeed, in еаrlу sixteenth cenfury simple substitцtion cipher systems had
+slowly Ьееп paving their way frоm the Italian states into the rest of the
+'Wеstеrп Еurоре, becoming an essential pafi of the diplomatic practice dur-
+ing the Italian wars (1494-1559). Both Henry VII and his son Непry VIII
+were striving to bring England out into the limelight of European politics
+after the furbulent period of the Wars of the Roses. They wеrе eager to
+improve their diplomatic practice Ьу catching up with the latest develop-
+ments of their European neighbours. The art of cryptology was one of those
+skills the early Tudor diplomatic machinery needed to acquire.
+The sfudy of the еаrlу Tudor 'Black chamber', that is to say answering
+the question, who devised the ciphers, how often they wеrе changed, how
+the cryptographers were chosen, trained and controlled, how the ciphers
+were handled down frоm the rоуа1 chancellery to the diplomats and vice
+чеrsа аrе difГrcult to апswеr. While the name of Sir Francis Walsingham and
+his cryptographers from the era of queen Elizabeth I аrе well known, those
+from the times of her father and grandfather still 1ау in obscuriФ.2 At this
+stage of research, the main obstacles аrе not only the scarcity of sources,
+I Cf, Slra.s.rer, р. 69 f1.
+2 Daybell, р, l48ff.; Sс.'l,erb),.
+Иlr- 
+оо/с ry 
+а44 а/ йr?е4,.еrg!.а_rа
+l- 
+v
+?ЪОП< crt7 Деr-- 
+/аrз-rс , 
+S ё<-_ 'r{,о_
+/Ql s < 
+"L+ 
+се"- 
+е€-а-?р 
+?е/e-Е,'езkч JЁ
+'4." o-Zm'
+Ciphers in Еаrlу T[dor Diplomacy:
+the Case of Tommaso Spinelli's Private Letters
+1в2
+EkateTina Domnina
+but also the lack of rеsеаrсh on this subject, based on the available mate-
+riаl. In this sense, а thorough reappraisal of early Tudor diplomatic practice
+sources is needed for апswеriпg some of these questions.
+This рареr is aimed to make an addition to the discussion, Ьу looking at
+some сiрhеrs that were used in the in English diplomatic practice at the end
+of the fifteenth and the beginning of the sixteenth cenfury. The source mа-
+terial in focus is, however, not that of ofГrcial origin, but of private one. Му
+research is based оп the private cotTespondence of а diplomat Tommaso
+Spinelli (14'72-1522), who was one of the first English resident ambassa-
+dors in Еurоре. А Florentine Ьу birth, he sеrчеd Непrу VII and his son
+Henry VIII at the соurt of Gеrmап еmреrоrs and travelled extensively Ье-
+tween Flanders, England, France and Spain. Apar1 from а large пumЬеr of
+offrcial diplomatic dispatches, which are preserved among the collections of
+the British library and the Public Record ОfГtсе, Spinelli left а signiГrcant
+пumЬеr of private letters, which аrе part of the Spinelli Аrсhiче in the
+Beinecke Rare Book and Manuscript Library. These letters wеrе addressed
+to his younger Ьrоthеr Leonardo (1473-15З1), who serwed as а canon at
+Santa Maria del Fiore and was also а chamberlain to the роре Leo Х.
+Аrоuпd а hundred of these letters have Ьееп identified and almost one third
+of them contained ciphered fragments. When studied along with Tommaso's
+offrcial dispatches these letters shed additional light on political, cultural
+and economic relations between early Tudor England and the continent.
+While the official Tommaso's letters were long time deciphered, his private
+ciphered messages had печеr been studied before.3 In my rеsеаrсh I aim to
+establish what purpose they were used for and whether this method of se-
+curing information was effective оr not.
+Тоmmаsо Spinelli belonged to the one of the most influential Florentine
+families, who along their relatives and business раrtпеrs, namely Fresco-
+baldi, Gualterotti, Bardi, and Medici themselves, acted as bankers, mеr-
+chants and trаdеrs in England, and were often employed to procure interests
+of English royal family and government in Еurореа. The securify of their
+position was supported Ьу their рrохimiф to the della Rovere family and
+lаtеr on to the Medici. In the first quаrtеr of the sixteenth cenfury the main
+interest of Spinelli in England was banking and diplomatic service, whereas
+in Italy and Еurоре they were known also fоr promoting their silk business,
+which had been their specialty since the fourteenth centLrry.
+Тоmmаsо (|412-1522) was the oldest son of eleven children of Guas-
+раrrе di Lionardo Spinelli (1442 |50l) and Alessandra di Piero Gualterotti.
+З Spinelli Агсhiче, Ьох l23, fоldегs 2459-2466; Ьох 126, folders 2566-258]. I
+ап grateftll to Dl, Malcello Simonetta for sharing а 1ist of Spinelli's 1ettels with mе.
+4 Са;/ёrrо l Jack; Sicca.
+С'iрlrегs iп Е,аrlу Тudог Diplomacy
+Infomation on his educational background is scan! hоwечеr, he obviously
+received some, for he was а polyglot, speaking Frепсh, English, Latin and
+apparently Spanish, apart from his native Italian.s AppaTently, in his late
+teens Spinelli was sent to the Netherlands to his Gualterotti relatives to
+lеаm trading оr banking business, but soon he found himself travelling
+extensively between Flanders, Frапсе, Rome and Flоrепсе not опlу for his
+family affairs, but also in favour of his home-state interests. In the srшпmеr
+of 1495, i.e. less than а уеаr since the star1 ofthe French invasion into
+Italy, he was sent to the Frепсh court to Ье an official representative of the
+Florentine republic until the аrriчаl of the Florentine ambassadors Guidan-
+tonio Vespucci and Neri Capponi. Араrt frоm being а Ьеаrеr of the repub-
+lic's message to Charles VIII, it is not сlеаr what kind of powers Spinelli
+acfually had in this mission, but it is worth noting that in his letter of
+recommendation frоm the Council of Ten to Philippe de Сошmупеs he is
+described as а person well known to him.6 This suggests that this was not
+his first involvement into diplomatic matters. Spinelli was again mentioned
+in 1502 as а Florentine messenger in several letters of Niccold Machiavel-
+li to Signory. Machiavelli wTote them during his stay in Imola at the court
+of Сеsаrе Borgia, belligerent son of the роре AlexandeT VI.7 This time
+Spinelli was employed Ьу Machiavelli for channelling his соrrеsропdепсе
+to protonotario Antongaleazzo Bentivoglio, the son of Bologna's rulеr Gio-
+vanni II, and back. Just like other stages of the Italian wars this one in-
+volved negotiations between several princes, not only the Borgias, who
+were keen to add Bologna to their possessions, but also the Frепсh king
+Louis ХII and the Medici. Nafurally, Spinelli was not а key figure in these
+negotiations, but even this marginal involvement provided him with valuable
+experience and connections.
+Several years lаtец from about 1505, Tommaso Spinelli firmly established
+himself in the Netherlands. Most of his letters to his brother Leonardo frоm
+this реriоd indicate that he was shuttling between Bnrges, АпМеrр, Ghent
+and Brussels dealing with various family and partners' business matters.8
+What is also evident from his letters is that he was looking for а place in
+the diplomatic service in the Netherlands either for the Habsburgs, or for
+the Tudors. Не succeeded with the latter. In NочеmЬеr 1509 he proudly
+wrote Leonardo that he was nominated to reside in Непry VIII's паmе at
+the court of the Archduchess Margaret of Savoy, the Gочеmоr of the Neth-
+erlands: ',.. qui venuto verso questo Serenissimo Re mio signore е padrone
+5 Fоr Spinelli's lаtеl- саrеет sce: -Вейrеи.s. OfItce.
+6 Кеrу),п de Lеllепhоуе. р. 2lЗ 2l4.
+1 Macchictyelll, р. 268, ЗlЗ.
+Е Spinelli Агсhir,е, Вох 126, fЬldег 2569, 2510,251 |,
+l8з
+184
+Ekaterina Domnina
+а поmе del quale mi rietorno in Fiandra per fаr 1а residentia in corle della
+illustrissima madama Маrghеritа е servillo in quello оссошеrа'.9 Earlier
+that year in а Frепсh letter to this young Tudor monarch Spinelli was ad-
+vertising his services fоr his late father and арраrепtlу exaggerated his
+importance, saying that even before оfГrсiаl approval frоm England the
+Archduchess regarded him as his representative.l0 Even without this exces-
+sive self-advertising, such а реrsоп, as Spinelli, experienced in languages,
+various business and diplomatic commitments was а valuable addition to
+the emerging Tudor diplomatic service.
+WЪеrечеr Spinelli stayed, he corresponded with his Ьrоthеr in their
+mother language, sending letters either to Flоrепсе, оr to Rome. On the
+аvеrаgе, he wrote at least опсе in sечеrаl months, sometimes more often,
+depending on the situation. The general sфle of his letters was usually
+concrete and business-like, but always included а section, in which Spinel-
+li was passing on greetings to his relatives, оr friends, enquired about his
+Ьrоthеr's health, complained of his own and asked fоr mailing him some
+necessities, such as face powder and musk soap.lt Almost every letter of
+his also contained passages on his сurrепt diplomatic work and side jobs,
+and it were these pieces of information that he usually asked his Ьrоthеr to
+keep secret. Starting frоm about 1515 in оrdеr to insure that this secrecy
+was рrореrlу observed а cipher was introduced into their correspondence.
+The rеfеrrаl to а cipher is Гrrst rесоrdеd in а letter to Leonardo of 3 January
+1515. Here Tommaso asked his Ьrоthеr to cipher certain parts of their соr-
+respondence to keep some information safe frоm their other Ьrоthеr Nic-
+codemo, but it is not сlеаr what information he was referTing to.12 How-
+ечец it is evident that this method of securing information proved reliable,
+as frоm the summer of 1515 ciphered passages were frequently iпсоrро-
+rated into Spinelli's private correspondence.
+About the same time, Spinelli also attempted to introduce ciphering into
+his official соrrеsропdепсе with the English government. In а letter of
+18 January 1515 to Henry VIII, Spinelli informed Henry VIII that he was
+reporling alI matters of impofiance in сiрhец the key of which he would
+send Ьу the Deputy of Calais.l3 Не received no answer from Henry VIII's
+gочеrпmепt and had to ask two mоrе times for providing him with а cipher.
+Without one his correspondence was easily accessible Ьу the Habsburg of-
+9 Spinelli Archive, Вох 126, 257l, 8.11.1509, Lопdоп.
+l0 Веhrеп,s, Officc, р. 167.
+1l С1'. Spinelli Archive, Вох 126, Fоldег 2574, 29.11.15lЗ, Mechlin.
+l2 Cf. Spinelli Archive, Вох l2З, Folder,2460, З,0].l514 [1515], Bгussels.
+lЗ Letters and рарегs, ТТ. No, 35.
+Ciphers in Early Tudor Diplomacy 
+185
+ficials in the }.tetheгlands.ra only at the end of summeT did spinelli receive
+а cipher frоm lyolseY, аý he stopped asking for it in his ensuing соrrеsропd-
+епсе with him.lJ Не would .rr" tbi' cipher throughout his entire diplomatic
+career.16
+The same is also true for the cipher Spinelli used for corresponding with
+his Ьrоthеr, throughout Seven уеаrS of it usage (1515_1522), he печеr
+changed it compleielY, mаkiпg Ьпlу miпоr additions. None of the огiфпаl
+keys1o his сiрhеr survived. Ьоwе"iц it was роssiые for mе to break it апd
+rесопstruсt the key to it. It is important to поtе that his ргiчаtе сiрhег was
+difГегепt fгоm the опе he used iгhis official соrrеsропdепсе. In his ргiчаtе
+соrгеsропdспсе spinelli relied оп а homophonic substitution сiрhец а type
+of сiръеr in whiй plaintext letters mар to mоrе than опе symbol of the
+consйcted script. tn tlris kind of cipher the highest-frequency plaintext
+symbols аrе given mоrе equivaleuts фап lоwег ftequency lеttегs. 1п this
+way. the frеq,iепсу distгibution is flattened, rnaking analysis mоrе diffioult.
+нйечеr' опЪе t1" сiрhеr is Ьтоkеп, it is simplY а matter of tlme and ра-
+tience to establish the rпеапiпg of all signs. In his cipher Spinelli also used
+.null' сhаrасtегs, apparently tJ make the breaking of it mоrе difficult. For
+.null. сhаrасtегs in his сiрйег he used signs similаг to the дrаьiс пчmегаls,
+whегеаs all оthеr letters of the Italian alphabet wеге substituted with vaTious
+signs, оrigiПаtiпg Гrоm Latin. Grееk, НЪЬrеw, and alchemic symbols. Only
+опе letter of the ltalian alphabet, фе ever-silent 'h' was not substituted Ьу
+апу sign and арреаrеd in Ъpinelli,s cipher as itself (see illustration по, l),
+дlthочgh official and pгivate сiрhеr alphabets of spinelli wеrе not identi
+cal, thеуЪtеmmеd from the ,чm" ,оrrrс". Тhе origins of these signs date
+back to-the ciphers used Ьу the рарасу, Мапtча and Milan Ьемееп fочr-
+teenth and fiftbenth сепturйs.l7 йо*"lо"l it is not cleaT completely whеге
+spinelli's ciphers originated and who constructed them. опе sочrсе of iл-
+sрirаtiоп "ould 
+huu. Ъееп the Habsburg administгation in the Netherlands,
+who used cipheБ iл соrrеsроПdепсе with its ofГlcial апd unofIicial diplo-
+mасу. Тhе evidence fоr this аrе the materials of Регkiп warbeck's case
+(1490-1499). Д уоuпg ргеtепdеr of the Flemish оrigiп claimed himself to
+Ье the son of EdwJ ry, Ki.b"ra of ShTewsbury the first Duke of Yоrk,
+who miraculously escaped the death iп Тоwеr апd Ксhаrd III's reign, Тhus,
+tй/аrЬесk waý thгeatening the sесuritу of Непrу VII's position on the Епg-
+lish thTone. The most uideot .чрроrtеrs of Warbeck's case at а lаtеr stage
+l4 Lettels and papeTs, Il, No. 209.
+l5 Letters and рарегs, II, No. 905, 1з.09,15l5,
+|6 Matliпgly, Renaissance, p.2l5,
+11 Meister, дпЙпgе; Meister, Geheimsch,ift, р. 24-118; Petrttcci, р, 393-401;
+simопеltсt.
+Slq п
+Letter
+Siqn
+-ettel
+Siqn
+-eKel
+Siqn
+д
+W*
+\
+н
+h
+R
+JF.,
+NN
+,ý"
+-fr
+I
+ý
+S
+ýil
+рр
+4.@
+зi
+.F"
+L
+з
+?
+т dr'
+"f"
+Qua
+D
+i!
+*fu
+м
+?-
+d
+Uд
+#
+I
+Qце
+ф
+f"
+Е
+,l
+ч
+d
+N
+bJ
+а
+RR +
+F
+,{,
+Y"
+о
+8
+2
+NUllа fl{_
+*l)
+SS
+у{
+f
+,Ь
+у
+р ф
+у
+сс +
+тт
+..&
+#
+]86
+Ekaterina Domnina
+Fig. 1: Thc key to the ргiчаtе сiрhег
+of Tomtnaso Spinelli, 15t5 l522.
+А гeconstTLrction (Ekaterina Dоmпiпа).
+of his саrеоr r,",еrе thе Genrran еmреrоr Maximilian I and Маrgаrеt of York,
+the dowager Dr-Lchess of Burgundy, sister of Еdwаrd IV and an allnt to the
+unfortltnate Richard of Shrervsbury. Аftег Warbeck's seizure and imрrisоп-
+ment, а grоuр of his English supporters tried to organize his escape and
+соrгеsропdеd with him, шsiпg а substitution сiрhег. The tгiаl revealed that
+the сiрhеr belonged to WаrЬесk and, most рrоЬаЬlу, he had received it frоm
+his Habsburg helpers,ll 
+*,ч*'.Ц1 l..rt- t..rr* ч+ tи,,а u'-ll"y,--
+The Habsburgs in tttrn kдоw},аЬоut Spanish ciphers, devised Ьу Miguel
+Рёгеz de Alrnazбn (?-15l4), the Fiшt Sесrеtаrу of State to the King Fсrdi-
+nand of Аrаgоп at the trrrn of the fifteenth century. English goverrrment got
+knowledgc of these ciphers аrоuпd l505, when King Fcrdinand the Catholic
+stагtеd using thern tЬг согrсsропdепсс with his daughter Catherine of
+Аrаgоп, at that time а widor,v of Непгу VII's oldest son Рriпсе Аrthur.r9 lt
+18 Дrthursоп, р, l49.
+19 Bergeпrolh. Rcmarks, рр. xii xiii,
+Dlaz, рр. 149 1_50,
+xcv, cxxxvii tT Аrthursоп, р. 50 Gаlепdе
+( iрIlегs in Еrгl1 1udоr Diplorllacy
+took the English some time to 1еаrп, but frоm about 1508, John Stile
+(?_1528?), an English ambassador, started using а simplified чаriапt of one
+of the Spanish сiрhеrs in his reports to the English government.2O However,
+since Spinelli had to ask Wolsey and Henry VIII for а cipher in 1515, the
+implementation of ciphers in ambassadorial соrrеsропdепсе did not Ьесоmе
+а common practice rrntil sечеrаl уеаrs later.
+Дпоthеr probable Sоurсе of knowledge оп the practise of ciphering both
+fоr the еаrlу Tudors and for Spinelli was the Roman curia. Ву the beginning
+sixteenth сепtury England had already had а tradition of the residential
+ambassadorial representation at the papal court, as well as а small, but Teli-
+аЬlе group of suрроrtеrs аmопg Italian nobles in Rome.21 The early Tudors
+for procuring their interests at the рара1 court employed several Italian
+families, such as Gigli of Lucca and later оп Casali of Bologna. дlikе to
+Spinelli, these families had strong connections within the Catholic Church,
+but were also eager to promote themselves in England Ьу acquiring luсrа-
+tive church benefits and promoting their compatriots at the king's service.
+Frоm 1514 the resident English ambassador in Rome was the Bishop of
+Worcester, Silvestro Gigli (146з-|52\), а politician of а Machiavellian
+style, being eager to serve both the English crown and the рарасу. Accord-
+ing to rumours, Gigli had poisoned his predecessor in Rome Christopher
+Bainbridge (1462lЗ-|514), the Cardinal of the Roman Сhurсh and the
+Bishop of York, in оrdеr to open these prestigious positions to his patron
+Thomas Wolsey.22 The investigation into the causes of Bainbridge's death
+was а sensitive matter and it саmе as no surprise that Gigli started using а
+cipher for his соrrеsропdепсе with the English government. The first known
+rесоrd of his mentioning а ciphered message is of FеЬruаry 1515, and frоm
+the context of this letter it is сlеаr that he had already been using such
+method fоr securing information fоr some timе.2З Later on, the usage of
+ciphers in diplomatic dispatches Ьесаmе а common practice for Gigli, as
+well as for other English representatives at Еurореап coufis. дll of them
+relied on simple substitution ciphers.2a
+This inevitably required а whole set of secretaries in England to deal with
+their соrrеsропdепсе. Despite their evident importance, we know very little
+about these people. It is tempting to suggest that Thomas Моrе could hаче
+ьееп involved with the creation of these ciphers, as his utopia with its
+20 On John Stile see Gаirdпеr, рр. liii lv ald Brel,-er, р. xcv-xcvii.
+21 Веhrепs, Oгigirrs, р. 640 656; l|todkct; Wilkie: Fletcher.
+22 Letters and Рареrs, I, no. 525З.
+23 Letteгs and PapeTs, tI, по. 110.
+2а Fог Gigli's letters in сiрhсr see rеfетепсеs in: Letters and рареrs, I_ II. See
+aLso: Лlс:йаl"r/.s.
+187
+1 ltl]
+Еkаtеriпа Domnina
+cryptographic alphabet appeared in 1516, but there is no Гtrm evidence to
+support this conjecfure. During the first years of their introduction into
+diplomatic practice, another Italian, Andrea Ammonio, Henry VIII's Latin
+sесrеtаry and minor humanist from Thomas More's circle, deciphered
+them.25 Later оп, apparently, Sir Вriап Tuke, the principal secretary to
+Henry VIII, and Thomas Wolsey himself deciphered the diplomatic dis-
+patches.
+Ciphers that English ambassadors employed abroad were rаrеlу changed.
+This means they were rаthеr secure, despite their simplicity. Elaborate сryр-
+tographic methods of Lеоп Battista Alberti, or Johannes Trithemius were
+unknown in England at that time. The sitцation did not radically change in
+the lаtеr period, ечеп in Elizabethan times the ciphers wеrе not regularly
+altered.26 One explanation fоr this is that English language was not widely
+used in diplomacy, being inferior to Latin, Frепсh апd Italiaф1. Ечеп in
+1578 John Flоriо, а son of the Florentine expat in London, wrote in his first
+English-Italian textbook: 'It is а language that wyl do you good in England,
+but pass Dоuеr it is worth nothing'.28
+As it has been already noted, Spinelli also did not change his cipher
+thToughout his lifetime, which could also mean that he thought it to Ье
+sесurе. Encoding could also seem а tedious business fоr him, which re-
+quired а lot of work both for him to сiрhеr the message and for his
+brother to decipher it. This рrоЬаЬlу explains that in his letters the text was
+not always written exclusively in code, but mоrе often was built of а mix-
+furе of coded passages and plaintext. This raises another question about
+what kind of infoгmation he thought necessary to hide from the eyes of the
+unsolicited reader. Family business affairs, nrmours about deaths of impor-
+tant relatives wеrе аmопg such pieces of inforTnation that he usually ci-
+phered, but mostly he encoded passages and ечеп whole letters, in which
+he expressed his own opinion оп the official meetings and talks. Apart frоm
+that, he sought to hide the fact that, he was transferTing sensitive оfГrсiаl
+inforTnation to the third parties; something that he was not expected to do.
+An example of this is provided Ьу Spinelli's letter to Leonardo of 2 July
+of 1520, when Spinelli was accredited as ап ambassador at the court of
+Gеrmап еmреrоr Charles V (see illustration по. 2).29 This letter included а
+large passage in сiрhец in which Spinelli expressed his opinion on the
+conference between the Непry VIII and Francis I, which took place in Bal-
+25 Fот Amnorrio see Letters and PapeTs, vo1. I, II; Рz--i.
+26 Daybell, р. iz18 ff.
+21 Dоmпi.па, р. 102-112; Науе, р. \7 ff.
+28 F|,orio. Fоl. 50r.
+29 Spinclli Archive, Ьох 126, Fоldег 2583.
+Cipliers in Еаrlу Tudor Diplonacy
+l89
+гЩ:!.ff":*'tпiwрt:(
+,у ?u,nj Ь*- 4Ь*7,:-.;;-4>i,м,>1iп. t;',
+-, Jbфl-Lo i,rl *,L f***ц**, Jцd-,,
+", ,*-!:|ж:::rх#хН;#
+- ;kI;,J;-w:.Ж?gпц
+^-)ж*мlýIэ
+'' '4;!HrЁiL'.r.Ёi* t втв,о,"
+' ?*y'*rLl 4Ъ ",}i+еТfц 
+*lo
+,, фнf|rэlйt i)'- н У.*F1
+1 . ýl'taH нiё8слJФнт+ао-,f1
+- то,тl о /ъ i +-ан-Ъr8 tp ,*', t|'
+' *1u?, i r |- ? / н 1 Hripletlg' H
+-ь2, q н J*g !"7 -*\i 
+g **т Sl {
+-гl ý.r*ýёf +лДбlъlэ 1
+l
+Fig. 2: Тоmmаsо Spinelli to lris Ьтоthеr Leonardo,
+2 July 1520, Antrverp (fо1 1т) (Beirrccke Rare Book and
+MarlLLscTipt Lilэlагу, Yale Univclsity, Spinelli Аrсhiче,
+Gеп Mss l09, Ьох 126. Fоldеr 2-58З).
+inghem, пеаr Calais in June 1520, А lavishly organized meeting, most com-
+mопlу known as а n,ceting оп thc Field of the C]oth of Gold aimed at
+prorToting friendship betц,een the two kingdoms, proposed the establish-
+ment of the ltnir,ersal piece and the organisation of а new сrшsаdе.з0 Despite
+high гhеtоriс and noble intentions to end the war in Ita|y this meeting had
+little political effect. Iп а гаthеr candid mаппеr! Spinelli was rеfеrriпg to
+this conference as а conrplete u,aste ol till.e fоr both the English and the
+Fгепсh kings ('... c:he passo de qua, et рег questo поп dird ahro tatlttl е
+зо Маftiпg||, Nonaggгession Pact, рр. 1-З0; Лzlss,e//; Riс:hаrdsоп, рр. 40,1 zl15
+t90
+Ekaterina Domnina
+пе соп iпghilesi, пе соп frапzеsi поп se сопсlusо cosa'). Не was describing
+Cardinal Wolsey, who had Ьееп the main engineer of that meeting, as an
+unpractical dreamer ('el поstrо cardiпale ha di altefaпtasie, et sопо le cose
+а tеrmiпе...'), who apparently could not understand that the Frепсh should
+Ье sold the idea of а new Crusade to win time for preparing а new Italian
+war. Spinelli urged his brother to inforTn Cardinal Giulio Medici and the
+роре Leo Х that they should not delay with making а new alliance with the
+еmреrоr against the French.
+In this letter Spinelli apparently underestimated the curmingness of Wol-
+sey, who concluded an alliance with the Gеrmап emperor against Frапсе
+less than а year after this mеmоrаЬlе meeting.31 However, in general his
+judgment of the whole sifuation was very reasonable and realistic. What is
+also interesting in this letter is that Spinelli directly criticized his English
+patrons and declared his only allegiance to the Ноlу See; 'I am hеrе for the
+роре, not to enrich mе' (',Sоио qua per il рара, поп sопо per alargarme ...'),
+he wrote. Such an opinion would рrоЬаЬlу have not been particularly wel-
+comed either Ьу Henry VIII, оr Ьу the Cardinal Wolsey, if they were to read
+this letter of Spinelli. In fact, most probably, it could ruin his саrееr. At the
+same time, the openness and frankness with which Spinelli spoke his mind
+in this letter underlines that he indeed trusted his cipher.
+The employment of ciphers in Spinelli's private letters was designed to
+protect its contents from being revealed Ьу the third parties. In this sense
+they Гrt neither into the category of the merchant's letters, поr into the
+category of the awlsi, which were usually ореп sources of iпfоrmаtiоп.З2
+Spinelli was not aimed at meticulous recording of events, Ьut rаthеr sought
+to analyse them and foresee thеir results. Не attempted to keep his brother
+and his Medici patrons well-informed about the development of the big
+Еurореап politics, which he witnessed, without being considered а spy Ьу
+his English masters. Frоm this perspective Spinelli's private letters demon-
+strate that he was aware of his role of а servant to two masters, and his
+sense of duty for the English side conflicted with his sentiments towards
+his Italian homeland. Ву using ciphers in his private letters he gTew ас-
+customed to the idea of employing them in his offlrcial letters, which to
+certain extent helped the government of Henry VIII to introduce this rela-
+tively new technique into its daily diplomatic practice.
+31 Gлr,lи, рр, 155 112,
+З2 lпfeli,se, рр. З3-52.
+Ciphers in Еаrlу Tudor Diplomacy
+Appendix
+Tonlmaso Spinelli to lris brother LconaTdo, 2 July 1520, АпtwеlрЗЗ
+Deciphered 1e\t nppcal,s in сLtгsir е,
+ReveTende domino nostro fratTe hопоrапdо, poi parti di Spagna, non vi ho scritto,
+ne mапсd licevuto \rostre. А1 гечегепdissimе Саrdiпаlе de Меdiсiза farete lettera
+lrumile recomandandovi, dicenc]oli, che in Anglia lrabbi реr i1 RevererrdoЗ5 audientia
+della саmега la slra, е1 quale andai am[i]citate, et mе 1i offeTsi, mа реr 1а bTevitii del
+tempo et grandi negotij, поп possemi fare quello saria stato mio desiderio, реrсЬё
+segui Ji а СеsаrеаЗб et Christianissima MaestAЗ7, rie bebbi agio natrrre а pa[ticulali
+affary, Сгесlо, sLLa Revelcndissima SanctitirЗt sаrа stata advertita del1o, che passd de
+quLl, el реr qLlet,to поп diri altrtl tапtсl е l1e соп iпghile,s,i, пе соп |i,aпzesi lloll sc
+сопсlusо cosct. De пlопlепtо che lo saril, era pre.\,\() Dicl lo sa, el se пece,l,sitd поп
+сопslrigпе al[l]a calcordia, sctrit рiй di rice[п/te, che molti поп реllsапо, et se поl1
+flt,s.se per le cose lurche.yi, [c]he dire, Е che ePJ поstrо sigпore поп pigleassi le
+malerie lcttlto chaldo, реrсhё поп vi yedo valllagio per Sua Sапlitd, et Pre,Sle mе пе
+fёdе, с,rеdепdо, che el псlstrо cardiпclle ha di alte,faпlasie, et Sопо Le cose а lerlllilte,
+che пеssttпо di /-qLla> que,sti dtta t,egi реr dubio de l'altro п.оп ttsct coпlraddere. El
+se Sua Saпlitti hayessi c,clпc,lttso соп Cesare tапlо yirtuoso er а [diJreclioпe sua,
+qtte la Sапlч Sede попsе stimereb[bJe, quel[lJo поп si debe, с|uапlо а fl,a[п,lzesl
+[sic!] vепdеrеЬ[ЬJапо lo сrос:е реr Llпо loro сопmоdо et glladagllare lепlро, реп-
+.sапdо соtле sсhаррапсl uппо pullto,.schappare l'altra, пла Ьепе spes,s,o si getla la
+рiеlrа tапtо еппапzi che 1эoi поп se pLlo ti,rare iпdrieto [iпdielloJ.
+Hora iп quest() поstrе сопчепlо yedri, doye il tutlo si resalverd, mа соп .sапеsi
+ho clhre di qtteli. Sопо qtta per il рара, 11оп ,\ol1() per alargarme, mа Ьепе, а 1,oi
+scriverri. Et co,si det[t]e ctl prefato rеуеrепdis.уеtпе el che iп mе,sеmрrе h.аrаппо
+1 1 t 1,, _fi Jc l i _х _t r, tпl J \ L,l,v i I u|,L,.
+Et chosi соmе а don Реdго Dureas]9 dette а nre, abatia ha in Chatalognia. voTrci
+1а compiacessi et concedessi а i,oj. clrc поп vale piil dj duсе ССС. Et реr ta1 via
+daTe [de]bbano carrsa alli lrorTini spogliarsi in g[i]ubbonc, регсl-tё ciascuno sеrче con
+sрегапzа di рrеmiо et renrulleratione, Certificandovi, clre li mеа аrgчпlепli et ra-
+giопе Ьаstапо а le yohe а persuadere et de5suadere. 11 che sempтe sari а bencfitio,
+hопоrе et utile di q[uellla serenissima chasa. L'aulditore della сhаmеrа ё nolto рiй
+а inteTo dal поmе. chc dalla presentia. i1 che ё molto extimato universalmente et
+plesetlim da поstri Anglici. CoпLlпechate tutlo col1 il I rеvеrепlimо et eliatп col1
+ЗЗ Beinecke Rаrе Book arrd Мапusсгiрt LiЬrаry, Yale University. Spinelli Arclrive,
+Gen Mss 109, Ьох 126, Гоldег 258З, I аm glateful to Dг, Massimo Sсапdоlа Гоr
+help witb checking the transcriptiorr of this text.
+з'l сiuliо di Ciuliano de' Medici (1478-1534), future роре Clement V]L
+з5 Cardinal Thomas Wolsey (1473 1530). Alchbishop of Canterbury.
+зб Charles V' Ноlу Rоmап Еmретоr (15l9 1_558).
+37 Frапсis l. king ofFrance (15l5 l547).
+з8 Giovarrni d,i LoTenzo de'Medici, роре Leo х (15lз 152l).
+з9 опе of Spincili's informants.
+191
+|92 
+Ekaterina Domnina
+fratre Niccold, рrеgап.dсl l'uп.о et /'altro, che i[lJ шпо si,a ,secreto, valete. Апdогрiе,
+die >ecundo Jtrlii MDXX,
+Bibliography
+Beinecke Rаге Book and Mant-Lscript LiЬгаlу, Yale University, Spinelli Archive, Gеп
+Mss 109, Ьох 123, folders 2459 2z166; Ьох 126, fоldегs 2566-2581.
+Arlhttrsoп, Ian: Espionage and intelligence tiom the Wаrs of the Roscs to the Re-
+fоrmаtiоп, in: Nottinglram Medieval Studies З5 (l991), р, l34 1,15.
+Веhrепs, Betty: OTigins of the Office of Englislr Resident Ambassador in Rome, in:
+The English Historical Revier,", 49, Vоl. 643 (l934), р. 640-656.
+Веhrепs, Betty: The O1Irce of thе English Resident AmbassadoT: its Evolution as
+Illustrated Ьу the Саrеет of Sir Tlromas Spinelly, 1509 1522, irr: Transactions of
+the Royal Historical Society 4th sеr., lб (19ЗЗ), р. l61 195.
+Bergeпroth, Gustav А.: Remarks on the сiрhегеd messages in the archives at Siman-
+cas, in: Саlепdаr of State Papers, Spain, VoJ. 1, l485-1509, London 1862,
+р. xii-xiii, xcv, cxxxvii.
+В/асk, Сhгistiле J.iCha]/is, С. Е. (Ed.): Henry VIll to his аmЬаssаdогs at the Diet
+ofRatisbon, l7 June l541, deciphered, Yотk l968.
+Brel,yer, John S.: ]пtгоduсtiоп, iп: Letters and Рарегs, Foгeign arrd Domestic, HenTy
+Vl]I, VolLlrne I, l509 l514. London 1862, р, xcri xcvii.
+СаJёrrо, William/-/acks, Philipp: The Spinelli of Flоrепсе. Fortunes of а Renais-
+sапсе MeTchant FarTily, PennsyJvania 2001.
+Chamlэers, David S.: CaTdinal ВаiпЬгidgе at the Court of Rome, Oxfold 1964,
+Dq:|,1g||, James: The Material Lеttег in Еаrlу Modem England. Мапusсriрt Letters
+al-rd tlre Cultrtre апс1 Practices of Letteг-Writing, J5l2 1635, London 20l2.
+Dопllliпа, Ekaterina: Yaziki v anglo-papskoy diplomatii v kontsc ХV реrчоу роlо-
+virre XVl v, [Languages of the Anglo-papal diplomacy in the last quаrlег of the
+l5tlr century and the first lralf of the 16th century]. in: Vestnik MGU. Seriya
+l9. Lingvistika i rTezhkul'turTaya kommunikaciya 4 (2007), р. l02-1J.2.
+Flеtсhец Catherine: Оur Мап in RorTe. Непry VIII and his ltalian Allbassador.
+London 20l2.
+Florio, Jоhп Flоriо his firstc fi-uites u,hich yeelde familiar speech .,. [London.
+1578], STC (2nded.), N ]l096,
+Gail,dпer,.|ames: IntrodLrction, iп: Memorials of King Henry VlI, Rolls Sеr. Х, Lon-
+don l 858.
+Gа]епdе Diaz, hпп С.: La conesponc]encia diplomбtica: сгiрtоgтаfiа lrispбnica du-
+Tatrte 1а edad moder-na, in: Actas clel VI Сопgгеsо inteгnacional de Historia de 1а
+Сultцrа Еsсгitа, vol. I, Маdгid 2002, р. 145 l55,
+Grц,п, Peter: Wolsey's Fоrеigп Policy: The Сопfеrепсеs at Calais atrd Brrrges Re-
+consideTed, in: Tlre Histoгical JоLrгпаl 23 (1980), р. 155 112.
+Ciplrers ill ЕаrIу Tudor Diplomacy
+19з
+l1а1;е, Thotnas: Die 1ateinische Spraclre als Medium mtnd]icher Diplomatie, in: Ge-
+sandtschafts- uпd Воtепц,еsеп im spёtrTittelalterLicherr Europa, lrlsg. von Rаiпеr
+Clrristoph SchwingesiKlaus Wгiedt (- Vоrtгiigе und Forsclrungen/Konstanzer
+Arbeitskreis flir MittelalteгLiche Geschicl-rte 60), SiglTaringen, 2003, р. l5-З2.
+Iп.[еlisе, Mario: Frоm melclrants' letters to hаrrdt,гittеп political al,visi: notes оп thc
+origins of ptlblic inlbTmation, irr F. Bethencourt, F. Egmond, eds., Cr,rltural Ех-
+change in: Early ModerT Europe, III. Correspondence and CultlrTal Excharige in
+Еuгоре 1400 ]700, CarTbridge 2007, р. 33 52.
+Кеrчуп de Lеtlепhоче, Joseph: Lettles et пёgосiаtiопs de Plrilippe de Colnmines.
+Vо1. 2. Br-uxcllcs l868.
+Lellet,s апсl Papers, Foleign and Domestic, Henry VIII, Vоlumе [ lI, Londorr ] 862
+l 864.
+Macchiayelli, Niccold: Opere di Niccold Macchiavelli: con giunta di uп nr.tovo in-
+dice gепсrаlе delle cose notabili, Vol. 6, Milano l82l.
+Маlliпglу, Gаггеtt: Renaissance diplomacy, BaltilToTe l 955.
+Маlliпglу, Garтett: Ап Еагlу Nonaggressioll Pact, in: Journal of Моdеrп History 10
+(l938), р. 27 68.
+Meisler, Aloys: Die Arll?inge dег шоdепrеп diplomatischen GelreirTschrift. Beitrage
+zuT Geschichte der italieniscl-rer-r Кrурtоgгарhiе des ХV. .lahrhundeTts, РаdеrЬогп
+1 902.
+Меislеr Aloys: Dic Ceheimschrift im Dienste dег piipstlichen Kurie, Раdеr,Ьоrп.
+l 906.
+Pelruc:ci. Narde|.Ii, Frапса: [1 testo е Ia cifra per lo studio di urr modo di tгasmissio-
+пе disturbatio. iп QuelJen trnd Fогsсhuпgеп aus italienischen Аrсhir,еп und Bib-
+liotheken 66 (t986), р. З9З 40l.
+Plzzl, ClelTente: Un Аmiсо di EraslTo L'Umarrista AlrdTea Ammonio. FiTenze l956.
+Richards, Sheila R. (Ed.): Sесгеt wliting iп tlie рuЬliс records: Непry Vlll 
+George
+II, London l 974.
+Richardsoп. Glепп: Entertainments 1Ъr tbe FTenclr AmbassadoTs at the Сошrt of
+Непгу Vlll, in: Renaissance Studics 9 (l995), р. 404 4l5.
+Russell,.loycelyne G.: The Field оf tlrc Сlоth of Gold. Меп and Маппеrs iп 1520,
+Ner.v YoTk l969.
+Slcca, Cinzia М,IWаlt]mап, Lorris А. (Ed.): Тhе Апglо-Flогепtiпе Rcnaissance. Ar1
+fог thc Eally Tudors, New Haveri 20]2.
+Siплопеttсl, Матсе]lо: L'enigrna Montefeltro, Arle е intrighi dalla congiura dei Pazzi
+аllа Cappclla Sistina. Milano 2008,
+Solverby, Thornas: Tlre Role о1'tlrc Ambassador atrd the use of Ciphers. State PapeTs
+Online, 1509 l7l4, Cengage Learning ЕМЕА Ltd, 2009.
+Slrasset; Gегlrаrd F.: Lingua Universalis: Klyptologie rrrld Тhеоriс dег UniveTsal-
+sprachen im 16. und l7. Jаhrhuпdегt (- WоltЪriЬiittеlег Fоrsсhuпgсп З8), Wies-
+baden 1 988.
+|94 
+Еkаtегiпа Domnina
+И/kiе, William L.: The Cardinal Protectors of England, Cambridge J974,
+l|lodka, Josef: zur Geschichte dеr nationalen pгotektorate dег kardiniile an dег rо-
+mischen Кuтiе. Publikationen des ehcmaligcn Osterreichischetl Tllstituts in Rom,
+Bd. 4,l. Leipzig l9З8.
+ 
+How to cite this Russian language version: 
+Domnina E.G. ‘Ciphers in early Tudor diplomacy: the personal correspondence of 
+Tommaso Spinelli. Supplement. The letter of Tommaso Spinelli to Leonardo Spinelli’ in 
+'Art and culture in the Renaissance and Early Modern Period: Essays in honor of Vsevolod 
+Matveevich Volodarsky'. Moskva: Tsentr Gumanytarnych Initsiativ, 2016. P. 254-266+ 1 
+color plate. 
+The corrected transcription and Russian language translation of Beinecke Rare Book and 
+Manuscript Library, Yale University, Spinelli Archive, Gen Mss 109, Box 126, Folder 2583 
+is on pages 266-267.  
+The corrected key and the image of the original decipherment of the letter done by Leonardo 
+Spinelli, identified by me as such after the publication of the English language version, are 
+on a plate. It is Beinecke Rare Book and Manuscript Library, Yale University, Spinelli 
+Archive, Gen Mss 109, Box 127. Folder 2611. Fol. 2r-v. 
+ 
+Российская академия наук 
+Институт научной информации по общественным наукам
+Искусство и культура Европы
+эпохи Возрождения 
+и раннего Нового времени
+Сборник трудов в честь 
+Всеволода Матвеевича Володарского
+Центр гуманитарных инициатив
+Москва-Санкт-Петербург
+2016
+УДК 1 (091)
+ББК85 
+И 86
+Главный редактор и автор проекта «Humanitas» С .Я. Левит 
+Заместитель главного редактора И.А. Осиновская
+Редакционная коллегия серии:
+Л.В. Скворцов (председатель), Е.Н. Балашова, П.П. Гайденко, И.Л. Галинская, 
+В.Д. Губин, Б.Л. Губман, П.С. Гуревич, А.Л. Доброхотов, Д.В. Ефременко, 
+Г.И. Зверева, А.Н. Кожановский, И.В. Кондаков, М.П. Крыжановская, 
+Л.А. Микешина, Ю.С. Пивоваров, И.И. Ремезова, А.К. Сорокин, П.В. Соснов
+Редакционный коллегия тома:
+Т.П. Гусарова, Е.Н. Кириллова,
+О.Ф. Кудрявцев (ответственный редактор), С.К. Цатурова
+Рецензент: 
+кандидат исторических наук Т.Д. Стецюра
+Редактор: М.П. Крыжановская 
+Серийное оформление: П.П. Ефремов
+И 86 Искусство и культура Европы эпохи Возрождения и раннего 
+Нового времени: Сборник трудов в честь Всеволода Матвеевича 
+Володарского. - М.; СПб.: Центр гуманитарных инициатив, 
+2016. - 416 с. (Серия «Humanitas»)
+ISBN 978-5-98712-613-4
+В сборнике представлены исследования по истории культуры, обще­
+ственно-политической мысли и искусства Европы позднего Средневековья и 
+раннего Нового времени. Предпочтительное внимание авторов было обращено 
+на частное и уникальное в духовной жизни и социальной практике, на то, как 
+в их конкретных проявлениях воплощались характерные черты миросозерца­
+ния, отражался и преобразовывался общественный уклад эпохи. Особое место 
+уделено восприятию и усвоению европейской культурой исторического опыта 
+иных народов и цивилизаций - как прошлых, так и открытых на рубеже Ново­
+го времени. Все указанные темы входят в круг исследовательских интересов 
+юбиляра, Всеволода Матвеевича Володарского. Ему участники коллективного 
+труда преподносят и посвящают плоды своих научных изысканий.
+Книга иллюстрирована работами мастеров искусства и памятниками куль­
+туры XV-XVII вв.
+Для всех интересующихся культурной и социальной историей Европы эпохи 
+Возрождения и раннего Нового времени.
+В оформлении использован фрагмент картины 
+А. Мантеньи «Поклонение волхвов» (1461, Уффици, Флоренция)
+УДК 1 (091) 
+ББК85
+ISBN 978-5-98712-613-4
+© С.Я. Левит, составление серии, 2016 
+© Авторский коллектив, 2016 
+© Центр гуманитарных инициатив, 2016
+E I Домнина
+Шифры в дипломатии ранних Тюдоров: 
+на материале личной переписки Томмазо Спинелли1
+Н
+ачало развития шифровального дела в Англии относит­
+ся к периоду правления Генриха VII Тюдора ( 1485-1509) 
+и его сына Генриха VIII (1509-1547), когда королевство 
+стало участником крупнейшего международного кон­
+фликта того времени — Итальянских войн (1494—1559). 
+Несмотря на то, что Англия не играла в них первостепенной роли, 
+ее участие было заметным и положительно сказалось на утверж­
+дении династии Тюдоров как на английском престоле, так и на 
+международной арене.
+В настоящее время становление и развитие практики шифро­
+вального дела в Англии в Тюдоровскую эпоху не изучены, а су­
+ществующие исследования касаются лишь отдельных эпизодов 
+использования шифров и кодов, в основном в эпоху правления 
+Елизаветы Р. В связи с этим представляется насущным ответить 
+на вопрос о том, кто, когда и при каких обстоятельствах спо­
+собствовал созданию тюдоровской «черной комнаты» и можно 
+ли вообще говорить о ее существовании в этот период. Решение 
+этой задачи в настоящее время не представляется возможным, 
+прежде всего по той причине, что шифрованные документы 
+Тюдоровской эпохи, ключи к ним и их дешифрованные вари­
+анты не собраны в единую электронную базу, которая была бы 
+снабжена различными инструментами для их всестороннего из-
+1 Это расширенный вариант статьи: Domnina E. Ciphers in early Tudor diploma- 
+су: thè case of Tommaso Spineìli’s private letters / / Geheime Post. Kryptologìe und 
+Stenographie der diplomatischen Korrespondenz europaeischer Hofe wahrend der 
+Friihen Neuzeit. Berlin, 2015. S. 181-194.
+2 Cp : DaybeilJ. The Material Letter in Early Moderi! England: Manuscript Letters 
+and thè Culture and Practices of Letter-Writing, 1512—1635. London, 20.12. P. 14811.; 
+Sowerby T. The Role of thè Ambassador and thè use of Ciphers. State Papers Online, 
+1509-1714, Cengage Learning EÌV1EA Ltd, 2009. [Электронный pecypc|. Режим
+доступа: 
+http://gale.cengage.co.uk/images/Sowerby%20Ambassadors%20and%20
+the%20Use%20of%20Cipherl.pdf. (дата обращения 05.09.2015)
+Репрезентация власти и дипломатия
+255
+учения1. Подобная систематизация не проведена и в отношении 
+документов такого рода других стран Западной Европы позднего 
+Средневековья - раннего Нового времени. В связи с этим компа­
+ративный анализ английской и «не-английской» шифровальной 
+практики возможен, в основном, опять-таки на уровне отдель­
+ных «казусных» исследований. Данная публикация представляет 
+собой как раз работу такого характера.
+Основной источник для этой публикации — личная неопу­
+бликованная переписка Томмазо Спинелли (1472-1522), одного 
+из наиболее заметных дипломатов итальянского происхождения 
+на службе Генриха VII и его сына. В семейном архиве Спиннели, 
+хранящемся в Библиотеке редкой книги и рукописей Байнеке 
+при Йельском университете, насчитывается около ста писем от 
+Томмазо к его младшему брату Леонардо Спинелли (1473-1531), 
+занимавшему должность одного из каноников собора Санта Мария 
+дель Фьоре во Флоренции и спальничьего папы Льва X2. Эти не­
+опубликованные и практически неизученные письма служат цен­
+ным дополнением к официальной переписке Томмазо, находя­
+щейся в собрании Британской библиотеки и Государственного ар­
+хива Великобритании. Эта часть эпистолярного наследия Томмазо 
+уже хорошо известна благодаря публикациям бумаг и документов 
+правления Генриха VIII, осуществленным в XIX в.3
+Томмазо Спинелли принадлежал к одной из самых влиятель­
+ных флорентийских торгово-банковских семей, которая на ру­
+беже XV-XVI вв. вместе со своими родственниками и деловы­
+ми партнерами, а именно Фрескобальди, Гвальтеротти, Барди 
+и самими Медичи была вовлечена в обеспечение финансовых
+1 К сожалению, масштабный проект по оцифровке государственных бумаг 
+Англии от Тюдоров до Ганноверов, осуществленный силами американской 
+компании «Гейл Сенгедж Леарнинг» (State Papers Online 1509-1714 - Gale 
+Cengage Learning), по большей части содержит лишь те документы, которые 
+были отобраны, описаны и систематизированы еще в Викторианскую эпоху 
+британской Королевской исторической комиссией. Cp.: Letters and Papers, 
+Foreign and Domestic, of thè reign of Henry Vili. 1509—47 / Ed. by J.S. Brewer, J. 
+Gairdnerand R. H. Brodie. London, 1864-1920. Voi. 1-21 (Далее - LP. Voi. ).
+2 Beinecke Rare Book and Manuscript Library'. Yale University. Spinelli Archive. 
+Gen. MSS 109. Box 123. Folders 2459—2466; Box 126. Folders 2566-2587. Далее — 
+Spinelli Archive. Box. Polder. Благодарю д-ра M‘. Симонетту за то, что поделил­
+ся со мной составленным им списком писем Томмазо.
+2 На их основе Б. Биренс была написана единственная биография Томмазо 
+Спинелли: Behrens В. The Office of thè English Resident Ambassador: its Evolution 
+as lllnstrated by thè Career of Sir Thomas Spinelly, 1509-1522 // Transactions of thè 
+Royal Historical Society. London, 1933. 4th ser. Voi. XVI.
+257
+256
+К юбилею Всеволода Матвеевича Володарского
+Репрезентация власти и дипломатия
+и дипломатических связей Англии с Европой1. Он был самым 
+старшим из одиннадцати детей Гаспаро ди Лионардо Спинелли 
+(1442–1501) и Алессандры ди Пьеро Гвальтеротти и мог бы стать 
+продолжателем семейного дела, однако предпочел карьеру ди-
+пломата карьере купца и банкира. Сведения об образовании, 
+которое получил Томмазо, крайне скудны, его нельзя было на-
+звать невеждой, поскольку, как свидетельствует его обширная 
+переписка, он был полиглотом. Помимо родного итальянского 
+он знал латынь, французский и английский, а также, возможно, 
+испанский. В то же время нам практически ничего не известно 
+о степени его начитанности и о возможном интересе к гумани-
+стическим штудиям. Возможно, что в подростковом возрасте 
+Томмазо был отправлен в Нидерланды к своим родственникам 
+по материнский линии Гвальтеротти для обучения банковскому 
+делу и торговле, однако в силу невыясненных в настоящее вре-
+мя обстоятельств оказался вовлечен в большую политику. Летом 
+1495 г., т.е. менее чем через год после начала военной кампании 
+Карла VIII в Италии, Томмазо был отправлен ко французскому 
+двору как официальный представитель Флорентийской респу-
+блики до прибытия туда послов Гвидантонио Веспуччи и Нери 
+Каппони. Сведения об этой миссии Томмазо содержатся в пись-
+ме Совета Десяти к Филиппу де Коммину, однако этот документ 
+не дает представления о ее сути, хотя и характеризует Спинелли 
+как хорошо знакомого Коммину человека2. Из этого позволи-
+тельно заключить, что Томмазо мог и раньше привлекаться для 
+выполнения такого рода поручений. Следующее упоминание 
+Томмазо в связи с дипломатией приходится на 1502 г., когда его 
+1 О семье Спинелли см.: Caferro W., Jacks P. The Spinelli of Florence: Fortunes 
+of a Renaissance Merchant Family. Pennsylvania, 2001; Weissen K. «Ci scrive in 
+tedescho!» The Florentine Merchant-Banker Tommaso Spinelli and his German-
+Speaking Clients (1435–72) // The Yale University Library Gazette. 2000. Vol. 
+74. N 3–4; Weissen K. Das deutsche Handelsnetzwerk der Florentiner Banken in 
+Rom 1410-1470 // Netzwerke im europäischen Handel des Mittelalters / Hg. von 
+G. Fouquet u. H.-J. Gilomen. Ostﬁ ldern, 2010. S. 213–228; Moran M. Female let-
+ter writing and the preservation of family memory in early modern Italy // Early 
+Modern Women: An Interdisciplinary Journal. 2011. Vol. 6; Moran M. Brother-
+sister correspondence in the Spinelli family and the forming of family networks in 
+sixteenth-century Italy // Sixteenth Century Journal. 2013. Vol. 44. N 1; De Silva 
+J.M. Appropriating sacred space: private-chapel patronage and institutional identity 
+in sixteenth-century Rome – the case of the ofﬁ ce of ceremonies // The Catholic 
+Historical Review. 2011. Vol. 97. N 4.
+2 Kervyn de Lettenhove J. Lettres et négociations de Philippe de Commines. Bruxelles, 
+1868. P. 213–214. Vol. 2.
+имя встречается в переписке Никколо Макиавелли с Синьорией. 
+В письмах, написанных Макиавелли во время его пребывания при 
+дворе Чезаре Борджа в Имоле, он называет Томмазо своим курье-
+ром, задействованным для передачи корреспонденции протонота-
+рию Антонгалеаццо Бентивольо1. Последний был сыном правив-
+шего в Болонье Джованни II, на владения которого Борджа имели 
+претензии. Естественно, даже скромная роль курьера, которая вы-
+пала Спинелли в этих событиях, была полезна для него с точки 
+зрения приобретения опыта в дипломатических делах. Следующие 
+несколько лет остаются «темным» периодом в биографии Томмазо, 
+поскольку ни его писем к брату Леонардо, ни упоминаний о нем в 
+других источниках пока не было выявлено.
+Примерно с 1505 г. можно проследить его постоянное при-
+сутствие в Нидерландах. Письма к Леонардо за период 1505–
+1509 гг. свидетельствуют о том, что он нередко ездил из Брюгге в 
+Антверпен, Гент и Брюссель по делам фирмы Гвальтеротти и одно-
+временно пытался получить место на дипломатической службе 
+либо при дворе Маргариты Савойской, либо – Генриха VII2. В по-
+следнем он преуспел, но каким образом это ему удалось, пока оста-
+ется неясным, поскольку его письма из Англии за период правле-
+ния этого государя не сохранились. Из первого известного пись-
+ма Томмазо новому королю Генриху VIII, написанного 26 июня 
+1509 г. из Гааги по-французски, следует, что он рад был узнать, 
+что его услуги ценились покойным королем и будут в дальней-
+шем использоваться его сыном. Спинелли также просил Генриха 
+VIII подтвердить его статус английского представителя при дворе 
+Маргариты Савойской3. Очевидно, это было сделано, и в ноябре 
+1509 г. Томмазо с гордостью написал брату из Лондона: «Я прибыл 
+сюда к этому светлейшему королю, своему единственному госпо-
+дину и покровителю, от имени которого я вернусь во Фландрию, 
+чтобы пребывать при дворе светлейшей госпожи Маргариты и слу-
+жить ему по мере необходимости»4.
+Дальнейшие тринадцать лет, вплоть до своей внезапной смерти 
+в 1522 г., Томмазо Спинелли проработал в качестве дипломатиче-
+ского представителя Генриха VIII сначала в Нидерландах, а затем 
+1 Machiavelli N. Opere di Niccolò Machiavelli: con giunta di un nuovo indice generale 
+delle cose notabili. Milano, 1821. Vol. 6. P. 268, 313.
+2 Spinelli Archive. Box 126. Folders 2569, 2570, 2571.
+3 Behrens B. Op. cit. P. 167; LP. I.N 83. [216.]
+4 «…qui venuto verso questo Serenissimo Re mio signore e padrone a nome del quale mi 
+rietorno in Fiandra per far la residentia in corte della illustrissima madama Margherita e 
+servirlo in quello occorrera». Spinelli Archive. Box 126. Folder 2571, 8.11.1509, London.
+259
+Репрезентация власти и дипломатия
+258
+К юбилею Всеволода Матвеевича Володарского
+в Испании. Где бы он ни находился, он постоянно поддерживал 
+связь со своим братом Леонардо, отправляя ему письма по край-
+ней мере раз в месяц, иногда чаще, в зависимости от ситуации. 
+Очевидно, далеко не все из этих писем доходили до Леонардо и 
+не все сохранялись им, но даже уцелевшая часть свидетельству-
+ет об открытости в отношении двух братьев и желании Томмазо 
+делиться с ним не только своими ежедневными радостями и го-
+рестями, но и обсуждать с ним свою дипломатическую работу. 
+Разглашение этой информации ввиду ее деликатного характера 
+могло сыграть негативную роль в карьере Томмазо, и поэтому 
+в своей переписке с братом он решил использовать шифр. Не 
+меньшую опасность представляла и возможная утечка сведе-
+ний о финансовых сделках, которые совершались Спинелли, 
+Гвальтеротти и их партнерами, поэтому информация такого рода 
+тоже подлежала защите.
+Именно в таком контексте мы находим первое известное 
+упоминание об использовании шифра в частной переписке 
+Томмазо. В письме от 3 января 1515 г., адресованном в Рим, где, 
+как он считал, находился в то время его брат Леонардо, Томмазо 
+среди прочего писал о получении денег от прихода в деревне 
+Коттингем в Йоркшире, пребендарием которого был Леонардо1. 
+Этот бенефиций был дарован ему при поддержке Генриха VIII, 
+которому в мае 1514 г. он доставил дары папы Льва X – шапку 
+и меч защитника веры2. В письме Томмазо беспокоился о пере-
+воде этих средств Леонардо и не был уверен, что их третий брат, 
+Никодемо, работавший в фирме Барди в Лондоне, правильно 
+осуществил эту операцию. Томмазо предлагал Леонардо исполь-
+зовать шифр, видимо, для дальнейшего обсуждения этого во-
+проса. Очевидно, что опыт использования шифра в переписке 
+с Леонардо оказался успешным, и после 1515 г. шифрованные 
+фрагменты регулярно встречаются в его письмах брату, однако в 
+большинстве случаев речь в них идет о политических вопросах, 
+а не о финансовых. У нас нет информации о том, использовал 
+ли Томмазо шифры в переписке со своими другими братьями, 
+1 Spinelli Archive. Box 123. Folder 2460, 3.01. 1514 [1515], Brussels.
+2 См.: Домнина Е.Г. Папский нунций Леонардо Спинелли и его миссия в 
+Англию в 1514 г. // Электронный научно-образовательный журнал «История». 
+М., 2014. Выпуск 6 (29) [Электронный ресурс]. Доступ для зарегистрирован-
+ных пользователей. URL: http://www.history.jes.su/s207987840000784-1-1 (дата 
+обращения: 05.02.2015); Домнина Е.Г. Документы дипломатической миссии 
+Леонардо Спинелли в Англию (март–июнь 1514 г.) // Средние века. 2015. Вып. 
+76. № 3–4.
+так как его письма к ним не сохранились. На основании име-
+ющихся писем Томмазо мы предполагаем, что не использовал, 
+и что ситуация с Леонардо в отношении шифров была действи-
+тельно уникальной. Уцелевшая часть всей переписки братьев 
+Спинелли свидетельствует о том, что кроме Томмазо шифры для 
+передачи Леонардо информации использовал еще и его млад-
+ший брат Пьеро. Однако переписка с Пьеро содержала только 
+семейную и деловую информацию1.
+В случае с Томмазо для нас важно то, что примерно в то же вре-
+мя, в январе 1515 г., когда он написал Леонардо о шифрах, упоми-
+нание об их полезности для его работы встречается и в его офици-
+альной переписке. В письме Генриху VIII от 18 января 1515 г. он со-
+общал, что отныне будет докладывать о всех важных делах в шиф-
+ре, а ключ к нему перешлет через губернатора Кале2. Вероятно, он 
+не получил ответа по этому поводу от английского правительства, 
+поскольку одно из следующих его писем полно жалоб о том, что 
+его корреспонденция перлюстрируется Габсбургской администра-
+цией в Нидерландах3.
+Судя по всему, подобное происходило с письмами Томмазо и 
+раньше, поскольку уже в 1513 г. в разгар военной кампании Генриха 
+VIII в Пикардии в отчетах миланских послов из Англии встреча-
+ются ссылки на данные Томмазо, находившегося в это время во 
+Фландрии4. Так или иначе, вероятно, в конце лета 1515 г. просьбы 
+Томмазо о предоставлении ему шифра были услышаны в Англии, 
+поскольку эта тема им больше не поднималась5. Шифр, который 
+он использовал для переписки с английским правительством, не 
+менялся на протяжении всей его карьеры6.
+То же самое можно сказать и о личном шифре Томмазо, кото-
+рый он использовал для переписки с Леонардо вплоть до своей 
+кончины (Илл.1). Изменения, которые он вносил, касались лишь 
+отдельных символов. Оригинальный ключ к этому шифру не со-
+хранился, однако нам удалось его реконструировать. Тип шифра, 
+который использовал Томмазо, – однозвучный шифр подста-
+новки, то есть такой шифр, в котором символ открытого текста 
+1 Ср.: Spinelli Archive. Box 123. Folder 2460, 5.05.1521, Antwerp.
+2 LP. II. N 35.
+3 LP.II. N 209. 
+4 Archivio di Stato di Milano. Carteggio Visconteo-Sforzesco. Busta 568 (maggio 
+1513). Документы в папке не разобраны по отдельным файлам, их листы не 
+пронумерованы, поэтому ссылка на конкретный лист невозможна.
+5 LP. II. №. 905. 13.09 1515.
+6 Mattingly G. Renaissance diplomacy. Baltimore, 1955. P. 215.
+2 6 0
+К юбилею Всеволода Матвеевича Володарского
+может быть заменен одним из нескольких возможных символов. 
+Записанный таким образом текст состоит из целых слов и предло­
+жений, но обозначенных символами вместо букв, и, как правило, 
+даже содержит пробелы между словами. Взлом шифра такого рода 
+довольно прост при условии определения языка, на котором напи­
+сан текст, и использования таблиц частотности употребления букв 
+в этом языке. Символы, которые Спинелли использовал для за­
+мены букв в своем шифре, заимствованы из греческого языка, ал­
+химии и астрологии. Часть символов — это просто измененные на­
+чертания латинских букв, а одна из них, «Н», так и осталась неиз­
+менной по начертанию. Стремясь усложнить свой шифр, Томмазо 
+использовал ничего не значащие символы, в качестве которых он 
+употребил знаки, похожие на арабские цифры «4», «6», «9» и ла­
+тинскую букву «Z». Отметим также, что поскольку процесс шиф­
+рования был очень трудоемким, для дипломатических документов 
+этого времени характерно сочетание зашифрованного и откры­
+того текста. И это в полной мере можно проследить и в частных
+письмах Томмазо.
+Вопрос об источнике шифра Спинелли, как официально­
+го, так и личного, остается открытым. Шифры такого рода по­
+лучили распространение в Мантуе, Милане и Римской курии с 
+XIV в., а в других итальянских государствах - с XV в.1 Однако в 
+Англии до конца XV в. нет сведений об использовании шифров 
+в дипломатической или иной переписке. Как указал британский 
+исследователь И. Артурсон, первое упоминание о шифровании 
+информации относится к делу Перкина Уорбека (1490—1499), 
+самозванца из Фландрии, заявлявшего, что он сын Эдуарда IV, 
+принц Ричард Йоркский, который не погиб в 1483 г. в Тауэре, а 
+чудесным образом спасся. Следствие по делу Уорбека выявило, 
+что его английские сторонники использовали шифровальные 
+книги для ведения переписки, которые, вероятнее всего, были 
+получены ими из-за границы. Артурсон предполагает, что Уорбек 
+и его приспешники могли получить информацию о шифрах от 
+своих иностранных сторонников, императора Максимилиана I 
+и Маргариты Йоркской, вдовствующей герцогини Бургундской,
+1 Meisner A. Die Anfange der modernen diplomatischen Geheimschrift: beitràge 
+zur Geschichte der italienischen Kryptographie des XV. Jahrhunderts, Paderbom 
+1902; Meisner A. Geheimschrift im Dienste der papstlichen Kurie. Paderbom, 1906. 
+S. 24—118: Petrucci Nardelli F. 11 testo e la cifra per Io studio di un modo di tras­
+missione disturbatio / / Quellen und Forschungen aus italienischen Archiven und 
+Bibliothekcn. 1986. Voi. 66. P. 1986; Simonella M. L’enigma Montefeltro. Arte e in­
+trighi dalla congiura dei Pazzi alla Cappella Sistina. Milano, 2008.
+Репрезентация власти и дипломатия
+261
+приходившейся теткой принцу Ричарду Йоркскому1. И хотя 
+прямых свидетельств этому нет. нельзя отрицать такую возмож­
+ность. Как показал в своих исследованиях австрийский историк 
+Г. Висфлекер, Максимилиан был первым из немецких государей, 
+кто стал использовать шифровальные системы в своих владениях 
+и был знаком с разработками И. Тритемия в области полиалфа- 
+витного шифрования. Шифрованные записи встречаются в его 
+записных книжках и переписке с близкими2. Другой австрий­
+ский историк А. Вальдер в своем недавнем исследовании пред­
+положил, что Максимилиан мог получить информацию о раз­
+работках миланских мастеров шифрования, Чикко Симонетты и 
+Франческо Транкедино, благодаря женитьбе на Бьянке Сфорца 
+в 1494 г.3 И хотя прямых доказательств этого Вальдер не обна­
+ружил, приводимый им в статье шифр 1513 г., принадлежавший 
+императорскому послу в Риме Альберто Пио, построен на прин­
+ципах, которые были ими описаны, и содержит ряд символов, 
+которые встречаются по крайней мере в работе Транкедино4. 
+Подчеркнем, однако, что делать окончательные выводы в этом 
+отношении пока еще рано. Так или иначе, с помощью Габсбургов 
+или без нее английское правительство получило благодаря делу 
+Уорбека некоторую информацию об использовавшихся на кон­
+тиненте новых способах зашиты информации, однако не спеши­
+ло с их внедрением в свою дипломатическую практику.
+Другим источником сведений о шифровальных системах для 
+Англии могла быть Испания, где к началу XVI в. уже существова­
+ла сложившаяся криптографическая традиция5. Для нас важно то, 
+что, в отличие отдела Уорбека, здесь прослеживается прямое вли­
+яние испанских шифров на развитие и формирование английской 
+криптографической системы. Английское правительство, веро-
+1 Arthurson /. Espionage and intelligence tram thè Wars ofthe Roses to thè Reforma- 
+tion / / Nottingham Medieval Studies. 1991. Voi. 35. 1991. P. 149.
+5 Wiesjlecker fi Der Kaiser und scine Umwelt; Flof, Staat, Wirtschaft, Gesellsehaft 
+und Kultur. Wien. 1986. S. 493 (Teii. VI. § 5).
+3 IValcler A. Der letzte Ritter als erster Verschluessler ini Reich // Geheime Post. 
+Kryptologie und Stenographie der diplomatischen Korrespondenz europaeischer 
+Hoefe waerend der Fruehen Neuzeit. Berlin, 2015. S. 123-126.
+4 Cp.: Tranchedino F. Diplomalische Geheimschriften: Codex Vindobonensis 2398 d. 
+Osterr. Nationalbibliothek. Graz. 1970.
+5 Galeiule Diaz JC. La escritura cifrada durante el reinado de los Reyes Catolicos у 
+Carlos V // Cuadernos de Estudios Medievales у Ciendas у Técnicas Flistoriogràficas. 
+1993-1994. Voi. 18—19. P. 159—178; Galende Di'azJ.C. La correspondencia diplomàti­
+ca: criptografìa hispànica durante la edad moderna // Actas del VI Congreso interna- 
+donai de Historia de la Cultura Escrita. Madrid. 2002. Voi. I. P. 149—150.
+263
+Репрезентация власти и дипломатия
+262
+К юбилею Всеволода Матвеевича Володарского
+1505 г., когда Фердинанд Арагонский стал использовать их в пере-
+писке со своей дочерью Екатериной, оставшейся в Англии вдовой 
+после смерти своего мужа принца Артура, старшего сына Генриха 
+VII1. Всего через несколько лет один из их вариантов в форме 
+шифра простой замены стал применять Джон Стайл, английский 
+посол в Испании (1508–1517)2.
+Наконец, еще одним явным источником информации о прин-
+ципах шифрования для английского правительства могла быть 
+Римская курия. К началу XVI в. у Тюдоров уже была сложившая-
+ся традиция резидентного дипломатического представительства 
+при папском престоле, а также небольшая, но довольно надеж-
+ная группа лоббистов их интересов среди кардиналов, несколь-
+ких аристократических и купеческих семей, заинтересованных в 
+приобретении бенефициев и торговых преференций в Англии3. 
+Главное место среди них принадлежало сначала семейству 
+Джильи из Лукки, а затем Казали из Болоньи. С 1514 г. послом 
+Генриха VIII в Риме был епископ Вустерский Сильвестро Джильи 
+(1463–1521), политик макиавеллиевского типа, отравивший, по 
+слухам, своего предшественника на этом посту, архиепископа 
+Йоркского и кардинала Кристофера Бэйнбриджа (1462/1463–
+1514). Несмотря на то что ни расследование этого дела, прове-
+денное по приказу Льва Х, ни главный биограф Бэйнбриджа, 
+британский историк Д. Чемберс, не смогли доказательно под-
+твердить виновность Джильи в смерти Бэйнбриджа, его участие 
+в борьбе за эту позицию было и остается очевидным4. Не менее 
+очевидным было и желание Т. Уолси, покровительствовавше-
+го Джильи, быть избранным архиепископом Йоркским. «Дело 
+Бэйнбриджа» носило деликатный характер, и не случайно имен-
+но в его контексте мы находим первый известный случай приме-
+нения Джильи шифра в письме к английскому правительству. Это 
+письмо датировано февралем 1515 г., и из его содержания следует, 
+1 Bergenroth G.A. Remarks on the ciphered messages in the archives at Simancas // 
+Calendar of State Papers, Spain. London, Vol. 1. 1862. P. XII–XIII, XCV, CXXXVII-
+ff; Arthurson I. Op.cit. P. 50.
+2 Gairdner J. Introduction // Memorials of King Henry VII. Rolls Ser. London, 1858. 
+Vol. X. P. LIII–LV; Brewer J.S. Introduction // LP. I. P. xcvi–xcvii.
+3 Behrens B. Op. cit. P. 640-656; Wodka J. Zur Geschichte der nationalen Protektorate 
+der Kardinäle an der römischen Kurie. Publikationen des ehemaligen Österreichischen 
+Instituts in Rom. Leipzig, 1938. Bd IV. T. I; Wilkie W.E. The Cardinal Protectors of 
+England. Cambridge, 1974; Fletcher C. Our Man in Rome: Henry VIII and his Italian 
+Ambassador. London, 2012.
+4 LP. I. № 5253; Chambers D.S. Cardinal Bainbridge at the Court of Rome. Oxford, 
+1964.
+что для Джильи это был не первый случай шифрования1. Как и 
+шифр Стайла, шифр Джильи был построен по принципу простой 
+замены, однако в отличие от него, пока невозможно установить 
+источник его происхождения2. 
+Таким образом, на основании имеющихся данных очевидно, что 
+в первое десятилетие XVI в. на дипломатической службе Англии 
+состояло по крайней мере три дипломата – Джон Стайл, Томмазо 
+Спинелли и Сильвестро Джильи, – которые использовали шифры 
+в своей корреспонденции с королевской администрацией. Однако 
+открытым остается вопрос о том, кто из них – администрация или 
+же сами дипломаты, основываясь на своем зарубежном опыте – 
+были инициаторами этого процесса.
+Не менее сложно ответить на вопрос о том, кто в Англии рабо-
+тал с их корреспонденцией. В первые несколько лет с начала ис-
+пользования шифров это был латинский секретарь короля Андреа 
+Аммонио. Он был автором нескольких литературных произведе-
+ний и входил в круг гуманистов, близких к Т. Мору3. Сам Мор, 
+выпустивший свою «Утопию» в 1516 г., не мог не знать о шифро-
+вании, поскольку его утопийский алфавит тоже был своего рода 
+шифром4. Однако нет никаких данных об его участии в работах 
+по созданию или использованию криптографических алфавитов 
+в Англии. После Аммонио с шифрами работал глава почтовой 
+службы сэр Брайан Тьюк, но имена других, «рядовых» секретарей, 
+работавших с ним неизвестны. Они, несомненно, существовали, 
+поскольку после 1515 г. практика использования шифров стано-
+вится обычной и для других английских послов в Европе, и трудно 
+предположить, что один человек был в состоянии обрабатывать 
+весь поток корреспонденции от них. Возможно, однако, что ко-
+личество английских шифровальщиков и дешифровщиков все же 
+было невелико. Доказательством этому может служить тот факт, 
+что английские дипломатические шифры менялись очень редко 
+как при ранних Тюдорах, так и позднее, в Елизаветинскую эпоху5. 
+Последнее свидетельствует либо об их большой надежности, об-
+условленной слабым распространением знания английского язы-
+1 LP. II. № 110.
+2 Ссылки на шифр Джильи см. LP. I–II; Secret writing in the public records: 
+Henry VIII – George II / Ed. S.R. Richards. London, 1974.
+3 Об Аммонио см.: LP. I–II; Pizzi C. Un Amico di Erasmo l’umanista Andrea 
+Ammonio. Firenze, 1956.
+4 См.: Strasser G.F. Lingua Universalis: Kryptologie und Theorie der Universalsprachen 
+im 16. und 17. Jahrhundert. Wiesbaden, 1988. Vol. 38. S. 69ff.
+5 Daybell J. Op. cit. P. 148ff.
+265
+Репрезентация власти и дипломатия
+264
+К юбилею Всеволода Матвеевича Володарского
+ка в Европе XVI в., так что перехват и дешифровка такого письма 
+были малоэффективными, либо о простом недостатке надежно-
+го и квалифицированного персонала для работы с ними. Или же 
+можно говорить о сочетании этих двух факторов.
+Что же касается личного шифра Томмазо Спинелли, то самым 
+простым объяснением того, что он оставался неизменным на 
+протяжении многих лет, может служить тот факт, что, видимо, он 
+был действительно надежным, и у Томмазо не возникало особых 
+сложностей ни с пересылкой этих писем брату, ни с сохранением 
+их содержания в тайне.
+Примером такого рода шифрованного письма Томмазо служит 
+его послание к брату от 2 июля 1520 г., когда он был свидетелем 
+встречи между Генрихом VIII и Франциском I на так называемом 
+Поле золотой парчи, проходившей в июле этого года близ Кале 
+(Илл. 2)1. Эта роскошно организованная встреча, подготовлен-
+ная под тщательным контролем кардинала Т. Уолси, должна была 
+способствовать завершению войны в Италии и установлению об-
+щеевропейского мира. По окончании встречи с французским ко-
+ролем Генриху VIII предстояло провести встречу и с императором 
+Карлом V, которая, по мысли Уолси, должна была также привести 
+к заключению союза. Таким образом, Уолси надеялся на создание 
+нового «тройственного союза» Франции, Империи и Англии при 
+доминировании последней. Карл V, со своей стороны, рассчиты-
+вал на заключение отдельного англо-германского союза против 
+Франции при участии папы, и поэтому миролюбивая риторика 
+Уолси была ему чуждой. Как показал в своем недавнем исследо-
+вании британский историк Г. Ричардсон, Карл V и его канцлер 
+М. Гаттинара вели тонкую дипломатическую игру, пытаясь ис-
+подволь, за спиной французского короля убедить Уолси, а че-
+рез него и Генриха VIII перейти на их сторону, но не преуспели в 
+этом, поскольку их интересы в тот момент не совпадали с инте-
+ресами англичан2. 
+Томмазо Спинелли был задействован в осуществлении этих 
+англо-германских переговоров на стороне Англии, однако его 
+позиция в этом вопросе расходилась с позицией его государя и 
+его первого министра. Томмазо писал брату, что он на стороне 
+папы, то есть по сути поддерживал идею антифранцузского со-
+юза императора. Он характеризовал Уолси как непрактичного 
+1 Spinelli Archive. Box 126. Folder 2583. Публикация: Domnina E. Op.cit. S. 191–
+192.
+2 Richardson G. The Field of Cloth of Gold. New Haven and London, 2013. P. 181–
+183.
+мечтателя и считал, что можно было подготовиться к новой во-
+йне с Францией, используя идею о новом крестовом походе и ми-
+ротворческую риторику Уолси как прикрытие. Стань эти слова 
+известны в Англии, то, наверное, можно было бы говорить о за-
+вершении его карьеры.
+Однако, судя по всему, это письмо Томмазо благополуч-
+но достигло Леонардо и не попало в чужие руки. Более того, 
+Леонардо бережно сохранил его среди других писем брата, как 
+и свою оригинальную дешифровку его содержания (Илл.3). 
+Как это часто бывает в таких случаях, написанный Леонардо 
+дешифрованный фрагмент не был распознан как таковой ар-
+хивистом при каталогизации архива и поэтому хранится от-
+дельно от самого письма1. Он был обнаружен нами случайно, 
+через несколько лет после подбора ключа, последующей де-
+шифровки самого письма и его публикации. Сравнение нашей 
+дешифровки с оригиналом Леонардо позволило выявить неко-
+торые недочеты, в том числе установить несколько дополни-
+тельных символов в его шифре, что было учтено в нынешней, 
+новой публикации этого письма. 
+Частная переписка Томмазо Спинелли с его братом Леонардо 
+дает дополнительные сведения о том, как и при каких обстоя-
+тельствах происходило распространение использования шиф-
+ров в английской дипломатической практике рубежа XV–XVI 
+вв. Она подчеркивает роль связей с Англии с итальянскими 
+государствами в этом процессе и наглядно показывает начало 
+постепенного выделения дипломатии в отдельное «ремесло», 
+примером чего служит карьера Томмазо Спинелли, выходца из 
+флорентийской торгово-банковской династии. Шифрованное 
+письмо Томмазо, которое анализируется в этой статье, обна-
+руживает, что он осознавал, что его личные интересы, инте-
+ресы его итальянской родины не совпадают с интересами его 
+английских работодателей, но при этом умел это тщательно 
+скрывать, в том числе и с помощью шифров. В этом отноше-
+нии можно говорить о том, что перед нами пример не только 
+успешного дипломата, но и шпиона.
+1 Spinelli Archive. Box 127. Folder 2611. Fol. 2r-v.
+267
+Репрезентация власти и дипломатия
+Приложение
+Письмо Томмазо Спинелли Леонардо Спинелли, 
+Антверпен, 2 июля 1520 г.1
+П
+ри транскрипции текст был разбит на предложения, до-
+бавлена пунктуация, орфография соответствует ориги-
+налу, дешифрованный фрагмент выделен курсивом, ква-
+дратными скобками отмечена внесенная нами правка, 
+подчеркивания в оригинальном тексте воспроизведены 
+при публикации. Ввиду обнаружения оригинальной дешифровки 
+этого письма Леонардо в текст транскрипции были внесены не-
+большие изменения, поэтому этот вариант является более точным 
+по сравнению с его предыдущей публикацией2.
+Reverende domino nostro fratre honorando, poi partì di Spagna, 
+non vi ho scritto, ne mancò ricevuto vostre. Al reverendissime 
+Cardinale de Medici farete lettera humile recomandandovi, dicendo-
+li, che in Anglia habbì per il Reverendo audientia della camera la sua, 
+el quale andai am[i]citate, et me li offersi, ma per la brevità del tempo 
+et grandi negotij non possemi fare quello saria stato mio desiderio, 
+perché segui li a Cesarea et Cristianissima Maestà ne hebbi agio va-
+care a particulari affary. Credo, sua Reverendissima Sanctità sara sta-
+ta advertita dello, che passò de qua, et per questo non dirò altro tanto e 
+ne con inghilesi, ne con franzesi non se concluso cosa. Di momento che 
+lo sarà, era presso Dio lo sa, et se necessità non constrigne al[l]a con-
+cordia, sarà più difficile, || che molti non pensano, et se non fusse per 
+le cose turchesche. Direi, che i[l] nostro signore non pigleassi le materie 
+tanto chaldo, perché non vi vedo vantagio per Sua Santità, et presti me 
+ne fede, credendo, che il nostro cardinale ha di alte fantasie, et sono le 
+cose a termine, che nessuno di <qua> questi dua regi per dubio de l’al-
+tro non usa contraddere, et se Sua Santità havessi concluso con Cesare 
+tanto virtuoso et || affectionato, a quello la Santa Sede non se stime-
+reb[b]e, quel[l]o non si deb[b]e. Quanto a fra[n]zest [sic!] vendereb[b]
+ano la croce per uno loro conmodo et guadagnare tempo, pensando come 
+1 Beinecke Rare Book and Manuscript Library, Yale University, Spinelli Archive, 
+Gen Mss 109, Box 126, Folder 2583. Благодарю д-ра М. Скандола за помощь в 
+подготовке этого текста к публикации. 
+2 Ср.: Domnina E. Op.cit. S. 191–192.
+schappano unno punto, schappare l’altra, ma bene spesso si getta la pie-
+tra tanto ennanzi, che poi non se puo tirare indrieto [indietro].
+Hora in questo nostre convento vedrò, dove il tutto si resalverà, ma con 
+sanesi ho altri di queli. Sono qua per il papa, non sono per alargarmi, ma 
+bene, a voi scriverrò. || Et cosi det[t]e al prefato reverendissime et che in me 
+sempre haranno uno ﬁ delissemo servitore.
+Et chosi come a don Pedro Dureas dette a me, abatia ha in 
+Chatalognia, vorrei la compiacessi et concedessi a voj, che non vale più 
+di ducati CCC. Et per tal via darebbano causa alli homini spogliarsi in 
+g[i]ubbone, perché ciascuno serve con speranza di premio et remunera-
+tione. Certiﬁ candovi, che li mea argumenti et ragione bastano a le volte a 
+persuadere et dessuadere, il che sempre sarà a beneﬁ tio, honore et utile di 
+q[ue]lla serenissima chasa. L’aulditore della chamera è molto più a inte-
+ro dal nome, che dalla presentia, il che è molto extimato universalmente 
+et presertim da nostri anglici. Comunechate tutto con il || reverenlimo et 
+etiam con fratre Niccolò, pregando l’uno et l’altro, che i[l] tutto sia secreto, 
+valete. Andorpie, die secundo Julii MDXX.
+Перевод
+В
+аше Преподобие, достопочтенный брат наш, после отъезда 
+из Испании я не писал Вам и не получал от Вас писем. 
+Напишите его Высокопреподобию кардиналу ди Медичи1 
+письмо с нижайшим почтением от меня, сообщив ему, 
+что в Англии я был на аудиенции у Преподобного2 и 
+был принят благосклонно, и я предложил ему свои услуги, но 
+ввиду недостатка времени и важных дел я не смог сделать, что 
+хотел, поскольку отправился сюда вслед за Императорским3 и 
+Наихристианнейшим Величествами4, и теперь у меня есть время 
+на определенные вещи. Я уверен, что Его Святейшеству5 будет 
+интересно узнать, что здесь произошло, и касательно этого скажу 
+только, что ни с англичанами, ни с французами ничего пока не за-
+ключено. Одному Богу известно, когда это случится и, если не будет 
+нужды в соглашении, то это будет сделать труднее, о чем многие 
+и не задумываются, и, если это и произойдет, то не ради турецких 
+1 Джулиано Медичи (1478–1534)
+2 Возможно, Томас Уолси (1473–1530), архиепископ Кентерберийский 
+3 Император Карл V (1519–1558)
+4 Франциск I (1515–1547)
+5 Джованни ди Медичи, папа Лев Х (1513–1521)
+268
+К юбилею Всеволода Матвеевича Володарского
+дел. Я бы сказал, чтобы наш господин отнесся к этим делам спокой­
+но1, потому что я не вижу здесь выгоды для Его Святейшества, и, 
+поверьте моему суждению, наш кардинал2 - большой фантазер, а 
+есть конкретные вещи, под которыми ни одному из этих государей 
+не выгодно подписываться, поскольку они не доверяют друг другу, и 
+если бы Его Святейшество заключил [союз] с императором столь 
+доблестно и полюбовно, [то] Св. престол не считал бы это3 для 
+себя полезным, в этом не было бы необходимости. Что же касается 
+французов, то ради своей выгоды они готовы продать крест и вы­
+гадать время, надеясь, что снова обойдется, но очень часто прихо­
+дится сожалеть о содеянном.
+Сегодня на этой нашей встрече я увижу, как это все разрешится, 
+но у меня вместе с сиенцами отличные от них [интересы]. Я здесь 
+ради папы, а не для собственного продвижения. Однако довольно, я 
+Вам напишу. Так и скажите вышеназванному Высокопреподобию, 
+что он имеет в моем лице самого преданного слугу.
+И, по словам дона Педро Дуреаса4, в Каталонии есть аббат­
+ство, дарованием которого я хотел бы Вам угодить, и оно не стоит 
+более 300 дукатов, и, таким образом, у людей появился бы повод 
+поработать не спустя рукава, поскольку каждый работает не за 
+просто так. Будьте уверены, что я умею убеждать и разубеждать, 
+и всегда буду стараться быть полезным для преумножения достат­
+ка и чести этого светлейшего дома. Аудитора палаты5, вопреки его 
+названию, в ней не застанешь, но его везде очень ценят и в осо­
+бенности наши англичане. Обсудите все с его Высокопреподобием 
+и также с братом Никколо6, прося и того, и другого все хранить в 
+секрете. Будьте здоровы. Антверпен, 2 июля 1520 г.
+1 Видимо, Джулиано Медичи.
+2 Т. Уолси.
+3 То есть, вероятно, не нужно было бы ждать, о чем договорятся короли 
+Англии, Франции и император, если бы папа уже заключил союз с императо­
+ром против Франции.
+4 Один из испанских контактов Спинелли.
+5 Скорее всего, Иеронимо Гинуччи (1480—1541), будущий епископ Вустер­
+ский.
+6 Скорее всего, Николаус фон Шёнберг (1472—1537), будущий епископ Капуи 
+и кардинал.
+Домнина Е.Г.
+Буква
+Символ Буква Символ
+Буква
+Символ
+буква
+Символ
+ПХГ
+H
+f
+NN
+.1 -
+А
+b
+R
+%
+В
+~h
+1
+1
+S
+«
+t »
+PP
+С
+л-
+А-
+L
+1
+a .
+T
+T
+Qua nJL
+D
+- г г
+M r
+d
+u/
+V
+p
+f
+)
+Que
+ь
+Е
+1
+• 7 .
+N
+e
+H
+z
+2
+RR -è-
+F
+rAh
+Jj
+0
+8
+Nulla t 7
+SS t i
+t
+Z
+*Z S
+f
+1 f *
+CC
+Ó
+ -
+~0
+T
+G
+a>
+Y
+P
+?
+FF
+Л
+T T
+Илл. 1. Ключ к личному шифру 
+Т. Спинелли, 1515-1522 гг. 
+Реконструкция
+Илл. 3.
+Дешифровка шифрованного 
+фрагмента, выполненная 
+Л. Спинелли 
+(Beinecke Rare Book 
+and Manuscript Library, Yale University, 
+Spinelli Archive, Gen Mss 109. 
+Box 127. Folder 2611. Fol. 2r)
+Илл. 2. Письмо T. Спинелли
+к Л. Спинелли, Антверпен, 2 июля 
+1520 г. (Beinecke Rare Book and 
+Manuscript Library, Yale University, 
+Spinelli Archive, Gen Mss 109, 
+box 126, Folder 2583. Fol 1r.)
+• Y - ш 
+Vu> b
+s
+v
+r
+r
+r
+i n
+w
+_
+'
+T fr**u> knà Ш Щ §|b
+t 
+Tf'ìL-rJri-----"
+( j J f ' , / а Л' M
+* 
+*- Spru> (г fa r * ^ У+ ГГГРМ */-
+- 7 f r ic is i+ ru / J i^ j / 
+J ì a U
+ù *
+y if iS п П г / ^ ) ) и 'Г '(7 ^ - S r ' i iA*~- 
+/rt(W # « V
+( &*4V оГ*
+K 'fx-rhe'i™* * J p ir~ s<MM+s s ^ r t / $ r ~ 
+f} v m * r d fc p k 
+f 
+^ aSJv 
+V m J r
+L r o
+t 
+’У Щ Ш А
+^ T h t rv ^ ^ tT l^ T f'f> » i « / iCpUM t v r t u T t r i^ r u M / p e r * /
+v^rv 
+$« гЧ *Ь *г< ~ г
+< f 
+. 
+* 
+. /?. ..' f . 
+ 
+*àA»AflS‘r u r
+**** ò d ** M **/ W
+(A!c & tté w r/ 
+р ь —
+:******* 'v"£. ; 
+"" 
+"" - 
+(*• jitU******' \
+/ '**1L 
+~ VL 1*. 
+yi
+тяж

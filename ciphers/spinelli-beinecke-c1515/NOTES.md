@@ -1717,3 +1717,56 @@ itself; 2 reachability probes at its close (below). No credentials, no AskUserQu
 **Host probes at close-out (28 Sept 2026, 05:52 UTC clock read, 1 request each):** `web.archive.org/cdx/search/cdx`
 answers HTTP 200 with rows (the Internet Archive is back from the 00:29 UTC "Temporarily Offline" that parked H6),
 and `istina.msu.ru` answers HTTP 200 (it timed out at 00:29). H6 and H8's `needs` cells flip to nobody.
+
+## Campaign step H6, second attempt (28 Sept 2026, 05:56-06:0x UTC) -- Domnina's PDF located and on disk
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H6: a Wayback Machine snapshot of Domnina's PDF (live 404 on
+27 Sept; IA itself offline at the first attempt, 00:29 UTC).
+
+**Found.** `web.archive.org/cdx/search/cdx` for the exact URL answered HTTP 200 with 7 rows: full captures on 11 Nov
+2022 (16,231,033 bytes) and 14 Mar 2024 (two, 16.23 MB), a 1 MB capture of 24 May 2024, 301s in 2024-25, and a 404 on
+16 Sept 2026 -- so the file moved or was withdrawn between May 2024 and Sept 2026, and the live 404 is not a typo in
+the URL. The 2022 capture fetched (first attempt reset by the proxy at 0 bytes; the one retry with `--http1.1`
+completed, 16,231,739 bytes, sha256 e4e618d6...9b32). The CDX prefix query timed out (curl 28); the live istina
+publication page (record 11992054) answers 200 but shows no file link without a login. Requests: web.archive.org 4
+(CDX exact, CDX prefix timed out, PDF x2), istina.msu.ru 1 -- 5 of the 6 allowed. Record, page map, OCR text and the
+three cipher-bearing page images: `sources/domnina-2015-2016/` (README.md there; the PDF itself is not committed).
+
+**What the file is, and what it changes (read past the row's 0.5 cap, because the contents re-rank the campaign):**
+1. The 2015 English article (pp. 179-194 of *Geheime Post*) with **Fig. 1 (printed p. 186, not 185), "The key to
+   the private cipher of Tommaso Spinelli, 1515-1522. A reconstruction"**, and Fig. 2, an image of a second cipher
+   letter, **Tommaso to Leonardo, 2 July 1520, Antwerp, box 126 folder 2583, fol. 1r**.
+2. Bound after it, the 2016 Russian supplement (*Sbornik ... Volodarskogo*, pp. 254-268 + plate) with the corrected
+   Italian transcription and Russian translation of that 2 July 1520 letter, its deciphered fragment in italics
+   (PDF pp. 25-26), and a colour plate (PDF p. 27): Ill. 1 the **corrected key** (an FF cell added, second forms in
+   several cells), Ill. 2 the 1520 letter's fol. 1r with eight cipher lines, and **Ill. 3 Leonardo Spinelli's own
+   decipherment of the fragment, box 127 folder 2611, fol. 2r** -- a period decipherment, identified by the author
+   after 2015.
+3. **The key in this folder is the wrong cipher.** `keys/key_spinelli_c1515.tsv` was transcribed from Tomokiyo's
+   `spinelly1515.png`; read in context (`sources/cryptiana/web/henryvii.htm`, "Notes added in August 2023: Spinelly's
+   cipher can be reconstructed as follows"), that image is Tomokiyo's reconstruction of **Spinelly's English
+   diplomatic cipher** -- Cotton MS Galba B III, Spinelly to Henry VIII 26 Jan 1512, Poynings and Knight 1515 -- with
+   word codes "Emperor King of Arragon", "Prince of Castile", "new amity", which is why this folder's table has them.
+   Domnina's Fig. 1 / Ill. 1 is the brothers' private cipher, and its structure is different in kind: letters A-Z of the
+   Italian set with several homophones each (A 1-2, C 2, D 2, E 2-3, F 2, G 3, I 2-3, L 3, O 2, P 2, R 2, S 2, T 3),
+   a U/V cell, doubled-letter cells CC FF NN PP RR SS TT, syllable cells Qua and Que, and a Nulla cell holding the
+   numeral shapes 4 6 2 9. **Those are the shapes the 1519 letter's own atlas found and this folder's key lacked**
+   (glyphs/atlas.tsv, H4: "numeral-2 shapes, diamonds, x-crosses, a theta, 'll' pairs, plus signs, a bold N" -- in
+   Domnina's table: nulls 2/4/6/9, N = diamond and x, T = a theta-like form, RR/PP/NN doubled cells, B = +, S = a bold
+   N), and why 48% of the letter's signs matched nothing (H4) and every shape-for-shape application failed its
+   shuffled-key control. Tomokiyo's January 2024 note says exactly this: "This particular letter can be deciphered
+   with Spinelli brothers' cipher reconstructed by Domnina. Words 'la gubernation d'ispagnia' can be read." INTAKE's
+   key file already warned that Tomokiyo's image was a stand-in to be cross-checked against Domnina's Fig. 1; the
+   cross-check is now possible and is the next step (H35), not this one.
+4. Intake gate item (b) (Domnina's PDF unread) is closed as a search result: the OCR text of all 27 pages has no
+   transcription, translation or decipherment of the 7 Sept 1519 letter (searched for 1519, Barcel, gubern, Arbore,
+   confess, Septem, Ispag, folder numbers, "fol."); the letter printed in full is 2 July 1520. Rule 10 wording: not
+   found in Domnina 2015/2016 by OCR-text search on 28 Sept 2026; the page images were not read line by line. For the
+   orchestrator and the check-solved record, not a class change by this runner.
+
+**Controls / claims:** none -- a document-location step; no reading, no class change, no "new/first" wording. The
+2 July 1520 letter and Leonardo's decipherment of it are Domnina's published finds (2015, 2016), credited to her.
+**Files:** `sources/domnina-2015-2016/` (README, OCR text, three page images, 3.6 MB). **Cost:** recorded as 1.0 USD
+(the row's est was 0.5; the extra is the reading of the file's contents, done here rather than left for the next
+runner to rediscover). No credentials, no AskUserQuestion, no vision subagent calls (three page images read by this
+runner directly), no other target's folder touched (a shared `sources/` folder added).
