@@ -58,8 +58,24 @@
       "sha1": "97a2d310c9e0f06eb9b5afd1e5319a229cd1a526",
       "dims": "1105x563",
       "fetched": "25 Sept 2026 (GOLD-4A)"
+    },
+    {
+      "file": "Debosnys-Poem-verso.png",
+      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2015/12/Debosnys-Poem.png",
+      "cryptogram": "4 (verso)",
+      "part": "the reverse of the cryptogram-4 leaf: Debosnys's Greek copy of Thomas Moore's Anacreon ode, which he labelled a translation of the cipher poem (Cipherbrain, 3 Dec 2015, sources/schmeh/posts/04-debosnys-gedicht-2015-12-03.txt); fetched 28 Sept 2026 (H17), one request",
+      "size_bytes": 1818052,
+      "sha1": "1ce6e42a5672b4a08e84475f14689aec05af0592",
+      "dims": "1655x1332"
     }
   ],
   "not_fetched": [],
-  "requests": {"host": "scienceblogs.de", "count": 6, "spacing_s": ">=1.8", "user_agent": "browser UA (Chrome/120.0.0.0 Safari/537.36 string)", "status": "all 200, no 429/403", "note": "4 by LANE B2, 2 by GOLD-4A (this pass), 25 Sept 2026, >=2s apart"}
+  "requests": {
+    "host": "scienceblogs.de",
+    "count": 6,
+    "spacing_s": ">=1.8",
+    "user_agent": "browser UA (Chrome/120.0.0.0 Safari/537.36 string)",
+    "status": "all 200, no 429/403",
+    "note": "4 by LANE B2, 2 by GOLD-4A (this pass), 25 Sept 2026, >=2s apart"
+  }
 }

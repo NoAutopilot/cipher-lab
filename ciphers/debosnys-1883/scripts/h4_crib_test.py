@@ -20,8 +20,10 @@ import csv, json, os, re, sys, random, unicodedata, collections
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from count_syllables import vowel_groups
 here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)
+GREEK = dict(zip('αβγδεζηθικλμνξοπρστυφχψω', ['a','b','g','d','e','z','i','th','i','k','l','m','n','x','o','p','r','s','t','y','f','ch','ps','o'])); GREEK['ς'] = 's'
 def fold(s):
     s = unicodedata.normalize('NFD', s.lower()); s = ''.join(ch for ch in s if unicodedata.category(ch) != 'Mn')
+    s = ''.join(GREEK.get(ch, ch) for ch in s)  # H17: Greek verso transliterated so letters/syllables/words apply
     return s.replace('œ', 'oe').replace('æ', 'ae')
 def words(line): return [w for w in re.findall(r"[a-z]+", fold(line))]
 def letters(line): return list(''.join(words(line)))
@@ -108,13 +110,13 @@ def main():
                                clears=bool(obs > q(null) and obs > q(nullL) and S2 > q(null2)))
                     results.append(row)
                     print('\t'.join(str(row[k]) for k in ('level', 'text', 'unit', 'cryptogram', 'n_cipher', 'n_units', 'S1', 'offset', 'nesting', 'null_p975', 'lineshuffle_p975', 'percentile', 'S2', 'S2_null_p975', 'clears')), flush=True)
-    json.dump(results, open(os.path.join(root, 'h4_result.json'), 'w'), indent=1)
+    json.dump(results, open(os.path.join(root, 'h4_result.json' if not extra else 'h17_result_' + os.path.basename(sys.argv[sys.argv.index('--extra-text') + 1]).split('.')[0] + '.json'), 'w'), indent=1)
     print('cleared:', sum(r['clears'] for r in results), 'of', len(results))
-def planted(trials=300):
+def planted(trials=300, text_lines=None):
     """Positive control (rule 3): the poem's own units enciphered with a synthetic homophonic key at each cryptogram's
     N-fitting length and K (K homophones spread over the units by frequency, profile like the target's: one dominant
     sign), then type noise p redrawn per token; does max S1 clear the shuffle null? Reports per unit type, K and noise."""
-    rng = random.Random(2); lines = poem_lines(); out = []
+    rng = random.Random(2); lines = text_lines or poem_lines(); out = []
     C = load_cipher('ciphertext_draft.tsv')
     for unit, fn in (('letter', letters), ('syllable', syllables), ('word', words)):
         per_line = [fn(l) for l in lines]; U = [x for l in per_line for x in l]
@@ -138,7 +140,8 @@ def planted(trials=300):
                 null.sort(); q = null[int(0.975 * len(null)) - 1]
                 row = dict(unit=unit, like=g, n=n, K=sid, noise=noise, S1=round(obs, 4), offset=off, null_p975=round(q, 4), clears=bool(obs > q))
                 out.append(row); print('PLANTED\t' + '\t'.join(f'{k}={v}' for k, v in row.items()), flush=True)
-    json.dump(out, open(os.path.join(root, 'h4_planted.json'), 'w'), indent=1)
+    json.dump(out, open(os.path.join(root, 'h4_planted.json' if text_lines is None else 'h17_planted.json'), 'w'), indent=1)
 if __name__ == '__main__':
-    if '--planted' in sys.argv: planted()
+    if '--planted' in sys.argv and '--extra-text' in sys.argv: planted(text_lines=[l.rstrip('\n') for l in open(sys.argv[sys.argv.index('--extra-text') + 1], encoding='utf-8') if l.strip()])
+    elif '--planted' in sys.argv: planted()
     else: main()
