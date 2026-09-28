@@ -1,0 +1,4 @@
+BEGIN
+glyph	from	to	confidence	evidence_words
+END
+SEGMENTED: a terde responderian en la segunda iunta a a reto les adiieron que lleuaban que si qui deuian tabi lla doctrina in qua sunt multa contradictorias iaberren fauer state seden doctrina riuitorne es unt multa contradtctoria ereoia ideuia otad
