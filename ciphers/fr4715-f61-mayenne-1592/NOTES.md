@@ -1598,3 +1598,17 @@ approach paragraph). The H29/H35 cut error is logged as the runner's (this runne
 to the draft's disagreement columns with crops (Usage 6's priced reconciliation step) -- the reconciler route, not a third
 blind pass; gate <= 10% flagged columns, else f.108v is logged untestable at 3x by two-pass agreement. Not a reading; no class
 change; nothing solved, new or first. Vision calls: 2 of 4.
+
+## Campaign step H58 (2026-09-28 05:54 UTC) -- the f.61r skeleton under the corrected cells (for the verifier and the person rows)
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV), script-only, no calls. `scripts/f61skeleton.py` -> `scripts/f61_skeleton.txt`
+(`--check` fresh). One file with every sign of the leaf (99: pass A's six span lines with the VBAR split, pass U2's L02/L04/L10;
+L06/L09 carry no cipher), relabelled by H26 (SBS) and H22 (EBR_A/EBR_B/ISH), each token one of: `T:x` (Tomokiyo's own markup
+letter on his five spans -- his tentative reading, grade M as a reading, the reference of every control: 54 placed by the DP),
+`[x/y]` (the class's cell from the H51 joint map, grade M; SBS b/o from H26; ZHOOK i/x also published: 22 positions, no letter
+chosen), `-` (a null: a class his markup dashes at every f.61 position, H44 -- CA, LOOPBAR, LL, CROSS, ELOOP, HASH4, LOOPSTEM1,
+CH, C6: 21), `?` (OTHER on L02/L04: 2). The L10 run reads as in `fragment_L10.tsv`. Not a reading of the letter: outside the
+five spans the leaf carries 22 two-way choices and nothing chooses them (H25 and H57 closed the judge routes; the cells
+themselves are M). What it is for: the verifier's one-page view of the state, and the person-reading rows (ASKS 88, H50/H53) --
+a person who reads the f.108r gloss gives the same cells period grade C and, with the SBS split, PHI e/r and SBS b/o on every
+leaf. No class change; nothing solved, new or first.
