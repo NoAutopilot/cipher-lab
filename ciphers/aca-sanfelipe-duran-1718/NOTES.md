@@ -54,7 +54,7 @@ owner's machine, LOCAL-QUEUE shape).
 ## Search log (28 Sept 2026, gate of row 2)
 
 - DECODE: R10181 Non-decrypted, no document attached in the listing; decode-catalog.csv (aaymeloglu raw file, fetched
-  28 Sept 2026) same status. Records R10170-R10198 are the newest on DECODE (Sept 2026).
+  28 Sept 2026) same status. Records R10170-R10198 were added to DECODE most recently (Sept 2026).
 - Bourdeau (raw README.md, CATALOGUE.md, SOLVED_CATALOGUE.md fetched 28 Sept 2026): no hit for "Genova",
   "Legacion", "R10181", "Duran", "San Felipe" as a target.
 - aaymeloglu CATALOGUE.md (raw, 28 Sept 2026): no row for R10181.
