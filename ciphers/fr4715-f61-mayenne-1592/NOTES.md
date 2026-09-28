@@ -3014,3 +3014,16 @@ reading, no class change.
 ## Campaign step H153 (28 Sept 2026, 19:44 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), writing
 
 `scripts/H66_PAGE.md` gains a section "H135-H152". No new claim.
+
+## Campaign step H154 (28 Sept 2026, 19:45-19:49 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61seqgain_108v_boot.py --f108r [--hash4-ix]` (options pushed 38331d4b before the run; results
+`f61seqgain_108r_boot_result.txt`, `f61seqgain_108r_boot_ix_result.txt`; the result files print the shared gate's name
+"H152"; the f.108v default re-checked fresh): H152's bootstrap on f.108r L04-L06's three lines.
+
+- HASH4 dropped: fitted map rank 1 of 51 in **5/30** resamples (median rank about 3) -> does not stand.
+- HASH4 = i/x: rank 1 in **20/30** (median 1; two resamples at 17 and 28) -> does not stand (gate 27).
+
+So "f.108r L04-L06 in f.61's cells" is a lean, strongest with HASH4 = i/x, not a result that survives resampling its three
+lines -- unlike f.108v (29/30, H152). With three lines, a resample often drops the one that carries the signal (L06, H119).
+The f.108r predictions stay committed; the person's gloss (ASKS 88) remains the test. No reading, no class change.
