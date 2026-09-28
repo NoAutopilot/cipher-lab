@@ -1,1 +1,31 @@
 crop	pos	group	gloss	conf	note
+f428R_L01	1	?7	-	low	left edge, cut; line: "?7. 1651. 941. of 1290 [ins.mark] See what has 1027. 950. 133. 1119. Its..."
+f428R_L01	2	1651	Enemy	low	gloss alignment above uncertain
+f428R_L01	3	941	-	medium	-
+f428R_L01	4	1290	-	low	small insertion mark above (possibly digit 8), underlined; not confidently read
+f428R_L01	5	1027	become	low	gloss inferred from word-per-number pattern "become of her"
+f428R_L01	6	950	of	low	-
+f428R_L01	7	133	her	low	-
+f428R_L01	8	1119	-	medium	-
+f428R_L02	1	1147	-	high	line: "same manner 1147. 599. exerted 595. 1419. 244. 526. 1023[cut]"
+f428R_L02	2	599	-	high	-
+f428R_L02	3	595	-	high	-
+f428R_L02	4	1419	-	low	3rd digit unclear (1 or 7)
+f428R_L02	5	244	-	high	repeats value from f428L L23/L24
+f428R_L02	6	526	-	high	repeats value from f428L L23
+f428R_L02	7	1023	-	medium	edge, cut; repeats value from f428L L23
+f428R_L03	1	?4	-	low	left edge, cut; line: "?4. 903. 1343. to promote 1481. 343. 897. 562. how[ever]"
+f428R_L03	2	903	-	high	-
+f428R_L03	3	1343	-	high	-
+f428R_L03	4	1481	its	low	gloss "its" faintly visible above, uncertain
+f428R_L03	5	343	-	medium	-
+f428R_L03	6	897	-	medium	faint gloss above possibly "happiness", not confidently legible
+f428R_L03	7	562	-	medium	-
+f428R_L04	1	?7	-	low	left edge, cut; line: "?7. 133[blot, tiny '4' insert] determined 244. 526. 1023. 1481. 69. 1209. to[cut]"
+f428R_L04	2	133	-	medium	small blot/insertion (possible digit 4) obscures part of number
+f428R_L04	3	244	-	high	repeats value seen f428L L23/L24, f428R L02
+f428R_L04	4	526	-	high	repeats value seen f428L L23, f428R L02
+f428R_L04	5	1023	-	high	repeats value seen f428L L23, f428R L02
+f428R_L04	6	1481	if	low	faint gloss "if"(?) above, uncertain; repeats value seen f428L L03/L18/R03
+f428R_L04	7	69	-	high	repeats value seen f428L L19/L23
+f428R_L04	8	1209	-	medium	close to 1207 (f428L L25) but read with final digit 9 here
