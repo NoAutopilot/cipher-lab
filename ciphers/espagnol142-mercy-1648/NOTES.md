@@ -1824,3 +1824,17 @@ change. With H30-H35 this closes the line "license M2's hand corrections without
 (blind reader, reader-verifier with decoys, iterated reader, per-correction script verifier, whole-set gain against a
 selection null) either misses its control gate or cannot separate truth from word-seeking selection. The Brussels
 register (H17, ASKS 82; checklist in REGISTER-CHECKLIST.md) is the instrument that decides them.
+
+## Campaign step H37 (2026-09-28 15:00-14:54 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Gate not met; the target was not scored.** Design conformance as a per-correction
+arbiter: violations V = sum over letters of |codes - expected| (3 per vowel, 1 per consonant, H16 / DECODE 958's stated
+style), counted on glyphs with 2+ occurrences; accept a change iff it lowers V (`cheap_test_1/h37/design.py`,
+`result.log`). On H33's control candidates (2+ occurrences): **true accepted 7/16 = 0.44, decoys rejected 22/23 =
+0.96.** It cannot see a swap inside one vowel's homophones or between two vowels (B's s1 o->a and s20 a->o each raise V
+by 2 on their own), which is where most true corrections of this design sit. Blind-key violations: A 3, B 5, D 6. No
+token, grade or class change.
+
+Note for H40: H35's wseg and this measure fail on largely different true corrections (wseg misses h/z letters, design
+misses vowel swaps), so an OR of the two might pass where each alone does not -- but that rule is chosen after
+seeing these data and may be tested only on fresh controls.
