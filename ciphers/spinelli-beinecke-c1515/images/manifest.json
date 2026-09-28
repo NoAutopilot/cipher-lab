@@ -596,9 +596,29 @@
           "bytes": 716379,
           "sha1": "57c66755629c6f32e478f7c142b2195418f48fa2",
           "fetched": "28 Sep 2026, 00:37 UTC (campaign step H19)"
+        },
+        {
+          "label": "p. [2]",
+          "canvas_id": "10867291",
+          "file": "images/beinecke_10844888_p2_canvas10867291.jpg",
+          "width": 1500,
+          "bytes": 714010,
+          "sha1": "5fc54b8acee8b4a3810848e6dd15a0a92a5a3158",
+          "fetched": "28 Sep 2026, 00:38 UTC (campaign step H19b)",
+          "content_note_direct_look": "plain Italian, full page (the election in Germany, the French), NO cipher"
+        },
+        {
+          "label": "p. [3]",
+          "canvas_id": "10867292",
+          "file": "images/beinecke_10844888_p3_canvas10867292.jpg",
+          "width": 1500,
+          "bytes": 624335,
+          "sha1": "0fff6ba4f18f05deb8c57e7e4b8e2bc45b911e9e",
+          "fetched": "28 Sep 2026, 00:38 UTC (campaign step H19b)",
+          "content_note_direct_look": "plain Italian, ends with the date Barchinonie xxviiij Maii MDXVIIIJ and the signature; NO cipher; note the plain words \"Gubernatori dello Archiepiscopato del nostro R.mo de Medici\""
         }
       ],
-      "content_note_direct_look": "p.[1]: dense plain Italian (court news, Monsignor de Cieures, Burgos, the French), NO cipher on this page; pp.[2]-[3] not yet fetched (H19b)."
+      "content_note_direct_look": "p.[1]: dense plain Italian (court news, Monsignor de Cieures, Burgos, the French), NO cipher on this page; pp.[2]-[3] not yet fetched (H19b). H19b: pp.[2]-[3] fetched, plain Italian throughout, NO cipher anywhere in this letter."
     },
     {
       "oid": "10844889",
@@ -637,13 +657,36 @@
           "bytes": 660870,
           "sha1": "2d669ef6d46438865a14240aac7c83f3a9d982d5",
           "fetched": "28 Sep 2026, 00:37 UTC (campaign step H19)"
+        },
+        {
+          "label": "p. [2]",
+          "canvas_id": "10867295",
+          "file": "images/beinecke_10844889_p2_canvas10867295.jpg",
+          "width": 1500,
+          "bytes": 628551,
+          "sha1": "b1f1bac0be6ab062d8eeca8309b8c3d0f3450990",
+          "fetched": "28 Sep 2026, 00:38 UTC (campaign step H19b)",
+          "content_note_direct_look": "plain Italian (the coronation at Aquisgrana, the fleet), dated Barchinonie vj Iulij MDXIX and signed; NO cipher"
+        },
+        {
+          "label": "p. [3]",
+          "canvas_id": "10867296",
+          "file": "images/beinecke_10844889_p3_canvas10867296.jpg",
+          "width": 1500,
+          "bytes": 514812,
+          "sha1": "08d42c15ee899518036a4b2e551ec12bf89d10af",
+          "fetched": "28 Sep 2026, 00:38 UTC (campaign step H19b)",
+          "content_note_direct_look": "six lines of plain Italian postscript (the Electors, Casimir of Brandenburg), rest blank; NO cipher"
         }
       ],
-      "content_note_direct_look": "p.[1]: dense plain Italian (the Electors publish the Catholic Majesty King of the Romans, audience with the King), NO cipher on this page; pp.[2]-[3] not yet fetched (H19b)."
+      "content_note_direct_look": "p.[1]: dense plain Italian (the Electors publish the Catholic Majesty King of the Romans, audience with the King), NO cipher on this page; pp.[2]-[3] not yet fetched (H19b). H19b: pp.[2]-[3] fetched, plain Italian throughout, NO cipher anywhere in this letter."
     }
   ],
   "requests_campaign_step_H19": {
     "collections.library.yale.edu": 6,
     "note": "3 manifests + 3 p.1 images, 2 s apart, browser UA, all HTTP 200"
+  },
+  "requests_campaign_step_H19b": {
+    "collections.library.yale.edu": 4
   }
 }

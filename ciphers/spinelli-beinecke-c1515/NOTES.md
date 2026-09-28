@@ -692,7 +692,7 @@ wording, no other target touched. **Cost:** recorded as 0.3 USD (est 0.5).
 Barcelona letters, manifests + page images, direct look for cipher lines, 6 requests), then H20 (the 86-letter
 bundle's manifest and a first look at its 62 images, in request-capped batches).
 
-## Campaign step H19 (28 Sept 2026, 00:38-00:40 UTC)
+## Campaign step H19 (28 Sept 2026, 00:37-00:38 UTC)
 
 Runner session_016fvFiTTAhQng2VqbiBDmRE. Hypothesis H19: the three other 1519 Barcelona letters -- do they carry
 cipher? Six requests (3 manifests, 3 first pages at 1500px), all HTTP 200, written into `images/manifest.json`
@@ -711,3 +711,21 @@ the May and July letters are the remaining places cipher could sit -- H19b, four
 
 **Requests:** collections.library.yale.edu 6 (this step's cap). No credentials, no AskUserQuestion, rule 10 wording,
 no other target touched. **Cost:** recorded as 0.5 USD (est 1.0).
+
+## Campaign step H19b (28 Sept 2026, 00:38-00:41 UTC)
+
+Runner session_016fvFiTTAhQng2VqbiBDmRE. The four inner pages of the 29 May (10867291, 10867292) and 6 Jul
+(10867295, 10867296) 1519 letters, at 1500px (4 requests, all HTTP 200, sha1s in `images/manifest.json`).
+
+**Result: negative -- none of the three other 1519 Barcelona letters carries cipher.** All four pages are plain
+Italian by direct look (no vision call): the May letter runs to its dated close on p.[3] ("Barchinonie xxviiij Maii
+MDXVIIIJ", signed) and the July letter to its dated close on p.[2] ("Barchinonie vj Iulij MDXIX", signed) with a
+six-line plain postscript on p.[3]. So within Filza 163's digitised 1519 run the cataloguer's flag is exact: the
+7 Sep letter is the only one "part in cipher". Two things worth keeping: the four plain letters are same-hand
+plaintext specimens (about 150 lines of Tommaso's Italian, useful for a register-matched judge corpus later, rule
+3's era lesson), and the May letter's p.[3] has the plain words "Gubernatori dello Archiepiscopato del nostro R.mo
+de Medici" -- Tommaso writes "gubernatori" in clear, which is at least consistent with a "gubernation" in the cipher
+passage of the September letter (Tomokiyo's crib), though it locates nothing.
+
+**Requests:** collections.library.yale.edu 4. No credentials, no AskUserQuestion, rule 10 wording, no other target
+touched. **Cost:** recorded as 0.3 USD (est 0.5).
