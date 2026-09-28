@@ -3085,7 +3085,7 @@ evidence against i/x; H157's f.108v result (20 signs, 30/30 for i/x) stands for 
 
 `scripts/H66_PAGE.md` gains a section "H153-H161". No new claim.
 
-## F61-FAMILY-8: BnF fr.2751 f.116 (de Diou to Mayenne, "escripte en chiffre"), 28 Sept 2026, 20:16-20:40 UTC (owner account, parent worker)
+## F61-FAMILY-8: BnF fr.2751 f.116 (de Diou to Mayenne, "escripte en chiffre"), 28 Sept 2026, 20:16-20:20 UTC by the clock (owner account, parent worker)
 
 Brief: .claude/briefs/runs/2026-09-28-parent-f61-family-8.md (steps 2-4 of F61-FAMILY-7). Images: 7 page images at 1200 px (canvases f241-f247 = f.116r-f.119r), committed in family/fr2751/; 3 native fetches (f241-f243) kept in the scratchpad only (30 MB rule; regen `python3 family/fetch_gallica.py btv1b52523734p 24N full OUT`). 10 Gallica requests, all HTTP 200, 2 s apart, in family/requests.log. Two native crops of the residual marks: family/fr2751/f242_marks_row20.jpg, f243_marks_rows1-2.jpg. No vision subagent calls; own looks only.
 
