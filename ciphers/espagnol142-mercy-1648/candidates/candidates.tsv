@@ -1,5 +1,5 @@
 code	where	candidate	key_tsv	step	test	result
 72	all (r16:21)	do	z (M)	H41	name list fit, 402 Urkunden Bd. 4-5 names, tools/crib_list_fit.py	Burgsdorf unique best on r16:2-r18, 7 agree / 0 disagree, P 0.002; rank 2 on the pre-registered r15-r18 window behind the already-read Brandenburg (P 0.005)
-52	all (r17:10)	ro	y (M)	H42	title list fit, 38 Cartas "X mayor" titles	camarero ties camarera, fit 9; P 0.053 strict (not met), 0.027 with camarera merged
+52	all (r17:10)	ro	y (M)	H42	title list fit, 38 Cartas "X mayor" titles	camarero ties camarera, fit 9; P 0.053 strict (not met), 0.027 with camarera merged; H57: "camarero mayor" is also the Spanish title of the Elector of Brandenburg himself (Arch-Chamberlain of the Empire), so this fit does not point to Burgsdorf on its own
 65	all (r24:4)	sr	s (M)	H45	1-2-letter value search, word-segmentation gain vs 200 random-S-token draws	+15.16 vs control p95 +7.08, met; the same gain would come from s with the r left out by the scribe
 48	r17:20 only	qu	d (M)	H45, H49, H50	value search (1-3 letters) at both occurrences; word list after "para"	not met: qu +4.97 at r17:20 but -0.55 at r20:15; "bien"/"quien" tie in H49; observation only
