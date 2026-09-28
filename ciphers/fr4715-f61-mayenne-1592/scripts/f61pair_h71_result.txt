@@ -1,0 +1,8 @@
+read_call_H71.tsv: 40 rows; 40 tiles
+  tile 5 (f101r e): not scored
+  tile 27 (f101r e): not scored
+  tile 28 (f101r r): not scored
+  group A: set A 10, set B 9  (f101r:A 2, f101r:B 3, f188r:A 8, f188r:B 6, let:e 10, let:r 9)
+  group B: set A 8, set B 10  (f101r:A 6, f101r:B 6, f188r:A 2, f188r:B 4, let:e 8, let:r 10)
+scored 37 (A 18, B 19); groups 2; observed 20/37; permutation P = 0.7570 over 2000 (seed 1); p95 25/37
+GATE: FAIL

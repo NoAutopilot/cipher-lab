@@ -1837,3 +1837,28 @@ separates the 4-over-triangle (c/p) from the 43 (a/n), which is the split H69 fo
 further hands; nothing to re-sort, no call spent. The family readers' 4TRI a/n tokens (H69 groups B-D) correspond to
 f.61's C43/4STEM, not to its 4TRI. This is a consistency tally on Tomokiyo's letters (grade H for the test), not a
 reading; no class change.
+
+## Campaign step H71 (28 Sept 2026, 14:44-14:46 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+PHI tokens under a period e vs under r, pre-registered and pushed de9a5a09 before the call (`build-pair NATIVE PHI e r
+71 h71`, f.101r 10+10 and f.188r 10+10, the H65 prompt with the file names changed, `scripts/PROMPTS.md` "H71"). One
+blind Opus vision call. The reader made two groups -- B "a third, smaller closed loop above the side-by-side pair (a
+trefoil, or an 8-shape on one side)", A "only the two side-by-side loops" -- with three tiles none.
+
+| reader's group | e | r |
+|---|---|---|
+| A (pair only) | 10 | 9 |
+| B (third loop above) | 8 | 10 |
+
+Scored 37: observed 20/37, permutation P = 0.757, p95 25/37 -> **GATE FAIL**, as the row expected
+(`scripts/f61pair_h71_result.txt`, `--check` OK). The reader's own split partly follows the hand (A: f.188r 14 of
+19; B: f.101r 12 of 18), not the letter.
+
+Correction to the row's premise (mine): I framed e/r as "one table cell, true polyphony", which is Tomokiyo's prose
+("e" and "r" share a symbol); the table transcription (`keys/key_mayenne_1592.tsv` header) draws two distinct symbols
+in both the a/n and the e/r columns and one shared symbol in the other nine. So H71 is a negative on e vs r in these
+two hands under a free shape sort -- the period decipherers' e and r do not fall under two glyphs this reader
+separates -- and only a partial control for the method: it shows the sort does not align with letters when the
+reader's groups are driven by something else (hand, the third loop), but the truth for e/r is not known to be one
+glyph. The clean one-symbol control is the table's d/q column (H75). H65-H70 stand on their own permutation nulls.
+No reading, no class change.
