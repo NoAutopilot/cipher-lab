@@ -3562,3 +3562,22 @@ the consensus (0.74 over the stretch).
 stages (+0.221, +0.182, +0.188, +0.186). With the new rows: C43 (agreed) n 26, a 20 of 61 -> a/n, as v4. HASH4 d 35, i 17, q 8 (70): the i
 share rose with L34-L40's LL/HASH4 confusions. VBAR_A t 81, s 14, g 8 (138). EBR l 83, a 14 (124). ZHOOK i 23 of 48. VBAR_A/VBAR_B
 disputes read s 16 of 33 (VBAR_B's s). Nothing merged. Remaining: L41-L47 and f.176v (47 rows), then fol. 179 (item 84's last leaf).
+
+## Campaign step H177b stage 2d (28 Sept 2026, 23:31-23:31 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- key rows over the whole of f.176r
+
+Pre-registered (dc5f0e53). Three Opus vision calls, inline replies written verbatim: passes A/B of f.176r L41-L47
+(`passes/f176r_signs{A,B}_L41-L47.tsv`, 379/381 rows; L47 ends in an omega-like closing mark and a slash, coded OTHER) and a read of
+fol. 177v strips 5-8 (`passes/f177v_clearA_S05-S08.tsv`, V15-V27). The decipherment itself leaves a few cipher signs undeciphered
+(V23, V26: probably code symbols the decipherer did not expand). `build_f176_key.py L01-L47` (`key_period_f176.tsv`, result, `--check`):
+**f.176r complete: 3,095 signs, consensus 0.70, N 2,476 letters of fol. 177r-v; 0.517 vs the wrong text 0.325 (margin +0.193)**.
+Whole-leaf letters: VBAR_A t 100, s 16, g 10 (163); EBR l 95, a 16 (141); HASH4 d 40, i 18, q 9 (77); C43 n 26, a 20 (61); ZHOOK i 28 of 61
+(and the C43/ZHOOK split sign i 35 of 48); VBAR_B s 57; INF u; PHI e/r. The margin held at +0.18 to +0.22 over five stages.
+
+**Handover (runner 6 stops at about 660k context; the 700k line is the brief's).** H177b stays open for the next runner: f.176v (canvas 328,
+47 rows, not yet cut), fol. 179 (canvas 333, item 84's last leaf, most likely the rest of the cipher), and the decipherment's remainder:
+fol. 177v strips 9-12 (`sheets/f177v_strips/boxes.tsv`) and fol. 178r (canvas 331). All crops were in this session's scratch. Regenerate
+them from the natives by the recipes in `family/sheets/f176r_full/README.md`, `f177r_full/README.md` and `f177v_strips/README.md`
+(natives: Gallica btv1b9060633d canvases 327-331, 333, one request each). Reader prompts: inline replies only (22:45 firing rule). The
+runner writes the files from the agent's hand-back message. Scripts: `family/build_f176_key.py` (clear files `f177r_clearA_*`,
+`f177v_clearA_*` in line order; extend to fol. 178r and f.176v the same way). For the verifier: `scripts/H66_PAGE.md` section H168-H180
+plus H181-H182.
