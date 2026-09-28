@@ -1654,3 +1654,66 @@ two):** (3) `--follow-slope` duplicates bands on this block with the default pro
 fault is the snap-to-nearest-line step, not the seeding; a `--deskew` option (global shear from column-window
 cross-correlation, then the flat finder -- `passes/p2x_cut.py` is the worked version) would have made this step one
 command and would serve every sloped plain page (H21's pl24/pl29 read 56/42 percent under flat bands).
+
+## Campaign step H33e (28 Sept 2026, 05:49-06:0x UTC)
+
+Runner 3, session_0189W7KLRRUSFLgi5iPbBYph. Hypothesis H33e, two halves: (a) settle the G/H disagreement columns of
+the p.[2] upper plain block with a third Opus pass as reconciler; (b) the control H33d could not run -- the same 11
+lines cut **deskewed but raw** (no red channel; identical geometry, same deskew slope and band boxes, from the colour
+canvas; scratch only, `passes/p2x_cut.py` with the cleaning step skipped) read by one Opus blind pair, to separate
+the deskew's share of H33d's move from the cleaning's. 3 Opus vision calls, no requests.
+
+**(b) first, because it changes the reading of H33c and H33d.** Raw deskewed pair I/J (`passes/p2y_pass{I,J}.tsv`,
+about 100k tokens each) against the cleaned pair G/H, same instruments:
+
+| pair | cut | reconciler word agreement | normalised words | folded-letter |
+|---|---|---|---|---|
+| E/F (H33c) | raw, flat bands | 41.4% | 51.1% | 70.7% |
+| G/H (H33d) | cleaned, deskewed | 55.4% | 69.6% | 86.2% |
+| **I/J (H33e)** | **raw, deskewed** | **59.6%** | **67.6%** | **88.5%** |
+
+The raw deskewed pair reads level with the cleaned one on every measure (within a pair's noise; nominally higher on
+two of three). **The whole of H33d's 14-18-point move came from line alignment, none of it measurably from the red
+channel.** So H33c's diagnosis -- "the bleed-through page does not reach 60% even with correct bands" -- was wrong on
+both counts: its bands were not correct (flat bands across lines sloping 123 px, NOTES H33d), and the bleed-through
+is not what limited the Opus readers. Cross-pairs between a cleaned-crop reader and a raw-crop reader run 61.8-77.6%
+normalised, the same band as within-condition pairs, which is what one would expect if the two conditions are
+equivalent to the reader. The registered 60% raw gate is still missed by a hair on I/J (59.6%) and met normalised
+(67.6%); what limits the block now is the hand itself on lines 1-2, 4, 7 and 9 (a run of joined minims after
+"sicho(m)e", two proper names, an abbreviation after "par"), which every pair leaves bracketed.
+
+**(a) The settled text** (`passes/p2x_settled.tsv`; reconciler about 106k tokens, all 49 columns settled from the
+cleaned crops, each choice logged per column): 101 word tokens, 21 bracketed uncertainties; 20 columns took G's
+token, 24 H's, 4 the reconciler's own reading, 2 left undecided (line 2 "[ma]", line 4 the Cardinal's name). Grades
+in rule 4's spirit for a plain transcription: 71 normalised words agreed by both blind passes (AB), 26 settled by the
+third reader from the image (a single-reader grade, M), 4 undecided or unreadable. Independent check: the settled
+text agrees 67.0% normalised with each of the raw readers I and J, who never saw the cleaned crops or the G/H passes
+(G/H themselves: 81.4 / 84.0). The block, as settled (context only, not a cipher reading):
+
+> alcuna promess(a) che p(er)[ci]o lo offendera / e· per s(u)o damno ha[r]o detta / [s]poliata / sicho(m)e
+> a[m]m[on]itio[n] [n]on a [ma] supplicara nomina v(ost)ro a[...] / [I]mio el prefato R(everendissi)mo / ma bix(ogn)a
+> piu di bona sorta p(er)che al / Car(dina)le C[e]s[.]dio ha promesso dal S(ignori)a d'una bona chiesia / nel regno di
+> napoli o s[a]rdegna / et benche q(ues)to non sia / della migliore credo [s]empre pigl[i]arebbe a bon [conto] / Le
+> galee sono arriuate qui in par[...] in Larma[t]a fra quattro / giorni partira p(er) a[ff]richa Dio li dia uictoria /
+> Mons(igno)re Lomaio [Iosepho] da ri[s]protto ha maritato la nipota / al primogenito di mons(igno)re di bergha pero
+> no(n) e ancora / publicato /
+
+Points the raw readers add or dispute (M, not settled): I and J both read the opening of line 2 as "rep(ub)lica /
+r[e]p[u]blica" where G/H/settled have "[s]poliata"; J reads "o in spagna" and I "o sardigna" for line 5's
+"s[a]rdegna"; I reads "lo ma[i]or[do]mo" with H against G/settled's "Lomaio [Iosepho]" on line 9 -- the mayordomo
+reading has two readers (H, I) against two (G, J) and stays open. Nothing here changes the H33b/H33d context: a
+church in the kingdom of Naples (or Sardinia) promised by a Cardinal or Signoria, the galleys arrived and the fleet
+sailing for Africa in four days, a marriage into the house of Bergha not yet published, then the second cipher
+passage. No crib is added (H34 closed the route; the new agreed words are under ten letters or already tried).
+
+**Controls:** the raw deskewed pair is the matched control for the cleaning (same lines, same boxes, same reader
+tier, same brief but for the bleed-through sentence); the settled text is cross-scored against two readers who
+never saw its inputs. Gate reported as missed raw / met normalised, as in H33d. No cipher reading, no class change,
+rule 10 wording. **Files:** `passes/p2y_pass{I,J}.tsv`, `passes/p2x_settled.tsv` (the raw crops are regenerable
+from `passes/p2x_cut.py` with the cleaning skipped and are not committed: folder at 29 MB). **Cost:** 3 Opus vision
+calls (about 306k tokens) plus this runner's turns -- recorded as 4.0 USD (the est). No requests for the step
+itself; 2 reachability probes at its close (below). No credentials, no AskUserQuestion, no other target touched.
+
+**Host probes at close-out (28 Sept 2026, about 06:00 UTC, 1 request each):** `web.archive.org/cdx/search/cdx`
+answers HTTP 200 with rows (the Internet Archive is back from the 00:29 UTC "Temporarily Offline" that parked H6),
+and `istina.msu.ru` answers HTTP 200 (it timed out at 00:29). H6 and H8's `needs` cells flip to nobody.
