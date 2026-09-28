@@ -2,7 +2,7 @@
 import random, sys
 sys.argv = ["x"]; import dict_solver as D
 rng = random.Random(23)
-for k in (1, 2):
+for k in (2,):
     r2 = random.Random(900 + k); flat = [g for s in D.TARGET for g in s]; r2.shuffle(flat); it = iter(flat)
     sh = [[next(it) for _ in s] for s in D.TARGET]; s2, m2 = D.solve(sh, D.SIGNS, rng, 24, 25000)
     d2 = ["".join(m2[g] for g in s) for s in sh]

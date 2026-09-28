@@ -5,8 +5,11 @@ controls above the 60 percent gate at that error level (CLAUDE.md rule 3, SALV-D
 import random, sys
 sys.argv = ["x"]; import dict_solver as D
 rng = random.Random(31)
+import os
+done = open('b33_log.txt').read() if os.path.exists('b33_log.txt') else ''
 for err in (0.10, 0.15, 0.20):
     for k in range(3):
+        if f"error {int(err*100)}% control {k}:" in done: continue
         words, segs = D.synth(random.Random(100 + k)); r = random.Random(500 + k)
         noisy = [[(r.choice(D.SIGNS) if r.random() < err else g) for g in s] for s in segs]
         sc, m = D.solve(noisy, D.SIGNS, rng, 24, 25000)
