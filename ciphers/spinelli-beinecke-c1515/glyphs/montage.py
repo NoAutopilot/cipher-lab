@@ -8,14 +8,19 @@ Excluded (settled by the runner's eye on the v2 strips, 28 Sept 2026 00:0x UTC):
 "al R.do frate mio" and the line above's descenders); line 8 boxes 18, 22, 24, 25, 27, 28, 30, 32, 33, 34, 35 (the plain
 "La morte" line below, on a lower baseline). Needs Pillow.
   python3 glyphs/montage.py            -> glyphs/crops4x/*.png, glyphs/montage/p1_L01.png ... p1_L08.png
+  python3 glyphs/montage.py p2         -> glyphs/montage/p2_L01.png, p2_L02.png (the p2L1/p2L2 segment units, no exclusions; H29c)
 """
 import csv, os, subprocess, sys
 from PIL import Image, ImageDraw, ImageFont
 HERE=os.path.dirname(os.path.abspath(__file__)); REPO=os.path.abspath(os.path.join(HERE,'..','..','..'))
 EXCL={'1':set(range(1,12)),'8':{18,22,24,25,27,28,30,32,33,34,35}}
-rows=[r for r in csv.DictReader(open(os.path.join(HERE,'signs.tsv')),delimiter='\t') if r['page']=='p1']
+PAGE=sys.argv[1] if len(sys.argv)>1 else 'p1'   # H29c (28 Sept 2026): 'p2' = the p2L1/p2L2 units of signs.tsv -> p2_L01/p2_L02.png
+PAGES={'p1':['p1'],'p2':['p2L1','p2L2']}[PAGE]
+rows=[r for r in csv.DictReader(open(os.path.join(HERE,'signs.tsv')),delimiter='\t') if r['page'] in PAGES]
+if PAGE=='p2':
+    for r in rows: r['line']=str(PAGES.index(r['page'])+1)
 dest=os.path.join(HERE,'crops4x'); os.makedirs(dest,exist_ok=True); os.makedirs(os.path.join(HERE,'montage'),exist_ok=True)
-keep=[r for r in rows if int(r['pos']) not in EXCL.get(r['line'],set())]
+keep=[r for r in rows if PAGE!='p1' or int(r['pos']) not in EXCL.get(r['line'],set())]
 sids=[r['sid'] for r in keep if not os.path.exists(os.path.join(dest,r['sid']+'.png'))]
 for i in range(0,len(sids),40):
     cmd=[sys.executable,os.path.join(REPO,'tools','glyph_atlas.py'),'crop','--out',HERE,'--dest',dest,'--scale','4','--margin','10']
@@ -34,4 +39,4 @@ for ln in sorted(set(r['line'] for r in keep),key=int):
         x=(i%PER)*CW; y=(i//PER)*CH
         im.paste(g,(x+(CW-g.width)//2,y+10)); d.rectangle([x+2,y+2,x+CW-3,y+CH-3],outline=(180,180,180))
         d.text((x+CW//2-20,y+CH-55),r['pos'],fill=(200,0,0),font=font)
-    out=os.path.join(HERE,'montage',f'p1_L{int(ln):02d}.png'); im.save(out); print(out,len(L),'boxes',im.size)
+    out=os.path.join(HERE,'montage',f'{PAGE}_L{int(ln):02d}.png'); im.save(out); print(out,len(L),'boxes',im.size)
