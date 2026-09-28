@@ -1,0 +1,58 @@
+line	pos	code	note	conf
+1	1	FOUR	thin 4 with a separate J-like stroke above it	M
+1	2	ENN	bold N, open loop inside	H
+1	3	SEVEN	bold 7, long top bar	H
+1	4	SIX	6 with tall ascender, fragment at right	H
+1	5	NINE	9 loop with long tail	H
+1	6	PLUS	bold plus, stroke fragment at right edge	H
+1	7	PHI	dash at left, small loop, large looped descender crossed	M
+1	8	ENN	very bold N	H
+1	9	EIGHT	clear figure 8	H
+1	10	OMEGADOT	omega with round loop above	M
+1	11	DIAMOND	bold rotated square	H
+1	12	SEVEN	bar with hooked bold foot	H
+1	13	TWO	round 2 with curled foot	M
+1	14	NINE	9 loop with long diagonal tail	H
+1	15	SEVEN	7 with long diagonal stem	H
+1	16	THREE	3 zigzag	H
+1	17	PHI	small loop on a long vertical descender	M
+1	18	EM	M zigzag	H
+1	19	TWO	flat Z-shaped 2	H
+1	20	NINE	small loop at top left, straight stem	M
+1	21	XCURL	cursive x, curled ends	H
+1	22	HCURL	H with curled serifs	H
+1	23	OMEGABAR	omega with bar on top	H
+1	24	HOOK	script e with rising stroke, dot at left	M
+1	25	_	curved stroke fragment only	H
+1	26	EIGHT	bold 8	H
+1	27	HOOK	long-s curve with loop at base	M
+1	28	NINE	9 loop, straight stem	H
+1	29	THETA	oval crossed by horizontal bar	H
+1	30	SEVEN	bold 7, vertical hooked foot	H
+1	31	PLUS	bold plus	H
+1	32	XCURL	cursive x, curled ends	H
+1	33	SEVEN	7 with long diagonal stem	H
+2	1	_	thin diagonal stroke only	H
+2	2	_	thin vertical with small crossing tick	L
+2	3	HOOK	thin long-s with small loop at top	L
+2	4	_	large curved stroke with hooked top, partial	L
+2	5	FOUR	bold 4, stroke fragment below left	H
+2	6	OMEGABAR	omega with bar on top	H
+2	7	DIAMOND	rotated square outline	H
+2	8	PI	capital Pi	H
+2	9	FOUR	4 with long stem	H
+2	10	HOOK	small loop at left with long tail, S-like loop at upper right	L
+2	11	OMEGABAR	omega with bar, small fragments below	H
+2	12	PHI	small loop crossed, large looped descender	M
+2	13	TWO	D-shaped 2	H
+2	14	EM	M zigzag, curled feet	H
+2	15	SEVEN	bar with hooked foot	H
+2	16	EIGHT	open 8, crossing strokes, lower loop open	M
+2	17	EIGHT	8 with long lower-left tail	M
+2	18	SEVEN	bold 7	H
+2	19	XCURL	cursive x, curled ends	H
+2	20	_	thin diagonal stroke only	H
+2	21	PHI	blob and loop crossed on a looped descender	M
+2	22	_	single curved stroke, partial	L
+2	23	_	wavy horizontal stroke at top edge, cut off	L
+2	24	_	dot and blot at corner	H

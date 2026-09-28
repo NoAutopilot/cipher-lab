@@ -1175,3 +1175,40 @@ solver or crib run uses it. No reading, no class change; this is a transcription
 NEW-code and merged-box findings rest on two independent blind readers agreeing. **Cost:** 2 Opus vision calls plus
 this runner's turns -- recorded as 6.0 USD (the est). No network requests, no credentials, no AskUserQuestion, rule 10
 wording, no other target touched.
+
+## Campaign step H29c (28 Sept 2026, 02:50-02:52 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H29c: the Opus reader pair on the rest of the letter -- p.[1] lines
+5-8 on the existing native 4x montages, and p.[2] on 4x montages cut this step (`glyphs/montage.py p2`, the p2L1/p2L2
+segment units of atlas v2, 33 + 24 boxes, no exclusions; `glyphs/montage/p2_L01.png`, `p2_L02.png`, committed; Pillow,
+numpy, opencv and scikit-image installed in this container for the crop step). Same blind protocol as H29b, JHOOK
+offered as a code for the shape H29b found. Four Opus vision calls (about 108k, 108k, 97k, 97k tokens):
+`passes/p1_L5-8_v3_passI.tsv`, `passJ.tsv`, `passes/p2_v3_passK.tsv`, `passL.tsv`.
+
+**Result: the Opus pairs clear the gate everywhere, far above the Sonnet pairs on the same or equivalent images.**
+
+| unit | boxes | Opus pair exact agreement | Sonnet pair on the same images (H15 / H10) | disagreements file |
+|---|---|---|---|---|
+| p.[1] lines 1-4 (H29b) | 105 | 94 = **89.5%** | 76.2% (C/D) | `p1_L1-4_v3_GH_disagreements.tsv` (11) |
+| p.[1] lines 5-8 | 99 | 94 = **94.9%** | 65.7% (C/D) | `p1_L5-8_v3_IJ_disagreements.tsv` (5) |
+| p.[2] lines 1-2 (v2 boxes) | 57 | 55 = **96.5%** (98.2% first code) | 64.0% (H10, on the v1 strips; not the same boxes) | `p2_v3_KL_disagreements.tsv` (2) |
+| whole letter | 261 | 243 = **93.1%** | 71.1% p.[1] / 64.0% p.[2] | 18 boxes to settle |
+
+Cross-tier agreement on lines 5-8 is 63.6-72.7%, and each Opus pass agrees with the current reconciled file on
+76-79% of boxes (88-89% of its AB boxes) -- the reconciled file was settled from the Sonnet passes, so this is the
+expected direction. Findings for the rebuild (H30):
+1. Lines 5-8: the Opus pair agrees against the reconciled file on 19 boxes, six of them AB from the Sonnet pair
+   (L5.1 TEE, L5.13 PHI, L8.10 SIX, and L7.17, L8.1, L8.8, L8.13 read as fragments `_`); the merged boxes it reads
+   as two signs match H15's settling notes (L5.2, L5.14 HOOK+THREE; L6.25 HOOK+SIX; L8.9 NINE+THREE; L8.15 HOOK+THETA;
+   L8.23 HOOK+EM). Both readers call L8.4 a bold epsilon opening RIGHT, not the reversed E the atlas named EREV: the
+   code is renamed in H30 (EPSILON). JHOOK was used once (L7.13, pass I; pass J read a fragment).
+2. p.[2]: 48 signs and 7 fragments agreed; the two disagreements are L2.4 (HOOK vs fragment) and L2.10 (HOOK+EIGHT vs
+   HOOK). The agreed code counts (SEVEN 7, NINE 4, PHI 4, EIGHT 4, FOUR 3, TWO 3, XCURL 3, OMEGABAR 3, HOOK 3 ...) put
+   HOOK at 3 of 48 on p.[2] against 10 of 52 in H10's v2-coded reconciliation -- the Sonnet passes had been reading
+   several distinct shapes as hooks.
+3. The 18 unsettled boxes are the H30 reconciler's direct-look work, graded R; everything agreed is AB at a pair
+   agreement of 89.5-96.5% rather than 64-76%.
+
+**Controls:** the pre-registered 60% gate and the Sonnet pairs' figures on the same images. No reading, no class
+change, rule 10 wording. **Cost:** 4 Opus vision calls plus this runner's turns -- recorded as 12.0 USD (the est).
+No network requests, no credentials, no AskUserQuestion, no other target touched.
