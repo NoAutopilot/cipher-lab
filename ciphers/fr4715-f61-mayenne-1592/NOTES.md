@@ -3116,3 +3116,11 @@ leaves; one f.108r sign (L06/7) is a bare hash. So the passes' HASH4 on these le
 lean to d/q on f.108v fits it. H119's i/x lean on f.108r is then not the bare-hash i: on f.108r L06 the reader describes most
 of these as "4-like apex, looped feet" (the passes' "crossed double loop, alt INF"), a looped variant whose value is open.
 H163 (split values) is moot: a split moves one sign. No reading, no class change.
+
+## Campaign step H164 (28 Sept 2026, finished 20:23 UTC by the clock, runner 5 session_01RbeePKZVn83gNfES8yFmhe), script-only
+
+`scripts/f61lattice_seqgain.py` (sizes amended and pushed 40f460cb before the run; `f61lattice_seqgain_result.txt`): the
+sequence gain with the word-lattice resolution (10 shuffles, 100 permuted maps). Control, known f.61 lines: gain 0.161,
+**rank 3 of 101 -> PASS** (weaker than the plain beam's rank 1: the lattice's word bonus lifts shuffled text too).
+**f.108r L04-L06 (HASH4 = d/q per H162): rank 8 of 101 -> FAIL** (gate 5). The lattice does not make the f.108r evidence
+stronger; it stays a lean (H154). No reading, no class change.

@@ -1,0 +1,2 @@
+CONTROL known f.61 lines: lattice gain 0.161, rank 3 of 101 (best permuted 0.210) -> PASS
+f.108r L04-L06, HASH4=d/q: lattice gain 0.085, rank 8 of 101 (best permuted 0.162) -> FAIL
