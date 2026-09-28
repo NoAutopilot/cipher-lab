@@ -1,0 +1,247 @@
+{
+ "source": "DECODE (de-crypt.org), records R10181 (letter) and R10189-R10197 (keys), access mode Public: full-size files served by /decrypt-custom/filesrv/?file=<name> with no login (tested 28 Sept 2026, 21:1x-21:4x UTC, 25 requests, 1.8 s apart)",
+ "images_committed": false,
+ "note": "images stay out of this repository (DECODE holdings; the archive's permission would be needed to publish); re-fetch by name",
+ "files": [
+  {
+   "file": "IMG_R10173_I46634_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10173_I46634_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1541476,
+   "sha1_12": "82c1824d5e2d"
+  },
+  {
+   "file": "IMG_R10181_I46667_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10181_I46667_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1049501,
+   "sha1_12": "6298d7422611"
+  },
+  {
+   "file": "IMG_R10181_I46667_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10181_I46667_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1164584,
+   "sha1_12": "acbcf53aab9c"
+  },
+  {
+   "file": "IMG_R10181_I46667_P3.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10181_I46667_P3.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1105216,
+   "sha1_12": "d863e2751498"
+  },
+  {
+   "file": "IMG_R10181_I46667_P4.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10181_I46667_P4.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1141358,
+   "sha1_12": "89d60f6f8826"
+  },
+  {
+   "file": "IMG_R10184_I46681_P.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10184_I46681_P.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 4660224,
+   "sha1_12": "f9d9d4e33aa2"
+  },
+  {
+   "file": "IMG_R10189_I46689_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10189_I46689_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1141136,
+   "sha1_12": "a9ca16c4ee68"
+  },
+  {
+   "file": "IMG_R10189_I46689_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10189_I46689_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1291941,
+   "sha1_12": "7cecd1af6d6c"
+  },
+  {
+   "file": "IMG_R10190_I46690_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10190_I46690_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 979573,
+   "sha1_12": "80899102c588"
+  },
+  {
+   "file": "IMG_R10190_I46690_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10190_I46690_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1444530,
+   "sha1_12": "06b221ec647f"
+  },
+  {
+   "file": "IMG_R10191_I46695_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10191_I46695_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1042521,
+   "sha1_12": "e57165ca1b05"
+  },
+  {
+   "file": "IMG_R10191_I46695_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10191_I46695_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1376678,
+   "sha1_12": "2254f444c80b"
+  },
+  {
+   "file": "IMG_R10192_I46696_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10192_I46696_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1089948,
+   "sha1_12": "62d27539c703"
+  },
+  {
+   "file": "IMG_R10192_I46696_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10192_I46696_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1351628,
+   "sha1_12": "5b36fa9672cf"
+  },
+  {
+   "file": "IMG_R10193_I46701_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10193_I46701_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1377187,
+   "sha1_12": "cc1d7eaa1fbc"
+  },
+  {
+   "file": "IMG_R10193_I46701_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10193_I46701_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1012231,
+   "sha1_12": "bf5f95ea925a"
+  },
+  {
+   "file": "IMG_R10194_I46704_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10194_I46704_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1444345,
+   "sha1_12": "c9a1c3de09ad"
+  },
+  {
+   "file": "IMG_R10194_I46704_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10194_I46704_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1671089,
+   "sha1_12": "c3dae4f7d024"
+  },
+  {
+   "file": "IMG_R10195_I46707_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10195_I46707_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 992618,
+   "sha1_12": "5938f7e5d8d1"
+  },
+  {
+   "file": "IMG_R10195_I46707_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10195_I46707_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1368594,
+   "sha1_12": "ddb7582b5a18"
+  },
+  {
+   "file": "IMG_R10196_I46710_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10196_I46710_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1038538,
+   "sha1_12": "deeae16f3b57"
+  },
+  {
+   "file": "IMG_R10196_I46710_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10196_I46710_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1387489,
+   "sha1_12": "ac39df5e3087"
+  },
+  {
+   "file": "IMG_R10197_I46711_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10197_I46711_P1.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1008828,
+   "sha1_12": "96f6b2bdda2a"
+  },
+  {
+   "file": "IMG_R10197_I46711_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R10197_I46711_P2.jpg",
+   "px": [
+    3456,
+    3456
+   ],
+   "bytes": 1297141,
+   "sha1_12": "dd09f8f0af6b"
+  }
+ ]
+}
