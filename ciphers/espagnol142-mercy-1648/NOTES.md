@@ -2139,3 +2139,13 @@ The crib does not lean on the uncertain letter codes (9, 15, 25) at all: it stan
 nomenclature code 72 is a two-letter unit** (do); with 72 as the single letter z nothing on the list fits the stretch.
 That is the one question a period key of this office, or another letter using 72, would settle. No token, grade or
 class change.
+
+## Campaign step H54 (2026-09-28 16:12 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative.** The words between "el Elector de Brandenburg" and the Burgsdorf candidate,
+r16:2-15 "y e o n e o p ? r a d l o n": list built before scoring = every 2-5-word sequence in es17c7 beginning "y con",
+8-16 letters, 3+ occurrences (79, `h54/phrases.tsv`), fitted with `tools/crib_list_fit.py --anchor end --end r16:15`
+(`h54/result.log`). Best "y con esta ocasion", 7 agree / 6 disagree (fit +1); everything else below 0. No phrase meets
+the rule. The span may hold a title or particle the newsletters do not use ("y con el Oberkammerherr" has no Spanish
+form in the corpus), or carry misread tokens; it stays unread and the H41 name candidate is unaffected. No token,
+grade or class change.
