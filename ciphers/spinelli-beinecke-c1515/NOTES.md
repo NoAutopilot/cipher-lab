@@ -1409,3 +1409,50 @@ letter-level figure reported beside it, not as a substitute). **Files:** 72 line
 `images/pl29_L*.jpg` with manifest entries, the four pass files, `corpus/tommaso_1519_plain_agreed.tsv`.
 **Cost:** 4 Sonnet vision calls (about 490k tokens) plus this runner's turns -- recorded as 6.0 USD (the est). 2
 requests to collections.library.yale.edu (2 s apart). No credentials, no AskUserQuestion, no other target touched.
+
+## Campaign step H33 (28 Sept 2026, 05:13-05:20 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H33: the letter's OWN plain text with an Opus blind pass pair, for
+what the letter is about around the cipher passage (context, and the only source of cribs left besides Domnina's Fig.1).
+
+**Done, with a line-finder fault that limits it.** Both canvases fetched once at full size (3577x4997; 4 requests this
+step counting one repeat, all 2 s apart) and cut with `tools/iiif_lines.py --image --region` into four blocks:
+p.[1] opening line (`p1t`, 2 bands, the first empty), p.[1] below the cipher (`p1b`, 15 bands), p.[2] above the cipher
+(`p2t`, 11 bands), p.[2] closing lines (`p2b`, 2 bands); 60 crops, manifest entries. Four Opus passes (about 100-112k
+tokens each): `passes/p1plain_pass{A,B}.tsv`, `passes/p2plain_pass{A,B}.tsv`. **Both p.[2] readers independently report
+that bands 8-9 each hold two full lines with the centre between them (one line, "... scotto ha maritato la nipote", has
+no band of its own -- the finder's centres jump from 1030 to 1338 with nothing at about 1185), and the p.[1] pass A
+reports that bands 7-15 each carry a second line cut off along the bottom edge** -- the detector's pitch (170 px)
+drifts against the lower block's real spacing, so those crops show a line's top and its neighbour's bottom. The
+readers still transcribed 17 + 13 rows, at a cost in bracketed uncertainties at line ends (30-40 per pass).
+
+**Agreement** (`tools/reconcile_passes.py` over words, and folded letters as in H21): p.[1] **letter-level 67.3%,
+word-level 85/165 = 51.5%**; p.[2] **letter-level 81.1%, word-level 59/114 = 51.8%** -- under the 60% word gate on
+both pages, the p.[1] figure pulled down by the drifting bands (b1-b6, cut cleanly, agree almost word for word).
+`corpus/letter_plain_context_agreed.tsv` holds the words both readers gave per band.
+
+**What the letter says around the cipher (agreed words only; context, not a reading of the cipher):** p.[1] opens
+"[S]crissivi un'altra che se sara con questa, poi non ho vostra ..." then the cipher block; below it: "La morte del
+Car(dina)le de Rossi e dispiaciuta ... Franzesi habbimo questo anno mala sorte ne so [che] pronosticho per loro sia /
+Il gobernatore di Brescia mio S(ig)nore et amico ... parte fra dua giorni per andarsene a ... caza sua et di la in
+Borgognia et Fiandra dove ... / L'arcivescovo Arboren[se] confessore [della M(aes)ta del Re] per la sua indispositione
+e partito per andarsene in Fiandra et trovasi ... et mal Regi[me] credo non sabbi a condurre a casa / se la sorte cosi
+dessi ... R(everendissi)mo de Medici ... parlo a voi con ... il detto confessoro ... molto mio non ho voluto
+anticipar[e] ... a domandarne". p.[2] above the cipher: "... promessa ... per lo damno caso della ... duplicare nomina
+... R(everendissi)mo ... piu di bona sorte ... Carlo ... ha promessa dal [Re] d'una bona [chiesia] nel regno di Napoli
+et [Sardigna] ... credo per ... a ogni modo / Le galee sono arrivate qui in [parte] et l'armata fra quattro giorni
+partira per Affrica, Dio [li dia vittoria] / Mons. ... ha maritato la nipote al primogenito di Mons. di [Bergha] pero non
+e ancora publicato /"; the two cipher lines; then "Rispondetemi con qualche fondamento circha il ritorno mio et
+valete. Barcinonie iij septembris M.D.XIX". This matches the catalogue title (the King's confessor, the Archbishop of
+Arborea, has left because of illness; Tommaso wants that post and asks his brother to have the Rev. de' Medici
+intercede) and places the cipher passages exactly where the sensitive matter -- the confessor's post, Medici's
+intercession, and (Tomokiyo's phrase) "la gubernation d'Ispagnia" -- would be written. Crib candidates it yields for
+the pattern drag on the v4 coding (H34): confessore, medici, cardinale, ispagnia, gubernation, arcivescovo, fiandra,
+napoli, re, regina, spagna.
+
+**Controls:** the pass-pair agreement figures (gate missed at the word level, the band fault named as the cause on
+p.[1]); no cipher reading is implied by any of the above. **Files:** 60 crops `images/p1t_*`, `p1b_*`, `p2t_*`,
+`p2b_*`; four pass files; `corpus/letter_plain_context_agreed.tsv`; manifest repaired (see the halfway line: the tool's
+30 MB guard downscaled the committed native sources in place and rewrote 74 entries -- restored from git, copies
+removed, a `_note_sources_28sep2026` key explains). **Cost:** 4 Opus vision calls (about 425k tokens) plus this
+runner's turns -- recorded as 10.0 USD (the est). No credentials, no AskUserQuestion, no other target touched.

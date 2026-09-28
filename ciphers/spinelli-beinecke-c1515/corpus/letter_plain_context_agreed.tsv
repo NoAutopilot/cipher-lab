@@ -1,0 +1,34 @@
+# The letter's OWN plain text (Tommaso Spinelli to Leonardo, 7 Sept 1519): words both Opus blind passes read alike, per line band (H33, 28 Sept 2026).
+# p1plain t2 = the opening line above the cipher; b1-b15 = the block below it (bands 7-15 drift, see NOTES H33); p2plain t1-t11 = above the two cipher lines (one line missed by the band finder), b1-b2 = the closing lines.
+# Passes: passes/p1plain_pass{A,B}.tsv, p2plain_pass{A,B}.tsv. Context only; no cipher reading implied.
+page	band	agreed_words
+p1plain	t1	
+p1plain	t2	Crissimi c(he) se sara con questa poi no(n) ho v(ost)ra
+p1plain	b1	La morte del Car(dina)le de Rossi e di
+p1plain	b2	Franzesi habbimo questo anno mala sorte ne so
+p1plain	b3	pronosticho per loro sia
+p1plain	b4	Il gobernatore Brescia mio S(ig)nore et amico m........
+p1plain	b5	parte fra dua giorni per andarsene a caza sua
+p1plain	b6	et di la in Borgognia et fiandra doue
+p1plain	b7	Larcivescovo
+p1plain	b8	per la sua indispositione e
+p1plain	b9	fiandra et trovasi
+p1plain	b10	et mal credo
+p1plain	b11	se la sorte cosi dessi
+p1plain	b12	c(he) nonna
+p1plain	b13	Parlo a voi con
+p1plain	b14	done assai
+p1plain	b15	molto mio no(n) ho voluto
+p2plain	t1	priolo per lo damno caso della
+p2plain	t2	duplicare nomina
+p2plain	t3	R(everendissi)mo piu di bona
+p2plain	t4	Carlo ha promessa dal bona
+p2plain	t5	nel regno di napoli et et q(ue)l non
+p2plain	t6	credo p(er) a ogni modo
+p2plain	t7	Le galee sono arrivate qui in in larmata fra quattro
+p2plain	t8	giorni partira p(er) dio
+p2plain	t9	Mons
+p2plain	t10	al primogenito di mons
+p2plain	t11	
+p2plain	b1	con qualche fondamento circha il ritorno mio
+p2plain	b2	Barcinonie settembris M.D.XIX
