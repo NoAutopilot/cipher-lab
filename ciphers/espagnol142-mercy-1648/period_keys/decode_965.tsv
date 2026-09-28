@@ -1,0 +1,98 @@
+# DECODE R965, AGR Brussels, Secretairerie d'Etat et de Guerre inv.nr. 2 ("chiffres 1647-98"; R964 alone gives inv.nr. 2559).
+# Letter table(s) only; read 28 Sept 2026 by DECODE-OPEN (pass A) from the full-size DECODE image, blind second read by a Sonnet subagent (pass B) on the same crops.
+# grade: H both passes agree and the cell is clear; S one pass unsure or the passes disagree on a letter/row; U unread. Images not in this repository.
+table	letter	row	code	grade	pass_b	note
+p7	a	1	20	H	20	
+p7	a	2	13	H	13	
+p7	b	1	21	H	21	
+p7	c	1	22	H	22	
+p7	d	1	23	H	23	
+p7	e	1	24	H	24	
+p7	e	2	15	S	-	pass B places no value here
+p7	f	1	25	H	25	
+p7	g	1	26	H	26	
+p7	h	1	27	H	27	
+p7	i	1	28	H	28	
+p7	i	2	17	S	-	
+p7	k	1	29	H	29	
+p7	l	1	30	S	30? 30	pass B unsure
+p7	m	1	31	H	31	
+p7	n	1	1	S	1	
+p7	o	1	2	H	2	
+p7	o	2	19	S	-	pass B places no value here
+p7	p	1	3	H	3	
+p7	q	1	4	H	4	
+p7	r	1	5	H	5	
+p7	s	1	6	H	6	
+p7	s	2	32	S	33	passes disagree
+p7	t	1	7	H	7	
+p7	u	1	8	H	8	
+p7	u	2	33	S	-	pass B places no value here
+p7	x	1	9	H	9	
+p7	y	1	10	H	10	
+p7	z	1	11	H	11	
+p7	&	1	12	S	-	
+p3	a	1	6	S	6?	pass B unsure
+p3	b	1	10	S	10?	pass B unsure
+p3	c	1	1	S	1?	
+p3	d	1	3	S	3?	pass B unsure
+p3	e	1	2	S	2?	pass B unsure
+p3	f	1	11	S	11?	pass B unsure
+p3	g	1	4	S	_	passes disagree
+p3	h	1	9	S	9?	pass B unsure
+p3	i	1	12	S	12?	pass B unsure
+p3	k	1	7	S	7?	pass B unsure
+p3	l	1	5	S	5?	pass B unsure
+p3	m	1	14	S	14?	pass B unsure
+p3	n	1	8	S	8?	pass B unsure
+p3	o	1	29	S	29?	
+p3	p	1	13	S	13?	pass B unsure
+p3	q	1	22	S	22?	pass B unsure
+p3	r	1	15	S	15?	pass B unsure
+p3	s	1	19	S	19?	
+p3	t	1	16	S	16?	pass B unsure
+p3	u	1	18	S	18?	pass B unsure
+p3	x	1	17	S	17?	pass B unsure
+p3	y	1	20	S	20?	pass B unsure
+p3	z	1	21	S	21?	pass B unsure
+p6	a	1	9	S	8	passes disagree
+p6	b	1	10	H	10	
+p6	c	1	11	H	11	
+p6	d	1	12	H	12	
+p6	e	1	13	H	13	
+p6	f	1	14	H	14	
+p6	g	1	15	H	15	
+p6	h	1	16	H	16	
+p6	i	1	17	H	17	
+p6	l	1	18	S	_	passes disagree
+p6	m	1	19	S	_	passes disagree
+p6	o	1	2	S	_	passes disagree
+p6	p	1	3	S	_	passes disagree
+p6	q	1	4	S	_	passes disagree
+p6	r	1	5	S	_	passes disagree
+p6	s	1	6	S	_	passes disagree
+p6	t	1	7	S	_	passes disagree
+p6	x	1	8	S	_	passes disagree
+p6	y	1	9	S	_	passes disagree
+p6	&	1	20	S	-	
+p5	a	1	21	S	21?	
+p5	a	2	5	S	5?	
+p5	b	1	10	S	10?	
+p5	c	1	9	S	9?	
+p5	c	2	12	S	12?	
+p5	d	1	6	S	6?	
+p5	e	1	13	S	13?	
+p5	e	2	2	S	m?	passes disagree
+p5	f	1	11	S	11?	
+p5	g	1	16	S	16?	
+p5	g	2	1	S	f?	passes disagree
+p5	h	2	14	S	1?	passes disagree
+p5	l	2	19	S	14?	passes disagree
+p5	o	1	18	S	18?	
+p5	o	2	17	S	17?	
+p5	o	3	6	S	-	
+p5	p	1	26	S	26?	
+p5	p	2	30	S	39?	passes disagree
+p5	r	1	29	S	20?	passes disagree
+p5	r	2	26	S	21?	passes disagree
+p5	u	1	33	S	32?	passes disagree

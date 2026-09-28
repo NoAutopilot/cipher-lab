@@ -428,7 +428,7 @@ uses a single login.
 
 ### Formerly blocked records, full-size test (DECODE-OPEN, 28 Sept 2026)
 
-Same login (listener mode), 15:1x-15:3x UTC. For each record: its RecordsView page, then the first full-size
+Same login (listener mode), 15:01-15:05 UTC (file times; login at 14:54, Mercy records 14:54-14:57). For each record: its RecordsView page, then the first full-size
 image named in its zoom-modal alt text. Every one came back a real image, none the placeholder (all sha1s differ
 from `035489a0...`); images are in the worker's scratchpad only, never committed.
 

@@ -1,0 +1,7 @@
+record	table	shared	agree	agree_codes	disagree (code:key.tsv/table)
+R958	key1	24	1	10	12:b/e 13:y/i 14:c/o 15:n/u 16:d/b 17:a/c 18:e/d 19:e/f 20:f/e 21:i/g 22:g/h 23:o/i 24:h/l 25:u/m 26:i/n 27:u/p 28:l/q 29:o/r 30:m/i 31:i/s 32:n/t 33:e/x 34:a/y
+R960	key3	19	1	27	4:q/n 5:r/o 8:u/p 12:b/h 13:y/i 14:c/e 15:n/g 16:d/f 17:a/d 18:e/a 19:e/c 20:f/b 21:i/q 22:g/r 25:u/s 26:i/t 28:l/y 29:o/x
+R965	p3	21	1	29	2:o/e 3:p/d 4:q/g 5:r/l 6:s/a 7:t/k 8:u/n 9:q/h 10:a/b 12:b/i 13:y/p 14:c/m 15:n/r 16:d/t 17:a/x 18:e/u 19:e/s 20:f/y 21:i/z 22:g/q
+R965	p5	17	0		2:o/e 5:r/a 6:s/d|o 9:q/c 10:a/b 12:b/c 13:y/e 14:c/h 16:d/g 17:a/o 18:e/o 19:e/l 21:i/a 26:i/p|r 29:o/r 30:m/p 33:e/u
+R965	p6	18	6	2 3 4 5 6 7	8:u/x 9:q/a|y 10:a/b 12:b/d 13:y/e 14:c/f 15:n/g 16:d/h 17:a/i 18:e/l 19:e/m 20:f/&
+R965	p7	28	7	2 3 4 5 6 7 8	9:q/x 10:a/y 12:b/& 13:y/a 15:n/e 17:a/i 19:e/o 20:f/a 21:i/b 22:g/c 23:o/d 24:h/e 25:u/f 26:i/g 27:u/h 28:l/i 29:o/k 30:m/l 31:i/m 32:n/s 33:e/u

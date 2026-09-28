@@ -1,0 +1,32 @@
+# DECODE R958, AGR Brussels, Secretairerie d'Etat et de Guerre inv.nr. 2 ("chiffres 1647-98"; R964 alone gives inv.nr. 2559).
+# Letter table(s) only; read 28 Sept 2026 by DECODE-OPEN (pass A) from the full-size DECODE image, blind second read by a Sonnet subagent (pass B) on the same crops.
+# grade: H both passes agree and the cell is clear; S one pass unsure or the passes disagree on a letter/row; U unread. Images not in this repository.
+table	letter	row	code	grade	pass_b	note
+key1	a	1	10	H	10	
+key1	a	2	11	H	11	
+key1	e	1	20	H	20	
+key1	e	2	12	H	12	
+key1	i	1	30	H	30	
+key1	i	2	13	H	13	
+key1	o	1	40	H	40	
+key1	o	2	14	H	14	
+key1	u	1	50	S	33 50	passes disagree
+key1	u	2	15	H	15	
+key1	b	1	16	H	16	
+key1	c	1	17	H	17	
+key1	d	1	18	H	18	
+key1	f	1	19	H	19	
+key1	g	1	21	H	21	
+key1	h	1	22	H	22	
+key1	j	1	23	S	23	
+key1	l	1	24	H	24	
+key1	m	1	25	H	25	
+key1	n	1	26	H	26	
+key1	p	1	27	H	27	
+key1	q	1	28	H	28	
+key1	r	1	29	S	-	
+key1	s	1	31	H	31	
+key1	t	1	32	H	32	
+key1	x	1	33	S	29	passes disagree
+key1	y	1	34	H	34	
+key1	z	1	35	H	35	
