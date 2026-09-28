@@ -699,12 +699,12 @@ homophones on the commonest letters, spaces = sign 20.
 | control 1 | 536.7 | 54/54 right | us through any war provided that in the |
 | control 2 | 514.4 | 54/54 right | informed you we were making in the too |
 | **target** | **198.5** | 32/54 in dictionary (one- and two-letter words) | i nqua ongonao c faona non a aladlanomdd ... |
-| shuffled floor 0 | 192.1 | 30/54 | i xaxh hllrioo e atlem oda a lflyscaelso ... |
+| shuffled floors 0 / 1 / 2 | 192.1 / 201.5 / 200.9 | 30 / 33 / 33 of 54 | i xaxh hllrioo e atlem oda ... |
 | pilot floors (6 x 8,000, no cap) | 220-233 | 32-36/54 | -- |
 
 **GATE MET (100% on 3 of 3); TARGET AT THE FLOOR.** A solver that recovers three design-matched controls exactly
-produces salad on the target, with a score inside the shuffled-target floor (198.5 vs 192.1; floors 1-2 re-running
-after the first process ended early, appended to the log when done). This is a control-backed negative for the design
+produces salad on the target, with a score inside the shuffled-target floor (198.5 against floors 192.1, 201.5 and
+200.9 -- the target sits between the floors). This is a control-backed negative for the design
 tested: the runs are NOT English spelled letter by letter in 34 signs with at most two homophones per letter and type
 20 as the word space, on Tomokiyo's segmentation. What it does not exclude: a different segmentation (ARM-S1's, or the
 16% pass-to-pass disagreement of the mark transcriptions -- rule 3's SALV-DIAG lesson applies, an error-injected

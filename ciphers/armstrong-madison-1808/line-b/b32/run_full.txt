@@ -6,3 +6,4 @@ TARGET: score 198.5, dictionary words 32/54; map [('10', 's'), ('12', 'f'), ('14
 TARGET decode: i nqua ongonao c faona non a aladlanomdd lalsonlogn son into find e tn hetllrdoanidtun wnldn eoinsuolod to tngaiis she niedoedsgecrb sus i n btc m h a not in a tto to ngtsh d oton sotmin ruaa thuo rec s an roe orheaals ngueeo re ror etdei radiarof raroraitas unrgro ral o o
 shuffled floor 0: score 192.1, dictionary words 30/54  e.g. i xaxh hllrioo e atlem oda a lflyscaelso nrottadatd lot
 shuffled floor 1: score 201.5, dictionary words 33/54  e.g. t ally vthmunv a haspt not t smridudirss oioiothssi mss
+shuffled floor 2: score 200.9, dictionary words 33/54  e.g. f east niscano u ashtc per t feoriioffom tiirnaecre lie
