@@ -2271,3 +2271,17 @@ judge's target resolution among the 21 resolutions of the same call, in the four
 The target ranks 1 of 21 in 23 of 28 row-calls; rows L03, L04, L06 and L07 rank 1 in all four calls on their own (L06
 with 3 flagged signs); L01 and L02 miss once (rank 4, seed 102); L05 is the weak row (ranks 1, 6, 4, 3; 2 flagged
 signs). For the verifier (H88): the signal is spread across the leaf, not carried by one lucky row. Not a reading.
+
+## Campaign step H100 (28 Sept 2026, 16:00-16:03 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+A harder null for the f.108v judge result: 20 maps each differing from the fitted 14-cell map by ONE swap of two classes
+whose cells differ (`scripts/f61judge108v.py build f108v --seed 105 --swap`; prompt = H94's no-leak prompt, file name
+changed; sets and prompt pushed 3f7e4097 before the call). One Opus text call, which wrote its verdict to
+`scripts/f61judge_f108v_swaps105_verdict.tsv`.
+
+Target rank **1 of 21**, 5.0 vs next 4.5 -> **GATE PASS**, thin (`f61judge_f108v_swaps105_result.txt`, `--check`
+fresh). The runner-up (4.5) is the swap 4TRI c/p <-> 4PI d/q -- the two 4-shaped cells Tomokiyo himself names as easily
+confused ("the similarity of the symbols for a/n, c/p, and d/q", `sources/cryptiana/web/mayenne.htm`); every other
+one-swap map scores 2.5 or less (swaps touching PHI e/r, SBS b/o, C43 a/n, INF h/u, EBR, VBAR, ZHOOK, BETA among them).
+So the judge resolves the f.108v cells at the single-swap level except for c/p against d/q, where the text barely
+prefers the fitted assignment. Not a reading; grade M; no class change.
