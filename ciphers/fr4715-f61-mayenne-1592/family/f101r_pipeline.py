@@ -62,7 +62,7 @@ print(f"SIGN AGREEMENT {tot}/{n} = {tot/n if n else 0:.3f}; bands under 70%: {' 
 def words(path):
     d = defaultdict(list)
     for r in csv.DictReader(open(path), delimiter="\t"):
-        if r["kind"].strip().lower() == "dash" or r["word"].strip() in ("-", "--", "—", "_"): continue
+        if r["kind"].strip().lower() == "dash" or r["word"].strip() in ("-", "--", "—", "_") or r["word"].strip().endswith("_struck"): continue
         d[r["line"]].append(re.sub(r"[^a-z0-9?]", "", r["word"].lower()))
     return d
 GA, GB = words(f"{P}/f101r_glossC.tsv"), words(f"{P}/f101r_glossD.tsv"); ga = gt = 0
