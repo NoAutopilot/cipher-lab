@@ -17,8 +17,12 @@ def norm_conf(v):
     v = (v or "").strip().lower(); return {"high": "h", "medium": "m", "med": "m", "low": "l"}.get(v, v or "m")[0]
 have_gloss = bool(glob.glob(f"{P}/{pre}_glossA_c*.tsv"))
 for pas in ("signsA", "signsB") + (("glossA", "glossB") if have_gloss else ()):
-    files = sorted((f for f in glob.glob(f"{P}/{pre}_{pas}_c*.tsv") if re.search(r"_c(\d+)\.tsv$", f)), key=lambda f: int(re.search(r"_c(\d+)\.tsv$", f).group(1)))
-    if want: files = [f for f in files if int(re.search(r"_c(\d+)\.tsv", f).group(1)) in want]
+    files = sorted((f for f in glob.glob(f"{P}/{pre}_{pas}_c*.tsv") if re.search(r"_c(\d+)g?\.tsv$", f)), key=lambda f: int(re.search(r"_c(\d+)g?\.tsv$", f).group(1)))
+    # f.124r (03:3x UTC): a gloss chunk read on the gloss-centred 3x recut (sheets/f124g, file _c<k>g.tsv) replaces the same
+    # chunk's 2x pass; its x0/x1 are rescaled by 2/3 into the 2x band frame align_period.py works in (same native x boxes).
+    gk = {int(re.search(r"_c(\d+)g\.tsv$", f).group(1)) for f in files if f.endswith("g.tsv")}
+    files = [f for f in files if f.endswith("g.tsv") or int(re.search(r"_c(\d+)\.tsv$", f).group(1)) not in gk]
+    if want: files = [f for f in files if int(re.search(r"_c(\d+)g?\.tsv", f).group(1)) in want]
     rows = []
     for f in files:
         with open(f) as fh:
@@ -29,6 +33,10 @@ for pas in ("signsA", "signsB") + (("glossA", "glossB") if have_gloss else ()):
                 if len(cells) < 7: cells += [""] * (7 - len(cells))
                 ci = 3 if pas.startswith("signs") else 4; cells[ci] = norm_conf(cells[ci])
                 if pas.startswith("gloss") and len(cells) < 8: cells += [""] * (8 - len(cells))
+                if pas.startswith("gloss") and f.endswith("g.tsv"):
+                    for j in (6, 7):
+                        try: cells[j] = str(int(round(float(cells[j]) * 2 / 3)))
+                        except ValueError: pass
                 rows.append("\t".join(cells[:8 if pas.startswith("gloss") else 7]))
     hdr = "line\tpos\tsign\tconf\tsegment\tx_px\tnote" if pas.startswith("signs") else "line\tpos\tkind\tword\tconf\tsegment\tx0_px\tx1_px"
     with open(f"{P}/{pre}_{pas}.tsv", "w") as out: out.write(hdr + "\n" + "\n".join(rows) + "\n")
