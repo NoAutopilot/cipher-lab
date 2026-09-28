@@ -1666,3 +1666,14 @@ sheets (`f108v_L01.jpg` .. `f108v_L07.jpg`: the f108v3y crops, the f108v3z recut
 numbers beneath each segment, PLAIN words named) and `README.md` with the TSV template; ASKS row 89 filed. The person's
 reading is scored by the H34 x-placement scorer against pass A's positions (the same file the numbers come from). Nothing
 here reads the cipher; no class change.
+
+## Campaign step H62 (2026-09-28 06:11 UTC) -- the f.108v skeleton under the corrected cells
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV), script-only. `scripts/f61skeleton.py --leaf f108v` ->
+`scripts/f108v_skeleton.txt` (`--check` fresh; the f.61 output unchanged). On the H59 reconciled draft (304 signs: sign grades
+H 62, M 217, L 25) with the H51 cells, SBS b/o and ZHOOK i/x (published): 274 pair positions (no letter chosen), 17 nulls, 13
+unread (OTHER, ISH), coverage 0.96. Every covered sign of this leaf is a two-way choice: the leaf has no Tomokiyo letters and
+its gloss is unread by any model (ASKS 89 is the person route), so nothing here is a reading and no letter is proposed. What
+the file shows the verifier and the desk: which rows a person's gloss reading would settle first (L01: 44 signs with 42
+covered), and that the hand's inventory is f.61's (VBAR_A/EBR_A/4TRI/INF/SBS/ZHOOK). No class change; nothing solved, new or
+first.
