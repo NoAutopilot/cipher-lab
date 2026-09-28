@@ -1,0 +1,27 @@
+== split 72 -> 7 2, default wildcards (non-S)
+window: yeoneop?radlonburgstorfs?cmare?mayorpara?ienseiembiancartasdecr
+402 forms; best burgsdorf fit 7 (8 agree, 1 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorf	7	8/1	r16:16
+  bnrgsdorf	5	7/2	r16:16
+  hurgsdorf	5	7/2	r16:16
+  brandenburg	4	7/3	r16:9
+  garantie	4	5/1	r17:16
+  oranien	4	5/1	r17:17
+== split, nomenclature 48/52/65 wild only (9,15,25 fixed)
+window: yeoneopuradlonburgstorfsucmare?mayorpara?ienseiembiancartasdecr
+402 forms; best burgsdorf fit 7 (8 agree, 1 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorf	7	8/1	r16:16
+  bnrgsdorf	5	7/2	r16:16
+  hurgsdorf	5	7/2	r16:16
+  garantie	4	5/1	r17:16
+  oranien	4	5/1	r17:17
+  orauien	4	5/1	r17:17
+== split, nothing wild
+window: yeoneopuradlonburgstorfsucmareymayorparadienseiembiancartasdecr
+402 forms; best burgsdorf fit 7 (8 agree, 1 disagree) at r16:16; ties 1; P 0.002; candidate: True
+  burgsdorf	7	8/1	r16:16
+  bnrgsdorf	5	7/2	r16:16
+  hurgsdorf	5	7/2	r16:16
+  altenburg	3	6/3	r16:11
+  brandenburg	3	7/4	r16:9
+  nouburg	3	5/2	r16:13

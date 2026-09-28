@@ -2231,3 +2231,24 @@ alternative any pass raised is at 72 itself: **if r16:21 were the two tokens 7 (
 the stretch would read BURGS-T-O-RF, "Burgstorf", with no syllable assumption at all.** H2's gap measurement favours one
 group; the question is filed as H62 (score the split reading with the same list and rule). No token, grade or class
 change.
+
+## Campaign step H62 (2026-09-28 16:34 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. The name fit no longer needs the syllable assumption, if r16:21 is two signs.** MEYE's
+alternative (H60): r16:21 read as the two tokens 7 (t, S) and 2 (o, S) instead of the one code 72. A copy of the stream
+with that split (`h62/cipher_codes_split72.tsv`; cipher_codes.tsv untouched) through `tools/crib_list_fit.py` on H41's
+402-name list, window r16:2-r18:21 (`h62/result.log`):
+
+| wildcards | Burgsdorf | P | candidate |
+|---|---|---|---|
+| default (M-graded tokens wild) | unique best, 8 of 9 letters agree, 1 disagrees (t for d) | 0.002 | yes |
+| only 48/52/65 wild (9, 15, 25 at key.tsv letters) | same, 8 / 1 | 0.002 | yes |
+| **none at all** (every token at its key.tsv letter) | **same, 8 / 1** -- next altenburg / brandenburg 3 | **0.002** | **yes** |
+
+Read with 7 2, the stretch gives **B-U-R-G-S-T-O-R-F** letter for letter from codes graded S (12 b, 8 u, 5 r, 22 g,
+6 s, 7 t, 2 o, 5 r, 20 f), and **"Burgstorf" is a period spelling of the name**: Urkunden Bd. 1 prints "Burgstorf" 7
+times and "Burgstorff" 15 times beside 57 "Burgsdorf" (grep of the H51 download). The one disagreement with the list's
+"burgsdorf" is exactly that spelling difference. Against it: H2's three reads call 72 one group ("gap 7-2 matches
+intra-group gaps"), the code 72 occurs only here, and a separate 7 followed by a separate 2 occurs nowhere else in the
+letter (0 pairs). So the crib now rests on a single transcription question -- one sign or two at r16:21 -- which an
+objective gap measurement on the image can settle (H63). No token, grade or class change; cipher_codes.tsv unchanged.
