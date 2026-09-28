@@ -2031,3 +2031,76 @@ unchecked.
 - next-step; use the MHS Adams Papers correspondence/letterbook calendar to find a publicly accessible copy of Adams to Armstrong, 27 Nov 1809 -- unchecked.
 
 No check-solved candidate (Ford's volume documents cipher transmission context and correspondence, not a printed decipherment of the Armstrong-Madison letter, its key, or the Livingston key).
+
+## Campaign step H25 (28 Sept 2026, 00:46-01:03 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01R2T5qwd7NBMWGnjRtj8ieX). Hypothesis H25: the
+intended correspondent, Monroe -- list the Armstrong-to-Monroe letters 1804-1808 in the digitised LOC Monroe Papers
+(mss33217), look at each for cipher, screen any coded page by digit signature against the target.
+
+**Route.** loc.gov's collection search does not index the Monroe Papers by correspondent (`?q=armstrong` returns 0);
+the reels are whole-reel items (Series 1 reel 3 = mss33217003, 1803 Oct 9-1807 Jan 16, 1159 frames; reel 4 =
+mss33217004, 1807 Jan 24-1812 Mar 12, 1161 frames), each frame at
+`tile.loc.gov/image-services/iiif/service:mss:mss33217:00R:HH00:FFFF/full/{pct:25|full}/0/default.jpg` (the H7 route;
+pct:25 = 666 px is enough to read a date line, full for reading groups). The letters were dated from the 1904 LOC
+*Calendar of the Papers of James Monroe* (archive.org papersofjamesmon00libr, OCR grepped): Armstrong to Monroe Dec
+1804 (two, one "24"), Feb 1806 (two, one 27 Feb), 30 May 1806, 9 July 1806, 4 Apr 1807 (to Monroe and Pinkney), 7 July
+1807; none in 1808 (Monroe was back in Virginia). The 1963 *Index* PDF (tile.loc.gov gdclccn 62060006) was fetched but
+its text layer could not be read here (no pdftotext; pypdf's crypto import is broken in this container) -- not used.
+Frames were found by date interpolation and contact sheets (about 160 frames looked at at pct:25, listed in
+`h25/MANIFEST.tsv`).
+
+**Armstrong-to-Monroe letters located: 6 of 8, all in clear (H at pct:25, no numeral group on any page):**
+
+| letter (1904 calendar) | reel:frames | what the frames show |
+|---|---|---|
+| Feb 1806 (first) | not located (between reel 3 f0700 and f0740; the run 700-739 is Monroe's own 2 Feb 1806 despatch to Madison, 12 pp, and Monroe letterbook pages) | -- |
+| 27 Feb 1806 | 3:0749-0751 | "Paris 27 feb 1806", one page, clear; docket f0751 "27 Feby 1806 Genl Armstrong" |
+| 30 May 1806 | 3:0852 | short Paris 30 May 1806 note, clear (signature not read at pct:25, M) |
+| 9 July 1806 | 3:0903-0907 | "Paris July 3 1806", four pages clear (mentions "my letters by Mr Skipworth"), address leaf "James Monroe Esq, Minister of the U.S., London" |
+| 4 Apr 1807 | 4:0166 | "Paris April 4th 1807, Gentlemen ... John Armstrong", one page, clear |
+| 7 July 1807 | 4:0302 | docket "J. Armstrong 7 July 1807"; the sheet photographed mirror-reversed, clear prose |
+| Dec 1804 (two) | not located (the reel-3 anchor sheet for frames 300-650 failed on a truncated download; not retried within the box) | -- |
+
+**Unlooked-for find, for H26 (Erving): a coded Erving-to-Monroe letter with a full interlinear period decode.** Reel 3
+frames 0740-0744: "Private, To James Monroe, Madrid Feby 5th 1806", the writer at Madrid who has "written you on the
+25 Oct, Nov 15 & 29" and encloses "the only letter which I have received from Mr Madison" -- George W. Erving, US
+chargé at Madrid, Monroe's protégé (signature on f0744 read at pct:25 as Erving's, M). Frames 0741-0743 carry numeral
+code groups inside clear prose, every group glossed above the line in a period hand: f0741 19 groups (1385 the, 1044
+con, 1280 duct, 1576 of, 995 French, 28, 1229 govern, 837 ment, 1786 will, 1365 take, 1094 she, 835 de, 1369
+liberation, 992 France; `h25/erving_1806-02-05_f0741_groups.tsv`, read at 1800 px, H for the digits, C for the glosses
+since they are the leaf's own), f0742 about 150 groups (569 to, 1426 in, 888/668 and, 169 he, 1190 with, 184 his, 1384
+that, 1310 be, 90 should, 182 him, 1592 this, 1393 they, 999 from, 1259 have, 1386 their, 934 our, 581 for, 361 not,
+1351.854.1426 Bow-do-in, 970 Floridas, 987 four, 648 millions, 794 dollars, 240 six, 134.1379 "Mr [name]";
+`h25/erving_1806-02-05_f0742_groups_M.tsv`, 115 pairs, grade M each -- one reader at 1800 px, to be re-read at native
+by a proper pass). Views of both frames are committed at 1800 px in `h25/`; refetch URLs in the manifest.
+
+**Screen against the target (rule 3, control-backed on a screen, not a solve):**
+- 0 of 21 Erving common-word values occur in the target's 369 groups (the 1385, to 569, of 1576, and 888/668, in 1426,
+  he 169, with 1190, his 184, that 1384, should 90, him 182, this 1592, they 1393, from 999, have 1259, their 1386, our
+  934, for 581, not 361, an 1549; be 1310 once, as 680 once). "the" alone: 4 of 19 groups on f0741; P(0 of 369 | that
+  rate) 1e-38, P at a conservative 5% 6e-9.
+- distinct-value overlap: 13 of Erving's 121 values as read occur among the target's 216 (11 among values >= 100),
+  against an independence null of 10.8 (p95 16) -- exactly chance.
+- digit signature: Erving units 0/1 share 0.05 (f0741, n 19) and 0.28 (f0742, n 115) vs the target 0.43; units 2/3/5/9
+  0.58 / 0.36 vs the target 0.12; Erving uses almost no groups under 100 (9, 21, 28, 90) where the target's ten most
+  frequent groups are all under 100.
+- Verdict: the Erving-Monroe private code of 1806 is not the target's code, control-backed on a screen; it is a
+  different design (values to about 1600, syllable and word entries mixed, one-part traces such as France 992 / French
+  995 and Bow 1351 / do 854 / in 1426, but govern 1229 / ment 637 and de 835 / liberation 1369 are not alphabetical --
+  a two-part or mixed table, not decided here).
+
+**What it changes.** For the target: the Monroe channel is screened clean for 6 of 8 letters (all clear), which lowers
+H25/H26's expected value for Monroe and leaves the Dec 1804 pair and the first Feb 1806 letter as the only unlooked
+items. For the repository: a US diplomatic private code of 1804-06 with about 200 known-plaintext pairs on three
+frames is a key source in its own right (KEY-OFFICES/KEY-DESIGN at close-out, `tools/design_prior.py`), and a test
+material for whether it is WE027 (Livingston's code, which Weber says Monroe also received) -- ARM3-LIVCODE's
+Livingston specimens (LOC Madison Papers, 1803-04) can be checked for 1385 = the and 569 = to directly. Filed as H29.
+Rule 10: nothing here is called new or first; the Erving letter is listed in the 1904 calendar and its decode is the
+period's own. No target token decoded, no class change.
+
+Requests: www.loc.gov 5 (collection/item JSON), tile.loc.gov about 175 frame fetches (pct:25) + 8 at full, all one at
+a time >= 1.6 s apart, no 429/403; archive.org 2 (1904 calendar OCR, advancedsearch). Cost: the get_session figure had
+not refreshed at 00:57 (still 8.72 from 00:43); this step's own work is about 170 small image fetches, 12 contact-sheet
+looks and 5 native looks by this runner, no subagent -- the row's estimate (4 USD) is what `--spend` records, with the
+parent's reconciliation to follow from get_session.
