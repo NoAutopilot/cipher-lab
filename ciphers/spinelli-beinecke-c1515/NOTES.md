@@ -1366,3 +1366,46 @@ single letter never, the pool often -- is the point.
 **Files:** HYPOTHESES.md rows; REQUEST.md sentence. **Cost:** CPU only, two background batteries of 45 and 60
 minutes on separate cores, no vision calls, no requests, no credentials -- recorded as 1.5 USD (the est). No
 AskUserQuestion, no other target touched.
+
+## Campaign step H21 (28 Sept 2026, 05:04-05:12 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S. Hypothesis H21: a same-hand plaintext corpus from Tommaso's plain 1519
+letters, sized to the step's 4-vision-call cap: two pages (the one-page 24 Jan 1519 letter, canvas 10867301; the 29
+May 1519 letter's p.[1], canvas 10867290), fetched once at the server's full size with `tools/iiif_lines.py` (2
+requests; the tool took the whole canvas, 4064x4848 and 3507x4834 px), cut into 12 and 24 line bands x 2 segments
+(debug overlays checked: every band on a text line, signature excluded), the two full-page sources deleted after
+cropping to keep images/ under 30 MB (20 MB now; the manifest keeps the source URLs), and two blind Sonnet
+transcription passes per page (4 calls, about 120k tokens each; semi-diplomatic, expansions in round brackets,
+uncertainties in square brackets): `passes/pl24_pass{A,B}.tsv`, `passes/pl29_pass{A,B}.tsv`.
+
+**Result: partial -- the Sonnet pass pairs do not reach the 60% gate at the word level; the agreed words are a
+spelling-habit sample, not a judge corpus.** `tools/reconcile_passes.py` (Needleman-Wunsch over words, brackets
+stripped) and a folded-letter comparison (v->u, i->j, letters only, difflib matching blocks over the longer pass):
+
+| page | lines | word-level exact agreement | folded-letter agreement | words both passes read alike | uncertainties A / B |
+|---|---|---|---|---|---|
+| 24 Jan 1519 (pl24) | 12 | 61/109 = **56.0%** | **85.2%** | 65 | 16 / 28 |
+| 29 May 1519 p.[1] (pl29) | 24 | 119/280 = **42.5%** | **78.6%** | 134 | 86 / 30 |
+| both | 36 | 180/389 = 46.3% | about 81% | **199 (134 distinct, 901 folded letters)** | |
+
+The disagreements are the ones a secretary hand produces for a reader that is not sure of it: expansions
+(p(rim)o / p(er)o, l(ette)r(e) / l(itte)ra), word division (la quale / Laquale), single letters in the same word
+(riferissi / riscrissi, Lurigho / Lurighe), and whole words on the bleed-through page. `corpus/tommaso_1519_plain_agreed.tsv`
+holds, per line, the words both passes read alike (grade AB per word; 199 words), with the passes as the record of
+the rest. What the sample already shows of the hand: u for v inside words (23 u, 11 v, the v word-initial), ch
+spellings (Lurigho, chareze, pocho), doubled letters kept (habbiamo, essendo, certissimo), the Latin formulae of the
+opening (Domino, honorando, S(anti)ta, N(ostro) S(igno)re) -- the register a judge corpus for this hand would need,
+at a tenth of the size the row asked for.
+
+**What this says for the campaign:** the same Sonnet reader tier that H29b/H29c showed to be the limit on the cipher
+signs is also the limit on the plain hand (56% and 42% at the word level against Opus's 89-97% on the signs), so the
+corpus row is worth finishing only with Opus readers (H21b) and only once there is a decode to judge; the letter's
+OWN plain text (p.[1] lower half from "La morte del Car[dinale]", and p.[2] around the two cipher lines) is the more
+useful plain transcription now, because it says what the letter is about around the cipher passage and could name
+the cribs the crib route lacks (H33). No reading, no class change, rule 10 wording.
+
+**Controls:** the pass-pair agreement figures (the transcription brief's 60% gate, missed at the word level; the
+letter-level figure reported beside it, not as a substitute). **Files:** 72 line crops `images/pl24_L*.jpg`,
+`images/pl29_L*.jpg` with manifest entries, the four pass files, `corpus/tommaso_1519_plain_agreed.tsv`.
+**Cost:** 4 Sonnet vision calls (about 490k tokens) plus this runner's turns -- recorded as 6.0 USD (the est). 2
+requests to collections.library.yale.edu (2 s apart). No credentials, no AskUserQuestion, no other target touched.

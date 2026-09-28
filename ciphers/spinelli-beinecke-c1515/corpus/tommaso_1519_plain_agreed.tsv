@@ -1,0 +1,41 @@
+# Words both blind Sonnet passes read alike (folded: v->u, j->i, letters only) in two plain pages of Tommaso Spinelli's hand,
+# Beinecke GEN MSS 109 Filza 163: 24 Jan 1519 (catalog 10844891, canvas 10867301) and 29 May 1519 p.[1] (10844888, canvas 10867290).
+# Campaign H21, 28 Sept 2026; passes in passes/pl24_pass{A,B}.tsv and pl29_pass{A,B}.tsv; semi-diplomatic, expansions in (); grade AB per word,
+# the disagreeing words are NOT here (see NOTES.md H21 for the agreement figures). A spelling-habit sample, not a judge corpus.
+page	line	agreed_words
+pl24	1	Domino /Andando S(igno)r Don Iohanni
+pl24	2	del secreto et
+pl24	3	presente suo oratore alla S(anti)ta· di N(ostro) S(igno)re per
+pl24	4	sua· S(anti)ta· et affectione ho
+pl24	5	ministri et servitori mi farli ogni
+pl24	6	honore et servitio et in casa
+pl24	7	Le possibile
+pl24	8	singulare et essendo persona di grande auctorita
+pl24	9	experientia et prudentia habbi molto a pro
+pl24	10	fittare alli negotij et quando el favore
+pl24	11	suo sono certissimo non volere
+pl24	12	XX. Ianuarij M.D.XIX
+pl29	1	di Bellarti a di al e(t) una
+pl29	2	do medici attendo l(i) habbiamo prese(n)tata et
+pl29	3	quanto videssi Dipoi m qui
+pl29	4	arrivo mons(igno)r di et da tutti Grandi et
+pl29	5	di castiglia et d'altri roani Corona
+pl29	6	che sono fu fuora della citta et
+pl29	7	del nuntio et in palazzo
+pl29	8	honore che poche sono potuta al re et
+pl29	9	di seguito pur di della morte
+pl29	10	mons(igno)r
+pl29	11	havuti al parigi et altri con li deputati
+pl29	12	si cosa di per co
+pl29	13	tenor et per la parte adversa
+pl29	14	et cosi non
+pl29	15	il agaltri ho particolari et
+pl29	16	fatta ciascuno francesi
+pl29	17	instantia li di qua promettendo
+pl29	18	di Borbona per trattare et
+pl29	19	A che per consideratione non parse
+pl29	20	di cavres ma ne amore
+pl29	21	Lassando nel loro primo parole et per
+pl29	22	perche chiamato mons(igno)r
+pl29	23	qui doveva venire posto a non
+pl29	24	ordini et non e parso ne di
