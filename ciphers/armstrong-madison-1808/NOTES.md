@@ -3042,3 +3042,43 @@ nothing here is called new or first.
 
 Vision: 1 of 4 subagent calls (Sonnet, about 135k tokens, 6.4 minutes) plus the runner's two looks at the frame.
 Requests: catalog.archives.gov 1. Cost: about 2 USD by H21's rate (`--spend` records 2 of the row's 3).
+
+## Campaign step H43 (28 Sept 2026, 14:33-14:50 UTC)
+
+Runner: campaign runner armstrong-madison-1808 (owner account, session_01BuquErzUYdSB116KPAM8qh, runner 3). Hypothesis
+H43: the Madrid legation cipher's value-to-gloss table, written down and entered in KEY-DESIGN.tsv so the design prior
+knows this 1806-1807 US private cipher. Offline, no vision.
+
+**Built:** `h43/build_key.py` (rerunnable, `--check`) -> `tools/data/uscodes-1800/key_legation_madrid_1807.tsv`, from
+the blind single-reader reads with period interlinear glosses: h32/legation_groups.tsv (H32/H33/H38, 1,050 groups) and
+h42/reads/f373L.tsv (H42, 129 groups). H26's letter (corr/erving1807_groups.tsv, the LOC copy) carries no glosses and
+adds nothing; its NARA original (M31 reel 12 frames 284-286) has pencilled decode words, unread. **520 values seen, 313
+glossed (561 glossed occurrences); grade C 21, M 292.** C = majority gloss attested at least twice and more than twice
+the runner-up (the two-thirds share first tried was rejected before use on the table: the reader's phrase alignment
+scatters 13 of 31 glosses of 133 over neighbouring words). C values: 69 in, 133 of, 244 to, 356 visit, 390 was, 408 his,
+553 not, 579 Portugal, 624 a, 628 peace, 878 they, 926 he, 1027 be, 1178 secretary, 1407 with, 1422 one, 1484 is,
+1578 that, 1651 the, 1657 the, 1661 prince. 1657 = the duplicates 1651 = the: H33 found 1657 is a misreading of 1651 in a
+faint hand (frames 389/390), so 1657 stays in the table as read and is flagged here, not merged. Every digit string is
+single-reader (M on digits whatever the gloss grade); some rows are misreads (numeral_max 7411 in a 1-1999 code).
+
+**Where it lives and why not `corr/legation_key.tsv` as the row said:** a key*.tsv in this folder would be the folder's
+only key, and tools/key_crossmatch.py's `compute_own_cts` would then pair it with the Armstrong target's own
+ciphertexts as its "own text" -- a false self-pair for a table that is not the target's (H38 MISS at n=1,030). It sits
+beside WE028 in `tools/data/uscodes-1800/` with `# home: none` header lines, and `tools/key_crossmatch.py`'s
+EXTRA_KEY_GLOBS gains `tools/data/uscodes-1800/key*.tsv` (only key-named files; WE028.tsv and THE972_*.tsv are not
+picked up). Offline tests: test_key_crossmatch, test_key_crossmatch_gate, test_design_prior all pass.
+
+**KEY-DESIGN.tsv** rebuilt (183 rows, 118 usable; `--check` current). The rebuild also picked up two spinelli files that
+another session had added without a rebuild (key_domnina_2016_atlasmap_v7.tsv, verify2/keymap_compare.tsv). The legation
+row: design family **code numbers** (313 codes, 312 valued, 306 words, 114 short values, 3 single letters -- no alphabet
+block among the values read), digit lengths 1:3, 2:29, 3:182, 4:99, no own ciphertext (home none).
+
+**design_prior.py on the target** (`--no-write`, ciphers/armstrong-madison-1808/ciphertext.txt, 404 tokens, 219
+distinct): multi-sign (homophonic/nomenclator/syllabary) plausible (d 0.66 vs null p05 0.69); code excluded (d 2.00 vs
+envelope 0.93); letter-for-letter excluded; shuffled-input false-positive rate 0.060; nearest keys Huntington
+Luzerne-Destouches 1781 (syllabary, d 0.49), van Beuningen-De Witt 1657, Thurloe Montagu. The prior's "code" exclusion
+agrees with the legation table's family and with H38's MISS; the legation table does not change the target's prior
+(it has no ciphertext signature for design_prior to compare). No reading of the target, no class change; rule 10: the
+glosses are the period clerk's decode of catalogued NARA despatches, nothing called new or first.
+
+Requests: none. Vision: 0. Cost: about 1.5 USD (`--spend` records 1.5 of the row's 2).

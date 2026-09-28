@@ -1,0 +1,324 @@
+# Madrid legation cipher ('Cypher of the Legation'), George W. Erving to James Madison, 1806-1807, NARA RG 59 M31 reel 12.
+# Value -> majority period interlinear gloss, rebuilt from blind single-reader reads of the decoded despatches (frames 389-390,
+# 403-409, 426-428, 373). Built by ciphers/armstrong-madison-1808/h43/build_key.py (do not edit by hand). Partial: only the
+# values used in those letters; glosses of a phrase spread over several groups are the reader's alignment. NOT the key of the
+# Armstrong 20 Feb 1808 letter (corr/screen.py MISS at n=1,030, H38).
+# office: US legation at Madrid (George W. Erving, secretary/charge d'affaires) -> James Madison, Secretary of State
+# years: 1806-1807
+# language: en
+# home: none
+# note: grade C = majority gloss attested >=2 times and more than twice the runner-up; M otherwise; digits single-reader
+code	value	grade	n_glossed	n_seen	runner_up	frames
+00	an	M	1	1		f408R
+5	these	M	1	1		f408R
+6	as	M	2	2	the:1	f403R
+07	peace	M	1	1		f403R
+9	thing	M	1	2		f403R,f428L
+12	accompany	M	1	1		f427L
+15	other	M	1	2		f373L,f403R
+21	would	M	1	1		f373L
+024	innocent	M	1	1		f404L
+26	one	M	2	2	occasions:1	f403R
+27	as	M	1	1		f409L
+33	remove	M	2	3	very:1	f403R,f408R
+34	of	M	1	2		f373L,f403R
+40	his	M	1	2		f403R,f404L
+43	by	M	1	1		f408R
+47	detected	M	2	2	advice:1	f403R,f428L
+53	object	M	1	1		f403R
+58	object	M	1	1		f427R
+63	court	M	1	1		f403R
+64	asturias	M	1	1		f403R
+65	and	M	1	1		f403R
+66	in	M	5	7	the:1;official:1	f403R,f409L,f427L,f428R
+68	then	M	1	3		f404R,f426R,f427R
+69	in	C	5	15	intention:1;instant:1	f373L,f404L,f408R,f409L,f426R,f427L,f427R,f428L,f428R
+71	consequence	M	1	3		f409L,f427R
+74	on	M	1	1		f427L
+76	smooth	M	1	1		f404R
+77	finish	M	1	1		f427L
+81	delay	M	1	1		f426R
+84	face	M	1	1		f409L
+87	deceive	M	1	4		f404L,f409L,f428R
+091	after	M	1	1		f403R
+97	the	M	2	8	on:1	f404L,f408R,f409L,f426R,f427R
+98	if	M	1	1		f403R
+100	prince	M	1	1		f404L
+101	approaching	M	1	1		f409L
+102	reconcile	M	1	2		f404R,f427L
+103	anticipate	M	1	1		f427L
+104	been	M	1	1		f403R
+105	the	M	2	2	emperor:1	f403R
+109	believe	M	1	1		f403R
+111	the	M	2	3	independence:1	f408R,f409L
+129	of	M	1	1		f404L
+130	prince	M	2	3	serveu(?):1	f403R,f404L,f427R
+131	counting	M	1	1		f403R
+133	of	C	31	49	the:4;peace:1	f373L,f390L,f403R,f404L,f408R,f409L,f426R,f427L,f427R,f428L,f428R
+134	several	M	3	3	offers:1;to:1	f404L,f427L
+135	prince	M	1	1		f403R
+137	power	M	1	2		f409L,f427R
+139	a	M	2	3	at:1	f426R,f427L
+148	reign	M	1	2		f404L,f427L
+149	is	M	2	4	protection:1	f403R,f404L,f427R
+151	no	M	1	1		f427R
+156	however	M	1	1		f428L
+157	in	M	2	5	life:1	f373L,f403R,f404L,f409L,f428R
+158	would	M	1	2		f403R,f409L
+163	the	M	1	4		f404R,f408R,f426R,f428R
+165	the	M	6	6	commit:1;mark:1	f373L,f403R,f404L
+168	father	M	1	1		f427L
+184	event	M	1	1		f404L
+188	travel	M	1	1		f426R
+200	asturias	M	3	3	of:1	f403R,f404L,f427L
+209	special	M	2	2	crime:1	f403R,f427L
+214	to	M	1	1		f404L
+217	would	M	2	2	ally:1	f428L
+218	worse	M	1	1		f427R
+224	regency	M	1	1		f403R
+226	to	M	1	3		f389R,f404R,f408R
+231	prince	M	1	1		f404L
+239	learn	M	1	1		f408R
+243	james	M	1	1		f404L
+244	to	C	14	25	the:2;its:1	f373L,f403R,f408R,f409L,f426R,f427L,f427R,f428L,f428R
+250	better	M	1	3		f373L,f408R,f427L
+252	had	M	1	2		f427L
+253	or	M	2	6	importance:1	f403R,f408R,f409L,f427R
+255	that	M	1	2		f428L,f428R
+268	fine	M	2	4	lucien:1	f389R,f403R,f427R
+274	to	M	1	1		f403R
+276	out	M	1	2		f408R,f427L
+277	the	M	1	5		f408R,f427R
+293	means	M	1	1		f427R
+296	the	M	1	1		f409L
+300	and	M	1	2		f373L,f404L
+301	quick	M	1	3		f373L,f409L,f427L
+310	that	M	2	4	received(edge):1	f403R,f404R,f427L,f428R
+312	by	M	1	2		f409L,f427L
+315	step	M	1	1		f427L
+324	such	M	3	3	design:1	f408R,f427L,f427R
+334	his	M	1	1		f403R
+335	entirely	M	1	1		f409L
+347	has	M	1	2		f426R,f427R
+350	visits	M	1	1		f404L
+356	visit	C	2	3		f427L,f427R
+359	ungracious	M	1	1		f427R
+360	under	M	1	1		f403R
+368	best	M	1	1		f403R
+378	upon	M	1	1		f409L
+380	war in	M	1	6		f373L,f408R,f426R,f427L,f427R
+381	plea	M	1	3		f427L,f428R
+383	made	M	1	1		f408R
+384	this	M	1	1		f373L
+387	of	M	1	1		f373L
+390	was	C	2	5		f389R,f404L,f408R,f409L,f427R
+399	his	M	1	1		f404R
+400	his	M	4	5	peace:1;rupture:1	f373L,f403R,f408R,f426R
+404	have	M	1	1		f404L
+406	of	M	2	2	man:1	f427R
+408	his	C	7	11	army:1;her:1	f373L,f404L,f408R,f426R,f427L,f427R,f428L
+422	into	M	1	3		f426R,f427R,f428L
+424	ambition	M	5	7	the:1;of:1	f403R,f408R,f427L,f428L
+429	now	M	1	1		f408R
+432	which	M	1	3		f373L,f409L
+448	dynasty	M	1	1		f409L
+449	these	M	1	2		f403R,f408R
+452	assures	M	1	1		f403R
+463	marriage	M	3	3	to:1	f426R,f427L
+466	will	M	1	1		f404L
+469	mand	M	2	2	man:1	f426R,f428R
+470	for	M	2	2	want:1	f373L,f427L
+478	for	M	1	2		f373L,f408R
+483	those	M	1	1		f403R
+484	is	M	1	1		f403R
+489	to	M	1	1		f408R
+490	destroy	M	3	3	the:1;dispatch:1	f408R,f409L,f428R
+493	departure	M	1	1		f426R
+509	for	M	1	3		f403R,f409L,f427R
+522	two	M	1	1		f408R
+524	very	M	1	1		f403R
+525	territory	M	2	14	here:1	f373L,f389R,f409L,f426R,f427L,f427R,f428L
+538	examination	M	1	1		f404L
+543	and	M	1	2		f403R,f427L
+553	not	C	4	5	will_not_f:1	f404R,f408R,f409L,f427R,f428L
+571	president	M	1	1		f373L
+579	portugal	C	2	2		f373L,f427R
+580	since	M	1	1		f409L
+582	political	M	1	1		f409L
+584	the	M	2	2	or:1	f403R,f404R
+595	my	M	1	3		f428L,f428R
+601	queen	M	1	1		f403R
+604	charged	M	1	1		f427L
+605	change	M	1	2		f409L,f428R
+608	chosen	M	1	1		f427R
+618	the	M	1	3		f408R,f409L,f427L
+622	moment	M	1	2		f373L,f428R
+623	abandon	M	1	1		f409L
+624	a	C	14	21	vengeance:1;and:1	f373L,f403R,f408R,f409L,f426R,f427L,f427R
+625	believe	M	1	1		f404L
+628	peace	C	5	7	prince:1;p.:1	f403R,f404L,f408R,f409L,f427L
+636	particular	M	1	1		f408R
+638	popular	M	1	1		f403R
+641	buonaparte	M	1	1		f403R
+642	the	M	2	2	proposed:1	f427L
+651	of	M	2	3	emperor:1	f403R,f404L,f427L
+653	new	M	1	1		f409L
+661	the	M	1	1		f403R
+672	attended	M	1	1		f427L
+674	which	M	2	3	lay:1	f409L,f428R
+678	spain	M	1	1		f408R
+680	by	M	1	1		f404L
+684	castle	M	1	1		f404L
+700	and	M	1	1		f409L
+702	doubt	M	1	1		f403R
+704	from	M	2	5	that:1	f390L,f408R,f426R,f427L
+709	full	M	1	3		f408R,f426R,f427L
+718	most	M	1	1		f427L
+720	more	M	1	1		f373L
+723	had	M	1	2		f427L,f428L
+731	grounds	M	1	1		f409L
+733	roland	M	1	1		f403R
+737	offered	M	1	4		f373L,f408R,f427L,f427R
+738	emperor	M	2	6	as:1	f373L,f408R,f426R,f427L
+742	gala	M	2	7	at:1	f389R,f408R,f409L,f426R,f427L,f427R,f428L
+744	the	M	1	1		f403R
+746	proportion	M	1	1		f403R
+751	crisis	M	1	1		f409L
+756	security	M	1	1		f427R
+800	minds	M	1	1		f403R
+803	followed	M	1	1		f428L
+805	of	M	1	1		f373L
+814	but	M	1	1		f404R
+824	such	M	1	1		f403R
+825	at	M	1	2		f389R,f409L
+830	congress	M	1	1		f404L
+831	wife	M	1	2		f389R,f426R
+832	favorably	M	1	1		f373L
+842	a	M	1	1		f427R
+846	be	M	1	1		f404L
+870	their	M	1	2		f390L,f409L
+872	then	M	1	2		f403R,f427R
+874	he	M	1	2		f427L,f427R
+877	circumstances	M	2	3	these:1	f408R,f409L
+878	they	C	2	3		f373L,f409L
+884	this	M	1	4		f408R,f427L,f427R
+885	acquitted	M	2	2	quite:1	f427L,f427R
+901	night	M	1	1		f404L
+903	to	M	1	3		f403R,f427R,f428R
+906	could	M	2	2	and:1	f373L,f427R
+908	sent	M	1	1		f404L
+914	him	M	1	1		f404R
+915	com	M	1	2		f409L,f426R
+916	at	M	3	6	as:1;formerly:1	f373L,f390L,f409L,f427L,f427R
+917	of	M	2	2	tho:1	f427R
+921	held	M	1	1		f427L
+926	he	C	11	17	not:1;paid:1	f373L,f403R,f404L,f408R,f427L,f427R,f428L,f428R
+935	great	M	1	1		f373L
+938	him	M	1	2		f409L,f427L
+939	com	M	1	1		f408R
+950	of	M	1	1		f428R
+958	colleagues	M	1	1		f408R
+960	royal	M	1	1		f427L
+967	with	M	1	1		f427L
+968	beginning	M	1	4		f426R,f427L
+975	by	M	2	7	the:1	f408R,f409L,f427L,f428L,f428R
+982	protection	M	2	3	connect:1	f373L,f404L,f428L
+1003	prince	M	2	2	misfortunes:1	f373L,f403R
+1022	29th	M	1	1		f404L
+1024	behaviour	M	1	1		f408R
+1027	be	C	7	10	been:1;become:1	f373L,f427L,f427R,f428L,f428R
+1033	he	M	1	1		f403R
+1040	head	M	1	1		f403R
+1051	the	M	1	1		f404L
+1103	such	M	1	1		f408R
+1112	nature	M	1	1		f427R
+1114	himself	M	8	13	to:1;that:1	f373L,f403R,f408R,f409L,f426R,f427L,f428L,f428R
+1118	here	M	2	3	who:1	f373L,f426R,f428L
+1136	disavowed	M	1	1		f427L
+1147	i	M	2	6	between:1	f408R,f427L,f428L,f428R
+1166	us	M	1	1		f428R
+1169	belief	M	1	1		f408R
+1178	secretary	C	2	2		f427R
+1189	whole	M	1	1		f408R
+1201	against	M	1	1		f427L
+1203	it	M	1	4		f404L,f409L,f428R
+1207	in	M	1	1		f428L
+1210	spain	M	1	3		f373L,f408R,f426R
+1212	speaks	M	1	1		f373L
+1218	some	M	1	1		f427R
+1219	so	M	3	4	to:1	f427L,f427R
+1222	to	M	1	1		f404R
+1240	which	M	1	1		f428R
+1246	plausible	M	1	2		f427L,f428R
+1280	may	M	1	2		f427R,f428L
+1286	friend	M	1	2		f390L,f408R
+1290	he	M	2	4	renewing:1	f373L,f427L,f428R
+1297	at	M	1	2		f373L,f426R
+1298	to	M	2	7	of:1	f408R,f409L,f426R,f427L,f427R
+1299	the	M	1	2		f409L
+1319	politician	M	1	1		f403R
+1331	his	M	1	1		f404L
+1340	expectation	M	2	4	an:1	f373L,f408R,f409L,f427R
+1341	a	M	1	1		f409L
+1343	oppose	M	5	12	and:1;&:1	f373L,f408R,f409L,f427L,f427R,f428R
+1344	are	M	1	1		f427R
+1348	him	M	1	1		f409L
+1362	him	M	5	14	subvert:1;will:1	f373L,f408R,f409L,f427L,f427R,f428L
+1367	shot	M	1	1		f403R
+1370	she	M	1	2		f428L
+1373	several	M	2	2	severity:1	f373L,f404L
+1380	confidence	M	2	3	confidential:1	f409L,f427R
+1386	concern	M	1	1		f373L
+1387	ostentatiously	M	2	3	conducted:1	f373L,f409L,f427R
+1399	presumtuous	M	1	1		f427R
+1407	with	C	5	6	their:1	f373L,f390L,f426R,f427L,f427R
+1411	will	M	3	9	the:1	f373L,f408R,f409L,f426R,f427L
+1413	the	M	1	2		f373L,f426R
+1419	is	M	1	3		f427L,f428R
+1422	one	C	2	2		f408R,f427R
+1423	lull	M	1	2		f427R
+1443	finished	M	1	1		f404L
+1451	the	M	1	2		f404L,f427L
+1453	ing	M	1	1		f426R
+1463	brother	M	1	1		f427R
+1473	keep	M	1	2		f390L,f427L
+1478	justifiable	M	1	1		f428R
+1480	italy	M	1	1		f427R
+1481	its	M	9	18	it:2;destroy:1	f373L,f408R,f409L,f426R,f427L,f427R,f428L,f428R
+1484	is	C	4	7	deceived:1	f408R,f409L,f427R,f428R
+1494	incapable	M	3	3	really:1;alleging:1	f403R,f404L,f427L
+1497	all	M	2	5	the:1	f408R,f427L,f427R,f428L
+1509	which	M	1	1		f404L
+1512	lay	M	2	2	before:1	f426R,f428R
+1521	these	M	3	7	of:1;been:1	f408R,f426R,f427L,f427R
+1524	and	M	1	2		f409L,f427L
+1530	that	M	1	1		f403R
+1541	example	M	1	1		f428R
+1578	that	C	6	10	he:1;a:1	f403R,f408R,f409L,f426R,f427L,f428R
+1583	its	M	1	1		f409L
+1584	intention	M	1	2		f408R,f426R
+1586	by	M	1	3		f404L,f408R,f427L
+1588	temptation	M	2	2	intended:1	f427L,f428R
+1589	stated	M	2	2	from:1	f427L
+1593	to	M	1	1		f427L
+1596	talley	M	1	2		f426R,f427R
+1599	presence	M	1	1		f426R
+1610	militia	M	1	1		f408R
+1643	promises	M	1	1		f373L
+1645	new	M	1	1		f409L
+1651	the	C	25	45	emperor:2;great:1	f373L,f390L,f403R,f409L,f426R,f427L,f427R,f428R
+1653	produce	M	1	1		f409L
+1654	project	M	1	1		f426R
+1657	the	C	6	14	of:1	f408R,f427L,f427R
+1661	prince	C	3	4		f373L,f408R,f409L,f427L
+1664	prince	M	1	1		f408R
+1680	by	M	1	2		f404R,f427L
+1683	and	M	1	2		f408R,f409L
+1686	a	M	4	6	body:1;these:1	f408R,f409L,f426R,f427L,f427R
+1688	over	M	2	2	be:1	f404R,f427R
+1696	an advice	M	1	2		f373L,f428L
+1698	embassador	M	2	3	advice:1	f408R,f427R,f428L
+1801	prince	M	1	1		f404L
+1851	the	M	1	2		f404L,f427L
+1861	of	M	1	1		f404L
+7411	this	M	1	1		f404R

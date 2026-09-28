@@ -87,7 +87,10 @@ EXTRA_KEY_FILES = ['tools/keys/key60.tsv']  # published Bourdeau/Tomokiyo table 
 # a hand-checked home), these are discovered by glob and carry their own metadata in header comment lines
 # ('# office:', '# years:', '# language:', '# home:') since most have no ciphers/ folder to read a NOTES.md
 # from at all -- see extra_key_header() and key_meta() below.
-EXTRA_KEY_GLOBS = ['sources/cryptiana/keys/*.tsv']
+# H43 (armstrong campaign, 28 Sept 2026): period US tables rebuilt from glossed usage live beside WE028 in
+# tools/data/uscodes-1800/; only key*.tsv files there are keys (WE028.tsv/THE972_*.tsv are the lane's reference
+# tables, not discovered), each with its own '# home: none' header so no self-pair with an unrelated target.
+EXTRA_KEY_GLOBS = ['sources/cryptiana/keys/*.tsv', 'tools/data/uscodes-1800/key*.tsv']
 # EXTRA_KEY_GLOBS' own directory also holds registry files that are not key tables at all (TEXT-QUEUE.tsv,
 # IMAGE-QUEUE.tsv, MANIFEST.tsv -- the U1b/U2 job outputs, CRYPT-KEYS-A) -- skip them by exact basename rather
 # than trying to make KEY_EXCLUDE's scratch-word list (draft/candidate/atlas/...) cover every registry name a
