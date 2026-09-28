@@ -1,0 +1,16 @@
+# X: a "4" whose stem continues well below the crossbar into a closed triangular loop low on the stem (a "4" over a "b"/triangle). Y: a "4" whose stem has an open hook or "r/2"-like curl to the right at or just under crossbar level, with no low closed triangle.
+tile	form	note
+1	X	triangle loop low under crossbar
+2	Y	open hook right at crossbar level
+3	Y	open curl right, no low triangle
+4	Y	faint; hook right high on stem
+5	X	closed triangle low on stem
+6	Y	curl right at crossbar level
+7	X	triangle loop below crossbar
+8	Y	open hook right, stem free below
+9	Y	curl right, no triangle
+10	X	triangle loop low on stem
+11	X	faint; low triangle visible
+12	X	closed triangle under crossbar
+13	X	faint; triangle below crossbar
+14	Y	hook right at crossbar level

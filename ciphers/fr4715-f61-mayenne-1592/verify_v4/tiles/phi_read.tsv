@@ -1,0 +1,17 @@
+# X: two round loops side by side (o-o) joined low, with a single long descender from the join and nothing rising above; Y: two small loops side by side (oo/theta-theta) with no descender and no ascender; Z: a single loop pierced by a vertical stem that rises above it into a small head loop and descends below (phi-like with ascender).
+tile	form	note
+1	Y	loop pair on line, no stem seen
+2	Z	stem through loop, small top loop
+3	Z	middle sign, stem rises above loop
+4	Z	heavy phi with top loop
+5	Z	top loop above pierced loop
+6	X	o-o pair, descender from join
+7	Z	second sign, head loop above
+8	Z	pierced loop, stem above and below
+9	Z	heavy blot, stem up and down
+10	Z	head loop above, long descender
+11	Z	stem rises through loop
+12	X	o-o pair with descender only
+13	Z	top bump above loops, descender; uncertain
+14	X	loop pair with descender from middle
+15	Y	two loops, no stem

@@ -1,0 +1,7 @@
+S1 L01 '--avec' -> CROSS:- C6:- C43:a INF:v PHI:e 4TRI:c
+S2 L03 'estca-p-able' -> PHI:e VBAR_B:s VBAR_A:t 4TRI:c C43:a CA:- 4TRI:p C6:- LOOPBAR:^ C43:a SBS:b EBR:l
+S3 L05 '---trop--avance-es' -> LOOPSTEM1:- CH:- VBAR_A:t PHI:r SBS:o 4TRI:p CA:- CA:- C43:a INF:v C43:a C6:^ C43:n 4TRI:c PHI:e LL:- PHI:e VBAR_B:s
+S4a L07 'jal-ous-i' -> ZHOOK:j BETA:a EBR:l C6:- SBS:o INF:u VBAR_B:s CROSS:- ZHOOK:i
+S4b L08 'ea-ubeau--pere' -> PHI:e C43:a C6:- INF:u SBS:b PHI:e C43:a INF:u C6:- CA:- 4TRI:p PHI:e PHI:r PHI:e
+S5 L11 'melente-noit' -> BETA:m PHI:e EBR:l PHI:e C43:n VBAR_A:t PHI:e 4STEM:- 4PI:n SBS:o ZHOOK:i VBAR_A:t
+firm classes inside spans (class, Tomokiyo char; '-' his dash, '^' skipped by the DP): C6/-:5 C6/^:1 INF/u:3 INF/v:2 VBAR_B/s:3

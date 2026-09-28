@@ -1,0 +1,37 @@
+# f.61r under key_period_v4.tsv, two-way form (VERIFY-F61-V4, 28 Sept 2026). firm letter plain | [a/b] period set, no choice made | <CLASS> no period pair.
+# 'T:' rows: Tomokiyo's markup (published, his tentative reading, sources/cryptiana) set under the signs by test_period_key's DP; '-' his dash, '.' a sign outside his span or skipped.
+
+L01  <CROSS> e   [a/n] u   [e/r] [c/p/t] r   <CA> [e/r] [t/s] [d/q/i] [d/a/q/n]
+  pos 1       2   3     4   5     6       7   8    9     10    11      12       
+T:S1  -       -   a     v   e     c       .   .    .     .     .       .           (his markup '--avec')
+
+L02  [e/r] [e/q/i/p/r/s/t]
+  pos 1     2              
+
+L03  <CA> <LOOPBAR> r   [e/r] s   [t/s] [c/p/t] [a/n] <CA> [c/p/t] e   <LOOPBAR> [a/n] [o/b/e] [l/s/a]
+  pos 1    2         3   4     5   6     7       8     9    10      11  12        13    14      15     
+T:S2  .    .         .   e     s   t     c       a     -    p       -   .         a     b       l         (his markup 'estca-p-able')
+
+L04  <LOOPBAR> [e/q/i/p/r/s/t]
+  pos 1         2              
+
+L05  [q/s] [e/m] [t/s] [e/r] [o/b/e] [c/p/t] <CA> <CA> [a/n] u   [a/n] e   [a/n] [c/p/t] [e/r] <LL> [e/r] s  
+  pos 1     2     3     4     5       6       7    8    9     10  11    12  13    14      15    16   17    18 
+T:S3  -     -     t     r     o       p       -    -    a     v   a     .   n     c       e     -    e     s     (his markup '---trop--avance-es')
+
+L07  <CA> <LOOPBAR> <ZHOOK> [m/s] [l/s/a] e   [o/b/e] u   s   <CROSS> <ZHOOK>
+  pos 1    2         3       4     5       6   7       8   9   10      11     
+T:S4a .    .         j       a     l       -   o       u   s   -       i         (his markup 'jal-ous-i')
+
+L08  [e/r] [a/n] e   u   [o/b/e] [e/r] [a/n] u   e   <CA> [c/p/t] [e/r] [e/r] [e/r]
+  pos 1     2     3   4   5       6     7     8   9   10   11      12    13    14   
+T:S4b e     a     -   u   b       e     a     u   -   -    p       e     r     e       (his markup 'ea-ubeau--pere')
+
+L10  [l/s/a] <CA> [e/r] [t/s] [e/r] [o/b/e] s   u   <CA> e   [o/b/e] <CA> e  
+  pos 1       2    3     4     5     6       7   8   9    10  11      12   13 
+
+L11  [m/s] [e/r] [l/s/a] [e/r] [a/n] [t/s] [e/r] [n/a/c/e] [d/a/q/n] [o/b/e] <ZHOOK> [t/s]
+  pos 1     2     3       4     5     6     7     8         9         10      11      12   
+T:S5  m     e     l       e     n     t     e     -         n         o       i       t       (his markup 'melente-noit')
+
+runs of >= 3 consecutive firm letters: none

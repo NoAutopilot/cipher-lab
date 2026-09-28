@@ -1,0 +1,12 @@
+v3: 99 signs, firm 14 (C 10, C+ 4) / two-way+ 65 / unread 20; M set sizes 2:19 3:35 4:9 7:2
+v4: 99 signs, firm 20 (C 10, C+ 10) / two-way+ 59 / unread 20; M set sizes 2:36 3:18 4:3 7:2
+grade band changed: 6
+  L01/4: INF u/e M -> INF u C+
+  L05/10: INF u/e M -> INF u C+
+  L07/8: INF u/e M -> INF u C+
+  L08/4: INF u/e M -> INF u C+
+  L08/8: INF u/e M -> INF u C+
+  L10/8: INF u/e M -> INF u C+
+v4 firm tokens by class: C6=e:8 ELOOP=r:2 INF=u:6 VBAR_B=s:4
+key_period_v3.tsv INF: fr.3982 f.101r u 31/35; fr.3982 f.101r - 7/35; fr.3984 f.188r/f.184r u 21/38; fr.3984 f.188r/f.184r - 4/38; fr.3984 f.188r/f.184r e 4/38; fr.3984 f.188r/f.184r h 3/38; fr.3984 f.188r/f.184r l 2/38; fr.3984 f.188r/f.184r r 2/38; fr.3984 f.188r/f.184r v 2/38; fr.3984 f.274r u 16/17
+key_period_v4.tsv INF: fr.3982 f.101r u 130/156; fr.3982 f.101r h 10/156; fr.3982 f.101r - 7/156; fr.3982 f.101r r 4/156; fr.3982 f.101r n 3/156; fr.3982 f.101r c 2/156; fr.3982 f.101r q 2/156; fr.3982 f.101r t 2/156; fr.3984 f.188r/f.184r u 31/50; fr.3984 f.188r/f.184r - 4/50; fr.3984 f.188r/f.184r e 4/50; fr.3984 f.188r/f.184r h 3/50; fr.3984 f.188r/f.184r r 3/50; fr.3984 f.188r/f.184r v 3/50; fr.3984 f.188r/f.184r l 2/50; fr.3984 f.274r u 16/17

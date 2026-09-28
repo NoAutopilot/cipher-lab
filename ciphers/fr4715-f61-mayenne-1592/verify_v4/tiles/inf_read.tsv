@@ -1,0 +1,17 @@
+# X: two joined o-loops side by side ("oo") with no descender or stem; Y: a single loop with a vertical stroke passing up through its top and descending below the line (phi-like); Z: three loops in a row ("oqo") with a descender hanging from the middle loop only, stem not rising above it.
+tile	form	note
+1	Z	three loops, descender under middle
+2	X	faint oo, no stem
+3	X	oo, no descender
+4	Y	loop with stem through and below
+5	X	oo at tick; stem sign further right
+6	X	faint oo on line
+7	X	oo, no stem
+8	X	oo joined to stroke
+9	X	oo, no descender
+10	X	faint oo, no stem
+11	Z	oqo, middle descender
+12	X	dark oo run, uncertain, crowded
+13	Z	faint oqo, middle descender
+14	X	oo on crossing stroke
+15	Y	phi-like loop with through stem

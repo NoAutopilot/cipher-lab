@@ -1,0 +1,5 @@
+sbs: targets 10/10 = 1.00 agree with the v4 relabel; decoys 5/5
+phi: targets 10/10 = 1.00 agree with the v4 relabel; decoys 5/5
+inf: targets 10/10 = 1.00 agree with the v4 relabel; decoys 5/5
+4tri: targets 14/14 = 1.00 agree with the v4 relabel
+f61: targets 12/12 = 1.00 agree with the v4 relabel
