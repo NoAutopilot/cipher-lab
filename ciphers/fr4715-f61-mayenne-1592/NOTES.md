@@ -1862,3 +1862,24 @@ separates -- and only a partial control for the method: it shows the sort does n
 reader's groups are driven by something else (hand, the third loop), but the truth for e/r is not known to be one
 glyph. The clean one-symbol control is the table's d/q column (H75). H65-H70 stand on their own permutation nulls.
 No reading, no class change.
+
+## Campaign step H73 (28 Sept 2026, 14:47-14:49 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs)
+
+a vs n under the readers' C43 (the "43" glyph) on the family leaves, where the table draws a and n as two symbols and
+H24/H24b's sorts on f.61/f.108r split the hands instead. Pre-registered and pushed 57ff9194 before the call:
+`build-pair NATIVE C43 a n 73 h73` (f.101r 10+10, f.188r 9+9), 38 tiles, a 43-shape prompt (`scripts/PROMPTS.md`
+"H73"), the statistic stratified by leaf (`score-pair ... --strat`: best match within each leaf, summed; labels permuted
+within leaf) so a hand split cannot score. One blind Opus vision call; no tile none.
+
+| reader's group | a | n |
+|---|---|---|
+| A 4 + open r/z/7 zigzag | 10 | 11 |
+| B 4 + single closed bowl | 4 | 7 |
+| C 4 + 3-like double curve | 5 | 1 |
+
+Stratified observed 23/38, permutation P = 0.64, p95 26/38 -> **GATE FAIL** (`scripts/f61pair_h73_result.txt`,
+`--check` OK). The reader's groups cut across both hands (its own note: "the ink ... cuts across all three groups") and
+across a/n. In the two glossed hands the period decipherers write a and n under one 43 glyph that a free shape sort
+does not separate; with H24b this is the second instrument on the question, so a vs n is logged untestable by a blind
+shape sort (rule 3's two-attempt paragraph), and the table's two drawn a/n symbols stay unmatched to any hand. H74
+(e vs r with the stratified statistic) is dropped by its own condition (skip if H73 FAILs). No reading, no class change.
