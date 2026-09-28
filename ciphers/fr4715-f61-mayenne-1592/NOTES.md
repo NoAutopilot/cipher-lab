@@ -3473,7 +3473,7 @@ of f.61's brackets are B. Scope: the form test used 11 tiles from rows L13-L19, 
 coded EBR_B by both readers). Two hands (Desportes; f.61's), one form, one cell: a verifier's question whether that licenses grading
 f.61's form-B brackets l at C. Not merged, no class change.
 
-## Campaign steps H172 and H176 (28 Sept 2026, 23:12-23:11 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- answered from the finding aid and Tomokiyo
+## Campaign steps H172 and H176 (28 Sept 2026, 23:09-23:11 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- answered from the finding aid and Tomokiyo
 
 The BnF finding aid on disk (`sources/bnf-aem/cc504266_francais3974-3995.html`, fr.3984 section) gives items 83-90:
 - **Fol. 175 = item 83, "Déchiffrement de la lettre portée sous le n° 74"**, where item 74 (fol. 153) is "Lettre, avec chiffre et
