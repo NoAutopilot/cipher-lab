@@ -1,0 +1,7 @@
+# espagnol142-mercy-1648 wordcode seed 1 restarts 4 28 Sept 2026 00:32 UTC; control mean 0.852 (0.808-0.904); score -1231.158
+# {"restart_scores": [-1231.2, -1356.7, -1365.3, -1433.5], "score_per_token": -2.3585, "context_runs": 5, "code_tokens_decoded": 2, "name_types": 0, "code_words": [["de", 2]], "ctx_share_on": 1.0, "err": 0.047, "vocab_k": 6, "common_a": 0, "code_share": 0.054, "target_code_share": 0.015, "code_types": 6, "extra_code_names": 0, "control_types": 39, "del": 15, "ins": 11, "code": 6, "per_class": {"letters": 0.921, "codes": 0.607, "n_letters": 494, "n_codes": 28, "codes_in_wordlist": 0.964, "codes_hapax": 0.0, "n_hapax": 3, "codes_repeated": 0.68, "n_repeated": 25}}
+alandoseestasarlasensalcaina
+deladiioesadesdeireosesdela
+suieelaueniasenioscarauienesonauledeeilassecales
+casareusaeleoesaieressenelelestordetrandentoriseeneecuradlentirisarasuslare DE lasorcarayoenseeeltoansartasdesreensoauieuansenestaslescrecondreesyesesecerleturaseleiantenenauielcaestresloldeltresdeunaanteroaendosotremeiuloentessonuiesendo DE uenessalealarelasorsuuierraensariaedellasuieserracersineladoreptnenssuoipaseralassenienoentarotratantaientedeuieaaleiantadacaidolasensiliiarleiaarotra
+ssesensiueseelaritodetenertaiente

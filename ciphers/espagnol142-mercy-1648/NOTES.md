@@ -1368,3 +1368,29 @@ segmentation different from ours); they change no token.
 **Side observation, no grade change:** all three clear-text full stops are followed by cipher 13, which key.tsv reads
 y ("y ..." opening the sentence, 13 = y is the M2 correction from Y8's s), the commonest sentence opener in a letter
 of this register -- an independent consistency point for 13 = y, logged for the verifier, not a new grade.
+
+## Campaign step H5 (2026-09-28 00:28-00:3x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** `tools/family_run.py --family wordcode` (the letter-or-word nomenclator family built for
+Salviati) with the six nomenclature-range types (48, 52, 65, 72, [MARK:box], [MARK:frac]; 8 of 522 tokens) as the
+code-capable types (given a `^c` mark suffix so `codes=marked` selects exactly them), the cipher as its five real
+runs merged across line ends (`families/h5/runs.txt`: 28, 27, 48, 386, 33 tokens -- the line-by-line runs the tool
+would otherwise use break words at every line end), and the clear words on each side of every run as context
+(`families/h5/context.tsv`). Control first (3 seeds), target once, es17 corpus, 4 restarts, err 0.047 (the
+transcription's own two-pass disagreement). Row in `HYPOTHESES.md`; decode in `families/wordcode-1-*.txt`. No hosts,
+no subagents. 82 s.
+
+**Control: blended 0.852 (0.808-0.904), gate 0.6 met -- but per class:** letters 0.86 / 0.82 / 0.92; codes 0.000 (n=11),
+0.000 (n=7), 0.607 (n=28); hapax codes 0.000 on every seed, repeated codes 0.68 on the one seed that had 25 of them.
+The target's code-capable tokens are 8, five of the six types occurring once or twice. **So the family has no power on
+exactly the class the hypothesis asks about (CLAUDE.md rule 3, the unbalanced-class paragraph): the gate passed on
+the letters alone.** This is a control-backed non-test for the word-code question at this N and this code count,
+not a negative.
+
+**Target (for the record only):** best score -1231.2 (restarts -1231.2, -1356.7, -1365.3, -1433.5), judge FAIL
+(-1.091 vs real_p05 -0.894), two code tokens decoded, both to "de"; the letter decode is well below the plain
+homophonic anneal's (-1154.3 / -1160.0), i.e. the extra word-code freedom buys nothing and the family's own
+letter solver is weaker than homophonic_anneal on this stream. Whether 48, 52, 65, 72 and the boxed 101 are word
+codes stays open on the design evidence of H2 (their range and the box) alone; the instrument that could settle it
+is a period key or a sibling letter reusing the same codes (H7, H8), not a further anneal. No reading change, no
+grade change.
