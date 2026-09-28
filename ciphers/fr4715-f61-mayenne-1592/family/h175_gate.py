@@ -8,7 +8,9 @@ import h170_gate as g
 P = f"{HERE}/passes"
 def main():
     key = g.load_key(); out = []
-    cand = "".join(g.fold(r["text"]) for r in g.rd(f"{P}/f177r_clearA_h175.tsv"))
+    rows = g.rd(f"{P}/f177r_clearA_h175.tsv"); l1 = rows[0]["text"]
+    l1 = l1.split("/", 1)[1] if "/" in l1 else (l1.lower().split("pere", 1)[1] if "pere" in l1.lower() else l1)   # salutation dropped (amendment)
+    cand = g.fold(l1) + "".join(g.fold(r["text"]) for r in rows[1:])
     f175 = "".join(g.fold(r["text"]) for r in g.rd(f"{P}/f175r_clearA_h170.tsv"))
     w184 = [r["word"] for r in g.rd(f"{P}/f184r_clear_rec.tsv")]
     out.append(f"fol. 177r letters read {len(cand)}"); allp = True
