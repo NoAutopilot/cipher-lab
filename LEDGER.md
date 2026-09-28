@@ -1309,3 +1309,7 @@ the end of every wake.
 | 28 Sept 2026 | F61-FAMILY-6 | session_01TPNoYGTE6dLBPfyEgZTLAc | owner | Opus 5.5 | cap 40 | running from 15:04 | H52 key v4 on the H65-H77 splits |
 | 28 Sept 2026 | DECODE-OPEN | session_015RJ8kumxcx2XKtHHU1zzsU | owner | Opus 5.5 | 7.56 | done 15:11, archived | access works; Mercy register ruled out |
 | 28 Sept 2026 | CHECK-SOLVED-WEB | session_01Pd5PCGRBn6X3F958dK4qVb | owner | Opus 5.5 | cap 20 | running from 15:21 | web/blog check on three campaigns; intake gate fix |
+| 28 Sept 2026 | F61-FAMILY-6 | session_01TPNoYGTE6dLBPfyEgZTLAc | owner | Opus 5.5 | 8.92 | done 15:18, archived | key v4, meter 20/59/20 |
+| 28 Sept 2026 | CHECK-SOLVED-WEB | session_01Pd5PCGRBn6X3F958dK4qVb | owner | Opus 5.5 | 4.49 | done 15:31, archived | no prior reading on the web; gate fixed |
+| 28 Sept 2026 | VERIFY-F61-V4 | session_014nSPzcuub15LNNfvGjJbRp | owner | Opus 5.5 | cap 40 | running from 16:10 | audit of key v4 |
+| 28 Sept 2026 | F61-FAMILY-7 | session_01UnUDkJzBPMGtkTLUukueM8 | owner | Opus 5.5 | cap 30 | running from 16:10 | fr.3641 / fr.4699 decipherment leads |

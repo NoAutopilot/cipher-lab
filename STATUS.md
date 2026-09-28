@@ -2448,6 +2448,20 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 09:12 Pacific [16:12 UTC]): f.61 key v4 moves the meter to 20 / 59 / 20; verifier on it; no prior reading on the web for the three live campaigns
+
+Counts 18 / 2 / 1 / 6, unchanged. Check-in run early at the owner's request; the 16:15 wake moved to 17:08.
+
+**f.61 (closest).** F61-FAMILY-6 (Opus 5.5, 8.92) re-coded the family passes on the runner's tile-sort splits (four of five held on held-out tiles; VBAR stopped) and rebuilt the period key as v4 (459 rows, 25 classes). Under v4, f.61r in two-way form: meter firm 20 / two-way 59 / unread 20 of 99 (v3 14 / 65 / 20); Tomokiyo's five spans 48/55 = 0.873 vs 200 permuted keys p95 0.436, none at or above; f.108r 65/84. Progress, not yet a reading. The runner's held-out checks on f.108v (same hand, no known letters) back the cell map: blind judge 3 of 3 with control (H85), model-free 4-gram agrees (H93), survives removing the leaked prompt example (H94), one-swap hard null thin but real (H100/H102); c/p vs d/q unresolved there (H103). SBS o is now period-attested in three glossed hands, VBAR s/t in two (H89). VERIFY-F61-V4 (Opus 5.5, session_014nSPzcuub15LNNfvGjJbRp, cap 40) spawned 16:10: reproduction, leakage of known letters into the key, blind re-check of the splits, the meter, and any phrase forced by firm letters against permuted-key controls. F61-FAMILY-7 (session_01UnUDkJzBPMGtkTLUukueM8, cap 30) spawned on CHECK-SOLVED-WEB's key-hunt leads: BnF fr.3641 and fr.4699, both described with their déchiffrement. Budget raised to 600 today.
+
+**Blocker line, f.61.** The 59 two-way choices and the five rare classes (CA, CROSS, LL, LOOPBAR, ZHOOK). On disk: key v4, scripts/f61_glyph_splits.tsv, scripts/family_relabel_proposal.tsv, scripts/f108v_consensus.txt, scripts/H66_PAGE.md, desk packs ASKS 88/89/93. Being worked: VERIFY-F61-V4, F61-FAMILY-7 (a fourth glossed hand could gloss the rare classes), the runner. Not workable by a model: ASKS 88, 89, 93 (a person reads secretary hand).
+
+**Check-solved.** CHECK-SOLVED-WEB (4.49): open web and blog comments (Cipherbrain, Cryptiana, Cipher Mysteries) show no prior reading for armstrong, mercy or f.61 (f.61 only Tomokiyo's own spans). The intake gate now fails without a logged web and blog check; campaign.md carries key-hunt-before-cryptanalysis and a solvability triage header.
+
+**Armstrong.** Runner 3 holds: every open row needs a document or a person (ASKS 84-86, 90-92); no filler rows. **Mercy.** No period key; crib work continues (Burgsdorf name fit stands; blind replication cannot test names; 65 = "sr" passes a random-token control but is not distinguishable from s plus an omitted r).
+
+**Account 3.** Its dispatcher has posted nothing since 14:12 UTC (RESTART-3 unclaimed); it may be stopped. From here it cannot be seen or restarted: the owner's paste line is the route.
+
 ### Orchestrator note (28 Sept 2026, 08:20 Pacific [15:20 UTC]): DECODE opens and rules out the Brussels register for Mercy; Spinelli closed at N0; f.61 key v4 under way
 
 Counts 18 / 2 / 1 / 6, unchanged. f.61 meter 14 firm / 65 two-way / 20 unread in its own terms until F61-FAMILY-6 reports key v4.
