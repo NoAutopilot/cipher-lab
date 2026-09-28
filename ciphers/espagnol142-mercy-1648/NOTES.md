@@ -2307,3 +2307,14 @@ in its text), so vol. 6 is **unreached**, not searched. Google Books API (key, c
 "Theatrum Europaeum" Mercy Cleve 1648, "Abt von Mercy" Cleve, "Abbé de Mercy" Clèves Brandebourg 1648, and a German
 phrasing -- 0 volumes each. No contemporary print of Mercy's Cleves mission found by these routes. archive.org 2
 requests, googleapis 4. No token, grade or class change.
+
+## Campaign step H67 (2026-09-28 16:42 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial. Negative: no alternates to try.** v03-v05 in every pass on disk: pass A and pass B agree
+on all 18 readable tokens of v04 (A grades 15 at v04:9, 7 at v04:10, 21 at v04:16 and 15 at v04:19 m); disagreements.tsv
+has only v04:19 (B has no token there); MEYE marks v04:16 "21" followed by a colon-like mark (punctuation, as H13
+inventoried) and v04:19 "1?" unreadable at the gutter; H2's three reads agree: 15 one group at v04:9, 21 + colon at
+v04:16, v04:19 cut by the photograph's edge (partial, 15/16/19). So the unread v04 stretch is not a transcription
+tangle: every token but the gutter one is read the same by every pass, and the gutter token was already a wildcard in
+H46 and H55. No list crib gets a new substitution to test; the stretch waits for a period key or the gutter capture
+(H12, ASKS 81). No token, grade or class change.
