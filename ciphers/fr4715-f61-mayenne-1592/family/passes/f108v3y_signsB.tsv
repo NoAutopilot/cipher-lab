@@ -1,0 +1,304 @@
+line	pos	sign	conf	segment	x_px	note
+L01	1	OTHER	l	s1	81	cut at top edge; s1 crop sits on the clear gloss 'et tant ... faudra qu'; row read from top edge of L02_s1, same x axis; V-like partial
+L01	2	C43	l	s1	297	read from L02_s1 top edge
+L01	3	VBAR_A	l	s1	513	read from L02_s1 top edge; alt OTHER
+L01	4	EBR_A	l	s1	716	read from L02_s1 top edge
+L01	5	PHI	l	s1	878	read from L02_s1 top edge
+L01	6	C43	l	s1	1107	read from L02_s1 top edge
+L01	7	EBR_A	l	s1	1350	read from L02_s1 top edge
+L01	8	C43	l	s1	1539	read from L02_s1 top edge
+L01	9	INF	l	s1	1742	read from L02_s1 top edge
+L01	10	HASH4	l	s1	1958	read from L02_s1 top edge
+L01	11	PHI	l	s1	2146	read from L02_s1 top edge
+L01	12	C43	l	s1	2349	read from L02_s1 top edge
+L01	13	C43	m	s2	297	
+L01	14	PHI	m	s2	554	alt SBS
+L01	15	INF	m	s2	796	alt DBL
+L01	16	EBR_A	m	s2	1026	
+L01	17	C43	h	s2	1242	
+L01	18	PHI	h	s2	1485	
+L01	19	INF	m	s2	1660	
+L01	20	EBR_B	m	s2	1890	alt EBR_A
+L01	21	4STEM	m	s2	2146	
+L01	22	INF	m	s2	2362	
+L01	23	HASH4	m	s2	2592	
+L01	24	EBR_B	m	s3	331	alt EBR_A
+L01	25	EBR_B	m	s3	520	alt EBR_A
+L01	26	HASH4	h	s3	729	
+L01	27	PHI	m	s3	945	alt SBS
+L01	28	C43	h	s3	1168	
+L01	29	EBR_A	m	s3	1390	
+L01	30	BETA	h	s3	1586	
+L01	31	DBL	m	s3	1755	crossed
+L01	32	4STEM	m	s3	1985	alt CROSS
+L01	33	VBAR_A	m	s3	2174	
+L01	34	DBL	m	s3	2349	
+L01	35	DBL	m	s3	2578	
+L01	36	OTHER	l	s4	200	vertical stroke crossing the row (separator?)
+L01	37	ISH	m	s4	280	alt EBR_A
+L01	38	INF	m	s4	450	alt DBL
+L01	39	DBL	m	s4	650	
+L01	40	EBR_B	h	s4	850	
+L01	41	PHI	h	s4	1080	
+L01	42	EBR_A	m	s4	1320	alt EBR_B
+L01	43	EBR_A	m	s4	1530	alt EBR_B
+L02	1	OTHER	l	s1	202	row cut at bottom edge (s1 crop sits on gloss); partial blob
+L02	2	ZHOOK	l	s1	594	bottom edge, partial; 7-like
+L02	3	HASH4	l	s1	864	bottom edge, partial
+L02	4	HASH4	l	s1	1120	bottom edge, partial
+L02	5	OTHER	l	s1	1526	bottom edge, partial; X- or gamma-like
+L02	6	OTHER	l	s1	1755	bottom edge, partial; stem only
+L02	7	OTHER	l	s1	2012	bottom edge, partial; loop tops, maybe PHI/INF
+L02	8	HASH4	l	s1	2295	bottom edge, partial
+L02	9	EBR_A	m	s1	2565	bottom edge; continues as first sign of s2
+L02	10	4STEM	m	s2	284	
+L02	11	C43	m	s2	513	alt 4STEM
+L02	12	INF	m	s2	770	
+L02	13	PHI	h	s2	986	
+L02	14	SBS	m	s2	1215	alt PHI
+L02	15	C43	h	s2	1458	
+L02	16	EBR_A	m	s2	1688	
+L02	17	CROSS	m	s2	1904	double crossbar
+L02	18	4STEM	m	s2	2106	
+L02	19	EBR_A	m	s2	2322	
+L02	20	ISH	m	s2	2538	alt EBR_B
+L02	21	DBL	m	s3	216	
+L02	22	INF	m	s3	432	alt HASH4
+L02	23	EBR_B	h	s3	621	
+L02	24	DBL	m	s3	837	
+L02	25	BETA	h	s3	1040	
+L02	26	DBL	m	s3	1242	
+L02	27	4STEM	m	s3	1431	alt 4PI
+L02	28	VBAR_A	h	s3	1674	
+L02	29	HASH4	h	s3	1904	
+L02	30	INF	m	s3	2133	alt SBS
+L02	31	HASH4	m	s3	2322	
+L02	32	INF	l	s3	2565	dense crossed double-loop cluster, alt HASH4
+L02	33	PHI	m	s4	300	alt SBS
+L02	34	EBR_B	m	s4	540	alt EBR_A
+L02	35	EBR_A	m	s4	760	
+L02	36	PHI	h	s4	960	
+L02	37	DBL	m	s4	1190	
+L02	38	PHI	m	s4	1420	alt DBL
+L02	39	C43	h	s4	1620	
+L03	1	HASH4	h	s1	230	
+L03	2	DBL	m	s1	500	
+L03	3	C43	h	s1	716	
+L03	4	EBR_A	m	s1	932	alt ISH
+L03	5	C43	h	s1	1134	
+L03	6	HASH4	h	s1	1404	
+L03	7	DBL	m	s1	1620	
+L03	8	EBR_A	m	s1	1850	
+L03	9	EBR_A	m	s1	2039	
+L03	10	DBL	m	s1	2228	
+L03	11	ZHOOK	m	s1	2444	
+L03	12	HASH4	m	s1	2646	
+L03	13	INF	m	s2	364	alt HASH4
+L03	14	DBL	m	s2	580	
+L03	15	4STEM	m	s2	810	alt 4PI
+L03	16	LOOPBAR	l	s2	1053	alt OTHER: box loop with bar
+L03	17	C43	h	s2	1269	
+L03	18	EBR_B	h	s2	1472	
+L03	19	C43	h	s2	1660	
+L03	20	4STEM	m	s2	1877	alt HASH4
+L03	21	PHI	m	s2	2106	alt SBS
+L03	22	C43	h	s2	2308	
+L03	23	EBR_A	m	s2	2565	
+L03	24	DBL	m	s3	230	
+L03	25	DBL	m	s3	446	
+L03	26	INF	m	s3	634	
+L03	27	C43	h	s3	850	
+L03	28	VBAR_A	h	s3	1080	
+L03	29	HASH4	h	s3	1269	
+L03	30	PHI	h	s3	1498	
+L03	31	C43	h	s3	1701	
+L03	32	OTHER	l	s3	1809	vertical stroke crossing the row (separator?)
+L03	33	HASH4	m	s3	1944	alt 4STEM
+L03	34	DBL	m	s3	2160	
+L03	35	C43	h	s3	2403	
+L03	36	PHI	m	s3	2632	alt DBL
+L03	37	BETA	h	s4	380	
+L03	38	HASH4	m	s4	640	
+L03	39	HASH4	h	s4	830	
+L03	40	EBR_B	m	s4	1040	
+L03	41	OTHER	l	s4	1200	F-shaped crossed mark, alt EBR_B
+L03	42	DBL	m	s4	1370	
+L03	43	EBR_A	h	s4	1590	
+L04	1	OTHER	l	s1	81	dark U-like blob at left edge
+L04	2	OTHER	l	s1	230	partial at bottom edge
+L04	3	HASH4	m	s1	473	
+L04	4	DBL	m	s1	662	
+L04	5	INF	m	s1	864	alt HASH4
+L04	6	ISH	h	s1	1053	
+L04	7	EBR_B	m	s1	1228	
+L04	8	DBL	m	s1	1404	
+L04	9	C43	h	s1	1593	
+L04	10	VBAR_A	m	s1	1755	
+L04	11	OTHER	l	s1	1877	vertical stroke crossing the row (separator?)
+L04	12	DBL	m	s1	1985	
+L04	13	EBR_A	m	s1	2187	
+L04	14	VBAR_A	m	s1	2390	
+L04	15	DBL	m	s1	2578	
+L04	16	DBL	m	s2	270	
+L04	17	DBL	m	s2	500	
+L04	18	DBL	m	s2	702	
+L04	19	ISH	h	s2	905	
+L04	20	DBL	m	s2	1120	
+L04	21	INF	m	s2	1350	alt DBL
+L04	22	DBL	m	s2	1552	
+L04	23	DBL	m	s2	1742	
+L04	24	EBR_A	m	s2	1931	
+L04	25	DBL	m	s2	2160	
+L04	26	VBAR_A	m	s2	2336	
+L04	27	4STEM	m	s2	2538	
+L04	28	DBL	m	s3	256	
+L04	29	HASH4	h	s3	473	
+L04	30	C43	h	s3	702	
+L04	31	4STEM	m	s3	959	
+L04	32	HASH4	h	s3	1188	
+L04	33	4STEM	m	s3	1404	
+L04	34	C43	h	s3	1620	
+L04	35	EBR_B	m	s3	1823	
+L04	36	EBR_B	m	s3	2012	
+L04	37	DBL	m	s3	2187	
+L04	38	BETA	h	s3	2362	
+L04	39	HASH4	l	s3	2606	alt DBL
+L04	40	C43	m	s4	300	
+L04	41	VBAR_A	h	s4	500	
+L04	42	OTHER	l	s4	650	vertical stroke crossing the row (separator?)
+L04	43	4STEM	m	s4	740	alt CROSS
+L04	44	BETA	l	s4	970	hook above a loop, alt DBL
+L04	45	ISH	h	s4	1160	
+L04	46	ISH	h	s4	1320	
+L04	47	DBL	m	s4	1510	alt LOOPSTEM1
+L05	1	4STEM	l	s1	202	partial at bottom
+L05	2	DBL	m	s1	418	
+L05	3	4STEM	m	s1	621	
+L05	4	C43	h	s1	850	
+L05	5	DBL	m	s1	1080	
+L05	6	HASH4	h	s1	1336	
+L05	7	EBR_A	h	s1	1580	
+L05	8	C43	h	s1	1823	
+L05	9	PHI	h	s1	2066	
+L05	10	C43	h	s1	2295	
+L05	11	4STEM	m	s1	2511	alt HASH4
+L05	12	C43	m	s2	216	
+L05	13	DBL	m	s2	446	
+L05	14	4STEM	m	s2	648	
+L05	15	DBL	m	s2	850	
+L05	16	VBAR_A	h	s2	1053	
+L05	17	HASH4	h	s2	1256	
+L05	18	VBAR_A	h	s2	1472	
+L05	19	BETA	m	s2	1660	
+L05	20	DBL	m	s2	1917	
+L05	21	EBR_A	m	s2	2133	
+L05	22	EBR_A	m	s2	2322	
+L05	23	DBL	m	s2	2524	
+L05	24	ZHOOK	m	s3	189	
+L05	25	VBAR_A	h	s3	405	
+L05	26	BETA	h	s3	580	
+L05	27	OTHER	l	s3	702	vertical stroke crossing the row (separator?)
+L05	28	BETA	h	s3	810	
+L05	29	C43	h	s3	1026	
+L05	30	HASH4	h	s3	1282	
+L05	31	EBR_A	m	s3	1498	
+L05	32	4STEM	m	s3	1728	
+L05	33	C43	m	s3	1971	alt HASH4
+L05	34	DBL	m	s3	2187	
+L05	35	HASH4	m	s3	2403	alt 4STEM
+L05	36	DBL	m	s3	2592	
+L05	37	VBAR_A	h	s4	250	
+L05	38	DBL	m	s4	420	
+L05	39	C43	h	s4	620	
+L05	40	C43	h	s4	850	
+L05	41	HASH4	m	s4	1040	
+L05	42	BETA	h	s4	1270	
+L06	1	DBL	l	s1	202	partial at bottom
+L06	2	HASH4	h	s1	405	
+L06	3	4STEM	m	s1	634	
+L06	4	ISH	l	s1	837	alt EBR_B
+L06	5	SBS	m	s1	1026	alt PHI; vertical stroke before it
+L06	6	HASH4	h	s1	1282	
+L06	7	4STEM	m	s1	1498	
+L06	8	VBAR_A	h	s1	1701	
+L06	9	BETA	h	s1	1890	
+L06	10	C43	h	s1	2106	
+L06	11	INF	m	s1	2362	
+L06	12	EBR_A	m	s1	2606	
+L06	13	EBR_A	m	s2	270	
+L06	14	HASH4	h	s2	486	
+L06	15	EBR_A	m	s2	729	
+L06	16	PHI	h	s2	959	
+L06	17	C43	h	s2	1215	
+L06	18	VBAR_A	h	s2	1404	
+L06	19	HASH4	h	s2	1634	
+L06	20	EBR_A	l	s2	1877	three bars, alt ISH
+L06	21	BETA	h	s2	2052	
+L06	22	VBAR_A	l	s2	2322	hooked mark over a loop, alt OTHER
+L06	23	DBL	m	s2	2484	
+L06	24	DBL	l	s2	2660	cut at right edge
+L06	25	DBL	m	s3	202	
+L06	26	EBR_A	m	s3	405	
+L06	27	C43	h	s3	594	
+L06	28	DBL	m	s3	810	
+L06	29	4STEM	m	s3	972	
+L06	30	DBL	m	s3	1161	
+L06	31	EBR_A	m	s3	1364	
+L06	32	EBR_A	m	s3	1593	
+L06	33	C43	h	s3	1769	
+L06	34	HASH4	h	s3	1998	
+L06	35	DBL	m	s3	2214	
+L06	36	DBL	m	s3	2403	
+L06	37	EBR_A	m	s3	2578	
+L06	38	OTHER	l	s3	2646	vertical stroke crossing the row (separator?)
+L06	39	C43	h	s4	280	
+L06	40	HASH4	l	s4	460	loop on top, alt 4TRI
+L06	41	VBAR_A	h	s4	650	
+L06	42	DBL	m	s4	850	
+L06	43	DBL	m	s4	1050	
+L06	44	BETA	h	s4	1250	
+L06	45	CROSS	l	s4	1450	loop at top, alt HASH4
+L07	1	4STEM	l	s1	176	partial at bottom
+L07	2	VBAR_A	l	s1	392	partial at bottom
+L07	3	HASH4	h	s1	662	
+L07	4	EBR_B	m	s1	905	alt ISH
+L07	5	C43	h	s1	1134	
+L07	6	EBR_B	m	s1	1336	alt EBR_A
+L07	7	C43	h	s1	1526	
+L07	8	4STEM	m	s1	1769	
+L07	9	ISH	m	s1	1971	
+L07	10	INF	m	s1	2187	
+L07	11	EBR_A	h	s1	2416	
+L07	12	HASH4	m	s1	2632	
+L07	13	C43	h	s2	378	
+L07	14	CROSS	m	s2	594	double crossbar, alt 4STEM
+L07	15	4STEM	m	s2	824	alt HASH4
+L07	16	C43	h	s2	1053	
+L07	17	DBL	m	s2	1269	
+L07	18	DBL	m	s2	1472	
+L07	19	C43	h	s2	1660	
+L07	20	4STEM	m	s2	1877	
+L07	21	OTHER	l	s2	1998	vertical stroke crossing the row (separator?)
+L07	22	DBL	m	s2	2079	
+L07	23	HASH4	h	s2	2349	
+L07	24	DBL	m	s2	2565	
+L07	25	4STEM	m	s3	270	
+L07	26	PHI	m	s3	486	alt SBS
+L07	27	C43	h	s3	702	
+L07	28	VBAR_A	h	s3	918	
+L07	29	DBL	m	s3	1107	
+L07	30	C43	h	s3	1323	
+L07	31	HASH4	h	s3	1580	
+L07	32	DBL	m	s3	1823	
+L07	33	OTHER	l	s3	1944	vertical stroke crossing the row (separator?)
+L07	34	4STEM	m	s3	2039	alt HASH4
+L07	35	DBL	m	s3	2254	
+L07	36	ISH	h	s3	2444	
+L07	37	EBR_B	m	s3	2619	
+L07	38	DBL	m	s4	320	alt SBS
+L07	39	EBR_B	m	s4	520	
+L07	40	C43	h	s4	740	
+L07	41	DBL	m	s4	980	
+L07	42	EBR_A	m	s4	1190	alt ISH
+L07	43	EBR_A	m	s4	1380	
+L07	44	HASH4	h	s4	1580	

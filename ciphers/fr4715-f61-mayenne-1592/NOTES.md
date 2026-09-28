@@ -1568,3 +1568,33 @@ cipher (the five spans: known; L10: FAIL 3/3; L02: one sign). H56 (the L10 nulls
 ground: a judge set with three ? positions in an eight-letter run is the H33/H57 shape and would fail its own control by
 construction (rule 3's "a control that cannot vary" paragraph, from the judge's side). Not a reading; no class change;
 nothing solved, new or first. Text calls: 1 of 2.
+
+## Campaign step H35 (2026-09-28 05:53 UTC) -- FAIL: f.108v sign passes on the corrected cut agree 52%; the cut still misplaces L01 s1
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). Two Opus vision calls (about 123k subagent tokens each, 189 s),
+prompt in `scripts/PROMPTS.md` (H35), scorer `scripts/f61v3x.py --prefix f108v3y --signs-only` (the H29 output unchanged)
+pushed 64233590 before the calls; no network. Hypothesis H35 (F61-108V3Y, re-scoped at H34 to the sign passes only): do two
+blind sign passes on the corrected f.108v cut (`family/sheets/f108v3y_*`, 28 crops, no duplicates) agree at 0.80?
+
+**Passes (verbatim, `family/passes/f108v3y_signsA.tsv`, `_signsB.tsv`).** A 297 rows (9 PLAIN, 17 low-confidence OTHER
+including 10 vertical strokes it took for separators and 5 end-of-line dashes), B 303 (no PLAIN, 8 vertical strokes as
+OTHER). `tools/reconcile_passes.py` (nw) over the seven bands: **163/312 = 52.2% identical columns** (H29's defective cut:
+72.8%; the family's first cut: 65.2%). **GATE FAIL.** The reconciled draft is written to `family/passes/f108v3y_draft.tsv`
+for the record only (inventory PHI 63, C43 44, VBAR_A 35, 4STEM 27, OTHER 26, ZHOOK 20, EBR_A 19, HASH4 16, INF 15, SBS 14,
+EBR_B 14, BETA 11, ISH 7, CROSS 1; ZHOOK 2/1/4/2/3/5/3 per band): not a transcription, no key, nothing merged.
+
+**Why.** (1) The cut, again: reader B reports that L01 segment 1 is cut about one row too high (its middle shows the gloss
+"et tant ... faudra qu", and B read those 12 signs off the top edge of L02 s1 instead) and that L02 s1's cipher row sits
+cut at the bottom edge; reader A coded L01 s1 as five PLAIN clear words -- the same segment. The per-segment `--local 30`
+re-centring locked onto the gloss row on the first segment of the first two bands; the previous runner's corrected cut was
+checked for duplicate files, not for this. (2) The readers split the loop and bracket families differently (PHI / DBL / SBS
+now that the atlas has SBS; INF / DBL; VBAR_A / EBR_A) -- both say so -- and one lists vertical strokes and dashes as OTHER
+where the other does not, so the NW alignment pays for extra columns throughout. This is the third unit of Mayenne's
+secretary's hand read by two passes at 3x (f.106r 85% signs but gloss 34%; f.108r 79%; f.108v 52%): the sign agreement on
+this leaf is the worst of the family, and a fourth pass of the same shape is not the next step (CLAUDE.md rule 3's unchanged-
+approach paragraph). The H29/H35 cut error is logged as the runner's (this runner inherited and did not re-check it).
+
+**Next (new rows).** H59: a targeted recut of L01/L02 segment 1 with hand-set centres and ONE reconciliation call restricted
+to the draft's disagreement columns with crops (Usage 6's priced reconciliation step) -- the reconciler route, not a third
+blind pass; gate <= 10% flagged columns, else f.108v is logged untestable at 3x by two-pass agreement. Not a reading; no class
+change; nothing solved, new or first. Vision calls: 2 of 4.

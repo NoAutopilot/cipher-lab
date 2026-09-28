@@ -1,0 +1,313 @@
+line	position	sign	confidence	alt	why
+L01	1	OTHER	M	A:-	gap
+L01	2	C43	M	A:-	gap
+L01	3	VBAR_A	M	A:-	gap
+L01	4	EBR_A	M	A:-	gap
+L01	5	PHI	M	A:-	gap
+L01	6	C43	M	A:-	gap
+L01	7	EBR_A	M	A:-	gap
+L01	8	C43	M	A:-	gap
+L01	9	INF	M	A:-	gap
+L01	10	HASH4	M	A:-	gap
+L01	11	PHI	M	A:-	gap
+L01	12	C43	M	A:-	gap
+L01	13	C43	M		agree-flagged
+L01	14	SBS	M	B:PHI	differ
+L01	15	INF	M		agree-flagged
+L01	16	VBAR_A	M	B:EBR_A	differ
+L01	17	C43	H		agree
+L01	18	PHI	M		agree-flagged
+L01	19	INF	M		agree-flagged
+L01	20	VBAR_A	M	B:EBR_B	differ
+L01	21	4STEM	M		agree-flagged
+L01	22	INF	M		agree-flagged
+L01	23	ZHOOK	M	B:HASH4	differ
+L01	24	VBAR_A	M	B:EBR_B	differ
+L01	25	VBAR_A	M	B:EBR_B	differ
+L01	26	ZHOOK	M	B:HASH4	differ
+L01	27	SBS	M	B:PHI	differ
+L01	28	C43	H		agree
+L01	29	VBAR_A	M	B:EBR_A	differ
+L01	30	BETA	H		agree
+L01	31	PHI	M	B:DBL	differ
+L01	32	4STEM	M		agree-flagged
+L01	33	VBAR_A	M		agree-flagged
+L01	34	PHI	M	B:DBL	differ
+L01	35	PHI	M	B:DBL	differ
+L01	36	OTHER	L		agree-flagged
+L01	37	EBR_A	M	B:ISH	differ
+L01	38	INF	M		agree-flagged
+L01	39	PHI	M	B:DBL	differ
+L01	40	EBR_B	M		agree-flagged
+L01	41	SBS	M	B:PHI	differ
+L01	42	EBR_A	M		agree-flagged
+L01	43	EBR_A	M		agree-flagged
+L01	44	OTHER	M	B:-	gap
+L02	1	OTHER	M	A:-	gap
+L02	2	ZHOOK	L		agree-flagged
+L02	3	HASH4	M	A:-	gap
+L02	4	HASH4	M	A:-	gap
+L02	5	OTHER	M	A:-	gap
+L02	6	OTHER	M	A:-	gap
+L02	7	OTHER	M	A:-	gap
+L02	8	HASH4	M	A:-	gap
+L02	9	EBR_A	M		agree-flagged
+L02	10	4STEM	M		agree-flagged
+L02	11	C43	M		agree-flagged
+L02	12	INF	M		agree-flagged
+L02	13	PHI	H		agree
+L02	14	SBS	M		agree-flagged
+L02	15	C43	H		agree
+L02	16	VBAR_A	M	B:EBR_A	differ
+L02	17	CROSS	L		agree-flagged
+L02	18	4STEM	M		agree-flagged
+L02	19	VBAR_A	M	B:EBR_A	differ
+L02	20	VBAR_A	M	B:ISH	differ
+L02	21	PHI	M	B:DBL	differ
+L02	22	INF	M		agree-flagged
+L02	23	EBR_B	M		agree-flagged
+L02	24	PHI	M	B:DBL	differ
+L02	25	BETA	H		agree
+L02	26	PHI	M	B:DBL	differ
+L02	27	4STEM	M		agree-flagged
+L02	28	VBAR_A	H		agree
+L02	29	HASH4	M		agree-flagged
+L02	30	SBS	M	B:INF	differ
+L02	31	HASH4	M		agree-flagged
+L02	32	INF	L		agree-flagged
+L02	33	SBS	M	B:PHI	differ
+L02	34	EBR_B	M		agree-flagged
+L02	35	EBR_A	M		agree-flagged
+L02	36	SBS	M	B:PHI	differ
+L02	37	INF	M	B:DBL	differ
+L02	38	PHI	M		agree-flagged
+L02	39	C43	H		agree
+L02	40	OTHER	M	B:-	gap
+L03	1	ZHOOK	M	B:HASH4	differ
+L03	2	PHI	M	B:DBL	differ
+L03	3	C43	H		agree
+L03	4	EBR_A	M		agree-flagged
+L03	5	C43	H		agree
+L03	6	HASH4	M		agree-flagged
+L03	7	PHI	M	B:-	gap
+L03	8	VBAR_A	M	B:DBL	differ
+L03	9	VBAR_A	M	B:EBR_A	differ
+L03	10	PHI	M	B:EBR_A	differ
+L03	11	OTHER	M	B:DBL	differ
+L03	12	ZHOOK	M		agree-flagged
+L03	13	HASH4	M	A:-	gap
+L03	14	INF	M		agree-flagged
+L03	15	PHI	M	B:DBL	differ
+L03	16	4STEM	M		agree-flagged
+L03	17	OTHER	M	B:LOOPBAR	differ
+L03	18	C43	H		agree
+L03	19	EBR_B	M		agree-flagged
+L03	20	C43	H		agree
+L03	21	4STEM	M		agree-flagged
+L03	22	SBS	M	B:PHI	differ
+L03	23	C43	H		agree
+L03	24	EBR_A	M		agree-flagged
+L03	25	PHI	M	B:DBL	differ
+L03	26	PHI	M	B:DBL	differ
+L03	27	INF	M		agree-flagged
+L03	28	C43	H		agree
+L03	29	VBAR_A	M		agree-flagged
+L03	30	ZHOOK	M	B:HASH4	differ
+L03	31	SBS	M	B:PHI	differ
+L03	32	C43	H		agree
+L03	33	OTHER	L		agree-flagged
+L03	34	HASH4	M		agree-flagged
+L03	35	PHI	M	B:DBL	differ
+L03	36	C43	H		agree
+L03	37	SBS	M	B:PHI	differ
+L03	38	BETA	H		agree
+L03	39	HASH4	M		agree-flagged
+L03	40	ZHOOK	M	B:HASH4	differ
+L03	41	EBR_B	M		agree-flagged
+L03	42	EBR_B	M	B:OTHER	differ
+L03	43	PHI	M	B:DBL	differ
+L03	44	VBAR_A	M	B:EBR_A	differ
+L04	1	OTHER	M	A:-	gap
+L04	2	OTHER	L		agree-flagged
+L04	3	HASH4	M		agree-flagged
+L04	4	PHI	M	B:DBL	differ
+L04	5	INF	M		agree-flagged
+L04	6	ISH	H		agree
+L04	7	EBR_B	M		agree-flagged
+L04	8	PHI	M	B:DBL	differ
+L04	9	C43	H		agree
+L04	10	VBAR_A	M		agree-flagged
+L04	11	OTHER	L		agree-flagged
+L04	12	PHI	M	B:DBL	differ
+L04	13	EBR_A	M		agree-flagged
+L04	14	VBAR_A	M		agree-flagged
+L04	15	PHI	M	B:DBL	differ
+L04	16	PHI	M	B:DBL	differ
+L04	17	PHI	M	B:DBL	differ
+L04	18	PHI	M	B:DBL	differ
+L04	19	ISH	H		agree
+L04	20	PHI	M	B:DBL	differ
+L04	21	INF	M		agree-flagged
+L04	22	PHI	M	B:DBL	differ
+L04	23	PHI	M	B:DBL	differ
+L04	24	EBR_A	M		agree-flagged
+L04	25	OTHER	M	B:-	gap
+L04	26	PHI	M	B:DBL	differ
+L04	27	VBAR_A	M		agree-flagged
+L04	28	4STEM	M		agree-flagged
+L04	29	PHI	M	B:DBL	differ
+L04	30	ZHOOK	M	B:HASH4	differ
+L04	31	C43	M		agree-flagged
+L04	32	4STEM	M		agree-flagged
+L04	33	ZHOOK	M	B:HASH4	differ
+L04	34	4STEM	M		agree-flagged
+L04	35	C43	H		agree
+L04	36	EBR_B	M		agree-flagged
+L04	37	EBR_B	M		agree-flagged
+L04	38	PHI	M	B:DBL	differ
+L04	39	BETA	M		agree-flagged
+L04	40	PHI	M	B:HASH4	differ
+L04	41	C43	M		agree-flagged
+L04	42	VBAR_A	H		agree
+L04	43	OTHER	L		agree-flagged
+L04	44	4STEM	M		agree-flagged
+L04	45	PHI	M	B:BETA	differ
+L04	46	ISH	H		agree
+L04	47	ISH	H		agree
+L04	48	PHI	M	B:-	gap
+L04	49	OTHER	M	B:DBL	differ
+L05	1	4STEM	L		agree-flagged
+L05	2	PHI	M	B:DBL	differ
+L05	3	4STEM	M		agree-flagged
+L05	4	C43	H		agree
+L05	5	PHI	M	B:DBL	differ
+L05	6	ZHOOK	M	B:HASH4	differ
+L05	7	VBAR_A	M	B:EBR_A	differ
+L05	8	C43	H		agree
+L05	9	SBS	M	B:PHI	differ
+L05	10	C43	H		agree
+L05	11	4STEM	M		agree-flagged
+L05	12	C43	M		agree-flagged
+L05	13	PHI	M	B:DBL	differ
+L05	14	4STEM	M		agree-flagged
+L05	15	PHI	M	B:DBL	differ
+L05	16	VBAR_A	M		agree-flagged
+L05	17	ZHOOK	M	B:HASH4	differ
+L05	18	VBAR_A	M		agree-flagged
+L05	19	BETA	L		agree-flagged
+L05	20	PHI	M	B:DBL	differ
+L05	21	VBAR_A	M	B:EBR_A	differ
+L05	22	EBR_A	M		agree-flagged
+L05	23	PHI	M	B:DBL	differ
+L05	24	4STEM	M	B:ZHOOK	differ
+L05	25	VBAR_A	M		agree-flagged
+L05	26	BETA	H		agree
+L05	27	OTHER	M	A:-	gap
+L05	28	BETA	H		agree
+L05	29	C43	H		agree
+L05	30	ZHOOK	M	B:HASH4	differ
+L05	31	EBR_A	M		agree-flagged
+L05	32	4STEM	M		agree-flagged
+L05	33	C43	M		agree-flagged
+L05	34	PHI	M	B:DBL	differ
+L05	35	HASH4	M		agree-flagged
+L05	36	PHI	M	B:DBL	differ
+L05	37	VBAR_A	H		agree
+L05	38	PHI	M	B:DBL	differ
+L05	39	C43	H		agree
+L05	40	C43	H		agree
+L05	41	HASH4	M		agree-flagged
+L05	42	BETA	H		agree
+L05	43	OTHER	M	B:-	gap
+L06	1	PHI	M	B:DBL	differ
+L06	2	ZHOOK	M	B:HASH4	differ
+L06	3	4STEM	M		agree-flagged
+L06	4	EBR_B	M	B:ISH	differ
+L06	5	SBS	M		agree-flagged
+L06	6	ZHOOK	M	B:HASH4	differ
+L06	7	4STEM	M		agree-flagged
+L06	8	VBAR_A	H		agree
+L06	9	BETA	H		agree
+L06	10	C43	H		agree
+L06	11	INF	M		agree-flagged
+L06	12	VBAR_A	M	B:EBR_A	differ
+L06	13	VBAR_A	M	B:EBR_A	differ
+L06	14	ZHOOK	M	B:HASH4	differ
+L06	15	VBAR_A	M	B:EBR_A	differ
+L06	16	SBS	M	B:PHI	differ
+L06	17	C43	H		agree
+L06	18	VBAR_A	H		agree
+L06	19	ZHOOK	M	B:HASH4	differ
+L06	20	EBR_B	M	B:EBR_A	differ
+L06	21	BETA	H		agree
+L06	22	VBAR_A	M	A:-	gap
+L06	23	OTHER	M	B:DBL	differ
+L06	24	PHI	M	B:DBL	differ
+L06	25	PHI	M	B:DBL	differ
+L06	26	EBR_A	M		agree-flagged
+L06	27	C43	H		agree
+L06	28	PHI	M	B:DBL	differ
+L06	29	4STEM	M		agree-flagged
+L06	30	PHI	M	B:DBL	differ
+L06	31	EBR_A	M		agree-flagged
+L06	32	EBR_A	M		agree-flagged
+L06	33	C43	H		agree
+L06	34	ZHOOK	M	B:HASH4	differ
+L06	35	PHI	M	B:DBL	differ
+L06	36	PHI	M	B:DBL	differ
+L06	37	VBAR_A	M	B:EBR_A	differ
+L06	38	OTHER	L		agree-flagged
+L06	39	C43	H		agree
+L06	40	HASH4	L		agree-flagged
+L06	41	VBAR_A	H		agree
+L06	42	PHI	M	B:DBL	differ
+L06	43	PHI	M	B:DBL	differ
+L06	44	BETA	M		agree-flagged
+L06	45	4STEM	M	B:-	gap
+L06	46	OTHER	M	B:CROSS	differ
+L07	1	C43	M	B:4STEM	differ
+L07	2	VBAR_A	L		agree-flagged
+L07	3	ZHOOK	M	B:HASH4	differ
+L07	4	EBR_B	M		agree-flagged
+L07	5	C43	H		agree
+L07	6	EBR_B	M		agree-flagged
+L07	7	C43	H		agree
+L07	8	OTHER	M	B:-	gap
+L07	9	4STEM	M		agree-flagged
+L07	10	ISH	M		agree-flagged
+L07	11	INF	M		agree-flagged
+L07	12	EBR_A	H		agree
+L07	13	HASH4	M		agree-flagged
+L07	14	C43	H		agree
+L07	15	4STEM	M	B:CROSS	differ
+L07	16	4STEM	M		agree-flagged
+L07	17	C43	H		agree
+L07	18	PHI	M	B:DBL	differ
+L07	19	PHI	M	B:DBL	differ
+L07	20	C43	H		agree
+L07	21	4STEM	M		agree-flagged
+L07	22	OTHER	L		agree-flagged
+L07	23	PHI	M	B:DBL	differ
+L07	24	HASH4	M		agree-flagged
+L07	25	PHI	M	B:DBL	differ
+L07	26	4STEM	M		agree-flagged
+L07	27	SBS	M	B:PHI	differ
+L07	28	C43	H		agree
+L07	29	VBAR_A	H		agree
+L07	30	PHI	M	B:DBL	differ
+L07	31	C43	H		agree
+L07	32	ZHOOK	M	B:HASH4	differ
+L07	33	PHI	M	B:DBL	differ
+L07	34	OTHER	L		agree-flagged
+L07	35	4STEM	M		agree-flagged
+L07	36	PHI	M	B:DBL	differ
+L07	37	ISH	H		agree
+L07	38	ISH	M	B:EBR_B	differ
+L07	39	PHI	M	B:DBL	differ
+L07	40	EBR_B	M		agree-flagged
+L07	41	C43	H		agree
+L07	42	PHI	M	B:DBL	differ
+L07	43	EBR_A	M		agree-flagged
+L07	44	EBR_A	M		agree-flagged
+L07	45	ZHOOK	M	B:-	gap
+L07	46	OTHER	M	B:HASH4	differ

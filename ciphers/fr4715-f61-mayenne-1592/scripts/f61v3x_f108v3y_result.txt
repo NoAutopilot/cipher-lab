@@ -1,0 +1,5 @@
+H35 (f108v3y): fr.3983 f.108v at 3x on the corrected cut, 7 cipher rows, sign passes only
+signs: lines 7  signs A 289  B 303  agree 163/312 = 52.2%  (nw) (PLAIN rows dropped: A 289 signs, B 303)
+draft -> family/passes/f108v3y_draft.tsv; class inventory: PHI:63 C43:44 VBAR_A:35 4STEM:27 OTHER:26 ZHOOK:20 EBR_A:19 HASH4:16 INF:15 SBS:14 EBR_B:14 BETA:11 ISH:7 CROSS:1
+ZHOOK per band: L01:2 L02:1 L03:4 L04:2 L05:3 L06:5 L07:3
+GATE H35 (signs only): 0.522 (>= 0.80 NO) -> FAIL; no gloss, no key (the gloss of this hand needs a person, H50)
