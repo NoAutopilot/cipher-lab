@@ -1,0 +1,16 @@
+rank	shape	count	match
+1	Capital "A"-like sign (open triangle with crossbar), often at the end of a group	~45	UNSURE (REFERENCE has lower-case "a" used as a sign, but not this capital-A form)
+2	Lower-case "a" inside a circle, "(a)"	~30	NO
+3	Tall vertical stroke with 2 or 3 horizontal crossbars, like "‡" or "╪"	~25	UNSURE (REFERENCE has barred and crossed stems, but none with this multi-bar form)
+4	"4" with a crossbar or tail ("4", "4-")	~20	YES
+5	Double colon "::" used as a separator or sign	~15	NO
+6	"ω" or "∞" joined loops, often joined to a following "A" as "ωA"	~15	YES (REFERENCE's ∞ / "oo" ligature)
+7	Epsilon or C with a bar, "ε" or "⊆"	~15	UNSURE (REFERENCE has ⊏ and Ɛ-like forms)
+8	"p" with a crossed descender, "ᵽ"	~12	NO (REFERENCE's stem signs are ф loops, not p forms)
+9	"v" or "∨"	~12	UNSURE (REFERENCE has ∇ and ∇ with a bar)
+10	"b" or "6"	~10	YES
+11	"r" or "Γ" hook	~10	NO
+12	"x" or "×"	~8	NO
+(3) Frequent in REFERENCE, absent from QUERY: ф (loop or circle on a crossed stem, the most common REFERENCE sign); ♀ (circle over a cross); the "43" ligature; ∞ on a vertical stem (φφ); ∇ with a bar; "ll".
+(4) Probably a different sign system: the two share only generic forms (4, b, ∞, possibly a and v), while each image's most characteristic signs (ф, ♀ and "43" in REFERENCE; A, (a), ‡ and "::" in QUERY) do not appear in the other. Caveat: the QUERY image is low resolution, so these counts and shapes are rough.
+# score under the pre-registered gate: YES 3/12 (UNSURE = NO)

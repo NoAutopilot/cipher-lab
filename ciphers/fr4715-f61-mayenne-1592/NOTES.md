@@ -3174,3 +3174,37 @@ Nine 600-px thumbnails of fr.3984 (canvases f13, f14, f16, f18, f20, f22-f25; Ga
 - f13 and f19/f21: address and docket leaves; f20: a clear page signed "Charles de Lorraine" (another item);
   f22-f23: clear letters; **f24-f25: further dense cipher pages** (a later item, not identified here).
 For H168: compare f15's Suresnes delegates list against f16 and f18 (not f17) first. No key, no reading.
+
+## Campaign step H168 (28 Sept 2026, 22:15-22:24 UTC by the clock, runner 6 session_016YPPumG1PbhMJ3pBLuqaeW) -- dropped: not f.61's design
+
+Re-scoped from the orchestrator's 22:14 brief: confirm that fr.3984 fol. 7 (canvases f14-f15, Mayenne to de Diou, Paris, 13 May
+1593) is written in f.61's polyphonic design and that f16-f18 is its aligned period decipherment, then passes and a key.
+- **Fetch:** canvases f14, f16, f18 at 2000 px (3 Gallica requests, all 200, `family/requests.log`; `family/fr3984_f7/c14_2000.jpg`,
+  `c16_2000.jpg`, `c18_2000.jpg`; f15/f17 already on disk from H168a).
+- **Decipherment (by eye, runner):** f16 (fol. 8, headed "13 de May 1593") opens "Mons.r le Comandeur, la depesche que je ..." where
+  fol. 7r opens "Monsieur le Commandeur" + cipher. It renders only the cipher runs, not fol. 7's clear lines (the army near
+  St Quentin, the Reims meeting with Lorraine, Aumale and Elbeuf, the Suresnes delegates), and so it skips them. That is why H168a's
+  clear-line gate found nothing on f17: the gate's premise was wrong, and H168a's FAIL says nothing about f16-f18.
+- **Design check, pre-registered** (`family/fr3984_f7/h168/PROMPT_DESIGN.md`, pushed 6304123c before the calls): two blind Opus vision
+  calls, same prompt: list the query's 12 commonest signs and mark each as found or not in a family reference (f.61 sheets L03/L05 +
+  an fr.3982 f.101r strip); gate >= 8/12 YES.
+  - Control, fr.3984 f.188r (a family leaf in key v4): **5/12 YES (7 UNSURE), below the gate**, so the test is a **non-test**
+    (rule 3). The reader blamed the coarse strip. Its sentence (4): "the same sign system".
+  - Target, fr.3984 f14: 3/12 YES. Sentence (4): "probably a different sign system ... each image's most characteristic signs (ф, ♀
+    and '43' in REFERENCE; A, (a), ‡ and '::' in QUERY) do not appear in the other". Replies verbatim: `h168/reply_C_f188r.txt`,
+    `reply_T_f14.txt`. Both descriptive only.
+- **Settled from the folder's own record, not by the test:** Tomokiyo's mayenne.htm, section "Duke of Mayenne Forsook Polyphonic
+  Substitution" (`sources/cryptiana/web/mayenne.htm`, on disk since H3, image `web/img/mayenne3.png`), says Mayenne "used a more
+  conventional homophonic substitution cipher in May 1593 in writing from Paris to the same recipient (BnF fr.3984, ff.7-10)". It
+  names BnF fr.3995 no.55 as that cipher's original table and says "the decipherment on a separate sheet (f.8) omits the few lines of
+  the second portion in cipher (f.7)". nevers.htm no.55 says the same. The H3 manifest row for mayenne3.png already read "the
+  DIFFERENT homophonic cipher of BnF fr.3984 ff.7-10 ... not this target's cipher".
+- **Result: fol. 7 is not in f.61's polyphonic design. No passes, no `key_period_fr3984_v1.tsv`**. A key for a different cipher
+  cannot decide any of key v4's 59 two-way cells or rare classes. 2 vision calls spent of 6.
+- **Correction (rule 10, postmortem):** H165's "in the polyphonic family's signs" and `family/fr3984_f7/README.md`'s "the signs are
+  the polyphonic family's" overstated. Both rest on shared generic forms (4-shapes, the "(a)" mark), and the published record says
+  otherwise. README corrected in this step. The lesson for the loop: before chasing a new leaf, grep `sources/cryptiana/` for its
+  folio. Here that grep answers in one line.
+- **What it opened:** mayenne.htm lists fr.3984 **f.176** (Desportes to Clement VIII, 22 July 1593) as polyphonic, "Deciphered on a
+  separate sheet". The finding aid (NOTES F61-FAMILY table: item 84, "chiffre et déchiffrement") agrees, and `family/KEY.md` still
+  marks that sheet "not located". Row H169 takes it. f.186 and f.189 (undeciphered, same design) are pool for a keyless step.

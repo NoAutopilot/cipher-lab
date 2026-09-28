@@ -13,3 +13,5 @@ Files here (Gallica IIIF, fetched 28 Sept 2026, `../requests.log`):
 - `thumb600_c19.jpg` -- canvas f19: a docket; `thumb600_c21.jpg` -- canvas f21: address leaf "A Monsieur le Commandeur de
   Diou ambassadeur ...".
 Canvas f15 = fol. 7r is inferred (the item's folio and this letter's content and address), not read from a folio number.
+
+**Correction, 28 Sept 2026 (runner 6, H168):** this item is NOT in f.61's polyphonic design. Tomokiyo's mayenne.htm ("Duke of Mayenne Forsook Polyphonic Substitution") gives fr.3984 ff.7-10 as a conventional homophonic cipher (original table fr.3995 no.55; decipherment f.8 on a separate sheet, canvas f16). The sentence above calling the signs "the polyphonic family's" rested on shared generic forms and is withdrawn. Canvases f14/f16/f18 at 2000 px were added by H168; the design check is in `h168/`.

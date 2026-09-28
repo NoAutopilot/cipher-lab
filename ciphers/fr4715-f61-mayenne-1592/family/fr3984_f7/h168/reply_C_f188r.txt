@@ -1,0 +1,17 @@
+rank	shape	count	match
+1	phi-like sign: a small loop or circle sitting on a tall vertical stem, often in pairs ("φφ")	~70	YES
+2	double loop "φo" / "oo" with a stroke (a loop joined to a small circle)	~30	YES
+3	"4"-form with a crossbar through the lower stem (like the reference's crossed "4")	~25	YES
+4	open "4" with no crossbar, often next to an "H"	~20	UNSURE
+5	"H" or "#"-like sign: two uprights with one or two crossbars	~20	UNSURE
+6	"t" with a crossbar on the stem, sometimes with a tail below the line ("ŧ")	~18	UNSURE
+7	right-angle bracket "Γ" / "Ľ" / "⊏" (a square hook, often followed by "φ")	~15	YES
+8	"∇" / "V" sign with a bar above	~10	YES
+9	"z" / "Σ" sign made of horizontal strokes with a zigzag	~8	UNSURE
+10	"δ" / "8" loop with a hooked top	~8	UNSURE
+11	"f" / "ʃ" long-s shape with a crossbar, sometimes with a superscript "2"	~6	UNSURE
+12	"43": a 4 joined to a 3-like tail	~5	UNSURE
+(3) Frequent in the REFERENCE but not seen in the QUERY at this resolution: the "♀" sign; the "6"; the plain "a" used as a cipher sign; the "ll" pair; the "V" with a bar through it. Any of these could be hidden by the QUERY's resolution.
+(4) The QUERY looks like the same sign system as the REFERENCE (phi-loops, crossed 4s, brackets, ∇ and "oo" all dominate both), but the QUERY image is too coarse to confirm the sign-by-sign matches marked UNSURE.
+# preamble caveat (verbatim gist): the QUERY is a small low-resolution greyscale strip; shapes and counts are rough.
+# score under the pre-registered gate: YES 5/12 (UNSURE = NO) -> control FAILS the >= 8 gate
