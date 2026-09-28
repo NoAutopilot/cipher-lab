@@ -925,3 +925,43 @@ tall enough to hold its gloss, per-segment centres) -- H34 repeats H21 that way,
 (H28, about 60 interlined lines) and f.108v rows. The L05/L06 sign passes stay on disk for that step. Requests: none.
 No credentials, no AskUserQuestion, no novelty wording; the owner not named.
 
+## Campaign steps H7, H8, H32 (2026-09-28 01:26 UTC) -- the BnF finding aids
+
+Campaign runner (Fable, session_01UgTmQhR7wFtVFrTVdtsq9i), no subagent calls (the account is at its rate-limit warning;
+BUDGETS.md scaling rule). Requests: archivesetmanuscrits.bnf.fr 5 (one notice, three POST searches
+`resultatRechercheSimple.html` with `TEXTE_LIBRE_INPUT=Français NNNN`, one notice), oai.bnf.fr 1; 1.6 s apart, browser
+UA as the playbook records for this host. Snapshots, unmodified, in `sources/bnf-aem/` with `MANIFEST.tsv` (sha1).
+
+**fr.4715 (ark:/12148/cc577658).** The dépouillement lists no.38 as "Fol. 61 • 38 Lettre avec chiffre." and nothing more:
+no sender, recipient or date (H7: the aid adds none). Fol. 66 is no.43, Mayenne to the duc de Nevers, "Au camp devant
+Auxonne, 29 août 1586. Chiffre et déchiffrement", one of four Mayenne-to-Nevers letters of 1585-86 in the volume (nos
+26, 43, 49, 53; ff. 49, 66, 72, 76), the earlier cipher, not this family. So the boxed ink "66" on the leaf
+(`images/manifest.json`'s flag) is an older foliation, superseded: **the leaf is fol. 61, no.38** (H8 resolved), and an
+outward citation reads "BnF, Français 4715, fol. 61 (no.38)".
+
+**The family (ark:/12148/cc504266, Français 3974-3995, "Collection Mémoires de la Ligue", one finding aid for the 22
+volumes).** Read within each volume's own section (folio numbers repeat across volumes):
+
+| leaf | no. | the aid's entry (abridged) |
+|---|---|---|
+| fr.3982 f.97 | 41 | commandeur de Diou to "monseigneur le president Janyn, conseiller d'Estat", Rome, 27 Oct 1592; chiffre et double déchiffrement |
+| fr.3982 f.101 | 42 | Anne de Perusse d'Escars de Givry, evesque de Lizieux, to "monseigneur", Rome, 27 Oct 1592; chiffre et double déchiffrement |
+| fr.3982 f.124 | 55 | Diou to the duc de Mayenne, Rome, 12 Nov 1592; chiffre et double déchiffrement |
+| fr.3983 f.106 | 48 | Mayenne to the commandeur de Diou, ambassador at Rome, "De Soissons, ce dernier jour de fevrier 1593", Copie; chiffre et déchiffrement |
+| fr.3983 f.108 | 49 | Mayenne to Diou, "Du camp de Soissons, ce IIIIe mars 1593"; chiffre et déchiffrement |
+| fr.3983 f.211 | 110 | Mayenne to Diou, "Du camp de Han, ce premier jour d'apvril 1593"; chiffre et déchiffrement |
+| fr.3984 f.176 | 84 | Baudouyn Desportes to Pope Clement VIII, Paris, 22 Jul 1593; chiffre et déchiffrement |
+| fr.3984 f.184 | 87 | "Deschiffrement de la lectre de Baudouyn Desportes à Mr [l'évêque] de Lizieux", Paris, 22 Jul 1593 |
+| fr.3984 f.186 | 88 | Desportes to don Pietro Aldobrandini, Paris, 22 Jul 1593; avec chiffre |
+| fr.3984 f.188 | 89 | "Original de la lettre déchiffrée sous le n° 87" (so: Desportes to the Bishop of Lisieux) |
+| fr.3984 f.189 | 90 | Desportes to Hieronimo Frachetta, Paris, 22 Jul 1593; avec chiffre |
+| fr.3984 f.274 | 115 | Anne de Givry, evesque de Lisieux, to Mr Desportes, Sr de Beuvillier, Rome, July 1593; chiffre et déchiffrement |
+
+Two things this settles for the family rows (H28-H31, `family/KEY.md`): every leaf Tomokiyo lists is catalogued with its
+decipherment ("double déchiffrement" for the three fr.3982 letters -- two decipherments, presumably the interlinear one
+and a separate sheet), and the dates the family worker read on the leaves (f.106r headed "4 de mars 1593", f.108v ending
+"De Soissons ce dernier jour de fevrier 1593") are the aid's dates for ff.106 and 108 **swapped**: either the two letters
+were rebound or the aid's items 48/49 were numbered against the other leaf. Both are recorded here; in a citation the
+aid is the authority for cote and folio and the leaf's own heading is quoted beside it, not silently reconciled (H32).
+No reading, no class change, no novelty wording; the owner not named.
+
