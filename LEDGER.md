@@ -1292,3 +1292,5 @@ the end of every wake.
 | 28 Sept 2026 | MERCY-OUT | session_01SBqFqTJkY37SuXd6hjb6P9 | owner | Sonnet | 2.51 | done 06:15 | three drafts, nothing sent |
 | 28 Sept 2026 | MERCY-N4 | session_0185wbSuc3VUYGpvy2MDHTQC | owner | Fable | 8.11 | done 06:22 | class N4, 1933 precis found |
 | 28 Sept 2026 | f61 runner 2 | session_01J8hunWPcE7QYcpCx59CUHV | owner | Fable | 61.12 | stopped on context 670k at 06:20, archived 06:4x | H24b-H63 |
+| 28 Sept 2026 | f61 runner 3 | session_01Ek99Vo12NhAfsPY7FEFWhx | owner | Fable | continuous | running from 06:37 | trig_01LSuzyGmbct8ViYncr5S9WM :45 |
+| 28 Sept 2026 | VERIFY-SPINELLI-1 | session_01SCWXexNRimHBDRaT1SrmX8 | owner | Opus | cap 30 | running from 06:37 | novelty first, then the partial decode audit |
