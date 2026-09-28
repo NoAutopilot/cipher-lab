@@ -340,3 +340,99 @@ present (V6-MERCY2).
 above; no outward sentence may quote a word the blind read dropped. No reply bears on this item (no outreach sent). LOCAL-QUEUE L20 (Cuvelier-Lefèvre VI p.647, read on the owner's desk) landed
 negative at commit c789909 (NOTES.md): p.647 is a different letter of 11 June 1648 that mentions Mercy's mission, not the 6 June
 instruction; with rows 79-82 answered, NOTES.md's "still needs the JSTOR-QUEUE rows" condition is now met.
+
+## N4 decision (28 Sept 2026, MERCY-N4)
+
+Verifier MERCY-N4 (Fable, session_0185wbSuc3VUYGpvy2MDHTQC, owner account), 28 Sept 2026, 06:06-06:2x UTC (`date -u`
+read), for the parent orchestrator (session_01FXDfYR3CvGk7tcid1Aav1n). Brief: `.claude/briefs/runs/2026-09-28-parent-mercy-n4.md`.
+Separate from every solver and from V6-MERCY, V6-MERCY2, V-GATE2 and the drafter MERCY-OUT. Did not decode; touched no
+file in this folder but this AUDIT.md (this section only) and no file under outreach/. Job: retry the families that held
+the item at N3 (S2.4: Acta Pacis Westphalicae full text; Semantic Scholar 2 of 5; Cuvelier-Lefevre VI p.647; and the
+Lonchay-Cuvelier IV page read), then decide N4 / stays N3 / lower.
+
+### N4.1 Verdict
+
+| item | prior plaintext | prior decipherment | prior print of the content | class | key |
+|---|---|---|---|---|---|
+| f.22r-22v, instruction to Mercy, Barneton 6 June 1648 (R6 reading as corrected by R7-MREV) | not located | not located | **yes, a one-sentence précis (1933), see N4.2 row 4** | **N4** | **ours** |
+
+**Safe sentence (rule 10; supersedes the two above for any outward text):** "BnF Espagnol 144 f.22, an unsigned Spanish
+instruction to the abbé (Baron) de Mercy dated Barneton 6 June 1648, has been read in part by our own cryptanalysis
+(496 of 522 code tokens at grade S, 26 at M, none from a key or known plaintext). No prior decipherment of this leaf and
+no print of its plaintext were located after three logged searches (25-28 Sept 2026, this AUDIT.md) that now cover the
+principal editions, catalogues and project pages; internal or unpublished work is not excluded. The substance of the
+mission it sets out is in print: Lonchay, Cuvelier and Lefèvre, *Correspondance de la Cour d'Espagne* IV (1933) no. 183,
+p. 71, calendars Leopold Wilhelm's own dispatch to Philip IV of June 1648 (Brussels, Secrétairerie d'État et de Guerre,
+reg. 240, fol. 201) as reporting that someone had been asked to ask the Elector of Brandenburg whether 3,000 infantry
+could be raised in his states for a corps to operate in Flanders. The reading is a cryptanalytic result, not confirmed
+by a key or a clear copy."
+
+At N4 the wording "first decipherment", with the qualifier "no prior decipherment located", is allowed (rule 10). Not
+allowed, at any class: "previously unknown mission", "unknown to historians", "the levy was a secret until now" -- the
+1933 précis prints the content. Any outward note states that précis as the prior print it rests on (Outreach gate 3).
+
+**Unsafe sentence:** "We have deciphered for the first time a secret instruction, unknown to historians, in which
+Leopold Wilhelm orders Mercy to raise 3,000 infantry from the Elector of Brandenburg." (three faults: the content has
+been in print since 1933; the sender is inferred, the leaf being unsigned; and "first" needs its qualifier.)
+
+### N4.2 What this session did (in the brief's order; one row per source, AUDIT.md table format)
+
+| family | searched / unreachable | what | result | date, requests |
+|---|---|---|---|---|
+| 1. (a) Acta Pacis Westphalicae full text, apw.digitale-sammlungen.de | **searched** (reachable today; the Anubis gate cleared by `tools/browser_fetch.js`, curl gets the challenge page; backend answered every query, no 505) | `search/query.html?q=`: Mercy (69 documents, year facet 1644-1647 only), Mercy + year 1648 (0), Merci (2: APW II B 5,1 index "Ernest de Mercy, abbé, war für den span. Generalgouverneur in Brüssel tätig", the 1647 Chevreuse channel; II B 5,2 index "Mercy, Ernest de, Vertrauter der Hg.in v. Chevreuse: 276, 428, 669"), Barneton (0), Warneton (2: the fortress, 1645-46), Sumiller (0), Cleve + 1648 (9: Brandenburg court at Cleve, Fromholtz/Blumenthal missions, Jülich-Cleve contributions; nothing Spanish), positive control Brandenburg + 1648 (136 documents, so the 1648 corpus is indexed) | **negative with a control**: no 1648 document in APW digital names Mercy; every Mercy/Merci hit is the general Franz von Mercy, "Dieu mercy", or the abbé in the 1647 Chevreuse talks (the sibling channel, not this instruction). The fallback (APW printed volumes on archive.org/HathiTrust) was not needed. | 28 Sept 2026; 2 curl + 8 browser fetches, >=2 s apart |
+| 2. (g) Semantic Scholar (keyed, `x-api-key`) | 4 of 5 answered; 1 unreachable (429 twice, not retried further) | the first audit's log does not name its two unanswered queries, so every candidate of its five was run once, 1.6 s apart, and the three that 429'd were retried once after 20 s: "abad de Mercy 1648" (200, 879 hits, all modern Spanish-language noise), "Espagnol 144 BnF Mercy instruction chiffrée" (200, 0), "Spanish Netherlands levies Cleves 1648 Brandenburg" (200, 6: Wilson 2009, *The French Challenge* 2004, reviewer acknowledgements), "Leopoldo Guillermo Mercy 1648 instrucción cifrada" (200, 0), "Chevreuse Saint-Ibal 1648" (429, 429) | nothing relevant; with V-GATE2's two answered queries (26 Sept) the family is covered | 28 Sept 2026; 8 requests |
+| 3. (a/c) Cuvelier-Lefèvre VI (1937) p.647 | **read on the owner's desk** (LOCAL-QUEUE L20, 26 Sept 2026, PR 24; `local-runner/L20-2026-09-26.md`, gated by `tools/lq_answer_check.py`) -- not re-fetched here | printed p.647 = entry 1499, Munster, **11 June 1648**, Peñaranda to Philip IV (source cited there: CODOIN 84 p.258): Brun corresponds with Schwartzenberg under a cipher, "il en est de même de l'abbé de Mercy qui a été envoyé par Léopold-Guillaume pour traiter avec la duchesse de Chevreuse"; index "MERCY (L'abbé de), 647, 15, 20" -- 15 and 20 are marginal line numbers on p.647, and printed pp.15 and 20 concern 1599 | **different document**: a précis of Peñaranda's letter of 11 June 1648, which mentions Mercy's Chevreuse errand and a cipher, and neither quotes, summarises nor lists the 6 June instruction; no Cleves, Brandenburg or levy. The CODOIN 84 original (HathiTrust `hvd.32044083761940`, HTRC EF seq 269 carries "Merzy", "Brun", "cifra") is not readable from the cloud and is not this item either. Not a prior print of the plaintext; does not lower the class | 26 Sept 2026 (desk); 1 EF request here |
+| 3a. (a/c) Lonchay-Cuvelier IV (1933), the family S2.4(a) named as still open | **searched at entry level** (HTRC EF per-page tokens, one request, all 908 pages; then Google Books snippets, three records of the same scan `TXkgAQAAMAAJ`, `EEERw8KKxU0C`, `cPJ-Dw3C-jkC`, all NO_PAGES) | every 1648 page (seqs 55-131) scanned for mercy, instruction(s), brandebourg, clèves, électeur, levée(s), infanterie, fantassins, régiments, 3,000, barneton, warneton, chiffre. "Mercy" occurs on seqs 56, 64, 71, 80 (Jan-May 1648: the Chevreuse/Kerpen errand -- seq 80 is Leopold to the King, April-May 1648, "instructions qu'il a données à l'abbé de Mercy ... Kerpen, où il doit s'aboucher avec la duchesse de Chevreuse", i.e. the 13/15 April sibling) and on no page from seq 81 to 126 (June-Dec 1648). The content words cluster on seq 94 (brandebourg, électeur, lever, fantassins, juin, juillet); 14 snippet queries recovered that entry, see row 4 | see row 4 | 28 Sept 2026; 1 EF + 36 Google Books requests (keyed, `country=US`, >=3.3 s apart, no 429) |
+| 4. **The find** | searched | Lonchay-Cuvelier IV **no. 183, p. 71**, [date unread] **juin 1648, Léopold-Guillaume à Philippe IV**, source "Secrétairerie d'État et de Guerre, reg. 240, fol. 201" (the entry before no. 184, Madrid 16 juin 1648, Philippe IV à Léopold-Guillaume). Snippet text, stitched from overlapping windows: "La défaite récente de l'armée impériale dont le duc de Terranova aura sans doute rendu compte ... rend plus aléatoire ... En tout cas, l'intervention du Roi est indispensable. On a demandé à [gap, one or two words] de demander à l'Électeur de Brandebourg, s'il y aurait moyen de lever 3,000 fantassins dans ses États. On tâchera de faire un corps d'armée qui opérera en Flandre et s'efforcera de chasser les Français de cette province. Ypres s'est rendue à Condé, il n'y a pas eu moyen de secourir la place. Nouvelles demandes d'argent (1)." The gap (whom Leopold asked) could not be recovered from snippets; the page's EF token bag has no "Mercy", so the précis probably does not name him, or the OCR missed it | **a prior print (1933) of the mission's substance, not of the plaintext and not of this instruction**: a précis of Leopold's covering dispatch, written after Ypres fell (29 May) and before 16 June, i.e. the same days as the 6 June instruction, reporting exactly the errand the R6 reading gives Mercy (the Elector of Brandenburg; 3,000 infantry; "en dos o tres regimientos" in the reading, "un corps d'armée" here). It neither quotes nor lists the instruction and does not say a copy was enclosed. Class effect: not N0/N1 (no decipherment, no plaintext printed); not N2 (a précis of a different letter is not "plaintext known elsewhere"); the family is now covered at entry level, which is what N4 asks. Standing effect (not this verifier's call, logged for the solver side): the précis corroborates the two content items of the reading -- the Elector of Brandenburg and 3,000 infantry -- from a source the R6/M2 reader had not seen (25 Sept), which is independent support for those S-grade tokens, short of a clear copy | 28 Sept 2026 |
+| (b/c) Lonchay-Cuvelier IV no. 86-ish, May-June 1648 (seq 86: électeur, régiments, vétérans, recrute) | searched | Google Books snippet: "Philippe IV à Léopold-Guillaume. Le Roi approuve la décision prise par l'archiduc d'envoyer une lettre royale à l'Électeur de Mayence ... régiments de vétérans, même en tenant compte de la bonne volonté de l'Empereur" | the Elector of Mainz, veteran regiments from the Emperor's army: a different levy, not this item | 28 Sept 2026 |
+| (b) seq 88 ("3,000", juin 1648) | searched (EF bag only) | Courtrai, Béthune, Lens, Bucquoy, Beck, Fuensaldaña, Schwartzenberg, "2,000", "3,000" -- a field-army entry | the campaign in Flanders, not the Brandenburg levy | 28 Sept 2026 |
+| (b) Lonchay-Cuvelier IV seqs 121, 131 (brandebourg / électeur, autumn 1648) | not read | tokens only | not pursued: after the peace (24 Oct 1648) and outside the instruction's window; a page read is a nice-to-have, not a class blocker | 28 Sept 2026 |
+
+Families not re-run this session, covered before and unchanged: Le Clerc; CODOIN 59, 82-84 (token level, S2.2 row 6);
+Lonchay 1896; Cousin; Morel-Fatio 1892; Rodríguez Villa; Urkunden ... Friedrich Wilhelm (Bd. 1-6, 13-19); Gachard;
+the BnF finding aid; Cryptiana; the two solver repositories; the DECODE listing; OpenAlex (23 queries), HAL, CrossRef;
+Persée (unreachable, client-rendered, 3 attempts on 25 Sept); JSTOR rows 79-82 answered and classified (V-GATE2, 26 Sept).
+
+### N4.3 Why N4, and what N4 does not say
+
+N4 is "N3 with the principal editions, catalogues and project pages covered, internal or unpublished work not
+excluded" (rule 10). The two families S2.4 named as open are now covered: Acta Pacis Westphalicae full text was
+searched with a positive control (row 1), and Lonchay-Cuvelier IV was searched at entry level for every content word of
+the reading and the one relevant entry read in snippets (rows 3a, 4). Cuvelier-Lefèvre VI p.647 was read on the desk
+(row 3). Semantic Scholar is at 4 of 5 here plus 2 of 2 on 26 Sept (row 2). No principal edition, catalogue or project
+page in the three audits' family lists is still logged unreachable except Persée, which is a scholarship index, not an
+edition, and whose ground OpenAlex, CrossRef and HAL cover.
+
+N4 does **not** say the plaintext is unknown to everyone: (i) a clear copy of the 6 June instruction may sit, unprinted,
+in the Brussels SEE registers next to reg. 240 fol. 201 (Lonchay 1896 p.445 n.2 shows the April instruction travelled
+that way), or in Simancas Estado -- an archive read (ASKS 60) could turn this item into C-grade tokens and drop it to
+N2; (ii) Lonchay-Cuvelier IV p.71 has been read from snippet windows, not from the page, so the day of no. 183 and the
+one- or two-word gap ("On a demandé à [...] de demander à l'Électeur") are unread -- a desk read of p.71 (HathiTrust
+`mdp.39015014126620`, search-only from the cloud; or the Google Books record `EEERw8KKxU0C`, "search inside") would
+settle whether the précis names Mercy; (iii) CODOIN 84 p.258 (the Peñaranda letter of 11 June 1648) is unread at page
+level. None of the three is a print of this instruction as far as anything located shows; all three are named so that
+a later find is a correction to this section, not a surprise.
+
+**Class effect of the brief's own question** (a calendar summary of the 6 June instruction would be a prior print of its
+content): what was found is a calendar summary of Leopold's *dispatch*, not of the instruction, and it prints the
+mission's substance in one sentence. It does not move the class down (N2 needs the plaintext known), but it changes
+the safe sentence, which now carries the 1933 précis (N4.1), and it bars any "unknown mission" wording.
+
+### N4.4 Corrections and propagation
+
+- AUDIT.md section 2 ("Not N4") and S2.4 are superseded by this section; both are left in place as the record.
+- `SECOND-OPINIONS-QUEUE.tsv`: the SO-MERCY-F22 prompt was answered and checked before this find (PR 16, V8-SO16); no
+  queued row for this target is open, so nothing to update there.
+- `status.json`: no tool in `tools/` writes a target's novelty class (the row's class lives in prose in `title`;
+  `near_check.py`, `build_dashboard.py` read it) -- left untouched, said in ROOM.md for the parent to carry.
+- NOTES.md, NEAR.md, CAMPAIGN.md, outreach/: not edited (brief). The parent carries the new safe sentence to MERCY-OUT's
+  drafts before OUT-CHECK, and the standing note (row 4, last column) to the campaign runner.
+- No over-claiming sentence found in this folder's files by this session; the earlier safe sentences were correct
+  for their date and are now narrower than the record supports (N3 -> N4) and wider in one respect (they did not name
+  the 1933 précis, which no session had found).
+
+### N4.5 Requests (this session, no subagents)
+
+apw.digitale-sammlungen.de 10 (2 curl, both the Anubis challenge page; 8 headless-Chromium fetches, each cleared);
+api.semanticscholar.org 8; data.htrc.illinois.edu 2; www.googleapis.com/books 36 (keyed, `country=US`, >=3.3 s apart,
+no 429); archive.org 0; gallica.bnf.fr 0; no login anywhere. Cost: the orchestrator's `get_session` figure.
