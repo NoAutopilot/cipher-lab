@@ -1,0 +1,4 @@
+unmarked_s103: target SET-06 scored 1.5; rank 4 of 21 (ties against the target)
+all scores: SET-03:2.0 SET-07:2.0 SET-06:1.5 SET-15:1.5 SET-01:1.0 SET-04:1.0 SET-09:1.0 SET-10:1.0 SET-11:1.0 SET-12:1.0 SET-14:1.0 SET-17:1.0 SET-20:1.0 SET-02:0.5 SET-05:0.5 SET-08:0.5 SET-13:0.5 SET-16:0.5 SET-18:0.5 SET-19:0.5 SET-21:0.5
+target reading as given by the judge: e | leteosuo
+GATE H16 (unmarked_s103): rank 1 of 21 -> FAIL

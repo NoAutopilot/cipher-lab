@@ -1447,3 +1447,47 @@ not committed (regen lines in MANIFEST.tsv). What would settle f.97r's gloss: th
 (H53). What the census says for the blocker: the five classes are f.61r's own, rare on every sibling (0.3-2%), so a period
 gloss over them will come from f.61r-like density only on f.108r/f.108v (ZHOOK 27 there, gloss held at 3x) or from a shape
 identification against the covered classes (H43), not from more de Diou leaves.
+
+## Campaign step H25 (2026-09-28 05:25 UTC) -- the judge re-run audit 1 asked for: known lines PASS 3/3, the L10 run FAIL 3/3 under the corrected cells
+
+Campaign runner (Fable, session_01J8hunWPcE7QYcpCx59CUHV). Six Opus TEXT calls (no images; about 89-113k subagent tokens
+each), prompts verbatim in `scripts/PROMPTS.md` (H25: the H16 known-lines prompt unchanged, the H16 unmarked prompt written
+out in full) before the calls; `scripts/f61judge.py` gained `--order-seed/--perm-seed` (a fresh set order and fresh cell
+permutations per call) and `--h26-split` (the loop family split by H26: SBS = b/o, DBL out of the cell list), with every
+H16 output byte-identical without the options. Hypothesis H25 (F61-JUDGE2): does the H16 judge reproduce as a gate when
+its prompt is fixed on disk and the target's label, the permutations and the order are all re-drawn?
+
+**Known lines (positive control), seeds 101 / 102 / 103 (`f61judge_known_s10x_{sets,key,verdict,result}`).**
+
+| seed | target label | target score | next best | rank of 21 (ties against) | target's blind resolution |
+|---|---|---|---|---|---|
+| 101 | SET-05 | 7.0 | 2 | **1** | aupret / estpapnol / tropaunapers / ilousi / eaubeaupere / elentroit |
+| 102 | SET-10 | 7.5 | 1 | **1** | auecet / estcapabl / tropaunapres / ilousi / eaubeaupere / elentroit |
+| 103 | SET-06 | 8.0 | 2 | **1** | auecet / estpacnol / tropauancers / ilousi / eaubeaupere / elentroit |
+
+**PASS as pre-registered** (rank 1 in all three; under the null the chance is 1/21 per call, about 1e-4 jointly). The
+judge, with its prompt recorded and the key withheld, ranks the true cell map first every time and reads "eaubeaupere" and
+"elentroit" blind in all three; audit 1's non-reproduction was the verifier's differently worded prompt, as the audit itself
+suspected. The judge is a usable gate for this cipher at this N -- on a positive control.
+
+**L10 (the unmarked run), same three seeds, sets built with the H26 split (positions 6 and 11 = [b/o]).**
+
+| seed | target label | target score | best score (label) | rank of 21 | target's blind resolution of L10 |
+|---|---|---|---|---|---|
+| 101 | SET-05 | 1.5 | 1.5 (three tied) | 3 | letrosuo |
+| 102 | SET-10 | 1.5 | 4 (SET-06 'yprcautn'), 3, 2.5, 2 | 7 | letrosuo |
+| 103 | SET-06 | 1.5 | 2 (two sets) | 4 | leteosuo |
+
+**FAIL in all three.** With the two side-by-side signs as b/o, the run [l/y][e/r][g/t][e/r][b/o][f/s][h/u][b/o] does not
+resolve to French the judge recognises (its best attempt, 'letrosuo', scores 1.5, and it does no better than random
+permutations), while the same judge separates the true map on the known lines by 5 points. So H16's L10 'PASS' (rank 1,
+'letresur') was an artefact of the merged loop class rendering positions 6 and 11 as e/r; under the corrected cells the
+run is a controlled negative: the eight cells (grade S) do not spell a French word by this judge. Possible reasons, each a
+hypothesis and none tested here: the five 'nulls' of the run (CA x3, C6 x2, H4's dash-share rule from the known lines)
+may carry letters in this run; the run may hold a name or a word code; the pair choice may need the clear words after
+the line break (L11 begins the next line). The fragment stays held with the verifier, its cells S, its letters M, no
+string proposed (`fragment_L10.tsv` as regenerated in H51 already claims none). The verdicts are verbatim on disk.
+
+**Cost.** Six Opus text calls; the row's est (3) priced them at about half the ledger rate -- about 7 USD spent (own
+estimate; the orchestrator's get_session figure is the record). No class change; nothing solved, new or first; no
+credentials, no AskUserQuestion; the owner not named.
