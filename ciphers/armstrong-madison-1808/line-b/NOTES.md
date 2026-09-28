@@ -215,3 +215,38 @@ ChatGPT sprint and by ARM3-COR's LOC-side Warden check; a person's microfilm rea
 Requests: loc.gov 2, tile.loc.gov 0, findingaids.library.nyu.edu 3 (one 403), fdrlibrary.org 1, be-api 10, archive.org
 2, nypl 1 (403), oclc 1 (403), nyhistory 1 (403), jerseyhistory 1, gothamcenter 1, dartmouth 1; all >= 1.5 s apart;
 no logins; 0 subagents. Cost: about 20 minutes by the clock; PLAN.md records the row's 3 USD estimate.
+
+## Step B4 (28 Sept 2026, 03:0x-03:2x UTC) -- Jefferson's own cipher items at LOC, 1785-1810: no numeric key of the target's shape; the 1803 Jefferson-Monroe coded note screens flat
+
+**Method.** `www.loc.gov/collections/thomas-jefferson-papers/?q=cipher|cypher&dates=1785/1810&fo=json&c=100` (ARM-JEF
+had searched the same collection only for "Armstrong cipher", 0 hits): 53 + 36 results, 83 distinct items, titles
+and dates read; every item whose title names a cipher or key was classified; item JSON fetched for five; images
+fetched from the item metadata's own file URLs (the guessed `image-services/iiif/service:mss:mtj:...` path 404s
+for this collection -- use the `resources[].files[]` URLs). Scratch: `scratch/b4/` (not committed).
+
+**Result.**
+- Items titled as cipher material fall in 1785-1803 only: Code No. 8 with Adams (1785), the Madison word-list ciphers
+  (1787, 1793), the Short/Carmichael/Pinckney/Humphreys ciphers (1791-94), Patterson's cipher (1802), "Thomas
+  Jefferson, 1802, Ciphers and Data" (mtjbib012030, 8 images: pages 1, 3 and 7 looked at -- a Patterson-style
+  letter, a 13-column mixed-alphabet grid and a 26 x 26 Vigenere table with a worked example; letter ciphers, not a
+  numeric code; pages 2, 4, 5, 6, 8 not looked at), the Lewis cipher (1803) and "Thomas Jefferson to James Monroe,
+  June 5, 1803, Cipher" (mtjbib012463). Nothing catalogued as a cipher between 1804 and 1810 except the Briggs-
+  Wilkinson 1807 cipher (the Burr affair, a Wilkinson-Burr key, not Armstrong's). The two 1808/1810 "cypher" hits
+  (Monroe to TJ 22 Mar 1808; TJ to Madison 25 May 1810) are the figurative word ("reduces the resident minister ...
+  to a cypher"; "such a cypher in so important an office") in the transcriptions, read from the item JSON.
+- mtjbib012463 is a four-line coded note in a numeric code (about 60 groups, 3- and 4-digit, values to about 1576),
+  with Jefferson's clear postscript about a letter for Madame de Corny. LOC's master JPEG (2039 x 2543) is a
+  microfilm-quality scan; 27 groups read by this session at M grade from 2x line crops (621 869 1402 640 226 1406
+  1449 956 924 1299 1006 1136 1379 1576 1370 986 169 996 288 809 377 1113 1276 1067 1440 653 984) and run through
+  `pool/signature_test.py`: units digits 0: 11%, 1: 4%, 6: 33%, 9: 22%, digit-0/1 share 15% (target 43%), digit-2/3/5/9
+  share 33% (target 13%), THE=972 coverage 8/27. **Screen only (N=27, M-grade digits): not the target's signature.**
+  This is presumably the Jefferson-Monroe code the ChatGPT sprint tied to the Monroe reel-9 printed form (campaign H12,
+  THE=812, one-part 1-1700, already excluded on range); a full read of the note would settle which table, and is not
+  this line's target.
+
+**Verdict:** search result, not a negative -- the Jefferson Papers hold no numeric key catalogued in the target's
+years, and the one 1803 numeric witness screens flat. Requests: loc.gov 7 (2 collection searches, 5 item JSON; one
+timed out at 40 s and was not retried), tile.loc.gov 10 (9 previews, 1 master); >= 1.6 s apart; 0 subagents (this
+session's own looks only). Cost: about 20 minutes by the clock; PLAN.md records the row's 3 USD estimate.
+Container note for later steps: no PDF tooling and no Pillow at start (`pip install pillow` works; `pypdf` and
+`pdfminer.six` install but fail on the container's broken `cryptography` module; `apt-get` refused).
