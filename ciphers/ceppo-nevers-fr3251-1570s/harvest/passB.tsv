@@ -1,0 +1,134 @@
+passage	pos	sign_id	alt	conf	note
+P1	1	S67		M	f-like ascender+loop+cross-tick; also resembles S74/S77
+P1	2	S93	S22	M	hook+large closing loop, cursive w-shape
+P1	3	S30	S49	L	tilted line with dot above and below (division mark); indistinguishable from S49 on this sheet
+P1	4	S37		H	loop with ascender; faint tick/accent above the stem not represented on sheet, noted only
+P1	5	S75	S73	M	plain thick plus sign
+P1	6	?	S13	L	circle bisected by a horizontal tie-line, larger than the small o-rings on the sheet; no confident match
+P1	7	S89		H	double horizontal stroke (equals sign)
+P1	8	S17		H	cursive Z
+P1	9	S31		H	small loop + long flat tail (cursive L)
+P1	10	S16		M	closed triangle with small hook/extra stroke at apex and base line
+P1	11	S75	S73	M	plain thick plus sign
+P1	12	S52		H	digit 3
+P1	13	S75	S73	M	plain thick plus sign
+P1	14	S37		M	loop+ascender; small apostrophe-like tick above stem, not on sheet
+P1	15	S93	S22	M	hook+large closing loop, w-shape; sits at crop join with f11_A_1360, duplicate on that side removed
+P1	16	S94	S55	M	circle over a cross (Venus-like symbol); S55 nearly identical alt
+P1	17	S52		H	digit 3
+P1	18	S23		M	two thin diverging strokes with a mid dot, italic-A type
+P1	19	S53		M	loop crossed by a long diagonal stem (phi-like ligature)
+P1	20	S35		H	m with dot above
+P1	21	S74	S37	M	hook ascender curving into small loop
+P1	22	S62		H	vertical stroke with beta-like double loop
+P1	23	S30	S49	L	tilted line with flanking dots (division mark)
+P1	24	?	S13	L	circle with horizontal double-tie-line through it; recurring shape with no confident sheet match
+P1	25	S62		H	vertical stroke with beta-like double loop
+P1	26	?	S13	L	circle with horizontal double-tie-line through it; recurring shape with no confident sheet match
+P1	27	S53		M	loop crossed by long diagonal stem (phi-like ligature)
+P1	28	S74	S37	M	hook ascender curving into small loop
+P1	29	S65		H	digit 8 with hooked tail
+P1	30	S23		M	two thin diverging strokes with a mid dot; sits at crop join with f11_A_2160, duplicate removed
+P1	31	S97		M	curling hook flowing into a diagonal stroke (lambda-like)
+P1	32	S24	S88	L	crossed hash/not-equal mark; indistinguishable from S88 on this sheet
+P1	33	S62		H	vertical stroke with beta-like double loop
+P1	34	S61	S94	M	oval loop over a plain descender, no crossbar (digit-9-like)
+P1	35	S65		H	digit 8 with hooked tail
+P1	36	S31		H	small loop + long flat tail (cursive L)
+P1	37	S50		H	"6" loop joined to a cursive "s" tail, matches sheet ligature closely
+P2	1	S23		M	two thin diverging strokes with a mid dot, italic-A type
+P2	2	S16		H	closed triangle with hook/extra stroke at apex and base line
+P2	3	?	S13	L	circle with horizontal tie-line through it; recurring, no confident match
+P2	4	S24	S88	L	crossed hash mark
+P2	5	S37		M	loop+ascender; tick above stem noted only
+P2	6	S45	S47	M	cursive e/c hook; small tick above noted only
+P2	7	S56		M	"t" crossed stroke merging into a "3" curl (ts ligature)
+P2	8	S65		H	digit 8 with hooked tail
+P2	9	S56		M	ts ligature, second occurrence
+P2	10	S75	S73	M	plain thick plus sign
+P2	11	S31		H	small loop + long flat tail
+P2	12	S97		M	curling hook flowing into diagonal stroke
+P2	13	?	S13	L	circle with horizontal tie-line through it; recurring, no confident match
+P2	14	S89		H	equals sign
+P2	15	S52		H	digit 3
+P2	16	S37		M	loop+ascender; apostrophe-like tick above, noted only
+P2	17	S24	S88	L	crossed hash mark
+P2	18	S17		H	cursive Z
+P2	19	S53		M	phi-like loop+stem ligature
+P2	20	S47	S45	M	cursive open loop (epsilon-like)
+P2	21	S13	S95	M	small closed oval ring
+P2	22	S17		H	cursive Z
+P2	23	S62		H	vertical stroke with beta-like double loop
+P2	24	S30	S49	L	tilted division line with flanking dots
+P2	25	S75	S73	M	plain thick plus sign
+P2	26	S94	S55	M	circle over cross (Venus-like symbol)
+P2	27	S93	S22	M	hook+large closing loop, w-shape
+P2	28	S67		M	vertical stroke, cross-tick, loop at bottom (f-like)
+P2	29	S61	S94	M	oval loop over plain descender
+P2	30	S75	S73	M	plain thick plus sign
+P2	31	?	S17	L	only the very top stroke survives at the join between f11_B_1080 and f11_B_1880; likely a z-type sign but too clipped to be sure
+P2	32	S37	S74	M	loop ascender, joins f11_B_1880
+P2	33	S13	S95	M	small clean closed oval ring, immediately before plain "Con"
+P3	1	S65		M	digit 8; first sign of passage, partly clipped at line start per brief
+P3	2	S30	S49	L	tilted division line with flanking dots
+P3	3	S13	S95	M	small closed oval ring
+P3	4	S62		H	vertical stroke with beta-like double loop
+P3	5	S89		H	equals sign
+P3	6	S17		H	cursive Z
+P3	7	S31		H	small loop + long flat tail
+P3	8	S53		M	phi-like loop+stem ligature
+P3	9	S57		M	small open backward-C shape
+P3	10	?	S13	L	circle with horizontal tie-line through it; recurring, no confident match
+P3	11	S13	S95	M	small closed oval ring
+P3	12	S61	S94	M	oval loop over plain descender
+P3	13	S75	S73	M	plain thick plus sign
+P3	14	S37		M	loop+ascender; apostrophe tick above, noted only
+P3	15	S65		H	digit 8 with hooked tail
+P3	16	S24	S88	L	crossed hash mark
+P3	17	S62		H	vertical stroke with beta-like double loop
+P3	18	S89		H	equals sign; sits at join with f11_B_3210, duplicate removed
+P3	19	S17		H	cursive Z
+P3	20	?		L	simple flowing cursive "s" curve standing alone; no isolated match on sheet (closest is the tail of S50's ligature)
+P3	21	S65		H	digit 8, last sign of the line
+P4	1	S23		M	two thin diverging strokes with a mid dot
+P4	2	S37		M	loop+ascender; tick above stem noted only
+P4	3	S65		H	digit 8, tied by horizontal stroke to neighbour
+P4	4	S31		M	oval loop with long curving tail
+P4	5	S42		H	plain crossed X, no base line
+P4	6	S17		M	cursive Z; sits at crop join with f11_C_1190, duplicate removed
+P4	7	S62		H	vertical stroke with beta-like double loop
+P4	8	S65		H	digit 8 with hooked tail
+P4	9	S31		H	small loop + long flat tail
+P4	10	S13	S95	M	small closed oval ring
+P4	11	S61	S94	M	oval loop over plain descender
+P4	12	S47	S45	M	cursive open loop (epsilon-like)
+P4	13	S23		M	two thin diverging strokes with a mid dot
+P4	14	S93	S22	M	hook+large closing loop, w-shape; sits at crop join with f11_C_1190, duplicate removed
+P4	15	S31		H	small loop + long flat tail
+P4	16	S62		H	vertical stroke with beta-like double loop
+P4	17	S37		M	loop+ascender; tick above stem noted only
+P4	18	S61	S94	M	oval loop over plain descender
+P4	19	S17		H	cursive Z
+P4	20	S93	S22	M	hook+large closing loop, w-shape
+P4	21	S65		H	digit 8 with hooked tail
+P4	22	S47	S45	M	cursive open loop with dot (epsilon-like)
+P4	23	S62		H	vertical stroke with beta-like double loop
+P4	24	S93	S22	M	hook+large closing loop, w-shape
+P4	25	S65		H	digit 8 with hooked tail, last sign before plain "alche"
+P5	1	S65		M	digit 8, heavily inked at line start
+P5	2	S67		M	vertical stroke, cross-tick, loop at bottom (f-like)
+P5	3	S61	S94	M	oval loop over plain descender, tied to next sign
+P5	4	S42		H	plain crossed X, tied to previous sign
+P5	5	S62		H	vertical stroke with beta-like double loop
+P5	6	S93	S22	M	hook+large closing loop, w-shape
+P5	7	S47	S45	M	cursive open loop (epsilon-like)
+P5	8	S17		H	cursive Z
+P5	9	S30	S49	L	tilted division line with flanking dots
+P5	10	S70		M	V-shape crossed by a horizontal bar
+P5	11	S31		H	small loop + long flat tail
+P5	12	S24	S88	L	crossed hash mark
+P5	13	S61	S94	M	oval loop with small tick above
+P5	14	S75	S73	M	plain thick plus sign
+P5	15	S25		M	cursive n
+P5	16	S47	S45	M	cursive open loop (epsilon-like)
+P5	17	S13	S95	M	small closed oval ring, last sign of the crop

@@ -45,9 +45,9 @@ def score(model, passages, m):
     # score each passage separately (they are separate cipher insertions), letter-weighted mean
     tot = n = 0
     for seq in passages.values():
-        t = decode(seq, m).replace("_", "")
-        if len(t) >= 4:
-            tot += model.score(t) * (len(t) - 3); n += len(t) - 3
+        for t in decode(seq, m).split("_"):  # score contiguous runs only; '?' breaks a run
+            if len(t) >= 4:
+                tot += model.score(t) * (len(t) - 3); n += len(t) - 3
     return tot / n if n else -9.9
 
 
@@ -98,7 +98,9 @@ def main():
         homs.setdefault(v, []).append(i)
     ids = list(m)
     null_rate = nnull / nsig if nsig else 0.0
-    sizes = [len(decode(s, m).replace("_", "")) for s in passages.values()]
+    unk_rate = sum(1 for s in passages.values() for x in s if x not in m) / nsig if nsig else 0.0
+    sizes = [sum(1 for x in s if m.get(x) not in (None, "null")) + sum(1 for x in s if x not in m)
+             for s in passages.values()]
     firsts = 0; zs = []
     for w in range(a.windows):
         cp = {}
@@ -112,6 +114,7 @@ def main():
                 if rng.random() < null_rate:
                     seq.append(rng.choice(homs["null"]))
             seq = [rng.choice(ids) if rng.random() < a.err else s for s in seq]
+            seq = ["?" if rng.random() < unk_rate else s for s in seq]  # same unread rate as the target
             cp[f"c{pi}"] = seq
         r2, rk, mu2, sd2, mx2, z2 = shuffle_test(model, cp, m, a.shuffles, rng)
         firsts += rk == 1; zs.append(z2)

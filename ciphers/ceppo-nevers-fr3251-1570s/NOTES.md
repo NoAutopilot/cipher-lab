@@ -376,3 +376,85 @@ gives a reading); site:ciphermysteries.com Nevers cipher Birago (no hit). (c) Bo
 28 Sept 2026 and grepped for 3251 / birago: only targets/birago (f.119). Result: no reading or decipherment of
 the ff.11, 21v, 35, 87 (Ceppo-Nevers) or ff.138-184 (1572) letters located on the open web or the three blogs.
 Requests: web search 7, cryptiana.blogspot.com 2, github.com 1 clone.
+
+## HARVEST-A: f.11r (no.6, Saluzzo 14 Sept 1570) decoded with the printed key (28 Sept 2026)
+
+Brief `.claude/briefs/runs/2026-09-28-parent-harvest-A.md` (KEY-ADJACENT rank 3). Intake gate: web and blog check
+above, `tools/intake_gate_check.py ceppo-nevers-fr3251-1570s` exit 0. No class, no status change here (the
+orchestrator's); rule 10 wording only.
+
+**Material.** Gallica btv1b9060248g canvas 12 (f.11r, foliation '11' confirmed on the 27 Sept overview), one native
+region `pct:51,36,48,10` (`images/f11/src_f11r_cipherband.jpg`, 4040x583) after two mis-aimed regions of the same
+canvas. Five cipher insertions on three lines: P1 after "Dete auiso per l'altre mie a V.Ecc.a di l'andata" to
+"quali molti attribuiscano fra l'altre occ.ni"; P2 to "Con la gionta."; P3 after it to the line end; P4 after
+"Proponendo" to "al che da assai credenza l'intendersi"; P5 after it to the line end. 11 line crops
+(`images/f11/manifest.json`, hand-boxed around an ink-profile line centre).
+
+**Blind transcription.** A value-blind sign sheet (`harvest/sign_sheet_blind.png`): the 55 cells of Tomokiyo's
+nevers_add1.png cut out and relabelled S10-S97 by a seeded shuffle, letter headers removed; the id-to-value map
+(`harvest/sign_id_map.json`) was not given to the readers. Two independent Sonnet subagent passes on the crops only:
+`harvest/passA.tsv` (132 signs), `harvest/passB.tsv` (133). Agreement by alignment 83/134 = 0.62. Both passes
+missed three sheet signs this worker found on the image (barred theta S69, barred 8 S80, the 't3' ligature S56 --
+each read as two signs or as a look-alike) and split on the look-alike pairs S30/S49 (r/n, a stroke between two
+dots), S24/S88 (o/t, crossed strokes) and S37/S74 (c/m, a 6 with and without a tick). Reconciled by this worker by
+shape against the sheet, one pass over native crops: `harvest/passC_reconciled.tsv` (135 signs).
+**Bias caveat:** the reconciler had already seen the two passes' decodes when reconciling, so the reconciled
+sequence is not blind; the blind pass B number below is the one without that bias.
+
+**Control (rule 3), `harvest/decode_control.py`.** Real key (as printed) against 200 keys made by shuffling the
+value column of the same 55-sign sheet; mean log10 4-gram per letter, it16dip corpus, contiguous runs only.
+Power control: 20 it16dip windows at the target's own passage lengths, enciphered with the same key and null rate,
+20% of signs replaced at random, same 200-shuffle test.
+
+| transcription | letters | real key | shuffles mean / max | z | rank of 201 | power control (rank 1) |
+|---|---|---|---|---|---|---|
+| reconciled (not blind) | 127 | -1.290 | -2.063 / -1.605 | 5.09 | 1 | 20/20 |
+| pass B (blind) | 132 | -1.534 | -2.065 / -1.499 | 3.03 | 2 | 20/20 |
+| pass A (blind) | 136 | -1.885 | -2.067 / -1.659 | 1.11 | 36 | 20/20 |
+| consensus only (60 signs where A, B and reconciled agree) | 60 | -0.912 | -2.144 / -0.400 | 1.22 | 6 | 4/20 -- non-test, too few contiguous runs |
+
+**Reading** (`tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s`, `decode.json` -> `harvest/reading_f11.txt`,
+`--check` passes; tokens 135: H 0, C 0, S 53, M 68, I 12, U 2):
+
+```
+P1 | inmofedilpremisenteconfortcandaooal
+P2 | nprocurarelaresoitucionesi·hecg
+P3 | ancodilprchemaoodi·[et]
+P4 | ncauioalchunilochiinsauoia
+P5 | [et]uoiuinolomequc
+```
+
+Words read: P2 "...procurare la res[t]itucione..." (the o at P2 pos 16 is the S24/S88 crossed-stroke pair; t
+fits); P4 "[Proponendo i]n cau(i)o [= cambio?] alchuni lochi in Sauoia"; P1 "...di l-... con fort-...". Grades:
+S where the sign's printed value is used and both blind passes agree with the reconciliation, M where they do not,
+I for 12 positions where the printed value is overridden (`harvest/exceptions_f11.tsv`): (a) the pound-shaped sign
+(printed under m, row 2) reads l in la, di l-, alchuni, lochi -- 7 positions; (b) a double-barred theta, not in the
+printed table (its single-barred theta is f), reads r in procurare, restitucione -- 4 positions; (c) the ticked 6
+(printed m, row 1) read s once in re-s-titucione. Tomokiyo's own note on this key ("allows reading of the
+undeciphered letter ... but not quite") already signals that the table is incomplete.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file
+ciphers/ceppo-nevers-fr3251-1570s/harvest/reading_f11_letters.txt`, pasted):
+
+```
+FAIL language: score=-1.289, null_p99=-1.623, real_p05=-0.958, real_median=-0.822, mode=both, N=127
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Far above the shuffled null, below real prose: a partial reading with 68 M tokens, as the grades say.
+
+**What this shows and does not.** The Ceppo-Nevers key as printed reads Birago's f.11r insertions better than 200 of
+200 shuffles on the reconciled transcription and 199 of 200 on a fully blind pass, with Italian words recoverable
+(procurare la restitucione; alchuni lochi in Sauoia). It does not give a continuous text: P1, P3 and P5 are mostly
+unread. Searched for a prior reading as logged in the web and blog section above; not found there. No novelty
+claim (rule 10).
+
+**Next step (named):** a fresh session re-reconciles passA/passB blind to values (the bias caveat above) and runs
+`harvest/decode_control.py`; then the other three targets (f.21v canvas 23 left page, f.35 canvas 36 -- about three
+cipher lines at the foot of the recto, overview fetched 28 Sept, foliation '35' confirmed --, f.87 canvas 88) the
+same way, which would also test the three variant values. Suggested status for the orchestrator: `partial`
+(rule 5, control beaten), not set here.
+
+Requests: gallica.bnf.fr 4 (three native regions of canvas 12, one 1000px overview of canvas 36), all >=2s apart,
+browser UA; archive.org 2 (advancedsearch, one _djvu.txt for rank 8); web search 7; cryptiana.blogspot.com 2;
+github.com 1 clone. Subagents: 2 (the blind passes).

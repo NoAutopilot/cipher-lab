@@ -1,0 +1,25 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "harvest/ciphertext_f11.tsv",
+   "key": "harvest/key_f11.tsv",
+   "exceptions": "harvest/exceptions_f11.tsv",
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f11.txt",
+   "tokens": "harvest/reading_f11_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
+  }
+ ]
+}
