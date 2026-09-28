@@ -2081,3 +2081,12 @@ second letter in the same hand, with the permuted-map control beaten three times
 second-letter support audit 1 said the L10 fragment lacked. For LANE VO3 / the orchestrator: H86-H87 do not depend on
 this; a verifier pass on f.108v (print search, the resolution's word list against the reconciled draft's flagged
 columns) is the next step it suggests (H88).
+
+## Campaign step H86 (28 Sept 2026, 15:27 UTC, runner session_01NQpd6L9ZvLvjU1L7ttFmZs) -- answered from the passes, no call
+
+The two unread signs of f.61r (`scripts/f61_skeleton.txt` '?') are already described by the U2 pass
+(`scripts/passU2_classes.tsv`): L02 pos 2 "two thick vertical stems between a heavy top bar and a heavy bottom bar (Roman
+II or pi with a double bar); no 4 above it, so not 4PI" -- no atlas class and no cell; L04 pos 2 "an S/8-like loop joined
+to a b/d form, written after 'Come'; it may be a handwriting abbreviation (e.g. S.M.) rather than cipher" -- probably
+clear text. A blind atlas-match call would re-ask what the reader already answered in the atlas's own terms; neither
+sign joins a cell, so both stay unread in the skeleton. No cost.
