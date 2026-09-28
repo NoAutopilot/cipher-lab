@@ -513,3 +513,32 @@ and no cipher entry; the Gallatin Papers themselves (NYHS, microfilm edition) ha
 the cloud. Positive control for step 1 not run explicitly (the volume's 1808 embargo letters were not grepped); the
 result is a search result at the print level only: **no evidence that Gallatin was the correspondent; not excluded.**
 Requests: archive.org 1, be-api 3, findingaids.library.nyu.edu 1; 0 subagents.
+
+## Step B22 (28 Sept 2026, 04:34-04:38 UTC) -- row burstiness: CONTROL BELOW GATE, non-test
+
+`b22/burstiness.py`: mean over rows with >= 3 tokens of (median gap between occurrences) / (uniform expectation),
+null = positions permuted. Positive control (rows = stems, 60 letters): only 18 of 60 below their own p05 (gate 45);
+negative control (Bf buckets): 13 of 60 (gate <= 6). Neither control separates -- English stems in a 369-token
+window are not bursty enough for a median-gap statistic, and the bucket layout is nearly as bursty as stems. Target
+printed, not licensed: 0.811 over 44 rows, 34th percentile. Dropped as a non-test; not re-tuned (rule 3).
+
+## Step B24 (28 Sept 2026, 04:35-04:38 UTC) -- row-count distribution: the target's rows are FLATTER than either reading's control band
+
+`b24/rowcounts.py`, 60 letters per control:
+
+| statistic | target | rows = stems (A): mean, p05-p95, pct | Bf buckets: mean, p05-p95, pct |
+|---|---|---|---|
+| top-10 rows' share of row tokens | 0.409 | 0.511, 0.444-0.618, 2 | 0.489, 0.444-0.550, 0 |
+| largest row's share | 0.074 | 0.128, 0.084-0.187, 2 | 0.120, 0.079-0.165, 5 |
+| Zipf slope (rows with >= 2 tokens) | -0.725 | -0.860, -0.98 to -0.77, 98 | -0.839, -0.92 to -0.76, 100 |
+| rows used | 73 | 72.2, 63-78, 42 | 73.2, 66-78, 37 |
+
+**Result, both controls outside the target:** the target uses its 73 rows more evenly than either a one-word-per-row
+or a 22-word-bucket layout of English produces -- its largest row (17, 26 tokens) carries 7.4% of row tokens where
+"the" alone gives 8-19% in both controls, and its top ten rows carry 41% against 44-62%. The two readings B2 left
+standing are both excluded in this form (control-backed); the flatness is what row-level homophony would produce
+(the commonest words spread over two or more rows -- the adjacent rich rows 17 and 18, 47 and 48, 11 and 12 are the
+candidates), or a plaintext whose function words are largely NOT coded (carried by the shorthand or omitted), or a
+non-English-like token stream. Named next step (not run here): a homophone test -- do rows 17 and 18 (or 47/48)
+ever stand adjacent, and do their neighbour profiles match -- needs an instrument with a passing control, which B2b
+showed neighbour classes are not at this N. Requests: none; 0 subagents; about 3 minutes by the clock each.

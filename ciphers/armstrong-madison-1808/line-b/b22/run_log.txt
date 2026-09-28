@@ -1,0 +1,4 @@
+positive control (A, rows = stems): stat mean 0.784, letters below own p05: 18/60
+negative control (Bf buckets):      stat mean 0.807, letters below own p05: 13/60
+GATE: NOT MET
+TARGET: stat 0.811 over 44 rows; null p05 0.747; percentile 34.4  [printed, not licensed]

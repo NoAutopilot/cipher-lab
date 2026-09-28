@@ -1,0 +1,9 @@
+TARGET {'top10': 0.409, 'zipf': -0.725, 'rows': 73, 'max_row': 0.074}
+A rows=stems  top10    mean   0.511 p05   0.444 p95   0.618 target   0.409 pct     2
+A rows=stems  zipf     mean  -0.860 p05  -0.983 p95  -0.773 target  -0.725 pct    98
+A rows=stems  rows     mean  72.150 p05  63.000 p95  78.000 target  73.000 pct    42
+A rows=stems  max_row  mean   0.128 p05   0.084 p95   0.187 target   0.074 pct     2
+Bf buckets    top10    mean   0.489 p05   0.444 p95   0.550 target   0.409 pct     0
+Bf buckets    zipf     mean  -0.839 p05  -0.917 p95  -0.761 target  -0.725 pct   100
+Bf buckets    rows     mean  73.183 p05  66.000 p95  78.000 target  73.000 pct    37
+Bf buckets    max_row  mean   0.120 p05   0.079 p95   0.165 target   0.074 pct     5
