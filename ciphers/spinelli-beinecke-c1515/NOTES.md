@@ -894,3 +894,61 @@ of the 7 Sept 1519 letter.
 
 **Requests:** doi.org -> qr.urfu.ru 1, www.googleapis.com 2. **Cost:** recorded as 0.3 USD (est 0.5). No credentials
 printed, no AskUserQuestion, rule 10 wording, no other target touched.
+
+## Campaign step H22 (28 Sept 2026, 01:50-02:02 UTC)
+
+Runner session_01213SyYPVrRii7MWRZbyU3S (replacing session_016fvFiTTAhQng2VqbiBDmRE, which stopped at 00:55 UTC at
+717k context). Hypothesis H22: a design-matched control for the solver route -- Italian text under a substitution in
+which the signs of about six letters have collapsed into one symbol (the letter's HOOK family, 54 of 262 signs, the
+H14 split failed at 32.7%) and about 17% of the tokens are nulls (44 of 262 by the key-as-read map, H4) -- so that a
+solver failure on the letter can be read against a control of the same design, not only the same N and K (rule 3,
+the Salviati lesson; H16 logged the masc run as a design-mismatched non-test for exactly this reason).
+
+**Tool change (Usage 8: an option, not a private script):** `tools/families/homophonic.py` now takes `--param merge=k
+nulls=p` (`null_types`, `merge_share` optional). The control window is N - round(N*p) letters; the k merged letters
+are the random k-subset of the window's letters whose combined share is nearest the target's own top-sign share
+over its letter tokens (HOOK 54/218 = 0.248); the rest get K - 1 - null_types signs by the ordinary allotment; nulls
+sit at random positions, drawn uniformly over the null signs; the returned plain string carries '-' at null
+positions and `score_recovery` skips them (recovery = letter positions read correctly). Because the merged symbol
+can read at most one of its letters right, `make_control` prints the design's recovery ceiling beside the merged
+letters. Offline test `tools/tests/test_homophonic_merge.py` (shape, exact null count, one shared sign, null signs
+map to '-', ceiling arithmetic, `merge=0 nulls=0` byte-identical to the old control) passes; the older
+`test_homophonic_family.py` still passes. `tools/family_run.py`'s family listing names the option. Neither
+`block_homophonic` nor `nomenclator` models a many-letters-to-one-sign symbol (docstrings read first, as the row
+asked), so the option went on the homophonic family.
+
+**Result: the design-matched CONTROL reads far under the gate -- the annealer cannot read this design at the
+letter's own length, so the target was never run (exit 3, rule 3 mechanically).** All rows are in HYPOTHESES.md
+(the tool's own table, 01:50-01:5x UTC), it16 corpora, N=262 (the target's own, `--tokens space`), K=25, 8
+restarts, seeds 1-3:
+
+| control design | recovery mean (range) | ceiling | gate 0.6 |
+|---|---|---|---|
+| merge=6 nulls=0.17 (the letter's design) | **0.120 (0.009-0.258)** | 0.84-0.86 | NOT met |
+| merge=6 nulls=0 (merge alone) | 0.388 (0.340-0.462) | 0.86-0.90 | NOT met |
+| merge=0 nulls=0.17 (nulls alone) | 0.966 (0.963-0.972) | 1.00 | met |
+| plain substitution (H16, for reference) | 0.959 (0.927-0.989) | 1.00 | met |
+| merge=6 nulls=0.17 at projected pool N=1000 (--control-n) | 0.479 (0.304-0.763) | 0.82-0.83 | NOT met |
+| merge=6 nulls=0.17 at projected pool N=2000, iters 40000 | 0.294 (0.000-0.566) | 0.83-0.85 | NOT met (seed 1 unconverged: 0.000, score 400 worse than seed 2) |
+| merge=6 nulls=0.17 at projected pool N=2000, iters 150000 (scaled to N) | **0.706 (0.610-0.761)** | 0.83-0.85 | **met** |
+
+Reading of the ablation: **nulls alone cost the solver nothing (0.966); the merged symbol alone drops it to 0.388,
+and the two together to 0.120** -- the limit is the one-sign-for-several-letters symbol (HOOK at 21-25% of the
+letter tokens), not the nulls and not the length as such. The design-matched control's best scores (-702 to -710)
+bracket the target's own masc score from H16 (-701.9), where the clean masc controls scored -547 to -657: to the
+annealer the letter looks like this design, not like a plain substitution. At a projected pool of 1000 signs one
+seed of three read 0.763, so the design is not unreadable in principle; at a projected pool of 2000 signs with the anneal's iterations scaled to the length (150000, the 40000 default is unconverged there: seed 1 read 0.000 at 40000 and 0.610 at 150000 on the same window), all three seeds clear the gate, mean 0.706 -- the sign pool the selection rule already asks for (2,000 or more signs of one sender, office and key) is about where this design becomes readable by the tool, which prices H17's reproduction order (Tommaso's 1510-22 letters, ff.2571-87, and Piero's 30 'part in cipher').
+
+**What this settles for the campaign:** the solver route on the single letter as coded is **untestable at its
+length by this family** (rule 3: a control under its own gate licenses no reading of a target FAIL either way), a
+result logged, not a negative on the letter. The routes that remain are (a) shrinking the HOOK share in the
+transcription itself (the boxes both H14 passes agreed on -- 16 of 49 -- are a partial split at grade AB; H27), (b) a
+solver that treats the merged sign as a per-position wildcard scored under the n-gram model, whose ceiling is 1.0
+(H25), (c) the known phrase as a pattern crib on the atlas codes (H28), and (d) the documents and the pool (H6/H8,
+H17). No reading, no class change, rule 10 wording throughout.
+
+**Controls:** every number above is a control; no target run happened. **Files:** `tools/families/homophonic.py`,
+`tools/tests/test_homophonic_merge.py`, `tools/family_run.py` (listing line), `HYPOTHESES.md` rows of 01:50-01:5x,
+no decode files (control-only and gated runs write none). **Cost:** CPU only (each 3-seed battery 20 s to a few
+minutes), no vision calls, no network requests, no credentials -- recorded as 2.0 USD against the 4 est (the
+runner's own turns). No AskUserQuestion, no other target touched.
