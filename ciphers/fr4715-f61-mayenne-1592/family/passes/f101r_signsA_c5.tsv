@@ -1,0 +1,522 @@
+line	pos	sign	conf	segment	x_px	note
+L33	1	OTHER	l	s1	60	faint grey t-like mark at row level
+L33	2	OTHER	l	s1	130	faint grey y-like mark
+L33	3	VBAR_A	l	s1	200	faint grey
+L33	4	HASH4	m	s1	300	4 above crossed stems
+L33	5	PHI	h	s1	420	
+L33	6	VBAR_A	h	s1	515	
+L33	7	VBAR_A	m	s1	610	small
+L33	8	4TRI	m	s1	690	
+L33	9	VBAR_A	m	s1	830	
+L33	10	VBAR_A	m	s1	940	long bar
+L33	11	4STEM	l	s1	1020	joined to next
+L33	12	PHI	m	s1	1080	
+L33	13	4TRI	m	s1	1210	
+L33	14	VBAR_B	m	s1	1340	alt VBAR_A
+L33	15	PHI	h	s1	1460	
+L33	16	VBAR_A	h	s2	160	
+L33	17	VBAR_A	m	s2	240	
+L33	18	PHI	h	s2	300	
+L33	19	VBAR_A	h	s2	410	
+L33	20	H24	m	s2	520	
+L33	21	PHI	m	s2	650	loops on stem
+L33	22	INF	m	s2	770	
+L33	23	VBAR_A	m	s2	870	
+L33	24	PHI	m	s2	930	
+L33	25	PHI	m	s2	1010	
+L33	26	4TRI	m	s2	1150	
+L33	27	INF	m	s2	1290	alt LOOPS
+L33	28	VBAR_A	h	s2	1430	
+L33	29	C43	m	s3	150	
+L33	30	H24	m	s3	260	
+L33	31	VBAR_A	m	s3	340	
+L33	32	HASH4	m	s3	480	
+L33	33	PHI	h	s3	590	dark loop
+L33	34	EBR_B	m	s3	690	
+L33	35	C43	l	s3	770	
+L33	36	PHI	h	s3	870	
+L33	37	PHI	h	s3	960	
+L33	38	EBR_B	m	s3	1060	
+L33	39	H24	m	s3	1120	
+L33	40	VBAR_A	m	s3	1230	
+L33	41	H24	m	s3	1300	
+L33	42	PHI	m	s3	1440	loops then stem
+L33	43	4TRI	m	s4	190	
+L33	44	OTHER	l	s4	330	n-like, alt CH
+L33	45	EBR_A	l	s4	480	L-like
+L33	46	PHI	h	s4	550	
+L33	47	VBAR_A	h	s4	640	
+L33	48	BETA	m	s4	780	
+L33	49	PHI	h	s4	850	
+L33	50	VBAR_A	h	s4	940	
+L33	51	BETA	m	s4	1070	
+L33	52	PHI	h	s4	1160	
+L33	53	VBAR_A	m	s4	1260	
+L33	54	PHI	h	s4	1390	
+L33	55	4TRI	m	s4	1480	
+L33	56	H24	m	s5	210	
+L33	57	VBAR_A	m	s5	300	
+L33	58	PHI	m	s5	400	loop before stem
+L33	59	4TRI	m	s5	500	
+L33	60	VBAR_A	m	s5	610	
+L33	61	HASH4	m	s5	700	
+L33	62	PHI	h	s5	820	
+L33	63	VBAR_A	m	s5	880	
+L33	64	VBAR_A	m	s5	950	
+L33	65	4TRI	l	s5	1040	alt 4STEM
+L34	1	VBAR_B	m	s1	70	dark
+L34	2	H24	h	s1	220	
+L34	3	EBR_B	m	s1	290	
+L34	4	EBR_B	m	s1	440	
+L34	5	PHI	m	s1	510	
+L34	6	INF	m	s1	600	alt LOOPS
+L34	7	PHI	h	s1	730	
+L34	8	VBAR_A	h	s1	860	
+L34	9	PHI	h	s1	940	
+L34	10	H24	h	s1	1060	
+L34	11	VBAR_A	m	s1	1160	
+L34	12	DBL	m	s1	1270	8 on stem, alt PHI
+L34	13	DBL	m	s1	1370	8 on stem, alt PHI
+L34	14	VBAR_A	h	s1	1450	
+L34	15	4TRI	m	s2	170	
+L34	16	LOOPS	m	s2	290	
+L34	17	4TRI	m	s2	420	
+L34	18	4STEM	m	s2	510	
+L34	19	PHI	m	s2	600	
+L34	20	OTHER	m	s2	760	dark solid spade/club head over three bars on a stem, alt ISH
+L34	21	4TRI	m	s2	900	
+L34	22	DBL	m	s2	1050	alt PHI
+L34	23	EBR_B	m	s2	1180	
+L34	24	PHI	m	s2	1240	
+L34	25	LOOPS	m	s2	1340	alt INF
+L34	26	PHI	h	s2	1440	
+L34	27	VBAR_A	h	s3	170	
+L34	28	LOOPS	m	s3	250	
+L34	29	VBAR_A	m	s3	320	
+L34	30	HASH4	l	s3	430	crossed by a stroke
+L34	31	VBAR_A	m	s3	560	
+L34	32	PHI	h	s3	640	
+L34	33	PHI	h	s3	730	
+L34	34	4TRI	m	s3	840	
+L34	35	PHI	m	s3	990	small loops either side of stem
+L34	36	EBR_B	m	s3	1080	
+L34	37	PHI	h	s3	1170	
+L34	38	4TRI	m	s3	1290	
+L34	39	PHI	h	s3	1400	
+L34	40	VBAR_A	h	s3	1490	
+L34	41	4STEM	m	s4	280	
+L34	42	LOOPS	l	s4	390	under a horizontal strike line
+L34	43	OTHER	l	s4	460	w-like, under strike line
+L34	44	H24	l	s4	530	under strike line
+L34	45	VBAR_A	l	s4	600	under strike line
+L34	46	HASH4	m	s4	760	
+L34	47	INF	m	s4	830	
+L34	48	PHI	m	s4	910	
+L34	49	C43	l	s4	980	
+L34	50	4TRI	m	s4	1090	
+L34	51	LOOPS	m	s4	1190	
+L34	52	4TRI	m	s4	1270	
+L34	53	4STEM	m	s4	1410	
+L34	54	LOOPS	m	s4	1500	
+L34	55	4TRI	m	s5	230	
+L34	56	OTHER	l	s5	300	bare stem
+L34	57	BETA	m	s5	350	
+L34	58	PHI	h	s5	440	
+L34	59	VBAR_A	m	s5	520	
+L34	60	PHI	m	s5	630	
+L34	61	4TRI	m	s5	720	
+L34	62	4TRI	m	s5	820	
+L34	63	INF	m	s5	920	
+L34	64	4TRI	m	s5	1000	
+L34	65	4TRI	m	s5	1100	
+L35	1	VBAR_A	m	s1	70	faint
+L35	2	EBR_A	l	s1	200	dark E-like with hooked foot, alt EBR_B
+L35	3	H24	h	s1	300	
+L35	4	4TRI	m	s1	400	
+L35	5	VBAR_A	m	s1	510	
+L35	6	PHI	m	s1	580	
+L35	7	DBL	m	s1	660	alt PHI
+L35	8	PHI	h	s1	790	
+L35	9	VBAR_A	h	s1	880	
+L35	10	VBAR_A	m	s1	960	
+L35	11	HASH4	m	s1	1100	
+L35	12	PHI	h	s1	1210	
+L35	13	EBR_B	m	s1	1320	
+L35	14	PHI	h	s1	1370	
+L35	15	VBAR_A	h	s1	1460	
+L35	16	VBAR_A	m	s2	170	
+L35	17	4TRI	m	s2	240	
+L35	18	VBAR_A	m	s2	360	
+L35	19	HASH4	m	s2	500	alt 4STEM
+L35	20	INF	m	s2	610	
+L35	21	H24	h	s2	720	
+L35	22	EBR_B	m	s2	800	
+L35	23	PHI	h	s2	950	
+L35	24	VBAR_A	h	s2	1060	
+L35	25	VBAR_A	m	s2	1160	
+L35	26	PHI	m	s2	1230	loops either side of stem
+L35	27	H24	h	s2	1370	
+L35	28	VBAR_A	m	s2	1480	
+L35	29	PHI	m	s3	210	loops either side of stem
+L35	30	H24	h	s3	340	
+L35	31	PHI	h	s3	450	
+L35	32	4TRI	h	s3	550	
+L35	33	PHI	h	s3	720	
+L35	34	4TRI	h	s3	840	
+L35	35	H24	h	s3	950	
+L35	36	VBAR_A	m	s3	1090	
+L35	37	PHI	m	s3	1170	loops either side of stem
+L35	38	4TRI	h	s3	1300	
+L35	39	4TRI	h	s3	1440	
+L35	40	4TRI	h	s4	150	
+L35	41	PHI	m	s4	270	
+L35	42	EBR_B	m	s4	370	
+L35	43	PHI	h	s4	450	
+L35	44	OTHER	l	s4	520	stem followed by an 8-like loop, alt DBL
+L35	45	EBR_B	m	s4	640	
+L35	46	DBL	m	s4	720	alt PHI
+L35	47	VBAR_A	m	s4	850	
+L35	48	H24	h	s4	950	
+L35	49	PHI	h	s4	1060	
+L35	50	4TRI	m	s4	1160	
+L35	51	4TRI	m	s4	1300	triangle 5-like
+L35	52	PHI	h	s4	1430	
+L35	53	VBAR_A	m	s5	130	
+L35	54	LOOPS	l	s5	220	alt VBAR_A
+L35	55	VBAR_A	m	s5	300	
+L35	56	4TRI	m	s5	410	
+L35	57	PHI	m	s5	530	loops either side of stem
+L35	58	H24	h	s5	660	
+L35	59	4TRI	m	s5	760	
+L35	60	VBAR_A	m	s5	850	
+L35	61	PHI	m	s5	960	loops either side of stem
+L35	62	LOOPS	m	s5	1080	
+L35	63	ZBAR	l	s5	1110	dark z with bar, sits high near clear-line level at row end
+L36	1	LOOPS	m	s1	80	faint
+L36	2	EBR_B	m	s1	190	
+L36	3	H24	h	s1	280	
+L36	4	PHI	m	s1	370	
+L36	5	RSIGN	m	s1	540	small r-like; preceded by a dot
+L36	6	PHI	l	s1	680	stemmed loop with loops beside, alt LOOPSTEM1
+L36	7	H24	h	s1	810	
+L36	8	PHI	h	s1	900	
+L36	9	4TRI	m	s1	1010	
+L36	10	HASH4	m	s1	1140	4 above three crossing bars on a stem, alt OTHER
+L36	11	EBR_B	m	s1	1240	
+L36	12	VBAR_A	m	s1	1340	
+L36	13	H24	h	s1	1450	
+L36	14	4TRI	m	s2	150	
+L36	15	HASH4	m	s2	260	crossed 4 above 5-like foot
+L36	16	4TRI	h	s2	390	
+L36	17	VBAR_A	m	s2	460	
+L36	18	PHI	h	s2	560	
+L36	19	PHI	m	s2	650	dark double loop on stem
+L36	20	4TRI	h	s2	780	
+L36	21	H24	h	s2	900	
+L36	22	VBAR_A	m	s2	1040	
+L36	23	DBL	m	s2	1130	alt PHI
+L36	24	HASH4	l	s2	1270	faint
+L36	25	PHI	h	s2	1380	
+L36	26	VBAR_A	h	s2	1470	
+L36	27	DBL	m	s3	190	alt PHI
+L36	28	PHI	h	s3	290	
+L36	29	H24	h	s3	400	
+L36	30	4TRI	h	s3	520	
+L36	31	LOOPS	m	s3	620	alt INF
+L36	32	BETA	m	s3	740	
+L36	33	PHI	m	s3	830	
+L36	34	EBR_B	m	s3	980	
+L36	35	PHI	h	s3	1100	
+L36	36	VBAR_A	m	s3	1180	
+L36	37	4STEM	m	s3	1290	
+L36	38	PHI	h	s3	1400	
+L36	39	PHI	m	s4	120	loops either side of stem
+L36	40	INF	m	s4	240	
+L36	41	H24	h	s4	350	
+L36	42	4TRI	h	s4	460	
+L36	43	HASH4	m	s4	590	4 over crossing bars
+L36	44	PHI	h	s4	680	dark
+L36	45	4TRI	h	s4	790	
+L36	46	PHI	h	s4	930	
+L36	47	4TRI	h	s4	1020	
+L36	48	HASH4	m	s4	1150	
+L36	49	PHI	m	s4	1230	dark, loops beside
+L36	50	DBL	m	s4	1320	alt PHI
+L36	51	PHI	h	s4	1440	
+L36	52	VBAR_A	l	s4	1500	blotted dark
+L36	53	EBR_B	m	s5	220	
+L36	54	4TRI	m	s5	290	
+L36	55	H24	h	s5	400	
+L36	56	VBAR_A	m	s5	520	
+L36	57	VBAR_A	m	s5	590	
+L36	58	PHI	m	s5	650	loops either side of stem
+L36	59	H24	h	s5	780	
+L36	60	VBAR_A	m	s5	880	
+L36	61	H24	h	s5	960	
+L36	62	EBR_B	m	s5	1070	
+L37	1	HASH4	m	s1	60	dark 4 over crossed stems
+L37	2	INF	m	s1	150	under strike line
+L37	3	PHI	m	s1	230	
+L37	4	EBR_B	m	s1	320	
+L37	5	HASH4	m	s1	400	
+L37	6	INF	m	s1	500	
+L37	7	PHI	h	s1	580	
+L37	8	OTHER	l	s1	635	bare vertical stem
+L37	9	4TRI	m	s1	690	
+L37	10	INF	m	s1	800	
+L37	11	PHI	m	s1	920	loops either side of stem
+L37	12	VBAR_A	m	s1	1060	
+L37	13	PHI	h	s1	1150	
+L37	14	OTHER	l	s1	1210	bare vertical stem
+L37	15	4TRI	m	s1	1270	
+L37	16	OTHER	l	s1	1420	w-like, under strike line
+L37	17	HASH4	m	s2	150	4 above crossing bars
+L37	18	4TRI	h	s2	260	
+L37	19	VBAR_A	m	s2	350	
+L37	20	PHI	h	s2	440	
+L37	21	H24	m	s2	580	
+L37	22	4TRI	h	s2	700	
+L37	23	DBL	m	s2	790	alt PHI
+L37	24	HASH4	m	s2	890	4 above crossing bars
+L37	25	INF	m	s2	990	
+L37	26	PHI	h	s2	1110	
+L37	27	4TRI	m	s2	1260	
+L37	28	DBL	m	s2	1330	alt PHI
+L37	29	EBR_B	m	s2	1400	
+L37	30	INF	l	s2	1480	
+L37	31	EBR_B	m	s3	200	row dropped: read in L38 s3 top edge
+L37	32	OTHER	l	s3	250	bare vertical stem; dropped row read in L38 s3
+L37	33	4TRI	m	s3	320	dropped row read in L38 s3
+L37	34	DBL	m	s3	420	dropped row read in L38 s3
+L37	35	4TRI	m	s3	520	dropped row read in L38 s3
+L37	36	PHI	m	s3	650	loops either side; dropped row read in L38 s3
+L37	37	4TRI	m	s3	790	dropped row read in L38 s3
+L37	38	VBAR_A	m	s3	890	dropped row read in L38 s3
+L37	39	VBAR_A	m	s3	960	dropped row read in L38 s3
+L37	40	4TRI	m	s3	1100	dropped row read in L38 s3
+L37	41	4TRI	m	s3	1220	dropped row read in L38 s3
+L37	42	VBAR_A	m	s3	1330	dropped row read in L38 s3
+L37	43	H24	m	s3	1420	dropped row read in L38 s3
+L37	44	4TRI	l	s4	180	dark blotted; dropped row read in L38 s4
+L37	45	PHI	m	s4	290	dropped row read in L38 s4
+L37	46	PHI	m	s4	420	loops beside; dropped row read in L38 s4
+L37	47	EBR_B	m	s4	530	dropped row read in L38 s4
+L37	48	PHI	h	s4	610	dropped row read in L38 s4
+L37	49	DBL	m	s4	730	dropped row read in L38 s4
+L37	50	H24	h	s4	850	dropped row read in L38 s4
+L37	51	PHI	h	s4	980	dropped row read in L38 s4
+L37	52	PHI	h	s4	1060	dropped row read in L38 s4
+L37	53	HASH4	m	s4	1140	dropped row read in L38 s4
+L37	54	4TRI	m	s4	1230	dropped row read in L38 s4
+L37	55	4TRI	m	s4	1340	dropped row read in L38 s4
+L37	56	VBAR_A	m	s4	1470	dropped row read in L38 s4
+L37	57	VBAR_B	l	s5	160	dark blotted; dropped row read in L38 s5
+L37	58	4TRI	m	s5	280	dropped row read in L38 s5
+L37	59	4TRI	m	s5	400	dropped row read in L38 s5
+L37	60	LOOPS	m	s5	490	dropped row read in L38 s5
+L37	61	4TRI	m	s5	590	dropped row read in L38 s5
+L37	62	PHI	h	s5	700	dropped row read in L38 s5
+L37	63	VBAR_A	m	s5	800	dropped row read in L38 s5
+L37	64	PHI	m	s5	870	dropped row read in L38 s5
+L37	65	ZBAR	m	s5	1000	large Z with bar at row end; dropped row read in L38 s5
+L38	1	4TRI	m	s1	40	
+L38	2	PHI	m	s1	120	
+L38	3	HASH4	m	s1	220	4 above crossing bars
+L38	4	PHI	m	s1	350	
+L38	5	VBAR_A	m	s1	430	
+L38	6	VBAR_A	m	s1	510	
+L38	7	HASH4	m	s1	660	under strike line
+L38	8	PHI	h	s1	770	
+L38	9	EBR_B	m	s1	890	
+L38	10	4TRI	m	s1	970	
+L38	11	VBAR_A	m	s1	1100	under strike line
+L38	12	4STEM	l	s1	1190	under strike line
+L38	13	HASH4	l	s1	1260	
+L38	14	PHI	h	s1	1380	
+L38	15	H24	h	s1	1470	
+L38	16	VBAR_A	m	s2	160	
+L38	17	INF	m	s2	220	
+L38	18	4TRI	m	s2	340	
+L38	19	EBR_B	m	s2	430	
+L38	20	H24	h	s2	490	
+L38	21	OTHER	l	s2	610	dark ink blot, shape illegible
+L38	22	VBAR_A	m	s2	700	
+L38	23	DBL	m	s2	790	alt PHI
+L38	24	H24	m	s2	910	
+L38	25	VBAR_A	l	s2	1070	alt RSIGN
+L38	26	INF	m	s2	1160	
+L38	27	DBL	m	s2	1290	alt PHI
+L38	28	4TRI	m	s2	1420	
+L38	29	PHI	m	s3	160	loops either side; dropped row read in L39 s3
+L38	30	H24	h	s3	290	dropped row read in L39 s3
+L38	31	VBAR_A	m	s3	370	dropped row read in L39 s3
+L38	32	4TRI	m	s3	540	dropped row read in L39 s3
+L38	33	OTHER	l	s3	640	long-s-like tall stroke in row; dropped row read in L39 s3
+L38	34	OTHER	l	s3	750	loop on short stem, delta-like, alt LOOPSTEM1; dropped row read in L39 s3
+L38	35	HASH4	m	s3	880	dropped row read in L39 s3
+L38	36	H24	m	s3	960	dropped row read in L39 s3
+L38	37	PHI	h	s3	1100	dropped row read in L39 s3
+L38	38	INF	m	s3	1210	dropped row read in L39 s3
+L38	39	4TRI	m	s3	1380	dropped row read in L39 s3
+L38	40	PHI	m	s3	1470	dropped row read in L39 s3
+L38	41	INF	m	s4	200	dropped row read in L39 s4
+L38	42	PHI	h	s4	330	dropped row read in L39 s4
+L38	43	INF	m	s4	470	dropped row read in L39 s4
+L38	44	EBR_B	m	s4	570	dropped row read in L39 s4
+L38	45	EBR_B	m	s4	640	L-like; dropped row read in L39 s4
+L38	46	PHI	h	s4	720	dropped row read in L39 s4
+L38	47	OTHER	l	s4	770	bare vertical stem; dropped row read in L39 s4
+L38	48	PHI	h	s4	830	dropped row read in L39 s4
+L38	49	4TRI	m	s4	920	dropped row read in L39 s4
+L38	50	HASH4	m	s4	1030	dropped row read in L39 s4
+L38	51	PHI	h	s4	1130	dropped row read in L39 s4
+L38	52	PHI	h	s4	1240	dropped row read in L39 s4
+L38	53	PHI	h	s4	1330	dropped row read in L39 s4
+L38	54	VBAR_A	m	s4	1420	dropped row read in L39 s4
+L38	55	OTHER	l	s4	1490	bare vertical stem; dropped row read in L39 s4
+L38	56	EBR_B	m	s5	130	
+L38	57	4TRI	m	s5	250	
+L38	58	4TRI	m	s5	370	alt HASH4
+L38	59	H24	h	s5	470	
+L38	60	VBAR_A	m	s5	550	
+L38	61	4TRI	m	s5	650	dark
+L38	62	H24	m	s5	760	
+L38	63	VBAR_A	m	s5	860	
+L38	64	PHI	m	s5	930	
+L38	65	ZBAR	m	s5	1030	large Z with bar at row end
+L39	1	4TRI	l	s1	40	faint
+L39	2	DBL	m	s1	130	alt PHI
+L39	3	HASH4	m	s1	230	4 above crossing bars
+L39	4	DBL	m	s1	350	alt PHI
+L39	5	PHI	m	s1	450	
+L39	6	VBAR_A	m	s1	530	
+L39	7	INF	m	s1	610	under strike line
+L39	8	4TRI	m	s1	720	
+L39	9	VBAR_A	l	s1	800	
+L39	10	PHI	h	s1	870	
+L39	11	HASH4	m	s1	970	
+L39	12	PHI	h	s1	1060	dark
+L39	13	EBR_B	m	s1	1160	
+L39	14	DBL	m	s1	1240	alt PHI
+L39	15	VBAR_A	m	s1	1320	
+L39	16	EBR_B	m	s1	1400	
+L39	17	H24	m	s1	1500	
+L39	18	VBAR_A	h	s2	220	
+L39	19	PHI	h	s2	290	
+L39	20	HASH4	m	s2	410	
+L39	21	PHI	h	s2	510	
+L39	22	BETA	m	s2	610	
+L39	23	DBL	m	s2	700	alt PHI
+L39	24	INF	m	s2	790	
+L39	25	DBL	m	s2	910	alt PHI
+L39	26	DBL	m	s2	1010	alt PHI
+L39	27	PHI	h	s2	1120	
+L39	28	LOOPS	m	s2	1210	
+L39	29	H24	h	s2	1330	
+L39	30	VBAR_A	m	s2	1420	
+L39	31	BETA	m	s3	170	
+L39	32	4TRI	m	s3	240	
+L39	33	H24	h	s3	370	
+L39	34	VBAR_A	m	s3	480	
+L39	35	OTHER	l	s3	620	4 above an E-like bracket, alt 4TRI
+L39	36	PHI	h	s3	700	
+L39	37	VBAR_A	m	s3	820	
+L39	38	OTHER	l	s3	870	bare slanted stem
+L39	39	INF	m	s3	920	under strike line
+L39	40	PHI	h	s3	1060	dark
+L39	41	PHI	h	s3	1200	
+L39	42	PHI	h	s3	1290	
+L39	43	VBAR_A	m	s3	1380	
+L39	44	H24	m	s3	1460	
+L39	45	OTHER	l	s4	130	bare vertical stem; dropped row read in L40 s4 top edge
+L39	46	HASH4	m	s4	220	dropped row read in L40 s4
+L39	47	INF	m	s4	310	dropped row read in L40 s4
+L39	48	PHI	h	s4	420	dropped row read in L40 s4
+L39	49	VBAR_A	m	s4	520	dropped row read in L40 s4
+L39	50	OTHER	l	s4	590	bare vertical stem; dropped row read in L40 s4
+L39	51	VBAR_B	l	s4	640	alt VBAR_A; dropped row read in L40 s4
+L39	52	4TRI	m	s4	780	dark; dropped row read in L40 s4
+L39	53	4TRI	m	s4	920	dropped row read in L40 s4
+L39	54	4TRI	m	s4	1020	dropped row read in L40 s4
+L39	55	HASH4	m	s4	1140	dropped row read in L40 s4
+L39	56	INF	m	s4	1230	dropped row read in L40 s4
+L39	57	PHI	h	s4	1330	dropped row read in L40 s4
+L39	58	4TRI	m	s4	1440	dropped row read in L40 s4
+L39	59	VBAR_A	m	s5	130	
+L39	60	HASH4	m	s5	220	
+L39	61	INF	m	s5	300	
+L39	62	VBAR_A	m	s5	400	
+L39	63	PHI	m	s5	480	loops beside
+L39	64	INF	m	s5	600	
+L39	65	VBAR_A	m	s5	700	
+L39	66	OTHER	l	s5	780	long-s-like stroke in row
+L39	67	EBR_B	m	s5	880	
+L39	68	4TRI	m	s5	960	
+L40	1	4TRI	m	s1	40	
+L40	2	PHI	m	s1	120	loops beside
+L40	3	VBAR_A	l	s1	280	enclosed in a drawn rectangle
+L40	4	VBAR_A	m	s1	350	
+L40	5	PHI	m	s1	410	
+L40	6	VBAR_A	m	s1	520	under strike line
+L40	7	OTHER	l	s1	590	x-like, under strike line
+L40	8	ZBAR	l	s1	640	under strike line, alt H24
+L40	9	H24	l	s1	710	
+L40	10	PHI	h	s1	810	
+L40	11	4TRI	m	s1	900	
+L40	12	OTHER	l	s1	1040	dark h- or ampersand-like mark, alt CH
+L40	13	4TRI	m	s1	1170	dark
+L40	14	PHI	h	s1	1260	
+L40	15	HASH4	m	s1	1370	4 above crossing bars
+L40	16	PHI	h	s1	1470	
+L40	17	VBAR_A	h	s2	170	
+L40	18	VBAR_A	m	s2	240	
+L40	19	HASH4	m	s2	340	
+L40	20	DBL	m	s2	440	alt PHI
+L40	21	EBR_B	m	s2	560	
+L40	22	PHI	m	s2	620	loops either side of stem
+L40	23	VBAR_A	h	s2	760	
+L40	24	VBAR_A	h	s2	830	
+L40	25	H24	h	s2	930	
+L40	26	OTHER	l	s2	1040	4 above a z-shaped foot, alt ZHOOK
+L40	27	PHI	h	s2	1150	
+L40	28	HASH4	m	s2	1260	
+L40	29	H24	m	s2	1360	
+L40	30	INF	m	s2	1470	
+L40	31	H24	h	s3	160	
+L40	32	4TRI	m	s3	270	
+L40	33	VBAR_A	m	s3	410	large
+L40	34	4TRI	m	s3	510	
+L40	35	4TRI	m	s3	620	
+L40	36	VBAR_A	m	s3	760	
+L40	37	LOOPSTEM1	l	s3	880	delta-like loop on stem
+L40	38	OTHER	l	s3	960	n-like, alt CH
+L40	39	PHI	h	s3	1180	
+L40	40	4TRI	m	s3	1290	
+L40	41	H24	l	s3	1380	alt HASH4
+L40	42	VBAR_A	m	s3	1490	
+L40	43	PHI	m	s4	180	loops beside
+L40	44	4TRI	m	s4	310	
+L40	45	HASH4	m	s4	450	
+L40	46	PHI	h	s4	540	
+L40	47	VBAR_A	m	s4	610	
+L40	48	VBAR_A	m	s4	700	
+L40	49	4TRI	m	s4	820	
+L40	50	VBAR_A	m	s4	900	
+L40	51	H24	h	s4	1020	
+L40	52	EBR_B	m	s4	1120	
+L40	53	PHI	h	s4	1220	
+L40	54	VBAR_A	m	s4	1320	
+L40	55	VBAR_A	m	s4	1400	
+L40	56	PHI	m	s4	1480	
+L40	57	H24	m	s5	200	
+L40	58	VBAR_A	m	s5	260	
+L40	59	HASH4	m	s5	360	alt 4TRI
+L40	60	EBR_B	m	s5	460	
+L40	61	INF	m	s5	530	
+L40	62	VBAR_A	m	s5	620	
+L40	63	PHI	m	s5	690	loops beside
+L40	64	DBL	m	s5	770	alt PHI
+L40	65	PHI	m	s5	850	
+L40	66	VBAR_A	m	s5	910	
+L40	67	H24	l	s5	1000	under strike line
+L40	68	HASH4	l	s5	1060	under strike line
