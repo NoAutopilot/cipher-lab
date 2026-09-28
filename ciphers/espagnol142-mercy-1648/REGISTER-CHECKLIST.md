@@ -30,3 +30,21 @@ DECODE 958-965) or any sibling key is in hand: each line is a yes/no check again
 ## What would change the reading
 A register value for any M code above, or for 101, is a period key (grade H) for those tokens; a register that gives
 different values for S-graded codes is a data conflict to record before merging (CLAUDE.md rule 4), not a correction.
+
+## Competing values from a word-seeking search (H39, from H36's greedy log)
+
+H36's greedy word-segmentation search on the target (cheap_test_1/h36/greedy.log) chose four values that differ
+from key.tsv. On the controls that search picked the right letter for 12 of 25 moves, so these are alternatives
+to check, not readings. Context is key.tsv's letters, 6 each side, with the code in brackets (line:position).
+
+| code | key.tsv | greedy | occurrences in context (key.tsv value / greedy value) |
+|---|---|---|---|
+| 24 | h | n | r06:15 esadec[h]eureus / esadec[n]eureus; r22:17 resmil[h]ombres / resmil[n]ombres |
+| 65 | s | r | r24:4 osotre[s]egimie / osotre[r]egimie |
+| 25 | u | t | r09:7 queel_[u]engaco / queel_[t]engaco; r10:8 nosinf[u]medeou / nosinf[t]medeou; r16:9 eoneop[u]radlon / eoneop[t]radlon; r17:4 gszrfs[u]cmarey / gszrfs[t]cmarey; r19:10 ciaque[u]ancone / ciaque[t]ancone |
+| 48 | d | t | r17:20 orpara[d]iensei / orpara[t]iensei; r20:15 ndreis[d]esisep / ndreis[t]esisep |
+
+Two of these the text itself settles against the search: 24 = h gives "de Cheureuse" and "tres mil hombres" (the H30
+blind reader proposed h independently), where n gives neither. The other three are open both ways ("que el [101]
+uenga/tenga con uos"; "tres [r]egimient-" wants both an s and an r from one token; "propondreis de/te si"), so the
+register decides them.

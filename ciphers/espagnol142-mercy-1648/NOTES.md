@@ -1879,3 +1879,11 @@ This is the second script-verifier attempt (H35, then H37, then this combination
 gate: per CLAUDE.md rule 3 ("a second attempt ... that changes only the one knob"), single-correction licensing of M2's
 hand corrections is **untestable by script verifiers at this N**, not refuted. The instrument that decides them is a
 period key (H17, ASKS 82; REGISTER-CHECKLIST.md). No token, grade or class change.
+
+## Campaign step H39 (2026-09-28 15:02 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** H36's greedy search proposed four values differing from key.tsv (24=n, 65=r, 25=t,
+48=t); REGISTER-CHECKLIST.md now lists each with every occurrence in context under both values, so the Brussels
+register comparison checks both sides. By the text alone 24 = h stands ("de Cheureuse", "tres mil hombres"; the H30
+blind reader also chose h), and the greedy n is a search artefact -- one of the 13 wrong moves in 25 its controls
+showed. 65, 25 and 48 stay open both ways (still M). Disk only; no token, grade or class change.
