@@ -2277,3 +2277,12 @@ burgstorff 7/1, buigsdorf / bnrgsdorf / hurgsdorf (OCR variants) 6/1 -- and the 
 the word already read at r16:9. P (list fits >= best) 0.002 (599) and 0.001 (883). The name fit is stable to the list:
 a list three times larger from independent volumes turns up no rival. It still rests on 72 standing for two letters
 (H53, H63). No token, grade or class change.
+
+## Campaign step H64 (2026-09-28 16:38 UTC, campaign runner owner account, session_01K2B2cTCwujqmMqmGYyE6BY)
+
+**Status unchanged: partial.** The crib record is consolidated for the orchestrator: `candidates/candidates.tsv` (72's
+row now carries H53, H61, H62/H63; 52's carries H57) and REGISTER-CHECKLIST.md ("Update, 28 Sept 2026 evening").
+`candidates/make_candidates.py --check` passes (the reading_candidates.txt lines are unchanged: the candidate values did
+not change, only their evidence). In one sentence: the unread r16-r17 stretch fits the name Burgsdorf (the Elector's
+Oberkammerherr, at Cleves in 1647-48) better than any of 883 period names if, and only if, the nomenclature code 72 stands
+for the two letters "do" -- the office's habit, unattested for this key. Disk only; no token, grade or class change.

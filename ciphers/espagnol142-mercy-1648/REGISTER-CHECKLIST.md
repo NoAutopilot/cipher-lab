@@ -62,3 +62,12 @@ nomenclature for 72 and 52, and for 48 and 65 in the same class. H41 passed its 
 - H45: under the syllable reading, 65 reads best as "sr" ("tres regimientos", +15.2 over s, above a random-token
   control's 95th percentile +7.1); the same gain would come from s with the scribe leaving out the r. 48 has no
   syllable that helps both of its occurrences.
+
+## Update, 28 Sept 2026 evening (H53-H63)
+- The Burgsdorf name fit rests on one assumption only: code 72 at r16:21 stands for two letters ("do"). It holds with
+  every other token at its key.tsv letter (H53), is unrivalled on 883 names from Urkunden Bd. 1-6 (H61, P 0.001), and the
+  leaf's spacing makes r16:21 one sign, not "7 2" (H63: 13 px against 5-14 px inside groups, 33-74 px between).
+- In this office's other keys the codes just above the alphabet are syllables (R960 48 = no, 65 = ba; R962 72 = san;
+  H56), so a syllable at 72 fits the house practice. Any key of the office that gives 72 decides the crib.
+- "camarero mayor" (the H42 title) is also the Spanish title of the Elector of Brandenburg himself (H57); the title fit
+  does not point to Burgsdorf on its own.
