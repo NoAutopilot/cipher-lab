@@ -1308,3 +1308,41 @@ end (du.quesa, c.ondiciones, opur.adlon...), so they are not obvious word separa
 colon on both pages, with the reading letter before and after each, is a cheap step (H13).
 
 No reading change, no grade change (S 496, M 26, H 0, C 0 of 522). ciphertext.tsv, key.tsv untouched.
+
+## Campaign step H3 (2026-09-28 00:22-00:3x UTC, campaign runner account 2, session_01V7xEY9JxjCxiXnQLtjFnfL)
+
+**Status unchanged: partial.** CAMPAIGN.md H3: the anneal-with-held-codes consistency check (M2's -1199.1) re-run on
+the current token stream. `cipher_codes_522.tsv` (new): ciphertext.tsv minus the [PLAIN] tokens with the current
+`exceptions.tsv` (r06:14, r17:5 -> 14) applied, N=522, K=38 -- the file the campaign's anneals should use from now on;
+`cipher_codes.tsv` (521, Y8's) stays for reproducing Y8/H1/H9. Held: the 29 S-graded key.tsv codes (`--fix`, list
+in `cheap_test_1/h3/analyse.py`'s output). Control: the same 29 codes held at a permutation of their own letters (at
+most 2 in place), 3 seeds. Settings as always (order 3, 8 x 40,000, `--skip NONE`). Files: `cheap_test_1/h3/`. No hosts,
+no subagents. `tools/decode_key.py --check` still exits 0 (the committed reading re-derives; it comes from key.tsv,
+not from any anneal).
+
+| run | scores (seeds 1-3) | free-code values |
+|---|---|---|
+| held-29, 522 tokens, es17 | -1205.2 x3 (every restart identical) | 9=q 15=s 25=a 48=t 52=s 65=s 72=z box=o frac=i |
+| held-29, 522 tokens, es17c7 | -1161.4 x3 | 9=q 15=n 25=i 48=d 52=l 65=s 72=u box=a frac=c |
+| held-29, M2's 521-token eyefix file, es17 (reproduction) | -1206.3 | 9=q 15=s 25=u 48=d 52=s 65=s 72=z box=a frac=i |
+| **control: permuted-held-29, 522, es17** | **-2172.8, -2319.1, -2154.5** | (arbitrary) |
+| free anneal, 522, es17 (Y8: -1154.3 on 521) | -1344.8 (stuck), -1160.0, -1160.0 | 9=q 15=n 25=u 48=d 52=y 65=d 72=t box=a frac=c |
+| key.tsv M values | -- | 9=q 15=n 25=u 48=d 52=y 65=s 72=z box=_ frac=c |
+
+**Findings.** (1) M2's figure does not reproduce exactly: the committed `m2/cipher_codes_eyefix.tsv` with the 29
+codes held gives -1206.3, not -1199.1 (7 points), and on the 522 stream -1205.2; M2's file or settings must have
+differed from what is committed (the eyefix file carried 5 exceptions then, MREV reverted 3 -- the file on disk may
+be the post-MREV one) -- logged as a rule-7 note, no effect on the reading, which decode_key.py regenerates from
+key.tsv. (2) The held key is far from arbitrary: permuting the 29 held letters costs 950-1,110 points against the
+model, on every seed, with every restart converging -- a control that can differ and does. (3) Holding key.tsv's 29
+S values costs about 45 points against the free optimum (-1205.2 vs -1160.0), the same shape M2's crib-loop gate
+recorded (-1154.3 -> -1199.1): the hand corrections read words the trigram objective does not prefer. (4) The
+M-graded values are corpus-dependent: between es17 and es17c7 only 9=q and 65=s agree; 15, 25, 48, 52, 72 and both
+marks take different letters under each corpus, and 48=d, frac=c agree with key.tsv only under es17c7. Under the
+nomenclature reading of H2 (48, 52, 65, 72, boxed 101 as word codes) their letter values are not meaningful anyway;
+key.tsv's M grades for them are right and should not be promoted by any further anneal. (5) The free anneal of
+the 522 stream (-1160.0, two of three seeds) lands on key.tsv's M values for 9, 15, 25, 48, 52 and both marks.
+
+**Not reading-ready:** the shuffled-key (permuted) control passes by a wide margin, but the judge gate (MJ,
+MERCY-JUDGE2: "judge cannot decide") is unchanged and no reading changed, so no reading-ready line is posted.
+Grades unchanged (S 496, M 26, H 0, C 0 of 522).
