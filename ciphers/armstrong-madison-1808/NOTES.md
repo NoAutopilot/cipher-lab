@@ -2164,3 +2164,23 @@ statistics as its plaintext-free signature.
 
 Requests: none. Cost: script only, no subagent, no image; the row's estimate (3 USD) is what `--spend` records
 (get_session had not refreshed its cost figure since 00:43).
+
+**Addendum to step H25 (01:10 UTC clock read, same runner).** Two corrections after reading the second-opinion
+checkpoints that PR-LAND-22 landed at 00:55 UTC while H25 was running: (1) credit -- the ChatGPT sprint's 00:21
+checkpoint (`second-opinions/chatgpt-checkpoint-2026-09-28-0021.md`) had already inspected the same Erving-to-Monroe
+letter (frames 740-744) and reported its interlinear glosses agreeing with the repository's WE028 table on 12 values;
+"unlooked-for" above means unlooked-for by this runner, not by the project. (2) identification -- checked here by
+script: of the 49 group/gloss pairs this runner read on frames 741-742 (grade M), 38 agree with
+`tools/data/uscodes-1800/WE028.tsv` (1385 the, 1576 of, 569 to, 1426 in, 668 and, 169 he, 1190 with, 184 his, 1384
+that, 1310 be, 90 should, 182 him, 1393 they, 999 from, 1259 have, 1386 their, 934 our, 1549 an, 1351 bow, 854 do,
+970 florida, 987 four, 648 million, 794 dollar, 240 six, 215 prince, 256 spain, 1030 citizen, 1182 whose, 9
+character, 1094 she, 995 french, 992 france, 1229 govern, 1044 con, 1280 duct, 1365 take, 361 noth-); the 11 misses
+are this runner's low-resolution reads (837, 835, 1369, 888, 1592, 581, 680, 134, 137, 664, 1786) to be re-read
+before they are held against the table. So the Erving-Monroe letter of 5 Feb 1806 is a usage specimen of WE028
+(the "Livingston/Monroe" sibling table already on file), not a new key -- which is why the screen against the
+target fails: ARM-A2 already showed WE028 does not transfer to the target (both rule-3 controls), and H25's
+common-word screen is the same negative seen from the usage side. H29 is re-scoped accordingly (a real WE028 usage
+control for `design/`, a KEY-OFFICES row "WE028: Erving at Madrid to Monroe at London, Feb 1806", est 1.5). (3) The
+same checkpoints (00:31, 00:46) report the calendar's 7 January 1806 Armstrong-to-Monroe letter at reel 3 frames
+687-689, clear prose -- unchecked by this runner; if it holds, it is the "first 1806 letter" H25 could not place,
+leaving only the two December 1804 letters unlooked.
