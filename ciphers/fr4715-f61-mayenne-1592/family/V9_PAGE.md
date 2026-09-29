@@ -30,15 +30,13 @@ H271/H272 (a count-3 word list segments any lattice, control 200/200), H273 (no 
   so the two keyed signs before "trop" cannot be letters there (French wants a noun and a verb; fr16 "les W1 W2 trop": choses allaient, pretentions
   etaient); word codes outside Tomokiyo's que/qui/pour, or a misread "les".
 
-## The word-code lead on L05 1-2 (H283-H291)
+## WITHDRAWN: the word-code lead on L05 1-2 (H283-H291; NOTES "Correction")
 
-- A blind pass (H286) reads L04 "... Mais on avoit Come [OTHER] Je croys aussi que les"; L05 opens "[LOOPSTEM1] [CH] trop avancees" (S3). French wants a
-  noun and an imperfect verb between "les" and "trop" (fr16/fr18 fillers: choses allaient, pretentions etaient, batteries etoient; H290), never two
-  letters, so at that place the two signs are not the letters of their pooled cells (LOOPSTEM1 q/s from f.101r; CH e/m, itself f.101r's e and f.188r's
-  m merged -- HYPOTHESES.md row "campaign H289"). Tomokiyo dashes both (H281).
-- In the family glosses the same two classes never take a word (0 of 31 tokens, H288) and are letters inside words (25 of 30, H291): a leaf-level
-  difference -- a different glyph on f.61 (H293 would test it by blind sort, n = 1 each), or the same glyph used as a word code his table does not hold
-  (its que/qui/pour match neither shape, H287). A lead, no value; the safe sentence is "two keyed signs stand where French needs a noun and a verb".
+The runner took L05's run to open the line; the span sheet drops the first native segment, and sheet B shows the line beginning "choses sont a" in
+clear. The text is "Je croys aussi que les choses sont a [LOOPSTEM1] [CH] trop avancees": complete French with the two signs (and the edge a) as nulls,
+which is what Tomokiyo's three dashes say. What survives for the verifier: on the family leaves the two classes are letters inside words (H288/H291,
+25 of 30), on f.61 his dashes and the French agree they carry nothing -- a leaf-level difference of the C6 kind; and the CH e/m cell is two leaves'
+letters merged (HYPOTHESES.md H289). No word-code claim.
 
 ## Meter variants the verifier chooses between (verify_v8/meter_v8.py bands, key v6 f.61 reading)
 

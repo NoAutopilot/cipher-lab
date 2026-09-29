@@ -4700,7 +4700,7 @@ aussi que les", the line ending "croys aussi que les"; L05 then opens at its lef
 no two-letter filler from the pooled cells (se, sm, qe, qm) ever stands there. What it says, as a lead for the verifier: at this place the two signs
 cannot be the letters their pooled cells give (q/s, e/m; both from other leaves, both dashes in Tomokiyo's markup, H281); French wants a noun and a verb
 ("choses sont", "affaires estoient"), so they are word codes not in Tomokiyo's table (its three word codes are que, qui, pour) or the runner's read of
-"les" is wrong -- H288 puts that read to a blind pass before anything rests on it. No value proposed; nothing merged.
+"les" is wrong -- H288 puts that read to a blind pass before anything rests on it. No value proposed; nothing merged. [WITHDRAWN 10:47 UTC, runner 10: the premise that L05 opens with the two signs was wrong -- the span sheet f61sheet_L05 keeps native segments 2-4 only (images/regen_f61r_sheets.sh), so H253's 'edge' was the sheet's edge; sheet B's segment 1 shows the line starting 'choses sont a' in clear before the run (H63's reader had said 'after sont'). The text is 'que les choses sont a [LOOPSTEM1] [CH] trop avancees', which is complete French with the signs as nulls; see the correction section below.]
 **H284** (notes): family/V9_PAGE.md brought up to H283 (witness spans file, H268 correction, dash-need table, pronoun check, L04 OTHER negative, L05 head).
 **H285 dropped:** f.108v's reconciled draft holds one CA (L02 6) and no C6 -- nothing to compare at n = 1.
 
@@ -4713,7 +4713,7 @@ croys aussi que les [LOOPSTEM1] [CH] trop avancees ...", and the two keyed signs
 that place (H283). The two sign items (a Venus-like loop-on-stem = LOOPBAR; a W-like double loop = the OTHER) are not joined by the script: read_call_U.tsv lists one L04
 sign, the OTHER being pass U2's alone (`scripts/f61positions_L04_result.txt` says so; f61_positions_L04.tsv is empty). Also from this pass: the OTHER after "Come" precedes "Je". Result
 `scripts/f61positions_L04_result.txt` (`--check` OK). For the verifier: a word-code lead on two f.61 tokens (LOOPSTEM1 L05 1, CH L05 2), rule 10 wording,
-no value, nothing merged. Vision calls this session: 4 (one per vision step).
+no value, nothing merged. Vision calls this session: 4 (one per vision step). [WITHDRAWN 10:47 UTC, runner 10: the premise that L05 opens with the two signs was wrong -- the span sheet f61sheet_L05 keeps native segments 2-4 only (images/regen_f61r_sheets.sh), so H253's 'edge' was the sheet's edge; sheet B's segment 1 shows the line starting 'choses sont a' in clear before the run (H63's reader had said 'after sont'). The text is 'que les choses sont a [LOOPSTEM1] [CH] trop avancees', which is complete French with the signs as nulls; see the correction section below.]
 
 ## Campaign step H287 (29 Sept 2026, 10:41 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the two signs against the table's word codes (notes only)
 
@@ -4745,4 +4745,19 @@ candidate pair is frequent enough to name as the value of the two codes; descrip
 `--check` OK): on f.101r and f.188r, 25 of the 30 aligned LOOPSTEM1/CH tokens carry a letter of their own with lettered gloss neighbours on both sides
 (e.g. f.101r L45 "- e [q] u e", f.188r L21 "l e [m] e n") -- on those leaves they are letters inside words. With H288 (never a word in the family) and
 H283/H286 (a word slot on f.61), the two f.61 tokens are a leaf-level difference: either f.61's signs are a different glyph from the family's letter
-signs (H293 tests that by blind sort, n = 1 each, flagged) or the same glyph is used differently on f.61. No value; for the verifier. No call.
+signs (H293 tests that by blind sort, n = 1 each, flagged) or the same glyph is used differently on f.61. No value; for the verifier. No call. [WITHDRAWN 10:47 UTC, runner 10: the premise that L05 opens with the two signs was wrong -- the span sheet f61sheet_L05 keeps native segments 2-4 only (images/regen_f61r_sheets.sh), so H253's 'edge' was the sheet's edge; sheet B's segment 1 shows the line starting 'choses sont a' in clear before the run (H63's reader had said 'after sont'). The text is 'que les choses sont a [LOOPSTEM1] [CH] trop avancees', which is complete French with the signs as nulls; see the correction section below.]
+
+## Correction (29 Sept 2026, 10:47 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the word-code lead of H283-H291 is withdrawn
+
+The runner's error: H283 read L04's tail ("croys aussi que les", confirmed blind by H286) and took L05's run to open the next line because H253's
+positions mark L05 1 as prev=edge. That edge is the SHEET's: `images/regen_f61r_sheets.sh` keeps only native segments 2-4 of L05 on the span sheet, and
+sheet B's first segment (images/f61sheetB_L05.jpg, viewed once by the runner for this check, grade M) shows the line beginning **"choses sont a"** in
+clear before the run -- H63's reader had already recorded a CA "at the edge: after 'sont' and before the run" (L05 s1 1680). So the text is
+**"Je croys aussi que les choses sont a [LOOPSTEM1] [CH] trop avancees"**: the noun and the verb are in clear, "les choses sont trop avancees" is complete
+French, and the two keyed signs need carry nothing -- the null reading, which is what Tomokiyo's three dashes before "trop" say (the third dash is the
+edge "a" that pass A did not code, H63; H294 answered). Withdrawn: "French wants a noun and a verb there" (H283, H286, the ROOM lines of 10:4x-10:5x,
+family/V9_PAGE.md's word-code section, HYPOTHESES.md H289's third witness, H290's candidate list as a lead). Still standing: H281's dash table, H288/H291's
+finding that the two classes are letters inside words on the family leaves (so on f.61 they would be nulls or unread, a leaf-level difference of the
+C6 kind, not word codes), H289's CH e/m conflict (witnesses 1-2). H293 (glyph sort) dropped with its motivation. Lesson for the retrospective: a
+positional read's "edge" on a span sheet is the sheet edge, and any inference about what precedes a run must read sheet B's first segment (or the
+regen script's keep map) first.
