@@ -4404,3 +4404,11 @@ cell), f.108r 4PI d/q (the 4-head, H239).
 **Correction to H234:** H234 set f.61's two 4PI to unread for want of a period value; Tomokiyo's published span already reads one of them n, and the a/n cell
 keeps it. The shape-reading meter is therefore **12 / 60 / 2 / 25** (4PI a/n x2 two-way), not 12 / 58 / 2 / 27. For the verifier: the code 4PI is two signs --
 the 4-headed hash (f.101r, f.108r: d/q) and f.61's 4-over-Pi (a no-bowl 4, read n by Tomokiyo). Nothing merged.
+
+## Campaign step H241 (29 Sept 2026, 04:49 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- where a period value for the looped hash could come from (notes only)
+
+From family/MANIFEST.tsv, H221-H227 and the H96 notes: the looped hash is common only in f.61's hand (f.108r 9/10, f.108v 5/14) and the secretary's (f.106r 13/17).
+Of those leaves, f.108v's interlines are clear words (not a decipherment), f.108r's overlay (Tomokiyo's reprint) covers rows L02-L03 where no HASH4 falls,
+f.211r has one ~15-sign glossed run (desk pack H96, waiting on ASKS 93), and **f.106r carries an interlinear period gloss that the model gloss readers could
+not read reliably (held; H228 showed its alignment misplaces letters)**. So the one route found is a person's read of f.106r's gloss above its looped hashes.
+H243 builds that desk pack (script-only); filing the ASKS row is left to the orchestrator. No call.
