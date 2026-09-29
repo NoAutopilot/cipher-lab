@@ -5435,7 +5435,7 @@ period key itself (grade C per pair), not only by our statistics. The bowl sign 
 from a tally that mixes two signs. **For the verifier, and for the key: H366 writes the split tally as a proposal (rule 4, witnesses named); nothing is
 loaded into a key here.** Four calls, cost estimate 4.0 USD.
 
-## Campaign steps H366 and H363 (29 Sept 2026, 17:05-17:07 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the 4TRI resplit written as a proposal for a verifier; the instrument lesson (script/notes)
+## Campaign steps H366 and H363 (29 Sept 2026, 17:05-17:06 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the 4TRI resplit written as a proposal for a verifier; the instrument lesson (script/notes)
 
 **H366** (`family/h366_4tri_proposal.py`, `--check` OK) writes `family/PROPOSAL_v8_4tri.md`: f.101r's period letters for the readers' 4TRI by bowl
 answer -- **bowl (67): p 17, c 15, n 11, a 8, ...; no bowl (150): a 62, n 56, p 5, c 4, ...** -- with the witnesses for and against, proposing (not
