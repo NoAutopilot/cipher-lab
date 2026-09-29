@@ -1,0 +1,5 @@
+f.61 five spans: v5 53/55 = 0.964; permuted p95 0.455 max 0.727; >= key 0/2000
+f.61 five spans: all shape cells 53/55 = 0.964; permuted p95 0.436 max 0.673; >= key 0/2000
+f.108r overlay (EBR form A): v5 74/84 = 0.881; permuted p95 0.429 max 0.726; >= key 0/2000
+f.108r overlay (EBR form A): all shape cells 74/84 = 0.881; permuted p95 0.405 max 0.667; >= key 0/2000
+gate: f.61 loss 0 (need 0), f.108r loss 1 including S14 (need <= 1) -> PASS

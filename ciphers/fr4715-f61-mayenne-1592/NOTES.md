@@ -4425,3 +4425,10 @@ answer template (`family/passes/f106r_hash_person.tsv`). Filing an ASKS row for 
 **H244 (script/notes):** `family/v6_shape_candidates.tsv` -- one row per shape-based cell proposed since v5 (4-family bowl rule; HASH4's 4-head d/q, mis-coded 2#
 i/x, looped hash without a value; H24 = 2#; ZHOOK = 2#; 4PI's two signs; the f.61 meter by shape 12/60/2/25), each with evidence for and against, controls, the
 test-key result and the result files, for VERIFY-F61-V6. Nothing merged. **H246 dropped:** f.108v's reconciled draft has no 4PI, so there is nothing to read.
+
+## Campaign step H245 (29 Sept 2026, 04:52 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- every shape cell at once: PASS (script-only)
+
+`family/h245_shape_key_all.py` (committed c01b9985 before the run; result `family/h245_shape_key_all_result.txt`, `--check` OK). Test key = v5 with 4TRI c/p, C43 a/n,
+4STEM a/n, and 4PI a/n on f.61 (4-over-Pi) / d/q on f.108r (4-head). **f.61 five spans 53/55 (v5 53/55); f.108r overlay 74/84 (v5 74/84)**; with H202's S14 the
+f.108r loss is 1. Pre-stated gate: **PASS**. The permuted-key p95 drops (f.61 0.455 -> 0.436, f.108r 0.429 -> 0.405): narrower cells, same known-letter score.
+This is the combined candidate in family/v6_shape_candidates.tsv, handed to VERIFY-F61-V6; nothing merged, v5 stays current.
