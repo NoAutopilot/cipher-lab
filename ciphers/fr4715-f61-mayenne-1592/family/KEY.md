@@ -464,3 +464,25 @@ held unread: **firm 12 / two-way 58 / wider 2 / unread-or-null 27** of 99; and k
 except 4PI loads exactly as in v6 (ZHOOK, HASH4, H24, 4STEM, 4TRI, C43, EBR, SBS, VBAR_A), that 4PIR, HASHLOOP and 4PIPI never load
 into the pooled key, and that `verify_v8/meter_v8.py --check` and `build_key_v6.py --check` still pass. The known spans are Tomokiyo's
 published letters (text: known); this is a test of the key, not a reading of anything outside his spans.
+
+## CA on f.61 (V9) (F61-FAMILY-12, 29 Sept 2026, 11:2x UTC): a published null in the scribe's letter a, f.61 reading only
+
+Merged from AUDIT.md section VERIFY-F61-V9, "What should merge" item 1, and nothing more. **No key file changes**: `key_period_v7.tsv`
+(F61-FAMILY-11, 10:17 UTC) stays as built; CA is not a cell and gets no row.
+
+- **What CA is on f.61.** A null by Tomokiyo's published markup (H44: a dash where the sign stands, his words complete without a letter;
+  `published`, credited), whose letterform is the scribe's clear letter a. The letterform finding is the campaign's (H256, H260) and
+  VERIFY-F61-V9 replicated it with its own tiles cut from the native image and three fresh readers: CA 10/10 with the clear a's, the
+  eleven cipher controls from the same runs 0/11, within-line permutation **p 0.0013** (setP, the one reader that passed the registered
+  text-a gate; setQ and setR gave the same CA and cipher counts but are unscored by that gate). Three placement helpers, asked only for
+  clear words, listed seven of the ten CA as the one-letter word "a" unasked.
+- **What the null rests on.** Direct for the four CA inside Tomokiyo's spans (H259, re-run by V9: inserting a at CA breaks one of his
+  words, ca|pable, and falls at a word boundary three times); the six outside his spans (L01 8, L03 1, L07 1, L10 2, L10 9, L10 12) are
+  null only by the assumption that one sign has one function on the leaf. Whether this is a null drawn as an a or a clear a drawn among the
+  signs is not decidable from the ink; the known spans answer the functional question (no letter) at every in-span CA.
+- **Scope.** f.61 reading only, never a pooled cell. The glossed leaves' CA rows stay as they are (f.101r glosses -, c, q, s, t; f.188r
+  c, p, s): either that class there is not this glyph, or the null is f.61's own usage.
+- **Meter** (`verify_v9/meter_v9.py --check` OK, re-run by F61-FAMILY-12): key v7 as merged, CA counted as null, **firm 12 / two-way 59 /
+  wider 2 / unread-or-null 26 [null 17 + unread 9]** of 99. No band count moves; ten tokens move from unread to null inside the last band.
+- The class note in `f61_null_band.tsv` (written by `f61_null_band.py`, `--check` OK) cites V9. The f.61 decode file
+  (`f61_decode_period_v4_frac0.1_sbs.tsv`) carries no per-class note column, so the null band is the one class-note file.
