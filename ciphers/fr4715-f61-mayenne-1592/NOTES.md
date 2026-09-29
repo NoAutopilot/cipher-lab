@@ -4562,3 +4562,12 @@ LOOPSTEM1 1**; every other class pairs with letters of its cell. What it says: t
 on f.61 -- Tomokiyo reads it as nothing at all five places, and H237 found no glyph link between f.61's plain 6 and the glossed delta-shaped C6 -- so a
 rule-4 conflict row is filed in HYPOTHESES.md with both witnesses; the verifier already holds f.61's C6 at unread-or-null and the count stays 8. The
 4STEM dash (L11 8) is on record too: the F61READ 4STEM a/n rests on f.176r's no-bowl positions (V6), not on a letter of his at L11. No call.
+
+## Campaign step H262 (29 Sept 2026, 10:12 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the null band as one table for VERIFY-F61-V9 (script-only)
+
+`family/f61_null_band.py` -> `family/f61_null_band.tsv` (result `family/f61_null_band_result.txt`, `--check` OK): one row per f.61 token in the meter's
+unread-or-null band (25: CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1) and the four wider tokens (4PI 2, OTHER 2), with the v6 letters, the span and Tomokiyo's
+character where the token lies inside one of his spans (15 of the 29 do), the class's evidence in one cell (the runner's summary of H63/H256/H259/H260 for
+CA; H237/H259/H261 and the HYPOTHESES.md conflict row for C6; H232/H258 for LOOPBAR; H247/H261 for CROSS; H259 for LL; V8 for 4PI; H238 for OTHER) and the
+result files in another. A hand-off, not a merge: the band's count stays 25 and no token moves; what the verifier could change is the wording -- CA from
+"unread-or-null" to "null" on the evidence listed -- if it agrees. No call.
