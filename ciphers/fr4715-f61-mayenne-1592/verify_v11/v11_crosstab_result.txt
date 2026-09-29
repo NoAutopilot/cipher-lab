@@ -1,0 +1,4 @@
+runner bowl labels f.101r: 241 ({'n': 19, 'yes': 67, 'no': 155}); tokens with a period letter: 232
+A all: n 182; no&a/n 118 no&c/p/t 12 yes&c/p/t 33 yes&a/n 19; share 0.830, perm p 0.0001; P(a/n|no) 0.91, P(a/n|yes) 0.37 -> tracks  [letters: a 74 n 72 p 22 c 21 d 7 s 5]
+A literal non-conflict: n 67; no&a/n 56 no&c/p/t 0 yes&c/p/t 0 yes&a/n 11; share 0.836, perm p 1.0000; P(a/n|no) 1.00, P(a/n|yes) 1.00 -> does not track  [letters: n 72]
+A neighbour-anchored: n 58; no&a/n 36 no&c/p/t 2 yes&c/p/t 14 yes&a/n 6; share 0.862, perm p 0.0001; P(a/n|no) 0.95, P(a/n|yes) 0.30 -> tracks  [letters: a 23 n 21 c 9 p 7 d 2 q 1]

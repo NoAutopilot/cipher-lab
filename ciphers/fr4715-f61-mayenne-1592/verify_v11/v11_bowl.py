@@ -61,3 +61,47 @@ def tiles(scratch):
     open(f"{HERE}/v11_items.tsv", "w").write("\n".join(key) + "\n"); print("pools f101r", n1, "f124r", n2, "items", len(key) - 1)
 if __name__ == "__main__":
     if sys.argv[1] == "tiles": tiles(sys.argv[2])
+def score():
+    sys.path.insert(0, HERE); import v11_crosstab as X
+    items = rd(f"{HERE}/v11_items.tsv"); out = []; mine = {}
+    for c in ("c1", "c2", "c3"):
+        ans = {r["id"]: r["answer"].strip().lower() for r in rd(f"{HERE}/v11_reply_{c}.tsv")}; its = [r for r in items if r["call"] == c]
+        anc = [r for r in its if r["role"] == "anchor"]; ahit = sum((ans.get(r["id"]) == "yes") == (r["group"] == "CP") and ans.get(r["id"]) in ("yes", "no") for r in anc)
+        byid = {r["id"]: r for r in its}; reps = [r for r in its if r["repeat_of"]]
+        rhit = sum(ans.get(r["id"]) == ans.get(r["repeat_of"]) for r in reps)
+        ok = ahit >= 8 and rhit >= 5
+        acc = " ".join(f"{g}:{'/'.join(ans.get(r['id'], '?') for r in anc if r['group'] == g)}" for g in ("CP", "AN"))
+        out.append(f"{c}: anchors {ahit}/{len(anc)} (gate 8) [{acc}]; repeats {rhit}/{len(reps)} (gate 5) -> {'PASS' if ok else 'FAIL (answers not used)'}")
+        if ok:
+            for r in its:
+                if r["role"] == "target" and not r["repeat_of"]: mine[(r["leaf"], r["line"], r["pos_or_seg"])] = ans.get(r["id"], "missing")
+    for leaf in ("f101r", "f124r"):
+        lab = {(l, p): a for (lf, l, p), a in mine.items() if lf == leaf}
+        out.append(f"{leaf}: my labels {len(lab)} ({' '.join(f'{k} {v}' for k, v in sorted(Counter(lab.values()).items()))})")
+        lm = X.letter_map(leaf)
+        for nm, f in (("all", lambda v: True), ("neighbour-anchored", lambda v: v[2])):
+            pairs = [(b, X.cls(lm[k][0])) for k, b in lab.items() if k in lm and f(lm[k])]
+            r = X.test(pairs, perms=10000)
+            ro = ("n < 20" if r is None or r["n"] < 20 else "tracks" if r["share"] >= 0.75 and r["p"] < 0.01 else "does not track" if r["share"] < 0.6 or r["p"] > 0.05 else "unclear")
+            out.append("  B(i/iii) " + X.fmt(nm, r).split(" -> ")[0] + f" -> {ro}")
+        lets = defaultdict(Counter)
+        for k, b in lab.items():
+            if k in lm: lets[b][lm[k][0]] += 1
+        out.append("  letters by my answer: " + "; ".join(f"{b}: " + " ".join(f"{x} {y}" for x, y in lets[b].most_common(8)) for b in sorted(lets)))
+        if leaf == "f101r":
+            run = X.runner_labels(); sh = [(lab[k], run[k]) for k in lab if k in run and lab[k] in ("yes", "no") and run[k] in ("yes", "no")]
+            n = len(sh); po = sum(a == b for a, b in sh) / n; pa = sum(a == "yes" for a, _ in sh) / n; pb = sum(b == "yes" for _, b in sh) / n
+            pe = pa * pb + (1 - pa) * (1 - pb); kap = (po - pe) / (1 - pe) if pe < 1 else float("nan")
+            out.append(f"  B(ii) my vs runner's labels on {n} shared tokens: agreement {po:.2f}, Cohen's kappa {kap:.2f} -> "
+                       + ("the runner's reads replicate" if kap >= 0.6 else "they do not replicate" if kap < 0.4 else "partly"))
+    sp = {(r["line"], r["position"]): r["sign"] for r in csv.DictReader(open(f"{P}/recf124r_split/ciphertext_draft.tsv"), delimiter="\t")}
+    lab = {(l, p): a for (lf, l, p), a in mine.items() if lf == "f124r"}
+    sh = [(a, "no" if sp.get(k) == "C43" else "yes/n") for k, a in lab.items() if a in ("yes", "no")]; t = Counter(sh)
+    out.append(f"  B(ii) f124r my vs runner's (split draft: relabelled C43 = runner 'no'; else 'yes' or 'n') on {len(sh)}: "
+               + " ".join(f"mine {a}/runner {b} {v}" for (a, b), v in sorted(t.items()))
+               + f"; agreement {sum(v for (a, b), v in t.items() if (a == 'no') == (b == 'no')) / max(1, len(sh)):.2f}")
+    txt = "\n".join(out) + "\n"; res = f"{HERE}/v11_bowl_result.txt"
+    if "--check" in sys.argv:
+        ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
+    open(res, "w").write(txt); print(txt, end="")
+if __name__ == "__main__" and sys.argv[1] == "score": score()

@@ -771,3 +771,71 @@ Not assessed. This audit concerns a null, an unread cell and a hand-off table, a
 - **CA carries no letter (null):** moderate, conditional on Tomokiyo's reading and the alignment, direct for 4 of 10 tokens.
 - **C6 is not e on f.61:** high conditional on his reading (4 of 5 words broken); the pooled cell's status elsewhere unchanged.
 - **Null band counts:** high (script recount).
+
+## VERIFY-F61-V11 (29 Sept 2026)
+
+Verifier VERIFY-F61-V11 (account 3, Opus; separate from runners 13/14 and from V5-V10). Claim under audit: `family/PROPOSAL_v8_4tri.md` (runner 13,
+H356-H366) -- the readers' 4TRI is two signs told apart by a stem-foot bowl, no-bowl = a/n (C43's cell), bowl = c/p/t. Gates fixed before looking:
+`verify_v11/PREREG.md` (commit 7635912f; addendum E pre-registered before its calls). Scripts regenerate every figure with `--check`:
+`verify_v11/v11_crosstab.py`, `v11_bowl.py score`, `v11_bowl_e.py score`, `v11_gain.py`, `meter_v11.py`; the tool runs are
+`verify_v11/pkt_f101r_split.txt`, `pkt_f124r_split.txt`. No reading claim, no novelty class (rule 10); no key file or CAMPAIGN.md edited.
+
+**A. Runner's bowl labels x period letter, f.101r (own join, within-leaf permutation null, 10,000 perms).** The brief's literal "non-conflict rows"
+restriction cannot test this: `f101r_align.tsv`'s status is relative to the alignment's own EM key, in which 4TRI = n, so every non-conflict 4TRI row
+reads n by construction (rule 3: a control that cannot vary). Reported anyway (n 67, all n: p 1.00). Pre-registered substitute, rows whose nearest
+non-4TRI/C43 code rows on both sides `agree`: n 58, no&a/n 36, no&c/p/t 2, yes&c/p/t 14, yes&a/n 6 -- share 0.862, p 0.0001, **tracks**. All rows:
+n 182, share 0.830, p 0.0001 (reproduces the runner's 118/12/33/19 exactly). P(a/n | no) 0.91-0.95; P(a/n | yes) 0.30-0.37.
+
+**B. Fresh bowl reads (own tiles from the Gallica natives, own prompt, Opus reader, 5 calls; every call carried 10 known-answer anchors from Desportes's
+hand, fr.3984 f.176v, H193's coordinates re-cut by me, and 6 repeats).** Every call passed both gates (anchors 9, 8, 9, 10, 9 of 10; repeats 6/6 each;
+one reply id mistyped VOO for VQO, corrected in the reply file with a note).
+- Random 40 f.101r tokens (pre-registered B(i)): only 5 of 31 lettered tokens were c/p/t, and the read **does not track** (share 0.613, p 0.60);
+  P(a/n | no) 0.85 but P(a/n | yes) 0.82 -- this reader called "bowl" on 9 a/n tokens against 2 c/p/t.
+- Letter-stratified 40 f.101r tokens (addendum E, reader blind to letter): share 0.750, p 0.0018 -> **tracks** at the bar; no&a/n 10, no&c/p/t 1,
+  yes&c/p/t 17, yes&a/n 8. Pooled B+E (n 67): share 0.687, p 0.0007 -> unclear by the pre-registered bar.
+- Agreement with the runner's labels on the same tokens: f.101r kappa 0.49 (random set, 34 tokens) and 0.35 (stratified, 36) -- below the 0.6 bar
+  both times; f.124r 0.58 raw agreement on 24, and this reader called "bowl" on 10 of the 17 tokens the runner's reads relabelled no-bowl.
+- f.124r has no usable period-letter join in this box (`f124r_align.tsv` is numeral-mode over a sign set that does not map onto `recf124r`,
+  conflict 1417 of 1550 rows), so B(iii) was not computed.
+
+**C. Order gain (tools/partial_key_test.py --cells, key v7 cells `key_v7_cells_h354.tsv`).** Runner's split drafts: f.101r 0.0970 (binned keys p95
+0.0408, 0/100 >= real; shuffled target 0/3 signal, control clean); f.124r 0.0709 (p95 0.0435, 0/100; shuffled 0/3, clean). Against 30 random
+splits of the same size (155 of 462 on f.101r, 202 of 441 on f.124r, relabelled C43): f.101r bowl split (0.0970 at seed 342) exceeds the random
+p95 0.0884 (1/30 random >= it; median 0.0820); f.124r 0.0709 exceeds p95 0.0642 (0/30; median 0.0539). Drawing the random splits only from the
+answered (agreed) tokens gives the same result (1/30, 0/30). So random relabelling to a/n raises the gain too (4TRI already carries many a/n by the
+period gloss), but **the runner's labels pick better tokens than any random split** on both leaves.
+
+**Per hand (rule 4: witnesses kept apart, not settled by majority).**
+- *Desportes, fr.3984 f.176v:* the bowl separates the c/p anchors from the a/n anchors -- my reader 45/50 in direction across five calls (the same
+  20 anchors reused, so not 50 independent tests), the runner's 17-19/20 per call. Two signs in this hand.
+- *f.101r's hand:* the no-bowl answer carries a/n under both readers and both prompts (runner 118/130; mine 10/11 stratified, 27/31 pooled). The
+  bowl answer is mixed (a/n 12-47% of bowl answers by reader and sample). Two signs in this hand, with the no-bowl sign the a/n sign; the bowl
+  class as a reader answers it still holds a/n tokens.
+- *de Diou, f.124r:* order evidence only (C: beats 30/30 random splits); readers disagree token by token (0.58); no letter test run here.
+- *f.61's hand:* not read by this verifier. Runner 14's H367 (gate 19/20): 5 of 6 4TRI bowl, L05 14 no-bowl -- and the same position read bowl in
+  H194, so L05 14 has two readings from the runner's own reads that disagree.
+
+**Verdict: endorse in part.**
+- *Endorsed:* 4TRI as the readers transcribe it holds two signs, and **a 4TRI token answered no-bowl in a gated blind read takes C43's cell a/n**.
+  Witnesses: f.101r period letter under two independent readers/prompts/tile sets (runner 0.91 a/n; mine 0.91 stratified), the permutation null
+  (p <= 0.002 each), and the gloss-free order gain beating random same-size splits on f.101r and f.124r with clean shuffled targets.
+- *Not endorsed:* "bowl = c/p/t" as a firm or narrowed cell, or the bowl as a token-level criterion that transfers between readers. The
+  bowl class still carries a/n (runner 19/52 of its lettered bowl answers; mine up to 9/11), and the two readers agree on the attribute only at kappa
+  0.35-0.49 on f.101r. A bowl-read 4TRI keeps v7's 4TRI cell unchanged.
+- *Exact cell change for a key v8:* add a split class, e.g. `4TRI_NB` (4TRI answered no-bowl in a blind read whose anchor gate passed) = a/n,
+  C43's period cell, grade C on f.101r (period gloss) and grade M wherever the class assignment rests only on a shape read (every f.61 token);
+  4TRI (bowl, or not bowl-read) unchanged at v7's c/p/t (f.61 reading cell c/p). Record per token which reader and which call made the
+  no-bowl assignment.
+- *f.61 meter (bands as meter_v8/meter_v9; baseline = v7 as merged + V8 4PI split + V9 CA null):* no split 12 / 59 / 2 / 26 [null 17 + unread 9];
+  split with f.61's 4TRI not bowl-read (each token a/c/n/p) 12 / 53 / 8 / 26; split with H367's reads (L05 14 a/n, five c/p) 12 / 59 / 2 / 26.
+  The six f.61 4TRI tokens stay **two-way** whichever sign they are; the split changes letters, not bands. L05 14 should stay at c/p (grade M, a/n
+  noted as the alternative) until a third read settles H194's bowl against H367's no-bowl -- a conflict between reads, logged here, not settled
+  by the later one.
+
+**Safe sentence:** "On f.101r, 4TRI tokens that blind readers see without a stem-foot bowl pair with a/n in the period gloss (91% under two
+independent readers), and the split raises a gloss-free order statistic more than random splits do on two leaves; tokens read with the bowl are
+mixed." **Unsafe sentence:** "The bowl reliably separates c/p/t from a/n" or "f.61's L05 14 is a/n."
+
+Postmortem: the proposal's own counts are reproduced exactly; its reading of them is too strong on the bowl side only. One structural flag for
+later briefs: `*_align.tsv` status columns are relative to the alignment's own EM key, so "non-conflict rows only" silently selects on the letter
+for any class whose cell is under test.

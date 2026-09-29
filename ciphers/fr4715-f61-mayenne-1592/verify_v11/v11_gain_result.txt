@@ -1,0 +1,6 @@
+f101r: 4TRI tokens 462 (agreed 364); split relabels 155; gain as transcribed 0.0804/0.0793/0.0873; bowl split 0.0970/0.0994/0.1084
+  frame1 all 4TRI: 30 random splits of 155: min 0.0713 median 0.0820 p95 0.0884 max 0.0992; >= bowl split (seed 342) 1/30 -> the bowl split beats random splits
+  frame2 agreed 4TRI: 30 random splits of 155: min 0.0780 median 0.0863 p95 0.0942 max 0.1005; >= bowl split (seed 342) 1/30 -> the bowl split beats random splits
+f124r: 4TRI tokens 441 (agreed 350); split relabels 202; gain as transcribed 0.0320/0.0325/0.0361; bowl split 0.0709/0.0734/0.0675
+  frame1 all 4TRI: 30 random splits of 202: min 0.0408 median 0.0539 p95 0.0642 max 0.0659; >= bowl split (seed 342) 0/30 -> the bowl split beats random splits
+  frame2 agreed 4TRI: 30 random splits of 202: min 0.0408 median 0.0505 p95 0.0608 max 0.0699; >= bowl split (seed 342) 0/30 -> the bowl split beats random splits

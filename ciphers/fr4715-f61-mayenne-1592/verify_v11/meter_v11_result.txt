@@ -1,0 +1,6 @@
+meter_v11: f.61r 99 signs, 4TRI tokens 6 (L01:6 L03:7 L03:10 L05:6 L05:14 L08:11); bands firm / two-way / wider / unread-or-null [null + unread]
+baseline (v7 as merged + V8 4PI + V9 CA null), no split: firm 12 / two-way 59 / wider 2 / unread-or-null 26 [null 17 + unread 9]
+split, f.61 4TRI bowl not read (each a/c/n/p): firm 12 / two-way 53 / wider 8 / unread-or-null 26 [null 17 + unread 9]
+split, f.61 4TRI all bowl (c/p): firm 12 / two-way 59 / wider 2 / unread-or-null 26 [null 17 + unread 9]
+split, f.61 4TRI all no-bowl (a/n): firm 12 / two-way 59 / wider 2 / unread-or-null 26 [null 17 + unread 9]
+split, f.61 4TRI as runner 14's H367 read them (L05 14 no-bowl a/n, other five c/p): firm 12 / two-way 59 / wider 2 / unread-or-null 26 [null 17 + unread 9]

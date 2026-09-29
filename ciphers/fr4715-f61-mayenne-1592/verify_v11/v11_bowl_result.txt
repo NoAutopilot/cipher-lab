@@ -1,0 +1,13 @@
+c1: anchors 9/10 (gate 8) [CP:yes/yes/yes/yes/yes AN:yes/no/no/no/no]; repeats 6/6 (gate 5) -> PASS
+c2: anchors 8/10 (gate 8) [CP:yes/yes/yes/no/yes AN:no/yes/no/no/no]; repeats 6/6 (gate 5) -> PASS
+c3: anchors 9/10 (gate 8) [CP:yes/yes/yes/yes/yes AN:no/no/yes/no/no]; repeats 6/6 (gate 5) -> PASS
+f101r: my labels 40 (no 23 unclear 3 yes 14)
+  B(i/iii) all: n 31; no&a/n 17 no&c/p/t 3 yes&c/p/t 2 yes&a/n 9; share 0.613, perm p 0.5981; P(a/n|no) 0.85, P(a/n|yes) 0.82 -> does not track
+  B(i/iii) neighbour-anchored: n 8; no&a/n 3 no&c/p/t 0 yes&c/p/t 1 yes&a/n 4; share 0.500, perm p 0.6312; P(a/n|no) 1.00, P(a/n|yes) 0.80 -> n < 20
+  letters by my answer: no: a 10 n 7 t 2 o 1 z 1 p 1; unclear: d 1 m 1 a 1; yes: n 5 a 4 c 1 p 1 r 1 g 1
+  B(ii) my vs runner's labels on 34 shared tokens: agreement 0.76, Cohen's kappa 0.49 -> partly
+f124r: my labels 24 (no 7 yes 17)
+  B(i/iii) all: no tokens -> n < 20
+  B(i/iii) neighbour-anchored: no tokens -> n < 20
+  letters by my answer: 
+  B(ii) f124r my vs runner's (split draft: relabelled C43 = runner 'no'; else 'yes' or 'n') on 24: mine no/runner no 7 mine yes/runner no 10 mine yes/runner yes/n 7; agreement 0.58

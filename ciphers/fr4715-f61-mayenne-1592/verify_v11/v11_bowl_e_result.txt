@@ -1,0 +1,6 @@
+c4: anchors 10/10; repeats 6/6 -> PASS
+c5: anchors 9/10; repeats 6/6 -> PASS
+E alone (c4+c5): n 36; no&a/n 10 no&c/p/t 1 yes&c/p/t 17 yes&a/n 8; share 0.750, perm p 0.0018; P(a/n|no) 0.91, P(a/n|yes) 0.32 -> tracks
+pooled B+E (c1,c2,c4,c5): n 67; no&a/n 27 no&c/p/t 4 yes&c/p/t 19 yes&a/n 17; share 0.687, perm p 0.0007; P(a/n|no) 0.87, P(a/n|yes) 0.47 -> unclear
+E my vs runner's labels on 36: agreement 0.67, kappa 0.35
+runner's labels on the same E tokens: n 38; no&a/n 17 no&c/p/t 4 yes&c/p/t 15 yes&a/n 2; share 0.842, perm p 0.0001; P(a/n|no) 0.81, P(a/n|yes) 0.12
