@@ -812,3 +812,15 @@ foot bar longer than the top bar and tapering into a tail; EBRB = a plain square
 diagonal, the top bar longest, often a short spur of the vertical above the top bar; VBARA = a closed down-pointing triangle whose top side is a
 horizontal bar, nothing above the bar, no second bar; or unclear. Answer inline, one line per tile, exactly 'R01<TAB><EBRA|EBRB|VBARA|unclear>', R01
 to R06 in order, and nothing else."
+
+## H428 (runner 16, 29 Sept 2026) -- blind forced choice, V12's two held reads (written before the call)
+
+Images: /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h428/references.jpg (R1-R7), /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h428/items_01.jpg (I01-I15). Prompt, verbatim:
+
+> You are comparing handwritten cipher signs from a 16th-century letter. Look at two images. references.jpg shows seven reference signs,
+> labelled R1 to R7; in each tile the red triangle UNDER the tile points at the reference sign (neighbouring marks in the tile are context only).
+> items_01.jpg shows fifteen items, labelled I01 to I15; in each, the red triangle UNDER the tile points at the item's sign. Tiles differ in scale
+> and darkness; judge the shape of the drawn sign only. For each item, answer with the ONE reference whose sign is the same sign as the item's
+> marked sign (R1..R7), or N if it is none of them, or O if the marked mark is ordinary handwriting (a letter of the plain text), not a cipher sign.
+> Reply ONLY with a TSV block, header "id<TAB>answer<TAB>note", one row per item I01..I15, note at most 12 words describing the marked sign.
+> Do not use any tool except reading the two images.
