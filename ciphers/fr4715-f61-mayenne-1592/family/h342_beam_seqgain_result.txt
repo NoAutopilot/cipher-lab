@@ -1,0 +1,9 @@
+recf101r: runs 241, signs 2402; gain(v7) 0.0804; binned gains mean 0.0187 p95 0.0523, >= v7 0/100 -> order signal
+recf188r: runs 87, signs 885; gain(v7) 0.1794; binned gains mean 0.0158 p95 0.0799, >= v7 0/100 -> order signal
+recf106rall: runs 35, signs 427; gain(v7) 0.0512; binned gains mean 0.0178 p95 0.0561, >= v7 13/100 -> no order signal
+recf124r: runs 227, signs 2105; gain(v7) 0.0320; binned gains mean -0.0015 p95 0.0198, >= v7 0/100 -> order signal
+recf97r: runs 203, signs 1809; gain(v7) 0.0566; binned gains mean 0.0122 p95 0.0373, >= v7 0/100 -> order signal
+rec108v: runs 19, signs 286; gain(v7) 0.1338; binned gains mean 0.0213 p95 0.0976, >= v7 1/100 -> order signal
+recf108vg: runs 8, signs 285; gain(v7) 0.0955; binned gains mean 0.0197 p95 0.0763, >= v7 2/100 -> order signal
+positive control (in-sample f.101r and f.188r): PASS
+held leaves: recf106rall=no order signal recf124r=order signal recf97r=order signal rec108v=order signal recf108vg=order signal
