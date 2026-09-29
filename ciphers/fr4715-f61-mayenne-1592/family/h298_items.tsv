@@ -1,0 +1,12 @@
+item	kind	class	sheet	segment	x
+V01	CA	CH	f61sheetB_L05	1	2140
+V02	TEXT_X	l:le	f61sheetB_L04	3	2230
+V03	TEXT_X	C:Come	f61sheetB_L04	3	1440
+V04	CIPHER	C43	f61sheet_L08	1	770
+V05	CIPHER	PHI	f61sheet_L11	1	660
+V06	TEXT_A	h:choses-L05	f61sheetB_L05	1	485
+V07	TEXT_X	l:les	f61sheetB_L04	4	1750
+V08	TEXT_A	h:choses-L01	f61sheetB_L01	3	1000
+V09	CIPHER	C43	f61sheet_L03	2	2320
+V10	CIPHER	PHI	f61sheet_L08	1	450
+V11	TEXT_A	h:mehi-L07	f61sheet_L07	1	2340

@@ -699,3 +699,11 @@ scripts/f61positions_L05B_score.py: (a) the clear words listed before the first 
 iff at least one word item precedes the first sign, and "the runner's read stands" iff the last such word (ignoring a bare 'a') is 'sont'; (b) the sign
 items joined in order to read_call_A's 18 L05 signs iff their count is 18 (a bare 'a' listed as a word) or 19 (the edge a listed as a sign, then taken
 as H63's uncoded CA before pass A's pos 1). Prompt: H264's verbatim with L05 in place of L10.
+
+## H298 (29 Sept, Opus vision, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61's CH against clear h's by letterform, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h298/sheet_01.jpg (family/h298_ch_text.py tiles; key family/h298_items.tsv; 11 tiles: f.61 CH 1 at sheet-B L05 x 2140 re-centred by ink
+centroid, clear h 3 (choses on sheet B L05 and L01, mehi on the L07 span sheet), clear non-h letters 3 (l of les, C of Come, l of le; L04), PHI 2, C43 2).
+Disclosure: the runner placed the six TEXT tiles on two ruler sheets of those tiles only; the CH, PHI and C43 crops and the test sheet were not seen (the
+runner did view sheet B L05 whole for the Correction earlier, which shows the CH sign in passing). Gates and read-outs in the script's docstring (n = 3
+text h, n = 1 CH, flagged). Prompt: H256's verbatim with "11 numbered tiles (V01-V11)" and "V01 to V11".
