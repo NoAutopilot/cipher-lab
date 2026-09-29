@@ -839,3 +839,140 @@ mixed." **Unsafe sentence:** "The bowl reliably separates c/p/t from a/n" or "f.
 Postmortem: the proposal's own counts are reproduced exactly; its reading of them is too strong on the bowl side only. One structural flag for
 later briefs: `*_align.tsv` status columns are relative to the alignment's own EM key, so "non-conflict rows only" silently selects on the letter
 for any class whose cell is under test.
+
+## VERIFY-F61-V10 (29 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V10 (account 3, session_01BBihDVXNJZJwuUvhLshzw4), 17:14-17:4x UTC by the container clock. Separate from campaign
+runner 13 (session_01MSoJWwZxNPSjQd4hszNdvQ) and from VERIFY-F61-V5..V9. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v10.md`. Claims under
+audit: runner 13's held-leaf evidence for key v7, NOTES.md H325-H359 (plus H360/H361/H365 where they bear on claim 4). Set-level audit: no letter on
+f.61 is read, no token graded, no cell or key file touched, no vision call made.
+
+**Files in `verify_v10/`.** `order_v10.py` (parts a-f) and `order_v10g.py` (part g), each committed and pushed before it was run (8829bba9, 8517cc20),
+design, controls and gates in their docstrings; results `order_v10_{a,b,d,e,f,g}_result.txt`. The scripts share no scoring code with the runner's
+`family/h3xx_*.py` or `tools/partial_key_test.py --cells`: a separate interpolated letter 4-gram model of `tools/data/fr16` (lambdas .55/.25/.12/.06/.02,
+every letter of a run scored), an exact Viterbi decoder (the runner's is a width-400 beam scoring from the 4th letter), and fresh seeds. Inputs taken as
+committed: the reconciled sign drafts `family/passes/<leaf>/ciphertext_draft.tsv` and key v7 through the key's own loader `build_key_v7.load_key_v7`
+(the loaded cells equal the runner's `family/key_v7_cells_h354.tsv`). Independent data check: my run building reproduces the runner's run and sign counts
+on every leaf (f.101r 241/2402, f.188r 87/885, f.124r 227/2105, f.97r 203/1809, f.108v 19/286 and 8/285, f.106r rows 1-18 51/622).
+Reproduction of the runner's own scripts (`--check`): h325, h328, h330 OK (others listed at the foot of this section).
+
+**One contamination found before running (control e).** f.124r and f.97r are not in key_period_v7.tsv's leaf column, but VBAR_A's g/t (v5) was chosen
+over v4's s/t partly by a sequence-gain test on a pool that included f.97r and f.124r (H146, 28 Sept; H151's replication 41/50 did not stand). So for
+VBAR_A these leaves were not fully held. Control (e) re-runs the held-leaf test with VBAR_A = s/t: the signal survives (below), so this contamination
+does not carry it. H132 (same pool) tested swaps of f.61's 14-cell map and changed no v7 cell.
+
+### Numbers beside the runner's
+
+| check | runner 13 | this verifier (own statistic) |
+|---|---|---|
+| (a) in-sample f.101r gain / null p95 | 0.080 / 0.052, 0/100 | 0.045 / 0.029, 0/100 -- PASS |
+| (a) in-sample f.188r | 0.179 / 0.080, 0/100 | 0.096 / 0.043, 0/100 -- PASS |
+| held f.124r (bins of 3) | 0.032 / 0.020, 0/100 | **0.0300 / 0.0296, 3/100** -- signal, at the edge |
+| held f.124r (bins of 2) | -- | 0.0300 / 0.0280, 1/100 -- signal |
+| held f.97r (bins of 3) | 0.057 / 0.037, 0/100 | 0.0295 / 0.0241, 0/100 -- signal |
+| held f.97r (bins of 2) | -- | 0.0295 / 0.0284, 5/100 -- signal, at the edge |
+| f.108v rec108v | 0.134 / 0.098, 1/100; H344 voided 1/3 | 0.069 / 0.038, 1/100; shuffled 1/10 -> valid |
+| f.108v recf108vg | 0.096 / 0.076, 2/100 | 0.073 / 0.046, 0/100 |
+| f.108v agreed signs (H353) | 0.079 / 0.071, 5/100 | 0.045 / 0.046, 9/100 -- no signal |
+| f.106r rows 1-18 (bins of 3) | 0.028 / 0.049, 31/100 | 0.037 / 0.038, 9/100 -- no signal |
+| f.106r rows 1-18 (bins of 2) | -- | 0.037 / 0.036, 2/100 -- signal |
+| (b) shuffled-order targets, false 'signal' | H344: 0/3 on most leaves, 1/3 rec108v | 0-2/10 on every leaf (f.124r 2/10, at the gate) -> valid everywhere |
+| (d) in-sample power at 227 / 203 runs | -- | f.101r 1.00 / 1.00 (f.188r too short) |
+| (d) in-sample power at 51 runs | f.101r 0.80, f.188r 1.00 (H350) | f.101r 0.95, f.188r 1.00 |
+| (d) held power at 51 runs | f.124r 0.10, f.97r 0.53 (H351) | f.124r 0.60, f.97r 0.60 |
+| (d) in-sample power at 19 / 8 runs | -- | f.101r 0.60 / 0.30; f.188r 0.95 / 0.95 |
+| (e) VBAR_A = s/t (v4) held f.124r / f.97r | -- | 0.0302 / 0.0294, 3/100; 0.0270 / 0.0254, 2/100 -- signal survives |
+| (f) HASH4 d/q, size-matched, f.124r / f.97r | 1.00 / 1.00 | 1.00 / 0.97 -- supported both |
+| (f) C43 a/n | 0.92 / 1.00 | 1.00 / 1.00 -- supported both |
+| (f) H24 i/x | 0.51 / 1.00 | 0.78 / 0.82 -- not supported either |
+| (f) ZBAR f/s | 0.92 / 0.97 | 1.00 / 0.93 -- f.124r only |
+| (f) in-sample positive control, same four classes | f.101r 4/10 classes pass (H355) | f.101r 4/4 (C43, ZBAR at 0.95), f.188r 4/4 |
+| (g1) 4TRI + a/n vs 30 freq-drawn widenings, f.124r | 0.0748 vs max 0.0602, beats 1.00 | 0.0472 vs max 0.0401, beats 1.00 -- stands |
+| (g1) same, f.101r / f.97r / f.188r | -- | 1.00 stands / 0.93 / **0.50, a/n lowers the gain** |
+| (g2) split draft f.124r (no-bowl 4TRI -> C43) | 0.071 (H360), shuffled 0/3 | 0.0484 / p95 0.0227, 0/100; shuffled 1/10 |
+| (g2) split draft f.101r | 0.097-0.108 (H365) | 0.0551 / 0.0255, 0/100; shuffled 0/10 |
+
+My gains run lower than the runner's on most leaves (0.3-0.9x; a smoother letter model, all letters scored); what matters is the rank against each leaf's own null,
+and there the two instruments agree on the in-sample control, on f.97r, on f.124r (mine at the edge), on the recf108vg draft and on the shuffled
+targets; they disagree at the edge on f.108v's agreed-sign draft and on f.106r.
+
+### Verdict (1) gloss-based held-leaf check on f.124r (H325/H328), fragile under bootstrap (H330): **endorse as the runner states it (a fragile lead)**
+
+H325, H328 and H330 reproduce (`--check` OK). 148 agreed gloss letters in v7's cells against a binned-permutation p95 of 143 (7/1000) and a frequency
+key of 132 is a pass of 5 letters; the bootstrap (real > binned p95 in 86% of resamples, > frequency key in 90%, against pre-stated bars of 80% and 95%)
+makes it fragile, and H331 puts the margin on PHI and C43. I add two limits: the gloss letters are two model passes on a hand they disagree on at 58%
+of words (grade M), and the count is order-free, so it is a frequency-and-cell test, not a sequence test -- it cannot tell v7 from any key with the
+same cells in a different arrangement of equally common letters beyond what the binned control already holds. H361 (after the window: 156 on the
+split draft, binned p95 148, 1/1000) moves in the same direction as the order statistic; it does not remove H330's fragility, which was a property of
+the gloss words, not of the sign draft. Standing: **a lead for v7's cells on f.124r, not a confirmation.**
+
+### Verdict (2) gloss-free beam check (H335-H341), voided by its shuffled-order control: **endorse the void; nothing of the beam arm survives as evidence**
+
+H341's own table shows v7 beating the binned p95 on shuffled order on f.124r 4/5, f.101r 3/5 (in-sample), f.106r 2/5 and rec108v 2/5: the absolute
+beam score against within-bin permuted keys measures how well cell letters match sign frequencies, and a shuffled draft keeps the frequencies. The
+arm is therefore voided as a gate on every leaf, not only on the four where it fired: once it fires on an in-sample leaf with no order, a pass on
+f.97r (1/5) or recf108vg (0/5) is a pass of a test that cannot fail for the right reason. The runner's "f.97r and recf108vg survive on their own leaves"
+should read "not evidence either". The frequency-key arm was already shown to fail its own in-sample control (H336) and was rightly retired. What
+survives is the lesson (a within-bin key permutation is not an order control) and the replacement statistic, which is claim (3).
+
+### Verdict (3) within-run order statistic (H342/H344), power (H346/H350/H351), per class (H345/H349/H355): **endorse in part**
+
+- **Endorsed: order signal for key v7 as a set of cells on f.97r and f.124r**, two leaves v7 was not built from (de Diou's hand, fr.3982), by a
+  statistic that passes its in-sample positive control (both instruments), whose shuffled-order null can and does differ from the target (mine: 0-2
+  of 10 false signals on every leaf, the gains of shuffled drafts centred on zero), against keys whose cells are permuted within frequency bins, and
+  which survives replacing VBAR_A's contaminated g/t by v4's s/t. f.97r clears in both instruments and both bin widths. **f.124r clears in both but
+  at the edge in mine** (3/100, gain 0.0300 against p95 0.0296): a real but thin signal on the unsplit draft; claim 4 explains why (the readers' 4TRI
+  code mixes two signs on this leaf), and on the split draft it is clear (0.0484 against 0.0227).
+- **What it shows:** that v7's cells, taken together, make the sign ORDER of these two leaves read more like 16th-century French than frequency-matched
+  rearrangements of the same cells do. It is cryptanalytic, set-level evidence that the family key carries across leaves it was not fitted on.
+- **What it does NOT show:** any letter on f.61, any token's value, or that any single cell is right (a set-level gain is compatible with several wrong
+  cells); it says nothing about f.61's own hand beyond f.108v below, and it is not a reading of f.124r or f.97r either.
+- **f.108v (f.61's hand): fragile, and instrument-dependent.** Both whole drafts show a signal in mine (rec108v 1/100, recf108vg 0/100), the runner's
+  H344 voids rec108v at 1/3 while mine passes it (1/10); the agreed-sign draft (H353) passes in the runner's (5/100) and misses in mine (9/100). At 8-19
+  runs in-sample power is 0.30-0.60 on f.101r and 0.95 on f.188r: the leaf is below the length where either instrument is reliable. Standing: **a lean,
+  not evidence** -- the runner's "thin order signal in f.61's own hand on agreed signs" should drop to that.
+- **f.106r (the secretary's hand): untestable at 51 runs -- endorse H351's correction.** My held-leaf power at 51 runs is 0.60 on both f.124r and f.97r
+  (runner's 0.10 / 0.53), still under 0.80, so a miss there is not a negative. Note the target itself is instrument-dependent at the edge: 9/100 with
+  bins of 3, 2/100 (a pass) with bins of 2, against the runner's 31/100. Neither a negative nor a signal; H350's "negative" stays withdrawn.
+- **Per class: endorse HASH4 d/q; endorse C43 a/n more strongly than the runner; H24 and ZBAR not endorsed.** HASH4 d/q is supported on both held leaves
+  in both instruments. C43 a/n is supported on both in mine (runner: one), and my in-sample control passes all four tested classes on both in-sample
+  leaves. H24 i/x is not supported on either held leaf in mine (0.78, 0.82) while supported in-sample; the runner's f.97r pass (1.00) does not replicate.
+  ZBAR's single-leaf support flips leaf between instruments (runner f.97r, mine f.124r). Read under rule 4: H24's cell is a period cell (f.101r/f.188r/
+  f.274r); a weak cryptanalytic score on another hand does not outrank it -- recorded as a pointer, not a conflict. The runner's EBR_B note (low scores
+  not evidence against l/y) stands. Only classes that pass in both instruments should be quoted: HASH4 and C43.
+
+### Verdict (4) f.124r 4TRI widening by a/n (H356-H358) and H359's bowl forced choice: **endorse, with a specificity control added**
+
+- H358's control replicates in my instrument: on f.124r the a/n widening (0.0472) beats all 30 frequency-drawn 2-letter widenings (max 0.0401). The
+  added check: the same widening also beats all 30 on in-sample f.101r (where H365's period gloss pairs the readers' no-bowl 4TRI with a or n, 118 of 130
+  -- grade C per pair, not our statistic), sits at 0.93 on f.97r, and on f.188r it LOWERS the gain (0.0852 vs v7 0.0957; beats 0.50). So the a/n widening
+  is not a generic win for a/n letters; it helps where the readers' 4TRI is known or seen to hold the no-bowl sign and hurts where the class is clean.
+- H359 (read from its files, not re-run; no vision call made here): gate 18/20 on f.176v anchors (Desportes's hand), f.124r 4TRI no-bowl 31 of 46
+  answered, C43 20/20 no-bowl. The C43 figure shows "no bowl" is what the reader answers for the a/n sign in this hand; the 15 "bowl" answers show it does
+  answer "bowl" here too. Limit, as the runner says: the known-answer gate is in another hand. H360/H365 extend it to 270 and 241 tokens with every
+  chunk's gate passing, and f.101r's period letters (bowl-letter agreement 0.83) are the one link that is not our own statistic.
+- On the split draft my order test gives a clear pass on f.124r and f.101r with valid shuffled targets (g2). Standing: **the readers' 4TRI code on
+  f.124r (and f.101r) conflates the bowl sign (c/p/t) with the no-bowl a/n sign** -- a transcription finding with period support on f.101r.
+  `family/PROPOSAL_v8_4tri.md` (a key-build change) is outside this brief; it is the verifier lane's (VO3) call, and this audit's numbers are available
+  to it. v7's 4TRI and C43 cells are unchanged here.
+
+### Meter under key v7
+Unchanged: **12 / 59 / 2 / 26** (VERIFY-F61-V9's baseline, with CA as null: null 17 + unread 9). No cell moves; this audit is set-level.
+
+### What runner 13 (or its successor) should record
+1. NOTES/HYPOTHESES: H341's void covers the binned beam arm on every leaf, f.97r and recf108vg included ("not evidence either").
+2. H342/H344: endorsed on f.97r and f.124r by an independent instrument; f.124r's margin on the unsplit draft is thin in the second instrument (3/100).
+3. H353: f.108v downgraded to "a lean, instrument-dependent at 8 runs", not "a thin order signal".
+4. H349/H355: quote HASH4 d/q and C43 a/n only; H24's f.97r pass and ZBAR's leaf do not replicate.
+5. The VBAR_A contamination (H146 pool included f.97r/f.124r) as a named limit, with control (e)'s result that the signal survives VBAR_A = s/t.
+6. H358: add the f.188r specificity result (a/n widening lowers the gain on a clean-4TRI leaf).
+
+### Novelty
+Not assessed. No reading and no plaintext claim (rule 10).
+
+### Confidence
+- **v7's cells as a set carry order on held f.97r:** moderate-high (two instruments, two bin widths, all controls valid).
+- **Same on held f.124r:** moderate (both instruments, thin in one on the unsplit draft; clear on the split draft).
+- **f.108v, f.106r:** no call (below reliable length).
+- **HASH4 d/q, C43 a/n by order on held leaves:** moderate; **H24, ZBAR:** not established.
+- **The f.124r 4TRI conflation:** moderate-high (order, shape with gates, and f.101r's period letters agree).

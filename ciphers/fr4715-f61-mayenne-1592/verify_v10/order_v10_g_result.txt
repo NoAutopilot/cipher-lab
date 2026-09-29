@@ -1,0 +1,10 @@
+(g1) 4TRI c/p/t widened by a/n vs 30 frequency-drawn 2-letter widenings (seed 10070)
+recf124r: v7 gain 0.0300; a/n-widened 0.0472; random widenings mean 0.0322 max 0.0401; beats 1.00 -> pointer stands
+recf97r: v7 gain 0.0295; a/n-widened 0.0334; random widenings mean 0.0267 max 0.0372; beats 0.93 -> added letters, not these letters
+recf101r: v7 gain 0.0449; a/n-widened 0.0557; random widenings mean 0.0439 max 0.0528; beats 1.00 -> pointer stands
+recf188r: v7 gain 0.0957; a/n-widened 0.0852; random widenings mean 0.0859 max 0.0931; beats 0.50 -> added letters, not these letters
+(g2) split drafts (no-bowl 4TRI -> C43), key v7 unchanged, bins of 3, 100 null keys; shuffled targets 10 x 40 keys
+recf124r_split: runs 227, signs 2105; gain(v7) 0.0484; null mean 0.0112 p95 0.0227, >= v7 0/100 -> order signal
+recf101r_split: runs 241, signs 2402; gain(v7) 0.0551; null mean 0.0083 p95 0.0255, >= v7 0/100 -> order signal
+recf124r_split: shuffled targets with 'order signal' 1/10 -> design valid
+recf101r_split: shuffled targets with 'order signal' 0/10 -> design valid
