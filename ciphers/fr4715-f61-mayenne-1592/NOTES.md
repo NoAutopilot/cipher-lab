@@ -5278,3 +5278,12 @@ Two caveats, carried, not argued away: (1) f.101r's power sits exactly at the 0.
 were read from those leaves), so the fairer reference is a held leaf that does show the signal, subsampled to 51 runs -- H351. Until H351, the reading
 is "no order signal for v7 in the secretary's hand on f.106r, a negative at this N by the pre-stated in-sample power". This is a leaf-level result on
 key v7, not a class change: the campaign stays open (rule 5). No call.
+
+## Campaign step H351 (29 Sept 2026, 16:13-16:18 UTC by the commit stamp and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- held-leaf power at 51 runs is low: f.106r's miss is untestable at this N, not a negative (H350's reading corrected) (script-only)
+
+`family/h351_seqgain_heldpower.py` (written and pushed before running; `family/h351_seqgain_heldpower_result.txt`): 30 random 51-run subsets of the
+held leaves where v7 does show the order signal, 50 binned keys each. **f.124r 3/30 = 0.10; f.97r 16/30 = 0.53** -> pre-stated read-out "held leaves
+underpowered at 51 runs -- f.106r's miss is untestable at this N, not a negative". This supersedes H350's in-sample reading, as H350's second caveat
+anticipated: in-sample power (0.80 / 1.00) overstates what a held leaf shows. **f.106r (the secretary's hand): no order signal and untestable at
+51 runs**; the whole cipher block is now drafted, so no more of this leaf can raise N -- the order check in this hand needs a longer leaf in the
+secretary's hand (f.211r's run is 18 signs) or the person's gloss read (ASKS 99). HYPOTHESES.md's H348/H350 row is corrected in place. No call.

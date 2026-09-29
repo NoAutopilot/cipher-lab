@@ -1,0 +1,3 @@
+recf124r: 30 subsets of 51 runs; gain(v7) > binned p95 in 3/30 = 0.10
+recf97r: 30 subsets of 51 runs; gain(v7) > binned p95 in 16/30 = 0.53
+read-out: held leaves underpowered at 51 runs -- f.106r's miss is untestable at this N, not a negative
