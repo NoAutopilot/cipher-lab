@@ -742,3 +742,16 @@ black triangles, one above and one below, point at the centre mark; other letter
 of: ONE (it is made of one tall upright ascender stroke), TWO (two tall upright ascender strokes standing side by side), NEITHER (it is some other
 shape), or unclear. Ignore ink weight, size, blur, the hand, and any strokes joining it to neighbours. Answer inline, one line per tile, exactly
 'Y01<TAB><ONE|TWO|NEITHER|unclear>', Y01 to Y16 in order, and nothing else."
+
+## H311 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- Il vs ll forced choice, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h311/sheet_01.jpg (family/h311_il_forced.py tiles; key family/h311_items.tsv; 13 tiles: clear 'Il' 2 (f.61), doubled l 5 (f.211r 4,
+f.61 ella), PHI 2, C43 2, the L02 opening mark and LL). Disclosure: the runner saw a placement sheet of the seven known-answer tiles, and the L02 mark
+earlier on sheet B L02; not LL, not the test sheet. A fresh reader. Gate and read-outs in the script's docstring. Prompt (verbatim): "Read the image
+/…/h311/sheet_01.jpg with your image reader only; use no other tool. It holds 13 numbered tiles (Z01-Z13) cut from 16th-century French manuscript pages
+that mix ordinary cursive handwriting with cipher signs, all scaled to the same height. In each tile two black triangles, one above and one below, point
+at the centre mark; other letters or signs may show at the sides. Look at the centre mark ONLY. If it is made of two tall strokes side by side, look at
+the LEFT one and answer LEADIN if the left stroke begins with a long diagonal lead-in stroke coming up from the lower left (as a cursive capital I
+does), or UPRIGHT if the left stroke is a plain upright ascender like the right one (as in a doubled l). If the centre mark is some other shape, answer
+NEITHER; if you cannot tell, unclear. Ignore ink weight, size, blur and the hand. Answer inline, one line per tile, exactly
+'Z01<TAB><LEADIN|UPRIGHT|NEITHER|unclear>', Z01 to Z13 in order, and nothing else."
