@@ -4690,3 +4690,16 @@ shape as C6 (H261) at n = 1, noted, not filed as conflict rows at that n. **H282
 `--check` OK): in fr16 "comme/come" is followed 2,108 times by a pronoun or article and never by a majesty formula (0), although the abbreviation
 tokens s a 74, v a 68, v m 65, s m 35 occur elsewhere -- so pass U2's guess that L04's OTHER after "Come" is "S.M." has no corpus support; the token
 stays OTHER (wider). No call.
+
+## Campaign steps H283, H284, H285 (29 Sept 2026, 10:39 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the two signs before "trop" are not letters there (script-only)
+
+**H283** `family/h283_l05_head.py` (result `family/h283_l05_head_result.txt`, `--check` OK). Disclosure: no pass on disk lists L04's clear words, so the
+runner read images/f61sheetB_L04.jpg once (grade M): "generosite pour bea[u]coup desirer [LOOPBAR] . Il a ... on cognoit Come [OTHER] le ... croys
+aussi que les", the line ending "croys aussi que les"; L05 then opens at its left edge with LOOPSTEM1, CH, and "trop avancees" (S3). So the text runs
+**"que les [LOOPSTEM1] [CH] trop avancees"**. In fr16, "les W1 W2 trop" occurs twice (choses allaient, pretentions etaient), "les W1 trop" never, and
+no two-letter filler from the pooled cells (se, sm, qe, qm) ever stands there. What it says, as a lead for the verifier: at this place the two signs
+cannot be the letters their pooled cells give (q/s, e/m; both from other leaves, both dashes in Tomokiyo's markup, H281); French wants a noun and a verb
+("choses sont", "affaires estoient"), so they are word codes not in Tomokiyo's table (its three word codes are que, qui, pour) or the runner's read of
+"les" is wrong -- H288 puts that read to a blind pass before anything rests on it. No value proposed; nothing merged.
+**H284** (notes): family/V9_PAGE.md brought up to H283 (witness spans file, H268 correction, dash-need table, pronoun check, L04 OTHER negative, L05 head).
+**H285 dropped:** f.108v's reconciled draft holds one CA (L02 6) and no C6 -- nothing to compare at n = 1.

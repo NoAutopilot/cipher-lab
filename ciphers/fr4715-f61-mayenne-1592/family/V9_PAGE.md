@@ -18,6 +18,18 @@ first. Key v6 (family/key_period_v6.tsv) is unchanged by this session; VERIFY-F6
 Non-tests logged, not evidence: H258 (LOOPBAR glyph link, n = 1 + 1), H263 (no CA on the overlaid f.108r rows), H266/H267 (by H265), H270 (superseded),
 H271/H272 (a count-3 word list segments any lattice, control 200/200), H273 (no "ni mesme" in fr16).
 
+## Added after the first version (H277-H283)
+
+- `scripts/tomokiyo_spans_witness.tsv`: the five spans with S5 as the lexicon witness, beside the untouched published file; `f61crib.load_spans(path)`.
+- `family/f61_dash_need.tsv` (H281): Tomokiyo's 16 span dashes -- 12 on null-band classes, 3 on keyed classes (L05 1 LOOPSTEM1 q/s, L05 2 CH e/m, L11 8
+  4STEM a/n), 1 unpaired; his own phrase needs a letter at L11 8 only.
+- H280: a standalone pronoun before entendoit occurs once in fr16 ("s'il l'entendoit") and never in the later corpora; "me l'entendoit" is possible,
+  rare French in these texts. H278 corrected H268's phrase count (see above).
+- H282: "comme" + majesty formula 0 of 2,108 in fr16: L04's OTHER is not "S.M." by the corpus; stays OTHER.
+- H283 (lead, grade M read by the runner, blind pass pending as H288): L04 ends "croys aussi que les" and L05 opens "[LOOPSTEM1] [CH] trop avancees",
+  so the two keyed signs before "trop" cannot be letters there (French wants a noun and a verb; fr16 "les W1 W2 trop": choses allaient, pretentions
+  etaient); word codes outside Tomokiyo's que/qui/pour, or a misread "les".
+
 ## Meter variants the verifier chooses between (verify_v8/meter_v8.py bands, key v6 f.61 reading)
 
 - V8 as endorsed: **12 / 58 / 2 / 27** (4PI split, f.61's two 4-over-Pi held unread).

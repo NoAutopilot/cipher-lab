@@ -1,0 +1,4 @@
+'les W1 W2 trop': 2 cases: choses allaient 1, pretentions etaient 1
+'les W1 trop': 0 cases: 
+word before 'trop' overall: pas 14, de 9, etait 6, que 5, est 5, une 5, avait 4, sans 4, ay 4, a 3, ny 3, suis 3
+two-letter fillers from the pooled cells (se sm qe qm) as W1 W2 or W1: 0
