@@ -15,9 +15,11 @@ def corr():
     return [r for r in csv.DictReader((l for l in open(f"{T}/scripts/f61_positions_corrections.tsv") if not l.startswith("#")), delimiter="\t")]
 def apply_seq(lines):
     for r in sorted(corr(), key=lambda r: -int(r["pos"])):
+        if r["line"] not in lines: continue   # L04 is not in the span-reader sequence
         s = lines[r["line"]]; p = int(r["pos"])
         if r["action"] == "relabel": s[p - 1] = r["class"]
         elif r["action"] == "insert": assert len(s) == p - 1, (r, len(s)); s.insert(p - 1, r["class"])
+        elif r["action"] == "delete" and r["line"] in lines and len(s) >= p and s[p - 1] == r["class"]: del s[p - 1]
     return lines
 def spans(k, l61):
     s61 = load_spans(); mt = tot = 0
@@ -35,6 +37,8 @@ def meter(corrected):
         for r in d:
             if (r["line"], r["pos"]) == ("L07", "4"): r["class"], r["period_letters"] = "C43", "a/n"
         d.append({"line": "L03", "pos": "16", "class": "PHI", "period_letters": "e/r"})
+        dels = {(r["line"], r["pos"]) for r in corr() if r["action"] == "delete"}   # H415: rows added after H408 (L04/2 punctuation)
+        d = [r for r in d if (r["line"], r["pos"]) not in dels]
     def v8(r):
         c = r["class"]
         if c == "4PI": return "a/n" if r["line"] == "L11" else "-"
@@ -46,9 +50,9 @@ def main():
     k = b8.load_key_v8(f61=True); lines = split_lines(load_read()); lines.update(f108_lines()); relabel(lines)
     l0 = b.f61_relabel({x: list(v) for x, v in lines.items()}); l1 = apply_seq({x: list(v) for x, v in l0.items()})
     out = []
-    for tag, ll in (("uncorrected", l0), ("with H407's two corrections", l1)):
+    for tag, ll in (("uncorrected", l0), ("with every correction in scripts/f61_positions_corrections.tsv", l1)):
         mt, tot, mean, p95, ge = spans(k, ll); out.append(f"f.61 five spans, key v8 f.61 reading key, {tag}: {mt}/{tot} = {mt/tot:.3f}; 2000 permuted keys mean {mean:.3f} p95 {p95:.3f}; >= key {ge}/2000")
-    for tag, cflag in (("uncorrected", False), ("with H407's two corrections", True)):
+    for tag, cflag in (("uncorrected", False), ("with every correction in scripts/f61_positions_corrections.tsv", True)):
         f, t, w, u, n = meter(cflag); out.append(f"meter, key v8 as merged, {tag}: firm {f} / two-way {t} / wider {w} / unread-or-null {u} of {n}")
     txt = "\n".join(out) + "\n"; p = f"{HERE}/h408_span_miss_apply_result.txt"
     if CHECK:

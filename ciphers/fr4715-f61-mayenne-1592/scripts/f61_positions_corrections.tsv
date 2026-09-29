@@ -3,3 +3,4 @@
 line	pos	action	class	evidence
 L07	4	relabel	C43	H407 part A: L07/4 = the 43 sign at 3 of 3 windows (reader code BETA; Tomokiyo 'a' in 'jal')
 L03	16	insert	PHI	H407 part B: 7 cipher signs from L03/10 to the clear 'a les entendre' (pass A 6), the last a loops-on-stem sign
+L04	2	delete	OTHER	H414: L04/2 (reader code OTHER) is punctuation / not a cipher sign at 3 of 3 windows (gate 17/18): the dot before "Mais"

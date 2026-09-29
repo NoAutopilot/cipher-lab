@@ -5949,3 +5949,16 @@ forced choice, H411's references and prompt; reply `family/passes/h413_reply.tsv
 LOOPSTEM1 stays as coded; nothing written to scripts/f61_positions_corrections.tsv. With H411 the record for L05/1 is LOOPBAR 2 reads (H411, H413
 W3), none 1, unclear 1 -- a sign the readers cannot place firmly, beside Tomokiyo's dash. The out-of-span QA (H410, H411, H413) thus confirms 26 of
 27 out-of-span sign codes on f.61 and leaves L05/1 unsettled. 1 call, cost estimate 1.5 USD.
+
+## Campaign steps H414 and H415 (29 Sept 2026, 19:56-19:34 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- the meter's two 'wider' OTHER signs: L04/2 is punctuation, L02/2 a sign matching no reference (1 vision call)
+
+`family/h414_other_two.py` (key `family/h414_items.tsv`, prompt note H414), committed before the call (8d1d6b8e's parent). No position file covers L02
+or L04, so the runner set the two positions by eye on the native region image (disclosed; markers checked): L02/2, the barred double stroke after
+the PHI before "particulierement"; L04/2, a dot after the LOOPBAR before "Mais". One blind Opus forced choice against 15 f.61 in-span references
+(H411's 12 + HASH4, ZHOOK, 4TRI) with an added option P (punctuation / not a cipher sign); reply `family/passes/h414_reply.tsv`; result
+`family/h414_other_two_result.txt` (`--check` OK): **gate 17/18; L04/2 P at 3 of 3 windows -> punctuation, not a cipher sign; L02/2 'none' at 3 of 3
+windows -> a cipher sign matching none of the 15 references** (not VBAR_B, HASH4, 4PI or ZHOOK: its class stays open; the cell stays wider).
+H415 (script-only): the L04/2 deletion added to `scripts/f61_positions_corrections.tsv`; `family/h408_span_miss_apply.py` extended for 'delete'
+rows (`--check` OK): **meter with every correction 12 / 60 / 1 / 26 of 99** (uncorrected 12 / 59 / 2 / 26 of 99; spans 55/55 unchanged). The
+transcription corrections so far (H407, H414): L07/4 BETA -> C43; L03/16 PHI inserted; L04/2 removed as punctuation. No key, grade or reading.
+Cost estimate 1.6 USD.
