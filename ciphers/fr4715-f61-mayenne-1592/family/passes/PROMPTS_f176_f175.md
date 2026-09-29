@@ -80,3 +80,16 @@ header 'line<TAB>text<TAB>conf', lines numbered V01, V02, ... in reading order. 
 3 Opus vision calls, inline replies written verbatim: passes A/B of f.176r L41-L47 (stage 2a prompt; L47 is the short last row) and a read
 of fol. 177v strips 5-8 (stage 2c strip prompt, strips 05-08, lines numbered V15, V16, ... continuing, and the first line of strip 05
 skipped if it repeats V14) -> `passes/f177v_clearA_S05-S08.tsv`. Then build_f176_key.py L01-L47 (the whole of f.176r).
+
+## H177c stage 1 (runner 7 session_012nGionjAX21NRbpi4TP69b, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+f.176v (canvas 328) against the rest of its decipherment, into a SEPARATE file (`key_period_f176v.tsv`, `build_f176v_key.py`), because
+VERIFY-F61-V5 is auditing `key_period_f176.tsv`: nothing here edits that file, `build_f176_key.py` or v4. Crops: `sheets/f176v_full/README.md`.
+Where f.176v's clear starts: f.176r's 3,095 signs at 0.8 letters per sign are about 2,480 letters, and fol. 177r holds 2,589, so f.176v's
+text should begin at or near fol. 177v V01; V01-V27 (2,118 letters) are already read (stages 2c/2d), so no clear read is needed for f.176v
+L01-L08. 2 Opus vision calls: blind sign passes A/B of f.176v L01-L08 (H170 calls (1)(2) prompt; rows L01..L08; crops s1..s3 at
+`<scratch>/f176v/f176v_Lnn_sK.jpg`; neighbouring crops share about 120 px; inline reply ONLY with the TSV block, same header) ->
+`passes/f176v_signs{A|B}_L01-L08.tsv`, written verbatim by the runner.
+GATE: build_f176v_key.py L01-L08: match(true: fol. 177v from V01) - max(match(a) f.184r from word 0, match(b) fol. 177r from L01) >= +0.10.
+Control (b) was dry-run on f.176r's own L01-L08 passes before any f.176v call (fol. 177r 0.569 vs fol. 177v 0.384): it separates the right
+passage from the wrong one in this decipherment. PASS -> the rows go to key_period_f176v.tsv (not merged); FAIL -> logged, and the start
+line is not shopped: one pre-named alternative only, --start V01 replaced by fol. 177r's last lines is NOT tried (control (b) is 177r).
