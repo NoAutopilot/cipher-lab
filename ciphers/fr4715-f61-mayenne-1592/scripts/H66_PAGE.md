@@ -174,6 +174,9 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   between sessions. The f.108v cells (4STEM a/n) key about 19 bowl signs a/n, where the H193/H194 rule says c/p. For the verifier: any 4-family cell
   built from pooled codes across pass sessions (v5's 4STEM on f.101r: a/n 25, c/p 16) may mix the two signs. Files `family/h199_bowl_108v.py`
   (`--check`), `h199_items.tsv`, `h199_bowl_positions.tsv`, `passes/h199_reply.tsv`.
+- **H201 (script-only):** f.108v's draft relabelled by the bowl answers (yes c/p, no a/n) beats the readers' cells on sequence gain in 30/30
+  resamples, and ranks 1 of 201 among random relabels with the same 19 c/p (gain 0.276; best random 0.223; readers' 0.152). The shape answer carries the
+  positions, not only the count. `scripts/f61bowl_108v_seq.py` (`--check`).
 
 ## Files to read
 

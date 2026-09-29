@@ -1,0 +1,4 @@
+f.108v 4-family columns answered yes/no: 68 (bowl yes 19); relabelled tokens: 4BOWL 19, 4NOB 49
+(1) bowl relabel vs readers' cells, 30 resamples: bowl wins 30/30 -> bowl relabel CONFIRMED
+(2) whole f.108v: bowl relabel gain 0.276, readers' cells 0.152; rank of bowl relabel among 200 random relabels 1 of 201 (best 0.223, median 0.178)
+read-out: bowl relabel carries sequence information on f.108v

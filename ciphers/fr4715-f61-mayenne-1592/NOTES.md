@@ -3925,3 +3925,18 @@ H193/H194 (bowl = c/p against the period decipherment and against Tomokiyo) says
 support mixes c/p and a/n on f.101r (a/n 25, c/p 16), which fits the same swap. H198's OPEN for 4TRI on f.108v is explained: those six signs are not the
 bowl sign. Next: H201 (script-only sequence gain with the 4-family relabelled by bowl), H202 (the bowl at f.108r's period-glossed positions),
 H203 (which v5 4-family cells mix the two signs). No class change, nothing merged.
+
+## Campaign step H201 (29 Sept 2026, 02:21-02:23 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- f.108v relabelled by the bowl: sequence gain CONFIRMED, rank 1 of 201 (script-only)
+
+`scripts/f61bowl_108v_seq.py` (committed 447367af before the run; result `scripts/f61bowl_108v_seq_result.txt`, `--check` fresh). The H59 f.108v
+draft with every 4-family column relabelled by H199's blind bowl answer (yes -> c/p, no -> a/n; 68 columns answered, 19 yes), other cells the 14-cell
+map unchanged, against the readers' own cells (4STEM a/n, 4TRI c/p, C43 a/n):
+- **(1) 30 bootstrap resamples of f.108v's lines (seed 201): the bowl relabel wins 30/30 -> CONFIRMED** (registered gate >= 29).
+- **(2) Whole leaf: gain 0.276 (bowl) vs 0.152 (readers' cells); among 200 random relabels giving 19 c/p to random answered 4-family columns (seed
+  2011) the bowl relabel ranks 1 of 201 (best random 0.223, median 0.178).** The registered read-out "bowl relabel carries sequence information on
+  f.108v" is met.
+The null matters here. Any relabel with 19 c/p already scores above the readers' cells (median 0.178 vs 0.152), because the readers' cells key 19 bowl signs a/n
+and 6 no-bowl signs c/p. The bowl's own placement beats every random placement, so the shape answer carries the positions and not only the count.
+Together with H193/H194, which rest on period letters, this is a third, independent line: the bowl sign is c/p in f.61's hand on a leaf with no key
+source used here. For the verifier: f.108v's 4-family should be read by bowl, not by the H59 pass codes; any f.108v or pooled 4STEM figure built
+on those codes (the f.108v skeleton, H85 judge, v5's 4STEM support) mixes the two signs. No key change, nothing merged; grade stays with the verifier.
