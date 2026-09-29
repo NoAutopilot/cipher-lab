@@ -1,0 +1,42 @@
+copiale_name	debosnys_id	grade	note
+tri	DELTA	H	plain triangle
+tri..	DELTA	M	triangle, bolder/underlined
+fem	VENUS	H	same female sign
+lam	LAMBDA	H	same inverted V
+lam	A-LOOP	M	extra dot/foot
+nee	A-LOOP	M	lambda with dot below, curl differs
+nee	LAMBDA	M	dot missing
+bar	DASH-V	H	thin vertical stroke
+bar	BAR-THIN	M	shorter, slightly curved
+three	THREE	H	same figure 3
+o	CIRC-O	H	plain small circle
+cross	CROSS-T	M	Debosnys has horizontal foot
+mal	DAGGER-O	M	cross over circle, extra stroke
+mal	MARS	L	circle with upper-right stroke
+hd	DAGGER-O	L	cross over curl
+arr	ARROW-UP	M	upright arrow with dot vs diagonal
+del	SIX-CURL	M	curled 6
+gam	EIGHT	L	looped figure
+bas	HOOK-L	M	comma hook
+bas	CRESCENT	L	curved stroke
+sqi	BRACKET	M	corner bracket
+hk	BRACKET	L	corner bracket
+gat	ARCH	M	squared vs round arch
+no	BOX-X	M	box, filled vs X inside
+grc	BOX-GRID	L	grid box
+inf	CHAIN	L	loops joined
+dot	BLOB	M	single dot
+bigx	SCROLL-X	M	X with curled ends
+bigx	X-CURL	L	X with flourish
+x	X	M	curly cross form
+y	Y-CURL	M	curly y
+zzz	Z-CURL	L	curly z-form
+zs	Z-CURL	L	curly z
+g	NINE	M	9-like g
+gs	NINE	L	g with tail
+smil	SMILE	L	rotated smile face
+smir	SMILE	L	rotated smile face
+uu	U-DASH	M	u with bar
+toe	WAVE	L	wavy stroke
+o..	GEAR-DOT	L	circle with dot
+o..	C-DOT	L	dotted circle

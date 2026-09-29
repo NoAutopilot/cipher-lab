@@ -1,0 +1,17 @@
+letter	debosnys_id	grade	note
+S	VEE	H	bare V (some Debosnys exemplars carry a dot or tick above, outside the frame)
+T	V-DOT	M	V with a dot, but the Debosnys dot sits above the opening, Bernard's inside it
+W	LAMBDA	H	bare Λ
+X	A-LOOP	M	Λ with a dot at or under the foot; Bernard's dot is inside
+W	LAMBDA-DASH	L	Λ over a double dash
+U	CHEVRON	M	< drawn as a curved double stroke
+U	CHEVRON2	L	double <<
+C	BUCKET	M	⊔ cup, drawn with a rim or handle
+C	U-CUP	M	shallow ⊔
+O	ARCH	M	⊓ drawn rounded (∩)
+P	ARCH-DOTS	M	⊓ with dots inside, rounded
+K	BRACKET	M	[ open right
+L	E-BAR	L	E-like: [ with a dot and a middle bar
+I	BOX-GRID	L	closed square, but with a grid inside
+I	BOX-X	L	closed square with an x inside
+I	BOX-M	L	closed square with an M inside

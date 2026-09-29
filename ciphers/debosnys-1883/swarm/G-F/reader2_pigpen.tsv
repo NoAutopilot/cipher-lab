@@ -1,0 +1,15 @@
+letter	debosnys_id	grade	note
+S	VEE	H	plain V; unmistakable
+T	V-DOT	H	V with dot; dot sits above vs inside Bernard sign, still same figure
+T	VEE	M	some VEE exemplars carry a dot
+W	LAMBDA	H	plain caret; unmistakable
+X	LAMBDA	M	caret with dot; only some exemplars carry the dot
+X	A-LOOP	L	caret with dot at foot, not inside
+X	LAMBDA-DASH	L	caret with dot plus extra dash
+C	U-CUP	M	plain U; Bernard U signs C/D/E not cleanly separable at this resolution
+D	U-CUP	M	plain U; same caveat
+O	ARCH	M	Arch; Bernard square-cornered, Debosnys rounded
+P	ARCH-DOTS	L	square arch with dot; orientation/dot placement uncertain
+Q	BRACKET	L	square bracket-like corner
+U	CHEVRON	L	single chevron approximates < but Debosnys is broken/double
+E	E-BAR	L	square open bracket with dot, loose

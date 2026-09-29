@@ -1,0 +1,121 @@
+{
+ "mode": "held-out",
+ "fit": "c2",
+ "test": "c1",
+ "key_sha1": "eb0f840dcb8e08c72d46df415c6047c85884ed82",
+ "key_signs": 16,
+ "key_signs_seen_in_fit": 13,
+ "N_test": 132,
+ "coverage_test": 0.0455,
+ "read_letters": 6,
+ "shuffles": 1000,
+ "stats": {
+  "fr_quad": {
+   "real": null,
+   "null_median": null,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": null,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "fr_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "en_quad": {
+   "real": null,
+   "null_median": null,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": null,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "en_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "pt_quad": {
+   "real": null,
+   "null_median": null,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": null,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "pt_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "es_quad": {
+   "real": null,
+   "null_median": null,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": null,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "es_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "la_quad": {
+   "real": null,
+   "null_median": null,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": null,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "la_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "vocab": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  }
+ },
+ "decoded_runs": [
+  "w",
+  "x",
+  "s",
+  "x",
+  "x",
+  "x"
+ ]
+}

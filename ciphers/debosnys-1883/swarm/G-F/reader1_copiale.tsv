@@ -1,0 +1,24 @@
+copiale_name	debosnys_id	grade	copiale_value	note
+fem	VENUS	H	a	same figure (circle over cross); Copiale fem = a (and ä)
+mal	DAGGER-O	H	v	circle with a cross above it; Debosnys often draws the loop open
+cross	CROSS-T	H	sch	Latin cross / dagger
+tri	DELTA	H	o	plain triangle
+lam	LAMBDA	H	t	caret / Greek lambda
+gam	TAURUS	M	h	circle with horns; Copiale gam = h or k (ambiguous in the paper)
+three	THREE	M	r	Copiale 3 has a flat top (ʒ); Debosnys 3 rounder
+bar	BAR-THIN	M	s	single vertical stroke; Debosnys BAR-THIN sometimes curved like (
+x.	X-DOT	M	g	x with a dot; Copiale dot above, Debosnys dot below
+c.	C-DOT	M	l	c with a dot; Copiale dot above, Debosnys dot inside the bowl
+no	BOX-X	M	ö	box with an x inside
+grc	BOX-GRID	M	ss	box with a grid
+bigx	SCROLL-X	M	freimaurer	X with curled ends (Copiale logogram 'freemason')
+lip	DIAMOND	L	auge	lozenge / eye with a mark inside (logogram 'oculist')
+star	STAR	L	geheim	Copiale star is a figure over a triangle, Debosnys a six-armed asterisk (logogram 'secret')
+o.	GEAR-DOT	L	o	circle with a dot
+oh	O-TILDE	L	e	o with a mark above: circumflex vs tilde
+uu	U-DASH	L	en	u with a bar: Copiale below, Debosnys above or below
+y..	Y-CURL	L	i	y with a mark
+del	SIX-CURL	L	g	6/delta-like curl
+gat	ARCH	L	(logogram)	Π vs ∩
+x	X	M	(space)	plain unaccented x: a word space in Copiale
+o	CIRC-O	M	(space)	plain unaccented o: a word space in Copiale
