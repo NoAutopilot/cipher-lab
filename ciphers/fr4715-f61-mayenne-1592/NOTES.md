@@ -4440,3 +4440,11 @@ This is the combined candidate in family/v6_shape_candidates.tsv, handed to VERI
 value). **Pairs changed from H120: L04 1 4TRI (no bowl) c/p -> a/n; L06 3 and L06 32 4STEM (bowl) a/n -> c/p; L06 40 HASH4 (4-head) i/x -> d/q. Beam letters
 differ at 8 of 85 positions** (L04 1 c->n, L04 2 z->m, L04 3 i->x, L06 3 n->p, L06 4 e->r, L06 32 n->p, L06 34 m->z, L06 40 i->d). When ASKS 88 is answered, those
 eight positions decide between the code-level map (H120) and the shape rule, on letters neither was fitted to. No reading; nothing merged.
+
+## Campaign step H247 (29 Sept 2026, 04:55 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's unread classes against Tomokiyo's table drawings (notes only)
+
+Atlas descriptions (scripts/f61_atlas.tsv) against the drawing descriptions of keys/key_mayenne_1592.tsv (Tomokiyo's reconstructed table, published), with
+F61-CAL's caveat that his drawings mislabel 8 of 10 of this hand's shape classes: **CROSS** ("a plain plus or cross, possibly with a stroke rising to the upper
+right") matches his row-1 drawing almost word for word, in the a/n column (a); **C6** ("the digit 6") partly matches his word-code drawing for *pour* ("a hook or
+loop like a numeral 6 into one long diagonal stroke") -- f.61's C6 is a plain 6 without the diagonal (H237's crops); **CA, LOOPBAR, LL** and the 4-over-Pi match
+no drawing. Leads for the verifier or a later test (CROSS a/n; C6 = *pour*?), not values. No call.
