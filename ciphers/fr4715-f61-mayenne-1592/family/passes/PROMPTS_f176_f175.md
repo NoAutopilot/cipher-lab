@@ -116,3 +116,8 @@ about 1,750 letters from V06; N = 0.8 x signs will be about 1,250). Gate as H177
 3 Opus vision calls, inline replies written verbatim: passes A/B of f.176v L25-L32 (H177c prompt, rows changed) and one read of fol. 177v strips
 9-12 (the stage 2c strip prompt, strips 09-12 regenerated from `sheets/f177v_strips/boxes.tsv`, lines numbered V28, V29, ... continuing, the first
 line of strip 09 skipped if it repeats V27) -> `passes/f177v_clearA_S09-S12.tsv`. Then `build_f176v_key.py L01-L32 --start V06`, gate as H177c.
+
+## H177f stage 3 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+5 Opus vision calls, inline replies written verbatim: passes A/B of f.176v L33-L39 and of L40-L45 (H177c prompt, rows changed) and one read of
+fol. 178r strips 1-7 (`sheets/f178r_strips/`; the stage 2c strip prompt, lines numbered R01, R02, ...) -> `passes/f178r_clearA_S01-S07.tsv`.
+Then `build_f176v_key.py L01-L45 --start V06` (the whole of f.176v; clear V06-V40 + R01-), gate as H177c.
