@@ -5256,3 +5256,14 @@ since bins of 3 give only two; result `family/h345_seqgain_perclass_result.txt`)
 - For the verifier, as a pointer only: EBR_B scores worst-or-near on both held leaves, the same class whose form split and cell (i/l here, l/y in v7's
   header note) the campaign has already flagged (H321, H322); VBAR_A g/t ranks well on both held leaves by this statistic, unlike H331's gloss count on
   f.124r (below its binned mean there) -- a disagreement between two instruments, recorded, not resolved (rule 4). No call, no cell changed.
+
+## Campaign step H348 (29 Sept 2026, 16:01-16:05 UTC by the commit stamps and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r rows 13-18 sign passes; the order statistic on rows 1-18 shows no signal (power at 51 runs not yet measured)
+
+Prompts `family/passes/prompts_h348/` (H332's sign prompts re-targeted to L13-L18, `family/gen_prompts_h348.py`) and `family/h348_106r_rows18.py`
+committed before the two blind Opus sign calls returned (`family/passes/f106r_signs{A,B}_c3.tsv`; no gloss passes, retired for this hand). Crops' right
+ends checked by eye first (no re-cut needed). Result `family/h348_106r_rows18_result.txt`: **sign agreement rows 13-18 190/232 = 0.819** (L18 turns to
+clear French from s4; both readers listed it PLAIN). Rows 1-18 pooled (`passes/recf106rall18`): **51 runs, 622 signs; gain(v7) 0.0279 vs binned gains
+mean 0.0160, p95 0.0490 (31/100 >= v7) -> "no order signal at >= 50 runs"** as pre-stated. The pre-statement did not carry a power figure at 51 runs
+(H346: 0.63 / 1.00 at 35), and f.106r's gain (0.028) is of the size held f.124r's was (0.032, which cleared only at 227 runs); so this is logged as
+no signal at this N, **not a negative, until H350 measures power at 51 runs**. The f.106r sign draft now covers the whole cipher block (rows 1-18). Two
+vision calls, cost estimate 2.5 USD.

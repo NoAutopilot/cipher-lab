@@ -1,0 +1,9 @@
+L13: signs A 38 B 38 agree 29/41
+L14: signs A 39 B 40 agree 31/40
+L15: signs A 39 B 40 agree 31/40
+L16: signs A 40 B 40 agree 37/40
+L17: signs A 43 B 43 agree 37/43
+L18: signs A 27 B 28 agree 25/28
+c3 SIGN AGREEMENT 190/232 = 0.819
+rows 1-18 pooled: runs 51, signs 622; gain(v7) 0.0279; binned gains mean 0.0160 p95 0.0490, >= v7 31/100
+read-out: no order signal at >= 50 runs

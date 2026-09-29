@@ -1,0 +1,233 @@
+line	position	sign	confidence	alt	why
+L13	1	C43	M		agree-flagged
+L13	2	PHI	H		agree
+L13	3	PHI	H		agree
+L13	4	C43	M	A:-	gap
+L13	5	4STEM	M	B:LOOPSTEM1	differ
+L13	6	PHI	L		agree-flagged
+L13	7	OTHER	M	B:-	gap
+L13	8	HASH4	M		agree-flagged
+L13	9	VBAR_A	H		agree
+L13	10	PHI	H		agree
+L13	11	HASH4	M		agree-flagged
+L13	12	OTHER	M	B:-	gap
+L13	13	LOOPSTEM1	M	B:PHI	differ
+L13	14	4STEM	M	B:4PI	differ
+L13	15	PHI	H		agree
+L13	16	4STEM	M	B:4PI	differ
+L13	17	HASH4	M		agree-flagged
+L13	18	LOOPS	M		agree-flagged
+L13	19	VBAR_A	M	B:VBAR_B	differ
+L13	20	H24	M		agree-flagged
+L13	21	PHI	M		agree-flagged
+L13	22	H24	H		agree
+L13	23	HASH4	M		agree-flagged
+L13	24	VBAR_A	H		agree
+L13	25	PHI	M		agree-flagged
+L13	26	PHI	M		agree-flagged
+L13	27	PHI	M		agree-flagged
+L13	28	H24	H		agree
+L13	29	VBAR_B	M	B:-	gap
+L13	30	OTHER	L		agree-flagged
+L13	31	PHI	M	A:-	gap
+L13	32	4TRI	M	B:PHI	differ
+L13	33	H24	M		agree-flagged
+L13	34	C43	M		agree-flagged
+L13	35	VBAR_A	L		agree-flagged
+L13	36	PHI	H		agree
+L13	37	C43	H		agree
+L13	38	C43	H		agree
+L13	39	C43	H		agree
+L13	40	LOOPBAR	L		agree-flagged
+L13	41	DASH	M	A:-	gap
+L14	1	EBR_A	L		agree-flagged
+L14	2	C43	M		agree-flagged
+L14	3	PHI	H		agree
+L14	4	PHI	H		agree
+L14	5	HASH4	M		agree-flagged
+L14	6	H24	M		agree-flagged
+L14	7	OTHER	M	B:VBAR_A	differ
+L14	8	PHI	H		agree
+L14	9	4STEM	M		agree-flagged
+L14	10	EBR_A	M		agree-flagged
+L14	11	PHI	M		agree-flagged
+L14	12	VBAR_A	M		agree-flagged
+L14	13	LOOPS	M	B:HASH4	differ
+L14	14	HASH4	M		agree-flagged
+L14	15	PHI	H		agree
+L14	16	4STEM	M	B:4PI	differ
+L14	17	PHI	H		agree
+L14	18	PHI	H		agree
+L14	19	VBAR_A	L		agree-flagged
+L14	20	EBR_B	M		agree-flagged
+L14	21	PHI	H		agree
+L14	22	PHI	M		agree-flagged
+L14	23	LOOPSTEM1	M		agree-flagged
+L14	24	C43	H		agree
+L14	25	PHI	H		agree
+L14	26	4STEM	M	B:4PI	differ
+L14	27	PHI	H		agree
+L14	28	VBAR_A	M	B:ZBAR	differ
+L14	29	VBAR_A	M		agree-flagged
+L14	30	HASH4	M		agree-flagged
+L14	31	H24	M		agree-flagged
+L14	32	PHI	M		agree-flagged
+L14	33	PHI	M		agree-flagged
+L14	34	4STEM	M	B:4PI	differ
+L14	35	LOOPS	M	B:HASH4	differ
+L14	36	H24	H		agree
+L14	37	EBR_B	M	B:VBAR_A	differ
+L14	38	OTHER	L		agree-flagged
+L14	39	HASH4	M		agree-flagged
+L14	40	DASH	M	A:-	gap
+L15	1	LOOPS	M	A:-	gap
+L15	2	OTHER	L		agree-flagged
+L15	3	ZBAR	L		agree-flagged
+L15	4	PHI	M		agree-flagged
+L15	5	HASH4	M	B:4PI	differ
+L15	6	HASH4	L		agree-flagged
+L15	7	PHI	H		agree
+L15	8	PHI	H		agree
+L15	9	VBAR_A	H		agree
+L15	10	HASH4	M		agree-flagged
+L15	11	PHI	H		agree
+L15	12	ZHOOK	L		agree-flagged
+L15	13	RSIGN	M	B:BETA	differ
+L15	14	PHI	M		agree-flagged
+L15	15	H24	H		agree
+L15	16	VBAR_A	M		agree-flagged
+L15	17	HASH4	M	B:4STEM	differ
+L15	18	PHI	M		agree-flagged
+L15	19	4STEM	M	B:4PI	differ
+L15	20	PHI	H		agree
+L15	21	4TRI	M		agree-flagged
+L15	22	PHI	H		agree
+L15	23	BETA	M		agree-flagged
+L15	24	PHI	M		agree-flagged
+L15	25	PHI	H		agree
+L15	26	PHI	H		agree
+L15	27	PHI	H		agree
+L15	28	4TRI	M		agree-flagged
+L15	29	4STEM	M	B:4TRI	differ
+L15	30	4STEM	M		agree-flagged
+L15	31	4STEM	M	B:4PI	differ
+L15	32	HASH4	M		agree-flagged
+L15	33	VBAR_A	M	B:VBAR_B	differ
+L15	34	PHI	H		agree
+L15	35	C43	H		agree
+L15	36	VBAR_A	M		agree-flagged
+L15	37	OTHER	L		agree-flagged
+L15	38	HASH4	M	B:4PI	differ
+L15	39	PHI	H		agree
+L15	40	VBAR_A	H		agree
+L16	1	BETA	L		agree-flagged
+L16	2	EBR_B	M		agree-flagged
+L16	3	PHI	H		agree
+L16	4	C43	H		agree
+L16	5	C43	H		agree
+L16	6	PHI	H		agree
+L16	7	VBAR_A	M		agree-flagged
+L16	8	PHI	H		agree
+L16	9	VBAR_A	H		agree
+L16	10	C43	M		agree-flagged
+L16	11	HASH4	M		agree-flagged
+L16	12	VBAR_A	H		agree
+L16	13	VBAR_A	M		agree-flagged
+L16	14	EBR_B	M		agree-flagged
+L16	15	OTHER	L		agree-flagged
+L16	16	HASH4	M		agree-flagged
+L16	17	PHI	M		agree-flagged
+L16	18	HASH4	M		agree-flagged
+L16	19	VBAR_A	H		agree
+L16	20	C43	H		agree
+L16	21	HASH4	M		agree-flagged
+L16	22	PHI	H		agree
+L16	23	BETA	M		agree-flagged
+L16	24	C43	H		agree
+L16	25	4STEM	M	B:4PI	differ
+L16	26	PHI	M		agree-flagged
+L16	27	C43	H		agree
+L16	28	VBAR_A	H		agree
+L16	29	PHI	H		agree
+L16	30	C43	H		agree
+L16	31	VBAR_A	M		agree-flagged
+L16	32	PHI	M		agree-flagged
+L16	33	PHI	H		agree
+L16	34	HASH4	M	B:4STEM	differ
+L16	35	C43	H		agree
+L16	36	PHI	H		agree
+L16	37	4STEM	M	B:4PI	differ
+L16	38	PHI	H		agree
+L16	39	EBR_A	M		agree-flagged
+L16	40	C43	M		agree-flagged
+L17	1	4STEM	M	B:4PI	differ
+L17	2	PHI	M		agree-flagged
+L17	3	VBAR_A	H		agree
+L17	4	PHI	H		agree
+L17	5	VBAR_A	H		agree
+L17	6	4STEM	M	B:4PI	differ
+L17	7	PHI	H		agree
+L17	8	H24	H		agree
+L17	9	VBAR_A	H		agree
+L17	10	OTHER	L		agree-flagged
+L17	11	BETA	M		agree-flagged
+L17	12	OTHER	L		agree-flagged
+L17	13	VBAR_A	H		agree
+L17	14	PHI	M		agree-flagged
+L17	15	C43	M		agree-flagged
+L17	16	HASH4	M	B:4PI	differ
+L17	17	HASH4	M		agree-flagged
+L17	18	BETA	M		agree-flagged
+L17	19	PHI	H		agree
+L17	20	VBAR_A	H		agree
+L17	21	4STEM	M	B:4PI	differ
+L17	22	C6	M	B:PHI	differ
+L17	23	PHI	H		agree
+L17	24	4STEM	M	B:4PI	differ
+L17	25	C43	H		agree
+L17	26	PHI	H		agree
+L17	27	PHI	M		agree-flagged
+L17	28	BETA	M		agree-flagged
+L17	29	C43	H		agree
+L17	30	HASH4	M		agree-flagged
+L17	31	H24	H		agree
+L17	32	OTHER	L		agree-flagged
+L17	33	4STEM	M		agree-flagged
+L17	34	HASH4	M		agree-flagged
+L17	35	PHI	M		agree-flagged
+L17	36	VBAR_A	H		agree
+L17	37	PHI	H		agree
+L17	38	VBAR_A	M		agree-flagged
+L17	39	OTHER	L		agree-flagged
+L17	40	4STEM	M		agree-flagged
+L17	41	EBR_A	M		agree-flagged
+L17	42	HASH4	M		agree-flagged
+L17	43	VBAR_A	H		agree
+L18	1	OTHER	M	B:CH	differ
+L18	2	LOOPS	M		agree-flagged
+L18	3	HASH4	M		agree-flagged
+L18	4	HASH4	M		agree-flagged
+L18	5	PHI	H		agree
+L18	6	EBR_A	M		agree-flagged
+L18	7	ISH	M		agree-flagged
+L18	8	PHI	H		agree
+L18	9	VBAR_B	M	B:VBAR_A	differ
+L18	10	PHI	H		agree
+L18	11	VBAR_A	L		agree-flagged
+L18	12	PHI	H		agree
+L18	13	PHI	H		agree
+L18	14	4STEM	M		agree-flagged
+L18	15	PHI	H		agree
+L18	16	C43	H		agree
+L18	17	VBAR_A	H		agree
+L18	18	PHI	H		agree
+L18	19	VBAR_A	H		agree
+L18	20	PLAIN	M	A:-	gap
+L18	21	PLAIN	L		agree-flagged
+L18	22	PLAIN	L		agree-flagged
+L18	23	PLAIN	L		agree-flagged
+L18	24	PLAIN	L		agree-flagged
+L18	25	PLAIN	L		agree-flagged
+L18	26	PLAIN	L		agree-flagged
+L18	27	PLAIN	L		agree-flagged
+L18	28	PLAIN	M		agree-flagged
