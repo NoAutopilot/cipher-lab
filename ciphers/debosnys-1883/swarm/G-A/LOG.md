@@ -60,3 +60,42 @@ ciphertext. Setting S2 (R 24, 10 M it, FLOOR -4, WF 0.3, T0 5), seed 7 unless st
 | 03:23 | a26 letters, S2 seed 7 (the claim keys `KEY_fit_c1.tsv`, `KEY_fit_c2.tsv`) | fit c2 (N 658 K 124) -> test c1; fit c1 (N 132 K 58) -> test c2 | Phase 1 met (FR-HOMO 94.9) | **c2->c1: 99.2 / 96.4** (cov 0.90, 119 letters; no statistic beats all under both nulls; next best vocab 97.5/97.7, fr_dict 95.5/91.0). **c1->c2: 86.7 / 32.6** (cov 0.71, 468 letters; nothing beats all) | **no pass**, either direction |
 | 03:23 | a27 letters + space (exploratory, no harness Phase 1) | same | own planted spaced controls only | c2->c1: 99.6 / 89.4 (95 letters); c1->c2: 98.0 / 90.7 (313 letters) | no pass; not claimable in any case |
 | 03:24-03:28 | a26, matched seed comparison (`seeds_c2c1.sh`, committed before running) | fit on c2 with seeds 7-10 for the real text, NULL and FR-HOMO-N15; score c2->c1 | NULL (no language) pct_strat: 86.9 / 80.6 / 38.1 / 84.6 (plain 97.5-99.8). FR-HOMO-N15 pct_strat: 100 / 92.1 / 98.8 / 100 (**2 of 4 pass the bar in this direction**) | real pct_strat: 96.4 / 93.3 / 44.4 / 89.8 (plain 88.5-99.8); **0 of 4 pass** | the real c2->c1 numbers fall between the no-language NULL control and the 15-pct-noise French control, nearer NULL: median about 91.5 against NULL about 83 and French-N15 about 99.4. With 4 seeds each, the real text does not separate from NULL. This is a negative for French homophonic letters at the measured noise, and it is **conditional**: the matched French control itself passes c2->c1 only half the time and never passes c1->c2 (96.8/79.4), so the design cannot be excluded either. |
+| 03:32-03:37 | a26 + base-family fold (`--fold base`: real signs folded to inventory_settled.tsv base before fitting, c2 K 124 -> 99, c1 58 -> 47; key expanded to every member sign), seeds 7-9, `seeds_fold.sh` committed before running | matched null: NULL control folded into random groups with the real fold's group-size profile | NULL-fold pct_strat c2->c1: 73.8 / 57.0 / 72.0; c1->c2: 56.0 / 99.0 / 94.4 | real pct_strat c2->c1: **98.7** / 52.1 / 90.2 (plain 98.0 / 62.7 / 100.0); c1->c2: 86.6 / 87.1 / 95.1. No statistic beats all under both nulls in any run. Best single run RF_c2_s7: fr_quad 98.0/98.7, en_quad 99.1/100.0, es_quad 91.9/100.0 | no pass. c2->c1 sits slightly above its matched null (median 90.2 vs 72.0; 3 seeds, not a separation); c1->c2 is no different. The French-fitted key scoring higher on English and Spanish quadgrams than on French shows how the eleven statistics scatter at N 132; not a lead. No harness control for the folded design (the controls have no sign families), so exploratory only |
+| 03:39-03:43 | a26, second matched seed batch (seeds 11-14, `seeds_c2c1_b.sh` committed before running) | c2 -> c1 | NULL pct_strat: 98.3 / 11.1 / 90.7 / 91.4. FR-HOMO-N15: 100 / 99.8 / 100 / 100 (3 of 4 pass: fr_quad plus es/la/pt_quad) | real pct_strat: 89.2 / 94.7 / 60.0 / 67.5 (plain 92.0-99.8); 0 of 4 pass | see the summary below |
+
+### Summary for the merge (group A, round 1)
+
+Pooled over 8 seeds (7-14), fit on c2, test on c1, fr_quad pct_strat (the harder of the two nulls):
+- real: 44.4, 60.0, 67.5, 89.2, 89.8, 93.3, 94.7, 96.4 (median 89.5); **0 of 8 pass**
+- NULL (no language): 11.1, 38.1, 80.6, 84.6, 86.9, 90.7, 91.4, 98.3 (median 85.8); 0 of 8 pass
+- FR-HOMO-N15 (French homophonic letters, 15 pct noise): 92.1, 98.8, 99.8, 100, 100, 100, 100, 100 (median 100); **5 of 8 pass the bar in this direction**
+
+In the c2->c1 direction the real c2 behaves like the no-language control, not like French homophonic letters at the
+real noise level. If the real text behaved like FR-HOMO-N15 (5 of 8 pass), eight straight failures would have a chance
+of about (3/8)^8 = 0.0004. The c1->c2 direction is out of reach for this method at 15 pct noise even on the control
+(96.8/79.4, 1 seed), so it carries no information either way.
+
+Status of the hypothesis: **French homophonic letter substitution (one letter per sign, no nulls), fitted on c2, is
+disfavoured against a matched control that brackets the measured noise**. The negative is conditional on four things:
+(1) the harness noise model, uniform replacement at 15 pct; the real noise is 14-18 pct and partly structured
+(look-alike confusions), and more noise pushes the control toward NULL too; (2) one sign = one letter, so nulls,
+syllables and word signs are the other groups' designs; (3) the settled transcription as it stands; (4) the 5-gram
+French prose model in `hsolve.c`.
+
+Transferable insights:
+1. **Structural (the noise wall).** A true French homophonic key at c2 size is identifiable only below about 10 pct
+   uniform type noise with a 5-gram letter model. At 15 pct the true key's decode scores *below* spurious keys
+   (planted: -1763 vs -1474), so no amount of search recovers it. The same wall applies to any single-letter design
+   (B English, G Portuguese/Spanish/Latin). Lowering transcription noise under 10 pct is worth more than any solver
+   change.
+2. **Constraint (a design that is cheaper to test first).** Word spaces carry the method over the noise wall: with
+   space kept in the plaintext, planted controls read 0.70-0.74 letters-only at 15 pct noise (N 688), against 0.25-0.59
+   without spaces. X avoids line starts and ends like a space sign (h19), and its gap histogram peaks at 2 (French
+   de/le/la). On the real text the spaced fit (a27) also matched NULL (c2->c1 73.4/55.9 vs NULL 75.2/52.2), so a
+   single-letter French design with spaces is also not supported. No harness control exists for it, so this is
+   exploratory.
+3. **Tool.** `hsolve.c` (C annealer, interpolated conditional 5-gram, frequency term, per-window floor, optional
+   word-space symbol, held-out scoring mode) plus `fitkey.py` (committed-fit wrapper for score.py's key format, with a
+   base-family fold and a random-fold matched null). About 30 s per fit at R 24 x 10 M. It reaches both-direction
+   passes on the clean FR-HOMO control, including c1->c2, which the harness README had judged out of reach, so the
+   bar is reachable where the answer is known.
