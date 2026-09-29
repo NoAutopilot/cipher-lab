@@ -1,0 +1,25 @@
+{
+ "planted": {
+  "fr_quad_pct": [
+   100.0,
+   100.0
+  ],
+  "recovery_test": [
+   74.47,
+   94.7
+  ],
+  "passes_bar_fr": true
+ },
+ "random": {
+  "fr_quad_pct": [
+   23.1,
+   64.1
+  ],
+  "recovery_test": [
+   0.91,
+   0.76
+  ],
+  "passes_bar_fr": false
+ },
+ "ok": true
+}

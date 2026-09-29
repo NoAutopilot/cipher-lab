@@ -1,0 +1,13 @@
+refit2/refit_c1+c2a_41.tsv	N 571	K 117	score -365.491	per_window -1.0013
+refit2/refit_c1+c2a_15.tsv	N 571	K 117	score -360.249	per_window -0.9870
+refit2/refit_c1+c2a_42.tsv	N 571	K 117	score -360.006	per_window -0.9863
+refit2/refit_c1+c2a_44.tsv	N 571	K 117	score -360.533	per_window -0.9878
+refit2/refit_c1+c2a_43.tsv	N 571	K 117	score -365.159	per_window -1.0004
+refit2/refit_c1+c2a_45.tsv	N 571	K 117	score -361.551	per_window -0.9906
+refit2/refit_c1+c2a_46.tsv	N 571	K 117	score -363.411	per_window -0.9956
+refit2/refit_c1+c2a_47.tsv	N 571	K 117	score -354.537	per_window -0.9713
+refit2/refit_c1+c2a_48.tsv	N 571	K 117	score -355.856	per_window -0.9749
+refit2/refit_c1+c2a_49.tsv	N 571	K 117	score -372.306	per_window -1.0200
+refit2/refit_c1+c2a_51.tsv	N 571	K 117	score -360.239	per_window -0.9870
+refit2/refit_c1+c2a_50.tsv	N 571	K 117	score -366.941	per_window -1.0053
+ALLDONE

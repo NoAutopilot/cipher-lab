@@ -2,6 +2,8 @@
 
 FROZEN ed4a3743 (score.py blob d80e6baa) 29 Sep 2026 03:14 UTC
 
+HARNESS-2, 29 Sep 2026 07:40 UTC: **no second FROZEN line** -- the bar v2 amendment (refit null, cross-language check, fold pair) met its own pre-registered kill test twice; score.py is unchanged; candidate code, controls and recommendation in `R2/HARNESS-2/RESULT.md`.
+
 (The commit id is the one on origin/main after the rebase; the blob hash of score.py is the check: `git rev-parse HEAD:ciphers/debosnys-1883/swarm/score.py` must start d80e6baa.)
 
 Owned by the harness. Groups read this file, run `score.py`, and write only in `swarm/G-<X>/`. Never edit
