@@ -4878,3 +4878,12 @@ file, f.108v L06 29 (scripts/pass108gB_classes.tsv, pass B only, confidence l). 
 not in the decode file, which follows pass 2), with H302/H304's descriptive pairing and both control fails; band counts unchanged (25 unread-or-null + 4
 wider, 15 in a span), note rows 2. `family/f61_nulls_as_letters.tsv`: the LL row's letterform_test cell now records the two runs and H305.
 `family/V9_PAGE.md`: a section "Added by runner 12 (H302-H306)". No call, no value, no count change.
+
+## Campaign step H307 (29 Sept 2026, 12:44 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.175r/f.177r are not in f.61's hand on the record (notes only)
+
+From the folder's own record: f.175r and f.177r are clear pages beside Desportes's cipher letter of 22 July 1593 to the pope (f.176r; H169, H175 --
+f.177r is the separate-sheet decipherment of f.176r, gate PASS; f.175r the decipherment of another 22 July letter, H170). H169 already describes fol.
+177-178 as "clear pages in another hand (not identified)", and the letters are Desportes's, in Paris, not the Duke of Mayenne's chancery. So neither
+leaf is recorded as the hand of f.61's scribe (Mayenne's secretary: f.61, f.108r, f.108v), and a hand comparison by vision would start from a leaf with
+no link to that scribe: the vision half of the row is not run. The LL letterform question (H302/H304) waits on a clear page by that secretary; H308
+names where to look. No call, no value.
