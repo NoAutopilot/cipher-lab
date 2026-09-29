@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 21:20 Pacific [29 Sept 04:20 UTC]): the swarm's first answer is the transcription noise; two f.61 values in audit
+
+- Counts 21 / 2 / 1 / 6, unchanged.
+- Debosnys swarm, round 1: A, D, E, F, H and the harness done; B, C, G running. No key passed the bar. G-H's known-answer control: the Copiale method reads 79-94 pct of letters at 770-1,200 signs but fails at 8 pct transcription noise or more, and our drafts carry 14-18 pct; G-D: c2 shows no in-line order at that noise. So round 2 starts with a cleaner transcription. G-E: pictures open lines, cups and jugs close them (5 of 5, p<0.0001). DEB-SWARM-MERGE-1 queued.
+- f.61: VERIFY-F61-V6 (bowl rule) running since 04:12; runner 9 (live 03:52) posted the HASH4 split (H224) at 04:04; VERIFY-F61-V7 queued. Blocker: 50 two-way and 25 unread of 99 under key v5.
+- Tomokiyo Birago note held by the owner's decision (fragments, not continuous text). ASKS 98 added (Farnsworth's book, the owner's read).
+
 ### Orchestrator note (28 Sept 2026, 20:20 Pacific [29 Sept 03:20 UTC]): Birago f.21v and f.87 counted; the Debosnys swarm is running; an f.61 value goes to audit
 
 - Counts 21 / 2 / 1 / 6 (recovered-passage documents / completed / keys / contributions). Birago fr.3251 f.21v and f.87 counted at 02:10 UTC (N3, recovered passages, key published by Tomokiyo, two audits each).
