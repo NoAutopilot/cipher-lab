@@ -610,3 +610,8 @@ to the same height. In each tile two black triangles, one above and one below, p
 exactly one of: A = a 4-head on a stem crossed by hash bars (a 4 over #); D = a 2- or Z-shaped hooked head on two slanted strokes (reads like '2#');
 E = a figure-4 whose stem or stems are not crossed by hash bars (for example a 4 over two upright stems joined by a bar, or a plain 4); B = two small
 loops sitting on a hash; N = none of these, or cannot tell. Answer inline, one line per tile, exactly 'W01<TAB>A', W01 to W18 in order, nothing else."
+
+## H236 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI by shape, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h236/sheet_01.jpg (family/h236_4pi_108r.py tiles; key family/h236_items.tsv; 15 tiles U01-U15). The runner did not look at the sheet.
+Prompt: H233's verbatim with 'h236/sheet_01.jpg', '15 numbered tiles (U01-U15)' and the answer form 'U01<TAB>A', U01 to U15.
