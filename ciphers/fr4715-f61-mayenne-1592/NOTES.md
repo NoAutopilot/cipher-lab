@@ -5998,3 +5998,14 @@ pairing is not by itself a better key than the period-fitted cells; BETA m/s -> 
 pre-stated "BETA m/z is supported". For the verifier, rule 4: the period tables attest BETA s too (f.101r 3, f.188r 2 against z 3 on f.101r and
 f.274r), so the choice between m/s and m/z (or m/s/z) is a weighing of witnesses, not settled by this count; on f.61 the one BETA (L11/1, Tomokiyo
 m) reads m under either. A proposal; no key change. Cost ~0.05.
+
+## Campaign step H418 (29 Sept 2026, 20:12-19:41 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- f.108r class check: CONTROL FAIL (16/19), nothing scored (1 vision call)
+
+`family/h418_108r_qa.py` (key `family/h418_items.tsv`, prompt note H418), committed before the call (5f6a13fa's parent). Ten references from f.108r's
+overlay-confirmed tokens, 19 known items, H416's six transcription questions at three widths; one blind Opus call, reply
+`family/passes/h418_reply.tsv`, result `family/h418_108r_qa_result.txt` (`--check` OK): **gate 16/19 (bar 17) -> CONTROL FAIL, nothing scored.**
+The three known misses: a ZHOOK tile cut at its band's right edge (answered n) and both 4STEM known items answered as the C43 reference -- the
+readers' 4STEM/C43 boundary on f.108 does not follow shape (H199's finding on f.108v), so 4STEM was not a fair reference class. Ungated observation
+only, not a result: the targets answered consistently across their three windows (T1/20 4PI -> 4TRI x3, where the overlay has p; T2/37 OTHER -> BETA
+x3, where it has m; T2/3 and T2/27 OTHER none x3; T2/8 'qui' none x2 / n; T1/36 INF n x3). H420 re-runs with the control fixed before any use.
+Cost estimate 1.5 USD.

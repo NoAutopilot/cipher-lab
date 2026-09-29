@@ -1,0 +1,2 @@
+gate: 16/19 known f.108r items name their class's reference (>= 17)
+CONTROL FAIL -- nothing scored
