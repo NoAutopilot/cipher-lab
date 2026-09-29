@@ -401,3 +401,13 @@ script `h413_l05_1_reread.py`, key `h413_items.tsv`. Same tile geometry as H411 
 H410 prompt with fifteen references (SCRATCH/h414/references.jpg, R1-R15), items I01-I24 (items_01..02.jpg), and one added option: answer P
 if the marked mark is punctuation or not a cipher sign. Script `h414_other_two.py`, key `h414_items.tsv`. Target positions set by the runner's eye
 (disclosed in the script); the runner checked marker placement on the target and new reference tiles.
+
+## H418 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+fr.3983 f.108r class check (script `h418_108r_qa.py`, key `h418_items.tsv`): ten references R1-R10 (references.jpg) and items I01-I37
+(items_01..02.jpg), marker UNDER the sign (H202 format). The runner looked at the sheets for placement; one fix before the call (edge tiles padded
+instead of clamped). Prompt: "You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file.
+<references.jpg> shows ten reference signs R1-R10 of a 16th-century cipher, each above a red triangle (look only at the sign directly above the
+triangle). <items_01.jpg> and <items_02.jpg> show items I01-I37, each with a red triangle under one sign; look only at the sign directly above it.
+For each item answer the reference (R1 to R10) whose sign it is the same sign as; answer none if it matches no reference, P if the marked mark is
+punctuation or ordinary handwriting, n if it cannot be told. Small differences of size and slant within one hand do not make a different sign; an
+extra stroke or loop does. Reply ONLY with a TSV block id<TAB>answer, rows I01..I37."
