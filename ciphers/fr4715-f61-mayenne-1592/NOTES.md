@@ -3743,3 +3743,18 @@ Desportes way (VBAR_B s 15/38, SBS o 16/33, INF u 14/32, EBR l 8/24), but thinly
 Following rule 3's same-knob paragraph, the start is not moved again. The location stays at H184's descriptive level (scan peak inside fol. 178r at
 about R03). The next attempt needs a better sign transcription: a third blind pass that adjudicates only the split columns (H186), not another start.
 key_period_f179.tsv holds this failed run's unendorsed pairs only.
+
+## Campaign step H186 (29 Sept 2026, 01:05-01:08 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- fol. 179 split-sign adjudication: CONTROL FAIL, stopped
+
+Pre-registered (PROMPTS section H186; `family/h186_adj.py` and the tile key `family/h186_tiles.tsv` pushed before the call). Pairing passes A and B
+by position (line, segment, x within 30 px) gives 489 of 522 signs paired, 279 agreeing and 210 split. That is a better picture of the passes than
+difflib's 0.52, which lost its place in runs of systematic substitutions. 230 tiles (210 splits + 20 agreed anchors with decoy codes) on 7 sheets. One
+Opus vision call (inline reply written verbatim, `family/passes/h186_adjudication.tsv`, 230 rows, 16 N).
+**CONTROL: 11 of 20 anchors pick the agreed code (gate >= 17): CONTROL FAIL.** Per the pre-registration: no merge, no build, no fol. 179 key rows.
+Probable cause: the tiles were cut 90 px wide around the readers' approximate x_px. The centred sign is often ambiguous with its neighbours (the
+sheets show T001, T010 and others with two signs near the tick), and the 4TRI/C43 and HASH4/ZHOOK pairs differ in small strokes at this
+scale (1.5x of a 1.0-scale crop).
+**fol. 179 status after three attempts (H184, H185, H186), per rule 3's same-approach paragraph:** the location is descriptive only (scan peak
+inside fol. 178r near R03, H184 part 1). The key build is untested at this transcription quality, not refuted. A fourth pass of the same kind is
+not briefed. What would move it is new material or a different instrument: the natives at 2x with per-sign boxes from a segmenter (not reader
+x_px), or a blind shape sort of the 4TRI/C43 and HASH4/ZHOOK families on fol. 179 with anchors from f.176r (H180's design).
