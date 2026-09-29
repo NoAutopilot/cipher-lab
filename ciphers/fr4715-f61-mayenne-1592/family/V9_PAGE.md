@@ -209,3 +209,6 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
 - **f.108r T1/36 (H426, `family/h426_t1_36_offset_result.txt`):** T1 aligns one-to-one, 39 signs to 39 overlay letters, no gap; in T1/30-39 the
   unshifted overlay fits 9/10 signs and every shift of -2..+2 fits 0-3/10. Not an offset: the INF under 'e' ("plusieurs") is a genuine INF-e
   conflict, the overlay truth used by H417/H420/H423 stands.
+- **V12's two held reads, second instrument (H428):** blind forced choice with an in-hand 4STEM reference (f.108r T1/2), gate 9/9 and both
+  f.108r 4STEM known items right: L11/8 -> CROSS at 3/3 windows (Tomokiyo's S5 dash sits there), the L02 opening mark -> LL at 3/3. Both of
+  V12's reads reproduce; if merged with V12's endorsed rows the meter reads 12 / 58 / 1 / 29 of 100. L01/11 (HASH4 vs 4PI) still open (H428b).

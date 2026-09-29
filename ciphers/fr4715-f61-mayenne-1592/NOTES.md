@@ -6092,3 +6092,19 @@ Not a reading; no key, cell, grade or class change.
   orchestrator's to update (V12's "What should merge"); not edited here.
 - **H425:** runner-16 section in `family/V9_PAGE.md` for LANE VO3 and the orchestrator, naming the one decision that is not the runner's
   (whether f.61's-hand power 0.961 may gate a fresh pre-registration of H424, given the per-pair inconsistency and the in-sample caveat).
+
+## Campaign step H428 (29 Sept 2026, 20:32-20:34 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- V12's two held reads reproduce: L11/8 is the CROSS sign, the L02 opening mark is LL (1 vision call)
+
+VERIFY-F61-V12 held L11/8 (reader code 4STEM; its one read CROSS) and the unlisted mark opening L02 (its C4: LL) for one more read each.
+`family/h428_v12_holds.py` (script, items key `family/h428_items.tsv` and prompt `scripts/PROMPTS.md` H428 pushed 387c7771 before the call):
+references R1 4STEM from f.108r T1/2 (f.61's hand, overlay a -- the in-hand 4STEM V12 asked for), R2 CROSS L07/10, R3 4PI L11/9, R4 C43 L03/8,
+R5 LL L05/16, R6 PHI L01/5, R7 VBAR_A L03/6, options N / O (plain handwriting); all tiles greyscale; the L02 mark's centre is V12's own eye
+placement (disclosed). Placement look by the runner: the references sheet only. One blind Opus call, reply verbatim in
+`family/passes/h428_reply.tsv`. **Gate 9/9 known (>= 8), both f.108r 4STEM known items -> R1: PASS.**
+- **L11/8: R2 CROSS at W1, W2, W3 -> CROSS**, V12's read reproduced by a second instrument with the in-hand 4STEM on the panel. Tomokiyo's S5
+  markup ('melente-noit') has a dash at this position, consistent with a null. The reader's caveat: the match to R2's small cross is
+  "moderate confidence" (it describes the sign as an open-topped cross, stem curving left). If merged, one two-way token (4STEM a/n) becomes null.
+- **L02 opening mark: R5 LL at W1, W2, W3 -> LL**, V12's C4 reproduced. Out of every span. If merged, one null sign is added (cipher count 100).
+With V12's endorsed state (12 / 59 / 1 / 27 of 99) and both of these merged the meter would read **12 / 58 / 1 / 29 of 100** -- computed by hand
+from the bands, for the verifier; nothing is applied here (the corrections file is the orchestrator's, after a verifier's ruling). H428b (L01/11
+HASH4 vs 4PI) still needs an in-hand HASH4 tile source. Cost: one Opus call (~102k subagent tokens), est. 1.5.
