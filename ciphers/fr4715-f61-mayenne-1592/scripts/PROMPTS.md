@@ -599,3 +599,14 @@ Prompt (verbatim): "Read the image /…/h235/sheet_01.jpg with your image reader
 point at the centre sign. Sort ONLY the centre signs into 2 to 4 groups by the shape of the sign itself (not ink, blur, size or hand); a tile whose
 centre sign cannot be told goes to 'unclear'. Answer inline: first one line per group, 'GROUP <letter>: <one-sentence criterion>'; then one line per
 tile, exactly 'V01<TAB><group letter or unclear>', V01 to V19 in order, and nothing else."
+
+## H233 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's HASH4/4PI tokens and f.101r's lettered 4PI by shape, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h233/sheet_01.jpg (family/h233_4pi_shape.py tiles, NATIVE188 set to the f.188r native; key family/h233_items.tsv; 18 tiles: f.101r 4PI 7
+lettered, f.61 4PI 2 + HASH4 1, anchors 4 + 4). Disclosure: the runner placed the three f.61 positions by eye on the line sheets and checked those three crops
+(a 4 over a hash cluster; two '4 over a Pi'); the runner did not look at the H233 sheet. Prompt (verbatim): "Read the image /…/h233/sheet_01.jpg with your
+image reader only; use no other tool. It holds 18 numbered tiles (W01-W18) cut from 16th-century cipher letters, possibly in different hands, all scaled
+to the same height. In each tile two black triangles, one above and one below, point at the centre sign. Classify ONLY the centre sign of each tile as
+exactly one of: A = a 4-head on a stem crossed by hash bars (a 4 over #); D = a 2- or Z-shaped hooked head on two slanted strokes (reads like '2#');
+E = a figure-4 whose stem or stems are not crossed by hash bars (for example a 4 over two upright stems joined by a bar, or a plain 4); B = two small
+loops sitting on a hash; N = none of these, or cannot tell. Answer inline, one line per tile, exactly 'W01<TAB>A', W01 to W18 in order, nothing else."
