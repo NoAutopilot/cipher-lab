@@ -1,0 +1,3 @@
+recf101r: 30 subsets of 51 runs; gain(v7) > binned p95 in 24/30 = 0.80
+recf188r: 30 subsets of 51 runs; gain(v7) > binned p95 in 30/30 = 1.00
+read-out: powered at f.106r's N -- f.106r's no-signal result is a negative for v7 in the secretary's hand at this N

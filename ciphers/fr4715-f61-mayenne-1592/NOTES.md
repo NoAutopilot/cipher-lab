@@ -5267,3 +5267,14 @@ mean 0.0160, p95 0.0490 (31/100 >= v7) -> "no order signal at >= 50 runs"** as p
 (H346: 0.63 / 1.00 at 35), and f.106r's gain (0.028) is of the size held f.124r's was (0.032, which cleared only at 227 runs); so this is logged as
 no signal at this N, **not a negative, until H350 measures power at 51 runs**. The f.106r sign draft now covers the whole cipher block (rows 1-18). Two
 vision calls, cost estimate 2.5 USD.
+
+## Campaign step H350 (29 Sept 2026, 16:06-16:12 UTC by the commit stamps and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the order statistic is powered (just) at 51 runs in-sample: f.106r's miss reads as a negative at this N, with two caveats (script-only)
+
+`family/h350_seqgain_power51.py` (written and pushed before running; `family/h350_seqgain_power51_result.txt`): 30 random 51-run subsets of each
+in-sample leaf, 50 binned keys each. **f.101r 24/30 = 0.80; f.188r 30/30 = 1.00** -> pre-stated read-out "powered at f.106r's N -- f.106r's no-signal
+result (H348, rows 1-18, 31/100) is a negative for v7 in the secretary's hand at this N". Rule 3's error-bracket check: the in-sample drafts' sign
+agreement (f.101r 0.802, f.188r 0.776) brackets f.106r's pooled 576/711 = 0.810, so the control is not cleaner than the target.
+Two caveats, carried, not argued away: (1) f.101r's power sits exactly at the 0.8 bar; (2) in-sample power is an upper bound for a held leaf (v7's cells
+were read from those leaves), so the fairer reference is a held leaf that does show the signal, subsampled to 51 runs -- H351. Until H351, the reading
+is "no order signal for v7 in the secretary's hand on f.106r, a negative at this N by the pre-stated in-sample power". This is a leaf-level result on
+key v7, not a class change: the campaign stays open (rule 5). No call.
