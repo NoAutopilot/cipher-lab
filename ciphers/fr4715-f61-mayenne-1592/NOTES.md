@@ -4040,3 +4040,16 @@ the hash family is split by shape. Nothing merged.
 Descriptive: in f.61's hand the two leaves lean opposite ways for HASH4, d/q on f.108v and i/x on f.108r (where d/q scores below null 28 times in 30).
 With H195 (the i anchors on f.176v are not reliably bare hashes) this is consistent with two hash signs under one pass code, like the 4-family, but
 nothing here shows it. A shape sort is H212. HASH4 stays d/i/q; nothing merged.
+
+## Campaign step H212 (29 Sept 2026, 02:53-02:56 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- two hash forms, mixed on f.108v; the leaf link misses the registered rule
+
+Pre-registered (PROMPTS section H212; `family/h212_hash_sort.py`, key `family/h212_items.tsv`, commit a7ee044a). One Opus vision call, blind to leaf
+(reply verbatim `family/passes/h212_sort.tsv`; the runner saw the sheet before the call, disclosed). Result `family/h212_hash_sort_result.txt` (`--check` OK):
+- The reader's two groups: **A = a figure-4 stroke rising above the hash, usually one vertical running below the line; B = two small loops sitting on
+  the hash, short verticals only.** 24 of 24 sorted (tile 9 uncertain A/B).
+- **By leaf: A: f.108v 9, f.108r 1; B: f.108v 5, f.108r 9; Fisher p 0.013.** Registered read-out: f.108v's share in group A is 9/14 = 0.64 < 0.7, so
+  **"no leaf-linked hash form shown"**. Both leaves carry both forms, in different proportions.
+What it suggests: the HASH4 pass code holds two forms, as the 4-family's codes did. f.108r's HASH4 is mostly the looped form B and leans i/x (H211);
+f.108v's is mostly the 4-headed form A and leans d/q (H209/H211). H162's note (a 4 on the hash = d/q, a bare hash = i) and H195's anchors (d/q anchors
+4-headed 9/10) point the same way. Untested: A = d/q, B = i/x. That is H213 (script-only, sequence gain on f.108v with HASH4 split by these groups).
+HASH4 stays d/i/q; nothing merged.

@@ -1,0 +1,3 @@
+groups by leaf: A: f.108v 9 f.108r 1; B: f.108v 5 f.108r 9
+group G (most f.108v) = A: f.108v in G 9/14, f.108r in G 1/10; Fisher p 0.013; none 0
+read-out: no leaf-linked hash form shown
