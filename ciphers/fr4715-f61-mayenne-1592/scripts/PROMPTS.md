@@ -716,3 +716,10 @@ les on L02, le on L04) as the hand check; PHI 2 and C43 2 (H298's tiles); one DI
 scored apart, in no gate). Disclosure: the runner viewed images/f61sheetB_L07.jpg, f61sheetB_L02.jpg (which shows the DISPUTED mark whole) and
 f61sheetB_L04.jpg to place the text letters, then one placement sheet of the six TEXT tiles only; sheet B L05 (the LL), the PHI/C43 crops and the test
 sheet were not seen. Gates and read-outs in the script's docstring. Prompt: H256's verbatim with "12 numbered tiles (W01-W12)" and "W01 to W12".
+
+## H304 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- L02's opening mark and LL against clear capital I and single l, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h304/sheet_01.jpg (family/h304_ll_pair.py tiles; key family/h304_items.tsv; 12 tiles: f.61 LL 1 and L02's opening mark 1, both
+centroid-recentred; clear capital I 3 (Il seroit L02, Il a L04, Impor L02), single l 3 (as H302), PHI 2 and C43 2 (H298's)). Disclosure: the runner saw
+sheet B L02 whole in H302 (the L02 mark shows there) and one placement sheet of the six TEXT tiles; the LL, PHI/C43 crops and the test sheet were not
+seen. A fresh reader (not H302's). Gates and read-outs in the script's docstring. Prompt: H256's verbatim with "12 numbered tiles (X01-X12)" and "X01 to X12".
