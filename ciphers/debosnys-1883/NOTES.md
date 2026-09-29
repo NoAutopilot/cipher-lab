@@ -1316,3 +1316,17 @@ between-box order that D2 found is what a writer with sign-to-sign habits produc
 single out the name-order split, and it needs no language. This matches H41/H48 (a few fixed pairs such as WAVE-%,
 near-random order otherwise). R2-5's lead is closed as "explained by a habit null at pooled N with a passing control".
 Nothing read; status `open`.
+
+### H62, D's R34 lead rechecked under RULE.md (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU)
+
+`scripts/h62_r34_rule.py` -> `h62/result.json` (instrument: G-D/r34_replicate.py's scan, unchanged). c2 settled, clear
+spans dropped, RULE.md marks dropped (N 637, 26 lines), in two variants (rule+folds primary, rule). **Control first,
+failed in both variants, so the real scan was not run** (as pre-registered in the row: "no passable control"): D's
+planted transpositions picked their own height TRANS-7 10 / 9 of 12, TRANS-19 11 / 9, **TRANS-33 2 / 3** (bar 10 of 12).
+TRANS-33's misses are nearly all R32 (7 and 8 of 12): at N 637, heights 32 and 33 both give 20 columns, so the two
+readings differ only in where the short column falls and the scan cannot tell them apart; the exact-height criterion
+is too strict there, but it was the registered bar, so this is a non-test by its own letter. What it means for R34
+(19 columns at N 637): under RULE.md's box set the scan cannot yet be shown to recover a height-33 transposition, so
+R34 stays "open, fragile" (DIGEST-2) -- neither confirmed nor killed. A rerun needs a pre-registered tolerance (the
+planted height or any height giving the same column count) decided before looking, then the 200-scan null. Nothing
+read; status `open`.
