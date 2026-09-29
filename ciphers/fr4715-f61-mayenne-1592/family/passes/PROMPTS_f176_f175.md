@@ -396,3 +396,8 @@ H410's prompt verbatim with twelve references (R1-R12, references.jpg) and items
 ## H413 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
 H410/H411 prompt verbatim with twelve references (SCRATCH/h411/references.jpg, unchanged) and items I01-I22 (SCRATCH/h413/items_01..02.jpg);
 script `h413_l05_1_reread.py`, key `h413_items.tsv`. Same tile geometry as H411 (markers already checked there); no new look.
+
+## H414 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H410 prompt with fifteen references (SCRATCH/h414/references.jpg, R1-R15), items I01-I24 (items_01..02.jpg), and one added option: answer P
+if the marked mark is punctuation or not a cipher sign. Script `h414_other_two.py`, key `h414_items.tsv`. Target positions set by the runner's eye
+(disclosed in the script); the runner checked marker placement on the target and new reference tiles.
