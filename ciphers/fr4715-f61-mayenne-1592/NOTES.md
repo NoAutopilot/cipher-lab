@@ -4144,7 +4144,7 @@ S14, a no-bowl 4TRI at letter c, which the shape rule reads a/n (-1). Pre-stated
 handed to a verifier as a v6 candidate: 4-family read by the blind bowl answer (bowl c/p, no bowl a/n), which narrows v5's 4TRI (drops t) and 4STEM
 (drops c/e, moving f.108v's bowl 4STEM to c/p by shape). HASH4's form split (H212-H215) is not in this test: no HASH4 lies on a span line. No merge.
 
-## Campaign step H220 (29 Sept 2026, 03:52-03:58 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H212's hash forms against f.101r's period letters: the 4-head form is d/q there; the looped form is absent and the i/x sign is a third shape
+## Campaign step H220 (29 Sept 2026, 03:53-03:57 UTC by ROOM.md's machine stamps, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H212's hash forms against f.101r's period letters: the 4-head form is d/q there; the looped form is absent and the i/x sign is a third shape
 
 Pre-registered (PROMPTS section H220; `family/h220_hash_101r.py`, key `family/h220_items.tsv`, commit d144a441, before the call). The row asked for 10 i +
 10 d/q HASH4 positions; the pool has HASH4 i only 3 usable (all `conflict:d`), because f.101r's readers coded this leaf's i/x sign H24 (align_period.py's
@@ -4161,7 +4161,7 @@ once. With H214 (absent from Desportes's f.176), no glossed leaf yet carries for
 Not merged; v5 unchanged. Added: H222 (is form B the same sign as H24 in another hand? a matched-scale blind sort, since H220's strips and anchors differ
 in scale) and H223 (script-only table of which code each glossed hand used for its i-sign and d/q-sign).
 
-## Campaign step H222 (29 Sept 2026, 04:00-04:08 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the looped hash is not f.101r's H24: three hash shapes at matched scale
+## Campaign step H222 (29 Sept 2026, 03:59-04:01 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the looped hash is not f.101r's H24: three hash shapes at matched scale
 
 Pre-registered (PROMPTS section H222; `family/h222_loop_h24.py`, key `family/h222_items.tsv`, commit 8b7a95e0, before the call; the runner looked at sheet 1
 twice to fix marker geometry and disclosed its own impression there). 22 tiles at matched scale: f.108 H212 group A 5 + B 5, f.101r H24 i 6 + HASH4 d/q 6
@@ -4174,7 +4174,7 @@ Reported, not gated: f.108's 4-headed form sorts with f.101r's period-read d/q s
 H220/H222), so HASH4 B = i/x stays sequence-only. But **f.188r's gloss alignment puts HASH4 under i 10, x 3, d 12, q 3** (passes/f188r_align_v4.tsv),
 the one glossed leaf on disk whose HASH4 carries both letter sets: H224 (rank 1) runs H220's design there. Nothing merged; v5 unchanged.
 
-## Campaign step H224 (29 Sept 2026, 04:10-04:22 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.188r's HASH4 i/x rows are the "2#" sign: the 4-head reads d/q, the 2-hook reads i/x
+## Campaign step H224 (29 Sept 2026, 04:02-04:04 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.188r's HASH4 i/x rows are the "2#" sign: the 4-head reads d/q, the 2-hook reads i/x
 
 Pre-registered (PROMPTS section H224; `family/h224_hash_188r.py`, key `family/h224_items.tsv`, commit 76d462e1, before the call). f.188r (fr.3984, Desportes's
 hand; native btv1b9060633d f351, sha1 = MANIFEST) is aligned to its separate decipherment f.184r; passes/f188r_align_v4.tsv puts HASH4 under d 12 (all
@@ -4193,7 +4193,7 @@ The "conflict" status of those rows was a coding merge, not a misalignment. Noth
 form B (f.108) remains without a glossed occurrence; its i/x lean stays sequence-only (H213) and judge-only (H215). Added H225 (test key with the
 re-split, script-only) and H226 (the stray-letter HASH4 rows by shape).
 
-## Campaign step H225 (29 Sept 2026, 04:24-04:27 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- HASH4/H24 counts re-split by H224's shapes (script-only, descriptive)
+## Campaign step H225 (29 Sept 2026, 04:04-04:05 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- HASH4/H24 counts re-split by H224's shapes (script-only, descriptive)
 
 `family/h225_hash4_resplit.py` (committed before the run; result `family/h225_hash4_resplit_result.txt`, `--check` OK). The row's H219-style gate (f.61 spans,
 f.108r overlay) was **not run: a non-test by construction** -- no HASH4 or H24 lies on a span or overlay position, so a key change confined to those two
@@ -4203,7 +4203,7 @@ codes cannot score differently (CLAUDE.md rule 3). Descriptive part: H224's eigh
 HASH4 proper still carries many stray letters (p 7, s 6, n 5, b 4, f 4, o 4 ...), most on f.101r and on f.188r's conflict rows; H226 asks whether those
 positions are other shapes. Nothing merged.
 
-## Campaign step H226 (29 Sept 2026, 04:29-04:36 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- stray-letter HASH4 rows are mostly the 4-head; the looped form appears on f.101r
+## Campaign step H226 (29 Sept 2026, 04:06-04:08 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- stray-letter HASH4 rows are mostly the 4-head; the looped form appears on f.101r
 
 Pre-registered (PROMPTS section H226; `family/h226_hash4_strays.py`, key `family/h226_items.tsv`, commit b6c198f7, before the call; the runner did not look at
 the sheets). 24 HASH4 rows whose period letter is not d/q/i/x (f.188r all 10, f.101r 14 of 22), anchors 10 H212 tiles, H224's five categories, one Opus
@@ -4215,7 +4215,7 @@ What it says: most stray HASH4 letters sit on the ordinary 4-headed sign, so the
 cell than d/q -- the shape test cannot tell which. A few are other shapes (2# at b/e/s, one plain hash). **The looped form B does occur on f.101r** (3 here,
 1 in H220), so a period-letter table for B is possible after all: H227 shape-reads every remaining f.101r HASH4 position. Nothing merged.
 
-## Campaign step H227 (29 Sept 2026, 04:38-04:46 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- every f.101r HASH4 position by shape: the looped form is rare and never at d/q
+## Campaign step H227 (29 Sept 2026, 04:09-04:10 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- every f.101r HASH4 position by shape: the looped form is rare and never at d/q
 
 Pre-registered (PROMPTS section H227; `family/h227_loop_101r_all.py`, key `family/h227_items.tsv`, commit 8e3ba451, before the call; the runner did not look at
 the sheets). The 32 f.101r HASH4 positions (pass-A-mapped, with a letter) not read in H220/H226, anchors 10 H212 tiles, H224's five categories, one Opus
@@ -4228,7 +4228,7 @@ on f.108v (the looped form is not d/q), but its own letters are scattered, so th
 f.101r (this step) done, no glossed leaf on disk holds enough looped signs to give it one. For the verifier: HASH4 proper (the 4-head) = d/q stands on
 three leaves' period letters; the looped form stays unread. Nothing merged.
 
-## Campaign step H221 (29 Sept 2026, 04:50-05:00 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- fr.3983 f.106r: H24 is the 2# form, HASH4 is mostly the looped form; the bowl call failed its control
+## Campaign step H221 (29 Sept 2026, 04:12-04:13 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- fr.3983 f.106r: H24 is the 2# form, HASH4 is mostly the looped form; the bowl call failed its control
 
 Pre-registered (PROMPTS section H221; `family/h221_shapes_106r.py`, key `family/h221_items.tsv`, commit ac670071, before the calls; the runner looked at one
 bowl sheet for geometry). f.106r (Mayenne's secretary; held leaf: its gloss passes agreed under 60%, so no period letter is used). Native btv1b9059406b
@@ -4243,7 +4243,7 @@ For the verifier: H24 = 2# holds on f.106r too (every H24 the passes wrote); HAS
 counts across these leaves mixes the looped and 4-headed forms (as H218 found for the 4-family). H228 (script-only) reads the letters the held gloss places
 at the looped positions, as a conditional look. Nothing merged.
 
-## Campaign step H228 (29 Sept 2026, 05:02-05:04 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r's held gloss at the looped positions: a non-test (script-only)
+## Campaign step H228 (29 Sept 2026, 04:13-04:14 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r's held gloss at the looped positions: a non-test (script-only)
 
 `family/h228_loop_106r_gloss.py` (committed before the run; result `family/h228_loop_106r_gloss_result.txt`, `--check` OK), conditional on f.106r's HELD
 alignment (gloss passes under 60%). Letters placed: **H24 (2#, 12 lettered): u 5, n, a, h, m, t -- no i**; HASH4 looped B (11 lettered): a 2, t 2, i 2, q, u,
@@ -4252,7 +4252,7 @@ decipherment reads H24 i 170 times, and here the alignment gives it no i at all,
 positions. **Logged as a non-test, not a negative**: the looped form's letters on f.106r need a better gloss read (the leaf's gloss is sparse and
 interlined with heavy bleed-through, KEY.md). Nothing merged.
 
-## Campaign step H229 (29 Sept 2026, 05:06-05:15 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r bowl at H199's geometry: CONTROL FAIL again, and a question for H199
+## Campaign step H229 (29 Sept 2026, 04:15-04:16 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r bowl at H199's geometry: CONTROL FAIL again, and a question for H199
 
 Pre-registered (PROMPTS section H229; `family/h229_bowl_106r.py`, key `family/h229_items.tsv`, commit 3d59631d; the runner did not look at the sheets). The same 33
 f.106r 4-family targets and 10 f.108v anchors as H221, every strip cut exactly as h199_bowl_108v.py cuts (250 native px, box top+20 to bottom+30, x1.44, one
@@ -4264,7 +4264,7 @@ may depend on that context, and **H199 -- which H201 (sequence gain), H208 (judg
 a refutation of the bowl rule (f.176r/v, f.61 and f.101r answers came from their own calls), but the f.108v leg needs a reproduction before a verifier
 relies on it. H230 (rank 1) reruns H199's exact prompt, sheets and control in one fresh call. Nothing merged.
 
-## Campaign step H230 (29 Sept 2026, 05:18-05:34 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H199 reproduces under its own prompt; the bowl answers depend on the call's context
+## Campaign step H230 (29 Sept 2026, 04:17-04:21 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H199 reproduces under its own prompt; the bowl answers depend on the call's context
 
 Pre-registered (PROMPTS section H230; `family/h230_h199_repro.py`, commit 33dca818, before the call; the runner did not look at the sheets). H193's 60 control
 strips regenerated from fresh natives (f327 sha1 a2b0d98e..., f328 4a13be67...; 2 requests) and H199's 74 f.108v strips, both item keys byte-identical;
@@ -4274,10 +4274,10 @@ H199's verbatim prompt in one fresh Opus call (`family/passes/h230_reply.tsv`). 
   C43 no 40 / yes 1. Pre-stated read-out: **"H199 reproduces".**
 What it says: H199's f.108v reading holds when the reader sees H193's f.176v strips (large, clear bowls in Desportes's hand) in the same call; without
 them (H221, H229) the same f.108v signs were read "no bowl" 9 times of 10. So the bowl question on f.61's hand is context-dependent: a small bowl is
-called only against clear exemplars. This corrects the 05:1x flag -- H199 is reproduced, with that caveat for the verifier (every bowl call should
+called only against clear exemplars. This corrects the 04:16 flag -- H199 is reproduced, with that caveat for the verifier (every bowl call should
 carry H193's strips). H231 runs f.106r's bowl in H199's design. Nothing merged.
 
-## Campaign step H231 (29 Sept 2026, 05:36-05:44 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r's bowl in H199's design: the 4TRI code mixes the two signs
+## Campaign step H231 (29 Sept 2026, 04:22-04:23 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r's bowl in H199's design: the 4TRI code mixes the two signs
 
 Pre-registered (PROMPTS section H231; `family/h231_bowl_106r_h199.py`, key `family/h231_items.tsv`, before the call; the runner did not look at the sheets). H199's
 verbatim prompt, part 1 = H193's regenerated strips, part 2 = f.106r's 33 4-family strips at H199 geometry; one Opus call (`family/passes/h231_reply.tsv`).
@@ -4288,7 +4288,7 @@ So on f.106r the no-bowl sign is always coded C43 when C43 is written, but the 4
 4STEM mostly the no-bowl sign. Any f.106r 4-family count pooled into a key would need re-splitting by these shape answers (positions in the reply/key
 files). Descriptive; nothing merged.
 
-## Campaign step H223 (29 Sept 2026, 05:46-05:48 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the hash family by shape, code and letter (script-only, for the verifier)
+## Campaign step H223 (29 Sept 2026, 04:24-04:25 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the hash family by shape, code and letter (script-only, for the verifier)
 
 `family/h223_hash_table.py` (result `family/h223_hash_table_result.txt`, `--check` OK), from the blind form answers on disk (H212, H220, H221, H224, H226, H227):
 - f.101r HASH4: A 47 (d/q 34, i/x 1, other 12), B 5 (i/x 2, other 3), D 2, C 1, N 6. f.101r H24: N 11, A 1 (H220 offered no 2# category; at matched scale
@@ -4298,7 +4298,7 @@ files). Descriptive; nothing merged.
 For a v6 build: the 4-headed hash reads d/q on both period-glossed leaves; the 2# sign reads i/x (f.101r's H24, f.188r's mis-coded HASH4); the looped hash
 is common only on f.61's hand (f.108r/v) and the secretary's f.106r, and has no period value. Pooled HASH4 counts mix all three. Nothing merged.
 
-## Campaign step H235 (29 Sept 2026, 05:55-06:08 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's ZHOOK sorts with the period "2#" i/x sign
+## Campaign step H235 (29 Sept 2026, 04:27-04:29 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's ZHOOK sorts with the period "2#" i/x sign
 
 Pre-registered (PROMPTS section H235; `family/h235_zhook_2hash.py`, key `family/h235_items.tsv`, before the call). Disclosure: the idea came from the runner's
 look at f.61's line sheets L01/L11 while placing H233's tokens; the runner did not look at the H235 sheet. 19 tiles, grey, autocontrast, all at height 180
@@ -4313,7 +4313,7 @@ What it says: H178b's "no link" compared ZHOOK with Desportes's small cursive i-
 f.188r) at a common height, the reader puts f.61's ZHOOK with it. v5's ZHOOK i/x (graded S on f.61 for want of a glyph link) now has a candidate glyph
 link to a period i/x sign. For the verifier (VERIFY-F61-V6); not merged, grade unchanged.
 
-## Campaign step H233 (29 Sept 2026, 06:10-06:20 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the code 4PI names two different signs: f.101r's is the 4-head hash, f.61's is a 4 over a Pi
+## Campaign step H233 (29 Sept 2026, 04:30-04:31 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the code 4PI names two different signs: f.101r's is the 4-head hash, f.61's is a 4 over a Pi
 
 Pre-registered (PROMPTS section H233; `family/h233_4pi_shape.py`, key `family/h233_items.tsv`, before the call; f.61 positions placed by the runner's eye and those
 three crops checked, the sheet not seen). 18 tiles at H235's normalised height: f.101r's 7 pass-A-mapped lettered 4PI, f.61's L01 11 (HASH4), L01 12 and L11 9
@@ -4327,7 +4327,7 @@ Pi. So v5's 4PI letters (d/a/q/n, from f.101r and f.108r) do not transfer to f.6
 H202 read p 1 / d 4 under Tomokiyo's overlay -- which sign it is there is not yet checked). f.61's L01 HASH4 is the 4-head form, which reads d/q on both
 period leaves (H224/H227), not i. For the verifier and H234. Nothing merged.
 
-## Campaign step H234 (29 Sept 2026, 06:22-06:26 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's meter with the shape readings (script-only, descriptive, not endorsed)
+## Campaign step H234 (29 Sept 2026, 04:31-04:32 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's meter with the shape readings (script-only, descriptive, not endorsed)
 
 `family/h234_meter_shapes.py` (committed before the run; result `family/h234_meter_shapes_result.txt`, `--check` OK), verify_v5/meter_v5.py's bands on the same decode:
 - **v5: firm 12 / two-way 50 / wider 12 / unread-or-null 25** (wider: 4TRI c/p/t 6, 4PI 2, OTHER 2, 4STEM 1, HASH4 1).
@@ -4336,7 +4336,7 @@ period leaves (H224/H227), not i. For the verifier and H234. Nothing merged.
 For the verifier: the shape work narrows every wider f.61 token but OTHER's two, and correctly moves 4PI to unread rather than carry f.101r's letters onto a
 different sign. Nothing merged; the key stays v5.
 
-## Campaign step H232 (29 Sept 2026, 06:28-06:33 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- where f.61's unread classes occur (script-only)
+## Campaign step H232 (29 Sept 2026, 04:32-04:33 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- where f.61's unread classes occur (script-only)
 
 `family/h232_unread_census.py` (committed before the run; result `family/h232_unread_census_result.txt`, `--check` OK). f.61's unread: CA 10, C6 8, LOOPBAR 4,
 CROSS 2, LL 1. Elsewhere (reconciled drafts; letters where aligned): f.101r CA 6, C6 2 (e 2), LOOPBAR 1 (e), CROSS 1 (p); f.188r CA 6, C6 1 (e), LOOPBAR 1 (u),
@@ -4345,7 +4345,7 @@ CROSS 2; f.274 none. CA's letters are scattered (p 2, q, s, t, c, z), consistent
 three lettered positions -- small n, but the one lead. Added H236 (f.108r's 4PI shape: the same hand's overlay reads it d 4 / p 1), H237 (C6 glyph link), H238
 (f.61's two OTHER tokens). Nothing merged.
 
-## Campaign step H236 (29 Sept 2026, 06:36-06:45 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI by shape: CONTROL FAIL
+## Campaign step H236 (29 Sept 2026, 04:34-04:35 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI by shape: CONTROL FAIL
 
 Pre-registered (PROMPTS section H236; `family/h236_4pi_108r.py`, key `family/h236_items.tsv`, before the call; sheet not seen). One Opus call
 (`family/passes/h236_reply.tsv`), result `family/h236_4pi_108r_result.txt` (`--check` OK): **anchors 5/8 -> CONTROL FAIL** (two of the four f.188r 2-hook anchors
@@ -4353,7 +4353,7 @@ answered N, one of the four 4-head anchors E). The five f.108r 4PI targets are *
 f.61's two 4PI were answered E again, a repeat of H233 (not gated). H239: one redo with 12 anchors (gate 10/12); if it fails too, f.108r's 4PI shape is logged
 untestable in this format and not retried (CLAUDE.md rule 3's repeated-attempt clause).
 
-## Campaign step H239 (29 Sept 2026, 06:47-06:55 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI is the 4-head hash; f.61's "4 over a Pi" stays unmatched
+## Campaign step H239 (29 Sept 2026, 04:36-04:37 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI is the 4-head hash; f.61's "4 over a Pi" stays unmatched
 
 H236 with 12 anchors (PROMPTS section H239; `family/h239_4pi_108r_2.py`, key `family/h239_items.tsv`, before the call; sheet not seen). One Opus call
 (`family/passes/h239_reply.tsv`), result `family/h239_4pi_108r_result.txt` (`--check` OK):
@@ -4364,7 +4364,7 @@ What it says: in f.61's own hand (f.108r) the readers' 4PI is the 4-headed hash 
 4-head hash = d/q holds on f.101r (34/47), f.188r (12/14) and f.108r (4/5 d). f.61's L01 HASH4 is that sign (H233). f.61's two "4PI" are a different sign,
 a 4 over a Pi, with no lettered occurrence on any leaf read so far; they stay unread (H234's count). For the verifier; nothing merged.
 
-## Campaign step H237 (29 Sept 2026, 06:58-07:05 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's C6 and the glossed C6: no link shown
+## Campaign step H237 (29 Sept 2026, 04:38-04:39 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's C6 and the glossed C6: no link shown
 
 Pre-registered (PROMPTS section H237; `family/h237_c6_glyph.py`, key `family/h237_items.tsv`, before the call; f.61 positions placed by eye and the crops checked;
 sheet not seen). Only two glossed C6 (f.101r, both e) map to pass A; f.188r's does not. One Opus free sort (`family/passes/h237_sort.tsv`; the reply repeated one
@@ -4372,23 +4372,23 @@ line, dropped). Result `family/h237_c6_glyph_result.txt` (`--check` OK): **f.61 
 B 2; C43: B 1, C 2** -> **"no link shown"**. The controls split as well, so this sort was noisy; with two lettered glossed C6 the question is near its floor.
 C6 stays unread on f.61 (as VERIFY-F61-V4 left it). Nothing merged.
 
-## Campaign step H238 (29 Sept 2026, 07:08-07:12 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's two OTHER tokens (script-only, descriptive)
+## Campaign step H238 (29 Sept 2026, 04:40-04:41 UTC by ROOM.md's machine stamps (corrected: the runner had typed estimated times here), runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's two OTHER tokens (script-only, descriptive)
 
 From scripts/read_call_U.tsv and passes U1/U2 (the unmarked-line reads of f.61 L02/L04): **L02 2 OTHER** = "two short vertical stems joined by a heavy top bar
 and a heavy bottom bar, like Roman numeral II" / "a Pi with a double bar, no 4 above it, so not 4PI" -- the base of f.61's 4-over-Pi (H233) without the 4.
 **L04 2 OTHER** = "an S/8-like loop joined to a b/d form, written after 'Come'; may be a handwriting abbreviation (e.g. S.M.)" (pass U2, low confidence).
 No atlas class with period letters matches either; they stay 'wider'/unread. No call.
 
-## Runner 9 handover (29 Sept 2026, 07:12 UTC by the clock, session_012NTadgrCBftz3oRtgw5jFu)
+## Runner 9 handover (29 Sept 2026, 04:41 UTC by ROOM.md's machine stamp (corrected from an estimated 07:12), session_012NTadgrCBftz3oRtgw5jFu)
 
 Done this session: H220-H239 (plus H223, H225, H228, H232, H234, H238 script-only); spent today 62.45/600. Stopping near the context line by the runner's own
-estimate (~480k): get_session reports used_tokens 0 for this session, so it cannot measure it; the next steps need vision or judge calls.
+estimate (~480k): get_session reported used_tokens 0 at the time. RETRACTED at 04:45 UTC: get_session then read 432,550 (< 600k), so runner 9 continued.
 **Hash family (for VERIFY-F61-V6):** three signs share the pass code HASH4 -- the 4-headed hash reads d/q on f.101r (34/47, H227), f.188r (12/14, H224) and
 f.108r in f.61's hand (its "4PI", d 4/5, H239); the "2#" sign reads i/x (f.101r's H24, f.188r's mis-coded HASH4 8/8, H224) and f.61's ZHOOK sorts with it (H235,
 pre-stated PASS, caveat p 0.17); the looped hash is common only on f.108r/v and f.106r and has no period value (rare on f.101r, 5/61, never d/q, H227).
 **4PI:** f.101r's and f.108r's 4PI are the 4-head hash; f.61's two 4PI are a different sign, a 4 over a Pi (H233/H236/H239), with no lettered occurrence.
 **Bowl:** H199 reproduces under its own prompt (H230); bowl calls need H193's f.176v strips in the same call (H221/H229 failed without them). f.106r's 4TRI mixes
-bowl and no-bowl (H231). **f.61 meter** with the shape readings (not endorsed): 12 / 58 / 2 / 27 (H234). Key-source lines posted 04:2x (H224), 06:1x (H235),
-06:2x (H234). Open for runner 10: **H240** (script test key, 4-head 4PI on f.108r's overlay), **H241** (script: which leaf could give the looped hash or the
+bowl and no-bowl (H231). **f.61 meter** with the shape readings (not endorsed): 12 / 58 / 2 / 27 (H234). Key-source lines posted 04:04 (H224), 04:29 (H235),
+04:32 (H234). Open for runner 10: **H240** (script test key, 4-head 4PI on f.108r's overlay), **H241** (script: which leaf could give the looped hash or the
 4-over-Pi a period value), **H242** (judge on f.61's 4-over-Pi tokens). Scratch natives (f210, f351, f191, f327/f328) are not committed; fetch_gallica.py
 regenerates them (sha1s in family/requests.log).
