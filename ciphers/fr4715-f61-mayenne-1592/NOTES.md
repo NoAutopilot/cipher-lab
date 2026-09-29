@@ -4871,3 +4871,10 @@ f.108 glosses) is de Diou's hand, the wrong hand for a letterform control of f.6
 and carry no x. So an ll-only control of n >= 3 in this hand cannot be cut from material on disk: H302/H304's letterform question on LL stays open,
 held on new material (a clear letter in the secretary's hand), not on another sort of the same tiles. By the way: a second LL token in this hand is on
 file, f.108v L06 29 (scripts/pass108gB_classes.tsv, pass B only, confidence l). No call, no value, no count change.
+
+## Campaign step H306 (29 Sept 2026, 12:42 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- H302/H304/H305 carried into the null tables and the V9 page (notes/script only)
+
+`family/f61_null_band.py` -> `.tsv` (`--check` OK): one fixed `note` row `L02 0 LL?` for L02's opening mark (read_call_U pass 1 LL / pass 2 'Il';
+not in the decode file, which follows pass 2), with H302/H304's descriptive pairing and both control fails; band counts unchanged (25 unread-or-null + 4
+wider, 15 in a span), note rows 2. `family/f61_nulls_as_letters.tsv`: the LL row's letterform_test cell now records the two runs and H305.
+`family/V9_PAGE.md`: a section "Added by runner 12 (H302-H306)". No call, no value, no count change.

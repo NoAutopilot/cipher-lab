@@ -1,1 +1,1 @@
-tokens: unread-or-null 25 (CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1 expected 25), wider 4 (4PI 2, OTHER 2); in a span with his character: 15; note rows 1 (CH 1 expected, keyed e/m, dash on f.61; H298/H301)
+tokens: unread-or-null 25 (CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1 expected 25), wider 4 (4PI 2, OTHER 2); in a span with his character: 15; note rows 2 (CH 1, keyed e/m, dash on f.61, H298/H301; L02 opening mark 1, LL or 'Il', H302-H306)

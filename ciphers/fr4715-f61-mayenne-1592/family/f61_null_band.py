@@ -3,7 +3,7 @@
 (CA, C6, LOOPBAR, CROSS, LL: 25 of 99) and the two still-wider classes (4PI x2, OTHER x2), one row per token, with the class's evidence in one cell and
 the result files in another; Tomokiyo's markup character where the token falls inside one of his five spans (the F61-CAL DP under key v6's f.61 reading,
 as H259). Descriptive: nothing here is a value or a merge; the class evidence is the runner's summary of the named steps, for the verifier to check
-against the files.  H301 (runner 11 session_01RNzUvRTqBTAw7BukhKyKBU, 29 Sept 2026): one NOTE row for CH -- keyed e/m in the meter (two-way band), not in the band's 25, but a Tomokiyo dash class on f.61 (H281) whose letterform is the clear h (H298, n = 1); band "note", so the 25 + 4 counts VERIFY-F61-V9 endorsed do not move.  python3 f61_null_band.py [--check]"""
+against the files.  H306 (runner 12 session_012eShPsWwW3quuzzUNV7nW5, 29 Sept 2026): one fixed NOTE row for L02's opening mark (pos 0, before the decode file's L02 1 PHI; not in the decode, which follows read_call_U pass 2's "Il"), carrying H302/H304/H305 for the verifier; band "note", counts unchanged.  H301 (runner 11 session_01RNzUvRTqBTAw7BukhKyKBU, 29 Sept 2026): one NOTE row for CH -- keyed e/m in the meter (two-way band), not in the band's 25, but a Tomokiyo dash class on f.61 (H281) whose letterform is the clear h (H298, n = 1); band "note", so the 25 + 4 counts VERIFY-F61-V9 endorsed do not move.  python3 f61_null_band.py [--check]"""
 import csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE); sys.path.insert(0, os.path.abspath(f"{HERE}/../scripts"))
 from build_key_v6 import load_key_v6
@@ -30,6 +30,8 @@ NOTE = {
  "CH": ("note, not in the band: keyed e/m pooled (f.101r e 3, f.188r m 3 -- two leaves' letters merged, rule-4 conflict row HYPOTHESES.md H289); on f.61 its one token carries Tomokiyo's dash (H281) in 'les choses sont a [LOOPSTEM1] [CH] trop avancees', complete French without it (Correction, H295); letterform of the scribe's clear h in one blind sort, 1/1 with the 3 text h's, PHI/C43 0/4, at n = 1 flagged (H298); a blind positional reader listed it as the clear letter h (H297) -- an h-shaped mark reading as nothing on f.61, the CA pattern at n = 1; stays keyed in the meter until a verifier rules; on the family leaves the class is a letter inside words (H288/H291)",
         "family/h298_ca_text_result.txt family/passes/h298_sort.tsv family/f61_dash_need.tsv scripts/f61positions_L05B_result.txt family/f61_nulls_as_letters.tsv HYPOTHESES.md"),
 }
+L02START = ("note, not in the band and not in the decode: L02's opening mark, read_call_U pass 1 LL ('ll-shaped pair of stems ... could be handwritten Il') vs pass 2 'Il' (handwriting; the decode follows pass 2); two blind letterform sorts by fresh readers (H302, H304) each put it in a group of its own with f.61's LL (L05 16) -- 'two tall long-s-like stems side by side' -- apart from the clear 'Il'/I, the single l's and PHI/C43, but both sorts missed their own control gate on one tile (CONTROL FAIL), so descriptive only; no same-hand ll-only control exists on disk (H305); if a verifier took it as LL, the band's LL would be 2 tokens (a recount for the verifier, not applied)",
+            "family/h302_ll_text_result.txt family/h304_ll_pair_result.txt family/passes/h302_sort.tsv family/passes/h304_sort.tsv family/h305_ll_census.tsv scripts/read_call_U.tsv scripts/passU2_classes.tsv")
 def main():
     key = load_key_v6(f61=True); lines = split_lines(load_read()); relabel(lines); mk = {}
     for s, l, m in load_spans():
@@ -46,8 +48,9 @@ def main():
         n[band] = n.get(band, 0) + 1
         s, ch = mk.get((r["line"], int(r["pos"])), ("", ""))
         rows.append(f"{r['line']}\t{r['pos']}\t{c}\t{band}\t{r['period_letters']}\t{s}\t{ch}\t{ev[0]}\t{ev[1]}")
+    rows.append("L02\t0\tLL?\tnote\t-\t\t\t" + L02START[0] + "\t" + L02START[1]); n["note"] = n.get("note", 0) + 1
     open(f"{HERE}/f61_null_band.tsv", "w").write("\n".join(rows) + "\n")
-    txt = f"tokens: unread-or-null {n['unread-or-null']} (CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1 expected 25), wider {n['wider']} (4PI 2, OTHER 2); in a span with his character: {sum(1 for r in rows[1:] if r.split(chr(9))[6] and r.split(chr(9))[3] != 'note')}; note rows {n.get('note', 0)} (CH 1 expected, keyed e/m, dash on f.61; H298/H301)\n"
+    txt = f"tokens: unread-or-null {n['unread-or-null']} (CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1 expected 25), wider {n['wider']} (4PI 2, OTHER 2); in a span with his character: {sum(1 for r in rows[1:] if r.split(chr(9))[6] and r.split(chr(9))[3] != 'note')}; note rows {n.get('note', 0)} (CH 1, keyed e/m, dash on f.61, H298/H301; L02 opening mark 1, LL or 'Il', H302-H306)\n"
     p = f"{HERE}/f61_null_band_result.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(p) and open(p).read() == txt and open(f"{HERE}/f61_null_band.tsv").read() == "\n".join(rows) + "\n"; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)

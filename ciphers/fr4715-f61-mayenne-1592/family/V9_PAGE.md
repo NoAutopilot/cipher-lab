@@ -78,3 +78,16 @@ Not audited by V9 (its brief closed at H262); for the next verifier.
 
 Meter variant this adds (not computed as a band change, because CH is keyed): if a verifier moved CH to null on f.61, the two-way band would lose one
 token and the last band gain one: 12 / 58 / 2 / 27 [null 18 + unread 9]. Nothing moves until then.
+
+## Added by runner 12 (H302-H306): LL's letterform, and L02's opening mark
+
+- **H302** (one blind Opus sort, `family/h302_ll_text_result.txt`): LL against clear 'ella' and two clear 'Il' -- **CONTROL FAIL** (the two 'Il' sort
+  together by the capital I's diagonal lead-in, 'ella' unclear), no read-out on LL.
+- **H304** (fresh reader, capital-I control explicit, `family/h304_ll_pair_result.txt`): **CONTROL FAIL** again (one clear I unclear), nothing scored.
+- **Descriptive, in no gate, both times:** f.61's LL (L05 16) and L02's opening mark were put together in a group of their own ("two tall long-s-like
+  stems side by side"), apart from every clear I, every single l and PHI/C43. read_call_U pass 1 coded that mark LL, pass 2 read it as the handwritten
+  'Il', and the decode follows pass 2. If a verifier took it as LL, the null band's LL would count 2, not 1 -- a recount for the verifier, not applied.
+- **H305** (`family/h305_ll_census.tsv`): no ll-only control in f.61's hand can be cut from material on disk (one clear ll, 'ella'; every other ll word on
+  file is de Diou's hand). A second LL token in this hand: f.108v L06 29 (pass B only, confidence l).
+- **H306**: a `note` row `L02 0 LL?` in `family/f61_null_band.tsv` (counts unchanged: 25 + 4; note rows 2) and the LL row of
+  `family/f61_nulls_as_letters.tsv` carry the above.
