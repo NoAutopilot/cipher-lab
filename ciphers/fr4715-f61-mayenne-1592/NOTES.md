@@ -5026,3 +5026,16 @@ The atlas defines EBR_A as the hairline-diagonal bracket (H22 group A) and EBR_B
 "form B" = atlas EBR_B, as H320/H318 assumed; no rerun. Noted for H323: v5's endorsement table pools the f.176r reader code DBL into SBS ("reader code
 DBL on f.176r is v4's SBS glyph") and lists DBL among the classes whose rows must equal v4's -- so which glyph v7's DBL e/r/u cell describes is H323's
 question. No call.
+
+## Campaign step H323 (29 Sept 2026, 13:11 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- DBL census: v7's e/r/u cell is f.101r's alone; in the secretary's hand readers code SBS (script-only)
+
+- **Key v7's DBL rows** (`family/key_period_v7.tsv`): all from **fr.3982 f.101r** (the Bishop of Lisieux's letter from Rome, another hand): e 10, r 6,
+  u 6, then t 2, i/n/p/q/s 1 each. No other leaf contributes to DBL.
+- **f.176r (Desportes):** the readers' code DBL there was ruled to be v4's SBS glyph and pooled into SBS b/o (VERIFY-F61-V5; v7 rows 'f.176r code DBL').
+- **Mayenne's secretary's hand:** f.61 (scripts/f61_positions_all.tsv) DBL 0, SBS 5; f.108v native H59 draft DBL 0, SBS 13 (the low-resolution H34 'g'
+  alignment has DBL 29, the same kind of code drift f.176r showed); **f.211r's run (H315) DBL 5, SBS 3**.
+What it means for the held-out check: of f.211r's 16 keyed signs, the five DBL would be scored with a cell fitted on another hand's leaf, while on two
+leaves (f.176r, and by the native draft f.108v) the readers' DBL/SBS split tracks the reading resolution, not a second glyph. So before H317 scores
+DBL as e/r/u, the question "is f.211r's DBL the f.101r glyph or the SBS glyph drawn taller" needs its own blind answer (a forced choice with f.101r DBL
+and f.61/f.108v SBS tiles as known answers, H310's format) -- written as H324. H318's partial check used e/r/u for them; its "no signal" stands either
+way (SBS b/o would score no letter of forb/comm/elle/ul there except 'o' and 'b' in forb/comm). No call.
