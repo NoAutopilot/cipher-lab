@@ -24,10 +24,14 @@ SWARM = os.path.dirname(HERE)
 
 def control_stream(cid, part):
     rows = list(csv.DictReader(open(os.path.join(SWARM, 'controls', cid + '.tsv')), delimiter='\t'))
-    out, last = [], None
+    def inpart(line, p):
+        if p == 'all': return True
+        tx, ln = line.split('_L')[0], int(line.split('_L')[1])
+        if p in ('c2a', 'c2b'): return tx == 'c2' and ((ln <= 17) == (p == 'c2a'))  # c2 lines 1-17 = c2a (README)
+        return tx == p
+    out = []
     for r in rows:
-        if part != 'all' and not r['line'].startswith(part + '_'): continue
-        out.append(r['sign'])
+        if any(inpart(r['line'], p) for p in part.split('+')): out.append(r['sign'])
     return out
 
 

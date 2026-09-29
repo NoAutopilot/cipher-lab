@@ -1,0 +1,134 @@
+{
+ "mode": "held-out",
+ "fit": "c1+c2a",
+ "test": "c2b",
+ "key_sha1": "31eeda92ac1622110f0e0cbd8826a88716eb290b",
+ "key_signs": 120,
+ "key_signs_seen_in_fit": 120,
+ "N_test": 202,
+ "coverage_test": 0.9109,
+ "read_letters": 179,
+ "shuffles": 1000,
+ "stats": {
+  "fr_quad": {
+   "real": -5.9139,
+   "null_median": -6.1281,
+   "pct": 94.0,
+   "beats_all": false,
+   "strat_null_median": -5.99,
+   "pct_strat": 76.4,
+   "beats_all_strat": false
+  },
+  "fr_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "en_quad": {
+   "real": -5.859,
+   "null_median": -6.0483,
+   "pct": 91.0,
+   "beats_all": false,
+   "strat_null_median": -5.8544,
+   "pct_strat": 48.7,
+   "beats_all_strat": false
+  },
+  "en_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0225,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "pt_quad": {
+   "real": -5.6933,
+   "null_median": -5.9588,
+   "pct": 97.4,
+   "beats_all": false,
+   "strat_null_median": -5.7886,
+   "pct_strat": 79.0,
+   "beats_all_strat": false
+  },
+  "pt_dict": {
+   "real": 0.0223,
+   "null_median": 0.0,
+   "pct": 89.4,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 55.4,
+   "beats_all_strat": false
+  },
+  "es_quad": {
+   "real": -5.729,
+   "null_median": -5.9308,
+   "pct": 94.0,
+   "beats_all": false,
+   "strat_null_median": -5.7473,
+   "pct_strat": 58.3,
+   "beats_all_strat": false
+  },
+  "es_dict": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0225,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "la_quad": {
+   "real": -5.99,
+   "null_median": -6.1906,
+   "pct": 83.6,
+   "beats_all": false,
+   "strat_null_median": -6.0224,
+   "pct_strat": 60.5,
+   "beats_all_strat": false
+  },
+  "la_dict": {
+   "real": 0.0447,
+   "null_median": 0.0225,
+   "pct": 72.0,
+   "beats_all": false,
+   "strat_null_median": 0.0449,
+   "pct_strat": 44.8,
+   "beats_all_strat": false
+  },
+  "vocab": {
+   "real": 0.0,
+   "null_median": 0.0,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0169,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  }
+ },
+ "decoded_runs": [
+  "trethlnndneoieoehkdrhstls",
+  "n",
+  "ah",
+  "orht",
+  "neaon",
+  "etaneotkiea",
+  "en",
+  "dktaveaeaterofithrndepanyeio",
+  "hkitt",
+  "erhhldlonot",
+  "nhaehrhoaimtar",
+  "w",
+  "p",
+  "dtrdahge",
+  "iehledaoetdsewhrdh",
+  "eha",
+  "ovcdtxxetsefj",
+  "tevaaeu",
+  "glhesraoesedrtehrhde"
+ ]
+}

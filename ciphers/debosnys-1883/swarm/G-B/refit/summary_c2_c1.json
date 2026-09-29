@@ -1,0 +1,106 @@
+{
+ "fit": "c2",
+ "test": "c1",
+ "refits": 50,
+ "stats": {
+  "fr_quad": {
+   "real": -5.4668,
+   "refit_p99": -5.2826,
+   "refit_median": -5.6422,
+   "refits_below_real": 45,
+   "refit_pct_plain_median": 99.2,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 0
+  },
+  "fr_dict": {
+   "real": 0.0354,
+   "refit_p99": 0.1416,
+   "refit_median": 0.0,
+   "refits_below_real": 26,
+   "refit_pct_plain_median": 0.0,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 1
+  },
+  "en_quad": {
+   "real": -5.8421,
+   "refit_p99": -5.3211,
+   "refit_median": -5.6329,
+   "refits_below_real": 4,
+   "refit_pct_plain_median": 99.1,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 0
+  },
+  "en_dict": {
+   "real": 0.0,
+   "refit_p99": 0.1416,
+   "refit_median": 0.0354,
+   "refits_below_real": 0,
+   "refit_pct_plain_median": 89.5,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 0
+  },
+  "pt_quad": {
+   "real": -5.7812,
+   "refit_p99": -5.2997,
+   "refit_median": -5.5688,
+   "refits_below_real": 3,
+   "refit_pct_plain_median": 97.1,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 0
+  },
+  "pt_dict": {
+   "real": 0.0,
+   "refit_p99": 0.0619,
+   "refit_median": 0.0,
+   "refits_below_real": 0,
+   "refit_pct_plain_median": 0.0,
+   "refit_pct_plain_max": 97.6,
+   "refit_beats_all_both": 0
+  },
+  "es_quad": {
+   "real": -5.5844,
+   "refit_p99": -5.1764,
+   "refit_median": -5.5333,
+   "refits_below_real": 17,
+   "refit_pct_plain_median": 98.8,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 0
+  },
+  "es_dict": {
+   "real": 0.0,
+   "refit_p99": 0.1062,
+   "refit_median": 0.0354,
+   "refits_below_real": 0,
+   "refit_pct_plain_median": 87.1,
+   "refit_pct_plain_max": 99.9,
+   "refit_beats_all_both": 0
+  },
+  "la_quad": {
+   "real": -5.6574,
+   "refit_p99": -5.3021,
+   "refit_median": -5.7172,
+   "refits_below_real": 32,
+   "refit_pct_plain_median": 96.6,
+   "refit_pct_plain_max": 100.0,
+   "refit_beats_all_both": 0
+  },
+  "la_dict": {
+   "real": 0.0354,
+   "refit_p99": 0.1416,
+   "refit_median": 0.0531,
+   "refits_below_real": 7,
+   "refit_pct_plain_median": 84.9,
+   "refit_pct_plain_max": 98.9,
+   "refit_beats_all_both": 0
+  },
+  "vocab": {
+   "real": 0.0,
+   "refit_p99": 0.0885,
+   "refit_median": 0.0265,
+   "refits_below_real": 0,
+   "refit_pct_plain_median": 85.9,
+   "refit_pct_plain_max": 99.8,
+   "refit_beats_all_both": 0
+  }
+ }
+}
