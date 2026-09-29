@@ -5012,3 +5012,8 @@ now waits on ASKS 93 (needs: person). Vision calls this session: 9.
 What it says: at 14 letters of M-grade gloss, placed by x alone, the check cannot tell key v7 from a shuffled key; the slots also hold fewer signs
 (2-3) than letters (4), so the gloss-to-sign x placement on this run is looser than one letter per sign -- a reason the proper check (H317) needs a
 person's full reading with sign spans (ASKS 93's template asks for them). Not a negative on the key; no reading.
+
+## Campaign step H319 (29 Sept 2026, 13:09 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- the ASKS 93 desk pack gets H315/H316's frame (notes only)
+
+`images/person_pack_211r/README.md` gains a section: the 18 signs at their ruler ticks with the two passes' atlas codes, and the four gloss slots both
+model readers placed (forb-, comm-, elle, v?l with tick spans), stated as a frame to confirm or correct, not a reading; ASKS 93 is unchanged (open).

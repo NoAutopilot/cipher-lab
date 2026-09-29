@@ -19,3 +19,34 @@ few words (no letters needed); keep the gloss spelling as written.
     sign	two loops side by side on a stem	4	5	
 
 Then push, or paste the rows into ASKS.md row 93. Nothing here asks for a reading of the cipher itself.
+
+
+## Added 29 Sept 2026 by the campaign (H315/H316, runner 12) -- a frame to fill, not a reading
+
+Two blind model sign passes agree on 16 of 18 signs (H315). Their positions in ruler ticks (sheet px / 100) and atlas codes (two codes where the
+passes differ); a person's sign rows can simply confirm or correct these:
+
+| # | tick | atlas code |
+|---|---|---|
+| 1 | 2.8 | VBAR_A |
+| 2 | 4.4 | SBS |
+| 3 | 5.9 | HASH4 |
+| 4 | 7.9 | SBS |
+| 5 | 9.2 | EBR_B |
+| 6 | 10.6 | DBL |
+| 7 | 12.2 | 4STEM |
+| 8 | 13.9 | SBS |
+| 9 | 15.5 | OTHER |
+| 10 | 16.7 | OTHER |
+| 11 | 18.3 | DBL |
+| 12 | 19.9 | DBL |
+| 13 | 21.1 | EBR_A / EBR_B |
+| 14 | 22.3 | EBR_B |
+| 15 | 23.6 | DBL |
+| 16 | 25.1 | DBL |
+| 17 | 26.4 | VBAR_A / EBR_B |
+| 18 | 27.7 | VBAR_A |
+
+Two blind model reads of the gloss (H316) put four small words at the same places but could read only one fully -- **ticks 4.7-9.8 'forb...'
+(forble? / forbe?z), 13.2-17.0 'comm...', 21.1-23.5 'elle', 25.9-28.0 'v?l'**. They failed their own gate, so the gloss is unread: a person's
+reading of these four words (and any the models missed) is what ASKS 93 asks for, with from/to ticks as in the template above.
