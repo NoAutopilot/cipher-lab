@@ -4999,3 +4999,16 @@ words above f.211r's cipher run only (verbatim `family/passes/f211r_s{1,2}_gloss
 Descriptive only: both readers put four gloss words at the same four x spans (to within 10 px), agree on 'elle' (h/m) and on the letters they could
 read in the other three ('forb-', 'comm-', 'v-l'). That is the frame a person's reading fills; it is not a reading. H317 (the held-out cell check)
 now waits on ASKS 93 (needs: person). Vision calls this session: 9.
+
+## Campaign steps H320 and H318 (29 Sept 2026, 13:09 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.211r's run under key v7: 16/18 signs keyed; partial held-out check, no signal at this N (script-only)
+
+`family/h318_211r_partial.py` (design and read-outs in its docstring, written before running; result `family/h318_211r_partial_result.txt`, `--check` OK).
+- **H320 (coverage):** of the run's 18 signs (H315), 16 fall in classes key v7 gives a cell (VBAR_A g/t x3, SBS b/o x3, HASH4 d/q, EBR i/l or a/l/s x3,
+  DBL e/r/u x5, 4STEM a/c/e/n); the two OTHER have none. (Stated assumption: atlas EBR_A read with v7's form A, EBR_B with form B.) So a person's gloss
+  reading (ASKS 93) would test DBL, SBS, VBAR_A and EBR most -- none of them fitted on this leaf.
+- **H318 (partial check):** the gloss letters both H316 readers agreed (f o r b / c o m m / e l l e / u l; grade M) matched one-to-one, order-free, to
+  the signs under each slot's x span: forb- 1/4 over 3 signs, comm- 1/4 over 3, elle 2/4 over 2, v-l 0/2 over 2 -- **real 4 of 14**, against 1000 keys
+  with v7's cells permuted across the classes: mean 2.71, **p95 5**, max 6, >= real 226/1000 -> **"no signal at this N"**, as pre-stated.
+What it says: at 14 letters of M-grade gloss, placed by x alone, the check cannot tell key v7 from a shuffled key; the slots also hold fewer signs
+(2-3) than letters (4), so the gloss-to-sign x placement on this run is looser than one letter per sign -- a reason the proper check (H317) needs a
+person's full reading with sign spans (ASKS 93's template asks for them). Not a negative on the key; no reading.

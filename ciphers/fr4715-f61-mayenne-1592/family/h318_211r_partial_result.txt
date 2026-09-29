@@ -1,0 +1,5 @@
+H320 cell coverage (key v7 pooled): VBAR_A=gt SBS=bo HASH4=dq SBS=bo EBR_B=il DBL=eru 4STEM=acen SBS=bo OTHER=- OTHER=- DBL=eru DBL=eru EBR_A/B:EBR_B=als EBR_B=il DBL=eru DBL=eru VBAR_A/B:EBR_B=gt VBAR_A=gt
+signs with a v7 cell 16/18; no cell: OTHER OTHER
+H318 slots: forb-: 1/4 over 3 signs; comm-: 1/4 over 3 signs; elle: 2/4 over 2 signs; v-l: 0/2 over 2 signs
+real 4 of 14 letters; shuffled mean 2.71, p95 5, max 6; >= real 226/1000
+read-out: no signal at this N (real <= shuffled p95)
