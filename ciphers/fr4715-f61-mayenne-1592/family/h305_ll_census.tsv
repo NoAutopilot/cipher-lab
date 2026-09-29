@@ -7,4 +7,4 @@ f.108r/f.108v glosses (f108v3x_gloss*, f108vg_gloss*)	deDiou	many	many	partly	wr
 f.184r separate decipherment (f184r_clear_rec.tsv, 846 words)	deDiou	about 20 (mille, nouuelles, tellement, meilleur, rabille, laquelle, telle, embrouille, Jnutille ...)	about 10 (Il x9, Jnutille)	no (idx/line only)	wrong hand; no x
 f.101r / f.188r glosses (f101r_gloss*, f188r_pairs)	deDiou	elle, quelle, laquelle, nulle, telle ...	some	partly	wrong hand
 f.175r / f.177r clear passes (f175r_clearA_h170, f177r_clearA_*)	not established	celluy, seullement, voulloir ...	some	no (line text only)	hand not compared with f.61's on file
-# other LL tokens in the f61 hand: f.61 L05 16 (all passes); f.108v L06 29 (scripts/pass108gB_classes.tsv, pass B only, confidence l, s4 x 360); L02's opening mark on f.61 (read_call_U pass 1; H302/H304 descriptive)
+# other LL tokens in the f61 hand: f.61 L05 16 (all passes); f.108v L06 29 (scripts/pass108gB_classes.tsv, pass B only, confidence l, s4 x 360) -- NOT SUPPORTED (H312: half-cut 720-px band, pass A reads OTHER 'two stems, top only', the native H59 draft of f.108v codes no LL); L02's opening mark on f.61 (read_call_U pass 1; H302/H304 descriptive)

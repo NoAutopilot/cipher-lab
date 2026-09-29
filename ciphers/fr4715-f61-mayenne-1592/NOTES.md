@@ -4944,3 +4944,14 @@ five in-span C6, H261; French complete without it, H281), the pooled C6 = e gain
 why no letterform test is possible here (no digits in f.61's clear text; f.211r, the same-hand clear page, shows no numerals at 1600 px). A real test
 would take clear numerals by Mayenne's secretary as known answers in H310's forced-choice format. C43 is left out (keyed a/n, reads letters in the
 spans). No call, no value, no count change.
+
+## Campaign step H312 (29 Sept 2026, 12:58 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.108v's "second LL" is not supported; H305's note corrected (script-only)
+
+H305 noted a second LL token in f.61's hand at f.108v L06 29 (`scripts/pass108gB_classes.tsv`). Script-first, before any call: that code comes from the
+H34 "g" cut, **a 720-px region whose L06 is cut through its lower half** (NOTES H34: "L06 is cut through its lower half by the region's bottom edge"),
+every L06 sign at confidence l, "top only". **Pass A codes the same place OTHER, "two stems, top only"** (`scripts/pass108gA_classes.tsv` L06 31, s4 x
+302, against pass B's s4 x 360). **The H59 native-resolution reconciled draft of f.108v** (`family/passes/f108v3z_draft_reconciled.tsv`, 304 signs,
+both passes and the reconciler reading from `scripts/f61_atlas.tsv`, whose class list includes LL) **codes no LL anywhere on the leaf.** So there is no
+supported second LL token in this hand: one low-confidence code by one pass on a half-cut low-resolution band. The vision half of the row (H310's forced
+choice on that tile) is not run: a tile with the lower half of the sign missing would test nothing. Correction carried into
+`family/h305_ll_census.tsv`'s last line. LL on f.61 stays n = 1. No call, no value.
