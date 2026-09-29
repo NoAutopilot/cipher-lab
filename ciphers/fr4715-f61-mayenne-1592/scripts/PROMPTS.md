@@ -584,3 +584,8 @@ below, point at one cipher sign', and the answer form 'P01<TAB>yes', P01 to P43.
 H199's prompt verbatim (family/passes/PROMPTS_f176_f175.md section H199) on regenerated sheets: <scratch>/h193/sheet_01..03 (fresh natives f327 sha1
 a2b0d98e..., f328 4a13be67...; cut per sheets/f176r_full and f176v_full README; h193_items.tsv byte-identical) and <scratch>/h199/sheet_01..04
 (h199_items.tsv byte-identical). The runner did not look at the sheets. Scorer family/h230_h199_repro.py, committed with this section.
+
+## H231 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r bowl in H199's design, WRITTEN BEFORE THE CALL
+
+H199's prompt verbatim with part 2 = '<h231/sheet_01..02.jpg> (R01-R33)' and the reply rows 'Q01..Q60 then R01..R33'. Part 1 sheets = H230's regenerated
+<scratch>/h193/. Script family/h231_bowl_106r_h199.py, key family/h231_items.tsv. The runner did not look at the sheets.
