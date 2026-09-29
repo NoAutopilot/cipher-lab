@@ -518,3 +518,16 @@ A = a figure-4 stroke (an angled or triangular 4-head) rising above the hash, of
 B = two small loops (or small closed rings) sitting on the hash, with only short verticals, no 4-head;
 N = neither of these, not a hash-type sign, or cannot tell.
 Do not use any tools. Answer inline, one line per tile, exactly in the form 'V01<TAB>A' (A, B or N), V01 to V37 in order, and nothing else."
+
+## H222 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- matched-scale free sort: f.108 hash forms A/B with f.101r H24 and HASH4 d/q, WRITTEN BEFORE THE CALL
+
+Sheets: <scratch>/h222/sheet_01.jpg, sheet_02.jpg (family/h222_loop_h24.py tiles; key family/h222_items.tsv). Disclosure: the runner looked at sheet_01
+twice before the call to fix marker geometry (a first f.101r window cut signs off where rows drift; one f.108 marker was off where the window clamps).
+On that look the runner's own impression was that f.108's looped signs and f.101r's "2 joined to a hash" look different; the score is the reader's.
+
+Prompt (verbatim):
+"You are looking at two sheets of numbered image tiles (W01-W22) cut from 16th-century French cipher letters, possibly in different hands and at
+slightly different scales. In every tile two red triangles, one above and one below, point at one cipher sign (ignore ordinary handwriting and any
+thin red tick). Every target sign is built on a hash or cross-hatch. Sort ONLY the pointed-at signs into 2 to 4 groups by the shape of the sign itself
+(what is drawn on or attached to the hash), not by ink, scale, blur or hand. Do not use any other tools. Answer inline: first one line per group,
+'GROUP <letter>: <one-sentence criterion>'; then one line per tile, exactly 'W01<TAB><group letter>', W01 to W22 in order, and nothing else."
