@@ -4134,3 +4134,12 @@ Stopping near the context line. Since the 03:14 handover, H216 (f.108r L04-L06 b
 runner 9: **H219** (script-only: a TEST key, v5 + the two shape splits, on f.61's spans and f.108r's overlay, H196's design), **H220** (one vision call:
 does the looped hash occur on fr.3982 f.101r, whose HASH4 positions carry period letters? the only route found to a period-letter test of the hash
 split), **H221** (bowl and hash forms on fr.3983 f.106r, the other fr.3983 leaf on disk, to see whether its pass codes follow shape). Spent today 46.1/600.
+
+## Campaign step H219 (29 Sept 2026, 03:47-03:50 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- a shape-rule TEST key keeps every known letter but one (script-only)
+
+`family/h219_shape_testkey.py` (committed before the run; result `family/h219_shape_testkey_result.txt`, `--check` OK), H196's design. On the span lines
+the reader codes coincide with shape (H194, H202), so the shape rule there is 4TRI c/p, C43 a/n, 4STEM a/n (v5: c/p/t, a/n, a/c/e/n). **f.61 five
+spans 53/55 under v5 and under the test key; f.108r overlay 74/84 under both (2000 permuted keys: none reach either); the one known exception is H202's
+S14, a no-bowl 4TRI at letter c, which the shape rule reads a/n (-1). Pre-stated gate (no loss on f.61, at most one on f.108r): PASS.** The shape rule is
+handed to a verifier as a v6 candidate: 4-family read by the blind bowl answer (bowl c/p, no bowl a/n), which narrows v5's 4TRI (drops t) and 4STEM
+(drops c/e, moving f.108v's bowl 4STEM to c/p by shape). HASH4's form split (H212-H215) is not in this test: no HASH4 lies on a span line. No merge.

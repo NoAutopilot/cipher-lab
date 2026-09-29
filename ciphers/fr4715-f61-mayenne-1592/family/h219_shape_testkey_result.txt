@@ -1,0 +1,7 @@
+v5 cells: 4TRI c/p/t, C43 a/n, 4STEM a/c/e/n; test key: 4TRI c/p, C43 a/n, 4STEM a/n
+f.61 five spans: v5 53/55 = 0.964; 2000 permuted p95 0.455 max 0.727; >= key 0/2000
+f.61 five spans: test 53/55 = 0.964; 2000 permuted p95 0.436 max 0.673; >= key 0/2000
+f.108r overlay (EBR form A): v5 74/84 = 0.881; 2000 permuted p95 0.429 max 0.726; >= key 0/2000
+f.108r overlay (EBR form A): test 74/84 = 0.881; 2000 permuted p95 0.405 max 0.667; >= key 0/2000
+known exception outside the code-level score: f.108r overlay S14 (H202), a no-bowl 4TRI at letter c -> the shape rule reads a/n: -1
+gate: loss on f.61 spans 0 (need 0), on f.108r 1 including S14 (need <= 1) -> PASS: hand to a verifier as a v6 candidate
