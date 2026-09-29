@@ -422,7 +422,7 @@ agreement and sequence gain, no glyph link). The meter: mechanical from the comm
 Verifier: PARENT WORKER VERIFY-F61-V6 (account 3; Opus), 04:12-04:4x UTC by the container clock; separate from campaign runner 8
 (session_011Taenrv3JSdk7VjpiBjids, retired) and runner 9. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v6.md`. Working files, each
 with a `--check`: `verify_v6/`. Eight Opus subagent calls (three blind shape readers, one judge control, two judge targets; prompts
-committed first in `verify_v6/PROMPTS.md`, 919fe064 and 8e51a62a), 2 Gallica requests (canvases 327, 328; `verify_v6/requests.log`).
+committed before the calls in `verify_v6/PROMPTS.md`, 919fe064 and 8e51a62a), 2 Gallica requests (canvases 327, 328; `verify_v6/requests.log`).
 Nothing edited in `family/key_period_v5.tsv`, `CAMPAIGN.md` or the runner's files. H209-H227 (the hash family) are not audited.
 
 **Claim under audit.** The 4-family shape rule (runner 8, ROOM 02:50 and 03:48 UTC): a figure-4 sign whose stem ends in a closed bowl
