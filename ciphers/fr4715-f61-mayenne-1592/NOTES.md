@@ -4455,3 +4455,12 @@ no drawing. Leads for the verifier or a later test (CROSS a/n; C6 = *pour*?), no
 f.188r's mis-coded rows; the looped hash a separate unread row) is **endorsed by V7**; the bowl rule is endorsed in part by V6. **Still pending audit:** ZHOOK =
 the 2# sign (H235; V7 calls it a grade question for ZHOOK's row) and 4PI's two signs (H233/H239/H240; with 4PI a/n on f.61 the V7 meter 12/58/4/25 would read
 12/60/2/25). Notes only.
+
+## Campaign step H254 (29 Sept 2026, 05:51 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's ZHOOK is the 2# sign, at overlay letter i
+
+Pre-registered (PROMPTS section H254; `family/h254_zhook_108r.py`, key `family/h254_items.tsv`, before the call; sheet not seen). Targets: the 7 pass-A ZHOOK on f.108r
+L02/L03 (f.61's hand), each at an overlay letter i (Tomokiyo's reprint of the leaf's period gloss, aligned by f61crib.align under v5 -- caveat: v5 carries ZHOOK
+i/x, so the pairing can follow the code); anchors 12 (4-head 6, 2# 6). One Opus call (`family/passes/h254_reply.tsv`); result `family/h254_zhook_108r_result.txt`
+(`--check` OK): **anchors 11/12 PASS; f.108r ZHOOK: D (2#) 6, N 1 -> "f.108r's ZHOOK is the 2# sign"**.
+With H235 (f.61's ZHOOK sorts with the 2#) and VERIFY-F61-V7 (2# = i/x on f.101r/f.188r), the glyph link now runs through f.61's own hand: the sign the readers
+code ZHOOK in this hand is the 2# sign, and its same-hand period gloss reads it i. For the ZHOOK grade question V7 left open; nothing merged.

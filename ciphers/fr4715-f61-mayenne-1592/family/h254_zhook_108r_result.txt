@@ -1,0 +1,3 @@
+anchors: 11 of 12 (gate >= 10): PASS
+f.108r ZHOOK: L03 x1485 overlay i -> D; L02 x729 overlay i -> D; L02 x2646 overlay i -> N; L02 x648 overlay i -> D; L02 x1742 overlay i -> D; L02 x1364 overlay i -> D; L03 x2430 overlay i -> D
+read-out: D 6 of 7 -> f.108r's ZHOOK is the 2# sign
