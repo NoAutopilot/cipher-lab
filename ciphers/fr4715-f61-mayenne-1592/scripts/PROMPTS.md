@@ -589,3 +589,13 @@ a2b0d98e..., f328 4a13be67...; cut per sheets/f176r_full and f176v_full README; 
 
 H199's prompt verbatim with part 2 = '<h231/sheet_01..02.jpg> (R01-R33)' and the reply rows 'Q01..Q60 then R01..R33'. Part 1 sheets = H230's regenerated
 <scratch>/h193/. Script family/h231_bowl_106r_h199.py, key family/h231_items.tsv. The runner did not look at the sheets.
+
+## H235 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61 ZHOOK vs the period 2# sign, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h235/sheet_01.jpg (family/h235_zhook_2hash.py tiles; key family/h235_items.tsv). Disclosure: the hypothesis came from the runner's look at
+images/f61sheet_L01.jpg and f61sheet_L11.jpg (to place H233's tokens), where L11's ZHOOK looked like a "2#"; the runner did not look at the H235 sheet.
+Prompt (verbatim): "Read the image /…/h235/sheet_01.jpg with your image reader only; use no other tool. It holds 19 numbered tiles (V01-V19) cut from
+16th-century cipher letters, possibly in different hands, all scaled to the same height. In each tile two black triangles, one above and one below,
+point at the centre sign. Sort ONLY the centre signs into 2 to 4 groups by the shape of the sign itself (not ink, blur, size or hand); a tile whose
+centre sign cannot be told goes to 'unclear'. Answer inline: first one line per group, 'GROUP <letter>: <one-sentence criterion>'; then one line per
+tile, exactly 'V01<TAB><group letter or unclear>', V01 to V19 in order, and nothing else."
