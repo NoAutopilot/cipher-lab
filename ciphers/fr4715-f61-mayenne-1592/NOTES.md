@@ -4936,3 +4936,11 @@ So the instrument separates a capital I's lead-in from an l's upright on clear l
 against pass 2 ('Il') for L02's opening mark stays undecided by the runner's instruments, and is left to the verifier's own eye on the two tiles
 (H302's sheet, family/h311_items.tsv positions). Not re-run with another wording (rule 3's one-knob lesson). No cell or count change. Vision calls
 this session: 5.
+
+## Campaign step H303 (29 Sept 2026, 12:56 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- the digit-shaped C6 null, one paragraph (notes only)
+
+Written into `family/V9_PAGE.md` (the verifier's page), the paragraph "C6, the digit-shaped null (H303)": the markup evidence (Tomokiyo's dash at all
+five in-span C6, H261; French complete without it, H281), the pooled C6 = e gaining nothing on f.61 and no glyph link to the glossed C6 (H237) -- and
+why no letterform test is possible here (no digits in f.61's clear text; f.211r, the same-hand clear page, shows no numerals at 1600 px). A real test
+would take clear numerals by Mayenne's secretary as known answers in H310's forced-choice format. C43 is left out (keyed a/n, reads letters in the
+spans). No call, no value, no count change.
