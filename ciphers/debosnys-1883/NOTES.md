@@ -955,3 +955,23 @@ each page's first line dropped 10 of 50 (p 0.0002); both 9 of 45 (expected 2.18,
 the same four signs (HEART, PIC_SUN, PIC_LEAF, PIC_ANCHOR): 4 of 20 vs expected 0.88, p 0.008 -- a second reader of
 the same image, not independent evidence of the statistic, but no transcription artefact on our side. H31 stands as a
 layout-robust class effect. Grade S; nothing read; status `open`.
+
+### H34, long repeats (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU only)
+
+`scripts/h34_long_repeats.py` (`h34_long_repeats.json`) and `scripts/h34b_bracket.py` (`h34_bracket.json`). Settled text,
+punctuation dropped, pages concatenated: N 1147, K 157. Distinct n-grams occurring twice or more: **3-grams 14, 4-grams
+1 (X VENUS PCT-SLASH X, c1 and c2), 5-grams 0.** Null (a), 1,000 within-line shuffles: 3-grams 8-21 (median 14),
+4-grams 0-2 -- the target has no more repeated sign sequences than its own lines with the order scrambled. Control
+(b), the H13 mixed letters+syllables design (fr19, q 0.3) at the target's N and K with invented-type noise: 3-grams
+43-77, 4-grams 7-29 at 10 pct noise; 34-58 and 2-16 at 20 pct (K-matched, bracketing the settled drafts' measured
+8.5-18 pct, rule 3); the 30 pct and f 1.0 at 20 pct conditions overshoot K (180-353) and are not matched, reported only
+in the json. So **a design writing each French unit with one sign does not fit the repeat counts at the measured
+noise**: it repeats three to four times as many trigrams as the target. The homophonic variant -- the same design with
+every unit of count >= 4 written by h equiprobable variant signs, K re-matched -- brings the counts into range: h 2 gives
+3-grams 12-30, 4-grams 0-6 (target inside at 0, 10 and 20 pct noise); h 3 gives 3-15 / 0-3 (inside at 0 and 20 pct).
+Reading: the text is either written with homophones (about two or three signs per frequent unit, chosen freely) or
+has no repeated word sequences at all (a large code without recurring phrases, or a text that is not language);
+deterministic one-sign-per-unit designs are excluded by this control at the measured noise. This matches H14's
+"deliberately spread homophones" shape from the single-sign statistics, now from sequence structure. Grade S;
+nothing read; status `open`. Named next step H38: does the homophonic mixed design also fit H3's seven single-sign
+statistics pooled (the fit H13 never reached), and at which h.
