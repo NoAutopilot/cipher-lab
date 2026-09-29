@@ -5450,3 +5450,25 @@ link that is not our statistic. No call.
 
 A paragraph at the foot of `family/V9_PAGE.md` asks the verifier lane to rule on `family/PROPOSAL_v8_4tri.md` before any key v8, with the witnesses and
 the open objections; the matching ROOM line is posted. No call, no class, no cell.
+
+## Campaign step H367 (29 Sept 2026, 17:16-17:22 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.61's own 4TRI is the bowl sign: 5 of 6 at fixed positions, H194 reproduces 14/15 (1 vision call)
+
+`family/h367_bowl_f61.py`, key `family/h367_items.tsv`, prompt note H367 in `family/passes/PROMPTS_f176_f175.md` (H359's prompt verbatim), committed
+before the call. Natives f327/f328 fetched once each (sha1 a2b0d98e / 4a13be67 as H230/H359; 2 Gallica requests, requests.log); H193's 60 strips
+regenerated, h193_items.tsv byte-identical. Targets: all 18 4-family signs of `scripts/f61_positions_all.tsv` (6 4TRI, 9 C43, 1 4STEM, 2 4PI; L10
+has none), cut from the native f.61 region image (verify_v9's source and x mapping). H194 had asked the same question of 15 of them in a different
+design (count-matched span sheets; L01 left out), so the call doubles as its reproduction at fixed positions. **Disclosed change before the call:** the
+runner looked at the sheet for marker placement; markers sat on the intended signs, but H359's -60/+55 window clipped every stem below the line, so
+the window moved to -45/+92 (the runner has seen the target shapes; the reader has not). One blind Opus call, reply `family/passes/h367_reply.tsv`;
+result `family/h367_bowl_f61_result.txt` (`--check` OK):
+- **Control 19/20 f.176v anchors PASS (gate 17).**
+- **f.61 4TRI: bowl 5, no bowl 1 (yes-share 0.83); C43 no bowl 9/9; 4STEM no 1/1; 4PI no 2/2.** Pre-stated read-out: **"f.61 4TRI is the bowl sign"**.
+- 4TRI answered no (its cell would move under PROPOSAL_v8_4tri.md): **L05/14** only. H194 answered yes there, and it sits inside Tomokiyo's span S3
+  where his published letter is c (H194 result) -- the one disagreement between the two reads is against the published letter, so it is more likely a
+  reading slip of this call than a no-bowl sign; the verifier decides.
+- C43/4STEM/4PI answered yes: none. **H194 agreement 14/15 -> "H194 reproduces"**; L01's three signs (C43 no, 4TRI yes, 4PI no) are read for the first
+  time in this campaign and follow the same pattern.
+What it means: in f.61's own hand (the target leaf), the readers' 4TRI code is the bowl sign and C43 the no-bowl sign almost without exception -- unlike
+de Diou's f.124r (75% no-bowl, H360) and f.101r (64%, H365), and unlike f.108v, where the same hand's bowl sign was coded 4STEM (H199). So the
+PROPOSAL_v8_4tri.md split, if the verifier adopts it, would move at most one f.61 position (L05/14) and probably none; f.61's 4TRI tokens sit in the
+bowl (c/p) half of the proposed split. Evidence for VERIFY-F61-V11; no key, cell or grade changed. 1 call, cost estimate 1.5 USD.

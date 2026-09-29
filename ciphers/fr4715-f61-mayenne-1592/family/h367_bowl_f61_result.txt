@@ -1,0 +1,25 @@
+control: 19 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+item	code	line	pos	answer	h194
+R15	C43	L01	3	no	-
+R18	4TRI	L01	6	yes	-
+R02	4PI	L01	12	no	-
+R12	4TRI	L03	7	yes	yes
+R10	C43	L03	8	no	no
+R13	4TRI	L03	10	yes	yes
+R09	C43	L03	13	no	no
+R08	4TRI	L05	6	yes	yes
+R07	C43	L05	9	no	no
+R05	C43	L05	11	no	no
+R04	C43	L05	13	no	no
+R03	4TRI	L05	14	no	yes
+R16	C43	L08	2	no	no
+R17	C43	L08	7	no	no
+R01	4TRI	L08	11	yes	yes
+R06	C43	L11	5	no	no
+R14	4STEM	L11	8	no	no
+R11	4PI	L11	9	no	no
+by code: 4PI no 2; 4STEM no 1; 4TRI no 1 yes 5; C43 no 9
+read-out: 4TRI yes-share 0.83 no-share 0.17, C43 no-share 1.00 -> f.61 4TRI is the bowl sign
+4TRI answered no (cell would move under PROPOSAL_v8_4tri.md): L05/14
+C43/4STEM/4PI answered yes: none
+H194 agreement: 14/15 of the positions answered yes/no both times -> H194 reproduces
