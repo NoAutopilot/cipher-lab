@@ -3581,3 +3581,20 @@ them from the natives by the recipes in `family/sheets/f176r_full/README.md`, `f
 runner writes the files from the agent's hand-back message. Scripts: `family/build_f176_key.py` (clear files `f177r_clearA_*`,
 `f177v_clearA_*` in line order; extend to fol. 178r and f.176v the same way). For the verifier: `scripts/H66_PAGE.md` section H168-H180
 plus H181-H182.
+
+## Campaign step H177c stage 1 (29 Sept 2026, 00:20-00:33 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v vs fol. 177v: GATE FAIL
+
+Pre-registered in `family/passes/PROMPTS_f176_f175.md` section H177c (c7478950), builder `family/build_f176v_key.py` pushed before the
+calls; `key_period_f176.tsv`, `build_f176_key.py` and v4 untouched (VERIFY-F61-V5 is auditing them). Natives canvases 328, 330, 331 fetched
+once each (requests.log). f.176v cut into 45 cipher rows (`family/sheets/f176v_full/README.md`; crops not committed). Two Opus vision calls:
+blind sign passes A/B of f.176v L01-L08 (`family/passes/f176v_signs{A,B}_L01-L08.tsv`, 515 rows each, written verbatim from the inline
+replies). Pass A codes C43 where pass B codes 4TRI throughout (55 columns), as on f.176r.
+Dry run of control (b) before the calls, on f.176r's own L01-L08: fol. 177r 0.569 vs fol. 177v 0.384 (the control separates passages).
+
+**Result: 517 signs, consensus 0.80, N 413. fol. 177v from V01 0.339 vs (a) f.184r 0.373, (b) fol. 177r from L01 0.344; margin -0.034; GATE
+FAIL** (`family/build_f176v_key_result.txt`, `--check` OK). No class shows the period signal f.176r showed (VBAR_B s 10/44 against 57/72 on
+f.176r; EBR l 4/23 against l 43/55). So f.176v's text is not shown to start at fol. 177v V01, and nothing is keyed. Per the pre-registration,
+no other start line was tried under this row. `key_period_f176v.tsv` holds the unendorsed DP pairs of this failed run only and is not a key.
+Possible readings, untested: f.176r's text runs further into fol. 177v than the 0.8 rule puts it (stages 2c-2d used only N 2,476 letters,
+so fol. 177v was never tested against f.176r); f.176v is deciphered on fol. 178r or elsewhere; or it is not deciphered at all. Next: H177d,
+a pre-registered location scan with f.176r as positive control.
