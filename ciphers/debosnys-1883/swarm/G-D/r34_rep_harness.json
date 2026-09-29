@@ -1,0 +1,9 @@
+{
+ "mode": "harness",
+ "N": 658,
+ "best": "R6",
+ "score": 4.31,
+ "null_median": 5.27,
+ "null_p95": 7.36,
+ "p_ge": 0.8
+}
