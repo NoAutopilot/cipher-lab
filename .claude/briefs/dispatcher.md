@@ -27,3 +27,6 @@ You are the cipher-lab dispatcher, the standing poller on the second account (SP
   accounts for the owner), retitles and archives what it can; a session it cannot archive is noted in the LEDGER row.
 - Latency: up to an hour between a row and its worker, so long-box jobs and standing campaign runners go to the
   second account; short urgent jobs (runner PR landings, gate checks) stay on the owner account.
+
+
+**Model under a warning (29 Sept 2026 02:2x UTC).** A row that names Fable is spawned on Fable while Fable answers. `allowed_warning` on either window is not a reason to spawn on Opus 5.5; only a failed Fable turn or `rejected` is (BUDGETS.md "Model choice under a warning"). Never below Opus 5.5.
