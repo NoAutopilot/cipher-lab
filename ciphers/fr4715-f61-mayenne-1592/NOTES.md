@@ -4263,3 +4263,16 @@ The difference from H199's own call: H199 put H193's 60 f.176v strips (Desportes
 may depend on that context, and **H199 -- which H201 (sequence gain), H208 (judge) and H219 (test key) build on -- has not been reproduced.** This is not
 a refutation of the bowl rule (f.176r/v, f.61 and f.101r answers came from their own calls), but the f.108v leg needs a reproduction before a verifier
 relies on it. H230 (rank 1) reruns H199's exact prompt, sheets and control in one fresh call. Nothing merged.
+
+## Campaign step H230 (29 Sept 2026, 05:18-05:34 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H199 reproduces under its own prompt; the bowl answers depend on the call's context
+
+Pre-registered (PROMPTS section H230; `family/h230_h199_repro.py`, commit 33dca818, before the call; the runner did not look at the sheets). H193's 60 control
+strips regenerated from fresh natives (f327 sha1 a2b0d98e..., f328 4a13be67...; 2 requests) and H199's 74 f.108v strips, both item keys byte-identical;
+H199's verbatim prompt in one fresh Opus call (`family/passes/h230_reply.tsv`). Result `family/h230_h199_repro_result.txt` (`--check` OK):
+- **Control 18/20 PASS; Q items agree with H199's own 55/60.**
+- **R items agree with H199 63/68 = 0.93; H199's 19 bowl-yes answers, 15 yes again (0.79).** By code: 4STEM yes 15 / no 10 (H199 19 / 2, n 4), 4TRI no 6,
+  C43 no 40 / yes 1. Pre-stated read-out: **"H199 reproduces".**
+What it says: H199's f.108v reading holds when the reader sees H193's f.176v strips (large, clear bowls in Desportes's hand) in the same call; without
+them (H221, H229) the same f.108v signs were read "no bowl" 9 times of 10. So the bowl question on f.61's hand is context-dependent: a small bowl is
+called only against clear exemplars. This corrects the 05:1x flag -- H199 is reproduced, with that caveat for the verifier (every bowl call should
+carry H193's strips). H231 runs f.106r's bowl in H199's design. Nothing merged.

@@ -1,0 +1,6 @@
+control: 18 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+Q items agree with H199's own Q answers: 55/60
+R items: agreement with H199 63/68 = 0.93 (answered yes/no both times); H199 yes 19, yes again 15 = 0.79
+this reply by reconciled code: 4STEM no 10 yes 15; 4TRI no 6; C43 no 40 yes 1; OTHER n 1; ZHOOK n 1
+H199's own: 4STEM n 4 no 2 yes 19; 4TRI no 6; C43 no 41; OTHER n 1; ZHOOK n 1
+read-out: H199 reproduces
