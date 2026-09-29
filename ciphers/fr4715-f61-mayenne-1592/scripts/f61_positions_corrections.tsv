@@ -1,6 +1,8 @@
 # f.61 transcription corrections (runner 15, H407/H408, 29 Sept 2026). Pass files are never edited; scripts that want the corrected sequence
 # apply these rows. Each row: the blind confirmation that licenses it (family/h407_span_miss_result.txt, gates A 9/9, B 6 and 4).
-line	pos	action	class	evidence
-L07	4	relabel	C43	H407 part A: L07/4 = the 43 sign at 3 of 3 windows (reader code BETA; Tomokiyo 'a' in 'jal')
-L03	16	insert	PHI	H407 part B: 7 cipher signs from L03/10 to the clear 'a les entendre' (pass A 6), the last a loops-on-stem sign
-L04	2	delete	OTHER	H414: L04/2 (reader code OTHER) is punctuation / not a cipher sign at 3 of 3 windows (gate 17/18): the dot before "Mais"
+# Merged by F61-FAMILY-14 (29 Sept 2026): only verifier-endorsed rows (AUDIT.md VERIFY-F61-V12 'What should merge', VERIFY-F61-V13: no row); held, not merged: L11/8 CROSS, L01/11, L02 opening LL.
+line	pos	action	class	evidence	verifier	date
+L07	4	relabel	C43	H407 part A: L07/4 = the 43 sign at 3 of 3 windows (reader code BETA; Tomokiyo 'a' in 'jal')	VERIFY-F61-V12 (kept; V13 concurs)	29 Sept 2026
+L03	16	insert	PHI	H407 part B: 7 cipher signs from L03/10 to the clear 'a les entendre' (pass A 6), the last a loops-on-stem sign	VERIFY-F61-V12 (kept; V13 concurs)	29 Sept 2026
+L04	2	delete	OTHER	H414: L04/2 (reader code OTHER) is punctuation / not a cipher sign at 3 of 3 windows (gate 17/18): the dot before "Mais"	VERIFY-F61-V12 (kept; V13 concurs)	29 Sept 2026
+L05	1	relabel	LOOPBAR	H411 + H413 W3 + VERIFY-F61-V12 C1 x3 + C2 (6 of 8 reads LOOPBAR; Tomokiyo's dash, null)	VERIFY-F61-V12 (V13 concurs)	29 Sept 2026

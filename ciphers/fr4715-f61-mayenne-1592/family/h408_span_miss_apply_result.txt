@@ -1,4 +1,4 @@
 f.61 five spans, key v8 f.61 reading key, uncorrected: 53/55 = 0.964; 2000 permuted keys mean 0.277 p95 0.418; >= key 0/2000
 f.61 five spans, key v8 f.61 reading key, with every correction in scripts/f61_positions_corrections.tsv: 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000
 meter, key v8 as merged, uncorrected: firm 12 / two-way 59 / wider 2 / unread-or-null 26 of 99
-meter, key v8 as merged, with every correction in scripts/f61_positions_corrections.tsv: firm 12 / two-way 60 / wider 1 / unread-or-null 26 of 99
+meter, key v8 as merged, with every correction in scripts/f61_positions_corrections.tsv: firm 12 / two-way 59 / wider 1 / unread-or-null 27 of 99

@@ -31,14 +31,18 @@ def spans(k, l61):
         for s, l, mk in s61: x += align(mk.translate(b.FOLD), l61[l], kk)[0]
         cs.append(x)
     cs.sort(); return mt, tot, sum(cs) / 2000 / tot, cs[1899] / tot, sum(x >= mt for x in cs)
+LET = {"C43": "a/n", "PHI": "e/r", "LOOPBAR": "-"}   # F61-FAMILY-14: every row of the corrections file, not only H407's two (V12's L05/1 LOOPBAR null)
+def apply_meter(d):
+    for c in corr():
+        k = (c["line"], c["pos"])
+        if c["action"] == "relabel":
+            r = next(r for r in d if (r["line"], r["pos"]) == k); r["class"], r["period_letters"] = c["class"], LET[c["class"]]
+        elif c["action"] == "insert": d.append({"line": c["line"], "pos": c["pos"], "class": c["class"], "period_letters": LET[c["class"]]})
+        elif c["action"] == "delete": d = [r for r in d if (r["line"], r["pos"]) != k]
+    return d
 def meter(corrected):
     d = list(csv.DictReader(open(f"{m.F}/f61_decode_period_v4_frac0.1_sbs.tsv"), delimiter="\t")); k6 = m.bk.load_key_v6(ebr="B", f61=True)
-    if corrected:
-        for r in d:
-            if (r["line"], r["pos"]) == ("L07", "4"): r["class"], r["period_letters"] = "C43", "a/n"
-        d.append({"line": "L03", "pos": "16", "class": "PHI", "period_letters": "e/r"})
-        dels = {(r["line"], r["pos"]) for r in corr() if r["action"] == "delete"}   # H415: rows added after H408 (L04/2 punctuation)
-        d = [r for r in d if (r["line"], r["pos"]) not in dels]
+    if corrected: d = apply_meter(d)
     def v8(r):
         c = r["class"]
         if c == "4PI": return "a/n" if r["line"] == "L11" else "-"
