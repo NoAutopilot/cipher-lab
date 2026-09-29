@@ -1,0 +1,500 @@
+# written verbatim from the inline reply (runner 7 extract.py)
+line	pos	sign	conf	segment	x_px	note
+L09	1	VBAR_B	m	s1	100	
+L09	2	VBAR_A	m	s1	160	
+L09	3	PHI	m	s1	190	
+L09	4	PHI	m	s1	230	
+L09	5	C43	m	s1	290	
+L09	6	C43	m	s1	370	
+L09	7	VBAR_A	m	s1	420	
+L09	8	INF	m	s1	480	alt SBS
+L09	9	PHI	m	s1	520	
+L09	10	PHI	m	s1	560	
+L09	11	EBR_B	m	s1	590	
+L09	12	INF	m	s1	660	alt SBS
+L09	13	PHI	m	s1	700	
+L09	14	INF	m	s1	770	alt SBS
+L09	15	VBAR_A	m	s1	825	
+L09	16	HASH4	l	s1	880	alt 4STEM
+L09	17	PHI	m	s1	935	
+L09	18	VBAR_B	m	s1	985	
+L09	19	PHI	m	s1	1030	
+L09	20	ZHOOK	l	s1	1075	
+L09	21	PHI	m	s1	1120	
+L09	22	4TRI	m	s1	1170	
+L09	23	INF	m	s1	1230	alt SBS
+L09	24	VBAR_A	m	s1	1290	
+L09	25	ZHOOK	l	s1	1340	alt 4STEM
+L09	26	PHI	l	s1	1385	cut at edge; seen whole in s2
+L09	27	C43	m	s2	185	
+L09	28	VBAR_B	m	s2	240	
+L09	29	4TRI	l	s2	290	
+L09	30	PHI	m	s2	310	
+L09	31	PHI	m	s2	360	
+L09	32	OTHER	l	s2	415	long-s shape, tall stroke with top hook; alt BETA
+L09	33	4TRI	m	s2	445	
+L09	34	VBAR_A	m	s2	540	
+L09	35	PHI	m	s2	575	
+L09	36	VBAR_B	m	s2	615	
+L09	37	OTHER	l	s2	710	ampersand-like loop with trailing c-stroke; alt CH
+L09	38	OTHER	l	s2	770	vertical stem crossed by two or three short bars with small caret on top
+L09	39	C43	m	s2	830	
+L09	40	PHI	m	s2	880	
+L09	41	C43	m	s2	935	
+L09	42	PHI	m	s2	1010	
+L09	43	INF	m	s2	1070	alt SBS
+L09	44	VBAR_B	m	s2	1110	
+L09	45	HASH4	l	s2	1180	
+L09	46	PHI	m	s2	1230	
+L09	47	C43	m	s2	1290	
+L09	48	C43	m	s2	1370	
+L09	49	PHI	l	s3	120	
+L09	50	C43	m	s3	160	
+L09	51	EBR_B	m	s3	215	
+L09	52	PHI	m	s3	250	
+L09	53	EBR_B	m	s3	310	
+L09	54	PHI	m	s3	345	
+L09	55	ZHOOK	l	s3	385	
+L09	56	VBAR_B	m	s3	430	
+L09	57	ZHOOK	l	s3	500	
+L09	58	PHI	m	s3	545	
+L09	59	HASH4	l	s3	600	
+L09	60	PHI	m	s3	635	
+L09	61	C43	m	s3	690	
+L09	62	INF	l	s3	720	alt SBS
+L09	63	PHI	m	s3	750	
+L10	1	C43	m	s1	120	
+L10	2	ZHOOK	l	s1	170	
+L10	3	PHI	m	s1	235	
+L10	4	VBAR_B	m	s1	320	
+L10	5	INF	m	s1	370	alt SBS
+L10	6	PHI	m	s1	415	
+L10	7	EBR_B	m	s1	465	
+L10	8	PHI	m	s1	505	
+L10	9	VBAR_B	m	s1	550	
+L10	10	HASH4	l	s1	600	alt 4TRI
+L10	11	ZHOOK	l	s1	685	
+L10	12	VBAR_B	m	s1	750	
+L10	13	4TRI	m	s1	800	
+L10	14	PHI	m	s1	850	
+L10	15	INF	m	s1	895	alt SBS
+L10	16	PHI	m	s1	935	
+L10	17	VBAR_B	m	s1	990	
+L10	18	HASH4	l	s1	1060	
+L10	19	ZHOOK	l	s1	1130	
+L10	20	PHI	m	s1	1175	
+L10	21	INF	m	s1	1225	alt SBS
+L10	22	VBAR_B	m	s1	1285	
+L10	23	C43	l	s1	1340	alt 4TRI
+L10	24	ZHOOK	l	s1	1385	
+L10	25	VBAR_A	m	s2	160	
+L10	26	C43	m	s2	230	
+L10	27	INF	m	s2	285	alt SBS
+L10	28	PHI	m	s2	330	
+L10	29	4TRI	m	s2	380	
+L10	30	HASH4	l	s2	460	
+L10	31	INF	m	s2	500	alt SBS
+L10	32	PHI	m	s2	550	
+L10	33	EBR_B	m	s2	600	
+L10	34	PHI	m	s2	635	
+L10	35	PHI	m	s2	675	
+L10	36	VBAR_A	m	s2	730	
+L10	37	PHI	m	s2	770	
+L10	38	PHI	m	s2	810	
+L10	39	VBAR_A	m	s2	855	
+L10	40	ZHOOK	l	s2	895	
+L10	41	EBR_B	m	s2	945	
+L10	42	VBAR_B	m	s2	1010	
+L10	43	C43	m	s2	1060	
+L10	44	INF	m	s2	1100	alt SBS
+L10	45	VBAR_A	m	s2	1150	
+L10	46	OTHER	l	s2	1215	figure-8 / y-shape, two loops stacked without stem; alt BETA
+L10	47	ZHOOK	l	s2	1290	
+L10	48	PHI	m	s2	1330	
+L10	49	C43	l	s2	1380	alt 4TRI
+L10	50	OTHER	l	s3	170	open sigma-like loop with a tail to the right
+L10	51	EBR_B	m	s3	230	
+L10	52	PHI	m	s3	260	
+L10	53	HASH4	l	s3	300	
+L10	54	PHI	m	s3	335	
+L10	55	EBR_B	m	s3	415	
+L10	56	C43	m	s3	445	
+L10	57	VBAR_B	m	s3	525	
+L10	58	PHI	m	s3	575	
+L10	59	PHI	m	s3	630	
+L10	60	VBAR_A	m	s3	680	
+L10	61	PHI	m	s3	715	
+L10	62	C43	m	s3	760	
+L11	1	PLAIN	l	s1	145	clear 'S. S.' (two S-like letters with points)
+L11	2	BETA	l	s1	245	
+L11	3	C43	m	s1	285	
+L11	4	ZHOOK	l	s1	330	
+L11	5	VBAR_B	m	s1	400	
+L11	6	ZHOOK	l	s1	450	
+L11	7	PHI	m	s1	515	
+L11	8	EBR_B	m	s1	565	dot above
+L11	9	VBAR_B	m	s1	620	
+L11	10	INF	m	s1	665	alt SBS
+L11	11	ZHOOK	l	s1	750	
+L11	12	VBAR_B	m	s1	800	
+L11	13	VBAR_B	m	s1	880	
+L11	14	PHI	m	s1	930	
+L11	15	PHI	m	s1	975	
+L11	16	4TRI	m	s1	1020	
+L11	17	PHI	m	s1	1060	
+L11	18	C43	m	s1	1135	
+L11	19	VBAR_B	m	s1	1200	
+L11	20	VBAR_B	m	s1	1250	
+L11	21	ZHOOK	l	s1	1300	
+L11	22	C43	m	s1	1370	
+L11	23	OTHER	l	s2	175	gamma/y-shaped mark, two strokes meeting in a small loop at the foot
+L11	24	PHI	m	s2	205	
+L11	25	EBR_B	m	s2	240	
+L11	26	EBR_B	m	s2	270	
+L11	27	PHI	m	s2	300	
+L11	28	C43	m	s2	360	
+L11	29	PHI	m	s2	400	
+L11	30	VBAR_B	m	s2	490	
+L11	31	C43	m	s2	540	
+L11	32	PHI	m	s2	600	
+L11	33	INF	m	s2	665	alt SBS
+L11	34	VBAR_B	m	s2	720	
+L11	35	PHI	m	s2	770	
+L11	36	4TRI	m	s2	850	
+L11	37	PHI	m	s2	895	
+L11	38	HASH4	m	s2	940	
+L11	39	C43	m	s2	990	
+L11	40	VBAR_A	m	s2	1030	
+L11	41	C43	m	s2	1100	
+L11	42	VBAR_A	m	s2	1170	
+L11	43	PHI	m	s2	1210	
+L11	44	INF	m	s2	1280	alt SBS
+L11	45	VBAR_A	m	s2	1340	
+L11	46	4TRI	l	s2	1390	cut; seen in s3
+L11	47	PHI	m	s3	165	
+L11	48	OTHER	l	s3	210	gamma/y-shaped mark, as L11 pos 23
+L11	49	EBR_B	m	s3	270	
+L11	50	PHI	m	s3	310	
+L11	51	C43	m	s3	375	
+L11	52	EBR_B	m	s3	430	
+L11	53	INF	m	s3	470	alt SBS
+L11	54	EBR_B	m	s3	520	
+L11	55	4TRI	m	s3	570	
+L11	56	PHI	m	s3	615	
+L11	57	INF	m	s3	665	alt SBS
+L11	58	PHI	m	s3	700	
+L11	59	PHI	m	s3	750	
+L12	1	ZHOOK	l	s1	125	
+L12	2	VBAR_A	m	s1	185	
+L12	3	PHI	m	s1	240	
+L12	4	VBAR_B	m	s1	295	
+L12	5	4TRI	m	s1	345	
+L12	6	PHI	m	s1	385	
+L12	7	ZHOOK	l	s1	430	
+L12	8	PHI	m	s1	490	
+L12	9	C43	m	s1	565	
+L12	10	INF	m	s1	630	alt SBS
+L12	11	4TRI	m	s1	690	
+L12	12	PHI	m	s1	735	
+L12	13	C43	m	s1	820	
+L12	14	VBAR_A	m	s1	890	
+L12	15	PHI	m	s1	930	
+L12	16	C43	m	s1	990	
+L12	17	ZHOOK	l	s1	1035	
+L12	18	PHI	m	s1	1080	
+L12	19	PHI	m	s1	1135	
+L12	20	OTHER	l	s1	1200	ampersand-like loop with trailing c-stroke; alt CH
+L12	21	OTHER	l	s1	1260	gamma/y-shaped mark
+L12	22	PHI	m	s1	1305	
+L12	23	EBR_B	m	s1	1345	
+L12	24	EBR_B	m	s1	1385	
+L12	25	PHI	m	s2	145	
+L12	26	OTHER	l	s2	185	long-s shape; alt BETA
+L12	27	PHI	m	s2	215	
+L12	28	VBAR_B	m	s2	295	
+L12	29	C43	m	s2	345	
+L12	30	4TRI	m	s2	415	
+L12	31	PHI	m	s2	445	
+L12	32	4TRI	m	s2	520	
+L12	33	PHI	m	s2	555	
+L12	34	VBAR_B	m	s2	600	
+L12	35	VBAR_A	m	s2	640	
+L12	36	INF	m	s2	710	alt SBS
+L12	37	PHI	m	s2	765	
+L12	38	C43	m	s2	835	
+L12	39	C43	m	s2	895	
+L12	40	PHI	m	s2	935	
+L12	41	INF	m	s2	990	alt SBS
+L12	42	PHI	m	s2	1030	
+L12	43	HASH4	m	s2	1100	
+L12	44	PHI	m	s2	1140	
+L12	45	VBAR_B	m	s2	1200	
+L12	46	PHI	m	s2	1235	
+L12	47	VBAR_B	m	s2	1300	
+L12	48	PHI	m	s2	1355	
+L12	49	INF	m	s3	145	alt SBS
+L12	50	INF	m	s3	205	alt SBS
+L12	51	PHI	m	s3	250	
+L12	52	C43	m	s3	295	
+L12	53	ZHOOK	l	s3	345	
+L12	54	PHI	m	s3	380	
+L12	55	OTHER	l	s3	470	gamma/y-shaped mark
+L12	56	PHI	m	s3	510	
+L12	57	EBR_B	m	s3	550	
+L12	58	EBR_B	m	s3	580	
+L12	59	PHI	m	s3	610	
+L12	60	OTHER	l	s3	650	long-s shape; alt BETA
+L12	61	PHI	m	s3	680	
+L12	62	EBR_B	m	s3	720	
+L12	63	C43	m	s3	750	
+L13	1	4TRI	m	s1	115	
+L13	2	PHI	m	s1	150	
+L13	3	BETA	l	s1	215	long-s with hook; alt OTHER
+L13	4	C43	m	s1	310	
+L13	5	C43	m	s1	385	
+L13	6	HASH4	m	s1	440	
+L13	7	PHI	m	s1	475	
+L13	8	OTHER	l	s1	545	ampersand-like loop with trailing c-stroke; alt CH
+L13	9	C43	m	s1	600	
+L13	10	INF	m	s1	650	alt SBS
+L13	11	VBAR_B	m	s1	710	
+L13	12	VBAR_B	m	s1	760	
+L13	13	ZHOOK	l	s1	820	
+L13	14	OTHER	l	s1	880	gamma/y-shaped mark
+L13	15	ZHOOK	l	s1	935	
+L13	16	PHI	m	s1	975	
+L13	17	EBR_B	m	s1	1045	
+L13	18	INF	m	s1	1085	alt SBS
+L13	19	EBR_B	m	s1	1150	
+L13	20	C43	m	s1	1200	
+L13	21	EBR_B	l	s1	1265	alt ISH
+L13	22	VBAR_A	m	s1	1335	
+L13	23	PHI	m	s1	1375	
+L13	24	INF	m	s2	150	alt SBS
+L13	25	VBAR_B	m	s2	210	
+L13	26	ZHOOK	l	s2	265	
+L13	27	PHI	m	s2	310	
+L13	28	INF	m	s2	375	alt SBS
+L13	29	PHI	m	s2	420	
+L13	30	VBAR_B	m	s2	470	
+L13	31	OTHER	l	s2	575	open sigma-like loop with a tail
+L13	32	EBR_B	m	s2	625	
+L13	33	PHI	m	s2	645	
+L13	34	EBR_B	m	s2	715	
+L13	35	ZHOOK	l	s2	750	
+L13	36	PHI	m	s2	800	
+L13	37	PHI	m	s2	840	
+L13	38	PHI	m	s2	880	
+L13	39	PHI	m	s2	920	
+L13	40	BETA	m	s2	970	
+L13	41	PHI	m	s2	1020	
+L13	42	C43	m	s2	1075	
+L13	43	VBAR_A	m	s2	1120	
+L13	44	OTHER	l	s2	1200	ampersand-like loop with trailing c-stroke; alt CH
+L13	45	INF	m	s2	1250	alt SBS
+L13	46	PHI	m	s2	1285	
+L13	47	PHI	m	s2	1320	
+L13	48	ZHOOK	l	s3	125	
+L13	49	VBAR_A	m	s3	160	
+L13	50	C43	m	s3	220	
+L13	51	PHI	m	s3	265	
+L13	52	EBR_B	m	s3	330	
+L13	53	PHI	m	s3	360	
+L13	54	BETA	m	s3	420	
+L13	55	PHI	m	s3	455	
+L13	56	C43	m	s3	500	
+L13	57	VBAR_A	m	s3	560	
+L13	58	OTHER	l	s3	630	open sigma-like loop with a tail
+L13	59	VBAR_A	m	s3	690	
+L13	60	HASH4	l	s3	730	
+L13	61	C43	m	s3	770	
+L13	62	VBAR_A	m	s3	810	
+L14	1	VBAR_A	m	s1	125	
+L14	2	PHI	m	s1	165	
+L14	3	INF	m	s1	245	alt SBS
+L14	4	VBAR_A	m	s1	300	
+L14	5	EBR_B	m	s1	365	
+L14	6	PHI	m	s1	395	
+L14	7	PHI	m	s1	465	
+L14	8	PHI	m	s1	520	
+L14	9	OTHER	l	s1	560	long-s shape; alt BETA
+L14	10	PHI	m	s1	590	
+L14	11	HASH4	m	s1	650	
+L14	12	PHI	m	s1	690	
+L14	13	OTHER	l	s1	755	vertical stem crossed by two or three short bars with caret on top; alt HASH4
+L14	14	VBAR_B	m	s1	825	
+L14	15	ZHOOK	l	s1	870	
+L14	16	4TRI	m	s1	945	
+L14	17	PHI	m	s1	995	
+L14	18	INF	m	s1	1050	alt SBS
+L14	19	INF	m	s1	1115	alt SBS
+L14	20	PHI	m	s1	1160	
+L14	21	ZHOOK	l	s1	1230	
+L14	22	VBAR_A	m	s1	1290	
+L14	23	VBAR_A	m	s1	1345	
+L14	24	PHI	m	s1	1380	
+L14	25	PHI	m	s2	150	
+L14	26	INF	m	s2	205	alt SBS
+L14	27	INF	m	s2	270	alt SBS
+L14	28	PHI	m	s2	315	
+L14	29	PHI	m	s2	345	
+L14	30	OTHER	m	s2	420	large figure-2 shape
+L14	31	C43	m	s2	480	
+L14	32	PHI	m	s2	530	
+L14	33	INF	m	s2	600	alt SBS
+L14	34	VBAR_B	m	s2	650	
+L14	35	VBAR_B	m	s2	720	
+L14	36	C43	m	s2	780	
+L14	37	INF	m	s2	830	alt SBS
+L14	38	INF	m	s2	880	alt SBS
+L14	39	PHI	m	s2	925	
+L14	40	PHI	m	s2	955	
+L14	41	HASH4	m	s2	1030	
+L14	42	INF	m	s2	1080	alt SBS
+L14	43	C43	m	s2	1135	
+L14	44	4TRI	m	s2	1180	
+L14	45	INF	m	s2	1220	alt SBS
+L14	46	VBAR_B	m	s2	1300	
+L14	47	EBR_B	l	s3	55	overlap alignment uncertain; s2 shows a loop-stem here
+L14	48	PHI	m	s3	90	
+L14	49	C43	m	s3	150	
+L14	50	VBAR_A	m	s3	215	
+L14	51	INF	m	s3	250	alt SBS
+L14	52	PHI	m	s3	290	
+L14	53	VBAR_B	m	s3	350	
+L14	54	C43	m	s3	400	
+L14	55	HASH4	m	s3	450	
+L14	56	PHI	m	s3	495	
+L14	57	HASH4	m	s3	535	
+L14	58	INF	m	s3	565	alt SBS
+L14	59	ZHOOK	l	s3	625	
+L14	60	PHI	m	s3	660	
+L14	61	PHI	m	s3	690	
+L14	62	EBR_B	m	s3	745	
+L14	63	PHI	m	s3	775	
+L14	64	VBAR_B	m	s3	810	
+L15	1	4TRI	m	s1	130	
+L15	2	PHI	m	s1	190	
+L15	3	EBR_B	m	s1	240	
+L15	4	INF	m	s1	270	alt SBS
+L15	5	EBR_B	m	s1	320	
+L15	6	HASH4	m	s1	380	
+L15	7	PHI	m	s1	425	
+L15	8	VBAR_B	m	s1	485	
+L15	9	C43	m	s1	540	
+L15	10	ZHOOK	l	s1	595	
+L15	11	PHI	m	s1	635	
+L15	12	PHI	m	s1	680	
+L15	13	PHI	m	s1	715	
+L15	14	INF	m	s1	770	alt SBS
+L15	15	C43	m	s1	840	
+L15	16	PHI	m	s1	890	
+L15	17	VBAR_A	m	s1	940	
+L15	18	PHI	m	s1	980	
+L15	19	PHI	m	s1	1020	
+L15	20	VBAR_B	m	s1	1075	
+L15	21	INF	m	s1	1125	alt SBS
+L15	22	PHI	m	s1	1160	
+L15	23	HASH4	m	s1	1240	
+L15	24	PHI	m	s1	1285	
+L15	25	HASH4	m	s1	1355	
+L15	26	INF	l	s2	105	cut in s1
+L15	27	PHI	m	s2	150	
+L15	28	EBR_B	m	s2	210	
+L15	29	HASH4	m	s2	255	
+L15	30	INF	m	s2	295	alt SBS
+L15	31	PHI	m	s2	335	
+L15	32	VBAR_B	m	s2	395	
+L15	33	BETA	l	s2	470	long-s with bowl; alt OTHER
+L15	34	PHI	m	s2	520	
+L15	35	ZHOOK	l	s2	580	
+L15	36	VBAR_B	m	s2	625	
+L15	37	OTHER	m	s2	715	large figure-2 shape
+L15	38	HASH4	m	s2	785	
+L15	39	PHI	m	s2	820	
+L15	40	VBAR_B	m	s2	860	
+L15	41	PHI	m	s2	935	
+L15	42	C43	m	s2	985	
+L15	43	ZHOOK	l	s2	1045	
+L15	44	VBAR_B	m	s2	1100	
+L15	45	PHI	m	s2	1150	
+L15	46	C43	m	s2	1225	
+L15	47	VBAR_B	m	s2	1290	
+L15	48	EBR_B	l	s2	1345	s3 shows ZHOOK at this place; alt ZHOOK
+L15	49	C43	m	s3	115	
+L15	50	VBAR_A	m	s3	175	
+L15	51	PHI	m	s3	210	
+L15	52	PHI	m	s3	250	
+L15	53	PHI	m	s3	295	
+L15	54	VBAR_B	m	s3	345	
+L15	55	VBAR_A	m	s3	400	
+L15	56	HASH4	m	s3	460	
+L15	57	PHI	m	s3	510	
+L15	58	VBAR_B	m	s3	560	
+L15	59	PHI	m	s3	605	
+L15	60	C43	m	s3	655	
+L15	61	PLAIN	m	s3	720	clear word 'par.'
+L16	1	HASH4	m	s1	120	
+L16	2	INF	m	s1	165	alt SBS
+L16	3	PHI	m	s1	205	
+L16	4	EBR_B	m	s1	260	
+L16	5	EBR_B	m	s1	295	
+L16	6	PHI	m	s1	325	
+L16	7	VBAR_B	m	s1	360	
+L16	8	OTHER	l	s1	450	stacked bar and loop over a long J-hook descending below the line
+L16	9	OTHER	l	s1	515	g/y-shaped mark with descender
+L16	10	C43	m	s1	585	
+L16	11	C43	m	s1	640	
+L16	12	C43	m	s1	730	
+L16	13	INF	m	s1	790	alt SBS
+L16	14	EBR_B	m	s1	855	
+L16	15	PHI	m	s1	890	
+L16	16	OTHER	l	s1	930	long-s shape; alt BETA
+L16	17	PHI	m	s1	960	
+L16	18	C43	m	s1	1020	
+L16	19	VBAR_A	m	s1	1075	
+L16	20	INF	m	s1	1140	alt SBS
+L16	21	PHI	m	s1	1195	
+L16	22	INF	m	s1	1260	alt SBS
+L16	23	EBR_B	m	s1	1310	
+L16	24	INF	m	s1	1345	alt SBS
+L16	25	VBAR_A	m	s2	130	
+L16	26	PHI	m	s2	175	
+L16	27	INF	m	s2	240	alt SBS
+L16	28	VBAR_B	m	s2	290	
+L16	29	VBAR_A	m	s2	340	
+L16	30	PHI	m	s2	380	
+L16	31	PHI	m	s2	415	
+L16	32	OTHER	l	s2	490	gamma/y-shaped mark
+L16	33	4TRI	m	s2	530	
+L16	34	INF	m	s2	585	alt SBS
+L16	35	C43	m	s2	645	
+L16	36	4TRI	m	s2	705	
+L16	37	INF	m	s2	745	alt SBS
+L16	38	C43	m	s2	800	
+L16	39	C43	m	s2	880	
+L16	40	VBAR_A	m	s2	935	
+L16	41	PHI	m	s2	965	
+L16	42	ZHOOK	l	s2	1005	
+L16	43	PHI	m	s2	1055	
+L16	44	INF	m	s2	1110	alt SBS
+L16	45	PHI	m	s2	1150	
+L16	46	C43	m	s2	1220	
+L16	47	ISH	m	s2	1265	
+L16	48	ZHOOK	l	s2	1320	
+L16	49	HASH4	l	s2	1390	cut; alt 4TRI
+L16	50	INF	m	s3	55	alt SBS; overlap alignment uncertain
+L16	51	C43	m	s3	120	
+L16	52	VBAR_A	m	s3	180	
+L16	53	PHI	m	s3	225	
+L16	54	INF	m	s3	285	alt SBS
+L16	55	ZHOOK	l	s3	330	
+L16	56	EBR_B	m	s3	395	
+L16	57	EBR_B	m	s3	430	
+L16	58	PHI	m	s3	465	
+L16	59	OTHER	l	s3	520	vertical stem crossed by two or three short bars with caret on top
+L16	60	EBR_B	m	s3	565	
+L16	61	C43	m	s3	610	
+L16	62	PHI	m	s3	675	
+L16	63	VBAR_B	m	s3	715	
+L16	64	VBAR_A	m	s3	760
