@@ -4448,3 +4448,10 @@ F61-CAL's caveat that his drawings mislabel 8 of 10 of this hand's shape classes
 right") matches his row-1 drawing almost word for word, in the a/n column (a); **C6** ("the digit 6") partly matches his word-code drawing for *pour* ("a hook or
 loop like a numeral 6 into one long diagonal stroke") -- f.61's C6 is a plain 6 without the diagonal (H237's crops); **CA, LOOPBAR, LL** and the 4-over-Pi match
 no drawing. Leads for the verifier or a later test (CROSS a/n; C6 = *pour*?), not values. No call.
+
+## Campaign step H250 (29 Sept 2026, 05:47 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- audit status in the v6 candidate table
+
+`family/v6_shape_candidates.tsv` gains an `audit_status` column from AUDIT.md VERIFY-F61-V6/V7: the hash family by shape (4-head d/q; the 2# sign i/x, taking
+f.188r's mis-coded rows; the looped hash a separate unread row) is **endorsed by V7**; the bowl rule is endorsed in part by V6. **Still pending audit:** ZHOOK =
+the 2# sign (H235; V7 calls it a grade question for ZHOOK's row) and 4PI's two signs (H233/H239/H240; with 4PI a/n on f.61 the V7 meter 12/58/4/25 would read
+12/60/2/25). Notes only.
