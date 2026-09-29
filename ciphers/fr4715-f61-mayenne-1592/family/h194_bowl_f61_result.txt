@@ -1,0 +1,19 @@
+repeat control: 18 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+line	k	code	bowl	tomokiyo
+L01	count mismatch: codes 3, listed 4 -- left out
+L03	1	4TRI	yes	c
+L03	2	C43	no	a
+L03	3	4TRI	yes	p
+L03	4	C43	no	a
+L05	1	4TRI	yes	p
+L05	2	C43	no	a
+L05	3	C43	no	a
+L05	4	C43	no	n
+L05	5	4TRI	yes	c
+L08	1	C43	no	a
+L08	2	C43	no	a
+L08	3	4TRI	yes	p
+L11	1	C43	no	n
+L11	2	4STEM	no	-
+L11	3	4PI	no	n
+bowl yes: Tomokiyo c/p 5 a/n 0; bowl no: c/p 0 a/n 9; Fisher p 0.0005

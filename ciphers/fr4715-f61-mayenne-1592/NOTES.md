@@ -3831,3 +3831,18 @@ So the shape difference is real and carries the period letters on a leaf the att
 4TRI; the bowl separates them. This explains H190's code swap. Descriptive: the c/p (bowl) sign and the a/n (r-tail) sign are the table's two
 4-signs in Desportes's hand. Whether f.61's 4-family signs split the same way is H194 (f.61's hand; H178b's cross-hand tile link FAILED for ZHOOK,
 so f.61 needs its own anchors from Tomokiyo's c/p and a/n positions, H191). Nothing merged.
+
+## Campaign step H194 (29 Sept 2026, 01:24-01:26 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- the bowl attribute on f.61: the readers' 4TRI is the bowl sign, and Tomokiyo reads it c/p (descriptive)
+
+Pre-registered (PROMPTS section H194; scorer `family/h194_bowl_f61.py` pushed before the call; disclosed: the runner looked at images/f61sheet_L05.jpg
+for legibility first, the question is H193's unchanged). One Opus vision call, inline reply written verbatim (`family/passes/h194_reply.tsv`).
+Result `family/h194_bowl_f61_result.txt` (`--check` OK):
+- **Repeat control: 18 of 20 f.176v anchors in their group's direction (gate >= 17): PASS** (H193 19/20).
+- **f.61 span sheets: bowl yes -> Tomokiyo c/p 5 of 5; bowl no -> a/n 9 of 9; Fisher p 0.0005.** L03, L05, L08, L11 matched by count; L01 left out
+  (4 listed vs 3 codes). The bowl answer coincides with the f.61 readers' codes throughout: every 4TRI is "yes", every C43 "no"; 4STEM and 4PI (L11)
+  "no", 4PI read n.
+What it says, descriptively: the shape difference validated against the period decipherment on two Desportes leaves (H193: a 4 whose stem ends in a
+closed bowl reads c/p; the r-tailed or 3-tailed 4 reads a/n) holds on f.61's hand too. f.61's readers already separate the two signs (4TRI vs C43), and
+at 14 of 14 of Tomokiyo's positions the bowl sign carries his c or p. On f.61 v4's 4TRI cell is a/c/n/p/t (H191). For the verifier: whether f.61's 4TRI
+may be narrowed to c/p on this evidence (a period-validated shape rule plus his letters; C43 a/n is already v4's). His letters come from his own
+table. H178b's cross-hand tile link failed for ZHOOK, a different sign, so each class's transfer stands on its own test. No class change, nothing merged.
