@@ -682,3 +682,11 @@ segments overlap a little at their ends, so a sign at the right edge of one segm
 where it is complete. Under each segment is a red ruler: tick labels are hundreds of pixels (label 7 = x 700). Go segment by segment, left to right, and
 list every item: a cipher sign or a clear handwritten word. Answer inline only, one line per item, tab-separated: 'L10<TAB><segment><TAB><x><TAB>sign|word
 <TAB><few-word shape description, or the word as you read it>' with x the item's centre on the ruler to the nearest 10, and nothing else."
+
+## H286 (29 Sept, Opus vision, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61 L04 blind positional read, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h286/L04.jpg (scripts/f61positions_sheets.py --lines L04 --prefix f61sheetB --tag h286). Disclosure: the runner read images/f61sheetB_L04.jpg
+itself once for H283 (grade M: the line ends "croys aussi que les"); the blind reader is a fresh call that has not seen that read. Scored by
+scripts/f61positions_L04_score.py: the reply's items in order; pre-stated read-out "H283's lead stands" iff the last item of the line (segment 4, largest x)
+is a word read as 'les'; the sign items are joined by count to read_call_U's two L04 signs (LOOPBAR, OTHER) if the count is 2. Prompt: H264's verbatim
+with L04 in place of L10.
