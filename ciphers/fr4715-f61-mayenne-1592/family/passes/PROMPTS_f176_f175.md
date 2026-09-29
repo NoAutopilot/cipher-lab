@@ -309,3 +309,8 @@ native f.61 region image; script `h367_bowl_f61.py`, key `h367_items.tsv`. H193'
 4a13be67..., as H230/H359; h193_items.tsv byte-identical). Disclosure: the runner looked at the whole H367 sheet for marker placement (twice): the
 markers sat on the intended signs, but at H359's -60/+55 window every stem was clipped just below the line, so the window was moved to -45/+92 before
 the call (the runner has therefore seen the target shapes; the reader has not). 1 Opus vision call.
+
+## H368 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+H359's prompt verbatim, two calls (part 2 = SCRATCH/h368_c1/sheet_01..03.jpg R01-R49, SCRATCH/h368_c2/sheet_01..03.jpg R01-R49), fr.3983 f.106r rows
+1-18 (every pass-A 4TRI and 4STEM, 20 C43), cut at H231's geometry; script `h368_bowl_106r.py`, key `h368_items.tsv`. H193's strips as in H367
+(same regeneration, byte-identical). The runner did not look at the H368 sheets.
