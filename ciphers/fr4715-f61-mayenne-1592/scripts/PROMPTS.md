@@ -548,3 +548,9 @@ C = a plain hash with nothing attached;
 D = a 2-shaped hook leading into the hash from the left (reads like '2#');
 N = none of these, or cannot tell.
 Do not use any other tools. Answer inline, one line per tile, exactly in the form 'Y01<TAB>A' (A, B, C, D or N), Y01 to Y33 in order, and nothing else."
+
+## H226 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- stray-letter HASH4 rows by shape, WRITTEN BEFORE THE CALL
+
+Sheets: <scratch>/h226/sheet_01.jpg, sheet_02.jpg (family/h226_hash4_strays.py tiles; key family/h226_items.tsv; natives as H220/H224). The runner did
+not look at these sheets before the call (geometry unchanged from H222/H224). Prompt: H224's verbatim, with the tile range 'Z01-Z34' in place of
+'Y01-Y33' and the answer form 'Z01<TAB>A', Z01 to Z34.
