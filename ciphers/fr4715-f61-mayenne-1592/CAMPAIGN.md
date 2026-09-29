@@ -579,4 +579,4 @@ closed:
 2026-09-28 23:20 (clock) | session_016YPPumG1PbhMJ3pBLuqaeW | H182 done | 0.1 | ZHOOK: period i (Desportes) = Tomokiyo's i/j at all 10 ZHOOK positions on f.61 and f.108r; for the verifier.
 2026-09-28 23:26 (clock) | session_016YPPumG1PbhMJ3pBLuqaeW | H177b stage 2c | 4.5 | f.176r L01-L40 vs fol. 177r-v: margin +0.186 at N 2,110; row stays open (L41-L47, f.176v, fol. 179).
 2026-09-28 23:31 (clock) | session_016YPPumG1PbhMJ3pBLuqaeW | H177b stage 2d | 4.5 | all of f.176r keyed against fol. 177r-v (margin +0.193 at N 2,476). Runner 6 stops on context (about 660k); H177b open for the next runner (f.176v, fol. 179, fol. 177v rest, fol. 178r).
-2026-09-29 00:3x (clock) | session_012nGionjAX21NRbpi4TP69b | H177c stage 1 | 3 | f.176v L01-L08 (two blind passes, consensus 0.80) vs fol. 177v from V01: 0.339 vs wrong texts 0.373 / 0.344, GATE FAIL; nothing keyed; H177d (location scan) added.
+2026-09-29 00:25 (clock) | session_012nGionjAX21NRbpi4TP69b | H177c stage 1 | 3 | f.176v L01-L08 (two blind passes, consensus 0.80) vs fol. 177v from V01: 0.339 vs wrong texts 0.373 / 0.344, GATE FAIL; nothing keyed; H177d (location scan) added.

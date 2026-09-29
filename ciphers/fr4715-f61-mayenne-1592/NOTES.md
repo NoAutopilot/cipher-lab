@@ -3582,7 +3582,7 @@ runner writes the files from the agent's hand-back message. Scripts: `family/bui
 `f177v_clearA_*` in line order; extend to fol. 178r and f.176v the same way). For the verifier: `scripts/H66_PAGE.md` section H168-H180
 plus H181-H182.
 
-## Campaign step H177c stage 1 (29 Sept 2026, 00:20-00:33 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v vs fol. 177v: GATE FAIL
+## Campaign step H177c stage 1 (29 Sept 2026, 00:15-00:25 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v vs fol. 177v: GATE FAIL
 
 Pre-registered in `family/passes/PROMPTS_f176_f175.md` section H177c (c7478950), builder `family/build_f176v_key.py` pushed before the
 calls; `key_period_f176.tsv`, `build_f176_key.py` and v4 untouched (VERIFY-F61-V5 is auditing them). Natives canvases 328, 330, 331 fetched
