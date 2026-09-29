@@ -1,0 +1,14 @@
+H338 recf124r: draft rows 2839; keyed classes 22: PHI 4TRI VBAR_A H24 EBR_B HASH4 C43 BETA ZBAR 4STEM RSIGN INF DBL EBR_A VBAR_B ISH C6 4PI ELOOP LOOPSTEM1 CH ZHOOK; runs >= 4 signs 227, signs in them 2105
+  real (v7) -0.9983 log10/letter; (b) binned mean -1.1338 p95 -1.0209 max -1.0033, >= real 0/200; (c) frequency key -0.7304
+  read-out (binned arm): consistent with key v7 on a held leaf
+H339 recf97r: draft rows 2485; keyed classes 22: PHI 4TRI VBAR_A H24 EBR_B 4STEM ZBAR BETA HASH4 VBAR_B C43 EBR_A RSIGN 4PI CH DBL ISH ELOOP LOOPSTEM1 C6 INF ZHOOK; runs >= 4 signs 203, signs in them 1809
+  real (v7) -0.8990 log10/letter; (b) binned mean -1.0301 p95 -0.9057 max -0.8816, >= real 8/200; (c) frequency key -0.7479
+  read-out (binned arm): consistent with key v7 on a held leaf
+H340 rec108v: draft rows 308; keyed classes 11: PHI C43 VBAR_B 4STEM EBR HASH4 VBAR_A ZHOOK INF BETA 4PI; runs >= 4 signs 19, signs in them 286
+  real (v7) -0.9392 log10/letter; (b) binned mean -1.1333 p95 -1.0164 max -0.9541, >= real 0/200; (c) frequency key -1.0075
+  read-out (binned arm): consistent with key v7 on a held leaf
+H340 recf108vg: draft rows 293; keyed classes 13: PHI VBAR_A C43 4STEM DBL EBR HASH4 ZHOOK BETA 4TRI VBAR_B CH ELOOP; runs >= 4 signs 8, signs in them 285
+  real (v7) -0.9189 log10/letter; (b) binned mean -0.9855 p95 -0.9415 max -0.9201, >= real 0/200; (c) frequency key -0.7239
+  read-out (binned arm): consistent with key v7 on a held leaf
+H340 rec108v power at 19 runs (in-sample f.101r, f.188r): 0.66, 0.98 -> pass
+H340 recf108vg power at 8 runs (in-sample f.101r, f.188r): 0.40, 0.82 -> pass
