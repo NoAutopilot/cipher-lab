@@ -4242,3 +4242,12 @@ f191 fetched fresh (sha1 differs from the 28 Sept fetch, as H207 saw for f210). 
 For the verifier: H24 = 2# holds on f.106r too (every H24 the passes wrote); HASH4 there is a different sign mix from f.101r/f.188r's, so pooling HASH4
 counts across these leaves mixes the looped and 4-headed forms (as H218 found for the 4-family). H228 (script-only) reads the letters the held gloss places
 at the looped positions, as a conditional look. Nothing merged.
+
+## Campaign step H228 (29 Sept 2026, 05:02-05:04 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r's held gloss at the looped positions: a non-test (script-only)
+
+`family/h228_loop_106r_gloss.py` (committed before the run; result `family/h228_loop_106r_gloss_result.txt`, `--check` OK), conditional on f.106r's HELD
+alignment (gloss passes under 60%). Letters placed: **H24 (2#, 12 lettered): u 5, n, a, h, m, t -- no i**; HASH4 looped B (11 lettered): a 2, t 2, i 2, q, u,
+o, l, s; 4-head A: i, n. Pre-stated read-out: "no lean shown". But the H24 row is an internal positive control that fails: on f.101r the period
+decipherment reads H24 i 170 times, and here the alignment gives it no i at all, so the held alignment does not place letters reliably at these
+positions. **Logged as a non-test, not a negative**: the looped form's letters on f.106r need a better gloss read (the leaf's gloss is sparse and
+interlined with heavy bleed-through, KEY.md). Nothing merged.
