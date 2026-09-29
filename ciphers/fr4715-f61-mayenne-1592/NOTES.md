@@ -4481,3 +4481,11 @@ L07 10 vs 11 and L08 13 vs 14 are not joined.** Descriptive use (the dropped H25
 clear word; PHI 0/9, C43 0/7.** So f.61's C6 sits inside cipher runs like the letter signs -- no placement support for H247's word-code lead. Note: the reader calls
 the CA mark "a", and on L03 one "a" follows the clear word "Combien" (H63's finding that CA sits at text edges). For later tile work, the positions replace
 eye placement on these four lines. No reading.
+
+## Runner 9 status (29 Sept 2026, 06:49 UTC by the clock, session_012NTadgrCBftz3oRtgw5jFu)
+
+Since the 04:41 handover (retracted at 04:45): H240-H255 and H253 done or dropped (see their sections); spent today 67.10/600. get_session read 536,853 tokens at the
+06:45 firing; the next firing's reading decides whether runner 9 continues (under 600k) or stops for runner 10. Open: **H256** (is f.61's CA the clear letter a?
+10 of f.61's 25 unread signs), **H257** (script: extend f61_positions.tsv to L07/L08), **H258** (LOOPBAR glyph link). Pending audit: ZHOOK = 2# (H235 + H254, same
+hand at overlay i) and 4PI's two signs (H233/H239/H240/H255); candidate table family/v6_shape_candidates.tsv. Waiting on people: ASKS 88 (f.108r gloss; H249's
+prediction is committed), ASKS 93 (f.211r), and a possible ASKS row for the f.106r looped-hash pack (H243).
