@@ -4002,3 +4002,19 @@ less cleanly (10 of 36 answered signs against the rule's direction). The possibl
 Desportes's), the strip geometry (rows drift; the reader saw ordinary words in every strip), or letters misplaced by the gloss alignment (the
 align_v4 rows carry 'conflict' status at many positions). For the verifier: the bowl rule is supported on three leaves (two against period letters,
 one by sequence gain) and only leaning on f.101r. v5's f.101r 4TRI/4STEM counts stay pooled; nothing merged.
+
+## Campaign step H208 (29 Sept 2026, 02:42-02:49 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- H205 corrected: the model judge prefers f.108v's bowl labelling in both seeds
+
+Pre-registered (scripts/PROMPTS.md section H208; `scripts/f61judge108v_bowl.py --present`, sets and keys committed 5d1798a7 before the calls). The
+19 one-swap neighbours were drawn only from class pairs present in the relabelled text, so every neighbour differs from the target. Calibration: this
+session's H205 control (known f.61 lines vs one-swap null, rank 1 of 21). Two Opus text calls, inline replies verbatim
+(`scripts/f61judge_f108v_bowlp_s208_verdict.tsv`, `_s209_verdict.tsv`), results `f61judge_f108v_bowlp_s20{8,9}_result.txt` (`--check` fresh):
+- **seed 208: bowl labelling 7.5, rank 1 of 21 (next 6.0); pass-code set 3.5 (rank 9-11).**
+- **seed 209: bowl labelling 9.0, rank 1 of 21 (next 6.0); pass-code set 4.0 (rank 7-10).**
+- Registered read-out: **"the judge prefers the bowl labelling" in both seeds**, so it holds overall.
+Taken with H199 (the bowl sign is the passes' 4STEM on f.108v), H201 (sequence gain, 30/30, rank 1 of 201 random relabels) and H193/H194 (bowl = c/p
+against period letters on f.176r and Tomokiyo's on f.61): reading f.108v's 4-family by the blind bowl answer, not by the pass code, is preferred
+by two instruments that do not depend on each other. H202 (f.108r) and H207 (f.101r) lean the same way but did not meet their rules. The judge's
+resolved text for the bowl sets is in the verdict files. It is a model's resolution of a two-way cipher over a grade-M transcription, a verifier's
+input and not a reading claim. No class change; nothing merged into a key (a verifier decides whether the bowl split enters v6 as a shape rule for
+the 4-family).

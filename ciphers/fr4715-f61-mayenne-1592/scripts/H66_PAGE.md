@@ -183,6 +183,8 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   yes -> c/p 11, a/n 5 and bowl no -> c/p 5, a/n 15 (p 0.017): the same direction, but the registered rule is NOT met. **H205:** the model judge scored f.108v's
   bowl decode 7.0 and the pass-code decode 2.5, but the registered rank rule failed ("no preference"), and part of its null was identical to the target by
   construction (runner's error); H208 re-runs it corrected.
+- **H208:** corrected (neighbours only from classes present): the judge ranks the bowl labelling 1 of 21 in both seeds (7.5, 9.0), with the pass-code set at 3.5
+  and 4.0. For the verifier: whether the 4-family is read by the bowl shape (bowl c/p, no bowl a/n) rather than by pass code, as a v6 shape rule.
 
 ## Files to read
 

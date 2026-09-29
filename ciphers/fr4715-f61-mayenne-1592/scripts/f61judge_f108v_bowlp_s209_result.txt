@@ -1,0 +1,4 @@
+f108v_bowlp_s209: target SET-20 scored 9.0, rank 1 of 21 (ties against); pass-code set SET-15 scored 4.0
+all scores: SET-20(T):9.0 SET-06(swap):6.0 SET-16(swap):5.5 SET-17(swap):5.0 SET-04(swap):4.5 SET-12(swap):4.5 SET-05(swap):4.0 SET-07(swap):4.0 SET-15(R):4.0 SET-19(swap):4.0 SET-01(swap):3.5 SET-08(swap):3.5 SET-09(swap):3.5 SET-02(swap):3.0 SET-03(swap):2.0 SET-10(swap):2.0 SET-13(swap):2.0 SET-14(swap):2.0 SET-21(swap):2.0 SET-11(swap):1.5 SET-18(swap):1.5
+target reading as given by the judge: tatsensauennousneusauissionsmentresurloss | ensanusanuronspsleulementuuoysoura | iensarsseiuenalaconseruationenomilles | eullentesterreleuresetprincipallementcelle | neparisnonparcetitmesseitmmnisparetenam | exploictmaussisontilzsersnecessairesntrez | ntilnyaplusapparenceecontenircelleynessi
+read-out: the judge prefers the bowl labelling
