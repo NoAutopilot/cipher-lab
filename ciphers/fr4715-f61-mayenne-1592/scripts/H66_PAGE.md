@@ -137,6 +137,21 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   his own table; the ZHOOK glyph link across hands failed a blind tile gate (H178b). CROSS, CA and LL are dashes in his reading (no letter
   to check); f.176r's 4STEM/4PI p/c do not carry over (H179, H182 addendum).
 
+## H177c-H177f (runner 7, 29 Sept 2026, 00:15-00:47 UTC by the clock) -- f.176v, a second keyed leaf in Desportes's hand
+
+- **Where f.176v's text is (H177c-H177e).** Not at the head of fol. 177v (H177c: GATE FAIL, 0.339 vs 0.373/0.344). A location scan
+  (`family/h177d_scan.py`, run before its section was committed, disclosed) puts it at fol. 177v V06; f.176r as the positive control peaks at letter 0.
+  Independently of the scan, both blind passes read plain words "In foro conscientie" in f.176v L36, and the clear read has "[In] [foro] / conscienciae"
+  at V34/V35: about 2,300 signs vs about 2,270 letters from V06, one letter per sign.
+- **Consequence for key_period_f176.tsv (no edit made):** f.176r's text therefore runs through fol. 177v V05 (about 2,957 letters for 3,095 signs);
+  `build_f176_key.py` trimmed its clear at N 2,476 (0.8 per sign), so class counts from f.176r's last rows may be misaligned (margin held).
+- **f.176v keyed (H177f)**, `family/build_f176v_key.py L01-L45 --start V06 --check`, rows `family/key_period_f176v.tsv` (separate file, not merged):
+  2,923 signs, margin +0.180 over f.184r and fol. 177r (five stages +0.18 to +0.23). VBAR_A t (partner g), EBR l, VBAR_B s, INF u and the side-by-side
+  glyph o repeat f.176r's letters. The rare class ZHOOK reads i on 52 of 85 agreed signs (flat under both wrong texts). CROSS leans s (18/34).
+  The four-shaped signs split into a c/p group and an a/n group, coded inconsistently by the passes.
+- Files: passes `family/passes/f176v_signs{A,B}_L*.tsv`, `f177v_clearA_S09-S12.tsv`, `f178r_clearA_S01-S07.tsv`; crops by
+  `family/sheets/f176v_full/README.md`, `family/sheets/f178r_strips/`; prompts `family/passes/PROMPTS_f176_f175.md` sections H177c-H177f.
+
 ## Files to read
 
 | what | path | step |
