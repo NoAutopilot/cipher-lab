@@ -4601,8 +4601,9 @@ two OTHER tokens each that read_call_U and H238 already describe -- two vision c
 
 `family/h268_entendoit.py` (read-out fixed in the docstring before running; result `family/h268_entendoit_result.txt`, `--check` OK). Tomokiyo's S5 on L11 is
 "melente-noit" (his dash at L11 8, 4STEM; his n at L11 9, the 4-over-Pi). As French, "me l'ente?noit" needs a word "ente?noit": in the period corpus
-tools/data/fr16 (Catherine de Medicis t.1-2, Marguerite de Valois; 933k words) **entendoit 6, entendoient 1, "l entendoit" 5 -- and no enten- form at all
-(entenoit / entenoyt / entenoient / entenois 0).** Pre-stated read-out: **"entendoit is the word"**. What follows, as a lead and not a value: "me l'entendoit"
+tools/data/fr16 (Catherine de Medicis t.1-2, Marguerite de Valois; 933k words) **entendoit 6, entendoient 1 -- and no enten- form at all (entenoit / entenoyt / entenoient / entenois 0).** [Corrected
+10:33 UTC by H278: the section first also cited "l entendoit 5"; that count was the substring of "il entendoit" (qu'il / s'il entendoit), so the
+object-pronoun phrase "l'entendoit" is NOT attested in fr16; the word-level result above is unchanged.] Pre-stated read-out: **"entendoit is the word"**. What follows, as a lead and not a value: "me l'entendoit"
 puts n at L11 8 (inside the F61READ 4STEM a/n cell, grade S, so consistent) and **d at L11 9**, where his letter is n. H85's blind judge resolution of the
 known lines already read this span "melentendoit" (NOTES H85, control PASS), and H139 found this dash to be the only one of his that falls on a keyed sign.
 So the published letter n at L11 9 (the one source of the a/n cell for f.61's 4-over-Pi, V8: grade M) is contradicted by the French: either his n is a slip
@@ -4661,3 +4662,13 @@ HYPOTHESES.md row; `scripts/tomokiyo_spans.tsv` (the published transcript) is un
 unchanged), and `family/h269_4overpi_d_testkey.py` now reads witness (b) from the file, asserting it equals the published spans except S5; its result is
 byte-identical (`--check` OK), as are h268, h259, h261, h265, h240 and build_key_v6 (`--check` OK each). A build worker or verifier scores either witness
 by passing the path. No call.
+
+## Campaign step H278 (29 Sept 2026, 10:33 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the entendoit contexts, and a correction to H268
+
+`family/h278_entendoit_contexts.py` -> `family/h278_entendoit_contexts_result.txt` (`--check` OK): the seven fr16 contexts verbatim (six entendoit, one
+entendoient; all in Catherine de Medicis t.1-2): "qu'il entendoit et veoyoit que", "s'il entendoit de tels predicants", "s'il entendoit que je permisse",
+"qu'il entendoit preceder l'ambassadeur", "il entendoit augmenter", "ils entendoient qu'ils fortifioient". **Correction to H268:** its phrase count
+"l entendoit 5" was the substring of "il entendoit" -- the pronoun-object phrase l'entendoit (as in "me l'entendoit") is not attested in this small corpus
+(3 files); the word-level finding (entendoit 7 forms, enten- 0) stands and is the whole of the H268 argument. Carried into the H268 NOTES section,
+HYPOTHESES.md's H268 row, CAMPAIGN.md's H268 result cell and family/V9_PAGE.md (rule 10's propagation requirement). The sense in these contexts is
+"understood / intended", which fits "me l'entendoit" (understood it of me / from me) only loosely; the verifier weighs that. No call.
