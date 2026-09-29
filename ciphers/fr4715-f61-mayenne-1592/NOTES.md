@@ -5163,3 +5163,17 @@ N18-N42 under every HASH4 both H332 sign passes wrote at the same reconciled pos
 matches, else pass B; the four H334 crops use their re-cut boxes. README section added; key.tsv rows N18-N42 'unshaped' (the looped/4-head shape was
 not read on rows 7-12). Spot-checked by eye (N26, N38-N42 sit on hash-like signs in the sheet's own row). ASKS 99's text says 17 arrows on six
 sheets; widening it to 42 on twelve (about 30 minutes) is the orchestrator's call -- flagged in ROOM, ASKS.md not edited here. No reading, no call.
+
+## Campaign steps H335 and H336 (29 Sept 2026, 15:30-15:33 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- a gloss-free v7 check on f.106r: a non-test as gated; the frequency-key arm fails its own positive control (script-only)
+
+`family/h335_106r_v7_beam.py` (written and committed before running; result `family/h335_106r_v7_beam_result.txt`, `--check` OK): f.106r rows 1-12
+pooled draft (479 rows), runs of >= 4 v7-keyed signs (35 runs, 427 signs) resolved by the fr16 4-gram beam of scripts/f61beam_margin.py, score = log10
+per letter. **Real (v7) -0.9491; binned-permuted keys (200, seed 3350) mean -1.1361, p95 -0.9477, 12/200 >= real; frequency-only key -0.7352** ->
+pre-stated read-out "no signal beyond frequency".
+`family/h336_beam_posctl.py` (written before running; result `family/h336_beam_posctl_result.txt`, `--check` OK) runs H335's code unchanged on two
+leaves v7 was built from (in-sample, where the design must pass): **f.101r real -0.9416 vs binned p95 -0.9822 (0/200) but frequency key -0.7611 --
+FAILS its own gate in-sample; f.188r real -0.8393 vs binned p95 -0.9459 (0/200), frequency key -0.8786 -- passes.** So the gate's frequency-key arm
+cannot be met on a leaf whose key is right (a beam writes fr16's commonest 4-grams when every class holds e/s/a/...): **H335 is a non-test as gated, not
+a negative** (the "control cannot fail differently" shape of rule 3). The binned arm does separate in-sample (0/200 on both leaves); on f.106r it sits
+at its p95 (12/200, a borderline lead only). Its power at f.106r's 427 signs is unknown until the in-sample leaves are subsampled to that N (ARM3-ADJ's
+rule) -- H337. The frequency-key arm is retired for beam scores (kept for the H325/H329 one-to-one counts, where it is a fair control). No call.

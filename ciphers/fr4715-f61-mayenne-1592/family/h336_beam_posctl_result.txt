@@ -1,0 +1,8 @@
+f101r (in-sample):
+  draft rows 3081; keyed classes 22: PHI 4TRI VBAR_A H24 EBR_B HASH4 4STEM C43 EBR_A BETA ZBAR INF RSIGN VBAR_B DBL LOOPSTEM1 4PI CH ELOOP ISH ZHOOK C6; runs >= 4 signs 241, signs in them 2402
+  real (v7) -0.9416 log10/letter; (b) binned mean -1.1001 p95 -0.9822 max -0.9559, >= real 0/200; (c) frequency key -0.7611
+  read-out: no signal beyond frequency
+f188r (in-sample):
+  draft rows 1206; keyed classes 18: PHI 4TRI VBAR_A C43 4STEM H24 EBR_B ZBAR INF VBAR_B HASH4 4PI BETA RSIGN CH ISH EBR_A C6; runs >= 4 signs 87, signs in them 885
+  real (v7) -0.8393 log10/letter; (b) binned mean -1.1485 p95 -0.9459 max -0.8901, >= real 0/200; (c) frequency key -0.8786
+  read-out: consistent with key v7 on a held leaf in f.61's hand
