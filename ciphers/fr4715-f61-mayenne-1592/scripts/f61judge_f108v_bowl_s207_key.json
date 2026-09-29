@@ -1,0 +1,26 @@
+{
+ "tag": "f108v_bowl_s207",
+ "key": {
+  "SET-01": "swap 4BOWL<->C43",
+  "SET-02": "swap PHI<->SBS",
+  "SET-03": "swap C43<->ISH",
+  "SET-04": "swap VBAR_A<->ZHOOK",
+  "SET-05": "swap INF<->ISH",
+  "SET-06": "swap EBR_B<->INF",
+  "SET-07": "swap EBR_B<->SBS",
+  "SET-08": "swap 4PI<->C43",
+  "SET-09": "swap 4STEM<->4TRI",
+  "SET-10": "swap 4PI<->4STEM",
+  "SET-11": "swap 4BOWL<->4NOB",
+  "SET-12": "R",
+  "SET-13": "swap C43<->EBR_A",
+  "SET-14": "swap 4PI<->SBS",
+  "SET-15": "swap 4PI<->4TRI",
+  "SET-16": "swap PHI<->ZHOOK",
+  "SET-17": "T",
+  "SET-18": "swap PHI<->VBAR_A",
+  "SET-19": "swap ISH<->SBS",
+  "SET-20": "swap EBR_B<->ZHOOK",
+  "SET-21": "swap INF<->VBAR_B"
+ }
+}

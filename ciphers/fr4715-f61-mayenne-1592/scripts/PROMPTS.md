@@ -480,3 +480,11 @@ You are a palaeography assistant. Use no tool other than your image reader on th
 Task 1: transcribe, as well as you can, the first five words of each stretch of ORDINARY French handwriting on page A (a stretch = text between cipher runs), in page order, numbered A1, A2, ...; do not transcribe cipher signs.
 Task 2: for each stretch A1, A2, ..., say whether the same words appear on page B, and if so quote the words of page B there. Then say in one sentence whether page B reads as the same letter as page A written out in full (the cipher stretches of A replaced by French text), a different letter, or cannot tell.
 Do not guess what any cipher sign means. Report ONLY a TSV block with the header stretch A_words found_on_B B_words, one row per stretch, then the one-sentence verdict on its own line starting "VERDICT:". Nothing else.
+
+## H205 (29 Sept, Opus TEXT, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- f.108v bowl labelling vs pass codes, head-to-head, WRITTEN BEFORE THE CALLS
+
+Design in `scripts/f61judge108v_bowl.py`'s docstring (the row's "H85 design" changed to a head-to-head because f.108v already ranks 1 of 21 under
+the pass codes in H85/H94/H100). Control first: `f61judge_known_h51_swaps207_sets.txt` (one-swap hard null, fresh seed 207), gate rank 1 of 21, a
+FAIL stops the step. Then one call on `f61judge_f108v_bowl_s207_sets.txt` (274 positions per set; target and the pass-code set differ at 25).
+Prompts: the H94 no-leak prompt verbatim (spelling examples "icelluy", "soubz", "advis"), control with the six-line list (L01, L03, L05, L07, L08,
+L11), target with "seven manuscript lines (L01 to L07)"; only the file name changed otherwise. Key files never named.
