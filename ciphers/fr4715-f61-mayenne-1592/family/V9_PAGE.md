@@ -215,3 +215,5 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
 - **V12's L01/11 hold (H428b):** gate 8/8 with an in-hand hash reference (f.108r L05/19) and the adjacent 4-over-Pi as a check (-> 4PI): L01/11 ->
   none at 3/3. Not 4PI (V12's one read not reproduced); the f.108r reference is the crossed-loop hash, not the 4-over-hash the reader describes,
   so HASH4 stays as coded. Closeable as "not 4PI"; a 4-over-hash reference in f.61's hand (f.108v) would be needed to confirm the class.
+- **L01/11 with the 4-over-hash on the panel (H431):** gate 8/8 (f.108v 4-over-hash knowns right, L01/12 -> 4PI): L01/11 -> the 4-over-hash at
+  3/3, reader caveat "overwritten, possibly a correction, low confidence". HASH4 (d/q) as coded, grade M; V12's hold resolves that way.

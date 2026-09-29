@@ -1,0 +1,2 @@
+gate: 8/8 known (>= 7); f.108v 4-over-hash known -> ['R1', 'R1'] (both must be R1); check L01/12 (4PI) -> R3
+f.61 L01/11 W1-W3: ['R1', 'R1', 'R1'] -> the 4-over-hash (HASH4 d/q confirmed; V12's hold closed)

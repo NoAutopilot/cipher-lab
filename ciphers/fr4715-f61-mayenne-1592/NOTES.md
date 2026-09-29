@@ -6145,3 +6145,14 @@ the meter is unaffected. For a verifier: V12's hold on L01/11 can be closed as "
   to a verifier's decision; FAIL -> the chooser is retired for f.61. Today it prints "waiting". `--selftest` (a synthetic gloss built from the
   chooser's own letters, 17 words, 53 two-way cells) scores the chooser 53/53: PASS (plumbing only; says nothing about accuracy). f.211r
   (ASKS 93) and f.106r (ASKS 99) adapters are not written; their pack formats are not fixed.
+
+## Campaign step H431 (29 Sept 2026, 20:42-20:44 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- f.61 L01/11 reads as the 4-over-hash when that form is on the panel (1 vision call)
+
+H428b's panel had only the looped hash; L01/11 matched none. `family/h431_l01_11_4overhash.py` (script, key, prompt pushed 1938ddfd before the
+call): R1 the 4-over-hash in f.61's hand, f.108v L03/6 (one of the f.108v HASH4 H162's gated read called 'four present'; tile trimmed of sheet
+padding before the call, disclosed), R2 the looped hash f.108r L05/19, R3 4PI L11/9, R4 4STEM f.108r T1/2, R5 C43, R6 PHI, R7 CROSS; check item
+L01/12. Reply verbatim `family/passes/h431_reply.tsv`. **Gate 8/8 known (>= 7), both f.108v 4-over-hash known items (L03/33, L05/34) -> R1,
+check L01/12 -> R3 (4PI): PASS. L01/11: R1 at W1, W2, W3 -> the 4-over-hash**, i.e. the reader code HASH4 (d/q) stands. The reader's own
+caveat: the mark is "heavily overwritten ... possibly a correction", R1 or R3, low confidence -- so this is grade-M transcription support, not
+firm. With H428b (not the looped hash, not 4PI) and V12's single 4PI read, the reads on L01/11 are 4PI 1 (V12), none 3 (H428b, no 4-over-hash on
+the panel), 4-over-hash 3 (H431): for a verifier, V12's hold resolves to "HASH4 as coded, M". Meter unchanged.
