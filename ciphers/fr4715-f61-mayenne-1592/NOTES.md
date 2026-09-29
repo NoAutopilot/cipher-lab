@@ -5505,3 +5505,29 @@ result `family/h370_bowl_97r_result.txt` (`--check` OK):
   H371 (full split + order gain)"**.
 What it means: the readers' 4TRI on de Diou's f.97r is, like f.124r (H360, 0.75) and f.101r (H365, 0.64), more often the no-bowl sign than the bowl
 sign; the leaf's 233-to-44 4TRI/C43 imbalance is the same code conflation. A transcription finding for the f.97r draft; nothing applied. 1 call, 1.5 USD.
+
+## Campaign step H371 (29 Sept 2026, 17:31-17:36 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.97r: splitting 4TRI by bowl LOWERS v7's order gain (read-out "lowers"), with a caveat on one chunk (2 vision calls)
+
+`family/h371_97r_4tri_split.py` (H360's scoring code with the leaf and H370's answers swapped in), key `family/h371_items.tsv`, prompt note H371,
+committed before the calls; the runner did not look at the sheets. The other 77 agreed 4TRI of f.97r L17-L43 in two blind Opus calls (39 + 38),
+H193's strips in each; replies `family/passes/h371_reply_c1.tsv`, `_c2.tsv`; result `family/h371_97r_4tri_split_result.txt`:
+- **Gates c1 18/20, c2 18/20 -- PASS.** c1: no 23, yes 13, n 3; **c2: no 37, n 1, yes 0.**
+- **All 127 agreed 4TRI of L17-L43 (H370 + H371): no bowl 89, bowl 33, n 5.** Split draft `passes/recf97r_split/` relabels the 89 as C43 (L01-L16 not
+  bowl-read, left as transcribed).
+- **Order gain (v7 unchanged): as transcribed 0.0566/0.0514/0.0509 -> split 0.0508/0.0455/0.0435, lower under all three seeds; H344 shuffled targets on
+  the split 0/3.** Pre-stated read-out: **"lowers"**.
+What it means, and the caveat: on de Diou's f.124r the same split doubled the order gain (H360); on f.97r it costs about 0.006 per seed. Taken at face
+value, the no-bowl tokens under 4TRI on f.97r fit v7's c/p/t cell better than its a/n cell -- the opposite of f.124r and of f.101r's period gloss. But
+chunk c2 answered 'no' to every item it could read (37/37), while c1 (0.64), H370 (0.59), H360 (0.77) and H365 (0.70) never did; a reader that passes
+its part-1 anchors yet answers part 2 by default would look exactly like this, and the gate cannot see it (the anchors are all in part 1). So H371's
+read-out stands as pre-stated but rests on one chunk whose answers are uncorroborated; H373 re-reads c2 in a fresh call before anything is made of it.
+Also: only 127 of f.97r's 348 4TRI were split (L01-L16 and non-agreed tokens untouched), so this is a partial split. For VERIFY-F61-V10/V11; nothing
+applied. 2 calls, cost estimate 2.0 USD.
+
+## Campaign step H372 (29 Sept 2026, 17:36 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- one bowl-by-code table for the verifier (script-only)
+
+`family/h372_bowl_code_table.py` -> `family/h372_bowl_code_table_result.txt` (`--check` OK): per leaf and readers' code, the bowl answers of every
+gated H359-design call (only calls at >= 17/20 counted; a re-read token counts once, the later call's answer), with H194, H199/H218 and f.101r's
+period-letter cross-tab carried verbatim. No-bowl share of the readers' 4TRI: **f.124r 0.77 (261), f.101r 0.70 (222), f.97r 0.73 (122), f.106r 0.47
+(17), f.61 0.17 (6)**; f.106r 4STEM 0.56 (55); C43 no-bowl 0.95-1.00 on every leaf. f.106r's H231/H368 re-reads disagree on 2 of 24 tokens. The f.97r
+rows include H371's c2 chunk, which H373 re-reads; the table regenerates from the replies on disk. Descriptive, for VERIFY-F61-V11; nothing applied.

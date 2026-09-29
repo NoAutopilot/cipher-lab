@@ -1,0 +1,31 @@
+leaf	calls (gate/20)	code	bowl yes	no bowl	n	no-share	re-read tokens (disagree)
+f.124r (de Diou)	H359 18 H360-c1 18 H360-c2 19 H360-c3 18 H360-c4 19	4TRI	59	202	9	0.77	0 (0)
+f.124r (de Diou)	H359 18 H360-c1 18 H360-c2 19 H360-c3 18 H360-c4 19	C43	0	20	0	1.00	0 (0)
+f.101r (de Diou)	H362 17 H365-c1 19 H365-c2 18 H365-c3 17 H365-c4 18	4TRI	67	155	19	0.70	0 (0)
+f.101r (de Diou)	H362 17 H365-c1 19 H365-c2 18 H365-c3 17 H365-c4 18	C43	1	19	0	0.95	0 (0)
+f.97r (de Diou)	H370 19 H371-c1 18 H371-c2 18	4TRI	33	89	5	0.73	0 (0)
+f.97r (de Diou)	H370 19 H371-c1 18 H371-c2 18	C43	0	19	1	1.00	0 (0)
+f.106r (secretary)	H231 18 H368-c1 19 H368-c2 18	4STEM	24	31	4	0.56	24 (2)
+f.106r (secretary)	H231 18 H368-c1 19 H368-c2 18	4TRI	9	8	2	0.47	24 (2)
+f.106r (secretary)	H231 18 H368-c1 19 H368-c2 18	C43	0	27	0	1.00	24 (2)
+f.61 (target, Mayenne's hand)	H367 19	4PI	0	2	0	1.00	0 (0)
+f.61 (target, Mayenne's hand)	H367 19	4STEM	0	1	0	1.00	0 (0)
+f.61 (target, Mayenne's hand)	H367 19	4TRI	5	1	0	0.17	0 (0)
+f.61 (target, Mayenne's hand)	H367 19	C43	0	9	0	1.00	0 (0)
+
+f.61, H194 (count-matched sheets, L03/L05/L08/L11; gate 18/20): bowl yes: Tomokiyo c/p 5 a/n 0; bowl no: c/p 0 a/n 9; Fisher p 0.0005
+carried verbatim from h218_code_sessions_result.txt (f.108v H199; f.176r/v H193; f.108r H202):
+  f.108r L02-L03	H202 (pass A code)	4PI	no:5
+  f.108r L02-L03	H202 (pass A code)	4STEM	no:3
+  f.108r L02-L03	H202 (pass A code)	4TRI	no:1 yes:3
+  f.108r L02-L03	H202 (pass A code)	C43	no:8
+  f.108v	H199 (H59 reconciled code)	4STEM	n:4 no:2 yes:19
+  f.108v	H199 (H59 reconciled code)	4TRI	no:6
+  f.108v	H199 (H59 reconciled code)	C43	no:41
+  f.108v	H199 (H59 reconciled code)	OTHER	n:1
+  f.108v	H199 (H59 reconciled code)	ZHOOK	n:1
+  f.176r	H193	4TRI (both passes)	n:2 no:31 yes:7
+  f.176v	H193	4TRI (both passes)	no:1 yes:9
+  f.176v	H193	4TRI|C43 (passes split)	no:10
+f.101r period letter by bowl (h365 result): period letter by bowl (all answered 4TRI): n:a/n 9 n:c/p/t 3 n:none 4 n:other 3 no:a/n 118 no:c/p/t 12 no:none 5 no:other 20 yes:a/n 19 yes:c/p/t 33 yes:other 15
+f.101r bowl-letter agreement over 4TRI 151/182 = 0.83 (H364's bar 0.75 tracks, < 0.6 does not)

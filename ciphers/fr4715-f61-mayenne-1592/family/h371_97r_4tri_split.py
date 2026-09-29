@@ -12,6 +12,7 @@ so H360's full split on fr.3982 f.97r (de Diou, HELD leaf with an order signal f
    python3 h371_97r_4tri_split.py tiles SCRATCH NATIVE | score [--check]"""
 import csv, os, random, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); P = f"{HERE}/passes"; sys.path.insert(0, HERE)
+CHECK = "--check" in sys.argv   # H371: read before gains() resets sys.argv (h360_124r_4tri_split.py has the same reset, so its --check rewrites)
 def rd(f): return [r for r in csv.DictReader((l for l in open(f) if not l.startswith("#")), delimiter="\t")]
 def pool():
     import h370_bowl_97r as h
@@ -86,7 +87,7 @@ def score():
     ro = "the split raises the order gain" if all(x > 0 for x in d) and clean else "lowers" if all(x < 0 for x in d) else "unclear"
     out.append(f"read-out: {ro}")
     txt = "\n".join(out) + "\n"; res = f"{HERE}/h371_97r_4tri_split_result.txt"
-    if "--check" in sys.argv:
+    if CHECK:
         ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt, end="")
 if __name__ == "__main__":
