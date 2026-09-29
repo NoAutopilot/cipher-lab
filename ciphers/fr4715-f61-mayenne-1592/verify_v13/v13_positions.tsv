@@ -1,0 +1,31 @@
+# VERIFY-F61-V13 (29 Sept 2026): my own sign centres, placed by eye on gridded crops of three sources; not the runner's position rows,
+# tiles or prompts. src: F61 = images/src_ark_12148_btv1b52509819x_f137_500_1880_3320_1420.jpg (native region px);
+# F108R = images/stitch_f108r_f195_1250_450_3600_860.jpg; F108V = images/person_pack_108v/f108v_L03.jpg (3x sheet, label strip excluded).
+# code = the transcription class at that token (pass A for f.61; pass108A/108C for f.108r; the f.108v sheet's pass A numbering).
+id	src	line	pos	code	x	y	role
+T_L11_8	F61	L11	8	4STEM	790	1330	target
+T_L01_11	F61	L01	11	HASH4	3072	85	target
+T_L02_0	F61	L02	0	LL?	140	212	target
+R_4STEM	F108R	L02A	2	4STEM	420	180	ref
+R_CROSS	F61	L07	10	CROSS	3020	850	ref
+R_4PI	F61	L11	9	4PI	893	1335	ref
+R_HASHL	F108R	L05C	19	HASH4-looped	1740	505	ref
+R_HASH4O	F108V	L03	6	HASH4-4over	1400	225	ref
+R_LL	F61	L05	16	LL	2045	585	ref
+R_PHI	F61	L08	1	PHI	150	985	ref
+R_C43	F61	L03	8	C43	1385	345	ref
+R_ZHOOK	F61	L11	11	ZHOOK	1114	1335	ref
+R_4TRI	F61	L08	11	4TRI	1183	990	ref
+R_BETA	F61	L11	1	BETA	114	1335	ref
+R_VBARA	F61	L11	6	VBAR_A	614	1330	ref
+A_4STEM	F108R	L02A	7	4STEM	795	185	anchor
+A_HASHL	F108R	L05C	9	HASH4-looped	992	495	anchor
+A_HASH4O	F108V	L03	33	HASH4-4over	1945	985	anchor
+A_CROSS	F61	L01	1	CROSS	2100	85	anchor
+A_4PI	F61	L01	12	4PI	3150	88	anchor
+A_PLAIN_IL	F61	L02	w	PLAIN	1920	215	anchor
+A_PLAIN_LES	F61	L03	w	PLAIN	2370	345	anchor
+A_C43	F61	L05	9	C43	1383	600	anchor
+A_PHI	F61	L03	4	PHI	1027	340	anchor
+A_ZHOOK	F61	L07	11	ZHOOK	3113	860	anchor
+A_4TRI	F61	L03	10	4TRI	1555	345	anchor
