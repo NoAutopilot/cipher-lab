@@ -253,3 +253,13 @@ attributes, and state in one sentence the criterion that separates the groups. D
 block with the header tile<TAB>group<TAB>head<TAB>loops<TAB>verticals<TAB>note, one row per tile (tile 1 .. tile 24, written 'tile N'), then the
 one-sentence criterion, then one line 'signs described: N'. Nothing else."
 Read-out fixed in the script's docstring (group G = the group holding most f.108v tiles; Fisher G x leaf).
+
+## H214 (runner 8 session_011Taenrv3JSdk7VjpiBjids, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H212's looped-hash attribute against period letters, on H195's unchanged 60 strips (<scratch>/h195/sheet_01..03, regenerated; h195_items.tsv
+byte-identical). Scorer `h214_loops.py` committed with this section; direction fixed: yes = the i group. The runner has not looked at these strips.
+1 Opus vision call, inline reply: "You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file.
+Each item on <h195/sheet_01..03.jpg> (H01-H60, 20 per sheet) is a strip of a cipher row with a red triangle under one sign; look only at the sign
+directly above the triangle. Question: does that sign carry two small closed loops sitting on a hash (crossing strokes), rather than a figure-4
+stroke rising above it or nothing? Answer yes or no; if the sign above the triangle is not hash-like or cannot be told, answer n. No letters are
+involved. Reply inline ONLY with a TSV block 'item<TAB>answer', one row per item, nothing else."
+GATE >= 17/20 anchors in the pre-stated direction, else CONTROL FAIL and stop.
