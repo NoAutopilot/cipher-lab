@@ -4335,3 +4335,12 @@ period leaves (H224/H227), not i. For the verifier and H234. Nothing merged.
   H233 with H224/H227's period letters), 4PI -> unread x2 (a 4 over a Pi, a sign with no period value yet, H233). Only OTHER x2 stays wider.
 For the verifier: the shape work narrows every wider f.61 token but OTHER's two, and correctly moves 4PI to unread rather than carry f.101r's letters onto a
 different sign. Nothing merged; the key stays v5.
+
+## Campaign step H232 (29 Sept 2026, 06:28-06:33 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- where f.61's unread classes occur (script-only)
+
+`family/h232_unread_census.py` (committed before the run; result `family/h232_unread_census_result.txt`, `--check` OK). f.61's unread: CA 10, C6 8, LOOPBAR 4,
+CROSS 2, LL 1. Elsewhere (reconciled drafts; letters where aligned): f.101r CA 6, C6 2 (e 2), LOOPBAR 1 (e), CROSS 1 (p); f.188r CA 6, C6 1 (e), LOOPBAR 1 (u),
+LL 1 (e); f.106r C6 1 (held: m); f.124r CA 1, C6 4, LOOPBAR 3, CROSS 3 (held gloss); f.97r CA 8, C6 3, LOOPBAR 3, CROSS 7, LL 1 (no alignment); f.108v LOOPBAR 2,
+CROSS 2; f.274 none. CA's letters are scattered (p 2, q, s, t, c, z), consistent with H63's finding that CA is cipher signs inside word runs. C6 reads e at all
+three lettered positions -- small n, but the one lead. Added H236 (f.108r's 4PI shape: the same hand's overlay reads it d 4 / p 1), H237 (C6 glyph link), H238
+(f.61's two OTHER tokens). Nothing merged.

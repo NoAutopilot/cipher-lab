@@ -1,0 +1,10 @@
+leaf: draft counts | letters at aligned positions
+108v: LOOPBAR 2 CROSS 2 | (no alignment)
+f101r: CA 6 C6 2 LOOPBAR 1 CROSS 1 | CA: -2 q1 s1 t1 c1; C6: e2; LOOPBAR: e1; CROSS: p1
+f106r: C6 1 | C6: m1
+f108vg: none
+f124r: CA 1 C6 4 LOOPBAR 3 CROSS 3
+f124s_c0: none | (no alignment)
+f188r: CA 6 C6 1 LOOPBAR 1 LL 1 | CA: p2 s1 c1 z1 -1; C6: e1; LOOPBAR: u1; LL: e1
+f274: none
+f97r: CA 8 C6 3 LOOPBAR 3 CROSS 7 LL 1 | (no alignment)
