@@ -1,0 +1,8 @@
+leaf / code: form -> letters (A 4-head, B looped, C plain, D 2#, N)
+f.101r H24: A 1 (i/x 1); N 11 (i/x 11)
+f.101r HASH4: A 47 (d/q 34 i/x 1 other 12); B 5 (i/x 2 other 3); C 1 (other 1); D 2 (other 2); N 6 (d/q 2 i/x 1 other 3)
+f.106r (held) H24: D 13
+f.106r (held) HASH4: A 4; B 13
+f.108r HASH4: A 1; B 9
+f.108v HASH4: A 9; B 5
+f.188r HASH4: A 23 (d/q 12 i/x 3 other 8); C 1 (i/x 1); D 9 (i/x 8 other 1)

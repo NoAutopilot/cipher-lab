@@ -4287,3 +4287,13 @@ Result `family/h231_bowl_106r_h199_result.txt` (`--check` OK):
 So on f.106r the no-bowl sign is always coded C43 when C43 is written, but the 4TRI code carries both signs, as on f.176r and f.101r (H218's table), and
 4STEM mostly the no-bowl sign. Any f.106r 4-family count pooled into a key would need re-splitting by these shape answers (positions in the reply/key
 files). Descriptive; nothing merged.
+
+## Campaign step H223 (29 Sept 2026, 05:46-05:48 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the hash family by shape, code and letter (script-only, for the verifier)
+
+`family/h223_hash_table.py` (result `family/h223_hash_table_result.txt`, `--check` OK), from the blind form answers on disk (H212, H220, H221, H224, H226, H227):
+- f.101r HASH4: A 47 (d/q 34, i/x 1, other 12), B 5 (i/x 2, other 3), D 2, C 1, N 6. f.101r H24: N 11, A 1 (H220 offered no 2# category; at matched scale
+  H222 sorted H24 with the 2# group 5 of 6).
+- f.188r HASH4: A 23 (d/q 12, i/x 3, other 8), D 9 (i/x 8), C 1.
+- f.106r (held, no letters): HASH4 B 13, A 4; H24 D 13. f.108v HASH4: A 9, B 5. f.108r HASH4: B 9, A 1.
+For a v6 build: the 4-headed hash reads d/q on both period-glossed leaves; the 2# sign reads i/x (f.101r's H24, f.188r's mis-coded HASH4); the looped hash
+is common only on f.61's hand (f.108r/v) and the secretary's f.106r, and has no period value. Pooled HASH4 counts mix all three. Nothing merged.
