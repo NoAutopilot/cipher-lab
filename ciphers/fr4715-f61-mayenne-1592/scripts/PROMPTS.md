@@ -800,3 +800,15 @@ mark; other marks may show at the sides. For the centre mark ONLY, answer one of
 8, with or without a stem), SIDEBYSIDE (it has two closed loops next to each other at the SAME height, at the head of a stem), NEITHER (any other
 shape), or unclear. Ignore ink weight, size, blur and the hand. Answer inline, one line per tile, exactly 'D01<TAB><STACKED|SIDEBYSIDE|NEITHER|unclear>',
 D01 to D20 in order, and nothing else."
+
+## H322 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.211r's two disagreement columns, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h322/sheet_01.jpg (family/h322_211r_recon.py tiles; key family/h322_items.tsv; 6 tiles: targets cols 13 and 17, known EBR_B cols 5,
+14 and VBAR_A cols 1, 18, all from the run's own 2x strip). The runner saw the f.211r DBL/SBS tiles in H324's placement check, not these columns. A
+fresh reader. Prompt (verbatim): "Read the image /…/h322/sheet_01.jpg with your image reader only; use no other tool. It holds 6 numbered tiles
+(R01-R06) cut from one 16th-century French cipher line. In each tile two black triangles point at the centre sign. For the centre sign ONLY, answer
+one of three shapes: EBRA = an E-like bracket open to the right whose top bar is joined to the foot of the vertical by a fine hairline diagonal, the
+foot bar longer than the top bar and tapering into a tail; EBRB = a plain squared C or gamma open to the right: top bar and foot bar on a vertical, no
+diagonal, the top bar longest, often a short spur of the vertical above the top bar; VBARA = a closed down-pointing triangle whose top side is a
+horizontal bar, nothing above the bar, no second bar; or unclear. Answer inline, one line per tile, exactly 'R01<TAB><EBRA|EBRB|VBARA|unclear>', R01
+to R06 in order, and nothing else."
