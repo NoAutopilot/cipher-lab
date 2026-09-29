@@ -1,0 +1,6 @@
+repeat control: 19 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+by rec code: 4STEM yes 19 no 2 n 4; 4TRI yes 0 no 6 n 0; C43 yes 0 no 41 n 0; OTHER yes 0 no 0 n 1; ZHOOK yes 0 no 0 n 1
+by A code: 4STEM yes 19 no 4 n 6; 4TRI yes 0 no 4 n 0; C43 yes 0 no 41 n 0
+by B code: - yes 0 no 0 n 1; 4STEM yes 18 no 3 n 4; 4TRI yes 0 no 6 n 0; C43 yes 0 no 40 n 0; CROSS yes 1 no 0 n 0; ZHOOK yes 0 no 0 n 1
+reconciled 4TRI yes share 0.00, C43 no share 1.00 -> the readers' split does not follow the bowl on f.108v
+all 74 f.108v 4-family targets: bowl yes 19, no 49, n 6

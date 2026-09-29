@@ -3902,3 +3902,26 @@ Open for runner 8: **H199** (bowl question on f.108v's 4-family, H194's design: 
 `family/sheets/f176v_full/README.md` and `f176r_full/README.md`, natives canvases 327 and 328). **H200** needs a person (fol. 179 desk pack; the orchestrator
 writes the ASKS row). Extraction helper for inline replies: the runner parsed each subagent's hand-back from its task transcript (any string holding the
 TSV header) and wrote it verbatim; files in family/passes/ carry "# written verbatim from the inline reply (runner 7 extract.py)".
+
+## Campaign step H199 (29 Sept 2026, 02:12-02:18 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- the bowl sign on f.108v is the readers' 4STEM, not 4TRI (descriptive)
+
+Pre-registered (PROMPTS_f176_f175.md section H199; `family/h199_bowl_108v.py` and key `family/h199_items.tsv`, commit 8890818f, before the call).
+Targets: all 74 columns of the H59 f.108v draft with a 4-family code in the reconciled draft, pass A or pass B (reconciled C43 41, 4STEM 25, 4TRI 6,
+OTHER 1, ZHOOK 1), cut from the native `family/images/3983_f108v.jpg` at pass A's x (the 3x crops stop 34 native px below the row centre and clip
+the bowl), marker above the strip because the leaf's interlinear gloss sits under it. The H193 control strips were regenerated from the Gallica
+natives (canvases 327, 328; 2 requests, same hashes as logged) and `h193_items.tsv` reproduced byte-identical. Disclosure: the runner looked at target
+sheets 01 and 04 for legibility (a few markers sit about half a sign off). One Opus vision call, blind (reply verbatim, `family/passes/h199_reply.tsv`).
+Result `family/h199_bowl_108v_result.txt` (`--check` OK), positions `family/h199_bowl_positions.tsv`:
+- **Repeat control: 19 of 20 f.176v anchors in their group's direction (gate >= 17): PASS** (H193 19/20, H194 18/20).
+- **By reconciled code: 4STEM bowl yes 19, no 2, n 4; 4TRI yes 0, no 6; C43 yes 0, no 41.** Pass A and pass B separately give the same picture
+  (4STEM 19/4/6 and 18/3/4; 4TRI 0/4 and 0/6; C43 0/41 and 0/40).
+- Pre-stated read-out: reconciled 4TRI yes share 0.00, C43 no share 1.00, so **"the readers' split does not follow the bowl on f.108v"** in the
+  registered sense. It follows it under another code: on this leaf the passes wrote the bowl sign as 4STEM.
+What it says, descriptively: f.108v, in f.61's hand, carries both 4-signs (bowl 19, no bowl 49, n 6 of 74). The H59 passes coded the bowl sign
+4STEM and the no-bowl sign mostly C43, with 4TRI for six more no-bowl signs. This is the third time the 4-family codes have swapped between reading
+sessions (H190 f.176r/f.176v; H194's f.61 readers wrote the bowl sign 4TRI). A 4-family code's meaning therefore depends on the pass session that
+wrote it. The f.108v judge and skeleton cells (f61joint_h51_map: 4STEM a/n, 4TRI c/p, C43 a/n) key about 19 bowl signs a/n, where the rule validated on
+H193/H194 (bowl = c/p against the period decipherment and against Tomokiyo) says c/p, and key the six no-bowl 4TRI as c/p. Key v5's pooled 4STEM
+support mixes c/p and a/n on f.101r (a/n 25, c/p 16), which fits the same swap. H198's OPEN for 4TRI on f.108v is explained: those six signs are not the
+bowl sign. Next: H201 (script-only sequence gain with the 4-family relabelled by bowl), H202 (the bowl at f.108r's period-glossed positions),
+H203 (which v5 4-family cells mix the two signs). No class change, nothing merged.

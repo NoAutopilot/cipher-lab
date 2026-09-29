@@ -167,6 +167,14 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - Files: `family/h183_f176r_n1.py`, `build_f179_key.py`, `h186_adj.py`, `h189_mark.py`, `h187_f61_f176v.py`, `h190_4fam.py`, `h191_4fam_f61.py`,
   `h192_repl.py`, `h193_attr.py`, `h194_bowl_f61.py` (each `--check`), replies in `family/passes/`.
 
+## H199 (runner 8, 29 Sept 2026, 02:12-02:18 UTC by the clock)
+
+- **The bowl on f.108v (f.61's hand, 74 4-family columns of the H59 draft):** repeat control 19/20 PASS. The bowl sign is the passes' **4STEM**
+  (yes 19, no 2, n 4); 4TRI no 6/6; C43 no 41/41. So on f.108v the H59 passes wrote the bowl (c/p) sign as 4STEM, not 4TRI: a third code swap
+  between sessions. The f.108v cells (4STEM a/n) key about 19 bowl signs a/n, where the H193/H194 rule says c/p. For the verifier: any 4-family cell
+  built from pooled codes across pass sessions (v5's 4STEM on f.101r: a/n 25, c/p 16) may mix the two signs. Files `family/h199_bowl_108v.py`
+  (`--check`), `h199_items.tsv`, `h199_bowl_positions.tsv`, `passes/h199_reply.tsv`.
+
 ## Files to read
 
 | what | path | step |
