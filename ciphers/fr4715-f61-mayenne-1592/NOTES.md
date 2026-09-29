@@ -5254,7 +5254,7 @@ since bins of 3 give only two; result `family/h345_seqgain_perclass_result.txt`)
   (2) the best alternatives are mostly one-letter cells (C6 e, ELOOP r, VBAR_B s), so the gain statistic appears to favour narrow cells: a broad v7
   cell (4STEM, RSIGN, 4TRI) ranks low partly for its size. A size-matched comparison is H349.
 - For the verifier, as a pointer only: EBR_B scores worst-or-near on both held leaves, the same class whose form split the campaign has already flagged (H321, H322); its cell
-  i/l is v7's l/y under the loader's i/y fold (key row: 'y = folded i/y of the clear'), not a different cell (corrected 16:2x the same day); VBAR_A g/t ranks well on both held leaves by this statistic, unlike H331's gloss count on
+  i/l is v7's l/y under the loader's i/y fold (key row: 'y = folded i/y of the clear'), not a different cell (corrected 16:19 UTC the same day); VBAR_A g/t ranks well on both held leaves by this statistic, unlike H331's gloss count on
   f.124r (below its binned mean there) -- a disagreement between two instruments, recorded, not resolved (rule 4). No call, no cell changed.
 
 ## Campaign step H348 (29 Sept 2026, 16:01-16:05 UTC by the commit stamps and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r rows 13-18 sign passes; the order statistic on rows 1-18 shows no signal (power at 51 runs not yet measured)
