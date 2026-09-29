@@ -1,0 +1,7 @@
+gate 1 (H193 anchors): 18/20 (>= 17); gate 2 (known f.61 strips): 6/6 (>= 5)
+targets 80: new n 10 no 47 yes 23
+new vs runner: n 66, agreement 0.85, kappa 0.68; new vs V11: n 66, agreement 0.77, kappa 0.56; runner vs V11 (same tokens): n 70, agreement 0.71, kappa 0.44
+read-out: the disagreement is V11's design (prompt/anchors)
+  letters, new: n 63; no&a/n 38 no&c/p/t 4 yes&c/p/t 19 yes&a/n 2; share 0.905, perm p 0.0001; P(a/n|no) 0.90, P(a/n|yes) 0.10 -> tracks
+  letters, runner: n 68; no&a/n 37 no&c/p/t 5 yes&c/p/t 18 yes&a/n 8; share 0.809, perm p 0.0001; P(a/n|no) 0.88, P(a/n|yes) 0.31 -> tracks
+  letters, V11: n 67; no&a/n 27 no&c/p/t 4 yes&c/p/t 19 yes&a/n 17; share 0.687, perm p 0.0003; P(a/n|no) 0.87, P(a/n|yes) 0.47 -> unclear
