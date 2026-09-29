@@ -5103,3 +5103,9 @@ read identically, 49 letters, only 12 signs under them** (5 keyed classes). Real
 frequency key 4 -> pre-stated read-out **"no signal beyond frequency"**. At 12 signs the null spans nearly the whole range, so this is untestable at
 this N, not a negative on v7 in the secretary's hand; a test there needs more of f.106r's gloss read (its other rows were never cut) or a person's
 gloss reading. H325/H328's f.124r lead is the only held-leaf result so far. No call.
+
+## Campaign step H327 (29 Sept 2026, 13:24 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- the instrument lesson, written down (notes only)
+
+A paragraph "INSTRUMENTS" at the head of CAMPAIGN.md's "Attempts already made" and on `family/V9_PAGE.md`: the free letterform sort retired for LL
+after three gate failures; the forced choice with known answers passed twice and failed only on poor or confusable known-answer tiles; held-leaf key
+checks need a frequency-matched control (H325 -> H328). No call.
