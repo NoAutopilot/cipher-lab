@@ -5145,3 +5145,13 @@ with f.108r (H34, shared-wrong agreement) and f.124r (0.42) it is the fourth uni
 "approach is the limit" clause this is logged **untested-by-this-tool** (HYPOTHESES.md), and rows 13-18 are not sent to the same passes. The one
 instrument left for this gloss is a person's read (ASKS 99's f.106r desk pack, ASKS 88 for f.108r). Cost estimate 5.5 USD (four Opus image calls,
 42 images each). No reading, no merge, no class change.
+
+## Campaign step H334 (29 Sept 2026, 15:20 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r right-end crops re-cut (script-only)
+
+`family/h334_recut.py` (`--check` OK). A ruled strip of x 3600-4650 shows the rows at the right edge only about 35 px above their left-edge centres
+(L08 1400, L09 1506, L10 1612 native): the rows rise through the middle of the leaf and flatten at the right, so H332's straight `--slope -0.028`
+window sat 40-50 px above the row in L08 s7, L09 s6-s7 and L10 s7 -- exactly the four crops both sign readers flagged. `--track 18` was tried and is
+worse (L10-L12 drift one row down). The four crops are re-cut at eye-set centres (boxes under `recut_h334` in `family/sheets/f106r_b_bands.json`);
+each now holds its own cipher row with its gloss above (checked by eye). H332's pass rows for those four crops are therefore unreliable (A skipped them;
+B read them from the neighbouring band at conf l); the count in H332 does not change its read-out (its words under those crops are few), and any
+later use of rows 7-12 uses the re-cut crops. No call.
