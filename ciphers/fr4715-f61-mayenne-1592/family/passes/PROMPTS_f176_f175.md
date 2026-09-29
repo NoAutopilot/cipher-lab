@@ -121,3 +121,11 @@ line of strip 09 skipped if it repeats V27) -> `passes/f177v_clearA_S09-S12.tsv`
 5 Opus vision calls, inline replies written verbatim: passes A/B of f.176v L33-L39 and of L40-L45 (H177c prompt, rows changed) and one read of
 fol. 178r strips 1-7 (`sheets/f178r_strips/`; the stage 2c strip prompt, lines numbered R01, R02, ...) -> `passes/f178r_clearA_S01-S07.tsv`.
 Then `build_f176v_key.py L01-L45 --start V06` (the whole of f.176v; clear V06-V40 + R01-), gate as H177c.
+
+## H184 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+Is fol. 178r the decipherment of fol. 179's cipher? Crops: `sheets/f179_full/README.md` (21 rows, s1..s3). 2 Opus vision calls: blind sign passes
+A/B of fol. 179 L01-L08 (H177c prompt, file pattern f179_Lnn_sK.jpg) -> `passes/f179_signs{A|B}_L01-L08.tsv`. Then `build_f179_key.py L01-L08`.
+GATE (both parts, in the builder's docstring): (1) location scan peak at or after fol. 178r R01 - 300 letters, beating the null p99 and the best
+non-overlapping window by >= 0.05; (2) build from R01, margin >= +0.10 over f.184r, fol. 177r and fol. 177v V06- (f.176v's clear).
+Dry run before the calls, with f.176v L01-L08 standing in: the scan peaks at letter 3000 (V06), (2) margin -0.164 (control (c) 0.487 catches it): FAIL,
+as it should. PASS -> the remaining 13 rows next; FAIL -> logged, fol. 179's decipherment is not shown to be fol. 178r.
