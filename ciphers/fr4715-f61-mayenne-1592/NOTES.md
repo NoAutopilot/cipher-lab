@@ -5357,3 +5357,20 @@ Pointer (a) is for the verifier and for the transcription side, not a cell chang
 Carried into H349's reading: HASH4 d/q (both held leaves) and C43 a/n, H24 i/x, ZBAR f/s (one each) stand as order support; **EBR_B's low held-leaf
 scores (0.46/0.08) are not evidence against its l/y cell** -- in-sample f.101r scores it 0.77 too. f.101r, the largest leaf, is also where the
 per-class test is weakest (gain 0.080 vs f.188r's 0.179): the per-class statistic tracks how cleanly a leaf's draft and hand fit v7 as a whole. No call.
+
+## Campaign step H359 (29 Sept 2026, 16:39-16:45 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.124r's 4TRI code is mostly the no-bowl sign: shape supports H358's order pointer (1 vision call)
+
+`family/h359_bowl_124r.py`, key `family/h359_items.tsv`, prompt section H359 in `family/passes/PROMPTS_f176_f175.md` (H199's text verbatim), committed
+before the call. Natives refetched once each (f.176r f327, f.176v f328 -- sha1 as H230's; f.124r f256, sha1 8b7e91c7 as the 28 Sept fetch; 3 requests,
+requests.log); H193's 60 strips regenerated, h193_items.tsv byte-identical. Two changes made before the call and disclosed: the target filter widened
+to 'agree' + 'agree-flagged' (only 54 4TRI were unflagged), and the marker moved above the strip after the runner looked at the top of target sheets
+01-02 for placement (f.124r's gloss sits below its cipher rows). One blind Opus call, reply `family/passes/h359_reply.tsv`; result
+`family/h359_bowl_124r_result.txt` (`--check` OK):
+- **Control 18/20 f.176v anchors PASS (gate 17).**
+- **f.124r 4TRI (50): no bowl 31, bowl 15, unclear 4 -> no-share 0.67; C43 (20): no bowl 20 -> 1.00.** Pre-stated read-out: **"shape supports H358's
+  pointer"**.
+What it means: in de Diou's f.124r, two thirds of the tokens both readers coded 4TRI lack the stem-foot bowl that marks the c/p sign on f.176v -- they
+look like the no-bowl sign whose period cell is a/n (C43). This matches H358 (widening 4TRI by a/n beats every random widening under the order gain) and
+H218/H231's finding that the 4TRI code mixes the two signs. It is a transcription finding: the readers' 4TRI on this leaf is two signs. For the
+verifier and the transcription side; v7's cells are unchanged; f.124r's HELD gloss is untouched. Caveat: the bowl gate is on Desportes's hand
+(f.176v); de Diou's bowl may be drawn differently -- the C43 tokens' 20/20 no-bowl is the leaf's own check that 'no' is not simply the default. 1 call.
