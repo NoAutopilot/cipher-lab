@@ -615,3 +615,8 @@ loops sitting on a hash; N = none of these, or cannot tell. Answer inline, one l
 
 Sheet <scratch>/h236/sheet_01.jpg (family/h236_4pi_108r.py tiles; key family/h236_items.tsv; 15 tiles U01-U15). The runner did not look at the sheet.
 Prompt: H233's verbatim with 'h236/sheet_01.jpg', '15 numbered tiles (U01-U15)' and the answer form 'U01<TAB>A', U01 to U15.
+
+## H239 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H236 redo with 12 anchors, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h239/sheet_01.jpg (family/h239_4pi_108r_2.py tiles; key family/h239_items.tsv; 19 tiles U01-U19). Sheet not seen. Prompt: H233's verbatim with
+'h239/sheet_01.jpg', '19 numbered tiles (U01-U19)', answer form 'U01<TAB>A', U01 to U19. Gate >= 10/12; a second control fail logs the question untestable here.
