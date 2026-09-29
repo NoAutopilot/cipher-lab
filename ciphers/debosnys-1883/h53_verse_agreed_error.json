@@ -1,0 +1,46 @@
+{
+ "min3_any": {
+  "agree-AB": {
+   "n": 44,
+   "disagree": 3,
+   "rate": 0.068
+  },
+  "settled-majority": {
+   "n": 10,
+   "disagree": 6,
+   "rate": 0.6
+  },
+  "other": {
+   "n": 5,
+   "disagree": 1,
+   "rate": 0.2
+  },
+  "three-way": {
+   "n": 1,
+   "disagree": 0,
+   "rate": 0.0
+  }
+ },
+ "min2_any": {
+  "agree-AB": {
+   "n": 60,
+   "disagree": 7,
+   "rate": 0.117
+  },
+  "settled-majority": {
+   "n": 15,
+   "disagree": 6,
+   "rate": 0.4
+  },
+  "three-way": {
+   "n": 4,
+   "disagree": 3,
+   "rate": 0.75
+  },
+  "other": {
+   "n": 9,
+   "disagree": 1,
+   "rate": 0.111
+  }
+ }
+}

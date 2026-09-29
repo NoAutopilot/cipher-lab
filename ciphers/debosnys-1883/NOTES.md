@@ -1188,3 +1188,15 @@ counted from unsettled boxes only, is a floor, and c2's true type error is plaus
 on the 109 split boxes alone would not bring c2 inside the 3-8 pct crossover; the H50 costing is corrected to say so
 (a whole-page fourth read of c2, 778 boxes, about 52 calls plus reconciliation, would be the minimum, and even then
 the agreed-box error stays unmeasured). Grade S; nothing read; status `open`.
+
+### H53, hidden error on the verse (29 Sept 2026, CPU only)
+
+`scripts/h53_verse_agreed_error.py` (`h53_verse_agreed_error.json`): H51's held-out method with Bourdeau's verse read
+against the settled c4 draft. Disagreement of his mapped id with our settled id: **agree-AB 3/44 = 6.8 pct (>= 3
+co-occurrences), 7/60 = 11.7 pct (>= 2)**; settled-majority 6/10 = 60 pct (6/15 = 40 pct); three-way 0/1 (3/4). The verse's
+agreed boxes carry less hidden error than c2's (16.5-17.7 pct, H51) by this bound, as its lower disagreement floor
+(8.5-10 pct) already suggested, but the counts are small (44-60 agreed boxes witnessed). The same caveats hold: an
+upper bound that includes his misreads; majority-settled boxes are shaky on both pages. Reading for the orchestrator:
+the verse is the cleanest page on every measure, yet at N 263 it is too short for the solvers on file (DEB-SWARM-H);
+c2 is long enough but its true type error is plausibly 20 pct or more. No page is currently both long enough and
+clean enough for the Copiale-type methods. Grade S; nothing read; status `open`.
