@@ -5325,3 +5325,15 @@ H24 i/x and ZBAR f/s on one leaf each. EBR_B's l/y is a period cell (fr.3984 f.1
 outrank a period witness (rule 4) -- recorded as a pointer for the verifier: EBR_B's form split or its cell may not carry from f.176r's hand to
 f.124r/f.97r (H321/H322 already flag this class's forms). A per-class test at 95% of about 39 alternatives is strict and each class's share of the
 signal is small, so 'not supported' here is not 'wrong'. No cell changed. No call.
+
+## Campaign steps H356 and H357 (29 Sept 2026, 16:33-16:34 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- EBR forms and 4TRI's mixed code under the order gain: two pointers, uncontrolled (script-only)
+
+`family/h356_357_cells_order.py` (written and pushed before running; result `family/h356_357_cells_order_result.txt`), H347's design, gain under three
+shuffle seeds, v7 first:
+- **H357, f.124r: 4TRI widened to c/p/t + a/n: 0.072/0.080/0.072 vs v7 0.032/0.033/0.036 -- raises the gain, more than double**; on f.97r unclear
+  (0.054/0.049/0.052 vs 0.057/0.051/0.051). Consistent with H218/H231's finding that the 4TRI code carries the no-bowl sign too (C43's a/n), and with
+  H349's 4TRI 0.06 on f.124r vs 0.94 on f.97r: the readers' 4TRI on f.124r would mix two signs.
+- **H356, f.97r: EBR forms swapped (EBR_B <- a/l/s, EBR_A <- l/y) raises the gain (0.072/0.067/0.069 vs 0.057/0.051/0.051); pooled union raises it
+  too**; on f.124r swap unclear, union lowers it. A pointer that on f.97r the readers' EBR_A/EBR_B labels may run opposite to f.176r's form B (H321/H322).
+Uncontrolled: widening a cell or moving a cell gives the beam other letters to choose, and whether a/n or a/l/s *specifically* does this, rather than
+any added letters, is not tested here -- H358 is that control. Pointers for the verifier only; no cell changed. No call.
