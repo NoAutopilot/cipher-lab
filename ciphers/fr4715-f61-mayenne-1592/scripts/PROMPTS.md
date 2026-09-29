@@ -496,3 +496,10 @@ L11), target with "seven manuscript lines (L01 to L07)"; only the file name chan
 seed 207, rank 1 of 21) is this judge's calibration. Two calls, H205's target prompt with only the file name changed
 (f61judge_f108v_bowlp_s208_sets.txt, f61judge_f108v_bowlp_s209_sets.txt). Read-out per seed as H205; "the judge prefers the bowl labelling" overall
 only if both seeds say so; "prefers the pass codes" if either seed does; else "no preference shown".
+
+## H215 (29 Sept, Opus TEXT, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- f.108v HASH4 form split vs alternatives, WRITTEN BEFORE THE CALLS
+
+Design in `scripts/f61judge108v_hash.py`'s docstring. Two calls (seeds 215, 216), H205's target prompt verbatim with only the file name changed
+(f61judge_f108v_hash_s215_sets.txt, _s216_sets.txt). Calibration: this session's H205 control. Note: 4 of the 5 named sets differ from the target
+only at the 14 HASH4 tokens (9 or 5 of them), so the judge's resolution at that scale is itself under test; "no preference shown" is a likely outcome
+and is logged as that, not as a negative for the split.

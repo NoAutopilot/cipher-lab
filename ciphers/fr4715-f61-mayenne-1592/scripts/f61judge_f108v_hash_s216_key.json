@@ -1,0 +1,26 @@
+{
+ "tag": "f108v_hash_s216",
+ "key": {
+  "SET-01": "swap 4BOWL<->4STEM",
+  "SET-02": "swap 4BOWL<->PHI",
+  "SET-03": "swap HASHA<->SBS",
+  "SET-04": "swap 4STEM<->ZHOOK",
+  "SET-05": "swap EBR_A<->EBR_B",
+  "SET-06": "swap 4NOB<->EBR_A",
+  "SET-07": "REVERSE",
+  "SET-08": "ALL-IX",
+  "SET-09": "swap 4STEM<->HASHA",
+  "SET-10": "swap 4STEM<->EBR_A",
+  "SET-11": "swap 4NOB<->VBAR_A",
+  "SET-12": "DROP",
+  "SET-13": "swap BETA<->VBAR_A",
+  "SET-14": "swap HASHA<->VBAR_A",
+  "SET-15": "ALL-DQ",
+  "SET-16": "swap 4NOB<->SBS",
+  "SET-17": "T",
+  "SET-18": "swap EBR_A<->PHI",
+  "SET-19": "swap 4NOB<->EBR_B",
+  "SET-20": "swap 4STEM<->HASHB",
+  "SET-21": "swap INF<->SBS"
+ }
+}
