@@ -51,3 +51,17 @@ of B's 21 corpus files this container could fetch (gutenberg.org reset the conne
 window on the real order minus the mean over 2 order-shuffled copies (gb.shuffled_stream). Known answer: folger split
 at 0.20, 2 instances (English, B's language). Null: NULL-SPLIT, 2 instances. Control passes if both folger gaps exceed
 the larger NULL-SPLIT gap; the real is "at shuffle level" if its gap is at or below the larger NULL-SPLIT gap.
+
+## Addendum (29 Sept 2026, 08:2x UTC, before any real score was read): diagnostic D2
+Reason, from the calibration alone (no real score read): at 0.20 the NULL-SPLIT pairs score a median 34.6 (real-T map)
+on D's pair score, above every language design (15.6-26.5): splitting a composite writes its internal pair into the
+text every time, and D's within-line shuffle of the split text breaks those pairs, so D's frozen score reads the split
+itself as order. The main gate above is kept as registered and will be reported as it falls.
+D2 (`boxnull.py`, diagnostic, does not replace the main kill test): D's four order features (mi1, bg2, rep3, dbl; no
+transfer terms) as z against shuffles made at **box level** (boxes permuted within their line, then split), summed
+over c1 and c2 as D combines them. Texts: real-T and real-N (5 seeds x 400 shuffles, median); planted and folger (the
+same 40 instances as the control files, 100 shuffles); NULL-SPLIT for each real map (40 instances at 0.20).
+D2 control passes if >= 32 of 40 planted instances and >= 32 of 40 folger instances score above the NULL-SPLIT p95 of
+the matching map (planted, folger: their own NULL-SPLIT is not built, so the real-T NULL-SPLIT p95 is used for
+planted, whose shape is the real's; folger is read against a box-shuffled null of its own by construction of the z).
+A real text is at shuffle level on D2 if its median is at or below its map's NULL-SPLIT p95.

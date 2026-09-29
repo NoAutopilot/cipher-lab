@@ -1,0 +1,18 @@
+calib real-T 0.20 40 calib_real-T_0.20.jsonl
+calib real-T 0.15 40 calib_real-T_0.15.jsonl
+calib real-T 0.25 40 calib_real-T_0.25.jsonl
+calib real-N 0.20 40 calib_real-N_0.20.jsonl
+calib real-N 0.15 40 calib_real-N_0.15.jsonl
+calib real-N 0.25 40 calib_real-N_0.25.jsonl
+calib folger 0.20 40 calib_folger_0.20.jsonl
+calib folger 0.15 40 calib_folger_0.15.jsonl
+calib folger 0.25 40 calib_folger_0.25.jsonl
+calib planted 0.20 40 calib_planted_0.20.jsonl
+calib planted 0.15 40 calib_planted_0.15.jsonl
+calib planted 0.25 40 calib_planted_0.25.jsonl
+calib folgerW 0.20 40 calib_folgerW_0.20.jsonl
+real folger ctrl_folger_0.20.json 0.20 40
+real planted ctrl_planted_0.20.json 0.20 40
+real folgerW ctrl_folgerW_0.20.json 0.20 40
+real real-T real_real-T.json
+real real-N real_real-N.json
