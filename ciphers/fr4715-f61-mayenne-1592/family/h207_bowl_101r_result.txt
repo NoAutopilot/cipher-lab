@@ -1,0 +1,5 @@
+repeat control: 19 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+4TRI: bowl yes c/p 7 a/n 3; bowl no c/p 2 a/n 7; n c/p 1 a/n 0; Fisher p 0.07
+4STEM: bowl yes c/p 4 a/n 2; bowl no c/p 3 a/n 8; n c/p 2 a/n 0; Fisher p 0.16
+pooled: bowl yes c/p 11 a/n 5; bowl no c/p 5 a/n 15; n c/p 3 a/n 0; Fisher p 0.017
+read-out: bowl-yes c/p share 0.69, bowl-no a/n share 0.75, p 0.017 -> the bowl does not split f.101r's mixed support by the registered rule

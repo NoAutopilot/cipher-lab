@@ -3985,3 +3985,20 @@ What the numbers do show, descriptively and outside the registered rule: the jud
 the same tokens, in line with H201's sequence gain. It is one call, so no claim rests on it. The judge's resolved text for the bowl set (in the verdict
 file) is its own resolution under grade-M transcription and a two-way cipher: a verifier's input, not a reading. Not re-run in this session. A
 corrected re-run (swap pool restricted to present classes, two seeds) is H208.
+
+## Campaign step H207 (29 Sept 2026, 02:28-02:40 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- the bowl on fr.3982 f.101r against its period letters: direction agrees, registered rule NOT met
+
+Pre-registered (PROMPTS section H207; `family/h207_bowl_101r.py`, key `family/h207_items.tsv`, commit c458d848, before the call). 39 f.101r signs under
+the MIXED codes (H203), drawn with their period-gloss letter (passes/f101r_align_v4.tsv, grade C): 4TRI c/p 10 + a/n 10, 4STEM c/p 9 + a/n 10.
+Strips cut from a fresh Gallica native of f210 (bytes differ from the 28 Sept fetch; pixel correlation 0.9996 with a committed crop). Disclosure in
+PROMPTS (three geometry versions looked at; U13/U15 carry two cipher rows). One Opus vision call, blind (`family/passes/h207_reply.tsv`). Result
+`family/h207_bowl_101r_result.txt` (`--check` OK):
+- **Repeat control 19/20 PASS.**
+- **Pooled: bowl yes -> c/p 11, a/n 5; bowl no -> c/p 5, a/n 15; n 3 (all c/p); Fisher p 0.017.** 4TRI alone 7/3 vs 2/7 (p 0.07); 4STEM alone 4/2 vs 3/8 (p 0.16).
+- Registered read-out: bowl-yes c/p share 0.69 (< 0.75), bowl-no a/n share 0.75, p 0.017 (> 0.01): **"the bowl does not split f.101r's mixed support
+  by the registered rule."**
+What it says: the direction is the same as on f.176r (H193), f.61 (H194) and f.108v (H199/H201), but on this leaf the bowl separates the letters
+less cleanly (10 of 36 answered signs against the rule's direction). The possible causes cannot be told apart here: the hand (fr.3982, not f.61's or
+Desportes's), the strip geometry (rows drift; the reader saw ordinary words in every strip), or letters misplaced by the gloss alignment (the
+align_v4 rows carry 'conflict' status at many positions). For the verifier: the bowl rule is supported on three leaves (two against period letters,
+one by sequence gain) and only leaning on f.101r. v5's f.101r 4TRI/4STEM counts stay pooled; nothing merged.

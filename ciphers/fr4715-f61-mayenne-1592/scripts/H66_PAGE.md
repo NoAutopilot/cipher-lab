@@ -179,6 +179,10 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   positions, not only the count. `scripts/f61bowl_108v_seq.py` (`--check`).
 - **H202:** at f.108r's 16 period-gloss c/p/a/n positions (control 18/20): bowl yes -> c/p 3, a/n 0; bowl no -> c/p 2, a/n 11 (p 0.018). The
   direction agrees but the registered rule (every c/p yes) is NOT met (misses S03, a 4PI p at the strip edge, and S14, a 4TRI c). `family/h202_bowl_108r.py`.
+- **H203/H207:** v5's 4STEM (f.101r, f.176r) and 4TRI (f.101r) supports pool both 4-signs. On f.101r against its period letters (control 19/20), bowl
+  yes -> c/p 11, a/n 5 and bowl no -> c/p 5, a/n 15 (p 0.017): the same direction, but the registered rule is NOT met. **H205:** the model judge scored f.108v's
+  bowl decode 7.0 and the pass-code decode 2.5, but the registered rank rule failed ("no preference"), and part of its null was identical to the target by
+  construction (runner's error); H208 re-runs it corrected.
 
 ## Files to read
 
