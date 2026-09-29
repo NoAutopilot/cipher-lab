@@ -5065,3 +5065,18 @@ blind Opus forced choice EBRA / EBRB / VBARA on 6 tiles from the run's 2x strip;
 What it shows: on this run the triangle-with-bar (VBAR_A) and the brackets (EBR_A/B) are confusable to model readers at this scale -- col 1 splits
 them as col 17 did; for H317, VBAR_A (g/t) against EBR (i/l, a/l/s) is a real ambiguity at up to three columns (1, 13, 17), which a person's sign
 rows (ASKS 93) would settle. Not re-run (rule 3). Vision calls this session: 11.
+
+## Campaign step H325 (29 Sept 2026, 13:21 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.124r's held gloss under key v7: above the shuffled-cell p95 (148 vs 140), with a frequency confound named (script-only)
+
+`family/h325_124r_agreed.py` (design and read-out in its docstring, written before running; result `family/h325_124r_agreed_result.txt`, `--check` OK).
+fr.3982 f.124r's gloss (two blind passes, HELD since F61-FAMILY-4 at 42% word agreement; its rows never loaded into any key): **165 words read
+identically by both passes** (651 letters), placed by x over **266 reconciled signs** (x from pass A where it equals the draft). Letters matched
+one-to-one, order-free, into key v7's cells: **real 148**; 1000 keys with v7's cells permuted across the 15 keyed classes present: mean 109.9, **p95
+140**, max 159, >= real **19/1000** -> pre-stated read-out **"consistent with key v7 on a held leaf"**. Hits by class (matched/signs under agreed
+words): PHI 43/58, 4TRI 25/46, VBAR_A 24/51, C43 15/18, EBR_B 12/15, H24 12/20, HASH4 3/6, DBL 2/2, EBR_A 1/1 (SBS 0 -- f.124r's readers code a
+LOOPS class instead, which v7 does not key).
+**What limits it (for the verifier):** (1) the control permutes cells across classes but does not hold letter frequency: PHI (e/r) is by far the
+commonest sign, so any key that gives common letters to common signs gains here whether or not its cells are right -- a frequency-matched control
+(H328) is needed before this is more than a lead; (2) 651 letters over 266 signs: the gloss spans are wider than the signs matched, so most letters
+cannot be matched by construction and the one-to-one cap is the sign count; (3) gloss letters are two-model-pass agreed (M), on a gloss hand the
+passes disagree on 58% of words. Not a merge, not a reading; f.124r stays HELD. No call.
