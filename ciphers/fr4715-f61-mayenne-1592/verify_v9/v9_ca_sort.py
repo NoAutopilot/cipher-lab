@@ -30,6 +30,13 @@ Design, fixed before any tile existed or any look (this file's first commit):
    the leaf's ink. That separation is audited in AUDIT.md from the span table, not from this sort.
  ink measures (script-only, no reader) -- for every tile: ink height (rows with dark ink), ink width, and mean darkness of the ink pixels in the
    central 60 px, CA vs text a vs cipher, as a size/weight check on H63's hand verdict.
+
+ amendment before any tile was cut (after the helpers' rows came back, disclosed): the helpers, asked only for clear words, listed seven of the ten CA
+   positions as the one-letter word 'a' (L01 2769, L03 779, L03 1482, L05 1190, L05 1274, L07 2107, L08 1079; within 6 px of H253/H257's CA x's) and
+   three more one-letter a's outside the sign runs (L03 2257, L05 560, L08 2427). A one-letter 'a' within 40 px of a CA is that CA and is dropped from
+   the text pool; the three others are tiled as EDGE_A, reported descriptively, never in a gate or read-out. The runner's text-a words are excluded by
+   x (within 45 px of the runner's own text tiles mapped to native) as well as by name, since the helpers spell some words differently.
+
 usage: python3 v9_ca_sort.py tiles SCRATCH | score [--check] | measure"""
 import csv, json, os, random, sys
 from collections import Counter, defaultdict
@@ -38,6 +45,8 @@ NAT = f"{IM}/src_ark_12148_btv1b52509819x_f137_500_1880_3320_1420.jpg"
 KEEP_A = {"L01": [4, 5], "L03": [1, 2, 3], "L05": [2, 3, 4], "L07": [3, 4, 5], "L08": [1, 2], "L11": [1, 2]}   # images/regen_f61r_sheets.sh
 X0_A = lambda s: (s - 1) * 605; X0_B = [0, 807, 1613, 2420]                                                    # f61s_/f61n_ segment boxes
 RUNNER_WORDS = {"auons", "parle", "amplement", "cependant", "ella", "affere", "pas", "depar", "tances", "maintenant", "particulieres"}
+RUNNER_X = {("L01", 277), ("L01", 533), ("L01", 1300), ("L07", 345), ("L07", 1440), ("L08", 2528), ("L10", 1469), ("L07", 1229), ("L02", 1650),
+            ("L08", 1688), ("L02", 486), ("L08", 1881), ("L01", 1928), ("L01", 1983), ("L01", 1194), ("L02", 2606), ("L02", 2265), ("L02", 2753)}  # h256/h260 text tiles, native x
 def nat_x(sheet, line, seg, x):
     """sheet 'A' = images/f61sheet_Lxx.jpg (H253 positions), 'B' = images/f61sheetB_Lxx.jpg (H63/H260 L10 positions); x at 3x."""
     return (X0_A(KEEP_A[line][seg - 1]) if sheet == "A" else X0_B[seg - 1]) + x / 3
@@ -57,18 +66,22 @@ def signs():
             out.append(dict(kind="CA" if r["class"] == "CA" else "CIPHER", cls=r["class"], line=r["line"], ref=f"{r['line']}p{r['pos']}",
                             x=round(nat_x(sh, r["line"], seg, xs))))
     return out
-def text_items(rng):
-    rows = rd(f"{HERE}/v9_text_letters.tsv")   # the helper's placement rows, merged, columns line word letter x
-    rows = [r for r in rows if r["word"].strip("?").lower() not in RUNNER_WORDS]
-    a = [r for r in rows if r["letter"] == "a"]; rng.shuffle(a); per = Counter(); ta = []
+def text_items(rng, ca_x):
+    rows = rd(f"{HERE}/v9_text_letters.tsv")   # the helpers' placement rows: line word letter index x
+    near = lambda r, S, d: any(r["line"] == L and abs(int(float(r["x"])) - x) <= d for L, x in S)
+    rows = [r for r in rows if r["word"].strip("?").lower() not in RUNNER_WORDS and not near(r, RUNNER_X, 45)]
+    single = [r for r in rows if r["letter"] == "a" and r["word"].strip("?").lower() in ("a", "à")]
+    edge = [r for r in single if not near(r, ca_x, 40)]
+    a = [r for r in rows if r["letter"] == "a" and r not in single]; rng.shuffle(a); per = Counter(); ta = []
     for r in a:
         if per[r["line"]] < 2 and len(ta) < 12: ta.append(r); per[r["line"]] += 1
     tx = []
     for L in "ounecd":
         c = [r for r in rows if r["letter"] == L]; rng.shuffle(c); tx += c[:2]
     tx = tx[:10]
-    return ([dict(kind="TEXT_A", cls=f"a:{r['word']}", line=r["line"], ref=f"{r['line']}x{r['x']}", x=int(float(r["x"]))) for r in ta] +
-            [dict(kind="TEXT_X", cls=f"{r['letter']}:{r['word']}", line=r["line"], ref=f"{r['line']}x{r['x']}", x=int(float(r["x"]))) for r in tx])
+    mk = lambda kind, r, cls: dict(kind=kind, cls=cls, line=r["line"], ref=f"{r['line']}x{int(float(r['x']))}", x=int(float(r["x"])))
+    return ([mk("TEXT_A", r, f"a:{r['word']}") for r in ta] + [mk("TEXT_X", r, f"{r['letter']}:{r['word']}") for r in tx] +
+            [mk("EDGE_A", r, f"a:{r['word']}") for r in edge])
 def bands():
     b = json.load(open(f"{HERE}/v9_bands.json"))["iiif_lines"]; return {e["crop"]: e["box"] for e in b}
 def band_of(B, line, x):
@@ -89,7 +102,7 @@ def sheet(tiles, path):
 SETS = (("setP", "P", 901), ("setQ", "Q", 902), ("setR", "R", 903))
 def tiles(scratch):
     from PIL import Image
-    rng = random.Random(9); its = signs() + text_items(rng); nat = Image.open(NAT).convert("RGB"); B = bands()
+    rng = random.Random(9); sg = signs(); its = sg + text_items(rng, {(t["line"], t["x"]) for t in sg if t["kind"] == "CA"}); nat = Image.open(NAT).convert("RGB"); B = bands()
     dup = rng.sample([i for i, t in enumerate(its) if t["kind"] == "CA"], 2) + rng.sample([i for i, t in enumerate(its) if t["kind"] == "TEXT_A"], 2) + \
           rng.sample([i for i, t in enumerate(its) if t["kind"] == "CIPHER"], 2)
     key = ["set\tid\tkind\tcls\tline\tref\tx\trepeat_of"]; base = [(t, cut(t, nat, B)) for t in its]
@@ -103,7 +116,7 @@ def tiles(scratch):
         print(name, len(tl), "tiles,", (len(tl) + 19) // 20, "sheets")
     open(f"{HERE}/v9_items.tsv", "w").write("\n".join(key) + "\n")
     # placement strip of the TEXT tiles only (the verifier may look at this)
-    sheet([(t["cls"], im) for t, im in base if t["kind"].startswith("TEXT")], f"{scratch}/place_text.jpg")
+    sheet([(t["cls"], im) for t, im in base if t["kind"] in ("TEXT_A", "TEXT_X", "EDGE_A")], f"{scratch}/place_text.jpg")
 def perm(rows, ans, n=20000, seed=99):
     lab = [ans[r["id"]] for r in rows]; S = lambda L: sum((L[i] == "A") == (r["kind"] == "CA") for i, r in enumerate(rows)); obs = S(lab)
     rng = random.Random(seed); byline = defaultdict(list)
@@ -130,7 +143,7 @@ def score():
         by = lambda k: [r for r in its if r["kind"] == k]; nA = lambda rs: sum(ans.get(r["id"]) == "A" for r in rs)
         ta, tx, ca, ci = by("TEXT_A"), by("TEXT_X"), by("CA"), by("CIPHER")
         out.append(f"{name}: by kind: " + "; ".join(f"{k} " + " ".join(f"{a} {c}" for a, c in sorted(Counter(ans.get(r['id'], '-') for r in rs).items()))
-                                                 for k, rs in (("text a", ta), ("text non-a", tx), ("CA", ca), ("cipher", ci))))
+                                                 for k, rs in (("text a", ta), ("text non-a", tx), ("CA", ca), ("cipher", ci), ("edge a (descriptive)", by("EDGE_A")))))
         out.append(f"{name}: text a in A {nA(ta)}/{len(ta)}, repeats {rep}/6, text non-a in A {nA(tx)}/{len(tx)}, CA in A {nA(ca)}/{len(ca)}, cipher in A {nA(ci)}/{len(ci)}")
         g1 = nA(ta) >= 0.8 * len(ta); g2 = rep >= 5; g3 = nA(tx) <= 1
         if not g1: out.append(f"{name}: gate 1 CONTROL FAIL (text a's not in A); nothing scored"); continue

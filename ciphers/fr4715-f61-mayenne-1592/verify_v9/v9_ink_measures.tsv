@@ -1,0 +1,49 @@
+kind	cls	ref	ink_h	ink_w	dark
+TEXT_X	o:generosité	L04x333	37	45	101
+TEXT_X	n:sont	L05x443	29	59	104
+TEXT_X	u:que	L04x2866	55	60	102
+CIPHER	PHI	L01p5	100	57	104
+CIPHER	C43	L05p9	126	60	100
+CA	CA	L05p7	41	34	102
+TEXT_A	a:familierement?	L01x770	66	60	104
+CA	CA	L03p9	36	29	103
+CA	CA	L01p8	27	32	106
+CIPHER	INF	L08p4	89	60	102
+CIPHER	C6	L03p11	77	41	102
+TEXT_X	e:le	L06x662	93	39	96
+CIPHER	PHI	L08p1	131	57	101
+TEXT_A	a:amoit?	L04x1824	27	30	108
+TEXT_X	c:particulierement?	L02x604	35	60	103
+CIPHER	C6	L08p3	73	34	103
+EDGE_A	a:a	L03x2257	25	3	107
+CA	CA	L07p1	81	38	105
+CIPHER	C43	L01p3	63	60	106
+TEXT_X	n:point	L06x2790	28	56	105
+TEXT_A	a:parcyeux?	L10x1611	52	52	102
+TEXT_X	c:occasions	L09x2088	30	28	104
+CIPHER	PHI	L05p15	117	60	104
+TEXT_A	a:occasions	L09x2123	32	60	104
+CA	CA	L03p1	69	40	104
+TEXT_A	a:tant	L11x1366	32	60	103
+CIPHER	C43	L11p5	124	60	97
+CA	CA	L10p9	37	32	105
+TEXT_X	u:nous	L05x2779	80	59	94
+CIPHER	PHI	L03p4	110	56	99
+TEXT_A	a:affaires	L08x2662	100	60	104
+TEXT_A	a:la	L06x1418	68	43	104
+EDGE_A	a:a	L05x560	81	45	103
+CA	CA	L10p12	35	41	106
+CA	CA	L08p10	30	30	104
+TEXT_X	o:pouvoir?	L09x3030	28	47	101
+TEXT_A	a:Mais	L04x1545	75	60	103
+CA	CA	L05p8	103	50	100
+TEXT_X	e:particulierement?	L02x806	30	59	104
+CIPHER	SBS	L05p5	54	54	102
+CA	CA	L10p2	39	35	104
+EDGE_A	a:à	L08x2427	96	49	105
+TEXT_A	a:conoyssant	L06x443	34	60	106
+# TEXT_X: n 10, ink_h mean 44.5, ink_w mean 51.2, dark mean 101, ink px mean 479
+# CIPHER: n 11, ink_h mean 96.7, ink_w mean 54.5, dark mean 102, ink px mean 782
+# CA: n 10, ink_h mean 49.8, ink_w mean 36.1, dark mean 104, ink px mean 220
+# TEXT_A: n 9, ink_h mean 54.0, ink_w mean 53.9, dark mean 104, ink px mean 299
+# EDGE_A: n 3, ink_h mean 67.3, ink_w mean 32.3, dark mean 105, ink px mean 115
