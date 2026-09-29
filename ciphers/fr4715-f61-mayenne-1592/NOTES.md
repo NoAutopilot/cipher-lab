@@ -3717,3 +3717,19 @@ signs) = 2,957 instead of 2,476. **Match 0.466 vs f.184r 0.304, margin +0.162.**
 (was 100), s 22 (16), g 11 (10); EBR l 100 (95); HASH4 d 43 (40), i 20 (18); ZHOOK i 28 (28), now of 78 (61); SBS o 33; DBL o 27; 4STEM p 13, c 9; C43
 and VBAR_B unchanged. So the N cap the H177e flag and VERIFY-F61-V5 both noted cost coverage (about 480 letters unused), not the letter choices.
 The four values the verifier endorsed are unchanged under the full clear. For the verifier and F61-FAMILY-9; nothing merged.
+
+## Campaign step H184 (29 Sept 2026, 00:51-00:59 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- fol. 179 vs fol. 178r: two-part GATE FAIL (part 1 PASS)
+
+Pre-registered (PROMPTS section H184; builder `family/build_f179_key.py` pushed with a dry run before the calls). Native canvas 333 fetched once
+(requests.log); fol. 179 cut into 21 cipher rows (`family/sheets/f179_full/README.md`, crops not committed). Two Opus vision calls: blind sign passes
+A/B of fol. 179 L01-L08 (`family/passes/f179_signs{A,B}_L01-L08.tsv`, 522/507 rows, written verbatim). The passes split heavily: A codes 4TRI and
+HASH4 where B codes C43 and ZHOOK. Consensus 309 of 589 (0.52).
+Result (`family/build_f179_key_result.txt`, `--check` OK):
+- **(1) location scan over fol. 177r L01 - fol. 178r R19 (6,933 letters): peak at letter 5,800 (0.463), best non-overlapping 0.253, null p99 0.246;
+  fol. 178r R01 is at 5,631. PASS.** Every window from letter 0 to 5,700 reads 0.18-0.27.
+- **(2) build from fol. 178r R01 exactly: 0.221 vs (a) f.184r 0.231, (b) fol. 177r 0.217, (c) fol. 177v V06- 0.224; margin -0.010. FAIL.**
+- **GATE (1) AND (2): FAIL.** Nothing keyed (key_period_f179.tsv holds the unendorsed pairs of this failed run only).
+Why (2) fails where (1) passes, descriptively: the alignment runs over the full length and does not absorb an offset. A step-20 fine scan (descriptive,
+after the gate) rises from 0.257 at letter 5,740 to 0.393 at 5,760 and peaks at 5,820 (0.467): the head of R03 is at 5,770 ("de leur [honneur] nous
+n'aurions qu'a gaigner le temps"). So fol. 178r R01-R02 probably close f.176v's text and fol. 179 begins near R03. As in H177c/H177d, the start was
+not moved inside this row; H185 pre-registers a build from R03, which will confirm the location, not test it independently.
