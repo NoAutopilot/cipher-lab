@@ -4571,3 +4571,16 @@ character where the token lies inside one of his spans (15 of the 29 do), the cl
 CA; H237/H259/H261 and the HYPOTHESES.md conflict row for C6; H232/H258 for LOOPBAR; H247/H261 for CROSS; H259 for LL; V8 for 4PI; H238 for OTHER) and the
 result files in another. A hand-off, not a merge: the band's count stays 25 and no token moves; what the verifier could change is the wording -- CA from
 "unread-or-null" to "null" on the evidence listed -- if it agrees. No call.
+
+## Campaign step H264 (29 Sept 2026, 10:15 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- positions for the L10 fragment (infrastructure)
+
+Pre-registered (PROMPTS section H264; ruler sheet by `scripts/f61positions_sheets.py --lines L10 --prefix f61sheetB --tag h264`, not seen by the runner; join
+rule in `scripts/f61positions_L10_score.py`, committed f843aff6 before the call). One blind Opus call (`scripts/h264_reply.tsv`, verbatim). **The reader lists
+13 signs after the last clear word ('si'), fragment_L10.tsv has 13: joined in order, and every shape description matches the fragment's class one for one
+(bracket = EBR, a = CA x3, phi = PHI x2, nabla = VBAR_A, qo = SBS x2, V with bars = VBAR_B, oo on a line = INF, 6 = C6 x2).** Its clear words: prendre quelqu'
+vne / Je ne seroys pas [p]aresseux si -- the two earlier passes' 'pas paresseux si'. Scale caveat, found after the call: the reader gave x in the half-size
+sheet's display pixels rather than the ruler's labels (its three a-shaped signs at 720 / 490 / 920 against H63's sheet-B read of the same marks at 1440 / 985
+/ 1820, ratio 2.00 / 2.01 / 1.98), so `scripts/f61_positions_L10.tsv` stores x as twice the reply's value (sheet px, comparable with f61_positions_all.tsv) and
+keeps the reply's value in x_reply; the join itself uses only the count and order. Result `scripts/f61positions_L10_result.txt` (`--check` OK). Positions now
+cover 95 of f.61's 99 signs (all seven lines with cipher runs; the four remaining tokens are L02/L04's OTHER and read_call_U items). Descriptive: the
+reader calls all three L10 CA "a-shaped sign" inside the run, as H63 did. No reading; nothing merged. Vision calls this session: 3 (one per vision step).

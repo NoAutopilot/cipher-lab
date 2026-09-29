@@ -1,0 +1,24 @@
+# written verbatim from the inline reply (runner 10, H264, one Opus vision call, 29 Sept 2026, 100,883 subagent tokens, 25 s); x as the reader gave it -- see f61positions_L10_score.py: the values are at half the ruler's scale (display px of the half-size sheet), e.g. the three a-shaped signs at 720 / 490 / 920 against H63's sheet-B positions 1440 / 985 / 1820
+image	segment	x	kind	desc
+L10	1	350	word	prendre
+L10	1	830	word	quelqu'
+L10	1	1080	word	vne (last letter cut at edge)
+L10	2	200	word	Je
+L10	2	380	word	ne
+L10	2	630	word	seroys
+L10	2	940	word	pas
+L10	3	170	word	[p]aresseux (initial p at seg 2 x 1170; letters uncertain, "arcyeux")
+L10	3	440	word	si (s plus long descending stroke; could be s + slash sign)
+L10	3	600	sign	square bracket ⊏ with horizontal bar on top, open to the right
+L10	3	720	sign	a-shaped sign
+L10	3	850	sign	trefoil/double-loop head with long descender (φ-like)
+L10	3	980	sign	inverted triangle ∇ with bar on top
+L10	3	1100	sign	loop head with long descender (φ-like), similar to x 850
+L10	4	40	sign	qo-like double loop with long descender at left
+L10	4	180	sign	V/triangle with horizontal bars on top and bottom
+L10	4	320	sign	double loop (oo) on a horizontal line through it
+L10	4	490	sign	a-shaped sign
+L10	4	620	sign	6-shaped sign
+L10	4	750	sign	qo-like double loop with long descender
+L10	4	920	sign	a-shaped sign
+L10	4	1040	sign	6-shaped sign

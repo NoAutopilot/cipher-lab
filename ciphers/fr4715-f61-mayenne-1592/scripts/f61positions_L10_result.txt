@@ -1,0 +1,6 @@
+L10: clear words read: prendre quelqu' vne (last letter cut at edge) Je ne seroys pas [p]aresseux (initial p at seg 2 x 1170; letters uncertain, "arcyeux") si (s plus long descending stroke; could be s + slash sign); signs after the last word 13 vs fragment 13; signs before it 0
+L10: joined
+CA: 3 joined, 0 next to a clear word
+C6: 2 joined, 0 next to a clear word
+SBS: 2 joined, 0 next to a clear word
+PHI: 2 joined, 0 next to a clear word

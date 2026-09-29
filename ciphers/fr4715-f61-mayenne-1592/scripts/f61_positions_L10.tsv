@@ -1,0 +1,14 @@
+line	pos	class	segment	x	prev	next	x_reply	desc
+L10	1	EBR	3	1200	word	sign	600	square bracket ⊏ with horizontal bar on top, open to the right
+L10	2	CA	3	1440	sign	sign	720	a-shaped sign
+L10	3	PHI	3	1700	sign	sign	850	trefoil/double-loop head with long descender (φ-like)
+L10	4	VBAR_A	3	1960	sign	sign	980	inverted triangle ∇ with bar on top
+L10	5	PHI	3	2200	sign	sign	1100	loop head with long descender (φ-like), similar to x 850
+L10	6	SBS	4	80	sign	sign	40	qo-like double loop with long descender at left
+L10	7	VBAR_B	4	360	sign	sign	180	V/triangle with horizontal bars on top and bottom
+L10	8	INF	4	640	sign	sign	320	double loop (oo) on a horizontal line through it
+L10	9	CA	4	980	sign	sign	490	a-shaped sign
+L10	10	C6	4	1240	sign	sign	620	6-shaped sign
+L10	11	SBS	4	1500	sign	sign	750	qo-like double loop with long descender
+L10	12	CA	4	1840	sign	sign	920	a-shaped sign
+L10	13	C6	4	2080	sign	edge	1040	6-shaped sign
