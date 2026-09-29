@@ -5434,3 +5434,14 @@ decipherment reads that sign a or n in 118 of the 130 cases with an a/n or c/p/t
 period key itself (grade C per pair), not only by our statistics. The bowl sign leans c/p/t (33 v 19): cleaner, not clean. So v7's 4TRI cell was built
 from a tally that mixes two signs. **For the verifier, and for the key: H366 writes the split tally as a proposal (rule 4, witnesses named); nothing is
 loaded into a key here.** Four calls, cost estimate 4.0 USD.
+
+## Campaign steps H366 and H363 (29 Sept 2026, 17:05-17:07 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the 4TRI resplit written as a proposal for a verifier; the instrument lesson (script/notes)
+
+**H366** (`family/h366_4tri_proposal.py`, `--check` OK) writes `family/PROPOSAL_v8_4tri.md`: f.101r's period letters for the readers' 4TRI by bowl
+answer -- **bowl (67): p 17, c 15, n 11, a 8, ...; no bowl (150): a 62, n 56, p 5, c 4, ...** -- with the witnesses for and against, proposing (not
+applying) that the no-bowl "4TRI" be read as the a/n sign and 4TRI's c/p/t kept for the bowl sign. Rule 4: the verifier decides; f.61's own 4TRI tokens
+have not been bowl-read (H367).
+**H363** (notes): CAMPAIGN.md's INSTRUMENTS paragraph gains the sequence that found this: an order-gain pointer (H358) -> its random-variant control ->
+a shape forced choice with known answers in every call (H359/H360/H362/H365) -> the split's order gain with a shuffled-target control -> the leaf's own
+period letters by shape answer (H364/H365) -> an independent held-gloss count (H361). Each link had its own control; the period letters are the only
+link that is not our statistic. No call.
