@@ -1,0 +1,5 @@
+TEXT_A (TWO expected): Y01=TWO Y03=TWO Y12=TWO Y15=TWO Y16=TWO; correct 5/5
+TEXT_X (ONE expected): Y04=ONE Y08=ONE Y09=ONE Y10=ONE Y11=ONE; correct 5/5
+CIPHER (NEITHER expected): Y02=NEITHER Y05=NEITHER Y07=NEITHER Y13=NEITHER; correct 4/4
+gate passes (text l's 10/10, PHI/C43 NEITHER 4/4)
+read-out: LL = TWO -- LL has two ascender strokes, like the clear ll; L02 mark = TWO (n = 1 + 1, flagged)

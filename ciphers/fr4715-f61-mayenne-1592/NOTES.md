@@ -4913,3 +4913,15 @@ Opus free sort (`family/passes/h309_sort.tsv`); result `family/h309_ll_text_resu
 ll/Il, H304 I and l, H309 doubled vs single l from a second leaf), none passing its own gate. Logged in HYPOTHESES.md as **untested-by-this-tool**, not
 refuted; no fourth free sort. A different instrument would be a forced choice per tile ("one ascender or two") with a known-answer control -- H310.
 The null band's LL row and the L02 note row are unchanged. Vision calls this session: 3.
+
+## Campaign step H310 (29 Sept 2026, 12:53 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- forced choice: known answers 14/14; LL has two ascender strokes (n = 1)
+
+Pre-registered (PROMPTS section H310; `family/h310_ll_forced.py`, committed 395ad937 before the call): H309's sheet and key (16 tiles), a fresh blind
+Opus reader, per tile ONE / TWO / NEITHER / unclear. Reply verbatim `family/passes/h310_forced.tsv`; result `family/h310_ll_forced_result.txt` (`--check` OK):
+- **Known answers: doubled l TWO 5/5 (f.211r 4, f.61 ella 1), single l ONE 5/5, PHI/C43 NEITHER 4/4 -- gate passes.**
+- **LL = TWO** (read-out as pre-stated: "LL has two ascender strokes, like the clear ll"); **L02 opening mark = TWO**. n = 1 + 1, flagged.
+What it says, and what it does not: where the free sort could not (H302/H304/H309, retired), a forced choice separates doubled from single l on known
+answers, and puts f.61's LL with the doubled l's -- consistent with the atlas's "a mark shaped like ll" and with the CA/CH pattern (a null drawn as a
+clear letter), now tested by one instrument with a passing known-answer gate. It cannot tell a doubled l from a clear 'Il' (no 'Il' tile was in this
+set; a capital I plus l also has two tall strokes), so the L02 mark's TWO does not decide pass 1 (LL) against pass 2 ('Il'). No cell changes; LL stays
+unread-or-null in the band (1 token); for the verifier's null-band wording only. Vision calls this session: 4.
