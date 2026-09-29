@@ -975,3 +975,25 @@ deterministic one-sign-per-unit designs are excluded by this control at the meas
 "deliberately spread homophones" shape from the single-sign statistics, now from sequence structure. Grade S;
 nothing read; status `open`. Named next step H38: does the homophonic mixed design also fit H3's seven single-sign
 statistics pooled (the fit H13 never reached), and at which h.
+
+### H38 and H39, the homophonic mixed design on all nine statistics, with and without X (29 Sept 2026, CPU only)
+
+`scripts/h38_homophonic_fit.py` (`h38_homophonic_fit.json`; `--drop-x` -> `h39_homophonic_noX.json`). Nine statistics:
+H3's seven on the settled text ('_'/MULTI dropped, pooled N 1184) plus repeated 3-grams and 4-grams (H34, punctuation
+dropped). Design: h10_mixed (fr19, q 0.2/0.3/0.4), every type of count >= c (3, 6) written by h variants (2, 3, 4;
+equiprobable or Zipf-weighted), pre-split K searched so the final K matches the target, invented-type noise 0/10/20
+pct (f 0.5); 108 conditions x 100 samples. Many conditions: a fit is consistency, not proof.
+**H38, X kept: no condition passes more than 6 of 9**; the target's top-1 is above every band (108 of 108), IC above
+(101) and doubling above (95): homophony fixes the repeat counts (H34) but cannot produce one sign at 12.8 pct that
+doubles. The only 6/9 conditions sit at a degenerate pre-split K of 10-18.
+**H39, X removed (N 1032, K 159; repeated 3-grams fall to 2, 4-grams 0): three conditions pass 8 of 9** (q 0.2, Zipf-
+weighted variants, h 2-4, 20 pct noise; all miss only hapax, the target having more singleton ids than the design),
+and five more pass 7 of 9 at a realistic pre-split K of 55-61 (q 0.3, h 2, 10 pct noise: hapax inside, doubling above,
+repeated 3-grams below). Against H13's best pooled 5 of 7 (X kept, no homophony) this is the closest joint fit so far:
+**X as a non-text sign (null, filler or separator used freely, incl. doubled) over a homophonic text of about two to
+four signs per frequent unit, with 10-20 pct transcription noise, is consistent with every pooled statistic except
+the hapax share** -- a working model at grade S, not an identification (no 9/9, many conditions tried). The fitted
+pre-split K (17-61) is small: the underlying unit inventory could be letter-scale (20-30) with 3-4 homophones or a
+mixed letter/syllable set of about 55-60 with 2. Nothing read; status `open`. Named next steps: H40 (invented-type share
+f 1.0 for the hapax miss, fresh-seed confirmation of the 8/9 conditions) and H41 (is there any sequential structure
+left without X: adjacent-sign mutual information against within-line shuffles, with the fitted design as power).
