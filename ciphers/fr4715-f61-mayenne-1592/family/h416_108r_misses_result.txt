@@ -1,0 +1,11 @@
+f.108r overlay under key v8 (pooled, EBR form A): 74/84; misses:
+T1	F108_L02	letter 6 'f'	sign 6 EBR cell a/l/s
+T1	F108_L02	letter 20 'p'	sign 20 4PI cell d/q
+T1	F108_L02	letter 36 'e'	sign 36 INF cell u
+T2	F108_L03	letter 3 'l'	sign 3 OTHER cell -
+T2	F108_L03	letter 8 'q'	sign 8 OTHER cell -
+T2	F108_L03	letter 9 'u'	no sign paired
+T2	F108_L03	letter 10 'i'	no sign paired
+T2	F108_L03	letter 29 'l'	sign 27 OTHER cell -
+T2	F108_L03	letter 39 'm'	sign 37 OTHER cell -
+T2	F108_L03	letter 45 'z'	sign 43 BETA cell m/s

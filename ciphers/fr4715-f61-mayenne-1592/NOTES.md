@@ -5962,3 +5962,15 @@ H415 (script-only): the L04/2 deletion added to `scripts/f61_positions_correctio
 rows (`--check` OK): **meter with every correction 12 / 60 / 1 / 26 of 99** (uncorrected 12 / 59 / 2 / 26 of 99; spans 55/55 unchanged). The
 transcription corrections so far (H407, H414): L07/4 BETA -> C43; L03/16 PHI inserted; L04/2 removed as punctuation. No key, grade or reading.
 Cost estimate 1.6 USD.
+
+## Campaign step H416 (29 Sept 2026, 20:04-19:36 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- the ten f.108r overlay misses under key v8 sorted (script-only)
+
+`family/h416_108r_misses.py` -> `family/h416_108r_misses_result.txt` (`--check` OK). Key v8 (pooled, EBR form A) reads 74 of 84 overlay letters on
+f.108r (f.61's hand); the ten misses fall in three kinds:
+- **word sign (3):** T2 letters 8-10 'qui' meet one OTHER sign (sign 8) -- the table's own 'qui' word code (keys/key_mayenne_1592.tsv), not an error;
+- **cells that do not close to a table column (2):** 'f' at an EBR (form A cell a/l/s: s without its column partner f) and 'z' at a BETA (cell m/s:
+  m without its partner z) -- the published design pairs f/s and m/z under one symbol each, so a fitted cell holding one letter of a pair and not the
+  other contradicts it (the same cross-column sets as F61_FLOOR.md);
+- **transcription questions (5):** 'p' at a 4PI (T1 sign 20; the 4-family bowl question), 'e' at an INF (T1 sign 36), and three unclassed OTHER signs
+  (T2 signs 3, 27, 37 for l, l, m).
+No key change. Rows H417 (the column-closure question as a scored key variant) and H418 (the f.108r transcription questions) follow. Cost ~0.05.
