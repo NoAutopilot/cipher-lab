@@ -4887,3 +4887,13 @@ f.177r is the separate-sheet decipherment of f.176r, gate PASS; f.175r the decip
 leaf is recorded as the hand of f.61's scribe (Mayenne's secretary: f.61, f.108r, f.108v), and a hand comparison by vision would start from a leaf with
 no link to that scribe: the vision half of the row is not run. The LL letterform question (H302/H304) waits on a clear page by that secretary; H308
 names where to look. No call, no value.
+
+## Campaign step H308 (29 Sept 2026, 12:45 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- a clear page from Mayenne's chancery on disk: fr.3983 f.211r (no request)
+
+No Gallica request was needed: `family/images/3983_f211r_ref1600.jpg` (Mayenne to de Diou, camp of Han, 1 April 1593; MANIFEST canvas 362) is a full
+page of clear French with one short glossed cipher run on line 2 (H95/H96, ASKS row 93). The runner read it at 1600 px (grade M, words only) for
+doubled l's and capital I's: **laquelle (line 1), ville (lines 4 and 9), elle and meilleure (line 10), Tellement (line 22), Monsieur daumalle (line 21),
+seullement (line 26); 'Ils' (line 14), 'Il se' (line 24)** -- about eight clear doubled l's and two or more capital I's, against f.61's one 'ella'.
+Caveat on the hand, not settled here: H95 calls the leaf "Mayenne's secretary's hand" from its sender and date; no side-by-side comparison with f.61's
+scribe is on file, and at this scale the script looks smaller and faster than f.61's. So f.211r is the candidate source for an ll-only control (H309),
+and the hand match is part of what that step must show (its hand-check tiles), not an assumption. No call, no value.
