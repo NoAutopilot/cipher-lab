@@ -690,3 +690,12 @@ itself once for H283 (grade M: the line ends "croys aussi que les"); the blind r
 scripts/f61positions_L04_score.py: the reply's items in order; pre-stated read-out "H283's lead stands" iff the last item of the line (segment 4, largest x)
 is a word read as 'les'; the sign items are joined by count to read_call_U's two L04 signs (LOOPBAR, OTHER) if the count is 2. Prompt: H264's verbatim
 with L04 in place of L10.
+
+## H297 (29 Sept, Opus vision, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61 sheet-B L05 blind positional read from the true line start, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h297/L05.jpg (scripts/f61positions_sheets.py --lines L05 --prefix f61sheetB --tag h297; four segments, the whole line). Disclosure: the runner
+viewed images/f61sheetB_L05.jpg once for the Correction (grade M: "choses sont a" before the run); the blind reader is a fresh call. Scored by
+scripts/f61positions_L05B_score.py: (a) the clear words listed before the first sign item -- pre-stated "the line begins with clear text before the run"
+iff at least one word item precedes the first sign, and "the runner's read stands" iff the last such word (ignoring a bare 'a') is 'sont'; (b) the sign
+items joined in order to read_call_A's 18 L05 signs iff their count is 18 (a bare 'a' listed as a word) or 19 (the edge a listed as a sign, then taken
+as H63's uncoded CA before pass A's pos 1). Prompt: H264's verbatim with L05 in place of L10.
