@@ -4962,3 +4962,13 @@ choice on that tile) is not run: a tile with the lower half of the sign missing 
 (f.61's LL and L02's opening mark), f.61's clear 'Il' x2 and 'ella', and two doubled l's from fr.3983 f.211r, labelled. The README states the one
 question (pass 1 LL vs pass 2 'Il') and the five instruments' results (H302/H304/H309/H310/H311), none of which decides it. The runner viewed the
 finished pack to check the crops; no judgement of the runner's is recorded as a result. For the verifier lane (ROOM post). No call.
+
+## Campaign step H314 (29 Sept 2026, 13:01 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- no clear 6 in the secretary's hand on record; thumbnail sweep not run (script/notes)
+
+Script-first over NOTES.md and family/MANIFEST.tsv for dates and figures on the family's leaves: the dated lines on record are "4 de mars 1593"
+(f.106r heading), "Du camp de Soissons, ce IIIIe mars 1593" (Roman), "De Soissons ce dernier jour de fevrier 1593" (f.108v, in words), "7 de Nove[mbre]
+1592" (f.124r, de Diou's side), "5 d'avril 1592" and "13 may 1593" (other senders), "22 de Juillet 1593" (Desportes); f.211r, the same-hand clear page,
+writes its numbers as words ("six Jours", "huit Jours", "trois ou quatre Jours", H308's reading at 1600 px). Years 1592/1593 hold no 6, and no dated line
+from Mayenne's chancery on record has a 6 in its day. So the prior that a thumbnail sweep (the row's second half) finds a clear digit 6 in this hand is
+low; it is not run (0 Gallica requests), and the C6 argument stays on the markup and the missing glyph link (H303's paragraph). A later route, if one
+is wanted: a leaf from this chancery with a sum or a count in figures, which none of the folder's leaf descriptions mentions. No call, no value.
