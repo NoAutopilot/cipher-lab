@@ -732,3 +732,13 @@ l 5 (f.211r ville, elle, daumalle, Tellement; f.61 ella), single l 5 (f.211r la,
 and at three placement sheets of the ten TEXT tiles; the LL, PHI/C43 crops and the test sheet were not seen; the L02 mark was seen on sheet B L02 in
 H302. Runner's own note before the call: at this size f.211r's l's look slender with no blob head, f.61's heavier with blob heads, so a split by leaf is
 possible -- gate 1 reports it as a CONTROL FAIL with the split noted. Prompt: H256's verbatim with "16 numbered tiles (Y01-Y16)" and "Y01 to Y16".
+
+## H310 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- forced choice on H309's sheet, WRITTEN BEFORE THE CALL
+
+Same sheet and key as H309 (<scratch>/h309/sheet_01.jpg, family/h309_items.tsv); a fresh reader. Gate and read-out in family/h310_ll_forced.py's
+docstring. Prompt (verbatim): "Read the image /…/h309/sheet_01.jpg with your image reader only; use no other tool. It holds 16 numbered tiles (Y01-Y16)
+cut from 16th-century French manuscript pages that mix ordinary cursive handwriting with cipher signs, all scaled to the same height. In each tile two
+black triangles, one above and one below, point at the centre mark; other letters or signs may show at the sides. For the centre mark ONLY, answer one
+of: ONE (it is made of one tall upright ascender stroke), TWO (two tall upright ascender strokes standing side by side), NEITHER (it is some other
+shape), or unclear. Ignore ink weight, size, blur, the hand, and any strokes joining it to neighbours. Answer inline, one line per tile, exactly
+'Y01<TAB><ONE|TWO|NEITHER|unclear>', Y01 to Y16 in order, and nothing else."
