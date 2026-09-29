@@ -4086,3 +4086,28 @@ The margins over all-d/q are small (0.5 and 1.0 points, 5 tokens apart), as H213
 of the named sets both times, as in H213 (30/30). Together: on f.108v the 4-headed hash reads d/q (two instruments), and the looped hash reads i/x
 by a small margin in both (sequence 24/30 OPEN; judge +0.5/+1.0). No period-letter test is possible yet (H214: the looped form is absent from f.176).
 For the verifier, sequence and judge evidence only; nothing merged.
+
+## Campaign step H218 (29 Sept 2026, 03:13 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- which pass code each session wrote for each shape (script-only, for the verifier)
+
+`family/h218_code_sessions.py` (result `family/h218_code_sessions_result.txt`, `--check` OK), from the blind shape answers on disk:
+- **Bowl (c/p) 4-sign written as:** 4TRI on f.176v (9/10 yes) and f.176r (7 yes of 40, the rest the no-bowl sign also coded 4TRI), 4TRI on f.61 (5/5)
+  and f.108r L02-L03 (3/4); **4STEM on f.108v (19 yes, 2 no)**, where 4TRI (0/6) and C43 (0/41) are the no-bowl sign; on f.101r 4TRI (10 yes / 9 no)
+  and 4STEM (6 / 11) both mix.
+- **No-bowl (a/n) 4-sign written as:** C43 almost everywhere (f.61 8/8 no, f.108v 41/41, f.108r 8/8), 4TRI|C43 splits on f.176v (10/10 no), 4TRI on f.176r
+  (31 no) and on f.108v (6/6).
+- **Hash forms:** f.108v HASH4 A (4-head) 9 / B (looped) 5; f.108r L06 A 1 / B 9.
+For the verifier and any v6 build: a 4-family or HASH4 count pooled by pass code across reading sessions mixes shapes (H203's MIXED flags are the visible
+cases). Re-splitting by shape needs the blind shape answers above, not the codes. Nothing merged.
+
+## Runner 8 handover (29 Sept 2026, 03:14 UTC by the clock, session_011Taenrv3JSdk7VjpiBjids)
+
+Done this session (H198 status, H199-H215, H218; spent today 45.0/600). **The 4-family bowl rule in f.61's hand:** on f.108v the bowl sign is the passes'
+4STEM (H199). Relabelling by bowl beats the pass codes by sequence gain (H201: 30/30, rank 1 of 201 random relabels) and by the model judge (H208:
+rank 1/21 in both seeds; H205 was a design-flawed first try). On f.108r (H202) and f.101r (H207) it leans the same way but misses the registered rules.
+**HASH4:** a blind sort finds two forms, 4-head and looped (H212). On f.108v the split 4-head d/q, looped i/x beats all-i/x and the reverse 30/30
+(H213), and the judge prefers it in both seeds (H215; small margin over all-d/q). The looped form is absent on f.176 (H214 control fail), so there is
+no period-letter test yet. For the orchestrator: a "key source" ROOM line was posted at 02:49 for the bowl rule. Open for runner 9: **H216** (one vision
+call, bowl and hash forms on f.108r L04-L06; crops images/f108g, images/f108h; seg/x in scripts/f61recon108r_draft.tsv; the H193 control strips
+regenerate with the natives of btv1b9060633d f327/f328 and `family/cut_bands.py` as in NOTES H199), then **H217** (script, H201's design on f.108r).
+Scripts to copy: `family/h199_bowl_108v.py` (tiles from a native with a marker above), `family/h212_hash_sort.py` (sort design),
+`scripts/f61bowl_108v_seq.py` (relabel + seq gain + random-relabel null).

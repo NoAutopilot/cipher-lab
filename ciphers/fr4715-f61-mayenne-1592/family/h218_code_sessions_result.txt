@@ -1,0 +1,21 @@
+leaf	step	code	answers
+f.101r	H207 (period-aligned code)	4STEM	n:2 no:11 yes:6
+f.101r	H207 (period-aligned code)	4TRI	n:1 no:9 yes:10
+f.108r L02-L03	H202 (pass A code)	4PI	no:5
+f.108r L02-L03	H202 (pass A code)	4STEM	no:3
+f.108r L02-L03	H202 (pass A code)	4TRI	no:1 yes:3
+f.108r L02-L03	H202 (pass A code)	C43	no:8
+f.108r L06	H212 hash form (A 4-head, B looped)	HASH4	A:1 B:9
+f.108v	H199 (H59 reconciled code)	4STEM	n:4 no:2 yes:19
+f.108v	H199 (H59 reconciled code)	4TRI	no:6
+f.108v	H199 (H59 reconciled code)	C43	no:41
+f.108v	H199 (H59 reconciled code)	OTHER	n:1
+f.108v	H199 (H59 reconciled code)	ZHOOK	n:1
+f.108v	H212 hash form (A 4-head, B looped)	HASH4	A:9 B:5
+f.176r	H193	4TRI (both passes)	n:2 no:31 yes:7
+f.176v	H193	4TRI (both passes)	no:1 yes:9
+f.176v	H193	4TRI|C43 (passes split)	no:10
+f.61	H194	4PI	no:1
+f.61	H194	4STEM	no:1
+f.61	H194	4TRI	yes:5
+f.61	H194	C43	no:8
