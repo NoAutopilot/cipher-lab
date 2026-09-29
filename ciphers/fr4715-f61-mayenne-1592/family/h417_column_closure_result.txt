@@ -1,0 +1,9 @@
+column variant changes (pooled, form A): 4STEM a/c/e/n -> a/n; 4TRI c/p/t -> c/p; BETA m/s -> m/z; CH e/m -> m/z; DBL e/r/u -> e/r; EBR a/l/s -> i/l; LOOPSTEM1 q/s -> d/q; RSIGN c/m/n/p/s/t -> m/z
+v8     f.61 spans (corrected): 55/55 = 1.000; own permuted p95 0.436; margin +0.564; >= key 0/2000
+v8     f.108r overlay: 74/84 = 0.881; own permuted p95 0.405; margin +0.476; >= key 0/2000
+closed f.61 spans (corrected): 55/55 = 1.000; own permuted p95 0.473; margin +0.527; >= key 0/2000
+closed f.108r overlay: 76/84 = 0.905; own permuted p95 0.476; margin +0.429; >= key 0/2000
+column f.61 spans (corrected): 55/55 = 1.000; own permuted p95 0.382; margin +0.618; >= key 0/2000
+column f.108r overlay: 68/84 = 0.810; own permuted p95 0.345; margin +0.464; >= key 0/2000
+read-out closed: does not fit as well as v8 on at least one leaf (count or margin)
+read-out column: does not fit as well as v8 on at least one leaf (count or margin)

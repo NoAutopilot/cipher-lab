@@ -5974,3 +5974,19 @@ f.108r (f.61's hand); the ten misses fall in three kinds:
 - **transcription questions (5):** 'p' at a 4PI (T1 sign 20; the 4-family bowl question), 'e' at an INF (T1 sign 36), and three unclassed OTHER signs
   (T2 signs 3, 27, 37 for l, l, m).
 No key change. Rows H417 (the column-closure question as a scored key variant) and H418 (the f.108r transcription questions) follow. Cost ~0.05.
+
+## Campaign step H417 (29 Sept 2026, 20:07-19:37 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- the table's column structure as a key constraint: neither variant beats the fitted cells on both known answers (script-only)
+
+`family/h417_column_closure.py` (written before running) -> `family/h417_column_closure_result.txt` (`--check` OK). Three keys scored on f.61's five
+spans (with the corrections file) and the f.108r overlay, each against 2000 permuted keys of its own:
+| key | f.61 spans | margin over own p95 | f.108r overlay | margin |
+|---|---|---|---|---|
+| v8 (fitted cells) | 55/55 | +0.564 | 74/84 | +0.476 |
+| closed (every letter brings its column partner) | 55/55 | +0.527 | 76/84 | +0.429 |
+| column (cross-column classes cut to their top-mass column) | 55/55 | **+0.618** | 68/84 | +0.464 |
+Column variant changes: 4STEM a/c/e/n -> a/n; 4TRI c/p/t -> c/p; BETA m/s -> m/z; CH e/m -> m/z; DBL e/r/u -> e/r; EBR (form A) a/l/s -> i/l
+(y folded to i); LOOPSTEM1 q/s -> d/q; RSIGN -> m/z. Pre-stated read-out: **neither variant fits as well as v8 on both leaves**. The closed key
+gains two f.108r letters (the 'f' and 'z' of H416) but, being wider, loses margin; the column key sharpens f.61 (+0.618) but loses six f.108r
+letters, i.e. the fitted cells' extra letters (4TRI t, DBL u, EBR form A's a and s) do real work on f.108r. What it means: the published column
+pairing is not by itself a better key than the period-fitted cells; BETA m/s -> m/z alone is the one change H416's evidence (the 'z' of
+"commoditez") supports without a loss -- a single-cell question for the verifier, not applied. No key change. Cost ~0.1.
