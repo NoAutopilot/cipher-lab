@@ -2448,6 +2448,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 11:15 Pacific [18:15 UTC], account 3): both f.61 verifiers report; key v8 being built
+
+- Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
+- VERIFY-F61-V10 (3.97): key v7 carries an order signal as a set of cells on two leaves it was not built from, f.97r and f.124r -- endorsed in part, with its own statistic, decoder and controls; f.108v a lean only, f.106r untestable (power 0.60); per sign only HASH4 d/q and C43 a/n stand. It shows nothing about any letter on f.61.
+- VERIFY-F61-V11 (9.21): endorsed in part -- a 4TRI drawn without the stem-foot bowl is the a/n sign (new class 4TRI_NB; f.101r period letters 0.91 under two readers, beats 29-30 of 30 random splits); the bowl form is unchanged. Runner 14 then found the same bowl rule raises the order signal in f.61's own hand (f.108v 0.157 -> 0.221, f.106r 0.026 -> 0.060, each beating 20 of 20 permuted drafts). On f.61 itself the split would move one token, L05/14, where Tomokiyo prints c; V11 keeps it c/p at grade M.
+- F61-FAMILY-13 (session_01LBFfCcHe3ryMEbCP3dnAQh, dispatcher 18:12) builds key v8 from V11's list and re-runs the meter; expected unchanged at 12 / 59 / 2 / 26. Runner 14 continues (121.82 of 600 today).
+- Debosnys: museum request ready for the owner (ASKS 100). Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 10:15 Pacific [17:15 UTC], account 3): f.61 held-leaf evidence and the 4TRI split go to two verifiers
 
 - Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
