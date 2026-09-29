@@ -3851,7 +3851,7 @@ table. H178b's cross-hand tile link failed for ZHOOK, a different sign, so each 
 
 Pre-registered (PROMPTS section H195; `family/h195_hash_attr.py`, key `family/h195_items.tsv`, `h195_yes_group.txt` = DQ, pushed before the call). One
 Opus vision call (inline reply verbatim, `family/passes/h195_attribute.tsv`). **CONTROL: 14 of 20 f.176v anchors in their group's direction (gate >= 17):
-CONTROL FAIL**; the f.176r targets were not scored (`family/h195_hash_attr_result.txt`, `--check` OK). The reader answered "yes" (4-head) on most
-signs of both groups, so the i anchors (agreed HASH4 columns the DP pairs with i) are not reliably bare hashes. Either the DP's i pairings on HASH4
+CONTROL FAIL**; the f.176r targets were not scored (`family/h195_hash_attr_result.txt`, `--check` OK). The d/q anchors read "4-head" 9 of 10; the
+i anchors split (no 5, yes 3, n 2), so the i anchors (agreed HASH4 columns the DP pairs with i) are not reliably bare hashes. Either the DP's i pairings on HASH4
 columns are partly misplaced, or the i/d distinction is not a 4-head on this hand. Unlike the 4-family (H193), the hash family is not separated by
 this instrument; HASH4 stays d/i/q (as VERIFY-F61-V5 held). Not re-briefed with the same question.
