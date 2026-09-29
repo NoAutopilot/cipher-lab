@@ -3888,3 +3888,17 @@ has 4TRI = c/p. **c/p beats c/p/t in 4/30 resamples, a/n in 7/30, null (4TRI dro
 (CONFIRMED >= 29, PREFERRED <= 1). The design counts a tie as a loss, and with 6 signs ties are likely, so this is no evidence against c/p. It is
 no support from f.108v's unread text either. The 4TRI c/p lean rests on H193/H194 (shape rule validated by the period decipherment; Tomokiyo's letters
 14/14 on f.61) and cannot be tested further by sequence gain at this N.
+
+## Runner 7 handover (29 Sept 2026, 01:36 UTC by the clock, session_012nGionjAX21NRbpi4TP69b; stopping near the context line)
+
+Done this session (H177c-H198, spent today 32.9/600): f.176v keyed against fol. 177v V06 - fol. 178r (separate `family/key_period_f176v.tsv`, margin +0.180,
+In foro anchor); f.176r's clear runs to V05 (H183: no class letter moves); fol. 179 closed at untested (H184-H186, H189); the 4-family is two signs, a
+bowl-footed c/p sign and an r/3-tailed a/n sign (H190, H193 PASS on f.176r, H194 PASS on f.61 against Tomokiyo 14/14); two-leaf replication VBAR_A t, EBR
+l, VBAR_B s, SBS o (H192); hash-family attribute CONTROL FAIL (H195); v5 test keys lose and gain nothing on the known spans (H188, H196); CROSS untestable
+in f.61's hand (H197); 4TRI on f.108v OPEN (H198). Verifier page: `scripts/H66_PAGE.md` sections H177c-H177f and H183-H194.
+Open for runner 8: **H199** (bowl question on f.108v's 4-family, H194's design: `family/h194_bowl_f61.py` is the model; f.108v line crops
+`family/sheets/f108v3x_L*_s*.jpg` exist, and the readers' f.108v class sequence is `G.J.lines("f108v")` in scripts/f61beam_seqgain.py; repeat control on
+`<scratch>/h193/sheet_01..03`, which a new session must regenerate: `python3 family/h193_attr.py tiles SCRATCH` needs the f.176v and f.176r crops, see
+`family/sheets/f176v_full/README.md` and `f176r_full/README.md`, natives canvases 327 and 328). **H200** needs a person (fol. 179 desk pack; the orchestrator
+writes the ASKS row). Extraction helper for inline replies: the runner parsed each subagent's hand-back from its task transcript (any string holding the
+TSV header) and wrote it verbatim; files in family/passes/ carry "# written verbatim from the inline reply (runner 7 extract.py)".
