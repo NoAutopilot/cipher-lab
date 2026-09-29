@@ -661,3 +661,12 @@ show at the sides. Sort ONLY the centre marks into 2 to 5 groups by the letterfo
 arrangement -- ignoring ink weight, size, blur, which hand wrote it, and any connecting strokes that join it to a neighbour; a tile whose centre mark
 cannot be told goes to 'unclear'. Answer inline: first one line per group, 'GROUP <letter>: <one-sentence criterion>'; then one line per tile, exactly
 'T01<TAB><group letter or unclear>', T01 to T20 in order, and nothing else."
+
+## H260 (29 Sept, Opus vision, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- H256 on f.61's other five CA, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h260/sheet_01.jpg (family/h260_ca_text.py tiles; key family/h260_items.tsv; 20 tiles: f.61 CA 5 -- L07 1 and L08 10 at H257's positions,
+L10's three at H63's sheetB positions, each re-centred on its ink centroid by script -- clear-text a 6 (H63's unused control a's: maintenant x2, depar, pas;
+particulieres and tances from the clear line L02), clear-text non-a letters 3 (L02: trop o, vous o, en e), cipher PHI 3 and C43 3 at positions not used
+in H256). Disclosure: the runner viewed images/f61sheetB_L02.jpg (a line with no CA) to place the L02 letters, and two ruler sheets of the nine TEXT tiles
+only; the CA, PHI and C43 crops and the test sheet were not seen. Rules, gates and read-outs as H256 (script docstring). Prompt: H256's verbatim with
+T01-T20 read U01-U20.
