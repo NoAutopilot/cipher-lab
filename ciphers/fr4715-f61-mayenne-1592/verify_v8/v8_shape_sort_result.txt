@@ -1,0 +1,63 @@
+align_check (no vision):
+  key v6 L02: ZHOOK@4=i ZHOOK@8=i 4PI@20=p ZHOOK@23=j 4PI@25=d ZHOOK@26=i 4PI@29=d ZHOOK@35=i
+  key v6 L03: 4PI@25=d ZHOOK@32=j 4PI@39=d ZHOOK@40=i
+  key v6 without ZHOOK, 4PI L02: ZHOOK@4=i ZHOOK@8=i 4PI@20=p ZHOOK@23=j 4PI@25=d ZHOOK@26=i 4PI@29=d ZHOOK@35=i
+  key v6 without ZHOOK, 4PI L03: 4PI@25=d ZHOOK@32=j 4PI@39=d ZHOOK@40=i
+  position only L02 (39 signs = 39 letters): ZHOOK@4=i ZHOOK@8=i 4PI@20=p ZHOOK@23=j 4PI@25=d ZHOOK@26=i 4PI@29=d ZHOOK@35=i
+  position only L03: 43 signs vs 45 letters, not applicable
+setF: GATE f.274r 20/21 PASS; repeat 8/8 stable
+  P1/101r/4PI/DQ: A 5
+  P1/101r/4PI/other: N 2
+  P1/188r/4PI/AN: E 7
+  P1/188r/4PI/DQ: A 7 N 1
+  P1/188r/4PI/other: E 3
+  P2/108r/4PI/-: A 4
+  P2/108r/4PI/DQ: A 4
+  P2/108r/4PI/other: A 1
+  P2/61/4PI/-: E 2
+  Z/108r/ZHOOK/I: D 7
+  Z/61/ZHOOK/-: D 3
+  anchor/101r/H24/I: D 5 N 1
+  anchor/101r/HASH4/DQ: A 4 N 2
+  anchor/188r/H24/I: D 4 N 2
+  anchor/188r/HASH4/DQ: A 6
+  distr/101r/C43/AN: E 1 N 3
+  distr/108r/4STEM/AN: E 2 N 1
+  distr/108r/4TRI/other: A 4
+  distr/108r/C43/AN: N 5
+  distr/188r/C43/AN: E 2 N 2
+  distr/61/C43/-: N 3
+  distr/61/HASH4/-: A 1
+  Z1: ZHOOK D 10/10 = 1.00 (f.61 3/3, f.108r 7/7); in-hand distractors D 0.00 (27); S 37 p 5e-05
+  Z3 (overlay letters, f.108r 24 lettered tiles): S 11 p 5e-05
+  P1 (period 4PI, 25 tiles): A 12 (d/q 12, a/n 0); E 10 (d/q 0, a/n 7); S 19 p 5e-05
+  P2: f.61 4PI E/E; f.108r 4PI A 9/9 = 1.00; E rate over all 36 4PI tiles 0.33, chance both f.61 E ~ 0.111
+setG: GATE f.274r 20/21 PASS; repeat 8/8 stable
+  P1/101r/4PI/DQ: A 4 N 1
+  P1/101r/4PI/other: N 2
+  P1/188r/4PI/AN: N 7
+  P1/188r/4PI/DQ: A 8
+  P1/188r/4PI/other: E 1 N 2
+  P2/108r/4PI/-: A 4
+  P2/108r/4PI/DQ: A 4
+  P2/108r/4PI/other: A 1
+  P2/61/4PI/-: E 2
+  Z/108r/ZHOOK/I: D 7
+  Z/61/ZHOOK/-: D 3
+  anchor/101r/H24/I: D 5 N 1
+  anchor/101r/HASH4/DQ: A 4 B 1 N 1
+  anchor/188r/H24/I: D 6
+  anchor/188r/HASH4/DQ: A 6
+  distr/101r/C43/AN: B 1 N 3
+  distr/108r/4STEM/AN: E 2 N 1
+  distr/108r/4TRI/other: A 4
+  distr/108r/C43/AN: N 5
+  distr/188r/C43/AN: E 1 N 3
+  distr/61/C43/-: N 3
+  distr/61/HASH4/-: A 1
+  Z1: ZHOOK D 10/10 = 1.00 (f.61 3/3, f.108r 7/7); in-hand distractors D 0.00 (27); S 37 p 5e-05
+  Z3 (overlay letters, f.108r 24 lettered tiles): S 11 p 5e-05
+  P1 (period 4PI, 25 tiles): A 12 (d/q 12, a/n 0); E 1 (d/q 0, a/n 0); S 12 p 0.0002
+  P2: f.61 4PI E/E; f.108r 4PI A 9/9 = 1.00; E rate over all 36 4PI tiles 0.08, chance both f.61 E ~ 0.007
+setN: GATE f.274r 9/21 CONTROL FAIL; repeat 8/8 stable
+read-outs (both setF and setG): Z yes; Z108 yes; P1two no; P1head no; P2 yes

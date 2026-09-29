@@ -19,7 +19,9 @@ def main():
         return r["period_letters"]
     for tag, f in (("v6", v6), ("v6 + ZHOOK = 2# (value unchanged)", v6),
                    ("v6 + 4PI split, f.61 4PI a/n (H240)", lambda r: "a/n" if r["class"] == "4PI" else v6(r)),
-                   ("v6 + 4PI split, f.61 4PI held unread", lambda r: "-" if r["class"] == "4PI" else v6(r))):
+                   ("v6 + 4PI split, f.61 4PI held unread", lambda r: "-" if r["class"] == "4PI" else v6(r)),
+                   ("v6 + 4PI split, L11 9 a/n (Tomokiyo S5 only, grade M), L01 12 unread (V8, added after scoring)",
+                    lambda r: ("a/n" if r["line"] == "L11" else "-") if r["class"] == "4PI" else v6(r))):
         c = Counter(band(f(r), r["class"]) for r in d)
         out.append(f"{tag}: {len(d)} signs: firm {c['firm']} / two-way {c['two-way']} / wider {c['wider']} / unread-or-null {c['unread/null']}")
         wid = Counter(r["class"] + "=" + f(r) for r in d if band(f(r), r["class"]) == "wider"); out.append("  still wider: " + " ".join(f"{k}:{v}" for k, v in sorted(wid.items())))

@@ -558,3 +558,95 @@ Not assessed. This audit is about a key cell, not a reading, and no plaintext cl
 High that the three period-lettered leaves separate a 2# i/x sign from a 4-head d/q sign: the result holds with and without the post-look
 category, on each leaf alone, with a stable reader and a passed anchor gate. Moderate on the single f.61 token: one tile, cut from a different
 source image at a larger scale, and one reader marked it "less sure".
+
+## VERIFY-F61-V8 (29 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V8 (account 3; Opus), 08:13-08:2x UTC by the container clock. Separate from campaign runner 9 (which posted H235/H254 and
+H233/H239/H240/H255) and from VERIFY-F61-V6 and V7. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v8.md`. Claims under audit (ROOM 05:48 and 05:51 UTC;
+`family/v6_shape_candidates.tsv`): (1) ZHOOK = the 2# sign; (2) 4PI is two signs, the 4-head hash (d/q) on f.101r/f.108r and a 4 over a Pi on f.61
+(a/n, from Tomokiyo S5's n).
+
+Files in `verify_v8/`: `v8_shape_sort.py` (design, categories and read-outs committed 585a5abe before any tile existed or any look), `v8_items.tsv`
+(key, committed 48b13154 before the calls), `PROMPTS.md` (prompts verbatim, disclosures), `v8_reply_set{F,G,N}.tsv` (blind replies verbatim),
+`v8_shape_sort_result.txt` (`score --check` OK), `meter_v8.py` + result (`--check` OK). Two Gallica requests (f.188r, f.101r natives; sha1 = MANIFEST;
+`family/requests.log`). Three Opus subagent calls. Nothing edited in `family/key_period_v6.tsv`, `CAMPAIGN.md` or the runner's files.
+
+**Design.** 115 tiles plus 8 repeated under new ids, all fresh cipher-row crops at about +-60 native px, grey + autocontrast, red markers:
+- f.274r's 21 lettered H24/HASH4 rows form the **gate**: i/x -> 2#, d/q -> 4-head, set by letter class and not by any earlier reader's answer.
+- **Lettered 4PI rows:** every one on f.188r (18) and f.101r (7), with 6 H24 i/x, 6 HASH4 d/q and 4 C43 a/n per leaf.
+- **f.61:** ZHOOK 3, 4PI 2, HASH4 1, C43 3.
+- **f.108r:** ZHOOK 7 and 4PI 9. Every 4STEM/4TRI on L02/L03 and 5 C43 serve as in-hand distractors. The L02/L03 segments are joined end to end, so signs at a segment boundary are whole.
+
+The categories were fixed before any look, and the verifier's one look (six tiles, marker placement only) is disclosed in PROMPTS.md. There were three
+readers, each with its own shuffle and ids. **setF** and **setG** used A 4-head / D 2# / E figure-4 on stems not crossed by hash bars / B looped / N other.
+**setN** used A / B / N only, with a few words per N. The null is 20,000 within-leaf permutations of the shape labels.
+
+| check | setF | setG | setN |
+|---|---|---|---|
+| gate, f.274r (>= 0.8) | 20/21 PASS | 20/21 PASS | 9/21 **CONTROL FAIL** (not scored; see below) |
+| repeat control | 8/8 | 8/8 | 8/8 |
+| Z1 ZHOOK -> D (shape only), Mayenne hand | 10/10 (f.61 3/3, f.108r 7/7); in-hand distractors D 0/27; p 5e-05 | 10/10 (3/3, 7/7); 0/27; p 5e-05 | every ZHOOK "A", noted "2-like curved head on hash" |
+| Z3 f.108r overlay letters, #(D & i/x) + #(A & d/q) | S 11, p 5e-05 | S 11, p 5e-05 | - |
+| period 4PI rows lettered d/q | A 12/12 | A 12/12 | A |
+| period 4PI rows lettered a/n (f.188r) | E 7/7, noted "4r-like" | N 7/7, noted "4 + r-like tail" | N, "plain 4 followed by r" |
+| f.108r 4PI (9) | A 9/9 | A 9/9 | A |
+| f.61 4PI (2) | E, E, noted "4 over Pi" | E, E, "4 over pi" (chance both E 0.007) | N, "4 on two long stems" |
+
+Registered read-outs (both setF and setG): **ZHOOK sorts with the 2#: yes** (f.108r only: yes); **P2 f.61's 4PI is a different sign from f.108r's:
+yes**; **P1 "two signs on the period leaves" (E <-> a/n): no** (setG's E holds 1 tile), **P1 "period 4PI rows are the 4-head": no** (setF's E 10 of 25 is
+at or above the 0.15 limit).
+
+**setN's gate failure.** The reader without D put the 2# i/x tiles under A. Its hand-back says about 30 of its A answers carry "a 2-like curved head" and
+are noted so. By the registered rule the call is not scored. Descriptively, its notes give every ZHOOK tile the same "2-like curved head" words it gave
+the period 2#.
+
+**Where results rest on the overlay alignment.** Z1 and P2 use no letters. Z3 and the f.108r d/p values rest on Tomokiyo's overlay reprint. That alignment
+was re-checked without vision (`align_check` in the script). On L02 every ZHOOK/4PI letter is the same three ways: under key v6, under key v6 with ZHOOK
+and 4PI removed, and by position alone (39 signs = 39 letters). On L03 (43 signs against 45 letters) the first two ways agree. The ZHOOK letters are
+i 5 and j 2, and the 4PI letters d 4 and p 1, unchanged. **The overlay letters at these positions do not follow the key under audit.**
+
+### Verdict (1) ZHOOK = the 2# sign: **endorse**
+
+Two blind readers put all ten Mayenne-hand ZHOOK tiles, f.61's three included, in the 2# class. They put none of 27 in-hand distractors there, and each
+passed the gate and the repeat control. f.108r's overlay letters at ZHOOK are i/j (= i) under a key-free positional alignment. This gives ZHOOK's
+i/x on f.61 the glyph link that H178b could not find: the period i/x value (the H24 cell, grade C on f.101r/f.188r/f.274r) reaches f.61's ZHOOK by a blind
+shape attribute. **Grade S** (period value from other hands, linked by blind shape), as for HASH4 in V7. The value is unchanged, so no meter token
+moves. What should merge: ZHOOK's row keeps i/x and its note records "the 2# sign = H24 cell, glyph link VERIFY-F61-V8", replacing "no glyph link".
+
+### Verdict (2) 4PI is two signs: **endorse in part**
+
+- **Endorsed: the split.** Every period 4PI row lettered d/q (12 of 12 in both readers) and every f.108r 4PI (9 of 9 in both) is the 4-head hash.
+  f.61's two 4PI are something else: E in both readers, and they are the only tiles either reader called "4 over Pi". f.61's 4PI is therefore not
+  HASH4/4-head and should not carry d/q. f.108r's 4PI reads d/q as the 4-head (grade C from the overlay letters d 4, p 1, alignment checked above).
+- **Not endorsed: a/n for f.61's form by glyph.** The period 4PI rows lettered a/n (f.188r, 7) are a third form, a 4 followed by an r/3-like tail. The
+  readers describe it in the same words as several period C43 tiles, which read a/n. Neither reader matched it to f.61's 4-over-Pi: setG kept them apart
+  (N vs E), and setF's notes do too ("4r-like" vs "4 over Pi"). The registered E <-> a/n read-out failed. f.61's a/n therefore rests on one published
+  letter, Tomokiyo S5's n at L11 9. L01 12 lies outside the published spans. That is grade **M** for L11 9, and L01 12 has no value.
+- **Finding for the key (not tested as a registered read-out).** Key v6's pooled 4PI row mixes two period signs on f.188r: the 4-head (d 9, q 2) and the
+  4-with-r-tail form (a 5, n 1, and the e/h/r strays). The next key should split it the way V7 split the hash family, keeping 4PI (4-head) at d/q. The
+  r-tail rows might be C43 miscoded as 4PI; that deserves one test, and this audit only describes it.
+
+### Meter (`verify_v8/meter_v8.py`, key v6, f.61 reading key; bands as meter_v5/v7)
+
+- v6: firm 12 / two-way 58 / wider 4 / unread-or-null 25.
+- v6 + ZHOOK = 2#: 12 / 58 / 4 / 25 (value unchanged; grade note only).
+- v6 + both cells as endorsed here (4PI split, f.61's two 4PI held unread): **12 / 58 / 2 / 27**.
+- v6 + split, with L11 9 at a/n grade M on Tomokiyo alone and L01 12 unread: 12 / 59 / 2 / 26 (variant added after scoring).
+- v6 + H240 as proposed (both f.61 4PI a/n): 12 / 60 / 2 / 25. **Not endorsed**: L01 12 has no source for a/n.
+- Still wider in every variant: OTHER x2.
+
+**What should merge (for the orchestrator; key v6 not edited).**
+1. ZHOOK note: glyph link to the 2#/H24 cell, grade S.
+2. 4PI: the 4-head reads d/q (f.101r, f.108r, and f.188r's d/q rows).
+3. f.61's 4-over-Pi becomes a separate class. L11 9 reads a/n at grade M from Tomokiyo's letter alone; L01 12 stays unread.
+4. The pooled 4PI row should be split before any further pooling.
+
+### Novelty
+Not assessed. This audit concerns key cells, not a reading, and makes no plaintext claim (rule 10).
+
+### Confidence
+- **ZHOOK:** high. Two readers agree 10/10 against 0/27 distractors, the gates pass, and the letter test is supported by an alignment that does not use
+  the code.
+- **The 4PI split:** high for "f.61's 4PI is not the 4-head" (two readers, two tokens, the only "4 over Pi" answers). Moderate for f.108r = 4-head
+  (shape clean; values from one overlay).
+- **a/n for f.61's 4PI:** low. One published letter, no period glyph.

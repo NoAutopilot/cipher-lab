@@ -6,3 +6,5 @@ v6 + 4PI split, f.61 4PI a/n (H240): 99 signs: firm 12 / two-way 60 / wider 2 / 
   still wider: OTHER=e/q/i/p/r/s/t:2
 v6 + 4PI split, f.61 4PI held unread: 99 signs: firm 12 / two-way 58 / wider 2 / unread-or-null 27
   still wider: OTHER=e/q/i/p/r/s/t:2
+v6 + 4PI split, L11 9 a/n (Tomokiyo S5 only, grade M), L01 12 unread (V8, added after scoring): 99 signs: firm 12 / two-way 59 / wider 2 / unread-or-null 26
+  still wider: OTHER=e/q/i/p/r/s/t:2
