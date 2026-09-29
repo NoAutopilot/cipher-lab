@@ -358,3 +358,10 @@ so H359's wording is true of them), plus H377's 6 known f.61 strips in the same 
 `h398_items.tsv`. Natives fetched once each this session: f327 sha1 115f9923 (differs from a2b0d98e on record: a server-side re-encode, as the
 F61-FAMILY-4 note on f.124r; H193's strips regenerated from it, h193_items.tsv byte-identical), f328 4a13be67 (as H230), f210 313f92b3 (as H367's
 fetch). The runner has not looked at any sheet.
+
+## H399 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h399/sheet_01..04.jpg (R01-R71): the 65 agreed draft 4TRI of fr.3982 f.97r L01-L16 (first cut, draft
+position mapped to pass A's row by per-line sequence alignment) at H359 geometry, plus H377's 6 known f.61 strips. Script `h399_97r_firstcut.py`, key
+`h399_items.tsv`. Native f202 fetched once (sha1 87d4236c as MANIFEST.tsv; 1 request). Disclosure: the runner looked at sheet_01 for marker placement
+(the row's placement-sheet step): markers sit on or beside the intended 4-sign, some up to about 25 native px off (pass A/B x estimates differ by
+about 11 native px on average, no bias); x changed to the mean of pass A and pass B where both read the sign in the same segment -- few tiles moved.
