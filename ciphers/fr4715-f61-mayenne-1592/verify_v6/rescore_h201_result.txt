@@ -1,0 +1,5 @@
+f.108v answered 4-family columns 68, bowl yes 19; CODE relabel yes 21, agreeing with bowl on 66/68
+gain (shuffle seeds 6000-6019): bowl 0.278, CODE 0.290, READERS 0.153
+bootstrap (seed 6201): bowl beats READERS 30/30, beats CODE 0/30
+null, 1000 random relabels with the same yes/no counts (seed 6202): bowl rank 1 of 1001, CODE rank 1; best 0.243, p99 0.222, median 0.172
+read-out: bowl relabel carries sequence information on f.108v (reproduced)

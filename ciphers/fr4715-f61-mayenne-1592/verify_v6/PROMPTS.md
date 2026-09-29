@@ -19,3 +19,9 @@ below the writing line and end in a closed loop or bowl (like the bottom of a 'b
 Reply: a TSV block 'id<TAB>answer' (calls 1-2: K rows then target rows; call 3 adds rows 'L01:1', 'L01:2', ...).
 GATE per call: K >= 17/20 in the runner's direction (CP yes, AN no) AND the verifier-framed anchors (set FA) >= 17/20; else that call's
 targets are not scored.
+
+## Task 3b judge calls (written before the calls; `judge_v6.py`)
+Three fresh Opus TEXT subagents, one per file, the H94 no-leak prompt (scripts/PROMPTS.md "H94") verbatim with the file name changed:
+control `verify_v6/judge_v6_ctl_s6207_sets.txt` (six known lines, H94 control prompt; gate fitted map rank 1 of 21), then targets
+`verify_v6/judge_v6_s6208_sets.txt` and `..._s6209_sets.txt` (seven f.108v lines, H94 target prompt) only on a control PASS. The subagent's
+reply is saved verbatim as `judge_v6_<tag>_verdict.tsv`; any tool use other than one Read of the sets file voids that call.

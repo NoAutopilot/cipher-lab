@@ -1,0 +1,62 @@
+call 1: control K (runner's H193 strips) 18/20, FA (verifier framing) 18/20 -> PASS
+call 2: control K (runner's H193 strips) 17/20, FA (verifier framing) 18/20 -> PASS
+call 3: control K (runner's H193 strips) 18/20, FA (verifier framing) 18/20 -> PASS
+f.176r (call 1)
+  RT: same answer as the runner's H193 reader on 39/40 (verifier yes 7, runner yes 7)
+    differs: Q12 L34 s1 x645 letter a: runner n, verifier no
+  RT (H193's targets, verifier's answers): bowl yes c/p 5 a/n 0; bowl no c/p 4 a/n 24; n/other 1; Fisher p 0.00053
+  RN (fresh, any code): bowl yes c/p 13 a/n 3; bowl no c/p 6 a/n 15; n/other 3; Fisher p 0.0025
+    RN code 4PI: no/cp 1, yes/cp 4
+    RN code 4STEM: n/an 1, no/an 1, yes/an 2, yes/cp 3
+    RN code 4TRI: n/cp 1, no/an 8, no/cp 4, yes/an 1, yes/cp 3
+    RN code ?4PI|4STEM: yes/cp 3
+    RN code ?4STEM|4TRI: no/an 2
+    RN code ?4STEM|C43: no/an 1
+    RN code ?C43|4PI: no/cp 1
+    RN code ?C43|4TRI: n/an 1
+    RN code C43: no/an 3
+  f.176r pooled RT+RN: bowl yes c/p 18 a/n 3; bowl no c/p 10 a/n 39; n/other 4; Fisher p 4.1e-07
+f.108v and f.108r (call 2)
+  V8: same answer as the runner's H199 reader on 58/74 (verifier yes 9, runner yes 19)
+  V8 bowl by reconciled code: 4STEM n 1, no 16, yes 8; 4TRI no 6; C43 no 41; OTHER yes 1; ZHOOK n 1
+  R8 f.108r gloss letters: bowl yes c/p 0 a/n 0; bowl no c/p 5 a/n 11; n/other 0; Fisher p 1
+  H202 registered read-out on the verifier's answers: NOT met
+    L02 pos 2 4STEM a: no
+    L02 pos 7 4STEM a: no
+    L02 pos 12 C43 n: no
+    L02 pos 18 C43 a: no
+    L02 pos 20 4PI p: no
+    L02 pos 25 4PI d: no
+    L02 pos 27 4TRI c: no
+    L02 pos 29 4PI d: no
+    L02 pos 31 4TRI p: no
+    L03 pos 1 C43 a: no
+    L03 pos 11 4TRI p: no
+    L03 pos 14 C43 n: no
+    L03 pos 16 C43 n: no
+    L03 pos 18 C43 a: no
+    L03 pos 20 C43 a: no
+    L03 pos 23 C43 n: no
+    L03 pos 25 4PI d: no
+    L03 pos 33 4STEM a: no
+    L03 pos 34 4TRI c: no
+    L03 pos 39 4PI d: no
+f.61 (call 3, list method)
+  L01: listed 4, codes 3 -- left out
+  L03 1 4TRI bowl yes Tomokiyo c
+  L03 2 C43 bowl no Tomokiyo a
+  L03 3 4TRI bowl yes Tomokiyo p
+  L03 4 C43 bowl no Tomokiyo a
+  L05 1 4TRI bowl yes Tomokiyo p
+  L05 2 C43 bowl no Tomokiyo a
+  L05 3 C43 bowl no Tomokiyo a
+  L05 4 C43 bowl no Tomokiyo n
+  L05 5 4TRI bowl yes Tomokiyo c
+  L07: listed 1, codes 0 -- left out
+  L08 1 C43 bowl no Tomokiyo a
+  L08 2 C43 bowl no Tomokiyo a
+  L08 3 4TRI bowl yes Tomokiyo p
+  L11 1 C43 bowl no Tomokiyo n
+  L11 2 4STEM bowl no Tomokiyo -
+  L11 3 4PI bowl no Tomokiyo n
+  f.61: bowl yes c/p 5 a/n 0; bowl no c/p 0 a/n 9; Fisher p 0.0005
