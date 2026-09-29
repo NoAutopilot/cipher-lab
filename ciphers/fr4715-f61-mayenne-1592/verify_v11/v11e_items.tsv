@@ -1,0 +1,73 @@
+call	id	role	leaf	line	pos_or_seg	x	group	repeat_of
+c4	ZSN	target	f101r	L13	29	2515		
+c4	JWQ	anchor	176v	L25	s1	1030	CP	
+c4	ADE	anchor	176v	L08	s2	995	AN	
+c4	REE	anchor	176v	L06	s2	1130	AN	
+c4	ETW	anchor	176v	L37	s1	790	CP	
+c4	RAR	target	f101r	L34	64	4240		
+c4	XTU	target	f101r	L37	59	3940		
+c4	JJW	anchor	176v	L10	s1	805	CP	
+c4	ZQX	target	f101r	L36	45	3435		
+c4	CRI	target	f101r	L11	28	2470		
+c4	DPO	target	f101r	L02	10	1560		
+c4	YRU	target	f101r	L12	18	1820		
+c4	XBP	target	f101r	L16	44	3155		
+c4	PDV	target	f101r	L43	9	1350		
+c4	PPM	target	f101r	L20	40	3020		
+c4	VHI	target	f101r	L30	32	2770		
+c4	WUL	target	f101r	L38	58	3925		
+c4	LIR	target	f101r	L34	64	4240		RAR
+c4	VFK	target	f101r	L02	10	1560		DPO
+c4	GAS	target	f101r	L13	16	1825		
+c4	IRP	target	f101r	L13	21	2090		
+c4	QCN	anchor	176v	L05	s1	430	AN	
+c4	MDU	anchor	176v	L06	s1	400	CP	
+c4	CTI	target	f101r	L40	13	1525		
+c4	SVI	target	f101r	L15	19	1905		
+c4	PSS	target	f101r	L29	32	2740		
+c4	JKX	target	f101r	L13	29	2515		ZSN
+c4	VWA	target	f101r	L38	58	3925		WUL
+c4	FIS	target	f101r	L30	32	2770		VHI
+c4	BEY	anchor	176v	L32	s1	1045	CP	
+c4	UAT	anchor	176v	L13	s1	380	AN	
+c4	NJB	anchor	176v	L13	s2	1075	AN	
+c4	LKX	target	f101r	L14	9	1470		
+c4	TSP	target	f101r	L16	23	2090		
+c4	IFM	target	f101r	L37	59	3940		XTU
+c4	XEM	target	f101r	L07	62	4060		
+c5	GEB	target	f101r	L40	49	3450		
+c5	OAN	target	f101r	L24	3	1120		
+c5	BOF	anchor	176v	L09	s2	280	CP	
+c5	SHO	anchor	176v	L12	s2	830	AN	
+c5	SHH	target	f101r	L12	25	2200		
+c5	IHF	target	f101r	L06	38	3005		
+c5	ECK	target	f101r	L24	6	1260		
+c5	YLH	target	f101r	L13	17	1875		
+c5	EKX	anchor	176v	L27	s3	345	CP	
+c5	FEE	target	f101r	L02	12	1660		
+c5	NUD	anchor	176v	L37	s1	790	CP	
+c5	JTV	anchor	176v	L06	s2	1130	AN	
+c5	RQX	target	f101r	L05	12	1640		
+c5	IST	anchor	176v	L03	s1	90	AN	
+c5	LUJ	anchor	176v	L08	s2	995	AN	
+c5	CNN	target	f101r	L06	62	4180		
+c5	OCU	target	f101r	L27	5	1210		
+c5	IME	target	f101r	L39	32	2460		
+c5	CES	target	f101r	L29	56	4050		
+c5	FGK	anchor	176v	L08	s1	1225	CP	
+c5	WON	target	f101r	L09	13	1710		
+c5	KUU	target	f101r	L16	39	2905		
+c5	WTZ	anchor	176v	L09	s1	290	AN	
+c5	WSQ	target	f101r	L37	40	2890		
+c5	VWN	anchor	176v	L06	s1	400	CP	
+c5	WZU	target	f101r	L06	12	1610		
+c5	UWO	target	f101r	L27	5	1210		OCU
+c5	QZM	target	f101r	L05	8	1435		
+c5	WRD	target	f101r	L33	26	2215		
+c5	TNZ	target	f101r	L05	12	1640		RQX
+c5	TTB	target	f101r	L27	17	1950		
+c5	OIG	target	f101r	L05	8	1435		QZM
+c5	XYA	target	f101r	L06	62	4180		CNN
+c5	OZC	target	f101r	L08	3	1165		
+c5	ZXX	target	f101r	L06	12	1610		WZU
+c5	OPF	target	f101r	L12	25	2200		SHH

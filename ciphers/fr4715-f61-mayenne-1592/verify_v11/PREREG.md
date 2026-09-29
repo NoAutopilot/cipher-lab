@@ -40,3 +40,10 @@ control on the split draft is clean (0/3 signal); "any split does this" iff it s
 Endorse iff A(neighbour-anchored or all) tracks AND B(i) tracks AND C beats random on both leaves. In part iff B(i) tracks but C does not beat
 random on both (or vice versa). Reject iff B(i) does not track, or B(ii) kappa < 0.4 with B(i) not tracking. Otherwise "unclear at this N".
 Meter: verify_v8/meter_v8.py bands with and without the split, whatever the verdict (descriptive).
+
+## Addendum E (written ~17:3x UTC after B's first read-out, before these calls): letter-stratified supplementary read
+B's random 40 f.101r tokens carried only 5 c/p/t-lettered tokens (31 lettered), so B(i) cannot test the yes->c/p/t direction. Supplementary calls
+c4, c5 (same prompt, tile format, anchors, repeat design and gates as B): 40 f.101r agreed 4TRI tokens not in B, 20 with a c/p/t period letter and 20
+with an a/n letter (neighbour-anchored rows first, then others; seed 1115), shuffled together; the reader sees no letter or stratum.
+Read-out: B(i)'s test on the c4+c5 answers alone and pooled with B (n >= 20): "tracks" iff share >= 0.75 AND perm p < 0.01; "does not track" iff
+share < 0.6 OR p > 0.05; else unclear. This addendum is supplementary; B's pre-registered read-out stands as reported.
