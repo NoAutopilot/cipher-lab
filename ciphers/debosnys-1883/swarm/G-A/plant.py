@@ -6,9 +6,11 @@ Writes work/plant_<tag>.cip (ids) and work/plant_<tag>.ans (plaintext)."""
 import sys, os, random, collections
 H = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, os.path.join(H, '..', '..', 'scripts'))
 from settled_lines import settled_lines
+# rows before 03:30 UTC used DROP={'_'} and CLEAR_DROP=False (c2 N 688 K 128); from 03:30 the real-text convention of realrun.py
+DROP = {'_', 'MULTI'}; CLEAR_DROP = True
 def curve(prefix):
-    L = settled_lines(os.path.join(H, '..', '..'), prefix)
-    return sorted(collections.Counter(s for l in L.values() for s in l if s != '_').values(), reverse=True)
+    L = settled_lines(os.path.join(H, '..', '..'), prefix, drop_clear=CLEAR_DROP)
+    return sorted(collections.Counter(s for l in L.values() for s in l if s not in DROP).values(), reverse=True)
 def plant(prefix, seed, noise=0.0, text=None):
     rng = random.Random(seed); cv = curve(prefix); N = sum(cv)
     if text is None:
