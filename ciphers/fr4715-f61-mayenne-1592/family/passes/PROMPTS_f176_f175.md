@@ -93,3 +93,16 @@ GATE: build_f176v_key.py L01-L08: match(true: fol. 177v from V01) - max(match(a)
 Control (b) was dry-run on f.176r's own L01-L08 passes before any f.176v call (fol. 177r 0.569 vs fol. 177v 0.384): it separates the right
 passage from the wrong one in this decipherment. PASS -> the rows go to key_period_f176v.tsv (not merged); FAIL -> logged, and the start
 line is not shopped: one pre-named alternative only, --start V01 replaced by fol. 177r's last lines is NOT tried (control (b) is 177r).
+
+## H177d (runner 7, 29 Sept 2026) -- the scan was RUN BEFORE this section was committed (disclosed)
+`h177d_scan.py` was written as a pre-registration for after the fol. 178r / fol. 177v strips 9-12 reads, but its first run (meant to test the
+positive control) scored f.176v too, on the clear already on disk (fol. 177r L01 to fol. 177v V27, 4,707 letters). So its gate was not
+blind. Result (`h177d_scan_result.txt`): control f.176r L01-L08 peaks at letter 0 (0.569; best non-overlapping 0.419; null p99 0.414);
+f.176v L01-L08 peaks at letter 3000 (0.545; best non-overlapping 0.354; null p99 0.370). A descriptive fine scan at step 20 over letters
+2780-3020 peaks at 2960 (0.571), the head of fol. 177v V06 (2,957). No new reads were needed and none were made.
+
+## H177e (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE RUN
+`build_f176v_key.py L01-L08 --start V06` (the H177c builder and gate unchanged, controls (a) f.184r and (b) fol. 177r from L01): GATE margin
+>= +0.10. The start comes from H177d's scan, so this confirms the location with the fixed controls. It is not an independent test. PASS: stages
+continue from V06 with f.176v L09-... (the clear on disk runs to V27; fol. 177v strips 9-12 and fol. 178r are read when the rows need them).
+FAIL: the location stays at H177d's descriptive level.
