@@ -5243,3 +5243,16 @@ key v6 and v7 differ only in **4PI (v6 a/d/n/q -> v7 d/q)**; the change list the
 v6's own change set, already in both keys. Under H342's gain (three shuffle seeds): f.124r v7 0.032/0.033/0.036 vs v6 0.033/0.033/0.037 (4PI 2 signs:
 v7 change 'hurts' by under 0.001); f.97r v7 0.057/0.051/0.051 vs v6 0.051/0.046/0.047 (4PI 10 signs: 'helps'). At 2 and 10 signs this is split and
 uninformative; nothing to carry to the key. No call.
+
+## Campaign step H345 (29 Sept 2026, 15:52-16:00 UTC by the commit stamp and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- per-class breakdown of H342's order signal: descriptive, confounded by cell size (script-only)
+
+`family/h345_seqgain_perclass.py` (design change logged in its docstring before running: every other keyed class's v7 cell as the alternatives,
+since bins of 3 give only two; result `family/h345_seqgain_perclass_result.txt`). v7's own cell ranked among the alternatives by H342's gain, per class:
+- Across both held leaves: **HASH4 d/q rank 2 and 2; C43 a/n 3 and 1; VBAR_A g/t 5 and 3; PHI e/r 5 and 2; ZBAR f/s 4 and 2; H24 i/x 14 and 1;
+  4TRI c/p/t 15 and 8; EBR_B (loaded here as i/l) 13 and 22 of 22 -- the worst cell on f.97r; EBR_A a/l/s 12 and 18; RSIGN c/m/n/p/s/t 17 and 20.**
+- Two flaws, so this is **descriptive only**: (1) a class with no signs in the runs (ZHOOK, 0) ranks 1 by ties -- its "supported" is an artefact;
+  (2) the best alternatives are mostly one-letter cells (C6 e, ELOOP r, VBAR_B s), so the gain statistic appears to favour narrow cells: a broad v7
+  cell (4STEM, RSIGN, 4TRI) ranks low partly for its size. A size-matched comparison is H349.
+- For the verifier, as a pointer only: EBR_B scores worst-or-near on both held leaves, the same class whose form split and cell (i/l here, l/y in v7's
+  header note) the campaign has already flagged (H321, H322); VBAR_A g/t ranks well on both held leaves by this statistic, unlike H331's gloss count on
+  f.124r (below its binned mean there) -- a disagreement between two instruments, recorded, not resolved (rule 4). No call, no cell changed.

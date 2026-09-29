@@ -1,0 +1,46 @@
+recf124r: gain(v7) 0.0320; 22 keyed classes
+  PHI        cell e/r      signs  656: rank 5/22, best alt C6 (e) 0.0656 -> not supported
+  4TRI       cell c/p/t    signs  388: rank 15/22, best alt C43 (a/n) 0.0743 -> not supported
+  VBAR_A     cell g/t      signs  396: rank 5/22, best alt ZBAR (f/s) 0.0460 -> not supported
+  H24        cell i/x      signs  193: rank 14/21, best alt 4STEM (a/c/e/n) 0.0426 -> not supported
+  EBR_B      cell i/l      signs  127: rank 13/22, best alt ELOOP (r) 0.0563 -> not supported
+  HASH4      cell d/q      signs   85: rank 2/21, best alt ELOOP (r) 0.0338 -> consistent
+  C43        cell a/n      signs   58: rank 3/22, best alt EBR_A (a/l/s) 0.0321 -> consistent
+  BETA       cell m/s      signs   46: rank 6/22, best alt ISH (l) 0.0355 -> not supported
+  ZBAR       cell f/s      signs   30: rank 4/22, best alt VBAR_B (s) 0.0357 -> not supported
+  4STEM      cell a/c/e/n  signs   32: rank 12/22, best alt HASH4 (d/q) 0.0395 -> not supported
+  RSIGN      cell c/m/n/p/s/t signs   25 small: rank 17/22, best alt EBR_A (a/l/s) 0.0370 -> not supported
+  INF        cell u        signs   18 small: rank 9/22, best alt ZHOOK (i/x) 0.0351 -> not supported
+  DBL        cell e/r/u    signs   18 small: rank 17/22, best alt HASH4 (d/q) 0.0383 -> not supported
+  EBR_A      cell a/l/s    signs   10 small: rank 12/22, best alt VBAR_A (g/t) 0.0344 -> not supported
+  VBAR_B     cell s        signs    8 small: rank 1/22, best alt ZBAR (f/s) 0.0320 -> supported
+  ISH        cell l        signs    6 small: rank 9/22, best alt VBAR_B (s) 0.0339 -> not supported
+  C6         cell e        signs    3 small: rank 14/22, best alt VBAR_A (g/t) 0.0331 -> not supported
+  4PI        cell d/q      signs    2 small: rank 18/21, best alt 4TRI (c/p/t) 0.0343 -> not supported
+  ELOOP      cell r        signs    1 small: rank 14/22, best alt C43 (a/n) 0.0328 -> not supported
+  LOOPSTEM1  cell q/s      signs    2 small: rank 9/22, best alt HASH4 (d/q) 0.0327 -> not supported
+  CH         cell e/m      signs    1 small: rank 15/22, best alt 4TRI (c/p/t) 0.0326 -> not supported
+  ZHOOK      cell i/x      signs    0 small: rank 1/21, best alt ZBAR (f/s) 0.0320 -> supported
+recf97r: gain(v7) 0.0566; 22 keyed classes
+  PHI        cell e/r      signs  538: rank 2/22, best alt C6 (e) 0.0819 -> consistent
+  4TRI       cell c/p/t    signs  313: rank 8/22, best alt ELOOP (r) 0.0772 -> not supported
+  VBAR_A     cell g/t      signs  204: rank 3/22, best alt BETA (m/s) 0.0607 -> consistent
+  H24        cell i/x      signs  168: rank 1/21, best alt LOOPSTEM1 (q/s) 0.0515 -> supported
+  EBR_B      cell i/l      signs  139: rank 22/22, best alt VBAR_B (s) 0.0895 -> not supported
+  4STEM      cell a/c/e/n  signs   95: rank 14/22, best alt ISH (l) 0.0685 -> not supported
+  ZBAR       cell f/s      signs   58: rank 2/22, best alt 4TRI (c/p/t) 0.0597 -> consistent
+  BETA       cell m/s      signs   54: rank 9/22, best alt HASH4 (d/q) 0.0635 -> not supported
+  HASH4      cell d/q      signs   52: rank 2/21, best alt ELOOP (r) 0.0576 -> consistent
+  VBAR_B     cell s        signs   46: rank 2/22, best alt LOOPSTEM1 (q/s) 0.0584 -> consistent
+  C43        cell a/n      signs   40: rank 1/22, best alt 4STEM (a/c/e/n) 0.0521 -> supported
+  EBR_A      cell a/l/s    signs   40: rank 18/22, best alt 4TRI (c/p/t) 0.0688 -> not supported
+  RSIGN      cell c/m/n/p/s/t signs   26 small: rank 20/22, best alt ELOOP (r) 0.0695 -> not supported
+  4PI        cell d/q      signs   10 small: rank 1/21, best alt ELOOP (r) 0.0536 -> supported
+  CH         cell e/m      signs    5 small: rank 4/22, best alt 4TRI (c/p/t) 0.0578 -> not supported
+  DBL        cell e/r/u    signs    6 small: rank 15/22, best alt 4STEM (a/c/e/n) 0.0586 -> not supported
+  ISH        cell l        signs    5 small: rank 20/22, best alt 4STEM (a/c/e/n) 0.0602 -> not supported
+  ELOOP      cell r        signs    2 small: rank 7/22, best alt HASH4 (d/q) 0.0584 -> not supported
+  LOOPSTEM1  cell q/s      signs    4 small: rank 14/22, best alt HASH4 (d/q) 0.0590 -> not supported
+  C6         cell e        signs    3 small: rank 18/22, best alt ZBAR (f/s) 0.0588 -> not supported
+  INF        cell u        signs    1 small: rank 4/22, best alt ZBAR (f/s) 0.0567 -> not supported
+  ZHOOK      cell i/x      signs    0 small: rank 1/21, best alt ZBAR (f/s) 0.0566 -> supported
