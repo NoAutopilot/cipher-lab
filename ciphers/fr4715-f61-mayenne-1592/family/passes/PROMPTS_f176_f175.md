@@ -182,3 +182,12 @@ are not signs), list every sign shaped like a figure 4 (a 4 with anything attach
 for each. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer': rows Q01..Q60, then rows 'L01:1', 'L01:2', ... for part 2."
 GATE: repeat control >= 17 of the 20 f.176v anchors, else CONTROL FAIL and stop. Result: matched f.61 positions, bowl vs Tomokiyo's c/p vs a/n
 (Fisher), lines with a count mismatch left out. Descriptive, for the verifier.
+
+## H195 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+`h195_hash_attr.py tiles`: 60 marked strips (10 f.176v anchors of agreed HASH4 paired with i, 10 paired with d/q, 40 f.176r agreed-HASH4 targets), seed
+195, key `h195_items.tsv`. The runner looked only at the 20 anchors by group: d/q signs are a figure-4 head standing on crossed double stems ("4 over #");
+i signs are the bare crossed double stems with no 4-head (H162's forms). Attribute fixed (`h195_yes_group.txt` = DQ). 1 Opus vision call, inline reply:
+"You are a blind shape reader. Use no tool but your image reader on the sheets named; run no command, write no file. Each item on <h195/sheet_01..03.jpg>
+(H01-H60) is a strip of a cipher row with a red triangle under one sign; look only at the sign directly above the triangle. Question: is there a
+figure-4 head (an angular 4) standing on top of crossed vertical stems in that sign? Answer yes or no; if it cannot be told, answer n. No letters are
+involved. Reply inline ONLY with a TSV block 'item<TAB>answer', one row per item, nothing else." GATE anchors >= 17/20; then f.176r targets i vs d/q.
