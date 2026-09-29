@@ -4703,3 +4703,25 @@ cannot be the letters their pooled cells give (q/s, e/m; both from other leaves,
 "les" is wrong -- H288 puts that read to a blind pass before anything rests on it. No value proposed; nothing merged.
 **H284** (notes): family/V9_PAGE.md brought up to H283 (witness spans file, H268 correction, dash-need table, pronoun check, L04 OTHER negative, L05 head).
 **H285 dropped:** f.108v's reconciled draft holds one CA (L02 6) and no C6 -- nothing to compare at n = 1.
+
+## Campaign step H286 (29 Sept 2026, 10:41 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- a blind pass reads L04's last word as "les"
+
+Pre-registered (PROMPTS section H286; `scripts/f61positions_L04_score.py`, committed ce3805af before the call, one comment-line fix after it; the runner's
+own H283 read disclosed there). One blind Opus call (`scripts/h286_reply.tsv`, verbatim): "generosite pour beaucoup desirer [sign] . Mais on avoit Come
+[sign] Je croys aussi que les" -- **the line's last item is the word "les"**, so the pre-stated read-out is **"H283's lead stands"**: f.61 reads "... Je
+croys aussi que les [LOOPSTEM1] [CH] trop avancees ...", and the two keyed signs Tomokiyo leaves as dashes cannot be the letters of their pooled cells at
+that place (H283). The two L04 signs join read_call_U's LOOPBAR and OTHER in order (`scripts/f61_positions_L04.tsv`; the reader's x is at the half-size
+sheet's scale, as in H264, kept as given since only the order is used). Also from this pass: the OTHER after "Come" precedes "Je". Result
+`scripts/f61positions_L04_result.txt` (`--check` OK). For the verifier: a word-code lead on two f.61 tokens (LOOPSTEM1 L05 1, CH L05 2), rule 10 wording,
+no value, nothing merged. Vision calls this session: 4 (one per vision step).
+
+## Campaign step H287 (29 Sept 2026, 10:41 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the two signs against the table's word codes (notes only)
+
+Tomokiyo's table (keys/key_mayenne_1592.tsv, grade AB transcription of his drawing) has three word codes: **que** "two strokes converging down into a
+small closed loop near the bottom (a cursive y whose descender curls into a loop)", **qui** "a vertical stem crossed by two horizontal bars (a double
+dagger)", **pour** "a 6-like hook into one long diagonal". The atlas's LOOPSTEM1 ("a single loop on a long stem") and CH ("a mark shaped like a cursive h")
+match none of the three, under F61-CAL's caveat that his drawings mislabel this hand -- and none of que/qui/pour can fill "les __ __ trop" anyway, so
+the corpus and the shapes agree: if the two signs are word codes, they are codes his table does not hold. Provenance of the pooled cells they carry:
+LOOPSTEM1 q 7 / s 3 from f.101r only; CH e 3 (f.101r) and m 3 (f.188r) with u/n strays -- the e/m cell is itself two leaves' different letters merged,
+a cross-leaf conflict of the rule-4 kind, which H281's dash on f.61 makes three-way. For the verifier and the build worker (a note in
+family/PROPOSAL_v7_notes.md is not added by the runner; the verifier decides). No call.

@@ -10,7 +10,7 @@ def main():
     rows = [l.rstrip("\n").split("\t") for l in open(f"{HERE}/h286_reply.tsv") if l[0] == "L"]
     items = [r for r in rows if not (r[3] == "sign" and ("dot" in r[4].lower() or "punctuation" in r[4].lower()))]
     last = max(items, key=lambda r: (int(r[1]), int(r[2]))); last_word = norm(last[4]).split(" ")[0] if last[3] == "word" else "(a sign)"
-    signs = [r for r in items if r[3] == "sign"]; U = [r for r in csv.DictReader(open(f"{HERE}/read_call_U.tsv"), delimiter="\t") if r["line"] == "L04"]
+    signs = [r for r in items if r[3] == "sign"]; U = [r for r in csv.DictReader((l for l in open(f"{HERE}/read_call_U.tsv") if not l.startswith("#")), delimiter="\t") if r["line"] == "L04"]
     rep = [f"L04: items {len(items)} (words {len(items) - len(signs)}, signs {len(signs)}); last item: segment {last[1]} x {last[2]} {last[3]} '{last[4]}'",
            f"clear words in order: {' | '.join(r[4] for r in items if r[3] == 'word')}",
            "read-out: " + ("H283's lead stands (last word 'les')" if last_word == "les" else f"H283's lead does not stand (last item '{last_word}')")]

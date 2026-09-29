@@ -1,0 +1,4 @@
+L04: items 15 (words 13, signs 2); last item: segment 4 x 910 word 'les'
+clear words in order: generosité | pour | beaucoup (begins "bea" at segment 1 right edge, x 1050-1210) | desirer | Mais ("Ma" at segment 2 right edge, x 980-1210; "is" at segment 3 left) | on | avoit | Come (Comme) | Je (reads like "le") | croys | aussi | que | les
+read-out: H283's lead stands (last word 'les')
+signs 2 vs read_call_U 1: not joined
