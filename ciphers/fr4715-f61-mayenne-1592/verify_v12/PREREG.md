@@ -45,3 +45,11 @@ C3 (5 count crops): list every mark after the red box up to the first word in or
    (meter_v8's band rule) for (a) uncorrected, (b) the runner's corrections, (c) the corrections I endorse.
 6. Steering question answered from rule 1's control, from C2's no-change rate (a reader that only moved codes toward Tomokiyo would have
    no reason to confirm out-of-span codes), and from whether any correction the runner did NOT propose shows up in my reads.
+
+## Addendum C4 (written after C1-C3 replies were in, before any was scored against the key; C4 key sha256 f19b06f97868aff274b7920b64437d99796ba935101d0d1cd19a732e07f7b5cd)
+Placement look: pass A's L02 begins at PHI, but the line opens with an 'll'-shaped mark before the PHI, and the cipher run of L01 continues onto
+L02. Out of every Tomokiyo span, so no published letter bears on it: a test of whether the transcription carries slips the runner had no reason to
+look for (decision rule 6). C4: the R panel plus R16 = LL (L05/16, in-span) and option O = ordinary handwriting letters (not a cipher sign).
+Items: L02 opening mark at W1/W2/W3; anchors L05/16 W3 (R16), L03 'les' and 'en(tendre)' (O, O), L05/7 W2 (R11), L08/5 W3 (R8).
+Gate: anchors >= 4/5. Rule: >= 2 of 3 R16 -> pass A missed an LL at L02 start (a slip the runner did not propose; logged, not merged by me);
+>= 2 of 3 O -> plain letters, pass A stands; else unsettled.

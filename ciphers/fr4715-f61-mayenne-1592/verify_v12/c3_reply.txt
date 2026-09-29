@@ -1,0 +1,5 @@
+X1: looped-stem sign (double loop on a long descending stem) = CIPHER; second looped-stem sign, same form = CIPHER; third looped-stem sign, same form = CIPHER | cipher_count=3 | first_word=maulx (partly legible: "maul..")
+X2: two joined loops on a stem ("oo" on a descender) = CIPHER; 4-like sign with a doubled or crossed stem ("4" followed by "ll") = CIPHER; small raised "v" or triangle = CIPHER | cipher_count=3 | first_word=tant
+X3: two joined loops on a stem = CIPHER; open bracket "⊏" = CIPHER; crossed loop on a long stem (φ-like) = CIPHER | cipher_count=3 | first_word=a (followed by "les")
+X4: lone "a" = CIPHER; crossed stem with a triangle below (4-like) = CIPHER; "6" = CIPHER; loop on a stem with a double crossbar = CIPHER; "43" = CIPHER; two joined loops on a stem = CIPHER; open bracket "⊏" = CIPHER; crossed loop on a long stem (φ-like) = CIPHER | cipher_count=8 | first_word=a (followed by "les")
+X5: no marks between the boxed sign and the word | cipher_count=0 | first_word=Mais (written "Mlais", capital M)
