@@ -1,0 +1,4 @@
+by kind: text a: C 6; text non-a: D 2 unclear 1; CA: C 5; PHI/C43: A 3 B 3
+G = C (size 11 of 20): text a 6/6, text non-a 0/3, CA 5/5, cipher controls 0/6
+gates 1 and 2 pass; hypergeometric P(>= 5 of 5 CA in a group of 11) 0.030
+read-out: CA is the clear letter a by letterform

@@ -4535,3 +4535,19 @@ is a null drawn as the letter a, which is what Tomokiyo's markup already treats 
 L05 12 skipped, L07 6, L08 3, L08 9) although the pooled key carries C6 = e from three glossed tokens on other leaves (H232) -- a leaf-level conflict of
 the rule-4 kind, already held at unread by V7's meter, logged here so the count is on record; (2) the DP places a valueless sign against a dash or skips
 it at equal score, so the CA positions above are fixed only where both neighbours carry letters (all four do). No call.
+
+## Campaign step H260 (29 Sept 2026, 10:08 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the other five CA: the same letterform as the clear a
+
+Pre-registered (PROMPTS section H260; `family/h260_ca_text.py`, key `family/h260_items.tsv`, committed a8b4f9fa before the call; H256's rules, gates and
+read-outs). Disclosure: the runner viewed images/f61sheetB_L02.jpg (a line with no CA) to place its letters and two ruler sheets of the nine TEXT tiles;
+the CA crops (L07 1, L08 10 at H257's positions; L10's three at H63's positions, each re-centred on its ink centroid by script), the PHI/C43 crops and
+the test sheet were not seen. One Opus free sort (`family/passes/h260_sort.tsv`); result `family/h260_ca_text_result.txt` (`--check` OK):
+- Groups: **A** "crossed 4 ... with a 3-like hook" (C43), **B** "figure-8 or double loop on a long descender" (PHI), **C** "the ordinary cursive
+  minuscule a: a closed round bowl with a short right-hand stem and no descender", **D** "the ordinary cursive minuscule o".
+- **Text a: C 6/6 (gate 1). Text non-a: D 2, unclear 1 (gate 2: 0 of 3 in C -- this time two of the three were placed, in their own o group).
+  CA: C 5/5. PHI/C43: B 3, A 3 (0 in C).** Hypergeometric P 0.030. Pre-stated read-out: **"CA is the clear letter a by letterform"**.
+Taken with H256: **all ten CA of f.61, on six lines, sort with the scribe's clear a in two independent blind calls (10/10; cipher controls 0/12; non-a
+letters 0/6)**, while H63 puts them in the cipher hand by weight, baseline and spacing and H259 finds no letter for them in Tomokiyo's markup. The
+consistent account is a null drawn as the letter a, which is what the skeleton and Tomokiyo's markup already hold (H44). No cell changes, no reading;
+the CA class is now described rather than unread: for the verifier's meter wording (unread-or-null -> null, on this evidence), not for any key edit.
+Vision calls this session: 2 of the brief's 4 per step (one per step).

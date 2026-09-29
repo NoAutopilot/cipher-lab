@@ -1,0 +1,26 @@
+# written verbatim from the inline reply (runner 10, H260, one Opus vision call, 29 Sept 2026, 101,021 subagent tokens, 22 s)
+# GROUP A: a cipher sign shaped like a crossed "4": a looped head over a horizontal bar with a long straight descender through it, usually followed by a small "3"-like hook on the right.
+# GROUP B: a cipher sign made of a closed figure-8 or double loop sitting on a long descender stroke, like a "φ" with a loop on top.
+# GROUP C: the ordinary cursive minuscule "a": a closed round bowl with a short right-hand stem and no descender.
+# GROUP D: the ordinary cursive minuscule "o": a single closed round bowl with no stem.
+tile	group
+U01	A
+U02	C
+U03	C
+U04	A
+U05	C
+U06	C
+U07	C
+U08	D
+U09	B
+U10	C
+U11	B
+U12	C
+U13	C
+U14	C
+U15	D
+U16	A
+U17	B
+U18	unclear
+U19	C
+U20	C
