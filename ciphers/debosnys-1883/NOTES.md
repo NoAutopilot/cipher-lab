@@ -1170,3 +1170,21 @@ of mapped boxes, so agreed-box error is real and unmeasured); (2) H41/H46 find a
 text, which a cleaner transcription may or may not change. Suggested gate for such a brief: after the fourth pass,
 run DEB-SWARM-H's own Copiale control at c2+c4's N and the new measured floor BEFORE any target run; if the control
 does not read at that floor, stop. Grade: a costing, nothing read; status `open`.
+
+### H51, error hidden inside agreement, bounded with Bourdeau's No.9 read (29 Sept 2026, CPU only)
+
+`scripts/h51_agreed_error.py` (`h51_agreed_error.json`), on h29's held-out alignment (concordance fitted on one half of
+c2's lines, scored on the other). His codes are too loosely tied to ours for a strict witness: with one-to-one codes
+and >= 5 training co-occurrences only 1 code qualifies (n 5, unusable). Loosened to any code with >= 3 (>= 2)
+co-occurrences, the share of our boxes where his mapped id differs from our settled id, by our settlement class:
+**agree-AB 15/91 = 16.5 pct (22/124 = 17.7 pct); settled-majority 27/50 = 54 pct (50 pct); three-way 7/10 = 70 pct
+(80 pct).** The gradient runs the right way (the witness disagrees least where our readers agreed, most where they
+split), so the numbers carry information. The agree-AB rate is an upper bound on our hidden error there: it also holds
+his misreads and residual mapping error, which cannot be separated without a fourth reference. Two consequences for
+H50's costing: (1) if even a third of the 17 pct is ours, about 5-6 pct error sits inside c2's agreed boxes (49 pct of
+c2's rows), about 3 pct of the page, which a fourth pass on disputed boxes does not touch; (2) boxes settled by a
+two-of-three majority (34 pct of c2's rows) disagree with his read about half the time, so the 14-17 pct noise figure,
+counted from unsettled boxes only, is a floor, and c2's true type error is plausibly well above it. So a fourth pass
+on the 109 split boxes alone would not bring c2 inside the 3-8 pct crossover; the H50 costing is corrected to say so
+(a whole-page fourth read of c2, 778 boxes, about 52 calls plus reconciliation, would be the minimum, and even then
+the agreed-box error stays unmeasured). Grade S; nothing read; status `open`.
