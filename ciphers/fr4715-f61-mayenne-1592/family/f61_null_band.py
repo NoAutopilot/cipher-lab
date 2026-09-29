@@ -3,7 +3,7 @@
 (CA, C6, LOOPBAR, CROSS, LL: 25 of 99) and the two still-wider classes (4PI x2, OTHER x2), one row per token, with the class's evidence in one cell and
 the result files in another; Tomokiyo's markup character where the token falls inside one of his five spans (the F61-CAL DP under key v6's f.61 reading,
 as H259). Descriptive: nothing here is a value or a merge; the class evidence is the runner's summary of the named steps, for the verifier to check
-against the files.  python3 f61_null_band.py [--check]"""
+against the files.  H301 (runner 11 session_01RNzUvRTqBTAw7BukhKyKBU, 29 Sept 2026): one NOTE row for CH -- keyed e/m in the meter (two-way band), not in the band's 25, but a Tomokiyo dash class on f.61 (H281) whose letterform is the clear h (H298, n = 1); band "note", so the 25 + 4 counts VERIFY-F61-V9 endorsed do not move.  python3 f61_null_band.py [--check]"""
 import csv, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE); sys.path.insert(0, os.path.abspath(f"{HERE}/../scripts"))
 from build_key_v6 import load_key_v6
@@ -26,6 +26,10 @@ EV = {
  "OTHER": ("wider: L02 2 a Pi with a double bar and no 4 (the base of the 4-over-Pi), L04 2 an S/8 loop into a b/d form, perhaps a handwriting abbreviation (H238); no atlas class with a period letter matches",
         "scripts/read_call_U.tsv NOTES.md#H238"),
 }
+NOTE = {
+ "CH": ("note, not in the band: keyed e/m pooled (f.101r e 3, f.188r m 3 -- two leaves' letters merged, rule-4 conflict row HYPOTHESES.md H289); on f.61 its one token carries Tomokiyo's dash (H281) in 'les choses sont a [LOOPSTEM1] [CH] trop avancees', complete French without it (Correction, H295); letterform of the scribe's clear h in one blind sort, 1/1 with the 3 text h's, PHI/C43 0/4, at n = 1 flagged (H298); a blind positional reader listed it as the clear letter h (H297) -- an h-shaped mark reading as nothing on f.61, the CA pattern at n = 1; stays keyed in the meter until a verifier rules; on the family leaves the class is a letter inside words (H288/H291)",
+        "family/h298_ca_text_result.txt family/passes/h298_sort.tsv family/f61_dash_need.tsv scripts/f61positions_L05B_result.txt family/f61_nulls_as_letters.tsv HYPOTHESES.md"),
+}
 def main():
     key = load_key_v6(f61=True); lines = split_lines(load_read()); relabel(lines); mk = {}
     for s, l, m in load_spans():
@@ -36,12 +40,14 @@ def main():
     rows = ["line\tpos\tclass\tband\tv6_letters\tspan\ttomokiyo\tclass_evidence\tfiles"]; n = {"unread-or-null": 0, "wider": 0}
     for r in d:
         c = r["class"]
-        if c not in EV: continue
-        band = "wider" if c in ("4PI", "OTHER") else "unread-or-null"; n[band] += 1
+        if c not in EV and c not in NOTE: continue
+        if c in NOTE: band = "note"; ev = NOTE[c]
+        else: band = "wider" if c in ("4PI", "OTHER") else "unread-or-null"; ev = EV[c]
+        n[band] = n.get(band, 0) + 1
         s, ch = mk.get((r["line"], int(r["pos"])), ("", ""))
-        rows.append(f"{r['line']}\t{r['pos']}\t{c}\t{band}\t{r['period_letters']}\t{s}\t{ch}\t{EV[c][0]}\t{EV[c][1]}")
+        rows.append(f"{r['line']}\t{r['pos']}\t{c}\t{band}\t{r['period_letters']}\t{s}\t{ch}\t{ev[0]}\t{ev[1]}")
     open(f"{HERE}/f61_null_band.tsv", "w").write("\n".join(rows) + "\n")
-    txt = f"tokens: unread-or-null {n['unread-or-null']} (CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1 expected 25), wider {n['wider']} (4PI 2, OTHER 2); in a span with his character: {sum(1 for r in rows[1:] if r.split(chr(9))[6])}\n"
+    txt = f"tokens: unread-or-null {n['unread-or-null']} (CA 10, C6 8, LOOPBAR 4, CROSS 2, LL 1 expected 25), wider {n['wider']} (4PI 2, OTHER 2); in a span with his character: {sum(1 for r in rows[1:] if r.split(chr(9))[6] and r.split(chr(9))[3] != 'note')}; note rows {n.get('note', 0)} (CH 1 expected, keyed e/m, dash on f.61; H298/H301)\n"
     p = f"{HERE}/f61_null_band_result.txt"
     if "--check" in sys.argv:
         ok = os.path.exists(p) and open(p).read() == txt and open(f"{HERE}/f61_null_band.tsv").read() == "\n".join(rows) + "\n"; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)

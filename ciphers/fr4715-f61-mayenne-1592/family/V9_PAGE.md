@@ -4,6 +4,11 @@ Compiled by campaign runner session_0148wt8Aokh6aZEdJsXzYiZX (account 3, runner 
 results already recorded in NOTES.md and HYPOTHESES.md; it adds no claim, no reading and no class. Nothing on f.61r is solved, new or
 first. Key v6 (family/key_period_v6.tsv) is unchanged by this session; VERIFY-F61-V8's "what should merge" list is still unmerged.
 
+> Status line (H301, runner 11 session_01RNzUvRTqBTAw7BukhKyKBU, 29 Sept 2026, 11:2x UTC): VERIFY-F61-V9 has ruled (AUDIT.md, 10:33 UTC): CA endorsed in
+> part (letterform replicated, p 0.0013; null direct for the 4 in-span tokens), the C6 conflict endorsed with the word test (e breaks 4 of 5 of his words),
+> the null band endorsed; meter 12 / 59 / 2 / 26 [null 17 + unread 9]. Key v7 exists (F61-FAMILY-11, 10:17) and F61-FAMILY-12 (11:15) wrote V9's notes into
+> KEY.md, f61_null_band.tsv and HYPOTHESES.md's C6 row. The header below is runner 10's as written at 10:27; the sections after it are later additions.
+
 ## Claims put up for audit this session (runner 10, steps H256-H273)
 
 | claim | evidence | controls | files |
@@ -51,3 +56,25 @@ letters merged (HYPOTHESES.md H289). No word-code claim.
 No plaintext beyond Tomokiyo's five published spans is read. "me l'entendoit" is his own span with one letter corrected by the lexicon, a
 candidate (grade I) that stands against his printed n; the safe sentence is "the corpus admits only entendoit at that place, which would put d
 at L11 9 where the published reading prints n". Rule 10 wording only; novelty is not the runner's to assess.
+
+## Added after the withdrawal (H295-H300, runner 10; carried in by H301, runner 11): a second letter-shaped null, at n = 1
+
+Not audited by V9 (its brief closed at H262); for the next verifier.
+
+- **H297** (one blind Opus positional read of sheet B's L05 from the true line start, `scripts/h297_reply.tsv`, `scripts/f61positions_L05B_result.txt`):
+  "choses sont a" precede the run, so the Correction's premise has a blind witness; the reader lists the CH sign as the clear letter "h" between the
+  LOOPSTEM1 loop and the VBAR_A, as readers take CA for "a". **H299** joins the line 18/18 once the bare "h" is taken as CH (`scripts/f61_positions_L05B.tsv`).
+- **H298** (H256's design on CH, `family/h298_ch_text.py`, key `family/h298_items.tsv`, one Opus free sort, `family/passes/h298_sort.tsv`, result
+  `family/h298_ca_text_result.txt`): the one CH tile (L05 2) sorts with all 3 clear h's (group "a cursive h, tall looped ascender, arched shoulder"),
+  PHI/C43 0/4, the l of les in its own group, 2 non-h unclear. Pre-stated read-out met: **CH has the clear h's letterform -- at n = 1 on the CH side,
+  flagged.** With Tomokiyo's dash (H281), the French complete without it (Correction, H295), a letter inside words on the family leaves (H288/H291) and
+  the CH cell being two leaves' letters merged (H289): on f.61 the sign is an h-shaped mark reading as nothing, the CA pattern at n = 1. No cell change;
+  CH stays keyed e/m in the meter (two-way band) until a verifier rules; `family/f61_null_band.tsv` carries it as a `note` row outside the 25 + 4.
+- **H300** (`family/f61_nulls_as_letters.tsv`): of the null-band and dash classes, CA (a), CH (h), C6 (6), LL (ll) and partly LOOPSTEM1 (q-like) are
+  shaped like clear letters or digits by the atlas and the readers' own words; CROSS, LOOPBAR, the 4-over-Pi and OTHER are not. LL's test is H302 (open);
+  C6 has no clear-text digit control on the leaf (H303, open).
+- **H295/H296**: "sont trop" needs no filler in fr16 (bare 1, one-word 2, "est trop" 5), so the null reading of L05's edge a + LOOPSTEM1 + CH is unforced;
+  `scripts/f61_sheet_edges.tsv` flags which positioned "edges" are sheet edges (L05 1, L03 15, L08 14), a guard against the H283 error.
+
+Meter variant this adds (not computed as a band change, because CH is keyed): if a verifier moved CH to null on f.61, the two-way band would lose one
+token and the last band gain one: 12 / 58 / 2 / 27 [null 18 + unread 9]. Nothing moves until then.

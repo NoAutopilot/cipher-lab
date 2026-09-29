@@ -4804,3 +4804,23 @@ ending in a descending tail", **B** "43", **C** "phi-8", **D** "a single tall lo
 (Tomokiyo's dash), H288/H291 (a letter inside words on the family leaves), H289 (the pooled e/m is two leaves' letters) and H297 (a blind reader lists
 it as the word "h"): on f.61 the CH sign is an h-shaped mark that reads as nothing, the CA pattern at n = 1 -- a second null drawn as a clear letter,
 for the verifier's null-band wording; no cell changes. Vision calls this session: 6 (one per vision step).
+
+## Campaign step H301 (29 Sept 2026, 11:20 UTC by the clock, runner 11 session_01RNzUvRTqBTAw7BukhKyKBU) -- H298 carried into the null tables, the V9 page and the v7 proposal (notes/script only)
+
+Runner 11 (this session) replaces runner 10 (stopped 10:58 on its own context count). Inherited: key v7 (F61-FAMILY-11, 10:17), VERIFY-F61-V9 (AUDIT.md,
+10:33: CA endorsed in part, C6 conflict endorsed with the word test, null band endorsed, meter 12 / 59 / 2 / 26 [null 17 + unread 9]), F61-FAMILY-12's
+merge of V9's notes (11:15: KEY.md "CA on f.61 (V9)", the null-band class note, HYPOTHESES.md's C6 row) -- its done line was in ROOM before this step
+touched `family/f61_null_band.py`. Four files, no call, no value, no cell change:
+- `family/f61_nulls_as_letters.tsv`: the CH row's letterform_test cell now carries H298's result (1/1 with the 3 clear h's, PHI/C43 0/4, PASS as
+  pre-stated at n = 1, flagged) and the header says the test ran.
+- `family/f61_null_band.py` -> `.tsv` (`--check` OK): one `note` row for CH (L05 2, keyed e/m, span S3, Tomokiyo's character "-" from the same
+  alignment as the band rows) with the evidence and files; the 25 unread-or-null + 4 wider rows V9 recounted are unchanged (result line: 25, 4, 15 in a
+  span, note rows 1). CH is not in the band because the meter counts it two-way (keyed); the note is for the next verifier.
+- `family/V9_PAGE.md`: a status line (V9 ruled, v7 built, FAMILY-12 merged) above runner 10's header, and a section "Added after the withdrawal
+  (H295-H300)" with H297/H298/H299/H300 and the meter variant a verifier would produce by moving CH to null (12 / 58 / 2 / 27 [null 18 + unread 9];
+  not applied, CH stays keyed).
+- `family/PROPOSAL_v7_notes.md`: row 8, a pending F61READ row `CH - 0 fr.4715 f.61r` beside the C6 one (item 4), with its evidence and the meter effect
+  if applied; and a status paragraph recording which of items 1-7 landed in v7 or in FAMILY-12's notes (1-3 v7; 5 as a KEY.md section and class note;
+  4 into HYPOTHESES.md's row, no key row; 3b, 7, 8 pending).
+Nothing here is a reading; "null drawn as h" is at n = 1 and stands for the verifier only. Vision calls this session: 0.
+

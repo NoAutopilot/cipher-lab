@@ -15,7 +15,16 @@ are listed so the brief can name them.
 | 5 | CA (no row; a null in the skeleton) | note in KEY.md's f.61 section: "CA = a null drawn as the letter a (letterform two blind sorts 10/10, cipher hand H63, no letter in the markup H259)" -- no row, no count change | H256/H259/H260; family/f61_null_band.tsv | **pending** (V9 wording) |
 | 6 | HASHLOOP (UNREAD) | unchanged; the one route to a value is a person's read of f.106r's gloss (H243 pack, family/images/person_pack_106r) | H241/H243 | -- |
 | 7 | 4STEM F61READ a/n (L11) | unchanged; note that Tomokiyo's own letter there is a dash (H261) and the lexicon witness gives n (H268), inside the cell | H261/H268 | **pending** (note only) |
+| 8 | CH e 3 (f.101r) / m 3 (f.188r) (pooled e/m; two leaves' letters, HYPOTHESES.md H289) | add an F61READ row `CH - 0 fr.4715 f.61r` (unread or null on f.61, beside the C6 one, item 4): Tomokiyo's dash at its one token (L05 2, H281) in "les choses sont a [LOOPSTEM1] [CH] trop avancees", complete French without it (Correction, H295); letterform of the clear h in one blind sort, 1/1 with the 3 text h's, PHI/C43 0/4, n = 1 flagged (H298); a blind positional reader listed it as the clear letter h (H297); the pooled cell keeps its leaves. Meter if applied: two-way 59 -> 58, unread-or-null 26 -> 27 | H298; family/f61_null_band.tsv note row; family/f61_nulls_as_letters.tsv | **pending** (not in V9's brief; for the next verifier; n = 1) |
 
 Reproduction after any build: `python3 family/build_key_v6.py --check` must still pass for v6, and the v7 script must reproduce f.61 53/55 (published
 markup) and f.108r 74/84 with 2000 permuted keys, as v6 does (`family/build_key_v6_result.txt`); with S5 as the entendoit witness, H269's numbers
 (54/56 under d or under the pooled cell) are the reference. Grades: every f.61 letter above stays S or M except the lexicon lead, which is I.
+
+## Status of the items (H301, runner 11 session_01RNzUvRTqBTAw7BukhKyKBU, 29 Sept 2026, 11:2x UTC)
+
+Items 1-3 are in key v7 (F61-FAMILY-11, 10:17 UTC: ZHOOK note, the 4PI d/q split with 4PIR held, 4PIPI L11 9 a/n grade M and L01 12 unread; KEY.md
+"key v7"). Item 5 (CA) was endorsed in part by VERIFY-F61-V9 and written by F61-FAMILY-12 (11:15 UTC) as a KEY.md section and the null-band class
+note, no key row. Item 4 (C6): V9 endorsed the conflict with a sharper statement (C6 = e excluded on f.61 at 4 of 5 in-span words); F61-FAMILY-12
+carried that into HYPOTHESES.md's row, and no F61READ key row was written (the f.61 decode file has no class-note column; the null band is the one
+class-note file). Item 3b (L11 9 = d) and item 7 remain pending; item 8 added by H301, pending.
