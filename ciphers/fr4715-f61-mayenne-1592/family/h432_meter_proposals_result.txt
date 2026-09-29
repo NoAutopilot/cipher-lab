@@ -1,0 +1,4 @@
+(c) V12 endorsed: spans 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000; meter firm 12 / two-way 59 / wider 1 / unread-or-null 27 of 99; wider: {'OTHER': 1}
+(c) + H428 L11/8 CROSS: spans 55/55 = 1.000; 2000 permuted keys mean 0.275 p95 0.436; >= key 0/2000; meter firm 12 / two-way 58 / wider 1 / unread-or-null 28 of 99; wider: {'OTHER': 1}
+(d) (c) + L02 opening LL (V12 C4, H428): spans 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000; meter firm 12 / two-way 59 / wider 1 / unread-or-null 28 of 100; wider: {'OTHER': 1}
+(e) (d) + H428 L11/8 CROSS: spans 55/55 = 1.000; 2000 permuted keys mean 0.275 p95 0.436; >= key 0/2000; meter firm 12 / two-way 58 / wider 1 / unread-or-null 29 of 100; wider: {'OTHER': 1}

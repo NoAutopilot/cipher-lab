@@ -6131,3 +6131,17 @@ already separates from the 4-headed HASH4 (the HASHLOOP row, UNREAD); the reader
 4-over-hash, for which no f.61-hand reference with position data is on disk. So the reader code HASH4 d/q stays as coded; no change proposed;
 the meter is unaffected. For a verifier: V12's hold on L01/11 can be closed as "not 4PI" on two reads (V12 1, this 3/3 N); its class needs a
 4-over-hash reference in f.61's hand (f.108v's 4-over-hash, H144/H212 tiles) if anyone wants it settled.
+
+## Campaign steps H432 and H430 (29 Sept 2026, 20:39-20:41 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- the proposals' meter by script; a waiting held-out scorer for the context chooser (script-only)
+
+- **H432** (`family/h432_meter_proposals.py`, VERIFY-F61-V12's own meter/spans functions imported; check OK; V12's meter_v12 --check also OK):
+  (c) V12 endorsed 12 / 59 / 1 / 27 of 99; (c) + H428 L11/8 CROSS 12 / 58 / 1 / 28 of 99; (d) + L02 opening LL 12 / 59 / 1 / 28 of 100;
+  (e) both H428 proposals 12 / 58 / 1 / 29 of 100 -- the figure H428's NOTES gave by hand, now reproduced by script. Spans 55/55 in every state
+  (L11/8 sits on Tomokiyo's dash). Corrections file untouched.
+- **H430** (`family/h430_ctx_heldout.py`, pushed before any gloss exists): the only licence left for H424 after H423's power FAIL. When the
+  person's f.108r L04-L06 gloss lands (ASKS 88, `scripts/gloss108_person.tsv`, H137's format and placement, key v8 cells), it runs H423's
+  chooser UNCHANGED on those lines and gates, fixed now: chooser > unigram (exact McNemar one-sided p < 0.05 on the new cells alone), > the
+  order-shuffle p95 (100 reps, seed 430), and no pair with >= 5 new cells where the chooser is below the unigram rule (H427). PASS -> H424 goes
+  to a verifier's decision; FAIL -> the chooser is retired for f.61. Today it prints "waiting". `--selftest` (a synthetic gloss built from the
+  chooser's own letters, 17 words, 53 two-way cells) scores the chooser 53/53: PASS (plumbing only; says nothing about accuracy). f.211r
+  (ASKS 93) and f.106r (ASKS 99) adapters are not written; their pack formats are not fixed.
