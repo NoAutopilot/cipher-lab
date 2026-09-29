@@ -1,0 +1,894 @@
+{
+ "K1_planted|c1c2": {
+  "pair": "c1c2",
+  "on": "FR-HOMO",
+  "passes_bar_v2": [
+   "fr_dict"
+  ],
+  "rows": {
+   "fr_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 74.47,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 6.823,
+      "xlang_margin": 2.926,
+      "xlang": true
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 94.7,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 2.42,
+      "xlang_margin": -1.575,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "fr_dict": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 74.47,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 7.014,
+      "xlang_margin": 2.347,
+      "xlang": true
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 94.7,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 7.282,
+      "xlang_margin": 4.474,
+      "xlang": true
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     }
+    ],
+    "passes": true
+   },
+   "en_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 74.47,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 3.648,
+      "xlang_margin": -3.175,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 94.7,
+      "refit_below": "24/50",
+      "above_p99": false,
+      "z": -0.112,
+      "xlang_margin": -4.107,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": false
+     },
+     {
+      "frozen": true,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "pt_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 74.47,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 2.609,
+      "xlang_margin": -4.214,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 94.7,
+      "refit_below": "38/50",
+      "above_p99": false,
+      "z": 0.73,
+      "xlang_margin": -3.265,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": false
+     },
+     {
+      "frozen": true,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "vocab": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 99.9,
+      "pct_strat": 99.6,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 74.47,
+      "refit_below": "39/50",
+      "above_p99": false,
+      "z": 0.824,
+      "xlang_margin": null,
+      "xlang": null
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 94.7,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 5.304,
+      "xlang_margin": null,
+      "xlang": null
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": true
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     }
+    ],
+    "passes": false
+   }
+  }
+ },
+ "K1_planted|fold": {
+  "pair": "fold",
+  "on": "FR-HOMO",
+  "passes_bar_v2": [
+   "fr_dict"
+  ],
+  "rows": {
+   "fr_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 92.08,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 3.357,
+      "xlang_margin": 0.025,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 86.05,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 7.035,
+      "xlang_margin": 2.399,
+      "xlang": true
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": false
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     }
+    ],
+    "passes": false
+   },
+   "fr_dict": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 92.08,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 7.415,
+      "xlang_margin": 1.342,
+      "xlang": true
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 86.05,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 14.282,
+      "xlang_margin": 9.287,
+      "xlang": true
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     }
+    ],
+    "passes": true
+   },
+   "en_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 92.08,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 2.668,
+      "xlang_margin": -0.689,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 86.05,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 3.02,
+      "xlang_margin": -4.015,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": false
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "pt_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 92.08,
+      "refit_below": "48/50",
+      "above_p99": false,
+      "z": 1.743,
+      "xlang_margin": -1.614,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 86.05,
+      "refit_below": "49/50",
+      "above_p99": false,
+      "z": 1.905,
+      "xlang_margin": -5.13,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": true,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": true,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "vocab": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 100.0,
+      "pct_strat": 99.8,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 92.08,
+      "refit_below": "47/50",
+      "above_p99": false,
+      "z": 1.887,
+      "xlang_margin": null,
+      "xlang": null
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 100.0,
+      "pct_strat": 100.0,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 86.05,
+      "refit_below": "50/50",
+      "above_p99": true,
+      "z": 3.678,
+      "xlang_margin": null,
+      "xlang": null
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": true
+     },
+     {
+      "frozen": true,
+      "refit": true,
+      "xlang": true
+     }
+    ],
+    "passes": false
+   }
+  }
+ },
+ "K2_random|c1c2": {
+  "pair": "c1c2",
+  "on": "FR-HOMO",
+  "passes_bar_v2": [],
+  "rows": {
+   "fr_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 23.1,
+      "pct_strat": 35.6,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 0.91,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -12.491,
+      "xlang_margin": -10.091,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 64.1,
+      "pct_strat": 74.4,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 0.76,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -8.767,
+      "xlang_margin": -5.652,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "fr_dict": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 0.0,
+      "pct_strat": 0.0,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 0.91,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -1.747,
+      "xlang_margin": -0.226,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 76.5,
+      "pct_strat": 81.6,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 0.76,
+      "refit_below": "3/50",
+      "above_p99": false,
+      "z": -1.29,
+      "xlang_margin": -0.057,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "en_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 24.0,
+      "pct_strat": 41.9,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 0.91,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -9.51,
+      "xlang_margin": -7.11,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 14.8,
+      "pct_strat": 15.8,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 0.76,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -8.46,
+      "xlang_margin": -5.345,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "pt_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 37.3,
+      "pct_strat": 38.2,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 0.91,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -5.529,
+      "xlang_margin": -3.129,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 56.2,
+      "pct_strat": 61.8,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 0.76,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -5.717,
+      "xlang_margin": -2.602,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "vocab": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1>FR-HOMO.c2",
+      "pct": 0.0,
+      "pct_strat": 0.0,
+      "cov": 0.7447,
+      "letters": 490,
+      "rec": 0.91,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -1.778,
+      "xlang_margin": null,
+      "xlang": null
+     },
+     {
+      "dir": "FR-HOMO.c2>FR-HOMO.c1",
+      "pct": 63.6,
+      "pct_strat": 68.8,
+      "cov": 0.947,
+      "letters": 125,
+      "rec": 0.76,
+      "refit_below": "4/50",
+      "above_p99": false,
+      "z": -1.175,
+      "xlang_margin": null,
+      "xlang": null
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": true
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": true
+     }
+    ],
+    "passes": false
+   }
+  }
+ },
+ "K2_random|fold": {
+  "pair": "fold",
+  "on": "FR-HOMO",
+  "passes_bar_v2": [],
+  "rows": {
+   "fr_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 61.2,
+      "pct_strat": 35.0,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 0.99,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -11.01,
+      "xlang_margin": -8.465,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 35.2,
+      "pct_strat": 53.8,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 1.7,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -11.033,
+      "xlang_margin": -8.294,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "fr_dict": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 75.0,
+      "pct_strat": 67.9,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 0.99,
+      "refit_below": "2/50",
+      "above_p99": false,
+      "z": -1.349,
+      "xlang_margin": -0.78,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 72.5,
+      "pct_strat": 79.6,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 1.7,
+      "refit_below": "3/50",
+      "above_p99": false,
+      "z": -1.163,
+      "xlang_margin": 0.83,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "en_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 71.6,
+      "pct_strat": 42.7,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 0.99,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -10.898,
+      "xlang_margin": -8.353,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 5.8,
+      "pct_strat": 10.1,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 1.7,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -9.557,
+      "xlang_margin": -6.818,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "pt_quad": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 82.6,
+      "pct_strat": 63.1,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 0.99,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -5.992,
+      "xlang_margin": -3.447,
+      "xlang": false
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 32.5,
+      "pct_strat": 18.9,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 1.7,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -5.522,
+      "xlang_margin": -2.783,
+      "xlang": false
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": false
+     }
+    ],
+    "passes": false
+   },
+   "vocab": {
+    "directions": [
+     {
+      "dir": "FR-HOMO.c1+FR-HOMO.c2a>FR-HOMO.c2b",
+      "pct": 0.0,
+      "pct_strat": 0.0,
+      "cov": 0.9208,
+      "letters": 186,
+      "rec": 0.99,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -1.796,
+      "xlang_margin": null,
+      "xlang": null
+     },
+     {
+      "dir": "FR-HOMO.c2b>FR-HOMO.c1+FR-HOMO.c2a",
+      "pct": 20.7,
+      "pct_strat": 21.4,
+      "cov": 0.8605,
+      "letters": 506,
+      "rec": 1.7,
+      "refit_below": "0/50",
+      "above_p99": false,
+      "z": -1.758,
+      "xlang_margin": null,
+      "xlang": null
+     }
+    ],
+    "conds": [
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": true
+     },
+     {
+      "frozen": false,
+      "refit": false,
+      "xlang": true
+     }
+    ],
+    "passes": false
+   }
+  }
+ }
+}

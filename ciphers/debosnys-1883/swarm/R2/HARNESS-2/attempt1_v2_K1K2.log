@@ -1,0 +1,4 @@
+K1_planted c1c2: passes ['fr_dict']
+K1_planted fold: passes ['fr_dict']
+K2_random c1c2: passes []
+K2_random fold: passes []
