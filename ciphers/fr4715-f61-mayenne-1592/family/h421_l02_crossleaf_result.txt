@@ -1,0 +1,2 @@
+gate: 8/8 known cross-leaf (>= 7); f.108r T2/27 -> R1 (must be R1)
+f.61 L02/2 W1-W3: ['NONE', 'NONE', 'NONE'] -> unassigned

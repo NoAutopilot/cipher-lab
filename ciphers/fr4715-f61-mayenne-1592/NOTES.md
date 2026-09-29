@@ -6024,3 +6024,13 @@ said re-drawn, disclosed), key `family/h420_items.tsv`, prompt note H420, commit
 The one correction goes to `scripts/f108r_positions_corrections.tsv` (pass files untouched). `family/h420_rescore.py` (`--check` OK): **f.108r
 overlay under key v8 74/84 -> 75/84 with the correction -> 76/84 with the correction and H419's BETA m/z** (own permuted p95 0.405, 0/2000 each).
 No key or grade change. Cost estimate 1.5 USD.
+
+## Campaign step H421 (29 Sept 2026, 20:21-19:47 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- f.61 L02/2 is not f.108r's l-sign or m-sign; f.108r's two 'l' OTHER signs are one sign (1 vision call)
+
+`family/h421_l02_crossleaf.py` (key `family/h421_items.tsv`, prompt note H421), committed before the call (6210c624's parent); INF dropped from the
+references before the call after the placement look (f.108r draws it crossed, f.61 open), disclosed in the docstring. One blind Opus call, reply
+`family/passes/h421_reply.tsv`, result `family/h421_l02_crossleaf_result.txt` (`--check` OK): **gate 8/8 cross-leaf known items (f.61 tiles in
+greyscale against f.108r references) and the internal check (f.108r T2/27 -> R1, the T2/3 'l'-sign) passed; f.61 L02/2 'none' at 3 of 3 windows ->
+unassigned.** Two points for the verifier: the forced-choice design transfers across the two leaves of f.61's hand (8/8); and f.108r's overlay
+'l' at T2/3 and T2/27 falls on one sign outside the reader codes (a distinct l-form in this hand, H420/H421). f.61's L02/2 remains a sign with no
+class (the meter's one 'wider' token). Cost estimate 1.5 USD.

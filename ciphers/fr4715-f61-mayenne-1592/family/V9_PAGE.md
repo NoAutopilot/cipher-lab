@@ -179,3 +179,12 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
   pass A missed a loops-on-stem sign at L03/16 (blind count 7 vs 6, controls 6 and 4 exact). Corrections in scripts/f61_positions_corrections.tsv
   (pass files untouched); with them key v8's f.61 reading key reproduces Tomokiyo's spans 55/55 (permuted p95 0.436), meter 12 / 60 / 2 / 26 of 100.
   In-sample in part (4PIPI from S5); both positions inside published spans -- a transcription and key-check point, not a reading.
+- **Out-of-span transcription QA (H410, H411, H413):** blind forced choice against f.61's in-span references with known-item gates (16/16, 18/18,
+  18/18): L10's 13 codes confirmed; 13 of the other 14 out-of-span codes confirmed; L05/1 (LOOPSTEM1) unsettled (LOOPBAR 2 reads, none 1, n 1).
+- **The meter's two 'wider' signs (H414, H421):** L04/2 is punctuation (3/3, gate 17/18) and leaves the cipher count; L02/2 matches none of 15 f.61
+  references nor f.108r's l- and m-signs (gate 8/8). Corrected meter (scripts/f61_positions_corrections.tsv): **12 / 60 / 1 / 26 of 99**.
+- **f.108r's ten misses (H416-H420):** 3 are the qui word sign (drawn like 4TRI, as the table describes it); T1/20 was a 4TRI coded 4PI (H420,
+  gate 17/17; scripts/f108r_positions_corrections.tsv): overlay 74 -> 75/84; BETA m/s -> m/z adds the 'z' (76/84) without loss on f.61 (H419, a
+  proposal; period s also attested, rule 4); widening all cells to table columns or cutting them to one column does not beat the fitted cells on
+  both known answers (H417).
+
