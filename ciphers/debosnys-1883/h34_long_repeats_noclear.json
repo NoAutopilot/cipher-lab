@@ -1,0 +1,74 @@
+{
+ "N": 1138,
+ "K": 154,
+ "stats": {
+  "3": {
+   "obs": 14,
+   "shuffle": {
+    "lo": 8,
+    "hi": 21,
+    "median": 14,
+    "p_ge": 0.582
+   },
+   "mixed_design": {
+    "lo": 44,
+    "hi": 80,
+    "median": 61,
+    "p_ge": 1.0
+   }
+  },
+  "4": {
+   "obs": 1,
+   "shuffle": {
+    "lo": 0,
+    "hi": 3,
+    "median": 0,
+    "p_ge": 0.461
+   },
+   "mixed_design": {
+    "lo": 8,
+    "hi": 30,
+    "median": 17,
+    "p_ge": 1.0
+   }
+  },
+  "5": {
+   "obs": 0,
+   "shuffle": {
+    "lo": 0,
+    "hi": 0,
+    "median": 0,
+    "p_ge": 1.0
+   },
+   "mixed_design": {
+    "lo": 0,
+    "hi": 15,
+    "median": 5,
+    "p_ge": 1.0
+   }
+  }
+ },
+ "long_repeats": [
+  {
+   "ngram": [
+    "X",
+    "VENUS",
+    "PCT-SLASH",
+    "X"
+   ],
+   "n": 4,
+   "occurrences": 2,
+   "pict_opens": false,
+   "where": [
+    [
+     0,
+     6
+    ],
+    [
+     2,
+     142
+    ]
+   ]
+  }
+ ]
+}

@@ -13,7 +13,8 @@ sys.path.insert(0, here); from settled_lines import settled_lines
 import h3_unit_profile as h3, h10_mixed as h10, h13_newtype_noise as h13
 PUNCT = {'BLOB', 'HOOK-L', 'DASH-H', '_', 'MULTI'}
 def is_pict(s): return s.startswith('PICT-') or s in ('SUN', 'STAR', 'HEART', 'RAM')
-raw = settled_lines(root, 'c')
+CLEAR = '--drop-clear' in sys.argv  # H44: leave out clear_spans.tsv positions
+raw = settled_lines(root, 'c', drop_clear=CLEAR)
 lines = [(k, [s for s in v if s not in PUNCT]) for k, v in raw.items()]
 def page(k): return {'c2a': 'c2', 'c2b': 'c2', 'c4a0': 'c4', 'c4a': 'c4', 'c4b': 'c4'}.get(k.split('_')[0], k.split('_')[0])
 def repeats(seqs):
@@ -54,4 +55,4 @@ for n in (6, 5, 4):
         if len(occ) >= 2 and not any(set(g) <= set(x['ngram']) and len(x['ngram']) > n for x in lst):
             lst.append(dict(ngram=list(g), n=n, occurrences=len(occ), pict_opens=is_pict(g[0]), where=occ))
 for x in lst: print(x['n'], ' '.join(x['ngram']), x['occurrences'], x['where'])
-json.dump(dict(N=N, K=K, stats=res, long_repeats=lst), open(os.path.join(root, 'h34_long_repeats.json'), 'w'), indent=1)
+json.dump(dict(N=N, K=K, stats=res, long_repeats=lst), open(os.path.join(root, 'h34_long_repeats_noclear.json' if CLEAR else 'h34_long_repeats.json'), 'w'), indent=1)

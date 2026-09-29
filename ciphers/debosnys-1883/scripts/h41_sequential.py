@@ -12,7 +12,8 @@ sys.path.insert(0, here); from settled_lines import settled_lines
 sys.argv = [sys.argv[0], '--drop-x'] + sys.argv[1:]
 import h38_homophonic_fit as h38
 PUNCT = {'BLOB', 'HOOK-L', 'DASH-H', '_', 'MULTI'}
-raw = settled_lines(root, 'c')
+CLEAR = '--drop-clear' in sys.argv  # H44: leave out clear_spans.tsv positions
+raw = settled_lines(root, 'c', drop_clear=CLEAR)
 def stat(lines):
     bg = collections.Counter(); L = collections.Counter(); R = collections.Counter()
     for l in lines:
@@ -49,4 +50,4 @@ for cond in ((0.3, 2, 6, True, 0.1, 61), (0.2, 2, 3, True, 0.2, 32)):
     key = f'design_q{q}_h{h}_c{c}_{"zipf" if zipf else "eq"}_p{p}_K0{K0}'
     res[key] = {k: dict(z_median=sorted(x[k]['z'] for x in samples)[50], share_above_p975=sum(x[k]['p_ge'] <= 0.025 for x in samples) / 100) for k in ('MI', 'bigram_types_2plus')}
     print(key, res[key])
-json.dump(res, open(os.path.join(root, 'h41_sequential.json'), 'w'), indent=1)
+json.dump(res, open(os.path.join(root, 'h41_sequential_noclear.json' if CLEAR else 'h41_sequential.json'), 'w'), indent=1)

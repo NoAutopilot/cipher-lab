@@ -1052,3 +1052,29 @@ now at a realistic pre-split K of 55 (q 0.3, h 2 Zipf variants on units of count
 Earlier rows' single-sign and repeat statistics include these nine tokens; the change is under one percent of N and
 moves no verdict checked here (H40); rows citing K 160 or 47 hapax are to be read with that caveat. Grade S; nothing
 read; status `open`.
+
+### H44, other clear material in the drafts (29 Sept 2026, DEBOSNYS-RUNNER-3b)
+
+Every Latin-letter and digit-shaped id in the settled drafts (clear spans already dropped) was listed with its context
+(A-LETTER, F-LETTER x3, T-LETTER x3, M-LETTER x2, N-LETTER; the nine numeral ids) and set against LANE B2's clear-text
+list and Bourdeau's CLEAR_/NUM_ codes: none sits in a run of clear capitals or digits, and Bourdeau codes none of the
+No.9 ones as clear. Three strips were checked by eye: c2a_L10 (box 1 FIVE is a stylised 5 with a colon-like mark at
+the line start next to the bird drawing, not clearly a clear digit; kept as cipher), c2a_L01 (box 27 is a stroke above
+the line and box 23 a bar below it -- segmentation, not clear text; the "No. 9" heading is not in our strips), c2b_L09
+(boxes 1-7 are the drawing of the hand, labelled `_`; the clear "L.M.F." is not in the strip; box 14, PICT-ARROW, is
+an arrow-like flourish at the very end of the text and may be an end mark, noted at grade I, not listed as clear). So
+**no further clear span was found**; clear_spans.tsv stays at nine positions. H34 and H41 re-run with drop_clear
+(`h34_long_repeats_noclear.json`, `h41_sequential_noclear.json`): repeated 3-grams 14 (shuffle 8-21, K-matched mixed
+design 44-80), 4-grams 1; without X, MI z -0.01 (design z 7.25) and repeated bigram types 105 vs 74-99 (z 2.96,
+p 0.003) -- both verdicts unchanged. Grade S; nothing read; status `open`.
+
+### H36, spacing of pictograms in the running text (29 Sept 2026, CPU only)
+
+`scripts/h36_pict_spacing.py` (`h36_pict_spacing.json`): pages as continuous streams (clear spans and punctuation
+dropped; c1 125 signs / 5 pictograms, c2 643 / 36, c3 107 / 5, c4 263 / 14), gaps between consecutive pictograms
+(mean 17.9 signs). Variance-to-mean ratio of the gaps 14.0 against 10,000 random re-placements 9.2-23.5 (p 0.44);
+share of gaps under 3 signs 0.089 against 0.036-0.179. A planted stream with one pictogram opening each phrase of
+15-25 signs gives VMR 0.49 and no short gaps, far below the null band -- the test would see phrase-regular spacing.
+So **pictograms are spaced like random draws along the stream**: they mark no regular phrase or sentence unit, and
+H31's line-start preference is a habit at the physical line start (or the word at the start of a written line), not
+evidence of a phrase marker. Grade S; nothing read; status `open`.
