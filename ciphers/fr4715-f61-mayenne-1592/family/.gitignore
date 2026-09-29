@@ -1,0 +1,3 @@
+# H332 (29 Sept 2026): regenerable, kept out of git by the 30 MB folder rule -- native via fetch_gallica.py btv1b9059406b 191 full images/3983_f106r.jpg, crops via cut_bands.py with sheets/f106r_b_bands.json
+images/3983_f106r.jpg
+sheets/f106r_b/
