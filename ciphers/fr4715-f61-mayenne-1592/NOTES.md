@@ -4679,3 +4679,14 @@ HYPOTHESES.md's H268 row, CAMPAIGN.md's H268 result cell and family/V9_PAGE.md (
 ("<l|m|le|me|se> entendoit/-oient/-ait/-aient") occurs **once in fr16** (983k words: `lettresdecatheri01cathuoft ... s asseure- ment que le roy le trouverait eucores plus, s il l entendoit. au moyen de quoy je leur es- criptz pr ...`) and **never in fr18, fr19 or fr19v** (595k, 593k, 26k
 words); enten- forms 0 everywhere. Existence only, the other corpora being era-mismatched: the construction is attested once in the period letters, so
 "me l'entendoit" is possible French but not common in these texts; the word-level H268 result is unaffected. For the verifier's weighing. No call.
+
+## Campaign steps H281 and H282 (29 Sept 2026, 10:36 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the dash-need table; L04's OTHER after "comme" (script-only)
+
+**H281** `family/h281_dash_need.py` -> `family/f61_dash_need.tsv` (result `family/h281_dash_need_result.txt`, `--check` OK): Tomokiyo's 16 dashes in the
+five spans -- 12 sit on null-band classes (CA 4, C6 5, CROSS 2, LL 1), 3 on keyed classes (L05 1 LOOPSTEM1 q/s and L05 2 CH e/m, the two signs before
+"trop", and L11 8 4STEM a/n), 1 unpaired. French needs a letter at exactly one of them, L11 8 (H268); at every other dash his own phrase is complete
+without it. For the verifier: the pooled LOOPSTEM1 q/s and CH e/m (from other leaves) have no letter of his on f.61 either, one token each -- the same
+shape as C6 (H261) at n = 1, noted, not filed as conflict rows at that n. **H282** `family/h282_l04_abbrev.py` (result `family/h282_l04_abbrev_result.txt`,
+`--check` OK): in fr16 "comme/come" is followed 2,108 times by a pronoun or article and never by a majesty formula (0), although the abbreviation
+tokens s a 74, v a 68, v m 65, s m 35 occur elsewhere -- so pass U2's guess that L04's OTHER after "Come" is "S.M." has no corpus support; the token
+stays OTHER (wider). No call.

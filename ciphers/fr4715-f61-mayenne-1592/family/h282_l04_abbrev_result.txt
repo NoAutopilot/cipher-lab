@@ -1,0 +1,3 @@
+'comme/come' + next: 2108 cases; majesty formula next 0 (0.000)
+top next tokens: vous 291, il 282, je 223, j 95, nous 74, le 69, de 57, elle 37, la 35, l 35, ilz 35, aussi 34
+abbreviation tokens anywhere: s a 74, v a 68, v m 65, s m 35

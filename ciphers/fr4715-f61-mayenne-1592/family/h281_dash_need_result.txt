@@ -1,0 +1,1 @@
+dashes 16; paired with a null-band class 12; paired with a keyed class 3: L05 1 LOOPSTEM1; L05 2 CH; L11 8 4STEM; unpaired 1
