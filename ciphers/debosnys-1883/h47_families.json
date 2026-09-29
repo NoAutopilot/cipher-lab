@@ -1,0 +1,149 @@
+{
+ "unrelated": {
+  "n": 1414,
+  "median": 0.776,
+  "p10": 0.639
+ },
+ "family": {
+  "O-TILDE|O-DASH2": {
+   "sizes": [
+    27,
+    15
+   ],
+   "jsd": 0.635,
+   "planted_median": 0.673,
+   "planted_p975": 0.822,
+   "unrelated_matched_median": 0.683,
+   "unrelated_matched_p025": 0.45,
+   "variant_like": false
+  },
+  "O-TILDE|O-DASHBELOW": {
+   "sizes": [
+    27,
+    5
+   ],
+   "jsd": 0.778,
+   "planted_median": 0.789,
+   "planted_p975": 0.939,
+   "unrelated_matched_median": 0.821,
+   "unrelated_matched_p025": 0.644,
+   "variant_like": false
+  },
+  "X|X-DASH": {
+   "sizes": [
+    152,
+    8
+   ],
+   "jsd": 0.716,
+   "note": "no source id large enough for a planted split"
+  },
+  "X|X-BAR": {
+   "sizes": [
+    152,
+    5
+   ],
+   "jsd": 0.84,
+   "note": "no source id large enough for a planted split"
+  },
+  "X|X-DOT": {
+   "sizes": [
+    152,
+    26
+   ],
+   "jsd": 0.516,
+   "note": "no source id large enough for a planted split"
+  },
+  "X|X-O": {
+   "sizes": [
+    152,
+    8
+   ],
+   "jsd": 0.739,
+   "note": "no source id large enough for a planted split"
+  },
+  "O-DASH2|O-DASHBELOW": {
+   "sizes": [
+    15,
+    5
+   ],
+   "jsd": 0.763,
+   "planted_median": 0.811,
+   "planted_p975": 0.946,
+   "unrelated_matched_median": 0.838,
+   "unrelated_matched_p025": 0.637,
+   "variant_like": false
+  },
+  "X-DASH|X-BAR": {
+   "sizes": [
+    8,
+    5
+   ],
+   "jsd": 0.922,
+   "planted_median": 0.838,
+   "planted_p975": 1.0,
+   "unrelated_matched_median": 0.887,
+   "unrelated_matched_p025": 0.635,
+   "variant_like": false
+  },
+  "X-DASH|X-DOT": {
+   "sizes": [
+    8,
+    26
+   ],
+   "jsd": 0.786,
+   "planted_median": 0.741,
+   "planted_p975": 0.902,
+   "unrelated_matched_median": 0.753,
+   "unrelated_matched_p025": 0.637,
+   "variant_like": false
+  },
+  "X-DASH|X-O": {
+   "sizes": [
+    8,
+    8
+   ],
+   "jsd": 0.893,
+   "planted_median": 0.806,
+   "planted_p975": 1.0,
+   "unrelated_matched_median": 0.836,
+   "unrelated_matched_p025": 0.599,
+   "variant_like": false
+  },
+  "X-BAR|X-DOT": {
+   "sizes": [
+    5,
+    26
+   ],
+   "jsd": 1.0,
+   "planted_median": 0.786,
+   "planted_p975": 0.96,
+   "unrelated_matched_median": 0.823,
+   "unrelated_matched_p025": 0.648,
+   "variant_like": false
+  },
+  "X-BAR|X-O": {
+   "sizes": [
+    5,
+    8
+   ],
+   "jsd": 0.916,
+   "planted_median": 0.838,
+   "planted_p975": 1.0,
+   "unrelated_matched_median": 0.875,
+   "unrelated_matched_p025": 0.649,
+   "variant_like": false
+  },
+  "X-DOT|X-O": {
+   "sizes": [
+    26,
+    8
+   ],
+   "jsd": 0.811,
+   "planted_median": 0.738,
+   "planted_p975": 0.895,
+   "unrelated_matched_median": 0.768,
+   "unrelated_matched_p025": 0.605,
+   "variant_like": false
+  }
+ }
+}

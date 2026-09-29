@@ -1115,3 +1115,35 @@ not a two-part sign in a fixed order, which would put the partner on one side on
 is the shape of two frequent units that follow each other both ways (a pair like "en"/"ne" or a unit and its
 homophone neighbour), and it is the strongest local regularity in the text (H41's largest bigram excesses). Nothing
 folded; H34/H41 stand. Grade S; nothing read; status `open`.
+
+### H47, are the O- and X-family forms variants of one unit each? (29 Sept 2026, CPU only)
+
+`scripts/h47_families.py` (`h47_families.json`): Jensen-Shannon divergence between the neighbour distributions of
+family members (O-TILDE / O-DASH2 / O-DASHBELOW; X / X-DASH / X-BAR / X-DOT / X-O; ids with >= 5 settled tokens),
+against (b) planted variants -- a frequent id's tokens split at random into two pseudo-ids of the same sizes -- and
+(a) matched-size pairs of unrelated ids. **Non-discriminating at this N**: the planted true-variant JSD medians
+(0.67-0.84) sit on top of the matched unrelated medians (0.68-0.89) for every pair size, so the test cannot tell a
+variant from an unrelated sign here (neighbour distributions this sparse, in a text whose local order is near random
+-- H41, H46, are dominated by sampling noise). No family pair is called variant-like or not; logged untestable by this
+method at this N (rule 3: the control shows no power, so the target's numbers license nothing). One uncontrolled
+observation: X vs X-DOT has the lowest JSD of all pairs tried (0.516, below the unrelated 10th percentile 0.639); no
+planted reference exists at X's size. Grade S; nothing read; status `open`.
+
+### H49, what the structural rows settle for any solver brief (29 Sept 2026, synthesis, no new computation)
+
+For swarm round 2 and any later solver brief; every line is a row above with its own control; grade S; nothing read.
+
+| fact | value | rows |
+|---|---|---|
+| clear text inside the drafts | 9 positions (the digits 516, c2a L02 14-16; H.D.D.L.M.F., c2a L09 7-14): drop with `settled_lines(..., drop_clear=True)` / `clear_spans.tsv`; drafts unedited | H37, H43, H44 |
+| settled noise per page | c1 14-18 pct, c2 14-17, c3+c4 8.5-10 (three-pass, gate 80 pct met on all four) | H2, H21b, H23 |
+| one key across the four | sign-frequency ranks sit with a shared-key control on 6 of 6 pairs (settled) | H15, H27 |
+| unit scale | about 13 signs per verse line; 12.5 without X on Bourdeau's read (alexandrine-compatible, p 0.07) | H11, H30 |
+| X | 12.8 pct of tokens; contexts as free as chance (like most signs); avoids line edges; with X removed the pooled text fits a homophonic mixed design 8/9 (fresh seeds), with X no design passes 6/9 | H14, H19, H38-H40, H46 |
+| repeats | 14 repeated 3-grams, 1 4-gram: at its own shuffle level and 3-4x below any one-sign-per-unit design at matched K and 10-20 pct noise; a 2-4-way homophonic design fits | H34, H44 |
+| local order | adjacent MI at shuffle level (fitted designs z 3-7); yet 105 repeated bigram types vs 74-99 -- a few fixed pairs, strongest WAVE with % in either order (16 of 25 WAVE tokens) | H41, H48 |
+| pictograms | 60 tokens, 23 ids; open 11 of 56 lines (chance 0-6), robust to layout; spaced at random along the stream (no phrase marker) | H31, H35, H36 |
+| marks | not abugida-like (52 of 357 base x mark cells; planted abugida 125); carriers O (11 forms) and X (6) | H45 |
+| verse | couplet rhyme on the settled c4 (5/10 within, 0/9 across, p < 0.0001) | H5, H23 |
+| cribs tried, control-backed negatives | the c3 clear poem; Gaffney's Greek and English verso; the name initials letter by letter; Moore's texts wait on LOCAL-QUEUE L28 | H4, H12, H17, H20 |
+| not testable here at this N | variant families by neighbours (H47); word-end before pictograms (H32); language of the verse (H16) | H16, H32, H47 |
