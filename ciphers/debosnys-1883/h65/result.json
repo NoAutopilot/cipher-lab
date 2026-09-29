@@ -1,0 +1,684 @@
+{
+ "train_sizes": {
+  "II-DASH/CC-DASH": {
+   "II-DASH": 6,
+   "CC-DASH": 10
+  },
+  "O-SLASH/PHI": {
+   "O-SLASH": 11,
+   "PHI": 17
+  },
+  "C-BAR-X/ARCH-DASH": {
+   "C-BAR-X": 5,
+   "ARCH-DASH": 7
+  },
+  "EIGHT/VENUS/THREE": {
+   "VENUS": 18,
+   "EIGHT": 5,
+   "THREE": 3
+  },
+  "CIRC-O/BLOB": {
+   "BLOB": 2,
+   "CIRC-O": 5
+  },
+  "S-CURL/DOUBLE-LOOP": {
+   "S-CURL": 3,
+   "DOUBLE-LOOP": 4
+  }
+ },
+ "loo": {
+  "II-DASH/CC-DASH": {
+   "n": 16,
+   "knn_correct": 11,
+   "majority": 10
+  },
+  "O-SLASH/PHI": {
+   "n": 28,
+   "knn_correct": 22,
+   "majority": 17
+  },
+  "C-BAR-X/ARCH-DASH": {
+   "n": 12,
+   "knn_correct": 10,
+   "majority": 7
+  },
+  "EIGHT/VENUS/THREE": {
+   "n": 26,
+   "knn_correct": 20,
+   "majority": 18
+  },
+  "CIRC-O/BLOB": {
+   "n": 7,
+   "knn_correct": 5,
+   "majority": 5
+  },
+  "S-CURL/DOUBLE-LOOP": {
+   "n": 7,
+   "knn_correct": 4,
+   "majority": 4
+  }
+ },
+ "loo_pooled": {
+  "n": 96,
+  "knn_acc": 0.75,
+  "majority_acc": 0.635
+ },
+ "control_pass": true,
+ "R2-2:knn": {
+  "readers": {
+   "unsettled": 13,
+   "agreed_wrong": 2,
+   "err_pct": 15.6,
+   "residual": [
+    [
+     "s02_2",
+     "PHI",
+     "PHI",
+     "O-SLASH"
+    ],
+    [
+     "s03_1",
+     "CC-DASH",
+     "CC-DOT",
+     "CC-DOT"
+    ],
+    [
+     "s03_4",
+     "X",
+     "X-O",
+     "X-O"
+    ],
+    [
+     "s04_1",
+     "EIGHT",
+     "VENUS",
+     "THREE"
+    ],
+    [
+     "s05_1",
+     "CIRC-O",
+     "CIRC-O",
+     "_"
+    ],
+    [
+     "s05_8",
+     "O-SLASH",
+     "PHI",
+     "O-SLASH"
+    ],
+    [
+     "s07_5",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s07_6",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s08_1",
+     "II-DASH",
+     "II-DASH",
+     "CC-DASH"
+    ],
+    [
+     "s08_2",
+     "S-CURL",
+     "S-CURL",
+     "DOUBLE-LOOP"
+    ],
+    [
+     "s09_7",
+     "C-BAR-X",
+     "ARCH-DASH",
+     "C-BAR-X"
+    ],
+    [
+     "s10_1",
+     "C-BAR-X",
+     "ARCH-DASH",
+     "C-BAR-X"
+    ],
+    [
+     "s11_1",
+     "EIGHT",
+     "VENUS",
+     "EIGHT"
+    ],
+    [
+     "s12_2",
+     "C-BAR-X",
+     "ARCH-DASH",
+     "C-BAR-X"
+    ],
+    [
+     "s12_4",
+     "EIGHT",
+     "VENUS",
+     "EIGHT"
+    ]
+   ]
+  },
+  "arbitrated": {
+   "unsettled": 3,
+   "agreed_wrong": 12,
+   "err_pct": 15.6,
+   "residual": [
+    [
+     "s02_3",
+     "CIRC-O",
+     "BLOB",
+     "BLOB"
+    ],
+    [
+     "s03_1",
+     "CC-DASH",
+     "CC-DOT",
+     "CC-DOT"
+    ],
+    [
+     "s03_4",
+     "X",
+     "X-O",
+     "X-O"
+    ],
+    [
+     "s04_1",
+     "EIGHT",
+     "VENUS",
+     "VENUS"
+    ],
+    [
+     "s05_1",
+     "CIRC-O",
+     "CIRC-O",
+     "_"
+    ],
+    [
+     "s07_5",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s07_6",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s08_2",
+     "S-CURL",
+     "DOUBLE-LOOP",
+     "DOUBLE-LOOP"
+    ],
+    [
+     "s09_4",
+     "CC-DASH",
+     "II-DASH",
+     "II-DASH"
+    ],
+    [
+     "s10_2",
+     "O-SLASH",
+     "PHI",
+     "PHI"
+    ],
+    [
+     "s10_4",
+     "CC-DASH",
+     "II-DASH",
+     "II-DASH"
+    ],
+    [
+     "s10_6",
+     "CC-DASH",
+     "II-DASH",
+     "II-DASH"
+    ],
+    [
+     "s11_1",
+     "EIGHT",
+     "VENUS",
+     "VENUS"
+    ],
+    [
+     "s11_4",
+     "CIRC-O",
+     "BLOB",
+     "BLOB"
+    ],
+    [
+     "s12_4",
+     "EIGHT",
+     "VENUS",
+     "VENUS"
+    ]
+   ]
+  }
+ },
+ "H63:knn": {
+  "readers": {
+   "unsettled": 1,
+   "agreed_wrong": 7,
+   "err_pct": 8.3,
+   "residual": [
+    [
+     "s02_5",
+     "S-CURL",
+     "SCROLL-X",
+     "SCROLL-X"
+    ],
+    [
+     "s04_7",
+     "S-CURL",
+     "Y-CURL",
+     "Y-CURL"
+    ],
+    [
+     "s05_6",
+     "NOTE",
+     "MARS",
+     "MARS"
+    ],
+    [
+     "s06_8",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s08_3",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s10_3",
+     "X",
+     "X-SLASH",
+     "X-SLASH"
+    ],
+    [
+     "s11_8",
+     "II-DASH",
+     "II-DASH",
+     "DOTS-DASH"
+    ],
+    [
+     "s12_5",
+     "PHI",
+     "O-SLASH",
+     "O-SLASH"
+    ]
+   ]
+  },
+  "arbitrated": {
+   "unsettled": 1,
+   "agreed_wrong": 8,
+   "err_pct": 9.4,
+   "residual": [
+    [
+     "s02_5",
+     "S-CURL",
+     "SCROLL-X",
+     "SCROLL-X"
+    ],
+    [
+     "s04_7",
+     "S-CURL",
+     "Y-CURL",
+     "Y-CURL"
+    ],
+    [
+     "s05_6",
+     "NOTE",
+     "MARS",
+     "MARS"
+    ],
+    [
+     "s06_8",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s07_2",
+     "O-SLASH",
+     "PHI",
+     "PHI"
+    ],
+    [
+     "s07_5",
+     "II-DASH",
+     "CC-DASH",
+     "CC-DASH"
+    ],
+    [
+     "s08_3",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s10_3",
+     "X",
+     "X-SLASH",
+     "X-SLASH"
+    ],
+    [
+     "s11_8",
+     "II-DASH",
+     "CC-DASH",
+     "DOTS-DASH"
+    ]
+   ]
+  }
+ },
+ "R2-2:svm": {
+  "readers": {
+   "unsettled": 13,
+   "agreed_wrong": 2,
+   "err_pct": 15.6,
+   "residual": [
+    [
+     "s02_2",
+     "PHI",
+     "PHI",
+     "O-SLASH"
+    ],
+    [
+     "s03_1",
+     "CC-DASH",
+     "CC-DOT",
+     "CC-DOT"
+    ],
+    [
+     "s03_4",
+     "X",
+     "X-O",
+     "X-O"
+    ],
+    [
+     "s04_1",
+     "EIGHT",
+     "VENUS",
+     "THREE"
+    ],
+    [
+     "s05_1",
+     "CIRC-O",
+     "CIRC-O",
+     "_"
+    ],
+    [
+     "s05_8",
+     "O-SLASH",
+     "PHI",
+     "O-SLASH"
+    ],
+    [
+     "s07_5",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s07_6",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s08_1",
+     "II-DASH",
+     "II-DASH",
+     "CC-DASH"
+    ],
+    [
+     "s08_2",
+     "S-CURL",
+     "S-CURL",
+     "DOUBLE-LOOP"
+    ],
+    [
+     "s09_7",
+     "C-BAR-X",
+     "ARCH-DASH",
+     "C-BAR-X"
+    ],
+    [
+     "s10_1",
+     "C-BAR-X",
+     "ARCH-DASH",
+     "C-BAR-X"
+    ],
+    [
+     "s11_1",
+     "EIGHT",
+     "VENUS",
+     "EIGHT"
+    ],
+    [
+     "s12_2",
+     "C-BAR-X",
+     "ARCH-DASH",
+     "C-BAR-X"
+    ],
+    [
+     "s12_4",
+     "EIGHT",
+     "VENUS",
+     "EIGHT"
+    ]
+   ]
+  },
+  "arbitrated": {
+   "unsettled": 3,
+   "agreed_wrong": 10,
+   "err_pct": 13.5,
+   "residual": [
+    [
+     "s03_1",
+     "CC-DASH",
+     "CC-DOT",
+     "CC-DOT"
+    ],
+    [
+     "s03_4",
+     "X",
+     "X-O",
+     "X-O"
+    ],
+    [
+     "s04_1",
+     "EIGHT",
+     "VENUS",
+     "VENUS"
+    ],
+    [
+     "s05_1",
+     "CIRC-O",
+     "CIRC-O",
+     "_"
+    ],
+    [
+     "s07_5",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s07_6",
+     "CIRC-O",
+     "_",
+     "CIRC-O"
+    ],
+    [
+     "s08_1",
+     "II-DASH",
+     "CC-DASH",
+     "CC-DASH"
+    ],
+    [
+     "s08_2",
+     "S-CURL",
+     "DOUBLE-LOOP",
+     "DOUBLE-LOOP"
+    ],
+    [
+     "s09_4",
+     "CC-DASH",
+     "II-DASH",
+     "II-DASH"
+    ],
+    [
+     "s10_4",
+     "CC-DASH",
+     "II-DASH",
+     "II-DASH"
+    ],
+    [
+     "s10_6",
+     "CC-DASH",
+     "II-DASH",
+     "II-DASH"
+    ],
+    [
+     "s11_1",
+     "EIGHT",
+     "VENUS",
+     "VENUS"
+    ],
+    [
+     "s12_4",
+     "EIGHT",
+     "VENUS",
+     "VENUS"
+    ]
+   ]
+  }
+ },
+ "H63:svm": {
+  "readers": {
+   "unsettled": 1,
+   "agreed_wrong": 7,
+   "err_pct": 8.3,
+   "residual": [
+    [
+     "s02_5",
+     "S-CURL",
+     "SCROLL-X",
+     "SCROLL-X"
+    ],
+    [
+     "s04_7",
+     "S-CURL",
+     "Y-CURL",
+     "Y-CURL"
+    ],
+    [
+     "s05_6",
+     "NOTE",
+     "MARS",
+     "MARS"
+    ],
+    [
+     "s06_8",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s08_3",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s10_3",
+     "X",
+     "X-SLASH",
+     "X-SLASH"
+    ],
+    [
+     "s11_8",
+     "II-DASH",
+     "II-DASH",
+     "DOTS-DASH"
+    ],
+    [
+     "s12_5",
+     "PHI",
+     "O-SLASH",
+     "O-SLASH"
+    ]
+   ]
+  },
+  "arbitrated": {
+   "unsettled": 1,
+   "agreed_wrong": 8,
+   "err_pct": 9.4,
+   "residual": [
+    [
+     "s02_5",
+     "S-CURL",
+     "SCROLL-X",
+     "SCROLL-X"
+    ],
+    [
+     "s04_7",
+     "S-CURL",
+     "Y-CURL",
+     "Y-CURL"
+    ],
+    [
+     "s05_6",
+     "NOTE",
+     "MARS",
+     "MARS"
+    ],
+    [
+     "s06_8",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s07_5",
+     "II-DASH",
+     "CC-DASH",
+     "CC-DASH"
+    ],
+    [
+     "s08_3",
+     "X",
+     "X-BAR",
+     "X-BAR"
+    ],
+    [
+     "s10_3",
+     "X",
+     "X-SLASH",
+     "X-SLASH"
+    ],
+    [
+     "s11_8",
+     "II-DASH",
+     "CC-DASH",
+     "DOTS-DASH"
+    ],
+    [
+     "s12_5",
+     "PHI",
+     "O-SLASH",
+     "O-SLASH"
+    ]
+   ]
+  }
+ },
+ "kill": true
+}

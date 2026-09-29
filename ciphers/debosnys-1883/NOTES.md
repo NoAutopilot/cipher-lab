@@ -1384,3 +1384,17 @@ tilde count is well below the nasal band; counting every unsure as a tilde it re
 marks every nasal vowel" is not supported on our segmentation; "a tilde marks some nasal vowels" (or another feature
 of roughly half that frequency) is not excluded. Sektu's 1.5 sits between our two counts. A re-cut of the 9 unsure
 crops with the box extended upward would narrow it (one reader call). Grade S, descriptive; nothing read; status `open`.
+
+### H65, a per-glyph classifier for the six pixel-limited groups (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU)
+
+Pre-registered in `h65/PREREG.md` (pushed fc0198f4 before any score); `scripts/h65_classifier.py` -> `h65/result.json`.
+kNN (k 3, distance-weighted) on the 48x48 sign bitmaps, trained per group on agree-AB / H-majority boxes with both
+known-answer pages' boxes excluded (96 training boxes in all; per class 3-20). **Control passed**: leave-one-out
+accuracy 0.75 against a pooled majority baseline of 0.635. **Arbitration on R2-2's page (gating): two-reader error
+15.6 pct before and 15.6 pct after** -- the classifier settles 10 of the 13 reader disagreements (unsettled 13 -> 3) but
+settles them wrongly as often as rightly (agreed-wrong 2 -> 12). **Kill met** (at or above 15.6 pct). Side arm, not
+gating: a linear SVM reaches 13.5 pct on R2-2's page. On H63's page both arms go from 8.3 to 9.4 pct. At these pixel
+sizes a bitmap classifier trained on a few dozen boxes does no better than two readers on the same pairs; together with
+H61/H63 this makes "the public pixels are the limit" the settled position for these six groups: the fix is better
+images (DEB-HIRES-REQ, the museum's 600 dpi request), not another reading or classifying pass on the same pixels.
+Nothing read; status `open`.
