@@ -3598,3 +3598,39 @@ no other start line was tried under this row. `key_period_f176v.tsv` holds the u
 Possible readings, untested: f.176r's text runs further into fol. 177v than the 0.8 rule puts it (stages 2c-2d used only N 2,476 letters,
 so fol. 177v was never tested against f.176r); f.176v is deciphered on fol. 178r or elsewhere; or it is not deciphered at all. Next: H177d,
 a pre-registered location scan with f.176r as positive control.
+
+## Campaign steps H177d and H177e (29 Sept 2026, 00:26-00:29 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v starts at fol. 177v V06 (script-only)
+
+**H177d, location scan** (`family/h177d_scan.py`, result `family/h177d_scan_result.txt`, `--check`). Disclosure: the script was meant to be
+pre-registered for after new reads of fol. 178r and fol. 177v strips 9-12. Its first run, meant to check the positive control, also scored
+f.176v on the clear already on disk (fol. 177r L01 to fol. 177v V27, 4,707 letters). So the gate below was not blind. PROMPTS section H177d
+says so. Windows of N letters every 100 letters, F61-CAL DP under v4's sets; null = 200 letter-shuffled random windows.
+- Positive control f.176r L01-L08: peak at letter 0 (0.569), best non-overlapping 0.419, null p99 0.414: PASS, at the right place.
+- f.176v L01-L08: peak at letter 3000 (0.545), best non-overlapping 0.354, null p99 0.370: PASS. Every window from 0 to 2700 reads
+  0.29-0.35 (noise). Descriptive fine scan at step 20: peak at 2960 (0.571), the head of fol. 177v V06 (letter 2,957, "ung chasteau par la
+  necessite ...").
+
+**H177e** (pre-registered before the run): `build_f176v_key.py L01-L08 --start V06`, H177c's fixed controls and gate. **0.567 vs (a) f.184r
+0.373, (b) fol. 177r 0.344; margin +0.194, PASS** (`family/build_f176v_key_result.txt`, `family/key_period_f176v.tsv`, `--check`). The start
+comes from the scan, so this confirms the location with fixed controls. It is not an independent test.
+
+| class | v4 set | f.176v L01-L08 (fol. 177v V06-) | f.176r whole leaf (H177b 2d) |
+|---|---|---|---|
+| VBAR_B | s | **s 35** of 43 | s 57 |
+| VBAR_A | s/t | **t 18**, g 2, s 2 of 25 | t 100, s 16, g 10 |
+| EBR | a/l/s | **l 15**, a 2 of 23 | l 95, a 16 |
+| INF | u | u 19 of 27 | u |
+| 4TRI (agreed) | a/c/n/p/t | **c 8, p 8**, a 4 of 23 | a/n/p/c mixed |
+| A C43 / B 4TRI (split) | | n 23, a 12 of 51 | C43 n 26, a 20 |
+| HASH4 | d/i/q | **i 25, d 10** of 43 | d 40, i 18, q 9 |
+| PHI | e/r | e 57, r 24, o 17 of 117 | e/r |
+
+VBAR_B s, VBAR_A t (partner g), EBR l and INF u repeat on a second stretch of Desportes's hand. HASH4 leans i here, where f.176r leant d.
+That fits H160/H162: the passes may lump bare hash (i) and 4-over-hash (d/q). Nothing is merged. key_period_f176v.tsv is a separate file.
+
+**For the verifier (VERIFY-F61-V5), a fact about key_period_f176.tsv, not an edit to it.** f.176v's text starts at fol. 177v V06, so f.176r's text
+runs through fol. 177r (2,589 letters) and fol. 177v V01-V05 (about 2,957 letters in all). f.176r's 3,095 signs are close to one letter per
+sign, not the 0.8 the builder assumed. build_f176_key.py L01-L47 trimmed the clear to N = 2,476, which stops about 480 letters short of the
+end of f.176r's text. The DP therefore compressed f.176r's last rows onto fol. 177r's last lines. The +0.193 margin held regardless, but the
+class counts from f.176r's last rows (about L38-L47) may be misplaced. Re-running with N = the clear through V05 is the verifier's call, or
+the next runner's after the audit. Next: H177f, f.176v L09-L45.
