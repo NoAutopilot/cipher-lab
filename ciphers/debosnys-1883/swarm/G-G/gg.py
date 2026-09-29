@@ -140,6 +140,43 @@ def make_control(lang, n, k, noise, zipf, rng):
         if rng.random() < noise: ct[i] = rng.randrange(sid)
     return pt, ct, sid
 
+def curve_control(lang, noise, rng):
+    # the real pooled sign-count curve (scorer tokens c1+c2, X kept: N 790, K 136) put on a LANG plaintext window:
+    # signs, largest count first, go to the letter with the largest remaining deficit; each occurrence then draws a
+    # homophone in proportion to its remaining quota, so every sign ends at its real count; then noise replaces a share
+    # of tokens by a sign drawn from the curve (the harness's -N15 style). Parts: first 132 = c1 shape, rest = c2 shape.
+    real = scorer_tokens('c1') + scorer_tokens('c2')
+    cnt = sorted(collections.Counter(real).values(), reverse=True); n = len(real)
+    s = fold(''.join(read(p) for p in LANGS[lang]['held']))
+    st = rng.randrange(len(s) - n - 1); pt = s[st:st+n]
+    need = collections.Counter(pt); owner = []; quota = collections.defaultdict(list)
+    for sid, c in enumerate(cnt):
+        l = max(need, key=lambda x: need[x]) if any(v > 0 for v in need.values()) else rng.choice(list(need))
+        owner.append(l); quota[l].append([sid, c]); need[l] -= c
+    ct = []
+    for ch in pt:
+        q = quota.get(ch)
+        if not q: ct.append(rng.randrange(len(cnt))); continue
+        w = [max(x[1], 0) + 1e-9 for x in q]; i = rng.choices(range(len(q)), w)[0]; q[i][1] -= 1; ct.append(q[i][0])
+    pool = [sid for sid, c in enumerate(cnt) for _ in range(c)]
+    for i in range(len(ct)):
+        if rng.random() < noise: ct[i] = rng.choice(pool)
+    return pt, ct
+
+def cmd_hcontrol(a):
+    res = []
+    for seed in range(a.seeds):
+        rng = random.Random(5000 + seed)
+        pt, ct = curve_control(a.lang, a.noise, rng)
+        fit, test = (ct[132:], ct[:132]) if a.dir == 'c2c1' else (ct[:132], ct[132:])
+        ptt = pt[:132] if a.dir == 'c2c1' else pt[132:]
+        used = sorted(set(fit)); ix = {s: i for i, s in enumerate(used)}
+        sc, key = anneal(a.model, [ix[t] for t in fit], len(used), a.restarts, a.iters, seed + 1, a.klw)
+        ok = sum(1 for t, p in zip(test, ptt) if t in ix and key[ix[t]] == p)
+        res.append(ok / len(test)); print('seed', seed, 'recovery_test %.3f' % res[-1], flush=True)
+    print(json.dumps(dict(cmd='hcontrol', lang=a.lang, model=a.model, noise=a.noise, dir=a.dir, restarts=a.restarts, iters=a.iters,
+                          perturb=os.environ.get('HSA_PERTURB'), recovery_test=[round(r, 3) for r in res], mean=round(sum(res) / len(res), 3))))
+
 def cmd_control(a):
     res = []
     for seed in range(a.seeds):
@@ -175,9 +212,11 @@ if __name__ == '__main__':
         p.add_argument('--n', type=int, required=True); p.add_argument('--k', type=int, required=True)
         p.add_argument('--noise', type=float, default=0.0); p.add_argument('--zipf', action='store_true')
         p.add_argument('--seeds', type=int, default=3)
+    h = sp.add_parser('hcontrol'); h.add_argument('lang'); h.add_argument('--model', required=True)
+    h.add_argument('--noise', type=float, default=0.15); h.add_argument('--seeds', type=int, default=4); h.add_argument('--dir', default='c2c1')
     s = sp.add_parser('solve'); s.add_argument('lang'); s.add_argument('text'); s.add_argument('--keep-x', action='store_true')
     s.add_argument('--out'); s.add_argument('--show', action='store_true'); s.add_argument('--seed', type=int, default=1)
-    for p in (c, s):
+    for p in (c, s, h):
         p.add_argument('--restarts', type=int, default=8); p.add_argument('--iters', type=int, default=300000)
         p.add_argument('--klw', type=float, default=1.0)
     a = ap.parse_args()
@@ -185,4 +224,5 @@ if __name__ == '__main__':
     elif a.cmd == 'real':
         t = real_tokens(a.text, a.keep_x); print(a.text, 'N', len(t), 'K', len(set(t)))
     elif a.cmd == 'control': cmd_control(a)
+    elif a.cmd == 'hcontrol': cmd_hcontrol(a)
     else: cmd_solve(a)
