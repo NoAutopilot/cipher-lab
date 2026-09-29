@@ -3,7 +3,8 @@
 keyed class with >= 30 signs in runs on f.124r and f.97r, v7's cell (size k) is compared by H342's gain (the same 10 within-run shuffles, seed 342) with
 size-matched alternatives only: every distinct v7 cell of size k held by another class, plus 30 random letter sets of size k drawn without replacement,
 weighted by fr16 letter frequency (seed 349 per class and leaf), v7's own set excluded. Pre-stated per class: 'supported' iff v7's gain beats >= 95% of
-its alternatives on BOTH leaves; 'mixed' iff on one; else 'not supported'. EBR_B and VBAR_A named in the output. No cell is changed.
+its alternatives on BOTH leaves; 'mixed' iff on one; else 'not supported'. EBR_B and VBAR_A named in the output. No cell is changed. Fix (16:23 UTC, before any output was seen): the draw loop is capped at the number of possible sets of size k
+(a one-letter cell has 25 alternatives; the first run looped forever on f.97r's VBAR_B).
 python3 h349_seqgain_sizematch.py [--check]"""
 import glob, gzip, os, random, sys, unicodedata
 from collections import Counter
@@ -36,7 +37,9 @@ for prefix in ("recf124r", "recf97r"):
     for c in [c for c in classes if n_in[c] >= 30]:
         own = frozenset(cell(c)); k = len(own); alts = {frozenset(cell(d)) for d in classes if d != c and len(cell(d)) == k} - {own}
         r2 = random.Random(f"349-{prefix}-{c}")
-        while len(alts) < 30 + len({frozenset(cell(d)) for d in classes if d != c and len(cell(d)) == k} - {own}) and len(alts) < 200:
+        from math import comb
+        cap = min(30 + len(alts), comb(len(letters), k) - 1)   # H349 fix before any output: a 1-letter cell has at most 25 alternatives
+        while len(alts) < cap:
             a = draw(r2, k)
             if a != own: alts.add(a)
         ga = [gain(lambda x, c=c, a=a: set(a) if x == c else cell(x)) for a in sorted(alts, key=sorted)]
