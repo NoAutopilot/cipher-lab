@@ -1,0 +1,359 @@
+{
+ "profile": {
+  "lines": [
+   "c4a0_L01",
+   "c4a_L01",
+   "c4a_L02",
+   "c4a_L03",
+   "c4a_L04",
+   "c4a_L05",
+   "c4a_L06",
+   "c4a_L07",
+   "c4a_L08",
+   "c4a_L09",
+   "c4a_L10",
+   "c4a_L11",
+   "c4a_L12",
+   "c4a_L13",
+   "c4a_L14",
+   "c4b_L01",
+   "c4b_L02",
+   "c4b_L03",
+   "c4b_L04",
+   "c4b_L05"
+  ],
+  "lens": [
+   13,
+   13,
+   12,
+   10,
+   15,
+   16,
+   14,
+   12,
+   16,
+   13,
+   10,
+   7,
+   17,
+   17,
+   10,
+   11,
+   15,
+   13,
+   15,
+   14
+  ],
+  "finals": [
+   "WAVE",
+   "WAVE",
+   "X",
+   "X",
+   "SLASH",
+   "CIRC-O",
+   "QUESTION",
+   "O-DASH2",
+   "QUESTION",
+   "VENUS",
+   "DELTA",
+   "DELTA",
+   "OX",
+   "DAGGER-O",
+   "NOTE",
+   "PICT-ARROW",
+   "WAVE",
+   "WAVE",
+   "S-CURL",
+   "S-CURL"
+  ]
+ },
+ "inventory": [
+  [
+   "pool",
+   "pg16601.txt",
+   1933,
+   "en"
+  ],
+  [
+   "pool",
+   "pg29843.txt",
+   4858,
+   "fr"
+  ],
+  [
+   "pool",
+   "pg29844.txt",
+   6276,
+   "fr"
+  ],
+  [
+   "pool",
+   "pg38230.txt",
+   1094,
+   "en"
+  ],
+  [
+   "pool",
+   "pg72885.txt",
+   6208,
+   "fr"
+  ],
+  [
+   "pool",
+   "pg76396.txt",
+   7340,
+   "fr"
+  ],
+  [
+   "pool",
+   "pg76794.txt",
+   2635,
+   "en"
+  ],
+  [
+   "pool",
+   "pg8187.txt",
+   31471,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg10031.txt",
+   3330,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg10442.txt",
+   5165,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg13310.txt",
+   26247,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg1365.txt",
+   41744,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg14258.txt",
+   1102,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg14805.txt",
+   2609,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg15112.txt",
+   6102,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg17916.txt",
+   1654,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg19188.txt",
+   10367,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg26710.txt",
+   730,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg37733.txt",
+   2500,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg44180.txt",
+   7715,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg45886.txt",
+   5850,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg4800.txt",
+   35117,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg56708.txt",
+   2333,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg59788.txt",
+   5859,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg61039.txt",
+   3761,
+   "fr"
+  ],
+  [
+   "decoy",
+   "pg66785.txt",
+   44551,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg8601.txt",
+   6521,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg8861.txt",
+   3652,
+   "en"
+  ],
+  [
+   "decoy",
+   "pg9600.txt",
+   37397,
+   "en"
+  ]
+ ],
+ "n_decoy_windows": 253907,
+ "n_pool_windows": 61663,
+ "decoy_p99_S": 0.718,
+ "decoy_p99_R": 0.557,
+ "best_S": {
+  "S": 1.359,
+  "R": 0.751,
+  "P": 0.608,
+  "text": "pg8187.txt",
+  "start": 1647,
+  "first_line": "Oh, when I drink, true joy is mine,",
+  "last_line": "I've time for naught but pleasure now."
+ },
+ "best_R": {
+  "R": 0.815,
+  "S": 1.2,
+  "text": "pg72885.txt",
+  "start": 1917
+ },
+ "maxcorr_p_S": 0.0,
+ "maxcorr_p_R": 0.559,
+ "top10": [
+  {
+   "S": 1.359,
+   "R": 0.751,
+   "P": 0.608,
+   "text": "pg8187.txt",
+   "start": 1647,
+   "first_line": "Oh, when I drink, true joy is mine,",
+   "last_line": "I've time for naught but pleasure now."
+  },
+  {
+   "S": 1.356,
+   "R": 0.607,
+   "P": 0.749,
+   "text": "pg76396.txt",
+   "start": 1011,
+   "first_line": "--Sire Roland, ma pente naturelle",
+   "last_line": "Hantés par des vivants aimant peu les regards,"
+  },
+  {
+   "S": 1.293,
+   "R": 0.796,
+   "P": 0.497,
+   "text": "pg29844.txt",
+   "start": 5413,
+   "first_line": "Si, dans ses actions du sépulcre voisines,",
+   "last_line": "Le ciel d'en haut, le seul qui soit splendide et clair,"
+  },
+  {
+   "S": 1.255,
+   "R": 0.718,
+   "P": 0.537,
+   "text": "pg76396.txt",
+   "start": 4236,
+   "first_line": "Cinquante ans, ce soldat, dont la tête enfin plie,",
+   "last_line": "Qui fut astre, s'éteint dans un morne brouillard."
+  },
+  {
+   "S": 1.239,
+   "R": 0.608,
+   "P": 0.631,
+   "text": "pg76396.txt",
+   "start": 3810,
+   "first_line": "Spinola, qui prit Suze et qui la ruina,",
+   "last_line": "Puis les quatre marquis souverains d'Italie;"
+  },
+  {
+   "S": 1.226,
+   "R": 0.647,
+   "P": 0.58,
+   "text": "pg76396.txt",
+   "start": 5867,
+   "first_line": "Un tas de scélérats et de coupe-jarrets!",
+   "last_line": "Vous faites du passé votre piédestal sombre;"
+  },
+  {
+   "S": 1.218,
+   "R": 0.368,
+   "P": 0.85,
+   "text": "pg16601.txt",
+   "start": 358,
+   "first_line": "Of life. He gazed, and gazed, and it became",
+   "last_line": "Under thy wings! afar, afar, afar,"
+  },
+  {
+   "S": 1.212,
+   "R": 0.71,
+   "P": 0.502,
+   "text": "pg29844.txt",
+   "start": 2002,
+   "first_line": "Ses dents cherchaient mes doigts qu'effrayait leur approche;",
+   "last_line": "Car Dieu fait un poëme avec des variantes;"
+  },
+  {
+   "S": 1.21,
+   "R": 0.755,
+   "P": 0.454,
+   "text": "pg29844.txt",
+   "start": 2481,
+   "first_line": "Sous l'être illimité sans figure et sans nombre,",
+   "last_line": "Pour traverser ce gouffre où nul bord n'apparaît,"
+  },
+  {
+   "S": 1.206,
+   "R": 0.669,
+   "P": 0.537,
+   "text": "pg76396.txt",
+   "start": 1342,
+   "first_line": "Plus vermeil qu'un nuage où le soleil se couche;",
+   "last_line": "Là-bas dans la clarté sinistre du couchant."
+  }
+ ]
+}
