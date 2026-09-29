@@ -636,3 +636,14 @@ Sheet not seen. Prompt: H233's verbatim with 'h254/sheet_01.jpg', '19 numbered t
 
 Sheet <scratch>/h255/sheet_01.jpg (family/h255_4pi_108r_l46.py tiles; key family/h255_items.tsv; 18 tiles U01-U18). Sheet not seen. Prompt: H233's verbatim with
 'h255/sheet_01.jpg', '18 numbered tiles (U01-U18)', answer form 'U01<TAB>A', U01 to U18.
+
+## H253 (29 Sept, Opus vision x2, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61 positional read, WRITTEN BEFORE THE CALLS
+
+Sheets <scratch>/h253/L01,L03,L05 (call 1) and L07,L08,L11 (call 2), made by scripts/f61positions_sheets.py (ruler: red tick every 100 sheet px, label = hundreds).
+The runner did not look at them. Prompt (verbatim, per call with its three files): "Read the three images named with your image reader only; use no other tool.
+Each shows one line of a 16th-century French letter that mixes ordinary handwriting with cipher signs, cut into 2-3 stacked segments (labelled 'segment 1'..);
+consecutive segments overlap a little at their ends, so a sign at the right edge of one segment may reappear at the left of the next -- list it once, in the
+segment where it is complete. Under each segment is a red ruler: tick labels are hundreds of pixels (label 7 = x 700). For each image, go segment by segment,
+left to right, and list every item: a cipher sign or a clear handwritten word. Answer inline only, one line per item, tab-separated:
+'<image name><TAB><segment><TAB><x><TAB>sign|word<TAB><few-word shape description, or the word as you read it>' with x the item's centre on the ruler to the
+nearest 10, and nothing else."
