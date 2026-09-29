@@ -54,3 +54,17 @@ for tid in ('real-T', 'real-N'):
 bg = [json.load(open(f)) for f in sorted(glob.glob('bgap_*.json'))]
 if bg: out['bgap'] = bg
 json.dump(out, open('result.json', 'w'), indent=1); print(json.dumps(out, indent=1))
+
+# diagnostic D2 (PREREG addendum) and its unsplit baseline
+def d2(t): return [r['score'] for r in json.load(open(f'd2_{t}.json'))['rows']]
+if os.path.exists('d2_null-T.json'):
+    nT, nN = d2('null-T'), d2('null-N'); pT, pN = pct(nT, 0.95), pct(nN, 0.95)
+    D = dict(null_T_p95=pT, null_T_max=max(nT), null_N_p95=pN, null_N_max=max(nN),
+             planted_above=sum(x > pT for x in d2('planted')), planted_median=med(d2('planted')),
+             folger_above=sum(x > pT for x in d2('folger')), folger_median=med(d2('folger')),
+             real_T=d2('real-T'), real_T_median=med(d2('real-T')), real_T_null_as_high=sum(x >= med(d2('real-T')) for x in nT),
+             real_N=d2('real-N'), real_N_median=med(d2('real-N')), real_N_null_as_high=sum(x >= med(d2('real-N')) for x in nN))
+    if os.path.exists('d2_baseline.json'):
+        b = json.load(open('d2_baseline.json')); D['unsplit_real'] = [x['score'] for x in b['unsplit']]
+    D['control_passes'] = D['planted_above'] >= 32 and D['folger_above'] >= 32
+    out['d2'] = D; json.dump(out, open('result.json', 'w'), indent=1); print(json.dumps(D, indent=1))
