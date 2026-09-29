@@ -106,3 +106,8 @@ f.176v L01-L08 peaks at letter 3000 (0.545; best non-overlapping 0.354; null p99
 >= +0.10. The start comes from H177d's scan, so this confirms the location with the fixed controls. It is not an independent test. PASS: stages
 continue from V06 with f.176v L09-... (the clear on disk runs to V27; fol. 177v strips 9-12 and fol. 178r are read when the rows need them).
 FAIL: the location stays at H177d's descriptive level.
+
+## H177f stage 1 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+4 Opus vision calls: blind sign passes A/B of f.176v L09-L16 and of L17-L24 (H177c prompt, rows changed, inline replies written verbatim)
+-> `passes/f176v_signs{A|B}_L09-L16.tsv`, `..._L17-L24.tsv`. Then `build_f176v_key.py L01-L24 --start V06` (the clear on disk runs to V27,
+about 1,750 letters from V06; N = 0.8 x signs will be about 1,250). Gate as H177c (margin >= +0.10 over both fixed controls).
