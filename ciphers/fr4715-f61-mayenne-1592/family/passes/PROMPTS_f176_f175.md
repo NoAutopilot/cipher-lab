@@ -411,3 +411,8 @@ triangle). <items_01.jpg> and <items_02.jpg> show items I01-I37, each with a red
 For each item answer the reference (R1 to R10) whose sign it is the same sign as; answer none if it matches no reference, P if the marked mark is
 punctuation or ordinary handwriting, n if it cannot be told. Small differences of size and slant within one hand do not make a different sign; an
 extra stroke or loop does. Reply ONLY with a TSV block id<TAB>answer, rows I01..I37."
+
+## H420 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H418 prompt verbatim with nine references (R1-R9, SCRATCH/h420/references.jpg) and items I01-I35 (h420/items_01..02.jpg); script
+`h420_108r_qa2.py`, key `h420_items.tsv`. Changes from H418 in the docstring (no 4STEM class; edge tiles skipped; seed 420). Known items are H418's
+non-edge ones (the row said re-drawn; with the edge filter the first two per class are kept -- disclosed). No new look at the sheets.
