@@ -31,13 +31,28 @@ def seq_of(lines, part):
 def fit(seq, breaks, a, seed=1):
     """order-2 anneal; with --refine, the best order-2 key seeds a cooler order-3 anneal (one run, same seed)."""
     tok, lm = syll.build_lm(a.S, a.W, order=a.order, func=a.func, verse=a.verse)
-    sc, key = syll.Solver(lm).run(seq, a.iters, a.restarts, seed, breaks=breaks, injective=a.injective,
-                                  T0=a.T0, T1=a.T1)
+    if a.init:  # a previous blind fit of this same script (its key file), e.g. to polish it
+        key = dict(r.rstrip('\n').split('\t') for r in open(a.init) if not r.startswith('sign\t'))
+        sc = syll.Solver(lm).score([key[s] for s in seq], breaks)
+    else:
+        sc, key = syll.Solver(lm).run(seq, a.iters, a.restarts, seed, breaks=breaks, injective=a.injective,
+                                      T0=a.T0, T1=a.T1)
     if a.refine:
         tok3, lm3 = syll.build_lm(a.S, a.W, order=3, func=a.func, verse=a.verse)
         sc, key = syll.Solver(lm3).run(seq, a.refine, 1, seed, breaks=breaks, injective=a.injective,
                                        T0=a.rT0, T1=a.T1, init=key)
         lm = lm3
+    if a.polish:
+        import polish
+        lines, cur = [], []
+        for i, s in enumerate(seq):
+            if i in breaks and cur:
+                lines.append(cur); cur = []
+            cur.append(s)
+        lines.append(cur)
+        if a.canneal:
+            sc, key = polish.anneal_combined(lines, key, lm, a.lam, a.canneal, a.cT0, 0.05, bool(a.injective), seed)
+        sc, key = polish.polish(lines, key, lm, a.lam, a.polish, bool(a.injective), seed)
     return sc, key, lm
 
 
@@ -58,6 +73,11 @@ def main():
     ap.add_argument('--tag', default='a')
     ap.add_argument('--refine', type=int, default=0, help='iterations of an order-3 anneal seeded by the order-2 key')
     ap.add_argument('--rT0', type=float, default=0.5)
+    ap.add_argument('--polish', type=int, default=0, help='sweeps of the char-5gram polish (polish.py)')
+    ap.add_argument('--lam', type=float, default=1.0)
+    ap.add_argument('--canneal', type=int, default=0, help='iterations of the combined-objective anneal before the polish')
+    ap.add_argument('--cT0', type=float, default=1.0)
+    ap.add_argument('--init', default=None, help='start from this key file (sign, value) instead of annealing')
     ap.add_argument('--func', default='harness', help='harness (FR-SYLL unit rules) or 1 (top-W words, own syllabifier)')
     a = ap.parse_args()
     a.func = a.func if a.func == 'harness' else a.func == '1'
@@ -72,7 +92,7 @@ def main():
     res = subprocess.run([sys.executable, os.path.join(SW, 'score.py'), out, '--control', a.control, '--shuffles', '10'],
                          capture_output=True, text=True)
     print(json.dumps(dict(control=a.control, fit=a.fit, S=a.S, W=a.W, order=a.order, iters=a.iters,
-                          restarts=a.restarts, refine=a.refine, injective=a.injective, verse=a.verse, vocab=len(lm.vocab),
+                          restarts=a.restarts, refine=a.refine, polish=a.polish, lam=a.lam, canneal=a.canneal, init=a.init, injective=a.injective, verse=a.verse, vocab=len(lm.vocab),
                           N=len(seq), K=len(set(seq)), score=round(sc, 1), key=os.path.basename(out))))
     print(res.stdout[-3000:], res.stderr[-1500:])
 
