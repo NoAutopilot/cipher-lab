@@ -1,0 +1,11 @@
+v5 classes (build_key_v5.load_key_v5): 23; v6 pooled classes: 23; HASHLOOP loaded: False (must be False: unread)
+changed in v6 pooled (EBR form B): H24 i/j/y -> i/x; HASH4 d/i/q -> d/q
+unchanged from v5 (checked, pooled): ZHOOK=i/x 4PI=a/d/n/q 4STEM=a/c/e/n 4TRI=c/p/t C43=a/n; EBR form A = a/l/s
+f.61 reading key over the pooled key: 4STEM a/c/e/n -> a/n; 4TRI c/p/t -> c/p
+f.61 meter under v6 (f.61 reading key): 99 signs: firm 12 / two-way 58 / wider 4 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 OTHER=e/q/i/p/r/s/t:2
+  tokens changed from the v4 decode: 4STEM n/a/c/e -> a/n x1; 4TRI c/p/t -> c/p x6; EBR l/s/a -> l/y x4; HASH4 d/q/i -> d/q x1; SBS o/b/e -> b/o x7; VBAR_A t/s -> g/t x6; ZHOOK - -> i/x x3
+f.61 five spans, f.61 reading key (j=i, v=u, y=i folded): v6 53/55 = 0.964; 2000 permuted mean 0.286 p95 0.418 max 0.673; >= key 0/2000
+f.61 five spans, pooled key (info) (j=i, v=u, y=i folded): v6 53/55 = 0.964; 2000 permuted mean 0.303 p95 0.455 max 0.727; >= key 0/2000
+f.108r overlay, pooled key (EBR form A) (j=i, v=u, y=i folded): v6 74/84 = 0.881; 2000 permuted mean 0.305 p95 0.417 max 0.726; >= key 0/2000
+REPRODUCED: yes

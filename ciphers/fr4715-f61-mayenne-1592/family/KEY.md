@@ -407,3 +407,34 @@ form-A set (mean 0.312, p95 0.429, 0/2000); f.61 meter firm 12 / two-way 50 / wi
 tokens changed VBAR_A x6, EBR x4, SBS x7, ZHOOK x3. The firm count does not move: each new value is a two-letter period cell, so a
 two-way token under v5 is a cell of the design, not an undecided merge. The known spans are Tomokiyo's published letters (text:
 known); this is a test of the key, not a reading of anything outside his spans.
+
+## key v6 (F61-FAMILY-10, 29 Sept 2026, 07:1x UTC): the hash family by shape (VERIFY-F61-V7) and the bowl rule on f.61 only (VERIFY-F61-V6)
+
+`build_key_v6.py` (with `--check`) writes `key_period_v6.tsv` from `key_period_v5.tsv` (not edited): every v5 line verbatim, except
+the two f.188r HASH4 i/x rows, kept as `#moved-to-H24-v5` comment lines. Read v6 with `build_key_v6.load_key_v6()`: CELL rows give a
+class's letter set outright (as in v5); `F61READ` rows are skipped by the pooled key and apply only with `f61=True`, the f.61 reading.
+Key source: `period` for every changed row (the hash cells from the decipherments of fr.3982 f.101r, fr.3984 f.188r and f.274r; the
+F61READ rows from fr.3984 f.176r / fol. 177r), carried to other hands by a blind shape attribute, and cross-checked against
+Tomokiyo's published letters (`published`, credited).
+
+| row | v5 | v6 | counts written | provenance |
+|---|---|---|---|---|
+| HASH4 (the 4-head hash), pooled | d/i/q | **CELL d/q** | d 43 / 12 / 5, q 24 / 3 / 5 (f.101r / f.188r / f.274r) | VERIFY-F61-V7, endorse: on the three period-lettered leaves the 4-head reads d/q 37 of 45 tiles (setD), within-leaf permutation p 5e-05; each leaf clears on its own. Grade C on those leaves. f.101r's HASH4 i 4 stays as a stray row (not in the cell) |
+| f.188r HASH4 i 10, x 3 | in HASH4 | **moved to H24** | H24 i +10, x +3 on f.188r (rows marked `MOVED from HASH4 by shape`) | V7: of the f.188r HASH4-coded i/x rows, 10 of 12 tiles are the 2# sign (H224 had 8 of 11) |
+| H24 (the 2# sign), pooled | i/j/y | **CELL i/x** | i 170 / 43 / 6, x 5 / 4 / 1 (f.188r includes the moved rows) | V7: the 2# reads i/x 38 of 42 tiles (setD); the class reappeared, unprompted, from the reader never offered it (setN). j/y are period spellings of i (folded). H24's own d/q stray rows are left in place: V7 places 4 of the 7 H24-coded d/q tiles on the 4-head, which is not a per-row assignment |
+| HASHLOOP (the looped hash) | pooled into HASH4 by pass code | **separate row, UNREAD** | none (letter `-`, n 0; never loads) | V7 caveat 3: f.106r's HASH4 is looped 5/5 (setD), as is most of f.108r's; no period value; never pooled into HASH4's counts |
+| 4TRI on f.61 (F61READ) | c/p/t | **c/p** (f.61 reading only) | 5 f.61 tokens that Tomokiyo reads c or p | VERIFY-F61-V6, endorse in part: bowl yes c/p 18/3, no 10/39 on f.176r (p 4e-7); on f.61 the bowl sign is 4TRI at all 5 positions, Tomokiyo c/p 5/5. Grade **S** on f.61. The pooled 4TRI row is unchanged (c/p/t) |
+| 4STEM on f.61 (F61READ) | a/c/e/n | **a/n** (f.61 reading only, L11) | f.61's single 4STEM token | V6: no bowl at L11; Tomokiyo a/n 9/9 at no-bowl positions. Grade **S**. **No pooled 4STEM a/n cell**: f.108v's 4STEM is the c/p sign by sequence, a code conflict between leaves (rule 4) |
+| HASH4 on f.61 (L01) | d/q/i | **d/q** (through the pooled cell) | the one token | V7: the 4-head in both blind readers (setN "less sure"), as in H233. Grade **S** on f.61 (period value from three leaves, linked by blind shape) |
+
+Not merged, awaiting VERIFY-F61-V8: ZHOOK = 2# (H235; ZHOOK stays the v5 CELL i/x, grade S) and the 4PI split (H233-H240; 4PI stays
+a/d/n/q). The script checks that ZHOOK, 4PI, 4STEM, 4TRI and C43 load in the pooled key exactly as in v5, and that H24 and HASH4 are the
+only pooled classes that change.
+
+**Reproduction from the v6 file** (`build_key_v6_result.txt`): **yes**, every figure. f.61 five known spans **53/55** under the f.61
+reading key (2000 permuted keys, seed 20260929: mean 0.286, p95 0.418, 0/2000 at or above; the pooled key also gives 53/55); f.108r
+overlay **74/84** under the pooled key, EBR at its form-A set (mean 0.305, p95 0.417, 0/2000); f.61 meter **firm 12 / two-way 58 /
+wider 4 / unread-or-null 25** of 99 (C6 unread/null), which is VERIFY-F61-V7's "v5 + V6 + V7". Still wider than two: 4PI x2, OTHER x2.
+Tokens changed against v5 on f.61: 4TRI c/p/t -> c/p x6, 4STEM -> a/n x1, HASH4 d/q/i -> d/q x1. The firm count does not move: each
+new value is a two-letter cell. The known spans are Tomokiyo's published letters (text: known); this is a test of the key, not a
+reading of anything outside his spans.
