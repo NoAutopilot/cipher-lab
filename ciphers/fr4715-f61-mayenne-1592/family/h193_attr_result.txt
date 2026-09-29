@@ -1,0 +1,2 @@
+anchors: 19 of 20 answer in their group's direction (gate >= 17): PASS
+f.176r targets: answer yes (CP-like) c/p 5 a/n 0; answer no c/p 4 a/n 23; Fisher p 0.00063

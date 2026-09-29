@@ -3817,3 +3817,17 @@ The C43 result is built in (v4n176's C43 set is a/n). The 4TRI result is informa
 c or p (exact test 6/0 vs 0/9: p about 0.0002, small N). So on f.61, as on f.176v (H190), the readers' 4TRI and C43 look like the c/p sign and
 the a/n sign; on f.176r the readers' codes did not separate them. Descriptive, for the verifier: whether f.61's 4TRI can be narrowed to c/p
 (v4: a/c/n/p/t) is theirs. His letters come from his own table. Nothing merged.
+
+## Campaign step H193 (29 Sept 2026, 01:20-01:23 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- the 4-family's c/p sign has a bowl at the stem foot: PASS on a second leaf
+
+Pre-registered (PROMPTS section H193; `family/h193_attr.py`, key `family/h193_items.tsv`, attribute and its direction `family/h193_yes_group.txt` = CP,
+pushed before the call). The runner looked only at the 20 labelled f.176v anchors: the c/p sign is a 4 whose stem runs below the line and ends in a closed
+b-like bowl; the a/n sign is a 4 with a small r-like tail on the line. One Opus vision call, blind to group and leaf (inline reply written verbatim,
+`family/passes/h193_attribute.tsv`, 2 n). Result `family/h193_attr_result.txt` (`--check` OK):
+- **CONTROL: 19 of 20 f.176v anchors answer in their group's direction (gate >= 17): PASS.**
+- **f.176r, 40 signs both passes coded 4TRI, letters from fol. 177r (h183 alignment): "bowl" 5 -> c/p 5, a/n 0; "no bowl" 27 -> c/p 4, a/n 23 (8 others:
+  t, e, i ... or n); Fisher p 0.00063.**
+So the shape difference is real and carries the period letters on a leaf the attribute was not built from. On f.176r the readers put both signs under
+4TRI; the bowl separates them. This explains H190's code swap. Descriptive: the c/p (bowl) sign and the a/n (r-tail) sign are the table's two
+4-signs in Desportes's hand. Whether f.61's 4-family signs split the same way is H194 (f.61's hand; H178b's cross-hand tile link FAILED for ZHOOK,
+so f.61 needs its own anchors from Tomokiyo's c/p and a/n positions, H191). Nothing merged.
