@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """H350 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026), script-only, written before running: power of H342's order statistic at f.106r's
-N (51 runs, rows 1-18). From each in-sample leaf (f.101r, f.188r): 30 random 35-run subsets (seed 346); per subset, H342's gain for v7 (10 within-run shuffles)
+N (51 runs, rows 1-18). From each in-sample leaf (f.101r, f.188r): 30 random 51-run subsets (seed 350); per subset, H342's gain for v7 (10 within-run shuffles)
 against 50 binned-permuted keys' gains (H335's bin rule) on the same subset; power = share of subsets with gain(v7) > the binned gains' p95.
 Pre-stated: power >= 0.8 on both leaves -> f.106r's H348 result (rows 1-18, 31/100, no order signal) is a negative for v7 in the secretary's hand at this N;
 else it is untestable at this N (not a negative).   python3 h346_seqgain_power.py [--check]"""
