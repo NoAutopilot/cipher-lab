@@ -4251,3 +4251,15 @@ o, l, s; 4-head A: i, n. Pre-stated read-out: "no lean shown". But the H24 row i
 decipherment reads H24 i 170 times, and here the alignment gives it no i at all, so the held alignment does not place letters reliably at these
 positions. **Logged as a non-test, not a negative**: the looped form's letters on f.106r need a better gloss read (the leaf's gloss is sparse and
 interlined with heavy bleed-through, KEY.md). Nothing merged.
+
+## Campaign step H229 (29 Sept 2026, 05:06-05:15 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r bowl at H199's geometry: CONTROL FAIL again, and a question for H199
+
+Pre-registered (PROMPTS section H229; `family/h229_bowl_106r.py`, key `family/h229_items.tsv`, commit 3d59631d; the runner did not look at the sheets). The same 33
+f.106r 4-family targets and 10 f.108v anchors as H221, every strip cut exactly as h199_bowl_108v.py cuts (250 native px, box top+20 to bottom+30, x1.44, one
+triangle above). One Opus vision call (`family/passes/h229_reply.tsv`). Result `family/h229_bowl_106r_result.txt` (`--check` OK):
+**anchors 5/10 -> CONTROL FAIL; H199's five bowl-yes anchors all answered no, its five no-anchors all no.** Targets not scored.
+With H221 (4 of 5 yes-anchors answered no at another geometry), 9 of 10 f.108v signs H199 read as "bowl" are read "no bowl" by two fresh blind calls.
+The difference from H199's own call: H199 put H193's 60 f.176v strips (Desportes's hand, where the bowl is large) in the same call. So H199's yes answers
+may depend on that context, and **H199 -- which H201 (sequence gain), H208 (judge) and H219 (test key) build on -- has not been reproduced.** This is not
+a refutation of the bowl rule (f.176r/v, f.61 and f.101r answers came from their own calls), but the f.108v leg needs a reproduction before a verifier
+relies on it. H230 (rank 1) reruns H199's exact prompt, sheets and control in one fresh call. Nothing merged.

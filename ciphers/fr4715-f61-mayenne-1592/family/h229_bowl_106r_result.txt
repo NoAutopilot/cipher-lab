@@ -1,0 +1,2 @@
+anchors: 5 of 10 as H199's answer (gate >= 8): CONTROL FAIL
+anchor answers: yes-anchors no no no no no | no-anchors no no no no no
