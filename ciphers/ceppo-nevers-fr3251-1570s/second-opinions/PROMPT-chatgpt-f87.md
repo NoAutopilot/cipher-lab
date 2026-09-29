@@ -11,7 +11,9 @@ THE ITEM
 - Key: the "Ceppo-Nevers cipher", reconstructed by Satoshi Tomokiyo from BnF fr.4702 fol.37
   (https://cryptiana.web.fc2.com/code/nevers.htm, section BnF fr.3251).
 - Two short fragments the printed key gives on a value-blind transcription (key beats 200 of 200 shuffled keys,
-  z 5.1-5.3): "un giorno auanti" and "ne ando secre-amente". Nothing else is claimed.
+  z 5.1-5.3): "un giorno auanti" and "ne ando secre-amente". Nothing else is claimed; the r in each rests on a sign
+  whose value comes from a period decipherment of a sister letter (second audit, 29 Sept 2026).
+- The same volume has another Birago letter to Nevers of the same day, 9 May 1571 (f.89, no.46, no cipher).
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/ceppo-nevers-fr3251-1570s/AUDIT.md
 
 QUESTIONS

@@ -11,8 +11,12 @@ THE ITEM
 - Key: the "Ceppo-Nevers cipher", reconstructed by Satoshi Tomokiyo from BnF fr.4702 fol.37
   (https://cryptiana.web.fc2.com/code/nevers.htm, section BnF fr.3251).
 - Passages the printed key gives on a value-blind transcription (key beats 200 of 200 shuffled keys, z 5.7-6.6):
-  "questa carica ... di qua", "credo le ne", "ceder uiuendo et seruend[o]", "tanto di ... in diuerse", "fatto",
-  "fa dificu-". Everything else is fragments; no continuous text is claimed.
+  "questa carica ... di qua", "credo le ne", "ceder uiuendo et seruend[o]", "tanto di", "fatto", "fa dificu-"
+  (second audit, 29 Sept 2026: "in diuerse" dropped, two of its letters uncertain). Everything else is fragments; no
+  continuous text is claimed.
+- Known print: A. Pascal, Il Marchesato di Saluzzo e la Riforma protestante (Florence 1960), footnote 6, cites
+  "fol. 21 (lett. di Lud. Birago al duca di Nevers, 12 ott. 1570)" and quotes the letter's clear text on f.21r
+  ("havendoli per aderenti ed intrinsechi amici"). Does Pascal, or anyone, say anything about the cipher lines on f.21v?
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/ceppo-nevers-fr3251-1570s/AUDIT.md
 
 QUESTIONS

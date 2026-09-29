@@ -710,6 +710,8 @@ Files: `harvest/f35/` (passA, passB, passC + agreement/disagreements, adjudicate
 
 ## HARVEST-D2: f.21v (no.11, Saluzzo 12 Oct 1570) decoded with the printed key (PARENT WORKER HARVEST-D2, 28 Sept 2026)
 
+> VERIFY-CEPPO-D2-2 (29 Sept 2026, second audit): held, N3. "in diuerse" dropped (its r is the double-barred oval, its s D's alone); the letter itself is cited and its clear text (f.21r) quoted in Pascal, *Il Marchesato di Saluzzo e la Riforma protestante* (1960), fn. 6 -- say "no prior reading of its cipher passages", not "of this letter". See AUDIT.md.
+
 Same brief, same intake as the f.35 section above (HARVEST-C's search log, 28 Sept 2026; not found-solved). No class, no
 status change here; rule 10 wording only.
 
@@ -807,6 +809,8 @@ blind/), `harvest/ciphertext_f21v.tsv`, `exceptions_f21v.tsv`, `reading_f21v.txt
 (four blind passes, two adjudications, one blind reader), all Sonnet.
 
 ## HARVEST-D2: f.87 (no.45, Saluzzo 9 May 1571) -- key clears its controls, the merged reading is the weakest of the three (PARENT WORKER HARVEST-D2, 28 Sept 2026)
+
+> VERIFY-CEPPO-D2-2 (29 Sept 2026, second audit): held in part, N3. The r of "giorno" and of "secre" are both the double-barred oval (M, period-gloss backed); "auanti" is D's. Crib lead: f.89 (no.46), Birago to Nevers the same day, no cipher. See AUDIT.md.
 
 Same brief, same intake as the f.35 section above (HARVEST-C's search log, 28 Sept 2026; not found-solved). No class, no
 status change here; rule 10 wording only.
