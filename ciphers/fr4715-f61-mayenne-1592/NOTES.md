@@ -4710,8 +4710,8 @@ Pre-registered (PROMPTS section H286; `scripts/f61positions_L04_score.py`, commi
 own H283 read disclosed there). One blind Opus call (`scripts/h286_reply.tsv`, verbatim): "generosite pour beaucoup desirer [sign] . Mais on avoit Come
 [sign] Je croys aussi que les" -- **the line's last item is the word "les"**, so the pre-stated read-out is **"H283's lead stands"**: f.61 reads "... Je
 croys aussi que les [LOOPSTEM1] [CH] trop avancees ...", and the two keyed signs Tomokiyo leaves as dashes cannot be the letters of their pooled cells at
-that place (H283). The two L04 signs join read_call_U's LOOPBAR and OTHER in order (`scripts/f61_positions_L04.tsv`; the reader's x is at the half-size
-sheet's scale, as in H264, kept as given since only the order is used). Also from this pass: the OTHER after "Come" precedes "Je". Result
+that place (H283). The two sign items (a Venus-like loop-on-stem = LOOPBAR; a W-like double loop = the OTHER) are not joined by the script: read_call_U.tsv lists one L04
+sign, the OTHER being pass U2's alone (`scripts/f61positions_L04_result.txt` says so; f61_positions_L04.tsv is empty). Also from this pass: the OTHER after "Come" precedes "Je". Result
 `scripts/f61positions_L04_result.txt` (`--check` OK). For the verifier: a word-code lead on two f.61 tokens (LOOPSTEM1 L05 1, CH L05 2), rule 10 wording,
 no value, nothing merged. Vision calls this session: 4 (one per vision step).
 
@@ -4725,3 +4725,12 @@ the corpus and the shapes agree: if the two signs are word codes, they are codes
 LOOPSTEM1 q 7 / s 3 from f.101r only; CH e 3 (f.101r) and m 3 (f.188r) with u/n strays -- the e/m cell is itself two leaves' different letters merged,
 a cross-leaf conflict of the rule-4 kind, which H281's dash on f.61 makes three-way. For the verifier and the build worker (a note in
 family/PROPOSAL_v7_notes.md is not added by the runner; the verifier decides). No call.
+
+## Campaign step H288 (29 Sept 2026, 10:43 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- LOOPSTEM1 and CH in the family glosses (script-only)
+
+`family/h288_wordcode_family.py` -> `family/h288_wordcode_family_result.txt` (`--check` OK): per alignment file, the plain-chunk length distribution
+(0 / 1 / 2+) for LOOPSTEM1 and CH beside the all-class baseline. read-out: LOOPSTEM1/CH take single letters or nothing everywhere in the family The baseline is the point: whether the aligner ever gives any class a
+multi-letter chunk decides whether "do these two take a word" can be asked of these files at all. Whatever the answer, on the glossed leaves the two
+classes were aligned as letters (q/s on f.101r; e on f.101r and m on f.188r for CH), and on f.61 they stand where letters cannot (H283/H286): a
+leaf-level difference of the C6 kind (H261), for the verifier. Also corrected in this commit: H286's NOTES/CAMPAIGN wording said L04's two sign items
+were joined to read_call_U; they are not (read_call_U lists one L04 sign, the OTHER is pass U2's alone). No call.

@@ -1,0 +1,8 @@
+f101r_align.tsv: all classes 0/1/2+ = 197/2878/2; LOOPSTEM1 0/1/2+ = 2/15/0; CH = 1/5/0; chunks CH:e LOOPSTEM1:u LOOPSTEM1:q LOOPSTEM1:q LOOPSTEM1:q LOOPSTEM1:e LOOPSTEM1:s LOOPSTEM1:- LOOPSTEM1:q CH:e LOOPSTEM1:r LOOPSTEM1:- CH:e LOOPSTEM1:s LOOPSTEM1:q LOOPSTEM1:s LOOPSTEM1:q CH:m CH:u LOOPSTEM1:c CH:- LOOPSTEM1:q LOOPSTEM1:b
+f188r_align.tsv: all classes 0/1/2+ = 105/975/120; LOOPSTEM1 0/1/2+ = 0/0/0; CH = 2/5/0; chunks CH:m CH:u CH:- CH:m CH:n CH:m CH:-
+f108vg_align.tsv: all classes 0/1/2+ = 85/208/0; LOOPSTEM1 0/1/2+ = 0/0/0; CH = 0/1/0; chunks CH:d
+f106r_align.tsv: all classes 0/1/2+ = 26/211/0; LOOPSTEM1 0/1/2+ = 0/0/0; CH = 0/0/0
+f124r_align.tsv: all classes 0/1/2+ = 30/1502/22; LOOPSTEM1 0/1/2+ = 0/0/0; CH = 0/0/0
+f274_align.tsv: all classes 0/1/2+ = 11/155/1; LOOPSTEM1 0/1/2+ = 0/0/0; CH = 0/0/0
+pooled: all classes 2+ chunks 145 of 6528; LOOPSTEM1/CH 2+ chunks 0 of 31
+read-out: LOOPSTEM1/CH take single letters or nothing everywhere in the family
