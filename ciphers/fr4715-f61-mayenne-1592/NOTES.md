@@ -5751,3 +5751,10 @@ What it means for VERIFY-F61-V10 item 6: f.188r's 4TRI is mostly the bowl sign (
 would predict; but a quarter read no-bowl, so f.188r is not clean either, and the pre-stated read-out does not decide it. A follow-up, if wanted:
 split f.188r's 18 no-bowl tokens and test the order gain against random relabellings of 18 (H374's design, script-only). Nothing applied. 1 call,
 cost estimate 1.5 USD.
+
+## Campaign step H393 (29 Sept 2026, 18:17-18:23 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- --check sweep of runner 14's scripts (script-only)
+
+`family/h393_check_sweep.sh` -> `family/h393_check_sweep_result.txt`: 20 checks (h367-h391, h374 on three leaves). **19 OK; h391 STALE** because its
+glob of reply files took in H390's and H392's replies written after it ran; the script is now pinned to the 21 calls (h359-h387) it reported and
+rechecks OK (the figures in "Campaign step H391" are unchanged). Disclosure: H395's script was started a minute before its commit (pushed with this
+section, before its result was read).

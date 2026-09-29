@@ -23,7 +23,7 @@ for ch in ("c1", "c2"):
 n, po, k = kappa(a231, a368); out.append(f"H231 vs H368 (f.106r)\t{n}\t{po:.2f}\t{k:.2f}")
 c2 = [r["item"] for r in rd(f"{HERE}/h371_items.tsv") if r["chunk"] == "c2"]; o = rep("h371_reply_c2_orig.tsv"); nn = rep("h373_reply.tsv")
 n, po, k = kappa({i: o.get(i) for i in c2}, {i: nn.get(i) for i in c2}); out.append(f"H371 c2 original vs H373 (f.97r)\t{n}\t{po:.2f}\t{k:.2f}")
-files = sorted(os.path.basename(f) for f in glob.glob(f"{P}/h3[5-9][0-9]_reply*.tsv") if int(os.path.basename(f)[1:4]) >= 359)
+files = sorted(os.path.basename(f) for f in glob.glob(f"{P}/h3[5-9][0-9]_reply*.tsv") if 359 <= int(os.path.basename(f)[1:4]) <= 387)   # pinned (H393) to the 21 calls H391 reported; later calls would change the figure
 Q = {f: {k: v for k, v in rep(f).items() if k.startswith("Q")} for f in files}
 pk = [kappa(Q[f], Q[g]) for f, g in itertools.combinations(files, 2)]
 out.append(f"H193 anchor strips across {len(files)} H359-design calls ({len(pk)} pairs)\tmean n {sum(p[0] for p in pk) / len(pk):.1f}\t"

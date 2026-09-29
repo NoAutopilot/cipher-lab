@@ -1,0 +1,20 @@
+h367_bowl_f61.py score	check OK
+h368_bowl_106r.py score	check OK
+h370_bowl_97r.py score	check OK
+h371 score	check OK
+h372_bowl_code_table.py	check OK
+h373_97r_c2_reread.py	check OK
+h374 f101r	check OK
+h374 f124r	check OK
+h374 f97r	check OK
+h377 score	check OK
+h379	check OK
+h380	check OK
+h381_shape_letter_pool.py	check OK
+h383	check OK
+h384_shape_at_f61.py	check OK
+h385 score	check OK
+h386_4stem_by_shape.py	check OK
+h387 score	check OK
+h390_bowl_kappa_gated.py score	check OK
+h391_bowl_reader_agreement.py	check STALE (new reply files h390/h392 entered its glob); pinned to calls h359-h387, rechecked OK
