@@ -1,0 +1,6 @@
+c1 control: 19 of 20 f.176v anchors (gate >= 17): PASS
+c2 control: 18 of 20 f.176v anchors (gate >= 17): PASS
+by pass-A code: 4STEM n 4 no 31 yes 24; 4TRI n 2 no 8 yes 9; C43 no 20
+by code and draft agreement: 4STEM agreed n 1 no 9 yes 13; 4STEM other n 3 no 22 yes 11; 4TRI agreed no 2 yes 2; 4TRI other n 2 no 6 yes 7; C43 agreed no 18; C43 other no 2
+read-out: 4TRI yes-share 0.53 (no-share 0.47; H362 bar 0.4 -> 4TRI carries the no-bowl sign), 4STEM yes-share 0.44, C43 no-share 1.00 -> the codes mix
+H231 agreement on shared rows 1-6 positions: 22/24

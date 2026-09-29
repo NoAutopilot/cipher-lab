@@ -5472,3 +5472,23 @@ What it means: in f.61's own hand (the target leaf), the readers' 4TRI code is t
 de Diou's f.124r (75% no-bowl, H360) and f.101r (64%, H365), and unlike f.108v, where the same hand's bowl sign was coded 4STEM (H199). So the
 PROPOSAL_v8_4tri.md split, if the verifier adopts it, would move at most one f.61 position (L05/14) and probably none; f.61's 4TRI tokens sit in the
 bowl (c/p) half of the proposed split. Evidence for VERIFY-F61-V11; no key, cell or grade changed. 1 call, cost estimate 1.5 USD.
+
+## Campaign step H368 (29 Sept 2026, 17:23-17:27 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.106r (the secretary's hand): both readers' codes 4TRI and 4STEM mix the bowl and no-bowl signs; C43 is always no-bowl (2 vision calls)
+
+**Re-scoped before running (logged in the row):** f.108v is not re-read -- H199 bowl-read its 4-family in full (74 strips) and H230 reproduced it
+(the bowl sign there is the readers' 4STEM, 4TRI 0/6). Both calls went to fr.3983 f.106r rows 1-18 (H231 had read 33 strips of rows 1-6 only).
+`family/h368_bowl_106r.py`, key `family/h368_items.tsv`, prompt note H368 in `family/passes/PROMPTS_f176_f175.md` (H359's prompt verbatim), committed
+before the calls; the runner did not look at the H368 sheets. Targets from pass A (the reconciled draft carries no x): all 19 4TRI and 59 4STEM, plus
+20 of 63 C43 (seed 368), cut at H231's geometry (validated on this leaf) from the native (Gallica btv1b9059406b f191, sha1 5aa1a799 as the 15:04 fetch;
+1 request, requests.log); H193's 60 strips in each call. Replies `family/passes/h368_reply_c1.tsv`, `_c2.tsv`; result
+`family/h368_bowl_106r_result.txt` (`--check` OK):
+- **Gates c1 19/20, c2 18/20 -- PASS.**
+- **4TRI: bowl 9, no bowl 8, n 2 (no-share 0.47, over H362's 0.4 bar); 4STEM: bowl 24, no bowl 31, n 4 (yes-share 0.44); C43: no bowl 20/20.**
+  Split by the draft's agreement: agreed 4STEM bowl 13 / no 9; agreed 4TRI 2 / 2 (only 6 agreed 4TRI on the leaf).
+- Pre-stated read-out: **"the codes mix"**. H231 agreement on shared rows 1-6 positions **22/24**.
+What it means: in the secretary's hand on f.106r the readers did not keep the bowl sign under one code -- both 4TRI and 4STEM carry both shapes in
+about equal parts, while C43 is only ever the no-bowl sign. Taken with H367 (f.61: 4TRI = bowl 5/6), H199/H230 (f.108v: 4STEM = bowl), H360 (f.124r:
+4TRI 75% no-bowl) and H365 (f.101r: 4TRI 64% no-bowl), the readers' code for the bowl sign changes by leaf and session; a key cell built from pooled
+4TRI or 4STEM counts mixes two signs unless it is re-split by shape (H218's point, now on six leaves). For VERIFY-F61-V11: the split PROPOSAL_v8_4tri.md
+proposes is a shape split, and the shape answers per leaf are on disk for f.61, f.101r, f.106r, f.108v, f.124r, f.176r/v. No key, cell or grade
+changed. 2 calls, cost estimate 2.0 USD.
