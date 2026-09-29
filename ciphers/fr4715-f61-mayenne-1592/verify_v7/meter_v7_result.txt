@@ -1,0 +1,8 @@
+v5: 99 signs: firm 12 / two-way 50 / wider 12 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 4STEM=n/a/c/e:1 4TRI=c/p/t:6 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
+v5 + HASH4 d/q (V7): 99 signs: firm 12 / two-way 51 / wider 11 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 4STEM=n/a/c/e:1 4TRI=c/p/t:6 OTHER=e/q/i/p/r/s/t:2
+v5 + 4TRI c/p, 4STEM a/n (V6, form A): 99 signs: firm 12 / two-way 57 / wider 5 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
+v5 + V6 + V7: 99 signs: firm 12 / two-way 58 / wider 4 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 OTHER=e/q/i/p/r/s/t:2
