@@ -5619,3 +5619,16 @@ published spans on f.61 (published, not ours).
 What it means for VERIFY-F61-V11: the shape rule PROPOSAL_v8_4tri.md states (bowl -> c/p, no bowl -> a/n) matches the known letter about five times
 in six on every leaf with letters, in three hands (de Diou, Desportes, Mayenne's secretary), and separately beats random relabellings under the order
 statistic on f.124r, f.101r, f.108v (20/20 each) and f.97r (at the bar). Nothing applied; the ruling is the verifier's.
+
+## Campaign step H380 (29 Sept 2026, 17:56-17:58 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.106r (the secretary's hand): relabelling by bowl shape more than doubles v7's order gain and beats every permuted-answer draft (script-only)
+
+`family/h380_106r_shape_relabel.py` (written and pushed before running; `family/h380_106r_shape_relabel_result.txt`, `--check` OK): H379's design on
+f.106r rows 1-18 with the H231/H368 answers (H368 wins on re-reads), used only where the pooled draft `passes/recf106rall18` carries pass A's code at
+the same (line, position): 75 tokens (bowl 28, no bowl 47). **Order gain v7 (mean of seeds 342-344): as transcribed 0.0261, shape-relabelled 0.0604;
+20 permuted-answer drafts mean 0.0371, max 0.0513 -> shape beats 20/20, pre-stated "carries order information".**
+What it means: on the held leaf where v7 showed no order signal as transcribed (H342/H346/H348, underpowered at 51 runs, H351), reading the bowl sign
+as c/p/t and the no-bowl sign as a/n -- whichever of 4TRI/4STEM the readers wrote, since in this hand both codes carry both shapes (H368) -- more than
+doubles the gain and beats every placement of the same answers. Permuted drafts also gain on average (0.026 -> 0.037: moving tokens between the two
+cells helps in bulk), so the comparison that counts is shape vs permuted, which it clears. This does not reverse H351's power finding for the
+as-transcribed test; it says the shape-corrected draft fits v7 by a margin the as-transcribed draft did not. With H379 (f.108v), the shape rule now has
+order support in both of the target's own hands (Mayenne's secretary on f.106r and f.108v). For VERIFY-F61-V10/V11; nothing applied. Script-only.

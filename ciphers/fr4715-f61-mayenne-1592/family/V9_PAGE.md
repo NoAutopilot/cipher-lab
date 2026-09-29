@@ -133,3 +133,5 @@ frequency-only key 132 (H328). Lead stands as pre-stated; grade M gloss letters,
 - **Bowl vs known letter (H381):** agreement 0.83 (f.101r period gloss, n 182), 0.88 (f.108r period overlay, 16), 0.88 (f.176r period decipherment,
   32), 0.93 (f.61 Tomokiyo's spans, 14); pooled 0.84 over 244, 75% of it f.101r.
 - **Part-2 known strips (H376 fix) on first use (H377):** 6/6.
+- **f.106r, the secretary's hand (H380):** relabelling by the H231/H368 bowl answers raises v7's order gain 0.026 -> 0.060 and beats 20/20 permuted-answer
+  drafts (max 0.051) -- the held leaf where v7 as transcribed showed no order signal.

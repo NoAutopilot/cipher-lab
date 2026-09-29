@@ -1,0 +1,3 @@
+f.106r rows 1-18: 75 answered tokens usable (yes 28, no 47); order gain v7 mean of 3 seeds: as transcribed 0.0261, shape-relabelled 0.0604
+20 permuted-answer drafts: mean 0.0371, min 0.0141, max 0.0513
+shape draft beats 20/20 -> carries order information
