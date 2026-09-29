@@ -302,3 +302,10 @@ The runner did not look at the H362 sheets.
 ## H365 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
 H359's prompt verbatim, four calls (part 2 = SCRATCH/h365_cK/sheet_01..03.jpg; R01-R48, c4 R01-R47), f.101r; script `h365_101r_4tri_split.py`, key `h365_items.tsv`.
 The runner did not look at the H365 sheets.
+
+## H367 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h367/sheet_01.jpg (R01-R18), f.61's own 18 4-family signs (6 4TRI, 9 C43, 1 4STEM, 2 4PI) cut from the
+native f.61 region image; script `h367_bowl_f61.py`, key `h367_items.tsv`. H193's 60 strips regenerated from natives f327/f328 (sha1 a2b0d98e...,
+4a13be67..., as H230/H359; h193_items.tsv byte-identical). Disclosure: the runner looked at the whole H367 sheet for marker placement (twice): the
+markers sat on the intended signs, but at H359's -60/+55 window every stem was clipped just below the line, so the window was moved to -45/+92 before
+the call (the runner has therefore seen the target shapes; the reader has not). 1 Opus vision call.
