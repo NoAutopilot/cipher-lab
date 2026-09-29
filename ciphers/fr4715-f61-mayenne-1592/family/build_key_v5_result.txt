@@ -1,0 +1,8 @@
+v4 classes (test_period_key.load_key, --collapse-ebr --min 2 --frac 0.1): 22; v5 classes: 23
+changed in v5 (f.61, EBR form B): EBR a/l/s -> l/y; SBS b/e/o -> b/o; VBAR_A s/t -> g/t; ZHOOK unread -> i/x
+unchanged from v4 (checked): 4STEM=a/c/e/n HASH4=d/i/q BETA=m/s DBL=e/r/u 4PI=a/d/n/q; EBR on form A (f.108r) = a/l/s
+f.61 meter under v5: 99 signs: firm 12 / two-way 50 / wider 12 / unread-or-null 25
+tokens changed: EBR l/s/a -> l/y x4; SBS o/b/e -> b/o x7; VBAR_A t/s -> g/t x6; ZHOOK - -> i/x x3
+f.61 five spans (j=i, v=u, y=i folded): v5 53/55 = 0.964; 2000 permuted mean 0.307 p95 0.455 max 0.727; >= key 0/2000
+f.108r overlay (EBR form A) (j=i, v=u, y=i folded): v5 74/84 = 0.881; 2000 permuted mean 0.312 p95 0.429 max 0.726; >= key 0/2000
+REPRODUCED: yes

@@ -379,3 +379,31 @@ M tokens: v3 two 19, three 35, four 9, seven 2; v4 two 36, three 18, four 3, sev
 
 The .txt of v1-v3 is regenerated for one display fix: a C+ token was printed as `<CLASS>` like an unread sign (the .tsv and
 the header counts were always right). Not a reading of the letter; the choice inside every M set is not made here.
+
+## key v5 (F61-FAMILY-9, 29 Sept 2026, 01:1x UTC): four cells from the fr.3984 f.176r / fol. 177r decipherment
+
+`build_key_v5.py` (with `--check`) writes `key_period_v5.tsv` from `key_period_v4.tsv` (not edited) and `key_period_f176.tsv`
+(H177, runner 6), taking only the four rows VERIFY-F61-V5 endorsed (AUDIT.md, section VERIFY-F61-V5; `verify_v5/`). Each changed
+class's v4 rows stay in the file as `#superseded-v4` comment lines; the new rows are `CELL` rows, which are the class's whole letter
+set and are exempt from the 0.1 x leaf-total rule (that rule would cut the cell partner: g 10 of 110, x 3 of 31, b 6 of 64). Read
+v5 with `build_key_v5.load_key_v5()`, not `test_period_key.load_key`. Key source of every CELL row: `period` (fr.3984 f.176r,
+Desportes to Clement VIII, 22 July 1593, deciphered on fol. 177r), cross-checked on the Mayenne hands against Tomokiyo's published
+letters (`published`, credited) and f.108v's sequence gain.
+
+| class | v4 | v5 | rows (f.176r counts, fol. 177r clear folded j=i v=u y=i) | provenance |
+|---|---|---|---|---|
+| VBAR_A | s/t | **g/t** | t 100, g 10 (code VBAR_A) | cell 0.55 vs wrong text 0.20; blind 14/26, 18/33; f.108r t5 g2 7/7 (p 0.005); grade C on f.61 with VERIFY-F61-V4's caveat on the VBAR_A/VBAR_B boundary |
+| EBR_B | l (v4 rows l, y, s...) | **l/y** | l 95, y 10 (code EBR; the y row is the folded i/y count) | f.176r brackets are form B (H180, 11/11); cell 0.67 vs 0.18; f.61's brackets are all form B (H22 4/4), so f.61's EBR takes l/y at C. EBR_A and v4's unsplit EBR rows untouched: on form-A brackets (f.108r) EBR stays a/l/s |
+| SBS | b/e/o | **b/o** | o 32 + 26, b 3 + 3 (codes SBS + DBL) | the runner's reader code DBL on f.176r is the side-by-side glyph, v4's SBS; written as SBS, nothing written under DBL (v4 DBL e/r/u unchanged). f.61 SBS b/o 5/5 (p < 0.005), f.108r 2/2, f.108v rank 2/51; v4's e was a sort artefact (VERIFY-F61-V4) |
+| ZHOOK | unread (v4 rows n 1 each) | **i/x** | i 28, x 3 (code ZHOOK) | graded **S** on f.61, not C: no glyph link across hands (H178b tile gate failed); rests on f.61 i 3/3, f.108r i 7/7 with ZHOOK left out of the aligning key, f.108v rank 1/51 |
+
+Not merged (the verifier's "may not take"): 4STEM p/c (f.108r contradicts; data conflict, rule 4), HASH4 d/q (the leaf's own i
+share 16%), BETA m/z (period n 16), DBL o (a reader code for the SBS glyph), 4PI p/c, CROSS s. The script checks that each of these,
+and every class other than the four, loads exactly as v4 does (`test_period_key.load_key --collapse-ebr --min 2 --frac 0.1`).
+
+**Reproduction of VERIFY-F61-V5's numbers from the v5 file** (`build_key_v5_result.txt`): **yes**, every figure. f.61 five known
+spans 53/55 (2000 permuted keys, seed 20260929: mean 0.307, p95 0.455, 0/2000 at or above); f.108r overlay 74/84 with EBR at its
+form-A set (mean 0.312, p95 0.429, 0/2000); f.61 meter firm 12 / two-way 50 / wider 12 / unread-or-null 25 of 99 (C6 unread/null),
+tokens changed VBAR_A x6, EBR x4, SBS x7, ZHOOK x3. The firm count does not move: each new value is a two-letter period cell, so a
+two-way token under v5 is a cell of the design, not an undecided merge. The known spans are Tomokiyo's published letters (text:
+known); this is a test of the key, not a reading of anything outside his spans.
