@@ -1,0 +1,10 @@
+# H305 (runner 12 session_012eShPsWwW3quuzzUNV7nW5, 29 Sept 2026): clear doubled-l and capital-I letters usable as letterform controls for f.61's LL, by hand, from files on disk. Script/grep only, no call.
+# hand: 'f61' = Mayenne's secretary (f.61, f.108r, f.108v; NOTES 'What this changes', H43-era); 'deDiou' = the recipient's decipherer (glosses, f.184r separate decipherment).
+source	hand	clear_ll_words	clear_I_words	positioned	note
+f.61r clear text (sheets B)	f61	1 (ella, L07; 'aidilla' on the L07 span sheet is the same word)	3 (Il seroit L02, Il a L04, Impor L02) + L02's disputed opening mark	yes (H302/H304 x)	the only same-hand clear doubled l on disk
+f.108v cipher rows, PLAIN items (f108* sign passes, 82 items)	f61	0	0	yes	clear words: ce tam, s dz, fauldra/faudra, qu, et, tant, aul Rigny -- no ll, no capital I
+f.108r/f.108v glosses (f108v3x_gloss*, f108vg_gloss*)	deDiou	many	many	partly	wrong hand for a letterform control of f.61's scribe
+f.184r separate decipherment (f184r_clear_rec.tsv, 846 words)	deDiou	about 20 (mille, nouuelles, tellement, meilleur, rabille, laquelle, telle, embrouille, Jnutille ...)	about 10 (Il x9, Jnutille)	no (idx/line only)	wrong hand; no x
+f.101r / f.188r glosses (f101r_gloss*, f188r_pairs)	deDiou	elle, quelle, laquelle, nulle, telle ...	some	partly	wrong hand
+f.175r / f.177r clear passes (f175r_clearA_h170, f177r_clearA_*)	not established	celluy, seullement, voulloir ...	some	no (line text only)	hand not compared with f.61's on file
+# other LL tokens in the f61 hand: f.61 L05 16 (all passes); f.108v L06 29 (scripts/pass108gB_classes.tsv, pass B only, confidence l, s4 x 360); L02's opening mark on f.61 (read_call_U pass 1; H302/H304 descriptive)

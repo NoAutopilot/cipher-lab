@@ -4861,3 +4861,13 @@ H302's). 12 tiles: LL 1, L02 opening mark 1 (both centroid-recentred), clear cap
 Rule 3 (26 Sept 2026 lesson): two passes of the same letterform sort, the second changing only the control set, both miss their own gate on one tile; a
 third pass on the same leaf's letters is not run -- the next evidence needs different material (H305: clear ll/I from the family leaves in the same hand)
 or a verifier's judgement on the two descriptive agreements. Vision calls this session: 2.
+
+## Campaign step H305 (29 Sept 2026, 12:41 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- no ll-only control in f.61's hand on disk (script/grep only)
+
+`family/h305_ll_census.tsv`: clear doubled-l and capital-I letters by hand. In the f.61 hand (Mayenne's secretary: f.61, f.108r, f.108v) the files hold
+**one** clear doubled l (ella, f.61 L07) and three clear capital I's (the H304 tiles); f.108v's 82 PLAIN items in the cipher rows (ce tam, fauldra, qu,
+et, tant, aul Rigny ...) hold no ll and no capital I. Every other source with ll words (f.184r's separate decipherment, about 20; the f.101r/f.188r/
+f.108 glosses) is de Diou's hand, the wrong hand for a letterform control of f.61's scribe; f.175r/f.177r's clear passes are not hand-compared on file
+and carry no x. So an ll-only control of n >= 3 in this hand cannot be cut from material on disk: H302/H304's letterform question on LL stays open,
+held on new material (a clear letter in the secretary's hand), not on another sort of the same tiles. By the way: a second LL token in this hand is on
+file, f.108v L06 29 (scripts/pass108gB_classes.tsv, pass B only, confidence l). No call, no value, no count change.
