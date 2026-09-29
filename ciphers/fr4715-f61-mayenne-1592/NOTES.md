@@ -3813,10 +3813,10 @@ This agrees with VERIFY-F61-V5's endorsement (VBAR_A g/t, EBR_B l/y, SBS b/o, ZH
 
 `family/h191_4fam_f61.py` (result `family/h191_4fam_f61_result.txt`, `--check` OK), the H181/H187 alignment. At f.61's own 4-family positions inside
 Tomokiyo's spans, his letters by the f.61 readers' code: **4TRI c 3, p 3 (c/p 6 of 6); C43 a 7, n 2 (a/n 9 of 9)**; 4STEM one dash, 4PI n 1, HASH4 none.
-The C43 result is built in (v4n176's C43 set is a/n). The 4TRI result is informative: its set also admits a, n and t, yet his letters there are all
-c or p (exact test 6/0 vs 0/9: p about 0.0002, small N). So on f.61, as on f.176v (H190), the readers' 4TRI and C43 look like the c/p sign and
-the a/n sign; on f.176r the readers' codes did not separate them. Descriptive, for the verifier: whether f.61's 4TRI can be narrowed to c/p
-(v4: a/c/n/p/t) is theirs. His letters come from his own table. Nothing merged.
+The C43 result is built in (v4n176's C43 set is a/n). **Correction (H196, 01:3x): the 4TRI set this alignment used is c/p/t, not a/c/n/p/t**
+(the a/c/n/p/t in the f.176r/v build tables is h170_gate's merged 4TRI+4HOOK set, a different load), so the 4TRI result only rules out t (6 of 6 c/p,
+weak), and the exact-test figure above overstates it. So on f.61, as on f.176v (H190), the readers' 4TRI and C43 look like the c/p sign and the a/n
+sign; on f.176r the readers' codes did not separate them. Descriptive, for the verifier: whether f.61's 4TRI can be narrowed from c/p/t to c/p is theirs. His letters come from his own table. Nothing merged.
 
 ## Campaign step H193 (29 Sept 2026, 01:20-01:23 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- the 4-family's c/p sign has a bowl at the stem foot: PASS on a second leaf
 
@@ -3843,7 +3843,7 @@ Result `family/h194_bowl_f61_result.txt` (`--check` OK):
   "no", 4PI read n.
 What it says, descriptively: the shape difference validated against the period decipherment on two Desportes leaves (H193: a 4 whose stem ends in a
 closed bowl reads c/p; the r-tailed or 3-tailed 4 reads a/n) holds on f.61's hand too. f.61's readers already separate the two signs (4TRI vs C43), and
-at 14 of 14 of Tomokiyo's positions the bowl sign carries his c or p. On f.61 v4's 4TRI cell is a/c/n/p/t (H191). For the verifier: whether f.61's 4TRI
+at 14 of 14 of Tomokiyo's positions the bowl sign carries his c or p. On f.61, v4's and v5's 4TRI cell is c/p/t (corrected in H196; H191 had a/c/n/p/t). For the verifier: whether f.61's 4TRI
 may be narrowed to c/p on this evidence (a period-validated shape rule plus his letters; C43 a/n is already v4's). His letters come from his own
 table. H178b's cross-hand tile link failed for ZHOOK, a different sign, so each class's transfer stands on its own test. No class change, nothing merged.
 
@@ -3855,3 +3855,13 @@ CONTROL FAIL**; the f.176r targets were not scored (`family/h195_hash_attr_resul
 i anchors split (no 5, yes 3, n 2), so the i anchors (agreed HASH4 columns the DP pairs with i) are not reliably bare hashes. Either the DP's i pairings on HASH4
 columns are partly misplaced, or the i/d distinction is not a 4-head on this hand. Unlike the 4-family (H193), the hash family is not separated by
 this instrument; HASH4 stays d/i/q (as VERIFY-F61-V5 held). Not re-briefed with the same question.
+
+## Campaign step H196 (29 Sept 2026, 01:30-01:31 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- a test key v5 + 4TRI c/p (script-only)
+
+Key v5 landed (F61-FAMILY-9, `family/key_period_v5.tsv`, `build_key_v5.py`), so the row's base changed from v4 to v5 (logged in CAMPAIGN.md).
+`family/h196_4tri_cp.py` (result `family/h196_4tri_cp_result.txt`, `--check` OK), build_key_v5's own scorer: **v5's 4TRI cell is c/p/t; narrowed to c/p:
+f.61 five spans 53/55 under both (2000 permuted keys p95 0.455, none reach it); f.108r overlay 74/84 under both (p95 0.43 / 0.42).** No known letter is
+lost, but none is gained either: the narrowing is only the removal of t, and f.61 has 6 4TRI tokens (all c/p/t under v4). It changes those 6 from
+three-way to two-way in f.61's meter. Correction carried back: H191, H194 and the verifier page said v4's 4TRI cell was a/c/n/p/t; for f.61's load it is
+c/p/t (the a/c/n/p/t in the f.176 build tables is the builders' merged 4TRI+4HOOK set). The H193/H194 finding stands: the bowl sign is the c/p sign.
+What it now adds for f.61 is dropping t from 6 tokens, not a wider narrowing. Nothing merged.

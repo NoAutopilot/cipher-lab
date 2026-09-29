@@ -1,0 +1,6 @@
+v5 4TRI = c/p/t; test key 4TRI = c/p
+f.61 five spans: v5 53/55 = 0.964; 2000 permuted mean 0.307 p95 0.455 max 0.727; >= key 0/2000
+f.61 five spans: test 53/55 = 0.964; 2000 permuted mean 0.302 p95 0.455 max 0.691; >= key 0/2000
+f.108r overlay (EBR form A): v5 74/84 = 0.881; 2000 permuted mean 0.312 p95 0.429 max 0.726; >= key 0/2000
+f.108r overlay (EBR form A): test 74/84 = 0.881; 2000 permuted mean 0.306 p95 0.417 max 0.667; >= key 0/2000
+f.61 4TRI tokens: 6 (v4 letters {'c/p/t': 6}) -> c/p two-way under the test key
