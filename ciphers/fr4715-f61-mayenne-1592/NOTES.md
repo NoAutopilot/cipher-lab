@@ -5728,3 +5728,13 @@ different set (V11's own readers and tokens, AUDIT.md VERIFY-F61-V11), so the tw
 lane. (2) Gate 1 is passed near-perfectly by every call, the defective one included: it tests the reader's eye on part 1 and says nothing about part 2.
 The H376 fix (known strips inside part 2, gate 2) is the gate that can fail; it passed 6/6 in H377, H385 and H387. Instrument lesson, added to
 CAMPAIGN.md INSTRUMENTS. Nothing applied. Script-only.
+
+## Campaign step H390 (29 Sept 2026, 18:14-18:17 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- the gated bowl reader repeats its f.124r answers at kappa 0.88 (1 vision call)
+
+`family/h390_bowl_kappa_gated.py`, key `family/h390_items.tsv`, prompt note H390, committed before the call; the runner did not look at the sheets. 50
+f.124r 4TRI already answered by H359/H360 (stratified: 25 originally yes, 25 no; seed 390), re-cut at H359's geometry from native f256 (sha1 8b7e91c7,
+1 request), plus H377's 6 known strips; one fresh blind Opus call; reply `family/passes/h390_reply.tsv`; result `family/h390_bowl_kappa_gated_result.txt`
+(`--check` OK). **Gate 1 19/20, gate 2 6/6. Answered both times 48: original yes -> yes 22 / no 2; original no -> yes 1 / no 23. Agreement 0.94,
+kappa 0.88 -> pre-stated "the gated reader is repeatable at this design".** With H391 (re-reads on f.61 0.84, f.106r 0.81), the bowl answers the
+runner's split rests on repeat at 0.8-0.9 kappa in this design; VERIFY-F61-V11's inter-reader 0.35-0.49 (its own readers and design) is a different
+measurement, for the VO3 lane to weigh. Nothing applied. 1 call, cost estimate 1.5 USD.

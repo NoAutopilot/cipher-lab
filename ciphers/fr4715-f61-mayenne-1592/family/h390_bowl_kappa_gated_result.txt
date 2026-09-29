@@ -1,0 +1,3 @@
+gate 1 (H193 anchors): 19/20 (>= 17); gate 2 (known part-2 strips): 6/6 (>= 5)
+targets 50, answered both times 48 (re-read n: 2); original yes -> re-read yes 22 / no 2; original no -> re-read yes 1 / no 23
+agreement 0.94, kappa 0.88 -> the gated reader is repeatable at this design
