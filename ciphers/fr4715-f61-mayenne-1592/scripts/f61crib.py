@@ -59,9 +59,10 @@ def load_read(path=f"{HERE}/read_call_A.tsv"):
     for r in csv.DictReader(open(path), delimiter="\t"):
         lines[r["line"]].append(classify(r["marks"]))
     return lines
-def load_spans():
+def load_spans(path=None):
+    """H277 (29 Sept 2026): path selects another spans file of the same format (scripts/tomokiyo_spans_witness.tsv); default unchanged."""
     out = []
-    for l in open(f"{HERE}/tomokiyo_spans.tsv"):
+    for l in open(path or f"{HERE}/tomokiyo_spans.tsv"):
         if l.startswith("#") or l.startswith("span\t"): continue
         s, line, markup, letters = l.rstrip("\n").split("\t")
         out.append((s, line, markup))

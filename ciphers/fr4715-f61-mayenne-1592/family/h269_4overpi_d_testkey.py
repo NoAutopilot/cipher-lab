@@ -4,7 +4,7 @@ H268: Tomokiyo's S5 'melente-noit' is French only as 'me l'entendoit', which rea
 Test keys: v6 (4PI a/d/n/q pooled, as loaded for f.61) vs 4-over-Pi = d (4PI: d) vs 4-over-Pi = a/n (H240/H245's cell), scored on the five known spans
 (a) against the published markup (tomokiyo_spans.tsv) and (b) with S5 rewritten as the H268 witness 'melentendoit' (his dash at 4STEM filled with n,
 his n at the 4-over-Pi replaced by d; every other span unchanged). build_key_v5's scorer (f61crib.align, j/v/y folded), 2000 permuted keys per cell
-(seed 20260929). Descriptive: (a) says what the published letters support, (b) what the French witness supports; which witness the key follows is the
+(seed 20260929); --spans not needed: witness (b) is read from scripts/tomokiyo_spans_witness.tsv (H277). Descriptive: (a) says what the published letters support, (b) what the French witness supports; which witness the key follows is the
 verifier's call. No merge.  python3 h269_4overpi_d_testkey.py [--check]"""
 import os, random, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); S = os.path.abspath(f"{HERE}/../scripts"); sys.path.insert(0, HERE); sys.path.insert(0, S)
@@ -15,7 +15,8 @@ from f61crib4 import split_lines
 from sbs_relabel import relabel
 def main():
     k6 = load_key_v6(f61=True); lines = split_lines(load_read()); relabel(lines)
-    pub = load_spans(); wit = [(s, l, "melentendoit" if s == "S5" else m) for s, l, m in pub]
+    pub = load_spans(); wit = load_spans(f"{S}/tomokiyo_spans_witness.tsv")   # H277: the witness file replaces the inline rewrite
+    assert wit == [(s, l, "melentendoit" if s == "S5" else m) for s, l, m in pub], "witness file differs from the published spans beyond S5"
     def sc(key, spans):
         mt = tot = 0
         for s, l, m in spans:

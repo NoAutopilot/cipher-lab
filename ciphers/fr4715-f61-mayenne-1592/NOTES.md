@@ -4653,3 +4653,11 @@ verifier admits a one-letter grade-I candidate to the firm band); and what is no
 f.188r's r-tail rows moved out, a separate 4OVERPI class for f.61 with L11 9 a/n grade M and L01 12 unread) or pending (V9: the lexicon witness L11 9 = d,
 C6 unread on f.61 as an F61READ row, the CA null wording, the 4STEM note), with the reproduction numbers a build must keep. Nothing applied; key v6
 unchanged. No call.
+
+## Campaign step H277 (29 Sept 2026, 10:31 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the witness spans file (script-only)
+
+`scripts/tomokiyo_spans_witness.tsv`: the five published spans with S5 as the lexicon witness "melentendoit" (H268), header naming both witnesses and the
+HYPOTHESES.md row; `scripts/tomokiyo_spans.tsv` (the published transcript) is untouched. `f61crib.load_spans(path=None)` takes an optional path (default
+unchanged), and `family/h269_4overpi_d_testkey.py` now reads witness (b) from the file, asserting it equals the published spans except S5; its result is
+byte-identical (`--check` OK), as are h268, h259, h261, h265, h240 and build_key_v6 (`--check` OK each). A build worker or verifier scores either witness
+by passing the path. No call.

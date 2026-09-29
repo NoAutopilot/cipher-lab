@@ -1,0 +1,11 @@
+# H277 (runner 10 session_0148wt8Aokh6aZEdJsXzYiZX, 29 Sept 2026): the five spans of tomokiyo_spans.tsv (the published transcript, never edited) with ONE
+# change -- S5 is the lexicon witness 'melentendoit' (H268: fr16 admits only entendoit at 'me l'ente?noit', 7 vs 0; HYPOTHESES.md row "campaign H268"),
+# i.e. his dash at L11 8 (4STEM) read n and his n at L11 9 (the 4-over-Pi) read d. A second witness for scoring, not a correction of his file: which
+# witness a key follows is the verifier's call (VERIFY-F61-V9). Format as tomokiyo_spans.tsv; load with f61crib.load_spans(path) / h269 --spans.
+span	line	markup	letters
+S1	L01	--avec	avec
+S2	L03	estca-p-able	estcapable
+S3	L05	---trop--avance-es	tropavancees
+S4a	L07	jal-ous-i	jalousi
+S4b	L08	ea-ubeau--pere	eaubeaupere
+S5	L11	melentendoit	melentendoit
