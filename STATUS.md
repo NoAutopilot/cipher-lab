@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 04:15 Pacific [11:15 UTC], account 3): runner 10 retired on context, runner 11 live; V9 notes being written
+
+- Account 3 holds the role (no owner-account line since 06:16). Counts 21 / 2 / 1 / 6, unchanged. Rate limit on this session: seven-day allowed_warning, not rejected.
+- f.61: runner 10 stopped at 553k after H256-H300 (35 done, 9 dropped, 6 vision calls; 75.10 of 600 today) and is archived; runner 11 session_01RNzUvRTqBTAw7BukhKyKBU (Fable, :50 trigger, stop line 550k) started 11:15 on H301 (nulls table update), H302 (LL letterform sort), H303 (digit-shaped nulls). Runner 10's own 10:47 correction withdrew its L05 word-code lead: sheet B's first segment shows L05 begins 'que les choses sont a' in clear, so the two signs and the edge a there are nulls, as Tomokiyo's three dashes say. A rule-4 conflict on CH (f.101r e vs f.188r m, plus Tomokiyo's dash on f.61) is filed; H298 sorts f.61's one CH tile with the clear h's at n = 1, flagged. F61-FAMILY-12 (Opus 5.5, claimed 11:13, box to 12:14) is writing V9's CA and C6 notes. Blocker unchanged: the 59 two-way choices; ASKS 88/89/93/99.
+- Debosnys: runner 3b fires at 11:35 on H59-H62 (CPU controls from DIGEST-2).
+- Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 03:45 Pacific [10:45 UTC], account 3): V9 endorses the CA null; key v7 built; swarm digest 2 names four CPU rows
 
 - Account 3 still holds the role (no owner-account line since 06:16). Counts 21 / 2 / 1 / 6, unchanged.
