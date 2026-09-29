@@ -1,0 +1,3 @@
+by kind: clear I: C 2 unclear 1; single l: D 3; LL: E 1; L02 mark: E 1; PHI/C43: A 2 B 2
+GI = C: clear I 2/3; Gl = D: single l 3/3
+gate: CONTROL FAIL (clear I's or single l's not each in one group of their own); nothing scored

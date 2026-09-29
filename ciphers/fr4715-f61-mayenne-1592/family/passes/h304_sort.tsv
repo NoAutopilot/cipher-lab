@@ -1,0 +1,19 @@
+# written verbatim from the inline reply (runner 12 session_012eShPsWwW3quuzzUNV7nW5, H304, one Opus vision call, 29 Sept 2026)
+# GROUP A: a 4-shaped open loop whose vertical stem runs down through the crossbar, with a 3-like curl on the right.
+# GROUP B: a phi-shaped closed loop crossed by a long vertical descender, with an 8-like double loop on top.
+# GROUP C: a single stroke with a hooked or barred head, curving left into a long diagonal descender (like a cursive 7, T or J).
+# GROUP D: a tall stem with a blob or loop at the top, bending into a flat foot to the right (like a cursive L).
+# GROUP E: two long-s stems side by side, joined by a crossbar (like a cursive ff).
+tile	group
+X01	A
+X02	B
+X03	C
+X04	D
+X05	A
+X06	E
+X07	E
+X08	D
+X09	B
+X10	D
+X11	unclear
+X12	C

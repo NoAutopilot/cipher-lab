@@ -4843,3 +4843,21 @@ free sort (`family/passes/h302_sort.tsv`, verbatim); result `family/h302_ll_text
   'Il's, the single l's and the cipher controls. By letterform the L02 mark agrees with pass 1 (LL), not pass 2 ('Il') -- a lead at n = 1 + 1 for a
   verifier, not a recount: the null band keeps its V9-endorsed counts.
 No reading, no cell change. Vision calls this session: 1.
+
+## Campaign step H304 (29 Sept 2026, 12:39 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- L02's opening mark and LL against clear I and l: CONTROL FAIL again; same descriptive pairing
+
+Pre-registered (PROMPTS section H304; `family/h304_ll_pair.py`, key `family/h304_items.tsv`, committed acc38774 before the call; a fresh reader, not
+H302's). 12 tiles: LL 1, L02 opening mark 1 (both centroid-recentred), clear capital I 3 centred on the I (Il seroit L02, Il a L04, Impor L02), single l
+3, PHI 2, C43 2. Result `family/h304_ll_pair_result.txt` (`--check` OK; reply verbatim in `family/passes/h304_sort.tsv`):
+- Groups: **A** 4-with-3 (C43 2); **B** phi-8 (PHI 2); **C** "a single stroke with a hooked or barred head curving into a long diagonal descender (cursive
+  7, T or J)" (clear I 2: Impor, Il seroit); **D** "a tall stem with a blob or loop at the top bending into a flat foot (cursive L)" (single l 3/3);
+  **E** "two long-s stems side by side, joined by a crossbar (a cursive ff)" (**LL and the L02 mark, nothing else**); the I of 'Il a' (L04) unclear.
+- **Gate: CONTROL FAIL** (clear I 2 of 3 in one group; the L04 I, the blob-headed one H302's reader also set with the other 'Il', came back unclear) --
+  nothing scored, as pre-stated.
+- Descriptive, in no gate: **two independent readers (H302, H304) each put the L02 opening mark and f.61's LL in a group of their own**, described both
+  times as two tall long-s-like stems side by side (H302 "the left crossed or footed", H304 "joined by a crossbar"), apart from every clear I, every single
+  l and the cipher controls. That agrees with read_call_U pass 1 (LL) against pass 2 ('Il') -- a lead at n = 2 for the verifier's null-band recount, not a
+  runner's recount; the band keeps V9's counts.
+Rule 3 (26 Sept 2026 lesson): two passes of the same letterform sort, the second changing only the control set, both miss their own gate on one tile; a
+third pass on the same leaf's letters is not run -- the next evidence needs different material (H305: clear ll/I from the family leaves in the same hand)
+or a verifier's judgement on the two descriptive agreements. Vision calls this session: 2.
