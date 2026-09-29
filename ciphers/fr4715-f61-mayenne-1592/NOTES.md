@@ -4489,3 +4489,23 @@ Since the 04:41 handover (retracted at 04:45): H240-H255 and H253 done or droppe
 10 of f.61's 25 unread signs), **H257** (script: extend f61_positions.tsv to L07/L08), **H258** (LOOPBAR glyph link). Pending audit: ZHOOK = 2# (H235 + H254, same
 hand at overlay i) and 4PI's two signs (H233/H239/H240/H255); candidate table family/v6_shape_candidates.tsv. Waiting on people: ASKS 88 (f.108r gloss; H249's
 prediction is committed), ASKS 93 (f.211r), and a possible ASKS row for the f.106r looped-hash pack (H243).
+
+## Campaign step H256 (29 Sept 2026, 09:58 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61's CA has the letterform of the clear a
+
+Pre-registered (PROMPTS section H256; `family/h256_ca_text.py`, key `family/h256_items.tsv`, committed f70b9432 before the call; rules and read-outs in the
+docstring). Disclosure: the runner viewed images/f61sheetB_L01.jpg to place the text letters (its segment 4 shows L01's CA token in passing) and two
+placement sheets of the nine TEXT tiles only; the CA/PHI/C43 crops and the test sheet were not seen. 20 tiles at H235's normalised height: f.61 CA 5
+(H253's positions, L01/L03/L05), clear-text a 6 (H63's control a's: auons, parle, amplement, Cependant, ella, affere), clear-text non-a letters 3 (o, o, e,
+a hand check), cipher PHI 3 and C43 3. One Opus free sort by letterform, ignoring ink, size, hand and joins (`family/passes/h256_sort.tsv`). Result
+`family/h256_ca_text_result.txt` (`--check` OK):
+- Groups: **A** "a cursive minuscule a: closed rounded bowl, short upright on its right, small exit tail"; **B** "43"; **C** "looped sign on a stem";
+  **D** "small round o-type bowl with no upright".
+- **Text a: A 6/6 (gate 1 pass). Text non-a: D 1, unclear 2 (gate 2 pass: 0 of 3 in A). CA: A 5/5. PHI/C43: C 3, B 3 (0 in A).** Hypergeometric
+  P(5 of 5 CA in a group of 11 of 20) 0.030.
+- Pre-stated read-out: **"CA is the clear letter a by letterform"**.
+What it says, and what it does not: by the strokes alone, f.61's CA is the same letterform as the scribe's clear a, and nothing cipher-shaped sorts with
+it. This complements H63, which judged the same marks by hand cues (weight, baseline, spacing) and put 5 of 6 in the cipher hand: together, CA is an
+"a" written in the sign runs -- either a clear letter left among the signs or a null drawn as an a (Tomokiyo's nulls, H44). The sort cannot tell those
+two apart (interpretation fixed before the call), so no key cell changes and no reading follows; the skeleton keeps CA as nulls. Caveat: the hand check
+is thin -- two of the three non-a letters came back 'unclear', so only one non-a letter was actually placed outside A. The other five CA (L07, L08, L10)
+have no positions yet (H257) and were not sorted. For the verifier; nothing merged. Vision calls: 1 of 4.
