@@ -5337,3 +5337,13 @@ shuffle seeds, v7 first:
   too**; on f.124r swap unclear, union lowers it. A pointer that on f.97r the readers' EBR_A/EBR_B labels may run opposite to f.176r's form B (H321/H322).
 Uncontrolled: widening a cell or moving a cell gives the beam other letters to choose, and whether a/n or a/l/s *specifically* does this, rather than
 any added letters, is not tested here -- H358 is that control. Pointers for the verifier only; no cell changed. No call.
+
+## Campaign step H358 (29 Sept 2026, 16:35-16:37 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the control for H356/H357: the 4TRI pointer on f.124r stands, the EBR one does not (script-only)
+
+`family/h358_variant_ctl.py` (written and pushed before running; `family/h358_variant_ctl_result.txt`), mean order gain over three shuffle seeds:
+- **(a) f.124r, 4TRI c/p/t + a/n: 0.0748; 30 random 2-letter widenings mean 0.0494, max 0.0602; beats 1.00 -> pointer stands.** On de Diou's f.124r the
+  readers' 4TRI code behaves as if it also carries a sign that stands for a/n -- the no-bowl sign whose period cell is C43's a/n (H218/H231 found the
+  4TRI code mixes the bowl and no-bowl signs on f.176r, f.101r and f.106r). A shape split of f.124r's 4TRI tokens would test it directly (H359).
+- **(b) f.97r, EBR_B <- a/l/s: 0.0667; 30 random 3-letter cells mean 0.0593, max 0.0683; beats 0.87 -> 'added letters, not these letters'.** H356's EBR
+  pointer is withdrawn: on f.97r any other 3-letter cell for EBR_B scores about as well, so it says only that l/y fits f.97r's EBR_B poorly (H349).
+Pointer (a) is for the verifier and for the transcription side, not a cell change: v7's 4TRI and C43 cells are unchanged. No call.

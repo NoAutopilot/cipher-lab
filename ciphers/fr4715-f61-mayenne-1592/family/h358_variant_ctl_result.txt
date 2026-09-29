@@ -1,0 +1,2 @@
+(a) f.124r 4TRI c/p/t + a/n: mean gain 0.0748; 30 random 2-letter widenings mean 0.0494 max 0.0602; beats 1.00 -> pointer stands
+(b) f.97r EBR_B <- a/l/s: mean gain 0.0667; 30 random 3-letter cells mean 0.0593 max 0.0683; beats 0.87 -> added letters, not these letters
