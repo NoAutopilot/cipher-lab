@@ -487,3 +487,74 @@ reader), or any sentence giving f.61's 4TRI a single letter.
 The bowl/c-p association on f.176r: high (two blind readers, a fresh any-code sample, alignment checked by word context). The narrowing on
 f.61: moderate (five 4TRI tokens, shape = code on all 14 matched positions in both sessions, agreement with a published reading). The shape
 rule off those two leaves: not shown.
+
+## VERIFY-F61-V7 (29 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V7 (account 3; Opus), 05:13-05:30 UTC by the container clock; separate from campaign runner 9 (which posted H224)
+and from VERIFY-F61-V6 (the bowl rule; not re-audited here). Claim under audit (H224, runner 9, 04:04 UTC): on f.188r the HASH4 rows the period
+decipherment reads i/x are the "2#" sign and the 4-head reads d/q, so key v5's HASH4 i 10 / x 3 (f.188r/f.184r) is H24 support mis-coded as HASH4,
+and HASH4 proper reads d/q on f.101r, f.188r and f.274r. The runner disclosed that its category D (2#) was added after a look at the sheet.
+
+Files: `verify_v7/v7_hash_sort.py` (design and read-outs committed a87fa876 and 127f5a44 before any vision call), `v7_items.tsv` (key, committed
+229bec99 while the calls ran, before any answer), `PROMPTS.md` (prompts verbatim, disclosures), `v7_reply_setD.tsv` / `v7_reply_setN.tsv` (blind
+replies verbatim), `v7_hash_sort_result.txt` (`--check` OK), `v7_perleaf.py` + result (per-leaf check, written after scoring), `meter_v7.py` + result.
+
+### Verdict: endorse
+
+**Design.** Fresh Gallica natives (f.188r, f.101r, f.106r; sha1 = MANIFEST; f.274r from disk), crops cut from the cipher row only, so no
+interlined gloss letter is in view, grey + autocontrast on every tile. 124 tiles: every f.188r HASH4 i/x/d/q row (27) plus H24 i/x 10 and H24 d/q 3;
+f.101r HASH4 d/q 10, HASH4 i 4, H24 i 10, H24 d/q 4; every f.274r HASH4/H24 lettered row (21; there H24 came from a pass-A/pass-B code split,
+not from any shape sort); f.106r HASH4 5, H24 5; the 24 H212 f.108 tiles (23 = the runner's anchor set); f.61's one HASH4. 8 tiles repeated
+under new ids. Two fresh blind Opus readers, one per sheet set, with separate shuffles and ids. Categories were fixed by the brief before any look:
+**setD** = 4-head / 2-hook "2#" / looped / other; **setN** = the same without 2# (answers task 3: "with and without D" as two separate calls, not
+by folding answers afterwards). Null: 20,000 permutations of the shape labels within each lettered leaf. The verifier looked at one strip of seven
+tiles before the calls, for marker placement only (disclosed in PROMPTS.md).
+
+| check | setD (with 2#) | setN (without 2#) |
+|---|---|---|
+| anchor gate, H212 tiles as their H212 group (>= 0.8, the runner's 8/10) | 21/23 PASS | 20/23 PASS |
+| repeat control (8 tiles shown twice) | 8/8 identical | 8/8 identical |
+| pooled, 89 lettered tiles | 2# i/x-share 38/42 = 0.90; 4-head d/q-share 37/45 = 0.82; within-leaf permutation p 5e-05 | i/x tiles on the 4-head 4/47 = 0.09; p 5e-05 |
+| f.188r | 2# i/x 18 d/q 2; 4-head i/x 4 d/q 16 (Fisher p 1.7e-05) | not-4-head i/x 20 d/q 2; 4-head i/x 2 d/q 16 (p 3.8e-07) |
+| f.101r | 2# 9/2; 4-head 4/12 (p 0.0063) | 12/2; 2/12 (p 0.00042) |
+| f.274r | 2# 11/0; 4-head 0/9 (p 6e-06) | 11/1; 0/9 (p 3.4e-05) |
+| H224 replicate: f.188r HASH4-coded i/x rows | 2# 10 of 12 (H224: 8 of 11) | not-4-head 10 of 12 |
+| f.106r (held, no letters) | HASH4 looped 5/5; H24 2# 5/5 | HASH4 looped 4, 4-head 1; H24 other 5/5 |
+| f.61 L01 HASH4 | 4-head | 4-head (reader: "less sure") |
+
+Registered read-outs: setD **"split holds (2# i/x, 4-head d/q)"**; setN **"split visible without D"**. Each lettered leaf clears on its own
+(checked after scoring, rule 3's per-unit paragraph), so none of the three leaves rides on the others. **On the post-look category D:**
+without D, the setN reader put 43 of 47 i/x tiles outside the 4-head and 9 of 45 d/q tiles there. Its hand-back described most of those
+"other" answers, unprompted, as "a hash with a '2'-shaped head, which is neither the figure-4 head nor the looped form". The 2# class came back
+from a reader who was never offered it. For comparison, the runner's own H224 reply with D folded into "other" still gives
+i/x 2 of 11 on the 4-head against d/q 12 of 14. D's late addition therefore does not carry the result.
+
+**Caveats.** (1) The 4-head still takes i/x at 4 of 20 on f.188r and 4 of 16 on f.101r, and the 2# takes d/q at 2 of 20 on f.188r: the cells are
+d/q-dominant and i/x-dominant, not clean. H226's stray HASH4 letters (p, s, b, f ...) mostly sit on the 4-head and are not explained by this
+split. (2) The pass codes cut across shape in both directions: HASH4-coded i/x rows are the 2# (11 of 16), and H24-coded d/q rows are mostly the
+4-head (4 of 7, setD). A key built by pass code keeps mixing the two signs whichever code it trusts. (3) The looped hash (f.106r's HASH4, most of
+f.108r's) has no period value. This audit does not give it one and does not endorse reading it d/q or i/x.
+
+**What key v5 would change (for the orchestrator; `family/key_period_v5.tsv` not edited).** Key the hash family by shape, not pass code:
+- **HASH4 (the 4-head hash) = d/q**, grade C on f.101r/f.188r/f.274r (period decipherments), linked to other hands by the blind shape attribute.
+  Remove f.188r's HASH4 **i 10, x 3** from the HASH4 row. f.101r's HASH4 i 4 stays as stray support (1 of the 4 answered 2#, 2 answered 4-head).
+- **H24 (the 2# sign) = i/x** (j/y as period spellings of i), with f.188r's i/x rows from the HASH4 row added (by shape: 10 of 12 are the 2#). Its
+  d/q strays that sit on the 4-head move the other way.
+- The **looped hash** is a third class. It needs its own row, marked unread, never pooled into HASH4's counts (f.106r's and f.108r's HASH4 are
+  mostly this form).
+- By the same test, H235's f.61 ZHOOK = 2# link would make ZHOOK the H24 cell (i/x). That is a grade question for ZHOOK's row, not tested here.
+
+**f.61 meter** (`verify_v7/meter_v7.py`, bands as meter_v5.py): f.61's one HASH4 (L01) is the 4-head in both blind readers, as in H233, so it
+reads **d/q** (grade S: period value from three leaves' decipherments, linked by blind shape). H24 does not occur on f.61.
+- v5: firm 12 / two-way 50 / wider 12 / unread-or-null 25.
+- v5 + this audit alone: **12 / 51 / 11 / 25**.
+- v5 + VERIFY-F61-V6's endorsed part (4TRI c/p, the one 4STEM a/n, form A): 12 / 57 / 5 / 25.
+- **v5 + V6 + V7: 12 / 58 / 4 / 25**. Still wider than two: 4PI x2 (H233: a 4 over a Pi, not audited here), OTHER x2.
+
+### Novelty
+Not assessed. This audit is about a key cell, not a reading, and no plaintext claim is made (rule 10).
+
+### Confidence
+High that the three period-lettered leaves separate a 2# i/x sign from a 4-head d/q sign: the result holds with and without the post-look
+category, on each leaf alone, with a stable reader and a passed anchor gate. Moderate on the single f.61 token: one tile, cut from a different
+source image at a larger scale, and one reader marked it "less sure".

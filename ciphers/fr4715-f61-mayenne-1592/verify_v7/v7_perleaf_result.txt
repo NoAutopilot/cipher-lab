@@ -1,0 +1,10 @@
+setD f.188r: 2# I 18 DQ 2 | 4-head I 4 DQ 16 | Fisher p 1.7e-05
+setD f.101r: 2# I 9 DQ 2 | 4-head I 4 DQ 12 | Fisher p 0.0063
+setD f.274r: 2# I 11 DQ 0 | 4-head I 0 DQ 9 | Fisher p 6e-06
+setD all lettered leaves, pass code HASH4: I A4 D11 N1; DQ A33 D1 N1
+setD all lettered leaves, pass code H24: I A4 D27; DQ A4 D3
+setN f.188r: not-4head I 20 DQ 2 | 4-head I 2 DQ 16 | Fisher p 3.8e-07
+setN f.101r: not-4head I 12 DQ 2 | 4-head I 2 DQ 12 | Fisher p 0.00042
+setN f.274r: not-4head I 11 DQ 1 | 4-head I 0 DQ 9 | Fisher p 3.4e-05
+setN all lettered leaves, pass code HASH4: I A3 N13; DQ A33 N2
+setN all lettered leaves, pass code H24: I A1 N30; DQ A4 N3

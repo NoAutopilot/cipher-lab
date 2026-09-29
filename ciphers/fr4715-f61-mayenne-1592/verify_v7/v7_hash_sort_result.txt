@@ -1,0 +1,31 @@
+== setD: anchor gate 21/23 H212 tiles as their group (>= 0.8) -> PASS; anchor A answered Counter({'A': 9, 'B': 1}), B answered Counter({'B': 12, 'N': 1})
+   repeat control: 8/8 duplicates identical (>= 6) -> stable
+   f.188r HASH4: I A2 D10; DQ A15
+   f.188r H24: I A2 D8; DQ A1 D2
+   f.101r HASH4: I A2 D1 N1; DQ A9 D1
+   f.101r H24: I A2 D8; DQ A3 D1
+   f.274r HASH4: DQ A9 N1
+   f.274r H24: I D11
+   f.106r HASH4: B5
+   f.106r H24: D5
+   f.108v HASH4: B1
+   f.61 HASH4: A1
+   primary S = 75 of 89 lettered; within-leaf permutation p = 5e-05; D I-share 38/42 = 0.90; A DQ-share 37/45 = 0.82
+   per leaf: f.188r D 20 (I-share 0.90) A 20 (I-share 0.20); f.101r D 11 (I-share 0.82) A 16 (I-share 0.25); f.274r D 11 (I-share 1.00) A 9 (I-share 0.00)
+   H224 replicate: f.188r HASH4-coded I rows answered D 10/12 (Counter({'D': 10, 'A': 2})) (H224: 8 of 11)
+   read-out: split holds (2# i/x, 4-head d/q)
+== setN: anchor gate 20/23 H212 tiles as their group (>= 0.8) -> PASS; anchor A answered Counter({'A': 9, 'N': 1}), B answered Counter({'B': 11, 'N': 1, 'A': 1})
+   repeat control: 8/8 duplicates identical (>= 6) -> stable
+   f.188r HASH4: I A2 N10; DQ A15
+   f.188r H24: I N10; DQ A1 N2
+   f.101r HASH4: I A1 N3; DQ A9 N1
+   f.101r H24: I A1 N9; DQ A3 N1
+   f.274r HASH4: DQ A9 N1
+   f.274r H24: I N11
+   f.106r HASH4: A1 B4
+   f.106r H24: N5
+   f.108v HASH4: A1
+   f.61 HASH4: A1
+   S' = 80 of 89; within-leaf permutation p = 5e-05; A share of I tiles 0.09 (n 47); I answered Counter({'N': 43, 'A': 4})
+   read-out: split visible without D
+== H224 reply with D (and C) folded into 'other': {('N', 'IX'): 9, ('A', 'DQ'): 12, ('A', 'IX'): 2} -- i.e. without its post-look category the runner's own call says only 'the i/x rows are not the 4-head' (2 of 11 A)
