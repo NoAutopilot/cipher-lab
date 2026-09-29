@@ -1,0 +1,4 @@
+by kind: text ll/Il: E 2 unclear 1; text single l: C 3; LL: D 1; PHI/C43: A 2 B 2; DISPUTED L02 start: D 1
+G = E (size 2 of 12): text ll/Il 2/3, text single l 0/3, LL 0/1, cipher controls 0/4
+gate 1: CONTROL FAIL (the text ll/Il tiles are not all in one group); nothing scored
+DISPUTED (descriptive, no gate): group D; with LL

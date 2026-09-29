@@ -4824,3 +4824,22 @@ touched `family/f61_null_band.py`. Four files, no call, no value, no cell change
   4 into HYPOTHESES.md's row, no key row; 3b, 7, 8 pending).
 Nothing here is a reading; "null drawn as h" is at n = 1 and stands for the verifier only. Vision calls this session: 0.
 
+
+## Campaign step H302 (29 Sept 2026, 12:37 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- LL against clear ll/Il: CONTROL FAIL; LL sorts with L02's disputed opening mark
+
+Pre-registered (PROMPTS section H302; `family/h302_ll_text.py`, key `family/h302_items.tsv`, committed ea8c6846 before the call). Disclosure in PROMPTS:
+the runner viewed sheets B L02, L04, L07 whole (L02 shows the DISPUTED mark) and a placement sheet of the six TEXT tiles; the LL, PHI and C43 crops and the
+test sheet were not seen. 12 tiles: LL 1 (sheet B L05 seg 3 x 1330, centroid-recentred), clear ll-type 3 (ella L07; Il of 'Il seroit' L02; Il of 'Il a'
+L04), clear single l 3 (les, les, le), PHI 2, C43 2, and one DISPUTED tile in no gate (L02's opening mark: read_call_U pass 1 LL, pass 2 'Il'). One Opus
+free sort (`family/passes/h302_sort.tsv`, verbatim); result `family/h302_ll_text_result.txt` (`--check` OK):
+- Groups: **A** phi-8 (PHI 2); **B** 4-with-3 (C43 2); **C** "L-shaped, tall looped ascender into a flat foot" (single l 3/3); **D** "two tall f/long-s-like
+  stems side by side, the left crossed or footed by a short leftward stroke" (**LL and the DISPUTED L02 mark**); **E** "a long diagonal from lower left
+  ending in a heavy blob meeting upright stems (M/H-like)" (the two clear 'Il'); the ella tile 'unclear'.
+- **Gate 1: CONTROL FAIL** (text ll-type 2 of 3 in one group; the ella tile unclear) -- nothing scored, no read-out on LL, as pre-stated.
+- Why, from the reader's own criteria: the design pooled two letterforms. The scribe's capital I of 'Il' opens with a long diagonal lead-in stroke and a
+  blob (group E), which a doubled l does not have; 'ella' is joined at both sides and its ll did not stand out at the tile centre. f.61 holds only one
+  clear doubled l (ella; 'aidilla' on the L07 span sheet is the same word), so a ll-only text control of n >= 3 cannot be cut from this leaf.
+- Descriptive only (in no gate, stated before the call as descriptive): the LL tile and L02's opening mark were put in one group, apart from the clear
+  'Il's, the single l's and the cipher controls. By letterform the L02 mark agrees with pass 1 (LL), not pass 2 ('Il') -- a lead at n = 1 + 1 for a
+  verifier, not a recount: the null band keeps its V9-endorsed counts.
+No reading, no cell change. Vision calls this session: 1.
