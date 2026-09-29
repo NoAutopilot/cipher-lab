@@ -773,3 +773,16 @@ exactly: line	pos	sign	conf	segment	x_px	note -- one row per sign; line is L02; 
 horizontal centre within that crop (0-1700). Output paths: ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s1_signs{A|B}.tsv and
 ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s2_signs{A|B}.tsv. When done, report only 's1: N signs, s2: N signs'."
 Gate in family/h315_211r_signs.py's docstring. The runner has not viewed the two segment crops.
+
+## H316 (29 Sept, Opus vision x2, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.211r gloss, two blind reads, WRITTEN BEFORE THE CALLS
+
+Identical prompt for A and B, only the output letter differs: "Working directory: /home/user/cipher-lab. Two image crops show the left and right parts
+of one line of a 1593 French letter: ciphers/fr4715-f61-mayenne-1592/family/sheets/f211r_run_s1.jpg and ciphers/fr4715-f61-mayenne-1592/family/sheets/
+f211r_run_s2.jpg (each 1700 x 480 px, 2x the native scan, blue ruler at the bottom; the crops overlap by 220 px, marked by a red bar at the top edge).
+The line holds a run of cipher signs; ABOVE the run, a few small handwritten French words are written (a period decipherment). Read ONLY those small
+words written above the cipher signs -- not the cipher signs, not the ordinary words of the line itself. Transcribe each small word letter by letter as
+written (keep the period spelling; use [?] for a letter you cannot read), with its horizontal extent in that crop's pixels. Do not guess words from
+context and do not try to decipher the signs. Use your image reader only; do not read any other file. Write two TSV files with the Write tool, header
+exactly: word	x_from	x_to	conf -- one row per small word, conf h/m/l; output paths ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s1_gloss{A|B}.tsv
+and ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s2_gloss{A|B}.tsv (an empty table with only the header if a crop has no such word). When done,
+report only 's1: N words, s2: N words'." Gate in family/h316_211r_gloss.py's docstring.
