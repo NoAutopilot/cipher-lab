@@ -1,0 +1,3 @@
+anchors: 12 of 12 (gate >= 10): PASS
+targets: f108r L04 x1238 -> A; f108r L06 x1598 -> A; f61 L01 x2214 -> E; f108r L06 x1166 -> A; f61 L11 x864 -> E; f108r L05 x1080 -> A
+read-out (descriptive): f.108r L04-L06 4PI A 4, E 0, other 0 of 4

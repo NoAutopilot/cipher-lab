@@ -4464,3 +4464,10 @@ i/x, so the pairing can follow the code); anchors 12 (4-head 6, 2# 6). One Opus 
 (`--check` OK): **anchors 11/12 PASS; f.108r ZHOOK: D (2#) 6, N 1 -> "f.108r's ZHOOK is the 2# sign"**.
 With H235 (f.61's ZHOOK sorts with the 2#) and VERIFY-F61-V7 (2# = i/x on f.101r/f.188r), the glyph link now runs through f.61's own hand: the sign the readers
 code ZHOOK in this hand is the 2# sign, and its same-hand period gloss reads it i. For the ZHOOK grade question V7 left open; nothing merged.
+
+## Campaign step H255 (29 Sept 2026, 05:49-05:52 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r L04-L06's 4PI are the 4-head hash too
+
+Pre-registered (PROMPTS section H255; `family/h255_4pi_108r_l46.py`, key `family/h255_items.tsv`, before the call; sheet not seen). f.108r L04-L06's four 4PI (H108
+draft, crops images/f108g|f108h) and f.61's two 4PI, anchors 12. One Opus call (`family/passes/h255_reply.tsv`); result `family/h255_4pi_108r_l46_result.txt`
+(`--check` OK): **anchors 12/12; f.108r 4PI: A (4-head hash) 4 of 4; f.61 4PI: E 2** (the fourth read giving E). With H239, every 4PI on f.108r (9) is the 4-head
+hash; the 4-over-Pi has been seen only on f.61 (two signs, one read n by Tomokiyo). Descriptive; nothing merged.
