@@ -3958,3 +3958,14 @@ registered rule fails, and this step does not add a fourth line of support. One 
 question's; the other (S14) is an unexplained miss. The alignment was made under v5, whose cells follow the readers' codes here (4TRI c/p, C43/4STEM
 a/n), so the pairs could not disagree with the codes by construction; the blind bowl answer is what was tested. Not re-run with a different crop
 (rule 3's "same knob" caution); a wider-context re-cut is possible but would be a second attempt at the same 16 positions.
+
+## Campaign step H203 (29 Sept 2026, 02:24-02:25 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- which 4-family support pools the two signs (script-only, descriptive)
+
+`family/h203_4fam_mix.py` (result `family/h203_4fam_mix_result.txt`, `--check` OK). Per 4-family code and leaf, {c,p} vs {a,n} counts in the period
+evidence (key_period_v5.tsv non-CELL rows plus key_period_f176.tsv); MIXED = both >= 5 and the minority >= 0.25.
+- **MIXED: 4STEM on f.101r (c/p 16, a/n 25), 4TRI on f.101r (51 / 19), 4STEM on f.176r (22 / 10).**
+- Not flagged but known to pool both signs by H193's blind attribute test: 4TRI on f.176r (46 / 194; minority 0.19, under the threshold).
+- Clean by these counts: C43 on every leaf (a/n 24-68, c/p 0-2); 4TRI on f.188r/f.184r (21 / 2); 4STEM on f.188r/f.184r (0 / 27).
+- Each leaf's c/p majority sits under 4TRI (f.101r 51, f.176r 46, f.188r 21), but on f.108v the H59 passes wrote the bowl as 4STEM (H199).
+For the verifier: v5's 4STEM cell (a/n, with "4STEM p/c" listed as not merged over a conflict with f.108r) and 4TRI cell rest partly on pooled counts.
+Read f.61-hand leaves' 4-family by the bowl (H194 f.61, H199/H201 f.108v), not by the pass code. No key change, nothing merged.

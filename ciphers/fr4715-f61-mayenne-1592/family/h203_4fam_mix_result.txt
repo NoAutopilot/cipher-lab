@@ -1,0 +1,16 @@
+code	leaf	c/p	a/n	other	flag
+4PI	fr.3982 f.101r	2	4	9	
+4STEM	fr.3982 f.101r	16	25	43	MIXED
+4TRI	fr.3982 f.101r	51	19	37	MIXED
+C43	fr.3982 f.101r	0	68	8	
+4PI	fr.3984 f.176r/f.177r	10	2	8	
+4STEM	fr.3984 f.176r/f.177r	22	10	7	MIXED
+4TRI	fr.3984 f.176r/f.177r	46	194	58	
+C43	fr.3984 f.176r/f.177r	1	46	14	
+4PI	fr.3984 f.188r/f.184r	0	6	17	
+4STEM	fr.3984 f.188r/f.184r	0	27	24	
+4TRI	fr.3984 f.188r/f.184r	21	2	7	
+C43	fr.3984 f.188r/f.184r	2	51	9	
+C43	fr.3984 f.274r	0	24	2	
+code holding most c/p per leaf: fr.3982 f.101r: 4TRI (51); fr.3984 f.176r/f.177r: 4TRI (46); fr.3984 f.188r/f.184r: 4TRI (21); fr.3984 f.274r: C43 (0)
+MIXED (code, leaf): 3
