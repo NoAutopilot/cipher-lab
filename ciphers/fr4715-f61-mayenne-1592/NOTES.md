@@ -3770,3 +3770,15 @@ the permutation null does not remove that; his letters come from his own table; 
 hands FAILED (H178b). What it adds beside H181/H182: the second Desportes leaf's letters for VBAR_A, EBR, VBAR_B and the side-by-side glyph agree with
 his at f.61's positions too. The disagreements are INF 2 (u vs his letter), SBS 2 and ZHOOK 1, for the verifier to look at. No class change, nothing
 merged.
+
+## Campaign step H189 (29 Sept 2026, 01:13-01:14 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- fol. 179 marked-strip adjudication: CONTROL FAIL; fol. 179 closed for this campaign
+
+Pre-registered (PROMPTS section H189; `family/h189_mark.py`, key `family/h189_items.tsv` pushed before the call). 230 items (the 210 fol. 179 splits + 20
+anchors from signs both f.176v passes coded alike), each a 300-px context strip with a red triangle under the target. One Opus vision call (inline reply
+written verbatim, `family/passes/h189_adjudication.tsv`, 2 N).
+**CONTROL: 15 of 20 anchors pick the agreed code (gate >= 17): CONTROL FAIL** (H186: 11/20). Per the pre-registration: no merge, no build.
+**fol. 179 is closed for this campaign at "untested at this transcription"** (H184 location PASS but build FAIL; H185 FAIL +0.068; H186 and H189
+adjudication controls FAIL). Not refuted: H184's scan puts its text inside fol. 178r near R03. Reopening it needs new material or a person: per-sign
+boxes from a segmenter on the native at 2x, or a person's reading of the 4TRI/C43 and HASH4/ZHOOK pairs on a few rows. No fifth model-read approach
+is briefed. What the controls show generally: the readers' 4-family and hash-family codes do not hold even on signs two passes agree on, so class
+counts that depend on 4TRI vs C43 or HASH4 vs ZHOOK (in any leaf) carry that uncertainty.
