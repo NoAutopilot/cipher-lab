@@ -237,3 +237,19 @@ sign (not the ordinary words) in that column; if two rows of cipher signs cross 
 item: does that sign's vertical stem run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer yes or no,
 or n as above. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then U01..U39, nothing else."
 GATE: repeat control >= 17/20, else CONTROL FAIL. Read-out as in the script's docstring.
+
+## H212 (runner 8 session_011Taenrv3JSdk7VjpiBjids, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+Blind shape sort (the H89 design) of the 24 HASH4 signs of fr.3983 f.108v (14) and f.108r L06 (10), leaf hidden. Script `h212_hash_sort.py`, key
+`h212_items.tsv` committed with this section. Disclosure: the runner looked at the tile sheet for legibility (tiles 2 and 11 faint or near an edge)
+and saw that the tiles differ in form; the grouping is the reader's, and the score is fixed in the script.
+1 Opus vision call, inline reply: "You are a palaeography assistant. Use no tool but your image reader on the one image named; run no command, write no
+file: <h212/sheet_01.jpg>. The sheet holds 24 numbered tiles (tile 1 .. tile 24), each an enlarged crop from a line of invented cipher signs in a
+16th-century French manuscript. In each tile TWO SHORT RED TICKS, one at the top edge and one at the bottom edge, mark the horizontal position of ONE
+target sign; neighbouring signs and the ordinary handwritten words must be ignored. The target signs are all built on a hash or lattice (crossing
+strokes). For each tile describe the target sign only, with fixed attributes: (a) what sits on or above the hash (nothing, a figure-4 head, loops,
+other); (b) the loops, if any: how many and where; (c) the verticals: how many, and whether one runs well below the line; (d) anything else
+distinctive. If the ticks mark no hash-like sign, put group 'none' and say why. Then sort all target signs into 2 to 4 groups by shape using these
+attributes, and state in one sentence the criterion that separates the groups. Do not guess letters; do not decode. Reply inline ONLY with a TSV
+block with the header tile<TAB>group<TAB>head<TAB>loops<TAB>verticals<TAB>note, one row per tile (tile 1 .. tile 24, written 'tile N'), then the
+one-sentence criterion, then one line 'signs described: N'. Nothing else."
+Read-out fixed in the script's docstring (group G = the group holding most f.108v tiles; Fisher G x leaf).
