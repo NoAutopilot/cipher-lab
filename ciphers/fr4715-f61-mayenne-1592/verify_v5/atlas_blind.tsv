@@ -1,0 +1,27 @@
+# VERIFY-F61-V5 blind atlas (29 Sept 2026): scripts/f61_atlas.tsv's code/shape rows with the comment lines and every letter-value remark removed (SBS's '(H26: the b/o glyph; ...)' note), so a blind reader sees shapes only
+code	shape
+PHI	loops (one or several) on a long vertical stem, phi-like
+C43	a mark shaped like the digits 43 written together
+CA	a mark shaped like a cursive a
+VBAR_A	closed down-pointing triangle whose top side is a horizontal bar, nothing above the bar, no second bar
+VBAR_B	closed down-pointing triangle with a top bar AND a second horizontal bar crossing its bottom point
+C6	a mark shaped like the digit 6
+4TRI	a 4-shaped element (4 with a crossbar) sitting above a small triangle or V
+INF	an infinity sign or figure-8 lying on a horizontal bar
+DBL	two loops on a stem, one above the other (o-T-o)
+LOOPBAR	a loop on a stem with a bar at the foot
+EBR_A	an E-like bracket open to the right whose top bar is joined to the foot of the vertical by a fine hairline diagonal, the foot bar longer than the top bar and tapering into a tail
+EBR_B	a plain squared C or gamma open to the right: top bar and foot bar on a vertical, no diagonal, the top bar longest, often a short spur of the vertical above the top bar
+ISH	a closed capital I: a thin vertical with a bar on both sides at top and foot
+ZHOOK	a 7 or Z hook over two close slanted stems, crossed
+CROSS	a plain plus or cross, possibly with a stroke rising to the upper right
+ELOOP	a dark e-shaped loop with a curling tail
+4PI	a 4-shaped element above two stems on a bar (4 over pi)
+HASH4	a dense crossed-4 cluster, hash-like, with stems
+LOOPSTEM1	a single loop on a long stem (not phi-like, not double)
+CH	a mark shaped like a cursive h
+BETA	a beta-like shape: a loop at the top of a stem with a 3-like bowl below it
+LL	a mark shaped like ll
+4STEM	a 4 with a long crossed stem and no triangle below
+OTHER	any cipher sign matching none of the above (describe it in the note)
+SBS	two loops side by side at the head of a stem, nothing above them
