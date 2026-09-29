@@ -115,3 +115,14 @@ frequency-only key 132 (H328). Lead stands as pre-stated; grade M gloss letters,
 - **The same on f.101r, checked against period letters (H362/H364).** f.101r's agreed 4TRI: 77% no-bowl (gate 17/20); joined to f.101r's own period alignment, **no-bowl 4TRI pairs with a/n 23 times vs c/p/t 6, bowl-letter agreement 44/56 = 0.79**. The readers' 4TRI code is two signs (c/p/t with the bowl, a/n without) on the leaf that built v7's 4TRI cell; v7's 4TRI tally mixes them. A resplit proposal is H366 (verifier's call; nothing changed).
 - **f.101r in full (H365/H366):** 241 answered 4TRI: no-bowl 155, bowl 67; by f.101r's own period letters **no-bowl -> a 62, n 56 (118 of 130 a/n-or-c/p/t)**, bowl -> p 17, c 15 (n/a 19); agreement 0.83; the split raises f.101r's order gain too. Proposal for the verifier: `family/PROPOSAL_v8_4tri.md` (read the no-bowl '4TRI' as the a/n sign; nothing applied). f.61's own 4TRI tokens not yet bowl-read (H367).
 - **Ask to the verifier lane (H369, runner 13, 29 Sept 2026):** before any key v8 is built, rule on `family/PROPOSAL_v8_4tri.md` (read the readers' no-bowl "4TRI" as the a/n sign; keep 4TRI c/p/t for the bowl sign). Witnesses: f.101r period letters by bowl (no-bowl a 62 / n 56 of 150; bowl p 17 / c 15 of 67; H365); f.124r order gain 0.034 -> 0.071 and held-gloss count 148 -> 156 on the split (H360/H361); f.101r order gain 0.082 -> 0.102 (H365); H218/H231 on f.176r/f.106r. Open objections: the bowl sign still pairs with a/n 19 of 67 on f.101r; the shape gate is on Desportes's hand; the alignment has many conflict rows; f.61's own 4TRI tokens are not yet bowl-read (H367).
+
+## Added by runner 14 (H367-H376): the 4TRI shape split, leaf by leaf, for VERIFY-F61-V11
+
+- **f.61 itself (H367, gate 19/20):** the readers' 4TRI is the bowl sign 5 of 6, C43 no-bowl 9 of 9; H194's count-matched read reproduces 14/15. The only
+  4TRI read no-bowl (L05/14) sits where H194 read bowl and Tomokiyo prints c. PROPOSAL_v8_4tri.md would move at most that one f.61 position.
+- **f.106r, the secretary's hand (H368, gates 19 and 18/20):** both 4TRI (bowl 9 / no 8) and 4STEM (24 / 31) mix the two shapes; C43 no-bowl 20/20.
+- **f.97r, de Diou (H370/H371/H373):** 127 agreed 4TRI of L17-L43, no-bowl 78 / bowl 45 (0.63) -- but relabelling the no-bowl ones as C43 LOWERS v7's
+  order gain (0.057 -> 0.054, all three seeds), unlike f.124r (H360, doubled). H374/H375 test both splits against random relabellings of equal count.
+- **One table:** `family/h372_bowl_code_table_result.txt` (every gated call, token level, H194/H199/H218 and f.101r's period cross-tab carried).
+- **Instrument:** a chunk answering all 'no' passed its part-1 gate (H371 c2, 18/20) and did not reproduce (H373 re-read 25/37); it was replaced as
+  pre-stated. The gate cannot see part 2; one-value chunks are re-read, and later calls should embed known strips in part-2 format.
