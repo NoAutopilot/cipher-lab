@@ -416,3 +416,7 @@ extra stroke or loop does. Reply ONLY with a TSV block id<TAB>answer, rows I01..
 H418 prompt verbatim with nine references (R1-R9, SCRATCH/h420/references.jpg) and items I01-I35 (h420/items_01..02.jpg); script
 `h420_108r_qa2.py`, key `h420_items.tsv`. Changes from H418 in the docstring (no 4STEM class; edge tiles skipped; seed 420). Known items are H418's
 non-edge ones (the row said re-drawn; with the edge filter the first two per class are kept -- disclosed). No new look at the sheets.
+
+## H421 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H418 prompt verbatim with six references (R1-R6, SCRATCH/h421/references.jpg) and items I01-I12 (h421/items_01.jpg); script
+`h421_l02_crossleaf.py`, key `h421_items.tsv`. The runner looked at the sheets for placement; INF dropped before the call (docstring).
