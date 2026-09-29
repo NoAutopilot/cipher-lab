@@ -486,3 +486,38 @@ Merged from AUDIT.md section VERIFY-F61-V9, "What should merge" item 1, and noth
   wider 2 / unread-or-null 26 [null 17 + unread 9]** of 99. No band count moves; ten tokens move from unread to null inside the last band.
 - The class note in `f61_null_band.tsv` (written by `f61_null_band.py`, `--check` OK) cites V9. The f.61 decode file
   (`f61_decode_period_v4_frac0.1_sbs.tsv`) carries no per-class note column, so the null band is the one class-note file.
+
+## key v8 (F61-FAMILY-13, 29 Sept 2026, 18:2x UTC): 4TRI answered no-bowl becomes a split class, 4TRI_NB = a/n (VERIFY-F61-V11)
+
+`build_key_v8.py` (with `--check`) writes `key_period_v8.tsv` from `key_period_v7.tsv` (not edited): every v7 line verbatim, then the
+4TRI_NB rows and one F61TOK note row for f.61 L05 14. Read v8 with `build_key_v8.load_key_v8()` (= `load_key_v7` on the v8 file; run
+`build_key_v7.f61_relabel()` on the f.61 lines as before). Which tokens carry the new class is not in the key file but in
+`key_v8_4tri_nb_tokens.tsv`, one row per 4TRI token with a gated blind bowl read: which reader and which call answered no-bowl (`no_by`)
+and bowl (`bowl_by`), the f.101r period letter, the status and the grade. Only VERIFY-F61-V11's "Exact cell change for a key v8" and its
+L05 14 note are merged.
+
+| row | v7 | v8 | counts written | provenance |
+|---|---|---|---|---|
+| 4TRI_NB (4TRI answered no-bowl in a gated blind read), pooled | inside 4TRI (c/p/t) | **CELL a/n** (C43's period cell) | f.101r 142 tokens: period a 55, n 52 (grade **C**), other letter or none 35 (grade **M**); f.124r 192 tokens (grade **M**, shape-only, no usable period-letter join) | V11 verdict, endorsed part: on f.101r the no-bowl answer carries a/n under both readers (runner 13: 118 of 130; V11: 10 of 11 stratified), permutation p <= 0.002; the split's order gain beats 30 random same-size splits on f.101r and f.124r with clean shuffled targets. Key source: `period` (f.101r decipherment) for the cell; the token assignment is a blind shape read. Gated reads used: runner 13 H362 (17/20), H365 c1-c4 (19, 18, 17, 18), H359 (18), H360 c1-c4 (18, 19, 18, 19), all on H193's f.176v anchors; V11 c1-c5 (anchors 9, 8, 9, 10, 9 of 10; repeats 6/6 each) |
+| 4TRI (bowl, or not bowl-read), pooled and f.61 reading | c/p/t; f.61 F61READ c/p (S) | **unchanged** | as v7 | V11 "Not endorsed": bowl = c/p/t is not a narrowed cell (the bowl class still holds a/n: runner 19/52, V11 up to 9/11) |
+| Conflicts (one gated read no-bowl, another bowl) | -- | **stay 4TRI**, a/n recorded as the alternative, grade M | f.101r 20, f.124r 10 (runner 13 vs V11, listed as a comment line in the key and per token in the table) | Rule 4 as V11 applies it to f.61 L05 14: a conflict between reads is logged, not settled by majority or by the later read. Applied the same way off f.61 by this build; the runner's split drafts relabel these tokens on the runner's answer alone |
+| f.61 L05 14 | 4TRI, F61READ c/p (S) | **4TRI c/p, grade M**; a/n the alternative (F61TOK note row, no letter loaded) | 1 token | V11: H194 read bowl, H367 (gate 19/20) read no-bowl; stays c/p until a third read. The other five f.61 4TRI (L01 6, L03 7, L03 10, L05 6, L08 11) read bowl in H367 (and H194 where it read them) and keep c/p. **No f.61 token is 4TRI_NB** |
+
+Not merged: nothing from VERIFY-F61-V10 (session_01BBihDVXNJZJwuUvhLshzw4), whose AUDIT.md section was already written when this build
+started; it bears on v8 only as support (its verdict 4 finds, in a second instrument, the readers' 4TRI code on f.124r and f.101r
+conflating the bowl sign with the no-bowl a/n sign; split drafts 0.0484 / 0.0551 against p95 0.0227 / 0.0255), and its "What runner 13
+should record" list names no key change. Runner 14's f.97r bowl reads (H368, `recf97r_split*`) were not audited by V11 and are not used.
+
+**Reproduction from the v8 file** (`build_key_v8_result.txt`): **yes**, every figure. Every class `load_key_v7` gives loads identically
+from v8 (pooled, EBR form A, unfolded, f.61 reading key); the only addition is 4TRI_NB = a/n. f.61 five known spans **53/55** (f.61
+reading key, 2000 permuted keys seed 20260929: mean 0.277, p95 0.418, 0/2000 at or above); f.108r overlay **74/84** (pooled key, EBR form
+A; mean 0.294, p95 0.405, 0/2000). V11's meter (verify_v8/meter_v8.py bands): key v8 as merged (all six f.61 4TRI c/p, L05 14 at grade M)
+**firm 12 / two-way 59 / wider 2 / unread-or-null 26** of 99; V11's H367 variant (L05 14 a/n) **12 / 59 / 2 / 26**; f.61 4TRI left
+unread (each a/c/n/p) **12 / 53 / 8 / 26**. `verify_v11/meter_v11.py --check`, `verify_v8/meter_v8.py --check` and `build_key_v7.py
+--check` pass. Order gain, `tools/partial_key_test.py --cells key_v8_cells.tsv --shuffle-target 3` (`run_pkt_v8.sh`): on runner 13's split
+drafts the output is byte-identical to V11's tool runs, f.101r **0.0970** (binned p95 0.0408, 0/100; shuffled targets 0/3) and f.124r
+**0.0709** (p95 0.0435, 0/100; 0/3). For information: the same tokens labelled 4TRI_NB instead of C43 give the same gains against a
+slightly different null (f.101r p95 0.0443, f.124r 0.0384, 0/100 each, shuffled 0/3); the v8 token assignment (conflicts left 4TRI, V11's
+own no-bowl reads added) gives f.101r 0.0926 (p95 0.0429) and f.124r 0.0692 (p95 0.0383), 0/100 and 0/3 shuffled on both. The meter
+does not move: the six f.61 4TRI are two-way whichever sign they are, so the split changes letters on the glossed leaves, not bands on
+f.61. This is a key built from period cells and blind shape reads; no f.61 letter is read by it.

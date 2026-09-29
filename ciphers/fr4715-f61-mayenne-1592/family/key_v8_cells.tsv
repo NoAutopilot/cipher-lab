@@ -1,0 +1,26 @@
+# key_v8_cells.tsv -- F61-FAMILY-13: key_v7_cells_h354.tsv verbatim plus 4TRI_NB a/n (key v8); for tools/partial_key_test.py --cells
+# H354: key v7 as H335's cell() loads it (build_key_v7.load_key_v7, EBR_A form A, EBR_B form B, i/y folded), one row per class seen in the family drafts; for tools/partial_key_test.py --cells
+class	letters
+4PI	d/q
+4STEM	a/c/e/n
+4TRI	c/p/t
+BETA	m/s
+C43	a/n
+C6	e
+CH	e/m
+DBL	e/r/u
+EBR_A	a/l/s
+EBR_B	i/l
+ELOOP	r
+H24	i/x
+HASH4	d/q
+INF	u
+ISH	l
+LOOPSTEM1	q/s
+PHI	e/r
+RSIGN	c/m/n/p/s/t
+VBAR_A	g/t
+VBAR_B	s
+ZBAR	f/s
+ZHOOK	i/x
+4TRI_NB	a/n

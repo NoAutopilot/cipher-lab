@@ -1,0 +1,5 @@
+real draft: runs 241, signs 2402; order gain 0.0926; binned keys mean 0.0188 p95 0.0429, >= real 0/100 -> order signal
+shuffled target 1: order gain 0.0045 vs p95 0.0175 -> no order signal
+shuffled target 2: order gain -0.0037 vs p95 0.0171 -> no order signal
+shuffled target 3: order gain -0.0068 vs p95 0.0266 -> no order signal
+ARM-C1: order signal on 0/3 shuffled targets -> control clean

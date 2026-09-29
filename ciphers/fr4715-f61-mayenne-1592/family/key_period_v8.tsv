@@ -1,0 +1,530 @@
+# key_period_v8.tsv -- F61-FAMILY-13 (key v8), 29 Sept 2026: key_period_v7.tsv verbatim plus what VERIFY-F61-V11 endorsed (AUDIT.md, 'Exact cell change for a key v8'). Built by build_key_v8.py; do not hand-edit.
+# Added: split class 4TRI_NB = CELL a/n (C43's period cell) for 4TRI tokens answered no-bowl in a gated blind read, per token in key_v8_4tri_nb_tokens.tsv; 4TRI (bowl, or not bowl-read) unchanged from v7; f.61 L05 14 stays 4TRI c/p at grade M (F61TOK note).
+# Not merged: anything from VERIFY-F61-V10 (its lists name no key change); f.97r bowl reads (H368, not audited by V11).
+# Key source: period (fr.3982 f.101r decipherment, C43's cell) for 4TRI_NB; token assignment by blind shape reads (runner 13, V11). v7 file follows verbatim:
+# key_period_v7.tsv -- F61-FAMILY-11 (key v7), 29 Sept 2026: key_period_v6.tsv plus what VERIFY-F61-V8 endorsed (AUDIT.md, 'What should merge' 1-4). Built by build_key_v7.py; do not hand-edit.
+# Changed (pooled): ZHOOK note only (value i/x unchanged; glyph link to the 2#/H24 cell, grade S); 4PI a/d/n/q -> CELL d/q (the 4-head); f.188r 4PI r-tail rows (a 5, n 1, e, h, r) split off as 4PIR, HELD, never loaded.
+# Changed (f.61 reading only, F61TOK rows, per token): f.61's 4-over-Pi is its own class 4PIPI: L11 9 a/n grade M (Tomokiyo S5 alone), L01 12 unread.
+# Not merged: H240 as proposed (both f.61 4PI a/n), not endorsed by VERIFY-F61-V8.
+# Key source: period (fr.3982 f.101r, fr.3984 f.188r decipherments) for 4PI d/q; period (H24 cell, f.101r/f.188r/f.274r) linked by blind shape for ZHOOK; published (Tomokiyo S5, credited) for 4PIPI L11 9. v6 header follows:
+# key_period_v6.tsv -- F61-FAMILY-10 (key v6), 29 Sept 2026: key_period_v5.tsv plus VERIFY-F61-V7 (endorse) and the endorsed part of VERIFY-F61-V6 (AUDIT.md). Built by build_key_v6.py; do not hand-edit.
+# Changed (pooled): HASH4 d/i/q -> CELL d/q (the 4-head); f.188r HASH4 i 10 / x 3 moved to H24 (the 2#); H24 -> CELL i/x; HASHLOOP (the looped hash) a separate UNREAD row, never pooled into HASH4.
+# Changed (f.61 reading only, F61READ rows, load_key_v6(f61=True)): 4TRI c/p, 4STEM a/n (L11), grade S. No pooled 4STEM a/n cell.
+# Not merged (await VERIFY-F61-V8): ZHOOK = 2# (H235), the 4PI split (H233-H240).
+# Key source: period (fr.3982 f.101r, fr.3984 f.188r, fr.3984 f.274r decipherments) for the hash cells; period (fr.3984 f.176r / fol. 177r) for the F61READ rows. v5 header follows:
+# key_period_v5.tsv -- F61-FAMILY-9 (key v5), 29 Sept 2026: key_period_v4.tsv plus the four cells VERIFY-F61-V5 endorsed (AUDIT.md), from key_period_f176.tsv (fr.3984 f.176r / fol. 177r). Built by build_key_v5.py; do not hand-edit.
+# Changed: VBAR_A s/t -> g/t; EBR_B -> l/y (form-B brackets only; EBR_A and unsplit EBR untouched); SBS b/e/o -> b/o (f.176r reader code DBL written as SBS, nothing merged into DBL); ZHOOK (unread) -> i/x (grade S on f.61).
+# Not merged: 4STEM p/c (conflict with f.108r), HASH4 d/q (leaf's own i share), BETA m/z (n too small), DBL o (reader code), 4PI p/c, CROSS s.
+# CELL rows are the class's whole letter set (exempt from the 0.1 x leaf-total rule); read with build_key_v5.load_key_v5.
+# Key source: period (fr.3984 f.176r/fol. 177r) for the CELL rows; v4's own sources for the rest. v4 header follows:
+# key_period_v4.tsv -- F61-FAMILY-6 (key v4), 28 Sept 2026: family period key merged by merge_period_keys.py from key_period_f274_v4.tsv, key_period_f101_v4.tsv, key_period_f188_v4.tsv.
+# Key source: period (CLAUDE.md rule 10 vocabulary). One row per (class, letter, leaf): both leaves' rows are kept, nothing summed across leaves, nothing fitted.
+# Cross-leaf conflicts on the top letter (recorded, not resolved; grade M where the choice is by context): C43: fr.3984 f.274r top a ({'a': 16, 'n': 8}); fr.3982 f.101r top a ({'a': 35, 'n': 33, 'o': 2, 'q': 2, 'u': 2}); fr.3984 f.188r/f.184r top n ({'n': 27, 'a': 24, 'e': 2}) | CH: fr.3982 f.101r top e ({'e': 3}); fr.3984 f.188r/f.184r top m ({'m': 3}) | OTHER: fr.3984 f.274r top t ({'t': 2}); fr.3982 f.101r top e ({'e': 14, 'i': 11, 'c': 6, 'l': 6, 'n': 5, 'q': 5, 't': 5, 'u': 5, 's': 4, 'b': 3, 'r': 3, 'd': 2, 'g': 2, 'm': 2, 'p': 2}); fr.3984 f.188r/f.184r top q ({'q': 14, 'p': 4, 'r': 4, 's': 4, 'e': 3, 't': 3, 'c': 2}) | RSIGN: fr.3982 f.101r top m ({'m': 11, 't': 5, 'c': 3, 'p': 3, 'a': 2, 'e': 2, 'n': 2}); fr.3984 f.188r/f.184r top n ({'n': 2, 's': 2})
+class	letter	n	leaf	bands
+4HOOK	n	73	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	a	69	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	c	7	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	l	7	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	t	7	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	e	4	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	o	4	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	r	4	fr.3982 f.101r	est from 42 sorted tokens
+4HOOK	n	7	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+4HOOK	a	5	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+4PI	d	5	fr.3982 f.101r	L01,L02,L05
+4PI	n	3	fr.3982 f.101r	L03,L17
+4PI	q	2	fr.3982 f.101r	L02,L06
+4PI	a	1	fr.3982 f.101r	L01
+4PI	c	1	fr.3982 f.101r	L21
+4PI	m	1	fr.3982 f.101r	L41
+4PI	p	1	fr.3982 f.101r	L17
+4PI	s	1	fr.3982 f.101r	L42
+4PI	d	9	fr.3984 f.188r/f.184r	L09,L10,L12,L13,L14,L15
+#moved-to-4PIR-v6	4PI	a	5	fr.3984 f.188r/f.184r	L17,L18,L20,L22
+4PI	-	3	fr.3984 f.188r/f.184r	L11,L15,L19
+4PI	q	2	fr.3984 f.188r/f.184r	L09,L11
+#moved-to-4PIR-v6	4PI	e	1	fr.3984 f.188r/f.184r	L19
+#moved-to-4PIR-v6	4PI	h	1	fr.3984 f.188r/f.184r	L20
+#moved-to-4PIR-v6	4PI	n	1	fr.3984 f.188r/f.184r	L20
+#moved-to-4PIR-v6	4PI	r	1	fr.3984 f.188r/f.184r	L09
+4STEM	n	13	fr.3982 f.101r	L09,L10,L11,L12,L18,L23,L25,L27,L41,L44
+4STEM	a	12	fr.3982 f.101r	L01,L04,L10,L11,L24,L25,L33,L42,L44,L45,L46
+4STEM	c	10	fr.3982 f.101r	L04,L26,L27,L28,L29,L30,L32,L34,L43,L46
+4STEM	e	9	fr.3982 f.101r	L01,L08,L09,L11,L23,L32,L36,L46
+4STEM	-	7	fr.3982 f.101r	L18,L21,L22,L25,L41,L43
+4STEM	d	7	fr.3982 f.101r	L01,L09,L10,L15,L26,L29,L30
+4STEM	p	6	fr.3982 f.101r	L02,L04,L10,L31,L34,L38
+4STEM	o	4	fr.3982 f.101r	L03,L08,L17,L26
+4STEM	q	4	fr.3982 f.101r	L06,L09,L30,L45
+4STEM	i	3	fr.3982 f.101r	L10,L13,L42
+4STEM	r	3	fr.3982 f.101r	L09,L17,L45
+4STEM	t	2	fr.3982 f.101r	L09,L34
+4STEM	b	1	fr.3982 f.101r	L17
+4STEM	s	1	fr.3982 f.101r	L02
+4STEM	u	1	fr.3982 f.101r	L41
+4STEM	y	1	fr.3982 f.101r	L19
+4STEM	n	15	fr.3984 f.188r/f.184r	L02,L03,L05,L07,L08,L19,L21
+4STEM	a	12	fr.3984 f.188r/f.184r	L02,L04,L05,L07,L08,L17,L21,L22
+4STEM	-	6	fr.3984 f.188r/f.184r	L05,L07,L17,L21,L22
+4STEM	d	3	fr.3984 f.188r/f.184r	L01,L03,L08
+4STEM	e	3	fr.3984 f.188r/f.184r	L01,L04
+4STEM	s	3	fr.3984 f.188r/f.184r	L01,L04
+4STEM	b	2	fr.3984 f.188r/f.184r	L19,L20
+4STEM	r	2	fr.3984 f.188r/f.184r	L08
+4STEM	i	1	fr.3984 f.188r/f.184r	L01
+4STEM	l	1	fr.3984 f.188r/f.184r	L01
+4STEM	m	1	fr.3984 f.188r/f.184r	L20
+4STEM	x	1	fr.3984 f.188r/f.184r	L01
+4STEM	y	1	fr.3984 f.188r/f.184r	L04
+4TRI	c	26	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	p	25	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	d	10	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	n	10	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	a	9	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	s	7	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	g	4	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	q	4	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	r	4	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	t	4	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	u	4	fr.3982 f.101r	est from 48 sorted tokens
+4TRI	c	11	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	p	10	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	t	3	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	e	2	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	n	2	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	d	1	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+4TRI	s	1	fr.3984 f.188r/f.184r	est from 30 sorted tokens
+BETA	m	31	fr.3982 f.101r	L02,L03,L04,L09,L10,L11,L12,L13,L14,L15,L17,L18,L19,L20,L21,L22,L24,L30,L34,L36,L39,L44
+BETA	n	5	fr.3982 f.101r	L01,L16,L23,L33,L45
+BETA	-	3	fr.3982 f.101r	L03,L32,L45
+BETA	r	3	fr.3982 f.101r	L14,L23,L24
+BETA	s	3	fr.3982 f.101r	L01,L23,L27
+BETA	a	2	fr.3982 f.101r	L20,L23
+BETA	d	2	fr.3982 f.101r	L08,L20
+BETA	z	2	fr.3982 f.101r	L20,L22
+BETA	e	1	fr.3982 f.101r	L01
+BETA	i	1	fr.3982 f.101r	L17
+BETA	l	1	fr.3982 f.101r	L33
+BETA	p	1	fr.3982 f.101r	L28
+BETA	m	9	fr.3984 f.188r/f.184r	L01,L02,L09,L13,L14,L15
+BETA	s	2	fr.3984 f.188r/f.184r	L02,L16
+BETA	a	1	fr.3984 f.188r/f.184r	L20
+BETA	d	1	fr.3984 f.188r/f.184r	L20
+BETA	m	2	fr.3984 f.274r	L05,L06
+BETA	l	1	fr.3984 f.274r	L05
+BETA	z	1	fr.3984 f.274r	L06
+C43	a	35	fr.3982 f.101r	L01,L02,L03,L04,L05,L06,L07,L08,L33,L41,L44,L45
+C43	n	33	fr.3982 f.101r	L01,L02,L03,L04,L05,L06,L07,L08,L25,L34
+C43	o	2	fr.3982 f.101r	L01,L41
+C43	q	2	fr.3982 f.101r	L01,L03
+C43	u	2	fr.3982 f.101r	L01,L03
+C43	l	1	fr.3982 f.101r	L01
+C43	t	1	fr.3982 f.101r	L08
+C43	n	27	fr.3984 f.188r/f.184r	L09,L10,L11,L12,L13,L14,L15
+C43	a	24	fr.3984 f.188r/f.184r	L09,L10,L11,L12,L13,L14,L15
+C43	-	3	fr.3984 f.188r/f.184r	L10,L14
+C43	e	2	fr.3984 f.188r/f.184r	L11
+C43	c	1	fr.3984 f.188r/f.184r	L10
+C43	d	1	fr.3984 f.188r/f.184r	L09
+C43	i	1	fr.3984 f.188r/f.184r	L10
+C43	m	1	fr.3984 f.188r/f.184r	L09
+C43	p	1	fr.3984 f.188r/f.184r	L10
+C43	s	1	fr.3984 f.188r/f.184r	L10
+C43	a	16	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+C43	n	8	fr.3984 f.274r	L02,L03,L04,L06
+C43	-	2	fr.3984 f.274r	L04
+C6	e	2	fr.3982 f.101r	L42,L45
+C6	e	1	fr.3984 f.188r/f.184r	L04
+CA	-	2	fr.3982 f.101r	L12,L21
+CA	c	1	fr.3982 f.101r	L41
+CA	q	1	fr.3982 f.101r	L08
+CA	s	1	fr.3982 f.101r	L17
+CA	t	1	fr.3982 f.101r	L21
+CA	c	1	fr.3984 f.188r/f.184r	L17
+CA	p	1	fr.3984 f.188r/f.184r	L21
+CA	s	1	fr.3984 f.188r/f.184r	L02
+CH	e	3	fr.3982 f.101r	L06,L23,L27
+CH	-	1	fr.3982 f.101r	L45
+CH	m	1	fr.3982 f.101r	L42
+CH	u	1	fr.3982 f.101r	L42
+CH	m	3	fr.3984 f.188r/f.184r	L02,L19,L21
+CH	-	1	fr.3984 f.188r/f.184r	L08
+CH	n	1	fr.3984 f.188r/f.184r	L20
+CH	u	1	fr.3984 f.188r/f.184r	L08
+CROSS	p	1	fr.3982 f.101r	L26
+DBL	e	10	fr.3982 f.101r	L10,L11,L21,L34,L35,L36,L37,L39,L40
+DBL	r	6	fr.3982 f.101r	L34,L35,L36,L37,L38,L39
+DBL	u	6	fr.3982 f.101r	L08,L25,L34,L39,L40
+DBL	t	2	fr.3982 f.101r	L38,L39
+DBL	i	1	fr.3982 f.101r	L39
+DBL	n	1	fr.3982 f.101r	L36
+DBL	p	1	fr.3982 f.101r	L01
+DBL	q	1	fr.3982 f.101r	L10
+DBL	s	1	fr.3982 f.101r	L37
+EBR	l	7	fr.3984 f.274r	L01,L03,L04,L06
+EBR	-	1	fr.3984 f.274r	L02
+EBR	c	1	fr.3984 f.274r	L02
+EBR	y	1	fr.3984 f.274r	L05
+EBR_A	s	18	fr.3982 f.101r	L17,L18,L19,L20,L21,L23,L24,L42,L44
+EBR_A	l	13	fr.3982 f.101r	L02,L11,L13,L20,L21,L24,L35,L42,L43,L44
+EBR_A	a	8	fr.3982 f.101r	L20,L21,L23,L33,L41,L43
+EBR_A	y	4	fr.3982 f.101r	L19,L20,L44
+EBR_A	-	3	fr.3982 f.101r	L20,L23,L45
+EBR_A	f	3	fr.3982 f.101r	L20,L24
+EBR_A	p	3	fr.3982 f.101r	L20,L22,L23
+EBR_A	r	3	fr.3982 f.101r	L07,L22,L24
+EBR_A	t	3	fr.3982 f.101r	L21
+EBR_A	k	2	fr.3982 f.101r	L22,L24
+EBR_A	e	1	fr.3982 f.101r	L17
+EBR_A	h	1	fr.3982 f.101r	L22
+EBR_A	i	1	fr.3982 f.101r	L45
+EBR_A	n	1	fr.3982 f.101r	L43
+EBR_A	u	1	fr.3982 f.101r	L24
+EBR_A	g	1	fr.3984 f.188r/f.184r	L17
+EBR_A	l	1	fr.3984 f.188r/f.184r	L05
+ELOOP	r	2	fr.3982 f.101r	L09,L23
+ELOOP	-	1	fr.3982 f.101r	L01
+ELOOP	c	1	fr.3982 f.101r	L21
+ELOOP	q	1	fr.3982 f.101r	L41
+ELOOP	t	1	fr.3982 f.101r	L12
+ELOOP	o	1	fr.3984 f.274r	L05
+H24	i	170	fr.3982 f.101r	L01,L02,L03,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L16,L17,L18,L19,L20,L21,L22,L23,L24,L25,L26,L27,L28,L29,L30,L31,L32,L33,L34,L35,L36,L37,L38,L39,L40,L41,L42,L43,L44,L45,L46
+H24	-	9	fr.3982 f.101r	L02,L08,L11,L12,L15,L20,L22,L23
+H24	n	9	fr.3982 f.101r	L18,L26,L27,L29,L31,L33,L38,L39,L43
+H24	e	8	fr.3982 f.101r	L03,L10,L15,L18,L26,L41,L45,L46
+H24	y	7	fr.3982 f.101r	L01,L03,L14,L15,L21,L36,L45
+H24	u	5	fr.3982 f.101r	L01,L05,L20,L26,L36
+H24	x	5	fr.3982 f.101r	L02,L05,L06,L14
+H24	c	4	fr.3982 f.101r	L19,L36,L37
+H24	d	4	fr.3982 f.101r	L02,L08,L10,L46
+H24	o	4	fr.3982 f.101r	L03,L09,L26,L40
+H24	a	3	fr.3982 f.101r	L09,L36,L37
+H24	g	3	fr.3982 f.101r	L22,L46
+H24	s	3	fr.3982 f.101r	L14,L28,L46
+H24	j	2	fr.3982 f.101r	L30,L31
+H24	p	2	fr.3982 f.101r	L11,L43
+H24	r	2	fr.3982 f.101r	L11,L29
+H24	t	2	fr.3982 f.101r	L14,L36
+H24	m	1	fr.3982 f.101r	L39
+H24	q	1	fr.3982 f.101r	L29
+H24	i	33	fr.3984 f.188r/f.184r	L01,L02,L04,L05,L06,L08,L09,L10,L11,L13,L14,L15,L17,L19,L20,L21,L22
+H24	-	3	fr.3984 f.188r/f.184r	L10,L11,L14
+H24	j	3	fr.3984 f.188r/f.184r	L05,L15,L21
+H24	a	2	fr.3984 f.188r/f.184r	L08,L19
+H24	e	2	fr.3984 f.188r/f.184r	L08,L10
+H24	d	1	fr.3984 f.188r/f.184r	L19
+H24	f	1	fr.3984 f.188r/f.184r	L04
+H24	l	1	fr.3984 f.188r/f.184r	L10
+H24	m	1	fr.3984 f.188r/f.184r	L20
+H24	n	1	fr.3984 f.188r/f.184r	L20
+H24	o	1	fr.3984 f.188r/f.184r	L17
+H24	r	1	fr.3984 f.188r/f.184r	L19
+H24	t	1	fr.3984 f.188r/f.184r	L04
+H24	x	1	fr.3984 f.188r/f.184r	L10
+H24	y	1	fr.3984 f.188r/f.184r	L12
+H24	i	6	fr.3984 f.274r	L01,L02,L06
+H24	j	2	fr.3984 f.274r	L05,L06
+H24	y	2	fr.3984 f.274r	L03,L04
+H24	-	1	fr.3984 f.274r	L04
+H24	x	1	fr.3984 f.274r	L02
+HASH4	d	43	fr.3982 f.101r	L03,L04,L05,L06,L07,L11,L12,L14,L15,L18,L20,L21,L22,L24,L25,L26,L28,L29,L30,L31,L32,L33,L35,L36,L38,L39,L40
+HASH4	q	24	fr.3982 f.101r	L07,L10,L12,L14,L15,L17,L18,L19,L31,L34,L35,L36,L37,L39,L41,L42,L43
+HASH4	p	7	fr.3982 f.101r	L01,L13,L15,L31,L36,L37,L41
+HASH4	-	6	fr.3982 f.101r	L21,L23,L26,L27,L34,L44
+HASH4	s	5	fr.3982 f.101r	L29,L33,L43,L45
+HASH4	b	4	fr.3982 f.101r	L01,L31,L40,L46
+HASH4	f	4	fr.3982 f.101r	L16,L22,L25,L32
+HASH4	i	4	fr.3982 f.101r	L02,L20,L38,L45
+HASH4	n	3	fr.3982 f.101r	L02,L05,L12
+HASH4	t	3	fr.3982 f.101r	L03,L26,L33
+HASH4	a	2	fr.3982 f.101r	L14,L30
+HASH4	c	2	fr.3982 f.101r	L38,L41
+HASH4	o	2	fr.3982 f.101r	L24,L40
+HASH4	r	2	fr.3982 f.101r	L09,L26
+HASH4	y	2	fr.3982 f.101r	L28,L45
+HASH4	e	1	fr.3982 f.101r	L25
+HASH4	d	12	fr.3984 f.188r/f.184r	L02,L05,L13,L17,L19,L20,L21,L22
+#moved-to-H24-v5	HASH4	i	10	fr.3984 f.188r/f.184r	L04,L09,L11,L14,L15,L20
+HASH4	-	4	fr.3984 f.188r/f.184r	L01,L07,L19
+HASH4	q	3	fr.3984 f.188r/f.184r	L04,L08,L17
+#moved-to-H24-v5	HASH4	x	3	fr.3984 f.188r/f.184r	L09,L10
+HASH4	e	2	fr.3984 f.188r/f.184r	L02,L20
+HASH4	n	2	fr.3984 f.188r/f.184r	L04,L08
+HASH4	o	2	fr.3984 f.188r/f.184r	L19,L20
+HASH4	u	2	fr.3984 f.188r/f.184r	L01,L08
+HASH4	a	1	fr.3984 f.188r/f.184r	L04
+HASH4	s	1	fr.3984 f.188r/f.184r	L08
+HASH4	y	1	fr.3984 f.188r/f.184r	L10
+HASH4	d	5	fr.3984 f.274r	L01,L02,L03,L06
+HASH4	q	5	fr.3984 f.274r	L01,L02,L04,L05
+HASH4	-	1	fr.3984 f.274r	L04
+INF	u	130	fr.3982 f.101r	est from 28 sorted tokens
+INF	h	10	fr.3982 f.101r	est from 28 sorted tokens
+INF	-	7	fr.3982 f.101r	L37,L39,L42,L44
+INF	r	4	fr.3982 f.101r	est from 28 sorted tokens
+INF	n	3	fr.3982 f.101r	est from 28 sorted tokens
+INF	c	2	fr.3982 f.101r	est from 28 sorted tokens
+INF	q	2	fr.3982 f.101r	est from 28 sorted tokens
+INF	t	2	fr.3982 f.101r	est from 28 sorted tokens
+INF	a	1	fr.3982 f.101r	L41
+INF	o	1	fr.3982 f.101r	L43
+INF	v	1	fr.3982 f.101r	L38
+INF	u	31	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+INF	-	4	fr.3984 f.188r/f.184r	L04,L17
+INF	e	4	fr.3984 f.188r/f.184r	L04,L19,L20
+INF	h	3	fr.3984 f.188r/f.184r	L18,L19,L22
+INF	r	3	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+INF	v	3	fr.3984 f.188r/f.184r	est from 12 sorted tokens
+INF	l	2	fr.3984 f.188r/f.184r	L08,L17
+INF	a	1	fr.3984 f.188r/f.184r	L20
+INF	c	1	fr.3984 f.188r/f.184r	L04
+INF	p	1	fr.3984 f.188r/f.184r	L22
+INF	t	1	fr.3984 f.188r/f.184r	L19
+INF	u	16	fr.3984 f.274r	L01,L02,L03,L04,L05,L06
+INF	h	1	fr.3984 f.274r	L03
+ISH	l	2	fr.3982 f.101r	L17,L19
+ISH	-	1	fr.3982 f.101r	L04
+ISH	s	1	fr.3982 f.101r	L30
+ISH	v	1	fr.3982 f.101r	L25
+ISH	l	3	fr.3984 f.188r/f.184r	L03,L04,L08
+ISH	a	1	fr.3984 f.188r/f.184r	L20
+ISH	y	1	fr.3984 f.188r/f.184r	L22
+LL	e	1	fr.3984 f.188r/f.184r	L01
+LOOPBAR	e	1	fr.3982 f.101r	L09
+LOOPBAR	u	1	fr.3984 f.188r/f.184r	L19
+LOOPSTEM1	q	7	fr.3982 f.101r	L13,L16,L20,L23,L29,L40,L45
+LOOPSTEM1	s	3	fr.3982 f.101r	L21,L28,L32
+LOOPSTEM1	-	2	fr.3982 f.101r	L23,L26
+LOOPSTEM1	b	1	fr.3982 f.101r	L46
+LOOPSTEM1	c	1	fr.3982 f.101r	L45
+LOOPSTEM1	e	1	fr.3982 f.101r	L20
+LOOPSTEM1	r	1	fr.3982 f.101r	L25
+LOOPSTEM1	u	1	fr.3982 f.101r	L09
+OTHER	-	32	fr.3982 f.101r	L01,L03,L07,L09,L12,L14,L15,L16,L18,L19,L22,L24,L25,L31,L32,L34,L37,L38,L39,L40,L43,L46
+OTHER	e	14	fr.3982 f.101r	L01,L03,L05,L08,L10,L21,L26,L29,L31,L35,L38,L40
+OTHER	i	11	fr.3982 f.101r	L16,L17,L21,L23,L25,L28,L30,L33,L34,L43
+OTHER	c	6	fr.3982 f.101r	L10,L12,L20,L26,L37,L40
+OTHER	l	6	fr.3982 f.101r	L07,L22,L31,L32,L39
+OTHER	n	5	fr.3982 f.101r	L01,L09,L23
+OTHER	q	5	fr.3982 f.101r	L16,L17,L27,L35,L44
+OTHER	t	5	fr.3982 f.101r	L11,L28,L38,L45
+OTHER	u	5	fr.3982 f.101r	L08,L12,L27,L32,L37
+OTHER	s	4	fr.3982 f.101r	L04,L08,L17
+OTHER	b	3	fr.3982 f.101r	L06,L09,L46
+OTHER	r	3	fr.3982 f.101r	L10,L11,L27
+OTHER	d	2	fr.3982 f.101r	L33,L37
+OTHER	g	2	fr.3982 f.101r	L28,L42
+OTHER	m	2	fr.3982 f.101r	L14,L27
+OTHER	p	2	fr.3982 f.101r	L01,L33
+OTHER	a	1	fr.3982 f.101r	L12
+OTHER	o	1	fr.3982 f.101r	L19
+OTHER	z	1	fr.3982 f.101r	L08
+OTHER	q	14	fr.3984 f.188r/f.184r	L02,L04,L06,L11,L12,L13,L14,L15,L21,L22
+OTHER	-	5	fr.3984 f.188r/f.184r	L05,L08,L20
+OTHER	p	4	fr.3984 f.188r/f.184r	L01,L08,L09,L13
+OTHER	r	4	fr.3984 f.188r/f.184r	L04,L08,L19,L20
+OTHER	s	4	fr.3984 f.188r/f.184r	L01,L02,L04
+OTHER	e	3	fr.3984 f.188r/f.184r	L03,L08,L15
+OTHER	t	3	fr.3984 f.188r/f.184r	L05,L10,L11
+OTHER	c	2	fr.3984 f.188r/f.184r	L04
+OTHER	a	1	fr.3984 f.188r/f.184r	L04
+OTHER	d	1	fr.3984 f.188r/f.184r	L08
+OTHER	i	1	fr.3984 f.188r/f.184r	L11
+OTHER	m	1	fr.3984 f.188r/f.184r	L19
+OTHER	u	1	fr.3984 f.188r/f.184r	L16
+OTHER	t	2	fr.3984 f.274r	L05,L06
+OTHER	-	1	fr.3984 f.274r	L05
+PHI	e	198	fr.3982 f.101r	est from 50 sorted tokens
+PHI	r	75	fr.3982 f.101r	est from 50 sorted tokens
+PHI	u	18	fr.3982 f.101r	est from 50 sorted tokens
+PHI	b	12	fr.3982 f.101r	est from 50 sorted tokens
+PHI	l	8	fr.3982 f.101r	est from 50 sorted tokens
+PHI	o	7	fr.3982 f.101r	est from 50 sorted tokens
+PHI	f	6	fr.3982 f.101r	est from 50 sorted tokens
+PHI	i	6	fr.3982 f.101r	est from 50 sorted tokens
+PHI	t	6	fr.3982 f.101r	est from 50 sorted tokens
+PHI	h	2	fr.3982 f.101r	est from 50 sorted tokens
+PHI	n	2	fr.3982 f.101r	est from 50 sorted tokens
+PHI	e	56	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	r	23	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	q	5	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	c	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	p	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	t	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	u	2	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+PHI	o	1	fr.3984 f.188r/f.184r	est from 40 sorted tokens
+RSIGN	-	12	fr.3982 f.101r	L01,L03,L07,L17,L18,L24,L30,L31,L35,L43,L45
+RSIGN	m	11	fr.3982 f.101r	L02,L06,L08,L15,L21,L22,L26,L44
+RSIGN	t	5	fr.3982 f.101r	L06,L07,L08,L19,L32
+RSIGN	c	3	fr.3982 f.101r	L05,L42,L45
+RSIGN	p	3	fr.3982 f.101r	L08,L27,L32
+RSIGN	a	2	fr.3982 f.101r	L22,L45
+RSIGN	e	2	fr.3982 f.101r	L28,L36
+RSIGN	n	2	fr.3982 f.101r	L08,L23
+RSIGN	d	1	fr.3982 f.101r	L45
+RSIGN	u	1	fr.3982 f.101r	L14
+RSIGN	-	3	fr.3984 f.188r/f.184r	L17,L21,L22
+RSIGN	n	2	fr.3984 f.188r/f.184r	L21,L22
+RSIGN	s	2	fr.3984 f.188r/f.184r	L06,L17
+RSIGN	o	1	fr.3984 f.188r/f.184r	L20
+VBAR_B	s	27	fr.3982 f.101r	L10,L11,L12,L13,L14,L15,L16,L33,L37,L39
+VBAR_B	-	4	fr.3982 f.101r	L12,L16,L34
+VBAR_B	a	3	fr.3982 f.101r	L11,L14
+VBAR_B	f	2	fr.3982 f.101r	L13,L43
+VBAR_B	l	1	fr.3982 f.101r	L12
+VBAR_B	n	1	fr.3982 f.101r	L14
+VBAR_B	y	1	fr.3982 f.101r	L14
+VBAR_B	s	30	fr.3984 f.188r/f.184r	L17,L19,L20,L21,L22
+VBAR_B	-	2	fr.3984 f.188r/f.184r	L17
+VBAR_B	e	1	fr.3984 f.188r/f.184r	L19
+VBAR_B	l	1	fr.3984 f.188r/f.184r	L19
+VBAR_B	x	1	fr.3984 f.188r/f.184r	L20
+VBAR_B	z	1	fr.3984 f.188r/f.184r	L21
+ZBAR	s	26	fr.3982 f.101r	L01,L02,L03,L04,L05,L06,L07,L08,L10,L30,L40
+ZBAR	-	6	fr.3982 f.101r	L03,L04,L05,L06,L35,L42
+ZBAR	a	4	fr.3982 f.101r	L01,L07
+ZBAR	p	4	fr.3982 f.101r	L14,L21,L37,L38
+ZBAR	u	4	fr.3982 f.101r	L01,L03,L08
+ZBAR	e	2	fr.3982 f.101r	L06,L28
+ZBAR	f	2	fr.3982 f.101r	L06,L32
+ZBAR	l	2	fr.3982 f.101r	L02,L08
+ZBAR	d	1	fr.3982 f.101r	L17
+ZBAR	r	1	fr.3982 f.101r	L13
+ZBAR	t	1	fr.3982 f.101r	L05
+ZBAR	y	1	fr.3982 f.101r	L03
+ZBAR	z	1	fr.3982 f.101r	L05
+ZBAR	s	28	fr.3984 f.188r/f.184r	L01,L02,L04,L05,L08,L09,L11,L12,L13,L14,L15
+ZBAR	-	5	fr.3984 f.188r/f.184r	L07,L12,L14,L15
+ZBAR	f	5	fr.3984 f.188r/f.184r	L07,L10,L11,L13,L14
+ZBAR	l	3	fr.3984 f.188r/f.184r	L01,L04
+ZBAR	r	2	fr.3984 f.188r/f.184r	L04,L13
+ZBAR	z	2	fr.3984 f.188r/f.184r	L15,L18
+ZBAR	c	1	fr.3984 f.188r/f.184r	L13
+ZBAR	e	1	fr.3984 f.188r/f.184r	L09
+ZBAR	i	1	fr.3984 f.188r/f.184r	L08
+ZBAR	n	1	fr.3984 f.188r/f.184r	L04
+ZBAR	o	1	fr.3984 f.188r/f.184r	L12
+ZBAR	t	1	fr.3984 f.188r/f.184r	L10
+ZBAR	u	1	fr.3984 f.188r/f.184r	L01
+#superseded-v4	EBR_B	l	104	fr.3982 f.101r	L01,L02,L03,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L16,L17,L18,L19,L22,L23,L24,L28,L29,L30,L31,L32,L33,L34,L35,L36,L37,L38,L39,L40,L41,L42,L44,L45
+#superseded-v4	EBR_B	-	12	fr.3982 f.101r	L10,L12,L21,L27,L32,L36,L37,L39,L40,L46
+#superseded-v4	EBR_B	y	10	fr.3982 f.101r	L05,L10,L11,L17,L23,L28,L29,L30,L43
+#superseded-v4	EBR_B	s	8	fr.3982 f.101r	L05,L07,L09,L10,L11,L19,L20,L23
+#superseded-v4	EBR_B	e	6	fr.3982 f.101r	L11,L12,L18,L25,L28
+#superseded-v4	EBR_B	a	3	fr.3982 f.101r	L09,L12,L36
+#superseded-v4	EBR_B	c	3	fr.3982 f.101r	L01,L08,L43
+#superseded-v4	EBR_B	f	2	fr.3982 f.101r	L29
+#superseded-v4	EBR_B	n	2	fr.3982 f.101r	L24,L36
+#superseded-v4	EBR_B	r	2	fr.3982 f.101r	L10,L14
+#superseded-v4	EBR_B	t	2	fr.3982 f.101r	L02,L22
+#superseded-v4	EBR_B	u	2	fr.3982 f.101r	L09,L14
+#superseded-v4	EBR_B	d	1	fr.3982 f.101r	L25
+#superseded-v4	EBR_B	o	1	fr.3982 f.101r	L23
+#superseded-v4	EBR_B	l	41	fr.3984 f.188r/f.184r	L02,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L17,L19,L21,L22
+#superseded-v4	EBR_B	s	3	fr.3984 f.188r/f.184r	L06,L16,L20
+#superseded-v4	EBR_B	-	1	fr.3984 f.188r/f.184r	L21
+#superseded-v4	EBR_B	a	1	fr.3984 f.188r/f.184r	L04
+#superseded-v4	EBR_B	c	1	fr.3984 f.188r/f.184r	L19
+#superseded-v4	EBR_B	e	1	fr.3984 f.188r/f.184r	L04
+#superseded-v4	EBR_B	o	1	fr.3984 f.188r/f.184r	L20
+#superseded-v4	EBR_B	t	1	fr.3984 f.188r/f.184r	L04
+#superseded-v4	EBR_B	y	1	fr.3984 f.188r/f.184r	L13
+#superseded-v4	SBS	o	79	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	b	37	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	e	22	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	u	6	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	q	2	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	s	2	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	t	2	fr.3982 f.101r	est from 42 sorted tokens
+#superseded-v4	SBS	o	19	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	b	12	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	e	9	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	u	4	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	n	2	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	r	2	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	s	2	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	SBS	f	1	fr.3984 f.188r/f.184r	est from 36 sorted tokens
+#superseded-v4	VBAR_A	t	138	fr.3982 f.101r	L02,L03,L04,L05,L06,L07,L09,L10,L11,L12,L13,L14,L15,L16,L17,L18,L19,L20,L21,L22,L23,L24,L25,L26,L27,L28,L30,L31,L32,L33,L34,L35,L36,L37,L38,L39,L40,L41,L42,L43,L44,L45,L46
+#superseded-v4	VBAR_A	s	93	fr.3982 f.101r	L02,L03,L04,L08,L09,L11,L12,L14,L15,L16,L17,L18,L19,L21,L22,L25,L26,L27,L28,L29,L30,L31,L32,L33,L34,L35,L36,L37,L38,L39,L40,L41,L42,L43,L44,L46
+#superseded-v4	VBAR_A	a	25	fr.3982 f.101r	L05,L09,L18,L23,L26,L27,L28,L29,L31,L33,L36,L37,L39,L41,L42,L45,L46
+#superseded-v4	VBAR_A	-	23	fr.3982 f.101r	L06,L07,L11,L12,L15,L20,L27,L32,L33,L35,L39,L43,L44
+#superseded-v4	VBAR_A	g	18	fr.3982 f.101r	L06,L13,L16,L18,L19,L21,L22,L26,L30,L32,L33,L34,L37,L38,L39,L42
+#superseded-v4	VBAR_A	f	15	fr.3982 f.101r	L04,L06,L07,L10,L24,L26,L30,L32,L33,L34,L35,L40,L43
+#superseded-v4	VBAR_A	i	11	fr.3982 f.101r	L25,L28,L33,L36,L41,L42,L44,L46
+#superseded-v4	VBAR_A	c	9	fr.3982 f.101r	L10,L19,L22,L24,L33,L36,L42,L44
+#superseded-v4	VBAR_A	r	9	fr.3982 f.101r	L01,L10,L23,L28,L41,L43,L44
+#superseded-v4	VBAR_A	u	8	fr.3982 f.101r	L10,L13,L21,L28,L31,L36
+#superseded-v4	VBAR_A	l	6	fr.3982 f.101r	L03,L10,L11,L20,L30,L46
+#superseded-v4	VBAR_A	n	6	fr.3982 f.101r	L13,L25,L27,L33,L45
+#superseded-v4	VBAR_A	o	6	fr.3982 f.101r	L10,L17,L20,L25,L36
+#superseded-v4	VBAR_A	d	5	fr.3982 f.101r	L26,L36,L43,L44,L46
+#superseded-v4	VBAR_A	e	5	fr.3982 f.101r	L02,L17,L28,L33,L38
+#superseded-v4	VBAR_A	y	4	fr.3982 f.101r	L09,L26,L27,L28
+#superseded-v4	VBAR_A	b	3	fr.3982 f.101r	L01,L18,L25
+#superseded-v4	VBAR_A	m	2	fr.3982 f.101r	L29,L43
+#superseded-v4	VBAR_A	p	2	fr.3982 f.101r	L40,L45
+#superseded-v4	VBAR_A	h	1	fr.3982 f.101r	L39
+#superseded-v4	VBAR_A	v	1	fr.3982 f.101r	L29
+#superseded-v4	VBAR_A	z	1	fr.3982 f.101r	L25
+#superseded-v4	VBAR_A	t	41	fr.3984 f.188r/f.184r	L02,L04,L05,L06,L07,L08,L09,L10,L11,L12,L13,L14,L15,L17,L19,L20,L21,L22
+#superseded-v4	VBAR_A	-	8	fr.3984 f.188r/f.184r	L01,L04,L07,L17,L20,L22
+#superseded-v4	VBAR_A	e	4	fr.3984 f.188r/f.184r	L04,L08,L16
+#superseded-v4	VBAR_A	g	3	fr.3984 f.188r/f.184r	L13,L17
+#superseded-v4	VBAR_A	c	2	fr.3984 f.188r/f.184r	L22
+#superseded-v4	VBAR_A	l	2	fr.3984 f.188r/f.184r	L10,L12
+#superseded-v4	VBAR_A	n	2	fr.3984 f.188r/f.184r	L15,L18
+#superseded-v4	VBAR_A	y	2	fr.3984 f.188r/f.184r	L20,L21
+#superseded-v4	VBAR_A	d	1	fr.3984 f.188r/f.184r	L08
+#superseded-v4	VBAR_A	i	1	fr.3984 f.188r/f.184r	L11
+#superseded-v4	VBAR_A	r	1	fr.3984 f.188r/f.184r	L20
+#superseded-v4	ZHOOK	a	1	fr.3982 f.101r	L41
+#superseded-v4	ZHOOK	e	1	fr.3982 f.101r	L08
+#superseded-v4	ZHOOK	r	1	fr.3982 f.101r	L17
+VBAR_A	g	10	fr.3984 f.176r/f.177r	CELL g/t VERIFY-F61-V5; f.176r code VBAR_A; cell 0.55 vs wrong text 0.20; f.108r t5 g2 7/7 p 0.005
+VBAR_A	t	100	fr.3984 f.176r/f.177r	CELL g/t VERIFY-F61-V5; f.176r code VBAR_A; cell 0.55 vs wrong text 0.20; f.108r t5 g2 7/7 p 0.005
+EBR_B	l	95	fr.3984 f.176r/f.177r	CELL l/y VERIFY-F61-V5; f.176r code EBR; f.176r brackets form B (H180 11/11); y = folded i/y of the clear; cell 0.67 vs 0.18
+EBR_B	y	10	fr.3984 f.176r/f.177r	CELL l/y VERIFY-F61-V5; f.176r code EBR (letter i in the folded clear); f.176r brackets form B (H180 11/11); y = folded i/y of the clear; cell 0.67 vs 0.18
+SBS	b	3	fr.3984 f.176r/f.177r	CELL b/o VERIFY-F61-V5; f.176r code SBS; reader code DBL on f.176r is v4's SBS glyph; cell 0.62 (SBS), 0.68 (DBL code)
+SBS	b	3	fr.3984 f.176r/f.177r	CELL b/o VERIFY-F61-V5; f.176r code DBL; reader code DBL on f.176r is v4's SBS glyph; cell 0.62 (SBS), 0.68 (DBL code)
+SBS	o	32	fr.3984 f.176r/f.177r	CELL b/o VERIFY-F61-V5; f.176r code SBS; reader code DBL on f.176r is v4's SBS glyph; cell 0.62 (SBS), 0.68 (DBL code)
+SBS	o	26	fr.3984 f.176r/f.177r	CELL b/o VERIFY-F61-V5; f.176r code DBL; reader code DBL on f.176r is v4's SBS glyph; cell 0.62 (SBS), 0.68 (DBL code)
+#replaced-v6	ZHOOK	i	28	fr.3984 f.176r/f.177r	CELL i/x VERIFY-F61-V5; f.176r code ZHOOK; graded S on f.61 (letter agreement + f.108v gain, no glyph link); cell 0.53 vs 0.23
+#replaced-v6	ZHOOK	x	3	fr.3984 f.176r/f.177r	CELL i/x VERIFY-F61-V5; f.176r code ZHOOK; graded S on f.61 (letter agreement + f.108v gain, no glyph link); cell 0.53 vs 0.23
+H24	i	10	fr.3984 f.188r/f.184r	MOVED from HASH4 by shape, VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); f.188r HASH4-coded i/x rows are the 2# in 10 of 12 tiles; v5 bands L04,L09,L11,L14,L15,L20
+H24	x	3	fr.3984 f.188r/f.184r	MOVED from HASH4 by shape, VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); f.188r HASH4-coded i/x rows are the 2# in 10 of 12 tiles; v5 bands L09,L10
+HASH4	d	43	fr.3982 f.101r	CELL d/q VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 4-head hash; grade C on this leaf
+HASH4	d	12	fr.3984 f.188r/f.184r	CELL d/q VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 4-head hash; grade C on this leaf
+HASH4	d	5	fr.3984 f.274r	CELL d/q VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 4-head hash; grade C on this leaf
+HASH4	q	24	fr.3982 f.101r	CELL d/q VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 4-head hash; grade C on this leaf
+HASH4	q	3	fr.3984 f.188r/f.184r	CELL d/q VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 4-head hash; grade C on this leaf
+HASH4	q	5	fr.3984 f.274r	CELL d/q VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 4-head hash; grade C on this leaf
+H24	i	170	fr.3982 f.101r	CELL i/x VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 2# sign (j/y = i, period spelling); grade C on this leaf
+H24	i	43	fr.3984 f.188r/f.184r	CELL i/x VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 2# sign (j/y = i, period spelling); grade C on this leaf
+H24	i	6	fr.3984 f.274r	CELL i/x VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 2# sign (j/y = i, period spelling); grade C on this leaf
+H24	x	5	fr.3982 f.101r	CELL i/x VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 2# sign (j/y = i, period spelling); grade C on this leaf
+H24	x	4	fr.3984 f.188r/f.184r	CELL i/x VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 2# sign (j/y = i, period spelling); grade C on this leaf
+H24	x	1	fr.3984 f.274r	CELL i/x VERIFY-F61-V7 (setD 2# i/x 38/42, 4-head d/q 37/45, within-leaf p 5e-05; each leaf clears alone); the 2# sign (j/y = i, period spelling); grade C on this leaf
+HASHLOOP	-	0	fr.3984 f.106r; fr.3984 f.108r	UNREAD: the looped hash (f.106r HASH4 looped 5/5 in V7 setD; most of f.108r's HASH4); no period value; a separate class, never pooled into HASH4's counts (VERIFY-F61-V7 caveat 3)
+4TRI	c	5	fr.4715 f.61r	F61READ c/p VERIFY-F61-V6 (f.176r bowl yes c/p 18/3, no 10/39, p 4e-7; f.61 shape = code at 14/14 positions); bowl sign = 4TRI at all 5 f.61 positions, Tomokiyo c/p 5/5; grade S; f.61 reading only
+4TRI	p	0	fr.4715 f.61r	F61READ c/p (cell partner; the 5 in the c row counts f.61 4TRI tokens Tomokiyo reads c or p)
+4STEM	a	1	fr.4715 f.61r	F61READ a/n VERIFY-F61-V6 (f.176r bowl yes c/p 18/3, no 10/39, p 4e-7; f.61 shape = code at 14/14 positions); f.61's single 4STEM token (L11), no bowl; grade S; f.61 reading only, NOT a pooled cell (f.108v's 4STEM is the c/p sign by sequence: a code conflict between leaves, rule 4)
+4STEM	n	0	fr.4715 f.61r	F61READ a/n (cell partner)
+ZHOOK	i	28	fr.3984 f.176r/f.177r	CELL i/x (value unchanged from v5/v6); f.176r code ZHOOK; the 2# sign = H24 cell, glyph link VERIFY-F61-V8 (setF and setG: ZHOOK -> 2# 10/10, f.61 3/3, f.108r 7/7; in-hand distractors 0/27; within-leaf p 5e-05; gate 20/21 each); grade S on f.61 (period value from other hands, linked by blind shape); replaces 'no glyph link'
+ZHOOK	x	3	fr.3984 f.176r/f.177r	CELL i/x (value unchanged from v5/v6); f.176r code ZHOOK; the 2# sign = H24 cell, glyph link VERIFY-F61-V8 (setF and setG: ZHOOK -> 2# 10/10, f.61 3/3, f.108r 7/7; in-hand distractors 0/27; within-leaf p 5e-05; gate 20/21 each); grade S on f.61 (period value from other hands, linked by blind shape); replaces 'no glyph link'
+4PI	d	5	fr.3982 f.101r	CELL d/q VERIFY-F61-V8 (setF and setG: period 4PI rows lettered d/q -> 4-head 12/12; f.108r 4PI 9/9); the 4-head; grade C on this leaf; f.108r's 4PI reads d/q through this cell
+4PI	d	9	fr.3984 f.188r/f.184r	CELL d/q VERIFY-F61-V8 (setF and setG: period 4PI rows lettered d/q -> 4-head 12/12; f.108r 4PI 9/9); the 4-head; grade C on this leaf; f.108r's 4PI reads d/q through this cell
+4PI	q	2	fr.3982 f.101r	CELL d/q VERIFY-F61-V8 (setF and setG: period 4PI rows lettered d/q -> 4-head 12/12; f.108r 4PI 9/9); the 4-head; grade C on this leaf; f.108r's 4PI reads d/q through this cell
+4PI	q	2	fr.3984 f.188r/f.184r	CELL d/q VERIFY-F61-V8 (setF and setG: period 4PI rows lettered d/q -> 4-head 12/12; f.108r 4PI 9/9); the 4-head; grade C on this leaf; f.108r's 4PI reads d/q through this cell
+4PIR	a	5	fr.3984 f.188r/f.184r	HELD: the 4-with-r-tail form (V8 'Finding for the key'; setF 'E 4r-like', setG 'N 4 + r-like tail'), split from 4PI before any further pooling; no value endorsed, may be C43 miscoded (untested); never loaded; v6 bands L17,L18,L20,L22
+4PIR	e	1	fr.3984 f.188r/f.184r	HELD: the 4-with-r-tail form (V8 'Finding for the key'; setF 'E 4r-like', setG 'N 4 + r-like tail'), split from 4PI before any further pooling; no value endorsed, may be C43 miscoded (untested); never loaded; v6 bands L19
+4PIR	h	1	fr.3984 f.188r/f.184r	HELD: the 4-with-r-tail form (V8 'Finding for the key'; setF 'E 4r-like', setG 'N 4 + r-like tail'), split from 4PI before any further pooling; no value endorsed, may be C43 miscoded (untested); never loaded; v6 bands L20
+4PIR	n	1	fr.3984 f.188r/f.184r	HELD: the 4-with-r-tail form (V8 'Finding for the key'; setF 'E 4r-like', setG 'N 4 + r-like tail'), split from 4PI before any further pooling; no value endorsed, may be C43 miscoded (untested); never loaded; v6 bands L20
+4PIR	r	1	fr.3984 f.188r/f.184r	HELD: the 4-with-r-tail form (V8 'Finding for the key'; setF 'E 4r-like', setG 'N 4 + r-like tail'), split from 4PI before any further pooling; no value endorsed, may be C43 miscoded (untested); never loaded; v6 bands L09
+4PIPI	a	0	fr.4715 f.61r	F61TOK L11 9 a/n grade M: f.61's 4-over-Pi (a separate sign from the 4-head, VERIFY-F61-V8 P2: setF/setG E,E '4 over Pi'); value from Tomokiyo S5's n alone, no period glyph (V8 E<->a/n read-out failed); f.61 reading only
+4PIPI	n	1	fr.4715 f.61r	F61TOK L11 9 a/n (cell partner; the 1 is Tomokiyo S5's n at L11 9)
+4PIPI	-	0	fr.4715 f.61r	F61TOK L01 12 UNREAD: outside the published spans, no source (H240's a/n here is not endorsed)
+4TRI_NB	a	55	fr.3982 f.101r	CELL a/n VERIFY-F61-V11 (4TRI answered no-bowl in a gated blind read = C43's cell); grade C on this leaf where the period letter is a or n; f.101r NB tokens 142: period a 55, n 52, other/none 35 (grade M)
+4TRI_NB	n	52	fr.3982 f.101r	CELL a/n (cell partner; the count is f.101r NB tokens whose period letter is n)
+4TRI_NB	a	0	fr.3982 f.124r	CELL a/n VERIFY-F61-V11; f.124r NB tokens 192, grade M (shape-only; no usable period-letter join on f.124r)
+4TRI	-	0	fr.4715 f.61r	F61TOK L05 14 stays c/p grade M: H194 bowl vs H367 no-bowl (VERIFY-F61-V11, rule 4, not settled by the later read); a/n noted as the alternative; the other five f.61 4TRI read bowl (H367, H194) and keep F61READ c/p
+# conflicts left 4TRI (grade M, a/n alternative): 31 tokens -- f101r:L02:12 f101r:L06:32 f101r:L06:62 f101r:L09:13 f101r:L10:9 f101r:L12:18 f101r:L13:13 f101r:L13:21 f101r:L15:54 f101r:L20:18 f101r:L20:40 f101r:L24:3 f101r:L24:6 f101r:L24:10 f101r:L25:43 f101r:L29:32 f101r:L29:56 f101r:L30:32 f101r:L34:64 f101r:L46:15 f124r:L04:51 f124r:L17:4 f124r:L20:37 f124r:L22:19 f124r:L22:49 f124r:L25:8 f124r:L34:26 f124r:L36:23 f124r:L37:45 f124r:L39:44 f61:L05:14

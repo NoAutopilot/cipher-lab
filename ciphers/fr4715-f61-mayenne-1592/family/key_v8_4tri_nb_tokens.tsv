@@ -1,0 +1,520 @@
+# key_v8_4tri_nb_tokens.tsv -- F61-FAMILY-13 (key v8), 29 Sept 2026: every 4TRI token with a gated blind bowl read, per token which reader and call answered no-bowl (no_by) and bowl (bowl_by). Built by build_key_v8.py; do not hand-edit.
+# status NB = no-bowl only -> 4TRI_NB a/n (grade C if f.101r's period letter is a/n, else M); CONFLICT = both answers -> stays 4TRI, a/n alternative (rule 4, not settled by majority); BOWL = bowl only -> 4TRI. period_letter: passes/f101r_align.tsv (grade C per pair).
+leaf	line	pos	v8_class	status	value	grade	period_letter	no_by	bowl_by	other
+f101r	L02	6	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c2	-
+f101r	L02	10	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c4;VERIFY-F61-V11 c4	-
+f101r	L02	12	4TRI	CONFLICT	c/p/t (a/n alternative)	M	p	runner13 H365 c2	VERIFY-F61-V11 c5	-
+f101r	L03	15	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c4	-
+f101r	L04	11	4TRI	BOWL	c/p/t	-	d	-	runner13 H365 c1	-
+f101r	L05	8	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c1;VERIFY-F61-V11 c5	-
+f101r	L05	12	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c1;VERIFY-F61-V11 c5	-
+f101r	L05	27	4TRI_NB	NB	a/n	M	d	runner13 H365 c4	-	-
+f101r	L05	33	4TRI	BOWL	c/p/t	-	s	-	runner13 H362	-
+f101r	L06	12	4TRI	BOWL	c/p/t	-	c	-	runner13 H362;VERIFY-F61-V11 c5	-
+f101r	L06	32	4TRI	CONFLICT	c/p/t (a/n alternative)	M	n	runner13 H362	VERIFY-F61-V11 c2	-
+f101r	L06	34	4TRI	BOWL	c/p/t	-	d	-	runner13 H365 c3	-
+f101r	L06	38	4TRI	BOWL	c/p/t	-	c	-	runner13 H362;VERIFY-F61-V11 c5	-
+f101r	L06	53	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c1	-
+f101r	L06	56	4TRI	BOWL	c/p/t	-	s	-	runner13 H365 c4	-
+f101r	L06	62	4TRI	CONFLICT	c/p/t (a/n alternative)	M	c	runner13 H365 c3	VERIFY-F61-V11 c5	-
+f101r	L07	32	4TRI	BOWL	c/p/t	-	g	-	runner13 H365 c1	-
+f101r	L07	35	4TRI	BOWL	c/p/t	-	u	-	runner13 H365 c2	-
+f101r	L07	62	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c1;VERIFY-F61-V11 c4	-
+f101r	L08	3	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c3;VERIFY-F61-V11 c5	-
+f101r	L08	28	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c2	-
+f101r	L08	39	4TRI	BOWL	c/p/t	-	r	-	runner13 H365 c1;VERIFY-F61-V11 c1	-
+f101r	L08	45	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c3	-
+f101r	L09	1	4TRI_NB	NB	a/n	C	a	runner13 H365 c3;VERIFY-F61-V11 c1	-	-
+f101r	L09	11	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L09	13	4TRI	CONFLICT	c/p/t (a/n alternative)	M	p	VERIFY-F61-V11 c5	runner13 H365 c3	-
+f101r	L09	16	4TRI	BOWL	c/p/t	-	s	-	runner13 H365 c4	-
+f101r	L09	40	4TRI_NB	NB	a/n	M	t	runner13 H362;VERIFY-F61-V11 c1	-	-
+f101r	L09	56	4TRI	BOWL	c/p/t	-	r	-	runner13 H365 c1	-
+f101r	L09	66	4TRI_NB	NB	a/n	M	l	runner13 H365 c3	-	-
+f101r	L10	9	4TRI	CONFLICT	c/p/t (a/n alternative)	M	n	runner13 H365 c4	VERIFY-F61-V11 c2	-
+f101r	L10	18	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c3	-
+f101r	L10	44	4TRI	BOWL	c/p/t	-	g	-	runner13 H365 c2;VERIFY-F61-V11 c2	-
+f101r	L11	22	4TRI	BOWL	c/p/t	-	t	-	runner13 H365 c3	-
+f101r	L11	28	4TRI	BOWL	c/p/t	-	p	-	runner13 H362;VERIFY-F61-V11 c4	-
+f101r	L11	39	4TRI_NB	NB	a/n	M	d	runner13 H365 c2	-	-
+f101r	L11	54	4TRI_NB	NB	a/n	C	a	runner13 H365 c3;VERIFY-F61-V11 c1	-	-
+f101r	L11	61	4TRI	UNREAD	c/p/t	-	d	-	-	runner13 H365 c3=n;VERIFY-F61-V11 c2=unclear
+f101r	L11	66	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L12	10	4TRI_NB	NB	a/n	C	n	runner13 H365 c1	-	-
+f101r	L12	14	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L12	15	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L12	18	4TRI	CONFLICT	c/p/t (a/n alternative)	M	p	runner13 H365 c3	VERIFY-F61-V11 c4	-
+f101r	L12	25	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c1;VERIFY-F61-V11 c5	-
+f101r	L12	32	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L12	33	4TRI_NB	NB	a/n	C	n	runner13 H365 c4;VERIFY-F61-V11 c2	-	-
+f101r	L12	37	4TRI_NB	NB	a/n	M	c	runner13 H365 c1	-	-
+f101r	L12	67	4TRI_NB	NB	a/n	C	a	runner13 H365 c2;VERIFY-F61-V11 c1	-	-
+f101r	L13	5	4TRI_NB	NB	a/n	M	q	runner13 H365 c2	-	-
+f101r	L13	10	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L13	13	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	VERIFY-F61-V11 c1	runner13 H365 c3	-
+f101r	L13	16	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c3;VERIFY-F61-V11 c4	-
+f101r	L13	17	4TRI	BOWL	c/p/t	-	a	-	runner13 H365 c4;VERIFY-F61-V11 c5	-
+f101r	L13	21	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c3	VERIFY-F61-V11 c4	-
+f101r	L13	23	4TRI_NB	NB	a/n	M	c	runner13 H362	-	-
+f101r	L13	26	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c3;VERIFY-F61-V11 c1	-
+f101r	L13	29	4TRI_NB	NB	a/n	C	n	runner13 H365 c1;VERIFY-F61-V11 c4	-	-
+f101r	L13	31	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L13	35	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L13	40	4TRI_NB	NB	a/n	M	p	runner13 H362	-	-
+f101r	L14	5	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L14	9	4TRI	BOWL	c/p/t	-	p	-	runner13 H362;VERIFY-F61-V11 c4	-
+f101r	L14	29	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L14	43	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L14	50	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L14	56	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L15	19	4TRI	BOWL	c/p/t	-	c	-	runner13 H362;VERIFY-F61-V11 c4	-
+f101r	L15	25	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L15	53	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c2	-
+f101r	L15	54	4TRI	CONFLICT	c/p/t (a/n alternative)	M	p	VERIFY-F61-V11 c2	runner13 H365 c2	-
+f101r	L16	20	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c4	-
+f101r	L16	23	4TRI_NB	NB	a/n	C	n	runner13 H365 c1;VERIFY-F61-V11 c4	-	-
+f101r	L16	28	4TRI_NB	NB	a/n	C	n	runner13 H365 c1	-	-
+f101r	L16	34	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c1;VERIFY-F61-V11 c2	-
+f101r	L16	39	4TRI_NB	NB	a/n	C	a	runner13 H365 c2;VERIFY-F61-V11 c5	-	-
+f101r	L16	44	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c2;VERIFY-F61-V11 c4	-
+f101r	L16	45	4TRI	BOWL	c/p/t	-	a	-	runner13 H365 c4	-
+f101r	L16	50	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c3	-
+f101r	L16	53	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L16	61	4TRI_NB	NB	a/n	C	n	runner13 H362;VERIFY-F61-V11 c2	-	-
+f101r	L17	13	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L18	3	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L18	5	4TRI_NB	NB	a/n	C	n	runner13 H365 c1	-	-
+f101r	L18	8	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L18	13	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c1	-
+f101r	L18	18	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L18	23	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c1;VERIFY-F61-V11 c1	-
+f101r	L19	7	4TRI_NB	NB	a/n	M	-	runner13 H365 c1	-	-
+f101r	L19	12	4TRI_NB	NB	a/n	C	a	runner13 H365 c4;VERIFY-F61-V11 c1	-	-
+f101r	L19	16	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L19	20	4TRI	BOWL	c/p/t	-	a	-	runner13 H365 c2	VERIFY-F61-V11 c2=unclear
+f101r	L19	22	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L19	26	4TRI	BOWL	c/p/t	-	s	-	runner13 H365 c2	-
+f101r	L19	29	4TRI_NB	NB	a/n	C	n	runner13 H362;VERIFY-F61-V11 c1	-	-
+f101r	L20	9	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L20	18	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H362	VERIFY-F61-V11 c2	-
+f101r	L20	30	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L20	32	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L20	38	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L20	40	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c2	VERIFY-F61-V11 c4	-
+f101r	L20	43	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c1	-
+f101r	L20	45	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c4	-
+f101r	L20	50	4TRI_NB	NB	a/n	C	n	runner13 H365 c1	-	-
+f101r	L20	51	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L20	56	4TRI	BOWL	c/p/t	-	n	-	runner13 H362	-
+f101r	L20	59	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L21	3	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L21	8	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L21	19	4TRI	UNREAD	c/p/t	-	d	-	-	runner13 H365 c1=n
+f101r	L21	38	4TRI_NB	NB	a/n	C	a	runner13 H365 c2	-	-
+f101r	L22	36	4TRI_NB	NB	a/n	C	n	runner13 H365 c2;VERIFY-F61-V11 c2	-	-
+f101r	L23	1	4TRI	UNREAD	c/p/t	-	c	-	-	runner13 H365 c2=n
+f101r	L23	5	4TRI_NB	NB	a/n	C	n	runner13 H365 c4;VERIFY-F61-V11 c1	-	-
+f101r	L23	29	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L23	40	4TRI	BOWL	c/p/t	-	a	-	runner13 H362;VERIFY-F61-V11 c1	-
+f101r	L24	3	4TRI	CONFLICT	c/p/t (a/n alternative)	M	n	VERIFY-F61-V11 c5	runner13 H365 c2	-
+f101r	L24	6	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c2	VERIFY-F61-V11 c5	-
+f101r	L24	10	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c1	VERIFY-F61-V11 c2	-
+f101r	L24	11	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L24	14	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L24	34	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L25	25	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L25	43	4TRI	CONFLICT	c/p/t (a/n alternative)	M	n	runner13 H365 c3	VERIFY-F61-V11 c2	-
+f101r	L26	4	4TRI_NB	NB	a/n	M	-	runner13 H365 c3	-	-
+f101r	L26	39	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L26	55	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L27	1	4TRI	UNREAD	c/p/t	-	v	-	-	runner13 H365 c1=n
+f101r	L27	4	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c3	-
+f101r	L27	5	4TRI_NB	NB	a/n	C	n	runner13 H365 c2;VERIFY-F61-V11 c5	-	-
+f101r	L27	7	4TRI_NB	NB	a/n	C	a	runner13 H362;VERIFY-F61-V11 c1	-	-
+f101r	L27	9	4TRI_NB	NB	a/n	M	o	runner13 H365 c1	-	-
+f101r	L27	17	4TRI_NB	NB	a/n	C	a	runner13 H365 c2;VERIFY-F61-V11 c5	-	-
+f101r	L27	32	4TRI_NB	NB	a/n	M	t	runner13 H362	-	-
+f101r	L27	33	4TRI_NB	NB	a/n	M	m	runner13 H362	-	VERIFY-F61-V11 c2=unclear
+f101r	L28	2	4TRI_NB	NB	a/n	M	r	runner13 H362	-	-
+f101r	L28	5	4TRI_NB	NB	a/n	M	q	runner13 H365 c2	-	-
+f101r	L28	9	4TRI_NB	NB	a/n	M	s	runner13 H365 c1	-	-
+f101r	L28	12	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L28	14	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L28	23	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L28	41	4TRI_NB	NB	a/n	M	u	runner13 H365 c3	-	-
+f101r	L28	46	4TRI_NB	NB	a/n	M	q	runner13 H362	-	-
+f101r	L28	53	4TRI_NB	NB	a/n	M	d	runner13 H365 c4	-	-
+f101r	L28	58	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L28	59	4TRI	BOWL	c/p/t	-	n	-	runner13 H362;VERIFY-F61-V11 c2	-
+f101r	L29	13	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L29	17	4TRI_NB	NB	a/n	M	-	runner13 H362	-	-
+f101r	L29	19	4TRI	BOWL	c/p/t	-	r	-	runner13 H365 c2	-
+f101r	L29	21	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L29	26	4TRI_NB	NB	a/n	C	a	runner13 H362;VERIFY-F61-V11 c2	-	-
+f101r	L29	32	4TRI	CONFLICT	c/p/t (a/n alternative)	M	n	runner13 H362	VERIFY-F61-V11 c4	-
+f101r	L29	35	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L29	41	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L29	43	4TRI_NB	NB	a/n	C	a	runner13 H365 c1;VERIFY-F61-V11 c1	-	-
+f101r	L29	51	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L29	56	4TRI	CONFLICT	c/p/t (a/n alternative)	M	n	runner13 H362	VERIFY-F61-V11 c5	-
+f101r	L30	1	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L30	32	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c1	VERIFY-F61-V11 c4	-
+f101r	L31	5	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L31	6	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L31	56	4TRI_NB	NB	a/n	M	p	runner13 H365 c2	-	-
+f101r	L32	2	4TRI_NB	NB	a/n	M	z	runner13 H365 c2;VERIFY-F61-V11 c2	-	-
+f101r	L32	4	4TRI_NB	NB	a/n	M	o	runner13 H362;VERIFY-F61-V11 c2	-	-
+f101r	L32	11	4TRI_NB	NB	a/n	C	a	runner13 H365 c2	-	-
+f101r	L32	17	4TRI_NB	NB	a/n	C	n	runner13 H365 c2;VERIFY-F61-V11 c1	-	-
+f101r	L32	26	4TRI	BOWL	c/p/t	-	a	-	runner13 H365 c3	-
+f101r	L32	30	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L32	34	4TRI_NB	NB	a/n	M	c	runner13 H362	-	-
+f101r	L33	8	4TRI_NB	NB	a/n	C	a	runner13 H365 c2;VERIFY-F61-V11 c1	-	-
+f101r	L33	13	4TRI_NB	NB	a/n	M	-	runner13 H365 c3	-	-
+f101r	L33	26	4TRI_NB	NB	a/n	C	a	runner13 H365 c3;VERIFY-F61-V11 c5	-	-
+f101r	L33	43	4TRI_NB	NB	a/n	C	n	runner13 H365 c1	-	-
+f101r	L33	55	4TRI_NB	NB	a/n	M	u	runner13 H365 c4	-	-
+f101r	L33	59	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L33	65	4TRI_NB	NB	a/n	C	n	VERIFY-F61-V11 c1	-	runner13 H362=n
+f101r	L34	15	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c4	-
+f101r	L34	17	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L34	21	4TRI_NB	NB	a/n	M	l	runner13 H365 c1	-	-
+f101r	L34	64	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c2	VERIFY-F61-V11 c4	-
+f101r	L35	4	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L35	39	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L35	40	4TRI_NB	NB	a/n	C	n	runner13 H365 c3	-	-
+f101r	L36	9	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L36	14	4TRI_NB	NB	a/n	M	m	runner13 H365 c3	-	-
+f101r	L36	16	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L36	20	4TRI_NB	NB	a/n	C	n	runner13 H365 c2	-	-
+f101r	L36	30	4TRI_NB	NB	a/n	C	a	runner13 H365 c4;VERIFY-F61-V11 c1	-	-
+f101r	L36	42	4TRI_NB	NB	a/n	C	n	runner13 H365 c1	-	-
+f101r	L36	45	4TRI_NB	NB	a/n	M	p	runner13 H362	-	VERIFY-F61-V11 c4=unclear
+f101r	L36	47	4TRI_NB	NB	a/n	M	o	runner13 H365 c1	-	-
+f101r	L36	54	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L37	9	4TRI_NB	NB	a/n	M	h	runner13 H365 c3	-	-
+f101r	L37	15	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L37	18	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L37	22	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L37	33	4TRI_NB	NB	a/n	M	-	VERIFY-F61-V11 c1	-	runner13 H365 c1=n
+f101r	L37	37	4TRI	UNREAD	c/p/t	-	n	-	-	runner13 H362=n
+f101r	L37	40	4TRI	UNREAD	c/p/t	-	a	-	-	runner13 H365 c4=n;VERIFY-F61-V11 c5=unclear
+f101r	L37	41	4TRI	UNREAD	c/p/t	-	n	-	-	runner13 H365 c1=n
+f101r	L37	54	4TRI	UNREAD	c/p/t	-	n	-	-	runner13 H365 c3=n
+f101r	L37	55	4TRI_NB	NB	a/n	M	t	runner13 H365 c2	-	-
+f101r	L37	58	4TRI	UNREAD	c/p/t	-	a	-	-	runner13 H362=n
+f101r	L37	59	4TRI	UNREAD	c/p/t	-	c	-	-	runner13 H365 c1=n;VERIFY-F61-V11 c4=unclear
+f101r	L37	61	4TRI	UNREAD	c/p/t	-	a	-	-	runner13 H365 c1=n
+f101r	L38	1	4TRI	BOWL	c/p/t	-	q	-	runner13 H365 c4	-
+f101r	L38	10	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L38	18	4TRI_NB	NB	a/n	C	a	runner13 H365 c1	-	-
+f101r	L38	58	4TRI_NB	NB	a/n	C	a	runner13 H365 c3;VERIFY-F61-V11 c4	-	-
+f101r	L39	1	4TRI	BOWL	c/p/t	-	q	-	runner13 H365 c4	-
+f101r	L39	8	4TRI_NB	NB	a/n	C	a	runner13 H365 c3	-	-
+f101r	L39	32	4TRI_NB	NB	a/n	C	a	runner13 H365 c1;VERIFY-F61-V11 c5	-	-
+f101r	L39	53	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H365 c4=n
+f101r	L39	54	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H365 c4=n
+f101r	L40	1	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c2	-
+f101r	L40	11	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c1	-
+f101r	L40	13	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c4;VERIFY-F61-V11 c4	-
+f101r	L40	34	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L40	35	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L40	40	4TRI_NB	NB	a/n	M	r	runner13 H362	-	-
+f101r	L40	44	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L40	49	4TRI_NB	NB	a/n	C	a	runner13 H365 c2	-	VERIFY-F61-V11 c5=unclear
+f101r	L41	4	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c3	-
+f101r	L41	12	4TRI_NB	NB	a/n	C	a	runner13 H365 c2	-	-
+f101r	L42	20	4TRI	BOWL	c/p/t	-	o	-	runner13 H365 c2	-
+f101r	L42	37	4TRI	BOWL	c/p/t	-	c	-	runner13 H365 c1	-
+f101r	L43	9	4TRI_NB	NB	a/n	C	n	runner13 H365 c3;VERIFY-F61-V11 c4	-	-
+f101r	L43	31	4TRI_NB	NB	a/n	M	t	VERIFY-F61-V11 c1	-	runner13 H365 c4=n
+f101r	L43	36	4TRI	UNREAD	c/p/t	-	a	-	-	runner13 H365 c4=n
+f101r	L43	37	4TRI_NB	NB	a/n	C	n	runner13 H362	-	-
+f101r	L43	40	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H365 c4=n
+f101r	L43	50	4TRI	UNREAD	c/p/t	-	n	-	-	runner13 H365 c3=n
+f101r	L43	66	4TRI_NB	NB	a/n	C	a	runner13 H362	-	-
+f101r	L45	2	4TRI	BOWL	c/p/t	-	a	-	runner13 H365 c4	-
+f101r	L45	11	4TRI	BOWL	c/p/t	-	n	-	runner13 H365 c3	-
+f101r	L45	59	4TRI_NB	NB	a/n	C	a	runner13 H365 c4	-	-
+f101r	L46	4	4TRI	BOWL	c/p/t	-	c	-	runner13 H362	-
+f101r	L46	8	4TRI	BOWL	c/p/t	-	p	-	runner13 H365 c4	-
+f101r	L46	14	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L46	15	4TRI	CONFLICT	c/p/t (a/n alternative)	M	a	runner13 H365 c2	VERIFY-F61-V11 c2	-
+f101r	L46	26	4TRI_NB	NB	a/n	C	n	runner13 H365 c4	-	-
+f101r	L46	34	4TRI	BOWL	c/p/t	-	a	-	runner13 H362;VERIFY-F61-V11 c2	-
+f124r	L02	8	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L02	13	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L02	15	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L02	53	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L02	63	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L03	6	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L03	11	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L03	53	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L03	60	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L04	20	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L04	28	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L04	32	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L04	51	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c1	VERIFY-F61-V11 c3	-
+f124r	L05	6	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L05	23	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L05	32	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L06	18	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2;VERIFY-F61-V11 c3	-
+f124r	L06	34	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L08	33	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L10	3	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L10	7	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L10	11	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L10	16	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L10	20	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1;VERIFY-F61-V11 c3	-
+f124r	L10	42	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L10	53	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L10	60	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L11	12	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L11	24	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L11	27	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L11	32	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L12	4	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L12	16	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L12	25	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L12	49	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3;VERIFY-F61-V11 c3	-
+f124r	L12	63	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L13	3	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4;VERIFY-F61-V11 c3	-
+f124r	L13	56	4TRI_NB	NB	a/n	M	-	runner13 H360 c3;VERIFY-F61-V11 c3	-	-
+f124r	L14	32	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L14	41	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L14	52	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L14	57	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L14	62	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L15	17	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L15	22	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L15	29	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L15	44	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L15	55	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L16	29	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L16	38	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L16	54	4TRI_NB	NB	a/n	M	-	runner13 H360 c4;VERIFY-F61-V11 c3	-	-
+f124r	L17	4	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H359	VERIFY-F61-V11 c3	-
+f124r	L17	16	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L17	20	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L17	32	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L17	36	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L17	52	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L17	55	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L18	2	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L18	3	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L18	7	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L18	12	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L18	15	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L18	16	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L18	62	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L19	5	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L19	7	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L19	8	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L19	13	4TRI_NB	NB	a/n	M	-	runner13 H360 c2;VERIFY-F61-V11 c3	-	-
+f124r	L19	17	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L19	21	4TRI_NB	NB	a/n	M	-	runner13 H360 c3;VERIFY-F61-V11 c3	-	-
+f124r	L19	26	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L19	28	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L19	31	4TRI_NB	NB	a/n	M	-	runner13 H360 c1;VERIFY-F61-V11 c3	-	-
+f124r	L19	37	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L19	39	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L19	47	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L19	56	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L20	1	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L20	5	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L20	16	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H359=n
+f124r	L20	17	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L20	22	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L20	24	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L20	37	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c2	VERIFY-F61-V11 c3	-
+f124r	L20	39	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L20	47	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L20	56	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L20	57	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L21	1	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L21	2	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L21	23	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L21	33	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L21	39	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L21	43	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L21	44	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L21	48	4TRI	BOWL	c/p/t	-	-	-	VERIFY-F61-V11 c3	runner13 H359=n
+f124r	L21	55	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L21	59	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L21	64	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L22	3	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L22	7	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L22	9	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L22	19	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c2	VERIFY-F61-V11 c3	-
+f124r	L22	20	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L22	27	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L22	29	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L22	32	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L22	34	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L22	39	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L22	43	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L22	46	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L22	49	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c1	VERIFY-F61-V11 c3	-
+f124r	L22	58	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L22	59	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L23	1	4TRI_NB	NB	a/n	M	-	runner13 H360 c1;VERIFY-F61-V11 c3	-	-
+f124r	L23	6	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L23	7	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L23	12	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L23	39	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L23	45	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L23	46	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L24	5	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L24	8	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L24	24	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L24	28	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L24	30	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2	-
+f124r	L24	36	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L24	44	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L24	53	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L25	8	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c4	VERIFY-F61-V11 c3	-
+f124r	L25	10	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L26	1	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L26	6	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L26	10	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L27	2	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L27	22	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L27	50	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H359=n
+f124r	L28	8	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L28	16	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L28	19	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L28	20	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L28	21	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L28	23	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L28	26	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c2;VERIFY-F61-V11 c3	-
+f124r	L28	28	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L28	29	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L28	38	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L28	45	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L29	4	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H360 c3=n
+f124r	L29	7	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L29	22	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L29	30	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L29	37	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L29	43	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L30	6	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L30	21	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L30	24	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L30	26	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L30	33	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L30	47	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L30	50	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L31	4	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L31	7	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L31	9	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L31	10	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L31	15	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L31	23	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L31	32	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L31	55	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L31	58	4TRI_NB	NB	a/n	M	-	runner13 H360 c4;VERIFY-F61-V11 c3	-	-
+f124r	L32	16	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L32	20	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L32	21	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L32	28	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L32	29	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L32	33	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L32	62	4TRI	BOWL	c/p/t	-	-	-	VERIFY-F61-V11 c3	runner13 H360 c1=n
+f124r	L33	3	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L33	11	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L33	14	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L33	24	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H360 c3=n
+f124r	L33	34	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L34	1	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L34	10	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L34	26	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c2	VERIFY-F61-V11 c3	-
+f124r	L35	42	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L36	2	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L36	5	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L36	17	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L36	22	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L36	23	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c4	VERIFY-F61-V11 c3	-
+f124r	L36	30	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L36	31	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L36	35	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L36	40	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L36	42	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L36	45	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L36	46	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L36	49	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L37	2	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L37	19	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H360 c2=n
+f124r	L37	25	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L37	32	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L37	45	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c4	VERIFY-F61-V11 c3	-
+f124r	L37	54	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L38	9	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L38	37	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L38	39	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L38	41	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L38	49	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L38	54	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L38	56	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L39	7	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L39	20	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L39	26	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L39	30	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L39	31	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L39	36	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L39	37	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L39	44	4TRI	CONFLICT	c/p/t (a/n alternative)	M	-	runner13 H360 c3	VERIFY-F61-V11 c3	-
+f124r	L40	1	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L40	6	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L40	8	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L40	16	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L40	17	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L40	19	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H359=n
+f124r	L40	21	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L40	39	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L41	5	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L41	17	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L41	34	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L42	3	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L42	13	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L42	15	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L42	22	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L42	27	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L42	30	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L42	35	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c4	-
+f124r	L42	36	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L42	38	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L42	45	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L42	48	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L42	51	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L42	52	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c3	-
+f124r	L43	6	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L43	8	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L43	14	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L43	20	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L43	23	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L43	25	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L43	26	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L43	27	4TRI_NB	NB	a/n	M	-	runner13 H360 c4	-	-
+f124r	L43	40	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L43	43	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L43	44	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L43	51	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L44	4	4TRI	UNREAD	c/p/t	-	-	-	-	runner13 H360 c3=n
+f124r	L44	5	4TRI	BOWL	c/p/t	-	-	-	runner13 H359	-
+f124r	L44	27	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L44	31	4TRI_NB	NB	a/n	M	-	runner13 H360 c1	-	-
+f124r	L44	38	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L44	40	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L44	44	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L44	45	4TRI_NB	NB	a/n	M	-	runner13 H359	-	-
+f124r	L44	49	4TRI	BOWL	c/p/t	-	-	-	runner13 H360 c1	-
+f124r	L44	59	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L45	2	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f124r	L45	8	4TRI_NB	NB	a/n	M	-	runner13 H360 c2	-	-
+f124r	L45	25	4TRI_NB	NB	a/n	M	-	runner13 H360 c3	-	-
+f61	L01	6	4TRI	BOWL	c/p	-	-	-	runner14 H367	-
+f61	L03	7	4TRI	BOWL	c/p	-	-	-	runner14 H367;runner H194	-
+f61	L03	10	4TRI	BOWL	c/p	-	-	-	runner14 H367;runner H194	-
+f61	L05	6	4TRI	BOWL	c/p	-	-	-	runner14 H367;runner H194	-
+f61	L05	14	4TRI	CONFLICT	c/p (a/n alternative)	M	-	runner14 H367	runner H194	-
+f61	L08	11	4TRI	BOWL	c/p	-	-	-	runner14 H367;runner H194	-
