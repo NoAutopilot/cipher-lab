@@ -177,6 +177,8 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - **H201 (script-only):** f.108v's draft relabelled by the bowl answers (yes c/p, no a/n) beats the readers' cells on sequence gain in 30/30
   resamples, and ranks 1 of 201 among random relabels with the same 19 c/p (gain 0.276; best random 0.223; readers' 0.152). The shape answer carries the
   positions, not only the count. `scripts/f61bowl_108v_seq.py` (`--check`).
+- **H202:** at f.108r's 16 period-gloss c/p/a/n positions (control 18/20): bowl yes -> c/p 3, a/n 0; bowl no -> c/p 2, a/n 11 (p 0.018). The
+  direction agrees but the registered rule (every c/p yes) is NOT met (misses S03, a 4PI p at the strip edge, and S14, a 4TRI c). `family/h202_bowl_108r.py`.
 
 ## Files to read
 

@@ -3940,3 +3940,21 @@ and 6 no-bowl signs c/p. The bowl's own placement beats every random placement, 
 Together with H193/H194, which rest on period letters, this is a third, independent line: the bowl sign is c/p in f.61's hand on a leaf with no key
 source used here. For the verifier: f.108v's 4-family should be read by bowl, not by the H59 pass codes; any f.108v or pooled 4STEM figure built
 on those codes (the f.108v skeleton, H85 judge, v5's 4STEM support) mixes the two signs. No key change, nothing merged; grade stays with the verifier.
+
+## Campaign step H202 (29 Sept 2026, 02:21-02:24 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- the bowl at f.108r's period-gloss letters: direction agrees, registered rule NOT met
+
+Pre-registered (PROMPTS section H202; `family/h202_bowl_108r.py`, key `family/h202_items.tsv`, commit d935e29f, before the call). The 20 f.108r pass-A
+4-family positions that the overlay letters (the leaf's period interlinear, reprinted by Tomokiyo; grade C for the test) align to under key v5 form A.
+Strips from images/f108sheetB_L02/L03.jpg bands (descenders kept). Disclosure: the runner looked at f108sheetB_L02.jpg for band geometry and at the
+target sheet for legibility; the strips came out as single-sign views (a scaling choice in the script, smaller context than H193's strips), and
+S03/S09 sit at a strip edge or off a 4-sign. One Opus vision call, blind (`family/passes/h202_reply.tsv`). Result `family/h202_bowl_108r_result.txt`
+(`--check` OK):
+- **Repeat control 18/20 PASS.**
+- **bowl yes: c/p 3, a/n 0; bowl no: c/p 2, a/n 11; Fisher p 0.018.** The 4 d positions (4PI) all answered no.
+- Pre-stated read-out: **"bowl = c/p not shown at f.108r's period letters"**. The rule needed every answered c/p position to be yes, and two were no:
+  S03 (4PI, letter p, marker at the strip's right edge) and S14 (4TRI, letter c).
+What it says: the direction agrees with H193/H194/H201 (no a/n position carries a bowl; every bowl carries c/p), but at N 16 with two c/p misses the
+registered rule fails, and this step does not add a fourth line of support. One of the two misses is a 4PI sign, whose shape is not the 4-family bowl
+question's; the other (S14) is an unexplained miss. The alignment was made under v5, whose cells follow the readers' codes here (4TRI c/p, C43/4STEM
+a/n), so the pairs could not disagree with the codes by construction; the blind bowl answer is what was tested. Not re-run with a different crop
+(rule 3's "same knob" caution); a wider-context re-cut is possible but would be a second attempt at the same 16 positions.

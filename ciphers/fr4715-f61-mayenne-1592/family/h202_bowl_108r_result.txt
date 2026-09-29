@@ -1,0 +1,24 @@
+repeat control: 18 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+item	row	pos	code	letter	bowl
+S13	L02	2	4STEM	a	no
+S07	L02	7	4STEM	a	no
+S02	L02	12	C43	n	no
+S05	L02	18	C43	a	no
+S03	L02	20	4PI	p	no
+S08	L02	25	4PI	d	no
+S17	L02	27	4TRI	c	yes
+S11	L02	29	4PI	d	no
+S01	L02	31	4TRI	p	yes
+S04	L03	1	C43	a	no
+S15	L03	11	4TRI	p	yes
+S06	L03	14	C43	n	no
+S20	L03	16	C43	n	no
+S18	L03	18	C43	a	no
+S10	L03	20	C43	a	no
+S19	L03	23	C43	n	no
+S16	L03	25	4PI	d	no
+S12	L03	33	4STEM	a	no
+S14	L03	34	4TRI	c	no
+S09	L03	39	4PI	d	no
+bowl yes: c/p 3 a/n 0; bowl no: c/p 2 a/n 11; Fisher p 0.018
+read-out: bowl = c/p not shown at f.108r's period letters
