@@ -170,3 +170,15 @@ bottom of a 'b')? Answer yes or no; if the sign above the triangle cannot be tol
 block 'item<TAB>answer', one row per item, nothing else."
 GATE: >= 17 of 20 anchors answer in their group's direction (CP yes, AN no), else CONTROL FAIL and stop. Then f.176r's 40 targets are split by the
 answer and counted {c,p} vs {a,n} under fol. 177r (Fisher exact test), descriptive of whether the attribute carries the letter split on a second leaf.
+
+## H194 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H193's bowl question on f.61's 4-family (scorer `h194_bowl_f61.py`, committed with this section). Disclosure: the runner looked at one target sheet
+(images/f61sheet_L05.jpg) before writing this, to check the sheets are legible; the question is H193's, unchanged.
+1 Opus vision call, inline reply: "You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file.
+Part 1: the items on <h193/sheet_01..03.jpg> (Q01-Q60) as before: for the sign directly above the red triangle, does its vertical stem run down below
+the writing line and end in a closed loop or bowl (like the bottom of a 'b')? yes / no / n. Part 2: on each of the five line sheets
+<images/f61sheet_L01, L03, L05, L08, L11.jpg> (a cipher line cut into stacked segments, read left to right, top segment first; clear words, if any,
+are not signs), list every sign shaped like a figure 4 (a 4 with anything attached), in order, numbered 1, 2, 3..., and answer the same question
+for each. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer': rows Q01..Q60, then rows 'L01:1', 'L01:2', ... for part 2."
+GATE: repeat control >= 17 of the 20 f.176v anchors, else CONTROL FAIL and stop. Result: matched f.61 positions, bowl vs Tomokiyo's c/p vs a/n
+(Fisher), lines with a count mismatch left out. Descriptive, for the verifier.
