@@ -5228,3 +5228,10 @@ and its shuffled-target control. This is **held-leaf evidence for v7's cells as 
 no cell changed). f.108v (f.61's own hand) is fragile: one draft passes both, the other is voided. f.106r (the secretary's hand) shows no order signal
 at its N (power not yet measured for this statistic -- H346). The earlier beam-vs-binned passes (H338/H340) remain void (H341); this is a different
 statistic. For the verifier (V9_PAGE.md line added). No call.
+
+## Campaign step H346 (29 Sept 2026, 15:53-15:57 UTC by the commit stamp and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- H342's order statistic is underpowered at f.106r's N (script-only)
+
+`family/h346_seqgain_power.py` (written and pushed before running; `family/h346_seqgain_power_result.txt`): 30 random 35-run subsets of each in-sample
+leaf, 50 binned keys each. **f.101r 19/30 = 0.63; f.188r 30/30 = 1.00** -> pre-stated read-out "underpowered at f.106r's N": f.106r's H342 miss
+(13/100) is **untestable at this N, not a negative** on v7 in the secretary's hand. A test there needs more of the leaf's sign rows (rows 13-18, sign
+passes only -- the gloss passes are retired for this hand, H332) or the person's gloss read (ASKS 99). No call.

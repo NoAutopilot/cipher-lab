@@ -1,0 +1,3 @@
+recf101r: 30 subsets of 35 runs; gain(v7) > binned p95 in 19/30 = 0.63
+recf188r: 30 subsets of 35 runs; gain(v7) > binned p95 in 30/30 = 1.00
+read-out: underpowered at f.106r's N -- f.106r's no-signal result is untestable at this N, not a negative
