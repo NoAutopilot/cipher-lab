@@ -91,3 +91,8 @@ token and the last band gain one: 12 / 58 / 2 / 27 [null 18 + unread 9]. Nothing
   file is de Diou's hand). A second LL token in this hand: f.108v L06 29 (pass B only, confidence l).
 - **H306**: a `note` row `L02 0 LL?` in `family/f61_null_band.tsv` (counts unchanged: 25 + 4; note rows 2) and the LL row of
   `family/f61_nulls_as_letters.tsv` carry the above.
+- **H309-H311** (added 29 Sept by runner 12): the free sort was retired for LL after a third failed gate (H309 NON-TEST; HYPOTHESES.md,
+  untested-by-this-tool). A different instrument, a forced choice ONE / TWO / NEITHER, passed its known-answer gate 14/14 with four doubled l's from a
+  clear chancery page (fr.3983 f.211r) and put **LL = TWO, like the clear ll** (H310, n = 1, flagged). A second forced choice (capital I lead-in vs
+  upright l, known answers 7/7 + 4/4) got **unclear** on both LL and L02's opening mark (H311): whether that mark is LL (pass 1) or a clear 'Il'
+  (pass 2) is for the verifier's eye; counts unchanged.

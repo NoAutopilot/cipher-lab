@@ -1,0 +1,5 @@
+LEADIN (LEADIN expected): Z04=LEADIN Z08=LEADIN; correct 2/2
+UPRIGHT (UPRIGHT expected): Z03=UPRIGHT Z07=UPRIGHT Z09=UPRIGHT Z10=UPRIGHT Z13=UPRIGHT; correct 5/5
+CIPHER (NEITHER expected): Z01=NEITHER Z02=NEITHER Z06=NEITHER Z12=NEITHER; correct 4/4
+gate passes (known 7/7, NEITHER 4/4)
+read-out: L02 mark = UNCLEAR -- no read-out; LL = UNCLEAR (n = 1 each, flagged)

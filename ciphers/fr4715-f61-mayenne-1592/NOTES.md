@@ -4925,3 +4925,14 @@ answers, and puts f.61's LL with the doubled l's -- consistent with the atlas's 
 clear letter), now tested by one instrument with a passing known-answer gate. It cannot tell a doubled l from a clear 'Il' (no 'Il' tile was in this
 set; a capital I plus l also has two tall strokes), so the L02 mark's TWO does not decide pass 1 (LL) against pass 2 ('Il'). No cell changes; LL stays
 unread-or-null in the band (1 token); for the verifier's null-band wording only. Vision calls this session: 4.
+
+## Campaign step H311 (29 Sept 2026, 12:55 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- Il vs ll forced choice: gate passes 11/11, both targets unclear
+
+Pre-registered (PROMPTS section H311; `family/h311_il_forced.py`, key `family/h311_items.tsv`, committed f1b3593c before the call); a fresh blind Opus
+reader; reply verbatim `family/passes/h311_forced.tsv`; result `family/h311_il_forced_result.txt` (`--check` OK):
+- **Known answers 7/7** (f.61's two clear 'Il' LEADIN 2/2; doubled l UPRIGHT 5/5, four from f.211r and f.61's ella) and **PHI/C43 NEITHER 4/4 -- gate passes.**
+- **L02 opening mark: unclear. LL: unclear.** As pre-stated, no read-out.
+So the instrument separates a capital I's lead-in from an l's upright on clear letters, but the reader would not commit on either sign: pass 1 (LL)
+against pass 2 ('Il') for L02's opening mark stays undecided by the runner's instruments, and is left to the verifier's own eye on the two tiles
+(H302's sheet, family/h311_items.tsv positions). Not re-run with another wording (rule 3's one-knob lesson). No cell or count change. Vision calls
+this session: 5.
