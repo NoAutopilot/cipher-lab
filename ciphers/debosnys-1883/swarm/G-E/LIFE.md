@@ -99,3 +99,15 @@ blocked from the cloud), and NYT 6 Aug 1882 "A Wife's Fearful Death".
 Execution 27 Apr (period) vs 26 Apr (brief); jury ten minutes (period) vs eight (Wikipedia); correctionhistory.org puts
 the trial in "December 1882" (period: March 1883); body $10 vs $15; Arctic leader Leclaire vs McClure; four daughters
 vs three children; victim Betsy A. / Elizabeth / Eliza.
+
+## Additions from the writings pass (WRITINGS.tsv, 29 Sept 2026)
+
+- A third wife-name in his papers: "my dear Celestine", a poem dated 5 Mar 1882 and signed "By her husband" (copied from
+  Chivers, "To Isa in Heaven"; Brown 2021). Farnsworth captions a drawing "in a dream", "presumably of wife Celestine".
+- Tattoos, described once: two crossed French tricolour flags, an anchor with a coiled cable, a sabre scar on the right
+  knuckles (*A Garvey Family*, 1989, Google Books snippet). The anchor is also an in-line cipher picture.
+- His autobiography was printed in two instalments by the Elizabethtown Post (1883, per correctionhistory.org; not read,
+  nyshistoricnewspapers.org is Cloudflare-blocked from the cloud).
+- A turnkey's autograph book (a 17-year-old boy) with Debosnys entries is held by the Essex County Historical Society
+  (Adirondack Life 1996, snippet): a public-catalogue item, contents not described.
+- He gave autographs to several people on the morning of the execution (Der Deutsche Correspondent, 28 Apr 1883).
