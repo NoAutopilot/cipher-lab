@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 12:15 Pacific [19:15 UTC], account 3): key v8 in use; f.61's two-way band is at the table's shape floor
+
+- Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged. Progress bars now use the audits' endorsed counts (Birago f.21v S 146/267, f.87 S 113/205), not the solvers'.
+- Key v8 built 18:25 (F61-FAMILY-13, v7 + 4TRI_NB = a/n, reproduced); f.61's own 4TRI is the bowl sign 6/6, so v8 moves no f.61 position. Runner 14 retired (440k) -> runner 15 session_01BDhspZ38TdrrXYSvLPTpjc (Opus 5.5, :50).
+- Runner 15 H398-H404: the V11-vs-runner bowl disagreement was V11's prompt design, not its tiles (H398); f.97r's whole-leaf split beats 20/20 (H399). H401: the period table draws only e/r and a/n as two separate symbols and every other letter pair as one shared symbol, and no e/r shape attribute shows under PHI in f.61's hand -- so f.61's 59 two-way cells are at the table's shape floor: no image test can narrow them; only language context (a controlled reading step) or a person's read can. BnF key hunt (H404, 119 hits read) found one Mayenne-chancery cipher with decipherment, fr.3980 f.10 (to Sega, 1591), a different cipher, not f.61's family.
+- Debosnys: museum request ready (ASKS 100). Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 11:15 Pacific [18:15 UTC], account 3): both f.61 verifiers report; key v8 being built
 
 - Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
