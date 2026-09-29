@@ -126,3 +126,10 @@ frequency-only key 132 (H328). Lead stands as pre-stated; grade M gloss letters,
 - **One table:** `family/h372_bowl_code_table_result.txt` (every gated call, token level, H194/H199/H218 and f.101r's period cross-tab carried).
 - **Instrument:** a chunk answering all 'no' passed its part-1 gate (H371 c2, 18/20) and did not reproduce (H373 re-read 25/37); it was replaced as
   pre-stated. The gate cannot see part 2; one-value chunks are re-read, and later calls should embed known strips in part-2 format.
+- **The split against random relabellings of equal count (H374/H375/H377/H378, v7 order gain, 20 draws):** f.124r 20/20 (0.071 vs random max 0.057),
+  f.101r 20/20 (0.102 vs 0.100), f.97r 16/20 at 78 tokens and 20/20 at the bar at 86 (0.0515 vs 0.0515; still just under the as-transcribed 0.0530).
+- **f.108v, f.61's hand (H379):** relabelling the 4-family by H199's bowl answers (bowl -> 4TRI, no -> C43, whatever the readers wrote) raises v7's
+  order gain 0.157 -> 0.221 and beats 20/20 drafts with the same answers permuted (max 0.170); order signal on f.108v is thin (H353).
+- **Bowl vs known letter (H381):** agreement 0.83 (f.101r period gloss, n 182), 0.88 (f.108r period overlay, 16), 0.88 (f.176r period decipherment,
+  32), 0.93 (f.61 Tomokiyo's spans, 14); pooled 0.84 over 244, 75% of it f.101r.
+- **Part-2 known strips (H376 fix) on first use (H377):** 6/6.

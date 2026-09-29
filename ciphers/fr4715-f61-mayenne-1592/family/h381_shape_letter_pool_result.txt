@@ -1,0 +1,7 @@
+leaf	bowl&c/p	bowl&a/n	no&c/p	no&a/n	n	agreement
+f.101r period gloss (H365; c/p/t)	33	19	12	118	182	0.83
+f.108r period overlay (H202; c/p)	3	0	2	11	16	0.88
+f.176r period decipherment (H193; c/p)	5	0	4	23	32	0.88
+f.61 Tomokiyo spans (H367 answers; c/p)	4	0	1	9	14	0.93
+pooled	45	19	19	161	244	0.84
+per-leaf agreement spread 0.83-0.93 over 4 leaves; f.101r is 75% of the pooled tokens

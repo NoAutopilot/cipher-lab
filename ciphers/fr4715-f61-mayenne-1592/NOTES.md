@@ -5600,3 +5600,22 @@ What it means: with more tokens the f.97r shape split separates from random rela
 f.97r any move of tokens out of 4TRI still costs a little gain against the transcription (0.0530 -> 0.0515), so the no-bowl tokens there fit a/n only
 about as well as c/p/t. Only 21 of the 64 new tokens sit on a draft 4TRI position (the rest are reconciler disagreements), which caps what more reads
 can add on this leaf. For VERIFY-F61-V11; nothing applied. 1 call, cost estimate 2.0 USD.
+
+## Campaign steps H381/H382 (29 Sept 2026, 17:54-17:56 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- bowl answer vs known letter on four leaves, and the V9 page (script-only, notes)
+
+**H381** (`family/h381_shape_letter_pool.py`, `family/h381_shape_letter_pool_result.txt`, `--check` OK; results already on disk, no new reading):
+agreement = (bowl & c/p) + (no bowl & a/n) over tokens whose letter is c/p(/t) or a/n.
+| leaf, letters | bowl&c/p | bowl&a/n | no&c/p | no&a/n | n | agreement |
+|---|---|---|---|---|---|---|
+| f.101r period gloss (H365; c/p/t) | 33 | 19 | 12 | 118 | 182 | 0.83 |
+| f.108r period overlay (H202; c/p), f.61's hand | 3 | 0 | 2 | 11 | 16 | 0.88 |
+| f.176r period decipherment (H193; c/p) | 5 | 0 | 4 | 23 | 32 | 0.88 |
+| f.61 Tomokiyo's published spans (H367; c/p) | 4 | 0 | 1 | 9 | 14 | 0.93 |
+| pooled | 45 | 19 | 19 | 161 | 244 | 0.84 |
+Per-leaf spread 0.83-0.93 over four leaves; f.101r carries 75% of the pooled tokens, so the pooled figure is mostly f.101r's (rule 3). The error runs
+both ways (bowl read with a/n 19; no bowl read with c/p 19), about one token in six. Letters are period decipherments on three leaves and Tomokiyo's
+published spans on f.61 (published, not ours).
+**H382:** `family/V9_PAGE.md` runner-14 section extended with H374-H381.
+What it means for VERIFY-F61-V11: the shape rule PROPOSAL_v8_4tri.md states (bowl -> c/p, no bowl -> a/n) matches the known letter about five times
+in six on every leaf with letters, in three hands (de Diou, Desportes, Mayenne's secretary), and separately beats random relabellings under the order
+statistic on f.124r, f.101r, f.108v (20/20 each) and f.97r (at the bar). Nothing applied; the ruling is the verifier's.
