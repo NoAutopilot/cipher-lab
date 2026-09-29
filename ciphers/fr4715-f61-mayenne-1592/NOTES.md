@@ -5039,3 +5039,17 @@ leaves (f.176r, and by the native draft f.108v) the readers' DBL/SBS split track
 DBL as e/r/u, the question "is f.211r's DBL the f.101r glyph or the SBS glyph drawn taller" needs its own blind answer (a forced choice with f.101r DBL
 and f.61/f.108v SBS tiles as known answers, H310's format) -- written as H324. H318's partial check used e/r/u for them; its "no signal" stands either
 way (SBS b/o would score no letter of forb/comm/elle/ul there except 'o' and 'b' in forb/comm). No call.
+
+## Campaign step H324 (29 Sept 2026, 13:16 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.211r's DBL: stacked vs side-by-side forced choice, CONTROL FAIL on the f.101r tiles
+
+Pre-registered (PROMPTS section H324; `family/h324_dbl_forced.py`, key `family/h324_items.tsv`, committed 959a7e1c before the call; design narrowed
+before the call from 4 to 2 f.101r tiles because automatic centring failed on that dense page, gate re-set to >= 5/6 known; PHI moved from NEITHER to a
+report-only reference after the runner saw that f.211r's DBL are loops on a long stem). f.101r native fetched once (1 Gallica request). A fresh blind
+Opus reader; reply verbatim `family/passes/h324_forced.tsv`; result `family/h324_dbl_forced_result.txt` (`--check` OK):
+- Known: f.101r DBL (STACKED expected) **unclear 2/2**; f.61 SBS SIDEBYSIDE 4/4; NEITHER (C43, VBAR_A) 4/4 -> **known 4/6, gate CONTROL FAIL**, nothing
+  read out, as pre-stated. The two f.101r tiles failed as tiles (dense page, neighbouring rows in frame), not as a shape answer.
+- Descriptive only (in no gate): **f.211r DBL STACKED 5/5; f.211r SBS SIDEBYSIDE 3/3; f.61 PHI references STACKED 2/2.** So by this reader f.211r's
+  DBL are not the side-by-side SBS glyph (H323's worry that they are SBS drawn taller finds no support), and they read like f.61's PHI (loops on a
+  stem) as much as like f.101r's DBL.
+For H317's scoring: PHI's cell (e/r) sits inside DBL's (e/r/u), so whether f.211r's DBL is scored as DBL or as PHI changes only the u; stated here so
+the verifier can choose. Not re-run on the same f.101r tiles (rule 3). Vision calls this session: 10.
