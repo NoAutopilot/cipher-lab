@@ -1,0 +1,3 @@
+by class: ZHOOK: A 3; H24: A 4 C 1; 2HOOK: A 4; C43: B 3; HASH4-A: C 4
+G = A: 2# tiles 8/9, f.61 ZHOOK 3/3, others 0/7; hypergeometric p (3 ZHOOK in a group of 11 of 19) 0.170
+read-out: f.61's ZHOOK is the 2# sign

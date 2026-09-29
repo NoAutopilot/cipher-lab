@@ -1,0 +1,24 @@
+# written verbatim from the inline reply (runner 9, H235, one Opus vision call, 29 Sept 2026)
+# GROUP A: A 4- or Z-shaped hooked head joined to two parallel slanted down-strokes, giving a double-stemmed sign.
+# GROUP B: A plain 4 with a separate 3- or z-shaped tail hanging at the lower right.
+# GROUP C: A 4-shaped head on a tall stem that is crossed below the head by two horizontal bars, like a 4 sitting on a ≠ or #.
+tile	group
+V01	A
+V02	A
+V03	A
+V04	C
+V05	B
+V06	A
+V07	A
+V08	A
+V09	A
+V10	A
+V11	A
+V12	C
+V13	C
+V14	C
+V15	B
+V16	C
+V17	A
+V18	A
+V19	B

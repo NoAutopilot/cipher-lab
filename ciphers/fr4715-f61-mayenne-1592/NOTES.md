@@ -4297,3 +4297,18 @@ files). Descriptive; nothing merged.
 - f.106r (held, no letters): HASH4 B 13, A 4; H24 D 13. f.108v HASH4: A 9, B 5. f.108r HASH4: B 9, A 1.
 For a v6 build: the 4-headed hash reads d/q on both period-glossed leaves; the 2# sign reads i/x (f.101r's H24, f.188r's mis-coded HASH4); the looped hash
 is common only on f.61's hand (f.108r/v) and the secretary's f.106r, and has no period value. Pooled HASH4 counts mix all three. Nothing merged.
+
+## Campaign step H235 (29 Sept 2026, 05:55-06:08 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's ZHOOK sorts with the period "2#" i/x sign
+
+Pre-registered (PROMPTS section H235; `family/h235_zhook_2hash.py`, key `family/h235_items.tsv`, before the call). Disclosure: the idea came from the runner's
+look at f.61's line sheets L01/L11 while placing H233's tokens; the runner did not look at the H235 sheet. 19 tiles, grey, autocontrast, all at height 180
+(H178b's normalisation): f.61 ZHOOK 3 and C43 3 (H178b's positions), f.101r H24 i 5, f.101r 4-head HASH4 d/q 4 (H227 answers), f.188r 2-hook i/x 4
+(H224 answers). One Opus free sort (`family/passes/h235_sort.tsv`). Result `family/h235_zhook_2hash_result.txt` (`--check` OK). Groups: **A** a 4- or
+Z-shaped hooked head on two parallel slanted down-strokes; **B** a plain 4 with a 3/z tail (C43); **C** a 4 on a stem crossed by two bars (the 4-head hash).
+- **ZHOOK: A 3. H24: A 4, C 1. f.188r 2-hook: A 4. C43: B 3. 4-head HASH4: C 4.**
+- Pre-stated read-out: group A holds 8/9 of the 2# tiles, all 3 ZHOOK and 0 of the 7 others -> **"f.61's ZHOOK is the 2# sign"**.
+- Caveat: group A is 11 of 19 tiles, so the chance of all three ZHOOK falling in it by itself is 0.17 (hypergeometric); the evidence is the clean
+  three-way split (every class in its own group, none mixed but one H24), not that number.
+What it says: H178b's "no link" compared ZHOOK with Desportes's small cursive i-sign; against the 2# sign of the two other period decipherments (f.101r,
+f.188r) at a common height, the reader puts f.61's ZHOOK with it. v5's ZHOOK i/x (graded S on f.61 for want of a glyph link) now has a candidate glyph
+link to a period i/x sign. For the verifier (VERIFY-F61-V6); not merged, grade unchanged.
