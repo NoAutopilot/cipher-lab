@@ -3733,3 +3733,13 @@ Why (2) fails where (1) passes, descriptively: the alignment runs over the full 
 after the gate) rises from 0.257 at letter 5,740 to 0.393 at 5,760 and peaks at 5,820 (0.467): the head of R03 is at 5,770 ("de leur [honneur] nous
 n'aurions qu'a gaigner le temps"). So fol. 178r R01-R02 probably close f.176v's text and fol. 179 begins near R03. As in H177c/H177d, the start was
 not moved inside this row; H185 pre-registers a build from R03, which will confirm the location, not test it independently.
+
+## Campaign step H185 (29 Sept 2026, 00:59-01:02 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- fol. 179 built from fol. 178r R03: GATE FAIL (script-only)
+
+Pre-registered (PROMPTS section H185). `build_f179_key.py L01-L08 --start R03` (result `family/build_f179_key_result_R03.txt`, `--check` OK):
+**0.299 vs (a) f.184r 0.231, (b) fol. 177r 0.217, (c) fol. 177v V06- 0.224; margin +0.068, below the +0.10 gate: FAIL.** The letters lean the
+Desportes way (VBAR_B s 15/38, SBS o 16/33, INF u 14/32, EBR l 8/24), but thinly. The limit is the transcription: the two blind passes agree on only
+309 of 589 fol. 179 signs (0.52; f.176r/v ran 0.70-0.80). Pass A codes 4TRI and HASH4 where B codes C43 and ZHOOK, and CH/LL/OTHER split too.
+Following rule 3's same-knob paragraph, the start is not moved again. The location stays at H184's descriptive level (scan peak inside fol. 178r at
+about R03). The next attempt needs a better sign transcription: a third blind pass that adjudicates only the split columns (H186), not another start.
+key_period_f179.tsv holds this failed run's unendorsed pairs only.
