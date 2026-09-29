@@ -1,0 +1,33 @@
+{
+ "obs": {
+  "n": 25,
+  "left": 8,
+  "right": 9,
+  "either": 16,
+  "line_final": 4
+ },
+ "left": {
+  "obs": 8,
+  "lo": 0,
+  "hi": 6,
+  "p_ge": 0.0022
+ },
+ "right": {
+  "obs": 9,
+  "lo": 0,
+  "hi": 6,
+  "p_ge": 0.0001
+ },
+ "either": {
+  "obs": 16,
+  "lo": 2,
+  "hi": 9,
+  "p_ge": 0.0
+ },
+ "line_final": {
+  "obs": 4,
+  "lo": 0,
+  "hi": 4,
+  "p_ge": 0.038
+ }
+}

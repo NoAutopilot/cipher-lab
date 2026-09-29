@@ -1103,3 +1103,15 @@ right z -3.9; it sits beside PCT, the H41 pair WAVE PCT / PCT WAVE), which shows
 a count of 25. So X is placed as freely as a null or separator would be, but so is almost every other frequent sign --
 the text as a whole has near-random local order (H41), and X's freedom does not single it out. No support either way
 for X as prefix or suffix. Grade S; nothing read; status `open`.
+
+### H48, the WAVE-% bond (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU plus one strip by eye)
+
+`scripts/h48_wave_pct.py` (`h48_wave_pct.json`): of 25 settled WAVE tokens, **16 stand next to a %-family sign (PCT or
+PCT-SLASH), against a 10,000-shuffle band of 2-9 (p < 0.0001)**, and on both sides about equally: % left of WAVE 8
+(band 0-6, p 0.002), right of it 9 (0-6, p 0.0001). WAVE is also line-final 4 times (band 0-4, p 0.038; all four in the
+verse, two of them couplet ends). On strip c2a_L16 both pairs (boxes 9-10 "% ~" and 31-32 "~ %") are two separate
+signs with ordinary spacing, not one composite. So WAVE and % form a bond between two units written in either order --
+not a two-part sign in a fixed order, which would put the partner on one side only. In a syllabic or mixed design this
+is the shape of two frequent units that follow each other both ways (a pair like "en"/"ne" or a unit and its
+homophone neighbour), and it is the strongest local regularity in the text (H41's largest bigram excesses). Nothing
+folded; H34/H41 stand. Grade S; nothing read; status `open`.
