@@ -76,3 +76,5 @@ bac17182c1165ad0960b325535f3fe17e13e0694  ciphers/debosnys-1883/glyphs/strips/c4
 9e4db67085102b81d99bec88de653f25c7cc26c9  ciphers/debosnys-1883/glyphs/strips/c4b_L03.jpg  derived from the published Cipherbrain images (baseline)
 f781ae1dbb767f8ec45cd75861d54d885d2d2b3e  ciphers/debosnys-1883/glyphs/strips/c4b_L04.jpg  derived from the published Cipherbrain images (baseline)
 d821ad27bbba1c7a505f3349a15098b32cfb6977  ciphers/debosnys-1883/glyphs/strips/c4b_L05.jpg  derived from the published Cipherbrain images (baseline)
+86d2c500ff1432743b73a133581560d771573015  ciphers/debosnys-1883/swarm/G-F/data/img/bernard_1829_p138_key.png  published: David Bernard, Light on Masonry (1829) p.138, crop by DEB-SWARM-F 29 Sept 2026
+a83cb7eb57e17482393c02570aeb08f60474c681  ciphers/debosnys-1883/swarm/G-F/data/img/knight2011_fig2_scheme.png  published: Knight, Megyesi and Schaefer, The Copiale Cipher (2011) Figure 2, crop by DEB-SWARM-F 29 Sept 2026
