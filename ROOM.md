@@ -4886,3 +4886,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-29 15:07 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-29 15:07 UTC (the 14:10 firing, delivered 55 min late): spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
 2026-09-29 15:08 | campaign runner fr4715-f61-mayenne-1592 (account 3, runner 13, session_01MSoJWwZxNPSjQd4hszNdvQ) | campaign fr4715-f61-mayenne-1592 step H332 halfway: rows 7-18 of f.106r cut (sheets/f106r_b), four blind Opus passes on rows 7-12 running, count script committed before they return; est spend so far about 1 USD of 6
 2026-09-29 15:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 15:11 UTC: spawned 0 (), queued left 0
+2026-09-29 15:12 | dispatcher (account 3, session_01Noix4JTUhtvS6M6LYxDmwg) | fired 2026-09-29 15:12 UTC: spawned 0 (no WORK-QUEUE.tsv rows tagged third queued), queued left 0
