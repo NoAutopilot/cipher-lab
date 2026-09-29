@@ -4312,3 +4312,17 @@ Z-shaped hooked head on two parallel slanted down-strokes; **B** a plain 4 with 
 What it says: H178b's "no link" compared ZHOOK with Desportes's small cursive i-sign; against the 2# sign of the two other period decipherments (f.101r,
 f.188r) at a common height, the reader puts f.61's ZHOOK with it. v5's ZHOOK i/x (graded S on f.61 for want of a glyph link) now has a candidate glyph
 link to a period i/x sign. For the verifier (VERIFY-F61-V6); not merged, grade unchanged.
+
+## Campaign step H233 (29 Sept 2026, 06:10-06:20 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the code 4PI names two different signs: f.101r's is the 4-head hash, f.61's is a 4 over a Pi
+
+Pre-registered (PROMPTS section H233; `family/h233_4pi_shape.py`, key `family/h233_items.tsv`, before the call; f.61 positions placed by the runner's eye and those
+three crops checked, the sheet not seen). 18 tiles at H235's normalised height: f.101r's 7 pass-A-mapped lettered 4PI, f.61's L01 11 (HASH4), L01 12 and L11 9
+(4PI), anchors H235's 4-head (4) and 2-hook (4) tiles. One Opus call, fixed categories (`family/passes/h233_reply.tsv`). Result `family/h233_4pi_shape_result.txt`
+(`--check` OK):
+- **Anchors 8/8 PASS.**
+- **f.101r 4PI: A (4-head hash) 6 -- letters d/q 4, other 2; E 1 (d).** Read-out: A share 0.86 -> **"4PI is the 4-head hash"** on f.101r.
+- **f.61: L01 11 HASH4 -> A; L01 12 4PI -> E; L11 9 4PI -> E** (a figure-4 over two upright stems joined by a bar, no hash).
+What it says: on f.101r the readers' 4PI is the same 4-headed hash as HASH4 (and reads d/q like it); on f.61 the readers' 4PI is a different sign, a 4 over a
+Pi. So v5's 4PI letters (d/a/q/n, from f.101r and f.108r) do not transfer to f.61's two 4PI tokens by glyph; those two need their own evidence (f.108r's 4PI:
+H202 read p 1 / d 4 under Tomokiyo's overlay -- which sign it is there is not yet checked). f.61's L01 HASH4 is the 4-head form, which reads d/q on both
+period leaves (H224/H227), not i. For the verifier and H234. Nothing merged.

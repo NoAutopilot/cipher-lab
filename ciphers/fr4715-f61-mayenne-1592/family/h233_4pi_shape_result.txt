@@ -1,0 +1,4 @@
+anchors: 8 of 8 (4-head -> A, 2-hook -> D; gate >= 6): PASS
+f.101r 4PI: A 6 (d/q 4 other 2); E 1 (d/q 1)
+f.61 tokens: L11 4PI x864 -> E; L01 HASH4 x1917 -> A; L01 4PI x2214 -> E
+read-out: 4PI answered 7, A share 0.86, E share 0.14 -> 4PI is the 4-head hash
