@@ -4276,3 +4276,14 @@ What it says: H199's f.108v reading holds when the reader sees H193's f.176v str
 them (H221, H229) the same f.108v signs were read "no bowl" 9 times of 10. So the bowl question on f.61's hand is context-dependent: a small bowl is
 called only against clear exemplars. This corrects the 05:1x flag -- H199 is reproduced, with that caveat for the verifier (every bowl call should
 carry H193's strips). H231 runs f.106r's bowl in H199's design. Nothing merged.
+
+## Campaign step H231 (29 Sept 2026, 05:36-05:44 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r's bowl in H199's design: the 4TRI code mixes the two signs
+
+Pre-registered (PROMPTS section H231; `family/h231_bowl_106r_h199.py`, key `family/h231_items.tsv`, before the call; the runner did not look at the sheets). H199's
+verbatim prompt, part 1 = H193's regenerated strips, part 2 = f.106r's 33 4-family strips at H199 geometry; one Opus call (`family/passes/h231_reply.tsv`).
+Result `family/h231_bowl_106r_h199_result.txt` (`--check` OK):
+- **Control 18/20 PASS.**
+- **C43: no 12 of 12. 4TRI: yes 5, no 7. 4STEM: yes 2, no 6, n 1.** Read-out: 4TRI yes-share 0.42 -> **"does not follow"** (C43 no-share 1.00).
+So on f.106r the no-bowl sign is always coded C43 when C43 is written, but the 4TRI code carries both signs, as on f.176r and f.101r (H218's table), and
+4STEM mostly the no-bowl sign. Any f.106r 4-family count pooled into a key would need re-splitting by these shape answers (positions in the reply/key
+files). Descriptive; nothing merged.
