@@ -1,0 +1,96 @@
+s01_1	X	H	X-DOT	plain faint crossed diagonal strokes
+s01_2	X	H	X-DOT	plain crossed diagonal strokes
+s01_3	O-TILDE	M	MULTI	tilde over small o, dot
+s01_4	X	H	X-DOT	plain crossed diagonal strokes
+s01_5	NOTE	M	DAGGER-O	oval with vertical stem above
+s01_6	CC-DASH	H	AMP	two c's over double bar
+s01_7	CC-DASH	H	AMP	two c's over double bar
+s01_8	X	H	X-DOT	plain crossed diagonal strokes
+s02_1	C-DOT	M	PCT	open c with two dots
+s02_2	X	H	X-DOT	plain crossed diagonal strokes
+s02_3	C-DOT	L	MULTI	large c enclosing small ox
+s02_4	C-DOT	H	C-BAR-X	c curl with inner dot
+s02_5	SCROLL-X	H	X-O	back-to-back curls, scroll x
+s02_6	X	H	X-DOT	plain x, dot at right
+s02_7	X	M	X-DOT	x with dot at right
+s02_8	WAVE	H	DASH-H	two stacked heavy wavy strokes
+s03_1	II-O	H	O-BAR-O	two ticks, bar, o below
+s03_2	X	H	X-DOT	small lowered faint x
+s03_3	PCT	H	PCT-SLASH	o slash o percent
+s03_4	PCT	M	PCT-SLASH	slash with dot, solid blob
+s03_5	X	H	X-BAR	tall narrow crossed strokes
+s03_6	X	H	X-DOT	small plain crossed strokes
+s03_7	X	H	X-DOT	small plain crossed strokes
+s03_8	II-O	H	O-BAR-O	two ticks, bar, o below
+s04_1	O-TILDE	H	OO-TILDE	tilde stroke over small o
+s04_2	O-TILDE	H	OO-TILDE	tilde stroke over small o
+s04_3	LOOP-STEM	H	O-SLASH	loop with diagonal tail stem
+s04_4	PCT	H	PCT-SLASH	percent sign, long slash
+s04_5	X	M	X-DOT	x with side blob marks
+s04_6	CC-DASH	H	CC-O	two c's over double bar
+s04_7	Y-CURL	M	SCROLL-X	cursive script x curl shape
+s04_8	DAGGER-O	H	CROSS-T	cross stem above small o
+s05_1	X	H	X-DOT	plain x, two strokes
+s05_2	O-SLASH	H	X-LOOP	loop crossed by diagonal stroke
+s05_3	O-SLASH	M	X-LOOP	tall loop long diagonal through
+s05_4	X	H	X-DOT	plain x, two strokes
+s05_5	PCT	H	PCT-SLASH	percent sign, open circles
+s05_6	MARS	M	NOTE	filled head arrow, dots below
+s05_7	X	M	X-DOT	small squat x, dark top
+s05_8	X	H	X-DOT	plain x, two strokes
+s06_1	PCT	H	PCT-SLASH	percent sign, open circles
+s06_2	Y-CURL	H	NINE	cursive y with dot right
+s06_3	II-DASH	H	CC-DASH	two ticks over double bar
+s06_4	DAGGER-O	H	VENUS	cross stem above circle
+s06_5	C-DOT	M	CIRC-O	c arc with inner dots
+s06_6	O-SLASH	H	X-LOOP	loop crossed by diagonal stroke
+s06_7	PCT-SLASH	M	PCT	percent with cross, dots
+s06_8	X-BAR	M	X-DOT	x with dot above top
+s07_1	C-DOT	M	CC-DOT	open C with inner marks
+s07_2	O-SLASH	M	PHI	loop crossed by long diagonal
+s07_3	II-O	H	O-DASH2	two ticks, bar, O below
+s07_4	PCT-SLASH	M	PCT	small cross-topped slash with dots
+s07_5	II-DASH	M	DOTS-DASH	double bar over short ticks
+s07_6	CROSS-T	H	DAGGER-O	cross on horizontal base bar
+s07_7	PCT-SLASH	M	PCT	small cross-topped slash with dots
+s07_8	LOOP-STEM	H	O-DOT-STEM	loop with diagonal tail stem
+s08_1	CC-DASH	H	CC-O	two c-curls over double bar
+s08_2	X	H	X-DOT	plain cross of two strokes
+s08_3	X-BAR	M	X-DOT	X with dot above top
+s08_4	Y-CURL	M	Y-LOOPS	forked Y with broken stem
+s08_5	PCT	H	PCT-SLASH	two circles across long slash
+s08_6	VEE	H	LAMBDA	plain open V shape
+s08_7	CC-DASH	H	CC-O	two c-curls over double bar
+s08_8	CC-DASH	H	CC-O	two c-curls over double bar
+s09_1	X	H	X-DOT	plain cross of two strokes
+s09_2	PCT-SLASH	M	NINE	slash with tick and dot
+s09_3	X	H	X-CURL	slanted cursive X strokes
+s09_4	Y-CURL	H	NINE	curled y with trailing dot
+s09_5	X	H	X-BAR	plain cross of two strokes
+s09_6	O-DASH2	H	O-DASHBELOW	double bar over small O
+s09_7	X	H	X-DOT	small plain cross strokes
+s09_8	Y-CURL	M	QUESTION	large curled y, no dot
+s10_1	X	H	X-DOT	plain upright cross two strokes
+s10_2	X	H	SLASH	large X, long right stroke
+s10_3	X-SLASH	M	HASH	X with extra parallel slash
+s10_4	VEE	H	LAMBDA	plain V, no dot visible
+s10_5	X	M	BAR-THIN	narrow tall X, curved strokes
+s10_6	PHI	H	O-SLASH	oval with vertical stroke through
+s10_7	Y-CURL	H	NINE	curled y with trailing dot
+s10_8	PCT-SLASH	M	PCT	dot slash dot, cross top
+s11_1	X	H	X-DOT	dark tall X, heavy stroke
+s11_2	X	H	X-DOT	faint plain X, even strokes
+s11_3	II-O	H	O-BAR-O	two ticks, bar, circle below
+s11_4	CC-DASH	H	AMP	two c's over double bar
+s11_5	O-DASH2	H	O-DASHBELOW	two bars above small oval
+s11_6	PCT-SLASH	H	PCT	slash with dot, tick right
+s11_7	DAGGER-O	M	X-BAR-CC	small cross over little o
+s11_8	DOTS-DASH	M	II-DASH	double bar over dots below
+s12_1	X	H	X-DOT	faint plain X, medium size
+s12_2	NOTE	M	LOOP-STEM	oval loop with upward stem
+s12_3	X	H	X-DOT	small crisp X, white background
+s12_4	II-O	H	O-BAR-O	two ticks, bar, circle below
+s12_5	O-SLASH	M	PHI	loop crossed by long diagonal
+s12_6	II-O	H	O-BAR-O	two ticks, bar, circle below
+s12_7	X	M	X-DOT	very small dark x
+s12_8	X	H	BAR-THIN	narrow tall X, curved strokes

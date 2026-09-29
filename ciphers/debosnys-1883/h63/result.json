@@ -1,0 +1,181 @@
+{
+ "unfolded": {
+  "n": 96,
+  "R1_err_pct": 8.3,
+  "R2_err_pct": 8.3,
+  "unsettled": 2,
+  "agreed_wrong": 7,
+  "two_reader_err_pct": 9.4,
+  "residual": [
+   [
+    "s02_5",
+    "S-CURL",
+    "SCROLL-X",
+    "SCROLL-X"
+   ],
+   [
+    "s04_5",
+    "X",
+    "X-DOT",
+    "X"
+   ],
+   [
+    "s04_7",
+    "S-CURL",
+    "Y-CURL",
+    "Y-CURL"
+   ],
+   [
+    "s05_6",
+    "NOTE",
+    "MARS",
+    "MARS"
+   ],
+   [
+    "s06_8",
+    "X",
+    "X-BAR",
+    "X-BAR"
+   ],
+   [
+    "s08_3",
+    "X",
+    "X-BAR",
+    "X-BAR"
+   ],
+   [
+    "s10_3",
+    "X",
+    "X-SLASH",
+    "X-SLASH"
+   ],
+   [
+    "s11_8",
+    "II-DASH",
+    "II-DASH",
+    "DOTS-DASH"
+   ],
+   [
+    "s12_5",
+    "PHI",
+    "O-SLASH",
+    "O-SLASH"
+   ]
+  ]
+ },
+ "r22_folds_rule": {
+  "n": 96,
+  "R1_err_pct": 7.3,
+  "R2_err_pct": 8.3,
+  "unsettled": 1,
+  "agreed_wrong": 7,
+  "two_reader_err_pct": 8.3,
+  "residual": [
+   [
+    "s02_5",
+    "S-CURL",
+    "SCROLL-X",
+    "SCROLL-X"
+   ],
+   [
+    "s04_7",
+    "S-CURL",
+    "Y-CURL",
+    "Y-CURL"
+   ],
+   [
+    "s05_6",
+    "NOTE",
+    "MARS",
+    "MARS"
+   ],
+   [
+    "s06_8",
+    "X",
+    "X-BAR",
+    "X-BAR"
+   ],
+   [
+    "s08_3",
+    "X",
+    "X-BAR",
+    "X-BAR"
+   ],
+   [
+    "s10_3",
+    "X",
+    "X-SLASH",
+    "X-SLASH"
+   ],
+   [
+    "s11_8",
+    "II-DASH",
+    "II-DASH",
+    "DOTS-DASH"
+   ],
+   [
+    "s12_5",
+    "PHI",
+    "O-SLASH",
+    "O-SLASH"
+   ]
+  ]
+ },
+ "coarse": {
+  "n": 96,
+  "R1_err_pct": 6.2,
+  "R2_err_pct": 7.3,
+  "unsettled": 1,
+  "agreed_wrong": 6,
+  "two_reader_err_pct": 7.3,
+  "residual": [
+   [
+    "s02_5",
+    "S-CURL",
+    "SCROLL-X",
+    "SCROLL-X"
+   ],
+   [
+    "s04_7",
+    "S-CURL",
+    "Y-CURL",
+    "Y-CURL"
+   ],
+   [
+    "s05_6",
+    "NOTE",
+    "MARS",
+    "MARS"
+   ],
+   [
+    "s06_8",
+    "X",
+    "X-BAR",
+    "X-BAR"
+   ],
+   [
+    "s08_3",
+    "X",
+    "X-BAR",
+    "X-BAR"
+   ],
+   [
+    "s10_3",
+    "X",
+    "X-SLASH",
+    "X-SLASH"
+   ],
+   [
+    "s11_8",
+    "II-DASH",
+    "II-DASH",
+    "DOTS-DASH"
+   ]
+  ]
+ },
+ "kill": true,
+ "missing": {
+  "R1": 0,
+  "R2": 0
+ }
+}

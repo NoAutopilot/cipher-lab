@@ -1342,3 +1342,24 @@ toward it (CLAUDE.md rule 3, the "approach is the limit" clause): **R34 is untes
 set's N (637)** -- logged "untested-by-this-tool", not refuted, and not to be re-briefed on the same scan; a different
 instrument (e.g. a dedicated column-transposition solver with its own known-answer control) or more text would be
 needed. Nothing read; status `open`.
+
+### H63, a fresh known-answer page for the H61 folds (29 Sept 2026, DEBOSNYS-RUNNER-3b; 8 value-blind reader calls)
+
+Pre-registered in `h63/PREREG.md` (pushed 7cf8e17e before any crop); `scripts/h63_page.py` (R2-2's t_low.py control()
+unchanged except seed 20260930 and R2-2's own page's source boxes excluded; overlap asserted empty at scoring) ->
+`h63/result.json`, reads and truth in `h63/` (crops regenerate deterministically, not committed). 96 targets, 19 ids.
+**Model substitution:** both readers ran on claude-opus-5-5 (the brief's rule: Fable while Fable answers, else Opus 5.5;
+account 3's Fable limit is rejected until 3 Oct 08:00 UTC; owner go relayed by the account-3 dispatcher 12:48 UTC);
+R2-2 had used Sonnet + Opus. Each reader = 4 subagent calls of 3 lines (R2-2's split).
+Result: unfolded two-reader error 9.4 pct (R1 8.3, R2 8.3); R2-2 folds + RULE.md 8.3 pct; **with the six H61 folds
+7.3 pct (R1 6.2, R2 7.3; 1 unsettled, 6 agreed-but-wrong) -- at or above the 5 pct kill line: kill met.** The residual
+errors lie outside the six folds: truth X read X-BAR (2) or X-SLASH (1) by both readers, truth S-CURL read SCROLL-X / Y-CURL
+by both, truth NOTE read MARS by both; one II-DASH/DOTS-DASH split. So the folds fitted on R2-2's page (H61) do not
+carry to a fresh page -- each page has its own confusable pairs, as expected of a fold list chosen on test data.
+Caveats, stated both ways: (1) truth labels are boxes where passes A and B agreed, which H51 bounds at up to about 17 pct
+hidden error, so some of the 6 agreed-wrong may be truth-label errors (both Opus readers see a bar or slash on an X that
+A and B called plain X); if all 6 were, the folded error would be 1.0 pct -- the data cannot separate the two; (2) the
+two readers were the same model, so their errors are correlated (1 disagreement in 96, against R2-2's 13 with two models),
+which lowers "unsettled" and raises "agreed-wrong" -- the kill line counts both. By the pre-registered letter the six
+folds do not give a low-noise text on the public pixels; DIGEST-2's "public pixels are the limit" stands.
+Nothing read; status `open`.
