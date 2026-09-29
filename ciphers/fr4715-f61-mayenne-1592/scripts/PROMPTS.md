@@ -531,3 +531,20 @@ slightly different scales. In every tile two red triangles, one above and one be
 thin red tick). Every target sign is built on a hash or cross-hatch. Sort ONLY the pointed-at signs into 2 to 4 groups by the shape of the sign itself
 (what is drawn on or attached to the hash), not by ink, scale, blur or hand. Do not use any other tools. Answer inline: first one line per group,
 'GROUP <letter>: <one-sentence criterion>'; then one line per tile, exactly 'W01<TAB><group letter>', W01 to W22 in order, and nothing else."
+
+## H224 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- hash forms at f.188r's HASH4 positions (i/x conflict rows vs d/q), H212 anchors, WRITTEN BEFORE THE CALL
+
+Sheets: <scratch>/h224/sheet_01.jpg, sheet_02.jpg (family/h224_hash_188r.py tiles; key family/h224_items.tsv; native btv1b9060633d f351, sha1 matches
+MANIFEST). Disclosure: the runner looked at sheet_01 once for marker geometry and saw that several f.188r targets look like a "2" hooked into a hash
+(the shape H222's reader grouped for f.101r's H24), so category D was added to the fixed list, and a third read-out to the script, before the call.
+
+Prompt (verbatim):
+"You are looking at two sheets of numbered image tiles (Y01-Y33) cut from 16th-century French cipher letters, possibly in different hands and at slightly
+different scales. In every tile two red triangles, one above and one below, point at one cipher sign (ignore ordinary handwriting and any thin red tick).
+Every target sign is built on a hash or cross-hatch (#-like strokes). For each tile, classify ONLY the sign the triangles point at into exactly one of:
+A = a figure-4 (an angled or triangular 4-head) rising above or joined to the hash;
+B = two small loops (or small closed rings) sitting on the hash, no 4-head;
+C = a plain hash with nothing attached;
+D = a 2-shaped hook leading into the hash from the left (reads like '2#');
+N = none of these, or cannot tell.
+Do not use any other tools. Answer inline, one line per tile, exactly in the form 'Y01<TAB>A' (A, B, C, D or N), Y01 to Y33 in order, and nothing else."
