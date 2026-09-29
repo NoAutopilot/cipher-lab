@@ -185,6 +185,10 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   construction (runner's error); H208 re-runs it corrected.
 - **H208:** corrected (neighbours only from classes present): the judge ranks the bowl labelling 1 of 21 in both seeds (7.5, 9.0), with the pass-code set at 3.5
   and 4.0. For the verifier: whether the 4-family is read by the bowl shape (bowl c/p, no bowl a/n) rather than by pass code, as a v6 shape rule.
+- **HASH4 (H209-H214):** on bowl-relabelled f.108v, d/q beats i/x 30/30 (H209); f.108r leans i/x (H211, OPEN). A blind sort finds two hash forms, A
+  (a 4-head over the hash) and B (two loops on the hash). f.108v is A 9 / B 5 and f.108r A 1 / B 9 (H212, p 0.013, under the share rule). Splitting f.108v's HASH4
+  by form (A d/q, B i/x) beats all-i/x and the reverse split 30/30 (H213). The looped form does not occur on f.176 (H214 control fail), so there is no
+  period-letter test yet. For the verifier: a second possible shape split under one pass code, sequence-only.
 
 ## Files to read
 

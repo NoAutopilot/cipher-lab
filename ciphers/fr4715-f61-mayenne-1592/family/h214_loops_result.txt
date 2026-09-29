@@ -1,0 +1,2 @@
+anchors: 10 of 20 answer in the pre-stated direction (looped = i; gate >= 17): CONTROL FAIL
+anchor answers: I no n no n no no n no n no | DQ no no no no no no no no no no

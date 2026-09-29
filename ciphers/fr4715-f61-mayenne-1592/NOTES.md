@@ -4063,3 +4063,14 @@ Descriptive: on f.108v the 4-headed hash reads d/q and not i/x, and the reverse 
 rather than d/q rests on 5 signs here and is OPEN. With H211 (f.108r, mostly looped, leans i/x) and H195 (the Desportes d/q anchors are 4-headed 9/10),
 this supports a second shape split, HASH4 = 4-head d/q vs looped i/x, the same kind of split as the 4-family's bowl. The evidence is sequence-only, no
 period letters yet in f.61's hand; H214 tests it against the f.176 period letters. f.61 itself has one HASH4 (L01). HASH4 stays d/i/q; nothing merged.
+
+## Campaign step H214 (29 Sept 2026, 02:58-03:00 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- the looped hash against f.176's period letters: CONTROL FAIL (the form is absent from Desportes's leaves)
+
+Pre-registered (PROMPTS section H214; `family/h214_loops.py`, commit 91d00793). H195's unchanged 60 strips, regenerated, key byte-identical; direction
+fixed before the call (looped = i). One Opus vision call, blind (`family/passes/h214_attribute.tsv`). Result `family/h214_loops_result.txt` (`--check` OK):
+**anchors 10 of 20 in the pre-stated direction (gate >= 17): CONTROL FAIL.** The reader answered "no" or "n" on all 60 strips: none of the i anchors
+(no 6, n 4) nor any other f.176 HASH4 sign carries H212's two small loops on the hash.
+What it says: the looped hash of f.108r/f.108v does not occur in Desportes's hand on f.176, so this instrument cannot test it against f.176's period
+letters. The f.176 i-signs are some other form, which H195 also could not separate. The HASH4 form split (H212/H213) therefore stays sequence-only
+in f.61's hand. The period-letter test it needs is on a leaf in that hand with a gloss at HASH4 positions: f.108r's overlay rows carry none (checked
+this session), and f.61's one HASH4 (L01) is outside Tomokiyo's letters. Not re-briefed with the same question (rule 3). Nothing merged.
