@@ -1,0 +1,8 @@
+v6: 99 signs: firm 12 / two-way 58 / wider 4 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 OTHER=e/q/i/p/r/s/t:2
+v6 + ZHOOK = 2# (value unchanged): 99 signs: firm 12 / two-way 58 / wider 4 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 OTHER=e/q/i/p/r/s/t:2
+v6 + 4PI split, f.61 4PI a/n (H240): 99 signs: firm 12 / two-way 60 / wider 2 / unread-or-null 25
+  still wider: OTHER=e/q/i/p/r/s/t:2
+v6 + 4PI split, f.61 4PI held unread: 99 signs: firm 12 / two-way 58 / wider 2 / unread-or-null 27
+  still wider: OTHER=e/q/i/p/r/s/t:2
