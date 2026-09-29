@@ -2448,6 +2448,18 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 02:50 Pacific [09:50 UTC], account 3 after TAKEOVER): the standby took the role; f.61 runner 10; swarm round 2 done, digest queued
+
+- TAKEOVER 09:41 UTC by the standby orchestrator on account 3 (session_0188fcSVidUc4CosHUJVxJDm): the owner-account orchestrator's last ROOM line is 06:16 (205 min), two check-ins (07:1x, 08:1x) missed, no HANDOFF line; hub-seed/STANDBY-3.md rule 'stale'. Owner-account runners are presumed stopped (runner 9 last line 06:49). This note covers the whole gap 06:16-09:50.
+- Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: F61-FAMILY-10 built key v6 (07:19). VERIFY-F61-V8 (08:24) endorses ZHOOK = 2# (grade S, glyph link, 10/10 vs 0/27 distractors) and the 4PI split (4-head d/q; f.61's 4-over-Pi a separate class; L11 9 a/n grade M; L01 12 unread): meter firm 12 / two-way 58 / wider 2 / unread-or-null 27 of 99. Runner 10 session_0148wt8Aokh6aZEdJsXzYiZX (account 3, Fable, trig_01ShV4RFc3fjZTpTmLwAo7vV :50, continuous) started 09:47 on H256-H258. Blocker (closest target): nothing yet moves a two-way position to firm; V8's four merge items are not in a key (F61-FAMILY-11, key v7, to queue); the looped hash and the two f.61 4PI need a period value (ASKS 88/89/93/99); fr.4699 unread.
+- Debosnys: swarm round 2 complete (six jobs, 07:23-08:55). Results: the order negative holds under folds, stroke drop and indel noise (R2-1, control pass); no copied-poem crib in c4 (R2-3, control pass); the public images read at 15.6-17.7 pct known-answer error with two blind readers, matching H51 (R2-2, control fail: the public images are the transcription limit); HARNESS-2's registered controls failed (planted FR-HOMO passes the refit null but fails the cross-language rule), so the frozen bar cannot yet gate; R2-4 and R2-5 controls failed (non-tests). DEB-SWARM-MERGE-2 queued to account 3 (dispatcher 10:10). DEBOSNYS-RUNNER-3b's trigger disabled 09:44 at its own request (all public rows done; H18/H20/H57 blocked on restricted material or the owner); re-enabled when DIGEST-2 appends rows.
+- Armstrong: holds (keyless steps stopped; ASKS 83-86, 90-92, 96, 97 with the owner). No account-3 runner started: the track is a hold, not a live runner. The account-3 'Armstrong line B' trigger (trig_01Vt6e9NYCarWr6PqsxStwcd, :20, idle since the 28 Sept re-plan) could not be disabled from this session (permission refused): for the owner or the owner-account orchestrator on handback.
+- Mercy: N4 counted, campaign holds. Birago: three letters counted; next items (pound sign, the 1572 group) unassigned; HARVEST-SCOUT-3 done 20:48 28 Sept.
+- Mailbox: not visible from account 3 (no mail connector on this session); any archive reply since 06:16 is unread until the owner account is back.
+- Keys on account 3: EUROPEANA_API_KEY, DPLA_API_KEY, CORE_API_KEY read absent here (key_livecheck 09:43); present on the owner account.
+- Housekeeping: eight done account-3 workers archived; orphan_check clean on triggers, 22 older idle done sessions (round-1 groups, verifiers, harvest) to archive at the next check-in.
+
 ### Orchestrator note (28 Sept 2026, 23:20 Pacific [29 Sept 06:20 UTC]): the f.61 hash signs endorsed; swarm round 2 queued
 
 - Counts 21 / 2 / 1 / 6, unchanged.
