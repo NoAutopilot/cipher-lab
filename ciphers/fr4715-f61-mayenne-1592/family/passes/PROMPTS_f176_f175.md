@@ -388,3 +388,7 @@ each under a red triangle (look only at the marked sign in each). <items_01.jpg>
 pointing down at one sign; look only at that sign. For each item answer the reference (R1 to R8) whose sign it is the same sign as; answer none if it
 matches no reference, n if it cannot be told. Small differences of size and slant within one hand do not make a different sign; an extra stroke or
 loop does. Reply ONLY with a TSV block 'id<TAB>answer', rows I01..I29."
+
+## H411 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H410's prompt verbatim with twelve references (R1-R12, references.jpg) and items I01-I32 (items_01..02.jpg); script `h411_class_qa.py`, key
+`h411_items.tsv`. The runner looked at the sheets for marker placement only (no change).
