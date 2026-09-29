@@ -755,3 +755,21 @@ the LEFT one and answer LEADIN if the left stroke begins with a long diagonal le
 does), or UPRIGHT if the left stroke is a plain upright ascender like the right one (as in a doubled l). If the centre mark is some other shape, answer
 NEITHER; if you cannot tell, unclear. Ignore ink weight, size, blur and the hand. Answer inline, one line per tile, exactly
 'Z01<TAB><LEADIN|UPRIGHT|NEITHER|unclear>', Z01 to Z13 in order, and nothing else."
+
+## H315 (29 Sept, Opus vision x2, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- fr.3983 f.211r's cipher run, two blind sign passes, WRITTEN BEFORE THE CALLS
+
+Identical prompt for passes A and B (independent calls), only the output letter differs:
+"You are a blind transcriber of a 16th-century French cipher manuscript. List every CIPHER SIGN, left to right, in two image crops that are the left and
+right parts of ONE short cipher run written inside a line of ordinary French handwriting: ciphers/fr4715-f61-mayenne-1592/family/sheets/f211r_run_s1.jpg
+(left part) and ciphers/fr4715-f61-mayenne-1592/family/sheets/f211r_run_s2.jpg (right part). Each crop is 1700 x 480 px, scaled 2x from the native scan,
+with a blue ruler along the bottom; a red bar at the top edge marks the 220 px where the two crops overlap. Small ordinary handwriting (clear French
+words) is written ABOVE the cipher run in places, and ordinary words of the line may show before and after the run: IGNORE all ordinary handwriting,
+except that an ordinary word INSIDE the run is listed as one row with sign = PLAIN and the word in the note. To list each sign once: in the left crop
+list only signs whose centre is LEFT of x = 1600; in the right crop list only signs whose centre is at or RIGHT of x = 120. Code every sign with the
+shape atlas ciphers/fr4715-f61-mayenne-1592/scripts/f61_atlas.tsv (read it first; a TSV of code and shape). Use OTHER for a sign matching none, with a
+shape description in the note; if a sign is between two codes give the best and name the other as 'alt CODE' in the note. Confidence h/m/l. No letters
+of the alphabet are to be guessed for any sign: shape transcription only. Do not read any other file. Write TWO TSV files with the Write tool, header
+exactly: line	pos	sign	conf	segment	x_px	note -- one row per sign; line is L02; pos counts from 1 within the crop; segment s1 or s2; x_px is the sign's
+horizontal centre within that crop (0-1700). Output paths: ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s1_signs{A|B}.tsv and
+ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s2_signs{A|B}.tsv. When done, report only 's1: N signs, s2: N signs'."
+Gate in family/h315_211r_signs.py's docstring. The runner has not viewed the two segment crops.
