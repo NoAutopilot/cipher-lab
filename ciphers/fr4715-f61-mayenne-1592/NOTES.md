@@ -4119,3 +4119,18 @@ from the local source images; one Opus vision call (`family/passes/h216_reply.ts
 positions `family/h216_bowl_positions.tsv`: **repeat control 19/20 PASS; bowl yes only at L06 positions 3 and 32 (both 4STEM); 4STEM 2 yes / 4 no,
 4TRI 0/1, C43 0/4, 4PI 0/4.** So on these rows the bowl (c/p) sign is rare, and where it occurs the H108 passes coded it 4STEM, as on f.108v (H199).
 The one 4TRI is the no-bowl sign. Descriptive; nothing merged. H217 relabels these rows by shape.
+
+## Campaign step H217 (29 Sept 2026, 03:16-03:18 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- f.108r L04-L06 relabelled by shape: OPEN (script-only)
+
+`scripts/f61shapes_108r_seq.py` (committed 0f158193 before the run; result `scripts/f61shapes_108r_seq_result.txt`, `--check` fresh). Shape labels from
+H216 (bowl) and H212 (hash form): 4BOWL 2, 4NOB 9, HASHA 1, HASHB 9 (4PI left as coded). **(1) shapes vs pass codes (HASH4 i/x): 18/30 -> OPEN. (2) whole
+rows: gain 0.194 vs 0.183; the real shape placement ranks 13 of 201 random placements (best 0.204).** Descriptive: on these rows the pass codes already
+mostly follow shape (the lone 4TRI becomes a/n, two 4STEM become c/p, one HASH4 becomes d/q), so the relabel changes few tokens and sequence gain
+cannot separate them at this N. It is no evidence against H201/H213; f.108r adds nothing either way. Nothing merged.
+
+## Runner 8 close (29 Sept 2026, 03:19 UTC by the clock, session_011Taenrv3JSdk7VjpiBjids)
+
+Stopping near the context line. Since the 03:14 handover, H216 (f.108r L04-L06 bowl: 2 bowl signs, both 4STEM) and H217 (OPEN) are done. Rows written for
+runner 9: **H219** (script-only: a TEST key, v5 + the two shape splits, on f.61's spans and f.108r's overlay, H196's design), **H220** (one vision call:
+does the looped hash occur on fr.3982 f.101r, whose HASH4 positions carry period letters? the only route found to a period-letter test of the hash
+split), **H221** (bowl and hash forms on fr.3983 f.106r, the other fr.3983 leaf on disk, to see whether its pass codes follow shape). Spent today 46.1/600.
