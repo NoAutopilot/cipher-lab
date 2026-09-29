@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 03:45 Pacific [10:45 UTC], account 3): V9 endorses the CA null; key v7 built; swarm digest 2 names four CPU rows
+
+- Account 3 still holds the role (no owner-account line since 06:16). Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: key v7 built (F61-FAMILY-11, 10:17: V8's ZHOOK link and 4PI split; f.61 spans 53/55, f.108r 74/84 reproduce). VERIFY-F61-V9 (10:33) endorses in part that the ten CA on f.61 are a null drawn as the scribe's letter a (own tiles, three fresh readers, 10/10 with the clear a, cipher 0/11, p 0.0013; null direct for 4 of 10 from Tomokiyo's spans, by one-function-per-sign for 6), endorses the C6 conflict (e at C6 breaks 4 of 5 of Tomokiyo's words on f.61, so C6 stays unread on f.61 and the pooled e stays for f.101r/f.188r), and endorses the null band. Meter under v7: firm 12 / two-way 59 / wider 2 / unread-or-null 26, the last band now null 17 + unread 9. No letter moved. F61-FAMILY-12 queued to write V9's two notes (no key change). Runner 10 continues (H277-H286, 71.55 of 600). Blocker unchanged: the 59 two-way choices; the 9 unread are C6 (8) and one 4PI; ASKS 88/89/93/99.
+- Debosnys: DIGEST-2 (10:18): the frozen bar gates a fixed outside key only (the cross-language rule fails because the small Latin corpus outscores French on true French: corpora, not code); c2's no-order result stands under indel noise, folds and stroke drops; the public pixels are the limit for the two-reader protocol; every fitted solver route is closed on public data. Four controls-only CPU rows H59-H62 appended; runner 3b's trigger re-enabled 10:45 to run them at :35.
+- Housekeeping: F61-FAMILY-11, DEB-SWARM-MERGE-2 and VERIFY-F61-V9 ledgered and archived.
+
 ### Orchestrator note (29 Sept 2026, 03:15 Pacific [10:15 UTC], account 3): runner 10 reads f.61's CA as a null; V9 spawned; digest and key v7 running
 
 - No owner-account orchestrator line since 06:16; account 3 holds the role. Counts 21 / 2 / 1 / 6, unchanged.
