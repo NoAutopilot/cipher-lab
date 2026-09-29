@@ -1,0 +1,1 @@
+anchors: 5 of 8 (gate >= 6): CONTROL FAIL

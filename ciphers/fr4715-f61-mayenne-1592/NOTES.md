@@ -4344,3 +4344,11 @@ LL 1 (e); f.106r C6 1 (held: m); f.124r CA 1, C6 4, LOOPBAR 3, CROSS 3 (held glo
 CROSS 2; f.274 none. CA's letters are scattered (p 2, q, s, t, c, z), consistent with H63's finding that CA is cipher signs inside word runs. C6 reads e at all
 three lettered positions -- small n, but the one lead. Added H236 (f.108r's 4PI shape: the same hand's overlay reads it d 4 / p 1), H237 (C6 glyph link), H238
 (f.61's two OTHER tokens). Nothing merged.
+
+## Campaign step H236 (29 Sept 2026, 06:36-06:45 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI by shape: CONTROL FAIL
+
+Pre-registered (PROMPTS section H236; `family/h236_4pi_108r.py`, key `family/h236_items.tsv`, before the call; sheet not seen). One Opus call
+(`family/passes/h236_reply.tsv`), result `family/h236_4pi_108r_result.txt` (`--check` OK): **anchors 5/8 -> CONTROL FAIL** (two of the four f.188r 2-hook anchors
+answered N, one of the four 4-head anchors E). The five f.108r 4PI targets are **not scored**; their raw answers stay in the reply file and are not a result.
+f.61's two 4PI were answered E again, a repeat of H233 (not gated). H239: one redo with 12 anchors (gate 10/12); if it fails too, f.108r's 4PI shape is logged
+untestable in this format and not retried (CLAUDE.md rule 3's repeated-attempt clause).
