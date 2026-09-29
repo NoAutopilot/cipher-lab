@@ -3846,3 +3846,12 @@ closed bowl reads c/p; the r-tailed or 3-tailed 4 reads a/n) holds on f.61's han
 at 14 of 14 of Tomokiyo's positions the bowl sign carries his c or p. On f.61 v4's 4TRI cell is a/c/n/p/t (H191). For the verifier: whether f.61's 4TRI
 may be narrowed to c/p on this evidence (a period-validated shape rule plus his letters; C43 a/n is already v4's). His letters come from his own
 table. H178b's cross-hand tile link failed for ZHOOK, a different sign, so each class's transfer stands on its own test. No class change, nothing merged.
+
+## Campaign step H195 (29 Sept 2026, 01:27-01:29 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- hash-family 4-head attribute: CONTROL FAIL
+
+Pre-registered (PROMPTS section H195; `family/h195_hash_attr.py`, key `family/h195_items.tsv`, `h195_yes_group.txt` = DQ, pushed before the call). One
+Opus vision call (inline reply verbatim, `family/passes/h195_attribute.tsv`). **CONTROL: 14 of 20 f.176v anchors in their group's direction (gate >= 17):
+CONTROL FAIL**; the f.176r targets were not scored (`family/h195_hash_attr_result.txt`, `--check` OK). The reader answered "yes" (4-head) on most
+signs of both groups, so the i anchors (agreed HASH4 columns the DP pairs with i) are not reliably bare hashes. Either the DP's i pairings on HASH4
+columns are partly misplaced, or the i/d distinction is not a 4-head on this hand. Unlike the 4-family (H193), the hash family is not separated by
+this instrument; HASH4 stays d/i/q (as VERIFY-F61-V5 held). Not re-briefed with the same question.

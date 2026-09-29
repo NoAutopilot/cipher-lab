@@ -1,0 +1,1 @@
+anchors: 14 of 20 answer in their group's direction (gate >= 17): CONTROL FAIL
