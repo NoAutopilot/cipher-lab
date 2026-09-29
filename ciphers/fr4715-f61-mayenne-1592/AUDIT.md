@@ -419,7 +419,7 @@ agreement and sequence gain, no glyph link). The meter: mechanical from the comm
 
 ## VERIFY-F61-V6 (29 Sept 2026)
 
-Verifier: PARENT WORKER VERIFY-F61-V6 (account 3; Opus), 04:12-04:5x UTC by the container clock; separate from campaign runner 8
+Verifier: PARENT WORKER VERIFY-F61-V6 (account 3; Opus), 04:12-04:4x UTC by the container clock; separate from campaign runner 8
 (session_011Taenrv3JSdk7VjpiBjids, retired) and runner 9. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v6.md`. Working files, each
 with a `--check`: `verify_v6/`. Eight Opus subagent calls (three blind shape readers, one judge control, two judge targets; prompts
 committed first in `verify_v6/PROMPTS.md`, 919fe064 and 8e51a62a), 2 Gallica requests (canvases 327, 328; `verify_v6/requests.log`).
