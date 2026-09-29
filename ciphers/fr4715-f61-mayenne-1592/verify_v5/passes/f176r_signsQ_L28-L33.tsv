@@ -1,0 +1,377 @@
+line	pos	sign	conf	segment	note
+L28	1	VBAR_A	m	s1
+L28	2	PHI	l	s1	alt DBL
+L28	3	OTHER	l	s1	long f/s-like stem curling over at top
+L28	4	4PI	m	s1
+L28	5	VBAR_B	l	s1
+L28	6	C6	l	s1	gamma-like loop; alt CA
+L28	7	HASH4	l	s1
+L28	8	PHI	m	s1
+L28	9	INF	l	s1	alt SBS
+L28	10	PHI	m	s1
+L28	11	OTHER	l	s1	long f/s-like stem curling over at top
+L28	12	4PI	m	s1
+L28	13	PHI	m	s1
+L28	14	VBAR_B	l	s1
+L28	15	VBAR_A	m	s1
+L28	16	INF	l	s1
+L28	17	SBS	l	s1
+L28	18	4STEM	l	s1
+L28	19	4STEM	l	s2
+L28	20	PHI	m	s2
+L28	21	INF	l	s2
+L28	22	PHI	m	s2
+L28	23	HASH4	l	s2
+L28	24	PHI	m	s2
+L28	25	VBAR_A	m	s2
+L28	26	PHI	m	s2
+L28	27	4PI	m	s2
+L28	28	ZHOOK	l	s2	alt HASH4
+L28	29	VBAR_A	m	s2
+L28	30	PHI	m	s2
+L28	31	PHI	m	s2
+L28	32	HASH4	l	s2
+L28	33	PHI	m	s2
+L28	34	4PI	m	s2
+L28	35	PHI	m	s2
+L28	36	VBAR_B	l	s2
+L28	37	VBAR_A	m	s2
+L28	38	PHI	m	s2
+L28	39	OTHER	l	s2	long f/s-like stem curling over at top
+L28	40	4PI	m	s2
+L28	41	VBAR_A	m	s2
+L28	42	HASH4	l	s2
+L28	43	PHI	m	s2
+L28	44	PHI	m	s2
+L28	45	4PI	m	s2
+L28	46	PHI	m	s2
+L28	47	INF	l	s3
+L28	48	PHI	m	s3
+L28	49	4PI	m	s3
+L28	50	OTHER	l	s3	S-like mark between dots
+L28	51	OTHER	l	s3	S-like mark between dots
+L28	52	EBR_A	l	s3	alt EBR_B
+L28	53	C6	l	s3	gamma-like; alt CA
+L28	54	4PI	m	s3
+L28	55	OTHER	l	s3	long f/s-like stem curling over at top
+L28	56	SBS	l	s3
+L28	57	SBS	l	s3
+L28	58	4STEM	l	s3
+L28	59	INF	l	s3
+L28	60	VBAR_A	m	s3
+L28	61	PHI	m	s3
+L28	62	OTHER	l	s3	long f/s-like stem curling over at top
+L28	63	PHI	m	s3
+L28	64	4STEM	l	s3
+L28	65	VBAR_A	m	s3
+L28	66	PHI	m	s3
+L28	67	EBR_B	l	s3
+L28	68	EBR_B	l	s3
+L28	69	PHI	m	s3
+L29	1	VBAR_B	l	s1
+L29	2	PHI	m	s1
+L29	3	4STEM	l	s1
+L29	4	VBAR_B	l	s1
+L29	5	INF	l	s1
+L29	6	VBAR_B	l	s1
+L29	7	VBAR_A	m	s1
+L29	8	EBR_B	l	s1
+L29	9	4STEM	l	s1
+L29	10	4STEM	l	s1	preceded by a comma-like tick
+L29	11	VBAR_B	l	s1
+L29	12	VBAR_B	l	s1
+L29	13	PHI	m	s1
+L29	14	PHI	m	s1
+L29	15	PHI	m	s1
+L29	16	4STEM	l	s1
+L29	17	VBAR_A	m	s1
+L29	18	PHI	m	s1
+L29	19	4PI	m	s2
+L29	20	HASH4	l	s2
+L29	21	PHI	m	s2
+L29	22	PHI	m	s2	strokes from row above intrude over it
+L29	23	EBR_B	l	s2
+L29	24	PHI	m	s2
+L29	25	VBAR_A	m	s2
+L29	26	PHI	m	s2
+L29	27	OTHER	l	s2	long f/s-like stem curling over at top
+L29	28	4PI	m	s2
+L29	29	VBAR_B	l	s2
+L29	30	C6	l	s2	gamma-like; alt CA
+L29	31	EBR_B	l	s2
+L29	32	SBS	l	s2
+L29	33	4STEM	l	s2
+L29	34	4STEM	l	s2	dot below
+L29	35	4PI	m	s2
+L29	36	PHI	m	s2
+L29	37	PHI	m	s2
+L29	38	HASH4	l	s2
+L29	39	INF	l	s2
+L29	40	PHI	m	s2
+L29	41	INF	l	s2
+L29	42	VBAR_B	l	s2
+L29	43	VBAR_A	m	s2
+L29	44	4PI	l	s2
+L29	45	PHI	l	s3	alt SBS
+L29	46	INF	l	s3
+L29	47	PHI	m	s3
+L29	48	VBAR_B	l	s3
+L29	49	VBAR_A	m	s3
+L29	50	PHI	m	s3
+L29	51	PHI	m	s3
+L29	52	PHI	m	s3
+L29	53	OTHER	l	s3	long f/s-like stem curling over at top
+L29	54	4PI	m	s3
+L29	55	EBR_B	l	s3
+L29	56	SBS	l	s3
+L29	57	HASH4	l	s3
+L29	58	PHI	m	s3
+L29	59	PHI	l	s3	heavy ink; possibly struck
+L29	60	4TRI	l	s3	struck (heavy horizontal stroke through)
+L29	61	PHI	l	s3
+L29	62	VBAR_A	m	s3
+L29	63	PHI	m	s3
+L29	64	EBR_B	l	s3
+L29	65	EBR_B	l	s3
+L29	66	PHI	m	s3
+L30	1	VBAR_B	l	s1
+L30	2	SBS	l	s1
+L30	3	PHI	m	s1
+L30	4	VBAR_A	m	s1
+L30	5	PHI	m	s1
+L30	6	ISH	l	s1	stacked crossbars on a stem; alt HASH4
+L30	7	EBR_B	l	s1
+L30	8	PHI	m	s1
+L30	9	4STEM	l	s1
+L30	10	PHI	m	s1
+L30	11	INF	l	s1
+L30	12	VBAR_B	l	s1
+L30	13	VBAR_A	m	s1
+L30	14	4PI	m	s1
+L30	15	PHI	m	s1
+L30	16	INF	l	s1
+L30	17	PHI	m	s1
+L30	18	PHI	m	s1
+L30	19	INF	l	s2
+L30	20	VBAR_B	l	s2
+L30	21	VBAR_B	l	s2
+L30	22	HASH4	l	s2	alt ZHOOK
+L30	23	PHI	m	s2
+L30	24	4PI	l	s2	alt HASH4
+L30	25	PHI	m	s2
+L30	26	EBR_B	l	s2	alt EBR_A
+L30	27	INF	l	s2
+L30	28	VBAR_A	m	s2
+L30	29	HASH4	l	s2
+L30	30	EBR_B	l	s2
+L30	31	EBR_B	l	s2
+L30	32	HASH4	l	s2	alt ZHOOK
+L30	33	VBAR_A	m	s2
+L30	34	PHI	m	s2
+L30	35	OTHER	l	s2	long f/s-like stem curling over at top
+L30	36	4STEM	l	s2
+L30	37	HASH4	l	s2
+L30	38	VBAR_B	l	s2
+L30	39	4STEM	l	s2
+L30	40	4PI	m	s2
+L30	41	PHI	m	s2
+L30	42	PHI	m	s2
+L30	43	VBAR_B	l	s2
+L30	44	PHI	m	s3
+L30	45	4STEM	l	s3
+L30	46	VBAR_A	m	s3
+L30	47	VBAR_B	l	s3
+L30	48	HASH4	l	s3
+L30	49	SBS	l	s3
+L30	50	HASH4	l	s3
+L30	51	INF	l	s3
+L30	52	PHI	l	s3	heavy ink
+L30	53	PHI	l	s3	heavy ink
+L30	54	4PI	l	s3	heavy ink, possibly overwritten
+L30	55	HASH4	l	s3
+L30	56	EBR_B	l	s3
+L30	57	OTHER	l	s3	long f/s-like stem curling over at top
+L30	58	4PI	m	s3
+L30	59	PHI	m	s3
+L30	60	PHI	m	s3
+L30	61	VBAR_B	l	s3
+L30	62	PHI	m	s3
+L30	63	4STEM	l	s3
+L31	1	VBAR_A	m	s1
+L31	2	PHI	m	s1
+L31	3	4STEM	l	s1
+L31	4	VBAR_A	m	s1
+L31	5	INF	l	s1
+L31	6	4STEM	l	s1
+L31	7	OTHER	l	s1	long f/s-like stem curling over at top
+L31	8	SBS	l	s1
+L31	9	SBS	l	s1
+L31	10	4STEM	l	s1
+L31	11	4PI	l	s1
+L31	12	PHI	m	s1
+L31	13	4STEM	l	s1
+L31	14	PHI	m	s1
+L31	15	SBS	l	s1
+L31	16	PHI	m	s1
+L31	17	EBR_B	l	s1
+L31	18	EBR_B	l	s2
+L31	19	OTHER	l	s2	reversed-C / 3-like mark
+L31	20	PHI	m	s2
+L31	21	VBAR_B	l	s2
+L31	22	4PI	m	s2
+L31	23	SBS	l	s2
+L31	24	4STEM	l	s2
+L31	25	HASH4	l	s2
+L31	26	ZHOOK	l	s2
+L31	27	VBAR_A	m	s2
+L31	28	ZHOOK	l	s2
+L31	29	SBS	l	s2
+L31	30	4PI	m	s2
+L31	31	VBAR_B	l	s2
+L31	32	4PI	m	s2
+L31	33	INF	l	s2
+L31	34	4STEM	l	s2
+L31	35	4PI	m	s2
+L31	36	INF	l	s2
+L31	37	4STEM	l	s2
+L31	38	VBAR_B	l	s2
+L31	39	4STEM	l	s2
+L31	40	HASH4	l	s2
+L31	41	VBAR_A	m	s2
+L31	42	C6	l	s2	gamma-like; alt CA
+L31	43	4PI	m	s3
+L31	44	PHI	m	s3
+L31	45	4STEM	l	s3
+L31	46	PHI	m	s3
+L31	47	VBAR_B	l	s3
+L31	48	VBAR_A	m	s3
+L31	49	C6	l	s3	gamma-like; alt CA
+L31	50	OTHER	l	s3	large plain Z; alt ZHOOK
+L31	51	SBS	l	s3
+L31	52	4PI	m	s3
+L31	53	SBS	l	s3
+L31	54	VBAR_B	l	s3
+L31	55	PHI	m	s3
+L31	56	PHI	m	s3
+L31	57	4STEM	l	s3
+L31	58	EBR_A	l	s3	alt EBR_B
+L31	59	SBS	l	s3
+L31	60	CROSS	l	s3	alt VBAR_B
+L31	61	VBAR_A	m	s3
+L32	1	4STEM	l	s1
+L32	2	4PI	m	s1
+L32	3	EBR_B	l	s1	dot below
+L32	4	PHI	m	s1
+L32	5	C6	l	s1	gamma-like; alt CA
+L32	6	4STEM	l	s1
+L32	7	SBS	l	s1
+L32	8	SBS	l	s1
+L32	9	INF	l	s1
+L32	10	VBAR_B	l	s1
+L32	11	HASH4	l	s1
+L32	12	SBS	l	s1
+L32	13	4STEM	l	s1
+L32	14	4STEM	l	s1
+L32	15	PHI	m	s1
+L32	16	OTHER	l	s1	long f/s-like stem curling over at top
+L32	17	4PI	m	s2
+L32	18	ZHOOK	l	s2
+L32	19	4PI	m	s2
+L32	20	VBAR_A	m	s2
+L32	21	PHI	m	s2
+L32	22	4STEM	l	s2
+L32	23	4STEM	l	s2
+L32	24	4STEM	l	s2
+L32	25	VBAR_A	m	s2
+L32	26	LOOPBAR	l	s2	alt PHI
+L32	27	OTHER	l	s2	large plain Z; alt ZHOOK
+L32	28	EBR_B	l	s2
+L32	29	PHI	m	s2
+L32	30	4PI	m	s2
+L32	31	INF	l	s2
+L32	32	4STEM	l	s2
+L32	33	4STEM	l	s2
+L32	34	VBAR_A	m	s2
+L32	35	PHI	m	s2
+L32	36	OTHER	l	s2	long f/s-like stem curling over at top
+L32	37	PHI	m	s2
+L32	38	4STEM	l	s2
+L32	39	VBAR_A	m	s2
+L32	40	ISH	l	s2	stacked crossbars on a stem; alt CROSS
+L32	41	EBR_B	l	s3
+L32	42	VBAR_B	l	s3
+L32	43	4STEM	l	s3
+L32	44	ZHOOK	l	s3
+L32	45	VBAR_A	m	s3
+L32	46	HASH4	l	s3
+L32	47	PHI	m	s3
+L32	48	VBAR_B	l	s3
+L32	49	SBS	l	s3
+L32	50	4STEM	l	s3
+L32	51	SBS	l	s3
+L32	52	4PI	m	s3
+L32	53	ZHOOK	l	s3
+L32	54	4STEM	l	s3
+L32	55	ZHOOK	l	s3
+L32	56	SBS	l	s3
+L32	57	4STEM	l	s3
+L33	1	PHI	m	s1
+L33	2	4STEM	l	s1
+L33	3	EBR_B	l	s1	dot below
+L33	4	4STEM	l	s1
+L33	5	PHI	m	s1
+L33	6	PHI	m	s1
+L33	7	EBR_B	l	s1
+L33	8	HASH4	l	s1
+L33	9	VBAR_A	m	s1
+L33	10	HASH4	l	s1	alt ZHOOK
+L33	11	SBS	l	s1
+L33	12	4STEM	l	s1
+L33	13	4PI	m	s1
+L33	14	4STEM	l	s1
+L33	15	VBAR_A	m	s1
+L33	16	SBS	l	s1
+L33	17	OTHER	l	s2	long f/s-like stem curling over at top, bar at foot
+L33	18	ZHOOK	l	s2
+L33	19	HASH4	l	s2
+L33	20	INF	l	s2
+L33	21	PHI	m	s2
+L33	22	ISH	l	s2	stacked crossbars on a stem; alt CROSS
+L33	23	4STEM	l	s2
+L33	24	PHI	m	s2
+L33	25	VBAR_B	l	s2
+L33	26	PHI	m	s2
+L33	27	PHI	m	s2
+L33	28	4STEM	l	s2
+L33	29	4PI	m	s2
+L33	30	4STEM	l	s2
+L33	31	VBAR_B	l	s2
+L33	32	4PI	m	s2
+L33	33	PHI	m	s2
+L33	34	INF	l	s2	on a bar
+L33	35	4TRI	l	s2	alt 4PI
+L33	36	PHI	m	s2
+L33	37	VBAR_B	l	s2
+L33	38	4PI	m	s2
+L33	39	INF	l	s2
+L33	40	PHI	m	s2
+L33	41	4PI	l	s2
+L33	42	OTHER	l	s3	raised S/ampersand-like mark
+L33	43	4STEM	l	s3
+L33	44	4PI	m	s3
+L33	45	PHI	m	s3
+L33	46	PHI	m	s3
+L33	47	VBAR_B	l	s3
+L33	48	ISH	l	s3	stacked crossbars on a stem; alt CROSS
+L33	49	EBR_B	l	s3
+L33	50	OTHER	l	s3	long f/s-like stem curling over at top
+L33	51	4STEM	l	s3
+L33	52	SBS	l	s3
+L33	53	INF	l	s3	on a bar
+L33	54	VBAR_B	l	s3
+L33	55	4STEM	l	s3
+L33	56	INF	l	s3
+L33	57	PHI	m	s3
+L33	58	SBS	l	s3
+L33	59	4STEM	l	s3
+L33	60	VBAR_A	m	s3

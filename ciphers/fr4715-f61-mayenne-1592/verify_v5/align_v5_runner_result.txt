@@ -1,0 +1,22 @@
+# align_v5.py runner (VERIFY-F61-V5); columns: LCO = class left out of the anchor key; share(prop) = share of the class's aligned positions carrying the proposed letter (runner's key_period_f176.tsv top letter); gate = n>=5, top==proposed, share>=0.5, wrong share < half, share > permuted-anchor p95
+
+== runner passes A/B, f.176r L01-L47, runner clear fol. 177r-v: 3095 signs (consensus 2155, 0.70), 4707 clear letters
+full key v4 anchors: in-set match true 0.864 / wrong 0.717
+class	proposed	n(true)	LCO true: top letters	share(prop)	LCO wrong: top	share(prop) wrong	perm-key share(prop) mean/p95	gate	best Tomokiyo cell true (share) / wrong (share)
+VBAR_A	t	176	t85 i13 g12 a8 c7	0.48	e23 t20 u18 r13 s13	0.11	0.03/0.16	FAIL	g/t (0.55) / e/r (0.20)
+EBR	l	149	l83 i17 e6 s6 a5	0.56	s17 l16 u16 e14 i11	0.11	0.11/1.00	FAIL	l/i (0.67) / l/i (0.18)
+HASH4	d	90	d44 i14 q7 a4 c4	0.49	i12 e9 n9 a7 t6	0.02	0.01/0.00	FAIL	d/q (0.57) / a/n (0.19)
+4STEM	p	40	p17 c9 a3 m2 n2	0.42	e6 l6 a4 f4 i4	0.05	0.00/0.00	FAIL	c/p (0.65) / l/i (0.24)
+DBL	o	50	o30 b4 e4 r4 i2	0.60	i7 e6 a5 l5 o5	0.10	0.00/0.00	PASS	b/o (0.68) / l/i (0.24)
+ZHOOK	i	86	i42 s6 l5 u5 x4	0.49	e15 n9 o9 s9 r7	0.05	0.08/0.17	FAIL	l/i (0.55) / e/r (0.23)
+C43	(n)	59	n23 a16 i5 e2 m2	0.39	u8 t6 l5 s5 a4	0.05	0.00/0.00	FAIL	a/n (0.66) / h/u (0.17)
+BETA	m	16	m5 t3 z3 o2 e1	0.31	d2 o2 u2 c1 i1	0.07	0.00/0.00	FAIL	m/z (0.50) / b/o (0.13)
+4PI	(p)	19	p8 c4 q3 d1 e1	0.42	r5 e3 s3 a2 n2	0.00	0.00/0.00	FAIL	c/p (0.63) / e/r (0.40)
+CROSS	(s)	47	s22 e5 f4 a3 p3	0.47	d7 i7 o5 s5 t4	0.09	0.00/0.00	FAIL	f/s (0.55) / l/i (0.17)
+4TRI	(n)	307	n91 a66 p25 c21 i13	0.30	n3 e2 d1 i1 p1	0.30	0.00/0.04	FAIL	a/n (0.51) / a/n (0.30)
+PHI	(e)	574	e243 r103 i31 a23 s22	0.42	e4 f2 i2 d1 g1	0.29	0.16/0.44	FAIL	e/r (0.60) / e/r (0.29)
+INF	(u)	177	u91 e11 l10 n9 s9	0.51	i23 u22 e18 l14 t14	0.12	0.04/0.14	PASS	h/u (0.55) / l/i (0.20)
+VBAR_B	(s)	72	s46 e3 f3 i3 o3	0.64	e9 n9 t8 a7 l7	0.05	0.00/0.00	PASS	f/s (0.68) / a/n (0.21)
+SBS	(o)	55	o30 b4 n4 e3 a2	0.55	e9 u6 m5 o5 a4	0.09	0.00/0.00	PASS	b/o (0.62) / e/r (0.18)
+LL	(c)	7	c2 i2 a1 l1 o1	0.29	e1 f1 i1 l1 n1	0.00	0.01/0.00	FAIL	l/i (0.43) / e/r (0.29)
+

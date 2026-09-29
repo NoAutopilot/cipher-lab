@@ -1,0 +1,28 @@
+# transfer_v5.py (VERIFY-F61-V5): (a) Tomokiyo's letters at class X's positions, X left out of the aligning key
+
+leaf	class	n pos	his letters there	proposed cell	hits	v4 set	hits v4	200 random cells: mean hits / p(>= proposed)
+f.61	VBAR_A	3	t3	g/t	3	s/t	3	0.42 / 0.140
+f.61	EBR	2	l2	l/i	2	a/l/s	2	0.19 / 0.095
+f.61	SBS	5	o3 b2	b/o	5	b/e/o	5	0.35 / 0.000
+f.61	ZHOOK	3	i3	i/x	3	-	0	0.47 / 0.155
+f.61	BETA	2	a1 m1	m/z	1	m/s	1	0.19 / 0.190
+f.61	C43	8	a6 b1 n1	a/n	7	a/n	7	1.08 / 0.015
+f.61	4PI	1	n1	c/p	0	a/d/n/q	1	0.10 / 1.000
+f.108r	VBAR_A	7	t5 g2	g/t	7	s/t	5	0.78 / 0.005
+f.108r	EBR	10	s7 l2 f1	l/i	2	a/l/s	9	1.35 / 0.250
+f.108r	4STEM	3	a3	c/p	0	a/c/e/n	3	0.48 / 1.000
+f.108r	SBS	2	o2	b/o	2	b/e/o	2	0.21 / 0.105
+f.108r	ZHOOK	7	i7	i/x	7	-	0	1.08 / 0.155
+f.108r	BETA	3	u1 m1 z1	m/z	2	m/s	1	0.19 / 0.000
+f.108r	C43	8	n4 a4	a/n	8	a/n	8	1.04 / 0.010
+f.108r	4PI	5	d4 p1	c/p	1	a/d/n/q	4	0.36 / 0.165
+
+# (b) f.108v sequence gain (14-cell map; X varied); rank 1 = best
+class	signs on f.108v	map value	proposed	gain proposed	rank among 11 Tomokiyo cells + 40 random pairs (51)	gain X dropped
+VBAR_A	18	g/t	g/t	0.1521	6	0.1050
+EBR_B	12	l/y	l/y	0.1521	4	0.1245
+HASH4	14	-	d/q	0.2115	1	0.1521
+4STEM	25	a/n	c/p	0.2972	1	0.1739
+SBS	13	b/o	b/o	0.1521	2	0.1032
+ZHOOK	20	i/x	i/x	0.1521	1	0.0645
+BETA	11	m/z	m/z	0.1521	1	0.1299

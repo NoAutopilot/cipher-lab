@@ -1,0 +1,8 @@
+v4 (C6 regraded, VERIFY-F61-V4): 99 signs: firm 12 / two-way 36 / wider 23 / unread-or-null 28
+v4 + endorsed (this audit): 99 signs: firm 12 / two-way 50 / wider 12 / unread-or-null 25
+tokens changed: EBR l/s/a -> l/y x4; SBS o/b/e -> b/o x7; VBAR_A t/s -> g/t x6; ZHOOK - -> i/x x3
+still wider than two: 4PI=d/a/q/n:2 4STEM=n/a/c/e:1 4TRI=c/p/t:6 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
+f.61 five spans (j=i, v=u, y=i folded): v4 50/55 = 0.909; 2000 permuted mean 0.326 p95 0.455 max 0.600; >= key 0/2000
+f.61 five spans (j=i, v=u, y=i folded): v4+endorsed 53/55 = 0.964; 2000 permuted mean 0.307 p95 0.455 max 0.727; >= key 0/2000
+f.108r overlay (j=i, v=u, y=i folded): v4 65/84 = 0.774; 2000 permuted mean 0.300 p95 0.393 max 0.560; >= key 0/2000
+f.108r overlay (j=i, v=u, y=i folded): v4+endorsed (EBR at v4) 74/84 = 0.881; 2000 permuted mean 0.312 p95 0.429 max 0.726; >= key 0/2000

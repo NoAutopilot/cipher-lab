@@ -302,3 +302,117 @@ conservative figure beside it.
 Key v4's rows as period attestations: high. The known-span test as evidence that the key fits this cipher: high (0/4000 permuted
 keys; holds at 0.764 without the Tomokiyo-validated relabel). The meter as graded: moderate after the C6 regrade. Any reading of
 f.61r outside the spans: none exists.
+
+## VERIFY-F61-V5 (29 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V5 (Opus 5.5, session_01GgtGry5o3rrdf23A11VKhT), 00:14-00:4x UTC by the container clock; separate
+from campaign runner 6 (session_016YPPumG1PbhMJ3pBLuqaeW), whose steps H168-H182 and H177b stages 2a-2d are audited here (its ROOM
+lines show H180 and the follow-ups H181, H182, H177b 2b-2d done; the open remainder of H177b, f.176v and fol. 179, is not audited).
+Brief: `.claude/briefs/runs/2026-09-28-verify-f61-v5.md`. Working files, each with a `--check`: `verify_v5/`. Six Opus vision calls
+(fresh subagents, prompts pushed first in `verify_v5/PROMPTS.md`, 8295ff29); 2 Gallica requests (canvases 327, 329, `family/requests.log`).
+Nothing edited in `family/key_period_v4.tsv`, `CAMPAIGN.md` or the runner's files.
+
+**Claim under audit.** fr.3984 f.176r (Baudouin Desportes to Clement VIII, Paris, 22 July 1593) is written in f.61's polyphonic
+cipher and fol. 177r(-v) is its separate-sheet period decipherment (H175); `family/key_period_f176.tsv` (H177) gives single letters
+where v4 carries merged sets: VBAR_A t, EBR l (form B, H180), HASH4 d/q, 4STEM p/c, DBL o, ZHOOK i (H178/H182), BETA m.
+
+### Verdict
+
+| value (runner) | f.176r leaf, leave-class-out (runner passes; verifier's blind passes) | Mayenne hands vs shuffled-value controls | verdict for key v5 |
+|---|---|---|---|
+| VBAR_A t (cell g/t) | t85 g12 of 176, cell 0.55 vs wrong 0.20; blind 14/26 and 18/33, gate PASS both blocks | f.61 t 3/3 (p 0.14); f.108r t5 g2 7/7 (**p 0.005**), s 0/10; f.108v rank 6/51 | **endorse g/t** (replaces s/t); on f.61 grade C, with VERIFY-F61-V4's caveat that f.61's VBAR_A/VBAR_B boundary was set by sorts scored on Tomokiyo's letters |
+| EBR l, form B (cell l/y) | l83 y17 of 149, cell 0.67 vs 0.18; blind 22/28 PASS, 9/20 (0.45) FAIL-by-threshold, l top in both; H180 form B 11/11, anchors 14/14 | f.61 l 2/2 (p 0.095); f.108v EBR_B l/y rank 4/51; f.108r brackets are form A and read s7 f1 l2 (Tomokiyo's f/s), so l is not a class value | **endorse EBR_B = l/y only**; f.61's EBR tokens (all form B, H22 4/4) take l/y at C; EBR_A untouched (v4 s/l/a stays; f.108r's letters point to f/s, a separate question) |
+| ZHOOK i (cell i/x) | i42 x4 of 86, cell 0.53 vs 0.23; blind 16/21 and 3/5, PASS both blocks (blind readers coded Desportes's i-sign as ZHOOK) | f.61 i 3/3, f.108r i 7/7 under an alignment that leaves ZHOOK out (the p 0.155 is any i-cell's; x cannot be tested); f.108v i/x rank **1/51**, gain 0.152 vs 0.065 dropped | **endorse i/x, graded S on f.61** (not C): the glyph link across hands failed H178b's tile gate; the link rests on letter agreement and sequence gain |
+| DBL o | o30 b4 of 50, cell b/o 0.68 | -- | **not a DBL value.** On f.176r the readers' DBL is the side-by-side b/o glyph (v4's SBS; SBS itself o30 b4 of 55, cell 0.62). v4's DBL (stacked loops, e/r/u) is unchanged. It supports **SBS = b/o** (v4's e is the sort artefact VERIFY-F61-V4 named): f.61 SBS b/o 5/5 (p <0.005), f.108r 2/2, f.108v rank 2/51 -> **endorse SBS b/o** |
+| HASH4 d/q | d44 q7 **i14** of 90 (cell d/q 0.57 vs 0.19); blind n 4, untestable | f.61/f.108r: no HASH4 at known positions; f.108v d/q rank 1/51 (and H160/H162) | **no change** (v4 d/i/q stays): i is 16% of the leaf's HASH4, above the key's own 0.1 rule; d/q dominant, i not excluded |
+| 4STEM p/c | p17 c9 of 40 (cell 0.65 vs 0.24); blind n 1, untestable; reader coding 4STEM/4TRI/4PI unstable in both sessions | f.108r a 3/3 (**contradicts**, p 1.0); f.108v c/p rank 1/51 | **not endorsed**: the two Mayenne-hand tests disagree; v4 a/c/e/n stays; a data conflict to log, not settle by majority (rule 4) |
+| BETA m (cell m/z) | m5 z3 t3 of 16 (cell 0.50); blind n 2 | f.61 m1 a1; f.108r m1 z1 u1 (p <0.005 on 3); f.108v m/z rank 1/51 | **held**: pointing to m/z, period n too small to replace m/s now |
+| C43 a/n, INF u, VBAR_B s, PHI e/r | cells a/n 0.66, h/u 0.55, f/s 0.68, e/r 0.60 | as v4 | no change (confirm v4) |
+| 4PI p/c, CROSS s (Desportes's glyphs) | cells c/p 0.63, f/s 0.55 | 4PI: Tomokiyo n (f.61), d x4 (f.108r); CROSS: his dashes | not for f.61 (different glyph or contradicted), as the runner said |
+
+**Key v5 may take:** VBAR_A **g/t**; EBR_B **l/y** (form-B brackets only); SBS **b/o**; ZHOOK **i/x** (grade S on f.61). **May not
+take:** DBL o (a reader code for the SBS glyph), 4STEM p/c (conflict), HASH4 narrowed to d/q (the leaf's own i share), BETA m/z (n), 4PI
+p/c, CROSS s. Key source for all four endorsed rows: `period` (fr.3984 f.176r / fol. 177r, Desportes's hand), cross-checked on the
+Mayenne hands against Tomokiyo's published letters (`published`, credited) and f.108v's sequence gain.
+
+**f.61 meter under the endorsed values** (`meter_v5.py`, from `family/f61_decode_period_v4_frac0.1_sbs.tsv`, C6 kept unread/null per
+VERIFY-F61-V4): **firm 12 / two-way 50 / wider 12 / unread-or-null 25** of 99 (v4 as regraded: 12 / 36 / 23 / 28). Tokens changed:
+VBAR_A t/s -> g/t x6, EBR l/s/a -> l/y x4, SBS o/b/e -> b/o x7, ZHOOK unread -> i/x x3 (S). Still wider than two: 4TRI c/p/t 6, 4PI 2,
+OTHER 2, 4STEM 1, HASH4 1. The firm count does not move: every endorsed value is a two-letter period cell (the design is polyphonic),
+so a two-way token under v5 is a period cell, not an undecided merge. Known spans with j=i, v=u, y=i folded (2000 permuted keys, seed
+20260929): f.61 v4 50/55 -> **53/55** (p95 0.455, 0/2000 at or above); f.108r v4 65/84 -> **74/84** with EBR left at v4 (p95 0.429,
+0/2000). The f.61 gain is ZHOOK's three i positions.
+
+### 1. Same design, and fol. 177r is its decipherment
+
+- **Dates and item.** f.176r is headed "22 de Juillet 1593 / Tressainct pere" (the verifier's own look at the fresh native, canvas
+  327). The BnF finding aid on disk (`sources/bnf-aem/cc504266_francais3974-3995.html`) gives item 84, fol. 176: "Lettre, avec chiffre
+  et déchiffrement, de « BAUDOUYN DESPORTES » au pape Clément VIII. « De Paris, ce XXIIe juillet 1593 »", running to fol. 179.
+- **Hands and text.** fol. 177r (canvas 329) opens "Tressainct pere / Vne larme aux yeux et lame plaine de desespoir ...", the cipher
+  leaf's clear salutation, in a different, clear secretary hand with underlined stretches; no date line at its head. The verifier's
+  blind read of fol. 177r L05-L12 and L23-L29 matches the runner's at a mean folded-letter similarity of 0.85 (0.62-0.99 per line,
+  `agree_v5_result.txt`).
+- **Text match.** `h175_gate.py --check`, `h173_power.py --check` fresh. With the verifier's own DP (`align_v5.py`, not the runner's
+  f61crib.align), key v4's sets match 0.864 of aligned signs under fol. 177r vs 0.717 under the wrong text (runner material), and 0.796 /
+  0.692 and 0.887 / 0.768 on the verifier's two blind blocks.
+- **Design.** Under leave-class-out alignment every class's letters fall mainly into one of Tomokiyo's eleven two-letter cells
+  (a/n, b/o, c/p, d/q, e/r, f/s, g/t, h/u, i/x, l/y, m/z): shares 0.50-0.68 under fol. 177r against 0.13-0.40 under the wrong text
+  (0.13-0.24 for all but 4TRI 0.30, PHI 0.29, 4PI 0.40), for all 15 classes with n >= 16 (`align_v5_runner_result.txt`). That is the family's paired-cell design, shown from Desportes's own
+  period decipherment rather than from his table. **Confirmed: same design; fol. 177r(-v) deciphers f.176r.**
+
+### 2. Blind re-derivation, row by row (`agree_v5.py`, `align_v5.py verifier`)
+
+Twelve rows (L06-L11, L28-L33; about 790 signs) read by two fresh blind passes on the verifier's own crops, with an atlas stripped of
+its one letter-value remark. Sign counts per row agree with the runner's within 0-3 on every row. The verifier's consensus matches the
+same code at 372 of the runner's 624 consensus signs (0.60; per row 0.30-0.73, lowest L31-L32). Systematic coding differences, not value
+differences: the runner's VBAR_B is the verifier's ISH (33/33; reads s 25/34, cell f/s); the runner's DBL is the verifier's PHI or SBS;
+4STEM / 4PI / HASH4 are unstable between the sessions (too few agreed columns to test). Key rows re-derived at n >= 5 on the blind
+material: VBAR_A t, EBR l, ZHOOK i, INF u, PHI e, VBAR_B/ISH s -- **every one agrees with key_period_f176.tsv's top letter**. EBR's
+second block falls under the 0.5 share threshold (9/20, l still top). HASH4, 4STEM, BETA, DBL: not reproducible from the blind sample (n
+<= 4), so for those the leaf evidence is the runner's passes re-aligned by the verifier's own DP.
+
+Pre-registered single-letter gate on the runner's material: only DBL, INF, VBAR_B, SBS reach share >= 0.5. VBAR_A (0.48), HASH4
+(0.49), ZHOOK (0.49) and EBR (0.56, but a permuted-anchor p95 of 1.00 at small n) miss it by the letter, because each class carries
+its cell partner (g, q, x, y). The verdict above therefore rests on the cell shares and the wrong-text contrast, which were computed
+after the gate was fixed (`align_v5.py`'s cell column); that post-hoc step is named here.
+
+### 3. Transfer to the Mayenne hands (`transfer_v5.py`)
+
+Positions set by alignment with the class left out; Tomokiyo's letters there against 200 random two-letter cells drawn from fol.
+177r's letter frequency; f.108v by the H127 sequence gain with the class set to each of Tomokiyo's 11 cells and 40 random pairs.
+Figures in the verdict table. Two limits: f.61 has 2-8 known positions per class (p-values of 0.1-0.2 at n = 2-3 are all such a
+leaf can give); and Tomokiyo's letters are his reading, not a period gloss, so agreement with them is agreement with a published
+reading (the same status VERIFY-F61-V4 gave them).
+
+### Findings about the runner's files (for the orchestrator; not edited)
+
+1. **The N cap truncates the key's coverage.** `build_f176_key.py` trims the clear to N = 0.8 x signs (2,476 letters). The
+   alignment ends at f.176r L40 against fol. 177r L33 (`verify_v5/rowmap.py`), so rows L41-L47 and every fol. 177v line contribute no
+   pairs. "key_period_f176.tsv now covers all of f.176r (3,095 signs) against ... fol. 177r-v" (NOTES H177b stage 2d, ROOM 23:34)
+   should read "f.176r L01-L40 against fol. 177r L01-L33". The rows themselves are sound.
+2. **DBL o** in the key file is a reader code for the SBS glyph (runner's own note), and a merge script that takes class names at face
+   value would write o into v4's DBL cell. Merge it as SBS, or not at all.
+3. **H182's 10/10** was computed under a test key that already held ZHOOK i/x, which lets the DP place i opposite ZHOOK. Re-run with
+   ZHOOK left out of the aligning key, the letters are the same (f.61 i 3/3, f.108r i 7/7; VERIFY-F61-V4's two-way table had the same
+   three f.61 letters under v4), so the result stands; the method needed the leave-out.
+4. One blind pass (P, L06-L11) wrote its TSV through a Python helper rather than the Write tool (the subagent's own report); it read no
+   other file. Kept, noted.
+
+### Novelty
+
+None to class. No passage of f.61r outside Tomokiyo's spans is read by these values; the known-span figures are a test of the key
+against his published letters (text: known). No SECOND-OPINIONS-QUEUE.tsv row.
+
+**Safe sentence.** "The period decipherment of a second letter in the same polyphonic cipher (BnF fr. 3984 f.176r, Desportes to Clement
+VIII, 22 July 1593, deciphered on fol. 177r) fixes four cells of the rebuilt period key -- g/t, l/y for the plain bracket, b/o and i/x --
+after which the key reads 53 of the 55 letters Tomokiyo marked on fr. 4715 f.61r; the rest of that leaf remains a choice between the two
+letters of each cell."
+
+**Unsafe sentence.** "The fr. 3984 decipherment now gives single letters for f.61r's two-way signs" (the endorsed values are two-letter
+cells; firm letters did not increase; 4STEM, HASH4 and BETA were not narrowed).
+
+### Confidence
+
+f.176r / fol. 177r as a same-design cipher and decipherment pair: high. VBAR_A g/t, EBR_B l/y, SBS b/o as period values carried to
+f.61: high to moderate (small known-position counts on f.61, strong on f.108r for VBAR_A). ZHOOK i/x on f.61: moderate (letter
+agreement and sequence gain, no glyph link). The meter: mechanical from the committed decode, with the four changes above.

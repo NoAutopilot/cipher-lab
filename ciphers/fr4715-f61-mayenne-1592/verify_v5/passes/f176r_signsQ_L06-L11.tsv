@@ -1,0 +1,386 @@
+line	pos	sign	conf	segment	note
+L06	1	INF	m	s1	loops lying on bar
+L06	2	VBAR_A	l	s1	small v; top bar unclear
+L06	3	PHI	m	s1
+L06	4	PHI	m	s1
+L06	5	PHI	m	s1
+L06	6	4TRI	m	s1
+L06	7	INF	m	s1
+L06	8	4TRI	m	s1
+L06	9	PHI	l	s1
+L06	10	4TRI	m	s1
+L06	11	ISH	l	s1	low barred stroke
+L06	12	ISH	l	s1	low barred stroke
+L06	13	4TRI	m	s1
+L06	14	ZHOOK	m	s1
+L06	15	PHI	m	s1
+L06	16	PHI	m	s1
+L06	17	4PI	l	s1	alt 4STEM
+L06	18	PHI	m	s1
+L06	19	VBAR_A	l	s2
+L06	20	PHI	m	s2
+L06	21	PHI	m	s2
+L06	22	EBR_B	m	s2	hairline not seen; alt EBR_A
+L06	23	EBR_B	m	s2	hairline not seen; alt EBR_A
+L06	24	PHI	m	s2
+L06	25	ZHOOK	m	s2
+L06	26	CH	l	s2	tall stroke with r-like tail; alt BETA
+L06	27	4STEM	l	s2	crossed stem with small foot loop; alt 4TRI
+L06	28	SBS	l	s2	loop-stem-loop wide; alt PHI
+L06	29	PHI	m	s2
+L06	30	VBAR_A	l	s2
+L06	31	4TRI	m	s2
+L06	32	4TRI	m	s2
+L06	33	4TRI	m	s2
+L06	34	PHI	m	s2
+L06	35	4STEM	l	s2	alt 4TRI
+L06	36	SBS	l	s2	alt PHI
+L06	37	BETA	l	s2	alt LL
+L06	38	PHI	m	s2
+L06	39	4STEM	l	s2	alt 4TRI
+L06	40	PHI	m	s2
+L06	41	EBR_B	m	s2	alt EBR_A
+L06	42	EBR_B	m	s2	alt EBR_A
+L06	43	PHI	m	s2
+L06	44	ZHOOK	m	s2	large Z
+L06	45	HASH4	l	s2
+L06	46	INF	m	s2
+L06	47	PHI	m	s2
+L06	48	EBR_B	m	s3	alt EBR_A
+L06	49	EBR_B	m	s3	alt EBR_A
+L06	50	PHI	m	s3
+L06	51	PHI	m	s3
+L06	52	ISH	l	s3
+L06	53	VBAR_A	l	s3
+L06	54	PHI	m	s3
+L06	55	SBS	l	s3	alt PHI
+L06	56	ZHOOK	m	s3
+L06	57	VBAR_A	l	s3
+L06	58	4STEM	l	s3	alt 4TRI
+L06	59	SBS	l	s3	alt PHI
+L06	60	4TRI	m	s3
+L06	61	INF	m	s3
+L06	62	SBS	l	s3	alt PHI
+L06	63	4TRI	m	s3
+L06	64	INF	m	s3
+L06	65	PHI	m	s3
+L06	66	PHI	m	s3
+L06	67	EBR_B	m	s3	alt EBR_A
+L06	68	4TRI	m	s3
+L06	69	ISH	l	s3
+L07	1	ISH	l	s1
+L07	2	PHI	m	s1
+L07	3	CH	l	s1	alt BETA
+L07	4	SBS	l	s1	alt PHI
+L07	5	EBR_B	m	s1	alt EBR_A
+L07	6	PHI	m	s1
+L07	7	PHI	m	s1
+L07	8	4STEM	l	s1	alt 4PI
+L07	9	PHI	m	s1
+L07	10	ISH	l	s1
+L07	11	PHI	m	s1
+L07	12	ISH	l	s1
+L07	13	VBAR_A	l	s1
+L07	14	4TRI	m	s1
+L07	15	ISH	l	s1
+L07	16	ISH	l	s1
+L07	17	4TRI	m	s1
+L07	18	4STEM	l	s2	alt 4TRI
+L07	19	ISH	l	s2
+L07	20	4STEM	l	s2	alt 4TRI
+L07	21	PHI	m	s2
+L07	22	PHI	m	s2
+L07	23	CH	l	s2	alt BETA
+L07	24	ZHOOK	m	s2
+L07	25	PHI	m	s2
+L07	26	PHI	m	s2
+L07	27	PHI	m	s2
+L07	28	CH	l	s2	alt BETA
+L07	29	PHI	l	s2
+L07	30	4TRI	m	s2
+L07	31	VBAR_A	l	s2
+L07	32	PHI	m	s2
+L07	33	PHI	m	s2
+L07	34	CH	l	s2	alt BETA
+L07	35	4STEM	l	s2	alt 4TRI
+L07	36	EBR_B	m	s2	alt EBR_A
+L07	37	ZHOOK	m	s2
+L07	38	PHI	m	s2
+L07	39	EBR_B	m	s2	alt EBR_A
+L07	40	PHI	m	s2
+L07	41	ISH	l	s2
+L07	42	SBS	l	s2	alt PHI
+L07	43	PHI	m	s2
+L07	44	PHI	m	s2
+L07	45	ZHOOK	m	s2
+L07	46	EBR_B	m	s2	alt EBR_A
+L07	47	EBR_B	m	s2	alt EBR_A
+L07	48	PHI	m	s3
+L07	49	ISH	l	s3
+L07	50	CH	l	s3	alt BETA
+L07	51	EBR_B	m	s3	alt EBR_A
+L07	52	PHI	m	s3
+L07	53	VBAR_A	l	s3
+L07	54	EBR_B	m	s3	alt EBR_A
+L07	55	PHI	m	s3
+L07	56	INF	m	s3
+L07	57	EBR_B	l	s3	small c-like
+L07	58	ZHOOK	m	s3
+L07	59	4PI	l	s3	alt HASH4
+L07	60	PHI	m	s3
+L07	61	4PI	l	s3	alt HASH4
+L07	62	INF	m	s3
+L07	63	PHI	m	s3
+L07	64	EBR_B	l	s3	alt EBR_A
+L07	65	4PI	l	s3	alt HASH4
+L07	66	INF	m	s3
+L07	67	PHI	m	s3
+L07	68	4TRI	m	s3
+L08	1	4STEM	l	s1	alt 4TRI
+L08	2	4TRI	m	s1
+L08	3	PHI	m	s1
+L08	4	PHI	m	s1
+L08	5	4TRI	m	s1
+L08	6	4STEM	l	s1	alt 4TRI
+L08	7	PHI	m	s1
+L08	8	4PI	l	s1	alt HASH4
+L08	9	4TRI	m	s1
+L08	10	4STEM	l	s1	alt 4TRI
+L08	11	INF	m	s1
+L08	12	EBR_B	m	s1	alt EBR_A
+L08	13	ISH	l	s1
+L08	14	PHI	m	s1
+L08	15	PHI	m	s1
+L08	16	CH	l	s1	alt BETA
+L08	17	PHI	m	s1
+L08	18	CH	l	s2	loop at top; alt BETA
+L08	19	4TRI	m	s2
+L08	20	SBS	l	s2	alt PHI
+L08	21	4TRI	m	s2
+L08	22	4STEM	l	s2	alt 4TRI
+L08	23	SBS	l	s2	alt PHI
+L08	24	CH	l	s2	alt BETA
+L08	25	PHI	m	s2
+L08	26	INF	l	s2
+L08	27	EBR_B	m	s2	alt EBR_A
+L08	28	PHI	m	s2
+L08	29	4STEM	l	s2	alt 4TRI
+L08	30	4TRI	m	s2
+L08	31	ISH	l	s2
+L08	32	ISH	l	s2
+L08	33	PHI	m	s2
+L08	34	4STEM	l	s2	alt 4TRI
+L08	35	4TRI	m	s2
+L08	36	PHI	m	s2
+L08	37	SBS	l	s2	alt PHI
+L08	38	INF	m	s2
+L08	39	ZHOOK	m	s2
+L08	40	EBR_B	m	s2	alt EBR_A
+L08	41	EBR_B	m	s2	alt EBR_A
+L08	42	INF	m	s3
+L08	43	4TRI	l	s3
+L08	44	4PI	l	s3	alt HASH4
+L08	45	PHI	m	s3
+L08	46	EBR_B	m	s3	alt EBR_A
+L08	47	4TRI	m	s3
+L08	48	VBAR_A	l	s3
+L08	49	SBS	l	s3	alt PHI
+L08	50	VBAR_A	l	s3
+L08	51	4PI	l	s3	alt 4TRI
+L08	52	EBR_B	m	s3	alt EBR_A
+L08	53	EBR_B	m	s3	alt EBR_A
+L08	54	PHI	m	s3
+L08	55	4STEM	l	s3	alt 4TRI
+L08	56	PHI	m	s3
+L08	57	PHI	m	s3
+L08	58	VBAR_A	l	s3
+L08	59	PHI	m	s3
+L08	60	4PI	l	s3	alt HASH4
+L08	61	PHI	m	s3
+L09	1	EBR_B	m	s1	alt EBR_A
+L09	2	4TRI	m	s1
+L09	3	PHI	m	s1
+L09	4	PHI	m	s1
+L09	5	EBR_B	m	s1	alt EBR_A
+L09	6	VBAR_A	l	s1
+L09	7	ZHOOK	m	s1
+L09	8	SBS	l	s1	alt PHI
+L09	9	4TRI	m	s1
+L09	10	4PI	l	s1	alt HASH4
+L09	11	PHI	m	s1
+L09	12	ISH	l	s1
+L09	13	SBS	l	s1	alt PHI
+L09	14	4TRI	m	s1
+L09	15	INF	m	s1
+L09	16	SBS	l	s1	alt PHI
+L09	17	4TRI	m	s2
+L09	18	4TRI	m	s2
+L09	19	PHI	m	s2
+L09	20	INF	m	s2
+L09	21	PHI	m	s2
+L09	22	CH	l	s2	loop at top; alt BETA
+L09	23	4STEM	l	s2	alt 4TRI
+L09	24	PHI	m	s2
+L09	25	VBAR_A	l	s2
+L09	26	SBS	l	s2	alt PHI
+L09	27	INF	m	s2
+L09	28	VBAR_A	l	s2
+L09	29	4STEM	l	s2	alt 4TRI
+L09	30	PHI	m	s2
+L09	31	OTHER	l	s2	caret over two horizontal bars crossed by a stem
+L09	32	ISH	l	s2
+L09	33	PHI	m	s2
+L09	34	4STEM	l	s2	alt 4TRI
+L09	35	PHI	m	s2	dark
+L09	36	INF	m	s2
+L09	37	VBAR_A	l	s2
+L09	38	4STEM	l	s2	alt 4TRI
+L09	39	PHI	m	s2
+L09	40	ISH	l	s2
+L09	41	VBAR_A	l	s3
+L09	42	SBS	l	s3	alt PHI
+L09	43	ZHOOK	m	s3
+L09	44	VBAR_A	l	s3
+L09	45	4PI	l	s3	alt 4STEM
+L09	46	INF	m	s3
+L09	47	CH	l	s3	alt BETA
+L09	48	SBS	l	s3	alt PHI
+L09	49	ZHOOK	m	s3
+L09	50	4TRI	m	s3
+L09	51	ISH	l	s3
+L09	52	OTHER	l	s3	tall open V/Y with small loop at foot, taller than the row
+L09	53	EBR_B	m	s3	alt EBR_A
+L09	54	SBS	l	s3	alt PHI
+L09	55	4TRI	m	s3
+L09	56	4STEM	l	s3	alt 4PI
+L09	57	PHI	m	s3
+L09	58	INF	m	s3
+L09	59	ISH	l	s3
+L09	60	VBAR_A	l	s3
+L10	1	PHI	m	s1
+L10	2	ISH	l	s1
+L10	3	VBAR_A	l	s1
+L10	4	PHI	m	s1
+L10	5	PHI	m	s1
+L10	6	PHI	m	s1
+L10	7	PHI	m	s1
+L10	8	4TRI	m	s1
+L10	9	4PI	l	s1	alt HASH4
+L10	10	INF	m	s1
+L10	11	ISH	l	s1
+L10	12	4STEM	l	s1	alt 4TRI
+L10	13	4TRI	m	s1
+L10	14	4STEM	l	s1	alt 4TRI
+L10	15	4TRI	m	s1
+L10	16	SBS	l	s2	alt PHI
+L10	17	EBR_B	l	s2	box-like; alt EBR_A
+L10	18	PHI	m	s2
+L10	19	ISH	l	s2
+L10	20	4PI	l	s2	alt HASH4
+L10	21	INF	m	s2
+L10	22	CH	l	s2	alt BETA
+L10	23	SBS	l	s2	alt PHI
+L10	24	ZHOOK	m	s2
+L10	25	PHI	m	s2
+L10	26	4TRI	m	s2
+L10	27	4PI	l	s2	alt HASH4
+L10	28	PHI	m	s2
+L10	29	ISH	l	s2
+L10	30	PHI	m	s2
+L10	31	4STEM	l	s2	alt 4TRI
+L10	32	SBS	l	s2	alt PHI
+L10	33	INF	m	s2
+L10	34	INF	m	s2
+L10	35	SBS	l	s2	alt PHI
+L10	36	ZHOOK	m	s2
+L10	37	PHI	m	s2
+L10	38	VBAR_A	l	s2
+L10	39	4TRI	m	s2
+L10	40	PHI	m	s2
+L10	41	PHI	m	s2
+L10	42	4TRI	m	s3
+L10	43	VBAR_A	l	s3
+L10	44	ZHOOK	l	s3
+L10	45	PHI	m	s3
+L10	46	4TRI	m	s3
+L10	47	INF	m	s3
+L10	48	4STEM	l	s3	alt 4TRI
+L10	49	SBS	l	s3	alt PHI
+L10	50	4TRI	m	s3
+L10	51	VBAR_A	l	s3
+L10	52	PHI	m	s3
+L10	53	4TRI	m	s3
+L10	54	ZHOOK	m	s3
+L10	55	PHI	m	s3
+L10	56	PHI	m	s3
+L10	57	ZHOOK	m	s3
+L10	58	4TRI	m	s3
+L10	59	CH	l	s3	alt BETA
+L10	60	4TRI	m	s3
+L10	61	ZHOOK	m	s3
+L11	1	ISH	l	s1
+L11	2	EBR_B	m	s1	alt EBR_A
+L11	3	PHI	m	s1
+L11	4	ISH	l	s1
+L11	5	CH	l	s1	alt BETA
+L11	6	ZHOOK	m	s1
+L11	7	4TRI	m	s1
+L11	8	ZHOOK	m	s1
+L11	9	ISH	l	s1
+L11	10	VBAR_A	l	s1
+L11	11	PHI	m	s1
+L11	12	PHI	m	s1
+L11	13	ISH	l	s1
+L11	14	4PI	l	s1	alt HASH4
+L11	15	PHI	m	s1
+L11	16	HASH4	m	s1
+L11	17	4TRI	m	s1
+L11	18	SBS	l	s2	alt PHI
+L11	19	4TRI	m	s2
+L11	20	VBAR_A	l	s2
+L11	21	PHI	m	s2
+L11	22	ISH	l	s2
+L11	23	VBAR_A	l	s2
+L11	24	PHI	m	s2
+L11	25	ISH	l	s2
+L11	26	ZHOOK	m	s2
+L11	27	4PI	l	s2	alt HASH4
+L11	28	PHI	m	s2
+L11	29	ISH	l	s2
+L11	30	4STEM	l	s2	alt 4TRI
+L11	31	SBS	l	s2	alt PHI
+L11	32	INF	m	s2
+L11	33	PHI	m	s2
+L11	34	INF	m	s2
+L11	35	PHI	m	s2
+L11	36	INF	m	s2
+L11	37	ISH	l	s2
+L11	38	4PI	l	s2	alt HASH4
+L11	39	PHI	m	s2
+L11	40	VBAR_A	l	s2
+L11	41	SBS	l	s2	alt PHI
+L11	42	INF	m	s2
+L11	43	VBAR_A	l	s2
+L11	44	PHI	m	s2
+L11	45	ISH	l	s3
+L11	46	ISH	l	s3
+L11	47	SBS	l	s3	alt PHI
+L11	48	PHI	m	s3
+L11	49	VBAR_A	l	s3
+L11	50	PHI	m	s3
+L11	51	ISH	l	s3
+L11	52	4PI	l	s3	alt HASH4
+L11	53	PHI	m	s3
+L11	54	CH	l	s3	alt BETA
+L11	55	SBS	l	s3	alt PHI
+L11	56	ZHOOK	m	s3
+L11	57	PHI	m	s3
+L11	58	4TRI	m	s3
+L11	59	ISH	l	s3
+L11	60	EBR_B	m	s3	alt EBR_A
+L11	61	PHI	m	s3
+L11	62	ELOOP	l	s3	dark loop; alt INF
+L11	63	PHI	m	s3
+L11	64	4TRI	m	s3
+L11	65	PHI	m	s3
+L11	66	BETA	l	s3	alt CH
