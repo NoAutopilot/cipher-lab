@@ -1,6 +1,8 @@
 # Debosnys swarm harness (DEB-SWARM-0, 29 Sept 2026)
 
-FROZEN 983e8595 (score.py blob d80e6baa) 29 Sep 2026 03:14 UTC
+FROZEN ed4a3743 (score.py blob d80e6baa) 29 Sep 2026 03:14 UTC
+
+(The commit id is the one on origin/main after the rebase; the blob hash of score.py is the check: `git rev-parse HEAD:ciphers/debosnys-1883/swarm/score.py` must start d80e6baa.)
 
 Owned by the harness. Groups read this file, run `score.py`, and write only in `swarm/G-<X>/`. Never edit
 `score.py`, `make_controls.py`, `build_corpora.py`, `corpora/`, `vocab/` or `controls/`; a bug goes to ROOM as
@@ -101,7 +103,8 @@ per verdict file; a second file after seeing the first result is logged as a sec
 
 **Phase 1 (stepping stone).** The group's method, run blind by a committed script that reads only the control's
 ciphertext, reaches **recovery_pct >= 70** on its matching control with `score.py KEY --control <id>`:
-A FR-HOMO, B EN-HOMO, C FR-SYLL, G PT-HOMO; F the control of the design its key assumes. Report the same method on
+A FR-HOMO, B EN-HOMO, C FR-SYLL, G PT-HOMO; F the control of the design its key assumes; H its own Copiale
+known-answer control (its brief), and FR-HOMO or the design-matched harness control for any key it scores here. Report the same method on
 the `-N15` variant beside it (rule 3: a control must bracket the target's measured 14-18 pct noise); a group may
 log a negative on c1/c2 only with its -N15 number beside it. **Group D**: 5 of 5 on `--blind-check`, with the same
 test it applies to c1/c2.
