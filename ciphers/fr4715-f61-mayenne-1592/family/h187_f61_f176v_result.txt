@@ -1,0 +1,57 @@
+span	line	pos	class	f176v_letters	tomokiyo	agree
+S1	L01	4	INF	u	v	NO
+S1	L01	5	PHI	e/r	e	yes
+S1	L01	6	4TRI	a/c/p	c	yes
+S2	L03	4	PHI	e/r	e	yes
+S2	L03	5	VBAR_B	s	s	yes
+S2	L03	6	VBAR_A	t	t	yes
+S2	L03	7	4TRI	a/c/p	c	yes
+S2	L03	10	4TRI	a/c/p	p	yes
+S2	L03	14	SBS	o	b	NO
+S2	L03	15	EBR	l	l	yes
+S3	L05	3	VBAR_A	t	t	yes
+S3	L05	4	PHI	e/r	r	yes
+S3	L05	5	SBS	o	o	yes
+S3	L05	6	4TRI	a/c/p	p	yes
+S3	L05	10	INF	u	v	NO
+S3	L05	14	4TRI	a/c/p	c	yes
+S3	L05	15	PHI	e/r	e	yes
+S3	L05	17	PHI	e/r	e	yes
+S3	L05	18	VBAR_B	s	s	yes
+S4a	L07	3	ZHOOK	i	j	NO
+S4a	L07	4	BETA	m	a	NO
+S4a	L07	5	EBR	l	l	yes
+S4a	L07	7	SBS	o	o	yes
+S4a	L07	8	INF	u	u	yes
+S4a	L07	9	VBAR_B	s	s	yes
+S4a	L07	11	ZHOOK	i	i	yes
+S4b	L08	1	PHI	e/r	e	yes
+S4b	L08	4	INF	u	u	yes
+S4b	L08	5	SBS	o	b	NO
+S4b	L08	6	PHI	e/r	e	yes
+S4b	L08	8	INF	u	u	yes
+S4b	L08	11	4TRI	a/c/p	p	yes
+S4b	L08	12	PHI	e/r	e	yes
+S4b	L08	13	PHI	e/r	r	yes
+S4b	L08	14	PHI	e/r	e	yes
+S5	L11	1	BETA	m	m	yes
+S5	L11	2	PHI	e/r	e	yes
+S5	L11	3	EBR	l	l	yes
+S5	L11	4	PHI	e/r	e	yes
+S5	L11	6	VBAR_A	t	t	yes
+S5	L11	7	PHI	e/r	e	yes
+S5	L11	10	SBS	o	o	yes
+S5	L11	11	ZHOOK	i	i	yes
+S5	L11	12	VBAR_A	t	t	yes
+
+class	f176v letters	agree/n
+4TRI	a/c/p	6/6
+BETA	m	1/2
+EBR	l	3/3
+INF	u	3/5
+PHI	e/r	13/13
+SBS	o	3/5
+VBAR_A	t	4/4
+VBAR_B	s	3/3
+ZHOOK	i	2/3
+total 38/44; null (letter sets permuted across these classes) mean 4.3, p95 16, max 32

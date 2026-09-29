@@ -3758,3 +3758,15 @@ scale (1.5x of a 1.0-scale crop).
 inside fol. 178r near R03, H184 part 1). The key build is untested at this transcription quality, not refuted. A fourth pass of the same kind is
 not briefed. What would move it is new material or a different instrument: the natives at 2x with per-sign boxes from a segmenter (not reader
 x_px), or a blind shape sort of the 4TRI/C43 and HASH4/ZHOOK families on fol. 179 with anchors from f.176r (H180's design).
+
+## Campaign step H187 (29 Sept 2026, 01:08-01:09 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v's letters at f.61's own positions (script-only, descriptive)
+
+`family/h187_f61_f176v.py` (result `family/h187_f61_f176v_result.txt`, `--check` OK), the H181 set-up: F61-CAL's DP aligns Tomokiyo's five spans under
+key_period_v4n176.tsv, and at each aligned f.61 sign whose class has >= 10 agreed columns in key_period_f176v.tsv, f.176v's letters (share >= 0.15)
+are compared with his letter. **38 of 44 agree**: PHI e/r 13/13, 4TRI a/c/p 6/6, VBAR_A t 4/4, EBR l 3/3, VBAR_B s 3/3, INF u 3/5, SBS o 3/5, ZHOOK i
+2/3, BETA m 1/2. **Null (letter sets permuted across these nine classes, 1000, seed 187): mean 4.3, p95 16, max 32.**
+Caveats, as for H181: the alignment itself uses letter sets overlapping these (v4n176), so agreement is partly built in, most for PHI (e/r in both);
+the permutation null does not remove that; his letters come from his own table; f.61's classes are f.61's readers', and the ZHOOK tile link across
+hands FAILED (H178b). What it adds beside H181/H182: the second Desportes leaf's letters for VBAR_A, EBR, VBAR_B and the side-by-side glyph agree with
+his at f.61's positions too. The disagreements are INF 2 (u vs his letter), SBS 2 and ZHOOK 1, for the verifier to look at. No class change, nothing
+merged.
