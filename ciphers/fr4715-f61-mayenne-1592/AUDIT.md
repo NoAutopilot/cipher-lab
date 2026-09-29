@@ -976,3 +976,73 @@ Not assessed. No reading and no plaintext claim (rule 10).
 - **f.108v, f.106r:** no call (below reliable length).
 - **HASH4 d/q, C43 a/n by order on held leaves:** moderate; **H24, ZBAR:** not established.
 - **The f.124r 4TRI conflation:** moderate-high (order, shape with gates, and f.101r's period letters agree).
+
+## VERIFY-F61-V12 (29 Sept 2026)
+
+Verifier VERIFY-F61-V12 (account 3, Opus; session_015X77JxuWFPxGK2ZEDo8Rwy; separate from campaign runner 15 and from V5-V11). Claims under
+audit: runner 15's f.61 transcription corrections, NOTES.md/HYPOTHESES.md H407-H415 and `scripts/f61_positions_corrections.tsv`. Gates and
+decision rules fixed before any reader call: `verify_v12/PREREG.md` (commit 72495510; addendum C4 committed 6087b3ae after the C1-C3 replies were on
+file and before any was scored; answer keys held outside the repository until the replies were in, sha256 recorded in PREREG.md and matched).
+Every figure regenerates with `--check`: `verify_v12/score.py`, `verify_v12/meter_v12.py`. No reading claim, no grade of a letter, no novelty class
+(rule 10); no key file, corrections file or CAMPAIGN.md edited.
+
+**Instrument (independent of the runner's).** My own sign centres placed by eye on the f.61 native region (`verify_v12/v12_positions.tsv`,
+`strip.py`), my own tiles at three windows (`cut.py`), my own prompts; the runner's tiles, prompts, position rows for these signs and replies were
+not opened. References R1-R15 are in-span f.61 tokens (R1 BETA L11/1, R2 C43 L03/8, ... R15 4PI L11/9; PREREG.md), options N (none) and P
+(punctuation / not a cipher sign). Four blind Opus calls: C1 (claims 1, 2-class, 4, L05/1; 18 anchors, 4 repeats, a BETA control and a Part B
+panel with BETA removed), C2 (the 26 other out-of-span codes plus L05/1; 8 anchors, 3 repeats), C3 (five count crops from a red-boxed sign to the
+first plain word), C4 (the L02 opening mark; R16 = LL L05/16, option O = plain handwriting). Disclosed looks: the whole-region overview, one
+labelled W1 contact sheet and the count crops, for placement only.
+
+**Gates.** C1 anchors 18/18, repeats 4/4, BETA control L11/1 -> R1 at W2 and W3: PASS. C2 anchors 8/8, repeats 3/3: PASS. C3 controls L08 from
+L08/11 = 3 and L11 from L11/9 = 3 cipher signs, both exact: PASS. C4 anchors 4/5 (gate 4): PASS (the miss is my shifted W3 tile of L08/5, the
+reader's own note says no mark sat at the centre).
+
+| claim | this verifier's reads | verdict |
+|---|---|---|
+| (1) L07/4 is C43, not BETA | R2 (43) at W1/W2/W3; Part B (BETA not allowed) L07/4 -> R2 while L11/1 -> N, not R2 | **endorse** |
+| (2) pass A missed a sign at L03/16, PHI | counts from L03/13 = 3 and from L03/8 = 8 cipher signs (pass A 2 and 7); class R6 PHI at 3/3 windows | **endorse** (sign and class) |
+| (3) out-of-span QA 26/27, L05/1 unsettled | 24 of 26 non-L05/1 codes confirmed on one read; L11/8 (4STEM) -> R14 CROSS, reader "uncertain, could be a lone 4"; L01/11 (HASH4) -> R15 4PI. L05/1 -> R9 LOOPBAR at 4 of 4 reads (C1 x3, C2 x1) | **in part**: the pre-registered 25/26 bar is missed by one; L05/1 is not unsettled under this instrument -- it is the LOOPBAR sign |
+| (4) L04/2 punctuation; L02/2 matches none of 15 references | L04/2 P at 3/3, and the count crop from L04/1 lists 0 cipher signs before "Mais"; L02/2 N at 3/3 ("II": two verticals between bars, EBR has one) | **endorse** both; denominator **99** |
+
+**Per point.**
+- *L07/4 and the steering question.* The runner found both span corrections by looking where key v8 missed Tomokiyo's letters, so the positions
+  were selected toward the published span. Three things say the corrections were not steered by it: (i) my reader had no access to Tomokiyo and
+  returned the same two changes; (ii) the pre-registered control where a change would NOT serve the published letter -- L11/1, Tomokiyo's 'm'
+  in S5, read in a panel with BETA removed -- came back N, not the 43 sign, so the reader does not lump beta into 43, and L07/4's 43 call in the
+  same panel is a shape call; (iii) the runner declined a change that would have agreed with the published markup (H413 left L05/1 as LOOPSTEM1
+  beside Tomokiyo's dash), which a runner steered by the span would not have done. Nothing in this audit suggests either correction is a fit to
+  the span.
+- *L05/1 (a conflict between reads, logged, rule 4).* Runner reads: H411 LOOPBAR; H413 none / n / LOOPBAR. Mine: LOOPBAR 4/4 at three windows
+  and in two calls. Pooled 6 of 8 reads LOOPBAR, and Tomokiyo marks the position with a dash (published markup, consistent with a null). By
+  PREREG rule 3 (>= 3 of 4 R9) this verifier endorses **L05/1 = LOOPBAR (null)** as a transcription correction. The tile shows a loop on a stem
+  crossed by two bars, the drawing of L03/2 and L03/12.
+- *L11/8 and L01/11.* One read each against classes with no in-span token; both land on a neighbouring hash/stem class, which is what a
+  forced-choice panel lacking the true class tends to do. Not applied; a second read against a panel that includes an in-hand 4STEM and
+  HASH4 (f.108r/f.108v) would settle them. If both held, two more two-way tokens would become null/unread.
+- *A slip the runner did not propose (C4).* Pass A starts L02 at PHI, but the line opens with an 'll' mark before it, where L01's cipher run
+  continues. C4 reads it as the LL sign (R16, L05/16) at 3 of 3 windows, and the plain-letter anchors 'les' and 'ent' as O. Out of every
+  span, so no published letter bears on it. By the C4 rule this is logged as a probable missed LL (a null) at L02 start, **not endorsed for
+  merge on this one call**; a second blind read would settle it. It adds one sign: 100.
+
+**Span count and meter (`verify_v12/meter_v12.py`, key v8 as merged, meter_v8 bands).**
+- (a) uncorrected: spans 53/55 (p95 0.418); meter 12 / 59 / 2 / 26 of 99.
+- (b) runner 15's corrections file: spans **55/55** (permuted mean 0.280, p95 0.436, 0/2000); meter 12 / 60 / 1 / 26 of 99 -- reproduces
+  H408/H415 exactly.
+- (c) **V12 endorsed = (b) + L05/1 LOOPBAR: spans 55/55 (unchanged, L05/1 sits on Tomokiyo's dash); meter firm 12 / two-way 59 / wider 1 /
+  unread-or-null 27 of 99.**
+- (d) (c) + the L02 LL, if a second read confirms it: 12 / 59 / 1 / 28 of 100.
+The right denominator for the endorsed state is **99**: the meter counts cipher signs, the L03/16 insertion adds one, the L04/2 punctuation
+removes one. It becomes 100 only if the L02 opening LL is merged.
+
+**Caveats.** The 55/55 is still in-sample for part of the f.61 reading key (H408's own caveat stands). Each shape call is one reader family
+(Opus) on one set of tiles; the two instruments (runner's and mine) agree on (1), (2), (4), and on 24/26 of (3).
+
+**What should merge (for the orchestrator; this verifier edits no key or corrections file).** Keep the three rows of
+`scripts/f61_positions_corrections.tsv` (L07/4 relabel C43, L03/16 insert PHI, L04/2 delete); add `L05 1 relabel LOOPBAR` citing H411 + H413
+W3 + VERIFY-F61-V12 C1 x3 + C2 (6 of 8 reads). Hold L11/8, L01/11 and the L02 opening LL for one more read each.
+
+**Safe sentence:** "Two blind shape readers with known-answer gates agree that f.61's pass-A transcription had two slips inside Tomokiyo's spans
+(L07/4 is the 43 sign; a phi-shaped sign after L03's bracket was missed); with them corrected key v8 matches all 55 published span letters, and a
+control position where the change would not serve the published letter did not move." **Unsafe sentence:** "Key v8 is confirmed by an
+independent test at 55/55" (in-sample, selected positions) or "every out-of-span sign on f.61 is confirmed".

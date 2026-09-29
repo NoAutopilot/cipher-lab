@@ -1,0 +1,4 @@
+(a) uncorrected: spans 53/55 = 0.964; 2000 permuted keys mean 0.277 p95 0.418; >= key 0/2000; meter firm 12 / two-way 59 / wider 2 / unread-or-null 26 of 99; wider: {'OTHER': 2}
+(b) runner 15 corrections file: spans 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000; meter firm 12 / two-way 60 / wider 1 / unread-or-null 26 of 99; wider: {'OTHER': 1}
+(c) V12 endorsed = (b) + L05/1 LOOPBAR: spans 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000; meter firm 12 / two-way 59 / wider 1 / unread-or-null 27 of 99; wider: {'OTHER': 1}
+(d) (c) + L02 opening LL (C4, not endorsed for merge): spans 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000; meter firm 12 / two-way 59 / wider 1 / unread-or-null 28 of 100; wider: {'OTHER': 1}

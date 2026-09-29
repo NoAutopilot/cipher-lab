@@ -1,0 +1,9 @@
+id	line	pos	window	expected
+QFT	L02	0	W2	?
+NTN	L02	0	W3	?
+VFC	L08	5	W3	R8
+BQP	L05	16	W3	R16
+ZDB	L05	7	W2	R11
+BFJ	L03	w1	W1	O
+TJK	L02	0	W1	?
+VZM	L03	w2	W1	O

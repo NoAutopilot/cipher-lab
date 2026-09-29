@@ -1,0 +1,15 @@
+C1 anchors 18/18
+C1 repeats consistent 4/4
+C2 anchors 8/8
+C2 repeats consistent 3/3
+C1 BETA control L11/1 (Part A): W2=R1 W3=R1
+target L02/2: C1A:W1=N C1A:W2=N C1A:W3=N
+target L03/16: C1A:W1=R6 C1A:W2=R6 C1A:W3=R6
+target L04/2: C1A:W2=P C1A:W1=P C1A:W3=P
+target L05/1: C1A:W3=R9 C1A:W1=R9 C1A:W2=R9 C2:W2=R9
+target L05/9: C1B:W3=R2
+target L07/4: C1A:W3=R2 C1A:W2=R2 C1A:W1=R2 C1B:W2=R2
+target L11/1: C1B:W3=N
+C2 out-of-span confirmed 24/26; disagree: L11/8 exp N got R14; L01/11 exp N got R15
+C3 cipher counts: X1=3 X2=3 X3=3 X4=8 X5=0
+C4 anchors 4/5; L02 opening mark: W2=R16 W3=R16 W1=R16

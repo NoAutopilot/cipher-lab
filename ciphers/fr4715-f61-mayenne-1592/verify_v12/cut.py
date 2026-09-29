@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """VERIFY-F61-V12: cut my own tiles from the f.61 native region (images/src_...f137...jpg) at the centres in v12_positions.tsv.
 Windows: W1 tight (+-75 x, -80..+95 y), W2 wide (+-115, -110..+130), W3 shifted (centre +30 x, -20 y; +-80, -85..+95). All tiles resized to
-height 190 px, greyscale-free (colour kept). Output verify_v12/tiles/<line>_<pos>_<W>.png (names are for me; sheets use random ids)."""
+height 190 px, colour kept. Output verify_v12/tiles/<line>_<pos>_<W>.png (names are for me; sheets use random ids). The tiles are not kept in
+the repository (7 MB; the folder is over its 30 MB line): rerun this script to regenerate them; they sit in commits 72495510 and 6087b3ae (C4) as the reader saw them."""
 import csv, os
 from PIL import Image
 HERE = os.path.dirname(os.path.abspath(__file__)); SRC = f"{HERE}/../images/src_ark_12148_btv1b52509819x_f137_500_1880_3320_1420.jpg"
