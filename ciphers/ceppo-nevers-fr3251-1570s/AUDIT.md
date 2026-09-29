@@ -574,9 +574,9 @@ Two Opus subagents (L01-L03, L04-L05), same protocol, on HARVEST-D2's tracked cr
 `verify_d2/f87/passD.tsv`, 205 signs (L01 27, L02 45, L03 46, L04 44, L05 43): both passes 139, sided with A 31, with B
 17, against both 18. Where the passes had split one written sign into two ids (t+3 as S52 plus a bar or X_NEW; loop+3;
 the c-e-ij sign S76 as S32+S66), D merged them into one sheet cell, so D's positions drift from passC's after the first
-merge in a line and a position-by-position comparison with passC is not meaningful on L02, L04 and L05. Both reconcilers
-independently matched the double-barred oval to the printed cell **S60 (r)**: 4 positions in L04-L05 are S60 on D, and 3
-more are X_THETA2 (keyed r); 1 X_POUND, 3 X_NEW, 1 '?'.
+merge in a line and a position-by-position comparison with passC is not meaningful on L02, L04 and L05. The L04-L05
+reconciler matched the double-barred oval to the printed cell **S60 (r)** on its own at all 4 of its positions; the L01-L03
+reconciler kept it as X_THETA2 (3 positions, keyed r); 1 X_POUND, 3 X_NEW, 1 '?'.
 
 ### Key test on D (`verify_d2/f87/control_D.txt`)
 
@@ -622,7 +622,7 @@ L05    neandosecrezamenteconozo_orteondeciamchuno
 ### The two I signs (step 4)
 
 - **Double-barred oval.** On D, four of the seven are matched to the printed cell S60 = r by the reconcilers themselves,
-  so on f.87 the r is mostly the printed value, not an override; "secre-amente" uses one of them. With all seven
+  so on f.87 the r is in part the printed value, not an override; "secre-amente" uses one of them. With all seven
   unkeyed the passage reads "secre_amente" and still stands. Value fit on D is flat (n -1.436, r -1.439, unkeyed -1.455).
 - **Pound sign.** One occurrence (L04 18, "roc_ia"), unkeyed; nothing endorsed depends on it.
 
@@ -653,8 +653,8 @@ letter was located (search logged in AUDIT.md, 29 Sept 2026)."
   "auanti qualche" are not forced on D; f.35's "non, haue, fino, fate" are scraps that a blind reader does not single out;
   f.87 "secre[t]amente" supplies a t the sign does not give.
 - **The double-barred oval is very probably the printed cell S60 (r, row 1)**, missed as "off-sheet" by every earlier
-  pass: three independent verifier reconcilers matched it to S60 without prompting, and this verifier compared the
-  shapes. Together with the fr.3252 period gloss (r) this makes the r a printed-key value with a period gloss behind it,
+  pass: two of this audit's five blind reconcilers (f.21v L01-L06, 1 position; f.87 L04-L05, 4 positions) matched it to
+  S60 without prompting, the other three kept it off-sheet, and this verifier compared the shapes by eye. Together with the fr.3252 period gloss (r) this makes the r a printed-key value with a period gloss behind it,
   not an I override. Carry it back to f.11r (four positions) in the next f.11r pass.
 - The pound sign is still unglossed; it stays I everywhere.
 - One process note: HARVEST-D2's reconciliation sent every split to a third reader who chose one side per position; on
