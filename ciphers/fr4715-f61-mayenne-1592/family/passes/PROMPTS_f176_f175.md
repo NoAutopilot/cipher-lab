@@ -111,3 +111,8 @@ FAIL: the location stays at H177d's descriptive level.
 4 Opus vision calls: blind sign passes A/B of f.176v L09-L16 and of L17-L24 (H177c prompt, rows changed, inline replies written verbatim)
 -> `passes/f176v_signs{A|B}_L09-L16.tsv`, `..._L17-L24.tsv`. Then `build_f176v_key.py L01-L24 --start V06` (the clear on disk runs to V27,
 about 1,750 letters from V06; N = 0.8 x signs will be about 1,250). Gate as H177c (margin >= +0.10 over both fixed controls).
+
+## H177f stage 2 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+3 Opus vision calls, inline replies written verbatim: passes A/B of f.176v L25-L32 (H177c prompt, rows changed) and one read of fol. 177v strips
+9-12 (the stage 2c strip prompt, strips 09-12 regenerated from `sheets/f177v_strips/boxes.tsv`, lines numbered V28, V29, ... continuing, the first
+line of strip 09 skipped if it repeats V27) -> `passes/f177v_clearA_S09-S12.tsv`. Then `build_f176v_key.py L01-L32 --start V06`, gate as H177c.
