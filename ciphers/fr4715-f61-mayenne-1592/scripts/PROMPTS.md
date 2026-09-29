@@ -647,3 +647,17 @@ segment where it is complete. Under each segment is a red ruler: tick labels are
 left to right, and list every item: a cipher sign or a clear handwritten word. Answer inline only, one line per item, tab-separated:
 '<image name><TAB><segment><TAB><x><TAB>sign|word<TAB><few-word shape description, or the word as you read it>' with x the item's centre on the ruler to the
 nearest 10, and nothing else."
+
+## H256 (29 Sept, Opus vision, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61's CA against clear-text a's by letterform, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h256/sheet_01.jpg (family/h256_ca_text.py tiles; key family/h256_items.tsv; 20 tiles: f.61 CA 5 at H253's positions, clear-text a 6 at H63's
+control positions on the sheetB sheets, clear-text non-a letters 3 (o, o, e; a hand check), cipher PHI 3 and C43 3). Disclosure: the runner viewed
+images/f61sheetB_L01.jpg to place the non-a letters and check H63's a positions (its segment 4 shows L01's CA token in passing), then a placement sheet of
+the nine TEXT tiles only (twice, x values shifted to centre the letters); the runner did not look at the CA, PHI or C43 crops or at the test sheet.
+Rules and read-outs in the script's docstring, fixed before the call. Prompt (verbatim): "Read the image /…/h256/sheet_01.jpg with your image reader only; use
+no other tool. It holds 20 numbered tiles (T01-T20) cut from one 16th-century French manuscript page that mixes ordinary cursive handwriting with cipher
+signs, all scaled to the same height. In each tile two black triangles, one above and one below, point at the centre mark; other letters or signs may
+show at the sides. Sort ONLY the centre marks into 2 to 5 groups by the letterform of the mark itself -- the strokes that make it up and their
+arrangement -- ignoring ink weight, size, blur, which hand wrote it, and any connecting strokes that join it to a neighbour; a tile whose centre mark
+cannot be told goes to 'unclear'. Answer inline: first one line per group, 'GROUP <letter>: <one-sentence criterion>'; then one line per tile, exactly
+'T01<TAB><group letter or unclear>', T01 to T20 in order, and nothing else."
