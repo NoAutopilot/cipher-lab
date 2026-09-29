@@ -1,0 +1,2 @@
+(c') V13 endorsed = V12 (c); none of L11/8, L01/11, L02 LL added: spans 55/55 = 1.000; 2000 permuted keys mean 0.280 p95 0.436; >= key 0/2000; meter firm 12 / two-way 59 / wider 1 / unread-or-null 27 of 99; wider: {'OTHER': 1}
+runner 16 H432 proposal = (c) + L11/8 CROSS + L02 LL (comparison, not endorsed): spans 55/55 = 1.000; 2000 permuted keys mean 0.275 p95 0.436; >= key 0/2000; meter firm 12 / two-way 58 / wider 1 / unread-or-null 29 of 100; wider: {'OTHER': 1}

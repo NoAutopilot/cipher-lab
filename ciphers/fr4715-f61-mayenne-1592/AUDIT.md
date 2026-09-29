@@ -1046,3 +1046,53 @@ W3 + VERIFY-F61-V12 C1 x3 + C2 (6 of 8 reads). Hold L11/8, L01/11 and the L02 op
 (L07/4 is the 43 sign; a phi-shaped sign after L03's bracket was missed); with them corrected key v8 matches all 55 published span letters, and a
 control position where the change would not serve the published letter did not move." **Unsafe sentence:** "Key v8 is confirmed by an
 independent test at 55/55" (in-sample, selected positions) or "every out-of-span sign on f.61 is confirmed".
+
+## VERIFY-F61-V13 (29 Sept 2026)
+
+Verifier VERIFY-F61-V13 (account 3, Opus; separate from campaign runner 16 and from VERIFY-F61-V5..V12). Task: the one more read V12 held for
+three f.61 signs, against runner 16's reads (H428 L11/8 CROSS 3/3, H428 L02 opening LL 3/3, H428b/H431 L01/11 4-over-hash 3/3 low confidence)
+and its meter H432 (12/58/1/29 of 100). Gates and rules fixed before the reader call: `verify_v13/PREREG.md` (commit f40152f7; answer key held
+outside the repository until the reply was in, sha256 99e9abf7... matched). Regenerate: `verify_v13/score.py --check`, `verify_v13/meter_v13.py
+--check`. No reading claim, no grade of a letter, no novelty class (rule 10); no key file, corrections file or CAMPAIGN.md edited.
+
+**Instrument (independent of the runner's).** My own centres (`v13_positions.tsv`) on the f.61 native region, the f.108r stitch and the f.108v L03
+desk-pack sheet (label strips cut out); my own tiles (`cut.py`, three windows, grey + autocontrast so a tile does not show its leaf by colour);
+my own sheets and prompt. Runner 16's tiles, prompts, item files and replies were not opened; from its HYPOTHESES rows I used only that its
+4-over-hash exemplar sits on f.108v L03. The panel carried in-hand exemplars of every competing class: 4STEM (f.108r pass108A L02/2), CROSS
+(f.61 L07/10), 4PI (f.61 L11/9), both HASH4 forms (looped, f.108r pass108C L05/19; 4-over-hash, f.108v L03/6), LL (f.61 L05/16), plus PHI, C43,
+ZHOOK, 4TRI, BETA, VBAR_A; options N (a cipher sign not on the panel) and O (ordinary handwriting). One blind Opus call, 28 + 8 items.
+
+**Gates.** G1 anchors 12/13 (gate 12; the miss: the plain 'Il' of 'Il seroit' -> N, "cursive H-like sign", not O): PASS. G2 in-span controls in
+the full panel L07/10 -> CROSS, L11/9 -> 4PI, L05/16 -> LL: PASS. G3 target repeats 3/3 consistent: PASS. G4 anti-steering (panel B, CROSS, LL and
+4-over-hash removed): L07/10 and L05/16 -- positions where Tomokiyo's printed letter is served by the class as it stands, so a move would not serve
+it -- both N, not moved to 4STEM, PHI or O; the 4-over-hash anchor also N; 4STEM and 4PI anchors correct: PASS.
+
+| held sign | V12 | runner 16 | this verifier (W1/W2/W3, repeat, panel B) | verdict |
+|---|---|---|---|---|
+| L11/8 (pass A 4STEM) | CROSS, 1 read, "could be a lone 4" | CROSS 3/3 (H428) | N N N, repeat N, B N: "simple 4 with long crossbar, plain stem" -- set apart from both bare-plus CROSS tokens (L07/10, L01/1 -> CROSS) and from the f.108r 4STEM (curved leg) | **reject the relabel to CROSS** (not reproduced; PREREG rule 1 outcome "hold": 4STEM stands as coded, M) |
+| L01/11 (pass A HASH4) | 4PI, 1 read | N 3/3 vs looped hash (H428b); 4-over-hash 3/3, low (H431) | N N N, repeat N, B N: "struck-through hash cluster, cancelled sign", with the 4-over-hash on the panel and its two anchors read right | **in part**: no change, as runner 16 says (HASH4 stands as coded, grade M; V12's 4PI not reproduced), but its 4-over-hash identification is not reproduced |
+| L02 opening mark | LL 3/3 (C4), held | LL 3/3 (H428) | LL LL LL, repeat LL; B (LL off panel) N, not O | **in part**: the shape call reproduces on a third instrument, but PREREG rule 3's endorsement condition (plain 'Il' foil -> O) is unmet (it went N); not endorsed for merge |
+
+**Rule 4 conflicts, logged.** L11/8: pooled reads CROSS 4 (V12 1, runner 3) vs N 4 (this verifier, three windows + repeat, with CROSS
+exemplars on the panel and read correctly). Two instruments that each pass their own gates disagree; the more frequent value does not settle it,
+and the sign is held at M in its pass-A class. L01/11: 4PI 1, 4-over-hash 3 (low), N 6 (runner's H428b 3, mine 3); nothing merges, and every
+instrument agrees it is not a clean exemplar of any panel sign (overwritten or cancelled, the runner's own H431 note and my reader's).
+
+**L02 opening.** Three instruments now read the LL sign there, 9 windows of 9, and with LL withdrawn my reader answered N (a cipher sign), not O.
+What keeps it from merging under my own rule is the foil: I pre-registered that the reader must call a plain 'Il' in this hand O, and it called it
+N instead (it did not call it LL, so the disqualifying outcome did not occur either). A foil the reader recognises as handwriting -- a clear 'll'
+inside a word in this hand, read as O -- together with the target still at LL would settle it; or the orchestrator may weigh the three concordant
+instruments against this one unmet condition, which this verifier leaves to it.
+
+**Meter (`verify_v13/meter_v13.py`, meter_v12's own functions, key v8, meter_v8 bands).**
+- Endorsed by this verifier = V12's endorsed state (c), nothing added: spans 55/55 (permuted mean 0.280, p95 0.436, 0/2000); **meter firm 12 /
+  two-way 59 / wider 1 / unread-or-null 27 of 99**. Denominator **99**.
+- For comparison, runner 16's H432 state ((c) + L11/8 CROSS + L02 LL): 12 / 58 / 1 / 29 of 100, spans 55/55 -- reproduces H432 exactly; not endorsed.
+
+**What should merge into `scripts/f61_positions_corrections.tsv` (F61-FAMILY-14 does the merge).** From V13: no row. Unchanged from V12: the
+three existing rows plus `L05 1 relabel LOOPBAR` (H411 + H413 W3 + V12 C1 x3 + C2). Do not add `L11 8 relabel CROSS` (conflict, held M) or an L01/11
+row. `L02 0 insert LL` stays held pending the foil condition above.
+
+**Safe sentence:** "A third blind reader, with in-hand exemplars of every competing class and a passing anti-steering control, reproduced the LL
+sign at the opening of f.61 L02 but not the CROSS reading of L11/8 or the 4-over-hash reading of L01/11; the endorsed meter stays 12/59/1/27 of 99."
+**Unsafe sentence:** "Runner 16's three reads are confirmed" or "L11/8 is a 4STEM" (the pass-A class stands only because nothing displaced it).

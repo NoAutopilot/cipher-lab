@@ -1,0 +1,7 @@
+G1 anchors 12/13 (gate 12): PASS; misses: [('A_PLAIN_IL_W1', 'N')]
+G2 in-span controls {'R_CROSS_W2': 'CROSS', 'R_4PI_W2': '4PI', 'R_LL_W3': 'LL'}: PASS
+G3 repeats 3/3 consistent (gate 2): PASS
+G4 anti-steering (B) L07/10 N, L05/16 N, anchors 4STEM 4PI; 4-over-hash off panel -> N: PASS
+L11/8: W1/W2/W3 ['N', 'N', 'N'], repeat N, Part B W2 N -> hold
+L01/11: W1/W2/W3 ['N', 'N', 'N'], repeat N, Part B W2 N -> hold (HASH4 stands as coded, no change)
+L02 opening: W1/W2/W3 ['LL', 'LL', 'LL'], repeat LL, Part B W2 N -> hold (endorse condition unmet: plain 'Il' anchor -> N, not O)
