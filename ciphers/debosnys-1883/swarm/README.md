@@ -1,5 +1,7 @@
 # Debosnys swarm harness (DEB-SWARM-0, 29 Sept 2026)
 
+FROZEN 983e8595 (score.py blob d80e6baa) 29 Sep 2026 03:14 UTC
+
 Owned by the harness. Groups read this file, run `score.py`, and write only in `swarm/G-<X>/`. Never edit
 `score.py`, `make_controls.py`, `build_corpora.py`, `corpora/`, `vocab/` or `controls/`; a bug goes to ROOM as
 "for the orchestrator: DEB-SWARM bug: ...". Never open `controls/sealed/` (only `score.py` reads it). PUBLIC COPIES
