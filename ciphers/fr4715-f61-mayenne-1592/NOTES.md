@@ -6117,3 +6117,17 @@ key does not are seven, every one a bracket under 's' (T1/1, 5, 14, 34, 39; T2/7
 diagonal) = f/s 6/6, EBR_B (squared C) = l/y 4/4, and all of f.61's in-span brackets are form B ('l'). The f.108r sequence used by
 H417/H420/H423 carries the unsplit code EBR and loads form A's pooled cell a/l/s, which H417's column rule cut to i/l; under H22's split the seven
 's' are the table's f/s column. So these are not evidence for letters outside the columns, and no new shape test is warranted. No key change.
+
+## Campaign step H428b (29 Sept 2026, 20:36-20:38 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- f.61 L01/11 is not the 4PI; the in-hand hash reference turned out to be the looped form (1 vision call)
+
+V12's third hold: L01/11 (reader code HASH4; V12's one read 4PI, against a panel with no hash reference). `family/h428b_l01_11_hash4.py` (script,
+key, prompt pushed 9a11d732 before the call): R1 HASH4 from f.108r L05/19 (read HASH4 by both independent passes C and D), R2 4PI L11/9, R3 4STEM
+f.108r T1/2, R4 C43, R5 PHI, R6 VBAR_A, R7 CROSS; check item L01/12 (the 4-over-Pi beside it). Placement look: references sheet only. Reply
+verbatim `family/passes/h428b_reply.tsv`. **Gate 8/8 known (>= 7), both f.108r HASH4 known items (L05/9, L07/5) -> R1, check L01/12 -> R2: PASS.**
+**L01/11: N at W1, W2, W3** ("large hatched blob of several uprights, 4/W-like top; not matched"). Pre-stated read-out: neither 'HASH4' nor
+'4PI'. What it settles: V12's 4PI read does not reproduce (the reader put the true 4-over-Pi beside it on R2 and L01/11 elsewhere at every
+window). What it does not: the in-hand reference is the crossed-loop hash ("dense crossed loop cluster", both f.108r passes), which key v6
+already separates from the 4-headed HASH4 (the HASHLOOP row, UNREAD); the reader's description of L01/11 (a 4-topped hatched sign) fits the
+4-over-hash, for which no f.61-hand reference with position data is on disk. So the reader code HASH4 d/q stays as coded; no change proposed;
+the meter is unaffected. For a verifier: V12's hold on L01/11 can be closed as "not 4PI" on two reads (V12 1, this 3/3 N); its class needs a
+4-over-hash reference in f.61's hand (f.108v's 4-over-hash, H144/H212 tiles) if anyone wants it settled.

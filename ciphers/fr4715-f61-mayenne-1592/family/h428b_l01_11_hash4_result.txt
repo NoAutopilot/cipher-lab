@@ -1,0 +1,2 @@
+gate: 8/8 known (>= 7); f.108r HASH4 known -> ['R1', 'R1'] (both must be R1); check L01/12 (4PI) -> R2
+f.61 L01/11 W1-W3: ['N', 'N', 'N'] -> N (N)

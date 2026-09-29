@@ -212,3 +212,6 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
 - **V12's two held reads, second instrument (H428):** blind forced choice with an in-hand 4STEM reference (f.108r T1/2), gate 9/9 and both
   f.108r 4STEM known items right: L11/8 -> CROSS at 3/3 windows (Tomokiyo's S5 dash sits there), the L02 opening mark -> LL at 3/3. Both of
   V12's reads reproduce; if merged with V12's endorsed rows the meter reads 12 / 58 / 1 / 29 of 100. L01/11 (HASH4 vs 4PI) still open (H428b).
+- **V12's L01/11 hold (H428b):** gate 8/8 with an in-hand hash reference (f.108r L05/19) and the adjacent 4-over-Pi as a check (-> 4PI): L01/11 ->
+  none at 3/3. Not 4PI (V12's one read not reproduced); the f.108r reference is the crossed-loop hash, not the 4-over-hash the reader describes,
+  so HASH4 stays as coded. Closeable as "not 4PI"; a 4-over-hash reference in f.61's hand (f.108v) would be needed to confirm the class.
