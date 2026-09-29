@@ -5401,3 +5401,21 @@ What it means: two instruments that share neither method nor data path -- the or
 the leaf's own period gloss letters (H361) -- both improve when f.124r's no-bowl 4TRI tokens are read as C43 (a/n). The gloss is HELD (grade M, two
 model passes at 0.42 word agreement), so this is agreement between leads, not a reading; H330's fragility caveat on the gloss lead still applies to
 the gloss count as such. For the verifier, together with H359/H360. No call.
+
+## Campaign steps H362 and H364 (29 Sept 2026, 16:55-16:58 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- on f.101r too the readers' 4TRI is mostly the no-bowl sign, and there the period gloss confirms it pairs with a/n (1 vision call + script)
+
+**H362** (`family/h362_bowl_101r.py`, key `family/h362_items.tsv`, prompt note in `family/passes/PROMPTS_f176_f175.md`, committed before the call; the
+runner did not look at the sheets; native f.101r refetched once, canvas 210): H359's design and prompt on fr.3982 f.101r, 50 agreed 4TRI + 20 C43,
+one blind Opus call (`family/passes/h362_reply.tsv`; result `family/h362_bowl_101r_result.txt`, `--check` OK). **Control 17/20 PASS (at the bar).
+4TRI: no bowl 36, bowl 11, n 3 (no-share 0.77); C43: no 19, yes 1 (0.95).** Pre-stated read-out: "f.101r's 4TRI mixes the no-bowl sign: write the
+full split row". f.97r not run (its draft is built from several cuts; its 4TRI scored 0.94 in H349) -- logged in the script.
+**H364** (`family/h364_101r_bowl_letter.py`, written and pushed before running; `family/h364_101r_bowl_letter_result.txt`, `--check` OK): H362's
+answers joined to f.101r's period alignment (`passes/f101r_align.tsv`, the gloss letter the alignment pairs with each code; the draft and alignment
+code sequences matched per line by difflib). **4TRI no-bowl: a/n 23, c/p/t 6, other 5; 4TRI bowl: c/p/t 6, a/n 4, other 1; C43 no-bowl: a/n 15, c/p/t 1;
+bowl-letter agreement 44/56 = 0.79** -> pre-stated read-out **"the bowl tracks the letter on f.101r"**.
+What it means: on the very leaf whose period gloss built v7's 4TRI cell, the tokens the readers code 4TRI but that lack the stem-foot bowl are paired by
+the period decipherment with a or n (23 of 29 with a c/p/t or a/n letter): they are the a/n sign, not the c/p sign. So the readers' 4TRI code conflates
+two signs across hands (f.101r, f.124r; H218/H231 found the same on f.176r and f.106r), the bowl separates them (H193's attribute, now checked against
+period letters on a second hand), and the a/n rows in v7's own 4TRI tally (a 9, n 10 on f.101r) are those no-bowl tokens. For the verifier: this bears
+on v7's 4TRI cell as built (it pools two signs' letters, then keeps c/p/t by the top-two rule) and on every 4TRI count in the family. No cell changed
+here: re-splitting the pooled key by shape is a key-build step with its own gates (H365, H366). Cost: 1 call, estimate 1.0 USD.

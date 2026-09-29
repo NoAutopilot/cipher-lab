@@ -1,0 +1,6 @@
+4TRI bowl=n: a/n 3
+4TRI bowl=no: a/n 23 c/p/t 6 none 2 other 5
+4TRI bowl=yes: a/n 4 c/p/t 6 other 1
+C43 bowl=no: a/n 15 c/p/t 1 other 3
+C43 bowl=yes: a/n 1
+tokens with a c/p/t or a/n letter: 56; bowl-letter agreement 44/56 = 0.79 -> the bowl tracks the letter on f.101r
