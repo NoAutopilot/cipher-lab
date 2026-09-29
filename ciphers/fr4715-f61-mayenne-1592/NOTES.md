@@ -6034,3 +6034,44 @@ greyscale against f.108r references) and the internal check (f.108r T2/27 -> R1,
 unassigned.** Two points for the verifier: the forced-choice design transfers across the two leaves of f.61's hand (8/8); and f.108r's overlay
 'l' at T2/3 and T2/27 falls on one sign outside the reader codes (a distinct l-form in this hand, H420/H421). f.61's L02/2 remains a sign with no
 class (the meter's one 'wider' token). Cost estimate 1.5 USD.
+
+## Campaign step H423 (29 Sept 2026, 20:23-20:26 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- a per-cell context chooser: known-answer control FAILs its pre-registered power gate; f.61 not touched (script-only)
+
+The lead row after H401/H405 (the two-way band is at the table's shape floor): choose the letter in each two-way cell from the
+surrounding French. Instrument (`family/h423_ctx_chooser.py`), deliberately not H33/H57 (no model judge, no letter sets wider than
+key v8's cells, no ? wildcards): each line cut into segments (break at a clear word, a word code or a sign with no cell; nulls
+dropped as Tomokiyo drops them; on f.61 the meter of record's rows with the corrections file applied, C6/CA dropped, L01/12 and
+L02/2 breaks); every cell starts at the pair's more frequent fr16 letter; iterated conditional modes (<= 50 sweeps) then give each
+multi-letter cell the letter maximising the fr16 5-gram log-probability (tools/french16_ngram.py -- the shared period model, letters
+of Catherine de Medicis and Marguerite de Valois, 1550s-1600s: era- and register-matched to a 1592 League letter) with every other
+cell held. Known letters never enter the chooser. Gates G1-G3 in HYPOTHESES.md H423, pushed 81ec946e before the scoring run.
+
+| known-answer set | N | chooser | unigram start | McNemar (chooser-only / unigram-only, one-sided p) | order-shuffle null mean / p95 |
+|---|---|---|---|---|---|
+| f.61 spans, Tomokiyo's letters hidden | 47 | 39 = 0.830 | 36 = 0.766 | 7 / 4, p 0.27 | 0.624 / 0.723 |
+| f.108r overlay (f.61's hand) | 50 | 43 = 0.860 | 35 = 0.700 | 10 / 2, p 0.019 | 0.658 / 0.720 |
+| f.101r period decipherment (DP-aligned) | 1129 | 817 = 0.724 | 776 = 0.687 | 128 / 87, p 0.003 | 0.659 / 0.676 |
+| f.188r period decipherment (DP-aligned) | 442 | 322 = 0.729 | 295 = 0.667 | 70 / 43, p 0.007 | 0.634 / 0.667 |
+| f.61's hand (f61 + f108r) | 97 | 82 = 0.845 | 71 = 0.732 | 17 / 6, p 0.017 | 0.642 / 0.701 |
+| pooled | 1668 | 1221 = 0.732 | 1142 = 0.685 | 215 / 136, p 1.5e-05 | 0.651 / 0.667 |
+
+Coin flip is 0.5 on every row (binomial p from 2.8e-06 on f.61's 47 to 3e-83 pooled). Per pair, pooled (N, chooser, unigram): e/r
+698 488 512 (the chooser is BELOW the unigram rule on e/r pooled), i/x 225 215 219, g/t 214 185 191, i/l 147 76 0, a/n 138 93 71,
+d/q 104 83 73, f/s 61 50 54, m/s 48 11 5, q/s 10 3 3; on f.61's hand e/r 34 32 25, a/n 19 13 12, g/t 11 9 9, i/x 10 10 10, b/o 7 6 5,
+c/p 6 5 3, d/q 4 4 4, l/y 3 3 3, m/s 3 0 0. Per-cell rows for f.61 and f.108r are in `family/h423_ctx_chooser_control_result.txt`.
+
+**Gate: G1 pooled PASS, G2 f.61's hand PASS, G3 power FAIL (0.763 at N 60 from the pooled control, gate 0.80) -> FAIL as
+pre-registered: untested-by-this-tool at f.61's N.** H424 (choosing f.61's 60 two-way letters) is dropped by the pre-stated rule;
+no f.61 letter was chosen and none is recorded. Descriptive only, computed after the gate result and not a gate: the same power
+figure drawn from f.61's own hand alone (97 cells) is 0.961 -- the pooled figure is pulled down by the two other-hand leaves, whose
+known letters are DP-aligned and noisy (f.101r's alignment is half conflicts) and whose e/r cells run against the chooser. Whether
+a gate on f.61's own hand may license the target in a fresh pre-registration, or new lettered material in the hand is needed first,
+is the verifier's / orchestrator's decision (H425), not a re-gate by this runner (rule 3's one-knob paragraph). Two caveats a
+verifier should weigh: key v8's f.61 cells were fitted partly to these same spans (the chooser picks within cells that contain
+the known letter by construction; that helps the unigram rule and the chooser alike), and the null rule on the other leaves uses
+the aligned-to-nothing flag, a mild advantage those controls have over f.61. The brief's "letter pairs permuted across cells" null
+cannot be scored against a known letter (the letter leaves the cell), so the within-segment order shuffle, which can differ on this
+statistic, stands in for it. f.124r was not used: its gloss is HELD (readers agree on 43-49% of words) and the committed
+alignment's numeric codes do not map back onto the committed draft (45/45 lines differ).
+Reproduce: `python3 family/h423_ctx_chooser.py --build|--control [--check]` (both check OK). Script-only, about 1 minute of CPU.
+Not a reading; no key, cell, grade or class change.

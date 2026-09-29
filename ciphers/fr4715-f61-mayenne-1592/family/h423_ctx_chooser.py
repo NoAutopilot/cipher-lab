@@ -155,7 +155,9 @@ def shuffled(segs, rng):
     return [rng.sample(s, len(s)) for s in segs]
 
 def binom_p(k, n, p=0.5):   # one-sided P(X >= k)
-    return sum(math.comb(n, j) * p**j * (1 - p)**(n - j) for j in range(k, n + 1))
+    if k <= 0: return 1.0
+    t = [math.lgamma(n + 1) - math.lgamma(j + 1) - math.lgamma(n - j + 1) + j * math.log(p) + (n - j) * math.log(1 - p) for j in range(k, n + 1)]
+    mx = max(t); return min(1.0, math.exp(mx) * sum(math.exp(x - mx) for x in t))
 LEAVES = {"f61": f61_leaf, "f108r": f108r_leaf, "f101r": lambda: align_leaf("f101r"), "f188r": lambda: align_leaf("f188r")}
 
 def build():
@@ -204,6 +206,10 @@ def control():
         s = prng.sample(pool, 60); k = sum(a for a, _ in s); u = sum(b for _, b in s)
         hit += (k > u and binom_p(k, 60) < 0.05)
     power = hit / 2000; out.append(f"power at N 60 (2000 subsamples of the pooled control, seed 4230): share with chooser > unigram and binomial p < 0.05 = {power:.3f}")
+    hp = [(res[l][1][c], res[l][2][c]) for l in ("f61", "f108r") for c in res[l][1]]; hrng = random.Random(4231); hh = 0
+    for _ in range(2000):
+        s = [hrng.choice(hp) for _ in range(60)]; k = sum(a for a, _ in s); u = sum(b for _, b in s); hh += (k > u and binom_p(k, 60) < 0.05)
+    out.append(f"DESCRIPTIVE ONLY, written after the gate result, NOT a gate: the same power figure from f.61's own hand alone (f61+f108r, 97 cells, 60 drawn with replacement, seed 4231) = {hh/2000:.3f}")
     P, H = summ["pooled"], summ["hand61"]
     g1 = P[5] < 0.05 and P[1] / P[0] > P[6] and binom_p(P[1], P[0]) < 0.01
     g2 = H[1] >= H[2] and H[1] / H[0] > H[6]

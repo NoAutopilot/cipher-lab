@@ -1,0 +1,4 @@
+f61: 8 segments, 73 cells ({'two-way': 60, 'firm': 12, 'wider': 1}); scored two-way cells with a known letter 47; by pair {'e/r': 14, 'a/n': 11, 'c/p': 6, 'b/o': 5, 'g/t': 4, 'l/y': 3, 'i/x': 3, 'm/s': 1}
+f108r: 6 segments, 78 cells ({'wider': 18, 'two-way': 51, 'firm': 9}); scored two-way cells with a known letter 50; by pair {'e/r': 20, 'a/n': 8, 'g/t': 7, 'i/x': 7, 'd/q': 4, 'm/s': 2, 'b/o': 2}
+f101r: 366 segments, 2495 cells ({'two-way': 1792, 'wider': 594, 'firm': 109}); scored two-way cells with a known letter 1129; by pair {'e/r': 474, 'i/x': 177, 'g/t': 156, 'i/l': 104, 'd/q': 74, 'a/n': 68, 'm/s': 34, 'f/s': 28, 'q/s': 10, 'e/m': 4}
+f188r: 119 segments, 850 cells ({'two-way': 623, 'wider': 126, 'firm': 101}); scored two-way cells with a known letter 442; by pair {'e/r': 190, 'a/n': 51, 'g/t': 47, 'i/l': 43, 'i/x': 38, 'f/s': 33, 'd/q': 26, 'm/s': 11, 'e/m': 3}
