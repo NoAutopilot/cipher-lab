@@ -4987,3 +4987,15 @@ the atlas codes (verbatim `family/passes/f211r_s{1,2}_signs{A,B}.tsv`), joined t
   other) takes 6 of 18 signs.
 This is the sign half of the held-out check; the gloss half is H316 (or ASKS 93), and H317 scores the two against key v7. No reading. Vision calls
 this session: 7 (two here).
+
+## Campaign step H316 (29 Sept 2026, 13:07 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.211r's gloss, two blind reads: gate FAIL (as expected); four word slots agreed
+
+Pre-registered (PROMPTS section H316; `family/h316_211r_gloss.py`, committed 2aeb39be before the calls). Two independent blind Opus reads of the small
+words above f.211r's cipher run only (verbatim `family/passes/f211r_s{1,2}_gloss{A,B}.tsv`); result `family/h316_211r_gloss_result.txt` (`--check` OK):
+- A: forble[?] (sheet x 475-975) | comm[?] (1320-1700) | elle (2105-2350) | v[?]l (2590-2800).
+- B: forbe[?]z (470-975) | comm[?] (1320-1700) | elle (2105-2340) | v[?]l (2595-2800).
+- Exact agreements 3 (comm[?], elle, v[?]l), of which only **elle** is a complete word in fr16 -> **gate FAIL** (fewer than 3), as pre-stated; the gloss
+  stays unread and ASKS 93 stays open for a person's reading.
+Descriptive only: both readers put four gloss words at the same four x spans (to within 10 px), agree on 'elle' (h/m) and on the letters they could
+read in the other three ('forb-', 'comm-', 'v-l'). That is the frame a person's reading fills; it is not a reading. H317 (the held-out cell check)
+now waits on ASKS 93 (needs: person). Vision calls this session: 9.

@@ -1,0 +1,4 @@
+pass A 4 words: forble[?] (475-975, m) | comm[?] (1320-1700, l) | elle (2105-2350, m) | v[?]l (2590-2800, l)
+pass B 4 words: forbe[?]z (470-975, m) | comm[?] (1320-1700, m) | elle (2105-2340, h) | v[?]l (2595-2800, l)
+x-overlapping pairs 4; exact agreements 3: comm[?], elle, v[?]l; of them in fr16: 1
+gate: FAIL (fewer than 3 agreed fr16 words); the gloss stays unread, ASKS 93 open
