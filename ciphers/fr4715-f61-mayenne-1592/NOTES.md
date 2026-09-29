@@ -3634,3 +3634,32 @@ sign, not the 0.8 the builder assumed. build_f176_key.py L01-L47 trimmed the cle
 end of f.176r's text. The DP therefore compressed f.176r's last rows onto fol. 177r's last lines. The +0.193 margin held regardless, but the
 class counts from f.176r's last rows (about L38-L47) may be misplaced. Re-running with N = the clear through V05 is the verifier's call, or
 the next runner's after the audit. Next: H177f, f.176v L09-L45.
+
+## Campaign step H177f stage 1 (29 Sept 2026, 00:26-00:34 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v L01-L24 against fol. 177v from V06
+
+Pre-registered (PROMPTS section H177f stage 1). Four Opus vision calls, inline replies written verbatim: passes A/B of f.176v L09-L16 and L17-L24
+(`family/passes/f176v_signs{A,B}_L09-L16.tsv`, `..._L17-L24.tsv`). In L17-L24, pass B codes 4PI where A codes 4TRI/4STEM, and SBS where A codes
+a "trefoil" PHI; those columns leave the consensus (row consensus 0.65-0.74, L20 0.39). `build_f176v_key.py L01-L24 --start V06` (result and
+`key_period_f176v.tsv` regenerated, `--check` OK; L01-L16 alone gave +0.226):
+
+**1,540 signs, consensus 0.76, N 1,232 letters of fol. 177v V06-V27. Match 0.513 vs (a) f.184r 0.295, (b) fol. 177r 0.308; margin +0.205, PASS.**
+
+| class | v4 set | true (fol. 177v) | (a) f.184r | (b) fol. 177r |
+|---|---|---|---|---|
+| VBAR_B | s | **s 82** of 113 | s 21 of 115 | s 33 of 118 |
+| INF | u | **u 74** of 95 | u 26 | u 27 |
+| VBAR_A | s/t | **t 58**, g 5, s 5 of 80 | t 20, s 15 | t 18, s 14 |
+| EBR | a/l/s | **l 54**, a 6 of 77 | s 15, a 10 | a 17, l 13 |
+| HASH4 | d/i/q | i 28, d 26, q 4 of 70 | i 15 | d 15, i 11 |
+| 4TRI (agreed) | a/c/n/p/t | **c 20, p 13**, a 9 of 51 | n 13, a 12, t 11 | mixed |
+| ZHOOK (agreed, not in v4) | - | **i 29** of 49 | e 11, c 6, i 4 | i 7, e 6 |
+| BETA | m/s | m 6 of 7 | flat | flat |
+| split A 4TRI / B C43 | | n 46, a 33 of 113 | | |
+| split A PHI / B SBS | | o 6 of 14 | | |
+
+What this adds, descriptively: on a second stretch of Desportes's hand, the rare class ZHOOK reads **i** on signs both passes agree on. f.176r's i
+came from split columns (H178) and 23/46 agreed. It is flat under both wrong texts. VBAR_A t (partner g), EBR l, VBAR_B s and INF u repeat.
+Agreed 4TRI reads c/p while the 4TRI/C43 split reads a/n: the passes seem to separate a c/p four-sign from an a/n one, as on f.176r (4STEM p/c,
+C43 a/n). HASH4 is split between i and d here. Nothing is merged; key_period_f176v.tsv stays a separate file. f.61 is not read here.
+Remaining for H177f: L25-L45. The clear on disk (V06-V27, 1,750 letters) covers about L25-L31; beyond that, fol. 177v strips 9-12 (crops
+regenerated in scratch from boxes.tsv) and fol. 178r need one read each.

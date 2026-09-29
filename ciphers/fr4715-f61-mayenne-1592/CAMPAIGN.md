@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 600
-spent_today_usd: 3.30
+spent_today_usd: 9.30
 spent_day: 2026-09-29
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
 crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
@@ -583,3 +583,4 @@ closed:
 2026-09-28 23:31 (clock) | session_016YPPumG1PbhMJ3pBLuqaeW | H177b stage 2d | 4.5 | all of f.176r keyed against fol. 177r-v (margin +0.193 at N 2,476). Runner 6 stops on context (about 660k); H177b open for the next runner (f.176v, fol. 179, fol. 177v rest, fol. 178r).
 2026-09-29 00:25 (clock) | session_012nGionjAX21NRbpi4TP69b | H177c stage 1 | 3 | f.176v L01-L08 (two blind passes, consensus 0.80) vs fol. 177v from V01: 0.339 vs wrong texts 0.373 / 0.344, GATE FAIL; nothing keyed; H177d (location scan) added.
 2026-09-29 00:29 (clock) | session_012nGionjAX21NRbpi4TP69b | H177d+H177e | 0.3 | script-only: f.176v's text starts at fol. 177v V06 (scan peak, disclosed as run before its section was committed); build from V06 PASS margin +0.194; f.176r's clear therefore runs to V05, past the N 2,476 the f.176r build used (for the verifier).
+2026-09-29 00:34 (clock) | session_012nGionjAX21NRbpi4TP69b | H177f stage 1 | 6 | f.176v L01-L24 vs fol. 177v V06-: 0.513 vs 0.295 / 0.308, margin +0.205 PASS; agreed ZHOOK i 29/49 (wrong texts flat); VBAR_A t, EBR l, VBAR_B s, INF u repeat; separate file, nothing merged; row stays running for L25-L45.
