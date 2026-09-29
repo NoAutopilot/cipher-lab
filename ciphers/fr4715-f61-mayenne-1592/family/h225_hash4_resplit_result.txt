@@ -1,0 +1,13 @@
+f.188r rows H224 read as the 2-hook (moved HASH4 -> H24): {'i': 7, 'x': 1}
+v5 HASH4 fr.3982 f.101r: 67/108 in d/q
+v5 H24 fr.3982 f.101r: 184/235 in i/x/j/y
+v5 HASH4 fr.3984 f.188r/f.184r: 15/39 in d/q
+v5 H24 fr.3984 f.188r/f.184r: 38/50 in i/x/j/y
+v5 HASH4 fr.3984 f.274r: 10/10 in d/q
+v5 H24 fr.3984 f.274r: 11/11 in i/x/j/y
+v5 pooled HASH4: 92/157 = 0.586 in d/q  d60 q32 i14 p7 s6 n5 b4 f4 o4 t3 a3 y3 e3 x3 c2 r2 u2
+v5 pooled H24: 233/296 = 0.787 in i/x/j/y  i209 n10 e10 y10 x7 j7 u5 d5 o5 a5 c4 g3 s3 r3 t3 p2 m2 q1 f1 l1
+after the H224 re-split, pooled HASH4: 92/149 = 0.617 in d/q  d60 q32 p7 i7 s6 n5 b4 f4 o4 t3 a3 y3 e3 c2 r2 x2 u2
+after the H224 re-split, pooled H24: 241/304 = 0.793 in i/x/j/y  i216 n10 e10 y10 x8 j7 u5 d5 o5 a5 c4 g3 s3 r3 t3 p2 m2 q1 f1 l1
+after, HASH4 f.188r alone: 15/31 in d/q (v5 15/39)
+span/overlay gate: non-test by construction (no HASH4/H24 on a span or overlay position); not run

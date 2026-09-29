@@ -4192,3 +4192,13 @@ support for H24 i/x, and HASH4 proper (the 4-head) reads d/q on every glossed le
 The "conflict" status of those rows was a coding merge, not a misalignment. Nothing merged: a key-source line for the verifier was posted. The looped
 form B (f.108) remains without a glossed occurrence; its i/x lean stays sequence-only (H213) and judge-only (H215). Added H225 (test key with the
 re-split, script-only) and H226 (the stray-letter HASH4 rows by shape).
+
+## Campaign step H225 (29 Sept 2026, 04:24-04:27 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- HASH4/H24 counts re-split by H224's shapes (script-only, descriptive)
+
+`family/h225_hash4_resplit.py` (committed before the run; result `family/h225_hash4_resplit_result.txt`, `--check` OK). The row's H219-style gate (f.61 spans,
+f.108r overlay) was **not run: a non-test by construction** -- no HASH4 or H24 lies on a span or overlay position, so a key change confined to those two
+codes cannot score differently (CLAUDE.md rule 3). Descriptive part: H224's eight 2-hook rows (i 7, x 1) moved from HASH4 to H24 on f.188r.
+- v5 HASH4 d/q: f.101r 67/108, f.188r 15/39, f.274r 10/10; **pooled 92/157 = 0.586 -> 0.617 after** (f.188r 15/31).
+- v5 H24 i/x/j/y: pooled 233/296 = 0.787 -> 0.793 after.
+HASH4 proper still carries many stray letters (p 7, s 6, n 5, b 4, f 4, o 4 ...), most on f.101r and on f.188r's conflict rows; H226 asks whether those
+positions are other shapes. Nothing merged.
