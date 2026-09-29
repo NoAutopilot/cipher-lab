@@ -5919,3 +5919,13 @@ rows from f.176r), and the two positions were chosen because the key missed them
 not on the key. Both corrections sit inside published spans (Tomokiyo's letters), so they improve the transcription and the key check, not a
 reading claim. No key, class or grade changed; the pass files and key v8 are untouched. H409: HYPOTHESES.md rows and family/V9_PAGE.md line
 written. 1 call, cost estimate 1.5 USD.
+
+## Campaign step H410 (29 Sept 2026, 19:41-19:26 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- f.61 L10's transcription holds: 13 of 13 signs confirmed by blind forced choice (1 vision call)
+
+`family/h410_l10_class_qa.py`, key `family/h410_items.tsv`, prompt note H410, committed before the call (2f324f03's parent); the runner looked at the
+sheets for marker placement only. L10's 13 signs (outside every Tomokiyo span; scripts/f61_positions_L10.tsv) and 16 known in-span items (2 per class)
+against 8 reference signs cut from f.61's in-span positions (EBR, PHI, VBAR_A, SBS, VBAR_B, INF, C6, CA), one blind Opus call, reply
+`family/passes/h410_reply.tsv`, result `family/h410_l10_class_qa_result.txt` (`--check` OK): **gate 16/16; L10 13/13 confirmed** (EBR CA PHI
+VBAR_A PHI SBS VBAR_B INF CA C6 SBS CA C6), including the VBAR_A / VBAR_B distinction (plain triangle vs triangle with a second stroke) at L10/4
+and L10/7. What it means: the reader codes any reading of L10 would rest on are confirmed by a second instrument with a known-answer gate; the
+H407 slips were local, not a sign that pass U2's L10 is unsound. No key, grade or reading. 1 call, cost estimate 1.5 USD.

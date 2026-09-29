@@ -1,0 +1,3 @@
+gate: 16/16 known in-span items name their class's reference (>= 14)
+L10: 1:EBR>R1(confirmed) 2:CA>R8(confirmed) 3:PHI>R2(confirmed) 4:VBAR_A>R3(confirmed) 5:PHI>R2(confirmed) 6:SBS>R4(confirmed) 7:VBAR_B>R5(confirmed) 8:INF>R6(confirmed) 9:CA>R8(confirmed) 10:C6>R7(confirmed) 11:SBS>R4(confirmed) 12:CA>R8(confirmed) 13:C6>R7(confirmed)
+read-out: confirmed 13, flagged 0, unclear 0 of 13
