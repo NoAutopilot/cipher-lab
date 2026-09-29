@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 03:15 Pacific [10:15 UTC], account 3): runner 10 reads f.61's CA as a null; V9 spawned; digest and key v7 running
+
+- No owner-account orchestrator line since 06:16; account 3 holds the role. Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: runner 10 ran H256-H262 in 20 minutes (69.50 of 600 today). Finding for the verifier, not a cell change: all 10 CA signs on f.61 have the scribe's clear letter a's form in two blind sorts (10/10 with the text a's, cipher controls 0/12), sit in the cipher hand, and take no letter in Tomokiyo's spans (4/4 at his dash), so the runner reads CA as a null drawn as an a; a rule-4 conflict is filed on C6 (pooled key e from f.101r/f.188r vs Tomokiyo's dash at all five in-span C6 on f.61); family/f61_null_band.tsv lists the 25 unread-or-null tokens by class with the evidence. VERIFY-F61-V9 session_01Vw13pSo7UNy55axC9VeowH (Fable) spawned 10:15 to audit all three. F61-FAMILY-11 (key v7 from V8) running since 10:12. If V9 endorses CA as null, the unread band drops from 27 to 17 without any letter changing: a cleaner meter, not a reading.
+- Debosnys: DEB-SWARM-MERGE-2 running since 10:12 (DIGEST-2 due within its 150-min box). Runner 3b trigger stays paused until the digest appends rows.
+- Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 02:50 Pacific [09:50 UTC], account 3 after TAKEOVER): the standby took the role; f.61 runner 10; swarm round 2 done, digest queued
 
 - TAKEOVER 09:41 UTC by the standby orchestrator on account 3 (session_0188fcSVidUc4CosHUJVxJDm): the owner-account orchestrator's last ROOM line is 06:16 (205 min), two check-ins (07:1x, 08:1x) missed, no HANDOFF line; hub-seed/STANDBY-3.md rule 'stale'. Owner-account runners are presumed stopped (runner 9 last line 06:49). This note covers the whole gap 06:16-09:50.
