@@ -1147,3 +1147,26 @@ For swarm round 2 and any later solver brief; every line is a row above with its
 | verse | couplet rhyme on the settled c4 (5/10 within, 0/9 across, p < 0.0001) | H5, H23 |
 | cribs tried, control-backed negatives | the c3 clear poem; Gaffney's Greek and English verso; the name initials letter by letter; Moore's texts wait on LOCAL-QUEUE L28 | H4, H12, H17, H20 |
 | not testable here at this N | variant families by neighbours (H47); word-end before pictograms (H32); language of the verse (H16) | H16, H32, H47 |
+
+### H50, pricing a fourth reading pass, as a brief for the orchestrator (29 Sept 2026, no calls made)
+
+Inputs: DEB-SWARM-H (ROOM 29 Sept 03:52): the Copiale method reads its control clean at 770 and 1,200 signs, fails at
+135 and at 658 in 2 of 3 windows, and fails at 8 pct noise or more at every size (crossover 3-8 pct);
+DEB-SWARM-MERGE-1 (05:20): the drafts' 14-18 pct makes every c1->c2 row and groups C and H non-tests.
+**c4 alone is the wrong page to clean.** It is the least noisy (c4 rows in ciphertext_c34_draft.tsv: 23 three-way
+splits, 2 segmentation flags, 8 verse-line-1 boxes on one witness only, of 299), but at N 263 it sits below the
+method's working length even at zero noise, so no fourth pass on c4 by itself opens a solver path.
+**c2 is the page that matters** (N 643 after punctuation and clear spans, the only page near the working length, and
+c2+c4 together about 900, above 770): its draft carries 104 three-way splits and 5 segmentation flags of 778 rows
+(the 14 pct floor), plus 25 family- or base-only settlements. Priced per Usage 6 (per pass, not per page): a fourth
+value-blind reader on the 109 split/flag boxes of c2 at about 15 per-sign crops per call = 8 calls, plus one
+reconciliation unit = 9 units at about 1.5-2 USD each (H21/H21b's realised rate) = 14-18 USD; adding c4's 33 open
+boxes = 3 more calls, 4-6 USD. Expected effect: a fourth reader matches one of three split readings on roughly
+55-70 pct of boxes (third-pass majority settled 68 pct of c2's disputed boxes), so c2's three-way count falls to about
+31-47, a disagreement floor of about 4.6-6.7 pct -- inside the 3-8 pct crossover, not below it. Two caveats that
+keep this a priced option, not a recommendation to run: (1) the floor counts only boxes where readers disagree;
+boxes where two readers agree wrongly are not in it (H26/H29: an independent reader matches ours on only 51-66 pct
+of mapped boxes, so agreed-box error is real and unmeasured); (2) H41/H46 find almost no local order in the settled
+text, which a cleaner transcription may or may not change. Suggested gate for such a brief: after the fourth pass,
+run DEB-SWARM-H's own Copiale control at c2+c4's N and the new measured floor BEFORE any target run; if the control
+does not read at that floor, stop. Grade: a costing, nothing read; status `open`.
