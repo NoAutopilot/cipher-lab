@@ -1,0 +1,10 @@
+L01: 12 signs joined
+L03: 15 signs joined
+L05: 18 signs joined
+L07: positional signs 10 vs read_call_A 11 -> not joined
+L08: positional signs 13 vs read_call_A 14 -> not joined
+L11: 12 signs joined
+C6: 3 joined, 0 next to a clear word
+CA: 5 joined, 1 next to a clear word
+PHI: 9 joined, 0 next to a clear word
+C43: 7 joined, 0 next to a clear word

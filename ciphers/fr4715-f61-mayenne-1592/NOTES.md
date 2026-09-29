@@ -4471,3 +4471,13 @@ Pre-registered (PROMPTS section H255; `family/h255_4pi_108r_l46.py`, key `family
 draft, crops images/f108g|f108h) and f.61's two 4PI, anchors 12. One Opus call (`family/passes/h255_reply.tsv`); result `family/h255_4pi_108r_l46_result.txt`
 (`--check` OK): **anchors 12/12; f.108r 4PI: A (4-head hash) 4 of 4; f.61 4PI: E 2** (the fourth read giving E). With H239, every 4PI on f.108r (9) is the 4-head
 hash; the 4-over-Pi has been seen only on f.61 (two signs, one read n by Tomokiyo). Descriptive; nothing merged.
+
+## Campaign step H253 (29 Sept 2026, 06:48-06:48 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- positions for f.61's signs (infrastructure)
+
+Pre-registered (PROMPTS section H253; ruler sheets by `scripts/f61positions_sheets.py`, not seen by the runner). Two blind Opus calls listed every sign and clear word
+per segment with its x (`scripts/h253_reply1.tsv`, `scripts/h253_reply2.tsv`, verbatim). `scripts/f61positions_score.py` (`--check` OK) joins them to read_call_A's
+order where the sign counts agree: **L01 12/12, L03 15/15, L05 18/18 (one 'dot' dropped), L11 12/12 -> 57 signs with segment and x in `scripts/f61_positions.tsv`;
+L07 10 vs 11 and L08 13 vs 14 are not joined.** Descriptive use (the dropped H251/H252 questions): **C6 3 joined, 0 next to a clear word; CA 5 joined, 1 next to a
+clear word; PHI 0/9, C43 0/7.** So f.61's C6 sits inside cipher runs like the letter signs -- no placement support for H247's word-code lead. Note: the reader calls
+the CA mark "a", and on L03 one "a" follows the clear word "Combien" (H63's finding that CA sits at text edges). For later tile work, the positions replace
+eye placement on these four lines. No reading.
