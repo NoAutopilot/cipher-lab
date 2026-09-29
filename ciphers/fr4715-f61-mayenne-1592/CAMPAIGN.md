@@ -988,3 +988,4 @@ closed:
 2026-09-29 18:07 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H386 done | 0.05 | 4STEM splits by shape like 4TRI on f.101r at small n (0.71 vs 0.74).
 2026-09-29 18:10 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H387 done | 1.5 | f.101r 4STEM: bowl tracks c/p vs a/n letters (10/11) but half its tokens carry other letters and the shape relabel adds no order gain (6/20).
 2026-09-29 18:12 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H388 done | 0.02 | passes/SHAPE_DRAFTS.md indexes the six shape-corrected drafts for V11.
+2026-09-29 18:14 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | V10 record | 0.02 | VERIFY-F61-V10's six items recorded in HYPOTHESES.md and NOTES.md; runner-14 rows H367-H387 added to HYPOTHESES.md.

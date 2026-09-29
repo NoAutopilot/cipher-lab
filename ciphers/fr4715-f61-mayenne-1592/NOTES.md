@@ -5701,3 +5701,17 @@ result `family/h387_101r_4stem_bowl_result.txt`:
 What it means for V11: the 4STEM code on f.101r behaves partly like 4TRI (where its period letter is c/p or a/n, the bowl predicts it, 10/11) and
 partly not (half its tokens carry other letters, and the shape relabel does not move the order gain). A shape clause for 4STEM is not supported by
 this leaf beyond the letter cross-tab; PROPOSAL_v8_4tri.md's 4TRI-only scope looks right. Nothing applied. 1 call, cost estimate 1.5 USD.
+
+## VERIFY-F61-V10's six items, recorded by runner 14 (29 Sept 2026, 18:14 UTC by date -u, session_01N7YQoVMZj1SfiFvc4XG9DH)
+
+AUDIT.md "What runner 13 (or its successor) should record", carried into HYPOTHESES.md (rows H338-H341, H342/H344, H353, H349) and here:
+1. H341's void covers the binned beam arm on every leaf, f.97r and recf108vg included -- not evidence either way.
+2. H342/H344: endorsed on f.97r and f.124r by V10's independent instrument; f.124r's margin on the unsplit draft is thin there (3/100), clear on the split.
+3. H353: f.108v is "a lean, instrument-dependent at 8 runs", not "a thin order signal". This also bounds H379: H379's shape-vs-permuted comparison
+   is a within-leaf comparison on the runner's instrument, and the leaf's own order signal for v7 is only a lean.
+4. H349/H355: quote HASH4 d/q and C43 a/n only; H24's f.97r pass and ZBAR's leaf do not replicate.
+5. Named limit: the H146 pool behind VBAR_A included f.97r and f.124r (contamination); V10's control (e) shows the signal survives VBAR_A = s/t.
+6. H358: f.188r specificity -- the a/n widening LOWERS the gain on a clean-4TRI leaf.
+VERIFY-F61-V11 (17:30) ruled on PROPOSAL_v8_4tri.md before runner 14's H368-H387 landed: 4TRI_NB (a token read no-bowl in a gated blind read) = a/n
+(grade C on f.101r, M where shape only); the bowl class not narrowed (stays v7 4TRI); L05/14 stays c/p M. Runner 14's later rows (H370-H387, all in
+HYPOTHESES.md) are further evidence for the VO3 lane, not a change to that ruling.
