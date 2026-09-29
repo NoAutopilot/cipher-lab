@@ -5563,3 +5563,11 @@ same number of tokens the shape split relabels, each scored with H360/H371's ord
 What it means: H360's f.124r result is not a by-product of moving tokens out of 4TRI -- the shape answers carry order information beyond the count.
 On f.97r the question stays open: the split neither helps v7 nor is it no better than random. (The as-transcribed and split figures here differ
 slightly from H371's because this script averages the three seeds.) For VERIFY-F61-V10/V11; nothing applied. Script-only.
+
+## Campaign step H378 (29 Sept 2026, 17:50-17:52 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.101r: the bowl split beats all 20 random relabellings too (script-only)
+
+`family/h374_split_randctl.py f101r` (the f101r branch added and pushed with the row before its result was read; H362 + H365 answers, seed 378;
+result `family/h374_split_randctl_f101r_result.txt`): **as transcribed 0.0823, shape split 0.1016; 20 random relabellings of 155 from the same 241-token
+bowl-read pool mean 0.0938, max 0.0997 -> shape beats 20/20, pre-stated "carries order information".** With H375 (f.124r, 20/20) and H374 (f.97r, 16/20),
+the bowl answers pick the tokens that fit v7's a/n cell better than chance on two de Diou leaves, one in-sample (f.101r, where the period gloss agrees,
+H365) and one held (f.124r); f.97r points the same way below the bar. For VERIFY-F61-V11; nothing applied. Script-only.
