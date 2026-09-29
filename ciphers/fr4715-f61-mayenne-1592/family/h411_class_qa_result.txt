@@ -1,0 +1,3 @@
+gate: 18/18 known in-span items name their class's reference (>= 16)
+targets: L01/1:CROSS>R9(confirmed) L01/2:C6>R7(confirmed) L01/7:ELOOP>NONE(confirmed) L01/8:CA>R8(confirmed) L01/9:PHI>R2(confirmed) L01/10:VBAR_A>R3(confirmed) L01/11:HASH4>NONE(confirmed) L01/12:4PI>R10(confirmed) L03/1:CA>R8(confirmed) L03/2:LOOPBAR>R12(confirmed) L03/3:ELOOP>NONE(confirmed) L05/1:LOOPSTEM1>R12(flagged LOOPBAR) L05/2:CH>NONE(confirmed) L11/8:4STEM>NONE(confirmed)
+read-out: confirmed 13, flagged 1, unclear 0 of 14

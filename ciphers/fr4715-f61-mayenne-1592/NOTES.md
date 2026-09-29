@@ -5929,3 +5929,14 @@ against 8 reference signs cut from f.61's in-span positions (EBR, PHI, VBAR_A, S
 VBAR_A PHI SBS VBAR_B INF CA C6 SBS CA C6), including the VBAR_A / VBAR_B distinction (plain triangle vs triangle with a second stroke) at L10/4
 and L10/7. What it means: the reader codes any reading of L10 would rest on are confirmed by a second instrument with a known-answer gate; the
 H407 slips were local, not a sign that pass U2's L10 is unsound. No key, grade or reading. 1 call, cost estimate 1.5 USD.
+
+## Campaign step H411 (29 Sept 2026, 19:47-19:29 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- the rest of f.61's out-of-span signs: 13 of 14 confirmed, one flag (L05/1 reads as the LOOPBAR null, as Tomokiyo's dash implies) (1 vision call)
+
+`family/h411_class_qa.py` (H410's design; key `family/h411_items.tsv`; prompt note H411), committed before the call (27b6f156's parent); placement look
+only. Twelve references from f.61's in-span positions (H410's 8 + CROSS, 4PI, C43, LOOPBAR); targets L01/1-2, L01/7-12, L03/1-3, L05/1-2, L11/8 (no
+position data exists for L02 or L04); classes with no second token on f.61 (ELOOP, HASH4, 4STEM, LOOPSTEM1, CH) pre-stated to confirm as 'none'.
+One blind Opus call, reply `family/passes/h411_reply.tsv`, result `family/h411_class_qa_result.txt` (`--check` OK): **gate 18/18; 13 of 14
+confirmed; one flag: L05/1 (reader code LOOPSTEM1, fitted cell q/s) answered R12 = LOOPBAR**, the ♀-with-bar sign Tomokiyo publishes as a null.
+Tomokiyo's S3 marks L05/1 with a dash ("---trop"), so the flag and the published markup agree: L05/1 would be a null, not a q/s letter. By the
+pre-stated rule a flag is not applied on one read: H413 re-reads it. What it means if it holds: one cross-column two-way token (H405's floor
+table) becomes a null -- the one meter move shape work can still make on f.61. No key, grade or reading. 1 call, cost estimate 1.5 USD.

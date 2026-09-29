@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 600
-spent_today_usd: 134.91
+spent_today_usd: 136.41
 spent_day: 2026-09-29
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
 crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
@@ -454,8 +454,9 @@ closed:
 | H408 | 2 | F61-SPAN-MISS-APPLY: needs H407 PASS on either part: write scripts/f61_positions_corrections.tsv (never editing the pass files) and rerun the five-span reproduction and the meter under key v8 with the corrections applied, beside the uncorrected figures (53/55; 12/59/2/26); script-only | nobody | 0.1 | done | scripts/f61_positions_corrections.tsv; five spans under key v8 53/55 -> 55/55 (permuted p95 0.436, 0/2000); meter 12/60/2/26 of 100 |
 | H409 | 3 | F61-SPAN-MISS-RECORD: notes: the two conflicts and their outcome as HYPOTHESES.md rows (rule 4 shape: Tomokiyo's letter vs the reader code, the witnesses) and a line in family/V9_PAGE.md's runner-15 section | nobody | 0.02 | done | HYPOTHESES.md rows (parts A, B) and V9_PAGE line written |
 | H410 | 1 | F61-L10-CLASS-QA: H407 found two reader slips where Tomokiyo's letters could catch them; L10's 13-sign run lies outside every span (no known answer), and any reading of it rests on the reader codes. One blind Opus forced choice: 8 reference signs from f.61's in-span positions (EBR L03/15, PHI L01/5, VBAR_A L03/6, SBS L03/14, VBAR_B L03/5, INF L01/4, C6 L03/11, CA L05/7), items = L10's 13 signs + 16 known in-span items (2 per class); gate >= 14/16 known; pre-stated per L10 position: same reference as its reader code -> confirmed, a different reference -> flagged (a re-read row), n -> unclear; transcription QA for the verifier, no key or grade change | nobody | 1.5 | done | gate 16/16; L10 13/13 signs confirmed (incl. VBAR_A vs VBAR_B); no flags |
-| H411 | 2 | F61-L01-TAIL-QA: H410's design on the rest of f.61's out-of-span signs (L01/7-12 incl. HASH4 and the unread 4PI, L02's 2 and L04's 2 signs, L11/8 4STEM), references extended to ELOOP, HASH4, C43, LOOPBAR from in-span positions; run only if H410's gate passes | nobody | 1.5 | running session_01BDhspZ38TdrrXYSvLPTpjc |  |
+| H411 | 2 | F61-L01-TAIL-QA: H410's design on the rest of f.61's out-of-span signs (L01/7-12 incl. HASH4 and the unread 4PI, L02's 2 and L04's 2 signs, L11/8 4STEM), references extended to ELOOP, HASH4, C43, LOOPBAR from in-span positions; run only if H410's gate passes | nobody | 1.5 | done | gate 18/18; 13/14 out-of-span signs confirmed (singleton classes 'none' as pre-stated); flag: L05/1 LOOPSTEM1 read as the LOOPBAR null (Tomokiyo's dash agrees) -> H413 re-read |
 | H412 | 3 | F61-CORR-PROPAGATE: script-only: any H410/H411 flag confirmed by a second read goes into scripts/f61_positions_corrections.tsv and H408's reproduction and meter are rerun | needs: H410/H411 flags | 0.1 | dropped | no flag from H410 (13/13 confirmed); H411 carries its own propagation if it flags |
+| H413 | 1 | F61-L05-1-REREAD: H411's one flag (L05/1, reader code LOOPSTEM1 q/s, answered LOOPBAR, Tomokiyo's dash) re-read before any correction: one fresh blind Opus forced choice, L05/1 at three windows (-45/+92, -60/+55, -70/+110) among H411's 18 known items and H411's LOOPBAR target L03/2 as a positive, references as H411 (R1-R12); gate >= 16/18 and L03/2 -> R12; pre-stated: L05/1 R12 at >= 2 of 3 windows -> 'L05/1 is the LOOPBAR sign' (write it to scripts/f61_positions_corrections.tsv and rerun h408 -- meter two-way -1, null +1); else 'the flag does not reproduce' (LOOPSTEM1 kept) | nobody | 1.5 | open | |
 
 ## Log
 
@@ -1030,3 +1031,4 @@ closed:
 2026-09-29 19:14 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H405/H406 done | 0.07 | floor table: the two-way band cannot move by shape work; 4 cross-column cells are the only single-cell corrections left and none would leave two-way.
 2026-09-29 19:21 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H407-H409 done | 1.6 | both span misses were transcription slips on f.61 (L07/4 is C43; pass A missed L03/16); corrected, key v8 reproduces Tomokiyo's spans 55/55.
 2026-09-29 19:26 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H410 done, H412 dropped | 1.5 | L10's 13 reader codes confirmed by blind forced choice (gate 16/16); nothing to propagate.
+2026-09-29 19:29 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H411 done | 1.5 | 13/14 out-of-span f.61 signs confirmed; L05/1 flagged as the LOOPBAR null (Tomokiyo's dash agrees); wrote H413 (re-read).
