@@ -1,0 +1,8 @@
+c1: control 18/20 PASS; answers n 1 no 44 yes 10
+c2: control 19/20 PASS; answers n 1 no 42 yes 12
+c3: control 18/20 PASS; answers n 3 no 40 yes 12
+c4: control 19/20 PASS; answers no 45 yes 10
+4TRI answers used (H359 + passing chunks): 270; n 9 no 202 yes 59
+split draft: 202 4TRI tokens relabelled C43
+order gain v7: as transcribed 0.0320/0.0325/0.0361; split 0.0709/0.0734/0.0675; H344 on split: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0074/0.0127 0.0123/0.0167 -0.0202/0.0004)
+read-out: the split raises the order gain

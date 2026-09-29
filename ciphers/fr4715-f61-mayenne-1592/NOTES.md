@@ -5374,3 +5374,19 @@ look like the no-bowl sign whose period cell is a/n (C43). This matches H358 (wi
 H218/H231's finding that the 4TRI code mixes the two signs. It is a transcription finding: the readers' 4TRI on this leaf is two signs. For the
 verifier and the transcription side; v7's cells are unchanged; f.124r's HELD gloss is untouched. Caveat: the bowl gate is on Desportes's hand
 (f.176v); de Diou's bowl may be drawn differently -- the C43 tokens' 20/20 no-bowl is the leaf's own check that 'no' is not simply the default. 1 call.
+
+## Campaign step H360 (29 Sept 2026, 16:46-16:51 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.124r's agreed 4TRI tokens bowl-read in full: three quarters are the no-bowl sign, and splitting them doubles v7's order gain (4 vision calls)
+
+`family/h360_124r_4tri_split.py`, key `family/h360_items.tsv`, prompt note H360 in `family/passes/PROMPTS_f176_f175.md` (H359's prompt verbatim),
+committed before the calls; the runner did not look at the H360 sheets. The other 220 agreed 4TRI tokens of f.124r in four blind Opus calls of 55,
+H193's 60 strips in each; replies `family/passes/h360_reply_c1..c4.tsv`; result `family/h360_124r_4tri_split_result.txt`:
+- **Gates: c1 18/20, c2 19/20, c3 18/20, c4 19/20 -- all PASS** (H193's anchors are the same 60 strips in every call; their answers agree across calls
+  except Q06/Q12/Q34/Q37, one or two calls each).
+- **All 270 agreed 4TRI (H359 + H360): no bowl 202, bowl 59, n 9.** The split draft (`passes/recf124r_split/`) relabels the 202 as C43.
+- **Order gain (H342, v7 unchanged): as transcribed 0.032/0.033/0.036 -> split 0.071/0.073/0.068, higher under all three seeds; H344 shuffled targets
+  on the split draft 0/3 -> pre-stated read-out "the split raises the order gain".**
+What it means: on de Diou's f.124r the readers' 4TRI code is mostly (about 75%) the no-bowl sign, which v7 reads a/n (C43), and reading those tokens
+so makes the leaf's sign order fit French about twice as well under v7 -- a shape answer (with its own known-answer gate) and an order statistic (with
+its own controls) agree. A **transcription correction for the f.124r draft**, not a cell change and not a reading; it also means every earlier f.124r
+count on the unsplit draft (H325/H328/H330's gloss lead, H331's per-class, H338-H349) saw two signs under one code. For the verifier. Four calls,
+cost estimate 4.0 USD.
