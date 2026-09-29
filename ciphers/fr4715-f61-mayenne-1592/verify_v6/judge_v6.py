@@ -48,7 +48,7 @@ def score(seed):
 def control_score():
     key = json.load(open(f"{HERE}/judge_v6_ctl_s6207_key.json")); key = key.get("key", key)
     rows = rd(f"{HERE}/judge_v6_ctl_s6207_verdict.tsv"); sc = {r["label"].strip(): float(r["score_0_10"]) for r in rows}
-    t = [l for l, v in key.items() if not str(v).startswith("swap")][0]
+    t = [l for l, v in key.items() if v == 0][0]
     rank = 1 + sum(v >= sc[t] for l, v in sc.items() if l != t)
     return f"control (known f.61 span lines, one-swap null, seed 6207): fitted map {t} {sc[t]:.1f}, rank {rank} of 21 -> {'PASS' if rank == 1 else 'CONTROL FAIL'}"
 def emit(txt, p):

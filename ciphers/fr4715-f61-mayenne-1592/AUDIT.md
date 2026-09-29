@@ -416,3 +416,74 @@ cells; firm letters did not increase; 4STEM, HASH4 and BETA were not narrowed).
 f.176r / fol. 177r as a same-design cipher and decipherment pair: high. VBAR_A g/t, EBR_B l/y, SBS b/o as period values carried to
 f.61: high to moderate (small known-position counts on f.61, strong on f.108r for VBAR_A). ZHOOK i/x on f.61: moderate (letter
 agreement and sequence gain, no glyph link). The meter: mechanical from the committed decode, with the four changes above.
+
+## VERIFY-F61-V6 (29 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V6 (account 3; Opus), 04:12-04:5x UTC by the container clock; separate from campaign runner 8
+(session_011Taenrv3JSdk7VjpiBjids, retired) and runner 9. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v6.md`. Working files, each
+with a `--check`: `verify_v6/`. Eight Opus subagent calls (three blind shape readers, one judge control, two judge targets; prompts
+committed first in `verify_v6/PROMPTS.md`, 919fe064 and 8e51a62a), 2 Gallica requests (canvases 327, 328; `verify_v6/requests.log`).
+Nothing edited in `family/key_period_v5.tsv`, `CAMPAIGN.md` or the runner's files. H209-H227 (the hash family) are not audited.
+
+**Claim under audit.** The 4-family shape rule (runner 8, ROOM 02:50 and 03:48 UTC): a figure-4 sign whose stem ends in a closed bowl
+below the line reads c/p, one without reads a/n, read by blind shape answer rather than by pass code; in cell form for the known-span
+lines, 4TRI c/p, C43 a/n, 4STEM a/n (`family/h219_shape_testkey.py`).
+
+### Verdict: endorse in part
+
+| leaf (letters) | runner | verifier's blind re-read on fresh crops (all three calls: runner's H193 anchor strips 18, 17, 18 of 20; the same anchors in the verifier's framing 18, 18, 18 of 20; gate 17) | verdict |
+|---|---|---|---|
+| f.176r (period decipherment, fol. 177r) | H193: bowl yes c/p 5 a/n 0; no c/p 4 a/n 23 (p 0.00063) | H193's 40 targets re-cut: same answer 39/40; bowl yes c/p 5 a/n 0, no c/p 4 a/n 24 (p 0.00053). 40 **fresh** 4-family columns of any reader code (20 c/p, 20 a/n): yes c/p 13 a/n 3, no c/p 6 a/n 15 (**p 0.0025**). Pooled: yes 18/3, no 10/39 (p 4e-7) | **endorse** as a period-attested shape distinction in Desportes's hand; not exclusive (10 of 49 no-bowl columns read c/p, 3 of 21 bowl columns a/n) |
+| f.61 (Tomokiyo's published letters) | H194: 14/14 (p 0.0005) | list method on the verifier's own line cut: the same 14 positions, bowl = 4TRI exactly, Tomokiyo c/p 5/5 and a/n 9/9 (p 0.0005); L01 again unmatched (4 listed vs 3 codes), L07 lists one 4-shape the readers never coded | **endorse** for f.61's hand: 4TRI c/p (t dropped), the one 4STEM token (L11) a/n; grade **S** (period value from another hand, linked by a blind attribute, checked against a published reading, not a period gloss of f.61) |
+| f.108r (period gloss, Tomokiyo's overlay) | H202: yes c/p 3 a/n 0, no c/p 2 a/n 11 (p 0.018), registered rule NOT met | yes 0, no c/p 5 a/n 11 (p 1): no bowl seen at any position, including the four 4TRI c/p. The f108sheetB bands clip the stem foot of some 4TRI (verifier's look after scoring) | **not endorsed**: untestable at these crops; two blind readers disagree (3 vs 0 of the 4TRI) |
+| f.108v (no letters; sequence) | H199: 4STEM yes 19 of 21 | 9 yes (4STEM 8 of 24 answered, OTHER 1), same answer as H199 on 58/74 | **not reproduced** as a shape read |
+
+**Task 2, the H193 alignment.** (`align_check.py`, `context_check.py`.) The anchors are aligned to fol. 177v from V06 on and the targets to fol.
+177r plus 177v V01-V05: no line in common; the aligning key (`key_period_v4.tsv`) holds no f.176 row; the bowl attribute was named from the
+f.176v anchors only. **No period letter was used both to set and to test the rule.** Key v4's 4TRI set is {a, c, n, p, t}, so the DP scores c/p
+and a/n alike at a 4TRI column and cannot steer the split. Re-aligning with every 4-family class removed from the key moves 10 of the 40 targets
+and leaves 4 unpaired (Fisher p 0.26), but that alignment drifts about 45 letters on L31-L32 once a fifth of the anchoring signs are blank, so
+it is the worse alignment, not a correction. Word context under the runner's alignment settles the five bowl/c-p positions: "les [c]hoses",
+"aue[c] sa saincteté", "l'obsta[c]le", "s[ç]ait", "de [c]este matiere"; two of the four no-bowl c/p are genuine ("de [p]auureté", "au[c]un").
+**Alignment confirmed at every position that carries the result.**
+
+**Task 3, H201 and H208 re-scored** with the verifier's seeds and a null of random relabels holding the yes/no counts (19 c/p of the 68
+answered f.108v 4-family columns). H201 (`rescore_h201.py`, shuffle seeds 6000-6019, 1000 relabels seed 6202): the runner's bowl labelling
+0.278 ranks 1 of 1001 (best random 0.243) and beats the readers' cells 30/30 -- **reproduced against that null**. But a code-level labelling
+(4STEM c/p, every other 4-family a/n, agreeing with the bowl answers on 64 of 68 columns) scores 0.290, and the bowl labelling beats it 0 of 30.
+H208 (`judge_v6.py`; control seed 6207 PASS, fitted map 6.5 rank 1 of 21): runner's bowl labelling 8.0 and 8.0, above every one of 17
+same-count random relabels (max 5.0 and 3.5) in both seeds -- **reproduced against that null**; code-level 9.0 and 7.0; the verifier's own
+bowl answers 6.5 and 4.0; pass codes 4.0 and 2.5. Both judge calls read their sets file in two pages (two Reads of the one file; not voided).
+So f.108v's sequence evidence says **the H59 passes' 4STEM is the c/p sign on f.108v**; it does not separate a shape read from that code swap,
+and the shape read itself did not reproduce.
+
+**Test key re-run.** `h219_shape_testkey.py` reproduces byte-identical: f.61 53/55 under v5 and under the test key; f.108r 74/84 both, with
+H202 S14 the one known exception. The cells lose no known letter.
+
+**What should merge (for the orchestrator; key v5 not edited).** Into the f.61 reading: 4TRI **c/p** (drop t) and f.61's single 4STEM token (L11)
+**a/n**, grade S, key source `period` (fr.3984 f.176r / fol. 177r) linked by the blind bowl attribute. Not as a pooled v6 cell: **4STEM a/n**
+(f.108v's 4STEM is the c/p sign by sequence; a code conflict between leaves, rule 4, not settled by majority), nor the general rule "read the
+4-family by blind shape answer instead of pass code" on f.108r/f.108v/f.101r, which a second blind reader did not reproduce off Desportes's
+leaves and f.61. C43 a/n unchanged.
+
+**f.61 meter under key v5 plus the endorsed part** (`meter_v6.py`): **firm 12 / two-way 57 / wider 5 / unread-or-null 25** of 99 (v5: 12 / 50 /
+12 / 25), with L01's 4TRI taken at code level (every f.61 4TRI tested by shape, 5 per reader, was the bowl sign); holding that one token back
+because neither session matched it by shape: 12 / 56 / 6 / 25. Still wider than two: 4PI 2, OTHER 2, HASH4 1.
+
+### Novelty
+
+None to class: no passage of f.61r outside Tomokiyo's spans is read by these values, and the firm count does not move. No
+SECOND-OPINIONS-QUEUE.tsv row.
+
+**Safe sentence.** "In Desportes's 1593 letter and its period decipherment, a figure-4 sign with a closed bowl below the line stands for c or p
+and one without mostly for a or n; the same shape distinction on fr. 4715 f.61r narrows its 4TRI signs to c/p, leaving f.61r at 57 two-way
+positions out of 99."
+
+**Unsafe sentence.** "The 4-family is read by shape across all the Mayenne leaves" (f.108r and f.108v did not reproduce under a second blind
+reader), or any sentence giving f.61's 4TRI a single letter.
+
+### Confidence
+
+The bowl/c-p association on f.176r: high (two blind readers, a fresh any-code sample, alignment checked by word context). The narrowing on
+f.61: moderate (five 4TRI tokens, shape = code on all 14 matched positions in both sessions, agreement with a published reading). The shape
+rule off those two leaves: not shown.

@@ -1,0 +1,3 @@
+seed 6208: T 8.0, V 6.5, CODE 9.0, R 4.0; random relabels (17, same yes/no counts) max 5.0 median 3.0
+  T rank among all 21 2; among T + 17 random 1 of 18 (ties against)
+  all: CODE:9.0 T:8.0 V:6.5 random7:5.0 random14:4.5 random8:4.0 random2:4.0 random10:4.0 R:4.0 random13:3.5 random3:3.0 random9:3.0 random12:3.0 random4:2.5 random17:2.5 random15:2.0 random6:2.0 random5:2.0 random1:1.5 random16:1.0 random11:0.5

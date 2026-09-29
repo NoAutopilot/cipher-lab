@@ -1,0 +1,1 @@
+control (known f.61 span lines, one-swap null, seed 6207): fitted map SET-08 6.5, rank 1 of 21 -> PASS

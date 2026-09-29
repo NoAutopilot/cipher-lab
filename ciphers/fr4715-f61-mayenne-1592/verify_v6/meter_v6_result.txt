@@ -1,0 +1,6 @@
+v5: 99 signs: firm 12 / two-way 50 / wider 12 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 4STEM=n/a/c/e:1 4TRI=c/p/t:6 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
+v5 + 4TRI c/p, 4STEM a/n (A: code level on f.61): 99 signs: firm 12 / two-way 57 / wider 5 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
+v5 + (B: shape-read tokens only): 99 signs: firm 12 / two-way 56 / wider 6 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 4TRI=c/p/t:1 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
