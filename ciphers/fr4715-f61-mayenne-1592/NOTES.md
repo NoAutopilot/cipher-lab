@@ -5861,3 +5861,28 @@ What it means: a second, different look (after H71's free sort) finds no e/r sub
 composite of other hands. **PHI e/r stays two-way on f.61 by design**: its 17 tokens (11 of Tomokiyo's 13 lettered ones are e) can narrow only by a
 reading with a control, not by shape. The same argument limits the a/n cell (H403 dropped with H402: the design did not open on this hand, and H73/H24b
 already failed on the 43 glyph). So the meter's two-way band on f.61 is at its shape floor apart from the 4-family splits already made. Cost ~0.1.
+
+## Campaign step H404 (29 Sept 2026, 19:07-19:12 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- key hunt: all 119 BnF hits read; one Mayenne-chancery lead (fr.3980 f.10), not f.61's design
+
+Campaign rule (a), new material without a person. BnF Archives et manuscrits (plain POST `resultatRechercheSimple.html`, cookie jar, descriptive UA,
+>= 2 s apart): the POST response for H143's query "Mayenne chiffre déchiffrement" now carries **all 119 hits on one page** (H143 read 50; the
+`nbResultParPage=100` GET returns "Aucun résultat", as the host table warns), and four spelling variants were added: "duc du Maine chiffre
+déchiffrement" (1: fr.3641 no.71, known), "Mayenne déchiffré" (2), "du Mayne chiffre" (11), "Maienne chiffre" (1: fr.2751, known). Parsed
+(scratch): of the 119, 21 name Mayenne/Maine/Diou/Lorraine; every one is already on file (the fr.3982-3984 family leaves; fr.3641 nos.21/59/68/71,
+figure ciphers; fr.2751 f.116, a clear copy, H144; fr.4699 ff.37/41, not digitised; fr.4715's 1585-86 Mayenne-to-Nevers letters, an earlier
+cipher, NOTES "the finding aids") **except one: Français 3980, fol. 10 (item 6, ark:/12148/cc504266/cd0e10351), "Lettre, avec chiffre et
+déchiffrement, de CHARLES DE LORRAINE [duc DE MAYENNE]... à monsieur l'evesque de Plaisance [Filippo Sega, the legate]... De Soissons, le XIme
+jour de janvier 1591"** (item 7 begins at fol. 15). It is digitised (Gallica SRU: btv1b90605458, 682 canvases, no folio labels): by eye on 500-px
+thumbnails, canvas 17 = the Provins capitulation (item 5, fol. 9), **canvas 19 = fol. 10r, cipher runs after two clear lines; canvas 21 = a
+clear page ("que l'on evitast l'effort du Roy de Navarre ...", the decipherment or the letter's clear part); canvas 23 = fol. 13, a full cipher
+page**. One 2000-px look at canvas 23: the signs are **Arabic figures (5, 4, 6, 3, 0, 1, 9) mixed with symbols (phi, delta, a lemniscate,
+hash, triangles, v)** -- a larger inventory than the polyphonic family's ~21 kinds on f.61 and with figures (0, 1, 3, 5, 9) that none of the
+family's classes contain. Tomokiyo (sources/cryptiana/web/league.htm, "BnF fr.3980") treats "another cipher used in letters between the Duke of
+Mayenne and Sega in the same month" as a separate cipher, reconstructed in his Cryptologia article (doi 10.1080/01611194.2017.1370038), and his
+mayenne.htm family list does not include fr.3980. **So: a lead, most likely not f.61's key family (the specialist's own classification plus the
+runner's look; no controlled design check was run).** Settling it would take a design check with known answers (f.61-family tiles vs fr.3980
+tiles, H310's forced-choice format); not worth a call while the specialist's classification stands. Nothing else in the 119 is new.
+Other Mayenne-side items found for the record (not leads for this key): fr.3980 nos.21-22 (Mayenne to Sega, 19 Jan, no cipher in the aid),
+fr.3977 no.47 (news of Mayenne, 1589, to Maumarché), fr.3632 no.64 (Picardie, Nevers papers). Requests: archivesetmanuscrits 12 (home, 5 POST,
+5 GET, 1 item page), Gallica 7 (SRU 1, manifest 1, thumbnails 4, one 2000-px canvas 1); `family/requests.log`. Images in scratch only (sha1 in
+the log). No key, no reading. Cost ~0.6.
