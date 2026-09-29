@@ -157,3 +157,16 @@ nearest to it)" and tiles T by items M001-M230 (list file in scratch).
 CONTROL GATE: >= 17 of 20 anchors pick the agreed code, else CONTROL FAIL and stop. Then `h189_mark.py merge` -> `passes/f179_signsC_L01-L08.tsv` and
 `build_f179_key.py L01-L08 --start R03 --adj`: GATE margin >= +0.10. If this control also fails, fol. 179 is closed for this campaign at
 "untested at this transcription", and no fifth approach is briefed without new material.
+
+## H193 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+`h193_attr.py tiles`: 60 marked strips (10 f.176v CP anchors = agreed 4TRI paired with c/p, 10 f.176v AN anchors = 4TRI|C43 split paired with a/n, 40
+f.176r agreed-4TRI targets), seed 193, key `h193_items.tsv`. The runner looked only at the 20 anchors by group (`<scratch>/h193/anchors_by_group.jpg`):
+CP signs are a 4 whose stem runs down below the line and ends in a closed b-like bowl; AN signs are a 4 with a small r-like tail at its right on the
+line, no bowl below. Attribute fixed now (`h193_yes_group.txt` = CP):
+1 Opus vision call, inline reply: "You are a blind shape reader. Use no tool but your image reader on the sheets named; run no command, write no file.
+Each item on <h193/sheet_01..03.jpg> (Q01-Q60, 20 per sheet) is a strip of a cipher row with a red triangle under one sign; look only at the sign
+directly above the triangle. Question: does that sign's vertical stem run down below the writing line and end in a closed loop or bowl (like the
+bottom of a 'b')? Answer yes or no; if the sign above the triangle cannot be told, answer n. No letters are involved. Reply inline ONLY with a TSV
+block 'item<TAB>answer', one row per item, nothing else."
+GATE: >= 17 of 20 anchors answer in their group's direction (CP yes, AN no), else CONTROL FAIL and stop. Then f.176r's 40 targets are split by the
+answer and counted {c,p} vs {a,n} under fol. 177r (Fisher exact test), descriptive of whether the attribute carries the letter split on a second leaf.
