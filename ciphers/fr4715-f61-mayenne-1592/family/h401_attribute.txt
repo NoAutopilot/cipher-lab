@@ -1,0 +1,3 @@
+none visible
+yes_group: none
+# H401, runner 15, 19:04 UTC: looked at anchors_e.jpg (13) and anchors_r.jpg (7) only. Both groups show the same trefoil / stacked double loop on a slanted descending stem, with the same range of variants (three-loop heads r1-r3 like e1-e5; two stacked loops with a small left stroke at the junction r4-r7 like e7-e12). No yes/no attribute separates the groups to the eye; per the pre-stated rule H402 is dropped.

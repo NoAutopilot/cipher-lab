@@ -5847,3 +5847,17 @@ What it means: f.97r's split, now bowl-read over the whole leaf, holds on the in
 v8's 4TRI_NB class on a third de Diou leaf (V11 audited only f.101r and f.124r; runner reads of f.97r are not in v8). No f.61 position is touched
 (H396). For LANE VO3; no key change. 1 call, cost estimate 2.5 USD.
 (Script fix after the run, disclosed: `--check` was lost because h397.leaves() rewrites sys.argv; CHECK is now read at import; result file unchanged, `--check` OK.)
+
+## Campaign step H401 (29 Sept 2026, 19:08-19:04 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- e vs r under PHI in f.61's own hand: no attribute visible (the runner's look; H402 dropped)
+
+Why this was worth a step: of f.61's 59 two-way tokens, only the e/r (PHI 17) and a/n (C43 9, 4STEM 1, 4PI 1) cells are pairs the published table
+draws as TWO symbols (keys/key_mayenne_1592.tsv); every other pair (b/o, c/p, d/q, g/t, h/u, i/x, l/y, m/z) is one shared symbol by design, so no
+shape test can narrow it -- only a reading can. The free sort that failed on e/r (H71) is a retired instrument; this used H193's design.
+`family/h401_er_attr.py` (committed before the look, e7327bb0's parent): the 20 f.108r PHI tokens paired with a period overlay letter (h202's alignment:
+e 13, r 7; f.61's hand), cut as H202, shown as two group sheets. The runner looked at those two sheets only and wrote `family/h401_attribute.txt`:
+**none visible** -- both groups are the same trefoil / stacked double loop on a slanted stem, with the same variants in each (three-loop heads r1-r3 as
+e1-e5; two stacked loops with a small left stroke at the junction r4-r7 as e7-e12). Per the pre-stated rule **H402 is dropped** (no call spent).
+What it means: a second, different look (after H71's free sort) finds no e/r sub-form in f.61's hand; the table's two drawings are Tomokiyo's
+composite of other hands. **PHI e/r stays two-way on f.61 by design**: its 17 tokens (11 of Tomokiyo's 13 lettered ones are e) can narrow only by a
+reading with a control, not by shape. The same argument limits the a/n cell (H403 dropped with H402: the design did not open on this hand, and H73/H24b
+already failed on the 43 glyph). So the meter's two-way band on f.61 is at its shape floor apart from the 4-family splits already made. Cost ~0.1.
