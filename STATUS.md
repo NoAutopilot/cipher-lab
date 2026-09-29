@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 06:25 Pacific [13:25 UTC], account 3): Debosnys needs better pixels; museum request drafted; f.61 held-leaf check
+
+- Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until the Fable reset 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
+- Debosnys (the owner's point: transcription is the blocker): H63 (the H61 folds on a fresh known-answer page: 7.3 pct, they do not carry), H57 (tilde on every nasal: not supported) and H65 (a per-glyph classifier on our own glyph bitmaps: R2-2's page stays at 15.6 pct) all meet the same floor as the readers. Every route on the public images is spent; runner 3b retired (no open rows, 590k), trigger disabled. DEB-HIRES-REQ drafted the reply in the museum thread asking for 600 dpi scans of the four cryptogram leaves and the c4 reverse under the same restricted terms (outreach/debosnys-museum-hires.md, ASKS 100); OUT-CHECK-DEB-HIRES session_01VmkYWhw4UjDG4QdKop8vfe runs the gate-7 fact check now; the owner sends. Nothing read.
+- f.61: runner 12 (Opus 5.5) ran H302-H329: LL reads as a doubled l at n = 1 (a letter-shaped null like CA and CH); f.211r's one cipher run has 16 of 18 signs in key v7's classes; a held-leaf check on f.124r's gloss puts 148 letters in v7's cells against a frequency-matched p95 of 143 (grade M, thin margin: evidence for the cells as a set, not a reading). L02's opening mark is left to an eye pack. Blocker unchanged: the 59 two-way choices and 26 unread-or-null; ASKS 88/89/93/99.
+- Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 05:40 Pacific [12:40 UTC], account 3): Fable out on account 3 until 3 Oct; orchestrator and f.61 runner restarted on Opus 5.5
 
 - Account 3's Fable seven-day limit read rejected at 12:2x UTC (resets 01:00 Pacific [08:00 UTC] 3 Oct). The orchestrator ORCH-STANDBY-3 and f.61 runner 11 both failed at their next turn; the dispatcher restarted both on Opus 5.5 at 12:31: orchestrator session_0198Cv8ypBfBVfRToKVWx33M (check-in trig_011soLaGfrH2xpwS1zEioKdn :12, standby trig_01Qh6R4RC6bTmLCCaWUCMJR1 :40) and runner 12 session_012eShPsWwW3quuzzUNV7nW5 (trig_01QWFCgBhYExfaw1Vc3zKVtc :50, next row H302). The 12:1x check-in did not run; this note covers 11:15-12:40. Everything on account 3 runs on Opus 5.5 until the reset; five-hour limit reads allowed. Counts 21 / 2 / 1 / 6, unchanged.
