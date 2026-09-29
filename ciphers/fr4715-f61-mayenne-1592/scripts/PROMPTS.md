@@ -631,3 +631,8 @@ answer form 'Y01<TAB><group letter or unclear>', Y01 to Y11.
 
 Sheet <scratch>/h254/sheet_01.jpg (family/h254_zhook_108r.py tiles; key family/h254_items.tsv; 19 tiles U01-U19: f.108r ZHOOK 7, anchors 4-head 6 + 2# 6).
 Sheet not seen. Prompt: H233's verbatim with 'h254/sheet_01.jpg', '19 numbered tiles (U01-U19)', answer form 'U01<TAB>A', U01 to U19.
+
+## H255 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r L04-L06 4PI by shape, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h255/sheet_01.jpg (family/h255_4pi_108r_l46.py tiles; key family/h255_items.tsv; 18 tiles U01-U18). Sheet not seen. Prompt: H233's verbatim with
+'h255/sheet_01.jpg', '18 numbered tiles (U01-U18)', answer form 'U01<TAB>A', U01 to U18.
