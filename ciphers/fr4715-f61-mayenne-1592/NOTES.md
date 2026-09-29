@@ -3808,3 +3808,12 @@ INF u (0.69 / 0.70), where the wrong text's u share is 0.30/0.31 because u is v4
 on f.176v: the reader-code swap H190 found), C43/4PI/4STEM (codes absent or rare on one leaf).
 This agrees with VERIFY-F61-V5's endorsement (VBAR_A g/t, EBR_B l/y, SBS b/o, ZHOOK i/x) on a second leaf the verifier did not see, and adds VBAR_B s
 (v4's s already). For the verifier and F61-FAMILY-9; nothing merged.
+
+## Campaign step H191 (29 Sept 2026, 01:19-01:20 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- the 4-family on f.61 (script-only, descriptive)
+
+`family/h191_4fam_f61.py` (result `family/h191_4fam_f61_result.txt`, `--check` OK), the H181/H187 alignment. At f.61's own 4-family positions inside
+Tomokiyo's spans, his letters by the f.61 readers' code: **4TRI c 3, p 3 (c/p 6 of 6); C43 a 7, n 2 (a/n 9 of 9)**; 4STEM one dash, 4PI n 1, HASH4 none.
+The C43 result is built in (v4n176's C43 set is a/n). The 4TRI result is informative: its set also admits a, n and t, yet his letters there are all
+c or p (exact test 6/0 vs 0/9: p about 0.0002, small N). So on f.61, as on f.176v (H190), the readers' 4TRI and C43 look like the c/p sign and
+the a/n sign; on f.176r the readers' codes did not separate them. Descriptive, for the verifier: whether f.61's 4TRI can be narrowed to c/p
+(v4: a/c/n/p/t) is theirs. His letters come from his own table. Nothing merged.

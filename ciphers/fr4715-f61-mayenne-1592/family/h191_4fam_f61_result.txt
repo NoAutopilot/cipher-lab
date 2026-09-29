@@ -1,0 +1,26 @@
+span	line	pos	class	tomokiyo
+S1	L01	3	C43	a
+S1	L01	6	4TRI	c
+S2	L03	7	4TRI	c
+S2	L03	8	C43	a
+S2	L03	10	4TRI	p
+S2	L03	13	C43	a
+S3	L05	6	4TRI	p
+S3	L05	9	C43	a
+S3	L05	11	C43	a
+S3	L05	13	C43	n
+S3	L05	14	4TRI	c
+S4b	L08	2	C43	a
+S4b	L08	7	C43	a
+S4b	L08	11	4TRI	p
+S5	L11	5	C43	n
+S5	L11	8	4STEM	-
+S5	L11	9	4PI	n
+
+class	tomokiyo letters
+4TRI	c3 p3
+C43	a7 n2
+4STEM	-1
+4PI	n1
+HASH4	
+c/p vs a/n by code: 4TRI 6/0; C43 0/9; 4STEM 0/0; 4PI 0/1; HASH4 0/0
