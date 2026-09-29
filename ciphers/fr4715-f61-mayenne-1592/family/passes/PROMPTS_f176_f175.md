@@ -191,3 +191,21 @@ i signs are the bare crossed double stems with no 4-head (H162's forms). Attribu
 (H01-H60) is a strip of a cipher row with a red triangle under one sign; look only at the sign directly above the triangle. Question: is there a
 figure-4 head (an angular 4) standing on top of crossed vertical stems in that sign? Answer yes or no; if it cannot be told, answer n. No letters are
 involved. Reply inline ONLY with a TSV block 'item<TAB>answer', one row per item, nothing else." GATE anchors >= 17/20; then f.176r targets i vs d/q.
+
+## H199 (runner 8 session_011Taenrv3JSdk7VjpiBjids, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H193's bowl question on fr.3983 f.108v's 4-family (f.61's hand). Script `h199_bowl_108v.py` and key `h199_items.tsv` (74 targets: every H59 draft
+column with a 4-family code in the reconciled draft, pass A or pass B; reconciled C43 41, 4STEM 25, 4TRI 6, OTHER 1, ZHOOK 1) committed with this
+section. Targets are cut from the native (images/3983_f108v.jpg) because the 3x crops clip the bowl; the marker for these is ABOVE the strip,
+pointing down, because under the strip sits the leaf's interlinear gloss. Disclosure: the runner looked at target sheets 01 and 04 for legibility
+and marker placement (a few markers sit about half a sign off, e.g. R72, R74); the question is H193's, unchanged. The H193 strips were regenerated
+from the natives (canvases 327, 328; hashes as logged) and h193_items.tsv reproduced byte-identical.
+1 Opus vision call, inline reply: "You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file.
+Part 1: each item on <h193/sheet_01..03.jpg> (Q01-Q60, 20 per sheet) is a strip of a cipher row with a red triangle UNDER one sign; look only at the
+sign directly above that triangle. Part 2: each item on <h199/sheet_01..04.jpg> (R01-R74) is a strip of a cipher row with a red triangle ABOVE the
+strip, pointing down at one sign of the cipher row (the upper row of writing; any smaller writing lower in the strip is not the sign); look only at
+the sign the triangle points to. Question for every item: does that sign's vertical stem run down below the writing line and end in a closed loop
+or bowl (like the bottom of a 'b')? Answer yes or no; if the marked sign cannot be told, answer n. No letters are involved. Reply inline ONLY with a
+TSV block 'id<TAB>answer', rows Q01..Q60 then R01..R74, nothing else."
+GATE: repeat control >= 17 of the 20 f.176v anchors in their group's direction (CP yes, AN no), else CONTROL FAIL and targets not scored. Read-out:
+bowl answers by reconciled / A / B code; "the readers' split follows the bowl on f.108v" iff reconciled 4TRI yes share >= 0.8 and C43 no share
+>= 0.8 (n left out). Descriptive, for the verifier; no key change.
