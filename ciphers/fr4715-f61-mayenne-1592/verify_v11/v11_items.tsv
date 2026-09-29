@@ -1,0 +1,113 @@
+call	id	role	leaf	line	pos_or_seg	x	group	repeat_of
+c1	ABG	anchor	176v	L25	s1	1030	CP	
+c1	CUD	target	f101r	L23	40	3050		
+c1	YAF	target	f101r	L27	7	1320		
+c1	DZS	target	f101r	L12	67	4095		
+c1	RBV	target	f101r	L37	33	2500		
+c1	SQC	target	f101r	L11	54	3655		
+c1	TYN	anchor	176v	L37	s1	790	CP	
+c1	VTB	anchor	176v	L08	s2	995	AN	
+c1	RDC	target	f101r	L32	17	1825		
+c1	CRD	anchor	176v	L05	s1	430	AN	
+c1	IUX	target	f101r	L18	23	2200		
+c1	AEI	target	f101r	L36	30	2600		
+c1	FLK	target	f101r	L32	17	1825		RDC
+c1	KJE	anchor	176v	L06	s2	870	AN	
+c1	ZBL	target	f101r	L29	43	3360		
+c1	AEA	anchor	176v	L10	s1	805	CP	
+c1	UDH	target	f101r	L33	8	1285		
+c1	OVH	anchor	176v	L35	s1	740	CP	
+c1	KXL	target	f101r	L19	29	2505		
+c1	MCH	target	f101r	L11	54	3655		SQC
+c1	YTX	target	f101r	L13	13	1650		
+c1	XVN	target	f101r	L09	40	3110		
+c1	WJV	target	f101r	L13	26	2370		
+c1	AOD	target	f101r	L23	5	1250		
+c1	YPD	target	f101r	L08	39	3135		
+c1	KTQ	target	f101r	L13	13	1650		YTX
+c1	DYN	anchor	176v	L32	s1	1045	CP	
+c1	YVI	target	f101r	L37	33	2500		RBV
+c1	VXW	target	f101r	L09	1	1045		
+c1	XBE	anchor	176v	L13	s2	1075	AN	
+c1	PWB	target	f101r	L19	12	1642		
+c1	SJL	target	f101r	L43	31	2425		
+c1	NFX	anchor	176v	L13	s1	380	AN	
+c1	JXM	target	f101r	L19	12	1642		PWB
+c1	DJD	target	f101r	L13	26	2370		WJV
+c1	WVX	target	f101r	L33	65	4260		
+c2	PGF	target	f101r	L29	26	2425		
+c2	QVU	target	f101r	L06	32	2670		
+c2	NSM	target	f101r	L10	44	3160		
+c2	LRT	target	f101r	L32	4	1140		
+c2	IBV	anchor	176v	L06	s2	1130	AN	
+c2	TMF	target	f101r	L11	61	3960		
+c2	JZH	target	f101r	L12	33	2540		
+c2	PHL	target	f101r	L16	61	4025		
+c2	CFT	target	f101r	L32	2	1030		
+c2	BMR	target	f101r	L27	33	2870		
+c2	JNM	target	f101r	L46	34	2755		
+c2	GYL	target	f101r	L25	43	3155		
+c2	MON	target	f101r	L32	2	1030		CFT
+c2	PIX	target	f101r	L06	32	2670		QVU
+c2	HBZ	target	f101r	L16	34	2660		
+c2	IYH	target	f101r	L28	59	4110		
+c2	IYV	target	f101r	L24	10	1445		
+c2	INW	target	f101r	L22	36	2615		
+c2	UBV	target	f101r	L46	15	1725		
+c2	BDE	target	f101r	L15	54	3615		
+c2	PLU	target	f101r	L12	33	2540		JZH
+c2	LZS	anchor	176v	L12	s2	830	AN	
+c2	WAX	anchor	176v	L27	s3	345	CP	
+c2	CPZ	target	f101r	L28	59	4110		IYH
+c2	XMB	anchor	176v	L03	s1	90	AN	
+c2	PDR	anchor	176v	L06	s1	400	CP	
+c2	GFE	anchor	176v	L08	s1	1225	CP	
+c2	LTR	anchor	176v	L14	s3	145	AN	
+c2	UFY	anchor	176v	L21	s1	620	CP	
+c2	RCP	target	f101r	L19	20	2025		
+c2	ZUW	target	f101r	L15	54	3615		BDE
+c2	NYT	target	f101r	L20	18	1860		
+c2	EKL	target	f101r	L11	61	3960		TMF
+c2	DTS	anchor	176v	L09	s1	290	AN	
+c2	SCO	target	f101r	L10	9	1410		
+c2	LCX	anchor	176v	L09	s2	280	CP	
+c3	PUS	target	f124r	L12	49	3620		
+c3	YMF	target	f124r	L34	26	2400		
+c3	OGH	target	f124r	L28	26	2365		
+c3	HDI	target	f124r	L17	4	1190		
+c3	SDH	target	f124r	L04	51	3640		
+c3	UHS	target	f124r	L13	3	1155		
+c3	LWH	target	f124r	L21	48	3515		
+c3	HCS	target	f124r	L28	26	2365		OGH
+c3	VQO	target	f124r	L13	56	3905		
+c3	ECV	target	f124r	L10	20	1970		
+c3	GJY	target	f124r	L25	8	1425		
+c3	EXN	anchor	176v	L06	s2	1130	AN	
+c3	MOW	anchor	176v	L25	s1	1030	CP	
+c3	RKK	target	f124r	L22	49	3775		
+c3	HFK	anchor	176v	L13	s1	380	AN	
+c3	QEV	anchor	176v	L10	s1	805	CP	
+c3	WCV	target	f124r	L37	45	3560		
+c3	YVZ	anchor	176v	L08	s2	995	AN	
+c3	PNS	target	f124r	L25	8	1425		GJY
+c3	PTK	target	f124r	L39	44	3570		
+c3	YYV	target	f124r	L39	44	3570		PTK
+c3	BWK	target	f124r	L31	58	4230		
+c3	LPX	target	f124r	L36	23	2445		
+c3	SGG	target	f124r	L22	19	2120		
+c3	IRO	target	f124r	L06	18	1940		
+c3	XGJ	target	f124r	L19	13	1700		
+c3	YZK	target	f124r	L20	37	2950		
+c3	LSS	anchor	176v	L06	s1	400	CP	
+c3	JGB	anchor	176v	L37	s1	790	CP	
+c3	XNA	anchor	176v	L13	s2	1075	AN	
+c3	BMF	target	f124r	L16	54	3860		
+c3	GVP	target	f124r	L32	62	4370		
+c3	KZO	anchor	176v	L12	s2	830	AN	
+c3	RAO	target	f124r	L23	1	1065		
+c3	HYS	target	f124r	L13	56	3905		VQO
+c3	YUY	target	f124r	L19	21	2100		
+c3	OZA	target	f124r	L19	31	2655		
+c3	LVL	target	f124r	L06	18	1940		IRO
+c3	JEZ	anchor	176v	L09	s2	280	CP	
+c3	THM	target	f124r	L12	49	3620		PUS
