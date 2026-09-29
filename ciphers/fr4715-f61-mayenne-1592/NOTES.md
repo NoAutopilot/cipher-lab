@@ -4955,3 +4955,10 @@ both passes and the reconciler reading from `scripts/f61_atlas.tsv`, whose class
 supported second LL token in this hand: one low-confidence code by one pass on a half-cut low-resolution band. The vision half of the row (H310's forced
 choice on that tile) is not run: a tile with the lower half of the sign missing would test nothing. Correction carried into
 `family/h305_ll_census.tsv`'s last line. LL on f.61 stays n = 1. No call, no value.
+
+## Campaign step H313 (29 Sept 2026, 13:00 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- eye pack for L02's opening mark (script-only)
+
+`images/person_pack_L02/` (`L02_mark_pack.jpg`, 109 KB, and `README.md`), cut by `family/h313_eye_pack.py` at H311's crop geometry: the two targets
+(f.61's LL and L02's opening mark), f.61's clear 'Il' x2 and 'ella', and two doubled l's from fr.3983 f.211r, labelled. The README states the one
+question (pass 1 LL vs pass 2 'Il') and the five instruments' results (H302/H304/H309/H310/H311), none of which decides it. The runner viewed the
+finished pack to check the crops; no judgement of the runner's is recorded as a result. For the verifier lane (ROOM post). No call.
