@@ -98,13 +98,14 @@ def tiles(scratch):
         rows = [dict(t, dup="") for t in its] + [dict(t, dup="dup") for t in dup]; random.Random(seed).shuffle(rows); ims = []; first = {}
         os.makedirs(f"{scratch}/{tag}", exist_ok=True)
         for n, t in enumerate(rows, 1):
+            if not t["dup"]: first[(t["leaf"], t["line"], t.get("seg"), t["x"])] = f"{'V' if tag == 'setD' else 'W'}{n:03d}"
+        for n, t in enumerate(rows, 1):
             tid = f"{'V' if tag == 'setD' else 'W'}{n:03d}"; w, mx = cut(t, nat, bands)
             c = Image.new("RGB", (370, 420), "white"); d = ImageDraw.Draw(c); c.paste(w, (5, 22)); y = 22 + w.height; mx += 5
             d.polygon([(mx - 8, 2), (mx + 8, 2), (mx, 18)], fill=(220, 0, 0)); d.polygon([(mx - 8, y + 19), (mx + 8, y + 19), (mx, y + 3)], fill=(220, 0, 0))
             d.text((315, 4), tid, fill=(0, 0, 0)); ims.append(c)
             k = (t["leaf"], t["line"], t.get("seg"), t["x"])
-            if t["dup"]: dof = first[k]
-            else: first[k] = tid; dof = ""
+            dof = first[k] if t["dup"] else ""
             key.append("\t".join([tag, tid, t["kind"], t["leaf"], t["code"], t["line"], str(t["ref"]), t["letter"], t["cls"], t["status"], t.get("group", "-"), dof]))
         for s0 in range(0, len(ims), 20):
             sh = Image.new("RGB", (4 * 370, 5 * 420), "white")
