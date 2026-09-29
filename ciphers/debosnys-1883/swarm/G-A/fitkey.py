@@ -11,6 +11,8 @@ H = os.path.dirname(os.path.abspath(__file__)); W = os.path.join(H, 'work'); ROO
 ap = argparse.ArgumentParser(); ap.add_argument('source'); ap.add_argument('out')
 ap.add_argument('--alpha', type=int, default=26); ap.add_argument('--R', type=int, default=24)
 ap.add_argument('--it', type=int, default=10000000); ap.add_argument('--seed', type=int, default=7)
+ap.add_argument('--fold', default='', help="'base': real signs folded to inventory_settled.tsv's base column before fitting, the key expanded back "
+                'to every member sign; \'random:<REAL>\': a control folded into random groups with the same group-size profile as <REAL> (real:c1|c2) base fold (matched null)')
 a = ap.parse_args()
 kind, *rest = a.source.split(':')
 if kind == 'control':
@@ -22,6 +24,23 @@ elif kind == 'real':
     sys.path.insert(0, os.path.join(ROOT, 'scripts')); from settled_lines import settled_lines
     toks = [s for l in settled_lines(ROOT, rest[0], drop_clear=True).values() for s in l if s not in ('_', 'MULTI')]
 else: sys.exit('bad source')
+raw = toks
+if a.fold:
+    import random, collections
+    inv = {r['sign']: r['base'] for r in csv.DictReader(open(os.path.join(ROOT, 'inventory_settled.tsv')), delimiter='\t')}
+    if a.fold == 'base':
+        fmap = {s: inv.get(s, s) for s in set(raw)}
+    elif a.fold.startswith('random:'):
+        sys.path.insert(0, os.path.join(ROOT, 'scripts')); from settled_lines import settled_lines
+        rt = a.fold.split(':')[1]
+        rtoks = set(s for l in settled_lines(ROOT, rt, drop_clear=True).values() for s in l if s not in ('_', 'MULTI'))
+        sizes = sorted(collections.Counter(inv.get(s, s) for s in rtoks).values(), reverse=True)
+        us = sorted(set(raw)); rng = random.Random(a.seed); rng.shuffle(us); fmap = {}; i = 0
+        for g, sz in enumerate(sizes):
+            for s in us[i:i + sz]: fmap[s] = f'G{g}'
+            i += sz
+        for s in us[i:]: fmap[s] = s
+    toks = [fmap[s] for s in raw]
 signs = sorted(set(toks)); sid = {s: i for i, s in enumerate(signs)}
 os.makedirs(W, exist_ok=True); cf = os.path.join(W, 'fit_' + re.sub(r'\W', '_', a.source) + f'_a{a.alpha}.cip')
 open(cf, 'w').write(' '.join(str(sid[s]) for s in toks) + '\n')
@@ -34,5 +53,7 @@ o = subprocess.run([os.path.join(W, 'hsolve'), train, cf, str(a.R), str(a.it), s
 rows = [l.split() for l in o.split('\n') if re.fullmatch(r'\d+ [a-z{]', l)]
 with open(a.out, 'w') as f:
     f.write('sign\tvalue\n')
-    for i, v in rows: f.write(f"{signs[int(i)]}\t{' ' if v == '{' else v}\n")
-print(a.source, 'N', len(toks), 'K', len(signs), o.split('\n')[0])
+    val = {signs[int(i)]: (' ' if v == '{' else v) for i, v in rows}
+    members = sorted(set(raw)) if a.fold else signs
+    for m in members: f.write(f"{m}\t{val[fmap[m] if a.fold else m]}\n")
+print(a.source, 'N', len(toks), 'K', len(set(raw)), '-> fitted K', len(signs), o.split('\n')[0])
