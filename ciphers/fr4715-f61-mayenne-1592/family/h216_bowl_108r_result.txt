@@ -1,0 +1,2 @@
+repeat control: 19 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+by pass code: 4PI yes 0 no 4 n 0; 4STEM yes 2 no 4 n 0; 4TRI yes 0 no 1 n 0; C43 yes 0 no 4 n 0

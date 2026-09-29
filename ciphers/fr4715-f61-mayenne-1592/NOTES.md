@@ -4111,3 +4111,11 @@ call, bowl and hash forms on f.108r L04-L06; crops images/f108g, images/f108h; s
 regenerate with the natives of btv1b9060633d f327/f328 and `family/cut_bands.py` as in NOTES H199), then **H217** (script, H201's design on f.108r).
 Scripts to copy: `family/h199_bowl_108v.py` (tiles from a native with a marker above), `family/h212_hash_sort.py` (sort design),
 `scripts/f61bowl_108v_seq.py` (relabel + seq gain + random-relabel null).
+
+## Campaign step H216 (29 Sept 2026, 03:10-03:14 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- the bowl on f.108r L04-L06: two bowl signs, both coded 4STEM
+
+Pre-registered (PROMPTS section H216; `family/h216_bowl_108r.py`, key `family/h216_items.tsv`, commit c9f1bb69). 15 4-family signs of the H108 draft cut
+from the local source images; one Opus vision call (`family/passes/h216_reply.tsv`). Result `family/h216_bowl_108r_result.txt` (`--check` OK),
+positions `family/h216_bowl_positions.tsv`: **repeat control 19/20 PASS; bowl yes only at L06 positions 3 and 32 (both 4STEM); 4STEM 2 yes / 4 no,
+4TRI 0/1, C43 0/4, 4PI 0/4.** So on these rows the bowl (c/p) sign is rare, and where it occurs the H108 passes coded it 4STEM, as on f.108v (H199).
+The one 4TRI is the no-bowl sign. Descriptive; nothing merged. H217 relabels these rows by shape.
