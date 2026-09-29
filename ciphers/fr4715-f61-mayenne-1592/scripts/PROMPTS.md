@@ -620,3 +620,9 @@ Prompt: H233's verbatim with 'h236/sheet_01.jpg', '15 numbered tiles (U01-U15)' 
 
 Sheet <scratch>/h239/sheet_01.jpg (family/h239_4pi_108r_2.py tiles; key family/h239_items.tsv; 19 tiles U01-U19). Sheet not seen. Prompt: H233's verbatim with
 'h239/sheet_01.jpg', '19 numbered tiles (U01-U19)', answer form 'U01<TAB>A', U01 to U19. Gate >= 10/12; a second control fail logs the question untestable here.
+
+## H237 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61 C6 vs the glossed C6 (period e), WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h237/sheet_01.jpg (family/h237_c6_glyph.py tiles; key family/h237_items.tsv; 11 tiles: f.61 C6 3 placed by eye and checked as crops, glossed C6 2
+(only two map to pass A), controls PHI 3 + C43 3). Sheet not seen. Prompt: H235's verbatim with 'h237/sheet_01.jpg' and '11 numbered tiles (Y01-Y11)',
+answer form 'Y01<TAB><group letter or unclear>', Y01 to Y11.
