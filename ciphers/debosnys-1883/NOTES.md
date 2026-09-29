@@ -1226,3 +1226,20 @@ error can only be estimated, not measured, and the gate from H50 still applies (
 and N before any target run). Recommendation to the orchestrator: if any c2 work is bought, it is (b), gated on a
 control that reads at the resulting floor; otherwise the transcription is the limit and the target stays `open` on
 H18/H20 (new material). A costing, nothing read.
+
+### H56, inventory granularity against Sektu 2017 and Bourdeau (29 Sept 2026, CPU only)
+
+Sektu's corpus-wide 1188 tokens / 425 types (single most frequent glyph 7.5 pct) against our settled 1175 / 157 (X 12.8
+pct): at nearly the same N his segmentation treats whole ink clusters as glyphs (sektu-2017.md item 12), so his K is
+2.7x ours and his top sign is diluted -- the two inventories are not comparable on K, hapax or top-1, and every fit on
+this page (H3-H40) is conditional on our 160-id convention. The one count that can be matched is his N-glyph test
+(tilde-topped signs per verse line; his 30 in 20 lines, 1.5 per line, read as nasal vowels against Baudelaire's 2.05):
+ours has 16 signs named with a tilde (0.8 per line; O-TILDE 9, OX-TILDE 4, OO-, XX-, IOI-TILDE 1 each), 20 (1.0) if
+X-CURL is counted -- Bourdeau's N_X maps onto our X-CURL in the H26 concordance, i.e. our labeller called his tilde
+over X a curl --, and Bourdeau's read has 24 N_ codes (1.2 per line); his N_OO maps onto our CIRC-O. So the per-line
+tilde count runs 0.8-1.5 depending only on whose inventory counts it: Sektu's nasal-vowel comparison cannot be
+reproduced or refuted on our transcription, and a tilde-as-nasal hypothesis needs a per-sign re-labelling of tilde
+marks on the image first (a cheap Fable pass over the 16-30 verse boxes concerned; not run here, allowed_warning).
+Grade S; nothing read; status `open`.
+Side note for H20: DEB-SWARM2-R2-3 (ROOM 29 Sept 07:26) reports a copied-poem crib search on c4 including Moore's
+Anacreon ode (best S 1.359, no crib); H20's LOCAL-QUEUE L28 texts may therefore already be covered by the swarm.
