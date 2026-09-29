@@ -5715,3 +5715,16 @@ AUDIT.md "What runner 13 (or its successor) should record", carried into HYPOTHE
 VERIFY-F61-V11 (17:30) ruled on PROPOSAL_v8_4tri.md before runner 14's H368-H387 landed: 4TRI_NB (a token read no-bowl in a gated blind read) = a/n
 (grade C on f.101r, M where shape only); the bowl class not narrowed (stays v7 4TRI); L05/14 stays c/p M. Runner 14's later rows (H370-H387, all in
 HYPOTHESES.md) are further evidence for the VO3 lane, not a change to that ruling.
+
+## Campaign step H391 (29 Sept 2026, 18:13-18:14 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- the bowl reader's repeatability from re-reads on disk (script-only)
+
+`family/h391_bowl_reader_agreement.py` -> `family/h391_bowl_reader_agreement_result.txt` (`--check` OK). Cohen's kappa on yes/no, items answered both times:
+- **H194 vs H367 (f.61, 15): agreement 0.93, kappa 0.84. H231 vs H368 (f.106r, 24): 0.92, kappa 0.81.** Target tokens re-read in a second call agree well.
+- **H371 c2 original vs H373 (f.97r, 37): 0.68, kappa 0.00** -- the all-'no' chunk carries no information about the re-read (H373 replaced it).
+- **H193's 60 anchor strips across 21 H359-design calls (210 pairs): mean agreement 0.98, mean kappa 0.94 (min 0.80); every call agrees with the
+  per-strip majority at 0.95-1.00 -- including H371 c2's original call (1.00).**
+What it means: (1) the reader is repeatable on the same strips (0.8-0.94) when it is reading; V11's inter-reader kappa of 0.35-0.49 was measured on a
+different set (V11's own readers and tokens, AUDIT.md VERIFY-F61-V11), so the two are not in conflict but are not the same measurement -- for the VO3
+lane. (2) Gate 1 is passed near-perfectly by every call, the defective one included: it tests the reader's eye on part 1 and says nothing about part 2.
+The H376 fix (known strips inside part 2, gate 2) is the gate that can fail; it passed 6/6 in H377, H385 and H387. Instrument lesson, added to
+CAMPAIGN.md INSTRUMENTS. Nothing applied. Script-only.

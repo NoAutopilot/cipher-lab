@@ -1,0 +1,6 @@
+pair	n	agreement	kappa
+H194 vs H367 (f.61)	15	0.93	0.84
+H231 vs H368 (f.106r)	24	0.92	0.81
+H371 c2 original vs H373 (f.97r)	37	0.68	0.00
+H193 anchor strips across 21 H359-design calls (210 pairs)	mean n 57.1	mean 0.98	mean 0.94 (min 0.80)
+each call vs the per-strip majority (agreement): h359 1.00 h360_c1 1.00 h360_c2 0.98 h360_c3 1.00 h360_c4 0.97 h362 1.00 h365_c1 0.97 h365_c2 1.00 h365_c3 0.98 h365_c4 1.00 h367 0.97 h368_c1 0.98 h368_c2 1.00 h370 0.95 h371_c1 0.98 h371_c2 0.98 h371_c2_orig 1.00 h373 0.98 h377 0.98 h385 0.98 h387 0.97
