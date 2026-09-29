@@ -5207,7 +5207,7 @@ f.188r -0.839 vs about -0.97), but shuffling also re-cuts the runs, so this is n
 Lesson (the ARM-C1 shape again): a within-frequency-bin key permutation is not an order control; a beam gate needs the shuffled-target arm from the
 first run. No call.
 
-## Campaign step H343 (29 Sept 2026, 15:39 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the beam-check lesson, written down (notes only)
+## Campaign step H343 (29 Sept 2026, 15:38 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the beam-check lesson, written down (notes only)
 
 CAMPAIGN.md's INSTRUMENTS paragraph gains the beam-check lesson (a within-bin key permutation is not an order control; the frequency-only key is not a
 fair beam control); `family/V9_PAGE.md` gains one line for the verifier: the H335/H338/H340 beam passes are not evidence for v7, f.97r fragile only, the

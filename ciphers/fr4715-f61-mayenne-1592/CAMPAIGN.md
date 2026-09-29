@@ -899,4 +899,4 @@ closed:
 2026-09-29 15:26 (commit stamp; first typed 15:36) | session_01MSoJWwZxNPSjQd4hszNdvQ | H337 done | 0.05 | binned beam arm powered at f.106r N (0.86/1.00 in-sample); f.106r a weak lead below that rate.
 2026-09-29 15:26 (commit stamp; first typed 15:39) | session_01MSoJWwZxNPSjQd4hszNdvQ | rows written | 0 | no runnable row after H337: H338-H340 (gloss-free beam check on the three held leaves v7 was not built from: f.124r, f.97r, f.108v in f.61 hand); one script.
 2026-09-29 15:37 (date -u; first typed 15:47) | session_01MSoJWwZxNPSjQd4hszNdvQ | H338-H341 done | 0.1 | beam check passes on held leaves, then its shuffled-order control voids the binned arm on f.106r, f.124r, f.108v, f.101r; H342 (within-run shuffle, sequence gain) and H343 (lesson note) written.
-2026-09-29 15:39 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H343 done | 0.02 | beam-check lesson in INSTRUMENTS and V9_PAGE.md.
+2026-09-29 15:38 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H343 done | 0.02 | beam-check lesson in INSTRUMENTS and V9_PAGE.md.
