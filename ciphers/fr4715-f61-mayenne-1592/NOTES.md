@@ -4227,3 +4227,18 @@ What it says: on the leaf with a period decipherment the looped hash is rare and
 on f.108v (the looped form is not d/q), but its own letters are scattered, so there is still no period value for it. With f.176 (H214), f.188r (H224) and
 f.101r (this step) done, no glossed leaf on disk holds enough looped signs to give it one. For the verifier: HASH4 proper (the 4-head) = d/q stands on
 three leaves' period letters; the looped form stays unread. Nothing merged.
+
+## Campaign step H221 (29 Sept 2026, 04:50-05:00 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- fr.3983 f.106r: H24 is the 2# form, HASH4 is mostly the looped form; the bowl call failed its control
+
+Pre-registered (PROMPTS section H221; `family/h221_shapes_106r.py`, key `family/h221_items.tsv`, commit ac670071, before the calls; the runner looked at one
+bowl sheet for geometry). f.106r (Mayenne's secretary; held leaf: its gloss passes agreed under 60%, so no period letter is used). Native btv1b9059406b
+f191 fetched fresh (sha1 differs from the 28 Sept fetch, as H207 saw for f210). Two Opus vision calls, inline (`family/passes/h221h_reply.tsv`,
+`family/passes/h221b_reply.tsv`). Result `family/h221_shapes_106r_result.txt` (`--check` OK), per-position answers `family/h221_positions.tsv`:
+- **Hash call: anchors 8/10 PASS. H24: D (2#) 13 of 13. HASH4: B (looped) 13, A (4-head) 4.** Registered read-out "does not follow" (HASH4 A-share 0.24 <
+  0.8): on this leaf the HASH4 code is mostly the looped form, not the 4-head. So f.106r's secretary writes the looped hash often -- the first leaf found
+  where it is common (f.108v 5/14, f.108r 9/10 by H212; f.101r 5/61, f.188r 0, f.176 0).
+- **Bowl call: anchors 6/10 -> CONTROL FAIL** (4 of the 5 f.108v anchors H199 read as bowl were answered no at this 3x, x +-60 window); targets not
+  scored. H229 redoes it at H199's own strip geometry.
+For the verifier: H24 = 2# holds on f.106r too (every H24 the passes wrote); HASH4 there is a different sign mix from f.101r/f.188r's, so pooling HASH4
+counts across these leaves mixes the looped and 4-headed forms (as H218 found for the 4-family). H228 (script-only) reads the letters the held gloss places
+at the looped positions, as a conditional look. Nothing merged.

@@ -1,0 +1,4 @@
+h221h anchors: 8 of 10 as expected (gate >= 8): PASS
+h221h by code: H24 D 13; HASH4 A 4 B 13
+h221h read-out: HASH4 A-share 0.24, H24 D-share 1.00 -> does not follow; looped B 13
+h221b anchors: 6 of 10 as expected (gate >= 8): CONTROL FAIL
