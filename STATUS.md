@@ -2448,6 +2448,13 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 08:05 Pacific [15:05 UTC], account 3): the 14:xx firings were missed; f.61 runner 13 started
+
+- The 14:xx scheduled firings on account 3 (dispatcher 14:10, this check-in 14:12, f.61 runner 14:50) did not arrive; the standby firing scheduled 14:54 arrived at 14:59 and this note covers 13:25-15:05. Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: runner 12 stopped at 13:27 (about 420k) after H302-H331; H330 found the f.124r held-leaf lead fragile under bootstrap (carried by PHI/C43, VBAR_A below chance there), so it stays a lead, not evidence. f.61 sat idle 13:27-15:01 because the replace request waited on the missed check-in. Runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ (Opus 5.5, :50) started 15:01 on H332 (the rest of f.106r's gloss). Blocker unchanged: 59 two-way, 26 unread-or-null; ASKS 88/89/93/99.
+- Debosnys: the museum request (outreach/debosnys-museum-hires.md, ASKS 100) passed its gate-7 fact check at 13:28 (12 sentences, 4 corrected); ready for the owner to send from the project mailbox as a reply in the existing thread. No Debosnys runner until better images arrive.
+- Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 06:25 Pacific [13:25 UTC], account 3): Debosnys needs better pixels; museum request drafted; f.61 held-leaf check
 
 - Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until the Fable reset 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
