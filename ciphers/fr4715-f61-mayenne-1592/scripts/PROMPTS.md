@@ -488,3 +488,11 @@ the pass codes in H85/H94/H100). Control first: `f61judge_known_h51_swaps207_set
 FAIL stops the step. Then one call on `f61judge_f108v_bowl_s207_sets.txt` (274 positions per set; target and the pass-code set differ at 25).
 Prompts: the H94 no-leak prompt verbatim (spelling examples "icelluy", "soubz", "advis"), control with the six-line list (L01, L03, L05, L07, L08,
 L11), target with "seven manuscript lines (L01 to L07)"; only the file name changed otherwise. Key files never named.
+
+## H208 (29 Sept, Opus TEXT, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- H205 corrected, WRITTEN BEFORE THE CALLS
+
+`f61judge108v_bowl.py build --seed 208|209 --present`: the 19 one-swap neighbours drawn only from class pairs present in the relabelled f.108v text
+(every neighbour differs from the target; 4STEM swaps differ at 4 tokens only). The same session's H205 control (known f.61 lines, one-swap null,
+seed 207, rank 1 of 21) is this judge's calibration. Two calls, H205's target prompt with only the file name changed
+(f61judge_f108v_bowlp_s208_sets.txt, f61judge_f108v_bowlp_s209_sets.txt). Read-out per seed as H205; "the judge prefers the bowl labelling" overall
+only if both seeds say so; "prefers the pass codes" if either seed does; else "no preference shown".

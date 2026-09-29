@@ -11,10 +11,13 @@ rank-1 gate cannot tell the two labellings apart.
    Order shuffled (seed 207); key never named. One call, H94 no-leak prompt, file name and line list changed.
  read-out (pre-stated): "the judge prefers the bowl labelling" iff the target ranks 1 of 21 (ties against) AND scores strictly above R; "prefers
    the pass codes" iff R scores strictly above the target; else "no preference shown". Descriptive; no key change.
-  python3 f61judge108v_bowl.py build --seed N | score [--check]"""
+H208 (same runner, written before its calls): --present draws the 19 one-swap neighbours only from class pairs that both occur in the relabelled
+   text (H205's pool included 4TRI/4PI/C43, absent after the relabel, so two neighbours equalled the target); files f61judge_f108v_bowlp_s<N>_*;
+   seeds 208 and 209; read-out per seed as above; "prefers the bowl labelling" overall only if both seeds say so.
+  python3 f61judge108v_bowl.py build --seed N [--present] | score --seed N [--present] [--check]"""
 import csv, json, os, random, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
-FAM = ("4TRI", "C43", "4STEM", "4PI")
+FAM = ("4TRI", "C43", "4STEM", "4PI"); PRES = "--present" in sys.argv
 def rd(f): return [r for r in csv.DictReader((l for l in open(f) if not l.startswith("#")), delimiter="\t")]
 def data():
     import f61judge108v as J
@@ -27,13 +30,15 @@ def data():
     return C, orig, rel
 def build(seed):
     C, orig, rel = data(); M = dict(C, **{"4BOWL": "c/p", "4NOB": "a/n"}); labs = sorted(M); rng = random.Random(seed)
-    pairs = [(a, b) for i, a in enumerate(labs) for b in labs[i + 1:] if M[a] != M[b]]; rng.shuffle(pairs)
+    pres = {c for v in rel.values() for c in v}
+    pairs = [(a, b) for i, a in enumerate(labs) for b in labs[i + 1:] if M[a] != M[b] and (not PRES or (a in pres and b in pres))]; rng.shuffle(pairs)
+    assert len(pairs) >= 19
     def dec(L, m): return {l: [m[c] for c in s if c in m] for l, s in L.items()}
     sets = [("T", dec(rel, M)), ("R", dec(orig, C))]
     for a, b in pairs[:19]:
         m = dict(M); m[a], m[b] = M[b], M[a]; sets.append((f"swap {a}<->{b}", dec(rel, m)))
     assert all(len(sets[0][1][l]) == len(sets[1][1][l]) for l in rel)
-    order = list(range(21)); random.Random(seed).shuffle(order); key = {}; txt = []; name = f"f108v_bowl_s{seed}"
+    order = list(range(21)); random.Random(seed).shuffle(order); key = {}; txt = []; name = f"f108v_bowl{'p' if PRES else ''}_s{seed}"
     for k, i in enumerate(order):
         lab = f"SET-{k+1:02d}"; key[lab] = sets[i][0]; txt.append(f"== {lab}")
         for l, cells in sets[i][1].items(): txt.append(f"{l}: " + " ".join(f"[{c}]" for c in cells))
@@ -42,7 +47,7 @@ def build(seed):
     diff = sum(1 for l in rel for x, y in zip(sets[0][1][l], sets[1][1][l]) if x != y)
     print(f"wrote f61judge_{name}_sets.txt: {sum(len(v) for v in sets[0][1].values())} positions per set; target and R differ at {diff}")
 def score(seed):
-    name = f"f108v_bowl_s{seed}"; key = json.load(open(f"{HERE}/f61judge_{name}_key.json"))["key"]
+    name = f"f108v_bowl{'p' if PRES else ''}_s{seed}"; key = json.load(open(f"{HERE}/f61judge_{name}_key.json"))["key"]
     rows = rd(f"{HERE}/f61judge_{name}_verdict.tsv"); sc = {r["label"].strip(): float(r["score_0_10"]) for r in rows}
     assert set(sc) == set(key)
     t = [l for l, v in key.items() if v == "T"][0]; r_ = [l for l, v in key.items() if v == "R"][0]

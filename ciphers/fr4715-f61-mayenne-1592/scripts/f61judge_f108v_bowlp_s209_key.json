@@ -1,0 +1,26 @@
+{
+ "tag": "f108v_bowlp_s209",
+ "key": {
+  "SET-01": "swap EBR_A<->EBR_B",
+  "SET-02": "swap VBAR_A<->ZHOOK",
+  "SET-03": "swap 4BOWL<->PHI",
+  "SET-04": "swap INF<->VBAR_A",
+  "SET-05": "swap EBR_B<->VBAR_A",
+  "SET-06": "swap 4STEM<->ISH",
+  "SET-07": "swap EBR_A<->VBAR_A",
+  "SET-08": "swap ISH<->VBAR_A",
+  "SET-09": "swap INF<->ZHOOK",
+  "SET-10": "swap 4NOB<->EBR_B",
+  "SET-11": "swap 4NOB<->ISH",
+  "SET-12": "swap BETA<->ISH",
+  "SET-13": "swap 4BOWL<->4NOB",
+  "SET-14": "swap BETA<->PHI",
+  "SET-15": "R",
+  "SET-16": "swap BETA<->SBS",
+  "SET-17": "swap 4STEM<->EBR_A",
+  "SET-18": "swap PHI<->SBS",
+  "SET-19": "swap BETA<->VBAR_A",
+  "SET-20": "T",
+  "SET-21": "swap 4STEM<->PHI"
+ }
+}
