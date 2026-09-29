@@ -1,11 +1,13 @@
-span	line	pos	class	markup_with_letter_inserted	word_complete_without_it
-S1	L01	2	C6	-Eavec	no test (a span edge on one side): Eavec
-S2	L03	11	C6	estca-pE-abl	no test (a span edge on one side): pE
-S3	L05	12	C6	--trop--avaEnce-es	yes: avance -> avaEnce
-S4a	L07	6	C6	jalEous-i	yes: jalous -> jalEous
-S4b	L08	3	C6	eaEubeau--pere	yes: eaubeau -> eaEubeau
-S4b	L08	9	C6	ea-ubeauE-pere	no test (a span edge on one side): ubeauE
-S2	L03	9	CA	estcaAp--abl	yes: estcap -> estcaAp
-S3	L05	7	CA	--tropA-ava-nce-es	no test (a span edge on one side): tropA
-S3	L05	8	CA	--trop-Aava-nce-es	no test (a span edge on one side): Aava
-S4b	L08	10	CA	ea-ubeau-Apere	no test (a span edge on one side): Apere
+class	letter	span	line	pos	string_with_letter	verdict
+C6	e	S1	L01	2	Eavec	span edge: no test
+C6	e	S2	L03	11	estcapEable	inside 'capable' -> 'capEable': breaks it
+C6	e	S3	L05	12	tropavaEncees	inside 'avancees' -> 'avaEncees': breaks it
+C6	e	S4a	L07	6	jalEousi	inside 'jalousi' -> 'jalEousi': breaks it
+C6	e	S4b	L08	3	eaEubeaupere	inside 'eau' -> 'eaEu': breaks it
+C6	e	S4b	L08	9	eaubeauEpere	word boundary (eau|beau|pere): no break, no support
+CA	a	S2	L03	9	estcaApable	inside 'capable' -> 'caApable': breaks it
+CA	a	S3	L05	7	tropAavancees	word boundary (trop|avancees): no break, no support
+CA	a	S3	L05	8	tropAavancees	word boundary (trop|avancees): no break, no support
+CA	a	S4b	L08	10	eaubeauApere	word boundary (eau|beau|pere): no break, no support
+# C6: span edge 1; inside a word 4; word boundary (eau|beau|pere) 1
+# CA: inside a word 1; word boundary (trop|avancees) 2; word boundary (eau|beau|pere) 1

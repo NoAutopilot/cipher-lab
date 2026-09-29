@@ -650,3 +650,124 @@ Not assessed. This audit concerns key cells, not a reading, and makes no plainte
 - **The 4PI split:** high for "f.61's 4PI is not the 4-head" (two readers, two tokens, the only "4 over Pi" answers). Moderate for f.108r = 4-head
   (shape clean; values from one overlay).
 - **a/n for f.61's 4PI:** low. One published letter, no period glyph.
+
+## VERIFY-F61-V9 (29 Sept 2026)
+
+Verifier: PARENT WORKER VERIFY-F61-V9 (account 3), 10:16-10:4x UTC by the container clock. Separate from campaign runner 10 (H256-H262) and
+from VERIFY-F61-V6/V7/V8. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v9.md`. Claims under audit (ROOM 09:58-10:12 UTC): (1) f.61's CA is a
+null drawn as the letter a (H256/H260 letterform sorts, H63 hand, H259 spans); (2) the C6 conflict (HYPOTHESES.md row of 29 Sept, H261): the pooled
+C6 = e against Tomokiyo's dash at every in-span C6 on f.61; (3) the null band (`family/f61_null_band.tsv`, H262).
+
+Files in `verify_v9/`: `v9_ca_sort.py` (design, categories, gates and read-outs committed 17ccf1ea before any tile existed or any look; one amendment
+before the tiles, disclosed in PROMPTS.md), `v9_items.tsv` (key, committed 194c3fa7 before the calls), `v9_text_letters.tsv` (the placement helpers'
+rows), `v9_bands.json` (line boxes), `PROMPTS.md` (prompts verbatim, disclosures), `v9_reply_set{P,Q,R}.tsv` (+ `v9_reply_setR_groups.txt`, the
+readers' replies verbatim), `v9_ca_sort_result.txt` (`score --check` OK), `v9_ink_measures.tsv` (script-only), `v9_c6_words.py` + result (`--check`
+OK), `meter_v9.py` + result (`--check` OK). No Gallica request (tiles cut from the native region already on disk). Six subagent calls: three Sonnet
+placement helpers, three Opus readers. Nothing edited in `family/key_period_v6.tsv`, `family/key_period_v7.tsv`, `CAMPAIGN.md` or the runner's files.
+
+**Design.** 49 tiles, all cut by the verifier from the native image at +-60 native px, never from the runner's sheets or tiles: f.61's ten CA
+(H253/H257 positions mapped to native by the segment boxes), eleven cipher controls from the same runs (PHI 4, C43 3, C6 2, SBS 1, INF 1), nine
+clear-text a's inside words (chosen by seed from the helpers' list after excluding every word and position the runner used), ten clear-text non-a
+letters (o, u, n, e, c, d), three one-letter a's outside the runs (EDGE_A, descriptive only), and six repeats under fresh ids. Three fresh Opus
+readers, each with its own shuffle and ids: setP and setQ with fixed shape categories (A bowl-and-right-stem, O ring, U arch, E loop-with-tongue,
+S sign, X), setR a free sort in the runner's own format. Gates registered: text a in A >= 0.8; repeats >= 5/6; text non-a in A <= 1. Read-out Z1 "CA
+has the clear a's letterform": >= 8/10 CA in A and <= 1/11 cipher in A; null: 20,000 within-line label permutations over the CA + cipher tiles.
+
+**A finding before the sort.** The three placement helpers were asked only to list clear words and the x of their letters. Unprompted, they listed
+seven of the ten CA positions as the one-letter word "a" (L01 8, L03 1, L03 9, L05 7, L05 8, L07 1, L08 10, each within 6 px of the runner's CA x)
+and skipped L10's three (inside a run with no clear word beside them). A reader looking for clear text reads these signs as the letter a.
+
+| check | setP | setQ | setR (free sort, G = its group A "small closed bowl with right stem tail") |
+|---|---|---|---|
+| text a in A (>= 0.8) | 8/9 PASS | 7/9 **CONTROL FAIL** (not scored) | 7/9 **CONTROL FAIL** (not scored) |
+| repeats | 6/6 | 6/6 | 6/6 |
+| text non-a in A (<= 1) | 1/10 | 1/10 | 1/10 |
+| CA in A | **10/10** | 10/10 | 10/10 |
+| cipher controls in A | **0/11** (all S) | 0/11 (all S) | 0/11 (C43 -> C, PHI/SBS -> B, C6 -> D, INF -> F) |
+| S = #(CA & A) + #(cipher & not A), permutation p | 21/21, **p 0.0013** | - | - |
+| Z1 CA has the clear a's letterform | **YES** | not scored | not scored |
+| EDGE_A (descriptive) | A 3/3 | A 3/3 | A 3/3 |
+
+**setQ and setR's gate failure is the verifier's sample, not the readers'.** The two text a's outside A in every reader are the same two tiles:
+`a:affaires` (L08 x 2662), which PROMPTS.md flagged before the calls as showing an e-like letter under the marker, and `a:amoit?` (L04 x 1824), a
+word the helper itself marked uncertain. Every other text a is A in all three readers, and every CA and every cipher tile gets the same answer in all
+three (30 of 30 agree). Descriptively, then, three readers put all ten CA with the clear a's and none of the eleven cipher signs there; by the
+registered rule only setP is scored. A post-hoc count that drops the two misplaced tiles (7/7 text a in A in every reader) is reported here as
+post-hoc and is not used for the verdict.
+
+**Ink measures (script, `v9_ink_measures.tsv`, no reader).** In the central 60 px of each tile: CA ink height 49.8 px mean, width 36.1, 220 ink
+pixels; text a 54.0 / 53.9 / 299; cipher signs 96.7 / 54.5 / 782 (descenders); mean darkness the same for all three (101-104). CA is a little
+smaller and lighter than the text a's inside words and much smaller than the cipher signs. This does not decide the hand (H63's cue was weight,
+baseline and spacing, by one reader); it is consistent with an a written small in the sign row.
+
+**Word test for the in-span tokens (`v9_c6_words.py`, from the runner's H259 alignment taken as given).** Inserting the cell letter at each in-span
+sign's place in Tomokiyo's letter string: **C6 = e** lands inside a word he reads at 4 of 5 (cap|able, ava|ncees, jal|ousi, ea|u) and at the
+compound boundary beau|pere at the fifth; L01 2 is a span edge (no test). **CA = a** lands inside ca|pable once and at a word boundary three times
+(trop|avancees x2, beau|pere). So a letter at C6 would break his words four times; a letter at CA once.
+
+### Verdict (1) CA is a null drawn as the letter a: **endorse in part**
+
+- **Endorsed: the letterform.** In the verifier's own tiles, with fresh readers, all ten CA sort with the scribe's clear a's and no cipher sign does
+  (setP registered PASS, p 0.0013; setQ/setR the same counts, unscored; the placement helpers read seven CA as the word "a" unasked). H256/H260's
+  finding replicates. The runner's "hand" leg (H63, cipher 5 of 6 by one reader) is neither confirmed nor contradicted here; the ink measures say only
+  that CA is a small, light a.
+- **Endorsed with its condition: no letter in the spans.** At the four in-span CA, Tomokiyo's markup is a dash and his words are complete without an
+  a (H259, re-run above). This rests on his reading of those words and on the runner's sign-to-markup alignment (48/55 letters fall in one table
+  column per class, F61-CAL). It covers four of the ten CA; the six out of span (L01 8, L03 1, L07 1, L10 2, L10 9, L10 12) are null only by the
+  assumption that one sign has one function on the leaf.
+- **Not decidable from the leaf: "clear a drawn among the signs" versus "null drawn as an a".** Both are the letter a in the scribe's hand written
+  inside a sign run with the same pen; the leaf's ink cannot separate them, and no sort or hand check can (the runner's H256 says so too). The
+  difference is functional -- does the plaintext carry an a there -- and only the known spans answer it: at every in-span CA the answer is no. The
+  three EDGE_A tiles show the limit from the other side: the same a-form stands alone at run edges (L05 560 after "sont", L03 2257 before "les",
+  L08 2427 before "affaires"), where it may be the clear preposition; H63 dropped two of them as edge a's. Whether an a at a run edge is a clear
+  word or a null is a plaintext question, open for those three and not part of the 99-sign transcription.
+- **Caveat for the key, not for f.61.** The pooled key's CA class on the glossed leaves is not a null: f.101r glosses it - 2, c, q, s, t and f.188r
+  c, p, s (key_period_v6/v7 rows). Either that class on f.101r/f.188r is not this glyph, or the null is f.61's own usage. "CA = null" is a published
+  f.61 fact (Tomokiyo's dashes, H44) with a letterform now tied to the clear a; it is not a family cell and should not be pooled as one.
+
+### Verdict (2) the C6 conflict: **endorse, with a sharper statement than the runner's**
+
+- H261's "C6 = e neither gains nor loses a known-span letter" is true only because a dash is a wildcard in the scorer. Put the letter into his
+  words instead and C6 = e breaks four of the five in-span words (cap|able, ava|ncees, jal|ousi, ea|u) and sits at a compound boundary at the fifth.
+  On f.61, conditional on his reading, C6 is not e.
+- **Which witness applies to f.61 and why.** Witness 2 is Tomokiyo's markup on f.61 itself: the same leaf, the same hand, a dash (an unread sign, not
+  a value) at all five in-span C6, and the words around them complete. Witness 1 is the pooled cell from fr.3982 f.101r (Bishop of Lisieux to
+  "monseigneur", Rome, 27 Oct 1592, glossed by Lisieux's secretary) and fr.3984 f.188r/f.184r (Desportes to Lisieux, Paris, 22 July 1593): another
+  sender, the other side of the correspondence, another year, another hand -- and H237's blind sort put f.61's plain 6 apart from the glossed delta-
+  shaped C6, so the glyph link is missing as well. Under rule 4 a cell with conflicting support is M in any letter whose direction, date or hand does
+  not match the supporting witness; f.61 matches neither, and the word test then turns M into "not e here". The pooled cell stands for the leaves
+  that glossed it. Not decided by majority (3 glossed tokens against 5 dashes are not commensurable: one side is values, the other is absences).
+- What the runner's row should carry: "C6 = e is excluded on f.61 at 4 of 5 in-span positions by Tomokiyo's own words (v9_c6_words), not merely
+  unsupported"; C6 stays unread-or-null on f.61.
+
+### Verdict (3) the null band: **endorse**
+
+`family/f61_null_band.tsv` re-counted from `family/f61_decode_period_v4_frac0.1_sbs.tsv` under key v6: unread-or-null 25 = CA 10, C6 8, LOOPBAR 4,
+CROSS 2, LL 1 (ZHOOK's three "-" rows in the decode file carry i/x from the key and are two-way, correctly left out); wider 4 = 4PI 2, OTHER 2; no
+token missing, none extra; every evidence file named exists (`NOTES.md#H238` is an anchor). The band is a hand-off table and changes no count.
+
+### Meter (`verify_v9/meter_v9.py`; key v6 loaded plus the V8 cells = key v7 as merged, F61-FAMILY-11 10:17 UTC, whose own figure 12/59/2/26 is the baseline; bands as meter_v8, the last band split into published-null + unread)
+
+- v6 as meter_v8: 12 / 58 / 4 / 25 [null 7 + unread 18].
+- baseline (= v7 as merged): 12 / 59 / 2 / 26 [null 7 + unread 19].
+- baseline + CA as null (endorsed): **12 / 59 / 2 / 26 [null 17 + unread 9]** -- no band count moves; ten tokens move from unread to null.
+- baseline + C6 = e on f.61 (not endorsed): 20 / 59 / 2 / 18 [null 7 + unread 11].
+- baseline + both: 20 / 59 / 2 / 18 [null 17 + unread 1].
+- Meter verdict for the orchestrator: **unread** for C6 (8) and 4PI L01 12 (1); **null** for CA (10), LOOPBAR (4), CROSS (2), LL (1); the four-band
+  figure stays 12 / 59 / 2 / 26.
+
+**What should merge (for the orchestrator; no key file edited).**
+1. CA: a published null (Tomokiyo, H44) whose letterform is the scribe's clear a (H256/H260, replicated here); f.61 reading only, never a pooled cell,
+   and the glossed leaves' CA rows stay as they are.
+2. C6 on f.61: unread-or-null, with the word-test sentence above in the HYPOTHESES.md conflict row; the pooled C6 = e untouched for f.101r/f.188r.
+3. The null band as filed; nothing moves.
+
+### Novelty
+Not assessed. This audit concerns a null, an unread cell and a hand-off table, and makes no plaintext claim (rule 10).
+
+### Confidence
+- **CA has the clear a's letterform:** high (three readers 10/10 and 0/11, one scored at p 0.0013, two unscored by a text-sample gate failure of the
+  verifier's own making; seven CA read as "a" by helpers not asked).
+- **CA carries no letter (null):** moderate, conditional on Tomokiyo's reading and the alignment, direct for 4 of 10 tokens.
+- **C6 is not e on f.61:** high conditional on his reading (4 of 5 words broken); the pooled cell's status elsewhere unchanged.
+- **Null band counts:** high (script recount).
