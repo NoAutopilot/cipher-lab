@@ -5235,3 +5235,11 @@ statistic. For the verifier (V9_PAGE.md line added). No call.
 leaf, 50 binned keys each. **f.101r 19/30 = 0.63; f.188r 30/30 = 1.00** -> pre-stated read-out "underpowered at f.106r's N": f.106r's H342 miss
 (13/100) is **untestable at this N, not a negative** on v7 in the secretary's hand. A test there needs more of the leaf's sign rows (rows 13-18, sign
 passes only -- the gloss passes are retired for this hand, H332) or the person's gloss read (ASKS 99). No call.
+
+## Campaign step H347 (29 Sept 2026, 15:58-15:59 UTC by the commit stamp and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- v6 vs v7 on the held leaves: only 4PI differs; split, too few signs (script-only)
+
+`family/h347_seqgain_v6v7.py` (written and pushed before running; `family/h347_seqgain_v6v7_result.txt`). Correction to the CAMPAIGN row: loaded pooled,
+key v6 and v7 differ only in **4PI (v6 a/d/n/q -> v7 d/q)**; the change list the row named (VBAR_A g/t, EBR_B l/y, SBS b/o, HASH4 d/q, H24 i/x) is
+v6's own change set, already in both keys. Under H342's gain (three shuffle seeds): f.124r v7 0.032/0.033/0.036 vs v6 0.033/0.033/0.037 (4PI 2 signs:
+v7 change 'hurts' by under 0.001); f.97r v7 0.057/0.051/0.051 vs v6 0.051/0.046/0.047 (4PI 10 signs: 'helps'). At 2 and 10 signs this is split and
+uninformative; nothing to carry to the key. No call.

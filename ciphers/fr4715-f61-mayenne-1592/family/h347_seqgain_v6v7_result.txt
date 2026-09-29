@@ -1,0 +1,4 @@
+recf124r: gain v7 0.0320/0.0325/0.0361; gain v6 (v7 where v6 has no cell) 0.0325/0.0327/0.0371
+  4PI        v6 a/d/n/q -> v7 d/q (signs 2): gain with v6 cell 0.0325/0.0327/0.0371 -> v7 change hurts
+recf97r: gain v7 0.0566/0.0514/0.0509; gain v6 (v7 where v6 has no cell) 0.0509/0.0462/0.0470
+  4PI        v6 a/d/n/q -> v7 d/q (signs 10): gain with v6 cell 0.0509/0.0462/0.0470 -> v7 change helps
