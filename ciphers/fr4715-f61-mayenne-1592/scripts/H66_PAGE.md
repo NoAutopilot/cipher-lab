@@ -189,6 +189,8 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
   (a 4-head over the hash) and B (two loops on the hash). f.108v is A 9 / B 5 and f.108r A 1 / B 9 (H212, p 0.013, under the share rule). Splitting f.108v's HASH4
   by form (A d/q, B i/x) beats all-i/x and the reverse split 30/30 (H213). The looped form does not occur on f.176 (H214 control fail), so there is no
   period-letter test yet. For the verifier: a second possible shape split under one pass code, sequence-only.
+- **H215:** the model judge also prefers the HASH4 form split on f.108v in both seeds (8.0 / 7.0, rank 1 of 21), above all-d/q (7.5 / 6.0), all-i/x
+  (6.5 / 5.0) and the reverse (6.0 / 3.5). The margin over all-d/q is small.
 
 ## Files to read
 

@@ -4074,3 +4074,15 @@ What it says: the looped hash of f.108r/f.108v does not occur in Desportes's han
 letters. The f.176 i-signs are some other form, which H195 also could not separate. The HASH4 form split (H212/H213) therefore stays sequence-only
 in f.61's hand. The period-letter test it needs is on a leaf in that hand with a gloss at HASH4 positions: f.108r's overlay rows carry none (checked
 this session), and f.61's one HASH4 (L01) is outside Tomokiyo's letters. Not re-briefed with the same question (rule 3). Nothing merged.
+
+## Campaign step H215 (29 Sept 2026, 03:01-03:09 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- the model judge prefers f.108v's HASH4 form split in both seeds
+
+Pre-registered (scripts/PROMPTS.md section H215; `scripts/f61judge108v_hash.py`, sets and keys committed 19c9e973). Two Opus text calls, H205's
+prompt; calibration = this session's H205 control. Replies verbatim `scripts/f61judge_f108v_hash_s21{5,6}_verdict.tsv`; results `_result.txt` (`--check` fresh).
+- **seed 215: form split (A 4-head d/q, B looped i/x) 8.0, rank 1 of 21; all-d/q 7.5, all-i/x 6.5, reverse 6.0, HASH4 dropped 7.0.**
+- **seed 216: form split 7.0, rank 1 of 21; all-d/q 6.0, all-i/x 5.0, reverse 3.5, dropped 5.5.**
+- Registered read-out: **"prefers the form split" in both seeds.**
+The margins over all-d/q are small (0.5 and 1.0 points, 5 tokens apart), as H213's sequence test found (OPEN 24/30). The reverse split scores lowest
+of the named sets both times, as in H213 (30/30). Together: on f.108v the 4-headed hash reads d/q (two instruments), and the looped hash reads i/x
+by a small margin in both (sequence 24/30 OPEN; judge +0.5/+1.0). No period-letter test is possible yet (H214: the looped form is absent from f.176).
+For the verifier, sequence and judge evidence only; nothing merged.
