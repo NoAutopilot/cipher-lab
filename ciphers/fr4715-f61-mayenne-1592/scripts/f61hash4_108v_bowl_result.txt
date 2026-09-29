@@ -1,0 +1,5 @@
+f.108v (bowl relabel) HASH4 signs: 14
+H209 i/x vs d/q: i/x wins 0/30 -> d/q PREFERRED
+H209 i/x vs null: i/x wins 13/30 -> OPEN
+H210 relabelled map: gain 0.276, rank 1 of 201 (best permuted 0.068, median 0.005)
+H210 relabelled map + HASH4 i/x: gain 0.270, rank 1 of 201 (best permuted 0.075, median 0.001)

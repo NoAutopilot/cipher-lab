@@ -4018,3 +4018,16 @@ by two instruments that do not depend on each other. H202 (f.108r) and H207 (f.1
 resolved text for the bowl sets is in the verdict files. It is a model's resolution of a two-way cipher over a grade-M transcription, a verifier's
 input and not a reading claim. No class change; nothing merged into a key (a verifier decides whether the bowl split enters v6 as a shape rule for
 the 4-family).
+
+## Campaign steps H209 and H210 (29 Sept 2026, 02:51-02:53 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- HASH4 on the bowl-relabelled f.108v leans d/q; the relabelled map's rank (script-only)
+
+`scripts/f61hash4_108v_bowl.py` (committed before the run; result `scripts/f61hash4_108v_bowl_result.txt`, `--check` fresh). f.108v relabelled by H199's
+bowl answers, map = the 14 cells + 4BOWL c/p + 4NOB a/n; 14 HASH4 signs.
+- **H209: HASH4 i/x vs d/q: i/x wins 0/30 -> d/q PREFERRED; i/x vs null: 13/30 -> OPEN.** So on f.108v, f.61's hand, the sequence prefers d/q over i/x
+  for HASH4. That runs opposite to f.108r L04-L06 (H118/H119: i/x best there on sequence gain, and H127's f.108r rows), and fits H195's partial finding
+  that the d/q anchors carry a 4-head (9/10) while the i anchors split: the hash family may also be two signs whose pass codes merge. d/q against null was
+  not in the registered design (a follow-up, H211).
+- **H210: relabelled map gain 0.276, rank 1 of 201 (best permuted 0.068, median 0.005); with HASH4 i/x 0.270, rank 1 (best 0.075).** Under the pass
+  codes H127 gave 0.152 / 0.165 (best permuted 0.077 / 0.089). The relabel almost doubles the sequence gain; the permuted-map null does not move.
+For the verifier: HASH4 stays d/i/q in v5; the f.108v evidence now points to d/q in f.61's hand, against f.108r's i/x, so the two leaves disagree unless
+the hash family is split by shape. Nothing merged.
