@@ -1,0 +1,17 @@
+(f) per class, size-matched: v7's cell vs 40 fr16-frequency-drawn cells of the same size (seed 10060); share beaten; supported iff >= 0.95
+recf124r HASH4 (85 signs in runs): share beaten 1.00 -> supported
+recf124r C43 (58 signs in runs): share beaten 1.00 -> supported
+recf124r H24 (193 signs in runs): share beaten 0.78 -> not supported
+recf124r ZBAR (30 signs in runs): share beaten 1.00 -> supported
+recf97r HASH4 (52 signs in runs): share beaten 0.97 -> supported
+recf97r C43 (40 signs in runs): share beaten 1.00 -> supported
+recf97r H24 (168 signs in runs): share beaten 0.82 -> not supported
+recf97r ZBAR (58 signs in runs): share beaten 0.93 -> not supported
+recf101r HASH4 (108 signs in runs): share beaten 1.00 -> supported
+recf101r C43 (64 signs in runs): share beaten 0.95 -> supported
+recf101r H24 (199 signs in runs): share beaten 1.00 -> supported
+recf101r ZBAR (43 signs in runs): share beaten 0.95 -> supported
+recf188r HASH4 (40 signs in runs): share beaten 1.00 -> supported
+recf188r C43 (60 signs in runs): share beaten 1.00 -> supported
+recf188r H24 (54 signs in runs): share beaten 1.00 -> supported
+recf188r ZBAR (45 signs in runs): share beaten 1.00 -> supported

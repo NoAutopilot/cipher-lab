@@ -1,0 +1,9 @@
+(b) shuffled-order targets: keyed signs permuted across all keyed positions of the leaf (seed 10030), 10 targets, 40 null keys each
+recf101r: shuffled targets with 'order signal' 0/10 (gains -0.004 -0.003 -0.002 -0.003 0.002 0.005 0.004 0.007 -0.006 0.001) -> design valid on this leaf
+recf188r: shuffled targets with 'order signal' 1/10 (gains 0.004 -0.011 -0.010 -0.009 0.001 0.004 0.004 0.005 0.001 -0.003) -> design valid on this leaf
+recf124r: shuffled targets with 'order signal' 2/10 (gains 0.005 0.003 0.005 0.002 -0.009 -0.007 0.010 0.004 0.007 -0.005) -> design valid on this leaf
+recf97r: shuffled targets with 'order signal' 1/10 (gains -0.001 0.001 -0.006 -0.001 -0.002 -0.008 0.011 0.000 0.005 0.006) -> design valid on this leaf
+rec108v: shuffled targets with 'order signal' 1/10 (gains 0.037 -0.005 0.012 0.008 0.014 0.017 -0.015 0.002 0.002 -0.010) -> design valid on this leaf
+recf108vg: shuffled targets with 'order signal' 0/10 (gains 0.006 0.014 0.012 -0.017 -0.014 -0.009 -0.017 -0.006 0.000 0.008) -> design valid on this leaf
+recf108vagree: shuffled targets with 'order signal' 0/10 (gains -0.010 -0.012 0.009 0.019 -0.030 -0.017 -0.000 -0.010 -0.008 -0.012) -> design valid on this leaf
+recf106rall18: shuffled targets with 'order signal' 1/10 (gains 0.003 0.013 0.015 0.009 -0.004 -0.021 -0.004 -0.012 0.000 -0.012) -> design valid on this leaf

@@ -1,0 +1,13 @@
+(d) power: 20 random run subsets (seed 10050), 40 null keys each; power = share with 'order signal'
+recf101r subsampled to 227 runs (recf124r's count): power 1.00
+recf101r subsampled to 203 runs (recf97r's count): power 1.00
+recf101r subsampled to 51 runs (recf106rall18's count): power 0.95
+recf101r subsampled to 19 runs (rec108v's count): power 0.60
+recf101r subsampled to 8 runs (recf108vg's count): power 0.30
+recf101r subsampled to 8 runs (recf108vagree's count): power 0.30
+recf188r subsampled to 51 runs (recf106rall18's count): power 1.00
+recf188r subsampled to 19 runs (rec108v's count): power 0.95
+recf188r subsampled to 8 runs (recf108vg's count): power 0.95
+recf188r subsampled to 8 runs (recf108vagree's count): power 0.95
+recf124r subsampled to 51 runs (recf106rall18's count): power 0.60
+recf97r subsampled to 51 runs (recf106rall18's count): power 0.60

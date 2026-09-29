@@ -1,0 +1,13 @@
+(a)+(c) real drafts, bins of 3, 100 null keys (seed 10020), 10 within-run shuffles (seed 10010)
+recf101r: runs 241, signs 2402; gain(v7) 0.0449; null mean 0.0094 p95 0.0285, >= v7 0/100 -> order signal
+recf188r: runs 87, signs 885; gain(v7) 0.0957; null mean 0.0084 p95 0.0434, >= v7 0/100 -> order signal
+recf124r: runs 227, signs 2105; gain(v7) 0.0300; null mean 0.0083 p95 0.0296, >= v7 3/100 -> order signal
+recf97r: runs 203, signs 1809; gain(v7) 0.0295; null mean 0.0063 p95 0.0241, >= v7 0/100 -> order signal
+rec108v: runs 19, signs 286; gain(v7) 0.0692; null mean 0.0092 p95 0.0376, >= v7 1/100 -> order signal
+recf108vg: runs 8, signs 285; gain(v7) 0.0732; null mean 0.0149 p95 0.0456, >= v7 0/100 -> order signal
+recf108vagree: runs 8, signs 179; gain(v7) 0.0447; null mean 0.0109 p95 0.0458, >= v7 9/100 -> no order signal
+recf106rall18: runs 51, signs 622; gain(v7) 0.0368; null mean 0.0168 p95 0.0384, >= v7 9/100 -> no order signal
+recf124r [bins of 2]: runs 227, signs 2105; gain(v7) 0.0300; null mean 0.0089 p95 0.0280, >= v7 1/100 -> order signal
+recf97r [bins of 2]: runs 203, signs 1809; gain(v7) 0.0295; null mean 0.0092 p95 0.0284, >= v7 5/100 -> order signal
+recf106rall18 [bins of 2]: runs 51, signs 622; gain(v7) 0.0368; null mean 0.0112 p95 0.0356, >= v7 2/100 -> order signal
+(a) positive control in-sample f.101r and f.188r: PASS
