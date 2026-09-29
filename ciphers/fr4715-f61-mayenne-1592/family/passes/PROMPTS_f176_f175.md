@@ -350,3 +350,11 @@ at the H392 sheets.
 H359's prompt verbatim with part 2 = SCRATCH/h396/sheet_01.jpg (R01-R20): f.61 L05/14 at three windows and the other 17 f.61 4-family tiles (H367
 geometry); script `h396_l05_14_tiebreak.py`, key `h396_items.tsv`. The runner saw the f.61 target shapes in H367's placement check (disclosed there);
 it did not look at the H396 sheet.
+
+## H398 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h398/sheet_01..08.jpg (R01-R86): VERIFY-F61-V11's own 80 f.101r target tokens (c1, c2, c4, c5; first
+occurrences) in V11's own tile format (v11_bowl.tile geometry, 12 per sheet), marker recoloured red (V11 drew it blue; the only change to V11's tiles,
+so H359's wording is true of them), plus H377's 6 known f.61 strips in the same tile format at H367's window. Script `h398_bowl_design.py`, key
+`h398_items.tsv`. Natives fetched once each this session: f327 sha1 115f9923 (differs from a2b0d98e on record: a server-side re-encode, as the
+F61-FAMILY-4 note on f.124r; H193's strips regenerated from it, h193_items.tsv byte-identical), f328 4a13be67 (as H230), f210 313f92b3 (as H367's
+fetch). The runner has not looked at any sheet.
