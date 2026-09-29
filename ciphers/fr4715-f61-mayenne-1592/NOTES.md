@@ -5940,3 +5940,12 @@ confirmed; one flag: L05/1 (reader code LOOPSTEM1, fitted cell q/s) answered R12
 Tomokiyo's S3 marks L05/1 with a dash ("---trop"), so the flag and the published markup agree: L05/1 would be a null, not a q/s letter. By the
 pre-stated rule a flag is not applied on one read: H413 re-reads it. What it means if it holds: one cross-column two-way token (H405's floor
 table) becomes a null -- the one meter move shape work can still make on f.61. No key, grade or reading. 1 call, cost estimate 1.5 USD.
+
+## Campaign step H413 (29 Sept 2026, 19:52-19:31 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- L05/1's LOOPBAR flag does not reproduce (1 vision call)
+
+`family/h413_l05_1_reread.py` (key `family/h413_items.tsv`, prompt note H413), committed before the call (470c6035's parent). One fresh blind Opus
+forced choice, H411's references and prompt; reply `family/passes/h413_reply.tsv`; result `family/h413_l05_1_reread_result.txt` (`--check` OK):
+**gate 18/18 known and the positive L03/2 -> R12 (LOOPBAR); L05/1 at W1 / W2 / W3: none / n / R12 -> pre-stated "the flag does not reproduce"**.
+LOOPSTEM1 stays as coded; nothing written to scripts/f61_positions_corrections.tsv. With H411 the record for L05/1 is LOOPBAR 2 reads (H411, H413
+W3), none 1, unclear 1 -- a sign the readers cannot place firmly, beside Tomokiyo's dash. The out-of-span QA (H410, H411, H413) thus confirms 26 of
+27 out-of-span sign codes on f.61 and leaves L05/1 unsettled. 1 call, cost estimate 1.5 USD.

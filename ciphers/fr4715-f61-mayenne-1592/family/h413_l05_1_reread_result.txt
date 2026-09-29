@@ -1,0 +1,2 @@
+gate: 18/18 known (>= 16); positive L03/2 -> R12 (must be R12)
+L05/1 windows W1-W3: ['NONE', 'N', 'R12'] -> the flag does not reproduce
