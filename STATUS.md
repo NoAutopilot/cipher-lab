@@ -2448,6 +2448,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 05:40 Pacific [12:40 UTC], account 3): Fable out on account 3 until 3 Oct; orchestrator and f.61 runner restarted on Opus 5.5
+
+- Account 3's Fable seven-day limit read rejected at 12:2x UTC (resets 01:00 Pacific [08:00 UTC] 3 Oct). The orchestrator ORCH-STANDBY-3 and f.61 runner 11 both failed at their next turn; the dispatcher restarted both on Opus 5.5 at 12:31: orchestrator session_0198Cv8ypBfBVfRToKVWx33M (check-in trig_011soLaGfrH2xpwS1zEioKdn :12, standby trig_01Qh6R4RC6bTmLCCaWUCMJR1 :40) and runner 12 session_012eShPsWwW3quuzzUNV7nW5 (trig_01QWFCgBhYExfaw1Vc3zKVtc :50, next row H302). The 12:1x check-in did not run; this note covers 11:15-12:40. Everything on account 3 runs on Opus 5.5 until the reset; five-hour limit reads allowed. Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: H301 done 11:20 (CH letterform result carried into the null tables, no cell change); F61-FAMILY-12 done 11:15 (V9 notes, meter 12 / 59 / 2 / 26 reproduced). Blocker unchanged: the 59 two-way choices and 26 unread-or-null; ASKS 88/89/93/99.
+- Debosnys: runner 3b ran H59-H62 (CPU): H59 D2 lead closed (sits inside a habit null, p 0.245), H60 c2 no-order holds only if true error is under about 30 pct, H61 folds circular as pre-registered, H62 R34 recheck untested-by-this-tool (its planted control fails). Orchestrator GO at 12:3x on H63 (fresh known-answer page, two reader calls) then H57, Opus 5.5 readers. Nothing read.
+- Housekeeping: 19 finished account-3 workers (swarm round 1, V5-V7, FAMILY-9/12, Birago audits, harvests) were still unarchived across the takeover; ledgered and archived now. The key livecheck in this fresh container shows EUROPEANA_API_KEY, DPLA_API_KEY and CORE_API_KEY absent (present in earlier account-3 containers).
+- Armstrong, Mercy: hold. Mailbox: not visible from account 3. Armstrong line B trigger trig_01Vt6e9NYCarWr6PqsxStwcd disabled at 12:37 UTC (idle since the re-plan; the earlier session's attempt was refused), session left unarchived for the owner-account orchestrator on handback.
+
 ### Orchestrator note (29 Sept 2026, 04:15 Pacific [11:15 UTC], account 3): runner 10 retired on context, runner 11 live; V9 notes being written
 
 - Account 3 holds the role (no owner-account line since 06:16). Counts 21 / 2 / 1 / 6, unchanged. Rate limit on this session: seven-day allowed_warning, not rejected.
