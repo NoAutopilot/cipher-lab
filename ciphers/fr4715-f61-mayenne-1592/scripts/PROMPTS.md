@@ -626,3 +626,8 @@ Sheet <scratch>/h239/sheet_01.jpg (family/h239_4pi_108r_2.py tiles; key family/h
 Sheet <scratch>/h237/sheet_01.jpg (family/h237_c6_glyph.py tiles; key family/h237_items.tsv; 11 tiles: f.61 C6 3 placed by eye and checked as crops, glossed C6 2
 (only two map to pass A), controls PHI 3 + C43 3). Sheet not seen. Prompt: H235's verbatim with 'h237/sheet_01.jpg' and '11 numbered tiles (Y01-Y11)',
 answer form 'Y01<TAB><group letter or unclear>', Y01 to Y11.
+
+## H254 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's ZHOOK by shape, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h254/sheet_01.jpg (family/h254_zhook_108r.py tiles; key family/h254_items.tsv; 19 tiles U01-U19: f.108r ZHOOK 7, anchors 4-head 6 + 2# 6).
+Sheet not seen. Prompt: H233's verbatim with 'h254/sheet_01.jpg', '19 numbered tiles (U01-U19)', answer form 'U01<TAB>A', U01 to U19.
