@@ -290,3 +290,7 @@ smaller writing lower in the strip is not the sign); look only at the sign the t
 stem run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer yes or no; if the marked sign cannot be told,
 answer n. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then R01..R70, nothing else."
 GATE and read-out as in the script's docstring.
+
+## H360 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+H359's prompt verbatim, four calls, one per chunk c1..c4 (part 2 = SCRATCH/h360_cK/sheet_01..03.jpg, R01-R55); script `h360_124r_4tri_split.py`, key
+`h360_items.tsv` committed with this section. The runner did not look at the H360 sheets.
