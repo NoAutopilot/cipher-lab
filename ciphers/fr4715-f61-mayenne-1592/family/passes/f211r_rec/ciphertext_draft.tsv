@@ -1,0 +1,19 @@
+line	position	sign	confidence	alt	why
+L02	1	VBAR_A	M		agree-flagged
+L02	2	SBS	M		agree-flagged
+L02	3	HASH4	H		agree
+L02	4	SBS	M		agree-flagged
+L02	5	EBR_B	L		agree-flagged
+L02	6	DBL	M		agree-flagged
+L02	7	4STEM	M		agree-flagged
+L02	8	SBS	M		agree-flagged
+L02	9	OTHER	L		agree-flagged
+L02	10	OTHER	L		agree-flagged
+L02	11	DBL	M		agree-flagged
+L02	12	DBL	M		agree-flagged
+L02	13	EBR_A	M	B:EBR_B	differ
+L02	14	EBR_B	M		agree-flagged
+L02	15	DBL	M		agree-flagged
+L02	16	DBL	M		agree-flagged
+L02	17	VBAR_A	M	B:EBR_B	differ
+L02	18	VBAR_A	L		agree-flagged

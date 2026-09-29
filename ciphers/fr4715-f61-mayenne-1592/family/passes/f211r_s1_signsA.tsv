@@ -1,0 +1,10 @@
+line	pos	sign	conf	segment	x_px	note
+L02	1	VBAR_A	m	s1	280	down-pointing triangle with bar, heavy; alt EBR_B
+L02	2	SBS	m	s1	435	two loops side by side on long descending stem; alt INF
+L02	3	HASH4	h	s1	585	dense crossed cluster with stems
+L02	4	SBS	m	s1	790	two loops side by side on stem; alt INF
+L02	5	EBR_B	l	s1	925	small squared r/gamma-like mark; alt VBAR_A
+L02	6	DBL	h	s1	1055	two loops stacked on a stem
+L02	7	4STEM	m	s1	1225	4 with crossed stem, small foot; alt 4TRI
+L02	8	SBS	m	s1	1395	two loops side by side on long stem; alt INF
+L02	9	OTHER	l	s1	1560	tall long-s-like stroke hooked at top, no loop; may be ordinary script; alt LOOPSTEM1

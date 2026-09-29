@@ -1,0 +1,10 @@
+line	pos	sign	conf	segment	x_px	note
+L02	1	OTHER	l	s2	200	tall long-s-like curved stroke, no loop; may be ordinary script
+L02	2	DBL	m	s2	350	stacked loops (8) on long stem; alt PHI
+L02	3	DBL	m	s2	510	stacked loops (8) on long stem; alt PHI
+L02	4	EBR_B	m	s2	630	small squared C open right; alt EBR_A
+L02	5	EBR_B	m	s2	750	squared C/gamma open right; alt EBR_A
+L02	6	DBL	m	s2	880	stacked loops on long stem; alt PHI
+L02	7	DBL	m	s2	1030	stacked loops on long stem; alt PHI
+L02	8	EBR_B	l	s2	1170	small r/gamma-like mark with notch; alt ISH
+L02	9	VBAR_A	l	s2	1290	small v/triangle closed at top

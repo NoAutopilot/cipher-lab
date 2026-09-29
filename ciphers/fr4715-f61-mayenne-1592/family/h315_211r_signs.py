@@ -22,7 +22,7 @@ pa, sa = load("A"); pb, sb = load("B")
 od = f"{HERE}/passes/f211r_rec"; os.makedirs(od, exist_ok=True)
 rp = subprocess.run([sys.executable, f"{ROOT}/tools/reconcile_passes.py", pa, pb, "--out-dir", od, "--method", "nw"], capture_output=True, text=True)
 ag = list(csv.DictReader(open(f"{od}/agreement.tsv"), delimiter="\t")) if os.path.exists(f"{od}/agreement.tsv") else []
-summary = [l for l in rp.stdout.splitlines() if l.strip()][-3:]
+summary = [l.replace(HERE + "/", "family/") for l in rp.stdout.splitlines() if l.strip()][-3:]
 txt = f"pass A {len(sa)} signs: {' '.join(sa)}\npass B {len(sb)} signs: {' '.join(sb)}\nreconcile_passes (nw): " + " | ".join(summary) + "\n"
 open(f"{HERE}/h315_211r_signs_result.txt.tmp", "w").write(txt)
 res = f"{HERE}/h315_211r_signs_result.txt"

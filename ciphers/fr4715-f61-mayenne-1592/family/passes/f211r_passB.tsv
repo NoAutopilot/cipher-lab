@@ -1,0 +1,19 @@
+line	pos	sign	conf	x_sheet	note
+L02	1	VBAR_A	m	280	small down-pointing triangle with bar at top-left; alt EBR_B
+L02	2	SBS	m	440	two loops side by side on a long stem; alt PHI
+L02	3	HASH4	h	590	dense crossed-4 hash cluster with stems
+L02	4	SBS	m	790	two loops side by side on stem; alt PHI
+L02	5	EBR_B	m	925	small squared gamma open right
+L02	6	DBL	m	1055	figure-8 loops on a stem; alt PHI
+L02	7	4STEM	m	1225	crossed 4 with stem descending, no triangle; alt CROSS
+L02	8	SBS	m	1390	two loops side by side on long stem; alt PHI
+L02	9	OTHER	l	1540	tall long-s-like curved stroke, no loop; may be ordinary script
+L02	10	OTHER	l	1680	tall long-s-like curved stroke, no loop; may be ordinary script
+L02	11	DBL	m	1830	stacked loops (8) on long stem; alt PHI
+L02	12	DBL	m	1990	stacked loops (8) on long stem; alt PHI
+L02	13	EBR_B	m	2110	small squared C open right; alt EBR_A
+L02	14	EBR_B	m	2230	squared C/gamma open right; alt EBR_A
+L02	15	DBL	m	2360	stacked loops on long stem; alt PHI
+L02	16	DBL	m	2510	stacked loops on long stem; alt PHI
+L02	17	EBR_B	l	2650	small r/gamma-like mark with notch; alt ISH
+L02	18	VBAR_A	l	2770	small v/triangle closed at top

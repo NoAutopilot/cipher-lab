@@ -4972,3 +4972,18 @@ writes its numbers as words ("six Jours", "huit Jours", "trois ou quatre Jours",
 from Mayenne's chancery on record has a 6 in its day. So the prior that a thumbnail sweep (the row's second half) finds a clear digit 6 in this hand is
 low; it is not run (0 Gallica requests), and the C6 argument stays on the markup and the missing glyph link (H303's paragraph). A later route, if one
 is wanted: a leaf from this chancery with a sum or a count in figures, which none of the folder's leaf descriptions mentions. No call, no value.
+
+## Campaign step H315 (29 Sept 2026, 13:04 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- fr.3983 f.211r's cipher run: two blind sign passes agree 16/18 (gate PASS)
+
+Pre-registered (PROMPTS section H315; `family/h315_211r_signs.py`, committed 3ebc851f before the calls). ASKS 93's desk-pack strip cut into two
+1700-px segments (`family/sheets/f211r_run_s1/s2.jpg`, overlap 220 px, each sign listed once by a fixed x rule); two independent blind Opus passes with
+the atlas codes (verbatim `family/passes/f211r_s{1,2}_signs{A,B}.tsv`), joined to sheet x and reconciled by `tools/reconcile_passes.py` (nw;
+`family/passes/f211r_rec/`). Result `family/h315_211r_signs_result.txt` (`--check` OK):
+- Both passes list **18 signs**; **16 of 18 columns identical (0.89), gate 0.80: PASS.** The two disagreements are EBR_A/EBR_B (col 13) and
+  VBAR_A/EBR_B (col 17).
+- Sequence: VBAR_A SBS HASH4 SBS EBR_B DBL 4STEM SBS OTHER OTHER DBL DBL [EBR_A|EBR_B] EBR_B DBL DBL [VBAR_A|EBR_B] VBAR_A. Most agreed columns are
+  at the passes' own m/l grade (agreed-H 1, agreed-uncertain 15).
+- Every class but the two OTHER is a class of f.61's hand (the atlas), consistent with H95's "same secretary". DBL (two loops on a stem, one above the
+  other) takes 6 of 18 signs.
+This is the sign half of the held-out check; the gloss half is H316 (or ASKS 93), and H317 scores the two against key v7. No reading. Vision calls
+this session: 7 (two here).
