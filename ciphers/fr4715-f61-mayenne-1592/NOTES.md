@@ -3795,3 +3795,16 @@ passes mostly called the a/n sign 4TRI (the agreed C43 class there reads a/n, n 
 sessions therefore mixes the two signs. That fits the verifier's decision not to endorse 4STEM p/c (VERIFY-F61-V5) and the fol. 179 adjudication
 failures (H186, H189). What would settle the 4-family is a blind attribute test (H180's design) on the shape difference between the c/p and a/n
 signs, with anchors taken from f.176v's two groups, not another code pass. Descriptive; nothing merged.
+
+## Campaign step H192 (29 Sept 2026, 01:17-01:19 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- two-leaf replication table (script-only)
+
+`family/h192_repl.py` (result `family/h192_repl_result.txt`, `--check` OK). Per class, agreed columns: top letter and share on f.176r (whole clear,
+h183 run) and f.176v (H177f run), each beside the wrong text's share of that letter. The pre-stated rule: same top letter, share >= 0.5 on both leaves,
+wrong-text share < 0.3 on both, n >= 10 on both.
+**Replicate (4): VBAR_A t (0.57 / 0.69; wrong 0.22 / 0.18), EBR l (0.62 / 0.63; 0.13 / 0.20), VBAR_B s (0.79 / 0.74; 0.20 / 0.22), SBS o (0.59 / 0.61;
+0.22 / 0.13).** Near misses: ZHOOK i on both leaves (0.36 / 0.61; wrong 0.06 / 0.06), short on f.176r's share because of its split columns (H178);
+INF u (0.69 / 0.70), where the wrong text's u share is 0.30/0.31 because u is v4's single letter for INF and the aligner forces it; HASH4 d on both
+(0.51 / 0.43; wrong 0.10 / 0.13); BETA m (0.40 / 0.74); CROSS s (0.36 / 0.53; wrong 0.09 / 0.05). No replication for 4TRI (n 0.34 on f.176r vs c 0.29
+on f.176v: the reader-code swap H190 found), C43/4PI/4STEM (codes absent or rare on one leaf).
+This agrees with VERIFY-F61-V5's endorsement (VBAR_A g/t, EBR_B l/y, SBS b/o, ZHOOK i/x) on a second leaf the verifier did not see, and adds VBAR_B s
+(v4's s already). For the verifier and F61-FAMILY-9; nothing merged.
