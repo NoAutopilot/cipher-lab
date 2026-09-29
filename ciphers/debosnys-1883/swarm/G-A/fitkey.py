@@ -20,7 +20,7 @@ if kind == 'control':
 elif kind == 'real':
     if not re.search(r'^FROZEN [0-9a-f]{7,}', open(os.path.join(H, '..', 'README.md')).read(), re.M): sys.exit('refused: not frozen')
     sys.path.insert(0, os.path.join(ROOT, 'scripts')); from settled_lines import settled_lines
-    toks = [s for l in settled_lines(ROOT, rest[0] + '_', drop_clear=True).values() for s in l if s not in ('_', 'MULTI')]
+    toks = [s for l in settled_lines(ROOT, rest[0], drop_clear=True).values() for s in l if s not in ('_', 'MULTI')]
 else: sys.exit('bad source')
 signs = sorted(set(toks)); sid = {s: i for i, s in enumerate(signs)}
 os.makedirs(W, exist_ok=True); cf = os.path.join(W, 'fit_' + re.sub(r'\W', '_', a.source) + f'_a{a.alpha}.cip')
