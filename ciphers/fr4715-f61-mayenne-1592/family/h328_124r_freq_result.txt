@@ -1,0 +1,3 @@
+real 148; (a) binned permutation (bins of 3 by f.124r token rank: PHI,4TRI,VBAR_A | H24,EBR_B,HASH4 | C43,BETA,ZBAR | 4STEM,RSIGN,DBL | EBR_A,VBAR_B,ISH): mean 124.9, p95 143, max 149, >= real 7/1000
+(b) frequency key (top-k fr16 letters, k = v7 cell size; letter order eiuasrnlot...): 132
+read-out: H325 lead stands (real > (a) p95 and > (b))

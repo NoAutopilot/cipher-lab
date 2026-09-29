@@ -5080,3 +5080,17 @@ commonest sign, so any key that gives common letters to common signs gains here 
 (H328) is needed before this is more than a lead; (2) 651 letters over 266 signs: the gloss spans are wider than the signs matched, so most letters
 cannot be matched by construction and the one-to-one cap is the sign count; (3) gloss letters are two-model-pass agreed (M), on a gloss hand the
 passes disagree on 58% of words. Not a merge, not a reading; f.124r stays HELD. No call.
+
+## Campaign step H328 (29 Sept 2026, 13:22 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- H325's f.124r result survives two frequency-matched controls (script-only)
+
+`family/h328_124r_freq.py` (written before running; it executes H325's data-building code unchanged; result `family/h328_124r_freq_result.txt`,
+`--check` OK). Same 165 agreed gloss words, 266 signs, one-to-one count; **real 148**.
+- **(a) binned permutation** (cells permuted only within bins of 3 classes adjacent in f.124r token rank: PHI,4TRI,VBAR_A | H24,EBR_B,HASH4 |
+  C43,BETA,ZBAR | 4STEM,RSIGN,DBL | EBR_A,VBAR_B,ISH): mean 124.9, **p95 143**, max 149, >= real **7/1000**.
+- **(b) frequency key** (each keyed class given the k most frequent French letters of fr16, k = its v7 cell size): **132**.
+- Pre-stated read-out: **"H325 lead stands"** (real > (a) p95 and > (b)).
+What this is: on fr.3982 f.124r, a leaf whose gloss was never loaded into any key, the letters two independent model passes agree on fall inside key
+v7's cells more often than under frequency-matched wrong keys -- a held-out check of the cells fitted on other leaves, at p about 0.007 against the
+binned control. What it is not: a reading, a merge, or a check of f.61 itself; the gloss letters are grade M (two model passes on a gloss hand they
+disagree on 58% of words); the margin over the binned p95 is 5 letters of 148; per-class hits (H325) are thin outside PHI/4TRI/VBAR_A/C43. For the
+verifier: the first held-leaf evidence for v7's cells as a set. No call.
