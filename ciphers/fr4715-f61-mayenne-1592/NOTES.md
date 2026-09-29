@@ -5886,3 +5886,10 @@ Other Mayenne-side items found for the record (not leads for this key): fr.3980 
 fr.3977 no.47 (news of Mayenne, 1589, to Maumarché), fr.3632 no.64 (Picardie, Nevers papers). Requests: archivesetmanuscrits 12 (home, 5 POST,
 5 GET, 1 item page), Gallica 7 (SRU 1, manifest 1, thumbnails 4, one 2000-px canvas 1); `family/requests.log`. Images in scratch only (sha1 in
 the log). No key, no reading. Cost ~0.6.
+
+## Campaign steps H405 and H406 (29 Sept 2026, 19:18-19:13 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- the meter's floor table; the VO3 packet (script and notes only)
+
+`family/h405_meter_floor.py` -> `family/F61_FLOOR.md` (`--check` OK). **Of f.61's 59 two-way tokens under key v8, 27 are in letter pairs the published table draws as one shared symbol (b/o, c/p, g/t, l/y, i/x, d/q) -- polyphony by design, which no shape test can narrow; 4 carry a fitted set that is not a table column (BETA m/s 2, LOOPSTEM1 q/s 1, CH e/m 1: a single-cell test could correct these, but only to a table column, still two-way unless it lands in e/r or a/n); and 28 are in the two pairs the table draws as two symbols (e/r: PHI 17; a/n: C43 9, 4STEM 1, 4PI 1), where no shape instrument has separated the letters (in f.61's hand H23, H24b, H401; elsewhere H71, H73). 44 of the 59 lie inside Tomokiyo's spans, 15 outside.** So the meter's
+two-way band is at its floor for shape work; it moves only by (a) a reading of a position with a control (H125: none exists at the length of
+f.61's out-of-span material alone), (b) new lettered material in f.61's hand (ASKS 88/89/93; fr.4699 by reproduction), or (c) a verifier grading
+Tomokiyo's in-span letters (published). H406: runner-15 section added to `family/V9_PAGE.md` for LANE VO3. Cost ~0.07.

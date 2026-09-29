@@ -155,3 +155,23 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
   (f.124r, f.101r, f.97r, f.188r, f.108v, f.106r); under it the f.97r split also raises the gain over the transcription (0.030 -> 0.034).
 - **f.61 L05/14 (H396):** a fresh read at three windows gives the bowl sign 3-0 (gates 18/20, 6/6), with H194 and Tomokiyo's c; f.61's 4TRI is the
   bowl sign 6/6, so the 4TRI_NB class moves no position on the target.
+
+## Added by runner 15 (H389-H406, 29 Sept 2026): after key v8
+
+- **Key v8 (F61-FAMILY-13, 921e9ebb) moves no f.61 band** (H389/H400): meter 12 / 59 / 2 / 26, spans 53/55, f.108r 74/84, as FAMILY-13's own file.
+  L05/14 now has four gated reads, bowl 3 (H194, H396 x3) to 1 (H367); V11's "stays c/p M until a third read" has its third read on the bowl side
+  (the grade move is the verifier's).
+- **V11's bowl disagreement is its prompt/anchors, not its tiles (H398):** V11's own 80 f.101r tiles, read blind under the runner's prompt and both
+  gates (18/20, 6/6), agree with the runner at kappa 0.68 and with V11 at 0.56; period-letter tracking on the same tokens: new 0.905
+  (P(a/n | bowl) 0.10), runner 0.809, V11 0.687. This bears on V11's "Not endorsed" line (bowl class still holds a/n): under gated reads it
+  mostly does not. Nothing changed in key v8.
+- **f.97r whole leaf (H399):** L01-L16 4TRI no-bowl 49 / bowl 5 (gates 18/20, 6/6); the completed f.97r split beats 20/20 random relabellings on
+  V10's instrument (0.0368 vs max 0.0326). Runner reads of f.97r are not in v8 (not audited by V11).
+- **e/r under PHI in f.61's hand (H401):** the runner looked at f.108r's 20 period-lettered PHI (13 e, 7 r; f.61's hand) for a yes/no attribute and
+  saw none; the forced-choice call (H402) was dropped by the pre-stated rule.
+- **The meter's floor (H405, family/F61_FLOOR.md):** of f.61's 59 two-way tokens, 27 are in pairs the published table draws as ONE shared symbol
+  (polyphony by design), 4 carry fitted sets that span two table symbols (BETA m/s, LOOPSTEM1 q/s, CH e/m), and 28 are in the two two-symbol pairs (e/r, a/n) where no shape instrument has separated the letters; 44 lie inside
+  Tomokiyo's spans. The two-way band moves only by a reading with a control, new lettered material in f.61's hand, or a grading of the in-span
+  letters (published).
+- **Key hunt (H404):** all 119 BnF hits for "Mayenne chiffre déchiffrement" read; one new Mayenne-chancery item, fr.3980 f.10 (to Sega, 11 Jan 1591,
+  cipher + decipherment, digitised), is figures and symbols, a separate cipher per Tomokiyo -- not f.61's family.
