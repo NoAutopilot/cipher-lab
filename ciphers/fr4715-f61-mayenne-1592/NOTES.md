@@ -5309,3 +5309,19 @@ the same draft shuffled 0.019 <= p95 0.067; run breaks at unkeyed signs and line
 written as `family/key_v7_cells_h354.tsv`, `python3 tools/partial_key_test.py --cells family/key_v7_cells_h354.tsv --draft
 family/passes/recf124r/ciphertext_draft.tsv` prints gain 0.0320, binned mean -0.0015, p95 0.0198, 0/100 -- H342's f.124r line exactly. h342-h351
 are left as they are (their results are cited; their --check stays OK). SYSTEM.md line updated (system_map_check exit 0). No call.
+
+## Campaign step H349 (29 Sept 2026, 16:23-16:29 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ; first run stopped at 16:23 for a loop bug fixed before any output) -- size-matched per-class order gain on the held leaves (script-only)
+
+`family/h349_seqgain_sizematch.py` (written and pushed before running; the draw-loop cap fixed and pushed before the rerun, no output seen; result
+`family/h349_seqgain_sizematch_result.txt`). Per class with >= 30 signs in runs, v7's cell against its size-matched alternatives (other v7 cells of the
+same size plus fr16-frequency-weighted random sets), share beaten, f.124r / f.97r; pre-stated 'supported' iff >= 0.95 on both:
+- **HASH4 d/q 1.00 / 1.00 -> supported.**
+- Mixed (one leaf): **C43 a/n 0.92 / 1.00; H24 i/x 0.51 / 1.00; ZBAR f/s 0.92 / 0.97.**
+- Not supported: PHI e/r 0.82 / 0.92; VBAR_A g/t 0.90 / 0.95 (f.97r: 37 of 39 = 0.949, printed rounded, just under the bar; the script's 'miss'
+  stands); BETA m/s 0.79 / 0.82; 4STEM a/c/e/n 0.80 / 0.57; 4TRI c/p/t 0.06 / 0.94; **EBR_B l/y (loaded folded i/l) 0.46 / 0.08 -- the lowest**;
+  one leaf only: VBAR_B s 0.91, EBR_A a/l/s 0.41.
+What it means: by an order statistic with size-matched alternatives, the held leaves back v7's d/q cell for HASH4 (the 4-head) outright, and C43 a/n,
+H24 i/x and ZBAR f/s on one leaf each. EBR_B's l/y is a period cell (fr.3984 f.176r's gloss, 95 counts, grade C); a weak cryptanalytic score does not
+outrank a period witness (rule 4) -- recorded as a pointer for the verifier: EBR_B's form split or its cell may not carry from f.176r's hand to
+f.124r/f.97r (H321/H322 already flag this class's forms). A per-class test at 95% of about 39 alternatives is strict and each class's share of the
+signal is small, so 'not supported' here is not 'wrong'. No cell changed. No call.

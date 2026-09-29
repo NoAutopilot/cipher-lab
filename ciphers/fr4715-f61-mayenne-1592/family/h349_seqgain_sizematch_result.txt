@@ -1,0 +1,25 @@
+recf124r: gain(v7) 0.0320
+  PHI      cell e/r      k 2 signs  656: beats 0.82 of 39 size-matched alternatives -> miss
+  4TRI     cell c/p/t    k 3 signs  388: beats 0.06 of 32 size-matched alternatives -> miss
+  VBAR_A   cell g/t      k 2 signs  396: beats 0.90 of 39 size-matched alternatives -> miss
+  H24      cell i/x      k 2 signs  193: beats 0.51 of 39 size-matched alternatives -> miss
+  EBR_B    cell i/l      k 2 signs  127: beats 0.46 of 39 size-matched alternatives -> miss
+  HASH4    cell d/q      k 2 signs   85: beats 1.00 of 39 size-matched alternatives -> pass
+  C43      cell a/n      k 2 signs   58: beats 0.92 of 39 size-matched alternatives -> miss
+  BETA     cell m/s      k 2 signs   46: beats 0.79 of 39 size-matched alternatives -> miss
+  ZBAR     cell f/s      k 2 signs   30: beats 0.92 of 39 size-matched alternatives -> miss
+  4STEM    cell a/c/e/n  k 4 signs   32: beats 0.80 of 30 size-matched alternatives -> miss
+recf97r: gain(v7) 0.0566
+  PHI      cell e/r      k 2 signs  538: beats 0.92 of 39 size-matched alternatives -> miss
+  4TRI     cell c/p/t    k 3 signs  313: beats 0.94 of 32 size-matched alternatives -> miss
+  VBAR_A   cell g/t      k 2 signs  204: beats 0.95 of 39 size-matched alternatives -> miss
+  H24      cell i/x      k 2 signs  168: beats 1.00 of 39 size-matched alternatives -> pass
+  EBR_B    cell i/l      k 2 signs  139: beats 0.08 of 39 size-matched alternatives -> miss
+  4STEM    cell a/c/e/n  k 4 signs   95: beats 0.57 of 30 size-matched alternatives -> miss
+  ZBAR     cell f/s      k 2 signs   58: beats 0.97 of 39 size-matched alternatives -> pass
+  BETA     cell m/s      k 2 signs   54: beats 0.82 of 39 size-matched alternatives -> miss
+  HASH4    cell d/q      k 2 signs   52: beats 1.00 of 39 size-matched alternatives -> pass
+  VBAR_B   cell s        k 1 signs   46: beats 0.91 of 22 size-matched alternatives -> miss
+  C43      cell a/n      k 2 signs   40: beats 1.00 of 39 size-matched alternatives -> pass
+  EBR_A    cell a/l/s    k 3 signs   40: beats 0.41 of 32 size-matched alternatives -> miss
+per class (both leaves): PHI=not supported 4TRI=not supported VBAR_A=not supported H24=mixed EBR_B=not supported HASH4=supported C43=mixed BETA=not supported ZBAR=mixed 4STEM=not supported VBAR_B=not supported(one leaf only) EBR_A=not supported(one leaf only)
