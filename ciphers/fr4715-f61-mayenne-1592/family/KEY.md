@@ -438,3 +438,29 @@ wider 4 / unread-or-null 25** of 99 (C6 unread/null), which is VERIFY-F61-V7's "
 Tokens changed against v5 on f.61: 4TRI c/p/t -> c/p x6, 4STEM -> a/n x1, HASH4 d/q/i -> d/q x1. The firm count does not move: each
 new value is a two-letter cell. The known spans are Tomokiyo's published letters (text: known); this is a test of the key, not a
 reading of anything outside his spans.
+
+## key v7 (F61-FAMILY-11, 29 Sept 2026, 10:1x UTC): ZHOOK's glyph link and the 4PI split (VERIFY-F61-V8)
+
+`build_key_v7.py` (with `--check`) writes `key_period_v7.tsv` from `key_period_v6.tsv` (not edited): every v6 line verbatim, except
+the two ZHOOK rows (kept as `#replaced-v6` comment lines) and f.188r's five 4PI r-tail rows (kept as `#moved-to-4PIR-v6`). Read v7
+with `build_key_v7.load_key_v7()`: as v6, plus `HELD` rows never load and `F61TOK` rows load only with `f61=True`; run
+`build_key_v7.f61_relabel()` on the f.61 lines so that f.61's two 4PI tokens carry the new class (L11 9 `4PIPI`, L01 12
+`4PIPI_UNREAD`). Only the four items in VERIFY-F61-V8's "What should merge" list are merged. **H240 as proposed (both f.61 4PI a/n) is
+not merged**: V8 did not endorse it, because L01 12 has no source.
+
+| row | v6 | v7 | counts written | provenance |
+|---|---|---|---|---|
+| ZHOOK, pooled | CELL i/x, note "no glyph link" | **CELL i/x, value unchanged**; note "the 2# sign = H24 cell, glyph link VERIFY-F61-V8", grade **S** | i 28, x 3 (f.176r/f.177r, as v5/v6) | V8 verdict (1), endorse: setF and setG each put all 10 Mayenne-hand ZHOOK tiles (f.61 3/3, f.108r 7/7) in the 2# class, and none of 27 in-hand distractors; within-leaf p 5e-05; both readers passed the f.274r gate (20/21) and the repeat control (8/8). f.108r's overlay letters at ZHOOK are i/j (= i) under a key-free positional alignment. Key source: `period` (the H24 cell), linked by a blind shape attribute. No meter token moves |
+| 4PI (the 4-head), pooled | a/d/n/q (frac rule) | **CELL d/q** | d 5 / 9, q 2 / 2 (f.101r / f.188r) | V8 verdict (2), the endorsed split: every period 4PI row lettered d/q is the 4-head in both readers (12/12), and so is every f.108r 4PI (9/9). Grade C on f.101r/f.188r (period decipherments); f.108r's 4PI reads d/q through this cell (overlay letters d 4, p 1). f.101r's other 4PI rows (n 3, a 1, c, m, p, s 1 each) were not shape-tested by V8 and stay as stray support rows outside the cell; f.188r's three unlettered `-` rows stay in 4PI |
+| 4PIR (the 4-with-r-tail form), f.188r | pooled into 4PI | **separate row, HELD, never loads** | a 5, n 1, e 1, h 1, r 1 | V8 "Finding for the key" and merge item 4: the f.188r rows lettered a/n are a third form ("4r-like", "4 + r-like tail"), described like several C43 tiles; split before any further pooling. No value endorsed; whether they are C43 miscoded as 4PI deserves one test (not run here) |
+| 4PIPI (f.61's 4-over-Pi), f.61 reading only (F61TOK) | 4PI a/d/n/q (pooled) | **L11 9: a/n, grade M**; **L01 12: unread** | L11 9 (Tomokiyo S5's n); L01 12 none | V8 verdict (2) P2: f.61's two 4PI are E in both readers, the only tiles either called "4 over Pi", so not the 4-head and not d/q. The registered E <-> a/n read-out failed, so a/n has no period glyph: L11 9 rests on Tomokiyo S5's single published letter (`published`, credited) at grade M; L01 12 lies outside the published spans and has no value |
+
+**Reproduction from the v7 file** (`build_key_v7_result.txt`): **yes**, every figure. f.61 five known spans **53/55** under the f.61
+reading key with f.61's 4PI relabelled (2000 permuted keys, seed 20260929: mean 0.276, p95 0.418, 0/2000 at or above; for information,
+the pooled key without the relabel gives 52/55, because d/q at L11 9 misses Tomokiyo's n); f.108r overlay **74/84** under the pooled
+key, EBR form A (mean 0.295, p95 0.405, 0/2000); V8's meter (verify_v8/meter_v8.py bands) with both cells as endorsed, f.61's two 4PI
+held unread: **firm 12 / two-way 58 / wider 2 / unread-or-null 27** of 99; and key v7 as merged, L11 9 a/n grade M and L01 12 unread:
+**12 / 59 / 2 / 26** (V8's variant added after scoring). Still wider than two: OTHER x2. The script also checks that every pooled class
+except 4PI loads exactly as in v6 (ZHOOK, HASH4, H24, 4STEM, 4TRI, C43, EBR, SBS, VBAR_A), that 4PIR, HASHLOOP and 4PIPI never load
+into the pooled key, and that `verify_v8/meter_v8.py --check` and `build_key_v6.py --check` still pass. The known spans are Tomokiyo's
+published letters (text: known); this is a test of the key, not a reading of anything outside his spans.

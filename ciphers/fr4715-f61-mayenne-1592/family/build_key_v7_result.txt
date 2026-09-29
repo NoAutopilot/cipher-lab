@@ -1,0 +1,11 @@
+v6 pooled classes (build_key_v6.load_key_v6): 23; v7 pooled classes: 23; loaded 4PIR/HASHLOOP/4PIPI: [] (must be none)
+changed in v7 pooled (EBR form B): 4PI a/d/n/q -> d/q
+unchanged from v6 (checked, pooled): ZHOOK=i/x HASH4=d/q H24=i/x 4STEM=a/c/e/n 4TRI=c/p/t C43=a/n EBR=i/l SBS=b/o VBAR_A=g/t; EBR form A = a/l/s
+ZHOOK rows: 2, value i/x (unchanged), note 'the 2# sign = H24 cell, glyph link VERIFY-F61-V8', grade S
+f.61 reading key over the pooled key: 4PIPI unread -> a/n; 4STEM a/c/e/n -> a/n; 4TRI c/p/t -> c/p; 4PIPI applies at L11 9 only (L01 12 relabelled 4PIPI_UNREAD, no entry)
+f.61 meter, V8 'both cells as endorsed' (f.61's two 4PI held unread): 99 signs: firm 12 / two-way 58 / wider 2 / unread-or-null 27; still wider: OTHER=e/q/i/p/r/s/t:2
+f.61 meter, key v7 as merged (L11 9 a/n grade M, L01 12 unread): 99 signs: firm 12 / two-way 59 / wider 2 / unread-or-null 26; still wider: OTHER=e/q/i/p/r/s/t:2
+f.61 five spans, f.61 reading key (j=i, v=u, y=i folded): v7 53/55 = 0.964; 2000 permuted mean 0.276 p95 0.418 max 0.673; >= key 0/2000
+f.61 five spans, pooled key, 4PI unrelabelled (info) (j=i, v=u, y=i folded): v7 52/55 = 0.945; 2000 permuted mean 0.288 p95 0.418 max 0.727; >= key 0/2000
+f.108r overlay, pooled key (EBR form A) (j=i, v=u, y=i folded): v7 74/84 = 0.881; 2000 permuted mean 0.295 p95 0.405 max 0.726; >= key 0/2000
+REPRODUCED: yes
