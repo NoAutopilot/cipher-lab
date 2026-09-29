@@ -4432,3 +4432,11 @@ test-key result and the result files, for VERIFY-F61-V6. Nothing merged. **H246 
 4STEM a/n, and 4PI a/n on f.61 (4-over-Pi) / d/q on f.108r (4-head). **f.61 five spans 53/55 (v5 53/55); f.108r overlay 74/84 (v5 74/84)**; with H202's S14 the
 f.108r loss is 1. Pre-stated gate: **PASS**. The permuted-key p95 drops (f.61 0.455 -> 0.436, f.108r 0.429 -> 0.405): narrower cells, same known-letter score.
 This is the combined candidate in family/v6_shape_candidates.tsv, handed to VERIFY-F61-V6; nothing merged, v5 stays current.
+
+## Campaign step H249 (29 Sept 2026, 04:54 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- a pre-registered shape-key prediction of f.108r L04-L06 (script-only)
+
+`scripts/f61shape_f108r_predict.py` -> `scripts/f61shape_f108r_prediction.txt` (`--check` OK), committed before any person's read of these rows' period gloss
+(ASKS 88). H120's beam and map with cells set by blind shape: 4-family by H216's bowl answers, HASH4 by H212's forms (4-head d/q; looped i/x, flagged: no period
+value). **Pairs changed from H120: L04 1 4TRI (no bowl) c/p -> a/n; L06 3 and L06 32 4STEM (bowl) a/n -> c/p; L06 40 HASH4 (4-head) i/x -> d/q. Beam letters
+differ at 8 of 85 positions** (L04 1 c->n, L04 2 z->m, L04 3 i->x, L06 3 n->p, L06 4 e->r, L06 32 n->p, L06 34 m->z, L06 40 i->d). When ASKS 88 is answered, those
+eight positions decide between the code-level map (H120) and the shape rule, on letters neither was fitted to. No reading; nothing merged.
