@@ -1,0 +1,29 @@
+recf101r: gain(v7) 0.0804
+  PHI      cell e/r      k 2 signs  699: beats 0.95 of 39 size-matched alternatives -> miss
+  4TRI     cell c/p/t    k 3 signs  411: beats 0.84 of 32 size-matched alternatives -> miss
+  VBAR_A   cell g/t      k 2 signs  365: beats 0.97 of 39 size-matched alternatives -> pass
+  H24      cell i/x      k 2 signs  199: beats 1.00 of 39 size-matched alternatives -> pass
+  EBR_B    cell i/l      k 2 signs  142: beats 0.77 of 39 size-matched alternatives -> miss
+  HASH4    cell d/q      k 2 signs  108: beats 1.00 of 39 size-matched alternatives -> pass
+  4STEM    cell a/c/e/n  k 4 signs   78: beats 0.87 of 30 size-matched alternatives -> miss
+  C43      cell a/n      k 2 signs   64: beats 0.95 of 39 size-matched alternatives -> miss
+  EBR_A    cell a/l/s    k 3 signs   55: beats 0.88 of 32 size-matched alternatives -> miss
+  BETA     cell m/s      k 2 signs   51: beats 0.87 of 39 size-matched alternatives -> miss
+  ZBAR     cell f/s      k 2 signs   43: beats 0.90 of 39 size-matched alternatives -> miss
+  INF      cell u        k 1 signs   41: beats 1.00 of 22 size-matched alternatives -> pass
+  RSIGN    cell c/m/n/p/s/t k 6 signs   39: beats 0.67 of 30 size-matched alternatives -> miss
+  VBAR_B   cell s        k 1 signs   35: beats 0.91 of 22 size-matched alternatives -> miss
+recf188r: gain(v7) 0.1794
+  PHI      cell e/r      k 2 signs  293: beats 1.00 of 38 size-matched alternatives -> pass
+  4TRI     cell c/p/t    k 3 signs   79: beats 1.00 of 31 size-matched alternatives -> pass
+  VBAR_A   cell g/t      k 2 signs   68: beats 1.00 of 38 size-matched alternatives -> pass
+  C43      cell a/n      k 2 signs   60: beats 1.00 of 38 size-matched alternatives -> pass
+  4STEM    cell a/c/e/n  k 4 signs   50: beats 0.97 of 30 size-matched alternatives -> pass
+  H24      cell i/x      k 2 signs   54: beats 1.00 of 38 size-matched alternatives -> pass
+  EBR_B    cell i/l      k 2 signs   49: beats 0.97 of 38 size-matched alternatives -> pass
+  ZBAR     cell f/s      k 2 signs   45: beats 0.97 of 38 size-matched alternatives -> pass
+  INF      cell u        k 1 signs   45: beats 1.00 of 22 size-matched alternatives -> pass
+  VBAR_B   cell s        k 1 signs   43: beats 1.00 of 22 size-matched alternatives -> pass
+  HASH4    cell d/q      k 2 signs   40: beats 1.00 of 38 size-matched alternatives -> pass
+in-sample classes supported on both leaves: 4 of 11 -> per-class test underpowered: H349's misses carry no information, only its passes stand
+per class (both leaves): PHI=mixed 4TRI=mixed VBAR_A=supported H24=supported EBR_B=mixed HASH4=supported 4STEM=mixed C43=mixed EBR_A=not supported(one leaf only) BETA=not supported(one leaf only) ZBAR=mixed INF=supported RSIGN=not supported(one leaf only) VBAR_B=mixed

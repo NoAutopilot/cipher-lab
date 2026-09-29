@@ -5347,3 +5347,13 @@ any added letters, is not tested here -- H358 is that control. Pointers for the 
 - **(b) f.97r, EBR_B <- a/l/s: 0.0667; 30 random 3-letter cells mean 0.0593, max 0.0683; beats 0.87 -> 'added letters, not these letters'.** H356's EBR
   pointer is withdrawn: on f.97r any other 3-letter cell for EBR_B scores about as well, so it says only that l/y fits f.97r's EBR_B poorly (H349).
 Pointer (a) is for the verifier and for the transcription side, not a cell change: v7's 4TRI and C43 cells are unchanged. No call.
+
+## Campaign step H355 (29 Sept 2026, 16:33-16:39 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- H349's per-class test is underpowered in-sample: its misses carry no information, only its passes stand (script-only)
+
+`family/h355_sizematch_posctl.py` (H349's code on the in-sample leaves, written and pushed before running; `family/h355_sizematch_posctl_result.txt`).
+**f.188r: every one of 11 classes >= 0.95 (PHI, 4TRI, VBAR_A, C43, H24, HASH4, INF, VBAR_B 1.00; 4STEM, EBR_B, ZBAR 0.97). f.101r: 4 of 10 (VBAR_A
+0.97, H24, HASH4, INF 1.00); PHI 0.95 (just under), C43 0.95, ZBAR 0.90, 4STEM 0.87, 4TRI 0.84, EBR_B 0.77, RSIGN 0.67.** Supported on both: 4 of 11
+-> pre-stated read-out **"per-class test underpowered: H349's misses carry no information, only its passes stand"**.
+Carried into H349's reading: HASH4 d/q (both held leaves) and C43 a/n, H24 i/x, ZBAR f/s (one each) stand as order support; **EBR_B's low held-leaf
+scores (0.46/0.08) are not evidence against its l/y cell** -- in-sample f.101r scores it 0.77 too. f.101r, the largest leaf, is also where the
+per-class test is weakest (gain 0.080 vs f.188r's 0.179): the per-class statistic tracks how cleanly a leaf's draft and hand fit v7 as a whole. No call.
