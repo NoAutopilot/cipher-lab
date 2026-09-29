@@ -4412,3 +4412,10 @@ Of those leaves, f.108v's interlines are clear words (not a decipherment), f.108
 f.211r has one ~15-sign glossed run (desk pack H96, waiting on ASKS 93), and **f.106r carries an interlinear period gloss that the model gloss readers could
 not read reliably (held; H228 showed its alignment misplaces letters)**. So the one route found is a person's read of f.106r's gloss above its looped hashes.
 H243 builds that desk pack (script-only); filing the ASKS row is left to the orchestrator. No call.
+
+## Campaign steps H242 (dropped) and H243 (29 Sept 2026, 04:50 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu)
+
+**H242 dropped:** the judge on f.61's 4-over-Pi is superseded by H240 -- Tomokiyo's published span S5 already reads it n, and the a/n cell keeps it.
+**H243 (script-only):** desk pack `family/images/person_pack_106r/` (`family/h243_pack_106r.py`, native btv1b9059406b f191): six row sheets of f.106r at 1.5x from 60 px
+above each cut row, 17 HASH4 signs arrowed and numbered N01-N17 (looped 13, 4-head 4 by H221; `key.tsv`, not for the reader), README with the question and an
+answer template (`family/passes/f106r_hash_person.tsv`). Filing an ASKS row for a person's read is the orchestrator's decision. No reading.
