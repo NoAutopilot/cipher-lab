@@ -1,0 +1,21 @@
+line	pos	code	v7_cell	bowl	shape_cell	tomokiyo	change
+L01	3	C43	a/n	no	a/n	-	
+L01	6	4TRI	c/p/t	yes	c/p/t	-	
+L01	12	4PI	d/q	no	a/n	-	CHANGE
+L03	7	4TRI	c/p/t	yes	c/p/t	c	
+L03	8	C43	a/n	no	a/n	a	
+L03	10	4TRI	c/p/t	yes	c/p/t	p	
+L03	13	C43	a/n	no	a/n	a	
+L05	6	4TRI	c/p/t	yes	c/p/t	p	
+L05	9	C43	a/n	no	a/n	a	
+L05	11	C43	a/n	no	a/n	a	
+L05	13	C43	a/n	no	a/n	n	
+L05	14	4TRI	c/p/t	no	a/n	c	CHANGE
+L08	2	C43	a/n	no	a/n	a	
+L08	7	C43	a/n	no	a/n	a	
+L08	11	4TRI	c/p/t	yes	c/p/t	p	
+L11	5	C43	a/n	no	a/n	n	
+L11	8	4STEM	a/c/e/n	no	a/n	-	CHANGE
+L11	9	4PI	d/q	no	a/n	n	CHANGE
+within PROPOSAL_v8_4tri.md's scope (4TRI only): 1 of 6 4TRI would change; L05/14 4TRI c/p/t -> a/n (Tomokiyo c)
+beyond its scope (the rule stretched to 4STEM/4PI, which the proposal does not cover; shown only as exposure): 3; L01/12 4PI d/q -> a/n (Tomokiyo -); L11/8 4STEM a/c/e/n -> a/n (Tomokiyo -); L11/9 4PI d/q -> a/n (Tomokiyo n)

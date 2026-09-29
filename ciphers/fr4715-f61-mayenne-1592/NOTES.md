@@ -5640,3 +5640,16 @@ on the two shape-relabelled drafts, now on disk for the verifier (`passes/rec108
 H379/H380 built them). **rec108v_shape: order signal on 0/3 shuffled targets (gain/p95 0.021/0.053, -0.002/0.045, 0.020/0.044); recf106r_shape: 0/3
 (0.019/0.025, 0.040/0.042, -0.027/0.035)** -> pre-stated: **H379's and H380's read-outs stand.** One f.106r shuffle sits close under its p95
 (0.040 vs 0.042), so f.106r's margin against this arm is thin. For VERIFY-F61-V10/V11; nothing applied. Script-only.
+
+## Campaign step H384 (29 Sept 2026, 18:01-18:02 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.61's exposure to the 4TRI split: one position, against Tomokiyo's letter (script-only)
+
+`family/h384_shape_at_f61.py` -> `family/h384_shape_at_f61_result.txt` (`--check` OK): the 18 f.61 4-family tokens with code, v7's cell, H367's bowl
+answer, the cell under the shape rule, and Tomokiyo's letter where H194's span alignment gives one.
+- **Within PROPOSAL_v8_4tri.md's scope (4TRI only): 1 of 6 would change -- L05/14, c/p/t -> a/n, where Tomokiyo prints c** (and H194 read bowl). So the
+  proposal, applied to f.61 on H367's answers, would move the one position where our shape read and the published letter disagree; the other five
+  4TRI keep c/p/t, and four of them carry Tomokiyo's c or p.
+- **Beyond the proposal's scope** (shown as exposure only; the proposal does not cover these codes): L01/12 4PI d/q, L11/8 4STEM a/c/e/n, L11/9 4PI
+  d/q would read a/n under a no-bowl rule stretched to them. **L11/9 is a 4PI where Tomokiyo prints n and v7's cell is d/q** -- a disagreement between
+  v7 and the published letter on the target, independent of the bowl question, for the verifier.
+What it means for VERIFY-F61-V11: on the target leaf the 4TRI split is nearly neutral (one token, and there the published letter argues for the
+transcription as it stands); the proposal's weight lies on the sister leaves and on key building, not on f.61's own tokens. Nothing applied.
