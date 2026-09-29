@@ -160,4 +160,4 @@ NEAR.md; rule 10 wording throughout.
 2026-09-29 03:40 | session_018dZR8GLsqcAxRTHKBiDGFu | H46 done | orchestrator reads get_session (CPU only) | X context at shuffle level, like most frequent signs; WAVE the one bound sign (beside PCT); H48 added; open H42, H47, H48.
 2026-09-29 04:36 | session_018dZR8GLsqcAxRTHKBiDGFu | H48 done | orchestrator reads get_session (CPU plus one strip by eye) | WAVE sits beside % in 16 of 25 cases (band 2-9), both orders, two separate signs on the image; open H42, H47.
 2026-09-29 04:37 | session_018dZR8GLsqcAxRTHKBiDGFu | H47 done | orchestrator reads get_session (CPU only) | variant test has no power at this N (planted = unrelated); H49 (synthesis for swarm round 2), H50 (price a c4 fourth pass) added; open H42, H49, H50.
-2026-09-29 04:38 | session_018dZR8GLsqcAxRTHKBiDGFu | H49 done | no computation | synthesis table for swarm round 2 in NOTES.md H49; open H42, H50.
+2026-09-29 04:37 | session_018dZR8GLsqcAxRTHKBiDGFu | H49 done | no computation | synthesis table for swarm round 2 in NOTES.md H49; open H42, H50.
