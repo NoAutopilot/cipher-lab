@@ -5684,3 +5684,20 @@ in the same call 0.74 (n 19) -- the same direction at the same strength, both to
 f.106r's is mixed (24/31, H368); neither has letters. Pointer for V11: if the verifier adopts the 4TRI split by shape, 4STEM looks like the same two
 signs under another code (the pooled a/c/e/n cell reads as a c/p half plus an a/n half), so a shape rule written for the sign rather than for the code
 would cover both. H387 (f.101r's full 4STEM bowl read against the period gloss) is the test. Nothing applied. Script-only.
+
+## Campaign step H387 (29 Sept 2026, 18:07-18:10 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.101r's 4STEM: the bowl tracks the period letter where the letter is c/p or a/n, but relabelling by shape adds nothing to the order gain at 25 tokens (1 vision call)
+
+`family/h387_101r_4stem_bowl.py`, key `family/h387_items.tsv`, prompt note H387, committed before the call; the runner did not look at the sheets.
+Targets: f.101r's 25 draft 4STEM with agreement and pass A matching (fewer than the 46 agreed, since pass A's position must carry 4STEM too), plus
+H377's 6 known strips. Native canvas 210 refetched once (sha1 313f92b3; 1 request). One blind Opus call; reply `family/passes/h387_reply.tsv`;
+result `family/h387_101r_4stem_bowl_result.txt`:
+- **Gate 1 18/20, gate 2 6/6 -- PASS.** 4STEM: bowl 9, no bowl 16.
+- **Period letter by bowl: bowl -> c/p/t 6, other 3; no bowl -> a/n 4, c/p/t 1, other 9, none 2. Agreement over tokens with a c/p/t or a/n letter
+  10/11 = 0.91 -> pre-stated "tracks"** -- but only 11 of 25 tokens carry such a letter; 12 carry another letter (4STEM's pooled v7 cell a/c/e/n
+  includes e), so the rule covers under half of f.101r's 4STEM.
+- **Order gain (4STEM relabelled bowl -> 4TRI, no -> C43, 25 tokens): as transcribed 0.0823, shape 0.0827; 20 permuted drafts mean 0.0835, max 0.0853
+  -> shape beats 6/20, pre-stated "no better than random".** At 25 tokens on a leaf of about 2,400 signs the change is small; the order statistic's
+  power for so few relabelled tokens was not measured, so this is a pre-stated miss of unknown power, not a refutation.
+What it means for V11: the 4STEM code on f.101r behaves partly like 4TRI (where its period letter is c/p or a/n, the bowl predicts it, 10/11) and
+partly not (half its tokens carry other letters, and the shape relabel does not move the order gain). A shape clause for 4STEM is not supported by
+this leaf beyond the letter cross-tab; PROPOSAL_v8_4tri.md's 4TRI-only scope looks right. Nothing applied. 1 call, cost estimate 1.5 USD.

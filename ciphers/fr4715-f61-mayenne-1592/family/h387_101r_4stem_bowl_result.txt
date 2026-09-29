@@ -1,0 +1,5 @@
+gate 1 (H193 anchors): 18/20 (>= 17); gate 2 (known part-2 strips): 6/6 (>= 5)
+4STEM targets 25: yes 9 no 16 n 0
+period letter by bowl (4STEM): no:a/n 4 no:c/p/t 1 no:none 2 no:other 9 yes:c/p/t 6 yes:other 3
+bowl-letter agreement over 4STEM 10/11 = 0.91 -> tracks
+4STEM relabelled by shape (25 tokens): order gain v7 as transcribed 0.0823, shape 0.0827; 20 permuted drafts mean 0.0835, max 0.0853 -> beats 6/20 -> no better than random
