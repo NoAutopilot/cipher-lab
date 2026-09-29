@@ -4214,3 +4214,16 @@ vision call (`family/passes/h226_reply.tsv`). Result `family/h226_hash4_strays_r
 What it says: most stray HASH4 letters sit on the ordinary 4-headed sign, so they are misplaced letters (f.188r's are all 'conflict' rows) or a wider
 cell than d/q -- the shape test cannot tell which. A few are other shapes (2# at b/e/s, one plain hash). **The looped form B does occur on f.101r** (3 here,
 1 in H220), so a period-letter table for B is possible after all: H227 shape-reads every remaining f.101r HASH4 position. Nothing merged.
+
+## Campaign step H227 (29 Sept 2026, 04:38-04:46 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- every f.101r HASH4 position by shape: the looped form is rare and never at d/q
+
+Pre-registered (PROMPTS section H227; `family/h227_loop_101r_all.py`, key `family/h227_items.tsv`, commit 8e3ba451, before the call; the runner did not look at
+the sheets). The 32 f.101r HASH4 positions (pass-A-mapped, with a letter) not read in H220/H226, anchors 10 H212 tiles, H224's five categories, one Opus
+vision call (`family/passes/h227_reply.tsv`). Result `family/h227_loop_101r_all_result.txt` (`--check` OK):
+- **Anchor control 9/10 PASS.** This step: A 27, B 1 (e), N 4.
+- **All three steps, f.101r HASH4 (61 read): 4-head A 47 -- d/q 34, c/p 3, a/n 2, i/x 1, other 7; looped B 5 -- i 1, p 2, y 1, e 1, d/q 0;** C 1, D 2, N 6.
+- Pre-stated read-out: B n 5 < 6 -> **"too few or mixed"**. Reported, not pre-registered: B at d/q 0 of 5 vs A 34 of 47, Fisher p about 0.003 (h190.fisher).
+What it says: on the leaf with a period decipherment the looped hash is rare and does not take d/q, which fits H213/H215's sequence and judge results
+on f.108v (the looped form is not d/q), but its own letters are scattered, so there is still no period value for it. With f.176 (H214), f.188r (H224) and
+f.101r (this step) done, no glossed leaf on disk holds enough looped signs to give it one. For the verifier: HASH4 proper (the 4-head) = d/q stands on
+three leaves' period letters; the looped form stays unread. Nothing merged.

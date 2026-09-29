@@ -1,0 +1,8 @@
+anchor control: 9 of 10 H212 tiles answered as their H212 group (gate >= 8): PASS
+this step: A 27 B 1 C 0 D 0 N 4  B letters: e
+f.101r HASH4 all steps, form A: d/q 34 i/x 1 c/p 3 a/n 2 other 7 (n 47)
+f.101r HASH4 all steps, form B: d/q 0 i/x 1 c/p 2 a/n 0 other 2 (n 5)
+f.101r HASH4 all steps, form C: d/q 0 i/x 0 c/p 0 a/n 0 other 1 (n 1)
+f.101r HASH4 all steps, form D: d/q 0 i/x 0 c/p 0 a/n 0 other 2 (n 2)
+f.101r HASH4 all steps, form N: d/q 2 i/x 1 c/p 0 a/n 1 other 2 (n 6)
+read-out: B n 5, top cell other 2/5 -> too few or mixed
