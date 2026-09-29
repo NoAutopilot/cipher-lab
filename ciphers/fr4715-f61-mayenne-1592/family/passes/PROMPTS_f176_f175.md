@@ -276,3 +276,17 @@ writing above or below the row is not the sign); look only at the sign the trian
 run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer yes or no; if the marked sign cannot be told,
 answer n. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then P01..P15, nothing else."
 GATE: repeat control >= 17/20, else CONTROL FAIL.
+
+## H359 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H193's bowl question on de Diou's fr.3982 f.124r 4TRI (50) and C43 (20) tokens, H199's design and prompt verbatim; script `h359_bowl_124r.py`, key
+`h359_items.tsv` committed with this section. Part 1 = H193's 60 strips regenerated from natives f327/f328 (sha1 a2b0d98e..., 4a13be67..., as H230;
+h193_items.tsv byte-identical). Part 2 cut from the native f.124r (sha1 8b7e91c7...). Disclosure: the runner looked at the top of target sheets 01 and
+02 for marker placement only; seeing the gloss sit below f.124r's cipher rows, it moved the marker above the strip (H199's layout) before the call.
+1 Opus vision call, inline reply, the text exactly as H199's with part 2's sheets and ids: "You are a blind shape reader. Use no tool but your image
+reader on the images named; run no command, write no file. Part 1: each item on <h193/sheet_01..03.jpg> (Q01-Q60, 20 per sheet) is a strip of a
+cipher row with a red triangle UNDER one sign; look only at the sign directly above that triangle. Part 2: each item on <h359/sheet_01..04.jpg>
+(R01-R70) is a strip of a cipher row with a red triangle ABOVE the strip, pointing down at one sign of the cipher row (the upper row of writing; any
+smaller writing lower in the strip is not the sign); look only at the sign the triangle points to. Question for every item: does that sign's vertical
+stem run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer yes or no; if the marked sign cannot be told,
+answer n. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then R01..R70, nothing else."
+GATE and read-out as in the script's docstring.
