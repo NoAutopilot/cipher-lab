@@ -1,0 +1,476 @@
+{
+ "all-lines": {
+  "lines": 56,
+  "tokens": 1147,
+  "pict_tokens": 60,
+  "stats": {
+   "bin1": {
+    "obs": 17,
+    "lo": 7,
+    "hi": 19,
+    "p_ge": 0.0966,
+    "p_le": 0.943
+   },
+   "bin2": {
+    "obs": 8,
+    "lo": 6,
+    "hi": 17,
+    "p_ge": 0.9071,
+    "p_le": 0.1651
+   },
+   "bin3": {
+    "obs": 17,
+    "lo": 6,
+    "hi": 17,
+    "p_ge": 0.0451,
+    "p_le": 0.9788
+   },
+   "bin4": {
+    "obs": 10,
+    "lo": 6,
+    "hi": 18,
+    "p_ge": 0.735,
+    "p_le": 0.3824
+   },
+   "bin5": {
+    "obs": 8,
+    "lo": 7,
+    "hi": 19,
+    "p_ge": 0.9715,
+    "p_le": 0.0582
+   },
+   "line_initial": {
+    "obs": 11,
+    "lo": 0,
+    "hi": 6,
+    "p_ge": 0.0002,
+    "p_le": 0.9999
+   },
+   "line_final": {
+    "obs": 5,
+    "lo": 0,
+    "hi": 6,
+    "p_ge": 0.1643,
+    "p_le": 0.9348
+   },
+   "pict_pict_adjacent": {
+    "obs": 4,
+    "lo": 1,
+    "hi": 7,
+    "p_ge": 0.4309,
+    "p_le": 0.781
+   },
+   "pict_X_adjacent": {
+    "obs": 13,
+    "lo": 9,
+    "hi": 21,
+    "p_ge": 0.7354,
+    "p_le": 0.3795
+   },
+   "planted_line_initial": {
+    "obs": 37,
+    "outside": true
+   }
+  }
+ },
+ "verse-c4": {
+  "lines": 20,
+  "tokens": 263,
+  "pict_tokens": 14,
+  "stats": {
+   "bin1": {
+    "obs": 7,
+    "lo": 0,
+    "hi": 6,
+    "p_ge": 0.0148,
+    "p_le": 0.9969
+   },
+   "bin2": {
+    "obs": 1,
+    "lo": 0,
+    "hi": 5,
+    "p_ge": 0.9396,
+    "p_le": 0.2517
+   },
+   "bin3": {
+    "obs": 3,
+    "lo": 0,
+    "hi": 6,
+    "p_ge": 0.5243,
+    "p_le": 0.7338
+   },
+   "bin4": {
+    "obs": 1,
+    "lo": 0,
+    "hi": 5,
+    "p_ge": 0.943,
+    "p_le": 0.2431
+   },
+   "bin5": {
+    "obs": 2,
+    "lo": 1,
+    "hi": 6,
+    "p_ge": 0.8867,
+    "p_le": 0.3137
+   },
+   "line_initial": {
+    "obs": 4,
+    "lo": 0,
+    "hi": 3,
+    "p_ge": 0.0135,
+    "p_le": 0.999
+   },
+   "line_final": {
+    "obs": 1,
+    "lo": 0,
+    "hi": 3,
+    "p_ge": 0.6969,
+    "p_le": 0.6989
+   },
+   "pict_pict_adjacent": {
+    "obs": 0,
+    "lo": 0,
+    "hi": 2,
+    "p_ge": 1.0,
+    "p_le": 0.3821
+   },
+   "pict_X_adjacent": {
+    "obs": 4,
+    "lo": 1,
+    "hi": 6,
+    "p_ge": 0.3255,
+    "p_le": 0.8813
+   },
+   "planted_line_initial": {
+    "obs": 10,
+    "outside": true
+   }
+  }
+ },
+ "prose-c1c2c3": {
+  "lines": 36,
+  "tokens": 884,
+  "pict_tokens": 46,
+  "stats": {
+   "bin1": {
+    "obs": 10,
+    "lo": 5,
+    "hi": 15,
+    "p_ge": 0.4881,
+    "p_le": 0.6531
+   },
+   "bin2": {
+    "obs": 7,
+    "lo": 4,
+    "hi": 14,
+    "p_ge": 0.8218,
+    "p_le": 0.3009
+   },
+   "bin3": {
+    "obs": 14,
+    "lo": 4,
+    "hi": 14,
+    "p_ge": 0.0392,
+    "p_le": 0.9803
+   },
+   "bin4": {
+    "obs": 9,
+    "lo": 4,
+    "hi": 14,
+    "p_ge": 0.5539,
+    "p_le": 0.601
+   },
+   "bin5": {
+    "obs": 6,
+    "lo": 5,
+    "hi": 15,
+    "p_ge": 0.9525,
+    "p_le": 0.1064
+   },
+   "line_initial": {
+    "obs": 7,
+    "lo": 0,
+    "hi": 5,
+    "p_ge": 0.0011,
+    "p_le": 0.9999
+   },
+   "line_final": {
+    "obs": 4,
+    "lo": 0,
+    "hi": 5,
+    "p_ge": 0.1066,
+    "p_le": 0.969
+   },
+   "pict_pict_adjacent": {
+    "obs": 4,
+    "lo": 0,
+    "hi": 5,
+    "p_ge": 0.2173,
+    "p_le": 0.921
+   },
+   "pict_X_adjacent": {
+    "obs": 9,
+    "lo": 6,
+    "hi": 17,
+    "p_ge": 0.8574,
+    "p_le": 0.2408
+   },
+   "planted_line_initial": {
+    "obs": 27,
+    "outside": true
+   }
+  }
+ },
+ "census": {
+  "STAR": {
+   "n": 10,
+   "lines": [
+    "c4a_L02",
+    "c4b_L01",
+    "c2a_L06",
+    "c2a_L07",
+    "c2a_L07",
+    "c2a_L11",
+    "c2a_L12",
+    "c2a_L15",
+    "c2b_L01",
+    "c2b_L08"
+   ],
+   "final": 1,
+   "initial": 0
+  },
+  "SUN": {
+   "n": 9,
+   "lines": [
+    "c4a_L03",
+    "c4b_L03",
+    "c1_L02",
+    "c2a_L02",
+    "c2a_L10",
+    "c2b_L03",
+    "c2b_L07",
+    "c3_L02",
+    "c3_L03"
+   ],
+   "final": 0,
+   "initial": 3
+  },
+  "PICT-ARROW": {
+   "n": 5,
+   "lines": [
+    "c4a_L09",
+    "c4b_L01",
+    "c2a_L07",
+    "c2a_L15",
+    "c2b_L09"
+   ],
+   "final": 2,
+   "initial": 0
+  },
+  "PICT-TREE": {
+   "n": 5,
+   "lines": [
+    "c1_L04",
+    "c2a_L02",
+    "c2a_L07",
+    "c2a_L13",
+    "c3_L01"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-LEAF": {
+   "n": 4,
+   "lines": [
+    "c4a_L12",
+    "c2a_L02",
+    "c2a_L12",
+    "c2b_L01"
+   ],
+   "final": 0,
+   "initial": 2
+  },
+  "PICT-FACE": {
+   "n": 4,
+   "lines": [
+    "c4b_L03",
+    "c1_L02",
+    "c2a_L02",
+    "c2b_L06"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "RAM": {
+   "n": 2,
+   "lines": [
+    "c4a_L04",
+    "c4b_L01"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-ANCHOR": {
+   "n": 2,
+   "lines": [
+    "c4a_L13",
+    "c2a_L15"
+   ],
+   "final": 0,
+   "initial": 2
+  },
+  "PICT-CROSSED": {
+   "n": 2,
+   "lines": [
+    "c4b_L05",
+    "c2a_L08"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-HORSE": {
+   "n": 2,
+   "lines": [
+    "c1_L01",
+    "c3_L01"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-RUNNER": {
+   "n": 2,
+   "lines": [
+    "c1_L03",
+    "c3_L01"
+   ],
+   "final": 0,
+   "initial": 1
+  },
+  "PICT-HOUSE": {
+   "n": 2,
+   "lines": [
+    "c2a_L05",
+    "c2a_L13"
+   ],
+   "final": 0,
+   "initial": 1
+  },
+  "PICT-HEART": {
+   "n": 1,
+   "lines": [
+    "c4a_L01"
+   ],
+   "final": 0,
+   "initial": 1
+  },
+  "PICT-GLASS": {
+   "n": 1,
+   "lines": [
+    "c4b_L05"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-BOTTLE": {
+   "n": 1,
+   "lines": [
+    "c2a_L02"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-EAGLE": {
+   "n": 1,
+   "lines": [
+    "c2a_L03"
+   ],
+   "final": 0,
+   "initial": 1
+  },
+  "PICT-FIGURE": {
+   "n": 1,
+   "lines": [
+    "c2a_L07"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-FISH": {
+   "n": 1,
+   "lines": [
+    "c2a_L10"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-BARREL": {
+   "n": 1,
+   "lines": [
+    "c2a_L10"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-JUG": {
+   "n": 1,
+   "lines": [
+    "c2a_L12"
+   ],
+   "final": 1,
+   "initial": 0
+  },
+  "PICT-CROWN": {
+   "n": 1,
+   "lines": [
+    "c2a_L16"
+   ],
+   "final": 0,
+   "initial": 0
+  },
+  "PICT-BIRD": {
+   "n": 1,
+   "lines": [
+    "c2a_L17"
+   ],
+   "final": 1,
+   "initial": 0
+  },
+  "PICT-D": {
+   "n": 1,
+   "lines": [
+    "c2b_L05"
+   ],
+   "final": 0,
+   "initial": 0
+  }
+ },
+ "verse_couplet_end_signs": [
+  "WAVE",
+  "X",
+  "CIRC-O",
+  "O-DASH2",
+  "VENUS",
+  "DELTA",
+  "DAGGER-O",
+  "PICT-ARROW",
+  "WAVE",
+  "S-CURL"
+ ],
+ "pictograms_at_couplet_end": [
+  "PICT-ARROW"
+ ],
+ "recurring_pictograms": {
+  "STAR": 10,
+  "SUN": 9,
+  "RAM": 2,
+  "PICT-ARROW": 5,
+  "PICT-LEAF": 4,
+  "PICT-ANCHOR": 2,
+  "PICT-FACE": 4,
+  "PICT-CROSSED": 2,
+  "PICT-HORSE": 2,
+  "PICT-RUNNER": 2,
+  "PICT-TREE": 5,
+  "PICT-HOUSE": 2
+ }
+}

@@ -889,3 +889,23 @@ doubled 0.030, bigram repetition 0.369; the mixed letters+syllables design with 
 above the band, hapax and bigram repetition below) -- the residual survives a settled transcription, so it is a
 property of the system, not of the reading. Grade S/M throughout; nothing read; status `open`. Costs: 4 Sonnet + 11
 Fable subagent calls for this row (the orchestrator reads the session).
+
+### H31, pictograms as units (29 Sept 2026, DEBOSNYS-RUNNER-3b, session_018dZR8GLsqcAxRTHKBiDGFu, CPU only)
+
+`scripts/h31_pictograms.py` (`h31_pictograms.json`) and `scripts/h31b_class_control.py` (`h31_class_control.json`), on
+the settled drafts with punctuation-class boxes dropped; pictograms are h3_unit_profile.py's shape class (PICT-* plus
+SUN, STAR, HEART, RAM): 23 ids, 60 tokens over 56 lines. Null: 10,000 within-line shuffles (every statistic can move
+under it). **Pictograms begin lines far more often than chance: 11 of 56 lines start with one against a null band of
+0-6 (expectation 2.95, p 0.0002)**; verse alone 4 of 20 (band 0-3, p 0.013), prose c1-c3 alone 7 of 36 (band 0-5,
+p 0.001). Line-final 5 (band 0-6), within-line fifths, pictogram-pictogram adjacency (4, band 1-7) and adjacency to X
+(13, band 9-21) are all inside their bands. Power: moving every pictogram to its line's first slot gives 37 line-initial
+(all lines), far outside, so the test can see an edge preference at this N. Class control (can differ, rule 3): among
+1,000 random sets of non-pictogram ids of the same token count (60), none reaches the pictograms' line-initial excess
+(8.05 against a random-set p97.5 of 3.47; rare-id sets, count <= 10, p97.5 4.91), while their line-final excess (2.05)
+is ordinary (rank 0.175). The lines they open: verse lines 2, 4, 13, 14 (PICT-HEART, SUN, PICT-LEAF, PICT-ANCHOR); c1
+L02 (SUN); c2a L02, L03, L05, L15 (PICT-LEAF, PICT-EAGLE, PICT-HOUSE, PICT-ANCHOR); c2b L07 (SUN); c3 L01
+(PICT-RUNNER). Only one of the ten couplet-end signs is a pictogram (PICT-ARROW, couplet 8). Reading: the pictograms
+are not decoration and not symmetric whole-word logograms (those would also crowd line ends); they are units that
+prefer a line's first slot, i.e. word- or phrase-initial units (a capital-like or determinative-like role, or
+word-initial syllables written as pictures). A structural result at grade S, nothing read; the named next step is H32
+(what precedes an interior pictogram). Status `open`.

@@ -1,0 +1,15 @@
+{
+ "pict_tokens": 60,
+ "pict_ids": 23,
+ "line_initial": 11.0,
+ "line_final": 5.0,
+ "expected": 2.95,
+ "initial_excess": 8.05,
+ "final_excess": 2.05,
+ "rank_initial_vs_random_sets": 0.0,
+ "rank_final_vs_random_sets": 0.175,
+ "random_initial_excess_p975": 3.4749110577028426,
+ "random_final_excess_p975": 4.96699643370368,
+ "rank_initial_vs_rare_sets": 0.0,
+ "rare_initial_excess_p975": 4.913054420886895
+}
