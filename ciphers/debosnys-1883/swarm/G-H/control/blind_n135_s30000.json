@@ -1,0 +1,288 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 135,
+ "K": 57,
+ "start": 30000,
+ "seed": 30000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.1303,
+   "share": 0.193,
+   "link": 0.054,
+   "signs": [
+    "arr",
+    "del",
+    "fem",
+    "hd",
+    "lam",
+    "sqp"
+   ]
+  },
+  {
+   "kl": 0.5416,
+   "share": 0.133,
+   "link": 0.152,
+   "signs": [
+    "del",
+    "fem",
+    "lam",
+    "sqp"
+   ]
+  },
+  {
+   "kl": 0.5461,
+   "share": 0.156,
+   "link": 0.112,
+   "signs": [
+    "b",
+    "gam",
+    "gs",
+    "m",
+    "three",
+    "uh",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.6079,
+   "share": 0.244,
+   "link": 0.084,
+   "signs": [
+    "c",
+    "eh",
+    "grl",
+    "grr",
+    "iot",
+    "ni",
+    "ns",
+    "oh",
+    "tri",
+    "y..",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.6556,
+   "share": 0.126,
+   "link": 0.149,
+   "signs": [
+    "ni",
+    "ns",
+    "oh",
+    "tri",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.7033,
+   "share": 0.178,
+   "link": 0.042,
+   "signs": [
+    ":",
+    "bar",
+    "nu",
+    "o",
+    "plus",
+    "r.",
+    "v",
+    "x."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": 0.0796,
+   "rawgap": 0.2817,
+   "unikl": 0.2021,
+   "n_space_signs": 8,
+   "init": 0
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.0471,
+   "rawgap": 0.1463,
+   "unikl": 0.1934,
+   "n_space_signs": 8,
+   "init": 0
+  },
+  {
+   "lang": "it",
+   "gap": -0.1293,
+   "rawgap": 0.0271,
+   "unikl": 0.1564,
+   "n_space_signs": 12,
+   "init": 6
+  },
+  {
+   "lang": "pt",
+   "gap": -0.1607,
+   "rawgap": 0.0256,
+   "unikl": 0.1863,
+   "n_space_signs": 12,
+   "init": 2
+  },
+  {
+   "lang": "es",
+   "gap": -0.2212,
+   "rawgap": -0.0874,
+   "unikl": 0.1337,
+   "n_space_signs": 15,
+   "init": 6
+  },
+  {
+   "lang": "pl",
+   "gap": -0.2226,
+   "rawgap": 0.0178,
+   "unikl": 0.2405,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "lt",
+   "gap": -0.291,
+   "rawgap": -0.109,
+   "unikl": 0.182,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "da",
+   "gap": -0.3394,
+   "rawgap": -0.1028,
+   "unikl": 0.2366,
+   "n_space_signs": 8,
+   "init": 1
+  },
+  {
+   "lang": "fr",
+   "gap": -0.3501,
+   "rawgap": -0.192,
+   "unikl": 0.1581,
+   "n_space_signs": 7,
+   "init": 1
+  },
+  {
+   "lang": "nl",
+   "gap": -0.3622,
+   "rawgap": -0.0275,
+   "unikl": 0.3348,
+   "n_space_signs": 12,
+   "init": 0
+  },
+  {
+   "lang": "de",
+   "gap": -0.4227,
+   "rawgap": -0.2188,
+   "unikl": 0.2039,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "en",
+   "gap": -0.5686,
+   "rawgap": -0.3202,
+   "unikl": 0.2484,
+   "n_space_signs": 9,
+   "init": 0
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": 0.1749,
+  "space_signs": [
+   "c",
+   "f",
+   "gam",
+   "hd",
+   "lam",
+   "ni",
+   "tri"
+  ],
+  "text_head": "non fuit lites fino in ac i in diti f efle in pro ipfe dein seret iminerentis ordinam fentiandem in fectfi atis in in tant mifieritane "
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": 0.1749
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.0312
+  }
+ ],
+ "a_space_precision": 0.115,
+ "a_space_recall": 0.125,
+ "recovery": 0.036,
+ "recovery_screen_de": 0.0631,
+ "screen_rank_de": 11,
+ "b_tight_merges": [
+  [
+   "bar",
+   "plus"
+  ],
+  [
+   ":",
+   "b"
+  ],
+  [
+   "iot",
+   "y.."
+  ],
+  [
+   "uh",
+   "zzz"
+  ],
+  [
+   ":",
+   "b",
+   "ns"
+  ],
+  [
+   "nu",
+   "oh"
+  ],
+  [
+   "arr",
+   "bar",
+   "plus"
+  ],
+  [
+   "r.",
+   "sqp"
+  ],
+  [
+   "r.",
+   "sqp",
+   "three"
+  ],
+  [
+   "iot",
+   "uh",
+   "y..",
+   "zzz"
+  ],
+  [
+   ":",
+   "b",
+   "ns",
+   "r.",
+   "sqp",
+   "three"
+  ],
+  [
+   "arr",
+   "bar",
+   "plus",
+   "z"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.099,
+ "b_pairs": 253,
+ "b_chance_pair_precision": 0.078
+}

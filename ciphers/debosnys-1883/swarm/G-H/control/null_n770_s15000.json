@@ -1,0 +1,314 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 770,
+ "K": 87,
+ "start": 15000,
+ "seed": 15000,
+ "shuffled": true,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.9219,
+   "share": 0.208,
+   "link": 0.241,
+   "signs": [
+    "ah",
+    "arr",
+    "g",
+    "grr",
+    "h.",
+    "inf",
+    "lam",
+    "o.",
+    "ru",
+    "three",
+    "uu"
+   ]
+  },
+  {
+   "kl": 1.023,
+   "share": 0.231,
+   "link": 0.212,
+   "signs": [
+    "ah",
+    "arr",
+    "eh",
+    "g",
+    "grr",
+    "h.",
+    "inf",
+    "lam",
+    "nu",
+    "o.",
+    "ru",
+    "three",
+    "uu"
+   ]
+  },
+  {
+   "kl": 1.1316,
+   "share": 0.19,
+   "link": 0.245,
+   "signs": [
+    "bar",
+    "c.",
+    "ih",
+    "m.",
+    "mu",
+    "nee",
+    "oh",
+    "pi",
+    "z"
+   ]
+  },
+  {
+   "kl": 1.1355,
+   "share": 0.099,
+   "link": 0.332,
+   "signs": [
+    "ah",
+    "grr",
+    "lam",
+    "uu"
+   ]
+  },
+  {
+   "kl": 1.1898,
+   "share": 0.27,
+   "link": 0.187,
+   "signs": [
+    "ah",
+    "arr",
+    "eh",
+    "g",
+    "grr",
+    "h.",
+    "inf",
+    "lam",
+    "nu",
+    "o.",
+    "ru",
+    "sqp",
+    "three",
+    "uu",
+    "x.",
+    "zs"
+   ]
+  },
+  {
+   "kl": 1.2964,
+   "share": 0.255,
+   "link": 0.224,
+   "signs": [
+    "bar",
+    "c.",
+    "h",
+    "ih",
+    "m.",
+    "mu",
+    "nee",
+    "ni",
+    "oh",
+    "p.",
+    "pi",
+    "plus",
+    "z"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": -1.6594,
+   "rawgap": -0.3318,
+   "unikl": 1.3276,
+   "n_space_signs": 20,
+   "init": 2
+  },
+  {
+   "lang": "da",
+   "gap": -1.8753,
+   "rawgap": 0.0517,
+   "unikl": 1.927,
+   "n_space_signs": 1,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -2.1778,
+   "rawgap": -1.5822,
+   "unikl": 0.5956,
+   "n_space_signs": 9,
+   "init": 1
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1821,
+   "rawgap": -0.3638,
+   "unikl": 1.8183,
+   "n_space_signs": 21,
+   "init": 1
+  },
+  {
+   "lang": "it",
+   "gap": -2.2039,
+   "rawgap": -0.4236,
+   "unikl": 1.7803,
+   "n_space_signs": 23,
+   "init": 2
+  },
+  {
+   "lang": "pl",
+   "gap": -2.4231,
+   "rawgap": -1.9836,
+   "unikl": 0.4395,
+   "n_space_signs": 14,
+   "init": 2
+  },
+  {
+   "lang": "de",
+   "gap": -2.5409,
+   "rawgap": -2.1243,
+   "unikl": 0.4166,
+   "n_space_signs": 7,
+   "init": 6
+  },
+  {
+   "lang": "fr",
+   "gap": -2.6394,
+   "rawgap": 0.0128,
+   "unikl": 2.6522,
+   "n_space_signs": 0,
+   "init": 1
+  },
+  {
+   "lang": "es",
+   "gap": -2.6636,
+   "rawgap": -0.334,
+   "unikl": 2.3296,
+   "n_space_signs": 26,
+   "init": 3
+  },
+  {
+   "lang": "pt",
+   "gap": -2.723,
+   "rawgap": -0.3338,
+   "unikl": 2.3892,
+   "n_space_signs": 24,
+   "init": 3
+  },
+  {
+   "lang": "lt",
+   "gap": -2.7416,
+   "rawgap": -2.3305,
+   "unikl": 0.4111,
+   "n_space_signs": 17,
+   "init": 4
+  },
+  {
+   "lang": "en",
+   "gap": -2.7908,
+   "rawgap": -2.2856,
+   "unikl": 0.5052,
+   "n_space_signs": 15,
+   "init": 4
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": -1.6581,
+  "space_signs": [
+   "H",
+   "N",
+   "a",
+   "bas",
+   "cross",
+   "del",
+   "gs",
+   "hk",
+   "j",
+   "nee",
+   "ni",
+   "o..",
+   "pi",
+   "r",
+   "tri..",
+   "u",
+   "z"
+  ],
+  "text_head": "nifiiii vici ii iii ifiiiiciiiiiii in fii iifiiiii itiiiiii iiiifii iiiiiiiiiificiitiiifiiiiio iiii iiiiiiiiiiiti finii iiiciiiii ifiiiiiitiiii ifiiiilitiiiii iiiiii iiii c i if filii iiii iiii iiitii"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": -1.6581
+  },
+  {
+   "lang": "da",
+   "gap": -1.8753
+  }
+ ],
+ "a_space_precision": 0.167,
+ "a_space_recall": 0.139,
+ "recovery": 0.0786,
+ "recovery_screen_de": 0.0507,
+ "screen_rank_de": 7,
+ "b_tight_merges": [
+  [
+   "bar",
+   "c."
+  ],
+  [
+   "lam",
+   "uu"
+  ],
+  [
+   "bar",
+   "c.",
+   "mu"
+  ],
+  [
+   ":",
+   "plus"
+  ],
+  [
+   "arr",
+   "g"
+  ],
+  [
+   "h.",
+   "o."
+  ],
+  [
+   "ns",
+   "tri"
+  ],
+  [
+   "sqp",
+   "zs"
+  ],
+  [
+   "x.",
+   "y.."
+  ],
+  [
+   "gam",
+   "three"
+  ],
+  [
+   "ah",
+   "lam",
+   "uu"
+  ],
+  [
+   "i",
+   "r."
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.086,
+ "b_pairs": 35,
+ "b_chance_pair_precision": 0.056
+}

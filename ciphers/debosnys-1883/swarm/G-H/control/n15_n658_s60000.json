@@ -1,0 +1,310 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 658,
+ "K": 79,
+ "start": 60000,
+ "seed": 60000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.5017,
+   "share": 0.191,
+   "link": 0.193,
+   "signs": [
+    ":",
+    "eh",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "ki",
+    "l",
+    "ns",
+    "o.",
+    "tri",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5189,
+   "share": 0.144,
+   "link": 0.159,
+   "signs": [
+    "bar",
+    "cross",
+    "del",
+    "g",
+    "gam",
+    "lam",
+    "m.",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.5329,
+   "share": 0.173,
+   "link": 0.245,
+   "signs": [
+    ":",
+    "eh",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "ki",
+    "l",
+    "ns",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5504,
+   "share": 0.205,
+   "link": 0.143,
+   "signs": [
+    "bar",
+    "c.",
+    "cross",
+    "del",
+    "g",
+    "gam",
+    "lam",
+    "m.",
+    "plus",
+    "sqp",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.5512,
+   "share": 0.179,
+   "link": 0.178,
+   "signs": [
+    "arr",
+    "gs",
+    "j",
+    "m",
+    "n",
+    "r",
+    "r.",
+    "ru",
+    "s.",
+    "three",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.5539,
+   "share": 0.207,
+   "link": 0.178,
+   "signs": [
+    ":",
+    "eh",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "ki",
+    "l",
+    "ni",
+    "ns",
+    "o.",
+    "tri",
+    "y.."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": -1.4857,
+   "rawgap": -0.3152,
+   "unikl": 1.1705,
+   "n_space_signs": 14,
+   "init": 6
+  },
+  {
+   "lang": "da",
+   "gap": -1.5098,
+   "rawgap": -0.95,
+   "unikl": 0.5598,
+   "n_space_signs": 14,
+   "init": 5
+  },
+  {
+   "lang": "nl",
+   "gap": -1.7551,
+   "rawgap": -1.1812,
+   "unikl": 0.574,
+   "n_space_signs": 13,
+   "init": 5
+  },
+  {
+   "lang": "pl",
+   "gap": -2.0205,
+   "rawgap": -1.6986,
+   "unikl": 0.3219,
+   "n_space_signs": 11,
+   "init": 1
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.0896,
+   "rawgap": -0.2964,
+   "unikl": 1.7932,
+   "n_space_signs": 27,
+   "init": 6
+  },
+  {
+   "lang": "it",
+   "gap": -2.101,
+   "rawgap": -0.385,
+   "unikl": 1.716,
+   "n_space_signs": 26,
+   "init": 2
+  },
+  {
+   "lang": "de",
+   "gap": -2.1665,
+   "rawgap": -1.7411,
+   "unikl": 0.4254,
+   "n_space_signs": 9,
+   "init": 2
+  },
+  {
+   "lang": "lt",
+   "gap": -2.1941,
+   "rawgap": -1.7697,
+   "unikl": 0.4244,
+   "n_space_signs": 11,
+   "init": 6
+  },
+  {
+   "lang": "fr",
+   "gap": -2.3543,
+   "rawgap": -1.9931,
+   "unikl": 0.3612,
+   "n_space_signs": 14,
+   "init": 4
+  },
+  {
+   "lang": "es",
+   "gap": -2.517,
+   "rawgap": -0.2888,
+   "unikl": 2.2282,
+   "n_space_signs": 25,
+   "init": 6
+  },
+  {
+   "lang": "en",
+   "gap": -2.5339,
+   "rawgap": -2.0318,
+   "unikl": 0.5021,
+   "n_space_signs": 12,
+   "init": 1
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6523,
+   "rawgap": -0.3343,
+   "unikl": 2.3179,
+   "n_space_signs": 23,
+   "init": 1
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": -1.4857,
+  "space_signs": [
+   ")",
+   "ah",
+   "arr",
+   "del",
+   "e",
+   "eh",
+   "grl",
+   "ki",
+   "ni",
+   "ru",
+   "smil",
+   "smir",
+   "uh",
+   "zzz"
+  ],
+  "text_head": "iiiiicitii iiiiifiiim ii i ciificifit iii iifiit iiitui iii iibfifiiti fiii i ii ii fuiiific iiitiiifiii fui fiitii iiiiinifiimi iii iiti tii iiiffiiicitiiiiiii iii ii ti fiiiii nifiitui ii i iiii iff"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": -1.4857
+  },
+  {
+   "lang": "da",
+   "gap": -1.5098
+  }
+ ],
+ "a_space_precision": 0.061,
+ "a_space_recall": 0.05,
+ "recovery": 0.0635,
+ "recovery_screen_de": 0.0115,
+ "screen_rank_de": 7,
+ "b_tight_merges": [
+  [
+   "h.",
+   "iot"
+  ],
+  [
+   "b",
+   "k"
+  ],
+  [
+   "f",
+   "oh"
+  ],
+  [
+   "n",
+   "s."
+  ],
+  [
+   "P",
+   "b",
+   "k"
+  ],
+  [
+   "bar",
+   "bas"
+  ],
+  [
+   "o.",
+   "tri"
+  ],
+  [
+   "h.",
+   "iot",
+   "n."
+  ],
+  [
+   "grr",
+   "ih"
+  ],
+  [
+   ":",
+   "ns"
+  ],
+  [
+   "c.",
+   "sqp"
+  ],
+  [
+   "lam",
+   "plus"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.231,
+ "b_pairs": 26,
+ "b_chance_pair_precision": 0.054
+}

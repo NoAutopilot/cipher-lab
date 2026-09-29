@@ -1,0 +1,328 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 1200,
+ "K": 81,
+ "start": 45000,
+ "seed": 45000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.0881,
+   "share": 0.181,
+   "link": 0.311,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "oh",
+    "p.",
+    "uh",
+    "uu",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.1603,
+   "share": 0.179,
+   "link": 0.214,
+   "signs": [
+    "del",
+    "hk",
+    "lam",
+    "m.",
+    "mal",
+    "pi",
+    "s.",
+    "sqp",
+    "x.",
+    "z"
+   ]
+  },
+  {
+   "kl": 0.1761,
+   "share": 0.163,
+   "link": 0.127,
+   "signs": [
+    "a",
+    "b",
+    "c",
+    "ds",
+    "e",
+    "f",
+    "grl",
+    "gs",
+    "h",
+    "i",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "u",
+    "v",
+    "w",
+    "zs"
+   ]
+  },
+  {
+   "kl": 0.1841,
+   "share": 0.161,
+   "link": 0.178,
+   "signs": [
+    "a",
+    "b",
+    "c",
+    "ds",
+    "e",
+    "f",
+    "grl",
+    "gs",
+    "h",
+    "i",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "u",
+    "v",
+    "w"
+   ]
+  },
+  {
+   "kl": 0.1906,
+   "share": 0.203,
+   "link": 0.185,
+   "signs": [
+    "del",
+    "gam",
+    "hd",
+    "hk",
+    "lam",
+    "m.",
+    "mal",
+    "pi",
+    "s.",
+    "sqp",
+    "x.",
+    "z"
+   ]
+  },
+  {
+   "kl": 0.2064,
+   "share": 0.17,
+   "link": 0.279,
+   "signs": [
+    "del",
+    "lam",
+    "m.",
+    "mal",
+    "pi",
+    "s.",
+    "sqp",
+    "x.",
+    "z"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -0.8178,
+   "rawgap": -0.7504,
+   "unikl": 0.0675,
+   "n_space_signs": 19,
+   "init": 2
+  },
+  {
+   "lang": "nl",
+   "gap": -1.4352,
+   "rawgap": -0.9296,
+   "unikl": 0.5055,
+   "n_space_signs": 19,
+   "init": 6
+  },
+  {
+   "lang": "la",
+   "gap": -1.7178,
+   "rawgap": -0.3316,
+   "unikl": 1.3863,
+   "n_space_signs": 15,
+   "init": 4
+  },
+  {
+   "lang": "lt",
+   "gap": -1.7814,
+   "rawgap": -1.3498,
+   "unikl": 0.4316,
+   "n_space_signs": 17,
+   "init": 3
+  },
+  {
+   "lang": "pl",
+   "gap": -1.7879,
+   "rawgap": -1.3088,
+   "unikl": 0.4792,
+   "n_space_signs": 17,
+   "init": 0
+  },
+  {
+   "lang": "da",
+   "gap": -1.8813,
+   "rawgap": 0.0645,
+   "unikl": 1.9458,
+   "n_space_signs": 0,
+   "init": 0
+  },
+  {
+   "lang": "fr",
+   "gap": -1.8823,
+   "rawgap": -1.444,
+   "unikl": 0.4383,
+   "n_space_signs": 21,
+   "init": 3
+  },
+  {
+   "lang": "en",
+   "gap": -2.0462,
+   "rawgap": -1.5519,
+   "unikl": 0.4943,
+   "n_space_signs": 21,
+   "init": 3
+  },
+  {
+   "lang": "it",
+   "gap": -2.1353,
+   "rawgap": -0.4256,
+   "unikl": 1.7098,
+   "n_space_signs": 21,
+   "init": 0
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1618,
+   "rawgap": -0.3291,
+   "unikl": 1.8327,
+   "n_space_signs": 22,
+   "init": 0
+  },
+  {
+   "lang": "es",
+   "gap": -2.4302,
+   "rawgap": -0.2768,
+   "unikl": 2.1533,
+   "n_space_signs": 19,
+   "init": 0
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6856,
+   "rawgap": -0.3362,
+   "unikl": 2.3494,
+   "n_space_signs": 23,
+   "init": 2
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -0.8178,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "f",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "r",
+   "u",
+   "v",
+   "w",
+   "zs"
+  ],
+  "text_head": "befinde der umtande bedie einladung zur s gesiehet etweder durs expreste auf eine halboge in kupfer getesene inhitationes darauf hielemaurer zierahte und das wape der sibefindlis it eder aus mit einem"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -0.8178
+  },
+  {
+   "lang": "nl",
+   "gap": -1.4352
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 0.96,
+ "recovery": 0.9193,
+ "recovery_screen_de": 0.9193,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "grr",
+   "uh"
+  ],
+  [
+   "x.",
+   "z"
+  ],
+  [
+   "eh",
+   "oh"
+  ],
+  [
+   "ki",
+   "ni"
+  ],
+  [
+   "lam",
+   "sqp"
+  ],
+  [
+   "plus",
+   "three"
+  ],
+  [
+   "grr",
+   "ih",
+   "uh"
+  ],
+  [
+   "nu",
+   "ru"
+  ],
+  [
+   "eh",
+   "oh",
+   "zzz"
+  ],
+  [
+   "iot",
+   "y.."
+  ],
+  [
+   "del",
+   "lam",
+   "sqp"
+  ],
+  [
+   "p.",
+   "uu"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.763,
+ "b_pairs": 59,
+ "b_chance_pair_precision": 0.049
+}

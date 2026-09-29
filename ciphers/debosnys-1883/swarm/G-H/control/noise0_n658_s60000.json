@@ -1,0 +1,301 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 658,
+ "K": 82,
+ "start": 60000,
+ "seed": 60000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3252,
+   "share": 0.158,
+   "link": 0.138,
+   "signs": [
+    "gs",
+    "j",
+    "l",
+    "n",
+    "p",
+    "r.",
+    "ru",
+    "three",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.3392,
+   "share": 0.152,
+   "link": 0.164,
+   "signs": [
+    "gs",
+    "j",
+    "n",
+    "p",
+    "r.",
+    "ru",
+    "three",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.3456,
+   "share": 0.176,
+   "link": 0.115,
+   "signs": [
+    "ah",
+    "b",
+    "c",
+    "ds",
+    "e",
+    "eh",
+    "f",
+    "grl",
+    "inf",
+    "k",
+    "mu",
+    "nu",
+    "oh",
+    "u",
+    "v",
+    "zs",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.4156,
+   "share": 0.176,
+   "link": 0.215,
+   "signs": [
+    "arr",
+    "bar",
+    "del",
+    "g",
+    "hd",
+    "hk",
+    "lam",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.4647,
+   "share": 0.137,
+   "link": 0.149,
+   "signs": [
+    "b",
+    "c",
+    "ds",
+    "e",
+    "eh",
+    "k",
+    "mu",
+    "oh",
+    "v",
+    "zs",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.496,
+   "share": 0.128,
+   "link": 0.2,
+   "signs": [
+    "j",
+    "n",
+    "r.",
+    "ru",
+    "three",
+    "uu"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": -1.2611,
+   "rawgap": -0.2773,
+   "unikl": 0.9838,
+   "n_space_signs": 11,
+   "init": 1
+  },
+  {
+   "lang": "da",
+   "gap": -1.2895,
+   "rawgap": -0.7772,
+   "unikl": 0.5123,
+   "n_space_signs": 12,
+   "init": 1
+  },
+  {
+   "lang": "pl",
+   "gap": -1.4999,
+   "rawgap": -1.1515,
+   "unikl": 0.3485,
+   "n_space_signs": 16,
+   "init": 5
+  },
+  {
+   "lang": "nl",
+   "gap": -1.585,
+   "rawgap": -1.0476,
+   "unikl": 0.5374,
+   "n_space_signs": 14,
+   "init": 1
+  },
+  {
+   "lang": "lt",
+   "gap": -1.7263,
+   "rawgap": -1.3513,
+   "unikl": 0.375,
+   "n_space_signs": 17,
+   "init": 4
+  },
+  {
+   "lang": "fr",
+   "gap": -1.8215,
+   "rawgap": -1.4838,
+   "unikl": 0.3376,
+   "n_space_signs": 14,
+   "init": 4
+  },
+  {
+   "lang": "de",
+   "gap": -1.8237,
+   "rawgap": -1.3574,
+   "unikl": 0.4663,
+   "n_space_signs": 7,
+   "init": 4
+  },
+  {
+   "lang": "en",
+   "gap": -2.0289,
+   "rawgap": -1.5741,
+   "unikl": 0.4548,
+   "n_space_signs": 13,
+   "init": 1
+  },
+  {
+   "lang": "it",
+   "gap": -2.0355,
+   "rawgap": -0.3588,
+   "unikl": 1.6767,
+   "n_space_signs": 24,
+   "init": 2
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1142,
+   "rawgap": -0.2832,
+   "unikl": 1.8311,
+   "n_space_signs": 22,
+   "init": 6
+  },
+  {
+   "lang": "es",
+   "gap": -2.4253,
+   "rawgap": -0.2613,
+   "unikl": 2.164,
+   "n_space_signs": 25,
+   "init": 2
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6516,
+   "rawgap": -0.3294,
+   "unikl": 2.3221,
+   "n_space_signs": 23,
+   "init": 2
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": -1.2381,
+  "space_signs": [
+   "N",
+   "a",
+   "bas",
+   "c.",
+   "gs",
+   "inf",
+   "j",
+   "l",
+   "no",
+   "r.",
+   "three",
+   "uu"
+  ],
+  "text_head": "ii i fit if ftifiiiinio i ibitiifiioniifiiii iiiitiiificiiii in iifii ationi i iii fubi ii fiii niiic i fuo icfiiifiiiii fit iniiiofi in fi iit iii inciiioiit ta inii inifiiiiiii fiiiionitiiia fi iiit"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": -1.2381
+  },
+  {
+   "lang": "da",
+   "gap": -1.2895
+  }
+ ],
+ "a_space_precision": 0.134,
+ "a_space_recall": 0.125,
+ "recovery": 0.0288,
+ "recovery_screen_de": 0.3327,
+ "screen_rank_de": 7,
+ "b_tight_merges": [
+  [
+   "cross",
+   "gam"
+  ],
+  [
+   "o.",
+   "tri"
+  ],
+  [
+   "m",
+   "r"
+  ],
+  [
+   "ds",
+   "zs"
+  ],
+  [
+   "grr",
+   "uh"
+  ],
+  [
+   "ih",
+   "ni"
+  ],
+  [
+   "bar",
+   "hd"
+  ],
+  [
+   "lam",
+   "plus"
+  ],
+  [
+   "oh",
+   "zzz"
+  ],
+  [
+   ":",
+   "iot"
+  ],
+  [
+   "t",
+   "w"
+  ],
+  [
+   "ih",
+   "n.",
+   "ni"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.316,
+ "b_pairs": 19,
+ "b_chance_pair_precision": 0.055
+}

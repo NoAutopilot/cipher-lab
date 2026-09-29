@@ -1,0 +1,305 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 135,
+ "K": 62,
+ "start": 45000,
+ "seed": 45000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.401,
+   "share": 0.244,
+   "link": 0.034,
+   "signs": [
+    "ds",
+    "g",
+    "lam",
+    "mal",
+    "pi",
+    "plus",
+    "r.",
+    "ru",
+    "sqi",
+    "three",
+    "x.",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.4224,
+   "share": 0.2,
+   "link": 0.042,
+   "signs": [
+    "g",
+    "mal",
+    "pi",
+    "plus",
+    "r.",
+    "ru",
+    "sqi",
+    "three",
+    "x.",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5696,
+   "share": 0.126,
+   "link": 0.065,
+   "signs": [
+    "g",
+    "mal",
+    "r.",
+    "three",
+    "x.",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5745,
+   "share": 0.185,
+   "link": 0.059,
+   "signs": [
+    "d",
+    "eh",
+    "iot",
+    "ki",
+    "ni",
+    "p.",
+    "tri",
+    "uh"
+   ]
+  },
+  {
+   "kl": 0.6368,
+   "share": 0.148,
+   "link": 0.13,
+   "signs": [
+    "d",
+    "eh",
+    "ki",
+    "ni",
+    "p.",
+    "uh"
+   ]
+  },
+  {
+   "kl": 0.7202,
+   "share": 0.104,
+   "link": 0.048,
+   "signs": [
+    "arr",
+    "del",
+    "grr",
+    "oh",
+    "uu"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": 0.2189,
+   "rawgap": 0.4187,
+   "unikl": 0.1998,
+   "n_space_signs": 9,
+   "init": 0
+  },
+  {
+   "lang": "it",
+   "gap": 0.0161,
+   "rawgap": 0.147,
+   "unikl": 0.1309,
+   "n_space_signs": 14,
+   "init": 1
+  },
+  {
+   "lang": "fr18",
+   "gap": 0.0059,
+   "rawgap": 0.233,
+   "unikl": 0.2272,
+   "n_space_signs": 15,
+   "init": 0
+  },
+  {
+   "lang": "es",
+   "gap": -0.0786,
+   "rawgap": 0.1216,
+   "unikl": 0.2001,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "pt",
+   "gap": -0.0959,
+   "rawgap": 0.1036,
+   "unikl": 0.1995,
+   "n_space_signs": 15,
+   "init": 1
+  },
+  {
+   "lang": "pl",
+   "gap": -0.1226,
+   "rawgap": 0.1458,
+   "unikl": 0.2684,
+   "n_space_signs": 8,
+   "init": 5
+  },
+  {
+   "lang": "da",
+   "gap": -0.1523,
+   "rawgap": 0.0319,
+   "unikl": 0.1842,
+   "n_space_signs": 13,
+   "init": 0
+  },
+  {
+   "lang": "lt",
+   "gap": -0.2489,
+   "rawgap": -0.0676,
+   "unikl": 0.1813,
+   "n_space_signs": 6,
+   "init": 5
+  },
+  {
+   "lang": "nl",
+   "gap": -0.3312,
+   "rawgap": -0.0638,
+   "unikl": 0.2675,
+   "n_space_signs": 11,
+   "init": 3
+  },
+  {
+   "lang": "fr",
+   "gap": -0.3332,
+   "rawgap": -0.1761,
+   "unikl": 0.157,
+   "n_space_signs": 12,
+   "init": 0
+  },
+  {
+   "lang": "de",
+   "gap": -0.4217,
+   "rawgap": -0.1799,
+   "unikl": 0.2418,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "en",
+   "gap": -0.5606,
+   "rawgap": -0.3727,
+   "unikl": 0.1879,
+   "n_space_signs": 11,
+   "init": 4
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": 0.2283,
+  "space_signs": [
+   ".",
+   "ah",
+   "g",
+   "hd",
+   "j",
+   "ns",
+   "nu",
+   "r.",
+   "sqi",
+   "u",
+   "x."
+  ],
+  "text_head": "ii i tenti imperatis utionii data irrarior alia intendatoritm trium adverum de per adis eri quam ordinent periae nonis ad torum re ad p"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": 0.2283
+  },
+  {
+   "lang": "it",
+   "gap": 0.0161
+  }
+ ],
+ "a_space_precision": 0.043,
+ "a_space_recall": 0.053,
+ "recovery": 0.1786,
+ "recovery_screen_de": 0.1518,
+ "screen_rank_de": 11,
+ "b_tight_merges": [
+  [
+   "eh",
+   "ki"
+  ],
+  [
+   "lam",
+   "y.."
+  ],
+  [
+   "ni",
+   "oh"
+  ],
+  [
+   "c.",
+   "z"
+  ],
+  [
+   "eh",
+   "ki",
+   "uh"
+  ],
+  [
+   "lam",
+   "y..",
+   "zzz"
+  ],
+  [
+   "grr",
+   "uu"
+  ],
+  [
+   "m",
+   "three"
+  ],
+  [
+   "eh",
+   "ki",
+   "ni",
+   "oh",
+   "uh"
+  ],
+  [
+   "c.",
+   "lam",
+   "y..",
+   "z",
+   "zzz"
+  ],
+  [
+   "eh",
+   "grr",
+   "ki",
+   "ni",
+   "oh",
+   "uh",
+   "uu"
+  ],
+  [
+   "c.",
+   "lam",
+   "m",
+   "three",
+   "y..",
+   "z",
+   "zzz"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.212,
+ "b_pairs": 236,
+ "b_chance_pair_precision": 0.057
+}

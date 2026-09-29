@@ -1,0 +1,281 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 135,
+ "K": 60,
+ "start": 60000,
+ "seed": 60000,
+ "shuffled": true,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.7019,
+   "share": 0.111,
+   "link": 0.05,
+   "signs": [
+    "N",
+    "c.",
+    "g",
+    "n.",
+    "plus",
+    "uh"
+   ]
+  },
+  {
+   "kl": 1.1427,
+   "share": 0.104,
+   "link": 0.133,
+   "signs": [
+    "b",
+    "gs",
+    "hd",
+    "y.."
+   ]
+  },
+  {
+   "kl": 1.2189,
+   "share": 0.096,
+   "link": 0.067,
+   "signs": [
+    "bar",
+    "hk",
+    "ih",
+    "tri"
+   ]
+  },
+  {
+   "kl": 1.3641,
+   "share": 0.089,
+   "link": 0.256,
+   "signs": [
+    "mu",
+    "three",
+    "x.",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 1.7006,
+   "share": 0.089,
+   "link": 0.373,
+   "signs": [
+    "j",
+    "lam"
+   ]
+  },
+  {
+   "kl": 1.7771,
+   "share": 0.104,
+   "link": 0.256,
+   "signs": [
+    "j",
+    "lam",
+    "s."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": 0.0588,
+   "rawgap": 0.271,
+   "unikl": 0.2122,
+   "n_space_signs": 7,
+   "init": 0
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.171,
+   "rawgap": 0.0706,
+   "unikl": 0.2416,
+   "n_space_signs": 11,
+   "init": 1
+  },
+  {
+   "lang": "pt",
+   "gap": -0.2024,
+   "rawgap": -0.084,
+   "unikl": 0.1184,
+   "n_space_signs": 13,
+   "init": 5
+  },
+  {
+   "lang": "it",
+   "gap": -0.29,
+   "rawgap": -0.0312,
+   "unikl": 0.2588,
+   "n_space_signs": 15,
+   "init": 5
+  },
+  {
+   "lang": "da",
+   "gap": -0.315,
+   "rawgap": -0.1054,
+   "unikl": 0.2097,
+   "n_space_signs": 11,
+   "init": 4
+  },
+  {
+   "lang": "es",
+   "gap": -0.3719,
+   "rawgap": -0.1636,
+   "unikl": 0.2083,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "pl",
+   "gap": -0.4654,
+   "rawgap": -0.1798,
+   "unikl": 0.2856,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "nl",
+   "gap": -0.5259,
+   "rawgap": -0.1284,
+   "unikl": 0.3975,
+   "n_space_signs": 13,
+   "init": 6
+  },
+  {
+   "lang": "de",
+   "gap": -0.5437,
+   "rawgap": -0.3148,
+   "unikl": 0.2289,
+   "n_space_signs": 10,
+   "init": 6
+  },
+  {
+   "lang": "lt",
+   "gap": -0.5788,
+   "rawgap": -0.3503,
+   "unikl": 0.2285,
+   "n_space_signs": 8,
+   "init": 4
+  },
+  {
+   "lang": "fr",
+   "gap": -0.6658,
+   "rawgap": -0.5003,
+   "unikl": 0.1655,
+   "n_space_signs": 10,
+   "init": 0
+  },
+  {
+   "lang": "en",
+   "gap": -0.7595,
+   "rawgap": -0.6147,
+   "unikl": 0.1448,
+   "n_space_signs": 11,
+   "init": 4
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": 0.1111,
+  "space_signs": [
+   "eh",
+   "h.",
+   "j",
+   "n",
+   "n.",
+   "p.",
+   "q",
+   "y..",
+   "z"
+  ],
+  "text_head": "ut i llicenfiluit minus qua norum non inciperariti iiiam in llium conaniam itionimi primi indi trium turu immunia ritantum non ut contr"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": 0.1111
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.171
+  }
+ ],
+ "a_space_precision": 0.095,
+ "a_space_recall": 0.077,
+ "recovery": 0.0286,
+ "recovery_screen_de": 0.1524,
+ "screen_rank_de": 9,
+ "b_tight_merges": [
+  [
+   "b",
+   "hd"
+  ],
+  [
+   "iot",
+   "tri"
+  ],
+  [
+   "three",
+   "zzz"
+  ],
+  [
+   "bar",
+   "m"
+  ],
+  [
+   "lam",
+   "uu"
+  ],
+  [
+   "b",
+   "hd",
+   "m."
+  ],
+  [
+   "lam",
+   "p",
+   "uu"
+  ],
+  [
+   "plus",
+   "uh"
+  ],
+  [
+   "lam",
+   "p",
+   "three",
+   "uu",
+   "zzz"
+  ],
+  [
+   "b",
+   "hd",
+   "lam",
+   "m.",
+   "p",
+   "three",
+   "uu",
+   "zzz"
+  ],
+  [
+   "b",
+   "bar",
+   "hd",
+   "lam",
+   "m",
+   "m.",
+   "p",
+   "three",
+   "uu",
+   "zzz"
+  ],
+  [
+   "iot",
+   "o.",
+   "tri"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.056,
+ "b_pairs": 215,
+ "b_chance_pair_precision": 0.054
+}

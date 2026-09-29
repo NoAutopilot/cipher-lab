@@ -1,0 +1,307 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 658,
+ "K": 79,
+ "start": 3000,
+ "seed": 3000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.4404,
+   "share": 0.129,
+   "link": 0.185,
+   "signs": [
+    ":",
+    "del",
+    "m.",
+    "pi",
+    "plus",
+    "r",
+    "z"
+   ]
+  },
+  {
+   "kl": 0.5688,
+   "share": 0.144,
+   "link": 0.177,
+   "signs": [
+    "bar",
+    "c.",
+    "ki",
+    "mal",
+    "mu",
+    "nu",
+    "ru"
+   ]
+  },
+  {
+   "kl": 0.5818,
+   "share": 0.205,
+   "link": 0.19,
+   "signs": [
+    "ah",
+    "bas",
+    "eh",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "n.",
+    "ns",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5946,
+   "share": 0.146,
+   "link": 0.143,
+   "signs": [
+    "d",
+    "f",
+    "h",
+    "k",
+    "m",
+    "n",
+    "oh",
+    "tri",
+    "u",
+    "uu",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.7189,
+   "share": 0.178,
+   "link": 0.109,
+   "signs": [
+    "a",
+    "d",
+    "f",
+    "gs",
+    "h",
+    "k",
+    "m",
+    "n",
+    "o",
+    "oh",
+    "s.",
+    "tri",
+    "u",
+    "uu",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.802,
+   "share": 0.257,
+   "link": 0.126,
+   "signs": [
+    "arr",
+    "bar",
+    "c.",
+    "grc",
+    "hk",
+    "ki",
+    "lam",
+    "mal",
+    "mu",
+    "nu",
+    "r.",
+    "ru",
+    "three",
+    "x."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "da",
+   "gap": -1.4085,
+   "rawgap": -0.8449,
+   "unikl": 0.5636,
+   "n_space_signs": 12,
+   "init": 2
+  },
+  {
+   "lang": "la",
+   "gap": -1.5915,
+   "rawgap": -0.2979,
+   "unikl": 1.2936,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -1.6116,
+   "rawgap": -1.0651,
+   "unikl": 0.5465,
+   "n_space_signs": 17,
+   "init": 6
+  },
+  {
+   "lang": "pl",
+   "gap": -1.6471,
+   "rawgap": -1.181,
+   "unikl": 0.4662,
+   "n_space_signs": 14,
+   "init": 3
+  },
+  {
+   "lang": "lt",
+   "gap": -1.8649,
+   "rawgap": -1.4424,
+   "unikl": 0.4226,
+   "n_space_signs": 14,
+   "init": 3
+  },
+  {
+   "lang": "it",
+   "gap": -2.0648,
+   "rawgap": -0.3727,
+   "unikl": 1.6921,
+   "n_space_signs": 20,
+   "init": 3
+  },
+  {
+   "lang": "fr",
+   "gap": -2.0933,
+   "rawgap": -1.5211,
+   "unikl": 0.5722,
+   "n_space_signs": 9,
+   "init": 2
+  },
+  {
+   "lang": "de",
+   "gap": -2.1422,
+   "rawgap": -1.7154,
+   "unikl": 0.4268,
+   "n_space_signs": 9,
+   "init": 2
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1613,
+   "rawgap": -0.328,
+   "unikl": 1.8333,
+   "n_space_signs": 24,
+   "init": 4
+  },
+  {
+   "lang": "en",
+   "gap": -2.3051,
+   "rawgap": -1.8234,
+   "unikl": 0.4817,
+   "n_space_signs": 11,
+   "init": 4
+  },
+  {
+   "lang": "es",
+   "gap": -2.4768,
+   "rawgap": -0.2771,
+   "unikl": 2.1997,
+   "n_space_signs": 23,
+   "init": 0
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6098,
+   "rawgap": -0.3331,
+   "unikl": 2.2766,
+   "n_space_signs": 17,
+   "init": 3
+  }
+ ],
+ "d_best": {
+  "lang": "da",
+  "gap": -1.4085,
+  "space_signs": [
+   "...",
+   "fem",
+   "grl",
+   "h.",
+   "i",
+   "ih",
+   "inf",
+   "iot",
+   "n.",
+   "nee",
+   "ns",
+   "p."
+  ],
+  "text_head": "eende ere et enderedtrenereendeder setteters eeenseenerne red eereened er eedenske t e ener neree rereter de deenssenedernese nee ensteereteersede nend ee eed enen e ereetes neretsrets e enen e dere e"
+ },
+ "d_all": [
+  {
+   "lang": "da",
+   "gap": -1.4085
+  },
+  {
+   "lang": "la",
+   "gap": -1.577
+  }
+ ],
+ "a_space_precision": 0.042,
+ "a_space_recall": 0.035,
+ "recovery": 0.0151,
+ "recovery_screen_de": 0.0962,
+ "screen_rank_de": 8,
+ "b_tight_merges": [
+  [
+   "d",
+   "k"
+  ],
+  [
+   "a",
+   "o"
+  ],
+  [
+   "oh",
+   "y.."
+  ],
+  [
+   "m.",
+   "x."
+  ],
+  [
+   "f",
+   "n"
+  ],
+  [
+   "del",
+   "uh"
+  ],
+  [
+   "d",
+   "k",
+   "zzz"
+  ],
+  [
+   "eh",
+   "grr"
+  ],
+  [
+   "gam",
+   "hd"
+  ],
+  [
+   "r.",
+   "three"
+  ],
+  [
+   "b",
+   "bas"
+  ],
+  [
+   "grc",
+   "hk"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.304,
+ "b_pairs": 23,
+ "b_chance_pair_precision": 0.058
+}

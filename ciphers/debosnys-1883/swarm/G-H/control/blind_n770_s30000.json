@@ -1,0 +1,318 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 770,
+ "K": 75,
+ "start": 30000,
+ "seed": 30000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.1618,
+   "share": 0.152,
+   "link": 0.219,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "no",
+    "oh",
+    "tri",
+    "uh",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.3048,
+   "share": 0.131,
+   "link": 0.348,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "oh",
+    "uh",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.3873,
+   "share": 0.17,
+   "link": 0.294,
+   "signs": [
+    "bar",
+    "j",
+    "lam",
+    "plus",
+    "r.",
+    "three"
+   ]
+  },
+  {
+   "kl": 0.455,
+   "share": 0.258,
+   "link": 0.196,
+   "signs": [
+    "bar",
+    "c.",
+    "g",
+    "j",
+    "lam",
+    "mu",
+    "nu",
+    "plus",
+    "r.",
+    "ru",
+    "three"
+   ]
+  },
+  {
+   "kl": 0.5287,
+   "share": 0.166,
+   "link": 0.238,
+   "signs": [
+    "a",
+    "b",
+    "e",
+    "gs",
+    "l",
+    "m",
+    "n",
+    "o",
+    "o.",
+    "r",
+    "u",
+    "uu",
+    "v",
+    "w"
+   ]
+  },
+  {
+   "kl": 0.6039,
+   "share": 0.191,
+   "link": 0.145,
+   "signs": [
+    "a",
+    "b",
+    "ds",
+    "e",
+    "gs",
+    "h",
+    "i",
+    "ki",
+    "l",
+    "m",
+    "n",
+    "o",
+    "o.",
+    "r",
+    "u",
+    "uu",
+    "v",
+    "w"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -0.8444,
+   "rawgap": -0.7026,
+   "unikl": 0.1418,
+   "n_space_signs": 20,
+   "init": 5
+  },
+  {
+   "lang": "la",
+   "gap": -1.3611,
+   "rawgap": -0.288,
+   "unikl": 1.0731,
+   "n_space_signs": 18,
+   "init": 4
+  },
+  {
+   "lang": "nl",
+   "gap": -1.5295,
+   "rawgap": -0.9121,
+   "unikl": 0.6173,
+   "n_space_signs": 18,
+   "init": 4
+  },
+  {
+   "lang": "lt",
+   "gap": -1.599,
+   "rawgap": -1.2332,
+   "unikl": 0.3658,
+   "n_space_signs": 18,
+   "init": 4
+  },
+  {
+   "lang": "pl",
+   "gap": -1.7511,
+   "rawgap": -1.2537,
+   "unikl": 0.4974,
+   "n_space_signs": 17,
+   "init": 0
+  },
+  {
+   "lang": "da",
+   "gap": -1.8944,
+   "rawgap": 0.0514,
+   "unikl": 1.9458,
+   "n_space_signs": 0,
+   "init": 0
+  },
+  {
+   "lang": "fr",
+   "gap": -2.006,
+   "rawgap": -1.4334,
+   "unikl": 0.5727,
+   "n_space_signs": 17,
+   "init": 5
+  },
+  {
+   "lang": "en",
+   "gap": -2.0064,
+   "rawgap": -1.4106,
+   "unikl": 0.5959,
+   "n_space_signs": 18,
+   "init": 5
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1173,
+   "rawgap": -0.3245,
+   "unikl": 1.7928,
+   "n_space_signs": 26,
+   "init": 5
+  },
+  {
+   "lang": "it",
+   "gap": -2.1383,
+   "rawgap": -0.4134,
+   "unikl": 1.7249,
+   "n_space_signs": 21,
+   "init": 6
+  },
+  {
+   "lang": "es",
+   "gap": -2.4915,
+   "rawgap": -0.2905,
+   "unikl": 2.201,
+   "n_space_signs": 22,
+   "init": 0
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6762,
+   "rawgap": -0.3264,
+   "unikl": 2.3498,
+   "n_space_signs": 22,
+   "init": 0
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -0.8012,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "e",
+   "f",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "r",
+   "t",
+   "u",
+   "v",
+   "w"
+  ],
+  "text_head": "igion mit der obrigkeit non mit der ehrbarkeit raun erkreret er ihm dierzeinnung des teptins rest ihn nebe sin trete kustet und grustet ihn nan dene kentzeine merckmehre und worte eines meures und reh"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -0.8012
+  },
+  {
+   "lang": "la",
+   "gap": -1.3611
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 0.978,
+ "recovery": 0.8615,
+ "recovery_screen_de": 0.8519,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "iot",
+   "ns"
+  ],
+  [
+   "ah",
+   "zzz"
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "ah",
+   "grr",
+   "zzz"
+  ],
+  [
+   "lam",
+   "plus"
+  ],
+  [
+   "g",
+   "sqi"
+  ],
+  [
+   "m.",
+   "mal"
+  ],
+  [
+   "bar",
+   "r."
+  ],
+  [
+   "ah",
+   "grr",
+   "ih",
+   "zzz"
+  ],
+  [
+   "c.",
+   "nu"
+  ],
+  [
+   "j",
+   "three"
+  ],
+  [
+   ":",
+   "fem"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.68,
+ "b_pairs": 50,
+ "b_chance_pair_precision": 0.049
+}

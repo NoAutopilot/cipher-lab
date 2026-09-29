@@ -1,0 +1,325 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 1200,
+ "K": 89,
+ "start": 15000,
+ "seed": 15000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.1378,
+   "share": 0.167,
+   "link": 0.248,
+   "signs": [
+    "N",
+    "a",
+    "b",
+    "c",
+    "ds",
+    "e",
+    "f",
+    "gs",
+    "h",
+    "i",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "r",
+    "u",
+    "v",
+    "zs"
+   ]
+  },
+  {
+   "kl": 0.204,
+   "share": 0.163,
+   "link": 0.296,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "oh",
+    "uh",
+    "uu",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.215,
+   "share": 0.191,
+   "link": 0.22,
+   "signs": [
+    "ah",
+    "cross",
+    "eh",
+    "grr",
+    "ih",
+    "o.",
+    "oh",
+    "tri",
+    "uh",
+    "uu",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.2373,
+   "share": 0.181,
+   "link": 0.232,
+   "signs": [
+    ":",
+    "del",
+    "hd",
+    "hk",
+    "m.",
+    "mal",
+    "pi",
+    "plus",
+    "sqp",
+    "x.",
+    "z"
+   ]
+  },
+  {
+   "kl": 0.484,
+   "share": 0.117,
+   "link": 0.302,
+   "signs": [
+    "a",
+    "b",
+    "c",
+    "ds",
+    "e",
+    "f",
+    "h",
+    "i",
+    "k",
+    "o",
+    "p",
+    "r",
+    "v",
+    "zs"
+   ]
+  },
+  {
+   "kl": 0.5659,
+   "share": 0.121,
+   "link": 0.437,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "oh",
+    "uh",
+    "zzz"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -0.7231,
+   "rawgap": -0.627,
+   "unikl": 0.0961,
+   "n_space_signs": 23,
+   "init": 0
+  },
+  {
+   "lang": "da",
+   "gap": -1.2244,
+   "rawgap": -0.7106,
+   "unikl": 0.5138,
+   "n_space_signs": 23,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -1.4197,
+   "rawgap": -0.8528,
+   "unikl": 0.5669,
+   "n_space_signs": 22,
+   "init": 6
+  },
+  {
+   "lang": "la",
+   "gap": -1.4543,
+   "rawgap": -0.2985,
+   "unikl": 1.1558,
+   "n_space_signs": 16,
+   "init": 6
+  },
+  {
+   "lang": "lt",
+   "gap": -1.617,
+   "rawgap": -1.1725,
+   "unikl": 0.4445,
+   "n_space_signs": 21,
+   "init": 4
+  },
+  {
+   "lang": "pl",
+   "gap": -1.8283,
+   "rawgap": -1.2435,
+   "unikl": 0.5847,
+   "n_space_signs": 25,
+   "init": 4
+  },
+  {
+   "lang": "fr",
+   "gap": -1.8622,
+   "rawgap": -1.4454,
+   "unikl": 0.4168,
+   "n_space_signs": 23,
+   "init": 0
+  },
+  {
+   "lang": "en",
+   "gap": -1.9599,
+   "rawgap": -1.4775,
+   "unikl": 0.4825,
+   "n_space_signs": 23,
+   "init": 4
+  },
+  {
+   "lang": "it",
+   "gap": -2.1501,
+   "rawgap": -0.4175,
+   "unikl": 1.7326,
+   "n_space_signs": 18,
+   "init": 6
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1919,
+   "rawgap": -0.3329,
+   "unikl": 1.859,
+   "n_space_signs": 25,
+   "init": 1
+  },
+  {
+   "lang": "es",
+   "gap": -2.4209,
+   "rawgap": -0.2694,
+   "unikl": 2.1515,
+   "n_space_signs": 24,
+   "init": 2
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6968,
+   "rawgap": -0.3283,
+   "unikl": 2.3685,
+   "n_space_signs": 26,
+   "init": 5
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -0.7228,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "e",
+   "f",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "q",
+   "r",
+   "t",
+   "u",
+   "v",
+   "w",
+   "x",
+   "zs"
+  ],
+  "text_head": "ewig alte s und von verbote det solt aut dieses verbet ihne altemahl unbetantt bleibe dies it wiederum ein zeite einer fwehre hand zudrudrittes die unterweisung der geselte in der tunt das it in unser"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -0.7228
+  },
+  {
+   "lang": "da",
+   "gap": -1.2244
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 0.99,
+ "recovery": 0.8697,
+ "recovery_screen_de": 0.8697,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "o.",
+   "tri"
+  ],
+  [
+   "ki",
+   "ni"
+  ],
+  [
+   "iot",
+   "ns"
+  ],
+  [
+   "ah",
+   "ih"
+  ],
+  [
+   "eh",
+   "zzz"
+  ],
+  [
+   "h.",
+   "n."
+  ],
+  [
+   "grr",
+   "uh"
+  ],
+  [
+   "fem",
+   "iot",
+   "ns"
+  ],
+  [
+   "arr",
+   "g"
+  ],
+  [
+   ":",
+   "del"
+  ],
+  [
+   "pi",
+   "z"
+  ],
+  [
+   "cross",
+   "o.",
+   "tri"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.545,
+ "b_pairs": 33,
+ "b_chance_pair_precision": 0.048
+}

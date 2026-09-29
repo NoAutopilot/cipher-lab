@@ -1,0 +1,315 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 770,
+ "K": 78,
+ "start": 45000,
+ "seed": 45000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3143,
+   "share": 0.143,
+   "link": 0.274,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "oh",
+    "uh",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.3991,
+   "share": 0.135,
+   "link": 0.249,
+   "signs": [
+    "iot",
+    "ki",
+    "ni",
+    "ns",
+    "o.",
+    "p.",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.4059,
+   "share": 0.187,
+   "link": 0.126,
+   "signs": [
+    "...",
+    "bar",
+    "bas",
+    "c.",
+    "cross",
+    "inf",
+    "j",
+    "pipe",
+    "plus",
+    "r.",
+    "sqi",
+    "three"
+   ]
+  },
+  {
+   "kl": 0.5079,
+   "share": 0.242,
+   "link": 0.125,
+   "signs": [
+    ":",
+    "d",
+    "del",
+    "f",
+    "gam",
+    "hk",
+    "lam",
+    "m.",
+    "mal",
+    "pi",
+    "ru",
+    "s.",
+    "sqp",
+    "x.",
+    "z",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.5336,
+   "share": 0.164,
+   "link": 0.158,
+   "signs": [
+    ":",
+    "d",
+    "del",
+    "f",
+    "hk",
+    "lam",
+    "pi",
+    "ru",
+    "sqp",
+    "x.",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.5362,
+   "share": 0.278,
+   "link": 0.23,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "iot",
+    "ki",
+    "ni",
+    "ns",
+    "o.",
+    "oh",
+    "p.",
+    "uh",
+    "uu",
+    "y.."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -1.378,
+   "rawgap": -1.0537,
+   "unikl": 0.3243,
+   "n_space_signs": 16,
+   "init": 2
+  },
+  {
+   "lang": "da",
+   "gap": -1.5546,
+   "rawgap": -0.9363,
+   "unikl": 0.6184,
+   "n_space_signs": 11,
+   "init": 1
+  },
+  {
+   "lang": "la",
+   "gap": -1.6024,
+   "rawgap": -0.2949,
+   "unikl": 1.3075,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "pl",
+   "gap": -1.653,
+   "rawgap": -1.1473,
+   "unikl": 0.5057,
+   "n_space_signs": 19,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -1.713,
+   "rawgap": -0.9337,
+   "unikl": 0.7794,
+   "n_space_signs": 14,
+   "init": 6
+  },
+  {
+   "lang": "lt",
+   "gap": -1.7624,
+   "rawgap": -1.4129,
+   "unikl": 0.3495,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "fr",
+   "gap": -1.9902,
+   "rawgap": -1.6239,
+   "unikl": 0.3664,
+   "n_space_signs": 10,
+   "init": 3
+  },
+  {
+   "lang": "it",
+   "gap": -2.0628,
+   "rawgap": -0.4034,
+   "unikl": 1.6594,
+   "n_space_signs": 18,
+   "init": 0
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.0675,
+   "rawgap": -0.2613,
+   "unikl": 1.8061,
+   "n_space_signs": 21,
+   "init": 0
+  },
+  {
+   "lang": "en",
+   "gap": -2.1921,
+   "rawgap": -1.7061,
+   "unikl": 0.486,
+   "n_space_signs": 13,
+   "init": 3
+  },
+  {
+   "lang": "es",
+   "gap": -2.3989,
+   "rawgap": -0.2677,
+   "unikl": 2.1311,
+   "n_space_signs": 20,
+   "init": 0
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6504,
+   "rawgap": -0.33,
+   "unikl": 2.3205,
+   "n_space_signs": 22,
+   "init": 2
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -0.9981,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "f",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "r",
+   "u",
+   "v",
+   "w"
+  ],
+  "text_head": "gesinde der umtande bedie einradung zur s befiehet etweder durs einreste aus eine hargebe in runser getesene inditatienes daraus dieremaurer zierahte und das wane der sigesindris it eder aus mit einem"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -0.9981
+  },
+  {
+   "lang": "da",
+   "gap": -1.5546
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 0.959,
+ "recovery": 0.7857,
+ "recovery_screen_de": 0.5349,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "plus",
+   "three"
+  ],
+  [
+   "ru",
+   "zzz"
+  ],
+  [
+   "ki",
+   "ni"
+  ],
+  [
+   "p.",
+   "uu"
+  ],
+  [
+   ":",
+   "sqp"
+  ],
+  [
+   "j",
+   "sqi"
+  ],
+  [
+   "ih",
+   "uh"
+  ],
+  [
+   "ah",
+   "grr"
+  ],
+  [
+   "eh",
+   "mu"
+  ],
+  [
+   "x.",
+   "z"
+  ],
+  [
+   "iot",
+   "y.."
+  ],
+  [
+   "bar",
+   "plus",
+   "three"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.375,
+ "b_pairs": 40,
+ "b_chance_pair_precision": 0.051
+}

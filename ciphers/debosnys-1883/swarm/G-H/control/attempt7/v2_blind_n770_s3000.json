@@ -1,0 +1,293 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 770,
+ "K": 80,
+ "start": 3000,
+ "seed": 3000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3783,
+   "share": 0.213,
+   "link": 0.148,
+   "signs": [
+    "bas",
+    "grl",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "n.",
+    "ns",
+    "o.",
+    "p.",
+    "tri",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.3886,
+   "share": 0.157,
+   "link": 0.196,
+   "signs": [
+    "ah",
+    "d",
+    "e",
+    "eh",
+    "f",
+    "gs",
+    "k",
+    "m",
+    "n",
+    "oh",
+    "uu",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.4022,
+   "share": 0.195,
+   "link": 0.152,
+   "signs": [
+    "bas",
+    "grl",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "n.",
+    "ns",
+    "p.",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5367,
+   "share": 0.214,
+   "link": 0.197,
+   "signs": [
+    ":",
+    "bar",
+    "del",
+    "hd",
+    "j",
+    "lam",
+    "plus",
+    "r.",
+    "three"
+   ]
+  },
+  {
+   "kl": 0.5885,
+   "share": 0.255,
+   "link": 0.181,
+   "signs": [
+    ":",
+    "arr",
+    "bar",
+    "del",
+    "grc",
+    "hd",
+    "hk",
+    "j",
+    "lam",
+    "plus",
+    "r.",
+    "three",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.7809,
+   "share": 0.138,
+   "link": 0.286,
+   "signs": [
+    "hd",
+    "j",
+    "lam",
+    "plus",
+    "r.",
+    "three"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "da",
+   "gap": -0.9178,
+   "rawgap": -0.2039,
+   "unikl": 0.7139,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "lt",
+   "gap": -0.9371,
+   "rawgap": -0.2647,
+   "unikl": 0.6724,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "en",
+   "gap": -0.9744,
+   "rawgap": -0.5062,
+   "unikl": 0.4682,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "nl",
+   "gap": -1.0912,
+   "rawgap": 0.1088,
+   "unikl": 1.2,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "de",
+   "gap": -1.1257,
+   "rawgap": -0.8514,
+   "unikl": 0.2743,
+   "n_space_signs": 21,
+   "init": 5
+  },
+  {
+   "lang": "fr",
+   "gap": -1.1552,
+   "rawgap": -0.3072,
+   "unikl": 0.8479,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "pl",
+   "gap": -1.2307,
+   "rawgap": -0.3808,
+   "unikl": 0.8499,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "la",
+   "gap": -1.5594,
+   "rawgap": -0.3018,
+   "unikl": 1.2576,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "it",
+   "gap": -1.9193,
+   "rawgap": 0.266,
+   "unikl": 2.1853,
+   "n_space_signs": 0,
+   "init": 7
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.0915,
+   "rawgap": -0.2963,
+   "unikl": 1.7952,
+   "n_space_signs": 24,
+   "init": 6
+  },
+  {
+   "lang": "es",
+   "gap": -2.426,
+   "rawgap": -0.2822,
+   "unikl": 2.1437,
+   "n_space_signs": 24,
+   "init": 1
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6246,
+   "rawgap": 0.2204,
+   "unikl": 2.845,
+   "n_space_signs": 0,
+   "init": 7
+  }
+ ],
+ "d_best": {
+  "lang": "lt",
+  "gap": -0.8019,
+  "space_signs": [],
+  "text_head": "auraisusakissisvisiassusistisaukisiaussisisastiisatirstaissiasiteiisirsaasiirisirisisusiristaisiusaiaissasaisaiirsiusiaistiisiaiisiratiiausaiasirissisksaisiuasiauskaiusiisiassiaisieisisisiristasaisesa"
+ },
+ "d_all": [
+  {
+   "lang": "lt",
+   "gap": -0.8019
+  },
+  {
+   "lang": "da",
+   "gap": -0.9178
+  }
+ ],
+ "a_space_precision": 0.0,
+ "a_space_recall": 0.0,
+ "recovery": 0.0,
+ "recovery_screen_de": 0.6963,
+ "screen_rank_de": 5,
+ "b_tight_merges": [
+  [
+   "d",
+   "k"
+  ],
+  [
+   "ih",
+   "uh"
+  ],
+  [
+   "iot",
+   "y.."
+  ],
+  [
+   "grc",
+   "hk"
+  ],
+  [
+   "r.",
+   "three"
+  ],
+  [
+   "h.",
+   "p."
+  ],
+  [
+   "c.",
+   "ru"
+  ],
+  [
+   "ki",
+   "ni"
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "ah",
+   "eh"
+  ],
+  [
+   "f",
+   "n"
+  ],
+  [
+   "i",
+   "u"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.667,
+ "b_pairs": 18,
+ "b_chance_pair_precision": 0.05
+}

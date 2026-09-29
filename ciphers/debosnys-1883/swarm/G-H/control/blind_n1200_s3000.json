@@ -1,0 +1,329 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 1200,
+ "K": 82,
+ "start": 3000,
+ "seed": 3000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.1944,
+   "share": 0.173,
+   "link": 0.283,
+   "signs": [
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "n.",
+    "ns",
+    "p.",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.3253,
+   "share": 0.206,
+   "link": 0.199,
+   "signs": [
+    ":",
+    "del",
+    "gam",
+    "hd",
+    "lam",
+    "m.",
+    "pi",
+    "plus",
+    "r",
+    "sqp",
+    "x.",
+    "z"
+   ]
+  },
+  {
+   "kl": 0.3834,
+   "share": 0.215,
+   "link": 0.158,
+   "signs": [
+    ":",
+    "del",
+    "gam",
+    "hd",
+    "lam",
+    "m.",
+    "pi",
+    "plus",
+    "r",
+    "sqp",
+    "x.",
+    "z",
+    "zs"
+   ]
+  },
+  {
+   "kl": 0.472,
+   "share": 0.122,
+   "link": 0.192,
+   "signs": [
+    "a",
+    "b",
+    "c",
+    "ds",
+    "e",
+    "gs",
+    "h",
+    "i",
+    "l",
+    "o",
+    "p",
+    "s",
+    "s.",
+    "t",
+    "u"
+   ]
+  },
+  {
+   "kl": 0.6399,
+   "share": 0.275,
+   "link": 0.214,
+   "signs": [
+    "ah",
+    "car",
+    "d",
+    "eh",
+    "grr",
+    "h.",
+    "ih",
+    "iot",
+    "k",
+    "n.",
+    "ns",
+    "o.",
+    "oh",
+    "p.",
+    "tri",
+    "uh",
+    "y..",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.6915,
+   "share": 0.12,
+   "link": 0.409,
+   "signs": [
+    "grr",
+    "ih",
+    "iot",
+    "ns",
+    "uh",
+    "y.."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -0.6661,
+   "rawgap": -0.6322,
+   "unikl": 0.0339,
+   "n_space_signs": 24,
+   "init": 3
+  },
+  {
+   "lang": "la",
+   "gap": -1.6842,
+   "rawgap": -0.311,
+   "unikl": 1.3732,
+   "n_space_signs": 17,
+   "init": 0
+  },
+  {
+   "lang": "lt",
+   "gap": -1.7609,
+   "rawgap": -1.2579,
+   "unikl": 0.503,
+   "n_space_signs": 24,
+   "init": 1
+  },
+  {
+   "lang": "pl",
+   "gap": -1.78,
+   "rawgap": -1.2481,
+   "unikl": 0.5319,
+   "n_space_signs": 15,
+   "init": 5
+  },
+  {
+   "lang": "nl",
+   "gap": -1.7988,
+   "rawgap": -0.9755,
+   "unikl": 0.8233,
+   "n_space_signs": 14,
+   "init": 3
+  },
+  {
+   "lang": "da",
+   "gap": -1.8813,
+   "rawgap": 0.0645,
+   "unikl": 1.9458,
+   "n_space_signs": 0,
+   "init": 0
+  },
+  {
+   "lang": "fr",
+   "gap": -1.8882,
+   "rawgap": -1.4204,
+   "unikl": 0.4678,
+   "n_space_signs": 22,
+   "init": 6
+  },
+  {
+   "lang": "en",
+   "gap": -2.0836,
+   "rawgap": -1.5137,
+   "unikl": 0.57,
+   "n_space_signs": 23,
+   "init": 6
+  },
+  {
+   "lang": "it",
+   "gap": -2.1676,
+   "rawgap": -0.4227,
+   "unikl": 1.7449,
+   "n_space_signs": 17,
+   "init": 1
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.1956,
+   "rawgap": -0.3377,
+   "unikl": 1.8579,
+   "n_space_signs": 20,
+   "init": 4
+  },
+  {
+   "lang": "es",
+   "gap": -2.4566,
+   "rawgap": -0.2902,
+   "unikl": 2.1664,
+   "n_space_signs": 18,
+   "init": 0
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6851,
+   "rawgap": -0.3356,
+   "unikl": 2.3494,
+   "n_space_signs": 25,
+   "init": 0
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -0.6661,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "e",
+   "f",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "q",
+   "r",
+   "s",
+   "t",
+   "u",
+   "v",
+   "w",
+   "x",
+   "zs"
+  ],
+  "text_head": "nge davon keine eohne bedeutung sei weiter nachdencke d hiernann thut an ihn der dirigiredes nonmals die anfangs erwehnte drei frage und went er diese antehmlin beantwortet aun der dirigiredes alte an"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -0.6661
+  },
+  {
+   "lang": "la",
+   "gap": -1.6842
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 1.0,
+ "recovery": 0.937,
+ "recovery_screen_de": 0.937,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "r.",
+   "three"
+  ],
+  [
+   "m.",
+   "z"
+  ],
+  [
+   "iot",
+   "y.."
+  ],
+  [
+   "mu",
+   "ru"
+  ],
+  [
+   "eh",
+   "zzz"
+  ],
+  [
+   "h.",
+   "p."
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "ih",
+   "uh"
+  ],
+  [
+   "ah",
+   "eh",
+   "zzz"
+  ],
+  [
+   "ki",
+   "ni"
+  ],
+  [
+   "j",
+   "r.",
+   "three"
+  ],
+  [
+   "grr",
+   "n."
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.675,
+ "b_pairs": 40,
+ "b_chance_pair_precision": 0.05
+}

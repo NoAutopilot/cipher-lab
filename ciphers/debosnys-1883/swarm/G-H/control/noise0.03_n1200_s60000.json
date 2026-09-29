@@ -1,0 +1,316 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 1200,
+ "K": 88,
+ "start": 60000,
+ "seed": 60000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.4736,
+   "share": 0.241,
+   "link": 0.233,
+   "signs": [
+    "eh",
+    "grr",
+    "h",
+    "h.",
+    "ih",
+    "iot",
+    "n.",
+    "ni",
+    "ns",
+    "o.",
+    "p.",
+    "tri",
+    "uh",
+    "y..",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.4809,
+   "share": 0.173,
+   "link": 0.288,
+   "signs": [
+    "eh",
+    "grr",
+    "ih",
+    "iot",
+    "ns",
+    "p.",
+    "uh",
+    "y..",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.4916,
+   "share": 0.137,
+   "link": 0.389,
+   "signs": [
+    "grr",
+    "ih",
+    "iot",
+    "ns",
+    "p.",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5545,
+   "share": 0.265,
+   "link": 0.204,
+   "signs": [
+    "eh",
+    "grc",
+    "grl",
+    "grr",
+    "h",
+    "h.",
+    "ih",
+    "iot",
+    "n.",
+    "ni",
+    "ns",
+    "o.",
+    "oh",
+    "p.",
+    "tri",
+    "uh",
+    "y..",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.601,
+   "share": 0.124,
+   "link": 0.41,
+   "signs": [
+    "grr",
+    "ih",
+    "iot",
+    "ns",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.6726,
+   "share": 0.122,
+   "link": 0.26,
+   "signs": [
+    "ah",
+    "arr",
+    "bar",
+    "cross",
+    "del",
+    "g",
+    "hk",
+    "ru",
+    "x."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": -1.6627,
+   "rawgap": -0.3226,
+   "unikl": 1.3401,
+   "n_space_signs": 17,
+   "init": 0
+  },
+  {
+   "lang": "de",
+   "gap": -1.8755,
+   "rawgap": -1.5068,
+   "unikl": 0.3686,
+   "n_space_signs": 13,
+   "init": 6
+  },
+  {
+   "lang": "da",
+   "gap": -1.8813,
+   "rawgap": 0.0645,
+   "unikl": 1.9458,
+   "n_space_signs": 0,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -1.9914,
+   "rawgap": -1.2351,
+   "unikl": 0.7563,
+   "n_space_signs": 15,
+   "init": 5
+  },
+  {
+   "lang": "pl",
+   "gap": -2.0931,
+   "rawgap": -1.6162,
+   "unikl": 0.4769,
+   "n_space_signs": 16,
+   "init": 2
+  },
+  {
+   "lang": "lt",
+   "gap": -2.1587,
+   "rawgap": -1.6602,
+   "unikl": 0.4986,
+   "n_space_signs": 17,
+   "init": 6
+  },
+  {
+   "lang": "it",
+   "gap": -2.1995,
+   "rawgap": -0.4289,
+   "unikl": 1.7706,
+   "n_space_signs": 22,
+   "init": 1
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.2642,
+   "rawgap": -0.401,
+   "unikl": 1.8632,
+   "n_space_signs": 25,
+   "init": 3
+  },
+  {
+   "lang": "fr",
+   "gap": -2.4213,
+   "rawgap": -1.6851,
+   "unikl": 0.7362,
+   "n_space_signs": 12,
+   "init": 1
+  },
+  {
+   "lang": "en",
+   "gap": -2.602,
+   "rawgap": -2.1648,
+   "unikl": 0.4372,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "es",
+   "gap": -2.6023,
+   "rawgap": -0.3257,
+   "unikl": 2.2765,
+   "n_space_signs": 21,
+   "init": 5
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6662,
+   "rawgap": -0.3332,
+   "unikl": 2.333,
+   "n_space_signs": 24,
+   "init": 1
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -1.2918,
+  "space_signs": [
+   ")",
+   "a",
+   "b",
+   "c",
+   "ds",
+   "e",
+   "f",
+   "ft",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "p",
+   "q",
+   "t",
+   "w",
+   "zs"
+  ],
+  "text_head": "halte wird tdie gantze reception it aus dem catetismorso hirrnacht folget zu ersehe e frage und antworte entwo romtet ihr here aus dersalterheiligtese des heilige endr as zwam fur gutenzeitunge brinle"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -1.2918
+  },
+  {
+   "lang": "la",
+   "gap": -1.6627
+  }
+ ],
+ "a_space_precision": 0.978,
+ "a_space_recall": 0.773,
+ "recovery": 0.899,
+ "recovery_screen_de": 0.4888,
+ "screen_rank_de": 2,
+ "b_tight_merges": [
+  [
+   "iot",
+   "ns"
+  ],
+  [
+   "grr",
+   "ih"
+  ],
+  [
+   "o.",
+   "tri"
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "c.",
+   "plus"
+  ],
+  [
+   "grr",
+   "ih",
+   "uh"
+  ],
+  [
+   "r.",
+   "three"
+  ],
+  [
+   "arr",
+   "ru"
+  ],
+  [
+   "c.",
+   "lam",
+   "plus"
+  ],
+  [
+   "inf",
+   "j"
+  ],
+  [
+   "n.",
+   "ni"
+  ],
+  [
+   ":",
+   "z"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.538,
+ "b_pairs": 26,
+ "b_chance_pair_precision": 0.057
+}

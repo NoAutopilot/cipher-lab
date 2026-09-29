@@ -1,0 +1,304 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 135,
+ "K": 62,
+ "start": 45000,
+ "seed": 45000,
+ "shuffled": true,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3537,
+   "share": 0.2,
+   "link": 0.055,
+   "signs": [
+    "eh",
+    "g",
+    "m",
+    "p.",
+    "sqi",
+    "z",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.4966,
+   "share": 0.126,
+   "link": 0.138,
+   "signs": [
+    "eh",
+    "g",
+    "m",
+    "p.",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.6182,
+   "share": 0.289,
+   "link": 0.039,
+   "signs": [
+    "eh",
+    "g",
+    "m",
+    "ni",
+    "p.",
+    "pi",
+    "ru",
+    "sqi",
+    "y..",
+    "z",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.7289,
+   "share": 0.126,
+   "link": 0.063,
+   "signs": [
+    "d",
+    "ki",
+    "lam",
+    "mal",
+    "mu",
+    "nu",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.7644,
+   "share": 0.141,
+   "link": 0.094,
+   "signs": [
+    "ah",
+    "c.",
+    "grr",
+    "oh",
+    "sqp",
+    "tri",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.7751,
+   "share": 0.163,
+   "link": 0.031,
+   "signs": [
+    "d",
+    "iot",
+    "ki",
+    "lam",
+    "mal",
+    "mu",
+    "nu",
+    "plus",
+    "x."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": 0.2029,
+   "rawgap": 0.331,
+   "unikl": 0.1281,
+   "n_space_signs": 10,
+   "init": 3
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.0374,
+   "rawgap": 0.1883,
+   "unikl": 0.2257,
+   "n_space_signs": 12,
+   "init": 5
+  },
+  {
+   "lang": "it",
+   "gap": -0.0608,
+   "rawgap": 0.1655,
+   "unikl": 0.2263,
+   "n_space_signs": 14,
+   "init": 5
+  },
+  {
+   "lang": "es",
+   "gap": -0.1205,
+   "rawgap": 0.0666,
+   "unikl": 0.1871,
+   "n_space_signs": 13,
+   "init": 3
+  },
+  {
+   "lang": "pt",
+   "gap": -0.1302,
+   "rawgap": 0.0888,
+   "unikl": 0.219,
+   "n_space_signs": 13,
+   "init": 3
+  },
+  {
+   "lang": "pl",
+   "gap": -0.1725,
+   "rawgap": 0.0465,
+   "unikl": 0.2189,
+   "n_space_signs": 10,
+   "init": 2
+  },
+  {
+   "lang": "da",
+   "gap": -0.2296,
+   "rawgap": 0.0529,
+   "unikl": 0.2825,
+   "n_space_signs": 9,
+   "init": 5
+  },
+  {
+   "lang": "lt",
+   "gap": -0.241,
+   "rawgap": -0.0415,
+   "unikl": 0.1995,
+   "n_space_signs": 15,
+   "init": 0
+  },
+  {
+   "lang": "fr",
+   "gap": -0.3788,
+   "rawgap": -0.2704,
+   "unikl": 0.1085,
+   "n_space_signs": 14,
+   "init": 1
+  },
+  {
+   "lang": "nl",
+   "gap": -0.4048,
+   "rawgap": -0.0646,
+   "unikl": 0.3402,
+   "n_space_signs": 13,
+   "init": 3
+  },
+  {
+   "lang": "en",
+   "gap": -0.5245,
+   "rawgap": -0.3473,
+   "unikl": 0.1772,
+   "n_space_signs": 11,
+   "init": 2
+  },
+  {
+   "lang": "de",
+   "gap": -0.5397,
+   "rawgap": -0.2942,
+   "unikl": 0.2456,
+   "n_space_signs": 10,
+   "init": 4
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": 0.2634,
+  "space_signs": [
+   "ah",
+   "bar",
+   "c.",
+   "d",
+   "lam",
+   "mu",
+   "sqp",
+   "uh"
+  ],
+  "text_head": "intem qui ni captim fationemum teringeniter fenti defideratum minationieta in c reipum eum te cum indebant ue ine ad cum mea a litat qu"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": 0.2634
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.0357
+  }
+ ],
+ "a_space_precision": 0.0,
+ "a_space_recall": 0.0,
+ "recovery": 0.0268,
+ "recovery_screen_de": 0.0625,
+ "screen_rank_de": 12,
+ "b_tight_merges": [
+  [
+   "grr",
+   "uu"
+  ],
+  [
+   "oh",
+   "z"
+  ],
+  [
+   "g",
+   "iot"
+  ],
+  [
+   "ki",
+   "zzz"
+  ],
+  [
+   "ns",
+   "three"
+  ],
+  [
+   "eh",
+   "sqi"
+  ],
+  [
+   "ni",
+   "oh",
+   "z"
+  ],
+  [
+   "g",
+   "grr",
+   "iot",
+   "uu"
+  ],
+  [
+   "g",
+   "grr",
+   "iot",
+   "m",
+   "uu"
+  ],
+  [
+   "g",
+   "grr",
+   "iot",
+   "ki",
+   "m",
+   "uu",
+   "zzz"
+  ],
+  [
+   "ni",
+   "ns",
+   "oh",
+   "three",
+   "z"
+  ],
+  [
+   "eh",
+   "g",
+   "grr",
+   "iot",
+   "ki",
+   "m",
+   "sqi",
+   "uu",
+   "zzz"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.156,
+ "b_pairs": 243,
+ "b_chance_pair_precision": 0.054
+}

@@ -1,0 +1,29 @@
+{
+ "lines": 1771,
+ "logogram_tokens": 455,
+ "lines_with_logogram": 390,
+ "line_initial": 21,
+ "line_initial_null_p50_p99_max": [
+  12,
+  20,
+  27
+ ],
+ "p_initial": 0.006,
+ "line_final": 14,
+ "line_final_null_p50_p99_max": [
+  12,
+  20,
+  25
+ ],
+ "p_final": 0.2935,
+ "prev_is_space_next_is_space_logo": [
+  0.743,
+  0.723,
+  455
+ ],
+ "same_for_letter_signs": [
+  0.206,
+  0.203,
+  58573
+ ]
+}

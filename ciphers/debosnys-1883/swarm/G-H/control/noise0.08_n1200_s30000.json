@@ -1,0 +1,306 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 1200,
+ "K": 78,
+ "start": 30000,
+ "seed": 30000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3316,
+   "share": 0.134,
+   "link": 0.287,
+   "signs": [
+    "b",
+    "c",
+    "ds",
+    "e",
+    "gs",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "r",
+    "v",
+    "w"
+   ]
+  },
+  {
+   "kl": 0.4276,
+   "share": 0.147,
+   "link": 0.335,
+   "signs": [
+    "bar",
+    "c.",
+    "pi",
+    "plus",
+    "z"
+   ]
+  },
+  {
+   "kl": 0.498,
+   "share": 0.12,
+   "link": 0.315,
+   "signs": [
+    "b",
+    "ds",
+    "e",
+    "gs",
+    "k",
+    "l",
+    "m",
+    "o",
+    "r",
+    "v",
+    "w"
+   ]
+  },
+  {
+   "kl": 0.5522,
+   "share": 0.118,
+   "link": 0.327,
+   "signs": [
+    "ah",
+    "eh",
+    "grl",
+    "grr",
+    "ih",
+    "uh",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.5979,
+   "share": 0.187,
+   "link": 0.204,
+   "signs": [
+    "b",
+    "c",
+    "ds",
+    "e",
+    "f",
+    "gs",
+    "h",
+    "inf",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "r",
+    "u",
+    "uu",
+    "v",
+    "w"
+   ]
+  },
+  {
+   "kl": 0.6063,
+   "share": 0.114,
+   "link": 0.394,
+   "signs": [
+    "ah",
+    "eh",
+    "grr",
+    "ih",
+    "uh",
+    "zzz"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": -1.7699,
+   "rawgap": -0.3466,
+   "unikl": 1.4233,
+   "n_space_signs": 13,
+   "init": 3
+  },
+  {
+   "lang": "da",
+   "gap": -1.8813,
+   "rawgap": 0.0645,
+   "unikl": 1.9458,
+   "n_space_signs": 0,
+   "init": 0
+  },
+  {
+   "lang": "de",
+   "gap": -2.0509,
+   "rawgap": -1.7069,
+   "unikl": 0.344,
+   "n_space_signs": 18,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -2.1162,
+   "rawgap": -1.3881,
+   "unikl": 0.7281,
+   "n_space_signs": 17,
+   "init": 0
+  },
+  {
+   "lang": "it",
+   "gap": -2.2806,
+   "rawgap": -0.4326,
+   "unikl": 1.848,
+   "n_space_signs": 20,
+   "init": 0
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.3074,
+   "rawgap": -0.4447,
+   "unikl": 1.8627,
+   "n_space_signs": 18,
+   "init": 4
+  },
+  {
+   "lang": "lt",
+   "gap": -2.4036,
+   "rawgap": -1.9871,
+   "unikl": 0.4165,
+   "n_space_signs": 16,
+   "init": 0
+  },
+  {
+   "lang": "fr",
+   "gap": -2.4623,
+   "rawgap": -2.0555,
+   "unikl": 0.4069,
+   "n_space_signs": 21,
+   "init": 4
+  },
+  {
+   "lang": "pl",
+   "gap": -2.5555,
+   "rawgap": -2.0364,
+   "unikl": 0.5191,
+   "n_space_signs": 9,
+   "init": 1
+  },
+  {
+   "lang": "en",
+   "gap": -2.657,
+   "rawgap": -2.0776,
+   "unikl": 0.5794,
+   "n_space_signs": 18,
+   "init": 2
+  },
+  {
+   "lang": "es",
+   "gap": -2.6988,
+   "rawgap": -0.3522,
+   "unikl": 2.3466,
+   "n_space_signs": 20,
+   "init": 3
+  },
+  {
+   "lang": "pt",
+   "gap": -2.7481,
+   "rawgap": -0.3379,
+   "unikl": 2.4102,
+   "n_space_signs": 19,
+   "init": 0
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": -1.7699,
+  "space_signs": [
+   "N",
+   "ah",
+   "eh",
+   "n.",
+   "no",
+   "o.",
+   "p.",
+   "t",
+   "tri",
+   "uh",
+   "uu",
+   "zs",
+   "zzz"
+  ],
+  "text_head": "fii in iiii ii fiiii iiii iiifiii ic iii iifiimmifii iiifitiiiiitiiiifimi iiifiiiitiii iiiiiiifiiifiiii i iiiiiii i iiiii iifiiiiiiiiiiiiiiii iifii iitiii ii ii iiii ii iiiiii ii i iitiii ii iifiiiifi"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": -1.7699
+  },
+  {
+   "lang": "da",
+   "gap": -1.875
+  }
+ ],
+ "a_space_precision": 0.026,
+ "a_space_recall": 0.024,
+ "recovery": 0.058,
+ "recovery_screen_de": 0.554,
+ "screen_rank_de": 3,
+ "b_tight_merges": [
+  [
+   "iot",
+   "ns"
+  ],
+  [
+   "e",
+   "o"
+  ],
+  [
+   "pi",
+   "z"
+  ],
+  [
+   "e",
+   "m",
+   "o"
+  ],
+  [
+   "a",
+   "h."
+  ],
+  [
+   "b",
+   "c"
+  ],
+  [
+   "grr",
+   "ih"
+  ],
+  [
+   "sqi",
+   "three"
+  ],
+  [
+   "arr",
+   "grc"
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "e",
+   "l",
+   "m",
+   "o"
+  ],
+  [
+   "f",
+   "inf"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.5,
+ "b_pairs": 16,
+ "b_chance_pair_precision": 0.044
+}

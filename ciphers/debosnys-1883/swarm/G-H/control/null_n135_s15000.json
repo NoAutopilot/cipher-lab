@@ -1,0 +1,297 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 135,
+ "K": 60,
+ "start": 15000,
+ "seed": 15000,
+ "shuffled": true,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.4649,
+   "share": 0.133,
+   "link": 0.047,
+   "signs": [
+    "c.",
+    "ns",
+    "r",
+    "ru",
+    "three"
+   ]
+  },
+  {
+   "kl": 0.6162,
+   "share": 0.141,
+   "link": 0.053,
+   "signs": [
+    "ds",
+    "g",
+    "h",
+    "hd",
+    "ih",
+    "m.",
+    "tri"
+   ]
+  },
+  {
+   "kl": 0.7766,
+   "share": 0.207,
+   "link": 0.044,
+   "signs": [
+    "ds",
+    "g",
+    "h",
+    "hd",
+    "ih",
+    "lam",
+    "m.",
+    "o.",
+    "plus",
+    "tri",
+    "v"
+   ]
+  },
+  {
+   "kl": 1.0401,
+   "share": 0.111,
+   "link": 0.175,
+   "signs": [
+    "iot",
+    "oh",
+    "pi",
+    "z"
+   ]
+  },
+  {
+   "kl": 1.0955,
+   "share": 0.089,
+   "link": 0.216,
+   "signs": [
+    "c.",
+    "r",
+    "three"
+   ]
+  },
+  {
+   "kl": 1.1012,
+   "share": 0.081,
+   "link": 0.262,
+   "signs": [
+    "ki",
+    "n.",
+    "uu"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": 0.0828,
+   "rawgap": 0.2437,
+   "unikl": 0.1609,
+   "n_space_signs": 11,
+   "init": 2
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.1457,
+   "rawgap": 0.0478,
+   "unikl": 0.1935,
+   "n_space_signs": 11,
+   "init": 3
+  },
+  {
+   "lang": "it",
+   "gap": -0.1712,
+   "rawgap": -0.0084,
+   "unikl": 0.1628,
+   "n_space_signs": 10,
+   "init": 4
+  },
+  {
+   "lang": "pt",
+   "gap": -0.2568,
+   "rawgap": -0.0717,
+   "unikl": 0.1851,
+   "n_space_signs": 15,
+   "init": 1
+  },
+  {
+   "lang": "es",
+   "gap": -0.2739,
+   "rawgap": -0.01,
+   "unikl": 0.2639,
+   "n_space_signs": 15,
+   "init": 3
+  },
+  {
+   "lang": "da",
+   "gap": -0.378,
+   "rawgap": -0.143,
+   "unikl": 0.2351,
+   "n_space_signs": 7,
+   "init": 0
+  },
+  {
+   "lang": "pl",
+   "gap": -0.4186,
+   "rawgap": -0.1513,
+   "unikl": 0.2673,
+   "n_space_signs": 10,
+   "init": 5
+  },
+  {
+   "lang": "nl",
+   "gap": -0.4742,
+   "rawgap": -0.1961,
+   "unikl": 0.2782,
+   "n_space_signs": 11,
+   "init": 3
+  },
+  {
+   "lang": "de",
+   "gap": -0.4747,
+   "rawgap": -0.2985,
+   "unikl": 0.1761,
+   "n_space_signs": 8,
+   "init": 2
+  },
+  {
+   "lang": "fr",
+   "gap": -0.5003,
+   "rawgap": -0.3225,
+   "unikl": 0.1778,
+   "n_space_signs": 9,
+   "init": 2
+  },
+  {
+   "lang": "lt",
+   "gap": -0.6123,
+   "rawgap": -0.3928,
+   "unikl": 0.2195,
+   "n_space_signs": 10,
+   "init": 6
+  },
+  {
+   "lang": "en",
+   "gap": -0.7339,
+   "rawgap": -0.5125,
+   "unikl": 0.2215,
+   "n_space_signs": 10,
+   "init": 6
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": 0.0828,
+  "space_signs": [
+   ":",
+   "bar",
+   "del",
+   "e",
+   "eh",
+   "h.",
+   "m",
+   "m.",
+   "nu",
+   "v",
+   "y.."
+  ],
+  "text_head": "clartione digni a crac comini non tuita annita mitium juram caufit iunti duce minum ot mo iuiiliauaiis primam itur ut cum ac perime aud"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": 0.0828
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.1457
+  }
+ ],
+ "a_space_precision": 0.217,
+ "a_space_recall": 0.217,
+ "recovery": 0.1215,
+ "recovery_screen_de": 0.1215,
+ "screen_rank_de": 9,
+ "b_tight_merges": [
+  [
+   "hd",
+   "lam"
+  ],
+  [
+   "ns",
+   "zzz"
+  ],
+  [
+   "g",
+   "z"
+  ],
+  [
+   "c.",
+   "three"
+  ],
+  [
+   "n.",
+   "uu"
+  ],
+  [
+   "ns",
+   "oh",
+   "zzz"
+  ],
+  [
+   "n.",
+   "sqp",
+   "uu"
+  ],
+  [
+   "arr",
+   "n.",
+   "sqp",
+   "uu"
+  ],
+  [
+   "g",
+   "iot",
+   "z"
+  ],
+  [
+   "c.",
+   "g",
+   "iot",
+   "three",
+   "z"
+  ],
+  [
+   "arr",
+   "c.",
+   "g",
+   "iot",
+   "n.",
+   "sqp",
+   "three",
+   "uu",
+   "z"
+  ],
+  [
+   "arr",
+   "c.",
+   "g",
+   "hd",
+   "iot",
+   "lam",
+   "n.",
+   "sqp",
+   "three",
+   "uu",
+   "z"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.024,
+ "b_pairs": 212,
+ "b_chance_pair_precision": 0.061
+}

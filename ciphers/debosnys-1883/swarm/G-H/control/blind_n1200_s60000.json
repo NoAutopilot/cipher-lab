@@ -1,0 +1,314 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 1200,
+ "K": 88,
+ "start": 60000,
+ "seed": 60000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3525,
+   "share": 0.167,
+   "link": 0.27,
+   "signs": [
+    "grr",
+    "ih",
+    "iot",
+    "ki",
+    "n.",
+    "ni",
+    "ns",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5248,
+   "share": 0.201,
+   "link": 0.244,
+   "signs": [
+    "arr",
+    "bar",
+    "c.",
+    "cross",
+    "del",
+    "g",
+    "hk",
+    "lam",
+    "plus",
+    "ru",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.6522,
+   "share": 0.122,
+   "link": 0.396,
+   "signs": [
+    "grr",
+    "ih",
+    "iot",
+    "ns",
+    "uh",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.6685,
+   "share": 0.217,
+   "link": 0.14,
+   "signs": [
+    "b",
+    "ds",
+    "e",
+    "f",
+    "h",
+    "inf",
+    "j",
+    "k",
+    "m",
+    "n",
+    "o",
+    "r",
+    "r.",
+    "t",
+    "three",
+    "v",
+    "w",
+    "zs"
+   ]
+  },
+  {
+   "kl": 0.8104,
+   "share": 0.105,
+   "link": 0.228,
+   "signs": [
+    "b",
+    "ds",
+    "e",
+    "f",
+    "h",
+    "k",
+    "o",
+    "t",
+    "v",
+    "w"
+   ]
+  },
+  {
+   "kl": 0.9333,
+   "share": 0.113,
+   "link": 0.188,
+   "signs": [
+    "inf",
+    "j",
+    "m",
+    "n",
+    "r",
+    "r.",
+    "three",
+    "zs"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -1.0493,
+   "rawgap": -0.9777,
+   "unikl": 0.0716,
+   "n_space_signs": 20,
+   "init": 4
+  },
+  {
+   "lang": "la",
+   "gap": -1.4351,
+   "rawgap": -0.3018,
+   "unikl": 1.1333,
+   "n_space_signs": 18,
+   "init": 6
+  },
+  {
+   "lang": "nl",
+   "gap": -1.7499,
+   "rawgap": -1.2416,
+   "unikl": 0.5083,
+   "n_space_signs": 20,
+   "init": 3
+  },
+  {
+   "lang": "da",
+   "gap": -1.8813,
+   "rawgap": 0.0645,
+   "unikl": 1.9458,
+   "n_space_signs": 0,
+   "init": 0
+  },
+  {
+   "lang": "lt",
+   "gap": -1.9361,
+   "rawgap": -1.5033,
+   "unikl": 0.4328,
+   "n_space_signs": 15,
+   "init": 3
+  },
+  {
+   "lang": "pl",
+   "gap": -2.0327,
+   "rawgap": -1.5659,
+   "unikl": 0.4667,
+   "n_space_signs": 18,
+   "init": 5
+  },
+  {
+   "lang": "it",
+   "gap": -2.1596,
+   "rawgap": -0.4245,
+   "unikl": 1.7351,
+   "n_space_signs": 20,
+   "init": 2
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.2425,
+   "rawgap": -0.3985,
+   "unikl": 1.844,
+   "n_space_signs": 27,
+   "init": 2
+  },
+  {
+   "lang": "en",
+   "gap": -2.2696,
+   "rawgap": -1.6332,
+   "unikl": 0.6364,
+   "n_space_signs": 21,
+   "init": 6
+  },
+  {
+   "lang": "fr",
+   "gap": -2.325,
+   "rawgap": -1.6835,
+   "unikl": 0.6415,
+   "n_space_signs": 18,
+   "init": 6
+  },
+  {
+   "lang": "es",
+   "gap": -2.5009,
+   "rawgap": -0.2929,
+   "unikl": 2.208,
+   "n_space_signs": 22,
+   "init": 1
+  },
+  {
+   "lang": "pt",
+   "gap": -2.6378,
+   "rawgap": -0.3302,
+   "unikl": 2.3076,
+   "n_space_signs": 26,
+   "init": 0
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -1.0493,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "e",
+   "f",
+   "ft",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "p",
+   "q",
+   "t",
+   "u",
+   "v",
+   "w",
+   "zs"
+  ],
+  "text_head": "halte wird edie gantze reception it aus dem catetismo so hiernacht folget zutersehe o frage undtantworte osewo romtet ihr hers aus der alterheiligte s des heilige andreas zwas fur guteszeitunge bringe"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -1.0493
+  },
+  {
+   "lang": "la",
+   "gap": -1.4351
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 0.843,
+ "recovery": 0.9245,
+ "recovery_screen_de": 0.9245,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "ns",
+   "y.."
+  ],
+  [
+   "grr",
+   "ih"
+  ],
+  [
+   "P",
+   "tri.."
+  ],
+  [
+   "o.",
+   "tri"
+  ],
+  [
+   "c.",
+   "lam"
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "eh",
+   "zzz"
+  ],
+  [
+   "c.",
+   "lam",
+   "plus"
+  ],
+  [
+   "r.",
+   "three"
+  ],
+  [
+   "grr",
+   "ih",
+   "uh"
+  ],
+  [
+   "inf",
+   "j"
+  ],
+  [
+   "ki",
+   "ni"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.517,
+ "b_pairs": 29,
+ "b_chance_pair_precision": 0.049
+}

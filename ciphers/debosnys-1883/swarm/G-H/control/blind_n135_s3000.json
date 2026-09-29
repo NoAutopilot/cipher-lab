@@ -1,0 +1,281 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 135,
+ "K": 59,
+ "start": 3000,
+ "seed": 3000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.5121,
+   "share": 0.17,
+   "link": 0.06,
+   "signs": [
+    "bar",
+    "del",
+    "gam",
+    "lam",
+    "m.",
+    "nu",
+    "sqi",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.6285,
+   "share": 0.141,
+   "link": 0.039,
+   "signs": [
+    "gs",
+    "inf",
+    "j",
+    "o",
+    "pi",
+    "r.",
+    "s"
+   ]
+  },
+  {
+   "kl": 0.675,
+   "share": 0.126,
+   "link": 0.062,
+   "signs": [
+    "ah",
+    "f",
+    "grr",
+    "oh",
+    "tri",
+    "uu"
+   ]
+  },
+  {
+   "kl": 0.7228,
+   "share": 0.119,
+   "link": 0.14,
+   "signs": [
+    "g",
+    "h.",
+    "hd",
+    "n."
+   ]
+  },
+  {
+   "kl": 0.7289,
+   "share": 0.119,
+   "link": 0.131,
+   "signs": [
+    "del",
+    "lam",
+    "nu",
+    "sqi",
+    "x."
+   ]
+  },
+  {
+   "kl": 0.7876,
+   "share": 0.096,
+   "link": 0.167,
+   "signs": [
+    "h.",
+    "hd",
+    "n."
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "la",
+   "gap": 0.1418,
+   "rawgap": 0.3188,
+   "unikl": 0.177,
+   "n_space_signs": 8,
+   "init": 3
+  },
+  {
+   "lang": "it",
+   "gap": -0.0994,
+   "rawgap": 0.014,
+   "unikl": 0.1134,
+   "n_space_signs": 13,
+   "init": 0
+  },
+  {
+   "lang": "fr18",
+   "gap": -0.1237,
+   "rawgap": 0.1569,
+   "unikl": 0.2806,
+   "n_space_signs": 13,
+   "init": 6
+  },
+  {
+   "lang": "pt",
+   "gap": -0.1738,
+   "rawgap": 0.0021,
+   "unikl": 0.1759,
+   "n_space_signs": 11,
+   "init": 0
+  },
+  {
+   "lang": "es",
+   "gap": -0.2506,
+   "rawgap": -0.0752,
+   "unikl": 0.1754,
+   "n_space_signs": 11,
+   "init": 1
+  },
+  {
+   "lang": "lt",
+   "gap": -0.2677,
+   "rawgap": -0.093,
+   "unikl": 0.1747,
+   "n_space_signs": 7,
+   "init": 4
+  },
+  {
+   "lang": "da",
+   "gap": -0.2712,
+   "rawgap": -0.0787,
+   "unikl": 0.1925,
+   "n_space_signs": 9,
+   "init": 3
+  },
+  {
+   "lang": "pl",
+   "gap": -0.3347,
+   "rawgap": -0.1245,
+   "unikl": 0.2103,
+   "n_space_signs": 12,
+   "init": 0
+  },
+  {
+   "lang": "nl",
+   "gap": -0.3459,
+   "rawgap": -0.1011,
+   "unikl": 0.2448,
+   "n_space_signs": 11,
+   "init": 0
+  },
+  {
+   "lang": "de",
+   "gap": -0.3972,
+   "rawgap": -0.2637,
+   "unikl": 0.1335,
+   "n_space_signs": 10,
+   "init": 6
+  },
+  {
+   "lang": "fr",
+   "gap": -0.5713,
+   "rawgap": -0.3271,
+   "unikl": 0.2442,
+   "n_space_signs": 10,
+   "init": 4
+  },
+  {
+   "lang": "en",
+   "gap": -0.6416,
+   "rawgap": -0.3868,
+   "unikl": 0.2548,
+   "n_space_signs": 11,
+   "init": 5
+  }
+ ],
+ "d_best": {
+  "lang": "la",
+  "gap": 0.1418,
+  "space_signs": [
+   "arr",
+   "grr",
+   "j",
+   "ki",
+   "n",
+   "sqi",
+   "uu",
+   "zzz"
+  ],
+  "text_head": "in militiam adenteri evenere inae non de bellariolam eftri ali iter eilicardine iii ania necede quae id cui litere norie fi one aut ord"
+ },
+ "d_all": [
+  {
+   "lang": "la",
+   "gap": 0.1418
+  },
+  {
+   "lang": "it",
+   "gap": -0.0994
+  }
+ ],
+ "a_space_precision": 0.043,
+ "a_space_recall": 0.048,
+ "recovery": 0.0811,
+ "recovery_screen_de": 0.1441,
+ "screen_rank_de": 10,
+ "b_tight_merges": [
+  [
+   "lam",
+   "nu"
+  ],
+  [
+   "ns",
+   "r."
+  ],
+  [
+   "mu",
+   "ru"
+  ],
+  [
+   "eh",
+   "n."
+  ],
+  [
+   "del",
+   "hd"
+  ],
+  [
+   "eh",
+   "iot",
+   "n."
+  ],
+  [
+   "g",
+   "h."
+  ],
+  [
+   "ns",
+   "r.",
+   "s"
+  ],
+  [
+   "g",
+   "h.",
+   "pi"
+  ],
+  [
+   "del",
+   "hd",
+   "lam",
+   "nu"
+  ],
+  [
+   "mu",
+   "ru",
+   "z"
+  ],
+  [
+   "del",
+   "hd",
+   "lam",
+   "mu",
+   "nu",
+   "ru",
+   "z"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.079,
+ "b_pairs": 480,
+ "b_chance_pair_precision": 0.04
+}

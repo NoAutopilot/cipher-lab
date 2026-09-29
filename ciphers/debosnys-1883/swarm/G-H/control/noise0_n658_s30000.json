@@ -1,0 +1,303 @@
+{
+ "mode": "copiale",
+ "file": null,
+ "n": 658,
+ "K": 74,
+ "start": 30000,
+ "seed": 30000,
+ "shuffled": false,
+ "restarts": 6,
+ "iters": 400000,
+ "deep": 24,
+ "a_candidates": [
+  {
+   "kl": 0.3293,
+   "share": 0.217,
+   "link": 0.146,
+   "signs": [
+    "bar",
+    "c.",
+    "hk",
+    "inf",
+    "j",
+    "lam",
+    "nee",
+    "plus",
+    "r.",
+    "three"
+   ]
+  },
+  {
+   "kl": 0.4497,
+   "share": 0.125,
+   "link": 0.234,
+   "signs": [
+    "ah",
+    "c",
+    "grl",
+    "grr",
+    "ih",
+    "oh",
+    "uh",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.5377,
+   "share": 0.122,
+   "link": 0.195,
+   "signs": [
+    "iot",
+    "n.",
+    "ni",
+    "ns",
+    "p.",
+    "tri",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5417,
+   "share": 0.17,
+   "link": 0.176,
+   "signs": [
+    ":",
+    "eh",
+    "fem",
+    "iot",
+    "n.",
+    "ni",
+    "ns",
+    "o.",
+    "p.",
+    "tri",
+    "y.."
+   ]
+  },
+  {
+   "kl": 0.5482,
+   "share": 0.114,
+   "link": 0.371,
+   "signs": [
+    "ah",
+    "grr",
+    "ih",
+    "oh",
+    "uh",
+    "zzz"
+   ]
+  },
+  {
+   "kl": 0.6055,
+   "share": 0.117,
+   "link": 0.129,
+   "signs": [
+    "bas",
+    "cross",
+    "del",
+    "gam",
+    "pi",
+    "sqp",
+    "x.",
+    "z"
+   ]
+  }
+ ],
+ "c_screen": [
+  {
+   "lang": "de",
+   "gap": -0.7258,
+   "rawgap": -0.6119,
+   "unikl": 0.1139,
+   "n_space_signs": 20,
+   "init": 2
+  },
+  {
+   "lang": "nl",
+   "gap": -1.3885,
+   "rawgap": -0.8096,
+   "unikl": 0.5789,
+   "n_space_signs": 18,
+   "init": 6
+  },
+  {
+   "lang": "da",
+   "gap": -1.4073,
+   "rawgap": -0.8045,
+   "unikl": 0.6028,
+   "n_space_signs": 12,
+   "init": 1
+  },
+  {
+   "lang": "la",
+   "gap": -1.4162,
+   "rawgap": -0.3079,
+   "unikl": 1.1083,
+   "n_space_signs": 8,
+   "init": 5
+  },
+  {
+   "lang": "pl",
+   "gap": -1.5765,
+   "rawgap": -1.1213,
+   "unikl": 0.4552,
+   "n_space_signs": 14,
+   "init": 5
+  },
+  {
+   "lang": "lt",
+   "gap": -1.9591,
+   "rawgap": -1.568,
+   "unikl": 0.3911,
+   "n_space_signs": 9,
+   "init": 2
+  },
+  {
+   "lang": "it",
+   "gap": -2.0406,
+   "rawgap": -0.3746,
+   "unikl": 1.6661,
+   "n_space_signs": 19,
+   "init": 2
+  },
+  {
+   "lang": "fr18",
+   "gap": -2.0428,
+   "rawgap": -0.282,
+   "unikl": 1.7609,
+   "n_space_signs": 22,
+   "init": 4
+  },
+  {
+   "lang": "fr",
+   "gap": -2.0639,
+   "rawgap": -1.5732,
+   "unikl": 0.4907,
+   "n_space_signs": 14,
+   "init": 4
+  },
+  {
+   "lang": "en",
+   "gap": -2.2351,
+   "rawgap": -1.747,
+   "unikl": 0.488,
+   "n_space_signs": 11,
+   "init": 3
+  },
+  {
+   "lang": "es",
+   "gap": -2.461,
+   "rawgap": -0.2773,
+   "unikl": 2.1837,
+   "n_space_signs": 23,
+   "init": 1
+  },
+  {
+   "lang": "pt",
+   "gap": -2.671,
+   "rawgap": -0.3319,
+   "unikl": 2.3391,
+   "n_space_signs": 20,
+   "init": 0
+  }
+ ],
+ "d_best": {
+  "lang": "de",
+  "gap": -0.6772,
+  "space_signs": [
+   "a",
+   "b",
+   "c",
+   "ds",
+   "e",
+   "f",
+   "gs",
+   "h",
+   "i",
+   "k",
+   "l",
+   "m",
+   "n",
+   "o",
+   "p",
+   "r",
+   "t",
+   "u",
+   "v",
+   "w"
+  ],
+  "text_head": "igion mit der obrigkeit not mit der ehrbarkeit raut erklaret er ihm dierzeitnung des teptits last ihn nebe sit trete kustet und grustet ihn nat dene kentzeite merkkmahle und worte eines maures und leh"
+ },
+ "d_all": [
+  {
+   "lang": "de",
+   "gap": -0.6772
+  },
+  {
+   "lang": "nl",
+   "gap": -1.3765
+  }
+ ],
+ "a_space_precision": 1.0,
+ "a_space_recall": 0.975,
+ "recovery": 0.9174,
+ "recovery_screen_de": 0.9043,
+ "screen_rank_de": 1,
+ "b_tight_merges": [
+  [
+   "ah",
+   "ih"
+  ],
+  [
+   "g",
+   "sqi"
+  ],
+  [
+   "grr",
+   "zzz"
+  ],
+  [
+   "iot",
+   "ns"
+  ],
+  [
+   "ah",
+   "grr",
+   "ih",
+   "zzz"
+  ],
+  [
+   "iot",
+   "ns",
+   "y.."
+  ],
+  [
+   "mu",
+   "nu"
+  ],
+  [
+   "lam",
+   "plus"
+  ],
+  [
+   "bar",
+   "r."
+  ],
+  [
+   "arr",
+   "hd"
+  ],
+  [
+   "bar",
+   "j",
+   "r."
+  ],
+  [
+   "gam",
+   "sqp"
+  ]
+ ],
+ "b_tight_merge_pair_precision": 0.723,
+ "b_pairs": 47,
+ "b_chance_pair_precision": 0.052
+}
