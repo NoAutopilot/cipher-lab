@@ -1,0 +1,4 @@
+by kind: text h: A 3; text non-h: D 1 unclear 2; CH: A 1; PHI/C43: B 2 C 2
+G = A (size 4 of 11): text h 3/3, text non-h 0/3, CH 1/1, cipher controls 0/4
+gates 1 and 2 pass; CH tile in G: 1/1 (n = 1, flagged); cipher controls in G: 0/4
+read-out: CH has the clear h's letterform

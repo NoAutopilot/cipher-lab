@@ -1,0 +1,17 @@
+# written verbatim from the inline reply (runner 10, H298, one Opus vision call, 29 Sept 2026, 100,487 subagent tokens, 20 s)
+# GROUP A: a cursive h, with a tall ascender looped at the top and an arched shoulder on the right that ends in a descending tail.
+# GROUP B: a "43"-like cipher sign, made of an angular 4 whose long vertical stem runs below the line, with a 3-shaped double bow attached to its right.
+# GROUP C: a "φ8"-like cipher sign, made of a closed oval crossed by a long vertical stem that descends below the line, with an 8-shaped double loop joined at the upper right.
+# GROUP D: a single tall looped ascender stroke (an l-shape) with no shoulder or bow.
+tile	group
+V01	A
+V02	unclear
+V03	unclear
+V04	B
+V05	C
+V06	A
+V07	D
+V08	A
+V09	B
+V10	C
+V11	A

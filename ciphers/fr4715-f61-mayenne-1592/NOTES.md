@@ -4791,3 +4791,16 @@ OK). No value, nothing merged. Vision calls this session: 5 (one per vision step
 reader's scale). **H300** `family/f61_nulls_as_letters.tsv`: of the null-band and dash classes, CA (a), CH (h), C6 (6), LL (ll) and, partly, LOOPSTEM1
 (q-like) are shaped like clear letters or digits in the atlas and in the blind readers' own words; CROSS, LOOPBAR, the 4-over-Pi and OTHER are not.
 For the verifier's null-band wording and for H298's design (the CH letterform test). No call.
+
+## Campaign step H298 (29 Sept 2026, 10:57 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61's CH has the clear h's letterform (n = 1)
+
+Pre-registered (PROMPTS section H298; `family/h298_ch_text.py`, key `family/h298_items.tsv`, committed 75877ea1 before the call; gates adapted to n:
+all text h's in one group, no non-h letter in it). Disclosure: the runner placed the six TEXT tiles on two ruler sheets of those tiles only; the CH,
+PHI and C43 crops and the test sheet were not seen (sheet B L05 had been viewed whole for the Correction). 11 tiles: CH 1 (sheet B L05 x 2140,
+centroid-recentred), clear h 3 (choses x2, mehi), clear non-h 3 (l of les, C of Come, l of le), PHI 2, C43 2. One Opus free sort
+(`family/passes/h298_sort.tsv`); result `family/h298_ca_text_result.txt` (`--check` OK): groups **A** "a cursive h, tall looped ascender, arched shoulder
+ending in a descending tail", **B** "43", **C** "phi-8", **D** "a single tall looped ascender (an l-shape)". **Text h: A 3/3 (gate 1). Non-h: D 1, unclear 2
+(gate 2: 0 in A). CH: A 1/1. PHI/C43: 0 in A.** Pre-stated read-out: **"CH has the clear h's letterform"**, at n = 1 on the CH side (flagged). With H281
+(Tomokiyo's dash), H288/H291 (a letter inside words on the family leaves), H289 (the pooled e/m is two leaves' letters) and H297 (a blind reader lists
+it as the word "h"): on f.61 the CH sign is an h-shaped mark that reads as nothing, the CA pattern at n = 1 -- a second null drawn as a clear letter,
+for the verifier's null-band wording; no cell changes. Vision calls this session: 6 (one per vision step).
