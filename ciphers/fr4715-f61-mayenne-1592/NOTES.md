@@ -3969,3 +3969,19 @@ evidence (key_period_v5.tsv non-CELL rows plus key_period_f176.tsv); MIXED = bot
 - Each leaf's c/p majority sits under 4TRI (f.101r 51, f.176r 46, f.188r 21), but on f.108v the H59 passes wrote the bowl as 4STEM (H199).
 For the verifier: v5's 4STEM cell (a/n, with "4STEM p/c" listed as not merged over a conflict with f.108r) and 4TRI cell rest partly on pooled counts.
 Read f.61-hand leaves' 4-family by the bowl (H194 f.61, H199/H201 f.108v), not by the pass code. No key change, nothing merged.
+
+## Campaign step H205 (29 Sept 2026, 02:27-02:35 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- model judge, bowl labels vs pass codes on f.108v: "no preference shown" by the registered rule; the rank part was a non-test by construction
+
+Pre-registered (scripts/PROMPTS.md section H205; `scripts/f61judge108v_bowl.py`, sets and keys committed 70db041f before the calls). Two Opus text
+calls, H94 no-leak prompt, replies verbatim in `scripts/f61judge_known_h51_swaps207_verdict.tsv` and `scripts/f61judge_f108v_bowl_s207_verdict.tsv`.
+- **Control (known f.61 span lines, one-swap null, seed 207): target rank 1 of 21 (7.0; next 6.0): PASS** (`f61judge_known_h51_swaps207_result.txt`).
+- **Target (`f61judge_f108v_bowl_s207_result.txt`, `--check` fresh): bowl labelling 7.0, rank 4 of 21 (ties against); the pass-code set 2.5 (rank 13).**
+  Registered read-out: **"no preference shown"** (the rule needed rank 1 and above the pass-code set).
+- **The runner's own design error:** after the relabel, f.108v carries no 4TRI, 4PI or C43 token (4BOWL 19, 4NOB 49, 4STEM 4). So the one-swap
+  neighbours 4PI<->C43 and 4PI<->4TRI are the target text exactly (both scored 7.0, tying it), and 4STEM<->4TRI and 4PI<->4STEM differ from it at 4
+  tokens (7.5, 6.5). The rank-1 part could not fail differently from the target for those sets (CLAUDE.md rule 3, "a control that cannot vary on
+  the same axis"): the brief's error, not the judge's. The swap pool should have been drawn only from classes present in the relabelled text.
+What the numbers do show, descriptively and outside the registered rule: the judge scored the bowl decode 4.5 points above the pass-code decode of
+the same tokens, in line with H201's sequence gain. It is one call, so no claim rests on it. The judge's resolved text for the bowl set (in the verdict
+file) is its own resolution under grade-M transcription and a two-way cipher: a verifier's input, not a reading. Not re-run in this session. A
+corrected re-run (swap pool restricted to present classes, two seeds) is H208.
