@@ -4609,3 +4609,14 @@ So the published letter n at L11 9 (the one source of the a/n cell for f.61's 4-
 for d, or the phrase is not "entendoit". A rule-4 style conflict row is filed in HYPOTHESES.md with both witnesses (his markup; the lexicon through the
 corpus). For the verifier (VERIFY-F61-V9): a candidate correction to a published reading, grade I on L11 9 = d and on L01 12 (the other 4-over-Pi) nothing;
 rule 10 wording, no merge, no class change. H269 scores the test key both ways. No call.
+
+## Campaign step H269 (29 Sept 2026, 10:23 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the 4-over-Pi = d test key against both witnesses (script-only)
+
+`family/h269_4overpi_d_testkey.py` (H240's design under key v6's f.61 reading; result `family/h269_4overpi_d_testkey_result.txt`, `--check` OK; 2000 permuted
+keys per cell, none reach any target score). **(a) Published markup: v6 53/55; 4-over-Pi = d 52/55 (the S5 n lost); 4-over-Pi = a/n 53/55. (b) S5 as
+'melentendoit' (H268's witness): v6 54/56 (the 4STEM n gained; the pooled 4PI a/d/n/q already holds d); 4-over-Pi = d 54/56; 4-over-Pi = a/n 53/56.**
+What it says: the two witnesses pull the one token opposite ways by exactly one letter each, as expected; the pooled v6 cell (a/d/n/q) satisfies both
+because it is wide. Which witness the f.61 reading follows is the verifier's call (H268's conflict row); the runner's own view, for the record: the
+lexicon is a stronger witness than one printed letter of a self-labelled incomplete solution, so L11 9 = d (grade I) and, since both f.61 4-over-Pi
+tokens are one sign (V8), L01 12 has the same candidate at a weaker grade. No merge. H270 (a model judge on L11's variants) is dropped: it would only
+re-derive that entendoit is a word, which H268 settles from the corpus, and H85's blind judge already read the span that way. No call.

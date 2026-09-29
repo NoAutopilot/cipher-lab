@@ -1,0 +1,7 @@
+v6 f.61 reading: 4PI a/d/n/q, 4STEM a/n
+(a) published markup: v6 53/55 = 0.964; permuted p95 0.418 max 0.673; >= key 0/2000
+(a) published markup: 4-over-Pi = d 52/55 = 0.945; permuted p95 0.400 max 0.673; >= key 0/2000
+(a) published markup: 4-over-Pi = a/n 53/55 = 0.964; permuted p95 0.418 max 0.673; >= key 0/2000
+(b) S5 as 'melentendoit': v6 54/56 = 0.964; permuted p95 0.429 max 0.679; >= key 0/2000
+(b) S5 as 'melentendoit': 4-over-Pi = d 54/56 = 0.964; permuted p95 0.411 max 0.679; >= key 0/2000
+(b) S5 as 'melentendoit': 4-over-Pi = a/n 53/56 = 0.946; permuted p95 0.429 max 0.679; >= key 0/2000
