@@ -4584,3 +4584,15 @@ sheet's display pixels rather than the ruler's labels (its three a-shaped signs 
 keeps the reply's value in x_reply; the join itself uses only the count and order. Result `scripts/f61positions_L10_result.txt` (`--check` OK). Positions now
 cover 95 of f.61's 99 signs (all seven lines with cipher runs; the four remaining tokens are L02/L04's OTHER and read_call_U items). Descriptive: the
 reader calls all three L10 CA "a-shaped sign" inside the run, as H63 did. No reading; nothing merged. Vision calls this session: 3 (one per vision step).
+
+## Campaign step H265 (29 Sept 2026, 10:18 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the scribe does not space words inside the cipher (script-only)
+
+`family/h265_span_gaps.py` (rules in the docstring, fixed before running; result `family/h265_span_gaps_result.txt`, `--check` OK). Gaps between consecutive
+signs of one segment, from the positions of H253/H257/H264; word boundaries from Tomokiyo's own phrases through the H259 alignment. **Clean boundary gaps
+(no null between the two lettered signs): n = 2 -- est|capable 260, au|beau 320, mean 290; within-word gaps n = 34: mean 303, range 210-410; permutation
+p95 350.** Pre-stated read-out: **no spacing shown** (n = 2, weak by construction, but the two boundary gaps sit in the middle of the within-word range, not
+at its edge). The null-spanned boundaries (trop [CA CA] avancees: 270, 260, 310; beau [C6 CA] pere: 340, 200, 320) are ordinary gaps too. What it says:
+the signs run at an even pitch (about 300 sheet px, 100 native) whatever the words, so sign spacing carries no word-boundary information on this leaf --
+a word-boundary detector from gaps is ruled out for f.61, and H266 (null-class flanking gaps) cannot detect boundary placement: dropped as a non-test by
+this calibration. H267 (positional reads of L02/L04/L06/L09) is dropped too: L06 and L09 carry no cipher signs in any pass, and L02/L04 carry only the
+two OTHER tokens each that read_call_U and H238 already describe -- two vision calls for x on four tokens no open test needs. No call.

@@ -1,0 +1,8 @@
+clean boundary gaps n = 2: [260, 320] (mean 290)
+within-word gaps n = 34: mean 303, min 210, max 410
+permutation (2000, seed 265) of 2 labels over 36 gaps: p95 350, max 395
+read-out: no spacing shown (n = 2, weak)
+CLEAN S2 L03 t|c signs 6->7 gap 260
+NULL-SPANNED S3 L05 p|a signs 6->9 via CA CA gaps [270, 260, 310]
+CLEAN S4b L08 u|b signs 4->5 gap 320
+NULL-SPANNED S4b L08 u|p signs 8->11 via C6 CA gaps [340, 200, 320]
