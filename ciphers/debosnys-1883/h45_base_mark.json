@@ -1,0 +1,24 @@
+{
+ "target": {
+  "G_per_N": 2.1279,
+  "null_mean": 2.5419,
+  "null_lo": 2.038,
+  "null_hi": 2.9783,
+  "z": -1.7,
+  "p_le": 0.0544,
+  "cells": 52,
+  "N": 445,
+  "bases": 21,
+  "marks": 17
+ },
+ "planted_abugida": {
+  "G_per_N": 0.6934,
+  "null_mean": 1.6422,
+  "null_lo": 1.3571,
+  "null_hi": 1.9333,
+  "z": -6.41,
+  "p_le": 0.0,
+  "cells": 125,
+  "N": 427
+ }
+}

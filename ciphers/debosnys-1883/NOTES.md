@@ -1078,3 +1078,17 @@ share of gaps under 3 signs 0.089 against 0.036-0.179. A planted stream with one
 So **pictograms are spaced like random draws along the stream**: they mark no regular phrase or sentence unit, and
 H31's line-start preference is a habit at the physical line start (or the word at the start of a written line), not
 evidence of a phrase marker. Grade S; nothing read; status `open`.
+
+### H45, is base+mark compositional? (29 Sept 2026, CPU only)
+
+`scripts/h45_base_mark.py` (`h45_base_mark.json`): the 21 bases that carry a mark on some id, with their unmarked
+forms, settled token counts (N 445 over 52 observed (base, mark) cells of a possible 21 x 17 = 357). Frequency
+independence of base and mark (G/N against the independence table): 2.128 against a count-reassignment null of
+2.04-2.98 (z -1.7, p 0.054) -- at most weakly product-like. The planted abugida (fr19 syllables, onset as base, nucleus
+as mark, the commonest nucleus unmarked, same numbers of bases and marks, N 427) fills 125 cells and scores z -6.4
+against its own null, so the statistic sees real composition. **The target's table is sparse and lopsided**: O takes
+11 forms (ten marks plus bare), X 6, ARCH 4, CC/II/NINE 3, the other 15 bases one or two -- one or two "carrier"
+shapes decorated many ways, not consonant signs each combining with a set of vowel marks. So the Sektu-style reading
+of marks as a free second component (vowel, nasal, mute e) is not supported at this N; the marked ids behave more
+like separate signs built on a few favourite shapes. Caveat: the base/mark split is our labeller's decomposition of
+the id names (GOLD-D1), not an independent measurement. Grade S; nothing read; status `open`.
