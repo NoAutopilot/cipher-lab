@@ -670,3 +670,15 @@ particulieres and tances from the clear line L02), clear-text non-a letters 3 (L
 in H256). Disclosure: the runner viewed images/f61sheetB_L02.jpg (a line with no CA) to place the L02 letters, and two ruler sheets of the nine TEXT tiles
 only; the CA, PHI and C43 crops and the test sheet were not seen. Rules, gates and read-outs as H256 (script docstring). Prompt: H256's verbatim with
 T01-T20 read U01-U20.
+
+## H264 (29 Sept, Opus vision, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61 L10 positional read, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h264/L10.jpg (scripts/f61positions_sheets.py --lines L10 --prefix f61sheetB --tag h264: images/f61sheetB_L10.jpg, four segments, red ruler
+every 100 sheet px). The runner did not look at it. Scored by scripts/f61positions_L10_score.py: the signs listed after the last clear word are joined to
+fragment_L10.tsv's 13 signs in order only if the counts agree (dot/punctuation items dropped, as H253); otherwise reported and not joined. Prompt
+(verbatim, H253's with one file and four segments): "Read the image named with your image reader only; use no other tool. It shows one line of a
+16th-century French letter that mixes ordinary handwriting with cipher signs, cut into 4 stacked segments (labelled 'segment 1'..'segment 4'); consecutive
+segments overlap a little at their ends, so a sign at the right edge of one segment may reappear at the left of the next -- list it once, in the segment
+where it is complete. Under each segment is a red ruler: tick labels are hundreds of pixels (label 7 = x 700). Go segment by segment, left to right, and
+list every item: a cipher sign or a clear handwritten word. Answer inline only, one line per item, tab-separated: 'L10<TAB><segment><TAB><x><TAB>sign|word
+<TAB><few-word shape description, or the word as you read it>' with x the item's centre on the ruler to the nearest 10, and nothing else."
