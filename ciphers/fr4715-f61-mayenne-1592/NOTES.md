@@ -4672,3 +4672,10 @@ entendoient; all in Catherine de Medicis t.1-2): "qu'il entendoit et veoyoit que
 (3 files); the word-level finding (entendoit 7 forms, enten- 0) stands and is the whole of the H268 argument. Carried into the H268 NOTES section,
 HYPOTHESES.md's H268 row, CAMPAIGN.md's H268 result cell and family/V9_PAGE.md (rule 10's propagation requirement). The sense in these contexts is
 "understood / intended", which fits "me l'entendoit" (understood it of me / from me) only loosely; the verifier weighs that. No call.
+
+## Campaign step H280 (29 Sept 2026, 10:35 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the pronoun construction in the corpora on disk (script-only)
+
+`family/h280_pronoun_phrase.py` (result `family/h280_pronoun_phrase_result.txt`, `--check` OK): a standalone pronoun before an entend- imperfect
+("<l|m|le|me|se> entendoit/-oient/-ait/-aient") occurs **once in fr16** (983k words: `lettresdecatheri01cathuoft ... s asseure- ment que le roy le trouverait eucores plus, s il l entendoit. au moyen de quoy je leur es- criptz pr ...`) and **never in fr18, fr19 or fr19v** (595k, 593k, 26k
+words); enten- forms 0 everywhere. Existence only, the other corpora being era-mismatched: the construction is attested once in the period letters, so
+"me l'entendoit" is possible French but not common in these texts; the word-level H268 result is unaffected. For the verifier's weighing. No call.

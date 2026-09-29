@@ -1,0 +1,4 @@
+fr16: pronoun + entend- 1 (l entendoit); enten- forms 0; 982985 words
+fr18: pronoun + entend- 0; enten- forms 0; 595506 words
+fr19: pronoun + entend- 0; enten- forms 0; 592801 words
+fr19v: pronoun + entend- 0; enten- forms 0; 26258 words
