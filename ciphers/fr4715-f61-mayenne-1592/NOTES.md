@@ -4620,3 +4620,12 @@ because it is wide. Which witness the f.61 reading follows is the verifier's cal
 lexicon is a stronger witness than one printed letter of a self-labelled incomplete solution, so L11 9 = d (grade I) and, since both f.61 4-over-Pi
 tokens are one sign (V8), L01 12 has the same candidate at a weaker grade. No merge. H270 (a model judge on L11's variants) is dropped: it would only
 re-derive that entendoit is a word, which H268 settles from the corpus, and H85's blind judge already read the span that way. No call.
+
+## Campaign step H271 (29 Sept 2026, 10:24 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the L10 lattice admits everything, and so does every control (script-only)
+
+`family/h271_l10_lattice.py` (rules in the docstring, fixed before running; result `family/h271_l10_lattice_result.txt`, `--check` OK). Word list: 16,183 forms
+with count >= 3 in fr16. **The real lattice ([l/y][e/r][g/t][e/r][b/o][f/s][h/u][b/o]) admits 364 segmentations into 1-4 list words (l e gros ho, l et ro
+sub, ...); the control, 200 cell-order permutations of the same cells, admits at least one in 200/200.** Pre-stated read-out: **descriptive only** -- the
+instrument cannot discriminate: a count-3 word list from OCR'd letters holds two-letter fragments (ho, uo, eb, ...) that segment any string. No lead, no
+reading; the fragment's letters stay M. H272 (the same search on L01's tail) is dropped as a non-test by this control; a stricter list (longer words,
+higher counts) would be a post-hoc retune of the same instrument and is not tried (CLAUDE.md rule 3's repeated-attempt clause). No call.

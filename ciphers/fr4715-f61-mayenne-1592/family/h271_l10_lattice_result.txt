@@ -1,0 +1,4 @@
+word list: 16183 forms (count >= 3); cells: l/y e/r g/t e/r b/o f/s h/u b/o
+real lattice: 364 segmentations: l e gros ho; l e gros uo; l e tro sub; l e tro suo; l et eb sub; l et eb suo; l et eo sub; l et eo suo; l et ro sub; l et ro suo; l et ros ho; l et ros uo; l ete b sub; l ete b suo; l ete bs ho; l ete bs uo; l ete o sub; l ete o suo; l ete of ho; l ete of uo
+control (200 cell-order permutations): 200/200 admit at least one segmentation = 1.00 (e.g. l be eut fo; g b bu esle; b be gl eus)
+read-out: descriptive only
