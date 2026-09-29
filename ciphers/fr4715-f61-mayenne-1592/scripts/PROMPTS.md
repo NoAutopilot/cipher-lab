@@ -578,3 +578,9 @@ nothing else."
 Sheets: <scratch>/h229/sheet_01..03 (family/h229_bowl_106r.py tiles; key family/h229_items.tsv). The runner did not look at the sheets. Prompt: H221's bowl
 prompt verbatim, with 'P01-P43' for 'K01-K43', 'one red triangle above the sign points at one cipher sign' for 'two red triangles, one above and one
 below, point at one cipher sign', and the answer form 'P01<TAB>yes', P01 to P43.
+
+## H230 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- exact rerun of H199, WRITTEN BEFORE THE CALL
+
+H199's prompt verbatim (family/passes/PROMPTS_f176_f175.md section H199) on regenerated sheets: <scratch>/h193/sheet_01..03 (fresh natives f327 sha1
+a2b0d98e..., f328 4a13be67...; cut per sheets/f176r_full and f176v_full README; h193_items.tsv byte-identical) and <scratch>/h199/sheet_01..04
+(h199_items.tsv byte-identical). The runner did not look at the sheets. Scorer family/h230_h199_repro.py, committed with this section.
