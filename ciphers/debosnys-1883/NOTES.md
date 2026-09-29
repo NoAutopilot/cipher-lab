@@ -909,3 +909,21 @@ are not decoration and not symmetric whole-word logograms (those would also crow
 prefer a line's first slot, i.e. word- or phrase-initial units (a capital-like or determinative-like role, or
 word-initial syllables written as pictures). A structural result at grade S, nothing read; the named next step is H32
 (what precedes an interior pictogram). Status `open`.
+
+### H29, Bourdeau's No.9 read as a fourth witness for cryptogram 2 (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU only)
+
+Bourdeau's `n9_transcription.py` (MIT, commit 648309e8, one raw.githubusercontent.com request; snapshot in
+`sources/bourdeau/cyphersolver-targets-debosnys/`, credited, never ours): 25 lines, 637 tokens, = our c2a L01-L17 and
+c2b L01-L08 (his CLEAR_* initials dropped). `scripts/h29_bourdeau_n9.py` (`h29_bourdeau_n9.json`, `h29_votes.tsv`), the
+H26 recipe with everything held out: the his-code -> our-id concordance is fitted on odd (even) lines using only boxes
+that are not three-way splits, and scored on the other half. Gate written into the script before the run: apply the
+votes to a variant draft only if held-out concordance on known codes is >= 0.60 and the resolution count beats a
+shuffled-code control's p97.5. **Held-out concordance 0.514 of known codes** (0.503 / 0.524 per fold; 0.31-0.35 of
+all aligned non-split boxes) -- below the verse's 0.54-0.66 (H26) and below the gate. Of 96 three-way splits aligned,
+his mapped code equals one of the three readings on 14 (A 5, C 9, B 0) against a within-line shuffled-code control
+of mean 3.8, p97.5 7 -- more than chance, but the witness quality fails the gate, so **no vote is applied**;
+`ciphertext_c2_draft.tsv` and `ciphertext.txt` are unchanged and the 104 splits stay M. The 14 votes are kept in
+`h29_votes.tsv` for any later adjudication. Side result for H31, an independent reader: 6 of his 25 lines open with a
+pictogram (his PIC_* class, 33 tokens) against a within-line expectation of 1.3 (p 0.0008), so the line-initial
+preference reproduces on a transcription that is not ours; his line-final pictograms 4 (p 0.033, borderline; ours
+ordinary). Grade S, nothing read; status `open`.
