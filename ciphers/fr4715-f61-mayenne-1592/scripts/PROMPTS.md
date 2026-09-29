@@ -559,3 +559,16 @@ not look at these sheets before the call (geometry unchanged from H222/H224). Pr
 
 Sheets: <scratch>/h227/sheet_01..03.jpg (family/h227_loop_101r_all.py tiles; key family/h227_items.tsv). The runner did not look at the sheets. Prompt:
 H224's verbatim, with 'three sheets', the tile range 'X01-X42' and the answer form 'X01<TAB>A', X01 to X42.
+
+## H221 (29 Sept, Opus vision x2, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- hash forms and bowl on fr.3983 f.106r, WRITTEN BEFORE THE CALLS
+
+Sheets: <scratch>/h221h/sheet_01..02 (hash set, H01-H40) and <scratch>/h221b/sheet_01..03 (bowl set, K01-K43) (family/h221_shapes_106r.py tiles; key
+family/h221_items.tsv; native btv1b9059406b f191 fetched fresh, sha1 51700662... differs from the 28 Sept fetch's 5aa1a799..., as H207 found for f210).
+Disclosure: the runner looked at h221b sheet_01 once for marker geometry (signs centred); no answers formed; h221h not looked at. 30 hash and 33 4-family
+targets (draft signs whose pass-A row wrote another code and carry no x of their own are left out).
+Hash call prompt: H224's verbatim with 'two sheets', 'H01-H40', answer form 'H01<TAB>A', H01 to H40.
+Bowl call prompt (verbatim): "You are looking at three sheets of numbered image tiles (K01-K43) cut from 16th-century French cipher letters. In every tile
+two red triangles, one above and one below, point at one cipher sign (ignore ordinary handwriting). Every target sign is a figure-4 shape. Question for
+each tile: does the pointed-at sign's vertical stem run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer
+yes or no; if it cannot be told, answer n. Do not use any other tools. Answer inline, one line per tile, exactly 'K01<TAB>yes', K01 to K43 in order, and
+nothing else."
