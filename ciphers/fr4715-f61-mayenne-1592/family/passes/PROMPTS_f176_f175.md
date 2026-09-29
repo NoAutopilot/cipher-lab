@@ -331,3 +331,7 @@ part-2 format (H376's fix; gate 2 >= 5/6); script `h377_97r_4tri_more.py`, key `
 ## H385 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
 H359's prompt verbatim with part 2 = SCRATCH/h385/sheet_01..03.jpg: f.106r's remaining pass-A C43 (H368 geometry) and H377's 6 known f.61 strips
 (gate 2); script `h385_106r_c43_bowl.py`, key `h385_items.tsv`. The runner did not look at the H385 sheets.
+
+## H387 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h387/sheet_01..03.jpg: f.101r's agreed 4STEM (H365 geometry) and H377's 6 known f.61 strips (gate 2);
+script `h387_101r_4stem_bowl.py`, key `h387_items.tsv`; native canvas 210 refetched once. The runner did not look at the H387 sheets.
