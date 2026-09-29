@@ -5798,3 +5798,14 @@ f.61 tiles agree with H367 9/9.
 What it means: f.61's 4TRI is the bowl sign 6 of 6 (H367 + H396), and PROPOSAL_v8_4tri.md / V11's 4TRI_NB class would move **no** f.61 position; the
 V11 note "L05/14 stays c/p M (H194 bowl vs H367 no-bowl conflict)" now has a third read on the bowl side. H384's result (one in-scope change, L05/14)
 is superseded by this read for the record; its script is left as it was run. For LANE VO3; no grade or key changed. 1 call, cost estimate 1.5 USD.
+
+## Campaign steps H389 and H400 (29 Sept 2026, 18:4x-18:44 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- key v8 exists (F61-FAMILY-13); the v8 meter and spans are already on file (script-only, no new run)
+
+H389 (build key v8) was done by F61-FAMILY-13 (18:25, commit 921e9ebb; `family/build_key_v8.py`, `family/key_period_v8.tsv`, family/KEY.md
+"key v8"), on the orchestrator's go; the runner does not rebuild it. Re-checked here: `family/build_key_v8.py --check` OK and
+`verify_v11/meter_v11.py --check` OK at 18:44. H400 asked for the f.61 meter and the five-span reproduction under v8 with f.61's 4TRI read as the bowl
+sign 6/6 (H367 + H396): that is exactly FAMILY-13's "key v8 as merged (six f.61 4TRI c/p)" line in `family/build_key_v8_result.txt` -- **meter firm
+12 / two-way 59 / wider 2 / unread-or-null 26 of 99; spans 53/55 (2000 permuted keys p95 0.418, 0/2000 at or above); f.108r overlay 74/84 (p95 0.405,
+0/2000)**. So key v8 moves no f.61 band, as H396 predicted. One record point for the verifier lane, no grade changed: L05/14 now has four gated reads,
+bowl 3 of them at three windows (H194, H396 x3 in one call) against H367's one no-bowl; V11's "stays c/p M until a third read" has its third read on
+the bowl side. The grade move (M -> S) is the verifier's.
