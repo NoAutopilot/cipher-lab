@@ -707,3 +707,12 @@ centroid, clear h 3 (choses on sheet B L05 and L01, mehi on the L07 span sheet),
 Disclosure: the runner placed the six TEXT tiles on two ruler sheets of those tiles only; the CH, PHI and C43 crops and the test sheet were not seen (the
 runner did view sheet B L05 whole for the Correction earlier, which shows the CH sign in passing). Gates and read-outs in the script's docstring (n = 3
 text h, n = 1 CH, flagged). Prompt: H256's verbatim with "11 numbered tiles (V01-V11)" and "V01 to V11".
+
+## H302 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.61's LL against clear ll/Il by letterform, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h302/sheet_01.jpg (family/h302_ll_text.py tiles; key family/h302_items.tsv; 12 tiles: f.61 LL 1 at sheet-B L05 seg 3 x 1330 (H299)
+re-centred by ink centroid; clear ll-type 3 (ella on sheet B L07, Il of 'Il seroit' on sheet B L02, Il of 'Il a' on sheet B L04); clear single l 3 (les,
+les on L02, le on L04) as the hand check; PHI 2 and C43 2 (H298's tiles); one DISPUTED tile, L02's opening mark (read_call_U pass 1 LL, pass 2 'Il'),
+scored apart, in no gate). Disclosure: the runner viewed images/f61sheetB_L07.jpg, f61sheetB_L02.jpg (which shows the DISPUTED mark whole) and
+f61sheetB_L04.jpg to place the text letters, then one placement sheet of the six TEXT tiles only; sheet B L05 (the LL), the PHI/C43 crops and the test
+sheet were not seen. Gates and read-outs in the script's docstring. Prompt: H256's verbatim with "12 numbered tiles (W01-W12)" and "W01 to W12".

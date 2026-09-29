@@ -1,0 +1,13 @@
+item	kind	class	sheet	segment	x
+W01	TEXT_A	ll:ella-L07	f61sheetB_L07	2	1745
+W02	CIPHER	PHI	f61sheet_L08	1	450
+W03	TEXT_X	l:les-L02s2	f61sheetB_L02	2	1065
+W04	TEXT_A	Il:Il a-L04	f61sheetB_L04	2	2065
+W05	TEXT_A	Il:Il seroit-L02	f61sheetB_L02	3	890
+W06	LL	LL	f61sheetB_L05	3	1330
+W07	DISP	ll-or-Il:L02-start	f61sheetB_L02	1	425
+W08	TEXT_X	l:le-L04	f61sheetB_L04	3	2230
+W09	TEXT_X	l:les-L02s4	f61sheetB_L02	4	1860
+W10	CIPHER	C43	f61sheet_L03	2	2320
+W11	CIPHER	C43	f61sheet_L08	1	770
+W12	CIPHER	PHI	f61sheet_L11	1	660
