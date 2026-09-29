@@ -4419,3 +4419,9 @@ H243 builds that desk pack (script-only); filing the ASKS row is left to the orc
 **H243 (script-only):** desk pack `family/images/person_pack_106r/` (`family/h243_pack_106r.py`, native btv1b9059406b f191): six row sheets of f.106r at 1.5x from 60 px
 above each cut row, 17 HASH4 signs arrowed and numbered N01-N17 (looped 13, 4-head 4 by H221; `key.tsv`, not for the reader), README with the question and an
 answer template (`family/passes/f106r_hash_person.tsv`). Filing an ASKS row for a person's read is the orchestrator's decision. No reading.
+
+## Campaign steps H244 and H246 (29 Sept 2026, 04:51 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu)
+
+**H244 (script/notes):** `family/v6_shape_candidates.tsv` -- one row per shape-based cell proposed since v5 (4-family bowl rule; HASH4's 4-head d/q, mis-coded 2#
+i/x, looped hash without a value; H24 = 2#; ZHOOK = 2#; 4PI's two signs; the f.61 meter by shape 12/60/2/25), each with evidence for and against, controls, the
+test-key result and the result files, for VERIFY-F61-V6. Nothing merged. **H246 dropped:** f.108v's reconciled draft has no 4PI, so there is nothing to read.
