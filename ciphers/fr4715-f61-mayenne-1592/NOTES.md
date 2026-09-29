@@ -6075,3 +6075,20 @@ statistic, stands in for it. f.124r was not used: its gloss is HELD (readers agr
 alignment's numeric codes do not map back onto the committed draft (45/45 lines differ).
 Reproduce: `python3 family/h423_ctx_chooser.py --build|--control [--check]` (both check OK). Script-only, about 1 minute of CPU.
 Not a reading; no key, cell, grade or class change.
+
+## Campaign steps H426, H427, H425 (29 Sept 2026, 20:27-20:31 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- f.108r T1/36 is not an offset; the chooser's gain is inconsistent by pair across hands; VO3 packet (script-only / notes)
+
+- **H426** (`family/h426_t1_36_offset.py`, check OK): f.108r T1 has 39 signs and 39 overlay letters; f61crib.align pairs them one-to-one with no
+  gap, misses T1/6 (EBR under f) and T1/36 (INF under e). Window T1/30-39: unshifted 9/10 signs carry their overlay letter; shifted -2, -1, +1,
+  +2: 3, 0, 1, 1 of 10. So T1/36 is a genuine INF-e conflict in "plusieurs" (INF twice for "eu"), not an alignment offset; the overlay truth
+  stands. Runner 15's suggestion (2) is closed.
+- **H427** (`family/h427_ctx_perpair.py`, `family/h427_ctx_perpair_result.tsv`, check OK): per pair and leaf with Wilson intervals. The
+  chooser is below the unigram rule on e/r, i/x and g/t on both other-hand leaves (f.101r e/r 0.684 vs 0.734, N 474; f.188r 0.695 vs 0.732,
+  N 190) and on f.188r f/s; above it on i/l (0.50-0.56 vs 0), a/n, d/q, m/s. On f.61's hand it is above on e/r (f.108r 0.90 vs 0.65; f.61 spans
+  1.00 vs 0.86), and below on f.61's a/n (7/11 vs 8/11) and g/t (3/4 vs 4/4). A blended gain over opposite per-pair signs: any later use of a
+  context chooser needs a per-pair gate, not the pooled figure (rule 3's AX-NAMES paragraph).
+- **V12 sensitivity:** VERIFY-F61-V12 (AUDIT.md) endorses L05/1 = LOOPBAR (null); `h423_ctx_chooser.py --control --v12` drops it: f.61's
+  two-way cells 59, the f.61 known-answer row unchanged (39/47 vs unigram 36/47), gate unchanged. The corrections file itself is the
+  orchestrator's to update (V12's "What should merge"); not edited here.
+- **H425:** runner-16 section in `family/V9_PAGE.md` for LANE VO3 and the orchestrator, naming the one decision that is not the runner's
+  (whether f.61's-hand power 0.961 may gate a fresh pre-registration of H424, given the per-pair inconsistency and the in-sample caveat).

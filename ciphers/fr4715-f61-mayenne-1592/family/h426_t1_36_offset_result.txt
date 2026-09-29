@@ -1,0 +1,7 @@
+T1: 39 signs, 39 overlay letters; align matched 37, pairs 39, gap moves 0; misses: T1/6 EBR under 'f'; T1/36 INF under 'e'
+window T1/30-39, overlay shifted -2: 3/10 signs carry their overlay letter
+window T1/30-39, overlay shifted -1: 0/10 signs carry their overlay letter
+window T1/30-39, overlay shifted +0: 9/10 signs carry their overlay letter
+window T1/30-39, overlay shifted +1: 1/10 signs carry their overlay letter
+window T1/30-39, overlay shifted +2: 1/10 signs carry their overlay letter
+reading: no offset -- the unshifted one-to-one alignment is the only one that fits the window; T1/36 is a genuine INF-e conflict (the overlay truth is left as it is)

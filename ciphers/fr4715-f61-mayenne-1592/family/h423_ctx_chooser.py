@@ -30,11 +30,12 @@ Baselines / nulls (gates in HYPOTHESES.md H423, written before the run):
           share with chooser > unigram (strict) and chooser binomial p < 0.05 vs 0.5.
 Target (run only with --target, only after the gate passes): f.61's 60 two-way cells, the letter chosen with the leaf's
 per-pair known-answer accuracy beside it, grade M, for a verifier; no key or grade change.
-  python3 h423_ctx_chooser.py [--build | --control | --target] [--check]"""
+  python3 h423_ctx_chooser.py [--build | --control | --target] [--v12] [--check]"""
 import csv, math, os, random, sys
 from collections import Counter, defaultdict
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.abspath(f"{HERE}/.."); ROOT = os.path.abspath(f"{T}/../..")
 MODE = next((a for a in sys.argv[1:] if a in ("--build", "--control", "--target")), "--control"); CHECK = "--check" in sys.argv
+V12 = "--v12" in sys.argv   # descriptive sensitivity (added after VERIFY-F61-V12 ruled L05/1 = LOOPBAR, a null): f.61's L05/1 dropped as a null
 sys.argv = sys.argv[:1]
 for p in (HERE, f"{T}/scripts", f"{T}/verify_v9", f"{ROOT}/tools"): sys.path.insert(0, p)
 import h408_span_miss_apply as h
@@ -79,7 +80,7 @@ def f61_leaf():
                 if mm[i] != "-": truth[j] = mm[i]
         seg = []
         for j, r in enumerate(rr):
-            if r["band"] == "null" or (r["band"] == "unread" and r["class"] in ("C6", "CA")): continue
+            if r["band"] == "null" or (r["band"] == "unread" and r["class"] in ("C6", "CA")) or (V12 and (L, r["pos"]) == ("L05", "1")): continue
             if r["band"] == "unread":
                 if seg: segs.append(seg); seg = []
                 continue
@@ -225,7 +226,7 @@ def control():
 def main():
     out = build() if MODE == "--build" else control() if MODE == "--control" else None
     if out is None: sys.exit("--target runs only after the gate passes; not written yet")
-    txt = "\n".join(out) + "\n"; p = f"{HERE}/h423_ctx_chooser_{MODE[2:]}_result.txt"
+    txt = "\n".join(out) + "\n"; p = f"{HERE}/h423_ctx_chooser_{MODE[2:]}{'_v12' if V12 else ''}_result.txt"
     if CHECK:
         ok = os.path.exists(p) and open(p).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(p, "w").write(txt); print(txt, end="")

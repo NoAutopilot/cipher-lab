@@ -188,3 +188,24 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
   proposal; period s also attested, rule 4); widening all cells to table columns or cutting them to one column does not beat the fitted cells on
   both known answers (H417).
 
+
+## Runner 16 (29 Sept 2026, session_01Vtwc6CEJD2BSnYdzzY4f8W) -- for LANE VO3 and the orchestrator (H425)
+
+- **Context chooser, known-answer control first (H423, `family/h423_ctx_chooser.py`):** fr16 5-gram, iterated conditional modes from the pair's
+  more frequent letter, each two-way key v8 cell chosen with every other cell held; no model judge, no widened sets, no wildcards. Gates G1-G3
+  pre-registered (HYPOTHESES.md H423, 81ec946e) before the scoring run. Chooser vs unigram start vs order-shuffle p95: f.61 spans hidden 39/47
+  (0.830) vs 0.766 vs 0.723; f.108r overlay 43/50 (0.860) vs 0.700 vs 0.720; f.101r 0.724 vs 0.687 vs 0.676 (N 1129); f.188r 0.729 vs 0.667 vs
+  0.667 (N 442); f.61's hand 0.845 vs 0.732 (McNemar p 0.017); pooled 0.732 vs 0.685 (p 1.5e-05). **G1 PASS, G2 PASS, G3 FAIL (power at N 60
+  from the pooled control 0.763 < 0.80): untested-by-this-tool; the target step (H424) was not run and no f.61 letter was chosen.**
+- **The decision that is not the runner's:** descriptive only, computed after the result, the same power from f.61's own hand alone (97 cells)
+  is 0.961. The pooled pool is pulled down by the other hands, whose DP-aligned truth is noisy and where the chooser runs BELOW the unigram rule
+  on e/r, i/x and g/t (H427, `family/h427_ctx_perpair_result.tsv`: f.101r e/r 0.684 vs 0.734, f.188r 0.695 vs 0.732); its gain there comes from
+  i/l, a/n, d/q and m/s. On f.61's hand the gain is e/r (f.108r 18/20 vs 13/20; f.61 spans 14/14 vs 12/14), and on f.61's spans a/n and g/t run
+  below the unigram rule (7/11 vs 8/11, 3/4 vs 4/4). Whether a gate on f.61's hand may license H424 in a FRESH pre-registration, or whether that
+  per-pair inconsistency across hands (the AX-NAMES shape: a blended gain hiding opposite per-class signs) and the in-sample caveat (key v8's
+  f.61 cells were fitted partly on these spans) require new lettered material in the hand first, is yours to rule.
+- **VERIFY-F61-V12's L05/1 = LOOPBAR (a null):** rerun with `--v12` -- f.61's cells 60 -> 59 two-way, the f.61 known-answer row unchanged
+  (39/47 vs 36/47), gate result unchanged (`family/h423_ctx_chooser_control_v12_result.txt`).
+- **f.108r T1/36 (H426, `family/h426_t1_36_offset_result.txt`):** T1 aligns one-to-one, 39 signs to 39 overlay letters, no gap; in T1/30-39 the
+  unshifted overlay fits 9/10 signs and every shift of -2..+2 fits 0-3/10. Not an offset: the INF under 'e' ("plusieurs") is a genuine INF-e
+  conflict, the overlay truth used by H417/H420/H423 stands.
