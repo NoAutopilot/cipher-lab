@@ -4143,3 +4143,20 @@ spans 53/55 under v5 and under the test key; f.108r overlay 74/84 under both (20
 S14, a no-bowl 4TRI at letter c, which the shape rule reads a/n (-1). Pre-stated gate (no loss on f.61, at most one on f.108r): PASS.** The shape rule is
 handed to a verifier as a v6 candidate: 4-family read by the blind bowl answer (bowl c/p, no bowl a/n), which narrows v5's 4TRI (drops t) and 4STEM
 (drops c/e, moving f.108v's bowl 4STEM to c/p by shape). HASH4's form split (H212-H215) is not in this test: no HASH4 lies on a span line. No merge.
+
+## Campaign step H220 (29 Sept 2026, 03:52-03:58 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H212's hash forms against f.101r's period letters: the 4-head form is d/q there; the looped form is absent and the i/x sign is a third shape
+
+Pre-registered (PROMPTS section H220; `family/h220_hash_101r.py`, key `family/h220_items.tsv`, commit d144a441, before the call). The row asked for 10 i +
+10 d/q HASH4 positions; the pool has HASH4 i only 3 usable (all `conflict:d`), because f.101r's readers coded this leaf's i/x sign H24 (align_period.py's
+code for pass A HASH4 + pass B 4STEM; period i 170). Targets: HASH4 d/q 12, HASH4 i 3, H24 i 12 (grade C gloss letters from passes/f101r_align_v4.tsv),
+strips as H207 from a fresh Gallica native of btv1b9060543f f210 (1 request, family/requests.log); anchors: 10 of H212's own f.108 tiles (A 5, B 5; tile
+9 excluded), shuffled in. One Opus vision call, fixed categories A (4-head) / B (two loops) / N, inline reply (`family/passes/h220_reply.tsv`); the runner
+looked at sheet 1 once for marker geometry before the call (disclosed in PROMPTS). Result `family/h220_hash_101r_result.txt` (`--check` OK):
+- **Anchor control 9/10 PASS** (H212 group A 5/5, group B 4/5).
+- **HASH4 d/q: A 11, N 1, B 0. H24 i: N 11, A 1, B 0. HASH4 i (conflict rows): A 1, B 1, N 1.** Pooled B vs A by letter: p 0.21 -> registered read-out
+  **"no form-letter link shown by the registered rule"** (B i-share 1.00 on n = 1, A d/q-share 0.85).
+What it says, descriptively: on f.101r the period-read d/q sign is the 4-headed hash (form A), the direction H213/H215 took on f.108v. The half that
+matters for the split -- looped form B = i/x -- is not testable here: f.101r's i/x sign is H24, which the reader puts in neither form, and form B occurs
+once. With H214 (absent from Desportes's f.176), no glossed leaf yet carries form B, so HASH4 B = i/x stays sequence-only (H213) and judge-only (H215).
+Not merged; v5 unchanged. Added: H222 (is form B the same sign as H24 in another hand? a matched-scale blind sort, since H220's strips and anchors differ
+in scale) and H223 (script-only table of which code each glossed hand used for its i-sign and d/q-sign).

@@ -1,0 +1,8 @@
+anchor control: 9 of 10 H212 tiles answered as their H212 group (gate >= 8): PASS
+anchor answers: A A A A A A | B B A B B B
+HASH4 d/q: B (looped) i 0 d/q 0; A (4-head) i 0 d/q 11; N i 0 d/q 1; Fisher p 1
+HASH4 i: B (looped) i 1 d/q 0; A (4-head) i 1 d/q 0; N i 1 d/q 0; Fisher p 1
+H24 i: B (looped) i 0 d/q 0; A (4-head) i 1 d/q 0; N i 11 d/q 0; Fisher p 1
+pooled: B (looped) i 1 d/q 0; A (4-head) i 2 d/q 11; N i 12 d/q 1; Fisher p 0.21
+pooled, no-conflict rows: B (looped) i 0 d/q 0; A (4-head) i 1 d/q 8; N i 11 d/q 1; Fisher p 1
+read-out: B i-share 1.00, A d/q-share 0.85, p 0.21 -> no form-letter link shown by the registered rule
