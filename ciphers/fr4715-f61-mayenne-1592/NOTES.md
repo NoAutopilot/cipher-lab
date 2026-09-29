@@ -4363,3 +4363,11 @@ H236 with 12 anchors (PROMPTS section H239; `family/h239_4pi_108r_2.py`, key `fa
 What it says: in f.61's own hand (f.108r) the readers' 4PI is the 4-headed hash and the period gloss reads it d 4 of 5 (grade C, Tomokiyo's reprint) -- so the
 4-head hash = d/q holds on f.101r (34/47), f.188r (12/14) and f.108r (4/5 d). f.61's L01 HASH4 is that sign (H233). f.61's two "4PI" are a different sign,
 a 4 over a Pi, with no lettered occurrence on any leaf read so far; they stay unread (H234's count). For the verifier; nothing merged.
+
+## Campaign step H237 (29 Sept 2026, 06:58-07:05 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's C6 and the glossed C6: no link shown
+
+Pre-registered (PROMPTS section H237; `family/h237_c6_glyph.py`, key `family/h237_items.tsv`, before the call; f.61 positions placed by eye and the crops checked;
+sheet not seen). Only two glossed C6 (f.101r, both e) map to pass A; f.188r's does not. One Opus free sort (`family/passes/h237_sort.tsv`; the reply repeated one
+line, dropped). Result `family/h237_c6_glyph_result.txt` (`--check` OK): **f.61 C6: A ('6'/b-shaped) 3/3; glossed C6: D (delta-shaped) 1, unclear 1; PHI: A 1,
+B 2; C43: B 1, C 2** -> **"no link shown"**. The controls split as well, so this sort was noisy; with two lettered glossed C6 the question is near its floor.
+C6 stays unread on f.61 (as VERIFY-F61-V4 left it). Nothing merged.
