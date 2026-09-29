@@ -1,0 +1,4 @@
+f.108v 4TRI signs: 6; map 4TRI was c/p
+c/p vs c/p/t: c/p wins 4/30 -> OPEN
+c/p vs a/n: c/p wins 7/30 -> OPEN
+c/p vs null: c/p wins 2/30 -> OPEN

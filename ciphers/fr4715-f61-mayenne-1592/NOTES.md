@@ -3880,3 +3880,11 @@ one (v5 the same; no permuted key reaches any).** No contradiction with Tomokiyo
 cells (4TRI t, HASH4 i and BETA s occur at none of them). The narrowings therefore rest on the Desportes-leaf evidence alone (H190-H194 for 4TRI; H192
 for HASH4 d and BETA m, both short of the replication rule). Earlier f.108r-specific findings still weigh against HASH4 d/q there (H114 d/q hurts,
 H118/H119 i/x best on f.108r's sequence gain). For the verifier; nothing merged.
+
+## Campaign step H198 (29 Sept 2026, 01:34-01:35 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- 4TRI c/p on f.108v by sequence gain: OPEN (script-only)
+
+`scripts/f61tri_108v.py` (result `scripts/f61tri_108v_result.txt`, `--check` fresh), H157's design. f.108v has 6 4TRI signs; the 14-cell map already
+has 4TRI = c/p. **c/p beats c/p/t in 4/30 resamples, a/n in 7/30, null (4TRI dropped) in 2/30: OPEN on all three** by the pre-registered rule
+(CONFIRMED >= 29, PREFERRED <= 1). The design counts a tie as a loss, and with 6 signs ties are likely, so this is no evidence against c/p. It is
+no support from f.108v's unread text either. The 4TRI c/p lean rests on H193/H194 (shape rule validated by the period decipherment; Tomokiyo's letters
+14/14 on f.61) and cannot be tested further by sequence gain at this N.
