@@ -207,6 +207,12 @@ def cmd_control(a):
 
 def cmd_solve(a):
     toks = real_tokens(a.text, a.keep_x)
+    nulls = set()
+    if a.nulls:   # extra null classes (keyed to empty, dropped from the fit): PICT = h31's pictogram class, PUNCT = BLOB/HOOK-L/DASH-H
+        for n in a.nulls.split(','):
+            nulls |= {t for t in toks if (n == 'PICT' and (t.startswith('PICT-') or t in ('SUN', 'STAR', 'HEART', 'RAM')))
+                      or (n == 'PUNCT' and t in PUNCT) or t == n}
+        toks = [t for t in toks if t not in nulls]
     if a.shuffle is not None: random.Random(a.shuffle).shuffle(toks)   # null: same tokens, order destroyed
     signs = sorted(set(toks)); ix = {s: i for i, s in enumerate(signs)}
     sc, key = anneal(a.lang, [ix[t] for t in toks], len(signs), a.restarts, a.iters, a.seed, a.klw)
@@ -215,7 +221,8 @@ def cmd_solve(a):
         with open(a.out, 'w') as f:
             f.write('sign\tvalue\n')
             for s in signs: f.write('%s\t%s\n' % (s, key[ix[s]]))
-            if not a.keep_x: f.write('X\t\n')
+            if not a.keep_x and 'X' not in nulls: f.write('X\t\n')
+            for n in sorted(nulls): f.write('%s\t\n' % n)
     if a.show: print(''.join(key[ix[t]] for t in toks))
 
 if __name__ == '__main__':
@@ -230,7 +237,7 @@ if __name__ == '__main__':
     h = sp.add_parser('hcontrol'); h.add_argument('lang'); h.add_argument('--model', required=True)
     h.add_argument('--noise', type=float, default=0.15); h.add_argument('--seeds', type=int, default=4); h.add_argument('--dir', default='c2c1')
     s = sp.add_parser('solve'); s.add_argument('lang'); s.add_argument('text'); s.add_argument('--keep-x', action='store_true')
-    s.add_argument('--out'); s.add_argument('--show', action='store_true'); s.add_argument('--seed', type=int, default=1); s.add_argument('--shuffle', type=int)
+    s.add_argument('--out'); s.add_argument('--show', action='store_true'); s.add_argument('--seed', type=int, default=1); s.add_argument('--shuffle', type=int); s.add_argument('--nulls')
     for p in (c, s, h):
         p.add_argument('--restarts', type=int, default=8); p.add_argument('--iters', type=int, default=300000)
         p.add_argument('--klw', type=float, default=1.0)
