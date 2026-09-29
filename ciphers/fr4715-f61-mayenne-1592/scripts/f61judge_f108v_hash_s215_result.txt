@@ -1,0 +1,3 @@
+f108v_hash_s215: T 8.0 rank 1 of 21 (ties against); ALL-DQ 7.5, ALL-IX 6.5, REVERSE 6.0, DROP 7.0
+all scores: SET-14(T):8.0 SET-21(ALL-DQ):7.5 SET-11(DROP):7.0 SET-16(ALL-IX):6.5 SET-19(REVERSE):6.0 SET-08(swap):5.0 SET-10(swap):4.0 SET-12(swap):4.0 SET-15(swap):4.0 SET-18(swap):4.0 SET-01(swap):3.0 SET-04(swap):3.0 SET-05(swap):3.0 SET-06(swap):3.0 SET-13(swap):3.0 SET-17(swap):3.0 SET-03(swap):2.0 SET-07(swap):2.0 SET-20(swap):2.0 SET-02(swap):1.0 SET-09(swap):1.0
+read-out: prefers the form split
