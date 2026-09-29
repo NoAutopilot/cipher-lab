@@ -3865,3 +3865,9 @@ lost, but none is gained either: the narrowing is only the removal of t, and f.6
 three-way to two-way in f.61's meter. Correction carried back: H191, H194 and the verifier page said v4's 4TRI cell was a/c/n/p/t; for f.61's load it is
 c/p/t (the a/c/n/p/t in the f.176 build tables is the builders' merged 4TRI+4HOOK set). The H193/H194 finding stands: the bowl sign is the c/p sign.
 What it now adds for f.61 is dropping t from 6 tokens, not a wider narrowing. Nothing merged.
+
+## Campaign step H197 (29 Sept 2026, 01:32 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- CROSS = s on f.108v: untestable, dropped (script-only)
+
+`scripts/f61cross_108v.py` (result `scripts/f61cross_108v_result.txt`, `--check` fresh), H157's design with CROSS = s against e/a/i/t/n/null. f.108v has
+**one** CROSS sign, below the pre-stated floor of 5: not tested. This matches H150 (CROSS under 10 occurrences in all f.61-hand text on disk). CROSS s
+stays a Desportes-hand lean (H192: 0.36 / 0.53, wrong 0.09 / 0.05) with no test available in f.61's hand.

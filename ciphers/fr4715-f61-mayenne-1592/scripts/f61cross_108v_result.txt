@@ -1,0 +1,2 @@
+f.108v CROSS signs: 1
+fewer than 5 CROSS signs: not tested
