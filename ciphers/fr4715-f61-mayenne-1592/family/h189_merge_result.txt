@@ -1,0 +1,1 @@
+anchors (f.176v agreed signs): 15 of 20 pick the agreed code (gate >= 17): CONTROL FAIL
