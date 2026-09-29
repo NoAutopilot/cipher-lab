@@ -7,7 +7,7 @@ Texts (each a pair: c1-shaped first member, c2-shaped second member, one key per
   a  = (c3, c4)           settled drafts, D's punctuation class and clear spans dropped (dcore.target)
   b  = (c1, c2) folded    PCT-SLASH->PCT, X-DOT->X, X-CURL->X
   c  = (c1, c2) strokes   BAR-SOLID, BAR-THIN, DASH-V dropped as well (BLOB, HOOK-L, DASH-H already dropped by D)
-Usage: r21.py calib TEXT P N SEED_TAG OUT   |   r21.py real TEXT OUT"""
+Usage: r21.py calib TEXT P N OUT   |   r21.py real TEXT OUT"""
 import os, sys, json, random, collections
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, '..', '..', 'G-D')); import dcore
