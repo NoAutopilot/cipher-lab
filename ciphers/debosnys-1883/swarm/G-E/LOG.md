@@ -1,0 +1,10 @@
+# Group E log (context and pictures; scores no keys)
+
+| time (UTC, 29 Sept 2026) | method | parameters | control | result | why it matters / failed |
+|---|---|---|---|---|---|
+| 03:10-03:18 | PAGEMAP by eye + segmentation boxes | 7 public PNGs; line_boxes.py | -- | 56 line boxes, 60 pictogram boxes, ~45 drawing/clear regions | 6 in-line drawings absent from the settled drafts as pictograms; 2 mislabels; 1 edge artefact carried as a sign |
+| 03:15 | E1 vessel signs at line end | BUCKET, PICT-JUG, BOX-M; 10,000 within-line shuffles | class control: 2,000 random id sets of 5 tokens, max 3 line-final, none 5 | 5 of 5 line-final (band 0-1, p < 0.0001); E1b PICT-JUG + BOX-M alone 2 of 2 (p 0.0009; two random singletons 0.0017) | a picture class that closes lines, opposite of H31's openers. BUCKET was H33's top closer (post hoc); E1b is the part H33 could not select |
+| 03:16 | E2 H31 with PAGEMAP corrections | missed drawings as DRAWN, vessels out | within-line shuffle | line-initial 12 of 56 (band 0-7, p < 0.0001); line-final 4 (band 0-7) | H31 holds and gains c2a L04; pictures open lines, vessels close them |
+| 03:17 | E3 word-initial rebus reading (runner's idea) with X as divider | X immediately before / after an interior pictogram | within-line shuffle | X before 3 (band 4-14, mean 8.7, p_le 0.016); X after 10 (band 4-14) | fails the divider version: X avoids the slot before a picture as it avoids line edges (H19: line-initial 1 vs 3-12). X is not a word divider in front of picture-initial units |
+| 03:19 | E4 logogram-in-phrase reading | repeated (pictogram, neighbour) pairs | within-line shuffle; power: half-strength planted phrase gives 17 vs band top 10 | 6 (band 2-10, p 0.51) | no recurring phrase around repeated pictures; the test could see one |
+| 03:22 | LIFE research | loc.gov, archive.org, ciphermysteries, correctionhistory | -- | execution 27 Apr 1883 (not 26); claimed birth 16 May 1836 | 516 on c2a = 5/16 = his claimed birthday (see PICTURES.md P-CUBE) |

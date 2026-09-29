@@ -1,0 +1,122 @@
+{
+ "E1_vessel_final_as_drafted": {
+  "tokens": 5,
+  "obs": 4,
+  "lo": 0,
+  "hi": 1,
+  "mean": 0.182,
+  "p_ge": 0.0
+ },
+ "E1b_jug_boxm_final_as_drafted": {
+  "tokens": 2,
+  "obs": 2,
+  "lo": 0,
+  "hi": 1,
+  "mean": 0.067,
+  "p_ge": 0.0012
+ },
+ "E1_vessel_final_edge_fixed": {
+  "tokens": 5,
+  "obs": 5,
+  "lo": 0,
+  "hi": 1,
+  "mean": 0.177,
+  "p_ge": 0.0
+ },
+ "E1b_jug_boxm_final_edge_fixed": {
+  "tokens": 2,
+  "obs": 2,
+  "lo": 0,
+  "hi": 1,
+  "mean": 0.063,
+  "p_ge": 0.0009
+ },
+ "E2_H31_reproduced_edge_fixed": {
+  "obs": 11,
+  "lo": 0,
+  "hi": 7,
+  "mean": 3.055,
+  "p_ge": 0.0002
+ },
+ "E2_initial_corrected_class_no_vessels": {
+  "pict_tokens": 66,
+  "obs": 12,
+  "lo": 0,
+  "hi": 7,
+  "mean": 3.216,
+  "p_ge": 0.0
+ },
+ "E2_final_corrected_class_no_vessels": {
+  "obs": 4,
+  "lo": 0,
+  "hi": 7,
+  "mean": 3.203,
+  "p_ge": 0.3997
+ },
+ "E2_final_corrected_class_with_vessels": {
+  "obs": 9,
+  "lo": 0,
+  "hi": 7,
+  "mean": 3.373,
+  "p_ge": 0.0043
+ },
+ "E3_X_before_pict_corrected": {
+  "obs": 3,
+  "lo": 4,
+  "hi": 14,
+  "mean": 8.728,
+  "p_ge": 0.9953,
+  "p_le": 0.0161
+ },
+ "E3_X_after_pict_corrected": {
+  "obs": 10,
+  "lo": 4,
+  "hi": 14,
+  "mean": 8.718,
+  "p_ge": 0.3681
+ },
+ "E3_X_before_pict_drafts": {
+  "obs": 3,
+  "lo": 3,
+  "hi": 13,
+  "mean": 7.819,
+  "p_ge": 0.991,
+  "p_le": 0.0298
+ },
+ "E3_X_after_pict_drafts": {
+  "obs": 10,
+  "lo": 3,
+  "hi": 13,
+  "mean": 7.853,
+  "p_ge": 0.2473
+ },
+ "E1_class_control": {
+  "sets": 2000,
+  "all5_final": 0,
+  "p97_5": 2,
+  "max": 3
+ },
+ "E1b_class_control_singletons": {
+  "singleton_ids": 35,
+  "singleton_final": 2,
+  "p_two_random_singletons_both_final": 0.00168
+ },
+ "E4_pict_neighbour_repeats_corrected": {
+  "obs": 6,
+  "lo": 2,
+  "hi": 10,
+  "mean": 5.648,
+  "p_ge": 0.5132
+ },
+ "E4_pict_neighbour_repeats_drafts": {
+  "obs": 6,
+  "lo": 2,
+  "hi": 9,
+  "mean": 4.987,
+  "p_ge": 0.376
+ },
+ "E4_power_half_strength_phrase": {
+  "obs": 17,
+  "band_hi": 10
+ }
+}
