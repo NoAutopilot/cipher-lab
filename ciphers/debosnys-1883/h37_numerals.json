@@ -1,0 +1,210 @@
+{
+ "ours": {
+  "adjacent": {
+   "obs": 2,
+   "lo": 0,
+   "hi": 2,
+   "p_ge": 0.1457
+  },
+  "line_initial": {
+   "obs": 3,
+   "lo": 0,
+   "hi": 4,
+   "p_ge": 0.1717
+  },
+  "line_final": {
+   "obs": 0,
+   "lo": 0,
+   "hi": 4,
+   "p_ge": 1.0
+  }
+ },
+ "tokens": 31,
+ "neighbours": [
+  [
+   "c4a_L06",
+   10,
+   "MARS PCT EIGHT THETA-BAR O-DASH2"
+  ],
+  [
+   "c4a_L08",
+   0,
+   "TWO DAGGER-O EIGHT"
+  ],
+  [
+   "c4a_L08",
+   2,
+   "TWO DAGGER-O EIGHT O-SLASH X"
+  ],
+  [
+   "c4a_L13",
+   4,
+   "DAGGER-O F-LETTER EIGHT BOX-GRID Y-LOOPS"
+  ],
+  [
+   "c4a_L14",
+   0,
+   "TWO X-DOT X-DOT"
+  ],
+  [
+   "c4b_L04",
+   5,
+   "X-BAR VENUS EIGHT CHEVRON CHEVRON"
+  ],
+  [
+   "c4b_L05",
+   5,
+   "V-LOOP M-LETTER THREE SLASH TAURUS"
+  ],
+  [
+   "c4b_L05",
+   11,
+   "SCROLL-X PICT-GLASS EIGHT X-BAR S-CURL"
+  ],
+  [
+   "c1_L02",
+   5,
+   "PCT O-TILDE SIX-CURL A-LOOP X"
+  ],
+  [
+   "c2a_L01",
+   3,
+   "X CC-DASH EIGHT X N-LETTER"
+  ],
+  [
+   "c2a_L02",
+   12,
+   "SUN X NINE FIVE BAR-THIN"
+  ],
+  [
+   "c2a_L02",
+   13,
+   "X NINE FIVE BAR-THIN TRIDENT"
+  ],
+  [
+   "c2a_L05",
+   1,
+   "PICT-HOUSE EIGHT X OX-TILDE"
+  ],
+  [
+   "c2a_L06",
+   5,
+   "X X THREE WAVE PCT-SLASH"
+  ],
+  [
+   "c2a_L07",
+   3,
+   "ARCH-DASH II-DASH NINE-BAR DAGGER-O C-DOT"
+  ],
+  [
+   "c2a_L10",
+   0,
+   "FIVE VENUS II-DASH"
+  ],
+  [
+   "c2a_L10",
+   18,
+   "PICT-BARREL DBL-SLASH SIX-CURL X X-CURL"
+  ],
+  [
+   "c2a_L11",
+   3,
+   "VENUS X EIGHT CC-O CROSS-T"
+  ],
+  [
+   "c2a_L12",
+   15,
+   "LOOP-STEM PICT-LEAF EIGHT C-DOT STAR"
+  ],
+  [
+   "c2a_L15",
+   1,
+   "PICT-ANCHOR THREE NOTE BAR-SOLID"
+  ],
+  [
+   "c2a_L15",
+   22,
+   "X PICT-ARROW SIX-CURL O-BRACKET EIGHT"
+  ],
+  [
+   "c2a_L15",
+   24,
+   "SIX-CURL O-BRACKET EIGHT X DOUBLE-LOOP"
+  ],
+  [
+   "c2a_L17",
+   24,
+   "OX-TILDE X NINE PICT-BIRD"
+  ],
+  [
+   "c2b_L02",
+   14,
+   "CC-DASH II-O EIGHT X OX-TILDE"
+  ],
+  [
+   "c2b_L04",
+   23,
+   "OX-TILDE X-DOT SEVEN EIGHT BUCKET"
+  ],
+  [
+   "c2b_L04",
+   24,
+   "X-DOT SEVEN EIGHT BUCKET"
+  ],
+  [
+   "c2b_L05",
+   13,
+   "PCT PICT-D NINE X-BAR-CC DBL-SLASH"
+  ],
+  [
+   "c2b_L06",
+   17,
+   "PICT-FACE X NINE WAVE PCT"
+  ],
+  [
+   "c3_L01",
+   4,
+   "PCT CC-DASH NINE-DASH PHI O-DASH2"
+  ],
+  [
+   "c3_L03",
+   15,
+   "Y-CURL X EIGHT O-SLASH X-DASH"
+  ],
+  [
+   "c3_L04",
+   7,
+   "DAGGER-O CHEVRON2 NINE-BAR X TRIDENT"
+  ]
+ ],
+ "bourdeau_n9": {
+  "adjacent": {
+   "obs": 0,
+   "lo": 0,
+   "hi": 0,
+   "p_ge": 1.0
+  },
+  "line_initial": {
+   "obs": 0,
+   "lo": 0,
+   "hi": 2,
+   "p_ge": 1.0
+  },
+  "line_final": {
+   "obs": 1,
+   "lo": 0,
+   "hi": 2,
+   "p_ge": 0.3599
+  }
+ },
+ "bourdeau_n9_tokens": 10,
+ "bourdeau_n9_types": [
+  "B3",
+  "B3_II",
+  "D3_BAR",
+  "EIGHT",
+  "GAM9",
+  "NUM_516",
+  "Z7"
+ ]
+}

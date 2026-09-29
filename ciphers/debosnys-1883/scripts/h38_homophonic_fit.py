@@ -14,7 +14,8 @@ here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)
 sys.path.insert(0, here); from settled_lines import settled_lines
 import h3_unit_profile as h3, h10_mixed as h10, h13_newtype_noise as h13
 PUNCT = {'BLOB', 'HOOK-L', 'DASH-H', '_', 'MULTI'}
-raw = settled_lines(root, 'c')
+DROPCLEAR = '--drop-clear' in sys.argv  # H43: clear_spans.tsv positions left out
+raw = settled_lines(root, 'c', drop_clear=DROPCLEAR)
 seq7 = [s for v in raw.values() for s in v if s not in ('_', 'MULTI')]
 seqR = [s for v in raw.values() for s in v if s not in PUNCT]
 DROPX = '--drop-x' in sys.argv

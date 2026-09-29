@@ -2,9 +2,11 @@
 """H40 (29 Sept 2026): confirm the H39 fits (X removed) with fresh seeds. Every H39 condition at 7 of 9 or better is
 re-run with 200 samples on a new seed, at invented-type share f 0.5 (as H39) and f 1.0 (the hapax miss), pooled; and
 the pooled-best conditions on c2 alone and c4 alone (X removed, their own N and K, same nine statistics). A condition
-counts as confirmed at 9/9 only on the fresh seed. Writes h40_confirm.json."""
+counts as confirmed at 9/9 only on the fresh seed. Writes h40_confirm.json; --drop-clear (H43) leaves out the
+clear_spans.tsv positions and writes h43_confirm_noclear.json."""
 import os, json, sys, collections
-sys.argv = [sys.argv[0], '--drop-x']
+CLEAR = '--drop-clear' in sys.argv
+sys.argv = [sys.argv[0], '--drop-x'] + (['--drop-clear'] if CLEAR else [])
 here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here); sys.path.insert(0, here)
 import h38_homophonic_fit as h38
 from settled_lines import settled_lines
@@ -20,7 +22,7 @@ for f in (0.5, 1.0):
         out['pooled'][f'{k}:f{f}'] = dict(K0=K0, inside=ins, band=band)
         print('pooled', k, 'f', f, 'K0', K0, f'{ins}/9', ' '.join(f"{s}={b['side']}" for s, b in band.items()), flush=True)
 # per page: swap the module's target
-raw = settled_lines(root, 'c'); best = sorted(out['pooled'], key=lambda k: -out['pooled'][k]['inside'])[:3]
+raw = settled_lines(root, 'c', drop_clear=CLEAR); best = sorted(out['pooled'], key=lambda k: -out['pooled'][k]['inside'])[:3]
 for pg in ('c2', 'c4'):
     ks = [k for k in raw if k.startswith(pg)]
     s7 = [s for k in ks for s in raw[k] if s not in ('_', 'MULTI', 'X')]; sR = [s for k in ks for s in raw[k] if s not in PUNCT and s != 'X']
@@ -29,4 +31,4 @@ for pg in ('c2', 'c4'):
         h38.F = float(k.split(':f')[1]); K0, band = h38.run(*parse(k.split(':f')[0]), 200, 50000 + len(out['per_page']))
         ins = sum(b['inside'] for b in band.values()); out['per_page'][f'{pg}:{k}'] = dict(N=len(s7), K0=K0, inside=ins, band=band)
         print(pg, 'N', len(s7), k, 'K0', K0, f'{ins}/9', ' '.join(f"{s}={b['side']}" for s, b in band.items()), flush=True)
-json.dump(out, open(os.path.join(root, 'h40_confirm.json'), 'w'), indent=1)
+json.dump(out, open(os.path.join(root, 'h43_confirm_noclear.json' if CLEAR else 'h40_confirm.json'), 'w'), indent=1)
