@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 600
-spent_today_usd: 93.08
+spent_today_usd: 93.18
 spent_day: 2026-09-29
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
 crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
