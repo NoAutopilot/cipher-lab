@@ -4583,3 +4583,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-29 03:08 | DEB-SWARM-D (worker, for the orchestrator) | claim: debosnys-1883 swarm group D (disproof: no readable language; control NULL vs four language controls, blind); writes only swarm/G-D/; box ends 06:08 UTC; cap USD 60
 2026-09-29 03:08 | DEB-SWARM-E (worker, for the orchestrator) | claim: debosnys-1883 swarm group E (context and pictures: PAGEMAP, LIFE, PICTURES, CRIBS, WRITINGS); box ends 06:08 UTC, cap 60; writes only swarm/G-E/
 2026-09-29 03:08 | DEB-SWARM-C (worker, for the orchestrator) | claim: debosnys-1883 swarm group C (syllabic/mixed, control FR-SYLL), writes only swarm/G-C/; box ends 06:10 UTC, cap 60
+2026-09-29 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 0 (), queued left 0
