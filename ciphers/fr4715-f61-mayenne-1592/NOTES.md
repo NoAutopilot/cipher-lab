@@ -4646,3 +4646,10 @@ row the orchestrator holds).
 with L11 9 = d against the published n; positions on 95 of 99 signs; no word spacing; the null-band table), each with its evidence, controls and files;
 the non-tests logged; the meter variants the verifier chooses between (V8's 12/58/2/27 and its a/n variant; the grade-I lead moves no count unless the
 verifier admits a one-letter grade-I candidate to the firm band); and what is not claimed. Compiled from NOTES.md and HYPOTHESES.md, adds nothing. No call.
+
+## Campaign step H275 (29 Sept 2026, 10:29 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- key-note proposal for the build worker (notes only)
+
+`family/PROPOSAL_v7_notes.md`: seven numbered row/note changes for a v7 build, each tagged endorsed (V8: the ZHOOK glyph-link note, the 4PI split with
+f.188r's r-tail rows moved out, a separate 4OVERPI class for f.61 with L11 9 a/n grade M and L01 12 unread) or pending (V9: the lexicon witness L11 9 = d,
+C6 unread on f.61 as an F61READ row, the CA null wording, the 4STEM note), with the reproduction numbers a build must keep. Nothing applied; key v6
+unchanged. No call.
