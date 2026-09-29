@@ -2448,6 +2448,12 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 22:20 Pacific [29 Sept 05:20 UTC]): the f.61 bowl rule endorsed in part; swarm merge running
+
+- Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: VERIFY-F61-V6 endorses the bowl rule in part (c/p on f.176r and f.61, not on f.108r/f.108v); merge into the f.61 reading only; meter firm 12 / two-way 57 / wider 5 / unread 25 of 99 (was 12/50/12/25): seven positions narrowed, none firm yet. VERIFY-F61-V7 (HASH4 split) running. ASKS 99 filed: a person's read of the f.106r gloss.
+- Debosnys swarm: B and G done, no language order; C running; DEB-SWARM-MERGE-1 running. Blocker unchanged: transcription noise 14-18 pct against a method floor near 5-8 pct.
+
 ### Orchestrator note (28 Sept 2026, 21:20 Pacific [29 Sept 04:20 UTC]): the swarm's first answer is the transcription noise; two f.61 values in audit
 
 - Counts 21 / 2 / 1 / 6, unchanged.
