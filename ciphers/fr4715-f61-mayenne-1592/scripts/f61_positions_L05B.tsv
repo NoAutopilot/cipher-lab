@@ -1,1 +1,20 @@
 line	pos	class	segment	x_reply	prev	next	desc
+L05	0	CA_edge	1	1680	word	sign	a (H63's uncoded edge a)
+L05	1	LOOPSTEM1	1	1920	word	sign	loop on long descender (q/phi-like, open)
+L05	2	CH	1	2140	sign	sign	h
+L05	3	VBAR_A	1	2390	sign	sign	T-shaped upright with crossbar, cut at right edge (reappears at seg 2 left)
+L05	4	PHI	2	280	sign	sign	phi: looped head on long descender, inner cross
+L05	5	SBS	2	540	sign	sign	q followed by o (qo ligature, long descender)
+L05	6	4TRI	2	860	sign	sign	4 crossed by long horizontal bar with second bar below
+L05	7	CA	2	1150	sign	sign	a
+L05	8	CA	2	1400	sign	sign	a
+L05	9	C43	2	1710	sign	sign	43 (4 joined to 3)
+L05	10	INF	2	2090	sign	sign	barred double o (-oo-) on horizontal stroke
+L05	11	C43	2	2380	sign	sign	43, split: 4 at seg 2 right edge, 3 at seg 3 left edge
+L05	12	C6	3	270	sign	sign	b / 6 shape, tall looped ascender
+L05	13	C43	3	480	sign	sign	43 (4 joined to 3)
+L05	14	4TRI	3	770	sign	sign	4 crossed by bar, second stroke below (as seg 2 x860)
+L05	15	PHI	3	1060	sign	sign	phi: looped head on long descender
+L05	16	LL	3	1330	sign	sign	ll (double looped l)
+L05	17	PHI	3	1600	sign	sign	phi: looped head on long descender
+L05	18	VBAR_B	3	1800	sign	word	x with bar over and under (barred x)

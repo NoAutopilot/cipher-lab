@@ -4783,3 +4783,11 @@ the LOOPSTEM1 loop and the T-shaped VBAR_A), exactly as readers take CA for the 
 is a clear letter, to be tested as H256 was (H298). The rest of its list matches pass A sign for sign (phi, qo, 4-over-bar, a, a, 43, -oo-, 43, b/6, 43,
 4, phi, ll, phi, barred x) and it closes the line "Et que si nous mesmes ey", the clear tail. Result `scripts/f61positions_L05B_result.txt` (`--check`
 OK). No value, nothing merged. Vision calls this session: 5 (one per vision step).
+
+## Campaign steps H299 and H300 (29 Sept 2026, 10:52 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- L05 joined from the true line start; nulls shaped as letters (script/notes)
+
+**H299** `scripts/f61positions_L05B_join.py` (rule in the docstring; result `scripts/f61positions_L05B_join_result.txt`, `--check` OK): signs after taking the bare 'h' as CH: 18 vs read_call_A 18; edge a before the run: yes; joined from the true line start; classes in order: LOOPSTEM1 CH VBAR_A PHI SBS 4TRI CA CA C43 INF C43 C6 C43 4TRI PHI LL PHI VBAR_B. The file
+`scripts/f61_positions_L05B.tsv` now holds L05 from the true start (pos 0 = H63's uncoded edge a, then pass A's 18 signs) at sheet-B coordinates (the
+reader's scale). **H300** `family/f61_nulls_as_letters.tsv`: of the null-band and dash classes, CA (a), CH (h), C6 (6), LL (ll) and, partly, LOOPSTEM1
+(q-like) are shaped like clear letters or digits in the atlas and in the blind readers' own words; CROSS, LOOPBAR, the 4-over-Pi and OTHER are not.
+For the verifier's null-band wording and for H298's design (the CH letterform test). No call.

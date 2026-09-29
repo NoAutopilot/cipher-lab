@@ -1,0 +1,11 @@
+# H300 (runner 10 session_0148wt8Aokh6aZEdJsXzYiZX, 29 Sept 2026): which f.61 null-band (and near) classes are shaped like clear letters or digits, from scripts/f61_atlas.tsv and the blind readers' own words on record (H253 reply 1/2, H264, H286, H297). Notes only; the letterform test of H256/H260 has been run for CA; H298 is the same test for CH.
+class	f61_tokens	band	atlas_shape	readers_words	letter_shaped	letterform_test
+CA	10	unread-or-null	a mark shaped like a cursive a	"a" (listed as the word a at run edges: H253 L03, H257 L07/L08); "a-shaped sign" inside runs (H264)	yes (a)	H256/H260: 10/10 with the clear a; a null drawn as an a
+CH	1	keyed e/m pooled; Tomokiyo dash	a mark shaped like a cursive h	"h" listed as a word between two signs (H297)	yes (h)	H298 (pending)
+C6	8	unread-or-null	a mark shaped like the digit 6	"6", "6-shaped sign" (H253, H264); once "b / 6 shape" (H297)	yes (digit 6)	not run (a digit, no clear-text control letter on the leaf; H237 found no link to the glossed C6)
+LL	1	unread-or-null	a mark shaped like ll	"ll (double tall l, ligatured)" (H253), "ll (double looped l)" (H297)	yes (ll)	not run (n = 1)
+LOOPSTEM1	1	keyed q/s pooled; Tomokiyo dash	a single loop on a long stem	"rho-like: loop on descending stem" (H253), "loop on long descender (q/phi-like, open)" (H297)	partly (q-like)	not run (n = 1)
+CROSS	2	unread-or-null	a plain plus or cross, possibly with a stroke rising to the upper right	"cross/dagger shape like a crossed f" (H253), "plus / cross"	no	--
+LOOPBAR	4	unread-or-null	a loop on a stem with a bar at the foot	"q-loop on stem with horizontal base bar" (H253), "circle on a vertical stem with a crossbar at the foot (Venus-like)" (H286)	no (a sign)	--
+4PI (f.61's 4-over-Pi)	2	wider	a 4-shaped element above two stems on a bar	"4 over Pi-shaped base" (H253), "4 with doubled vertical stem (pi-like)"	no	--
+OTHER	2	wider	--	"Pi with double bar" (L02), "S/8 loop into a b/d form" / "W-like double loop" (L04, H238/H286)	no	--

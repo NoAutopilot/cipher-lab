@@ -1,0 +1,3 @@
+signs after taking the bare 'h' as CH: 18 vs read_call_A 18; edge a before the run: yes
+joined from the true line start
+classes in order: LOOPSTEM1 CH VBAR_A PHI SBS 4TRI CA CA C43 INF C43 C6 C43 4TRI PHI LL PHI VBAR_B
