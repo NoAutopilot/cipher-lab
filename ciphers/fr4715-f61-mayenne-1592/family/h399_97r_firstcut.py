@@ -14,7 +14,7 @@ passes/f97r_signsA_c1/c2) were left out of H370-H377, so the f.97r shape draft i
    'no better than random', else 'unclear'. Descriptive; no key change.   python3 h399_97r_firstcut.py tiles SCRATCH F61REGION | score [--check]"""
 import csv, difflib, json, os, random, sys
 from collections import defaultdict
-HERE = os.path.dirname(os.path.abspath(__file__)); P = f"{HERE}/passes"; sys.path.insert(0, HERE)
+HERE = os.path.dirname(os.path.abspath(__file__)); P = f"{HERE}/passes"; sys.path.insert(0, HERE); CHECK = "--check" in sys.argv   # captured here: h397.leaves() rewrites sys.argv
 def rd(f): return [r for r in csv.DictReader((l for l in open(f) if not l.startswith("#")), delimiter="\t")]
 def targets():
     A = defaultdict(list)
@@ -78,7 +78,7 @@ def score():
         out.append("H397 f.97r arm as run: " + [l for l in open(f"{HERE}/h397_shape_v10instrument_result.txt") if l.startswith("f.97r")][0].strip())
         out.append("completed f.97r (L01-L43): " + h.one((2, ("f.97r", src, mode, lab))))
     txt = "\n".join(out) + "\n"; res = f"{HERE}/h399_97r_firstcut_result.txt"
-    if "--check" in sys.argv:
+    if CHECK:
         ok = os.path.exists(res) and open(res).read() == txt; print("check", "OK" if ok else "STALE"); sys.exit(0 if ok else 1)
     open(res, "w").write(txt); print(txt, end="")
 if __name__ == "__main__":

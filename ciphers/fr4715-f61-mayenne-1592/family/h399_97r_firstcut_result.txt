@@ -1,0 +1,4 @@
+gate 1 (H193 anchors): 18/20 (>= 17); gate 2 (known f.61 strips): 6/6 (>= 5)
+L01-L16 targets 65: bowl 5, no bowl 49, n 11; no-share 0.91
+H397 f.97r arm as run: f.97r (relabel; pool 138, relabelled 86): V10 gain as transcribed 0.0295, shape 0.0343; 20 controls mean 0.0286, max 0.0316 -> beats 20/20 -> carries order information (second instrument)
+completed f.97r (L01-L43): f.97r (relabel; pool 192, relabelled 135): V10 gain as transcribed 0.0295, shape 0.0368; 20 controls mean 0.0299, max 0.0326 -> beats 20/20 -> carries order information (second instrument)
