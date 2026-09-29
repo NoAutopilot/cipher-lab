@@ -5094,3 +5094,12 @@ v7's cells more often than under frequency-matched wrong keys -- a held-out chec
 binned control. What it is not: a reading, a merge, or a check of f.61 itself; the gloss letters are grade M (two model passes on a gloss hand they
 disagree on 58% of words); the margin over the binned p95 is 5 letters of 148; per-class hits (H325) are thin outside PHI/4TRI/VBAR_A/C43. For the
 verifier: the first held-leaf evidence for v7's cells as a set. No call.
+
+## Campaign step H329 (29 Sept 2026, 13:24 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.106r (the secretary's hand): too few agreed gloss words to test (script-only)
+
+`family/h329_106r_agreed.py` (H325's data code with f124r -> f106r, H328's controls; written before running; result
+`family/h329_106r_agreed_result.txt`, `--check` OK). fr.3983 f.106r's gloss passes (HELD at 0.339 word agreement; six cipher rows cut): **17 words
+read identically, 49 letters, only 12 signs under them** (5 keyed classes). Real 5; shuffled cells p95 8; binned p95 7 (418/1000 >= real);
+frequency key 4 -> pre-stated read-out **"no signal beyond frequency"**. At 12 signs the null spans nearly the whole range, so this is untestable at
+this N, not a negative on v7 in the secretary's hand; a test there needs more of f.106r's gloss read (its other rows were never cut) or a person's
+gloss reading. H325/H328's f.124r lead is the only held-leaf result so far. No call.

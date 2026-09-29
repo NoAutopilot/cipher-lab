@@ -1,0 +1,4 @@
+agreed gloss words 17, letters 49, signs under them 12, keyed classes 5: PHI VBAR_A HASH4 C43 4TRI
+real 5; (a) shuffled cells mean 5.0 p95 8 >= real 610/1000; (b) binned mean 4.3 p95 7 >= real 418/1000; (c) frequency key 4
+hits by class: PHI=3/6 VBAR_A=1/1 HASH4=0/1 C43=0/1 4TRI=1/3
+read-out: no signal beyond frequency
