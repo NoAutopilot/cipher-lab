@@ -561,3 +561,113 @@ word scraps; no passage is claimed as read."
 
 **Unsafe:** "f.35 read in part" with any word quoted as its content; "non haue ... fino ... fate" as a reading;
 "officiali"; "deciphered".
+
+## f.87 (no.45, Birago to Nevers, Saluzzo 9 May 1571)
+
+Novelty: see the shared search log above (29 Sept 2026). Segre, *Emanuele Filiberto*, paraphrases Birago's worry in spring
+1571 about Spanish troop movements near Alessandria from Venetian dispatches; it does not cite fr.3251 or print any
+cipher passage. Nothing located. Not N0.
+
+### Blind re-reconciliation (step 2)
+
+Two Opus subagents (L01-L03, L04-L05), same protocol, on HARVEST-D2's tracked crops (the third, accepted crop cut).
+`verify_d2/f87/passD.tsv`, 205 signs (L01 27, L02 45, L03 46, L04 44, L05 43): both passes 139, sided with A 31, with B
+17, against both 18. Where the passes had split one written sign into two ids (t+3 as S52 plus a bar or X_NEW; loop+3;
+the c-e-ij sign S76 as S32+S66), D merged them into one sheet cell, so D's positions drift from passC's after the first
+merge in a line and a position-by-position comparison with passC is not meaningful on L02, L04 and L05. Both reconcilers
+independently matched the double-barred oval to the printed cell **S60 (r)**: 4 positions in L04-L05 are S60 on D, and 3
+more are X_THETA2 (keyed r); 1 X_POUND, 3 X_NEW, 1 '?'.
+
+### Key test on D (`verify_d2/f87/control_D.txt`)
+
+| sequence | letters | real key | shuffles mean / max | z | rank of 201 | power |
+|---|---|---|---|---|---|---|
+| verifier D, seed 1 | 193 | -1.439 | -2.072 / -1.785 | 5.30 | **1** | 20/20, z median 7.08 |
+| verifier D, seed 7 | 193 | -1.439 | -2.080 / -1.682 | 5.07 | 1 | 20/20 |
+| verifier D, seed 23 | 193 | -1.439 | -2.074 / -1.772 | 5.34 | 1 | 20/20 |
+| (solver) pass A / pass B raw | - | -1.634 / -1.617 | - | 3.49 / 3.47 | 1 / 1 | 10/10 |
+| (solver) passC adjudicated | - | -1.735 | - | 2.48 | 2 | 20/20 |
+
+This reverses the solver's weakest number. On a value-blind reconciliation that reads the whole line against the sheet
+(and merges the split signs), the key ranks first with z 5.1-5.3, above both raw passes. The solver's rank-2 merge came
+from the two adjudicators picking one pass per split, not from the hand being unreadable. Judge on D, pasted:
+```
+FAIL language: score=-1.452, null_p99=-1.699, real_p05=-0.944, real_median=-0.828, mode=both, N=193
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Well above the null (the solver's passC scored -1.723, at the null ceiling), still far from real prose.
+
+### Line by line against 20 shuffled keys read blind (step 3)
+
+`verify_mk_blind.py verify_d2/f87/passD.tsv verify_d2/f87/blind 8729 X_THETA2=r`; one Sonnet reader, decodes file only.
+It rated TEXT 21 alone LANG, high confidence ("neandosecrezamente", "giorno", "onde", "randi"); five shuffles SOME with
+one scrap each (nume, arte, chies, cente, tongo), fifteen NONE. TEXT 21 is the real key.
+
+```
+L01    l&immmgnorduadilfdla_ea
+L02    _udirrandizimeu_eazimhecenmomtilpfoincpidam
+L03    aamemagnaet&imsirnoredonalfonmochauendouazo
+L04    uartirel&sracaroc_iaungiornoauantieilanozeme
+L05    neandosecrezamenteconozo_orteondeciamchuno
+```
+
+| line | phrase | forced by the printed key on D? | in the 20 shuffles (blind) | verdict |
+|---|---|---|---|---|
+| L05 | **ne ando secre-amente** | yes; the r of "secre" is S60 (printed r); the next sign reads z, not t | 0/20; the reader's longest phrase | endorsed as "ne ando secre-amente" (the t is not read) |
+| L04 | **un giorno auanti** | yes | "giorno" 0/20; "auanti" not listed by the reader but in no shuffle | endorsed; "auanti" M |
+| L03 | ch'auendo | yes ("mochauendo") | not listed by the reader; 0/20 | M; a fragment, not endorsed as a passage |
+| L05 | onde | yes | listed; 0/20 | a scrap |
+| L03 | magna, L02 randi, L05 conozo | forced, but not words in context | - | not readings |
+
+### The two I signs (step 4)
+
+- **Double-barred oval.** On D, four of the seven are matched to the printed cell S60 = r by the reconcilers themselves,
+  so on f.87 the r is mostly the printed value, not an override; "secre-amente" uses one of them. With all seven
+  unkeyed the passage reads "secre_amente" and still stands. Value fit on D is flat (n -1.436, r -1.439, unkeyed -1.455).
+- **Pound sign.** One occurrence (L04 18, "roc_ia"), unkeyed; nothing endorsed depends on it.
+
+### Grades (D, 205 tokens)
+
+S 113, M 84, X_THETA2-as-r 3, I 1 (pound, unkeyed), U 4 (3 X_NEW, 1 '?'). S60 positions are counted in S/M as printed
+cells. H 0, C 0.
+
+### Verdict, f.87
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| f.87 L04 "un giorno auanti", L05 "ne ando secre-amente" | **recovered-passages** (two short fragments) | **N3** | published | unknown | high that the key is right (rank 1/201 z 5.1-5.3 on a blind D, 20/20 power, blind reader); moderate on the fragments |
+| the rest of f.87 | none | not classed | - | - | nothing read |
+
+**Safe sentence:** "Birago's letter to Nevers of 9 May 1571 (BnF fr.3251 f.87) is in Tomokiyo's published Ceppo-Nevers
+key: on a verifier's value-blind transcription the key beats all 200 shuffled keys (z 5.1-5.3), and a blind reader picks
+its decode out of 21. Two short fragments read: 'un giorno auanti' and 'ne ando secre-amente'. No prior reading of this
+letter was located (search logged in AUDIT.md, 29 Sept 2026)."
+
+**Unsafe:** "f.87 deciphered"; "secretamente" as read (the t sign reads z); any account of who went secretly where; "first".
+
+## Postmortem (all three)
+
+- **The solver's per-folio numbers hold or improve on an independent blind transcription**: f.21v z 6.40 -> 5.7-6.6,
+  f.35 4.46 -> 5.0-6.0, f.87 2.48 (rank 2) -> 5.1-5.3 (rank 1). The key is the letters' key on all three.
+- **Over-claims corrected in NOTES.md** (pointer lines added to each HARVEST-D2 section): f.21v "intencione" and
+  "auanti qualche" are not forced on D; f.35's "non, haue, fino, fate" are scraps that a blind reader does not single out;
+  f.87 "secre[t]amente" supplies a t the sign does not give.
+- **The double-barred oval is very probably the printed cell S60 (r, row 1)**, missed as "off-sheet" by every earlier
+  pass: three independent verifier reconcilers matched it to S60 without prompting, and this verifier compared the
+  shapes. Together with the fr.3252 period gloss (r) this makes the r a printed-key value with a period gloss behind it,
+  not an I override. Carry it back to f.11r (four positions) in the next f.11r pass.
+- The pound sign is still unglossed; it stays I everywhere.
+- One process note: HARVEST-D2's reconciliation sent every split to a third reader who chose one side per position; on
+  f.87 that produced a merge worse than either input. A reconciler who re-reads each whole line against the sheet (and
+  can merge split signs) did better on all three folios.
+
+## For the orchestrator (VERIFY-CEPPO-D2-1)
+
+- status.json (the parent sets it; this audit does not edit it): target stays `partial`; results f.21v
+  **recovered-passages N3**, f.87 **recovered-passages N3**, key `published` (Tomokiyo), text `unknown`; f.35 **none**
+  (key fits, nothing read).
+- NEAR.md (the parent's): if the target has or gets a row, add f.21v and f.87 at rank 1/201 on blind D (z 5.7-6.6 and
+  5.1-5.3) and f.35 at z 5.0-6.0 with no passage. Named next step: re-run the f.11r key test and reading with the double-
+  barred oval as S60 = r (printed), then a per-sign pass on the S49/S73 (n/null) and S23/S97 (n/a) look-alikes on f.21v,
+  the two splits behind "intencione" and "auanti".
+- Second-opinion rows queued: SO-CEPPO-F21V and SO-CEPPO-F87 (both N3). None for f.35.

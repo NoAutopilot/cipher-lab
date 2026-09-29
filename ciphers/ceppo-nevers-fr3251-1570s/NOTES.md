@@ -877,6 +877,11 @@ At the null ceiling (0.05 above null_p99), far from real prose.
 ("secre[t]amente, auanti, giorn[o], [ch']auendo, che"); three texts SOME with one scrap each, seventeen NONE. TEXT 04 is
 the real key (`blind_answer.json`, `blind_judgment.tsv`).
 
+**Verifier correction (VERIFY-CEPPO-D2-1, 29 Sept 2026, AUDIT.md "f.87"):** a whole-line value-blind
+re-reconciliation (split signs merged, the double-barred oval matched to printed S60 = r) ranks the key 1/201 at
+z 5.1-5.3 on three seeds (power 20/20), above both raw passes; the merge above, not the hand, was the limit. Endorsed:
+"un giorno auanti", "ne ando secre-amente" (the t is not read: the sign gives z). N3, key published.
+
 **Verdict for this folio: reading ready with the caveat above, the weakest of the three.** The printed key is supported
 on f.87 as on the other folios (each blind pass rank 1 of 201; a blind reader picks the real decode of 21; the
 double-barred oval fits r), but the reconciled transcription is poor: 66 M tokens on 204, the judge at the null, a

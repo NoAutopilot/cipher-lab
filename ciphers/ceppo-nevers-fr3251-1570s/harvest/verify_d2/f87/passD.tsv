@@ -1,0 +1,206 @@
+passage	pos	sign_id	conf	src	note
+L01	1	S40	H	AB	prose before 'particolari'
+L01	2	S54	M	B	b with slash across stem top
+L01	3	S65	H	AB	
+L01	4	S93	H	AB	
+L01	5	S31	M	AB	
+L01	6	S74	L	A	b with blob at stem top, no slash
+L01	7	S31	M	AB	
+L01	8	S13	H	AB	oval with inner dot
+L01	9	S23	H	AB	baseline dot before it read as its foot (A's X_NEW dot dropped)
+L01	10	S62	H	AB	
+L01	11	X_THETA2	H	AB	oval crossed by two bars
+L01	12	S73	H	AB	
+L01	13	S89	H	AB	
+L01	14	S47	H	AB	
+L01	15	S54	M	AB	
+L01	16	S80	M	A	bar runs through 8
+L01	17	S55	L	B	long crossbar
+L01	18	S93	H	AB	
+L01	19	S40	H	AB	
+L01	20	S69	L	D	oval crossed by one bar (both passes S13)
+L01	21	S55	L	A	long crossbar
+L01	22	S84	L	D	looped x with dot above (A X_NEW/S42, B S42); no base bar as in S42
+L01	23	S80	M	A	bar through 8
+L01	24	X_NEW	M	B	vertical bar with small hook at top, crossed by the running bar; recurs before S52 (cf L02 pos16)
+L01	25	S52	H	AB	
+L01	26	S97	H	AB	
+L01	27	S73	H	AB	line end
+L02	1	X_NEW	M	B	line start; P-like: stem with bowl, left curl and foot (A X_POUND)
+L02	2	S47	H	AB	
+L02	3	S55	L	B	long crossbar
+L02	4	S93	H	AB	
+L02	5	S32	L	D	loop with descender loop below baseline (both S31, B alt S32)
+L02	6	X_THETA2	H	AB	
+L02	7	S80	M	A	bar through 8
+L02	8	S49	M	AB	slash between dots
+L02	9	S89	H	AB	
+L02	10	S93	H	AB	
+L02	11	S76	M	A	looped x + j-descender with dot = cey; B's following X_NEW is this descender (dropped)
+L02	12	S93	M	B	
+L02	13	S74	H	AB	
+L02	14	S35	H	AB	
+L02	15	S42	M	A	closed triangle on base (B S23)
+L02	16	X_NEW	M	B	plain vertical bar before 3 (A noted it only)
+L02	17	S52	H	AB	
+L02	18	S80	H	AB	
+L02	19	S76	M	A	looped x + ij with dots (B split as S32/S66)
+L02	20	S17	M	A	
+L02	21	S74	M	B	stem with thick top; stroke under it is S17's tail
+L02	22	S61	H	AB	
+L02	23	S52	H	AB	
+L02	24	S22	H	AB	
+L02	25	S75	M	AB	plus with smudge
+L02	26	S23	H	AB	
+L02	27	S31	L	A	loop with right descending tail (B S94; no crossbar seen)
+L02	28	S70	M	D	V-topped cross (A S75, B S56)
+L02	29	S31	M	AB	
+L02	30	S88	M	AB	slanted slash, dot below
+L02	31	S93	H	AB	
+L02	32	S40	M	AB	
+L02	33	S57	H	AB	
+L02	34	S69	L	A	oval crossed by bar that runs into next sign (B S13)
+L02	35	S24	M	AB	
+L02	36	S93	H	AB	
+L02	37	S23	H	AB	
+L02	38	S37	H	AB	
+L02	39	S54	M	AB	
+L02	40	S57	H	AB	
+L02	41	S17	M	AB	
+L02	42	S73	H	AB	
+L02	43	S89	H	AB	
+L02	44	S80	H	AB	
+L02	45	S74	H	AB	line end
+L03	1	S97	H	AB	line start
+L03	2	S80	H	A	bar through 8 (B S65)
+L03	3	S31	M	AB	
+L03	4	S75	H	AB	
+L03	5	S74	M	A	blob at stem top, no slash (B S54)
+L03	6	S80	M	B	bar through 8 (A S65)
+L03	7	S13	H	AB	
+L03	8	S49	M	AB	
+L03	9	S45	L	A	single c-bowl with centred dot (B S47)
+L03	10	S54	L	A	b with stroke across (B S74)
+L03	11	S52	H	AB	
+L03	12	S88	M	AB	
+L03	13	S65	H	AB	
+L03	14	S17	H	AB	
+L03	15	S31	M	AB	only one looped L here; B's second S31 dropped
+L03	16	S26	M	AB	
+L03	17	S93	H	AB	
+L03	18	S32	L	B	loop with descender loop (A S31)
+L03	19	S23	H	AB	
+L03	20	S62	H	AB	
+L03	21	X_THETA2	H	AB	
+L03	22	S75	H	AB	
+L03	23	S73	H	AB	
+L03	24	S55	L	B	long crossbar (A S94)
+L03	25	S24	L	A	near-vertical slash two bars (B S88)
+L03	26	S49	M	AB	
+L03	27	S67	H	AB	
+L03	28	S80	H	AB	
+L03	29	S84	M	AB	
+L03	30	S69	L	D	oval crossed by one bar (both S13)
+L03	31	S70	M	D	V-topped cross (both S75)
+L03	32	S23	H	AB	
+L03	33	S74	M	AB	
+L03	34	S62	H	AB	
+L03	35	S37	L	B	delta-like with top stroke (A S54; alt S77)
+L03	36	S61	H	AB	
+L03	37	S80	H	AB	
+L03	38	S42	H	AB	
+L03	39	S52	H	AB	
+L03	40	S23	H	AB	
+L03	41	S89	H	AB	
+L03	42	S62	H	AB	
+L03	43	S47	M	AB	
+L03	44	S80	H	AB	
+L03	45	S76	M	A	looped x + ij (B split S32/S66)
+L03	46	S24	M	A	line end; vertical stem with two bars (B S88)
+L04	1	S42	M	AB	triangle on base; line start; alt S16
+L04	2	S45	H	AB	6/c with dot
+L04	3	S56	M	D	t+3 read as one sign S56; A had S52 (bar before), B had X_NEW+S52; B's X_NEW dropped as part of S56
+L04	4	S53	H	AB	
+L04	5	S93	H	AB	
+L04	6	S60	M	D	looped oval crossed by two bars = S60 cell; both passes X_THETA2
+L04	7	S35	H	AB	m with tick
+L04	8	S84	M	D	loop top-right, loop bottom-left, tail: S84 not S31
+L04	9	S65	M	AB	8 with lead-in stroke from left only, not through; alt S80
+L04	10	S26	H	AB	9 dot underline
+L04	11	S32	M	D	teardrop loop + 3 read as one sign S32; A S25+S52, B S40+S52 (the separate S52 merged)
+L04	12	S45	H	AB	dot
+L04	13	S37	H	AB	
+L04	14	S80	H	AB	8 with bar through
+L04	15	S56	M	D	t+3 one sign; A S52 (bar before), B X_NEW+S52
+L04	16	S70	H	AB	
+L04	17	S66	H	AB	z with dot
+L04	18	X_POUND	M	A	P/lb-like loop on stem with base stroke; B X_NEW
+L04	19	S93	H	AB	
+L04	20	S80	M	A	8 with bar at top right and left stroke; B S65
+L04	21	S47	H	AB	
+L04	22	S23	H	AB	dot
+L04	23	S13	M	AB	oval with dot
+L04	24	S93	H	AB	
+L04	25	S62	H	AB	
+L04	26	S60	M	D	both passes X_THETA2
+L04	27	S23	H	AB	
+L04	28	S24	M	A	upright stroke with two bars; B S88
+L04	29	S45	H	AB	dot
+L04	30	S47	H	AB	
+L04	31	S80	H	AB	
+L04	32	S23	H	AB	
+L04	33	S88	M	B	slanted slash two bars; A S24
+L04	34	S93	H	AB	
+L04	35	S75	H	AB	
+L04	36	S17	H	AB	
+L04	37	S84	M	B	A S31
+L04	38	S80	M	D	8 with bar through waist; A S65 (alt S80), B S65
+L04	39	S49	H	AB	slash between dots
+L04	40	S24	M	D	upright stroke with hooked top, two bars; A S88 alt S24, B S88
+L04	41	S76	M	A	looped c+e+ij one sign; B S32+S66
+L04	42	S52	H	AB	
+L04	43	S74	M	A	b with heavy dot head; B S54
+L04	44	S75	H	AB	line end
+L05	1	S23	H	AB	dot; line start
+L05	2	S35	H	A	m with tick; B S25
+L05	3	S97	H	AB	
+L05	4	S23	H	AB	
+L05	5	S89	H	AB	
+L05	6	S62	H	AB	
+L05	7	S73	H	AB	slash/cross between dots with bar
+L05	8	S26	H	AB	
+L05	9	S35	H	AB	
+L05	10	S37	H	AB	
+L05	11	S60	M	D	both passes X_THETA2
+L05	12	S75	H	AB	
+L05	13	S76	M	A	B S32+S66
+L05	14	S80	H	AB	
+L05	15	S74	M	A	b with dot head; B S54
+L05	16	S52	H	AB	
+L05	17	S49	H	AB	
+L05	18	S53	H	AB	
+L05	19	S75	H	AB	
+L05	20	S37	M	B	delta with tall looped ascender; A S74 alt S37
+L05	21	S70	H	AB	
+L05	22	S23	H	AB	
+L05	23	S24	M	A	upright with hook, two bars; B S88
+L05	24	S76	M	A	B S32+S66
+L05	25	S62	H	AB	end of s2
+L05	26	?	L	A	small open bowl joined to the next ss stem at s2/s3 join; real ink, not a crop duplicate; B omitted
+L05	27	S62	H	AB	start of s3
+L05	28	S60	M	D	both passes X_THETA2
+L05	29	S88	M	B	slanted slash; A S24
+L05	30	S75	H	AB	
+L05	31	S24	M	A	upright two bars; B S88
+L05	32	S49	H	AB	
+L05	33	S89	H	AB	
+L05	34	S75	H	AB	
+L05	35	S22	H	AB	wave
+L05	36	S93	H	AB	
+L05	37	S80	H	AB	
+L05	38	S74	M	A	B S54
+L05	39	S22	M	D	wave identical to previous S22; both passes S40
+L05	40	S61	H	B	9 with long stem; A merged into S40
+L05	41	S47	H	AB	alt S45
+L05	42	S23	H	AB	
+L05	43	S24	L	D	upright stroke two bars; both passes S88; S24/S88 lean is the hardest pair; line end
