@@ -3871,3 +3871,12 @@ What it now adds for f.61 is dropping t from 6 tokens, not a wider narrowing. No
 `scripts/f61cross_108v.py` (result `scripts/f61cross_108v_result.txt`, `--check` fresh), H157's design with CROSS = s against e/a/i/t/n/null. f.108v has
 **one** CROSS sign, below the pre-stated floor of 5: not tested. This matches H150 (CROSS under 10 occurrences in all f.61-hand text on disk). CROSS s
 stays a Desportes-hand lean (H192: 0.36 / 0.53, wrong 0.09 / 0.05) with no test available in f.61's hand.
+
+## Campaign step H188 (29 Sept 2026, 01:32-01:34 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- v5 plus the open Desportes leans (script-only)
+
+`family/h188_v5_plus.py` (result `family/h188_v5_plus_result.txt`, `--check` OK), build_key_v5's scorer, 2000 permuted keys each. v5 cells: 4TRI c/p/t,
+HASH4 d/i/q, BETA m/s. **Test keys 4TRI c/p, HASH4 d/q, BETA m, and all three together: f.61 five spans 53/55 and f.108r overlay 74/84 under every
+one (v5 the same; no permuted key reaches any).** No contradiction with Tomokiyo's letters and no gain: his known positions do not discriminate these
+cells (4TRI t, HASH4 i and BETA s occur at none of them). The narrowings therefore rest on the Desportes-leaf evidence alone (H190-H194 for 4TRI; H192
+for HASH4 d and BETA m, both short of the replication rule). Earlier f.108r-specific findings still weigh against HASH4 d/q there (H114 d/q hurts,
+H118/H119 i/x best on f.108r's sequence gain). For the verifier; nothing merged.
