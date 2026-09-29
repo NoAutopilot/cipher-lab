@@ -693,6 +693,10 @@ FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading
 
 Above the shuffled null, below real prose, as on f.11r: a partial reading with 38 M tokens on two lines.
 
+**Verifier correction (VERIFY-CEPPO-D2-1, 29 Sept 2026, AUDIT.md "f.35"):** on the verifier's value-blind D (71/76 =
+passC) the key test is stronger (rank 1/201, z 5.0-6.0, power 17-19/20), but a blind reader on D rated no decode LANG
+and saw only "fino" and "come" in the real one. Claim scope none; no passage is endorsed; the words above are scraps.
+
 **What this shows and does not.** On f.35 the printed Ceppo-Nevers key beats 200 shuffles on both blind passes and on
 the reconciled sequence, at a power the same control reads 19/20, and a blind reader picks its decode out of 21. It gives
 word fragments, not a continuous text: 73 letters is short, and the M grades say where the readers were unsure. No

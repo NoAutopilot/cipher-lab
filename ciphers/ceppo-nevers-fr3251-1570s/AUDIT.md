@@ -485,3 +485,79 @@ logged in AUDIT.md, 29 Sept 2026)."
 
 **Unsafe:** "f.21v deciphered"; any continuous translation; "intencione" or "auanti qualche" as read; the pound-sign l
 as read; "first", "unpublished".
+
+## f.35 (no.18, Birago to Nevers, Saluzzo 15 Nov 1570)
+
+Novelty: see the shared search log above (29 Sept 2026); nothing located. Not N0.
+
+### Blind re-reconciliation (step 2)
+
+One Opus subagent, same protocol (crops, blind sheet, raw passes A and B only). `verify_d2/f35/passD.tsv`, 76 signs (L01
+37, L02 39): both passes 67, sided with A 3, against both 6, nothing inserted or dropped; it excluded about seven
+prose ascenders from the line below and the closing flourish, which neither pass had listed. **D agrees with the
+solver's passC at 71 of 76 signs**; the five differences: S91 to S93 twice (L01 26, L02 1), S91 to S34 (L02 25), S53 to
+S37 (L02 29, conf L, a prose stroke crosses it) and S65 to S80 (L02 36, barred 8). 2 X_POUND, 1 X_NEW, no double-barred
+oval.
+
+### Key test on D (`verify_d2/f35/control_D.txt`)
+
+| seed | letters | real key | shuffles mean / max | z | rank of 201 | power control |
+|---|---|---|---|---|---|---|
+| 1 | 72 | -1.126 | -2.086 / -1.571 | 5.42 | **1** | 19/20, z median 4.25 |
+| 7 | 72 | -1.126 | -2.065 / -1.542 | 5.01 | 1 | 17/20 |
+| 23 | 72 | -1.126 | -2.082 / -1.623 | 5.96 | 1 | 17/20 |
+
+D scores better than the solver's passC (-1.126 against -1.306; z 5.0-6.0 against 4.46). The power control at this
+length is 17-19 of 20, so the test has power here and the key passes it. Judge on D, pasted:
+```
+FAIL language: score=-1.142, null_p99=-1.579, real_p05=-0.982, real_median=-0.821, mode=both, N=72
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+### Line by line against 20 shuffled keys read blind (step 3)
+
+`verify_mk_blind.py verify_d2/f35/passD.tsv verify_d2/f35/blind 3529 X_THETA2=r`; one Sonnet reader, decodes file only.
+**No text rated LANG.** The real key (TEXT 07) was rated SOME with "fino" (L01) and "come" (L02); one shuffle (TEXT 01)
+was also SOME ("capa"); nineteen NONE. The reader did not see "non", "haue" or "fate" in the real decode. This differs
+from HARVEST-D2's blind reader on passC, which picked the real decode as the only LANG text; on D it is not singled out
+as prose.
+
+```
+L01    c_enonaosensohauefiuremidiiuihafino_e
+L02    intfateetmiuongano_irficialicomeeinast
+```
+
+| line | phrase (solver) | forced by the key on D? | blind, in the 20 shuffles | verdict |
+|---|---|---|---|---|
+| L01 | non | yes | reader did not list it | a 3-letter scrap, not a reading |
+| L01 | haue | yes | not listed | scrap |
+| L01 | fino | yes | listed for the real key only; 0/20 | scrap (4 letters, common word) |
+| L02 | fate et mi | yes | not listed | scrap |
+| L02 | come | yes (on D; passC read "tome") | listed for the real key only; 0/20 | scrap |
+| L02 | "...ficiali come" | "ficiali" on D rests on the S34 that D alone read (L02 25) | - | not endorsed; a possible "[u]fficiali" is a guess |
+
+### The two I signs (step 4)
+
+Two pound signs, both unkeyed; their value fit is flat (n and d -1.129, unkeyed -1.126), so no value can be chosen at
+this count. No double-barred oval on f.35. Nothing on this folio depends on either override.
+
+### Grades (D, 76 tokens)
+
+S 47, M 26, I 2 (pound, unkeyed), U 1. H 0, C 0.
+
+### Verdict, f.35
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| f.35 whole cipher passage (2 lines) | **none** | **not classed** (no passage read to class) | published | unknown | high that the printed key is the letter's key (rank 1/201 on a blind D, z 5.0-6.0, power 17-19/20); none on any reading |
+
+The key test is a positive result on the key (the Ceppo-Nevers table does fit f.35), not a recovered passage: the words
+it gives are isolated three- and four-letter scraps that a blind reader could not tell apart from a chance decode.
+Nothing goes to the second-opinion queue.
+
+**Safe sentence:** "Birago's letter to Nevers of 15 Nov 1570 (BnF fr.3251 f.35) is in Tomokiyo's published Ceppo-Nevers key:
+on a value-blind transcription the key beats all 200 shuffled keys (z 5.0-6.0). The two cipher lines give only isolated
+word scraps; no passage is claimed as read."
+
+**Unsafe:** "f.35 read in part" with any word quoted as its content; "non haue ... fino ... fate" as a reading;
+"officiali"; "deciphered".

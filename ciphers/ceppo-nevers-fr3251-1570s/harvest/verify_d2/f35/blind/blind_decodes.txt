@@ -1,0 +1,84 @@
+=== TEXT 01 ===
+L01	a_nsgtcapasienloq&lrolrcqosgmot_n
+L02	rsnliaannroqsqt_ruloacgeoatrnacicnm
+
+=== TEXT 02 ===
+L01	p_doeiocsofeiddtsrrlhsogirseiasoo_d
+L02	gctilsdchsrepoo_gztspiirspohdsioicc
+
+=== TEXT 03 ===
+L01	a_hfslddfoisiphitqrilmctisrif_h
+L02	mleiadheritslgf_mniacmiarhdcfider
+
+=== TEXT 04 ===
+L01	i_u&prrmi&camiuqtrtltfhsrtlt&r_u
+L02	hrqmaiultrpro&r_heqtisrtirluis&mmt
+
+=== TEXT 05 ===
+L01	p_flastuizlcif&fnproagpamtrpitdplu_f
+L02	msnfzfgprasrrlu_mlnppttuppugfztlfil
+
+=== TEXT 06 ===
+L01	e_arpozpmcrctou&adqfieqsrrfqoznqrp_a
+L02	rohduscaheqfpoirp_rqdqerziqepeacrrumht
+
+=== TEXT 07 ===
+L01	c_enonaosensohauefiuremidiiuihafino_e
+L02	intfateetmiuongano_irficialicomeeinast
+
+=== TEXT 08 ===
+L01	p_nfslsaffozoenrntrmonetptnlsnfs_n
+L02	tstrocfntontscdfs_trnpplsnpsonfpfoatg
+
+=== TEXT 09 ===
+L01	a_lupcmetquoanralpi&risoe&inmliue_l
+L02	ocaprcqlai&pcgmue_ofpiaemniaelqeurtas
+
+=== TEXT 10 ===
+L01	e_chuiaezhqtscsfplfdferpftmfha_c
+L02	isnzcdfpuinlha_csferrfeadczrhes
+
+=== TEXT 11 ===
+L01	q_hsnrodsisngsmrhuziocrsezsousd_h
+L02	sr&umcih&cznrlmsd_suqeorqdchiesms&l
+
+=== TEXT 12 ===
+L01	i_tluasgladhletszsorezdilszhczla_t
+L02	irslcgtrezsupqla_irsziloziaetglllsrr
+
+=== TEXT 13 ===
+L01	r_&itsznqriudln&rssetestucssdzrsin_&
+L02	usrlor&esstsdain_ugrsrczpsrne&rcilqr
+
+=== TEXT 14 ===
+L01	l_duemorczunaessdcnqgllndfpqneoinur_d
+L02	fmmcsrzdmlnqemsur_fcnlpoenlrldzpuscmr
+
+=== TEXT 15 ===
+L01	_izriftzeonseiemmhtlmoucmmnfsmz_i
+L02	uiqesrtiqlmmriprz_usemcffmlitczsqd
+
+=== TEXT 16 ===
+L01	s_almqcrdulfoimaacrzichtrcicrclr_a
+L02	hqoapuaoicrmqfalr_htacstclcsriautldor
+
+=== TEXT 17 ===
+L01	u_rrascietrdmaor&utsnfeucsri_r
+L02	esl&attrlnuasiqri_e&ucruinrtraelh
+
+=== TEXT 18 ===
+L01	d_srpsfser&zuhostmoqpmseomustmrf_s
+L02	epcthiescpmoparrf_emtmdsrmdfpserhscl
+
+=== TEXT 19 ===
+L01	l_nam&ofraeisndcadmqcqriacopca_n
+L02	r&idirrniqcam&cfa_rndcliosclqnriaifih
+
+=== TEXT 20 ===
+L01	o_nirionricasnlhfqtehrtfhaiho_n
+L02	rrslsarnsehfirdlo_rplhotichooenrtsns
+
+=== TEXT 21 ===
+L01	r_ftocrnuter&tfreamaaezpae&ceetr_f
+L02	zsriufsaeaodftr_zlrerpcoerrafuptnsc
+

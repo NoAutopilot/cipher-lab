@@ -1,0 +1,77 @@
+passage	pos	sign_id	conf	src	note
+L01	1	S37	H	AB	line start; prose before: Monsig. al Bourdaine (line above)
+L01	2	X_NEW	M	AB	P-like: loop with vertical stem; no sheet match
+L01	3	S75	H	AB	
+L01	4	S49	L	D	slash with dot above and dot below; the loop around it is the descender of prose g (Monsig.) from the line above; A ?, B X_NEW
+L01	5	S70	H	AB	
+L01	6	S23	H	AB	
+L01	7	S97	H	AB	
+L01	8	S62	H	AB	
+L01	9	S26	H	AB	2. underlined
+L01	10	S52	H	AB	
+L01	11	S49	H	AB	dotted slash, no vertical cross
+L01	12	S94	M	AB	alt S55
+L01	13	S24	M	A	upright stem through two bars; B S88
+L01	14	S61	H	AB	
+L01	15	S80	H	AB	8 barred at waist
+L01	16	S47	M	AB	ce
+L01	17	S75	H	AB	
+L01	18	S69	H	AB	theta one bar
+L01	19	S17	H	AB	
+L01	20	S42	M	AB	closed triangle with curl top-left; alt S16
+L01	21	S56	H	AB	
+L01	22	S35	H	AB	
+L01	23	S74	M	AB	6 with tick at top; alt S77
+L01	24	S17	H	AB	
+L01	25	S89	H	AB	
+L01	26	S93	M	D	ce with long-s stroke rising from e to a curled head (head overlaps prose g descender above); same shape as L02 pos1/20; A S47, B X_NEW
+L01	27	S34	H	AB	
+L01	28	S42	M	AB	crossed triangle; alt S16
+L01	29	S17	H	AB	
+L01	30	S61	H	AB	
+L01	31	S97	H	AB	
+L01	32	S95	M	AB	open o
+L01	33	S17	H	AB	
+L01	34	S49	H	AB	
+L01	35	S62	H	AB	
+L01	36	X_POUND	H	AB	
+L01	37	S75	H	AB	line end; prose after: none
+L02	1	S93	M	D	ce with long-s head; line start; A S91, B X_NEW alt S93
+L02	2	S23	H	AB	
+L02	3	S53	M	AB	
+L02	4	S69	H	AB	one bar
+L02	5	S80	H	AB	
+L02	6	S88	M	AB	slanted stem through two bars
+L02	7	S52	H	AB	
+L02	8	S75	H	AB	
+L02	9	S53	M	AB	
+L02	10	S74	M	AB	
+L02	11	S17	H	AB	
+L02	12	S42	M	AB	
+L02	13	S70	H	AB	
+L02	14	S23	H	AB	
+L02	15	S13	H	AB	theta with dot, no bar
+L02	16	S45	M	AB	c with dot
+L02	17	S49	H	AB	
+L02	18	S62	H	AB	
+L02	19	X_POUND	H	AB	
+L02	20	S93	M	A	B alt S93
+L02	21	S32	M	AB	
+L02	22	S69	H	AB	
+L02	23	S17	H	AB	
+L02	24	S37	H	AB	
+L02	25	S34	M	D	is with dark head; preceding p-like stroke is an ascender from prose line below; A S91, B X_NEW alt S34
+L02	26	S97	H	AB	
+L02	27	S40	M	AB	
+L02	28	S17	H	AB	
+L02	29	S37	L	D	stem above, loop below (delta); dark overlap is a prose ascender from the line below crossing it; no slash; A S54, B S53
+L02	30	S62	H	AB	
+L02	31	S74	M	AB	6 with flag tick at top; alt S77
+L02	32	S75	H	AB	
+L02	33	S52	H	AB	
+L02	34	S34	H	AB	
+L02	35	S49	H	AB	
+L02	36	S80	M	D	8 with bar crossing at waist; A and B S65
+L02	37	S26	M	A	2 with dot over long underline; B S66
+L02	38	S53	M	AB	
+L02	39	S73	M	AB	line end; large C-flourish after is not a sign; s4 blank
