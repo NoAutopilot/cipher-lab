@@ -4596,3 +4596,16 @@ the signs run at an even pitch (about 300 sheet px, 100 native) whatever the wor
 a word-boundary detector from gaps is ruled out for f.61, and H266 (null-class flanking gaps) cannot detect boundary placement: dropped as a non-test by
 this calibration. H267 (positional reads of L02/L04/L06/L09) is dropped too: L06 and L09 carry no cipher signs in any pass, and L02/L04 carry only the
 two OTHER tokens each that read_call_U and H238 already describe -- two vision calls for x on four tokens no open test needs. No call.
+
+## Campaign step H268 (29 Sept 2026, 10:21 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- span S5 reads as French only as "me l'entendoit" (script-only)
+
+`family/h268_entendoit.py` (read-out fixed in the docstring before running; result `family/h268_entendoit_result.txt`, `--check` OK). Tomokiyo's S5 on L11 is
+"melente-noit" (his dash at L11 8, 4STEM; his n at L11 9, the 4-over-Pi). As French, "me l'ente?noit" needs a word "ente?noit": in the period corpus
+tools/data/fr16 (Catherine de Medicis t.1-2, Marguerite de Valois; 933k words) **entendoit 6, entendoient 1, "l entendoit" 5 -- and no enten- form at all
+(entenoit / entenoyt / entenoient / entenois 0).** Pre-stated read-out: **"entendoit is the word"**. What follows, as a lead and not a value: "me l'entendoit"
+puts n at L11 8 (inside the F61READ 4STEM a/n cell, grade S, so consistent) and **d at L11 9**, where his letter is n. H85's blind judge resolution of the
+known lines already read this span "melentendoit" (NOTES H85, control PASS), and H139 found this dash to be the only one of his that falls on a keyed sign.
+So the published letter n at L11 9 (the one source of the a/n cell for f.61's 4-over-Pi, V8: grade M) is contradicted by the French: either his n is a slip
+for d, or the phrase is not "entendoit". A rule-4 style conflict row is filed in HYPOTHESES.md with both witnesses (his markup; the lexicon through the
+corpus). For the verifier (VERIFY-F61-V9): a candidate correction to a published reading, grade I on L11 9 = d and on L01 12 (the other 4-over-Pi) nothing;
+rule 10 wording, no merge, no class change. H269 scores the test key both ways. No call.

@@ -1,0 +1,9 @@
+entend- forms: entendoit 6, entendoyt 0, entendoient 1, entendois 0, entendoy 0 (total 7)
+enten- forms: entenoit 0, entenoyt 0, entenoient 0, entenois 0 (total 0)
+phrase 'l'entendoit': 1
+phrase 'l entendoit': 5
+phrase 'entendoit tant': 0
+phrase 'me l'entendoit': 0
+phrase 'l'entend': 24
+corpus: 933118 words
+read-out: entendoit is the word
