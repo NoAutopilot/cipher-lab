@@ -1,0 +1,562 @@
+{
+ "result": {
+  "c1": {
+   "n_lang": 50,
+   "n_null": 50,
+   "lang_recall": 0.5,
+   "null_recall": 0.72,
+   "bal_acc": 0.61,
+   "missed_language": {
+    "FR-HOMO p0.2 x0.13": 2,
+    "FR-SYLL p0.15 x0": 2,
+    "FR-HOMO p0.15 x0.13": 1,
+    "FR-SYLL p0.1 x0": 2,
+    "PT-HOMO p0.2 x0": 1,
+    "FR-SYLL p0.2 x0.13": 1,
+    "PT-HOMO p0.1 x0": 2,
+    "FR-HOMO p0.15 x0": 2,
+    "EN-HOMO p0.2 x0": 1,
+    "EN-HOMO p0.15 x0.13": 1,
+    "PT-HOMO p0.1 x0.13": 1,
+    "PT-HOMO p0.15 x0.13": 1,
+    "EN-HOMO p0.2 x0.13": 1,
+    "EN-HOMO p0.1 x0": 1,
+    "FR-HOMO p0.1 x0.13": 2,
+    "PT-HOMO p0.2 x0.13": 1,
+    "EN-HOMO p0.1 x0.13": 1,
+    "FR-SYLL p0.1 x0.13": 1,
+    "EN-HOMO p0.15 x0": 1
+   }
+  },
+  "c2": {
+   "n_lang": 50,
+   "n_null": 50,
+   "lang_recall": 0.86,
+   "null_recall": 0.94,
+   "bal_acc": 0.9,
+   "missed_language": {
+    "FR-HOMO p0.2 x0.13": 1,
+    "PT-HOMO p0.2 x0": 2,
+    "EN-HOMO p0.15 x0.13": 1,
+    "PT-HOMO p0.1 x0": 1,
+    "FR-HOMO p0.1 x0.13": 1,
+    "PT-HOMO p0.1 x0.13": 1
+   }
+  },
+  "pair": {
+   "n_lang": 50,
+   "n_null": 50,
+   "lang_recall": 0.88,
+   "null_recall": 0.92,
+   "bal_acc": 0.9,
+   "missed_language": {
+    "FR-HOMO p0.2 x0.13": 2,
+    "PT-HOMO p0.2 x0": 2,
+    "EN-HOMO p0.2 x0.13": 1,
+    "FR-HOMO p0.1 x0.13": 1
+   }
+  }
+ },
+ "labels": {
+  "0d2de09d": {
+   "design": "PT-HOMO",
+   "p": 0.2,
+   "x": 0
+  },
+  "b9b052ec": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "acf7944d": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "8ea7dac7": {
+   "design": "FR-HOMO",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "02de7925": {
+   "design": "FR-SYLL",
+   "p": 0.15,
+   "x": 0
+  },
+  "cda5d51c": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "9874f939": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "8156d3fb": {
+   "design": "EN-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "55c06a3c": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "b82d9d51": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "7bf80f3d": {
+   "design": "FR-HOMO",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "03a341ae": {
+   "design": "FR-SYLL",
+   "p": 0.2,
+   "x": 0
+  },
+  "89983c6f": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "4e685a3a": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "30e84e06": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "d9db039d": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "29fea3fd": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "c477cbc9": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "4a5db2b2": {
+   "design": "FR-HOMO",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "ab0ab180": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "eec7ea32": {
+   "design": "FR-SYLL",
+   "p": 0.15,
+   "x": 0
+  },
+  "2f7d9669": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "d81a0571": {
+   "design": "FR-SYLL",
+   "p": 0.1,
+   "x": 0
+  },
+  "4632617c": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "edbe75c6": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "9bce9dd7": {
+   "design": "PT-HOMO",
+   "p": 0.2,
+   "x": 0
+  },
+  "c618c03c": {
+   "design": "FR-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "0e88d795": {
+   "design": "FR-SYLL",
+   "p": 0.1,
+   "x": 0
+  },
+  "ef450b2a": {
+   "design": "FR-SYLL",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "1f0de42a": {
+   "design": "PT-HOMO",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "5020dd07": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "4bc194d1": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "7f5004f6": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "7c9df3be": {
+   "design": "PT-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "4792970e": {
+   "design": "FR-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "191d9bee": {
+   "design": "EN-HOMO",
+   "p": 0.2,
+   "x": 0
+  },
+  "52f5e07d": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "fd8541cf": {
+   "design": "FR-SYLL",
+   "p": 0.1,
+   "x": 0
+  },
+  "1b271ede": {
+   "design": "EN-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "fdfd189f": {
+   "design": "FR-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "cbec48e9": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "9d435d38": {
+   "design": "EN-HOMO",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "7c9fd939": {
+   "design": "FR-HOMO",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "4126df0f": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "34346a8f": {
+   "design": "PT-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "ea6144f6": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "9f9811a2": {
+   "design": "PT-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "bda00cbc": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "205c1882": {
+   "design": "PT-HOMO",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "8871b5bc": {
+   "design": "EN-HOMO",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "0ffdf909": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "00309901": {
+   "design": "FR-SYLL",
+   "p": 0.2,
+   "x": 0
+  },
+  "b34774cf": {
+   "design": "EN-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "ed9ebbe4": {
+   "design": "FR-SYLL",
+   "p": 0.15,
+   "x": 0
+  },
+  "89d812ee": {
+   "design": "FR-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "b1fbbc04": {
+   "design": "EN-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "0496bb92": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "12e0cee7": {
+   "design": "PT-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "c9047734": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "2744edd4": {
+   "design": "FR-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "1445cd4a": {
+   "design": "PT-HOMO",
+   "p": 0.2,
+   "x": 0
+  },
+  "e0622c94": {
+   "design": "EN-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "9fa5dc96": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "e2954cd0": {
+   "design": "FR-SYLL",
+   "p": 0.15,
+   "x": 0
+  },
+  "428c1434": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "7a2416ce": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "5c75641e": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "41555228": {
+   "design": "PT-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "611fabad": {
+   "design": "PT-HOMO",
+   "p": 0.2,
+   "x": 0
+  },
+  "65f2055c": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "d3be451f": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "33c4954d": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "43a122df": {
+   "design": "FR-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "ae6a4813": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "a30d8bf2": {
+   "design": "EN-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "b33ae2d0": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "05565758": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "97aeaff5": {
+   "design": "PT-HOMO",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "086e1f6a": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "348b842f": {
+   "design": "PT-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "0ff2580d": {
+   "design": "PT-HOMO",
+   "p": 0.1,
+   "x": 0
+  },
+  "24f17fb0": {
+   "design": "EN-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "d042cb5e": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "0d0e8c09": {
+   "design": "EN-HOMO",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "d0520068": {
+   "design": "FR-HOMO",
+   "p": 0.15,
+   "x": 0.13
+  },
+  "e0db86ae": {
+   "design": "FR-SYLL",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "c669acef": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "147c50bc": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0.13
+  },
+  "4ef28719": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "d7e88eeb": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "502e16eb": {
+   "design": "FR-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "3242df9a": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "9bf63373": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0
+  },
+  "52667bb8": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0
+  },
+  "85bb93bd": {
+   "design": "EN-HOMO",
+   "p": 0.15,
+   "x": 0
+  },
+  "3e2fcbd9": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "b135a241": {
+   "design": "NULL-IID",
+   "p": 0.2,
+   "x": 0.13
+  },
+  "827dee30": {
+   "design": "NULL-IID",
+   "p": 0.1,
+   "x": 0
+  },
+  "8294da50": {
+   "design": "FR-HOMO",
+   "p": 0.2,
+   "x": 0
+  },
+  "76d0d076": {
+   "design": "NULL-IID",
+   "p": 0.15,
+   "x": 0.13
+  }
+ }
+}

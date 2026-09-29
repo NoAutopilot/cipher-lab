@@ -12,11 +12,11 @@ iid writing keeps none.
 
 | time (UTC) | method | parameters | control result | real-text result | why it failed / what it says |
 |---|---|---|---|---|---|
-| 03:30 | order battery, first probe (`power_probe.py`) | c2 shape, 15 pct type noise, 8 per design | FR/EN/PT-HOMO: mi1 z +0.6..+2.4, bigram types>=2 z +1.4..+2.2, doubled z -2.2..-2.7; FR-SYLL mi1 +5.0, rep3 +19; NULL-IID all near 0 | c2: mi1 -1.03, mi2 -2.6, bg2 +1.31, rep3 +0.14, dbl -0.24 | c2 looks like the iid null on every statistic; a single statistic is weak for letter-homophonic designs, hence a summed score |
-| 03:40 | test P, periodicity scan (`period.py`, `period.json`) | MI(sign, index mod p), p 2-16, whole-text shuffles; power: FR under 3/5/7 disjoint alphabets, c2 shape, 15 pct noise | POLY-3/5/7 text-order z median 55-56 (min 47.6); NULL-IID median 1.7 (max 2.6) | c2 best z 0.70 (p 15); c1 best z 3.06 (p 2, N 125, no power at that N) | periodic polyalphabetic with separate alphabets excluded for c2; alphabets that share one sign set are NOT tested |
-| 03:50 | calibration (`calibrate.py`, `calib_*.jsonl`) | pairs (c1+c2 shapes, one key per pair), 8 designs x 40, noise 0.05/0.15/0.25, X-like null 0/0.13 | see summarize.py output; c2 score p5 of the four brief language designs at noise 0.15: +1.8..+9.5 (x 0), -0.5..+1.9 (x 0.13) | c2 score 0.66, pair 0.96, c1 0.96 | c2 below all but 0-15 pct of language controls at measured noise, at the NULL-IID median |
+| 03:1x | order battery, first probe (`power_probe.py`) | c2 shape, 15 pct type noise, 8 per design | FR/EN/PT-HOMO: mi1 z +0.6..+2.4, bigram types>=2 z +1.4..+2.2, doubled z -2.2..-2.7; FR-SYLL mi1 +5.0, rep3 +19; NULL-IID all near 0 | c2: mi1 -1.03, mi2 -2.6, bg2 +1.31, rep3 +0.14, dbl -0.24 | c2 looks like the iid null on every statistic; a single statistic is weak for letter-homophonic designs, hence a summed score |
+| 03:1x | test P, periodicity scan (`period.py`, `period.json`) | MI(sign, index mod p), p 2-16, whole-text shuffles; power: FR under 3/5/7 disjoint alphabets, c2 shape, 15 pct noise | POLY-3/5/7 text-order z median 55-56 (min 47.6); NULL-IID median 1.7 (max 2.6) | c2 best z 0.70 (p 15); c1 best z 3.06 (p 2, N 125, no power at that N) | periodic polyalphabetic with separate alphabets excluded for c2; alphabets that share one sign set are NOT tested |
+| 03:1x | calibration (`calibrate.py`, `calib_*.jsonl`) | pairs (c1+c2 shapes, one key per pair), 8 designs x 40, noise 0.05/0.15/0.25, X-like null 0/0.13 | see summarize.py output; c2 score p5 of the four brief language designs at noise 0.15: +1.8..+9.5 (x 0), -0.5..+1.9 (x 0.13) | c2 score 0.66, pair 0.96, c1 0.96 | c2 below all but 0-15 pct of language controls at measured noise, at the NULL-IID median |
 
-## Pre-registration of the blind control (written 03:5x UTC, before the blind set exists)
+## Pre-registration of the blind control (written 03:15 UTC, before the blind set exists)
 
 Frozen score (`dcore.score`): per text S = z(mi1) + z(bigram types seen twice or more) + z(repeated 3-grams) -
 z(doubled adjacent signs); pair score = S(c1) + S(c2) + z(transfer c2->c1) + z(transfer c1->c2) (a bigram model
@@ -27,3 +27,5 @@ four language designs, noise drawn from {0.10, 0.15, 0.20}, X-like null share fr
 written only to a sealed file outside the classifier's reach until every call is made. Bar for group D's Phase 1:
 balanced accuracy >= 0.80 on the pair score and on c2 alone (the brief's "NULL told apart from the four language
 controls, blind"). c1 alone is expected to fail (N 125) and is reported, not gated.
+| 03:1x | own blind control (`blind.py`, `blind_result.json`; labels sealed in the session scratchpad until the calls were written) | 100 pairs, 50 NULL-IID / 50 of FR-HOMO, EN-HOMO, PT-HOMO, FR-SYLL, noise 0.10-0.20, X-like null 0 or 0.13 | pair score bal. acc 0.90 (language recall 0.88, null 0.92); c2 alone 0.90 (0.86 / 0.94); c1 alone 0.61 (no power at N 125, as pre-registered) | c1/c2 pair score 0.96 < 4.3 -> NULL; c2 0.66 < 3.5 -> NULL | bar (>= 0.80 on pair and c2) met on own controls |
+| 03:2x | harness blind set B1-B5 (`harness_blind.py blind`, frozen pair threshold 4.3, 400 shuffles, reads only controls/B*.tsv) | score.py FROZEN ed4a3743 | pair scores B1 9.85, B2 0.84, B3 10.44, B4 13.66, B5 56.05 -> verdict committed in BLIND_VERDICT.tsv before --blind-check | -- | -- |
