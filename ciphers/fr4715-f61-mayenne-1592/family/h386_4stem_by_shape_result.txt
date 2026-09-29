@@ -1,0 +1,5 @@
+v7 4STEM cell: pooled a/c/e/n, f.61 reading a/n
+f.101r H207 4TRI: bowl&c/p 7 bowl&a/n 3 no&c/p 2 no&a/n 7; agreement 0.74 (n 19)
+f.101r H207 4STEM: bowl&c/p 4 bowl&a/n 2 no&c/p 3 no&a/n 8; agreement 0.71 (n 17)
+f.108v H199 4STEM (no letters): bowl 19, no 2, n 4
+f.106r H368 4STEM (no letters): n 4 no 31 yes 24

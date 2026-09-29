@@ -5667,7 +5667,7 @@ One blind Opus call; reply `family/passes/h385_reply.tsv`; result `family/h385_1
 What it means: in the secretary's hand the C43 code is always the no-bowl sign (54 of 54 answered, H368 + H385), so the two-sign problem on f.106r
 sits entirely inside 4TRI and 4STEM (H368). For VERIFY-F61-V11; nothing applied. 1 call, cost estimate 1.5 USD.
 
-### Correction to H384 (29 Sept 2026, 18:07 UTC by date -u, runner 14)
+### Correction to H384 (29 Sept 2026, 18:06 UTC by date -u, runner 14)
 
 H384's first version compared the shape rule with key v7's POOLED cells only. Key v7 also carries an f.61 reading key (`load_key_v7(f61=True)`, with
 F61TOK for the 4-over-Pi): 4TRI c/p, 4STEM a/n, L11/9 4PIPI a/n (grade M from Tomokiyo's S5), L01/12 unread. Rerun with that column added
@@ -5675,3 +5675,12 @@ F61TOK for the 4-over-Pi): 4TRI c/p, 4STEM a/n, L11/9 4PIPI a/n (grade M from To
 only L01/12 (held unread) would take a/n.** The two other "beyond scope" flags (L11/8 4STEM, L11/9 4PI) are already a/n in the f.61 reading key, and
 the sentence above that L11/9 is "a disagreement between v7 and the published letter" is **withdrawn**: v7's f.61 reading key already reads it n's
 cell a/n from Tomokiyo's S5 (build_key_v7.py point 3). The ROOM line of 18:03 carried the same error and is corrected there.
+
+## Campaign step H386 (29 Sept 2026, 18:06-18:08 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- 4STEM by shape: on f.101r it splits like 4TRI, at small n (script-only)
+
+`family/h386_4stem_by_shape.py` -> `family/h386_4stem_by_shape_result.txt` (`--check` OK). v7's 4STEM cell is a/c/e/n pooled, a/n in the f.61 reading key.
+On f.101r (H207, the only 4STEM answers with letters): **4STEM bowl&c/p 4, bowl&a/n 2, no&c/p 3, no&a/n 8 -> agreement 0.71 (n 17)**, beside 4TRI
+in the same call 0.74 (n 19) -- the same direction at the same strength, both too small alone. f.108v's 4STEM is mostly the bowl sign (19/2, H199);
+f.106r's is mixed (24/31, H368); neither has letters. Pointer for V11: if the verifier adopts the 4TRI split by shape, 4STEM looks like the same two
+signs under another code (the pooled a/c/e/n cell reads as a c/p half plus an a/n half), so a shape rule written for the sign rather than for the code
+would cover both. H387 (f.101r's full 4STEM bowl read against the period gloss) is the test. Nothing applied. Script-only.
