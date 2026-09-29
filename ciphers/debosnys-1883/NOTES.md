@@ -1330,3 +1330,15 @@ is too strict there, but it was the registered bar, so this is a non-test by its
 R34 stays "open, fragile" (DIGEST-2) -- neither confirmed nor killed. A rerun needs a pre-registered tolerance (the
 planted height or any height giving the same column count) decided before looking, then the 200-scan null. Nothing
 read; status `open`.
+
+### H64, H62 with a column-count tolerance (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU)
+
+Pre-registered in `h64/PREREG.md` (pushed b02dbb00 before the rerun); `scripts/h62_r34_rule.py --tolerant` ->
+`h64/result.json`, same seeds. With a planted height counted as found when the pick has the same column count:
+rule+folds TRANS-7 10, TRANS-19 11, **TRANS-33 9** of 12; rule TRANS-7 **9**, TRANS-19 **9**, TRANS-33 10. Each variant
+misses the 10-of-12 bar on one planted height, so the control fails again and the real scan was not run. This is the
+second attempt at the same instrument with one knob changed, still failing its own gate with the numbers not all moving
+toward it (CLAUDE.md rule 3, the "approach is the limit" clause): **R34 is untestable by this scan at the RULE.md box
+set's N (637)** -- logged "untested-by-this-tool", not refuted, and not to be re-briefed on the same scan; a different
+instrument (e.g. a dedicated column-transposition solver with its own known-answer control) or more text would be
+needed. Nothing read; status `open`.

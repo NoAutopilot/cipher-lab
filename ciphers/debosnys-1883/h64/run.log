@@ -1,0 +1,6 @@
+rule+folds control {'TRANS-7': 10, 'TRANS-19': 11, 'TRANS-33': 9} False
+rule control {'TRANS-7': 9, 'TRANS-19': 9, 'TRANS-33': 10} False
+
+real	6m54.772s
+user	6m47.653s
+sys	0m0.087s
