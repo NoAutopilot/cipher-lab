@@ -1,0 +1,235 @@
+line	pos	sign	conf	segment	x_px	note
+L07	1	PHI	m	s1	150	chain of three loops on a bar with stroke descending left; alt LOOPS
+L07	2	H24	h	s1	430	
+L07	3	VBAR_A	h	s1	680	
+L07	4	OTHER	m	s1	930	closed square box with top bar; alt VBAR_A
+L07	5	PHI	m	s1	1150	two loops on stem, hairline from upper left
+L07	6	PHI	h	s1	1430	overlap zone
+L07	7	EBR_A	m	s2	290	alt EBR_B
+L07	8	VBAR_A	l	s2	570	small; alt RSIGN
+L07	9	PHI	h	s2	790	
+L07	10	HASH4	m	s2	1050	crossed loops; alt PHI
+L07	11	CROSS	m	s2	1280	dark cross with small loop; alt LOOPSTEM1
+L07	12	PHI	h	s2	1500	overlap zone
+L07	13	4STEM	h	s3	390	
+L07	14	PHI	h	s3	630	
+L07	15	PHI	h	s3	850	
+L07	16	RSIGN	m	s3	1080	alt VBAR_A
+L07	17	4TRI	m	s3	1290	4 over loop/triangle cluster; alt HASH4
+L07	18	H24	m	s3	1530	overlap zone, fully visible at s4 x~150
+L07	19	C43	h	s4	450	
+L07	20	PHI	h	s4	700	
+L07	21	H24	h	s4	990	
+L07	22	PHI	h	s4	1250	
+L07	23	HASH4	m	s4	1480	overlap zone
+L07	24	PHI	h	s5	390	
+L07	25	HASH4	h	s5	660	
+L07	26	EBR_A	m	s5	900	with stem below
+L07	27	C43	m	s5	1120	alt 4TRI
+L07	28	EBR_A	l	s5	1400	thick; alt ZBAR
+L07	29	EBR_A	m	s6	230	
+L07	30	PHI	h	s6	480	
+L07	31	HASH4	h	s6	740	
+L07	32	DBL	m	s6	950	figure-8 on stem; alt PHI
+L07	33	PHI	h	s6	1200	
+L07	34	4TRI	m	s6	1420	overlap zone; alt C43
+L07	35	VBAR_A	h	s7	260	
+L07	36	PHI	h	s7	470	
+L07	37	EBR_A	h	s7	700	long tapering foot
+L08	1	4STEM	h	s1	60	
+L08	2	PHI	m	s1	300	alt BETA
+L08	3	H24	h	s1	570	
+L08	4	VBAR_A	m	s1	810	alt RSIGN
+L08	5	C43	h	s1	1040	
+L08	6	HASH4	m	s1	1300	
+L08	7	OTHER	l	s1	1520	long S-like stroke descending through row; possibly clear-word flourish, not a sign
+L08	8	PHI	h	s2	400	
+L08	9	H24	h	s2	660	
+L08	10	C43	h	s2	920	
+L08	11	EBR_A	m	s2	1150	foot bar runs into a dash; alt EBR_B
+L08	12	CROSS	l	s2	1300	thin stem crossing the dash with dots
+L08	13	EBR_A	m	s2	1420	overlap zone
+L08	14	HASH4	m	s3	320	alt PHI
+L08	15	PHI	h	s3	550	
+L08	16	4STEM	m	s3	790	alt 4TRI
+L08	17	HASH4	h	s3	1050	
+L08	18	4TRI	m	s3	1280	alt C43
+L08	19	EBR_B	m	s3	1530	overlap zone, seen at s4 x~180
+L08	20	4PI	m	s4	420	alt H24
+L08	21	HASH4	h	s4	700	
+L08	22	PHI	h	s4	930	
+L08	23	EBR_A	m	s4	1160	alt EBR_B
+L08	24	PHI	m	s4	1390	overlap zone; alt HASH4
+L08	25	4STEM	l	s5	210	alt C43
+L08	26	PHI	h	s5	460	
+L08	27	VBAR_A	h	s5	680	
+L08	28	4STEM	m	s5	860	long crossbar; alt CROSS
+L08	29	EBR_A	l	s5	1170	alt EBR_B; dot below
+L08	30	PHI	h	s5	1370	
+L08	31	C43	h	s6	220	
+L08	32	PHI	h	s6	470	
+L08	33	EBR_A	m	s6	700	alt EBR_B
+L08	34	HASH4	l	s6	920	alt DBL
+L08	35	4STEM	h	s6	1150	
+L08	36	PHI	h	s6	1380	
+L08	37	PHI	l	s7	220	row dips below band bottom in s7 (cut); sign read from top of L09_s7; clear word above it at y~200 not transcribed
+L08	38	EBR_A	l	s7	420	row dipped; read from L09_s7 top
+L08	39	PHI	l	s7	590	row dipped; read from L09_s7 top
+L08	40	C43	l	s7	760	row dipped; read from L09_s7 top
+L09	1	VBAR_A	h	s1	90	
+L09	2	PHI	h	s1	330	
+L09	3	4STEM	m	s1	610	extra bar; alt 4TRI
+L09	4	PHI	h	s1	860	
+L09	5	C43	h	s1	1100	
+L09	6	4PI	m	s1	1420	overlap zone; alt HASH4
+L09	7	C43	h	s2	290	
+L09	8	C43	h	s2	560	
+L09	9	VBAR_A	h	s2	790	tall plain stroke at x~900 ignored as descender
+L09	10	EBR_A	m	s2	1030	with loops/tail
+L09	11	PHI	h	s2	1220	
+L09	12	EBR_A	m	s2	1460	overlap zone
+L09	13	PHI	m	s3	330	small
+L09	14	H24	h	s3	610	
+L09	15	PHI	h	s3	860	
+L09	16	HASH4	h	s3	1130	
+L09	17	PHI	h	s3	1340	
+L09	18	4STEM	l	s3	1520	overlap zone, seen at s4 x~180; alt C43; tall strokes beside it ignored
+L09	19	PHI	h	s4	410	
+L09	20	C43	h	s4	690	
+L09	21	VBAR_A	h	s4	960	
+L09	22	PHI	h	s4	1180	
+L09	23	C43	h	s4	1420	overlap zone
+L09	24	H24	m	s5	320	
+L09	25	C43	h	s5	560	
+L09	26	4STEM	m	s5	780	alt 4TRI
+L09	27	VBAR_A	l	s5	1030	with stem; alt LOOPSTEM1
+L09	28	HASH4	m	s5	1220	alt 4STEM
+L09	29	EBR_B	l	s5	1450	overlap zone; alt EBR_A
+L09	30	PLAIN	l	s6	720	clear word at row height, reads like 'mogr' (abbrev?); may be decipherment over a dipped row
+L09	31	PLAIN	l	s6	1150	clear word 'a' at row height; bottom-cut marks below not transcribed
+L09	32	C43	l	s7	130	row dips below band bottom in s7; read from L10_s7 top; clear word above it not transcribed
+L09	33	HASH4	l	s7	400	row dipped; read from L10_s7 top
+L09	34	PHI	l	s7	590	row dipped; read from L10_s7 top
+L09	35	DASH	l	s7	800	row dipped; read from L10_s7 top
+L10	1	C43	h	s1	70	
+L10	2	HASH4	h	s1	370	
+L10	3	EBR_A	m	s1	650	squared with tapering foot; alt VBAR_A
+L10	4	C43	l	s1	860	dark cluster with dots, clear-word stroke curls into it; alt OTHER
+L10	5	H24	h	s1	1150	
+L10	6	PHI	m	s1	1420	overlap zone
+L10	7	PHI	h	s2	270	
+L10	8	OTHER	l	s2	430	plain vertical stroke beside next phi, maybe a descender
+L10	9	PHI	h	s2	510	
+L10	10	VBAR_A	h	s2	760	
+L10	11	HASH4	h	s2	1040	
+L10	12	PHI	h	s2	1300	
+L10	13	HASH4	m	s2	1530	overlap zone
+L10	14	EBR_A	m	s3	480	alt VBAR_A
+L10	15	C43	m	s3	760	alt 4TRI
+L10	16	ZHOOK	l	s3	1010	Z stroke over E-like body; alt EBR_A
+L10	17	VBAR_A	h	s3	1260	
+L10	18	PHI	h	s3	1470	overlap zone
+L10	19	HASH4	h	s4	380	
+L10	20	EBR_A	h	s4	630	
+L10	21	H24	h	s4	890	
+L10	22	PHI	m	s4	1150	loop chain with dots
+L10	23	HASH4	m	s4	1430	overlap zone; alt 4PI
+L10	24	PHI	h	s5	290	
+L10	25	EBR_A	h	s5	520	
+L10	26	4STEM	l	s5	700	4 with tall stem
+L10	27	LOOPS	m	s5	870	small loops, no stem
+L10	28	HASH4	m	s5	1100	large
+L10	29	HASH4	m	s5	1360	
+L10	30	PHI	h	s6	230	
+L10	31	PHI	h	s6	480	
+L10	32	VBAR_A	h	s6	710	
+L10	33	OTHER	l	s6	900	square bracket top bar over closed loop/triangle; alt EBR_B
+L10	34	OTHER	l	s6	1020	long slanted plain stroke
+L10	35	HASH4	m	s6	1140	alt 4STEM
+L10	36	PHI	h	s6	1370	
+L10	37	C43	l	s7	190	row dips below band bottom in s7; read from L11_s7 top; alt 4STEM
+L10	38	PHI	l	s7	330	row dipped; read from L11_s7 top
+L10	39	PHI	l	s7	510	row dipped; loop only visible; alt LOOPSTEM1
+L10	40	DASH	l	s7	770	row dipped; read from L11_s7 top
+L11	1	H24	h	s1	120	
+L11	2	C43	h	s1	370	
+L11	3	EBR_B	l	s1	560	F-like, bars on long stem; alt OTHER
+L11	4	PHI	h	s1	870	
+L11	5	EBR_A	m	s1	1120	diagonal leg, tail to blob; alt OTHER
+L11	6	VBAR_A	m	s1	1320	
+L11	7	H24	h	s2	220	
+L11	8	BETA	m	s2	480	alt C43
+L11	9	PHI	h	s2	700	
+L11	10	HASH4	h	s2	960	
+L11	11	PHI	h	s2	1230	
+L11	12	HASH4	h	s2	1480	overlap zone
+L11	13	EBR_A	h	s3	350	
+L11	14	4PI	m	s3	630	alt 4STEM
+L11	15	PHI	h	s3	860	
+L11	16	HASH4	h	s3	1110	
+L11	17	PHI	h	s3	1390	
+L11	18	H24	h	s4	300	
+L11	19	PHI	h	s4	590	
+L11	20	PHI	h	s4	860	
+L11	21	VBAR_A	l	s4	1080	with curling tail; alt EBR_A
+L11	22	VBAR_A	h	s4	1320	
+L11	23	PHI	m	s4	1510	overlap zone
+L11	24	PHI	h	s5	430	long stem through clear-word stroke
+L11	25	LOOPS	l	s5	760	small loops before C43, may be part of it
+L11	26	C43	h	s5	880	
+L11	27	C43	h	s5	1090	
+L11	28	CROSS	l	s5	1270	small cross stroke
+L11	29	HASH4	m	s5	1420	overlap zone
+L11	30	PHI	h	s6	280	
+L11	31	HASH4	m	s6	370	crossed loops touching preceding phi
+L11	32	EBR_A	m	s6	480	
+L11	33	HASH4	m	s6	680	
+L11	34	PHI	h	s6	920	
+L11	35	ISH	m	s6	1140	
+L11	36	PHI	h	s6	1330	
+L11	37	OTHER	l	s6	1540	dark vertical stroke at segment edge, overlap zone
+L11	38	VBAR_A	h	s7	180	
+L11	39	PHI	h	s7	370	
+L11	40	C43	m	s7	560	alt 4STEM
+L11	41	DASH	h	s7	800	
+L12	1	HASH4	l	s1	60	alt PHI
+L12	2	PHI	h	s1	280	
+L12	3	C43	h	s1	520	
+L12	4	EBR_B	m	s1	760	small; alt CA
+L12	5	HASH4	m	s1	1010	
+L12	6	PHI	m	s1	1270	loop chain with stem
+L12	7	EBR_A	m	s1	1470	overlap zone
+L12	8	C43	m	s2	340	long slanted stroke passes through
+L12	9	EBR_B	m	s2	600	alt EBR_A
+L12	10	EBR_B	m	s2	810	squared block; alt OTHER
+L12	11	C43	m	s2	1030	
+L12	12	H24	l	s2	1330	alt HASH4
+L12	13	PHI	m	s2	1540	overlap zone; alt HASH4
+L12	14	PHI	h	s3	400	
+L12	15	EBR_A	l	s3	620	two diagonal strokes on top; alt OTHER
+L12	16	OTHER	l	s3	760	long thin slanted stroke
+L12	17	C43	m	s3	900	alt 4TRI
+L12	18	VBAR_A	m	s3	1160	hairline tail to upper left; alt EBR_A
+L12	19	EBR_A	h	s3	1410	overlap zone
+L12	20	H24	h	s4	270	
+L12	21	C43	h	s4	540	
+L12	22	OTHER	l	s4	790	crossed X strokes with two loops at the foot; alt ZHOOK
+L12	23	HASH4	h	s4	1010	
+L12	24	PHI	m	s4	1250	alt LOOPS
+L12	25	HASH4	m	s4	1470	overlap zone
+L12	26	EBR_A	m	s5	350	alt VBAR_A
+L12	27	PHI	h	s5	650	
+L12	28	HASH4	m	s5	880	large dense cluster
+L12	29	4STEM	m	s5	1150	alt HASH4
+L12	30	PHI	h	s5	1360	
+L12	31	HASH4	m	s6	230	alt 4PI
+L12	32	EBR_A	m	s6	440	
+L12	33	EBR_B	m	s6	560	joined to previous; alt EBR_A
+L12	34	VBAR_A	m	s6	690	tail to lower right; alt OTHER
+L12	35	H24	h	s6	900	
+L12	36	PHI	h	s6	1130	
+L12	37	BETA	m	s6	1330	alt C43
+L12	38	HASH4	m	s6	1540	overlap zone, seen at s7 x~160
+L12	39	PHI	m	s7	430	alt LOOPS
+L12	40	C43	h	s7	620	
+L12	41	DASH	h	s7	820	

@@ -5124,3 +5124,24 @@ What it means: on f.124r the v7 cells that look right are PHI (e/r) and C43 (a/n
 cells would, which is either a direction-of-correspondence difference (f.124r is de Diou to Mayenne; v7's VBAR_A g/t is endorsed from f.176r and
 f.108r) or the gloss passes' misreads -- rule 4 says a conflict like this is recorded by witness, not settled by the frequent value (added to
 HYPOTHESES.md as a note, below). The held-leaf evidence is therefore thin: a lead for the verifier, not a confirmation of v7 as a set. No call.
+
+## Campaign step H332 (29 Sept 2026, 15:03-15:16 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r rows 7-12: the model gloss readers fail this hand a second time; pooled rows 1-12 still untestable
+
+f.106r native refetched once (btv1b9059406b f191, sha1 unchanged, requests.log). Rows 7-18 (the rest of the cipher block; row 18 is cipher only at
+the left, then clear text) cut with `family/cut_bands.py` into `family/sheets/f106r_b/` (same geometry as sheets/f106r: 520 px segments, 60 overlap,
+up 78 / down 42, x3; hand-set centres from an eye-marked strip, `--local 18 --slope -0.028`; boxes in `family/sheets/f106r_b_bands.json`, one sample
+crop committed, the rest regenerable and git-ignored). Prompts `family/passes/prompts_h332/` (the F61-FAMILY-3 f.106r prompts re-targeted to L07-L12,
+text otherwise unchanged, `family/gen_prompts_h332.py`) and the count script `family/h332_106r_more.py` committed before the calls returned. Four blind
+Opus calls (two sign, two gloss; `family/passes/f106r_{signs,gloss}{A,B}_c2.tsv`). Result `family/h332_106r_more_result.txt` (`--check` OK):
+- **Sign passes rows 7-12: 182/239 = 0.762** (rows 1-6 were 0.850); A 220 / B 234 signs. Both sign readers report the cut's fault at the right end:
+  on L08-L10 the row leaves the band in s6-s7 (A skipped those signs, B read them from the next band's s7 at conf l) -- `--slope -0.028` under-follows
+  the right end there. Named, not repaired in this step.
+- **Gloss passes rows 7-12: 13 identical words of A 55 / B 48 = 0.252** (rows 1-6: 0.339); nearly every word graded l by both readers. HELD.
+- **Pooled rows 1-12, H329's count and controls unchanged:** 29 agreed words, 88 letters, **27 signs under them** (9 keyed classes); real 11;
+  shuffled cells p95 13 (300/1000 >= real); binned p95 12 (201/1000); frequency key 14 -> **"no signal beyond frequency"**, and under the pre-stated
+  40-sign floor -> **untestable at this N, not a negative** on key v7 in the secretary's hand.
+What it means: this is the second attempt at f.106r's gloss with the same instrument (blind Opus gloss passes), and agreement fell (0.339 -> 0.252);
+with f.108r (H34, shared-wrong agreement) and f.124r (0.42) it is the fourth unit of the secretary's gloss the model readers fail. By rule 3's
+"approach is the limit" clause this is logged **untested-by-this-tool** (HYPOTHESES.md), and rows 13-18 are not sent to the same passes. The one
+instrument left for this gloss is a person's read (ASKS 99's f.106r desk pack, ASKS 88 for f.108r). Cost estimate 5.5 USD (four Opus image calls,
+42 images each). No reading, no merge, no class change.
