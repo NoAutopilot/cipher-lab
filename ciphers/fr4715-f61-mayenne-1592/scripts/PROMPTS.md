@@ -554,3 +554,8 @@ Do not use any other tools. Answer inline, one line per tile, exactly in the for
 Sheets: <scratch>/h226/sheet_01.jpg, sheet_02.jpg (family/h226_hash4_strays.py tiles; key family/h226_items.tsv; natives as H220/H224). The runner did
 not look at these sheets before the call (geometry unchanged from H222/H224). Prompt: H224's verbatim, with the tile range 'Z01-Z34' in place of
 'Y01-Y33' and the answer form 'Z01<TAB>A', Z01 to Z34.
+
+## H227 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- every remaining f.101r HASH4 position by shape, WRITTEN BEFORE THE CALL
+
+Sheets: <scratch>/h227/sheet_01..03.jpg (family/h227_loop_101r_all.py tiles; key family/h227_items.tsv). The runner did not look at the sheets. Prompt:
+H224's verbatim, with 'three sheets', the tile range 'X01-X42' and the answer form 'X01<TAB>A', X01 to X42.
