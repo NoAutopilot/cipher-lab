@@ -5419,3 +5419,18 @@ two signs across hands (f.101r, f.124r; H218/H231 found the same on f.176r and f
 period letters on a second hand), and the a/n rows in v7's own 4TRI tally (a 9, n 10 on f.101r) are those no-bowl tokens. For the verifier: this bears
 on v7's 4TRI cell as built (it pools two signs' letters, then keeps c/p/t by the top-two rule) and on every 4TRI count in the family. No cell changed
 here: re-splitting the pooled key by shape is a key-build step with its own gates (H365, H366). Cost: 1 call, estimate 1.0 USD.
+
+## Campaign step H365 (29 Sept 2026, 16:59-17:04 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.101r in full: the no-bowl "4TRI" is the a/n sign by f.101r's own period gloss (118 of 130), and the split raises the order gain in-sample too (4 vision calls)
+
+`family/h365_101r_4tri_split.py` (H360's code with the leaf swapped, plus H364's cross-tab at full N), key `family/h365_items.tsv`, prompt note H365,
+committed before the calls; the runner did not look at the sheets. Four blind Opus calls (191 tokens), replies `family/passes/h365_reply_c1..c4.tsv`,
+result `family/h365_101r_4tri_split_result.txt`:
+- **Gates 19, 18, 17, 18 of 20 -- all PASS.** With H362: **241 answered 4TRI: no bowl 155, bowl 67, n 19.**
+- **Period letter (f.101r's own alignment) by bowl answer: no bowl -> a/n 118, c/p/t 12, other 20, none 5; bowl -> c/p/t 33, a/n 19, other 15;
+  bowl-letter agreement 151/182 = 0.83** (H364's bar 0.75 -> the bowl tracks the letter).
+- **Order gain (v7, in-sample): as transcribed 0.080/0.079/0.087 -> split 0.097/0.099/0.108; shuffled targets 0/3 -> "the split raises the order gain".**
+What it means: on the leaf whose period gloss built v7's 4TRI cell, the readers' 4TRI code is about two thirds the no-bowl sign, and the period
+decipherment reads that sign a or n in 118 of the 130 cases with an a/n or c/p/t letter -- the no-bowl "4TRI" behaves as the a/n sign (C43's cell), by the
+period key itself (grade C per pair), not only by our statistics. The bowl sign leans c/p/t (33 v 19): cleaner, not clean. So v7's 4TRI cell was built
+from a tally that mixes two signs. **For the verifier, and for the key: H366 writes the split tally as a proposal (rule 4, witnesses named); nothing is
+loaded into a key here.** Four calls, cost estimate 4.0 USD.

@@ -1,0 +1,10 @@
+c1: control 19/20 PASS; answers n 6 no 27 yes 15
+c2: control 18/20 PASS; answers n 1 no 34 yes 13
+c3: control 17/20 PASS; answers n 3 no 31 yes 14
+c4: control 18/20 PASS; answers n 6 no 27 yes 14
+4TRI answers used (H362 + passing chunks): 241; n 19 no 155 yes 67
+split draft: 155 4TRI tokens relabelled C43
+period letter by bowl (all answered 4TRI): n:a/n 9 n:c/p/t 3 n:none 4 n:other 3 no:a/n 118 no:c/p/t 12 no:none 5 no:other 20 yes:a/n 19 yes:c/p/t 33 yes:other 15
+bowl-letter agreement over 4TRI 151/182 = 0.83 (H364's bar 0.75 tracks, < 0.6 does not)
+order gain v7: as transcribed 0.0804/0.0793/0.0873; split 0.0970/0.0994/0.1084; H344 on split: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0002/0.0275 0.0004/0.0086 -0.0038/0.0157)
+read-out: the split raises the order gain
