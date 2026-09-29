@@ -3926,7 +3926,7 @@ support mixes c/p and a/n on f.101r (a/n 25, c/p 16), which fits the same swap. 
 bowl sign. Next: H201 (script-only sequence gain with the 4-family relabelled by bowl), H202 (the bowl at f.108r's period-glossed positions),
 H203 (which v5 4-family cells mix the two signs). No class change, nothing merged.
 
-## Campaign step H201 (29 Sept 2026, 02:21-02:23 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- f.108v relabelled by the bowl: sequence gain CONFIRMED, rank 1 of 201 (script-only)
+## Campaign step H201 (29 Sept 2026, 02:19-02:21 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- f.108v relabelled by the bowl: sequence gain CONFIRMED, rank 1 of 201 (script-only)
 
 `scripts/f61bowl_108v_seq.py` (committed 447367af before the run; result `scripts/f61bowl_108v_seq_result.txt`, `--check` fresh). The H59 f.108v
 draft with every 4-family column relabelled by H199's blind bowl answer (yes -> c/p, no -> a/n; 68 columns answered, 19 yes), other cells the 14-cell

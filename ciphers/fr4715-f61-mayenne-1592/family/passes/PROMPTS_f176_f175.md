@@ -209,3 +209,15 @@ TSV block 'id<TAB>answer', rows Q01..Q60 then R01..R74, nothing else."
 GATE: repeat control >= 17 of the 20 f.176v anchors in their group's direction (CP yes, AN no), else CONTROL FAIL and targets not scored. Read-out:
 bowl answers by reconciled / A / B code; "the readers' split follows the bowl on f.108v" iff reconciled 4TRI yes share >= 0.8 and C43 no share
 >= 0.8 (n left out). Descriptive, for the verifier; no key change.
+
+## H202 (runner 8 session_011Taenrv3JSdk7VjpiBjids, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H193's bowl question at fr.3983 f.108r's 4-family positions carrying a period-gloss letter (Tomokiyo's overlay reprint; 20 targets: C43 a 4 / n 4,
+4STEM a 3, 4TRI c 2 / p 2, 4PI p 1 / d 4). Script `h202_bowl_108r.py`, key `h202_items.tsv`, committed with this section. Strips cut from
+images/f108sheetB_L02/L03.jpg bands (descenders kept); marker UNDER the sign as in H193. Disclosure: the runner looked at images/f108sheetB_L02.jpg
+for band geometry and at the target sheet for legibility (single-sign views; one or two markers sit off a 4-sign, e.g. S09).
+1 Opus vision call, inline reply: "You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file.
+Each item on <h193/sheet_01..03.jpg> (Q01-Q60) and <h202/sheet_01.jpg> (S01-S20) is a strip of a cipher row with a red triangle UNDER one sign;
+look only at the sign directly above that triangle. Question: does that sign's vertical stem run down below the writing line and end in a closed
+loop or bowl (like the bottom of a 'b')? Answer yes or no; if the sign above the triangle cannot be told, answer n. No letters are involved. Reply
+inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then S01..S20, nothing else."
+GATE: repeat control >= 17/20, else CONTROL FAIL. Read-out as in the script's docstring.
