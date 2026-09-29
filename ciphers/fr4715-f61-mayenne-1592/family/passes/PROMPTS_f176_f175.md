@@ -319,3 +319,7 @@ H359's prompt verbatim, two calls (part 2 = SCRATCH/h368_c1/sheet_01..03.jpg R01
 H359's prompt verbatim with part 2 = SCRATCH/h370/sheet_01..04.jpg (R01-R70), fr.3982 f.97r recut rows L17-L43, 50 agreed 4TRI + 20 C43 (pools 127 / 39),
 native canvas 202 (sha1 87d4236c as MANIFEST.tsv); script `h370_bowl_97r.py`, key `h370_items.tsv`; H193's strips as in H367. The runner did not look
 at the H370 sheets.
+
+## H371 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+H359's prompt verbatim, two calls (part 2 = SCRATCH/h371_c1/sheet_01..02.jpg R01-R39, SCRATCH/h371_c2/sheet_01..02.jpg R01-R38), the other 77 agreed 4TRI
+of f.97r L17-L43; script `h371_97r_4tri_split.py`, key `h371_items.tsv`. The runner did not look at the H371 sheets.

@@ -1,0 +1,3 @@
+control: 19 of 20 f.176v anchors in their group's direction (gate >= 17): PASS
+by code: 4TRI n 1 no 29 yes 20; C43 n 1 no 19
+read-out: 4TRI yes-share 0.41 no-share 0.59, C43 no-share 1.00 -> f.97r's 4TRI mixes the no-bowl sign: run H371 (full split + order gain)

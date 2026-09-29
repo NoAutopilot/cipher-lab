@@ -5492,3 +5492,16 @@ about equal parts, while C43 is only ever the no-bowl sign. Taken with H367 (f.6
 4TRI or 4STEM counts mixes two signs unless it is re-split by shape (H218's point, now on six leaves). For VERIFY-F61-V11: the split PROPOSAL_v8_4tri.md
 proposes is a shape split, and the shape answers per leaf are on disk for f.61, f.101r, f.106r, f.108v, f.124r, f.176r/v. No key, cell or grade
 changed. 2 calls, cost estimate 2.0 USD.
+
+## Campaign step H370 (29 Sept 2026, 17:27-17:30 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.97r's 4TRI also mixes the no-bowl sign: 29 of 49 answered (1 vision call)
+
+`family/h370_bowl_97r.py`, key `family/h370_items.tsv`, prompt note H370 in `family/passes/PROMPTS_f176_f175.md` (H359's prompt verbatim), committed
+before the call; the runner did not look at the sheets. fr.3982 f.97r (de Diou, HELD leaf with an order signal for v7) recut rows L17-L43 only (the
+first cut was superseded); pools of agreed tokens with pass A matching: 4TRI 127, C43 39; sample 50 + 20 (seed 370), H359's geometry (the bands have
+f.124r's up 70). Native canvas 202 refetched once (sha1 87d4236c as MANIFEST.tsv; 1 request). One blind Opus call, reply `family/passes/h370_reply.tsv`;
+result `family/h370_bowl_97r_result.txt` (`--check` OK):
+- **Control 19/20 PASS.**
+- **4TRI: no bowl 29, bowl 20, n 1 (no-share 0.59); C43: no bowl 19, n 1 (1.00).** Pre-stated read-out: **"f.97r's 4TRI mixes the no-bowl sign: run
+  H371 (full split + order gain)"**.
+What it means: the readers' 4TRI on de Diou's f.97r is, like f.124r (H360, 0.75) and f.101r (H365, 0.64), more often the no-bowl sign than the bowl
+sign; the leaf's 233-to-44 4TRI/C43 imbalance is the same code conflation. A transcription finding for the f.97r draft; nothing applied. 1 call, 1.5 USD.
