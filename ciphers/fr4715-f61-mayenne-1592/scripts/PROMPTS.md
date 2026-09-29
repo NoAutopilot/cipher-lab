@@ -503,3 +503,18 @@ Design in `scripts/f61judge108v_hash.py`'s docstring. Two calls (seeds 215, 216)
 (f61judge_f108v_hash_s215_sets.txt, _s216_sets.txt). Calibration: this session's H205 control. Note: 4 of the 5 named sets differ from the target
 only at the 14 HASH4 tokens (9 or 5 of them), so the judge's resolution at that scale is itself under test; "no preference shown" is a likely outcome
 and is logged as that, not as a negative for the split.
+
+## H220 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- H212's hash forms on f.101r (period letters) with H212 anchors, WRITTEN BEFORE THE CALL
+
+Sheets: <scratch>/h220/sheet_01.jpg, sheet_02.jpg (family/h220_hash_101r.py tiles; key family/h220_items.tsv). Disclosure: the runner looked at
+sheet_01 once before the call to check that the red triangles fall on a cipher sign (they do); no answers were formed or recorded. The anchor
+tiles (H212's own crops from fr.3983 f.108) are at a larger scale than the f.101r strips; a few carry H212's old thin red tick at the top edge.
+
+Prompt (verbatim):
+"You are looking at two sheets of numbered image tiles (V01-V37) cut from 16th-century French cipher letters. In every tile two red triangles, one
+above and one below, point at one cipher sign in a row of cipher signs (ignore any ordinary handwriting in the tile and any thin red tick). Every
+target sign is built on a hash or cross-hatch (#-like strokes). For each tile, classify ONLY the sign the triangles point at into exactly one of:
+A = a figure-4 stroke (an angled or triangular 4-head) rising above the hash, often with one vertical running down below the line;
+B = two small loops (or small closed rings) sitting on the hash, with only short verticals, no 4-head;
+N = neither of these, not a hash-type sign, or cannot tell.
+Do not use any tools. Answer inline, one line per tile, exactly in the form 'V01<TAB>A' (A, B or N), V01 to V37 in order, and nothing else."
