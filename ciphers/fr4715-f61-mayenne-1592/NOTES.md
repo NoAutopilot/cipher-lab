@@ -5585,3 +5585,18 @@ cell -- regardless of which code the readers wrote (on f.108v they coded the bow
 clearly better than the transcription or any placement of the same answers. This is the shape rule PROPOSAL_v8_4tri.md states, supported now by order
 on a leaf in the target's hand, alongside f.124r and f.101r (H375/H378, 20/20). Caveat carried from the row: f.108v's order signal is thin (H353,
 8 runs); the permuted control is the one this design can fail against, and it did not. For VERIFY-F61-V11; nothing applied. Script-only.
+
+## Campaign step H377 (29 Sept 2026, 17:52-17:54 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- 64 more f.97r 4TRI, with known strips in part 2: the enlarged split clears the random-relabel bar, just (1 vision call)
+
+`family/h377_97r_4tri_more.py`, key `family/h377_items.tsv`, prompt note H377, committed before the call; the runner did not look at the sheets. The
+64 remaining pass-A 4TRI of f.97r L17-L43, plus **H376's fix: 6 known f.61 strips in part-2 format** (positions where H194 and H367 agree; 3 bowl, 3
+no-bowl). One blind Opus call; reply `family/passes/h377_reply.tsv`; result `family/h377_97r_4tri_more_result.txt`:
+- **Gate 1 (H193 anchors) 17/20 (at the bar); gate 2 (known part-2 strips) 6/6 -- PASS.** The part-2 gate works as intended on its first use.
+- **The 64: bowl 17, no bowl 35, n 12 (no-share 0.67).**
+- **Enlarged split** (H370 + H371 after H373 + H377; relabelled only where the draft has 4TRI at that position): pool 148, relabelled 86. **Order gain v7
+  (mean of 3 seeds): as transcribed 0.0530, shape split 0.0515; 20 random relabellings of 86 mean 0.0414, max 0.0515 -> shape beats 20/20, pre-stated
+  "carries order information"** -- by a margin at the fourth decimal over the random maximum, so this is at the bar, not clear of it.
+What it means: with more tokens the f.97r shape split separates from random relabelling as it does on f.124r, f.101r and f.108v, though narrowly; on
+f.97r any move of tokens out of 4TRI still costs a little gain against the transcription (0.0530 -> 0.0515), so the no-bowl tokens there fit a/n only
+about as well as c/p/t. Only 21 of the 64 new tokens sit on a draft 4TRI position (the rest are reconciler disagreements), which caps what more reads
+can add on this leaf. For VERIFY-F61-V11; nothing applied. 1 call, cost estimate 2.0 USD.
