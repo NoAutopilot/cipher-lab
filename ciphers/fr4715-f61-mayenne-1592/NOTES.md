@@ -5702,7 +5702,7 @@ What it means for V11: the 4STEM code on f.101r behaves partly like 4TRI (where 
 partly not (half its tokens carry other letters, and the shape relabel does not move the order gain). A shape clause for 4STEM is not supported by
 this leaf beyond the letter cross-tab; PROPOSAL_v8_4tri.md's 4TRI-only scope looks right. Nothing applied. 1 call, cost estimate 1.5 USD.
 
-## VERIFY-F61-V10's six items, recorded by runner 14 (29 Sept 2026, 18:14 UTC by date -u, session_01N7YQoVMZj1SfiFvc4XG9DH)
+## VERIFY-F61-V10's six items, recorded by runner 14 (29 Sept 2026, 18:13 UTC by date -u, session_01N7YQoVMZj1SfiFvc4XG9DH)
 
 AUDIT.md "What runner 13 (or its successor) should record", carried into HYPOTHESES.md (rows H338-H341, H342/H344, H353, H349) and here:
 1. H341's void covers the binned beam arm on every leaf, f.97r and recf108vg included -- not evidence either way.
