@@ -1,0 +1,54 @@
+== f21v
+  L01 AUD    lesacardahenesede_tuttodaemeeetetcinre
+  L01 NOOV   lesacardahenesede_tuttodaemeeetetcinre
+  L01 STRICT .e...ard..e.e.ede_tut.od...ee..et....e
+  L01 rawA   lemetcardethenensede_tuttodetemeeetetcinre
+  L01 rawB   lesacardasenesede_tuttodaemeeetetcinre
+   * tuttoda                AUD:Y NOOV:Y STRICT:n  NOOV 7/7 'tuttoda'  STRICT 5/7 'tut.od.'  rawA 6/7 'tuttode'  rawB 7/7 'tuttoda'
+  L03 AUD    ranseitecioesoptaquestacaricasadiqua
+  L03 NOOV   ranseitecioesoptaquestacaricasadiqua
+  L03 STRICT r.n..ite..oe.opt.que.t...ri.a..d..u.
+  L03 rawA   ranseintencionemoptetquestetcetricasetdiquet
+  L03 rawB   ranseitecioemoptaquestacaricasadiqua
+   * questacarica           AUD:Y NOOV:Y STRICT:n  NOOV 12/12 'questacarica'  STRICT 7/12 'que.t...ri.a'  rawA 5/12 'questetcetri'  rawB 12/12 'questacarica'
+   * diqua                  AUD:Y NOOV:Y STRICT:n  NOOV 5/5 'diqua'  STRICT 2/5 't.que'  rawA 4/5 'dique'  rawB 5/5 'diqua'
+  L04 AUD    credolenesinersuad
+  L04 NOOV   credolenesinersuad
+  L04 STRICT .redo.ene.i.er.u.d
+  L04 rawA   credolenesinersuetd
+  L04 rawB   credolenesinersuad
+   * credolene              AUD:Y NOOV:Y STRICT:n  NOOV 9/9 'credolene'  STRICT 7/9 '.redo.ene'  rawA 9/9 'credolene'  rawB 9/9 'credolene'
+  L05 AUD    ciolnoser_isrcederuiuendoetseruend
+  L05 NOOV   ciolnoser_isrcederuiuendoetseruend
+  L05 STRICT .io..o.er_....ederuiuendoet.eruend
+  L05 rawA   ciolnoser_imlcederuiuendoetseruend
+  L05 rawB   ciolnoser_imrcederuiuendoetseruend
+   * cederuiuendoetseruend  AUD:Y NOOV:Y STRICT:n  NOOV 21/21 'cederuiuendoetseruend'  STRICT 19/21 '.ederuiuendoet.eruend'  rawA 21/21 'cederuiuendoetseruend'  rawB 21/21 'cederuiuendoetseruend'
+  L09 AUD    nf_tantodinar_eindiuersectse
+  L09 NOOV   nf_tantodina__eindiue_sectse
+  L09 STRICT ...t..todi.a__ei.diue_.e...e
+  L09 rawA   nf_tantodina__eindiue_cect_e
+  L09 rawB   afgtetatodina__eiadiue_cect_e
+   * tantodi                AUD:Y NOOV:Y STRICT:n  NOOV 7/7 'tantodi'  STRICT 5/7 't..todi'  rawA 7/7 'tantodi'  rawB 4/7 'etatodi'
+   * indiuerse              AUD:Y NOOV:n STRICT:n  NOOV 8/9 'indiue_se'  STRICT 6/9 'i.diue_.e'  rawA 7/9 'indiue_ce'  rawB 6/9 'iadiue_ce'
+  L11 AUD    t_mfattoetlseramenfadificu_ta
+  L11 NOOV   t_mfattoetlse_amenfadificu_ta
+  L11 STRICT .......o....e.a.e..adi.i.u_ta
+  L11 rawA   t_mgattoal_e_amefadigicu_ta
+  L11 rawB   tqmfattoetl_e_amefadificu_ta
+   * fatto                  AUD:Y NOOV:Y STRICT:n  NOOV 5/5 'fatto'  STRICT 1/5 '....o'  rawA 4/5 'gatto'  rawB 5/5 'fatto'
+   * fadificu               AUD:Y NOOV:Y STRICT:n  NOOV 8/8 'fadificu'  STRICT 5/8 '.adi.i.u'  rawA 7/8 'fadigicu'  rawB 8/8 'fadificu'
+== f87
+  L04 AUD    uartireletsracaroc_iaungiornoauantieilanozeme
+  L04 NOOV   uarti_eletsracaroc_iaungio_noauantieilanozeme
+  L04 STRICT .a.ti.e...s.aca.oc.i.un.io.n.auan.iei..n..e.e
+  L04 rawA   uaeti_emetsqeacaeoc_iaungio_noauanoieimetntzeme
+  L04 rawB   ua_eti_emetsleaca_eoc_ietungio_ntauantieiletntrcee
+   * ungiornoauanti         AUD:Y NOOV:n STRICT:n  NOOV 13/14 'ungio_noauanti'  STRICT 10/14 'un.io.n.auan.i'  rawA 12/14 'ungio_noauanoi'  rawB 12/14 'ungio_ntauanti'
+  L05 AUD    neandosecrezamenteconozo_orteondeciamchuno
+  L05 NOOV   neandosec_ezamenteconozo_o_teondeciamchuno
+  L05 STRICT n.andosec.e.a.ente.on..o.o..e.ndecia...un.
+  L05 rawA   neandosec_ezamentemonozo_o_oeondeciamlunt
+  L05 rawB   nqandosec_ercaentecontrcoo_tetndecialhunt
+   * neandosecre            AUD:Y NOOV:n STRICT:n  NOOV 10/11 'neandosec_e'  STRICT 9/11 'n.andosec.e'  rawA 10/11 'neandosec_e'  rawB 9/11 'nqandosec_e'
+   * amente                 AUD:Y NOOV:Y STRICT:n  NOOV 6/6 'amente'  STRICT 5/6 'a.ente'  rawA 6/6 'amente'  rawB 4/6 'caente'

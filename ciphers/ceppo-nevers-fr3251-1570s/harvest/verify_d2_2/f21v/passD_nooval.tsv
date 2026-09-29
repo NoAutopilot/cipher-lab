@@ -1,0 +1,268 @@
+passage	pos	sign_id	conf	src	note
+L01	1	S84	M	AB	curly x
+L01	2	S75	H	AB	plus
+L01	3	S77	M	B	6 with separate slanted stroke above-left
+L01	4	S80	H	B	8 crossed by horizontal bar
+L01	5	S37	M	AB	8 with tail
+L01	6	S97	H	AB	lambda
+L01	7	S67	H	AB	f
+L01	8	S56	H	AB	plus-3
+L01	9	S89	H	AB	double bar
+L01	10	S80	H	B	8 crossed by bar (faint tick above)
+L01	11	S61	M	A	loop+stem+foot at base, no mid cross (differs from pos16 female sign)
+L01	12	S52	H	AB	3
+L01	13	S23	M	AB	triangle/A with hook
+L01	14	S75	H	AB	plus
+L01	15	S73	M	B	slanted stroke with dots either side, no crossbar visible
+L01	16	S94	M	AB	female sign
+L01	17	S35	H	AB	m dot
+L01	18	S89	H	AB	double bar
+L01	19	S75	H	AB	plus
+L01	20	X_POUND	H	AB	pound sign
+L01	21	S53	H	AB	phi
+L01	22	S47	H	AB	eps
+L01	23	S53	H	AB	phi
+L01	24	S88	M	AB	barred slash
+L01	25	S62	H	AB	beta
+L01	26	S89	H	AB	double bar
+L01	27	S80	H	B	8 crossed by bar
+L01	28	S52	M	AB	3 with tick
+L01	29	S74	L	AB	plain 6, no tick or dot; nearest sheet cell
+L01	30	S35	H	AB	m dot
+L01	31	S52	H	AB	3
+L01	32	S65	M	AB	8
+L01	33	S52	H	AB	3
+L01	34	S53	H	AB	phi
+L01	35	S66	M	AB	2 with dot
+L01	36	S93	M	AB	w flourish
+L01	37	S23	M	AB	triangle
+L01	38	S56	M	AB	dot plus-3
+L01	39	S75	H	AB	plus at edge
+L02.1	1	S47	H	AB	eps
+L02.1	2	S57	H	AB	small c reversed
+L02.1	3	S88	M	AB	barred slash
+L02.1	4	S23	H	AB	A-shape with inner dot
+L02.1	5	S75	M	AB	plus
+L02.1	6	S89	H	AB	double bar
+L02.1	7	S17	H	AB	Z tail
+L02.1	8	X_POUND	H	AB	pound
+L02.1	9	S62	H	AB	beta
+L02.1	10	S56	H	AB	plus-3
+L02.1	11	S88	M	AB	barred slash
+L02.2	1	S61	M	AB	q long tail
+L02.2	2	S80	H	B	8 crossed by bar
+L03	1	S56	H	AB	plus-3
+L03	2	S97	M	AB	lambda
+L03	3	S23	H	AB	A-shape with inner dot
+L03	4	S94	M	AB	female sign
+L03	5	S75	M	AB	plus with serifed ends
+L03	6	S17	H	AB	Z tail
+L03	7	S73	M	B	slanted stroke with dots
+L03	8	S53	H	AB	phi
+L03	9	S75	H	AB	plus
+L03	10	S73	M	B	slanted stroke with dots
+L03	11	S37	M	AB	8 with tick
+L03	12	S93	M	AB	w
+L03	13	S62	H	AB	beta
+L03	14	S73	M	B	slanted stroke with dots
+L03	15	S75	H	AB	plus
+L03	16	S77	M	D	6 with separate tick above-left, as L01.3/L05.12 (S74 has terminal blob instead)
+L03	17	S62	H	AB	beta
+L03	18	S57	H	AB	small c
+L03	19	S88	H	AB	barred slash
+L03	20	S80	H	B	8 crossed by bar
+L03	21	S20	H	AB	d
+L03	22	S47	H	AB	eps
+L03	23	S75	H	AB	plus
+L03	24	S10	M	B	vertical on baseline with dot, no 2-shape
+L03	25	S53	H	AB	phi
+L03	26	S80	H	B	8 crossed by bar
+L03	27	S37	M	AB	8 tick
+L03	28	S80	H	B	8 crossed by bar
+L03	29	S56	H	AB	plus-3
+L03	30	S17	H	AB	Z
+L03	31	S37	M	AB	8 tick
+L03	32	S97	H	AB	lambda
+L03	33	S94	M	AB	female
+L03	34	S80	H	B	8 crossed by bar
+L03	35	S89	H	AB	double bar
+L03	36	S93	M	AB	w
+L03	37	S25	M	AB	n dot
+L03	38	S47	H	AB	eps
+L03	39	S80	H	B	8 crossed by bar
+L04	1	S37	M	AB	8 tick
+L04	2	S56	H	AB	plus-3
+L04	3	S75	H	AB	plus
+L04	4	S89	H	AB	double bar
+L04	5	S62	H	AB	beta
+L04	6	S84	M	AB	x
+L04	7	S52	H	AB	3
+L04	8	S23	H	AB	A-shape with inner dot
+L04	9	S75	H	AB	plus
+L04	10	S10	M	B	L with dot
+L04	11	S17	H	AB	Z
+L04	12	S23	M	AB	triangle
+L04	13	S75	H	AB	plus
+L04	14	S56	H	AB	plus-3
+L04	15	S10	M	B	L with dot
+L04	16	S47	H	AB	eps
+L04	17	S80	H	B	8 crossed by bar
+L04	18	S89	H	AB	double bar
+L05	1	S37	M	AB	8 tick
+L05	2	S17	H	AB	Z
+L05	3	S62	H	AB	beta
+L05	4	S84	M	AB	x
+L05	5	S23	M	AB	triangle
+L05	6	S62	H	AB	beta
+L05	7	S10	M	B	L with dot
+L05	8	S75	H	AB	plus
+L05	9	S56	H	AB	plus-3
+L05	10	X_POUND	H	AB	pound
+L05	11	S93	M	AB	w
+L05	12	S77	M	D	6 with separate tick above-left (S74 has terminal blob instead)
+L05	13	S32	M	B	hooked-left 3, no cross stroke (S40 has cross)
+L05	14	S66	M	AB	2 dot above
+L05	15	S75	H	AB	plus
+L05	16	S89	H	AB	double bar
+L05	17	S52	H	AB	3
+L05	18	S56	H	AB	plus-3
+L05	19	S47	H	AB	eps
+L05	20	S17	H	AB	Z
+L05	21	S47	H	AB	eps
+L05	22	S75	H	AB	plus
+L05	23	S23	H	AB	A-shape with inner dot
+L05	24	S89	H	AB	double bar
+L05	25	S62	H	AB	beta
+L05	26	S52	H	AB	3
+L05	27	S53	H	AB	phi
+L05	28	S10	M	B	L with dot
+L05	29	S75	H	AB	plus
+L05	30	S56	H	AB	plus-3
+L05	31	S47	H	AB	eps
+L05	32	S75	H	AB	plus
+L05	33	S23	H	AB	A-shape with inner dot
+L05	34	S89	H	AB	double bar
+L06.1	1	S17	H	AB	Z
+L06.1	2	S62	H	AB	beta
+L06.2	1	S80	H	B	8 crossed by bar
+L06.2	2	S47	H	AB	eps
+L06.2	3	S97	M	AB	lambda
+L06.2	4	S23	H	AB	A-shape with inner dot
+L06.2	5	S95	M	AB	plain oval, no inner mark
+L06.2	6	S80	H	B	8 crossed by bar
+L06.2	7	S56	H	AB	plus-3
+L06.2	8	S31	M	AB	2 with tail
+L06.2	9	S17	H	AB	Z
+L06.2	10	S23	M	AB	triangle
+L06.2	11	S62	H	AB	beta
+L06.2	12	X_THETA2	M	A	oval crossed by TWO bars = S60 cell (S69 has one bar)
+L06.2	13	S80	H	B	8 crossed by bar
+L06.2	14	S62	H	AB	beta
+L06.2	15	S69	L	B	oval with bar protruding left, right side cut by margin
+L07	1	X_THETA2	H	AB	two bars; before: line start
+L07	2	S80	H	AB	barred 8
+L07	3	S23	M	AB	triangle/A form
+L07	4	S62	H	AB	
+L07	5	X_THETA2	H	AB	
+L07	6	S75	H	AB	
+L07	7	S97	H	AB	plain lambda
+L07	8	S47	H	AB	
+L07	9	S80	H	AB	
+L07	10	S97	M	B	lambda; only a faint paper speck, no pen dot
+L07	11	S53	H	AB	
+L07	12	S17	H	AB	
+L07	13	S20	H	AB	
+L07	14	S47	H	AB	
+L07	15	S80	H	AB	
+L07	16	X_POUND	H	AB	
+L07	17	S37	M	AB	
+L07	18	S61	H	AB	
+L07	19	S75	H	AB	
+L07	20	S23	M	AB	triangle
+L07	21	S80	H	AB	
+L07	22	X_THETA2	H	AB	
+L07	23	S53	H	AB	
+L07	24	S17	H	AB	
+L07	25	S53	H	AB	
+L07	26	S62	H	AB	
+L07	27	S23	M	A	A-form with clear dot
+L07	28	X_POUND	H	AB	
+L07	29	S75	H	AB	
+L07	30	S47	H	AB	
+L07	31	S80	H	AB	
+L07	32	X_THETA2	H	AB	
+L07	33	S31	M	AB	
+L07	34	X_NEW	L	A	2 with mid-height dash to right, no dot, no underline; nearest S26; after: line end
+L08.1	1	S17	H	AB	before: line start
+L08.1	2	S20	H	AB	
+L08.1	3	S47	H	AB	
+L08.1	4	S80	H	AB	after: Et
+L08.2	1	S80	H	AB	before: si; after: line end
+L09	1	S23	M	A	lambda with dot below (dot seen on L10_s1 upper row); before: line start
+L09	2	S95	M	AB	plain o
+L09	3	X_NEW	L	A	reversed-c with interior dot; nearest S57
+L09	4	S53	H	AB	
+L09	5	S80	H	A	bar clearly crosses
+L09	6	S23	H	A	lambda with dot
+L09	7	S53	H	AB	
+L09	8	S62	H	AB	
+L09	9	S89	H	AB	
+L09	10	S17	H	AB	
+L09	11	S23	M	AB	triangle
+L09	12	S80	H	AB	
+L09	13	X_THETA2	H	AB	
+L09	14	X_POUND	H	AB	
+L09	15	S52	H	AB	
+L09	16	S17	H	AB	
+L09	17	S23	M	A	lambda with dot
+L09	18	S89	H	AB	
+L09	19	S17	H	AB	
+L09	20	S47	H	AB	
+L09	21	S52	H	AB	
+L09	22	X_THETA2	H	AB	two bars
+L09	23	S26	M	D	2 with dot at right and long underline = S26 (passes S66)
+L09	24	S35	H	AB	
+L09	25	S37	M	AB	
+L09	26	S88	M	AB	
+L09	27	S10	M	D	upright stroke + dot + base line = L-shape with dot (passes X_NEW)
+L09	28	S52	H	AB	after: ch'io
+L10	1	S67	M	AB	before: opra
+L10	2	S80	H	AB	
+L10	3	S37	M	AB	
+L10	4	S17	H	AB	
+L10	5	S62	H	AB	
+L10	6	X_THETA2	M	D	two parallel bars visible at zoom (passes S13/S69)
+L10	7	S52	H	AB	
+L10	8	S74	L	AB	6 with detached tick above-left; S77 look-alike
+L10	9	S53	M	AB	
+L10	10	S17	H	AB	
+L10	11	S10	M	D	L-shape with dot (passes X_NEW)
+L10	12	S75	L	AB	cut by margin; after: line end
+L11	1	S53	L	AB	cut at bottom; before: line start
+L11	2	X_NEW	L	A	u+i-like shape; apparent overbar is a descender from line above
+L11	3	S74	M	AB	6 with dot-tick
+L11	4	S69	M	B	single bar extending beyond oval
+L11	5	S97	M	AB	plain lambda; stroke above is from line above
+L11	6	S53	M	AB	
+L11	7	S88	M	AB	
+L11	8	S62	H	AB	
+L11	9	S65	M	B	plain 8, no bar
+L11	10	S84	M	AB	
+L11	11	S10	M	D	L-shape with dot (passes X_NEW)
+L11	12	S75	H	AB	
+L11	13	X_THETA2	M	AB	
+L11	14	S80	H	AB	
+L11	15	S74	M	AB	
+L11	16	S75	H	AB	
+L11	17	S49	L	D	slash between two dots, NO crossing bar (passes S73); S30 look-alike
+L11	18	S95	M	AB	
+L11	19	S97	H	AB	
+L11	20	S89	H	AB	
+L11	21	S17	H	AB	
+L11	22	S69	M	B	single bar
+L11	23	S17	H	AB	
+L11	24	S37	M	AB	
+L11	25	S47	H	AB	
+L11	26	X_POUND	H	AB	
+L11	27	S53	H	AB	
+L11	28	S80	H	AB	after: Io

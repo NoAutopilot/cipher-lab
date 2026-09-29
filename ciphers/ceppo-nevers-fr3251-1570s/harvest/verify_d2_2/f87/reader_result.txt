@@ -1,0 +1,8 @@
+# Blind reader (one Sonnet subagent, Read of the prompt file only, no other tool, answer key withheld), 29 Sept 2026.
+# 40 texts: real decode + 8 best K + 8 best T + 23 random chance decodes. Real = TEXT 31.
+TEXT 31	LANG	neandosecrezamente ("secretamente-like"), giorno auanti, conozo_orteondeciamchuno, sirnoredonalfon, uartirel
+TEXT 18	SOME	"ezncontenz" (a conten- scrap, weak)
+TEXT 23	SOME	"contenome" (a conten- scrap, weak)
+TEXT 17	NONE	only "ecome"
+TEXT others	NONE	(36 texts)
+FINAL	only TEXT 31 genuine, about 60% confidence

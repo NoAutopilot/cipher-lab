@@ -1,0 +1,5 @@
+# Blind reader (one Sonnet subagent, Read of the prompt file only, no other tool, answer key withheld), 29 Sept 2026.
+# 40 texts: real decode + 8 best K + 8 best T (by n_ge6, n_ge5, longest) + 23 random chance decodes. Real = TEXT 25.
+TEXT 25	LANG	tutto; questa, casa, diqua; credo; uiuendo, seruend; tanto, di; fatto & le, mente, difficu_ta ("the only text where several real Italian words recur")
+TEXT 01-24, 26-40	NONE	(39 texts, no word listed)
+FINAL	only TEXT 25 genuine, about 65% confidence
