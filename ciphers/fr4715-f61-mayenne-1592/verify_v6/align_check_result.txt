@@ -1,0 +1,48 @@
+item	line	seg	x	code	idx_full	letter_full	idx_leaveout	letter_leaveout	same	flank_idx	flank_letter	runner_bowl
+Q01	L37	s3	740	4TRI	2304	n	2304	n	yes	2304	n	no
+Q03	L22	s2	710	4TRI	1317	n	1317	n	yes	1317	n	no
+Q04	L13	s2	915	4TRI	804	c	807	s	no	-	-	yes
+Q06	L46	s2	440	4TRI	2889	n	2887	r	no	-	-	no
+Q07	L20	s2	800	4TRI	1218	p	1215	s	no	1215	s	no
+Q09	L18	s2	1395	4TRI	1112	n	-	-	unpaired	-	-	no
+Q10	L05	s1	1310	4TRI	300	o	300	o	yes	300	o	no
+Q12	L34	s1	645	4TRI	2068	a	2019	e	no	-	-	n
+Q13	L19	s1	1270	4TRI	1146	a	1146	a	yes	1146	a	no
+Q14	L38	s3	870	4TRI	2366	n	2366	n	yes	2366	n	no
+Q15	L14	s3	600	4TRI	880	i	880	i	yes	880	i	yes
+Q17	L05	s2	795	4TRI	321	n	320	g	no	-	-	no
+Q22	L17	s2	910	4TRI	1048	c	1048	c	yes	-	-	no
+Q23	L10	s3	160	4TRI	637	n	637	n	yes	637	n	no
+Q24	L02	s1	675	4TRI	75	n	75	n	yes	-	-	no
+Q25	L24	s2	1210	4TRI	1436	n	1436	n	yes	1436	n	no
+Q26	L28	s3	185	4TRI	1698	c	1695	a	no	-	-	yes
+Q28	L31	s3	140	4TRI	1924	o	1880	d	no	1880	d	yes
+Q30	L06	s2	620	4TRI	378	e	-	-	unpaired	-	-	no
+Q31	L32	s1	640	4TRI	1945	c	1899	h	no	1899	h	yes
+Q36	L16	s2	1070	4TRI	991	n	-	-	unpaired	-	-	no
+Q37	L19	s2	610	4TRI	1158	n	1158	n	yes	-	-	no
+Q38	L40	s3	370	4TRI	2473	n	2473	n	yes	2473	n	no
+Q39	L25	s1	1135	4TRI	1469	q	1469	q	yes	1469	q	no
+Q41	L01	s3	1040	4TRI	72	n	72	n	yes	-	-	n
+Q43	L10	s1	1440	4TRI	611	a	611	a	yes	-	-	no
+Q44	L21	s2	795	4TRI	1267	n	1267	n	yes	-	-	no
+Q45	L40	s3	770	4TRI	2481	a	2481	a	yes	2481	a	no
+Q46	L38	s3	315	4TRI	2356	a	2356	a	yes	2356	a	no
+Q47	L05	s2	1440	4TRI	334	a	334	a	yes	334	a	no
+Q48	L31	s2	1020	4TRI	1917	c	1872	i	no	-	-	yes
+Q50	L09	s2	245	4TRI	556	n	556	n	yes	-	-	no
+Q51	L28	s2	875	4TRI	1683	c	1683	c	yes	1683	c	yes
+Q52	L14	s1	830	4TRI	833	p	833	p	yes	833	p	no
+Q53	L12	s2	270	4TRI	742	c	-	-	unpaired	-	-	no
+Q54	L05	s3	145	4TRI	335	n	335	n	yes	335	n	no
+Q55	L19	s2	500	4TRI	1156	n	1156	n	yes	-	-	no
+Q56	L19	s3	380	4TRI	1178	n	1179	o	no	-	-	no
+Q58	L14	s2	125	4TRI	844	s	844	s	yes	-	-	no
+Q60	L21	s1	985	4TRI	1247	n	1247	n	yes	1247	n	no
+# 40 H193 targets: same text position with 4-family cells removed from the aligning key 26, moved 10, unpaired 4
+# H193 2x2 under key v4 (runner): bowl yes c/p 5 a/n 0; bowl no c/p 4 a/n 23; Fisher p 0.00063
+# H193 2x2 under 4-family left out: bowl yes c/p 1 a/n 1; bowl no c/p 2 a/n 18; Fisher p 0.26
+# H193 2x2 under flank-anchored letter (leave-out key, both flanks matched within 3, no indel): bowl yes c/p 1 a/n 0; bowl no c/p 1 a/n 12; Fisher p 0.14
+# all f.176r 4-family columns paired under key v4: 599; same text position under the leave-out key: 368
+# anchor clear lines (f.176v): V06..R19 (54); target clear: fol. 177r + V01..V05; overlap none
+# aligning key key_period_v4.tsv leaves: fr.3982 f.101r, fr.3984 f.188r/f.184r, fr.3984 f.274r; any f.176: False
