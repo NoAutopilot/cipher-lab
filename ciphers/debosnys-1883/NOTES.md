@@ -1014,3 +1014,19 @@ a few fixed pairs, e.g. digraph-like units written as two signs), or the pairs a
 splits in two (BAR-SOLID BAR-SOLID looks like one double-bar sign), or the text is not language with a few
 habitual pairs. Grade S; nothing read; status `open`. H42 checks the recurring pairs on the image for split
 composites before any design reading is built on them.
+
+### H40, fresh-seed confirmation of the H39 fits (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU only)
+
+`scripts/h40_confirm.py` (`h40_confirm.json`; h38_homophonic_fit.py gained a module-level invented-type share F). The
+nine H39 conditions at 7/9 or better, X removed, 200 samples on new seeds: **pooled, none reaches 9/9**; two hold 8/9
+(q 0.4, h 4, Zipf-weighted variants on units of count >= 6, 10 pct noise, pre-split K 29: only doubling above the band,
+hapax now inside; and q 0.2, h 4, 20 pct noise, K0 16: hapax below), the rest 5-7/9. Raising the invented-type share
+to f 1.0 makes every condition worse (1-6/9; the K calibration hits its floor), so the hapax miss is not fixed that
+way. Per cryptogram (X removed; bands wide at these N, and the three conditions were chosen on the pooled result, so
+this is not an independent test): the q 0.4 / h 4 / K0 28-29 / 10 pct condition sits 9/9 on c2 (N 571) and 9/9 on c4
+(N 247). Reading: the working model of H39 holds up on fresh seeds at 8 of 9 pooled -- X set aside, an underlying
+inventory of about 30 units written with up to four Zipf-weighted variant signs each, about 10 pct transcription noise
+-- with X's doubling habit the one pooled statistic left over; not an identification (the row's 9/9-pooled gate is not
+met). Consequence for solvers, from numbers already on file: a letter-scale homophonic design at K about 160, N about
+1,000 and 5 pct noise already reads only 0.42 of its own control plaintext (GOLD-D2), so this model does not license a
+solver run on the target either; no control box bought. Grade S; nothing read; status `open`.

@@ -18,6 +18,7 @@ raw = settled_lines(root, 'c')
 seq7 = [s for v in raw.values() for s in v if s not in ('_', 'MULTI')]
 seqR = [s for v in raw.values() for s in v if s not in PUNCT]
 DROPX = '--drop-x' in sys.argv
+F = 0.5  # invented-type share of the noise; H40 sets 1.0
 if DROPX: seq7 = [s for s in seq7 if s != 'X']; seqR = [s for s in seqR if s != 'X']
 def repeats(s):
     r = {}
@@ -34,7 +35,7 @@ def sample(q, h, c, zipf, p, K0, rng):
     while True:
         o = rng.randrange(len(W) - N); s = h10.encode(W[o:o + N], q, K0, rng)[:N]
         if len(s) == N: break
-    s = split(s, h, c, zipf, rng); s = h13.noise_new(s, p, 0.5, rng) if p else s
+    s = split(s, h, c, zipf, rng); s = h13.noise_new(s, p, F, rng) if p else s
     d = dict(h3.stats(s)); d.update(repeats(s)); return d
 def calibrate(q, h, c, zipf, p, rng):
     lo, hi = 10, 400
