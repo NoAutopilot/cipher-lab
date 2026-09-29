@@ -1,0 +1,126 @@
+{
+ "c1-c2": {
+  "N": [
+   132,
+   658
+  ],
+  "spearman": 0.369,
+  "shared_band": [
+   0.164,
+   0.469
+  ],
+  "indep_band": [
+   -0.272,
+   0.063
+  ],
+  "verdict": "shared"
+ },
+ "c1-c3": {
+  "N": [
+   132,
+   110
+  ],
+  "spearman": -0.008,
+  "shared_band": [
+   -0.181,
+   0.139
+  ],
+  "indep_band": [
+   -0.618,
+   -0.277
+  ],
+  "verdict": "shared"
+ },
+ "c1-c4": {
+  "N": [
+   132,
+   275
+  ],
+  "spearman": 0.067,
+  "shared_band": [
+   -0.067,
+   0.232
+  ],
+  "indep_band": [
+   -0.444,
+   -0.139
+  ],
+  "verdict": "shared"
+ },
+ "c2-c3": {
+  "N": [
+   658,
+   110
+  ],
+  "spearman": 0.42,
+  "shared_band": [
+   0.171,
+   0.502
+  ],
+  "indep_band": [
+   -0.278,
+   0.051
+  ],
+  "verdict": "shared"
+ },
+ "c2-c4": {
+  "N": [
+   658,
+   275
+  ],
+  "spearman": 0.304,
+  "shared_band": [
+   0.251,
+   0.493
+  ],
+  "indep_band": [
+   -0.236,
+   0.063
+  ],
+  "verdict": "shared"
+ },
+ "c3-c4": {
+  "N": [
+   110,
+   275
+  ],
+  "spearman": 0.199,
+  "shared_band": [
+   -0.097,
+   0.257
+  ],
+  "indep_band": [
+   -0.445,
+   -0.11
+  ],
+  "verdict": "shared"
+ },
+ "rhyme_in_prose": {
+  "final_types": [
+   "CIRC-O",
+   "DAGGER-O",
+   "DELTA",
+   "NOTE",
+   "O-DASH2",
+   "OX",
+   "PICT-ARROW",
+   "QUESTION",
+   "S-CURL",
+   "SLASH",
+   "VENUS",
+   "WAVE",
+   "X"
+  ],
+  "share_in_prose": 0.923,
+  "mean_prose_count": 17.77,
+  "null_share_band": [
+   0.737,
+   1.0
+  ],
+  "null_count_band": [
+   9.26,
+   22.56
+  ],
+  "p_share_le": 0.5883
+ }
+}

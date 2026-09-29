@@ -1200,3 +1200,29 @@ upper bound that includes his misreads; majority-settled boxes are shaky on both
 the verse is the cleanest page on every measure, yet at N 263 it is too short for the solvers on file (DEB-SWARM-H);
 c2 is long enough but its true type error is plausibly 20 pct or more. No page is currently both long enough and
 clean enough for the Copiale-type methods. Grade S; nothing read; status `open`.
+
+### H52, verse and prose as one key, settled with clear spans dropped (29 Sept 2026, CPU only)
+
+`scripts/h52_one_key.py` (`h52_one_key.json`): H15's shared-key test re-run on the settled drafts without the nine clear
+positions: **all six pairs sit in the shared-key band and outside the independent-keys band** (c1-c2 0.369, c1-c3
+-0.008, c1-c4 0.067, c2-c3 0.420, c2-c4 0.304 [shared band 0.251-0.493, independent -0.236-0.063], c3-c4 0.199). The
+c2-c4 pair, just under its shared band on the pass-A drafts (H15), is now inside it. The verse's line-final signs (13
+types) occur in the prose: 12 of 13 types (0.923; null from random verse tokens 0.74-1.00, p 0.59), mean prose count
+17.8 per type (null 9.3-22.6) -- the rhyme signs are ordinary signs of the shared inventory, not a verse-only set. One
+key for the four cryptograms, verse included. Grade S; nothing read; status `open`.
+
+### H54, the minimum work on cryptogram 2 against what it buys (29 Sept 2026, a costing, no calls)
+
+Pooled length without c2 is 495 signs (c1 125, c3 107, c4 263 after punctuation and clear spans), under the
+Copiale-type methods' working length (clean reads at 770 and 1,200, failure at 658 in 2 of 3 windows, DEB-SWARM-H), so
+every solver route runs through c2 (643). H51 shows where c2's error sits: agreed boxes about 17 pct disagreement with
+an outside reader (upper bound), majority-settled boxes about 50 pct, split boxes 70-80 pct. Options, priced per pass
+(Usage 6), at H21/H21b's realised 1.5-2 USD per value-blind call of about 15 per-sign crops: (a) the 109 split and
+flagged boxes: 8 calls + 1 reconciliation, 14-18 USD; buys the least, since it leaves the 264 majority boxes (the
+largest error pool) untouched. (b) the 264 majority-settled plus the 109 split boxes, 373 boxes: 25 calls + 1, about
+40-52 USD; this is the pass that targets where the witness says the error is. (c) the whole page, 778 boxes: 52 calls +
+1, about 80-105 USD; adds a fourth read on agreed boxes, where error is lower. Even (c) gives a four-reader page whose
+error can only be estimated, not measured, and the gate from H50 still applies (the swarm-H control at the new floor
+and N before any target run). Recommendation to the orchestrator: if any c2 work is bought, it is (b), gated on a
+control that reads at the resulting floor; otherwise the transcription is the limit and the target stays `open` on
+H18/H20 (new material). A costing, nothing read.
