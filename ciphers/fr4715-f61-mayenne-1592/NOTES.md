@@ -4173,3 +4173,22 @@ Reported, not gated: f.108's 4-headed form sorts with f.101r's period-read d/q s
 11/11) and with H213/H215's d/q reading of form A on f.108v. The looped form B has now been found on no glossed leaf read so far (f.176 H214, f.101r
 H220/H222), so HASH4 B = i/x stays sequence-only. But **f.188r's gloss alignment puts HASH4 under i 10, x 3, d 12, q 3** (passes/f188r_align_v4.tsv),
 the one glossed leaf on disk whose HASH4 carries both letter sets: H224 (rank 1) runs H220's design there. Nothing merged; v5 unchanged.
+
+## Campaign step H224 (29 Sept 2026, 04:10-04:22 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.188r's HASH4 i/x rows are the "2#" sign: the 4-head reads d/q, the 2-hook reads i/x
+
+Pre-registered (PROMPTS section H224; `family/h224_hash_188r.py`, key `family/h224_items.tsv`, commit 76d462e1, before the call). f.188r (fr.3984, Desportes's
+hand; native btv1b9060633d f351, sha1 = MANIFEST) is aligned to its separate decipherment f.184r; passes/f188r_align_v4.tsv puts HASH4 under d 12 (all
+'agrees'), q 3, i 10, x 3 (all 'conflict:d'). Targets: every usable i/x row (11) and 12 d/q, at H222's matched scale; anchors: 10 H212 tiles. Categories
+A 4-head / B looped / C plain hash / D 2-hook into the hash / N. **Disclosure:** D and its read-out were added after the runner's geometry look at sheet 1,
+where several targets looked like a 2 hooked into a hash; the runner did not see which targets carried i/x. One Opus vision call, inline
+(`family/passes/h224_reply.tsv`). Result `family/h224_hash_188r_result.txt` (`--check` OK):
+- **Anchor control 9/10 PASS** (A 4/5 with one N, B 5/5).
+- **Targets: D (2#) i/x 8, d/q 0; A (4-head) i/x 2, d/q 12; C i/x 1; B 0; N 0.**
+- Read-outs: B vs A "no link" (no looped sign on f.188r, as H214 found on f.176); C vs A "no link" (n 1); **D vs A: i/x-share 1.00 (8), A d/q-share 0.86,
+  Fisher p 0.00014 -> "f.188r's letters follow the hash forms (2-hook i/x, 4-head d/q)"**.
+What it says: f.188r's passes coded the "2#" sign as HASH4 at these positions (elsewhere on the same leaf they coded it H24: f188r H24 carries i 34), and
+the gloss letters there are i/x -- the value f.101r's period decipherment gives H24 (i 170). So v5's HASH4 row "i 10, x 3 (f.188r/f.184r)" is, by shape,
+support for H24 i/x, and HASH4 proper (the 4-head) reads d/q on every glossed leaf tested (f.101r 11/11 H220, f.188r 12/14 here, f.274r d 5 q 5).
+The "conflict" status of those rows was a coding merge, not a misalignment. Nothing merged: a key-source line for the verifier was posted. The looped
+form B (f.108) remains without a glossed occurrence; its i/x lean stays sequence-only (H213) and judge-only (H215). Added H225 (test key with the
+re-split, script-only) and H226 (the stray-letter HASH4 rows by shape).
