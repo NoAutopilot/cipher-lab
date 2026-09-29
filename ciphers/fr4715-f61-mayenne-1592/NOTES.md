@@ -4202,3 +4202,15 @@ codes cannot score differently (CLAUDE.md rule 3). Descriptive part: H224's eigh
 - v5 H24 i/x/j/y: pooled 233/296 = 0.787 -> 0.793 after.
 HASH4 proper still carries many stray letters (p 7, s 6, n 5, b 4, f 4, o 4 ...), most on f.101r and on f.188r's conflict rows; H226 asks whether those
 positions are other shapes. Nothing merged.
+
+## Campaign step H226 (29 Sept 2026, 04:29-04:36 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- stray-letter HASH4 rows are mostly the 4-head; the looped form appears on f.101r
+
+Pre-registered (PROMPTS section H226; `family/h226_hash4_strays.py`, key `family/h226_items.tsv`, commit b6c198f7, before the call; the runner did not look at
+the sheets). 24 HASH4 rows whose period letter is not d/q/i/x (f.188r all 10, f.101r 14 of 22), anchors 10 H212 tiles, H224's five categories, one Opus
+vision call (`family/passes/h226_reply.tsv`). Result `family/h226_hash4_strays_result.txt` (`--check` OK):
+- **Anchor control 9/10 PASS.**
+- **Strays: A (4-head) 17, B (looped) 3, D (2#) 3, C 1.** f.188r: A 9, D 1 (e). f.101r: A 8, B 3 (p, p, y), D 2 (b, s), C 1 (s).
+- Read-out: non-A share 0.29 vs the d/q reference 3/26, Fisher p 0.16 -> **"mixed"** (neither pre-stated extreme).
+What it says: most stray HASH4 letters sit on the ordinary 4-headed sign, so they are misplaced letters (f.188r's are all 'conflict' rows) or a wider
+cell than d/q -- the shape test cannot tell which. A few are other shapes (2# at b/e/s, one plain hash). **The looped form B does occur on f.101r** (3 here,
+1 in H220), so a period-letter table for B is possible after all: H227 shape-reads every remaining f.101r HASH4 position. Nothing merged.

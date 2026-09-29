@@ -1,0 +1,6 @@
+anchor control: 9 of 10 H212 tiles answered as their H212 group (gate >= 8): PASS
+anchor answers: A A A B A A | B B B B B B
+strays f101r: A 8 B 3 C 1 D 2 N 0  by letter: a:A b:D f:A o:A p:A p:B p:B p:A s:C s:D s:A t:A t:A y:B
+strays f188r: A 9 B 0 C 0 D 1 N 0  by letter: a:A e:D e:A n:A n:A o:A o:A s:A u:A y:A
+strays pooled: A 17 B 3 C 1 D 3 N 0  by letter: a:A a:A b:D e:D e:A f:A n:A n:A o:A o:A o:A p:A p:B p:B p:A s:C s:D s:A s:A t:A t:A u:A y:B y:A
+read-out: stray non-A share 0.29 (7/24), reference d/q non-A 3/26; Fisher p 0.16 -> mixed
