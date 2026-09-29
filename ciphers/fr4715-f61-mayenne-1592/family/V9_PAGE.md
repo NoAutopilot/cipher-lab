@@ -153,3 +153,5 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
   0.194), while widening all 66 lowers it (V10 item 6): the shape rule is token-level on Desportes's hand too.
 - **Second instrument (H397):** VERIFY-F61-V10's own order statistic (imported, no shared code) gives shape beats 20/20 controls on all six leaves
   (f.124r, f.101r, f.97r, f.188r, f.108v, f.106r); under it the f.97r split also raises the gain over the transcription (0.030 -> 0.034).
+- **f.61 L05/14 (H396):** a fresh read at three windows gives the bowl sign 3-0 (gates 18/20, 6/6), with H194 and Tomokiyo's c; f.61's 4TRI is the
+  bowl sign 6/6, so the 4TRI_NB class moves no position on the target.

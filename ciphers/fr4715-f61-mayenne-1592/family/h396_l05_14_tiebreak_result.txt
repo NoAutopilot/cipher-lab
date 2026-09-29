@@ -1,0 +1,3 @@
+gate 1 (H193 anchors): 18/20 (>= 17); gate 2 (known f.61 strips): 6/6 (>= 5)
+L05/14 windows: W1 yes, W2 yes, W3 yes -> tie-break: bowl (3-0) (H194 bowl, H367 no-bowl, Tomokiyo c)
+other f.61 tiles vs H367: 9/9 agree

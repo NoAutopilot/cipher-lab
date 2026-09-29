@@ -5787,3 +5787,14 @@ gives 99 as H385, and the read-out is unchanged.
 Pre-stated read-out on every leaf: **"carries order information (second instrument)"**. Under V10's statistic the f.97r split also RAISES the gain
 over the transcription (0.0295 -> 0.0343), where the runner's instrument showed a small loss (H371/H377) -- the f.97r direction was
 instrument-dependent, the shape-vs-random comparison is not. For LANE VO3; nothing applied. Script-only.
+
+## Campaign step H396 (29 Sept 2026, 18:28-18:30 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.61 L05/14 tie-break: the bowl sign, 3-0 (1 vision call)
+
+`family/h396_l05_14_tiebreak.py`, key `family/h396_items.tsv`, prompt note H396, committed before the call. L05/14 cut at three windows (H367's, H359's,
+wider) among the other 17 f.61 4-family tiles; one fresh blind Opus call; reply `family/passes/h396_reply.tsv`; result
+`family/h396_l05_14_tiebreak_result.txt` (`--check` OK). **Gate 1 18/20, gate 2 (the 6 known f.61 strips) 6/6. L05/14: W1 yes, W2 yes, W3 yes ->
+pre-stated tie-break "bowl (3-0)"**, with H194 and Tomokiyo's c; H367's 'no' there (at W1's own window) does not reproduce. The other 9 non-known
+f.61 tiles agree with H367 9/9.
+What it means: f.61's 4TRI is the bowl sign 6 of 6 (H367 + H396), and PROPOSAL_v8_4tri.md / V11's 4TRI_NB class would move **no** f.61 position; the
+V11 note "L05/14 stays c/p M (H194 bowl vs H367 no-bowl conflict)" now has a third read on the bowl side. H384's result (one in-scope change, L05/14)
+is superseded by this read for the record; its script is left as it was run. For LANE VO3; no grade or key changed. 1 call, cost estimate 1.5 USD.
