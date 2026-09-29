@@ -120,3 +120,10 @@ keep; the cloud still cannot reach JSTOR at all.
 **Owner, 24 Sept 2026 20:16 UTC:** usage is not a concern ("I'm not using API credits"); physical copy orders stay documented for later review. Parent raised LANE R5 to $100 (Salviati f.55v-f.57v bought at about $9.4 a leaf) and LANE N4 to $60. Stop rule unchanged: `rejected` on any session halts every lane.
 
 **Parent 7b, 25 Sept 2026 15:36 UTC:** this account's window reads `allowed` (rateLimitType ccr_promotional, no reset before November) after the owner cleared usage; the owner's instruction is to continue as much work as needed. All eleven of 7b's sessions of 24 Sept had died on the seven-day limit between 22:11 and 23:14 UTC without handoffs (a closer worker ledgers them 25 Sept). The other account's lanes closed on its own seven-day warning at 13:55 UTC (resets about 05:00 UTC 26 Sept).
+
+
+**Model choice under a warning (owner's rule, 28 Sept 2026 20:3x UTC; written 29 Sept 00:1x UTC):** `allowed_warning`
+on the seven-day window is not a reason to leave Fable. A row that names Fable runs on Fable while Fable answers;
+only a failed Fable turn or `rejected` moves it to Opus 5.5, and nothing ever goes below Opus 5.5. With neither model
+available, the work pauses until a reset. (The account-3 dispatcher spawned VERIFY-CEPPO-D2-1 and VERIFY-F61-V5 on
+Opus 5.5 at 00:12 UTC 29 Sept under the old fallback; that fallback no longer applies.)

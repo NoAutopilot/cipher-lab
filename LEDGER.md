@@ -1343,3 +1343,5 @@ the end of every wake.
 | 28 Sept 2026 | HARVEST-SCOUT-3 | session_01GW6eQyidQiQPEsKbdokSVs | third | Fable | cap 60 | running from 20:11 | key-adjacent pool outside Cryptiana |
 | 28 Sept 2026 | f61 runner 5 | session_01RbeePKZVn83gNfES8yFmhe | owner | Opus 5.5 | 44.18 | retired 22:13 at 632k, archived | H111-H168b; fr.3984 f14-f18 lead |
 | 28 Sept 2026 | f61 runner 6 | session_016YPPumG1PbhMJ3pBLuqaeW | owner | Opus 5.5 | continuous | running from 22:13 | trig_01C4EwnuJuH54nAFS2fs3Kxj :45; fr.3984 key step first |
+| 28 Sept 2026 | f61 runner 6 | session_016YPPumG1PbhMJ3pBLuqaeW | owner | Opus 5.5 | 51.41 | retired 00:14 29 Sept at 649k, archived | H168-H182; key_period_f176 built |
+| 29 Sept 2026 | f61 runner 7 | session_012nGionjAX21NRbpi4TP69b | owner | Opus 5.5 | continuous | running from 00:14 | trig_0164n3St3HpsjgbsHkBwMKzV :45 |
