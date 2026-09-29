@@ -5632,3 +5632,11 @@ doubles the gain and beats every placement of the same answers. Permuted drafts 
 cells helps in bulk), so the comparison that counts is shape vs permuted, which it clears. This does not reverse H351's power finding for the
 as-transcribed test; it says the shape-corrected draft fits v7 by a margin the as-transcribed draft did not. With H379 (f.108v), the shape rule now has
 order support in both of the target's own hands (Mayenne's secretary on f.106r and f.108v). For VERIFY-F61-V10/V11; nothing applied. Script-only.
+
+## Campaign step H383 (29 Sept 2026, 17:59-18:01 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- the shuffled-target arm for H379/H380: clean on both shape drafts (script-only)
+
+`family/h383_shape_shuftarget.py` (written and pushed before running; `family/h383_shape_shuftarget_result.txt`, `--check` OK): H344's code unchanged
+on the two shape-relabelled drafts, now on disk for the verifier (`passes/rec108v_shape/`, `passes/recf106r_shape/`, 75 tokens relabelled, built as
+H379/H380 built them). **rec108v_shape: order signal on 0/3 shuffled targets (gain/p95 0.021/0.053, -0.002/0.045, 0.020/0.044); recf106r_shape: 0/3
+(0.019/0.025, 0.040/0.042, -0.027/0.035)** -> pre-stated: **H379's and H380's read-outs stand.** One f.106r shuffle sits close under its p95
+(0.040 vs 0.042), so f.106r's margin against this arm is thin. For VERIFY-F61-V10/V11; nothing applied. Script-only.

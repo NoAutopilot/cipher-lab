@@ -1,0 +1,4 @@
+shape drafts written: rec108v_shape (H199 answers), recf106r_shape (75 tokens)
+rec108v_shape: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0213/0.0529 -0.0016/0.0450 0.0196/0.0439)
+recf106r_shape: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0188/0.0251 0.0403/0.0424 -0.0274/0.0353)
+read-out: H342's order statistic holds: no order signal on any shuffled target
