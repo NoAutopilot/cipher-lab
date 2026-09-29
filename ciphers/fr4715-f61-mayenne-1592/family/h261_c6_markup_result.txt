@@ -1,0 +1,5 @@
+C6 cell as loaded (f.61 reading key): e
+five known spans: with C6 = e 50/55; without C6 50/55
+in-span C6 and Tomokiyo's character: S1 L01 pos 2 '-'; S2 L03 pos 11 '-'; S4a L07 pos 6 '-'; S4b L08 pos 3 '-'; S4b L08 pos 9 '-'
+classes pairing only with his dash in the spans (n): 4STEM 1, C6 5, CA 4, CH 1, CROSS 2, LL 1, LOOPSTEM1 1
+classes pairing with letters: 4PI n, 4TRI cp, BETA am, C43 an, EBR l, INF uv, PHI er, SBS bo, VBAR_A t, VBAR_B s, ZHOOK ij

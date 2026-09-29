@@ -4551,3 +4551,14 @@ letters 0/6)**, while H63 puts them in the cipher hand by weight, baseline and s
 consistent account is a null drawn as the letter a, which is what the skeleton and Tomokiyo's markup already hold (H44). No cell changes, no reading;
 the CA class is now described rather than unread: for the verifier's meter wording (unread-or-null -> null, on this evidence), not for any key edit.
 Vision calls this session: 2 of the brief's 4 per step (one per step).
+
+## Campaign step H261 (29 Sept 2026, 10:10 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- C6 = e gains nothing on f.61; the classes Tomokiyo never letters (script-only)
+
+`family/h261_c6_markup.py` (result `family/h261_c6_markup_result.txt`, `--check` OK). The five known spans under key v6's f.61 reading score the same with the
+pooled C6 = e cell and with C6 removed (50/55 either way in this run, which scores the raw markup; build_key_v6's scorer folds j->i and v->u and reports
+53/55 -- the three letters of difference are v, v, j, the same both ways here, so the comparison is like for like). **Every in-span C6 (L01 2, L03 11,
+L07 6, L08 3, L08 9) pairs with his dash.** Census of f.61 classes that pair only with his dash in the spans: **C6 5, CA 4, CROSS 2, 4STEM 1, CH 1, LL 1,
+LOOPSTEM1 1**; every other class pairs with letters of its cell. What it says: the pooled C6 = e (grade C on f.101r/f.188r, three tokens) has no support
+on f.61 -- Tomokiyo reads it as nothing at all five places, and H237 found no glyph link between f.61's plain 6 and the glossed delta-shaped C6 -- so a
+rule-4 conflict row is filed in HYPOTHESES.md with both witnesses; the verifier already holds f.61's C6 at unread-or-null and the count stays 8. The
+4STEM dash (L11 8) is on record too: the F61READ 4STEM a/n rests on f.176r's no-bowl positions (V6), not on a letter of his at L11. No call.
