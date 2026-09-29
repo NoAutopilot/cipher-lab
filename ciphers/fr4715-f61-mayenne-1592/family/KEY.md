@@ -465,7 +465,7 @@ except 4PI loads exactly as in v6 (ZHOOK, HASH4, H24, 4STEM, 4TRI, C43, EBR, SBS
 into the pooled key, and that `verify_v8/meter_v8.py --check` and `build_key_v6.py --check` still pass. The known spans are Tomokiyo's
 published letters (text: known); this is a test of the key, not a reading of anything outside his spans.
 
-## CA on f.61 (V9) (F61-FAMILY-12, 29 Sept 2026, 11:2x UTC): a published null in the scribe's letter a, f.61 reading only
+## CA on f.61 (V9) (F61-FAMILY-12, 29 Sept 2026, 11:1x UTC): a published null in the scribe's letter a, f.61 reading only
 
 Merged from AUDIT.md section VERIFY-F61-V9, "What should merge" item 1, and nothing more. **No key file changes**: `key_period_v7.tsv`
 (F61-FAMILY-11, 10:17 UTC) stays as built; CA is not a cell and gets no row.
