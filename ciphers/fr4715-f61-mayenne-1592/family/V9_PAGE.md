@@ -151,3 +151,5 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
   drafts (max 0.051) -- the held leaf where v7 as transcribed showed no order signal.
 - **f.188r (H395):** relabelling only the 18 gated no-bowl 4TRI raises v7's order gain 0.189 -> 0.198 and beats 20/20 random relabellings of 18 (max
   0.194), while widening all 66 lowers it (V10 item 6): the shape rule is token-level on Desportes's hand too.
+- **Second instrument (H397):** VERIFY-F61-V10's own order statistic (imported, no shared code) gives shape beats 20/20 controls on all six leaves
+  (f.124r, f.101r, f.97r, f.188r, f.108v, f.106r); under it the f.97r split also raises the gain over the transcription (0.030 -> 0.034).

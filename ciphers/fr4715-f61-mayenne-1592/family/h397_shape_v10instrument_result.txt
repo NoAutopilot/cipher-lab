@@ -1,0 +1,6 @@
+f.124r (relabel; pool 261, relabelled 202): V10 gain as transcribed 0.0300, shape 0.0484; 20 controls mean 0.0380, max 0.0410 -> beats 20/20 -> carries order information (second instrument)
+f.101r (relabel; pool 222, relabelled 155): V10 gain as transcribed 0.0449, shape 0.0551; 20 controls mean 0.0480, max 0.0514 -> beats 20/20 -> carries order information (second instrument)
+f.97r (relabel; pool 138, relabelled 86): V10 gain as transcribed 0.0295, shape 0.0343; 20 controls mean 0.0286, max 0.0316 -> beats 20/20 -> carries order information (second instrument)
+f.188r (relabel; pool 66, relabelled 18): V10 gain as transcribed 0.0957, shape 0.1026; 20 controls mean 0.0915, max 0.0985 -> beats 20/20 -> carries order information (second instrument)
+f.108v (permute; 68 answered (yes 19, no 49)): V10 gain as transcribed 0.1038, shape 0.1358; 20 controls mean 0.0832, max 0.1021 -> beats 20/20 -> carries order information (second instrument)
+f.106r (permute; 99 answered (yes 28, no 71)): V10 gain as transcribed 0.0368, shape 0.0548; 20 controls mean 0.0367, max 0.0506 -> beats 20/20 -> carries order information (second instrument)

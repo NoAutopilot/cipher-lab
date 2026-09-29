@@ -5768,3 +5768,22 @@ information".**
 What it means, with VERIFY-F61-V10 item 6: widening EVERY f.188r 4TRI to a/n lowers the gain (V10), because 48 of its 66 are the bowl (c/p) sign
 (H392); relabelling only the 18 the gated reader called no-bowl RAISES it, and beats random choices of 18. So V10's specificity result and the shape
 rule agree: the rule is token-level, not code-level, on Desportes's hand as on de Diou's and the secretary's. For LANE VO3; nothing applied. Script-only.
+
+## Campaign step H397 (29 Sept 2026, 18:24-18:27 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- a second instrument: VERIFY-F61-V10's order statistic confirms every shape split, 20/20 on all six leaves (script-only)
+
+`family/h397_shape_v10instrument.py` (written and pushed before running; `family/h397_shape_v10instrument_result.txt`, `--check` OK) imports V10's
+own statistic (`verify_v10/order_v10.py`: its letter model, exact Viterbi, its within-run shuffles, seed 10010) -- no scoring code shared with the
+runner's -- and scores v7 on each leaf's as-transcribed draft, its shape draft and 20 fresh controls in the runner's design (seed 397+i). One fix
+after the first run, disclosed: the f.106r arm had added H385's answers without the draft-match rule (109 tokens instead of 99); with the rule it
+gives 99 as H385, and the read-out is unchanged.
+| leaf (design) | V10 gain as transcribed | shape | 20 controls mean / max | beats |
+|---|---|---|---|---|
+| f.124r (relabel 202 of 261) | 0.0300 | 0.0484 | 0.0380 / 0.0410 | 20/20 |
+| f.101r (relabel 155 of 222, in-sample) | 0.0449 | 0.0551 | 0.0480 / 0.0514 | 20/20 |
+| f.97r (relabel 86 of 138) | 0.0295 | 0.0343 | 0.0286 / 0.0316 | 20/20 |
+| f.188r (relabel 18 of 66, in-sample) | 0.0957 | 0.1026 | 0.0915 / 0.0985 | 20/20 |
+| f.108v (permuted answers, 68; f.61's hand) | 0.1038 | 0.1358 | 0.0832 / 0.1021 | 20/20 |
+| f.106r (permuted answers, 99; f.61's hand) | 0.0368 | 0.0548 | 0.0367 / 0.0506 | 20/20 |
+Pre-stated read-out on every leaf: **"carries order information (second instrument)"**. Under V10's statistic the f.97r split also RAISES the gain
+over the transcription (0.0295 -> 0.0343), where the runner's instrument showed a small loss (H371/H377) -- the f.97r direction was
+instrument-dependent, the shape-vs-random comparison is not. For LANE VO3; nothing applied. Script-only.

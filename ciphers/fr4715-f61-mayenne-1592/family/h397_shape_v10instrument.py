@@ -35,7 +35,7 @@ def leaves():
     raw = {tuple(l.split("\t")[:2]): l.split("\t")[2] for l in list(open(f"{P}/recf106rall18/ciphertext_draft.tsv"))[1:]}
     a = h380.answers(); lab = {k: v for k, (c, v) in a.items() if raw.get(k) == c}
     for r in rd(f"{HERE}/h385_items.tsv"):
-        if r["kind"] == "T": lab[(r["line"], r["pos"])] = rep("h385_reply.tsv").get(r["item"])
+        if r["kind"] == "T" and raw.get((r["line"], r["pos"])) == "C43": lab[(r["line"], r["pos"])] = rep("h385_reply.tsv").get(r["item"])   # draft-match rule, as H380/H385 (fixed after the first run: it lacked this filter, 109 tokens instead of 99)
     L.append(("f.106r", "recf106rall18", "permute", lab))
     return L
 def base_rows(src):
