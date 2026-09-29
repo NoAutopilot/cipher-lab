@@ -149,3 +149,5 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
 - **Part-2 known strips (H376 fix) on first use (H377):** 6/6.
 - **f.106r, the secretary's hand (H380):** relabelling by the H231/H368 bowl answers raises v7's order gain 0.026 -> 0.060 and beats 20/20 permuted-answer
   drafts (max 0.051) -- the held leaf where v7 as transcribed showed no order signal.
+- **f.188r (H395):** relabelling only the 18 gated no-bowl 4TRI raises v7's order gain 0.189 -> 0.198 and beats 20/20 random relabellings of 18 (max
+  0.194), while widening all 66 lowers it (V10 item 6): the shape rule is token-level on Desportes's hand too.

@@ -1,0 +1,3 @@
+f.188r: bowl-read 4TRI 66, relabelled 18; order gain v7 mean of 3 seeds: as transcribed 0.1887, shape split 0.1975
+20 random relabellings of 18: mean 0.1792, min 0.1663, max 0.1938
+shape split beats 20/20 -> carries order information

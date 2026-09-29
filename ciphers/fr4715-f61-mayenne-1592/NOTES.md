@@ -5758,3 +5758,13 @@ cost estimate 1.5 USD.
 glob of reply files took in H390's and H392's replies written after it ran; the script is now pinned to the 21 calls (h359-h387) it reported and
 rechecks OK (the figures in "Campaign step H391" are unchanged). Disclosure: H395's script was started a minute before its commit (pushed with this
 section, before its result was read).
+
+## Campaign step H395 (29 Sept 2026, 18:22-18:24 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.188r: its minority no-bowl 4TRI behave as the a/n sign too (script-only)
+
+`family/h395_188r_split_randctl.py` (started a minute before its commit, disclosed in H393; `family/h395_188r_split_randctl_result.txt`, `--check`
+OK; split draft `passes/recf188r_split/`): H392's 18 no-bowl 4TRI of f.188r relabelled C43. **Order gain v7 (mean of seeds 342-344): as transcribed
+0.1887, shape split 0.1975; 20 random relabellings of 18 from the same 66: mean 0.1792, max 0.1938 -> shape beats 20/20, pre-stated "carries order
+information".**
+What it means, with VERIFY-F61-V10 item 6: widening EVERY f.188r 4TRI to a/n lowers the gain (V10), because 48 of its 66 are the bowl (c/p) sign
+(H392); relabelling only the 18 the gated reader called no-bowl RAISES it, and beats random choices of 18. So V10's specificity result and the shape
+rule agree: the rule is token-level, not code-level, on Desportes's hand as on de Diou's and the secretary's. For LANE VO3; nothing applied. Script-only.
