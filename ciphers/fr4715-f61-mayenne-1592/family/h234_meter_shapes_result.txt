@@ -1,0 +1,5 @@
+v5 (VERIFY-F61-V5): 99 signs: firm 12 / two-way 50 / wider 12 / unread-or-null 25
+  still wider: 4PI=d/a/q/n:2 4STEM=n/a/c/e:1 4TRI=c/p/t:6 HASH4=d/q/i:1 OTHER=e/q/i/p/r/s/t:2
+v5 + shape readings (not endorsed): 99 signs: firm 12 / two-way 58 / wider 2 / unread-or-null 27
+  still wider: OTHER=e/q/i/p/r/s/t:2
+tokens changed by shape: 4PI d/a/q/n -> - x2; 4STEM n/a/c/e -> a/n x1; 4TRI c/p/t -> c/p x6; HASH4 d/q/i -> d/q x1

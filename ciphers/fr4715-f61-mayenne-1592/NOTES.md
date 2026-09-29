@@ -4326,3 +4326,12 @@ What it says: on f.101r the readers' 4PI is the same 4-headed hash as HASH4 (and
 Pi. So v5's 4PI letters (d/a/q/n, from f.101r and f.108r) do not transfer to f.61's two 4PI tokens by glyph; those two need their own evidence (f.108r's 4PI:
 H202 read p 1 / d 4 under Tomokiyo's overlay -- which sign it is there is not yet checked). f.61's L01 HASH4 is the 4-head form, which reads d/q on both
 period leaves (H224/H227), not i. For the verifier and H234. Nothing merged.
+
+## Campaign step H234 (29 Sept 2026, 06:22-06:26 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's meter with the shape readings (script-only, descriptive, not endorsed)
+
+`family/h234_meter_shapes.py` (committed before the run; result `family/h234_meter_shapes_result.txt`, `--check` OK), verify_v5/meter_v5.py's bands on the same decode:
+- **v5: firm 12 / two-way 50 / wider 12 / unread-or-null 25** (wider: 4TRI c/p/t 6, 4PI 2, OTHER 2, 4STEM 1, HASH4 1).
+- **v5 + the shape readings (none endorsed): 12 / 58 / 2 / 27** -- 4TRI c/p/t -> c/p x6 (bowl, H194/H219), 4STEM -> a/n x1 (no bowl), HASH4 -> d/q x1 (4-head,
+  H233 with H224/H227's period letters), 4PI -> unread x2 (a 4 over a Pi, a sign with no period value yet, H233). Only OTHER x2 stays wider.
+For the verifier: the shape work narrows every wider f.61 token but OTHER's two, and correctly moves 4PI to unread rather than carry f.101r's letters onto a
+different sign. Nothing merged; the key stays v5.
