@@ -1243,3 +1243,27 @@ marks on the image first (a cheap Fable pass over the 16-30 verse boxes concerne
 Grade S; nothing read; status `open`.
 Side note for H20: DEB-SWARM2-R2-3 (ROOM 29 Sept 07:26) reports a copied-poem crib search on c4 including Moore's
 Anacreon ode (best S 1.359, no crib); H20's LOCAL-QUEUE L28 texts may therefore already be covered by the swarm.
+
+### H58, swarm round 2 against this campaign's structural rows (29 Sept 2026, reading only)
+
+From the done lines and RESULT.md files of DEB-SWARM2-R2-2, R2-4 and R2-5 (swarm/R2/, ROOM 29 Sept 08:20-08:55):
+- **R2-2 T-LOW agrees with H51/H54 and settles H54 against a re-read.** A synthetic page of 96 known boxes cut from
+  our own native crops, read by two blind readers, comes back at 15.6 pct error folded (17.7 unfolded); no larger
+  public copy of the pages exists (Commons and the Cipher Foundation carry the same pixels). That is the same size as
+  H51's outside-witness bound on our agreed boxes (16.5-17.7 pct), from an independent known-answer route. So the
+  H54 options (a)-(c) -- more value-blind passes on the public images -- cannot bring c2 under 5 pct by this protocol;
+  H54 is amended to say the public pixels are the limit. The transcription route now runs only through better images
+  (H18, the museum's restricted material, orchestrator-only) or a different reading protocol.
+- **R2-4 LINE-UNITS is consistent with H31/H33/H36 and adds one lead.** Its pictogram-opener tests are unlicensed
+  (its Copiale decorative-capital control at 8 tokens reads 0.31 against a 0.80 gate), which does not touch H31: H31
+  runs on all 60 pictogram tokens with a shuffle null, a random-class control and a planted power check. Its
+  "picture-opened verse lines start couplets" prediction fails (1 of 4), matching H31's list (verse lines 2, 4, 13, 14).
+  Its lead: cups and jug (BUCKET x3, PICT-JUG, BOX-M) close lines 5 of 5, beyond a width-matched layout control; R2-4
+  itself flags that BUCKET was chosen after H33 had listed it among line-final ids, so the lead is post-hoc and stays
+  unlicensed; bottle, barrel and glass are 0 of 3 final. This does not conflict with H31's ordinary line-final rate for
+  the pictogram class, which excludes BUCKET and BOX-M.
+- **R2-5 FOLGER-SPLIT agrees with H47/H41.** Splitting composites is untestable at the text's composite share (its
+  planted-ligature control at the real 24 pct share fails, 25 of 40); both real splits sit at shuffle level -- the same
+  "no power at this N" shape as H47 and the near-random local order of H41.
+No row of this campaign needs a numeric correction; H54's recommendation is withdrawn in favour of "public pixels are
+the limit". Status `open`; nothing read.
