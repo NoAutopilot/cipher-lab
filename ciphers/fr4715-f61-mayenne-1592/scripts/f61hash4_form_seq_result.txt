@@ -1,0 +1,4 @@
+f.108v HASH4 by form: {'HASHA': 9, 'HASHB': 5, 'HASH4': 0}
+split vs all d/q: split wins 24/30 -> OPEN
+split vs all i/x: split wins 30/30 -> split CONFIRMED
+split vs reverse: split wins 30/30 -> split CONFIRMED

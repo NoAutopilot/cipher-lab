@@ -4053,3 +4053,13 @@ What it suggests: the HASH4 pass code holds two forms, as the 4-family's codes d
 f.108v's is mostly the 4-headed form A and leans d/q (H209/H211). H162's note (a 4 on the hash = d/q, a bare hash = i) and H195's anchors (d/q anchors
 4-headed 9/10) point the same way. Untested: A = d/q, B = i/x. That is H213 (script-only, sequence gain on f.108v with HASH4 split by these groups).
 HASH4 stays d/i/q; nothing merged.
+
+## Campaign step H213 (29 Sept 2026, 02:57-02:58 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- HASH4 split by blind form on f.108v: A (4-head) d/q, B (looped) i/x beats all-i/x and the reverse (script-only)
+
+`scripts/f61hash4_form_seq.py` (committed before the run; result `scripts/f61hash4_form_seq_result.txt`, `--check` fresh). f.108v (bowl relabel) with its
+14 HASH4 split by H212's blind groups (A 9, B 5), H198's rule, 30 resamples, seed 213:
+- **split (A d/q, B i/x) vs all i/x: 30/30 -> CONFIRMED; vs the reverse split (A i/x, B d/q): 30/30 -> CONFIRMED; vs all d/q: 24/30 -> OPEN.**
+Descriptive: on f.108v the 4-headed hash reads d/q and not i/x, and the reverse assignment loses in every resample. Whether the looped hash is i/x
+rather than d/q rests on 5 signs here and is OPEN. With H211 (f.108r, mostly looped, leans i/x) and H195 (the Desportes d/q anchors are 4-headed 9/10),
+this supports a second shape split, HASH4 = 4-head d/q vs looped i/x, the same kind of split as the 4-family's bowl. The evidence is sequence-only, no
+period letters yet in f.61's hand; H214 tests it against the f.176 period letters. f.61 itself has one HASH4 (L01). HASH4 stays d/i/q; nothing merged.
