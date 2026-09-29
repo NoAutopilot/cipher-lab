@@ -1,0 +1,26 @@
+sheet	sheet_segment	native_segment	first_of_line	last_of_line
+f61sheet_L01	1	4	no	no (assumed 5)
+f61sheet_L01	2	5	no	yes (assumed 5)
+f61sheet_L03	1	1	yes	no (assumed 5)
+f61sheet_L03	2	2	no	no (assumed 5)
+f61sheet_L03	3	3	no	no (assumed 5)
+f61sheet_L05	1	2	no	no (assumed 5)
+f61sheet_L05	2	3	no	no (assumed 5)
+f61sheet_L05	3	4	no	no (assumed 5)
+f61sheet_L07	1	3	no	no (assumed 5)
+f61sheet_L07	2	4	no	no (assumed 5)
+f61sheet_L07	3	5	no	yes (assumed 5)
+f61sheet_L08	1	1	yes	no (assumed 5)
+f61sheet_L08	2	2	no	no (assumed 5)
+f61sheet_L11	1	1	yes	no (assumed 5)
+f61sheet_L11	2	2	no	no (assumed 5)
+
+line	pos	class	segment	prev	next	edge_kind
+L01	12	4PI	2	sign	edge	LINE end
+L03	15	EBR	3	sign	edge	SHEET edge only (not the line's end)
+L05	1	LOOPSTEM1	1	edge	sign	SHEET edge only (not the line's start)
+L11	1	BETA	1	edge	sign	LINE start
+L07	11	ZHOOK	3	sign	edge	LINE end
+L08	1	PHI	1	edge	sign	LINE start
+L08	14	PHI	2	sign	edge	SHEET edge only (not the line's end)
+L10	13	C6	4	sign	edge	line (sheet B holds the whole line)

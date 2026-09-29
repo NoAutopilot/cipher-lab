@@ -1,0 +1,3 @@
+'sont trop' bare 1; 'sont W trop' 2: en 1, pas 1; 'sont W1 W2 trop' 0: ; of which 'sont a W trop' 0
+'estoient trop' bare 0; 'estoient W trop' 0: ; 'estoient W1 W2 trop' 0: ; of which 'estoient a W trop' 0
+'est trop' bare 5; 'est W trop' 3: pas 2, que 1; 'est W1 W2 trop' 0: ; of which 'est a W trop' 0

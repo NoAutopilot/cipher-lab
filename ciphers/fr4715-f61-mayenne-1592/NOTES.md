@@ -4761,3 +4761,14 @@ finding that the two classes are letters inside words on the family leaves (so o
 C6 kind, not word codes), H289's CH e/m conflict (witnesses 1-2). H293 (glyph sort) dropped with its motivation. Lesson for the retrospective: a
 positional read's "edge" on a span sheet is the sheet edge, and any inference about what precedes a run must read sheet B's first segment (or the
 regen script's keep map) first.
+
+## Campaign steps H295 and H296 (29 Sept 2026, 10:49 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- "sont trop" needs no filler; a sheet-edge guard (script-only)
+
+**H295** `family/h295_sont_trop.py` (result `family/h295_sont_trop_result.txt`, `--check` OK): in fr16, "sont trop" bare 1, "sont W trop" 2 (en, pas), no
+two-word filler; "est trop" bare 5, "est pas trop" 2, "est que trop" 1. Small counts, but nothing in the grammar wants a word between "sont" and
+"trop": the null reading of the edge a + LOOPSTEM1 + CH on L05 (Tomokiyo's three dashes) is unforced either way, and no adverb is suggested. Descriptive.
+**H296** `scripts/f61_sheet_edges.py` -> `scripts/f61_sheet_edges.tsv` (`--check` OK): from the regen script's keep map, every span-sheet segment with its
+native segment and whether it is the line's first or last; and every "edge" row of the positions files classed as a LINE edge or a SHEET edge only --
+L05 1 (LOOPSTEM1) and L03 15, L08 14 are sheet edges, not the line's; L11 1, L08 1 are line starts; L01 12, L07 11 line ends (the per-line native
+segment count is assumed 5 because the f61s_L*_s*.jpg cuts are not on disk, flagged in the file). A guard for later runners against the H283 error.
+No call.
