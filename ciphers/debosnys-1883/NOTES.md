@@ -927,3 +927,31 @@ of mean 3.8, p97.5 7 -- more than chance, but the witness quality fails the gate
 pictogram (his PIC_* class, 33 tokens) against a within-line expectation of 1.3 (p 0.0008), so the line-initial
 preference reproduces on a transcription that is not ours; his line-final pictograms 4 (p 0.033, borderline; ours
 ordinary). Grade S, nothing read; status `open`.
+
+### H32, the sign before an interior pictogram (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU only)
+
+`scripts/h32_boundary.py` (`h32_boundary.json`): word-final-prone ids fitted on one half of the 56 settled lines (>= 2
+line-final and at least twice their within-line expectation), scored on the other half. Interior pictograms preceded by
+a final-prone id: **1 of 49** against a 10,000-shuffle band of 1-8 (p_ge 0.99) -- no enrichment; followed by one 1 of
+49. Planted power control (each interior pictogram's predecessor set to the fold's most final-prone id) 45 of 49, so
+the scoring can see the effect. But the instrument itself does not replicate: the two folds' final-prone sets share
+one id of nine (WAVE; fold 0 BUCKET, DAGGER-O, PCT-SLASH, QUESTION, WAVE, XX-TILDE; fold 1 DASH-V, O-DASH2, O-SLASH,
+WAVE), i.e. line ends in the prose are not a stable word-end signal at this N (physical line wraps, and only the 20
+verse ends are known sense breaks). Logged as untestable by this method at this N, not as a refutation of H31's
+word-initial reading. Grade S; nothing read; status `open`.
+
+### H33 and H35, which ids open lines, and whether H31 survives layout exclusions (29 Sept 2026, CPU only)
+
+H33 (`scripts/h33_initial_class.py`, `h33_initial_class.json`): per id with >= 3 settled tokens (83 ids), line-initial
+and line-final counts against a per-line shuffle null, Benjamini-Hochberg at q 0.10: **no single id clears** at either
+edge (counts of 1-4 per id are too small). The two strongest openers are pictograms (PICT-LEAF 2 vs 0.16 expected,
+p 0.008; SUN 3 vs 0.44, p 0.009), then BAR-THIN and X-O (p 0.03); no Latin-letter id (D-LETTER, T-LETTER ...) is
+among them, so the "capitals of names" variant gets no support. The strongest closers are BUCKET, QUESTION, XX-TILDE
+(p 0.004-0.006), none past BH. H31's excess is a property of the pictogram class, not of one sign.
+H35 (`scripts/h35_layout_check.py`, `h35_layout_check.json`): the line-initial excess with lines that begin in a `_`
+region dropped (portrait area of c2a L04-L06, unread starts) is 10 of 50 (expected 2.66, band to 6, p 0.0004); with
+each page's first line dropped 10 of 50 (p 0.0002); both 9 of 45 (expected 2.18, band to 5, p 0.0002); verse only
+4 of 20 (p 0.015). Bourdeau's verse read (verse_transcription.py) opens the same four verse lines (2, 4, 13, 14) with
+the same four signs (HEART, PIC_SUN, PIC_LEAF, PIC_ANCHOR): 4 of 20 vs expected 0.88, p 0.008 -- a second reader of
+the same image, not independent evidence of the statistic, but no transcription artefact on our side. H31 stands as a
+layout-robust class effect. Grade S; nothing read; status `open`.

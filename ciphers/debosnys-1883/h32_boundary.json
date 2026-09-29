@@ -1,0 +1,44 @@
+{
+ "folds": [
+  {
+   "fold": 0,
+   "final_prone": [
+    "BUCKET",
+    "DAGGER-O",
+    "PCT-SLASH",
+    "QUESTION",
+    "WAVE",
+    "XX-TILDE"
+   ],
+   "top": "BUCKET",
+   "interior_pict": 29,
+   "preceded_by_final_prone": 1,
+   "followed_by_final_prone": 1,
+   "planted_pre": 27,
+   "ctrl_share_p975": 0.227,
+   "share": 0.034
+  },
+  {
+   "fold": 1,
+   "final_prone": [
+    "DASH-V",
+    "O-DASH2",
+    "O-SLASH",
+    "WAVE"
+   ],
+   "top": "DASH-V",
+   "interior_pict": 20,
+   "preceded_by_final_prone": 0,
+   "followed_by_final_prone": 0,
+   "planted_pre": 18,
+   "ctrl_share_p975": 0.2,
+   "share": 0.0
+  }
+ ],
+ "total_pre": 1,
+ "total_interior": 49,
+ "null_lo": 1,
+ "null_hi": 8,
+ "p_ge": 0.9881,
+ "planted_total": 45
+}

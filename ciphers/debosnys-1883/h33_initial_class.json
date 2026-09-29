@@ -1,0 +1,1500 @@
+{
+ "initial": [
+  {
+   "id": "PICT-LEAF",
+   "n": 4,
+   "obs": 2,
+   "exp": 0.16,
+   "p": 0.0081991800819918,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "SUN",
+   "n": 9,
+   "obs": 3,
+   "exp": 0.44,
+   "p": 0.008999100089991,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "BAR-THIN",
+   "n": 18,
+   "obs": 3,
+   "exp": 0.69,
+   "p": 0.0292970702929707,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-O",
+   "n": 8,
+   "obs": 2,
+   "exp": 0.29,
+   "p": 0.030596940305969402,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DIAMOND",
+   "n": 7,
+   "obs": 2,
+   "exp": 0.43,
+   "p": 0.0684931506849315,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "ARCH-DASH",
+   "n": 9,
+   "obs": 2,
+   "exp": 0.5,
+   "p": 0.0831916808319168,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "GEAR-DOT",
+   "n": 3,
+   "obs": 1,
+   "exp": 0.12,
+   "p": 0.11428857114288571,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DOLLAR",
+   "n": 4,
+   "obs": 1,
+   "exp": 0.19,
+   "p": 0.17518248175182483,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O-TILDE",
+   "n": 27,
+   "obs": 3,
+   "exp": 1.48,
+   "p": 0.17998200179982002,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "LAMBDA",
+   "n": 5,
+   "obs": 1,
+   "exp": 0.23,
+   "p": 0.21647835216478353,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "DOTS-TILDE",
+   "n": 6,
+   "obs": 1,
+   "exp": 0.27,
+   "p": 0.24447555244475552,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CC-DASH",
+   "n": 21,
+   "obs": 2,
+   "exp": 1.04,
+   "p": 0.2752724727527247,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DELTA",
+   "n": 3,
+   "obs": 1,
+   "exp": 0.31,
+   "p": 0.2842715728427157,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "XX-TILDE",
+   "n": 9,
+   "obs": 1,
+   "exp": 0.43,
+   "p": 0.3591640835916408,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "V-DOT",
+   "n": 11,
+   "obs": 1,
+   "exp": 0.48,
+   "p": 0.39206079392060794,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-SLASH",
+   "n": 11,
+   "obs": 1,
+   "exp": 0.52,
+   "p": 0.41025897410258977,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CHEVRON2",
+   "n": 10,
+   "obs": 1,
+   "exp": 0.63,
+   "p": 0.4767523247675233,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "VEE",
+   "n": 13,
+   "obs": 1,
+   "exp": 0.64,
+   "p": 0.48405159484051596,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PCT",
+   "n": 60,
+   "obs": 3,
+   "exp": 2.7,
+   "p": 0.5194480551944806,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "II-DASH",
+   "n": 16,
+   "obs": 1,
+   "exp": 0.72,
+   "p": 0.5225477452254774,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "LOOP-STEM",
+   "n": 15,
+   "obs": 1,
+   "exp": 0.74,
+   "p": 0.5295470452954705,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "Y-CURL",
+   "n": 35,
+   "obs": 2,
+   "exp": 1.77,
+   "p": 0.5446455354464553,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "S-CURL",
+   "n": 14,
+   "obs": 1,
+   "exp": 0.87,
+   "p": 0.5897410258974103,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "VENUS",
+   "n": 23,
+   "obs": 1,
+   "exp": 1.25,
+   "p": 0.7282271772822718,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "WAVE",
+   "n": 25,
+   "obs": 1,
+   "exp": 1.35,
+   "p": 0.7625237476252374,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O-SLASH",
+   "n": 27,
+   "obs": 1,
+   "exp": 1.38,
+   "p": 0.7639236076392361,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PCT-SLASH",
+   "n": 40,
+   "obs": 1,
+   "exp": 2.1,
+   "p": 0.889011098890111,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X",
+   "n": 152,
+   "obs": 1,
+   "exp": 7.25,
+   "p": 0.9993000699930007,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "PHI",
+   "n": 21,
+   "obs": 0,
+   "exp": 0.84,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "NOTE",
+   "n": 16,
+   "obs": 0,
+   "exp": 0.98,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "TAURUS",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.23,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CROSS-T",
+   "n": 18,
+   "obs": 0,
+   "exp": 0.83,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "STAR",
+   "n": 10,
+   "obs": 0,
+   "exp": 0.49,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "OO-TILDE",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CC-O",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.37,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "LOOP-TAIL",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.44,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-CURL",
+   "n": 15,
+   "obs": 0,
+   "exp": 0.71,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "THETA-BAR",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CIRC-O",
+   "n": 33,
+   "obs": 0,
+   "exp": 1.6,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "OX-TILDE",
+   "n": 22,
+   "obs": 0,
+   "exp": 0.98,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SLASH",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.43,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O-DASH2",
+   "n": 15,
+   "obs": 0,
+   "exp": 0.72,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "II-O",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.69,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "ARCH-O",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.2,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "Y-LOOPS",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-DASH",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.41,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "EIGHT",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.63,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "QUESTION",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.44,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O-DASHBELOW",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.28,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "V-LOOP",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DAGGER-O",
+   "n": 20,
+   "obs": 0,
+   "exp": 0.93,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-BAR",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.3,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-ARROW",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.38,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "C-DOT",
+   "n": 16,
+   "obs": 0,
+   "exp": 0.65,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-DOT",
+   "n": 26,
+   "obs": 0,
+   "exp": 1.17,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SIGMA",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.23,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "OX",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "F-LETTER",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "BOX-GRID",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.14,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "U-DASH",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.19,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "II-SLASH",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.17,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "C-BAR-X",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.4,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-FACE",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.2,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "CHEVRON",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "M-LETTER",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.15,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "THREE",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.14,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SCROLL-X",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.33,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "TRIDENT",
+   "n": 9,
+   "obs": 0,
+   "exp": 0.44,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "BAR-SOLID",
+   "n": 14,
+   "obs": 0,
+   "exp": 0.54,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SIX-CURL",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.12,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "A-LOOP",
+   "n": 12,
+   "obs": 0,
+   "exp": 0.55,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DBL-SLASH",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.55,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-TREE",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "ARC-LOOPS",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.16,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "AMP",
+   "n": 9,
+   "obs": 0,
+   "exp": 0.35,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "T-LETTER",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.14,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "QQ-O",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.26,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "NINE",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.16,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "BUCKET",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.11,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "E-BAR",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.12,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.11,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "WAVE-V",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.12,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DOUBLE-LOOP",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  }
+ ],
+ "final": [
+  {
+   "id": "BUCKET",
+   "n": 3,
+   "obs": 2,
+   "exp": 0.11,
+   "p": 0.003999600039996,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "QUESTION",
+   "n": 8,
+   "obs": 3,
+   "exp": 0.44,
+   "p": 0.0057994200579942,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "XX-TILDE",
+   "n": 9,
+   "obs": 3,
+   "exp": 0.43,
+   "p": 0.0059994000599940004,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DELTA",
+   "n": 3,
+   "obs": 2,
+   "exp": 0.31,
+   "p": 0.028897110288971104,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "O-DASH2",
+   "n": 15,
+   "obs": 3,
+   "exp": 0.72,
+   "p": 0.032296770322967704,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "WAVE",
+   "n": 25,
+   "obs": 4,
+   "exp": 1.35,
+   "p": 0.038396160383961604,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-ARROW",
+   "n": 5,
+   "obs": 2,
+   "exp": 0.38,
+   "p": 0.0453954604539546,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "DAGGER-O",
+   "n": 20,
+   "obs": 3,
+   "exp": 0.93,
+   "p": 0.06359364063593641,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O",
+   "n": 3,
+   "obs": 1,
+   "exp": 0.11,
+   "p": 0.10258974102589741,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "WAVE-V",
+   "n": 3,
+   "obs": 1,
+   "exp": 0.12,
+   "p": 0.10578942105789421,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "T-LETTER",
+   "n": 3,
+   "obs": 1,
+   "exp": 0.14,
+   "p": 0.1354864513548645,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "OX",
+   "n": 4,
+   "obs": 1,
+   "exp": 0.18,
+   "p": 0.17418258174182583,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "S-CURL",
+   "n": 14,
+   "obs": 2,
+   "exp": 0.87,
+   "p": 0.21457854214578542,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DOTS-TILDE",
+   "n": 6,
+   "obs": 1,
+   "exp": 0.27,
+   "p": 0.23917608239176083,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PCT-SLASH",
+   "n": 40,
+   "obs": 3,
+   "exp": 2.1,
+   "p": 0.34966503349665035,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SLASH",
+   "n": 7,
+   "obs": 1,
+   "exp": 0.43,
+   "p": 0.35036496350364965,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "V-DOT",
+   "n": 11,
+   "obs": 1,
+   "exp": 0.48,
+   "p": 0.38746125387461255,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "STAR",
+   "n": 10,
+   "obs": 1,
+   "exp": 0.49,
+   "p": 0.40005999400059994,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "O-SLASH",
+   "n": 27,
+   "obs": 2,
+   "exp": 1.38,
+   "p": 0.40915908409159085,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-SLASH",
+   "n": 11,
+   "obs": 1,
+   "exp": 0.52,
+   "p": 0.41445855414458554,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "A-LOOP",
+   "n": 12,
+   "obs": 1,
+   "exp": 0.55,
+   "p": 0.42605739426057393,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "OX-TILDE",
+   "n": 22,
+   "obs": 1,
+   "exp": 0.98,
+   "p": 0.6339366063393661,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "NOTE",
+   "n": 16,
+   "obs": 1,
+   "exp": 0.98,
+   "p": 0.6408359164083591,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "VENUS",
+   "n": 23,
+   "obs": 1,
+   "exp": 1.25,
+   "p": 0.7229277072292771,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CIRC-O",
+   "n": 33,
+   "obs": 1,
+   "exp": 1.6,
+   "p": 0.8176182381761824,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X",
+   "n": 152,
+   "obs": 5,
+   "exp": 7.25,
+   "p": 0.8748125187481252,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "PCT",
+   "n": 60,
+   "obs": 1,
+   "exp": 2.7,
+   "p": 0.9391060893910609,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DIAMOND",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.43,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "Y-CURL",
+   "n": 35,
+   "obs": 0,
+   "exp": 1.77,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O-TILDE",
+   "n": 27,
+   "obs": 0,
+   "exp": 1.48,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "II-DASH",
+   "n": 16,
+   "obs": 0,
+   "exp": 0.72,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PHI",
+   "n": 21,
+   "obs": 0,
+   "exp": 0.84,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "TAURUS",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.23,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CC-DASH",
+   "n": 21,
+   "obs": 0,
+   "exp": 1.04,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "LAMBDA",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.23,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "CROSS-T",
+   "n": 18,
+   "obs": 0,
+   "exp": 0.83,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SUN",
+   "n": 9,
+   "obs": 0,
+   "exp": 0.44,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "OO-TILDE",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CC-O",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.37,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "LOOP-TAIL",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.44,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-CURL",
+   "n": 15,
+   "obs": 0,
+   "exp": 0.71,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "THETA-BAR",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "CHEVRON2",
+   "n": 10,
+   "obs": 0,
+   "exp": 0.63,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "II-O",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.69,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "ARCH-O",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.2,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "Y-LOOPS",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-DASH",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.41,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "EIGHT",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.63,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "O-DASHBELOW",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.28,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "VEE",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.64,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "V-LOOP",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-BAR",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.3,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "C-DOT",
+   "n": 16,
+   "obs": 0,
+   "exp": 0.65,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-DOT",
+   "n": 26,
+   "obs": 0,
+   "exp": 1.17,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "ARCH-DASH",
+   "n": 9,
+   "obs": 0,
+   "exp": 0.5,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "LOOP-STEM",
+   "n": 15,
+   "obs": 0,
+   "exp": 0.74,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-LEAF",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.16,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "SIGMA",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.23,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "F-LETTER",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "BOX-GRID",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.14,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "U-DASH",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.19,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "II-SLASH",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.17,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DOLLAR",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.19,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "C-BAR-X",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.4,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-FACE",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.2,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "CHEVRON",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "M-LETTER",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.15,
+   "p": 1.0,
+   "shape": "letter",
+   "bh_pass": false
+  },
+  {
+   "id": "THREE",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.14,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SCROLL-X",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.33,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "TRIDENT",
+   "n": 9,
+   "obs": 0,
+   "exp": 0.44,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "BAR-SOLID",
+   "n": 14,
+   "obs": 0,
+   "exp": 0.54,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "SIX-CURL",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.12,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "BAR-THIN",
+   "n": 18,
+   "obs": 0,
+   "exp": 0.69,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DBL-SLASH",
+   "n": 13,
+   "obs": 0,
+   "exp": 0.55,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "PICT-TREE",
+   "n": 5,
+   "obs": 0,
+   "exp": 0.18,
+   "p": 1.0,
+   "shape": "pictogram",
+   "bh_pass": false
+  },
+  {
+   "id": "ARC-LOOPS",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.16,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "AMP",
+   "n": 9,
+   "obs": 0,
+   "exp": 0.35,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "QQ-O",
+   "n": 7,
+   "obs": 0,
+   "exp": 0.26,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "NINE",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.16,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "E-BAR",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.12,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "X-O",
+   "n": 8,
+   "obs": 0,
+   "exp": 0.29,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "GEAR-DOT",
+   "n": 3,
+   "obs": 0,
+   "exp": 0.12,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  },
+  {
+   "id": "DOUBLE-LOOP",
+   "n": 4,
+   "obs": 0,
+   "exp": 0.24,
+   "p": 1.0,
+   "shape": "other",
+   "bh_pass": false
+  }
+ ]
+}
