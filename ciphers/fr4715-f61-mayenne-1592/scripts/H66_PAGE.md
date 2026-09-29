@@ -152,6 +152,21 @@ Audit 1 (AUDIT.md, 27 Sept 2026) held the L10 fragment and named three things th
 - Files: passes `family/passes/f176v_signs{A,B}_L*.tsv`, `f177v_clearA_S09-S12.tsv`, `f178r_clearA_S01-S07.tsv`; crops by
   `family/sheets/f176v_full/README.md`, `family/sheets/f178r_strips/`; prompts `family/passes/PROMPTS_f176_f175.md` sections H177c-H177f.
 
+## H183-H194 (runner 7, 29 Sept 2026, 00:49-01:26 UTC by the clock)
+
+- **H183:** f.176r rebuilt on its whole clear (to fol. 177v V05, N 2,957): no class changes its top letter; the N cap cost coverage only.
+- **fol. 179 (H184-H186, H189): untested at this transcription, closed for this campaign.** Its text lies inside fol. 178r near R03 (scan), but the
+  build failed its gate and two adjudication controls failed (11/20, 15/20). Not refuted.
+- **H187:** f.176v's class letters agree with Tomokiyo at 38/44 of f.61's span positions (permutation null p95 16); partly built in by the aligner.
+- **H192:** replicate on both Desportes leaves by a pre-stated rule: VBAR_A t, EBR l, VBAR_B s, SBS o (ZHOOK i near miss: 0.36 / 0.61, wrong 0.06).
+- **The 4-family (H190, H191, H193, H194):** two signs. A 4 whose stem ends in a closed bowl below the line reads c/p; the r- or 3-tailed 4 reads a/n.
+  Blind attribute test: f.176v anchors 19/20; on f.176r (not used to build it) bowl -> c/p 5/5, no bowl -> a/n 23/27 (p 0.00063) under fol. 177r.
+  On f.61 (repeat control 18/20) bowl -> Tomokiyo c/p 5/5, no bowl -> a/n 9/9 (p 0.0005); the f.61 readers' 4TRI is the bowl sign, C43 the other.
+  For the verifier: whether f.61's 4TRI (v4 a/c/n/p/t) may be narrowed to c/p. Reader codes for these signs swap between sessions on other leaves
+  (H190), so any pooled 4TRI count mixes the two signs.
+- Files: `family/h183_f176r_n1.py`, `build_f179_key.py`, `h186_adj.py`, `h189_mark.py`, `h187_f61_f176v.py`, `h190_4fam.py`, `h191_4fam_f61.py`,
+  `h192_repl.py`, `h193_attr.py`, `h194_bowl_f61.py` (each `--check`), replies in `family/passes/`.
+
 ## Files to read
 
 | what | path | step |
