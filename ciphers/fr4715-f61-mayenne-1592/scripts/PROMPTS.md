@@ -723,3 +723,12 @@ Sheet <scratch>/h304/sheet_01.jpg (family/h304_ll_pair.py tiles; key family/h304
 centroid-recentred; clear capital I 3 (Il seroit L02, Il a L04, Impor L02), single l 3 (as H302), PHI 2 and C43 2 (H298's)). Disclosure: the runner saw
 sheet B L02 whole in H302 (the L02 mark shows there) and one placement sheet of the six TEXT tiles; the LL, PHI/C43 crops and the test sheet were not
 seen. A fresh reader (not H302's). Gates and read-outs in the script's docstring. Prompt: H256's verbatim with "12 numbered tiles (X01-X12)" and "X01 to X12".
+
+## H309 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- LL against doubled l's from f.211r and f.61, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h309/sheet_01.jpg (family/h309_ll_211r.py tiles; key family/h309_items.tsv; 16 tiles: LL 1, L02 opening mark 1 (descriptive), doubled
+l 5 (f.211r ville, elle, daumalle, Tellement; f.61 ella), single l 5 (f.211r la, le; f.61 les, les, le), PHI 2, C43 2). f.211r native fetched once
+(family/requests.log 12:46:17Z, sha1 = MANIFEST), scratch only. Disclosure: the runner looked at f.211r (1600-px reference, ruler strips of text lines)
+and at three placement sheets of the ten TEXT tiles; the LL, PHI/C43 crops and the test sheet were not seen; the L02 mark was seen on sheet B L02 in
+H302. Runner's own note before the call: at this size f.211r's l's look slender with no blob head, f.61's heavier with blob heads, so a split by leaf is
+possible -- gate 1 reports it as a CONTROL FAIL with the split noted. Prompt: H256's verbatim with "16 numbered tiles (Y01-Y16)" and "Y01 to Y16".
