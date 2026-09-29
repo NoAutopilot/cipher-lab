@@ -5017,3 +5017,12 @@ person's full reading with sign spans (ASKS 93's template asks for them). Not a 
 
 `images/person_pack_211r/README.md` gains a section: the 18 signs at their ruler ticks with the two passes' atlas codes, and the four gloss slots both
 model readers placed (forb-, comm-, elle, v?l with tick spans), stated as a frame to confirm or correct, not a reading; ASKS 93 is unchanged (open).
+
+## Campaign step H321 (29 Sept 2026, 13:10 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- EBR forms: H320's mapping confirmed (script-only)
+
+`family/build_key_v5.py` (load_key_v5, carried into v6/v7): the key rows carry the atlas classes EBR_A and EBR_B; `ebr='B'` takes EBR_B's cell (f.176r
+brackets form B, H180 11/11: l, y -> i/l) for f.61's unsplit EBR, and `ebr='A'` takes EBR_A plus the unsplit EBR rows of the form-A brackets (f.108r).
+The atlas defines EBR_A as the hairline-diagonal bracket (H22 group A) and EBR_B as the plain squared C/gamma (group B). So "form A" = atlas EBR_A and
+"form B" = atlas EBR_B, as H320/H318 assumed; no rerun. Noted for H323: v5's endorsement table pools the f.176r reader code DBL into SBS ("reader code
+DBL on f.176r is v4's SBS glyph") and lists DBL among the classes whose rows must equal v4's -- so which glyph v7's DBL e/r/u cell describes is H323's
+question. No call.
