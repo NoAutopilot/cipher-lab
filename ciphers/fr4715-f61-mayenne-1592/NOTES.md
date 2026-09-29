@@ -4352,3 +4352,14 @@ Pre-registered (PROMPTS section H236; `family/h236_4pi_108r.py`, key `family/h23
 answered N, one of the four 4-head anchors E). The five f.108r 4PI targets are **not scored**; their raw answers stay in the reply file and are not a result.
 f.61's two 4PI were answered E again, a repeat of H233 (not gated). H239: one redo with 12 anchors (gate 10/12); if it fails too, f.108r's 4PI shape is logged
 untestable in this format and not retried (CLAUDE.md rule 3's repeated-attempt clause).
+
+## Campaign step H239 (29 Sept 2026, 06:47-06:55 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.108r's 4PI is the 4-head hash; f.61's "4 over a Pi" stays unmatched
+
+H236 with 12 anchors (PROMPTS section H239; `family/h239_4pi_108r_2.py`, key `family/h239_items.tsv`, before the call; sheet not seen). One Opus call
+(`family/passes/h239_reply.tsv`), result `family/h239_4pi_108r_result.txt` (`--check` OK):
+- **Anchors 12/12 PASS** (4-head 6/6 A, 2-hook 6/6 D).
+- **f.108r 4PI: A (4-head hash) 5 of 5** -- at overlay letters d, p, d, d, d. Read-out: **"f.108r's 4PI is the 4-head hash"**.
+- f.61's two 4PI: E (a 4 over a Pi), the third time (H233, H236, here).
+What it says: in f.61's own hand (f.108r) the readers' 4PI is the 4-headed hash and the period gloss reads it d 4 of 5 (grade C, Tomokiyo's reprint) -- so the
+4-head hash = d/q holds on f.101r (34/47), f.188r (12/14) and f.108r (4/5 d). f.61's L01 HASH4 is that sign (H233). f.61's two "4PI" are a different sign,
+a 4 over a Pi, with no lettered occurrence on any leaf read so far; they stay unread (H234's count). For the verifier; nothing merged.

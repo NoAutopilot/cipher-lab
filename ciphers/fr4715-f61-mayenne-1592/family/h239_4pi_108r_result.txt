@@ -1,0 +1,4 @@
+anchors: 12 of 12 (gate >= 10): PASS
+f.108r 4PI: L02 x2079 letter d -> A; L02 x2646 letter p -> A; L02 x1107 letter d -> A; L03 x1283 letter d -> A; L03 x959 letter d -> A
+f.61 4PI: L01 x2214 -> E; L11 x864 -> E
+read-out: E 0, A 5 of 5 -> f.108r's 4PI is the 4-head hash
