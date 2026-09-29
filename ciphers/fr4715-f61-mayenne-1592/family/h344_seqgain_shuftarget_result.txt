@@ -1,0 +1,7 @@
+recf101r: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0015/0.0237 -0.0051/0.0175 -0.0036/0.0213)
+recf188r: shuffled target, v7 'order signal' in 0/3 (gain/p95: -0.0299/0.0433 0.0008/0.0313 -0.0059/0.0443)
+recf124r: shuffled target, v7 'order signal' in 0/3 (gain/p95: -0.0060/0.0210 0.0172/0.0280 -0.0097/0.0049)
+recf97r: shuffled target, v7 'order signal' in 0/3 (gain/p95: -0.0068/0.0225 0.0045/0.0139 -0.0297/0.0265)
+rec108v: shuffled target, v7 'order signal' in 1/3 (gain/p95: 0.0444/0.0321 0.0073/0.0635 0.0054/0.0563)
+recf108vg: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0008/0.0507 0.0272/0.0467 -0.0727/0.0326)
+read-out: H342 VOIDED on rec108v

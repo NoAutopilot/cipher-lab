@@ -5212,3 +5212,19 @@ first run. No call.
 CAMPAIGN.md's INSTRUMENTS paragraph gains the beam-check lesson (a within-bin key permutation is not an order control; the frequency-only key is not a
 fair beam control); `family/V9_PAGE.md` gains one line for the verifier: the H335/H338/H340 beam passes are not evidence for v7, f.97r fragile only, the
 f.124r gloss-count lead unaffected, and the model gloss readers retired for the secretary's hand. No call.
+
+## Campaign steps H342 and H344 (29 Sept 2026, 15:39-15:51 UTC by date -u and the commit stamps, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- an order statistic that passes its in-sample control and its shuffled-target control: held-leaf order signal for key v7 on f.124r and f.97r (script-only)
+
+**H342** (`family/h342_beam_seqgain.py`, written and pushed before running; `family/h342_beam_seqgain_result.txt`): per leaf, v7's beam score in real
+order minus its mean over 10 WITHIN-RUN shuffles (run cuts and each run's sign multiset fixed, so letter frequency cannot score), against the same gain
+under 100 binned-permuted keys. **Positive control PASS: in-sample f.101r gain 0.080 vs binned p95 0.052 (0/100 >= v7), f.188r 0.179 vs 0.080 (0/100).**
+Held leaves: **f.124r 0.032 vs 0.020 (0/100); f.97r 0.057 vs 0.037 (0/100); f.108v rec108v 0.134 vs 0.098 (1/100), recf108vg 0.096 vs 0.076 (2/100);
+f.106r rows 1-12 0.051 vs 0.056 (13/100) -- no order signal.**
+**H344** (`family/h344_seqgain_shuftarget.py`, written and pushed before running; `family/h344_seqgain_shuftarget_result.txt`): ARM-C1 -- H342's code on
+whole-leaf-shuffled drafts, 3 seeds; any 'order signal' voids the leaf. **0/3 on f.101r, f.188r, f.124r, f.97r, recf108vg; 1/3 on rec108v (voided).**
+What it means: on two large leaves v7 was not built from -- fr.3982 f.124r (de Diou's letter, 2105 keyed signs) and f.97r (1809) -- v7's cells make
+the sign order read more like fr16 French than the same order under frequency-matched permuted keys, and the statistic passes both its in-sample control
+and its shuffled-target control. This is **held-leaf evidence for v7's cells as a set** (cryptanalytic, script-only; not a reading, no token graded,
+no cell changed). f.108v (f.61's own hand) is fragile: one draft passes both, the other is voided. f.106r (the secretary's hand) shows no order signal
+at its N (power not yet measured for this statistic -- H346). The earlier beam-vs-binned passes (H338/H340) remain void (H341); this is a different
+statistic. For the verifier (V9_PAGE.md line added). No call.
