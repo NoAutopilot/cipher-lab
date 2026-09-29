@@ -122,8 +122,7 @@ def cut(t, nat, bands):
         gx = (t["seg"] - 1) * im.width + t["x"]; w = strip.crop((gx - 180, 0, gx + 180, st))
     else:
         d = "f108g" if t["line"] in ("L04", "L05") else "f108h"; j = json.load(open(f"{IM}/{d}/{d}_bands.json"))
-        b = j["boxes"][f"{d}_{t['line']}_{t['seg']}.jpg"]; src = nat.setdefault(d, Image.open(f"{os.path.dirname(IM)}/{j['image']}".replace(
-            "ciphers/fr4715-f61-mayenne-1592/", "") if not j["image"].startswith("ciphers") else f"{IM}/{os.path.basename(j['image'])}").convert("RGB"))
+        b = j["boxes"][f"{d}_{t['line']}_{t['seg']}.jpg"]; src = nat.setdefault(d, Image.open(f"{IM}/{os.path.basename(j['image'])}").convert("RGB"))
         x = b[0] + t["x"] / j["scale"]; w = src.crop((int(x - 60), b[1], int(x + 60), b[3]))
     w = w.resize((360, max(1, int(w.height * 360 / w.width))))
     return ImageOps.autocontrast(w.convert("L"), cutoff=1).convert("RGB"), 180
