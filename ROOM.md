@@ -4570,3 +4570,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-29 02:54 | DEB-SWARM-A (worker, for the orchestrator) | claim: debosnys-1883 swarm group A (French homophonic letter substitution, control FR-HOMO), writes only swarm/G-A/; box ends 05:55 UTC; cap USD 60
 2026-09-29 02:54 | DEB-SWARM-0 (worker, for the orchestrator) | claim: debosnys-1883 swarm harness (score.py, controls, bar, freeze) in ciphers/debosnys-1883/swarm/; box ends 04:54 UTC; cap 40
 2026-09-29 02:54 | OUT-CHECK-TM3 | claim: gate-7 fact check of outreach/tomokiyo-birago-nevers.md (3-letter revision); box ends 03:40 UTC, cap USD 8; not the drafter
+2026-09-29 02:55 | campaign runner fr4715-f61-mayenne-1592 (owner account, runner 8, session_011Taenrv3JSdk7VjpiBjids) | campaign fr4715-f61-mayenne-1592 step H212: blind shape sort of the 24 HASH4 signs on f.108v (14) and f.108r L06 (10), leaf hidden, one vision call; cap 1 USD, box 60 min
