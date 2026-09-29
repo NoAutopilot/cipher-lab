@@ -1,0 +1,5 @@
+f.108v (bowl relabel) HASH4 14; f.108r L04-L06 HASH4 10
+(a) f.108v d/q vs null: d/q wins 28/30 -> OPEN
+(b) f.108r i/x vs d/q: i/x wins 24/30 -> OPEN
+(b) f.108r i/x vs null: i/x wins 24/30 -> OPEN
+(b) f.108r d/q vs null: d/q wins 2/30 -> OPEN

@@ -4031,3 +4031,12 @@ bowl answers, map = the 14 cells + 4BOWL c/p + 4NOB a/n; 14 HASH4 signs.
   codes H127 gave 0.152 / 0.165 (best permuted 0.077 / 0.089). The relabel almost doubles the sequence gain; the permuted-map null does not move.
 For the verifier: HASH4 stays d/i/q in v5; the f.108v evidence now points to d/q in f.61's hand, against f.108r's i/x, so the two leaves disagree unless
 the hash family is split by shape. Nothing merged.
+
+## Campaign step H211 (29 Sept 2026, 02:54-02:56 UTC by the clock, runner 8 session_011Taenrv3JSdk7VjpiBjids) -- HASH4 on two f.61-hand leaves: opposite leans, all OPEN (script-only)
+
+`scripts/f61hash4_two_leaves.py` (committed before the run; result `scripts/f61hash4_two_leaves_result.txt`, `--check` fresh), H209's design, seed 211.
+- (a) f.108v (bowl relabel, 14 HASH4): **d/q vs null 28/30 -> OPEN** (one short of CONFIRMED).
+- (b) f.108r L04-L06 (H112 draft, 10 HASH4): **i/x vs d/q 24/30, i/x vs null 24/30, d/q vs null 2/30 -> all OPEN.**
+Descriptive: in f.61's hand the two leaves lean opposite ways for HASH4, d/q on f.108v and i/x on f.108r (where d/q scores below null 28 times in 30).
+With H195 (the i anchors on f.176v are not reliably bare hashes) this is consistent with two hash signs under one pass code, like the 4-family, but
+nothing here shows it. A shape sort is H212. HASH4 stays d/i/q; nothing merged.
