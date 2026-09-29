@@ -1,0 +1,56 @@
+q01	yes	wavy stroke across top left
+q02	no	nothing above, plain Y
+q03	yes	clear wavy tilde over o
+q04	yes	wavy tilde over slanted 10
+q05	no	nothing above, plain glyph
+q06	no	no mark, caret-like head only
+q07	no	nothing above, plain glyph
+q08	yes	looped wavy tilde over X
+q09	yes	clear wavy tilde over o
+q10	no	nothing above, plain glyph
+q11	no	U-shaped arc, not wavy
+q12	no	nothing above small o
+q13	no	nothing above, plain glyph
+q14	yes	clear wavy tilde over o
+q15	yes	bold tilde inside box above o
+q16	no	nothing above V, clean top
+q17	no	u over double bar, no wave
+q18	no	faint y shape, nothing above
+q19	unsure	wave just above box, over X
+q20	no	y shape, clear space above
+q21	no	plus-minus sign, nothing above
+q22	yes	wavy stroke inside box above ox
+q23	no	female symbol, ring top only
+q24	yes	curled wave inside box above ox
+q25	no	reversed-3 hook shapes, nothing above
+q26	no	y shape, nothing above it
+q27	unsure	wave outside box spans both o's
+q28	unsure	wave and bars outside box above
+q29	no	two straight dark bars above
+q30	unsure	tilde above, outside red box
+q31	unsure	curly looped stroke over bar
+q32	yes	wavy tilde above small x
+q33	no	nothing above, plain sign
+q34	unsure	tilde above, outside red box
+q35	no	nothing above, plain Y
+q36	no	smooth arch, not wavy
+q37	no	no separate mark above
+q38	yes	clear tilde above two ovals
+q39	unsure	double-hump mark outside box
+q40	yes	looped wavy stroke above oval
+q41	no	no separate mark above
+q42	yes	wavy looped stroke above slashes
+q43	no	nothing above, plain double-loop sign
+q44	yes	clear wavy stroke above xo
+q45	no	percent-like sign, nothing above
+q46	unsure	peaked hook stroke, not wavy
+q47	no	nothing above, heart-like top
+q48	no	nothing above, y-like sign
+q49	yes	bold wavy stroke above x
+q50	unsure	faint marks above, too faded
+q51	no	percent-like sign, nothing above
+q52	unsure	wavy mark sits outside box
+q53	no	nothing above, x-like sign
+q54	no	loop is part of sign
+q55	no	smooth arch, not a tilde
+q56	no	circle-cross sign, nothing above

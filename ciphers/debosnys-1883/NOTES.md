@@ -1363,3 +1363,24 @@ two readers were the same model, so their errors are correlated (1 disagreement 
 which lowers "unsettled" and raises "agreed-wrong" -- the kill line counts both. By the pre-registered letter the six
 folds do not give a low-noise text on the public pixels; DIGEST-2's "public pixels are the limit" stands.
 Nothing read; status `open`.
+
+### H57, tilde re-labelling on the verse (29 Sept 2026, DEBOSNYS-RUNNER-3b; 4 value-blind reader calls)
+
+Pre-registered in `h57/PREREG.md` (pushed 09b2a7eb before any read); `scripts/h57_tilde.py` -> `h57/result.json`
+(key and reads in `h57/`; crops regenerate from t_low.crop_real). **Model substitution:** the reader ran on
+claude-opus-5-5, not Fable as the row said (Fable rejected on account 3 until 3 Oct 08:00 UTC; brief's rule "else Opus
+5.5"; owner go relayed 12:48 UTC), and in 4 calls of 14 crops rather than one (per-call scoping, Usage 6). 56 crops:
+41 targets (every c4 box whose id has TILDE or CURL, or whose aligned Bourdeau code is N_*/TILDE) and 15 decoys, shuffled;
+one question, "tilde-like wavy mark above the base: yes / no / unsure".
+**Control gate passed:** decoys 0 yes, 14 no, 1 unsure (a CIRC-O) -- the reader does not see tildes where there are none.
+By id: O-TILDE 7 yes + 2 unsure, OX-TILDE 3 + 1, **X-CURL 3 yes + 1 unsure** (the curl on X is a tilde, as Bourdeau's N_X
+has it), OO-/IOI-TILDE 1 yes each, XX-TILDE 1 unsure; **Y-CURL 0 of 9 and S-CURL 0 of 7** (their curl is not a tilde);
+CIRC-O (Bourdeau N_OO / N_W) 2 unsure, PICT-FACE and X 1 unsure each, TAURUS no. Most unsures are tight segmentation boxes
+with the wavy mark just above the box (readers' notes on q19, q27, q28, q30, q34, q39, q52).
+**Per verse line: 0.75 tilde signs (yes only; bootstrap 95 pct 0.45-1.05), 1.2 (yes + unsure; 0.85-1.60)**, against
+Sektu's 1.5 and against the orthographic nasal-vowel rate of French alexandrines in tools/data/fr19v, 1.83 per line
+(3,105 lines; a 20-line mean falls in 1.30-2.40), at H30's ratio of about one non-X sign per syllable. With yes only the
+tilde count is well below the nasal band; counting every unsure as a tilde it reaches the band's low edge. So "a tilde
+marks every nasal vowel" is not supported on our segmentation; "a tilde marks some nasal vowels" (or another feature
+of roughly half that frequency) is not excluded. Sektu's 1.5 sits between our two counts. A re-cut of the 9 unsure
+crops with the box extended upward would narrow it (one reader call). Grade S, descriptive; nothing read; status `open`.
