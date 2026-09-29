@@ -1,0 +1,7 @@
+{
+ "FR-HOMO": {"gutenberg": 29843, "url": "https://gutenberg.pglaf.org/2/9/8/4/29843/29843-8.txt", "work": "Hugo, Les Contemplations (1856), v.1-2", "sha1": "9dad18480e28d2e62d85e7ef33be4bf4477a9673 (after latin-1 to utf-8)", "skip_lines": 300},
+ "EN-HOMO": {"gutenberg": 610, "url": "https://www.gutenberg.org/cache/epub/610/pg610.txt", "work": "Tennyson, Idylls of the King (1859-85)", "sha1": "31b0575cdd75169e976a341429800827d81fcb5e", "skip_lines": 300},
+ "PT-HOMO": {"gutenberg": 3333, "url": "https://gutenberg.pglaf.org/3/3/3/3333/3333-0.txt", "work": "Camoes, Os Lusiadas (1572; modernised spelling)", "sha1": "f7a0b1b3df4684927788648eaa17f3df5b891b0c", "skip_lines": 300},
+ "FR-SYLL": {"gutenberg": 29843, "url": "https://gutenberg.pglaf.org/2/9/8/4/29843/29843-8.txt", "work": "Hugo, Les Contemplations (1856), v.1-2, a later stretch", "sha1": "9dad18480e28d2e62d85e7ef33be4bf4477a9673 (after latin-1 to utf-8)", "skip_lines": 2000},
+ "NULL": null
+}

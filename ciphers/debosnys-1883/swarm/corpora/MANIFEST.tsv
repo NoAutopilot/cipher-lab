@@ -1,0 +1,11 @@
+lang	source	author	title	year	sha1_raw	letters
+fr	tools/data/fr19/pg14155_Madame_Bovary.txt.gz	Flaubert	Madame Bovary	1857	4930728d75ceebbee2166f5b0ad8123746e302d5	534361
+fr	tools/data/fr19/pg11131_Pierre_et_Jean.txt.gz	Maupassant	Pierre et Jean	1888	838004766829b307fb3fa7fbdc2f880458909b0f	216608
+fr	tools/data/fr19v/pg6099_Les_Fleurs_du_Mal.txt.gz	Baudelaire	Les Fleurs du Mal (verse)	1857	f65c0407d9f413a3c04c667c3bedc377325ffe12	115329
+en	tools/data/en/pg76_huckfinn.txt	Twain	Adventures of Huckleberry Finn	1884	0b4ee1f057ab8ed857bf9a58d447303bda32cc7f	427815
+en	https://www.gutenberg.org/cache/epub/98/pg98.txt	Dickens	A Tale of Two Cities	1859	58b6ca161d34850974465dd60c77225278cc2313	584912
+pt	https://www.gutenberg.org/cache/epub/16425/pg16425.txt	Castelo Branco	Amor de Perdicao	1862	e52f02cbeff09d6e562f989ff7a32052282acf8c	219732
+pt	https://www.gutenberg.org/cache/epub/21406/pg21406.txt	Castelo Branco	Novelas do Minho	1875	1765148cfee0f8f0952057f05f7bea98662742c8	217488
+es	https://www.gutenberg.org/cache/epub/17223/pg17223.txt	Valera	Pepita Jimenez	1874	5303e8fb122d371a8d3322d13111e971c12963d0	245568
+es	https://www.gutenberg.org/cache/epub/29506/pg29506.txt	Alarcon	El sombrero de tres picos	1874	f4c33a2c843549aa30b2526a841f71fd1a7f6b56	279115
+la	tools/data/la18/zaluski_epistolae_t1.txt.gz	Zaluski	Epistolae historico-familiares t.1 (1680-1740 chancery Latin; no 1850-1900 Latin prose corpus on disk)	1709	57b5c66fc4973b49a2207d6dceb5d37e8d2f0345	2295642
