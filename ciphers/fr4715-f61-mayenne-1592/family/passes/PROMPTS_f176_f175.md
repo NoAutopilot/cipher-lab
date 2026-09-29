@@ -323,3 +323,7 @@ at the H370 sheets.
 ## H371 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
 H359's prompt verbatim, two calls (part 2 = SCRATCH/h371_c1/sheet_01..02.jpg R01-R39, SCRATCH/h371_c2/sheet_01..02.jpg R01-R38), the other 77 agreed 4TRI
 of f.97r L17-L43; script `h371_97r_4tri_split.py`, key `h371_items.tsv`. The runner did not look at the H371 sheets.
+
+## H377 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h377/sheet_01..04.jpg (R01-R70): 64 remaining pass-A 4TRI of f.97r L17-L43 and 6 known f.61 strips in
+part-2 format (H376's fix; gate 2 >= 5/6); script `h377_97r_4tri_more.py`, key `h377_items.tsv`. The runner did not look at the H377 sheets.

@@ -1,0 +1,3 @@
+f.108v H59 draft: 68 H199 targets answered (yes 19, no 49); order gain v7 (mean of 3 seeds): as transcribed 0.1568, shape-relabelled 0.2213
+20 permuted-answer drafts: mean 0.1331, min 0.0786, max 0.1699; values 0.1137 0.1699 0.1626 0.1512 0.1661 0.1344 0.1529 0.1086 0.1025 0.1609 0.1245 0.1193 0.1153 0.1482 0.1625 0.1189 0.1057 0.1308 0.1363 0.0786
+shape draft beats 20/20 -> carries order information

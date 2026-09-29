@@ -5571,3 +5571,17 @@ result `family/h374_split_randctl_f101r_result.txt`): **as transcribed 0.0823, s
 bowl-read pool mean 0.0938, max 0.0997 -> shape beats 20/20, pre-stated "carries order information".** With H375 (f.124r, 20/20) and H374 (f.97r, 16/20),
 the bowl answers pick the tokens that fit v7's a/n cell better than chance on two de Diou leaves, one in-sample (f.101r, where the period gloss agrees,
 H365) and one held (f.124r); f.97r points the same way below the bar. For VERIFY-F61-V11; nothing applied. Script-only.
+
+## Campaign step H379 (29 Sept 2026, 17:55-17:58 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.108v (f.61's hand): relabelling the 4-family by bowl shape raises v7's order gain and beats every permuted-answer draft (script-only)
+
+`family/h379_108v_shape_relabel.py` (written and pushed before running; result `family/h379_108v_shape_relabel_result.txt`). Corrected before running
+(logged in the row): H199's columns index H59's draft `passes/f108v3z_draft_reconciled.tsv` (74/74), not rec108v (27/74). Shape draft: H199's 68
+answered targets relabelled bowl -> 4TRI (v7 c/p/t), no bowl -> C43 (a/n), whatever the readers' code. Control: 20 drafts with the same 19 yes / 49 no
+answers permuted across the same targets (seed 379).
+- **Order gain v7 (mean of seeds 342-344): as transcribed 0.1568; shape-relabelled 0.2213; permuted-answer drafts mean 0.1331, max 0.1699 -> shape beats
+  20/20, pre-stated "carries order information".**
+What it means: in f.61's own hand (Mayenne's secretary on fr.3983 f.108v), reading the bowl sign as v7's c/p/t cell and the no-bowl sign as its a/n
+cell -- regardless of which code the readers wrote (on f.108v they coded the bowl sign 4STEM, H199) -- makes the leaf's sign order fit French under v7
+clearly better than the transcription or any placement of the same answers. This is the shape rule PROPOSAL_v8_4tri.md states, supported now by order
+on a leaf in the target's hand, alongside f.124r and f.101r (H375/H378, 20/20). Caveat carried from the row: f.108v's order signal is thin (H353,
+8 runs); the permuted control is the one this design can fail against, and it did not. For VERIFY-F61-V11; nothing applied. Script-only.
