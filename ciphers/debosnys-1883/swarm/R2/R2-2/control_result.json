@@ -1,0 +1,120 @@
+{
+ "result": {
+  "unfolded": {
+   "n": 96,
+   "R1_err": 13,
+   "R2_err": 9,
+   "unsettled": 13,
+   "settled_wrong": 4,
+   "control_err_pct": 17.7
+  },
+  "folds only": {
+   "n": 96,
+   "R1_err": 11,
+   "R2_err": 7,
+   "unsettled": 13,
+   "settled_wrong": 2,
+   "control_err_pct": 15.6
+  },
+  "folds+rule": {
+   "n": 96,
+   "R1_err": 11,
+   "R2_err": 7,
+   "unsettled": 13,
+   "settled_wrong": 2,
+   "control_err_pct": 15.6
+  }
+ },
+ "misses": [
+  [
+   "s02_2",
+   "PHI",
+   "PHI",
+   "O-SLASH"
+  ],
+  [
+   "s03_1",
+   "CC-DASH",
+   "CC-DOT",
+   "CC-DOT"
+  ],
+  [
+   "s03_4",
+   "X",
+   "X-O",
+   "X-O"
+  ],
+  [
+   "s04_1",
+   "EIGHT",
+   "VENUS",
+   "THREE"
+  ],
+  [
+   "s05_1",
+   "CIRC-O",
+   "CIRC-O",
+   "BLOB"
+  ],
+  [
+   "s05_8",
+   "O-SLASH",
+   "PHI",
+   "O-SLASH"
+  ],
+  [
+   "s07_5",
+   "CIRC-O",
+   "BLOB",
+   "CIRC-O"
+  ],
+  [
+   "s07_6",
+   "CIRC-O",
+   "BLOB",
+   "CIRC-O"
+  ],
+  [
+   "s08_1",
+   "II-DASH",
+   "II-DASH",
+   "CC-DASH"
+  ],
+  [
+   "s08_2",
+   "S-CURL",
+   "S-CURL",
+   "DOUBLE-LOOP"
+  ],
+  [
+   "s09_7",
+   "C-BAR-X",
+   "ARCH-DASH",
+   "C-BAR-X"
+  ],
+  [
+   "s10_1",
+   "C-BAR-X",
+   "ARCH-DASH",
+   "C-BAR-X"
+  ],
+  [
+   "s11_1",
+   "EIGHT",
+   "VENUS",
+   "EIGHT"
+  ],
+  [
+   "s12_2",
+   "C-BAR-X",
+   "ARCH-DASH",
+   "C-BAR-X"
+  ],
+  [
+   "s12_4",
+   "EIGHT",
+   "VENUS",
+   "EIGHT"
+  ]
+ ]
+}

@@ -1,0 +1,96 @@
+s01_1	BLOB	H	BAR-SOLID	round dark dot
+s01_2	BAR-THIN	M	BAR-SOLID	vertical dark bar
+s01_3	BAR-THIN	M	DASH-V	vertical grey bar
+s01_4	O-TILDE	H	OX-TILDE	tilde over small circle
+s01_5	X-CURL	M	XX-TILDE	faint tilde over x
+s01_6	BAR-THIN	M	BAR-SOLID	short vertical bar
+s01_7	PCT-SLASH	M	PCT	slash with dots either side
+s01_8	A-LOOP	M	LAMBDA	caret with bottom dot
+s02_1	O-TILDE	M	LOOP-TAIL	tilde over circle plus dot
+s02_2	PHI	H	O-SLASH	circle with long slash
+s02_3	CIRC-O	H	BLOB	small open circle
+s02_4	X	M	X-CURL	grey plain cross
+s02_5	X-CURL	M	OX-TILDE	tilde above small x
+s02_6	BLOB	H	BAR-SOLID	small dark dot
+s02_7	X	H	X-SLASH	bold slanted cross
+s02_8	X-CURL	M	OX-TILDE	tilde above small x
+s03_1	CC-DOT	H	AMP	double comma over dash
+s03_2	CIRC-O	H	GEAR-DOT	small ring
+s03_3	X	H	X-DOT	grey plain cross
+s03_4	X-O	M	X-DOT	x with small circle
+s03_5	BLOB	H	BAR-SOLID	small dark dot
+s03_6	X	H	X-BAR	grey plain cross
+s03_7	CIRC-O	M	GEAR-DOT	fuzzy ring
+s03_8	CIRC-O	M	GEAR-DOT	small fuzzy ring
+s04_1	VENUS	M	DOLLAR	circle stem crossbar base
+s04_2	O-TILDE	M	DOTS-TILDE	wave with small o below
+s04_3	QUESTION	H	HOOK-L	hook above bar below
+s04_4	PCT	H	PCT-SLASH	percent sign
+s04_5	PCT	H	PCT-SLASH	percent sign dark
+s04_6	X	H	X-DOT	plain cross
+s04_7	PCT	H	PCT-SLASH	faint percent sign
+s04_8	X	M	X-DOT	cross with blob corner
+s05_1	CIRC-O	M	BLOB	small tilted oval
+s05_2	BAR-THIN	M	SLASH	thin vertical stroke
+s05_3	PCT	H	PCT-SLASH	percent sign
+s05_4	X	H	X-BAR	plain cross
+s05_5	X	H	X-DOT	small faint cross
+s05_6	Y-CURL	H	TRIDENT	thick curled Y
+s05_7	WAVE	H	DASH-H	two wavy strokes
+s05_8	PHI	M	DOLLAR	twisted looped vertical sign
+s06_1	X	H	X-DOT	plain cross
+s06_2	X	H	X-DOT	faint plain cross
+s06_3	QUESTION	H	HOOK-L	hook above bar below
+s06_4	DASH-H	M	BAR-SOLID	short horizontal dash
+s06_5	C-DOT	M	BLOB-LOOP	open c with inner mark
+s06_6	NOTE	M	LOOP-STEM	loop with slanted stem
+s06_7	Y-CURL	M	HOOK-L	small gamma curl
+s06_8	O-TILDE	M	DOTS-TILDE	wave with small o below
+s07_1	O-DASH2	H	U-DASH	bar above small circle
+s07_2	PCT	H	PCT-SLASH	percent sign two circles
+s07_3	II-DASH	H	II-O	two ticks above dash
+s07_4	PCT-SLASH	H	PCT	percent with cross dot
+s07_5	BLOB	M	GEAR-DOT	dark ring blob
+s07_6	BLOB	M	BAR-SOLID	small slanted oval
+s07_7	X	H	X-BAR	plain large X
+s07_8	CIRC-O	M	GEAR-DOT	ring with dark border
+s08_1	II-DASH	H	II-O	two ticks above dash
+s08_2	S-CURL	M	DOUBLE-LOOP	two curls joined base
+s08_3	X	H	X-DOT	small plain X
+s08_4	C-DOT	H	BLOB-LOOP	arc with central dot
+s08_5	PCT-SLASH	H	PCT	slash with two dots
+s08_6	QUESTION	H	HOOK-P	question hook over dash
+s08_7	PCT-SLASH	H	PCT	slash with two dots
+s08_8	X-CURL	H	DOTS-TILDE	tilde curl above small x
+s09_1	X	H	X-BAR	plain X
+s09_2	X	H	X-BAR	plain X
+s09_3	CROSS-T	H	DAGGER-O	dark cross with base
+s09_4	CC-DASH	H	AMP	two arcs above dash
+s09_5	X	M	X-DOT	X with right dot
+s09_6	PCT-SLASH	H	PCT	slash with lower dot
+s09_7	ARCH-DASH	M	X-BAR-CC	arch dash over small x
+s09_8	X	M	X-BAR	small faint X
+s10_1	ARCH-DASH	H	X-BAR-CC	arch over bar over x
+s10_2	O-SLASH	H	PHI	loop with diagonal slash
+s10_3	BLOB	H	BAR-SOLID	small solid dark dot
+s10_4	CC-DASH	H	AMP	two c's over dashes
+s10_5	X	H	X-BAR	plain small x
+s10_6	CC-DASH	H	AMP	two c's over dashes
+s10_7	X	H	X-BAR	plain x
+s10_8	X-CURL	H	XX-TILDE	tilde curl over x
+s11_1	VENUS	M	DOLLAR	loop over cross squiggle base
+s11_2	X	H	X-BAR	tall thin x
+s11_3	BAR-THIN	H	BAR-SOLID	thick slanted vertical bar
+s11_4	CIRC-O	H	GEAR-DOT	small round o
+s11_5	PCT	H	PCT-SLASH	circle slash x percent
+s11_6	X	H	X-BAR	plain x
+s11_7	X-CURL	H	XX-TILDE	curl tilde over small x
+s11_8	X	H	X-BAR	plain x
+s12_1	Y-CURL	H	S-CURL	curl with trailing dot
+s12_2	ARCH-DASH	H	X-BAR-CC	arch over bar over x
+s12_3	O-SLASH	H	PHI	loop with long slash
+s12_4	VENUS	M	DOLLAR	loop over cross squiggle base
+s12_5	PCT-SLASH	H	PCT	slash with dot right
+s12_6	LOOP-STEM	H	O-SLASH	loop with tail stem
+s12_7	DASH-H	H	BAR-SOLID	short thick dash
+s12_8	X-CURL	M	XX-TILDE	faint curl above x

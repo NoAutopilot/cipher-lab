@@ -1,0 +1,8 @@
+You are reading a hand-drawn 1883 cipher (a value-blind transcription job; do not guess meanings).
+Open ONLY the files named here; do not list directories or open any other file.
+Reference: the 160-id inventory sheet, 9 tiles /tmp/claude-0/-home-user-cipher-lab/54e974ee-54bc-5358-b900-eeff60f3196e/scratchpad/r22/ref/inv_00.png ... /tmp/claude-0/-home-user-cipher-lab/54e974ee-54bc-5358-b900-eeff60f3196e/scratchpad/r22/ref/inv_08.png (each row: the id at left, then example images), and the id list /tmp/claude-0/-home-user-cipher-lab/54e974ee-54bc-5358-b900-eeff60f3196e/scratchpad/r22/ref/ids.txt. Read all nine tiles first.
+Then, for each line assigned to you, open its 8 crops in order and decide each one before moving to the next line.
+Each crop shows one target sign inside a RED box with up to two neighbouring signs on each side (the neighbours are context only).
+For each crop name the ONE inventory id that best matches the sign inside the red box, with confidence H (unmistakable), M (best match, one plausible alternative) or L (guess), and your best alternative id.
+If the box holds more than one sign write MULTI. If it holds no sign (dust, a stray stroke, the page edge, a line of a drawing, or one bar of the neighbouring sign) write _ . A small dot, comma or short blob standing alone is still named by its inventory id (BLOB, BAR-SOLID, HOOK-L ...).
+Write one line per crop, tab-separated: <crop id> TAB <sign id> TAB <H/M/L> TAB <alt id> TAB <five-word shape note>. Read every crop; never skip one.

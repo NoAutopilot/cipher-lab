@@ -1,0 +1,96 @@
+s01_1	BLOB	M	BAR-SOLID	round dark dot, small hollow
+s01_2	BAR-THIN	M	DASH-V	thick vertical stroke, slightly slanted
+s01_3	BAR-THIN	M	DASH-V	straight thin vertical bar alone
+s01_4	O-TILDE	H	OX-TILDE	tilde above small open o
+s01_5	X-CURL	M	XX-TILDE	faint curl above an x
+s01_6	BAR-THIN	M	DASH-V	short thin vertical bar alone
+s01_7	PCT-SLASH	H	PCT	slash with dots either side
+s01_8	A-LOOP	H	LAMBDA	lambda with dot at foot
+s02_1	O-TILDE	M	MULTI	tilde over o, dot right
+s02_2	O-SLASH	M	PHI	oval crossed by long diagonal
+s02_3	CIRC-O	M	BLOB	small open ring, raised
+s02_4	X	H	X-BAR	plain grey X cross strokes
+s02_5	X-CURL	H	XX-TILDE	curl above x, dot below
+s02_6	BLOB	M	BAR-SOLID	small dark round dot
+s02_7	X	H	SLASH	bold dark cursive X shape
+s02_8	X-CURL	H	OX-TILDE	looped tilde above small x
+s03_1	CC-DOT	M	CC-DASH	two 6-shapes over bar
+s03_2	CIRC-O	M	BLOB	small raised open ring
+s03_3	X	H	X-BAR	plain X, strokes crossing
+s03_4	X-O	M	X-DOT	X with small o below
+s03_5	BLOB	M	BAR-SOLID	small dark round dot
+s03_6	X	H	X-BAR	plain grey X crossing strokes
+s03_7	CIRC-O	M	GEAR-DOT	tilted open oval ring
+s03_8	CIRC-O	M	BLOB	small tilted oval ring
+s04_1	THREE	L	NINE	loop over curl, base bar
+s04_2	O-TILDE	M	O-DASH2	double wave, dash, small o
+s04_3	QUESTION	M	SIX-CURL	hook top with underdash below
+s04_4	PCT	H	PCT-SLASH	two circles diagonal slash between
+s04_5	PCT	H	PCT-SLASH	two circles diagonal slash between
+s04_6	X	H	X-SLASH	plain crossed diagonal strokes X
+s04_7	PCT	H	PCT-SLASH	two circles diagonal slash between
+s04_8	X	H	X-DOT	crossed strokes, heavy lower end
+s05_1	BLOB	M	CIRC-O	small open oval alone low
+s05_2	BAR-THIN	H	DASH-V	single short vertical thin stroke
+s05_3	PCT	H	PCT-SLASH	two circles diagonal slash between
+s05_4	X	H	X-SLASH	tall plain crossed strokes X
+s05_5	X	H	X-DOT	small plain crossed strokes X
+s05_6	Y-CURL	M	TRIDENT	heavy y curl, no dot
+s05_7	WAVE	H	DASH-H	two stacked wavy lines tailed
+s05_8	O-SLASH	M	X-LOOP	loop crossed by diagonal stroke
+s06_1	X	H	X-SLASH	plain crossed diagonal strokes X
+s06_2	X	H	X-SLASH	plain crossed diagonal strokes X
+s06_3	QUESTION	M	SIX-CURL	hook top with underdash below
+s06_4	DASH-H	M	BAR-SOLID	short isolated horizontal dash stroke
+s06_5	C-DOT	M	C-BAR-X	C with inner stroke tail
+s06_6	NOTE	H	EIGHT	round loop with slanted stem
+s06_7	Y-CURL	M	NINE	cursive y without trailing dot
+s06_8	O-TILDE	H	OX-TILDE	tilde above small circle o
+s07_1	O-DASH2	M	O-DASHBELOW	small o under single bar
+s07_2	PCT	H	PCT-SLASH	percent sign two open rings
+s07_3	II-DASH	H	CC-DASH	two ticks over double bar
+s07_4	PCT-SLASH	H	PCT	percent with cross at foot
+s07_5	CIRC-O	M	BLOB	small thick solid ring shape
+s07_6	CIRC-O	M	BLOB	small slanted oval zero shape
+s07_7	X	H	X-SLASH	large plain X long strokes
+s07_8	CIRC-O	M	GEAR-DOT	round ring open centre small
+s08_1	CC-DASH	H	CC-DOT	two commas over double bar
+s08_2	DOUBLE-LOOP	M	S-CURL	two top curls joined U-bottom
+s08_3	X	H	X-DOT	small plain X two strokes
+s08_4	C-DOT	M	BLOB-LOOP	reversed C with solid dot
+s08_5	PCT-SLASH	H	PCT	slash with tick and bar
+s08_6	QUESTION	M	NINE-DASH	question hook over underline bar
+s08_7	PCT-SLASH	H	PCT	slash with tick and bar
+s08_8	X-CURL	H	OX-TILDE	curled tilde loop above x
+s09_1	X	H	X-DOT	plain X two crossing strokes
+s09_2	X	H	X-SLASH	plain X two crossing strokes
+s09_3	CROSS-T	H	DAGGER-O	cross with base foot bar
+s09_4	CC-DASH	H	II-DASH	two c-curves over double bar
+s09_5	X	M	X-DOT	X with small dot right
+s09_6	PCT-SLASH	H	PCT	slash with dots either side
+s09_7	C-BAR-X	M	X-BAR-CC	arch over bar over x
+s09_8	X	H	X-DOT	small plain X compact strokes
+s10_1	C-BAR-X	M	X-DASH	arch over bar over x
+s10_2	O-SLASH	H	X-LOOP	oval crossed by long diagonal
+s10_3	BLOB	M	BAR-SOLID	small solid round dark dot
+s10_4	CC-DASH	H	II-DASH	two c's over double bar
+s10_5	X	H	X-DOT	plain small x cross
+s10_6	CC-DASH	H	II-DASH	two c's over double bar
+s10_7	X	H	X-DOT	plain small x cross
+s10_8	X-CURL	H	O-TILDE	curl tilde above plain x
+s11_1	EIGHT	L	QQ-O	loop atop zigzag ʒ base
+s11_2	X	H	X-SLASH	tall thin plain x cross
+s11_3	BAR-THIN	M	DASH-V	single slanted thin vertical bar
+s11_4	CIRC-O	M	BLOB	small open circle, bracketed edge
+s11_5	PCT	M	PCT-SLASH	circle, slash, small x below
+s11_6	X	H	X-SLASH	plain upright x cross
+s11_7	X-CURL	M	X-O	curl with loops above x
+s11_8	X	H	X-SLASH	plain upright x cross
+s12_1	Y-CURL	H	NINE	curly y with dot right
+s12_2	C-BAR-X	M	X-DASH	arch over bar over x
+s12_3	O-SLASH	H	X-LOOP	tall oval crossed by diagonal
+s12_4	EIGHT	L	QQ-O	loop atop zigzag ʒ base
+s12_5	PCT-SLASH	M	PCT	slash with dot, bar right
+s12_6	LOOP-STEM	H	O-SLASH	open loop with tail stroke
+s12_7	DASH-H	M	BAR-SOLID	short thick horizontal dash stroke
+s12_8	X-CURL	M	OX-TILDE	faint curl tilde above x
