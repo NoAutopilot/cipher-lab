@@ -175,3 +175,7 @@ runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H
   letters (published).
 - **Key hunt (H404):** all 119 BnF hits for "Mayenne chiffre déchiffrement" read; one new Mayenne-chancery item, fr.3980 f.10 (to Sega, 11 Jan 1591,
   cipher + decipherment, digitised), is figures and symbols, a separate cipher per Tomokiyo -- not f.61's family.
+- **The two span misses were transcription slips (H407/H408):** L07/4 is the 43 sign (blind forced choice 3/3 windows, known items 9/9), not BETA;
+  pass A missed a loops-on-stem sign at L03/16 (blind count 7 vs 6, controls 6 and 4 exact). Corrections in scripts/f61_positions_corrections.tsv
+  (pass files untouched); with them key v8's f.61 reading key reproduces Tomokiyo's spans 55/55 (permuted p95 0.436), meter 12 / 60 / 2 / 26 of 100.
+  In-sample in part (4PIPI from S5); both positions inside published spans -- a transcription and key-check point, not a reading.

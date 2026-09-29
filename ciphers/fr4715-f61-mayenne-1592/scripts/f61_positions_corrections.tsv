@@ -1,0 +1,5 @@
+# f.61 transcription corrections (runner 15, H407/H408, 29 Sept 2026). Pass files are never edited; scripts that want the corrected sequence
+# apply these rows. Each row: the blind confirmation that licenses it (family/h407_span_miss_result.txt, gates A 9/9, B 6 and 4).
+line	pos	action	class	evidence
+L07	4	relabel	C43	H407 part A: L07/4 = the 43 sign at 3 of 3 windows (reader code BETA; Tomokiyo 'a' in 'jal')
+L03	16	insert	PHI	H407 part B: 7 cipher signs from L03/10 to the clear 'a les entendre' (pass A 6), the last a loops-on-stem sign

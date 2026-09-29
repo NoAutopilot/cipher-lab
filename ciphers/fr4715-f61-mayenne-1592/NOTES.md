@@ -5893,3 +5893,29 @@ the log). No key, no reading. Cost ~0.6.
 two-way band is at its floor for shape work; it moves only by (a) a reading of a position with a control (H125: none exists at the length of
 f.61's out-of-span material alone), (b) new lettered material in f.61's hand (ASKS 88/89/93; fr.4699 by reproduction), or (c) a verifier grading
 Tomokiyo's in-span letters (published). H406: runner-15 section added to `family/V9_PAGE.md` for LANE VO3. Cost ~0.07.
+
+## Campaign steps H407, H408, H409 (29 Sept 2026, 19:29-19:21 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- the two span letters key v8 missed were transcription slips on f.61; corrected, the key reproduces 55/55 (1 vision call)
+
+Script-first (NOTES H405 context): key v8's f.61 reading key reproduces 53 of Tomokiyo's 55 span letters; the two misses were **L07/4** (reader
+code BETA, cell m/s; Tomokiyo's 'a' of "jal") and **S2's final 'e'** ("capable": no sign after L03/15 in pass A). The runner then looked at both
+places on the f.61 native region image (disclosed): L07/4 is drawn like the "43" glyph, not like L11/1's beta; after L03/15's bracket a
+loops-on-a-stem sign stands before the clear words "a les entendre". Design committed before the call (`family/h407_span_miss.py`, key
+`family/h407_items.tsv`, prompt note H407; 452d02b6's parent), two changes before the call recorded in its docstring (control B3 moved off the
+letter-shaped CA; one known PHI tile replaced for marker placement). One blind Opus call, reply `family/passes/h407_reply.tsv`, result
+`family/h407_span_miss_result.txt` (`--check` OK):
+- **Part A (forced choice vs reference X = L11/1 beta, Y = L03/8 43): known items 9/9 (6 C43 -> Y, 3 PHI -> neither); L07/4 at three windows Y, Y, Y
+  -> pre-stated "L07/4 is the 43 sign (C43, a/n): the BETA code there is a reader slip".**
+- **Part B (count cipher signs from a marked sign to the first clear word): controls L05 from pos 13 = 6 and L08 from pos 11 = 4, both exact; L03
+  from pos 10 = 7 (pass A 6), last "a looped sign like phi, loops on both sides of a long descending stem, just before 'a les entend...'" -> pre-stated
+  "pass A missed a sign at L03/16 (PHI-like)".**
+H408 (script-only): the two corrections written to `scripts/f61_positions_corrections.tsv` (pass files untouched) and applied by
+`family/h408_span_miss_apply.py` (`--check` OK), result `family/h408_span_miss_apply_result.txt`:
+- **Five spans under key v8's f.61 reading key: uncorrected 53/55 (2000 permuted keys p95 0.418 -- FAMILY-13's figure reproduced); corrected 55/55 =
+  1.000 (permuted mean 0.280, p95 0.436, 0/2000 at or above).**
+- **Meter: uncorrected 12 / 59 / 2 / 26 of 99; corrected 12 / 60 / 2 / 26 of 100** (L07/4 stays two-way, BETA m/s -> C43 a/n; L03/16 adds one
+  two-way PHI).
+Caveats for the verifier: the 55/55 is in-sample for part of the f.61 reading key (4PIPI's a/n at L11/9 comes from Tomokiyo's S5 alone; the F61READ
+rows from f.176r), and the two positions were chosen because the key missed them -- the corrections rest on the blind shape reads and their controls,
+not on the key. Both corrections sit inside published spans (Tomokiyo's letters), so they improve the transcription and the key check, not a
+reading claim. No key, class or grade changed; the pass files and key v8 are untouched. H409: HYPOTHESES.md rows and family/V9_PAGE.md line
+written. 1 call, cost estimate 1.5 USD.
