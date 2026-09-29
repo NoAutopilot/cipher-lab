@@ -4639,3 +4639,10 @@ short word; the corpus cannot say. No call. **No runnable row after this step; t
 session's findings, script/notes), H275 (a proposal file of the key-note changes the build worker would make after V8 and this session's rows: ZHOOK
 glyph link, the 4PI split with L11 9's two witnesses, C6 unread on f.61), H276 (needs: person -- the f.106r looped-hash desk pack of H243, whose ASKS
 row the orchestrator holds).
+
+## Campaign step H274 (29 Sept 2026, 10:27 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the page for VERIFY-F61-V9 (notes only)
+
+`family/V9_PAGE.md`: one table of the claims this session put up for audit (CA a null drawn as an a; C6 = e unsupported on f.61; S5 = "me l'entendoit"
+with L11 9 = d against the published n; positions on 95 of 99 signs; no word spacing; the null-band table), each with its evidence, controls and files;
+the non-tests logged; the meter variants the verifier chooses between (V8's 12/58/2/27 and its a/n variant; the grade-I lead moves no count unless the
+verifier admits a one-letter grade-I candidate to the firm band); and what is not claimed. Compiled from NOTES.md and HYPOTHESES.md, adds nothing. No call.
