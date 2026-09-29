@@ -294,3 +294,7 @@ GATE and read-out as in the script's docstring.
 ## H360 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
 H359's prompt verbatim, four calls, one per chunk c1..c4 (part 2 = SCRATCH/h360_cK/sheet_01..03.jpg, R01-R55); script `h360_124r_4tri_split.py`, key
 `h360_items.tsv` committed with this section. The runner did not look at the H360 sheets.
+
+## H362 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h362/sheet_01..04.jpg (R01-R70), fr.3982 f.101r targets; script `h362_bowl_101r.py`, key `h362_items.tsv`.
+The runner did not look at the H362 sheets.
