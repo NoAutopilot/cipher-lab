@@ -263,3 +263,16 @@ directly above the triangle. Question: does that sign carry two small closed loo
 stroke rising above it or nothing? Answer yes or no; if the sign above the triangle is not hash-like or cannot be told, answer n. No letters are
 involved. Reply inline ONLY with a TSV block 'item<TAB>answer', one row per item, nothing else."
 GATE >= 17/20 anchors in the pre-stated direction, else CONTROL FAIL and stop.
+
+## H216 (runner 8 session_011Taenrv3JSdk7VjpiBjids, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H193's bowl question on f.108r L04-L06's 15 4-family signs (H108 draft codes 4STEM 6, C43 4, 4PI 4, 4TRI 1). Script `h216_bowl_108r.py`, key
+`h216_items.tsv` committed with this section. Disclosure: the runner looked at the target sheet twice (legibility; item labels were clipped and the
+strip shortened by 10 px). The hash half of the row is H212's (these L06 HASH4 positions: A 1, B 9).
+1 Opus vision call, inline reply: H199's prompt with part 2 changed to "<h216/sheet_01.jpg> (P01-P15)", i.e.: "You are a blind shape reader. Use no
+tool but your image reader on the images named; run no command, write no file. Part 1: each item on <h193/sheet_01..03.jpg> (Q01-Q60, 20 per sheet) is
+a strip of a cipher row with a red triangle UNDER one sign; look only at the sign directly above that triangle. Part 2: each item on
+<h216/sheet_01.jpg> (P01-P15) is a strip of a cipher row with a red triangle ABOVE the strip, pointing down at one sign of the cipher row (any smaller
+writing above or below the row is not the sign); look only at the sign the triangle points to. Question for every item: does that sign's vertical stem
+run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer yes or no; if the marked sign cannot be told,
+answer n. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then P01..P15, nothing else."
+GATE: repeat control >= 17/20, else CONTROL FAIL.
