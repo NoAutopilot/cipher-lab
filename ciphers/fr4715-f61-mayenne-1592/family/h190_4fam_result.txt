@@ -1,0 +1,4 @@
+f.176v true: agreed 4TRI c/p 64 a/n 38; split 4TRI|C43 c/p 2 a/n 79; Fisher p 1.2e-19
+f.176v wrong f.184r: agreed 4TRI c/p 24 a/n 42; split 4TRI|C43 c/p 2 a/n 8; Fisher p 0.48
+f.176r true: agreed 4TRI c/p 48 a/n 206; split 4TRI|C43 c/p 2 a/n 11; Fisher p 1
+f.176r wrong f.184r: agreed 4TRI c/p 39 a/n 103; split 4TRI|C43 c/p 1 a/n 2; Fisher p 1

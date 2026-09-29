@@ -3782,3 +3782,16 @@ adjudication controls FAIL). Not refuted: H184's scan puts its text inside fol. 
 boxes from a segmenter on the native at 2x, or a person's reading of the 4TRI/C43 and HASH4/ZHOOK pairs on a few rows. No fifth model-read approach
 is briefed. What the controls show generally: the readers' 4-family and hash-family codes do not hold even on signs two passes agree on, so class
 counts that depend on 4TRI vs C43 or HASH4 vs ZHOOK (in any leaf) carry that uncertainty.
+
+## Campaign step H190 (29 Sept 2026, 01:15-01:17 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- the 4-family: two letter pairs, unstable codes (script-only)
+
+`family/h190_4fam.py` (result `family/h190_4fam_result.txt`, `--check` OK). DP pairs split into agreed-4TRI columns and 4TRI|C43 split columns, and
+counted as {c,p} vs {a,n}:
+- **f.176v, true text: agreed 4TRI c/p 64, a/n 38; split 4TRI|C43 c/p 2, a/n 79; Fisher p 1.2e-19.** Wrong text f.184r: 24/42 vs 2/8, p 0.48.
+- **f.176r, true text: agreed 4TRI c/p 48, a/n 206; split c/p 2, a/n 11; p 1.** Wrong text: p 1.
+Reading: the 4-family holds at least two signs, a c/p sign and an a/n sign, and the period decipherment separates them on f.176v. The readers'
+codes do not map onto them consistently across sessions: on f.176v one pass calls the a/n sign C43 and the other 4TRI, while on f.176r both
+passes mostly called the a/n sign 4TRI (the agreed C43 class there reads a/n, n 26 a 20). A class count that pools "4TRI" across leaves or reader
+sessions therefore mixes the two signs. That fits the verifier's decision not to endorse 4STEM p/c (VERIFY-F61-V5) and the fol. 179 adjudication
+failures (H186, H189). What would settle the 4-family is a blind attribute test (H180's design) on the shape difference between the c/p and a/n
+signs, with anchors taken from f.176v's two groups, not another code pass. Descriptive; nothing merged.
