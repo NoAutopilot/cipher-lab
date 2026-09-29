@@ -129,3 +129,8 @@ GATE (both parts, in the builder's docstring): (1) location scan peak at or afte
 non-overlapping window by >= 0.05; (2) build from R01, margin >= +0.10 over f.184r, fol. 177r and fol. 177v V06- (f.176v's clear).
 Dry run before the calls, with f.176v L01-L08 standing in: the scan peaks at letter 3000 (V06), (2) margin -0.164 (control (c) 0.487 catches it): FAIL,
 as it should. PASS -> the remaining 13 rows next; FAIL -> logged, fol. 179's decipherment is not shown to be fol. 178r.
+
+## H185 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE RUN
+`build_f179_key.py L01-L08 --start R03` (H184's builder with a --start option; H184's own R01 result reproduces unchanged, --check OK): part (2) only,
+the build from fol. 178r R03 (H184's scan peak, head of R03 at letter 5,770), controls (a) f.184r, (b) fol. 177r, (c) fol. 177v V06-, margin >= +0.10.
+The start comes from H184's scan, so this confirms the location with fixed controls. It is not an independent test. No calls.
