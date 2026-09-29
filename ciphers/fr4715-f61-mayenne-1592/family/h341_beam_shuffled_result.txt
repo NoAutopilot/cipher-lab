@@ -1,0 +1,8 @@
+recf106rall: shuffled order, v7 > binned p95 in 2/5 (real/p95: -0.968/-0.953 -1.014/-1.008 -0.977/-1.003 -0.981/-0.985 -1.021/-1.013)
+recf124r: shuffled order, v7 > binned p95 in 4/5 (real/p95: -1.021/-1.037 -1.015/-1.016 -1.008/-1.013 -1.016/-1.028 -0.993/-0.985)
+recf97r: shuffled order, v7 > binned p95 in 1/5 (real/p95: -0.957/-0.934 -0.935/-0.915 -0.956/-0.957 -0.957/-0.943 -0.952/-0.937)
+rec108v: shuffled order, v7 > binned p95 in 2/5 (real/p95: -1.023/-1.062 -1.097/-1.075 -1.060/-1.073 -1.112/-1.071 -1.099/-1.086)
+recf108vg: shuffled order, v7 > binned p95 in 0/5 (real/p95: -1.024/-0.957 -0.984/-0.946 -0.958/-0.927 -0.995/-0.953 -0.951/-0.937)
+recf101r: shuffled order, v7 > binned p95 in 3/5 (real/p95: -1.027/-1.014 -0.992/-1.001 -1.012/-1.015 -1.018/-1.029 -1.024/-1.017)
+recf188r: shuffled order, v7 > binned p95 in 0/5 (real/p95: -0.998/-0.969 -0.960/-0.955 -0.979/-0.964 -1.014/-0.969 -0.917/-0.896)
+read-out: binned beam arm VOIDED as a gate at this N on recf106rall recf124r rec108v recf101r (v7 wins on shuffled order: frequency, not sequence)

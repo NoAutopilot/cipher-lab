@@ -5188,3 +5188,21 @@ f.106r itself falls just short (-0.9491 vs p95 -0.9477, 12/200 at or above). In-
 f.106r's sign draft is the least agreed of the three (0.85 / 0.76 by rows vs f.101r's and f.188r's), so the f.106r figure is a weak lead in the
 secretary's hand that sits below the in-sample rate -- neither a confirmation of v7 there nor a negative. For the verifier with H325/H328/H330's f.124r
 lead: two held-leaf checks, both at their gate's edge. No call.
+
+## Campaign steps H338-H341 (29 Sept 2026, 15:39-15:47 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the gloss-free beam check on the held leaves, then its shuffled-order control VOIDS the binned arm on four of seven leaves (script-only)
+
+**H338-H340** (`family/h338_beam_held.py`, written before running; `family/h338_beam_held_result.txt`, `--check` OK): H335's code on the three family
+leaves not in key_period_v7.tsv's leaf column, binned arm only. f.124r real -0.998 vs binned p95 -1.021 (0/200); f.97r -0.899 vs -0.906 (8/200);
+f.108v (f.61's hand) rec108v -0.939 vs -1.016 (0/200), recf108vg -0.919 vs -0.942 (0/200; in-sample power at its 8 runs 0.40/0.82). All four read
+'consistent' on the binned arm as stated.
+**H341** (`family/h341_beam_shuffled.py`, written and pushed before running; `family/h341_beam_shuffled_result.txt`): rule 3's ARM-C1 order control --
+each leaf's draft signs shuffled within the leaf (5 seeds), H335's code unchanged. v7 still beats its binned p95 on SHUFFLED order in **f.106r 2/5,
+f.124r 4/5, f.108v rec108v 2/5, in-sample f.101r 3/5**; f.97r 1/5, recf108vg 0/5, f.188r 0/5. Pre-stated: >= 2/5 voids the arm on that leaf ->
+**the binned beam arm is VOIDED as a gate at these N on f.106r, f.124r, f.108v (rec108v) and even in-sample f.101r**: there it measures v7's match of
+letter frequency to sign frequency, not sequence. So H335/H337's "weak lead" on f.106r and H338's f.124r and H340's rec108v passes are **not evidence**
+for v7; f.97r's pass and the recf108vg pass survive the rule on their own leaves only, and since the same leaf f.108v gives one voided and one clean
+draft, and the arm voids in-sample on f.101r, those two are fragile leaf-level results, not a family gate. Descriptive (not pre-stated): the
+real-order v7 score exceeds the mean shuffled-order v7 score on every leaf (f.106r -0.949 vs about -0.99; f.108v rec108v -0.939 vs about -1.08;
+f.188r -0.839 vs about -0.97), but shuffling also re-cuts the runs, so this is not yet a clean statistic -- H342 would pre-state it.
+Lesson (the ARM-C1 shape again): a within-frequency-bin key permutation is not an order control; a beam gate needs the shuffled-target arm from the
+first run. No call.
