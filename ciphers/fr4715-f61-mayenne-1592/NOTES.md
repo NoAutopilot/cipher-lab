@@ -5990,3 +5990,11 @@ gains two f.108r letters (the 'f' and 'z' of H416) but, being wider, loses margi
 letters, i.e. the fitted cells' extra letters (4TRI t, DBL u, EBR form A's a and s) do real work on f.108r. What it means: the published column
 pairing is not by itself a better key than the period-fitted cells; BETA m/s -> m/z alone is the one change H416's evidence (the 'z' of
 "commoditez") supports without a loss -- a single-cell question for the verifier, not applied. No key change. Cost ~0.1.
+
+## Campaign step H419 (29 Sept 2026, 20:09-19:38 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- BETA m/s -> m/z: supported on both known answers (script-only)
+
+`family/h419_beta_mz.py` (written before running; `family/h419_beta_mz_result.txt`, `--check` OK): key v8 with the single cell BETA m/s -> m/z
+(the table's m/z column): **f.61 spans (corrected) 55/55, margin +0.564 (= v8); f.108r overlay 75/84, margin +0.488 (v8 74/84, +0.476)** ->
+pre-stated "BETA m/z is supported". For the verifier, rule 4: the period tables attest BETA s too (f.101r 3, f.188r 2 against z 3 on f.101r and
+f.274r), so the choice between m/s and m/z (or m/s/z) is a weighing of witnesses, not settled by this count; on f.61 the one BETA (L11/1, Tomokiyo
+m) reads m under either. A proposal; no key change. Cost ~0.05.

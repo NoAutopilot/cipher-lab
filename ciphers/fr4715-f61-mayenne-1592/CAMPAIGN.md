@@ -2,7 +2,7 @@ target: fr4715-f61-mayenne-1592
 goal: a verified reading of BnF fr.4715 f.61 (Duke of Mayenne's polyphonic cipher, 1592-93) at N3 or better after two audits
 started: 2026-09-27 20:33 UTC
 daily_budget_usd: 600
-spent_today_usd: 139.66
+spent_today_usd: 139.71
 spent_day: 2026-09-29
 key_known: partial (Tomokiyo's reconstructed table in mayenne.htm, keys/key_mayenne_1592.tsv; period interlinear keys on sister leaves, fr.3982 f.101r (H28) and f.108r/v; unlisted lead: BnF fr.3641 and fr.4699 hold Mayenne letters "avec déchiffrement", not yet checked for this cipher, NOTES.md web/blog check)
 crib_available: partial (Tomokiyo's five marked spans, 55 letters, scripts/tomokiyo_spans.tsv -- published, not new; de Diou's glosses on family leaves)
@@ -462,7 +462,7 @@ closed:
 | H416 | 3 | F61-108R-MISSES: script-only, H407's approach on the key's second known-answer check: list the 10 f.108r overlay letters (f.61's hand) key v8 misses (74/84) with the reader code and cell at each, and classify each as a likely transcription question (sign count, class) or a cell question; a row per transcription question follows | nobody | 0.05 | done | 10 misses: qui word sign 3; column-closure 2 (EBR_A f, BETA z); transcription 5 (4PI p, INF e, 3 OTHER) |
 | H417 | 1 | F61-COLUMN-CLOSURE: script-only, the published design as a constraint: key v8 variant 'closed' = every class cell widened to whole table columns (a letter brings its column partner: BETA m/s -> m/z/f/s, EBR_A a/l/s -> a/n/l/y/f/s ...), and variant 'column' = each cross-column class (BETA, EBR_A, LOOPSTEM1, CH) replaced by its single column with the most period-letter mass; score the f.61 spans (with the corrections) and the f.108r overlay for v8 / closed / column, each against 2000 permuted keys of its own (seed 20260929); descriptive for the verifier -- does the table's column structure fit the known answers as well as the fitted cells, at equal or better margin over the permuted keys? no key change | nobody | 0.1 | done | v8 55/55 +0.564, 74/84 +0.476; closed 55/55 +0.527, 76/84 +0.429; column 55/55 +0.618, 68/84 +0.464 -> neither beats v8 on both; BETA m/z alone is supported by H416's z |
 | H418 | 2 | F61-108R-TRANSCRIPTION-QA: H411's forced-choice design on f.108r (f.61's hand, images/f108sheetB_*): the five transcription questions of H416 (T1 4PI sign 20, INF sign 36; T2 OTHER signs 3, 27, 37) against references cut from f.108r's own agreed signs, known items from the same leaf, gate >= 90% known; pre-stated: a class answer at >= 2 of 3 windows is recorded; corrections kept in a separate file | nobody | 1.5 | open | |
-| H419 | 2 | F61-BETA-MZ: script-only, the single-cell version of H417: key v8 with BETA m/s -> m/z only (H416: the 'z' of 'commoditez' at a BETA on f.108r, f.61's hand; the table pairs m/z), scored on the f.61 spans (corrected) and the f.108r overlay against 2000 permuted keys, beside v8; pre-stated: 'BETA m/z is supported' iff both counts >= v8's and both margins >= v8's; a proposal for the verifier, no key change | nobody | 0.05 | open | |
+| H419 | 2 | F61-BETA-MZ: script-only, the single-cell version of H417: key v8 with BETA m/s -> m/z only (H416: the 'z' of 'commoditez' at a BETA on f.108r, f.61's hand; the table pairs m/z), scored on the f.61 spans (corrected) and the f.108r overlay against 2000 permuted keys, beside v8; pre-stated: 'BETA m/z is supported' iff both counts >= v8's and both margins >= v8's; a proposal for the verifier, no key change | nobody | 0.05 | done | f.61 55/55 +0.564 (=), f.108r 75/84 +0.488 (v8 74, +0.476) -> BETA m/z supported; period s attested too (rule 4 weighing for the verifier) |
 
 ## Log
 
@@ -1042,3 +1042,4 @@ closed:
 2026-09-29 19:34 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H414/H415 done | 1.6 | L04/2 OTHER is punctuation (out of the cipher count); L02/2 matches no reference; corrected meter 12/60/1/26 of 99.
 2026-09-29 19:36 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H416 done | 0.05 | f.108r's 10 misses: 3 the qui word sign, 2 cells that break the table's column pairing, 5 transcription questions; wrote H417, H418.
 2026-09-29 19:37 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H417 done | 0.1 | the table's column pairing is not a better key than the fitted cells on both known answers; BETA m/z is the one cell change the f.108r evidence supports (H419).
+2026-09-29 19:38 (date -u) | session_01BDhspZ38TdrrXYSvLPTpjc | H419 done | 0.05 | BETA m/z gains the f.108r 'z' with no loss; a single-cell proposal for the verifier.

@@ -1,0 +1,5 @@
+v8       f.61 spans (corrected): 55/55 = 1.000; own permuted p95 0.436; margin +0.564; >= key 0/2000
+v8       f.108r overlay: 74/84 = 0.881; own permuted p95 0.405; margin +0.476; >= key 0/2000
+BETA m/z f.61 spans (corrected): 55/55 = 1.000; own permuted p95 0.436; margin +0.564; >= key 0/2000
+BETA m/z f.108r overlay: 75/84 = 0.893; own permuted p95 0.405; margin +0.488; >= key 0/2000
+read-out: BETA m/z is supported
