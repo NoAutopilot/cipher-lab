@@ -4629,3 +4629,13 @@ sub, ...); the control, 200 cell-order permutations of the same cells, admits at
 instrument cannot discriminate: a count-3 word list from OCR'd letters holds two-letter fragments (ho, uo, eb, ...) that segment any string. No lead, no
 reading; the fragment's letters stay M. H272 (the same search on L01's tail) is dropped as a non-test by this control; a stricter list (longer words,
 higher counts) would be a post-hoc retune of the same instrument and is not tried (CLAUDE.md rule 3's repeated-attempt clause). No call.
+
+## Campaign step H273 (29 Sept 2026, 10:26 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- 'ni mesme [LOOPBAR] jalousie': unsettled (script-only)
+
+`family/h273_l07_head.py` (rules fixed before running; result `family/h273_l07_head_result.txt`, `--check` OK). fr16 holds **no 'ni mesme' / 'ny mesme(s)'
+at all**, so the pre-stated determiner test has no cases; the word before 'jalousie' (14 cases) is a determiner or possessive 8 times (la 4, leur 1, de 1,
+quelque 1, cesle 1) and 'et' 3 times, 'en' 1, 'el' 2 (OCR). Pre-stated read-out: **unsettled**. What it leaves: LOOPBAR at L07 2 may be a null or a
+short word; the corpus cannot say. No call. **No runnable row after this step; three written:** H274 (a one-page hand-off for VERIFY-F61-V9 of this
+session's findings, script/notes), H275 (a proposal file of the key-note changes the build worker would make after V8 and this session's rows: ZHOOK
+glyph link, the 4PI split with L11 9's two witnesses, C6 unread on f.61), H276 (needs: person -- the f.106r looped-hash desk pack of H243, whose ASKS
+row the orchestrator holds).
