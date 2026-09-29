@@ -1300,3 +1300,19 @@ transcription error below about 30 pct**; at 35 pct the battery is already margi
 text would often score as low as the real one. H51 bounds c2's error at about 17 pct on agreed boxes and about 50 pct on
 majority-settled boxes (34 pct of rows), so a true page error in the 20-30 pct range is plausible and the no-order call
 sits near, not safely inside, the battery's working range. Nothing read; status `open`.
+
+### H59, R2-5's D2 split lead on the pooled text with power (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU)
+
+Pre-registered in `h59/PREREG.md` (pushed 11f9ba94 before any score); `scripts/h59_d2_pooled.py`; outputs `h59/`
+(null_*.json, planted_1.json, real.json, result.json). R2-5's D2 statistic unchanged, summed over c1-c4; settled drafts,
+clear spans and RULE.md marks dropped, stroke folds applied before splitting; page-weighted 3:1 replace:indel noise
+(c1 0.16, c2 0.155, c3/c4 0.09). **Control first, passed**: the planted French ligature text (24 pct composites) at the
+pooled N scores above the real-N map's NULL-SPLIT p95 in 35 of 40 (0.875, bar 0.80; median 12.3). Real: **real-N 17.78**
+(5 seeds 17.75-18.14), real-T 11.39. Against 500 NULL-SPLIT draws per map: real-N above every draw (p95 6.58, p99 9.35,
+max 12.76); real-T just above every draw too (p99 9.45, max 11.33). **Against 200 NULL-HABIT draws** (the same ids with
+two favourite successors taken 25 pct of the time, at box level): real-N sits at the habit null's middle (median 13.8,
+p95 24.8, p 0.245), real-T likewise (median 12.0, p95 22.6, p 0.54). **Kill met** (not above the habit p95): the
+between-box order that D2 found is what a writer with sign-to-sign habits produces, in either split order; it does not
+single out the name-order split, and it needs no language. This matches H41/H48 (a few fixed pairs such as WAVE-%,
+near-random order otherwise). R2-5's lead is closed as "explained by a habit null at pooled N with a passing control".
+Nothing read; status `open`.
