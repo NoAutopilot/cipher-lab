@@ -786,3 +786,17 @@ context and do not try to decipher the signs. Use your image reader only; do not
 exactly: word	x_from	x_to	conf -- one row per small word, conf h/m/l; output paths ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s1_gloss{A|B}.tsv
 and ciphers/fr4715-f61-mayenne-1592/family/passes/f211r_s2_gloss{A|B}.tsv (an empty table with only the header if a crop has no such word). When done,
 report only 's1: N words, s2: N words'." Gate in family/h316_211r_gloss.py's docstring.
+
+## H324 (29 Sept, Opus vision, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- stacked vs side-by-side loops, WRITTEN BEFORE THE CALL
+
+Sheet <scratch>/h324/sheet_01.jpg (family/h324_dbl_forced.py tiles; key family/h324_items.tsv; 20 tiles: f.101r DBL 2 (period e; hand-set centres
+after automatic centring failed on the dense page -- design narrowed from 4 to 2 before any call, gate re-set to >= 5/6 known), f.61 SBS 4, f.61 C43 2
+and VBAR_A 2 (NEITHER), f.61 PHI 2 (report-only reference), f.211r DBL 5 and SBS 3 (targets)). f.101r native fetched once (family/requests.log).
+Disclosure: the runner viewed placement sheets of the f.101r and f.211r tiles (to check centring; the f.211r DBL looked like loops stacked on a long
+stem, which is why PHI was moved out of the NEITHER controls into a report-only reference); not the f.61 tiles, not the test sheet. A fresh reader.
+Prompt (verbatim): "Read the image /…/h324/sheet_01.jpg with your image reader only; use no other tool. It holds 20 numbered tiles (D01-D20) cut from
+16th-century French cipher manuscripts, all scaled to the same height. In each tile two black triangles, one above and one below, point at the centre
+mark; other marks may show at the sides. For the centre mark ONLY, answer one of: STACKED (it has two closed loops one ABOVE the other, as in a figure
+8, with or without a stem), SIDEBYSIDE (it has two closed loops next to each other at the SAME height, at the head of a stem), NEITHER (any other
+shape), or unclear. Ignore ink weight, size, blur and the hand. Answer inline, one line per tile, exactly 'D01<TAB><STACKED|SIDEBYSIDE|NEITHER|unclear>',
+D01 to D20 in order, and nothing else."
