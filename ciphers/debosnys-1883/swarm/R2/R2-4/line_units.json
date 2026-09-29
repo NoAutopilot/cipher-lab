@@ -1,0 +1,216 @@
+{
+ "prereg": "PREREG.md (commit 572aa02d)",
+ "K1_copiale_caps_opener_56lines_8tok": {
+  "windows": 310,
+  "skipped_lt8_caps": 690,
+  "detect_rate": 0.31,
+  "median_p": 0.18257210312558084,
+  "copiale_lines": 1768,
+  "gate": 0.8,
+  "pass_": false
+ },
+ "K1r_copiale_caps_reversed_closer": {
+  "windows": 317,
+  "skipped_lt8_caps": 683,
+  "detect_rate": 0.297,
+  "median_p": 0.17974294630353382,
+  "copiale_lines": 1768,
+  "gate": 0.8,
+  "pass_": false
+ },
+ "K2_planted_5of8_final_power": {
+  "detect_rate": 1.0,
+  "gate": 0.8
+ },
+ "K2_planted_3of8_final_power": {
+  "detect_rate": 0.868
+ },
+ "K2_random8_false_positive": {
+  "rate": 0.006,
+  "gate": 0.05
+ },
+ "K3_width_random8_false_system": {
+  "rate": 0.054,
+  "gate": 0.05
+ },
+ "K3_width_final8_ordinary_width_separated": {
+  "rate": 1.0,
+  "gate": 0.8
+ },
+ "controls_pass": false,
+ "closer_tokens": [
+  {
+   "line": "c4b_L05",
+   "pos": 11,
+   "of": 14,
+   "sign": "PICT-GLASS",
+   "wnorm": 1.11
+  },
+  {
+   "line": "c2a_L02",
+   "pos": 9,
+   "of": 22,
+   "sign": "PICT-BOTTLE",
+   "wnorm": 1.3
+  },
+  {
+   "line": "c2a_L02",
+   "pos": 22,
+   "of": 22,
+   "sign": "BUCKET",
+   "wnorm": 1.3
+  },
+  {
+   "line": "c2a_L10",
+   "pos": 17,
+   "of": 29,
+   "sign": "PICT-BARREL",
+   "wnorm": 1.13
+  },
+  {
+   "line": "c2a_L12",
+   "pos": 30,
+   "of": 30,
+   "sign": "PICT-JUG",
+   "wnorm": 1.85
+  },
+  {
+   "line": "c2a_L13",
+   "pos": 30,
+   "of": 30,
+   "sign": "BUCKET",
+   "wnorm": 1.76
+  },
+  {
+   "line": "c2b_L04",
+   "pos": 26,
+   "of": 26,
+   "sign": "BUCKET",
+   "wnorm": 0.98
+  },
+  {
+   "line": "c3_L02",
+   "pos": 33,
+   "of": 33,
+   "sign": "BOX-M",
+   "wnorm": 1.5
+  }
+ ],
+ "T1_containers_final": {
+  "tokens": 8,
+  "obs": 5,
+  "null_mean": 0.331,
+  "p_ge": 0.0,
+  "p_exact": 3.408004975403095e-06,
+  "kill1": false
+ },
+ "T1_sensitivity_clear_spans_kept": {
+  "obs": 5,
+  "null_mean": 0.307,
+  "p_ge": 0.0
+ },
+ "T2_width_matched_any_sign": {
+  "obs_container_finals": 5,
+  "p_layout": 0.0,
+  "pool_final_rate": 0.0459,
+  "candidates": [
+   543,
+   369,
+   369,
+   529,
+   120,
+   150,
+   576,
+   274
+  ],
+  "expected_finals_if_layout": 0.37,
+  "kill2": false
+ },
+ "T2_width_matched_non_picture": {
+  "obs_container_finals": 5,
+  "p_layout": 0.0,
+  "pool_final_rate": 0.0444,
+  "candidates": [
+   529,
+   346,
+   346,
+   514,
+   104,
+   135,
+   571,
+   249
+  ],
+  "expected_finals_if_layout": 0.36,
+  "kill2": false
+ },
+ "T2_final_share_by_width_band": {
+  "0.8-1.25": {
+   "n": 621,
+   "final": 24,
+   "share": 0.039
+  },
+  "1.25-1.6": {
+   "n": 177,
+   "final": 12,
+   "share": 0.068
+  },
+  "1.6-2.2": {
+   "n": 74,
+   "final": 5,
+   "share": 0.068
+  },
+  "<0.8": {
+   "n": 233,
+   "final": 8,
+   "share": 0.034
+  },
+  ">2.2": {
+   "n": 24,
+   "final": 2,
+   "share": 0.083
+  }
+ },
+ "T3_couplets": {
+  "opener_lines": [
+   2,
+   4,
+   13,
+   14
+  ],
+  "opener_first_signs": [
+   "PICT-HEART",
+   "SUN",
+   "PICT-LEAF",
+   "PICT-ANCHOR"
+  ],
+  "couplet_first": 1,
+  "of": 4,
+  "p_ge": 0.9567,
+  "min_reachable_p": 0.0433,
+  "verdict": "not supported"
+ },
+ "T3_couplets_with_star": {
+  "opener_lines": [
+   2,
+   4,
+   13,
+   14
+  ],
+  "opener_first_signs": [
+   "PICT-HEART",
+   "SUN",
+   "PICT-LEAF",
+   "PICT-ANCHOR"
+  ],
+  "couplet_first": 1,
+  "of": 4,
+  "p_ge": 0.9567,
+  "min_reachable_p": 0.0433,
+  "verdict": "not supported"
+ },
+ "opener_initial_all_lines": {
+  "obs": 11,
+  "null_mean": 2.355,
+  "p_ge": 0.0
+ }
+}
