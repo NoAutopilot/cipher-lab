@@ -4772,3 +4772,14 @@ native segment and whether it is the line's first or last; and every "edge" row 
 L05 1 (LOOPSTEM1) and L03 15, L08 14 are sheet edges, not the line's; L11 1, L08 1 are line starts; L01 12, L07 11 line ends (the per-line native
 segment count is assumed 5 because the f61s_L*_s*.jpg cuts are not on disk, flagged in the file). A guard for later runners against the H283 error.
 No call.
+
+## Campaign step H297 (29 Sept 2026, 10:51 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- a blind pass reads L05's start "choses sont a" before the run
+
+Pre-registered (PROMPTS section H297; `scripts/f61positions_L05B_score.py`, committed f37cd677 before the call; the runner's own sheet-B look disclosed).
+One blind Opus call (`scripts/h297_reply.tsv`, verbatim): **"choses sont a" precede the first sign** -- read-outs (a) the line begins with clear text
+before the run, (b) the runner's read stands (last word "sont"); the Correction's premise now has a blind witness beside H63's "after sont". The reader
+lists 17 signs against read_call_A's 18, so the join rule does not fire: **it reads the CH sign as the clear letter "h"** ("L05 1 2140 word h", between
+the LOOPSTEM1 loop and the T-shaped VBAR_A), exactly as readers take CA for the clear "a" (H253/H257/H264) -- a second null-band class whose letterform
+is a clear letter, to be tested as H256 was (H298). The rest of its list matches pass A sign for sign (phi, qo, 4-over-bar, a, a, 43, -oo-, 43, b/6, 43,
+4, phi, ll, phi, barred x) and it closes the line "Et que si nous mesmes ey", the clear tail. Result `scripts/f61positions_L05B_result.txt` (`--check`
+OK). No value, nothing merged. Vision calls this session: 5 (one per vision step).

@@ -1,0 +1,30 @@
+# written verbatim from the inline reply (runner 10, H297, one Opus vision call, 29 Sept 2026, 101,216 subagent tokens, 27 s); x as the reader gave it (the join uses order only)
+image	segment	x	kind	desc
+L05	1	600	word	choses
+L05	1	1310	word	sont
+L05	1	1680	word	a
+L05	1	1920	sign	loop on long descender (q/phi-like, open)
+L05	1	2140	word	h
+L05	1	2390	sign	T-shaped upright with crossbar, cut at right edge (reappears at seg 2 left)
+L05	2	280	sign	phi: looped head on long descender, inner cross
+L05	2	540	sign	q followed by o (qo ligature, long descender)
+L05	2	860	sign	4 crossed by long horizontal bar with second bar below
+L05	2	1150	sign	a
+L05	2	1400	sign	a
+L05	2	1710	sign	43 (4 joined to 3)
+L05	2	2090	sign	barred double o (-oo-) on horizontal stroke
+L05	2	2380	sign	43, split: 4 at seg 2 right edge, 3 at seg 3 left edge
+L05	3	270	sign	b / 6 shape, tall looped ascender
+L05	3	480	sign	43 (4 joined to 3)
+L05	3	770	sign	4 crossed by bar, second stroke below (as seg 2 x860)
+L05	3	1060	sign	phi: looped head on long descender
+L05	3	1330	sign	ll (double looped l)
+L05	3	1600	sign	phi: looped head on long descender
+L05	3	1800	sign	x with bar over and under (barred x)
+L05	3	2040	sign	dot (point)
+L05	3	2330	word	Ee (cut at right edge; possibly Et)
+L05	4	220	word	que (with long lead-in stroke)
+L05	4	580	word	sj
+L05	4	960	word	nous
+L05	4	1500	word	mesmes (written mesmd, abbreviated)
+L05	4	2200	word	ey

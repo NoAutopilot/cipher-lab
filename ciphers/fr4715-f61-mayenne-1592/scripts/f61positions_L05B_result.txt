@@ -1,0 +1,5 @@
+words before the first sign: choses sont a
+read-out (a): the line begins with clear text before the run
+read-out (b): the runner's read stands (last word 'sont')
+signs 17 vs read_call_A 18
+not joined (count)
