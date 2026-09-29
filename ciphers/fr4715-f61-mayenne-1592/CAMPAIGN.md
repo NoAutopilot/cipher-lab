@@ -948,4 +948,4 @@ closed:
 2026-09-29 16:58 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H362, H364 done | 1.02 | f.101r 4TRI 77% no-bowl; the period gloss pairs no-bowl 4TRI with a/n (23 vs 6), bowl tracks letter 0.79 -- the readers 4TRI conflates two signs; H365 (full split on f.101r), H366 (proposal note) written.
 2026-09-29 17:04 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H365 done | 4.0 | f.101r: no-bowl 4TRI is the a/n sign by the period gloss (118/130); bowl sign leans c/p/t; split raises the order gain in-sample.
 2026-09-29 17:06 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H366, H363 done | 0.07 | 4TRI resplit proposal written for a verifier; instrument lesson noted; H367 (f.61 own 4TRI bowl read), H368 (f.106r/f.108v), H369 (verifier ask) written.
-2026-09-29 17:07 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H369 done | 0.02 | verifier asked to rule on the 4TRI resplit before any v8.
+2026-09-29 17:06 (date -u) | session_01MSoJWwZxNPSjQd4hszNdvQ | H369 done | 0.02 | verifier asked to rule on the 4TRI resplit before any v8.

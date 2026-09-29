@@ -5446,7 +5446,7 @@ a shape forced choice with known answers in every call (H359/H360/H362/H365) -> 
 period letters by shape answer (H364/H365) -> an independent held-gloss count (H361). Each link had its own control; the period letters are the only
 link that is not our statistic. No call.
 
-## Campaign step H369 (29 Sept 2026, 17:07 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the ask to the verifier (notes only)
+## Campaign step H369 (29 Sept 2026, 17:06 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the ask to the verifier (notes only)
 
 A paragraph at the foot of `family/V9_PAGE.md` asks the verifier lane to rule on `family/PROPOSAL_v8_4tri.md` before any key v8, with the witnesses and
 the open objections; the matching ROOM line is posted. No call, no class, no cell.
