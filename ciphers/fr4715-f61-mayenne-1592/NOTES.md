@@ -3663,3 +3663,19 @@ Agreed 4TRI reads c/p while the 4TRI/C43 split reads a/n: the passes seem to sep
 C43 a/n). HASH4 is split between i and d here. Nothing is merged; key_period_f176v.tsv stays a separate file. f.61 is not read here.
 Remaining for H177f: L25-L45. The clear on disk (V06-V27, 1,750 letters) covers about L25-L31; beyond that, fol. 177v strips 9-12 (crops
 regenerated in scratch from boxes.tsv) and fol. 178r need one read each.
+
+## Campaign step H177f stage 2 (29 Sept 2026, 00:35-00:40 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176v L01-L32 against fol. 177v V06-V40
+
+Pre-registered (PROMPTS section H177f stage 2). Three Opus vision calls, inline replies written verbatim: passes A/B of f.176v L25-L32
+(`family/passes/f176v_signs{A,B}_L25-L32.tsv`) and a read of fol. 177v strips 9-12 (`family/passes/f177v_clearA_S09-S12.tsv`, V28-V40, all
+l-grade). In L25-L32 the passes split systematically: A codes ISH where B codes VBAR_B, 4STEM where B codes 4PI, and HASH4 where B codes
+ZHOOK. Row consensus falls to 0.55-0.78.
+`build_f176v_key.py L01-L32 --start V06` (`--check` OK): **2,069 signs, consensus 0.73, N 1,655 of 2,674 letters (V06-V40). Match 0.507 vs
+(a) f.184r 0.294, (b) fol. 177r 0.292; margin +0.213, PASS** (stage 1 +0.205, L01-L16 +0.226).
+
+Classes (true vs the two wrong texts): VBAR_B s 103/139 (0.74 vs 0.23/0.23); INF u 100/130; EBR l 72/112; VBAR_A t 77, s 7, g 6 of 105;
+HASH4 d 33, i 28, q 4 of 79; agreed 4TRI c 25, p 19, a 14 of 68; **agreed ZHOOK i 41 of 65** (wrong texts e 11 / e 8, i 4 / i 7); BETA m 10 of 11.
+Split columns: A 4TRI / B C43 n 46, a 33 of 113; A 4PI / B 4TRI a 19, n 11 of 38; **A PHI / B SBS o 17 of 28** (the side-by-side glyph reads o,
+as DBL did on f.176r and as H26/H65 found on f.61, f.108r and the glossed leaves); A HASH4 / B ZHOOK i 5, d 3 of 9.
+Descriptive, for the verifier; nothing merged; key_period_f176v.tsv stays separate. Remaining for H177f: L33-L45, whose clear runs onto fol. 178r
+(canvas 331, fetched; cut as strips like fol. 177v, one read).

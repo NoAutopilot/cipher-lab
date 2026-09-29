@@ -1,0 +1,511 @@
+# written verbatim from the inline reply (runner 7 extract.py)
+line	pos	sign	conf	segment	x_px	note
+L25	1	ZHOOK	l	s1	160	Z/2-like hook with crossed stem; alt 4STEM
+L25	2	INF	l	s1	215	
+L25	3	INF	m	s1	285	
+L25	4	PHI	m	s1	335	
+L25	5	4STEM	m	s1	375	alt HASH4
+L25	6	HASH4	m	s1	440	
+L25	7	INF	m	s1	495	
+L25	8	EBR_B	m	s1	540	
+L25	9	PHI	m	s1	570	
+L25	10	4TRI	m	s1	620	
+L25	11	PHI	m	s1	680	
+L25	12	VBAR_A	m	s1	765	
+L25	13	4STEM	m	s1	815	
+L25	14	VBAR_A	h	s1	880	
+L25	15	HASH4	m	s1	945	
+L25	16	PHI	h	s1	995	
+L25	17	4TRI	m	s1	1030	
+L25	18	PHI	h	s1	1075	
+L25	19	PHI	h	s1	1125	
+L25	20	4STEM	m	s1	1170	
+L25	21	HASH4	m	s1	1230	
+L25	22	PHI	m	s1	1285	overlap
+L25	23	PHI	h	s1	1335	overlap
+L25	24	VBAR_A	m	s1	1385	overlap
+L25	25	PHI	m	s2	140	
+L25	26	EBR_B	m	s2	190	
+L25	27	EBR_B	m	s2	215	
+L25	28	PHI	m	s2	245	
+L25	29	EBR_B	m	s2	305	
+L25	30	CA	l	s2	325	small a-like loop; alt INF
+L25	31	PHI	m	s2	355	
+L25	32	EBR_B	m	s2	420	
+L25	33	LOOPBAR	l	s2	490	loop on stem over stacked bars; alt OTHER
+L25	34	EBR_B	m	s2	560	
+L25	35	INF	m	s2	595	
+L25	36	EBR_B	m	s2	650	
+L25	37	INF	l	s2	690	
+L25	38	PHI	m	s2	745	
+L25	39	PHI	m	s2	790	
+L25	40	4STEM	m	s2	830	alt 4TRI
+L25	41	4TRI	m	s2	905	
+L25	42	PHI	m	s2	940	
+L25	43	PHI	m	s2	995	
+L25	44	ISH	l	s2	1050	
+L25	45	4TRI	m	s2	1085	
+L25	46	PHI	m	s2	1135	
+L25	47	HASH4	m	s2	1190	
+L25	48	4TRI	m	s2	1240	
+L25	49	VBAR_A	m	s2	1290	overlap
+L25	50	PHI	m	s2	1320	overlap
+L25	51	INF	l	s2	1385	overlap, cut at edge
+L25	52	C6	l	s3	160	6/delta-like with cross stroke; alt BETA
+L25	53	ELOOP	l	s3	195	g-like loop with curling tail
+L25	54	EBR_B	m	s3	275	
+L25	55	PHI	m	s3	300	
+L25	56	HASH4	m	s3	345	
+L25	57	INF	m	s3	405	
+L25	58	PHI	m	s3	450	
+L25	59	EBR_B	m	s3	505	
+L25	60	4STEM	m	s3	560	
+L25	61	4TRI	m	s3	625	
+L25	62	PHI	m	s3	655	
+L25	63	HASH4	m	s3	710	
+L25	64	ISH	l	s3	770	
+L26	1	HASH4	l	s1	160	
+L26	2	4STEM	m	s1	215	
+L26	3	PHI	m	s1	255	
+L26	4	HASH4	m	s1	300	
+L26	5	VBAR_A	m	s1	395	
+L26	6	PHI	m	s1	430	
+L26	7	INF	m	s1	465	
+L26	8	PHI	m	s1	490	
+L26	9	OTHER	m	s1	530	tall long-s stroke with small flag at head
+L26	10	PHI	m	s1	575	
+L26	11	4STEM	m	s1	620	alt 4TRI
+L26	12	LL	l	s1	660	two thin stems; alt OTHER
+L26	13	HASH4	m	s1	690	
+L26	14	INF	m	s1	740	
+L26	15	4TRI	m	s1	775	
+L26	16	4STEM	m	s1	850	
+L26	17	VBAR_A	m	s1	915	
+L26	18	4TRI	m	s1	945	
+L26	19	VBAR_A	m	s1	1000	
+L26	20	PHI	m	s1	1030	
+L26	21	ISH	l	s1	1130	
+L26	22	INF	m	s1	1175	
+L26	23	PHI	m	s1	1230	
+L26	24	4TRI	m	s1	1265	
+L26	25	PHI	m	s1	1320	overlap
+L26	26	OTHER	m	s1	1375	large Y/gamma shape with loop at foot; overlap
+L26	27	PLAIN	l	s2	155	"S." (8-like figure with dot); alt OTHER
+L26	28	PLAIN	l	s2	225	"s." with dot
+L26	29	4STEM	m	s2	300	
+L26	30	INF	m	s2	345	
+L26	31	PHI	m	s2	385	
+L26	32	PHI	m	s2	420	
+L26	33	HASH4	m	s2	480	
+L26	34	VBAR_A	m	s2	540	
+L26	35	OTHER	m	s2	605	tall long-s stroke with small flag at head
+L26	36	4STEM	m	s2	650	
+L26	37	EBR_B	m	s2	720	
+L26	38	PHI	m	s2	755	
+L26	39	PHI	m	s2	800	
+L26	40	4TRI	m	s2	855	
+L26	41	PHI	m	s2	890	
+L26	42	INF	m	s2	940	
+L26	43	EBR_B	m	s2	1020	
+L26	44	4STEM	m	s2	1065	
+L26	45	HASH4	m	s2	1115	
+L26	46	PHI	m	s2	1150	
+L26	47	4TRI	m	s2	1195	
+L26	48	PHI	m	s2	1245	
+L26	49	ISH	l	s2	1295	overlap
+L26	50	4TRI	m	s2	1360	overlap
+L26	51	INF	m	s3	145	
+L26	52	PHI	m	s3	185	
+L26	53	PHI	m	s3	245	
+L26	54	ISH	l	s3	280	
+L26	55	4TRI	m	s3	325	
+L26	56	PHI	m	s3	375	
+L26	57	HASH4	m	s3	440	
+L26	58	VBAR_A	m	s3	500	
+L26	59	PHI	m	s3	530	
+L26	60	4TRI	m	s3	575	
+L26	61	OTHER	l	s3	625	S/5-like curved sign with top bar
+L26	62	EBR_B	m	s3	700	
+L26	63	PHI	m	s3	735	
+L26	64	OTHER	l	s3	775	m-like run of minims; possibly plain
+L26	65	OTHER	l	s3	835	tall long-s stroke; possibly plain
+L27	1	OTHER	m	s1	120	tall long-s stroke with small flag at head
+L27	2	4STEM	m	s1	150	
+L27	3	EBR_B	m	s1	225	
+L27	4	ISH	l	s1	290	
+L27	5	VBAR_A	l	s1	315	
+L27	6	INF	m	s1	345	
+L27	7	PHI	m	s1	380	
+L27	8	EBR_B	m	s1	460	
+L27	9	PHI	m	s1	495	
+L27	10	ISH	m	s1	545	
+L27	11	VBAR_A	m	s1	600	
+L27	12	4STEM	m	s1	645	
+L27	13	VBAR_A	m	s1	715	
+L27	14	HASH4	m	s1	750	
+L27	15	PHI	m	s1	800	
+L27	16	ISH	m	s1	840	
+L27	17	4STEM	m	s1	920	
+L27	18	ISH	m	s1	990	
+L27	19	ISH	m	s1	1050	
+L27	20	4STEM	m	s1	1085	
+L27	21	HASH4	m	s1	1160	
+L27	22	PHI	m	s1	1205	
+L27	23	PHI	m	s1	1255	
+L27	24	ISH	m	s1	1310	overlap
+L27	25	VBAR_A	m	s1	1380	overlap
+L27	26	4STEM	m	s2	150	
+L27	27	4STEM	m	s2	225	
+L27	28	VBAR_A	m	s2	290	
+L27	29	BETA	l	s2	340	8-like bowl with tall stroke above; alt C6
+L27	30	4TRI	m	s2	390	
+L27	31	PHI	m	s2	440	
+L27	32	4TRI	m	s2	490	
+L27	33	4STEM	m	s2	535	
+L27	34	INF	m	s2	590	
+L27	35	INF	m	s2	650	
+L27	36	PHI	m	s2	690	
+L27	37	PHI	m	s2	745	
+L27	38	4TRI	m	s2	800	
+L27	39	PHI	m	s2	845	
+L27	40	HASH4	m	s2	890	
+L27	41	4STEM	m	s2	930	
+L27	42	4TRI	m	s2	1000	
+L27	43	PHI	m	s2	1045	
+L27	44	4STEM	m	s2	1095	
+L27	45	PHI	m	s2	1160	
+L27	46	ISH	m	s2	1210	
+L27	47	VBAR_A	m	s2	1250	
+L27	48	PHI	m	s2	1300	overlap
+L27	49	EBR_B	m	s2	1355	overlap
+L27	50	INF	l	s2	1385	overlap, cut at edge
+L27	51	PHI	m	s3	135	
+L27	52	4STEM	m	s3	175	
+L27	53	VBAR_A	m	s3	240	
+L27	54	PHI	m	s3	270	
+L27	55	OTHER	m	s3	305	tall long-s stroke with small flag at head
+L27	56	4TRI	m	s3	345	
+L27	57	ISH	m	s3	385	
+L27	58	4STEM	m	s3	460	
+L27	59	INF	m	s3	505	
+L27	60	HASH4	m	s3	560	
+L27	61	PHI	m	s3	605	
+L27	62	INF	l	s3	665	
+L27	63	PHI	m	s3	690	
+L27	64	ISH	m	s3	730	
+L27	65	4TRI	l	s3	760	
+L27	66	INF	m	s3	810	
+L28	1	HASH4	m	s1	180	
+L28	2	PHI	m	s1	220	
+L28	3	OTHER	l	s1	285	S/8-like sign with short stroke at right
+L28	4	ISH	m	s1	340	
+L28	5	4STEM	m	s1	380	
+L28	6	4STEM	m	s1	435	
+L28	7	ISH	m	s1	520	
+L28	8	OTHER	m	s1	580	large Y/gamma shape with loop at foot
+L28	9	HASH4	m	s1	630	
+L28	10	PHI	m	s1	670	
+L28	11	EBR_B	m	s1	740	
+L28	12	PHI	m	s1	780	
+L28	13	4TRI	m	s1	830	
+L28	14	INF	l	s1	865	
+L28	15	4STEM	m	s1	935	
+L28	16	ISH	m	s1	990	
+L28	17	INF	l	s1	1040	
+L28	18	EBR_B	m	s1	1115	
+L28	19	PHI	m	s1	1140	
+L28	20	ISH	m	s1	1210	
+L28	21	INF	m	s1	1260	
+L28	22	PHI	m	s1	1310	overlap
+L28	23	4TRI	m	s1	1375	overlap
+L28	24	PHI	m	s2	150	
+L28	25	OTHER	m	s2	210	large Y/gamma shape
+L28	26	4TRI	m	s2	255	
+L28	27	PHI	m	s2	295	
+L28	28	4TRI	m	s2	360	ink blot
+L28	29	PHI	m	s2	410	
+L28	30	ISH	m	s2	465	
+L28	31	VBAR_A	m	s2	515	
+L28	32	PHI	m	s2	550	
+L28	33	HASH4	m	s2	630	
+L28	34	VBAR_A	m	s2	670	
+L28	35	PHI	m	s2	740	
+L28	36	HASH4	m	s2	795	
+L28	37	PHI	m	s2	825	
+L28	38	4STEM	m	s2	880	
+L28	39	4STEM	m	s2	960	
+L28	40	INF	m	s2	1000	
+L28	41	PHI	m	s2	1070	
+L28	42	PHI	m	s2	1110	
+L28	43	ISH	m	s2	1150	
+L28	44	4TRI	m	s2	1200	
+L28	45	PHI	m	s2	1240	
+L28	46	4TRI	m	s2	1300	overlap
+L28	47	VBAR_A	m	s2	1340	overlap
+L28	48	HASH4	m	s3	125	
+L28	49	PHI	m	s3	165	
+L28	50	EBR_B	m	s3	215	
+L28	51	4STEM	m	s3	250	
+L28	52	OTHER	m	s3	320	tall long-s stroke with small flag at head
+L28	53	HASH4	m	s3	350	
+L28	54	INF	l	s3	405	
+L28	55	PHI	m	s3	430	
+L28	56	4STEM	m	s3	475	
+L28	57	4STEM	m	s3	535	
+L28	58	4STEM	l	s3	580	4 with y-like tail; alt OTHER
+L28	59	OTHER	m	s3	660	large Y/gamma shape
+L28	60	PHI	m	s3	700	
+L28	61	EBR_B	m	s3	740	
+L28	62	EBR_B	m	s3	760	
+L28	63	PHI	m	s3	790	
+L29	1	PHI	m	s1	165	
+L29	2	ISH	m	s1	235	
+L29	3	VBAR_A	m	s1	265	
+L29	4	PHI	m	s1	305	alt SBS
+L29	5	INF	l	s1	345	
+L29	6	HASH4	m	s1	385	
+L29	7	VBAR_A	m	s1	435	
+L29	8	PHI	m	s1	510	alt SBS
+L29	9	HASH4	m	s1	580	
+L29	10	PHI	m	s1	610	
+L29	11	4STEM	m	s1	645	
+L29	12	4TRI	m	s1	715	
+L29	13	EBR_B	m	s1	790	
+L29	14	INF	m	s1	815	
+L29	15	ISH	m	s1	870	
+L29	16	OTHER	m	s1	945	tall long-s stroke with small flag at head
+L29	17	INF	l	s1	985	
+L29	18	PHI	m	s1	1015	
+L29	19	4TRI	m	s1	1055	alt HASH4
+L29	20	PHI	m	s1	1100	
+L29	21	PHI	m	s1	1140	
+L29	22	PHI	m	s1	1180	
+L29	23	PHI	m	s1	1220	
+L29	24	OTHER	l	s1	1275	S/8-like sign with short stroke at right
+L29	25	OTHER	m	s1	1320	large Y/gamma shape; overlap
+L29	26	4STEM	m	s1	1375	overlap
+L29	27	PHI	m	s2	150	
+L29	28	4STEM	m	s2	195	
+L29	29	INF	m	s2	245	
+L29	30	OTHER	m	s2	320	tall long-s stroke with small flag at head
+L29	31	PHI	m	s2	355	
+L29	32	HASH4	m	s2	415	
+L29	33	4STEM	m	s2	450	
+L29	34	ISH	m	s2	520	
+L29	35	EBR_B	m	s2	570	
+L29	36	PHI	m	s2	595	
+L29	37	OTHER	l	s2	650	8-like figure, with a small superscript x-mark further right above the line
+L29	38	4TRI	m	s2	740	
+L29	39	HASH4	l	s2	790	2/4-like head on crossed stems; alt C43
+L29	40	PHI	m	s2	830	
+L29	41	VBAR_A	m	s2	900	
+L29	42	PHI	m	s2	925	
+L29	43	PHI	m	s2	960	
+L29	44	OTHER	m	s2	1000	tall long-s stroke with small flag at head
+L29	45	4STEM	m	s2	1045	
+L29	46	ISH	m	s2	1160	
+L29	47	4STEM	m	s2	1240	
+L29	48	HASH4	l	s2	1330	overlap
+L29	49	VBAR_A	m	s3	115	in overlap but not seen in s2
+L29	50	4TRI	m	s3	200	
+L29	51	PHI	m	s3	245	
+L29	52	ISH	m	s3	320	
+L29	53	VBAR_A	m	s3	365	
+L29	54	INF	m	s3	410	
+L29	55	PHI	m	s3	455	
+L29	56	4STEM	m	s3	505	
+L29	57	4STEM	m	s3	555	
+L29	58	PHI	m	s3	600	
+L29	59	INF	m	s3	660	
+L29	60	PHI	m	s3	700	
+L29	61	HASH4	m	s3	770	
+L29	62	PHI	m	s3	805	
+L30	1	OTHER	m	s1	170	tall long-s stroke with small flag at head
+L30	2	PHI	m	s1	225	
+L30	3	ISH	m	s1	270	
+L30	4	4STEM	m	s1	305	
+L30	5	OTHER	l	s1	345	y-like sign; alt HASH4
+L30	6	HASH4	m	s1	385	
+L30	7	PHI	m	s1	425	
+L30	8	ISH	m	s1	490	
+L30	9	4STEM	m	s1	530	
+L30	10	INF	m	s1	590	
+L30	11	PHI	m	s1	640	alt SBS
+L30	12	HASH4	m	s1	710	
+L30	13	PHI	m	s1	755	
+L30	14	OTHER	m	s1	800	large Y/gamma shape
+L30	15	PLAIN	l	s1	850	"S." (8-like figure with dot); alt OTHER
+L30	16	PLAIN	l	s1	935	"S." with dot
+L30	17	EBR_B	m	s1	995	
+L30	18	4STEM	m	s1	1030	
+L30	19	INF	m	s1	1075	
+L30	20	PHI	m	s1	1140	alt SBS
+L30	21	HASH4	m	s1	1210	
+L30	22	VBAR_A	m	s1	1290	overlap
+L30	23	VBAR_A	m	s1	1375	overlap
+L30	24	PHI	m	s2	135	
+L30	25	PHI	m	s2	185	
+L30	26	INF	m	s2	250	
+L30	27	INF	m	s2	305	
+L30	28	PHI	m	s2	360	
+L30	29	PHI	m	s2	415	alt SBS
+L30	30	PHI	m	s2	470	alt SBS
+L30	31	4STEM	m	s2	535	
+L30	32	4STEM	m	s2	575	
+L30	33	PHI	m	s2	625	
+L30	34	INF	m	s2	725	
+L30	35	PHI	m	s2	790	alt SBS
+L30	36	HASH4	m	s2	860	
+L30	37	PHI	m	s2	915	
+L30	38	PHI	m	s2	950	
+L30	39	4TRI	m	s2	1010	
+L30	40	PHI	m	s2	1070	alt SBS
+L30	41	4STEM	m	s2	1135	
+L30	42	HASH4	m	s2	1185	
+L30	43	INF	m	s2	1225	
+L30	44	PHI	m	s2	1300	overlap
+L30	45	PHI	m	s2	1350	overlap
+L30	46	HASH4	m	s3	130	
+L30	47	PHI	m	s3	175	
+L30	48	4TRI	m	s3	225	
+L30	49	PHI	m	s3	265	
+L30	50	4STEM	m	s3	325	
+L30	51	VBAR_A	m	s3	395	
+L30	52	HASH4	m	s3	445	
+L30	53	4STEM	m	s3	505	
+L30	54	INF	m	s3	545	
+L30	55	PHI	m	s3	605	
+L30	56	PHI	m	s3	645	c-like hook before loop; alt CA
+L30	57	4STEM	m	s3	715	
+L30	58	EBR_B	m	s3	765	
+L30	59	4STEM	m	s3	810	
+L30	60	HASH4	m	s3	855	
+L31	1	INF	m	s1	180	
+L31	2	PHI	m	s1	220	
+L31	3	4STEM	m	s1	275	
+L31	4	HASH4	m	s1	325	
+L31	5	PHI	m	s1	375	
+L31	6	4STEM	m	s1	460	
+L31	7	INF	m	s1	505	
+L31	8	PHI	m	s1	545	
+L31	9	4TRI	m	s1	590	
+L31	10	OTHER	m	s1	665	tall long-s stroke with small flag at head
+L31	11	PHI	m	s1	710	
+L31	12	ISH	l	s1	775	crossed; alt CROSS
+L31	13	OTHER	m	s1	840	tall long-s stroke with small flag at head
+L31	14	PHI	m	s1	885	
+L31	15	EBR_B	m	s1	945	
+L31	16	HASH4	m	s1	990	
+L31	17	PHI	m	s1	1040	
+L31	18	PHI	m	s1	1105	
+L31	19	PHI	m	s1	1150	
+L31	20	VBAR_A	m	s1	1220	
+L31	21	PHI	m	s1	1255	
+L31	22	HASH4	m	s1	1310	overlap
+L31	23	PHI	m	s1	1355	overlap
+L31	24	ISH	l	s1	1390	overlap, cut at edge
+L31	25	VBAR_A	m	s2	185	
+L31	26	HASH4	l	s2	225	2-like head on crossed stems; alt C43
+L31	27	OTHER	m	s2	300	tall long-s stroke with small flag at head
+L31	28	PHI	m	s2	345	
+L31	29	OTHER	l	s2	405	upward triangle over stacked horizontal bars on a stem; alt VBAR_B
+L31	30	EBR_A	l	s2	455	alt EBR_B
+L31	31	ISH	m	s2	535	
+L31	32	INF	m	s2	570	
+L31	33	ISH	m	s2	610	
+L31	34	VBAR_A	m	s2	690	
+L31	35	VBAR_A	m	s2	740	
+L31	36	PHI	m	s2	775	
+L31	37	OTHER	m	s2	835	tall long-s stroke with small flag at head
+L31	38	PHI	m	s2	880	
+L31	39	PHI	m	s2	935	
+L31	40	ISH	m	s2	1000	
+L31	41	PHI	m	s2	1040	
+L31	42	INF	m	s2	1080	
+L31	43	PHI	m	s2	1140	
+L31	44	OTHER	m	s2	1180	tall long-s stroke with small flag at head
+L31	45	EBR_B	m	s2	1240	
+L31	46	PHI	m	s2	1265	
+L31	47	ISH	m	s2	1320	overlap
+L31	48	4STEM	m	s2	1375	overlap
+L31	49	HASH4	m	s3	155	
+L31	50	HASH4	m	s3	200	
+L31	51	OTHER	l	s3	270	S/8-like sign with short stroke at right
+L31	52	4TRI	m	s3	305	
+L31	53	INF	m	s3	360	
+L31	54	HASH4	m	s3	410	
+L31	55	ISH	m	s3	440	
+L31	56	HASH4	m	s3	530	
+L31	57	4STEM	m	s3	590	
+L31	58	EBR_B	m	s3	665	
+L31	59	PHI	m	s3	690	
+L31	60	INF	m	s3	755	
+L31	61	PHI	m	s3	790	
+L31	62	HASH4	m	s3	835	
+L31	63	PHI	m	s3	860	
+L32	1	C6	l	s1	160	6/delta-like with cross stroke; alt BETA
+L32	2	ELOOP	l	s1	190	g-like loop with curling tail
+L32	3	4STEM	m	s1	260	
+L32	4	INF	m	s1	320	
+L32	5	HASH4	m	s1	375	
+L32	6	INF	m	s1	420	
+L32	7	PHI	m	s1	480	
+L32	8	EBR_B	m	s1	530	
+L32	9	HASH4	m	s1	575	
+L32	10	PHI	m	s1	620	
+L32	11	4TRI	m	s1	685	
+L32	12	INF	l	s1	720	
+L32	13	PHI	m	s1	790	
+L32	14	VBAR_A	m	s1	840	
+L32	15	PHI	m	s1	880	
+L32	16	EBR_B	m	s1	935	
+L32	17	4TRI	m	s1	965	
+L32	18	4TRI	m	s1	1045	
+L32	19	PHI	m	s1	1090	
+L32	20	4TRI	m	s1	1145	
+L32	21	HASH4	m	s1	1195	
+L32	22	PHI	m	s1	1255	
+L32	23	HASH4	m	s1	1300	overlap
+L32	24	PHI	m	s1	1350	overlap
+L32	25	OTHER	m	s2	125	tall long-s stroke with small flag at head
+L32	26	PHI	m	s2	170	
+L32	27	ISH	m	s2	225	
+L32	28	HASH4	m	s2	255	
+L32	29	HASH4	m	s2	320	
+L32	30	VBAR_A	m	s2	365	
+L32	31	PHI	m	s2	395	
+L32	32	ISH	m	s2	470	
+L32	33	EBR_B	m	s2	540	
+L32	34	PHI	m	s2	570	
+L32	35	VBAR_A	m	s2	625	
+L32	36	VBAR_A	l	s2	665	
+L32	37	PHI	m	s2	700	
+L32	38	PHI	m	s2	745	
+L32	39	ISH	m	s2	795	
+L32	40	ISH	m	s2	880	
+L32	41	INF	m	s2	920	
+L32	42	PHI	m	s2	970	
+L32	43	EBR_B	m	s2	1025	
+L32	44	PHI	m	s2	1050	
+L32	45	ISH	m	s2	1105	
+L32	46	HASH4	m	s2	1150	
+L32	47	INF	m	s2	1200	
+L32	48	PHI	m	s2	1245	
+L32	49	EBR_B	m	s2	1300	overlap
+L32	50	EBR_B	m	s2	1335	overlap
+L32	51	PHI	m	s2	1375	overlap
+L32	52	ISH	m	s3	160	
+L32	53	HASH4	l	s3	240	2-like head on crossed stems; alt C43
+L32	54	EBR_B	m	s3	290	
+L32	55	4STEM	m	s3	330	
+L32	56	PHI	m	s3	400	
+L32	57	ISH	m	s3	440	
+L32	58	PHI	m	s3	490	
+L32	59	INF	m	s3	530	
+L32	60	ISH	m	s3	575	
+L32	61	VBAR_A	m	s3	630	
+L32	62	OTHER	m	s3	690	large Y/gamma shape rising above the line
+L32	63	HASH4	m	s3	720	
+L32	64	HASH4	m	s3	760	
+L32	65	PHI	m	s3	795	
+L32	66	PHI	m	s3	815
