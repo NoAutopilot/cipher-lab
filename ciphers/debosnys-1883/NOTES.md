@@ -1092,3 +1092,14 @@ shapes decorated many ways, not consonant signs each combining with a set of vow
 of marks as a free second component (vowel, nasal, mute e) is not supported at this N; the marked ids behave more
 like separate signs built on a few favourite shapes. Caveat: the base/mark split is our labeller's decomposition of
 the id names (GOLD-D1), not an independent measurement. Grade S; nothing read; status `open`.
+
+### H46, the neighbours of X (29 Sept 2026, CPU only)
+
+`scripts/h46_x_context.py` (`h46_x_context.json`): entropy of the sign left and right of each token, against the same
+id's within-line shuffles (X 10,000; the eight next most frequent ids 2,000 each). **X's contexts are at the shuffle
+level** (left z +0.73, right z +0.96: if anything slightly more varied than chance), and so are PCT, PCT-SLASH,
+Y-CURL, CIRC-O, O-TILDE, O-SLASH and X-DOT (z -1.3 to +0.8). The one id with restricted contexts is WAVE (left z -3.0,
+right z -3.9; it sits beside PCT, the H41 pair WAVE PCT / PCT WAVE), which shows the statistic can see a bound sign at
+a count of 25. So X is placed as freely as a null or separator would be, but so is almost every other frequent sign --
+the text as a whole has near-random local order (H41), and X's freedom does not single it out. No support either way
+for X as prefix or suffix. Grade S; nothing read; status `open`.
