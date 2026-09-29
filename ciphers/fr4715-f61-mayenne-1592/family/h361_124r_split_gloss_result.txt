@@ -1,0 +1,5 @@
+split draft: real 156; (a) binned permutation (bins of 3 by f.124r token rank: PHI,VBAR_A,C43 | 4TRI,H24,EBR_B | HASH4,BETA,ZBAR | 4STEM,RSIGN,DBL | EBR_A,VBAR_B,ISH): mean 131.7, p95 148, max 156, >= real 1/1000
+split draft: (b) frequency key (top-k fr16 letters, k = v7 cell size; letter order eiuasrnlot...): 130
+split draft: read-out: H325 lead stands (real > (a) p95 and > (b))
+original draft real 148 (H328); split real 156; split binned p95 148; split frequency key 130
+read-out: the split is supported by the gloss

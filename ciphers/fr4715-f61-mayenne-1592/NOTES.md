@@ -5390,3 +5390,14 @@ so makes the leaf's sign order fit French about twice as well under v7 -- a shap
 its own controls) agree. A **transcription correction for the f.124r draft**, not a cell change and not a reading; it also means every earlier f.124r
 count on the unsplit draft (H325/H328/H330's gloss lead, H331's per-class, H338-H349) saw two signs under one code. For the verifier. Four calls,
 cost estimate 4.0 USD.
+
+## Campaign step H361 (29 Sept 2026, 16:52-16:54 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the gloss count agrees with the 4TRI split on f.124r (script-only)
+
+`family/h361_124r_split_gloss.py` (written and pushed before running; `family/h361_124r_split_gloss_result.txt`, `--check` OK): H325/H328's held-gloss
+count (two-pass agreed gloss letters matched one-to-one into v7's cells) on H360's split draft, code unchanged except the draft path and the pass-A
+match rule (compared with the original draft's sign, so relabelled tokens keep their x). **Split draft: real 156 (original 148); binned permutation
+mean 131.7, p95 148, 1/1000 >= real; frequency key 130** -> pre-stated read-out **"the split is supported by the gloss"**.
+What it means: two instruments that share neither method nor data path -- the order gain over the sign draft (H360) and the one-to-one count against
+the leaf's own period gloss letters (H361) -- both improve when f.124r's no-bowl 4TRI tokens are read as C43 (a/n). The gloss is HELD (grade M, two
+model passes at 0.42 word agreement), so this is agreement between leads, not a reading; H330's fragility caveat on the gloss lead still applies to
+the gloss count as such. For the verifier, together with H359/H360. No call.
