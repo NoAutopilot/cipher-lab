@@ -5738,3 +5738,16 @@ f.124r 4TRI already answered by H359/H360 (stratified: 25 originally yes, 25 no;
 kappa 0.88 -> pre-stated "the gated reader is repeatable at this design".** With H391 (re-reads on f.61 0.84, f.106r 0.81), the bowl answers the
 runner's split rests on repeat at 0.8-0.9 kappa in this design; VERIFY-F61-V11's inter-reader 0.35-0.49 (its own readers and design) is a different
 measurement, for the VO3 lane to weigh. Nothing applied. 1 call, cost estimate 1.5 USD.
+
+## Campaign step H392 (29 Sept 2026, 18:17-18:22 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.188r (Desportes): the readers' 4TRI is mostly the bowl sign, 0.73 -- "unclear" by the pre-stated bands (1 vision call)
+
+`family/h392_bowl_188r.py`, key `family/h392_items.tsv`, prompt note H392, committed before the call; the runner did not look at the sheets. Changed
+before running (logged in the row): f.188r's draft has no agreed C43, so all 66 agreed 4TRI were read and the no-bowl check rests on gate 2 alone.
+Native f351 refetched once (sha1 1c584b0f as MANIFEST.tsv; 1 request). One blind Opus call; reply `family/passes/h392_reply.tsv`; result
+`family/h392_bowl_188r_result.txt` (`--check` OK). **Gate 1 17/20 (at the bar), gate 2 6/6. f.188r 4TRI: bowl 48, no bowl 18 -> yes-share 0.73,
+pre-stated "unclear"** (bands: >= 0.8 bowl sign, no-share >= 0.4 mixes).
+What it means for VERIFY-F61-V10 item 6: f.188r's 4TRI is mostly the bowl sign (0.73), where de Diou's leaves are mostly the no-bowl sign (bowl share
+0.23-0.37 on f.124r, f.101r, f.97r) -- so widening every 4TRI to a/n lowers the gain on f.188r because most of its 4TRI are c/p, as the shape rule
+would predict; but a quarter read no-bowl, so f.188r is not clean either, and the pre-stated read-out does not decide it. A follow-up, if wanted:
+split f.188r's 18 no-bowl tokens and test the order gain against random relabellings of 18 (H374's design, script-only). Nothing applied. 1 call,
+cost estimate 1.5 USD.

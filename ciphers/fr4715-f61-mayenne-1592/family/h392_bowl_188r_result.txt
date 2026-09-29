@@ -1,0 +1,2 @@
+gate 1 (H193 anchors): 17/20 (>= 17); gate 2 (known part-2 strips): 6/6 (>= 5)
+f.188r 4TRI 66: bowl 48, no bowl 18, n 0; yes-share 0.73 -> unclear
