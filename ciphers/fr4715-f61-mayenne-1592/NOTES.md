@@ -3708,3 +3708,12 @@ rare class ZHOOK the letter i, now on 52 agreed signs. The four-shaped signs loo
 passes code inconsistently (4TRI, 4PI, 4STEM, C43). Everything is in `family/key_period_f176v.tsv` (separate file). Nothing is merged into v4 or
 key_period_f176.tsv; whether f.61's hand shares these classes is the verifier's (H178b's tile link across hands FAILED for ZHOOK). f.61 is not
 read here. H177f done.
+
+## Campaign step H183 (29 Sept 2026, 00:49-00:50 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- f.176r against its whole decipherment (script-only)
+
+`family/h183_f176r_n1.py` (result `family/h183_f176r_n1_result.txt`, `--check` OK; build_f176_key.py and key_period_f176.tsv not edited). Same
+design as build_f176_key.py, with the clear = fol. 177r L01 - fol. 177v V05 (2,957 letters, where H177d-H177f put f.176r's end) and N = min(letters,
+signs) = 2,957 instead of 2,476. **Match 0.466 vs f.184r 0.304, margin +0.162.** Every class keeps its top letter and its proportions. VBAR_A t 103
+(was 100), s 22 (16), g 11 (10); EBR l 100 (95); HASH4 d 43 (40), i 20 (18); ZHOOK i 28 (28), now of 78 (61); SBS o 33; DBL o 27; 4STEM p 13, c 9; C43
+and VBAR_B unchanged. So the N cap the H177e flag and VERIFY-F61-V5 both noted cost coverage (about 480 letters unused), not the letter choices.
+The four values the verifier endorsed are unchanged under the full clear. For the verifier and F61-FAMILY-9; nothing merged.
