@@ -27,7 +27,7 @@ Categories were fixed by the brief before any look: 4-head, 2-hook '2#', looped,
      H224 replicate: f.188r HASH4-coded I rows -> share answered D (H224: 8 of 11).
    setN (without D): S' = #(notA & I) + #(A & DQ), same null. Read-out "split visible without D" iff p < 0.01 and the A share of I tiles <= 0.3;
      "without D the i/x rows fold into the 4-head" iff A share of I tiles >= 0.6.
-   Descriptive: f.106r and f.108 answers by pass code; H224's own reply re-scored with D folded into N.
+   Descriptive: f.106r and f.108 answers by pass code; f.61's one HASH4 (L01, addendum before any call: decides the meter token); H224's own reply re-scored with D folded into N.
   python3 v7_hash_sort.py tiles SCRATCH | score [--check]"""
 import csv, json, os, random, sys
 from collections import Counter, defaultdict
@@ -71,6 +71,8 @@ def sample():
         g = geo[(r["leaf"], r["line"], r["segment"], int(r["x_px"]))]
         its.append(dict(g, kind="C" if m != "T09" else "T", leaf=r["leaf"], code="HASH4", ref=m, letter="-", cls="-", status="-", group=grp.get(m, "-")))
     dup = rng.sample([t for t in its if t["kind"] == "T"], 8)
+    # addendum (committed before any call): f.61's single HASH4 (L01, H233's eye-placed x 1917 on images/f61sheet_L01.jpg s2), descriptive only
+    its.append(dict(kind="T", leaf="61", code="HASH4", line="L01", ref="L01s2x1917", letter="-", cls="-", status="-", seg="s2", x=1917))
     return its, dup
 def cut(t, nat, bands):
     from PIL import Image, ImageOps
@@ -78,6 +80,9 @@ def cut(t, nat, bands):
         B, meta = bands[t["leaf"]]; b = B[f"f{'274' if t['leaf'] == '274r' else t['leaf']}_{t['line']}_{t['seg']}.jpg"]
         x = b[0] + t["x"] / meta["scale"]; cy = b[1] + meta["up"]
         w = nat[t["leaf"]].crop((int(x - 60), int(cy - 55), int(x + 60), int(cy + 60))).resize((360, 345)); mx = 180
+    elif t["leaf"] == "61":
+        im = Image.open(f"{FAM}/../images/f61sheet_L01.jpg").convert("RGB"); h = im.size[1] / 2
+        w = im.crop((t["x"] - 150, int(h) + 10, t["x"] + 150, int(2 * h) - 6)); w = w.resize((360, int(w.height * 360 / 300))); mx = 180
     else:
         im = Image.open(t["crop"]).convert("RGB"); x0 = max(0, min(im.width - 360, t["x"] - 180))
         w = im.crop((x0, 0, x0 + 360, im.height)); mx = t["x"] - x0
@@ -131,7 +136,7 @@ def score():
                    f"anchor A answered {Counter(r['ans'] for r in C if r['group']=='A')}, B answered {Counter(r['ans'] for r in C if r['group']=='B')}")
         out.append(f"   repeat control: {same}/{len(D)} duplicates identical (>= 6) -> {'stable' if same >= 6 else 'unstable'}")
         T = [r for r in R if r["kind"] == "T" and not r["dup_of"]]; lt = [r for r in T if r["cls"] in ("I", "DQ")]
-        for leaf in ("188r", "101r", "274r", "106r", "108r", "108v"):
+        for leaf in ("188r", "101r", "274r", "106r", "108r", "108v", "61"):
             for code in ("HASH4", "H24"):
                 g = [r for r in T if r["leaf"] == leaf and r["code"] == code]
                 if not g: continue
