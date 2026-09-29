@@ -6,10 +6,8 @@ sign order (X count per line fixed). Reports each bin's observed count against t
 line-initial / line-final counts likewise. Writes h19_x_position.json."""
 import os, csv, json, random, collections
 here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here)
-by = collections.OrderedDict()
-for r in csv.DictReader(open(os.path.join(root, 'passA.tsv')), delimiter='\t'):
-    if r['sign'] in ('_', 'MULTI'): continue
-    by.setdefault(r['line'], []).append(r['sign'])
+import sys; sys.path.insert(0, here); from settled_lines import settled_lines
+by = collections.OrderedDict((k, [s for s in v if s not in ('_', 'MULTI')]) for k, v in settled_lines(root, 'c').items())  # H27: settled drafts
 def profile(lines):
     bins = [0] * 5; first = last = 0
     for l in lines:
@@ -34,4 +32,4 @@ def test(name, lines, out, trials=10000):
 out = {}
 verse = [v for k, v in by.items() if k.startswith('c4')]; test('verse-c4', verse, out); test('all-lines', list(by.values()), out)
 test('c2-prose', [v for k, v in by.items() if k.startswith('c2')], out)
-json.dump(out, open(os.path.join(root, 'h19_x_position.json'), 'w'), indent=1)
+json.dump(out, open(os.path.join(root, 'h19_x_position_settled.json'), 'w'), indent=1)

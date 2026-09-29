@@ -1,0 +1,362 @@
+{
+ "ours-passA": {
+  "rhyme": [
+   [
+    "WAVE",
+    "WAVE"
+   ],
+   [
+    "X",
+    "X"
+   ],
+   [
+    "SLASH",
+    "CIRC-O"
+   ],
+   [
+    "QUESTION",
+    "O-DASH2"
+   ],
+   [
+    "QUESTION",
+    "VENUS"
+   ],
+   [
+    "DELTA",
+    "DELTA"
+   ],
+   [
+    "OX",
+    "DAGGER-O"
+   ],
+   [
+    "NOTE",
+    "PICT-ARROW"
+   ],
+   [
+    "WAVE",
+    "WAVE"
+   ],
+   [
+    "S-CURL",
+    "S-CURL"
+   ]
+  ],
+  "rows": [
+   {
+    "couplet": 1,
+    "sign": "WAVE",
+    "agree": true,
+    "line_final": 4,
+    "interior": 6,
+    "expected_interior": 4.69,
+    "other_cryptograms": 15,
+    "marked": false
+   },
+   {
+    "couplet": 2,
+    "sign": "X",
+    "agree": true,
+    "line_final": 2,
+    "interior": 26,
+    "expected_interior": 28.52,
+    "other_cryptograms": 124,
+    "marked": false
+   },
+   {
+    "couplet": 3,
+    "sign": "CIRC-O",
+    "agree": false,
+    "line_final": 1,
+    "interior": 8,
+    "expected_interior": 6.19,
+    "other_cryptograms": 24,
+    "marked": false
+   },
+   {
+    "couplet": 3,
+    "sign": "SLASH",
+    "agree": false,
+    "line_final": 1,
+    "interior": 4,
+    "expected_interior": 1.31,
+    "other_cryptograms": 2,
+    "marked": false
+   },
+   {
+    "couplet": 4,
+    "sign": "O-DASH2",
+    "agree": false,
+    "line_final": 1,
+    "interior": 3,
+    "expected_interior": 2.81,
+    "other_cryptograms": 11,
+    "marked": true
+   },
+   {
+    "couplet": 4,
+    "sign": "QUESTION",
+    "agree": false,
+    "line_final": 2,
+    "interior": 2,
+    "expected_interior": 1.5,
+    "other_cryptograms": 4,
+    "marked": false
+   },
+   {
+    "couplet": 5,
+    "sign": "QUESTION",
+    "agree": false,
+    "line_final": 2,
+    "interior": 2,
+    "expected_interior": 1.5,
+    "other_cryptograms": 4,
+    "marked": false
+   },
+   {
+    "couplet": 5,
+    "sign": "VENUS",
+    "agree": false,
+    "line_final": 1,
+    "interior": 9,
+    "expected_interior": 4.32,
+    "other_cryptograms": 13,
+    "marked": false
+   },
+   {
+    "couplet": 6,
+    "sign": "DELTA",
+    "agree": true,
+    "line_final": 2,
+    "interior": 1,
+    "expected_interior": 0.56,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 7,
+    "sign": "DAGGER-O",
+    "agree": false,
+    "line_final": 1,
+    "interior": 2,
+    "expected_interior": 3.75,
+    "other_cryptograms": 17,
+    "marked": false
+   },
+   {
+    "couplet": 7,
+    "sign": "OX",
+    "agree": false,
+    "line_final": 1,
+    "interior": 0,
+    "expected_interior": 0.75,
+    "other_cryptograms": 3,
+    "marked": false
+   },
+   {
+    "couplet": 8,
+    "sign": "NOTE",
+    "agree": false,
+    "line_final": 1,
+    "interior": 7,
+    "expected_interior": 3.0,
+    "other_cryptograms": 8,
+    "marked": false
+   },
+   {
+    "couplet": 8,
+    "sign": "PICT-ARROW",
+    "agree": false,
+    "line_final": 1,
+    "interior": 1,
+    "expected_interior": 0.94,
+    "other_cryptograms": 3,
+    "marked": false
+   },
+   {
+    "couplet": 9,
+    "sign": "WAVE",
+    "agree": true,
+    "line_final": 4,
+    "interior": 6,
+    "expected_interior": 4.69,
+    "other_cryptograms": 15,
+    "marked": false
+   },
+   {
+    "couplet": 10,
+    "sign": "S-CURL",
+    "agree": true,
+    "line_final": 2,
+    "interior": 5,
+    "expected_interior": 2.63,
+    "other_cryptograms": 7,
+    "marked": false
+   }
+  ],
+  "classes": "SSSSSSSSSS",
+  "changes": 0,
+  "strict_alternation": 9,
+  "p_changes_ge": 1.0
+ },
+ "bourdeau-2026": {
+  "rhyme": [
+   [
+    "TCURL",
+    "TCURL"
+   ],
+   [
+    "XD",
+    "XD"
+   ],
+   [
+    "SL(y,o)",
+    "SL(y,o)"
+   ],
+   [
+    "EQ3_O",
+    "EQ3_O"
+   ],
+   [
+    "VENUS",
+    "VENUS"
+   ],
+   [
+    "DELTA",
+    "DELTA"
+   ],
+   [
+    "OX",
+    "OPLUS"
+   ],
+   [
+    "MARS_II",
+    "MARS_II"
+   ],
+   [
+    "TCURL",
+    "TCURL"
+   ],
+   [
+    "BX",
+    "BX"
+   ]
+  ],
+  "rows": [
+   {
+    "couplet": 1,
+    "sign": "TCURL",
+    "agree": true,
+    "line_final": 4,
+    "interior": 6,
+    "expected_interior": 9.28,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 2,
+    "sign": "XD",
+    "agree": true,
+    "line_final": 2,
+    "interior": 23,
+    "expected_interior": 23.21,
+    "other_cryptograms": 0,
+    "marked": true
+   },
+   {
+    "couplet": 3,
+    "sign": "SL(y,o)",
+    "agree": true,
+    "line_final": 2,
+    "interior": 0,
+    "expected_interior": 1.86,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 4,
+    "sign": "EQ3_O",
+    "agree": true,
+    "line_final": 2,
+    "interior": 0,
+    "expected_interior": 1.86,
+    "other_cryptograms": 0,
+    "marked": true
+   },
+   {
+    "couplet": 5,
+    "sign": "VENUS",
+    "agree": true,
+    "line_final": 2,
+    "interior": 8,
+    "expected_interior": 9.28,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 6,
+    "sign": "DELTA",
+    "agree": true,
+    "line_final": 2,
+    "interior": 1,
+    "expected_interior": 2.78,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 7,
+    "sign": "OPLUS",
+    "agree": false,
+    "line_final": 1,
+    "interior": 2,
+    "expected_interior": 2.78,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 7,
+    "sign": "OX",
+    "agree": false,
+    "line_final": 1,
+    "interior": 3,
+    "expected_interior": 3.71,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 8,
+    "sign": "MARS_II",
+    "agree": true,
+    "line_final": 2,
+    "interior": 1,
+    "expected_interior": 2.78,
+    "other_cryptograms": 0,
+    "marked": true
+   },
+   {
+    "couplet": 9,
+    "sign": "TCURL",
+    "agree": true,
+    "line_final": 4,
+    "interior": 6,
+    "expected_interior": 9.28,
+    "other_cryptograms": 0,
+    "marked": false
+   },
+   {
+    "couplet": 10,
+    "sign": "BX",
+    "agree": true,
+    "line_final": 2,
+    "interior": 1,
+    "expected_interior": 2.78,
+    "other_cryptograms": 0,
+    "marked": false
+   }
+  ],
+  "classes": "SMSMSSSMSS",
+  "changes": 6,
+  "strict_alternation": 9,
+  "p_changes_ge": 0.16165
+ }
+}

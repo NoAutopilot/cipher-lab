@@ -16,11 +16,8 @@ import csv, os, sys, json, math, random, collections
 here = os.path.dirname(os.path.abspath(__file__)); root = os.path.dirname(here); repo = os.path.dirname(os.path.dirname(root))
 PUNCT = {'BLOB', 'HOOK-L', 'DASH-H', '_', 'MULTI'}
 def ours():
-    by = collections.OrderedDict(); other = []
-    for r in csv.DictReader(open(os.path.join(root, 'passA.tsv')), delimiter='\t'):
-        if r['sign'] in ('_', 'MULTI'): pass
-        if r['line'].startswith('c4'): by.setdefault(r['line'], []).append(r['sign'])
-        else: other.append(r['sign'])
+    sys.path.insert(0, here); from settled_lines import settled_lines  # H27: settled drafts
+    by = settled_lines(root, 'c4'); other = [s for k, v in settled_lines(root, 'c').items() if not k.startswith('c4') for s in v]
     keys = sorted(by, key=lambda k: (0 if k.startswith('c4a0') else 1 if k.startswith('c4a') else 2, k))
     return [by[k] for k in keys], other
 def bourdeau():
@@ -56,4 +53,4 @@ def report(name, lines, other, out):
     for r in rows: print('  ', r)
 if __name__ == '__main__':
     out = {}; O, other = ours(); report('ours-passA', O, other, out); report('bourdeau-2026', bourdeau(), [], out)
-    json.dump(out, open(os.path.join(root, 'h8_rhyme.json'), 'w'), indent=1)
+    json.dump(out, open(os.path.join(root, 'h8_rhyme_settled.json'), 'w'), indent=1)

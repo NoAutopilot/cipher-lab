@@ -1,0 +1,113 @@
+{
+ "verse-c4": {
+  "bin1": {
+   "obs": 3,
+   "lo": 2,
+   "hi": 10
+  },
+  "bin2": {
+   "obs": 8,
+   "lo": 1,
+   "hi": 9
+  },
+  "bin3": {
+   "obs": 5,
+   "lo": 2,
+   "hi": 10
+  },
+  "bin4": {
+   "obs": 8,
+   "lo": 1,
+   "hi": 9
+  },
+  "bin5": {
+   "obs": 4,
+   "lo": 3,
+   "hi": 11
+  },
+  "line_initial": {
+   "obs": 0,
+   "lo": 0,
+   "hi": 5
+  },
+  "line_final": {
+   "obs": 0,
+   "lo": 0,
+   "hi": 5
+  }
+ },
+ "all-lines": {
+  "bin1": {
+   "obs": 29,
+   "lo": 23,
+   "hi": 41
+  },
+  "bin2": {
+   "obs": 30,
+   "lo": 20,
+   "hi": 38
+  },
+  "bin3": {
+   "obs": 30,
+   "lo": 21,
+   "hi": 38
+  },
+  "bin4": {
+   "obs": 31,
+   "lo": 20,
+   "hi": 38
+  },
+  "bin5": {
+   "obs": 32,
+   "lo": 24,
+   "hi": 43
+  },
+  "line_initial": {
+   "obs": 1,
+   "lo": 3,
+   "hi": 12
+  },
+  "line_final": {
+   "obs": 2,
+   "lo": 3,
+   "hi": 12
+  }
+ },
+ "c2-prose": {
+  "bin1": {
+   "obs": 22,
+   "lo": 13,
+   "hi": 27
+  },
+  "bin2": {
+   "obs": 16,
+   "lo": 12,
+   "hi": 26
+  },
+  "bin3": {
+   "obs": 20,
+   "lo": 12,
+   "hi": 26
+  },
+  "bin4": {
+   "obs": 17,
+   "lo": 12,
+   "hi": 26
+  },
+  "bin5": {
+   "obs": 21,
+   "lo": 14,
+   "hi": 28
+  },
+  "line_initial": {
+   "obs": 1,
+   "lo": 1,
+   "hi": 7
+  },
+  "line_final": {
+   "obs": 1,
+   "lo": 1,
+   "hi": 7
+  }
+ }
+}
