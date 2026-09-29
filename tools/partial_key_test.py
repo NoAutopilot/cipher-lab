@@ -21,7 +21,21 @@ anchor at most, rule 10). The tool never writes the words solved, new or first.
       --key SEVEN=a NINE=n ... [--corpus F ...] [--lang it] [--shuffles 200] [--seed 1] \\
       [--order-shuffles 50 --crib "..." --wild HOOK --skip A B --max-skip 6 --homophones]
 Test: python3 tools/tests/test_partial_key_test.py (offline: a true key on a real Italian window scores above the
-shuffled-key p95 on bigrams; a random key does not)."""
+shuffled-key p95 on bigrams; a random key does not).
+POLYPHONIC ORDER MODE (--cells, H354, fr4715-f61-mayenne-1592 runner 13, 29 Sept 2026): does a polyphonic key (each sign class
+-> a small letter SET) carry letter-order structure on a sign draft? Runs of >= --min-run consecutive keyed signs per line
+(any unkeyed sign breaks a run) are resolved by a 4-gram beam (tools/judge_plaintext.NgramModel, --lang, --width); the
+statistic is the ORDER GAIN = beam log10/letter in real order minus its mean over --within within-run shuffles (each run's
+signs permuted in place, so run cuts and each run's multiset are fixed and letter frequency cannot score). Control: the
+same gain under --keys binned-permuted keys (cells permuted within bins of 3 classes adjacent in the draft's token rank).
+--shuffle-target S repeats the whole test on S whole-draft sign shuffles (rule 3's ARM-C1 control: a real signal must
+vanish there). Lesson recorded with it: a plain beam score against within-bin permuted keys is NOT an order control --
+it passed on shuffled drafts in 4 of 7 leaves (H341). Report only; never a reading.
+  python3 tools/partial_key_test.py --cells cells.tsv --draft ciphertext_draft.tsv [--lang fr] [--keys 100] [--within 10]
+      [--width 400] [--min-run 4] [--seed 342] [--key-seed 3420] [--shuffle-target 0]
+  cells.tsv: 'class<TAB>letters' with letters as a/b/c; draft: TSV with line, position (or pos) and sign columns.
+Test: python3 tools/tests/test_partial_key_test_cells.py (offline: a true pair-cell key on a French text shows an order
+gain above the binned p95; the same text shuffled does not)."""
 import argparse, math, os, random, sys
 from collections import Counter
 
@@ -132,5 +146,91 @@ def main():
                       f"real {real:.3f} -- {rank(real, vals, hb)}/{found} {'at or above' if hb else 'at or below'}")
 
 
+
+# ---- polyphonic order mode (--cells), H354 ----
+def _cells_load(path):
+    out = {}
+    for line in open(path):
+        if not line.strip() or line.startswith("#") or line.startswith("class\t"): continue
+        c, l = line.rstrip("\n").split("\t")[:2]; out[c] = frozenset(x for x in l.split("/") if x)
+    return out
+def _draft_load(path):
+    import csv as _csv
+    rows = [r for r in _csv.DictReader((l for l in open(path) if not l.startswith("#")), delimiter="\t")]
+    return [(r["line"], r["sign"]) for r in rows]
+def order_runs(draft, cells, min_run=4):
+    runs, cur, last = [], [], None
+    for line, s in draft:
+        if line != last or s not in cells:
+            if len(cur) >= min_run: runs.append(cur)
+            cur = []
+        if s in cells: cur.append(s)
+        last = line
+    if len(cur) >= min_run: runs.append(cur)
+    return runs
+def make_lp(lang):
+    import judge_plaintext as jp
+    M = jp.NgramModel([jp.read_corpus(p) for p in jp.LANG_CORPORA[lang]])
+    return lambda g: math.log10((M.c.get(g, 0) + M.k) / (M.ctx.get(g[:-1], 0) + 26 * M.k))
+def beam_best(sets, lp, width=400):
+    beam = [("", 0.0)]
+    for st in sets:
+        nb = {}
+        for s, v in beam:
+            for ch in st:
+                t_ = s + ch; w = v + (lp(t_[-4:]) if len(t_) >= 4 else 0.0)
+                if t_[-3:] not in nb or nb[t_[-3:]][1] < w: nb[t_[-3:]] = (t_, w)
+        beam = sorted(nb.values(), key=lambda x: -x[1])[:width]
+    return beam[0][1]
+def order_score(runs, cf, lp, width=400):
+    tot = n = 0.0
+    for run in runs:
+        sets = [tuple(sorted(cf(c))) for c in run]
+        if any(not s for s in sets): continue
+        tot += beam_best(sets, lp, width); n += len(run) - 3
+    return tot / n if n else float("nan")
+def order_gain_test(draft, cells, lp, keys=100, within=10, width=400, min_run=4, seed=342, key_seed=3420):
+    runs = order_runs(draft, cells, min_run)
+    cnt = Counter(s for _, s in draft)
+    classes = sorted({s for _, s in draft if s in cells}, key=lambda c: (-cnt[c], c))
+    rng = random.Random(seed); shuf = []
+    for _ in range(within):
+        s = []
+        for r in runs: r2 = r[:]; rng.shuffle(r2); s.append(r2)
+        shuf.append(s)
+    def gain(cf):
+        real = order_score(runs, cf, lp, width)
+        return real - sum(order_score(s, cf, lp, width) for s in shuf) / len(shuf)
+    cf0 = lambda c: cells.get(c, ())
+    gv = gain(cf0); bins = [classes[i:i + 3] for i in range(0, len(classes), 3)]; rk = random.Random(key_seed); null = []
+    for _ in range(keys):
+        mp = {}
+        for bn in bins:
+            cs = [cells[c] for c in bn]; rk.shuffle(cs); mp.update(zip(bn, cs))
+        null.append(gain(lambda c, mp=mp: mp.get(c, ())))
+    null.sort(); p95 = null[max(0, int(round(0.95 * keys)) - 1)]
+    return {"runs": len(runs), "signs": sum(len(r) for r in runs), "gain": gv, "p95": p95, "mean": sum(null) / len(null),
+            "ge": sum(x >= gv for x in null), "keys": keys, "signal": gv > p95}
+def cells_main(argv):
+    ap = argparse.ArgumentParser(description="partial_key_test.py polyphonic order mode (see the module docstring)")
+    ap.add_argument("--cells", required=True); ap.add_argument("--draft", required=True); ap.add_argument("--lang", default="fr")
+    ap.add_argument("--keys", type=int, default=100); ap.add_argument("--within", type=int, default=10)
+    ap.add_argument("--width", type=int, default=400); ap.add_argument("--min-run", type=int, default=4)
+    ap.add_argument("--seed", type=int, default=342); ap.add_argument("--key-seed", type=int, default=3420)
+    ap.add_argument("--shuffle-target", type=int, default=0)
+    a = ap.parse_args(argv)
+    cells, draft, lp = _cells_load(a.cells), _draft_load(a.draft), make_lp(a.lang)
+    kw = dict(keys=a.keys, within=a.within, width=a.width, min_run=a.min_run, seed=a.seed, key_seed=a.key_seed)
+    r = order_gain_test(draft, cells, lp, **kw)
+    print(f"real draft: runs {r['runs']}, signs {r['signs']}; order gain {r['gain']:.4f}; binned keys mean {r['mean']:.4f} p95 {r['p95']:.4f}, >= real {r['ge']}/{r['keys']} -> {'order signal' if r['signal'] else 'no order signal'}")
+    hits = 0
+    for k in range(a.shuffle_target):
+        sg = [s for _, s in draft]; random.Random(a.seed * 1000 + k).shuffle(sg)
+        rs = order_gain_test([(l, s) for (l, _), s in zip(draft, sg)], cells, lp, **kw); hits += rs["signal"]
+        print(f"shuffled target {k + 1}: order gain {rs['gain']:.4f} vs p95 {rs['p95']:.4f} -> {'order signal' if rs['signal'] else 'no order signal'}")
+    if a.shuffle_target:
+        print(f"ARM-C1: order signal on {hits}/{a.shuffle_target} shuffled targets -> {'the real-draft result is VOID' if hits else 'control clean'}")
+
 if __name__ == "__main__":
+    if "--cells" in sys.argv: cells_main(sys.argv[1:]); sys.exit(0)
     main()

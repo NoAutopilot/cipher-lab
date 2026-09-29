@@ -5298,3 +5298,14 @@ Caveats, carried: (1) dropping the 43% of columns where the drafts differ splice
 should blur a real sequence signal rather than make one, but the design did not correct for it; (2) 8 runs, and the statistic's power at 8 runs was not
 measured (H340's beam power at 8 runs was 0.40/0.82 in-sample, a different statistic). So f.108v moves from 'fragile' to 'a thin order signal in
 f.61's own hand, on agreed signs'. Evidence about v7's cells as a set; not a reading. No call.
+
+## Campaign step H354 (29 Sept 2026, 16:23-16:26 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the order statistic becomes a mode of a shared tool (rule 8)
+
+Rule 8 ("an option added to the tool, not a private copy"): `tools/partial_key_test.py` already scores a partial key by order structure against
+shuffled controls, for one-letter codes; it gains a `--cells` polyphonic order mode (letter-SET cells, 4-gram beam, within-run shuffle gain, binned
+keys, `--shuffle-target` for the ARM-C1 control; the H341 lesson in its docstring), rather than a new tools/order_gain.py as the row first said.
+Offline test `tools/tests/test_partial_key_test_cells.py` (a pair-cell key on 480 letters of fr16 French: true key gain 0.474 > binned p95 0.118;
+the same draft shuffled 0.019 <= p95 0.067; run breaks at unkeyed signs and line ends); the tool's own test still passes. Equivalence: with v7's cells
+written as `family/key_v7_cells_h354.tsv`, `python3 tools/partial_key_test.py --cells family/key_v7_cells_h354.tsv --draft
+family/passes/recf124r/ciphertext_draft.tsv` prints gain 0.0320, binned mean -0.0015, p95 0.0198, 0/100 -- H342's f.124r line exactly. h342-h351
+are left as they are (their results are cited; their --check stays OK). SYSTEM.md line updated (system_map_check exit 0). No call.
