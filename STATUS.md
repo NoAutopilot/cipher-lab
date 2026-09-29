@@ -2448,6 +2448,14 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (29 Sept 2026, 10:15 Pacific [17:15 UTC], account 3): f.61 held-leaf evidence and the 4TRI split go to two verifiers
+
+- Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
+- f.61, runner 13 (H332-H369, retired at about 480k): key v7 shows an order signal on two leaves it was not built from (f.124r, f.97r; shuffled targets clean); f.106r, in the secretary's hand, is too short to test (H351 withdrew H350's negative -- my 16:1x note relayed H350 and was corrected at 16:4x). The readers' 4TRI code looks like two signs told apart by a stem-foot bowl: on f.101r its no-bowl tokens carry period letters a/n 118 of 130; splitting it doubles the f.124r order gain (0.034 -> 0.071) and lifts the held-gloss count (148 -> 156, binned p95 148). family/PROPOSAL_v8_4tri.md; nothing applied, no cell moved; the meter stays 12 / 59 / 2 / 26.
+- Verifiers: VERIFY-F61-V10 (session_01BBihDVXNJZJwuUvhLshzw4, the order evidence) and VERIFY-F61-V11 (session_014WJQrMDaNXqTV6vUzUouZU, the 4TRI split), both Opus 5.5, cap 20 each. Runner 14 (session_01N7YQoVMZj1SfiFvc4XG9DH, :50) bowl-reads f.61's own 4TRI tokens next (H367): the step that says whether the split touches f.61 at all.
+- ASKS 99 widened: the f.106r person pack now has 42 arrows on 12 sheets; the model gloss readers are retired for that hand, so a person's read is the only route to its period letters.
+- Debosnys: museum request ready for the owner (ASKS 100). Armstrong, Mercy: hold. Mailbox: not visible from account 3.
+
 ### Orchestrator note (29 Sept 2026, 08:05 Pacific [15:05 UTC], account 3): the 14:xx firings were missed; f.61 runner 13 started
 
 - The 14:xx scheduled firings on account 3 (dispatcher 14:10, this check-in 14:12, f.61 runner 14:50) did not arrive; the standby firing scheduled 14:54 arrived at 14:59 and this note covers 13:25-15:05. Account 3 holds the role (no owner-account line since 06:16), Opus 5.5 until 01:00 Pacific [08:00 UTC] 3 Oct. Counts 21 / 2 / 1 / 6, unchanged.
