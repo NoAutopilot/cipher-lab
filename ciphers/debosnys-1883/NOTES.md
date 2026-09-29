@@ -1267,3 +1267,20 @@ From the done lines and RESULT.md files of DEB-SWARM2-R2-2, R2-4 and R2-5 (swarm
   "no power at this N" shape as H47 and the near-random local order of H41.
 No row of this campaign needs a numeric correction; H54's recommendation is withdrawn in favour of "public pixels are
 the limit". Status `open`; nothing read.
+
+### H61, coarse folds on R2-2's known-answer page (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU, no reader calls)
+
+Pre-registered in `h61/PREREG.md` (pushed f8ca3dc7 before any score); `scripts/h61_coarse_folds.py` -> `h61/result.json`.
+R2-2's own scoring reproduces exactly (two-reader error 15.6 pct; R1 11.5, R2 7.3). With the six coarse folds on top
+(EIGHT+VENUS+THREE, C-BAR-X+ARCH-DASH, CIRC-O+BLOB, O-SLASH+PHI, II-DASH+CC-DASH, S-CURL+DOUBLE-LOOP): **two-reader
+error 2.1 pct** (0 unsettled; the 2 agreed-but-wrong boxes are the CC-DASH/CC-DOT and X/X-O cases R2-2 already flags as
+possible truth-label errors), single-reader 2.1 pct each -- under the 5 pct kill line. On the c1+c2 settled drafts the
+folds touch 18.0 pct of tokens and lower K only from 129 to 123 (N 790, clear spans dropped, RULE.md marks removed).
+**Read as pre-registered: optimistic, not a pass that licenses use.** All 13 of R2-2's reader splits fall inside
+exactly the six folded pairs, because the folds were named from that same split list on this same page -- the
+statistic cannot fail on the page it was fitted to (rule 3: a control that cannot differ from the construction is not
+a test). What it does show: on this page, every reader disagreement is one of six confusable pairs; nothing else split.
+The next honest step is a FRESH known-answer page (new boxes, same protocol, the six folds fixed in advance) -- that
+needs two reader calls (R2-2's protocol, about 1-2 USD), gated like H57 on allowed_warning. Polyphony caveat for any
+later use of the folded text: each fold may merge distinct plaintext units; every use is reported folded and unfolded.
+Nothing read; status `open`.
