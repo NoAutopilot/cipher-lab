@@ -5155,3 +5155,11 @@ worse (L10-L12 drift one row down). The four crops are re-cut at eye-set centres
 each now holds its own cipher row with its gloss above (checked by eye). H332's pass rows for those four crops are therefore unreliable (A skipped them;
 B read them from the neighbouring band at conf l); the count in H332 does not change its read-out (its words under those crops are few), and any
 later use of rows 7-12 uses the re-cut crops. No call.
+
+## Campaign step H333 (29 Sept 2026, 15:26 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- ASKS 99's f.106r desk pack extended to rows 7-12 (script-only)
+
+`family/h333_pack2_106r.py` (`--check` OK): six more sheets in `family/images/person_pack_106r/` (f106r_L07-L12.jpg, H243's drawing), 25 more arrows
+N18-N42 under every HASH4 both H332 sign passes wrote at the same reconciled position (10 'agree', 15 'agree-flagged'), x from pass A where its sign
+matches, else pass B; the four H334 crops use their re-cut boxes. README section added; key.tsv rows N18-N42 'unshaped' (the looped/4-head shape was
+not read on rows 7-12). Spot-checked by eye (N26, N38-N42 sit on hash-like signs in the sheet's own row). ASKS 99's text says 17 arrows on six
+sheets; widening it to 42 on twelve (about 30 minutes) is the orchestrator's call -- flagged in ROOM, ASKS.md not edited here. No reading, no call.

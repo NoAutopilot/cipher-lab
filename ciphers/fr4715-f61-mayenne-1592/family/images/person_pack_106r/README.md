@@ -15,3 +15,11 @@ Answer as `ciphers/fr4715-f61-mayenne-1592/family/passes/f106r_hash_person.tsv`,
     N01	(letters as written)	high|medium|low|none	
 
 `key.tsv` (which arrows are which shape) is for scoring afterwards; the reader should not open it.
+
+## Rows 7-12 (H333, runner 13, 29 Sept 2026)
+
+Built by `family/h333_pack2_106r.py` from H332's cut (with H334's four re-cut crops). Six more sheets, `f106r_L07.jpg` .. `f106r_L12.jpg`, with 25
+more numbered arrows, **N18-N42**, each under a hash-like sign that both model sign readers wrote at the same place. The question is the same: the
+clear letter or letters written directly above the arrowed sign (in the sign's own row, which is the lowest row on each sheet at the left and rises a
+little to the right), or 'none'. Add the answers to the same file, `family/passes/f106r_hash_person.tsv`, numbers N18-N42. For rows 7-12 the
+sign's shape (looped or four-headed) was not read; only key.tsv records that.
