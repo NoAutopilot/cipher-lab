@@ -298,3 +298,7 @@ H359's prompt verbatim, four calls, one per chunk c1..c4 (part 2 = SCRATCH/h360_
 ## H362 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
 H359's prompt verbatim with part 2 = SCRATCH/h362/sheet_01..04.jpg (R01-R70), fr.3982 f.101r targets; script `h362_bowl_101r.py`, key `h362_items.tsv`.
 The runner did not look at the H362 sheets.
+
+## H365 (runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ, 29 Sept 2026) -- WRITTEN BEFORE THE CALLS
+H359's prompt verbatim, four calls (part 2 = SCRATCH/h365_cK/sheet_01..03.jpg; R01-R48, c4 R01-R47), f.101r; script `h365_101r_4tri_split.py`, key `h365_items.tsv`.
+The runner did not look at the H365 sheets.
