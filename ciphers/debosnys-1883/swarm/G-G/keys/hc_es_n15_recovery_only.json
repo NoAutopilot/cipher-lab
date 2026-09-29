@@ -1,0 +1,5 @@
+seed 0 recovery_test 0.182
+seed 1 recovery_test 0.227
+seed 2 recovery_test 0.273
+seed 3 recovery_test 0.159
+{"cmd": "hcontrol", "lang": "es", "model": "es_f5", "noise": 0.15, "dir": "c2c1", "restarts": 128, "iters": 1500000, "perturb": "0.2", "recovery_test": [0.182, 0.227, 0.273, 0.159], "mean": 0.21}

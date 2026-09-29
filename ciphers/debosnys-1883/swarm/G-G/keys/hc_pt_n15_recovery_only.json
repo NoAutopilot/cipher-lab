@@ -1,0 +1,5 @@
+seed 0 recovery_test 0.508
+seed 1 recovery_test 0.356
+seed 2 recovery_test 0.462
+seed 3 recovery_test 0.356
+{"cmd": "hcontrol", "lang": "ptv", "model": "ptv_f5", "noise": 0.15, "dir": "c2c1", "restarts": 128, "iters": 1500000, "perturb": "0.2", "recovery_test": [0.508, 0.356, 0.462, 0.356], "mean": 0.42}

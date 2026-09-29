@@ -1,0 +1,5 @@
+{"seed": 0, "recovery_test": 0.182, "own_quad": [99.5, 93.8], "own_pass": false, "passes": []}
+{"seed": 1, "recovery_test": 0.227, "own_quad": [100.0, 100.0], "own_pass": true, "passes": ["es_quad"]}
+{"seed": 2, "recovery_test": 0.273, "own_quad": [100.0, 99.7], "own_pass": false, "passes": []}
+{"seed": 3, "recovery_test": 0.159, "own_quad": [99.4, 83.9], "own_pass": false, "passes": []}
+{"cmd": "hcontrol", "lang": "es", "model": "es_f5", "noise": 0.15, "dir": "c2c1", "restarts": 128, "iters": 1500000, "perturb": "0.2", "recovery_test": [0.182, 0.227, 0.273, 0.159], "mean": 0.21, "own_quad_pass": 1, "seeds": 4}

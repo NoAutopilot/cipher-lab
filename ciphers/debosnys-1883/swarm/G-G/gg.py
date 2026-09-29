@@ -87,12 +87,18 @@ def ctl_tokens(text):
     rows = list(csv.DictReader(open(os.path.join(HERE, '..', 'controls', cid + '.tsv')), delimiter='\t'))
     return [r['sign'] for r in rows if not part or r['line'].startswith(part + '_')]
 
+_SC = None
+def scorer():
+    # the frozen scorer as a read-only module import (never edited): its loader and its evaluate()
+    global _SC
+    if _SC is None:
+        import importlib.util
+        spec = importlib.util.spec_from_file_location('deb_score', os.path.join(HERE, '..', 'score.py'))
+        _SC = importlib.util.module_from_spec(spec); spec.loader.exec_module(_SC)
+    return _SC
+
 def scorer_tokens(text):
-    # the frozen scorer's own loader (read-only import): the exact token stream score.py scores, X kept
-    import importlib.util
-    spec = importlib.util.spec_from_file_location('deb_score', os.path.join(HERE, '..', 'score.py'))
-    m = importlib.util.module_from_spec(spec); spec.loader.exec_module(m)
-    return m.flat(m.load_text(text))
+    m = scorer(); return m.flat(m.load_text(text))
 
 def real_tokens(text, keep_x=False):
     if text.startswith('S:'):
@@ -164,7 +170,7 @@ def curve_control(lang, noise, rng):
     return pt, ct
 
 def cmd_hcontrol(a):
-    res = []
+    res = []; scored = []
     for seed in range(a.seeds):
         rng = random.Random(5000 + seed)
         pt, ct = curve_control(a.lang, a.noise, rng)
@@ -173,9 +179,17 @@ def cmd_hcontrol(a):
         used = sorted(set(fit)); ix = {s: i for i, s in enumerate(used)}
         sc, key = anneal(a.model, [ix[t] for t in fit], len(used), a.restarts, a.iters, seed + 1, a.klw)
         ok = sum(1 for t, p in zip(test, ptt) if t in ix and key[ix[t]] == p)
-        res.append(ok / len(test)); print('seed', seed, 'recovery_test %.3f' % res[-1], flush=True)
+        res.append(ok / len(test))
+        # the frozen scorer's own held-out test on this hand-planted pair: key restricted to fit signs, test tokens scored
+        m = scorer(); kd = {'H%03d' % u: key[ix[u]] for u in used}; tt = ['H%03d' % t for t in test]
+        rep, _ = m.evaluate(tt, kd, 1000, m.seed_for(kd, 'G-hcontrol-%s-%d' % (a.lang, seed)))
+        own = {'ptv': 'pt'}.get(a.lang, a.lang) + '_quad'
+        passes = [k for k, v in rep.items() if v['beats_all'] and v['beats_all_strat']]
+        scored.append(dict(seed=seed, recovery_test=round(res[-1], 3), own_quad=[rep[own]['pct'], rep[own]['pct_strat']], own_pass=own in passes, passes=passes))
+        print(json.dumps(scored[-1]), flush=True)
     print(json.dumps(dict(cmd='hcontrol', lang=a.lang, model=a.model, noise=a.noise, dir=a.dir, restarts=a.restarts, iters=a.iters,
-                          perturb=os.environ.get('HSA_PERTURB'), recovery_test=[round(r, 3) for r in res], mean=round(sum(res) / len(res), 3))))
+                          perturb=os.environ.get('HSA_PERTURB'), recovery_test=[round(r, 3) for r in res], mean=round(sum(res) / len(res), 3),
+                          own_quad_pass=sum(1 for x in scored if x['own_pass']), seeds=len(scored))))
 
 def cmd_control(a):
     res = []
@@ -193,6 +207,7 @@ def cmd_control(a):
 
 def cmd_solve(a):
     toks = real_tokens(a.text, a.keep_x)
+    if a.shuffle is not None: random.Random(a.shuffle).shuffle(toks)   # null: same tokens, order destroyed
     signs = sorted(set(toks)); ix = {s: i for i, s in enumerate(signs)}
     sc, key = anneal(a.lang, [ix[t] for t in toks], len(signs), a.restarts, a.iters, a.seed, a.klw)
     print('score %.2f per-char %.3f N %d K %d' % (sc, sc / len(toks), len(toks), len(signs)))
@@ -215,7 +230,7 @@ if __name__ == '__main__':
     h = sp.add_parser('hcontrol'); h.add_argument('lang'); h.add_argument('--model', required=True)
     h.add_argument('--noise', type=float, default=0.15); h.add_argument('--seeds', type=int, default=4); h.add_argument('--dir', default='c2c1')
     s = sp.add_parser('solve'); s.add_argument('lang'); s.add_argument('text'); s.add_argument('--keep-x', action='store_true')
-    s.add_argument('--out'); s.add_argument('--show', action='store_true'); s.add_argument('--seed', type=int, default=1)
+    s.add_argument('--out'); s.add_argument('--show', action='store_true'); s.add_argument('--seed', type=int, default=1); s.add_argument('--shuffle', type=int)
     for p in (c, s, h):
         p.add_argument('--restarts', type=int, default=8); p.add_argument('--iters', type=int, default=300000)
         p.add_argument('--klw', type=float, default=1.0)

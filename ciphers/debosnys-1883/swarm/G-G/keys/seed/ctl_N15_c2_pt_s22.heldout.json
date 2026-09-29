@@ -1,0 +1,122 @@
+{
+ "mode": "held-out",
+ "fit": "PT-HOMO-N15.c2",
+ "test": "PT-HOMO-N15.c1",
+ "key_sha1": "8db3f0768dbaf573b623df83edb70876a56c375c",
+ "key_signs": 119,
+ "key_signs_seen_in_fit": 119,
+ "N_test": 132,
+ "coverage_test": 0.9394,
+ "read_letters": 124,
+ "shuffles": 1000,
+ "stats": {
+  "fr_quad": {
+   "real": -5.4811,
+   "null_median": -5.9889,
+   "pct": 100.0,
+   "beats_all": true,
+   "strat_null_median": -5.8255,
+   "pct_strat": 99.3,
+   "beats_all_strat": false
+  },
+  "fr_dict": {
+   "real": 0.0645,
+   "null_median": 0.0,
+   "pct": 91.7,
+   "beats_all": false,
+   "strat_null_median": 0.0323,
+   "pct_strat": 84.4,
+   "beats_all_strat": false
+  },
+  "en_quad": {
+   "real": -5.7852,
+   "null_median": -6.0145,
+   "pct": 95.2,
+   "beats_all": false,
+   "strat_null_median": -5.8461,
+   "pct_strat": 71.3,
+   "beats_all_strat": false
+  },
+  "en_dict": {
+   "real": 0.0323,
+   "null_median": 0.0,
+   "pct": 60.3,
+   "beats_all": false,
+   "strat_null_median": 0.0,
+   "pct_strat": 50.2,
+   "beats_all_strat": false
+  },
+  "pt_quad": {
+   "real": -5.0437,
+   "null_median": -5.7144,
+   "pct": 100.0,
+   "beats_all": true,
+   "strat_null_median": -5.4274,
+   "pct_strat": 100.0,
+   "beats_all_strat": true
+  },
+  "pt_dict": {
+   "real": 0.0968,
+   "null_median": 0.0,
+   "pct": 98.1,
+   "beats_all": false,
+   "strat_null_median": 0.0323,
+   "pct_strat": 95.4,
+   "beats_all_strat": false
+  },
+  "es_quad": {
+   "real": -5.211,
+   "null_median": -5.7651,
+   "pct": 100.0,
+   "beats_all": true,
+   "strat_null_median": -5.5761,
+   "pct_strat": 100.0,
+   "beats_all_strat": true
+  },
+  "es_dict": {
+   "real": 0.0,
+   "null_median": 0.0323,
+   "pct": 0.0,
+   "beats_all": false,
+   "strat_null_median": 0.0323,
+   "pct_strat": 0.0,
+   "beats_all_strat": false
+  },
+  "la_quad": {
+   "real": -5.5027,
+   "null_median": -5.9618,
+   "pct": 99.1,
+   "beats_all": false,
+   "strat_null_median": -5.7604,
+   "pct_strat": 98.5,
+   "beats_all_strat": false
+  },
+  "la_dict": {
+   "real": 0.0645,
+   "null_median": 0.0323,
+   "pct": 59.7,
+   "beats_all": false,
+   "strat_null_median": 0.0645,
+   "pct_strat": 41.2,
+   "beats_all_strat": false
+  },
+  "vocab": {
+   "real": 0.0242,
+   "null_median": 0.0242,
+   "pct": 44.8,
+   "beats_all": false,
+   "strat_null_median": 0.0242,
+   "pct_strat": 37.4,
+   "beats_all_strat": false
+  }
+ },
+ "recovery_pct_test": 56.82,
+ "control_recovery": {
+  "mode": "control",
+  "control": "PT-HOMO-N15",
+  "key_sha1": "8db3f0768dbaf573b623df83edb70876a56c375c",
+  "recovery_pct_c1": 56.82,
+  "recovery_pct_c2": 55.93,
+  "recovery_pct": 56.08
+ }
+}
