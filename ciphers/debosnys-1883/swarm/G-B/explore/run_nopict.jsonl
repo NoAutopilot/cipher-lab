@@ -1,0 +1,4 @@
+{"mode": "shuffled", "target": "c2+c3+c4", "per_window5": -1.1112, "noise_note": null, "xnull": false, "N": 958, "K": 128, "best": -586.725, "per_window": null, "top_restarts": [-586.725, -587.223, -5
+{"mode": "shuffled", "target": "c2+c3+c4", "per_window5": -1.1193, "noise_note": null, "xnull": false, "N": 958, "K": 128, "best": -591.009, "per_window": null, "top_restarts": [-591.009, -591.071, -5
+{"mode": "target", "target": "c2+c3+c4", "per_window5": -1.0804, "noise_note": null, "xnull": false, "N": 958, "K": 128, "best": -570.455, "per_window": null, "top_restarts": [-570.455, -571.514, -572
+{"control2": true, "ctrl_file": "pg1661_holmes.txt", "per_window5": -0.9766, "fit": "c2+c3+c4", "seed": 71, "noise": 0.15, "xnull": false, "K_fit": 126, "recovery_c2+c3+c4": 0.7255, "recovery_c1": 0.7

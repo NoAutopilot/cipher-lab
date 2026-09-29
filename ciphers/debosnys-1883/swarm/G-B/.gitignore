@@ -1,0 +1,13 @@
+corpus/*.txt
+_letters.txt
+model*.bin
+hsolve
+hsolve5
+build5
+_cipher_*
+_ctrl2_*
+_letters*.txt
+build5s
+hsolve5b
+hsolve5s
+__pycache__/

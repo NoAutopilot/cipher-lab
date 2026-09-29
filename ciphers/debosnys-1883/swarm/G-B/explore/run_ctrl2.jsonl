@@ -1,0 +1,4 @@
+{"control2": true, "fit": "c2", "seed": 10, "noise": 0.0, "xnull": false, "K_fit": 125, "recovery_c2": 0.9434, "recovery_c1": 0.8258, "key": "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/_ctrl2_key_s10.tsv"}
+{"control2": true, "fit": "c2", "seed": 20, "noise": 0.0, "xnull": false, "K_fit": 128, "recovery_c2": 0.9308, "recovery_c1": 0.8788, "key": "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/_ctrl2_key_s20.tsv"}
+{"control2": true, "fit": "c2", "seed": 15, "noise": 0.15, "xnull": false, "K_fit": 127, "recovery_c2": 0.4182, "recovery_c1": 0.3788, "key": "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/_ctrl2_key_s15.tsv"}
+{"control2": true, "fit": "c2", "seed": 25, "noise": 0.15, "xnull": false, "K_fit": 126, "recovery_c2": 0.6211, "recovery_c1": 0.6439, "key": "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/_ctrl2_key_s25.tsv"}

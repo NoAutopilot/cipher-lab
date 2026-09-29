@@ -1,0 +1,4 @@
+{"control": "c2", "seed": 2, "noise": 0.1, "xnull": false, "N": 643, "K": 122, "recovery": 0.5894, "best": -364.067, "top_restarts": [-364.067, -365.11, -365.407, -365.479, -366.531]}
+{"control": "c2", "seed": 3, "noise": 0.1, "xnull": false, "N": 643, "K": 118, "recovery": 0.7838, "best": -331.478, "top_restarts": [-331.478, -331.773, -332.241, -332.352, -332.359]}
+{"control": "c2", "seed": 2, "noise": 0.15, "xnull": false, "N": 643, "K": 121, "recovery": 0.6516, "best": -355.958, "top_restarts": [-355.958, -356.526, -356.749, -356.759, -357.042]}
+{"control": "c2", "seed": 3, "noise": 0.15, "xnull": false, "N": 643, "K": 118, "recovery": 0.6003, "best": -365.131, "top_restarts": [-365.131, -366.587, -367.311, -367.445, -367.834]}

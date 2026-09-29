@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/gb.py", line 209, in <module>
+    main()
+Traceback (most recent call last):
+  File "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/gb.py", line 194, in main
+  File "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/gb.py", line 209, in <module>
+    if a.mode == 'shuffled': stream = shuffled_stream(stream, 1000 + a.seed); a.tag = (a.tag or ('xnull' if a.xnull else 'xletter')) + '_SHUF'
+                                          ^^^^^^^^^^^^^^^
+NameErrormain()
+: name 'shuffled_stream' is not defined  File "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/gb.py", line 194, in main
+
+    if a.mode == 'shuffled': stream = shuffled_stream(stream, 1000 + a.seed); a.tag = (a.tag or ('xnull' if a.xnull else 'xletter')) + '_SHUF'
+                                      ^^^^^^^^^^^^^^^
+NameError: name 'shuffled_stream' is not defined
+{"mode": "target", "target": "c2", "per_window5": -0.9392, "noise_note": null, "xnull": true, "N": 547, "K": 121, "best": -295.855, "per_window": null, "top_restarts": [-295.855, -296.721, -296.977, -297.998, -298.575], "key": "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/key_c2_xnull_s1.tsv"}
+{"mode": "target", "target": "c2", "per_window5": -0.999, "noise_note": null, "xnull": false, "N": 643, "K": 122, "best": -398.606, "per_window": null, "top_restarts": [-398.606, -399.658, -400.413, -401.878, -402.443], "key": "/home/user/cipher-lab/ciphers/debosnys-1883/swarm/G-B/key_c2_xletter_s1.tsv"}

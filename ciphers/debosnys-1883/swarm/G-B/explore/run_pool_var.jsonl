@@ -1,0 +1,4 @@
+{"mode": "target", "target": "c2+c3+c4", "per_window5": -1.0807, "noise_note": null, "xnull": false, "N": 958, "K": 128, "best": -570.589, "
+{"mode": "shuffled", "target": "c2+c3+c4", "per_window5": -1.1746, "noise_note": null, "xnull": false, "N": 1013, "K": 151, "best": -798.704
+{"mode": "target", "target": "c2+c3+c4", "per_window5": -1.1058, "noise_note": null, "xnull": false, "N": 1013, "K": 151, "best": -756.384, 
+{"mode": "target", "target": "c2+c3+c4", "per_window5": -1.1429, "noise_note": null, "xnull": false, "N": 1013, "K": 151, "best": -777.153, 
