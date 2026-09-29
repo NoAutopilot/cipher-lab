@@ -6156,3 +6156,18 @@ check L01/12 -> R3 (4PI): PASS. L01/11: R1 at W1, W2, W3 -> the 4-over-hash**, i
 caveat: the mark is "heavily overwritten ... possibly a correction", R1 or R3, low confidence -- so this is grade-M transcription support, not
 firm. With H428b (not the looped hash, not 4PI) and V12's single 4PI read, the reads on L01/11 are 4PI 1 (V12), none 3 (H428b, no 4-over-hash on
 the panel), 4-over-hash 3 (H431): for a verifier, V12's hold resolves to "HASH4 as coded, M". Meter unchanged.
+
+## Campaign steps H433 and H434 (29 Sept 2026, 20:42-20:50 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- the held-out scorer covers ASKS 89 and 93, filters to pass-agreed cells, and knows its own power (script-only)
+
+- **H433** (`family/h430_ctx_heldout.py` extended, no gloss exists yet): adapters in the desk packs' fixed formats for ASKS 89 (f.108v,
+  `scripts/gloss108v_person.tsv`, pass A numbering) and ASKS 93 (f.211r, `scripts/gloss211r_person.tsv`, ruler ticks from the pack's own
+  table); ASKS 99 asks for hash shapes, not letters (no adapter). The gate is applied to the pool of whichever sources have landed. Transcription
+  filter, pre-registered: on f.108r and f.108v a cell is scored only where both sign passes read the same class (f.108r 74 of 85 signs, f.108v
+  179 of 311), because f.61's own transcription is QA'd and f.108v's passes differ on about half their columns; unfiltered cells still give
+  context. Self-tests (synthetic glosses from the chooser's own letters, plumbing only): f108r 45/45, f108v 60 + f211r 7: PASS.
+- **H434** (`family/h434_heldout_power.py`, check OK): power of H430's criterion (1) (McNemar p < 0.05, chooser > unigram), resampling f.61's
+  own-hand cells from H423 (97; seed 434), at the most cells each gloss could give (every agreed two-way cell glossed -- an upper bound):
+  **f.108r alone N 57: 0.46; f.108v alone N 91: 0.66 (0.34 at half coverage); f.211r N 7: 0.00; all three N 155: 0.88.** Criteria (2)/(3) are
+  not simulated, so these are upper bounds. Wired into H430's read-out before any data: a FAIL at power < 0.80 reads "untestable at this N --
+  keep waiting", and only a pooled FAIL at power >= 0.80 retires the chooser. In plain words: the chooser can be licensed or retired for f.61
+  only when all three person reads (ASKS 88, 89, 93) are in; any one alone can pass it but cannot fail it.

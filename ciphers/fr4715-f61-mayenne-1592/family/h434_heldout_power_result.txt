@@ -1,0 +1,10 @@
+population: f.61's hand, 97 cells, chooser 82, unigram 71
+upper-bound N (agreed two-way cells if all glossed): f108r (ASKS 88) 57; f108v (ASKS 89) 91; f211r (ASKS 93) 7
+f108r alone (N 57): power of criterion (1) = 0.461
+f211r alone (N 7): power of criterion (1) = 0.002
+f108v alone (N 91): power of criterion (1) = 0.656
+f108v at half coverage (N 45): power of criterion (1) = 0.343
+all three (N 155): power of criterion (1) = 0.883
+N 30 (N 30): power of criterion (1) = 0.204
+N 45 (N 45): power of criterion (1) = 0.367
+N 60 (N 60): power of criterion (1) = 0.485
