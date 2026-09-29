@@ -1284,3 +1284,19 @@ The next honest step is a FRESH known-answer page (new boxes, same protocol, the
 needs two reader calls (R2-2's protocol, about 1-2 USD), gated like H57 on allowed_warning. Polyphony caveat for any
 later use of the folded text: each fold may merge distinct plaintext units; every use is reported folded and unfolded.
 Nothing read; status `open`.
+
+### H60, D's order battery at H51's upper bound (29 Sept 2026, DEBOSNYS-RUNNER-3b, CPU)
+
+`swarm/R2/R2-1/r21.py calib` unchanged (dcore.py unchanged), texts raw / b (folded) / c (strokes dropped) on the c1/c2
+shape at 30, 35 and 40 pct mixed noise (3:1 replace:indel), 40 pairs x 6 designs each (h60/calib_*.jsonl, 9 jobs, 3 min
+49 s on 4 cores); `scripts/h60_order_high_noise.py` -> `h60/result.json`. Scoring fixed before reading: R2-1's own
+threshold from its 20 pct decision noise, balanced accuracy of that threshold at each new level (primary; own-best
+threshold secondary), and language pairs as low as the real on-file score. **Pair-score separation at the fixed
+threshold: raw 0.818 / 0.767 / 0.657, b 0.833 / 0.792 / 0.69, c 0.84 / 0.792 / 0.725 at 30 / 35 / 40 pct** (own-best
+0.74-0.88). The kill for the objection "noise hides order" (separation >= 0.80 at 40 pct) is **not met** on any text.
+Language pairs scoring as low as the real c2 grow with noise: at 30 pct 0-7 of 40 per design, at 40 pct up to 10-15 of
+40 (b: FR-HOMO 14, PT-HOMO 15). So, as the row asked: **c2's no-order result (D, R2-1) is conditional on true
+transcription error below about 30 pct**; at 35 pct the battery is already marginal and at 40 pct a French homophonic
+text would often score as low as the real one. H51 bounds c2's error at about 17 pct on agreed boxes and about 50 pct on
+majority-settled boxes (34 pct of rows), so a true page error in the 20-30 pct range is plausible and the no-order call
+sits near, not safely inside, the battery's working range. Nothing read; status `open`.
