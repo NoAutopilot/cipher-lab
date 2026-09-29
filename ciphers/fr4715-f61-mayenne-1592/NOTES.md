@@ -6108,3 +6108,12 @@ placement (disclosed). Placement look by the runner: the references sheet only. 
 With V12's endorsed state (12 / 59 / 1 / 27 of 99) and both of these merged the meter would read **12 / 58 / 1 / 29 of 100** -- computed by hand
 from the bands, for the verifier; nothing is applied here (the corrections file is the orchestrator's, after a verifier's ruling). H428b (L01/11
 HASH4 vs 4PI) still needs an in-hand HASH4 tile source. Cost: one Opus call (~102k subagent tokens), est. 1.5.
+
+## Campaign step H429 (29 Sept 2026, 20:36 UTC by date -u, runner 16 session_01Vtwc6CEJD2BSnYdzzY4f8W) -- f.108r's "fitted extras" are form-A brackets (script-only)
+
+`family/h429_108r_fitted_extras.py` -> `h429_108r_fitted_extras_result.tsv` (check OK): the f.108r overlay letters key v8 catches and H417's column
+key does not are seven, every one a bracket under 's' (T1/1, 5, 14, 34, 39; T2/7, 31; both passes EBR, pass A conf h) -- none is a 4TRI t or DBL u
+(runner 15's suggestion listed those; they do not occur here). H22 (28 Sept) already split the bracket blind on both leaves, EBR_A (hairline
+diagonal) = f/s 6/6, EBR_B (squared C) = l/y 4/4, and all of f.61's in-span brackets are form B ('l'). The f.108r sequence used by
+H417/H420/H423 carries the unsplit code EBR and loads form A's pooled cell a/l/s, which H417's column rule cut to i/l; under H22's split the seven
+'s' are the table's f/s column. So these are not evidence for letters outside the columns, and no new shape test is warranted. No key change.

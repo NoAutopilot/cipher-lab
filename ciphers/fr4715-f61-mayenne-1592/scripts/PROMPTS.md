@@ -824,3 +824,8 @@ Images: /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0
 > marked sign (R1..R7), or N if it is none of them, or O if the marked mark is ordinary handwriting (a letter of the plain text), not a cipher sign.
 > Reply ONLY with a TSV block, header "id<TAB>answer<TAB>note", one row per item I01..I15, note at most 12 words describing the marked sign.
 > Do not use any tool except reading the two images.
+
+## H428b (runner 16, 29 Sept 2026) -- blind forced choice, f.61 L01/11 vs an in-hand HASH4 (written before the call)
+
+Images: /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h428b/references.jpg (R1-R7), /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h428b/items_01.jpg (I01-I12). Prompt: H428's verbatim with "fifteen items ... I01 to I15" changed to
+"twelve items ... I01 to I12".

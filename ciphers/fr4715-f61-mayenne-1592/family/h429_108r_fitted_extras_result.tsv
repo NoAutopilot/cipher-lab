@@ -1,0 +1,9 @@
+line	pos	class	passA	confA	passB	overlay	v8_cell	column_cell	noteA
+L02	1	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket open right, flat top bar
+L02	5	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket open right; a dash-like stroke below it probably belongs to the next line
+L02	14	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket open right with a long foot bar
+L02	34	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket open right
+L02	39	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket with a very long foot stroke (line end)
+L03	7	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket open right
+L03	31	EBR	EBR	h	EBR	s	a/l/s	i/l	bracket open right; vertical rule after it (x~2310) skipped
+# 7 overlay letters caught by key v8 and not by the column key
