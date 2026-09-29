@@ -4509,3 +4509,15 @@ it. This complements H63, which judged the same marks by hand cues (weight, base
 two apart (interpretation fixed before the call), so no key cell changes and no reading follows; the skeleton keeps CA as nulls. Caveat: the hand check
 is thin -- two of the three non-a letters came back 'unclear', so only one non-a letter was actually placed outside A. The other five CA (L07, L08, L10)
 have no positions yet (H257) and were not sorted. For the verifier; nothing merged. Vision calls: 1 of 4.
+
+## Campaign step H257 (29 Sept 2026, 10:01 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- f.61 positions extended to L07 and L08 (script-only)
+
+`scripts/f61positions_join2.py` (method in its docstring: keyword shape families, difflib alignment of the family sequences, and a word item read as the bare
+letter 'a' joins an unmatched read_call_A position only where that position's class is CA; result `scripts/f61positions_join2_result.txt`, `--check` OK).
+The keyword table was corrected once after a first run ('crossbar' had matched CROSS; '4 with 3/yogh-shaped tail' had fallen to the 4-family instead of
+C43) -- a parsing fix, logged in the script. **L07: 10 of 11 matched by family in order, the 11th (pos 1, CA) is the item the blind reader listed as the
+clear word 'a' at s2 880. L08: 13 of 14 matched, the 14th (pos 10, CA) is again a word 'a' (s2 1420), between the C6 and the 4TRI, inside the run.** Both
+lines fully joined: `scripts/f61_positions_L07L08.tsv` (src column: sign / word_a) and `scripts/f61_positions_all.tsv` (H253's 57 + these 25 = 82 signs on
+all six read_call_A lines). Descriptive: CA 7 positioned, 2 next to a clear word; C6 6, 1; PHI 14, C43 9, ZHOOK 3, 0 each; LOOPBAR 3, 1. What it says: a
+reader given no atlas and no key takes f.61's CA for the word 'a' both at a run edge (L07 1) and inside a run (L08 10) -- the same letterform finding as
+H256 from a different task. No reading; nothing merged. No call.
