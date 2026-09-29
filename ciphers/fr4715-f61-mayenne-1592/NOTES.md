@@ -4392,3 +4392,15 @@ bowl and no-bowl (H231). **f.61 meter** with the shape readings (not endorsed): 
 04:32 (H234). Open for runner 10: **H240** (script test key, 4-head 4PI on f.108r's overlay), **H241** (script: which leaf could give the looped hash or the
 4-over-Pi a period value), **H242** (judge on f.61's 4-over-Pi tokens). Scratch natives (f210, f351, f191, f327/f328) are not committed; fetch_gallica.py
 regenerates them (sha1s in family/requests.log).
+
+## Campaign step H240 (29 Sept 2026, 04:46-04:48 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- 4PI split by shape keeps every known letter; Tomokiyo reads f.61's 4-over-Pi n (script-only)
+
+`family/h240_4head_testkey.py` (committed 1bea2d34 before the run; result `family/h240_4head_testkey_result.txt`, `--check` OK), H219's design. f.61's L11 9 4PI
+(a 4 over a Pi, H233) lies in Tomokiyo's span S5 and **he reads it n** (family/h191_4fam_f61_result.txt, published). Test keys: f.61 4PI a/n (the no-bowl 4's
+cell), f.108r 4PI d/q (the 4-head, H239).
+- **f.61 five spans: v5 53/55; 4PI a/n 53/55; 4PI unread 52/55** (2000 permuted keys: none reach 53).
+- **f.108r overlay: v5 74/84; 4PI d/q 74/84.**
+- Pre-stated gate (no f.61 loss, <= 1 on f.108r): **PASS**.
+**Correction to H234:** H234 set f.61's two 4PI to unread for want of a period value; Tomokiyo's published span already reads one of them n, and the a/n cell
+keeps it. The shape-reading meter is therefore **12 / 60 / 2 / 25** (4PI a/n x2 two-way), not 12 / 58 / 2 / 27. For the verifier: the code 4PI is two signs --
+the 4-headed hash (f.101r, f.108r: d/q) and f.61's 4-over-Pi (a no-bowl 4, read n by Tomokiyo). Nothing merged.

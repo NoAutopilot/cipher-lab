@@ -1,0 +1,7 @@
+v5 4PI cell: a/d/n/q
+f.61 five spans: v5 53/55 = 0.964; permuted p95 0.455 max 0.727; >= key 0/2000
+f.61 five spans: 4PI a/n 53/55 = 0.964; permuted p95 0.455 max 0.727; >= key 0/2000
+f.61 five spans: 4PI unread 52/55 = 0.945; permuted p95 0.436 max 0.691; >= key 0/2000
+f.108r overlay (EBR form A): v5 74/84 = 0.881; permuted p95 0.429 max 0.726; >= key 0/2000
+f.108r overlay (EBR form A): 4PI d/q 74/84 = 0.881; permuted p95 0.417 max 0.726; >= key 0/2000
+gate: f.61 loss under 4PI a/n 0 (need 0), f.108r loss under 4PI d/q 0 (need <= 1) -> PASS; f.61 loss if 4PI left unread 1
