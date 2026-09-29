@@ -3679,3 +3679,32 @@ Split columns: A 4TRI / B C43 n 46, a 33 of 113; A 4PI / B 4TRI a 19, n 11 of 38
 as DBL did on f.176r and as H26/H65 found on f.61, f.108r and the glossed leaves); A HASH4 / B ZHOOK i 5, d 3 of 9.
 Descriptive, for the verifier; nothing merged; key_period_f176v.tsv stays separate. Remaining for H177f: L33-L45, whose clear runs onto fol. 178r
 (canvas 331, fetched; cut as strips like fol. 177v, one read).
+
+## Campaign step H177f stage 3 (29 Sept 2026, 00:41-00:47 UTC by the clock, runner 7 session_012nGionjAX21NRbpi4TP69b) -- all of f.176v against fol. 177v V06 - fol. 178r
+
+Pre-registered (PROMPTS section H177f stage 3). Five Opus vision calls, inline replies written verbatim: passes A/B of f.176v L33-L39 and L40-L45
+(`family/passes/f176v_signs{A,B}_L33-L39.tsv`, `..._L40-L45.tsv`) and a read of fol. 178r (`family/passes/f178r_clearA_S01-S07.tsv`, R01-R19,
+mostly l; strips in `family/sheets/f178r_strips/`). New systematic splits: A ISH / B VBAR_B, A 4PI / B 4STEM. Both passes code many signs in
+L33-L39 as CROSS ("alt ZHOOK").
+`build_f176v_key.py L01-L45 --start V06` (`--check` OK): **all of f.176v, 2,923 signs, consensus 0.73, N 2,338 of 3,976 letters (fol. 177v V06 -
+fol. 178r R19). Match 0.478 vs (a) f.184r 0.298, (b) fol. 177r 0.291; margin +0.180, PASS.** Stages: +0.194 (L01-L08), +0.226 (L01-L16), +0.205
+(L01-L24), +0.213 (L01-L32), +0.180 (L01-L45). The same N rule as f.176r (0.8 letters per sign) trims the clear at N 2,338, and the anchor below
+puts the true rate near 1. So the last rows are compressed as on f.176r. The margin holds regardless.
+
+**An anchor independent of the H177d scan.** Both blind passes read the plain words "In foro conscientie" standing in f.176v row L36. The blind
+read of fol. 177v has "[In] [foro]" at the end of V34 and "conscienciae" opening V35. Before those words there are 2,263 consensus columns in
+L01-L35 plus 39 signs in L36: about 2,300 cipher signs. On the clear side there are about 2,270 letters from the head of V06 to "conscienciae".
+That is about one letter per sign, the rate f.176r implies from V05. A start at V01 would need about 2,640 letters for 2,300 signs. So the V06
+start rests on a plain-text anchor as well as the scan. It also bears out the H177e flag that f.176r's text runs to fol. 177v V05.
+
+Whole-leaf classes (true vs (a)/(b)): VBAR_B s 103/139 (0.74 vs 0.22/0.28); VBAR_A t 103, s 12, g 6 of 150; EBR l 95/150; INF u 130/187;
+HASH4 d 38, i 30 of 88; agreed 4TRI c 34, p 30, a 22, n 16 of 117; **agreed ZHOOK i 52 of 85** (wrong texts e 18 / e 10); agreed SBS o 14 of 23;
+BETA m 14 of 19; CROSS (not in v4) s 18 of 34, a lean on a class Tomokiyo's reading leaves as a dash. Split columns: A 4TRI / B C43 n 46, a 33;
+A 4PI / B 4TRI a 28, n 19; A 4PI / B 4STEM a 18, n 11; A ISH / B VBAR_B s 14 of 32; A HASH4 / B ZHOOK i 16 of 28; A PHI / B SBS o 17 of 28.
+
+What this is, descriptively: a second leaf of Desportes's hand, keyed by its period decipherment with fixed controls, gives the same single
+letters as f.176r for VBAR_A (t, partner g), the form-B bracket EBR (l), VBAR_B (s), INF (u), and the side-by-side glyph (o). It also gives the
+rare class ZHOOK the letter i, now on 52 agreed signs. The four-shaped signs look like two letter pairs: a c/p group and an a/n group, which the
+passes code inconsistently (4TRI, 4PI, 4STEM, C43). Everything is in `family/key_period_f176v.tsv` (separate file). Nothing is merged into v4 or
+key_period_f176.tsv; whether f.61's hand shares these classes is the verifier's (H178b's tile link across hands FAILED for ZHOOK). f.61 is not
+read here. H177f done.
