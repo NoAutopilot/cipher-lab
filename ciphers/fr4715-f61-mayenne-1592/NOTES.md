@@ -4160,3 +4160,16 @@ matters for the split -- looped form B = i/x -- is not testable here: f.101r's i
 once. With H214 (absent from Desportes's f.176), no glossed leaf yet carries form B, so HASH4 B = i/x stays sequence-only (H213) and judge-only (H215).
 Not merged; v5 unchanged. Added: H222 (is form B the same sign as H24 in another hand? a matched-scale blind sort, since H220's strips and anchors differ
 in scale) and H223 (script-only table of which code each glossed hand used for its i-sign and d/q-sign).
+
+## Campaign step H222 (29 Sept 2026, 04:00-04:08 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- the looped hash is not f.101r's H24: three hash shapes at matched scale
+
+Pre-registered (PROMPTS section H222; `family/h222_loop_h24.py`, key `family/h222_items.tsv`, commit 8b7a95e0, before the call; the runner looked at sheet 1
+twice to fix marker geometry and disclosed its own impression there). 22 tiles at matched scale: f.108 H212 group A 5 + B 5, f.101r H24 i 6 + HASH4 d/q 6
+(positions not used in H220), leaf hidden. One Opus vision call, free sort (`family/passes/h222_sort.tsv`). Result `family/h222_loop_h24_result.txt`
+(`--check` OK). The reader's groups: **A "4#"** (a 4 on the hash), **B "2#"** (a 2-hook into the hash), **C a compact hash with small closed loops, no numeral**.
+- **H24 i: B 5, A 1. f.101r HASH4 d/q: A 6. f.108 H212-A: A 4, C 1 (W14, a tile the reader called faint). f.108 H212-B: C 5.**
+- Registered statistic (B in H24's group + A outside it) 5 of 10, exact p 1.000 over 252 -> **"no link shown"**: f.108's looped form is not f.101r's H24.
+Reported, not gated: f.108's 4-headed form sorts with f.101r's period-read d/q sign (10 of 11), which agrees with H220 (f.101r HASH4 d/q answered 4-head
+11/11) and with H213/H215's d/q reading of form A on f.108v. The looped form B has now been found on no glossed leaf read so far (f.176 H214, f.101r
+H220/H222), so HASH4 B = i/x stays sequence-only. But **f.188r's gloss alignment puts HASH4 under i 10, x 3, d 12, q 3** (passes/f188r_align_v4.tsv),
+the one glossed leaf on disk whose HASH4 carries both letter sets: H224 (rank 1) runs H220's design there. Nothing merged; v5 unchanged.

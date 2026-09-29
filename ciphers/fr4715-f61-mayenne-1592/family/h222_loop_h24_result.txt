@@ -1,0 +1,4 @@
+groups (reply order): A, B, C; G (most H24) = B with 5 of 6 H24
+H24 i: A:1 B:5 C:0 | HASH4 d/q (f.101r): A:6 B:0 C:0 | H212 A (f.108): A:4 B:0 C:1 | H212 B (f.108): A:0 B:0 C:5
+stat (B in G + A not in G) = 5 of 10; exact p = 1.000 over 252 label assignments
+read-out: no link shown
