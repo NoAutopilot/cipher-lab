@@ -1,0 +1,6 @@
+meter_v9: key v6 (v7 exists but is not loaded here); 99 signs; bands firm / two-way / wider / unread-or-null [= null + unread]
+v6 as meter_v8 (CA counted unread, C6 unread-or-null): firm 12 / two-way 58 / wider 4 / unread-or-null 25 [null 7 + unread 18]
+v6 + V8 4PI split (L11 9 a/n M, L01 12 unread) -- baseline: firm 12 / two-way 59 / wider 2 / unread-or-null 26 [null 7 + unread 19]
+baseline + CA as null (endorsed here): firm 12 / two-way 59 / wider 2 / unread-or-null 26 [null 17 + unread 9]
+baseline + C6 = e on f.61 (pooled cell applied; NOT endorsed): firm 20 / two-way 59 / wider 2 / unread-or-null 18 [null 7 + unread 11]
+baseline + CA as null + C6 = e on f.61: firm 20 / two-way 59 / wider 2 / unread-or-null 18 [null 17 + unread 1]

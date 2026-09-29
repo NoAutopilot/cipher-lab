@@ -1,0 +1,6 @@
+group A: small closed bowl with right stem tail
+group B: double loop above long straight descender
+group C: angular crossed stroke, long vertical descender
+group D: tall looped ascender with lower bowl
+group E: joined minim strokes, arches
+group F: small round open or closed loop

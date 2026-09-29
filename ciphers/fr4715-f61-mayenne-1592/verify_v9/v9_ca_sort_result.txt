@@ -1,0 +1,11 @@
+setP: by kind: text a A 8 E 1; text non-a A 1 E 1 O 1 S 1 U 6; CA A 10; cipher S 11; edge a (descriptive) A 3
+setP: text a in A 8/9, repeats 6/6, text non-a in A 1/10, CA in A 10/10, cipher in A 0/11
+setP: gates pass; S = #(CA & A) + #(cipher & not A) = 21 of 21, within-line permutation p 0.0013
+setP: Z1 CA has the clear a's letterform: YES; Z2 CA is a distinct glyph: no
+setQ: by kind: text a A 7 E 1 O 1; text non-a A 1 E 2 O 2 U 5; CA A 10; cipher S 11; edge a (descriptive) A 3
+setQ: text a in A 7/9, repeats 6/6, text non-a in A 1/10, CA in A 10/10, cipher in A 0/11
+setQ: gate 1 CONTROL FAIL (text a's not in A); nothing scored
+setR: G = group A
+setR: by kind: text a A 7 N 2; text non-a A 1 N 9; CA A 10; cipher N 11; edge a (descriptive) A 3
+setR: text a in A 7/9, repeats 6/6, text non-a in A 1/10, CA in A 10/10, cipher in A 0/11
+setR: gate 1 CONTROL FAIL (text a's not in A); nothing scored

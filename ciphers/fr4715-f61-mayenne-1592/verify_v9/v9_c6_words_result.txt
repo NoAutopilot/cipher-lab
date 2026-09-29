@@ -1,0 +1,11 @@
+span	line	pos	class	markup_with_letter_inserted	word_complete_without_it
+S1	L01	2	C6	-Eavec	no test (a span edge on one side): Eavec
+S2	L03	11	C6	estca-pE-abl	no test (a span edge on one side): pE
+S3	L05	12	C6	--trop--avaEnce-es	yes: avance -> avaEnce
+S4a	L07	6	C6	jalEous-i	yes: jalous -> jalEous
+S4b	L08	3	C6	eaEubeau--pere	yes: eaubeau -> eaEubeau
+S4b	L08	9	C6	ea-ubeauE-pere	no test (a span edge on one side): ubeauE
+S2	L03	9	CA	estcaAp--abl	yes: estcap -> estcaAp
+S3	L05	7	CA	--tropA-ava-nce-es	no test (a span edge on one side): tropA
+S3	L05	8	CA	--trop-Aava-nce-es	no test (a span edge on one side): Aava
+S4b	L08	10	CA	ea-ubeau-Apere	no test (a span edge on one side): Apere
