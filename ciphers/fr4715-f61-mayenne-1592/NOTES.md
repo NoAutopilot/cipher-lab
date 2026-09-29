@@ -4897,3 +4897,19 @@ seullement (line 26); 'Ils' (line 14), 'Il se' (line 24)** -- about eight clear 
 Caveat on the hand, not settled here: H95 calls the leaf "Mayenne's secretary's hand" from its sender and date; no side-by-side comparison with f.61's
 scribe is on file, and at this scale the script looks smaller and faster than f.61's. So f.211r is the candidate source for an ll-only control (H309),
 and the hand match is part of what that step must show (its hand-check tiles), not an assumption. No call, no value.
+
+## Campaign step H309 (29 Sept 2026, 12:51 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- LL against doubled l's from f.211r: NON-TEST; the free sort retired for LL
+
+Pre-registered (PROMPTS section H309; `family/h309_ll_211r.py`, key `family/h309_items.tsv`, committed 1133814f before the call). f.211r native fetched
+once (family/requests.log, 12:46:17Z, 200, sha1 80c6c389 = MANIFEST; scratch only; 1 Gallica request this session). 16 tiles: LL 1, L02 opening mark 1
+(descriptive), doubled l 5 (f.211r ville, elle, daumalle, Tellement; f.61 ella), single l 5 (f.211r la, le; f.61 les, les, le), PHI 2, C43 2. One fresh
+Opus free sort (`family/passes/h309_sort.tsv`); result `family/h309_ll_text_result.txt` (`--check` OK):
+- Groups: **A** "a single tall ascender stroke ... the cursive letter l, or one l of a doubled ll" (12 tiles: every doubled l, every single l, LL and the
+  L02 mark); **B** 43 (C43 2); **C** phi-8 (PHI 2).
+- **Gate 2: NON-TEST** (single l 5/5 in the doubled l's group): the reader sorted by "a tall ascender", not by the doubling -- nothing scored, as
+  pre-stated. The doubled l's did not split by leaf (5/5 together), so the cross-leaf worry in PROMPTS did not arise.
+- Descriptive only: LL and the L02 mark fall with the l family, apart from the cipher controls.
+**Rule 3(c):** three attempts at the same instrument (a blind free letterform sort) on the same hypothesis, each changing only the control set (H302
+ll/Il, H304 I and l, H309 doubled vs single l from a second leaf), none passing its own gate. Logged in HYPOTHESES.md as **untested-by-this-tool**, not
+refuted; no fourth free sort. A different instrument would be a forced choice per tile ("one ascender or two") with a known-answer control -- H310.
+The null band's LL row and the L02 note row are unchanged. Vision calls this session: 3.

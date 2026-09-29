@@ -1,0 +1,4 @@
+by kind: doubled l: A 5; single l: A 5; LL: A 1; PHI/C43: B 2 C 2; DISPUTED L02 start: A 1
+G = A (size 12 of 16): doubled l 5/5, single l 5/5, LL 1/1, cipher controls 0/4
+gate 2: NON-TEST (a single l sorts with the doubled l's: the sort tracked the tall ascender, not the doubling); nothing scored
+DISPUTED (descriptive, no gate): group A; in G; with LL; with a single l
