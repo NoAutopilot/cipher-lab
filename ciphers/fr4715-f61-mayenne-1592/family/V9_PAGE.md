@@ -116,7 +116,21 @@ frequency-only key 132 (H328). Lead stands as pre-stated; grade M gloss letters,
 - **f.101r in full (H365/H366):** 241 answered 4TRI: no-bowl 155, bowl 67; by f.101r's own period letters **no-bowl -> a 62, n 56 (118 of 130 a/n-or-c/p/t)**, bowl -> p 17, c 15 (n/a 19); agreement 0.83; the split raises f.101r's order gain too. Proposal for the verifier: `family/PROPOSAL_v8_4tri.md` (read the no-bowl '4TRI' as the a/n sign; nothing applied). f.61's own 4TRI tokens not yet bowl-read (H367).
 - **Ask to the verifier lane (H369, runner 13, 29 Sept 2026):** before any key v8 is built, rule on `family/PROPOSAL_v8_4tri.md` (read the readers' no-bowl "4TRI" as the a/n sign; keep 4TRI c/p/t for the bowl sign). Witnesses: f.101r period letters by bowl (no-bowl a 62 / n 56 of 150; bowl p 17 / c 15 of 67; H365); f.124r order gain 0.034 -> 0.071 and held-gloss count 148 -> 156 on the split (H360/H361); f.101r order gain 0.082 -> 0.102 (H365); H218/H231 on f.176r/f.106r. Open objections: the bowl sign still pairs with a/n 19 of 67 on f.101r; the shape gate is on Desportes's hand; the alignment has many conflict rows; f.61's own 4TRI tokens are not yet bowl-read (H367).
 
-## Added by runner 14 (H367-H376): the 4TRI shape split, leaf by leaf, for VERIFY-F61-V11
+## Added by runner 14 (H367-H395): the 4TRI shape split, leaf by leaf, for VERIFY-F61-V11
+
+**For LANE VO3 (H394, written 29 Sept 2026 after VERIFY-F61-V11's 17:30 ruling).** V11 endorsed in part: a 4TRI token read no-bowl in a gated blind
+read takes C43's a/n (class 4TRI_NB, grade C on f.101r, M where shape-only); the bowl class is not narrowed (stays v7 4TRI); L05/14 stays c/p M. What
+runner 14's rows add after that ruling, one line each (NOTES.md "Campaign step H3xx"; HYPOTHESES.md rows):
+- **The split against random relabellings of equal count:** f.124r 20/20, f.101r 20/20, f.97r 16/20 at 78 tokens and 20/20 at the bar at 86 (H374,
+  H375, H377, H378). On f.188r (Desportes, in-sample) the readers' 4TRI is mostly the bowl sign (48/66, H392); H395 tests its 18 no-bowl tokens.
+- **In f.61's own hand:** f.108v shape relabel 0.157 -> 0.221, f.106r 0.026 -> 0.060, each beating 20/20 permuted-answer drafts, shuffled targets 0/3
+  (H379, H380, H383, H385); V10 rates f.108v's own order signal a lean and f.106r untestable as transcribed.
+- **Bowl vs a known letter:** 0.83-0.93 on four leaves, pooled 0.84 (H381). 4STEM on f.101r: letters track (10/11), order does not (H387).
+- **Reader repeatability in this design:** re-read kappa 0.81-0.88 (H390, H391); the part-1 gate is passed by every call, a defective one included
+  (H391) -- the part-2 known-strip gate (6/6 in five calls) is the one that can fail (H376).
+- **The target:** f.61's 4TRI is the bowl sign 5/6 (H367); against v7's f.61 reading key the split moves only L05/14 (H384).
+- **Open ask:** H389, build key v8 = v7 + V11's merge only; runner 14's brief forbids applying the split, so it waits on the orchestrator's go.
+
 
 - **f.61 itself (H367, gate 19/20):** the readers' 4TRI is the bowl sign 5 of 6, C43 no-bowl 9 of 9; H194's count-matched read reproduces 14/15. The only
   4TRI read no-bowl (L05/14) sits where H194 read bowl and Tomokiyo prints c. PROPOSAL_v8_4tri.md would move at most that one f.61 position.
