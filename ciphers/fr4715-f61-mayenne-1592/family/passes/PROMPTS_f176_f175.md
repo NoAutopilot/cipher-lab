@@ -147,3 +147,13 @@ or the centred sign cannot be told. No letters are involved. Reply inline ONLY w
 followed by the list tile / option1 / option2.
 CONTROL GATE: >= 17 of 20 anchors pick the agreed code, else CONTROL FAIL and stop (no merge, no build). Then `h186_adj.py merge` ->
 `passes/f179_signsC_L01-L08.tsv`, and `build_f179_key.py L01-L08 --start R03 --adj`: GATE margin >= +0.10 over f.184r, fol. 177r, fol. 177v V06-.
+
+## H189 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+A second different instrument for fol. 179 after H186's CONTROL FAIL: `h189_mark.py items` -- 230 items (the 210 fol. 179 splits, same options as
+H186, + 20 anchors from f.176v L01-L08 signs both f.176v passes coded alike, decoy from the same confusion family, seed 189), each a 300-px context
+strip at 1.2x with a red triangle under the target; 12 sheets of 20; key `h189_items.tsv` committed before the call.
+1 Opus vision call, inline reply: the H186 prompt with "the centred sign" replaced by "the sign standing directly above the red triangle (the sign
+nearest to it)" and tiles T by items M001-M230 (list file in scratch).
+CONTROL GATE: >= 17 of 20 anchors pick the agreed code, else CONTROL FAIL and stop. Then `h189_mark.py merge` -> `passes/f179_signsC_L01-L08.tsv` and
+`build_f179_key.py L01-L08 --start R03 --adj`: GATE margin >= +0.10. If this control also fails, fol. 179 is closed for this campaign at
+"untested at this transcription", and no fifth approach is briefed without new material.
