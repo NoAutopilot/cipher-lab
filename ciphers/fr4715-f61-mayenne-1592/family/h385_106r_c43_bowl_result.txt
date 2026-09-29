@@ -1,0 +1,3 @@
+gate 1 (H193 anchors): 19/20 (>= 17); gate 2 (known part-2 strips): 6/6 (>= 5)
+C43 targets 36: bowl 0, no bowl 34, n 2; no-share 1.00 (one value; gate 2 passed)
+completed draft: 99 usable tokens (yes 28, no 71); order gain v7 mean of 3 seeds: as transcribed 0.0261, shape 0.0604; 20 permuted drafts mean 0.0358, max 0.0511 -> beats 20/20 -> carries order information

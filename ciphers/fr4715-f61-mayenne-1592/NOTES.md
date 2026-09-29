@@ -5653,3 +5653,25 @@ answer, the cell under the shape rule, and Tomokiyo's letter where H194's span a
   v7 and the published letter on the target, independent of the bowl question, for the verifier.
 What it means for VERIFY-F61-V11: on the target leaf the 4TRI split is nearly neutral (one token, and there the published letter argues for the
 transcription as it stands); the proposal's weight lies on the sister leaves and on key building, not on f.61's own tokens. Nothing applied.
+
+## Campaign step H385 (29 Sept 2026, 18:02-18:05 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.106r's remaining C43 are all the no-bowl sign; the completed shape draft keeps H380's result (1 vision call)
+
+`family/h385_106r_c43_bowl.py`, key `family/h385_items.tsv`, prompt note H385, committed before the call; the runner did not look at the sheets. Pass A
+codes no 4PI on f.106r (noted in the row before running), so the targets were its 36 C43 not yet read by H231/H368, plus H377's 6 known f.61 strips.
+One blind Opus call; reply `family/passes/h385_reply.tsv`; result `family/h385_106r_c43_bowl_result.txt`:
+- **Gate 1 19/20, gate 2 6/6 -- PASS.** The reader answered 'yes' to exactly the three known bowl strips and 'no' to everything else: the one-value
+  answer on the targets is not a default, because the same reader told the known bowl strips apart in the same part 2 (H376's fix doing its job).
+- **C43: no bowl 34, n 2, bowl 0 (1.00).**
+- **Completed draft (H231 + H368 + H385): 99 usable tokens (bowl 28, no 71); order gain v7 as transcribed 0.0261, shape 0.0604 (unchanged -- C43 read
+  no-bowl stays C43); 20 permuted drafts mean 0.0358, max 0.0511 -> shape beats 20/20, "carries order information".**
+What it means: in the secretary's hand the C43 code is always the no-bowl sign (54 of 54 answered, H368 + H385), so the two-sign problem on f.106r
+sits entirely inside 4TRI and 4STEM (H368). For VERIFY-F61-V11; nothing applied. 1 call, cost estimate 1.5 USD.
+
+### Correction to H384 (29 Sept 2026, 18:07 UTC by date -u, runner 14)
+
+H384's first version compared the shape rule with key v7's POOLED cells only. Key v7 also carries an f.61 reading key (`load_key_v7(f61=True)`, with
+F61TOK for the 4-over-Pi): 4TRI c/p, 4STEM a/n, L11/9 4PIPI a/n (grade M from Tomokiyo's S5), L01/12 unread. Rerun with that column added
+(`family/h384_shape_at_f61_result.txt`, `--check` OK): **within the proposal's scope only L05/14 changes (c/p -> a/n, Tomokiyo c), as before; beyond it
+only L01/12 (held unread) would take a/n.** The two other "beyond scope" flags (L11/8 4STEM, L11/9 4PI) are already a/n in the f.61 reading key, and
+the sentence above that L11/9 is "a disagreement between v7 and the published letter" is **withdrawn**: v7's f.61 reading key already reads it n's
+cell a/n from Tomokiyo's S5 (build_key_v7.py point 3). The ROOM line of 18:03 carried the same error and is corrected there.
