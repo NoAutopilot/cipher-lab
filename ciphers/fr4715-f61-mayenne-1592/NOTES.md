@@ -4371,3 +4371,24 @@ sheet not seen). Only two glossed C6 (f.101r, both e) map to pass A; f.188r's do
 line, dropped). Result `family/h237_c6_glyph_result.txt` (`--check` OK): **f.61 C6: A ('6'/b-shaped) 3/3; glossed C6: D (delta-shaped) 1, unclear 1; PHI: A 1,
 B 2; C43: B 1, C 2** -> **"no link shown"**. The controls split as well, so this sort was noisy; with two lettered glossed C6 the question is near its floor.
 C6 stays unread on f.61 (as VERIFY-F61-V4 left it). Nothing merged.
+
+## Campaign step H238 (29 Sept 2026, 07:08-07:12 UTC by the clock, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.61's two OTHER tokens (script-only, descriptive)
+
+From scripts/read_call_U.tsv and passes U1/U2 (the unmarked-line reads of f.61 L02/L04): **L02 2 OTHER** = "two short vertical stems joined by a heavy top bar
+and a heavy bottom bar, like Roman numeral II" / "a Pi with a double bar, no 4 above it, so not 4PI" -- the base of f.61's 4-over-Pi (H233) without the 4.
+**L04 2 OTHER** = "an S/8-like loop joined to a b/d form, written after 'Come'; may be a handwriting abbreviation (e.g. S.M.)" (pass U2, low confidence).
+No atlas class with period letters matches either; they stay 'wider'/unread. No call.
+
+## Runner 9 handover (29 Sept 2026, 07:12 UTC by the clock, session_012NTadgrCBftz3oRtgw5jFu)
+
+Done this session: H220-H239 (plus H223, H225, H228, H232, H234, H238 script-only); spent today 62.45/600. Stopping near the context line by the runner's own
+estimate (~480k): get_session reports used_tokens 0 for this session, so it cannot measure it; the next steps need vision or judge calls.
+**Hash family (for VERIFY-F61-V6):** three signs share the pass code HASH4 -- the 4-headed hash reads d/q on f.101r (34/47, H227), f.188r (12/14, H224) and
+f.108r in f.61's hand (its "4PI", d 4/5, H239); the "2#" sign reads i/x (f.101r's H24, f.188r's mis-coded HASH4 8/8, H224) and f.61's ZHOOK sorts with it (H235,
+pre-stated PASS, caveat p 0.17); the looped hash is common only on f.108r/v and f.106r and has no period value (rare on f.101r, 5/61, never d/q, H227).
+**4PI:** f.101r's and f.108r's 4PI are the 4-head hash; f.61's two 4PI are a different sign, a 4 over a Pi (H233/H236/H239), with no lettered occurrence.
+**Bowl:** H199 reproduces under its own prompt (H230); bowl calls need H193's f.176v strips in the same call (H221/H229 failed without them). f.106r's 4TRI mixes
+bowl and no-bowl (H231). **f.61 meter** with the shape readings (not endorsed): 12 / 58 / 2 / 27 (H234). Key-source lines posted 04:2x (H224), 06:1x (H235),
+06:2x (H234). Open for runner 10: **H240** (script test key, 4-head 4PI on f.108r's overlay), **H241** (script: which leaf could give the looped hash or the
+4-over-Pi a period value), **H242** (judge on f.61's 4-over-Pi tokens). Scratch natives (f210, f351, f191, f327/f328) are not committed; fetch_gallica.py
+regenerates them (sha1s in family/requests.log).
