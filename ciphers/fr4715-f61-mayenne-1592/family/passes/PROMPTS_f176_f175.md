@@ -134,3 +134,16 @@ as it should. PASS -> the remaining 13 rows next; FAIL -> logged, fol. 179's dec
 `build_f179_key.py L01-L08 --start R03` (H184's builder with a --start option; H184's own R01 result reproduces unchanged, --check OK): part (2) only,
 the build from fol. 178r R03 (H184's scan peak, head of R03 at letter 5,770), controls (a) f.184r, (b) fol. 177r, (c) fol. 177v V06-, margin >= +0.10.
 The start comes from H184's scan, so this confirms the location with fixed controls. It is not an independent test. No calls.
+
+## H186 (runner 7, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+A different instrument for fol. 179 (rule 3), after H185 failed on a 0.52 pass consensus. `h186_adj.py tiles` paired pass A and B signs by position
+(line, segment, x within 30 px): 489 of 522 pair, 279 agree, 210 split (4TRI/C43 76, HASH4/ZHOOK 35, 4PI/4TRI 28, DBL/PHI 13 ...). 230 tiles (210 splits
++ 20 agreed anchors shown with a decoy code, seed 186, shuffled) on 7 sheets; the key is `h186_tiles.tsv` (committed before the call).
+1 Opus vision call, inline reply: "You are a blind shape adjudicator for a 16th-century cipher manuscript. Use no tool but your image reader on the
+atlas and sheets named; run no command, write no file. Read the shape atlas <scripts/f61_atlas.tsv>. Each tile on the sheets <h186/sheet_01..07.jpg>
+shows one cipher sign centred under the small tick at its top edge, with neighbours cut at the sides; judge only the centred sign. For each tile
+you are given two atlas codes (option 1, option 2, listed below); answer A if option 1 fits the centred sign better, B if option 2 does, N if neither
+or the centred sign cannot be told. No letters are involved. Reply inline ONLY with a TSV block 'tile<TAB>choice', one row per tile, nothing else."
+followed by the list tile / option1 / option2.
+CONTROL GATE: >= 17 of 20 anchors pick the agreed code, else CONTROL FAIL and stop (no merge, no build). Then `h186_adj.py merge` ->
+`passes/f179_signsC_L01-L08.tsv`, and `build_f179_key.py L01-L08 --start R03 --adj`: GATE margin >= +0.10 over f.184r, fol. 177r, fol. 177v V06-.

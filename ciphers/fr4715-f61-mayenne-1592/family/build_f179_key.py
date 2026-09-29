@@ -9,6 +9,7 @@ GATE (pre-registered, PROMPTS section H184): (1) the scan peak lies at or after 
 non-overlapping window by >= 0.05; AND (2) match(R01-) - max(a, b, c) >= +0.10. Rows go to key_period_f179.tsv (separate; not merged).
 H185 (29 Sept 2026): --start R03 builds (2) from that fol. 178r line (H184's scan peak) into build_f179_key_result_R03.txt /
 key_period_f179.tsv; the default R01 writes H184's build_f179_key_result.txt and no key file.
+H186: --adj uses the adjudicated merged sequence passes/f179_signsC_L01-L08.tsv (h186_adj.py merge) for both passes; outputs get a _adj suffix.
   python3 build_f179_key.py ROWS [--start R01] [--check]   (ROWS e.g. L01-L08; reads passes/f179_signs{A,B}_*.tsv)"""
 import glob, os, re, sys
 from collections import defaultdict
@@ -24,7 +25,7 @@ def pass_rows(tag):
     return rows
 def main():
     a = sys.argv; lo, hi = [int(x) for x in re.findall(r"\d+", a[1])]; want = [f"L{k:02d}" for k in range(lo, hi + 1)]
-    A, B = pass_rows("A"), pass_rows("B"); missing = [l for l in want if l not in A or l not in B]
+    A, B = (pass_rows("C"), pass_rows("C")) if "--adj" in a else (pass_rows("A"), pass_rows("B")); missing = [l for l in want if l not in A or l not in B]
     if missing: sys.exit(f"missing rows in the passes: {missing}")
     key = g.load_key(); full, marks = h.clear_all(); r01 = dict(marks).get("fol. 178r R01")
     out = [f"clear {len(full)} letters; " + ", ".join(f"{m} at {i}" for m, i in marks)]
@@ -49,7 +50,8 @@ def main():
     rows = ["# key_period_f179.tsv -- H184 (runner 7), build_f179_key.py " + a[1] + ": set-anchored DP pairs, consensus signs only; key source period; NOT merged (a verifier's)",
             "class\tletter\tn\tleaf\tbands"] + [f"{c}\t{x}\t{n}\t{LEAF}\tDP stage {want[0]}-{want[-1]}" for c in sorted(ct) for x, n in sorted(ct[c].items(), key=lambda t: (-t[1], t[0]))]
     files = {f"{HERE}/build_f179_key_result.txt": "\n".join(out) + "\n"} if start == "R01" else \
-            {f"{HERE}/build_f179_key_result_{start}.txt": "\n".join(out) + "\n", f"{HERE}/key_period_f179.tsv": "\n".join(rows) + "\n"}
+            {f"{HERE}/build_f179_key_result_{start}{'_adj' if '--adj' in a else ''}.txt": "\n".join(out) + "\n",
+             f"{HERE}/key_period_f179{'_adj' if '--adj' in a else ''}.tsv": "\n".join(rows) + "\n"}
     if "--check" in a:
         bad = [p for p, s in files.items() if not os.path.exists(p) or open(p).read() != s]
         print("stale: " + ", ".join(bad) if bad else "OK"); sys.exit(1 if bad else 0)
