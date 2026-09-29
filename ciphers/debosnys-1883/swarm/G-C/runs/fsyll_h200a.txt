@@ -1,0 +1,10 @@
+{"control": "FR-SYLL", "fit": "c1+c2", "S": 200, "W": 17, "order": 2, "iters": 3000000, "restarts": 4, "refine": 0, "injective": 1, "verse": 1, "vocab": 219, "N": 790, "K": 136, "score": -4797.9, "key": "KEY_FR-SYLL_c1+c2_h200a.tsv"}
+{
+ "mode": "control",
+ "control": "FR-SYLL",
+ "key_sha1": "ccb8ff9a6b3650194f476844231d86ed013cbcbb",
+ "recovery_pct_c1": 20.45,
+ "recovery_pct_c2": 21.43,
+ "recovery_pct": 21.27
+}
+ 

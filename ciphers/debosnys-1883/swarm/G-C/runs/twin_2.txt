@@ -1,0 +1,2 @@
+LM S=160 W=17 vocab=179 built 2s
+{"seed": 1, "N": 790, "K_real": 119, "unit_types": 119, "start": 9199, "S": 160, "W": 17, "order": 2, "solveS": 160, "solveW": 17, "noise": 0.0, "oracle": 0.0, "iters": 3000000, "restarts": 3, "found_score": -4886.3, "truthkey_score": -4808.3, "rec_token": 0.544, "rec_char": 0.388}

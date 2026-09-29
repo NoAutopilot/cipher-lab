@@ -1,0 +1,13 @@
+polish sweep 1: 1 moves, score 437.5
+polish sweep 2: 1 moves, score 438.4
+polish sweep 3: 0 moves, score 438.4
+{"control": "FR-SYLL", "fit": "c1+c2", "S": 160, "W": 17, "order": 2, "iters": 400000, "restarts": 4, "refine": 0, "polish": 10, "lam": 2.0, "canneal": 200000, "init": "KEY_FR-SYLL_c1+c2_s13c.tsv", "injective": 1, "verse": 1, "vocab": 179, "N": 790, "K": 136, "score": 438.4, "key": "KEY_FR-SYLL_c1+c2_s13l2.tsv"}
+{
+ "mode": "control",
+ "control": "FR-SYLL",
+ "key_sha1": "39b595b0f742fadf394e714516007683f01bd4ed",
+ "recovery_pct_c1": 53.03,
+ "recovery_pct_c2": 61.25,
+ "recovery_pct": 59.88
+}
+ 

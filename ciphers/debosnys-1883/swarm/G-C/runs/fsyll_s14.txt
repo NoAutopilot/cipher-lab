@@ -1,0 +1,10 @@
+{"control": "FR-SYLL", "fit": "c1+c2", "S": 160, "W": 17, "order": 2, "iters": 3000000, "restarts": 3, "refine": 2000000, "polish": 0, "lam": 1.0, "init": null, "injective": 1, "verse": 1, "vocab": 179, "N": 790, "K": 136, "score": -4751.7, "key": "KEY_FR-SYLL_c1+c2_s14.tsv"}
+{
+ "mode": "control",
+ "control": "FR-SYLL",
+ "key_sha1": "24f13a6d4e5b5216582f296a24ec8f841283ca43",
+ "recovery_pct_c1": 54.55,
+ "recovery_pct_c2": 54.56,
+ "recovery_pct": 54.56
+}
+ 

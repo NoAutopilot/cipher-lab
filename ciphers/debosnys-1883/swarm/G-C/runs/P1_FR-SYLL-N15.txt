@@ -1,0 +1,11 @@
+polish sweep 1: 0 moves, score -1917.9
+{"tag": "P1_FR-SYLL-N15", "control": "FR-SYLL-N15", "fit": "c1+c2", "real": null, "injective": 1, "N": 790, "K": 131, "seeds": [[104, -5201.5], [103, -5332.1], [107, -5442.9], [105, -5443.6], [106, -5468.6], [102, -5469.3], [101, -5471.0], [108, -5483.1]], "chosen_seed": 104, "final_score": -1917.9, "key": "KEY_P1_FR-SYLL-N15.tsv"}
+{
+ "mode": "control",
+ "control": "FR-SYLL-N15",
+ "key_sha1": "0385304bae4c96295d13a2adb551c7e5842cd5d5",
+ "recovery_pct_c1": 38.64,
+ "recovery_pct_c2": 36.63,
+ "recovery_pct": 36.97
+}
+ 

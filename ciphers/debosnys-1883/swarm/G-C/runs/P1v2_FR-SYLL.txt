@@ -1,0 +1,16 @@
+polish sweep 1: 1 moves, score -1125.3
+polish sweep 2: 0 moves, score -1125.3
+polish sweep 1: 2 moves, score -1197.4
+polish sweep 2: 0 moves, score -1197.4
+polish sweep 1: 1 moves, score -1345.6
+polish sweep 2: 0 moves, score -1345.6
+{"tag": "P1v2_FR-SYLL", "control": "FR-SYLL", "fit": "c1+c2", "real": null, "injective": 1, "N": 790, "K": 136, "seeds": [[206, -4590.6], [201, -4691.0], [212, -4717.9], [219, -4738.3], [203, -4817.9], [222, -4824.4], [220, -4865.0], [224, -4904.2], [207, -4968.6], [205, -4977.3], [202, -5052.5], [210, -5075.2], [218, -5114.0], [204, -5154.7], [221, -5163.9], [209, -5193.0], [214, -5234.6], [213, -5284.6], [211, -5286.7], [223, -5313.8], [208, -5319.4], [215, -5319.7], [216, -5360.1], [217, -5364.0]], "chosen_seed": 206, "finals": [[206, -1125.3], [201, -1197.4], [212, -1345.6]], "final_score": -1125.3, "key": "KEY_P1v2_FR-SYLL.tsv"}
+{
+ "mode": "control",
+ "control": "FR-SYLL",
+ "key_sha1": "b794540419645d2b79a26fe4030b725825d6280b",
+ "recovery_pct_c1": 61.36,
+ "recovery_pct_c2": 68.09,
+ "recovery_pct": 66.97
+}
+ 
