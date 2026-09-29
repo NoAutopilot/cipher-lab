@@ -2448,6 +2448,12 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 23:20 Pacific [29 Sept 06:20 UTC]): the f.61 hash signs endorsed; swarm round 2 queued
+
+- Counts 21 / 2 / 1 / 6, unchanged.
+- f.61: VERIFY-F61-V7 endorses keying the hash family by shape (4-head d/q, 2# i/x, looped hash kept unread); with V6 the meter is firm 12 / two-way 58 / wider 4 / unread 25 of 99. F61-FAMILY-10 (key v6) and VERIFY-F61-V8 (ZHOOK = 2#, 4PI two signs) queued. Blocker: nothing yet moves a position to firm; the looped hash needs a period value (ASKS 93, ASKS 99).
+- Debosnys: DIGEST-1 merged all nine round-1 sessions. The no-order result looks like the cipher, pending an insertion/deletion check; letter solvers need 3-10 pct noise, ours is 14-18 (true c2 error likely 20 pct+). Round 2 queued: HARNESS-2, ORDER-DOSE, CRIB-LENGTH (copied-poem search), T-LOW (transcription, synthetic-page control), LINE-UNITS, FOLGER-SPLIT.
+
 ### Orchestrator note (28 Sept 2026, 22:20 Pacific [29 Sept 05:20 UTC]): the f.61 bowl rule endorsed in part; swarm merge running
 
 - Counts 21 / 2 / 1 / 6, unchanged.
