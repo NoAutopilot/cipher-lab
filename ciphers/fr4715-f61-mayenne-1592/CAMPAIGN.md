@@ -985,4 +985,4 @@ closed:
 2026-09-29 18:02 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H384 done | 0.05 | f.61 exposure to the 4TRI split: one position (L05/14, against Tomokiyo's c); L11/9 4PI v7 d/q vs Tomokiyo n noted.
 2026-09-29 18:05 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H385 done | 1.5 | f.106r C43 always no-bowl (34/34); completed shape draft still beats 20/20 permuted drafts.
 2026-09-29 18:06 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H384 corrected | 0 | against v7's f.61 reading key the exposure is L05/14 (in scope) and L01/12 (unread, out of scope); L11/9 note withdrawn. Wrote H386-H388.
-2026-09-29 18:08 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H386 done | 0.05 | 4STEM splits by shape like 4TRI on f.101r at small n (0.71 vs 0.74).
+2026-09-29 18:07 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H386 done | 0.05 | 4STEM splits by shape like 4TRI on f.101r at small n (0.71 vs 0.74).

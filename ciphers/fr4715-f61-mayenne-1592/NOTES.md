@@ -5676,7 +5676,7 @@ only L01/12 (held unread) would take a/n.** The two other "beyond scope" flags (
 the sentence above that L11/9 is "a disagreement between v7 and the published letter" is **withdrawn**: v7's f.61 reading key already reads it n's
 cell a/n from Tomokiyo's S5 (build_key_v7.py point 3). The ROOM line of 18:03 carried the same error and is corrected there.
 
-## Campaign step H386 (29 Sept 2026, 18:06-18:08 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- 4STEM by shape: on f.101r it splits like 4TRI, at small n (script-only)
+## Campaign step H386 (29 Sept 2026, 18:06-18:07 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- 4STEM by shape: on f.101r it splits like 4TRI, at small n (script-only)
 
 `family/h386_4stem_by_shape.py` -> `family/h386_4stem_by_shape_result.txt` (`--check` OK). v7's 4STEM cell is a/c/e/n pooled, a/n in the f.61 reading key.
 On f.101r (H207, the only 4STEM answers with letters): **4STEM bowl&c/p 4, bowl&a/n 2, no&c/p 3, no&a/n 8 -> agreement 0.71 (n 17)**, beside 4TRI
