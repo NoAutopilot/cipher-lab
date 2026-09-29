@@ -5531,3 +5531,20 @@ gated H359-design call (only calls at >= 17/20 counted; a re-read token counts o
 period-letter cross-tab carried verbatim. No-bowl share of the readers' 4TRI: **f.124r 0.77 (261), f.101r 0.70 (222), f.97r 0.73 (122), f.106r 0.47
 (17), f.61 0.17 (6)**; f.106r 4STEM 0.56 (55); C43 no-bowl 0.95-1.00 on every leaf. f.106r's H231/H368 re-reads disagree on 2 of 24 tokens. The f.97r
 rows include H371's c2 chunk, which H373 re-reads; the table regenerates from the replies on disk. Descriptive, for VERIFY-F61-V11; nothing applied.
+
+## Campaign step H373 (29 Sept 2026, 17:39-17:42 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- H371's all-no chunk does not reproduce; replaced, and f.97r's split still lowers v7's order gain (1 vision call)
+
+`family/h373_97r_c2_reread.py` (written and pushed before the call; `family/h373_97r_c2_reread_result.txt`, `--check` OK): the same c2 sheets, one fresh
+blind Opus call, H359's prompt and H193's strips; reply `family/passes/h373_reply.tsv`. **Re-read gate 17/20 PASS (at the bar). Original c2: no 37, n 1,
+yes 0; re-read: no 26, yes 12; agreement 25/37 = 0.68 < 0.85 -> pre-stated "c2 replaced".** Done as pre-stated: the original reply kept as
+`passes/h371_reply_c2_orig.tsv`, the re-read copied to `passes/h371_reply_c2.tsv`, H371 rescored with its code unchanged (one fix: its `--check`
+flag is now read before `gains()` resets `sys.argv`; the inherited h360_124r_4tri_split.py has the same reset, so its own `--check` rewrites rather
+than checks -- noted for the verifier, not edited).
+**H371 rescored:** 127 agreed 4TRI of f.97r L17-L43: no bowl 78, bowl 45, n 4 (0.63). **Order gain v7: as transcribed 0.0566/0.0514/0.0509 -> split
+0.0541/0.0486/0.0471, lower under all three seeds; shuffled targets 0/3 -> "lowers" stands** (by about 0.003 instead of 0.006). H372's table
+regenerated (f.97r 4TRI no-share 0.63).
+What it means: (1) a part-1-only gate cannot catch a reader that answers part 2 by default; a chunk whose answers are all one value is re-read before
+use (instrument lesson, H376). (2) On de Diou's f.97r the no-bowl 4TRI tokens do not fit v7's a/n cell better than its c/p/t cell under the order
+statistic, unlike f.124r (H360, gain doubled) -- the shape split is supported by the period gloss on f.101r and by order on f.124r, but not by order on
+f.97r. Whether that is the split or the statistic's resolution at this size of change is H374's question. For VERIFY-F61-V10/V11; nothing applied.
+1 call, 1.5 USD.

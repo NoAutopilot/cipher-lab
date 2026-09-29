@@ -1,6 +1,6 @@
 c1: control 18/20 PASS; answers n 3 no 23 yes 13
-c2: control 18/20 PASS; answers n 1 no 37
-4TRI answers used (H370 + passing chunks): 127; n 5 no 89 yes 33
-split draft: 89 4TRI tokens relabelled C43
-order gain v7: as transcribed 0.0566/0.0514/0.0509; split 0.0508/0.0455/0.0435; H344 on split: shuffled target, v7 'order signal' in 0/3 (gain/p95: -0.0041/0.0257 0.0086/0.0204 -0.0251/0.0346)
+c2: control 17/20 PASS; answers no 26 yes 12
+4TRI answers used (H370 + passing chunks): 127; n 4 no 78 yes 45
+split draft: 78 4TRI tokens relabelled C43
+order gain v7: as transcribed 0.0566/0.0514/0.0509; split 0.0541/0.0486/0.0471; H344 on split: shuffled target, v7 'order signal' in 0/3 (gain/p95: -0.0047/0.0247 0.0093/0.0207 -0.0245/0.0332)
 read-out: lowers
