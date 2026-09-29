@@ -5548,3 +5548,18 @@ use (instrument lesson, H376). (2) On de Diou's f.97r the no-bowl 4TRI tokens do
 statistic, unlike f.124r (H360, gain doubled) -- the shape split is supported by the period gloss on f.101r and by order on f.124r, but not by order on
 f.97r. Whether that is the split or the statistic's resolution at this size of change is H374's question. For VERIFY-F61-V10/V11; nothing applied.
 1 call, 1.5 USD.
+
+## Campaign steps H374/H375 (29 Sept 2026, 17:44-17:48 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- the bowl split against random relabellings of equal count: beats all 20 on f.124r, 16 of 20 on f.97r (script-only)
+
+`family/h374_split_randctl.py` (written and pushed before running; results `family/h374_split_randctl_f97r_result.txt`, `_f124r_result.txt`, `--check`
+run): H358's random-variant control applied to the split itself. From the same bowl-read 4TRI pool, 20 random relabellings (seeds 374 / 375) of the
+same number of tokens the shape split relabels, each scored with H360/H371's order gain for v7 (mean of seeds 342-344).
+- **f.124r (H375): as transcribed 0.0335, shape split 0.0706; random relabellings of 202 mean 0.0493, max 0.0569 -> shape beats 20/20, pre-stated
+  "carries order information".** Random relabelling alone raises the gain here (4TRI -> C43 helps in bulk), but choosing the tokens by the bowl
+  answer raises it clearly more: the shape answers pick out the tokens that fit a/n.
+- **f.97r (H374): as transcribed 0.0530, shape split 0.0499; random relabellings of 78 mean 0.0447, min 0.0376, max 0.0534 -> shape beats 16/20,
+  "unclear".** On f.97r any relabelling costs order gain, and the shape split costs less than most random ones; the bowl answers point the right
+  way but not past the 95% bar at this N (78 of 127).
+What it means: H360's f.124r result is not a by-product of moving tokens out of 4TRI -- the shape answers carry order information beyond the count.
+On f.97r the question stays open: the split neither helps v7 nor is it no better than random. (The as-transcribed and split figures here differ
+slightly from H371's because this script averages the three seeds.) For VERIFY-F61-V10/V11; nothing applied. Script-only.

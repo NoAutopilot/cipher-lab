@@ -5,7 +5,7 @@ is compared with 20 random relabellings (seed 374 for f97r, 375 for f124r) of th
 choice of which tokens, not how many, differs). Each draft is scored with H360/H371's order gain for v7 (H342's statistic: real minus mean of 10
 within-run shuffles, seeds 342/343/344, mean of the three). Pre-stated: the shape split 'carries order information' iff its mean gain beats >= 95% of
 the random relabellings (>= 19 of 20); 'no better than random' iff it beats < 50% (<= 9 of 20); else 'unclear'. Random drafts are written to a
-temporary passes/_h374tmp_<leaf>/ and removed. Descriptive; no key change.   python3 h374_split_randctl.py f97r|f124r [--check]"""
+temporary passes/_h374tmp_<leaf>/ and removed. Descriptive; no key change.   python3 h374_split_randctl.py f97r|f124r|f101r [--check]"""
 import csv, os, random, shutil, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); P = f"{HERE}/passes"
 LEAF = sys.argv[1]; CHECK = "--check" in sys.argv
@@ -14,6 +14,9 @@ def pool_and_split():
     if LEAF == "f97r":
         items = [(r["chunk"] if "chunk" in r else "", r) for r in rd(f"{HERE}/h370_items.tsv")] + [(r["chunk"], r) for r in rd(f"{HERE}/h371_items.tsv")]
         reps = {"": "h370_reply.tsv", "c1": "h371_reply_c1.tsv", "c2": "h371_reply_c2.tsv"}; base = "recf97r"; split = "recf97r_split"; seed = 374
+    elif LEAF == "f101r":   # H378 (added after H374/H375 ran, before running f101r): H362 + H365 answers, seed 378
+        items = [("", r) for r in rd(f"{HERE}/h362_items.tsv")] + [(r["chunk"], r) for r in rd(f"{HERE}/h365_items.tsv")]
+        reps = {"": "h362_reply.tsv", **{f"c{k}": f"h365_reply_c{k}.tsv" for k in range(1, 5)}}; base = "recf101r"; split = "recf101r_split"; seed = 378
     else:
         items = [("", r) for r in rd(f"{HERE}/h359_items.tsv")] + [(r["chunk"], r) for r in rd(f"{HERE}/h360_items.tsv")]
         reps = {"": "h359_reply.tsv", **{f"c{k}": f"h360_reply_c{k}.tsv" for k in range(1, 5)}}; base = "recf124r"; split = "recf124r_split"; seed = 375
