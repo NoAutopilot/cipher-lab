@@ -5249,12 +5249,12 @@ uninformative; nothing to carry to the key. No call.
 `family/h345_seqgain_perclass.py` (design change logged in its docstring before running: every other keyed class's v7 cell as the alternatives,
 since bins of 3 give only two; result `family/h345_seqgain_perclass_result.txt`). v7's own cell ranked among the alternatives by H342's gain, per class:
 - Across both held leaves: **HASH4 d/q rank 2 and 2; C43 a/n 3 and 1; VBAR_A g/t 5 and 3; PHI e/r 5 and 2; ZBAR f/s 4 and 2; H24 i/x 14 and 1;
-  4TRI c/p/t 15 and 8; EBR_B (loaded here as i/l) 13 and 22 of 22 -- the worst cell on f.97r; EBR_A a/l/s 12 and 18; RSIGN c/m/n/p/s/t 17 and 20.**
+  4TRI c/p/t 15 and 8; EBR_B (l/y, loaded folded as i/l) 13 and 22 of 22 -- the worst cell on f.97r; EBR_A a/l/s 12 and 18; RSIGN c/m/n/p/s/t 17 and 20.**
 - Two flaws, so this is **descriptive only**: (1) a class with no signs in the runs (ZHOOK, 0) ranks 1 by ties -- its "supported" is an artefact;
   (2) the best alternatives are mostly one-letter cells (C6 e, ELOOP r, VBAR_B s), so the gain statistic appears to favour narrow cells: a broad v7
   cell (4STEM, RSIGN, 4TRI) ranks low partly for its size. A size-matched comparison is H349.
-- For the verifier, as a pointer only: EBR_B scores worst-or-near on both held leaves, the same class whose form split and cell (i/l here, l/y in v7's
-  header note) the campaign has already flagged (H321, H322); VBAR_A g/t ranks well on both held leaves by this statistic, unlike H331's gloss count on
+- For the verifier, as a pointer only: EBR_B scores worst-or-near on both held leaves, the same class whose form split the campaign has already flagged (H321, H322); its cell
+  i/l is v7's l/y under the loader's i/y fold (key row: 'y = folded i/y of the clear'), not a different cell (corrected 16:2x the same day); VBAR_A g/t ranks well on both held leaves by this statistic, unlike H331's gloss count on
   f.124r (below its binned mean there) -- a disagreement between two instruments, recorded, not resolved (rule 4). No call, no cell changed.
 
 ## Campaign step H348 (29 Sept 2026, 16:01-16:05 UTC by the commit stamps and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r rows 13-18 sign passes; the order statistic on rows 1-18 shows no signal (power at 51 runs not yet measured)
