@@ -1,0 +1,9 @@
+TARGET: 267 signs, 6 nulls, 253 letters; real key -1.1228; 200 shuffled keys mean -2.0477 sd 0.1442 max -1.5620; z 6.42; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.20: real key rank 1 in 20/20; z median 7.44 min 5.41
+TARGET: 267 signs, 6 nulls, 253 letters; real key -1.1228; 200 shuffled keys mean -2.0556 sd 0.1625 max -1.4782; z 5.74; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.20: real key rank 1 in 20/20; z median 6.74 min 5.76
+TARGET: 267 signs, 6 nulls, 253 letters; real key -1.1228; 200 shuffled keys mean -2.0719 sd 0.1446 max -1.6519; z 6.56; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.20: real key rank 1 in 20/20; z median 7.24 min 5.07
+267 {'M': 103, 'S': 146, 'I': 7, 'W': 8, 'U': 3}
+FIT X_POUND (7 occurrences): l -1.107, null -1.135, null -1.135, t -1.136, n -1.138, r -1.139; unkeyed -1.123
+FIT X_THETA2 (8 occurrences): r -1.123, n -1.138, l -1.140, t -1.154, null -1.159, null -1.159; unkeyed -1.126

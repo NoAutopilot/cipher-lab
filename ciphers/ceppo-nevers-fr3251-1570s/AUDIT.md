@@ -352,3 +352,136 @@ restitution of places in Savoy"; "deciphered"; "first".
   gloss gives the pound sign and the double-barred oval. Then f.21v, f.35, f.87 under the same blind protocol.
 - The second-opinion row already queued by the first audit should carry this safe sentence, not the first one
   (rule 10 propagation).
+
+---
+
+# AUDIT: f.21v, f.35, f.87 (VERIFY-CEPPO-D2-1, 29 Sept 2026)
+
+Verifier: parent worker VERIFY-CEPPO-D2-1 (account 3, Opus 5.5, session_01YRxhvLZems8u4Y34NV2jdX), separate from the
+solver HARVEST-D2 (session_01C8YXpNGQVwrAPE7TY6F4ze). Brief `.claude/briefs/runs/2026-09-28-verify-ceppo-d2-1.md`.
+Clock read with `date -u` at 00:13 and 00:21 UTC, 29 Sept 2026. Files: `harvest/verify_d2/` (per folio: `passD.tsv`
+= the verifier's value-blind reconciliation, `control_D.txt`, `grade_view.txt`, `blind/` decodes, answer, reader).
+The model is the f.11r audits above. Key throughout: Tomokiyo's printed Ceppo-Nevers table (`published`,
+nevers_add1.png, cryptiana.web.fc2.com/code/nevers.htm; our copy `harvest/sign_id_map.json`).
+
+## Novelty first (step 1), all three letters, 29 Sept 2026
+
+| family | what was searched | result |
+|---|---|---|
+| Tomokiyo, nevers.htm | live fetch (1 request, HTTP 200), text diffed against `sources/cryptiana/web/nevers.htm` | identical; ff.21v, 35, 87 still listed without "(with decipherment)"; no reading given |
+| Cryptiana blog | blog search Nevers, Ceppo, Birago (3 requests); the two Birago posts (Jul, Sep 2024) opened and grepped for 3251 / 21v / 35 / 87 / Ceppo / 1570, comments included | Ceppo: "no posts"; Birago posts concern f.119 (13 Nov 1571) only; the one comment (27 Sept 2026) is on Henry of Navarre |
+| Cipherbrain | web search site:scienceblogs.de klausis-krypto-kolumne Birago Nevers | no hit |
+| Cipher Mysteries | web search site:ciphermysteries.com Nevers Birago | no hit |
+| open web | "Birago Nevers cipher 1570 fr. 3251 deciphered"; Birago Nevers 1570 lettera cifra "questa carica" Saluzzo; Birago Nevers 1571 Saluzzo "secretamente" cifra Cornelio Bentivoglio | BnF finding aid cc49712p, Bourdeau index and forks, an unrelated 1592 Nevers paper; no reading of these folios |
+| DECODE | Aymeloglu's `catalogue/decode-catalog.csv` (fresh clone d2800bb, 27 Sept 2026) grepped birago / ceppo / 3251; HARVEST-C's live DECODE holder search (28 Sept, with the 3621 positive control) stands | only the five 1591-92 Birago records (fr.3619, 3621, 3623); no fr.3251 record |
+| Bourdeau | fresh clone 648309e (26 Sept 2026), grep ceppo / 3251 | SOLVED_CATALOGUE.md l.237: "ff. 11, 21v, 35, 87 ... have no published reading"; targets/birago is f.119 |
+| printed Nevers / Birago correspondence | Google Books API (key, country=US), 11 queries: the three dates in Italian and French with Birago/Birague + Nevers, "uiuendo et seruendo", Birago + Bentivoglio 1571, "Lodovico Birago" lettere "duca di Nevers", Nevers correspondance Birago Saluces édition | only the BnF manuscript catalogues (1874-95), which list the letters "avec chiffre"; "uiuendo et seruendo" hits 1540s Bible translations only; no edition of Birago's letters to Nevers found |
+| Internet Archive | advancedsearch (2), be-api full text (3): Birago/Birague + Nevers + ottobre/octobre 1570, "questa carica" Birago Nevers; Segre, *Emanuele Filiberto* (emanuelefilibert00segruoft) and Ricotti, *Storia della monarchia piemontese* vol.2 (storiadellamona04ricogoog) fetched once and grepped | Segre paraphrases Birago's 1571 worries about Spanish troops near Alessandria (the f.87 period) from Venetian dispatches; neither cites fr.3251 or quotes a cipher passage |
+
+Not reached: Boltanski 2006 and *Il Marchesato di Saluzzo e la Riforma protestante* (1960) in full (snippet-only, as in
+the second f.11r audit); JSTOR (rows not added: the fragments are too short for a family (ii) phrase row, and family (i)
+rows for this volume are already queued by the first audit). Requests: cryptiana.web.fc2.com 1; cryptiana.blogspot.com 5;
+googleapis.com 11; archive.org 6; be-api 3; github.com 2 clones (read only, in the scratchpad); web search 5.
+
+**No prior reading or decipherment of f.21v, f.35 or f.87 was located. None is N0.**
+
+## f.21v (no.11, Birago to Nevers, Saluzzo 12 Oct 1570)
+
+### Blind re-reconciliation (step 2)
+
+Two Opus subagents (L01-L06, L07-L11), each allowed only its line crops (`cut_folio_lines.py` lines2x, regenerated),
+`sign_sheet_blind.png` and HARVEST-D2's raw passes A and B, copied into a scratch folder with no key file in reach.
+They set every position from the ink, not only the splits. Result `verify_d2/f21v/passD.tsv`, 267 signs: both passes 220,
+sided with B 29, with A 10, against both 8, nothing inserted or dropped. **D agrees with the solver's passC at 250 of 267
+signs.** The 17 differences are look-alike pairs: S49/S73 (slash between dots, printed n vs null; D took S73 at L01 15,
+L03 7, 10, 14 and S49 at L11 17), S74/S77 (m/s), S23/S97 (n/a, L07 10), S66/S26 (c/s, L09 23), S40/S32, X_NEW/S10 (x3),
+and the double-barred oval: at L06.2 12 the reconciler matched it to the sheet's own cell S60, printed **r** row 1 (see
+the I-sign section).
+
+### Key test on D (200 shuffles, three seeds; `control_D.txt`)
+
+| seed | letters | real key | shuffles mean / max | z | rank of 201 | power control (20% sign error) |
+|---|---|---|---|---|---|---|
+| 1 | 253 | -1.123 | -2.048 / -1.562 | 6.42 | **1** | 20/20 rank 1, z median 7.44 |
+| 7 | 253 | -1.123 | -2.056 / -1.478 | 5.74 | 1 | 20/20 |
+| 23 | 253 | -1.123 | -2.072 / -1.652 | 6.56 | 1 | 20/20 |
+
+Rule 3 met. The solver's figure (z 6.40 on passC) reproduces on a transcription the solver did not make.
+
+Judge on D's letters (X_THETA2 = r, X_POUND unkeyed), pasted:
+```
+FAIL language: score=-1.179, null_p99=-1.728, real_p05=-0.916, real_median=-0.825, mode=both, N=253
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+### Line by line against 20 shuffled keys read blind (step 3)
+
+`verify_mk_blind.py verify_d2/f21v/passD.tsv verify_d2/f21v/blind 2129 X_THETA2=r` (pound sign left unkeyed). One Sonnet
+reader saw only `blind_decodes.txt`: it rated TEXT 01 alone LANG, high confidence ("questa ... casa di qua, credo le,
+uiuendo et seruend(o), tanto di, in diuerse, fatto, difficu_ta"); one shuffle SOME (mardate, date, dise, lasse, mila),
+nineteen NONE with at most one 3-5 letter scrap. TEXT 01 is the real key (`blind_answer.json`).
+
+D under the printed key (plus X_THETA2 = r), `grade_view.txt`: under each letter S = both raw passes and D agree at H,
+m = D sided with a pass or confidence below H, d = D alone; `_` = pound sign unkeyed.
+
+```
+L01    lesacardahenesede_tuttodaemee&etcinre
+L03    ranseitecioesoptaquestacaricasadiqua
+L04    credolenesinersuad
+L05    ciolnoser_isrcederuiuendoetseruend
+L07    ranoreauaatiqua_chenartiton_euarm_
+L09    nf_tantodinar_eindiuersectse
+L11    t_mfatto&lseramenfadificu_ta
+(L02.1 uptnedi_ort, L02.2 ha, L06.1 io, L06.2 auanfarminoraof, L08 iqua / a, L10 acioremtise: no word)
+```
+
+| line | phrase | forced by the printed key on D? | in the 20 shuffles (blind) | verdict |
+|---|---|---|---|---|
+| L01 | **tutto da** | yes (del needs the pound sign) | 0/20 | endorsed; "de[l]" I |
+| L03 | **questa carica ... di qua** | yes, D = C at every sign | 0/20 (reader saw "questa", "casa di qua") | endorsed; the reader's "casa" is the same letters split differently |
+| L03 | intencione (solver) | **no**: on D it reads "itecioe"; its three n's are the S49/S73 split (pass A S49 n, pass B and D S73 null) | - | not endorsed; M |
+| L04 | **credo le ne** ... [p]ersuad | "credolene" yes; "persuad" needs an unread p (the sign reads "i n e r s u a d") | 0/20 | "credo le ne" endorsed; "[p]ersuad[e]" not |
+| L05 | **ceder uiuendo et seruend[o]** | yes, 23 of 25 letters S | 0/20 | endorsed, the strongest passage |
+| L07 | auanti qualche (solver) | **partly**: D reads "auaati qua_che": S23/S97 split at L07 10 (n/a), and the l is the pound sign | 0/20 (reader saw only "qua", "che") | not endorsed as read; "qua[l]che" I |
+| L09 | **tanto di nar[.]e in diuerse** | "tanto di" yes; "nar" and "diuerse" each carry one double-barred oval as r, and "diuerse"'s s is D alone (S26 for both passes' S66) | 0/20 (reader saw "tanto di", "in diuerse") | "tanto di" endorsed; "in diuerse" endorsed with the s M |
+| L11 | **fatto et**; **fa dificu[l]ta** | yes except the pound-sign l | 0/20 ("fatto", "difficu_ta") | endorsed; "l" I |
+
+### The two I signs (step 4)
+
+- **Pound sign (X_POUND, 7 on D, all AB at H).** Printed-key letters only, with it unkeyed, every endorsed passage above
+  still reads; it supplies only the l of "de[l]", "qua[l]che", "dificu[l]ta". Value fit on D ranks l first (-1.107;
+  null -1.135, t -1.136; unkeyed -1.123), a thin margin from 7 occurrences, and three of the seven sit where l makes a
+  word. No gloss on this form exists. **Stays I.**
+- **Double-barred oval (X_THETA2, 8 on D).** Unkeyed, "tanto dina_e in diue_se" still reads. With r it takes the value
+  that (a) the fr.3252 f.36v period gloss gives it (HARVEST-D, two glosses), (b) the fit ranks first on D (-1.123; n
+  -1.138), and (c) the printed table itself very probably gives: this verifier compared the sheet cell **S60, printed r
+  row 1** (a small oval crossed by two bars) with the f.11r example (`witness_f36/f11r_double_barred_oval_x4.png`) and the
+  shapes agree; one blind reconciler matched an instance to S60 unprompted. So the r is not an override but a missed match
+  to a printed cell, backed by a period gloss. **Endorsed as S on the key, M on the sign** (the one-bar S69 f and S13 g
+  are its look-alikes). This inference by eye should be carried back to f.11r and f.87 (named next step).
+
+### Grades endorsed (D, 267 tokens)
+
+S 146 (both raw passes and D agree at H), M 103, X_THETA2-as-r 8 (S on key, M on sign), I 7 (pound sign), U 3 (X_NEW).
+H 0, C 0: a cryptanalytic result with a published key. The solver's "S 179" counted both passes agreeing at H before
+adjudication; on the verifier's stricter rule 146. Not endorsed: "intencione", "auanti", "[p]ersuad[e]", "del", and
+any l from the pound sign.
+
+### Verdict, f.21v
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| f.21v L01 "tutto da", L03 "questa carica ... di qua", L04 "credo le ne", L05 "ceder uiuendo et seruend[o]", L09 "tanto di ... in diuerse", L11 "fatto et", "fa dificu[l]ta" | **recovered-passages** | **N3** | published | unknown | high that the key is right (z 5.7-6.6 on a blind D, 20/20 power, blind reader); moderate on each passage's letters |
+| the rest of f.21v; continuous text | none | not classed | - | - | nothing read |
+
+**N3 reason:** no reading or decipherment of this letter located in the families above; not N4 while the two Saluzzo
+monographs and JSTOR are unread (as for f.11r).
+
+**Safe sentence:** "Birago's letter to Nevers of 12 Oct 1570 (BnF fr.3251 f.21v) reads in part with Tomokiyo's published
+Ceppo-Nevers key. On a verifier's value-blind transcription the key beats all 200 shuffled keys (z 5.7-6.6), and a blind
+reader picks its decode out of 21. Passages recovered: 'questa carica ... di qua', 'credo le ne', 'ceder uiuendo et
+seruend', 'tanto di ... in diuerse', 'fatto', 'fa dificu' (the next letter is an unglossed sign). No prior reading of this letter was located (search
+logged in AUDIT.md, 29 Sept 2026)."
+
+**Unsafe:** "f.21v deciphered"; any continuous translation; "intencione" or "auanti qualche" as read; the pound-sign l
+as read; "first", "unpublished".

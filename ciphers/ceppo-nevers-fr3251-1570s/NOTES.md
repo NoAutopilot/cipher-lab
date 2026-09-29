@@ -753,6 +753,12 @@ Runs read as Italian: "del tutto da ... et" (L01), "intencione ... questa carica
 (L05), "auanti qualche ..." (L07), "tanto dinar[i] ... in diuer[s]e" (L09), "fatto [et] ... fa dificulta" (L11, before
 "Io Resto in pena"). The rest is fragments with M tokens in them.
 
+**Verifier correction (VERIFY-CEPPO-D2-1, 29 Sept 2026, AUDIT.md "f.21v"):** on the verifier's value-blind
+re-reconciliation D (250/267 signs = passC) the key test holds (rank 1/201, z 5.7-6.6, three seeds), but "intencione"
+(L03, three S49/S73 n/null splits) and "auanti" (L07, S23/S97 split) are not forced on D and are not endorsed; the
+pound-sign l stays I. Endorsed passages: tutto da; questa carica ... di qua; credo le ne; ceder uiuendo et seruend;
+tanto di ... in diuerse; fatto; fa dificu-. Class N3, key published.
+
 **The two off-sheet signs.** `decode_control.py --fit-sign` scores the whole folio with one sign set to each value in
 turn: X_POUND (7 occurrences) ranks **l first** (-1.099; null -1.122, r -1.127, i -1.129), and X_THETA2 (8 occurrences)
 ranks **r first** (-1.111; n -1.113, l -1.128) -- r is the value the fr.3252 f.36v period gloss gives it (HARVEST-D),
