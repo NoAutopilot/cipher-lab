@@ -1345,3 +1345,5 @@ the end of every wake.
 | 28 Sept 2026 | f61 runner 6 | session_016YPPumG1PbhMJ3pBLuqaeW | owner | Opus 5.5 | continuous | running from 22:13 | trig_01C4EwnuJuH54nAFS2fs3Kxj :45; fr.3984 key step first |
 | 28 Sept 2026 | f61 runner 6 | session_016YPPumG1PbhMJ3pBLuqaeW | owner | Opus 5.5 | 51.41 | retired 00:14 29 Sept at 649k, archived | H168-H182; key_period_f176 built |
 | 29 Sept 2026 | f61 runner 7 | session_012nGionjAX21NRbpi4TP69b | owner | Opus 5.5 | continuous | running from 00:14 | trig_0164n3St3HpsjgbsHkBwMKzV :45 |
+| 29 Sept 2026 | f61 runner 7 | session_012nGionjAX21NRbpi4TP69b | owner | Opus 5.5 | 43.70 | retired 02:09 at 594k, archived | H177c-H198; f.176v keyed; bowl rule |
+| 29 Sept 2026 | f61 runner 8 | session_011Taenrv3JSdk7VjpiBjids | owner | Opus 5.5 | continuous | running from 02:09 | trig_01EoSF89r6vVca8uzDPB6rWA :45 |
