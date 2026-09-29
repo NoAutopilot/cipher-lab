@@ -392,3 +392,7 @@ loop does. Reply ONLY with a TSV block 'id<TAB>answer', rows I01..I29."
 ## H411 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
 H410's prompt verbatim with twelve references (R1-R12, references.jpg) and items I01-I32 (items_01..02.jpg); script `h411_class_qa.py`, key
 `h411_items.tsv`. The runner looked at the sheets for marker placement only (no change).
+
+## H413 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H410/H411 prompt verbatim with twelve references (SCRATCH/h411/references.jpg, unchanged) and items I01-I22 (SCRATCH/h413/items_01..02.jpg);
+script `h413_l05_1_reread.py`, key `h413_items.tsv`. Same tile geometry as H411 (markers already checked there); no new look.
