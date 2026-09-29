@@ -6009,3 +6009,18 @@ readers' 4STEM/C43 boundary on f.108 does not follow shape (H199's finding on f.
 only, not a result: the targets answered consistently across their three windows (T1/20 4PI -> 4TRI x3, where the overlay has p; T2/37 OTHER -> BETA
 x3, where it has m; T2/3 and T2/27 OTHER none x3; T2/8 'qui' none x2 / n; T1/36 INF n x3). H420 re-runs with the control fixed before any use.
 Cost estimate 1.5 USD.
+
+## Campaign step H420 (29 Sept 2026, 20:16-19:44 UTC by date -u, runner 15 session_01BDhspZ38TdrrXYSvLPTpjc) -- f.108r class check with the control fixed: gate 17/17; T1/20 is a 4TRI (overlay p), the 'qui' sign is drawn like 4TRI as the table draws it (1 vision call)
+
+`family/h420_108r_qa2.py` (H418 with the pre-stated fixes: no 4STEM class, no band-edge tiles, seed 420; known items H418's non-edge ones -- the row
+said re-drawn, disclosed), key `family/h420_items.tsv`, prompt note H420, committed before the call (2b054724's parent). One blind Opus call, reply
+`family/passes/h420_reply.tsv`, result `family/h420_108r_qa_result.txt` (`--check` OK): **gate 17/17.**
+- **T1 sign 20 (pass-A 4PI, overlay p): 4TRI at 3 of 3 widths** -- a reader slip in the 4-family, the letter then fits (4TRI c/p).
+- **T1 sign 36 (INF, overlay e): INF confirmed 3/3** -- the miss there is not the sign's class (an alignment or overlay question).
+- **T2 signs 3, 27, 37 (OTHER; overlay l, l, m): none 3/3 each** -- signs outside the nine references (H418's ungated BETA for sign 37 does not
+  reproduce).
+- **T2 sign 8 (OTHER, overlay 'qui'): 4TRI 3/3** -- the published table draws the 'qui' word sign as "similar in construction to the c/p column's
+  letter symbol" (keys/key_mayenne_1592.tsv), so the reader's answer agrees with the table's description.
+The one correction goes to `scripts/f108r_positions_corrections.tsv` (pass files untouched). `family/h420_rescore.py` (`--check` OK): **f.108r
+overlay under key v8 74/84 -> 75/84 with the correction -> 76/84 with the correction and H419's BETA m/z** (own permuted p95 0.405, 0/2000 each).
+No key or grade change. Cost estimate 1.5 USD.

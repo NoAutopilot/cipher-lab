@@ -1,0 +1,7 @@
+gate: 17/17 known f.108r items name their class's reference (>= 15)
+L02/20 (code 4PI) W1-W3: ['R8', 'R8', 'R8'] -> 4TRI
+L02/36 (code INF) W1-W3: ['R5', 'R5', 'R5'] -> INF
+L03/3 (code OTHER) W1-W3: ['NONE', 'NONE', 'NONE'] -> none
+L03/27 (code OTHER) W1-W3: ['NONE', 'NONE', 'NONE'] -> none
+L03/37 (code OTHER) W1-W3: ['NONE', 'NONE', 'NONE'] -> none
+L03/8 (code OTHER) W1-W3: ['R8', 'R8', 'R8'] -> 4TRI

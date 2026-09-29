@@ -1,0 +1,3 @@
+v8: f.108r overlay 74/84 = 0.881; own permuted p95 0.405; >= key 0/2000
+v8 + f108r correction: f.108r overlay 75/84 = 0.893; own permuted p95 0.405; >= key 0/2000
+v8 BETA m/z + f108r correction: f.108r overlay 76/84 = 0.905; own permuted p95 0.405; >= key 0/2000
