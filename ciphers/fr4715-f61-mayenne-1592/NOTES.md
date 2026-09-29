@@ -5109,3 +5109,18 @@ gloss reading. H325/H328's f.124r lead is the only held-leaf result so far. No c
 A paragraph "INSTRUMENTS" at the head of CAMPAIGN.md's "Attempts already made" and on `family/V9_PAGE.md`: the free letterform sort retired for LL
 after three gate failures; the forced choice with known answers passed twice and failed only on poor or confusable known-answer tiles; held-leaf key
 checks need a frequency-matched control (H325 -> H328). No call.
+
+## Campaign steps H330 and H331 (29 Sept 2026, 13:27 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- the f.124r lead is fragile; PHI and C43 carry it, VBAR_A runs below chance there (script-only)
+
+`family/h330_124r_boot.py` (written before running; H325's data code unchanged, H328's bins and frequency key; result
+`family/h330_124r_boot_result.txt`, `--check` OK).
+- **H330 (bootstrap, 200 resamples of the 165 agreed words):** real > binned p95 in **172/200 (86%)**, real > frequency-only key in **181/200 (90%)** --
+  the pre-stated bar was 80% and 95%, so the read-out is **"fragile, rests on a few words"**. H328's pass stands as computed, but it does not survive
+  resampling against the frequency key at the pre-stated level.
+- **H331 (per class, v7 hits vs the binned permutation's per-class mean / p95):** PHI 43 of 58 signs vs mean 28.3, p95 43 (at p95; blanking PHI
+  costs 43); C43 15/18 vs 6.9, p95 15 (at p95); EBR_B 12/15 vs 9.7, p95 13; H24 12/20 vs 11.0; 4TRI 25/46 vs 24.3; **VBAR_A 24/51 vs mean 29.9, p95
+  35 -- below its binned mean**; the small classes sit at their means. No class is strictly above its p95.
+What it means: on f.124r the v7 cells that look right are PHI (e/r) and C43 (a/n); VBAR_A's g/t scores worse there than other frequent classes'
+cells would, which is either a direction-of-correspondence difference (f.124r is de Diou to Mayenne; v7's VBAR_A g/t is endorsed from f.176r and
+f.108r) or the gloss passes' misreads -- rule 4 says a conflict like this is recorded by witness, not settled by the frequent value (added to
+HYPOTHESES.md as a note, below). The held-leaf evidence is therefore thin: a lead for the verifier, not a confirmation of v7 as a set. No call.

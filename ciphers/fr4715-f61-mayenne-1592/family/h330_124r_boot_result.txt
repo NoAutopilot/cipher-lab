@@ -1,0 +1,18 @@
+H330 bootstrap (200 resamples of 165 words): real > binned p95 in 172/200 (86%); real > frequency key in 181/200 (90%)
+H330 read-out: fragile, rests on a few words
+H331 per class (f.124r token rank order):
+PHI: v7 43/58 signs, binned mean 28.3 p95 43; total without its cell 105 (-43)
+4TRI: v7 25/46 signs, binned mean 24.3 p95 27; total without its cell 127 (-21)
+VBAR_A: v7 24/51 signs, binned mean 29.9 p95 35; total without its cell 126 (-22)
+H24: v7 12/20 signs, binned mean 11.0 p95 12; total without its cell 137 (-11)
+EBR_B: v7 12/15 signs, binned mean 9.7 p95 13; total without its cell 136 (-12)
+HASH4: v7 3/6 signs, binned mean 2.7 p95 3; total without its cell 145 (-3)
+C43: v7 15/18 signs, binned mean 6.9 p95 15; total without its cell 133 (-15)
+BETA: v7 2/3 signs, binned mean 1.7 p95 2; total without its cell 146 (-2)
+ZBAR: v7 0/1 signs, binned mean 0.0 p95 0; total without its cell 148 (+0)
+4STEM: v7 5/5 signs, binned mean 4.4 p95 5; total without its cell 143 (-5)
+RSIGN: v7 2/3 signs, binned mean 2.5 p95 3; total without its cell 146 (-2)
+DBL: v7 2/2 signs, binned mean 1.6 p95 2; total without its cell 146 (-2)
+EBR_A: v7 1/1 signs, binned mean 0.7 p95 1; total without its cell 147 (-1)
+VBAR_B: v7 1/1 signs, binned mean 0.7 p95 1; total without its cell 147 (-1)
+ISH: v7 1/1 signs, binned mean 0.6 p95 1; total without its cell 147 (-1)
