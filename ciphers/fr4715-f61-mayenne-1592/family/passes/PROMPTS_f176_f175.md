@@ -345,3 +345,8 @@ The runner did not look at the H390 sheets.
 H359's prompt verbatim with part 2 = SCRATCH/h392/sheet_01..04.jpg (R01-R72): fr.3984 f.188r's 66 agreed 4TRI (no agreed C43 exists on the leaf) and
 H377's 6 known f.61 strips; native f351 (sha1 1c584b0f as MANIFEST.tsv); script `h392_bowl_188r.py`, key `h392_items.tsv`. The runner did not look
 at the H392 sheets.
+
+## H396 (runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H359's prompt verbatim with part 2 = SCRATCH/h396/sheet_01.jpg (R01-R20): f.61 L05/14 at three windows and the other 17 f.61 4-family tiles (H367
+geometry); script `h396_l05_14_tiebreak.py`, key `h396_items.tsv`. The runner saw the f.61 target shapes in H367's placement check (disclosed there);
+it did not look at the H396 sheet.
