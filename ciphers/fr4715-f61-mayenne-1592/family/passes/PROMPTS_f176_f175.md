@@ -365,3 +365,17 @@ position mapped to pass A's row by per-line sequence alignment) at H359 geometry
 `h399_items.tsv`. Native f202 fetched once (sha1 87d4236c as MANIFEST.tsv; 1 request). Disclosure: the runner looked at sheet_01 for marker placement
 (the row's placement-sheet step): markers sit on or beside the intended 4-sign, some up to about 25 native px off (pass A/B x estimates differ by
 about 11 native px on average, no bias); x changed to the mean of pass A and pass B where both read the sign in the same segment -- few tiles moved.
+
+## H407 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+Two transcription questions on f.61's own hand with controls (script `h407_span_miss.py`, key `h407_items.tsv`). Disclosure: the runner looked at the
+target lines (L03's end, L07/4, L11/1) before writing the row, and at the three sheets for marker placement; two changes before the call, both in
+the script's docstring (control B3 moved from L08 pos 9 to pos 11, the letter-shaped CA at pos 10 being a clear-word lookalike; known PHI L08/1
+replaced by L08/6, marker between two signs). Prompt (one blind Opus call, inline reply):
+"You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file. The images are strips of a
+16th-century cipher letter written in a mix of ordinary handwriting and cipher signs. PART A: <A1_references.jpg> shows two reference signs, REF X and
+REF Y, each under a red triangle. <A2_items.jpg> shows items A01-A12, each with a red triangle pointing down at one sign; look only at that sign.
+For each item answer X if it is the same sign as REF X, Y if it is the same sign as REF Y, neither if it is a different sign from both, n if it
+cannot be told. PART B: <B_strips.jpg> shows three strips B1-B3; in each a red triangle marks one cipher sign at the left. Count the cipher signs
+from the marked one (counting it) rightwards along the same line, stopping before the first word of ordinary handwriting; also describe the last
+cipher sign you counted in a few words. Reply ONLY with a TSV block 'id<TAB>answer<TAB>note': rows A01..A12 (answer X, Y, neither or n; note empty),
+then B1..B3 (answer = the count as a number; note = the description of the last sign)."
