@@ -2448,6 +2448,15 @@ wherever another agent checks the output; the window to 11:10 UTC has to last.
 Gallica .texteBrut is altcha-walled, IIIF page images are not; tell solvers to run long jobs in the foreground (two Paleologue
 solvers went idle with background runs); commit per pass so a rate-limit stop loses nothing; "9.bre" is novembre.
 
+### Orchestrator note (28 Sept 2026, 20:20 Pacific [29 Sept 03:20 UTC]): Birago f.21v and f.87 counted; the Debosnys swarm is running; an f.61 value goes to audit
+
+- Counts 21 / 2 / 1 / 6 (recovered-passage documents / completed / keys / contributions). Birago fr.3251 f.21v and f.87 counted at 02:10 UTC (N3, recovered passages, key published by Tomokiyo, two audits each).
+- Tomokiyo note (outreach/tomokiyo-birago-nevers.md) revised to three letters (TOMO-BIRAGO-2) and fact-checked (OUT-CHECK-TM3: 3 fixes, 5 open, links 7/7 live); with the owner to paste in his own thread.
+- Debosnys swarm (owner's experiment, .claude/briefs/runs/2026-09-29-deb-swarm.md): harness DEB-SWARM-0 and groups A-H all claimed on account 3 by 03:12 UTC (all on Opus 5.5: the account-3 dispatcher still applies the old warning fallback). G-A's 03:04 finding added a second null (refit on shuffled text) to the bar before freezing.
+- f.61: runner 8 posted the 4-family bowl rule as ready for audit (02:50); VERIFY-F61-V6 queued to account 3. Blocker: 50 two-way choices and 25 unread of 99 under key v5; routes: the bowl rule (VERIFY-F61-V6), the hash-family split (H209-H218, not yet posted for audit), ASKS 88/89/93, fr.4699.
+- Nightly key cross-match: crashed at 02:50 on a decode job whose key field is a list; fixed in tools/key_crossmatch.py and re-run at 03:1x: no new leads (0 non-own rows clear the gate).
+- Armstrong: holding on archive replies; ASKS 97 (Monroe Catalogue lookup) waits on the owner.
+
 ### Orchestrator note (28 Sept 2026, 14:20 Pacific [21:20 UTC]): Fable is out on the owner account until 3 Oct; Debosnys is a fourth track on account 3
 
 Counts 19 / 2 / 1 / 6, unchanged.

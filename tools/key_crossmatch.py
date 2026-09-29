@@ -784,8 +784,11 @@ def compute_own_cts(key_metas, ct_metas, decode_jobs_by_folder):
         if jobs:
             for p, key, meta in items:
                 key_base = Path(p).name
-                names = {os.path.basename(j['ciphertext']) for j in jobs
-                         if j.get('key') and os.path.basename(j['key']) == key_base and j.get('ciphertext')}
+                def _as_list(v):
+                    return [x for x in (v if isinstance(v, (list, tuple)) else [v]) if x]
+                names = {os.path.basename(c) for j in jobs
+                         if any(os.path.basename(k) == key_base for k in _as_list(j.get('key')))
+                         for c in _as_list(j.get('ciphertext'))}
                 meta['own_cts'] = [c['path'] for c in same_folder_cts if os.path.basename(c['path']) in names]
             continue
         if len(items) <= 1:
