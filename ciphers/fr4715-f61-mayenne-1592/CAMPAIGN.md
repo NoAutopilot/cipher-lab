@@ -966,6 +966,6 @@ closed:
 2026-09-29 17:36 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H372 done | 0.05 | bowl-by-code table for V11: the readers' 4TRI is mostly no-bowl on de Diou's leaves, mostly bowl on f.61.
 2026-09-29 17:43 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H373 done | 1.5 | c2 re-read agrees 0.68 -> replaced; f.97r split still lowers v7 order gain; wrote H374/H375 (random-relabel controls), H376 (instrument note).
 2026-09-29 17:48 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H376 done | 0.02 | instrument note: part-2 blind spot of the bowl gate; V9_PAGE.md runner-14 section for V11.
-2026-09-29 17:49 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H374, H375 done | 0.2 | bowl split vs random relabellings: f.124r 20/20 (carries order information), f.97r 16/20 (unclear).
+2026-09-29 17:48 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H374, H375 done | 0.2 | bowl split vs random relabellings: f.124r 20/20 (carries order information), f.97r 16/20 (unclear).
 2026-09-29 17:52 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H378 done | 0.2 | f.101r bowl split beats 20/20 random relabellings (carries order information).
-2026-09-29 17:58 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H379 done | 0.2 | f.108v shape relabel raises v7 order gain 0.157 -> 0.221, beats 20/20 permuted drafts -- the bowl rule holds by order in f.61's hand.
+2026-09-29 17:52 (date -u) | session_01N7YQoVMZj1SfiFvc4XG9DH | H379 done | 0.2 | f.108v shape relabel raises v7 order gain 0.157 -> 0.221, beats 20/20 permuted drafts -- the bowl rule holds by order in f.61's hand.

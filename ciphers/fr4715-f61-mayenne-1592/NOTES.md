@@ -5572,7 +5572,7 @@ bowl-read pool mean 0.0938, max 0.0997 -> shape beats 20/20, pre-stated "carries
 the bowl answers pick the tokens that fit v7's a/n cell better than chance on two de Diou leaves, one in-sample (f.101r, where the period gloss agrees,
 H365) and one held (f.124r); f.97r points the same way below the bar. For VERIFY-F61-V11; nothing applied. Script-only.
 
-## Campaign step H379 (29 Sept 2026, 17:55-17:58 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.108v (f.61's hand): relabelling the 4-family by bowl shape raises v7's order gain and beats every permuted-answer draft (script-only)
+## Campaign step H379 (29 Sept 2026, 17:50-17:52 UTC by date -u, runner 14 session_01N7YQoVMZj1SfiFvc4XG9DH) -- f.108v (f.61's hand): relabelling the 4-family by bowl shape raises v7's order gain and beats every permuted-answer draft (script-only)
 
 `family/h379_108v_shape_relabel.py` (written and pushed before running; result `family/h379_108v_shape_relabel_result.txt`). Corrected before running
 (logged in the row): H199's columns index H59's draft `passes/f108v3z_draft_reconciled.tsv` (74/74), not rec108v (27/74). Shape draft: H199's 68
