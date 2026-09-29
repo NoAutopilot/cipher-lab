@@ -5146,7 +5146,7 @@ with f.108r (H34, shared-wrong agreement) and f.124r (0.42) it is the fourth uni
 instrument left for this gloss is a person's read (ASKS 99's f.106r desk pack, ASKS 88 for f.108r). Cost estimate 5.5 USD (four Opus image calls,
 42 images each). No reading, no merge, no class change.
 
-## Campaign step H334 (29 Sept 2026, 15:20 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r right-end crops re-cut (script-only)
+## Campaign step H334 (29 Sept 2026, 15:17 UTC by the commit stamp (corrected: first typed 15:20 without reading the clock), runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.106r right-end crops re-cut (script-only)
 
 `family/h334_recut.py` (`--check` OK). A ruled strip of x 3600-4650 shows the rows at the right edge only about 35 px above their left-edge centres
 (L08 1400, L09 1506, L10 1612 native): the rows rise through the middle of the leaf and flatten at the right, so H332's straight `--slope -0.028`
@@ -5156,7 +5156,7 @@ each now holds its own cipher row with its gloss above (checked by eye). H332's 
 B read them from the neighbouring band at conf l); the count in H332 does not change its read-out (its words under those crops are few), and any
 later use of rows 7-12 uses the re-cut crops. No call.
 
-## Campaign step H333 (29 Sept 2026, 15:26 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- ASKS 99's f.106r desk pack extended to rows 7-12 (script-only)
+## Campaign step H333 (29 Sept 2026, 15:19 UTC by the commit stamp (corrected: first typed 15:26), runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- ASKS 99's f.106r desk pack extended to rows 7-12 (script-only)
 
 `family/h333_pack2_106r.py` (`--check` OK): six more sheets in `family/images/person_pack_106r/` (f106r_L07-L12.jpg, H243's drawing), 25 more arrows
 N18-N42 under every HASH4 both H332 sign passes wrote at the same reconciled position (10 'agree', 15 'agree-flagged'), x from pass A where its sign
@@ -5164,7 +5164,7 @@ matches, else pass B; the four H334 crops use their re-cut boxes. README section
 not read on rows 7-12). Spot-checked by eye (N26, N38-N42 sit on hash-like signs in the sheet's own row). ASKS 99's text says 17 arrows on six
 sheets; widening it to 42 on twelve (about 30 minutes) is the orchestrator's call -- flagged in ROOM, ASKS.md not edited here. No reading, no call.
 
-## Campaign steps H335 and H336 (29 Sept 2026, 15:30-15:33 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- a gloss-free v7 check on f.106r: a non-test as gated; the frequency-key arm fails its own positive control (script-only)
+## Campaign steps H335 and H336 (29 Sept 2026, 15:20-15:22 UTC by the commit stamps (corrected: first typed 15:30-15:33), runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- a gloss-free v7 check on f.106r: a non-test as gated; the frequency-key arm fails its own positive control (script-only)
 
 `family/h335_106r_v7_beam.py` (written and committed before running; result `family/h335_106r_v7_beam_result.txt`, `--check` OK): f.106r rows 1-12
 pooled draft (479 rows), runs of >= 4 v7-keyed signs (35 runs, 427 signs) resolved by the fr16 4-gram beam of scripts/f61beam_margin.py, score = log10
@@ -5178,7 +5178,7 @@ a negative** (the "control cannot fail differently" shape of rule 3). The binned
 at its p95 (12/200, a borderline lead only). Its power at f.106r's 427 signs is unknown until the in-sample leaves are subsampled to that N (ARM3-ADJ's
 rule) -- H337. The frequency-key arm is retired for beam scores (kept for the H325/H329 one-to-one counts, where it is a fair control). No call.
 
-## Campaign step H337 (29 Sept 2026, 15:36 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- H335's binned arm is powered at f.106r's N; f.106r sits below the in-sample rate (script-only)
+## Campaign step H337 (29 Sept 2026, 15:23-15:26 UTC by the commit stamps (corrected: first typed 15:36), runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- H335's binned arm is powered at f.106r's N; f.106r sits below the in-sample rate (script-only)
 
 `family/h337_beam_power.py` (written and committed before running; result `family/h337_beam_power_result.txt`, `--check` OK): H335's code on 50 random
 35-run subsets (f.106r's run count, 250-413 signs) of each in-sample leaf, 100 binned keys per subset. **f.101r: v7 > binned p95 in 43/50 (0.86);
@@ -5189,7 +5189,7 @@ f.106r's sign draft is the least agreed of the three (0.85 / 0.76 by rows vs f.1
 secretary's hand that sits below the in-sample rate -- neither a confirmation of v7 there nor a negative. For the verifier with H325/H328/H330's f.124r
 lead: two held-leaf checks, both at their gate's edge. No call.
 
-## Campaign steps H338-H341 (29 Sept 2026, 15:39-15:47 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the gloss-free beam check on the held leaves, then its shuffled-order control VOIDS the binned arm on four of seven leaves (script-only)
+## Campaign steps H338-H341 (29 Sept 2026, 15:26-15:37 UTC by the commit stamps and date -u (corrected: first typed 15:39-15:47), runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the gloss-free beam check on the held leaves, then its shuffled-order control VOIDS the binned arm on four of seven leaves (script-only)
 
 **H338-H340** (`family/h338_beam_held.py`, written before running; `family/h338_beam_held_result.txt`, `--check` OK): H335's code on the three family
 leaves not in key_period_v7.tsv's leaf column, binned arm only. f.124r real -0.998 vs binned p95 -1.021 (0/200); f.97r -0.899 vs -0.906 (8/200);
