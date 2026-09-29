@@ -1,0 +1,4 @@
+fr16: 'les W1 W2 trop' 2: choses allaient 1, pretentions etaient 1; of which after 'que' 0
+fr16: 'les W1 W2 W3 trop' 2: lieutenants deviennent souvent 1, ouyant pailer en 1
+fr18: 'les W1 W2 trop' 3: cherchoit avec 1, pafiages etoient 1, batteries etoient 1; of which after 'que' 1
+fr18: 'les W1 W2 W3 trop' 4: peuples une impreffion 1, foutenoient oc etant 1, mena un peu 1, meilleurs vous avez 1

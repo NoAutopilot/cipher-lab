@@ -4734,3 +4734,15 @@ multi-letter chunk decides whether "do these two take a word" can be asked of th
 classes were aligned as letters (q/s on f.101r; e on f.101r and m on f.188r for CH), and on f.61 they stand where letters cannot (H283/H286): a
 leaf-level difference of the C6 kind (H261), for the verifier. Also corrected in this commit: H286's NOTES/CAMPAIGN wording said L04's two sign items
 were joined to read_call_U; they are not (read_call_U lists one L04 sign, the OTHER is pass U2's alone). No call.
+
+## Campaign steps H289, H290, H291 (29 Sept 2026, 10:45 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- the CH cell row; fillers of "les __ __ trop"; the family tokens in context (script/notes)
+
+**H289:** HYPOTHESES.md row "campaign H289": the pooled CH e/m is two leaves' different gloss letters merged (f.101r e 3, f.188r m 3, strays each side),
+with Tomokiyo's dash on f.61 as a third witness; recorded, not resolved. **H290** `family/h290_wordcode_candidates.py` (result `..._result.txt`, `--check`
+OK): "les W1 W2 trop" is rare in both corpora -- fr16 2 (choses allaient, pretentions etaient), fr18 3 (cherchoit avec, pafiages etoient, batteries
+etoient), and the three-word fillers are noise; so the construction is noun + imperfect verb ("choses estoient / sont" is the shape), but no single
+candidate pair is frequent enough to name as the value of the two codes; descriptive. **H291** `family/h291_family_context.py` (result `..._result.txt`,
+`--check` OK): on f.101r and f.188r, 25 of the 30 aligned LOOPSTEM1/CH tokens carry a letter of their own with lettered gloss neighbours on both sides
+(e.g. f.101r L45 "- e [q] u e", f.188r L21 "l e [m] e n") -- on those leaves they are letters inside words. With H288 (never a word in the family) and
+H283/H286 (a word slot on f.61), the two f.61 tokens are a leaf-level difference: either f.61's signs are a different glyph from the family's letter
+signs (H293 tests that by blind sort, n = 1 each, flagged) or the same glyph is used differently on f.61. No value; for the verifier. No call.

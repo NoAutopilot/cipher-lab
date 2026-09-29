@@ -30,6 +30,16 @@ H271/H272 (a count-3 word list segments any lattice, control 200/200), H273 (no 
   so the two keyed signs before "trop" cannot be letters there (French wants a noun and a verb; fr16 "les W1 W2 trop": choses allaient, pretentions
   etaient); word codes outside Tomokiyo's que/qui/pour, or a misread "les".
 
+## The word-code lead on L05 1-2 (H283-H291)
+
+- A blind pass (H286) reads L04 "... Mais on avoit Come [OTHER] Je croys aussi que les"; L05 opens "[LOOPSTEM1] [CH] trop avancees" (S3). French wants a
+  noun and an imperfect verb between "les" and "trop" (fr16/fr18 fillers: choses allaient, pretentions etaient, batteries etoient; H290), never two
+  letters, so at that place the two signs are not the letters of their pooled cells (LOOPSTEM1 q/s from f.101r; CH e/m, itself f.101r's e and f.188r's
+  m merged -- HYPOTHESES.md row "campaign H289"). Tomokiyo dashes both (H281).
+- In the family glosses the same two classes never take a word (0 of 31 tokens, H288) and are letters inside words (25 of 30, H291): a leaf-level
+  difference -- a different glyph on f.61 (H293 would test it by blind sort, n = 1 each), or the same glyph used as a word code his table does not hold
+  (its que/qui/pour match neither shape, H287). A lead, no value; the safe sentence is "two keyed signs stand where French needs a noun and a verb".
+
 ## Meter variants the verifier chooses between (verify_v8/meter_v8.py bands, key v6 f.61 reading)
 
 - V8 as endorsed: **12 / 58 / 2 / 27** (4PI split, f.61's two 4-over-Pi held unread).
