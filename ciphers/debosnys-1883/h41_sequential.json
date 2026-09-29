@@ -1,0 +1,54 @@
+{
+ "noX": {
+  "MI": {
+   "obs": 3.1361,
+   "lo": 3.0847,
+   "hi": 3.1775,
+   "z": 0.2,
+   "p_ge": 0.4227
+  },
+  "bigram_types_2plus": {
+   "obs": 105,
+   "lo": 73,
+   "hi": 98,
+   "z": 3.08,
+   "p_ge": 0.0014
+  }
+ },
+ "withX": {
+  "MI": {
+   "obs": 2.6452,
+   "lo": 2.605,
+   "hi": 2.7014,
+   "z": -0.32,
+   "p_ge": 0.6268
+  },
+  "bigram_types_2plus": {
+   "obs": 151,
+   "lo": 111,
+   "hi": 139,
+   "z": 3.7,
+   "p_ge": 0.0001
+  }
+ },
+ "design_q0.3_h2_c6_zipf_p0.1_K061": {
+  "MI": {
+   "z_median": 7.35,
+   "share_above_p975": 1.0
+  },
+  "bigram_types_2plus": {
+   "z_median": 4.34,
+   "share_above_p975": 0.98
+  }
+ },
+ "design_q0.2_h2_c3_zipf_p0.2_K032": {
+  "MI": {
+   "z_median": 2.87,
+   "share_above_p975": 0.75
+  },
+  "bigram_types_2plus": {
+   "z_median": 1.65,
+   "share_above_p975": 0.38
+  }
+ }
+}

@@ -50,15 +50,17 @@ def run(q, h, c, zipf, p, n, seed):
         v = sorted(x[k] for x in S); lo, hi = v[int(0.025 * n)], v[int(0.975 * n) - 1]
         band[k] = dict(lo=round(lo, 4), hi=round(hi, 4), inside=lo <= T[k] <= hi, side='in' if lo <= T[k] <= hi else ('lo' if T[k] < lo else 'hi'))
     return K0, band
-out = {}; fits = []
-for q, h, c, zipf, p in itertools.product((0.2, 0.3, 0.4), (2, 3, 4), (3, 6), (False, True), (0.0, 0.10, 0.20)):
-    K0, band = run(q, h, c, zipf, p, 100, hash((q, h, c, zipf, p)) & 0xffff)
-    ins = sum(b['inside'] for b in band.values()); key = f'q{q}:h{h}:c{c}:{"zipf" if zipf else "eq"}:p{p}'
-    out[key] = dict(K0=K0, inside=ins, band=band)
-    print(key, 'K0', K0, f'{ins}/9', ' '.join(f"{k}={b['side']}" for k, b in band.items()), flush=True)
-    if ins == 9: fits.append((q, h, c, zipf, p))
-conf = {}
-for q, h, c, zipf, p in fits:
-    K0, band = run(q, h, c, zipf, p, 200, 99991 + len(conf)); ins = sum(b['inside'] for b in band.values())
-    conf[f'q{q}:h{h}:c{c}:{"zipf" if zipf else "eq"}:p{p}'] = dict(K0=K0, inside=ins, band=band); print('CONFIRM', q, h, c, zipf, p, f'{ins}/9')
-json.dump(dict(target=T, N=N, conditions=out, confirm=conf), open(os.path.join(root, 'h39_homophonic_noX.json' if DROPX else 'h38_homophonic_fit.json'), 'w'), indent=1)
+def main():
+  out = {}; fits = []
+  for q, h, c, zipf, p in itertools.product((0.2, 0.3, 0.4), (2, 3, 4), (3, 6), (False, True), (0.0, 0.10, 0.20)):
+      K0, band = run(q, h, c, zipf, p, 100, hash((q, h, c, zipf, p)) & 0xffff)
+      ins = sum(b['inside'] for b in band.values()); key = f'q{q}:h{h}:c{c}:{"zipf" if zipf else "eq"}:p{p}'
+      out[key] = dict(K0=K0, inside=ins, band=band)
+      print(key, 'K0', K0, f'{ins}/9', ' '.join(f"{k}={b['side']}" for k, b in band.items()), flush=True)
+      if ins == 9: fits.append((q, h, c, zipf, p))
+  conf = {}
+  for q, h, c, zipf, p in fits:
+      K0, band = run(q, h, c, zipf, p, 200, 99991 + len(conf)); ins = sum(b['inside'] for b in band.values())
+      conf[f'q{q}:h{h}:c{c}:{"zipf" if zipf else "eq"}:p{p}'] = dict(K0=K0, inside=ins, band=band); print('CONFIRM', q, h, c, zipf, p, f'{ins}/9')
+  json.dump(dict(target=T, N=N, conditions=out, confirm=conf), open(os.path.join(root, 'h39_homophonic_noX.json' if DROPX else 'h38_homophonic_fit.json'), 'w'), indent=1)
+if __name__ == '__main__': main()

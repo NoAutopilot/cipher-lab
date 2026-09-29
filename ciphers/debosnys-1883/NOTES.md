@@ -997,3 +997,20 @@ pre-split K (17-61) is small: the underlying unit inventory could be letter-scal
 mixed letter/syllable set of about 55-60 with 2. Nothing read; status `open`. Named next steps: H40 (invented-type share
 f 1.0 for the hapax miss, fresh-seed confirmation of the 8/9 conditions) and H41 (is there any sequential structure
 left without X: adjacent-sign mutual information against within-line shuffles, with the fitted design as power).
+
+### H41, sequential structure without X (29 Sept 2026, CPU only)
+
+`scripts/h41_sequential.py` (`h41_sequential.json`): settled lines minus punctuation-class boxes and minus X, 10,000
+within-line shuffles. **Adjacent-sign mutual information sits at the shuffle level** (3.136 bits vs band 3.085-3.178,
+z 0.2; with X kept z -0.3), while the H39 design at a realistic pre-split K (q 0.3, h 2, K0 61, 10 pct noise), cut into
+the target's own line lengths, shows it in 100 of 100 samples (median z 7.35), and the degenerate 8/9 design (K0 32,
+h 2, 20 pct) in 75 of 100 (z 2.87) -- so the test has power and the text is less ordered than either fitted design.
+**But specific bigrams do repeat beyond chance**: 105 bigram types seen twice or more against a shuffle band of 73-98
+(z 3.08, p 0.0014; with X 151 vs 111-139, z 3.7), spread over many pairs with counts of 3-7 (the largest excesses
+WAVE PCT 7 vs 1.9 expected, PCT WAVE 5 vs 1.9, II-DASH PHI 4 vs 0.4, OX-TILDE PCT 4 vs 1.3, BAR-SOLID BAR-SOLID 3 vs
+0.4). Reading: a weak, real sequential order -- a few recurring sign pairs, nothing like the dependence of the fitted
+homophonic French designs; either the homophony is heavier than H39 fitted (more variants flatten MI while leaving
+a few fixed pairs, e.g. digraph-like units written as two signs), or the pairs are composite signs our inventory
+splits in two (BAR-SOLID BAR-SOLID looks like one double-bar sign), or the text is not language with a few
+habitual pairs. Grade S; nothing read; status `open`. H42 checks the recurring pairs on the image for split
+composites before any design reading is built on them.
