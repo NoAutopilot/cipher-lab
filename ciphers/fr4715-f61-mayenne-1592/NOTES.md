@@ -5177,3 +5177,14 @@ cannot be met on a leaf whose key is right (a beam writes fr16's commonest 4-gra
 a negative** (the "control cannot fail differently" shape of rule 3). The binned arm does separate in-sample (0/200 on both leaves); on f.106r it sits
 at its p95 (12/200, a borderline lead only). Its power at f.106r's 427 signs is unknown until the in-sample leaves are subsampled to that N (ARM3-ADJ's
 rule) -- H337. The frequency-key arm is retired for beam scores (kept for the H325/H329 one-to-one counts, where it is a fair control). No call.
+
+## Campaign step H337 (29 Sept 2026, 15:36 UTC by the clock, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- H335's binned arm is powered at f.106r's N; f.106r sits below the in-sample rate (script-only)
+
+`family/h337_beam_power.py` (written and committed before running; result `family/h337_beam_power_result.txt`, `--check` OK): H335's code on 50 random
+35-run subsets (f.106r's run count, 250-413 signs) of each in-sample leaf, 100 binned keys per subset. **f.101r: v7 > binned p95 in 43/50 (0.86);
+f.188r: 50/50 (1.00)** -> pre-stated read-out "binned arm powered at f.106r's N -- H335's 12/200 is a weak lead".
+What it means, without strengthening it: on leaves whose gloss built v7, a subset the size of f.106r's clears the binned p95 86-100% of the time;
+f.106r itself falls just short (-0.9491 vs p95 -0.9477, 12/200 at or above). In-sample is optimistic (the cells were read from those very leaves), and
+f.106r's sign draft is the least agreed of the three (0.85 / 0.76 by rows vs f.101r's and f.188r's), so the f.106r figure is a weak lead in the
+secretary's hand that sits below the in-sample rate -- neither a confirmation of v7 there nor a negative. For the verifier with H325/H328/H330's f.124r
+lead: two held-leaf checks, both at their gate's edge. No call.

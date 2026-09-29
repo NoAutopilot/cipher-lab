@@ -1,0 +1,3 @@
+f101r: 241 runs; subsets of 35 runs (250-413 signs, mean 338); real > binned p95 in 43/50 = 0.86
+f188r: 87 runs; subsets of 35 runs (287-406 signs, mean 356); real > binned p95 in 50/50 = 1.00
+read-out: binned arm powered at f.106r's N (>= 0.8 on both) -- H335's 12/200 is a weak lead
