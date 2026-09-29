@@ -8,7 +8,8 @@ Steps (all choices fixed here, none read from a control's answer):
      the rest spelled in letters; fr19 prose (4 novels) + Fleurs du Mal x3; unit bigram and trigram.
   2. SEEDS independent runs (parallel): bigram anneal (3M iters x 3 restarts, one sign per unit when --injective 1,
      homophones with the channel term when 0), then a trigram anneal (2M, T0 0.5) seeded by the bigram key.
-  3. keep the run with the best trigram score (the model's own criterion; on the 03:26-03:33 runs this order matched
+  3. keep the run with the best trigram score (v2, --seeds 24 --top 3: polish the three best and keep the best final
+     polish score; declared at 03:45 UTC after attempt 1 read 64.7 pct, before attempt 2 ran) (the model's own criterion; on the 03:26-03:33 runs this order matched
      the recovery order on all six seeds).
   4. combined-objective anneal (unit bigram + char 5-gram information gain, 300k iters) and a first-improvement
      polish to convergence (polish.py).
@@ -62,6 +63,7 @@ def main():
     ap.add_argument('--it3', type=int, default=2000000)
     ap.add_argument('--canneal', type=int, default=300000)
     ap.add_argument('--procs', type=int, default=4)
+    ap.add_argument('--top', type=int, default=1, help='polish this many best seeds and keep the best final score (v2: 3)')
     ap.add_argument('--tag', required=True)
     a = ap.parse_args()
     lines = load(a)
@@ -70,10 +72,14 @@ def main():
     with mp.Pool(a.procs) as pool:
         res = pool.map(one_seed, jobs)
     res.sort(key=lambda r: -r[1])
-    seed, sc3, key = res[0]
     _, lm2 = syll.build_lm(S, W, order=2, func='harness', verse=True)
-    _, key = polish.anneal_combined(lines, key, lm2, 1.0, a.canneal, 1.0, 0.05, inj, seed)
-    scp, key = polish.polish(lines, key, lm2, 1.0, 20, inj, seed)
+    finals = []
+    for seed, sc3, key in res[:a.top]:  # v2 (--top 3): polish the best few, keep the best final polish score
+        _, key = polish.anneal_combined(lines, key, lm2, 1.0, a.canneal, 1.0, 0.05, inj, seed)
+        scp, key = polish.polish(lines, key, lm2, 1.0, 20, inj, seed)
+        finals.append((scp, seed, key))
+    finals.sort(key=lambda r: -r[0])
+    scp, seed, key = finals[0]
     out = os.path.join(HERE, f'KEY_{a.tag}.tsv')
     with open(out, 'w') as f:
         f.write('sign\tvalue\n')
@@ -81,7 +87,7 @@ def main():
             f.write(f'{s}\t{key[s]}\n')
     seq, _ = flat(lines)
     info = dict(tag=a.tag, control=a.control, fit=a.fit if a.control else None, real=a.real, injective=a.injective,
-                N=len(seq), K=len(set(seq)), seeds=[[r[0], round(r[1], 1)] for r in res], chosen_seed=seed,
+                N=len(seq), K=len(set(seq)), seeds=[[r[0], round(r[1], 1)] for r in res], chosen_seed=seed, finals=[[f[1], round(f[0], 1)] for f in finals],
                 final_score=round(scp, 1), key=os.path.basename(out))
     print(json.dumps(info), flush=True)
     if a.control:
