@@ -221,3 +221,19 @@ look only at the sign directly above that triangle. Question: does that sign's v
 loop or bowl (like the bottom of a 'b')? Answer yes or no; if the sign above the triangle cannot be told, answer n. No letters are involved. Reply
 inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then S01..S20, nothing else."
 GATE: repeat control >= 17/20, else CONTROL FAIL. Read-out as in the script's docstring.
+
+## H207 (runner 8 session_011Taenrv3JSdk7VjpiBjids, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+H193's bowl question on fr.3982 f.101r's 4TRI and 4STEM (supports MIXED, H203) against the leaf's period gloss letters (passes/f101r_align_v4.tsv, grade C).
+Script `h207_bowl_101r.py`, key `h207_items.tsv` (39 targets: 4TRI c/p 10 a/n 10, 4STEM c/p 9 a/n 10, seed 207), committed with this section. Strips
+cut from a fresh Gallica native of f210 (bytes differ from the 28 Sept fetch, 5,562,778 vs 5,562,607; pixel correlation with the committed band
+crop f101r_L01_s1 0.9996, so the same image re-encoded). Disclosure: the runner looked at three versions of target sheet 01 while fixing the strip
+geometry (rows drift; the first two cuts put the marker under the next row's gloss or clipped the row); the question is H193's, unchanged. In U13
+and U15 two cipher rows cross the column.
+1 Opus vision call, inline reply: "You are a blind shape reader. Use no tool but your image reader on the images named; run no command, write no file.
+Part 1: each item on <h193/sheet_01..03.jpg> (Q01-Q60) is a strip of a cipher row with a red triangle UNDER one sign; look only at the sign directly
+above that triangle. Part 2: each item on <h207/sheet_01..02.jpg> (U01-U39) is a strip of a manuscript page with ordinary handwritten words and a
+row of cipher signs; one column is marked by a red triangle above the strip (pointing down) and one below it (pointing up); look only at the cipher
+sign (not the ordinary words) in that column; if two rows of cipher signs cross the column, or the sign cannot be told, answer n. Question for every
+item: does that sign's vertical stem run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer yes or no,
+or n as above. No letters are involved. Reply inline ONLY with a TSV block 'id<TAB>answer', rows Q01..Q60 then U01..U39, nothing else."
+GATE: repeat control >= 17/20, else CONTROL FAIL. Read-out as in the script's docstring.
