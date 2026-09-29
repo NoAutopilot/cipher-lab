@@ -829,3 +829,7 @@ Images: /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0
 
 Images: /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h428b/references.jpg (R1-R7), /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h428b/items_01.jpg (I01-I12). Prompt: H428's verbatim with "fifteen items ... I01 to I15" changed to
 "twelve items ... I01 to I12".
+
+## H431 (runner 16, 29 Sept 2026) -- blind forced choice, f.61 L01/11 vs the 4-over-hash in f.61's hand (written before the call)
+
+Images: /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h431/references.jpg (R1-R7), /tmp/claude-0/-home-user-cipher-lab/7c53428b-366f-5761-9229-8d94a081d1e0/scratchpad/h431/items_01.jpg (I01-I12). Prompt: H428b's verbatim (twelve items, I01 to I12).
