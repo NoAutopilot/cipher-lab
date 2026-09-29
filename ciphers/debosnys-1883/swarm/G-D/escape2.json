@@ -1,0 +1,39 @@
+{
+ "target_c2_score": 0.75,
+ "ANAGRAM": {
+  "median": 1.335,
+  "min": -2.62,
+  "max": 4.29,
+  "share_le_target": 0.4
+ },
+ "RUNKEY": {
+  "median": -0.68,
+  "min": -5.470000000000001,
+  "max": 5.5600000000000005,
+  "share_le_target": 0.7
+ },
+ "AUTOKEY": {
+  "median": 4.42,
+  "min": 0.7000000000000002,
+  "max": 10.99,
+  "share_le_target": 0.05
+ },
+ "NULLS-0.5": {
+  "median": -0.5450000000000002,
+  "min": -6.6899999999999995,
+  "max": 2.85,
+  "share_le_target": 0.75
+ },
+ "NULLS-0.65": {
+  "median": 0.7050000000000001,
+  "min": -4.930000000000001,
+  "max": 4.55,
+  "share_le_target": 0.55
+ },
+ "FR-HOMO ref": {
+  "median": 8.424999999999999,
+  "min": 3.5300000000000002,
+  "max": 13.4,
+  "share_le_target": 0.0
+ }
+}

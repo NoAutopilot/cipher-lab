@@ -91,16 +91,17 @@ res = {}
 def rep(name, vals, tgt):
     v = sorted(vals); res[name] = dict(median=st.median(v), p5=v[max(0, int(0.05 * len(v)) - 0)], min=v[0], max=v[-1], target=tgt, share_le_target=sum(x <= tgt for x in v) / len(v))
     print(name, res[name], flush=True)
-n = 20
-tp = period.scan(t2, rng, 300)['text']['z']
-for p in (3, 7, 13): rep(f'POLY-SHARED-{p} periodicity z', [period.scan(poly_shared(p), rng, 100)['text']['z'] for _ in range(n)], tp)
-td = dist_scan(t2, rng, 300); res['target_dist_scan'] = td; print('target dist scan', td['d'], td['z'])
-rep('NULL-IID dist-scan z', [dist_scan(dcore.make('NULL-IID', L2, cv, rng), rng)['z'] for _ in range(n)], td['z'])
-for R in (7, 19, 33): rep(f'TRANS-{R} dist-scan z', [dist_scan(trans(R), rng)['z'] for _ in range(n)], td['z'])
-ts = c2score(t2)
-for q in (0.2, 0.35, 0.5): rep(f'NULLS-{q} c2 score', [c2score(nulls(q)) for _ in range(n)], ts)
-rep('WORDMIX c2 score', [c2score(wordmix()) for _ in range(n)], ts)
-tv = vertical_z(t2, rng)
-rep('NULL-IID vertical z', [vertical_z(dcore.make('NULL-IID', L2, cv, rng), rng) for _ in range(n)], tv)
-rep('VERTICAL vertical z', [vertical_z(vertical_ctrl(), rng) for _ in range(n)], tv)
-json.dump(res, open('escape.json', 'w'), indent=1)
+if __name__ == "__main__":
+    n = 20
+    tp = period.scan(t2, rng, 300)['text']['z']
+    for p in (3, 7, 13): rep(f'POLY-SHARED-{p} periodicity z', [period.scan(poly_shared(p), rng, 100)['text']['z'] for _ in range(n)], tp)
+    td = dist_scan(t2, rng, 300); res['target_dist_scan'] = td; print('target dist scan', td['d'], td['z'])
+    rep('NULL-IID dist-scan z', [dist_scan(dcore.make('NULL-IID', L2, cv, rng), rng)['z'] for _ in range(n)], td['z'])
+    for R in (7, 19, 33): rep(f'TRANS-{R} dist-scan z', [dist_scan(trans(R), rng)['z'] for _ in range(n)], td['z'])
+    ts = c2score(t2)
+    for q in (0.2, 0.35, 0.5): rep(f'NULLS-{q} c2 score', [c2score(nulls(q)) for _ in range(n)], ts)
+    rep('WORDMIX c2 score', [c2score(wordmix()) for _ in range(n)], ts)
+    tv = vertical_z(t2, rng)
+    rep('NULL-IID vertical z', [vertical_z(dcore.make('NULL-IID', L2, cv, rng), rng) for _ in range(n)], tv)
+    rep('VERTICAL vertical z', [vertical_z(vertical_ctrl(), rng) for _ in range(n)], tv)
+    json.dump(res, open('escape.json', 'w'), indent=1)

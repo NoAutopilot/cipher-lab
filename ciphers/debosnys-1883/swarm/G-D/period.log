@@ -1,0 +1,6 @@
+c1 {'text': (2, 3.06), 'line': (3, 1.84)}
+c2 {'text': (15, 0.7), 'line': (12, 1.22)}
+NULL-IID {'text': {'z_median': 1.705, 'z_max': 2.57, 'z_min': 0.73}, 'line': {'z_median': 1.3399999999999999, 'z_max': 2.28, 'z_min': 0.1}}
+POLY-3 {'text': {'z_median': 54.845, 'z_max': 69.48, 'z_min': 47.59}, 'line': {'z_median': 1.3050000000000002, 'z_max': 2.12, 'z_min': 0.16}}
+POLY-5 {'text': {'z_median': 56.085, 'z_max': 61.86, 'z_min': 48.23}, 'line': {'z_median': 4.07, 'z_max': 6.21, 'z_min': 2.28}}
+POLY-7 {'text': {'z_median': 56.465, 'z_max': 61.04, 'z_min': 52.38}, 'line': {'z_median': 4.42, 'z_max': 7.5, 'z_min': 3.3}}

@@ -1,0 +1,54 @@
+{
+ "X": {
+  "zero": {
+   "obs": 0.141,
+   "p_le": 0.2465
+  },
+  "disp": {
+   "obs": 3.687,
+   "p_le": 0.3645
+  },
+  "n": 71
+ },
+ "PCT": {
+  "zero": {
+   "obs": 0.071,
+   "p_le": 0.5595
+  },
+  "disp": {
+   "obs": 3.077,
+   "p_le": 0.1425
+  },
+  "n": 14
+ },
+ "PCT-SLASH": {
+  "zero": {
+   "obs": 0.0,
+   "p_le": 0.369
+  },
+  "disp": {
+   "obs": 4.55,
+   "p_le": 0.579
+  },
+  "n": 8
+ },
+ "CIRC-O": {
+  "zero": {
+   "obs": 0.0,
+   "p_le": 0.556
+  },
+  "disp": {
+   "obs": 4.286,
+   "p_le": 0.535
+  },
+  "n": 7
+ },
+ "CC-DASH": "under 5 gaps",
+ "O-SLASH": "under 5 gaps",
+ "power_space_sign": {
+  "zero_p_le_median": 0.0,
+  "disp_p_le_median": 0.0,
+  "zero_obs_median": 0.0335,
+  "disp_obs_median": 1.9849999999999999
+ }
+}

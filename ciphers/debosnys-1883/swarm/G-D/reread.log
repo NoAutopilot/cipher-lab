@@ -1,0 +1,6 @@
+target R34 8.18 line order 0.85
+NULL-IID {'best_readings': ['R40', 'columns', 'R10', 'R58', 'R14', 'R56', 'R31', 'R23', 'R34', 'R60', 'R16', 'R16'], 'median': 5.25, 'min': 3.38, 'max': 6.67, 'share_ge_target': 0.0}
+TRANS-7 {'best_readings': ['R7', 'R21', 'R7', 'R7', 'R7', 'R7', 'R7', 'R7', 'R7', 'R34', 'R7', 'R7'], 'median': 8.754999999999999, 'min': 5.26, 'max': 12.2, 'share_ge_target': 0.5}
+TRANS-19 {'best_readings': ['R19', 'R19', 'R19', 'R19', 'R8', 'R19', 'R19', 'R19', 'R19', 'R19', 'R19', 'R19'], 'median': 7.87, 'min': 5.07, 'max': 12.34, 'share_ge_target': 0.4166666666666667}
+TRANS-33 {'best_readings': ['R33', 'R33', 'R33', 'R33', 'R33', 'R33', 'R33', 'R33', 'R33', 'R33', 'R17', 'R33'], 'median': 7.895, 'min': 5.89, 'max': 14.02, 'share_ge_target': 0.4166666666666667}
+VERTICAL {'best_readings': ['columns', 'R40', 'columns', 'columns', 'columns', 'columns', 'columns', 'columns', 'columns', 'columns', 'columns', 'columns'], 'median': 8.49, 'min': 5.52, 'max': 10.96, 'share_ge_target': 0.6666666666666666}
