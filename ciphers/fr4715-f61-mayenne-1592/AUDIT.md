@@ -842,7 +842,7 @@ for any class whose cell is under test.
 
 ## VERIFY-F61-V10 (29 Sept 2026)
 
-Verifier: PARENT WORKER VERIFY-F61-V10 (account 3, session_01BBihDVXNJZJwuUvhLshzw4), 17:14-17:4x UTC by the container clock. Separate from campaign
+Verifier: PARENT WORKER VERIFY-F61-V10 (account 3, session_01BBihDVXNJZJwuUvhLshzw4), 17:14-17:47 UTC by the container clock. Separate from campaign
 runner 13 (session_01MSoJWwZxNPSjQd4hszNdvQ) and from VERIFY-F61-V5..V9. Brief: `.claude/briefs/runs/2026-09-29-verify-f61-v10.md`. Claims under
 audit: runner 13's held-leaf evidence for key v7, NOTES.md H325-H359 (plus H360/H361/H365 where they bear on claim 4). Set-level audit: no letter on
 f.61 is read, no token graded, no cell or key file touched, no vision call made.
@@ -854,7 +854,7 @@ every letter of a run scored), an exact Viterbi decoder (the runner's is a width
 committed: the reconciled sign drafts `family/passes/<leaf>/ciphertext_draft.tsv` and key v7 through the key's own loader `build_key_v7.load_key_v7`
 (the loaded cells equal the runner's `family/key_v7_cells_h354.tsv`). Independent data check: my run building reproduces the runner's run and sign counts
 on every leaf (f.101r 241/2402, f.188r 87/885, f.124r 227/2105, f.97r 203/1809, f.108v 19/286 and 8/285, f.106r rows 1-18 51/622).
-Reproduction of the runner's own scripts (`--check`): h325, h328, h330 OK (others listed at the foot of this section).
+Reproduction of the runner's own scripts (`--check`, run 17:3x-17:45 UTC): h325, h328, h330, h341, h342, h344, h359, h361 all OK.
 
 **One contamination found before running (control e).** f.124r and f.97r are not in key_period_v7.tsv's leaf column, but VBAR_A's g/t (v5) was chosen
 over v4's s/t partly by a sequence-gain test on a pool that included f.97r and f.124r (H146, 28 Sept; H151's replication 41/50 did not stand). So for
