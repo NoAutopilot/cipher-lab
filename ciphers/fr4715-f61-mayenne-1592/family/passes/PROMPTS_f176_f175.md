@@ -379,3 +379,12 @@ cannot be told. PART B: <B_strips.jpg> shows three strips B1-B3; in each a red t
 from the marked one (counting it) rightwards along the same line, stopping before the first word of ordinary handwriting; also describe the last
 cipher sign you counted in a few words. Reply ONLY with a TSV block 'id<TAB>answer<TAB>note': rows A01..A12 (answer X, Y, neither or n; note empty),
 then B1..B3 (answer = the count as a number; note = the description of the last sign)."
+
+## H410 (runner 15 session_01BDhspZ38TdrrXYSvLPTpjc, 29 Sept 2026) -- WRITTEN BEFORE THE CALL
+Class check of f.61 L10 (script `h410_l10_class_qa.py`, key `h410_items.tsv`). Disclosure: the runner looked at the reference and item sheets for
+marker placement (all markers on their signs; no change). Prompt (one blind Opus call, inline reply): "You are a blind shape reader. Use no tool but
+your image reader on the images named; run no command, write no file. <references.jpg> shows eight reference signs R1-R8 of a 16th-century cipher,
+each under a red triangle (look only at the marked sign in each). <items_01.jpg> and <items_02.jpg> show items I01-I29, each with a red triangle
+pointing down at one sign; look only at that sign. For each item answer the reference (R1 to R8) whose sign it is the same sign as; answer none if it
+matches no reference, n if it cannot be told. Small differences of size and slant within one hand do not make a different sign; an extra stroke or
+loop does. Reply ONLY with a TSV block 'id<TAB>answer', rows I01..I29."
