@@ -1,0 +1,3 @@
+known: col1=EBRA (want VBARA) col5=EBRB (want EBRB) col14=EBRB (want EBRB) col18=VBARA (want VBARA); right 3/4
+gate: CONTROL FAIL; cols 13 and 17 stay flagged L
+sequence: VBAR_A SBS HASH4 SBS EBR_B DBL 4STEM SBS OTHER OTHER DBL DBL EBR_A EBR_B DBL DBL VBAR_A VBAR_A

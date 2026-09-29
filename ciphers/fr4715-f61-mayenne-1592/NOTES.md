@@ -5053,3 +5053,15 @@ Opus reader; reply verbatim `family/passes/h324_forced.tsv`; result `family/h324
   stem) as much as like f.101r's DBL.
 For H317's scoring: PHI's cell (e/r) sits inside DBL's (e/r/u), so whether f.211r's DBL is scored as DBL or as PHI changes only the u; stated here so
 the verifier can choose. Not re-run on the same f.101r tiles (rule 3). Vision calls this session: 10.
+
+## Campaign step H322 (29 Sept 2026, 13:19 UTC by the clock, runner 12 session_012eShPsWwW3quuzzUNV7nW5) -- f.211r's two disagreement columns: forced choice CONTROL FAIL 3/4
+
+Pre-registered (PROMPTS section H322; `family/h322_211r_recon.py`, key `family/h322_items.tsv`, committed with the claim before the call). One fresh
+blind Opus forced choice EBRA / EBRB / VBARA on 6 tiles from the run's 2x strip; reply verbatim `family/passes/h322_forced.tsv`; result
+`family/h322_211r_recon_result.txt` (`--check` OK):
+- Known answers (columns both H315 passes agreed): col 5 EBRB, col 14 EBRB, col 18 VBARA right; **col 1 answered EBRA where both passes read VBAR_A**
+  (pass A had noted "alt EBR_B") -> **3/4, gate CONTROL FAIL**; cols 13 and 17 stay flagged L in `family/passes/f211r_rec/ciphertext_h322.tsv`.
+- Descriptive only: col 13 -> EBRB, col 17 -> VBARA.
+What it shows: on this run the triangle-with-bar (VBAR_A) and the brackets (EBR_A/B) are confusable to model readers at this scale -- col 1 splits
+them as col 17 did; for H317, VBAR_A (g/t) against EBR (i/l, a/l/s) is a real ambiguity at up to three columns (1, 13, 17), which a person's sign
+rows (ASKS 93) would settle. Not re-run (rule 3). Vision calls this session: 11.
