@@ -1,0 +1,4 @@
+f.108v drafts aligned: 318 columns, 180 read alike by both drafts (0.566)
+H342 on agreed signs: runs 8, signs 179; gain(v7) 0.0793 vs binned p95 0.0706 (5/100) -> order signal
+H344 on agreed signs: shuffled target, v7 'order signal' in 0/3 (gain/p95: 0.0307/0.0712 0.0270/0.0380 0.0192/0.0960)
+read-out: f.108v's order signal is carried by the signs both drafts read

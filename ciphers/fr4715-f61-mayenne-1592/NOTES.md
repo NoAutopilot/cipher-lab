@@ -5287,3 +5287,14 @@ underpowered at 51 runs -- f.106r's miss is untestable at this N, not a negative
 anticipated: in-sample power (0.80 / 1.00) overstates what a held leaf shows. **f.106r (the secretary's hand): no order signal and untestable at
 51 runs**; the whole cipher block is now drafted, so no more of this leaf can raise N -- the order check in this hand needs a longer leaf in the
 secretary's hand (f.211r's run is 18 signs) or the person's gloss read (ASKS 99). HYPOTHESES.md's H348/H350 row is corrected in place. No call.
+
+## Campaign step H353 (29 Sept 2026, 16:21-16:22 UTC by the commit stamp and date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- f.108v (f.61's own hand): the order signal holds on the signs both drafts read alike, with a splice caveat (script-only)
+
+`family/h353_108v_agreed.py` (written and pushed before running; `family/h353_108v_agreed_result.txt`, `--check` OK): f.108v's two sign drafts (rec108v,
+recf108vg) aligned by tools/reconcile_passes.py; **180 of 318 columns (0.566) read alike**, kept in order as `passes/recf108vagree/`. **H342: 8 runs,
+179 signs, gain(v7) 0.079 vs binned p95 0.071 (5/100) -> order signal; H344 shuffled targets 0/3** -> pre-stated read-out "f.108v's order signal is
+carried by the signs both drafts read".
+Caveats, carried: (1) dropping the 43% of columns where the drafts differ splices non-adjacent signs into one run, so some 4-grams span a gap -- this
+should blur a real sequence signal rather than make one, but the design did not correct for it; (2) 8 runs, and the statistic's power at 8 runs was not
+measured (H340's beam power at 8 runs was 0.40/0.82 in-sample, a different statistic). So f.108v moves from 'fragile' to 'a thin order signal in
+f.61's own hand, on agreed signs'. Evidence about v7's cells as a set; not a reading. No call.
