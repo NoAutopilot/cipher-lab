@@ -1,0 +1,81 @@
+span	line	pos	class	cell	markup
+S1	L01	1	CROSS	-	-
+S1	L01	2	C6	e	-
+S1	L01	3	C43	a/n	a
+S1	L01	4	INF	u	v
+S1	L01	5	PHI	e/r	e
+S1	L01	6	4TRI	c/p	c
+S2	L03	4	PHI	e/r	e
+S2	L03	5	VBAR_B	s	s
+S2	L03	6	VBAR_A	g/t	t
+S2	L03	7	4TRI	c/p	c
+S2	L03	8	C43	a/n	a
+S2	L03	9	CA	-	-
+S2	L03	10	4TRI	c/p	p
+S2	L03	11	C6	e	-
+S2	L03	12	LOOPBAR	-	(skipped)
+S2	L03	13	C43	a/n	a
+S2	L03	14	SBS	b/o	b
+S2	L03	15	EBR	i/l	l
+S3	L05	1	LOOPSTEM1	q/s	-
+S3	L05	2	CH	e/m	-
+S3	L05	3	VBAR_A	g/t	t
+S3	L05	4	PHI	e/r	r
+S3	L05	5	SBS	b/o	o
+S3	L05	6	4TRI	c/p	p
+S3	L05	7	CA	-	-
+S3	L05	8	CA	-	-
+S3	L05	9	C43	a/n	a
+S3	L05	10	INF	u	v
+S3	L05	11	C43	a/n	a
+S3	L05	12	C6	e	(skipped)
+S3	L05	13	C43	a/n	n
+S3	L05	14	4TRI	c/p	c
+S3	L05	15	PHI	e/r	e
+S3	L05	16	LL	-	-
+S3	L05	17	PHI	e/r	e
+S3	L05	18	VBAR_B	s	s
+S4a	L07	3	ZHOOK	i/x	j
+S4a	L07	4	BETA	m/s	a
+S4a	L07	5	EBR	i/l	l
+S4a	L07	6	C6	e	-
+S4a	L07	7	SBS	b/o	o
+S4a	L07	8	INF	u	u
+S4a	L07	9	VBAR_B	s	s
+S4a	L07	10	CROSS	-	-
+S4a	L07	11	ZHOOK	i/x	i
+S4b	L08	1	PHI	e/r	e
+S4b	L08	2	C43	a/n	a
+S4b	L08	3	C6	e	-
+S4b	L08	4	INF	u	u
+S4b	L08	5	SBS	b/o	b
+S4b	L08	6	PHI	e/r	e
+S4b	L08	7	C43	a/n	a
+S4b	L08	8	INF	u	u
+S4b	L08	9	C6	e	-
+S4b	L08	10	CA	-	-
+S4b	L08	11	4TRI	c/p	p
+S4b	L08	12	PHI	e/r	e
+S4b	L08	13	PHI	e/r	r
+S4b	L08	14	PHI	e/r	e
+S5	L11	1	BETA	m/s	m
+S5	L11	2	PHI	e/r	e
+S5	L11	3	EBR	i/l	l
+S5	L11	4	PHI	e/r	e
+S5	L11	5	C43	a/n	n
+S5	L11	6	VBAR_A	g/t	t
+S5	L11	7	PHI	e/r	e
+S5	L11	8	4STEM	a/n	-
+S5	L11	9	4PI	a/d/n/q	n
+S5	L11	10	SBS	b/o	o
+S5	L11	11	ZHOOK	i/x	i
+S5	L11	12	VBAR_A	g/t	t
+
+CA inside the spans:
+  S2 L03 pos 9: markup - -> none
+  S3 L05 pos 7: markup - -> none
+  S3 L05 pos 8: markup - -> none
+  S4b L08 pos 10: markup - -> none
+CA verdicts: none 4
+controls: C43 letter in cell 9; PHI letter in cell 13
+read-out: CA takes no letter

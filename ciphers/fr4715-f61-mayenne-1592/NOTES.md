@@ -4521,3 +4521,17 @@ lines fully joined: `scripts/f61_positions_L07L08.tsv` (src column: sign / word_
 all six read_call_A lines). Descriptive: CA 7 positioned, 2 next to a clear word; C6 6, 1; PHI 14, C43 9, ZHOOK 3, 0 each; LOOPBAR 3, 1. What it says: a
 reader given no atlas and no key takes f.61's CA for the word 'a' both at a run edge (L07 1) and inside a run (L08 10) -- the same letterform finding as
 H256 from a different task. No reading; nothing merged. No call.
+
+## Campaign step H259 (29 Sept 2026, 10:04 UTC by the clock, runner 10 session_0148wt8Aokh6aZEdJsXzYiZX) -- CA takes no letter in Tomokiyo's spans (script-only)
+
+`family/h259_ca_span.py` (read-outs in the docstring, fixed before running; result `family/h259_ca_span_result.txt`, `--check` OK): the known-span
+alignment (scripts/f61crib.align, the F61-CAL DP) of each of Tomokiyo's five spans under key v6's f.61 reading, printed position by position with his
+markup character. **Four CA fall inside the spans and every one pairs with his dash: L03 9 (est ca[-]p able), L05 7 and 8 (trop [--] avancees), L08 10
+(beau [-][-] pere, the first dash being C6).** The words around them are complete without an a -- every a of capable, avancees, beau is supplied by a C43
+(a/n) -- so CA is not a clear letter left among the signs; three of the four sit at a word boundary and one inside a word. Controls: C43 pairs with a letter
+of its cell 9/9, PHI 13/13. Pre-stated read-out: **"CA takes no letter"**. With H256 (the letterform of the clear a) and H63 (the cipher hand): f.61's CA
+is a null drawn as the letter a, which is what Tomokiyo's markup already treats it as (H44); no cell changes, the skeleton keeps CA as nulls, and the
+10 CA stay in the unread-or-null band. Two descriptive notes for the verifier: (1) C6 pairs with his dash at all six in-span positions (L01 2, L03 11,
+L05 12 skipped, L07 6, L08 3, L08 9) although the pooled key carries C6 = e from three glossed tokens on other leaves (H232) -- a leaf-level conflict of
+the rule-4 kind, already held at unread by V7's meter, logged here so the count is on record; (2) the DP places a valueless sign against a dash or skips
+it at equal score, so the CA positions above are fixed only where both neighbours carry letters (all four do). No call.
