@@ -5206,3 +5206,9 @@ real-order v7 score exceeds the mean shuffled-order v7 score on every leaf (f.10
 f.188r -0.839 vs about -0.97), but shuffling also re-cuts the runs, so this is not yet a clean statistic -- H342 would pre-state it.
 Lesson (the ARM-C1 shape again): a within-frequency-bin key permutation is not an order control; a beam gate needs the shuffled-target arm from the
 first run. No call.
+
+## Campaign step H343 (29 Sept 2026, 15:39 UTC by date -u, runner 13 session_01MSoJWwZxNPSjQd4hszNdvQ) -- the beam-check lesson, written down (notes only)
+
+CAMPAIGN.md's INSTRUMENTS paragraph gains the beam-check lesson (a within-bin key permutation is not an order control; the frequency-only key is not a
+fair beam control); `family/V9_PAGE.md` gains one line for the verifier: the H335/H338/H340 beam passes are not evidence for v7, f.97r fragile only, the
+f.124r gloss-count lead unaffected, and the model gloss readers retired for the secretary's hand. No call.
