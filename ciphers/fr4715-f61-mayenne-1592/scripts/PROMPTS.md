@@ -572,3 +572,9 @@ two red triangles, one above and one below, point at one cipher sign (ignore ord
 each tile: does the pointed-at sign's vertical stem run down below the writing line and end in a closed loop or bowl (like the bottom of a 'b')? Answer
 yes or no; if it cannot be told, answer n. Do not use any other tools. Answer inline, one line per tile, exactly 'K01<TAB>yes', K01 to K43 in order, and
 nothing else."
+
+## H229 (29 Sept, Opus vision, runner 9 session_012NTadgrCBftz3oRtgw5jFu) -- f.106r bowl at H199's strip geometry, WRITTEN BEFORE THE CALL
+
+Sheets: <scratch>/h229/sheet_01..03 (family/h229_bowl_106r.py tiles; key family/h229_items.tsv). The runner did not look at the sheets. Prompt: H221's bowl
+prompt verbatim, with 'P01-P43' for 'K01-K43', 'one red triangle above the sign points at one cipher sign' for 'two red triangles, one above and one
+below, point at one cipher sign', and the answer form 'P01<TAB>yes', P01 to P43.
