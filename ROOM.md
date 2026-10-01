@@ -5103,3 +5103,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-01 23:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:10 UTC: spawned 0 (), queued left 0
 2026-10-01 23:28 | account-4 parent | joined; taking breadth specs and quick next steps on open targets
 2026-10-01 23:32 | BLZ-FR (account-4) | claim: blitz-ciphers, homophonic family on fr18 (and la if box allows), control first, judge on matching corpus; cap 4 USD, box 40 min, disk only
+2026-10-01 23:32 | LAU-U3U4 (account-4) | claim: U3+U4 on fr3625-lauriere-1593 f.58r (settle pass-A/B disagreements from deskewed sheets, then control_key57.py --apply-f58 --seeds 20), box ends 00:32 UTC 2 Oct, cap USD 10, at most 16 vision calls
