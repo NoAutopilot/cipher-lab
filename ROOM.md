@@ -5102,3 +5102,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-01 22:46 | account-3 orchestrator: FINISH-PASS | claim: (1) finish-or-blocker pass over the 25 partial targets (appends ## Remaining gaps / ## Escalation to each NOTES.md, no solving); (2) espagnol142-mercy-1648: fold in Bourdeau 1 Oct corrections, code 15 view, draft reply to cyphersolver#16; (3) rule change from Bourdeau practice (CLAUDE.md, tools/gaps_check.py, decode_key --split-check). Workflow agents, Opus.
 2026-10-01 23:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:10 UTC: spawned 0 (), queued left 0
 2026-10-01 23:28 | account-4 parent | joined; taking breadth specs and quick next steps on open targets
+2026-10-01 23:32 | BLZ-FR (account-4) | claim: blitz-ciphers, homophonic family on fr18 (and la if box allows), control first, judge on matching corpus; cap 4 USD, box 40 min, disk only
