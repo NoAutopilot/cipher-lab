@@ -420,3 +420,68 @@ listing-only access (CLAUDE.md Access playbook).
 
 LOCAL-QUEUE.tsv row L12: `done 26 Sept 2026`. Status stays `open`: no key or sibling found for this letter
 by any route tried to date.
+
+## Web and blog check (WEBCHECK-oldenbarnevelt-brederode-1605, 1 Oct 2026)
+
+The open-web and blog comment-thread step required by `.claude/briefs/check-solved.md` (CHECK-SOLVED-WEB, 28 Sept
+2026), run 1 Oct 2026 23:35-23:50 UTC by WEBCHECK-oldenbarnevelt-brederode-1605 (account-4, brief
+`.claude/briefs/runs/2026-10-01-account4-webcheck.md`). Every query and every hit opened is listed; "no hit" means the
+query returned nothing about this letter, a search result, never a novelty verdict (CLAUDE.md rule 10).
+
+**Result: no decipherment or plaintext of this item located by these queries on 1 Oct 2026.** Status word stays `open`.
+
+### (a) Plain web searches (search engine, 10 queries)
+
+| # | Query | Result for THIS letter |
+|---|---|---|
+| 1 | `Brederode Oldenbarnevelt 1605 Heidelberg cijferschrift cipher letter` (sender + recipient + date) | no hit: Wikipedia pages on Reinoud van Brederode (a different Brederode, Oldenbarnevelt's son-in-law), NA toegangen 3.01.14 and 3.20.41, zandvoortvroeger.nl "Verzoekschrift aan de Heer van Brederode. Anno 1605" (a Zandvoort petition, unrelated) |
+| 2 | `"Holland 2613" OR "Bescheiden betreffende het beleid van Johan van Oldenbarnevelt" cijferschrift sleutel no. 92 1605` (shelfmark + edition title + cijferschrift) | no hit: Huygens edition landing pages, den Tex on DBNL (already read in full, section 6 above), NA 3.01.14 -- nothing names no. 92 or a key |
+| 3 | `"Uyt Heydelberg, desen 21en february 1605" OR "van den 671 van den 611 ende 612"` (distinctive clear-text phrase + first code run, both quoted) | no hit for either phrase; results are Wikipedia 1605/Heidelberg pages and US route numbers |
+| 4 | `"Brederode aan Oldenbarnevelt" 21 februari 1605 cipher nomenclator unsolved` (folder's descriptive title) | no hit: generic unsolved-cipher lists, Bourdeau's cyphersolver index (opened, below), Wikipedia Brederode genealogy; nothing on this letter |
+| 5 | `Veenendaal "Oldenbarnevelt" Brederode 1605 cijferschrift "sleutel" ontcijferd OR opgelost OR gedecodeerd` (Dutch, editor's name, "solved" vocabulary) | no hit: NA inventories, genealogy pages, Gemeentearchief Veenendaal (the town, not the editor) |
+| 6 | `cryptiana Tomokiyo Oldenbarnevelt OR Brederode Dutch cipher Staten-Generaal 1605 nomenclator` | no hit for this letter: Cipherbrain nomenclator overview post (opened, below), Bourdeau issues #11 and #13 (other targets), de Leeuw et al. 2024 (read in full by L12 above, negative) |
+| 7 | `Oldenbarnevelt Brederode cipher 1605 solves Claude OR GPT OR ChatGPT decipherment` (model-solve announcements, check-solved.md) | no hit for this letter: the only "solves" hits are Schneier on Security (Sept 2026) and vals.ai on Claude Fable 5.1 reading Urquhart's "Cyphral Distich" (c.1653, Scottish, a different item); Schneier thread opened, below |
+| 8 | site search `scienceblogs.de` (Cipherbrain): `Oldenbarnevelt OR Brederode cipher 1605` | no hit for this letter; the engine returned Cipherbrain's general 16th-17th-century posts (Ferdinand III letters, Biermann/Louvois 1690, Thirty Years' War 1644, Spinelli 2017) -- the plausible ones opened, below |
+| 9 | site search `cryptiana.blogspot.com` + `cryptiana.web.fc2.com`: `Oldenbarnevelt OR Brederode cipher Dutch 1605` | no links returned at all |
+| 10 | site search `ciphermysteries.com`: `Oldenbarnevelt OR Brederode cipher Dutch 1605` | no hit for this letter; the engine returned van Heeck, Voynich, La Buse, Bellaso pages, none Dutch 1605 |
+
+### (b) The three blogs' own search engines (each blog's native search, both names)
+
+| Blog | URL | Result |
+|---|---|---|
+| Cipherbrain | `scienceblogs.de/klausis-krypto-kolumne/?s=Oldenbarnevelt` | "Wir konnten leider keine Beiträge finden" -- 0 posts |
+| Cipherbrain | `scienceblogs.de/klausis-krypto-kolumne/?s=Brederode` | 0 posts |
+| Cipher Mysteries | `ciphermysteries.com/?s=Oldenbarnevelt` | "Nothing Found" -- 0 posts |
+| Cipher Mysteries | `ciphermysteries.com/?s=Brederode` | 0 posts |
+| Cryptiana blog | `cryptiana.blogspot.com/search?q=Oldenbarnevelt` | "No posts matching the query" -- 0 posts |
+| Cryptiana blog | `cryptiana.blogspot.com/search?q=Brederode` | 0 posts |
+| Tomokiyo's cryptiana.web.fc2.com pages | on-disk snapshot `sources/cryptiana/` grepped case-insensitively for `oldenbarnevelt` and `brederode` (0 requests) | 0 files match |
+
+### (c) Hits opened and comment threads read
+
+| URL | What it is | What it says about THIS letter |
+|---|---|---|
+| scienceblogs.de/klausis-krypto-kolumne/norbert-biermann-solves-encrypted-letters-from-the-17th-century/ | Louvois to Lauzun, May-June 1690, nomenclator, solved by Biermann | nothing; no comments rendered |
+| scienceblogs.de/.../2018/10/15/unsolved-cryptograms-from-the-thirty-years-war-1/ | Vienna Hofarchiv letters 1644 (Pentz, Christian IV, Tattenbach), 21 comments, Thomas Ernst solves II-V | nothing on Oldenbarnevelt, Brederode, Heidelberg 1605 or the States General |
+| scienceblogs.de/.../2016/08/13/nomenclator-encryptions-centuries-old-but-still-hard-to-solve/ | nomenclator overview (Perwich, Manchester, Catinat, a 19th-c. Van Gelder Dutch nomenclator), 4 comments | nothing on this letter; the only Dutch item is early 19th century |
+| scienceblogs.de/.../2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/ | the Spinelli (Beinecke) letter whose thread produced the N0 that created this rule, 17 comments | nothing on this letter |
+| schneier.com/blog/archives/2026/09/claude-fable-solves-a-historical-cipher.html | Claude Fable 5.1 reading Urquhart's Cyphral Distich (c.1652-56), 13 comments on Glasgow/NLS copies | nothing on Oldenbarnevelt, Brederode, 1605 or Veenendaal |
+| dbourdeau.github.io/cyphersolver/index.html | Bourdeau's working-notes index (Latest, By outcome, Solved 1429-1644, Read 1691, Recent findings Sept 2026) | no line names Oldenbarnevelt, Brederode, Heidelberg 1605 or Veenendaal (the repository itself was grepped 25 Sept 2026, Key route section above) |
+
+Not opened: Wikipedia genealogy pages, NA inventories (3.01.14 and 1.01.02 already read as full EAD XML in the Key hunt
+section above), zandvoortvroeger.nl (a 1605 petition to the lord of Brederode at Zandvoort, a different Brederode and a
+different document class), vals.ai (duplicate of the Schneier item).
+
+### Requests per host
+
+Search engine: 10 queries. `scienceblogs.de`: 6 page fetches. `ciphermysteries.com`: 2. `cryptiana.blogspot.com`: 2.
+`schneier.com`: 1. `dbourdeau.github.io`: 1. `cryptiana.web.fc2.com`: 0 (snapshot grepped). One request at a time, no
+403/429/challenge page met, no login.
+
+### Intake gate re-run
+
+```
+$ python3 tools/intake_gate_check.py oldenbarnevelt-brederode-1605
+oldenbarnevelt-brederode-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
