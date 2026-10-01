@@ -308,3 +308,91 @@ glyph-inventory key (a distinct-shape catalogue built from the images, analogous
 inventory) before any family_run.py-style test could run on them at all; that key-building pass is not this job.
 
 **Requests**: scienceblogs.de 7 (all this stage; 0 to any other host).
+
+## Web and blog check (WEBCHECK-blitz-ciphers, 1 Oct 2026)
+
+Run 1 Oct 2026, 23:35-23:55 UTC (clock read), by WEBCHECK-blitz-ciphers (account-4), per check-solved.md's
+"Required step: Open web and blog comment threads" (CHECK-SOLVED-WEB, 28 Sept 2026). The target has no sender,
+recipient or shelfmark (an unprovenanced object first published on a blog), so the sender/recipient and shelfmark
+slots of step (a) were filled with the nearest equivalents: the named publisher and provenance story, and the
+cipher's name plus solved/decipherment terms.
+
+**(a) Plain web searches (search engine, 9 queries in all, this and the model-solve step):**
+
+| # | Query | Hits about this item |
+|---|---|---|
+| 1 | `"Blitz Ciphers" Nick Pelling East London cellar 2011` (publisher + provenance + date) | Cipherbrain 2017 post 41; ciphermysteries.com static page, 2011 announcement, 2014 "five more pages"; cipherfoundation.org page; voynich.fandom.com wiki; wikibin.org (deleted Wikipedia article) |
+| 2 | `"Blitz Ciphers" solved OR decrypted OR decipherment OR plaintext` (name + solved terms, the shelfmark slot) | ciphermysteries.com static page and 2011 post; dbourdeau.github.io/cyphersolver index (already grepped 25 Sept 2026, lists Blitz as unresolved); Wikipedia "List of ciphertexts"; rest irrelevant (arXiv Z340 papers, patents) |
+| 3 | `"BedaDeBCMmazMCTfr" OR "CAV~MrMmEewmDFT" OR "rBe.qREmdp"` (three ciphertext groups from page 7, the distinctive-phrase slot) | only ciphermysteries.com/2014/10/24/blitz-cipher-partial-transcription and the Cipherbrain 2017 post (the two places the transcription is printed); nothing else on the web quotes these groups |
+| 4 | `Blitz ciphers encrypted book pages found in bombed East London cellar` (the folder's own descriptive title) | the same Cipherbrain, Cipher Mysteries and Cipher Foundation pages; voynich.fandom.com, everybodywiki.com mirrors; ranker.com listicle ("might just be jokes or gibberish") |
+| 5 | `"Blitz Ciphers" solves Claude OR GPT OR ChatGPT OR "AI"` (model-solve announcements) | no hit names the Blitz Ciphers. The hits are other ciphers: eu.36kr.com "Claude AI Solves 370-Year-Old Unsolved Ciphertext" (opened: Urquhart's Cyphral Distich/Octastich 1653, no mention of Blitz, London or Pelling); GPT-6 Astra on a 1808 Marmont letter and a WWI German radio message; "No, ChatGPT didn't solve Kryptos 4" gist |
+| 6 | `HMAIED "Blitz" cipher déchiffré OR déchiffrement article` (follow-up on a comment claim, see below) | only the ciphermysteries.com static page comment itself; no article by that name found |
+
+**(b) Site searches of the three blogs:**
+
+| Blog | Query | Result |
+|---|---|---|
+| Cipherbrain (scienceblogs.de/klausis-krypto-kolumne) | `Blitz Ciphers` site-restricted | 2017/03/14 post 41 (on disk, `sources/schmeh/posts/41-blitz.txt`); 2014/10/22 "Fünf neue Seiten eines verschlüsselten Buchs aufgetaucht"; the "List of Encrypted Books" and "encrypted books" category pages (listings only) |
+| Cryptiana blog (cryptiana.blogspot.com) and Tomokiyo's cryptiana.web.fc2.com | on-disk snapshot `sources/cryptiana/` grepped first (20 blog posts, 318 web pages): the single case-insensitive "blitz" match is the surname Koblitz in `web/cryptologia.htm`, zero Blitz-cipher mentions; then `Blitz ciphers` site-restricted to both hosts | no results at all. Tomokiyo has not written on this item |
+| Cipher Mysteries (ciphermysteries.com) | `Blitz Ciphers` site-restricted | static page `/other-ciphers/blitz-ciphers`; 2011/12/22 "Announcing 'The Blitz Ciphers'"; 2014/10/15 "Five more pages ... released"; 2014/10/24 "Blitz Cipher, partial transcription"; 2017/03/29 Spitalfields Mathematical Society post (a provenance theory, mentions Blitz); the other hits are unrelated posts |
+
+**(c) Every plausible hit opened and its comment thread read** (page fetched once with curl to the scratchpad,
+comments counted from `id="comment-N"` anchors and `datetime` stamps, then read as text):
+
+| Page | Comments | Latest | What it says about this item |
+|---|---|---|---|
+| ciphermysteries.com/other-ciphers/blitz-ciphers (static page) | 110 | 5 Jun 2026 | Post: "As far as I know, the Blitz Ciphers have not yet been physically examined or analysed by specialist historians"; no solution offered. Thread: authenticity debate, geometry reconstructions (Geoff Bath, Jun 2016), n-gram counts (Peter, Nov 2017), a palaeographer's hoax verdict (CalligrapherStreet92, 1 May 2023: "These documents are indeed hoaxes ... created sometime 2000-2010"), and the decipherment-shaped claims quoted below |
+| ciphermysteries.com/2011/12/22/announcing-the-blitz-ciphers | 50 | 4 Nov 2021 | Post: "Tony Gaffney tried Latin and couldn't find any kind of match"; no reading. Thread: hoax-vs-genuine, Masonic/architectural theories, Theban/Ogham guesses; no comment claims a decipherment or gives plaintext |
+| ciphermysteries.com/2014/10/15/five-pages-blitz-ciphers-released | 12 | 17 Nov 2016 | Post: Pelling's hunch "a homophonic cipher with possibly a few nulls, in broadly the same vein as the Copiale Cipher"; no reading. Thread: no decipherment claim |
+| ciphermysteries.com/2014/10/24/blitz-cipher-partial-transcription | 13 | 6 Dec 2014 | Post: the page 7/8 transcription this folder's spec uses; Pelling: "I don't really know if this is expected behaviour. Some of the symbols could well be nulls". Thread: transcription-method discussion; no decipherment claim |
+| ciphermysteries.com/2017/03/29/spitalfields-mathematical-society-... | 3 | 10 Nov 2017 | A provenance hypothesis (Spitalfields Mathematical Society); no reading of the text in post or thread |
+| scienceblogs.de .../2017/03/14/the-top-50-unsolved-encrypted-messages-41-the-blitz-ciphers/ (re-fetched fresh) | 32 | 12 Jan 2020 | Same 32 comments as the 25 Sept 2026 on-disk copy read by bBLZ; nothing added since. Post: "To my knowledge, the Blitz Ciphers have never been solved." One comment (line 124 of the text) says the glyphs "are very well known symbols of medieval alchemy ... and can easily be decyphered. Such a decoding would show whether the text is meaningful or not" -- a proposal, no decoding given |
+| scienceblogs.de .../2014/10/22/fuenf-neue-seiten-eines-verschluesselten-buchs-aufgetaucht/ | 10 | 26 Dec 2017 | Post: "Mit den drei Seiten gelang es niemandem, die Verschlüsselung zu lösen." Thread (SantaColoma, helmut, Dave, Michel, Schmeh, Emil, Haenk, Anna, cortes, peter): fake-vs-genuine and one astrological-content guess; no decipherment claim |
+| cipherfoundation.org/older-ciphers/blitz-ciphers/ | none (static) | site last active Oct 2015 | Repeats the Cipher Mysteries description and the provisional transcription key; no solved status, no plaintext |
+| wikibin.org/articles/blitz-ciphers.html (deleted Wikipedia article, deleted 25 Jan 2015) | none | -- | Describes the 3 pages; the deletion discussion calls it "quite clearly a hoax" with sources only on "fringe/hobbyist blogs which all refer back to ciphermysteries.com"; no plaintext |
+| voynich.fandom.com/wiki/Blitz_ciphers and /The_Blitz_ciphers | -- | -- | not read: HTTP 402 to the fetch tool, HTTP 403 to curl (one attempt each, not retried, good-citizen rule); the search snippet says only that the ciphers "have never been solved" |
+| en.everybodywiki.com/Blitz_ciphers | -- | -- | not read: HTTP 403 to curl, one attempt, not retried; a Wikipedia-mirror stub by its snippet |
+
+**Decipherment-shaped claims found, quoted verbatim (all in the comment thread of the ciphermysteries.com static page):**
+
+1. "boyfriend , Champollion,,. :-)", 4 Dec 2015: "Nick. Cipher Blitz. He you never deciphered. Substitution cipher. And
+   it is written in the old Czech language. Where is the date of jesus while Emperor Charles IV. It is written where he
+   is buried. He says about Caple St. Vitus. Which is at the Prague Castle. Text rabbi wrote. Text reads from both
+   sides." Followed 11 Dec 2015: "Cipher Blitz, used old Czech language. Complete instructions. Key. It is written in the
+   image ( picture) # 5. ... The code is the same as the Codex Gigas. ... Rabbi name = Avigdor Kara." Earlier (26 Nov
+   2015): "I translated page. You're labeled as 8 ( image 8). The author says there is one. ( name). How many years is
+   it. And the rabbi." No line-by-line plaintext, no key table, no mapping from any transcribed group.
+2. Rick A. Roberts, 27 Nov 2015 (seven comments): a numerological "life path" reading of page 5 ("The first line
+   deciphers to, ' gEYlWC ', or life path # 3 ... ' YCAlDhXADMjAE ' , and adds up to the sum of 48. 4+8=12 and 1+2=3")
+   and "Page # 1 has the deciphered letters, 'CM' ... Could this be an abbreviation for 'CHIEF MINISTER'?" -- a
+   letter-to-number sum, not a plaintext.
+3. HMAIED, 17 Oct 2016: "j'ai pu déchiffrer une grande partie du document, et prochainement je vais écrire un article
+   sur ce sujet." No plaintext given in the thread; query 6 above found no such article anywhere.
+4. Raven Nightshadow, 12 Nov 2016: "The text is not a code each symbol is a word and it describes the methods of high
+   alchemy. #2 describes transmutation of living tissue. #3 is the table of elements." No symbol-to-word table given.
+5. NobodySpecial, 9 Jul 2024: "Decoded (further extended): THE EARTH AT HEAVEN HAS DESCENDED INTO BONDAGE UNDERSTANDING
+   TO A PERSPECTIVE OF LIFE AND TRUTH SHELTERING INNER MYSTERIES OF THE COSMOS BENEATH THE LIGHT". One 25-word English
+   sentence for a page of 581 letters; no page or line named, no key, no earlier NobodySpecial comment on the page
+   despite "further extended"; nobody (including Pelling) replied to it.
+
+**Assessment (this worker's, flagged for the orchestrator):** none of the five is a decipherment of the item in
+check-solved.md's sense. None gives a key or a mapping that regenerates any transcribed group, none names which of the
+eight pages it reads, and they contradict each other (Old Czech / numerology / unnamed / alchemical word-signs /
+English). Pelling's own page and both Cipherbrain posts, read in full with their threads, hold that the text is unread.
+Verdict: **no decipherment or plaintext of this item located by these queries on 1 Oct 2026** (a search result, never a
+novelty verdict, rule 10). The status word stays `open`. Standing instruction for any later reading: a candidate
+plaintext that resembles claim 1 (Old Czech, Charles IV, Avigdor Kara) or claim 5 (the English sentence above) is
+checked against those comments first and audited as N0/N1 against them, not called new.
+
+Requests per host: search engine 9 queries; ciphermysteries.com 6 (5 curl, 1 fetch-tool); scienceblogs.de 2;
+cipherfoundation.org 1; voynich.fandom.com 2 (402, 403; stopped); eu.36kr.com 1; wikibin.org 1; en.everybodywiki.com 1
+(403; stopped); cryptiana.blogspot.com / cryptiana.web.fc2.com 0 (snapshot on disk grepped). All >= 1.5 s apart, one at
+a time per host. No subagents. No transcription, no decoding, no other folder touched.
+
+Intake gate re-run after this section:
+
+```
+$ python3 tools/intake_gate_check.py blitz-ciphers
+blitz-ciphers: open (line 3) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
