@@ -60,6 +60,9 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
 .movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
 .pile.new{border-style:dashed}
+#focus{margin-top:20px;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+.ftitle{font-family:var(--f-display);font-weight:600;font-size:1.3rem;margin:0}
+.fcap{font-size:.72rem;color:var(--muted);text-align:center;max-width:var(--sz)}
 .near{font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
 .near button{font-size:.78rem;padding:1px 7px;font-family:var(--f-mono)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
@@ -98,6 +101,7 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
     <button type="button" id="undo" disabled>Undo last move</button>
     <span class="save" id="save">Connecting to storage…</span>
   </div>
+  <section id="focus" hidden><h2 class="ftitle">Check these first</h2><p class="sub" id="focusNote"></p><div class="tiles" id="focusTiles"></div></section>
   <div id="list"></div>
   <p class="hint" id="foot"></p>
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
@@ -376,6 +380,18 @@ document.getElementById('size').oninput = e => document.documentElement.style.se
 document.getElementById('show').onchange = render;
 document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' tiles, first piled by our readers’ labels. ' +
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
+(function(){ const F = DATA.focus || []; if (!F.length) return;
+  const box = document.getElementById('focus'); box.hidden = false;
+  document.getElementById('focusNote').textContent = DATA.focusNote || '';
+  const wrap = document.getElementById('focusTiles');
+  F.forEach(f => { const it = itemBySid[f.sid]; if (!it) return;
+    const d = document.createElement('div'); d.style.display = 'grid'; d.style.gap = '2px';
+    const b = document.createElement('button'); b.type = 'button'; b.className = 't'; b.title = f.sid + ': ' + f.q;
+    const im = document.createElement('img'); im.alt = f.sid; im.src = 'data:image/png;base64,' + it.img; b.append(im);
+    b.onclick = () => showCtx(f.sid, moves[f.sid] || homeOf[f.sid]);
+    const c = document.createElement('span'); c.className = 'fcap'; c.textContent = f.q;
+    d.append(b, c); wrap.append(d); });
+})();
 render();
 
 (async () => {

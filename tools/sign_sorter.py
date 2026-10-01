@@ -114,8 +114,13 @@ def main(argv=None):
                     'Settle the alphabet: which piles are one sign, which tiles sit in the wrong pile, and which '
                     'marks are not letters at all.')
     ap.add_argument('--data-out')
+    ap.add_argument('--focus', help='TSV sid<TAB>question: tiles shown first in a "Check these first" box')
+    ap.add_argument('--focus-note', default='')
     a = ap.parse_args(argv)
     data = build(a.signs, a.labels, a.pages, a.marks)
+    if a.focus:
+        data['focus'] = [{'sid': r[0], 'q': r[1]} for r in (l.rstrip('\n').split('\t') for l in open(a.focus)) if len(r) >= 2]
+        data['focusNote'] = a.focus_note
     if a.data_out:
         json.dump(data, open(a.data_out, 'w'))
     html = render(data, a.title, a.lede)
