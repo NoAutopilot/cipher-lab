@@ -1,4 +1,5 @@
-open
+found-solved
+Read in full by GitHub user setsunaatto with the writer's own key sheet, Tomokiyo's Nevers key no. 57 (BnF fr. 3995 ff. 102-103, ark btv1b525085665): github.com/dbourdeau/cyphersolver/issues/13 (opened 29 Sept 2026, closed), corroborated by D. Bourdeau in merged PR 15 (30 Sept 2026) and on dbourdeau.github.io/cyphersolver/champagne1590.html, which prints the decipherment; located by WEBCHECK-fr3625-lauriere-1593 on 1 Oct 2026 -- any later reading here is N0.
 
 **Hold lifted, LANE N4 scGOM2, 24 Sept 2026:** the genuine seconde partie is Google Books `H2eV4wAmIr0C` (title
 page confirmed, distinct from the two Gallica arks which are both Première partie); full-text searched for
@@ -1038,3 +1039,55 @@ folder's own named next step (U3/U4) needs no new material at all.
 - Run U3 (settle the 91 disagreements) then U4 (`key57/control_key57.py --apply-f58`, 20 seeds) on the 49 sheets already on disk -- the brief's own next step. M.
 - Run `tools/interlinear_align.py` on fol.58r's interlinear gloss as a C-grade crib, independent of key57, per NOTES's own suggestion. M.
 - A higher-resolution/adaptive re-crop of fr.3985 f.58r's dense middle section (flagged as this session's own weaker link, cheaper than a fresh key-table pass). M.
+
+## Web and blog check (WEBCHECK-fr3625-lauriere-1593, 1 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-01-account4-webcheck.md` (account-4 parent); `date -u` at start 23:35 UTC, 1 Oct 2026.
+Required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads", CHECK-SOLVED-WEB, 28 Sept 2026).
+Before this pass `python3 tools/intake_gate_check.py fr3625-lauriere-1593` exited 1 for the missing web/blog check only.
+Quotes below are as returned by the fetch tool's page rendering (verbatim as rendered, not re-typed from a screenshot).
+
+### (a) Plain web searches (WebSearch, 9 queries; 0 blocks)
+
+| # | Query | Result |
+|---|---|---|
+| 1 | `Laurière Nevers Châlons 9 juillet 1593 lettre chiffre` | **HIT**: github.com/dbourdeau/cyphersolver/issues/13, "Laurière (La Verrière) to Nevers, Châlons, 9 July 1593 (BnF fr. 3625 no. 55, catalogue 30): read in full with Tomokiyo no. 57 (fr. 3995 f. 102–103)". Rest: BnF archivesetmanuscrits records (cc500759 = fr. 3625, and fr. 3623/3624/3631/3617/3362/4719/3974-3995), catalogue only. |
+| 2 | `BnF "français 3625" OR "fr. 3625" Nevers chiffre 1593` | same Issue 13; cc500759; Wikipedia noise (BnF Museum, Nevers). |
+| 3 | `"que le Roy soit encores" OR "la volonté du pape" Laurière Nevers 1593` (the two C-grade fragments on file) | same Issue 13 (its run 3 reads "s'il veult atandre la volonté du [Pape]"); cc500976 (fr. 3646), cc504266, cc500848; Calvin letters on Gallica, Wikisource Sixte-Quint, lesportesdutemps.com 1588 campaign -- none about this letter. |
+| 4 | `"Laurière" to Nevers 1593 cipher letter Champagne unsolved` (folder title) | same Issue 13; dbourdeau.github.io/cyphersolver/index.html ("Laurière's 1593 letter deciphered in full with his own key sheet, Nevers key no. 57, found by setsunaatto"); github.com/dbourdeau/cyphersolver/pull/15 (setsunaatto, blind test of key no. 57 on no. 10); PR 4 (Lorraine to Vaudemont 1592, other target); this repository's own PR 36 (SO-LAURIERE-LEADS); dspace.ut.ee Nevers 1592 digit-cipher paper (a different letter, King to Nevers 1592). |
+| 5 | `site:scienceblogs.de klausis-krypto-kolumne Nevers 1593 Chiffre Laurière` | no post about this letter; generic Cipherbrain pages (2016 Catinat and Archives nationales letters, 2019 16th-c. crypto book) -- none names Nevers 1593/Laurière. |
+| 6 | `site:cryptiana.blogspot.com Nevers Laurière 1593` | only cryptiana.blogspot.com/2018 (forum year page) plus Wikipedia noise; no post on this letter. |
+| 7 | `site:ciphermysteries.com Nevers 1593 Laurière cipher` | Colorni 2019, Vigenère/House of Nevers, La Buse posts -- none about this letter. |
+| 8 | `Laurière Nevers 1593 cipher solved OR solves Claude OR GPT OR ChatGPT` (model-solve announcements) | github.com/setsunaatto/cyphersolver (fork, "My attempts to read unsolved ciphers from history"); dbourdeau index page as in 4; Schneier/vals.ai/36kr/dev.to items are about the Cyphral Distich 1653, not this letter; HN GPT-6 WWI item unrelated. |
+| 9 | `cryptiana.web.fc2.com Nevers "Verriere" OR "Lauriere" 1593 key 57 fr.3995` (Tomokiyo's pages) | Issue 13 again; no Tomokiyo page naming fr. 3625 no. 55 surfaced; laverriere-nevers.fr is a modern business, noise. |
+
+### (b) Blog site searches
+
+- **Cipherbrain** `scienceblogs.de/klausis-krypto-kolumne/?s=Nevers` (1 request): "Wir konnten leider keine Beiträge finden, die zu Ihrer Anfrage passen." -- zero posts.
+- **Cryptiana blog** `cryptiana.blogspot.com/search?q=Nevers` (1 request): seven posts (Early French Figure Ciphers 3 Jul 2024; La Tour/Nevers 1589-91, 2 Feb 2025; Nevers 1571, 1 Sep 2024; fr.4712 ca.1592, 28 Mar 2020; French Figure Ciphers 1580s, 9 Sep 2020; Guise ca.1581, 20 Dec 2018; Le Tellier/Colbert 1650, 9 Feb 2021); none, post or comments, names 1593, Laurière, La Verrière, Châlons, fr. 3625 or key no. 57.
+- **Tomokiyo's pages** (`sources/cryptiana/` on disk, 0 requests): `grep -rli "lauri\|3625"` hits nevers.htm (only "Mr de St Laurin" in the no. 50 key description, and the no. 57 "La Verriere" key entry already cited by SO-LAURIERE-LEADS), napoleon2.htm (General Lauriston), README/IMAGE-QUEUE (this repository's own rows). No Tomokiyo page carries a reading of fr. 3625 no. 55.
+- **Cipher Mysteries** `ciphermysteries.com/?s=Nevers` (1 request): "Apologies, but no results were found for the requested archive." -- zero posts.
+
+### (c) Hits opened and their comment threads read
+
+1. **github.com/dbourdeau/cyphersolver/issues/13** -- author setsunaatto, opened 29 Sept 2026, status closed, **0 comments**. Body, verbatim as rendered: "the key sheet endorsed 'Mons^r de La Verriere … Chartres 1593 fevrier' (fr. 3995 f. 102–103, Tomokiyo's no. 57) reads every cipher run on f. 66r as it stands"; "Every cipher run on the leaf (recto and verso checked; the verso is the address only). Each sign below resolves; nothing is filled by guess." Plaintext given per run: run 1 "vous estes necessaire pres du Roy afin qu'il ne retarde d'ung jour son assemblée, ce que ses ennemys luy donne[r]ont tout l'empeschemen[t] qu'ilz pourront pour luy faire prandre autre dessein"; run 2 "[le duc de Lorraine] montre desir de traiter, mais necessaire avant que [le Roy] soit catholique"; run 2b "quoy fait une election"; run 3 "s'il veult atandre la volonté du [Pape], non aussitost qu'il sera catholique, qui la traitera"; run 3b "[le Cardinal de Gondy] pour [le grand duc de Toscane]". Notes two letters missing in the cipher itself ("run 1 has 159 (_donné_) + o n t with no r, and _empescheman_ is followed directly by 39 (_quі_) with no t"). Closing: "Prior work on this letter: D. Bourdeau (`targets/champagne1590/`) and NoAutopilot/cipher-lab (`ciphers/fr3625-lauriere-1593/`)." Sources cited there: fr. 3995 ff. 102-103 ark btv1b525085665; f. 66r = canvas 143 of btv1b52511322v (matches this folder).
+2. **github.com/dbourdeau/cyphersolver/pull/15** -- setsunaatto, merged 30 Sept 2026, "champagne1590: blind test of key no. 57 on no. 10 (f. 10r), plus the other eight glossed runs": blind runs 157/196 (80%), the other eight runs 311/354 (88%). Comment thread: dbourdeau, 30 Sept 2026, "Our own transcription of runs L1–L3...agrees with your blind transcription on every figure group except one"; "On f. 103r I found 18 of your 21 new word numbers exactly as you give them"; and on the key alphabet: "The sheet has μ under C and the c-form under H, and our line in key57.txt had them the wrong way round" (setsunaatto: "I read μ under C and the c-form under H, and no. 55 needs it that way round"). This is an independent corroboration of the key identification by the repository owner, and a concrete alphabet correction that may bear on this folder's own key57/ table (NX-LAU3's 4/12 anchor miss) -- flagged in ROOM.md for LAU-U3U4, not applied here.
+3. **dbourdeau.github.io/cyphersolver/index.html** (1 request): entry "Champagne news-letters to the duc de Nevers, 1590–91", updated 29 Sept 2026: "Laurière's 1593 letter deciphered in full with his own key sheet, Nevers key no. 57, found by setsunaatto"; links the champagne1590.html write-up.
+4. **dbourdeau.github.io/cyphersolver/champagne1590.html** (1 request): "setsunaatto (GitHub issue 13) identified the writer's own key sheet: Tomokiyo's Nevers key no. 57, BnF fr. 3995 ff. 102–103, endorsed 'Monsr de La Verriere'"; the page prints the decipherment of no. 55 (first line as in Issue 13, run 1). Its open-items list (no. 24, no. 25, a name in no. 60, code numbers 12/16/17/19/39/89/99, no. 78) concerns other letters of the pool, not no. 55.
+5. **github.com/NoAutopilot/cipher-lab/pull/36** -- this repository's own SO-LAURIERE-LEADS pull request (27 Sept 2026), not an outside source; not counted as a hit.
+
+Neither this repository's CONTRIBUTIONS.md nor outreach/bourdeau-issues.md names Issue 13, and "setsunaatto" appears nowhere in this repository before this section: the reading is an outside party's, posted 29 Sept 2026, after this folder's NX-LAU3 (26 Sept) and LAU-F58/F58B (27 Sept) work on the same candidate key.
+
+### Verdict
+
+A decipherment of this very item (BnF fr. 3625 no. 55, every cipher run, with the period key) is public on the open web since 29 Sept 2026 (Issue 13) and corroborated by the repository owner (PR 15, index and write-up pages, 29-30 Sept 2026). Per check-solved.md this is exactly like one in print: status word `found-solved`; **any later reading by this project is N0** (rule 10). Who did not know (README F-classes): this project (NX-LAU3 had key no. 57 as a candidate and scored it 4/12 against Bourdeau's anchors; the PR 15 alphabet swap is the likeliest reason) and D. Bourdeau's own catalogue until 29 Sept 2026. Credit: setsunaatto (github.com/setsunaatto/cyphersolver; Issue 13, PR 15) for identifying and applying the key; S. Tomokiyo for cataloguing key no. 57; D. Bourdeau (cyphersolver, CC BY 4.0 text) for the write-up and corroboration. Not searched here: print (the edition checks above stand). The deep-work claim running in this folder (LAU-U3U4, key57 on fr.3985 f.58r) is a different letter's control and is left to its own worker; whether it continues is the parent's call.
+
+Request counts: github.com 3 (issue 13 twice, PR 15), dbourdeau.github.io 2, scienceblogs.de 1, cryptiana.blogspot.com 1, ciphermysteries.com 1, WebSearch 9; no 403/429/challenge seen on any host.
+
+### Intake gate after this pass
+
+```
+$ python3 tools/intake_gate_check.py fr3625-lauriere-1593
+fr3625-lauriere-1593: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
