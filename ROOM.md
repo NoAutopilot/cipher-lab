@@ -5099,3 +5099,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-01 20:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:09 UTC: spawned 0 (), queued left 0
 2026-10-01 21:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 21:09 UTC: spawned 0 (), queued left 0
 2026-10-01 22:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 22:10 UTC: spawned 0 (), queued left 0
+2026-10-01 22:46 | account-3 orchestrator: FINISH-PASS | claim: (1) finish-or-blocker pass over the 25 partial targets (appends ## Remaining gaps / ## Escalation to each NOTES.md, no solving); (2) espagnol142-mercy-1648: fold in Bourdeau 1 Oct corrections, code 15 view, draft reply to cyphersolver#16; (3) rule change from Bourdeau practice (CLAUDE.md, tools/gaps_check.py, decode_key --split-check). Workflow agents, Opus.
