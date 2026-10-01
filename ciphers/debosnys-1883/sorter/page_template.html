@@ -103,7 +103,7 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
     <div class="row"><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <input id="ctxNew" type="text" placeholder="or new pile name" aria-label="New pile name"><button type="button" id="ctxNewB">New pile</button>
-      <button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
+      <button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
     <p class="hint" id="ctxMsg" aria-live="polite"></p>
   </div></div>
 </div>
@@ -317,6 +317,9 @@ document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
 document.getElementById('ctxNext').onclick = () => ctxStep(1);
 document.getElementById('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
 document.getElementById('ctxAside').onclick = () => ctxMove('ASIDE');
+document.getElementById('ctxBad').onclick = () => {   // tile box cut in the wrong place: parked in one pile for recutting
+  if (!newPiles['BAD-CUT']){ newPiles['BAD-CUT'] = {family: 'Bad cuts (to recut)', from: ctxPid}; saveNew('BAD-CUT'); }
+  ctxMove('BAD-CUT'); };
 document.getElementById('ctxNewB').onclick = () => {
   const inp = document.getElementById('ctxNew');
   const name = inp.value.trim().toUpperCase().replace(/\s+/g, '-').replace(/[^A-Z0-9_.\-]/g, '');
