@@ -74,6 +74,17 @@ LANG_CORPORA = {
     "fr18": [DATA / "fr18" / "memoiresdemonsie01torc.txt.gz", DATA / "fr18" / "memoiresdemonsie02torc.txt.gz",
              DATA / "fr18" / "mmoiresduducde01invill.txt.gz", DATA / "fr18" / "mmoiresduducde02vill.txt.gz",
              DATA / "fr18" / "mmoiresetlettre01margoog.txt.gz", DATA / "fr18" / "lagazettedefran01unkngoog.txt.gz"],
+    # fr1810 (1 Oct 2026, account-4 worker BER-FRCORP): Napoleonic-era official/military French, 1800-1811 --
+    # Correspondance de Napoleon Ier tomes XI, XVI, XX (1805-06, 1807-08, 1809-10; 1858-70 edition), Correspondance
+    # du marechal Davout tomes II and III cut before 1812 (Mazade 1885), Lettres inedites de Napoleon Ier tome I
+    # (an VIII-1809, Lecestre 1897) -- for berthier-napoleon-1812 (22 Dec 1812), which fr18 (1680-1790) and fr19
+    # (19th-c. novels) do not era- or register-match. Nothing from Dec 1812 (tome XXIV and Davout's 1812-13
+    # letters are deliberately excluded as the target's own month). See tools/data/fr1810/README.md for the
+    # leave-one-file-out false-negative rate and per-fold spread at N=325 beside fr18's -- read it before
+    # trusting a FAIL/PASS. "fr" stays the default; a spec opts in with "judge": {"language": "fr1810", ...}.
+    "fr1810": [DATA / "fr1810" / f for f in ("correspondancede11napouoft.txt.gz", "correspondancede16napouoft.txt.gz",
+               "correspondancede20napouoft.txt.gz", "correspondanced01davogoog.txt.gz",
+               "correspondanced00davogoog.txt.gz", "lettresindites01napo.txt.gz")],
     "es": [DATA / "es17" / "donquijote00cervuoft.txt.gz", DATA / "es17" / "vidadelbuscn01quevuoft.txt.gz"],
     "da19": [DATA / "da19" / "historisktidsskriftdk1s6.txt"],  # 1845 Historisk Tidsskrift, 1.04M letters (B2 bCPH, 25 Sept 2026); 19th-c. register
     "es17c": [DATA / "es17c" / "memorialhistri17realuoft.txt.gz", DATA / "es17c" / "memorialhistri18realuoft.txt.gz",

@@ -582,3 +582,46 @@ Intake gate re-run after this section:
 berthier-napoleon-1812: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## BER-FRCORP (1 Oct 2026, account-4)
+
+Ran BER-HOMO's named next step: built `tools/data/fr1810`, an era- and register-matched French judge corpus for this
+target, the way `tools/data/pt18` was built (V6-PTCORP). No solver family was run on the target (the homophonic
+control is BELOW GATE at N=325/K=207 regardless of corpus, HYPOTHESES.md; the corpus is for the next instrument, a
+two-part/blockwise code family, SYSTEM.md "Tools wanted").
+
+**Corpus.** Six Internet Archive `_djvu.txt` volumes of three works, 1800-1811 official/military French:
+Correspondance de Napoléon Ier tomes XI, XVI, XX (1805-10; 1858-70 edition), Correspondance du maréchal Davout
+tomes II and III cut before 1812 (Mazade 1885), Lettres inédites de Napoléon Ier tome I (an VIII-1809, Lecestre
+1897). 4,820,645 letters after fold(), largest file 21.1 pct, cross-corpus word coverage 0.923-0.962 per file.
+Deliberately excluded: tomes XXIII-XXIV (Napoleon's 1812 letters, including the 30 Dec 1812 reply to Berthier read
+in the BBER section), Davout's 1812-13 letters, Chuquet 1912, anything from Dec 1812 -- the target's own month and
+correspondents would make the judge circular. Every cut line is in `tools/data/fr1810/MANIFEST.tsv`; the README
+records the sources, the trimming and the two checks. 18 archive.org requests, one at a time, >=1.5 s apart.
+
+**Reliability (rule 3, blended AND per-fold, both corpora at the target's own N=325; `tools/data/fr1810/
+holdout_check.py`, full log `holdout_2026-10-01.log`):**
+
+| corpus | blended real-prose false-negative rate | per-fold spread (6 folds) |
+|---|---|---|
+| fr1810 (1800-1811, this job) | 234/1200 = 19.5% | 2.0 / 4.0 / 13.5 / 15.5 / 23.0 / 59.0% (29.5x) |
+| fr18 (1680-1790, the spec's current judge corpus) | 244/1200 = 20.3% | 0.0 / 0.5 / 3.0 / 3.0 / 20.0 / 95.5% |
+
+The blended rates are the same within noise; the shapes differ (fr18's rate is almost entirely its one newspaper
+fold, the 1786 Gazette, at 95.5 pct; fr1810's worst fold is Correspondance tome XX at 59 pct, the file with the
+lowest word coverage, four other folds sit at 13.5-23 pct). By rule 3's es17c/EN-FOLDS paragraphs a FAIL/PASS
+against either corpus at N about 325 is of unknown reliability on the blended number alone; fr1810 is the matched
+corpus this folder asked for, not a more reliable gate than fr18 at this N, and a verdict against it is reported
+with the per-fold spread beside it, a FAIL close to the gate as "judge cannot decide".
+
+**Wiring.** `LANG_CORPORA["fr1810"]` in `tools/judge_plaintext.py` (own key, the pt18/fr18 pattern; `fr` still
+fr16); `specs/berthier-napoleon-1812.json` gets a `judge_note` naming the corpus, its judge block unchanged so the
+recorded cheap_test_done and HYPOTHESES.md results stay reproducible; row in `tools/data/README.md`; offline test
+`tools/tests/test_judge_plaintext_lang_fr1810.py` on a Davout letter of 23-24 Jan 1812 from the cut part of tome
+III.
+
+**Next step (one line).** Build the two-part/blockwise code family named by BER-HOMO and SYSTEM.md "Tools wanted",
+with its matched control at N=325/K=207 drawn from fr1810, before any further judge run on this target; for the
+corpus itself, a homogeneity split inside tome XX (by addressee or year) to find why that fold is the outlier.
+
+Status stays `open`. No "solved", "new", "first", "unpublished" anywhere in this section.
