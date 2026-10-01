@@ -51,10 +51,12 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .tiles{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
 .t{width:var(--sz);height:var(--sz);background:var(--tile);border:2px solid transparent;border-radius:3px;padding:0;display:grid;place-items:center;cursor:pointer}
 .t img{max-width:100%;max-height:100%;image-rendering:auto}
-.t.out{border-color:var(--bad);opacity:.55}
-.t.sel{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
-.t.in{position:relative}
-.t.in::after{content:"";position:absolute;top:2px;right:2px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.t{position:relative}
+.t.out{border:2px dashed var(--ink)}
+.t.out img{opacity:.35}
+.t.sel{border:4px solid var(--ink);opacity:1}
+.t .badge{position:absolute;top:-6px;right:-6px;min-width:18px;height:18px;border-radius:9px;padding:0 3px;
+  font:700 12px/18px var(--f-body);text-align:center;background:var(--ink);color:var(--bg)}
 .movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
 .movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
 .pile.new{border-style:dashed}
@@ -69,7 +71,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
   <h1>Debosnys Sign Sorter</h1>
   <p class="lede">Every sign from the four published cryptogram images, cut out and piled by the label our readers gave it. Your job is to settle the alphabet: which piles are one sign, which tiles were put in the wrong pile, and which marks are not letters at all.</p>
   <div class="how">
-    <div><b>Tile in the wrong pile</b>Click tiles to select them (orange outline), then "Move to" another pile, or "New pile" to start one, e.g. X with two bars. Moved tiles show a dot.</div>
+    <div><b>Tile in the wrong pile</b>Click tiles to select them (thick frame and ✓). Then choose "Move to" a pile, "New pile" (e.g. X-2BARS), or "Set aside" (×). Selecting alone saves nothing. Tiles moved in from another pile show ↪.</div>
     <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small pen wobbles do not make a new sign; a mark repeated on several tiles (a bar, a dot) usually does.</div>
     <div><b>Not a letter</b>Dots, stains, flourishes and joins: press "Not a letter". If a pile looks right, press "All one sign".</div>
   </div>
@@ -150,6 +152,8 @@ function tileEl(sid, pid, cls){
   b.setAttribute('aria-pressed', s.has(sid));
   const im = document.createElement('img'); im.alt = sid; im.src = 'data:image/png;base64,' + it.img; im.loading = 'lazy';
   b.append(im);
+  const mark = s.has(sid) ? '\u2713' : cls.includes('out') ? '\u00d7' : cls.includes('in') ? '\u21aa' : '';
+  if (mark){ const g = document.createElement('span'); g.className = 'badge'; g.textContent = mark; g.setAttribute('aria-hidden', 'true'); b.append(g); }
   b.onclick = () => { if (s.has(sid)) s.delete(sid); else s.add(sid); render(); };
   return b;
 }
@@ -170,7 +174,7 @@ function pileEl(p, piles){
   el.append(tiles);
   if (chosen.size){
     const mb = document.createElement('div'); mb.className = 'movebar';
-    const lab = document.createElement('span'); lab.textContent = chosen.size + ' selected';
+    const lab = document.createElement('strong'); lab.textContent = chosen.size + (chosen.size === 1 ? ' tile' : ' tiles') + ' selected (\u2713). Not saved until you choose:';
     const dest = document.createElement('select'); dest.id = 'd_' + key(p.id); dest.setAttribute('aria-label', 'Move selected tiles to');
     const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Move to…'; dest.append(o0);
     piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
@@ -215,23 +219,27 @@ function moveSel(from, to){
   chosen.clear(); render();
 }
 
-let pending = Promise.resolve();
+let open_ = 0, failed = false;
+const inflight = {};   // doc path -> writes not yet confirmed; snapshots for these are ignored
 const saveEl = () => document.getElementById('save');
 function queue(fn){
   const el = saveEl();
   if (!col){ el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; persistLocal(); return; }
-  el.textContent = 'Saving…'; el.className = 'save';
-  pending = pending.then(fn).then(() => { el.textContent = 'All changes saved'; el.className = 'save'; },
-    e => { el.textContent = 'Not saved: ' + (e && e.message || 'storage refused the write') + '. Your choices stay on screen; try again.'; el.className = 'save err'; });
+  open_++; el.textContent = 'Saving ' + open_ + '…'; el.className = 'save';
+  Promise.resolve().then(fn).then(() => { if (--open_ === 0 && !failed){ el.textContent = 'All changes saved'; el.className = 'save'; } else if (open_) el.textContent = 'Saving ' + open_ + '…'; },
+    e => { open_--; failed = true; el.textContent = 'Not saved: ' + (e && e.message || 'storage refused the write') + '. Your choices stay on screen; reload and redo the last step.'; el.className = 'save err'; });
 }
+function track(path, fn){ inflight[path] = (inflight[path] || 0) + 1;
+  queue(() => fn().finally(() => { inflight[path]--; })); }
 function save(id){ const s = st(id);
   const body = {pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: new Date().toISOString()};
-  queue(() => col.doc(key(id)).set(body)); }
+  track('p/' + id, () => col.doc(key(id)).set(body)); }
 function saveMove(sid){
-  if (moves[sid]) queue(() => mcol.doc(key(sid)).set({sid, from: homeOf[sid], to: moves[sid], updated: new Date().toISOString()}));
-  else queue(() => mcol.doc(key(sid)).delete());
+  const to = moves[sid];
+  if (to) track('m/' + sid, () => mcol.doc(key(sid)).set({sid, from: homeOf[sid], to, updated: new Date().toISOString()}));
+  else track('m/' + sid, () => mcol.doc(key(sid)).delete());
 }
-function saveNew(id){ queue(() => ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: new Date().toISOString()})); }
+function saveNew(id){ track('n/' + id, () => ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: new Date().toISOString()})); }
 function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles})); } catch(e){} }
 
 document.getElementById('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
@@ -250,14 +258,14 @@ render();
   col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles');
   el.textContent = 'Connected. Choices save as you go.';
   const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error'); el.className = 'save err'; };
-  col.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile) return;
+  col.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile || inflight['p/' + d.pile]) return;
       if (ch.type === 'removed') { delete state[d.pile]; return; }
       state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
     render(); }, fail);
-  mcol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.sid || !itemBySid[d.sid]) return;
+  mcol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.sid || !itemBySid[d.sid] || inflight['m/' + d.sid]) return;
       if (ch.type === 'removed') delete moves[d.sid]; else moves[d.sid] = d.to; });
     render(); }, fail);
-  ncol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.id) return;
+  ncol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.id || inflight['n/' + d.id]) return;
       if (ch.type === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
     render(); }, fail);
 })();
