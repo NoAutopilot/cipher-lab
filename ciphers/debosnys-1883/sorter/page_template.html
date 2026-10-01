@@ -52,6 +52,12 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .t{width:var(--sz);height:var(--sz);background:var(--tile);border:2px solid transparent;border-radius:3px;padding:0;display:grid;place-items:center;cursor:pointer}
 .t img{max-width:100%;max-height:100%;image-rendering:auto}
 .t.out{border-color:var(--bad);opacity:.55}
+.t.sel{border-color:var(--accent);box-shadow:0 0 0 2px var(--accent-soft)}
+.t.in{position:relative}
+.t.in::after{content:"";position:absolute;top:2px;right:2px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+.movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
+.movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
+.pile.new{border-style:dashed}
 .acts{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
 .acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
 .acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
@@ -63,8 +69,8 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
   <h1>Debosnys Sign Sorter</h1>
   <p class="lede">Every sign from the four published cryptogram images, cut out and piled by the label our readers gave it. Your job is to settle the alphabet: which piles are one sign, which tiles were put in the wrong pile, and which marks are not letters at all.</p>
   <div class="how">
-    <div><b>Tile in the wrong pile</b>Click it. It turns red and is set aside. Click again to put it back.</div>
-    <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small differences in a pen stroke do not make a new sign.</div>
+    <div><b>Tile in the wrong pile</b>Click tiles to select them (orange outline), then "Move to" another pile, or "New pile" to start one, e.g. X with two bars. Moved tiles show a dot.</div>
+    <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small pen wobbles do not make a new sign; a mark repeated on several tiles (a bar, a dot) usually does.</div>
     <div><b>Not a letter</b>Dots, stains, flourishes and joins: press "Not a letter". If a pile looks right, press "All one sign".</div>
   </div>
   <div class="bar">
@@ -78,31 +84,57 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 </div>
 <script>
 const DATA = __DATA__;
-const piles = DATA.piles;
-const byId = Object.fromEntries(piles.map(p => [p.id, p]));
-const famTotals = {};
-piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + p.items.length; });
-const fams = Object.keys(famTotals).sort((a, b) => famTotals[b] - famTotals[a]);
-const state = {};           // pile id -> {verdict, merge_into, outliers:[], note}
-let db = null, col = null, local = false;
+const basePiles = DATA.piles;
+const itemBySid = {}, homeOf = {};
+basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it.sid] = p.id; }));
+const baseIds = new Set(basePiles.map(p => p.id));
+const state = {};        // pile id -> {verdict, merge_into, outliers:[], note}
+const moves = {};        // sid -> destination pile id ('ASIDE' = set aside, no pile yet)
+const newPiles = {};     // new pile id -> {family, from}
+const selected = {};     // pile id -> Set(sid)   (not saved)
+let col = null, mcol = null, ncol = null;
 const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');
 const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
+const sel = id => selected[id] || (selected[id] = new Set());
 
-function statusOf(id){ const s = state[id]; if(!s) return null;
-  if (s.merge_into) return 'merge'; return s.verdict; }
+function allPiles(){
+  const out = basePiles.map(p => ({id: p.id, family: p.family, isNew: false}));
+  Object.keys(newPiles).sort().forEach(id => out.push({id, family: newPiles[id].family, isNew: true}));
+  return out;
+}
+function membersOf(id){
+  const m = [];
+  Object.keys(itemBySid).forEach(sid => {
+    if (!moves[sid] && state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid)) return; // legacy set-aside
+    const dest = moves[sid] || homeOf[sid]; if (dest === id) m.push(sid); });
+  return m;
+}
+function asideOf(id){ // set aside from this home pile: legacy outliers or moves to ASIDE
+  const s = new Set((state[id] && state[id].outliers) || []);
+  Object.keys(moves).forEach(sid => { if (moves[sid] === 'ASIDE' && homeOf[sid] === id) s.add(sid); });
+  return [...s].filter(sid => !moves[sid] || moves[sid] === 'ASIDE');
+}
+function statusOf(id){ const s = state[id]; if(!s) return null; if (s.merge_into) return 'merge'; return s.verdict; }
 
 function render(){
   const show = document.getElementById('show').value;
+  const piles = allPiles();
+  const famTotals = {};
+  piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + membersOf(p.id).length; });
+  const fams = Object.keys(famTotals).sort((a, b) => famTotals[b] - famTotals[a]);
   const list = document.getElementById('list'); list.textContent = '';
   for (const f of fams){
-    const ps = piles.filter(p => p.family === f).sort((a, b) => b.items.length - a.items.length)
+    const ps = piles.filter(p => p.family === f)
+      .map(p => ({...p, members: membersOf(p.id)}))
+      .filter(p => p.members.length || asideOf(p.id).length || p.isNew)
+      .sort((a, b) => (a.isNew - b.isNew) || b.members.length - a.members.length)
       .filter(p => show === 'all' || (show === 'todo' ? !statusOf(p.id) : !!statusOf(p.id)));
     if (!ps.length) continue;
     const sec = document.createElement('section'); sec.className = 'fam';
     const h = document.createElement('h2'); h.textContent = 'Family ' + f; sec.append(h);
     const sub = document.createElement('p'); sub.className = 'sub';
     sub.textContent = ps.length + ' pile' + (ps.length > 1 ? 's' : '') + ' shown, ' + famTotals[f] + ' tiles in this family'; sec.append(sub);
-    ps.forEach(p => sec.append(pileEl(p)));
+    ps.forEach(p => sec.append(pileEl(p, piles)));
     list.append(sec);
   }
   const done = piles.filter(p => statusOf(p.id)).length;
@@ -110,79 +142,123 @@ function render(){
   document.getElementById('fill').style.width = (100 * done / piles.length) + '%';
 }
 
-function pileEl(p){
-  const s = st(p.id), status = statusOf(p.id);
-  const el = document.createElement('div'); el.className = 'pile' + (status ? ' ' + status : '');
+function tileEl(sid, pid, cls){
+  const s = sel(pid), it = itemBySid[sid];
+  const b = document.createElement('button'); b.type = 'button';
+  b.className = 't' + cls + (s.has(sid) ? ' sel' : '');
+  b.title = sid + (cls.includes('in') ? ' (moved here from ' + homeOf[sid] + ')' : '') + (cls.includes('out') ? ' (set aside)' : '');
+  b.setAttribute('aria-pressed', s.has(sid));
+  const im = document.createElement('img'); im.alt = sid; im.src = 'data:image/png;base64,' + it.img; im.loading = 'lazy';
+  b.append(im);
+  b.onclick = () => { if (s.has(sid)) s.delete(sid); else s.add(sid); render(); };
+  return b;
+}
+
+function pileEl(p, piles){
+  const s = st(p.id), status = statusOf(p.id), aside = asideOf(p.id), chosen = sel(p.id);
+  const el = document.createElement('div'); el.className = 'pile' + (status ? ' ' + status : '') + (p.isNew ? ' new' : '');
   const ph = document.createElement('div'); ph.className = 'ph';
   const nm = document.createElement('span'); nm.className = 'pid'; nm.textContent = p.id;
   const ct = document.createElement('span'); ct.className = 'cnt';
-  ct.textContent = p.items.length + ' tiles' + (s.outliers.length ? ', ' + s.outliers.length + ' set aside' : '');
+  ct.textContent = p.members.length + ' tiles' + (aside.length ? ', ' + aside.length + ' set aside' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
   chip.textContent = status === 'same' ? 'one sign' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
   ph.append(nm, ct, chip); el.append(ph);
   const tiles = document.createElement('div'); tiles.className = 'tiles';
-  p.items.forEach(it => {
-    const b = document.createElement('button'); b.type = 'button';
-    b.className = 't' + (s.outliers.includes(it.sid) ? ' out' : '');
-    b.title = it.sid + (s.outliers.includes(it.sid) ? ' (set aside)' : '');
-    b.setAttribute('aria-pressed', s.outliers.includes(it.sid));
-    const im = document.createElement('img'); im.alt = it.sid; im.src = 'data:image/png;base64,' + it.img; im.loading = 'lazy';
-    b.append(im);
-    b.onclick = () => { const i = s.outliers.indexOf(it.sid);
-      if (i >= 0) s.outliers.splice(i, 1); else s.outliers.push(it.sid);
-      save(p.id); render(); };
-    tiles.append(b);
-  });
+  p.members.forEach(sid => tiles.append(tileEl(sid, p.id, homeOf[sid] !== p.id ? ' in' : '')));
+  aside.forEach(sid => tiles.append(tileEl(sid, p.id, ' out')));
   el.append(tiles);
+  if (chosen.size){
+    const mb = document.createElement('div'); mb.className = 'movebar';
+    const lab = document.createElement('span'); lab.textContent = chosen.size + ' selected';
+    const dest = document.createElement('select'); dest.id = 'd_' + key(p.id); dest.setAttribute('aria-label', 'Move selected tiles to');
+    const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Move to…'; dest.append(o0);
+    piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
+      .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); dest.append(o); });
+    dest.onchange = () => { if (dest.value) moveSel(p.id, dest.value); };
+    const nn = document.createElement('input'); nn.type = 'text'; nn.id = 'nn_' + key(p.id); nn.placeholder = 'New pile name, e.g. X-2BARS';
+    const bNew = btn('New pile', false, () => {
+      const name = nn.value.trim().toUpperCase().replace(/\s+/g, '-').replace(/[^A-Z0-9_.\-]/g, '');
+      if (!name){ nn.focus(); nn.placeholder = 'Type a name first'; return; }
+      if (!newPiles[name] && !baseIds.has(name)){ newPiles[name] = {family: p.family, from: p.id}; saveNew(name); }
+      moveSel(p.id, name);
+    });
+    const bAside = btn('Set aside', false, () => moveSel(p.id, 'ASIDE'));
+    const bClear = btn('Clear selection', false, () => { chosen.clear(); render(); });
+    mb.append(lab, dest, nn, bNew, bAside, bClear);
+    el.append(mb);
+  }
   const acts = document.createElement('div'); acts.className = 'acts';
   const bSame = btn('All one sign', s.verdict === 'same' && !s.merge_into, () => { s.verdict = s.verdict === 'same' ? null : 'same'; s.merge_into = null; save(p.id); render(); });
   const bMark = btn('Not a letter', s.verdict === 'mark', () => { s.verdict = s.verdict === 'mark' ? null : 'mark'; s.merge_into = null; save(p.id); render(); });
-  const sel = document.createElement('select'); sel.id = 'm_' + key(p.id); sel.setAttribute('aria-label', 'Same sign as another pile');
-  const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Same sign as…'; sel.append(o0);
-  const others = piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id));
-  others.forEach(q => { const o = document.createElement('option'); o.value = q.id;
-    o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); if (s.merge_into === q.id) o.selected = true; sel.append(o); });
-  sel.onchange = () => { s.merge_into = sel.value || null; if (s.merge_into) s.verdict = null; save(p.id); render(); };
+  const mg = document.createElement('select'); mg.id = 'm_' + key(p.id); mg.setAttribute('aria-label', 'Same sign as another pile');
+  const g0 = document.createElement('option'); g0.value = ''; g0.textContent = 'Same sign as…'; mg.append(g0);
+  piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id))
+    .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); if (s.merge_into === q.id) o.selected = true; mg.append(o); });
+  mg.onchange = () => { s.merge_into = mg.value || null; if (s.merge_into) s.verdict = null; save(p.id); render(); };
   const note = document.createElement('input'); note.type = 'text'; note.id = 'n_' + key(p.id); note.placeholder = 'Note (optional)'; note.value = s.note || '';
   note.onchange = () => { s.note = note.value; save(p.id); };
-  acts.append(bSame, bMark, sel, note);
+  acts.append(bSame, bMark, mg, note);
   el.append(acts);
   return el;
 }
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
+function moveSel(from, to){
+  const chosen = sel(from);
+  chosen.forEach(sid => {
+    if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
+    const hs = state[homeOf[sid]];
+    if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
+    saveMove(sid);
+  });
+  chosen.clear(); render();
+}
+
 let pending = Promise.resolve();
-function save(id){
-  const s = st(id);
-  const body = {pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: new Date().toISOString()};
-  const el = document.getElementById('save');
-  if (!col){ try { localStorage.setItem('sorter:' + id, JSON.stringify(body)); } catch(e){}
-    el.textContent = 'Saved in this browser only (storage not connected)'; el.className = 'save err'; return; }
+const saveEl = () => document.getElementById('save');
+function queue(fn){
+  const el = saveEl();
+  if (!col){ el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; persistLocal(); return; }
   el.textContent = 'Saving…'; el.className = 'save';
-  pending = pending.then(() => col.doc(key(id)).set(body)).then(
-    () => { el.textContent = 'All changes saved'; el.className = 'save'; },
+  pending = pending.then(fn).then(() => { el.textContent = 'All changes saved'; el.className = 'save'; },
     e => { el.textContent = 'Not saved: ' + (e && e.message || 'storage refused the write') + '. Your choices stay on screen; try again.'; el.className = 'save err'; });
 }
+function save(id){ const s = st(id);
+  const body = {pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: new Date().toISOString()};
+  queue(() => col.doc(key(id)).set(body)); }
+function saveMove(sid){
+  if (moves[sid]) queue(() => mcol.doc(key(sid)).set({sid, from: homeOf[sid], to: moves[sid], updated: new Date().toISOString()}));
+  else queue(() => mcol.doc(key(sid)).delete());
+}
+function saveNew(id){ queue(() => ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: new Date().toISOString()})); }
+function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles})); } catch(e){} }
 
 document.getElementById('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
 document.getElementById('show').onchange = render;
-document.getElementById('foot').textContent = piles.reduce((n, p) => n + p.items.length, 0) + ' tiles from the published images of cryptograms 1, 2, 3 and 4 (pass-A labels). ' +
+document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' tiles from the published images of cryptograms 1, 2, 3 and 4, first piled by our readers’ labels. ' +
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
 render();
 
 (async () => {
+  let db = null;
   try { db = await window.claude?.use?.('db'); } catch(e) { db = null; }
-  const el = document.getElementById('save');
-  if (!db){ local = true;
-    for (const p of piles){ try { const v = localStorage.getItem('sorter:' + p.id); if (v) Object.assign(st(p.id), JSON.parse(v)); } catch(e){} }
-    el.textContent = 'Storage not connected: choices are kept in this browser only'; el.className = 'save err'; render(); return; }
-  col = db.collection('piles');
+  const el = saveEl();
+  if (!db){
+    try { const v = JSON.parse(localStorage.getItem('sorter:all') || 'null'); if (v){ Object.assign(state, v.state || {}); Object.assign(moves, v.moves || {}); Object.assign(newPiles, v.newPiles || {}); } } catch(e){}
+    el.textContent = 'Storage not connected: changes are kept in this browser only'; el.className = 'save err'; render(); return; }
+  col = db.collection('piles'); mcol = db.collection('moves'); ncol = db.collection('newpiles');
   el.textContent = 'Connected. Choices save as you go.';
-  col.onSnapshot(snap => {
-    snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile || !byId[d.pile]) return;
+  const fail = err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error'); el.className = 'save err'; };
+  col.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile) return;
       if (ch.type === 'removed') { delete state[d.pile]; return; }
       state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
-    render();
-  }, err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error'); el.className = 'save err'; });
+    render(); }, fail);
+  mcol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.sid || !itemBySid[d.sid]) return;
+      if (ch.type === 'removed') delete moves[d.sid]; else moves[d.sid] = d.to; });
+    render(); }, fail);
+  ncol.onSnapshot(snap => { snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.id) return;
+      if (ch.type === 'removed') delete newPiles[d.id]; else newPiles[d.id] = {family: d.family, from: d.from}; });
+    render(); }, fail);
 })();
 </script>

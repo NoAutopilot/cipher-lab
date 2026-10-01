@@ -8,3 +8,6 @@ collection `piles` (one doc per pile: pile, verdict, merge_into, outliers[sid], 
 ArtifactData list. Rebuild: `python3 build_data.py` then substitute data.json into page_template.html at __DATA__.
 Why: R3 C4HI showed resolution is not the bottleneck (readers disagree ~28 pct at museum resolution vs 29 pct
 degraded); the undefined sign inventory is. No museum material is used here (RESTRICTED.md).
+Version 3 (1 Oct 2026): tiles can be selected and moved to any pile or a new pile; db collections `moves` (one doc
+per moved sid: sid, from, to; to "ASIDE" = set aside) and `newpiles` (id, family, from). Legacy `outliers` in
+`piles` docs still show as set aside.
