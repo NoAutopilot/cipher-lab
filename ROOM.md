@@ -5077,3 +5077,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-01 01:23 | third-orch | claim: debosnys-1883 round R3, 5 Opus 5.5 workers (owner request 1 Oct), cap 15 USD each; all output in the private repo per RESTRICTED.md, nothing restricted here
 2026-10-01 02:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 02:09 UTC: spawned 0 (), queued left 0
 2026-10-01 03:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 03:09 UTC: spawned 0 (), queued left 0
+2026-10-01 03:20 | third-orch | done: debosnys R3 closed (14 workers, about 67 USD, all output private); new shared tool tools/sign_sorter.py + sign_sorter_apply.py (LESSONS: settle the alphabet before reading); owner sorting Debosnys signs now
