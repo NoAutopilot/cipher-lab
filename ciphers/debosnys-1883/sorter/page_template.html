@@ -8,7 +8,7 @@
   --f-display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
   --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
   --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
-  --sz:44px;
+  --sz:56px;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
@@ -69,7 +69,7 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
   </div>
   <div class="bar">
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles settled</span></div>
-    <label for="size">Tile size <input id="size" type="range" min="32" max="72" value="44"></label>
+    <label for="size">Tile size <input id="size" type="range" min="36" max="96" value="56"></label>
     <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Settled</option></select></label>
     <span class="save" id="save">Connecting to storage…</span>
   </div>

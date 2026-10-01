@@ -24,9 +24,11 @@ for r in labels:
     if p not in pages:
         pages[p] = ImageOps.autocontrast(Image.open(path).convert('L'), cutoff=1)
     x, y, w, h = (int(s[k]) for k in ('x', 'y', 'w', 'h'))
-    pad = 3
-    c = pages[p].crop((max(0, x - pad), max(0, y - pad), x + w + pad, y + h + pad))
-    c.thumbnail((72, 72), Image.LANCZOS)
+    # The signs.tsv boxes are tight around the base stroke and leave out marks above it (the dot of X-DOT,
+    # the bar over 6 or X), so pad generously above and a little below (owner caught the clipping, 1 Oct 2026).
+    top, bot, side = max(10, int(.9 * h)), max(6, int(.35 * h)), 5
+    c = pages[p].crop((max(0, x - side), max(0, y - top), x + w + side, y + h + bot))
+    c.thumbnail((96, 96), Image.LANCZOS)
     buf = io.BytesIO()
     c.save(buf, 'PNG', optimize=True)
     piles[r['sign']].append({'sid': r['sid'], 'img': base64.b64encode(buf.getvalue()).decode()})
