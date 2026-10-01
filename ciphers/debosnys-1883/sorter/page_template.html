@@ -99,15 +99,19 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
   <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
     <div class="row"><strong id="ctxT"></strong><span class="hint" id="ctxS"></span></div>
     <div class="cv"><canvas id="ctxC"></canvas></div>
-    <div class="row"><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button>
+    <div class="row"><button type="button" id="ctxPrev">&larr; Previous tile</button><span class="hint" id="ctxPos"></span><button type="button" id="ctxNext">Next tile &rarr;</button>
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
+    <div class="row"><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
+      <input id="ctxNew" type="text" placeholder="or new pile name" aria-label="New pile name"><button type="button" id="ctxNewB">New pile</button>
+      <button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
+    <p class="hint" id="ctxMsg" aria-live="polite"></p>
   </div></div>
 </div>
 <script>
 const DATA = __DATA__;
 const basePiles = DATA.piles;
 const itemBySid = {}, homeOf = {};
-basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it.sid] = p.id; }));
+basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it.sid] = p.id; it.fam = p.family; }));
 const baseIds = new Set(basePiles.map(p => p.id));
 const state = {};        // pile id -> {verdict, merge_into, outliers:[], note}
 const moves = {};        // sid -> destination pile id ('ASIDE' = set aside, no pile yet)
@@ -281,13 +285,48 @@ function drawCtx(){
   };
   if (im.complete && im.naturalWidth) draw(); else im.onload = draw;
 }
-function showCtx(sid, pid){
+let ctxList = [];
+function showCtx(sid, pid, keepList){
+  if (!keepList){ ctxList = membersOf(pid).concat(asideOf(pid)); document.getElementById('ctxMsg').textContent = ''; }
   ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
+  const i = ctxList.indexOf(sid);
+  document.getElementById('ctxPos').textContent = (i + 1) + ' of ' + ctxList.length + ' in this pile';
+  document.getElementById('ctxPrev').disabled = i <= 0; document.getElementById('ctxNext').disabled = i >= ctxList.length - 1;
+  const cur = moves[sid] || homeOf[sid];
+  const dest = document.getElementById('ctxDest'); dest.length = 1;
+  allPiles().filter(q => q.id !== cur).sort((a, b) => (a.family === it.fam ? 0 : 1) - (b.family === it.fam ? 0 : 1) || a.id.localeCompare(b.id))
+    .forEach(q => { const o = document.createElement('option'); o.value = q.id; o.textContent = q.id + '  (' + q.family + ')'; dest.append(o); });
   document.getElementById('ctxT').textContent = 'Tile ' + sid + ' in pile ' + pid;
   document.getElementById('ctxS').textContent = 'Cryptogram page ' + it.p + '. The brackets mark this tile; its neighbours on the line are shown either side.';
   document.getElementById('ctxSel').textContent = sel(pid).has(sid) ? 'Unselect this tile' : 'Select this tile';
-  document.getElementById('ctx').hidden = false; drawCtx(); document.getElementById('ctxClose').focus();
+  document.getElementById('ctx').hidden = false; drawCtx();
 }
+function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length) showCtx(ctxList[i], ctxPid, true); }
+function ctxMove(to){
+  const sid = ctxSid, from = moves[sid] || homeOf[sid];
+  if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
+  const hs = state[homeOf[sid]];
+  if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
+  saveMove(sid); sel(from).delete(sid);
+  document.getElementById('ctxMsg').textContent = 'Moved ' + sid + ' to ' + (to === 'ASIDE' ? 'set aside' : to) + '. Showing the next tile.';
+  render();
+  const i = ctxList.indexOf(sid);
+  if (i < ctxList.length - 1) showCtx(ctxList[i + 1], ctxPid, true); else { document.getElementById('ctxMsg').textContent += ' That was the last tile.'; showCtx(sid, ctxPid, true); }
+}
+document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
+document.getElementById('ctxNext').onclick = () => ctxStep(1);
+document.getElementById('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
+document.getElementById('ctxAside').onclick = () => ctxMove('ASIDE');
+document.getElementById('ctxNewB').onclick = () => {
+  const inp = document.getElementById('ctxNew');
+  const name = inp.value.trim().toUpperCase().replace(/\s+/g, '-').replace(/[^A-Z0-9_.\-]/g, '');
+  if (!name){ inp.focus(); inp.placeholder = 'Type a name first'; return; }
+  const fam = (allPiles().find(q => q.id === ctxPid) || {}).family || 'NEW';
+  if (!newPiles[name] && !baseIds.has(name)){ newPiles[name] = {family: fam, from: ctxPid}; saveNew(name); }
+  inp.value = ''; ctxMove(name);
+};
+document.addEventListener('keydown', e => { if (document.getElementById('ctx').hidden || e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+  if (e.key === 'ArrowLeft') ctxStep(-1); if (e.key === 'ArrowRight') ctxStep(1); });
 const closeCtx = () => { document.getElementById('ctx').hidden = true; };
 document.getElementById('ctxClose').onclick = closeCtx;
 document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };

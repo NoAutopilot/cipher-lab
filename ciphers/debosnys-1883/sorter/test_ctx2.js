@@ -1,0 +1,22 @@
+const { chromium } = require('playwright');
+(async () => {
+  const b = await chromium.launch({ executablePath: process.env.PW_EXE });
+  const page = await b.newPage({ viewport: { width: 1200, height: 900 } });
+  const errs = []; page.on('pageerror', e => errs.push(e.message));
+  await page.addInitScript(() => { window.claude = { use: async () => null }; });
+  await page.goto('file://' + process.argv[2]); await page.waitForTimeout(400);
+  await page.click('#modeCtx');
+  const x = page.locator('.pile').filter({ has: page.locator('.pid', { hasText: /^X$/ }) }).first();
+  await x.locator('.tiles .t').nth(0).click();
+  console.log(await page.textContent('#ctxT'), '|', await page.textContent('#ctxPos'));
+  await page.click('#ctxNext'); await page.keyboard.press('ArrowRight');
+  console.log('after 2 steps:', await page.textContent('#ctxT'), '|', await page.textContent('#ctxPos'));
+  await page.fill('#ctxNew', 'x dot'); await page.click('#ctxNewB');
+  console.log('msg:', await page.textContent('#ctxMsg'), '|', await page.textContent('#ctxT'));
+  await page.selectOption('#ctxDest', 'X-DOT'); console.log('msg2:', await page.textContent('#ctxMsg'));
+  await page.click('#ctxAside'); console.log('msg3:', await page.textContent('#ctxMsg'));
+  await page.click('#ctxClose');
+  console.log('X header:', await x.locator('.cnt').textContent());
+  console.log('new pile X-DOT exists? (X-DOT is a base pile)', await page.locator('.pid', { hasText: /^X-DOT$/ }).count());
+  console.log('errors:', errs); await b.close();
+})();
