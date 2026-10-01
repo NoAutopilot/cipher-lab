@@ -1,0 +1,188 @@
+<title>Debosnys Sign Sorter</title>
+<style>
+/* Layout: a sorting bench -- sticky toolbar, then one tray per family of look-alike signs, each pile a row of tiles. */
+:root{
+  --bg:#f3f1ec; --surface:#fbfaf7; --ink:#24211c; --muted:#6b655b; --line:#d9d4c9;
+  --accent:#8a3b12; --accent-soft:#f1e2d6; --ok:#2f6b3a; --ok-soft:#dcebdc; --warn:#9a6a00; --warn-soft:#f3e7c4; --bad:#b3261e;
+  --tile:#ffffff; --tile-ink:#000000;
+  --f-display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --f-body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Menlo, monospace;
+  --sz:44px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
+  --accent:#e08a5a; --accent-soft:#3d2a1f; --ok:#7fc38b; --ok-soft:#203325; --warn:#e2b54f; --warn-soft:#3a3020; --bad:#ff8a80;
+  --tile:#f4f1ea; --tile-ink:#000000; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1b1916; --surface:#24211d; --ink:#ece6dc; --muted:#a59e92; --line:#3a352e;
+  --accent:#e08a5a; --accent-soft:#3d2a1f; --ok:#7fc38b; --ok-soft:#203325; --warn:#e2b54f; --warn-soft:#3a3020; --bad:#ff8a80;
+  --tile:#f4f1ea; --tile-ink:#000000; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.45}
+.wrap{padding-inline:16px;padding-block:20px 60px;max-width:1100px;margin:0 auto}
+h1{font-family:var(--f-display);font-weight:600;font-size:2.1rem;margin:0;text-wrap:balance;letter-spacing:.01em}
+.lede{color:var(--muted);max-width:65ch;margin:.3rem 0 0}
+.how{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0 0}
+.how div{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:.9rem}
+.how b{display:block;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:2px}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);
+  display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;padding-block:10px;margin-top:16px}
+.meter{display:flex;align-items:center;gap:8px;font-variant-numeric:tabular-nums;font-size:.9rem}
+.meter .track{width:140px;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.meter .fill{height:100%;background:var(--ok);width:0}
+.bar label{font-size:.85rem;color:var(--muted);display:flex;gap:6px;align-items:center}
+.save{font-size:.82rem;color:var(--muted)}
+.save.err{color:var(--bad)}
+select,input,button{font:inherit;font-size:.85rem}
+button{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:5px;padding:4px 10px;cursor:pointer}
+button:hover{border-color:var(--accent)}
+button:focus-visible,select:focus-visible,input:focus-visible,.t:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--ink)}
+.fam{margin-top:28px}
+.fam h2{font-family:var(--f-display);font-weight:600;font-size:1.45rem;margin:0 0 2px}
+.fam .sub{color:var(--muted);font-size:.82rem;margin:0 0 10px}
+.pile{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--line);border-radius:6px;padding:10px 12px;margin-top:10px}
+.pile.same{border-left-color:var(--ok)} .pile.merge{border-left-color:var(--accent)} .pile.mark{border-left-color:var(--warn)}
+.ph{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:baseline}
+.pid{font-family:var(--f-mono);font-weight:600;font-size:.95rem}
+.cnt{color:var(--muted);font-size:.82rem;font-variant-numeric:tabular-nums}
+.chip{font-size:.72rem;text-transform:uppercase;letter-spacing:.06em;padding:1px 7px;border-radius:10px;background:var(--line);color:var(--ink)}
+.chip.same{background:var(--ok-soft);color:var(--ok)} .chip.merge{background:var(--accent-soft);color:var(--accent)} .chip.mark{background:var(--warn-soft);color:var(--warn)}
+.tiles{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0}
+.t{width:var(--sz);height:var(--sz);background:var(--tile);border:2px solid transparent;border-radius:3px;padding:0;display:grid;place-items:center;cursor:pointer}
+.t img{max-width:100%;max-height:100%;image-rendering:auto}
+.t.out{border-color:var(--bad);opacity:.55}
+.acts{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
+.acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
+.acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
+.hint{font-size:.78rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
+<div class="wrap">
+  <h1>Debosnys Sign Sorter</h1>
+  <p class="lede">Every sign from the four published cryptogram images, cut out and piled by the label our readers gave it. Your job is to settle the alphabet: which piles are one sign, which tiles were put in the wrong pile, and which marks are not letters at all.</p>
+  <div class="how">
+    <div><b>Tile in the wrong pile</b>Click it. It turns red and is set aside. Click again to put it back.</div>
+    <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small differences in a pen stroke do not make a new sign.</div>
+    <div><b>Not a letter</b>Dots, stains, flourishes and joins: press "Not a letter". If a pile looks right, press "All one sign".</div>
+  </div>
+  <div class="bar">
+    <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles settled</span></div>
+    <label for="size">Tile size <input id="size" type="range" min="32" max="72" value="44"></label>
+    <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Settled</option></select></label>
+    <span class="save" id="save">Connecting to storage…</span>
+  </div>
+  <div id="list"></div>
+  <p class="hint" id="foot"></p>
+</div>
+<script>
+const DATA = __DATA__;
+const piles = DATA.piles;
+const byId = Object.fromEntries(piles.map(p => [p.id, p]));
+const famTotals = {};
+piles.forEach(p => { famTotals[p.family] = (famTotals[p.family] || 0) + p.items.length; });
+const fams = Object.keys(famTotals).sort((a, b) => famTotals[b] - famTotals[a]);
+const state = {};           // pile id -> {verdict, merge_into, outliers:[], note}
+let db = null, col = null, local = false;
+const key = id => id.replace(/[^A-Za-z0-9_-]/g, c => '_' + c.charCodeAt(0) + '_');
+const st = id => state[id] || (state[id] = {verdict: null, merge_into: null, outliers: [], note: ''});
+
+function statusOf(id){ const s = state[id]; if(!s) return null;
+  if (s.merge_into) return 'merge'; return s.verdict; }
+
+function render(){
+  const show = document.getElementById('show').value;
+  const list = document.getElementById('list'); list.textContent = '';
+  for (const f of fams){
+    const ps = piles.filter(p => p.family === f).sort((a, b) => b.items.length - a.items.length)
+      .filter(p => show === 'all' || (show === 'todo' ? !statusOf(p.id) : !!statusOf(p.id)));
+    if (!ps.length) continue;
+    const sec = document.createElement('section'); sec.className = 'fam';
+    const h = document.createElement('h2'); h.textContent = 'Family ' + f; sec.append(h);
+    const sub = document.createElement('p'); sub.className = 'sub';
+    sub.textContent = ps.length + ' pile' + (ps.length > 1 ? 's' : '') + ' shown, ' + famTotals[f] + ' tiles in this family'; sec.append(sub);
+    ps.forEach(p => sec.append(pileEl(p)));
+    list.append(sec);
+  }
+  const done = piles.filter(p => statusOf(p.id)).length;
+  document.getElementById('prog').textContent = done + ' of ' + piles.length + ' piles settled';
+  document.getElementById('fill').style.width = (100 * done / piles.length) + '%';
+}
+
+function pileEl(p){
+  const s = st(p.id), status = statusOf(p.id);
+  const el = document.createElement('div'); el.className = 'pile' + (status ? ' ' + status : '');
+  const ph = document.createElement('div'); ph.className = 'ph';
+  const nm = document.createElement('span'); nm.className = 'pid'; nm.textContent = p.id;
+  const ct = document.createElement('span'); ct.className = 'cnt';
+  ct.textContent = p.items.length + ' tiles' + (s.outliers.length ? ', ' + s.outliers.length + ' set aside' : '');
+  const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
+  chip.textContent = status === 'same' ? 'one sign' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
+  ph.append(nm, ct, chip); el.append(ph);
+  const tiles = document.createElement('div'); tiles.className = 'tiles';
+  p.items.forEach(it => {
+    const b = document.createElement('button'); b.type = 'button';
+    b.className = 't' + (s.outliers.includes(it.sid) ? ' out' : '');
+    b.title = it.sid + (s.outliers.includes(it.sid) ? ' (set aside)' : '');
+    b.setAttribute('aria-pressed', s.outliers.includes(it.sid));
+    const im = document.createElement('img'); im.alt = it.sid; im.src = 'data:image/png;base64,' + it.img; im.loading = 'lazy';
+    b.append(im);
+    b.onclick = () => { const i = s.outliers.indexOf(it.sid);
+      if (i >= 0) s.outliers.splice(i, 1); else s.outliers.push(it.sid);
+      save(p.id); render(); };
+    tiles.append(b);
+  });
+  el.append(tiles);
+  const acts = document.createElement('div'); acts.className = 'acts';
+  const bSame = btn('All one sign', s.verdict === 'same' && !s.merge_into, () => { s.verdict = s.verdict === 'same' ? null : 'same'; s.merge_into = null; save(p.id); render(); });
+  const bMark = btn('Not a letter', s.verdict === 'mark', () => { s.verdict = s.verdict === 'mark' ? null : 'mark'; s.merge_into = null; save(p.id); render(); });
+  const sel = document.createElement('select'); sel.id = 'm_' + key(p.id); sel.setAttribute('aria-label', 'Same sign as another pile');
+  const o0 = document.createElement('option'); o0.value = ''; o0.textContent = 'Same sign as…'; sel.append(o0);
+  const others = piles.filter(q => q.id !== p.id).sort((a, b) => (a.family === p.family ? 0 : 1) - (b.family === p.family ? 0 : 1) || a.id.localeCompare(b.id));
+  others.forEach(q => { const o = document.createElement('option'); o.value = q.id;
+    o.textContent = q.id + (q.family === p.family ? '' : '  (' + q.family + ')'); if (s.merge_into === q.id) o.selected = true; sel.append(o); });
+  sel.onchange = () => { s.merge_into = sel.value || null; if (s.merge_into) s.verdict = null; save(p.id); render(); };
+  const note = document.createElement('input'); note.type = 'text'; note.id = 'n_' + key(p.id); note.placeholder = 'Note (optional)'; note.value = s.note || '';
+  note.onchange = () => { s.note = note.value; save(p.id); };
+  acts.append(bSame, bMark, sel, note);
+  el.append(acts);
+  return el;
+}
+function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
+
+let pending = Promise.resolve();
+function save(id){
+  const s = st(id);
+  const body = {pile: id, verdict: s.verdict, merge_into: s.merge_into, outliers: s.outliers.slice(), note: s.note || '', updated: new Date().toISOString()};
+  const el = document.getElementById('save');
+  if (!col){ try { localStorage.setItem('sorter:' + id, JSON.stringify(body)); } catch(e){}
+    el.textContent = 'Saved in this browser only (storage not connected)'; el.className = 'save err'; return; }
+  el.textContent = 'Saving…'; el.className = 'save';
+  pending = pending.then(() => col.doc(key(id)).set(body)).then(
+    () => { el.textContent = 'All changes saved'; el.className = 'save'; },
+    e => { el.textContent = 'Not saved: ' + (e && e.message || 'storage refused the write') + '. Your choices stay on screen; try again.'; el.className = 'save err'; });
+}
+
+document.getElementById('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
+document.getElementById('show').onchange = render;
+document.getElementById('foot').textContent = piles.reduce((n, p) => n + p.items.length, 0) + ' tiles from the published images of cryptograms 1, 2, 3 and 4 (pass-A labels). ' +
+  (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
+render();
+
+(async () => {
+  try { db = await window.claude?.use?.('db'); } catch(e) { db = null; }
+  const el = document.getElementById('save');
+  if (!db){ local = true;
+    for (const p of piles){ try { const v = localStorage.getItem('sorter:' + p.id); if (v) Object.assign(st(p.id), JSON.parse(v)); } catch(e){} }
+    el.textContent = 'Storage not connected: choices are kept in this browser only'; el.className = 'save err'; render(); return; }
+  col = db.collection('piles');
+  el.textContent = 'Connected. Choices save as you go.';
+  col.onSnapshot(snap => {
+    snap.docChanges().forEach(ch => { const d = ch.doc.data(); if (!d || !d.pile || !byId[d.pile]) return;
+      if (ch.type === 'removed') { delete state[d.pile]; return; }
+      state[d.pile] = {verdict: d.verdict || null, merge_into: d.merge_into || null, outliers: Array.isArray(d.outliers) ? d.outliers.slice() : [], note: d.note || ''}; });
+    render();
+  }, err => { el.textContent = 'Could not load saved choices: ' + (err && err.message || 'unknown error'); el.className = 'save err'; });
+})();
+</script>
