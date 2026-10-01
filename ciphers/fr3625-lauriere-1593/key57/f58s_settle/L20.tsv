@@ -1,0 +1,11 @@
+col	settled	grade	source	reason
+1	200	H	A	three clear digits, seg 1; ink above is the row above's gloss, not part of this code
+2	SYM:L-hash	M	B	L/bracket stroke joined to an H crossed by a bar (#-like); same sign as A's bracket-H, B's name fits better
+7	70	L	A	7 clear; second digit is a closed boxed/blotted form cut at segment 2's lower edge, could be 0 or 8 (70 or 78)
+9	SYM:inverted-T	H	A	clean inverted-T, unambiguous
+10	20	H	A	2 and 0 clear, followed by the # sign (repeated at start of seg 3)
+12	184	M	B	1 and 8 clear; third digit is the hand's closed 4, joined by a ligature to the following lambda, so segmentation is slightly arguable
+13	SYM:lambda	M	A	caret/lambda shape joined to the left of the loop
+14	SYM:o	M	A	round closed loop, distinct from the hand's 0 only by context; reads as a standalone o sign
+15	44	L	A	two crossed strokes (t+ / ++ shape); could be the hand's crossed 4s (44) or two cross symbols; not like the closed 4 in 184/394
+17	394	H	A	3, 9 and closed 4 clear (repeated at start of seg 4)

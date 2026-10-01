@@ -1,0 +1,10 @@
+col	settled	grade	source	reason
+1	440	M	A	seg4 start: two a-shaped 4s then 0, tops clear, lower edge cut at band bottom; same shape repeats at seg3 bottom right
+2	22	H	A	two clear 2s, well separated from following symbol
+3	SYM:xm	L	B	merge cols 3+4: x-like stroke joined to an m-like sign with ascender/cross stroke reads as one cluster; if split, values SYM:v + SYM:m (pass A)
+4	SYM:xm	L	B	merged with col 3 (see col 3); same single cluster
+5	183	M	A	1-8-3 legible; written tight against following 9, so segmentation 183|9 vs 1839 is arguable
+6	9	L	A	9 with descender/underline stroke running into the triangle; could belong to 183 (1839) or be a flourish
+7	SYM:triangle	H	A	clear open triangle
+12	154	M	A	1 is a short i-like stroke, 5 and 4 clear
+13	17	M	B	small 1 (apostrophe-like) then 7; row end, nothing after

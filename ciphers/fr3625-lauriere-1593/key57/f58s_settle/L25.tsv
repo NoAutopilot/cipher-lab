@@ -1,0 +1,14 @@
+col	settled	grade	source	reason
+1	SYM:x	M	A	dark cross-with-dot sign after grey 'bo la' (seg1 end/seg2); B's col4 'cross-dot' is this same sign, misaligned by the aligner -- one sign, not two
+2	SYM:5-hook	M	A	dark 5/z-like sign with long tail after 'dung' (seg3 end, repeated at seg4 start = overlap); B's first 'J-bar' at col5 is this sign
+3	SYM:dagger	M	A	dark T/dagger with dot to its right (seg3 end/seg4 start overlap); B's second 'J-bar' at col6 is this sign
+4	20	L	A	low-sitting '2o' in seg4 below the upper gloss 'oc..', strokes cut at strip bottom; could be plaintext letters rather than a numeral; B read nothing here (B's cross-dot belongs to col1)
+5	SYM:v	L	A	v-shape following the low '2o' in seg4; may belong with col4 as a word ('zov..') rather than a separate sign
+6	SYM:cross	M	A	t/+ sign with long horizontal arm, seg4 mid; B's J-bar at this column is misaligned (see cols 2-3)
+7	SYM:crossed-f	M	B	f with cross bar, seg4 right of col6; B's name fits better than A's crossed-hook for this shape
+7a	SYM:crossed-hook	L	A	separate 7/Z-like sign with a cross bar immediately before '4E' in seg4; A's crossed-hook; splitting col7 into two signs (f-crossed + Z-crossed) -- they look separated by a gap but could be one compound sign
+10	52	H	A	'52' clear in seg5, dot below the 2
+11	SYM:inverted-T	H	A	clear inverted-T in seg5
+12	SYM:double-cross	H	A	stem with two cross bars, clear in seg5
+13	SYM:m	M	A	m-shape with a cross stroke over its first leg, seg5; shape clear, identity of the stroke arguable
+14	SYM:omega	M	A	omega-like sign preceded by a small c-like stroke (may be part of the sign); grey 'a' gloss below it is not part of the code

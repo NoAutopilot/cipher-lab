@@ -1,0 +1,17 @@
+col	settled	grade	source	reason
+1	10	M	B	small raised '10' at line start, clearly two digits; separated from the following tall stroke and written smaller/higher, so could be one code 109 with col2 (A) rather than two codes -- segmentation arguable
+2	9	M	B	tall 9 with long descender followed by the E mark (same pattern as 39E in col5); a dark descender from the line below crosses its foot; if col1+col2 are one code it reads 109
+3	SYM:lambda	H	A	clear lambda-shaped sign, both passes agree
+6	SYM:lambda	M	A	sign is the same lambda shape as col3, followed directly by 'oy' and a dot below; could instead be plaintext 'Roy' with a lambda-like R (B) -- shape favours the symbol but the group reads as a word
+7	[PLAIN:oy]	L	settled	merge cols 7+8: 'o' and 'y' are joined small letters in the plaintext hand, read as one unit 'oy' following the col6 sign rather than two symbols o and Y; if col6 is a plaintext R the whole group is [PLAIN:Roy]
+8	[PLAIN:oy]	L	settled	merged into col7 (see col7)
+11	141	M	B	1-4-1 legible on both segment views (seg2 end and seg3 start); the final 1 sits close to the following pi sign, so the 1/pi boundary is the only doubt
+12	SYM:pi	M	A	pi-shaped sign (looks like a small 'n'/'π') right after 141
+15	6	M	B	6 with a dot before it, legible in seg3 though the tops are near the strip edge
+16	SYM:cross	M	A	a '+' cross between 6 and 8; same sign as B's SYM:+
+17	8	M	A	8 after the cross, tops cut at the strip top but the bowl is clear
+18	11	M	A	two upright strokes '11' after a gap, tops cut at strip top (seen again at top of seg4); not a cross -- B's '+' is the col16 sign
+19	8	L	A	8-like form with dot after 11, mostly cut at strip top; seg4 top shows its lower loop
+20	?	L	settled	further cut strokes at top of seg4 ('5', '1' shapes) are descenders/fragments, probably from the adjacent row; no codeable numeral can be read
+21	SYM:V-underlined	M	B	dark V-shaped sign underlined together with 'roit'; the G that follows is in a different (grey) ink, so A's 'VG' should be split: V here, G in col22
+22	SYM:G	L	A	G-shaped sign in grey/lighter ink, same ink as the following gloss 'I qui'; may belong to the gloss hand rather than the cipher

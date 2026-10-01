@@ -1,0 +1,15 @@
+col	settled	grade	source	reason
+1	248	H	A	clear 2-4-8, the 8 has a long tail but no ambiguity
+3	SYM:Y	M	B	y-shaped sign written right after 160 (A took it as a mark on 160); shape clear, but whether it is a separate code or a flourish of 160 is arguable
+5	SYM:n-arch	M	A	arch/loop with long left stem after '197.'; same sign as col12; A's and B's names describe the same shape
+7	SYM:M	H	A	m-shaped sign with a descender between 20 and 42, clearly separate
+9	SYM:f	M	A	f in lighter ink between 42 and 9; shape clear, lighter ink could mean a later insertion
+10	9	M	A	q-shaped 9, same form as the 9s in 599; segmentation from the f before it is slightly arguable
+11	599	H	B	clear 5-9-9
+12	SYM:n-arch	M	A	same arch-with-stem sign as col5
+18	390	M	B	end of segment 3 and repeated at start of segment 4 (overlap); middle digit has a closed upper loop like the other 9s but a crossing stroke makes A's 4 (340) possible
+19	20	L	B	grey, top-cut '10/20' sitting high in the band after 390; probably an intrusion from the row above (L25), not this row
+20	34	L	B	dark '34' cut at the band top, followed by hooked descending strokes; probably an intrusion from L25, not this row
+21	390	M	A	not a separate sign: A's 340 sits here only by misalignment and is the same ink as col18 (merge). No distinct '+' read; B's SYM:+ is probably the hooked strokes after the '34' intrusion
+22	2	M	settled	small grey '2' before the blot; the shape is clear but the ink is lighter, so it could be the gloss hand
+23	SYM:x	M	A	heavy blotted x-shape followed by a dot, before 'la'; the shape is clear, but a blot over some other sign cannot be excluded

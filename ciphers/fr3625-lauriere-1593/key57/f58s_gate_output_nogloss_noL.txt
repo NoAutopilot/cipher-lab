@@ -1,0 +1,34 @@
+=== LAU-F58: key57 applied to its own positive control (fr.3985 f58r) ===
+cipher-code tokens: 235, resolved by key57: 86, coverage=0.366 (non-gating)
+decoded letters (folded): 1546
+REAL decode: score=-0.918  null_p99=-1.912  real_p05=-0.870  judge=FAIL
+
+=== 20 SHUFFLED-KEY CONTROLS (key57's own meanings shuffled over its own codes) ===
+  shuffle 0: score=-0.917
+  shuffle 1: score=-0.977
+  shuffle 2: score=-0.962
+  shuffle 3: score=-0.963
+  shuffle 4: score=-0.973
+  shuffle 5: score=-0.930
+  shuffle 6: score=-0.931
+  shuffle 7: score=-0.932
+  shuffle 8: score=-0.933
+  shuffle 9: score=-0.913
+  shuffle 10: score=-0.935
+  shuffle 11: score=-0.960
+  shuffle 12: score=-0.989
+  shuffle 13: score=-0.954
+  shuffle 14: score=-0.976
+  shuffle 15: score=-0.939
+  shuffle 16: score=-0.939
+  shuffle 17: score=-0.972
+  shuffle 18: score=-0.955
+  shuffle 19: score=-0.977
+shuffle mean=-0.951  max=-0.913
+
+=== GATE ===
+real=-0.918  need judge PASS AND real above every shuffled score (max -0.913)
+GATE FAIL
+
+--- decoded text (real key57) ---
+? 12 Aoust 1593 58 Monseigneur Je ne faillis en descendant de cheval a trouver monsieur de ?ne sur ce que me commandastes lequel me dict que monsieur luy avois dict quil luy envoyeroys la lie dans mancz parle avec le de chiffre mays que ses papiers estoient desja partis et je les donnerais es mains de Renel dont Je me suis enquis dudit s sil le avoiz qui ma dict luy avoir ? este mis en main ce asseurement) moy la lie ne faudrait . il vous en envoyra une coppie Quant aux aultres quatre pour dont maviez en charge Je nay failly de pas ung mons de ?ance au service du Roy luy Renel vous en rend conte mons de ? en ayant parle Croys quil fera en cella tout ce quil souvent en Lestre est le fault ou fait du qui pourra le plus au Roy le ? Je ne sait a qui le confieront la ? me estre la qui de bov de ri ti ri ma me qui le ga / bien est aime du Roma? mn de le co ci fruit ma ca me go le me est du soit dict soit trouver de mn qm pa na qui oy soit de catholique soit de la ma qua il y auroit ? soit? ff re ns la seconderoyent tousiours pour cela si bi soyt muen? di quoy /te? dung fa le po le ti na me de le france ca la qui pouvoit le po fa ri mo le me en point lo ga ne mo ? de frans me Quant so ce de estans tous de na le ? ?nuic fort fait ? la conference ilz ne font que luyter? a la veue? la plus? aultre beaucoup plus ? de celuy ministre ; la neust grand prins le ? tempe? ce trouvas ce ? ? ta nouvelle te que fault ou fait de ceb? ilz dict qui ? quil trouvera . Ce de Roi les loix ? Je ne croys de ? ? allez? celluy ysse? pour aller a Nantes Roy est alle ce jour a Foug et dous? ? ? andely? ? ? voilla Monseigneur de la Cappelle ce deux de ? . Mr de Linars le pour ce Reste de faire ce que vous plaist mander Je ? et tiendray la main 1000 escus a mons de Sancy et Chomberg et ? ? contans les ayans tous mis pour voulloir que vous serez ? Ce ? la fortune a vous servir et vous suys asseure trouvez fort et mons de Sancy ny ou oublyez rien et me serez a jamais Monseigneur A paris ce xij aoust 1593 Votre tres humble tres affectionne serviteur Lauriere? Lauriere?

@@ -1,0 +1,600 @@
+line	pos	sign	marks	conf	source	note
+L01	1	[PLAIN:?]		H	A	
+L02	1	[PLAIN:12]		H	A	
+L02	2	[PLAIN:Aoust]		H	A	
+L02	3	[PLAIN:1593]		H	A	
+L02	4	[PLAIN:58]	foliation	M	A	
+L03	1	[PLAIN:Monseigneur]		H	A	
+L03	2	[PLAIN:Je]		H	A	
+L03	3	[PLAIN:ne]		H	A	
+L03	4	[PLAIN:faillis]		M	A	
+L03	5	[PLAIN:en]		H	A	
+L03	6	[PLAIN:descendant]		H	A	
+L03	7	[PLAIN:de]		H	A	
+L03	8	[PLAIN:cheval]		H	A	
+L03	9	[PLAIN:a]		M	A	
+L03	10	[PLAIN:trouver]		L	A	
+L03	11	[PLAIN:monsieur]		H	A	
+L03	12	[PLAIN:de]		H	A	
+L04	1	[PLAIN:?ne]		L	A	
+L04	2	[PLAIN:sur]		H	A	
+L04	3	[PLAIN:ce]		H	A	
+L04	4	[PLAIN:que]		H	A	
+L04	5	[PLAIN:me]		H	A	
+L04	6	[PLAIN:commandastes]		H	A	
+L04	7	[PLAIN:lequel]		H	A	
+L04	8	[PLAIN:me]		H	A	
+L04	9	[PLAIN:dict]		H	A	
+L04	10	[PLAIN:que]		H	A	
+L04	11	[PLAIN:monsieur]		H	A	
+L04	12	[PLAIN:luy]		H	A	
+L04	13	[PLAIN:avois]		M	A	
+L05	1	[PLAIN:dict]		H	A	
+L05	2	[PLAIN:quil]		H	A	
+L05	3	[PLAIN:luy]		H	A	
+L05	4	[PLAIN:envoyeroys]		M	A	
+L05	5	[PLAIN:la]		H	A	
+L05	6	[PLAIN:lie]		M	A	
+L05	7	[PLAIN:dans]		H	A	
+L05	8	[PLAIN:mancz]		L	A	
+L05	9	[PLAIN:parle]		M	A	
+L05	10	[PLAIN:avec]		M	A	
+L05	11	[PLAIN:le]		H	A	
+L05	12	[PLAIN:de]		M	A	
+L05	13	[PLAIN:chiffre]		M	A	
+L05	14	[PLAIN:mays]		M	A	
+L06	1	[PLAIN:que]		H	A	
+L06	2	[PLAIN:ses]		H	A	
+L06	3	[PLAIN:papiers]		H	A	
+L06	4	[PLAIN:estoient]		M	A	
+L06	5	[PLAIN:desja]		H	A	
+L06	6	[PLAIN:partis]		M	A	
+L06	7	[PLAIN:et]	looped G preceded by open curve	M	B	A:SYM:G B:- | long open curve with descender + looped G-form = secretary-hand et ligature, same ink weight as surrounding plaintext; not a separate cipher symbol, but a symbol reading cannot be fully excluded
+L06	8	[PLAIN:je]	or plain js	M	B	A:75 B:- | tall j with descender + reversed-e form identical to the e of following les/lez; the 5-like stroke is the secretary e, not a digit; no 7 crossbar
+L06	9	[PLAIN:les]		H	A	
+L06	10	[PLAIN:donnerais]		M	A	
+L06	11	[PLAIN:es]		L	A	
+L06	12	[PLAIN:mains]		M	A	
+L06	13	[PLAIN:de]		H	A	
+L06	14	[PLAIN:Renel]		L	A	
+L07	1	[PLAIN:dont]		M	A	
+L07	2	[PLAIN:Je]		H	A	
+L07	3	[PLAIN:me]		H	A	
+L07	4	[PLAIN:suis]		H	A	
+L07	5	[PLAIN:enquis]		H	A	
+L07	6	[PLAIN:dudit]		M	A	
+L07	7	[PLAIN:s]		L	A	
+L07	8	[PLAIN:sil]		H	A	
+L07	9	[PLAIN:le]		M	A	
+L07	10	[PLAIN:avoiz]		M	A	
+L07	11	[PLAIN:qui]		H	A	
+L07	12	[PLAIN:ma]		M	A	
+L07	13	[PLAIN:dict]		M	A	
+L07	14	[PLAIN:luy]		H	A	
+L07	15	[PLAIN:avoir]		M	A	
+L08	1	[PLAIN:?]	interline fragments only	L	A	
+L09	1	[PLAIN:este]		M	A	
+L09	2	[PLAIN:mis]		H	A	
+L09	3	[PLAIN:en]		H	A	
+L09	4	[PLAIN:main]		H	A	
+L09	5	[PLAIN:ce]		M	A	
+L09	6	[PLAIN:asseurement)]		M	A	
+L09	7	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L09	8	[PLAIN:moy]		H	A	
+L09	9	[PLAIN:la]		H	A	
+L09	10	[PLAIN:lie]		M	A	
+L09	11	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L09	12	SYM:G		L	open	A:SYM:G B:- | not sent to vision
+L09	13	SYM:long-s	or 7s/j-like stroke	L	open	A:SYM:long-s B:- | not sent to vision
+L09	14	[PLAIN:ne]		M	A	
+L09	15	[PLAIN:faudrait]		M	A	
+L10	1	[PLAIN:.]		M	A	
+L10	2	[PLAIN:il]		M	A	
+L10	3	[PLAIN:vous]		H	A	
+L10	4	[PLAIN:en]		H	A	
+L10	5	[PLAIN:envoyra]		M	A	
+L10	6	[PLAIN:une]		H	A	
+L10	7	[PLAIN:coppie]		M	A	
+L10	8	[PLAIN:Quant]		M	A	
+L10	9	[PLAIN:aux]		M	A	
+L10	10	[PLAIN:aultres]		M	A	
+L10	11	[PLAIN:quatre]		M	A	
+L10	12	[PLAIN:pour]		H	A	
+L11	1	[PLAIN:dont]		H	A	
+L11	2	[PLAIN:maviez]		M	A	
+L11	3	[PLAIN:en]		H	A	
+L11	4	[PLAIN:charge]		H	A	
+L11	5	[PLAIN:Je]		H	A	
+L11	6	[PLAIN:nay]		H	A	
+L11	7	[PLAIN:failly]		H	A	
+L11	8	[PLAIN:de]		H	A	
+L11	9	[PLAIN:pas]		M	A	
+L11	10	[PLAIN:ung]		M	A	
+L11	11	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L11	12	[PLAIN:mons]		M	A	
+L11	13	[PLAIN:de]		H	A	
+L12	1	[PLAIN:?ance]	line body only in right segments	L	A	
+L12	2	[PLAIN:au]		H	A	
+L12	3	[PLAIN:service]		M	A	
+L12	4	[PLAIN:du]		H	A	
+L12	5	[PLAIN:Roy]		H	A	
+L12	6	[PLAIN:luy]		H	A	
+L13	1	[PLAIN:Renel]		M	A	
+L13	2	[PLAIN:vous]		H	A	
+L13	3	[PLAIN:en]		H	A	
+L13	4	[PLAIN:rend]		H	A	
+L13	5	[PLAIN:conte]		H	A	
+L13	6	[PLAIN:mons]		H	A	
+L13	7	[PLAIN:de]		H	A	
+L13	8	[PLAIN:?]	word cut at strip top	L	A	
+L14	1	[PLAIN:en]		H	A	
+L14	2	[PLAIN:ayant]		H	A	
+L14	3	[PLAIN:parle]		H	A	
+L14	4	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L14	5	[PLAIN:Croys]		M	A	
+L14	6	[PLAIN:quil]		H	A	
+L14	7	[PLAIN:fera]		H	A	
+L14	8	[PLAIN:en]		H	A	
+L14	9	[PLAIN:cella]		H	A	
+L14	10	[PLAIN:tout]		H	A	
+L14	11	[PLAIN:ce]		M	A	
+L14	12	[PLAIN:quil]		M	A	
+L15	1	[PLAIN:souvent]		L	A	
+L15	2	[PLAIN:en]		M	A	
+L15	3	[PLAIN:Lestre]		L	A	
+L15	4	[PLAIN:est]		M	A	
+L15	5	304		H	AB	agree
+L15	6	20		H	AB	agree
+L15	7	203		M	AB	agree-flagged A:M/B:H
+L15	8	59		H	AB	agree
+L15	9	SYM:X		M	AB	agree-flagged A:M/B:M
+L15	10	39		H	AB	agree
+L16	1	[PLAIN:pourra]		H	A	
+L16	2	[PLAIN:le]		H	A	
+L16	3	[PLAIN:plus]		H	A	
+L16	4	[PLAIN:au]		H	A	
+L16	5	[PLAIN:Roy]		H	A	
+L16	6	[PLAIN:le]		H	A	
+L16	7	[PLAIN:?]	word cut at strip top	L	A	
+L16	8	[PLAIN:Je]		M	A	
+L16	9	[PLAIN:ne]		M	A	
+L16	10	[PLAIN:sait]		M	A	
+L16	11	[PLAIN:a]		M	A	
+L16	12	[PLAIN:qui]		M	A	
+L16	13	[PLAIN:le]		M	A	
+L16	14	[PLAIN:confieront]	grey corrections within word	M	A	
+L16	15	[PLAIN:la]		M	A	
+L17	9	[PLAIN:?]	dark ille/03-like marks after ma	L	A	
+L17	10	440	a-a-o shapes, cut at strip bottom	M	A	A:440 B:440 | seg4 start: two a-shaped 4s then 0, tops clear, lower edge cut at band bottom; same shape repeats at seg3 bottom right
+L17	11	22		H	A	A:22 B:22 | two clear 2s, well separated from following symbol
+L17	12	SYM:xm		L	B	A:SYM:v B:- | merge cols 3+4: x-like stroke joined to an m-like sign with ascender/cross stroke reads as one cluster; if split, values SYM:v + SYM:m (pass A)
+L17	14	183		M	A	A:183 B:183 | 1-8-3 legible; written tight against following 9, so segmentation 183|9 vs 1839 is arguable
+L17	16	SYM:triangle		H	A	A:SYM:triangle B:SYM:triangle | clear open triangle
+L17	17	6	dot	H	AB	agree
+L17	18	300		H	AB	agree
+L17	19	39		H	AB	agree
+L17	20	262		H	AB	agree
+L17	21	154		M	A	A:154 B:154 | 1 is a short i-like stroke, 5 and 4 clear
+L17	22	17		M	B	A:17 B:17 | small 1 (apostrophe-like) then 7; row end, nothing after
+L18	1	[PLAIN:bov]	or plain bo	M	settled	A:160 B:60 | merge cols 1+2: ink reads as a plaintext word b-o-v (looped-ascender b, round o, v) in the same hand and size as the code, not 160/60 plus a symbol; could still be 6o + v-sign, hence M
+L18	3	17		H	AB	agree
+L18	4	40		H	AB	agree
+L18	5	42		H	AB	agree
+L18	6	40	cross	M	A	A:40 B:40 | 40 clear; an x-shaped cross touches the 0 followed by a dot -- may be a separate cross sign (SYM:cross) rather than a mark on 40; segmentation arguable
+L18	6b1	8	B-only	M	B	A:- B:8 | single clear 8 after the dot; starts the run into the blot
+L18	7	?	dot before; second digit blotted	L	settled	A:88 B:SYM: | solid ink blot between the 8 and the pi; could be a second 8 (making col7+8 = 88, pass A) or a separate symbol; nothing legible
+L18	8	SYM:pi		H	A	A:SYM:pi B:SYM:pi | clean pi shape
+L18	9	248	last digit uncertain	M	A	A:248 B:248 | 2 and 4 clear; last digit looped like 8 but overwritten/tangled with a stroke, so arguable
+L18	10	22		H	AB	agree
+L18	11	SYM:pi		H	A	A:SYM:pi B:SYM:pi | clean pi shape
+L18	13	SYM:triangle		H	AB	agree
+L18	14	SYM:omega		H	A	A:SYM:omega B:SYM:omega | clear omega shape
+L18	15	39		H	AB	agree
+L18	16	20		H	AB	agree
+L18	16b2	SYM:T	B-only	M	B	A:- B:SYM:T | flat-topped T-like sign with descender hooking left; not shaped like this hand's 1 or 7 (compare 17 in segment 1), so not 117
+L18	16b3	SYM:T	B-only	M	B	A:- B:SYM:T | second identical T-like sign
+L18	17	SYM:+	three barred strokes, third crossed (+); maybe 77+ symbol	M	B	A:117 B:SYM:+ | clear plus cross, separate sign after the two T-signs
+L18	18	5		M	A	A:5 B:5 | 5 shape clear; could conceivably be a plaintext s, hence M
+L18	19	[PLAIN:/]	slash	L	A	
+L18	20	[PLAIN:bien]		L	A	
+L18	21	[PLAIN:est]		M	A	
+L18	22	[PLAIN:aime]		M	A	
+L18	23	[PLAIN:du]		M	A	
+L18	24	[PLAIN:Roma?]	partly grey	L	A	
+L19	13	SYM:h	h-like sign, cut at strip bottom	L	A	A:SYM:h B:6 | h-like sign with a dot after it, low in the band and cut at the strip top; stem plus right-hand arch reads more like h than a 6, but the cut leaves it open
+L19	14	84	dot before; cut at strip bottom	M	settled	A:84 B:84 | both passes read 84 (A flagged it 84?); 8 and 4 are legible but sit low and are partly cut at the strip edge
+L19	15	550	cut at strip bottom	M	settled	A:550 B:550 | both passes read 550; the two 5s and the 0 are clear, slightly cramped against 84; segmentation 84|550 fits the spacing
+L19	16	17		H	settled	A:17 B:17 | clear 1 and 7
+L19	17	SYM:oTo	o-cross-o, crossed tall stroke between two o's	M	A	A:SYM:oTo B:SYM:o-cross-o | two small o shapes joined by a tall crossed stem; same sign as B o-cross-o
+L19	18	185		H	AB	agree
+L19	19	20		H	AB	agree
+L19	20	SYM:lambda		M	A	A:SYM:lambda B:SYM:lambda | lambda/caret-shaped stroke between 20 and 44; small but distinct
+L19	21	44		H	settled	A:44 B:44 | two clear 4s
+L19	22	SYM:crossed-f	looped stem with cross bar (f/q-like)	M	B	A:SYM:crossed-loop B:SYM:crossed-f | looped stem with a cross bar, f/pound-like (same as A crossed-loop)
+L19	23	30		H	settled	A:30 B:30 | clear 3 and 0, end of line
+L20	1	200		H	A	A:200 B:200 | three clear digits, seg 1; ink above is the row above's gloss, not part of this code
+L20	2	SYM:L-hash	square bracket joined to H	M	B	A:SYM:bracket-H B:SYM:L-hash | L/bracket stroke joined to an H crossed by a bar (#-like); same sign as A's bracket-H, B's name fits better
+L20	3	243		H	AB	agree
+L20	4	8	dot	H	AB	agree
+L20	5	2	dot	H	AB	agree
+L20	6	22	dot	H	AB	agree
+L20	8	47		H	AB	agree
+L20	9	SYM:inverted-T		H	A	A:SYM:inverted-T B:SYM:inverted-T | clean inverted-T, unambiguous
+L20	10	20	#	H	A	A:20 B:20 | 2 and 0 clear, followed by the # sign (repeated at start of seg 3)
+L20	11	22		H	AB	agree
+L20	12	184		M	B	A:184 B:184 | 1 and 8 clear; third digit is the hand's closed 4, joined by a ligature to the following lambda, so segmentation is slightly arguable
+L20	13	SYM:lambda		M	A	A:SYM:lambda B:SYM:lambda | caret/lambda shape joined to the left of the loop
+L20	14	SYM:o	o-like loop	M	A	A:SYM:o B:SYM:o | round closed loop, distinct from the hand's 0 only by context; reads as a standalone o sign
+L20	16	59	dot	H	AB	agree
+L20	17	394		H	A	A:394 B:394 | 3, 9 and closed 4 clear (repeated at start of seg 4)
+L20	19	[PLAIN:soit]		M	A	
+L20	20	[PLAIN:dict]		M	A	
+L20	22	[PLAIN:soit]		M	A	
+L21	15b4	?	B-only	L	settled	A:- B:SYM:h | only two or three dots/stroke ends after the 17 (colon-like), cut at the bottom; no distinct h-shaped symbol visible; may be punctuation or the cut top of a sign, not confirmed as SYM:h
+L21	16	220		M	A	A:220 B:220 | digits clearly 2-2-0, but their bottoms are cut by the strip edge
+L21	17	339	last digit 9 or 4	M	A	A:339 B:339 | reads 3-3-9 with the third digit's loop closed at the top (9 rather than the open 4 used in 334); bottoms cut; triangle follows immediately
+L21	18	SYM:triangle		H	AB	agree
+L21	19	17		H	AB	agree
+L21	20	SYM:M		H	A	A:SYM:M B:SYM:M | clear capital-M-shaped sign, separate from 17 and 154
+L21	21	154		H	A	A:154 B:154 | 1-5-4 clearly in segment 5 (repeat of segment 4's end), Y follows
+L21	22	SYM:Y		H	A	A:SYM:Y B:SYM:Y | clear Y-shaped sign after 154 in both segments
+L21	23	84		M	A	A:84 B:84 | first digit clearly 8; second is a looped, curled form most like this hand's 4 but could be read 5; written close to 334
+L21	24	334		H	AB	agree
+L21	25	[PLAIN:qm]	q/7-like with m; possibly plain	L	settled	A:SYM:qm B:- | q with an m/ui-like stroke and a mark above, at line end after 334; looks like an abbreviated plaintext word (qui/que?) rather than a code symbol, but SYM:qm (pass A) cannot be excluded
+L22	0b5	10	B-only	M	B	A:- B:10 | small raised '10' at line start, clearly two digits; separated from the following tall stroke and written smaller/higher, so could be one code 109 with col2 (A) rather than two codes -- segmentation arguable
+L22	1	9	E; small 10 then long dark 9/f stroke with E	M	B	A:109 B:9 | tall 9 with long descender followed by the E mark (same pattern as 39E in col5); a dark descender from the line below crosses its foot; if col1+col2 are one code it reads 109
+L22	2	SYM:lambda		H	A	A:SYM:lambda B:SYM:lambda | clear lambda-shaped sign, both passes agree
+L22	3	66	x	H	AB	agree
+L22	4	39	E	H	AB	agree
+L22	5	SYM:lambda		M	A	A:SYM:lambda B:- | sign is the same lambda shape as col3, followed directly by 'oy' and a dot below; could instead be plaintext 'Roy' with a lambda-like R (B) -- shape favours the symbol but the group reads as a word
+L22	6	[PLAIN:oy]		L	settled	A:SYM:o B:- | merge cols 7+8: 'o' and 'y' are joined small letters in the plaintext hand, read as one unit 'oy' following the col6 sign rather than two symbols o and Y; if col6 is a plaintext R the whole group is [PLAIN:Roy]
+L22	8	335		H	AB	agree
+L22	9	17	#	H	AB	agree
+L22	10	141	or 14 + i	M	B	A:141 B:141 | 1-4-1 legible on both segment views (seg2 end and seg3 start); the final 1 sits close to the following pi sign, so the 1/pi boundary is the only doubt
+L22	11	SYM:pi		M	A	A:SYM:pi B:SYM:pi | pi-shaped sign (looks like a small 'n'/'π') right after 141
+L22	12	335		H	AB	agree
+L22	13	17		H	AB	agree
+L22	14	6	dot; tops cut at strip top	M	B	A:6 B:6 | 6 with a dot before it, legible in seg3 though the tops are near the strip edge
+L22	15	SYM:cross		M	A	A:SYM:cross B:- | a '+' cross between 6 and 8; same sign as B's SYM:+
+L22	16	8	cut at strip top	M	A	A:8 B:- | 8 after the cross, tops cut at the strip top but the bowl is clear
+L22	17	11	cut at strip top	M	A	A:11 B:SYM:+ | two upright strokes '11' after a gap, tops cut at strip top (seen again at top of seg4); not a cross -- B's '+' is the col16 sign
+L22	19	?	further cut numerals under/above, illegible	L	settled	A: B:- | further cut strokes at top of seg4 ('5', '1' shapes) are descenders/fragments, probably from the adjacent row; no codeable numeral can be read
+L22	20	[PLAIN:il]		M	A	
+L22	21	[PLAIN:y]		M	A	
+L22	22	[PLAIN:auroit]		M	A	
+L22	23	SYM:V-underlined	underlined	M	B	A:SYM:VG B:SYM:V-underlined | dark V-shaped sign underlined together with 'roit'; the G that follows is in a different (grey) ink, so A's 'VG' should be split: V here, G in col22
+L22	24	SYM:G	grey	L	A	A:SYM:G B:SYM:G | G-shaped sign in grey/lighter ink, same ink as the following gloss 'I qui'; may belong to the gloss hand rather than the cipher
+L22	27	[PLAIN:?]		L	A	
+L23	10	[PLAIN:soit?]	cut at strip bottom	L	A	
+L23	11	355	cut at strip bottom	M	A	"A:355 B:35 | three glyphs 3-5-5 before a gap, visible as tops at bottom of seg 3 (after ""soit"") and body in seg 4; row sits low at the band edge (B: tops on L24 sheet), so row membership and 355|75 vs 35|575 segmentation are arguable"
+L23	12	75	cut at strip bottom	M	A	A:75 B:75 | 7 then 5 after a small gap; same low-band and segmentation caveat as col 1
+L23	13	26		H	A	A:26 B:26 | clear 2 and looped 6, well separated
+L23	14	64	v (slanted stroke after)	M	A	A:64 B:64 | tall looped 6 then 4; a slanted v-like stroke follows (kept outside the code); the 6 loop merges into the 4 slightly
+L23	15	88		M	A	A:88 B:88 | two closed loops read as 8 8; second loop is rounder and could be a 9/8 variant
+L23	16	SYM:triangle		H	AB	agree
+L23	17	57	dot	H	AB	agree
+L23	18	6	dot	H	AB	agree
+L23	19	304		H	AB	agree
+L23	20	309		H	A	A:309 B:309 | clear 3-0-9 in seg 5; a descender stroke below belongs to the row beneath
+L24	1	[PLAIN:seconderoyent]		M	A	
+L24	2	[PLAIN:tousiours]		M	A	
+L24	3	[PLAIN:pour]		H	A	
+L24	4	[PLAIN:cela]		H	A	
+L24	5	41	E	H	AB	agree
+L24	6	SYM:X		M	AB	agree-flagged A:H/B:M
+L24	7	SYM:lambda		M	AB	agree-flagged A:H/B:M
+L24	8	29		H	AB	agree
+L24	9	[PLAIN:soyt]		M	A	
+L24	10		signs cut at strip top/seam (c3-like, 22?)	L	open	A: B:- | not sent to vision
+L25	1	[PLAIN:muen?]		L	A	
+L25	4	SYM:x	dark, crossed	M	A	A:SYM:x B:- | dark cross-with-dot sign after grey 'bo la' (seg1 end/seg2); B's col4 'cross-dot' is this same sign, misaligned by the aligner -- one sign, not two
+L25	5	[PLAIN:di]		L	A	
+L25	6	[PLAIN:quoy]		M	A	
+L25	7	[PLAIN:/te?]	dark blot	L	A	
+L25	11	[PLAIN:dung]		M	A	
+L25	12	SYM:5-hook	dark 5/ʃ-like sign	M	A	A:SYM:5-hook B:- | dark 5/z-like sign with long tail after 'dung' (seg3 end, repeated at seg4 start = overlap); B's first 'J-bar' at col5 is this sign
+L25	13	SYM:dagger	dark T/dagger with dots	M	A	A:SYM:dagger B:- | dark T/dagger with dot to its right (seg3 end/seg4 start overlap); B's second 'J-bar' at col6 is this sign
+L25	16	SYM:v		L	A	A:SYM:v B:SYM:J-bar | v-shape following the low '2o' in seg4; may belong with col4 as a word ('zov..') rather than a separate sign
+L25	17	SYM:cross	t/+ sign	M	A	A:SYM:cross B:SYM:J-bar | t/+ sign with long horizontal arm, seg4 mid; B's J-bar at this column is misaligned (see cols 2-3)
+L25	18	SYM:crossed-f	7/f-like with cross bar	M	B	A:SYM:crossed-hook B:SYM:crossed-f | f with cross bar, seg4 right of col6; B's name fits better than A's crossed-hook for this shape
+L25	18a	SYM:crossed-hook	7/f-like with cross bar	L	A	separate 7/Z-like sign with a cross bar immediately before '4E' in seg4; A's crossed-hook; splitting col7 into two signs (f-crossed + Z-crossed) -- they look separated by a gap but could be one compound sign
+L25	19	4	E	H	AB	agree
+L25	20	20		H	AB	agree
+L25	21	52		H	A	A:52 B:52 | '52' clear in seg5, dot below the 2
+L25	22	SYM:inverted-T		H	A	A:SYM:inverted-T B:SYM:inverted-T | clear inverted-T in seg5
+L25	23	SYM:double-cross	stem with two cross bars	H	A	A:SYM:double-cross B:SYM:double-cross | stem with two cross bars, clear in seg5
+L25	24	SYM:m	m with cross stroke	M	A	A:SYM:m B:SYM:m | m-shape with a cross stroke over its first leg, seg5; shape clear, identity of the stroke arguable
+L25	25	SYM:omega	preceded by c-like stroke	M	A	A:SYM:omega B:SYM:omega | omega-like sign preceded by a small c-like stroke (may be part of the sign); grey 'a' gloss below it is not part of the code
+L26	1	248		H	A	A:248 B:248 | clear 2-4-8, the 8 has a long tail but no ambiguity
+L26	2	160	y	H	AB	agree
+L26	2b6	SYM:Y	B-only	M	B	A:- B:SYM:Y | y-shaped sign written right after 160 (A took it as a mark on 160); shape clear, but whether it is a separate code or a flourish of 160 is arguable
+L26	3	197	dot after	H	AB	agree
+L26	4	SYM:n-arch	arch/omega-like loop with stem	M	A	A:SYM:n-arch B:SYM:h-loop | arch/loop with long left stem after '197.'; same sign as col12; A's and B's names describe the same shape
+L26	5	20		H	AB	agree
+L26	6	SYM:M	slash before	H	A	A:SYM:M B:SYM:M | m-shaped sign with a descender between 20 and 42, clearly separate
+L26	7	42		H	AB	agree
+L26	8	SYM:f		M	A	A:SYM:f B:SYM:f | f in lighter ink between 42 and 9; shape clear, lighter ink could mean a later insertion
+L26	9	9		M	A	A:9 B:9 | q-shaped 9, same form as the 9s in 599; segmentation from the f before it is slightly arguable
+L26	10	599		H	B	A:599 B:599 | clear 5-9-9
+L26	11	SYM:n-arch	arch loop with stem	M	A	A:SYM:n-arch B:SYM:h-loop | same arch-with-stem sign as col5
+L26	12	22		H	AB	agree
+L26	13	17	E	H	AB	agree
+L26	14	20		H	AB	agree
+L26	15	327		H	AB	agree
+L26	16	185		H	AB	agree
+L26	16b7	390	B-only	M	B	A:- B:390 | end of segment 3 and repeated at start of segment 4 (overlap); middle digit has a closed upper loop like the other 9s but a crossing stroke makes A's 4 (340) possible
+L26	19	2		M	settled	A:2 B:2 | small grey '2' before the blot; the shape is clear but the ink is lighter, so it could be the gloss hand
+L26	20	SYM:x	large dark blot x-shape, dot after	M	A	A:SYM:x B:SYM:x | heavy blotted x-shape followed by a dot, before 'la'; the shape is clear, but a blot over some other sign cannot be excluded
+L26	21	[PLAIN:la]		M	A	
+L27	1	[PLAIN:qui]		L	A	
+L27	2	SYM:dagger	dark	M	A	A:SYM:dagger B:SYM:double-cross | heavy dark cross after 'ou', upright with hooked/looped head and one crossbar below the top; single crossbar so dagger over double-cross, but the head is blotted and the long strike-through stroke of 'pour' passes through it
+L27	3	[PLAIN:pouvoit]	struck through	L	A	
+L27	4	[PLAIN:le]		L	A	
+L27	8	[PLAIN:po]	dark, cipher-like	L	A	
+L27	13	4	numerals cut at strip bottom (2017?)	M	B	A: B:4 | dark '4' set between two dots after 'estre' (seg 2 end / seg 3 start), the dot-framing is the numeral convention; open period 4 shape could be read as a plaintext 'a' (pass A) but the cross-stroke favours 4
+L27	14	SYM:B	B/8-like loop	M	A	A:SYM:B B:SYM:B | cursive B-like loop, in lighter thinner ink than the triangle/40/50 that follow; joined to the next sign; could be a single ligatured symbol with col 4 or gloss-hand ink
+L27	15	SYM:omega		M	A	A:SYM:omega B:SYM:omega | w/omega-shaped double loop joined to the B in the same lighter ink; segmentation with col 3 arguable
+L27	16	SYM:triangle		H	AB	agree
+L27	17	40	0 has bar, maybe 48	M	A	A:40 B:40 | '4' clear; second digit an oval with a horizontal bar through it (theta-like), read as barred 0; 48 possible but no waist/pinch visible
+L27	18	50		H	AB	agree
+L27	19	SYM:inverted-T		H	A	A:SYM:inverted-T B:SYM:inverted-T | clear inverted-T joined to the following 20 (seg 4 end and repeated at seg 5 start)
+L27	20	20		H	AB	agree
+L27	21	304		H	AB	agree
+L27	22	SYM:venus	venus-like loop with cross	H	B	A:SYM:crossed-loop B:SYM:venus | circle with a long vertical stem and crossbar below (venus sign); A's crossed-loop is the same sign, B's name adopted
+L27	23	SYM:Y		M	A	A:SYM:Y B:SYM:Y | Y/fork shape after the venus sign, short and partly run into it; could be an r-like stroke
+L27	24	159		M	A	A:159 B:159 | '59' clear; leading '1' is a small detached stroke, readable as 1 but faint
+L28	1	22		H	AB	agree
+L28	2	SYM:triangle		H	AB	agree
+L28	3	SYM:+	stroke with dot	M	B	A:SYM:dagger B:SYM:+ | plain cross with a small hook/tick at top-left; no second bar, so not a dagger/double-cross; tick could be a pen-lift
+L28	4	SYM:double-cross		M	B	A:SYM:cross B:SYM:double-cross | cross with a second short crossbar (‡-like), distinct from col 3; drawn slightly faint
+L28	5	SYM:Y		H	settled	A:SYM:Y B:SYM:Y | clear y with descender, both passes agree
+L28	6	[PLAIN:en]		H	A	
+L28	7	[PLAIN:point]		H	A	
+L28	8	48		H	settled	A:48 B:48 | '48' clear in segment 2 after plaintext 'voire'
+L28	9	SYM:triangle		H	AB	agree
+L28	10	SYM:Y	slash through	M	settled	A:SYM:Y B:SYM:Y | y whose descender runs into a long slash below the band; y shape itself clear
+L28	11	SYM:plus-minus		H	B	A:SYM:double-cross B:SYM:plus-minus | clear + with a bar beneath (±)
+L28	12	295		H	settled	A:295 B:295 | '295' clear, repeated at segment 2/3 overlap
+L28	13	5	dot	H	settled	A:5 B:5 | '5' followed by a dot (5·); dot is a mark, not a separate sign
+L28	14	SYM:omega-bar		M	B	A:SYM:omega B:SYM:omega-bar | omega/ϖ shape with a horizontal stroke across the top; bar is visible but short
+L28	15	23		H	settled	A:23 B:23 | '23' clear
+L28	16	SYM:+	partly grey	M	B	A:SYM:cross B:SYM:+ | single cross with a tail on the downstroke, one crossbar only
+L28	17	50		H	settled	A:50 B:50 | '50' clear
+L28	18	SYM:venus	venus-like	H	B	A:SYM:crossed-loop B:SYM:venus | circle on a cross (♀), clear
+L28	19	SYM:hash		H	B	A:SYM:# B:SYM:hash | grid/# sign, clear
+L28	21	SYM:Y		H	settled	A:SYM:Y B:SYM:Y | clear y
+L28	22	SYM:inverted-T		H	settled	A:SYM:inverted-T B:SYM:inverted-T | clear ⊥
+L28	23	SYM:F		H	settled	A:SYM:F B:SYM:F | clear F-like sign
+L28	24	[PLAIN:?]	dark blot/word start	L	A	
+L28	26	[PLAIN:de]		M	A	
+L28	27	[PLAIN:frans]		M	A	
+L29	13	SYM:loop	sign cut at strip bottom (loop)	L	settled	A: B:- | looped sign (l/C-like) at start of lower band in seg 4, bottom cut by strip edge; may be a stroke of a gloss or the row below; pass A had it as ? only
+L29	15	22		M	A	A:22 B:32 | two z-shaped 2s, same shape twice; first stroke is not a 3 (no upper bowl); bottom slightly cut in seg 4
+L29	16	SYM:omega		H	A	A:SYM:omega B:SYM:omega | clear w-shaped sign, both in seg 4 and repeated whole in seg 5 overlap
+L29	17	SYM:crossed-loop	9/q-like with bar	M	A	A:SYM:crossed-loop B:SYM:venus | q/9-like loop with descender, seen whole in seg 5; a cross/bar on the descender is not clearly visible at this resolution, so A vs B name is arguable
+L29	18	SYM:pi		M	A	A:SYM:pi B:SYM:pi | n-shaped sign with flat top, seen in seg 5; could be read as n, but it sits in the code run before Quant
+L29	19	[PLAIN:Quant]		H	A	
+L30	1	SYM:omega		H	A	A:SYM:omega B:SYM:omega | clear omega (w-shaped), seg 1
+L30	2	SYM:cross		H	A	A:SYM:cross B:SYM:+ | cross with long lower stroke touching omega; not inverted-T (crossbar above, stem runs below)
+L30	3	589		H	B	A:589 B:589 | digits 5-8-9 clear in seg 1
+L30	4	SYM:long-s	tall open arch/long-s	M	B	A:SYM:hook B:SYM:long-s | tall hooked stroke with descender, same shape as long-s elsewhere; A's 'hook' is the same sign under another name
+L30	5	55		H	AB	agree
+L30	6	SYM:inverted-T		H	AB	agree
+L30	7	SYM:triple-E	stacked E/xi	M	B	A:SYM:xi B:SYM:triple-E | three stacked E-like strokes (A: xi); sign clear, name arguable, possibly continues above band
+L30	8	334		H	AB	agree
+L30	9	SYM:lambda		H	AB	agree
+L30	10	16		H	AB	agree
+L30	11	SYM:inverted-T		H	AB	agree
+L30	12	SYM:infinity		H	AB	agree
+L30	13	17		H	AB	agree
+L30	14	SYM:beta-R	tall stroke joined to next	M	B	A:SYM:long-s B:- | read as ONE compound sign: looped long-s/ss body joined to an R/Omega-like stroke (seen in seg 2 end and seg 3 start); A split it into long-s + 8 + Omega -- merge cols 14,15,16 into this one sign; the split remains possible
+L30	17	320		H	B	A:320 B:320 | 3 in this hand's z-like form (as in 334), then 2, 0; clear
+L30	18	[PLAIN:estans]		H	A	
+L30	19	[PLAIN:tous]		H	A	
+L30	20	17		H	AB	agree
+L30	21	9	dot	H	AB	agree
+L30	22	70	dot	H	B	A:70 B:70 | clear, dots either side (9.70.)
+L30	23	20		M	A	A:20 B:- | '2' clear, second digit small loop with a rising tail, top cut by strip edge; 0 more likely than 6 (B's 26)
+L30	26	SYM:T	cut at strip top	L	A	A:SYM:T B:17 | T-like foot (bar with stem) seen in seg 4/5 overlap, top cut; could be the lower part of a 17 (B) running onto the row above
+L31	1	[PLAIN:?]	strip mostly interline; words at bottom right only	L	A	
+L31	2	[PLAIN:?nuic]		L	A	
+L31	3	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L31	4	[PLAIN:fort]		M	A	
+L31	5	[PLAIN:fait]		M	A	
+L31	6	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L32	1	[PLAIN:?]		L	A	
+L32	2	[PLAIN:la]		M	A	
+L32	3	[PLAIN:conference]		M	A	
+L32	4	[PLAIN:ilz]		M	A	
+L32	5	[PLAIN:ne]		H	A	
+L32	6	[PLAIN:font]		M	A	
+L32	7	[PLAIN:que]		M	A	
+L32	8	[PLAIN:luyter?]		L	A	
+L32	9	[PLAIN:a]		M	A	
+L32	10	[PLAIN:la]		M	A	
+L32	11	[PLAIN:veue?]		L	A	
+L32	12	SYM:at	looped a-in-circle	L	open	A:SYM:at B:- | not sent to vision
+L32	13	[PLAIN:la]		M	A	
+L32	14	[PLAIN:plus?]		L	A	
+L33	1	[PLAIN:aultre]	underlined	M	A	
+L33	2	[PLAIN:beaucoup]		M	A	
+L33	3	[PLAIN:plus]	partly grey	M	A	
+L33	4	[PLAIN:?]	cut at strip bottom	L	A	
+L33	5	[PLAIN:de]		L	A	
+L33	6	[PLAIN:celuy]		L	A	
+L33	7	[PLAIN:ministre]		M	A	
+L33	8	[PLAIN:;]		L	A	
+L33	9	6	dot	H	AB	agree
+L33	10	SYM:lambda		H	AB	agree
+L33	11	344	last digit 4 or 9	M	AB	agree-flagged A:M/B:M
+L34	1	[PLAIN:neust]		M	A	
+L34	2	[PLAIN:grand]		M	A	
+L34	3	[PLAIN:prins]		L	A	
+L34	4	[PLAIN:le]		L	A	
+L34	5	[PLAIN:?]	w-like word	L	A	
+L34	6	[PLAIN:tempe?]		L	A	
+L34	7	SYM:X	large crossed X with bars	L	open	A:SYM:X B:SYM:crossed-X | not sent to vision
+L34	8	[PLAIN:ce]		M	A	
+L34	9	[PLAIN:trouvas]		M	A	
+L34	10	[PLAIN:ce]		L	A	
+L34	11	[PLAIN:?]	cut at strip top	L	A	
+L35	1	SYM:5-hook	dark 5/S-like hook	L	open	A:SYM:5-hook B:- | not sent to vision
+L35	2	SYM:G	large looped G, dark with grey inner a	L	open	A:SYM:G B:- | not sent to vision
+L35	4	SYM:dagger	dark t-like	L	open	A:SYM:dagger B:- | not sent to vision
+L35	6	SYM:omega	grey	L	open	A:SYM:omega B:- | not sent to vision
+L35	7	SYM:G	looped, with dark V	L	open	A:SYM:G B:- | not sent to vision
+L35	10	SYM:G	dark looped	L	open	A:SYM:G B:- | not sent to vision
+L35	11	[PLAIN:?]	dark letters	L	A	
+L35	13	252	overlined	H	AB	agree
+L35	14	SYM:#	large crossed hatch with slanted bars	L	open	A:SYM:# B:SYM:crossed-X | not sent to vision
+L35	15	304		H	AB	agree
+L35	16	SYM:omega		M	AB	agree-flagged A:H/B:M
+L35	17	14		M	AB	agree-flagged A:H/B:M
+L35	18	SYM:crossed-loop	venus-like	L	open	A:SYM:crossed-loop B:SYM:venus | not sent to vision
+L35	19	284	crossed 4 or 7	M	AB	agree-flagged A:M/B:M
+L35	20	SYM:omega		M	AB	agree-flagged A:M/B:M
+L35	21	SYM:beta	beta/long-s with stroke	L	AB	agree-flagged A:L/B:L
+L35	22	SYM:lambda		M	AB	agree-flagged A:M/B:M
+L36	1	28	8 in grey ink	M	A	A:28 B:28 | 2 dark, 8 in lighter grey ink but clear 8 shape; ink tone (possible later touch) is the only doubt
+L36	2	25		H	AB	agree
+L36	4	203		H	A	A:203 B:203 | clear 2-0-3, 3 with descending tail
+L36	5	SYM:double-cross	grey t + dark T with loop (H-like)	M	B	A:SYM:crossed-hook B:SYM:double-cross | tall sign of two upright strokes joined by crossbars (t-like left stroke, H-like right with loop at top); one sign, not two
+L36	6	[PLAIN:de]		L	A	
+L36	7	[PLAIN:ceb?]		L	A	
+L36	8	[PLAIN:ilz]		M	A	
+L36	9	[PLAIN:dict]		M	A	
+L36	10	[PLAIN:qui]		M	A	
+L36	11	SYM:3-over-o	z over o, 8-like	M	B	A:SYM:8-loop B:SYM:3-over-o | z/3-shaped upper stroke sitting on a closed o loop; same sign seen at end of segment 3 and repeated at start of segment 4 (segment overlap, count once)
+L36	12	[PLAIN:?]	cut at strip bottom	L	A	
+L36	13	[PLAIN:quil]		L	A	
+L36	14	[PLAIN:trouvera]		M	A	
+L36	15	[PLAIN:.]		M	A	
+L36	16	[PLAIN:Ce]		M	A	
+L37	6	[PLAIN:de]	dark	L	A	
+L37	7	[PLAIN:Roi]	dark	L	A	
+L37	8	[PLAIN:les]		M	A	
+L37	9	[PLAIN:loix]		M	A	
+L37	10	[PLAIN:?]	G/6-like loop, cipher?	L	A	
+L37	11	[PLAIN:Je]		M	A	
+L37	12	[PLAIN:ne]		H	A	
+L37	13	[PLAIN:croys]		M	A	
+L38	1	300		H	AB	agree
+L38	2	17		H	AB	agree
+L38	3	SYM:M	M with looped top (Mf-like)	L	open	A:SYM:M B:SYM:M-loop | not sent to vision
+L38	4	SYM:C	large open C	L	open	A:SYM:C B:SYM:C-loop | not sent to vision
+L38	5	[PLAIN:?]	cut at strip top	L	A	
+L38	6	[PLAIN:?]	cut at strip bottom	L	A	
+L38	7	[PLAIN:allez?]		L	A	
+L38	8	[PLAIN:celluy]		M	A	
+L38	9	[PLAIN:ysse?]		L	A	
+L38	10	[PLAIN:pour]		M	A	
+L38	11	[PLAIN:aller]		M	A	
+L38	12	[PLAIN:a]		M	A	
+L38	13	[PLAIN:Nantes]		M	A	
+L39	1	[PLAIN:Roy]		H	A	
+L39	2	[PLAIN:est]		H	A	
+L39	3	[PLAIN:alle]		H	A	
+L39	4	[PLAIN:ce]		H	A	
+L39	5	[PLAIN:jour]		H	A	
+L39	6	[PLAIN:a]		H	A	
+L39	7	[PLAIN:Foug]		M	A	
+L39	8	[PLAIN:et]		M	A	
+L39	9	[PLAIN:dous?]		L	A	
+L39	10	[PLAIN:?]		L	A	
+L39	11	[PLAIN:?]		L	A	
+L39	12	[PLAIN:andely?]		L	A	
+L39	13	[PLAIN:?]	struck through	L	A	
+L39	14	[PLAIN:?]	struck through	L	A	
+L39	15	[PLAIN:voilla]		H	A	
+L39	16	[PLAIN:Monseigneur]		H	A	
+L40	1	[PLAIN:de]		M	A	
+L40	2	[PLAIN:la]		H	A	
+L40	3	[PLAIN:Cappelle]		M	A	
+L40	4	[PLAIN:ce]		M	A	
+L40	5	[PLAIN:deux]		M	A	
+L40	6	[PLAIN:de]		L	A	
+L40	7	[PLAIN:?]		L	A	
+L40	8	[PLAIN:.]		L	A	
+L40	9	[PLAIN:Mr]		L	A	
+L40	10	[PLAIN:de]		L	A	
+L40	11	[PLAIN:Linars]		L	A	
+L40	12	[PLAIN:le]		M	A	
+L40	13	[PLAIN:pour]		H	A	
+L40	14	[PLAIN:ce]		M	A	
+L40	15	[PLAIN:Reste]		M	A	
+L40	16	[PLAIN:de]		M	A	
+L41	1	[PLAIN:faire]		M	A	
+L41	2	[PLAIN:ce]		M	A	
+L41	3	[PLAIN:que]		M	A	
+L41	4	[PLAIN:vous]		H	A	
+L41	5	[PLAIN:plaist]		M	A	
+L41	6	[PLAIN:mander]		M	A	
+L41	7	[PLAIN:Je]		L	A	
+L41	8	[PLAIN:?]		L	A	
+L41	9	[PLAIN:et]		L	A	
+L41	10	[PLAIN:tiendray]		M	A	
+L41	11	[PLAIN:la]		M	A	
+L41	12	[PLAIN:main]		H	A	
+L42	1	[PLAIN:1000]	probably plaintext sum (followed by escus sign)	M	AB	A:1000 B:[PLAIN:1000] | both passes call it the plaintext sum before 'escus'; settled by rule, no vision
+L42	2	[PLAIN:escus]	abbreviation sign	M	A	
+L42	3	[PLAIN:a]		L	A	
+L42	4	[PLAIN:mons]		H	A	
+L42	5	[PLAIN:de]		H	A	
+L42	6	[PLAIN:Sancy]		M	A	
+L42	7	[PLAIN:et]		M	A	
+L42	8	[PLAIN:Chomberg]		M	A	
+L42	9	[PLAIN:et]		M	A	
+L42	10	[PLAIN:?]		L	A	
+L43	1	[PLAIN:?]	mostly cut; line body only in lower segments	L	A	
+L43	2	[PLAIN:contans]		L	A	
+L43	3	[PLAIN:les]		M	A	
+L43	4	[PLAIN:ayans]		M	A	
+L43	5	[PLAIN:tous]		M	A	
+L43	6	[PLAIN:mis]		L	A	
+L44	1	[PLAIN:pour]		L	A	
+L44	2	[PLAIN:voulloir]		M	A	
+L44	3	[PLAIN:que]		M	A	
+L44	4	[PLAIN:vous]		H	A	
+L44	5	[PLAIN:serez]		M	A	
+L44	6	[PLAIN:?]		L	A	
+L45	1	[PLAIN:Ce]		L	A	
+L45	2	[PLAIN:?]	cut at strip top	L	A	
+L45	3	[PLAIN:la]		L	A	
+L45	4	[PLAIN:fortune]		M	A	
+L45	5	[PLAIN:a]		M	A	
+L45	6	[PLAIN:vous]		H	A	
+L45	7	[PLAIN:servir]		M	A	
+L45	8	[PLAIN:et]		M	A	
+L45	9	[PLAIN:vous]		H	A	
+L45	10	[PLAIN:suys]		M	A	
+L45	11	[PLAIN:asseure]		M	A	
+L46	1	[PLAIN:trouvez]	upper line fragment	L	A	
+L46	2	[PLAIN:fort]	upper line fragment	L	A	
+L46	3	[PLAIN:et]		M	A	
+L46	4	[PLAIN:mons]		M	A	
+L46	5	[PLAIN:de]		M	A	
+L46	6	[PLAIN:Sancy]		M	A	
+L46	7	[PLAIN:ny]		L	A	
+L46	8	[PLAIN:ou]		L	A	
+L46	9	[PLAIN:oublyez]		M	A	
+L46	10	[PLAIN:rien]		M	A	
+L46	11	[PLAIN:et]		M	A	
+L46	12	[PLAIN:me]		M	A	
+L46	13	[PLAIN:serez]		M	A	
+L46	14	[PLAIN:a]		M	A	
+L46	15	[PLAIN:jamais]		M	A	
+L47	1	[PLAIN:Monseigneur]		H	A	
+L48	1	[PLAIN:A]		M	A	
+L48	2	[PLAIN:paris]		M	A	
+L48	3	[PLAIN:ce]		M	A	
+L48	4	[PLAIN:xij]		M	A	
+L48	5	[PLAIN:aoust]		H	A	
+L48	6	[PLAIN:1593]	date	H	A	
+L48	7	[PLAIN:Votre]		M	A	
+L48	8	[PLAIN:tres]		M	A	
+L48	9	[PLAIN:humble]		H	A	
+L48	10	[PLAIN:tres]		M	A	
+L48	11	[PLAIN:affectionne]		M	A	
+L48	12	[PLAIN:serviteur]		M	A	
+L48	13	[PLAIN:Lauriere?]	signature, cut at strip bottom	L	A	
+L49	1	[PLAIN:Lauriere?]	signature tail	L	A	

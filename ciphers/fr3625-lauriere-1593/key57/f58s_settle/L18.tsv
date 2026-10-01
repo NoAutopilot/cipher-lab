@@ -1,0 +1,15 @@
+col	settled	grade	source	reason
+1	[PLAIN:bov]	M	settled	merge cols 1+2: ink reads as a plaintext word b-o-v (looped-ascender b, round o, v) in the same hand and size as the code, not 160/60 plus a symbol; could still be 6o + v-sign, hence M
+2	[PLAIN:bov]	M	settled	merged into col 1 (the v is the word's last letter, not a separate SYM:v)
+6	40	M	A	40 clear; an x-shaped cross touches the 0 followed by a dot -- may be a separate cross sign (SYM:cross) rather than a mark on 40; segmentation arguable
+7	8	M	B	single clear 8 after the dot; starts the run into the blot
+8	?	L	settled	solid ink blot between the 8 and the pi; could be a second 8 (making col7+8 = 88, pass A) or a separate symbol; nothing legible
+9	SYM:pi	H	A	clean pi shape
+10	248	M	A	2 and 4 clear; last digit looped like 8 but overwritten/tangled with a stroke, so arguable
+12	SYM:pi	H	A	clean pi shape
+13	2	L	A	a 2 is visible, immediately followed by a heavy blotted stroke (f/long-s shape) that may hide a second digit or a separate sign
+15	SYM:omega	H	A	clear omega shape
+18	SYM:T	M	B	flat-topped T-like sign with descender hooking left; not shaped like this hand's 1 or 7 (compare 17 in segment 1), so not 117
+19	SYM:T	M	B	second identical T-like sign
+20	SYM:+	M	B	clear plus cross, separate sign after the two T-signs
+21	5	M	A	5 shape clear; could conceivably be a plaintext s, hence M

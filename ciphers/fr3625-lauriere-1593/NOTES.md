@@ -1036,7 +1036,7 @@ calls: 2 (the two passes), of the brief's 3.
 Waits on the fr.3632 no.8 image (owner-side BnF item, ASKS 78 devis batch), since 27 Sept 2026 -- but the
 folder's own named next step (U3/U4) needs no new material at all.
 
-- Run U3 (settle the 91 disagreements) then U4 (`key57/control_key57.py --apply-f58`, 20 seeds) on the 49 sheets already on disk -- the brief's own next step. M.
+- (Done 1 Oct 2026, LAU-U3U4: U3 settled, U4 run, GATE FAIL again -- see the LAU-U3U4 section; the target went `found-solved` the same hour, WEBCHECK.) Parent's call: a bounded key57.tsv completion pass on the fol.103 fold-out (the 31 in-range f.58r codes key57.tsv never transcribed, listed in LAU-U3U4, plus PR 15's alphabet swap), then the same gate re-run as a closing check; about 2-3 vision calls on crops already in key57/. M.
 - Run `tools/interlinear_align.py` on fol.58r's interlinear gloss as a C-grade crib, independent of key57, per NOTES's own suggestion. M.
 - A higher-resolution/adaptive re-crop of fr.3985 f.58r's dense middle section (flagged as this session's own weaker link, cheaper than a fresh key-table pass). M.
 
@@ -1091,3 +1091,110 @@ $ python3 tools/intake_gate_check.py fr3625-lauriere-1593
 fr3625-lauriere-1593: found-solved (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## LAU-U3U4 (1 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-01-account4-lau-u3u4.md`. `date -u` at claim: 1 Oct 2026 23:32 UTC. The folder's
+own named next step after LAU-F58B: settle the pass-A/pass-B disagreements on fol.58r from the deskewed sheets (U3),
+then run the key57 positive-control gate on the settled ciphertext (U4). gallica.bnf.fr requests: 0 (every sheet
+was already on disk). Vision calls: 15 (one Opus 5.5 subagent call per sheet, each given only that sheet's path, the
+two passes' rows for that line with their marks, and key57's numeral code list without meanings;
+`key57/f58s_settle/PROMPT_TEMPLATE.txt`, results `key57/f58s_settle/L*.tsv`). The worker opened no image itself.
+
+### U3: what was settled, and how
+
+Review queue = `f58s_reconcile/disagreements.tsv` (91 columns) plus `uncertain.tsv` (97 columns), per the README
+common tail's REC-CONF line. Lines sent to a sheet: every line with a numeral in dispute or a numeral agreed only at
+L (L17-L23, L25-L30, L36) plus L06 (pass A's lone `75?` on an otherwise plaintext row). Lines not sent: L15 and L33
+(numerals agreed at M, settled by rule at M), L24, L31, L32, L34, L35, L38, L09, L11, L14 (symbol-only disagreements;
+key57's numeral pool cannot resolve a symbol, so they do not touch U4 -- left `open` at grade L with both passes'
+values in the note column), L42 (`1000`: both passes call it the plaintext sum before "escus"; settled `[PLAIN:1000]`
+M by rule).
+
+Merge: `key57/build_f58s_ciphertext.py` walks pass A's full row order (plaintext included, since the aligner drops
+plaintext and the judge needs it), substitutes the settled value for each aligned sign column, and grades:
+agreed and both H -> H (source AB); agreed but flagged -> the lower of the two confidences (AB); settled from the
+sheet -> the reconciler's grade and source (A, B or `settled`); disagreement on a line not sent -> pass A's value at L,
+source `open`. Columns the reconciler folded into a neighbour (6: L17 col 4, L18 col 2, L22 col 8, L26 col 21, L30
+cols 15-16) are dropped; one column it split (L25 col 7a) is added. Output `key57/f58s_ciphertext.tsv`, 712 rows.
+
+Counts (rule 4):
+
+| | H | M | L | open (not sent) | total |
+|---|---|---|---|---|---|
+| columns settled from a sheet (150) | 43 | 73 | 34 | -- | 150 |
+| all sign rows (251 after the L42 fix) | 119 | 84 | 48 | 22 (inside the L count) | 251 |
+| numerals only (138) | 85 | 37 | 16 | 0 | 138 |
+
+Plaintext rows 456 (97 of them gloss-marked). Where the two passes had disagreed, the sheet reconciler sided with
+pass B about as often as with pass A; the commonest shapes were (1) the aligner matching two different signs across
+a segment overlap (L25 cols 1-7: B's readings sat one to three columns off A's, the same ink), (2) a numeral both
+passes placed in this band but which sits cut at the band edge and probably belongs to the neighbouring row (L26
+cols 19-20, L28 cols 22-23, L29 cols 1-2, L30 cols 22-24 -- all graded L, kept, and removed again in the sensitivity
+run below), and (3) a word in the main hand read as code by one pass (L18 `160`/`60`+`v` -> `[PLAIN:bov]` M; L06
+`SYM:G 75?` -> `[PLAIN:et je]` M; L21 `SYM:qm` -> `[PLAIN:qm]` L).
+
+### U4: the gate, as pre-registered in LAU-F58 and LAU-F58B
+
+`python3 key57/control_key57.py --apply-f58 key57/f58s_ciphertext_nogloss.tsv --seeds 20`, with the 97 gloss-marked
+`[PLAIN]` rows removed first (`f58s_ciphertext_nogloss.tsv`, 615 rows). Full output and decoded text:
+`key57/f58s_gate_output_nogloss.txt`.
+
+```
+cipher-code tokens: 251, resolved by key57: 100, coverage=0.398 (non-gating)
+REAL decode: score=-0.930  null_p99=-1.902  real_p05=-0.866  judge=FAIL
+20 shuffled keys: mean=-0.957  range -0.999 .. -0.917   (3 of 20 score better than real: -0.917, -0.921, -0.925)
+GATE FAIL  (need judge PASS AND real above every shuffled score)
+```
+
+Sensitivity runs, script only, not registered: dropping the 16 L-grade numerals as well
+(`f58s_ciphertext_nogloss_noL.tsv`): real -0.918, shuffle mean -0.951, max -0.913, 2 of 20 better, judge FAIL;
+gloss rows kept (`f58s_ciphertext.tsv`): real -0.920, shuffle max -0.915, judge FAIL. Every variant lands in the
+same place: real inside the shuffled-key distribution's upper tail, never outside it, and the judge below real_p05.
+
+Coverage detail (the number the next step turns on): of the 138 numerals, key57.tsv resolves 100; the 38 it does
+not are 57, 64, 66, 70 (x2), 154 (x2), 159, 160, 185 (x2), 197, 220, 243, 248 (x2), 252, 262, 295, 300 (x2), 304 (x4),
+305, 309, 320, 334 (x2), 344, 355, 390, 394, 440, 550, 589, 599 -- 26 of them at grade H, 31 inside the table's 1-353
+numbered range, 7 above it. These are codes key57.tsv never transcribed (NX-LAU3 read the syllable and double bands
+fully and sampled the word bank), not misreads of codes it has.
+
+### Outcome, in the folder's own terms
+
+**(b) again:** the gate missed. (d) was ruled out by LAU-F58 (fol.58r is the cited letter); (c) does not apply
+(251 tokens, 138 numerals, corpus on disk, and the transcription cleared LAU-F58B's own 0.80 agreement gate before this
+job settled every numeral dispute from the ink). What this run changes against LAU-F58: caveat (ii) there -- that the
+f.58r transcription, at 39.2% cross-pass agreement, might be the noisier link -- is no longer what carries the
+result; the same gate fails on a transcription with 85 of 138 numerals at H and the rest settled from the sheets. The
+two sources still open are (i) key57.tsv's own fidelity and coverage (38 of 138 numerals on key57's own citer's letter
+are codes its table never read, so 0.398 coverage is as much a transcription gap in the key as a property of the
+letter) and the whole-letter judge's weak power (LAU-F58 section 4: 1574 folded letters, most of them untouched
+plaintext backbone). The decoded spans key57 does resolve read as syllable runs ("de ri ti ri ma me ca qui le ga",
+"le po fa ri mo le me"), not words; an observation, not a gate.
+
+Per rule 3 this is a control-backed negative on the question "does key57.tsv as transcribed read fol.58r above a
+shuffled-key control"; it is not a negative on "is fr.3995 no.57 the key for this letter", since the key table is
+only partly transcribed. No novelty wording (rule 10): nothing here is a reading.
+
+**Read against the WEBCHECK section above (same hour, other worker):** while this job ran, WEBCHECK-fr3625-lauriere-1593
+found that an outside party (setsunaatto, dbourdeau/cyphersolver issue 13, 29 Sept 2026, corroborated by D. Bourdeau
+in PR 15) has read fr.3625 no.55 in full with this same key sheet, Nevers key no.57, and the status word on line 1 is
+now `found-solved`. That is consistent with this run, not against it: the key is the right one and key57.tsv is the
+weak link -- NX-LAU3 transcribed it only in part (PR 15's thread names 21 new word numbers on f.103r that Bourdeau
+confirmed, and an alphabet swap, mu under C and the c-form under H, in his own key57.txt), which is the same gap the
+38 unresolved f.58r numerals above point at. So the named next step below is no longer a solving step: any completion
+of key57.tsv from the published key and any reading of no.55 with it is N0 (rule 10). Whether to run it anyway, as a
+closing check on the LAU-F58 loop (does the full key read f.58r above the shuffled-key control, which would also test
+this folder's own f.58r transcription), is the parent's call; it is cheap (2-3 vision calls) and script-gated.
+
+**Named next step (one, parent's call given `found-solved`):** a bounded completion pass on key57.tsv -- look up
+exactly the 31 in-range codes above on the fol.103 fold-out crops already in `key57/` (`crop_*.jpg`,
+`f198_hi.jpg`-`f201_hi.jpg`; 2-3 vision calls, one crop set per call, codes listed in the brief), with the PR 15
+alphabet swap applied, append them to key57.tsv at grade H/M, then re-run this same gate unchanged. If the gate passes,
+the LAU-F58 loop closes (key right, key57.tsv was short); if coverage rises past about 0.6 and it still fails, this
+folder's f.58r transcription is the remaining suspect. Follow-up suggestions, not run (Usage 7):
+the interlinear gloss as a C-grade crib through `tools/interlinear_align.py` (LAU-F58B's own suggestion, independent
+of key57); a keyed-span-only judge (score only the resolved words) to fix the power problem LAU-F58 section 4 named.
+
+Credit: S. Tomokiyo (cryptiana.web.fc2.com/code/nevers.htm) for no.57 and the fol.58 citation; setsunaatto (issue 13,
+PR 15) and D. Bourdeau for the no.55 reading and the key corroboration this section is read against. Cost: per the
+parent. Status: `found-solved` (line 1, set by WEBCHECK, not by this job).

@@ -1,0 +1,21 @@
+col	settled	grade	source	reason
+3	SYM:+	M	B	plain cross with a small hook/tick at top-left; no second bar, so not a dagger/double-cross; tick could be a pen-lift
+4	SYM:double-cross	M	B	cross with a second short crossbar (‡-like), distinct from col 3; drawn slightly faint
+5	SYM:Y	H	settled	clear y with descender, both passes agree
+6	48	H	settled	'48' clear in segment 2 after plaintext 'voire'
+8	SYM:Y	M	settled	y whose descender runs into a long slash below the band; y shape itself clear
+9	SYM:plus-minus	H	B	clear + with a bar beneath (±)
+10	295	H	settled	'295' clear, repeated at segment 2/3 overlap
+11	5	H	settled	'5' followed by a dot (5·); dot is a mark, not a separate sign
+12	SYM:omega-bar	M	B	omega/ϖ shape with a horizontal stroke across the top; bar is visible but short
+13	23	H	settled	'23' clear
+14	SYM:+	M	B	single cross with a tail on the downstroke, one crossbar only
+15	50	H	settled	'50' clear
+16	SYM:venus	H	B	circle on a cross (♀), clear
+17	SYM:hash	H	B	grid/# sign, clear
+18	4	L	settled	'h'-like / 4-like stroke overlaid by a grey diagonal slash (intrusion from neighbouring row?); could be 4 or an h-shaped symbol
+19	SYM:Y	H	settled	clear y
+20	SYM:inverted-T	H	settled	clear ⊥
+21	SYM:F	H	settled	clear F-like sign
+22	20	L	B	heavy ink blot after F; shape could be '20' but blotted; may also be a plaintext word start
+23	17	L	B	two thin strokes ('1' and a slanted '/' or '7') rising toward the row above; could be gloss/descenders of L27 rather than a code in this row

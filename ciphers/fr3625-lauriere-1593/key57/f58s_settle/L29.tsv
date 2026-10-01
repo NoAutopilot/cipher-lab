@@ -1,0 +1,7 @@
+col	settled	grade	source	reason
+1	SYM:loop	L	settled	looped sign (l/C-like) at start of lower band in seg 4, bottom cut by strip edge; may be a stroke of a gloss or the row below; pass A had it as ? only
+2	17	L	A	small numeral after the loop, bottom cut; reads 1+7 but 12 is possible; B missed it
+3	22	M	A	two z-shaped 2s, same shape twice; first stroke is not a 3 (no upper bowl); bottom slightly cut in seg 4
+4	SYM:omega	H	A	clear w-shaped sign, both in seg 4 and repeated whole in seg 5 overlap
+5	SYM:crossed-loop	M	A	q/9-like loop with descender, seen whole in seg 5; a cross/bar on the descender is not clearly visible at this resolution, so A vs B name is arguable
+6	SYM:pi	M	A	n-shaped sign with flat top, seen in seg 5; could be read as n, but it sits in the code run before Quant

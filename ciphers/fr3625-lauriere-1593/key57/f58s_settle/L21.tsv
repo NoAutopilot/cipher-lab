@@ -1,0 +1,10 @@
+col	settled	grade	source	reason
+1	17	L	A	at far left of segment 4, lower half cut at strip bottom; '1' and '7' tops only, partly overrun by a descender from the row above
+2	?	L	settled	only two or three dots/stroke ends after the 17 (colon-like), cut at the bottom; no distinct h-shaped symbol visible; may be punctuation or the cut top of a sign, not confirmed as SYM:h
+3	220	M	A	digits clearly 2-2-0, but their bottoms are cut by the strip edge
+4	339	M	A	reads 3-3-9 with the third digit's loop closed at the top (9 rather than the open 4 used in 334); bottoms cut; triangle follows immediately
+7	SYM:M	H	A	clear capital-M-shaped sign, separate from 17 and 154
+8	154	H	A	1-5-4 clearly in segment 5 (repeat of segment 4's end), Y follows
+9	SYM:Y	H	A	clear Y-shaped sign after 154 in both segments
+10	84	M	A	first digit clearly 8; second is a looped, curled form most like this hand's 4 but could be read 5; written close to 334
+12	[PLAIN:qm]	L	settled	q with an m/ui-like stroke and a mark above, at line end after 334; looks like an abbreviated plaintext word (qui/que?) rather than a code symbol, but SYM:qm (pass A) cannot be excluded

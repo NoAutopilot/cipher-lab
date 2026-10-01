@@ -1,0 +1,10 @@
+col	settled	grade	source	reason
+1	SYM:dagger	M	A	heavy dark cross after 'ou', upright with hooked/looped head and one crossbar below the top; single crossbar so dagger over double-cross, but the head is blotted and the long strike-through stroke of 'pour' passes through it
+2	4	M	B	dark '4' set between two dots after 'estre' (seg 2 end / seg 3 start), the dot-framing is the numeral convention; open period 4 shape could be read as a plaintext 'a' (pass A) but the cross-stroke favours 4
+3	SYM:B	M	A	cursive B-like loop, in lighter thinner ink than the triangle/40/50 that follow; joined to the next sign; could be a single ligatured symbol with col 4 or gloss-hand ink
+4	SYM:omega	M	A	w/omega-shaped double loop joined to the B in the same lighter ink; segmentation with col 3 arguable
+6	40	M	A	'4' clear; second digit an oval with a horizontal bar through it (theta-like), read as barred 0; 48 possible but no waist/pinch visible
+8	SYM:inverted-T	H	A	clear inverted-T joined to the following 20 (seg 4 end and repeated at seg 5 start)
+11	SYM:venus	H	B	circle with a long vertical stem and crossbar below (venus sign); A's crossed-loop is the same sign, B's name adopted
+12	SYM:Y	M	A	Y/fork shape after the venus sign, short and partly run into it; could be an r-like stroke
+13	159	M	A	'59' clear; leading '1' is a small detached stroke, readable as 1 but faint

@@ -1,0 +1,15 @@
+col	settled	grade	source	reason
+1	SYM:omega	H	A	clear omega (w-shaped), seg 1
+2	SYM:cross	H	A	cross with long lower stroke touching omega; not inverted-T (crossbar above, stem runs below)
+3	589	H	B	digits 5-8-9 clear in seg 1
+4	SYM:long-s	M	B	tall hooked stroke with descender, same shape as long-s elsewhere; A's 'hook' is the same sign under another name
+7	SYM:triple-E	M	B	three stacked E-like strokes (A: xi); sign clear, name arguable, possibly continues above band
+14	SYM:beta-R	M	B	read as ONE compound sign: looped long-s/ss body joined to an R/Omega-like stroke (seen in seg 2 end and seg 3 start); A split it into long-s + 8 + Omega -- merge cols 14,15,16 into this one sign; the split remains possible
+15	-	M	settled	merged into col 14 (A's '8?' is the loop in the middle of the beta-R sign, not a separate numeral)
+16	-	M	settled	merged into col 14 (A's 'Omega' is the R-like right half of the beta-R sign)
+17	320	H	B	3 in this hand's z-like form (as in 334), then 2, 0; clear
+20	70	H	B	clear, dots either side (9.70.)
+21	20	M	A	'2' clear, second digit small loop with a rising tail, top cut by strip edge; 0 more likely than 6 (B's 26)
+22	1	L	A	faint short stroke after 20, top cut at strip edge; row appears to rise out of the band here
+23	5	L	A	lower half of a 5 visible, top cut; B's reading of this span as part of '26' is possible
+24	SYM:T	L	A	T-like foot (bar with stem) seen in seg 4/5 overlap, top cut; could be the lower part of a 17 (B) running onto the row above
