@@ -372,3 +372,110 @@ Requests this pass: 0 network hosts (all work from images and text already on di
 `github.com` shallow clone was to scratchpad, not counted as a rate-limited host per the access playbook's own
 git-clone precedent in D2 above). No AskUserQuestion; no dollar figures for this worker (cost: see the lane
 ledger). Wall-clock: job brief's 60-minute box, this section written and pushed at roughly the 45-minute mark.
+
+## Web and blog check (WEBCHECK-decode-4450-bnf-fr20506-1525, 1 Oct 2026)
+
+Required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads", CHECK-SOLVED-WEB, 28 Sept
+2026), run 1 Oct 2026 23:35-23:41 UTC (clock read) by the account-4 WEBCHECK worker. No transcription, no decoding, no other
+folder touched. The item has no clear text, so the "distinctive phrase" is its opening ciphertext run from
+`ciphertext_f136.tsv` (`b5 f3 c227 g72 p246`), which is also the opening of Bourdeau's `ranzo_c017.txt` (fr.2988 f.9r).
+
+**(a) Plain web searches (WebSearch, 8 queries).**
+
+| # | Query | Result |
+|---|---|---|
+| 1 | `"Hieronimo Ranzo" OR "Girolamo Ranzo" OR "Jerome Ranzo" Gattinara cipher letter 1525` (sender + patron + date) | Wikipedia (Gattinara, Aleandro, Sirturus), Cryptologia "cifra delle caselle" paper, dbourdeau.github.io index, two Cipher Mysteries pages (Bellaso, Sirtori). None about this letter. |
+| 2 | `"fr. 20506" OR "français 20506" OR "fr.20506" chiffre OR cipher f.136` (shelfmark + chiffre) | Only cipher-dictionary pages and the Mary Stuart Cryptologia article; the search engine's own summary repeated the fr.20506 description (Gaignières 394, letters to Montmorency, "folio 136 of fr. 20506 is a copy of folio 9 of fr. 2988"), which is Tomokiyo's/Bourdeau's wording already on file, not a new source. |
+| 3 | `"b5 f3 c227" OR "c227 g72 p246" Ranzo cipher` (distinctive ciphertext phrase, quoted) | No page carries the token string. Second-pass hits: github.com/dbourdeau/cyphersolver pull 5 (Conti 1649 etc., not this letter), Wikipedia Giulio Ranzo, generic cipher pages. |
+| 4 | `DECODE record 4450 BnF fr.20506 f.136 unsigned letter 1525-1550 cipher Ranzo copy fr.2988 f.9` (folder title) | dbourdeau/cyphersolver pull 2 (Sormano/Passano 1529) and three forks of cyphersolver (arya1515, aryasn2026, setsunaatto -- forks, same content), dbourdeau.github.io index. No independent page on R4450. |
+| 5 | `Ranzo Garbino cipher "fr. 2988" OR "fr.2988" OR "fr. 3022" solved OR deciphered OR solves Claude OR GPT` (model-solve announcement check) | Only dbourdeau's own pages/PRs and unrelated cipher papers; the engine's summary of Bourdeau's site: Ranzo-Garbino "approximately 3,900 groups transcribed but remains not solved". No "X solves the Ranzo cipher" announcement by anyone. |
+| 6 | `site:scienceblogs.de/klausis-krypto-kolumne Ranzo OR Gattinara OR "fr. 20506" OR "fr. 2988"` | Two Cipherbrain posts: 17 May 2016 "Wer löst diesen verschlüsselten Brief aus dem französischen Nationalarchiv" and 24 Mar 2017 "Who can solve this encrypted text from the 16th century?" (the Spinelli post). Both opened below. |
+| 7 | `site:cryptiana.blogspot.com Ranzo OR Gattinara OR Garbino OR "fr. 2988" OR "fr. 20506"` | site: operator returned nothing from the blog (Wikipedia/1stdibs noise); replaced by the blog's own search, below. |
+| 8 | `site:ciphermysteries.com Ranzo OR Gattinara OR Garbino OR "fr. 2988" OR "fr. 20506"` | No Cipher Mysteries page matching; one unrelated CM post (2011 "Milanese enciphered letters") surfaced and was opened below. |
+
+**(b) Blog site searches, each blog by name.**
+
+- **Cipherbrain** `scienceblogs.de/klausis-krypto-kolumne/?s=Ranzo` (HTTP 200): 10 posts. Only the 17 May 2016 post
+  carries the name; the other nine (2014/07/18 Eiffelturm, 2014/12/17 "Die Franzosen und das englische Bier",
+  2022/05/05 and 2022/05/28 French newspaper ads, 2022/07/30 "21 bisher ungelöste Verschlüsselungen gelöst",
+  2022/08/17 Elamite, 2022/11/21 Louis XIII letter, 2022/11/27 "Brief von Karl V. ... dechiffriert", 2022/12/31
+  Goldene Alice) were each fetched (all HTTP 200) and grepped for `ranzo|gattinara|20506|2988|garbino`: zero
+  real matches -- WordPress matched the substring "ranzo" inside "französisch/Franzosen". Not hits.
+- **Cryptiana blog** `cryptiana.blogspot.com/search?q=Ranzo` and `search?q=2988 OR 20506 OR Gattinara OR Garbino`
+  (both HTTP 200): two posts, 21 Mar 2021 "More Undeciphered Texts (Italian, Spanish) in BnF" and 24 Mar 2021
+  "Misplaced? English Cipher Letter in French Archives" (a third, 1 Oct 2026 "Enigma Messages Solved by AI", was
+  a false match: fetched, no Ranzo/BnF content, "No comments"). Both 2021 posts opened below. Tomokiyo's own
+  pages: `sources/cryptiana/` on-disk snapshot grepped first (0 requests): `web/venetian.htm` is the only file
+  naming fr.20506 f.136 ("a copy of BnF fr.2988, f.9, which Norbert Biermann pointed out to me", listed among
+  "several undeciphered letters of Hieronimo Ranzo"); nothing under `sources/cryptiana/blog/`. The live page was
+  already re-read in full on 25 Sept 2026 (section "Check-solved (LANE CX)" above), unchanged; not refetched.
+- **Cipher Mysteries** `ciphermysteries.com/?s=Ranzo` (via the fetch tool, HTTP 200): "Nothing Found - Apologies,
+  but no results were found for the requested archive." A second search (`?s=2988 OR 20506 OR Gattinara`) and the
+  2011 post by curl both answered **HTTP 406 "Not Acceptable"** (WAF, browser UA) -- stopped hitting the host by
+  curl after the two 406s; the one permitted retry went through the fetch tool (200, below).
+
+**(c) Hits opened, post and comment thread read.**
+
+1. **Cipherbrain, 17 May 2016, "Wer löst diesen verschlüsselten Brief aus dem französischen Nationalarchiv"**
+   (`scienceblogs.de/klausis-krypto-kolumne/2016/05/17/wer-loest-diesen-verschluesselten-brief-aus-dem-franzoesischen-nationalarchiv/`,
+   21 comments, 17 May 2016 to 22 Oct 2017, all read). The post is about **BnF fr.2988 itself** (Gallica
+   `btv1b9059908w`, the PDF's pages 6-7 = **f.1**, the English letter), i.e. the archetype volume of this target.
+   What the thread says about Ranzo's letters, verbatim:
+   - Thomas, 17 May 2016, quoting the BnF catalogue: "ohne Anschrift, ganz in Chiffre, nur mit der Unterschrift
+     Hieronimo Ranzo"; "Im Exemplar der BNF gibt es eine merkwürdige Fortsetzung: https://gallica.bnf.fr/ark:/12148/btv1b9059908w/f6.item.zoom".
+   - Torbjörn Andersson, 29 Mar 2017 (#9): posts a substitution key and plaintext **for f.1 only** ("Plaintext is
+     in English ... Pleis your Majesty[?], hes bein ernist to obtain licence to kis youe Majesty[?] hand").
+   - Torbjörn Andersson, 3 Apr 2017 (#16): "I suspect the letter has been misplaced, and has nothing to do with
+     Ranzo (who uses an entirely different, more complex cipher and probably writes in Italian)."
+   - Norbert [Biermann], 21 Oct 2017 (#18): "Ich teile Torbjörns Einschätzung, dass der Text fälschlich Ranzo
+     zugeordnet wurde. Die Geheimtexte ab folio 9 sind von Ranzo unterschrieben und ganz offensichtlich wesentlich
+     komplexer." He also points to **fr.3022 f.50** (Gallica `btv1b90601558/f97.item`), an "adizione nel zifra":
+     "Es sieht ganz danach aus, dass diese 'Ergänzung zur Chiffre' zu Ranzos Code gehört ... Zumindest in der
+     Erweiterung ist der Buchstabe vor der hochgestellten Zahl grundsätzlich auch der Anfangsbuchstabe der
+     Klartextentsprechung."
+   - Norbert, 21 Oct 2017 (#20): "Kannst du herausfinden, ob der Nomenklator von Ranzos Brief (fol. 2) bekannt
+     ist?"; Thomas, 22 Oct 2017 (#21, last): "Zu dem Nomenklator von Ranzos Brief fol. 2 konnte ich nichts finden."
+   **Nothing in the thread deciphers fr.2988 f.9 (or f.2, or f.136).** The one decipherment posted (Andersson,
+   f.1) is of a different, simpler cipher the commenters themselves conclude is misattributed to Ranzo.
+   Follow-up for a later worker, not run here (out of scope): Biermann's fr.3022 f.50 "adizione nel zifra" is a
+   period key-fragment candidate for the Ranzo system; check whether Bourdeau's `vasto1527/NOTES.md` already
+   used it before anyone briefs a key-reading pass.
+2. **Cipherbrain, 24 Mar 2017, "Who can solve this encrypted text from the 16th century?"** (the Spinelli post,
+   17 comments, read). Thomas, 25 Mar 2017 (#14): "Some signs are similar to the unbroken Ranzo cipher which also
+   dates around the year 1520." Torbjörn Andersson, 28 Mar 2017 (#15): "Thomas' comment just reminded me, that I
+   broke the Ranzo cipher back in June. I did post the solution here then, but for some reason, it didn't appear.
+   I have just reposted the key on the appropriate page". **This "Ranzo cipher" is fr.2988 f.1**: the repost is his
+   29 Mar 2017 comment #9 in thread 1 above, and he himself withdraws the Ranzo attribution on 3 Apr 2017 (#16).
+   Not a decipherment of f.9/f.136.
+3. **Cryptiana blog, 24 Mar 2021, "Misplaced? English Cipher Letter in French Archives"**
+   (`cryptiana.blogspot.com/2021/03/misplaced-english-cipher-letter-in.html`, "No comments"): about the same f.1
+   English letter (credits Andersson 2017); the only Ranzo sentence: "Another reason of this post is its possible
+   relation to another undeciphered ciphertext signed Hieronimo Ranzo on the following folio (see 'Venetian
+   Ciphers with Superscripts')." No plaintext of any Ranzo letter.
+4. **Cryptiana blog, 21 Mar 2021, "More Undeciphered Texts (Italian, Spanish) in BnF"** (no comments): "More
+   specimens of the Venetian? cipher with superscript are found in BnF fr.2988, fr.3019, fr.3022." Listing only.
+5. **dbourdeau.github.io/cyphersolver/index.html** ("updated 1 October 2026", fetched and grepped): "No. 20
+   (Madrid, 11 Apr 1528, to 'Garbino') is in Hieronimo Ranzo's initial-letter code. The numbering was tested and
+   is not alphabetical. All 1,315 groups were transcribed, plus ~2,600 from Ranzo's letters in fr. 2988. A word
+   annealer validated on a held-out control recovers ..." only function words; no R4450 / fr.20506 mention on the
+   index page. Status there unchanged from 25 Sept: not solved.
+6. **Cipher Mysteries, 28 Jun 2011, "Milanese enciphered letters, call for help"** (fetch tool, 517 comments
+   2011-2018 summarised): Sforza-era Milan, Voynich discussion; no Ranzo, Gattinara, Garbino or BnF fr.2988/
+   3022/20506 mention. Not a hit.
+
+**Result: no decipherment or plaintext of this item located by these queries on 1 Oct 2026** (a search result,
+never a novelty verdict, rule 10). The only decipherment anywhere in these threads is Andersson's 2017 reading of
+fr.2988 **f.1**, a different letter in a different cipher, which the same commenters and Tomokiyo call misplaced and
+not Ranzo's. Status word unchanged: `open`.
+
+Requests this pass: WebSearch 8; scienceblogs.de 13 (1 fetch tool + 12 curl, all 200, >= 1.7 s apart);
+cryptiana.blogspot.com 5 (2 fetch tool + 3 curl, all 200); ciphermysteries.com 4 (2 fetch tool 200, 2 curl 406 --
+host dropped for curl after the second); dbourdeau.github.io 2 (200); `sources/cryptiana/` local, 0. No DECODE,
+Gallica or github.com request.
+
+`python3 tools/intake_gate_check.py decode-4450-bnf-fr20506-1525` (1 Oct 2026, after this section):
+
+```
+decode-4450-bnf-fr20506-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
