@@ -60,6 +60,17 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
 .movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
 .pile.new{border-style:dashed}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
+.seg button{border:0;border-radius:0}
+.seg button.on{background:var(--ink);color:var(--bg)}
+body.ink1 .t img,body.ink1 #ctx canvas{filter:grayscale(1) contrast(1.9) brightness(1.08)}
+body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightness(1.15)}
+#ctx[hidden]{display:none}
+#ctx{position:fixed;inset:0;z-index:20;background:rgba(0,0,0,.55);display:grid;place-items:center;padding:16px}
+#ctx .box{background:var(--surface);color:var(--ink);border-radius:8px;padding:14px;max-width:min(980px,100%);width:100%;max-height:100%;overflow:auto;display:grid;gap:10px}
+#ctx .cv{overflow-x:auto;background:var(--tile)}
+#ctx canvas{display:block;max-width:none}
+#ctx .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .acts{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center}
 .acts input[type=text]{flex:1 1 180px;min-width:0;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px}
 .acts select{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 6px;max-width:100%}
@@ -79,10 +90,18 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
     <div class="meter"><div class="track"><div class="fill" id="fill"></div></div><span id="prog">0 of 0 piles settled</span></div>
     <label for="size">Tile size <input id="size" type="range" min="36" max="96" value="56"></label>
     <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Settled</option></select></label>
+    <span class="seg" role="group" aria-label="What a click on a tile does"><button type="button" id="modeSel" class="on">Click selects</button><button type="button" id="modeCtx">Click shows context</button></span>
+    <span class="seg" role="group" aria-label="Ink darkness"><button type="button" id="ink0" class="on">Ink: normal</button><button type="button" id="ink1">Darker</button><button type="button" id="ink2">Darkest</button></span>
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <div id="list"></div>
   <p class="hint" id="foot"></p>
+  <div id="ctx" hidden><div class="box" role="dialog" aria-modal="true" aria-labelledby="ctxT">
+    <div class="row"><strong id="ctxT"></strong><span class="hint" id="ctxS"></span></div>
+    <div class="cv"><canvas id="ctxC"></canvas></div>
+    <div class="row"><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button>
+      <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
+  </div></div>
 </div>
 <script>
 const DATA = __DATA__;
@@ -154,7 +173,7 @@ function tileEl(sid, pid, cls){
   b.append(im);
   const mark = s.has(sid) ? '\u2713' : cls.includes('out') ? '\u00d7' : cls.includes('in') ? '\u21aa' : '';
   if (mark){ const g = document.createElement('span'); g.className = 'badge'; g.textContent = mark; g.setAttribute('aria-hidden', 'true'); b.append(g); }
-  b.onclick = () => { if (s.has(sid)) s.delete(sid); else s.add(sid); render(); };
+  b.onclick = () => { if (clickMode === 'ctx') return showCtx(sid, pid); if (s.has(sid)) s.delete(sid); else s.add(sid); render(); };
   return b;
 }
 
@@ -242,6 +261,48 @@ function saveMove(sid){
 function saveNew(id){ track('n/' + id, () => ncol.doc(key(id)).set({id, family: newPiles[id].family, from: newPiles[id].from, updated: new Date().toISOString()})); }
 function persistLocal(){ try { localStorage.setItem('sorter:all', JSON.stringify({state, moves, newPiles})); } catch(e){} }
 
+let clickMode = 'sel', ctxSid = null, ctxPid = null;
+const pageImgs = {};
+function pageImg(p){ if (!pageImgs[p]){ const im = new Image(); im.src = 'data:image/jpeg;base64,' + DATA.pages[p]; pageImgs[p] = im; } return pageImgs[p]; }
+function drawCtx(){
+  const it = itemBySid[ctxSid]; const [x, y, w, h] = it.b; const im = pageImg(it.p);
+  const z = +document.getElementById('ctxZ').value;
+  const draw = () => {
+    const x0 = Math.max(0, x - 180), y0 = Math.max(0, y - Math.round(h * 1.8) - 10);
+    const x1 = Math.min(im.naturalWidth, x + w + 180), y1 = Math.min(im.naturalHeight, y + h + Math.round(h * 1.4) + 10);
+    const c = document.getElementById('ctxC'); c.width = (x1 - x0) * z; c.height = (y1 - y0) * z;
+    const g = c.getContext('2d'); g.imageSmoothingEnabled = true; g.drawImage(im, x0, y0, x1 - x0, y1 - y0, 0, 0, c.width, c.height);
+    // mark the tile's own box with corner brackets (shape, not colour), drawn twice for contrast on any paper
+    const bx = (x - x0) * z, by = (y - y0) * z, bw = w * z, bh = h * z, L = Math.min(14, bw / 2, bh / 2) + 4, pad = 4;
+    [['#ffffff', 6], ['#000000', 3]].forEach(([col, lw]) => { g.strokeStyle = col; g.lineWidth = lw; g.beginPath();
+      [[bx - pad, by - pad, 1, 1], [bx + bw + pad, by - pad, -1, 1], [bx - pad, by + bh + pad, 1, -1], [bx + bw + pad, by + bh + pad, -1, -1]]
+        .forEach(([cx, cy, sx, sy]) => { g.moveTo(cx + sx * L, cy); g.lineTo(cx, cy); g.lineTo(cx, cy + sy * L); });
+      g.stroke(); });
+  };
+  if (im.complete && im.naturalWidth) draw(); else im.onload = draw;
+}
+function showCtx(sid, pid){
+  ctxSid = sid; ctxPid = pid; const it = itemBySid[sid];
+  document.getElementById('ctxT').textContent = 'Tile ' + sid + ' in pile ' + pid;
+  document.getElementById('ctxS').textContent = 'Cryptogram page ' + it.p + '. The brackets mark this tile; its neighbours on the line are shown either side.';
+  document.getElementById('ctxSel').textContent = sel(pid).has(sid) ? 'Unselect this tile' : 'Select this tile';
+  document.getElementById('ctx').hidden = false; drawCtx(); document.getElementById('ctxClose').focus();
+}
+const closeCtx = () => { document.getElementById('ctx').hidden = true; };
+document.getElementById('ctxClose').onclick = closeCtx;
+document.getElementById('ctx').onclick = e => { if (e.target.id === 'ctx') closeCtx(); };
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeCtx(); });
+document.getElementById('ctxZ').oninput = drawCtx;
+document.getElementById('ctxSel').onclick = () => { const s = sel(ctxPid); if (s.has(ctxSid)) s.delete(ctxSid); else s.add(ctxSid); closeCtx(); render(); };
+const setMode = m => { clickMode = m; document.getElementById('modeSel').classList.toggle('on', m === 'sel'); document.getElementById('modeCtx').classList.toggle('on', m === 'ctx');
+  document.getElementById('modeSel').setAttribute('aria-pressed', m === 'sel'); document.getElementById('modeCtx').setAttribute('aria-pressed', m === 'ctx'); };
+document.getElementById('modeSel').onclick = () => setMode('sel');
+document.getElementById('modeCtx').onclick = () => setMode('ctx');
+[0, 1, 2].forEach(n => document.getElementById('ink' + n).onclick = () => {
+  document.body.classList.remove('ink1', 'ink2'); if (n) document.body.classList.add('ink' + n);
+  [0, 1, 2].forEach(k => { const b = document.getElementById('ink' + k); b.classList.toggle('on', k === n); b.setAttribute('aria-pressed', k === n); });
+  try { localStorage.setItem('sorter:ink', n); } catch(e){} });
+try { const n = +localStorage.getItem('sorter:ink'); if (n) document.getElementById('ink' + n).click(); } catch(e){}
 document.getElementById('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
 document.getElementById('show').onchange = render;
 document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' tiles from the published images of cryptograms 1, 2, 3 and 4, first piled by our readers’ labels. ' +

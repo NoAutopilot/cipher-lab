@@ -31,9 +31,14 @@ for r in labels:
     c.thumbnail((96, 96), Image.LANCZOS)
     buf = io.BytesIO()
     c.save(buf, 'PNG', optimize=True)
-    piles[r['sign']].append({'sid': r['sid'], 'img': base64.b64encode(buf.getvalue()).decode()})
+    piles[r['sign']].append({'sid': r['sid'], 'img': base64.b64encode(buf.getvalue()).decode(), 'p': p, 'b': [x, y, w, h]})
     fam[r['sign']] = r['family']
-out = {'piles': [{'id': k, 'family': fam[k], 'items': v} for k, v in piles.items()], 'skipped': skipped}
+# whole page images (public crops) for the context view, as grayscale JPEG
+page_img = {}
+for p, im in pages.items():
+    buf = io.BytesIO(); im.save(buf, 'JPEG', quality=82, optimize=True)
+    page_img[p] = base64.b64encode(buf.getvalue()).decode()
+out = {'piles': [{'id': k, 'family': fam[k], 'items': v} for k, v in piles.items()], 'skipped': skipped, 'pages': page_img}
 json.dump(out, open(os.path.join(HERE, 'data.json'), 'w'))
 print(len(out['piles']), 'piles', sum(len(p['items']) for p in out['piles']), 'crops; skipped', skipped,
       os.path.getsize(os.path.join(HERE, 'data.json')) // 1024, 'KB')
