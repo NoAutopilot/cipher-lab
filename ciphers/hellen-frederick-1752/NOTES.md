@@ -339,3 +339,67 @@ novelty wording used; this is a search/structural result, not a verifier's class
 Requests this pass: `github.com` 1 shallow clone (dbourdeau/cyphersolver, deleted from the scratchpad after
 grep and file extraction), no other hosts (decode_list.py metadata reused from disk, NA Fagel images already
 on disk). No subagents used.
+
+## Web and blog check (WEBCHECK-hellen-frederick-1752, 1 Oct 2026)
+
+Run 1 Oct 2026, 23:35-23:4x UTC (clock read), by WEBCHECK-hellen-frederick-1752 (account-4, Fable 5.1), per
+`.claude/briefs/check-solved.md` "Required step: Open web and blog comment threads" (CHECK-SOLVED-WEB, 28 Sept 2026)
+and `.claude/briefs/runs/2026-10-01-account4-webcheck.md`. All eight ciphertext files are numeric only (no clear word
+in any of them, checked by grep), so the "distinctive phrase" query used a quoted run of the first four groups of
+R1953 plus the DECODE record id instead of a clear-text phrase. Search engine: the session's web-search tool
+(US index); blog site searches were run twice each, once domain-restricted in the search engine and once through the
+blog's own search page. Every hit judged plausible was opened and its comment thread read (or its absence noted).
+
+**(a) Plain web searches (7, plus the model-solve query):**
+
+| # | Query | Result |
+|---|---|---|
+| a1 | `"von der Hellen" Frederick 1752 cipher Hague intercepted` | 10 links; only dbourdeau.github.io/cyphersolver/index.html concerns this item (opened, below); the rest are Wikipedia pages (Blencowe, Jaupain, d'Alonne, Copiale, Prussian invasion of Holland 1787) and HistoCrypt 2018 proceedings, none about Hellen. |
+| a2 | `"Prins Willem V" "inv. 196" OR "inv.nr. 196" Hellen Chiffre OR cipher OR cijfer` (shelfmark + cipher word) | 10 links, all generic (Vigenère pages, William V's picture gallery); nothing on KHA Prins Willem V inv. 196 or Hellen. |
+| a3 | `"1208 1049 820 578" OR "Hellen" DECODE R1953 cipher Frederick` (distinctive ciphertext run + record id) | 9 links; only Bourdeau's index page concerns the item; the rest are cipher-tool sites and Wikipedia year pages. |
+| a4 | `Hellen Frederick II 1752 1763 ciphered despatches The Hague Prussian envoy decipherment` (the folder's descriptive title) | 10 links; Bourdeau's index page again; H.M. Scott 1977 (Russo-Prussian alliance), Klawitter 2026 in *Historical Research* (opened, below), Wikipedia (Thulemeyer, Keith, Mitchell, Lucchesini). |
+| a5 | `"Hellen" "Friedrich" Gesandter Haag 1752 Chiffre entziffert OR Geheimschrift OR Dechiffrierung` (German) | 9 links, all generic Geheimschrift pages (Zeno Meyers 1905, Wikisource, Wikipedia); nothing on Hellen. |
+| a6 | `"de Hellen" OR "von der Hellen" Lyonet Fagel onderschepte brieven Pruisen cijferschrift 1752` (Dutch) | 9 links: De Leeuw 1995 on DBNL (opened, below), NA finding aids 3.01.19 / 1.10.29 / 1.10.102 (the Fagel 1.10.29 aid is already worked through above, inv. 5206), Wikipedia for two unrelated van der Hellens, a Taco Tichelaar blog post on Frederick II (opened, below), the Thomassen 2009 UvA thesis chapter (opened, below), an Open Archieven Staten-Generaal transcription of 17 Mar 1706 (opened, below). |
+| a7 | `"Hellen" Prussian chargé OR secretary Hague 1763 Frederick letters intercepted deciphered Lyonet OR "Zwarte Kamer" OR "black chamber"` | 10 links: De Leeuw 2000 thesis chapter on the War of the Spanish Succession black chamber (opened, below), SPK-Magazin interview "Many dispatches have still not been deciphered" (opened, below), Bourdeau's index page, Carlyle's *Friedrich II* vol. VII on Gutenberg, Wikipedia/Cipher Museum pages on cabinets noirs. |
+| a8 | `Hellen Frederick 1752 cipher solves OR solved Claude OR GPT OR ChatGPT` (model-solve announcements) | 9 links: Schneier "Claude Fable Solves a Historical Cipher" (Sept 2026) and 36kr "Claude AI Solves 370-Year-Old Unsolved Ciphertext" (both opened, below: the Cyphral Distich, Urquhart 1653, not this item); HN "GPT-6 Astra Solves a WWI German Radio Cipher" (a WWI radio cipher by its title, not opened); a Kryptos K4 gist; Bourdeau's index page; two arXiv papers on LLM cipher reasoning. No announcement names Hellen or this correspondence. |
+
+A further domain-restricted query over the three blogs plus github.com (`"Hellen" Frederick Prussia intercepted letters
+1752 Hague cipher unsolved DECODE`) returned only unrelated GitHub repositories and Cipher Mysteries archive pages
+(Blitz Ciphers, Zodiac, Ferdinand III posts on Cipherbrain); the same query with reddit.com added was refused by the
+search tool (reddit.com is not accessible to its crawler), so Reddit is **not covered** by this check.
+
+**(b) Blog site searches (two routes each):**
+
+| Blog | Route 1: search engine, domain-restricted | Route 2: the blog's own search page | Result |
+|---|---|---|---|
+| Cipherbrain (scienceblogs.de/klausis-krypto-kolumne) | `Hellen Friedrich Preußen Chiffre 1752 Haag` -> 10 posts (Bernotat PDF, an Adelige's Nachlass 2016, Catinat 2016, Utah war, Freimaurer medal 2014, Bonn Stadtarchiv 2015, Ferdinand III 2014, antique-clock note 2022, book cipher 2013), none on Hellen or The Hague | `?s=Hellen` -> 6 posts (yellow laser dots 2022, Goldene Alice 2021, Verkehrsschild 2021, Kryptos/Fenn 2021, Freimaurer inscriptions 2021, typewriter postcard 2019): "Hellen" matches only as a substring; `?s=Friedrich+der+Große+Haag` -> "Wir konnten leider keine Beiträge finden" | no post on this item; no comment thread to read |
+| Cryptiana blog (cryptiana.blogspot.com) and Tomokiyo's cryptiana.web.fc2.com | `Hellen Frederick Prussia Hague cipher 1752` restricted to both hosts -> no links | `/search?q=Hellen` -> "No posts matching the query: Hellen"; `/search?q=Prussia` -> one post, "Frederick I of Prussia's Transposition Cipher" (25 Oct 2024), Frederick I not II, transposition not this nomenclator, not opened further. On-disk snapshot `sources/cryptiana/` grepped for "Hellen" (0 requests): `charlesi.htm` (a pseudonym "Hellen" in a 1640s English letter, unrelated) and `dutch.htm` (Tomokiyo's Japanese digest of De Leeuw, p.25: in autumn 1751 a letter addressed to the newly arrived Prussian envoy De Hellen was seized; D'Ammon's codebook obtained that summer had apparently been renewed and did not serve directly, so England was asked to decipher it -- a cipher-family fact already cited above via `dutch.htm`, concerning a letter *to* Hellen in 1751, not any of the eight 1752-1763 despatches *from* him; no plaintext printed) | no post on this item |
+| Cipher Mysteries (ciphermysteries.com) | `Hellen Frederick Prussia Hague cipher 1752 1763` -> 3 Cipher Mysteries posts (van Heeck 2016, d'Agapeyeff 2008, Voynich page), none relevant | `?s=Hellen` -> 3 posts (shorthand marginalia challenge 2014, Filelfo 1465, Alberti c.1465), substring matches only; `?s=Frederick+the+Great+Prussia` -> "Nothing Found" | no post on this item |
+
+**(c) Hits opened and read, with comment threads:**
+
+1. https://dbourdeau.github.io/cyphersolver/hellen1752.html (posted 20 Sept 2026, "Last updated: 24 September 2026", status "not solved"): "No key was recovered and no enciphered passage was decoded." and "None of the enciphered passages was decoded. No plaintext value has been verified." No comment thread on the page. Links out to NA 1.10.29 inv. 5206 (already checked page-by-page above, 25 Sept 2026), the GitHub working record `targets/hellen1752`, and De Leeuw's dissertation. The only hit anywhere in this check that is about this item.
+2. https://www.schneier.com/blog/archives/2026/09/claude-fable-solves-a-historical-cipher.html -- the Cyphral Distich (Urquhart 1653); 13 comments read, none mention Hellen, Frederick II, Prussia, The Hague, 1752/1763 or DECODE R1953/R1049.
+3. https://eu.36kr.com/en/p/3984219694856961 -- same Cyphral Distich story; no mention of this item.
+4. Klawitter, "The diplomatic correspondence between Heinrich Friedrich Diez ... and Christian Konrad Wilhelm Dohm: its decipherment and historical relevance", *Historical Research* 99 (2026) 338-348 (OUP PDF via its silverchair redirect, text extracted locally with pdftotext, 44,912 chars): Diez at Constantinople 1784; 0 occurrences of "Hellen", 0 of "Lyonet".
+5. Karl de Leeuw, "Een lexicaal geheimschrift van Wilhelmina van Pruisen op Hampton Court", *De Achttiende Eeuw* 1995 (DBNL): no "Hellen"; states "In 1751 en 1752 slaagde Lyonet er inderdaad in, enkele Pruisische en Franse codes te breken" (n.18) and reproduces as Afb. 1 "K.H.A., Stadhouder Willem V, inv. nr. 198, onderschepte brief van de Pruisische ambassadeur te Londen van 22 september 1752, met oplossing door Lyonet" -- a different letter (the London envoy, inv. 198, not inv. 196) and an image, not a printed plaintext of any Hellen despatch. No comments. **Lead for the folder, not a decipherment of this item:** inv. 198 carries a Lyonet-solved Prussian intercept of Sept 1752, nine months after R1953; whether it is the same Prussian code is a cheap check once the R1953 image is in hand.
+6. https://tacotichelaar.nl/wordpress/frederik-ii-van-pruisen-de-filosoof-en-valsemunter/ -- Frederick II biography/coinage post; no Hellen, Lyonet, Zwarte Kamer or intercepts; no visible comment section.
+7. Thomassen, *Instrumenten van de macht. De Staten-Generaal en hun archieven 1576-1796* (UvA 2009, chapter PDF, 101,821 chars extracted locally): 0 "Hellen", 0 "Lyonet".
+8. De Leeuw, *Cryptology and statecraft in the Dutch Republic* (UvA 2000), chapter "The Black Chamber in the Dutch Republic during the War of the Spanish Succession" (PDF, 82,952 chars extracted locally): 0 "Hellen", 0 "Lyonet" (the chapter covers 1702-1713).
+9. https://www.spkmagazin.de/en/many-dispatches-have-still-not-been-deciphered.html -- interview with Franziska Mücke (GStA PK) on Lucchesini's and Humboldt's ciphered dispatches and a 1729 dispatch with a lost key; no Hellen, The Hague, 1752 or 1763; no comment thread.
+10. https://www.openarchieven.nl/transcripties/toon/NL-HaNA_1.01.02_3358_0400 -- Staten-Generaal resolution of 17 Mar 1706 (a Cleves guardianship petition naming the King of Prussia); unrelated.
+11. dbourdeau.github.io/cyphersolver/index.html (the index row behind hits a1/a3/a4/a7/a8): "Hellen to Frederick II, 1752-1763 -- not solved; transcription audited, archival lead identified; Fagel 5206 may supply a parallel decipherment for 1752" (the search tool's rendering of the row; the per-target page in hit 1 is the authority and says no passage was decoded).
+
+**Result:** no decipherment or plaintext of this item located by these queries on 1 Oct 2026 (a search result, never a
+novelty verdict, rule 10). Status word unchanged (`open`). Not covered: Reddit (search tool cannot crawl it) and
+any comment thread behind a login. Requests per host, all one at a time: scienceblogs.de 2, cryptiana.blogspot.com 2,
+ciphermysteries.com 2, dbourdeau.github.io 1, schneier.com 1, eu.36kr.com 1, academic.oup.com 1 + watermark02.silverchair.com 1,
+dbnl.org 1, tacotichelaar.nl 1, pure.uva.nl 2, spkmagazin.de 1, openarchieven.nl 1; search-engine queries 12 (one refused
+for the reddit.com domain); sources/cryptiana on disk 0. No 403, 429 or challenge page met.
+
+Intake gate re-run after this section (output pasted verbatim):
+
+```
+hellen-frederick-1752: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+$ python3 tools/intake_gate_check.py hellen-frederick-1752 ; echo exit=$?   -> exit=0
+```
