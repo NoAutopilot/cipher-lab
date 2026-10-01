@@ -220,3 +220,37 @@ where the letter was expected to sit; a volume's letters are not always printed 
 - "Waiting on an archive or a person" is not a finished state: espagnol142-mercy-1648 (27 Sept 2026) sat still for days with its copy request open, until someone asked what else could move it, and the answer was immediate -- the judge corpus, a DECODE records check and a sibling-key comparison all ran the same day, none of them gated on the copy request at all. The check-in checklist had been treating "waiting" as done. Fixed (WAIT-CHECK): NEXT-STEPS.tsv gets a `parallel` column, filled from the blocked folder's own newest "## While waiting" NOTES.md section; `tools/next_steps.py --wait-only` lists every blocked row still missing one, so a target parked on an archive or a person is a queued job that hour, not a row left alone.
 
 - A check-solved pass that reads a target's encyclopedia article only to confirm it is unsolved throws away leads: the Debosnys check on 25 Sept 2026 read Wikipedia's article and missed its rhyme remark, the three trunks sent to the jail, his reported languages and places, and the Masonic comparison (the owner read it on 29 Sept). At intake, read the article and every reference it cites for leads, and log each as a row.
+
+## Settle the alphabet before reading: the sign sorter (1 Oct 2026, Debosnys round 3)
+
+For an invented-alphabet cipher (Debosnys, and any target with ~50-200 drawn signs), the reading error is mostly an
+inventory problem, not a pixel problem. Evidence from one evening:
+- Three times the resolution barely helped. On cryptogram 4, two blind readers disagreed on 27.7 pct of signs from
+  the museum's 3152 px scan and 29.2 pct from the same crops degraded to public quality (R3 C4HI; CI of the
+  difference includes 0). More pixels and more passes of the same readers do not fix it.
+- Reading errors almost never invent a sign. They confuse existing ones (R3 NOISEF: f about 0.005), so the 47
+  singletons in a 160-type inventory are either real or splits made when the inventory was defined.
+- Nearly every other route ended on the same wall. The crib tests (CRIBLIT, SELFCOPY, HFLINE), the design fits
+  (MIXTURE, NOISEF) and the language test (INVENTED) were all negative, non-tests or underpowered at 15-28 pct error.
+  The favoured mixed design cannot even be seen by a planted control at that noise.
+- Tight base boxes hide the marks that separate signs. glyph_atlas attaches small marks above a sign as attributes,
+  so a crop of the base box alone dropped the dot of X-DOT and the bar over X. The owner caught it on the first tiles.
+
+What works is to let a person settle "same sign or different" once, on tiles side by side, then read once against
+that fixed alphabet. People judge sameness quickly and consistently; line-by-line readers re-decide it at every sign.
+The owner found the job easy once it had four things. Each came from the owner's own feedback:
+1. a context view: the tile on its line, with its neighbours and the lines above and below, so a stray tick can be
+   assigned to the right sign;
+2. moving single tiles and making new piles, not only "set aside";
+3. no information carried by colour alone (✓, ×, ↪ badges, a thick frame, corner brackets), since the owner is
+   colourblind;
+4. per-document saves. Saving a whole pile per click lost 6 of 8 clicks to a stale snapshot overwriting unsaved state.
+
+Tools: `tools/sign_sorter.py` builds the page from the glyph_atlas layout (signs.tsv, labels, page images, marks.tsv).
+It cuts each tile around the sign plus its marks, orders tiles odd-ones-first within each pile, offers look-alike
+piles as an explicitly fallible hint, and embeds the pages for the context view. `tools/sign_sorter_apply.py` turns
+the saved decisions (ArtifactData out_dir export) into sid/old/new/status rows, following merges transitively and
+flagging bad cuts and set-asides. The template is `tools/sign_sorter/template.html`. Browser click tests are in
+`tools/sign_sorter/browser_tests/` (node + playwright with a mock db); run them before republishing. Never build a
+sorter from restricted scans: the page carries the images. Worked example: ciphers/debosnys-1883/sorter/.
+For the next invented-alphabet target, this step comes before any transcription pass is priced.

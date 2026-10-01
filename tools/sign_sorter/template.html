@@ -1,4 +1,4 @@
-<title>Debosnys Sign Sorter</title>
+<title>__TITLE__</title>
 <style>
 /* Layout: a sorting bench -- sticky toolbar, then one tray per family of look-alike signs, each pile a row of tiles. */
 :root{
@@ -60,6 +60,8 @@ button.on{background:var(--accent-soft);border-color:var(--accent);color:var(--i
 .movebar{display:flex;flex-wrap:wrap;gap:6px 8px;align-items:center;background:var(--accent-soft);border-radius:5px;padding:6px 8px;margin:0 0 8px}
 .movebar input{border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:5px;padding:4px 8px;min-width:0;flex:0 1 160px}
 .pile.new{border-style:dashed}
+.near{font-size:.8rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+.near button{font-size:.78rem;padding:1px 7px;font-family:var(--f-mono)}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:5px;overflow:hidden}
 .seg button{border:0;border-radius:0}
 .seg button.on{background:var(--ink);color:var(--bg)}
@@ -79,8 +81,8 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
 </style>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;600&display=swap">
 <div class="wrap">
-  <h1>Debosnys Sign Sorter</h1>
-  <p class="lede">Every sign from the four published cryptogram images, cut out and piled by the label our readers gave it. Your job is to settle the alphabet: which piles are one sign, which tiles were put in the wrong pile, and which marks are not letters at all.</p>
+  <h1>__TITLE__</h1>
+  <p class="lede">__LEDE__</p>
   <div class="how">
     <div><b>Tile in the wrong pile</b>Click tiles to select them (thick frame and ✓). Then choose "Move to" a pile, "New pile" (e.g. X-2BARS), or "Set aside" (×). Selecting alone saves nothing. Tiles moved in from another pile show ↪.</div>
     <div><b>Two piles are one sign</b>Pick the other pile under "Same sign as". Small pen wobbles do not make a new sign; a mark repeated on several tiles (a bar, a dot) usually does.</div>
@@ -92,6 +94,8 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
     <label for="show">Show <select id="show"><option value="all">All piles</option><option value="todo">Still to do</option><option value="done">Settled</option></select></label>
     <span class="seg" role="group" aria-label="What a click on a tile does"><button type="button" id="modeSel" class="on">Click selects</button><button type="button" id="modeCtx">Click shows context</button></span>
     <span class="seg" role="group" aria-label="Ink darkness"><button type="button" id="ink0" class="on">Ink: normal</button><button type="button" id="ink1">Darker</button><button type="button" id="ink2">Darkest</button></span>
+    <label for="order">Order <select id="order"><option value="odd">Odd ones first</option><option value="page">Page order</option></select></label>
+    <button type="button" id="undo" disabled>Undo last move</button>
     <span class="save" id="save">Connecting to storage…</span>
   </div>
   <div id="list"></div>
@@ -103,7 +107,7 @@ body.ink2 .t img,body.ink2 #ctx canvas{filter:grayscale(1) contrast(3.2) brightn
       <label class="hint" for="ctxZ">Zoom <input id="ctxZ" type="range" min="2" max="6" value="3"></label></div>
     <div class="row"><select id="ctxDest" aria-label="Move this tile to"><option value="">Move this tile to…</option></select>
       <input id="ctxNew" type="text" placeholder="or new pile name" aria-label="New pile name"><button type="button" id="ctxNewB">New pile</button>
-      <button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
+      <button type="button" id="ctxUndo">Undo</button><button type="button" id="ctxBad">Bad cut</button><button type="button" id="ctxAside">Set aside</button><button type="button" id="ctxSel">Select this tile</button><button type="button" id="ctxClose">Close</button></div>
     <p class="hint" id="ctxMsg" aria-live="polite"></p>
   </div></div>
 </div>
@@ -113,6 +117,7 @@ const basePiles = DATA.piles;
 const itemBySid = {}, homeOf = {};
 basePiles.forEach(p => p.items.forEach(it => { itemBySid[it.sid] = it; homeOf[it.sid] = p.id; it.fam = p.family; }));
 const baseIds = new Set(basePiles.map(p => p.id));
+const byBase = Object.fromEntries(basePiles.map(p => [p.id, p]));
 const state = {};        // pile id -> {verdict, merge_into, outliers:[], note}
 const moves = {};        // sid -> destination pile id ('ASIDE' = set aside, no pile yet)
 const newPiles = {};     // new pile id -> {family, from}
@@ -132,6 +137,8 @@ function membersOf(id){
   Object.keys(itemBySid).forEach(sid => {
     if (!moves[sid] && state[homeOf[sid]] && state[homeOf[sid]].outliers.includes(sid)) return; // legacy set-aside
     const dest = moves[sid] || homeOf[sid]; if (dest === id) m.push(sid); });
+  if (document.getElementById('order').value === 'odd') m.sort((a, b) => (itemBySid[b].d || 0) - (itemBySid[a].d || 0));
+  else m.sort();
   return m;
 }
 function asideOf(id){ // set aside from this home pile: legacy outliers or moves to ASIDE
@@ -190,7 +197,11 @@ function pileEl(p, piles){
   ct.textContent = p.members.length + ' tiles' + (aside.length ? ', ' + aside.length + ' set aside' : '') + (p.isNew ? ', new pile' : '');
   const chip = document.createElement('span'); chip.className = 'chip' + (status ? ' ' + status : '');
   chip.textContent = status === 'same' ? 'one sign' : status === 'mark' ? 'not a letter' : status === 'merge' ? 'same as ' + s.merge_into : 'to do';
-  ph.append(nm, ct, chip); el.append(ph);
+  ph.append(nm, ct, chip); el.append(ph); el.id = 'pile_' + key(p.id);
+  const near = (byBase[p.id] && byBase[p.id].near) || [];
+  if (near.length){ const nr = document.createElement('div'); nr.className = 'near'; nr.append('Possibly similar (computer’s guess, often wrong):');
+    near.forEach(n => { const b = btn(n, false, () => { const t = document.getElementById('pile_' + key(n)); if (t) t.scrollIntoView({block: 'start'}); }); b.title = 'Jump to pile ' + n; nr.append(b); });
+    el.append(nr); }
   const tiles = document.createElement('div'); tiles.className = 'tiles';
   p.members.forEach(sid => tiles.append(tileEl(sid, p.id, homeOf[sid] !== p.id ? ' in' : '')));
   aside.forEach(sid => tiles.append(tileEl(sid, p.id, ' out')));
@@ -231,8 +242,19 @@ function pileEl(p, piles){
 }
 function btn(t, on, fn){ const b = document.createElement('button'); b.type = 'button'; b.textContent = t; if (on) b.classList.add('on'); b.setAttribute('aria-pressed', !!on); b.onclick = fn; return b; }
 
+const history = [];   // each entry: [[sid, previous destination or null], ...]
+function remember(sids){ history.push(sids.map(sid => [sid, moves[sid] || null])); if (history.length > 200) history.shift();
+  document.getElementById('undo').disabled = false; }
+function undo(){
+  const last = history.pop(); if (!last) return;
+  last.forEach(([sid, prev]) => { if (prev) moves[sid] = prev; else delete moves[sid]; saveMove(sid); });
+  document.getElementById('undo').disabled = !history.length;
+  saveEl().textContent = 'Undid the last move (' + last.length + (last.length === 1 ? ' tile)' : ' tiles)'); render();
+  return last;
+}
 function moveSel(from, to){
   const chosen = sel(from);
+  remember([...chosen]);
   chosen.forEach(sid => {
     if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
     const hs = state[homeOf[sid]];
@@ -304,6 +326,7 @@ function showCtx(sid, pid, keepList){
 function ctxStep(d){ const i = ctxList.indexOf(ctxSid) + d; if (i >= 0 && i < ctxList.length) showCtx(ctxList[i], ctxPid, true); }
 function ctxMove(to){
   const sid = ctxSid, from = moves[sid] || homeOf[sid];
+  remember([sid]);
   if (to === homeOf[sid]) delete moves[sid]; else moves[sid] = to;
   const hs = state[homeOf[sid]];
   if (hs && hs.outliers.includes(sid) && to !== 'ASIDE'){ hs.outliers = hs.outliers.filter(x => x !== sid); save(homeOf[sid]); }
@@ -314,6 +337,10 @@ function ctxMove(to){
   if (i < ctxList.length - 1) showCtx(ctxList[i + 1], ctxPid, true); else { document.getElementById('ctxMsg').textContent += ' That was the last tile.'; showCtx(sid, ctxPid, true); }
 }
 document.getElementById('ctxPrev').onclick = () => ctxStep(-1);
+document.getElementById('undo').onclick = undo;
+document.getElementById('order').onchange = render;
+document.getElementById('ctxUndo').onclick = () => { const last = undo(); if (last && last.length === 1 && ctxList.includes(last[0][0])) {
+  document.getElementById('ctxMsg').textContent = 'Undid the move of ' + last[0][0] + '. Showing it again.'; showCtx(last[0][0], ctxPid, true); } };
 document.getElementById('ctxNext').onclick = () => ctxStep(1);
 document.getElementById('ctxDest').onchange = e => { if (e.target.value) ctxMove(e.target.value); };
 document.getElementById('ctxAside').onclick = () => ctxMove('ASIDE');
@@ -347,7 +374,7 @@ document.getElementById('modeCtx').onclick = () => setMode('ctx');
 try { const n = +localStorage.getItem('sorter:ink'); if (n) document.getElementById('ink' + n).click(); } catch(e){}
 document.getElementById('size').oninput = e => document.documentElement.style.setProperty('--sz', e.target.value + 'px');
 document.getElementById('show').onchange = render;
-document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' tiles from the published images of cryptograms 1, 2, 3 and 4, first piled by our readers’ labels. ' +
+document.getElementById('foot').textContent = Object.keys(itemBySid).length + ' tiles, first piled by our readers’ labels. ' +
   (DATA.skipped ? DATA.skipped + ' tiles from a line outside the page crops are not shown.' : '');
 render();
 
