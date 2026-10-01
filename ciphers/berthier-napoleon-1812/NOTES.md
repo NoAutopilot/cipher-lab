@@ -522,3 +522,63 @@ further homophonic re-run with other parameters or restarts at this same N (CLAU
 at an unchanged approach" paragraph).
 
 Status stays `open`. No "solved", "new", "first", "unpublished" anywhere in this section.
+
+## Web and blog check (WEBCHECK-berthier-napoleon-1812, 1 Oct 2026)
+
+The required open-web and blog comment-thread step (`.claude/briefs/check-solved.md`, CHECK-SOLVED-WEB, 28 Sept 2026),
+run 1 Oct 2026 23:35-23:45 UTC by the account-4 WEBCHECK worker, brief `.claude/briefs/runs/2026-10-01-account4-webcheck.md`.
+Every query and every hit is listed; "no decipherment" below is a search result, never a novelty verdict (CLAUDE.md rule 10).
+
+**(a) Plain web searches (WebSearch, 8 queries).**
+
+| # | Query | Result |
+|---|---|---|
+| 1 | `Berthier Napoléon 22 décembre 1812 chiffre déchiffré` (sender + recipient + date) | 10 results: Archives nationales Fonds Berthier finding aid (FRAN_IR_001908, not opened -- a PDF inventory, no decipherment indexed), Lehning's futura-sciences post (opened, below), napoleon.org / napoleon-series.org Berthier biographies, bibmath Grand Chiffre page (opened, below), mmbennetts "Le Grand Chiffre" post (opened, below), Wikipedia. No decipherment or plaintext of this letter. |
+| 2 | `"Chiffre du Prince de Neufchâtel" OR "Primata a été déchiffrée"` (the leaf's own distinctive clear-text note) | 9 results, none about a cipher: Bataillon du prince de Neuchâtel, the US privateer *Prince de Neufchatel*, Louvre ornament "Chiffre de Monsieur le Prince", "prince-primat" dictionary entry. Zero hits for either phrase in a cryptographic sense. |
+| 3 | `Berthier Napoleon 1812 cipher letter Vilcoq "Le Chiffre sous le Premier Empire"` (shelfmark/source + "cipher") | 10 results: Lehning post, napoleon.org biography, Carter Church's Marmont 1809 writeup (opened, below -- cites Vilcoq 1969 as *its* plate source too), derekbruff.org Napoleon crypto page, jfbouch.fr codebook index (opened, below), bibmath, Wikipedia Great Cipher. None names the 22 Dec 1812 letter. |
+| 4 | `Berthier to Napoleon 22 December 1812 unsolved cipher code "918 1045 1100"` (folder's descriptive title + opening groups) | 9 results, none carrying the group string: napoleon-series.org biography, UNL "Napoleon Bonaparte Letters" project, jfbouch.fr "Missives using a Small Cipher" (Berthier-Augereau **1813**, Bazeries' decipherment -- a different letter and code, not opened beyond the index), jfbouch "complete codebook 1815", Wikipedia. |
+| 5 | `Berthier Napoleon 1812 cipher solved Claude OR GPT OR "solves"` (model-solve announcements, check-solved.md) | 9 results: all the model-solve traffic is Carter Church's GPT-6 Astra solution of the **Marmont 1809** letter (x.com/CarterWChurch, coinbureau, AGTPinsights, runtimewire.com, zamin.uz, 18 Sept 2026), confirmed by Tomokiyo -- not this letter; plus github.com/NoAutopilot/cipher-lab (this repository) and the Malet coup Wikipedia pages. No announcement of a Berthier 1812 solve. |
+| 6 | `Berthier Königsberg "22 décembre 1812" "note chiffrée" OR "lettre chiffrée" Napoléon` | 10 results: napoleon.org Correspondance générale introductions/chronology (t.12, 1812), napoleon-histoire.com "Correspondance de Napoléon Ier - Décembre 1812" (opened, below), Catawiki 1811 Berthier autograph, SHD BB8 inventory PDF, cairn Napoleonica. No decipherment. |
+| 7 | `"Berthier" "1812" cipher transcription Tomokiyo "code size" 1200 unsolved` | 10 results: this repository, dbourdeau/cyphersolver, aaymeloglu/unsolved-ciphers and two forks of cyphersolver (setsunaatto, arya1515 -- forks of the repo already grepped by CX2, 25 Sept; not re-cloned), Carter Church Marmont writeup and its press echo, a 1591 Spanish-cipher Cryptologia abstract, D'Agapeyeff Wikipedia. No decipherment. |
+| 8 | three `site:` searches for the blogs (see (b)) | -- |
+
+**(b) The three blogs, by name.**
+
+- **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne): `site:` WebSearch for `Berthier Napoleon 1812` returned only generic pages (Top-25 "wahrscheinlich gelöst" Teil 2, the Top 50 list, "Kryptografen aller Nationen" 1800s cryptogram, Columbus signature, Freimaurer-Buch -- titles unrelated; not opened except the Top 50 list). The blog's own search `?s=Berthier`: "Wir konnten leider keine Beiträge finden" -- **zero posts**. `?s=Napoleon+1812`: two posts, both Klaus Schmeh 22 June 2021, "Eine verschlüsselte Depesche aus dem Jahr 1812 und ihre spannende Geschichte" and its English twin "A coded dispatch from 1812 and its exciting story" -- opened both: the dispatch is Clarke (War Minister) to Caffarelli, Paris, 19 Oct 1812, Spanish-campaign Grand Chiffre, decoded by Karsten Hansky; German thread read in full, 14 comments (SantaColoma, Esme, Hansky x4, Norbert x3, Thomas, Schmeh; 22 June - 3 July 2021), English version has comments disabled (0); **no comment mentions Berthier, 22 Dec 1812, Königsberg, Neufchâtel or Vilcoq**. "The Top 50 unsolved encrypted messages" list page opened: no Berthier/Napoleon/1812/Vilcoq entry.
+- **Cryptiana blog** (cryptiana.blogspot.com) and Tomokiyo's pages: on-disk snapshot `sources/cryptiana/` grepped first (zero requests): `web/unsolved.htm`, `web/unsolved-2026-09-24.htm`, `web/napoleon2.htm`, `web/henryiii.htm` name Berthier (already read by CX2, 25 Sept); `blog/` snapshot has no Berthier post. `site:cryptiana.blogspot.com Berthier Napoleon` WebSearch returned no blogspot result at all (engine returned Wikipedia). Blogger's own search `cryptiana.blogspot.com/search?q=Berthier`: **one post**, "Coded Letters of Admiral D'Estaing (1779) and Marshal Berthier (1812) Transcribed", 1 Oct 2025, https://cryptiana.blogspot.com/2025/10/coded-letters-of-admiral-destaing-1779.html -- opened and read in full; its whole sentence on this letter is: "I also uploaded my transcription of the available page of a letter of Marshal Berthier to Napoleon (1812). The code size appears to be 1200 and it would be difficult to solve analytically with this specimen." A transcription, no decipherment, no plaintext, no key; **0 comments**. Blog RSS feed (25 most recent posts, 12 July - 1 Oct 2026) read: no post title or description names Berthier, Napoleon, 1812, Neufchâtel or Vilcoq. Live `cryptiana.web.fc2.com/code/unsolved.htm` (page footer "Last modified on 27 September 2026", later than our 24 Sept snapshot) section "Encoded Letter from Berthier to Napoleon (1812)" re-read: no "Solved" marker (the page marks solved items with one), no solver, no plaintext. Live `code/napoleon2.htm` ("last modified 24 September 2023") section "Napoleon-Berthier Code (December 1812)": ciphertext only, no plaintext, no 2025/2026 update. (`cryptiana.web.fc2.com/web/napoleon2.htm` is a wrong path, 302 to fc2's 404 page; the pages live under `/code/`.)
+- **Cipher Mysteries** (ciphermysteries.com): `site:` WebSearch for `Berthier Napoleon 1812` returned only unrelated posts (Nageon de l'Estang, La Buse, Toussaint, Voynich) plus Wikipedia -- titles unrelated, not opened. The blog's own search `?s=Berthier`: "Nothing Found" -- **zero posts**. `?s=Napoleon+chiffre`: "Nothing Found".
+
+**(c) Plausible hits opened and their comment threads.**
+
+| Hit | What it says about this letter | Comments |
+|---|---|---|
+| Hervé Lehning, "Le déclin de l'art de chiffrer sous Napoléon Ier", blogs.futura-sciences.com/lehning, 2 Feb 2019 | Nothing on 22 Dec 1812; its Berthier material is a Sept 1813 dispatch enciphered inconsistently in two copies ("the two messages are intercepted, the enemy can begin to decrypt them"). No Vilcoq, no Neufchâtel, no Primata. | 0 |
+| M.M. Bennetts, "Le Grand Chiffre...or am I talking in code?", mmbennetts.wordpress.com, 5 Dec 2012 | General Scovell / Peninsular Grand Chiffre post; no Berthier 1812. | 8 (Monajem, Grace, Rappleyea, Bennetts x3, Ferguson, Cumming; Dec 2012 - Feb 2014); none names Berthier or this letter. |
+| Carter Church, "Breaking the Marmont Cipher, 1809", carter.church/writeups/the-letter-to-marmont/ (18 Sept 2026) | Cites "J. Vilcoq, 'Le Chiffre sous le Premier Empire,' Revue historique des Armées" as the Marmont plate's source -- the same six-page article that carries our plate on p.24; mentions no Berthier, no 22 Dec 1812, no other unsolved Napoleonic cipher. | none (no comment section) |
+| J.-F. Bouchaudy, "The codebooks of Napoleon I", jfbouch.fr/crypto/napoleon/index.html | Index read by script (curl 200 after two WebFetch 503s): the 1812 Spanish-campaign codebook (groups to 1400), Clarke-Caffarelli 1812, Bazeries' decipherments of the Emperor-Davout 1813 Great Cipher and a Berthier-**Augereau 1813** small cipher, the 1815 complete codebook, Scovell. No Berthier-to-Napoleon 22 Dec 1812 item; links out to Tomokiyo's napoleon2.htm. | none |
+| bibmath.net "Le Grand Chiffre de Paris" | Peninsular War Grand Chiffre; the only deciphered example is Joseph to Marmont. No Berthier 1812, no comments section. | none |
+| napoleon-histoire.com "Correspondance de Napoléon Ier - Décembre 1812" | Prints Napoleon's letters of December 1812 incl. one to the Prince de Neuchâtel dated 30 Dec 1812; the fetcher reported no "note chiffrée" wording on the page (Tomokiyo's napoleon2.htm says the 30 Dec letter acknowledges "votre note chiffrée" -- the two readings were not reconciled here; a reply acknowledging a cipher note is not a decipherment either way). No deciphered 22 Dec text. | none |
+| Cipherbrain Clarke-Caffarelli 1812 posts (DE+EN), 22 June 2021 | see (b) | 14 + 0, none on this letter |
+| Cryptiana blog post 1 Oct 2025 | see (b): transcription only | 0 |
+
+Not opened, with reason: FRAN_IR_001908 (AN finding-aid PDF, an inventory, cannot carry a blog-style decipherment; the AN
+fonds itself is a named next step elsewhere in this file); jfbouch `ex_ptt_chif.html` (Berthier-Augereau 1813, different letter and
+code); Cipherbrain's unrelated-titled search-engine hits (Top-25 Teil 2, Kryptografen aller Nationen 1800s, Columbus, Freimaurer);
+Cipher Mysteries' unrelated-titled hits (Nageon, La Buse, Toussaint, Voynich); the x.com / runtimewire / zamin.uz Marmont-Astra press
+echoes (all about the 1809 Marmont letter, per their own titles and snippets).
+
+**Result.** No decipherment or plaintext of this item located by these queries on 1 Oct 2026. Status word on line 1 stays `open`.
+The one new fact for this folder: Tomokiyo's blog dates his transcription upload of "the available page" of this letter to
+1 Oct 2025 (the `unsolved.htm` text our `ciphertext.txt` follows), and the live `unsolved.htm` of 27 Sept 2026 still lists it unsolved.
+
+Requests this section: WebSearch 10 (8 plain + 3 `site:`, one duplicate counted once); scienceblogs.de 5 (2 searches, Top 50 list, 2 posts);
+ciphermysteries.com 2; cryptiana.blogspot.com 3 (search, post, feed); cryptiana.web.fc2.com 3 (one 302 to fc2's 404, two pages);
+blogs.futura-sciences.com 1; mmbennetts.wordpress.com 1; carter.church 1; jfbouch.fr 4 (WebFetch 503 twice, curl 200 twice -- the host
+answered curl's descriptive UA and not the fetcher; no further requests); bibmath.net 1; napoleon-histoire.com 1. All one at a time,
+>= 1.5 s apart, no 403/429/challenge pages. No subagents, no transcription, no decoding.
+
+Intake gate re-run after this section:
+```
+berthier-napoleon-1812: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
