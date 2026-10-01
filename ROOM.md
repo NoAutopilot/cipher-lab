@@ -5074,3 +5074,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-09-30 23:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:10 UTC: spawned 0 (), queued left 0
 2026-10-01 00:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 00:09 UTC: spawned 0 (), queued left 0
 2026-10-01 01:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 01:10 UTC: spawned 0 (), queued left 0
+2026-10-01 01:23 | third-orch | claim: debosnys-1883 round R3, 5 Opus 5.5 workers (owner request 1 Oct), cap 15 USD each; all output in the private repo per RESTRICTED.md, nothing restricted here
