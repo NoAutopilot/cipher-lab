@@ -2446,7 +2446,7 @@
     "AUDIT.md '## Second audit (V6-MERCY2, 25 Sept 2026)'",
     "AUDIT.md '## N4 decision (28 Sept 2026, MERCY-N4)'"
    ],
-   "audit_status": "two audits + N4 decision",
+   "audit_status": "two audits",
    "reading_version": "9f4b969 (reading.txt at V6-MERCY2, 2159f63); revised after both audits at 5b08322 (R7-MREV, logged in AUDIT.md 'Post-audit reading change')",
    "superseded_by": "",
    "fields_source": "espagnol142-mercy-1648/AUDIT.md section 1 and S2.1 (N3, key ours); S 496, M 26 of 522 after R7-MREV (the audited version read S 494, M 27 of 521)"
