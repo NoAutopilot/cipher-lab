@@ -1,3 +1,5 @@
+> **Correction before use (1 Oct 2026, reading revised after D. Bourdeau's corrections, checked on the image):** the reading quoted below is now the 1 Oct 2026 one. 48, 52, 65 and 72 were two digits written together (the key runs 2-34), two glued 26 are 2 6, and the open 14 is restored at r14:7, r16:3, r16:6 and v01:15, so "CLEUES" (Cleves) is back in the reading at grade M and the stretch after Brandenburg reads "Conrad von Burgstorf su camarero mayor" (Konrad von Burgsdorff, an identification, grade I). 529 code tokens: S 488, M 41. The 25 Sept 2026 note that follows is superseded on Cleves; it is kept as the record.
+
 > **Correction before use (LANE V6, 25 Sept 2026 21:08 UTC):** after this prompt was written, a blind re-transcription (LANE R7, meye/README.md; R7-MREV 5b08322) read the glyph behind "CLEUES" as 19, not 14, on every blind pass, so the committed reading now has "ELEUES" there and the Cleves (Kleve) name is not supported. Treat every mention of Cleves below as an unconfirmed guess; Brandenburg, the three thousand infantry and Chevreuse stand as before.
 
 SECOND OPINION REQUEST, label SO-MERCY-F22
@@ -17,14 +19,16 @@ THE ITEM
   as given by Archduke Leopold Wilhelm, Brussels 8 Feb and 13 April 1648 (talks with the duc de Longueville, the
   duchesse de Chevreuse and the comte de Saint-Ibal at Kempen). Mercy was Leopold Wilhelm's chaplain (Lonchay 1896,
   p.445). We infer, but cannot read, that the sender is Leopold Wilhelm.
-- Cipher: 521 numeric code tokens over 38 values, a letter-level homophonic cipher, interleaved with clear Spanish.
+- Cipher: 529 numeric code tokens over the values 2-34 plus one name sign (a box) and one struck 14, a letter-level homophonic cipher, interleaved with clear Spanish (1 Oct 2026 count; the prompt as first sent said 521 tokens over 38 values).
 
-OUR READING, as the decode renders it, brackets ours (cipher runs in capitals; grade S = cryptanalytic, some tokens M = uncertain; no key sheet, no known plaintext)
+OUR READING, as the decode renders it (1 Oct 2026), brackets ours (cipher runs in capitals; grade S = cryptanalytic, some tokens M = uncertain; no key sheet, no known plaintext; [box] = a name sign, identified from the clear sibling instruction of 13 Apr 1648 as the comte de Saint-Ibal)
 "... ALANDOSE [= hallandose] ESTAS ARMAS EN CAMPAGNA y asi Holgare me digais lo que en esta razon saueis entendido. DE LA DUQUESA DE
-CHEUREUSE Y DEL [word code] y porque qualquiera ora de tardanca ... PASAREIS A CLEUES A UEROS CON EL ELECTOR DE BRANDENBURG
-... Y EMBIAN CARTAS DE CREENCIA QUE UAN CON ESTA Y LES PROPONDREIS DES I SE [= de si se] PERMITIRA SE LEUANTEN EN AQUEL PAIS TRES MIL
-HOMBRES DE INFANTERIA EN DOS O TRE SEGIMIENTI [= tres regimientos, not yet reading cleanly] Y CON QUE CONDICIONES ... En todo os encargo la brevedad ... Barneton a
-seis Junio de 1648". About two fifths of the cipher does not yet read.
+CHEUREUSE Y DEL [box] y porque qualquiera ora de tardanca ... Y QUE EL [box] UENGA CON UOS PARA QUE NOS INFORME DELLA Y SEPAMOS
+Con fundamento ... PASAREIS A CLEUES A UEROS CON EL ELECTOR DE BRANDENBURG Y CON COPURAD LON BURGSTORF [= Conrad von Burgsdorff]
+SU CMARERO MAYOR PARA QUIEN SE OS EMBIAN CARTAS DE CREENCIA QUE UAN CON ESTA Y LES PROPONDREIS QUE SI SE PERMITIRA SE LEUANTEN
+EN AQUEL PAIS TRES MIL HOMBRES DE INFANTERIA EN DOS O TRES REGIMIENTOS Y CON QUE CONDICIONES Y AL CAMARE[RO] MAYOR SI QUERRA
+ENCARGA[RSE] DELLA ... En todo os encargo la brevedad ... Barneton a seis Junio de 1648". Eight tokens in one line (v04)
+do not read; letters lost at the trimmed right edge of f.22v are restored only by sense.
 
 WHAT TO LOOK FOR
 1. Any print or calendar of this 6 June 1648 instruction, or of a mission by the abbé/Baron de Mercy to the Elector of

@@ -1,3 +1,10 @@
 line	position	value	grade	reason
 r06	14	c	M	image shows 14 (open 4, same shape as the 4 of the adjacent 24), both passes read 19; reads Cheureuse; blind re-read R7-MEYE agrees
 r17	5	c	M	image shows 14 between 25 and 30; blind re-read R7-MEYE agrees
+r14	7	c	M	image shows 14 (open 4 with crossbar, as in the adjacent 34 and in r15's '19 14' pair, where 19 has a closed round bowl); reads Cleues. M2 non-blind re-read said 14, MREV reverted it to 19 on 3 blind passes; restored 1 Oct 2026 on Bourdeau's independent image read (issue 16 reply) plus our own re-check, bcheck/r14_p6-7_z3.jpg vs bcheck/r15_p3-5_z3.jpg
+r16	3	c	M	image shows 14 (open 4 with crossbar), as r14:7; reads 'y con'. Restored 1 Oct 2026 (Bourdeau 1 Oct 2026, checked on image bcheck/r16_p3-6_z3.jpg)
+r16	6	c	M	image shows 14 (open 4 with crossbar), as r14:7; reads 'co(nrad)'. Restored 1 Oct 2026 (Bourdeau 1 Oct 2026, checked on image bcheck/r16_p3-6_z3.jpg)
+v01	15	c	M	image shows 14 (open 4 with crossbar, not the closed-bowl 9); reads 'y al camare[ro]'. Bourdeau 1 Oct 2026, checked on image bcheck/v01_p14-16_z4.jpg
+r10	8	or	M	sense re-cut by D. Bourdeau (1 Oct 2026): the tight 25 read as 2 5 (o r), 'informe'; as 25 = u it gives 'infume'. Image (bcheck/r10_p7-9_z4.jpg) shows a normal tight group, neutral on segmentation
+r10	13	l	M	sense re-cut by D. Bourdeau (1 Oct 2026): the 2 and the 8 read as one 28 (l), 'della y'; as 2 8 (o u) it gives 'oulay'. Image (bcheck/r10_p12-15_z3.jpg) shows the 2 and the 8 standing apart at an ordinary between-token gap: a repair against the spacing, not a transcription
+r10	14		M	second half of the merged 28 (see r10:13); contributes no letter

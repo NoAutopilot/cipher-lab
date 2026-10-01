@@ -436,3 +436,43 @@ the safe sentence, which now carries the 1933 précis (N4.1), and it bars any "u
 apw.digitale-sammlungen.de 10 (2 curl, both the Anubis challenge page; 8 headless-Chromium fetches, each cleared);
 api.semanticscholar.org 8; data.htrc.illinois.edu 2; www.googleapis.com/books 36 (keyed, `country=US`, >=3.3 s apart,
 no 429); archive.org 0; gallica.bnf.fr 0; no login anywhere. Cost: the orchestrator's `get_session` figure.
+
+## Reading revised after this audit: Bourdeau corrections folded in (1 Oct 2026)
+
+Propagation under rule 10 (a reading revised after AUDIT.md), written by the fold-in worker of 1 Oct 2026 (account 3
+orchestrator's FINISH-PASS job), not a verifier: no class is reassigned here. Details, per-token table and judge
+output: NOTES.md "Bourdeau corrections folded in (1 Oct 2026)".
+
+- **What changed.** D. Bourdeau (dbourdeau/cyphersolver issue 16 reply, 1 Oct 2026; files snapshotted at
+  `sources/cyphersolver/2026-10-01/mercy1648/`) corrected our transcription in eight places (48 x2, 52, 65, 72 are two
+  digits written together, the key running 2-34; two glued 26 are 2 6; one 19 at v01 is an open 14), confirmed the
+  five 19 -> 14 glyphs (three of which R7-MREV had reverted), and re-cut two tokens in r10 by sense. All were checked
+  on the image here and applied (`ciphertext.tsv`, `exceptions.tsv`, `key.tsv`, `corrections.tsv` steps 12-16).
+- **Counts now: 529 code tokens, S 488, M 41, H 0, C 0** (was 522: S 496, M 26). Judge (default `es` corpus) FAIL
+  -1.018 vs real_p05 -0.875 (was -1.031). Eight tokens in v04 still do not read.
+- **Cleves is back in the reading** ("pasareis a CLEUES", r14:7 = 14 at grade M, now on two independent image reads,
+  ours and Bourdeau's, against the three blind passes the 25 Sept post-audit note followed). The 25 Sept instruction
+  "do not name Cleves in any outward sentence" is lifted to: Cleves may be named as a grade-M reading.
+- **Identifications (grade I, credited to Bourdeau):** the box sign = the comte de Saint-Ibal (from the clear sibling
+  f.21r, 13 Apr 1648, "que este [Santibal] viniese con Vos incognito"); "copurad lon burgstorf su cmarero mayor" =
+  Konrad von Burgsdorff, the Elector's Oberkammerherr. Neither is a reading of a key value.
+- **Novelty class unchanged (N4, key `ours`).** Bourdeau's page of 1 Oct 2026 is built on our issue 16 (it copies our
+  transcription, key and reading into `cl/` and corrects them); it is a correction of this reading, not a prior
+  decipherment, and does not lower the class. The key is still ours (recovered ciphertext-only), now with an outside
+  correction; any outward text credits him for the eight corrections, the two re-cuts and the two identifications.
+
+**Safe sentence (rule 10; supersedes N4.1's for any outward text; only the counts and the credit change):** "BnF
+Espagnol 144 f.22, an unsigned Spanish instruction to the abbé (Baron) de Mercy dated Barneton 6 June 1648, has been
+read in part by our own cryptanalysis, with eight transcription corrections and two re-cuts by D. Bourdeau (1 Oct
+2026) checked by us on the image (488 of 529 code tokens at grade S, 41 at M, none from a key or known plaintext). No
+prior decipherment of this leaf and no print of its plaintext were located after three logged searches (25-28 Sept
+2026, this AUDIT.md) that now cover the principal editions, catalogues and project pages; internal or unpublished work
+is not excluded. The substance of the mission it sets out is in print: Lonchay, Cuvelier and Lefèvre, *Correspondance
+de la Cour d'Espagne* IV (1933) no. 183, p. 71, calendars Leopold Wilhelm's own dispatch to Philip IV of June 1648
+(Brussels, Secrétairerie d'État et de Guerre, reg. 240, fol. 201) as reporting that someone had been asked to ask the
+Elector of Brandenburg whether 3,000 infantry could be raised in his states for a corps to operate in Flanders. The
+reading is a cryptanalytic result, not confirmed by a key or a clear copy."
+
+`SECOND-OPINIONS-QUEUE.tsv` row SO-MERCY-F22 is `checked` (PR 16) and its own cells quote no reading, so it is left
+as is; its prompt file `second-opinions/PROMPT-chatgpt.md`, which does quote the reading, carries a dated correction
+block and the current reading.

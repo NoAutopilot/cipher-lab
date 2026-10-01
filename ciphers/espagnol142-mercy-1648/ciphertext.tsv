@@ -276,7 +276,8 @@ r16	17	8	H		agree
 r16	18	5	H		agree
 r16	19	22	H		agree
 r16	20	6	H		agree
-r16	21	72	H		agree
+r16	21	7	M	one group 72 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r16_p19-21.jpg: t o: burgs-to-rf
+r16	22	2	M	one group 72 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r16_p19-21.jpg: t o: burgs-to-rf
 r17	1	5	H		agree
 r17	2	20	H		agree
 r17	3	6	H		agree
@@ -286,39 +287,42 @@ r17	6	30	H		agree
 r17	7	10	H		agree
 r17	8	5	H		agree
 r17	9	18	H		agree
-r17	10	52	H		agree
-r17	11	30	H		agree
-r17	12	10	H		agree
-r17	13	13	H		agree
-r17	14	23	H		agree
-r17	15	5	H		agree
-r17	16	3	H		agree
-r17	17	17	H		agree
-r17	18	5	H		agree
-r17	19	10	H		agree
-r17	20	48	H		agree
-r17	21	31	H		agree
+r17	10	5	M	one group 52 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p9-11.jpg: r o: came-r-o (camarero)
+r17	11	2	M	one group 52 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p9-11.jpg: r o: came-r-o (camarero)
+r17	12	30	H		agree
+r17	13	10	H		agree
+r17	14	13	H		agree
+r17	15	23	H		agree
+r17	16	5	H		agree
+r17	17	3	H		agree
+r17	18	17	H		agree
+r17	19	5	H		agree
+r17	20	10	H		agree
+r17	21	4	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p19-21.jpg: q u: para qu-ien
+r17	22	8	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r17_p19-21.jpg: q u: para qu-ien
+r17	23	31	H		agree
 r18	1	18	H		agree
 r18	2	32	H		agree
 r18	3	6	H		agree
 r18	4	18	H		agree
-r18	5	26	H		agree
-r18	6	19	H		agree
-r18	7	30	H		agree
-r18	8	12	H		agree
-r18	9	31	H		agree
-r18	10	10	H		agree
-r18	11	32	H		agree
-r18	12	14	H		agree
-r18	13	10	H		agree
-r18	14	5	H		agree
-r18	15	7	H		agree
-r18	16	17	H		agree
-r18	17	6	H		agree
-r18	18	16	H		agree
-r18	19	18	H		agree
-r18	20	14	H		agree
-r18	21	5	H		agree
+r18	5	2	M	one group 26 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_D.jpg: o s: se o-s embian
+r18	6	6	M	one group 26 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_D.jpg: o s: se o-s embian
+r18	7	19	H		agree
+r18	8	30	H		agree
+r18	9	12	H		agree
+r18	10	31	H		agree
+r18	11	10	H		agree
+r18	12	32	H		agree
+r18	13	14	H		agree
+r18	14	10	H		agree
+r18	15	5	H		agree
+r18	16	7	H		agree
+r18	17	17	H		agree
+r18	18	6	H		agree
+r18	19	16	H		agree
+r18	20	18	H		agree
+r18	21	14	H		agree
+r18	22	5	H		agree
 r19	1	18	H		agree
 r19	2	19	H		agree
 r19	3	32	H		agree
@@ -353,13 +357,14 @@ r20	11	5	H		agree
 r20	12	18	H		agree
 r20	13	26	H		agree
 r20	14	6	H		agree
-r20	15	48	H		agree
-r20	16	19	H		agree
-r20	17	6	H		agree
-r20	18	26	H		agree
-r20	19	6	H		agree
-r20	20	18	H		agree
-r20	21	3	H		agree
+r20	15	4	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r20_p14-16.jpg: q u: qu-e si se permitira
+r20	16	8	M	one group 48 on image	split, Bourdeau 1 Oct 2026, checked on image h2crops/crop_r20_p14-16.jpg: q u: qu-e si se permitira
+r20	17	19	H		agree
+r20	18	6	H		agree
+r20	19	26	H		agree
+r20	20	6	H		agree
+r20	21	18	H		agree
+r20	22	3	H		agree
 r21	1	33	H		agree
 r21	2	5	H		agree
 r21	3	30	H		agree
@@ -424,23 +429,25 @@ r23	20	23	H		agree
 r24	1	7	H		agree
 r24	2	5	H		agree
 r24	3	18	H		agree
-r24	4	65	H		agree
-r24	5	18	H		agree
-r24	6	22	H		agree
-r24	7	21	H		agree
-r24	8	30	H		agree
-r24	9	31	H		agree
-r24	10	18	H		agree
-r24	11	32	H		agree
-r24	12	7	H		agree
-r24	13	26	H		agree
-r24	14	13	H		agree
-r24	15	14	H		agree
-r24	16	29	H		agree
-r24	17	32	H		agree
-r24	18	4	H		agree
-r24	19	8	H		agree
-r24	20	18	H		agree
+r24	4	6	M	transcribed 65; a gap and a crease run between the 6 and the 5 on the image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_A.jpg: s r: tre-s r-egimientos
+r24	5	5	M	transcribed 65; a gap and a crease run between the 6 and the 5 on the image	split, Bourdeau 1 Oct 2026, checked on image h2crops/h10h11_crop_A.jpg: s r: tre-s r-egimientos
+r24	6	18	H		agree
+r24	7	22	H		agree
+r24	8	21	H		agree
+r24	9	30	H		agree
+r24	10	31	H		agree
+r24	11	18	H		agree
+r24	12	32	H		agree
+r24	13	7	H		agree
+r24	14	2	M	one group 26 on image	split, Bourdeau 1 Oct 2026, checked on image bcheck/r24_p13-14_z4.jpg: o s: regimient-o-s y
+r24	15	6	M	one group 26 on image	split, Bourdeau 1 Oct 2026, checked on image bcheck/r24_p13-14_z4.jpg: o s: regimient-o-s y
+r24	16	13	H		agree
+r24	17	14	H		agree
+r24	18	29	H		agree
+r24	19	32	H		agree
+r24	20	4	H		agree
+r24	21	8	H		agree
+r24	22	18	H		agree
 v01	1	14	H		agree
 v01	2	2	H		agree
 v01	3	32	H		agree

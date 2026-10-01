@@ -2463,3 +2463,107 @@ name surfaces by this method. No token, grade or class change.
 gives 3546 x 5245 px, exactly the size of the committed `images/f22v_canvas59.jpg`: the file on disk is already the
 native image, so no larger Gallica image of f.22v's right edge exists to recover the gutter token v04:19. The token
 needs a new capture of the leaf (H12, ASKS 81). No token, grade or class change.
+
+## Bourdeau corrections folded in (1 Oct 2026)
+
+**Status unchanged: partial** (a status change is the orchestrator's). Source: D. Bourdeau's reply of 1 Oct 2026 on
+dbourdeau/cyphersolver issue 16 (quoted by the owner) and his files, snapshotted unmodified at
+`sources/cyphersolver/2026-10-01/mercy1648/` (`ct_f22.tsv`, `edits.tsv`, `key.tsv`, `NOTES.md`, `lost_edge.tsv`,
+`open_stretches.tsv`; MIT / CC BY 4.0). His page is built on our issue 16 (transcription, key, reading), so it is a
+check and correction of our work, not a prior decipherment. Every correction was checked here on the native Gallica
+images already on disk (`images/f22r_canvas58.jpg`, `images/f22v_canvas59.jpg`, 3454 x 5261 / 3546 x 5245), with
+earlier crops in `h2crops/` and new local crops in `bcheck/` (cut with PIL from the disk images; no Gallica request for
+the leaf itself). A token-stream diff of his `ct_f22.tsv` against our `ciphertext.tsv` shows no other difference: the
+eight places below, the three 19/14 positions MREV had reverted, our five-plus-one existing 14 readings, and notation
+(`BOX` = `[MARK:box]`, `14` = `[MARK:frac]`).
+
+### Per token
+
+| where (old pos) | ours before | Bourdeau 1 Oct | what the image shows (1 Oct 2026, this session) | verdict | word before -> after |
+|---|---|---|---|---|---|
+| r24:4 | 65 (key M, s) | 6 5 = s r | a visible gap with a paper crease between the 6 and the 5 (`h2crops/h10h11_crop_A.jpg`; H10's blind A already read "6 5") | agree, split | TRESEGIMIENTI -> TRES REGIMIENTOS |
+| r17:10 | 52 (key M, y) | 5 2 = r o | written as one tight group, spacing like the within-group gap of 18 and 30 beside it (`h2crops/crop_r17_p9-11.jpg`): the image is neutral on segmentation | agree on the range argument (no code above 34) and sense | CMAREYMAYOR -> CMAREROMAYOR |
+| r17:20 | 48 (key M, d) | 4 8 = q u | one tight group, the open-topped 4 (`h2crops/crop_r17_p19-21.jpg`); the same hand writes "que" as "4. 8." apart at r24:18-19 (`bcheck/r24_right.jpg`) | agree, range + sense | PARADIEN -> PARA QUIEN |
+| r20:15 | 48 (key M, d) | 4 8 = q u | as r17:20 (`h2crops/crop_r20_p14-16.jpg`), the closed-bowl 19 next to it for contrast | agree, range + sense | DESISE -> QUE SI SE |
+| r16:21 | 72 (key M, z) | 7 2 = t o | one tight group (`h2crops/crop_r16_p19-21.jpg`), neutral | agree, range + sense | BURGSZRF -> BURGSTORF |
+| r18:5 | 26 (S, i) | 2 6 = o s | one tight group (`h2crops/h10h11_crop_D.jpg`); 26 is also a valid code (i), so this split rests on sense alone | agree, sense | SEIEMBIAN -> SE OS EMBIAN |
+| r24:13 | 26 (S, i) | 2 6 = o s | one tight group (`bcheck/r24_p13-14_z4.jpg`), as r18:5 | agree, sense | REGIMIENTIY -> REGIMIENTOS Y |
+| v01:15 | 19 (S, e) | 14 = c | the open-topped 4 with a crossbar, not the round closed bowl this hand gives 9 (`bcheck/v01_p14-16_z4.jpg`) | agree | YALEAMARE -> Y AL CAMARE[ro] |
+| r14:7, r16:3, r16:6 | 19 (S, e) since MREV | 14 = c ("your five exceptions check out") | the same open 4 with crossbar; r15 has a "19 14" pair side by side that shows the two forms (`bcheck/r14_p6-7_z3.jpg`, `bcheck/r15_p3-5_z3.jpg`, `bcheck/r16_p3-6_z3.jpg`) | agree; restores M2's reading against the three blind passes MREV followed | ELEUES -> CLEUES; Y EON EO -> Y CON CO |
+| r10:8 | 25 (key M, u) | 2 5 = o r, by sense, M | a normal tight 25 (`bcheck/r10_p7-9_z4.jpg`); neutral | accepted at M, credited | INFUME -> INFORME |
+| r10:13-14 | 2 8 (S, o u) | one 28 = l, by sense, M | the 2 and the 8 stand apart at an ordinary between-token gap (`bcheck/r10_p12-15_z3.jpg`): the image is against the merge | accepted at M as a sense repair, kept as two tokens in `ciphertext.tsv` (the second carries no letter) | DEOULAY -> DELLA Y |
+
+Disagreements with Bourdeau: none on value. One difference of emphasis: the image does not itself show a gap inside
+52, 48, 72 or 26 (only inside 65), so those six splits rest on the key's range (no code above 34; H2's 3/3 "one group"
+was a read of spacing, not of the key) and on the words, and are graded M here; Bourdeau also marks them M in his
+`ct_f22.tsv`.
+
+### How applied
+
+- `ciphertext.tsv`: the seven splits (65, 52, 48 x2, 72, 26 x2) as two tokens each, confidence M, `alt` holding the
+  group as transcribed, `why` naming the crop; positions renumbered on r16, r17, r18, r20, r24. 522 -> 529 tokens.
+- `exceptions.tsv` (2 -> 9 rows): 19 -> c at r14:7, r16:3, r16:6, v01:15 (M); Bourdeau's two r10 re-cuts (r10:8 = "or",
+  r10:13 = "l", r10:14 = no letter), M, credited.
+- `key.tsv`: rows 48, 52, 65, 72 removed (no occurrences left); notes on 14, 19, 25, 26 updated. No value changed.
+- `corrections.tsv` steps 12-16; `cipher_codes_529.tsv` (new: the code stream, 529 rows, 34 distinct signs, with the six
+  19 -> 14 glyphs applied; `cipher_codes_522.tsv` stays for reproducing H3 onward).
+- `decode.json` header line names the fold-in. `python3 tools/decode_key.py ciphers/espagnol142-mercy-1648` then
+  `--check`: "ciphertext.tsv: tokens 529: M 41, S 488" / "reading up to date" (exit 0).
+
+**Grades (rule 4): 529 tokens: H 0, C 0, S 488, M 41, I 0, U 0** (was 522: S 496, M 26). No H or C: a cryptanalytic
+result. Open, as Bourdeau also finds: v04:9-13 and 17-19 ("no la dire?t non", "si i un[?]", code 15 twice, the second cut
+by the gutter) do not read as Spanish; the letters lost at the trimmed right edge of f.22v (`lost_edge.tsv`:
+camare[ro], encarga[r s]e, su [ma]no, pag[an]dola, leua[nt]ar, cons[ig]uiese, tener [tan]ta gente) are restorations by
+sense, not tokens, and are not counted as read.
+
+Reading, cipher runs as now regenerated (r14-r24): "pasareis a CLEUES a ueros con el elector de Brandenburg y con
+COPURAD LON BURGSTORF su CMARERO mayor para quien se os embian cartas de creencia que uan con esta y les propondreis
+que si se permitira se leuanten en aquel pais tres mil hombres de infanteria en dos o tres regimientos y con que
+condiciones y al camare[ro] mayor si querra encargar[se] della ..."; r09-r10: "que el [box] uenga con uos para que nos
+informe della y sepamos".
+
+### Judge (rule 7, pasted)
+
+```
+$ python3 tools/judge_plaintext.py specs/espagnol142-mercy-1648.json --file ciphers/espagnol142-mercy-1648/reading.txt
+ok   length: got=1349, min=200, max=1000000000
+FAIL language: score=-1.018, null_p99=-1.923, real_p05=-0.875, real_median=-0.813, mode=both, N=1349
+FAIL - espagnol142-mercy-1648 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+Up from -1.031 (522 tokens, MREV) and still a FAIL against real_p05 -0.875, far above the null (p99 -1.923). The spec
+judges against the default `es` corpus, not an era/register-matched one (rule 3, es17c paragraph: a FAIL here is of
+unknown reliability); reported as a FAIL.
+
+### Names (identifications, not readings)
+
+- **The box sign = the comte de Saint-Ibal** (Chevreuse's associate in the 1647-48 talks). Credited to D.
+  Bourdeau (1 Oct 2026). Evidence: the clear sibling instruction of 13 Apr 1648, f.21r (Gallica canvas 56), which this
+  session read on a 1800 px image (1 Gallica request): "Despues de oydo a la Duquessa con Santibal, Dessearia si fuesse
+  possible que este viniese con Vos incognito (si pareciere), para que me hiciese relacion de las noticias ..." and
+  further down "en procurar que Santibal venga aqui"; the cipher of 6 June has "de la duquesa de Cheureuse y del [box]"
+  (r06-r07) and "que el [box] uenga con uos para que nos informe della" (r09-r10), the same request in the same words
+  (now that r10 reads "informe"). Bourdeau also cites f.20r (8 Feb 1648) "el Conde de S. Ibal"; not re-read here. Our
+  own H29 (28 Sept 2026) had Saint-Ibal and the duke of Lorraine as the two names fitting both contexts and graded
+  neither; the f.21r parallel is what separates them. **Grade I** (an identification from a sibling leaf's clear
+  text, not plaintext of this letter and not a key value); `key.tsv` keeps the box as `_` (M), so the reading does not
+  render the name.
+- **"COPURAD LON BURGSTORF su CMARERO mayor" = Konrad von Burgsdorff, the Elector's Oberkammerherr (camarero mayor).**
+  Credited to D. Bourdeau (1 Oct 2026) for the reading through the splits 72 = t o and 52 = r o and for "copurad" =
+  Conrad. Our own campaign had the name and the title as crib candidates (H41, H42, H43, 28 Sept 2026: Burgsdorf the
+  unique best fit of 402 names, camarero the best title, Urkunden Bd. 4 "Oberkammerherrn Conrad von Burgsdorf", at
+  Cleve in 1647), but assumed 72 and 52 were syllable codes (do, ro); the splits make every letter a key letter.
+  "burgstorf" is exact (t for d); "copurad" is two letters off "conrad" and "lon" one off "von"; "cmarero" drops an a.
+  **Grade I** for the identification; the letters themselves keep their token grades (S, with the split tokens M).
+
+### Lesson
+
+Four of the eight corrections were tokens above 34 in a key whose values run 2-34: a range check on the token stream
+against the key's own range would have flagged 48, 52, 65 and 72 as two digits written together on the day the key
+settled (M2, 25 Sept 2026), instead of carrying them for six days as "M codes" (H36 searched letter values for 48 and 65; H41-H42
+assumed syllable values for 72 and 52). H2's three-way eye-check settled each as "one group" from spacing alone,
+which the image cannot decide for this hand. Suggestion (one line, not done here): a `--range-check` option in
+`tools/decode_key.py`, or a check in `tools/design_prior.py`, that lists every token outside the key's own numeric
+range before a key is called settled.
+
+Requests this session: gallica.bnf.fr 1 (f.21r canvas 56 at 1800 px, for the Saint-Ibal parallel); no other host.
