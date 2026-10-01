@@ -443,3 +443,50 @@ re-check of just those codes against the image would resolve most of them quickl
 sits suspiciously close to 1188 (key.tsv's C-grade `mr`, but this worker's own p1 L01 reading of 1188 was `prets`
 not `mr` -- flagged there too): worth checking on the image whether the sibling ink sources for 1188 actually
 read 1184, a one-digit transcription slip somewhere in the chain. No subagents used this pass; model Sonnet.
+
+## Web and blog check (WEBCHECK-huntington-luzerne-destouches-1781, 1 Oct 2026)
+
+Required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads", CHECK-SOLVED-WEB, 28 Sept
+2026), run 1 Oct 2026 23:35-23:39 UTC by the account-4 worker WEBCHECK-huntington-luzerne-destouches-1781 (brief
+`.claude/briefs/runs/2026-10-01-account4-webcheck.md`). Web search tool plus plain GETs with a descriptive
+User-Agent, one request at a time, >= 1.5 s apart. Searched Cipherbrain, the Cryptiana blog (and Tomokiyo's
+cryptiana.web.fc2.com pages via the on-disk snapshot) and Cipher Mysteries, as the step names them.
+
+**(a) Plain web searches (five, the four required plus the model-solve query).**
+
+| # | Query | Result |
+|---|---|---|
+| 1 | `"La Luzerne" Destouches 1781 cipher letter "January 1781"` (sender + recipient + date) | Top hits: Yale Beinecke EAD 612 (Rochambeau papers: La Luzerne-Destouches letters of May 1781 "partly in code, with interlinear decode" -- Yale's own copies, already in this NOTES.md's Yale section), PMHB article on La Luzerne and the Articles of Confederation, Adams Papers, Calisphere record for the Huntington 19 Oct 1780 letter to Ternay, NSA Cryptologic Almanac "The American Revolution" PDF (HTTP 403 on fetch, not retried -- a general piece, no Destouches mention expected), Wikipedia, Founders Online (La Luzerne to GW 27 Mar 1781; Destouches to GW 7 Feb 1781, n.1 already cited in AUDIT.md). No page prints a plaintext or decipherment of mssDE 68 or mssDE 108(A). |
+| 2 | `Huntington "mssDE 108" OR "mssDE 68" Destouches Luzerne chiffre cipher` (shelfmark + cipher words; the letters are French, so `chiffre` and `cipher`) | OAC finding aid for mssDE (collection summary, 117 items, La Luzerne among correspondents; the 108(B) "decoded, by Destouches" catalogue note is already recorded in AUDIT.md), Huntington Digital Library item 10286 (6 Mar 1781 document), Wikipedia noise (Huntington MS 6/17/20, Luzerne County). Nothing beyond the archive's own catalogue. |
+| 3 | `"entierement hors de deffense" OR "onze lieues au-dessous de Richmond" Luzerne Destouches` (most distinctive decoded phrases, from reading_108A.txt p1 L06/L09) | Zero hits for either quoted phrase; the engine fell back to generic Luzerne/Destouches/Chesapeake pages (Founders Online, Battle of Cape Henry, Siege of Yorktown). No transcription of either letter's French is on the open web by these phrases. |
+| 4 | `"La Luzerne to Destouches" 16 January 1781 Huntington cipher numerical code` (folder's descriptive title) | Same family of hits as #1 plus the Calisphere record "Letter : Philadelphia, to Charles-René-Dominique Sochet Destouches, 1781 January 16" (Huntington, = mssDE 108). Calisphere item page answered HTTP 202 (bot challenge) to one curl and empty to the fetch tool; not retried. Its catalogue text is the same Huntington record already read for AUDIT.md (108(A) undecoded, 108(B) decoded by Destouches). No decipherment on the web. |
+| 5 | `Luzerne Destouches cipher solved Claude OR GPT "solves"` (model-solve announcements, check-solved.md) | Only the Sept 2026 Urquhart "Cyphral Distich" press coverage and arXiv papers on LLM cipher reasoning; nothing names La Luzerne, Destouches or the Huntington letters. |
+
+**(b) Blog site searches.**
+
+| Blog | Query / route | Result |
+|---|---|---|
+| Cipherbrain (scienceblogs.de/klausis-krypto-kolumne) | web search `site:scienceblogs.de/klausis-krypto-kolumne Luzerne OR Destouches OR Rochambeau Chiffre 1781`; then the blog's own search page `?s=Luzerne`, `?s=Destouches`, `?s=Rochambeau` (3 GETs, all HTTP 200) | Web search returned only unrelated posts (Catinat 1690s letter, "Fünf kryptologische Cold Cases", Résistance ciphers). The blog's own search answers "Wir konnten leider keine Beiträge finden" for all three terms: no Cipherbrain post names La Luzerne, Destouches or Rochambeau, so there is no post whose comment thread could carry this letter. |
+| Cryptiana blog (cryptiana.blogspot.com) + Tomokiyo's cryptiana.web.fc2.com | on-disk snapshot `sources/cryptiana/` grepped first (0 requests): `luzerne|destouches|mssDE` hits only the pages already cited in this NOTES.md (blog post "Decoded but not Identified Code of Luzerne, French Minister to the United States", Sept 2021; web/marbois.htm, rochambeau.htm, washingt.htm, lovell.htm, livingst.htm, bookcode.htm, haldimand.htm, frankli2.htm, bazeries3.htm, unsolved-2026-09-24.htm); `destouches` alone hits **no** fc2 page. Web search `site:cryptiana.blogspot.com Luzerne OR Destouches` returned nothing from the blog (engine fell back to Wikipedia). Live comment feed of the 2021 post fetched (`/feeds/6390417791761491334/comments/default`, 1 request). | The post concerns the Yale Rochambeau-papers letter of 8 Jan 1781 (La Luzerne to Rochambeau), the sibling already aligned in `alignment_yale_8jan1781.tsv`, not mssDE 68/108. **Comment thread: 1 comment**, Satoshi, 22 Mar 2026 16:20: "The numbers have clearly less repetitions than the plaintext. (Six times for 664 is the highest repetition.) Basic words such as 'et' or 'la' must have multiple assignments. The number 337 occurs three times close to the end. I thought this might correspond to 'et' but it doesn't seem to work." A frequency remark on the 8 Jan 1781 code; no key, no plaintext, no mention of Destouches or the Huntington letters. Same single comment in the on-disk snapshot of 24 Sept 2026. |
+| Cipher Mysteries (ciphermysteries.com) | web search `site:ciphermysteries.com Luzerne OR Destouches OR "Expédition particulière" cipher`; then the site's own search `?s=Luzerne`, `?s=Destouches`, `?s=Rochambeau` (3 GETs, HTTP 200) | Web search returned only La Buse / Bellaso / d'Agapeyeff posts. The site's own search answers "Nothing Found" for all three terms: no Cipher Mysteries post, hence no comment thread, on this correspondence. |
+
+**(c) Hits opened and comment threads read.** The one blog hit with a comment thread (the Cryptiana 2021 post) was
+opened and its full thread read, above. The Cipherbrain and Cipher Mysteries searches produced no post to open.
+Non-blog hits (OAC finding aid, Founders Online, Yale EAD) are catalogue or edition pages already cited elsewhere in
+this NOTES.md and AUDIT.md and carry no comment threads.
+
+**Result.** No decipherment or plaintext of this item located by these queries on 1 Oct 2026 (a search result,
+never a novelty verdict, CLAUDE.md rule 10). The archive's own contemporary decipherment on the duplicate mssDE 108(B)
+(AUDIT.md, N0) is not on the open web or in any blog comment thread found here. Status word left as it stands; the
+`found-solved` recommendation from AUDIT.md remains the lane orchestrator's to set.
+
+**Requests per host:** scienceblogs.de 3, ciphermysteries.com 3, cryptiana.blogspot.com 1, calisphere.org 1 (HTTP
+202, stopped), nsa.gov 1 (HTTP 403, stopped), web search tool 9 queries. Blocks logged: calisphere.org 202 (bot
+challenge), nsa.gov 403; neither retried.
+
+**Intake gate re-run** (`python3 tools/intake_gate_check.py huntington-luzerne-destouches-1781`, 1 Oct 2026):
+
+```
+huntington-luzerne-destouches-1781: open (line 92) -- edition/page or full-text-search citation found within 6 lines
+(exit 0)
+```
