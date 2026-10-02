@@ -634,3 +634,116 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Premise check (GF4-berthier-napoleon-1812, account-4, 2 Oct 2026)
+
+**Result: not found solved.** No decipherment, plaintext or applied key for this page located in (a)-(d) below;
+(a) found nothing, (b) not found, (c) partly unreachable (the archive leaves), (d) not found in what was reachable.
+Status word stays `open`. Run 2 Oct 2026 23:35-00:00 UTC (`date -u`), the adversarial pass of
+`.claude/briefs/check-solved.md` "Premise check", trying to prove the item already done.
+
+**(a) Decipherments the folder already mentions, opened. Not found.**
+- *"La Primata a été déchiffrée"* (the plate's own margin note). Re-viewed the plate (`images/plate_t1_0024_0003_1.png`,
+  1060x1429, the best Persée serves): no interlinear or marginal decipherment anywhere on the leaf. What the leaf carries:
+  "Duplicata", a struck-out line, "Chiffre du Prince de Neufchâtel", "La Primata a été déchiffrée", an engraved
+  "Sire," in clear, the Direction générale des Archives stamp, 22 lines of groups, and **a piece number "(3.)" at top
+  right**, not recorded in this folder before. "Sire," in clear at the head means this is the first page of a letter;
+  the continuation leaf (if any) is not reproduced by Vilcoq. The deciphered primata is not printed in any source
+  opened; its home would be AN AF/IV/1643 plaquette 1/VI (below). **Not found** in print; the archive copy is unreachable.
+- *Chuquet VIII, Wirballen 16 Dec 1812, "En chiffres."* (the one letter Chuquet prints as deciphered), opened
+  (Chuquet 1912 3e série djvu.txt line 7379; fresh fetch this session): about 60 words, on Murat's incapacity to
+  command; no "Sire". The Gotteri répertoire places this text at AF/IV/1643 plaquette **1/V** p.280 (Bourdeau's
+  `an_ir.txt` line 353). Different date, different plaquette, about a fifth of the page's length: **not this item.**
+- *Chuquet XI (Gumbinnen 18 Dec): "la note chiffrée que j'ai adressée à Votre Majesté par M. Atthalin"* -- a ciphered
+  note sent before 18 Dec; Chuquet does not print it. **Not this 22 Dec item**, and not printed.
+- *Napoleon's 30 Dec reply* (Corr. XXIV no.19408, "votre note pertes réelles", BBER) against Tomokiyo's "votre note
+  chifrée": Google Books API exact phrase `"votre note chiffrée"` (country=US, keyed) -> 2 volumes, neither Napoleonic
+  (Bulletin officiel 1998; Politica toscana e rivoluzione 1974, a 1796 Belleville letter). `"note chiffrée" "pertes
+  réelles"` -> 338 loose matches, none on Berthier/1812 in the first 10. Lecestre, *Lettres inédites* t.2 (1810-15;
+  IA `lettresindites02napo`, djvu.txt grepped): the December 1812 letters are nos.936-938 (2, 23, 29 Dec; Jérôme,
+  Stéphanie), **none to Berthier**, no 30 Dec letter. Still unreconciled; no decipherment either way.
+- A third Chuquet letter dated 22 Dec (`scripts/letters.json` key "X", line 9520 of the djvu.txt) is **Murat's**, not
+  Berthier's: it is in the King of Naples' chapter and names "le prince major général" in the third person. Excluded.
+  **Flag for whoever reuses the crib-test pool:** `letters.json` keys X and XI hold Murat's letters of 22/23 Dec (the
+  extractor's Roman-numeral keys collided with the next chapter), so Y9/BBER's 34-letter control pool carries two
+  non-Berthier letters and is missing Berthier's own X and XI. The Y9/BBER verdicts (no fit) do not depend on these
+  two rows, but the pool should be rebuilt before it is used as a control again.
+- Adversarial alignment glance at XXIII (the only long Berthier 22 Dec letter): "le général" sits at words 1, 51, 68
+  against the cipher's repeated trigram 918 1045 1100 at groups 1 and 42, but XXIII's third words differ (Lagrange /
+  Baillet-Latour) where the cipher repeats 1100, and the cipher's 493 359 (groups 4, 23) has no repeat in XXIII near
+  words 4-26. No support for XXIII as the page's plaintext; consistent with Y9's gap-fit rank 30/34. No alignment claimed.
+
+**(b) Other solvers' working files, not their status lines. Not found.**
+- **Bourdeau**, fresh shallow clone HEAD 23416821 (2 Oct 2026 15:12 -0500), `targets/napoleon/` read file by file:
+  `NOTES.md` (concludes "No alignment is proposed"), `berthier.py` (structure + compatibility stats only),
+  `berthier_ct.txt` (the same 325 groups), `berthier_chuquet.txt` (Chuquet's Dec 1812 Berthier letters, clear),
+  `profile.json` (plaintext "Candidate only ... no alignment made"; "attackable by analysis: no"), `an_ir.pdf/.txt`
+  (the AN Gotteri répertoire AF/IV/1590-1670), `src/` (Chuquet 2e and 3e séries, *Lettres de 1812* t.1, *Ordres et
+  apostilles* t.3-4). `grep -i chiffr` over every src file: only Chuquet VIII/XI (above), a general "quelques mots en
+  chiffres" in the 2e série, "Raguse en chiffres" in *Ordres et apostilles* t.3 -- nothing on this letter. No output,
+  rendering or key-application script for this text exists in his tree.
+- **Aymeloglu**, fresh shallow clone HEAD d2800bb (27 Sept 2026): `grep -ri 'berthier|neufch|neuch|vilcoq|918 1045'`
+  -> only a 14 Apr 1812 Soult-to-Berthier PARES catalogue row (AHN 3101921, Spain, partly ciphered), a DECODE postcard
+  from Neuchâtel and Colbert-era "Neuchaise" rows. Nothing on this letter.
+
+**(c) Physical neighbours. Not found where reachable; the archive leaves are unreachable.**
+- The plate is a crop of one page; Vilcoq reproduces no facing page, continuation leaf or laid-in slip. Its
+  neighbours on Persée p.24 (all read by IMG-FETCH): a "Tableau de chiffrement" fragment, Marmont 1807, Rapp 1813 --
+  none is a decipherment of this page. Tomokiyo (`napoleon2.htm`, "A Great Cipher in the Archives") reads the
+  tableau as a 1200-entry two-part code with Mediterranean-trade vocabulary and judges the Berthier code "different".
+- The leaves on each side in the archive, AN **AF/IV/1643 plaquette 1/VI** ("Lettres et rapports adressés à l'Empereur
+  par le major général depuis Gumbinnen puis Koenigsberg ... 17, 31 décembre 1812", Gotteri, via Bourdeau's an_ir.txt):
+  not online as far as known, and archivesnationales.culture.gouv.fr does not load from the cloud (host table).
+  **Unreachable** -- this is where the deciphered primata would sit.
+- Same-family keys located while looking (premise-adjacent, none applied to this page by anyone found):
+  "grand chiffre 34" (Berthier to Davout 7 May 1813 and Oudinot, printed with decipherments in Bazeries 1896 pp.19-36,
+  entries to at least 1197, "et" = 197/413/534/821; Tomokiyo re-reconstructed it but did not print a table); the
+  Napoleon-Davout code of Nov-Dec 1813 (Bazeries 1896 p.37 ff., "et" = 10/18/834/1128); code F 18 of 1815 (Bouchaudy,
+  SHD 1M 2352); Tant's three 1200-entry "code inconnu" PDFs (archives.crypto.free.fr/367-369.pdf: **HTTP 404**;
+  Wayback CDX connection reset twice -> unreachable). A value check with a matched control (random 4-value sets from
+  1-1200, 100,000 draws, `structure/flat.txt`): GC34 "et" set occurs 5x (p=0.031, all but one from 821), Nov-1813 set
+  4x (p=0.068), F18 "du" 2x (p=0.27), F18 "cet" 1x (p=0.52); null mean 1.07. Four sets tested, so the best p is not
+  significant after correction; GC34's seven syllable values in Tomokiyo's sample (334, 221, 944, 873, 664, 74, 159)
+  are all absent. **Not a reading and not a negative**: the handful of published values cannot test a 1200-entry
+  code; the real test needs Bazeries 1896's cipher/plain pairs (Verdict below).
+
+**(d) Recipient side (Napoleon and his Secrétairerie). Not found.**
+- Gotteri's répertoire of AF/IV/1590-1670 (the recipient's own archive): describes 1/VI's subjects (retreat, losses,
+  Macdonald, Prussia), prints no text. Chuquet 1912 3e série is the edition of exactly this recipient carton
+  ("archives nationales (A.F. iv. 1643)"): Berthier's 22 Dec letters there are XIX and XXIII only, neither marked as
+  deciphered, while VIII is (above). *Correspondance de Napoléon* XXIV (read in full text by BBER): no decipherment.
+  Lecestre t.2 (above): nothing. Google Books exact phrases `"Primata a été déchiffrée"` (2 hits: a 1918 French
+  intercept file and an 1848 Wallachian dispatch, unrelated) and `"chiffre du prince de Neufchâtel"` (323 loose
+  matches; the first 10 are Bazeries 1896, Pougens' *Mémoires*, dictionaries -- none prints this letter).
+  *Correspondance générale* t.12 (Fondation Napoléon 2012) is not open online: **unreachable** for full text.
+- Russian side (the code captured or the instructions found): Urban p.324 (via Tomokiyo) -- Berthier's instructions
+  for a great cipher in RGVIA, "apparently not the code itself". Not reachable from here; not a decipherment either way.
+
+Requests this section: archive.org 4 (Chuquet 3e série djvu.txt, 2 advancedsearch, Lecestre t.2 djvu.txt);
+googleapis.com/books 6; archives.crypto.free.fr 3 (404); web.archive.org 2 (connection reset, stopped); gallica.bnf.fr
+SRU 1; github.com 2 shallow clones (removed after grep). All one at a time, >= 1.5 s apart, no 403/429/challenge.
+
+**Gate.** Before: `berthier-napoleon-1812: open (line 1) passes the citation and web/blog checks but has no '## Premise
+check' section ...` exit=1. After this section:
+```
+berthier-napoleon-1812: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
+
+**Verdict (GF4, 2 Oct 2026): keep going.** The NEXT-STEPS row's step (build a two-part/blockwise code family, matched
+control at N=325/K=207 from fr1810) was **not run**: a new `tools/families/` module with its offline test, SYSTEM.md
+entry and a 3-seed control is about USD 10-15 and 60+ minutes, over this job's USD 7.5 / 40-minute box. Before anyone
+builds it, check the control's own headroom (rule 3, Salviati paragraph): a 1200-entry code at 64% hapax may read near
+floor by construction, which would make the family a non-test here. Steps in order:
+1. **[ ] GC34 known-key test** (new, cheaper, uses key material rather than cryptanalysis): rebuild the "grand chiffre
+   34" partial key from Bazeries 1896 pp.19-36 (Berthier to Davout 7 May 1813, Oudinot; cipher with printed plain,
+   grade C) and the Nov-Dec 1813 Napoleon-Davout code from pp.37 ff., then apply each to `structure/flat.txt` with a
+   shuffled-key control; also ask whether the 1812 page's repeated pairs (821 791 x3, 918 1045 1100 x2) fall on
+   GC34 values. Access: Google Books volume `fIAuAAAAYAAJ` is full view (74 pp.), but books.google.com page/text view
+   is captcha-blocked from the cloud (host table) -> a LOCAL-QUEUE row for the owner's runner to save pp.19-50 (run
+   `tools/key_livecheck.py` first, per the access playbook), or HathiTrust from the owner's machine. ~USD 4 once the
+   pages are on disk.
+2. **[ ] Two-part/blockwise code family** as named in NEXT-STEPS, ~USD 10-15, after the headroom check above.
+3. **[ ] Rebuild the crib-test pool** (`scripts/extract_chuquet_letters.py`) so keys X/XI are Berthier's, not Murat's;
+   cheap (script only, ~USD 1); needed only before the pool is reused as a control.
+4. AF/IV/1643 plaquette 1/VI (the deciphered primata) -- needs-physical-access or an AN reproduction order; owner-side.
