@@ -169,3 +169,49 @@ neighbours in one page (1), full catalogue record for Add MS 37373 (1).
    one.
 3. None of the four items is digitised on Discovery (per the QUEUE row); a TNA page-copy order is the
    fallback route if (1)-(2) do not resolve it.
+
+## Web and blog check (GF-A2-9, 2 Oct 2026)
+
+Plain web searches (4): `Raby Harley 1 August 1705 Berlin Frederick I secret treaty Sweden cipher`; `Whitworth Stanhope
+Berlin 1719 cipher despatch "SP 90/8"`; `Whitworth Townshend Havelberg conference 1716 Manteuffel letter cipher`;
+`Raby and Whitworth Northern-Europe diplomatic ciphers Berlin despatches decipherment` (the folder's own title). Hits:
+TNA catalogue pages for SP 90/3 and SP 90/8 neighbours (C6554737 etc.: Marlborough to Harley acknowledging Raby's letter
+on the Prussia-Sweden treaty, 24 Aug 1705; a Raby "plea for confidentiality of news in cipher"), BL searcharchives
+records for the Whitworth Papers (040-002053686 to -715) and for the Strafford papers Add MS 31128-31152, an Oslo/
+ScienceNorway piece and a feedbagel post on AI decipherment of other letters (opened by title only: neither names Raby,
+Whitworth, Berlin or SP 90), NSA Friedman-collection PDFs (general). None carries a decipherment or plaintext of SP 90/3/358,
+SP 90/7/149, SP 90/7/212 or SP 90/8/84.
+Blog site searches: `Whitworth Raby Berlin cipher Prussia` on scienceblogs.de (Cipherbrain), cryptiana.blogspot.com /
+cryptiana.web.fc2.com and ciphermysteries.com -- only WW1/WW2/Kryptos Cipherbrain posts; `Strafford Raby Whitworth cipher
+key Deciphering Branch` on the Cryptiana and Cipher Mysteries domains -- Beale, Zodiac, Voynich, Scorpion and list posts,
+none about this correspondence, so no comment thread was relevant to open. Local `sources/cryptiana/` grep for
+whitworth/raby: only the known blencowe2.htm "Raby (Strafford)" code-name entry (a different key). Account-4's
+WEBCHECK (2 Oct 2026, commit 87bd98b6) logged the same negative for the sibling folder sp90-raby-1704.
+Result: no decipherment or plaintext of any of the four items found on the open web or in the three blogs.
+
+## Premise check (GF-A2-9, 2 Oct 2026)
+
+(a) Folder's own mentions -- the TNA item texts were re-read in full (tools/discovery_items.py, SP 90/3, 90/7, 90/8,
+term "cipher", 3 calls). The descriptions of SP 90/3/358, SP 90/7/149 and SP 90/7/212 do not themselves say any
+passage is in cipher (the API returned them for "cipher", so the term sits in a field the description does not show;
+the beta catalogue's web text says SP 90/8/80 and /84 are "partly in cipher"). SP 90/8/84 is "a translation of SP 90/8
+Folio 80" and f.80 is "Whitworth to Craggs. A copy of a letter to Stanhope ... Copy of the relation sent to Stanhope",
+also partly in cipher: f.80 and f.84 are two versions of one text, a ready-made cross-check once imaged, not a
+decipherment. No decipherment is mentioned for any of the four.
+(b) Other solvers' working files -- not found. Shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers
+(2 Oct 2026) grepped for Raby, Whitworth, "SP 90": only an unrelated Harley-catalogue OCR text and a Gallica SRU dump
+in cyphersolver; nothing in Aymeloglu's repository.
+(c) Physical neighbours -- catalogue only (none digitised). SP 90/7/126 (1716, n.d.) is "Additions and alterations to
+cipher" -- key material for Whitworth's 1716 cipher in the same piece as f.149 and f.212; SP 90/7/222 is a French
+translation of f.220 "with cipher in English" and SP 90/7/171 gives a Prussian reaction "in cipher". In SP 90/8 the
+duplicates are marked "Not ciphered" (f.16, f.24 "Duplicate of SP 90/8 f.22", f.74 "Duplicate of SP 90/8 f.72"): the
+clerks there kept plain duplicates, so a plain duplicate of f.80/f.84 may sit nearby uncatalogued as such. A copy order
+should take SP 90/7/126 with f.149 and f.212.
+(d) Recipient and sender sides -- catalogue leads, not read. Raby's own retained papers are BL Add MS 31128-31152
+(Strafford papers, 1705-1711, web-search snippet of the BL record), which could hold his draft of the 1 Aug 1705 letter
+in clear; Whitworth's are BL Add MS 37363-37397 (already checked catalogue-wide for a cipher term, none). Harley's side:
+Marlborough's 24 Aug 1705 acknowledgment of Raby's treaty letter shows it reached Harley's circle; HMC Portland (Harley
+papers) is the printed recipient-side series and was not searched this pass. Next: BL searcharchives record for Add MS
+31128-31152 (1705 volume) for a draft of 1 Aug 1705, and an IA full-text search of HMC Portland vols 4 and 8 for
+"Raby" 1705; ~USD 1.
+
