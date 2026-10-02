@@ -1,0 +1,11 @@
+{
+  "slug": "nevers-birago-fr3251-1572",
+  "target": "ciphers/nevers-birago-fr3251-1572",
+  "ciphertext": "harvest/f178v/passC.tsv (f.178v lines L01-L10 of no.87, the witness leaf the key was built from; two value-blind passes reconciled, LIKELY-3 2 Oct 2026). Source: BnF fr.3251, Gallica ark:/12148/btv1b9060248g canvas 182, native region 1703,848,2900,3452 (harvest/f178v/manifest.json). Targets ff.138-184 not yet transcribed.",
+  "alphabet": "51 hand-drawn signs of the Nevers-Birago cipher 1572 (Tomokiyo nevers.htm, NeversBirago.png): 44 letter homophones, 7 word codes (che, per, qual, quello, carmagnola, turino, bugonotti); no nulls in the printed table",
+  "language": "Italian, Saluzzo, Birago to Nevers, 1572",
+  "constraints": ["key keys/key_nevers_birago_1572.tsv is period-derived (Tomokiyo, from the decipherment attached to no.87 f.178), so no.87 itself is the known-key leaf", "the attached decipherment is illegible on Gallica (NEV-C1, 27 Sept 2026): no clerk plaintext to score against"],
+  "cheap_tests": ["known-key leaf first: f.178v L01-L10 two blind passes, reconcile, decode_control.py --map sign_id_map_1572.json vs 200 value-shuffled keys + power control at the measured reader error, judge it16dip", "then f.138 no.71: locate the cipher passage (HARVEST-D2 recipe), same pipeline"],
+  "judge": {"language": "it16dip"},
+  "cheap_test_done": ""
+}
