@@ -1,4 +1,5 @@
 open
+Pearsall Smith, Life and Letters of Sir Henry Wotton vol. 2 (1907; archive.org in.ernet.dli.2015.184194, djvu full text) grepped by this worker 2 Oct 2026 for cipher/cypher/159/Nys: 7 cipher hits (the 1622-23 ones on the Calvert letters near pp. 215 and 231), none naming SP 99/24/251 or a correspondent '159'.
 
 # Letter in cipher from "159," Sir Henry Wotton's hand — TNA SP 99/24/251
 
@@ -73,3 +74,26 @@ code-name or a folio cross-reference — read folio 159 itself ("Nys to [Carleto
 documented elsewhere in SP 99/24 or SP 99/25 (the following volume); (3) Daniel Nys is a real, identifiable
 Wotton-Venice correspondent worth checking against Venice-period Wotton scholarship (Logan Pearsall Smith's
 notes, or Gordon Kerr / other modern Wotton biographies) not reached under this run's hosts.
+
+## Web and blog check (GF-A2-6, 2 Oct 2026)
+
+Plain web searches (WebSearch, 2 Oct 2026):
+1. `Henry Wotton Venice 1622 cipher letter "159"` -- hits: fadedpage.com (Pearsall Smith e-text), british-history.ac.uk node 75610 (CSP Venetian), Sotheran's sale of *The State of Christendom*, Eton College catalogue, Camden Society chapter on Wotton and Paolo Sarpi, Chalmers' biography. None names this item, SP 99/24/251 or a correspondent "159".
+2. `"SP 99/24" cipher Wotton` -- ten TNA catalogue records in SP 99/24 (Wotton to Calvert / Carleton, 1622); none is f.251 and none carries a decipherment.
+3. `"Letter in cipher from 159" Wotton` (the catalogue's own wording in quotes) -- no exact hit; only unrelated Wotton items (William Wotton, Donne letters, Huntington, Bodleian, MPESE).
+4. `Wotton Venice cipher letter 1622 decipherment Daniel Nys` -- HistoCrypt proceedings papers (liu.se, on Venetian/papal ciphers), Donne Variorum, TNA SP 99/24 records; none about this letter.
+
+Blog site searches:
+- Cipherbrain (scienceblogs.de/klausis-krypto-kolumne), `Wotton cipher State Papers Venice` and two follow-ups: only "An unsolved pigpen cipher from Venice" (a ceiling inscription, opened: not this item, no Wotton in post or comments) and unrelated Top-50/Voynich posts.
+- Cryptiana (cryptiana.blogspot.com, cryptiana.web.fc2.com), `Wotton 1622 cipher`: no results.
+- Cipher Mysteries (ciphermysteries.com), `Henry Wotton cipher`: only unrelated posts (WWI battery cipher, Gentlemen's Cipher, BL cipher manuscript update 2008); none mentions Wotton or SP 99.
+Combined three-blog query `Wotton Venice cipher`: same pigpen post plus Voynich posts. No plausible hit for this item, so no comment thread bears on it.
+
+Not found: no decipherment, plaintext or prior attempt for SP 99/24/251 on the open web or in the three blogs' posts and comments.
+
+## Premise check (GF-A2-6, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: none for this item. The only lead the folder names is f.159 ("Nys to [Carleton]", plain), a possible cross-reference for "from 159"; it is not a decipherment, and no image is online to look. Not found.
+(b) Other solvers' working files: fresh shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026) grepped for `wotton`, `SP.?99.?24`: Bourdeau's hits are the Edward Wotton 1585 (Scotland) and Nicholas Wotton 1554 targets and catalogue-harvest rows for them -- different people, different keys; Aymeloglu's tree has none (cited, not copied). No key of theirs has been run on this text. Not found.
+(c) Physical neighbours: no image online (`digitised: false`), so the leaves either side of f.251 and any facing page or slip cannot be viewed -- unreachable. TNA Discovery (tools/discovery_items.py "SP 99" "SP 99/24" Wotton 1622, 2 Oct 2026) lists 24 Wotton letters in the piece up to f.195 (to Calvert, Carleton, Arundel); none is catalogued "with decipher" and none sits beside f.251. Catalogue neighbours: not found; images: unreachable.
+(d) Recipient side: the letter's addressee is not stated; Wotton's 1622 recipients in this piece are Calvert and Carleton, whose own edited sides are CSP Domestic James I 1619-23 (calendars SP 14, not SP 99) and Pearsall Smith vol. 2 (read above). Pearsall Smith prints no letter from or to "159". A Venice-side source (CSP Venetian vol. 17, 1621-23) calendars the Venetian archive, not this English leaf. Not found in what was read; CSP Domestic 1619-23 not searched this pass.
