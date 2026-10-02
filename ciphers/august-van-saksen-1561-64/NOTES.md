@@ -415,6 +415,25 @@ a reading step. 58's cipher text is a candidate for the Dresden/KHA print check 
 Requests: resources.huygens.knaw.nl 1 (00058.pdf). No other host. Status line unchanged (`partial`); status.json,
 STATUS.md and NEAR.md not touched (flagged to the parent).
 
+## A2-AVS: intake gate stops the WVO 175 comparison (2 Oct 2026, worker A2-AVS, account 2, LANE-A2PUSH)
+
+Brief `.claude/briefs/runs/2026-10-02-acct2-a2-avs.md` step 2, run 2 Oct 2026 about 20:55 UTC before any deep work:
+
+    $ python3 tools/intake_gate_check.py august-van-saksen-1561-64
+    august-van-saksen-1561-64: partial (line 1) with no standard-edition citation (page number or full-text-search phrase) within 6 lines -- CLAUDE.md's Pipeline intake gate says this must read `blocked` instead
+    EXIT 1
+
+Two things fail, the second hidden behind the first. (1) The head-only gate (RETRO-2026-10-02-account4 proposal 2)
+reads only the first 12 lines, and the edition citations already logged further down (A2: Demandt HessJb 38, 1988,
+p.78 nrs. 113/115 via Google Books snippets; A3: Japikse I pp.386-389 on the Huygens retroboeken viewer) sit outside
+it. A trial copy in the scratchpad with one pointer line under the status word cleared that check. (2) The same trial
+copy then failed the CHECK-SOLVED-WEB rule (28 Sept 2026): this file logs no open-web and blog-comment check (no "Web
+and blog check" heading, no paragraph naming Cipherbrain, the Cryptiana blog and Cipher Mysteries; the 24 Sept sweep
+read Cryptiana's dutch.htm page only). Fixing (2) means running check-solved.md's "Open web and blog comment threads"
+step, a network check-solved job, which is outside this brief (an on-disk comparison only), so per the brief the worker
+stopped here: the WVO 175 comparison was not run, nothing on disk changed except this section and the Verdict line,
+no token regraded, no request made, no subagent or vision call.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 699 of 904 cipher tokens firm (77.3%: C 461 + S 238), M 205, U 0, from `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check` (rerun 2 Oct 2026 00:2x UTC, exit 0, "reading up to date"): 126 C 214 of 240 (89.2%, key_98 from the decipherment f.67), 57 C 247 of 300 (82.3%, key_74 from f.19), 53 S 238 of 364 (65.4%, no H or C: a cryptanalytic result; matched control 280/282, 99.3%, solve_53_control.json)
 - 53 p1+p2 (f.266r-v, 13 cipher lines; 126 M, incl. 'zuberzuschreiben' l.2, 'geschret' l.7, 'mrch' L10 pos 26) - blocker: not-attempted; passes cut from the 100 dpi images/00053_p1.png (passbrief_s1.md, 90.9% agreement, recon53/disagreements.tsv 28 rows), p2 read once at 100 dpi (F1); the native JPEG (2567x4187, about 309 dpi, images/manifest.json) was never used for passes, and S1's own suggestion ("a native-resolution re-read ... would settle the 119 M tokens") and SO-SAXONY-53-57's spot checks were never run; next: fetch 00053.pdf once, `tools/iiif_lines.py --image` crops pasted, two blind passes per page + one reconciliation (5 subagent calls at about $1.46 each), tools/reconcile_passes.py, then decode_key.py --check and regrade, ~$9
@@ -433,4 +452,4 @@ Read so far: 699 of 904 cipher tokens firm (77.3%: C 461 + S 238), M 205, U 0, f
 - [ ] key-rebuild: done for 53 (tools/homophonic_anneal.py, 4 of 6 restarts converge, matched control 280/282; G6 = k by context). Not done: 57's five word signs and 126's K, down-arrow and Λ l/m are context-only; key_98's 24 '~' units are unsettled because f.67 was never transcribed. Planned: settle them from an f.67 transcription; extend key_98 from WVO 124 if it shares the system (WVO 58 does not share 53's system, 2 Oct 2026, so key_53 cannot be extended from a sibling; 58 would extend key_74 by two word signs, fried and Religion, at grade C once aligned, a key-register job with no effect on the three targets). No instrument here has failed its own gate even once, so nothing is retired
 - [ ] image-check: R21 read 126 once at native resolution; S1 settled pass disagreements on 100 dpi crops (settle_53.py, settle_57.py). Not done: native-resolution passes for 53 (p1 and p2) and 57 p3; the SO-SAXONY-53-57 spots (l.2, l.7, L10 pos 26) and SO-SAXONY-126 spots (adesn, slagen, down-arrow) never applied. Planned: native crops and two passes for 53 and 57, a native spot re-check on f.139 (against images/00126_p4.png / 00126.pdf, not images/00053_p2.png). "While waiting" bullet 1 (run key_53 on f.266v) is stale: F1 did it 24 Sept 2026
 - [ ] retry: no unread groups (U 0); decode_key.py --check exits 0 on an unchanged key and transcription (unchanged since 24 Sept 2026). Planned: rerun decode_key.py --check and regrade all three letters after each image-check or key extension above
-Verdict: keep going: 6 internal gaps (the WVO 58 route of two of them closed 2 Oct 2026, NEXT-AVS); cheapest next: compare WVO 175's glossed interlinear runs (images/00175_p1-p8.png, on disk, no network) sign by sign with System A's word-sign inventory for 57's OQ/THE/BOX, ~$2; then fetch WVO 124 (1 request) for 126's key-level M, ~$5
+Verdict: keep going: 6 internal gaps (the WVO 58 route of two of them closed 2 Oct 2026, NEXT-AVS); cheapest next: clear the intake gate (A2-AVS, 2 Oct 2026, exit 1) with a check-solved web-and-blog pass (Cipherbrain, Cryptiana blog, Cipher Mysteries comment threads) plus an edition-citation pointer line in the head, ~$1; then compare WVO 175's glossed interlinear runs (images/00175_p1-p8.png, on disk, no network) sign by sign with System A's word-sign inventory for 57's OQ/THE/BOX, ~$2; then fetch WVO 124 (1 request) for 126's key-level M, ~$5
