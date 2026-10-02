@@ -889,12 +889,39 @@ disk); the remaining 19 f.30 occurrences of "eh" were not each viewed, so the sp
 Requests this pass: none to any host. Vision calls: 4 (atlas_f29, two halves of sheet.png, zoom.png) plus the two table
 images and the legend sheet read once each.
 
+## Key.tsv Tb row corrected to O (A2-GRA2, account 2, 2 Oct 2026)
+
+Intake gate before work (`python3 tools/intake_gate_check.py fr2980-gramont`):
+`fr2980-gramont: partial (line 3) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+The retry step named in the Escalation list. key.tsv's `Tb` row read `P / H / Lasry P (E with a bar, k33)`; the key-image
+check above found that the cited k33 shape does not match the leaf's Tb exemplars, which sit with O in both tables
+(Lasry O k16, k13; Tomokiyo o row 2), and the 24 Sept 2026 hidden-sign test already preferred O by 283.4 bits
+(p = 0.010, shuffled-position control). The row now reads `Tb / O / S` with both citations. Grade S, not H: the value
+rests on the control-backed test, and the table match is one reader's shape call, so it does not license H (rule 4).
+No new test was run and no image was read in this step; nothing else in key.tsv changed.
+
+`python3 decode.py --check` before regenerating: STALE, exit 1 (as expected). After `python3 decode.py`: `reading up to
+date`, exit 0. Counts:
+
+| Reading | before | after |
+|---|---|---|
+| f.29r reading.txt (568 tokens) | H 533, S 0, M 30, U 5 | H 532, S 1, M 30, U 5 |
+| f.30 reading_f30.txt (1969 tokens) | H 1502, S 0, M 231, U 236 | H 1486, S 16, M 231, U 236 |
+| f.30 extended (1969 tokens) | H 1486, S 181, M 239, U 63 | unchanged (the OVERRIDE row in key_extension_f30.tsv already gave Tb = O there) |
+
+Reading changes, f.29r: L13 `...QVELERPIVOVLSIST` -> `...QVELEROIVOVLSIST` (sense: "que le roi voulsist"; the earlier
+"Suggestions (not done): apply Tb = O to f.29r as well" is now done). f.30 base reading: 21 Tb positions now O (16 S, 5 M
+from l-confidence signs), e.g. L33 POVR RECOVVRER, v L14 COGNOISSE, v L20 ESPOIR, v L03 ENVOI, L18 VOS LOIRE ... OMONSTRE.
+The key_extension_f30.tsv OVERRIDE row for Tb is now redundant with key.tsv but left in place (the extended reading
+regenerates identically either way). test_f30r_top.py's base is the extended reading, so its committed results are
+unaffected. No spec for this target (specs/ has no gramont file), so no judge run. Vision calls 0; requests: none.
+
 ## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026)
-Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1502, S 159, M 245; U 63), from the f30r_top section above; f.29r reading.txt per its own section.
+Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1486, S 181, M 239; U 63, after the Tb correction), from the f30r_top section above; f.29r reading.txt per its own section.
 - f.30 c-with-stroke sign (coded eh) value - blocker: not-attempted; the key images do not key it (this section), so a value needs a test on the split code; next: recode the 22 f.30 eh occurrences by shape from the crops, then rerun test_f30r_top.py with the split code and its shuffled-position control, ~$3
 - the two cross shapes (CROSS pattee, CROSS double-barred) - blocker: not-attempted; neither table keys the pattee, the double-barred has one candidate (Tomokiyo row-5 l, LL) that disagrees with sense on L07; next: split the code and run the same hidden-sign test with control, in the same pass as the eh split, ~$1 extra
 - f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section)
-- Tb = O in key.tsv's published-key layer - blocker: not-attempted; shapes match O (this section) and the grade-S test agrees, but key.tsv still cites P k33; next: correct key.tsv's Tb row to O with the table citation, regenerate with decode.py and --check, ~$1
 
 ## Escalation (A2-GRA, 2 Oct 2026)
 - [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
@@ -903,5 +930,5 @@ Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1502, S 15
 - [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
 - [ ] key-rebuild: split eh and CROSS by shape and rerun the hidden-sign test with its control (gaps above)
 - [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
-- [ ] retry: Tb row correction in key.tsv and regeneration with decode.py --check
-Verdict: keep going: 4 internal gaps; cheapest next: correct key.tsv's Tb row to O with the table citation and regenerate with decode.py --check, ~$1
+- [x] retry: Tb row corrected to O (grade S, table citation) in key.tsv and readings regenerated, decode.py --check exit 0 (A2-GRA2, 2 Oct 2026)
+Verdict: keep going: 3 internal gaps; cheapest next: split the f.30 eh and CROSS codes by shape from the crops and rerun test_f30r_top.py with its shuffled-position control, ~$4

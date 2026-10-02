@@ -31,7 +31,7 @@ lt	O	H	Lasry O (l with a stroke, k13)
 Rt	O	H	Lasry O (R with a stroke, k22); Tomokiyo o row 3
 dl	P	H	Lasry P Δ; Tomokiyo p
 q9	P	H	Lasry P (q with a loop, k49); Tomokiyo p row 2
-Tb	P	H	Lasry P (E with a bar, k33)
+Tb	O	S	Corrected 2 Oct 2026 (A2-GRA2) from P H "Lasry P (E with a bar, k33)", a shape mismatch: the leaf shapes sit with O in both tables -- Lasry O k16 (b with a stroke through it) and k13 (stroke idea); Tomokiyo o row 2 (stemmed sign with a crossbar) -- key-image check, NOTES.md 2 Oct 2026 (one reader's shape call, so not H); value backed by test_f30r_top.py 24 Sept 2026: O over P by 283.4 bits on 22 occurrences, shuffled-position control p=0.010, recovery 1.00
 D	Q	H	Lasry Q D; Tomokiyo q row 1
 nq	Q	H	Lasry Q (N with a hook, k41); Tomokiyo q row 2
 o	S	H	Lasry S o; Tomokiyo s row 3
