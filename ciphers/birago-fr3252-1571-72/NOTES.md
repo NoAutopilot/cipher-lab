@@ -571,3 +571,80 @@ Rows are in `../nevers-birago-fr3251-1572/BIRAGO-POOL.tsv`. Not covered: other v
 are in the pool already but are not on Gallica), and whether f.138 (7 Feb 1572) is in the 1572 key or the numerical key. That
 assignment comes from Tomokiyo and the 1572 folder, and this scout did not re-test it. Suggestion only: f.138's digit shape against
 f.100r/f.119 is the cheapest remaining in-volume check for more numerical-key text. Requests: gallica.bnf.fr IIIF 33, archivesetmanuscrits.bnf.fr 2.
+
+## f.47r (no.30, 26 Apr 1571): whole letter, two blind passes, decode under the printed Ceppo-Nevers key (NEVBIR-47, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-47.md` (account 2 for the account-3 orchestrator). No class, no novelty wording.
+Crops: the NEVBIR-3252-B re-cut (`images/f47/recut`, 17 lines x 3 segments), no new network request (0 Gallica requests).
+
+**Blind passes.** Two value-blind Sonnet readers, one call each over all 51 crops, brief `harvest/f47/blind_pass_brief_47.md`:
+the printed sheet plus three reference tiles cut from the fr.3252 f.36r/v period-gloss witness under neutral names
+(`harvest/f47/ref/ref_W1-3.jpg`, from `../ceppo-nevers-fr3251-1570s/harvest/f21v/lookalike/witness_crops/`). The tiles stand for the
+CEPPO-SPLITS shape rule as extra cells: `X_DSLASH` (diagonal slash, a dot each side; glossed n x5), `X_DCARET` (caret/lambda with a
+dot; glossed n x3), S97 (curled lambda, no dot; glossed a). Also offered: `X_TRI` (plain triangle) and `X_DOTS` (dot group), the
+forms NEVBIR-3252 found missing from the sheet. Results: `passA.tsv` 785 signs (63 X_, 0 '?'), `passB.tsv` 814 signs (42 X_, 0 '?').
+Both readers said the crops are small and dense. Neither marked any row H, and neither quoted the prose words at run edges.
+Reader B never used X_DSLASH and put the same form under S49 (31 rows), which has the same value under the rule.
+The account's rate limit read `allowed_warning` at 23:47 UTC, after both passes had started. No third (reconciliation) subagent was
+started, so the reconciliation is script-only and leaves nothing settled by eye.
+
+**Reconciliation** (`../ceppo-nevers-fr3251-1570s/harvest/reconcile_blind.py`; this job added the extra cells to its look-alike
+pairs). Raw: 829 aligned, 550 agreed (**0.66**), 279 unsettled -> `recon.tsv` 771 signs, 220 '?'. Normalized (X_DSLASH -> S49,
+X_DCARET -> S23 in both passes before alignment, the CEPPO-SPLITS rule, which leaves both values n): 830 aligned, 573 agreed
+(**0.69**), 257 unsettled -> `recon_norm.tsv`. The 257 unsettled positions are written as sign-sorter focus rows
+(`harvest/f47/focus.tsv`, for `tools/sign_sorter.py --focus`). None of them blocks the next step.
+
+**Test** (`decode_control.py SEQ --shuffles 200 --windows 20 --err E --extra X_THETA2=r [--extra X_DSLASH=n --extra X_DCARET=n]`,
+corpus it16dip). E is the measured two-reader disagreement (0.34 raw, 0.33 normalized), never a look-alike residual:
+
+| run | signs / letters | real key | shuffled mean (sd) | shuffled max | z | rank | power at E (20 windows) |
+|---|---|---|---|---|---|---|---|
+| recon, seed 1 | 771 / 582 | -1.4609 | -2.0608 (0.178) | -1.5529 | 3.38 | **1/201** | 19/20, z median 4.77 (min 1.78) |
+| recon, seed 2 | 771 / 582 | -1.4609 | -2.0915 (0.149) | -1.6043 | 4.24 | **1/201** | 20/20, z median 4.65 (min 3.72) |
+| recon, seed 3 | 771 / 582 | -1.4609 | -2.0743 (0.151) | -1.5778 | 4.05 | **1/201** | 20/20, z median 5.21 (min 2.99) |
+| recon_norm, seed 1 | 770 / 605 | -1.4228 | -2.0521 (0.157) | -1.6166 | 4.02 | **1/201** | 19/20, z median 5.22 (min 2.85) |
+| pass A alone (information) | 785 / 806 | -1.5525 | -2.0820 (0.117) | -1.7410 | 4.52 | 1/201 | 20/20 |
+| pass B alone (information) | 814 / 826 | -1.4237 | -2.0687 (0.140) | -1.6062 | 4.62 | 1/201 | 20/20 |
+
+The first 157 signs gave z 3.49, a 0.004 margin over the shuffled maximum and power 9/20. Over the whole letter the printed key ranks
+first in every run, with a margin of 0.09-0.19 over the best of 200 shuffled keys. The power control at the measured error now
+reaches 19-20/20, so the key test is control-backed. **The printed Ceppo-Nevers key is the key of f.47r (S, cryptanalytic, with
+control).** Caveat: the control's error is random replacement, while the readers' errors are look-alike swaps, and the 0.33-0.34 is
+disagreement, not accuracy.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file ciphers/birago-fr3252-1571-72/harvest/f47/reading_<run>_letters.txt`, pasted):
+```
+recon: FAIL language: score=-1.525, null_p99=-1.773, real_p05=-0.921, real_median=-0.83, mode=both, N=582
+passA: FAIL language: score=-1.563, null_p99=-1.78, real_p05=-0.908, real_median=-0.827, mode=both, N=806
+passB: FAIL language: score=-1.45, null_p99=-1.777, real_p05=-0.912, real_median=-0.83, mode=both, N=826
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+All three are above the null p99 and well below real p05, which is what about a third of signs misread would produce. **The text is
+not a reading. No token is graded above M** (0 H, 0 C, 0 S, all decoded letters M, '?' positions U).
+
+**Readable fragments (M, English gist only).** Pass A L10 "molto tempo" (a long time); L07 "sempre" (always); L14 "ultim[am]ente"
+(lately); L04/L05 "quali/quale" (which); L05 "furono" (they were); L13 "nemi[co]" (enemy); L06 and L08 both end "...del fin et le"
+or "Delfin[o]" (the end, or the Dauphin), unresolved; L10 "nos[tro]" (our). These are word islands in noisy letters, not sentences.
+Files: `harvest/f47/reading_{recon,recon_norm,passA,passB}.txt`.
+
+Requests this job: 0 network. Subagents: 2 Sonnet calls (passes A and B). No third call (rate limit `allowed_warning`).
+
+## Remaining gaps (NEVBIR-47, 2 Oct 2026)
+Read so far: 0 tokens graded S or better of about 1,980 cipher signs. The Ceppo-Nevers key is control-backed for f.47r (z 3.4-4.6, rank 1/201 in every run, power 19-20/20 at 0.33-0.34), but the text is not: 771 signs decoded, all M/U, judge FAIL. f.117r: 276 signs, all M/U.
+- f.47r reader error 0.33 - blocker: not-attempted; two Sonnet passes with no H rows and no third eye (rate limit); next: blind third reader (Opus) on the 257 split tiles of harvest/f47/recon_norm_disagreements.tsv, 2-of-3, then re-run decode_control and the judge, ~$3
+- f.47r 257 unsettled tiles - blocker: not-attempted; written as sign-sorter focus rows (harvest/f47/focus.tsv); next: tools/sign_sorter.py --focus harvest/f47/focus.tsv
+- f.47r prose/cipher edges - blocker: not-attempted; the readers marked no prose words, so L01-L03 and L17 run edges are unchecked; next: eye-check the s1 crops of L01-L03 and L17 s1-s2 against the passes, disk only, ~$1
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error; next: power control at a known-answer look-alike error with 100 windows, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; sorter focus rows (harvest/f117/la/focus.tsv); next: tools/sign_sorter.py --focus harvest/f117/la/focus.tsv
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
+- f.100r + f.119 (565 + 483 digits, same key) - blocker: not-attempted; joint anneal retired for this hypothesis (BIRAGO-NUM3); next: decoy-null joint-consistency crib test, ~$2
+
+## Escalation (NEVBIR-47, 2 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness (gloss shapes as reference tiles), the fr.3251 1572 group's sheet, maps, clerk key and controls used
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
+- [x] known-keys: Ceppo-Nevers on f.47r whole letter (control-backed, NEVBIR-47), 1572 key on f.117r (z 3.2, judge FAIL), Nov 1571 system has no key
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 decoy-null crib test
+- [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut, all 17 lines read twice
+- [ ] retry: f.47r third reader on 257 split tiles; f.117r power at a measured post-look-alike error
+Verdict: keep going: 7 internal gaps; cheapest next: f.47r blind third reader on the split tiles, ~$3

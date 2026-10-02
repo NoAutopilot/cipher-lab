@@ -1,0 +1,258 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01	1	1	S73	L	1	S49	M	split	line start; divide-like bar with dots	line start (prose before run not marked)
+L01	5	5	S60	L	5	S24	M	split	bar crossed by vertical, double bar	
+L01	6	6	S76	L	6	S91	M	split	e+ij form	
+L01	8	8	S74	L	8	S54	M	split	b	
+L01	16	16	S76	L	16	S91	M	split	e+ij form	
+L01	18	18	S97	M	18	S23	M	split	lambda	
+L01	19	19	S34	L	19	S50	M	split	is-like swash	
+L01	23	23	S42	L	23	S40	M	split	X with base and dot above	
+L01	25	25	S80	M	25	S65	M	split	8 struck through	
+L01					28	S49	M	gapA		
+L01	34	34	S80	M	35	S65	M	split	8 struck through	
+L01	38	38	S74	L	39	S77	M	split	b with tick	
+L01	41	41	X_DOTS	L	42	S49	M	split	dots (3) after w, maybe slash	
+L01	47	47	S66	M	48	S26	M	split	z with dot	
+L01	54	54	S75	L	55	S88	M	split	plus struck	
+L02	4	4	S80	M	4	S65	M	split		
+L02	7	7	S76	L	7	S91	M	split		
+L02	8	8	S80	M	8	S65	M	split		
+L02	13	13	S42	L	13	S40	M	split		
+L02	15	15	S23	M	15	S97	M	split		
+L02	19	19	S25	L	19	S93	M	split		
+L02	21	21	S56	L	21	S52	M	split		
+L02	29	29	S76	L	29	S91	M	split		
+L02		34	S34	L				gapB		
+L02					35	S50	M	gapA		
+L02					36	S97	M	gapA		
+L02	39	40	S74	M	41	S54	M	split		
+L02	44	45	S76	L	46	S91	M	split		
+L03	6	6	S88	M	6	S75	M	split		
+L03	10	10	S69	M	10	S13	M	split		
+L03	11	11	S56	L	11	S52	M	split		
+L03	14	14	S74	M	14	S54	M	split		
+L03	15	15	S80	M	15	S65	M	split		
+L03	16	16	S42	M	16	S40	M	split		
+L03	18	18	S76	L	18	S91	M	split		
+L03	19	19	S80	M	19	S65	M	split		
+L03	22	22	S76	L	22	S91	M	split		
+L03	31	31	S80	M	31	S65	M	split		
+L03	32	32	S69	M	32	S54	M	split		
+L03	33	33	S74	M	33	S62	M	split		
+L03					34	S40	M	gapA		
+L03	35	35	S42	L	36	S40	M	split		
+L03		36	S84	L				gapB		
+L03	39	40	S84	L	40	S88	M	split		
+L03					42	S75	M	gapA		
+L03	42	43	S69	L	44	S13	M	split		
+L03	43	44	S53	L	45	S76	M	split		
+L03	45	46	S76	L	47	S91	M	split		
+L03	46	47	S74	M	48	S54	M	split		
+L03	48	49	S40	L	50	S47	M	split		
+L04	1	1	S76	L	1	S91	M	split	line start	line start (prose before run not marked)
+L04	4	4	S95	M	4	S45	M	split		
+L04	5	5	S70	M	5	S75	M	split		
+L04	6	6	S66	L	6	S26	M	split		
+L04	9	9	S25	L	9	S35	M	split		
+L04	11	11	S80	M	11	S65	M	split		
+L04					16	S50	M	gapA		
+L04	17	17	S74	M	18	S62	M	split		
+L04					19	S54	M	gapA		
+L04	19	19	S97	M	21	S23	L	split		
+L04	22	22	S74	M	24	S54	M	split		
+L04	24	24	S42	M	26	X_TRI	L	split		
+L04	25	25	S80	M	27	S69	M	split		
+L04	26	26	S97	M	28	S23	L	split		
+L04	31	31	S97	M	33	S23	L	split		
+L04	32	32	S60	L	34	S88	M	split		
+L04		35	S56	L				gapB		
+L04	36	37	S75	M	38	S70	M	split		
+L04		38	S66	L				gapB		
+L04	38	40	S76	L	40	S91	M	split		
+L05	2	2	S69	M	2	S13	M	split		
+L05	4	4	S56	L	4	S52	M	split		
+L05	11	11	S80	M	11	S69	M	split		
+L05	13	13	S76	L	13	S91	M	split		
+L05	15	15	S74	M	15	S54	M	split		
+L05					17	S49	M	gapA		
+L05	31	31	S69	M	32	S13	M	split		
+L05	34	34	S97	M	35	S23	L	split		
+L05	36	36	S67	L	37	S53	M	split		
+L05		45	S62	L				gapB		
+L05					50	S57	M	gapA		
+L05	50	51	S80	M	52	S65	M	split	line end	line end
+L06	1	1	X_DOTS	L	1	S49	M	split	line start	line start (prose before run not marked)
+L06	2	2	S88	M	2	S24	M	split		
+L06	4	4	S80	M	4	S65	M	split		
+L06	9	9	S56	L	9	S52	M	split		
+L06					17	S47	M	gapA		
+L06					18	S52	M	gapA		
+L06	19	19	S76	L	21	S91	M	split		
+L06	25	25	S73	L	27	S49	M	split		
+L06	26	26	S71	L	28	S50	M	split		
+L06	28	28	S58	L	30	S40	M	split		
+L06					35	S65	M	gapA		
+L06					36	S97	M	gapA		
+L06	35	35	S76	L	39	S91	M	split		
+L07	14	14	S69	M	14	S88	M	split		
+L07	15	15	S74	M	15	S54	M	split		
+L07	17	17	S42	M	17	S40	M	split		
+L07	19	19	S69	M	19	S13	M	split		
+L07	23	23	S76	L	23	S91	M	split		
+L07	27	27	S76	L	27	S91	M	split		
+L07	32	32	S56	L	32	S52	M	split		
+L07	34	34	S76	L	34	S91	M	split		
+L07					35	S23	M	gapA		
+L07		36	S23	M				gapB		
+L07	38	39	S56	M	39	S52	M	split		
+L07	40	41	S80	M	41	S65	M	split		
+L07	41	42	S56	M	42	S52	M	split		
+L07	45	46	S74	M	46	S54	M	split		
+L08	1	1	S74	L	1	S54	M	split	line start	line start (prose before run not marked)
+L08	2	2	S80	M	2	S65	M	split		
+L08	4	4	S80	M	4	S65	M	split		
+L08	6	6	S74	L	6	S54	M	split		
+L08	13	13	S66	M	13	S17	M	split		
+L08	16	16	X_NEW	L	16	S52	M	split		
+L08	17	17	S69	M	17	S47	M	split		
+L08	18	18	S62	M	18	S75	M	split		
+L08	19	19	S49	L	19	S54	M	split		
+L08					20	S65	M	gapA		
+L08	23	23	S80	M	24	S65	M	split		
+L08	25	25	S80	M	26	S65	M	split		
+L08	26	26	S74	M	27	S54	M	split		
+L08	33	33	S74	M	34	S54	M	split		
+L08	34	34	S80	M	35	S65	M	split		
+L08		35	S74	M				gapB		
+L08	38	39	S60	L	39	S88	M	split		
+L09	5	5	S42	M	5	X_TRI	L	split		
+L09	7	7	S56	M	7	S52	M	split		
+L09	12	12	S80	M	12	S65	M	split		
+L09					16	S93	M	gapA		
+L09					17	S40	M	gapA		
+L09	16	16	S80	M	18	S65	M	split		
+L09	30	30	S76	L	32	S91	M	split		
+L09	31	31	S80	M	33	S65	M	split		
+L09	33	33	S56	M	35	S52	M	split		
+L09	35	35	S74	M	37	S54	M	split		
+L09	38	38	S80	M	40	S65	M	split		
+L09	42	42	S66	M	44	S26	M	split		
+L09	43	43	S80	M	45	S65	M	split		
+L09	46	46	S95	L	48	S54	M	split		
+L10	1	1	S31	L	1	S61	M	split	line start	line start (prose before run not marked)
+L10	8	8	S74	M	8	S54	M	split		
+L10	10	10	S60	M	10	S88	M	split		
+L10	17	17	S76	L	17	S84	M	split		
+L10					18	S91	M	gapA		
+L10	20	20	S66	L	21	S40	M	split		
+L10	21	21	S65	M	22	S75	M	split		
+L10		22	S49	L				gapB		
+L10		23	S88	M				gapB		
+L10	23	25	S47	M	24	S65	M	split		
+L10		26	S17	M				gapB		
+L10	24	27	S75	H				gapB		
+L10		30	S45	M				gapB		
+L10		31	S65	M				gapB		
+L10	29	34	S76	L	29	S84	M	split		
+L10					30	S91	M	gapA		
+L10					33	S45	M	gapA		
+L10					34	S53	M	gapA		
+L10	34	39	S74	M	37	S54	M	split		
+L10	35	40	S60	M	38	S88	M	split		
+L10	39	44	S74	M	42	S54	M	split		
+L11	1	1	S80	M	1	S65	M	split	line start	line start (prose before run not marked)
+L11	8	8	S69	M	8	S13	M	split		
+L11					18	S47	M	gapA		
+L11					19	S75	M	gapA		
+L11	28	28	S56	M	30	S52	M	split		
+L11	30	30	S76	L	32	S91	M	split		
+L11	32	32	S74	M	34	S54	M	split		
+L11	33	33	S80	M	35	S65	M	split		
+L11	34	34	X_NEW	L	36	S65	M	split		
+L11					37	S25	M	gapA		
+L11					38	S88	M	gapA		
+L11	38	38	S73	L	42	S75	M	split		
+L11		39	S50	M				gapB		
+L11	39	40	S53	L	43	S54	M	split		
+L11					44	S40	M	gapA		
+L11	41	42	S74	M	46	S54	M	split		
+L11	43	44	S74	M	48	S54	M	split		
+L11	44	45	S74	M	49	S54	M	split		
+L12	10	10	S74	M	10	S54	M	split		
+L12	12	12	S97	M	12	S23	L	split		
+L12	16	16	S69	M	16	S13	M	split		
+L12					17	S25	M	gapA		
+L12					18	S13	M	gapA		
+L12	18	18	S76	L	20	S91	M	split		
+L12	22	22	S74	M	24	S54	M	split		
+L12	24	24	S31	M	26	S17	M	split		
+L12	26	26	S97	M	28	S23	L	split		
+L12	28	28	S74	M	30	S54	M	split		
+L12	29	29	S60	L	31	S88	M	split		
+L12	31	31	S74	M	33	S54	M	split		
+L12	34	34	S74	M	36	S54	M	split		
+L12	41	41	S80	M	43	S65	M	split		
+L12	45	45	S31	L	47	S61	M	split		
+L13	5	5	S74	M	5	S54	M	split		
+L13	8	8	X_DOTS	L	8	S49	M	split		
+L13	9	9	S80	M	9	S65	M	split		
+L13	20	20	S95	M	20	S13	M	split		
+L13	22	22	S53	L	22	X_NEW	L	split		
+L13	26	26	S56	M	26	S52	M	split		
+L13	30	30	S80	M	30	S65	M	split		
+L13	39	39	S45	L	39	S94	M	split		
+L13	46	46	S56	M	46	S52	M	split		
+L14	2	2	S74	M	2	S54	M	split		
+L14	9	9	S61	L	9	S53	M	split		
+L14	12	12	S74	M	12	S54	M	split		
+L14	15	15	S76	L	15	S40	M	split		
+L14					16	S62	M	gapA		
+L14					17	S91	M	gapA		
+L14	21	21	S31	L	23	S94	M	split		
+L14	23	23	S74	M	25	S54	M	split		
+L14	32	32	S53	L	34	S88	M	split		
+L14					35	X_NEW	L	gapA		
+L14	33	33	S80	M	36	S65	M	split		
+L14					37	S65	M	gapA		
+L14	40	40	S76	L	44	S91	M	split		
+L15	1	1	S42	L	1	S40	M	split	line start	line start (prose before run not marked)
+L15	8	8	S74	M	8	S54	M	split		
+L15	10	10	S74	M	10	S54	M	split		
+L15	12	12	S74	M	12	S54	M	split		
+L15					16	S54	M	gapA		
+L15					17	S88	M	gapA		
+L15	17	17	S74	M	19	S54	M	split		
+L15	22	22	S74	M	24	S54	M	split		
+L15	24	24	S56	M	26	S52	M	split		
+L15	31	31	S74	M	33	S54	M	split		
+L15	32	32	S74	M	34	S54	M	split		
+L15					35	S65	M	gapA		
+L15					36	S54	M	gapA		
+L15					37	S65	M	gapA		
+L15	35	35	S76	L	40	S91	M	split		
+L15	37	37	S56	M	42	S52	M	split		
+L15	40	40	S61	L	45	S53	M	split		
+L16	6	6	S97	M	6	S23	L	split		
+L16	11	11	S74	L	11	S54	M	split		
+L16					15	S75	M	gapA		
+L16		22	S56	M				gapB		
+L16					24	S54	M	gapA		
+L16	25	26	S25	M	27	S35	M	split		
+L16					28	S40	M	gapA		
+L16	26	27	S16	L	29	S42	M	split		
+L16	32	33	S56	M	35	S57	M	split		
+L16					36	S65	M	gapA		
+L16					37	S52	M	gapA		
+L16	36	37	S84	M	41	S40	M	split		
+L16	37	38	S84	M	42	S40	M	split		
+L16	40	41	S75	H	45	S70	M	split_H_A		
+L16	44	45	S74	M	49	S54	M	split	line end	line end
+L17	1	1	S80	M	1	S65	M	split	line start	line start (prose before run not marked)
+L17	2	2	S23	M	2	S97	M	split		
+L17	3	3	S74	M	3	S54	M	split		
+L17	16	16	S56	M	16	S94	M	split		
+L17					17	S75	M	gapA		
+L17					18	S52	M	gapA		
+L17					21	S75	M	gapA		
+L17	19	19	S73	L	22	S49	M	split		
+L17		21	S67	L				gapB	line end	
