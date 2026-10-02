@@ -1,5 +1,5 @@
 blocked
-Blocked on sign identification of the Revol copyist (internal, 2 Oct 2026, GAPS3): Memoires de Nevers (1665) part 2 (Gallica bpt6k64451005) ContentSearch "Desenzan" 0 hits, "Revol" 5 hits (PAG_314, 328, 471, 574, 666, all royal countersignatures) and Berger de Xivrey Lettres missives vol.3 (archive.org recueildeslettre03henr) full-text "Desenzan*/Desanzan*" 0 hits, read 2 Oct 2026, letter absent; web and blog check 2 Oct 2026 found no decipherment; the f.198 verso passes against the 264ext atlas do not read (judge FAIL, below shuffled controls); the recto (fetched 2 Oct 2026, GAPS4) profiles like the verso, not like the atlas's office hand; next: a Revol-hand sign-tile cut for the owner's sign sorter, ~$4.
+Blocked on sign identification of the Revol copyist (internal, 2 Oct 2026, GAPS3): Memoires de Nevers (1665) part 2 (Gallica bpt6k64451005) ContentSearch "Desenzan" 0 hits, "Revol" 5 hits (PAG_314, 328, 471, 574, 666, all royal countersignatures) and Berger de Xivrey Lettres missives vol.3 (archive.org recueildeslettre03henr) full-text "Desenzan*/Desanzan*" 0 hits, read 2 Oct 2026, letter absent; web and blog check 2 Oct 2026 found no decipherment; the f.198 verso passes against the 264ext atlas do not read (judge FAIL, below shuffled controls); the recto (fetched 2 Oct 2026, GAPS4) profiles like the verso, not like the atlas's office hand; the Revol-hand sign tiles are cut and on the owner's sign-sorter page (GAPS5, 2 Oct 2026, https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb); next: the owner's sort (ASKS row 102), then two blind passes against the settled list, ~$8.
 
 # fr.3986 f.198 (Nevers -> Revol, 23 Oct 1593) — Louis de Gonzague, duc de Nevers, to Louis Revol
 
@@ -463,20 +463,70 @@ OK keep-going fr3986-nevers-revol-1593: keep going: 2 internal gap(s), 1 step(s)
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
 
-## Remaining gaps (GAPS3, 2 Oct 2026; GAPS-2 list updated in place; GAPS4 updated in place)
+## GAPS5-fr3986-nevers-revol-1593 (2 Oct 2026, account-4)
+
+Worker GAPS5-fr3986-nevers-revol-1593 (account-4, Opus 5.5), brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`,
+the GAPS4 Verdict step: one sign tile per recto and verso sign into a `tools/sign_sorter.py` page for the owner. Clock read
+21:46-21:5x UTC. Intake gate at start: `blocked (line 1) -- already terminal, nothing to gate`, exit 0. No vision calls, no
+passes, no reading; requests 0 (everything from images on disk).
+
+**Lines.** `sorter/stitch_lines.py` rebuilds 23 whole-line images (`sorter/lines/`): the 11 recto cipher-bearing lines of
+GAPS4 (L03 L04 L05 L09 L11-L16 L19) stitched from their committed s1/s2 native crops (the recto source region was not kept),
+and the 12 verso lines that carry v2 signs (L04-L10 L13 L15 L16 L18 L19) cut from the committed verso source image at the v2
+crop boxes.
+
+**Boxes.** `sorter/build_tiles.py` runs `tools/iiif_lines.py --image <line> --centres <h/2> --groups 6` on each line (gap 6
+from the blank-run histogram: runs of 1-5 px fall inside letters and signs) and writes every piece box to `sorter/signs.tsv`:
+**1,018 tiles** (the debug overlay of recto L12 was checked once for cut quality, as the tool requires: one box per sign in the
+cipher stretch, one per letter or letter group in the clear French). Pieces wider than 1.6x the band height (7) go to pile
+`wide`.
+
+**Labels: a deviation from the brief, stated.** The brief said labels from `passes/recto/passA.tsv` and `passes/v2`. Those
+files record line, run and position but no x coordinate, and each line's pieces include its clear-French letters (recto L12:
+53 pieces for 22 pass signs), so a pass tag cannot be tied to a piece without reading the image, which this step was not to
+do; any such tie would be an I-grade guess handed to the owner as a label. The piles are therefore provisional image clusters
+(k-means k=40, seed 1, on the 24x24 normalised tile the sorter itself uses), `c01`-`c40` plus `wide`, in `sorter/labels.tsv`;
+the pass tags per line ride in the focus questions instead.
+
+**Focus ("Check these first").** `sorter/focus.tsv`, 23 rows: one per line, on the line's darkest piece (the cipher runs are
+written heavier than the clear text), each question quoting the readers' tags for that line -- verso lines where passes A and B
+split (all 12 split) and every recto line (one reader). `tools/lookalike_pass.py` was not used: it needs a two-reader alignment
+with tile ids (reconcile_passes.py agreement files), which these passes do not have, and its own docstring rules it out for an
+unsettled inventory.
+
+**Page.** `python3 tools/sign_sorter.py --signs sorter/signs.tsv --labels sorter/labels.tsv --pages sorter/lines --focus
+sorter/focus.tsv --title "Revol Hand Sign Sorter" ...`: 41 piles, 1,018 tiles, 0 skipped, 5.1 MB, published private to the
+owner with `capabilities {"db": {}}` at https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb (db collections piles/moves/newpiles
+empty at publish, checked by one list). The HTML is not committed (regenerate with the commands in `sorter/README.md`). Folder
+22 MB, under 30.
+
+Grades: no reading, no token grade changes (verso v2 draft stands at H 12, M 42, U 1, I 0). Rule 10: nothing claimed.
+
+`tools/gaps_check.py` after the in-place update, and `tools/next_steps.py --wait-only | grep fr3986-nevers-revol-1593` (empty):
+
+```
+OK parked fr3986-nevers-revol-1593: parked: 2 gap(s), all outside blockers
+gaps_check: 1 checked: 1 parked, 0 keep-going, 0 FAIL, 0 skipped
+```
+
+## Remaining gaps (GAPS3, 2 Oct 2026; GAPS-2 list updated in place; GAPS4, GAPS5 updated in place)
 Read so far: 0 signs to a continuous text. f.198 recto: 264 signs profiled (GAPS4, one blind pass, 45.5% on atlas tags, 9.1% new shapes, 0 H), no draft. f.198 verso v2 draft: 55 signs in 11 runs (ciphertext_v2.tsv; H 12, M 42, U 1), pass agreement 20/55 = 36%, judge FAIL (-1.319 vs real_p05 -0.919), shuffled-target 0/20, rank 194/201 vs value-shuffled keys. The recto block (canvas 395, several hundred signs) is still undrafted. The atlas held-out gate clears on leaf 298 (65/65) but does not carry over to the Revol hand. The web and blog check is done (2 Oct 2026, GAPS3: no decipherment located; scratch intake gate with `partial` exits 0).
-- f.198 verso cipher runs (55 signs, 11 runs) - blocker: open-codes; passes run 2 Oct 2026 (GAPS3): blind agreement 36%, judge FAIL, below shuffled-target median; a further blind pass with the 264ext atlas is retired (rule 3); next: re-read against the owner-settled Revol-hand sign list once the sign-sorter page (recto gap) is sorted, ~$4
-- f.198 recto cipher block (canvas 395, 11 cipher-bearing lines, 264 signs in one blind profile pass) - blocker: open-codes; fetched and profiled 2 Oct 2026 (GAPS4: atlas share 45.5%, NEW 9.1%, 0 H, the verso's profile, not leaf 298's 75.9%/0%/57%), atlas passes not licensed; next: cut one tile per sign from images/recto + images/v2 crops (boxes by tools/iiif_lines.py --groups, labels from passes/recto/passA.tsv and passes/v2) into a tools/sign_sorter.py page for the owner, ~$4
+- f.198 verso cipher runs (55 signs, 11 runs) - blocker: waiting-on ASKS row 102 (the owner's sort of the Revol-hand sign-sorter page); passes run 2 Oct 2026 (GAPS3): blind agreement 36%, judge FAIL, below shuffled-target median; a further blind pass with the 264ext atlas is retired (rule 3); tiles cut 2 Oct 2026 (GAPS5, 12 verso lines in the sorter page); next: re-read against the owner-settled Revol-hand sign list, ~$4
+- f.198 recto cipher block (canvas 395, 11 cipher-bearing lines, 264 signs in one blind profile pass) - blocker: waiting-on ASKS row 102 (the owner's sort of the Revol-hand sign-sorter page); fetched and profiled 2 Oct 2026 (GAPS4: atlas share 45.5%, NEW 9.1%, 0 H, the verso's profile, not leaf 298's 75.9%/0%/57%), atlas passes not licensed; tiles cut 2 Oct 2026 (GAPS5: 1,018 tiles from 23 lines, 41 provisional piles, 23 focus rows, https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb); next after the sort: two blind passes against the settled Revol-hand list, ~$8
 
 ## Escalation (GAPS3, 2 Oct 2026; GAPS-2 list updated in place)
 - [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source and the held-out; c.264's lower lines are in the atlas (A53-A62); c.298 lines 1-3 aligned as the held-out (65 signs, 2 Oct 2026); lines 4-10 left (mostly code words)
 - [n/a] clear-pages: the leaf is a clear-French letter with inline cipher runs (verso) and a cipher block (recto); no clear copy of this letter is known (Bourdeau's f.157v clear copy is no.75, 9 Oct; premise check (a)-(d) and the web and blog check, 2 Oct 2026, found none)
 - [x] known-keys: key no.60 is in hand (key.tsv; tools/keys/key60.tsv + key_atlas_extra.tsv for the v2 draft); the key is not the blocker
 - [x] print: Gomberville seconde partie, Berger de Xivrey vol.3 and Memoires de la Ligue v.5-6 read 24 Sept 2026; Memoires de Nevers ii ContentSearch ("Desenzan", "Revol"), Lettres missives vol.3 full text, Rott 1882/1900 read 2 Oct 2026; absent
-- [ ] key-rebuild: atlas extended (A53-A62), held-out widened to 65 signs on whole-line crops, 65/65 on leaf 298 (2 Oct 2026, GAPS-2), but the Revol hand does not profile like the atlas's office hand (GAPS4); still untried: a Revol-hand sign list settled by the owner in tools/sign_sorter.py from recto + verso tiles; the tile cut (~$4) depends on nobody, see the recto gap
+- [x] key-rebuild: atlas extended (A53-A62), held-out widened to 65 signs on whole-line crops, 65/65 on leaf 298 (2 Oct 2026, GAPS-2), but the Revol hand does not profile like the atlas's office hand (GAPS4); the Revol-hand tile cut and sorter page are done (GAPS5, 2 Oct 2026); the sort itself is the owner's, waiting-on ASKS row 102
 - [x] image-check: canvas 395 = f.198 recto (stamp 198, head "23 d'octobre 1593"), canvases 396/397 = f.198 verso (two scans), 398 = f.199r blank (2 Oct 2026, images/probes.json); recto native region fetched and cut 2 Oct 2026 (GAPS4, images/recto, 54 crops), profiled: Revol-hand profile, atlas passes not licensed
 - [retired] retry: blind passes on the verso runs with the 264ext atlas (instrument: atlas + whole-line crops + blind Sonnet passes), 2 Oct 2026 GAPS3, agreement 36%, judge FAIL, the fourth pass family that failed to move agreement; reopened only by new material (the recto) or an atlas from this copyist's own hand
-Verdict: keep going: 2 internal gaps; cheapest next: cut one sign tile per recto and verso sign into a tools/sign_sorter.py page for the owner, ~$4 (then the owner's sort, then two blind passes against the settled Revol-hand list, ~$8)
+Verdict: parked: every gap has an outside blocker (waiting-on ASKS row 102, the owner's sort of https://claude.ai/artifact/L2LvyN17GRK4XWwxiBGAFb; then two blind passes against the settled Revol-hand list, ~$8)
+
+## While waiting
+
+- Depends on nobody: list the other Nevers-to-Revol letters of 1593 in fr.3985/fr.3986 from the BnF finding aid (catalogue only, no images), to name sibling leaves in the same copyist's hand that would add tiles to the sorter or a crib, ~$2.
 
 ## Web and blog check (GAPS3-fr3986-nevers-revol-1593, 2 Oct 2026)
 
