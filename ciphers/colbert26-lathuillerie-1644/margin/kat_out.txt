@@ -1,0 +1,12 @@
+unit	set	real	n	control_mean	control_p95	control_max	P(control>=real)
+# M1 14=on/M 19=m/M 49=que/C 26=aines/M
+M1	C	1	1	0.08	1	1	0.0760
+M1	all	1	4	0.52	1	2	0.5125
+# M2 68=s/M 32=o/M 28=la/C 61=rge/M 29=a/M 29=a/M 71=dans/M 28=la/C 12=c/C 18=h/C 29=a/M 61=rge/M 51=de/C 30=s/M 15=e/M 37=e/M 59=r/M 23=n/M 61=rge/M 29=a/M 30=s/M
+M2	C	5	5	1.84	4	4	0.0000
+M2	all	6	21	4.35	7	8	0.1855
+# M3 24=n/C 32=o/M 90=- 31=mdebrienne/M 55=ra/M 30=s/M 66=f/M 77=faire/M
+M3	C	0	1	0.59	1	1	1.0000
+M3	all	2	7	1.51	3	3	0.4675
+ALL	C	6	7	2.51	6	6	0.0760
+ALL	all	9	32	6.37	11	13	0.1855

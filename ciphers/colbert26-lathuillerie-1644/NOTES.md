@@ -737,15 +737,62 @@ Expected: 213 of 306 tokens are still M alignment chunks (was -1.582).
 
 Hosts: gallica.bnf.fr IIIF 1 request. Vision: 0 subagent calls; 5 own reads of strip composites. No credentials.
 
-## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, 2 Oct 2026)
+## A2-COL4 (account 2, LANE-A2PUSH, 2 Oct 2026): f.23 rotated margin postscript, known-answer test of key_f23
+
+Brief `.claude/briefs/runs/2026-10-02-acct2-a2-col4.md`. Intake gate at start: `colbert26-lathuillerie-1644: partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Crops (commands).** Gallica info.json for f26 (7427 x 6365), then `python3 tools/iiif_lines.py --ark btv1b10035069t --canvas 26
+--region 3700,60,520,4600 --dry-run` (missed the block: it lies further right) and `--region 4050,40,450,5300 --dry-run` (the
+whole block); 3 Gallica requests. The source was rotated 90 degrees counter-clockwise locally (PIL; the tool has no rotation
+option) and cut with `python3 tools/iiif_lines.py --image <rotated src> --region 300,140,5000,300 --centres 150 --top-margin 150
+--bottom-margin 150 --out <scratch>/crops --prefix f23m`: 3 segment crops (<= 2400 px), scratch only, not committed.
+
+**Transcription.** Two blind Sonnet passes over the 3 crops (pass B read in reverse segment order first), neither shown the key or
+the main-leaf reading; this worker's reconciliation from 5 native zooms. Clear text: "J'ay oublie de vous marquer [M1] veut
+absolument [M2] qu'il fault qu'il fasse [M3]". Three glossed units (`margin/f23m_reconciled.tsv`, each disagreement and how it was
+settled in its note): M1 "que La Reyne" over 14 19 49 26; M2 "Soulager S E dans la charge des estrangers" over 68 32 28 61 29 29
+71 28 12 18 29 61 51 30 15 37 59 23 61 29 30 (passes split only on 59/55 in the tail, settled 59 from the zoom; a heavy 6-like
+flourish before 15 left out, uncoded); M3 "[en/ou, unread] qu'il fasse faire" over 24 32 90 31 55 30 66 77 (passes agree). 33
+codes, 1 (90) not in key_f23. The key was not changed: the postscript is held out.
+
+**Known-answer test and control (rule 3; `margin/kat.py`, output `margin/kat_out.txt`).** Statistic fixed before running: per
+unit, walk the codes in order; a code scores if its key_f23 value occurs in the unit's gloss (letters only) at or after the
+previous match. Control: the same walk against 2000 windows of equal length cut at random from the f.23 main-text gloss
+(interlinear/f23w_pairs.tsv); the score depends on which gloss the run meets, so the control can fail differently.
+```
+unit	set	real	n	control_mean	control_p95	control_max	P(control>=real)
+M1	C	1	1	0.08	1	1	0.0760
+M1	all	1	4	0.52	1	2	0.5125
+M2	C	5	5	1.84	4	4	0.0000
+M2	all	6	21	4.35	7	8	0.1855
+M3	C	0	1	0.59	1	1	1.0000
+M3	all	2	7	1.51	3	3	0.4675
+ALL	C	6	7	2.51	6	6	0.0760
+ALL	all	9	32	6.37	11	13	0.1855
+```
+**Result.** C-grade codes: 6 of 7 consistent with the margin's own gloss in order (M2 5/5 -- 28 la twice, 12 c, 18 h, 51 de --
+above every control window, max 4; M1 49 que 1/1). The one miss is 24 = n against "qu'il fasse faire", whose first gloss word
+(read "en" by pass A, "ou" by pass B) was left out as unread; "en" would make it 7/7, but the reading is not settled, so the
+miss stands. Pooled, 6/7 equals the control's maximum (p = 0.076): the C key passes on M2 alone, not as a pooled test at p < 0.05.
+M-grade values as a set do no better than chance (all codes 9/32 vs control mean 6.4, p = 0.19), as expected for single-occurrence
+chunks. Observed but not counted (no gate was set for them): 71 = dans and 77 = faire (both M in key_f23) stand under "dans" and
+"faire" here; 68 = s under the S of "Soulager"; 61 (key value "rge", M) sits where "ge" falls three times (soula-GE-r, char-GE,
+estran-GE-rs), which suggests 61 = ge. These are leads for the next key revision, M until a further occurrence or a control
+licenses them. Rule 4 for the margin tokens under key_f23: 33 tokens, C 7 (6 consistent, 1 against an unread gloss word), M 25,
+U 1 (90). Cryptanalytic-grade; every C comes from the f.23 gloss. No reading or key changed, so no decode or judge re-run.
+
+Hosts: gallica.bnf.fr IIIF 3 requests (1 info.json, 2 regions). Vision: 2 Sonnet subagent calls (3 crops each) + 1
+reconciliation by this worker (5 native zooms). No credentials.
+
+## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026)
 
 Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing canvases 0.
-- f.23 codes beyond the 21 C codes - blocker: open-codes; word-level re-pairing done (A2-COL3: 128 vs shuffled max 45, 21 C codes, held-out 4/4); the other 49 codes occur once or split across chunks on this one leaf (key_f23.tsv), so more occurrences are needed -- the rotated margin postscript below is the only further f.23 material
-- f.23 rotated margin postscript - blocker: not-attempted; glossed two-digit runs in the left margin, not cut (A2-COL2 step); next: iiif_lines crop of the rotated block, 2 blind passes + 1 reconciliation, held out against key_f23 as a known-answer test, ~$2
+- f.23 codes beyond the 21 C codes - blocker: open-codes; word-level re-pairing done (A2-COL3: 128 vs shuffled max 45, 21 C codes, held-out 4/4); the other 49 codes occur once or split across chunks on this one leaf (key_f23.tsv), so more occurrences are needed; the rotated margin postscript, the only further f.23 material, was read and used as a known-answer test (A2-COL4: C codes 6/7 consistent, M2 5/5 above the control max 4, pooled p 0.076; leads 61 = ge, 71 = dans, 77 = faire); next: fold the margin pairs into the alignment as a second fit, key revision with its own shuffled-gloss control, ~$1
 - f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv), and f.23 is a different key, so it cannot serve as the prior (A2-COL2 step)
 - canvas 20-21 notes - blocker: not-attempted; KX-LATHKEY2 judged them topical, but f.24 shows gloss lines were taken for clear text; next: re-read canvas 20 gloss-vs-clear on native crops, ~$2
 
-## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, 2 Oct 2026)
+## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026)
 
 - [ ] siblings: the other 19 cipher-bearing canvases not yet sorted by system (two-digit like f.23, mixed like f.24); next: one thumbnail sort, ~$1
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
@@ -753,6 +800,6 @@ Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading
 - [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
 - [n/a] key-rebuild: f.23 and f.24 are different keys (51, 31 conflict), so there is no merge to make
 - [ ] image-check: canvas 20-21 gloss-vs-clear re-read on native crops
-- [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412
+- [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412; A2-COL4 margin postscript known-answer test: C 6/7 consistent, M2 5/5 vs control max 4, pooled p 0.076
 
-Verdict: keep going: 4 internal gaps; cheapest next: f.23 rotated margin postscript crop, 2 blind passes + 1 reconciliation, held out against the word-level key_f23 as a known-answer test, ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: siblings thumbnail sort of the other 19 cipher-bearing canvases by system, ~$1
