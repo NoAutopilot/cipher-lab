@@ -1,0 +1,4 @@
+f119_ct2_bourdeau.txt: D. Bourdeau's glyph-level transcription of BnF fr.3251 f.119 (13 Nov 1571), copied unchanged from
+github.com/dbourdeau/cyphersolver targets/birago/ct2.txt (shallow clone 2 Oct 2026, HEAD of main), text CC BY 4.0.
+Notation: digits; a mark appended to the digit it sits over (~ wavy, - bar, : two dots, . one dot, + cross); letters
+m n h f c a l as written; | the inline wavy sign; one line per manuscript line (first token | on lines 1 and 3).
