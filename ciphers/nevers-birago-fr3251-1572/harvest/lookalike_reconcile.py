@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Promoted to tools/lookalike_pass.py (LOOKALIKE-TOOL, 2 Oct 2026): use the shared tool for any new run; this copy stays
+# because its outputs are cited in NOTES.md (NEVBIR-LOOKALIKE).
 """NEVBIR-LOOKALIKE step 2 reconciliation (2 Oct 2026): fold the look-alike re-read into the run's sequence.
 
 Per flagged tile (lookalike/<run>_tiles.tsv) the re-read (lookalike/<run>_reread.tsv) is a third value-blind read.

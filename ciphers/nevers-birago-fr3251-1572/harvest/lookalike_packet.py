@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Promoted to tools/lookalike_pass.py (LOOKALIKE-TOOL, 2 Oct 2026): use the shared tool for any new run; this copy stays
+# because its outputs are cited in NOTES.md (NEVBIR-LOOKALIKE).
 """NEVBIR-LOOKALIKE step 2 packet (2 Oct 2026): list the f.144r and f.168 tiles to re-read and cut a value-blind
 candidate sheet. A tile is listed if its two readers split (any non-agree status that survived into passC) or if its
 passC label sits in one of the top-10 confusion pairs of confusion_1572.tsv. Candidates per tile: reader A's and B's

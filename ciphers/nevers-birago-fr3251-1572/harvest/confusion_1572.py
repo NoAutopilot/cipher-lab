@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# Promoted to tools/lookalike_pass.py (LOOKALIKE-TOOL, 2 Oct 2026): use the shared tool for any new run; this copy stays
+# because its outputs are cited in NOTES.md (NEVBIR-LOOKALIKE).
 """NEVBIR-LOOKALIKE step 1 (2 Oct 2026): reader confusion map for the 1572 sign sheet, disk only.
 
 Reads every two-reader alignment on disk (*/passC*_agreement.tsv, written by reconcile_blind.py) and counts, per

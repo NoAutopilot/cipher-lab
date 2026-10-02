@@ -1,0 +1,32 @@
+passage	pos	label	conf	second	note
+L01	1	T92	H		omega shape, two bowls open top
+L01	4	T92	H		omega shape
+L01	9	T86	M	T60	two tall verticals, crossbars high, verticals extend below; matches pos28 not the slanted # of pos22
+L01	13	T24	M	X_NEW	3/epsilon-like two stacked bowls; closed right side, no tail seen
+L01	15	T83	H	T24	reversed-c joined to c with cross stroke (ae-like)
+L01	17	T83	H	T24	same ae-like linked double curve, dot at join
+L01	20	T83	H	T24	same ae-like double curve
+L01	22	T60	H	T86	compact slanted # with two clear horizontals
+L01	27	X_NEW	H	T83	t-shaped: vertical with hook foot and crossbar, not ae nor omega
+L01	28	T86	M	T60	tall two-vertical H-like sign, crossbar(s) high
+L02	1	T92	H		omega shape
+L02	3	T90	H	T45	small circle with cross/vertical rising above
+L02	4	T83	H	T24	ae-like linked double curve
+L02	8	T24	M	X_NEW	3/epsilon-like stacked bowls, same as L01 pos13
+L02	9	T92	H		omega shape
+L02	14	T60	H	T86	compact slanted # with two horizontals
+L02	16	T86	M	T60	tall verticals with crossbar running from preceding infinity stroke, H-like
+L02	22	T83	H	T24	ae-like linked double curve
+L02	25	T90	H	T45	small circle with short cross on top
+L02	30	T92	H		omega shape
+L03	2	T98	H	T18	vertical stem with loop in middle (not at top)
+L03	4	T83	H	T24	ae-like linked double curve
+L03	8	T83	H	T24	ae-like linked double curve
+L03	9	T92	H		omega shape
+L03	17	T83	H	T24	ae-like linked double curve
+L03	19	X_NEW	H	T83	t-shaped vertical with hook foot and crossbar
+L03	20	T86	M	T60	tall two-vertical H-like, crossbars high
+L03	21	T60	H	T86	compact slanted # two horizontals
+L03	24	X_NEW	H	T92	inverted-A/nabla with horizontal; line struck through here
+L03	25	X_NEW	H	T92	small square with dot inside; struck through
+L03	26	X_NEW	H	T83	vertical with chevron/arrowhead top and crossbar; struck through
