@@ -86,3 +86,4 @@ NEXT-LVN	other	.claude/briefs/runs/2026-10-02-acct3-next-lvn.md	Fable	3.2	45	que
 NEXT-MAL	other	.claude/briefs/runs/2026-10-02-acct3-next-mal.md	Fable	8.0	60	queued	2026-10-02 00:51	malsburg-hessen-1636: cheapest next step from finish-or-blocker pass
 VERIFY-HESSEN-1824	other	.claude/briefs/runs/2026-10-02-acct3-verify-hessen1824.md	Fable	4	45	queued	2026-10-02 00:52	hessen-1824 found-solved by Bourdeau 28 Sept: confirm, AUDIT N0, retire NEAR row
 DISPATCH-STANDBY	other	.claude/briefs/runs/2026-10-02-acct3-dispatcher-standby.md	Opus 5.5	2	20	queued	2026-10-02 01:18	add the fallback-chain standby check to account 2's dispatcher trigger
+MERCY-SIB	other	.claude/briefs/runs/2026-10-02-acct3-mercy-siblings.md	Fable	6	60	queued	2026-10-02 02:10	espagnol142-mercy-1648: hunt for other cipher pieces of the 1648 mission (AGR, Urkunden und Actenstücke, AGS)
