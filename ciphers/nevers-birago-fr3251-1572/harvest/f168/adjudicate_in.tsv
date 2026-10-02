@@ -1,0 +1,12 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+R02	9	T37 T24 T85	T33 T85 T60	T95	L	T36	M		circle on stem with dot
+R02	17	T85 T53 T55	T19 T58 T65	T17	L	X_NEW	L		t shape
+R02	33	T51 T53 T45	T60	T38	L	T64	M		
+R03	12	T24 T65 T25	X_NEW ? T19	NONE		T92	H		omega cut at s1 edge
+R03	14	T25 ? X_NEW	T19 T58 T66	T92	H	NONE			
+R03	18	T19 T58 T66	T76 ?	T97	L	T56	M		tailed g
+R03	20	T66 ? T76	run end	T51	M	X_K	M	prose after: Il	K shape, may be prose abbreviation; after: Kas (prose abbrev follows) / Il Baron
+V03	1	line start	T85 T18 T85	T17	L	X_NEW	L	prose before: line start	t shape; prose before: line start
+V03	9	T19 T92 T85	? T24 T45	T95	M	T66	M		p with dot and foot bar
+V03	10	T92 T85 ?	T24 T45 T24	T49	L	T51	L		barred p
+V03	23	T52 T24 T19	X_NEW X_NEW T54	T70	M	T84	L		triangle with cross below

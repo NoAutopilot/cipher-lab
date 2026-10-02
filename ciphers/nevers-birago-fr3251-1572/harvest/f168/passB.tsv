@@ -1,0 +1,125 @@
+passage	pos	sign_id	alt	conf	note
+R02	1	T89		H	q-like; prose before: line start
+R02	2	T96		M	l with dot
+R02	3	T98		H	phi
+R02	4	T25		H	lambda
+R02	5	T92		H	omega
+R02	6	T37		H	barred theta
+R02	7	T24		M	reversed-3 plus epsilon
+R02	8	T85		H	plus
+R02	9	T36	T18	M	circle on stem with dot
+R02	10	T33		H	double-tick base
+R02	11	T85		H	
+R02	12	T60		H	hash
+R02	13	T33		M	filled block
+R02	14	T85		H	
+R02	15	T53		H	infinity
+R02	16	T55		H	E-bar
+R02	17	X_NEW	T17	L	t shape
+R02	18	T19		H	pi
+R02	19	T58		H	B
+R02	20	T65		H	female-sign
+R02	21	T19		H	
+R02	22	T36		H	
+R02	23	T19		H	
+R02	24	T76		H	9
+R02	25	T58		H	
+R02	26	T19		H	
+R02	27	T19		L	cut at s2/s3 overlap edge, may be same as previous
+R02	28	T97		H	S with stroke
+R02	29	T52		H	
+R02	30	T37		H	
+R02	31	T51		M	
+R02	32	T53		H	
+R02	33	T45		H	
+R02	34	T64	T38	M	
+R02	35	T60		H	after: Kept: end of line
+R03	1	T92		H	prose before: line start
+R03	2	T19		H	
+R03	3	T90		H	
+R03	4	T24		M	
+R03	5	T85		H	
+R03	6	T70		H	triangle
+R03	7	T90		H	
+R03	8	T85		H	
+R03	9	T24		M	
+R03	10	T65		H	
+R03	11	T25		H	
+R03	12	T92		H	omega cut at s1 edge
+R03	13	X_NEW		L	small raised tick over omega
+R03	14	T19		H	
+R03	15	T58		H	
+R03	16	T66	T36	M	
+R03	17	T56	T89	M	tailed g
+R03	18	T76		H	
+R03	19	X_K		M	K shape, may be prose abbreviation; after: Kas (prose abbrev follows) / Il Baron
+V01	1	T88		H	small o; prose before: considerare
+V01	2	T33		H	
+V01	3	T85		H	
+V01	4	T60		H	
+V01	5	T53		H	
+V01	6	T55		H	
+V01	7	T25		H	
+V01	8	T58		H	
+V01	9	T90		H	
+V01	10	T24		M	
+V01	11	T55		H	
+V01	12	T36		H	
+V01	13	T45		H	after: line end
+V02	1	T63		H	V; prose before: line start
+V02	2	T86	T60	M	small hash
+V02	3	T97		H	
+V02	4	T86	T60	M	
+V02	5	T98		H	
+V02	6	T80		H	D with dot
+V02	7	X_NEW		H	digit 4
+V02	8	X_NEW		H	digit 7
+V02	9	T98		H	
+V02	10	T25		H	
+V02	11	T80		H	
+V02	12	X_NEW		H	barred slashed B-like with dots
+V02	13	T53		H	
+V02	14	T85		H	
+V02	15	T60		H	
+V02	16	T65		H	
+V02	17	T19		H	
+V02	18	X_EQ		H	
+V02	19	T37		H	
+V02	20	T92		H	omega with dot
+V02	21	T53		H	
+V02	22	T80		H	D with dot
+V02	23	T63		H	V
+V02	24	T96		M	l with tick
+V02	25	T52		H	
+V02	26	T98		H	
+V02	27	T37		H	
+V02	28	T85		H	
+V02	29	T54		H	R
+V02	30	T60		H	after: line end
+V03	1	X_NEW	T17	L	t shape; prose before: line start
+V03	2	T85		H	
+V03	3	T18		M	
+V03	4	T85		H	
+V03	5	X_NEW		H	integral with dot and small o
+V03	6	T19		H	
+V03	7	T92		H	
+V03	8	T85		H	
+V03	9	T66	T49	M	p with dot and foot bar
+V03	10	T51	T49	L	barred p
+V03	11	T24		M	
+V03	12	T45		H	
+V03	13	T24		M	
+V03	14	T19		H	
+V03	15	T25		H	
+V03	16	X_NEW		H	digit 4
+V03	17	T96		M	
+V03	18	T52		H	
+V03	19	T58		H	
+V03	20	T52		H	
+V03	21	T24		M	
+V03	22	T19		H	
+V03	23	T84	T70	L	triangle with cross below
+V03	24	X_NEW		H	square with dot
+V03	25	X_NEW		H	bulb with legs
+V03	26	T54		M	small R
+V03	27	X_NEW		L	cursive d with tilde, may be prose; after: line end (next line Nondimeno)
