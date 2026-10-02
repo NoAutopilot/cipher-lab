@@ -1,0 +1,13 @@
+signs: ours 169, his 170 (both after his one inserted sign, zss[p]kkw)
+  transcription diff (replace): ours 'r' vs his 'v' at his sign 6
+  transcription diff (replace): ours 'j' vs his 'f' at his sign 54
+  transcription diff (insert): ours '' vs his 'l' at his sign 88
+  transcription diff (replace): ours 'i' vs his '1' at his sign 93
+  transcription diff (replace): ours 'gg' vs his 'qq' at his sign 168
+signs identical in both transcriptions: 164/170
+his ct.txt: plaintext words exact 27/35, letters 159/170
+ours (key phase continuous, as written): plaintext words exact 10/35, letters 85/170
+ours, key phase continuous over OUR signs, scored on aligned positions: words 10/35, letters 81/170
+  words that differ (his corrected word <- ours; _ = no aligned sign): schiket<-schikep einen<-eqnen diese<-?iese fragen<-frh?en wegen<-uegew america<-am_sddb von<-epq fries<-askft oken<-pefo de<-ef w<-x ette<-?uuf ge<-hf hort<-cpsu hatte<-ibouf die<-ekf auff<-bvgg indung<-ko?voh dieses<-ekipft plans<-qm?or in<-ko wez<-x?? lar<-mbs merkliche<-n?slmkdcf folgen<-gpmh?e
+ours with the one dropped sign restored (erylfe -> erlylfe): words 25/35, letters 156/170
+  words that differ: schiket<-schikep einen<-eqnen diese<-?iese fragen<-frh?en wegen<-uegew von<-dop auff<-guff dieses<-diooes plans<-planq folgen<-folged

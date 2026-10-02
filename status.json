@@ -619,9 +619,13 @@
    "stage": 9,
    "state": "closed",
    "holder": "Agents",
-   "next": "found-solved: read in full by D. Bourdeau 28 Sept 2026; VERIFY-HESSEN-1824 (account 2) writes AUDIT.md N0 and retires the NEAR row",
+   "next": "found-solved 2 Oct 2026: N0, key published (Bourdeau 28 Sept 2026), text known; AUDIT.md. Nothing further.",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
-   "kind": "cryptanalysis"
+   "kind": "cryptanalysis",
+   "status": "found-solved",
+   "key": "published",
+   "text": "known",
+   "result": "found-solved: read by D. Bourdeau 28 Sept 2026 (cyphersolver hesse1824); our re-application of his key to our transcription reproduces it (N0)"
   },
   {
    "name": "Hesse-Kassel and Denmark letter with enciphered passages, 4 May 1672",
@@ -3271,13 +3275,6 @@
    "next": "507/508 are one text (identity 0.470 vs 0.115): transcribe 507 with 508 as settling witness, then ff.23-24,16,14,18,25; homophonic at pooled N, control first",
    "lane": "B8",
    "touched": "26 Sept 2026 08:03"
-  },
-  {
-   "target": "hessen-1824",
-   "title": "Hessian 1824 polyalphabetic, N=164: periodic_vigenere (control 1.000), masc (0.823), homophonic profile=target (0.878) all control-passed target FAILs; running_key crib-drag control-backed negative; running_key beam decoder and new periodic_masc (P=6/7/8 control 0.10-0.17 on de19, all below gate) both untestable at this N -- non-tests",
-   "next": "more ciphertext from the same office (HStAM 9 a Nr. 259 siblings), or a crib from the Anmerkung's own worked key-table example (untranscribed, paleographic risk flagged)",
-   "lane": "B8 / HES-DRAG / HES-PHASE",
-   "touched": "27 Sept 2026 17:19"
   },
   {
    "target": "fr4715-montholon-1589",

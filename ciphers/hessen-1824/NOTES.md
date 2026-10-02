@@ -1,9 +1,10 @@
-partial
+found-solved
+2 Oct 2026 (VERIFY-HESSEN-1824, account 2): found-solved. Read in full by D. Bourdeau, dbourdeau/cyphersolver targets/hesse1824, 28 Sept 2026, from the period decipherer's Anmerkung on the leaf (key bcdefg, Vigenere without j, columns running on into digit signs); his key re-applied to our transcription reproduces his reading (bourdeau_check/). Class N0, key published, text known: see AUDIT.md.
 Bourdeau CATALOGUE.md #340 (fresh shallow clone, HEAD fc0c9e865d0fae67ca92d19750d2b09ab11972e0, read 26 Sept 2026) read in full: "Hessian polyalphabetic message of 1824: unknown -> unknown (Electorate of Hesse) ... HCPortal: 'Message encrypted with a polyalphabetic cipher', not solved. One page, image online. No reading found"; confirmed live against HCPortal's own API (`api.hcportal.eu/api/cryptograms/513`, HTTP 200 with header `Accept: application/json`, 26 Sept 2026 04:57 UTC), which carries `solution.name: "Not solved"`, `cipher_key_id: null`, `note: null`; Aymeloglu's repo (fresh shallow clone, HEAD 2495c45e8b94ffbc4f09a085224aa5ebce5cdf9f) grepped for "hessen", "hessisch", "marburg", "hstam", "polyalphab", 0 hits, not in that catalogue at all; Tomokiyo/Cryptiana pages on disk (sources/cryptiana/web/) grepped for "hessen", "1824", "kurhessen", "electorate of hesse" -- no hits naming this item or shelfmark; one OpenAlex query ("Hessian polyalphabetic cipher 1824 Marburg", 0 results, header auth, 26 Sept 2026) and one Semantic Scholar query ("Hessian polyalphabetic cipher 1824 solved", 0 results, header auth, 26 Sept 2026).
 
 # Hessian polyalphabetic message, 20 Feb 1824
 
-Status: open. No reading, key or documented attempt found anywhere checked (see line 2).
+Status: found-solved (2 Oct 2026, AUDIT.md). The intake below (26 Sept 2026) found no reading; D. Bourdeau read it on 28 Sept 2026.
 
 ## Target
 
@@ -283,3 +284,4 @@ Read so far: 0 of 164 cipher letters (0%) read and committed. NOTES.md has no re
 - [ ] image-check: one blind pass only. Unresolved: letter 7 'v' vs 'r', 'iuw' vs '1uw', three '4' glyphs, 'q' vs 'g' at letter 5, and the letters around the scratch check's phase slips (about 42-44, before 124, before 151). Planned: a second blind pass plus reconcile_passes.py (~$3).
 - [ ] retry: no key reads anything yet in committed form. Once the stated key and phase map read, rerun all 164 letters, apply the reconciled glyphs, grade per token (rule 4) and run judge_plaintext.py and decode --check (rule 7). The verifier, not the solver, assigns novelty (rule 10).
 Verdict: keep going: 4 internal gaps; cheapest next: read the Arcinsys record for HStAM 9 a Nr. 259 (digitisation flag) and query HCPortal for sibling records, ~$2 (highest value: apply the Anmerkung's stated key bcdefg on a 25-letter i=j tableau with a logged phase map and a shuffled-copy control, ~$3)
+Superseded 2 Oct 2026: found-solved (AUDIT.md).
