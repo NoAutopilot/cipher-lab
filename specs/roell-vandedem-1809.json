@@ -1,0 +1,37 @@
+{
+ "slug": "roell-vandedem-1809",
+ "name": "Two unsigned, unaddressed cipher letters for the Constantinople legation, one dated 9 Feb 1809 (DECODE R1469, 7 pp.) and one undated (R1470, 6 pp.); DECODE attributes them to W.F. Roell -> F.G. van Dedem van de Gelder, Bourdeau doubts it (Van Dedem to G. Testa fits the French 'Monsieur' better). Schmeh's Top-25 no.10, 'Das Van-Gelder-Kryptogramm' (Cipherbrain, 8 Aug 2013, from Karl de Leeuw)",
+ "date": "1809-02-09",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "ciphers/roell-vandedem-1809/decode_transcription/R1469_groups.txt + R1470_groups.txt",
+ "ciphertext_source": "DECODE R1469/R1470 transcription (SofPe, 2 Feb 2020) as parsed by D. Bourdeau's parse.py (cyphersolver targets/roell1809, MIT), copied 2 Oct 2026; group list only, marks and uncertain digits dropped, no line breaks. DECODE's shelfmark 'legatie Turkije inv. 804' is wrong on both counts: the toegang is 1.02.20 (scARCH, 24 Sept 2026) and inv. 804 holds clear Dutch copies 1785-93, not these pages (Bourdeau, 21 Sept 2026); the pages' real NA location is unknown.",
+ "alphabet": "numeric groups 1-3264 (plus one 5100 and one 7205, misreads per Bourdeau); 2,585 groups, 931 distinct; max frequency 21 (group 460); 45.6 pct of groups above 900, 14.1 pct above 1500, 3.3 pct above 2500; per-hundred counts fall off above 1400",
+ "constraints": {
+  "homophonic": "no group reaches 1 pct of the text where French 'de' alone should be 4-5 pct (Bourdeau); frequent groups spread 35-2920",
+  "not_these_keys": "Bourdeau (21 Sept 2026): not the Dedem 1788-93 code (crib overlap at chance), not Van Spaen 1808 or Fagel 1804 (different systems); DECODE holds no key; Roell's own papers NA 2.21.008.78 list Croiset (the ministry's code-maker) letters 1808-09 but no codebook",
+  "legation_key_items": "NA 1.02.20 holds five key items, all digitised (EAD dao present), none in a series after 1785: inv. 17 (Colyer 1682-1725, z.d.), 164 (Hochepied, 'Sleutels cijferschrift, 1747', 78 scans), 628 (Dedel, 1764), 686 (De Weiler 1768-76, z.d.), 785 (Kroll 1784-85, z.d.). LIKELY-7, 2 Oct 2026."
+ },
+ "cheap_tests": [
+  "inv. 164 decade and range check from reduced scans (LIKELY-7, done)",
+  "crib-position test of inv. 164's large one-part table (scans 1-8, 1-~3000): read the numbers of ~20 French function words and the 10 column bases from region crops, compare with the letter's top-40 groups and per-hundred profile, vs 20 shuffled group lists (not run; ~USD 8, ~12 vision calls on crops)",
+  "full transcription of the large table (8 scans, 2 blind passes + reconciliation) and decode_key.py vs 20 shuffled keys (not run; ~USD 35-40)"
+ ],
+ "judge": {
+  "language": "fr1810",
+  "min_word_cover": 0.5,
+  "note": "The row said 'judge nl'; the letter is French per DECODE and per its one clear word 'Monsieur' (Bourdeau), so the judge is fr1810 (1805-10 official French, era-matched; read tools/data/fr1810/README.md's fold spread before trusting a FAIL/PASS). No candidate reading exists yet, so the judge has not been run."
+ },
+ "cheap_test_done": [
+  {
+   "date": "2026-10-02",
+   "worker": "LIKELY-7 (account-4)",
+   "test": "inv. 164 availability (item page drupal-settings-json: DIGITALIZED, 78 scans), EAD date (1747, Hochepied series), one contact-sheet vision call over 11 reduced scans + one header-strip vision call on scans 1 and 3",
+   "target": "NOT the right decade: the bundle is 1747 (inventory), the booklet (scan 41) is labelled 'Ciffer ... 1747'; but the large loose ruled table (scans 1-8) is a one-part alphabetical Dutch/French word code whose scan 3 columns run 2000-2900, so its range (1-~3000) matches the letter's groups (to 3264) -- not excluded on range",
+   "control": "not run (no key applied; a shuffled-key control needs a transcribed key)",
+   "verdict": "NON-TEST on the row's premise (wrong decade by the inventory), key application not run; range match recorded; next step priced above",
+   "cost_usd": "orchestrator to read get_session"
+  }
+ ]
+}

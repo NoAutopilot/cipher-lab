@@ -1,0 +1,139 @@
+{
+ "bundle": "NA 1.02.20 (Legatie in Turkije 1668-1810) invnr 164, 'Sleutels cijferschrift, 1747, 3 katernen en enige losse stukken' (EAD, subseries ELBERT DE HOCHEPIED 1747-1763); item page availability DIGITALIZED, 78 scans (na_1.02.20_164_viewer.json holds every scan id, default URL and IIIF base)",
+ "fetched_by": "LIKELY-7-roell-vandedem-1809 (account-4), 2 Oct 2026 04:26-04:28 UTC",
+ "requests": "www.nationaalarchief.nl 2 (item page, EAD xml 1.02.20) + 1 (EAD xml 1.02.13); service.archief.nl 11 (IIIF /full/1000,/0/default.jpg), 1.6 s apart",
+ "note": "reduced-width copies only (1000 px); native scans are 5000x3904 (scans 1-8) and smaller for the strips and booklet; re-fetch any scan at native size from its 'default' URL in na_1.02.20_164_viewer.json",
+ "files": [
+  {
+   "file": "p001_w1000.jpg",
+   "scan_order": 1,
+   "label": "NL-HaNA_1.02.20_164_0001.jpg",
+   "scan_id": "f1149d00-f7cd-498b-b37c-24d424bb6dd5",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/f1149d00-f7cd-498b-b37c-24d424bb6dd5.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/f1149d00-f7cd-498b-b37c-24d424bb6dd5",
+   "native_bytes": 15869088,
+   "http": "200",
+   "bytes": 132073
+  },
+  {
+   "file": "p003_w1000.jpg",
+   "scan_order": 3,
+   "label": "NL-HaNA_1.02.20_164_0003.jpg",
+   "scan_id": "c60a72ef-0344-44bf-a4c6-8aff46f8e490",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/c60a72ef-0344-44bf-a4c6-8aff46f8e490.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/c60a72ef-0344-44bf-a4c6-8aff46f8e490",
+   "native_bytes": 15974029,
+   "http": "200",
+   "bytes": 107195
+  },
+  {
+   "file": "p009_w1000.jpg",
+   "scan_order": 9,
+   "label": "NL-HaNA_1.02.20_164_0009.jpg",
+   "scan_id": "8b5a2f42-9a77-4488-99e3-976b29920125",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/8b5a2f42-9a77-4488-99e3-976b29920125.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/8b5a2f42-9a77-4488-99e3-976b29920125",
+   "native_bytes": 1876599,
+   "http": "200",
+   "bytes": 59703
+  },
+  {
+   "file": "p013_w1000.jpg",
+   "scan_order": 13,
+   "label": "NL-HaNA_1.02.20_164_0013.jpg",
+   "scan_id": "226e61f7-4f1d-4520-949f-cee8803f3b0d",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/226e61f7-4f1d-4520-949f-cee8803f3b0d.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/226e61f7-4f1d-4520-949f-cee8803f3b0d",
+   "native_bytes": 3741360,
+   "http": "200",
+   "bytes": 42336
+  },
+  {
+   "file": "p021_w1000.jpg",
+   "scan_order": 21,
+   "label": "NL-HaNA_1.02.20_164_0021.jpg",
+   "scan_id": "43d9bc86-3d41-4fa2-9dae-4b2dbd14ae90",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/43d9bc86-3d41-4fa2-9dae-4b2dbd14ae90.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/43d9bc86-3d41-4fa2-9dae-4b2dbd14ae90",
+   "native_bytes": 6943140,
+   "http": "200",
+   "bytes": 53239
+  },
+  {
+   "file": "p039_w1000.jpg",
+   "scan_order": 39,
+   "label": "NL-HaNA_1.02.20_164_0039.jpg",
+   "scan_id": "f3bc33b2-3127-4418-83c9-2c5ba1809cfe",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/f3bc33b2-3127-4418-83c9-2c5ba1809cfe.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/f3bc33b2-3127-4418-83c9-2c5ba1809cfe",
+   "native_bytes": 5968907,
+   "http": "200",
+   "bytes": 79232
+  },
+  {
+   "file": "p041_w1000.jpg",
+   "scan_order": 41,
+   "label": "NL-HaNA_1.02.20_164_0041.jpg",
+   "scan_id": "223b1123-d24d-47da-abf4-3c6661b23b5a",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/223b1123-d24d-47da-abf4-3c6661b23b5a.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/223b1123-d24d-47da-abf4-3c6661b23b5a",
+   "native_bytes": 8485097,
+   "http": "200",
+   "bytes": 82861
+  },
+  {
+   "file": "p047_w1000.jpg",
+   "scan_order": 47,
+   "label": "NL-HaNA_1.02.20_164_0047.jpg",
+   "scan_id": "8ff578ab-0111-4912-9102-cd6d087ae688",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/8ff578ab-0111-4912-9102-cd6d087ae688.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/8ff578ab-0111-4912-9102-cd6d087ae688",
+   "native_bytes": 7813373,
+   "http": "200",
+   "bytes": 98299
+  },
+  {
+   "file": "p063_w1000.jpg",
+   "scan_order": 63,
+   "label": "NL-HaNA_1.02.20_164_0063.jpg",
+   "scan_id": "9ada7e08-970c-4d4b-a896-806e0155166a",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/9ada7e08-970c-4d4b-a896-806e0155166a.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/9ada7e08-970c-4d4b-a896-806e0155166a",
+   "native_bytes": 8469618,
+   "http": "200",
+   "bytes": 59793
+  },
+  {
+   "file": "p068_w1000.jpg",
+   "scan_order": 68,
+   "label": "NL-HaNA_1.02.20_164_0068.jpg",
+   "scan_id": "d973a793-131d-4a24-8bc5-755a296975bd",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/d973a793-131d-4a24-8bc5-755a296975bd.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/d973a793-131d-4a24-8bc5-755a296975bd",
+   "native_bytes": 6897800,
+   "http": "200",
+   "bytes": 79876
+  },
+  {
+   "file": "p076_w1000.jpg",
+   "scan_order": 76,
+   "label": "NL-HaNA_1.02.20_164_0076.jpg",
+   "scan_id": "8fa47b21-eb84-47e9-abf9-8ba921c32d83",
+   "iiif_url": "https://service.archief.nl/iip/iipsrv?IIIF=09/e7/d2/e6/43/16/41/67/81/aa/e1/cf/dd/e4/38/2f/8fa47b21-eb84-47e9-abf9-8ba921c32d83.jp2/full/1000,/0/default.jpg",
+   "native_url": "https://service.archief.nl/api/file/v1/default/8fa47b21-eb84-47e9-abf9-8ba921c32d83",
+   "native_bytes": 5648443,
+   "http": "200",
+   "bytes": 44693
+  },
+  {
+   "file": "inv164_contact_11scans.jpg",
+   "derived_from": "the 11 reduced scans above, ImageMagick montage 4 across, labelled",
+   "vision_call": "1 of 2 (LIKELY-7)"
+  },
+  {
+   "file": "inv164_scan001_003_headers.png",
+   "derived_from": "top 130 px of p001_w1000.jpg and p003_w1000.jpg, enlarged 2x, stacked",
+   "vision_call": "2 of 2 (LIKELY-7)"
+  }
+ ]
+}

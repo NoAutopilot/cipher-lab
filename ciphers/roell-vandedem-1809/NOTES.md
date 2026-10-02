@@ -106,3 +106,124 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (LIKELY-7, 2 Oct 2026)
+
+Run first because `tools/intake_gate_check.py roell-vandedem-1809` exited 1 on this missing check alone (check-solved.md
+"Required step", 28 Sept 2026). Clock read 04:24 UTC, 2 Oct 2026. WebSearch (plain web) for every query; two hits
+opened and their comment threads read (WebFetch).
+
+(a) Plain web searches, four:
+1. `Röell van Dedem 9 februari 1809 cijferschrift brief Constantinopel ontcijferd` -- nl.wikipedia F.G. van Dedem;
+   Historisch Nieuwsblad "Onze man in Constantinopel" (Van Dedem wrote coded letters "met een ingesloten cijfer");
+   the NA inventory PDFs 2.21.008.78 and 1.02.20; Van Galen's dissertation on dragomans. No decipherment.
+2. `"Legatie Turkije" 1.02.20 cijfer sleutel OR cipher key 1809` -- the 1.02.20 inventory page (inv. 17 "Sleutels
+   geheimschrift ..."); the 1.02.13 inventory (Legatie in Rusland) with "1808-1809, In cijfercode op basis van het
+   cijfer van Van Hogendorp" (inv. 226, Six van Oterleek, not digitised -- see below); a Cryptologia 46/6 (2022)
+   article on encryption in early-19th-c. Ottoman diplomatic correspondence (doi 10.1080/01611194.2021.1919943,
+   Ottoman side, not opened); noise. No decipherment.
+3. `"Roell" "Dedem" 1809 cipher letter DECODE R1469 OR "Legatie in Turkije" nomenclator` -- Bourdeau's index page
+   (already cited); de-crypt.org; nomenclator articles. No decipherment.
+4. `Van Dedem tot de Gelder ambassadeur Constantinopel 1809 geheimschrift code Croiset` -- NA 2.21.049 (Van Dedem
+   family), 2.21.006.46 (F.G. van Dedem's own papers, 1781-1818), 1.02.20 inv. 756, NNBW entry, Tor & Schmidt
+   "Per koets naar Constantinopel". No decipherment; nothing on Croiset.
+
+(b) Blog site searches, three:
+- Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Dedem Konstantinopel 1809 verschlüsselt Niederlande`):
+  **hit** -- "Top-25 der ungelösten Verschlüsselungen, Platz 10: Das Van-Gelder-Kryptogramm", Klaus Schmeh, 8 Aug
+  2013 (scienceblogs.de/klausis-krypto-kolumne/2013/08/08/...). The post describes this letter (9 Feb 1809, the
+  Dutch ambassador in Turkey Dedem van Gelder, about 1,500 numbers in a nomenclator with values to about 3,000,
+  homophones suspected), supplied by Karl de Leeuw, who "has not found" the nomenclator in a Dutch archive and
+  holds that locating it is the only realistic route. Comment thread read in full: two comments (Jayson Matix, 29
+  Jul 2014, suggests Dutch/French skills and the Testa family; leah16, 21 Apr 2016, speculates only underlined
+  numbers count) -- no solution, no key, no plaintext. Also opened: "Top-25-Krypto-Rätsel wahrscheinlich gelöst
+  (Teil 2)", 14 Jan 2016, page 2 -- covers the Konkordientag cryptogram only, no mention of Van Gelder/Dedem.
+- Cryptiana blog (`site:cryptiana.blogspot.com Dutch 1809 Dedem Constantinople cipher OR Röell`): forum root, Sept
+  2025 index, unrelated Wikipedia pages. Nothing on this letter (Tomokiyo's dutch.htm already checked, 24 Sept).
+- Cipher Mysteries (`site:ciphermysteries.com Dutch legation Constantinople 1809 cipher Dedem`): Golden Dawn,
+  Voynich, Van Heeck, d'Agapeyeff. Nothing.
+
+Verdict unchanged (`open`): no decipherment, key or plaintext of R1469/R1470 on the open web or in the three blogs'
+posts and comment threads. New facts for the folder: the letter is Schmeh's Top-25 no. 10 (2013) and came to him
+from Karl de Leeuw, so the two best-placed people have looked for the key without finding it.
+
+## LIKELY-7 (2 Oct 2026, account-4)
+
+Worker LIKELY-7-roell-vandedem-1809 (Fable 5.1), brief `.claude/briefs/runs/2026-10-02-account4-likely-phase2.md`,
+row 7 of `ciphers/_triage/likely-solves-2026-10-02.tsv`: first cheap test = the candidate period key NA 1.02.20
+inv. 164 (QUEUE.md VX-E02). Intake gate: exit 1 on the web/blog check only (section above), exit 0 after (output
+at the end of this section). Box 04:24-05:14 UTC, cap USD 7; 2 vision calls (both used), no subagents.
+
+**Availability (route: item page drupal-settings-json, CLAUDE.md hosts table).**
+`www.nationaalarchief.nl/onderzoeken/archief/1.02.20/invnr/164`: `availability: DIGITALIZED`, 78 scans, each with
+a `default` JPEG URL and an IIIF base on service.archief.nl (all 78 saved in `images/na_1.02.20_164_viewer.json`,
+no further request needed). 11 scans fetched once at 1000 px width (`images/p*_w1000.jpg`, manifest.json).
+
+**Date (finding aid, fetched once as EAD XML, `.../archief/1.02.20/download/xml`).** inv. 164 = "Sleutels
+cijferschrift, 1747, 3 katernen en enige losse stukken", subseries ELBERT DE HOCHEPIED (1747-1763). The scout's
+"undated, early-18th-c. hand" (VX-E02) is the inventory's 1747. Not the letter's decade.
+
+**What the 78 scans hold (vision call 1, contact sheet of scans 1, 3, 9, 13, 21, 39, 41, 47, 63, 68, 76;
+`images/inv164_contact_11scans.jpg`).** Scans 1-8: a large loose ruled table, red-ruled columns, numbered
+word entries (Dutch and French: "aan de", "aan den", "abandon", "abord", "adroit" ...). Scans 9-21: narrow
+alphabet strips (a-z over two-digit numbers; small substitution tables). Scan 39: a numbered list of place and
+person names. Scan 41: a marbled-cover booklet labelled "Ciffer ... 1747". Scan 47: the booklet's alphabetical
+word list (columns J, K, L, M) with numbers. Scan 63: a numeric table headed "Om te ontcijfferen". Scan 68: a
+nomenclator page (places, months, with numbers). Scan 76: blank ruled leaves. So: several keys of the 1747
+legation, as the inventory says.
+
+**Range of the large table (vision call 2, header strips of scans 1 and 3 enlarged 2x,
+`images/inv164_scan001_003_headers.png`).** Scan 1's columns are based 100, 200 ... 900 (entries 1-9 at the
+top, then 10, 100 "ad", 200, 310, 410, ...); scan 3's columns are headed 2000, 2100, 2200 ... 2900 ("plein",
+"plus", "poli-", "post", "pour" ... in the 2000s). The table is a one-part (alphabetical = numeric) word code of
+about 3,000 entries, undated within a bundle the inventory dates 1747. The letter's groups (Bourdeau's parse of
+the DECODE transcription, now on disk in `decode_transcription/`): 2,585 groups, 931 distinct, max 3264; 45.6%
+above 900, 14.1% above 1500, 3.3% above 2500. The range is compatible, which the scout's "~900 entries" reading
+would not have been. Bourdeau's argument that the code "is not one-part" rests on the frequent groups being
+spread 35-2920; in a 3,000-entry alphabetical word code the French function words (de, et, la, le, pour, que,
+vous ...) are spread across the alphabet too, so that spread does not exclude this table. What does count
+against it: 62 years between the bundle's date and the letter, and the heavy homophony Bourdeau measured (no
+group above 1%).
+
+**Key application: NOT run.** The row's test ("transcribe the key table, apply with decode_key.py vs shuffled
+keys") needs the ~3,000-entry table read from 8 native scans (2 blind passes + reconciliation, ~17 vision calls),
+beyond this brief's 2. No control was run because there is no key to shuffle. Grade counts: H 0, C 0, S 0, M 0,
+I 0. Status stays `open`.
+
+**Result of the first cheap test: NON-TEST on the row's premise** (inv. 164 is 1747, not 1809, by the archive's
+own inventory), with one new fact that keeps it worth a second look (range match of the large table).
+
+**Other key items in 1.02.20 (from the EAD, 0 further requests), all digitised (dao present), none in a series
+after 1785:** inv. 17 "Sleutels geheimschrift, gebruikt bij correspondentie met de Staten-Generaal en
+Nederlandse diplomaten, z.d." (Colyer, 1682-1725); inv. 628 "Sleutel geheimschrift. 1764" (Dedel 1765-68); inv.
+686 "Sleutel geheimschrift. z.d." (De Weiler 1768-76); inv. 785 "Sleutel geheimschrift. z.d." (Kroll 1784-85, Van
+Dedem's immediate predecessor). The Van Dedem (1785-1793), Van Dedem (2) and Testa (1808-1810) series carry no
+key item. So the 1809 code is not among the legation archive's own keys; it would have been issued by the
+ministry in 1808-09 (Croiset), and the ministry's side is where to look: NA 2.01.08 (Buitenlandse Zaken
+1795-1813) finding aid, grep "cijfer"/"Croiset" (1 request, EAD xml); Croiset's letters in Röell's papers
+2.21.008.78 (not online, Bourdeau). A same-ministry same-era sibling: NA 1.02.13 (Legatie in Rusland) inv. 226,
+Six van Oterleek's minutes 1808-1809 "In cijfercode op basis van het cijfer van Van Hogendorp", with inv. 228
+"Cijfer, 1803 aug. 5" -- neither digitised (EAD, no dao), so a different code anyway (Van Hogendorp's 1803
+cipher), noted for the design prior only.
+
+**Correction carried from Bourdeau (21 Sept 2026) into this folder:** 1.02.20 inv. 804 (174 scans, confirmed
+"Yes" copy-free by scARCH on 24 Sept) holds clear Dutch copies of the legation's letters to the States General
+1785-93, not the cipher pages; the real NA location of R1469/R1470 is unknown, and DECODE's images are
+account-gated (sources/decode/NOTES.md). The folder's `images` are therefore of the candidate key, not of the
+letter. Language: French per DECODE and per the one clear word "Monsieur"; the row's "judge nl" is replaced by
+`fr1810` in the spec (era-matched, 1805-10 official French).
+
+**Requests this pass:** www.nationaalarchief.nl 3 (item page 164, EAD 1.02.20, EAD 1.02.13); service.archief.nl 11
+(IIIF, 1.6 s apart, all HTTP 200 image/jpeg); raw.githubusercontent.com 7 (Bourdeau NOTES.md, R1469/R1470
+groups, parse.py; three 404 probes for file names); scienceblogs.de 2 (WebFetch); WebSearch 7. 0 DECODE requests.
+
+**Next step (priced; a worker with its own vision budget):** crib-position test of the large inv. 164 table,
+~USD 8: region-crop the 10 column bases of each of scans 1, 3, 5, 7 at native width (4 IIIF requests, local crops),
+read the numbers of ~20 French function words and the column bases (~12 vision calls on crops), then compare
+those numbers' frequency in the letter with 20 shuffled group lists; a hit (the function-word numbers ranking
+in the letter's top decile) licenses the full transcription (~USD 35-40, 8 scans x 2 passes + reconciliation,
+Usage 6 per-pass pricing) and decode_key.py vs 20 shuffled keys; a miss closes inv. 164 with a control-backed
+negative. Independent of that: the NA 2.01.08 EAD grep for the ministry's 1808-09 code (~USD 1).
+
+Intake gate after this pass (`python3 tools/intake_gate_check.py roell-vandedem-1809`, 04:33 UTC 2 Oct 2026):
+`roell-vandedem-1809: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
