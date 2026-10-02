@@ -780,4 +780,53 @@ question with them -- about 20 line crops, one reading pass plus one blind check
 blind pass over all B/C1 crops to replace this worker's single-reader grades with a reconciled figure, ~$2;
 (d) build or select an era-matched early-17th-century Spanish corpus for the judge (rule 3, es17c/pt18 lessons) before
 reading the judge FAIL as a verdict on the text, ~$2; (c) the print check on Vanegas / Sigüença / Pamplona / Mattheo de
-Burgos, 1605-1606, before any sentence about this reading leaves the repository.
+Burgos, 1605-1606, before any sentence about this reading leaves the repository. [done A2-OLD2, 2 Oct 2026, section 9:
+no print of this letter found by tools/print_check.py; rule-7 re-derivation OK; verifier flagged. Remaining cheapest:
+(a'') ~$2, then (d) ~$2, then (a') ~$4.]
+
+## 9. A2-OLD2, 2 Oct 2026: rule-7 re-derivation and print check on blocks B/C1 -- both pass; verifier wanted; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-02-acct2-a2-old2.md` (LANE-A2PUSH, account 2). Only these two steps.
+
+Intake gate (`python3 tools/intake_gate_check.py na-oldenbarnevelt-2442-1605`, 2 Oct 2026 23:43 UTC):
+```
+na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+
+**Rule-7 re-derivation (fresh session, spec + key + transcription only).**
+`python3 scripts/apply_key.py digit_key.json ciphertext.tsv --overrides overrides.tsv --out reading.txt --tokens reading_tokens.tsv --meta reading_meta.txt --check`
+-> `OK: reading.txt matches a fresh decode` (exit 0). A second, independent regeneration into the scratchpad (no
+`--check`) was byte-identical to the committed `reading.txt`, `reading_tokens.tsv` and `reading_meta.txt`. Difference
+from the committed reading: 0 tokens (the M-graded tolerance of rule 7 is not used). Inputs: `ciphertext.tsv` as of
+commit cb9505cb (A2-OLD's passD B/C1 rows). This re-derives the decode from the transcription; it does not re-read the
+image (the single-reader caveat of section 8 stands; step (a'') addresses it).
+
+**Print check** (`python3 tools/print_check.py ciphers/na-oldenbarnevelt-2442-1605 --phrases phrases.txt --sources sources.tsv
+--max-requests 120 --delay 1.6`, 2 Oct 2026 23:43-23:50 UTC). 13 phrases (`phrases.txt`: eleven 4-9-word phrases from B/C1
+as decoded, two name clusters Vanegas/Sigüença/Pamplona and Mattheo de Burgos/Vanegas); listed sources (`sources.tsv`):
+IA `correspondancede0000unse_m5g7` (Lonchay & Cuvelier I), two OpenAlex and one CrossRef keyword searches; plus the
+unasked IA full-text, Google Books and OpenAlex runs. Output: `print-check.tsv`, `print-check-hosts.tsv`.
+- Lonchay & Cuvelier I (djvu text, exact + proximity): **no hits** on all 13 phrases.
+- IA full-text over all items: no hits except "conforme a los tiempos" (719 items; a stock phrase, unrelated items).
+- Google Books: the only exact-phrase-length hit, "se lamenta de uer los tiempos que corren" -> `5aq8oHRVz3EC`
+  *Primer acto* (1997), checked by snippet: a scattered-word match in a modern theatre journal, not this text. The other
+  phrase hits (36-1214 volumes) are loose word matches (dictionaries, Lope de Vega, modern law); none shows the letter.
+  "obispo de Siguença Vanegas Pamplona" -> Gil González Dávila, *Teatro eclesiástico* (1645; `yTtSAAAAcAAJ` and copies),
+  snippet "... Vanegas Obispo de Pamplona, y Siguença, murio electo Presidente de Castilla" -- **context, not a print of
+  the letter**: it corroborates that a don Antonio Vanegas held Pamplona and then Sigüenza, which fits the "pesame delo
+  de Siguença" and the A-block names (section 7) at a 1605-1606 date. Also listed: *Historia de los obispos de Pamplona*
+  (1979, `rFBSAQAAIAAJ`) on the Mattheo de Burgos/Vanegas query, not opened (no snippet of the letter).
+- OpenAlex/CrossRef keyword searches: no item about this letter (top hits generic; one Matelieff-to-Oldenbarnevelt
+  letter of 1608 is a different document).
+- Semantic Scholar: HTTP 429 on the first call, not retried (good-citizen rule); logged as unreachable.
+Requests per host: archive.org 1, be-api.us.archive.org 13, www.googleapis.com 15 (13 + 2 snippet checks),
+api.openalex.org 15, api.crossref.org 3, api.semanticscholar.org 1 (429).
+
+Report: not found in print by this method on 2 Oct 2026 (a search result, not a novelty verdict; rule 10). Both
+pre-verifier steps pass; a ROOM.md `flag VERIFIER WANTED` line was posted for blocks B/C1. Grade counts unchanged
+(whole letter S=246, M=17, I=23 of 286; no H or C: a cryptanalytic result, rule 4). Judge unchanged (FAIL, section 8).
+
+**Next steps, cheapest first (after A2-OLD2):** verifier session on B/C1 (rule 10, separate session); (a'') second full
+blind pass over B/C1 crops, ~$2; (d) era-matched early-17th-century Spanish judge corpus, ~$2; (a') crop-and-read pass on
+blocks A and C2, ~$4.
