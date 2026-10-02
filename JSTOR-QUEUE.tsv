@@ -142,3 +142,9 @@ ciphers/nevers-birago-fr3251-1572	"Birago" AND 1572 AND (Nevers OR Saluzzo OR Sa
 ciphers/nevers-birago-fr3251-1572	"lettere inhibitorie al gran Comendatore"	2026-10-02	queued	
 ciphers/nevers-birago-fr3251-1572	"Birago" AND "Nevers" AND 1572 AND (cipher OR chiffre OR cifra)	2026-10-02	queued	
 ciphers/nevers-birago-fr3251-1572	"procedere ordinario di chi"	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("febbraio 1572" OR "février 1572" OR "Coconato") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"andarsi a consultare"	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("agosto 1572" OR "août 1572" OR "Sadres") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"baron de Sadres"	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("ottobre 1572" OR "octobre 1572") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"il capitano Scipione" AND Saluzzo	2026-10-02	queued	

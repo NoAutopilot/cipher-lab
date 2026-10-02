@@ -675,3 +675,77 @@ googleapis.com 6 (1 x 503, not retried), api.openalex.org 1, api.semanticscholar
 
 SECOND-OPINIONS-QUEUE.tsv: row `SO-NEVBIR-86` filed in this session (N3, CLAUDE.md "Operating model"), prompt
 `second-opinions/PROMPT-chatgpt-no86.md`.
+
+---
+
+# Second audit (AUDIT2-NEVBIR, 2 Oct 2026): nos.71, 86, 90
+
+Verifier: parent worker AUDIT2-NEVBIR (for the account-3 orchestrator), a session separate from every solver (NEVBIR-138,
+-174V-A/B, -184, -185) and every first verifier (VERIFY-NEVBIR-139V, -86, -184). Brief
+`.claude/briefs/runs/2026-10-02-acct3-audit2-nevbir.md`. Clock read with `date -u` at 20:12 and 20:22 UTC, 2 Oct 2026.
+Claims under audit: the N3 sections above for no.71 (f.139v), no.86 (27 Aug 1572) and no.90 (f.184r), plus NEVBIR-185's
+f.184v foot + f.185r lines 1-8 of no.90 (NOTES.md, never audited before this section). Task: find each letter's plaintext or
+decipherment in print. Nothing was decoded here.
+
+## Search log (this session)
+
+| family | searched | result |
+|---|---|---|
+| (b) recipient's edition, **vol. 2** | Gomberville, *Les Mémoires de Monsieur le duc de Nevers* (Paris 1665), **Partie 2 located**: Gallica `bpt6k9738856z` (968 views; OAIRecord title "... Partie 2"), found by SRU `dc.title all "memoires duc de Nevers" and dc.title all "partie 2"` (the first audits' SRU queries returned only vol. 1's two scans). Gallica ContentSearch inside it: Birague 4, Birago 0, Lodovico 8, Ludovic 0, Saluces 11, Saluce 11, Saluzzo 0, 1572 1, Sadres 0, Voluera 0, Cocinato 0, Coconato (HTTP 500, not retried), Carmagnolle 3, Scipion 0, Scipione 0, Sanfre/Sanfrè 0, Coconas 0, commendatore 0, "Aoust 1572" 37, "Octobre 1572" 21, "Feurier 1572" 37 (loose matches, top 6 read each) | **no Birago letter of 1572.** The 4 Birague hits are Chancellor René de Birague (PAG_76, 104), Sacremore Birague (PAG_99), and a later request about "feu M. de Birague" (PAG_439). Seven of the 8 Lodovico hits are Lodovico Gonzaga, the duke's own name or signature; the eighth (PAG_429) shows no name in its snippet and is a letter to the king. The Saluces hits are the 1588-1601 marquisate question; the one 1572 hit is the St Bartholomew (PAG_66). OCR positive control: the same search finds "Birague" and "Lodovico" signatures, so a signed "Lodovico Birago" letter would be expected to show |
+| (b) vol. 1, extra terms | `bpt6k6435941k` ContentSearch: Birago 0, Scipione 1 (Scipio Africanus), Coconas 4 (La Mole and Coconnas, 1574), commendatore 0, Sanfrè 0, "Octobre 1572" / "Feurier 1572" (top 6 read: 1574 restitutions of Savigliano, later letters) | adds nothing to VERIFY-NEVBIR-86's vol. 1 result |
+| (b) court correspondence | *Lettres de Catherine de Médicis* vol. 4 (1570-74), IA `lettresdecatheri04cathuoft` full `_djvu.txt` grepped: Birague 6 | five are René de Birague; one names "Ludovic de Birague" in command of the marquisate of Saluces after 24 Aug 1572. None is a letter or summary of a Birago-Nevers letter |
+| (c), (e) phrase search | `tools/print_check.py` on 12 decoded phrases (`phrases.txt`, nos.71/86/90) + `sources.tsv` (BnF catalogue IA item, two OpenAlex and one CrossRef keyword sets): 66 rows (`print-check.tsv`, `print-check-hosts.tsv`); IA be-api fts once more for 3 phrases that answered 502, plus `"Birago" "Nevers" Saluzzo 1572` (2168 loose items, top 6: Savio, BnF catalogue, Vester *Renaissance dynasticism*, Ricotti) | no hit carries any of these letters. Google Books hits are loose matches, unrelated (1589-1878 devotional, legal, dictionaries); "baron de sadres" hits only the Salazar y Castro index (a 1558 letter, as VERIFY-NEVBIR-86 found). IA fts for "il cocinato", "quanto gli fa che" and "il capitano scipione" answered 502 twice: **unreachable** |
+| (g) scholarship, open indexes | OpenAlex (keyed): "Ludovico Birago" (79), "Lodovico Birago" (29), "Birago Carmagnola Saluzzo" (2), "Tomokiyo cipher Nevers" (9), plus print_check's 16 calls; Semantic Scholar (keyed): "Lodovico Birago", "Birago Nevers", "Tomokiyo Nevers cipher" answered; "Ludovico Birago Saluzzo" and 7 print_check phrase calls 429; CrossRef: "Lodovico Birago", "Ludovico Birago Nevers" + print_check's 3; HAL API: "Birago Nevers", "Lodovico Birago", "Ludovico Birago", "Birague Saluces 1572", "Tomokiyo Nevers chiffre" (0 each), "Birague" (2), "Birago" (11); Persée search: `Birago Nevers` (top 10 read), `"Birago" "Nevers"`, `"Lodovico Birago"` (0) | nothing on the 1572 Birago-Nevers letters. The nearest are Tomokiyo's Nevers 1592 digit-cipher paper (another letter, another key) and the 2026 *Cryptologia* DescryptTool paper (abstract names no Nevers or Birago item) |
+| (g) Italian biography | *Dizionario Biografico degli Italiani*, "Lodovico Birago", treccani.it by curl and by `tools/browser_fetch.js` | **unreachable**: the page body renders no text to either route. The first audits saw the DBI only as a Google Books listing |
+| (g) JSTOR | six rows appended to `JSTOR-QUEUE.tsv`, family (i) and (ii) for each letter: Birago/Birague + Nevers + month 1572 (or Coconato, Sadres) AND a cipher keyword; and the bare phrases "andarsi a consultare", "baron de Sadres", "il capitano Scipione" AND Saluzzo | queued; does not block N3 or N4 |
+| (a), (d), (f), DECODE | not repeated: the first audits' Tomokiyo, BnF catalogue, Gallica slip checks, solver-repo clones and DECODE mirror are taken as logged | -- |
+
+Phrases file note: two lines first written to `phrases.txt` were composed from word breaks, not copied from the decoded strings
+("francesco gabaleone", "molti stoditi et dubitando"). They were removed with their rows after the run. Neither matched a
+relevant print anyway.
+
+Requests: gallica.bnf.fr 37 (4 SRU, 32 ContentSearch, 1 OAIRecord; one 500, not retried), archive.org 3 (2 advancedsearch, 1
+djvu.txt), be-api.us.archive.org 18, googleapis.com 14, api.openalex.org 22, api.semanticscholar.org 11 (8 x 429), api.crossref.org
+5, api.archives-ouvertes.fr 8, persee.fr 3, treccani.it 3. No credentials printed.
+
+## Verdict
+
+| item | class | key | text | why |
+|---|---|---|---|---|
+| no.71, f.139v foot, 161 signs (Birago to Nevers, Saluzzo, 7 Feb 1572) | **N4** (was N3) | published (Tomokiyo's 1572 table; T42=m fitted by us) | not known | both volumes of the 1665 Mémoires were now searched inside, with the names' OCR controls answering, and the open indexes, Catherine de Médicis vol. 4, IA and Google Books phrase searches found nothing. Internal or unpublished work is not excluded |
+| no.86, 759 signs, ff.174r-175v (Saluzzo, 27 Aug 1572) | **N4** (was N3) | published | not known | same; vol. 2 was the gap VERIFY-NEVBIR-86 named |
+| no.90, f.184r, 224 signs (Saluzzo, 2 Oct 1572) | **N4** (was N3) | published (T42 absent from no.90) | not known | same |
+| no.90, f.184v foot + f.185r L01-08, 330 signs (NEVBIR-185) | **N4** (this is its *first* audit) | published | not known | no slip on canvases 187-191 (VERIFY-NEVBIR-184's look, which covered canvas 189). NEVBIR-185's own native look at canvas 189 found the faint marks over f.185r line 19 to be show-through. The searches above cover the whole letter. A second audit of this portion is still owed (Outreach gate 2) |
+| no.90, f.185r L11-14 and L17-28, f.185v run | not classed | -- | -- | unread |
+
+Not N5: the BnF and no specialist was asked. The readings are unchanged and are not judged here. All four stay cryptanalytic,
+H 0 C 0, judge FAIL, fragmentary, as the first audits' safe sentences say.
+
+**Safe sentences (N4).** Each carries "no prior decipherment located" and the reading's weakness:
+- no.71: "Applying Tomokiyo's published 1572 Nevers-Birago key (one sign value fitted by us) to a value-blind transcription
+  of the five cipher lines of Birago's letter no.71 (BnF fr.3251, f.139v), we get a partial reading (about 116 of 161 signs);
+  no prior decipherment located after searching both volumes of the 1665 *Mémoires de Monsieur le duc de Nevers*, Tomokiyo's
+  catalogue, the BnF catalogue, the solver repositories and the open scholarly indexes, 2 Oct 2026."
+- no.86: "Using Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, we read the cipher of Birago's letter of
+  27 August 1572 (BnF fr.3251, no.86, 759 signs) from a blind transcription. The reading is fragmentary and fails our language
+  judge. No prior decipherment located after the same search, 2 Oct 2026."
+- no.90: "Under the same published key we read 554 of the cipher signs of Birago's letter of 2 October 1572 (BnF fr.3251,
+  no.90, ff.184r-185r; the rest unread), fragmentary, judge FAIL. No prior decipherment located after the same search,
+  2 Oct 2026."
+
+**Unsafe.** "Deciphered" without "fragmentary"/"partial". Any use of first, new, previously unread or unpublished. Calling the key
+ours: it is Tomokiyo's.
+
+## Postmortem and corrections
+
+1. **The vol. 2 gap was a search-query gap.** All three first audits stopped at N3 for want of Mémoires vol. 2. It was on
+   Gallica the whole time under its own ark. The SRU queries used matched only the "Partie 1" record title. Next time, query
+   SRU with the part number (`dc.title all "partie 2"`), or read the set's `dc.relation`.
+2. **No over-claim found** in the three first-audit sections, the NEVBIR-185 NOTES section or the three SO prompts (grep
+   first/new/novel/unread/previously/unpublished/solved/cracked/never: ordinal "first" and "unread" for this letter's own
+   unread lines only).
+3. **Second-opinion row.** `SO-NEVBIR-F184` (queued, unanswered) described f.184r only. Its prompt now also names the
+   NEVBIR-185 portion's fragments, so the runner checks the whole read text (rule 10 propagation). The class is not a field
+   in the queue, so nothing else changed there. No new row: the letter-level questions already cover the portion.
+4. **Still owed:** a second audit of the NEVBIR-185 portion (this was its first). The JSTOR rows. Semantic Scholar's 429'd
+   calls. The DBI entry, read by a person or a local runner if wanted. None of these blocks N4.

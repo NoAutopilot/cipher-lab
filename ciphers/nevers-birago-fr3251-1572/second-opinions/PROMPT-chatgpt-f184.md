@@ -13,7 +13,11 @@ THE ITEM
   no.87 of the same volume (https://cryptiana.web.fc2.com/code/nevers.htm, section BnF fr.3251).
 - On f.184r only, the printed key gives a fragmentary reading from a value-blind transcription (key beats 200 of
   200 shuffled keys, z about 3.6-4.2): fragments such as "con il conte di", "articoli", "mandato da lui",
-  "fortificarsi" and "quello il capitano Scipione Carego[?]". Nothing more is claimed.
+  "fortificarsi" and "quello il capitano Scipione Carego[?]".
+- Added 2 Oct 2026 (AUDIT2-NEVBIR): the same key also gives a fragmentary reading of the cipher at the foot of f.184v and
+  lines 1-8 of f.185r (330 signs), with fragments such as "l'esecutione", "inteso", "dubitan[o]", "serraglio in
+  favore de[gli] ugonotti", "ha presentato le lettere", "cosa alcuna", "provisione" and "Mons. di Sanfre". The rest
+  of f.185r and f.185v is unread. Nothing more is claimed.
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/nevers-birago-fr3251-1572/AUDIT.md
 
 QUESTIONS
