@@ -196,6 +196,19 @@ LIKELY-1 (fr.4715 Vieuville sub-pool), -2 (ceppo-nevers), -3 (nevers-birago-1572
 (fr3151-noailles), -8 (jan-van-nassau 5549), GAPS3 janssens + schonenberg, GAPS2 suriname + matignon.
 hub-seed/SUCCESSOR-PROMPT-account4.md written (parent at about 690k context; hand-over at 800k+).
 
+**Check-in 6 (04:2x UTC 2 Oct):** 11 workers done and ledgered (USD 69.8 + one unlisted; 58 workers about 340 total).
+Likely-solves phase 2: **nevers-birago-fr3251-1572 moved** -- the printed 1572 key reads its own witness leaf rank 1 of
+201 shuffled keys (z 4.53, power control 20/20) with an Italian decode and a judge near-miss (-1.068 vs real_p05 -0.927,
+shuffles -1.66..-1.77); status partial, NEAR.md row and status.json near entry added; next f.178v L11-L23. fr4715-vieuville-
+pool created (no.44 f.67r is mostly clear French, 28 cipher groups; one run reads 'ausaluat' at H; rank test a non-test at
+N=8). jan-van-nassau 5549: key right on the postscript (0.842 vs shuffle max 0.340), body a control-backed negative under
+all three keys; the de16 judge is void on Groen's own prose. ceppo-nevers: non-job (already counted); decode-1162 and
+fr3151-noailles: non-tests (no key / instrument fails its own control). Janssens leaf 188 now C 77 / M 11 / U 75.
+Suriname: 4.VEL 2038 is the plain plan at 2039's size and scale, the crib. Matignon: Bourdeau's HEAD key carries no new
+value. GAPS3-na-schonenberg stuck at a permission prompt after USD 6.22 (X). Spawned 04:2x: CLOSER-3, GAPS-nevers-birago-2,
+GAPS2-pro3055-clinton, LIKELY-7 roell-vandedem, LIKELY-9 intercepted-royalist. Parent at about 720k context: hand-over at
+the next check-in via hub-seed/SUCCESSOR-PROMPT-account4.md.
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.

@@ -3282,6 +3282,13 @@
    "next": "ASKS 79: new BnF capture of f.81r (REQUEST.md), in front and now the only route for the reader (digits about 40 px natively); EVIDENCE-PACKET.md is the scoring rule for any outside prototype",
    "lane": "parent 7m (SOLVE)",
    "touched": "27 Sept 2026 16:13"
+  },
+  {
+   "target": "nevers-birago-fr3251-1572",
+   "title": "Nevers-Birago 1572: printed key reads the witness leaf rank 1/201 (z 4.53) with an Italian decode; judge near-miss (-1.068 vs real_p05 -0.927)",
+   "next": "f.178v L11-L23 the same way, then ff.138-184 under the witness gate",
+   "lane": "account-4 parent",
+   "touched": "2 Oct 2026 04:2x"
   }
  ]
 }
