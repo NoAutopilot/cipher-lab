@@ -106,3 +106,8 @@ NEVBIR-184	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-letter.md	Fable	5	5
 OUT-CHECK-MERCY-REPLY2	other	.claude/briefs/runs/2026-10-02-acct3-out-check-mercy-reply2.md	Opus 5.5	3	30	queued	2026-10-02 14:24	gate 7 on the revised Bourdeau reply (after MERCY-REPLY-UPD)
 VERIFY-NEVBIR-139V	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-139v.md	Fable	5	50	queued	2026-10-02 15:47	verifier: nevers-birago-fr3251-1572 139V
 VERIFY-NEVBIR-152	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-152.md	Fable	5	50	queued	2026-10-02 15:47	verifier: nevers-birago-fr3251-1572 152
+VERIFY-NEVBIR-184	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-184.md	Fable	5	50	queued	2026-10-02 17:09	verifier: nevers-birago-fr3251-1572 VERIFY-NEVBIR-184
+VERIFY-NEVBIR-82	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-82.md	Fable	3	50	queued	2026-10-02 17:09	verifier: nevers-birago-fr3251-1572 VERIFY-NEVBIR-82
+NEVBIR-174V-A	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-174v.md	Fable	5	55	queued	2026-10-02 17:09	nevers-birago no.86 f.174v HALF A
+NEVBIR-174V-B	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-174v.md	Fable	5	55	queued	2026-10-02 17:09	nevers-birago no.86 f.174v HALF B + f.175r head + f.175v
+NEVBIR-POOL	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-pool.md	Fable	3	35	queued	2026-10-02 17:09	pooled joint shuffled-key test of no.73/85/86 short runs
