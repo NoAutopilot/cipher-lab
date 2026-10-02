@@ -156,6 +156,20 @@ In flight (account 3):
    and a solver-repo diff (Bourdeau, Aymeloglu) every 1-2 days (briefs: .claude/briefs/runs/2026-10-02-acct3-solverdiff-*.md).
 4. Account 4 was nominated (ROOM 2 Oct 00:5x) for the cheapest next steps of the other 13 partials and the split-check hits.
 
+**Check-in 3 (01:5x UTC 2 Oct):** 7 more workers done and ledgered (USD 35.3; total 25 workers about 125.6): six more
+gates pass (ormond-arran, esp318, decode-2754, mccormick, sp90-raby, ra-crusenstolpe; 0 prior readings found; mccormick's
+check quotes 18 claimed readings, none verified, two items for a verifier to cite); RIK-CRIBS is a control-backed negative
+(the leaf's clear-Latin phrases place nowhere at err 0 against a design-matched positive control that places its own
+phrase rank 1). Account-3's finish-or-blocker pass landed 01:26 UTC (25 partial sections, tools/gaps_check.py, split-check
+TSV, 1,694 glued-digit hits, 1,094 of them castelcicala's); account 2 holds 12 partials as NEXT-* rows, account-4 takes
+the other 12 (matignon-mayenne-1586, moray-wood-1568, mornington-1798, na-janssens-java-1811, na-schonenberg-1678-1716,
+na-suriname-map-1781, pollaky-1865-1875, pro3055-clinton-1779, rah-morillo-1817, spinelli-beinecke-c1515,
+vanbeuningen-dewitt-1657, wellington-maitland-1812) through one generic brief
+(`.claude/briefs/runs/2026-10-02-account4-gaps-step.md`: gate first, then the Verdict line's cheapest step, section
+updated in place, gaps_check pasted). SPEC-BOOK writes the three already-run first tests into their specs. Account-4 is
+the live standby in parent.md "Orchestrator fallback chain" (takeover after 150 min without an account-3 orchestrator
+line or on HANDOFF; account-3's last line 01:26 UTC; its handoff section lists what to carry).
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
