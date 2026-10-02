@@ -169,18 +169,17 @@ U 5, I 0 (66), unchanged.
 Status word stays **blocked** (internal: sign identification), the blocker now measured. Spec written:
 `specs/fr3986-nevers-f198.json` with `cheap_test_done`. HYPOTHESES.md row added.
 
-## Remaining gaps
+## Remaining gaps (LIKELY-6, 2 Oct 2026)
+Read so far: 0 of 66 drafted signs read to a continuous text; the held-out atlas test reads 19/28 = 67.9% on the neater leaf 298 (atlas_heldout/score.txt), under the 80% gate
+- f.198 cipher runs (66 signs, 9 runs) - blocker: not-attempted; the atlas held-out gate failed (67.9% vs 80%, HYPOTHESES.md row of 2 Oct 2026) so the row's f.198 passes were not run; next: extend the atlas to the eight uncovered tags `// 20 8 = L40 c r ue` from c.264's unused lines (tools/keys/key60_atlas/src/c264_region.jpg, on disk, gloss above each sign line, pairs.txt format) and re-run atlas_heldout/ with one Sonnet call, ~$8
+- web and blog check (check-solved.md required step) - blocker: not-attempted; the gate did not test for it because `blocked` is terminal, owed before any open/partial verdict; next: the four web searches and three blog site searches logged under "## Web and blog check", ~$1
 
-- [ ] Atlas coverage: the eight tags `// 20 8 = L40 c r ue` have no leaf-264 exemplar. Next: align c.264's unused lines
-  (L4 onward of `tools/keys/key60_atlas/src/c264_region.jpg`, on disk, no fetch; gloss above each sign line) to add
-  them, same pairs.txt format; ~USD 6-8 on the strongest model (G's 80 pairs cost about USD 8), then re-run
-  `atlas_heldout/` with one Sonnet call (~USD 1.5) against the same 28 answers. Gate 80%. New material, so not the
-  retired step.
-- [retired] a third blind pass on a Revol copy (f.198, f.176) with the atlas as it stands -- instrument: tools/keys/key60_atlas
-  at 52+28 pairs; reopened only by the coverage step above.
-- [ ] Web and blog check (check-solved.md required step) before any `open`/`partial` verdict.
-
-## Escalation
-
-Internal gaps only; nothing waits on a person. Verdict: **keep going** -- the coverage step above is the next job, then
-the row's f.198 passes (3 vision calls) only on a held-out rate of 80% or better.
+## Escalation (LIKELY-6, 2 Oct 2026)
+- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source; leaf 298 used as the held-out answer key this pass; c.264's lower lines still unused (the next step above)
+- [n/a] clear-pages: the leaf is itself a clear-French continuation with inline cipher runs; no separate clear copy of this letter is known (Bourdeau's f.157v clear copy is a different letter)
+- [x] known-keys: key no.60 is in hand (key.tsv) and applied mechanically on 24 Sept 2026; the key is not the blocker
+- [x] print: Gomberville seconde partie, Berger de Xivrey vol.3 and Memoires de la Ligue v.5-6 read for the letter on 24 Sept 2026, absent; the "Octobre 1593" date-phrase search in Gomberville is still owed with the web check
+- [ ] key-rebuild: the copyist's sign-form atlas is the rebuild this hand needs; planned step: coverage of the eight uncovered tags from c.264's unused lines, then the held-out re-run (gate 80%)
+- [x] image-check: canvas 397 = f.198 confirmed by the facing stamp on canvas 398 (24 Sept 2026); native region on disk, line crops in images/
+- [retired] retry: a third blind pass on a Revol copy against the atlas as it stands (instrument: tools/keys/key60_atlas at 52+28 pairs; F1/F2 without it, G2 with it on f.176, this held-out at 67.9%) -- reopened only by the coverage step above
+Verdict: keep going: 2 internal gaps; cheapest next: atlas coverage of the eight uncovered tags from c.264's unused lines + held-out re-run, ~$8
