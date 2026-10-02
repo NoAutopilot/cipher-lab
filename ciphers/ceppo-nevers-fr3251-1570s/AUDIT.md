@@ -851,3 +851,120 @@ Unsafe: "f.87 deciphered"; "secretamente" (the sign after "secre" reads z); any 
   test of "un giorno auanti" / "ne ando secre-amente". Named next step, cheap: fetch Gallica btv1b9060248g at f.89 and read.
 - Not N4 for either letter while the two Saluzzo monographs (Boltanski 2006; *Il Marchesato di Saluzzo e la Riforma
   protestante*, 1960) are unread in full.
+
+# AUDIT: f.21v look-alike settlements of CEPPO-SPLITS (VERIFY-CEPPO-SPLITS, 2 Oct 2026)
+
+Verifier: worker VERIFY-CEPPO-SPLITS (account 2 for the account-3 orchestrator, Opus 5.5), a session separate from the
+solver CEPPO-SPLITS (ffc4cb30). Brief `.claude/briefs/runs/2026-10-02-acct3-verify-ceppo-splits.md`. Clock read 21:49 UTC
+at start. No decoding beyond re-derivation. No Gallica request and no subagent: every image was already on disk.
+Evidence crops are in `harvest/f21v/lookalike/verify/`.
+
+## 1. Do the glossed shapes match the f.21v tiles?
+
+**Witness (fr.3252 f.36, same key and same hand, on disk).**
+- Diagonal slash with one dot on each side and no crossbar: on f.36v L1 (`witness_f36/cited/v36top_L01_s1.jpg`, `_s2.jpg`)
+  it stands at the two n's of "parlandone" and the n of "signor". The plaintext forces n there whatever the gloss
+  letter looks like. At this scale the clerk's n and r glosses are hard to tell apart, which is why HARVEST-D left
+  the sign as "S30/S49". So the n rests on the word, not on the gloss letter alone. Either way it is a letter and
+  not a null, which is the S49/S73 question.
+- Caret with a dot between the legs and a pointed apex: f.36r cipher line 3 (`verify/f36r_L3_dottedcaret_n_curledlambda_a_slash.jpg`,
+  re-cut by this verifier from `witness_f36/c37_f36r_cipher.jpg`) is glossed with the clerk's n. Two signs later, a
+  lambda with a curled top and no dot is glossed with the clerk's "^"-shaped a. That "^" is the same form glossed a over
+  S45 and S80 in "parlandone", so the a reading is backed by the word.
+- What this verifier did not reproduce: the solver's figure of 5 + 3 + 1 glossed instances. One instance of each caret
+  form was re-read here, on f.36r line 3. The f.36v L4 caret was not re-read.
+
+**f.21v tiles** (`harvest/f21v/lookalike/crops/`, read by eye at 4x):
+
+| tile | form seen by this verifier | settled | agree? |
+|---|---|---|---|
+| L01.15, L03.7, L03.10, L03.14 | diagonal slash, a dot each side, no crossbar (the same form as the "parlandone" n's) | S49 n | yes, 4/4 |
+| L09.6, L09.17 | pointed caret, clear pen dot between the legs | S23 n | yes |
+| L09.1 | pointed caret, small dot between the legs | S23 n | yes |
+| L07.27 | A-form (curl into a crossbar), dot to the right | S23 n | yes, on the A-form alone; the dot is outside the legs |
+| L07.10 | pointed apex, feet like L09's; the dot is faint and grey | S23 n | yes, but this is the weakest of the nine (see below) |
+
+L07.10 is the one tile where the two readings conflict. Verifier D (VERIFY-CEPPO-D2-1) read "only a faint paper speck,
+no pen dot" and took S97. At 4x this verifier sees a small grey dot inside the legs, fainter than at L09. The second
+feature also supports S23: the apex is pointed, as in every dotted caret. Three signs earlier, L07.7 (S97, both readers)
+has the curled top that the f.36r clerk glosses a. On the witness, the pointed apex goes with the dot and the curled top
+goes without it. The apex shape is used as a discriminator only on these two witness instances.
+
+**Result: 9 of 9 settlements upheld.** L07.10 is upheld on the dot and apex together, and is flagged as the weakest.
+
+## 2. Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s --check` gives "reading up to date". f.21v: I 7, M 67,
+S 188, U 5. f.11r, f.35 and f.87 are unchanged. All nine tokens are graded S in `reading_f21v_tokens.tsv` (n at each one).
+The decode.json diff in ffc4cb30 only reorders the f.21v and f.87 blocks, and f.21v keeps its exceptions file. It does
+no harm.
+
+## 3. Control at fresh seeds (rule 3)
+
+`harvest/decode_control.py f21v/passD.tsv --shuffles 200 --windows 20 --err 0.15 --extra X_THETA2=r` (`verify/control_seeds_11-13.txt`):
+
+| seed | real key | shuffles mean / max | z | rank | power (err 0.15) |
+|---|---|---|---|---|---|
+| 11 | -1.111 | -2.078 / -1.620 | 6.55 | 1/201 | 20/20, z median 8.02 |
+| 12 | -1.111 | -2.057 / -1.617 | 6.06 | 1/201 | 20/20, z median 8.12 |
+| 13 | -1.111 | -2.061 / -1.695 | 6.69 | 1/201 | 20/20, z median 7.95 |
+
+This reproduces the solver's 6.40-7.01. **Caveat (rule 3, "a control that cannot vary on the axis"):** the nine
+settlements changed confidence only, not labels. passD's labels are passC's, so this test confirms the key on the
+sequence and cannot test the settlements. The only evidence for the settlements is the shape check in section 1.
+
+Judge, pasted (unchanged; the letters did not change):
+```
+FAIL language: score=-1.136, null_p99=-1.702, real_p05=-0.931, real_median=-0.824, mode=both, N=261
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+## 4. A tenth instance the settlement did not touch: L11.17
+
+L11.17 (`verify/f21v_L11_17_dottedslash.jpg`) is the same diagonal slash with a dot on each side and no crossbar. Both
+raw passes read S73 (A at L, B at M). passC and passD keep **S73 (null)**, but verifier D took S49. CEPPO-SPLITS
+applied the shape rule only to A/B splits, so this instance was left out. If the rule holds, L11.17 is S49 (n). Its
+letter falls just before the endorsed "fa dificu[l]ta" and leaves it intact either way. This verifier does not change it
+(no decoding). Named step: either apply the rule to L11.17 or find an unglossed diagonal dotted slash in the fr.3252
+witness, which would show that Birago also writes the null S73 in this form. The rule is only as good as that second
+check. ~$1.
+
+## 5. Decision on the counts and the two fragments
+
+- **The endorsed f.21v count does not move to 188. It moves from 146 to 155.** 188 is the solver's grade: it counts
+  passC tokens where both raw passes agree at H (179) plus these nine. This audit's endorsed figure has always used the
+  stricter rule: both raw passes and the verifier's D agree at H, which gave 146. None of the nine was in the 146,
+  because each was an A/B split. On the stricter rule each now counts as "settled by a period-gloss shape, checked by a
+  second session", which gives 146 + 9 = **155 of 267**. D's choices at L01.15, L03.7, L03.10, L03.14 (S73) and L07.10
+  (S97) are overruled by the witness. Both figures, 188 (solver rule, re-derived) and 155 (verifier rule), are reproducible.
+- **"intencione" (L03.6-15): endorsed.** All ten letters are now S. The three n's rest on the dotted-slash shape, which
+  the period clerk glosses as a letter in every instance read (an unglossed null instance has not been looked for; section 4). Under the null reading the passage reads "itecioe".
+- **"auanti" (L07.7-12): endorsed with one letter M.** The n at L07.10 is S (the weakest of the nine, section 1). The
+  second a, at L07.9, is S80 at M, an S65/S80 (et/a) split, the largest open pair on f.21v. Word endorsed, a M. It is not
+  added to the safe sentence while L07.9 is M. "qua[l]che" stays I (pound sign).
+
+Grades endorsed, f.21v (267 tokens): S 155 (verifier rule), M 94, oval-as-r 8 (S on key, M on sign), I 7, U 3. H 0, C 0.
+This is a cryptanalytic result with a published key.
+
+Class unchanged: **N3**, key `published`, text `unknown`. The two fragments' letters were already in the reading that
+the 29 Sept audits searched. No new search was needed for them, and no class change follows.
+
+Safe sentence (replaces VERIFY-CEPPO-D2-2's for f.21v): "Birago's letter to Nevers of 12 Oct 1570 (BnF fr.3251 f.21v)
+reads in part with Tomokiyo's published Ceppo-Nevers key. On a value-blind transcription the key beats all 200 shuffled
+keys (z 5.7-6.6), no chance decode of 2,000 gives more than two words of six letters, and a blind reader picks the real
+decode out of 40. Passages recovered: 'intencione', 'questa carica ... di qua', 'credo le ne', 'ceder uiuendo et
+seruend', 'tanto di', 'fatto', 'fa dificu'. The letter's clear text is cited and quoted by A. Pascal, Il Marchesato di
+Saluzzo e la Riforma protestante (1960); no prior reading of its cipher passages was located (search logged in AUDIT.md,
+29 Sept 2026)."
+
+Unsafe: "f.21v deciphered"; "auanti qualche" as clean words; any continuous translation; "first", "unpublished".
+
+## For the orchestrator (VERIFY-CEPPO-SPLITS)
+
+- Verdict: **held** (9/9 settlements upheld; L07.10 weakest). Endorsed f.21v count 146 -> **155** (not 188).
+  "intencione" endorsed; "auanti" endorsed with a M. N3 unchanged.
+- PROGRESS.tsv "Birago f.21v" firm count set to 155 from this section. status.json is yours.
+- SO-CEPPO-F21V (queued) carries the older passage list. It under-claims rather than over-claims, so it was left as is.
+  Add "intencione" when you next touch the prompt.
+- Next steps: L11.17 (section 4, ~$1); then the S65/S80 settle that NOTES.md already names, which would also firm up
+  "auanti".
