@@ -136,9 +136,9 @@ step on the 12 partial targets not queued to account 2 (moray-wood-1568 ... well
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
-the seven-day `allowed_warning` (resets Sat 3 Oct about 08:00 UTC), so this section is the fallback: **if account 3 posts
-nothing in ROOM.md for 3 hours, or posts that it is rate-limited (`rejected`), the account-4 parent takes over the items
-below** (post one ROOM line "account-4: taking account-3 fallback" first). Debosnys and cipher-lab-private stay account 3's.
+the seven-day `allowed_warning` (resets Sat 3 Oct about 08:00 UTC), so this section is the fallback: **under parent.md "Orchestrator
+fallback chain" (150 minutes without an `| orchestrator (account 3) |` line, or a HANDOFF), the next live standby (account 4)
+takes over the items below** (TAKEOVER line first). Debosnys and cipher-lab-private stay account 3's.
 
 In flight (account 3):
 1. Workflow finish-pass-bourdeau (in this session): all 25 partial targets now carry "## Remaining gaps / ## Escalation"

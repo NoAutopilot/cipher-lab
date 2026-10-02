@@ -341,6 +341,20 @@ Three archive replies (Marburg 15:03, Bodleian 15:26, Adirondack 18:09 UTC) sat 
 ## Standby on account 3 (28 Sept 2026, 20:3x UTC, owner-requested)
 A standby orchestrator on account 3 (hub-seed/STANDBY-3.md) takes over if no "| orchestrator (owner account) |" ROOM line appears for 150 minutes, or on a "HANDOFF to account 3" line. So: post that ROOM line at every check-in; mirror the check-in prompt to hub-seed/CHECKIN-PROMPT.md whenever it changes; post HANDOFF when this account's rate limit reads rejected; on a TAKEOVER line newer than yours, follow the file's Handback before anything else.
 
+## Orchestrator fallback chain (owner, 2 Oct 2026 01:2x UTC; generalizes "Standby on account 3")
+There is one orchestrator at a time, on whichever account holds the role. It posts `| orchestrator (<account>) | check-in ...`
+in ROOM.md at every check-in (at least every 90 minutes while it holds the role), and `HANDOFF` when its usage reads
+`rejected` or it is about to stop. Every other account that runs a parent session is a standby in this order:
+**owner -> account 3 -> account 4** (skipping the account that holds the role; account 2 has only a dispatcher and is never
+a standby). At its own check-ins, a standby parent reads the newest orchestrator line; it takes over when that line is 150
+minutes old or older, or is a `HANDOFF`, and it is the first account after the silent one in the chain that is itself
+alive (its own last ROOM line under 150 minutes old). Takeover: post `| orchestrator (<account>) | TAKEOVER from <account>`
+first -- the earliest TAKEOVER line in ROOM.md wins and any later one stands down at once -- then read the previous holder's
+handoff section in STATUS.md and its WIP branch if it names one, run `tools/orphan_check.py`, and continue its queue. The
+silent account, when it comes back, reads the newer TAKEOVER line and stays standby until handed the role back. The
+private repository (Debosnys) is never taken over: it waits for the account that holds it. An orchestrator keeps its
+STATUS.md handoff section current enough that a standby can continue from it without the session transcript.
+
 ## Model floor (owner, 28 Sept 2026 20:3x UTC)
 The orchestrator runs on Fable; if Fable usage is out, Opus 5.5; nothing below Opus 5.5 for the orchestrator, runners or workers on any account (no Sonnet or Haiku rows in WORK-QUEUE.tsv from now on). With neither model available on any account, all work pauses until a reset; that is acceptable, a downgrade is not. The orchestrator cannot switch its own session's model: when this account has Fable again, ask the owner to switch this session with /model, or move the role per hub-seed/STANDBY-3.md.
 
