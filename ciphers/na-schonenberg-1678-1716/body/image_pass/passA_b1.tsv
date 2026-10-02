@@ -1,0 +1,51 @@
+line	pos	group_seen	gloss	conf	note
+L01	0	89	n	H
+L01	1	46	o	H
+L01	2	56	a	H
+L01	3	13	b	H
+L01	4	)6	y	H
+L01	5	60	e	H
+L01	6	(23 written in gloss row above blot, not in cipher row)	n	M	small n written above a gloss-ink 23.; the blotted group copied again; 2nd u
+L01	7	[blot]	(=pos6: n)	M	blot hides the group; the 23+n above belong to this slot
+L01	8	15	L	M	looped capital-L; 2nd d
+L01	9	3	o	H
+L01	10	45	N	M	heavy dark N, possibly overwrite; 2nd M
+L01	11	24	o	H
+L01	12	35	b	H
+L01	13	38	e	H
+L02	0	81	a	M	a large D-like curl sits to the left (flourish, not counted)
+L02	1	6	d	H
+L02	2	3)	e	H
+L02	3	16	n	H
+L02	4	89	a	M
+L02	5	10	s	M
+L02	6	50	t	M	t with crossbar on left; 2nd: stroke is a hyphen and letter is l
+L02	7	29	a	H
+L02	8	34	s	M	short sigma-like s; 2nd r
+L02	9	28	p	M
+L02	10	25	a	H
+L02	11	56	r	M
+L02	12	)1	t	H
+L02	13	95	e	H
+L02	14	10	s	H
+L02	15	94	q	H
+L02	16	)0	u	H
+L02	17	)5	e	H
+L03	0	8)	L	M	cursive capital L; 2nd S
+L03	1	12	a	H
+L03	2	59	d	H
+L03	3	60	e	H
+L03	4	[tilde]	A	M
+L03	5	55? (could be 5))	b	M	looped b; 2nd l
+L03	6	60	e	H
+L03	7	2)	r	H
+L03	8	88	m	H
+L03	9	30	u	H
+L03	10	15	d	H
+L03	11	)8	a	H
+L03	12	31? (could be 3))	d	M	d with ascender curled back; 2nd l
+L03	13	90	o	H
+L03	14	[X]	e	M
+L03	15	)2	s	H
+L03	16	51	t	H
+L03	17	60	e	H
