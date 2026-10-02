@@ -860,3 +860,48 @@ did not re-view at native resolution (unreached in this job's box).
 (d) Recipient's side -- **not found.** Villandry (Jean Breton) was secretary of finances at the French court: the
 recipient-side calendars and editions checked by the print-check and audits (LP iv(3), Le Grand, Decrue, the Catalogue
 des actes de Francois Ier IX [411], Hamon's Breton chapter) cite the letter's existence and date only, no content.
+
+## Key-image check: eh, Tb and the two crosses against the Lasry and Tomokiyo tables (A2-GRA, account 2, 2 Oct 2026)
+
+The step named at the end of the Tb/eh test section ("A key-image check against the Lasry and Tomokiyo tables is the
+next step for eh, Tb and the crosses"). Disk only, no network: Tomokiyo's table `sources/cryptiana/web/francisGramont.png`
+(reconstructed from fr.3019), Lasry's table `sources/cryptiana/web/GL/BnF_fr3071_f17.png` (fr.3071, 4 Nov 2023),
+the leaf exemplars in `atlas/atlas_f29.png`, the f.30 line crops `images/crops_f30/f30r_L04a.jpg`/`L04b.jpg` and the
+cross crops in `crops/f30r_top/`. Comparison sheets: `keyimage_check/sheet.png` (`build_sheet.py`) and
+`keyimage_check/zoom.png` (`build_zoom.py`), both regenerate from those files. One reader (this worker, by eye):
+a shape comparison, not a value test, and no control is claimed for it (rule 3 applies to the value test named below).
+Nothing in key.tsv, key_extension_f30.tsv, decode.py or the readings was changed; `decode.py --check` is unaffected.
+
+| Sign | Leaf shape(s) seen | Lasry table | Tomokiyo table | Result |
+|---|---|---|---|---|
+| eh, f.29r (3 atlas exemplars) | small closed C/G-bowl with a filled inner curl | D, row 1 (k19, the filled e-hook) | d, row 2 (same filled curl) | **D confirmed by both tables.** No T-column shape (Lasry T: m, a 2-hook; Tomokiyo t: a curled l, a 2-hook, m) resembles it. |
+| eh, f.30r (3 of its 22 occurrences viewed: L04 pos 6, 16, 36) | open c-bowl with a separate slanted (pos 6, 36) or crossed (pos 16) stroke above it; not filled | no shape like it in any column | nearest is the row-5 sign under m (a crossed stroke over a c-bowl), in Tomokiyo's row of doubled letters (LL, RR, SS ...); no T shape like it | **A different sign from f.29r's eh**, coded together by the passes. It is in neither T column, so the tables do not give it T; they do not give it D either. Value unestablished. This explains the earlier split (D on f.29r, T by sense on f.30, breakage d -57.1 on f.29r): it is a shape split, not one sign with two values. |
+| Tb (2 atlas exemplars, f.29r L05, L13) | (1) p-bowl on a stem with a crossbar on the stem; (2) tall hooked stroke over a b/8 bowl | key.tsv cites P k33, a heavy T-bar over an E: **not like either exemplar**. O column: k16 (b with a stroke through it) is close to exemplar 2; k13 (l with a stroke) has the same crossbar idea as exemplar 1 | o, row 2 (a stemmed sign with a crossbar) is close to exemplar 1; o row 1 is b | **The shapes sit with O in both tables, not with P k33.** This agrees with the grade-S override Tb = O (key_extension_f30.tsv, 283.4 bits, p = 0.010). key.tsv's source note "Lasry P (E with a bar, k33)" is a mismatch of shape, not a table value. Grade not raised here (one reader's shape call); see the next step. |
+| CROSS, pattee (f.30r L03 pos 36, L12 pos 0) | equal-armed cross with splayed ends | none (Unknown row: hash, barred z, 8, double s, keyed T) | none | **In neither table.** CROSS = C (sense, L12 CHOVSE) stays grade I, unapplied. |
+| CROSS, double-barred (f.30r L07 pos 3, L08 pos 29, L11 pos 2) | upright with two crossbars and a short foot | none | row-5 sign under l: an upright with two crossbars and a curled tail, in the doubled-letter row (so LL?) | **Nearest table shape is Tomokiyo's row-5 sign under l**, whose value Tomokiyo's layout implies is LL. On L07 it would give DIS-LL-OVRS where sense wants C (DISCOVRS), so the shape match and the sense disagree; not decided. The two cross shapes are distinct in the tables' terms too and should be coded apart (CROSSp, CROSS2). |
+
+Grades: no token's grade changes (H/C/S/M/I/U counts as in the Tb/eh test section). What the check settles: f.29r eh = D
+is table-backed; f.30 "eh" is a separate shape the tables do not key; Tb's shape points at O, not at the cited P k33;
+the pattee cross is unkeyed in both tables; the double-barred cross has one candidate table shape (Tomokiyo row 5, l).
+Not established: the value of the f.30 c-with-stroke sign and of either cross.
+Where not looked: Tomokiyo's and Lasry's tables for other Gramont manuscripts (only fr.3019 and fr.3071 tables are on
+disk); the remaining 19 f.30 occurrences of "eh" were not each viewed, so the split count per shape is not yet known.
+Requests this pass: none to any host. Vision calls: 4 (atlas_f29, two halves of sheet.png, zoom.png) plus the two table
+images and the legend sheet read once each.
+
+## Remaining gaps (finish-or-blocker pass, A2-GRA, 2 Oct 2026)
+Read so far: 1906 of 1969 f.30 signs keyed in the extended reading (H 1502, S 159, M 245; U 63), from the f30r_top section above; f.29r reading.txt per its own section.
+- f.30 c-with-stroke sign (coded eh) value - blocker: not-attempted; the key images do not key it (this section), so a value needs a test on the split code; next: recode the 22 f.30 eh occurrences by shape from the crops, then rerun test_f30r_top.py with the split code and its shuffled-position control, ~$3
+- the two cross shapes (CROSS pattee, CROSS double-barred) - blocker: not-attempted; neither table keys the pattee, the double-barred has one candidate (Tomokiyo row-5 l, LL) that disagrees with sense on L07; next: split the code and run the same hidden-sign test with control, in the same pass as the eh split, ~$1 extra
+- f.30r L01, L02, L11, L12 (not French) - blocker: open-codes; dense ss2/zb and unkeyed HASH, TRI, INF, B8, ev, which neither table keys (f30r_top section)
+- Tb = O in key.tsv's published-key layer - blocker: not-attempted; shapes match O (this section) and the grade-S test agrees, but key.tsv still cites P k33; next: correct key.tsv's Tb row to O with the table citation, regenerate with decode.py and --check, ~$1
+
+## Escalation (A2-GRA, 2 Oct 2026)
+- [n/a] siblings: Tomokiyo and Lasry tables already come from the sibling letters fr.3019 and fr.3071
+- [ ] clear-pages: no clear text of these letters known; neighbouring LP iv(3) 6244/6245 summaries not yet aligned as cribs
+- [x] known-keys: Tomokiyo and Lasry keys applied (key.tsv), Bourdeau's gramont1529 compared (Premise check)
+- [x] print: LP iv(3), Le Grand III, Decrue and the Catalogue des actes checked, no print of either letter
+- [ ] key-rebuild: split eh and CROSS by shape and rerun the hidden-sign test with its control (gaps above)
+- [x] image-check: this section, eh/Tb/crosses against both key images on 2 Oct 2026
+- [ ] retry: Tb row correction in key.tsv and regeneration with decode.py --check
+Verdict: keep going: 4 internal gaps; cheapest next: correct key.tsv's Tb row to O with the table citation and regenerate with decode.py --check, ~$1
