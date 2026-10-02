@@ -1,0 +1,19 @@
+passage	pos	sign_id	conf	note
+L11	4	T95	M	loop head, bar crossing stem near foot with stem below; T66 foot bar does not cross
+L11	14	T88	M	plain tall oval, no loop-foot; long thin stem above is bleed from line above
+L11	29	T60	M	two long horizontals crossing two verticals, slanted; T86 has short bars on long verticals
+L11	31	T95	M	stem with crossbar near foot after the epsilon-like mark; separate sign
+L12	28	T95	M	loop head, bar crosses stem near foot; T66 base bar does not cross
+L13	1	T27	M	dotted small loop with tail down; T26 hook curl absent
+L13	20	T98	H	ellipse pierced by vertical stem; T18 loop not crossed
+L13	27	T52	M	m with curled right tail; T64 plain m lacks tail
+L15	11	T95	M	loop head, bar crossing stem near foot; same form as L11 pos4
+L15	14	T29	H	epsilon joined by stroke to small circle: one sign
+L15	15	NONE	H	circle is part of the T29 sign, no separate sign
+L17	29	X_EQ	M	two short horizontal strokes at margin; no cell fits
+L18	19	T27	M	small top lobe, S tail; T76 has larger closed bowl
+L19	6	T98	H	ellipse pierced by stem; T18 not crossed
+L19	16	T84	M	bar over V/triangle with top stem, slanted; fits T84 not new
+L19	24	T98	H	ellipse pierced by stem through it
+L20	15	T66	M	open bowl, straight stem with foot bar; neither hooked T26 nor T76 tail
+L22	24	T90	M	stem with top cross tick and loop with bar; T45 lacks top cross

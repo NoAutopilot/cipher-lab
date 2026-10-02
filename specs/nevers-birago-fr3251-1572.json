@@ -1,19 +1,19 @@
 {
-  "slug": "nevers-birago-fr3251-1572",
-  "target": "ciphers/nevers-birago-fr3251-1572",
-  "ciphertext": "harvest/f178v/passC.tsv (f.178v lines L01-L10 of no.87, the witness leaf the key was built from; two value-blind passes reconciled, LIKELY-3 2 Oct 2026). Source: BnF fr.3251, Gallica ark:/12148/btv1b9060248g canvas 182, native region 1703,848,2900,3452 (harvest/f178v/manifest.json). Targets ff.138-184 not yet transcribed.",
-  "alphabet": "51 hand-drawn signs of the Nevers-Birago cipher 1572 (Tomokiyo nevers.htm, NeversBirago.png): 44 letter homophones, 7 word codes (che, per, qual, quello, carmagnola, turino, bugonotti); no nulls in the printed table",
-  "language": "Italian, Saluzzo, Birago to Nevers, 1572",
-  "constraints": [
-    "key keys/key_nevers_birago_1572.tsv is period-derived (Tomokiyo, from the decipherment attached to no.87 f.178), so no.87 itself is the known-key leaf",
-    "the attached decipherment is illegible on Gallica (NEV-C1, 27 Sept 2026): no clerk plaintext to score against"
-  ],
-  "cheap_tests": [
-    "known-key leaf first: f.178v L01-L10 two blind passes, reconcile, decode_control.py --map sign_id_map_1572.json vs 200 value-shuffled keys + power control at the measured reader error, judge it16dip",
-    "then f.138 no.71: locate the cipher passage (HARVEST-D2 recipe), same pipeline"
-  ],
-  "judge": {
-    "language": "it16dip"
-  },
-  "cheap_test_done": "f.178v L01-L10 (the key's own witness leaf) decoded with the printed key: real key rank 1 of 201 value-shuffled keys (z 4.53; seeds 2,3: 4.14, 4.25) on the adjudicated two-pass transcription (reader agreement 0.88, 290 signs); power control 20/20 at 12% sign error; judge FAIL -1.068 vs real_p05 -0.927 with shuffled-target decodes at -1.66 to -1.77 (near-miss, not a non-test); next: L11-L23 then ff.138-184 (LIKELY-3, 2 Oct 2026)"
+ "slug": "nevers-birago-fr3251-1572",
+ "target": "ciphers/nevers-birago-fr3251-1572",
+ "ciphertext": "harvest/f178v/passC.tsv (f.178v lines L01-L10 of no.87, the witness leaf the key was built from; two value-blind passes reconciled, LIKELY-3 2 Oct 2026). Source: BnF fr.3251, Gallica ark:/12148/btv1b9060248g canvas 182, native region 1703,848,2900,3452 (harvest/f178v/manifest.json). Targets ff.138-184 not yet transcribed.",
+ "alphabet": "51 hand-drawn signs of the Nevers-Birago cipher 1572 (Tomokiyo nevers.htm, NeversBirago.png): 44 letter homophones, 7 word codes (che, per, qual, quello, carmagnola, turino, bugonotti); no nulls in the printed table",
+ "language": "Italian, Saluzzo, Birago to Nevers, 1572",
+ "constraints": [
+  "key keys/key_nevers_birago_1572.tsv is period-derived (Tomokiyo, from the decipherment attached to no.87 f.178), so no.87 itself is the known-key leaf",
+  "the attached decipherment is illegible on Gallica (NEV-C1, 27 Sept 2026): no clerk plaintext to score against"
+ ],
+ "cheap_tests": [
+  "known-key leaf first: f.178v L01-L10 two blind passes, reconcile, decode_control.py --map sign_id_map_1572.json vs 200 value-shuffled keys + power control at the measured reader error, judge it16dip",
+  "then f.138 no.71: locate the cipher passage (HARVEST-D2 recipe), same pipeline"
+ ],
+ "judge": {
+  "language": "it16dip"
+ },
+ "cheap_test_done": "f.178v L01-L10 (the key's own witness leaf) decoded with the printed key: real key rank 1 of 201 value-shuffled keys (z 4.53; seeds 2,3: 4.14, 4.25) on the adjudicated two-pass transcription (reader agreement 0.88, 290 signs); power control 20/20 at 12% sign error; judge FAIL -1.068 vs real_p05 -0.927 with shuffled-target decodes at -1.66 to -1.77 (near-miss, not a non-test); next: L11-L23 then ff.138-184 (LIKELY-3, 2 Oct 2026) -- L11-L23 done the same way (GAPS-nevers-birago, 2 Oct 2026): agreement 0.95, 377 signs rank 1 of 201 (z 4.11; seeds 2,3: 4.02, 3.83), power 20/20 at 12%; joined leaf 667 signs rank 1 (z 4.60), judge FAIL -1.074 vs real_p05 -0.905 with 0 of 20 shuffled-target decodes passing (max -1.631); next: --fit-sign on the g-valued signs T42/T70/T88 (T17 = m never occurs, m-words decode with g), then f.178r/f.179r"
 }
