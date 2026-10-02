@@ -3,3 +3,11 @@ GAPS-matignon-mayenne-1586 (account-4) from raw.githubusercontent.com/dbourdeau/
 Commit id not obtained: api.github.com (contents) and github.com (commits/main.atom) both answered 403 from the cloud,
 one request each, not retried. Text CC BY 4.0 (his repository's own licence line). Only NOTES.md was fetched; his
 key.json and transcriptions at HEAD were not.
+
+Second fetch, 2 Oct 2026 03:36 UTC, by GAPS2-matignon-mayenne-1586 (account-4): raw.githubusercontent.com/dbourdeau/cyphersolver/main/
+targets/matignon1586/ -> matignon1586/key.json and the 13 Cipher-1 transcriptions (f110_cipher.txt, f123r_cipher.txt,
+f123v_cipher.txt, f124r_cipher.txt, f124v_cipher.txt, cipher_f143.txt, f143v_cipher.txt, f150_cipher.txt, f154_cipher.txt,
+f173_cipher.txt, f196_cipher.txt, f201_cipher.txt, f177_cipher.txt), 14 requests, all HTTP 200, unmodified. HEAD at fetch time:
+34e0fc8981112070c6b8b718519eeed6dca3a7ee (`git ls-remote` refs/heads/main, 1 request to github.com, 03:4x UTC; the same id
+NEXT-CAT's 03:20 clone recorded above). Code MIT, text CC BY 4.0. Diff against ciphers/matignon-mayenne-1586/key.tsv and
+ciphertext.txt (both his fc0c9e8): identical, see ciphers/matignon-mayenne-1586/bourdeau_head_diff.py.

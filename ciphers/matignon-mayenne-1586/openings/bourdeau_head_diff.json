@@ -1,0 +1,162 @@
+{
+ "key": {
+  "head_rows": 87,
+  "ours_rows": 87,
+  "added_at_head": {},
+  "removed_at_head": [],
+  "changed": {}
+ },
+ "transcriptions": {
+  "f110": {
+   "file": "f110_cipher.txt",
+   "head_lines": 37,
+   "ours_lines": 37,
+   "head_tokens": 1699,
+   "ours_tokens": 1699,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f123r": {
+   "file": "f123r_cipher.txt",
+   "head_lines": 36,
+   "ours_lines": 36,
+   "head_tokens": 1097,
+   "ours_tokens": 1097,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f123v": {
+   "file": "f123v_cipher.txt",
+   "head_lines": 41,
+   "ours_lines": 41,
+   "head_tokens": 1251,
+   "ours_tokens": 1251,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f124r": {
+   "file": "f124r_cipher.txt",
+   "head_lines": 35,
+   "ours_lines": 35,
+   "head_tokens": 1203,
+   "ours_tokens": 1203,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f124v": {
+   "file": "f124v_cipher.txt",
+   "head_lines": 22,
+   "ours_lines": 22,
+   "head_tokens": 727,
+   "ours_tokens": 727,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f143r": {
+   "file": "cipher_f143.txt",
+   "head_lines": 21,
+   "ours_lines": 21,
+   "head_tokens": 724,
+   "ours_tokens": 724,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f143v": {
+   "file": "f143v_cipher.txt",
+   "head_lines": 33,
+   "ours_lines": 33,
+   "head_tokens": 1182,
+   "ours_tokens": 1182,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f150": {
+   "file": "f150_cipher.txt",
+   "head_lines": 13,
+   "ours_lines": 13,
+   "head_tokens": 445,
+   "ours_tokens": 445,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f154": {
+   "file": "f154_cipher.txt",
+   "head_lines": 28,
+   "ours_lines": 28,
+   "head_tokens": 1061,
+   "ours_tokens": 1061,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f173": {
+   "file": "f173_cipher.txt",
+   "head_lines": 33,
+   "ours_lines": 33,
+   "head_tokens": 1082,
+   "ours_tokens": 1082,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f196": {
+   "file": "f196_cipher.txt",
+   "head_lines": 26,
+   "ours_lines": 26,
+   "head_tokens": 840,
+   "ours_tokens": 840,
+   "identical": true,
+   "line_diffs": []
+  },
+  "f201": {
+   "file": "f201_cipher.txt",
+   "head_lines": 30,
+   "ours_lines": 30,
+   "head_tokens": 987,
+   "ours_tokens": 987,
+   "identical": true,
+   "line_diffs": []
+  },
+  "fr15571-f177": {
+   "file": "f177_cipher.txt",
+   "head_lines": 24,
+   "ours_lines": 24,
+   "head_tokens": 696,
+   "ours_tokens": 696,
+   "identical": true,
+   "line_diffs": []
+  }
+ },
+ "labels_unkeyed_both": {
+  "U": 343,
+  "z": 296,
+  "4": 106,
+  "w": 83,
+  "T": 53,
+  "y": 41,
+  "v": 37,
+  "p": 18,
+  "D2": 16,
+  "5": 16,
+  "2": 12,
+  "9": 11,
+  "1": 10,
+  "fe": 6,
+  "BOX2": 6,
+  "W": 5,
+  "me": 5,
+  "de": 5,
+  "16": 2,
+  "s1": 2,
+  "p9": 2,
+  "37": 2,
+  "18": 1,
+  "Bi": 1,
+  "101": 1,
+  "102": 1,
+  "121": 1,
+  "O": 1,
+  "u": 1,
+  "f3": 1,
+  "73": 1
+ },
+ "labels_keyed_head_only": {}
+}
