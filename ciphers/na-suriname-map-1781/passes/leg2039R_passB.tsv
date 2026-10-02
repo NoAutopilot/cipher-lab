@@ -1,0 +1,19 @@
+band	line	label	glyphs	conf	note
+L01	1		5 . x . l [v-tall] 7 [4-bowl] a h 6 s a ,	M	line 1 only; first 5 slightly cut at left edge; pos 6 V-shaped tall; pos 8 is a 4 with a loop/bowl (4 or [4-bowl]); ink ends at x~470 with comma, blank to the right edge
+L02	1		[?]	L	only a fragment of a flourished glyph at far left bottom edge (cut at left edge and band bottom); rest blank
+L02	2		[?]	L	no further ink; blank to right edge
+L03	1		[?] n ,	L	tail of line from previous band cut at the top; ink x~0-100 then comma; blank to right edge
+L04	1	d	3 6 / 5 [hash] [pi] o / w 3 [lambda] k , / f l [psi] q 7 [ezh-dot] r m 7 – x y d [delta] g [lambda] 6 g a o d [hash] 5 4 3 h ,	M	label d visible mid-line after comma; first glyph cut at left edge ([?] before 3 6); long dash before x; strikethrough-like hash before 543; ink ends x~1075 with comma, blank to right edge
+L04	2	h	[?] t l l / 5 . h / e 8 5 0 3 y [psi] , / [delta] o [lambda] f g c 3 o m 7 / . y d [delta] g [lambda] 6 / 6 4 p o [lambda] f 6 ,	M	label h visible mid-line; first word cut at left edge; ink ends ~x1085 with quote-like mark, blank to right edge
+L05	1	o,p	[?] / g y r 7 o m [lambda] s [psi] , / [hash] [hash] [hash] x / [delta] y e l f [lambda] m 7 / y [delta] g p [ezh-dot] t l s h	M	label o. visible at x~35 then clause; label p. at x~390; triple-bar mark after p.; ink ends x~1045, blank to right edge
+L05	2		[?] 3 h 6 / S g p h / G ,	M	cut at left edge; first glyph heavy mark, might be a [hash] or [3-caret]; ink ends x~310, blank to right edge
+L06	1		[?]	L	only tiny speck at top left (x~150 y~5); otherwise blank, map drawing at right
+L07	1		[?]	L	no cipher text; blank paper and map drawing
+L08	1		[?]	L	no cipher text; blank paper and map drawing
+L09	1		[?]	L	no cipher text; blank paper and map drawing
+L10	1		[?]	L	no cipher text; blank paper and map drawing
+L11	1		[?]	L	no cipher text; blank paper and map drawing
+L12	1		[?]	L	no cipher text; blank paper and map drawing
+L13	1		[?]	L	no cipher text; map hatching only
+L14	1		[?]	L	no cipher text; map hatching only
+L15	1		[?]	L	no cipher text; map hatching only

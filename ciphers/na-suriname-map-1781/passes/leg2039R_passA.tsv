@@ -1,0 +1,18 @@
+band	line	label	glyphs	conf	note
+L01	1		5 [dot] x [l-bare] / V 7 [q-tail] [a-plain] h 6 s [a-plain] ,		M	first glyph 5 may be cut at left edge; pos6 hooked 4/q shape; ink ends at x~470, blank to right edge; single line
+L02	1		[?]		L	only a flourish/partial glyph at far left bottom edge (x<60), spills from the band below/above; rest blank
+L03	1		[?] n [?] ,		L	tail of a line cut at left edge and top (glyphs ~x0-75 look like n or u with serifs); comma at x~95; ink ends there, blank to right edge
+L04	1		[?] 3 6 / 5 [hash] [pi-like] o / w 3 [lambda] k , / d. [f-loop] [lambda-tilde] [psi] q 7 [e-loop] r m 7 – x y d [delta] g [lambda] 6 g a a [hash] 5 4 3 h ,	M	cut at left edge; here label d appears plain inside crop (d. at x~365) with cipher clause after; long dash before x; 5 4 3 h near right end; ink ends x~1070, blank to right edge
+L04	2	h	o t t 5 x h / e 8 5 0 3 [psi] , / [delta] o [lambda] [f-loop] g c 3 o m 7 / . x y d [delta] g [lambda] 6 / b 4 p o [lambda] [f-loop] ,	M	cut at left edge (first glyph half); plain label h. at x~365 mid-line; ink ends x~1090, blank to right edge; start of line "o t t" partly cut
+L05	1	o	g r 7 o m [lambda] 3 [psi] , / p. [hash] [hash] [hash] x / [delta] y e l [f-loop] [lambda] m r / y [delta] g p [e-loop] t l s h	M	plain labels o. (x~40, glyph cut at left edge) and p. (x~390) inside crop; three-stroke ladder after p; ink ends x~1045, blank to right edge
+L05	2		[?] h k 6 S q p h G ,	M	cut at left edge (first glyph dark/blotted); ink ends x~320, blank to right
+L06	1		[?]		L	nothing legible; tiny ink fleck at x~150 top edge; map drawing at right, no text
+L07	1				H	no text, blank paper and map drawing
+L08	1				H	no text, map drawing only
+L09	1				H	no text, map drawing only
+L10	1				H	no text, map drawing only
+L11	1				H	no text, map drawing only
+L12	1				H	no text, map drawing only
+L13	1				H	no text, map drawing only
+L14	1				H	no text, map drawing only
+L15	1				H	no text, map drawing only

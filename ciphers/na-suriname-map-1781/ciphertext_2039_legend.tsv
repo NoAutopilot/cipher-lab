@@ -1,5 +1,5 @@
-# NA 4.VEL 2039, "Verklaringe der Letteren" legend block (region native 780,980,2100,2800 of the 11267x8656 sheet; the
-# lines run on past the region's right edge, so entries d, h and p and the ends of c, g, o and r are outside it).
+# NA 4.VEL 2039, "Verklaringe der Letteren" legend block: region native 780,980,2100,2800 (GAPS5) plus the right-hand strip
+# native 2800,980,1300,2800 (GAPS6, 2 Oct 2026, images/2039_legend_right_native.jpg; 80 px overlap) of the 11267x8656 sheet.
 # GAPS5-na-suriname-map-1781, 2 Oct 2026: two blind Sonnet passes on tools/iiif_lines.py band crops, merged by
 # sequence alignment after code normalisation; conf H = both passes read the same sign at an aligned position, M = the
 # passes differ (pass A kept, the other reading in the note) or only one pass read the position. Label letters are plain
@@ -8,6 +8,10 @@
 # job's: [thorn] looped p/thorn initial, [pi] pi-like, [f-loop] long-f loop, [u-dots] y/u with diaeresis, [d-loop]
 # looped d, [w-tilde] w with tilde, [hand-box] three-bar box, [dots] x-with-dot, [psi]). "3" is kept distinct from
 # [ezh-dot] (hypothesis 3 = e untested). <...> = plain text.
+# GAPS6-na-suriname-map-1781, 2 Oct 2026: the strip adds the ends of head, c, g, r and the whole of d, h, o, p (two blind
+# Sonnet passes on 15 band crops, 97/119 aligned positions, one own reconciliation on a montage of bands L01/L04/L05);
+# new codes [4-bowl] (a 4 with a closed bowl), [dash] (a long dash on the line). GAPS5's 13 "o" signs are now p pos 19-31
+# (o's clause is complete on its own line before the p. label); the strip's bands L06-L15 carry no text (map drawing).
 line	pos	sign	conf	note
 2039_leg_head	0	y	H	
 2039_leg_head	1	7	H	
@@ -38,6 +42,15 @@ line	pos	sign	conf	note
 2039_leg_head	26	r	H	
 2039_leg_head	27	5	H	
 2039_leg_head	28	x	H	
+2039_leg_head	29	[l-bare]	M	GAPS6 strip: A [l-bare], B l; a bare tall stroke
+2039_leg_head	30	[v-tall]	H	GAPS6 strip: A V, B [v-tall]; tall capital V
+2039_leg_head	31	7	H	GAPS6 strip
+2039_leg_head	32	[4-bowl]	M	GAPS6 strip: A [q-tail], B [4-bowl]; own look a 4 with a closed bowl
+2039_leg_head	33	a	H	GAPS6 strip: A [a-plain], B a
+2039_leg_head	34	h	H	GAPS6 strip
+2039_leg_head	35	6	H	GAPS6 strip
+2039_leg_head	36	s	H	GAPS6 strip
+2039_leg_head	37	a	H	GAPS6 strip: A [a-plain], B a; comma follows, line ends at strip x~470
 2039_leg_a	0	[thorn]	H	
 2039_leg_a	1	k	H	
 2039_leg_a	2	y	H	
@@ -119,6 +132,39 @@ line	pos	sign	conf	note
 2039_leg_c	37	9	M	B: g
 2039_leg_c	38	3	H	
 2039_leg_c	39	6	H	
+2039_leg_c	40	5	H	GAPS6 strip: after the overlap "3 6" with c pos 38-39
+2039_leg_c	41	[hash]	H	GAPS6 strip
+2039_leg_c	42	[pi]	H	GAPS6 strip: A [pi-like], B [pi]
+2039_leg_c	43	o	H	GAPS6 strip
+2039_leg_c	44	w	H	GAPS6 strip
+2039_leg_c	45	3	H	GAPS6 strip
+2039_leg_c	46	[lambda]	H	GAPS6 strip
+2039_leg_c	47	k	H	GAPS6 strip: comma follows, then the plain label d.
+2039_leg_d	0	[f-loop]	M	GAPS6 strip: A [f-loop], B f; long f with loop
+2039_leg_d	1	l	M	GAPS6 strip: A [lambda-tilde], B l; own look l
+2039_leg_d	2	[psi]	H	GAPS6 strip
+2039_leg_d	3	q	H	GAPS6 strip
+2039_leg_d	4	7	H	GAPS6 strip
+2039_leg_d	5	[ezh-dot]	M	GAPS6 strip: A [e-loop], B [ezh-dot]; own look a reversed-3 shape
+2039_leg_d	6	r	H	GAPS6 strip
+2039_leg_d	7	m	H	GAPS6 strip
+2039_leg_d	8	7	H	GAPS6 strip
+2039_leg_d	9	[dash]	H	GAPS6 strip: long dash on the line, both passes; kept as a mark like "="
+2039_leg_d	10	x	H	GAPS6 strip
+2039_leg_d	11	y	H	GAPS6 strip
+2039_leg_d	12	d	H	GAPS6 strip
+2039_leg_d	13	[delta]	H	GAPS6 strip
+2039_leg_d	14	g	H	GAPS6 strip
+2039_leg_d	15	[lambda]	H	GAPS6 strip
+2039_leg_d	16	6	H	GAPS6 strip
+2039_leg_d	17	g	H	GAPS6 strip
+2039_leg_d	18	a	H	GAPS6 strip
+2039_leg_d	19	d	M	GAPS6 strip: A "a a", B "a o d"; own look "g a d" then the hash
+2039_leg_d	20	[hash]	H	GAPS6 strip: B: strikethrough-like
+2039_leg_d	21	5	H	GAPS6 strip
+2039_leg_d	22	4	H	GAPS6 strip
+2039_leg_d	23	3	H	GAPS6 strip
+2039_leg_d	24	h	H	GAPS6 strip: comma follows; ink ends at strip x~1070
 2039_leg_e	0	h	H	
 2039_leg_e	1	[f-loop]	H	
 2039_leg_e	2	3	H	
@@ -193,6 +239,39 @@ line	pos	sign	conf	note
 2039_leg_g	5	p	M	A: -
 2039_leg_g	6	l	M	A: -
 2039_leg_g	7	l	M	A: -
+2039_leg_g	8	5	H	GAPS6 strip: after the overlap "t l" at the strip edge (A "o t t", B "[?] t l l"; committed g pos 6-7 "l l" from the left pass B, A-left "t l")
+2039_leg_g	9	x	M	GAPS6 strip: A x, B "." ; own look x
+2039_leg_g	10	h	H	GAPS6 strip
+2039_leg_g	11	e	H	GAPS6 strip
+2039_leg_g	12	8	H	GAPS6 strip
+2039_leg_g	13	5	H	GAPS6 strip
+2039_leg_g	14	0	H	GAPS6 strip
+2039_leg_g	15	3	H	GAPS6 strip
+2039_leg_g	16	[psi]	H	GAPS6 strip: B reads an extra y before [psi], own look none; comma follows, then the plain label h.
+2039_leg_h	0	[delta]	H	GAPS6 strip
+2039_leg_h	1	o	H	GAPS6 strip
+2039_leg_h	2	[lambda]	H	GAPS6 strip
+2039_leg_h	3	[f-loop]	M	GAPS6 strip: A [f-loop], B f
+2039_leg_h	4	g	H	GAPS6 strip
+2039_leg_h	5	c	H	GAPS6 strip
+2039_leg_h	6	3	H	GAPS6 strip
+2039_leg_h	7	o	H	GAPS6 strip
+2039_leg_h	8	m	H	GAPS6 strip
+2039_leg_h	9	7	H	GAPS6 strip
+2039_leg_h	10	x	M	GAPS6 strip: A x, B "." ; own look x
+2039_leg_h	11	y	H	GAPS6 strip
+2039_leg_h	12	d	H	GAPS6 strip
+2039_leg_h	13	[delta]	H	GAPS6 strip
+2039_leg_h	14	g	H	GAPS6 strip
+2039_leg_h	15	[lambda]	H	GAPS6 strip
+2039_leg_h	16	6	H	GAPS6 strip: "x y d [delta] g [lambda] 6" recurs in d
+2039_leg_h	17	b	M	GAPS6 strip: A b, B 6; own look b
+2039_leg_h	18	4	H	GAPS6 strip
+2039_leg_h	19	p	H	GAPS6 strip
+2039_leg_h	20	o	H	GAPS6 strip
+2039_leg_h	21	[lambda]	H	GAPS6 strip
+2039_leg_h	22	[f-loop]	M	GAPS6 strip: A [f-loop], B f
+2039_leg_h	23	6	M	GAPS6 strip: B 6, A none; own look 6; double comma / quote mark follows, ink ends at strip x~1090
 2039_leg_i	0	o	H	
 2039_leg_i	1	a	H	
 2039_leg_i	2	l	H	
@@ -246,19 +325,46 @@ line	pos	sign	conf	note
 2039_leg_n	5	l	H	
 2039_leg_n	6	7	H	
 2039_leg_n	7	6	H	
-2039_leg_o	0	k	H	
-2039_leg_o	1	q	H	
-2039_leg_o	2	y	M	B: v
-2039_leg_o	3	a	H	
-2039_leg_o	4	d	M	B: [d-loop]
-2039_leg_o	5	[delta]	H	
-2039_leg_o	6	r	H	
-2039_leg_o	7	[lambda]	H	
-2039_leg_o	8	7	M	B: r
-2039_leg_o	9	o	H	
-2039_leg_o	10	t	H	
-2039_leg_o	11	r	H	
-2039_leg_o	12	h	H	
+2039_leg_o	0	g	H	GAPS6 strip: the plain label o. sits at strip x~35 (the left region ended at native 2880 = strip x 80, so the label was its last glyph); B reads an extra y after g, own look none
+2039_leg_o	1	r	H	GAPS6 strip
+2039_leg_o	2	7	H	GAPS6 strip
+2039_leg_o	3	o	H	GAPS6 strip
+2039_leg_o	4	m	H	GAPS6 strip
+2039_leg_o	5	[lambda]	H	GAPS6 strip
+2039_leg_o	6	3	M	GAPS6 strip: A 3, B s; own look 3
+2039_leg_o	7	[psi]	H	GAPS6 strip: comma follows, then the plain label p. at strip x~390 -- the clause is complete on this line
+2039_leg_p	0	[hand-box]	M	GAPS6 strip: A and B [hash] [hash] [hash] (three strokes); own look the three-bar box that opens entry f ([hand-box])
+2039_leg_p	1	x	H	GAPS6 strip
+2039_leg_p	2	[delta]	H	GAPS6 strip
+2039_leg_p	3	y	H	GAPS6 strip
+2039_leg_p	4	e	H	GAPS6 strip
+2039_leg_p	5	l	H	GAPS6 strip
+2039_leg_p	6	[f-loop]	M	GAPS6 strip: A [f-loop], B f
+2039_leg_p	7	[lambda]	H	GAPS6 strip
+2039_leg_p	8	m	H	GAPS6 strip
+2039_leg_p	9	7	M	GAPS6 strip: A r, B 7; own look 7
+2039_leg_p	10	y	H	GAPS6 strip
+2039_leg_p	11	[delta]	H	GAPS6 strip
+2039_leg_p	12	g	H	GAPS6 strip
+2039_leg_p	13	p	H	GAPS6 strip
+2039_leg_p	14	[ezh-dot]	M	GAPS6 strip: A [e-loop], B [ezh-dot]
+2039_leg_p	15	t	H	GAPS6 strip
+2039_leg_p	16	l	H	GAPS6 strip
+2039_leg_p	17	s	H	GAPS6 strip
+2039_leg_p	18	h	H	GAPS6 strip: ink ends at strip x~1045, no comma; the clause continues at the start of the next line (pos 19-31 below)
+2039_leg_p	19	k	H	GAPS6: moved from 2039_leg_o pos 0 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	20	q	H	GAPS6: moved from 2039_leg_o pos 1 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	21	y	M	B: v; GAPS6: moved from 2039_leg_o pos 2 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	22	a	H	GAPS6: moved from 2039_leg_o pos 3 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	23	d	M	B: [d-loop]; GAPS6: moved from 2039_leg_o pos 4 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	24	[delta]	H	GAPS6: moved from 2039_leg_o pos 5 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	25	r	H	GAPS6: moved from 2039_leg_o pos 6 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	26	[lambda]	H	GAPS6: moved from 2039_leg_o pos 7 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	27	7	M	B: r; GAPS6: moved from 2039_leg_o pos 8 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	28	o	H	GAPS6: moved from 2039_leg_o pos 9 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	29	t	H	GAPS6: moved from 2039_leg_o pos 10 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	30	r	H	GAPS6: moved from 2039_leg_o pos 11 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
+2039_leg_p	31	h	H	GAPS6: moved from 2039_leg_o pos 12 -- the strip shows o's clause complete before the plain p. label, so this start of the next line is p's continuation (left pass A: "belongs to entry p", left pass B labelled it p)
 2039_leg_q	0	[s-loop]	M	B: s
 2039_leg_q	1	f	H	
 2039_leg_q	2	3	M	B: s
@@ -308,6 +414,12 @@ line	pos	sign	conf	note
 2039_leg_r	21	g	H	
 2039_leg_r	22	[hash]	H	
 2039_leg_r	23	h	H	
+2039_leg_r	24	6	H	GAPS6 strip: after the overlap "[hash] h" (strip "[?] h"/"3 h") with r pos 22-23; A reads an extra k before 6, B and own look none
+2039_leg_r	25	S	H	GAPS6 strip
+2039_leg_r	26	g	M	GAPS6 strip: A q, B g; own look g
+2039_leg_r	27	p	H	GAPS6 strip
+2039_leg_r	28	h	H	GAPS6 strip
+2039_leg_r	29	G	H	GAPS6 strip: comma follows, ink ends at strip x~320
 2039_leg_s	0	g	H	
 2039_leg_s	1	3	H	
 2039_leg_s	2	5	H	
