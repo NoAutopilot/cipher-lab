@@ -9,7 +9,23 @@ Common tail (paste into every brief):
 > First action: `tools/room.py --start` (fetches, force-checks-out `main` onto `origin/main`, and refuses a
 > ROOM.md under 50 lines rather than a shrunk stub; replaces raw `git fetch`/`git reset` for this step,
 > RETRO-2026-09-24b — the prose fix alone let the identical stale-clone/detached-HEAD failure recur at least
-> twice more the same day). If ROOM.md says 'retrospective starting' or 'swap starting', push what you hold and
+> twice more the same day). The container normally starts with `HEAD (no branch)` and a diverged local main:
+> that is room.py --start's job, never yours -- no `git checkout`, `git switch`, `git reset`, `git pull` or
+> `git branch -f` by hand at any point. If the auto-mode classifier denies a command ("Irreversible Local
+> Destruction" or any other reason), do not re-issue it or a variant: in an unattended session the third
+> consecutive denial turns your next call -- any call, even `tail ROOM.md` -- into a human permission prompt
+> that nobody answers (2 Oct 2026: WEBCHECK-ormond-arran-1678 and GAPS3-na-schonenberg-1678-1716 each sat 50
+> minutes, USD 6.22 lost). After one denial: `python3 tools/room.py "<role>" "flag: classifier denied <what>;
+> stopping" --push` and stop (RETRO-2026-10-02-account4 proposal 1).
+>
+> **Fable floor (2 Oct 2026, RETRO-2026-10-02-account4, 71 Fable 5.1 workers, proposal 3):** a Fable session's fixed
+> cost (room.py --start, brief and 30 ROOM lines, one small push) is about USD 2.7, twice the Sonnet figure of 26 Sept.
+> Measured medians (p75): disk-only step 5.5 (6.7); one-host step (a web/blog check, one archive.org or DECODE fetch)
+> 5.1 (5.6); a vision step 8.2 (12.1), about 1.5-3.5 per Fable subagent vision call. A Fable cap is written at the p75
+> of its shape, never below USD 5 for any job that reads a brief, plus 2.5 per planned vision call; raising WEBCHECK
+> from 3 to 5 moved its over-cap rate from 8 of 8 to 2 of 7 at the same mean cost (4.6-4.8). Parent 2's wave 2
+> (06:06 UTC) was capped at these floors and still ran a median 1.6x over: treat the floor as a floor, and price a
+> step that fetches and reads several units (contact sheets, native regions) per unit on top of it. If ROOM.md says 'retrospective starting' or 'swap starting', push what you hold and
 > stop until 'retrospective done' or 'swap done', then re-run `tools/room.py --start`. If ROOM.md
 > says 'swap starting', push what you hold and stop until 'swap done', then `git fetch origin && git reset --hard
 > origin/main`. Read the last 30 lines of ROOM.md first; append a line before editing a shared file and a `done` line when you stop; use `flag` for anything the orchestrator must see. You cannot read your own session cost reliably (RETRO-2026-09-24b, RETRO-2026-09-25h: at least a dozen workers across two days wrote "well under cap" while running 1.7-4.6x over): your stall alarm is a WALL-CLOCK box instead, named in your brief (default 45 minutes) measured from `date -u` at start; at 80% of the box, push what you have, write the remaining steps as one line in NOTES.md, and stop. Never write "well under cap," "under budget," or any dollar figure for yourself in a ROOM line or a done line; write "cost: see the lane ledger" and let the orchestrator read `get_session`. Never call AskUserQuestion — no human watches this session; when a choice comes up, take the conservative option within the brief, log it in NOTES.md, and carry on (LEDGER.md 25 Sept, OX-HEL: a stalled AskUserQuestion prompt lost a whole session). At most K subagents, on Sonnet unless the brief says otherwise. Commit, `git fetch

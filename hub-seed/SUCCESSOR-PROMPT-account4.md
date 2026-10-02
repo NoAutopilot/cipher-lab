@@ -48,3 +48,14 @@ Open next steps, cheapest first (one worker each, the generic briefs under .clau
 - Lessons this lineage paid for: price a two-page figure-pair transcription per crop set, not per page (Clinton 1.34x);
   read NEAR.md's closed rows before ranking a candidate (ceppo-nevers non-job); a shortlist row's premise ("sibling has
   a key") is checked against the sibling's own NOTES before spawning (decode-1162).
+
+## State at check-in 2 of parent 2 (06:5x UTC 2 Oct 2026, session_01SnKHiQk7k7VPDGhfcPeiVV, about 300k context)
+
+Account-4's seven-day window read `allowed_warning` at 06:48 UTC (resets 5 Oct 2026 20:00 UTC): no new workers until it
+reads `allowed`. Two waves (22 workers, about USD 170) are ledgered; the 11 wave-2 sessions are idle, LIVE-titled and
+unarchived (ids in STATUS.md check-in 2) -- a CLOSER-6 when the window allows. Owed then, cheapest first: the nevers-birago
+clerk-sheet alignment (~2, the biggest lead: the period decipherment of the whole no.87 passage is legible on canvas 182),
+royalist print_check + crib loop (~3), suriname 2039 a-u block (~5), janssens 187R crib (~4), moray L1/L3/L4 passes (~4),
+clinton reel labels (~4), mornington counterpart search (~4), fr3986 atlas coverage (~8), schonenberg image pass (~18);
+verifiers for the Clinton 2894 clause and the Schonenberg L19 crib; RETRO-APPLY for RETRO-2026-10-02-account4 proposals
+2, 4, 5. Fable caps at the README floor (>= 5, +2.5 per vision call, per-unit on top for multi-unit fetch-and-read jobs).

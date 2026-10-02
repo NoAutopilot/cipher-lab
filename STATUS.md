@@ -181,6 +181,40 @@ RETRO-account4-1 (cap 8; session_01Xznr5oo8hFLzbWNPHd2w7V). Caps total USD 70. C
 transcription, decode-2754 Sabran-key step, huntington split-check; verifiers for the Clinton clause and the Schonenberg
 L19 crib once a reading clears its gate.
 
+**Check-in 2 (06:5x UTC 2 Oct, parent 2):** wave 2 done, 11 of 11 posted done lines, ledgered (USD 87.2; 7 of 10 capped
+workers over cap, median about 1.6x, even after the floor was raised -- RETRO-2026-10-02-account4.md's measured floors are
+now in the README common tail, see below). **Rate limit: the session list at 06:48 UTC shows this account's seven-day window
+at `allowed_warning` (seven_day_overage_included, resets 5 Oct 2026 20:00 UTC); BUDGETS.md's scaling rule applies: no new
+workers from account-4 until it reads `allowed` again.** So no wave 3, no CLOSER-6 (the 11 wave-2 sessions stay LIVE-titled
+and idle; archive them with a CLOSER once the warning lifts, ids below), and the two verifier jobs now owed (the Clinton
+2894 clause; the Schonenberg L19 crib) wait too. Moves: **nevers-birago-fr3251-1572 -- the right page of canvas 182 is the
+clerk's clear decipherment of the whole no.87 passage, legible at native resolution** (canvas 183 is its blank back; the
+needs-physical-access blocker and ASKS 78's leaf are no longer needed); 186 more signs read, passage 853 signs, rank 1/201
+z 4.60, the decode matches the clerk sheet on 0.837 of letters (printed key 0.816, 200 shuffled keys max 0.114), judge
+still FAIL -1.046 vs -0.902; next: interlinear_align.py sheet-to-signs for a C-grade key (~USD 2, disk). pro3055-clinton-
+1779: the 1778 Army List itself is on archive.org (listofgeneralfie00grea), key H 297 C 18 after it, the omitted clause
+reads "Admiral A will be reinforced in proportion" (C 18 H 14) and waits on a verifier. intercepted-royalist-1646: Evelyn
+page images confirm every OCR-confirmed row, key C 37 H 22 M 4 I 3, f.10 tokens C 164 H 6; the en16 judge does not
+discriminate at 192/735 keyed (12/20 shuffled-target decodes score the same band). moray-wood-1568: the DECODE login reads
+R8345 full-size (4 of 4 real JPEGs, scratchpad only) -- the host table's account-wide block note is wrong for this record.
+na-janssens-java-1811: leaves 186-215 re-inventoried, 14 manifest misfilings fixed, 204-209 are the whole No.4 set.
+na-schonenberg: es18 corpus built (7 items, 2.54M letters), judge retired for this body (three corpora, own gloss FAILs
+too). na-suriname: crib_2042_legend.tsv 13 rows. mornington: three grade-C crib files, ASKS 12 amendment drafted.
+fr3986-nevers-revol-1593: the no.60 atlas reads a held-out interlined leaf at 67.9 pct vs an 80 pct gate (coverage: 56 pct
+on the 8 tags it lacks), status stays blocked. Retrospective proposals 1 and 3 (text only) applied by the parent to
+`.claude/briefs/README.md`'s common tail and logged in UPDATES.md; 2, 4, 5 (tool and brief changes with tests) wait for a
+RETRO-APPLY worker. Wave-2 session ids for the next CLOSER: session_014SXS7AKCDCu7qpNqbYQnCr (CLOSER-5, done 06:07, 3.34 D),
+session_019J5DkfNsXZAgbp2VRCpW5S (GAPS3-mornington, 06:13, 4.61 D), session_01Xznr5oo8hFLzbWNPHd2w7V (RETRO, 06:13, 6.10 D),
+session_01GgYCnBmz7CTLo9ckgEZ9Jq (GAPS4-suriname, 06:15, 5.93 D), session_013aBudv4C5u79CZYDjzVMzW (GAPS5-janssens, 06:17,
+11.53 D-), session_019P7VGLbDTcFfgiAicMnnJk (GAPS2-royalist, 06:17, 9.33 D-), session_01MPssPmGyXUeeGapSEywtC5 (GAPS4-clinton,
+06:18, 7.84 D-), session_01JK2W3H3Pu8P9Y9DftjnerN (LIKELY-6, 06:19, 6.55 D), session_01NJdbbEqZwHbrZ1i57XxTRQ (GAPS5-
+schonenberg, 06:20, 7.22 D-), session_01FS4sjLBMSRBzWtvrz76XNq (GAPS3-moray, 06:23, 10.09 D-), session_019K3ZAHo1v85gdLhSvKk4Nm
+(GAPS4-nevers, 06:30, 14.64 D-). Next steps when the window allows, cheapest first: nevers-birago sheet alignment (~2),
+royalist print_check (~1) + crib loop (~2), suriname 2039 a-u block (~5), janssens 187R crib (~4), moray L1/L3/L4 passes
+(~4), clinton gap 6 reel labels (~4), mornington counterpart search (~4), fr3986 atlas coverage (~8), schonenberg 12-code
+image pass (~18); Fable caps at the README floor (>= 5, +2.5 per vision call). Check-in 3 armed for 07:34 UTC
+(trig_01CT3DgvpEwHtDBic5CbJSdR). Standby: account-3's newest line 06:08 UTC.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
