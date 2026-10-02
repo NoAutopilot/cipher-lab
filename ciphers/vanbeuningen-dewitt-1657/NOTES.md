@@ -1,4 +1,5 @@
 partial
+Brieven aan Johan de Witt I (Fruin/Japikse 1919) p.405 read directly by the check-solved worker csHU on 24 Sept 2026 from the Huygens retroboeken page image (images/dewitt_01_405.jpg; footnote 1 "onopgelost cijfer" quoted in the sweep below), and pp.405-406 is the plaintext in plaintext_print.txt; the citation sat at line 9 until 2 Oct 2026, when GAPS-vanbeuningen-dewitt-1657 moved it here per check-solved.md's line-2 placement rule (RETRO-2026-09-24f).
 
 # Van Beuningen circle to Johan de Witt: the same letter survives as a plain copy and an unsolved cipher copy, 19/29 September 1657
 
@@ -568,14 +569,119 @@ flagged in ROOM.md for whoever owns this target's status line and the NEXT-STEPS
 (either bump the status line/status.json's own status field to match AUDIT.md, or teach next_steps.py to
 prefer a next-step paragraph that comes after the file's newest dated section).
 
+## GAPS-vanbeuningen-dewitt-1657 (2 Oct 2026, account-4): alphabetic-order bracketing with an order-shuffle control
+
+Written 2 Oct 2026 02:0x UTC (clock read), BEFORE the script existed or ran, as the pre-registered prediction the
+Remaining-gaps Verdict line asks for. Nothing here changes key.tsv or reading.txt (rule 4: a structural prior names
+what to check, it does not grade a token).
+
+### What the C-graded letter codes already show (read from key.tsv, no computation)
+
+35 letter codes at grade C, sorted by code number, read: 4 k, 6 l, 7 l, 9 m, 10 n, 12 o, 13 o, 17 p, 20 u/v, 21 r,
+22 r, 23 s, 24 s, 25 t, 26 t, 27 u, 32 w, 36 y | 39 a, 41 a, 42 a, 44 b, 46 c, 47 c, 50-54 e, 55 f, 56 f, 57 g, 59 h,
+61 i, 62 i. Up to one cyclic wrap (y at 36 -> a at 39) the letters run in alphabetical order with one exception,
+code 20 (u/v; all seven contexts are v-words: van x3, verscheyde, vruntschap, verliesen, one t-outlier), which sits
+between p 17 and r 21 where q would be expected. i/j and u/v are one letter each in a 17th-century alphabet.
+
+### The two statistics, and the control
+
+1. **Descents.** Sort the C codes by number; count the consecutive pairs whose letters go backwards in the alphabet,
+   taking the best of the 26 cyclic rotations of the alphabet (so the single k..y / a..i wrap costs nothing).
+   Read-off prediction: real = 1 (20 u/v -> 21 r). Control: the same count on 1,000 random re-assignments of the
+   same 35 letter labels to the same 35 code numbers (the shuffle varies exactly the statistic's own axis, the
+   letter-to-code order, so it can fail differently from the target -- rule 3's bCAS/AX-5799 test).
+2. **Leave-one-out bracket accuracy (the known-answer control for the prediction rule itself).** For each C code,
+   hide it, take the nearest C codes below and above by number, and predict the letter interval between their two
+   letters (cyclic). A hit is the hidden code's own letter inside that interval. Report hits/35 and the mean interval
+   width, real and under the same 1,000 shuffles. Read-off prediction: real about 34/35 (20 u/v is the predicted
+   miss: bracket p..r) at a width of 1-3 letters; shuffled near chance at a wide width.
+
+### Pre-registered predictions for the eight codes, from their C-graded brackets (cyclic)
+
+| code | votes on file | lower C neighbour | upper C neighbour | bracket | bracket says |
+|---|---|---|---|---|---|
+| 40 | d 14 / a 10 (conflict) | 39 a | 41 a | {a} | **a**; d lies 8 codes away (48-49) |
+| 11 | m 7 / n 5 (conflict) | 10 n | 12 o | {n, o} | **n**; m lies at 9 |
+| 5 | k 1/1 | 4 k | 6 l | {k, l} | k consistent |
+| 14 | o 1/1 | 13 o | 17 p | {o, p} | o consistent |
+| 37 | y 1/1 | 36 y | 39 a | {y, z, a} | y consistent |
+| 43 | a 1/1 | 42 a | 44 b | {a, b} | a consistent |
+| 49 | d 1/1 | 47 c | 50 e | {c, d, e} | d consistent, and 49 is the only d slot on file (48 absent from the ciphertext, 40's d-votes aside) |
+| 65 | i 1/1 | 62 i | 4 k (wrap) | {i, j, k} | i consistent |
+
+### What result supports which value (written before the run)
+
+- **Order model supported** = real descents at or below the minimum of the 1,000 shuffles (p < 0.001) AND
+  leave-one-out accuracy >= 90% (>= 32/35) with the shuffled accuracy clearly lower at a wider mean bracket. Then the
+  brackets are a usable prior and the registered predictions for the native-resolution crop pass are: **40 = a** and
+  **11 = n** (both against the current majority vote), and the six single-context values are consistent with their
+  brackets (which does not raise any of them above M, rule 4). key.tsv stays 'd|a' and 'm|n' until the crop pass.
+- **Order model not supported** = accuracy under 90%, or the shuffles reaching the real descent count, or the shuffled
+  accuracy within 10 points of the real one. Then the bracketing prior has no discriminating power at this K and no
+  prediction for 40 or 11 is registered; the crop pass runs blind to both, and this instrument is logged
+  "untested-by-this-tool" for the two conflicts (rule 3's third-attempt clause does not apply: one attempt).
+- **For 40 under a supported model, two outcomes are written down for the crop pass:** (i) the 14 d-sense "40"
+  positions read 48 or 49 at native resolution (0 vs 8/9 confusion; then 40 = a and the model holds everywhere), or
+  (ii) they read 40 (then 40 is a genuine d|a polyphone or clerk slip, the model's prediction for 40 FAILS, and the
+  d-votes stand -- the prior does not override the image). OX-VBV's three screen-crop samples (one d-sense) all read
+  "40", which already leans to (ii) for that one position; the native crops decide.
+- **For 11 under a supported model:** the 7 m-sense positions have no digit-confusion route to 9, so if the crops
+  confirm "11" at met/om/somme, 11 is a genuine m|n polyphone (or n with alignment slips at those words) and the
+  bracket prediction for 11 FAILS; it is logged as such, and m|n stays.
+- Whatever the result, no code's grade changes in this step and reading.txt is not regenerated.
+
+### Run (filled in after the script ran, 2 Oct 2026 02:0x UTC)
+
+Script: `tools/key_order_test.py` (written for this step, shared under tools/ per Usage 8; offline test
+`tools/tests/test_key_order_test.py`, 15/15 pass). Command and output, verbatim:
+
+```
+$ python3 tools/key_order_test.py ciphers/vanbeuningen-dewitt-1657/key.tsv --grades C --query 40 11 5 14 37 43 49 65 --shuffles 1000 --seed 1
+key ciphers/vanbeuningen-dewitt-1657/key.tsv: 35 attested codes at grade C; alphabet read as starting at 'k' (best rotation)
+descents: real 1 [20 u -> 21 r] | shuffle mean 15.868 min 10 p05 13 (N=1000) | P(shuffle <= real) = 0.0
+leave-one-out bracket: real 34/35 = 0.971 at mean width 3.06 letters [misses: 20 u (bracket 17 p .. 21 r = pqr)] | shuffle hits mean 18.163 p95 25 max 29 at mean width 12.54 | P(shuffle >= real) = 0.0
+bracket 40 (on file d|a, grade M): 39 a .. 41 a -> {a}
+bracket 11 (on file m|n, grade M): 10 n .. 12 o -> {n,o}
+bracket 5 (on file k, grade M): 4 k .. 6 l -> {k,l}
+bracket 14 (on file o, grade M): 13 o .. 17 p -> {o,p}
+bracket 37 (on file y, grade M): 36 y .. 39 a -> {y,z,a}
+bracket 43 (on file a, grade M): 42 a .. 44 b -> {a,b}
+bracket 49 (on file d, grade M): 47 c .. 50 e -> {c,d,e}
+bracket 65 (on file i, grade M): 62 i .. 4 k -> {i,k}
+```
+
+Seed 2 (1,000 shuffles): descents shuffle mean 15.9, min 10; leave-one-out shuffle hits mean 17.9/35, max 30 at
+mean width 12.5; the real numbers do not change. `--no-merge` (i/j and u/v kept apart, 300 shuffles): real 1
+descent, 34/35, same miss; shuffle mean 16.0 descents, 17.8/35 hits. 0 network requests; 0 vision calls.
+
+**Result against the pre-registered reading.** Every number landed where the prediction put it: real descents 1
+(the one named exception, 20 u/v -> 21 r) against a shuffle minimum of 10 over 1,000 draws (P = 0.0); leave-one-out
+34/35 = 97.1% at a mean bracket width of 3.06 letters, the one miss being the predicted one (20, bracket p..r),
+against a shuffle mean of 18.2/35 (52%) at a mean width of 12.5 letters, shuffle maximum 29/35 (P = 0.0). This is
+the "order model supported" outcome as written above, so the registered predictions for the native-resolution
+crop pass stand: **40 = a** (bracket {a}, 39 a .. 41 a) and **11 = n** (bracket {n, o}, 10 n .. 12 o), both
+against the current majority vote, with the two written-down ways each prediction can fail on the image (the 14
+d-sense "40" positions reading 40 rather than 48/49; the 7 m-sense "11" positions confirmed as 11). The six
+single-context values (5 k, 14 o, 37 y, 43 a, 49 d, 65 i) all lie inside their brackets ({k,l}, {o,p}, {y,z,a},
+{a,b}, {c,d,e}, {i,k}; with i/j merged the last bracket has no j), which is consistency, not a second context:
+all six stay M (rule 4). key.tsv, reading.txt and reading_tokens.tsv are unchanged by this step;
+`tools/decode_key.py ciphers/vanbeuningen-dewitt-1657 --check` was not re-run because no reading input changed.
+
+Control adequacy (rule 3): the shuffle re-assigns the 35 letter labels over the 35 code numbers, which is the
+axis both statistics measure, so it could have matched the real key and did not (10-30 descents, 9-29 hits across
+draws, never 1 or 34); a known-answer check is built in (leave-one-out on the C codes themselves), so the bracket
+rule's own reliability is measured on this key, not assumed. What it does not test: whether the clerk kept the
+order at the specific codes 40 and 11 -- that is exactly what the crop pass decides, and this prior only names
+which outcome to look for first.
+
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
 Read so far: 446 of 517 coded tokens at grade C (86.3%); 516 of 517 carry a value (70 M, 1 U = code 106). Source: `tools/decode_key.py ciphers/vanbeuningen-dewitt-1657 --check` re-run 2 Oct 2026 01:02 UTC ("tokens 862: C 446, M 70, U 1, clear 345", reading up to date), M/U tally by sign from reading_tokens.tsv: code 40 x31, code 11 x17, [MARK] x9, [ILLEGIBLE] x2, 43 x2, 37 x2, 5/14/49/65 x1 each, transcription-M 50/20/23 x1 each, 106 x1. Below Bourdeau's 95% read bar (sources/cyphersolver/2026-10-01/writeup-SKILL.md section 0a). The plaintext is in print (AUDIT.md item 1, N1), so what remains is grading the key, not recovering unknown text.
-- code 40 (31 tokens, value d|a, conflicts.tsv row 40) - blocker: not-attempted; three print alignments (round 1 by hand, align.py NW voting, the difflib re-derivation) all reproduce the 14 d / 10 a split, so print alignment is spent on this code (rule 3 third-attempt clause: no fourth alignment pass); correction to the classifier: the image was sampled at three code-40 positions, not two (AUDIT.md section 3: L03 "40,50" read in situ as "de heer", a d-sense position that align.py logged as "'" against print "'t"; L04 "Staet" and the 0211 "agent", both a), all three read as "40" on the screen-rendered cipher_crops, so the "d-votes are a misread 48/49" hypothesis is untested but not favoured by the sample; d otherwise has only code 49 (1 token) although d is among the commonest Dutch letters, so the outcome 40 = genuine d|a polyphone or clerk slip must be pre-registered beside the bracketing outcome 40 = a; next: write both predictions into NOTES.md, then `tools/iiif_lines.py --image images/NL-HaNA_3.01.17_1538_0210.jpg` and `_0211.jpg` (native 4880x3730 / 4770x3720 on disk, no fetch), pasting the command output, and run 2 blind passes per leaf plus 1 reconciliation over the line crops holding codes 40 and 11, the 9 [MARK], L37, L44-L46, L63 and the suspect clear words (5 calls at about $1.5 per call, reconciliation priced as a full unit per the bMALS lesson), ~$12
-- code 11 (17 tokens, value m|n, conflicts.tsv row 11) - blocker: not-attempted; vote 7 m (om, somme, ambassadeur, commercie, met L46, met L53, prompte) against 5 n (van, penningen x2, kennen, sonder); the bracketing order (m 9, n 10, o 12-14) predicts n, but the order is not strict (code 20 = u, 6/7 votes, sits between p 17 and r 21), and the two "met" contexts want m, so this is a prediction to register, not a reading; next: same line-crop pass as code 40, positions re-read blind with both outcomes written down first, ~$1 marginal
+- code 40 (31 tokens, value d|a, conflicts.tsv row 40) - blocker: not-attempted; three print alignments (round 1 by hand, align.py NW voting, the difflib re-derivation) all reproduce the 14 d / 10 a split, so print alignment is spent on this code (rule 3 third-attempt clause: no fourth alignment pass); correction to the classifier: the image was sampled at three code-40 positions, not two (AUDIT.md section 3: L03 "40,50" read in situ as "de heer", a d-sense position that align.py logged as "'" against print "'t"; L04 "Staet" and the 0211 "agent", both a), all three read as "40" on the screen-rendered cipher_crops, so the "d-votes are a misread 48/49" hypothesis is untested but not favoured by the sample; d otherwise has only code 49 (1 token) although d is among the commonest Dutch letters, so the outcome 40 = genuine d|a polyphone or clerk slip must be pre-registered beside the bracketing outcome 40 = a (done 2 Oct 2026: both written in the GAPS section above, bracket {a} from 39 a .. 41 a, order model supported 34/35 vs 18/35 shuffled); next: `tools/iiif_lines.py --image images/NL-HaNA_3.01.17_1538_0210.jpg` and `_0211.jpg` (native 4880x3730 / 4770x3720 on disk, no fetch), pasting the command output, and run 2 blind passes per leaf plus 1 reconciliation over the line crops holding codes 40 and 11, the 9 [MARK], L37, L44-L46, L63 and the suspect clear words (5 calls at about $1.5 per call, reconciliation priced as a full unit per the bMALS lesson), ~$12
+- code 11 (17 tokens, value m|n, conflicts.tsv row 11) - blocker: not-attempted; vote 7 m (om, somme, ambassadeur, commercie, met L46, met L53, prompte) against 5 n (van, penningen x2, kennen, sonder); the bracketing order (m 9, n 10, o 12-14) predicts n, but the order is not strict (code 20 = u/v, 6/7 votes, sits between p 17 and r 21 -- the only descent among 35 C codes, 2 Oct 2026 run), and the two "met" contexts want m, so this is a prediction to register, not a reading (registered 2 Oct 2026: bracket {n,o}, failure condition written); next: same line-crop pass as code 40, positions re-read blind with both outcomes written down first, ~$1 marginal
 - transcription gaps: 9 [MARK] (L05, L12, L15, L19, L23, L38, L51, L55, L66), [ILLEGIBLE] L63.4, L37 pos.10 cluster ("20"/"50"/"250"), transcription-M 50@L18, 20@L37, 23@L48 - blocker: not-attempted; OX-VB's two passes read full-leaf JPEGs with no crop tool and NOTES "Cipher transcription" says L37 pos.10 "needs a fresh look at a proper high-resolution crop"; never re-read on line crops; next: same line-crop pass as code 40, ~$1 marginal
 - about 24 suspect "clear" word types inside the 345 clear tokens (sonell x5, datums x4, stiptgesantwoort, couromen, godag, goederhijzeerd, cristien, indagijt, gebal, hierm, verwehr-, aansier, Willemsmaker, gepersiadeeren, dubelijck, oindsighte, versaeckeren, vereenigt, bedelckt, fredberg?, vercke, stt, luv.) - blocker: not-attempted; NOTES "Flagged: plain-word signs that are probably mistranscribed cipher" says none were re-read from the image; if any are digit runs they change the 517 coded-token total and may add contexts for codes 40, 11 and the single-context codes; next: add their lines to the same crop list, re-tokenise any digit runs in ciphertext.tsv, re-run align.py --build and decode_key.py --check, ~$2
 - code 106 (1 token, grade U, L45.8) - blocker: not-attempted; sits in the misaligned stretch logged in the diff table as "L45 ho / m vs van / Sweden", beside 105 (Sweden) in the nomenclator range, with transcription-M clear words around it (sier, eenigst, mit, heer, geeft); nobody has hand-aligned L44-L46; next: after the crop pass re-reads L44-L46, hand-align that stretch against plaintext_print.txt around "van Sweden", ~$1
-- single-context homophones 5 (k), 14 (o), 37 (y, x2), 43 (a, x2), 49 (d), 65 (i): 8 tokens graded M on one supporting word each - blocker: not-attempted; reclassified from open-codes: key.tsv shows "align.py vote 1/1" for each, but two internal steps narrow them and neither has run: (i) all six values fall inside the alphabetic blocks the C-graded codes form (k 4-5, o 12-14, y 36-37, a 39-43, d 48-49, i 61-65), testable against an order-shuffle null, and (ii) re-tokenised suspect words and the Amsterdam sibling (next gap) can supply second contexts; a structural prior alone does not upgrade a grade (rule 4), it names which ones to check first; next: a script counting order violations among the 44 C-graded letter codes against 1,000 shuffled letter-to-code assignments (no network), written up as the pre-registered prediction for the crop pass, ~$1
+- single-context homophones 5 (k), 14 (o), 37 (y, x2), 43 (a, x2), 49 (d), 65 (i): 8 tokens graded M on one supporting word each - blocker: open-codes (bracketing done 2 Oct 2026, GAPS-vanbeuningen-dewitt-1657: all six inside their C-graded brackets, order model 34/35 leave-one-out vs 18/35 shuffled, section above; a second context each still needed, rule 4); was: not-attempted; reclassified from open-codes: key.tsv shows "align.py vote 1/1" for each, but two internal steps narrow them and neither has run: (i) all six values fall inside the alphabetic blocks the C-graded codes form (k 4-5, o 12-14, y 36-37, a 39-43, d 48-49, i 61-65), testable against an order-shuffle null, and (ii) re-tokenised suspect words and the Amsterdam sibling (next gap) can supply second contexts; a structural prior alone does not upgrade a grade (rule 4), it names which ones to check first; done 2 Oct 2026: `tools/key_order_test.py` (35 C-graded letter codes, 1,000 shuffles, descents 1 vs shuffle min 10, brackets printed above); next: second contexts from the re-tokenised suspect words and the Amsterdam sibling, in the crop pass, ~$1 marginal
 - Van Beuningen's cipher letters to the Burgomasters of Amsterdam, Copenhagen 28 Oct 1657 (Fruin/Kernkamp, Brieven van Johan de Witt I, 1906, pp.440-441, IA werken28nethgoog) - blocker: not-attempted; missed by the classifier: AUDIT.md (second-audit list, item 2, the Fruin/Kernkamp 1906 entry) records that Kernkamp deciphered three of these letters "omdat de sleutel van het geheimschrift voor in de portefeuille ligt" and quotes the plaintext, but the key table is not printed and nobody has looked for the portfolio or its key in the Amsterdam city archive; same writer, same place, nine days later, so it may be the same key and would give period (grade H) values or second contexts for codes 40, 11 and the single-context codes; next: search the Stadsarchief Amsterdam catalogue for the burgomasters' "missiven" portfolio of 1657 and record its availability flag and shelfmark (catalogue record first, per the access playbook), ~$2
 - other Van Beuningen letters of 1656-1658 in NA 3.01.17 inv.1536-1541, including QUEUE HU7 (15 Mar 1656, Brieven aan Johan de Witt I p.328, groups 154/250/254/264 Fruin left unread with "het cyfer van de heer Nieupoort") - blocker: not-attempted; none opened (NOTES "Other letters in the same key"; HU7 never got a folder); only ff.206-211 of inv.1538's 289 images are on disk; next: full-text search the Fruin/Japikse Deel 1 OCR (Huygens retroboeken dewitt) for "cijfer"/"cyfer" footnotes on Van Beuningen letters 1656-1658 to list which are in cipher, then fetch only those leaves through the inv.1538 METS, ~$3
 - L72 signature (1 [ILLEGIBLE] token) - blocker: illegible; a flourish, not readable text (NOTES "Cipher transcription"); the plain copy f.209 gives the signer as Van Beuningen, so no information is lost
@@ -585,7 +691,45 @@ Read so far: 446 of 517 coded tokens at grade C (86.3%); 516 of 517 carry a valu
 - [x] clear-pages: the plain copy ff.208-209, printed as Brieven aan Johan de Witt I pp.405-406 (plaintext_print.txt), is the decipherment itself; rounds 1 and 2 aligned it word for word (align.py), 446 of 517 coded tokens at C
 - [ ] known-keys: done: Fruin/Kernkamp 1906 pp.71-72 prints De Witt's own February 1653 key for his letters TO Van Beuningen, compared value by value with key.tsv in AUDIT.md (AUD2): does not match (Fruin 50-51=s against our 50-52=e, 24-25=h against 25-26=t, 44-45=p against 44=b); KEY-OFFICES.tsv row 50 and KEY-DESIGN.tsv rows 171-172 hold only this target's own key; sources/decode/keys-all-2026-09-28-merged.tsv has no De Witt, Van Beuningen or Nieupoort key. Not tried: the Amsterdam portfolio key of autumn 1657 (Kernkamp p.440), Nieupoort's key named by Fruin (HU7), the NA 3.01.17 EAD grepped for cijfer/sleutel/chiffre items 1655-1660 (OX-VB grepped it only for "Beuningen"), Tomokiyo; planned: re-fetch the EAD (one request) and grep it, ~$2
 - [x] print: Fruin/Japikse 1919 pp.405-406 (plaintext, footnote "onopgelost cijfer"); Fruin/Kernkamp 1906 read in full from IA OCR (pp.71-72 key, pp.440-441 footnote, no cipher note on the 19/29 Sept letter); Rowen 1978 via IA full-text search; JSTOR-QUEUE row 73 (done); OpenAlex, Semantic Scholar, CrossRef; print_check.py. No prior key or decipherment located (AUDIT.md item 2, N3); Postma 2006/2007 unread limits the novelty class, not the reading
-- [ ] key-rebuild: round 1 hand alignment (13 letters / 25 codes), round 2 align.py NW voting (21 letters / 53 codes), difflib re-derivation (40 of 40 codes agree, both conflicts reproduced). Print alignment is retired for codes 40 and 11 (three passes, same split each time; no fourth). Untried different instrument: alphabetic bracketing with an order-shuffle control (C-graded codes fall in blocks k 4-5 ... y 36-37 and a 39-43 ... i 61-65, one exception 20 = u), predicting 40 = a and 11 = n; planned as a ~$1 script whose output is written down as the prediction before the image pass, never used alone to change key.tsv
+- [ ] key-rebuild: round 1 hand alignment (13 letters / 25 codes), round 2 align.py NW voting (21 letters / 53 codes), difflib re-derivation (40 of 40 codes agree, both conflicts reproduced). Print alignment is retired for codes 40 and 11 (three passes, same split each time; no fourth). Different instrument tried 2 Oct 2026: alphabetic bracketing with an order-shuffle control (`tools/key_order_test.py`: 35 C codes, 1 descent vs shuffle min 10, leave-one-out 34/35 vs 18/35), predicting 40 = a and 11 = n, written down as the prediction before the image pass and not used to change key.tsv; what remains for this bullet is the image pass itself
 - [ ] image-check: done in part: OX-VB settled 7 digit-vs-digit disagreements and the closing formula on tight crops; OX-VBV sampled L03-L05 and one 0211 code-40 position on the screen-rendered cipher_crops (three code-40 readings, one d-sense and two a-sense, all "40"). Never re-read on native-resolution line crops: the 31 code-40 and 17 code-11 positions, 9 [MARK], L63, L37 pos.10, L44-L46, about 24 suspect clear words. Planned: tools/iiif_lines.py --image on the local 0210/0211 leaves, 2 blind passes per leaf plus 1 reconciliation, ~$12
 - [x] retry: round 2 re-ran all 517 coded tokens with the extended key and regraded them (446 C / 70 M / 1 U); decode_key.py --check re-run 2 Oct 2026 exits 0. A further retry (align.py --build, then decode_key.py --check) follows the image pass and should include a third check on C-codes 41 (a), 56 (f) and nomenclator 172/173, which rest on one pass only (NOTES round-2 re-derivation section)
-Verdict: keep going: 8 internal gaps; cheapest next: order-shuffle bracketing script for codes 40, 11 and the six single-context codes, written down as the pre-registered prediction (no network), ~$1; then the EAD cijfer/sleutel grep and the Stadsarchief Amsterdam portfolio lookup, ~$2 each, before the ~$12 native-resolution crop pass
+Verdict: keep going: 8 internal gaps (the bracketing step done 2 Oct 2026, predictions 40 = a and 11 = n registered); cheapest next: the NA 3.01.17 EAD re-fetch (one request) grepped for cijfer/sleutel/chiffre items 1655-1660, ~$2; then the Stadsarchief Amsterdam catalogue record for the burgomasters' 1657 missiven portfolio (lead: www.amsterdam.nl/stadsarchief/stukken/macht/geheimschrift/, a 6 Sept 1656 Van Beuningen cipher letter with its key, 403 to the fetcher on 2 Oct 2026), ~$2; then the ~$12 native-resolution crop pass reading the registered predictions blind
+
+## Web and blog check (GAPS-vanbeuningen-dewitt-1657, 2 Oct 2026)
+
+Run 2 Oct 2026 02:0x UTC (clock read) by GAPS-vanbeuningen-dewitt-1657 (account-4): the ten WebSearch queries and two page opens by a Sonnet subagent, the three blogs' own search pages by the worker. Status word unchanged (a search result, not a novelty verdict, rule 10).
+
+```
+disk grep: sources/cryptiana: grep -rli "beuningen" returned no file at all (sources/cryptiana/web/dutch.htm does not contain "beuningen" either) -- 0 requests
+query: "Van Beuningen" "De Witt" 1657 cipher -- WebSearch -- 10 results, 3 plausible
+query: "Van Beuningen" "De Witt" 1657 cijfer geheimschrift Kopenhagen -- WebSearch -- 10 results, 2 plausible
+query: "3.01.17" 1538 cijfer OR cipher -- WebSearch -- 9 results, 0 plausible
+query: "onopgelost cijfer" "Van Beuningen" -- WebSearch -- 9 results, 0 plausible
+query: "Rosewinge" 1657 -- WebSearch -- 9 results, 0 plausible (Thurloe State Papers snippets about Rosewinge as Danish envoy; no cipher)
+query: Van Beuningen De Witt 1657 cipher copy -- WebSearch -- 10 results, 1 plausible (our own repo PR #11)
+query: "Van Beuningen" cipher solves Claude OR GPT -- WebSearch -- 9 results, 0 plausible (Claude/"Cyphral Distich" 1653 stories, not this letter; read from snippets only, not opened)
+query: site:scienceblogs.de/klausis-krypto-kolumne Beuningen OR "De Witt" cipher -- WebSearch -- 10 results, 0 plausible (engine did not apply site filter; no Beuningen/De Witt hit)
+query: site:cryptiana.blogspot.com Beuningen OR "de Witt" -- WebSearch -- 9 results, 0 plausible (only Wikipedia; no blog hit)
+query: site:ciphermysteries.com Beuningen OR "De Witt" -- WebSearch -- 9 results, 0 plausible (only Wikipedia; no blog hit)
+hit: https://github.com/NoAutopilot/cipher-lab/pull/11 -- this repository's own second-opinion PR "[SO-VANBEUNINGEN-1657]" (our ChatGPT runner loop, verified by V6-SOCHK 25 Sept 2026), not an independent source; no external decipherment cited -- comment thread: read (2 comments, both repo-internal)
+hit: https://www.amsterdam.nl/stadsarchief/stukken/macht/geheimschrift/ -- WebFetch 403 Forbidden, not retried; search snippet concerns a different letter (Van Beuningen to the Amsterdam burgomasters, Copenhagen 6 Sept 1656, cipher key preserved in the burgomasters' archive), not this letter -- comment thread: not reachable
+hit: https://www.vriendenvandewitt.nl/assets/files/macht-en-daadkracht.pdf -- snippet only (not opened): general article on the Northern War; no mention of this cipher copy seen -- comment thread: none
+hit: https://www.nationaalarchief.nl/onderzoeken/archief/3.01.17/download/pdf -- snippet only (not opened): the 3.01.17 finding aid; does not mention a decipherment in snippet -- comment thread: none
+no decipherment or plaintext of this item located by these queries on 2 Oct 2026
+requests: WebSearch: 10, github.com: 1, www.amsterdam.nl: 1 (403)
+Direct searches on each blog's own search page by the parent worker (the engine ignored the site: filter above), 2 Oct 2026 02:0x UTC:
+query: scienceblogs.de/klausis-krypto-kolumne/?s=Beuningen -- Cipherbrain's own search -- "Wir konnten leider keine Beiträge finden" (0 posts); ?s="de Witt" -- 0 posts
+query: cryptiana.blogspot.com/search?q=Beuningen -- the Cryptiana blog's own search -- "No posts matching the query" (0 posts); search?q="de Witt" -- 0 posts
+query: ciphermysteries.com/?s=Beuningen -- Cipher Mysteries' own search -- first request answered HTTP 406 (Mod_Security) to a browser UA; the one permitted retry with the descriptive UA answered 200: "Nothing Found" (0 posts). Not searched for "de Witt" on this host (stopped after the 406, good-citizen rule).
+With 0 posts on all three blogs there is no comment thread to read; the blog step is covered by the blogs' own search, not by the engine.
+Lead for the Remaining-gaps "Amsterdam portfolio" bullet, not this step: the Stadsarchief Amsterdam page www.amsterdam.nl/stadsarchief/stukken/macht/geheimschrift/ (403 to the fetcher) is about a Van Beuningen cipher letter to the burgomasters of 6 Sept 1656 with its key preserved in the burgomasters' archive -- same writer, same post, a year earlier.
+requests (this worker): scienceblogs.de: 2, cryptiana.blogspot.com: 2, ciphermysteries.com: 2 (one 406, one retry 200)
+Gate re-run output follows.
+```
+
+```
+$ python3 tools/intake_gate_check.py vanbeuningen-dewitt-1657
+vanbeuningen-dewitt-1657: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```

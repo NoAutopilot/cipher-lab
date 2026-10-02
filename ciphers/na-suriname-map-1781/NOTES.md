@@ -537,7 +537,7 @@ rather than isolated confirmed words. Grade counts across all material on file: 
 label lines only); zero target-sheet tokens graded at all (none transcribed to the reliability bar this file
 requires).
 
-**Single best next step for a future lane:** settle the "van" vs "PAN" disagreement on 2039's cartouche line 2
+**Single best next step for a future lane** [run 2 Oct 2026, GAPS-na-suriname-map-1781: settled as "van", see "## GAPS-na-suriname-map-1781 (2 Oct 2026, account-4)" below]**:** settle the "van" vs "PAN" disagreement on 2039's cartouche line 2
 with one more independent, high-zoom read of that specific 3-glyph position (this is a fast, cheap, high-value
 check -- it either confirms digit `5`=v transfers out of sample too, strengthening the key, or reveals a second
 homophone/mis-reading that would need fixing before any target decode is attempted); then use 2077's
@@ -555,12 +555,54 @@ request). No other host touched. 2 Sonnet subagents (mechanical sign-coverage co
 2077; read-only, no file edits by either subagent). This worker's own direct reads used only images already
 on disk plus the one 2077 fetch above, all local PIL crops/zooms, no further network calls.
 
+## GAPS-na-suriname-map-1781 (2 Oct 2026, account-4)
+
+Brief: `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of the section below, run verbatim:
+one blind high-zoom read of the 3-glyph van-vs-PAN position on 2039's cartouche line 2 (`images/2039_cartouche.jpg`).
+
+**Where the position is.** On the crop `images/2039_cartouche.jpg` (1750x1185 px, native-resolution), the large
+title line reading "Spext 5Ah sf3r F," (the line RD03C and RD03D both call line 2; a shorter band sits above it)
+has its ink in rows y 150-215. A column ink profile over those rows gives the word runs x 667-800 (word 1),
+x 831-910 (word 2, the disputed 3-glyph word), x 929-1006 (word 3), x 1027-1068 (word 4). The crop sent to the
+blind reader is the box (822,135)-(920,222), enlarged 4x with PIL (Lanczos) to 392x348; a native-size copy is kept
+as `images/2039_cartouche_word2_native.jpg` (3 KB). No network request was made (0 requests, every host).
+
+**Two independent reads, recorded in this order.**
+1. This worker's own read, at 3x on the line crop (600,70)-(1100,235), written down before the blind call ran:
+   glyph 1 is a numeral-5 shape (flat top bar, short vertical, bowl at the bottom), unlike the looped long-s that
+   opens word 3 ("sf3r") on the same line; glyph 2 a Delta; glyph 3 the h-loop. Read: `5` `[delta]` `[h-loop]`.
+2. One blind Sonnet subagent call, given only the 4x word crop and the question (the two options for glyph 1:
+   numeral-5 shape vs looped long-s/p shape; no key, no notes, no context): "Glyph 1: a short flat-ish top stroke
+   at upper left, a short descending stroke, then a thick curving bowl ... It is not a tall looped long-s or p,
+   since it has no tall ascender or descender loop" -- option A (numeral 5) at 75%; glyph 2 "Greek capital Delta,
+   or Latin A without a crossbar" at 70%; glyph 3 "Latin lowercase h" at 85%; "Overall the word reads visually
+   like '5Δh'".
+
+**Result.** Both reads give `5` `[delta]` `[h-loop]`, which the 17-sign key.tsv reads as v-a-n: "van". RD03D's
+`[s-loop][delta][h-loop]` = "PAN" at this position was a single uncorroborated subagent pass and is now outvoted
+3 reads to 1 (RD03C's by-eye read, this worker, the blind reader); the three reads that agree were made at 3-4x
+on the native crop, RD03D's at the resolution of a whole-cartouche pass. Grade of the word: S (cryptanalytic
+transfer of a C-grade key to a sheet it was not built from, with no plaintext on this sheet to check against;
+3 tokens, 3 S, 0 M). The control for this step is the design of the read itself: the blind reader had the two
+options and nothing else, and a shape that could have been read as the long-s/p option was in fact read as the
+numeral at 75%; this is a transcription check, not a solver family, so rule 3's matched synthetic control does
+not apply. What it changes: the key's digit `5`=v is now seen out of sample on a target sheet (previously only
+in 2007A's and 2061's glossed "van"), and there is no second homophone or mis-reading to fix at this position
+before a 2039 decode is attempted. What it does not change: no reading of 2039 exists yet (no ciphertext.tsv,
+no two-pass transcription), the status stays `partial`, and `tools/decode_key.py ciphers/na-suriname-map-1781
+--check` still exits 0 on the unchanged key-source reading (56 tokens: C 37, M 1, U 18). Vision calls: 1
+subagent call; this worker's own looks: 2 (the line crop at 3x, the third-title-line crop at 3x that located the
+line; the orientation look did not carry a read).
+
+Not found: no prior reading of this word or of 2039's cartouche anywhere in this folder's search log or in the
+web and blog check at the end of this file (a search result, rule 10, not a novelty verdict).
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have been transcribed to this folder's two-pass bar, so there is no target ciphertext.tsv and no reading (RD03D "State at close"). The key-source control (self-consistency only) is 37 of 56 tokens at grade C (66.1%), with M 1 and U 18 (reading.txt header; tools/decode_key.py --check exits 0, rerun on a scratch copy 1 Oct 2026). RD03D's "C 56, M 1, U 18" is a slip for the 56-token total. The key has 17 grade-C signs (key.tsv), period and ours.
 - 2007A key-source remainder: Nota clauses B/D/E/F (about two-thirds of the block), the Remarque paragraph after "Signatuure", and the other enciphered map labels on 2007A whose plain twins are on 2007B - blocker: not-attempted; the plain text is in hand (scratch_2007b_nota_plain.txt; images/2007b_remarques_crop.jpg is on disk but not transcribed). Only pass A of Nota B/D/E/F survives as a file (scratch_notaBDEF_passA.tsv); pass B exists only in the RD03C transcript. Each attempt so far gained signs (13, then 15, then 17), so rule 3's third-attempt clause does not apply. The з/Signatuure conflict belongs here too: single-reader zoom re-reads of that one word on crops already at native resolution failed twice (RD03C, RD03D), so settle з from its other occurrences in the aligned Remarque, not from a third read of the same word; next: transcribe 2007B's plain Remarque, run a fresh blind pass B over the Nota B/D/E/F crops, add a glyph-token option to tools/interlinear_align.py (it is numeral-only today; Usage 8, no private copy), and align against 2007B's plain text seeded with the 17 signs, ~$9
 - 2077 (fortress Zelandia): the 3-line title cartouche after "PLAN"; the right-hand "Explicatie der Signatuuren" list (about 25 entries a-z, plain and cipher mixed); the second cipher "Explicatie" list and profile lines inside the left inset panel; the enciphered words inside the plain top-left Nota; the cipher river and land labels - blocker: not-attempted; RD03D sampled only the cartouche and 2 legend entries (9/27 high-confidence). The classifier undercounted this sheet: images/2077_overview.jpg shows two cipher legends, not one list of about 18. An untried crib is on disk: 4.VEL 2078 (images/2078_overview.jpg) is Wollant's plain plan of the same fort with a plain lettered Nota legend (a. oude Inspectie, b. Artillerie Caserne en Monteerings Kamer, l. Corps de Garde, u. Beetehuys, w. Woning van den Opsigter der Directie Slaaven, ...), and those building names recur among 2077's own plain entries (Menagerie, Ambagts Slaaven van de Monteerings-Kamer, Beetehuijs, Opziger). 2076 (plain outworks plan, legend A-S) is a second candidate crib; next: cut native IIIF crops of both 2077 legends and the cartouche with tools/iiif_lines.py (the image on disk is capped at 5000 px against a native 10711), plus a crop of 2078's Nota; run 2 blind passes + 1 reconciliation per 2077 block; align each cipher entry against its building name from 2078/2076 and 2077's own plain entries, ~$10
 - 4.VEL 2061 (Redout Leyden): the No.1-6 battery list and the a-g legend below the glossed title and battery-header block - blocker: not-attempted; the gloss was checked on the header only (VX-CS04, RD03B). RD03B saw plain "M" and numerals mixed with cipher abbreviation-words (images/2061_title_topleft.jpg) and left them unread. The text after Atlas of Mutual Heritage page 2218's "The legend in cipher on Wollant's map is as follows: (...)" is elided in this file and was never captured; next: re-read AMH page 2218 in full and capture any plain legend text, then cut native line crops of the battery list and a-g legend with tools/iiif_lines.py and check how far the gloss covers them, ~$4
-- 4.VEL 2039 (fortress Nieuw Amsterdam): the 3-line title cartouche (including the van-vs-PAN position on line 2), the a-u "Verklaringe der Letteren" legend, the clause after each Bastion/Redan label, and the lower-left Remarque - blocker: not-attempted; there is one uncorroborated pass on the title (46/72 glyphs matched, RD03D) and no ciphertext.tsv. The sheet is copy-free at 11267x8656, and Arabic numerals are plain (RD03C). No search has been made for a plain Wollant counterpart of this fort among the other 4.VEL 2030A5-2090C items (VX-CS04 read those 95 records for cipher only); next: settle van-vs-PAN with one blind high-zoom read (~$2); search the 95-item block for a plain Nieuw Amsterdam plan to use as a legend crib; then cut iiif_lines crops of the cartouche, legend and Remarque, run 2 blind passes + 1 reconciliation per block, build ciphertext.tsv and decode it with decode_key.py, ~$12
+- 4.VEL 2039 (fortress Nieuw Amsterdam): the 3-line title cartouche (the van-vs-PAN position on line 2 is settled: "van", 2 Oct 2026, GAPS-na-suriname-map-1781, two independent high-zoom reads agree with RD03C against RD03D's single pass, see the section above), the a-u "Verklaringe der Letteren" legend, the clause after each Bastion/Redan label, and the lower-left Remarque - blocker: not-attempted; there is one uncorroborated pass on the title (46/72 glyphs matched, RD03D) and no ciphertext.tsv. The sheet is copy-free at 11267x8656, and Arabic numerals are plain (RD03C). No search has been made for a plain Wollant counterpart of this fort among the other 4.VEL 2030A5-2090C items (VX-CS04 read those 95 records for cipher only); next: search the 95-item block for a plain Nieuw Amsterdam plan to use as a legend crib (~$2); then cut iiif_lines crops of the cartouche, legend and Remarque, run 2 blind passes + 1 reconciliation per block, build ciphertext.tsv and decode it with decode_key.py, ~$10
 - 4.VEL 2046 (redoubt Purmerent): the title cartouche and the enciphered legend and profile text - blocker: not-attempted; there is one uncorroborated title pass (36/56 glyphs matched; best run only "DER", RD03D). No gloss or twin is on file, but nobody has searched the 2030A5-2090C block for a plain Purmerent plan; next: search the block for a plain counterpart, then after the key is extended use the same protocol as 2039 (iiif_lines crops, 2 blind passes + 1 reconciliation, decode_key.py), ~$9
 
 ## Escalation (1 Oct 2026)
@@ -569,6 +611,46 @@ Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have 
 - [ ] known-keys: KEY-DESIGN.tsv row 127 is this target's own 17-sign key only. KEY-OFFICES.tsv has no Suriname, WIC or Wollant row, and no design_prior.py run is recorded in this folder. Wollant's papers and Governor Texier's 1781 correspondence (Sociëteit van Suriname, NA 1.05.03) have not been searched for a key sheet. Planned: an NA catalogue search of 1.05.03 for 1781 "cijfer"/"sleutel" items, a design_prior.py run, and a KEY-OFFICES grep for WIC/Suriname 1770-1790, ~$4.
 - [x] print: VX-CS04 read Atlas of Mutual Heritage pages 2025 (VEL2039) and 2218 (VEL2061) on 25 Sept 2026: the legends are enciphered and "niet getranscribeerd". It also ran 6 web searches and checked the cached DECODE dumps and both solver repos; none has a decipherment. Not opened: den Heijer's Grote Atlas van de WIC II (2012), which AMH cites as its source, and Koeman's Atlantes Neerlandici. AMH page 2218's legend sentence is elided in this file (gap 4 captures it).
 - [ ] key-rebuild: the key has been extended only by hand-aligning known plaintext (13, then 15, then 17 signs; RD03, RD03B, RD03C). Each pass gained signs, so this is not retired under rule 3. No DP/EM alignment, annealing or LM-context instrument has been tried. Planned: tools/interlinear_align.py with a glyph-token option, aligning 2007A's Nota and Remarque against 2007B, seeded with the 17 signs (gap 1), and then the 2077 legend against 2078's names (gap 2).
-- [ ] image-check: done in part. RD03D re-read "zwaare" at 5x and found the λ/ψ clash was a mis-segmentation. The з/Signatuure single-word re-read has failed twice (RD03C, RD03D) on crops already at native resolution, so it is not to be repeated with the same instrument; it moves into gap 1's alignment. Never run: the van-vs-PAN check on 2039 cartouche line 2 (images/2039_cartouche.jpg), which is this file's named single best next step and NEXT-STEPS.tsv's runnable row. Planned: one blind high-zoom read, ~$2.
+- [ ] image-check: done in part. RD03D re-read "zwaare" at 5x and found the λ/ψ clash was a mis-segmentation. The з/Signatuure single-word re-read has failed twice (RD03C, RD03D) on crops already at native resolution, so it is not to be repeated with the same instrument; it moves into gap 1's alignment. The van-vs-PAN check on 2039 cartouche line 2 was run 2 Oct 2026 (GAPS-na-suriname-map-1781): one blind 4x read plus this worker's own 3x read both give `5[delta][h-loop]` = "van", settling it against RD03D's single "PAN" pass. Still never run: a native-crop image check of 2061's battery list and a-g legend (gap 3). Planned: with gap 3, ~$4.
 - [ ] retry: there is no target-sheet ciphertext to rerun yet. The key-source decode is current (56 tokens: C 37, M 1, U 18). Before any target reading can be judged, a Dutch judge corpus from the right era is needed: tools/judge_plaintext.py has no "nl" corpus wired (its comment about nl_repo says so); nl20 is 1880-1920 novels and nl_dev is the Statenvertaling, and neither is matched to 1781 engineering prose. Planned: build an nl18 corpus (~$3, the V6-PTCORP precedent), then rerun every target group with the extended key and regrade.
-Verdict: keep going: 5 internal gaps; cheapest next: one blind high-zoom read of the 3-glyph van-vs-PAN position on 2039 cartouche line 2 (images/2039_cartouche.jpg), ~$2
+Verdict: keep going: 5 internal gaps; cheapest next: search the 4.VEL 2030A5-2090C block (95 catalogue records, VX-CS04 read them for cipher only) for a plain Nieuw Amsterdam plan to use as 2039's legend crib, ~$2
+
+## Web and blog check (GAPS-na-suriname-map-1781, 2 Oct 2026)
+
+Run first because `tools/intake_gate_check.py na-suriname-map-1781` exited 1 only for the missing CHECK-SOLVED-WEB step
+(28 Sept 2026 rule). Web search tool (US index), one query at a time; the three blogs by name; every plausible hit opened
+and its comment thread read. Hosts: web search 11 queries; scienceblogs.de 1 page; atlasofmutualheritage.nl 1 page;
+dbnl.org 1 page. `sources/cryptiana/` on-disk snapshot grepped for suriname / wollant / 4.VEL / zeelandia: 0 hits, 0 requests.
+
+Plain web searches (a):
+1. `Wollant 1781 Suriname kaart cijferschrift Nieuw Amsterdam` -- Delpher "Suriname in kaart gebracht", Rijksmuseum and NYPL
+   Suriname maps, Wikipedia Fort Nieuw-Amsterdam, NA 4.CAF finding aid, DBNL Wekker (OSO 7, 1988) "Suriname in
+   kaartencollecties". None names Wollant's cipher sheets. The Wekker article was opened: no mention of Wollant, 1781
+   fortification plans, cijferschrift or the 4.VEL numbers.
+2. `"4.VEL" 2039 OR 2046 OR 2061 OR 2007A cijferschrift Suriname Nationaal Archief` -- only general Nationaal Archief
+   (Suriname and NL) pages; no hit about these items.
+3. `"Generaal Plan van Defensie" Suriname 1781 cipher OR cijferschrift OR cypher` (the folder's most distinctive clear
+   phrase, 2007B's title) -- 20th-century Surinamese military history, NA finding aids 1.01.01.01 / 2.13.63 / 2.10.18; no
+   hit about this sheet.
+4. `Suriname fortification maps 1781 cipher legend Wollant deciphered OR decipherment OR ontcijferd` (the folder's own
+   descriptive title) -- Atlas of Mutual Heritage page 2123 "Plan of Fort Zeelandia" (opened: "Most or in some cases even
+   all of the annotation on these plans is in cipher"; the legend is "partly encrypted, not transcribed", twice; no
+   plaintext of any legend entry; source cited den Heijer 2012), AMH page 10141 "Map of the second Cordon of Defence"
+   (a different, plain item), and the 1689 Suriname ciphertext paper (dspace.ut.ee / ResearchGate, "Send someone to
+   finish Fredenburgh's works") -- that is NA 1.05.03 inv 219, 1689, the different item already logged above; not these
+   sheets.
+Blog searches (b), each run twice (once with a site: prefix, which the tool applied as a literal term, then with a
+domain filter):
+5. Cipherbrain (scienceblogs.de/klausis-krypto-kolumne), `Suriname Karte Chiffre 1781 Wollant Zeelandia Festung` -- no
+   post about this item; the one post surfaced, "Fünf kryptologische Cold Cases" (3 Apr 2021), was opened with its
+   comment thread: cigarette-case, Fair Game, Guy de Contet pigpen, Callimahos steganogram, Furlong postcard; no mention
+   of Suriname, Wollant, Zeelandia, Nieuw Amsterdam, Paramaribo or a map legend cipher.
+6. Cryptiana (cryptiana.blogspot.com, cryptiana.web.fc2.com), `Suriname map cipher Dutch 1781 Wollant Nieuw Amsterdam
+   fortification` -- no results on either domain; the on-disk snapshot grep above is also empty.
+7. Cipher Mysteries (ciphermysteries.com), `Suriname Dutch map cipher 1781 Wollant fortification legend` -- La Buse,
+   d'Agapeyeff, Bellaso, Tamarin Bay and Voynich posts only; none about a Dutch map of 1781, so no thread opened.
+Model-solve announcements (c): `Suriname 1781 map cipher "solves" OR "solved" Claude OR GPT OR ChatGPT cijferschrift
+   kaart` -- Kryptos K4, Cyphral Distich and generic AI-cipher pages; nothing about this item.
+
+Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, rule 10,
+never a novelty verdict). Status word unchanged (`partial`).

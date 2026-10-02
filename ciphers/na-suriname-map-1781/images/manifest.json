@@ -14,7 +14,8 @@
         "2039_overview.jpg": "full sheet, 2816px wide",
         "2039_cartouche.jpg": "title cartouche + explicatie a-r list, native-res crop",
         "2039_bastion_zoom.jpg": "Bastion Holland/Gelderland/Overijssel/Groningen lines, native-res crop, no interlinear gloss visible",
-        "2039_remarque.jpg": "Remarque paragraph (bottom left), native-res crop, no interlinear gloss visible"
+        "2039_remarque.jpg": "Remarque paragraph (bottom left), native-res crop, no interlinear gloss visible",
+        "2039_cartouche_word2_native.jpg": "GAPS 2 Oct 2026: native-size PIL crop (822,135)-(920,222) of 2039_cartouche.jpg, the disputed 3-glyph word on title line 2 (\"5[delta][h-loop]\" = van, two independent reads); no network fetch"
       }
     },
     {
@@ -80,23 +81,29 @@
       "title": "Platte grond van de Buytenwerken om het fortress Zeelandia...",
       "native_px": "9041x5190",
       "default_full_url": "https://service.archief.nl/api/file/v1/default/f1cdc5fa-7ab8-4ca7-b1c2-72f4788568cc",
-      "files": { "2076_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, NOT ciphered" }
+      "files": {
+        "2076_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, NOT ciphered"
+      }
     },
     {
       "invnr": "4.VEL 2077",
       "title": "Plan van de fortress Zelandia.",
       "native_px": "10711x5110",
       "default_full_url": "https://service.archief.nl/api/file/v1/default/cd3a65eb-7a10-497f-9c1e-373699a0e02d",
-      "files": { "2077_overview.jpg": "full sheet -- title cartouche + 'Explicatie der Signatuuren' legend entries (a,b,c...) ARE ciphered; 'Nota'/'Explicatie'/'Remarque' headings and body prose are plain Dutch. NOT flagged in NA's own scopecontent field.",
+      "files": {
+        "2077_overview.jpg": "full sheet -- title cartouche + 'Explicatie der Signatuuren' legend entries (a,b,c...) ARE ciphered; 'Nota'/'Explicatie'/'Remarque' headings and body prose are plain Dutch. NOT flagged in NA's own scopecontent field.",
         "2077_full.jpg": "RD03D 25 Sept 2026: default_full_url fetch, delivered capped at 5000x2385 (not the true 10711x5110 native size, same cap behavior as 2007B) -- 1 request, service.archief.nl",
-        "2077_legend_5000.jpg": "RD03D 25 Sept 2026: local PIL crop of 2077_full.jpg (3250,60)-(5000,700), the title cartouche + 'Explicatie der Signatuuren' legend block; no new network fetch" }
+        "2077_legend_5000.jpg": "RD03D 25 Sept 2026: local PIL crop of 2077_full.jpg (3250,60)-(5000,700), the title cartouche + 'Explicatie der Signatuuren' legend block; no new network fetch"
+      }
     },
     {
       "invnr": "4.VEL 2078",
       "title": "Plan van de teegenswoordigen staat der fortress Zeelandia...",
       "native_px": "8046x6210",
       "default_full_url": "https://service.archief.nl/api/file/v1/default/3e3a786c-b7c8-4388-9316-878e006be125",
-      "files": { "2078_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, signed 'Wollant', NOT ciphered" }
+      "files": {
+        "2078_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, signed 'Wollant', NOT ciphered"
+      }
     }
   ]
 }
