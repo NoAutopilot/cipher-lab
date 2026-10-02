@@ -15,7 +15,7 @@ the rate-limit window, which is the thing that actually stops work.
 | the owner | Max | seven-day | see session | allowed_warning | orchestrator 2,042 since 17 Sept; workers about 330 | 21 Sept 2026 |
 | noautopilotytbiz (same person, second account) | Max | five-hour | rolling | allowed | 235.5 for the session 23 Sept 15:12-23:16 UTC (orchestrator plus about 35 workers; the long conversation was the largest single cost); five-hour window allowed at close, no overage | 23 Sept 2026 23:16 UTC |
 | noautopilotytbiz, orchestrator wake 2 (session_01SepNMpYrr6L2EwqL43aTnm) | Max | five-hour | rolling | allowed | 50.75 for the orchestrator session 23 Sept 23:16 to 24 Sept 01:47 UTC (closed below its $60 cap), plus about 120 across its 20 workers (LEDGER rows of 24 Sept); cap $60 for the session itself | 24 Sept 2026 01:20 UTC |
-| account-4 (parent 1 session_01SEzoee67SivPooFpTkxMme, handed over 05:1x UTC 2 Oct to parent 2) | Max | five-hour | rolling (resetsAt 1790932800) | allowed | parent 1: 30.7 + 63 workers about 382 from 23:25 UTC 1 Oct to 05:10 UTC 2 Oct | 2 Oct 2026 05:1x UTC |
+| account-4 (parent 2 session_01SnKHiQk7k7VPDGhfcPeiVV from 05:13 UTC 2 Oct; parent 1 session_01SEzoee67SivPooFpTkxMme archived, 30.7 + 63 workers about 382 from 23:25 UTC 1 Oct to 05:10 UTC 2 Oct) | Max | five-hour | rolling (resetsAt 1790932800) | allowed (05:13 UTC read) | parent 2: wave 1 spawned 05:17 UTC, 11 sessions, caps total 52 | 2 Oct 2026 05:2x UTC |
 | | | | | | | |
 
 **Confirmed by the owner, 24 Sept 2026:** the project runs on a Claude Max subscription only, no API key, so no

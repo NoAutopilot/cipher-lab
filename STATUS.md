@@ -133,6 +133,26 @@ step on the 12 partial targets not queued to account 2 (moray-wood-1568 ... well
 "## Remaining gaps" Verdict line) and the split-check hits; not mine: the 12 NEXT-* rows in WORK-QUEUE.tsv, hessen-1824
 (found-solved by Bourdeau 28 Sept), debosnys-1883.
 
+**Parent 2, start (05:1x UTC 2 Oct, session_01SnKHiQk7k7VPDGhfcPeiVV, depth 1, Fable 5.1):** took over from parent 1 at
+05:13 UTC from hub-seed/SUCCESSOR-PROMPT-account4.md; parent 1 retitled ARCHIVED and archived (status read back). No
+check-in trigger survived the hand-over: a new one armed (trig_019Nn4VsQVdag44VaDw7nDef, fires 06:00 UTC, "account-4
+parent 2 check-in 1"). Standby: account-3's newest orchestrator line 04:44 UTC (29 min at takeover), no action. Spawned
+05:17 UTC, cheapest first, one target one job, all Fable 5.1: CLOSER-4 (the five idle sessions parent 1 listed;
+session_01PCavN2VALchJ2uxrqDzAa3), GAPS3-nevers-birago-fr3251-1572 (g-sign value fit, disk only, cap 4;
+session_015ibJEXVjwop8C7mTuVDwL4), GAPS3-pro3055-clinton-1779 (1778 Army List title page, cap 4;
+session_01TSsw7dmM8QVzh2gCnXkKcj), GAPS-intercepted-royalist-1646 (Evelyn iv 178-179 known answer, cap 5;
+session_01Jwvj8MwaLVjXarQso7TmWg), GAPS3-na-suriname-map-1781 (2045A/2042 eye-check + 2038 legend crib, cap 6;
+session_01Hghssrcc6qENKkctup4UBY), GAPS4-na-janssens-java-1811 (gap 4 LOCAL-QUEUE row, cap 3;
+session_01SGZgpt6kSxBrRaZwdw22rn), GAPS4-na-schonenberg-1678-1716 (re-spawn of the hung GAPS3: per-line Spanish reading +
+judge, cap 5; session_013FPWQzwkoivQfkHcL8Vvqb), GAPS2-mornington-1798 (Martin Vol. 2 p.311, cap 4;
+session_014WdBPsseuZTqQj1XhBzVbd), GAPS2-moray-wood-1568 (one DECODE login + Aymeloglu transcription on disk, cap 7;
+session_01PuPE9idBNMZQgCCYR5vRcS), CHECK-fr4687-paleologue-nevers (check-solved for Ferrari 1999, likely-solves row 10,
+cap 5; session_01X9hXWn2ZNg5rgLuK8aDFjy), GAPS-fr4715-vieuville-pool (one strong-model clear-French pass over 96 crops,
+cap 6; session_01QYdmP2XzX3kuC2ByhhkVFv). Caps total USD 52. Held for the next wave: likely-solves row 6 (fr3986-90, the
+no.60 sign atlas, ~USD 8), esp318-sicilia-1503 canvases 453-455, decode-2754 crib cryptanalysis, huntington split-check;
+the verifiers account-3 asked for (matignon f143r, na-schonenberg L19, nevers-birago) wait for a reading that clears its
+judge and shuffled-target check, which none has yet.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
