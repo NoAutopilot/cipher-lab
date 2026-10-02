@@ -162,5 +162,6 @@
     "2045A_overview.jpg": "GAPS3 2 Oct 2026: full sheet via IIIF full/2800,/0/default.jpg (2800x2099), fetched once (METS + image, 2 requests). Plain Dutch throughout (own look): header 'Revier Suriname aen de Zuyd Sy seer moterig en ondiep, circa 6 kettings van de Redout aff'; capital A-H legend across the foot (A Redout Purmerent as it now stands, B Bastions too small for guns, C Gragt to be filled, D Bedeckte Weg en Glassie to become a Capitaele Wall, EF Profiel door de Linie EF, G Wagt Huys, H Sluys; 'De gestippelde Linien wysen aen de Verbeetering'), scale 'Maad Stok van 10 Roeden', signed A. Dircks. Candidate plain crib for 2046's works vocabulary; not transcribed to the two-pass bar."
    }
   }
- ]
+ ],
+ "shrink_2026_10_02": "GAPS7 (account-4), 2 Oct 2026: AX2-SHRINK-shape shrink, images/ 42 MB -> 15 MB. 63 uncited images/strips/*.png deleted (local upscaled crops with no recorded box; restore from git commit fc921145); images/strips/clauseB_full.png converted to clauseB_full.jpg at the same 3000x270. ../images_manifest_full.tsv lists every file with sha1, recipe kind and cited_by; ../regen_images.sh re-derives the IIIF, default-image, PIL and iiif_lines files (IIIF byte-identical on a 2-file sample)."
 }

@@ -171,7 +171,7 @@ play and what a follow-on worker should do next.
 
 ## RD03D, 25 Sept 2026: "zwaare" resolves the λ-contradiction as a mis-segmentation, not a real conflict
 
-Working from `images/strips/clauseB_full.png` (already on disk, no new fetch), this worker re-read clause B's
+Working from `images/strips/clauseB_full.jpg` (already on disk, no new fetch), this worker re-read clause B's
 second word ("zwaare", the plain gloss directly above) at 5x local zoom
 (`/tmp/.../scratchpad/zwaare_zoom.png`, not committed -- scratch only). Pass A's `scratch_notaBDEF_passA.tsv`
 had transcribed this word's first glyph as `λ` (nota_pB_w2 pos1), which -- forced against ZWAARE's own
