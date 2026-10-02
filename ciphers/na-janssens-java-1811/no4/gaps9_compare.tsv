@@ -1,0 +1,83 @@
+id	where	gaps8_code	gaps8_gloss	A_code	A_gloss	A_conf	B_code	B_gloss	B_conf	outcome
+1	205R:2	1135	forte	1135	forte	H	1135	forte	H	confirmed
+2	205R:13	1135	fort	1135	fort	L	1135	fort	H	confirmed
+3	205R:17	513	cotés	913	coter	L	513	cotes	L	kept (passes split)
+4	205R:18	876	Dix	876	Dix	H	876	Dix	H	confirmed
+5	205R:19	654	huit	654	huit	H	654	huit	H	confirmed
+6	205R:21	387	vingt	387	vingt	H	387	vingt	H	confirmed
+7	205R:22	499	batiments	499	batimens	L	499	batiments	L	kept (passes split)
+8	205R:23	1094	Douze	1094	Dout	L	1094	Dont	H	kept (passes split)
+9	205R:24	1003	cinq	1003	cinq	H	1003	cinq	H	confirmed
+10	205R:31	960	pret	960	pret	H	960	pret	H	confirmed
+11	205R:32	1023	nd	1023	nd	L	1023	nd	H	confirmed
+12	205R:33	1096	par	1096	par	H	1096	par	H	confirmed
+13	205R:34	1122	les	1122	les	H	1122	les	H	confirmed
+14	205R:38	564	des	564	des	H	564	des	H	confirmed
+15	205R:40	1135	fort	1135	fort[e]	L	1135	fort[e]	L	kept (struck cell)
+16	205R:43	697	bler	697	bles	L	697	bles	L	changed bler -> bles
+17	205R:44	1195	et	1195	est	L	1195	est	H	changed et -> est
+18	205R:56	497	Gouverneur Gal	497	Gouverneur Gal	H	497	Gouverneur Gal	H	confirmed
+19	205R:57	256	a	256	a	H	256	a	H	confirmed
+20	206L:2	364	les	364	les	L	364	les	H	confirmed
+21	206L:3	38	res	38	res	H	38	res	H	confirmed
+22	206L:7	455	pouvoirs	455	pouvoirs	H	455	pouvoirs	L	confirmed
+23	206L:8	1013	par	1013	par	H	1013	par	H	confirmed
+24	206L:9	761	repondu	761	repondre	H	761	repondre	H	changed repondu -> repondre
+25	206L:10	443	der	443	des	L	443	des	L	changed der -> des
+26	206L:11	1049	événements	1049	événements	H	1049	événements	H	confirmed
+27	206L:18	210	votre	210	notre	H	210	notre	H	changed votre -> notre
+28	206L:20	149	vous	149	vous	H	149	vous	H	confirmed
+29	206L:21	267	meuh	267	ment	L	267	ment	H	changed meuh -> ment
+30	206L:22	392	dans	392	san	L	392	San	L	changed dans -> san
+31	206L:23	653	to-	653	bo -	H	653	bo	H	changed to- -> bo-
+32	206L:25	656	ne	656	- re.	L	656	ne.	H	kept (passes split)
+33	206L:26	256	a	256	a	H	256	a	H	confirmed
+34	206L:27	739	la	739	la	H	739	la	H	confirmed
+35	206L:28	331	li	331	li	H	331	li	H	confirmed
+36	206L:29	644	gue	644	gne	H	644	gne	H	changed gue -> gne
+37	206L:30	364	Le	364	Les	H	364	Les	L	changed Le -> Les
+38	206L:32	1094	dont	1094	dout	L	1094	dont	H	kept (passes split)
+39	206L:37	997	Mr. 4	997	N°. 4	H	997	N°. 4	H	changed Mr. 4 -> N°. 4
+40	206L:38	144	étoit	144	étoit	H	144	étoit	H	confirmed
+41	206L:43	252	sous	252	sont	H	252	sont	H	changed sous -> sont
+42	206L:44	317	par	317	par	H	317	par	H	confirmed
+43	206L:47	1040	uner	1040	nues	L	1040	ner	L	kept (passes split)
+44	206L:49	1106	ller	1106	elles	H	1106	elles	L	changed ller -> elles
+45	206L:51	808	sous	808	sont	H	808	sont	H	changed sous -> sont
+46	206L:53	352	Duer	352	Dues	L	352	Dues	L	changed Duer -> Dues
+47	206L:54	110	en	110	en	H	110	en	H	confirmed
+48	206L:59	585	l'Isle de Java	585	l'Isle de Java	H	585	l'Isle de Java	H	confirmed
+49	206R:4	663	ait	663	ait	L	663	ait	L	confirmed
+50	206R:5	144	été	144	été	L	144	été	H	confirmed
+51	206R:9	656	ué	656	né	H	656	né	L	changed ué -> né
+52	206R:13	1039	pillé	1039	pillé	H	1039	pillé	H	confirmed
+53	206R:14	102	peut	102	peut	H	102	peut	H	confirmed
+54	206R:20	130	der	130	des	H	130	des	L	changed der -> des
+55	206R:21	38	re	38	re	H	38	re	H	confirmed
+56	206R:22	1068	chercher	1068	chercher	H	1068	chercher	H	confirmed
+57	206R:23	475	Douh	475	Tout	H	475	tout	H	changed Douh -> Tout
+58	206R:25	656	ne	656	ne	L	656	ne	L	confirmed
+59	206R:26	1073	savoir	1073	savoir	H	1073	savoir	L	confirmed
+60	206R:27	317	par	317	par	H	317	par	H	confirmed
+61	206R:33	404	croir	404	croir	L	404	croir	L	confirmed
+62	206R:37	261	devoit	261	devoit	H	261	devoit	H	confirmed
+63	206R:39	13	au	13	au	H	13	au	H	confirmed
+64	206R:41	456	=re	456	=re	H	456	=re	H	confirmed
+65	206R:45	1122	le	1122	le	H	1122	le	H	confirmed
+66	206R:46	451	ment	451	ment	H	451	ment	H	confirmed
+67	206R:49	513	cote	513	cote	H	513	cote	H	confirmed
+68	206R:52	1040	nu	1040	nu	L	1040	nu	L	confirmed
+69	206R:54	93	de	93	de	H	93	de	H	confirmed
+70	206R:56	591	tend	591	rend	H	591	rend	H	changed tend -> rend
+71	207L:1	697	ble	697	ble	L	697	ble	H	confirmed
+72	207L:3	960	(Près	960	(Près	L	(960	(Près	H	confirmed
+73	207L:6	76	ou	76	ou	H	76	ou	H	confirmed
+74	207L:9	236	e	236	e	H	236	e	H	confirmed
+75	207L:10	110	eu	110	en	L	110	en	L	changed eu -> en
+76	207L:12	1039	piter	1039	pil[le]r	L	1039	pi[?]r	L	kept (passes split)
+77	207L:17	1195	Est	1195	Est	H	1195	Est	H	confirmed
+78	207L:19	585	Java)	585	Java)	H	585)	Java)	H	confirmed
+79	207L:30	435	Il	435	Il	H	435	Il	H	confirmed
+80	207L:41	420	fui.	420	fu	L	420	fin.	H	kept (passes split)
+81	207L:42	743	Trois	743	Troi	H	743	Troi	H	changed Trois -> Troi
+82	207L:43	547	août.	547	août.	H	547	août.	H	confirmed

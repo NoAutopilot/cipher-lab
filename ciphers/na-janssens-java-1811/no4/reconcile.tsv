@@ -29,7 +29,7 @@ where	table_read	raw_read	settled_code	settled_gloss	conf	basis
 206R:42	682	612	682	de	H	table clear 8; raw middle looped = 8
 206R:48	448	443	448	la	H	table clear final 8; raw final blurred; 448=la also 206L cell35
 206R:57	219	249	219	ce	H	table clear 1; raw 2-1-9
-207L:10	?	110	110	eu	H	table cell written 1-1-0 (two short strokes + o), raw 110 agrees
+207L:10	110 eu		110	en	L	GAPS9 native 2-pass agree (A en L, B en L); GAPS8 value eu
 207L:18	682	652	682	de	H	table clear 682; raw middle blurred (3/5/8); 682=de also 206R cell42
 207L:19	585	585	585	Java)	H	both 5-8-5 with tails on 5s; gloss 'Java)' with closing parenthesis (Île de Java)
 207L:37	851	351	851	prêt	H	table first digit clear 8; raw first glyph looped 8 not 3; gloss prêt with final letters struck through
@@ -37,3 +37,23 @@ where	table_read	raw_read	settled_code	settled_gloss	conf	basis
 207L:12	1039	-	1039	piter	L	gloss-only check: reads pi + crossed t + er ('piter'); hand unclear, not 'prier'
 207L:20	240	-	240	Rien	L	gloss-only check: capital looks like R (Rien ne doit...), B not excluded visually
 207L:21	848	-	848	ne	H	gloss-only check: clear 'ne', matches 848=ne on 206L
+205R:43	697 bler		697	bles	L	GAPS9 native 2-pass agree (A bles L, B bles L); GAPS8 value bler
+205R:44	1195 et		1195	est	H	GAPS9 native 2-pass agree (A est L, B est H); GAPS8 value et
+206L:9	761 repondu		761	repondre	H	GAPS9 native 2-pass agree (A repondre H, B repondre H); GAPS8 value repondu
+206L:10	443 der		443	des	L	GAPS9 native 2-pass agree (A des L, B des L); GAPS8 value der
+206L:18	210 votre		210	notre	H	GAPS9 native 2-pass agree (A notre H, B notre H); GAPS8 value votre
+206L:21	267 meuh		267	ment	H	GAPS9 native 2-pass agree (A ment L, B ment H); GAPS8 value meuh
+206L:22	392 dans		392	san	L	GAPS9 native 2-pass agree (A san L, B San L); GAPS8 value dans
+206L:23	653 to-		653	bo-	H	GAPS9 native 2-pass agree (A bo - H, B bo H); GAPS8 value to-
+206L:29	644 gue		644	gne	H	GAPS9 native 2-pass agree (A gne H, B gne H); GAPS8 value gue
+206L:30	364 Le		364	Les	H	GAPS9 native 2-pass agree (A Les H, B Les L); GAPS8 value Le
+206L:37	997 Mr. 4		997	N°. 4	H	GAPS9 native 2-pass agree (A N°. 4 H, B N°. 4 H); GAPS8 value Mr. 4
+206L:43	252 sous		252	sont	H	GAPS9 native 2-pass agree (A sont H, B sont H); GAPS8 value sous
+206L:49	1106 ller		1106	elles	H	GAPS9 native 2-pass agree (A elles H, B elles L); GAPS8 value ller
+206L:51	808 sous		808	sont	H	GAPS9 native 2-pass agree (A sont H, B sont H); GAPS8 value sous
+206L:53	352 Duer		352	Dues	L	GAPS9 native 2-pass agree (A Dues L, B Dues L); GAPS8 value Duer
+206R:9	656 ué		656	né	H	GAPS9 native 2-pass agree (A né H, B né L); GAPS8 value ué
+206R:20	130 der		130	des	H	GAPS9 native 2-pass agree (A des H, B des L); GAPS8 value der
+206R:23	475 Douh		475	Tout	H	GAPS9 native 2-pass agree (A Tout H, B tout H); GAPS8 value Douh
+206R:56	591 tend		591	rend	H	GAPS9 native 2-pass agree (A rend H, B rend H); GAPS8 value tend
+207L:42	743 Trois		743	Troi	H	GAPS9 native 2-pass agree (A Troi H, B Troi H); GAPS8 value Trois
