@@ -1,0 +1,81 @@
+{
+ "item": "diarycorresponde41evel",
+ "title": "Diary and correspondence of John Evelyn, v.4 (1857), The Nicholas Correspondence",
+ "fetched": "2026-10-02 05:2x UTC (GAPS-intercepted-royalist-1646, account-4)",
+ "leaf_to_page": {
+  "185": 178,
+  "186": 179,
+  "187": 180,
+  "note": "LIKELY-9's note 'leaves 186-187' was off by one: leaf 186 is p.179, leaf 187 is p.180 (both read on the page image 2 Oct 2026); p.178 is leaf 185, NOT fetched (request budget spent on the djvu.xml word boxes instead)"
+ },
+ "requests": [
+  {
+   "n": 1,
+   "url": "https://archive.org/metadata/diarycorresponde41evel",
+   "status": 200,
+   "file": "metadata.json"
+  },
+  {
+   "n": 2,
+   "url": "https://archive.org/download/diarycorresponde41evel/diarycorresponde41evel_djvu.txt",
+   "status": "302 (not followed)",
+   "file": null
+  },
+  {
+   "n": 3,
+   "url": "same, followed to dn760000.eu.archive.org",
+   "status": 200,
+   "file": "diarycorresponde41evel_djvu.txt (1.24 MB, kept)"
+  },
+  {
+   "n": 4,
+   "url": "https://archive.org/download/diarycorresponde41evel/page/n186_w2400.jpg",
+   "status": 200,
+   "file": "leaf_n186.jpg (p.179; 2098x3570)"
+  },
+  {
+   "n": 5,
+   "url": "https://archive.org/download/diarycorresponde41evel/page/n187_w2400.jpg",
+   "status": 200,
+   "file": "leaf_n187.jpg (p.180, uncited, deleted)"
+  },
+  {
+   "n": 6,
+   "url": "https://archive.org/download/diarycorresponde41evel/diarycorresponde41evel_djvu.xml",
+   "status": 200,
+   "file": "15.4 MB, not kept; leaves 185-186 extracted to words_leaf185_186.tsv (689 words, page frame 2098x3570)"
+  }
+ ],
+ "files": {
+  "align_evelyn.py": {
+   "sha256_16": "7816d6a4979b0724",
+   "bytes": 10123
+  },
+  "diarycorresponde41evel_djvu.txt": {
+   "sha256_16": "bc3a270ff1249fa3",
+   "bytes": 1239315
+  },
+  "gloss_align.tsv": {
+   "sha256_16": "d5fe824b8e5fdbf7",
+   "bytes": 2475
+  },
+  "leaf_n186.jpg": {
+   "sha256_16": "bd6a68c3a3d50adc",
+   "bytes": 575732
+  },
+  "metadata.json": {
+   "sha256_16": "7c643d9bd911c396",
+   "bytes": 87654
+  },
+  "p179_cipher_block.jpg": {
+   "sha256_16": "be901227f3fc4b8f",
+   "bytes": 243258
+  },
+  "words_leaf185_186.tsv": {
+   "sha256_16": "de0d3f8154e3045e",
+   "bytes": 19496
+  }
+ },
+ "crops": "crops/ = tools/iiif_lines.py --image leaf_n186.jpg --prefix p179 --lines-per-crop 2 --only-lines 1,...,14 (the cipher block of p.179); p179_cipher_block.jpg = PIL region crop (100,180)-(2000,1000) of the same leaf for a single vision read",
+ "vision_calls": "2 used by GAPS 2 Oct 2026, both on the wrong leaves (lower half of p.179 = Reasons memorandum; p.180), 0 on the cipher block; the regrade rests on the djvu.xml word boxes"
+}

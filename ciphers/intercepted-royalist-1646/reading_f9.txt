@@ -1,4 +1,4 @@
-# f9_ct.tsv: key129 (Aymeloglu) applied by tools/decode_key.py, LIKELY-9 2 Oct 2026. Grades M 12, U 139 of 151 cipher tokens (U = not in the key).
+# f9_ct.tsv: key129 (Aymeloglu) applied by tools/decode_key.py, LIKELY-9 2 Oct 2026. Grades C 12, U 139 of 151 cipher tokens (U = not in the key).
 # Regenerate: python3 tools/decode_key.py ciphers/intercepted-royalist-1646 ; check: --check
 1	MY_LORD_YOUR_LOP_BEING_NOT_A_LITTLE_BEHOLDING_TO [309] FOR_YE [100] [44] [66] [24] [21] [107] [105] [155] [212] WELL [32] [66] [25] [155] [151] [12] [38] [35] [26]
 2	d [38] [122] YE [50] [21] [9] [52] [46] [26] [58] [113] [138] w [6] [24] [48] [70] [58] [109] i [12] [48] [15] [212] [39] MESSENGER [50] [333] [3] [207] COMUNICATE [226]

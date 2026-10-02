@@ -8,30 +8,41 @@
 #  M  doubtful marked ? by Aymeloglu
 #  I  context fixed from f.10's own context ('your Majesty' after [May it please your Matie])
 # Not included: 370 = 'tion' (a commented guess in key129.txt from 'd i r e c 370' twice, not a fixed value).
+# Regraded 2 Oct 2026 (GAPS-intercepted-royalist-1646, account-4) against Evelyn iv 178-179 read from archive.org diarycorresponde41evel
+# leaves 185-186 (NOT 186-187): the item's djvu.xml word boxes, evelyn/align_evelyn.py -> evelyn/gloss_align.tsv. Conditional on
+# that OCR (rule 2): the page image of p.179 (leaf_n186.jpg) is on disk, p.178 (leaf 185) is not; neither has been vision-read.
+#  C  evelyn-ocr      gloss word (or one letter of a spelled word whose figure count equals its letter count) sits over this figure, OCR digits equal the key's
+#  C  evelyn-ocr-seg  'desire' spans 141:56:63:17:67 (6 letters, 5 figures); 67 = e from 'Cabinet' forces 141 = de and 56 63 17 = s i r
+#  H  evelyn          gloss confirms the position but the OCR digit string differs from Aymeloglu's reading of the scan (422 read 122, 162 read 102): image decides
+#  I  evelyn-ocr-H.   the print reads 'H.' after 'Marq:'; 'Hertford' is the expansion
+#  M  evelyn-ocr-span the gloss spans this figure and more (nor over 269:17; having over 200:216; Southampton over 356:84:107:43:282, OCR 85G)
+#  M  evelyn-align-unreached  69 does not occur on either page's OCR
+#  M  evelyn-ocr-new  'were' sits over 111 (dx +6, p.178) but 111 beside 112 = and breaks the key's alphabetical run; image decides
+# Not included: the OCR-garbled figures under 'Cabinet' a/t, 'burned' (at ad 19 if 147) and 'Jewells' (in no 418 56): image needed.
 code	value	grade	source
-112	and	H	evelyn
-121	be	H	evelyn
-209	I	H	evelyn
-213	if	H	evelyn
-234	left	H	evelyn
-250	me	H	evelyn
-251	my	H	evelyn
-269	nor	H	evelyn
-270	not	H	evelyn
-280	of	H	evelyn
-281	or	H	evelyn
-341	send	H	evelyn
-360	to	H	evelyn
-409	with	H	evelyn
-412	where	H	evelyn
-413	which	H	evelyn
+112	and	C	evelyn-ocr
+121	be	C	evelyn-ocr
+209	I	C	evelyn-ocr
+213	if	C	evelyn-ocr
+234	left	C	evelyn-ocr
+250	me	C	evelyn-ocr
+251	my	C	evelyn-ocr
+269	nor	M	evelyn-ocr-span
+270	not	C	evelyn-ocr
+280	of	C	evelyn-ocr
+281	or	C	evelyn-ocr
+341	send	C	evelyn-ocr
+360	to	C	evelyn-ocr
+409	with	C	evelyn-ocr
+412	where	C	evelyn-ocr
+413	which	C	evelyn-ocr
 422	write	H	evelyn
-429	you	H	evelyn
-503	Earl	H	evelyn
-550	Marquis	H	evelyn
-520	Hertford	H	evelyn
-141	desire	H	evelyn
-449	I.H.	H	evelyn
+429	you	C	evelyn-ocr
+503	Earl	C	evelyn-ocr
+550	Marquis	C	evelyn-ocr
+520	Hertford	I	evelyn-ocr-H.
+141	de	M	evelyn-ocr-seg
+449	I.H.	C	evelyn-ocr
 559	Marquis-Newcastle	H	f77
 560	Mylord-Digby	H	f77
 561	Monsieur-Oneale	H	f77
@@ -54,23 +65,24 @@ code	value	grade	source
 578	Scarborough	H	f77
 579	Jersey	H	f77
 580	Guernsey	H	f77
-162	for	M	unsourced
-197	had	M	unsourced
-200	having	M	unsourced
-356	Southampton	M	unsourced
-351	my	M	doubtful
+162	for	H	evelyn
+197	had	C	evelyn-ocr
+200	having	M	evelyn-ocr-span
+356	Southampton	M	evelyn-ocr-span
+351	my	C	evelyn-ocr
 430	your	I	context
 543	Majesty	I	context
-56	s	M	evelyn-align
-63	i	M	evelyn-align
-17	r	M	evelyn-align
-67	e	M	evelyn-align
-69	e	M	evelyn-align
-78	w	M	evelyn-align
-31	o	M	evelyn-align
-18	r	M	evelyn-align
-81	d	M	evelyn-align
-90	c	M	evelyn-align
-27	b	M	evelyn-align
-40	i	M	evelyn-align
-7	n	M	evelyn-align
+56	s	C	evelyn-ocr-seg
+63	i	C	evelyn-ocr-seg
+17	r	C	evelyn-ocr-seg
+67	e	C	evelyn-ocr
+69	e	M	evelyn-align-unreached
+78	w	C	evelyn-ocr
+31	o	C	evelyn-ocr
+18	r	C	evelyn-ocr
+81	d	C	evelyn-ocr
+90	c	C	evelyn-ocr
+27	b	C	evelyn-ocr
+40	i	C	evelyn-ocr
+7	n	C	evelyn-ocr
+111	were	M	evelyn-ocr-new
