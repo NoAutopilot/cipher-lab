@@ -24,7 +24,8 @@ alignment TSV records that as a repair.
 
     python3 tools/interlinear_align.py pairs DJVU FIRST LAST OUT_PAIRS.tsv
     python3 tools/interlinear_align.py align PAIRS.tsv OUT_ALIGN.tsv OUT_KEY.tsv [--floor N] [--clear-consumes]
-            [--prior KEY.tsv] [--code-prefix PFX]
+            [--prior KEY.tsv] [--code-prefix PFX] [--null-cost X] [--wildcard C]
+            [--max-chunk N] [--seg-bonus B] [--len-prior X]
 
 --floor N: groups below N take at most one letter (default 100, Thurloe; 121 for the
 Nassau 1573-74 tables, where 1-120 are letters). --clear-consumes (26 Sept 2026, AX-COMP):
@@ -54,6 +55,15 @@ letters onto null codes when the plain line is shorter than the cipher line; --n
 a code may take it as its one-character chunk at score 0 (no prior bonus, no prior miss), it is never counted
 as evidence for the code's meaning, and it never joins a longer chunk. Without --wildcard every non-letter is
 stripped from the plain line as before.
+
+--max-chunk N, --seg-bonus B and --len-prior X (2 Oct 2026, NEXT-PAG, clairambault1225-paget-1714): for a syllabic
+code (Paget 1714: one code = a syllable or a short word, about two letters, chunks not on word boundaries). The
+Thurloe defaults let an at-or-above-floor code take up to 14 letters and add B=1.0 for a chunk that starts and 1.0
+for one that ends an OCR word, so from a flat start one code soaks up a whole gloss word and hard-EM locks it in.
+--max-chunk caps the chunk length, --seg-bonus sets the word-boundary bonus (0 = none), and --len-prior X charges
+X per letter of distance between a chunk's length and the pair's own letters-per-code ratio, so the first
+iteration splits each gloss roughly evenly and consistency across pairs does the rest. Defaults reproduce the
+Thurloe behaviour exactly.
 """
 import csv
 import itertools
@@ -166,7 +176,8 @@ def plain_letters(raw, wildcard=None):
     return ''.join(letters), starts, ends
 
 
-def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null_cost=-3.0, wildcard=None):
+def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null_cost=-3.0, wildcard=None,
+               max_chunk=MAXCHUNK, seg_bonus=1.0, len_prior=0.0):
     """DP; returns list of chunks (one per token) or None for tokens left unaligned.
     clear_words (--clear-consumes): per token, the letters of a clear word written in the
     cipher line, which then takes its own span of the plain line instead of none."""
@@ -175,6 +186,8 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null
     best = [[NEG] * (L + 1) for _ in range(N + 1)]
     back = [[None] * (L + 1) for _ in range(N + 1)]
     best[0][0] = 0.0
+    ncode = sum(k in ('num', 'code', 'doubtful') for k, _ in toks)
+    ratio = L / ncode if ncode else 1.0
     for j in range(1, L + 1):  # leading plain text not over a group
         best[0][j] = -0.3 * j
         back[0][j] = ('skip', 0, j - 1)
@@ -201,7 +214,7 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null
             elif kind == 'num' and val < floor:
                 lens = [0, 1]
             else:
-                lens = range(0, MAXCHUNK + 1)
+                lens = range(0, max_chunk + 1)
             for ln in lens:
                 if j + ln > L:
                     break
@@ -218,8 +231,10 @@ def align_pair(toks, letters, starts, ends, floor, prior, clear_words=None, null
                     sc = 1.0 * same - 1.0 * (max(ln, len(cw)) - same)
                 else:
                     ch = letters[j:j + ln]
-                    sc += 1.0 if starts[j] else 0.0
-                    sc += 1.0 if ends[j + ln - 1] else 0.0
+                    sc += seg_bonus if starts[j] else 0.0
+                    sc += seg_bonus if ends[j + ln - 1] else 0.0
+                    if len_prior:
+                        sc -= len_prior * abs(ln - ratio)
                     if kind in ('num', 'code') and prior.get(val):
                         cnt = prior[val]
                         tot = sum(cnt.values())
@@ -270,7 +285,7 @@ def load_prior(path, floor, code_mode=False):
 
 
 def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_prefix=None,
-              null_cost=-3.0, wildcard=None):
+              null_cost=-3.0, wildcard=None, max_chunk=MAXCHUNK, seg_bonus=1.0, len_prior=0.0):
     prepared = []
     for p in pairs:
         raw = p['cipher_raw'].split()
@@ -286,7 +301,8 @@ def run_align(pairs, floor=100, iters=6, clear_consumes=False, prior=None, code_
         shown = defaultdict(Counter)
         results = []
         for p, raw, toks, letters, starts, ends, cws in prepared:
-            chunks = align_pair(toks, letters, starts, ends, floor, prior, cws, null_cost, wildcard)
+            chunks = align_pair(toks, letters, starts, ends, floor, prior, cws, null_cost, wildcard,
+                                max_chunk, seg_bonus, len_prior)
             results.append(chunks)
             for (kind, val), c in zip(toks, chunks):
                 if kind in ('num', 'code') and c and c[1] > c[0] and not (wildcard and wildcard in letters[c[0]:c[1]]):
@@ -346,11 +362,12 @@ def token_rows(prepared, results, counts, shown):
 
 
 def cmd_align(pairs_path, out_align, out_key, floor=100, clear_consumes=False, prior_path=None, code_prefix=None,
-              null_cost=-3.0, wildcard=None):
+              null_cost=-3.0, wildcard=None, max_chunk=MAXCHUNK, seg_bonus=1.0, len_prior=0.0):
     prior = load_prior(prior_path, floor, code_mode=code_prefix is not None) if prior_path else None
     prepared, results, counts, shown = run_align(load_pairs(pairs_path), floor, clear_consumes=clear_consumes,
                                                  prior=prior, code_prefix=code_prefix, null_cost=null_cost,
-                                                 wildcard=wildcard)
+                                                 wildcard=wildcard, max_chunk=max_chunk, seg_bonus=seg_bonus,
+                                                 len_prior=len_prior)
     rows = token_rows(prepared, results, counts, shown)
     with open(out_align, 'w', encoding='utf-8', newline='') as f:
         w = csv.writer(f, delimiter='\t', lineterminator='\n')
@@ -400,6 +417,19 @@ if __name__ == '__main__':
             k = a.index('--wildcard')
             wildcard = a[k + 1]
             del a[k:k + 2]
-        cmd_align(a[1], a[2], a[3], floor, cc, prior_path, code_prefix, null_cost, wildcard)
+        max_chunk, seg_bonus, len_prior = MAXCHUNK, 1.0, 0.0
+        for flag in ('--max-chunk', '--seg-bonus', '--len-prior'):
+            if flag in a:
+                k = a.index(flag)
+                v = a[k + 1]
+                del a[k:k + 2]
+                if flag == '--max-chunk':
+                    max_chunk = int(v)
+                elif flag == '--seg-bonus':
+                    seg_bonus = float(v)
+                else:
+                    len_prior = float(v)
+        cmd_align(a[1], a[2], a[3], floor, cc, prior_path, code_prefix, null_cost, wildcard,
+                  max_chunk, seg_bonus, len_prior)
     else:
         sys.exit(__doc__)

@@ -70,6 +70,22 @@ def main():
     # the Thurloe default (dashes stripped, null -3) mis-assigns at least one of these codes
     key5 = run(wc_pairs, '--code-prefix', '@')
     assert 'n' in key5 or key5['t']['meaning'] != 't' or key5['c']['meaning'] != 'c', key5
+
+    # --max-chunk / --seg-bonus / --len-prior (2 Oct 2026, NEXT-PAG): a syllabic code, two letters per code,
+    # chunks not on word boundaries. With the length prior and a 4-letter cap, 1=la 2=pr 3=in 4=ce recover.
+    sy_pairs = [
+        ['1', 'la prince', '1', '1 2 3 4'],
+        ['2', 'prince la', '2', '2 3 4 1'],
+        ['3', 'ce la', '3', '4 1'],
+        ['4', 'in ce', '4', '3 4'],
+    ]
+    key6 = run(sy_pairs, '--floor', '1', '--max-chunk', '4', '--seg-bonus', '0.5', '--len-prior', '0.5')
+    for code, want in (('1', 'la'), ('2', 'pr'), ('3', 'in'), ('4', 'ce')):
+        assert key6[code]['meaning'] == want, (code, key6[code])
+    assert all(len(r['meaning']) <= 4 for r in key6.values()), key6
+    # the Thurloe defaults (14-letter chunks, word-boundary bonus 1.0, no length prior) do not
+    key7 = run(sy_pairs, '--floor', '1')
+    assert [key7[c]['meaning'] for c in '1234'] != ['la', 'pr', 'in', 'ce'], key7
     print('ok')
 
 
