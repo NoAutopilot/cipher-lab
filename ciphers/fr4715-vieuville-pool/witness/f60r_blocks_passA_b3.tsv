@@ -1,0 +1,31 @@
+crop	text	conf	notes
+f60r_L26_s1	6314462023125 26 203025	M	vertical stroke after 125 is a descender from line above; dots below row belong to next line; 2nd 4 has small mark (1/4?)
+f60r_L26_s2	2595 7013630346 732 93059450	M	small c-shaped 0s read as 0; stroke through 2 after 73 is descender from above
+f60r_L26_s3	4502303977565057395123930503	M	small c-like 0s; marks above 9 and 7 at left are ink from line above
+f60r_L26_s4	0395123256023.47.2050257593(0/6)3	M	target row is lower row of crop (band drifts down); dots over 4 and over 2 of 20
+f60r_L26_s5	3030375093756295053623730211.1654	L	target is bottom row, lower edge cut; very cramped; dot over 1 before 6
+f60r_L26_s6	654025625090.22732590	M	dot over first 2 of 22
+f60r_L27_s1	45023250516(42) {pa memoire}	M	stroke under 42 is underline/ink from below, not above; 42 maybe 4+2 superscript
+f60r_L27_s2	{ire aulcun amy a luy ce qu est}	L	clear French; ce qu / et pr uncertain
+f60r_L27_s3	{tre suspect, Doinct que tell. ou puis}	L	clear French; tell./ball. uncertain
+f60r_L27_s4	{vider ou faict faict besoing de}	L	clear French, middle row; top row is digit line above
+f60r_L27_s5	{..dan fa.. uen.. subjecte a ..}	L	target French row cut off at bottom; full-height row in crop is the digit line above (L26) 
+f60r_L27_s6	{..rangu.. de ..}	L	target row cut off at bottom; top row digits 0340230530 22 7325 9 belong to line above
+f60r_L28_s1	{faire neantmoins} (6/#)725032393	M	first sign may be a looped 6 or flourish; 7 has crossing stroke
+f60r_L28_s2	393460.129305900563031575057395	M	horizontal stroke above 315 likely ink from line above (underline of L27), not a bar; dash after .12
+f60r_L28_s3	1395.2420237395123247363255005	M	dot over 2 of 24; vertical strokes are descenders from above
+f60r_L28_s4	050595030?.0?.?9.4605021232?5	L	target digit row cut at bottom; full-height row is French line above (faict...besoing de); dots at 3 places
+f60r_L28_s5	????????????????	L	target digit row cut off, only tops visible; full row in crop is French {dan fai neant ? pub faict a ster..} (line above)
+f60r_L28_s6	???.?11632500257 5	L	target row cut at bottom; full row is French {..rvans et la}
+f60r_L29_s1	64.4650.462203770231257314	M	dots over 2nd 4 and over 4 of 46; possible dot over final 1
+f60r_L29_s2	14.40.947505777.16?????	L	bottom row read (continues s1 by overlap), cut at bottom, end illegible; top row is {..0952345 1. item de lhomme de l}
+f60r_L29_s3	{l bien et capable} 47602575639 5	M	full-height row here is the French+digit line (continues s2 top row), not s2 bottom row
+f60r_L29_s4	95.46732370059593942303.116593	M	dot over 4 of 46 and over first 1 of 11
+f60r_L29_s5	0937732360237305.501936711[13].40	M	bar over 13 (could be ink from above); dots over 5 and 4
+f60r_L29_s6	.405.250305563957 4	M	dots over 4 and 2; end of line after 74
+f60r_L30_s1	257593257393032565239350X	H	open triangle at end = X
+f60r_L30_s2	50X.47025773951202350 70????	L	bottom row read (continues s1), cut at bottom; top row is 9409913031325104751940 90
+f60r_L30_s3	9025951057070509303.166025 50	M	full-height row here continues s2 top row, not s2 bottom; dot over 1 of 16
+f60r_L30_s4	55016.99906305637375123.46.570	M	mark over first 9 is check/hook-shaped (dot?); dots over 4 and 5
+f60r_L30_s5	.57.07.19.4667732063736303602550	M	dots over 5, 0, 1, 4
+f60r_L30_s6	5504023931030(5/8)4057395	M	vertical stroke after 23 is descender from above; c-like 0s
