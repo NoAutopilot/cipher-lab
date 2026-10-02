@@ -1285,3 +1285,41 @@ label, which the runner prompt allows. The header names the model as "GPT-6 (Cod
 
 Requests (this job): www.dbnl.org 1; resources.huygens.knaw.nl 1; archiv.ub.uni-marburg.de 4 (record, pp.VII, 285, 286);
 arcinsys.hessen.de 1; www.googleapis.com 1; GitHub MCP 2 reads + the close. No subagents.
+
+## VERIFY-LVN-173: code 173 in 5797 p5_spot5 (2 Oct 2026, account 2, LANE-A2PUSH)
+
+Verifier, a session separate from the solver (A2-LVN). Claim under audit: "173 = graf, H, list A only, from the 5550 p2-5
+period gloss tail 'vnd graf' (graf over 173 by elimination), applied to 5797 p5_spot5 through exceptions_5797.tsv; the 5810
+sign is M (173 or 113)." Novelty is not in scope; p5_spot5 is **not classed** here (no phrase search was run on it).
+
+1. **Gloss read by eye** (crop images_wv2/crops_rederiv/05550_p2_run_p2-5_tail_300dpi.jpg, no subagent). The run is
+   153.130.90.1.79.173 and ends there; the gloss tail is "vnd graf", "graf" written whole with no prefix, followed only by a
+   flourish of the main hand. Agreed. One correction of wording: spatially the whole gloss sits about one code left of the
+   run ("graf" stands over 1.79 and the gap before 173), so "graf over 173" is true by elimination, not by position. NOTES.md
+   (gap line) and HYPOTHESES.md were reworded to say so. The first gloss word stays unsettled (V8.2's "Pals-..." against
+   AX-REDERIV's "Ertzhertzoge"); this verifier sees eight or nine cramped letters, not twelve, which favours V8.2, but the
+   word does not bear on 173.
+2. **Elimination.** 90, 1, 79 are f, n, d at C in key_full (aligned 4613/4615, 3/3, 10/12, 3/3) and at H in key_4614,
+   Lodewijk's own period decipherment (list A). They spell the middle word; "vnd" for f-n-d is a word-level gloss of a
+   letter run (the f/v sign is shared), not a misfit. 153 (pfaltzgraf, H) and 130 (NULL, C, 8/8) take the first word. 173 is
+   the only code left for "graf". Sound.
+3. **Rule 4, direction and date.** 5550 is Jan to Willem, Dec 1573; 5797 is from Lodewijk (with Jan and Hendrik) to Willem,
+   Dillenburg, 22 Oct 1573: same direction (brothers to Willem, list A), two months apart. H applies to 5797. Every other
+   occurrence of 173 in the folder's transcriptions (sign column of every ciphertext_*.tsv, checked by script) is list B: 5801
+   x2 (key_5801 'q', M) and 5810 x1. The 5810 sign was re-read on the comparison crop (05810_p1_L40_173_vs_143_7s.jpg): its
+   middle digit is a short upright flagged at the top, unlike this hand's 7 (long descender in 127) and 4 (crossed "+" in
+   143); **M, 173 or 113** stands. No H witness conflicts with list A, so no HYPOTHESES.md conflict row is needed beyond the
+   per-direction table already there.
+4. **Re-derivation (rule 7).** `python3 tools/decode_key.py ciphers/lodewijk-van-nassau-1573-74 --check` exit 0;
+   with `--config .../decode_5797_full.json --check`: "reading up to date", exit 0, 5797 tokens C 14, H 3, I 2, M 44, U 10.
+5. **Verdict: endorse** 173 = graf at **H for list A** (5797 and other brothers-to-Willem letters), **no value for list B**
+   (5801 'q' M; 5810 sign M). The reading of p5_spot5 becomes `{ist} 131 NULL (C) 123 l/NULL (M) 173 graf (H) {gestern}`;
+   which count is meant is not inferred. Safe sentence: "Code 173 reads 'graf' in 5797, from the period interlinear gloss on
+   WVO 5550 (Jan to Willem, Dec 1573), placed on the code by elimination within its run." Unsafe: "173 means 'graf' in the
+   Nassau cipher" (list B unread), or any sentence naming the count.
+6. **Propagation (rule 10).** revisions_for_audit.tsv already carries the row (A2-LVN); this section supersedes the V8 audit's
+   line "p5_spot5 ... not read (codes ... 173 ... have no key_full row)" for 173 only; key_full.tsv still has no 173 row, by
+   design. SECOND-OPINIONS-QUEUE.tsv rows SO-LODEWIJK-5797 and SO-LODEWIJK-1573-74 carry a note; their answered prompts predate
+   this value.
+
+Requests: none (crops on disk). Subagents: none.
