@@ -2990,15 +2990,16 @@
       "superseded_by": "",
       "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nevers-birago-fr3251-1572",
       "fields_source": "nevers-birago-fr3251-1572/AUDIT.md, first-audit sections and \"Second audit (AUDIT2-NEVBIR)\"",
-      "document_id": "BnF fr.3251 ff.184r-185r (no.90), Birago to Nevers, 2 Oct 1572",
+      "document_id": "BnF fr.3251 ff.184r-185v (no.90), Birago to Nevers, 2 Oct 1572",
       "title": "BnF fr.3251 no.90, Lodovico Birago to the Duke of Nevers, Saluzzo, 2 October 1572: cipher of ff.184r-185r read with Tomokiyo's published 1572 key",
-      "grade": "N4 for f.184r (two audits: VERIFY-NEVBIR-184, AUDIT2-NEVBIR) and f.184v-f.185r L01-08 (one audit, AUDIT2-NEVBIR), key published (Tomokiyo). 554 signs audited: S 455; key rank 1 of 201 (z 4.2). Rest of the letter (412 signs, NEVBIR-185B) awaits VERIFY-NEVBIR-90REST; whole letter 966 signs S 731, z 4.5; judge FAIL.",
-      "line": "Fragmentary reading; names Captain Scipione Carego and the Huguenots (Ugonotti, a code word); no prior decipherment located (2 Oct 2026).",
-      "completeness": "455/554 at S (audited part); 731/966 whole letter",
-      "unresolved_spans": "412 signs of f.185r-v unaudited; 111 U off-sheet signs in the whole letter",
+      "grade": "N4 (VERIFY-NEVBIR-184, AUDIT2-NEVBIR, VERIFY-NEVBIR-90REST), key published (Tomokiyo). Whole letter 966 signs: S 730 M 125 U 111 (the 20-sign f.185v run alone is a non-test, its one S graded M); key rank 1 of 201 at five seeds (z 4.5-4.7). f.184r and f.184v-f.185r L01-08 have two audits; f.185r L10-25 (392 signs) one audit, second audit queued. Judge FAIL.",
+      "line": "Fragmentary reading: after \"the execution\" the house of Montmorency \"remains under some suspicion\"; Captain Scipione Carego; the Huguenots (a code word); \"make the Queen understand\"; no prior decipherment located (2 Oct 2026).",
+      "completeness": "730/966 at S (whole letter)",
+      "unresolved_spans": "125 M, 111 U off-sheet signs; f.185v run untestable alone",
       "audit_refs": [
         "AUDIT.md VERIFY-NEVBIR-184",
-        "AUDIT.md AUDIT2-NEVBIR"
+        "AUDIT.md AUDIT2-NEVBIR",
+        "AUDIT.md VERIFY-NEVBIR-90REST"
       ],
       "reading_version": "NEVBIR-184 + NEVBIR-185"
     }
