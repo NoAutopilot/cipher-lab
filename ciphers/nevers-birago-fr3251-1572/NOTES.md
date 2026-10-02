@@ -393,19 +393,109 @@ No "reading ready" line: the judge gate is not met, no verifier hand-off, no pri
 Vision calls 3 (two blind passes, one adjudication). Requests: none to any host (gallica.bnf.fr 0; everything from disk).
 No credentials. Box 04:24-04:3x UTC of 60 minutes.
 
-## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago, 2 Oct 2026 04:3x UTC)
-Read so far: 667 of roughly 800 signs of no.87 f.178 (all 23 lines of f.178v: L01-L10 LIKELY-3, L11-L23 done by GAPS-nevers-birago 2 Oct 2026 04:3x UTC, section above, rank 1/201 z 4.11 and judge FAIL -1.074; f.178r's 2 and f.179r's 3 cipher lines not cut), control-backed; 0 of the 7 target letters ff.138-184
+## GAPS3-nevers-birago-fr3251-1572 (2 Oct 2026, account-4): value-fit of the g-valued signs, T42 reads m
+
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of the gaps section below as GAPS-nevers-birago
+wrote it at 04:3x UTC: "value-fit of the g-valued signs T42/T70/T88 and X_NEW with decode_control.py --fit-sign (disk only,
+~$1)". `tools/intake_gate_check.py` exit 0 at 05:18 UTC before the step. Disk only: 0 vision calls, 0 requests to any host.
+No class, no novelty wording (rule 10). Status stays `partial`.
+
+**Instrument.** `../ceppo-nevers-fr3251-1570s/harvest/decode_control.py f178v/passC_L01-23.tsv --map sign_id_map_1572.json
+--fit-sign T42 --fit-sign T70 --fit-sign T88 --fit-sign X_NEW --fit-sign X_EQ --fit-values q` (joined leaf, 667 signs, 738
+letters, corpus it16dip). Two options added to the shared sibling tool (rule 8, an option not a private copy): `--fit-values`
+(extra candidate values beyond the key's own -- the printed table has no sign for q, so q could not be a candidate before)
+and `--fit-top`; `--windows 0` no longer crashes. The fit sets one sign to each candidate value in turn, the rest of the key
+held, and reports the mean log10 4-gram score per letter. **Caveat read off the output:** every multi-letter word code
+(quello, qual, che, per) tops every list, including for signs that are plainly letters -- inserting a well-formed word
+inflates a per-letter n-gram score -- so the comparison that means anything is among single letters and null; the word
+codes are reported but not read as fits.
+
+**Fits (single letters and null; "as keyed" = the printed value):**
+
+| sign | occ. | printed | best single letters (score) | printed value's score | contexts (decode with the rest of the key) |
+|---|---|---|---|---|---|
+| **T42** | 12 | g | **m -1.005**, t -1.009, s -1.010, n -1.016, null -1.016 | g -1.040 | se[g]pre, si[g]ostrare, [g]aniera, co[g]ansi, uolte[g]eco, de[g]e[g]oranci, gran[g]aln.., for[g]a, [g]enti, pla[g]o; di[g]uascogna |
+| T70 | 8 | g | **g -1.005** (with T42=m), r -1.008, null -1.009, l -1.011 | g (as keyed) | guasco[g]na, ne[g]li, io[g]li, una[g]ran, se[g]uito, di[g]e, [g]paese, ai[g]o |
+| T88 | 3 | g | e -0.988, null -0.989, t -0.991, o -0.991 ... q -1.006, g -1.005 | g -1.005 | [g]uectanoua (questa), hau[g]reio, in_[g]pasai |
+| X_NEW | 7 | unkeyed | null -1.008, n -1.014, t -1.014, i -1.014; unkeyed -1.005 | -- | word-boundary positions throughout (desadres[_]che, erniche[_]siano, tnzadige[_]etoseguito, [_]sipui..) |
+| X_EQ | 2 | unkeyed | within 0.005 of unkeyed for every value | -- | anonesui[_]rate, daubedie[_] (line end) |
+
+**Decision, one value moves: T42 g -> m, graded S** (rule 4: two or more words read with it -- sempre L16, mostrare L21,
+maniera L23, comandi L19 ("comansi" as transcribed, the d/s a reader cell), meco L20, Memoranci L08 (Montmorency, Italian
+form), and malinconia/malcontent.. L21 -- against one word, Guascogna L02 pos 8, that needs g). Robustness: the same fit on
+each half of the leaf alone gives m as the best single letter on L11-L23 (8 occurrences, -0.971 vs t -0.990, the half the
+readers rated H throughout) but not on L01-L10 (4 occurrences: the Guascogna g, "pla[g]o" and the name Memoranci, which the
+corpus cannot score; m is outside the top 8 there) -- the fit is carried by the H-confidence half and the word evidence,
+and the L02 token is repaired from the word (`harvest/exceptions_f178v.tsv`, value g, grade I) rather than the sign re-read:
+whether that sign is a T42/T70 look-alike or a scribal slip is an image question, not this step's. **T70 stays g** (five
+clear words: Guascogna's gn, negli, gli, gran, seguito; g is also the best single letter in the fit). **T88 stays as printed,
+undecided**: three occurrences, q (the "guecta" = questa reading, the one word) scores worst of all single letters (-1.006)
+and e/null/t/o best, within 0.02 of each other -- no value clears rule 4's two-word bar, so no change; "guecta" also carries
+a c where s is needed (T50 c / T92 s, a look-alike pair the reconciliation logged), so the word is a transcription question
+as much as a key one. **X_NEW stays unkeyed**: null and the unkeyed break score the same (-1.008 vs -1.005), every letter
+scores worse, and all seven sit at word boundaries, consistent with a separator or a word code the n-gram fit cannot see.
+X_EQ (2): no decision possible at 2 occurrences. The printed key stays on file unchanged as `harvest/sign_id_map_1572.json`;
+the fitted key is `harvest/sign_id_map_1572_fit.json` (T42 m, `value_printed` g kept in the row) and `key_1572_sheet.tsv`
+row T42 (value m, grade S, note names the fit). T17 (m) still never occurs: the printed table's two m signs may be T17 and
+T42's cell with T42 and T17 confused on the sheet cut, or Birago's clerk used a different m -- open, for an image check.
+
+**Control (rule 3), before and after, same instrument (`decode_control.py --map <map> --err 0.12`, 200 value-shuffled keys,
+power control 20 it16dip windows at 12% injected error, the measured pooled reader disagreement being 8%):**
+
+| key | signs / letters | real key | shuffles mean / max | z | rank of 201 | seeds 2, 3 (z; rank) | power control, err 0.12 |
+|---|---|---|---|---|---|---|---|
+| printed (GAPS-nevers-birago, 04:3x) | 667 / 738 | -1.040 | -1.622 / -1.325 | 4.60 | 1 | -- | 20/20, z median 4.19 min 3.49 |
+| **fitted, T42 = m** | 667 / 738 | **-1.005** | -1.615 / -1.320 | **4.84** | **1** | 4.56; 1 and 4.45; 1 | **20/20, z median 4.25 min 3.40** |
+
+**Reading** (`tools/decode_key.py ciphers/nevers-birago-fr3251-1572`, job rebuilt by `harvest/build_decode_inputs.py f178v
+--seq f178v/passC_L01-23.tsv`, now with `exceptions_f178v.tsv`; `--check` exit 0, "reading up to date"). Grades (rule 4),
+whole leaf: **667 tokens: H 0, C 0, S 532, M 121, I 1, U 13** (before: S 533, M 121, I 0, U 13; the one I is L02 pos 8).
+No H or C: a cryptanalytic result. Lines whose text changed (`harvest/reading_f178v.txt`):
+
+    L05 nsoplamohiedelao·enione[che]coniman   | L08 dememorancihauendoiscastelodi[carmagnola]
+    L11 [per]uosnsenzahaugreioformadipotnrsi  | L16 mentisaremosempreinconfusionei·
+    L19 comansi[per]ilserui[quello]iodil[turino]nsimeno | L20 ·sipuicontenereaheuoltemeco
+    L21 simostrareunagranmalnconten           | L23 piuconaltri[per][quello]intendosimaniera
+
+"de Memoranci" (L08: the Montmorency connection no.87's prose carries), "senza haver ... forma di poter ... rimediare"
+(L11-L12), "menti saremo sempre in confusione" (L16), "io gli comandi per il servitio" (L18-L19), "contenere ... volte meco"
+(L20), "si mostrare una gran mal[in]conten[tezza]" (L21-L22), "per quello intendo si[a] maniera" (L23).
+
+**Judge** (`tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/f178v/reading_f178v_letters.txt`):
+
+    FAIL language: score=-1.032, null_p99=-1.772, real_p05=-0.905, real_median=-0.835, mode=both, N=738
+    FAIL - nevers-birago-fr3251-1572 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+L11-L23 alone: FAIL -1.018 vs real_p05 -0.908 (null_p99 -1.718, N=420). Before this step: -1.074 and -1.081. The one sign
+value moved the leaf 0.042 toward the gate and the second half 0.063, both the same direction as the control's z; the
+remaining gap to real_p05 is 0.127 on the leaf. Shuffled-target control (ARM-C1 rule, `harvest/shuffled_judge.py` with the
+fitted map, 20 seeds): L01-L23 **0 of 20 PASS**, mean -1.668, min -1.718, max -1.614 (null_p99 -1.772); L11-L23 0 of 20,
+mean -1.647, max -1.558. The judge still discriminates at this N; the FAIL is a near-miss, smaller than before. No "reading
+ready" line: the judge gate is not met, no verifier hand-off, no print_check.
+
+**What this settles.** The hypothesis the previous step named (a systematic value error on the g-valued signs) is confirmed
+for one sign and refuted for another: T42 is an m homophone on this leaf, not g, and T70 is g; T88 and the off-sheet signs
+stay open at their occurrence counts. The residual judge gap (0.127) is not one more sign value of this size: the next lift
+has to come from the transcription (the T50/T92 c/s and other look-alike pairs the reconciliation logged, the T42/T17 cell
+question) or from more text, which is the Verdict's next step. The fit also shows what the printed key's remaining blanks
+look like under this instrument: a word code or separator (X_NEW) is invisible to a letter n-gram fit, so X_NEW is for a
+context read, not a re-fit.
+
+Vision calls 0. Requests: none to any host. No credentials. Box 05:18-05:3x UTC of 45 minutes.
+
+## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC, 2 Oct 2026)
+Read so far: 667 of roughly 800 signs of no.87 f.178 (all 23 lines of f.178v: L01-L10 LIKELY-3, L11-L23 GAPS-nevers-birago 04:3x UTC; the joined leaf under the fitted key (GAPS3, 05:3x UTC, section above) rank 1/201 z 4.84, judge FAIL -1.032 vs real_p05 -0.905; f.178r's 2 and f.179r's 3 cipher lines not cut), control-backed; 0 of the 7 target letters ff.138-184
 - f.178r foot (2 cipher lines) and f.179r head (3 lines) - blocker: not-attempted; canvases 181 and 182 right page need a native region each (2 gallica requests); next: iiif_lines regions + the same pipeline, ~$3
 - ff.138, 144, 152, 160, 168, 174, 184 (nos. 71-93) - blocker: not-attempted; HARVEST-D2's recipe (1200 px per canvas until the cipher is found, 2-4 requests a letter, offset drifts +1 to +3) then the same pipeline per leaf; next: locate and read f.144 (the fullest page of signs per the row), ~$8 a letter
-- the q homophone, the g-valued signs and the 13 off-sheet signs - blocker: open-codes; with the whole leaf read (667 signs) the pattern is systematic: T17 (m) never occurs, words needing m decode with g (ganiera, segpre, sigostrare, cogansi), questa reads guecta; g sits on T42 (12), T70 (8), T88 (3); off-sheet now X_NEW 7, X_EQ 2, X_A/X_K/X_S/? 1 each; next: decode_control.py --fit-sign on T42/T70/T88 and on X_NEW, judge re-run if a value moves, ~$1 (disk only)
+- the q homophone, T88 and the 13 off-sheet signs - blocker: open-codes; the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: a transcription pass on the logged look-alike pairs (T50/T92 c/s, T42/T17, T18/T98, T51/T95) with the fitted key's reading as the crib, 1 vision call per half-leaf, ~$3
 - the tipped-in decipherment (canvas 183) - blocker: needs-physical-access; written face not photographed (NEV-C1, LANE NEV follow-up); REQUEST.md / ASKS row 78 BnF reproduction batch covers it
 
 ## Escalation (2 Oct 2026)
 - [x] siblings: no.87 is itself the key's own witness leaf and was read first; the six other 1572 letters are the next units
 - [n/a] clear-pages: f.178v is cipher throughout; the prose of f.178r and f.179r frames the passage and was used only to confirm content
 - [x] known-keys: the printed 1572 key applied, rank 1 of 201 shuffled keys, power 20/20
-- [ ] print: print_check.py on 2-4 decoded phrases runs once the judge gate is met (L11-L23 did not lift the score: -1.074 on 738 letters vs -1.068 on 318; the g-sign fit is the step that can)
-- [ ] key-rebuild: one-sign value fits, not a rebuild -- the key reads the leaf (rank 1/201 on 667 signs); q, the g/m split on T42/T70/T88 and the off-sheet signs are open and now have enough occurrences for a value-fit
+- [ ] print: print_check.py on 2-4 decoded phrases runs once the judge gate is met (the g-sign fit lifted the leaf from -1.074 to -1.032 against -0.905; the look-alike transcription pass or more text is the next lift)
+- [x] key-rebuild: one-sign value fits, not a rebuild -- run (GAPS3, 2 Oct 2026): T42 g -> m, T70 g, T88 and the off-sheet signs undecided at their counts; the key reads the leaf at rank 1/201 before and after
 - [x] image-check: native region, debug overlay checked by eye, right edge re-fetched once when L07-L10 were clipped
 - [n/a] retry: no reset, challenge or failed fetch to retry (the one 500 was this worker's malformed URL)
-Verdict: keep going: 3 internal gaps; cheapest next: value-fit of the g-valued signs T42/T70/T88 and X_NEW with decode_control.py --fit-sign (disk only, ~$1), then f.178r foot + f.179r head (2 gallica requests, ~$3)
+Verdict: keep going: 3 internal gaps; cheapest next: f.178r foot + f.179r head (2 gallica requests, same pipeline under the fitted key, ~$3), then the look-alike transcription pass on f.178v with the reading as crib (~$3), then f.144

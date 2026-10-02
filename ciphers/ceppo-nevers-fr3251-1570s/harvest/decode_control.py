@@ -79,6 +79,9 @@ def main():
                     "uses ../../nevers-birago-fr3251-1572/harvest/sign_id_map_1572.json)")
     ap.add_argument("--fit-sign", action="append", default=[], help="score the target with this sign id set to each letter "
                     "in turn (and null); reports the ranking -- a value-fit test for one unkeyed sign, e.g. X_POUND")
+    ap.add_argument("--fit-values", default="", help="comma-separated extra candidate values for --fit-sign beyond the "
+                    "key's own values, e.g. 'q' for a letter the printed table has no sign for (GAPS3, 2 Oct 2026)")
+    ap.add_argument("--fit-top", type=int, default=6, help="how many best-fitting values --fit-sign prints (default 6)")
     a = ap.parse_args()
     rng = random.Random(a.seed)
     m = load_map(a.extra, a.map)
@@ -102,12 +105,13 @@ def main():
           f"{mu:.4f} sd {sd:.4f} max {mx:.4f}; z {z:.2f}; rank {rank} of {a.shuffles + 1}")
     for sid in a.fit_sign:  # value-fit test for one sign: which single value scores best, given the rest of the key
         rows = []
-        for v in sorted(set(m.values()) - {"et"}) + ["null"]:
+        extra_vals = [v for v in a.fit_values.split(",") if v]
+        for v in sorted((set(m.values()) | set(extra_vals)) - {"et"}) + ["null"]:
             mm = dict(m); mm[sid] = v; rows.append((score(model, passages, mm), v))
         rows.sort(reverse=True)
         n_occ = sum(1 for s in passages.values() for x in s if x == sid)
-        print(f"FIT {sid} ({n_occ} occurrences): " + ", ".join(f"{v} {sc:.3f}" for sc, v in rows[:6]) +
-              f"; unkeyed {score(model, passages, m):.3f}")
+        print(f"FIT {sid} ({n_occ} occurrences, now {m.get(sid, 'unkeyed')}): " +
+              ", ".join(f"{v} {sc:.3f}" for sc, v in rows[:a.fit_top]) + f"; as keyed {score(model, passages, m):.3f}")
     # power control
     corpus = jp.fold("".join(texts)).replace("j", "i").replace("v", "u")
     corpus = "".join(c for c in corpus if c not in "bxykw")
@@ -136,8 +140,11 @@ def main():
             cp[f"c{pi}"] = seq
         r2, rk, mu2, sd2, mx2, z2 = shuffle_test(model, cp, m, a.shuffles, rng)
         firsts += rk == 1; zs.append(z2)
-    print(f"POWER CONTROL: {a.windows} it16dip windows, same passage lengths, err {a.err:.2f}: real key rank 1 in "
-          f"{firsts}/{a.windows}; z median {statistics.median(zs):.2f} min {min(zs):.2f}")
+    if a.windows:
+        print(f"POWER CONTROL: {a.windows} it16dip windows, same passage lengths, err {a.err:.2f}: real key rank 1 in "
+              f"{firsts}/{a.windows}; z median {statistics.median(zs):.2f} min {min(zs):.2f}")
+    else:
+        print("POWER CONTROL: skipped (--windows 0)")
 
 
 if __name__ == "__main__":

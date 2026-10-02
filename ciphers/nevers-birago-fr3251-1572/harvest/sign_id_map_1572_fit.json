@@ -1,0 +1,565 @@
+[
+{
+"value": "z",
+"box": [
+786,
+49,
+826,
+73
+],
+"kind": "letter",
+"id": "T10"
+},
+{
+"value": "carmagnola",
+"box": [
+458,
+304,
+494,
+340
+],
+"kind": "word",
+"id": "T11"
+},
+{
+"value": "l",
+"box": [
+341,
+196,
+381,
+227
+],
+"kind": "letter",
+"id": "T13"
+},
+{
+"value": "bugonotti",
+"box": [
+693,
+304,
+746,
+341
+],
+"kind": "word",
+"id": "T15"
+},
+{
+"value": "m",
+"box": [
+384,
+51,
+404,
+77
+],
+"kind": "letter",
+"id": "T17"
+},
+{
+"value": "d",
+"box": [
+117,
+84,
+143,
+122
+],
+"kind": "letter",
+"id": "T18"
+},
+{
+"value": "o",
+"box": [
+454,
+48,
+479,
+76
+],
+"kind": "letter",
+"id": "T19"
+},
+{
+"value": "f",
+"box": [
+198,
+51,
+222,
+75
+],
+"kind": "letter",
+"id": "T24"
+},
+{
+"value": "i",
+"box": [
+303,
+86,
+329,
+116
+],
+"kind": "letter",
+"id": "T25"
+},
+{
+"value": "per",
+"box": [
+158,
+316,
+182,
+348
+],
+"kind": "word",
+"id": "T26"
+},
+{
+"value": "t",
+"box": [
+649,
+188,
+671,
+227
+],
+"kind": "letter",
+"id": "T27"
+},
+{
+"value": "et",
+"box": [
+857,
+49,
+895,
+76
+],
+"kind": "letter",
+"id": "T29"
+},
+{
+"value": "u",
+"box": [
+676,
+45,
+713,
+71
+],
+"kind": "letter",
+"id": "T33"
+},
+{
+"value": "c",
+"box": [
+84,
+46,
+109,
+83
+],
+"kind": "letter",
+"id": "T36"
+},
+{
+"value": "a",
+"box": [
+4,
+51,
+37,
+79
+],
+"kind": "letter",
+"id": "T37"
+},
+{
+"value": "z",
+"box": [
+790,
+194,
+820,
+221
+],
+"kind": "letter",
+"id": "T38"
+},
+{
+"value": "m",
+"box": [
+230,
+120,
+261,
+150
+],
+"kind": "letter",
+"id": "T42",
+"value_printed": "g",
+"note": "GAPS3 2 Oct 2026: value-fit on f.178v L01-L23 (667 signs): m -1.005 vs printed g -1.040 (best single letter; t -1.009); reads sempre, mostrare, maniera, comandi, meco, Memoranci; the printed g holds only in Guascogna L02 pos 8"
+},
+{
+"value": "e",
+"box": [
+155,
+45,
+180,
+80
+],
+"kind": "letter",
+"id": "T45"
+},
+{
+"value": "turino",
+"box": [
+576,
+307,
+612,
+338
+],
+"kind": "word",
+"id": "T46"
+},
+{
+"value": "u",
+"box": [
+679,
+82,
+704,
+115
+],
+"kind": "letter",
+"id": "T49"
+},
+{
+"value": "c",
+"box": [
+81,
+83,
+117,
+114
+],
+"kind": "letter",
+"id": "T50"
+},
+{
+"value": "l",
+"box": [
+340,
+47,
+362,
+77
+],
+"kind": "letter",
+"id": "T51"
+},
+{
+"value": "i",
+"box": [
+303,
+126,
+333,
+157
+],
+"kind": "letter",
+"id": "T52"
+},
+{
+"value": "t",
+"box": [
+636,
+48,
+671,
+71
+],
+"kind": "letter",
+"id": "T53"
+},
+{
+"value": "m",
+"box": [
+374,
+158,
+408,
+192
+],
+"kind": "letter",
+"id": "T54"
+},
+{
+"value": "o",
+"box": [
+455,
+83,
+481,
+114
+],
+"kind": "letter",
+"id": "T55"
+},
+{
+"value": "h",
+"box": [
+270,
+85,
+297,
+130
+],
+"kind": "letter",
+"id": "T56"
+},
+{
+"value": "s",
+"box": [
+604,
+189,
+636,
+231
+],
+"kind": "letter",
+"id": "T57"
+},
+{
+"value": "l",
+"box": [
+341,
+158,
+367,
+192
+],
+"kind": "letter",
+"id": "T58"
+},
+{
+"value": "n",
+"box": [
+416,
+82,
+448,
+116
+],
+"kind": "letter",
+"id": "T60"
+},
+{
+"value": "d",
+"box": [
+121,
+51,
+147,
+76
+],
+"kind": "letter",
+"id": "T63"
+},
+{
+"value": "h",
+"box": [
+265,
+53,
+296,
+76
+],
+"kind": "letter",
+"id": "T64"
+},
+{
+"value": "t",
+"box": [
+642,
+78,
+675,
+116
+],
+"kind": "letter",
+"id": "T65"
+},
+{
+"value": "e",
+"box": [
+158,
+122,
+183,
+155
+],
+"kind": "letter",
+"id": "T66"
+},
+{
+"value": "g",
+"box": [
+233,
+85,
+261,
+111
+],
+"kind": "letter",
+"id": "T70"
+},
+{
+"value": "n",
+"box": [
+416,
+47,
+440,
+78
+],
+"kind": "letter",
+"id": "T76"
+},
+{
+"value": "qual",
+"box": [
+231,
+315,
+273,
+338
+],
+"kind": "word",
+"id": "T78"
+},
+{
+"value": "i",
+"box": [
+303,
+158,
+337,
+190
+],
+"kind": "letter",
+"id": "T80"
+},
+{
+"value": "b",
+"box": [
+45,
+53,
+69,
+77
+],
+"kind": "letter",
+"id": "T81"
+},
+{
+"value": "r",
+"box": [
+564,
+47,
+598,
+75
+],
+"kind": "letter",
+"id": "T83"
+},
+{
+"value": "quello",
+"box": [
+311,
+304,
+335,
+337
+],
+"kind": "word",
+"id": "T84"
+},
+{
+"value": "a",
+"box": [
+8,
+89,
+34,
+114
+],
+"kind": "letter",
+"id": "T85"
+},
+{
+"value": "e",
+"box": [
+153,
+89,
+186,
+120
+],
+"kind": "letter",
+"id": "T86"
+},
+{
+"value": "g",
+"box": [
+234,
+51,
+252,
+71
+],
+"kind": "letter",
+"id": "T88"
+},
+{
+"value": "che",
+"box": [
+90,
+318,
+115,
+350
+],
+"kind": "word",
+"id": "T89"
+},
+{
+"value": "p",
+"box": [
+492,
+40,
+515,
+77
+],
+"kind": "letter",
+"id": "T90"
+},
+{
+"value": "s",
+"box": [
+601,
+51,
+632,
+71
+],
+"kind": "letter",
+"id": "T92"
+},
+{
+"value": "s",
+"box": [
+604,
+122,
+627,
+155
+],
+"kind": "letter",
+"id": "T95"
+},
+{
+"value": "i",
+"box": [
+307,
+44,
+329,
+78
+],
+"kind": "letter",
+"id": "T96"
+},
+{
+"value": "r",
+"box": [
+564,
+84,
+588,
+111
+],
+"kind": "letter",
+"id": "T97"
+},
+{
+"value": "s",
+"box": [
+604,
+77,
+622,
+118
+],
+"kind": "letter",
+"id": "T98"
+}
+]

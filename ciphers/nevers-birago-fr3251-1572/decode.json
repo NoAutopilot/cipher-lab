@@ -20,7 +20,8 @@
    "uncertain_conf": [
     "M",
     "L"
-   ]
+   ],
+   "exceptions": "harvest/exceptions_f178v.tsv"
   }
  ]
 }
