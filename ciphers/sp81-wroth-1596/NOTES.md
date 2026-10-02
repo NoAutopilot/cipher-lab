@@ -1,4 +1,5 @@
 open
+HMC Salisbury (Hatfield) vol. 6 (1895, archive.org calendarofmanusc06grea, full OCR text) read by this worker on 2 Oct 2026: whole-volume grep for "Wroth" = 2 hits (Lincoln to Cecil, 10 July 1596, "this bearer, Mr. Wroth", and index "Wroth, Mr., 254"); no entry for a Wroth letter of 7 Sept 1596.
 
 # John Wroth to Cecil, with a cipher key — TNA SP 81/7/239 (1596)
 
@@ -86,7 +87,7 @@ exists on Google Books, but is not itself a hit on this item.
 
 ## Verdict
 
-**open**, stage 2 verified unsolved (conditional on the two named editions checked above; List and Analysis
+(2 Oct 2026 re-check, CS-A2-A: still open on the sources above; Wernham 1596 unread.) **open**, stage 2 verified unsolved (conditional on the two named editions checked above; List and Analysis
 and Google Books outstanding). No source in this sweep identifies, quotes, or describes the content of SP
 81/7/239 itself. Wroth's 1596-97 mission and his division of German princes with Henry Wotton are
 established from Domestic-series docquet/enclosure material (M-grade context, not a reading of the cipher
@@ -105,3 +106,25 @@ archive.org (be-api.us.archive.org fts): 3 (Wroth in vol. 6; Wroth and "Wroth"+"
 1595-97). archive.org (djvu.txt fetches): 2 (calendarofmanusc06grea 2.5 MB; CSP Domestic 1595-97 2.35 MB).
 github.com: shared clone with the rest of this batch, not re-cloned. No TNA Discovery calls (per brief). No
 Google Books calls (per brief; queries logged above as pending). WebSearch: 4.
+
+## Web and blog check (CS-A2-A, 2 Oct 2026)
+
+Five WebSearch queries, no logins, no hit on this folio:
+1. `John Wroth Cecil 1596 cipher letter SP 81/7` -- results: John Cecil (priest), tudortimes ciphers page, Cecil/Bourbourg cipher (BL Add MS 72438, TNA image asset), Folger CELM Hatfield page; none names Wroth or the folio.
+2. `"SP 81/7" cipher Wroth Germany States 1596 decipher` -- SSNE record WROTH, JOHN [SSNE 1459] (embassy June 1596 on; cites SP/81/8, E/403/2560; no cipher mention, opened); TNA beta catalogue SP 81 rows; flyingpenguin 1632 Mary Wroth cipher post (a different, later Wroth, not opened).
+3. `Wroth Wotton embassy German princes 1596 Elizabeth cipher key Cecil` -- nothing on a 1596 embassy cipher.
+4. Site searches, allowed_domains ciphermysteries.com, cryptiana.blogspot.com, scienceblogs.de (Cipherbrain): `Wroth Cecil cipher` -- Cipher Mysteries returned unrelated posts (Cipher Bureau 1938, Cysquare, Blitz, Weldon, Silk Dress, d'Agapeyeff, Zodiac); no Wroth. Cryptiana (blogspot and Tomokiyo's fc2 pages) `Elizabethan cipher letter Cecil 1596 Germany deciphered "Wroth"` returned no results; Cipherbrain returned nothing for the same query (the engine's site filter is thin: unreachable-as-a-search, not a proven absence). Local `sources/cryptiana/` grep for "Wroth" last done 24 Sept 2026 (no match).
+5. Catalogue: TNA Discovery API `sps.recordSeries=SP 81`, `Wrothe cipher key`: 1 hit, C7771054, SP 81/7/239, "1596 Sept. 7", "Folio 239: Jn. Wrothe to Cecil with cipher key.", `digitised: false`, held by The National Archives, Kew (API `details` has no availability flag beyond that). Neighbours in the series: SP 81/7/234 (8 Aug 1596) and SP 81/8/29, /31 (Jan 1598), all "Jn. Wrothe to Cecil", none described as cipher.
+
+No decipherment, plaintext or attempt on this letter found in any comment thread or page.
+
+## Premise check (CS-A2-A, 2 Oct 2026)
+
+- (a) folder's own mentions of a decipherment/gloss: NOTES.md and REQUEST.md name none; the key is catalogued in the same folio. Not found.
+- (b) other solvers' working files: grep of fresh shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026) for `wroth|SP 81|SP81`: only unrelated text (smith1562 "CSP 815" table, Harley catalogue genealogy, Charles I source texts); Aymeloglu catalogue/ (decode, bne) no "Wroth". Not found. (Aymeloglu: cited, nothing copied.)
+- (c) physical neighbours: no image exists (`digitised: false`), so nothing could be viewed; ff. 238/240 and the facing page unreachable. Unreachable.
+- (d) recipient's side: Cecil's own papers, HMC Salisbury vol. 6, read as above, not found. The same series' later-year Wroth/Cecil letters (vol. 7-8, 1597-98) would not hold a 7 Sept 1596 letter; not opened.
+
+## Check of 2 Oct 2026: what was not covered
+
+The printed calendar that treats SP 81 properly, Wernham's List and Analysis of State Papers Foreign Series for 1596, was not found online (IA metadata search, two Google Books API queries, 0 hits); it is the open gap, and no HTRC volume id was located. A decipherment printed there would not show up in this check.
