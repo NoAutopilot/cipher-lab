@@ -154,3 +154,95 @@ modal's own `alt` text names (`IMG_R1162_I5837_P1.png`, `IMG_R1162_I5838_P2.png`
 this pass. Status unchanged: **open**, still blocked on image resolution for a blind transcription pass; the
 attached transcription document (id 3593) remains the only route to this record's text, and it is also
 blocked (same placeholder, see `sources/decode/NOTES.md`).
+
+## LIKELY-4 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-likely-phase2.md`, row 4 of
+`ciphers/_triage/likely-solves-2026-10-02.tsv`. Named first cheap test: apply the decode-1168 key to this
+record's public DECODE transcription against 20 shuffled-key controls, login-free, at most 10 de-crypt.org
+requests, no login. Clock read 03:34-03:4x UTC.
+
+**Intake gate.** `python3 tools/intake_gate_check.py decode-1162-modena-ambung-1492` -> exit 0, output
+"blocked (line 116) -- already terminal, nothing to gate". The tool took the word "Blocked" from the D1
+transcription section's bold heading (line 116), not from the status line (line 3, `open`); exit 0 either way,
+so nothing to do before the test, but a later pass should know the gate's parse of this file is of the
+section heading, not the status word.
+
+**The test did not run: both of its inputs are missing, so it is a non-test, not a negative (rule 3).**
+
+1. *No key.* The triage row's head start (a) reads "sibling decode-1168-modena-costabili-1492 is partial with a
+   key for the same Modena chancery". The sibling folder holds one file, NOTES.md; its `partial` is DECODE's own
+   "Partially decrypted" status word, copied on 24 Sept 2026 without anyone confirming what it refers to (that
+   NOTES.md says so in its own verdict). No key for 1168 exists on disk, in `keys/`, or anywhere else in the
+   repository (grep for the record id and "Costabili" across keys/, ciphers/, QUEUE.md). So there is no key to
+   apply and no key to shuffle. The 20-control calibration is therefore also unrun: a control cannot run
+   before the instrument exists.
+2. *No ciphertext.* The attached transcription document (id 3593, `DOC_R1162_D3593_3593.txt`) is still the
+   site's `forbidden.png` placeholder when fetched login-free, re-checked today (request 3 below): HTTP 200,
+   `Content-Type: image/png`, `Content-Disposition: inline; filename="forbidden.png"`, 17947 bytes, sha1
+   `035489a0605851154ab88372216354b63596ca22`, byte-identical to the 24 Sept result. The only images on disk
+   are the two 200x300 thumbnails (D1 section above), unreadable. No `ciphertext.txt`, no `inventory` of signs.
+
+Login-free requests this pass (de-crypt.org, descriptive User-Agent, 1.6 s apart, 03:36-03:37 UTC):
+
+| # | URL | result |
+|---|---|---|
+| 1 | `RecordsView/1162` | HTTP 200, 104 KB HTML, served without login (metadata block readable, see below) |
+| 2 | `DocumentsList?showmaster=records&fk_id=1162` | HTTP 302 -> `/decrypt-web/login` (needs login) |
+| 3 | `filesrv/?file=DOC_R1162_D3593_3593.txt` | HTTP 200 but the `forbidden.png` placeholder, sha1 `035489a0...` |
+
+Vision calls: 0. No other host. No login attempted (brief).
+
+**What the login-free record page adds (new to this folder).** RecordsView/1162's metadata block, read without
+login: Author *Beltrame Costabili*, Receiver Eleonora d'Aragona, origin *Esztergom*, Hungary, start date
+*27 February 1492* (Start Year 1492, Month 2, Day 27), 2 pages, symbol set graphic signs, "Cipher Type (notes):
+Homophonic or simple substitution", Cleartext Italian, Plaintext "Italian?", Inline Cleartext Yes, Inline
+Plaintext No, "Private Ciphertext: True", Available Documents: Transcription. Earlier passes had this record as
+"envoy report, Ferrara" with the sender unread; it is the same envoy, place and month as decode-1168
+(Costabili, Esztergom, 20 March 1492, b.2/21 no.8), three weeks earlier (b.2/20 no.6). The triage row's named
+risk ("1168 and 1162 are different envoys' keys") is answered: same author, same posting, same month. A key
+recovered from either letter is the first thing to try on the other.
+
+**The premise of the brief's own stop condition is stale.** The brief says "the full-size images are
+account-blocked". ASKS.md row 42 was answered on 28 Sept 2026: the DECRYPT PI extended this account's access,
+and DECODE-OPEN (sources/decode/NOTES.md "Full-size images: access after the PI's extension (28 Sept 2026)")
+fetched full-size images for 18 formerly blocked records through one `tools/decode_browser_login.js` login;
+its listener run also fetched "5 documents". Whether 1162's transcription document and its two full-size
+images (`IMG_R1162_I5837_P1.png`, `IMG_R1162_I5838_P2.png`, the names in the zoom modal's alt text) now come
+through for a logged-in session has not been tested since the extension; every "blocked" line in this
+folder and in sources/decode/NOTES.md about 1162 predates it (24 Sept). This worker's brief forbade a login,
+so it is untested here, not failed.
+
+**Status word stays `open`** (rule 5): the blocker is not outside the session; a known, untried, cheap
+instrument exists. A `blocked` status would be wrong while that instrument is untried, and a LOCAL-QUEUE row
+for the owner's desk would be premature for the same reason (and the key livecheck rule: DECODE_USER/
+DECODE_PASS are present and the login works, so no access row may be filed on them).
+
+**Next step (one logged-in fetch, Sonnet, about USD 1-2 priced from DECODE-OPEN's 7.56 for 73 requests):**
+
+```
+NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 1162 ciphers/decode-1162-modena-ambung-1492/decode \
+  --fetch 'https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt' \
+  --guess-fullsize --max-files 3 --delay 1700
+```
+
+Check each file with `file` and the saved `Content-Disposition` before trusting it (a PNG signature or
+`filename="forbidden.png"` means the fetch failed, sources/decode/NOTES.md 24 Sept). Images stay in the
+scratchpad or under the 30 MB folder cap and are not published (the PI's reminder, DECODE-OPEN). If the
+document comes through: it is the record's own transcription of a 2-page mixed cipher/clear letter
+(Inline Cleartext Yes), so the first paid step is the known-answer step on its clear passages, then the same
+logged-in fetch for 1168's record (its "Partially decrypted" document, if one is attached, is the only
+candidate key source for this pair) before any shuffled-key run. If the document is still the placeholder
+for a logged-in session after 28 Sept, the next step is the row below, and only then does this folder read
+`blocked`.
+
+**LOCAL-QUEUE.tsv row, drafted, to be appended only if the logged-in fetch above returns the placeholder
+(tab-separated; id to be assigned by whoever appends it):**
+
+```
+L<n>	decode	ciphers/decode-1162-modena-ambung-1492	LIKELY-4 (2 Oct 2026). DECODE record 1162 (https://de-crypt.org/decrypt-web/RecordsView/1162, Costabili to Eleonora d'Aragona, Esztergom 27 Feb 1492, ASMo Amb. Ung. b.2/20 no.6) has one attached document, id 3593 'SAMo_Amb_Ung_b_2_20_6', category Transcription, marked Public, plus two page images. From the cloud, logged in or not, https://de-crypt.org/decrypt-custom/filesrv/?file=DOC_R1162_D3593_3593.txt returns the site's forbidden.png placeholder (sha1 035489a0605851154ab88372216354b63596ca22; last checked <date of the logged-in retry>). In a desk browser logged in to de-crypt.org: open the record, click the Transcription document under 'Available Documents', save it as ciphers/decode-1162-modena-ambung-1492/decode/DOC_R1162_D3593_3593.txt (check it is text, not a PNG), and from the image viewer save the two full-size page images (zoom modal, filenames IMG_R1162_I5837_P1.png and IMG_R1162_I5838_P2.png) into the same folder's images/ with a manifest.json line each (url, bytes, sha1, date). Quote the document's first line in the result cell. If the site shows the same placeholder in the browser, say so and quote the message.	queued	
+```
+
+Follow-up (one line, not run here): correct the triage row's head_start cell for row 4 -- 1168 holds no key --
+so the parent does not re-rank it on that premise; and the 1162/1168 pair is a two-letter sign pool of one
+envoy, one posting, one month, which is the shape the selection rule prefers once either text is on disk.
