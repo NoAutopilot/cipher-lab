@@ -1,0 +1,11 @@
+{"source": "https://gallica.bnf.fr/ark:/12148/btv1b9060232m", "fetched": "2026-10-02", "by": "NEVBIR-3252",
+ "files": {
+  "c48.jpg": {"canvas": 48, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f48/full/1600,/0/native.jpg", "pages": "f.46v | f.47r (no.30 cipher)"},
+  "c49.jpg": {"canvas": 49, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f49/full/1600,/0/native.jpg", "pages": "f.47v | f.48r"},
+  "c101.jpg": {"canvas": 101, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f101/full/1600,/0/native.jpg", "pages": "f.99v | f.100r (no.67 cipher)"},
+  "c102.jpg": {"canvas": 102, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f102/full/1600,/0/native.jpg", "pages": "f.100v | f.101r"},
+  "c118.jpg": {"canvas": 118, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f118/full/1600,/0/native.jpg", "pages": "f.116v | f.117r (no.77 cipher)"},
+  "c101_endorse.jpg": {"canvas": 101, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f101/3780,2450,560,1080/full/90/native.jpg", "note": "docket on f.99v, rotate 180 to read"},
+  "c101_leftblock.jpg": {"canvas": 101, "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060232m/f101/900,1500,2800,900/1400,/0/native.jpg", "note": "show-through on f.99v"}
+ },
+ "viewed_not_kept": [47, 100, 117, 119]}
