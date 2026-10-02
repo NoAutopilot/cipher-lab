@@ -1,0 +1,24 @@
+# R9587 image check, A2-CAS6, 2 Oct 2026. Source: DECODE R9587 full-size scans IMG_R9587_I45103_P1 (2935x3599, sha1 156bdb616cdd) and P2 (2970x3597, sha1 23d37d684e87), not committed.
+# Crops: tools/iiif_lines.py --image ... --centres (by eye) --lines-per-crop 1 --max-width 1400. Readers: B = Bourdeau's transcript (ciphertext.txt); P = one blind Sonnet pass (no transcript); R = reconcile by this worker against the native crops.
+# verdict: kept = transcript stands; proposed = image reading differs from the transcript, M, NOT applied to ciphertext.txt; open = image does not settle it.
+pos	page_line	transcript	blind_P	reconcile_R	verdict	note
+11	P1 L1 end	177?	17?	17?	open	group runs off the curled right edge of the photograph; needs another image or the leaf
+26	P1 L3	?68?	?4?9 / 6?4	x?684 (overwritten)	open	overwritten group under a looped flourish; R sees ...684 (1684, a frame-pair group, is possible), not settled
+50	P2 L1	?145	x[1415]	?145 with strike strokes	open	digits under slanted strokes; P and R agree on 145 ending
+51	P2 L1	?802	7602 (1602)	?802	open	first digit 1 or 7; neither 1802 nor 7802 recurs in corpus
+53	P2 L1	14??	1468	14?8 (blotted)	open	both see 14 plus a blotted 8-like end; not settled
+54	P2 L1	156?	1583	156? (blotted)	open	split
+55	P2 L1	?4??	x[1488]	?4?? struck	open	struck through on the leaf (both readers); likely a writer's cancellation
+57	P2 L2	?425	?4?5	x?425	open	line 2 opens with several groups crossed through (both readers); likely cancellations
+58	P2 L2	?549	?5?49	x?549	open	crossed through, as above
+66	P2 L3	?818	818	818 (leading tick)	proposed	both readers 818; the leading mark is a tick or show-through, not a digit; 818 unkeyed (1 other corpus occurrence)
+67	P2 L3	?13	713	713 (crossed?)	proposed	both readers 713; an x-stroke may cancel it; 713 unkeyed
+68	P2 L3	22??	2214	221? (overwritten 1/4)	open	2211 (=di, G) or 2214 (absent from corpus); the overwrite decides the value, not settled
+70	P2 L3	82?	82 x[?] 94	82 ?94 / 8294	open	one group or two (82, ?94); not settled
+71	P2 L3	?4	(94)	?94	open	see 70
+72	P2 L3	?651	1651 (x[1]651)	?651	open	leading stroke 1 or a cancel mark
+77	P2 L4	2?	2?955 (one group)	2. (superscript 8)	open	a 2 with a superscript mark; P joins it to the next group
+78	P2 L4	?555	(2?955)	/555 = 1555?	open	the hand's 1 is a long slant (cf. 1545 beside it); 1555 (26 corpus occurrences) possible; readers split
+80	P2 L4	?800	800	800	proposed	both readers 800; the blot is over the first 8, no fourth digit; 800 unkeyed
+83	P2 L4	?64?	?64	964 / 664 under a loop	open	split
+134	P2 L8 end	291?	291?	291 + line-end flourish	proposed	R reads a terminal flourish (line-end mark), not a digit; 291 unkeyed
