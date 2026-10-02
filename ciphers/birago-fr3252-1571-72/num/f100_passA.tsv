@@ -1,0 +1,22 @@
+L01	s1		no cipher in this segment (clear text only); crops are mis-cut vertically (s2 line sits low and is clipped), so all s2 rows were read from the source image deskewed 1.9 deg
+L01	s2	7 6 | 4 0 0 5 4 4 1 5 0 1 5 0 2 6 4 3 9 4 0 i 2 m 0	
+L02	s1	8 4 0 1 3 3 9 2 9 3 0 8 2 4. i 0 3 8 5 4 5 9 0 m 0 8	8 at seam (centre just inside s1)
+L02	s2	0 1 5 5 9 2 8 0 0 1 2 0 1 3 0 4 1 9 2 i 5 0 9 9 4 2 0 m 0 8 0	
+L03	s1	0 1 3 4 0 5 9 1 9 n 4 0 1 3 1 5 8 1 4 9 4 8 2 5 9	
+L03	s2	4 2. 5. 1 5 4 1 5 3 3 2. i 0 1 3 m 0 8 9 9 4 i 8. 1 9 8 9 2 9 4 n 2	4 at seam (centre about on the line), placed in s2
+L04	s1	8 3 2 4 2. i 5 4 4 9 5 9 4 i 8. 0 4 1 9 0 1 5 5 9 2 0 1 4	final 4 at seam placed in s1 (centre just inside)
+L04	s2	h 2 4 3 9 4 f 3 0 5 4 4 3 9 0 1 5 0 1 5 3 2 2 4 0 4. i i 0. 1 9 3 0	h and f have tall flourished tops; near end four dots read as 4. i i 0. (dot over 4, over each i, over 0)
+L05	s1	9 0 8 5 0 8 4 2. i 4 8 9 9 3 1 9 0 8 1 5 4 4 h 4 8 1 5 3	h is a short-ascender n/h shape, h vs n; 3 at seam placed in s1
+L05	s2	2 4 0 5 9 8 3 3 9 0 9 5 9 0 1 5 3 2. i 4 0 2 8 5 0 m 3 3 9 2	
+L06	s1	9 2 5 9 1 9 8 2 1 5 1 9 2 5 4 4 3 9 0 2. i 3 0 1 3 m 0	dot over i faint
+L06	s2	8 9 9 3 8 9 3 2 i 0. 5 4 0 8 5 1 9 5 9 3 1 5 2 8 0 m 3 3 9 4	8 at seam (centre just past it) placed in s2
+L07	s1	1 5 0 3 9 8 5 8 0 3 9 5 4 4 9 5 1 1 9 1 5 3 4 9 0 0 5 9 5 1	
+L07	s2	2 1 5 5 9 3 0 1 3 4 1 5 0 9 9 4 2 1 5 2. i 2 9 9 4 2 i 8. 8 1 2	
+L08	s1	1 9 0 8 9 0 3 9 2 3 2 1 9 1 5 5 4 3 8 0 7 6 7 7 6 CLEAR	clear phrase Io dico la pura et mera uerita starts in s1 and runs across the seam into s2; one CLEAR token only, here
+L08	s2	| 7 0 8 9 4 0 3 1 5 3 9 5 9	s2 begins inside the clear phrase (no CLEAR repeated); cipher resumes after the wavy sign
+L09	s1	0 9 0 1 0 i 9. 5 9 1 9 n 4 i 0. 5: 4 0 5 9 i 0. 3 4 0 1 5 1 9	5: two dots above the 5/4 junction, read as over the 5 (could be over the 4); dot sites after i read as over the 0
+L09	s2	4 3 9 0 9 4 4 8 5 8 2 n 3 5 4 2 0 5 9 0 1 2 2 5 4 8 0 0 1 0	4 at seam (centre about on the line), placed in s2
+L10	s1	8 0 3 9 5 1 9 3 5 9 0 9 4 1 9 0 f 0 8 5 2 4 0 0 2 5	
+L10	s2	9 0 i 8. 3 9 1 9 4 0 1 4 4. i 8 5 2 3 2 9 4 0 4 1 9 2 4 0	
+L11	s1	4. i 5 4 4 1 5 2 4. i 3 9 1 5 4 9 2 2. 5. 1 5 1 9 4 9 4 8	one 5 near the end is ink-blotted (read 5)
+L11	s2	5 4 3 4. i 1 9 2 9 3 5 9 2 0 5 9 2 4 1 9 8 9 3 0 7 6 |	5 at seam (centre just past it) placed in s2

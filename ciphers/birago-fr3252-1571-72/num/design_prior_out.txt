@@ -1,0 +1,9 @@
+ciphers/birago-fr3252-1571-72/num/pooled_pairs_only.txt: 476 tokens, 64 distinct, inventory digits
+  relabel-invariant statistics: True; references at this N: 111
+  multi-sign (homophonic/nomenclator/syllabary) d=0.18 envelope=0.47 null_p05=0.42 -> plausible
+  letter-for-letter      d=0.80 envelope=1.26 null_p05=1.31 -> plausible
+  mixed (partial table)  d=1.25 envelope=3.47 null_p05=1.68 -> plausible
+  code                   d=1.37 envelope=0.95 null_p05=1.85 -> excluded
+  shuffled-input false-positive rate: 0.050
+  fine family ranking (advisory, not calibrated): homophonic=0.18; nomenclator=0.28; syllabary=0.44; alphabet substitution=0.80; mixed=1.25; code numbers=1.37
+  nearest keys: ciphers/nevers-birago-fr3251-1572/keys/key_1572_clerk.tsv [homophonic; Lodovico Birago / Duke of Nevers household secretariat -- re; 1572, reconstructed ; d=0.12; synthetic; inv=mixed] || ciphers/malsburg-hessen-1636/keys/key_519.tsv [homophonic; (folder) malsburg-hessen-1636; 1636; d=0.17; synthetic; inv=digits; num_in_range=0.85] || ciphers/ceppo-nevers-fr3251-1570s/witness/key_rows_ceppo.tsv [homophonic; Cesare Ceppo / Duke of Nevers household secretariat -- recon; 1570-1571 (letters u; d=0.25; synthetic; inv=mixed]

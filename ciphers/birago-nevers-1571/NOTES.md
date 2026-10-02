@@ -74,3 +74,23 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 16 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Pooled with fr.3252 f.100r (BIRAGO-NUM, 2 Oct 2026)
+
+Full record: `../birago-fr3252-1571-72/NOTES.md`, section "f.100r (no.67, 8 Jan 1572): transcription and pooled design
+analysis with f.119"; scripts and outputs in `../birago-fr3252-1571-72/num/`; family rows in `HYPOTHESES.md` (this
+folder); decode file `families/homophonic-1-profile=target-it16dip.txt` (not a reading). Summary:
+- fr.3252 f.100r (Birago to Nevers, Saluzzo 8 Jan 1572) is a second text of 565 digits in this system, transcribed
+  blind twice (two-reader disagreement 1.4%, none on a digit value) in Bourdeau's ct2 notation.
+- Same key, controlled: 21 shared 6-mers between the two letters (shuffled null max 5; two-key synthetic max 8), one
+  shared 10-mer `1503985803`, residual bigram r 0.728 (two-key synthetic max 0.52). The letter table looks closer to
+  ~30-50 effective two-digit cells than to the 62 symbols of Bourdeau's pairing.
+- The marks: a dot sits over both figures of a two-digit code group (Nevers key no.7's stated convention; Tomokiyo's
+  f.119 transcription already wrote ":41 :41 :25 :36"). On f.119, Bourdeau's two "4. 1" are a dotted 4 + dotted i
+  (checked by eye on his `cipher_full.png`), i.e. dotted group 41, which also occurs six times in f.100r.
+- Bourdeau's "75 pairings" constraint does not discriminate (200/200 random mark placements also segment); it is a
+  description, not a test.
+- Pooled homophonic family (N=476 pairs, K=64): clean control 0.896 (gate met), target judge FAIL (-1.272 vs real_p05
+  -0.959); control with 0.25 noise (the segmentation's probable error at this K) 0.249, below gate. A non-test, not a
+  negative. Next: joint phase+key anneal controlled at N=476, or a crib from the clear-text names.
+Status unchanged (`open`): no reading, no token graded. Novelty not classified (rule 10).

@@ -244,20 +244,115 @@ slope tracker locking two bands on line 1 (the NEVBIR-3252 fault); `--overlap 0`
 account 2's rate limit read `allowed_warning` at 22:13 UTC and this job started no new subagents beyond f.117's two. The crops are
 ready for the next worker, together with the CEPPO-SPLITS look-alike shapes as the known answer.
 
+## f.100r (no.67, 8 Jan 1572): transcription and pooled design analysis with f.119 (BIRAGO-NUM, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-birago-num.md`. Working files in `num/`. Prior work cited, not re-derived:
+D. Bourdeau, cyphersolver `targets/birago/NOTES.md` (16 Sept 2026; code MIT, text CC BY 4.0) -- his glyph-level f.119
+transcription is copied unchanged, credited, as `num/f119_ct2_bourdeau.txt` (`num/f119_ct2_bourdeau.SOURCE`), and his
+exclusions (prefix/suffix codes, structured homophony, polyphonic figures; annealer below unicity at 228 tokens / 62
+symbols) stand as he wrote them.
+
+**Crops** (command pasted before any subagent call, Usage 6):
+`python3 tools/iiif_lines.py --ark btv1b9060232m --canvas 101 --region 4380,2950,3700,1500 --out ciphers/birago-fr3252-1571-72/images/f100 --prefix f100 --max-width 1900 --overlap 0 --debug`
+-> 13 bands, fixed-y (no --follow-slope; the NEVBIR-3252 merge fault avoided); debug overlay checked by eye: L01 = the
+clear line ending "harebbe a caro 76÷4005...", L02-L11 the cipher, L12-L13 clear (deleted). Both readers found the s2
+segments clip the sloping right end of several lines and read those ends from the cached native source strip
+(`images/f100/src_*.jpg`, the same fetch), deskewed about 1.9 degrees. Tool note (one line, not done here): a fixed-y cut
+of a 3700 px line that rises ~120 px needs --follow-slope or a narrower --max-width.
+
+**Transcription.** Notation = Bourdeau's ct2 for f.119 (digits; a mark appended to the digit it sits over: `.` dot,
+`:` two dots; `|` the inline wavy sign; letters as written), so the two letters are in one notation (rule 3); the
+dotted 1 is kept as `i` (Bourdeau folds it into 1; `num/parse.py` reads `i` as 1). Two blind Sonnet passes
+(`num/f100_passA.tsv`, `num/f100_passB.tsv`, brief `num/f100_pass_brief.md`; B read the lines in reverse order),
+one reconciliation by this worker from native zooms of the 6 disputed spots (`num/f100_disagreements.tsv`, all settled
+for pass A: L03 8., L04 4. i i 0., L10 8. dots seen; L01/L02 i vs 1 is the same figure). Result `num/f100_recon.txt`:
+**565 digits** (539 unmarked-or-dotted-1, of which 23 dotted 1s; 26 dot-marked), **15 letters** (m 7, n 4, h 2, f 2),
+2 wavy signs, 1 clear phrase ("Io dico la pura et mera uerità", L08) splitting two runs. **Two-reader error: 8 of 585
+aligned positions (1.4%), all on a dot or on i/1; zero disagreements on a digit value.** Caveat: this is agreement, not
+accuracy (LESSONS.md "Look-alike pass"), and both readers worked from the same native strip under one brief. One open
+reading: L08 "...3 8 0 7 6 [7] 7 6 CLEAR" -- both read the middle sign as 7; by eye it is a 7-like stroke without the wavy
+sign's dots, possibly the wavy sign itself (f.119 brackets with ÷76); graded M.
+Run delimiters match f.119: run 1 opens "76 ÷" and closes "...380 76 ? 76"; run 2 opens "÷ 70 89..." and closes "...30 76 ÷"
+(f.119: "÷76 ... ÷76").
+
+**Design findings** (`num/analyze.py` -> `num/analyze_out.txt`; `num/phase.py`; every number beside its control):
+
+1. *Dotted two-digit code groups (structural, both letters).* In f.100r a dot sits over both figures of a
+   two-digit group: of 23 dotted 1s, 21 stand next to another dotted figure, while 63 other 1s are undotted; the dotted
+   tokens form 24 runs, 20 of them exactly two long (2. i = 21, 4. i = 41, i 8. = 18, i 0. = 10, 2. 5. = 25, i 9. = 19;
+   one 4-run 4. i i 0. = 41 10, one 3-run i 0. 5: ). Control: the same number of dots placed at random digit positions,
+   2,000 draws, gives a mean of 3.4 even-length runs (p99 8, max 10) against **21** observed. This is the convention
+   Tomokiyo describes for Nevers key no.7 (1586, `sources/cryptiana/web/nevers.htm`: "A dot should be put over a
+   two-digit figure"), and it is how Tomokiyo transcribed f.119 (":41 :41 :25 :36 ..." as two-figure groups).
+   Checked by eye on f.119 (Bourdeau's `cipher_full.png`): both of Bourdeau's "4. 1" are a dotted 4 followed by a
+   dotted i, i.e. the same dotted group 41 as f.100r. Shared marked groups across the letters: 41 (dotted, both), 25
+   (marked, both), 21 (dotted in f.100r, crossed in f.119). Bourdeau's single-digit reading of the marks (and so his 75
+   pairings) does not hold for the dotted marks; his maxw=2 spans happen to include the right pairs.
+2. *Bourdeau's 75-pairing count is not a design test.* With the wavy sign ignored, 200 of 200 draws that put f.119's 16
+   marks at random digit positions also admit a segmentation (f.100r: 13,692 segmentations, control 200/200). A
+   random-digit-VALUE control would be identical by construction (parity depends on mark positions only; rule 3
+   orthogonal-control paragraph), so the position control was used. With the wavy sign as a hard break f.119 has 0
+   segmentations (control 15-34% have one): weakly against the wavy sign as a token boundary.
+3. *Even-pair parity does not hold for f.100r either way.* With the dotted pairs as code groups, letters dropped and
+   the wavy sign as a break, 16 of 27 plain runs are odd (letters as breaks: 24/42; dropping any one digit as a
+   single-sign token: best 11/27, digit 4; line ends as breaks: 22/36). The letter stream is not a clean two-digit
+   stream between the marked groups: stray single digits (or unmarked codes) exist. `phase.py` models this.
+4. **Same key in both letters.** Plain-digit streams (letters out, marked figures in): **21 shared 6-mers** between
+   f.119 and f.100r against a shuffled-f.100 null of mean 0.93 (p95 3, max 5, 200 draws); 8 shared 7-mers (null max 2),
+   4 shared 8-mers (null max 1), one shared 10-mer `1503985803` (f.119 L4 "...4 0 3 1 5 0 3 9 8 5 8 0 3 4...", f.100r L07
+   "1 5 0 3 9 8 5 8 0 3 9 5..."). Residual digit-bigram profile (observed minus unigram expectation) **r = 0.728**
+   against a shuffled null p95 0.259 -- higher than each letter's own half-vs-half r (f.119 0.526, f.100r 0.577).
+   Matched power control (synthetic Italian, 240+280 letters, two-digit homophonic over the 64 cells without 6/7, 30
+   trials per row): one key vs two keys -- 30 cells: shared 6-mers 20.2 (11-36) vs 1.1 (0-4), r 0.758 vs 0.003 (max
+   0.274); 40 cells: 7.8 vs 0.9, r 0.574 vs -0.022; 62 cells: 4.1 vs 1.7, r 0.086 vs 0.008. The observed pair (21,
+   0.73) lies inside the one-key band at about 30 cells and outside every two-key trial (max 8 shared 6-mers, max r
+   0.52). Conclusion at S grade (cryptanalytic, controlled): f.100r is in the same key as f.119, and the key's letter
+   table is far less homophonic than Bourdeau's 62-symbol pairing implied (his figure includes phase errors).
+5. *Design prior* (`tools/design_prior.py --no-write num/pooled_pairs_only.txt`, `num/design_prior_out.txt`): multi-sign
+   class plausible (d 0.18, envelope 0.47, null p05 0.42), code excluded; nearest key on file the Nevers-Birago 1572
+   clerk table (homophonic, d 0.12).
+6. *Phase recovery* (`num/phase.py`): hard-EM Viterbi cutting each plain run into pairs or stray single digits.
+   Control first (synthetic Italian, 520 letters, 5% stray digits, 3 seeds each): phase accuracy 0.97-0.99 at 30
+   cells, 0.91-0.98 at 40, **0.66-0.78 at 62**. Target (pooled 48 runs, 985 plain digits): 476 pairs, 64 types (7
+   hapax), 33 strays, H 5.49 bits -- between the 40-cell (5.2) and 62-cell (5.85) controls, and the type count moves
+   64-71 between seeds (the 30-cell controls are stable), so the target's phase is not settled; expected phase error
+   roughly 10-30%. Output `num/pooled_tokens.txt`, spec `specs/birago-num-pooled.json`.
+
+**Family run (rule 3, `tools/family_run.py`, both rows in `../birago-nevers-1571/HYPOTHESES.md`):**
+
+| run | control (N=476, K~60, it16dip, profile=target) | target | verdict |
+|---|---|---|---|
+| homophonic, clean control, 3 seeds x 8 restarts | **0.896** (0.809-0.960), gate 0.6 met | best -1191.3 (-2.50/token vs control -2.13..-2.28); judge it: **FAIL** -1.272 vs real_p05 -0.959 (null_p99 -1.77) | the decode does not read (LM attractors "merito", "amato", as in Bourdeau's runs); not licensed |
+| homophonic, control noise 0.25 (the phase error the target likely carries) | **0.249** (0.195-0.311), below gate | not run | at the target's probable phase error this family has no power |
+
+**Verdict: no reading; not a negative.** The clean-control FAIL is conditional on a segmentation whose own control says
+it is 66-90% right at this K; the noise-matched control falls below gate, so the target FAIL is a non-test of the key
+(rule 3, error-bracketing paragraph). What moved: f.100r is in f.119's key (controlled), the dotted marks are two-figure
+groups (controlled), and the pooled letter stream is ~476 pairs with roughly 30-50 effective cells. What would settle
+it: an instrument that does not fix the phase first -- a joint phase+key anneal (each run's cut points resampled under
+the key's current n-gram score, stray digits as nulls), controlled at N=476 with 5-10% strays at 40-60 cells -- or a
+crib from the clear text around both runs (Carmagnola, Bellagarda, la Valletta, Sua Maestà; f.100r's clear text on the
+same leaf names "Monsignor di Bellagarda", "la Valletta", "Carmagnola", "Giulio Centurione", "il Maresciale di logis").
+No grade is assigned to any token (no reading). Novelty not classified (rule 10).
+
+Requests this job: gallica.bnf.fr 2 (IIIF region of canvas 101, one superseded by a taller region); github.com 1
+shallow clone (dbourdeau/cyphersolver, scratch, not committed beyond the credited ct2 copy). Subagents: 2 Sonnet calls
+(passes A and B); reconciliation by this worker (6 positions).
+
 ## Remaining gaps (NEVBIR-3252-B, 2 Oct 2026)
 Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 277 signs decoded, all M/U, not licensed; f.47r: 157 signs tested, not licensed.
 - f.117r reader error 0.25 - blocker: not-attempted; no third reader this job (rate limit allowed_warning); next: look-alike pass on the T60/T86, T83/T81, T95/T51/T65, T90/T45 tiles using the 1572 confusion map, or a blind third reader, then re-run harvest/f117/run_tests.sh at the new error, ~$3
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
 - f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; re-cut done (images/f47/recut, 17 lines x 3); next: two blind passes in 3-4 line chunks + reconciliation against the Ceppo sheet with the CEPPO-SPLITS shapes as known answer, then re-run decode_control on the whole block, ~$10
 - f.47r reader error 0.44 - blocker: not-attempted; sheet lacks three forms the readers saw; next: add the barred 8 / dot-group / plain-triangle forms to the sheet before the next passes, ~$2
-- f.100r (~800 digits, Nov 1571 numerical system, no key) - blocker: no-key-material; f.119's system is unread (Bourdeau closed-negative at 483 digits); next: pooled with f.119 under BIRAGO-NUM (queued 2 Oct 2026)
+- f.100r (565 digits, transcribed 2 Oct 2026, same key as f.119, controlled) - blocker: not-attempted; pooled homophonic run is a non-test at the target's phase error (control 0.249 at noise 0.25, BIRAGO-NUM section); next: joint phase+key anneal with its own control at N=476, 40-60 cells, 5-10% strays, or a crib-constrained run from the clear-text names, ~$6
 
 ## Escalation (NEVBIR-3252-B, 2 Oct 2026)
 - [x] siblings: fr.3252 f.36-37 witness and the fr.3251 1572 group's sheet, maps, clerk key and controls used
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested: French, z 2.8-3.1, not licensed at 0.25), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM)
+- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; next joint phase+key anneal)
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r at lower reader error; f.47r whole block
-Verdict: keep going: 4 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3
+Verdict: keep going: 5 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3

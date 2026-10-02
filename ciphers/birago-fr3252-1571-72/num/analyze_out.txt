@@ -1,0 +1,19 @@
+[1] f119: digits 483 (plain 467, marked 16), letters Counter({'n': 7, 'f': 2, 'm': 2, 'a': 2, 'c': 1, 'l': 1}) wavy 9
+    unigrams 0:75 1:63 2:41 3:37 4:74 5:64 6:5 7:7 8:49 9:68 | 6/7 in plain 10 in marked 2 | marked digits 2520836442847822
+[1] f100: digits 565 (plain 539, marked 26), letters Counter({'m': 7, 'n': 4, 'h': 2, 'f': 2}) wavy 4
+    unigrams 0:84 1:86 2:53 3:53 4:75 5:71 6:5 7:6 8:41 9:91 | 6/7 in plain 11 in marked 0 | marked digits 42528284022202890508444254
+[2] f119 wavy=ignore maxw=2: segmentations 75; random-mark-position control share with >=1: 1.000 (200 draws)
+[2] f119 wavy=ignore maxw=3: segmentations 1871136; random-mark-position control share with >=1: 1.000 (200 draws)
+[2] f119 wavy=break maxw=2: segmentations 0; random-mark-position control share with >=1: 0.150 (200 draws)
+[2] f119 wavy=break maxw=3: segmentations 0; random-mark-position control share with >=1: 0.340 (200 draws)
+[2] f100 wavy=ignore maxw=2: segmentations 13692; random-mark-position control share with >=1: 1.000 (200 draws)
+[2] f100 wavy=ignore maxw=3: segmentations 1000000000; random-mark-position control share with >=1: 1.000 (200 draws)
+[2] f100 wavy=break maxw=2: segmentations 7420; random-mark-position control share with >=1: 1.000 (200 draws)
+[2] f100 wavy=break maxw=3: segmentations 1000000000; random-mark-position control share with >=1: 1.000 (200 draws)
+[3] shared 6-mers f119/f100: 21 ['015194', '039858', '041924', '089403', '121908', '150398', '153959', '304192', '340151', '341509', '390944', '398580']; null mean 0.93 p95 3 max 5
+[3] shared 7-mers f119/f100: 8 ['0398580', '0419240', '1503985', '3401519', '3985803', '4015194', '5039858', '8121908']; null mean 0.15 p95 1 max 2
+[3] shared 8-mers f119/f100: 4 ['03985803', '15039858', '34015194', '50398580']; null mean 0.02 p95 0 max 1
+[3] shared 10-mers f119/f100: 1 ['1503985803']; null mean 0.00 p95 0 max 0
+[4] bigram-profile r(f119,f100) = 0.728; shuffled-f100 null mean 0.001 p95 0.259
+[P] synthetic (240+280 letters, 62-cell homophonic, 30 trials) shared 6-mers: same key mean 2.767 min 0.000 max 6.000; two keys mean 0.767 min 0.000 max 5.000
+[P] bigram r: same key mean 0.067 min -0.205 max 0.450; two keys mean 0.016 min -0.415 max 0.333
