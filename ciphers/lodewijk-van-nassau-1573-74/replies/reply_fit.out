@@ -1,0 +1,32 @@
+== (a) known-answer control: hidden C/H name codes, own reply
+  4610 153 true=pfaltzgraf       proposal=None best=1 truth-in-reply=False
+  4610 192 true=roidespagne      proposal=None best=1 truth-in-reply=False
+  4610 200 true=herzogvonalba    proposal=None best=2 truth-in-reply=True
+  4610 202 true=franckreich      proposal=None best=1 truth-in-reply=True
+  4610 221 true=hollande         proposal=None best=0 truth-in-reply=True
+  4611 200 true=herzogvonalba    proposal=None best=1 truth-in-reply=False
+  4611 221 true=hollande         proposal=alkmar best=2 truth-in-reply=False
+  4611 223 true=harlem           proposal=None best=0 truth-in-reply=True
+  known-answer: 0 hit, 1 wrong proposals, 8 hidden codes; gate hit rate >= 0.50 and wrong <= hits: FAIL
+== target: open name codes, true reply
+  4610 182 proposal=None best=1 top=[('rhin', 1), ('empereur', 0), ('princes', 0)]
+  4610 186 proposal=None best=1 top=[('princes', 1), ('empereur', 0), ('barby', 0)]
+  4610 191 proposal=None best=1 top=[('empereur', 1), ('barby', 1), ('heylingen', 1)]
+  4610 194 proposal=None best=1 top=[('princes', 1), ('empereur', 0), ('barby', 0)]
+  4610 203 proposal=None best=1 top=[('fregouse', 1), ('angleterre', 1), ('empereur', 0)]
+  4610 205 proposal=None best=1 top=[('barby', 1), ('rhin', 1), ('empereur', 0)]
+  4610 225 proposal=None best=1 top=[('barby', 1), ('rhin', 1), ('empereur', 0)]
+  4611 211 proposal=alkmar best=2 top=[('alkmar', 2), ('harlem', 0), ('batenburg', 0)]
+  4611 228 proposal=None best=1 top=[('alkmar', 1), ('waterlant', 1), ('harlem', 0)]
+  4611 232 proposal=alkmar best=2 top=[('alkmar', 2), ('harlem', 0), ('batenburg', 0)]
+  4611 280 proposal=None best=1 top=[('alkmar', 1), ('harlem', 0), ('batenburg', 0)]
+  4611 331 proposal=alkmar best=2 top=[('alkmar', 2), ('harlem', 0), ('batenburg', 0)]
+  4616 313 proposal=None best=1 top=[('compaignies', 1), ('delft', 0), ('dordrecht', 0)]
+== (b) mismatched-reply control
+   4610 CDXXXIII 0
+   4610 CDLXXXIV 0
+   4611 CDXXVII 0
+   4611 CDLXXXIV 0
+   4616 CDXXVII 0
+   4616 CDXXXIII 0
+  proposals: true pairing 3; mismatched mean 0.0; discriminates: yes

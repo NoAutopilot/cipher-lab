@@ -99,3 +99,17 @@ Consequence: 5797 p5_spot5 (list A) reads 173 = graf at H through exceptions_579
 | hypothesis | instrument | control (known answer) | control result | gate | target result | verdict |
 |---|---|---|---|---|---|---|
 | band codes 125, 139-151 in 4610/4611/4616 are NULLs | bandtest/band_lm.py: summed log2 p over 8-letter windows, NULL vs best single letter, fr16 order 5 | 13 hidden C nulls 121-138 + 13 matched C letter codes, same letters | NULL 13/13 1.000; letter 6/13 0.462 (true letter is L* 10/13) | 0.80 per class | all 11 called NULL, 2.0-5.2 bits/occ (not licensed) | CONTROL BELOW GATE: untested-by-this-tool (attempt 1 of this instrument) |
+
+## Name codes >151 in 4610/4611/4616 vs names in Orange's printed replies (2 Oct 2026, A2-LVN4, CLAUDE.md rule 3)
+| hypothesis | instrument | control | control result | gate | target result | verdict |
+|---|---|---|---|---|---|---|
+| a once/twice-seen name code in 4610/4611/4616 stands for a person or place Orange names back in his reply (Groen IV CDXXVII/CDXXXIII/CDLXXXIV) | replies/reply_fit.py: reply-window stems (8 words either side of the name, >=5 letters, 5-letter stems) found in 30 decoded letters either side of the code; proposal = unique best fit >= 2 | (a) known answer: the 8 C/H name-code occurrences in the three letters (153, 192, 200 x2, 202, 221 x2, 223) hidden and scored against the own reply; (b) each letter against the two replies that do not answer it | (a) 0 hits, 1 wrong proposal (4611's 221 hollande -> alkmar); (b) 0 proposals in all six mismatched pairings | (a) hit rate >= 0.50 and wrong <= hits; (b) true > mismatched mean | 3 proposals, all 'alkmar' (4611 211, 232, 331), all from the one p2_L08-09 passage that also gave the wrong known-answer proposal | **known-answer FAIL**: nothing licensed; (b) "discriminates" rests on that same passage; untested-by-this-tool, not refuted |
+
+## Code 311, graded per direction (2 Oct 2026, A2-LVN4, CLAUDE.md rule 4) -- observation, no key change
+| witness | sender -> recipient | date | context | 311 would read | grade | source |
+|---|---|---|---|---|---|---|
+| Groen IV CDXXXIII p.177 (WVO 4498), printed with the numeral left in | Willem -> Lodewijk (list B) | 22 Jul 1573 | "pour ne scavoir la contrée du 311, ni la langue" (Lorges, Poyet and the French) | pays (fits; 'Hollande' would fit too) | I (context only) | groen/groen_IV_CDXXXIII.txt |
+| 5811 p5_L17 | Willem -> Lodewijk (list B) | Groen IV CDLXXXIII | "que le 311 y est assez" | pays | M (names.tsv, 1 observation) | names.tsv |
+| 5801, 7206 | list B | 1573-74 | aligner guesses | 'a' (key_5801), 'papes' (key_7206) | M, unconstrained | key_5801.tsv, key_7206.tsv |
+| 4611 p2_L15, p2_L19 (target) | Lodewijk -> Willem (list A) | 2 Jul 1573 | "fondement . . 311 se lque", "le grand e parou e au 311 et in 245 [Albe]" | pays would fit the second; no list-A witness | U (unchanged) | reading_4611_full_tokens.tsv |
+Two list-B contexts fit 'pays', below names.tsv's class-b gate of 4 observations, and the two list-B aligner guesses disagree; no list-A witness exists, so 4611's two tokens stay U and key_full.tsv gets no 311 row.
