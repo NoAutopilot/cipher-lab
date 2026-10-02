@@ -488,13 +488,84 @@ OK keep-going fr4715-vieuville-pool: keep going: 6 internal gap(s), 1 step(s) un
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4 and -5, 2 Oct 2026)
+## GAPS-fr4715-vieuville-pool-6 (2 Oct 2026, account-4): the Verdict steps -- the f67r frame reconcile, then the 66 L06-L14 8-rule sites in line context
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`. Clock read 22:21-22:4x UTC 2 Oct 2026. Intake gate exit 0.
+Requests: none (all images on disk). Vision calls 2 of 3, both Opus 5.5 subagents (two blind passes); the reconciliation call
+was not spent, because the two passes did not disagree at a single rule site (below).
+
+**(1) The f67r clear-French frame.** `tools/reconcile_passes.py` over passes A, B, C (`--keep-dots --keep-plain`) aligns token
+by token and gives 256/723 = 35.4 pct three-way agreement, but the passes divide the words differently (A `Jaysouel`, C
+`Jay sceu de`), so that figure measures word division, not reading. `scripts/f67r_frame_fold.py` (new) takes pass C (the
+strong blind pass) as the backbone and asks, per C word, whether A or B wrote the same normalised word at the aligned place
+(difflib per line, plus a no-space substring test for words of 4+ letters): **C 609 frame words, A agrees 322, B 275, A or B
+341 (56.0 pct)**; frame confidence **H 325 / M 86 / L 198** (H = C plus a Sonnet pass, C not L; M = agreement with C at L, or
+C alone at H; L = C alone at M/L). L31 keeps its old A/B frame (23 words at L): C reads a cipher `2` there that pass D settled
+as the clear word `w:2ii`. **The 27 cipher tokens are carried over unchanged** (checked by diff), so `tools/decode_key.py
+--check` exits 0 with the same grades: f67r 27 tokens, AB 8, U 19 (rule 4: 8 H by key value, 19 U; unchanged).
+`witness/f67r_judge_candidate.txt` regenerated from the reading (bracketed U tokens dropped), judge re-run:
+```
+$ python3 tools/judge_plaintext.py specs/fr4715-vieuville-pool.json --file ciphers/fr4715-vieuville-pool/witness/f67r_judge_candidate.txt
+FAIL language: score=-1.012, null_p99=-1.914, real_p05=-0.867, real_median=-0.782, mode=both, N=2677
+ok   words: cover=0.895, min=0.5, real_text_median_cover=0.946
+FAIL - fr4715-vieuville-pool (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Up from -1.145 (cover 0.872) on the A/B frame, still below real_p05. Of the 2,677 letters only 8 come from the key, so this
+measures how well the clear frame is transcribed, not the key. The judge is already a non-test on this design (the no.58
+design-matched control FAILs, GAPS-4), so it is reported here and not used as a gate.
+
+**(2) The 66 L06-L14 8-rule sites, re-read in line context.** Crops: rows checked with
+```
+$ python3 tools/iiif_lines.py --image ciphers/fr4715-vieuville-pool/images/src_ark_12148_btv1b52509819x_f135_560_1600_3250_1850.jpg --out <scratch> --region 0,415,1200,415 --distance 30 --dry-run
+... region 1200x415, 9 lines, 9 bands x 1 segments; pitch 45 distance 30 prominence 109.8
+  centres (region y): 37 80 120 162 205 246 291 337 386
+```
+(nine rows, L06-L14), then cut as the GAPS-4 straightened bands (`scripts/cut_f60r_bands.py --lines 6..14 --seg 600 --scale 3
+--track --centred 30 28 --shift 6`, 54 crops 1800x174, scratch, regenerable, not committed; the worker eye-checked four).
+Two blind Opus passes, one call each over all 54 crops (B in reverse order), **not told the 8 rule, the key or any earlier
+value**, with one neutral line: decide every round glyph (0/6/8/9) from its full shape including any entry or exit stroke,
+and do not normalise doubtful shapes (`witness/f60r_blocks_g6_pass{A,B}.tsv`). `scripts/f60r_eight_relook.py` (new)
+labels each zero of the settled stream P (first digit of an `8<` token, 66) or F (second digit of an undotted key code x0,
+a true 0, 97), aligns each pass per line, and reads what it wrote there (`witness/f60r_blocks_eight_relook.tsv`).
+
+| | P sites (rule says 8) | F sites (true 0) | shuffled P/F labels x10,000 |
+|---|---|---|---|
+| pass A reads 8 | 0/66 | 0/97 | mean 0.000, p95 0.000 |
+| pass B reads 8 | 0/66 | 0/97 | mean 0.000, p95 0.000 |
+| both read 8 (the move rule) | **0/66** | 0/97 | statistic 0.000, p(>=obs) 1.0 |
+
+64 P sites read 0 by both passes, 2 unaligned in both; neither pass marked any P site unsure. Over the whole block pass A wrote 3
+eights (plus 3 `(0/8)` alternatives, none at a P site), pass B 1. **Sites moved I -> H: 0 of 66.** The control is a non-test, not
+a negative: when neither reader writes an 8 anywhere, the shuffled labels cannot differ from the target any more than the
+target can differ from them (rule 3, "a control that cannot vary"). Contrast GAPS-5's lower block, where a blind reader wrote 87
+eights and put 35/39 at rule sites. **Rule 4 grades, before and after:** L06-L14 604 letter tokens, 538 H + 66 I (unchanged);
+lower block 308, 305 H + 3 I (unchanged); f67r 27 tokens, AB 8 / U 19 (unchanged). `tools/decode_key.py --check` exit 0.
+
+**Rule 3, third-attempt clause.** Three instruments have now read these 66 glyphs blind and none separates them: the GAPS-4
+passes (no 8 in about 1,400 digits; a shape check 7/8 alike), the GAPS-5 value-blind tile sheet (21/30, p 0.060), and these
+line-context passes (0/66 both). Blind visual re-reading of L06-L14 by a model is logged **untestable by this instrument at
+this cut**, not refuted; the rule is not weakened (GAPS-5's lower-block result stands). The next attempt has to be a different
+instrument, not a fourth re-read.
+
+Rule 10: nothing here is called new or first; this records what was found and where it was not found.
+
+```
+$ python3 tools/intake_gate_check.py fr4715-vieuville-pool   # exit 0
+fr4715-vieuville-pool: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+$ python3 tools/decode_key.py ciphers/fr4715-vieuville-pool --check   # exit 0
+reading up to date
+$ python3 tools/gaps_check.py fr4715-vieuville-pool   # exit 0
+OK keep-going fr4715-vieuville-pool: keep going: 6 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5 and -6, 2 Oct 2026)
 Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604 letters (rank 1/201, z 5.11), L25-L30 + L28b 308 letters (rank 1/201, z 5.24); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv); the lower dense block read 2 Oct 2026 (GAPS-5)
 - the no.37 dense cipher blocks - READ 2 Oct 2026: L06-L14 (GAPS-4) 604 letters, rank 1 of 201 z 5.11; L25-L30 + the unlisted row L28b (GAPS-5) 443 tokens, 308 letters (305 H + 3 I), rank 1 of 201 z 5.24, pass agreement 82.3 pct, decode --check exit 0; judge non-test (its design-matched control FAILs too); the 177 dotted/barred word-codes of the two blocks stay U - blocker: open-codes; what would read them is the same codes glossed on a sibling leaf (gap 4 below)
-- the 8-glyph rule on no.37 (66 L06-L14 tokens at I) - blocker: not-attempted; 2 Oct 2026 (GAPS-5): the value-blind sheet of 30 tight tiles did not beat its control (21/30 vs shuffled-label p95 21, p 0.060), so the 66 stay I; but on the lower block blind pass B wrote 8 at 35/39 rule sites vs 4/50 true-0 sites (p < 0.0001 vs shuffled labels), so the flick that marks 8 is visible in line context and lost in a tight tile; next: one blind strong-model re-read of the 66 L06-L14 rule sites and 30 pair-final zeros in their straightened 3x line crops (`images/f60r_blocks3t`, regenerable), classes hidden, scored against the same shuffled-label control, ~$3
+- the 8-glyph rule on no.37 (66 L06-L14 tokens at I) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; next, a different instrument: a key-side test on disk -- score word-cover of the 66 sites as 8x against each other possible first digit (0x out of key, 6x, 9x, 3x) with the site set shuffled as control (scripts/keytest.py), ~$1
 - the four L-grade glosses (labr/de over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: open-codes; re-read 2 Oct 2026 (GAPS-3) from tall native crops, 1 call: all four now M (de and legat clear as text but each straddles two groups; L20 du/dn sits over the dotted 16; L22 is an insertion 'peu de', not a gloss), no decode-key value changed; what would settle the group cover is the same code glossed again on a sibling leaf (no.21/35/39, gap 3 below)
 - no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37; next: the other glossed pool leaves (no.21 f.44, no.35 f.58, no.39 f.62, all "en partie déchiffrée" per the dépouillement) read the same way as this step, one leaf a job, ~$10 each
-- the clear-French frame of f67r_ciphertext.tsv and the judge - blocker: not-attempted; pass C (one strong pass) reads it at 84 pct H+M but is not reconciled into the file; next: tools/reconcile_passes.py over passes A, B and C, fold the agreed clear words into f67r_ciphertext.tsv, regenerate witness/f67r_judge_candidate.txt and re-run tools/judge_plaintext.py, ~$1
+- the clear-French frame of f67r_ciphertext.tsv (198 C-only L words after the fold) - blocker: not-attempted; 2 Oct 2026 (GAPS-6): pass C folded in as the frame with three-pass support (scripts/f67r_frame_fold.py: 609 words, A or B agree 341 = 56.0 pct; H 325 / M 86 / L 198; L31 kept as A/B); cipher tokens unchanged; judge FAIL -1.012 (was -1.145) vs real_p05 -0.867, a non-test on this design; what remains is transcription of the clear frame, not decipherment; next: one strong second pass on the crops of the L words only, ~$3
 - Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: not-attempted; the cloud cannot open the page (books.google.com page view bot-blocked) and no LOCAL-QUEUE row is filed yet; next: file the LOCAL-QUEUE edition-read row for the page citing 12 décembre 1589 and read whether she quotes the text, ~$1
 
 ## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026)
@@ -505,4 +576,4 @@ Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 6 internal gaps; cheapest next: the clear-French frame of no.44 f67r (tools/reconcile_passes.py over passes A, B, C, fold the agreed words into f67r_ciphertext.tsv, re-run the judge), ~$1; then the 66 L06-L14 8-rule sites re-read in line context (classes hidden, shuffled-label control), ~$3
+Verdict: keep going: 6 internal gaps; cheapest next: the key-side test of the 66 L06-L14 8-rule sites (word-cover as 8x vs 0x/6x/9x/3x, shuffled-site control, scripts/keytest.py, disk only), ~$1; then the print check on no.44 clear phrases, ~$1
