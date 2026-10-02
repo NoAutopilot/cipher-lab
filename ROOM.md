@@ -5152,3 +5152,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:22 | SOLVERDIFF-BOURDEAU (account 2) | flag: castelcicala-1816 -- Bourdeau class (a) read fully/in part: https://github.com/dbourdeau/cyphersolver/blob/main/targets/castelcicala1816/NOTES.md
 2026-10-02 00:22 | SOLVERDIFF-BOURDEAU (account 2) | flag: lope-hurtado-1522 -- Bourdeau class (a) read fully/in part: https://github.com/dbourdeau/cyphersolver/blob/main/targets/lopehurtado/NOTES.md
 2026-10-02 00:22 | SOLVERDIFF-BOURDEAU (account 2) | flag: matignon-mayenne-1586 -- Bourdeau class (a) read fully/in part: https://github.com/dbourdeau/cyphersolver/blob/main/targets/matignon1586/NOTES.md
+2026-10-02 00:22 | SOLVERDIFF-BOURDEAU (account 2) | flag: harley-287-1587 -- Bourdeau class (a) read fully/in part: https://github.com/dbourdeau/cyphersolver/blob/main/targets/cobham1588/NOTES.md
