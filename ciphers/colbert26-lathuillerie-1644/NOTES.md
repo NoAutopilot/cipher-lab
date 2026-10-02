@@ -542,3 +542,91 @@ show-through leaf, no slip seen at 2400 px.
 APW II B, via the online full text) and Le Clerc's Negociations secretes were read by the check-solved worker (Search
 log above) without these letters; no Danish/Swedish edition of La Thuillerie's 1644-46 mediation was opened by this
 worker (unreached).
+
+## A2-COL (account 2, LANE-A2PUSH, 2 Oct 2026): f.24 interlinear key
+
+Brief `.claude/briefs/runs/2026-10-02-acct2-a2-col.md`. Intake gate exit 0 at start. Status word left `open` (not this
+worker's to change; flagged for the orchestrator: a leaf-level key now exists, which reads like `partial`).
+
+**What f.24 (canvas 27, La Thuillerie to Servien, La Haye 25 May 1646) carries.** Every cipher run on the leaf has a
+second-hand French rendering written directly above it, word for word ("que le Comte de Trautmandorff", "a fait faire les
+expeditions de l'Erection en Duche et", "Principaute de l'Empire du Comte de Meurs", "a M. le P. d'Orange", "a trouver",
+"audit S. Prince", "relever sa maison par un titre", "de cette sorte", "desquelz relevent ledit Comte de Meurs Mais cela
+estant", "il ne nous en donnoit advis", "qu'il y eust quelque chose a desirer de", "luy", "des ordres de S.E."). The
+KX-LATHTR transcription had folded these gloss lines into its `context_before/after` columns as if they were the
+letter's clear text; they are the decipherment. (Canvas 20's notes stay as KX-LATHKEY2 judged them; not re-read here.)
+
+**Crops (commands, run on the native region fetched once).** `python3 tools/iiif_lines.py --ark btv1b10035069t --canvas 27
+--region 3850,1450,3577,3100 --out <scratch> --prefix f24 --debug --dry-run` (1 request to Gallica IIIF), then per unit
+`python3 tools/iiif_lines.py --image <that src> --region 0,Y0,3577,H --centres H/4,3H/4 --lines-per-crop 2 --top-margin H/4
+--bottom-margin H/4 --out <scratch>/crops --prefix f24_UNN` with Y0:Y1 = 95:300 245:420 405:620 600:870 1630:1870 1835:2170
+2105:2300 2285:2520 2455:2720 2665:2960 (U01-U10), 1400:1680 (U11), 2880:3060 (U12). 24 segment crops under 2400 px,
+kept in the session scratchpad, not committed (folder already at 30 MB; re-derivable from those commands).
+
+**Transcription.** Two blind Sonnet passes over U01-U10 (cipher signs and gloss per unit), reconciled by this worker
+against the crops (`interlinear/f24_reconciled.tsv`, the disagreements and how each was settled in its columns). Settled:
+`n`/`u` after `o` and in U10 read `11` (same stroke pair as the 11 after 31); `q` = `9`; `7` = `y` (the barred y, as
+KX-LATHTR's pass A has it); `S` = `f` (one long-s sign, the two passes and pass A name it differently). U11 (the Brasset
+line, "des ordres de S.E.") was cut off both blind passes' crops by a wrong region; read by this worker only, from crop
+U11, and **held out** of the alignment as a known-answer test. 12 aligned pairs, 153 cipher tokens, 59 signs.
+
+**Alignment** (`tools/interlinear_align.py align interlinear/f24_pairs.tsv interlinear/f24_align.tsv
+interlinear/f24_key_raw.tsv --floor 100 --keep-fs --max-chunk 6 --prior interlinear/seed_prior.tsv --word-prior`; signs
+renumbered 100+ in `interlinear/sign_ids.tsv` so every sign may take a chunk). From a flat start the hard-EM did not lock
+(21 agreeing tokens, 82 conflicts, default flags; 15/86 with the syllabic `--len-prior 0.5` flags). Seeded with three
+codes the gloss itself repeats (83 = de, before every gloss "de", 10 occurrences; 92 = Comte, the twice-repeated "92 83 16 d
+6 f 37" under "Comte de Meurs" in U03 and U08 and once in U01; 31 = que, U01 "que le" and U10 "quelque" = 31 11 31): 37
+agreeing tokens, 69 conflicts, 36 single. The seeded counts are the hypothesis under test, not independent evidence.
+
+**Control (rule 3; `interlinear/f24_control.py`, output `interlinear/f24_control_out.txt`).** Same cipher lines, gloss
+lines dealt in a random derangement, same flags and seed, 50 seeds. Agreeing tokens: real 37 vs control mean 14.0, p95 20,
+max 20; excluding the three seeded codes: real 21 vs control mean 11.5, p95 16, max 18. The control changes which gloss a
+line meets, which is what the statistic depends on, so it could fail differently; real beats every shuffle on both
+counts, but the unseeded margin is thin (21 vs 18). **Per-leaf gate: f.24 passes, narrowly.** f.23 was not aligned (below),
+so there was no merge and no second leaf to gate.
+
+**Key** (`key_f24.tsv`, all 59 signs). Grade C only where a sign occurs at least twice and at least two thirds of its
+occurrences take the same chunk: 31 que (4/4), 92 comte (3/3), 83 de (9/10), 51 l (2/2), 16 m (2/3), 25 m (2/3) -- the
+first three seeded. Every other sign is M; its value is the alignment's majority chunk and many are plainly wrong where a
+line's tail absorbed leftover letters (e.g. t = "duche", 37 = "mais"). The design looks mixed: single letters
+("Meurs" = 16 d 6 f 37, M e u r s in both occurrences), syllables (31 que) and words (92 Comte, 47 = "dit"/"ledit" twice
+by position); one leaf of 153 tokens is not enough for the tool to separate them.
+
+**Decode** (`decode.json`, `python3 tools/decode_key.py ciphers/colbert26-lathuillerie-1644 [--check]`, exit 0):
+`reading_f24.txt`, `reading_tokens_f24.tsv`; 168 tokens: H 0, C 27, S 0, M 140, I 0, U 1 -- cryptanalytic-grade only by the
+rule-4 count (no H), and the C is the leaf's own gloss. Held-out U11: the two C tokens (83 at positions 1 and 8) read "de"
+and "de", consistent with the gloss "des ordres de" at both places; the M tokens there do not read the gloss (f gives "a"
+where "s" stands). No unglossed run on f.24 is long enough to read: U11's tail after the gloss (43 h w' 17 21 L 78) has no
+C sign. Judge, pasted:
+```
+FAIL language: score=-1.386, null_p99=-1.834, real_p05=-0.872, real_median=-0.788, mode=both, N=285
+ok   words: cover=0.782, min=0.4, real_text_median_cover=0.944
+FAIL - colbert26-lathuillerie-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Expected: 140 of 168 tokens are M alignment chunks.
+
+**Not done.** f.23 (canvas 26, Paris 17 Mar 1646, "Mon nepveu"): a different system (unsegmented runs of two-digit codes,
+"121829 61" under "la charge de" at least three times, "5130"/"4823" recurring) with about 22 glossed lines and a rotated
+margin. Not cropped or aligned: the account read `allowed_warning` at 22:50 UTC (BUDGETS.md: no new workers), so no further
+subagent passes were started. It is the stronger leaf for this tool: two-digit codes with visible word-level repeats.
+
+Hosts: gallica.bnf.fr IIIF 1 request. Subagents: 2 (Sonnet, blind passes). No credentials.
+
+## Remaining gaps (A2-COL, 2 Oct 2026)
+
+Read so far: 27 of 168 f.24 cipher tokens at grade C (reading_tokens_f24.tsv); f.23 and the other 19 cipher-bearing canvases 0.
+- f.23 (canvas 26) gloss alignment - blocker: not-attempted; about 22 glossed two-digit-code lines, not cropped this job (allowed_warning, no new subagents); next: iiif_lines crops of its gloss+cipher pairs, 2 blind passes + 1 reconciliation, interlinear_align --floor 10 with a shuffled-gloss control, ~$5
+- f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv); next: re-run with an f.23 key as --prior if the leaves share signs, each leaf gated first, ~$1
+- canvas 20-21 notes - blocker: not-attempted; KX-LATHKEY2 judged them topical, but f.24 shows gloss lines were taken for clear text; next: re-read canvas 20 gloss-vs-clear on native crops, ~$2
+
+## Escalation (A2-COL, 2 Oct 2026)
+
+- [ ] siblings: f.23 (canvas 26), a glossed leaf of the same volume, planned as the next alignment
+- [x] clear-pages: f.24's own interlinear decipherment aligned, control passed narrowly (this section)
+- [x] known-keys: KX-LATHCT1 compared the cluster with key_1646, key_brienne_1647, key_1659 (different keys)
+- [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
+- [ ] key-rebuild: after f.23, merge per-leaf keys only where each leaf cleared its own control
+- [ ] image-check: canvas 20-21 gloss-vs-clear re-read on native crops
+- [ ] retry: f.24 alignment with the f.23 key as prior
+
+Verdict: keep going: 3 internal gaps; cheapest next: f.24 re-run with f.23 key as prior after f.23, ~$1

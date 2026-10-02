@@ -1,0 +1,2 @@
+agrees_all	real 37	control mean 14.0 p95 20 max 20	real>max True
+agrees_unseeded	real 21	control mean 11.5 p95 16 max 18	real>max True

@@ -1,0 +1,12 @@
+unit	cipher_tokens	gloss_text	pass1_vs_pass2	notes
+U01	31 11 92 83 ll 33 o 11 13 h f 83 6 f uy	que le Comte de Trautmandorff	n/u read 11 by reconciler (same stroke pair as the 11 after 31); final Suy/Suj split f uy, doubtful	gloss "Comr."/"Comm.r" expanded Comte
+U02	y 50 52 11 f w e 26 84 69 f 83 11 36 9 69 11 L 90 98 t E	a fait faire les expeditions de l'Erection en Duche et	pass1 4/y, q/9, n/11; pass2 extra 36; reconciler: y, 9, 11, one 36	struck "et" in gloss dropped
+U03	J 37 L 79 25 y 16 83 11 mf 27 36 86 92 83 16 d 6 f 37	Principaute de l'Empire du Comte de Meurs	pass1 ut / pass2 m/ ; reconciler mf (KX-LATHTR pass A also mf); leading J stroke kept as a sign, doubtful	"qui apartient" in gloss line not over cipher, dropped (plain main-hand?)
+U04	y 25 6 17 w' L E y 33	a M le P d'Orange	agree (7=y)	
+U05	y t L 52 t 6	a trouver	agree	gloss "truier/trouuer" read a trouuer
+U06	3 d 47 33 | 36 11 51 6 40 15 h 43 L 25 re d L 47 n ll 36	audit S Prince | relever sa maison par un titre	agree; clear "sil veut" between the runs	
+U07	83 46 43 6 46	de cette sorte	agree	
+U08	83 f 31 n f 36 11 51 L E 11 47 92 83 16 d 6 f 37 78 10	desquelz relevent ledit Comte de Meurs Mais cela estant	agree	struck word after relevent dropped; l.d. expanded ledit
+U09	49 y L ll 42 u 21 59 t L 48 23 d ll y 52 f	il ne nous en donnoit advis	pass1 u / pass2 u; y/7	struck "estant" (offrant?) at gloss start dropped
+U10	32 11 m 11 d f ll 31 11 31 y 83 42 36 6 83 | 55	qu'il y eust quelque chose a desirer de | luy	pass1 11/n, pass2 n/u; reconciler 11 m 11 (crop rec_d)	"luy" glosses 55 at start of next line
+U11	83 f K 6 y 36 f 83 43 h w' 17 21 L 78	des ordres de S E	pass A only (both blind passes missed this unit: crop U05 cut it off); read by reconciler from crop U11	gloss covers only the first ~8 signs by position; HELD OUT from alignment, used as known-answer test; "leig 12" after 78 not read
