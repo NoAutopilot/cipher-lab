@@ -1,0 +1,48 @@
+# Third-pass sign strings from Bourdeau's reading_ff80_92_96_full.md (cobham1588, commit 34e0fc8), coded into his
+# runs.txt ASCII sign code by NEXT-HAR, 2 Oct 2026. Same format: id | clear before | cipher words | clear after.
+# Unicode -> code: ϸ h, Ӿ G, ⊥ I, ϕ l, ϑ p, ŧ T, ∞ D, ·\ w, ·· :, γ y, ɔ Q, ǂǂ n, ∧/Λ A, ∪ U, ∽ m; a lone dot,
+# apostrophe, λ, ∩ or any sign he marks "?" -> ?. "-" is his short stroke = b (added to SETS by run_nexthar.py).
+# Each word carries a status after "=": R read by him (H/M/I grade in brackets) or U unread, used for the counts.
+# --- f.80r (R8490 P1) ---
+f80L1 | hoping theym | Xn=R[H] Ah7=R[H] [◻] lUn87A=R[I] | for what chaunces so ever you bestowe
+f80L2 | yt will | #cA=R[H] +7=R[M] wLlA=R[I] Ah7=R[H] hc:7n=R[H] IA=R[H] Xd+c:87=U | ) and me
+f80L3 | touching | HcAVUGL=R[M] | yt ys honorable for 7
+f80L3b | yt ys honorable for 7 | AcdD7p#cI=U Ah7y=R[H] A:VAI=U Ac=R[H] Ah7A=R[H] AcVm7A=R[H] | as usuall
+f80L4 | in all | AVmATA=R[H] | in numbers, that at the
+f80L4b | that at the | AVmAT=R[M] dH=R[H] -V7D7=R[I] | which was the 20 and the
+f80L4c | which was the 20 and the | A:-I78A=R[H] | ther wer
+f80L5 | Dunkergh: 22 is so | HcVwUVD7=R[H] | yn the
+f80L5b | yn the | cAAIcn=R[M] | that he promised Q: to
+f80L5c | that he promised Q: to | A7nd=R[M] Ac-D:XL=U | 27 to begin the
+f80L5d | 27 to begin the | dp7##I#G=R[M] dH=R[H] Ah7=R[H] -Tcw7A=U | : w[hich] myght bee to the
+f80L5e | myght bee to the | Ac##=U GcH=U AcVIw7=U |
+f80L6 | that a | -VcAh=R[I] | about 15 who promised the mayor
+f80L6b | promised the mayor | VzL###AlccA=U | a
+f80L6c | the mayor ... a | h:7n=R[M] | to open
+# --- f.81r top (R8490 P2) ---
+f81L1 | 22 hath a | ?7AI?V=R[M] Ac=R[M] V7ATcVn=R[M] | from theym yf he be not more
+f81L2 | yf he be not more | VGAAVcIn??=R[I] | ther ys great want
+# --- f.92r (R8495 P1) ---
+f92L1 | 4 sent by the | pd?:XlcA=R[I] | are
+f92L2 | are | I7GIA=U dp=U IXpp7#=U | and
+f92L2b | and | 8-l:Vd=U Icn=U AcH=U | sent by
+f92L3 | imprisoned in | -V+dG7A=R[M] | it is reported that they have
+f92L3b | it is reported that they have | 8hcVX=R[M] |
+f92L4 | | TcAA?n=R[I] l7XA=U l+HAT=U nUnA=U | of words of
+f92L4b | of words of | l7AAALVA=R[M] | whereupon
+f92L5 | to have been determined and appointed | cn=U pc?n=U cz=U +lcAA=U |
+f92L6 | | -?=U ApLcA=U n7V=U w+Ap::Xcl=U |
+f92L7 | That day was | Al7VLAT8:=U A+c=U 7n=U cnhI7nA=R[M] cH=R[H] nLwpcVA=R[M] |
+f92L8 | | HdVwVT=R[M] nXcH=U :7VA=U IA=R[M] Ac=R[H] Ap77l=U V?XAT=U |
+f92L9 | | 8clA7In=R[M] -cX8L=U | is also
+f92L9b | is also | In=R[M] lVIAcn=R[M] LcVA=U -VIdGLA=R[M] | the cause whereof is not knowen
+f92L10 | Of late ther are come to | AA7n=U lIX=U | from
+f92L10b | from | IVILAh=R[M] nc-l7=R[I] pcn=R[I] |
+# --- f.96v (R8496 P2) ---
+f96L1 | | AhT=R[H] TVllLcH=U w7?Ap::=U Vp?+c=U pUAATD=R[M] -X=R[I] | yn B[...] works overthrown
+f96L2 | | wIAhcn=R[M] HVTn8L=R[M] A?V:?cA=R[I] | of they commanding
+f96L3 | informed you of | Vcl7V=R[I] | and of his
+f96L3b | and of his | A?V::7nA=R[M] Ihcn=U lV7XAA=R[M] | a doctor in
+f96L3c | a doctor in | AV7AA7p=U | and a
+f96L4 | caried | cH=R[H] lLAAALVA=R[M] HcV=R[H] AhT=R[M] l7cll=R[M] wU::8T=U | and that shortly
+f96L8 | that he had | wVLAAATn=R[I] AnAAT7nG=U l7nc=U | is fully
