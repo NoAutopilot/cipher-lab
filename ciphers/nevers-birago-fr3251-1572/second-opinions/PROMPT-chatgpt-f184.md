@@ -16,8 +16,12 @@ THE ITEM
   "fortificarsi" and "quello il capitano Scipione Carego[?]".
 - Added 2 Oct 2026 (AUDIT2-NEVBIR): the same key also gives a fragmentary reading of the cipher at the foot of f.184v and
   lines 1-8 of f.185r (330 signs), with fragments such as "l'esecutione", "inteso", "dubitan[o]", "serraglio in
-  favore de[gli] ugonotti", "ha presentato le lettere", "cosa alcuna", "provisione" and "Mons. di Sanfre". The rest
-  of f.185r and f.185v is unread. Nothing more is claimed.
+  favore de[gli] ugonotti", "ha presentato le lettere", "cosa alcuna", "provisione" and "Mons. di Sanfre".
+- Added 2 Oct 2026 (VERIFY-NEVBIR-90REST): the rest of f.185r (392 signs) also reads fragmentarily under the same key, with
+  fragments such as "credo pensi al governo", "consentimento", "religione, altrove saranno sempre confusioni",
+  "difficultà", "che facesse intendere a la regina", "tutto depende a la casa [di Mo]moransi", "ogni suo potere" and "per
+  una volta". The 20-sign cipher run on f.185v (between "con tutto ciò" and "che non gli provede") is too short to test on
+  its own; its one code word may be "Carmagnola" (untested). Nothing more is claimed.
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/nevers-birago-fr3251-1572/AUDIT.md
 
 QUESTIONS

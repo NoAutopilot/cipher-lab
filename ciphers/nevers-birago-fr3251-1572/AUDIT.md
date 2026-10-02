@@ -749,3 +749,145 @@ ours: it is Tomokiyo's.
    in the queue, so nothing else changed there. No new row: the letter-level questions already cover the portion.
 4. **Still owed:** a second audit of the NEVBIR-185 portion (this was its first). The JSTOR rows. Semantic Scholar's 429'd
    calls. The DBI entry, read by a person or a local runner if wanted. None of these blocks N4.
+
+---
+
+# AUDIT: no.90, the rest of its cipher -- f.184v foot + f.185r + f.185v, 742 signs (VERIFY-NEVBIR-90REST, 2 Oct 2026)
+
+Verifier: parent worker VERIFY-NEVBIR-90REST (for the account-3 orchestrator), a session separate from the solvers
+(NEVBIR-185, NEVBIR-185B) and from the earlier verifiers (VERIFY-NEVBIR-184, AUDIT2-NEVBIR). Brief
+`.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-90rest.md`. Clock read with `date -u` at 21:11, 21:14 and 21:17 UTC.
+Nothing was decoded beyond the re-derivation. The transcription and the reading are the solvers'; nothing in them was changed.
+
+**Claims under audit** (NOTES.md, NEVBIR-185 and NEVBIR-185B): Birago to Nevers, BnF fr.3251 no.90 (Saluzzo, 2 Oct 1572).
+The f.184v foot + f.185r L01-08 (330 signs) and f.185r L10-12, L15-25 + the f.185v run (412 signs) are read under the
+published 1572 key + T42=m. Each portion ranks 1 of 201 at three seeds; the whole letter (966) ranks 1 of 201 with z 4.49-4.59.
+Grades for the whole letter are S 731 M 124 U 111, judge FAIL. AUDIT2-NEVBIR gave the 330-sign portion N4 (its first audit); the 412 signs were not audited before this pass.
+
+## Verdict
+
+| item | class | key | text | confidence |
+|---|---|---|---|---|
+| no.90 f.184v foot + f.185r L01-08, 330 signs (NEVBIR-185) | **N4** (second audit; AUDIT2-NEVBIR was the first) | published (Tomokiyo's 1572 table; T42 absent from no.90, so the fitted value plays no part) | not known | moderate; cryptanalytic (H 0 C 0), fragmentary, judge FAIL |
+| no.90 f.185r L10-12 and L15-25, 392 signs (NEVBIR-185B) | **N4** (first audit) | published | not known | moderate; cryptanalytic, fragmentary, judge FAIL |
+| no.90 f.185v run, 20 signs (NEVBIR-185B) | **N4 as a search result only; the reading is not licensed by its own control** | published | not known | low: its own control is a non-test (below); its one S token is graded down to M here |
+
+Why N4 and not N3: AUDIT2-NEVBIR searched inside both volumes of the 1665 *Mémoires de Monsieur le duc de Nevers*, and the
+OCR controls answered. That search covers the whole letter, so this pass did not repeat it. The phrase searches below add
+the 185B fragments and find nothing. Not N5: neither the BnF nor a specialist has been asked. Internal or unpublished work is
+not excluded.
+
+## Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --check`: exit 0, "reading up to date";
+`harvest/ciphertext_no90.tsv: tokens 966: M 124, S 731, U 111`, which matches the claim exactly (H 0 C 0 I 0). Per portion, counted
+from `harvest/reading_no90_tokens.tsv`:
+
+| portion | S | M | U | total |
+|---|---|---|---|---|
+| f.184r (audited earlier) | 190 | 13 | 21 | 224 |
+| f.184v foot + f.185r L01-08 | 265 | 16 | 49 | 330 |
+| f.185r L10-25 | 275 | 83 | 34 | 392 |
+| f.185v | 1 | 12 | 7 | 20 |
+| **audited here (742)** | **541** | **111** | **90** | 742 |
+
+These match the solvers' S 265 M 16 U 49 and S 276 M 95 U 41. Working tree clean after the run.
+
+## Controls at fresh seeds (rule 3)
+
+`../ceppo-nevers-fr3251-1570s/harvest/decode_control.py SEQ --map sign_id_map_1572_fit.json`, it16dip, 200 value-shuffled
+keys, 20 power windows. Sequences and logs: `harvest/no90/verify/`. `portion742.tsv` is `f185r/passC_rest90.tsv` + `f185r2/passC.tsv`.
+
+| sequence | seed | real key | shuffles mean / max | z | rank | power control |
+|---|---|---|---|---|---|---|
+| portion, 742 signs / 752 letters | 7 | -0.9147 | -1.567 / -1.298 | 4.67 | **1/201** | err 0.12: 20/20 (z min 2.97); err 0.26: 8/20 |
+| portion | 11 | -0.9147 | -1.568 / -1.179 | 4.45 | **1/201** | err 0.12: 20/20 (z min 2.48); err 0.26: 4/20 |
+| f.185r L10-25 only, 392 | 7 | -0.9190 | -1.591 / -1.273 | 4.75 | **1/201** | err 0.12: 19/20 |
+| f.185r L10-25 only | 11 | -0.9190 | -1.587 / -1.233 | 4.65 | **1/201** | err 0.12: 18/20 |
+| **f.185v alone, 20 signs / 22 letters** | 7 | -1.1347 | -1.534 / -0.587 | 0.87 | **35/201** | err 0.29 (its measured): 0/20; err 0.12: 2/20 |
+| f.185v alone | 11 | -1.1347 | -1.540 / -0.524 | 0.81 | **38/201** | err 0.29: 0/20 |
+| whole no.90, 966 / 977 | 7 | -0.9398 | -1.572 / -1.299 | 4.65 | **1/201** | err 0.12: 20/20 (z min 3.09) |
+| whole no.90 | 11 | -0.9398 | -1.575 / -1.222 | 4.50 | **1/201** | err 0.12: 20/20 (z min 3.25) |
+
+The measured disagreement of the two blind passes is 0.04 for the 330 portion, 0.12 for f.185r L10-25 and 0.29 for f.185v,
+about 0.09 pooled over the 742. Power at 0.12 brackets the measured error of the f.185r runs (20/20 for the 742). At 0.26,
+about twice the 185B rate, power falls to 4-8/20. The licence therefore holds only if the true reader error is near the
+measured rate, which is the same caveat the solvers stated.
+
+**f.185v fails as a test on its own.** At 20 signs the run ranks 35-38 of 201, and its power control reads the real key in 0-2
+of 20 windows even at 0.12. That makes it a non-test (CLAUDE.md rule 3), not a negative. Its reading rests only on the key
+that the f.184r-185r runs license. Graded down here: the one S token on f.185v counts as **M** for audit purposes, so f.185v
+carries no S. The audited 742 are therefore **S 540 M 112 U 90**, and the whole letter S 730 M 125 U 111. The solvers'
+committed grades are unchanged; this regrade is a verifier note. The "[carmagnola]" code word on f.185v sits beside "degli
+Ugonotti" in the clear lines above. That fits the letter's subject, but it is a consistency note, not a crib.
+
+**One correction to the solvers' logged figure.** NEVBIR-185B's whole-letter control (`harvest/no90/log/control_all2_s*.txt`,
+real -0.9449) was run while the 185B passages still carried ids L01-L14. Those ids collided with NEVBIR-185's L01-L08, so
+each pair of lines was scored as one passage (visible in the log's reading block). The committed `no90/passC_all.tsv` carries
+the corrected ids L10-L25, and it scores **-0.9398** (re-run here at seed 1 too: z 4.47, rank 1/201). The difference is 0.005
+and the rank is unchanged, so no conclusion moves. NOTES.md's whole-letter row should be read with -0.940.
+
+## Slip and decipherment check (brief item 1)
+
+Gallica btv1b9060248g canvases 188-191 were fetched once each at native size (about 8262 x 5849), 4 requests. Each page was
+viewed in half-page tiles at 1500 px, with native-resolution detail crops where needed.
+
+| canvas | pages | seen |
+|---|---|---|
+| 188 | f.183v / f.184r | f.183v blank except the vertical address docket of the previous item; f.184r the letter's opening with its four runs; no interlinear gloss, no slip |
+| 189 | f.184v / f.185r | f.184v prose, then four cipher lines at the foot after "mádaro el tutto a V.E."; f.185r cipher block with clear inserts ("Mons. di Sanfré debbe partirsi qsta settimana ... dal rè", "non si sa che porti il tempo ...", "cose sue da di quà, che", "qste parti", "Chi io nó só ..."); no slip |
+| 190 | f.185v / f.186r | f.185v prose; the cipher run sits between "con tutto ciò" and "che non gli provede da di là"; signature and "Da Saluzzo li 2 di Ottobre 1572"; f.186r the next item |
+| 191 | f.186v / f.187r | f.186v blank with heavy show-through; f.187r faint mirrored offset; no decipherment |
+
+**The faint writing over f.185r L15** ("cose sue da di quà, che ..."), native crop 5600,2700,2300x230. Its strokes slope
+backwards in the original and slope forward like the scribe's italic in a mirrored copy. That is show-through or offset from
+the facing or reverse side, not an interlinear decipherment, which confirms NEVBIR-185's call. Several darker signs on that
+line (ω, π) are heavier ink, not over-writing.
+
+**The f.185v run is complete in the solvers' crop.** At native size (1300,1150,3200x350) the run reads 20 signs from the
+square-with-dot after "ciò" to a hash at the gutter, in the same order and shapes as `f185r2/passC.tsv` (pos 3 is the "85"
+cell, pos 9 the ligature, pos 13 the raised-a m). The last sign touches the binding, so a further sign hidden in the gutter
+cannot be excluded from this image.
+
+Nothing is laid in or pasted between f.183v and f.187r. This agrees with VERIFY-NEVBIR-184's 2500 px look.
+
+## Search log (2 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical / catalogue | not repeated (Tomokiyo nevers.htm and the BnF catalogue as logged by VERIFY-NEVBIR-184 and AUDIT2-NEVBIR) | -- |
+| (b) recipient's edition | not repeated: AUDIT2-NEVBIR searched inside both volumes of the 1665 *Mémoires de Nevers* for the whole letter | no Birago letter of 1572 |
+| (c), (e) phrase search on the new portion, Google Books (keyed, `country=US`) | `"intendere a la regina" Birago` (70: Suriano/Barbaro despatches, Huguenot Society 1891, Maria Cristina 1895: Birago family in other contexts), `"casa di Momoransi"` (192: Davila's *Historia delle guerre civili*, other contexts), `"casa di Memoransi" 1572` (18: *La politique de St Pie V*, Freschot, Salviati nunciature: other letters), `"governo di Turino" Birago` (1: a 1605 Philip II life, a list of governors), `"Rocha Sparavera"` and `"Rocca Sparavera" Birago` (clear text of f.185v: 15 + 2, all 1490s-1500s Trivulzio / *Monumenta Aquensia*), `"huomini di Demonte" Tenda` (f.185v clear: 50, Botero and Cuneo histories), `"Sanfre" Birago 1572 Nevers` (0), `Birago Carmagnola "Ottobre 1572" Nevers` (4, the BnF catalogue), `Birago "2 ottobre 1572"` (178, top 5: the BnF catalogue, Relazioni degli ambasciatori veneti), `"Lodovico Birago" lettere "duca di Nevers"` (4: BnF catalogue; *Storia della riforma in Piemonte* 1982 snippet on Nevers's letters *to* Birago about provisioning; *La biblioteca di don Ferrante*), `"non si sa che porti il tempo"` (346 loose, top 5 unrelated), `"confusioni" "religione" Birago Saluzzo 1572` (0), `"Storia della riforma in Piemonte" Birago 1572 ottobre Nevers` (0) | no print of the letter's clear or cipher text |
+| (e) IA full text (be-api fts) | `"intendere a la regina" Birago` (1: a chronicle on Madama d'Entremont and Queen Maria), `"casa di Momoransi" Birago` (10: Davila editions), `Birago Nevers Carmagnola 1572 Turino` (10: Birago's biography and death on 28 Dec 1572, nunciature lists, Nevers to Montmorency), `"Sanfre" Birago` (10: genealogies, the Chivasso siege) | nothing on this letter |
+| (f) solver repos | dbourdeau/cyphersolver cloned at head **2 Oct 2026 15:12** (newer than the earlier audits' 1 Oct), grepped birago/3251/1572/f.184-185/Momoransi/Carmagnola: `targets/birago` is f.119 (13 Nov 1571, figure cipher); its sibling sweep notes that the 1572 letters use Tomokiyo's symbol cipher and reads none of them; TARGETS.md and unsolved.htm name only f.119. aaymeloglu/unsolved-ciphers (head 27 Sept 2026): DECODE catalogue rows for Birago are fr.3621/3623 (1591-92, the other Birago), no fr.3251 | no reading of no.90 |
+| (g) scholarship | OpenAlex keyed `Birago Nevers 1572` (10, none relevant: Catherine de Médicis historiography 2022 and noise); Semantic Scholar keyed `Birago Nevers cipher 1572` (0) | nothing |
+| DECODE | via Aymeloglu's catalogue mirror (above) | no fr.3251 record |
+| JSTOR | not queued again: AUDIT2-NEVBIR's six rows already cover no.90 at letter level (families i and ii) | pending; does not block N4 |
+
+Requests: gallica.bnf.fr 4 (native canvases 188-191, 2 s apart, no challenge), googleapis.com 15, be-api.us.archive.org 4,
+api.openalex.org 1, api.semanticscholar.org 1, github.com 2 clones. No credentials printed.
+
+## Postmortem and corrections
+
+1. **No over-claim found.** The NEVBIR-185 and NEVBIR-185B sections were grepped for first/new/novel/unread/previously/
+   unpublished/solved/cracked/never. "unread" refers only to this letter's own not-yet-read lines (now none), and "new" appears
+   only in the sign label X_NEW. Nothing to correct.
+2. **f.185v is graded down** (above): its own control is a non-test. Outward wording must not cite the f.185v fragment
+   ("Carmagnola") as a control-backed reading.
+3. **The whole-letter control figure is corrected to -0.940** (passage-id collision in the solver's log). The rank and the
+   class do not move.
+4. **The 19 T83-shaped tiles** (NEVBIR-185, kept unkeyed, grade M if fitted) are still owed a value-blind check by the owner's
+   sign sorter or a separate value-blind reader. This verifier did not do it (outside the brief). It does not affect the class.
+5. **Still owed:** a second audit of the 392 f.185r L10-25 signs (Outreach gate 2); the JSTOR rows; the DBI entry.
+
+**Safe sentence (N4), whole letter:** "Under Tomokiyo's published 1572 Nevers-Birago key we read, fragmentarily, the cipher of
+Birago's letter of 2 October 1572 (BnF fr.3251, no.90, ff.184r-185v, 966 signs) from a value-blind transcription. The key
+beats 200 shuffled keys on every portion except the 20-sign run on f.185v, which is too short to test on its own. The reading
+fails our language judge. No prior decipherment located after searching both volumes of the 1665 *Mémoires de Monsieur le duc de
+Nevers*, Tomokiyo's catalogue, the BnF catalogue, the solver repositories and the open indexes, 2 Oct 2026."
+**Unsafe:** "deciphered" without "fragmentary"; any first/new/previously unread/unpublished wording; calling the key ours;
+citing the f.185v fragment as tested.
+
+SECOND-OPINIONS-QUEUE.tsv: no duplicate row. `SO-NEVBIR-F184` (queued, unanswered) is the letter-level row; its prompt
+`second-opinions/PROMPT-chatgpt-f184.md` now names the 185B fragments and says the f.185v run is untested on its own (rule 10
+propagation). This follows AUDIT2-NEVBIR's precedent for the 330-sign portion.

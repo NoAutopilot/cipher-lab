@@ -1720,3 +1720,5 @@ challenge. Vision calls 7 (two blind passes, two one-line f.185v passes, one adj
 overlays). No credentials.
 
 English glosses (TRANSLATE-NEVBIR, 2 Oct 2026, grade I interpretation only, no token counts or key changed): harvest/gloss_no71.md, harvest/gloss_no86.md (covers reading_no86B.txt too), harvest/gloss_no90.md -- per line raw decode, word-split Italian with emendations marked, English gloss, 3-line summary.
+
+VERIFY-NEVBIR-90REST (2 Oct 2026, verifier, separate session): rest of no.90 (742 signs) audited -- f.185r L10-25 N4 (first audit), f.184v-185r L01-08 N4 (second audit); f.185v run alone is a non-test (rank 35-38/201, power 0-2/20), its one S graded M; whole-letter control real score is -0.940 (the -0.945 in the NEVBIR-185B table came from a passage-id collision). See AUDIT.md.

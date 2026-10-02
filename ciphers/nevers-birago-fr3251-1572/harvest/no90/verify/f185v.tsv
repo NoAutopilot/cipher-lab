@@ -1,0 +1,21 @@
+passage	pos	sign_id	conf	note
+f185v_L01	1	X_NEW	M	
+f185v_L01	2	T70	M	
+f185v_L01	3	T11	M	8 + s read as the sheet cell "85" (worker reconciliation, not value-blind)
+f185v_L01	4	T45	M	
+f185v_L01	5	T92	H	
+f185v_L01	6	T45	M	
+f185v_L01	7	X_NEW	M	
+f185v_L01	8	T90	M	
+f185v_L01	9	T83	M	ae-like ligature = sheet cell T83 shape (worker reconciliation)
+f185v_L01	10	T86	M	
+f185v_L01	11	T60	M	
+f185v_L01	12	T86	M	
+f185v_L01	13	X_NEW	M	m with raised a; T64 vs X_NEW unsettled, left unkeyed
+f185v_L01	14	T60	M	
+f185v_L01	15	?	L	bracketed e / omega-like, unsettled
+f185v_L01	16	T33	M	two uprights on a base (worker reconciliation)
+f185v_L01	17	?	L	hash, T60 vs T86 unsettled
+f185v_L01	18	X_NEW	M	
+f185v_L01	19	X_NEW	M	
+f185v_L01	20	T86	M	

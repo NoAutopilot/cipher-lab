@@ -1,0 +1,4 @@
+f185v_L01	_gcarmagnolaese_prene_n_u___e
+
+TARGET: 20 signs, 0 nulls, 22 letters; real key -1.1347; 200 shuffled keys mean -1.5337 sd 0.4568 max -0.5867; z 0.87; rank 35 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.29: real key rank 1 in 0/20; z median 0.28 min -2.53
