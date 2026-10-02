@@ -142,8 +142,10 @@
    "default_full_url": "https://service.archief.nl/api/file/v1/default/a51e0752-65ef-497a-8996-2574d8412e8b",
    "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=5f/cc/64/cb/55/d9/45/29/ab/b9/7d/eb/f0/b5/3d/f6/a51e0752-65ef-497a-8996-2574d8412e8b.jp2/info.json",
    "files": {
-    "2042_overview.jpg": "GAPS3 2 Oct 2026: full sheet via IIIF full/2800,/0/default.jpg (2800x2231), fetched once (METS + image, 2 requests). Plain Dutch throughout (own look): title 'Redoute PURMERENT', river 'RIVIER SURINAME opwarts', lowercase a-l lettered legend in a framed box lower right (batteries a/b/c with gun counts, d Plaats voor de Afdakken, e Officiers Huis, f Keuke en Magas., g Quartier voor 75 Mann, h Keuke en Water magas., i Wagt & Proviant magasyn, k Provost, l Buite wagt), scale 'Voete Rhynlands', signed Andr. Lud. Calvi. Candidate plain crib for 2046's legend; not transcribed to the two-pass bar."
-   }
+    "2042_overview.jpg": "GAPS3 2 Oct 2026: full sheet via IIIF full/2800,/0/default.jpg (2800x2231), fetched once (METS + image, 2 requests). Plain Dutch throughout (own look): title 'Redoute PURMERENT', river 'RIVIER SURINAME opwarts', lowercase a-l lettered legend in a framed box lower right (batteries a/b/c with gun counts, d Plaats voor de Afdakken, e Officiers Huis, f Keuke en Magas., g Quartier voor 75 Mann, h Keuke en Water magas., i Wagt & Proviant magasyn, k Provost, l Buite wagt), scale 'Voete Rhynlands', signed Andr. Lud. Calvi. Candidate plain crib for 2046's legend; not transcribed to the two-pass bar.",
+    "2042_legend_native.jpg": "GAPS4 2 Oct 2026: lower-right framed legend box, native IIIF region 4590,4010,1390,990 (x,y,w,h in native page px, info.json 6498x5177; located on 2042_overview.jpg by frame-line and ink-density profile, not by eye), fetched once (info.json + region, 2 requests). Cut by tools/iiif_lines.py --image --region 110,110,1155,760 --prominence 20 --distance 40 --lines-per-crop 20 --top-margin 60 (frame excluded; 11 line centres at pitch 87, 8 strong text lines) into one whole-box crop images/crops_2042/leg2042_L01.jpg (1155x717) with its own manifest.json. Source of crib_2042_legend.tsv (13 rows, 11 entries a-l without j; passes/crib_2042_passA.tsv, passB.tsv)."
+   },
+   "native_px": "6498x5177"
   },
   {
    "invnr": "4.VEL 2045A",
