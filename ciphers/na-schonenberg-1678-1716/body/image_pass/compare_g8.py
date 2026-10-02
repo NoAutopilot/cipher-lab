@@ -9,7 +9,9 @@ Usage: python3 compare_g8.py [--seeds 20]"""
 import csv, random, sys, os
 H = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(os.path.dirname(H))
 EQ = {'v': 'b', 'y': 'i', 'j': 'i', 'z': 'c'}
-def norm(s): return ''.join(EQ.get(ch, ch) for ch in s.lower().strip())
+def norm(s):
+    s = s.lower().strip(); s = '-' if s in ('null', '_', '-', '') else s  # NULL = no letter (one notation, rule 3)
+    return ''.join(EQ.get(ch, ch) for ch in s)
 seeds = int(sys.argv[sys.argv.index('--seeds') + 1]) if '--seeds' in sys.argv else 20
 LINES = ['L05', 'L07', 'L10', 'L03', 'L12', 'L14']
 def load(pat):

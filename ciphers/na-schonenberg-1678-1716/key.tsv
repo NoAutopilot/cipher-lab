@@ -15,9 +15,9 @@ code	value	grade	n	source	note
 30	u	C	5	period	aligner 2 Oct 2026: R2 {u: 4, g: 1}, R0 {u: 4, g: 1}, passB positional {u: 2, e: 1, g: 1, v: 1} -- C bar (4/5) with the unseeded R0 agreeing
 38	e	C	5	period	aligner 2 Oct 2026: R2 {e: 5}, R0 {e: 4, d: 1}, passB positional {e: 4, n: 1} -- seeded (old C); C bar (5/5) with the unseeded R0 agreeing
 45	n	C	5	period	aligner 2 Oct 2026: R2 {n: 5}, R0 {n: 4, e: 1}, passB positional {n: 3, e: 2} -- C bar (5/5) with the unseeded R0 agreeing
-6)	n	M	5	period	aligner 2 Oct 2026: R2 {n: 4, k: 1}, R0 {n: 2, o: 2, k: 1}, passB positional {n: 2, k: 1, o: 1, u: 1} -- C bar in R2 (4/5) but R0 (unseeded) top n tied -- seeded counts are not independent evidence
-94	s	M	5	period	aligner 2 Oct 2026: R2 {s: 3, i: 1, r: 1}, R0 {s: 2, e: 1, i: 1, r: 1}, passB positional {e: 1, i: 1, q: 1, r: 1, s: 1} -- plurality 3/5 short of the C bar; value changed from [?] (U)
-)2	r	M	4	period	aligner 2 Oct 2026: R2 {r: 2, s: 1, v: 1}, R0 {e: 1, r: 1, s: 1, v: 1}, passB positional {r: 2, p: 1, s: 1} -- plurality 2/4 short of the C bar
+6)	n	C	5	period	"GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): n at L05 pos3, L10 pos8, L12 pos9 n in both passes; L07 pos15 both passes ""h"", the hand's capital N (reconciliation; that position M in exceptions.tsv) | was: n M | aligner 2 Oct 2026: R2 {n: 4, k: 1}, R0 {n: 2, o: 2, k: 1}, passB positional {n: 2, k: 1, o: 1, u: 1} -- C bar in R2 (4/5) but R0 (unseeded) top n tied -- seeded counts are not independent evidence"
+94	s	C	5	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): s at L05 pos13, L07 pos2, L12 pos6 (3 of 5 occurrences; the other 2 unread, none contradicts) | was: s M | aligner 2 Oct 2026: R2 {s: 3, i: 1, r: 1}, R0 {s: 2, e: 1, i: 1, r: 1}, passB positional {e: 1, i: 1, q: 1, r: 1, s: 1} -- plurality 3/5 short of the C bar; value changed from [?] (U)
+)2	s	C	4	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): s at L03 pos15, L05 pos15, L12 pos16, L14 pos6 s in both passes (the aligner's r witnesses were offset gloss letters); L08 pos18 has no gloss letter and L10 pos0 is a doubtful group (exceptions.tsv) | was: r M | aligner 2 Oct 2026: R2 {r: 2, s: 1, v: 1}, R0 {e: 1, r: 1, s: 1, v: 1}, passB positional {r: 2, p: 1, s: 1} -- plurality 2/4 short of the C bar
 12	a	C	4	period	aligner 2 Oct 2026: R2 {a: 4}, R0 {a: 4}, passB positional {a: 2, m: 1, p: 1} -- C bar (4/4) with the unseeded R0 agreeing
 15	d	M	4	period	aligner 2 Oct 2026: R2 {d: 2, l: 1, y: 1}, R0 {d: 2, l: 1, y: 1}, passB positional {d: 2, l: 1, y: 1} -- plurality 2/4 short of the C bar
 16	e	C	4	period	aligner 2 Oct 2026: R2 {e: 4}, R0 {e: 4}, passB positional {e: 2, n: 1, y: 1} -- seeded (old C); C bar (4/4) with the unseeded R0 agreeing
@@ -58,32 +58,32 @@ code	value	grade	n	source	note
 [blot]	NULL	C	2		GAPS7 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/): no gloss letter over either blot: L14 pos3 (both passes); L01 pos7 is the same group as the 23 the decipherer recopied above it (both passes), so it carries no second letter | was: aligner 2 Oct 2026: R2 {e: 1, n: 1}, R0 {b: 1, n: 1}, passB positional {e: 1} -- R2 tally tied; U
 )10	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence; value changed from e (M)
 )3	t	M	1	period	aligner 2 Oct 2026: R2 {t: 1}, R0 {t: 1, y: 1}, passB positional {o: 1, t: 1} -- single glossed occurrence; value changed from [?] (U)
-)4	r	M	1	period	aligner 2 Oct 2026: R2 {r: 1}, R0 {r: 1}, passB positional {y: 1} -- single glossed occurrence; value changed from y (M)
+)4	u	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): u at L10 pos11 u in both passes; the 25 Sept column, offset-corrected, also u (the aligner's r was an offset letter) | was: r M | aligner 2 Oct 2026: R2 {r: 1}, R0 {r: 1}, passB positional {y: 1} -- single glossed occurrence; value changed from y (M)
 )5	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence; value changed from e (M)
-)9	b	M	1	period	aligner 2 Oct 2026: R2 {b: 1}, R0 {o: 1}, passB positional {b: 1} -- single glossed occurrence
+)9	b	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): b at L14 pos2 | was: b M | aligner 2 Oct 2026: R2 {b: 1}, R0 {o: 1}, passB positional {b: 1} -- single glossed occurrence
 18	g	M	1	period	aligner 2 Oct 2026: R2 {g: 1}, R0 {g: 1}, passB positional {g: 1} -- single glossed occurrence
-2	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {u: 1}, passB positional {u: 1} -- single glossed occurrence
+2	u	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): u at L05 pos9 | was: u M | aligner 2 Oct 2026: R2 {u: 1}, R0 {u: 1}, passB positional {u: 1} -- single glossed occurrence
 20	a	M	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- single glossed occurrence
 21)	n	M	1	period	aligner 2 Oct 2026: R2 {n: 1}, R0 {n: 1}, passB positional {n: 1} -- single glossed occurrence
 22	m	C	1	period	aligner 2 Oct 2026: R2 {m: 1}, R0 {m: 1}, passB positional {m: 1} -- seeded (old C); single glossed occurrence, pixel-verified by VX-RD01 (L06 recount) or read on the leaf at native resolution (L18 gloss); R0 and R2 agree
 36)	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
 40	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
 44	y	M	1	period	aligner 2 Oct 2026: R2 {y: 1}, R0 {y: 1}, passB positional {y: 1} -- single glossed occurrence
-52	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {a: 1} -- single glossed occurrence; value changed from a (M)
+52	u	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): u at L10 pos4 | was: u M | aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {a: 1} -- single glossed occurrence; value changed from a (M)
 58	i	M	1	period	aligner 2 Oct 2026: R2 {i: 1}, R0 {j: 1}, passB positional {j: 1} -- single glossed occurrence; value changed from j (M)
 61	f	C	1	period	aligner 2 Oct 2026: R2 {f: 1}, R0 {f: 1}, passB positional {f: 1} -- seeded (old C); single glossed occurrence, pixel-verified by VX-RD01 (L06 recount) or read on the leaf at native resolution (L18 gloss); R0 and R2 agree
 66	m	M	1	period	aligner 2 Oct 2026: R2 {m: 1}, R0 {m: 1}, passB positional {e: 1} -- single glossed occurrence; value changed from e (M)
-69	p	M	1	period	aligner 2 Oct 2026: R2 {p: 1}, R0 {s: 1}, passB positional {s: 1} -- single glossed occurrence; value changed from s (M)
+69	p	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): p at L12 pos7 | was: p M | aligner 2 Oct 2026: R2 {p: 1}, R0 {s: 1}, passB positional {s: 1} -- single glossed occurrence; value changed from s (M)
 8)	l	C	1	period	GAPS7 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/): l at L03 pos0 and L09 pos13 (was transcribed )8 9), both passes; agrees with the address crib at L19 pos20 | was: aligner 2 Oct 2026: R2 {p: 1}, R0 {p: 1}, passB positional {p: 1} -- single glossed occurrence
 81	d	C	1	period	GAPS7 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/): d at L11 pos15 (both passes) and L02 pos0 (pass B by x-position; pass A paired by order and is one letter off on L02) | was: aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 2}, passB positional {a: 2} -- single glossed occurrence
-90	o	M	1	period	aligner 2 Oct 2026: R2 {o: 1}, R0 {o: 1}, passB positional {o: 1} -- single glossed occurrence
-99	z	M	1	period	aligner 2 Oct 2026: R2 {z: 1}, R0 {z: 1}, passB positional {z: 1} -- single glossed occurrence
+90	o	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): o at L03 pos13 | was: o M | aligner 2 Oct 2026: R2 {o: 1}, R0 {o: 1}, passB positional {o: 1} -- single glossed occurrence
+99	z	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): z at L05 pos4 | was: z M | aligner 2 Oct 2026: R2 {z: 1}, R0 {z: 1}, passB positional {z: 1} -- single glossed occurrence
 [T]	o	M	1	period	aligner 2 Oct 2026: R2 {o: 1}, R0 {o: 1}, passB positional {o: 1} -- single glossed occurrence
-[X]	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
-[Z]	y	M	1	period	aligner 2 Oct 2026: R2 {y: 1}, R0 {y: 1}, passB positional {y: 1} -- single glossed occurrence
-[circle]	o	M	1	period	aligner 2 Oct 2026: R2 {o: 1}, R0 {c: 1}, passB positional {r: 1} -- single glossed occurrence; value changed from r (M)
-[square]	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {n: 1} -- single glossed occurrence; value changed from n (M)
-[tilde]	a	M	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- single glossed occurrence
+[X]	e	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): e at L03 pos14 | was: e M | aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
+[Z]	y	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): y at L07 pos6 | was: y M | aligner 2 Oct 2026: R2 {y: 1}, R0 {y: 1}, passB positional {y: 1} -- single glossed occurrence
+[circle]	o	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): o at L10 pos9 | was: o M | aligner 2 Oct 2026: R2 {o: 1}, R0 {c: 1}, passB positional {r: 1} -- single glossed occurrence; value changed from r (M)
+[square]	e	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): e at L14 pos12 | was: e M | aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {n: 1} -- single glossed occurrence; value changed from n (M)
+[tilde]	a	C	1	period	GAPS8 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/g8_*): a at L03 pos4 | was: a M | aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- single glossed occurrence
 [triangle]	a	C	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- seeded (old C); single glossed occurrence, pixel-verified by VX-RD01 (L06 recount) or read on the leaf at native resolution (L18 gloss); R0 and R2 agree
 [n]	ñ	C	1	crib-address	GAPS 2 Oct 2026: L19 pos3 = ñ of 'Dona' in the address crib (controls as for 24); the sign itself is an n with a small ring/mark above it (image check), never in L01-L14
 5)	b	C	1	period	GAPS7 2 Oct 2026 image pass (two blind Opus passes + reconciliation on images/lines/g7x_*; body/image_pass/): b at L03 pos5 (was transcribed 55), both passes

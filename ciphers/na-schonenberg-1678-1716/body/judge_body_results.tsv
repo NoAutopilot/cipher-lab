@@ -1,21 +1,21 @@
 corpus	text	N	score	real_p05	null_p99	verdict
-es18	KEY	250	-1.202	-0.972	-1.746	FAIL
+es18	KEY	247	-1.175	-0.957	-1.749	FAIL
 es18	GLOSS	246	-1.329	-0.958	-1.752	FAIL
 es18	SENSE	245	-1.14	-0.962	-1.711	FAIL
-es18	shuffled-null (letters of KEY)	250	-2.069..-1.877	-0.972	-1.746	0 PASS of 20
-es18	shuffled-target (group order within line, key.tsv)	250	-2.116..-1.857	-0.972	-1.746	0 PASS of 20
-es18p	KEY	250	-1.216	-0.96	-1.698	FAIL
+es18	shuffled-null (letters of KEY)	247	-2.078..-1.883	-0.957	-1.749	0 PASS of 20
+es18	shuffled-target (group order within line, key.tsv)	247	-2.098..-1.863	-0.957	-1.749	0 PASS of 20
+es18p	KEY	247	-1.191	-0.959	-1.726	FAIL
 es18p	GLOSS	246	-1.321	-0.968	-1.713	FAIL
 es18p	SENSE	245	-1.168	-0.973	-1.718	FAIL
-es18p	shuffled-null (letters of KEY)	250	-2.087..-1.842	-0.960	-1.698	0 PASS of 20
-es18p	shuffled-target (group order within line, key.tsv)	250	-2.114..-1.846	-0.960	-1.698	0 PASS of 20
-es17c7	KEY	250	-1.249	-0.894	-1.838	FAIL
+es18p	shuffled-null (letters of KEY)	247	-2.061..-1.848	-0.959	-1.726	0 PASS of 20
+es18p	shuffled-target (group order within line, key.tsv)	247	-2.089..-1.846	-0.959	-1.726	0 PASS of 20
+es17c7	KEY	247	-1.232	-0.905	-1.858	FAIL
 es17c7	GLOSS	246	-1.337	-0.895	-1.877	FAIL
 es17c7	SENSE	245	-1.204	-0.922	-1.894	FAIL
-es17c7	shuffled-null (letters of KEY)	250	-2.221..-2.020	-0.894	-1.838	0 PASS of 20
-es17c7	shuffled-target (group order within line, key.tsv)	250	-2.240..-1.934	-0.894	-1.838	0 PASS of 20
-es	KEY	250	-1.216	-0.89	-1.825	FAIL
+es17c7	shuffled-null (letters of KEY)	247	-2.168..-1.980	-0.905	-1.858	0 PASS of 20
+es17c7	shuffled-target (group order within line, key.tsv)	247	-2.257..-1.923	-0.905	-1.858	0 PASS of 20
+es	KEY	247	-1.185	-0.904	-1.81	FAIL
 es	GLOSS	246	-1.305	-0.898	-1.855	FAIL
 es	SENSE	245	-1.153	-0.894	-1.832	FAIL
-es	shuffled-null (letters of KEY)	250	-2.208..-1.919	-0.890	-1.825	0 PASS of 20
-es	shuffled-target (group order within line, key.tsv)	250	-2.153..-1.928	-0.890	-1.825	0 PASS of 20
+es	shuffled-null (letters of KEY)	247	-2.093..-1.904	-0.904	-1.810	0 PASS of 20
+es	shuffled-target (group order within line, key.tsv)	247	-2.167..-1.943	-0.904	-1.810	0 PASS of 20

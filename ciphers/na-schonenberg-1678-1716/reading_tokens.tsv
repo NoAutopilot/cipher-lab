@@ -28,7 +28,7 @@ L02	11	56	H	a	C
 L02	12	)1	M	r	M
 L02	13	95	H	t	C
 L02	14	10	H	e	C
-L02	15	94	H	s	M
+L02	15	94	H	s	C
 L02	16	)0	M	q	M
 L02	17	)5	M	u	M
 L03	0	8)	M	l	M
@@ -44,7 +44,7 @@ L03	9	30	H	u	C
 L03	10	15	H	d	M
 L03	11	)8	M	a	M
 L03	12	3)	H	d	C
-L03	13	90	H	o	M
+L03	13	90	H	o	C
 L03	14	[X]	M	e	M
 L03	15	)2	M	s	M
 L03	16	51	H	t	C
@@ -72,18 +72,18 @@ L05	0	50	H	s	C
 L05	1	)3	M	t	M
 L05	2	6	H	a	C
 L05	3	6)	M	n	M
-L05	4	99	H	z	M
+L05	4	99	H	z	C
 L05	5	)6	M	y	M
 L05	6	11	H	a	C
 L05	7	50	H	s	C
 L05	8	26	H	q	M
-L05	9	2	H	u	M
+L05	9	2	H	u	C
 L05	10	38	H	e	C
 L05	11	56	H	a	C
 L05	12	32	H	y	C
-L05	13	94	H	s	M
+L05	13	94	H	s	C
 L05	14	60	H	e	C
-L05	15	)2	M	r	M
+L05	15	)2	M	s	M
 L05	16	12	H	a	C
 L05	17	35	H	b	C
 L05	18	2)	M	r	M
@@ -110,7 +110,7 @@ L06	18	32	H	y	C
 L06	19	6	H	a	C
 L07	0	43	H	l	C
 L07	1	)8	M	a	M
-L07	2	94	H	s	M
+L07	2	94	H	s	C
 L07	3	)0	M	q	M
 L07	4	30	H	u	C
 L07	5	5	H	e	M
@@ -118,7 +118,7 @@ L07	6	[Z]	M	y	M
 L07	7	13	H	b	C
 L07	8	)6	M	y	M
 L07	9	60	H	e	C
-L07	10	23	H	r	M
+L07	10	2)	H	r	C
 L07	11	60	H	e	C
 L07	12	59	H	d	C
 L07	13	38	H	e	C
@@ -144,7 +144,7 @@ L08	14	28	H	s	M
 L08	15	2?	M	e	M
 L08	16	28	H	s	M
 L08	17	56	H	a	C
-L08	18	)2	M	r	M
+L08	18	)2	M	s	M
 L09	0	20	M	a	M
 L09	1	45	H	n	C
 L09	2	3)	H	d	C
@@ -152,7 +152,7 @@ L09	3	60	H	e	C
 L09	4	[T]	H	o	M
 L09	5	14	H	c	C
 L09	6	6	H	a	C
-L09	7	94	H	s	M
+L09	7	94	H	s	C
 L09	8	)6	H	y	C
 L09	9	3	H	o	C
 L09	10	23	H	n	C
@@ -164,18 +164,18 @@ L09	15	50	H	s	C
 L09	16	26	H	q	M
 L09	17	)	M	u	M
 L09	18	10	H	e	C
-L10	0	)2	M	r	M
-L10	1	)0	M	q	M
-L10	2	32	H	y	C
+L10	0	)2	M	NULL	M
+L10	1	)0	M	NULL	M
+L10	2	32	H	NULL	M
 L10	3	4)	M	p	M
-L10	4	52	H	u	M
+L10	4	52	H	u	C
 L10	5	38	H	e	C
 L10	6	59	H	d	C
 L10	7	)8	M	a	M
 L10	8	6)	M	n	M
 L10	9	[circle]	M	o	M
 L10	10	36	H	c	M
-L10	11	)4	M	r	M
+L10	11	)4	M	u	M
 L10	12	2)	M	r	M
 L10	13	54	H	y	C
 L10	14	)1	M	r	M
@@ -204,8 +204,8 @@ L12	2	58	H	i	M
 L12	3	24	H	o	C
 L12	4	)1	M	r	M
 L12	5	10	H	e	C
-L12	6	94	H	s	M
-L12	7	69	H	p	M
+L12	6	94	H	s	C
+L12	7	69	H	p	C
 L12	8	8	H	o	C
 L12	9	6)	M	n	M
 L12	10	59	H	d	C
@@ -261,8 +261,8 @@ L19	1	59		d	C
 L19	2	24		o	C
 L19	3	[n]		ñ	C
 L19	4	34		a	C
-L19	5	[tilde]		a	M
-L19	6	6)		n	M
+L19	5	[tilde]		a	C
+L19	6	6)		n	C
 L19	7	51		t	C
 L19	8	68		o	C
 L19	9	?9		n	M
@@ -274,7 +274,7 @@ L19	14	12		a	C
 L19	15	65		l	C
 L19	16	13		b	C
 L19	17	56		a	C
-L19	18	6)		n	M
+L19	18	6)		n	C
 L19	19	54		y	C
 L19	20	8)		l	C
 L19	21	65		l	C
