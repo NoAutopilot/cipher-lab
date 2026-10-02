@@ -1,0 +1,17 @@
+# catokwacopa-1875 -- sibling ad, The Standard, 27 March 1875 (filed 2 Oct 2026 by A2-CAT, account 2)
+# Signed "W.", same column as the 8 and 20 May 1875 ads (p. 1, col. 2), per Thomas Ernst's BNA reading.
+# Two transcriptions, copied verbatim; neither re-checked here against the BNA page (rule 2: no image on disk;
+# the BNA page is login-gated from the cloud, same route as LOCAL-QUEUE.tsv L13).
+# Witness A: Klaus Schmeh, Cipherbrain comment #6, 23 Aug 2015 (source of the text not stated; likely Palmer/Gaffney,
+#   The Agony Column Codes & Ciphers), on the post of 17 Aug 2015:
+#   sources/schmeh/posts/08a-catokwacopa-2015-08-17.txt (fetched 2 Oct 2026)
+# Witness B: Thomas Ernst, Cipherbrain comment #23, 27 Jul 2018, read from the BNA scan ("[n]" numbers his; he
+#   notes two light creases through p. 1; word 3 "Oo-" not "Oe-", its "m" possibly "nr"; word 5 crease between
+#   f and o, second o possibly b): sources/schmeh/posts/08b-catokwacopa-2018-01-26-revisited.txt
+# Ernst #27 (27 Jul 2018): all issues of The Standard for March and April 1875 checked, no other ad by W.;
+# "the ad in the March 27 issue, which ends on a question mark, appears to be a self-contained singleton".
+# So: no counterpart half is known. Do not pair it with the May ads (pairs.py does not read this file).
+## Witness A (Schmeh 2015)
+W. TITOLLUM Endive Oeman. Soomoom Biffot. Coxel. Dritterfo. Cardebog. Wapalinok. Sikrinad. Sepp?
+## Witness B (Ernst 2018, BNA)
+W. [1] TITOLLUM [2] Endive [3] [Oonran/Ooman]. [4] Soomoom [5] Biff[?]ot. [6] Coxel. [7] Dritterfo. [8] Cardebog. [9] Wapalinok. [10] Sikrinad. [11] Sepp?

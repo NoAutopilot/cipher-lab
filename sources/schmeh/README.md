@@ -11,3 +11,8 @@ Added 2 Oct 2026 (worker GAPS-pollaky-1865-1875, account 4; 4 requests to scienc
 10 comments), `posts/29b-pollaky-2016-10-04.*` (page 1 of 2 with the 1 comment) and `posts/29b-pollaky-2016-10-04-all.*`
 (the same post on one page). Not Top-50 posts; fetched for ciphers/pollaky-1865-1875's sibling step. Same rules: do not
 edit, do not refetch.
+
+Added 2 Oct 2026 (worker A2-CAT, account 2; 2 requests to scienceblogs.de, 2.2 s apart, both HTTP 200, `?all=1`):
+`posts/08a-catokwacopa-2015-08-17.*` (original post, 7 comments; #6 gives the 27 March 1875 ad) and
+`posts/08b-catokwacopa-2018-01-26-revisited.*` ("Revisited", 32 comments; Ernst's BNA reads #23-#29). Fetched for
+ciphers/catokwacopa-1875's sibling step. Same rules: do not edit, do not refetch.
