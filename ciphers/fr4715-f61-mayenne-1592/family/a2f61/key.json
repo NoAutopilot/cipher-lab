@@ -1,0 +1,37 @@
+{
+ "items": {
+  "113": "A_PLAIN_IL_W1",
+  "313": "A_4TRI_W2",
+  "373": "A_PLAIN_LES_W1",
+  "378": "T_L02_0_W2",
+  "392": "A_4STEM_W1",
+  "424": "T_L02_0_W1",
+  "487": "A_HASH4O_W1",
+  "560": "A_PHI_W2",
+  "588": "T_L02_0_W3",
+  "723": "T_L02_0_W1",
+  "726": "F_LL_DELLA_W3",
+  "797": "A_C43_W2",
+  "837": "A_ZHOOK_W2",
+  "852": "F_LL_DELLA_W1",
+  "881": "R_LL_W3",
+  "940": "F_LL_DELLA_W1",
+  "984": "F_LL_DELLA_W2",
+  "997": "A_CROSS_W1",
+  "998": "A_4PI_W1"
+ },
+ "panel": {
+  "A": "PHI",
+  "B": "CROSS",
+  "C": "HASH4O",
+  "D": "4STEM",
+  "E": "4TRI",
+  "F": "C43",
+  "G": "HASHL",
+  "H": "LL",
+  "J": "ZHOOK",
+  "K": "VBARA",
+  "L": "BETA",
+  "M": "4PI"
+ }
+}

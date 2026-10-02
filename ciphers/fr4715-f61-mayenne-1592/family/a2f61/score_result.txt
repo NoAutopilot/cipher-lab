@@ -1,0 +1,16 @@
+anchor A_PLAIN_LES_W1: expected O, read O
+anchor A_CROSS_W1: expected CROSS, read CROSS
+anchor A_4PI_W1: expected 4PI, read 4PI
+anchor A_C43_W2: expected C43, read C43
+anchor A_PHI_W2: expected PHI, read PHI
+anchor A_ZHOOK_W2: expected ZHOOK, read ZHOOK
+anchor A_4TRI_W2: expected 4TRI, read 4TRI
+anchor A_4STEM_W1: expected 4STEM, read 4STEM
+anchor A_HASH4O_W1: expected HASH4O, read HASH4O
+observational A_PLAIN_IL_W1: read N
+G1 anchors 9/9 (>=8): PASS
+G2 in-span R_LL_W3 -> LL: PASS
+G3 repeats F_LL_DELLA_W1 O/O, T_L02_0_W1 LL/LL: PASS
+target L02 opening W1/W2/W3: LL LL LL
+foil L07 in-word 'll' (della) W1/W2/W3: O O O
+verdict: ENDORSE: insert L02 0 LL (null); V13's foil condition met; cipher count 100
