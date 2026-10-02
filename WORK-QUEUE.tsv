@@ -92,3 +92,6 @@ NEXT2-PAG	other	.claude/briefs/runs/2026-10-02-acct3-next2-paget.md	Fable	4	45	c
 VERIFY-NEVBIR-1572	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-1572.md	Fable	5	50	claimed session_01SKNBTP5akrsiRWNcd8aNDp 2026-10-02 08:10	2026-10-02 07:36	verifier: nevers-birago-fr3251-1572
 VERIFY-ROYALIST-1646	other	.claude/briefs/runs/2026-10-02-acct3-verify-royalist-1646.md	Fable	5	50	claimed session_01F5eoBMKV5qnoww21vX8awM 2026-10-02 08:10	2026-10-02 07:36	verifier: intercepted-royalist-1646
 VERIFY-CLINTON-2894	other	.claude/briefs/runs/2026-10-02-acct3-verify-clinton-2894.md	Fable	5	50	claimed session_01B5i6mN95fqddspfe1giK2h 2026-10-02 08:10	2026-10-02 07:36	verifier: pro3055-clinton-1779
+PREMISE-NEVBIR	other	.claude/briefs/runs/2026-10-02-acct3-premise-nevbir.md	Sonnet	3	40	queued	2026-10-02 13:00	premise check on the 7 unread Birago 1572 letters
+PAGET-KEY	other	.claude/briefs/runs/2026-10-02-acct3-paget-key.md	Fable	5	50	queued	2026-10-02 13:00	premise check + period glosses to key entries
+MERCY-C15	other	.claude/briefs/runs/2026-10-02-acct3-mercy-c15.md	Fable	4	45	queued	2026-10-02 13:00	blind reads of code 15 / v04:11
