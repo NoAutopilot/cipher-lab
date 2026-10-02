@@ -331,9 +331,83 @@ OK keep-going fr4715-vieuville-pool: keep going: 5 internal gap(s), 1 step(s) un
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
 
+## GAPS-fr4715-vieuville-pool-4 (2 Oct 2026, account-4): the Verdict step -- the no.37 dense cipher block L06-L14 read and decoded
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step as GAPS-3 wrote it. Clock read 20:50-21:4x UTC
+2 Oct 2026. Intake gate exit 0. Requests: none (canvas 135's native region on disk). Vision calls 8 of 8, all Opus 5.5 subagents:
+pass A b1-b3 and pass B b1-b2 over the first cut (images/f60r_blocks3, 3x, 600 px segments, centred on a straight slope), passes
+A' and B' over a re-cut of s4-s6 (images/f60r_blocks3t), one reconciliation call. **Scope cut (brief's fallback): L06-L14 only;
+L25-L30 is the next step.** Why: both pass-A batches and pass B b1 reported independently that from about x 1900 the lines curve
+up (up to 60 px at the right edge), so the first cut's s4-s6 crops sat on the next line down. `scripts/cut_f60r_bands.py --track`
+(new) follows each line by its ink row profile in 270 px strips and cuts a straightened band; L06-L14 s4-s6 were re-cut and re-read
+by both passes, and the s1-s3 reads of the first cut kept (`scripts/f60r_blocks.py merge`). L25-L30 has only pass A b3 on the
+misaligned cut, not used. **Found on the way:** the 31 row centres in `cut_f60r_bands.py` (iiif_lines dry run, GAPS-2) miss a whole
+cipher row in the lower block -- "Day parle 2593..." at y about 1563, between the centres called L28 (1521) and L29 (1593) -- so the
+lower block is 7 rows, not 6, and its line labels from L29 down are off by one.
+
+**Control first (rule 3).** (a) The judge on no.58's known text (Tomokiyo's printed decipherment, fr4715-montholon-1589/known_plaintext.txt)
+at the target's N: PASS (N=700 -0.837, N=604 -0.844 vs real_p05 -0.878). (b) The design-matched control, no.58's own cipher (Tomokiyo's
+group dump) decoded under the same key with word-codes dropped, the exact construction of the target candidate: **FAIL** (N=818 -1.085,
+N=700 -1.072, N=604 -1.056 vs real_p05 about -0.88). So the judge cannot pass a correct decode of this design at this N: a judge FAIL on
+the target is a **non-test** (rule 3, Salviati paragraph: match the design), and only (c) carries the result. (c) `scripts/keytest.py
+known-answer`, re-run: no.58 dump, real key 729/818 = 0.891 vs 200 letter-shuffled keys mean 0.353 sd 0.100 max 0.631, z 5.37, rank 1 of
+201. (d) Segmenter control, `scripts/f60r_blocks.py segcontrol`: no.58's dump with its grouping removed is re-segmented by the same
+inventory-only DP to 950 of Tomokiyo's 952 groups (0.998).
+
+**Transcription.** `tools/reconcile_passes.py` over the merged passes (witness/f60r_blocks_pass{A,B}_long.tsv): 9 lines, A 1,404 / B 1,422
+units, **agreement 1,334/1,432 = 93.2 pct** (nw; a dot on one pass and not the other counts as a disagreement). The 98 disagreements went
+to one reconciliation call (witness/f60r_blocks_recon.tsv): 41 to A, 53 to B, 4 other; 16 H, 62 M, 20 L, the L ones mostly one shape (an
+open c-shaped 0 with a rising stroke: a separate 5/6 or a ligature). Settled values: witness/f60r_blocks_settled.tsv.
+**The 8 problem.** Neither pass wrote a single 8 in about 1,400 digits (no.58's dump: 8 is 7.8 pct of digits; MONT-4715's confusion
+matrix already lists 8->0, 8->1, 8->5 for this hand). No key code starts with 0, so the segmenter reads an out-of-key pair 0x as 8x when
+8x is a key code (inventory only, the same stream for every shuffled key); 66 tokens rest on this rule, graded I for that digit. A blind
+shape check inside the reconciliation call (8 zeros, 4 of them pair-initial = implied 8, 4 pair-final, classes hidden) was
+**non-discriminating**: 7 of 8 read as the same closed pointed oval with a tail, the one different form (Z4) a pair-initial; the shape
+test neither supports nor excludes the rule.
+
+**Decode (rule 7).** `decode.json` job 3: `f60r_blocks_ciphertext.tsv` (749 tokens) under key_vieuville_nevers.tsv;
+`tools/decode_key.py ciphers/fr4715-vieuville-pool --check` exit 0 (all three jobs; job 3: AB 604, U 145). Reading of record:
+`f60r_blocks_reading.txt`. **Rule 4 grades, 749 tokens:** 604 letter tokens read from the printed key (key-source values, AB in the key
+file), of which 538 at H for the value and 66 at I (the 8 rule); transcription confidence of the 604: M 134, L 470 (line-level, the lower
+crop confidence of the line inherited by every token -- most lines have one L crop); 110 dotted/barred word-codes U (not in any key; the
+five glossed on f.60r's clear lines are not among them by value check, not applied); 35 undotted out-of-key groups U. No C, no S.
+Fragments legible in the decoded string (letters as decoded, grade H by value, not a reading): "dissimulation peult", "leglise",
+"empesche ledit duc", "religion", "pas expedient", "royaume soit divise", "coulpable", "du feu", "declaration", "remedier".
+
+**Numbers, side by side.**
+
+| test | target L06-L14 (N=604 letters) | matched control | shuffled |
+|---|---|---|---|
+| keytest word-cover, 200 letter-shuffled keys | 479/604 = 0.793, mean 0.331 sd 0.090 max 0.604, **z 5.11, rank 1 of 201** | no.58 dump 0.891 vs 0.353, z 5.37, rank 1 of 201 | -- |
+| judge (fr16, `witness/f60r_blocks_judge_output.txt`) | FAIL -1.275 (real_p05 -0.878, null_p99 -1.874), cover 0.849 | no.58 decode same design N=604: FAIL -1.056; no.58 known text N=604: PASS -0.844 | target tokens shuffled, 5 seeds: -1.92 to -2.01, all below the null p99 |
+
+```
+$ python3 tools/judge_plaintext.py specs/fr4715-vieuville-pool.json --file ciphers/fr4715-vieuville-pool/witness/f60r_blocks_judge_candidate.txt
+FAIL language: score=-1.275, null_p99=-1.874, real_p05=-0.878, real_median=-0.787, mode=both, N=604
+ok   words: cover=0.849, min=0.5, real_text_median_cover=0.945
+FAIL - fr4715-vieuville-pool (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+**Verdict of the step.** The printed key reads the block: rank 1 of 201, z 5.11, beside its known-answer control's z 5.37 at N=818; the
+judge FAILs, but its design-matched control FAILs too, so the judge is a non-test here (not a negative), while the target sits far above
+its own shuffled-token decodes. No "reading ready" line: the brief asks for the judge AND the shuffled-target check, and the judge cannot
+clear. Rule 10: nothing here is called new or first; Tomokiyo lists no.37 under the Vieuville-Nevers heading with no reading (nevers.htm,
+LIKELY-1's check) -- what was found and where it was not found only.
+
+```
+$ python3 tools/intake_gate_check.py fr4715-vieuville-pool   # exit 0
+fr4715-vieuville-pool: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+$ python3 tools/decode_key.py ciphers/fr4715-vieuville-pool --check   # exit 0
+reading up to date
+$ python3 tools/gaps_check.py fr4715-vieuville-pool   # exit 0
+OK keep-going fr4715-vieuville-pool: keep going: 6 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
+
 ## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2 and -3, 2 Oct 2026)
-Read so far: no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv), the two dense blocks (15 lines, ~1,400 signs) untranscribed
-- the no.37 dense cipher blocks L06-L14 and L25-L30 (~1,400 signs) and the three digit runs - blocker: not-attempted; the letter key reads them (AB 133 on the runs) but no pass has read the blocks; next: two strong-model passes over 3x crops of the 15 block lines (scripts/cut_f60r_bands.py --seg 600 --scale 3, ~90 crops a pass) + reconciliation, then tools/judge_plaintext.py on the decoded blocks against the no.58 known-answer control, ~$12
+Read so far: (updated GAPS-4) no.37 f.60r dense block L06-L14 decoded, 604 letters under the key (rank 1/201, z 5.11); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv), the lower dense block (L25-L30 + one unlisted row) untranscribed
+- the no.37 dense cipher blocks - L06-L14 READ 2 Oct 2026 (GAPS-4): 749 tokens, 604 letters under the key, rank 1 of 201 z 5.11 vs control z 5.37, judge non-test (its design-matched control FAILs too); the lower block L25-L30 (7 rows, one -- "Day parle 2593..." y~1563 -- missing from the centre list) - blocker: not-attempted; the 8 vision calls of GAPS-4 went to L06-L14 after the first cut proved misaligned, and pass A b3 on L25-L30 sits on that cut; next: add the missing centre, `scripts/cut_f60r_bands.py --track --lines 25..31` (s1-s6, straightened), two strong-model passes (~2 calls each of ~21 crops) + one reconciliation unit priced as a unit, then scripts/f60r_blocks.py segment/keytest with the same controls, ~$12
+- the 8-glyph rule on no.37 (66 tokens at I: no pass ever writes an 8 on this leaf) - blocker: not-attempted; the shape check inside the GAPS-4 reconciliation call had 8 samples and did not discriminate (7 of 8 one form); next: a value-blind glyph sheet of 30 zeros from the block, half pair-initial, at native resolution, one strong-model call with the classes hidden, ~$2
 - the four L-grade glosses (labr/de over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: open-codes; re-read 2 Oct 2026 (GAPS-3) from tall native crops, 1 call: all four now M (de and legat clear as text but each straddles two groups; L20 du/dn sits over the dotted 16; L22 is an insertion 'peu de', not a gloss), no decode-key value changed; what would settle the group cover is the same code glossed again on a sibling leaf (no.21/35/39, gap 3 below)
 - no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37; next: the other glossed pool leaves (no.21 f.44, no.35 f.58, no.39 f.62, all "en partie déchiffrée" per the dépouillement) read the same way as this step, one leaf a job, ~$10 each
 - the clear-French frame of f67r_ciphertext.tsv and the judge - blocker: not-attempted; pass C (one strong pass) reads it at 84 pct H+M but is not reconciled into the file; next: tools/reconcile_passes.py over passes A, B and C, fold the agreed clear words into f67r_ciphertext.tsv, regenerate witness/f67r_judge_candidate.txt and re-run tools/judge_plaintext.py, ~$1
@@ -347,4 +421,4 @@ Read so far: no.44: 8 of 27 cipher groups decode under the letter key (grade H) 
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 5 internal gaps; cheapest next: the no.37 dense cipher blocks L06-L14 and L25-L30 (~1,400 signs): two strong-model passes over 3x crops (scripts/cut_f60r_bands.py --seg 600 --scale 3, ~90 crops a pass) + one reconciliation unit, decoded under key_vieuville_nevers.tsv, then tools/judge_plaintext.py with no.58's known text (Tomokiyo's decipherment, fr4715-montholon-1589) as the matched control run first, ~$12
+Verdict: keep going: 6 internal gaps; cheapest next: the 8-glyph rule on no.37 (66 tokens at I): a value-blind glyph sheet of 30 zeros from the L06-L14 block, half pair-initial, native resolution, one strong-model call with the classes hidden, ~$2; then the lower block L25-L30 + the unlisted row, ~$12

@@ -1,0 +1,107 @@
+id	line	reading	conf	notes
+D01	L06	=6	M	A; one bar runs over 6 1 3 after the dotted 4
+D02	L06	=1	M	A; same bar
+D03	L06	3	M	A; stroke over this second 3 is a tail of ink coming down from the line above, not a bar
+D04	L06	2	L	A; between the 3 and the 6 there is a Z-shaped 2 joined to a u-shaped 5; A's extra 5 before it may be the 3's tail
+D05	L06	9	M	other: 9 is present (B left it out) but no dot over it; the dot is over the following 2
+D06	L06	5	H	A; reads 6 3 9 5 .2 6
+D07	L06	5	M	B; 0 0 then two 5s (the first starts with a c-hook) then 6 3
+D08	L06	6	M	B for this digit; the dot sits over the 4 before it (.4 6), not over the 6
+D09	L06	2	H	A; .9 2 .2 4
+D10	L06	3	M	B; flat-topped 3, same shape as the 3 before the 7
+D11	L07	5	L	B; small 5 joined to the third 7's base stroke, head ticked up before the 9
+D12	L07	5	M	B; reads 7 3 0 5 3 2 5 0 5 5 6
+D13	L07	2	M	A; Z-shaped 2 sitting on the baseline, no descender like the 7s have
+D14	L07	5	M	B; two 5s before the 6
+D15	L07	.1	M	B; heavy dot over the 1, clear of the descender from the line above
+D16	L07	.6	M	A; ink dot just above the 6's bowl
+D17	L07	-	M	A; reads 0 5 9 3 9 4 0 3, only one 4
+D18	L07	-	M	A; reads 9 5 0 5 1 0 2 3 6 (the c-shaped 0 is joined to the 5)
+D19	L07	2	M	A; no dot over the 2
+D20	L07	5	M	B; no dot over this 5 (the bar over the 7 starts after it)
+D21	L07	.3	L	A; dotted digit with a flat top and Z base, more like 3 than 5
+D22	L07	-	M	A; only one digit (1-like, top joined to the 3 before) between the two 3s
+D23	L07	.4	M	B; dot over the second 4's upright
+D24	L07	7	M	B; no dot over the 7
+D25	L07	5	M	B; reads .3 5 .5 0 1 0 (a small 5 after the 3)
+D26	L08	-	L	B for the count; only one glyph between 0 and 2 (it looks like a 4 with a loop, or a 9); A's two digits are not both there
+D27	L08	4	M	A; 1 4 .4
+D28	L08	.1	M	B; clear dot over the 1
+D29	L08	.1	M	B; clear dot over the 1
+D30	L08	.1	L	B; dot over the 1, close to a descender from the line above
+D31	L08	0	M	A; three zeros: a 0 with a tail, an open c, then a loop joined to the 5
+D32	L09	=6	M	other: the first of two 6s has its upright crossed by a horizontal stroke (=6), then a plain 6
+D33	L09	6	M	B; the second 6 is plain; the full run is 3 =6 6 3 9
+D34	L09	.4	H	A; clear dot over the 4
+D35	L09	-	M	A; the c and the small reversed c after it look like one 0 made in two strokes, not 0 3
+D36	L09	-	M	A; 1 1 1 0 5 6: one 5 after the open 0
+D37	L09	5	L	B; 0-loop, then a rise with a separate downstroke (5) into the 3; same shape both passes read as 0 5 3 at Z6
+D38	L09	5	L	B; 0 followed by a hooked 5 head before the 4
+D39	L09	6	H	B; .2 6 .4 1 9
+D40	L09	5	L	B; 0 with a 5-shaped tail before the 3 (same shape as D37)
+D41	L09	4	M	B; reads 3 6 4 .1 9 9(.9?) 9 1 0
+D42	L09	.1	M	B; dot over the 1, not over the 4
+D43	L09	9	M	B; three 9s after the .1
+D44	L10	1	M	A; 2 3 1 .4 1 .1 4 4 6
+D45	L10	.1	H	B; clear dot over the 1
+D46	L10	5	L	B; open 0 rising to a hooked head that comes down into the 3; may be only a joining stroke
+D47	L10	5	L	B; same c-plus-rise shape as D46 before the 3; may be only a joining stroke
+D48	L10	-	M	A; no 0 between the 1 and the dotted 2
+D49	L10	-	L	A; a rising hooked stroke follows the 1, most likely a joining stroke; a small 5 can't be ruled out
+D50	L10	.2	H	A; dotted Z-shaped 2, then 0 2
+D51	L10	4	M	B; no dot, the 4's upright just runs tall
+D52	L11	-	M	A; only two 1s (1 .1) between the 5 and the 4s
+D53	L11	.1	M	A; dotted 1; note the second 4 after it also has a dot (.4)
+D54	L11	6	H	A; 9 3 6 then a flat-topped glyph
+D55	L11	3	M	B; the dot is over the 6, not the 3
+D56	L11	.6	M	B; dot over the 6
+D57	L11	-	M	A; only three glyphs between the 7 and the next 7 (5, a 0/6 with a rising stroke, 5)
+D58	L11	-	M	A; same as D57
+D59	L11	-	M	A; reads 0 2 3 7 3 0 3 2, no second 3
+D60	L11	0	M	B; open 0 whose rising stroke is on the right (not a 6, whose upright is on the left)
+D61	L11	6	H	B; .2 6 .3 0
+D62	L11	.3	H	B; clear dot over the 3
+D63	L12	0	M	B; open c-shaped 0 before the 5
+D64	L12	.1	H	A; clear dot over the 1
+D65	L12	0	L	B; open bowl with a tall rising stroke on the right is one glyph; reads 2 5 0 3 0 4, so the shared 6 after it is not there either
+D66	L12	0	M	B; closed loop with a rising tail (0), not a 6
+D67	L12	0	L	B; same as D65 (open bowl, rising stroke on the right, one glyph); reads 2 5 0 3 0 4
+D68	L12	0	M	B; same as D66
+D69	L12	.2	H	A; .2 4 .1 0 7 0
+D70	L12	4	H	A; no dot over the 4
+D71	L12	5	L	B; after 1 0: a compact flat-topped glyph sitting on the baseline (no 3-style descender) before the 9
+D72	L13	.3	L	B; heavy ink blob standing up from the top of the 3
+D73	L13	0	M	B; open c with a rise, then 3
+D74	L13	-	M	B; true run is 5 6 5 [c] 3 7 3 0 3 6 3 .1 (the shared '6' is an open 0); A read the s3/s4 overlap twice
+D75	L13	-	M	B; overlap read twice by A, see D74
+D76	L13	-	M	B; overlap read twice by A, see D74
+D77	L13	7	H	A; 5 0 2 5 7 0
+D78	L13	-	H	A; 9 5 2 3 with nothing between the 5 and the 2
+D79	L13	.1	M	B; dot just above and right of the second 1, left of the 6
+D80	L13	.9	M	A; the dot sits over the first 9 of the pair
+D81	L13	2	L	B; a small baseline z-shaped 2 seems to come before the 3 with the descender (6 0 2 3 0 5)
+D82	L14	0	M	B; open c with a rising stroke, not a 6
+D83	L14	0	M	B; open c with a tall rising stroke on the right
+D84	L14	.1	H	A; clear dot over the 1
+D85	L14	0	M	B; small open c after the 6
+D86	L14	6	L	A; blotted or corrected glyph with a loop rising above x-height, most like 6
+D87	L14	0	M	B; open c with a rise, then 5
+D88	L14	6	M	A; ink fills the bowl but there is no dot above
+D89	L14	0	M	B; small open angle-bracket-shaped 0
+D90	L14	-	L	other: nothing between the open 0 and the 3, whose top starts with an arched lead-in (A 6 7 / B 0 5 both over-read it)
+D91	L14	0	M	B; open 0 with a rise, then 3
+D92	L14	0	M	B; small open c after the 6
+D93	L14	0	L	B; open c, then a short rising joining stroke into the 3
+D94	L14	-	L	other: the stroke after the open 0 is a joining rise into the 3, not a separate 6 or 5
+D95	L14	3	M	A; flat-topped 3 with a descender, same as the 3 after it (heavy ink)
+D96	L14	2	M	A; no dot over the 2
+D97	L14	.1	H	A; clear dot over the 1
+D98	L14	.9	M	A; dot over the first 9 of the pair
+Z1	L12	R	M	small closed oval, pointed at the top right, where a short tail joins the next digit
+Z2	L09	R	M	closed teardrop loop, pointed at the top right, with a joining stroke rising into the following 5
+Z3	L07	R	M	closed oval with a short hook rising from its top right
+Z4	L07	D	M	open c shape (no right side), with a separate small flick above at the top right; not a closed loop
+Z5	L12	R	M	closed upright oval, joined from its top right into the 2
+Z6	L08	R	M	closed oval whose right side rises in a long tail to the top right and into the next digit
+Z7	L06	R	M	small closed loop with a short tail at the top right
+Z8	L06	R	M	closed slanted oval, joined from the 5 at the upper left, slight tail at the upper right
