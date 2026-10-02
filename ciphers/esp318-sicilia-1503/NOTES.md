@@ -186,3 +186,99 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 17-21 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (WEBCHECK-esp318-sicilia-1503, 2 Oct 2026)
+
+Required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads", CHECK-SOLVED-WEB, 28 Sept 2026),
+run 2 Oct 2026 01:05-01:10 UTC (clock read) per `.claude/briefs/runs/2026-10-01-account4-webcheck.md`. Target: BnF
+Espagnol 318 item 94, ff.120r-121v, the viceroy of Sicily to Ferdinand, Messina, 27 April 1503. Every query and every
+hit opened is listed; "no hit" means no result about this letter, not an empty result page.
+
+**(a) Plain web searches (built-in search tool; it ignores `site:` operators, so the blog site-searches in (b) were run
+through each blog's own search page instead).**
+
+| # | Query | Result for this letter |
+|---|---|---|
+| 1 | `viceroy of Sicily Ferdinand Messina 27 April 1503 cipher letter` (sender + recipient + date) | no hit: Wikipedia viceroy lists (Lanuza, Cardona, Moncada), an academia.edu paper on Juan de Vega 1551-52, CSP Spain vol. 6 index -- none about this letter |
+| 2 | `"Espagnol 318" cifra OR chiffre OR cipher Sicile 1503` (shelfmark + cipher word) | one relevant hit, opened: the BnF finding aid itself, `archivesetmanuscrits.bnf.fr/ark:/12148/cc349255/cd0e103`, which lists item 94 as "Lettre en chiffre du vice-roi de Sicile au Roi Catholique", Messine, 27 avril 1503 -- a catalogue entry, no decipherment claimed; the rest are French-Spanish dictionary pages for "chiffre" |
+| 3 | `"vice-roi de Sicile" "Roi Catholique" chiffre Messine 1503` (French, the finding aid's language) | no hit: viceroy lists and general Sicily pages |
+| 4 | `"Viceroy of Sicily to Ferdinand" 1503 undeciphered OR deciphered OR solved` (Tomokiyo's own wording of the item) | no hit: viceroy lists only |
+| 5 | `"Lettre en chiffre du vice-roi de Sicile au Roi Catholique"` (the folder's own descriptive title, quoted) | the same BnF finding aid as query 2; nothing else about this letter |
+| 6 | `"virrey de Sicilia" 1503 cifra Mesina "Rey Católico" carta cifrada Lanuza` (Spanish) | no hit: viceroyalty institutional papers (1665-75), Lanuza's Wikipedia page, a Palermo imprint bibliography |
+| 7 | `"Fernando de Andrada" Benavides Carvajal 1503 Mesina OR Messina galea nao virrey Sicilia` (names from the letter's own clear-text passages, as quoted in Bourdeau's `targets/esp318/NOTES.md`: "donde llegó don Fernando de Andrada y Benavides y Carvajal") | no hit about this letter; Prescott's *Ferdinand and Isabella* (public-library.uk ebook) names Andrada, Cardona and Benavides at Seminara, 21 April 1503 -- historical context for the clear text, not a reading of the cipher |
+| 8 | `"passar esta nao" OR "passamos en anocheçiendo" OR "en lo de la hazienda luego" 1503` (the most distinctive clear-text phrases, quoted exactly; the folder holds no transcription or decoded text of its own, so the clear-text excerpts in Bourdeau's notes are the only quotable phrases) | no hit: RAE dictionary entry for "anochecer", Mexican haciendas, unrelated modern pages |
+| 9 | `"Espagnol 318" cipher solves Claude OR GPT OR "AI" 1503 Sicily` (model-solve announcements, check-solved.md's "solves" + "Claude"/"GPT" query) | no hit for this letter: the Sept 2026 "Claude solves a 370-year-old cipher" coverage (Schneier, 36kr, kucoin, blockchain.news) concerns a 1650s item, not Espagnol 318; Bourdeau's index page `dbourdeau.github.io/cyphersolver/index.html` and a fork `github.com/setsunaatto/cyphersolver` surfaced -- both opened under (c) |
+| 10 | `cyphersolver esp318 "no. 94" OR "item 94" viceroy Sicily transcription decipherment` | no hit: the "item 94" matches are Bourdeau PR #9 (fr. 3977 no. 96, Nevers 1589) and the arya1515 fork already logged above; neither concerns this letter |
+| 11 | `"Gran Capitán" cifra 1503 Sicilia virrey carta cifrada descifrada Mesina Fernando el Católico Bergenroth` (the suspected key family) | one plausible hit, opened under (c): *El Debate*, "El Gran Capitán y Fernando el Católico, cartas secretas descifradas ahora" (15 Feb 2018, José Luis Orella) on the CNI's 2018 decipherment of four 1502-03 Ferdinand/Gran Capitán letters -- no mention of Sicily, Messina, a viceroy, the BnF or Espagnol 318; the letters are the AGS/BNE Gran Capitán correspondence, not this one |
+
+**(b) Site searches of the three blogs, each through the blog's own search page (one request at a time, >= 1.5 s
+apart; no 403/429/challenge on any host).**
+
+- **Cipherbrain** (`scienceblogs.de/klausis-krypto-kolumne/?s=...`): `Espagnol 318` -> "Wir konnten leider keine
+  Beiträge finden, die zu Ihrer Anfrage passen" (no posts); `Sizilien 1503` -> same, no posts; `Lasry Spanish` -> no post
+  matching; the results shown (WWII ciphertexts, Voynich) mention none of Espagnol 318, Sicily, Messina, 1503, Ferdinand
+  of Aragon or the Gran Capitán. Query 6 under (a) (`site:scienceblogs.de ... Sizilien 1503 Vizekönig Ferdinand Espagnol
+  318`) returned only Cipherbrain's Ferdinand III (1630s) posts, a different Ferdinand and century. No Cipherbrain post
+  to open, so no comment thread to read.
+- **Cryptiana blog** (`cryptiana.blogspot.com/search?q=...`): `Espagnol 318`, `Sicily` and `1503` each return exactly one
+  post, "Unsolved Spanish Ciphers in French Archives (1497-1504)", 21 Jan 2019,
+  `cryptiana.blogspot.com/2019/01/unsolved-spanish-ciphers-in-french.html`, whose line about this item reads "f.120-121,
+  no.94 Viceroy of Sicily to Ferdinand, 27 April 1503" under "BnF Espagnol 318 (Gallica) includes undeciphered letters."
+  Opened live on 2 Oct 2026: the comment section reads "No comments:"; its Atom comment feed
+  (`cryptiana.blogspot.com/feeds/6150222904528966435/comments/default`) carries `openSearch:totalResults` = 0. The
+  on-disk snapshot `sources/cryptiana/blog/2019_01_unsolved-spanish-ciphers-in-french.html` (committed 2 Oct 2026
+  00:22 UTC) shows the same "No comments:". The neighbouring post "Two more unsolved Spanish ciphers" (15 Jan 2019,
+  `cryptiana.blogspot.com/2019/01/two-more-unsolved-spanish-ciphers.html`) was opened too: it does not mention
+  Espagnol 318, Sicily, Messina, 1503 or no.94, and its comment section also reads "No comments:" (live and on disk).
+  Tomokiyo's own pages, grepped on disk first (`sources/cryptiana/`, zero requests): `web/spanish.htm` line 963,
+  `web/unsolved.htm` line 120 and `web/unsolved-2026-09-24.htm` line 127 all list "f.120-121, no.94 Viceroy of Sicily to
+  Ferdinand, 27 April 1503" under "undeciphered"/"unknown ciphers"; `web/GL.htm` line 186 gives Lasry's 2022
+  "approximate" solution for no.95 only. Live re-reads on 2 Oct 2026: `cryptiana.web.fc2.com/code/unsolved.htm` (page
+  dated 27 September 2026) still lists no.94 among the three "unknown ciphers" of Espagnol 318, with the Lasry note
+  attached to no.95 only; `code/spanish.htm` (dated 29 May 2022) lists no.94 as "undeciphered"; `code/GL.htm` (last
+  modified 15 April 2026) mentions only no.95 and claims no solution for the 27 April 1503 letter.
+- **Cipher Mysteries** (`ciphermysteries.com/?s=...`): `Espagnol 318` -> "Nothing Found. Apologies, but no results were
+  found for the requested archive."; `viceroy Sicily 1503` -> same; `Lasry Catholic Monarchs` -> same. No post to open.
+  The on-disk snapshots `sources/ciphermysteries/`, `sources/schmeh/`, `sources/vals-ai/`, `sources/openai/` and
+  `sources/lasry/` were grepped for "Espagnol 318", "viceroy of Sicily", "vice-roi de Sicile", "virrey de Sicilia" and
+  "Messina ... 1503": no file matches.
+
+**(c) Every plausible hit opened, with its comment thread where one exists.**
+
+1. `dbourdeau.github.io/cyphersolver/esp318.html` (page "updated 24 September 2026"): no. 94 "The viceroy of Sicily to
+   Ferdinand, Messina, 27 Apr 1503; Spanish, clear and cipher mixed, four pages", "Both are not deciphered" (nos. 93 and
+   94), "No decipherment survives anywhere in the volume for nos. 93, 94 or 95." No comment thread on the page.
+2. `raw.githubusercontent.com/dbourdeau/cyphersolver/main/targets/esp318/NOTES.md` (live, HEAD of 2 Oct 2026): table row
+   "| 94 | 120-121v | 452-455 | The viceroy of Sicily to Ferdinand, Messina, 27 Apr 1503. Spanish, clear and cipher mixed,
+   four pages | unidentified; RRCC architecture, code initials g/l/m/n/p/r/v/z | **open** |"; "Nos. 93 and 94 remain
+   unread, but they are no longer 'unidentified ciphers': both are standard ciphers of Ferdinand's secretariat"; the
+   remaining-gaps line "No. 94 (ff. 120r-121v), whole letter - blocker: not-attempted; never transcribed; Bergenroth's
+   Gran-cifra list not tested against it". The file quotes clear-text passages of the letter ("para poder passar esta nao
+   la galea de allá ... donde llegó don Fernando de Andrada y Benavides y Carvajal y bolvióse de los aquí ...", "commo esto
+   passamos en anocheçiendo", "En lo de la hazienda luego ...") and the f.121v endorsement "Del virrey de Siçilia en çifra"
+   -- these are the letter's own clear portions, not a decipherment of its cipher. Used as the quoted phrases of (a) 7-8.
+3. `github.com/dbourdeau/cyphersolver/pulls?q=is:pr+esp318` -> "0 results"; `.../issues?q=is:issue+esp318` -> "0
+   results". No PR or issue thread discusses this volume.
+4. `github.com/setsunaatto/cyphersolver` ("forked from dbourdeau/cyphersolver", 1,996 commits): its
+   `targets/esp318/NOTES.md` carries the same no. 94 row ("open"), the same "not-attempted; never transcribed" blocker and
+   the same clear-text excerpts as the upstream file -- a fork, not an independent reading. `github.com/arya1515/
+   cyphersolver` was already logged on 26 Sept 2026 above as an older copy of the same folder.
+5. *El Debate* article of 15 Feb 2018 (query 11): the CNI's four deciphered 1502-03 letters are between Ferdinand and the
+   Gran Capitán; the article names no archive and contains no sentence about Sicily, Messina, a viceroy, the BnF or
+   Espagnol 318. Not this letter.
+6. Not opened, with reason: the Schneier/36kr/kucoin/blockchain.news items of query 9 report a 1650s solve and do not
+   name Espagnol 318, Sicily or 1503 in title or snippet; the Wikipedia viceroy lists and dictionary pages of queries
+   1-6 are not about any cipher.
+
+**Result.** No decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, never a
+novelty verdict, rule 10). The status word on line 1 stays `open`. Hosts (this job): scienceblogs.de 3 requests,
+ciphermysteries.com 3, cryptiana.blogspot.com 6 (3 searches, 2 posts, 1 comment feed), cryptiana.web.fc2.com 3,
+github.com 3 page views + 1 raw file, eldebate.com 1, dbourdeau.github.io 1; all answered HTTP 200, none rate-limited
+or challenged; 11 queries through the built-in web search tool (not a direct host fetch); `sources/` grepped on disk
+first with zero requests.
+
+```
+$ python3 tools/intake_gate_check.py esp318-sicilia-1503
+esp318-sicilia-1503: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+(exit 0)
+```
