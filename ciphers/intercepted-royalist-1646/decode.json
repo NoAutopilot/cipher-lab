@@ -1,0 +1,61 @@
+{
+ "defaults": {
+  "format": "tsv",
+  "key": "key.tsv",
+  "style": "spaced",
+  "include_clear": true,
+  "uncertain_conf": [
+   "M"
+  ],
+  "unknown_values": [
+   "",
+   "?"
+  ],
+  "unkeyed_value": "?",
+  "unkeyed_grade": "U",
+  "header": [
+   "# {name}: key129 (Aymeloglu) applied by tools/decode_key.py, LIKELY-9 2 Oct 2026. Grades {grades_sorted} of {total} cipher tokens (U = not in the key).",
+   "# Regenerate: python3 tools/decode_key.py ciphers/intercepted-royalist-1646 ; check: --check"
+  ],
+  "token_columns": [
+   [
+    "line",
+    "line"
+   ],
+   [
+    "pos",
+    "pos"
+   ],
+   [
+    "sign",
+    "sign"
+   ],
+   [
+    "conf",
+    "conf"
+   ],
+   [
+    "value",
+    "value"
+   ],
+   [
+    "grade",
+    "grade"
+   ]
+  ]
+ },
+ "jobs": [
+  {
+   "name": "f10 (BL Add MS 72438 f.10, 13 May 1646, DECODE 8624)",
+   "ciphertext": "f10_ct.tsv",
+   "reading": "reading_f10.txt",
+   "tokens": "reading_f10_tokens.tsv"
+  },
+  {
+   "name": "f9 (BL Add MS 72438 f.9, 21 May 1646, DECODE 8623)",
+   "ciphertext": "f9_ct.tsv",
+   "reading": "reading_f9.txt",
+   "tokens": "reading_f9_tokens.tsv"
+  }
+ ]
+}

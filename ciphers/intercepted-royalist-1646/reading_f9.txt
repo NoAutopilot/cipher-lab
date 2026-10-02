@@ -1,0 +1,8 @@
+# f9_ct.tsv: key129 (Aymeloglu) applied by tools/decode_key.py, LIKELY-9 2 Oct 2026. Grades M 12, U 139 of 151 cipher tokens (U = not in the key).
+# Regenerate: python3 tools/decode_key.py ciphers/intercepted-royalist-1646 ; check: --check
+1	MY_LORD_YOUR_LOP_BEING_NOT_A_LITTLE_BEHOLDING_TO [309] FOR_YE [100] [44] [66] [24] [21] [107] [105] [155] [212] WELL [32] [66] [25] [155] [151] [12] [38] [35] [26]
+2	d [38] [122] YE [50] [21] [9] [52] [46] [26] [58] [113] [138] w [6] [24] [48] [70] [58] [109] i [12] [48] [15] [212] [39] MESSENGER [50] [333] [3] [207] COMUNICATE [226]
+3	[123] [49] [25] [52] [46] [25] [155] [212] [170] s [58] [4] [50] [59] [65] [25] i CONDICON [155] [12] [32] [33] [14] b [39] [25] [51] [6] [9] [59] [55] [225] [155] [223] [218] [66] [321]
+4	[10] [46] NO [38] [62] [59] [4] [331] i [58] [55] [65] [64] PARTICULARLY [64] [225] [71] [5] [6] [118] [54] [226] OPINION_OF_THE [343] [4] [54] [15] [8] [212] b [138] [23]
+5	[50] [59] i [116] RELACON_TO [212] [68] s [25] [32] [118] [155] [245] [334] [55] [15] n YOU_DISPOSE_OF [226] [50] [24] [48] [32] i WHAT_IS_FIT_FOR [139]
+6	TO_DOE_WITH [145] [50] [24] [48] [32] INFORMD YOR_LOPS_HUMBLE_SERVANT [36] [54] [3] [222] [6] [9] [44] [34] [3] 21_MAY_1646

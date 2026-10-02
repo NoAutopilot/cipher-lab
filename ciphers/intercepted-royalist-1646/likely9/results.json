@@ -1,0 +1,390 @@
+{
+ "key_codes": 65,
+ "corpora": {
+  "en16_repo": [
+   "thurloe-printed__reading_P10.txt",
+   "thurloe-printed__reading_P11-13.txt",
+   "thurloe-printed__reading_P14.txt",
+   "thurloe-printed__reading_P15.txt",
+   "thurloe-printed__reading_P3.txt",
+   "thurloe-printed__reading_P4.txt",
+   "thurloe-printed__reading_P8.txt",
+   "thurloe-printed__reading_P9.txt",
+   "thurloe-printed__reading_fauconberg_P16.txt",
+   "thurloe-printed__reading_fauconberg_P17.txt",
+   "thurloe-printed__reading_fauconberg_P18.txt",
+   "thurloe-printed__reading_fauconberg_P19.txt",
+   "thurloe-printed__reading_fauconberg_P20.txt",
+   "thurloe-printed__reading_fauconberg_P21.txt",
+   "thurloe-printed__reading_fauconberg_P22.txt",
+   "thurloe-printed__reading_fauconberg_P23.txt",
+   "thurloe-printed__reading_fauconberg_P24.txt"
+  ],
+  "en": [
+   "pg1661_holmes.txt",
+   "pg2701_mobydick.txt"
+  ]
+ },
+ "jobs": {
+  "f10": {
+   "cipher_tokens": 735,
+   "keyed_tokens": 190,
+   "en16_repo": {
+    "real": {
+     "lm": -1.57561862940614,
+     "cover": 0.5812807881773399,
+     "wbg": -3.867507381202529,
+     "letters": 609,
+     "pairs": 59,
+     "runs": 139
+    },
+    "full": {
+     "lm": {
+      "real": -1.5756,
+      "ctrl_mean": -1.8457,
+      "ctrl_max": -1.7044,
+      "ctrl_sd": 0.1016,
+      "z": 2.66,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -3.8675,
+      "ctrl_mean": -4.184,
+      "ctrl_max": -3.8609,
+      "ctrl_sd": 0.1652,
+      "z": 1.92,
+      "rank": "2/21"
+     },
+     "cover": {
+      "real": 0.5813,
+      "ctrl_mean": 0.4616,
+      "ctrl_max": 0.5752,
+      "ctrl_sd": 0.0481,
+      "z": 2.49,
+      "rank": "1/21"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": -1.5756,
+      "ctrl_mean": -1.8599,
+      "ctrl_max": -1.6479,
+      "ctrl_sd": 0.0815,
+      "z": 3.49,
+      "rank": "1/201"
+     },
+     "wbg": {
+      "real": -3.8675,
+      "ctrl_mean": -4.2385,
+      "ctrl_max": -3.844,
+      "ctrl_sd": 0.157,
+      "z": 2.36,
+      "rank": "3/201"
+     },
+     "cover": {
+      "real": 0.5813,
+      "ctrl_mean": 0.4703,
+      "ctrl_max": 0.5987,
+      "ctrl_sd": 0.0433,
+      "z": 2.56,
+      "rank": "2/201"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": -1.5756,
+      "ctrl_mean": -1.9056,
+      "ctrl_max": -1.7403,
+      "ctrl_sd": 0.0838,
+      "z": 3.94,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -3.8675,
+      "ctrl_mean": -4.336,
+      "ctrl_max": -4.0885,
+      "ctrl_sd": 0.1264,
+      "z": 3.71,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.5813,
+      "ctrl_mean": 0.4532,
+      "ctrl_max": 0.5147,
+      "ctrl_sd": 0.0262,
+      "z": 4.89,
+      "rank": "1/21"
+     }
+    }
+   },
+   "en": {
+    "real": {
+     "lm": -0.8372319870222958,
+     "cover": 0.7931034482758621,
+     "wbg": -3.0613281521888744,
+     "letters": 609,
+     "pairs": 59,
+     "runs": 139
+    },
+    "full": {
+     "lm": {
+      "real": -0.8372,
+      "ctrl_mean": -1.2584,
+      "ctrl_max": -1.1341,
+      "ctrl_sd": 0.0811,
+      "z": 5.19,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -3.0613,
+      "ctrl_mean": -4.0946,
+      "ctrl_max": -3.6685,
+      "ctrl_sd": 0.2159,
+      "z": 4.79,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.7931,
+      "ctrl_mean": 0.7713,
+      "ctrl_max": 0.8592,
+      "ctrl_sd": 0.0477,
+      "z": 0.46,
+      "rank": "8/21"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": -0.8372,
+      "ctrl_mean": -1.2599,
+      "ctrl_max": -1.0792,
+      "ctrl_sd": 0.0759,
+      "z": 5.57,
+      "rank": "1/201"
+     },
+     "wbg": {
+      "real": -3.0613,
+      "ctrl_mean": -4.1873,
+      "ctrl_max": -3.6325,
+      "ctrl_sd": 0.2207,
+      "z": 5.1,
+      "rank": "1/201"
+     },
+     "cover": {
+      "real": 0.7931,
+      "ctrl_mean": 0.7788,
+      "ctrl_max": 0.8957,
+      "ctrl_sd": 0.043,
+      "z": 0.33,
+      "rank": "77/201"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": -0.8372,
+      "ctrl_mean": -1.276,
+      "ctrl_max": -1.1523,
+      "ctrl_sd": 0.0566,
+      "z": 7.75,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -3.0613,
+      "ctrl_mean": -4.1788,
+      "ctrl_max": -3.8709,
+      "ctrl_sd": 0.1922,
+      "z": 5.81,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.7931,
+      "ctrl_mean": 0.7396,
+      "ctrl_max": 0.8046,
+      "ctrl_sd": 0.0318,
+      "z": 1.68,
+      "rank": "2/21"
+     }
+    }
+   }
+  },
+  "f9": {
+   "cipher_tokens": 151,
+   "keyed_tokens": 12,
+   "en16_repo": {
+    "real": {
+     "lm": -1.7044813808795247,
+     "cover": 0.6363636363636364,
+     "wbg": -5.099933839778284,
+     "letters": 44,
+     "pairs": 3,
+     "runs": 12
+    },
+    "full": {
+     "lm": {
+      "real": -1.7045,
+      "ctrl_mean": -1.8064,
+      "ctrl_max": -1.5748,
+      "ctrl_sd": 0.1406,
+      "z": 0.72,
+      "rank": "6/21"
+     },
+     "wbg": {
+      "real": -5.0999,
+      "ctrl_mean": -4.2371,
+      "ctrl_max": -4.1084,
+      "ctrl_sd": 0.1798,
+      "z": -4.8,
+      "rank": "21/21"
+     },
+     "cover": {
+      "real": 0.6364,
+      "ctrl_mean": 0.5327,
+      "ctrl_max": 0.746,
+      "ctrl_sd": 0.0928,
+      "z": 1.12,
+      "rank": "3/21"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": -1.7045,
+      "ctrl_mean": -1.783,
+      "ctrl_max": -1.324,
+      "ctrl_sd": 0.1698,
+      "z": 0.46,
+      "rank": "61/201"
+     },
+     "wbg": {
+      "real": -5.0999,
+      "ctrl_mean": -4.3191,
+      "ctrl_max": -3.6759,
+      "ctrl_sd": 0.2983,
+      "z": -2.62,
+      "rank": "197/201"
+     },
+     "cover": {
+      "real": 0.6364,
+      "ctrl_mean": 0.5591,
+      "ctrl_max": 0.7922,
+      "ctrl_sd": 0.1032,
+      "z": 0.75,
+      "rank": "51/201"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": -1.7045,
+      "ctrl_mean": -1.7457,
+      "ctrl_max": -1.6656,
+      "ctrl_sd": 0.0664,
+      "z": 0.62,
+      "rank": "11/21"
+     },
+     "wbg": {
+      "real": -5.0999,
+      "ctrl_mean": -4.9661,
+      "ctrl_max": -4.6815,
+      "ctrl_sd": 0.1887,
+      "z": -0.71,
+      "rank": "16/21"
+     },
+     "cover": {
+      "real": 0.6364,
+      "ctrl_mean": 0.5875,
+      "ctrl_max": 0.6818,
+      "ctrl_sd": 0.0563,
+      "z": 0.87,
+      "rank": "8/21"
+     }
+    }
+   },
+   "en": {
+    "real": {
+     "lm": -0.8647524862309102,
+     "cover": 0.6590909090909091,
+     "wbg": -4.008522462800128,
+     "letters": 44,
+     "pairs": 3,
+     "runs": 12
+    },
+    "full": {
+     "lm": {
+      "real": -0.8648,
+      "ctrl_mean": -1.1151,
+      "ctrl_max": -0.8932,
+      "ctrl_sd": 0.167,
+      "z": 1.5,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -4.0085,
+      "ctrl_mean": -3.7592,
+      "ctrl_max": -3.6679,
+      "ctrl_sd": 0.0768,
+      "z": -3.24,
+      "rank": "21/21"
+     },
+     "cover": {
+      "real": 0.6591,
+      "ctrl_mean": 0.7713,
+      "ctrl_max": 0.9109,
+      "ctrl_sd": 0.0895,
+      "z": -1.25,
+      "rank": "18/21"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": -0.8648,
+      "ctrl_mean": -1.0938,
+      "ctrl_max": -0.7532,
+      "ctrl_sd": 0.1716,
+      "z": 1.33,
+      "rank": "22/201"
+     },
+     "wbg": {
+      "real": -4.0085,
+      "ctrl_mean": -3.7668,
+      "ctrl_max": -3.4301,
+      "ctrl_sd": 0.105,
+      "z": -2.3,
+      "rank": "196/201"
+     },
+     "cover": {
+      "real": 0.6591,
+      "ctrl_mean": 0.7614,
+      "ctrl_max": 0.9116,
+      "ctrl_sd": 0.0968,
+      "z": -1.06,
+      "rank": "170/201"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": -0.8648,
+      "ctrl_mean": -0.8708,
+      "ctrl_max": -0.8544,
+      "ctrl_sd": 0.0151,
+      "z": 0.4,
+      "rank": "10/21"
+     },
+     "wbg": {
+      "real": -4.0085,
+      "ctrl_mean": -3.8405,
+      "ctrl_max": -3.6996,
+      "ctrl_sd": 0.147,
+      "z": -1.14,
+      "rank": "19/21"
+     },
+     "cover": {
+      "real": 0.6591,
+      "ctrl_mean": 0.6102,
+      "ctrl_max": 0.7045,
+      "ctrl_sd": 0.0563,
+      "z": 0.87,
+      "rank": "8/21"
+     }
+    }
+   }
+  }
+ }
+}

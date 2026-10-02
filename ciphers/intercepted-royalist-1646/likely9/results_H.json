@@ -1,0 +1,390 @@
+{
+ "key_codes": 45,
+ "corpora": {
+  "en16_repo": [
+   "thurloe-printed__reading_P10.txt",
+   "thurloe-printed__reading_P11-13.txt",
+   "thurloe-printed__reading_P14.txt",
+   "thurloe-printed__reading_P15.txt",
+   "thurloe-printed__reading_P3.txt",
+   "thurloe-printed__reading_P4.txt",
+   "thurloe-printed__reading_P8.txt",
+   "thurloe-printed__reading_P9.txt",
+   "thurloe-printed__reading_fauconberg_P16.txt",
+   "thurloe-printed__reading_fauconberg_P17.txt",
+   "thurloe-printed__reading_fauconberg_P18.txt",
+   "thurloe-printed__reading_fauconberg_P19.txt",
+   "thurloe-printed__reading_fauconberg_P20.txt",
+   "thurloe-printed__reading_fauconberg_P21.txt",
+   "thurloe-printed__reading_fauconberg_P22.txt",
+   "thurloe-printed__reading_fauconberg_P23.txt",
+   "thurloe-printed__reading_fauconberg_P24.txt"
+  ],
+  "en": [
+   "pg1661_holmes.txt",
+   "pg2701_mobydick.txt"
+  ]
+ },
+ "jobs": {
+  "f10": {
+   "cipher_tokens": 735,
+   "keyed_tokens": 69,
+   "en16_repo": {
+    "real": {
+     "lm": -1.534343046256671,
+     "cover": 0.7254237288135593,
+     "wbg": -4.030608292481045,
+     "letters": 295,
+     "pairs": 21,
+     "runs": 63
+    },
+    "full": {
+     "lm": {
+      "real": -1.5343,
+      "ctrl_mean": -1.8549,
+      "ctrl_max": -1.6834,
+      "ctrl_sd": 0.1043,
+      "z": 3.07,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -4.0306,
+      "ctrl_mean": -4.5146,
+      "ctrl_max": -4.1886,
+      "ctrl_sd": 0.2256,
+      "z": 2.15,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.7254,
+      "ctrl_mean": 0.4595,
+      "ctrl_max": 0.5772,
+      "ctrl_sd": 0.0624,
+      "z": 4.26,
+      "rank": "1/21"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": -1.5343,
+      "ctrl_mean": -1.8663,
+      "ctrl_max": -1.4981,
+      "ctrl_sd": 0.1227,
+      "z": 2.71,
+      "rank": "2/201"
+     },
+     "wbg": {
+      "real": -4.0306,
+      "ctrl_mean": -4.5542,
+      "ctrl_max": -4.0247,
+      "ctrl_sd": 0.2029,
+      "z": 2.58,
+      "rank": "2/201"
+     },
+     "cover": {
+      "real": 0.7254,
+      "ctrl_mean": 0.4561,
+      "ctrl_max": 0.6231,
+      "ctrl_sd": 0.0617,
+      "z": 4.37,
+      "rank": "1/201"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": -1.5343,
+      "ctrl_mean": -1.8453,
+      "ctrl_max": -1.5291,
+      "ctrl_sd": 0.1393,
+      "z": 2.23,
+      "rank": "2/21"
+     },
+     "wbg": {
+      "real": -4.0306,
+      "ctrl_mean": -4.6674,
+      "ctrl_max": -4.2588,
+      "ctrl_sd": 0.1754,
+      "z": 3.63,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.7254,
+      "ctrl_mean": 0.4439,
+      "ctrl_max": 0.5276,
+      "ctrl_sd": 0.0486,
+      "z": 5.79,
+      "rank": "1/21"
+     }
+    }
+   },
+   "en": {
+    "real": {
+     "lm": -0.8845032986171852,
+     "cover": 0.8949152542372881,
+     "wbg": -3.126691149915228,
+     "letters": 295,
+     "pairs": 21,
+     "runs": 63
+    },
+    "full": {
+     "lm": {
+      "real": -0.8845,
+      "ctrl_mean": -1.3071,
+      "ctrl_max": -1.1015,
+      "ctrl_sd": 0.1318,
+      "z": 3.21,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -3.1267,
+      "ctrl_mean": -4.0185,
+      "ctrl_max": -3.4357,
+      "ctrl_sd": 0.3599,
+      "z": 2.48,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.8949,
+      "ctrl_mean": 0.7545,
+      "ctrl_max": 0.8623,
+      "ctrl_sd": 0.0658,
+      "z": 2.13,
+      "rank": "1/21"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": -0.8845,
+      "ctrl_mean": -1.304,
+      "ctrl_max": -0.991,
+      "ctrl_sd": 0.1146,
+      "z": 3.66,
+      "rank": "1/201"
+     },
+     "wbg": {
+      "real": -3.1267,
+      "ctrl_mean": -4.0767,
+      "ctrl_max": -3.2682,
+      "ctrl_sd": 0.3306,
+      "z": 2.87,
+      "rank": "1/201"
+     },
+     "cover": {
+      "real": 0.8949,
+      "ctrl_mean": 0.7704,
+      "ctrl_max": 0.9229,
+      "ctrl_sd": 0.0659,
+      "z": 1.89,
+      "rank": "3/201"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": -0.8845,
+      "ctrl_mean": -1.3366,
+      "ctrl_max": -1.137,
+      "ctrl_sd": 0.112,
+      "z": 4.04,
+      "rank": "1/21"
+     },
+     "wbg": {
+      "real": -3.1267,
+      "ctrl_mean": -4.2733,
+      "ctrl_max": -3.516,
+      "ctrl_sd": 0.3251,
+      "z": 3.53,
+      "rank": "1/21"
+     },
+     "cover": {
+      "real": 0.8949,
+      "ctrl_mean": 0.7328,
+      "ctrl_max": 0.8068,
+      "ctrl_sd": 0.06,
+      "z": 2.7,
+      "rank": "1/21"
+     }
+    }
+   }
+  },
+  "f9": {
+   "cipher_tokens": 151,
+   "keyed_tokens": 0,
+   "en16_repo": {
+    "real": {
+     "lm": NaN,
+     "cover": NaN,
+     "wbg": NaN,
+     "letters": 0,
+     "pairs": 0,
+     "runs": 0
+    },
+    "full": {
+     "lm": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "wbg": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "cover": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "wbg": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "cover": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "wbg": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "cover": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     }
+    }
+   },
+   "en": {
+    "real": {
+     "lm": NaN,
+     "cover": NaN,
+     "wbg": NaN,
+     "letters": 0,
+     "pairs": 0,
+     "runs": 0
+    },
+    "full": {
+     "lm": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "wbg": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "cover": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     }
+    },
+    "full200": {
+     "lm": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "wbg": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "cover": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     }
+    },
+    "strat": {
+     "lm": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "wbg": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     },
+     "cover": {
+      "real": null,
+      "ctrl_mean": null,
+      "ctrl_max": null,
+      "ctrl_sd": null,
+      "z": null,
+      "rank": "n/a (no keyed pairs or runs)"
+     }
+    }
+   }
+  }
+ }
+}

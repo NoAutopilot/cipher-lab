@@ -1,0 +1,54 @@
+{
+ "slug": "intercepted-royalist-1646",
+ "name": "Intercepted royalist letters, BL Add MS 72438 f.10 (13 May 1646, to Charles I, DECODE 8624) and f.9 (21 May 1646, 'My Lord', DECODE 8623)",
+ "date": "1646-05-13",
+ "language_candidates": [
+  "en"
+ ],
+ "ciphertext": "ciphers/intercepted-royalist-1646/f10_ct.tsv",
+ "ciphertext_source": "A. Aymeloglu's transcription from the DECODE images (github.com/aaymeloglu/unsolved-ciphers d2800bb2, royalist-1646/f10_ct.txt, f9_ct.txt; quoted with attribution, 2 Oct 2026). No image on disk: DECODE full-size images are account-wide blocked (NOTES.md 24-25 Sept 2026), the BL viewer is offline. f10: 735 cipher tokens (20 illegible) + 75 clear fragments; f9: 151 + 18.",
+ "alphabet": "numerals 0-697 on f10 (letters 0-99 with homophones, words ~100-430, names/places 431-580, unexplained 581-697); f9 numerals 3-343, a different smaller key (Aymeloglu: 226 = London by the f.4 key)",
+ "constraints": {
+  "key": "Digby-cabinet key no. 129 (BL Add MS 72438 f.77, names 559-580 only survive) + Nicholas's interlinear decipherments of the King's letters of 24 June / 16 Aug 1646 in Evelyn (1857) iv 178-179: 65 values in key.tsv (H 45, M 18, I 2), Aymeloglu's reconstruction, image-unchecked by us.",
+  "known_answer": "none on disk: Evelyn iv 178-179 (the key's known-plaintext witness) was not fetched in LIKELY-9 (no network in that brief); the f.10 clear fragments are the only read text.",
+  "prior_negative": "Aymeloglu's solve.py anneal of the 218 letter tokens: vowel soup; his matched control reads 0.07-0.12, so uninformative (his README)."
+ },
+ "cheap_tests": [
+  "key129 applied to f10 and f9 (tools/decode_key.py) vs 20 value-shuffled copies of the key, lm / word-bigram / cover on the keyed runs (likely9/run.py)",
+  "next: Evelyn iv 178-179 page scans as the known answer for the 45 H values (archive.org diarycorresponde41evel leaves 186-187), then the rest of the 0-99 letter homophones by the 'd i r e c 370' / '596 d' / '585 s' suffix runs"
+ ],
+ "judge": {
+  "corpora": [
+   "tools/data/en16_repo/thurloe-printed__reading_P3.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P4.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P8.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P9.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P10.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P11-13.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P14.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_P15.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P16.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P17.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P18.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P19.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P20.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P21.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P22.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P23.txt",
+   "tools/data/en16_repo/thurloe-printed__reading_fauconberg_P24.txt"
+  ],
+  "min_word_cover": 0.5,
+  "note": "en16_repo (1650s Thurloe state letters, this repository's own readings) is register-nearer than LANG_CORPORA['en'] (two 19th-c. novels, unknown reliability: tools/data/en/README.md); neither has a fold check at this N. 2 Oct 2026, LIKELY-9: the shuffled-target decode of f10 (cipher tokens permuted, clear words in place) scores through this judge beside the candidate -- see cheap_test_done; a PASS on the shuffled target voids the judge as a gate here (ARM-C1)."
+ },
+ "cheap_test_done": [
+  {
+   "date": "2026-10-02",
+   "worker": "LIKELY-9 (account-4)",
+   "test": "key129 (65 values) applied to f10 (735 cipher tokens, 190 keyed) and f9 (151, 12 keyed) vs 20 value-shuffled copies of the key; likely9/run.py",
+   "target": "f10: en16_repo lm -1.576 / wbg -3.868 / cover 0.581; H-only key (45 values, 69 keyed): lm -1.534 / wbg -4.031 / cover 0.725; f9: lm -1.705 / wbg -5.100",
+   "control": "f10: shuffle lm mean -1.846 max -1.704 (rank 1/21, z 2.66; 1/201 at 200 shuffles), wbg rank 2/21 (3/201), cover rank 1/21; H-only: all three rank 1/21 (en: rank 1/21 on all three); f9: lm rank 6/21, wbg rank 21/21 (no signal, 3 pairs)",
+   "verdict": "key129 reads f.10 above its shuffled-key control on the letter 4-gram and word bigram, on both corpora, with or without the context-fixed values; f.9 shows nothing (a different key per Aymeloglu). Judge FAIL on language for the candidate (-1.695 vs real_p05 -0.600, en16_repo; -1.052 vs -0.861, en) and for the shuffled-target decode alike (-1.718; -1.141): the judge does not discriminate at 190/735 keyed, not a PASS. Status partial (69 H tokens read from a period key, image-unchecked). Next: Evelyn iv 178-179 page scans as the known answer for the 45 H values, ~$3.",
+   "cost_usd": "orchestrator to read get_session"
+  }
+ ]
+}

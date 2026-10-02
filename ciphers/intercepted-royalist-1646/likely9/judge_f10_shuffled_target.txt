@@ -1,0 +1,3 @@
+FAIL language: score=-1.718, null_p99=-1.923, real_p05=-0.6, real_median=-0.223, mode=both, N=970
+ok   words: cover=0.582, min=0.5, real_text_median_cover=0.871
+FAIL - intercepted-royalist-1646 (a PASS is a gate for a verifier, not a reading; rule 10)

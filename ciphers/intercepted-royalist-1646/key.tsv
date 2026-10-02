@@ -1,0 +1,76 @@
+# key.tsv -- Digby-cabinet key no. 129 as reconstructed by A. Aymeloglu, github.com/aaymeloglu/unsolved-ciphers commit d2800bb2 (27 Sept 2026),
+# royalist-1646/key129.txt (no licence; values quoted with attribution, grades and source column added here, LIKELY-9 2 Oct 2026, rule 4).
+# Grades are conditional on his transcription (rule 2: no image of f.77 or of Evelyn's page scans on disk in this session):
+#  H  f77   name read from the surviving key page BL Add MS 72438 f.77 (names 559-580)
+#  H  evelyn word read from Nicholas's interlinear decipherment of the King's letters of 24 June / 16 Aug 1646 in the same cipher, Evelyn, Diary and Correspondence (1857) iv 178-179 (page scans)
+#  M  evelyn-align letter homophone from a 'loose interlinear alignment' of Evelyn's spelled words (Aymeloglu's own wording)
+#  M  unsourced value in key129.txt whose source the README does not name (not in its Evelyn list, not a f.77 name)
+#  M  doubtful marked ? by Aymeloglu
+#  I  context fixed from f.10's own context ('your Majesty' after [May it please your Matie])
+# Not included: 370 = 'tion' (a commented guess in key129.txt from 'd i r e c 370' twice, not a fixed value).
+code	value	grade	source
+112	and	H	evelyn
+121	be	H	evelyn
+209	I	H	evelyn
+213	if	H	evelyn
+234	left	H	evelyn
+250	me	H	evelyn
+251	my	H	evelyn
+269	nor	H	evelyn
+270	not	H	evelyn
+280	of	H	evelyn
+281	or	H	evelyn
+341	send	H	evelyn
+360	to	H	evelyn
+409	with	H	evelyn
+412	where	H	evelyn
+413	which	H	evelyn
+422	write	H	evelyn
+429	you	H	evelyn
+503	Earl	H	evelyn
+550	Marquis	H	evelyn
+520	Hertford	H	evelyn
+141	desire	H	evelyn
+449	I.H.	H	evelyn
+559	Marquis-Newcastle	H	f77
+560	Mylord-Digby	H	f77
+561	Monsieur-Oneale	H	f77
+562	Davenant	H	f77
+563	Ambr-Boreel	H	f77
+564	Ambr-Renswoude	H	f77
+565	Ambr-Joachimi	H	f77
+566	Mons-de-Brederode	H	f77
+567	Mons-de-Bredetode	H	f77
+568	Madame-Dona	H	f77
+569	Madme-de-Brederode	H	f77
+570	Madlle-Coignet	H	f77
+571	Madame-Vantelet	H	f77
+572	Mylord	H	f77
+573	Madame	H	f77
+574	Bourgmaster-Comberdon	H	f77
+575	Agent-Blijswijck	H	f77
+576	Prince-Maurice	H	f77
+577	Exeter	H	f77
+578	Scarborough	H	f77
+579	Jersey	H	f77
+580	Guernsey	H	f77
+162	for	M	unsourced
+197	had	M	unsourced
+200	having	M	unsourced
+356	Southampton	M	unsourced
+351	my	M	doubtful
+430	your	I	context
+543	Majesty	I	context
+56	s	M	evelyn-align
+63	i	M	evelyn-align
+17	r	M	evelyn-align
+67	e	M	evelyn-align
+69	e	M	evelyn-align
+78	w	M	evelyn-align
+31	o	M	evelyn-align
+18	r	M	evelyn-align
+81	d	M	evelyn-align
+90	c	M	evelyn-align
+27	b	M	evelyn-align
+40	i	M	evelyn-align
+7	n	M	evelyn-align
