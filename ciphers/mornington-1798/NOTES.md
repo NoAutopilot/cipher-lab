@@ -363,7 +363,7 @@ days before D623/24's date -- the letter body is therefore the closer crib for a
 settlement", and the treaty (as executed 22 Jun, ratified 26 Jun and 13 Jul) supplies the shares, place names and sums. The
 OCR interleaves two text streams on these pages (two columns; body and footnote), so the script writes each stream separately
 with page marks; the OCR is otherwise uncorrected ("Jess" for "less", "Matartic" for "Malartic").
-Amendment draft: REQUEST.md ("Amendment draft, 2 Oct 2026 06:2x UTC") and ASKS.md row 12 (appended, existing wording kept)
+Amendment draft: REQUEST.md ("Amendment draft, 2 Oct 2026 06:1x UTC") and ASKS.md row 12 (appended, existing wording kept)
 now carry the proposal to add D623/23, /10 and /11 to the follow-on order as controls; the order and payment stay with the
 owner, nothing sent, no personal or payment detail written (rule 9). Rule 10: nothing here is a reading or a novelty claim.
 Suggested follow-up, not run (Usage 7): the counterpart-copy search outside D623 (the Remaining gaps' remaining internal
