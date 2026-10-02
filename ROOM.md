@@ -5172,3 +5172,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3621-dinteville-1592 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/dinteville1592/NOTES.md
 2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3789-mariedemedicis-savary-1610 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/breves1610/NOTES.md
 2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3975-vieuville-1587 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/vieuville1587/NOTES.md
+2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3984-sega-1593 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json #20
