@@ -1,4 +1,5 @@
 open
+Ruland, Graf Wolfgang Julius von Hohenlohe-Neuenstein, Archiv für hohenlohische Geschichte 2 (1870) pp. 271-290 read in full by this worker (GF-A2-7, 2 Oct 2026, PDF via a browser past the WLB Anubis check): Melchior, Pape, Köhler, the reports and any cipher absent.
 
 # Reports of Lic. Melchior and of Pape/Köhler to Graf Wolfgang Julius von Hohenlohe, partly ciphered — HZA Neuenstein
 
@@ -87,3 +88,34 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Wolfgang Julius von Hohenlohe" AND 1679 AND chiffriert`: no relevant hit (0 results, none about the letter).
 - `"Sf 35 Bü 161" OR "Melchior" AND "Hohenlohe" AND Wien AND Prag`: no relevant hit (0 results, none about the letter).
+
+## Web and blog check (GF-A2-7, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard): (1) `Wolfgang Julius Hohenlohe Melchior Berichte Wien Prag Straßburg 1679
+chiffriert` -- Wurzbach BLKÖ 9 (austria-forum), a WLB Württembergisch Franken article, and a reference to the
+Ferdinand III / Leopold Wilhelm letters to Hatzfeld in the Neuenstein archive (a different, known cipher corpus);
+nothing on Bü 161/165; (2) `"Sf 35" Hohenlohe Neuenstein Wilhermsdorf Bü 161 chiffriert` -- Archivportal-D finding-aid
+records for Herrschaft Wilhermsdorf, no decipherment; (3) `Pape Köhler 1689 Wien Hohenlohe Kanzleirat Kammersekretär
+Berichte` -- unrelated Köhler/Pape persons; (4) `Ruland "Graf Wolfgang Julius von Hohenlohe-Neuenstein" Archiv für
+hohenlohische Geschichte` -- Wikipedia, NDB/ADB, Archivportal-D (Sf 35 Bü 174, GA 55 Bü 146), and J. Brüser, "Sieger
+ohne Sold" (AfhG, on 1663-65) -- none mentions the reports or a cipher. The Ruland article itself was then read in
+full (status line). Blog site searches: Cipherbrain `Hohenlohe chiffriert Geheimschrift Brief` -- Ferdinand III,
+Wallenstein, Thirty Years War posts; no Hohenlohe; Cryptiana `Hohenlohe cipher 1679` -- no results on either domain;
+Cipher Mysteries `Hohenlohe cipher letter` -- unrelated posts only. No hit named either bundle, so no comment
+thread to read. Result: no decipherment or plaintext found.
+Note for a later step: the Ferdinand III -> Hatzfeld cipher letters said to be in the Neuenstein archive (Cipherbrain
+2014/05/23 "Die ungelöste Geheimschrift von Kaiser Ferdinand III.") are a different, imperial correspondence of the
+1640s, not these 1679-80/1689 house reports.
+
+## Premise check (GF-A2-7, 2 Oct 2026)
+
+(a) Folder's own mentions: NOTES.md and REQUEST.md name no decipherment, key, gloss or clear copy; the catalogue says
+only "teilweise chiffriert". Not found. (b) Other solvers' working files: fresh shallow clones 2 Oct 2026 of
+dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers, `grep -rliE` hohenlohe, neuenstein, Wilhermsdorf, "Sf 35":
+the only "neuenstein" hit is a substring inside a decoded string in cyphersolver/targets/waldeck1744/runs/real_h1.txt
+(an unrelated target); nothing on these reports (cited, nothing copied). Not found. (c) Physical neighbours: no images
+of Bü 161/165 on disk or known online; neighbouring Bü (e.g. 174, Aktivkapitalien) are catalogue entries only;
+unreachable until a copy exists. (d) Recipient side: the recipient is Wolfgang Julius himself; his biography (Ruland
+1870, read in full) mentions his chairing of the Franconian counts' college 1679-81 and his 1689 widowerhood and
+remarriage at Wilhermsdorf (plausible context for the Vienna "Hausangelegenheiten" mission), but no agents, reports or
+cipher. The senders' side (Lic. Melchior; Pape and Köhler) has no printed papers found. Not found.
