@@ -10,6 +10,7 @@ It did no decoding and touched no other target.
 |---|---|---|---|---|---|
 | 1 | the 17-sign key (key.tsv, grade C) and the 2039 legend decode (482 tokens: M 167, U 315, no word read whole) | **N1** for the key and the system. The 2039 legend has no reading to classify. | **ours**: alignment of 2007A against its own on-sheet gloss and the period plain twin 2007B. A **period** key sheet exists (NA 1.05.03 inv. 86, below) and was not used. | 2039: none located (AMH 2025 says "niet getranscribeerd"). The one source that could hold it, de Leeuw 1997, was not read. | **yes**: de Leeuw 1997 describes the system and reproduces "de sleutel tot het geheimschrift" from NA 1.05.03 inv. 86 |
 | 2 | 2061 battery list No.1-6 and legend a-g: S 17, M 163, U 88 after GAPS12; cribs 'batterijen' (10 S) and 'wooning' (7 S) | **N0** | **ours** for the crib values (key_2061_crib.tsv; GAPS9/GAPS10 placements against the sheet's own gloss word and AMH's summary) | **yes**: Atlas of Mutual Heritage page 2218 prints the whole No.1-6 + a-g legend in English, after den Heijer 2012 | **yes**: the AMH sentence presents the content as a reading of "the legend in cipher on Wollant's map"; the key is in de Leeuw 1997 |
+| 3 | 2039 legend and 2061 block under the PERIOD keys (inv. 86 scan 0002 Oud, scan 0003 Nieuw + 9 code groups): 2039 H 287 M 183 U 12; 2061 H 166 M 92 U 10 (VERIFY-SURINAME-PERIOD, 2 Oct 2026, below) | **2039 legend: N1 (provisional)**, held there until LOCAL-QUEUE L36 is answered. **2061 block: N0** (unchanged). **Period key sheets: N1** | **period** for both readings (NA 1.05.03 inv. 86, read by GAPS13/GAPS14) | 2039: no Dutch or English text of the legend located; de Leeuw 1997 (unread) discusses fort Nieuw Amsterdam's garrison and barracks. 2061: AMH 2218 (English) | key sheets: **yes**, de Leeuw 1997 reproduces the "Nieuw Secrett Alphabeth" with its code groups (snippet). Decipherment of 2039: not located, not excluded |
 
 Safe sentences:
 - Item 1: "From 2007A's own interlinear gloss and its plain twin 2007B, we rebuilt 17 signs of Wollant's 1781 map cipher by
@@ -120,3 +121,82 @@ Alphabet", 45 signs (key_period.tsv). Our 17-sign key agrees with it on 16 value
 identity. The classes above are unchanged. A 2039 legend reading now exists under the period key (key source `period`,
 reading_2039_legend_period.txt, H 277 / M 179 / U 26). It needs a separate verifier's class (N1-pending until de Leeuw
 1997 is read, LOCAL-QUEUE L36). This addendum makes no novelty claim.
+
+## Period readings (VERIFY-SURINAME-PERIOD, account-4, verifier, 2 Oct 2026, 23:16-23:26 UTC)
+
+Separate session from GAPS13/GAPS14 (the solvers) and from VERIFY-SURINAME-2061. Claims under audit: the 2039 legend and the
+2061 battery list read under the period keys of NA 1.05.03 inv. 86 (key_period.tsv, key_period_nieuw.tsv,
+key_period_codes_nieuw.tsv): reading_2039_legend_nieuw.txt H 287 M 183 U 12, reading_2061_battery_nieuw.txt H 166 M 92 U 10;
+pre-registered vocabulary control 13 against a shuffled max of 4. No decoding beyond the re-derivation. No other target touched.
+
+### Rule 7 re-derivation
+
+From decode.json, the ciphertext TSVs, key*.tsv, exceptions_2061_battery.tsv and plain_votes.tsv only, copied to a scratch
+directory, `python3 tools/decode_key.py <scratch>` regenerated all seven jobs. `reading_2039_legend_nieuw.txt`,
+`reading_2061_battery_nieuw.txt` and both `_nieuw_tokens.tsv` files are **byte-identical** to the committed ones (cmp).
+Counts match: 2039 H 287 M 183 U 12, 2061 H 166 M 92 U 10. `tools/decode_key.py ciphers/na-suriname-map-1781 --check` exits 0.
+The re-derivation differs by 0 tokens, so the readings stand as committed.
+
+Pre-registration checked on GitHub, because this clone is shallow: commit f0840cdc (23:00:20 UTC) adds only vocab_prereg.txt and
+control_prereg_vocab.py, and is earlier than the scoring commit 209f50b4 (23:06:48 UTC). The vocabulary is mechanical (crib_2038/2042
+words). Both nulls (shuffled value, shuffled order) can change the hit count, so the control is a real test (rule 3). It shows the
+period key reads Dutch words far above chance. It does not show the reading is correct letter by letter: many H-graded strings
+are still not words (2039 heading, legend s). Here H means "value from the period key sheet". The sign identities still rest on our
+two-pass transcription. The 183 + 92 M tokens are the [g|l], [k|i], [c|z] and shape-named code signs that GAPS14 lists as open.
+
+### Search log (this session)
+
+| family | searched | result |
+|---|---|---|
+| (a)/(d) catalogue, holding archive | relied on VERIFY-SURINAME-2061 (NA 1.05.03 inv. 86 and 4.VEL descriptions, same day); not repeated | no decipherment named |
+| (b)/(c) editions, atlases | AMH 2025 (2039), from the prior pass: "niet getranscribeerd". den Heijer 2012: unreachable (prior pass) | none for 2039 |
+| (e) Google Books, key + country=US, 27 calls | interior phrases from the 2039 decode, normalised: "cazernes voor de besetting", "laboratorie magazyn", "magazyn op de batteryen", "voor de bandieten" Suriname, "kruit magazyn" "corps de garde" Suriname 1781, "stuk geschut" Wollant Suriname, "secreet alphabet" Suriname, "Nieuw Secreet Alphabet", "fort Nieuw Amsterdam" legenda Wollant | 0 relevant hits. Only de Leeuw 1997 (Mededelingen NVZ, volume id -5XtAAAAMAAJ, snippet view) answered |
+| (e) term probes inside de Leeuw 1997 (term + "Wollant", 40 results, filtered to that volume) | cazernes, magazyn, magazijn, batterij, batterey, bandieten, ontcijferd, ontcijfering, vertaald, Corps de garde, kruitmagazijn, legenda, lijst + geschut, "Nieuw Amsterdam" + kazernes: no snippet. kazernes, accommodatie, "1500 man", Verklaring, toelichtingen, opgelost, Purmerend: snippets (below) | absence in snippet search is weak (a 'Leyden' probe also missed, though the prior pass saw "redout Leyden" in this volume) |
+| (e) Internet Archive full text (be-api fts) | "cazernes voor de besetting", "magazyn op de batteryen", Wollant Suriname geheimschrift | 0 hits each |
+| (f), (g) | covered the same day by VERIFY-SURINAME-2061 and GAPS; not repeated | -- |
+| JSTOR | 3 rows appended to JSTOR-QUEUE.tsv: family (i) and (ii) | queued, never blocking |
+
+Snippets from de Leeuw 1997 that bear on this audit (Google Books `textSnippet`):
+- "... [fort] Amsterdam Snapbaantr kogels fuyter Roopaarden 7 t P \"Nieuw Secrett Alphabeth\" waarin de sleutel tot het
+  geheimschrift wordt weergegeven. Collectie en foto Algemeen Rijksarchief 's Gravenhage, Sociëteit van Suriname, ..." -- the
+  figure is the **Nieuw** alphabet with its code groups (Snaphaanen, kogels, Affuyten, Roopaarden), i.e. the same leaf as
+  key_period_nieuw.tsv. The key GAPS14 transcribed is printed in facsimile.
+- "... Wollant 1500 man nodig om het fort lange tijd te kunnen verdedigen tegen belegeraars. Het fort had echter onvoldoende
+  accommodatie om zoveel manschappen te kunnen huisvesten. In dit licht moet het plan voor de verhoging van de ..." -- de Leeuw
+  discusses the content of the fort plans (garrison, barracks). That matches the 2039 legend's "cazernes voor de besetting"
+  (legend b). Whether he took it from the cipher legend or from a plain report is not visible.
+- "... toelichtingen en onderschriften werden echter gegeven in geheimschrift ..."; "... Wollant verraden en die alle
+  toelichtingen bevatten in geheimschrift. De serie vormt een unicum ..."; "... opgelost doet vermoeden dat het materiaal van het
+  Sociëteitsbestuur niet de aandacht heeft gekregen die het ..." (context cut off).
+
+Requests by host: www.googleapis.com 27 (>=1.7 s apart, one 503, not retried); be-api.us.archive.org 3; api.github.com 1.
+
+### Classification
+
+- **Period key sheets (Oud scan 0002, Nieuw scan 0003 + 9 code groups): N1, key source `period`.** Our transcription of them is
+  independent. The Nieuw leaf with its code groups is printed in facsimile in de Leeuw 1997.
+- **2039 legend under the period key: N1 (provisional), key source `period`.** No prior plaintext was located (AMH 2025:
+  not transcribed; phrase searches: none). But the one study of exactly these sheets, which prints the key and discusses the
+  fort's barracks, has not been read. A paraphrase or transcription there would make it N1 or N0. So it is not classed N3 until
+  L36 answers. If L36 finds no 2039 legend text or paraphrase in de Leeuw 1997, the next verifier may raise it to N3, with
+  den Heijer 2012 still logged as unread. Confidence: medium.
+- **2061 block under the period key: N0, unchanged, key source now `period`** (was `ours`, crib values). AMH 2218 prints the
+  legend content in English and presents it as a reading of the cipher legend. The period reading agrees with it (guns,
+  iron, powder magazine, officers' quarters, batteries). Confidence: high.
+
+Safe sentence (2039): "Under the period key in NA 1.05.03 inv. 86 (published in facsimile by de Leeuw 1997), we read the
+2039 (fort Nieuw Amsterdam) legend at 287 of 482 signs from the key sheet and 183 uncertain. No printed text of this legend
+was located in the sources searched; de Leeuw 1997, which discusses these sheets, has not been read."
+Safe sentence (2061): "Under the period key, our letter-level reading of the 2061 battery list and legend agrees with the
+content the Atlas of Mutual Heritage already prints in English."
+Unsafe: "first reading of the 2039 legend", "previously unread", "we recovered Wollant's key" (the key is a period sheet,
+printed 1997), any word for a 2039 novelty above N1 before L36 is answered.
+
+No SECOND-OPINIONS-QUEUE.tsv row: every item is below N3.
+
+### Postmortem
+
+No over-claim found. NOTES.md's GAPS14 section says "Rule 10: key source `period` ... No novelty claim" and "N1-pending".
+VERIFY-SURINAME-2061's Step 2 reports a fact that is now stale: the de Leeuw caption it quoted is the **Nieuw** leaf (scan 0003
+with code groups), not only "a key sheet". Recorded here; NOTES.md line 1313 already names scan 0003. One lesson: the H grade
+here is key-sourced, but the readings are not yet clean text. Any outward sentence quotes the counts, never "read in full".
