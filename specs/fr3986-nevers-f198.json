@@ -1,0 +1,35 @@
+{
+ "slug": "fr3986-nevers-f198",
+ "name": "BnF fr.3986 f.198, Nevers to Revol, 23 Oct 1593: the inline cipher runs (key no.60) in a clear-French continuation leaf",
+ "language_candidates": [
+  "fr"
+ ],
+ "ciphertext": "8 dbl d x / ff 3 / R phi phi+ / 8 dbl f' x n / lam o- X d E pi 1 / v s' 4 s 1 d f dbl h pl n 6 7 g del dbl v g /// lam 7 del t e o 4 n inT lam 6 3 dbl 4 T / r 20 pl 3 X + E dbl / e 3 / f+",
+ "ciphertext_source": "ciphers/fr3986-nevers-revol-1593/ciphertext.tsv (LANE R5 F2 two-pass draft, 24 Sept 2026, pass agreement 40.9%, NOT settled on the image); Gallica ark btv1b9060631k canvas 397, native region crops in images/",
+ "alphabet": "key no.60 symbol tags (ciphers/fr3986-nevers-revol-1593/sign_guide.md, tools/keys/key60_atoms.md); homophonic + syllabary + word signs, 66 signs in 9 runs as drafted",
+ "constraints": [
+  "key known: key no.60 (Tomokiyo henryiv2.htm; Bourdeau key60.txt, CC BY 4.0)",
+  "runs sit inside clear French, each continues the sentence",
+  "the copyist's cursive forms map to 2-3 table entries each (Bourdeau 17 Sept 2026; F2 24 Sept 2026)"
+ ],
+ "cheap_tests_in_order": [
+  "known answer first: hold one interlined leaf out of the no.60 sign atlas and report the blind sign-read rate (gate 80%) -- LIKELY-6, 2 Oct 2026",
+  "only after the gate: two blind passes on f.198 against the atlas, reconcile, decode_key.py vs 20 shuffled-key controls, judge fr16",
+  "second letter (fr.3987 f.66) only if f.198 reads"
+ ],
+ "judge": {
+  "language": "fr",
+  "min_word_cover": 0.5,
+  "control_samples": 200
+ },
+ "written": "2 Oct 2026, LIKELY-6 (account-4), brief .claude/briefs/runs/2026-10-02-account4-likely-phase2.md",
+ "cheap_test_done": {
+  "date": "2 Oct 2026",
+  "by": "LIKELY-6 (account-4, Fable 5.1, session_01JK2W3H3Pu8P9Y9DftjnerN); target folder ciphers/fr3986-nevers-revol-1593",
+  "test": "1 (held-out sign-read rate of the key60 atlas, leaf-level hold-out)",
+  "target": "held-out leaf 298 (fr.3986 f.152): 19/28 signs = 67.9% tag match, Wilson 95% CI 49-82%; 90% on tags the 264-only atlas shows, 56% on the 8 it lacks (// 20 8 = L40 c r ue)",
+  "control": "shuffle floor, the pass's own tags permuted within crop, 2000 draws: mean 42.4%, p95 50.0%, max 64.3%",
+  "judge": "not run: the gate (80%) failed before any f.198 pass, so no candidate reading exists to judge",
+  "verdict": "above the shuffle floor, below the 80% gate: tests 2-3 not run (control-first, rule 3). Status: blocked (sign identification), blocker now measured. Next: extend the atlas to the 8 uncovered tags from c.264's unused lines (tools/keys/key60_atlas/src/c264_region.jpg, on disk, no fetch), re-run this held-out (1 Sonnet call), then test 2. Files: ciphers/fr3986-nevers-revol-1593/atlas_heldout/"
+ }
+}

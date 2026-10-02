@@ -1,0 +1,16 @@
+# LIKELY-6 (2 Oct 2026, account-4): held-out sign-read rate of the key no.60 atlas, leaf-level hold-out.
+# Atlas = the 52 leaf-264 pairs of tools/keys/key60_atlas/atlas.tsv only (contact_sheet_264only.png, atlas264.tsv).
+# Held out = leaf 298 (fr.3986 f.152, Henri IV to Nevers, Oct 1593): its 28 gloss-aligned signs (grade S, LANE R5 G) in
+# five sub-span crops cut from src/f3986_c298_region.jpg at +-42 px native around the sign row (gloss masked), x3.
+# Blind pass = one Sonnet subagent given the 264-only sheet + table and the five crops; no values, no gloss (heldout_passB.tsv).
+# Score = order-preserving tag match (LCS) per crop; shuffle floor = the pass's own tags permuted within crop, 2000 draws.
+K1   7/9   answer: L40 E 8 c do = c r 8   | pass: L40 E 8 c' do = c' <r-shaped>
+K2a  2/3   answer: 8 pi 20                | pass: 8 pi z
+K2b  4/4   answer: L40 = pi to            | pass: L40 = pi to
+K3a  2/6   answer: n E r ue // 8          | pass: n q E x X+ u' x
+K3b  4/6   answer: = do pi to // 8        | pass: s = alpha pi to //
+HELD-OUT sign-read rate: 19/28 = 67.9%   gate 80%   Wilson 95% CI 49.3-82.1%
+shuffle floor: mean 42.4%, p95 50.0%, max 64.3% (2000 draws)
+tags present in the 264-only atlas: 9/10 = 90.0%; tags absent from it: 10/18 = 55.6%
+answer tags absent from the 264-only atlas: // 20 8 = L40 c r ue
+Regenerate the crops and the score: python3 ciphers/fr3986-nevers-revol-1593/atlas_heldout/heldout_score.py

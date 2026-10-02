@@ -1,0 +1,53 @@
+sign_id	tag	form	value_under_gloss	context
+A01	lam	lambda, long left leg	la	La [seconde]
+A02	X+	x-cross with extra bars	se	[se]conde
+A03	alpha	alpha / fish loop	co	se[co]nde
+A04	T	T	n	seco[n]de
+A05	g	g	de	secon[de]
+A06	X++	same barred x as X+	si	si; same form as X+ in this hand
+A07	v	v, open	u	v[n]; tick of v' not seen
+A08	beta	beta	n	v[n]
+A09	ll4	ll with small 4	p	[p]rince; no key sign; maybe cursive v+ or 10
+A10	3	3	ri	p[ri]nce
+A11	inT	inverted T	n	pri[n]ce
+A12	18	18	ce	prin[ce]
+A13	phi	f-like with loop (reads as f)	ca	[ca]tholique; this hand's φ looks like f
+A14	e	e	to	ca[to]lique
+A15	sigma	sigma / o with tail	li	cato[li]que; no key sign
+A16	pi	pi with i	que	catoli[que]
+A17	E	epsilon	re	[re]connu
+A18	alpha	alpha	co	re[co]nnu
+A19	inT	inverted T	n	reco[n]nu
+A20	T	T	n	recon[n]u
+A21	v	v	u	reconn[u]
+A22	f	f	e	[e]rreur
+A23	do	cursive d + o	r	e[r]reur
+A24	E	epsilon	re	er[re]ur
+A25	++	written as ll with a bar (Bourdeau's ⱶⱶ)	u	erre[u]r
+A26	8o	8 joined to o (∞-like)	raison	raison
+A27	12	12	du	[du]quel
+A28	pi	pi with i	que	du[que]l
+A29	cH	c with vertical stroke (¢)	l	duque[l]
+A30	10	10	p	[p]ere
+A31	pl	p with stroke through descender	e	p[e]re
+A32	E	epsilon	re	pe[re]
+A33	n	n / r-shaped	et	et
+A34	+o	written like 'to'	le	le; this hand's +o reads as to
+A35	y	y	s	[s]aint
+A36	x	x	a	s[a]int
+A37	T	T	n	sai[n]t
+A38	g	g	de	[de] la couronne
+A39	lam	lambda	la	de [la]
+A40	∠	< angle	c	[c]ouronne
+A41	X	x-cross	o	c[o]uronne
+A42	++	ll with bar	u	co[u]ronne
+A43	do	d + o	r	cou[r]onne
+A44	v	v	o	cour[o]nne; v as o, not in key
+A45	T	T	n	couro[n]ne
+A46	g	g	de	[de]clare
+A47	∠	< angle	c	de[c]lare
+A48	lam	lambda	la	dec[la]re
+A49	E	epsilon	re	decla[re]
+A50	g3	g+3 (gz)	p	[p]rive
+A51	do	d + o	r	p[r]ive
+A52	to	t + o	i	pr[i]ve

@@ -62,3 +62,8 @@ Agreement with key60.tsv: 67 yes, 7 form (value agrees, this hand writes the sig
 
 Not done (cap): the rest of c.264, c.266, c.268 and the other lines of c.298, which would add the rarer syllable and word
 signs; f.151 (c.297 overview fetched, not cut). Suggestion: extend from c.264's lower half first (same hand as the copies).
+
+
+## Held-out test of the atlas (LIKELY-6, 2 Oct 2026)
+
+`contact_sheet_264only.png` + `atlas264.tsv` (the 52 leaf-264 pairs alone, Unicode labels) were handed blind to one Sonnet pass on leaf 298's 28 gloss-aligned signs (gloss masked): 19/28 = 67.9% tag match (shuffle floor 42.4%, gate 80%); 9/10 on tags the 264 pairs cover, 10/18 on the eight they do not (`// 20 8 = L40 c r ue`). Files and re-score script: `ciphers/fr3986-nevers-revol-1593/atlas_heldout/`. The atlas's gap is coverage, not method: extend it from c.264's unused lines (the region on disk) to those eight tags before any further pass on a Revol copy.
