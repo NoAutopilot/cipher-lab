@@ -11,3 +11,8 @@ b	i	M	crib_2061_batterijen	legend e pos6
 t	j	M	crib_2061_batterijen	legend e pos7; j/y: L04 word 3 "t y a o" then reads j-s-e-r = "yser" (iron), see NOTES GAPS9
 a	e	M	crib_2061_batterijen	legend e pos8; plausibly key [a-plain]=e under a bare code name (not merged)
 h	n	M	crib_2061_batterijen	legend e pos9; plausibly key [h-loop]=n under a bare code name (not merged)
+k	o	M	align_2061_amh	legend a 'wooning' pos1 (L08 pos11); GAPS10, AMH-derived candidate beating placement + shuffled-value controls; second O homophone beside [hash]
+[pi]	o	M	align_2061_amh	legend a 'wooning' pos2 (L08 pos12); GAPS10; third O sign; 'voor' on b and f (5 [pi] k o / 5 k [pi] o) fits with 0 conflicts
+m	i	M	align_2061_amh	legend a 'wooning' pos4 (L08 pos14); GAPS10; No.3 'w m r k' then reads ·ito (dito, round 2, w=d single value, B cannot vary)
+l	n	M	align_2061_amh	legend a 'wooning' pos5 (L08 pos15); GAPS10; third N sign beside [h-loop]/[l-bare] (plausibly [l-bare] under a bare code, not merged)
+g	g	M	align_2061_amh	legend a 'wooning' pos6 (L08 pos16); GAPS10; bare g, not verified as key G (RD03B caution); 'garde' on c fits but fails control B (20/20)
