@@ -569,6 +569,31 @@ f.135: 8 bands of 3 lines x 2 segments), read by this worker; no subagent, so no
 - Not found: no NW ('wir') and no K-as-'die' anywhere on f.134; Groen I 231-233 prints only the clear letter (A2-AVS3).
   Requests: resources.huygens.knaw.nl 1 (00124.pdf). Vision: 0 subagent calls; this worker read 20 f.134 crops, 16 f.135 crops.
 
+### VERIFY-AVS4: verifier on A2-AVS4's WVO 124 alignment and its three held pairings (2 Oct 2026, account 2, LANE-A2PUSH)
+
+Separate session from A2-AVS4. `00124.pdf` fetched once to the scratchpad (resources.huygens.knaw.nl, 1 request, not committed);
+f.134 (page 6, 3745x5836) and f.135 (page 7) read by this verifier from native-resolution crops of the named spots only; 0 subagent calls.
+- **Sample:** f.134 line 2, first 20 signs (`5 3 Or 1 0 L 9 3 N | Td 0 Sb | Lf Z Or | V 5 Or 9 Yz`, verhalten das mir kurtz):
+  20/20 as align_124.txt has them, and f.135 reads "verhalten, das mir kurtz".
+- **Controls (rule 3):** control_124.py re-run: 611/611 vs shuffled mean 0.100 (p95 0.119); the within-line unit shuffle changes
+  which unit sits on which sign, so it can fail differently from the target. It is not independent of key_98 (A2-AVS4's own caveat
+  stands); the DP check (17/21 vs mean 1.4) is the independent one and was not re-run.
+- **Ruling on the held pairings** (rule 4: C only where f.135 supplies the value):
+  1. *Sign 1 = i in 'will' (l.17): keep held (M).* The native crop shows a plain 1 (`8 1 L L`, no Z), and f.135's "das will E.L. Ich"
+     supplies i at this token; but one occurrence against 37 firm h cannot tell a slip from a second value, and a firm i would
+     turn sign 1 into a two-valued M sign on 126. 126's two 1-as-i tokens stay M.
+  2. *Open Λ as m: reject as a value of L.* At native resolution the three Λ (gehaimbtem, mochten, vermerckhen) carry the solid
+     apex wedge of Lf (same form as Lf in 'mir' l.2 and 'meinung' l.16), not the thin open Λ of 'wil' l.1 and 'will' l.17. Recoded
+     `Lf?` (fill partial). f.135 supplies m at 'möchten' and 'vermercken' (units now plain m on a doubtful sign, so loose in
+     build_key); f.135 writes 'geheimbden', so 'gehaimbtem''s m is not supplied and stays m~. L is now l:40, m~:1 (the one m~ is
+     98's, untouched); Lf stays M m|l because of 98's one firm l.
+  3. *Looped d without a cross = d: keep held (M).* No cross visible on any of the three ('die' l.4, 'dem' l.9, 'deiss' l.15), so the
+     shape is D, not a doubtful Td: recoded `D` with the unit `d~`. f.135 supplies d at 'dem' and 'dieses' but has no 'die' at l.4;
+     three tokens on one page against D = c firm 21x do not separate an omitted cross from a homophone.
+- **Effect:** build_pairs.py, build_key.py (--check 0), `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check`
+  "reading up to date": 126 still C 229, M 11; no reading or grade changed, so AUDIT.md gets a one-line propagation note and the
+  SECOND-OPINIONS-QUEUE rows (SO-SAXONY-126, SO-SAXONY-53-57) need no update.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 714 of 904 cipher tokens firm (79.0%: C 476 + S 238), M 190, U 0, from `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check` (rerun 2 Oct 2026 23:0x UTC by A2-AVS4, exit 0, "reading up to date"): 126 C 229 of 240 (95.4%, key_98 from the decipherments f.67 and, since A2-AVS4, WVO 124 f.135; filled-Λ m and down-arrow k from A2-AVS3), 57 C 247 of 300 (82.3%, key_74 from f.19), 53 S 238 of 364 (65.4%, no H or C: a cryptanalytic result; matched control 280/282, 99.3%, solve_53_control.json)
 - 53 p1+p2 (f.266r-v, 13 cipher lines; 126 M, incl. 'zuberzuschreiben' l.2, 'geschret' l.7, 'mrch' L10 pos 26) - blocker: not-attempted; passes cut from the 100 dpi images/00053_p1.png (passbrief_s1.md, 90.9% agreement, recon53/disagreements.tsv 28 rows), p2 read once at 100 dpi (F1); the native JPEG (2567x4187, about 309 dpi, images/manifest.json) was never used for passes, and S1's own suggestion ("a native-resolution re-read ... would settle the 119 M tokens") and SO-SAXONY-53-57's spot checks were never run; next: fetch 00053.pdf once, `tools/iiif_lines.py --image` crops pasted, two blind passes per page + one reconciliation (5 subagent calls at about $1.46 each), tools/reconcile_passes.py, then decode_key.py --check and regrade, ~$9

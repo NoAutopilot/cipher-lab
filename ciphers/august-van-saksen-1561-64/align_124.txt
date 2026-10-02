@@ -23,21 +23,26 @@
 # open Λ as m ('gehaimbtem' l.1, 'mochten' l.9, 'vermerckhen' l.16 -- coded L? since the fill is the doubt).
 # Doubtful shapes ('?', loose): l.1's first sign (F of 'Ferner') is a crossed q like Qg, coded Qf?; a looped d without a
 # visible cross read as d ('die' l.4, 'dem' l.9, 'deiss' l.15) is coded D? (D = c firm elsewhere, e.g. 'ich').
-f134 1: Qf? 3 Or | f e r ;; N 3 Pb 3 N | ? ? ? ? ? ;; 8 Z L | w i l ;; R | E.L. ;; Z D 1 | i c h ;; Z N | i n ;; Qg 3 1 0 Z Lf Pb 9 3 L? | g e h a i m b t e m~ ;; 5 3 Or 9 Or 0 5 3 N | v e r t r a u e n ;; N Z 9 | n i t
+# VERIFY-AVS4 (2 Oct 2026, verifier, native re-read of f.134 from 00124.pdf): the three 'open' Λ (gehaimbtem, mochten,
+# vermerckhen) carry the solid apex wedge of Lf (same form as 'mir' l.2 and 'meinung' l.16), not the thin open L of 'wil' l.1
+# and 'will' l.17 -> recoded Lf? (fill partial); f.135 supplies m for mochten/vermerckhen, not for gehaimbtem (f.135 'geheimbden'),
+# so that unit stays m~. The three D? show no cross at native resolution -> recoded D with the unit d~ (held: D = c firm).
+# Sign 1 in 'will' l.17 is plainly 1 (no Z); f.135 'das will E.L. Ich' supplies i; held i~ (one occurrence). NOTES.md VERIFY-AVS4.
+f134 1: Qf? 3 Or | f e r ;; N 3 Pb 3 N | ? ? ? ? ? ;; 8 Z L | w i l ;; R | E.L. ;; Z D 1 | i c h ;; Z N | i n ;; Qg 3 1 0 Z Lf Pb 9 3 Lf? | g e h a i m b t e m~ ;; 5 3 Or 9 Or 0 5 3 N | v e r t r a u e n ;; N Z 9 | n i t
 f134 2: 5 3 Or 1 0 L 9 3 N | v e r h a l t e n ;; Td 0 Sb | d a s ;; Lf Z Or | m i r ;; V 5 Or 9 Yz | k u r t z ;; 5 Pf | u f ;; 3 Z N 0 N Td 3 Or | e i n a n d e r ;; 5 4 N | v o n ;; Td Or 3 Z N | d r e i n ;; 5 N Td 3 Or | u n d e r
 f134 3: Sb Z 3 Td L Z D 1 3 N | s i e d l i c h e n ;; 4 Or 9 3 N | o r t e n ;; Qg L 3 Z D L 0 5 9 3 N | g l e i c l a u t e n ;; Td 3 | d e ;; Yz 3 Z 9 5 N Qg 3 | z e i t u n g e ;; 5 3 Or 9 Or 0 5 | v e r t r a u
-f134 4: L Z D 1 | l i c h ;; 3 Z N | e i n ;; V 1 4 Lf 3 N | k h o m e n ;; Sb 3 Z N 9 | s e i n t ;; 8 3 L D 1 3 Or | w e l c h e r ;; Lf 0 Sb Sb 3 N | m a s s e n ;; D? Z 3 | d i e ;; PAPE | hertzogen_zu_Sachssen ;; Z N | i n
+f134 4: L Z D 1 | l i c h ;; 3 Z N | e i n ;; V 1 4 Lf 3 N | k h o m e n ;; Sb 3 Z N 9 | s e i n t ;; 8 3 L D 1 3 Or | w e l c h e r ;; Lf 0 Sb Sb 3 N | m a s s e n ;; D Z 3 | d~ i e ;; PAPE | hertzogen_zu_Sachssen ;; Z N | i n
 f134 5: Qg Or 4 Sb Sb 3 Or | g r o s s e r ;; 8 3 Or Pb 5 N Qg 3 | w e r b u n g e ;; 5 4 N | v o n ;; BAR? | Reutern~ ;; M | und ;; OM Sb | landtsknechten~ ? ;; Sb 3 Z N | s e i n ;; Sb 4 L L 3 N | s o l l e n ;; M | und ;; Pb 3 Sb 4 Or | b e s o r
 f134 6: Qg 3 N | g e n ;; 3 9 L Z D 1 3 | e t l i c h e ;; 8 0 N | w a n ;; Pb 3 Lf 3 L 9 3 | b e m e l t e ;; PAPE | hertzogen_zu_Sachssen ;; 0 L Sb 4 | a l s o ;; 5 N 5 3 Or Sb 3 1 3 N Sb? | u n v e r s e h e n s
 f134 7: 5 Pf | u f ;; Td Z 3 | d i e ;; Pf 5 3 Sb Sb | f u e s s ;; V 1 0 Lf 3 N | k h a m e n ;; Td 0 Sb | d a s ;; Sb Z 3 | s i e ;; 8 4 L | w o l ;; 3 9 8 0 Sb | e t w a s ;; 8 Z 3 Td 3 Or | w i e d e r ;; R | E.L. ;; M | und ;; S | zu~
 f134 8: 3 Or N 3 5 Or 5 N Qg | e r n e u r u n g ;; Z Or 3 Or | i r e r ;; 0 L 9 3 N | a l t e n ;; Pf 5 Or Td 3 Or 5 N Qg | f u r d e r u n g ;; M | und ;; 0 N Sb Dp Or 0 D 1 3 | a n s p r a c h e ;; Pf 5 Or N 1 3 | f u r n h e
-f134 9: Lf 3 N | m e n ;; L? 4 D 1 9 3 N | m~ o c h t e n ;; 8 Z 3 8 4 L | w i e w o l ;; Z D 1 | i c h ;; N 1 5 N | n h u n ;; N Z 9 9 | n i t ? ;; 1 4 Pf Pf 3 N | h o f f e n ;; EL8 | das ;; D? 3 Lf | d e m
+f134 9: Lf 3 N | m e n ;; Lf? 4 D 1 9 3 N | m o c h t e n ;; 8 Z 3 8 4 L | w i e w o l ;; Z D 1 | i c h ;; N 1 5 N | n h u n ;; N Z 9 9 | n i t ? ;; 1 4 Pf Pf 3 N | h o f f e n ;; EL8 | das ;; D 3 Lf | d~ e m
 f134 10: 0 L Sb 4 | a l s o ;; Sb 3 Z | s e i ;; Z 3 Td 4 D 1 | i e d o c h ;; Td 3 Z 8 3 Z L | d e i w e i l ;; K | der ;; 8 3 L Td 9 | w e l d t ;; Sb 4 | s o ;; Sb 3 L 9 Yz L? Pb? | s e l t z ? ? ;; Z Sb | i s ;; EL8 | das
 f134 11: N Z 3 Lf 0 N Td 9 | n i e m a n d t ;; 8 4 L L | w o l l ;; S | zu ;; 9 Or 0 5 3 N | t r a u e n ;; Sb 4 | s o ;; 1 0 Pb 3 | h a b e ;; Z D 1 Sb | i c h ? ;; R | E.L. ;; 0 L Sb | a l s ;; Td 3 Or | d e r ;; Sb 3 L Pb 3 N | s e l b e n
 f134 12: Td Z 3 N 3 Or | d i e n e r ;; M | und ;; Pf Or 3 5 N Td | f r e u n d ;; N Z D 1 9 | n i c h t ;; 5 3 Or 1 0 L 9 3 N | v e r h a l t e n ;; V 4 N N 3 N | k o n n e n ;; Td 0 Lf Z 9 | d a m i t
 f134 13: Sb Z D 1 | s i c h ;; R | E.L. ;; Td 3 Ma 4 | d e st o ;; Pb 0 Sb Sb | b a s s ;; 5 4 Or Sb 3 1 3 N | v o r s e h e n ;; M | und ;; Pb? 3 Z | b e i ;; Yz 3 Z 9 3 N | z e i t e n ;; 5 Pf Pf | u f f ;; B | der~
 f134 14: PAPE | hertzogen_zu_Sachssen ;; 1 3 N Td 3 L | h e n d e l ;; 0 D 1 9 5 N Qg | a c h t u n g ;; Qg 3 Pb 3 N | g e b e n ;; Lf Z 9 | m i t ;; Pf Z 3 3 N Ma L Z D 1 3 Or | f~ ? ? ? ? ? l~ i~ c~ h~ e~ r~
-f134 15: TT Z 9 1 | b~ i t ? ;; R | E.L. ;; 8 4 L L 3 N | w o l l e n ;; D? 3 Z Sb Sb | d e i s s ;; L Z 3 | ? ? ? ;; Sb Or 3 Z Pb 3 N | s r e i b e n ;; 0 N Td 3 Or Sb | a n d e r s
-f134 16: N Z 9 | n i t ;; 0 L Sb | a l s ;; 9 Or 3 5 3 Or | t r e u e r ;; Lf 3 Z N 5 N Qg | m e i n u n g ;; 5 3 Or L? 3 Or D V 1 3 N | v e r m~ e r c k h e n ;; 8 0 Sb Sb Z D 1 | w a s s i c h
+f134 15: TT Z 9 1 | b~ i t ? ;; R | E.L. ;; 8 4 L L 3 N | w o l l e n ;; D 3 Z Sb Sb | d~ e i s s ;; L Z 3 | ? ? ? ;; Sb Or 3 Z Pb 3 N | s r e i b e n ;; 0 N Td 3 Or Sb | a n d e r s
+f134 16: N Z 9 | n i t ;; 0 L Sb | a l s ;; 9 Or 3 5 3 Or | t r e u e r ;; Lf 3 Z N 5 N Qg | m e i n u n g ;; 5 3 Or Lf? 3 Or D V 1 3 N | v e r m e r c k h e n ;; 8 0 Sb Sb Z D 1 | w a s s i c h
 f134 17: Td 0 N | d a n ;; 8 3 Z 9 9 3 Or Sb | w e i t t e r s ;; 1 Z 3 Or 5 4 N | h i e r v o n ;; 5 3 Or N 1 3 Lf 3 N | v e r n h e m e n ;; EL8 | das ;; 8 1 L L | w i~ l l
 f134 18: R | E.L. ;; Z D 1 | i c h ;; 0 L 9 Yz 3 Z 9 | a l t z e i t ;; Td Z 3 N Ma L Z D 1 | d i e n st l i c h ;; Qg 3 Or N 3 | g e r n e ;; 5 3 Or Ma 3 N Td Z Qg 3 N | v e r st e n d i g e n

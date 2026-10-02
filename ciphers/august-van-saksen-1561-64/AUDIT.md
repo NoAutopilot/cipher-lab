@@ -838,3 +838,7 @@ Rule 10 propagation note, not a verdict. key_98 was rebuilt from 98's f.67 pairs
 against its decipherment f.135 (align_124.txt, NOTES.md "A2-AVS4"): EL8 'das' and R 'E.L.' are now grade C, so 126 is 240
 tokens C 229, M 11 (was C 224, M 16). No word of reading_126.txt changed; SO-SAXONY-126 needs no update. The key source
 for 126 is now two period decipherments of System B (f.67 and f.135), both `period` in the rule-10 key-source sense.
+
+Rule 10 propagation note, not a verdict (VERIFY-AVS4, 2 Oct 2026): A2-AVS4's three held pairings on WVO 124 were ruled on
+(NOTES.md "VERIFY-AVS4"): the three 'open' Λ re-read as Lf, 1 = i and D = d stay held. No word or grade of 126 changed
+(C 229, M 11); SO-SAXONY-126 needs no update.
