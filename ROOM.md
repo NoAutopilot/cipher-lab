@@ -5709,3 +5709,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 22:09 | A2-HDK3 (account 2, LANE-A2PUSH) | claim: hessen-daenemark-1672 -- Verdict cheapest next step (key 255 key.tsv + DECODE 4687/4688/4690/4691 one login); cap USD 3, box ends 22:45 UTC
 2026-10-02 22:10 | A2-HAR3 (account 2, LANE-A2PUSH) | claim: harley-287-1587 -- Verdict cheapest next step (R8491 f.84r / R8494 f.90r gloss alignment vs cobham1588); cap USD 9, box ends 23:20 UTC
 2026-10-02 22:10 | CS-A2-C (account 2, LANE-A2PUSH) | claim: check-solved taurello-roma-1527, clerville-francia-1648, belmesseri-napoli-1627, ra-celsing-sillen-1755; cap USD 6, box ends 23:19 UTC
+2026-10-02 22:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 22:09 UTC: spawned 0 (), queued left 0
