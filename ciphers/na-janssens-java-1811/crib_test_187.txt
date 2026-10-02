@@ -1,0 +1,16 @@
+leaf 188 keyed sequence: 82 tokens (from reading_tokens.tsv, grades C/M, U dropped)
+S1 LCS  leaf187R (target crib) vs leaf 188: query 82 tokens, candidate 186 words: LCS 17 (0.207 of query); shuffled-order null mean 16.6 sd 1.3 p95 19 p99 20 max 22; z +0.30; null >= target: 999/2000
+S1 LCS  No.5 plain copy (control, other letter) vs leaf 188: query 82 tokens, candidate 65 words: LCS 9 (0.110 of query); shuffled-order null mean 9.7 sd 1.1 p95 11 p99 12 max 13; z -0.66; null >= target: 1753/2000
+S1 LCS  No.2 gloss (control, other letter) vs leaf 188: query 82 tokens, candidate 109 words: LCS 17 (0.207 of query); shuffled-order null mean 15.3 sd 1.3 p95 17 p99 18 max 20; z +1.37; null >= target: 324/2000
+positive control (ceiling, by construction): No.2 codes decoded by key.tsv (262 tokens) vs No.2 gloss (109 words)
+S1 LCS  No.2 decoded vs No.2 gloss: query 262 tokens, candidate 109 words: LCS 102 (0.389 of query); shuffled-order null mean 35.6 sd 1.9 p95 39 p99 40 max 43; z +35.49; null >= target: 0/2000
+
+S2 coverage: leaf 188 keyed word types len>=3: 26; len>=5: 9 ['alinea', 'ancien', 'chargent', 'debarquer', 'ennemie', 'gouverneur', 'seules', 'troupes', 'vaisseaux']
+  leaf187R (target crib): vocab 116 types; covers 4/26 types (0.15), content 0/9 []
+  No.5 plain copy (control, other letter): vocab 53 types; covers 3/26 types (0.12), content 1/9 ['troupes']
+  No.2 gloss (control, other letter): vocab 70 types; covers 8/26 types (0.31), content 1/9 ['chargent']
+
+Verdict's named C-grade words present in each candidate:
+  leaf187R (target crib): []
+  No.5 plain copy (control, other letter): ['troupes']
+  No.2 gloss (control, other letter): ['deux']

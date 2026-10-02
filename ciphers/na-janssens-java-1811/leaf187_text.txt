@@ -1,0 +1,18 @@
+# NA 2.01.27.05 invnr 12, leaf 187 right page: 'Extrait d'une lettre du Gouv.r General Janssens au Ministre', Batavia 20 Juin 1811, No 11.
+# Transcribed 2 Oct 2026 (GAPS6-na-janssens-java-1811): two blind Sonnet passes on tools/iiif_lines.py crops of the native IIIF region + one reconciliation (leaf187_reconciled.tsv). Plain French, grade H as a transcription; not a decipherment.
+Extrait d'une lettre du Gouv.r General Janssens, au Ministre
+de la Marine et des Colonies à Paris, datée Batavia 20 Juin 1811 / N°11
+Les Residens du Gouvernement auprès de l'Empereur et du Sultan,
+ont depuis longtems dans leurs Etats la ferme d'objets dont le benifice
+est très considerable. Les Gouverneurs de Java, et depuis le Gouvernent
+general partageaient ces profits et en ont considerablement augmenté
+leurs revenus. Le Souverain en a été instruit, mais dans la supposition
+ou sa Majesté accorderait la demande que je lui fais, le traitement
+du Gouv.r Gen.l lui suffirait alors pour une existence convenable,
+Je ne me trouve donc nullement autorisé à augmenter mes revenus
+D'une somme considerable; mais l'interêt de la Colonie exige que cette
+contribution indirecte soit conservée et je ne trouve pas convenable
+d'en accroitre les revenus enormes des Residens.. Je la recevrai donc
+et je la mettrai en depot, jusqu'à ce que L'Empereur ait prononcé sur
+la destination avenir, et j'instruirai V.E des details de cette affaire
+aussitot que j'en aurai acquis une connaissance positive

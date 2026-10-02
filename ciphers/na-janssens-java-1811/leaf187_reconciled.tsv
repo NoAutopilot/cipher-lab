@@ -1,0 +1,18 @@
+line	text	passA	passB	reconciled_by	note
+0	Extrait d'une lettre du Gouv.r General Janssens, au Ministre	(no crop)	(no crop)	GAPS6 montage of native crop y0-300	heading line above band 1, not banded by iiif_lines.py (lighter ink); both passes flagged it; read by the reconciler from the top strip; agrees with the GAPS5 inventory heading
+1	de la Marine et des Colonies à Paris, datée Batavia 20 Juin 1811 / N°11	agree (A: partly cut)	agree	montage	right end read from the top strip: "Batavia 20 Juin 1811", "N°11" underlined below it
+2	Les Residens du Gouvernement auprès de l'Empereur et du Sultan,	Residens	Rendens	montage: R-e-s-i-d-e-n-s, pass A	the one word-level disagreement of the page (twice, lines 2 and 11)
+3a	ont depuis longtems dans leurs Etats la ferme d'objets dont le benifice	agree	agree	-	crop L03 holds two lines; its first line's right end read by both passes from the L02 bottom edge
+3b	est très considerable. Les Gouverneurs de Java, et depuis le Gouvernent	agree	agree	-	"Gouvernent" = abbreviated "Gouvernem[en]t", written as both passes read it
+4	general partageaient ces profits et en ont considerablement augmenté	agree	agree	-	
+5	leurs revenus. Le Souverain en a été instruit, mais dans la supposition	agree (A comma, B semicolon)	agree	pass A	punctuation only
+6	ou sa Majesté accorderait la demande que je lui fais, le traitement	agree	agree	-	
+7	du Gouv.r Gen.l lui suffirait alors pour une existence convenable,	agree	agree	-	both passes M on suffirait; not re-opened
+8	Je ne me trouve donc nullement autorisé à augmenter mes revenus	agree	agree	-	
+9	D'une somme considerable; mais l'interêt de la Colonie exige que cette	agree	agree	-	
+10	contribution indirecte soit conservée et je ne trouve pas convenable	agree	agree	-	
+11	d'en accroitre les revenus enormes des Residens.. Je la recevrai donc	Residens	Rendens	montage, pass A	as line 2
+12	et je la mettrai en depot, jusqu'à ce que L'Empereur ait prononcé sur	agree	agree	-	
+13	la destination avenir, et j'instruirai V.E des details de cette affaire	agree	agree	montage	"destination" overwritten at its start; "avenir" one word (a venir); V.E = Votre Excellence
+14	aussitot que j'en aurai acquis une connaissance positive	agree	agree	montage	"positive" confirmed
+15	(archive stamp 'S RYKS ARCHIEF, no text)	agree	agree	-	

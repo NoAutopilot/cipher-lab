@@ -334,7 +334,8 @@
    "local_thumb": null,
    "local_med": "images/187_med.jpg",
    "eye_check": "plain (H): heading Extrait d'une lettre du Gouv.r General Janssens au Ministre de la Marine et des Colonies a Paris, datee Batavia 20 Juin 1811 / No 11; no. 11/none; L: blank; R: plain French prose, extract of a letter, no code numbers, archive stamp below; Single page of prose (about 17 lines) on a smaller torn-edged slip, about the Residents, the Emperor and the Sultan; \"No 11\" written under the date; no signature, no \"Fin\". [GAPS5 re-inventory, 2 Oct 2026; replaces the eye_check_prev text]",
-   "eye_check_prev": "plain prose report, signed, no cipher"
+   "eye_check_prev": "plain prose report, signed, no cipher",
+   "local_native_crop": "images/crops_187/187_right_native.jpg"
   },
   {
    "order": 188,
@@ -675,5 +676,6 @@
  ],
  "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)",
  "note_2oct_GAPS2": "leaf 201 fetched at IIIF full/2561 (images/201_hi.jpg, one request, 2 Oct 2026; scan id from the invnr @12 page's drupal-settings-json); crops in images/crops_201/ (tools/iiif_lines.py, see its manifest.json)",
- "note_2oct_GAPS5": "leaves 186-215 re-inventoried from contact sheets of the best file on disk per leaf (hi where it exists, else medium) by four blind vision passes (leaves_186-215_inventory.tsv); 197 and 202-207 fetched at IIIF full/1200 this pass; rows whose class or heading the earlier eye_check had wrong carry the old text in eye_check_prev: leaves 187, 189, 194, 195, 201, 202, 204, 205, 206, 207, 208, 209, 210, 211"
+ "note_2oct_GAPS5": "leaves 186-215 re-inventoried from contact sheets of the best file on disk per leaf (hi where it exists, else medium) by four blind vision passes (leaves_186-215_inventory.tsv); 197 and 202-207 fetched at IIIF full/1200 this pass; rows whose class or heading the earlier eye_check had wrong carry the old text in eye_check_prev: leaves 187, 189, 194, 195, 201, 202, 204, 205, 206, 207, 208, 209, 210, 211",
+ "note_2oct_GAPS6": "leaf 187 right-page slip fetched once at native IIIF resolution (region 2558,1229,2387,2626 of 5034x3914; images/crops_187/187_right_native.jpg, 2 Oct 2026, 2 requests incl. info.json); line crops and overlay in images/crops_187/ (tools/iiif_lines.py, see its manifest.json); transcription leaf187_text.txt"
 }
