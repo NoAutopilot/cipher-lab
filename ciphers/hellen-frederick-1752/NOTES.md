@@ -412,3 +412,65 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 20 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## HEL-T2 (2 Oct 2026, account-4): spec test 2 -- homophonic and nomenclator anneals on the pooled 1763 cluster, both controls below gate (non-tests, not negatives)
+
+Job brief `.claude/briefs/runs/2026-10-01-account4-hel-t2.md` (Fable 5.1, disk only, no network, no vision). Box
+00:14-00:54 UTC; both families ran well inside it (homophonic battery 12 s; nomenclator 6 m 51 s per seed).
+
+Intake gate, run before anything else (CLAUDE.md pipeline item 2): `python3 tools/intake_gate_check.py
+hellen-frederick-1752` -> `hellen-frederick-1752: open (line 1) -- edition/page or full-text-search citation found
+within 6 lines`, exit 0 (00:14 UTC, after WEBCHECK-hellen-frederick-1752's web and blog check above).
+
+**Pooled stream.** The spec's `ciphertext` block is a dict of per-record pointers, which `tools/family_run.py` cannot
+read ("give --cipher PATH"), so `pool_1763.py` (beside this file) writes `pooled_1763.txt`: the six 1763 records in
+Bourdeau's audit order (1045, 1046, 1047, 1048, 1060, 1061), one record per line, numeric tokens only (1-4 digits
+after stripping the `_`/`^` transcriber marks; `?` tokens dropped -- the same rule as `pool_stats.py`). It exits
+non-zero if the count drifts from the spec's 1234. Result: N=1234, K=634 distinct values (364/206/192/188/134/150
+per record); 411 of the 634 values are singletons and the commonest (902) occurs 18 times, so the stream carries
+about 1.9 tokens per sign type.
+
+**Family 1, homophonic (the spec's named test 2).** `tools/family_run.py specs/hellen-frederick-1752.json --family
+homophonic --param profile=target --seeds 3 --corpus tools/data/fr18 --cipher ciphers/hellen-frederick-1752/pooled_1763.txt
+--tokens space` (restarts 8, default). The control is a window of fr18 (French official prose 1680-1790, the spec's
+own judge corpus; fr16 was not used, per the spec's judge note) enciphered at N=1234 with the target's own
+sign-count profile and solved blind:
+
+| seed | realised control K | recovery |
+|---|---|---|
+| 1 | 479 | 0.113 |
+| 2 | 455 | 0.090 |
+| 3 | 471 | 0.096 |
+
+Mean 0.100 (0.090-0.113) against the 0.6 gate: CONTROL BELOW GATE, exit 3, **target not run**. The realised control
+K is below the target's 634 (singleton buckets drawn by weight are not all used), so the control is if anything
+easier than the target, which only strengthens the reading of this as a non-test.
+
+**Family 2, nomenclator (the brief's named next instrument).** `--family nomenclator --restarts 3 --param sweeps=30
+--param phase1=20` (ARM-C1's settings, 26 Sept 2026; holdout index 5 = the Maintenon volume held out of the trigram
+LM), run as two single-seed calls because one seed costs about 7 minutes: seed 1 recovery 0.092 (control build:
+1234 coded tokens, 363 distinct values of which 308 book and 55 particle, 247 OOV words, 217 wild tokens, 595
+particle tokens); seed 2 recovery 0.109 (378 distinct, 322 book / 56 particle). Mean 0.100 (0.092-0.109) against
+the 0.6 gate: CONTROL BELOW GATE, exit 3, **target not run**. This family is built for the Armstrong two-level
+decade/slot design with an English (`tools/data/uscodes-1800`) book prior, neither of which this French target is
+known to share; it was run as the nearest instrument on file, not as a design claim.
+
+**Judge:** not run -- no target decode exists for it to score (rule 3: the judge gates a decode, and neither family
+cleared its control). No `--shuffle-target` run either, for the same reason.
+
+**Reading of the result (rule 3, rule 5).** Two control-backed non-tests, not a negative on the target: a solver that
+reads 9-11 percent of its own matched design says nothing about what the Hellen 1763 code is. This is the BER-HOMO
+shape (27 Sept 2026, berthier-napoleon-1812, N=325/K=207, control 0.061) at a larger N and a larger K: at 1.9
+tokens per sign type neither anneal has power. Status stays `open`. The design question stands where Bourdeau's
+profile.json left it (two-part code, flat code-group frequencies).
+
+**Named next step.** Not a third family at this N (a repeat of the same approach with one knob changed is the
+RETRO-2026-09-26f shape CLAUDE.md rule 3 warns against). The pool has to grow or a known text has to arrive: more
+1763 Hellen despatches (KHA inv. 196 beyond these six, or a Fagel-series copy), a period key or decipherment, or a
+printed Politische Correspondenz text matching one of the six dates (check-solved above found none for 15 Apr-5 Jul
+1763). The spec's `cheap_test_done["2"]` carries the same numbers and the same next step.
+
+Grade counts this pass: H 0, C 0, S 0 readings (two control-backed non-tests), M 0, I 0. Rule 10: nothing claimed.
+Files: `pool_1763.py`, `pooled_1763.txt`, `HYPOTHESES.md` (three tool-written rows), `specs/hellen-frederick-1752.json`
+(`cheap_test_done["2"]`), this section. No `families/` decode files were written (no target run). Requests: none
+(disk only). Subagents: none.

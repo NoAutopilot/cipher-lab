@@ -94,7 +94,7 @@
   "2. Homophonic/nomenclator anneal on the pooled 1763 cluster (1234 numeric tokens across 6 records, treated as one stream per the pool test's result) against an era-matched 18th-century French corpus (fr18, not yet built as of this spec -- LANE ZX2 worker ZX2-FR18 is building it concurrently; do not run this test against fr16 (16th-century, Catherine de Medici's letters), which is not era-matched per CLAUDE.md's pt17-vs-pt18 lesson) with a matched control at the same N and K. tools/family_run.py --family homophonic once fr18 lands.",
   "3. Separately, R1953 alone (846 segments, one despatch, 4 Jan 1752) and R1049 alone (516 segments, 7 Sep 1756) are each below the pools-first 2,000-sign threshold and have no sibling in this repository yet; a solver attempting either alone should first search Politische Correspondenz's surrounding volumes and BnF/other archives (not yet done for the 1752/1756 records specifically, only the printed edition) for a second letter under the same code before spending an anneal budget on either alone."
  ],
- "matched_control": "cheap_test_done.1's random-split control (200 trials, same pool, same 6 group sizes) is the pool-test control; test 2's control (matched N/K/corpus/design) is not yet run",
+ "matched_control": "cheap_test_done.1's random-split control (200 trials, same pool, same 6 group sizes) is the pool-test control; test 2's controls were run 2 Oct 2026 (HEL-T2): homophonic profile=target on fr18 at N=1234 K=634, 3 seeds, mean 0.100; nomenclator (ARM-C1 settings) 2 seeds, mean 0.100; both CONTROL BELOW GATE 0.6, target not run -- see cheap_test_done.2",
  "judge": {
   "language": "fr18",
   "corpus_note": "fr18 (French official prose 1680-1790, ZX2-FR18 25 Sept 2026): held-out 18th-c. false-negative rate 0.183 at N200 vs fr16 0.961, fr19 0.983; set by the LANE ZX2 orchestrator 25 Sept 2026 19:56 UTC",
@@ -135,6 +135,40 @@
      "all_8_segments": 2651
     }
    }
+  },
+  "2": {
+   "test": 2,
+   "date": "2 Oct 2026 (00:14-00:3x UTC)",
+   "worker": "HEL-T2, account-4 parent worker, Fable 5.1 (brief .claude/briefs/runs/2026-10-01-account4-hel-t2.md)",
+   "intake_gate": "tools/intake_gate_check.py hellen-frederick-1752 -> 'open (line 1) -- edition/page or full-text-search citation found within 6 lines', exit 0 (00:14 UTC 2 Oct 2026, after WEBCHECK-hellen-frederick-1752's web and blog check of 1 Oct)",
+   "pooled_stream": "ciphers/hellen-frederick-1752/pool_1763.py -> pooled_1763.txt: the six 1763 records in Bourdeau's audit order (1045,1046,1047,1048,1060,1061), one record per line, numeric tokens only (1-4 digits after stripping '_'/'^' marks, '?' tokens dropped, the same rule as pool_stats.py): N=1234, K=634 distinct values, per record 364/206/192/188/134/150; 411 of 634 values are singletons, the commonest value (902) occurs 18 times",
+   "method": "tools/family_run.py --family homophonic --param profile=target --seeds 3 --restarts 8 --corpus tools/data/fr18 --cipher pooled_1763.txt --tokens space (rule 3: matched control built from fr18 at N=1234 with the target's own sign-count profile, solved blind, target run only if the control mean meets the 0.6 gate); then --family nomenclator (ARM-C1 settings: --restarts 3 --param sweeps=30 phase1=20, holdout=5 = the Maintenon volume held out of the LM) as the next instrument named by the brief, seeds 1 and 2 run as separate single-seed calls because one seed costs about 7 minutes",
+   "result": {
+    "homophonic_control": {
+     "seeds": [1, 2, 3],
+     "recovery": [0.113, 0.09, 0.096],
+     "mean": 0.1,
+     "range": "0.090-0.113",
+     "gate": 0.6,
+     "realised_control_K": "479/455/471 -- below the target's 634 because singleton buckets drawn by weight are not all used, so the control is if anything easier than the target",
+     "wall_clock": "12 s for the whole battery"
+    },
+    "homophonic_target": "not run: CONTROL BELOW GATE (family_run.py exit 3)",
+    "nomenclator_control": {
+     "seeds": [1, 2],
+     "recovery": [0.092, 0.109],
+     "mean": 0.1,
+     "range": "0.092-0.109",
+     "gate": 0.6,
+     "control_build_seed1": "coded 1234, distinct 363 (book 308, particle 55), oov_words 247, wild_tokens 217, particle_tokens 595, held-out book source",
+     "wall_clock": "6 m 51 s per seed (3 restarts)"
+    },
+    "nomenclator_target": "not run: CONTROL BELOW GATE (exit 3)",
+    "judge": "not run on any decode: no target decode exists (rule 3 -- the judge gates a decode, and no family cleared its control)"
+   },
+   "interpretation": "A non-test for both families at this N and K, not a negative on the target (CLAUDE.md rule 3, BER-HOMO precedent 27 Sept 2026 at N=325/K=207: 0.061). A homophonic anneal cannot read its own matched design at N=1234 with 634 sign types (about 1.9 tokens per type, two thirds singletons), and the nomenclator family -- built for the Armstrong two-level decade/slot design, with an English (uscodes-1800) book prior that this French target does not share -- reads 9 percent of its own control. Neither says anything about whether the Hellen 1763 code is homophonic or a nomenclator; both say these solvers lack power at this ratio of tokens to types. The design question stays as Bourdeau's profile.json put it (two-part code, flat frequencies).",
+   "next": "Not another family at the same N: the pool itself has to grow (more 1763 Hellen despatches from KHA inv. 196 or NA Fagel, a period key or a decipherment -- the archival next steps already in NOTES.md), or a known-plaintext route (a printed Politische Correspondenz text matching one despatch's date, which check-solved did not find for these six dates). A model-in-the-loop crib round (family D) was gated at ARM3-LOOP on a 45 percent blind floor and has nothing to work with at 9-10 percent.",
+   "grade": "S 0 readings; two control-backed non-tests. H 0, C 0, M 0, I 0. Rule 10: nothing claimed."
   }
  }
 }
