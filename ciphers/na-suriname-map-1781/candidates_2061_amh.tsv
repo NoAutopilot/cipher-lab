@@ -1,0 +1,22 @@
+# Pre-registered period-Dutch candidate words per 4.VEL 2061 entry, rendered from the Atlas of Mutual Heritage page 2218
+# English summary (sources/amh/2026-10-02/page2218_en.txt; after den Heijer 2012). GAPS10-na-suriname-map-1781, 2 Oct 2026,
+# written and committed BEFORE any placement was scored (align_2061_amh.py reads this file unchanged). The worker had seen
+# GAPS9's partial decode (reading_2061_battery.txt) -- the list is pre-registered against fit scoring, not blind to the sheet.
+# Spellings: 18th-c. variants listed side by side (y/ij, s/z, c/k, gt/cht). AMH is a modern English summary, never the
+# plaintext: any value this suggests is at best S (two controls beaten), never C.
+# entry = line(s) of ciphertext_2061_battery.tsv the AMH clause covers; amh = the AMH clause; words = space-separated candidates
+entry	lines	amh	words
+No1	2061_bat_L01	5 pieces of 24-pound iron ordnance	yzer yser ijzer ijser dito ditto idem stuks stukken stukke canon kanon canons
+No2	2061_bat_L02	4 24-pound iron pieces	yzer yser ijzer ijser dito ditto idem stuks stukken stukke canon kanon canons
+No3	2061_bat_L03	2 24-pound iron pieces, 2 iron 12-pound pieces	yzer yser ijzer ijser dito ditto idem stuks stukken stukke canon kanon canons
+No4	2061_bat_L04	1 12-pound iron piece, 3 small pieces of field artillery borrowed from the Cordon, 6 pounds each	yzer yser ijzer ijser dito ditto idem stuks stukken stukke kleine kleene klyne veldstukken veldstukjes stukjes veld artillerie geleend geleent van het den de uit uyt cordon kordon elk ieder yder pond ponders
+No5	2061_bat_L05	1 piece of field artillery, ditto, 2 iron 6-pound pieces	yzer yser ijzer ijser dito ditto idem stuks stukken stukke veldstuk veldstukken artillerie van het cordon
+No6	2061_bat_L06	on the flanks of the half-bastions 2 3-pound iron pieces	yzer yser ijzer ijser dito ditto idem stuks stukken op aan de der flanken flancen flanquen halve half bastions bastions halfbastions van
+L07	2061_bat_L07	(other indications) -- heading between the battery list and the a-g legend	verklaring verklaringe explicatie letteren letters der van de andere aanwijzing signatuuren
+a	2061_bat_L08	a. officers' quarters	officiers officieren quartier quartieren kwartier woning wooning huis huys voor de der
+b	2061_bat_L08	b. garrison barracks	caserne casern kazerne cazerne guarnisoen garnizoen guarnisoens barakken barak soldaten voor de het
+c	2061_bat_L08	c. guardhouse	corps de garde wagt wacht wagthuys wagthuis cortegarde
+d	2061_bat_L09	d. gunpowder magazine	kruid kruyd buskruid magazyn magasyn magazijn kruydmagazyn kruidmagazijn
+e	2061_bat_L09	e. arsenal for gunpowder and equipment for the batteries	arsenaal magazyn magasyn voor kruyd kruid en gereedschap gereetschap der de batterijen behoeften ammunitie amunitie
+f	2061_bat_L09;2061_bat_L10	f. accomodation for sworn servants	woning wooning voor de gezworen gesworen gesworene bedienden dienaren slaven slaaven beedigde
+g	2061_bat_L10	g. gallery, passage	gallery gallerij galerij gaanderij passage doorgang of
