@@ -164,6 +164,30 @@ Stringer's papers outside TNA) or not at all is unknown. Discovery's keyword sea
 descriptions, so a letter-book catalogued under a different wording would be missed: a search result, not
 proof of loss. No reading; nothing for a verifier.
 
-Next cheapest step: search T. Forster (ed.), *Original Letters of Locke, Algernon Sidney and Anthony Lord
+Next cheapest step (done by A2-SHA2 below): search T. Forster (ed.), *Original Letters of Locke, Algernon Sidney and Anthony Lord
 Shaftesbury* (1830) on archive.org be-api for Percivall/Perkins/Fisher/cypher/"November 1682" (~$1, about 6
 requests); the TNA page-copy order (REQUEST.md, ASKS row 73) remains the step that would give the text.
+
+## Forster, Original Letters (A2-SHA2, 2 Oct 2026)
+
+Step: the Verdict's next cheapest step above. Editions on archive.org (advancedsearch, 1 request): 1830 first
+edition `10403259bsb` (BSB scan) and 1847 second edition `originalletterso00lockuoft`; each one's full OCR
+(`_djvu.txt`, public domain, 1 download each) was fetched once and grepped locally rather than querying be-api term
+by term. Rule 2: OCR text, not the page images, so a negative is conditional on the OCR.
+
+| term | 1830 (82,644 words) | 1847 (85,002 words) |
+|---|---|---|
+| Percival / Perkins / Fisher | 0 / 0 / 0 | 0 / 0 / 0 |
+| cypher / cipher | 0 / 0 | 0 / 0 |
+| "1682" / "November 1682" | 0 / 0 | 0 / 0 |
+| Stringer | 0 | 0 |
+| positive controls: Locke / Sidney / Shaftesbury | 211 / 17 / 137 | 276 / 133 / 179 |
+
+Every year 1680-1683 in the 1830 OCR is in editorial matter (the 1680 comet, the 1683 Sidney execution, a Furly
+birth in 1681, a footnote that "the Earl ... died in 1683"). The "Lord Shaftesbury" of the title is the 3rd Earl,
+author of the *Characteristics* (title page, 1830), so the volume carries his letters to Furly and others, not
+the 1st Earl's 1682 correspondence. Result: neither edition prints or mentions the 6 June 1682 drafts or their
+addressees. A search result for the log, not proof the letters are unprinted. No reading; nothing for a verifier.
+
+Next cheapest step: none left in print that this project has named; the TNA page-copy order (REQUEST.md, ASKS
+row 73) is the step that would give the text, waiting on the owner. Requests this step: archive.org 3.
