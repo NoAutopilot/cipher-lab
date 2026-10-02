@@ -1,7 +1,7 @@
 host	requests	status
 api.crossref.org	2	ok
 api.openalex.org	13	ok
-api.semanticscholar.org	1	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22je%20ne%20seroys%20pas%20paresseux%20si%22
-archive.org	6	unreachable: [Errno 104] Connection reset by peer
-be-api.us.archive.org	60	ok
+api.semanticscholar.org	3	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22Je%20croys%20aussi%20que%20les%20choses%20sont%22
+archive.org	1	ok (some errors)
+be-api.us.archive.org	24	ok
 www.googleapis.com	12	ok

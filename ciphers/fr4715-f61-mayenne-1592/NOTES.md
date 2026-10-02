@@ -6275,7 +6275,7 @@ unchanged by design). No spec exists for this target (specs/ has no f61 file), s
 
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
 Read so far: no passage outside Tomokiyo's five spans is read. Of the leaf's 100 cipher signs, 12 are firm, 59 two-way, 1 wider and 28 unread-or-null (19 nulls: CA 10, LOOPBAR 5, CROSS 2, LL 2; 9 unread: C6 8, 4PI L01/12 1). Source: VERIFY-F61-V13 (AUDIT.md; verify_v13/meter_v13_result.txt), merged by F61-FAMILY-14, plus the L02-opening LL null endorsed by VERIFY-F61-LL and merged by A2-F61M (2 Oct 2026; family/h408_span_miss_apply_result.txt). 45 of the 59 two-way signs sit inside the spans and 14 outside. family/F61_FLOOR.md says 44/15 because its span column comes from scripts/f61_skeleton.txt, which predates the L03/16 insert; that sign carries Tomokiyo's final 'e' of "capable" (H407 part B, H408). Key v8 reproduces his 55 span letters 55/55 (permuted p95 0.436, 0/2000), so those letters are published, not ours.
-- print search on f.61r's full clear text - blocker: not-attempted; the clear text is now transcribed (A2-F61R, 2 Oct 2026: scripts/f61r_clear_reading.tsv, 112 words, H 87 / M 15 / I 10; both blind passes passed the f.108r known-answer gate 12/13 and agreed 0.845 against a line-shuffled control max 0.286). It names no writer, recipient, place or date; the content (a conversation held "familieremēt et amplemēt de toutes choses", the recipient being "sur les lieux") does not identify the letter by itself, and the clear words do not narrow the two-way signs (context judge retired, H33/H57/H25); next: tools/print_check.py with phrases from scripts/f61r_clear_reading.tsv (H-graded runs only, e.g. "Il seroit trop long vous en dire les", "on n'ose enuoyer", "je ne seroys pas paresseux"), ~$0.5
+- print search on f.61r's full clear text with the reconciled reading's phrases - blocker: not-attempted; tools/print_check.py was re-run on 2 Oct 2026 (VERIFY-F61R) but phrases.txt still holds the older single-pass fragments ("s'il s'y presentoit", "On ne desiroit"), not the reconciled and normalised forms (scripts/f61r_clear_reading.tsv, verified: H 87 / M 17 / I 8; normalised forms in scripts/f61r_clear_corrections.tsv); next: replace phrases.txt with runs from the verified reading, e.g. "Il seroit trop long vous en dire les propos", "s'il s'en presentoit les occasions", "on n'ose enuoyer", "Je ne seroys pas paresseux si", "tant soit peu", and re-run tools/print_check.py, ~$0.5
 - 12 two-way signs outside the spans: L01/9, L01/10, L02/1, L03/13, L05/2, L05/13, L10/1, L10/3, L10/4, L10/5, L10/6 and L10/11 (family/F61_FLOOR.md, less L03/16, which is inside S2; L01/11 and L11/8 are listed separately below) - blocker: waiting-on LOCAL-QUEUE L30 (the Henry-Loriquet edition, HathiTrust from the owner's desk); shape work is at its floor (H405), the context judge is retired (H33, H57, H25 L10 3/3 FAIL), the lattice was a non-test (H271), the n-gram chooser failed its power gate (H423), and H125 found that a controlled reading of the out-of-span material alone is impossible at its length. The print search ran on 2 Oct 2026 (NEXT-F61): no printed text of the letter was found in IA full text, the six volumes of the 1758 Memoires de la Ligue, Gallica's exact-phrase search (which covers Gomberville's Nevers, 1665), Google Books, OpenAlex or CrossRef. The Henry-Loriquet date range is unchecked, so L30 asks for it first; next: when L30 answers, re-run tools/print_check.py with any hit volume as a listed source, ~$0.5; and re-run the search on the full clear text once it is transcribed (gap above)
 - 45 two-way signs inside the spans: an independent choice of letter by our own instrument (today they carry only Tomokiyo's published letters, grade M) - blocker: waiting-on ASKS 88, 89 and 93 (a person's reads of the f.108r, f.108v and f.211r period glosses); H423's chooser needs a held-out licence. The scorer family/h430_ctx_heldout.py is ready, and H434 puts its power at 0.88 only once all three reads have landed. None of scripts/gloss108_person.tsv, gloss108v_person.tsv or gloss211r_person.tsv exists, and all three ASKS rows are 'backlog' (checked 2 Oct 2026); next: run family/h430_ctx_heldout.py when the files land, ~$0
 - BnF fr.4699 ff.37-38 and 41-42 (P. de Fortia to Mayenne's secretaries, Lyon, 7 Feb 1593, catalogued "avec chiffre et dechiffrement", ark:/12148/cc57749t items 18-19; not on Gallica): a possible fourth period witness for the key - blocker: needs-physical-access; family/REQUEST_fr4699.md was drafted 28 Sept 2026 (F61-FAMILY-7) but never sent, and it has no ASKS, LOCAL-QUEUE or SEND-QUEUE row (grepped 2 Oct 2026). The classifier listed this only under siblings; next: the orchestrator files an ASKS row from REQUEST_fr4699.md, asking for a single image of fol. 37r first, ~$0
@@ -6364,3 +6364,42 @@ Files: `scripts/f61r_clear_passA.tsv`, `scripts/f61r_clear_passB.tsv` (verbatim)
   re-run is needed (rule 7: the reading's own regenerator is `scripts/f61r_clear_reading.py --check`, OK).
 - No judge was run. A clear-hand transcription has no spec judge, and the leaf's context judge is retired.
 - **Not found / not done:** the full-clear-text print search (gap, next step).
+
+
+### Verifier VERIFY-F61R (2 Oct 2026, 23:04-23:15 UTC by date -u, account 2, LANE-A2PUSH): second eye on the A2-F61R clear text
+
+Separate session from A2-F61R. Read in full: the eleven line sheets `images/f61sheetB_L01-L11.jpg` (my own eye, word by word against
+`scripts/f61r_clear_reading.tsv`; no full page, 0 subagent calls), the pass, reconciliation and score files, both scripts.
+
+- **Scripts.** `scripts/f61r_clear_reading.py --check` OK before and after my edit. `scripts/f61r_clear_score.py` has no `--check`; re-run on the
+  committed passes into a scratch file, it is byte-identical to `scripts/f61r_clear_score.txt` (KA 12/13 both passes, WA 93/110 = 0.845, control
+  mean 0.052 max 0.286).
+- **Control design (rule 3).** The line-shuffled control can fail differently from the target: word agreement depends on which two lines are
+  paired, so it is not a non-test. It is weak, though. It shows that the passes track the same lines; it does not show that they are right. Both
+  passes are the same model and can share an error: both read the f.108r known line as "Je doibs auoir". Accuracy rests on the KA gate
+  (12/13 per pass), not on WA. So "H" here means two passes by one model agree on the ink. It is not an independent reader's grade.
+- **Per line.**
+  - L01: endorse. "N?us/I" stays I: the initial is under the stamp, though "auons" makes "Nous" the only fit.
+  - L02: endorse.
+  - L03: endorse the letterforms. Normalised: "Combiey" = Combien, "pleay" = plein ("Et plein de generosité" runs into L04).
+  - L04: endorse, plus one correction. A clear stop sits after the cipher run, before capital "Mais". It is restored as punctuation, not a word.
+  - L05: endorse. "ey" = en.
+  - L06: endorse. "ey" = en; "desfieroit" stays I.
+  - L07: endorse, including "mesr'" at I. Seg1's "on" ends in the same descender loop that the reading writes as y elsewhere, and both passes read it "on".
+  - L08: endorse. "qu'oy" = qu'on (the same tailed n).
+  - L09: endorse. "s'ey" = s'en, twice.
+  - L10: endorse.
+  - L11: **correct** "sou/I" to **"soit"/M**: "so", one minim, then a t whose crossbar runs on as a hairline, the same t-bar as "tant" just
+    before it, with no separate u bowl. This gives the idiom "tant soit peu". Also **upgrade** "peu/I" to **M**: a p with a crossed
+    descender, then "eu", then a stop.
+- **The y-for-n letterform, not a correction.** The descender-loop final the reading writes as y in "Combiey", "pleay", "ey", "qu'oy" and
+  "s'ey" is this hand's tailed final n. The reading keeps the diplomatic letterform, which is right for a transcription. A phrase search must
+  use the normalised forms, though, and so must anyone quoting the text. These are listed in `scripts/f61r_clear_corrections.tsv`. No grade
+  changes for these.
+- **Totals after verification:** 112 words, H 87 / M 17 / I 8 (was H 87 / M 15 / I 10). Corrections log: `scripts/f61r_clear_corrections.tsv`.
+- **Print check.** phrases.txt already listed H-word runs, so `tools/print_check.py` was run: 12 phrases, 124 rows, 19 with hits. Requests:
+  archive.org 1, be-api 24, googleapis 12, openalex 13, semanticscholar 3 (HTTP 429 after the first two phrases; stopped, not retried), crossref 2.
+  The one exact IA full-text hit, "sur les lieux vous verres" in `lettresinstructi07richuoft` (Richelieu's *Lettres, instructions
+  diplomatiques*, vol. 7), is a common formula in a 17th-century edition and is not taken as this letter. The Google Books and OpenAlex counts
+  are loose-match volumes. A search result, not a novelty verdict (rule 10). The phrase list predates the reconciled reading. Refreshing it is
+  the named next step in Remaining gaps.

@@ -1,0 +1,9 @@
+line	word_before	grade_before	word_after	grade_after	kind	evidence (VERIFY-F61R, 2 Oct 2026, from images/f61sheetB_L01-L11.jpg, line sheets only)
+11	sou	I	soit	M	correction	seg2 "so" + one minim + a t whose crossbar runs on as a long hairline, the same t-bar as "tant" just before it; no separate u bowl; idiomatic "tant soit peu"
+11	peu	I	peu	M	upgrade	seg3: p with crossed descender (as "point" L06, "pouuoit" L09) + "eu" + stop; the reconciler's own description already gave these letters
+04	(none)	-	.	-	punctuation	seg2: a clear dot on the baseline after the cipher sign, before capital "Mais" (same shape as the stop the reading records in L05); not a word, not counted
+03	Combiey	M	Combien	M	normalised form only	final letter is this hand's tailed final n (descender loop): the same tail closes "on" in L07 seg1, which both passes read as "on". Diplomatic "Combiey" kept in the reading file
+03	pleay	I	plein	I	normalised form only	same tailed final n; "Et plein de generosité" across L03-L04. Diplomatic "pleay" and grade I kept (the third letter is still uncertain)
+05,06	ey	M	en	M	normalised form only	tailed final n; "si nous mesmes en ... en conoyssant le fruit en fesions"
+08	qu'oy	H	qu'on	H	normalised form only	tailed final n, as "on" L07
+09	s'ey (x2)	M	s'en (x2)	M	normalised form only	tailed final n; "s'il s'en presentoit les occasions ... s'il s'en pouuoit prendre quelqu'vne"
