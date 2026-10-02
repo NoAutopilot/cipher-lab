@@ -1,0 +1,25 @@
+passage	pos	sign_id	conf	note
+L02	A2	T57	L	round head with tail, sign present between triangle and boxed-dot
+L02	15	T76	M	plain g with long curved tail
+L02	22	T86	M	hash with tall verticals
+L02	23	T29	M	eps with attached o
+L02	29	T97	M	loop-ampersand shape
+L03	4	T86	M	hash tall verticals
+L03	10	T36	M	ring with short stem
+L03	16	X_NEW	M	plus with extra ticks/dots on top
+L03	27	T97	M	loop-ampersand
+L03	30	T64	H	three-hump m
+L04	25	T90	M	cross bar over loop
+L04	31	T24	L	eps fragment at page edge
+L05	3	T26	M	g with inner curl and tail
+L05	8	X_NEW	M	b with hooked flag top
+L05	14	T95	M	p with crossbar on stem
+L05	15	T86	M	hash tall verticals
+L05	16	T29	M	eps with o
+L05	24	T86	M	hash tall verticals
+L06	1	T64	L	m with entry flourish
+L06	6	T76	M	plain g long tail
+L06	12	T24	H	eps
+L06	14	T89	M	hooked top plus lower loop
+L06	17	T86	M	hash tall verticals
+L06	26	T97	M	loop-ampersand

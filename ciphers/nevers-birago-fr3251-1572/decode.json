@@ -90,6 +90,28 @@
     "M",
     "L"
    ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f139v.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f139v.txt",
+   "tokens": "harvest/reading_f139v_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
   }
  ]
 }
