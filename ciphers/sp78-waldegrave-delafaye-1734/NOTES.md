@@ -1,4 +1,6 @@
-open (low confidence — see "report about a cipher" flag below)
+open
+
+Coxe, Memoirs of Walpole (1798) vols 1-3 read by this worker as whole-volume full-text greps of the archive.org djvu text (bim_eighteenth-century_memoirs-of-the-life-and-_coxe-william_1798_1/2/3, 2 Oct 2026): "Marsay" 0 hits in all three volumes, no Waldegrave-to-Delafaye letter of 21 July 1734 (the nearest 1734 July items in vol.3 are London 16 July and Vienna 31 July); low confidence stands: the Discovery record reads as a report about a cipher, not ciphertext, and no image is online.
 
 # Waldegrave to Delafaye — TNA SP 78/205/95
 
@@ -79,3 +81,13 @@ cryptanalysis or recovery target without a page check first** confirming cipher 
 on f.146 (see REQUEST.md, which asks for exactly that confirmation alongside the copy).
 
 **Copy status:** no online image located; **copy-order**. See REQUEST.md.
+
+## Web and blog check (CS-A2-B, 2 Oct 2026)
+
+Queries (WebSearch, standard): (1) "Waldegrave Delafaye 21 July 1734 Fleury Newcastle cypher Marsay SP 78/205"; (2) "SP 78/205" cipher OR cypher OR chiffre Waldegrave 1734; (3) "Waldegrave" Fleury copy of Newcastle's cypher letter French knew English cipher 1734 deciphered; (4) Cipherbrain OR "Cipher Mysteries" OR cryptiana Waldegrave Newcastle 1734 cipher; (5) ciphermysteries.com-restricted search, same terms. Every hit was a TNA Discovery/beta catalogue record (SP 78/205 neighbours, SP 78/209/87 of 1 Sept 1735 "an informer has offered to give him the cypher"), a Bodleian/HistoCrypt/TNA blog page on other ciphers, or the Cipher Mysteries index pages; none names this letter, a decipherment or a discussion. Blog site searches: Cryptiana blogspot `search?q=Waldegrave` (200, the only match is the page's own query echo, 0 posts), Cipherbrain `?s=Waldegrave` (200, 0 posts), Cipher Mysteries `?s=Waldegrave` answered 406 to curl, so covered only by the restricted web search above (comment threads of its hits not opened: none relevant). Whole-volume Coxe grep: Marsay 0/0/0; Delafaye 0/7/18 (all Delafaye-to-Waldegrave direction or index lines). DECODE: login-free `tools/decode_list.py --status non-decrypted` crawl of 2 Oct 2026 (801 rows, 17 requests): 0 rows for Waldegrave, Delafaye, Marsay or SP 78. Solver repos: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers grepped on 2 Oct 2026: no Waldegrave/Delafaye/Marsay/SP 78/205 hit in either (the "waldegrave" files in cyphersolver are the Charles I and Bay 1706 targets, a different Waldegrave). Aymeloglu: cited, no code used.
+
+## Premise check (CS-A2-B, 2 Oct 2026)
+
+(a) Folder's own files: NOTES.md and REQUEST.md mention no decipherment, gloss or attached clear copy; the Discovery description itself says the folio is a copy "of a letter in cypher" seen on a table, so any ciphertext on f.146 would be Newcastle's, not Waldegrave's. Not found. (b) Other solvers' working files: nothing for SP 78/205 in either repository. Not found. (c) Physical neighbours: no image exists online (TNA Discovery record C7336977, not digitised, copy-order); neighbours f.99-type items listed only by catalogue: SP 78/205/94 (17 July, Paris Gazette enclosure) has no cipher sentence. Unreachable (no image). (d) Recipient side: Coxe's Walpole papers cover Delafaye/Walpole/Newcastle; nothing for 21 July 1734 (above). Not found.
+
+Hosts this pass: archive.org 3 downloads, discovery.nationalarchives.gov.uk 2, de-crypt.org 17 (no login), github.com 2 clones, cryptiana.blogspot.com 1, scienceblogs.de 1, ciphermysteries.com 1, WebSearch 5.
