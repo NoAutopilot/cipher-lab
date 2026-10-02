@@ -1,0 +1,13 @@
+# Six sign values implied by the within-sheet crib "batterijen" on 4.VEL 2061 legend e (ciphertext_2061_battery.tsv
+# L09 word 4, "d [delta] r λ 7 o b t a h"), whose other four signs already carry the crib's letters in key.tsv/aliases
+# (a, t, e, r). Tested by crib_2061_batterijen.py (output crib_2061_batterijen.out): 4/4 keyed agree vs 0/29 other
+# 10-sign windows on the sheet and 0/315 on 2039's legend; rest-of-sheet bigram z +2.52 vs shuffled implied values
+# (1/20; 2/200). GAPS9-na-suriname-map-1781, 2 Oct 2026. Grade M wherever these signs occur outside the crib word
+# (decode.json m_sources); the crib word's own ten positions are graded S in exceptions_2061_battery.tsv.
+code	value	grade	source	note
+d	b	M	crib_2061_batterijen	legend e pos0; may be the same sign as key [v-tall]=d drawn small -- not merged (value differs)
+r	t	M	crib_2061_batterijen	legend e pos2; second T homophone beside λ
+b	i	M	crib_2061_batterijen	legend e pos6
+t	j	M	crib_2061_batterijen	legend e pos7; j/y: L04 word 3 "t y a o" then reads j-s-e-r = "yser" (iron), see NOTES GAPS9
+a	e	M	crib_2061_batterijen	legend e pos8; plausibly key [a-plain]=e under a bare code name (not merged)
+h	n	M	crib_2061_batterijen	legend e pos9; plausibly key [h-loop]=n under a bare code name (not merged)

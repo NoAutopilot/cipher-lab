@@ -1,0 +1,8 @@
+crib 'batterijen' on 2061_bat_L09 word 4: d [delta] r λ 7 o b t a h
+S1 real: 4 keyed signs agree, 0 conflicts; implied 6: d=b r=t b=i t=j a=e h=n
+S2 real: mean log P -2.848 over 33 recurring pairs outside the window
+control A (other 10-sign words, 1 placements): S1 agree>=4 with conflicts<=0: 0/1; mean agree 0.00, mean conflicts 2.00; conflict-free placements 0, S2 at or above real 0/0
+control A (every other 10-sign window, 29 placements): S1 agree>=4 with conflicts<=0: 0/29; mean agree 0.07, mean conflicts 2.76; conflict-free placements 0, S2 at or above real 0/0
+control A' (every 10-sign window of 2039's legend, S1 only, 315 placements): agree>=4 with conflicts<=0: 0/315; max agree 3; conflict-free 1
+control B (implied values shuffled, 20 seeds): S2 mean -3.475 sd 0.248 p95 -3.184; real z +2.52; 1/20 at or above real
+control B (implied values shuffled, 200 seeds): S2 mean -3.448 sd 0.259 p95 -3.000; real z +2.32; 2/200 at or above real
