@@ -19,6 +19,8 @@ D623/10 and D623/11 are **already noted as decoded/partly decoded by the India O
 novel targets; order only if a legible image of the cipher text itself is wanted for a control/comparison,
 not as a fresh recovery target.
 
+**Correction, 2 Oct 2026 05:3x UTC (GAPS2-mornington-1798, NOTES.md "GAPS2-mornington-1798" section):** D623/24's date, recipient and subject (7 Jun 1799, Mornington to Dundas, the proposed settlement of Mysore) are also printed in Martin 1836 Vol. 2 No. XV pp. 35-43 (read 2 Oct 2026; `print/D623-24_candidate_martin1836_v2_p35.txt`), so /24 joins /5 and /23 as print-attested on date and subject and is not a fresh recovery candidate before the key test. D623/35 (21 Jun 1800) has no printed witness in Vol. 2 (both date forms, 0 hits; Ingram's footnote to p. 311 cites the 9 Jul 1800 Rainier letter). The order itself is unchanged; the ASKS row is the parent's.
+
 ## What to request
 
 **Route:** British Library Imaging Services (Boston Spa, Document Supply), via the BL's standard imaging
