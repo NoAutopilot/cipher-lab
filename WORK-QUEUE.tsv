@@ -111,6 +111,6 @@ VERIFY-NEVBIR-82	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-82.md	
 NEVBIR-174V-A	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-174v.md	Fable	5	55	claimed session_013ahvx17TsWWJJe4xzj7MhP 2026-10-02 18:11	2026-10-02 17:09	nevers-birago no.86 f.174v HALF A
 NEVBIR-174V-B	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-174v.md	Fable	5	55	claimed session_011vCzhATmNuHrrJGf2ot5YQ 2026-10-02 18:11	2026-10-02 17:09	nevers-birago no.86 f.174v HALF B + f.175r head + f.175v
 NEVBIR-POOL	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-pool.md	Fable	3	35	claimed session_015DaE5rVM1789AY8g52Kg3w 2026-10-02 18:11	2026-10-02 17:09	pooled joint shuffled-key test of no.73/85/86 short runs
-VERIFY-NEVBIR-86	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-86.md	Fable	5	50	queued	2026-10-02 18:30	verifier: nevers-birago no.86 (759 signs)
-NEVBIR-185	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-185.md	Fable	5	55	queued	2026-10-02 18:31	nevers-birago no.90: f.184v foot + f.185r/v (~25 lines)
-NEVBIR-LOOKALIKE	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-lookalike.md	Opus 5.5	5	50	queued	2026-10-02 19:02	nevers-birago no.73/no.85: confusion map + look-alike re-read + control; sorter package for owner (no blocking)
+VERIFY-NEVBIR-86	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-86.md	Fable	5	50	claimed session_01JRU1d5d7VpLr7j1atZLW3c 2026-10-02 19:09	2026-10-02 18:30	verifier: nevers-birago no.86 (759 signs)
+NEVBIR-185	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-185.md	Fable	5	55	claimed session_01QfXKNgPadKwarCDrUAw4d5 2026-10-02 19:09	2026-10-02 18:31	nevers-birago no.90: f.184v foot + f.185r/v (~25 lines)
+NEVBIR-LOOKALIKE	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-lookalike.md	Opus 5.5	5	50	claimed session_01SLgdLnwEPVEAKbUo8Lkto9 2026-10-02 19:09	2026-10-02 19:02	nevers-birago no.73/no.85: confusion map + look-alike re-read + control; sorter package for owner (no blocking)
