@@ -1,0 +1,11 @@
+# jan-van-nassau-1572-75 -- hypothesis families
+
+Append-only. CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row. Rows written by hand here (likely8/run.py is a key application, not a `tools/family_run.py` family); a family_run.py row would follow the same layout.
+
+| date | worker | hypothesis | target (N) | target number | control | control number | gate met | verdict |
+|---|---|---|---|---|---|---|---|---|
+| 2 Oct 2026 | LIKELY-8 | 5549 postscript (PS7-PS25, 18 lines) is in key_full (Lodewijk's 1574 table + AX-MERGE), known answer = Groen Suppl. pp.146*-148* clear print | 116 letter tokens | letter similarity 0.842; 107/116 tokens match (4 of 9 misses = one digit swap) | 20 value-shuffled copies of key_full | similarity mean 0.249, max 0.340 | yes | key right, transcription ~92-96% (known answer confirmed with numbers) |
+| 2 Oct 2026 | LIKELY-8 | 5549 body (runs 1-61, 537 groups) is in key_1572 | 241 letters | word cover 0.178; de16 lm -1.661; judge FAIL | 20 value-shuffled copies of key_1572; instrument control = PS stretch under key_full (cover 0.354 vs shuffle max 0.280) | cover mean 0.195, max 0.265; lm mean -1.642, max -1.549 | yes (instrument separates the known answer on cover) | negative, control-backed |
+| 2 Oct 2026 | LIKELY-8 | 5549 body is in key_5549 (Lodewijk's 1574 table) | 574 letters | word cover 0.091; de16 lm -1.597; judge FAIL | as above | cover mean 0.114, max 0.142; lm mean -1.625, max -1.574 | yes | negative, control-backed (lm edges the shuffle max by 0.02, but lm does not separate the known answer either: non-instrument) |
+| 2 Oct 2026 | LIKELY-8 | 5549 body is in key_full | 594 letters | word cover 0.101; de16 lm -1.590; judge FAIL | as above | cover mean 0.200, max 0.237; lm mean -1.559, max -1.473 | yes | negative, control-backed |
+| 2 Oct 2026 | LIKELY-8 | the de16 judge (`LANG_CORPORA["de"]`, 8.5 KB composed text) can gate a reading of this letter | Groen's genuine clear prose of 5549, 10,311 letters | lm median -1.34, p05 -1.71 (N=285/574); the known-read PS decode FAILs the judge | judge's own real_p05 -0.45 / null_p99 -1.63 (in-sample) | -- | no | judge void for this target (rule 3 corpus lesson); word cover vs shuffled keys is the usable statistic |

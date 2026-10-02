@@ -1401,3 +1401,58 @@ letters or copies from Jan dated March-April 1574, and whether either is on micr
 
 Requests this pass: arcinsys.hessen.de about 140 (36 sub-node counts, 96 list pages, 4 navigator JSON, 4 detail
 pages, a few node pages), 1.6 s apart, one at a time, no challenge or error.
+
+## Web and blog check (LIKELY-8, 2 Oct 2026)
+
+Run first because `tools/intake_gate_check.py jan-van-nassau-1572-75` exited 1 on the missing check alone (check-solved.md "Required step", 28 Sept 2026). Clock read 03:36 UTC, 2 Oct 2026. WebSearch (plain web) throughout; no hit was plausible enough to open (none names this letter, its date or any decipherment of it), so no comment thread was read.
+
+(a) Plain web searches, five:
+1. `Jan van Nassau Willem van Oranje 21 November 1573 brief cijfer ontcijferd Dillenburg` -- hits: nl.wikipedia Jan VI, DBNL (a 1579 letter), the WVO literatuurlijst, genealogy pages. Nothing on 5549 or any cipher.
+2. `Groen van Prinsterer Archives Supplement Lettre 45 1573 chiffre Jean de Nassau "verendertte"` -- hits: DBNL's Supplement colophon and table of contents, the IA scan of Archives 1re serie, the Huygens edition page. The DBNL snippet repeats Groen's own p.140 note ("chiffre des trois Comtes de Nassau ... autre chiffre du Comte Jean"); no decipherment of the body anywhere.
+3. `"die alte Ciffer" Nassau 1573 Dillenburg Oranien Brief` -- hits: Deutsche Biographie, Wikipedia genealogy, Hessen Kassel object database. No cipher content.
+4. `Koninklijk Huisarchief A 11 XIV Jan van Nassau 1573 cipher letter numerals key solved` -- hits: dbourdeau.github.io/cyphersolver index (our own circle's work is cited there, no 5549 body reading), Cryptologia papers on Maximilian II 1575 and papal ciphers, Wikipedia cipher pages. Nothing on this letter.
+5. Quoted clear-text phrase: `"bisz zu ende gebraucht" OR "widder ahngefangen" Ciffer Nassau 1573` -- hits: Hessen Landesarchiv Nassau catalogue 1866 PDF, Nassau coin pages, Wikipedia counts of Nassau. No hit quotes the letter.
+
+(b) Blog site searches, three:
+- Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Nassau Oranien 1573 verschlüsselt`): Kryptos, Bonn Stadtarchiv, a French Archives nationales letter (whose comments mention a Philipp von Nassau letter of 1519, a different century), Biermann's 17th-c. letters. No post or comment on a 1573 Nassau letter.
+- Cryptiana blog (`site:cryptiana.blogspot.com Nassau Orange 1573 cipher`): the forum root, Henry IV 1590, the 2018 index. No Nassau/Orange 1573 item. (Tomokiyo's pages: the circle's 1572 table is the Konst- en Letterbode reprint already on file as key_1572; no 5549 page known, LESSONS-TOMOKIYO.md.)
+- Cipher Mysteries (`site:ciphermysteries.com Nassau Orange 1573 cipher letter`): Zodiac, Albany, Milanese letters, d'Agapeyeff, Dorabella. Nothing.
+
+Verdict unchanged: no decipherment or plaintext of the 5549 body found on the open web or in the three blogs' indexed posts; Groen's Suppl. pp.140-148 (read by this folder's csWV2/J5I workers, 24 Sept 2026) prints the body's numerals raw and the postscript stretch in clear (N1, AUDIT.md V1).
+
+## LIKELY-8 (2 Oct 2026, account-4)
+
+Worker LIKELY-8-jan-van-nassau-1572-75 (Fable 5.1), brief `.claude/briefs/runs/2026-10-02-account4-likely-phase2.md`, row 8 of `ciphers/_triage/likely-solves-2026-10-02.tsv`. Intake gate: exit 1 on the missing web/blog check only; the section above was written and the gate re-run (output pasted at the end of this section). Disk only: 0 WVO requests, 0 vision calls, no subagents. Script `likely8/run.py` (reads `tools/judge_plaintext.py`'s own de16 model; writes `likely8/results.json`, `likely8/ps_decode_vs_groen.txt`, `likely8/body_<key>.txt`); spec `specs/jan-van-nassau-1572-75.json` (new, Pipeline 3a) with a `cheap_test_done` entry.
+
+**Step 1, known answer first (README common tail): the postscript under key_full vs Groen's clear print, key and transcription separately.** 18 of the 26 PS lines have a counterpart in Groen's pp.146*-148* (`groen/gpas_lettre45.txt` ll.251-271), hand-mapped in `likely8/run.py` (GROEN dict). No counterpart: PS1-PS6 (Groen's print diverges from the leaf at the start of the stretch -- the leaf's clear context "sollt mich" is not in Groen; the WVO record calls the edition "onv."), PS12 (Groen prints only his own bracket "[de]" for a three-group run our key reads "[harquebouziers] de [franckreich]"), PS26 (a dot).
+- *Key*: mean per-line letter similarity (difflib ratio, u/v/w and i/j/y folded) of the key_full decode to Groen's span: **real 0.842 vs 20 value-shuffled copies of key_full mean 0.249, max 0.340**. The key is right for this stretch (as J5S/AX-MERGE found by eye; this is the number).
+- *Transcription*: of 116 letter-valued tokens in those 18 lines, **107 match the aligned Groen letter, 9 do not**; 4 of the 9 are repaired by one digit confusion of the token (115 'l' for Groen's 'm' in PS9 "uf de[m] wasser"; 9 'o' three times where Groen has 'n', PS13 "ha[n]t" and PS14 "u[nd]" -- 4=n/9=o in the table, and J5I's own calibration says this hand's 4 and 9 swap below 4x zoom). The other 5 are all in PS18, decode "zudor[136]gino" vs Groen "zuvor gedinet": 79 'd' for 'v' plus four tokens Groen's text does not account for -- transcription short or Groen's expansion, not decided here (image step, 0 vision calls in this brief). Also 8 U tokens, 16 NULL, 9 word codes, 4 clear in the scored lines. So: key right, transcription about 92-96% right on the postscript at the token level.
+- *Conflicts to log (rule 4, witnesses, not majority)*: (i) code **136**, key_full 'uingt' at M (AX-MERGE's unresolved class-(c) flag, 4613 witness), is a NULL in all 4 of its scored occurrences here (PS9, PS13, PS16, PS18: Groen's text has nothing where it stands) -- a second witness for the NULL reading alongside 5810/5811's 21/21, logged for the lodewijk folder's HYPOTHESES.md owner, not changed here; (ii) PS20 decode "zu [336 fussvolck]" where Groen prints "zu E.G." (336 = fussvolck is H from 5557's gloss, read 3x more in this stretch where Groen agrees) -- either Groen's decipherer substituted or 336 has a second use; (iii) PS21 "in [221 hollande] zihe" where Groen prints "[in] zihen" with his own bracket; (iv) PS24 "bey [153 pfaltzgraf]" where Groen expands "bey dem Churfürst Palsgrave". None changes a grade here.
+- *Calibration of the instrument used in step 2*: the whole PS stretch (226 tokens, 285 letters) under key_full, scored like the body: de16 4-gram **lm real -1.472 vs shuffled-key mean -1.516, max -1.371** (the real key does NOT beat its shuffles on the 4-gram score); **word cover real 0.354 vs shuffled mean 0.203, max 0.280** (it does, on cover). `tools/judge_plaintext.py` on that known-read decode: **FAIL** (language -1.472 vs real_p05 -0.462; words 0.354 vs min 0.5). Groen's own clear German of this very letter (10,311 letters, numerals and brackets removed) scores under the same model **median -1.34, p05 -1.71 at N=285/574, cover median 0.41** -- the genuine prose fails the judge's real_p05 (-0.45) and sits at its null_p99 (-1.63). Cause: `LANG_CORPORA["de"]` is `tools/data/de16/composed_enhg.txt`, 8.5 KB of model-composed text, so its "real" windows are in-sample. **The de16 judge is void as a gate for this target** (rule 3, the pt18/es17c corpus lesson, worse: the corpus is composed, not a period text). The one statistic the known answer validates is word cover vs shuffled keys (a 0.07 margin over the shuffle max at N=226).
+
+**Step 2: the 537 body groups (runs 1-61) under key_1572, key_5549 (= Lodewijk's 1574 table) and key_full, each vs 20 value-shuffled copies of the same key.** Clear fragments kept as clear, roman groups skipped.
+
+| key | letter / word / NULL / U of 537 | letters | lm real | lm shuffle mean / max | cover real | cover shuffle mean / max | judge |
+|---|---|---|---|---|---|---|---|
+| control: PS stretch, key_full (known read) | 170 / 13 / 30 / 13 of 226 | 285 | -1.472 | -1.516 / -1.371 | **0.354** | 0.203 / 0.280 | FAIL (void, above) |
+| body, key_1572 | 121 / 0 / 256 / 162 | 241 | -1.661 | -1.642 / -1.549 | 0.178 | 0.195 / 0.265 | FAIL |
+| body, key_5549 | 444 / 2 / 4 / 89 | 574 | -1.597 | -1.625 / -1.574 | 0.091 | 0.114 / 0.142 | FAIL |
+| body, key_full | 444 / 4 / 56 / 35 | 594 | -1.590 | -1.559 / -1.473 | 0.101 | 0.200 / 0.237 | FAIL |
+
+On the validated statistic (cover) every key's body decode sits at or below its own shuffle mean; key_5549's 4-gram score edges past its shuffle max by 0.02 but the known answer shows that score does not discriminate even for a right key. **Control-backed negative: the body is not in key_1572, not in Lodewijk's 1574 table and not in key_full** (the control, the same letter's own postscript at N=226, separates real from shuffled by cover 0.354 vs max 0.280; the body at N=537 shows no such margin under any of the three). This confirms J5S/J6/J7's by-eye finding with numbers and a control; it is not a new negative on the body's own key, which remains unrecovered. Grades for the body: H 0, C 0, S 0, M 0, I 0 (unchanged).
+
+`python3 tools/judge_plaintext.py specs/jan-van-nassau-1572-75.json --file ciphers/jan-van-nassau-1572-75/likely8/body_key_5549.txt`:
+```
+FAIL language: score=-1.597, null_p99=-1.638, real_p05=-0.449, real_median=-0.43, mode=both, N=574
+FAIL words: cover=0.091, min=0.5, real_text_median_cover=0.767
+FAIL - jan-van-nassau-1572-75 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(key_1572 and key_full: FAIL on both checks too, numbers in the table and `likely8/results.json`.)
+
+Not run (the row's cell's second clause, outside the two steps the brief named): `interlinear_align.py` of the PS stretch's 80 groups above 99 against Groen's clear print. Its known-answer basis is above (18 mapped lines); the gain would be on the 13 U codes of the PS stretch, 8 of them in the mapped lines, and PS1-PS6 have no Groen text to align to. Suggestion, one line: a `likely8/pairs.tsv` from the GROEN dict plus `tools/interlinear_align.py` is about USD 1 and may read some of the 13 U codes at C; it does nothing for the body.
+
+Status stays `open` (the body is unread; the postscript was already read, N1). Next step for the body is unchanged from J7/WC-NASSAU-FIT2: a sibling letter in the "verendertte" key with a decipherment or a Groen clear text (the HStAM follow-up in the Marburg section, needs a person), or a larger period German corpus before any further annealer run -- and, for any German target on this board, a real ENHG corpus in `tools/data/de16` before trusting a de judge (flag for the parent: `LANG_CORPORA["de"]` is 8.5 KB of composed text and the genuine prose of this letter fails it).
+
+Requests: 0 (resources.huygens.knaw.nl 0, disk only). Vision calls 0. Subagents 0.
+
+`python3 tools/intake_gate_check.py jan-van-nassau-1572-75` after the web/blog section (03:42 UTC): `jan-van-nassau-1572-75: open (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0 (was exit 1 on the missing check alone before it).
