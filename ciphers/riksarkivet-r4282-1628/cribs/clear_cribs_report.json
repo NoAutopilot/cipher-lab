@@ -1,0 +1,4780 @@
+{
+ "transcription": "r4282_transcription_bourdeau.txt (Bourdeau, dbourdeau/cyphersolver fc0c9e8, CC BY 4.0)",
+ "N": 1094,
+ "K": 34,
+ "groups": [
+  864,
+  230
+ ],
+ "corpus": [
+  "/home/user/cipher-lab/tools/data/la18/zaluski_epistolae_t1.txt.gz",
+  "/home/user/cipher-lab/tools/data/la18/zaluski_epistolae_t2.txt.gz",
+  "/home/user/cipher-lab/tools/data/la18/zaluski_epistolae_t3.txt.gz"
+ ],
+ "brik_compare_ties": {
+  "a": {
+   "e": 1,
+   "l": 1,
+   "o": 1
+  },
+  "b": {
+   "f": 2,
+   "m": 2,
+   "s": 1
+  },
+  "d": {
+   "n": 1,
+   "o": 1
+  },
+  "e": {
+   "n": 1,
+   "s": 1
+  }
+ },
+ "settings": {
+  "homophones": true,
+  "wild": [],
+  "skip": [],
+  "shuffles": 200,
+  "seed": 1
+ },
+ "runs": [
+  {
+   "id": "P1-err0",
+   "kind": "target",
+   "where": "p1, line 10, inside the sentence: 'xpEr4m [..] Spr MrAq5bD'",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "et qualis sit eius futurus status dubitatur",
+   "folded": "etqualissiteiusfuturusstatusdubitatur",
+   "length": 37,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_starts": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "max": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1-err0-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "joannis ad brandeburgicum nos serenitatem",
+   "folded": "ioannisadbrandeburgicumnosserenitatem",
+   "length": 37,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_starts": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "max": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1-err0-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "et qualis sit eius futurus status dubitatur",
+   "max_err": 0,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 1,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    15,
+    15
+   ],
+   "real_best_score": -2.7725,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 0,
+   "shuffles": 100
+  },
+  {
+   "id": "P1-err1",
+   "kind": "target",
+   "where": "p1, line 10, inside the sentence: 'xpEr4m [..] Spr MrAq5bD'",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "et qualis sit eius futurus status dubitatur",
+   "folded": "etqualissiteiusfuturusstatusdubitatur",
+   "length": 37,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_starts": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "max": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1-err1-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "joannis ad brandeburgicum nos serenitatem",
+   "folded": "ioannisadbrandeburgicumnosserenitatem",
+   "length": 37,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_starts": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "max": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1-err1-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "et qualis sit eius futurus status dubitatur",
+   "max_err": 1,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 1,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    15,
+    15
+   ],
+   "real_best_score": -2.7725,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 0,
+   "shuffles": 100
+  },
+  {
+   "id": "P1-err2",
+   "kind": "target",
+   "where": "p1, line 10, inside the sentence: 'xpEr4m [..] Spr MrAq5bD'",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "et qualis sit eius futurus status dubitatur",
+   "folded": "etqualissiteiusfuturusstatusdubitatur",
+   "length": 37,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_starts": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "max": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1-err2-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "joannis ad brandeburgicum nos serenitatem",
+   "folded": "ioannisadbrandeburgicumnosserenitatem",
+   "length": 37,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_starts": {
+    "mean": 0.0,
+    "p95": 0,
+    "max": 0
+   },
+   "control_best_score": {
+    "mean": null,
+    "p95": null,
+    "max": null,
+    "n_with_placement": 0
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P2-err0",
+   "kind": "target",
+   "where": "p1, line 21, inside the sentence: 'rbbl5p8MmLu [..] LkMnl7oa'",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 50,
+    "1": 21,
+    "2": 5
+   },
+   "crib": "sed tamen ut res",
+   "folded": "sedtamenutres",
+   "length": 13,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 76,
+   "real_distinct_starts": 76,
+   "real_best_score": -2.6108,
+   "control_placements": {
+    "mean": 43.79,
+    "p95": 67,
+    "max": 88
+   },
+   "control_starts": {
+    "mean": 43.79,
+    "p95": 67,
+    "max": 88
+   },
+   "control_best_score": {
+    "mean": -2.6235,
+    "p95": -2.5916,
+    "max": -2.5498,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 1,
+   "rank_best_at_or_above": 57,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 851,
+     "errs": 0,
+     "score": -2.6108,
+     "coverage": 462,
+     "key": {
+      "4": "n",
+      "7": "m",
+      "S": "t",
+      "T": "d",
+      "b": "a",
+      "e": "r",
+      "f": "e",
+      "g": "e",
+      "h": "s",
+      "k": "t",
+      "p": "u",
+      "t": "e",
+      "u": "s"
+     },
+     "agree_with_brik": {
+      "t": "e"
+     },
+     "conflict_with_brik": {
+      "k": "t!=u",
+      "p": "u!=a",
+      "g": "e!=r"
+     },
+     "compared": 4
+    },
+    {
+     "start": 752,
+     "errs": 0,
+     "score": -2.6281,
+     "coverage": 489,
+     "key": {
+      "5": "n",
+      "7": "u",
+      "D": "s",
+      "L": "e",
+      "M": "t",
+      "T": "m",
+      "c": "r",
+      "h": "s",
+      "l": "d",
+      "m": "e",
+      "n": "t",
+      "o": "e",
+      "q": "a"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "e!=p",
+      "l": "d!=p",
+      "c": "r!=n",
+      "o": "e!=m"
+     },
+     "compared": 4
+    },
+    {
+     "start": 848,
+     "errs": 0,
+     "score": -2.6308,
+     "coverage": 554,
+     "key": {
+      "4": "r",
+      "7": "u",
+      "8": "s",
+      "M": "e",
+      "S": "s",
+      "T": "m",
+      "b": "n",
+      "f": "a",
+      "k": "e",
+      "n": "d",
+      "p": "e",
+      "t": "t",
+      "u": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "e!=u",
+      "t": "t!=e",
+      "p": "e!=a"
+     },
+     "compared": 3
+    },
+    {
+     "start": 362,
+     "errs": 0,
+     "score": -2.6316,
+     "coverage": 499,
+     "key": {
+      "5": "e",
+      "7": "t",
+      "8": "r",
+      "A": "n",
+      "b": "e",
+      "g": "s",
+      "o": "a",
+      "p": "d",
+      "q": "u",
+      "r": "m",
+      "t": "e"
+     },
+     "agree_with_brik": {
+      "t": "e"
+     },
+     "conflict_with_brik": {
+      "g": "s!=r",
+      "p": "d!=a",
+      "o": "a!=m"
+     },
+     "compared": 4
+    },
+    {
+     "start": 74,
+     "errs": 0,
+     "score": -2.6321,
+     "coverage": 535,
+     "key": {
+      "3": "d",
+      "4": "s",
+      "5": "a",
+      "A": "s",
+      "D": "t",
+      "F": "m",
+      "M": "n",
+      "b": "e",
+      "k": "e",
+      "l": "e",
+      "p": "u",
+      "q": "t",
+      "u": "r"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "d!=s",
+      "k": "e!=u",
+      "p": "u!=a",
+      "l": "e!=p"
+     },
+     "compared": 4
+    }
+   ]
+  },
+  {
+   "id": "P2-err0-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 55,
+    "1": 25,
+    "2": 4
+   },
+   "crib": "pari ter san dei",
+   "folded": "paritersandei",
+   "length": 13,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 84,
+   "real_distinct_starts": 84,
+   "real_best_score": -2.5216,
+   "control_placements": {
+    "mean": 41.72,
+    "p95": 63,
+    "max": 85
+   },
+   "control_starts": {
+    "mean": 41.72,
+    "p95": 63,
+    "max": 85
+   },
+   "control_best_score": {
+    "mean": -2.5331,
+    "p95": -2.4756,
+    "max": -2.4434,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 1,
+   "rank_best_at_or_above": 60,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 809,
+     "errs": 0,
+     "score": -2.5216,
+     "coverage": 544,
+     "key": {
+      "4": "e",
+      "5": "n",
+      "E": "d",
+      "L": "s",
+      "M": "a",
+      "b": "i",
+      "e": "p",
+      "m": "t",
+      "n": "r",
+      "p": "e",
+      "r": "r",
+      "t": "i",
+      "x": "a"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "s!=p",
+      "p": "e!=a",
+      "t": "i!=e"
+     },
+     "compared": 3
+    },
+    {
+     "start": 971,
+     "errs": 0,
+     "score": -2.5421,
+     "coverage": 464,
+     "key": {
+      "4": "a",
+      "5": "n",
+      "^": "s",
+      "b": "e",
+      "f": "i",
+      "g": "d",
+      "i": "r",
+      "m": "a",
+      "p": "r",
+      "r": "i",
+      "t": "t",
+      "u": "e",
+      "x": "p"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "i": "r!=t",
+      "t": "t!=e",
+      "p": "r!=a",
+      "g": "d!=r"
+     },
+     "compared": 4
+    },
+    {
+     "start": 813,
+     "errs": 0,
+     "score": -2.5487,
+     "coverage": 547,
+     "key": {
+      "4": "a",
+      "5": "e",
+      "E": "r",
+      "L": "i",
+      "M": "n",
+      "S": "d",
+      "a": "e",
+      "b": "i",
+      "m": "p",
+      "n": "r",
+      "p": "s",
+      "t": "a",
+      "x": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "i!=p",
+      "p": "s!=a",
+      "t": "a!=e"
+     },
+     "compared": 3
+    },
+    {
+     "start": 196,
+     "errs": 0,
+     "score": -2.5684,
+     "coverage": 505,
+     "key": {
+      "4": "a",
+      "7": "i",
+      "8": "s",
+      "E": "n",
+      "M": "e",
+      "S": "e",
+      "a": "t",
+      "b": "i",
+      "l": "a",
+      "m": "p",
+      "n": "r",
+      "p": "d"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "a!=p",
+      "p": "d!=a"
+     },
+     "compared": 2
+    },
+    {
+     "start": 93,
+     "errs": 0,
+     "score": -2.5821,
+     "coverage": 588,
+     "key": {
+      "3": "p",
+      "7": "e",
+      "D": "e",
+      "L": "s",
+      "M": "r",
+      "a": "r",
+      "b": "i",
+      "h": "t",
+      "k": "i",
+      "n": "a",
+      "q": "d",
+      "r": "n",
+      "t": "a"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "p!=s",
+      "t": "a!=e",
+      "L": "s!=p",
+      "k": "i!=u"
+     },
+     "compared": 4
+    }
+   ]
+  },
+  {
+   "id": "P2-err0-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "sed tamen ut res",
+   "max_err": 0,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 95,
+   "true_placement_found": true,
+   "true_placement_rank": 15,
+   "top_key_right": [
+    1,
+    13
+   ],
+   "real_best_score": -2.6172,
+   "control_placements": {
+    "mean": 43.5,
+    "p95": 62,
+    "max": 78
+   },
+   "control_best_score": {
+    "mean": -2.6408,
+    "p95": -2.6056,
+    "n_with_placement": 100
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 13,
+   "shuffles": 100
+  },
+  {
+   "id": "P2-err1",
+   "kind": "target",
+   "where": "p1, line 21, inside the sentence: 'rbbl5p8MmLu [..] LkMnl7oa'",
+   "agree_with_brik_max_any_placement": 3,
+   "agree_with_brik_histogram": {
+    "0": 294,
+    "1": 110,
+    "2": 13,
+    "3": 1
+   },
+   "crib": "sed tamen ut res",
+   "folded": "sedtamenutres",
+   "length": 13,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 418,
+   "real_distinct_starts": 418,
+   "real_best_score": -2.5684,
+   "control_placements": {
+    "mean": 240.57,
+    "p95": 287,
+    "max": 301
+   },
+   "control_starts": {
+    "mean": 240.57,
+    "p95": 287,
+    "max": 301
+   },
+   "control_best_score": {
+    "mean": -2.5787,
+    "p95": -2.5523,
+    "max": -2.5233,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 52,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 84,
+     "errs": 1,
+     "score": -2.5684,
+     "coverage": 484,
+     "key": {
+      "3": "t",
+      "7": "a",
+      "A": "d",
+      "L": "e",
+      "M": "e",
+      "b": "u",
+      "g": "n",
+      "l": "e",
+      "q": "t",
+      "t": "r",
+      "u": "s",
+      "x": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "e!=p",
+      "L": "e!=p",
+      "g": "n!=r",
+      "3": "t!=s",
+      "t": "r!=e"
+     },
+     "compared": 5
+    },
+    {
+     "start": 0,
+     "errs": 1,
+     "score": -2.5956,
+     "coverage": 398,
+     "key": {
+      "3": "n",
+      "B": "d",
+      "M": "m",
+      "a": "r",
+      "c": "t",
+      "f": "e",
+      "h": "s",
+      "i": "e",
+      "k": "t",
+      "o": "a",
+      "p": "u",
+      "q": "e"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "i": "e!=t",
+      "c": "t!=n",
+      "o": "a!=m",
+      "3": "n!=s",
+      "p": "u!=a",
+      "k": "t!=u"
+     },
+     "compared": 6
+    },
+    {
+     "start": 865,
+     "errs": 1,
+     "score": -2.6028,
+     "coverage": 557,
+     "key": {
+      "4": "e",
+      "5": "e",
+      "7": "t",
+      "E": "m",
+      "M": "u",
+      "b": "e",
+      "f": "s",
+      "l": "n",
+      "m": "d",
+      "o": "a",
+      "q": "r",
+      "r": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "a!=m",
+      "l": "n!=p"
+     },
+     "compared": 2
+    },
+    {
+     "start": 973,
+     "errs": 1,
+     "score": -2.6083,
+     "coverage": 452,
+     "key": {
+      "5": "n",
+      "^": "m",
+      "b": "t",
+      "f": "r",
+      "g": "u",
+      "i": "s",
+      "k": "e",
+      "m": "e",
+      "p": "a",
+      "r": "e",
+      "t": "d",
+      "u": "t"
+     },
+     "agree_with_brik": {
+      "p": "a"
+     },
+     "conflict_with_brik": {
+      "i": "s!=t",
+      "t": "d!=e",
+      "g": "u!=r",
+      "k": "e!=u"
+     },
+     "compared": 5
+    },
+    {
+     "start": 724,
+     "errs": 1,
+     "score": -2.6084,
+     "coverage": 497,
+     "key": {
+      "5": "r",
+      "8": "s",
+      "L": "u",
+      "M": "e",
+      "a": "t",
+      "k": "a",
+      "m": "n",
+      "o": "e",
+      "r": "e",
+      "t": "m",
+      "u": "d",
+      "x": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "t": "m!=e",
+      "L": "u!=p",
+      "o": "e!=m"
+     },
+     "compared": 4
+    }
+   ]
+  },
+  {
+   "id": "P2-err1-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 3,
+   "agree_with_brik_histogram": {
+    "0": 282,
+    "1": 100,
+    "2": 18,
+    "3": 2
+   },
+   "crib": "pari ter san dei",
+   "folded": "paritersandei",
+   "length": 13,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 402,
+   "real_distinct_starts": 402,
+   "real_best_score": -2.4781,
+   "control_placements": {
+    "mean": 231.47,
+    "p95": 275,
+    "max": 296
+   },
+   "control_starts": {
+    "mean": 231.47,
+    "p95": 275,
+    "max": 296
+   },
+   "control_best_score": {
+    "mean": -2.4752,
+    "p95": -2.4434,
+    "max": -2.3894,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 108,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 416,
+     "errs": 1,
+     "score": -2.4781,
+     "coverage": 492,
+     "key": {
+      "7": "n",
+      "A": "s",
+      "E": "p",
+      "M": "e",
+      "b": "i",
+      "c": "e",
+      "g": "i",
+      "k": "a",
+      "l": "a",
+      "r": "r",
+      "t": "r",
+      "u": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "t": "r!=e",
+      "l": "a!=p",
+      "c": "e!=n",
+      "g": "i!=r"
+     },
+     "compared": 5
+    },
+    {
+     "start": 1014,
+     "errs": 1,
+     "score": -2.4934,
+     "coverage": 432,
+     "key": {
+      "4": "a",
+      "8": "a",
+      "B": "n",
+      "F": "t",
+      "a": "e",
+      "b": "i",
+      "c": "e",
+      "f": "r",
+      "g": "d",
+      "p": "r",
+      "t": "i",
+      "x": "p"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "r!=a",
+      "g": "d!=r",
+      "c": "e!=n",
+      "t": "i!=e"
+     },
+     "compared": 4
+    },
+    {
+     "start": 205,
+     "errs": 1,
+     "score": -2.504,
+     "coverage": 544,
+     "key": {
+      "5": "e",
+      "7": "i",
+      "A": "n",
+      "E": "p",
+      "L": "e",
+      "M": "r",
+      "b": "i",
+      "k": "t",
+      "p": "a",
+      "q": "r",
+      "t": "d"
+     },
+     "agree_with_brik": {
+      "p": "a"
+     },
+     "conflict_with_brik": {
+      "k": "t!=u",
+      "L": "e!=p",
+      "t": "d!=e"
+     },
+     "compared": 4
+    },
+    {
+     "start": 30,
+     "errs": 1,
+     "score": -2.5177,
+     "coverage": 412,
+     "key": {
+      "5": "a",
+      "7": "i",
+      "D": "t",
+      "F": "r",
+      "L": "i",
+      "c": "p",
+      "e": "e",
+      "g": "n",
+      "l": "s",
+      "n": "r",
+      "q": "e",
+      "u": "a"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "c": "p!=n",
+      "l": "s!=p",
+      "g": "n!=r",
+      "L": "i!=p"
+     },
+     "compared": 4
+    },
+    {
+     "start": 809,
+     "errs": 0,
+     "score": -2.5216,
+     "coverage": 544,
+     "key": {
+      "4": "e",
+      "5": "n",
+      "E": "d",
+      "L": "s",
+      "M": "a",
+      "b": "i",
+      "e": "p",
+      "m": "t",
+      "n": "r",
+      "p": "e",
+      "r": "r",
+      "t": "i",
+      "x": "a"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "s!=p",
+      "p": "e!=a",
+      "t": "i!=e"
+     },
+     "compared": 3
+    }
+   ]
+  },
+  {
+   "id": "P2-err1-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "sed tamen ut res",
+   "max_err": 1,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 359,
+   "true_placement_found": true,
+   "true_placement_rank": 74,
+   "top_key_right": [
+    3,
+    12
+   ],
+   "real_best_score": -2.612,
+   "control_placements": {
+    "mean": 244.62,
+    "p95": 296,
+    "max": 316
+   },
+   "control_best_score": {
+    "mean": -2.6011,
+    "p95": -2.5744,
+    "n_with_placement": 100
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 77,
+   "shuffles": 100
+  },
+  {
+   "id": "P2-err2",
+   "kind": "target",
+   "where": "p1, line 21, inside the sentence: 'rbbl5p8MmLu [..] LkMnl7oa'",
+   "agree_with_brik_max_any_placement": 3,
+   "agree_with_brik_histogram": {
+    "0": 577,
+    "1": 185,
+    "2": 24,
+    "3": 2
+   },
+   "crib": "sed tamen ut res",
+   "folded": "sedtamenutres",
+   "length": 13,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 788,
+   "real_distinct_starts": 788,
+   "real_best_score": -2.5684,
+   "control_placements": {
+    "mean": 582.05,
+    "p95": 637,
+    "max": 664
+   },
+   "control_starts": {
+    "mean": 582.05,
+    "p95": 637,
+    "max": 664
+   },
+   "control_best_score": {
+    "mean": -2.5501,
+    "p95": -2.5204,
+    "max": -2.458,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 165,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 84,
+     "errs": 1,
+     "score": -2.5684,
+     "coverage": 484,
+     "key": {
+      "3": "t",
+      "7": "a",
+      "A": "d",
+      "L": "e",
+      "M": "e",
+      "b": "u",
+      "g": "n",
+      "l": "e",
+      "q": "t",
+      "t": "r",
+      "u": "s",
+      "x": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "e!=p",
+      "L": "e!=p",
+      "g": "n!=r",
+      "3": "t!=s",
+      "t": "r!=e"
+     },
+     "compared": 5
+    },
+    {
+     "start": 193,
+     "errs": 2,
+     "score": -2.5685,
+     "coverage": 415,
+     "key": {
+      "4": "a",
+      "8": "r",
+      "E": "s",
+      "S": "u",
+      "a": "n",
+      "b": "e",
+      "k": "e",
+      "l": "e",
+      "m": "t",
+      "n": "m",
+      "x": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "e!=u",
+      "l": "e!=p"
+     },
+     "compared": 2
+    },
+    {
+     "start": 619,
+     "errs": 2,
+     "score": -2.5908,
+     "coverage": 494,
+     "key": {
+      "4": "e",
+      "5": "s",
+      "A": "n",
+      "F": "a",
+      "L": "r",
+      "M": "e",
+      "b": "e",
+      "l": "u",
+      "n": "m",
+      "r": "t",
+      "t": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "t": "t!=e",
+      "l": "u!=p",
+      "L": "r!=p"
+     },
+     "compared": 3
+    },
+    {
+     "start": 290,
+     "errs": 2,
+     "score": -2.5929,
+     "coverage": 517,
+     "key": {
+      "5": "t",
+      "7": "r",
+      "F": "m",
+      "L": "e",
+      "a": "t",
+      "b": "a",
+      "g": "d",
+      "k": "e",
+      "p": "e",
+      "q": "u",
+      "x": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "e!=p",
+      "g": "d!=r",
+      "k": "e!=u",
+      "p": "e!=a"
+     },
+     "compared": 4
+    },
+    {
+     "start": 333,
+     "errs": 2,
+     "score": -2.5935,
+     "coverage": 397,
+     "key": {
+      "4": "e",
+      "8": "s",
+      "E": "a",
+      "M": "e",
+      "S": "u",
+      "b": "e",
+      "m": "n",
+      "p": "t",
+      "r": "m",
+      "x": "d"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "t!=a"
+     },
+     "compared": 1
+    }
+   ]
+  },
+  {
+   "id": "P2-err2-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 3,
+   "agree_with_brik_histogram": {
+    "0": 561,
+    "1": 181,
+    "2": 29,
+    "3": 3
+   },
+   "crib": "pari ter san dei",
+   "folded": "paritersandei",
+   "length": 13,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 774,
+   "real_distinct_starts": 774,
+   "real_best_score": -2.4649,
+   "control_placements": {
+    "mean": 566.57,
+    "p95": 627,
+    "max": 657
+   },
+   "control_starts": {
+    "mean": 566.57,
+    "p95": 627,
+    "max": 657
+   },
+   "control_best_score": {
+    "mean": -2.4384,
+    "p95": -2.399,
+    "max": -2.3317,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 178,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 550,
+     "errs": 2,
+     "score": -2.4649,
+     "coverage": 541,
+     "key": {
+      "4": "n",
+      "5": "a",
+      "7": "e",
+      "F": "a",
+      "L": "e",
+      "M": "i",
+      "b": "t",
+      "k": "r",
+      "n": "r",
+      "p": "i",
+      "u": "p"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "r!=u",
+      "L": "e!=p",
+      "p": "i!=a"
+     },
+     "compared": 3
+    },
+    {
+     "start": 1023,
+     "errs": 2,
+     "score": -2.4671,
+     "coverage": 449,
+     "key": {
+      "5": "e",
+      "7": "t",
+      "B": "p",
+      "S": "e",
+      "b": "a",
+      "c": "r",
+      "g": "a",
+      "k": "n",
+      "m": "i",
+      "r": "r",
+      "t": "i"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "a!=r",
+      "c": "r!=n",
+      "t": "i!=e",
+      "k": "n!=u"
+     },
+     "compared": 4
+    },
+    {
+     "start": 416,
+     "errs": 1,
+     "score": -2.4781,
+     "coverage": 492,
+     "key": {
+      "7": "n",
+      "A": "s",
+      "E": "p",
+      "M": "e",
+      "b": "i",
+      "c": "e",
+      "g": "i",
+      "k": "a",
+      "l": "a",
+      "r": "r",
+      "t": "r",
+      "u": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "t": "r!=e",
+      "l": "a!=p",
+      "c": "e!=n",
+      "g": "i!=r"
+     },
+     "compared": 5
+    },
+    {
+     "start": 259,
+     "errs": 2,
+     "score": -2.4905,
+     "coverage": 503,
+     "key": {
+      "7": "r",
+      "F": "p",
+      "M": "e",
+      "a": "i",
+      "b": "e",
+      "f": "t",
+      "n": "a",
+      "o": "r",
+      "p": "i",
+      "q": "a",
+      "x": "d"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "r!=m",
+      "p": "i!=a"
+     },
+     "compared": 2
+    },
+    {
+     "start": 1014,
+     "errs": 1,
+     "score": -2.4934,
+     "coverage": 432,
+     "key": {
+      "4": "a",
+      "8": "a",
+      "B": "n",
+      "F": "t",
+      "a": "e",
+      "b": "i",
+      "c": "e",
+      "f": "r",
+      "g": "d",
+      "p": "r",
+      "t": "i",
+      "x": "p"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "r!=a",
+      "g": "d!=r",
+      "c": "e!=n",
+      "t": "i!=e"
+     },
+     "compared": 4
+    }
+   ]
+  },
+  {
+   "id": "P3-err0",
+   "kind": "target",
+   "where": "p1, line 25, after a stop: 'fDeMrbm4nLx5 . [..] EptMSab?'",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "tractatus magnas admodum",
+   "folded": "tractatusmagnasadmodum",
+   "length": 22,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.06,
+    "p95": 0,
+    "max": 3
+   },
+   "control_starts": {
+    "mean": 0.06,
+    "p95": 0,
+    "max": 3
+   },
+   "control_best_score": {
+    "mean": -2.8663,
+    "p95": -2.7546,
+    "max": -2.7546,
+    "n_with_placement": 9
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P3-err0-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "fe bellorum modis unde non",
+   "folded": "febellorummodisundenon",
+   "length": 22,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.06,
+    "p95": 0,
+    "max": 3
+   },
+   "control_starts": {
+    "mean": 0.06,
+    "p95": 0,
+    "max": 3
+   },
+   "control_best_score": {
+    "mean": -2.832,
+    "p95": -2.7487,
+    "max": -2.7487,
+    "n_with_placement": 7
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P3-err0-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "tractatus magnas admodum",
+   "max_err": 0,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 1,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    15,
+    15
+   ],
+   "real_best_score": -2.8344,
+   "control_placements": {
+    "mean": 0.08,
+    "p95": 1,
+    "max": 1
+   },
+   "control_best_score": {
+    "mean": -2.91,
+    "p95": -2.8208,
+    "n_with_placement": 8
+   },
+   "rank_placements_at_or_above": 8,
+   "rank_best_at_or_above": 1,
+   "shuffles": 100
+  },
+  {
+   "id": "P3-err1",
+   "kind": "target",
+   "where": "p1, line 25, after a stop: 'fDeMrbm4nLx5 . [..] EptMSab?'",
+   "agree_with_brik_max_any_placement": 0,
+   "agree_with_brik_histogram": {
+    "0": 1
+   },
+   "crib": "tractatus magnas admodum",
+   "folded": "tractatusmagnasadmodum",
+   "length": 22,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 1,
+   "real_distinct_starts": 1,
+   "real_best_score": -2.9013,
+   "control_placements": {
+    "mean": 1.11,
+    "p95": 4,
+    "max": 12
+   },
+   "control_starts": {
+    "mean": 1.11,
+    "p95": 4,
+    "max": 12
+   },
+   "control_best_score": {
+    "mean": -2.8663,
+    "p95": -2.7665,
+    "max": -2.7398,
+    "n_with_placement": 107
+   },
+   "rank_placements_at_or_above": 107,
+   "rank_best_at_or_above": 77,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 25,
+     "errs": 1,
+     "score": -2.9013,
+     "coverage": 711,
+     "key": {
+      "4": "c",
+      "5": "a",
+      "7": "s",
+      "8": "m",
+      "D": "m",
+      "E": "r",
+      "F": "g",
+      "L": "m",
+      "M": "u",
+      "c": "a",
+      "e": "a",
+      "g": "s",
+      "h": "d",
+      "k": "t",
+      "l": "n",
+      "m": "t",
+      "n": "a",
+      "o": "o",
+      "q": "d",
+      "u": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "t!=u",
+      "c": "a!=n",
+      "l": "n!=p",
+      "g": "s!=r",
+      "L": "m!=p",
+      "o": "o!=m"
+     },
+     "compared": 6
+    }
+   ]
+  },
+  {
+   "id": "P3-err1-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 0,
+   "agree_with_brik_histogram": {
+    "0": 2
+   },
+   "crib": "fe bellorum modis unde non",
+   "folded": "febellorummodisundenon",
+   "length": 22,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 2,
+   "real_distinct_starts": 2,
+   "real_best_score": -2.7753,
+   "control_placements": {
+    "mean": 0.79,
+    "p95": 3,
+    "max": 10
+   },
+   "control_starts": {
+    "mean": 0.79,
+    "p95": 3,
+    "max": 10
+   },
+   "control_best_score": {
+    "mean": -2.8415,
+    "p95": -2.7487,
+    "max": -2.7199,
+    "n_with_placement": 80
+   },
+   "rank_placements_at_or_above": 35,
+   "rank_best_at_or_above": 11,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 1018,
+     "errs": 1,
+     "score": -2.7753,
+     "coverage": 771,
+     "key": {
+      "4": "e",
+      "5": "n",
+      "7": "m",
+      "8": "l",
+      "A": "e",
+      "B": "l",
+      "F": "f",
+      "M": "o",
+      "S": "m",
+      "a": "e",
+      "b": "i",
+      "c": "r",
+      "f": "b",
+      "g": "o",
+      "k": "s",
+      "m": "d",
+      "q": "n",
+      "r": "o",
+      "t": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "o!=r",
+      "c": "r!=n",
+      "t": "u!=e",
+      "k": "s!=u"
+     },
+     "compared": 4
+    },
+    {
+     "start": 922,
+     "errs": 1,
+     "score": -2.8464,
+     "coverage": 768,
+     "key": {
+      "4": "o",
+      "7": "m",
+      "D": "e",
+      "E": "r",
+      "L": "n",
+      "M": "d",
+      "S": "n",
+      "a": "u",
+      "b": "e",
+      "f": "s",
+      "g": "b",
+      "k": "l",
+      "l": "o",
+      "m": "i",
+      "o": "f",
+      "p": "u",
+      "q": "m",
+      "r": "o"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "f!=m",
+      "g": "b!=r",
+      "k": "l!=u",
+      "p": "u!=a",
+      "l": "o!=p",
+      "L": "n!=p"
+     },
+     "compared": 6
+    }
+   ]
+  },
+  {
+   "id": "P3-err1-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "tractatus magnas admodum",
+   "max_err": 1,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 3,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    15,
+    15
+   ],
+   "real_best_score": -2.8344,
+   "control_placements": {
+    "mean": 1.11,
+    "p95": 3,
+    "max": 5
+   },
+   "control_best_score": {
+    "mean": -2.8767,
+    "p95": -2.7802,
+    "n_with_placement": 65
+   },
+   "rank_placements_at_or_above": 11,
+   "rank_best_at_or_above": 14,
+   "shuffles": 100
+  },
+  {
+   "id": "P3-err2",
+   "kind": "target",
+   "where": "p1, line 25, after a stop: 'fDeMrbm4nLx5 . [..] EptMSab?'",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 7,
+    "1": 7,
+    "2": 2
+   },
+   "crib": "tractatus magnas admodum",
+   "folded": "tractatusmagnasadmodum",
+   "length": 22,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 16,
+   "real_distinct_starts": 16,
+   "real_best_score": -2.801,
+   "control_placements": {
+    "mean": 8.96,
+    "p95": 18,
+    "max": 25
+   },
+   "control_starts": {
+    "mean": 8.96,
+    "p95": 18,
+    "max": 25
+   },
+   "control_best_score": {
+    "mean": -2.796,
+    "p95": -2.7332,
+    "max": -2.6964,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 19,
+   "rank_best_at_or_above": 112,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 18,
+     "errs": 2,
+     "score": -2.801,
+     "coverage": 669,
+     "key": {
+      "3": "a",
+      "4": "a",
+      "5": "u",
+      "7": "a",
+      "D": "t",
+      "E": "s",
+      "F": "o",
+      "a": "r",
+      "b": "t",
+      "c": "n",
+      "e": "m",
+      "g": "m",
+      "i": "a",
+      "k": "u",
+      "l": "d",
+      "m": "g",
+      "n": "m",
+      "q": "c",
+      "u": "a"
+     },
+     "agree_with_brik": {
+      "k": "u",
+      "c": "n"
+     },
+     "conflict_with_brik": {
+      "3": "a!=s",
+      "i": "a!=t",
+      "l": "d!=p",
+      "g": "m!=r"
+     },
+     "compared": 6
+    },
+    {
+     "start": 23,
+     "errs": 2,
+     "score": -2.8049,
+     "coverage": 702,
+     "key": {
+      "4": "a",
+      "5": "a",
+      "7": "a",
+      "D": "g",
+      "E": "c",
+      "F": "a",
+      "L": "d",
+      "b": "r",
+      "c": "u",
+      "e": "n",
+      "g": "d",
+      "h": "m",
+      "i": "t",
+      "k": "a",
+      "l": "s",
+      "m": "t",
+      "n": "t",
+      "o": "u",
+      "q": "o",
+      "u": "s"
+     },
+     "agree_with_brik": {
+      "i": "t"
+     },
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "c": "u!=n",
+      "l": "s!=p",
+      "g": "d!=r",
+      "L": "d!=p",
+      "o": "u!=m"
+     },
+     "compared": 7
+    },
+    {
+     "start": 24,
+     "errs": 2,
+     "score": -2.8236,
+     "coverage": 759,
+     "key": {
+      "4": "t",
+      "5": "s",
+      "7": "m",
+      "D": "a",
+      "E": "a",
+      "F": "n",
+      "L": "o",
+      "M": "m",
+      "b": "t",
+      "c": "t",
+      "e": "g",
+      "g": "a",
+      "h": "u",
+      "k": "r",
+      "l": "a",
+      "m": "a",
+      "n": "c",
+      "o": "d",
+      "q": "m",
+      "u": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "r!=u",
+      "c": "t!=n",
+      "l": "a!=p",
+      "g": "a!=r",
+      "L": "o!=p",
+      "o": "d!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 340,
+     "errs": 2,
+     "score": -2.8285,
+     "coverage": 774,
+     "key": {
+      "4": "a",
+      "5": "s",
+      "7": "a",
+      "A": "t",
+      "D": "a",
+      "L": "m",
+      "M": "t",
+      "S": "r",
+      "T": "g",
+      "a": "d",
+      "b": "m",
+      "c": "u",
+      "m": "t",
+      "o": "o",
+      "p": "a",
+      "q": "u",
+      "r": "c",
+      "t": "s",
+      "x": "n"
+     },
+     "agree_with_brik": {
+      "p": "a"
+     },
+     "conflict_with_brik": {
+      "t": "s!=e",
+      "L": "m!=p",
+      "o": "o!=m",
+      "c": "u!=n"
+     },
+     "compared": 5
+    },
+    {
+     "start": 714,
+     "errs": 2,
+     "score": -2.8455,
+     "coverage": 763,
+     "key": {
+      "4": "t",
+      "5": "u",
+      "7": "c",
+      "8": "t",
+      "A": "r",
+      "D": "s",
+      "L": "o",
+      "M": "m",
+      "a": "a",
+      "e": "u",
+      "k": "s",
+      "m": "m",
+      "o": "m",
+      "p": "a",
+      "q": "a",
+      "r": "d",
+      "t": "a",
+      "u": "n",
+      "x": "d"
+     },
+     "agree_with_brik": {
+      "p": "a",
+      "o": "m"
+     },
+     "conflict_with_brik": {
+      "k": "s!=u",
+      "t": "a!=e",
+      "L": "o!=p"
+     },
+     "compared": 5
+    }
+   ]
+  },
+  {
+   "id": "P3-err2-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 0,
+   "agree_with_brik_histogram": {
+    "0": 13
+   },
+   "crib": "fe bellorum modis unde non",
+   "folded": "febellorummodisundenon",
+   "length": 22,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 13,
+   "real_distinct_starts": 13,
+   "real_best_score": -2.7753,
+   "control_placements": {
+    "mean": 6.41,
+    "p95": 13,
+    "max": 23
+   },
+   "control_starts": {
+    "mean": 6.41,
+    "p95": 13,
+    "max": 23
+   },
+   "control_best_score": {
+    "mean": -2.7833,
+    "p95": -2.7156,
+    "max": -2.667,
+    "n_with_placement": 194
+   },
+   "rank_placements_at_or_above": 13,
+   "rank_best_at_or_above": 93,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 1018,
+     "errs": 1,
+     "score": -2.7753,
+     "coverage": 771,
+     "key": {
+      "4": "e",
+      "5": "n",
+      "7": "m",
+      "8": "l",
+      "A": "e",
+      "B": "l",
+      "F": "f",
+      "M": "o",
+      "S": "m",
+      "a": "e",
+      "b": "i",
+      "c": "r",
+      "f": "b",
+      "g": "o",
+      "k": "s",
+      "m": "d",
+      "q": "n",
+      "r": "o",
+      "t": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "o!=r",
+      "c": "r!=n",
+      "t": "u!=e",
+      "k": "s!=u"
+     },
+     "compared": 4
+    },
+    {
+     "start": 23,
+     "errs": 2,
+     "score": -2.8287,
+     "coverage": 702,
+     "key": {
+      "4": "l",
+      "5": "u",
+      "7": "m",
+      "D": "o",
+      "E": "e",
+      "F": "i",
+      "L": "n",
+      "b": "e",
+      "c": "r",
+      "e": "d",
+      "g": "n",
+      "h": "n",
+      "i": "f",
+      "k": "b",
+      "l": "s",
+      "m": "o",
+      "n": "l",
+      "o": "o",
+      "q": "e",
+      "u": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "i": "f!=t",
+      "k": "b!=u",
+      "c": "r!=n",
+      "l": "s!=p",
+      "g": "n!=r",
+      "L": "n!=p",
+      "o": "o!=m"
+     },
+     "compared": 7
+    },
+    {
+     "start": 276,
+     "errs": 2,
+     "score": -2.8298,
+     "coverage": 763,
+     "key": {
+      "5": "r",
+      "7": "o",
+      "A": "m",
+      "D": "f",
+      "F": "n",
+      "L": "u",
+      "a": "d",
+      "b": "e",
+      "f": "b",
+      "g": "l",
+      "k": "o",
+      "n": "l",
+      "o": "e",
+      "p": "i",
+      "q": "o",
+      "r": "d",
+      "t": "u",
+      "x": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "e!=m",
+      "g": "l!=r",
+      "t": "u!=e",
+      "p": "i!=a",
+      "L": "u!=p",
+      "k": "o!=u"
+     },
+     "compared": 6
+    },
+    {
+     "start": 922,
+     "errs": 1,
+     "score": -2.8464,
+     "coverage": 768,
+     "key": {
+      "4": "o",
+      "7": "m",
+      "D": "e",
+      "E": "r",
+      "L": "n",
+      "M": "d",
+      "S": "n",
+      "a": "u",
+      "b": "e",
+      "f": "s",
+      "g": "b",
+      "k": "l",
+      "l": "o",
+      "m": "i",
+      "o": "f",
+      "p": "u",
+      "q": "m",
+      "r": "o"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "f!=m",
+      "g": "b!=r",
+      "k": "l!=u",
+      "p": "u!=a",
+      "l": "o!=p",
+      "L": "n!=p"
+     },
+     "compared": 6
+    },
+    {
+     "start": 21,
+     "errs": 2,
+     "score": -2.8544,
+     "coverage": 659,
+     "key": {
+      "4": "r",
+      "5": "d",
+      "7": "d",
+      "D": "i",
+      "E": "l",
+      "F": "u",
+      "L": "n",
+      "b": "e",
+      "c": "m",
+      "e": "s",
+      "g": "e",
+      "i": "b",
+      "k": "l",
+      "l": "n",
+      "m": "u",
+      "n": "o",
+      "q": "f",
+      "u": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "i": "b!=t",
+      "k": "l!=u",
+      "c": "m!=n",
+      "l": "n!=p",
+      "g": "e!=r",
+      "L": "n!=p"
+     },
+     "compared": 6
+    }
+   ]
+  },
+  {
+   "id": "P4-err0",
+   "kind": "target",
+   "where": "p2, line 1, opens the page: '[..] S? fbm7o E4lMrq5'",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "Mittatur nobis responsum",
+   "folded": "mittaturnobisresponsum",
+   "length": 22,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.04,
+    "p95": 0,
+    "max": 3
+   },
+   "control_starts": {
+    "mean": 0.04,
+    "p95": 0,
+    "max": 3
+   },
+   "control_best_score": {
+    "mean": -2.7494,
+    "p95": -2.6953,
+    "max": -2.6953,
+    "n_with_placement": 6
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P4-err0-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "fi ne in locis quam materia",
+   "folded": "fineinlocisquammateria",
+   "length": 22,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.05,
+    "p95": 0,
+    "max": 4
+   },
+   "control_starts": {
+    "mean": 0.05,
+    "p95": 0,
+    "max": 4
+   },
+   "control_best_score": {
+    "mean": -2.6498,
+    "p95": -2.557,
+    "max": -2.557,
+    "n_with_placement": 5
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P4-err0-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "Mittatur nobis responsum",
+   "max_err": 0,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 1,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    15,
+    15
+   ],
+   "real_best_score": -2.6424,
+   "control_placements": {
+    "mean": 0.03,
+    "p95": 0,
+    "max": 1
+   },
+   "control_best_score": {
+    "mean": -2.8164,
+    "p95": -2.7769,
+    "n_with_placement": 3
+   },
+   "rank_placements_at_or_above": 3,
+   "rank_best_at_or_above": 0,
+   "shuffles": 100
+  },
+  {
+   "id": "P4-err1",
+   "kind": "target",
+   "where": "p2, line 1, opens the page: '[..] S? fbm7o E4lMrq5'",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "Mittatur nobis responsum",
+   "folded": "mittaturnobisresponsum",
+   "length": 22,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.79,
+    "p95": 4,
+    "max": 10
+   },
+   "control_starts": {
+    "mean": 0.79,
+    "p95": 4,
+    "max": 10
+   },
+   "control_best_score": {
+    "mean": -2.7671,
+    "p95": -2.6812,
+    "max": -2.653,
+    "n_with_placement": 80
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P4-err1-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 0,
+   "agree_with_brik_histogram": {
+    "0": 1
+   },
+   "crib": "fi ne in locis quam materia",
+   "folded": "fineinlocisquammateria",
+   "length": 22,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 1,
+   "real_distinct_starts": 1,
+   "real_best_score": -2.6848,
+   "control_placements": {
+    "mean": 0.68,
+    "p95": 3,
+    "max": 10
+   },
+   "control_starts": {
+    "mean": 0.68,
+    "p95": 3,
+    "max": 10
+   },
+   "control_best_score": {
+    "mean": -2.6791,
+    "p95": -2.5562,
+    "max": -2.4666,
+    "n_with_placement": 68
+   },
+   "rank_placements_at_or_above": 68,
+   "rank_best_at_or_above": 39,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 23,
+     "errs": 1,
+     "score": -2.6848,
+     "coverage": 702,
+     "key": {
+      "4": "n",
+      "5": "m",
+      "7": "s",
+      "D": "q",
+      "E": "e",
+      "F": "a",
+      "L": "r",
+      "b": "i",
+      "c": "o",
+      "e": "u",
+      "g": "a",
+      "h": "a",
+      "i": "f",
+      "k": "n",
+      "l": "m",
+      "m": "l",
+      "n": "i",
+      "o": "i",
+      "q": "e",
+      "u": "c"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "i": "f!=t",
+      "k": "n!=u",
+      "c": "o!=n",
+      "l": "m!=p",
+      "g": "a!=r",
+      "L": "r!=p",
+      "o": "i!=m"
+     },
+     "compared": 7
+    }
+   ]
+  },
+  {
+   "id": "P4-err1-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "Mittatur nobis responsum",
+   "max_err": 1,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 3,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    15,
+    15
+   ],
+   "real_best_score": -2.6424,
+   "control_placements": {
+    "mean": 0.64,
+    "p95": 3,
+    "max": 7
+   },
+   "control_best_score": {
+    "mean": -2.7636,
+    "p95": -2.6871,
+    "n_with_placement": 35
+   },
+   "rank_placements_at_or_above": 6,
+   "rank_best_at_or_above": 0,
+   "shuffles": 100
+  },
+  {
+   "id": "P4-err2",
+   "kind": "target",
+   "where": "p2, line 1, opens the page: '[..] S? fbm7o E4lMrq5'",
+   "agree_with_brik_max_any_placement": 1,
+   "agree_with_brik_histogram": {
+    "0": 4,
+    "1": 4
+   },
+   "crib": "Mittatur nobis responsum",
+   "folded": "mittaturnobisresponsum",
+   "length": 22,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 8,
+   "real_distinct_starts": 8,
+   "real_best_score": -2.7477,
+   "control_placements": {
+    "mean": 6.08,
+    "p95": 14,
+    "max": 22
+   },
+   "control_starts": {
+    "mean": 6.08,
+    "p95": 14,
+    "max": 22
+   },
+   "control_best_score": {
+    "mean": -2.7163,
+    "p95": -2.643,
+    "max": -2.6141,
+    "n_with_placement": 197
+   },
+   "rank_placements_at_or_above": 63,
+   "rank_best_at_or_above": 148,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 25,
+     "errs": 2,
+     "score": -2.7477,
+     "coverage": 711,
+     "key": {
+      "4": "t",
+      "5": "r",
+      "7": "n",
+      "8": "m",
+      "D": "o",
+      "E": "i",
+      "F": "i",
+      "L": "o",
+      "M": "u",
+      "c": "t",
+      "e": "b",
+      "g": "e",
+      "h": "s",
+      "k": "m",
+      "l": "s",
+      "m": "a",
+      "n": "t",
+      "o": "n",
+      "q": "p",
+      "u": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "m!=u",
+      "c": "t!=n",
+      "l": "s!=p",
+      "g": "e!=r",
+      "L": "o!=p",
+      "o": "n!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 973,
+     "errs": 2,
+     "score": -2.7497,
+     "coverage": 748,
+     "key": {
+      "5": "r",
+      "7": "u",
+      "A": "r",
+      "M": "s",
+      "^": "t",
+      "a": "m",
+      "b": "t",
+      "f": "b",
+      "g": "n",
+      "i": "m",
+      "k": "i",
+      "l": "e",
+      "m": "u",
+      "p": "a",
+      "q": "s",
+      "r": "i",
+      "t": "t",
+      "u": "o",
+      "x": "p"
+     },
+     "agree_with_brik": {
+      "p": "a"
+     },
+     "conflict_with_brik": {
+      "i": "m!=t",
+      "t": "t!=e",
+      "g": "n!=r",
+      "k": "i!=u",
+      "l": "e!=p"
+     },
+     "compared": 6
+    },
+    {
+     "start": 24,
+     "errs": 2,
+     "score": -2.758,
+     "coverage": 759,
+     "key": {
+      "4": "a",
+      "5": "e",
+      "7": "o",
+      "D": "b",
+      "E": "t",
+      "F": "s",
+      "L": "n",
+      "M": "m",
+      "b": "m",
+      "c": "u",
+      "e": "i",
+      "g": "s",
+      "h": "u",
+      "k": "i",
+      "l": "r",
+      "m": "t",
+      "n": "t",
+      "o": "s",
+      "q": "o",
+      "u": "r"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "i!=u",
+      "c": "u!=n",
+      "l": "r!=p",
+      "g": "s!=r",
+      "L": "n!=p",
+      "o": "s!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 19,
+     "errs": 2,
+     "score": -2.7683,
+     "coverage": 669,
+     "key": {
+      "3": "i",
+      "4": "o",
+      "5": "s",
+      "7": "e",
+      "D": "s",
+      "E": "r",
+      "F": "o",
+      "a": "m",
+      "b": "t",
+      "c": "i",
+      "e": "p",
+      "g": "u",
+      "i": "a",
+      "k": "u",
+      "l": "n",
+      "m": "b",
+      "n": "n",
+      "q": "t",
+      "u": "s"
+     },
+     "agree_with_brik": {
+      "k": "u"
+     },
+     "conflict_with_brik": {
+      "3": "i!=s",
+      "i": "a!=t",
+      "c": "i!=n",
+      "l": "n!=p",
+      "g": "u!=r"
+     },
+     "compared": 6
+    },
+    {
+     "start": 340,
+     "errs": 2,
+     "score": -2.7835,
+     "coverage": 774,
+     "key": {
+      "4": "s",
+      "5": "n",
+      "7": "r",
+      "A": "u",
+      "D": "b",
+      "L": "o",
+      "M": "a",
+      "S": "i",
+      "T": "i",
+      "a": "s",
+      "b": "o",
+      "c": "u",
+      "m": "m",
+      "o": "n",
+      "p": "t",
+      "q": "r",
+      "r": "t",
+      "t": "e",
+      "x": "s"
+     },
+     "agree_with_brik": {
+      "t": "e"
+     },
+     "conflict_with_brik": {
+      "p": "t!=a",
+      "L": "o!=p",
+      "o": "n!=m",
+      "c": "u!=n"
+     },
+     "compared": 5
+    }
+   ]
+  },
+  {
+   "id": "P4-err2-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 1,
+   "agree_with_brik_histogram": {
+    "0": 7,
+    "1": 2
+   },
+   "crib": "fi ne in locis quam materia",
+   "folded": "fineinlocisquammateria",
+   "length": 22,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 9,
+   "real_distinct_starts": 9,
+   "real_best_score": -2.5949,
+   "control_placements": {
+    "mean": 5.94,
+    "p95": 15,
+    "max": 21
+   },
+   "control_starts": {
+    "mean": 5.94,
+    "p95": 15,
+    "max": 21
+   },
+   "control_best_score": {
+    "mean": -2.6266,
+    "p95": -2.5358,
+    "max": -2.4666,
+    "n_with_placement": 191
+   },
+   "rank_placements_at_or_above": 45,
+   "rank_best_at_or_above": 62,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 24,
+     "errs": 2,
+     "score": -2.5949,
+     "coverage": 759,
+     "key": {
+      "4": "i",
+      "5": "m",
+      "7": "i",
+      "D": "s",
+      "E": "n",
+      "F": "u",
+      "L": "e",
+      "M": "a",
+      "b": "f",
+      "c": "l",
+      "e": "q",
+      "g": "m",
+      "h": "i",
+      "k": "i",
+      "l": "a",
+      "m": "n",
+      "n": "e",
+      "o": "r",
+      "q": "t",
+      "u": "o"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "i!=u",
+      "c": "l!=n",
+      "l": "a!=p",
+      "g": "m!=r",
+      "L": "e!=p",
+      "o": "r!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 790,
+     "errs": 2,
+     "score": -2.6278,
+     "coverage": 717,
+     "key": {
+      "4": "m",
+      "5": "a",
+      "7": "o",
+      "D": "e",
+      "L": "i",
+      "M": "i",
+      "T": "u",
+      "c": "q",
+      "e": "r",
+      "f": "t",
+      "h": "f",
+      "k": "l",
+      "m": "i",
+      "n": "a",
+      "o": "e",
+      "p": "n",
+      "r": "a",
+      "t": "n",
+      "x": "c"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "n!=a",
+      "o": "e!=m",
+      "L": "i!=p",
+      "t": "n!=e",
+      "k": "l!=u",
+      "c": "q!=n"
+     },
+     "compared": 6
+    },
+    {
+     "start": 25,
+     "errs": 2,
+     "score": -2.6295,
+     "coverage": 711,
+     "key": {
+      "4": "e",
+      "5": "a",
+      "7": "c",
+      "8": "a",
+      "D": "i",
+      "E": "i",
+      "F": "q",
+      "L": "t",
+      "M": "i",
+      "c": "n",
+      "e": "s",
+      "g": "m",
+      "h": "r",
+      "k": "f",
+      "l": "u",
+      "m": "i",
+      "n": "n",
+      "o": "e",
+      "q": "a",
+      "u": "l"
+     },
+     "agree_with_brik": {
+      "c": "n"
+     },
+     "conflict_with_brik": {
+      "k": "f!=u",
+      "l": "u!=p",
+      "g": "m!=r",
+      "L": "t!=p",
+      "o": "e!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 941,
+     "errs": 2,
+     "score": -2.6712,
+     "coverage": 708,
+     "key": {
+      "4": "o",
+      "5": "t",
+      "8": "c",
+      "A": "a",
+      "F": "l",
+      "L": "n",
+      "S": "f",
+      "a": "i",
+      "b": "e",
+      "f": "a",
+      "g": "i",
+      "l": "i",
+      "n": "u",
+      "o": "r",
+      "q": "m",
+      "r": "s",
+      "t": "a",
+      "u": "n",
+      "x": "q"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "i!=p",
+      "L": "n!=p",
+      "g": "i!=r",
+      "t": "a!=e",
+      "o": "r!=m"
+     },
+     "compared": 5
+    },
+    {
+     "start": 26,
+     "errs": 2,
+     "score": -2.6729,
+     "coverage": 650,
+     "key": {
+      "4": "n",
+      "5": "u",
+      "7": "o",
+      "8": "i",
+      "D": "c",
+      "E": "f",
+      "F": "s",
+      "L": "a",
+      "M": "r",
+      "c": "i",
+      "e": "i",
+      "g": "a",
+      "h": "e",
+      "l": "q",
+      "m": "e",
+      "n": "i",
+      "o": "t",
+      "q": "m",
+      "u": "n"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "c": "i!=n",
+      "l": "q!=p",
+      "g": "a!=r",
+      "L": "a!=p",
+      "o": "t!=m"
+     },
+     "compared": 5
+    }
+   ]
+  },
+  {
+   "id": "P1a-err0",
+   "kind": "target",
+   "where": "p1, line 10, first bracket of P1",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 170,
+    "1": 29,
+    "2": 2
+   },
+   "crib": "et qualis sit",
+   "folded": "etqualissit",
+   "length": 11,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 201,
+   "real_distinct_starts": 201,
+   "real_best_score": -2.5741,
+   "control_placements": {
+    "mean": 113.95,
+    "p95": 143,
+    "max": 172
+   },
+   "control_starts": {
+    "mean": 113.95,
+    "p95": 143,
+    "max": 172
+   },
+   "control_best_score": {
+    "mean": -2.5794,
+    "p95": -2.5228,
+    "max": -2.4246,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 81,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 892,
+     "errs": 0,
+     "score": -2.5741,
+     "coverage": 454,
+     "key": {
+      "7": "i",
+      "8": "s",
+      "M": "i",
+      "b": "u",
+      "c": "e",
+      "e": "s",
+      "g": "t",
+      "o": "l",
+      "q": "a",
+      "r": "t",
+      "u": "q"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "c": "e!=n",
+      "g": "t!=r",
+      "o": "l!=m"
+     },
+     "compared": 3
+    },
+    {
+     "start": 458,
+     "errs": 0,
+     "score": -2.5857,
+     "coverage": 384,
+     "key": {
+      "3": "l",
+      "4": "s",
+      "5": "e",
+      "A": "a",
+      "D": "t",
+      "M": "t",
+      "i": "q",
+      "k": "u",
+      "n": "i",
+      "r": "i"
+     },
+     "agree_with_brik": {
+      "k": "u"
+     },
+     "conflict_with_brik": {
+      "i": "q!=t",
+      "3": "l!=s"
+     },
+     "compared": 3
+    },
+    {
+     "start": 367,
+     "errs": 0,
+     "score": -2.6095,
+     "coverage": 504,
+     "key": {
+      "7": "a",
+      "8": "l",
+      "A": "q",
+      "M": "i",
+      "a": "s",
+      "b": "i",
+      "g": "s",
+      "l": "t",
+      "q": "u",
+      "r": "e",
+      "t": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "t": "t!=e",
+      "g": "s!=r",
+      "l": "t!=p"
+     },
+     "compared": 3
+    },
+    {
+     "start": 701,
+     "errs": 0,
+     "score": -2.6362,
+     "coverage": 468,
+     "key": {
+      "4": "t",
+      "5": "s",
+      "7": "i",
+      "D": "l",
+      "M": "a",
+      "a": "e",
+      "e": "q",
+      "g": "t",
+      "n": "s",
+      "p": "u",
+      "t": "i"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "t!=r",
+      "p": "u!=a",
+      "t": "i!=e"
+     },
+     "compared": 3
+    },
+    {
+     "start": 0,
+     "errs": 0,
+     "score": -2.6472,
+     "coverage": 362,
+     "key": {
+      "3": "s",
+      "B": "q",
+      "M": "l",
+      "a": "t",
+      "c": "u",
+      "h": "e",
+      "i": "t",
+      "k": "i",
+      "o": "a",
+      "p": "s",
+      "q": "i"
+     },
+     "agree_with_brik": {
+      "i": "t",
+      "3": "s"
+     },
+     "conflict_with_brik": {
+      "c": "u!=n",
+      "o": "a!=m",
+      "p": "s!=a",
+      "k": "i!=u"
+     },
+     "compared": 6
+    }
+   ]
+  },
+  {
+   "id": "P1a-err0-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 184,
+    "1": 50,
+    "2": 5
+   },
+   "crib": "fata ei jam ab",
+   "folded": "fataeiiamab",
+   "length": 11,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 239,
+   "real_distinct_starts": 239,
+   "real_best_score": -2.4459,
+   "control_placements": {
+    "mean": 140.91,
+    "p95": 172,
+    "max": 192
+   },
+   "control_starts": {
+    "mean": 140.91,
+    "p95": 172,
+    "max": 192
+   },
+   "control_best_score": {
+    "mean": -2.4658,
+    "p95": -2.4217,
+    "max": -2.3899,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 42,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 851,
+     "errs": 0,
+     "score": -2.4459,
+     "coverage": 425,
+     "key": {
+      "4": "a",
+      "7": "i",
+      "S": "a",
+      "T": "t",
+      "b": "e",
+      "e": "b",
+      "f": "a",
+      "k": "a",
+      "p": "m",
+      "t": "i",
+      "u": "f"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "t": "i!=e",
+      "p": "m!=a"
+     },
+     "compared": 3
+    },
+    {
+     "start": 853,
+     "errs": 0,
+     "score": -2.4469,
+     "coverage": 410,
+     "key": {
+      "4": "i",
+      "7": "a",
+      "S": "a",
+      "T": "f",
+      "b": "t",
+      "e": "m",
+      "g": "a",
+      "h": "b",
+      "k": "a",
+      "p": "i",
+      "t": "e"
+     },
+     "agree_with_brik": {
+      "t": "e"
+     },
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "p": "i!=a",
+      "g": "a!=r"
+     },
+     "compared": 4
+    },
+    {
+     "start": 963,
+     "errs": 0,
+     "score": -2.4559,
+     "coverage": 465,
+     "key": {
+      "4": "a",
+      "7": "a",
+      "M": "i",
+      "b": "e",
+      "c": "f",
+      "h": "a",
+      "i": "b",
+      "q": "a",
+      "r": "t",
+      "t": "i",
+      "x": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "c": "f!=n",
+      "t": "i!=e",
+      "i": "b!=t"
+     },
+     "compared": 3
+    },
+    {
+     "start": 954,
+     "errs": 0,
+     "score": -2.4577,
+     "coverage": 445,
+     "key": {
+      "5": "e",
+      "A": "f",
+      "L": "t",
+      "a": "a",
+      "b": "i",
+      "c": "a",
+      "f": "m",
+      "h": "b",
+      "o": "i",
+      "q": "a",
+      "t": "a"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "t!=p",
+      "t": "a!=e",
+      "o": "i!=m",
+      "c": "a!=n"
+     },
+     "compared": 4
+    },
+    {
+     "start": 76,
+     "errs": 0,
+     "score": -2.4791,
+     "coverage": 404,
+     "key": {
+      "3": "f",
+      "5": "t",
+      "A": "b",
+      "D": "a",
+      "F": "a",
+      "M": "i",
+      "k": "e",
+      "l": "a",
+      "p": "i",
+      "q": "a",
+      "u": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "f!=s",
+      "k": "e!=u",
+      "p": "i!=a",
+      "l": "a!=p"
+     },
+     "compared": 4
+    }
+   ]
+  },
+  {
+   "id": "P1a-err0-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "et qualis sit",
+   "max_err": 0,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 159,
+   "true_placement_found": true,
+   "true_placement_rank": 8,
+   "top_key_right": [
+    1,
+    11
+   ],
+   "real_best_score": -2.6084,
+   "control_placements": {
+    "mean": 116.3,
+    "p95": 152,
+    "max": 175
+   },
+   "control_best_score": {
+    "mean": -2.62,
+    "p95": -2.5628,
+    "n_with_placement": 100
+   },
+   "rank_placements_at_or_above": 2,
+   "rank_best_at_or_above": 31,
+   "shuffles": 100
+  },
+  {
+   "id": "P1a-err1",
+   "kind": "target",
+   "where": "p1, line 10, first bracket of P1",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 537,
+    "1": 97,
+    "2": 5
+   },
+   "crib": "et qualis sit",
+   "folded": "etqualissit",
+   "length": 11,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 639,
+   "real_distinct_starts": 639,
+   "real_best_score": -2.5379,
+   "control_placements": {
+    "mean": 447.64,
+    "p95": 493,
+    "max": 546
+   },
+   "control_starts": {
+    "mean": 447.64,
+    "p95": 493,
+    "max": 546
+   },
+   "control_best_score": {
+    "mean": -2.5063,
+    "p95": -2.445,
+    "max": -2.3822,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 170,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 24,
+     "errs": 1,
+     "score": -2.5379,
+     "coverage": 409,
+     "key": {
+      "4": "a",
+      "7": "i",
+      "D": "t",
+      "E": "q",
+      "b": "e",
+      "c": "i",
+      "k": "t",
+      "m": "l",
+      "n": "u",
+      "u": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "t!=u",
+      "c": "i!=n"
+     },
+     "compared": 2
+    },
+    {
+     "start": 750,
+     "errs": 1,
+     "score": -2.5511,
+     "coverage": 412,
+     "key": {
+      "4": "e",
+      "5": "i",
+      "7": "t",
+      "L": "u",
+      "M": "l",
+      "T": "s",
+      "h": "q",
+      "l": "a",
+      "m": "t",
+      "q": "i"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "u!=p",
+      "l": "a!=p"
+     },
+     "compared": 2
+    },
+    {
+     "start": 939,
+     "errs": 1,
+     "score": -2.5562,
+     "coverage": 371,
+     "key": {
+      "4": "i",
+      "8": "t",
+      "F": "s",
+      "L": "a",
+      "S": "q",
+      "b": "t",
+      "g": "i",
+      "l": "u",
+      "q": "e",
+      "u": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "u!=p",
+      "L": "a!=p",
+      "g": "i!=r"
+     },
+     "compared": 3
+    },
+    {
+     "start": 16,
+     "errs": 1,
+     "score": -2.5623,
+     "coverage": 393,
+     "key": {
+      "3": "a",
+      "7": "e",
+      "D": "q",
+      "E": "t",
+      "a": "u",
+      "b": "i",
+      "g": "t",
+      "i": "s",
+      "k": "i",
+      "q": "l"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "t!=r",
+      "3": "a!=s",
+      "i": "s!=t",
+      "k": "i!=u"
+     },
+     "compared": 4
+    },
+    {
+     "start": 343,
+     "errs": 1,
+     "score": -2.5665,
+     "coverage": 438,
+     "key": {
+      "5": "l",
+      "7": "t",
+      "A": "u",
+      "D": "s",
+      "M": "t",
+      "T": "s",
+      "b": "i",
+      "q": "a",
+      "r": "e",
+      "x": "i"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {},
+     "compared": 0
+    }
+   ]
+  },
+  {
+   "id": "P1a-err1-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 550,
+    "1": 130,
+    "2": 11
+   },
+   "crib": "fata ei jam ab",
+   "folded": "fataeiiamab",
+   "length": 11,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 691,
+   "real_distinct_starts": 691,
+   "real_best_score": -2.4001,
+   "control_placements": {
+    "mean": 507.05,
+    "p95": 555,
+    "max": 585
+   },
+   "control_starts": {
+    "mean": 507.05,
+    "p95": 555,
+    "max": 585
+   },
+   "control_best_score": {
+    "mean": -2.3905,
+    "p95": -2.3543,
+    "max": -2.3174,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 131,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 570,
+     "errs": 1,
+     "score": -2.4001,
+     "coverage": 341,
+     "key": {
+      "3": "e",
+      "7": "a",
+      "8": "i",
+      "T": "m",
+      "a": "a",
+      "b": "i",
+      "k": "a",
+      "u": "t",
+      "x": "f"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "e!=s",
+      "k": "a!=u"
+     },
+     "compared": 2
+    },
+    {
+     "start": 522,
+     "errs": 1,
+     "score": -2.4108,
+     "coverage": 310,
+     "key": {
+      "3": "e",
+      "F": "a",
+      "a": "t",
+      "b": "i",
+      "g": "a",
+      "i": "m",
+      "m": "f",
+      "o": "a",
+      "p": "i"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "a!=r",
+      "o": "a!=m",
+      "3": "e!=s",
+      "p": "i!=a",
+      "i": "m!=t"
+     },
+     "compared": 5
+    },
+    {
+     "start": 870,
+     "errs": 1,
+     "score": -2.4152,
+     "coverage": 449,
+     "key": {
+      "4": "a",
+      "5": "i",
+      "E": "f",
+      "F": "m",
+      "M": "a",
+      "b": "a",
+      "l": "t",
+      "n": "a",
+      "q": "i",
+      "r": "e"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "t!=p"
+     },
+     "compared": 1
+    },
+    {
+     "start": 964,
+     "errs": 1,
+     "score": -2.4179,
+     "coverage": 439,
+     "key": {
+      "4": "m",
+      "7": "i",
+      "M": "i",
+      "b": "a",
+      "h": "f",
+      "i": "a",
+      "q": "t",
+      "r": "a",
+      "t": "e",
+      "x": "a"
+     },
+     "agree_with_brik": {
+      "t": "e"
+     },
+     "conflict_with_brik": {
+      "i": "a!=t"
+     },
+     "compared": 2
+    },
+    {
+     "start": 112,
+     "errs": 1,
+     "score": -2.4233,
+     "coverage": 324,
+     "key": {
+      "5": "i",
+      "A": "m",
+      "B": "e",
+      "D": "t",
+      "a": "a",
+      "f": "a",
+      "i": "f",
+      "o": "i",
+      "p": "a",
+      "q": "a"
+     },
+     "agree_with_brik": {
+      "p": "a"
+     },
+     "conflict_with_brik": {
+      "i": "f!=t",
+      "o": "i!=m"
+     },
+     "compared": 3
+    }
+   ]
+  },
+  {
+   "id": "P1a-err1-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "et qualis sit",
+   "max_err": 1,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 531,
+   "true_placement_found": true,
+   "true_placement_rank": 46,
+   "top_key_right": [
+    1,
+    10
+   ],
+   "real_best_score": -2.5408,
+   "control_placements": {
+    "mean": 459.15,
+    "p95": 516,
+    "max": 533
+   },
+   "control_best_score": {
+    "mean": -2.5421,
+    "p95": -2.4859,
+    "n_with_placement": 100
+   },
+   "rank_placements_at_or_above": 2,
+   "rank_best_at_or_above": 49,
+   "shuffles": 100
+  },
+  {
+   "id": "P1a-err2",
+   "kind": "target",
+   "where": "p1, line 10, first bracket of P1",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 799,
+    "1": 140,
+    "2": 9
+   },
+   "crib": "et qualis sit",
+   "folded": "etqualissit",
+   "length": 11,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 948,
+   "real_distinct_starts": 948,
+   "real_best_score": -2.4701,
+   "control_placements": {
+    "mean": 812.91,
+    "p95": 856,
+    "max": 883
+   },
+   "control_starts": {
+    "mean": 812.91,
+    "p95": 856,
+    "max": 883
+   },
+   "control_best_score": {
+    "mean": -2.4535,
+    "p95": -2.3899,
+    "max": -2.3541,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 135,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 238,
+     "errs": 2,
+     "score": -2.4701,
+     "coverage": 359,
+     "key": {
+      "4": "a",
+      "E": "u",
+      "L": "i",
+      "M": "i",
+      "e": "q",
+      "f": "t",
+      "k": "e",
+      "m": "s",
+      "r": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "e!=u",
+      "L": "i!=p"
+     },
+     "compared": 2
+    },
+    {
+     "start": 570,
+     "errs": 2,
+     "score": -2.5011,
+     "coverage": 341,
+     "key": {
+      "3": "a",
+      "7": "t",
+      "8": "l",
+      "T": "s",
+      "a": "u",
+      "b": "i",
+      "k": "i",
+      "u": "q",
+      "x": "e"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "a!=s",
+      "k": "i!=u"
+     },
+     "compared": 2
+    },
+    {
+     "start": 999,
+     "errs": 2,
+     "score": -2.5208,
+     "coverage": 328,
+     "key": {
+      "3": "s",
+      "5": "u",
+      "D": "i",
+      "b": "i",
+      "e": "l",
+      "o": "a",
+      "r": "t",
+      "t": "e",
+      "x": "q"
+     },
+     "agree_with_brik": {
+      "t": "e",
+      "3": "s"
+     },
+     "conflict_with_brik": {
+      "o": "a!=m"
+     },
+     "compared": 3
+    },
+    {
+     "start": 1060,
+     "errs": 2,
+     "score": -2.5315,
+     "coverage": 419,
+     "key": {
+      "7": "t",
+      "M": "a",
+      "T": "l",
+      "b": "e",
+      "g": "t",
+      "l": "i",
+      "p": "i",
+      "q": "s",
+      "r": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "g": "t!=r",
+      "p": "i!=a",
+      "l": "i!=p"
+     },
+     "compared": 3
+    },
+    {
+     "start": 24,
+     "errs": 1,
+     "score": -2.5379,
+     "coverage": 409,
+     "key": {
+      "4": "a",
+      "7": "i",
+      "D": "t",
+      "E": "q",
+      "b": "e",
+      "c": "i",
+      "k": "t",
+      "m": "l",
+      "n": "u",
+      "u": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "t!=u",
+      "c": "i!=n"
+     },
+     "compared": 2
+    }
+   ]
+  },
+  {
+   "id": "P1a-err2-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 774,
+    "1": 183,
+    "2": 13
+   },
+   "crib": "fata ei jam ab",
+   "folded": "fataeiiamab",
+   "length": 11,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 970,
+   "real_distinct_starts": 970,
+   "real_best_score": -2.3911,
+   "control_placements": {
+    "mean": 859.71,
+    "p95": 898,
+    "max": 919
+   },
+   "control_starts": {
+    "mean": 859.71,
+    "p95": 898,
+    "max": 919
+   },
+   "control_best_score": {
+    "mean": -2.3589,
+    "p95": -2.3303,
+    "max": -2.3033,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 196,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 790,
+     "errs": 2,
+     "score": -2.3911,
+     "coverage": 357,
+     "key": {
+      "7": "a",
+      "L": "e",
+      "h": "f",
+      "k": "i",
+      "m": "a",
+      "o": "a",
+      "p": "t",
+      "t": "i",
+      "x": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "t!=a",
+      "o": "a!=m",
+      "L": "e!=p",
+      "t": "i!=e",
+      "k": "i!=u"
+     },
+     "compared": 5
+    },
+    {
+     "start": 606,
+     "errs": 2,
+     "score": -2.3938,
+     "coverage": 377,
+     "key": {
+      "4": "a",
+      "5": "i",
+      "8": "a",
+      "E": "t",
+      "M": "e",
+      "c": "a",
+      "k": "i",
+      "n": "a",
+      "o": "f"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "f!=m",
+      "c": "a!=n",
+      "k": "i!=u"
+     },
+     "compared": 3
+    },
+    {
+     "start": 269,
+     "errs": 2,
+     "score": -2.3967,
+     "coverage": 419,
+     "key": {
+      "D": "a",
+      "L": "e",
+      "M": "a",
+      "b": "i",
+      "f": "a",
+      "k": "a",
+      "o": "i",
+      "p": "t",
+      "x": "f"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "t!=a",
+      "k": "a!=u",
+      "L": "e!=p",
+      "o": "i!=m"
+     },
+     "compared": 4
+    },
+    {
+     "start": 570,
+     "errs": 1,
+     "score": -2.4001,
+     "coverage": 341,
+     "key": {
+      "3": "e",
+      "7": "a",
+      "8": "i",
+      "T": "m",
+      "a": "a",
+      "b": "i",
+      "k": "a",
+      "u": "t",
+      "x": "f"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "e!=s",
+      "k": "a!=u"
+     },
+     "compared": 2
+    },
+    {
+     "start": 246,
+     "errs": 2,
+     "score": -2.401,
+     "coverage": 376,
+     "key": {
+      "3": "a",
+      "D": "m",
+      "L": "a",
+      "M": "i",
+      "b": "i",
+      "f": "t",
+      "l": "a",
+      "m": "f",
+      "p": "e"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "a!=p",
+      "3": "a!=s",
+      "p": "e!=a",
+      "l": "a!=p"
+     },
+     "compared": 4
+    }
+   ]
+  },
+  {
+   "id": "P1b-err0",
+   "kind": "target",
+   "where": "p1, line 10, third bracket of P1",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "futurus status dubitatur",
+   "folded": "futurusstatusdubitatur",
+   "length": 22,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.2,
+    "p95": 1,
+    "max": 3
+   },
+   "control_starts": {
+    "mean": 0.2,
+    "p95": 1,
+    "max": 3
+   },
+   "control_best_score": {
+    "mean": -2.7675,
+    "p95": -2.6998,
+    "max": -2.6722,
+    "n_with_placement": 28
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1b-err0-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": null,
+   "agree_with_brik_histogram": {},
+   "crib": "ac non mei ideo non quia fic",
+   "folded": "acnonmeiideononquiafic",
+   "length": 22,
+   "max_err": 0,
+   "N": 1094,
+   "real_placements": 0,
+   "real_distinct_starts": 0,
+   "real_best_score": null,
+   "control_placements": {
+    "mean": 0.07,
+    "p95": 0,
+    "max": 3
+   },
+   "control_starts": {
+    "mean": 0.07,
+    "p95": 0,
+    "max": 3
+   },
+   "control_best_score": {
+    "mean": -2.7314,
+    "p95": -2.5832,
+    "max": -2.5832,
+    "n_with_placement": 10
+   },
+   "rank_placements_at_or_above": 200,
+   "rank_best_at_or_above": null,
+   "shuffles": 200,
+   "top": []
+  },
+  {
+   "id": "P1b-err0-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "futurus status dubitatur",
+   "max_err": 0,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 2,
+   "true_placement_found": true,
+   "true_placement_rank": 1,
+   "top_key_right": [
+    11,
+    11
+   ],
+   "real_best_score": -2.7295,
+   "control_placements": {
+    "mean": 0.11,
+    "p95": 1,
+    "max": 1
+   },
+   "control_best_score": {
+    "mean": -2.786,
+    "p95": -2.7163,
+    "n_with_placement": 11
+   },
+   "rank_placements_at_or_above": 0,
+   "rank_best_at_or_above": 2,
+   "shuffles": 100
+  },
+  {
+   "id": "P1b-err1",
+   "kind": "target",
+   "where": "p1, line 10, third bracket of P1",
+   "agree_with_brik_max_any_placement": 1,
+   "agree_with_brik_histogram": {
+    "0": 2,
+    "1": 1
+   },
+   "crib": "futurus status dubitatur",
+   "folded": "futurusstatusdubitatur",
+   "length": 22,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 3,
+   "real_distinct_starts": 3,
+   "real_best_score": -2.7508,
+   "control_placements": {
+    "mean": 2.19,
+    "p95": 6,
+    "max": 13
+   },
+   "control_starts": {
+    "mean": 2.19,
+    "p95": 6,
+    "max": 13
+   },
+   "control_best_score": {
+    "mean": -2.7588,
+    "p95": -2.6753,
+    "max": -2.627,
+    "n_with_placement": 160
+   },
+   "rank_placements_at_or_above": 66,
+   "rank_best_at_or_above": 71,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 691,
+     "errs": 1,
+     "score": -2.7508,
+     "coverage": 734,
+     "key": {
+      "4": "u",
+      "5": "a",
+      "7": "t",
+      "D": "b",
+      "L": "u",
+      "M": "u",
+      "a": "t",
+      "e": "s",
+      "g": "u",
+      "k": "r",
+      "l": "s",
+      "m": "f",
+      "n": "s",
+      "o": "a",
+      "p": "d",
+      "r": "r",
+      "t": "i",
+      "u": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "u!=p",
+      "k": "r!=u",
+      "l": "s!=p",
+      "o": "a!=m",
+      "g": "u!=r",
+      "p": "d!=a",
+      "t": "i!=e"
+     },
+     "compared": 7
+    },
+    {
+     "start": 795,
+     "errs": 1,
+     "score": -2.8141,
+     "coverage": 746,
+     "key": {
+      "4": "a",
+      "5": "t",
+      "7": "t",
+      "D": "d",
+      "L": "r",
+      "M": "b",
+      "T": "s",
+      "b": "t",
+      "c": "s",
+      "e": "u",
+      "f": "s",
+      "k": "u",
+      "m": "a",
+      "n": "u",
+      "o": "u",
+      "r": "i",
+      "t": "f",
+      "x": "u"
+     },
+     "agree_with_brik": {
+      "k": "u"
+     },
+     "conflict_with_brik": {
+      "t": "f!=e",
+      "L": "r!=p",
+      "o": "u!=m",
+      "c": "s!=n"
+     },
+     "compared": 5
+    },
+    {
+     "start": 942,
+     "errs": 1,
+     "score": -2.8142,
+     "coverage": 722,
+     "key": {
+      "4": "s",
+      "5": "i",
+      "8": "s",
+      "A": "s",
+      "F": "u",
+      "L": "u",
+      "a": "t",
+      "b": "t",
+      "c": "r",
+      "f": "u",
+      "g": "u",
+      "l": "f",
+      "n": "u",
+      "o": "a",
+      "q": "d",
+      "r": "a",
+      "t": "b",
+      "u": "r",
+      "x": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "f!=p",
+      "L": "u!=p",
+      "g": "u!=r",
+      "t": "b!=e",
+      "o": "a!=m",
+      "c": "r!=n"
+     },
+     "compared": 6
+    }
+   ]
+  },
+  {
+   "id": "P1b-err1-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 0,
+   "agree_with_brik_histogram": {
+    "0": 1
+   },
+   "crib": "ac non mei ideo non quia fic",
+   "folded": "acnonmeiideononquiafic",
+   "length": 22,
+   "max_err": 1,
+   "N": 1094,
+   "real_placements": 1,
+   "real_distinct_starts": 1,
+   "real_best_score": -2.5955,
+   "control_placements": {
+    "mean": 1.09,
+    "p95": 4,
+    "max": 11
+   },
+   "control_starts": {
+    "mean": 1.09,
+    "p95": 4,
+    "max": 11
+   },
+   "control_best_score": {
+    "mean": -2.6915,
+    "p95": -2.5909,
+    "max": -2.486,
+    "n_with_placement": 111
+   },
+   "rank_placements_at_or_above": 111,
+   "rank_best_at_or_above": 10,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 341,
+     "errs": 1,
+     "score": -2.5955,
+     "coverage": 771,
+     "key": {
+      "4": "n",
+      "5": "i",
+      "7": "n",
+      "A": "m",
+      "D": "d",
+      "L": "u",
+      "M": "o",
+      "S": "a",
+      "T": "e",
+      "a": "a",
+      "b": "i",
+      "c": "f",
+      "g": "c",
+      "o": "i",
+      "p": "c",
+      "q": "e",
+      "r": "n",
+      "t": "o",
+      "x": "o"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "c!=a",
+      "t": "o!=e",
+      "L": "u!=p",
+      "o": "i!=m",
+      "c": "f!=n",
+      "g": "c!=r"
+     },
+     "compared": 6
+    }
+   ]
+  },
+  {
+   "id": "P1b-err1-pos",
+   "where": "synthetic la18 letter, N=1094 K=34, phrase embedded",
+   "kind": "positive-control",
+   "crib": "futurus status dubitatur",
+   "max_err": 1,
+   "N": 1094,
+   "K": 34,
+   "true_start": 129,
+   "real_placements": 5,
+   "true_placement_found": true,
+   "true_placement_rank": 3,
+   "top_key_right": [
+    2,
+    18
+   ],
+   "real_best_score": -2.6668,
+   "control_placements": {
+    "mean": 2.2,
+    "p95": 5,
+    "max": 9
+   },
+   "control_best_score": {
+    "mean": -2.7654,
+    "p95": -2.6964,
+    "n_with_placement": 84
+   },
+   "rank_placements_at_or_above": 10,
+   "rank_best_at_or_above": 1,
+   "shuffles": 100
+  },
+  {
+   "id": "P1b-err2",
+   "kind": "target",
+   "where": "p1, line 10, third bracket of P1",
+   "agree_with_brik_max_any_placement": 2,
+   "agree_with_brik_histogram": {
+    "0": 15,
+    "1": 12,
+    "2": 1
+   },
+   "crib": "futurus status dubitatur",
+   "folded": "futurusstatusdubitatur",
+   "length": 22,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 28,
+   "real_distinct_starts": 28,
+   "real_best_score": -2.6927,
+   "control_placements": {
+    "mean": 15.56,
+    "p95": 26,
+    "max": 34
+   },
+   "control_starts": {
+    "mean": 15.56,
+    "p95": 26,
+    "max": 34
+   },
+   "control_best_score": {
+    "mean": -2.682,
+    "p95": -2.6269,
+    "max": -2.5677,
+    "n_with_placement": 200
+   },
+   "rank_placements_at_or_above": 9,
+   "rank_best_at_or_above": 125,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 25,
+     "errs": 2,
+     "score": -2.6927,
+     "coverage": 711,
+     "key": {
+      "4": "u",
+      "5": "d",
+      "7": "t",
+      "8": "r",
+      "D": "a",
+      "E": "u",
+      "F": "u",
+      "L": "t",
+      "M": "u",
+      "c": "u",
+      "e": "t",
+      "g": "u",
+      "h": "t",
+      "k": "f",
+      "l": "s",
+      "m": "r",
+      "n": "t",
+      "o": "a",
+      "q": "i",
+      "u": "s"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "f!=u",
+      "c": "u!=n",
+      "l": "s!=p",
+      "g": "u!=r",
+      "L": "t!=p",
+      "o": "a!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 0,
+     "errs": 2,
+     "score": -2.7337,
+     "coverage": 606,
+     "key": {
+      "3": "s",
+      "7": "i",
+      "A": "u",
+      "B": "t",
+      "D": "a",
+      "M": "u",
+      "a": "t",
+      "c": "u",
+      "f": "u",
+      "g": "t",
+      "h": "f",
+      "i": "u",
+      "k": "a",
+      "l": "d",
+      "n": "b",
+      "o": "r",
+      "p": "t",
+      "q": "s"
+     },
+     "agree_with_brik": {
+      "3": "s"
+     },
+     "conflict_with_brik": {
+      "i": "u!=t",
+      "c": "u!=n",
+      "o": "r!=m",
+      "p": "t!=a",
+      "k": "a!=u",
+      "l": "d!=p",
+      "g": "t!=r"
+     },
+     "compared": 8
+    },
+    {
+     "start": 72,
+     "errs": 2,
+     "score": -2.7345,
+     "coverage": 741,
+     "key": {
+      "3": "r",
+      "4": "t",
+      "5": "s",
+      "7": "f",
+      "A": "u",
+      "D": "u",
+      "F": "s",
+      "L": "a",
+      "M": "a",
+      "b": "u",
+      "g": "t",
+      "k": "t",
+      "l": "d",
+      "p": "t",
+      "q": "u",
+      "t": "u",
+      "u": "s",
+      "x": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "t": "u!=e",
+      "3": "r!=s",
+      "k": "t!=u",
+      "p": "t!=a",
+      "l": "d!=p",
+      "L": "a!=p",
+      "g": "t!=r"
+     },
+     "compared": 7
+    },
+    {
+     "start": 78,
+     "errs": 2,
+     "score": -2.7412,
+     "coverage": 740,
+     "key": {
+      "3": "b",
+      "5": "f",
+      "7": "t",
+      "A": "t",
+      "D": "u",
+      "F": "u",
+      "L": "s",
+      "M": "u",
+      "a": "r",
+      "b": "u",
+      "g": "d",
+      "h": "t",
+      "k": "t",
+      "l": "s",
+      "p": "r",
+      "q": "a",
+      "t": "i",
+      "u": "s",
+      "x": "u"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "t!=u",
+      "p": "r!=a",
+      "l": "s!=p",
+      "L": "s!=p",
+      "g": "d!=r",
+      "3": "b!=s",
+      "t": "i!=e"
+     },
+     "compared": 7
+    },
+    {
+     "start": 691,
+     "errs": 1,
+     "score": -2.7508,
+     "coverage": 734,
+     "key": {
+      "4": "u",
+      "5": "a",
+      "7": "t",
+      "D": "b",
+      "L": "u",
+      "M": "u",
+      "a": "t",
+      "e": "s",
+      "g": "u",
+      "k": "r",
+      "l": "s",
+      "m": "f",
+      "n": "s",
+      "o": "a",
+      "p": "d",
+      "r": "r",
+      "t": "i",
+      "u": "t"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "L": "u!=p",
+      "k": "r!=u",
+      "l": "s!=p",
+      "o": "a!=m",
+      "g": "u!=r",
+      "p": "d!=a",
+      "t": "i!=e"
+     },
+     "compared": 7
+    }
+   ]
+  },
+  {
+   "id": "P1b-err2-neg",
+   "kind": "negative-crib",
+   "where": "la18 tomus I, not on the leaf",
+   "agree_with_brik_max_any_placement": 1,
+   "agree_with_brik_histogram": {
+    "0": 10,
+    "1": 2
+   },
+   "crib": "ac non mei ideo non quia fic",
+   "folded": "acnonmeiideononquiafic",
+   "length": 22,
+   "max_err": 2,
+   "N": 1094,
+   "real_placements": 12,
+   "real_distinct_starts": 12,
+   "real_best_score": -2.5575,
+   "control_placements": {
+    "mean": 8.47,
+    "p95": 17,
+    "max": 26
+   },
+   "control_starts": {
+    "mean": 8.47,
+    "p95": 17,
+    "max": 26
+   },
+   "control_best_score": {
+    "mean": -2.6087,
+    "p95": -2.5362,
+    "max": -2.4704,
+    "n_with_placement": 197
+   },
+   "rank_placements_at_or_above": 47,
+   "rank_best_at_or_above": 32,
+   "shuffles": 200,
+   "top": [
+    {
+     "start": 25,
+     "errs": 2,
+     "score": -2.5575,
+     "coverage": 711,
+     "key": {
+      "4": "o",
+      "5": "o",
+      "7": "i",
+      "8": "c",
+      "D": "d",
+      "E": "c",
+      "F": "o",
+      "L": "i",
+      "M": "i",
+      "c": "m",
+      "e": "e",
+      "g": "n",
+      "h": "f",
+      "k": "a",
+      "l": "n",
+      "m": "n",
+      "n": "n",
+      "o": "a",
+      "q": "u",
+      "u": "e"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "k": "a!=u",
+      "c": "m!=n",
+      "l": "n!=p",
+      "g": "n!=r",
+      "L": "i!=p",
+      "o": "a!=m"
+     },
+     "compared": 6
+    },
+    {
+     "start": 800,
+     "errs": 2,
+     "score": -2.593,
+     "coverage": 742,
+     "key": {
+      "4": "n",
+      "5": "o",
+      "7": "m",
+      "D": "i",
+      "E": "f",
+      "L": "u",
+      "M": "e",
+      "T": "n",
+      "b": "n",
+      "c": "c",
+      "e": "d",
+      "f": "i",
+      "m": "o",
+      "n": "e",
+      "o": "a",
+      "p": "i",
+      "r": "o",
+      "t": "c",
+      "x": "i"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "o": "a!=m",
+      "c": "c!=n",
+      "L": "u!=p",
+      "p": "i!=a",
+      "t": "c!=e"
+     },
+     "compared": 5
+    },
+    {
+     "start": 341,
+     "errs": 1,
+     "score": -2.5955,
+     "coverage": 771,
+     "key": {
+      "4": "n",
+      "5": "i",
+      "7": "n",
+      "A": "m",
+      "D": "d",
+      "L": "u",
+      "M": "o",
+      "S": "a",
+      "T": "e",
+      "a": "a",
+      "b": "i",
+      "c": "f",
+      "g": "c",
+      "o": "i",
+      "p": "c",
+      "q": "e",
+      "r": "n",
+      "t": "o",
+      "x": "o"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "p": "c!=a",
+      "t": "o!=e",
+      "L": "u!=p",
+      "o": "i!=m",
+      "c": "f!=n",
+      "g": "c!=r"
+     },
+     "compared": 6
+    },
+    {
+     "start": 996,
+     "errs": 2,
+     "score": -2.6678,
+     "coverage": 744,
+     "key": {
+      "3": "e",
+      "4": "f",
+      "5": "e",
+      "7": "i",
+      "A": "c",
+      "D": "d",
+      "M": "u",
+      "a": "n",
+      "b": "n",
+      "e": "i",
+      "k": "n",
+      "l": "a",
+      "n": "q",
+      "o": "i",
+      "p": "i",
+      "r": "n",
+      "t": "o",
+      "x": "m"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "l": "a!=p",
+      "k": "n!=u",
+      "t": "o!=e",
+      "o": "i!=m",
+      "3": "e!=s",
+      "p": "i!=a"
+     },
+     "compared": 6
+    },
+    {
+     "start": 20,
+     "errs": 2,
+     "score": -2.6725,
+     "coverage": 626,
+     "key": {
+      "3": "a",
+      "4": "i",
+      "5": "a",
+      "7": "o",
+      "D": "n",
+      "E": "e",
+      "F": "u",
+      "b": "n",
+      "c": "e",
+      "e": "q",
+      "g": "f",
+      "i": "o",
+      "k": "m",
+      "l": "i",
+      "m": "d",
+      "n": "i",
+      "q": "c",
+      "u": "o"
+     },
+     "agree_with_brik": {},
+     "conflict_with_brik": {
+      "3": "a!=s",
+      "i": "o!=t",
+      "k": "m!=u",
+      "c": "e!=n",
+      "l": "i!=p",
+      "g": "f!=r"
+     },
+     "compared": 6
+    }
+   ]
+  }
+ ]
+}
