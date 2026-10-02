@@ -3,7 +3,7 @@
  "viewer": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/{image}",
  "fetched": "2 October 2026 (GAPS-pro3055-clinton-1779, account-4)",
  "fetch_method": "the viewer page lists every image's IIIF Image API 2 identifier in its #pvPageSelect options (saved to seq_to_iiif.tsv, all 1266); info.json and default.jpg at image-uab.canadiana.ca answer 403 to a plain request and 200 with a browser User-Agent plus a Referer header of the viewer page; one request at a time, 1.6 s apart",
- "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native)",
+ "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart)",
  "rights": "LAC microfilm of BL manuscripts, 18th-century text; reel served openly by Canadiana",
  "files": [
   {
@@ -83,6 +83,38 @@
    "bytes": 3806974,
    "size": "6080x4056 (829: 5928x4056)",
    "note": "reel page 186 = fo.161, the period decipherment in clear, 'I have received your dispatches', H C, 6th July, Copy, endorsements"
+  },
+  {
+   "file": "img1_w700.jpg",
+   "image": 1,
+   "iiif_id": "c00z70w6xk23",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc00z70w6xk23/full/1400,/0/default.jpg",
+   "bytes": 27797,
+   "note": "stored at 700 px (fetched at 1400 px, 2 Oct 2026 GAPS5, folder near its 30 MB line); reel start card: \"START / DEBUT\" only, no volume label (read on a 3-frame montage, GAPS5 2 Oct 2026)"
+  },
+  {
+   "file": "img637_w700.jpg",
+   "image": 637,
+   "iiif_id": "c0v11vf59f64",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0v11vf59f64/full/1400,/0/default.jpg",
+   "bytes": 21815,
+   "note": "stored at 700 px (fetched at 1400 px, 2 Oct 2026 GAPS5, folder near its 30 MB line); title leaf of BL Add MS 21807: \"Haldimand Papers. Correspondence with Sir H. Clinton, Sir Guy Carleton, and other Officers at New York, 1777-1783. Vol. I. Presented by W. Haldimand Esq. Jan. 1857. Mus. Brit. 21,807\" (read on the montage, GAPS5); a typed LAC label strip stands beside it, cropped to img637_label_strip.jpg, not yet read"
+  },
+  {
+   "file": "img1266_w700.jpg",
+   "image": 1266,
+   "iiif_id": "c0k93134bm6j",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0k93134bm6j/full/1400,/0/default.jpg",
+   "bytes": 18269,
+   "note": "stored at 700 px (fetched at 1400 px, 2 Oct 2026 GAPS5, folder near its 30 MB line); reel end card: \"END OF REEL / FIN DE LA BOBINE\" only; the last content frame is 1265 or earlier (not fetched)"
+  },
+  {
+   "file": "img637_label_strip.jpg",
+   "image": 637,
+   "iiif_id": "c0v11vf59f64",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0v11vf59f64/full/1400,/0/default.jpg",
+   "bytes": 19261,
+   "note": "crop (1130,300,1310,720) of the 1400 px Image 637, rotated -90 and enlarged 2x: the typed LAC label strip beside the 21807 title leaf; unread (GAPS5 spent its 2 vision calls on the montage and a mis-aimed first crop)"
   }
  ],
  "crops": "p186_text_region.jpg is a PIL crop of img829_full.jpg (box 1956,527,4090,3772 = the text block of page 186); p186_bottom_region.jpg its lower 915 px; p186_lines/ holds the tools/iiif_lines.py line crops (--distance 110 --prominence 40 on the text region, 15 bands; --distance 90 --prominence 10 on the bottom strip, 2 bands) with their own manifest.json and debug overlays"
