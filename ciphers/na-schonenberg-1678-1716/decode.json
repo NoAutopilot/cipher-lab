@@ -1,7 +1,7 @@
 {"target": "ciphers/na-schonenberg-1678-1716",
  "note": "NA 1.02.04 invnr 63, VX-RD01 25 Sept 2026. Key built from the leaf's own interlinear Spanish gloss (period key, L01-L14); L18-L19 carry no gloss on the leaf and are the target of this job.",
  "jobs": [
-  {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "format": "tsv", "style": "spaced",
+  {"ciphertext": "ciphertext.tsv", "key": "key.tsv", "exceptions": "exceptions.tsv", "format": "tsv", "style": "spaced",
    "reading": "reading.txt", "tokens": "reading_tokens.tsv",
    "unkeyed_value": "[?]", "unkeyed_grade": "U",
    "header": [

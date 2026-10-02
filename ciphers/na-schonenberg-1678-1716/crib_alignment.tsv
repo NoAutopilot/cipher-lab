@@ -1,0 +1,29 @@
+line	pos	group	crib_letter	key_value	key_grade	result
+L18	0	61	f	[?]	U	never glossed
+L18	1	68	o	o	C	agree
+L18	2	2)	r	r	C	agree
+L18	3	88	m	m	M	agree
+L18	4	)8	a	a	M	agree
+L19	0	[triangle]	a	a	C	agree
+L19	1	59	d	d	M	agree
+L19	2	24	o	[?]	U	tie-set contains
+L19	3	[n]	n	[?]	U	never glossed
+L19	4	34	a	[?]	U	tie-set contains
+L19	5	[tilde]	a	a	M	agree
+L19	6	6)	n	n	C	agree
+L19	7	51	t	[?]	U	tie-set contains
+L19	8	68	o	o	C	agree
+L19	9	?9	n	n	C	agree
+L19	10	32	y	y	C	agree
+L19	11	6	a	a	C	agree
+L19	12	3)	d	d	C	agree
+L19	13	16	e	e	C	agree
+L19	14	12	a	a	M	agree
+L19	15	65	l	[?]	U	tie-set lacks
+L19	16	13	b	b	C	agree
+L19	17	56	a	a	M	agree
+L19	18	6)	n	n	C	agree
+L19	19	54	y	y	C	agree
+L19	20	8)	l	p	M	DISAGREE
+L19	21	65	l	[?]	U	tie-set lacks
+L19	22	11	a	[?]	U	tie-set contains

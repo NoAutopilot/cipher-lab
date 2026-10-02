@@ -12,7 +12,7 @@ code	value	grade	n	source	note
 38	e	C	6	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 4/5 agreement in passB's own tally elsewhere ({'e': 4, 'n': 1})
 6)	n	C	6	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/5 agreement in passB's own tally elsewhere ({'n': 2, 'k': 1, 'u': 1, 'o': 1})
 )6	y	C	5	period	passB gloss tally {'y': 4, 'z': 1} (4/5 = 80%)
-)8	a	M	5	period	passB gloss tally {'a': 2, 'l': 1, 'c': 1, 'm': 1} (2/5 = 40%)
+)8	a	M	6	period	passB gloss tally {'a': 2, 'l': 1, 'c': 1, 'm': 1} + L18's own gloss 'a' over )8 (GAPS 2 Oct 2026): 3/6 = 50%, stays M
 16	e	C	5	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/4 agreement in passB's own tally elsewhere ({'n': 1, 'e': 2, 'y': 1})
 30	u	M	5	period	passB gloss tally {'u': 2, 'v': 1, 'e': 1, 'g': 1} (2/5 = 40%)
 32	y	C	5	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 3/4 agreement in passB's own tally elsewhere ({'y': 3, 'e': 1})
@@ -30,16 +30,16 @@ code	value	grade	n	source	note
 59	d	M	4	period	passB gloss tally {'d': 2, 'o': 1, 'n': 1} (2/4 = 50%)
 8	o	C	4	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/3 agreement in passB's own tally elsewhere ({'o': 2, 'p': 1})
 )0	u	M	3	period	passB gloss tally {'u': 2, 'q': 1} (2/3 = 67%)
-24	[?]	U	3		tied {'o': 1, 'i': 1, 'l': 1}, no majority in passB's own gloss -- left uncoded
+24	o	M	3	crib-address	GAPS 2 Oct 2026: L19 pos2 aligned to the clear address 'A Dona Antonija de Albanylla' (23 letters = 23 groups; 15/16 resolved positions agree vs slid-window control max 0.286 over 229 L01-L14 windows and shuffled-crib control max 0.438 over 2000 permutations, crib_align.py); body tie {'o': 1, 'i': 1, 'l': 1} contains o (L01 pos11 'o'); graded M under rule 4's conflict clause: the crib value disagrees with body glosses i (L12 pos3) and l (L13 pos7), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
 25	[?]	U	3		tied {'a': 1, 'u': 1, 'p': 1}, no majority in passB's own gloss -- left uncoded
 31	x	C	3	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/2 agreement in passB's own tally elsewhere ({'d': 1, 'x': 1})
-34	[?]	U	3		tied {'s': 1, 'd': 1, 'a': 1}, no majority in passB's own gloss -- left uncoded
+34	a	M	3	crib-address	GAPS 2 Oct 2026: L19 pos4 = a in the address crib (controls as for 24); body tie {'s': 1, 'd': 1, 'a': 1} contains a (L12 pos1 'a'); graded M under rule 4's conflict clause: the crib value disagrees with body glosses s (L02 pos8) and d (L11 pos14), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
 46	o	M	3	period	passB gloss tally {'o': 2, 'e': 1} (2/3 = 67%)
 5	[?]	U	3		tied {'e': 1, 's': 1, 'd': 1}, no majority in passB's own gloss -- left uncoded
-51	[?]	U	3		tied {'t': 1, 'a': 1, 'e': 1}, no majority in passB's own gloss -- left uncoded
+51	t	M	3	crib-address	GAPS 2 Oct 2026: L19 pos7 = t in the address crib (controls as for 24); body tie {'t': 1, 'a': 1, 'e': 1} contains t (L03 pos16 't'); graded M under rule 4's conflict clause: the crib value disagrees with body glosses a (L08 pos6) and e (L13 pos13), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
 68	o	C	3	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/2 agreement in passB's own tally elsewhere ({'o': 2})
 )3	[?]	U	2		tied {'t': 1, 'o': 1}, no majority in passB's own gloss -- left uncoded
-11	[?]	U	2		tied {'a': 1, 's': 1}, no majority in passB's own gloss -- left uncoded
+11	a	M	2	crib-address	GAPS 2 Oct 2026: L19 pos22 = a in the address crib (controls as for 24); body tie {'a': 1, 's': 1} contains a (L05 pos6 'a'); graded M under rule 4's conflict clause: the crib value disagrees with body gloss s (L09 pos15), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
 13	b	C	2	period	passB gloss tally {'b': 2} (2/2 = 100%)
 14	[?]	U	2		tied {'l': 1, 'e': 1}, no majority in passB's own gloss -- left uncoded
 21	l	C	2	period	passB gloss tally {'l': 2} (2/2 = 100%)
@@ -49,7 +49,7 @@ code	value	grade	n	source	note
 33	[?]	U	2		tied {'z': 1, 'n': 1}, no majority in passB's own gloss -- left uncoded
 35	b	C	2	period	passB gloss tally {'b': 2} (2/2 = 100%)
 43	l	C	2	period	passB gloss tally {'l': 2} (2/2 = 100%)
-65	[?]	U	2		tied {'y': 1, 'a': 1}, no majority in passB's own gloss -- left uncoded
+65	l	M	2	crib-address	GAPS 2 Oct 2026: CONFLICT -- l at both crib positions L19 pos15 and pos21 (the two l's of 'albanylla'), against body glosses y (L08 pos8) and a (L13 pos8), both in lines passB flags as 1-2 groups misaligned and disagreeing with each other; graded M, logged in HYPOTHESES.md
 81	a	C	2	period	passB gloss tally {'a': 2} (2/2 = 100%)
 82	[?]	U	2		tied {'e': 1, 'd': 1}, no majority in passB's own gloss -- left uncoded
 93	r	C	2	period	passB gloss tally {'r': 2} (2/2 = 100%)
@@ -76,7 +76,7 @@ code	value	grade	n	source	note
 66	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
 69	s	M	1	period	passB gloss tally {'s': 1} (1/1 = 100%)
 8)	p	M	1	period	passB gloss tally {'p': 1} (1/1 = 100%)
-88	m	M	1	period	passB gloss tally {'m': 1} (1/1 = 100%)
+88	m	C	2	period	passB gloss tally {'m': 1} (L03 pos8) + L18's own gloss 'm' over 88 (GAPS 2 Oct 2026, image check): 2/2 = 100%
 9	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
 90	o	M	1	period	passB gloss tally {'o': 1} (1/1 = 100%)
 99	z	M	1	period	passB gloss tally {'z': 1} (1/1 = 100%)
@@ -86,3 +86,5 @@ code	value	grade	n	source	note
 [circle]	r	M	1	period	passB gloss tally {'r': 1} (1/1 = 100%)
 [square]	n	M	1	period	passB gloss tally {'n': 1} (1/1 = 100%)
 [tilde]	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
+61	f	C	1	period	GAPS 2 Oct 2026: L18 is glossed on the leaf -- 'forma.' stands in the small gloss hand letter-for-letter over 61.68.2).88.)8. (image check at native resolution, layout crop y1660-2200); f over 61. Never occurs in L01-L14; single pixel-verified occurrence, graded C by VX-RD01's own pixel-verified rule
+[n]	ñ	C	1	crib-address	GAPS 2 Oct 2026: L19 pos3 = ñ of 'Dona' in the address crib (controls as for 24); the sign itself is an n with a small ring/mark above it (image check), never in L01-L14

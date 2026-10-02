@@ -48,3 +48,9 @@ code	votes	total	note
 96	{'o': 1, 'n': 1}	2	passB's own gloss glosses this code more than one way across the leaf
 98	{'y': 1, 'a': 1}	2	passB's own gloss glosses this code more than one way across the leaf
 [blot]	{'m': 1, 'e': 1}	2	passB's own gloss glosses this code more than one way across the leaf
+65	{'l': 2 (crib L19 pos15, pos21), 'y': 1 (L08 pos8), 'a': 1 (L13 pos8)}	4	GAPS 2 Oct 2026: the address crib reads l at both L19 occurrences; the two body glosses disagree with it and with each other, both in lines passB flags as 1-2 groups misaligned; key.tsv 65 = l at M
+8)	{'l': 1 (crib L19 pos20), 'P': 1 (L03 pos0, conf M)}	2	GAPS 2 Oct 2026: sign confirmed 8) (tick after) at 2x; crib l vs the single body gloss P; key.tsv keeps 8) = p (M), exceptions.tsv gives L19 pos20 = l (M); passB's own tick-before/tick-after doubt applies to both witnesses
+24	{'o': 2 (crib L19 pos2, L01 pos11), 'i': 1 (L12 pos3), 'l': 1 (L13 pos7)}	4	GAPS 2 Oct 2026: crib breaks the body tie toward o; key.tsv 24 = o at M (rule 4 conflict clause)
+34	{'a': 2 (crib L19 pos4, L12 pos1), 's': 1 (L02 pos8), 'd': 1 (L11 pos14)}	4	GAPS 2 Oct 2026: crib breaks the body tie toward a; key.tsv 34 = a at M
+51	{'t': 2 (crib L19 pos7, L03 pos16), 'a': 1 (L08 pos6), 'e': 1 (L13 pos13)}	4	GAPS 2 Oct 2026: crib breaks the body tie toward t; key.tsv 51 = t at M
+11	{'a': 2 (crib L19 pos22, L05 pos6), 's': 1 (L09 pos15)}	3	GAPS 2 Oct 2026: crib breaks the body tie toward a; key.tsv 11 = a at M

@@ -1,7 +1,7 @@
 partial
-VX-RD01, 25 Sept 2026: the leaf's own period gloss transcribed for L01-L14 (H-grade key source per rule 4); the
-two unglossed closing lines (L18-L19) partially decoded from a key built off that gloss, mostly grade M/U -- see
-"Reading (VX-RD01, 25 Sept 2026)" below. check-solved's own verdict (unchanged, this worker did not repeat it):
+GAPS 2 Oct 2026: both closing lines now read -- L18 is glossed on the leaf after all ("forma." in the gloss hand over its 5 groups, image
+check) and L19 aligns to the clear address "A Doña Antonija de Albanylla" (15/16 vs controls max 0.286 and 0.438, crib_align.py); 28/28 tokens
+valued, C 15 M 13, judge FAIL on a 28-letter name string (pasted below). VX-RD01, 25 Sept 2026: L01-L14 period gloss transcribed (H-grade key source).
 Nationaal Archief 1.02.04 finding aid (26-page PDF, `www.nationaalarchief.nl/onderzoeken/archief/1.02.04/download/pdf`) read in full by this worker (grepped for cijfer/cijferschrift/geheimschrift/chiffre/sleutel across all ~152 inventory numbers); Internet Archive full-text search `"Schonenberg brieven"` (0 hits, no printed edition of this envoy's correspondence exists on IA); Huygens retroboeken *Briefwisseling van Anthonie Heinsius 1702-1720* full-text search (`resources.huygens.knaw.nl/retroboeken/heinsius/search_in_text`) for `Schonenberg` (413 hits, all his official correspondence with Heinsius, none mention Albanilla/Albanylla) and `Albanilla`/`Albanylla` (0 hits each) read by this worker.
 
 QUEUE row: VX-E01. Worker: LANE VX VX-CS01 (Sonnet, session_01HitmZCRTQ5GgjaHVG5yRcB), 25 Sept 2026. Job: `.claude/briefs/runs/2026-09-25-lane-vx-cs01.md`.
@@ -165,19 +165,106 @@ Files: `passA.tsv`, `passA_summary.txt`, `passB.tsv`, `passB_summary.txt`, `ciph
 Hosts this job: none (all work from the image already on disk; no new fetches from service.archief.nl or any
 other host).
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: 246 of 279 cipher groups (88.2%) carry the leaf's own period gloss letter (ciphertext.tsv, L01-L14; 2 of those 246, L01 pos6 `23` and pos7 `[blot]`, are the later-ink insertion passB flagged, gloss "M" with blank confidence, so 244 is the safer count), plus 12 C-grade tokens in L18-L19 = 258 of 279 (92.5%) with a value; only 195 of 279 (69.9%) are at H transcription (183) or grade C (12). Regenerated through key.tsv the whole leaf is C 95 / M 123 / U 61 (reading_tokens.tsv). Read-as-sense is unmeasured: the body gloss has never been segmented into Spanish words ("Letter's gist" is M-grade), and L18-L19 read only "?orma" / "ad???an?o?yadea?banyp??" (NOTES "Reading (VX-RD01, 25 Sept 2026)").
-- L18-L19, the 28 unglossed closing groups (U: 61, 24, [n], 34, 51, ?9, 65 x2, 11; M: 88, )8, 59, [tilde], 12, 56, 8)) - blocker: not-attempted; the leaf's own clear text beside them was never used: L14's gloss ends "...enesta" and the clear "forma." follows on its own line before L18 (passB_summary.txt), and L18's 5 groups already read "?orma"; the clear address under L19's underline, "A Doña Antonija de Albanylla &." (passB_summary.txt, passA_summary.txt, images/crop_bottom.jpg), checked here against reading_tokens.tsv as "adoñaantonyadealbanylla" (23 letters = L19's 23 reconciled groups, cipher spelling -y- since 32=y is C): all 10 C letters and 14 of 15 resolved letters fall in place, only 8)=p(M) at pos20 disagrees (crib l), tie sets of 24 {o,i,l}, 34 {s,d,a}, 51 {t,a,e}, 11 {a,s} each contain the crib letter, 65 sits at both crib-l positions 15 and 21 (its tie set {y,a} does NOT contain l, so 65 is a real key conflict to log), ?9 fits 89=n, and the crib also supports VX-RD01's blot+9 merge (passB's 24 groups -> 23); 61 (=f) and [n] (=ñ) occur nowhere in the glossed lines, so this crib is their only key evidence on the leaf. Not yet decided: whether "forma." and the address are the period's own displaced decipherment of L18-L19 (then H by layout) or only a crib (C with controls); next: image-check the layout on crop_bottom.jpg/crop_u1.jpg, then align L18 to "forma" and L19 to the address with key.tsv's C/M values and tie sets, with two rule-3 controls (the same crib slid across every 23-group window of L01-L14, and shuffled-crib permutations at L19's position; the statistic is letter agreement, which both controls can change), grade per token, log 65 and 8) as conflicts, run tools/decode_key.py --check, ~$3
-- L01-L14 code-to-gloss alignment: 22 tied codes, 49 codes in conflicts.tsv, 5 tail groups with no gloss letter (L08 pos18 `)2`, L10 pos14-15 `)1` `55`, L13 pos16 `23`, L14 pos17 `34`), regenerated through key.tsv as 52 U / 116 M tokens - blocker: not-attempted; key.tsv and rederivation_key.tsv are both a plurality tally of passB's position-by-position alignment, which passB itself says is off by 1-2 groups on L04, L08, L10, L11, L13, L14 (passB_summary.txt); only L06 was pixel-verified (20/20); tools/interlinear_align.py has never been run here (no HYPOTHESES.md, nothing in NOTES); next: run tools/interlinear_align.py line by line on (group sequence, gloss letter sequence) for L01-L14, seeded with the 29 C codes and whatever the L18-L19 crib fixes, rebuild key.tsv from its counts, list only the codes it leaves unsettled for the image pass, ~$4
-- Gloss and group transcription in the dense stretch L04-L05 and L07-L14 (66 of 251 glossed-line rows at M confidence) plus the specific doubts passB names: tick-before vs tick-after and tick vs digit (e.g. L19 tail `6) 54 8) 65 11` vs "63.54.8?.65.11" on crop_bottom.jpg), which can merge or split codes; the 9 drawn-shape signs; L01's later-ink `23`/"N"/blot; L09 pos0 "20" vs "Lo" - blocker: not-attempted; NOTES "Suggested next step" and NEXT-STEPS.tsv (line 115, runnable, never run); the leaf reads cleanly at 4x (L06, L18, L19), so the limit is alignment in crowded hand, not image quality; next: after the aligner, cut crops with `tools/iiif_lines.py --image images/NL-HaNA_1.02.04_63_0001.jpg --out images/lines` (command pasted in the brief), one line crop per Sonnet subagent call, only for lines with unsettled codes, at most 12 lines + 1 reconciliation unit at ~$1.5 per call, ~$20
-- Body plaintext L01-L14 as Spanish (gloss is an unsegmented letter run, e.g. L14 "pobErerenyoenesta"; the L01 date "Nobe[mbre]" is M) - blocker: not-attempted; no word-segmented or expanded reading exists and the spec judged only the 19 L18-L19 letters, so the read-as-sense figure cannot be measured; next: after the alignment and image pass, segment and expand the gloss against the image into a per-line reading, run tools/judge_plaintext.py on it with shuffled-null controls (es corpus era check per rule 3 first, the letter is 1702-1716), ~$3
+## GAPS-na-schonenberg-1678-1716 (2 Oct 2026, account-4)
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of the 1 Oct 2026 Remaining-gaps section, run 01:58-02:2x UTC.
+Intake gate: exit 1 on the missing web/blog check, the check run first (section at the end of this file), gate re-run exit 0.
 
-## Escalation (1 Oct 2026)
-- [x] siblings: NA 1.02.04 finding aid (26 pages, ~152 invnrs) grepped for cijfer/cijferschrift/geheimschrift/chiffre/sleutel: invnr 63 is the only cipher-flagged item (NOTES "Sibling inventory"); DECODE dumps of 24 Sept 2026 have no row for it; the nearest same-writer cipher, HU3 (Schonenberg to Heinsius no. 185, 1709, NA 3.01.19 invnr 1445, one cipher word, unsolved), is another correspondent and office, not this key. Optional, unrun: an eye-check of the other digitised 1.02.04 scans for cipher the cataloguer did not flag.
-- [ ] clear-pages: not tried. The clear "forma." before L18 and the clear address "A Doña Antonija de Albanylla &." under L19 have never been used, either as a crib or as the period's own displaced decipherment of L18-L19; checked here by eye against reading_tokens.tsv, L19 agrees with the address at all 10 C positions. Planned: layout check, then crib alignment with slid-window and shuffled-crib controls (gap 1), ~$3.
-- [x] known-keys: KEY-CROSSMATCH.tsv ran every key on file against ciphertext.tsv: only this target's own key fits (line 144, coverage 0.989); the best outside key, fr5160-letellier key_1659_ext, reaches 0.527 and does not pass (line 465); KEY-DESIGN.tsv records the design (homophonic, 87 codes); the key source is the leaf's own period gloss, so no outside key book is needed; Cryptiana/Cipherbrain nothing found (check-solved).
-- [x] print: check-solved 25 Sept 2026, six sources: IA full text "Schonenberg brieven" 0 hits; Heinsius Briefwisseling (Huygens retroboeken) Schonenberg 413 hits, none relevant, Albanilla/Albanylla 0; 8 web queries, DECODE dumps, both solver repositories. Not read: a UU thesis on Schonenberg (dspace.library.uu.nl HTTP 403), background only.
-- [ ] key-rebuild: only a plurality tally so far (key.tsv 29 C / 39 M / 19 U; rederivation_key.tsv 38 unanimous / 27 majority / 22 ties, same method); no DP/EM alignment, annealing or LM context tried, so no instrument has failed its gate even once. Planned: tools/interlinear_align.py on L01-L14 seeded with the C codes and the crib-fixed codes (gap 2), ~$4.
-- [ ] image-check: partly done: L06 pixel-verified 20/20; L18-L19 re-cropped at 4x (crop_u1, crop_u2_top, crop_u2_bottom), which settled blot+9 as one group. Not checked: the 49 conflicts.tsv codes, the tick-position/tick-vs-digit doubts and the dense L04-L05/L07-L14 stretch. Planned: one line crop per subagent call, only for codes the aligner leaves unsettled (gap 3), ~$20.
-- [ ] retry: not done because the key has not been extended. Planned: after crib and alignment, rerun tools/decode_key.py --check, regrade the 28 L18-L19 tokens and the 52 U tokens of the regenerated L01-L14, re-judge, ~$2.
-Verdict: keep going: 4 internal gaps; cheapest next: image-check the layout of "forma." and the address against L18-L19, then align L19 to "A Doña Antonija de Albanylla" and L18 to "forma" with slid-window and shuffled-crib controls and run tools/decode_key.py --check, ~$3
+**1. Layout (vision call 1 of 2, `images/crop_layout_L14_to_address.jpg`, native resolution y 1660-2200).** The word "forma."
+is NOT a clear word of the main text: it stands in the small interlinear gloss hand, letter-for-letter over L18's five
+groups (f over 61, o over 68, r over 2), m over 88, a over )8), with a long flourish filling the line to its left, exactly
+as the gloss sits over L01-L14. L14's gloss tail reads "en, esta", so the period gloss runs "...en esta forma". L18 was
+therefore glossed on the leaf all along (ciphertext.tsv L18 gloss column now filled, conf H, one reader at native
+resolution); the leaf's only unglossed cipher is L19. Above L19 the space is blank. The address "A Doña Antonija de
+Albanylla &a" at the foot is in the large main hand, spanning the width, not positioned over the groups: an address, not
+a displaced gloss, so for L19 it is a crib (grade C with controls), not H by layout. L19's "&a" in clear and the
+address's "&a" match. Vision call 2 (`images/crop_L19_blot_and_row2_2x.jpg`, 2x): L19 pos9's blot covers a round
+tens digit consistent with 8 (so 89 = n); pos20 is 8) with the tick after, as transcribed.
+
+**2. Alignment with controls (`crib_align.py --shuffles 2000 --seed 1`, output `crib_alignment.tsv`).** Statistic:
+agreements between crib letter and key.tsv value over the resolved (C/M) positions.
+
+| line | crib | target agree/resolved | U positions whose body tie set contains the crib letter | slid-window control (L01-L14, same crib, key.tsv values) | shuffled-crib control (same position) |
+|---|---|---|---|---|---|
+| L18 | forma | 4/4 = 1.000 | 0/0 (61 never glossed) | n=247, mean 0.078, p95 0.333, max 0.500, 0 windows >= target | all 120 permutations: mean 0.200, max 1.000, only the identity reaches 4/4 |
+| L19 | adoñaantonyadealbanylla (23 = 23 groups) | 15/16 = 0.938 (8) = p vs l the one miss) | 4/6 (24, 34, 51, 11 yes; 65 twice no) | n=229, mean 0.104, p95 0.235, max 0.286, 0 windows >= target | n=2000, mean 0.162, p95 0.312, max 0.438, 0 permutations >= target |
+
+Both controls can move the statistic (it changes with the window and with the letter order), so each is a test, not a
+non-test (rule 3). The L18 shuffled control is weak by construction (5 letters, 4 resolved: 1 in 120 by chance); the
+L18 result rests on the layout, not on the permutation count.
+
+**3. Key and reading (rule 4 grades, rule 7 check).** key.tsv: 61 = f C (period, from L18's own gloss); 88 M -> C (2/2);
+)8 stays M (3/6); [n] = ñ C (crib; the sign is an n with a mark above, no body occurrence); 24 = o, 34 = a, 51 = t,
+11 = a, 65 = l all **M** -- each agrees with the crib and (24/34/51/11) with one body gloss but disagrees with one or
+two other body glosses, so rule 4's conflict clause applies until the aligner (gap 2) says whether those glosses are
+alignment slips; witnesses in conflicts.tsv and HYPOTHESES.md H1. exceptions.tsv: L19 pos9 ?9 = n (M, blotted sign),
+L19 pos20 8) = l (M, against body L03 pos0 "P" conf M -- a real conflict, unresolved; key.tsv keeps 8) = p). decode.json
+now names exceptions.tsv. `python3 tools/decode_key.py ciphers/na-schonenberg-1678-1716 --check`: "reading up to
+date", exit 0. Reading: L18 `f o r m a`, L19 `a d o ñ a a n t o n y a d e a l b a n y l l a`. Tokens L18+L19 (28):
+H 0, C 15, S 0, M 13, I 0, U 0 (was C 12 M 7 U 9). Whole leaf (279): C 99, M 142, U 38 (was C 95, M 123, U 61) -- the
+body change is the five crib-fixed codes now reading at M where they were [?].
+
+**4. Judge (rule 7, pasted as it came).** `python3 tools/judge_plaintext.py specs/na-schonenberg-1678-1716.json --text
+"formaadoñaantonyadealbanylla"`:
+```
+FAIL language: score=-1.05, null_p99=-1.395, real_p05=-1.014, real_median=-0.825, mode=both, N=28
+ok   words: cover=0.857, min=0.4, real_text_median_cover=0.929
+FAIL - na-schonenberg-1678-1716 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+A FAIL, reported as one: a 28-letter string that is one common noun and a personal name is not Spanish prose, and
+the judge's language gate is calibrated on prose; the evidence for the reading is the layout and the two controls
+above, not the judge. The judge is also not independent here (the crib is the candidate), so a PASS would have
+meant little either way.
+
+**What was found / not found.** L18-L19 read in full against the leaf's own clear text (period gloss for L18, the
+address as a crib for L19); no printed or web source for the letter located (check-solved 25 Sept, web/blog check
+2 Oct). Not classified for novelty (rule 10, verifier's job). Lead for the key-hunt, not run: NA 3.01.19 (Heinsius)
+carries "Stukken betreffende cijfers en sleutels van cijferschrift" and "Brieven van F van Schonenberg uit Madrid",
+neither digitised (web search 2, 2 Oct 2026); official cipher, probably not this private key. Cost: see the lane
+ledger. Vision calls 2 of 2. Hosts: WebSearch 10, dspace.library.uu.nl 1 (403), studenttheses.uu.nl 1 (403),
+nationaalarchief.nl 1; no image refetched.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated GAPS 2 Oct 2026)
+Read so far: 279 of 279 cipher groups (100%) now carry a value: 251 body groups under the leaf's own period gloss (L01-L14, ciphertext.tsv; 244-246 with a gloss letter, see 1 Oct text in git history), L18's 5 under its own gloss "forma." (found 2 Oct 2026), L19's 23 under the address crib with controls (15/16 resolved agree); by grade the leaf is C 99 / M 142 / U 38 (reading_tokens.tsv, 2 Oct 2026), L18-L19 alone C 15 / M 13 / U 0. Read-as-sense is still unmeasured for the body: the gloss has never been segmented into Spanish words ("Letter's gist" is M-grade).
+Resolved 2 Oct 2026 (GAPS-na-schonenberg-1678-1716): the L18-L19 gap -- "forma." is L18's own interlinear gloss (layout, image check), L19 = "a doña antonya de albanylla" against the address (crib_align.py, slid-window and shuffled-crib controls both at 0 of 229 / 0 of 2000 at or above target), decode_key.py --check exit 0; 65 and 8) logged as conflicts (conflicts.tsv, HYPOTHESES.md H1).
+- L01-L14 code-to-gloss alignment: 22 tied codes, 55 codes in conflicts.tsv (49 + the 6 crib rows), 5 tail groups with no gloss letter (L08 pos18 `)2`, L10 pos14-15 `)1` `55`, L13 pos16 `23`, L14 pos17 `34`), regenerated through key.tsv as 38 U / 129 M body tokens; the five crib-fixed codes (24, 34, 51, 11, 65) sit at M only because one or two body glosses each disagree with the crib - blocker: not-attempted; key.tsv and rederivation_key.tsv are both a plurality tally of passB's position-by-position alignment, which passB itself says is off by 1-2 groups on L04, L08, L10, L11, L13, L14 (passB_summary.txt); only L06 was pixel-verified (20/20); tools/interlinear_align.py has never been run here; next: run tools/interlinear_align.py line by line on (group sequence, gloss letter sequence) for L01-L14, seeded with the C codes and the crib-fixed codes, rebuild key.tsv from its counts, raise the crib codes to C where the disagreeing glosses prove to be alignment slips, list only the codes it leaves unsettled for the image pass, ~$4
+- Gloss and group transcription in the dense stretch L04-L05 and L07-L14 (66 of 251 glossed-line rows at M confidence) plus the specific doubts passB names: tick-before vs tick-after and tick vs digit (the 8) = p vs l conflict at L03 pos0 / L19 pos20 is one of them), the 9 drawn-shape signs; L01's later-ink `23`/"N"/blot; L09 pos0 "20" vs "Lo" - blocker: not-attempted; NOTES "Suggested next step" and NEXT-STEPS.tsv (line 115, runnable, never run); the leaf reads cleanly at native resolution and 2x (L06, L18, L19), so the limit is alignment in crowded hand, not image quality; next: after the aligner, cut crops with `tools/iiif_lines.py --image images/NL-HaNA_1.02.04_63_0001.jpg --out images/lines` (command pasted in the brief), one line crop per Sonnet subagent call, only for lines with unsettled codes, at most 12 lines + 1 reconciliation unit at ~$1.5 per call, ~$20
+- Body plaintext L01-L14 as Spanish (gloss is an unsegmented letter run, e.g. L14 "sobre...en esta" + L18 "forma"; the L01 date "Nobe[mbre]" is M) - blocker: not-attempted; no word-segmented or expanded reading exists and the spec judged only the closing lines, so the read-as-sense figure cannot be measured; next: after the alignment and image pass, segment and expand the gloss against the image into a per-line reading, run tools/judge_plaintext.py on it with shuffled-null controls (es corpus era check per rule 3 first, the letter is 1702-1716), ~$3
+
+## Escalation (1 Oct 2026; updated GAPS 2 Oct 2026)
+- [x] siblings: NA 1.02.04 finding aid (26 pages, ~152 invnrs) grepped for cijfer/cijferschrift/geheimschrift/chiffre/sleutel: invnr 63 is the only cipher-flagged item (NOTES "Sibling inventory"); DECODE dumps of 24 Sept 2026 have no row for it; the nearest same-writer cipher, HU3 (Schonenberg to Heinsius no. 185, 1709, NA 3.01.19 invnr 1445, one cipher word, unsolved), is another correspondent and office, not this key. Optional, unrun: an eye-check of the other digitised 1.02.04 scans for cipher the cataloguer did not flag; and NA 3.01.19's undigitised "Stukken betreffende cijfers en sleutels van cijferschrift" (web search, 2 Oct 2026), official cipher material, probably not this private key.
+- [x] clear-pages: done 2 Oct 2026 (GAPS): "forma." is L18's own gloss by layout; the address is L19's crib, 15/16 resolved positions agree against slid-window (max 0.286, n=229) and shuffled-crib (max 0.438, n=2000) controls; 28/28 closing tokens valued (C 15 M 13); conflicts 65 and 8) logged. No other clear text on the leaf is unused ("Amigo.", "Aquy", "&a" are single words already in clear).
+- [x] known-keys: KEY-CROSSMATCH.tsv ran every key on file against ciphertext.tsv: only this target's own key fits (line 144, coverage 0.989); the best outside key, fr5160-letellier key_1659_ext, reaches 0.527 and does not pass (line 465); KEY-DESIGN.tsv records the design (homophonic, 87 codes); the key source is the leaf's own period gloss, so no outside key book is needed; Cryptiana/Cipherbrain nothing found (check-solved; web/blog check 2 Oct 2026, 0 hits).
+- [x] print: check-solved 25 Sept 2026, six sources: IA full text "Schonenberg brieven" 0 hits; Heinsius Briefwisseling (Huygens retroboeken) Schonenberg 413 hits, none relevant, Albanilla/Albanylla 0; 8 web queries, DECODE dumps, both solver repositories; web and blog check 2 Oct 2026 (10 queries, three blogs, 0 hits). Not read: two Utrecht theses on Schonenberg (dspace.library.uu.nl and studenttheses.uu.nl, both HTTP 403 from the cloud), background only.
+- [ ] key-rebuild: only a plurality tally so far (key.tsv now 29+ C / M / U as regenerated; rederivation_key.tsv 38 unanimous / 27 majority / 22 ties, same method) plus the crib's five fixes at M; no DP/EM alignment, annealing or LM context tried, so no instrument has failed its gate even once. Planned: tools/interlinear_align.py on L01-L14 seeded with the C codes and the crib-fixed codes (gap 1), ~$4.
+- [ ] image-check: partly done: L06 pixel-verified 20/20 (25 Sept); L18-L19 at 4x (25 Sept) and the L14-to-address layout at native resolution plus L19's blot and second row at 2x (2 Oct 2026, GAPS). Not checked: the 55 conflicts.tsv codes, the tick-position/tick-vs-digit doubts and the dense L04-L05/L07-L14 stretch. Planned: one line crop per subagent call, only for codes the aligner leaves unsettled (gap 2), ~$20.
+- [ ] retry: done once for L18-L19 (tools/decode_key.py --check exit 0 after the crib, 2 Oct 2026); not yet for the body because the key has not been re-aligned. Planned: after the aligner, rerun tools/decode_key.py --check, regrade the 38 U and the crib-fixed M tokens of the regenerated L01-L14, re-judge, ~$2.
+Verdict: keep going: 3 internal gaps; cheapest next: run tools/interlinear_align.py line by line on L01-L14 seeded with the C codes and the crib-fixed codes, rebuild key.tsv and regrade, ~$4
+
+## Web and blog check (GAPS-na-schonenberg-1678-1716, 2 Oct 2026)
+The CHECK-SOLVED-WEB required step (`.claude/briefs/check-solved.md`), run 2 Oct 2026 01:58-02:10 UTC via the WebSearch
+tool (10 queries) and WebFetch (3 page opens); the on-disk Cryptiana snapshot `sources/cryptiana/` grepped first
+(schonenberg / albanilla / albanylla: 0 files, 0 requests).
+(a) Plain web searches: 1. `Schonenberg "Albanylla" OR "Albanilla" cipher letter Nationaal Archief 1.02.04` -- only the
+NA finding aid itself (`nationaalarchief.nl/onderzoeken/archief/1.02.04`, the entry "Aan dona Antonya de Albanylla, z.d., In
+cijferschrift" already read 25 Sept) and unrelated NA/VOC pages. 2. `"1.02.04" Schonenberg "cijferschrift" OR "cifra"
+OR "chiffre" invnr 63` -- the same finding aid; plus Heinsius archive 3.01.19 entries (one of them a general "Stukken
+betreffende cijfers en sleutels van cijferschrift" and "Brieven van F van Schonenberg uit Madrid", neither about this
+item, neither digitised: lead logged in the GAPS section and under Escalation siblings above). 3. `"Antonia de Albanilla" OR "Antonija de Albanylla"
+OR "Antonya de Albanylla"` -- 0 relevant hits (name pages only). 4. `Francisco van Schonenberg gezant Spanje Portugal
+brief in cijferschrift doña Antonia` -- the finding aid, and two Utrecht theses on Schonenberg's diplomacy
+(`dspace.library.uu.nl/handle/1874/334523`, `studenttheses.uu.nl/handle/20.500.12932/20077`): both answer HTTP 403 to
+WebFetch (one attempt each, not retried; background works, no sign in the search snippets of any cipher or of this
+letter). 5. `"mudado este gobierno" OR "aver mudado este" Schonenberg carta cifrada` (the leaf's most distinctive
+glossed phrase) -- 0 relevant hits. 6. `"Aan dona Antonya de Albanylla"` (the folder's catalogue title) -- 0 hits.
+7. `Schonenberg Albanylla cipher solved Claude OR GPT OR "solves"` (model-solve announcements) -- only the unrelated
+Urquhart/Cyphral Distich coverage, nothing on this item.
+(b) Blog site searches: `site:scienceblogs.de/klausis-krypto-kolumne Schonenberg OR Albanilla OR Albanylla` -- 0 posts
+naming either (Cipherbrain); `site:cryptiana.blogspot.com Schonenberg OR Albanilla OR "Nationaal Archief" cipher` -- 0
+posts naming either (Cryptiana blog; Tomokiyo's fc2 pages covered by the on-disk grep); `site:ciphermysteries.com
+Schonenberg OR Albanilla OR "Nationaal Archief" Dutch envoy Madrid cipher` -- 0 Cipher Mysteries posts (the engine
+returned TNA catalogue rows for Schonenberg's 1690s Madrid dispatches instead, not this letter).
+(c) Comment threads: no post about this letter exists on any of the three blogs to open, so no comment thread to read;
+the three page opens above were the two thesis records (403) and the 3.01.19 entry.
+Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, not a
+novelty verdict, rule 10). Status word unchanged (`partial`).
+Requests per host: WebSearch 10 queries; dspace.library.uu.nl 1 (403); studenttheses.uu.nl 1 (403); nationaalarchief.nl 1.
