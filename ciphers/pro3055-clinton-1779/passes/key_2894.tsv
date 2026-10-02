@@ -1,0 +1,167 @@
+line	pos	letter	count	other	tomokiyo	match
+1	1	b	1		b	exact
+1	2	y	1			
+1	3	p	3		p	exact
+1	5	r	2		r	exact
+1	7	i	2		i	exact
+1	8	s	3		s	exact
+1	9	s	1		s	exact
+1	11	o	1		o	exact
+1	13	o	2			
+1	17	e	1		e	exact
+1	22	t	2		t	exact
+1	27	u	2		u	exact
+2	1	t	1		t	exact
+2	2	h	2		h	exact
+2	3	e	3		e	exact
+2	5	e	1		e	exact
+2	6	c	2		c	exact
+2	7	r	1		r	exact
+2	8	e	1		e	exact
+2	16	a	1		a	exact
+5	3	t	1		t	exact
+5	4	h	1		h	exact
+5	5	e	1		e	exact
+6	3	n	1		n	exact
+6	4	e	1		e	exact
+6	6	a	1		a	exact
+6	7	l	2		l	exact
+6	11	f	1			
+6	12	i	1		i	exact
+6	15	d	2		d	exact
+6	16	o	1			
+6	22	r	1			
+7	2	s	1			
+7	3	t	2		t	exact
+7	4	h	1		h	exact
+7	5	e	1			
+7	7	r	1		r	exact
+7	8	a	1			
+7	9	n	2			
+7	10	k	1			
+7	11	i	2		i	exact
+7	15	e	1			
+7	18	m	2			
+8	1	o	3			
+8	2	f	2			
+8	4	h	1			
+9	1	o	2		a	no
+9	3	f	2			
+9	5	c	3		c	exact
+9	6	e	3		e	exact
+9	7	r	2			
+9	8	s	1		s	exact
+9	10	n	3		n	exact
+9	16	v	3		v	exact
+9	17	e	1		e	exact
+9	18	r	1		r	exact
+9	19	a	3		a	exact
+9	25	m	2		m	exact
+9	26	e	1			
+9	27	n	1		n	exact
+9	28	t	1		t	exact
+11	8	a	1			
+11	14	a	1			
+11	16	d	2			
+13	1	b	2			
+13	2	r	1		r	exact
+13	4	t	1			
+13	6	s	1		s	exact
+13	7	h	1		h	exact
+13	8	a	3		a	exact
+13	9	n	1		n	exact
+13	10	d	2		d	exact
+13	12	r	1			
+13	26	e	2			
+14	2	o	2		o	exact
+14	13	a	1			
+15	5	p	1			
+16	1	t	1			
+16	3	e	2			
+16	5	o	1		o	exact
+16	7	e	1		a	no
+16	12	i	2			
+16	13	m	1			
+16	14	e	2			
+16	15	n	5			
+16	16	t	3			
+16	17	o	1			
+16	18	f	2			
+16	19	a	2	e:1		
+16	20	r	1			
+16	21	t	3	i:1		
+16	22	i	3			
+16	25	e	2	c:1		
+16	27	y	2			
+16	28	a	1			
+16	29	n	1			
+16	30	d	1			
+16	31	c	2	t:1		
+16	32	o	2			
+16	35	s	2			
+16	46	s	2			
+17	4	i	1	j:1	i	exact
+17	7	s	1			
+17	13	l	1			
+17	18	a	1		a	exact
+17	19	n	1		n	exact
+17	20	d	1			
+18	4	t	4		t	exact
+18	5	h	2			
+18	6	e	1		e	exact
+18	7	m	1		m	exact
+18	8	a	3		a	exact
+18	9	r	2		r	exact
+18	10	i	2		i	exact
+18	11	n	1			
+18	12	e	2		e	exact
+18	13	s	4		s	exact
+18	14	o	2		o	exact
+18	17	u	4		u	exact
+18	19	l	1			
+18	21	n	3			
+18	22	d	4			
+18	23	h	1			
+18	24	a	1			
+18	25	l	2			
+18	29	y	1		y	exact
+19	1	w	1		w	exact
+19	2	i	1		i	exact
+19	3	t	1		t	exact
+19	4	h	1		h	exact
+20	4	d	1			
+20	5	a	2		a	exact
+20	8	s	1			
+20	16	c	2			
+20	17	o	2			
+20	18	m	1			
+20	19	m	1			
+20	25	n	1			
+20	26	s	1			
+20	33	r	1			
+22	6	v	3		v	exact
+22	7	e	3		e	exact
+22	8	r	2		r	exact
+22	9	n	1		n	exact
+22	14	i	1		i	exact
+23	5	i	1		i	exact
+23	9	s	1		s	exact
+23	15	e	1			
+23	18	d	1			
+23	25	u	1			
+23	28	h	2			
+23	31	e	1			
+23	33	r	2			
+23	34	a	1			
+23	35	l	1		l	exact
+23	37	o	1			
+23	40	n	1			
+23	41	c	1			
+23	42	e	1			
+24	1	a	1			
+24	4	t	1			
+26	9	n	1			
+26	10	i	1		i	exact
+26	15	s	1			
+26	16	t	1			
+26	19	a	1		a	exact

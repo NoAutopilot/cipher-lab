@@ -1,0 +1,235 @@
+{
+ "region": [
+  2240,
+  580,
+  4120,
+  2080
+ ],
+ "bounds": [
+  2240,
+  2711,
+  2941,
+  3176,
+  3403,
+  3639,
+  4120
+ ],
+ "crops": [
+  {
+   "crop": "p185_c1a.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    2240,
+    580,
+    2711,
+    1469
+   ],
+   "scale": 2,
+   "column": 1,
+   "half": "a",
+   "split_row_native": 1399,
+   "size": [
+    942,
+    1778
+   ]
+  },
+  {
+   "crop": "p185_c1b.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    2240,
+    1329,
+    2711,
+    2080
+   ],
+   "scale": 2,
+   "column": 1,
+   "half": "b",
+   "split_row_native": 1399,
+   "size": [
+    942,
+    1502
+   ]
+  },
+  {
+   "crop": "p185_c2a.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    2711,
+    580,
+    2941,
+    1341
+   ],
+   "scale": 2,
+   "column": 2,
+   "half": "a",
+   "split_row_native": 1271,
+   "size": [
+    460,
+    1522
+   ]
+  },
+  {
+   "crop": "p185_c2b.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    2711,
+    1201,
+    2941,
+    2080
+   ],
+   "scale": 2,
+   "column": 2,
+   "half": "b",
+   "split_row_native": 1271,
+   "size": [
+    460,
+    1758
+   ]
+  },
+  {
+   "crop": "p185_c3a.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    2941,
+    580,
+    3176,
+    1343
+   ],
+   "scale": 2,
+   "column": 3,
+   "half": "a",
+   "split_row_native": 1273,
+   "size": [
+    470,
+    1526
+   ]
+  },
+  {
+   "crop": "p185_c3b.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    2941,
+    1203,
+    3176,
+    2080
+   ],
+   "scale": 2,
+   "column": 3,
+   "half": "b",
+   "split_row_native": 1273,
+   "size": [
+    470,
+    1754
+   ]
+  },
+  {
+   "crop": "p185_c4a.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    3176,
+    580,
+    3403,
+    1357
+   ],
+   "scale": 2,
+   "column": 4,
+   "half": "a",
+   "split_row_native": 1287,
+   "size": [
+    454,
+    1554
+   ]
+  },
+  {
+   "crop": "p185_c4b.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    3176,
+    1217,
+    3403,
+    2080
+   ],
+   "scale": 2,
+   "column": 4,
+   "half": "b",
+   "split_row_native": 1287,
+   "size": [
+    454,
+    1726
+   ]
+  },
+  {
+   "crop": "p185_c5a.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    3403,
+    580,
+    3639,
+    1443
+   ],
+   "scale": 2,
+   "column": 5,
+   "half": "a",
+   "split_row_native": 1373,
+   "size": [
+    472,
+    1726
+   ]
+  },
+  {
+   "crop": "p185_c5b.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    3403,
+    1303,
+    3639,
+    2080
+   ],
+   "scale": 2,
+   "column": 5,
+   "half": "b",
+   "split_row_native": 1373,
+   "size": [
+    472,
+    1554
+   ]
+  },
+  {
+   "crop": "p185_c6a.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    3639,
+    580,
+    4120,
+    1449
+   ],
+   "scale": 2,
+   "column": 6,
+   "half": "a",
+   "split_row_native": 1379,
+   "size": [
+    962,
+    1738
+   ]
+  },
+  {
+   "crop": "p185_c6b.jpg",
+   "source": "img828_full.jpg",
+   "box": [
+    3639,
+    1309,
+    4120,
+    2080
+   ],
+   "scale": 2,
+   "column": 6,
+   "half": "b",
+   "split_row_native": 1379,
+   "size": [
+    962,
+    1542
+   ]
+  }
+ ]
+}

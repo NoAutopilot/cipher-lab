@@ -1,0 +1,316 @@
+n	ref	line	pos	explicit_first	letter	word	how	grade	tomokiyo	tomo_match
+1	p184_c1a.jpg:15	1	7	1	i	I	exact	H	i	exact
+2	p184_c1a.jpg:16	2	2	1	h	have	exact	H	h	exact
+3	p184_c1a.jpg:17	2	16	0	a	have	exact	H	a	exact
+4	p184_c1b.jpg:1	9	16	1	v	have	exact	H	v	exact
+5	p184_c1b.jpg:2	9	6	0	e	have	exact	H	e	exact
+6	p184_c1b.jpg:3	2	7	1	r	received	exact	H	r	exact
+7	p184_c1b.jpg:4	2	3	0	e	received	exact	H	e	exact
+8	p184_c1b.jpg:5	2	6	0	c	received	exact	H	c	exact
+9	p184_c1b.jpg:6	2	5	0	e	received	exact	H	e	exact
+10	p184_c1b.jpg:7	1	7	1	i	received	exact	H	i	exact
+11	p184_c1b.jpg:8	9	16	1	v	received	exact	H	v	exact
+12	p184_c1b.jpg:9	9	17	0	e	received	exact	H	e	exact
+13	p184_c1b.jpg:10	6	15	1	d	received	exact	H	d	exact
+14	p184_c1b.jpg:11	7	11	1	i	Information	exact	H	i	exact
+15	p184_c1b.jpg:12	7	9	0	n	Information	exact	H		
+16	p184_c1b.jpg:13	8	2	1	f	Information	exact	H		
+17	p184_c1b.jpg:14	8	1	0	o	Information	exact	H		
+18	p184_c1b.jpg:15	7	7	1	r	Information	exact	H	r	exact
+19	p184_c1b.jpg:16	7	18	0	m	Information	exact	H		
+20	p184_c1b.jpg:17	7	8	0	a	Information	exact	H		
+21	p184_c1b.jpg:18	7	3	0	t	Information	exact	H	t	exact
+22	p184_c1b.jpg:19	7	11	0	i	Information	exact	H	i	exact
+23	p184_c2a.jpg:1	8	1	1	o	Information	exact	H		
+24	p184_c2a.jpg:2	7	9	1	n	Information	exact	H		
+25	p184_c2a.jpg:3	6	11	1	f	from	exact	H		
+26	p184_c2a.jpg:4	6	22	0	r	from	exact	H		
+27	p184_c2a.jpg:5	6	16	0	o	from	exact	H		
+28	p184_c2a.jpg:6	7	18	1	m	from	exact	H		
+29	p184_c2a.jpg:7	7	3	1	t	the	exact	H	t	exact
+30	p184_c2a.jpg:8	7	4	0	h	the	exact	H	h	exact
+31	p184_c2a.jpg:9	7	5	0	e	the	exact	H		
+32	p184_c2a.jpg:10	7	18	1	i	Ministers	indel	M		
+33	p184_c2a.jpg:11	7	11	0	n	Ministers	indel	M	i	no
+34	p184_c2a.jpg:12	7	12	0	i	Ministers	indel	M		
+35	p184_c2a.jpg:13	7	11	0	s	Ministers	indel	M	i	no
+36	p184_c2a.jpg:14	7	2	0	t	Ministers	indel	M		tol
+37	p184_c2a.jpg:15	7	3	0	e	Ministers	indel	M	t	no
+38	p184_c2b.jpg:1	7	5	0	r	Ministers	indel	M		tol
+39	p184_c2b.jpg:2	7	7	0	s	Ministers	indel	M	r	no
+40	p184_c2b.jpg:5	16	13	1	m	Monsieur	exact	H		
+41	p184_c2b.jpg:6	16	32	0	o	Monsieur	exact	H		
+42	p184_c2b.jpg:7	16	15	0	n	Monsieur	exact	H		
+43	p184_c2b.jpg:8	16	35	0	s	Monsieur	exact	H		
+44	p184_c2b.jpg:9	16	12	0	i	Monsieur	exact	H		
+45	p184_c2b.jpg:10	16	14	0	e	Monsieur	exact	H		
+46	p184_c2b.jpg:11	18	17	1	u	Monsieur	exact	H	u	exact
+47	p184_c2b.jpg:12	18	9	0	r	Monsieur	exact	H	r	exact
+48	p184_c3a.jpg:1	16	16	1	t	Terney	exact	H		
+49	p184_c3a.jpg:2	16	3	0	e	Terney	exact	H		
+50	p184_c3a.jpg:3	16	20	0	r	Terney	exact	H		
+51	p184_c3a.jpg:4	16	15	0	n	Terney	exact	H		
+52	p184_c3a.jpg:5	16	7	0	e	Terney	exact	H	a	no
+53	p184_c3a.jpg:6	16	27	0	y	Terney	exact	H		
+54	p184_c3a.jpg:8	13	7	1	h	have	exact	H	h	exact
+55	p184_c3a.jpg:9	13	8	0	a	have	exact	H	a	exact
+56	p184_c3a.jpg:10	9	16	1	v	have	exact	H	v	exact
+57	p184_c3a.jpg:11	13	26	1	e	have	exact	H		
+58	p184_c3a.jpg:12	18	13	1	s	sailed	exact	H	s	exact
+59	p184_c3a.jpg:13	18	8	0	a	sailed	exact	H	a	exact
+60	p184_c3a.jpg:14	18	10	0	i	sailed	exact	H	i	exact
+61	p184_c3b.jpg:1	18	25	0	l	sailed	exact	H		
+62	p184_c3b.jpg:2	18	12	0	e	sailed	exact	H	e	exact
+63	p184_c3b.jpg:3	18	22	0	d	sailed	exact	H		
+64	p184_c3b.jpg:4	13	8	1	a	about	exact	H	a	exact
+65	p184_c3b.jpg:5	13	1	0	b	about	exact	H		
+66	p184_c3b.jpg:6	14	2	1	o	about	exact	H	o	exact
+67	p184_c3b.jpg:7	18	17	1	u	about	exact	H	u	exact
+68	p184_c3b.jpg:8	18	4	0	t	about	exact	H	t	exact
+69	p184_c3b.jpg:10	18	7	1	m	May	exact	H	m	exact
+70	p184_c3b.jpg:11	18	8	0	a	May	exact	H	a	exact
+71	p184_c3b.jpg:12	18	29	0	y	May	exact	H	y	exact
+72	p184_c4a.jpg:1	19	1	1	w	with	exact	H	w	exact
+73	p184_c4a.jpg:2	19	2	0	i	with	exact	H	i	exact
+74	p184_c4a.jpg:3	19	3	0	t	with	exact	H	t	exact
+75	p184_c4a.jpg:4	19	4	0	h	with	exact	H	h	exact
+76	p184_c4a.jpg:5	16	46	1	s	seven	exact	H		
+77	p184_c4a.jpg:6	16	3	0	e	seven	exact	H		
+78	p184_c4a.jpg:7	22	6	1	v	seven	exact	H	v	exact
+79	p184_c4a.jpg:8	22	7	0	e	seven	exact	H	e	exact
+80	p184_c4a.jpg:9	22	9	0	n	seven	exact	H	n	exact
+81	p184_c4a.jpg:10	23	9	1	s	ships	exact	H	s	exact
+82	p184_c4a.jpg:11	23	28	0	h	ships	exact	H		
+83	p184_c4a.jpg:12	23	5	0	i	ships	exact	H	i	exact
+84	p184_c4a.jpg:13	1	3	1	p	ships	exact	H	p	exact
+85	p184_c4a.jpg:14	1	8	0	s	ships	exact	H	s	exact
+86	p184_c4b.jpg:1	8	1	1	o	of	exact	H		
+87	p184_c4b.jpg:2	8	2	0	f	of	exact	H		
+88	p184_c4b.jpg:3	2	1	1	t	the	exact	H	t	exact
+89	p184_c4b.jpg:4	2	2	0	h	the	exact	H	h	exact
+90	p184_c4b.jpg:5	2	3	0	e	the	exact	H	e	exact
+91	p184_c4b.jpg:6	6	7	1	l	line,	exact	H	l	exact
+92	p184_c4b.jpg:7	6	12	0	i	line,	exact	H	i	exact
+93	p184_c4b.jpg:8	6	3	0	n	line,	exact	H	n	exact
+94	p184_c4b.jpg:9	6	4	0	e	line,	exact	H	e	exact
+95	p184_c5a.jpg:1	13	4	1	t	Transports	exact	H		
+96	p184_c5a.jpg:2	13	2	0	r	Transports	exact	H	r	exact
+97	p184_c5a.jpg:3	13	8	0	a	Transports	exact	H	a	exact
+98	p184_c5a.jpg:4	13	9	0	n	Transports	exact	H	n	exact
+99	p184_c5a.jpg:5	13	6	0	s	Transports	exact	H	s	exact
+100	p184_c5a.jpg:6	15	5	1	p	Transports	exact	H		
+101	p184_c5a.jpg:7	1	13	1	o	Transports	exact	H		
+102	p184_c5a.jpg:8	1	5	0	r	Transports	exact	H	r	exact
+103	p184_c5a.jpg:9	1	22	0	t	Transports	exact	H	t	exact
+104	p184_c5a.jpg:10	1	8	0	s	Transports	exact	H	s	exact
+105	p184_c5a.jpg:13	9	1	1	o	on	exact	H	a	no
+106	p184_c5a.jpg:14	9	10	0	n	on	exact	H	n	exact
+107	p184_c5a.jpg:15	13	1	1	b	board	exact	H		
+108	p184_c5b.jpg:1	14	2	1	o	board	exact	H	o	exact
+109	p184_c5b.jpg:2	14	13	0	a	board	exact	H		
+110	p184_c5b.jpg:3	13	12	1	r	board	exact	H		
+111	p184_c5b.jpg:4	13	10	0	d	board	exact	H	d	exact
+112	p184_c5b.jpg:5	16	18	1	f	five	exact	H		
+113	p184_c5b.jpg:6	16	12	0	i	five	exact	H		
+114	p184_c5b.jpg:7	22	6	1	v	five	exact	H	v	exact
+115	p184_c5b.jpg:8	22	7	0	e	five	exact	H	e	exact
+116	p184_c5b.jpg:9	18	4	1	t	Thousand	exact	H	t	exact
+117	p184_c5b.jpg:10	18	5	0	h	Thousand	exact	H		
+118	p184_c5b.jpg:11	18	14	0	o	Thousand	exact	H	o	exact
+119	p184_c5b.jpg:12	18	17	0	u	Thousand	exact	H	u	exact
+120	p184_c5b.jpg:13	18	13	0	s	Thousand	exact	H	s	exact
+121	p184_c6a.jpg:1	18	8	1	a	Thousand	exact	H	a	exact
+122	p184_c6a.jpg:2	18	11	0	n	Thousand	exact	H		
+123	p184_c6a.jpg:3	18	22	0	d	Thousand	exact	H		
+124	p184_c6a.jpg:5	18	25	1	l	land	exact	H		
+125	p184_c6a.jpg:6	18	24	0	a	land	exact	H		
+126	p184_c6a.jpg:7	18	21	0	n	land	exact	H		
+127	p184_c6a.jpg:8	18	22	0	d	land	exact	H		
+128	p184_c6a.jpg:9	9	3	1	f	Forces	exact	H		
+129	p184_c6a.jpg:10	9	1	0	o	Forces	exact	H	a	no
+130	p184_c6a.jpg:11	9	7	0	r	Forces	exact	H		
+131	p184_c6a.jpg:12	9	5	0	c	Forces	exact	H	c	exact
+132	p184_c6a.jpg:13	9	6	0	e	Forces	exact	H	e	exact
+133	p184_c6a.jpg:14	9	8	0	s	Forces	exact	H	s	exact
+134	p184_c6b.jpg:3	16	30	1	d	destination	exact	H		
+135	p184_c6b.jpg:4	16	25	0	e	destination	exact	H		
+136	p184_c6b.jpg:5	16	35	0	s	destination	exact	H		
+137	p184_c6b.jpg:6	16	21	0	t	destination	exact	H		
+138	p184_c6b.jpg:7	16	22	0	i	destination	exact	H		
+139	p184_c6b.jpg:8	16	29	0	n	destination	exact	H		
+140	p184_c6b.jpg:9	16	28	0	a	destination	exact	H		
+141	p184_c6b.jpg:10	16	21	0	t	destination	exact	H		
+142	p184_c6b.jpg:11	16	22	0	i	destination	exact	H		
+143	p184_c6b.jpg:12	16	17	0	o	destination	exact	H		
+144	p184_c6b.jpg:13	16	15	0	n	destination	exact	H		
+145	p184_c7a.jpg:1	18	13	1	s	stil	exact	H	s	exact
+146	p184_c7a.jpg:2	18	4	0	t	stil	exact	H	t	exact
+147	p184_c7a.jpg:3	18	10	0	i	stil	exact	H	i	exact
+148	p184_c7a.jpg:4	18	19	0	l	stil	exact	H		
+149	p184_c7a.jpg:5	1	9	1	s	supposed	double-drop	H	s	exact
+150	p184_c7a.jpg:6	1	27	0	u	supposed	double-drop	H	u	exact
+151	p184_c7a.jpg:7	1	3	0	p	supposed	double-drop	H	p	exact
+152	p184_c7a.jpg:8	1	13	0	o	supposed	double-drop	H		
+153	p184_c7a.jpg:9	1	8	0	s	supposed	double-drop	H	s	exact
+154	p184_c7a.jpg:10	1	17	0	e	supposed	double-drop	H	e	exact
+155	p184_c7a.jpg:11	6	15	1	d	supposed	double-drop	H	d	exact
+156	p184_c7a.jpg:13	9	5	1	c	Canada	exact	H	c	exact
+157	p184_c7a.jpg:14	9	19	0	a	Canada	exact	H	a	exact
+158	p184_c7b.jpg:1	9	10	0	n	Canada	exact	H	n	exact
+159	p184_c7b.jpg:2	11	14	1	a	Canada	exact	H		
+160	p184_c7b.jpg:3	11	16	0	d	Canada	exact	H		
+161	p184_c7b.jpg:4	11	8	0	a	Canada	exact	H		
+162	p184_c7b.jpg:5	16	7	1	e		skip	C	a	no
+163	p184_c7b.jpg:6	16	30	0	d		skip	C		
+164	p184_c7b.jpg:7	16	13	0	m		skip	C		
+165	p184_c7b.jpg:8	16	22	0	i		skip	C		
+166	p184_c7b.jpg:9	16	20	0	r		skip	C		
+167	p184_c7b.jpg:10	16	7	0	e		skip	C	a	no
+168	p184_c7b.jpg:11	16	24	0			skip	M		
+169	p184_c8a.jpg:1	20	33	1	r		skip	C		
+170	p184_c8a.jpg:2	20	39	0			skip	M		
+171	p184_c8a.jpg:3	20	37	0			skip	M		
+172	p184_c8a.jpg:4	20	35	0			skip	M		
+173	p184_c8a.jpg:5	20	10	0			skip	M		
+174	p184_c8a.jpg:6	20	9	0			skip	M		
+175	p184_c8a.jpg:7	20	15	0			skip	M		
+176	p184_c8a.jpg:8	20	16	0	c		skip	C		
+177	p184_c8a.jpg:9	20	13	0			skip	M		
+178	p184_c8a.jpg:10	20	4	0	d		skip	C		
+179	p184_c8a.jpg:11	21	9	1			skip	M		
+180	p184_c8a.jpg:12	21	10	0			skip	M		
+181	p184_c8a.jpg:13	1	3	1	p		skip	C	p	exact
+182	p184_c8a.jpg:14	1	5	0	r		skip	C	r	exact
+183	p184_c8a.jpg:15	1	11	0	o		skip	C	o	exact
+184	p184_c8a.jpg:16	1	3	0	p		skip	C	p	exact
+185	p184_c8b.jpg:1	1	13	0	o		skip	C		
+186	p184_c8b.jpg:2	1	5	0	r		skip	C	r	exact
+187	p184_c8b.jpg:3	1	15	0	t		skip	H	t	exact
+188	p184_c8b.jpg:4	1	10	0			skip	M		
+189	p184_c8b.jpg:5	1	11	0	o		skip	C	o	exact
+190	p184_c8b.jpg:6	1	12	0	n		skip	H	n	exact
+191	p185_c1a.jpg:2	9	3	1	f	french	exact	H		
+192	p185_c1a.jpg:3	9	7	0	r	french	exact	H		
+193	p185_c1a.jpg:4	9	6	0	e	french	exact	H	e	exact
+194	p185_c1a.jpg:5	9	10	0	n	french	exact	H	n	exact
+195	p185_c1a.jpg:6	9	5	0	c	french	exact	H	c	exact
+196	p185_c1a.jpg:7	8	4	1	h	french	exact	H		
+197	p185_c1a.jpg:8	9	19	1	a	Armament	exact	H	a	exact
+198	p185_c1a.jpg:9	9	18	0	r	Armament	exact	H	r	exact
+199	p185_c1a.jpg:10	9	25	0	m	Armament	exact	H	m	exact
+200	p185_c1a.jpg:11	9	19	0	a	Armament	exact	H	a	exact
+201	p185_c1a.jpg:12	9	25	0	m	Armament	exact	H	m	exact
+202	p185_c1a.jpg:13	9	26	0	e	Armament	exact	H		
+203	p185_c1a.jpg:14	9	27	0	n	Armament	exact	H	n	exact
+204	p185_c1a.jpg:15	9	28	0	t	Armament	exact	H	t	exact
+205	p185_c1b.jpg:2	24	1	1	a	at	exact	H		
+206	p185_c1b.jpg:3	24	4	0	t	at	exact	H		
+207	p185_c1b.jpg:4	23	33	1	r	Rhode	exact	H		
+208	p185_c1b.jpg:5	23	28	0	h	Rhode	exact	H		
+209	p185_c1b.jpg:6	23	37	0	o	Rhode	exact	H		
+210	p185_c1b.jpg:7	23	18	0	d	Rhode	exact	H		
+211	p185_c1b.jpg:8	23	15	0	e	Rhode	exact	H		
+212	p185_c1b.jpg:9	17	4	1	i	Island,	exact	H	i	exact
+213	p185_c1b.jpg:10	17	7	0	s	Island,	exact	H		
+214	p185_c1b.jpg:11	17	13	0	l	Island,	exact	H		
+215	p185_c1b.jpg:12	17	18	0	a	Island,	exact	H	a	exact
+216	p185_c2a.jpg:1	17	19	0	n	Island,	exact	H	n	exact
+217	p185_c2a.jpg:2	17	20	0	d	Island,	exact	H		
+218	p185_c2a.jpg:4	1	3	1	p	proceed	exact	H	p	exact
+219	p185_c2a.jpg:5	1	5	0	r	proceed	exact	H	r	exact
+220	p185_c2a.jpg:6	1	11	0	o	proceed	exact	H	o	exact
+221	p185_c2a.jpg:7	2	6	1	c	proceed	exact	H	c	exact
+222	p185_c2a.jpg:8	2	3	0	e	proceed	exact	H	e	exact
+223	p185_c2a.jpg:9	2	8	0	e	proceed	exact	H	e	exact
+224	p185_c2a.jpg:10	11	16	1	d	proceed	exact	H		
+225	p185_c2a.jpg:11	18	17	1	u	under	exact	H	u	exact
+226	p185_c2b.jpg:1	18	21	0	n	under	exact	H		
+227	p185_c2b.jpg:2	18	22	0	d	under	exact	H		
+228	p185_c2b.jpg:3	18	12	0	e	under	exact	H	e	exact
+229	p185_c2b.jpg:4	18	9	0	r	under	exact	H	r	exact
+230	p185_c2b.jpg:6	20	16	1	c	Command	exact	H		
+231	p185_c2b.jpg:7	20	17	0	o	Command	exact	H		
+232	p185_c2b.jpg:8	20	18	0	m	Command	exact	H		
+233	p185_c2b.jpg:9	20	19	0	m	Command	exact	H		
+234	p185_c2b.jpg:10	20	5	0	a	Command	exact	H	a	exact
+235	p185_c2b.jpg:11	20	25	0	n	Command	exact	H		
+236	p185_c2b.jpg:12	20	4	0	d	Command	exact	H		
+237	p185_c3a.jpg:1	20	18	1	m		skip	C		
+238	p185_c3a.jpg:2	20	5	0	a		skip	C	a	exact
+239	p185_c3a.jpg:3	20	15	0			skip	M		
+240	p185_c3a.jpg:5	18	17	1	u	Marquis	indel	M	u	exact
+241	p185_c3a.jpg:6	18	10	0	i	Marquis	indel	M	i	exact
+242	p185_c3a.jpg:7	18	13	0	s	Marquis	indel	M	s	exact
+243	p185_c3a.jpg:8	13	10	1	d	de	exact	H	d	exact
+244	p185_c3a.jpg:9	13	26	0	e	de	exact	H		
+245	p185_c3a.jpg:10	16	18	1	f	Fayette	exact	H		
+246	p185_c3a.jpg:11	16	19	0	a	Fayette	exact	H		
+247	p185_c3a.jpg:12	16	27	0	y	Fayette	exact	H		
+248	p185_c3a.jpg:13	16	25	0	e	Fayette	exact	H		
+249	p185_c3a.jpg:14	16	16	0	t	Fayette	exact	H		
+250	p185_c3b.jpg:1	16	21	0	t	Fayette	exact	H		
+251	p185_c3b.jpg:2	16	14	0	e	Fayette	exact	H		
+252	p185_c3b.jpg:4	16	31	1	c	Connecticut	double-drop	H		
+253	p185_c3b.jpg:5	16	32	0	o	Connecticut	double-drop	H		
+254	p185_c3b.jpg:6	16	15	0	n	Connecticut	double-drop	H		
+255	p185_c3b.jpg:7	16	19	0	e	Connecticut	double-drop	M		
+256	p185_c3b.jpg:8	16	25	0	c	Connecticut	double-drop	M		
+257	p185_c3b.jpg:9	16	31	0	t	Connecticut	double-drop	M		
+258	p185_c3b.jpg:10	16	21	0	i	Connecticut	double-drop	M		
+259	p185_c3b.jpg:11	16	31	0	c	Connecticut	double-drop	H		
+260	p185_c3b.jpg:12	1	27	1	u	Connecticut	double-drop	H	u	exact
+261	p185_c3b.jpg:13	1	22	0	t	Connecticut	double-drop	H	t	exact
+262	p185_c4a.jpg:1	1	18	1	i	Rivers	indel	M		
+263	p185_c4a.jpg:2	1	19	0	v	Rivers	indel	M		
+264	p185_c4a.jpg:3	22	6	1	e	Rivers	indel	M	v	tol
+265	p185_c4a.jpg:4	17	3	1	r	Rivers	indel	M	e	tol
+266	p185_c4a.jpg:5	17	5	0	s	Rivers	indel	M	r	no
+267	p185_c4a.jpg:7	20	5	1	a	across	exact	H	a	exact
+268	p185_c4a.jpg:8	20	16	0	c	across	exact	H		
+269	p185_c4a.jpg:9	20	33	0	r	across	exact	H		
+270	p185_c4a.jpg:10	20	17	0	o	across	exact	H		
+271	p185_c4a.jpg:11	20	26	0	s	across	exact	H		
+272	p185_c4a.jpg:12	20	8	0	s	across	exact	H		
+273	p185_c4a.jpg:13	18	4	1	t	the	exact	H	t	exact
+274	p185_c4a.jpg:14	18	5	0	h	the	exact	H		
+275	p185_c4b.jpg:1	18	6	0	e	the	exact	H	e	exact
+276	p185_c4b.jpg:2	6	7	1	l	lakes	exact	H	l	exact
+277	p185_c4b.jpg:3	6	6	0	a	lakes	exact	H	a	exact
+278	p185_c4b.jpg:4	7	10	1	k	lakes	exact	H		
+279	p185_c4b.jpg:5	7	15	0	e	lakes	exact	H		
+280	p185_c4b.jpg:6	7	2	0	s	lakes	exact	H		
+281	p185_c4b.jpg:7	16	1	1	t	to	exact	H		
+282	p185_c4b.jpg:8	16	5	0	o	to	exact	H	o	exact
+283	p185_c4b.jpg:9	16	46	1	s	Saint	exact	H		
+284	p185_c4b.jpg:10	16	19	0	a	Saint	exact	H		
+285	p185_c4b.jpg:11	16	22	0	i	Saint	exact	H		
+286	p185_c4b.jpg:12	16	15	0	n	Saint	exact	H		
+287	p185_c4b.jpg:13	16	16	0	t	Saint	exact	H		
+288	p185_c5a.jpg:1	17	4	1	j	Johns,	exact	M	i	no
+289	p185_c5a.jpg:2	18	14	1	o	Johns,	exact	H	o	exact
+290	p185_c5a.jpg:3	18	23	0	h	Johns,	exact	H		
+291	p185_c5a.jpg:4	18	21	0	n	Johns,	exact	H		
+292	p185_c5a.jpg:5	18	13	0	s	Johns,	exact	H	s	exact
+293	p185_c5a.jpg:7	1	1	1	b	by	exact	H	b	exact
+294	p185_c5a.jpg:8	1	2	0	y	by	exact	H		
+295	p185_c5a.jpg:9	5	3	1	t	the	exact	H	t	exact
+296	p185_c5a.jpg:10	5	4	0	h	the	exact	H	h	exact
+297	p185_c5a.jpg:11	5	5	0	e	the	exact	H	e	exact
+298	p185_c5a.jpg:12	22	8	1	r	river	exact	H	r	exact
+299	p185_c5a.jpg:13	22	14	0	i	river	exact	H	i	exact
+300	p185_c5a.jpg:14	22	6	0	v	river	exact	H	v	exact
+301	p185_c5b.jpg:1	22	7	0	e	river	exact	H	e	exact
+302	p185_c5b.jpg:2	22	8	0	r	river	exact	H	r	exact
+303	p185_c5b.jpg:3	26	15	1	s	Saint	exact	H		
+304	p185_c5b.jpg:4	26	19	0	a	Saint	exact	H	a	exact
+305	p185_c5b.jpg:5	26	10	0	i	Saint	exact	H	i	exact
+306	p185_c5b.jpg:6	26	9	0	n	Saint	exact	H		
+307	p185_c5b.jpg:7	26	16	0	t	Saint	exact	H		
+308	p185_c5b.jpg:8	23	35	1	l	Laurence;	exact	H	l	exact
+309	p185_c5b.jpg:9	23	34	0	a	Laurence;	exact	H		
+310	p185_c5b.jpg:10	23	25	0	u	Laurence;	exact	H		
+311	p185_c5b.jpg:11	23	33	0	r	Laurence;	exact	H		
+312	p185_c5b.jpg:12	23	31	0	e	Laurence;	exact	H		
+313	p185_c6a.jpg:1	23	40	0	n	Laurence;	exact	H		
+314	p185_c6a.jpg:2	23	41	0	c	Laurence;	exact	H		
+315	p185_c6a.jpg:3	23	42	0	e	Laurence;	exact	H		

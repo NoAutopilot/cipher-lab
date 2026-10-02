@@ -1,0 +1,309 @@
+{
+ "region": [
+  2200,
+  640,
+  4180,
+  2320
+ ],
+ "bounds": [
+  2200,
+  2778,
+  2951,
+  3158,
+  3331,
+  3536,
+  3745,
+  3948,
+  4180
+ ],
+ "crops": [
+  {
+   "crop": "p184_c1a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    2200,
+    640,
+    2778,
+    1457
+   ],
+   "scale": 2,
+   "column": 1,
+   "half": "a",
+   "split_row_native": 1387,
+   "size": [
+    1156,
+    1634
+   ]
+  },
+  {
+   "crop": "p184_c1b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    2200,
+    1317,
+    2778,
+    2320
+   ],
+   "scale": 2,
+   "column": 1,
+   "half": "b",
+   "split_row_native": 1387,
+   "size": [
+    1156,
+    2006
+   ]
+  },
+  {
+   "crop": "p184_c2a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    2778,
+    640,
+    2951,
+    1469
+   ],
+   "scale": 2,
+   "column": 2,
+   "half": "a",
+   "split_row_native": 1399,
+   "size": [
+    346,
+    1658
+   ]
+  },
+  {
+   "crop": "p184_c2b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    2778,
+    1329,
+    2951,
+    2320
+   ],
+   "scale": 2,
+   "column": 2,
+   "half": "b",
+   "split_row_native": 1399,
+   "size": [
+    346,
+    1982
+   ]
+  },
+  {
+   "crop": "p184_c3a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    2951,
+    640,
+    3158,
+    1467
+   ],
+   "scale": 2,
+   "column": 3,
+   "half": "a",
+   "split_row_native": 1397,
+   "size": [
+    414,
+    1654
+   ]
+  },
+  {
+   "crop": "p184_c3b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    2951,
+    1327,
+    3158,
+    2320
+   ],
+   "scale": 2,
+   "column": 3,
+   "half": "b",
+   "split_row_native": 1397,
+   "size": [
+    414,
+    1986
+   ]
+  },
+  {
+   "crop": "p184_c4a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3158,
+    640,
+    3331,
+    1445
+   ],
+   "scale": 2,
+   "column": 4,
+   "half": "a",
+   "split_row_native": 1375,
+   "size": [
+    346,
+    1610
+   ]
+  },
+  {
+   "crop": "p184_c4b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3158,
+    1305,
+    3331,
+    2320
+   ],
+   "scale": 2,
+   "column": 4,
+   "half": "b",
+   "split_row_native": 1375,
+   "size": [
+    346,
+    2030
+   ]
+  },
+  {
+   "crop": "p184_c5a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3331,
+    640,
+    3536,
+    1475
+   ],
+   "scale": 2,
+   "column": 5,
+   "half": "a",
+   "split_row_native": 1405,
+   "size": [
+    410,
+    1670
+   ]
+  },
+  {
+   "crop": "p184_c5b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3331,
+    1335,
+    3536,
+    2320
+   ],
+   "scale": 2,
+   "column": 5,
+   "half": "b",
+   "split_row_native": 1405,
+   "size": [
+    410,
+    1970
+   ]
+  },
+  {
+   "crop": "p184_c6a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3536,
+    640,
+    3745,
+    1463
+   ],
+   "scale": 2,
+   "column": 6,
+   "half": "a",
+   "split_row_native": 1393,
+   "size": [
+    418,
+    1646
+   ]
+  },
+  {
+   "crop": "p184_c6b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3536,
+    1323,
+    3745,
+    2320
+   ],
+   "scale": 2,
+   "column": 6,
+   "half": "b",
+   "split_row_native": 1393,
+   "size": [
+    418,
+    1994
+   ]
+  },
+  {
+   "crop": "p184_c7a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3745,
+    640,
+    3948,
+    1463
+   ],
+   "scale": 2,
+   "column": 7,
+   "half": "a",
+   "split_row_native": 1393,
+   "size": [
+    406,
+    1646
+   ]
+  },
+  {
+   "crop": "p184_c7b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3745,
+    1323,
+    3948,
+    2320
+   ],
+   "scale": 2,
+   "column": 7,
+   "half": "b",
+   "split_row_native": 1393,
+   "size": [
+    406,
+    1994
+   ]
+  },
+  {
+   "crop": "p184_c8a.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3948,
+    640,
+    4180,
+    1457
+   ],
+   "scale": 2,
+   "column": 8,
+   "half": "a",
+   "split_row_native": 1387,
+   "size": [
+    464,
+    1634
+   ]
+  },
+  {
+   "crop": "p184_c8b.jpg",
+   "source": "img827_full.jpg",
+   "box": [
+    3948,
+    1317,
+    4180,
+    2320
+   ],
+   "scale": 2,
+   "column": 8,
+   "half": "b",
+   "split_row_native": 1387,
+   "size": [
+    464,
+    2006
+   ]
+  }
+ ]
+}

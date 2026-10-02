@@ -1,0 +1,697 @@
+{
+ "target": {
+  "align_cost": 84.0,
+  "n_units": 98,
+  "n_plain_words": 111,
+  "n_tokens": 315,
+  "n_cells": 166,
+  "consistency_occ": 170,
+  "consistency_agree": 165,
+  "consistency": 0.9705882352941176,
+  "tomo_cells_compared": 81,
+  "tomo_exact": 79,
+  "tomo_tolerant": 79,
+  "grades": {
+   "H": 264,
+   "M": 33,
+   "C": 18
+  },
+  "groups_without_counterpart": [
+   [
+    "p184_c7b.jpg:5",
+    "edmire.r......c.d..proport.on",
+    "CCCCCCMCMMMMMMCMCMMCCCCCCHMCH"
+   ],
+   [
+    "p185_c3a.jpg:1",
+    "ma.",
+    "CCM"
+   ]
+  ]
+ },
+ "control_shuffled_key": {
+  "seeds": 20,
+  "tomo_exact": {
+   "mean": 5.85,
+   "max": 9,
+   "min": 2
+  },
+  "tomo_tolerant": {
+   "mean": 13.5,
+   "max": 19,
+   "min": 8
+  },
+  "tomo_cells_compared": {
+   "mean": 81.0,
+   "max": 81,
+   "min": 81
+  }
+ },
+ "control_shuffled_plain": {
+  "seeds": 20,
+  "consistency": {
+   "mean": 0.4588276140955466,
+   "max": 0.5095541401273885,
+   "min": 0.4303030303030303
+  },
+  "tomo_exact": {
+   "mean": 6.1,
+   "max": 11,
+   "min": 3
+  },
+  "tomo_tolerant": {
+   "mean": 12.55,
+   "max": 16,
+   "min": 8
+  },
+  "tomo_cells_compared": {
+   "mean": 79.3,
+   "max": 83,
+   "min": 76
+  }
+ },
+ "title_page_lines_from_2894": [
+  " 1: byp.r.iss.o.o...e....t....u",
+  " 2: the.ecre.......a",
+  " 5: ..the",
+  " 6: ..ne.al...fi..do.....r",
+  " 7: .sthe.ranki...e..m",
+  " 8: of.h",
+  " 9: o.f.cers.n.....vera.....ment",
+  "11: .......a.....a.d",
+  "13: br.t.shand.r.............e",
+  "14: .o..........a",
+  "15: ....p",
+  "16: t.e.o.e....imentofarti..e.yandco..s..........s",
+  "17: ...i..s.....l....and",
+  "18: ...themarineso..u.l.ndhal...y",
+  "19: with",
+  "20: ...da..s.......comm.....ns......r",
+  "22: .....vern....i",
+  "23: ....i...s.....e..d......u..h..e.ral.o..nce",
+  "24: a..t",
+  "26: ........ni....st..a"
+ ],
+ "aligned_words": [
+  [
+   "clear",
+   "I have",
+   "I have",
+   "0"
+  ],
+  [
+   "clear",
+   "received",
+   "received",
+   "0"
+  ],
+  [
+   "clear",
+   "your",
+   "your",
+   "0"
+  ],
+  [
+   "clear",
+   "Dispatches",
+   "dispatches",
+   "0"
+  ],
+  [
+   "clear",
+   "of Novr",
+   "of Novr",
+   "0"
+  ],
+  [
+   "clear",
+   "1 Jany",
+   "& January",
+   "4.0"
+  ],
+  [
+   "clear",
+   "&c",
+   "&c",
+   "0"
+  ],
+  [
+   "pairs",
+   "1",
+   "I",
+   "exact"
+  ],
+  [
+   "pairs",
+   "4",
+   "have",
+   "exact"
+  ],
+  [
+   "pairs",
+   "8",
+   "received",
+   "exact"
+  ],
+  [
+   "pairs",
+   "11",
+   "Information",
+   "exact"
+  ],
+  [
+   "pairs",
+   "4",
+   "from",
+   "exact"
+  ],
+  [
+   "pairs",
+   "3",
+   "the",
+   "exact"
+  ],
+  [
+   "pairs",
+   "8",
+   "Ministers",
+   "indel"
+  ],
+  [
+   "clear",
+   "of the 3d",
+   "of the 3d",
+   "0"
+  ],
+  [
+   "clear",
+   "May that",
+   "May",
+   "3.5"
+  ],
+  [
+   "pairs",
+   "8",
+   "Monsieur",
+   "exact"
+  ],
+  [
+   "pairs",
+   "6",
+   "Terney",
+   "exact"
+  ],
+  [
+   "clear",
+   "is supposed to",
+   "is supposed to",
+   "0"
+  ],
+  [
+   "pairs",
+   "4",
+   "have",
+   "exact"
+  ],
+  [
+   "pairs",
+   "6",
+   "sailed",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "about",
+   "exact"
+  ],
+  [
+   "clear",
+   "the 3d",
+   "the 3d",
+   "0"
+  ],
+  [
+   "pairs",
+   "3",
+   "May",
+   "exact"
+  ],
+  [
+   "pairs",
+   "4",
+   "with",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "seven",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "ships",
+   "exact"
+  ],
+  [
+   "pairs",
+   "2",
+   "of",
+   "exact"
+  ],
+  [
+   "pairs",
+   "3",
+   "the",
+   "exact"
+  ],
+  [
+   "pairs",
+   "4",
+   "line,",
+   "exact"
+  ],
+  [
+   "clear",
+   "& from 20 to 25",
+   "& from 20 to",
+   "2.5"
+  ],
+  [
+   "clear",
+   "4",
+   "25",
+   "3.0"
+  ],
+  [
+   "pairs",
+   "10",
+   "Transports",
+   "exact"
+  ],
+  [
+   "clear",
+   "&c",
+   "&c",
+   "0"
+  ],
+  [
+   "clear",
+   "having",
+   "having",
+   "0"
+  ],
+  [
+   "pairs",
+   "2",
+   "on",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "board",
+   "exact"
+  ],
+  [
+   "pairs",
+   "4",
+   "five",
+   "exact"
+  ],
+  [
+   "pairs",
+   "8",
+   "Thousand",
+   "exact"
+  ],
+  [
+   "clear",
+   "200",
+   "two",
+   "2.5"
+  ],
+  [
+   "plain-unmatched",
+   "",
+   "hundred",
+   "skip"
+  ],
+  [
+   "pairs",
+   "4",
+   "land",
+   "exact"
+  ],
+  [
+   "pairs",
+   "6",
+   "Forces",
+   "exact"
+  ],
+  [
+   "clear",
+   "& that",
+   "& that",
+   "0"
+  ],
+  [
+   "clear",
+   "their",
+   "their",
+   "0"
+  ],
+  [
+   "pairs",
+   "11",
+   "destination",
+   "exact"
+  ],
+  [
+   "clear",
+   "is.",
+   "is",
+   "0"
+  ],
+  [
+   "pairs",
+   "4",
+   "stil",
+   "exact"
+  ],
+  [
+   "pairs",
+   "7",
+   "supposed",
+   "double-drop"
+  ],
+  [
+   "clear",
+   "to be",
+   "to be",
+   "0"
+  ],
+  [
+   "pairs",
+   "6",
+   "Canada",
+   "exact"
+  ],
+  [
+   "pairs-unmatched",
+   "7",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "A",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "will be",
+   "",
+   "skip"
+  ],
+  [
+   "pairs-unmatched",
+   "10",
+   "",
+   "skip"
+  ],
+  [
+   "pairs-unmatched",
+   "2",
+   "",
+   "skip"
+  ],
+  [
+   "pairs-unmatched",
+   "10",
+   "",
+   "skip"
+  ],
+  [
+   "clear",
+   "By Information",
+   "by Information",
+   "0"
+  ],
+  [
+   "clear",
+   "I have received here",
+   "I have received here",
+   "0"
+  ],
+  [
+   "clear",
+   "The",
+   "the",
+   "0"
+  ],
+  [
+   "pairs",
+   "6",
+   "french",
+   "exact"
+  ],
+  [
+   "pairs",
+   "8",
+   "Armament",
+   "exact"
+  ],
+  [
+   "clear",
+   "will",
+   "will",
+   "0"
+  ],
+  [
+   "clear",
+   "assemble",
+   "assemble",
+   "0"
+  ],
+  [
+   "pairs",
+   "2",
+   "at",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "Rhode",
+   "exact"
+  ],
+  [
+   "pairs",
+   "6",
+   "Island,",
+   "exact"
+  ],
+  [
+   "plain-unmatched",
+   "",
+   "a",
+   "skip"
+  ],
+  [
+   "clear",
+   "a Division of which will",
+   "division of which will",
+   "3.0"
+  ],
+  [
+   "pairs",
+   "7",
+   "proceed",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "under",
+   "exact"
+  ],
+  [
+   "clear",
+   "the",
+   "the",
+   "0"
+  ],
+  [
+   "pairs",
+   "7",
+   "Command",
+   "exact"
+  ],
+  [
+   "clear",
+   "of the",
+   "of the",
+   "0"
+  ],
+  [
+   "pairs-unmatched",
+   "3",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "0",
+   "",
+   "skip"
+  ],
+  [
+   "pairs",
+   "3",
+   "Marquis",
+   "indel"
+  ],
+  [
+   "pairs",
+   "2",
+   "de",
+   "exact"
+  ],
+  [
+   "pairs",
+   "7",
+   "Fayette",
+   "exact"
+  ],
+  [
+   "clear",
+   "by",
+   "by",
+   "0"
+  ],
+  [
+   "pairs",
+   "10",
+   "Connecticut",
+   "double-drop"
+  ],
+  [
+   "pairs",
+   "5",
+   "Rivers",
+   "indel"
+  ],
+  [
+   "clear",
+   "& No 4",
+   "and No 4",
+   "3.5"
+  ],
+  [
+   "pairs",
+   "6",
+   "across",
+   "exact"
+  ],
+  [
+   "pairs",
+   "3",
+   "the",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "lakes",
+   "exact"
+  ],
+  [
+   "pairs",
+   "2",
+   "to",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "Saint",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "Johns,",
+   "exact"
+  ],
+  [
+   "clear",
+   "the other",
+   "the other",
+   "0"
+  ],
+  [
+   "pairs",
+   "2",
+   "by",
+   "exact"
+  ],
+  [
+   "pairs",
+   "3",
+   "the",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "river",
+   "exact"
+  ],
+  [
+   "pairs",
+   "5",
+   "Saint",
+   "exact"
+  ],
+  [
+   "pairs",
+   "8",
+   "Laurence;",
+   "exact"
+  ],
+  [
+   "clear-unmatched",
+   "H C",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "N. York",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "6th July",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "1780.",
+   "",
+   "skip"
+  ],
+  [
+   "clear-unmatched",
+   "Cypher L. Initialled.",
+   "",
+   "skip"
+  ]
+ ]
+}
