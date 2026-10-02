@@ -1,0 +1,36 @@
+line	pos	group_seen	gloss	conf	note
+L11	0	4)	p	H	p with long slash stroke to its left; centred over 4)
+L11	1	56	a	H	
+L11	2	93	v	M	gloss 'vi': v over 93, i sits at the gap/left edge of 6
+L11	3	6	a	M	i (from 'vi') at 6's left edge; a just right of 6, before 44
+L11	4	44	y	M	m straddles end of 44 and gap before )8; y centred over 44
+L11	5	)8	a	M	a over )8 right half; m partly over )8 left edge
+L11	6	28	s	H	comma follows s
+L11	7	50	i	H	
+L11	8	60	e	H	
+L11	9	40	g	H	
+L11	10	30	u	H	
+L11	11	49	n	H	
+L11	12	56	y	H	
+L11	13	15	d	H	
+L11	14	34	a	H	
+L11	15	81	d	M	round d (looks like a looped o/∂), comma after
+L11	16	3)	d	H	
+L11	17	5	e	H	
+L13	0	25	p	H	p with slash stroke
+L13	1	96	o	H	
+L13	2	89	n	H	n over right half of 89
+L13	3	3)	d	H	d over right half of 3), before 93
+L13	4	93	n	H	
+L13	5	56	a	H	comma after a
+L13	6	50	s	H	
+L13	7	24	o	H	
+L13	8	65	l	H	
+L13	9	12	a	M	a over 12; i at gap between 12 and 66, nearer 12 ('ai')
+L13	10	66	m	H	i just left of 66 (nearer 12)
+L13	11	60	e	H	
+L13	12	89	n	H	
+L13	13	51	t	H	
+L13	14	16	e	H	comma after e
+L13	15	96	y	H	
+L13	16	23	n	H	

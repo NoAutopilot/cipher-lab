@@ -1,0 +1,21 @@
+pass agreement (gloss letter, normalised): 116 of 135 common positions
+  L01: 14 of 14
+  L02: 13 of 18
+  L04: 12 of 19
+  L06: 20 of 20
+  L08: 17 of 19
+  L09: 9 of 10
+  L11: 15 of 18
+  L13: 16 of 17
+KEY predictions vs settled image letter at the M positions: REAL 42/45; shuffled predictions (20 seeds): mean 4.10, max 7, at or above real 0
+  control values: [3, 7, 4, 3, 3, 5, 4, 4, 3, 3, 5, 4, 7, 2, 7, 2, 4, 6, 4, 2]
+  DIFFER L04 pos16 code 21) pred=n read=r
+  DIFFER L08 pos18 code )2 pred=s read=u
+  DIFFER L11 pos9 code 40 pred=e read=g
+SENSE predictions vs settled image letter at the M positions: REAL 40/45; shuffled predictions (20 seeds): mean 4.00, max 7, at or above real 0
+  control values: [3, 7, 4, 3, 3, 5, 4, 4, 3, 3, 5, 4, 7, 2, 6, 2, 4, 6, 3, 2]
+  DIFFER L02 pos17 code )5 pred=u+[e] read=u
+  DIFFER L04 pos16 code 21) pred=n read=r
+  DIFFER L08 pos18 code )2 pred=s read=u
+  DIFFER L11 pos4 code 44 pred=m read=y
+  DIFFER L11 pos9 code 40 pred=e read=g

@@ -1,0 +1,52 @@
+line	pos	group_seen	gloss	conf	note
+L01	0	89	n	H	x~623-732; gloss n centre ~666
+L01	1	46	o	H	small vertical tick under the o (comma-like), between gloss and digits
+L01	2	56	a	H	
+L01	3	13	b	H	
+L01	4	)6	y	H	small dark dot left of y
+L01	5	60	e	H	
+L01	6	23	n	M	23 written raised above the digit row (x~1355-1460) over the left edge of the blot; one gloss n (x~1395-1480) stands over 23/blot together
+L01	7	[blot]	NULL	M	blot x~1409-1514 under the raised 23; no separate gloss letter, the single n is shared with pos 6 (could equally belong here)
+L01	8	15	L	H	capital-style L
+L01	9	3	o	H	comma after o (x~1735) before next group
+L01	10	45	N	H	capital N, heavy ink
+L01	11	24	o	H	
+L01	12	35	b	H	
+L01	13	38	e	H	
+L02	0	81	NULL	L	only a loop of a flourish from the line above at x~227-264; no clear gloss letter
+L02	1	6	a	H	
+L02	2	3)	d	H	d centre ~510 over the ) of 3); comma follows at x~530-555
+L02	3	16	e	H	
+L02	4	89	n	H	slash after 89 at x~768-795
+L02	5	10	a	H	
+L02	6	50	s	H	long-s form, joined by a dash to next letter
+L02	7	29	t	H	
+L02	8	34	a	H	
+L02	9	28	l	L	short looped ascender-like glyph (x~1291-1336) with a dark dot left of it and a comma stroke below; could be s or e; not a clean letter
+L02	10	25	P	H	capital P partly blotted
+L02	11	56	a	H	
+L02	12	)1	r	H	r centre ~1690 over )1; dot under r
+L02	13	95	t	H	
+L02	14	10	e	H	
+L02	15	94	s	H	comma after s; another comma in digit row under 94
+L02	16	)0	q	M	q x~2108-2153 over the 0 of )0
+L02	17	)5	ue	M	u (x~2167-2230) over the ) and e (x~2249-2294) over the 5; u could alternatively belong with q over )0
+L04	0	18	q	M	9-shaped letter with long lead-in stroke from the left; q or g
+L04	1	3	o	H	
+L04	2	30	y	H	
+L04	3	98	y	H	heavy ink
+L04	4	82	e	H	
+L04	5	49	n	M	light n x~750-836, centre near right edge of 49 and gap before 23
+L04	6	23	n	M	dark n x~850-945 over 23 / gap toward 68
+L04	7	68	o	H	
+L04	8	14	c	H	
+L04	9	46	o	H	
+L04	10	89	n	H	comma follows
+L04	11	21	L	H	capital-style L
+L04	12	56	a	H	
+L04	13	50	s	H	comma follows
+L04	14	33	z	M	z-like glyph (x~1714-1768); could be r-rotunda style
+L04	15	54	x	M	x-like glyph, heavy at left
+L04	16	21)	n	H	
+L04	17	36)	eu	M	e over the 3 (x~2035-2067), u over 6) (x~2094-2171); both inside 36) range
+L04	18	45	n	H	

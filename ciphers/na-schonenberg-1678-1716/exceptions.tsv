@@ -7,7 +7,7 @@ L13	15	y	C	GAPS7 2 Oct 2026 image pass: 96: y in both passes (sense had predicte
 L03	15	s	C	GAPS7 2 Oct 2026 image pass: )2: s in both passes (key )2 = r, M, from unchecked positions)
 L12	16	s	C	GAPS7 2 Oct 2026 image pass: was transcribed )52; both passes read )2 followed by a separate 38; s in both
 L14	6	s	C	GAPS7 2 Oct 2026 image pass: )2: s in both passes
-L08	18	s	M	GAPS8 2 Oct 2026 image pass: )2 = s (C) elsewhere, but this occurrence was not image-read and the 25 Sept gloss column has no letter over it
+L08	18	u	C	"GAPS9 2 Oct 2026 image pass: both blind passes read a v-form u over )2 here (A ""v"", B ""u""; reconciliation: v-form u, ""esauan""); )2 = s (C) elsewhere, so this position is an exception | was: s M (not image-read)"
 L10	0	NULL	M	GAPS8 2 Oct 2026 image pass: no gloss letter over the line-start groups in either blind pass (GAPS7 and GAPS8); the group itself is a curl, not clearly )2
 L10	1	NULL	M	GAPS8 2 Oct 2026 image pass: no gloss letter over )0 (a small 2 written above it) in either blind pass
 L10	2	NULL	M	"GAPS8 2 Oct 2026 image pass: no gloss letter over 32 here in either blind pass; ""puedan"" begins at 4)"

@@ -1,0 +1,46 @@
+line	pos	letter	source
+L01	4	y	both blind passes agree
+L01	5	e	both blind passes agree
+L01	6	n	both blind passes agree
+L01	7	NULL	both blind passes agree
+L01	8	d	"both (glyph read ""L"" by both = the hand's looped d, reconciliation)"
+L01	10	n	"both (""N"")"
+L02	2	d	both blind passes agree
+L02	9	s	split s/l; reconciliation s
+L02	12	r	both blind passes agree
+L02	16	q	both blind passes agree
+L02	17	u	"both (B ""ue"", the e past the last group)"
+L04	0	g	split g/q; reconciliation g
+L04	4	e	both blind passes agree
+L04	14	z	both blind passes agree
+L04	16	r	split r/n; reconciliation r (w-form r, as over 93 at L11)
+L04	17	e	"both e (B ""eu"": 36) may be 36 + ), GAPS7 doubt)"
+L04	18	n	split u/n; reconciliation n
+L06	5	r	both blind passes agree
+L06	7	s	both blind passes agree
+L06	8	p	both blind passes agree
+L06	12	c	both blind passes agree
+L06	14	n	both blind passes agree
+L06	15	a	both blind passes agree
+L06	17	s	both blind passes agree
+L08	3	d	both blind passes agree
+L08	13	e	both blind passes agree
+L08	14	s	both blind passes agree
+L08	15	e	both blind passes agree
+L08	16	s	both blind passes agree
+L08	18	u	"both (A ""v"", B ""u"": v-form u, reconciliation)"
+L09	0	a	split A/d; reconciliation swash capital A
+L09	4	o	both blind passes agree
+L09	16	q	both blind passes agree
+L09	17	u	both blind passes agree
+L11	0	p	both blind passes agree
+L11	4	y	both blind passes agree
+L11	5	a	both (an m stands between 44 and )8 over no group of its own)
+L11	6	s	both blind passes agree
+L11	9	g	both; reconciliation g
+L11	13	d	both blind passes agree
+L11	16	d	both blind passes agree
+L11	17	e	both blind passes agree
+L13	3	d	both blind passes agree
+L13	10	m	both blind passes agree
+L13	16	n	both blind passes agree
