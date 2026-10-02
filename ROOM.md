@@ -5163,3 +5163,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: berthier-napoleon-1812 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/napoleon/NOTES.md
 2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: birago-nevers-1571 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago/NOTES.md
 2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3022-garbino-1528 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/vasto1527/NOTES.md (no. 20)
+2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr2988-ranzo-1520s -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json #170
