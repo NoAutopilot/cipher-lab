@@ -821,3 +821,13 @@ reply does change is the wording: the witness now appears by name in every safe 
 out of reach until the copies are seen. If the copies are seen and carry a decipherment, the item drops to N0/N1 and our reading
 becomes an independent re-decipherment; if they carry none, a written statement from the KHA or a WVO editor to that effect
 would support N5.
+
+## Reading revision carried in (2 Oct 2026, A2-AVS3, solver side; no class change made here)
+
+Rule 10 propagation note, not a verdict. 126's reading was revised after the audits above: WVO 124 (same Dresden file,
+Loc. 8510/5 f.134 cipher, f.135 contemporary decipherment) is System B and settles two of 126's key-level M questions
+(NOTES.md "A2-AVS3"). Filled Λ = m (8 tokens regraded C) and the down-arrow = k, which closes "kranck" (the reading
+"so heftig kranc[k] [ge]worden" becomes "so heftig kranck worden"). 126 tokens are now 240: C 224, M 16 (were C 214,
+M 26); the sense of the passage is unchanged. K ('die' by context) conflicts with 124's one K = 'der' and stays M.
+The SECOND-OPINIONS-QUEUE row SO-SAXONY-126 is already `checked`; the one changed word is logged here for a verifier.
+Groen, Archives I 231-233 (LETTRE LXXXII) prints only 124's clear letter, not its cipher enclosure or decipherment.

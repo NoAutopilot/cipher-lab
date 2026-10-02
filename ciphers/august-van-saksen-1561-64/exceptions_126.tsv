@@ -1,16 +1,15 @@
 line	pos	value	grade	reason
-1	32	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-3	30	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-3	31	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-4	17	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-5	31	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-6	14	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-6	38	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-7	11	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-7	21	m	M	Λ read as m from context; 98 separates L=l and filled Lf=m, 126's hand does not
-5	35	i	M	sign 1 (98: h) read as i in 'ihr' from context
-6	12	i	M	sign 1 (98: h) read as i in 'zwei' from context
-4	26	die	M	word sign K, not in 98; 'die Königin', 'die adern' from context
-6	1	die	M	word sign K, not in 98; context
-5	11	k	M	down-arrow sign, not in 98; 'kranck' from context
-5	17	ge	M	down-arrow sign, second use; 'geworden' from context (74 system uses it for 'und')
+3	30	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+3	31	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+4	17	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+5	31	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+6	14	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+6	38	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+7	11	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+7	21	m	C	A2-AVS3 2 Oct 2026: filled Λ (98's Lf) on the native f.139 scan; filled Λ = m in 98 (Lf m 5 of 7) and in every filled Λ aligned in WVO 124 f.134 against its decipherment f.135 (gehaim, mir, khommen, massen, bemelte, meinung, vernhemen)
+1	32	m	M	A2-AVS3 2 Oct 2026: Λ read as m from context; on the native f.139 scan the fill is lighter than the eight filled Λ of this leaf (sign already conf M in ciphertext_126.tsv); open Λ is l or m in WVO 124 (möchten, niemandt, damit)
+5	35	i	M	A2-AVS3 2 Oct 2026: sign 1 (98: h) read as i in 'ihr' from context; WVO 124 f.134 attests 1 = i once ('81ΛΛ' = will, f.135) beside 1 = h (verhalten, hiervon, mahl), so both values are period-attested and the choice here is context
+6	12	i	M	A2-AVS3 2 Oct 2026: sign 1 (98: h) read as i in 'zwei' from context; WVO 124 f.134 attests 1 = i once ('81ΛΛ' = will, f.135) beside 1 = h (verhalten, hiervon, mahl), so both values are period-attested and the choice here is context
+4	26	die	M	A2-AVS3 2 Oct 2026: word sign K, not in 98; 'die' from context; CONFLICT: in WVO 124 f.134 K aligns to 'der' (f.135 'dieweil der Weldt', n=1), so K may be a general article sign; held M
+6	1	die	M	A2-AVS3 2 Oct 2026: word sign K, not in 98; 'die' from context; CONFLICT: in WVO 124 f.134 K aligns to 'der' (f.135 'dieweil der Weldt', n=1), so K may be a general article sign; held M
+5	16	k	C	A2-AVS3 2 Oct 2026: down-arrow sign (ARR), written after D as 'ck' exactly as in WVO 124 f.134 'vermerckhen' (d + ARR = ck against f.135 'vermerckhen'); 124 also writes the same stemmed V for k (kurtz, khommen, khamen, konnen). Word division moved: the sign closes 'kranck' (native scan shows the gap after it), it is not a 'ge' prefix of 'worden'

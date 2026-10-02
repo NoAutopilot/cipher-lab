@@ -87,8 +87,8 @@ line	pos	sign	value	grade
 3	27	3	e	C
 3	28	V	k	C
 3	29	4	o	C
-3	30	L	m	M
-3	31	L	m	M
+3	30	L	m	C
+3	31	L	m	C
 3	32	3	e	C
 3	33	N	n	C
 4	1	1	h	C
@@ -105,7 +105,7 @@ line	pos	sign	value	grade
 4	14	5	u	C
 4	15	3	e	C
 4	16	Or	r	C
-4	17	L	m	M
+4	17	L	m	C
 4	18	3	e	C
 4	19	L	l	C
 4	20	Td	d	C
@@ -129,12 +129,12 @@ line	pos	sign	value	grade
 5	7	9	t	M
 5	8	Z	i	C
 5	9	Qg	g	C
-5	11	ARR	k	M
+5	11	V	k	C
 5	12	Or	r	C
 5	13	0	a	C
 5	14	N	n	C
 5	15	D	c	C
-5	17	ARR	ge	M
+5	16	ARR	k	C
 5	18	8	w	C
 5	19	4	o	C
 5	20	Or	r	C
@@ -145,7 +145,7 @@ line	pos	sign	value	grade
 5	26	3	e	C
 5	27	Z	i	C
 5	29	EL8	das	M
-5	31	L	m	M
+5	31	L	m	C
 5	32	0	a	C
 5	33	N	n	C
 5	35	1	i	M
@@ -160,7 +160,7 @@ line	pos	sign	value	grade
 6	10	8	w	C
 6	11	3	e	C
 6	12	1	i	M
-6	14	L	m	M
+6	14	L	m	C
 6	15	0	a	C
 6	16	1	h	C
 6	17	L	l	C
@@ -179,7 +179,7 @@ line	pos	sign	value	grade
 6	34	8	w	C
 6	35	3	e	C
 6	36	Z	i	C
-6	38	L	m	M
+6	38	L	m	C
 6	39	0	a	C
 6	40	1	h	C
 6	41	L	l	C
@@ -192,7 +192,7 @@ line	pos	sign	value	grade
 7	7	Or	r	C
 7	8	3	e	C
 7	9	N	n	C
-7	11	L	m	M
+7	11	L	m	C
 7	12	5	u	C
 7	13	Sb	s	C
 7	14	Sb	s	C
@@ -201,7 +201,7 @@ line	pos	sign	value	grade
 7	18	Td	d	C
 7	19	3	e	C
 7	20	Or	r	C
-7	21	L	m	M
+7	21	L	m	C
 7	22	0	a	C
 7	23	Sb	s	C
 7	24	Sb	s	C
