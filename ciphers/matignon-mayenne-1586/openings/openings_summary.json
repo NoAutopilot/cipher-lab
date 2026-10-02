@@ -1,0 +1,215 @@
+{
+ "leaves": [
+  {
+   "leaf": "f110",
+   "lines": [
+    "f110-1",
+    "f110-2"
+   ],
+   "tokens": 119,
+   "plain_items": 65,
+   "score": 33,
+   "ops": {
+    "agree": 32,
+    "in-set": 5,
+    "DISAGREE": 15,
+    "U-on-letter": 11,
+    "OUT-OF-SET": 1,
+    "null": 11
+   },
+   "ctrl_max": -22,
+   "ctrl_p95": -39,
+   "ctrl_median": -58,
+   "ctrl_min": -79,
+   "shuffles": 200,
+   "ctrl_top_share": {
+    "T": 1.0,
+    "BOX": 0.397,
+    "U": 0.806,
+    "z": 0.508,
+    "w": 1.0,
+    "4": 1.0,
+    "1": 1.0,
+    "p": 1.0
+   }
+  },
+  {
+   "leaf": "f143r",
+   "lines": [
+    "f143r-1",
+    "f143r-2",
+    "f143r-3",
+    "f143r-4",
+    "f143r-5"
+   ],
+   "tokens": 169,
+   "plain_items": 133,
+   "score": 468,
+   "ops": {
+    "null": 3,
+    "agree": 92,
+    "in-set": 21,
+    "U-code": 1,
+    "word": 5,
+    "code": 1
+   },
+   "ctrl_max": -67,
+   "ctrl_p95": -104,
+   "ctrl_median": -128,
+   "ctrl_min": -157,
+   "shuffles": 200,
+   "ctrl_top_share": {
+    "49": 0.637
+   }
+  },
+  {
+   "leaf": "f150",
+   "lines": [
+    "f150-1",
+    "f150-2"
+   ],
+   "tokens": 73,
+   "plain_items": 38,
+   "score": -50,
+   "ops": {
+    "agree": 16,
+    "DISAGREE": 12,
+    "U-on-letter": 2,
+    "null": 11,
+    "OUT-OF-SET": 2
+   },
+   "ctrl_max": -19,
+   "ctrl_p95": -31,
+   "ctrl_median": -49,
+   "ctrl_min": -71,
+   "shuffles": 200,
+   "ctrl_top_share": {
+    "z": 1.0,
+    "15": 1.0
+   }
+  },
+  {
+   "leaf": "f154",
+   "lines": [
+    "f154-1"
+   ],
+   "tokens": 45,
+   "plain_items": 23,
+   "score": 66,
+   "ops": {
+    "null": 3,
+    "agree": 12,
+    "word": 2,
+    "OUT-OF-SET": 1,
+    "in-set": 2
+   },
+   "ctrl_max": 20,
+   "ctrl_p95": 4,
+   "ctrl_median": -16,
+   "ctrl_min": -40,
+   "shuffles": 200,
+   "ctrl_top_share": {}
+  }
+ ],
+ "tabulation": {
+  "leaves_above_control_max": [
+   "f110",
+   "f143r",
+   "f154"
+  ],
+  "U_labels": {
+   "BOX": {
+    "a": 2,
+    "u": 1,
+    "e": 1
+   },
+   "z": {
+    "i": 1,
+    "o": 1,
+    "s": 1
+   },
+   "w": {
+    "d": 1
+   },
+   "U": {
+    "e": 1
+   },
+   "T": {
+    "r": 1
+   },
+   "p": {
+    "b": 1
+   }
+  },
+  "H_disagreements": {
+   "8=g": {
+    "u": 2,
+    "e": 1,
+    "i": 1
+   },
+   "o=i": {
+    "a": 2,
+    "s": 1
+   },
+   "e=r": {
+    "s": 1,
+    "q": 1,
+    "f": 1
+   },
+   "w-=d": {
+    "u": 1
+   },
+   "x=e": {
+    "l": 1
+   },
+   "q=u": {
+    "s": 1
+   },
+   "Ze=t": {
+    "d": 1
+   },
+   "n=l": {
+    "m": 1
+   }
+  },
+  "H_agree_counts": {
+   "4+": 1,
+   "7": 9,
+   "o": 8,
+   "e": 4,
+   "h": 10,
+   "n": 7,
+   "t": 15,
+   "L": 11,
+   "H": 2,
+   "g": 4,
+   "d": 5,
+   "s": 6,
+   "A": 2,
+   "m": 6,
+   "Ze": 1,
+   "J": 5,
+   "x": 7,
+   "a": 5,
+   ".v.": 6,
+   "Z": 8,
+   "D": 3,
+   "w-": 4,
+   "he": 3,
+   "c": 2,
+   "oo": 1,
+   "q": 1
+  }
+ },
+ "params": {
+  "shuffles": 200,
+  "seed": 1,
+  "MATCH_H": 4,
+  "MISMATCH_H": -5,
+  "MATCH_M": 2,
+  "MISMATCH_M": -4,
+  "NULL_GAP": -2,
+  "PT_SKIP": -4,
+  "MATCH_CODE": 8
+ }
+}
