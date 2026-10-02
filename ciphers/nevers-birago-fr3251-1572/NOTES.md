@@ -768,14 +768,14 @@ Vision calls 3 (two blind passes, one adjudication) plus this worker's own looks
 ## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
 Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
 - f.184 no.90, the rest of its cipher (f.184v foot ~4 lines, f.185r ~20 lines, f.185v one short run; canvases 189-190) - blocker: not-attempted; f.184r (224 signs) read by NEVBIR-184 (2 Oct 2026, section above): rank 1/201 z 3.6-4.2, power 17/20, agreement 0.94, judge FAIL -1.096; next: native regions of canvas 189 (left foot, right page) and 190 (left), iiif_lines --follow-slope, 2 blind passes + 1 adjudication per page, ~$4 a page
-- f.168r-v no.85 (two runs, 121 signs, NEVBIR-168, 2 Oct 2026) - blocker: too-short; printed 1572 key + T42=m rank 36/201 (z 1.00; seeds 2-3 rank 31, 41), power control 15/20 at err 0.13 (z min 0.22): a miss the right key also gives in about a quarter of windows at this length, so not licensed as a reading and too weak to call a negative; 11 off-sheet signs; next: pool with f.144r and the other short runs in one joint 200-shuffle test (disk only, ~$1), and the off-sheet value-fit shared with f.139v
-- f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; next: pool f.144r with the sibling 1572 letters' reconciled sequences in one joint 200-shuffle test once they are read (disk only, ~$1), and/or lower the reader error with the clerk-sheet error map (gap below)
+- f.168r-v no.85 (two runs, 121 signs, NEVBIR-168, 2 Oct 2026) - blocker: too-short; printed 1572 key + T42=m rank 36/201 (z 1.00; seeds 2-3 rank 31, 41), power control 15/20 at err 0.13 (z min 0.22): a miss the right key also gives in about a quarter of windows at this length, so not licensed as a reading and too weak to call a negative; 11 off-sheet signs; pooled test run (NEVBIR-POOL, 2 Oct 2026, section at the end): pool of f.144r + f.168 + f.174r rank 1-4/201, power 15/20 at err 0.15, not licensed, and f.168 is the run that drags the pool down (leave-one-out); next: the off-sheet value-fit shared with f.139v (disk only, ~$1)
+- f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; pooled test run (NEVBIR-POOL, 2 Oct 2026): not licensed at 296 signs (rank 1-4/201, power 5/20 at this run's 0.24 error); next: lower the reader error with the clerk-sheet error map (gap below), ~$2
 - no.71 cipher passage, f.139v foot (161 signs, NEVBIR-138, 2 Oct 2026) - blocker: open-codes; 21 off-sheet signs unkeyed (X_NEW "4", "7", square-with-dot, "t", raised "m" abbreviation and others), the power control is weak at this length (10/20 at err 0.15) and the judge FAILs (-1.159 vs real_p05 -0.955); next: value-fit of the recurring off-sheet signs (decode_control.py --fit-sign, disk only, ~$1; the t-shaped X_NEW read m on no.87 against the clerk sheet), then a separate verifier on the reading
 - f.152r no.77 cipher run (97 signs) read under the 1572 key by NEVBIR-152 (2 Oct 2026, section above): rank 1/201 z 3.1, slip agreement 0.61; the rest of no.77 past f.152v - blocker: not-attempted; f.152v plain per PREMISE-NEVBIR, f.153r onward not opened; next: open canvas 155-156 at 1200 px for a further cipher run (1-2 requests), and a verifier pass on the f.151v slip (whose hand, prior decipherment of this run), ~$3
 - the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
 - no.82 (f.162) cipher, one line on canvas 164 right (25 signs, NEVBIR-162, 2 Oct 2026): run 1 read under the 1572 key, rank 1/201 z 2.6-2.9 (power 2-10/20), 0.74 agreement with a later-hand decipherment slip pasted on f.161v (shuffled max 0.15); run 2 is a 4-sign name code ('M.' + digits 4 7 + u) outside the printed table - blocker: no-key-material for the code beyond the slip's own 'M. di Bellaguarda'; next: verifier pass on the f.161v slip (hand, date, prior decipherment of this item; rule 10), ~$3, and add code 47 = Bellaguarda to the key at the grade the verifier allows
 
-- no.86 (27 Aug 1572, ff.170r-177r; NEVBIR-170, 2 Oct 2026, section below): its f.174r foot run (85 signs) - blocker: too-short; real key rank 2-4/201 (z 1.8-2.1), power 11/20 at err 0.10 (20/20 at err 0): not rank 1, a non-test at this length, not a negative; the letter's main cipher is the FULL cipher page f.174v (canvas 178 left, ~22 lines, ~600 signs, not yet read) plus f.175r head (1 line) and f.175v (canvas 179 left, ~3 lines); next: read f.174v in two half-leaf jobs (same pipeline, ~$5 each, power 20/20 at that length) and pool with f.174r in one 200-shuffle test (disk only)
+- no.86 (27 Aug 1572, ff.170r-177r; NEVBIR-170, 2 Oct 2026, section below): its f.174r foot run (85 signs) - blocker: too-short; real key rank 2-4/201 (z 1.8-2.1), power 11/20 at err 0.10 (20/20 at err 0): not rank 1, a non-test at this length, not a negative; the letter's main cipher is the FULL cipher page f.174v (canvas 178 left, ~22 lines, ~600 signs, not yet read) plus f.175r head (1 line) and f.175v (canvas 179 left, ~3 lines); next: read f.174v in two half-leaf jobs (same pipeline, ~$5 each, power 20/20 at that length) and pool with f.174r in one 200-shuffle test (disk only); the short-run pool with f.144r and f.168 (NEVBIR-POOL, 2 Oct 2026) did not license it
 ## Escalation (2 Oct 2026)
 - [x] siblings: no.87 is itself the key's own witness leaf and was read first; the six other 1572 letters are the next units
 - [x] clear-pages: the clerk's clear decipherment of the whole passage is the laid-in sheet on canvas 182, read by eye (GAPS4, 2 Oct 2026); f.178r and f.179r prose frames the passage
@@ -1206,3 +1206,50 @@ Next (Remaining gaps): pool f.168 with f.144r in one joint shuffled-key test; va
 Requests: gallica.bnf.fr 5 (canvas 172 at 1600 px, the f.167v note region, two cipher regions; one connection reset on canvas 171
 retried once after 20 s). Subagents: 3 Sonnet (2 passes + 1 adjudication). No credentials.
 
+
+## NEVBIR-POOL (2 Oct 2026, owner-account worker for the account-3 orchestrator): joint test of the three short 1572 runs -- not licensed, not a negative
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-pool.md`. Disk only (0 network requests, 0 subagents). Status stays `partial`.
+No class, no novelty wording (rule 10).
+
+**Material.** The three runs that were non-tests at their own length, reconciled sequences exactly as committed:
+`harvest/f144r/passC.tsv` (no.73, 90 signs, reader disagreement 0.24), `harvest/f168/passC.tsv` (no.85, 121 signs, 0.13),
+`harvest/f174r/passC.tsv` (no.86 foot, 85 signs, 0.09). Joined with passage ids prefixed by folio into `harvest/pool/pool_all.tsv`
+(296 signs, 308 letters under the key; 32 off-sheet signs, 11%) and the three leave-one-out pairs `harvest/pool/loo_no*.tsv`.
+Each passage is scored separately and letter-weighted, as before (runs never join across a passage break). Pooled measured error,
+weighted by signs: 0.15; the power control was run at 0.15 and at 0.24 (the worst run's own) to bracket it (rule 3).
+
+**Command** (per run; outputs in `harvest/pool/run_*.txt`):
+
+    python3 ../ceppo-nevers-fr3251-1570s/harvest/decode_control.py harvest/pool/pool_all.tsv --map harvest/sign_id_map_1572_fit.json --seed S --err E [--windows 0]
+
+**Joint test** (printed 1572 key + T42=m, it16dip, 200 value-shuffled keys per seed):
+
+| sequence | signs / letters | real key | shuffles mean / max | z | rank of 201 | power control (20 windows, same passage lengths) |
+|---|---|---|---|---|---|---|
+| pool, seed 1 | 296 / 308 | -1.318 | -1.557 / -1.283 | 2.13 | 4 | **15/20 rank 1 at err 0.15**, z median 2.95 min 1.40 |
+| pool, seed 2 | 296 / 308 | -1.318 | -1.557 / -1.321 | 1.98 | 1 | **5/20 at err 0.24**, z median 1.74 min 0.28 |
+| pool, seed 3 | 296 / 308 | -1.318 | -1.560 / -1.317 | 2.04 | 2 | -- |
+| pool, seed 4 | 296 / 308 | -1.318 | -1.563 / -1.291 | 2.03 | 2 | -- |
+
+**Leave-one-out** (does one run drag the pool down?):
+
+| dropped | signs / letters | real key | z (seeds) | rank of 201 (seeds) | power control, seed 1 |
+|---|---|---|---|---|---|
+| f.144r | 206 / 214 | -1.341 | 1.78; 1.68 | 5; 11 | 16/20 at err 0.11 |
+| **f.168** | 175 / 191 | **-1.262** | 2.48; 2.27; 2.42 | **1; 1; 1** | 8/20 at err 0.17 (z median 2.20 min 0.62) |
+| f.174r | 211 / 211 | -1.348 | 1.63; 1.58 | 10; 12 | 10/20 at err 0.18 |
+
+**Verdict: not licensed, not a negative.** Pooling did not lift the signal: the pooled z (2.0-2.1) is no higher than f.174r's
+alone (1.8-2.1), and the real key sits at rank 1 in only one of four seeds (rank 1-4, about the top 1-2% of shuffled keys).
+At the pooled error the same test puts a known-right key first in 15 of 20 windows, with a median z of 2.95; the target's 2.1
+is inside that range but in its lower quarter, and at the worst run's error (0.24) the power falls to 5/20. So neither "the key
+reads these three runs" nor "it does not" is licensed (rule 3). No per-token grades are claimed (rule 4): every token in
+`harvest/pool/pool_reading.txt` is M at best.
+The leave-one-out says **f.168 (no.85) is the drag**: without it the other two runs reach rank 1 at all three seeds (z 2.3-2.5),
+consistent with f.168's own rank 36. That pair is still not licensed -- its power is 8/20 at its error -- and choosing the pair
+after seeing the scores is a selection the shuffle test does not correct for. It is a pointer, not a result: f.168's 11
+off-sheet signs and its own reading are what to look at next (the value-fit shared with f.139v), and f.144r's 0.24 reader error
+is the other lever. The decisive unit for no.86 remains f.174v (~600 signs, power 20/20 at that length).
+
+Requests: none (disk only). Subagents: none. No credentials.

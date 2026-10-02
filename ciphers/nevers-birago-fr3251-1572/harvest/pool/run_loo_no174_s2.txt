@@ -1,0 +1,13 @@
+f144r.L03	quello__mprima_g
+f144r.L04.1	eobtatnn__perqual
+f144r.L04.2	diquellols__rosa_
+f144r.L05	the_ircbodib__aqualcosmezodiseu_purato
+f144r.L06	pmiudicedi_raginero_
+f168.R02	cheisisafasuanuato_oltoconlorialtezn
+f168.R03	sopfagpafti_solehn
+f168.V01	guantoilpfoce
+f168.V02	deresi__sii_tanto_astidiisaamn
+f168.V03	_ada_osasufefoi_iilifoquello__m
+
+TARGET: 211 signs, 0 nulls, 211 letters; real key -1.3481; 200 shuffled keys mean -1.5405 sd 0.1219 max -1.2737; z 1.58; rank 12 of 201
+POWER CONTROL: skipped (--windows 0)

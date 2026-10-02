@@ -1,0 +1,12 @@
+f144r.L03	quello__mprima_g
+f144r.L04.1	eobtatnn__perqual
+f144r.L04.2	diquellols__rosa_
+f144r.L05	the_ircbodib__aqualcosmezodiseu_purato
+f144r.L06	pmiudicedi_raginero_
+f174r.L01	_ucetpdouipensianuipercont_a
+f174r.L02	etiocheeisiiingualchepetacicaetfoet_i
+f174r.L03	st_etacon__percontosisgounetnodi
+f174r.L04	turino_
+
+TARGET: 175 signs, 0 nulls, 191 letters; real key -1.2620; 200 shuffled keys mean -1.5703 sd 0.1275 max -1.2934; z 2.42; rank 1 of 201
+POWER CONTROL: skipped (--windows 0)
