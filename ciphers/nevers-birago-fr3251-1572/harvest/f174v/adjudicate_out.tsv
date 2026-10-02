@@ -1,0 +1,52 @@
+passage	pos	sign_id	conf	note
+L01	1	T86	L	bar-broken T86 variant (two stems, cut bar); not T78
+L01	3	T45	M	stem with loop at foot
+L01	8	T83	M	
+L02	9	T83	H	
+L02	10	T76	M	q-like head with foot bar
+L02	14	X_NEW	M	c with inner curl and tail; not T92 omega
+L02	17	T90	M	cross on loop with stem
+L02	18	T83	H	
+L03	3	T85	M	plus joined by ligature dash to small o
+L03	4	T88	M	small o after the plus
+L03	21	X_NEW	M	c with inner curl and tail
+L03	27	T90	M	cross atop looped stem
+L04	13	T86	L	bar-broken T86 variant
+L04	14	T11	M	85 digit pair
+L04	17	T83	H	
+L04	25	T83	H	
+L05	7	T50	H	omega with S tail
+L05	19	T13	H	m with tilde and dot
+L05	21	T83	H	
+L05	23	T86	L	bar-broken T86 variant
+L06	4	T13	H	
+L06	9	T83	H	
+L06	11	X_NEW	M	c with inner curl and tail
+L06	27	T90	L	cut at edge; cross-topped stem start
+L07	8	T86	L	bar-broken T86 variant
+L07	15	T15	M	89 digit pair joined
+L07	16	T86	L	bar-broken T86 variant
+L07	17	T11	M	85 digit pair
+L07	24	T83	H	
+L07	26	X_NEW	M	c with inner curl and tail
+L08	17	T13	H	
+L08	19	X_NEW	M	c with inner curl and tail
+L08	23	T50	H	
+L08	25	T90	M	
+L09	20	T15	M	89 pair
+L09	21	NONE	M	the 9 of the 89 pair
+L09	26	T86	L	bar-broken T86 variant
+L10	4	T83	H	
+L10	6	T90	M	
+L10	7	T97	H	curly looped sign
+L10	19	X_NEW	M	c with inner curl and tail
+L10	25	T83	H	
+L10	27	X_NEW	L	c-curl cut at line end
+L11	8	T50	H	
+L11	12	T83	H	
+L11	14	T90	M	
+L11	15	T98	M	stem crosses loop with tick above
+L11	17	T88	M	small plain circle
+L11	19	T15	M	89 pair
+L11	20	X_NEW	M	c with inner curl and tail
+L11	24	T90	M	

@@ -1,12 +1,12 @@
 passage	pos	sign_id	conf	note
-L01	1	?	L	split
+L01	1	T86	L	split+adj
 L01	2	T63	H	
-L01	3	?	L	split
+L01	3	T45	M	split+adj
 L01	4	T27	H	
 L01	5	T19	H	
 L01	6	T81	H	
 L01	7	T37	H	
-L01	8	T83	M	split_H_B
+L01	8	T83	M	split_H_B+adj
 L01	9	T19	H	
 L01	10	T76	H	
 L02	1	T37	H	
@@ -17,16 +17,16 @@ L02	5	T52	H
 L02	6	T53	H	
 L02	7	T25	H	
 L02	8	T85	H	
-L02	9	T83	M	split_H_B
-L02	10	?	L	split
+L02	9	T83	H	split_H_B+adj
+L02	10	T76	M	split+adj
 L02	11	X_NEW	M	
 L02	12	T33	H	
 L02	13	T86	H	
-L02	14	?	L	split
+L02	14	X_NEW	M	split+adj
 L02	15	T53	H	
 L02	16	T37	H	
-L02	17	?	L	split
-L02	18	T83	M	split_H_B
+L02	17	T90	M	split+adj
+L02	18	T83	H	split_H_B+adj
 L02	19	T85	H	
 L02	20	T27	H	
 L02	21	T25	H	
@@ -40,8 +40,8 @@ L02	28	T60	H
 L02	29	T19	H	
 L03	1	T92	H	
 L03	2	T55	H	
-L03	3	?	L	split
-L03	4	?	L	gapB
+L03	3	T85	M	split+adj
+L03	4	T88	M	gapB+adj
 L03	5	T45	H	
 L03	6	T60	H	
 L03	7	T76	H	
@@ -58,13 +58,13 @@ L03	17	T19	H
 L03	18	T37	H	
 L03	19	X_NEW	M	
 L03	20	T85	H	
-L03	21	?	L	split
+L03	21	X_NEW	M	split+adj
 L03	22	T53	H	
 L03	23	T37	H	
 L03	24	T76	H	
 L03	25	T10	H	
 L03	26	T85	H	
-L03	27	?	L	split
+L03	27	T90	M	split+adj
 L03	28	T86	H	
 L04	1	T42	H	
 L04	2	T25	H	
@@ -78,11 +78,11 @@ L04	9	T17	H
 L04	10	T80	H	
 L04	11	T60	H	
 L04	12	T96	H	
-L04	13	?	L	split
-L04	14	?	L	split
+L04	13	T86	L	split+adj
+L04	14	T11	M	split+adj
 L04	15	T60	H	
 L04	16	T45	H	
-L04	17	T83	M	split_H_B
+L04	17	T83	H	split_H_B+adj
 L04	18	T86	H	
 L04	19	T98	H	
 L04	20	T53	H	
@@ -90,7 +90,7 @@ L04	21	T37	H
 L04	22	T76	H	
 L04	23	T19	H	
 L04	24	T53	H	
-L04	25	T83	M	split_H_B
+L04	25	T83	H	split_H_B+adj
 L04	26	T37	H	
 L04	27	T33	H	
 L04	28	T85	H	
@@ -100,7 +100,7 @@ L05	3	T25	H
 L05	4	T37	H	
 L05	5	T53	H	
 L05	6	T96	H	
-L05	7	T50	M	split_H_A
+L05	7	T50	H	split_H_A+adj
 L05	8	T19	H	
 L05	9	T60	H	
 L05	10	T53	H	
@@ -112,11 +112,11 @@ L05	15	T58	H
 L05	16	T85	H	
 L05	17	T36	H	
 L05	18	T19	H	
-L05	19	?	L	split
+L05	19	T13	H	split+adj
 L05	20	T86	H	
-L05	21	T83	M	split_H_B
+L05	21	T83	H	split_H_B+adj
 L05	22	T37	H	
-L05	23	?	L	split
+L05	23	T86	L	split+adj
 L05	24	X_NEW	M	
 L05	25	X_NEW	M	
 L05	26	T70	H	
@@ -124,14 +124,14 @@ L05	27	T96	H
 L06	1	T53	H	
 L06	2	T85	H	
 L06	3	T37	H	
-L06	4	?	L	split
+L06	4	T13	H	split+adj
 L06	5	T86	H	
 L06	6	T85	H	
 L06	7	T65	H	
 L06	8	T53	H	
-L06	9	T83	M	split_H_B
+L06	9	T83	H	split_H_B+adj
 L06	10	T45	H	
-L06	11	?	L	split
+L06	11	X_NEW	M	split+adj
 L06	12	T49	H	
 L06	13	T45	H	
 L06	14	T88	H	
@@ -147,7 +147,7 @@ L06	23	T76	H
 L06	24	T88	H	
 L06	25	T19	H	
 L06	26	T54	H	
-L06	27	?	L	split
+L06	27	T90	L	split+adj
 L07	1	T65	H	
 L07	2	T96	H	
 L07	3	T81	H	
@@ -155,25 +155,25 @@ L07	4	T96	H
 L07	5	T58	H	
 L07	6	T45	H	
 L07	7	X_NEW	M	
-L07	8	?	L	split
+L07	8	T86	L	split+adj
 L07	9	T17	H	
 L07	10	T45	H	
 L07	11	T76	H	
 L07	12	T19	H	
 L07	13	T65	H	
 L07	14	T80	H	
-L07	15	?	L	split
-L07	16	T76	M	split_H_B
-L07	17	?	L	split
+L07	15	T15	M	split+adj
+L07	16	T86	L	split_H_B+adj
+L07	17	T11	M	split+adj
 L07	18	X_NEW	M	
 L07	19	T98	H	
 L07	20	T19	H	
 L07	21	T60	H	
 L07	22	T55	H	
 L07	23	T53	H	
-L07	24	T83	M	split_H_B
+L07	24	T83	H	split_H_B+adj
 L07	25	T96	H	
-L07	26	?	L	split
+L07	26	X_NEW	M	split+adj
 L07	27	T53	H	
 L08	1	T57	H	
 L08	2	T80	H	
@@ -191,15 +191,15 @@ L08	13	T96	H
 L08	14	T55	H	
 L08	15	T63	H	
 L08	16	T45	H	
-L08	17	?	L	split
+L08	17	T13	H	split+adj
 L08	18	T96	H	
-L08	19	?	L	split
+L08	19	X_NEW	M	split+adj
 L08	20	T33	H	
 L08	21	T19	H	
 L08	22	T96	H	
-L08	23	T50	M	split_H_A
+L08	23	T50	H	split_H_A+adj
 L08	24	T85	H	
-L08	25	?	L	split
+L08	25	T90	M	split+adj
 L08	26	T80	H	
 L08	27	T53	H	
 L08	28	T85	H	
@@ -222,22 +222,21 @@ L09	16	T98	H
 L09	17	T55	H	
 L09	18	T60	H	
 L09	19	T19	H	
-L09	20	?	L	split
-L09	21	?	L	gapA
-L09	22	T64	H	
-L09	23	T85	H	
-L09	24	T60	H	
-L09	25	T55	H	
-L09	26	T86	M	split_H_A
-L09	27	T54	H	
-L09	28	X_NEW	M	
+L09	20	T15	M	split+adj
+L09	21	T64	H	
+L09	22	T85	H	
+L09	23	T60	H	
+L09	24	T55	H	
+L09	25	T86	L	split_H_A+adj
+L09	26	T54	H	
+L09	27	X_NEW	M	
 L10	1	T76	H	
 L10	2	T80	H	
 L10	3	T45	H	
-L10	4	T83	M	split_H_B
+L10	4	T83	H	split_H_B+adj
 L10	5	T37	H	
-L10	6	?	L	split
-L10	7	T97	M	split_H_A
+L10	6	T90	M	split+adj
+L10	7	T97	H	split_H_A+adj
 L10	8	T37	H	
 L10	9	T27	H	
 L10	10	T25	H	
@@ -249,15 +248,15 @@ L10	15	T65	H
 L10	16	T86	H	
 L10	17	T36	H	
 L10	18	T55	H	
-L10	19	?	L	split
+L10	19	X_NEW	M	split+adj
 L10	20	T86	H	
 L10	21	T89	H	
 L10	22	T58	H	
 L10	23	T33	H	
 L10	24	T25	H	
-L10	25	T83	M	split_H_B
+L10	25	T83	H	split_H_B+adj
 L10	26	T86	H	
-L10	27	?	L	split
+L10	27	X_NEW	L	split+adj
 L11	1	T18	H	
 L11	2	T19	H	
 L11	3	T17	H	
@@ -265,23 +264,23 @@ L11	4	T86	H
 L11	5	T98	H	
 L11	6	T53	H	
 L11	7	T25	H	
-L11	8	T50	M	split_H_A
+L11	8	T50	H	split_H_A+adj
 L11	9	T55	H	
 L11	10	T58	H	
 L11	11	T19	H	
-L11	12	T83	M	split_H_B
+L11	12	T83	H	split_H_B+adj
 L11	13	T19	H	
-L11	14	?	L	split
-L11	15	?	L	split
+L11	14	T90	M	split+adj
+L11	15	T98	M	split+adj
 L11	16	T86	H	
-L11	17	T88	M	split_H_B
+L11	17	T88	M	split_H_B+adj
 L11	18	T96	H	
-L11	19	?	L	split
-L11	20	T76	M	split_H_B
+L11	19	T15	M	split+adj
+L11	20	X_NEW	M	split_H_B+adj
 L11	21	T55	H	
 L11	22	T76	H	
 L11	23	T52	H	
-L11	24	?	L	split
+L11	24	T90	M	split+adj
 L11	25	T19	H	
 L11	26	T96	H	
 L11	27	T33	H	

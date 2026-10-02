@@ -1,58 +1,7 @@
 passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
-L01	1	1	T78	M	1	X_NEW	M	split	prose before: figliolo	crossed stroke with tick (+ with bar); prose before: figliolo
 L01					2	T55	L	gapA		
-L01	3	3	T45	M	4	X_NEW	M	split		delta/6 shape with loop
-L01	8	8	T29	M	9	T83	H	split_H_B		
-L02	9	9	T29	M	9	T83	H	split_H_B		
-L02	10	10	T26	H	10	T76	H	split		
-L02	14	14	T92	M	14	X_NEW	M	split		c with curl (looped c/e)
-L02	17	17	T90	M	17	X_NEW	M	split		-|- crossed bar group
-L02	18	18	T29	M	18	T83	H	split_H_B		
-L03	3	3	T85	M	3	X_NEW	M	split		+ joined to small o
-L03	4	4	T88	H				gapB		
-L03	21	21	T92	M	20	X_NEW	M	split		c with curl (looped c/e)
-L03	27	27	T90	M	26	X_NEW	M	split		circle/b with stem and crossbar
-L04	13	13	T78	M	13	X_NEW	M	split		-|-
-L04	14	14	T11	M	14	X_NEW	M	split		digit 8
 L04					15	X_S	M	gapA		plain s
-L04	17	17	T29	M	18	T83	H	split_H_B		
-L04	25	25	T29	M	26	T83	H	split_H_B		
-L05	7	7	T50	H	7	X_NEW	M	split_H_A		omega with hooked s tail
-L05	19	19	T13	H	19	T64	H	split		
-L05	21	21	T29	M	21	T83	H	split_H_B		
-L05	23	23	T78	M	23	X_NEW	M	split		-|- crossed bar group
-L06	4	4	T13	H	4	T64	H	split		
-L06	9	9	T29	M	9	T83	H	split_H_B		
-L06	11	11	T92	M	11	X_NEW	M	split		c with curl (looped c/e)
-L06	27	27	T90	M	27	X_NEW	M	split	line end	partial cut sign at edge; line end
-L07	8	8	T78	M	8	X_NEW	M	split		-|- crossed bar group
-L07	15	15	T15	M	15	X_NEW	M	split		digit 8
-L07	16	16	T78	M	16	T76	H	split_H_B		
-L07	17	17	T11	M	17	X_NEW	M	split		-|- crossed bar group
 L07					19	X_S	M	gapA		plain s
 L07					20	X_NEW	M	gapA		M with f tail
-L07	24	24	T29	M	26	T83	H	split_H_B		
-L07	26	26	T92	M	28	X_NEW	M	split		c with curl (looped c/e)
-L08	17	17	T13	H	17	T64	H	split		
-L08	19	19	T92	M	19	X_NEW	M	split		c with curl (looped c/e)
-L08	23	23	T50	H	23	X_NEW	M	split_H_A		omega with hooked s tail
-L08	25	25	T90	M	25	X_NEW	M	split		circle/b with stem and crossbar
 L08		29	?	L				gapB	line end (cut at crop edge/margin)	
-L09	20	20	T15	M	20	X_NEW	M	split		digit 8
-L09	21				21	T76	H	gapA		
-L09	26	25	T86	H	26	X_NEW	M	split_H_A		-|- crossed bar group
-L10	4	4	T29	M	4	T83	H	split_H_B		
-L10	6	6	T90	M	6	X_NEW	M	split		circle/b with stem and crossbar
-L10	7	7	T97	H	7	X_NEW	M	split_H_A		curly 8-like looped sign
-L10	19	19	T92	M	19	X_NEW	M	split		c with curl (looped c/e)
-L10	25	25	T29	M	25	T83	H	split_H_B		
-L10	27	27	T92	M	27	X_NEW	M	split	line end (cut at crop edge/margin)	c with curl (looped c/e); line end
-L11	8	8	T50	H	8	X_NEW	M	split_H_A		omega with hooked s tail
-L11	12	12	T29	M	12	T83	H	split_H_B		
-L11	14	14	T90	M	14	X_NEW	M	split		circle/b with stem and crossbar
-L11	15	15	T98	H	15	T18	H	split		
-L11	17	17	T36	M	17	T88	H	split_H_B		
-L11	19	19	T15	M	19	X_NEW	M	split		digit 8
-L11	20	20	T92	M	20	T76	H	split_H_B		
 L11					21	X_NEW	M	gapA		c with curl (looped c/e)
-L11	24	24	T90	M	25	X_NEW	M	split		circle/b with stem and crossbar
