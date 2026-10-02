@@ -1,0 +1,4 @@
+A zeros aligned to B: 95 (P 39, F 50, other 6)
+B reads 8 at: P 0.897 (35/39), F 0.080 (4/50), other 0.167 (1/6)
+table (class, B reading): F/0 46, F/8 4, O/0 4, O/6 1, O/8 1, P/0 3, P/8 35, P/9 1
+statistic P-share minus F-share 0.817; shuffled P/F labels x10000: mean 0.001 p95 0.178 max 0.452; p(>=obs) 0.0000
