@@ -175,3 +175,53 @@ Read so far: unmeasured. No ciphertext.txt, ciphertext.tsv or key.tsv exists. Th
 - [ ] image-check: not done. No sign-by-sign transcription exists. The crops f4_top.jpg/f4_mid.jpg cited in Cheap test 1 are not on disk, and no iiif_lines.py output was pasted. The doubtful tokens "6d", "bb" and "96" in the f.4 runs, and the 625/774/775 "section counter" exclusion, need re-reading against the native image. Planned: as gap 1, ~$11.
 - [ ] retry: nothing to retry yet, because no key extension exists. Planned: after the gloss read and the key-rebuild, rerun every code group and every M lead through decode_key.py and regrade per token.
 Verdict: keep going: 4 internal gaps; cheapest next: first the check-solved open-web and blog-comment step that the intake gate requires (check-solved.md steps (a)-(c), not yet run; A2-HDK 2 Oct 2026 found it missing, ~$0.5) and its adversarial Premise check (~$0.5), then the known-keys and sibling check (fetch HCPortal key 255 and the Arcinsys image of HStAM 4 d Nr. 1235 / DECODE 4692, open the digitised Dänemark 131, compare code ranges), ~$2; the step that moves the reading is the 3-page transcription and gloss pass, ~$11
+
+## Web and blog check (GF-A2-1, 2 Oct 2026)
+
+Run 2 Oct 2026, 21:25-21:31 UTC, by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+1. `Lyncker Vultejus Hamburg 1672 Chiffre Dänemark Hessen-Kassel Brief` (sender + recipient + date) -- hits: Rijksmuseum
+   portraits of Hermann Vultejus, books2ebooks records for N. C. Lyncker's later treatises (1686, 1692), museum-digital and
+   Halle opendata portrait records. Nothing on the 1672 letter.
+2. `"Dänemark Nr. 125" OR "4 f Dänemark" Marburg Chiffre OR verschlüsselt 1672` (shelfmark + cipher) -- hits: TNA blog
+   "secret diplomatic message deciphered after 350 years" (an English item, not this one), HistoCrypt papers 392/152/704,
+   Heidelberg EIP documents, Tartu dspace, sale listings; no hit names this shelfmark.
+3. `hcportal 494 hstam Daenemark 1672 nomenclator partially solved` (record + title) -- no relevant hit (philatelic and EU
+   document pages); the HCPortal record itself was read live on 26 Sept 2026 (Search log item 4: no reader, key or note).
+4. `"Hesse-Kassel" Denmark 1672 letter enciphered passages decipherment` (folder's descriptive title) -- hits: Cipherbrain
+   "Solved: The encrypted letter from Carl von Rabenhaupt" (1646, a different Marburg item, already logged at intake item 3),
+   HistoCrypt 152 (Rabenhaupt; abstract read: no 1672/Dänemark/Lyncker/HCPortal 494 mention), Waldispühl's Heusner von
+   Wandersleben 1637 paper (dspace.ut.ee 253c0934, PDF fetched, grepped for 1672/Dänemark/Lyncker/Vultejus/494: 0 hits),
+   HistoCrypt 402, a Cristin record.
+No decoded phrase searched in quotes: only one value (601 = "Dennemarck") is read, no running text exists.
+Blog site searches: **Cipherbrain** (`site:scienceblogs.de klausis-krypto-kolumne Hessen Kassel Dänemark 1672 OR Marburg
+Staatsarchiv verschlüsselt`) -- monthly archives, author/category pages and "Unsolved cryptograms from the Thirty Years War
+(2)" (2018; 1618-48, outside 1672); the one Marburg post found is the Rabenhaupt solution (1646); **Cryptiana blog**
+(`site:cryptiana.blogspot.com Hesse OR Hessen OR Denmark 1672 cipher`) -- no blogspot hit (HistoCrypt 705 "On the
+Combination of Cryptography and Steganography in 17th Century Germany", Tartu items, TNA catalogue entries); Tomokiyo's pages
+on disk were grepped at intake (item 3: only Rabenhaupt 1646 and a 1637-41 Habsburg mention); **Cipher Mysteries**
+(`site:ciphermysteries.com Hesse-Kassel OR Marburg OR Denmark 1672 cipher letter`) -- no ciphermysteries.com hit at all.
+No comment thread found carries a decipherment or plaintext of HStAM 4 f Dänemark Nr. 125; the Rabenhaupt post's thread is
+about the 1646 letter.
+Requests: ecp.ep.liu.se 1, dspace.ut.ee 1, search engine 8.
+
+## Premise check (GF-A2-1, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found (known): the letter's own glossing, partial.** The bold interlinear
+and marginal glosses on ff.2-4 (images 0002-0004) are a decipherment of part of this letter (601 = "Dennemarck" 3x; 229
+"Berlin", 651 by "Cur Brandenburg", 427 641 "herzog von Ploen", a marginal gloss beside the first dense f.4 run; Cheap test 1
+and Remaining gaps). They are not complete: many groups, incl. most of the two dense f.4 runs, carry none on the previews, and
+whether the glossing hand is period or modern is unsettled. HCPortal 494's "Partially solved" is unattributed (no reader,
+note or key). So: a partial period-or-later decipherment sits on the leaves themselves; the item is not shown found-solved,
+but every glossed group is a C-grade value once the gloss hand is settled (the Verdict's clear-pages step).
+(b) Other solvers' working files -- **found, nothing beyond a catalogue line.** Shallow clone of dbourdeau/cyphersolver
+(2 Oct 2026, 21:16 UTC): CATALOGUE.md row 341 and `research/oldest/scan_2026-09-23/hard_targets.md` item 12 ("HCPortal partial
+solution only (details on the record); no publication found ... Not in repo"); `targets/` holds hesse1603 and hesse1824
+(other items), no folder, rendering or key for Nr. 125. aaymeloglu/unsolved-ciphers: grep for Hessen/Hesse/Dänemark/Marburg
+pairings, 0 hits on this item (cited only).
+(c) Physical neighbours -- **checked, not found.** Nr. 125 is complete at 6 Arcinsys images (NEXT-HDK): 0001 modern cover,
+0002-0004 the letter, 0005 the endorsed verso (no cipher, no clear copy, no slip), 0006 an unrelated 1738 print. No clear
+copy or separate decipherment is bound in the file. The digitised neighbour Dänemark 131 (1671-74) is unopened.
+(d) Recipient side -- **not found.** The recipient is the Hessian chancellor Vultejus at Kassel; no edition of his incoming
+correspondence or of the Hessian chancery's 1672 Danish files was located (search 1; OpenAlex/S2 at intake, 0 hits).
+Danish-side editions were not searched: the letter went from a Hessian envoy at Hamburg to Kassel, so a Danish edition would
+not hold the recipient's copy.
