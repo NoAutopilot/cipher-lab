@@ -339,20 +339,95 @@ Requests this job: gallica.bnf.fr 2 (IIIF region of canvas 101, one superseded b
 shallow clone (dbourdeau/cyphersolver, scratch, not committed beyond the credited ct2 copy). Subagents: 2 Sonnet calls
 (passes A and B); reconciliation by this worker (6 positions).
 
+## f.119 + f.100r: pre-registered crib drag (BIRAGO-NUM2, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-birago-num2.md`. Files in `num/crib/`. The rules (cribs, where to drag, score,
+null, accept threshold, power control) were written and pushed in `num/crib/PREREG.md` (commit e8633359) before any crib
+was scored. Prior work cited: Bourdeau's f.119 transcription (cyphersolver `targets/birago`, MIT / CC BY 4.0), as in
+BIRAGO-NUM.
+
+**Method** (`num/crib/crib_drag.py`). Twelve cribs (carmagnola, bellagarda, bellegarda, ualletta, sauoia, turino, duca,
+regina, ugonotti, centurione, maresciale, maesta; v->u) were dragged over every pair offset of the pooled phase.py stream
+(both letters together, 61 runs, 473 pairs). A placement is admissible when no code stands for two letters. Each
+placement was scored by applying its induced key to both letters: the sum of it16dip bigram PMI over every adjacent pair
+elsewhere whose two codes it fixes. The statistic is the best placement's score. The null is the same statistic over 200
+streams with the pair tokens permuted (run structure kept). A placement is accepted only if it beats all 200.
+
+**Power control first** (rule 3; `num/crib/control_power.txt`). Synthetic it16dip text, 476 pairs, one homophonic key,
+5% stray digits, phased by the same `phase.em`, crib inserted, 10 trials, 100 permutations:
+
+| cells | copies | carmagnola (10) | ualletta (8) | turino (6) | duca (4) | maresciale / centurione / bellagarda (10) |
+|---|---|---|---|---|---|---|
+| 40 | 1 | accepted 3/10 | 0/10 | 0/10 | 0/10 | 0, 0, 0 /10 (wrong placement accepted 1, 1, 1) |
+| 40 | 2 | 5/10 | 0/10 | 1/10 | 0/10 | - |
+| 30 | 1 | 4/10 | 0/10 | 1/10 | 0/10 | - |
+| 30 | 2 | 4/10 | 1/10 | 2/10 | 0/10 | - |
+| 55 | 1 | 0/10 (wrong 1) | - | - | - | 0, 1, 1 /10 (wrong 1, 0, 2) |
+
+Reading of the control: a 10-letter crib that sits in the text intact is accepted 0-50% of the time. A crib of 8 letters
+or fewer is accepted 0-20% of the time (duca never). A *wrong* placement passes the accept rule in about 1 trial in 10,
+far above the nominal p < 1/201. The cause is that permuting the tokens strips the stream's language structure, so any
+placement onto a language-bearing stream beats the null somewhat. In this design the accept rule is weak and
+anti-conservative. This applies to the pre-registered rule as written. It is recorded here, not used to rewrite the rule after the fact.
+
+**Target** (`num/crib/crib_target.tsv`, 200 permutations, seed 20261002):
+
+| crib | admissible | real max | null p95 | null max | p | accept |
+|---|---|---|---|---|---|---|
+| carmagnola | 56 | 5.08 | 6.63 | 10.09 | 0.080 | no |
+| bellagarda | 55 | 4.83 | 13.22 | 19.52 | 0.677 | no |
+| bellegarda | 56 | 6.44 | 13.39 | 22.37 | 0.537 | no |
+| ualletta | 107 | 7.18 | 10.81 | 16.54 | 0.532 | no |
+| sauoia | 182 | 3.31 | 6.65 | 7.73 | 0.602 | no |
+| turino | 173 | 5.95 | 6.17 | 8.90 | 0.070 | no |
+| duca | 284 | 2.39 | 2.55 | 3.85 | 0.080 | no |
+| regina | 173 | 7.19 | 8.18 | 10.74 | 0.119 | no |
+| ugonotti | 101 | 5.97 | 9.18 | 11.45 | 0.348 | no |
+| centurione | 55 | 4.14 | 4.37 | 10.13 | 0.070 | no |
+| maresciale | 55 | 5.76 | 5.79 | 9.55 | 0.055 | no |
+| maesta | 182 | 10.09 | 7.31 | 8.90 | 0.005 | **yes (pre-registered rule)** |
+
+The one accept, *maesta* at run 52 token 1 (15=m 19=a 43=e 48=a 90=s 94=t), does not survive a post-hoc decoy check
+(`num/crib/decoy.py`, `decoy_out.txt`; not part of PREREG's rule, reported as a qualifier). 300 random six-letter it16dip
+words dragged the same way reach maesta's score 17 times (5.7%). Run 52 tokens 0-2 is the best placement for 35 of the 300
+decoys, and also for regina and bellagarda on the target. It is a hot spot: the two most frequent codes, 15 and 19, sit
+beside frequent neighbours, so any word there scores well. That fits the control's 1-in-10 wrong-placement rate. With 12
+cribs, about one wrong accept was expected. **No pair value is crib-backed.** No key file was written (writing one at
+grade S would over-claim). The six values maesta would fix are below the 8 needed for step 2, so the joint anneal was
+**not run** (brief step 2).
+
+**Verdict: no reading; the crib route is a weak test in this design, not a negative.** The cribs may still be in the
+text. The control says a 10-letter name in the text is missed 50-100% of the time and a short word almost always. There
+is also a premise risk the control cannot cover. In Birago's 1572 key the names are single word codes ("85 carmagnola,
+86 turino, 89 bugonotti", f.117r design check above). If the Nov 1571 key works the same way, the names sit in the dotted
+two-figure groups (41 x6 in f.100r and x2 in f.119; 25, 21, 18, 10, 19), not spelled out in the letter stream, and no
+spelled crib can find them.
+
+**Design note (what would settle it).** (1) The joint phase+key anneal named by BIRAGO-NUM, run without crib seeds. Each
+run's cut points are resampled under the key's current score, with stray digits as nulls. Its own control at N=476, 40-55
+cells and 5% strays comes first. The family's fixed-phase control already falls to 0.249 at 0.25 phase noise, so the gain
+has to come from resampling the phase. ~$6. (2) A crib test that does not use a permutation null. The null should be
+decoy words of the same length dragged over the *real* stream, as in `decoy.py`. Several name cribs should be required to
+agree on shared codes (joint consistency), and the test calibrated on the same synthetic set. ~$2, disk only. (3) Treat
+the dotted groups as nomenclator codes. Their positions against the clear text around each run (f.100r L01 "harebbe a caro
+76÷4005...") are the cheapest contextual crib. Dotted 41 recurs in both letters and is the likeliest name or title.
+
+Cost and requests: disk only, no network, no subagents. Novelty not classified (rule 10).
+
 ## Remaining gaps (NEVBIR-3252-B, 2 Oct 2026)
 Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 277 signs decoded, all M/U, not licensed; f.47r: 157 signs tested, not licensed.
 - f.117r reader error 0.25 - blocker: not-attempted; no third reader this job (rate limit allowed_warning); next: look-alike pass on the T60/T86, T83/T81, T95/T51/T65, T90/T45 tiles using the 1572 confusion map, or a blind third reader, then re-run harvest/f117/run_tests.sh at the new error, ~$3
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
 - f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; re-cut done (images/f47/recut, 17 lines x 3); next: two blind passes in 3-4 line chunks + reconciliation against the Ceppo sheet with the CEPPO-SPLITS shapes as known answer, then re-run decode_control on the whole block, ~$10
 - f.47r reader error 0.44 - blocker: not-attempted; sheet lacks three forms the readers saw; next: add the barred 8 / dot-group / plain-triangle forms to the sheet before the next passes, ~$2
-- f.100r (565 digits, transcribed 2 Oct 2026, same key as f.119, controlled) - blocker: not-attempted; pooled homophonic run is a non-test at the target's phase error (control 0.249 at noise 0.25, BIRAGO-NUM section); next: joint phase+key anneal with its own control at N=476, 40-60 cells, 5-10% strays, or a crib-constrained run from the clear-text names, ~$6
+- f.100r + f.119 (565 + 483 digits, same key, controlled) - blocker: not-attempted; fixed-phase homophonic run a non-test at the phase error (BIRAGO-NUM), pre-registered crib drag weak by its own control and its one accept void by decoys (BIRAGO-NUM2, num/crib/); next: joint phase+key anneal with its own control at N=476, 40-55 cells, 5% strays, ~$6
 
 ## Escalation (NEVBIR-3252-B, 2 Oct 2026)
 - [x] siblings: fr.3252 f.36-37 witness and the fr.3251 1572 group's sheet, maps, clerk key and controls used
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested: French, z 2.8-3.1, not licensed at 0.25), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; next joint phase+key anneal)
+- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; BIRAGO-NUM2: crib drag weak by control, no crib-backed value; next joint phase+key anneal)
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r at lower reader error; f.47r whole block
 Verdict: keep going: 5 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3

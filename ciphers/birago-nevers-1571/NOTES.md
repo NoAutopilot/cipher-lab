@@ -94,3 +94,18 @@ folder); decode file `families/homophonic-1-profile=target-it16dip.txt` (not a r
   -0.959); control with 0.25 noise (the segmentation's probable error at this K) 0.249, below gate. A non-test, not a
   negative. Next: joint phase+key anneal controlled at N=476, or a crib from the clear-text names.
 Status unchanged (`open`): no reading, no token graded. Novelty not classified (rule 10).
+
+## Pre-registered crib drag, pooled with f.100r (BIRAGO-NUM2, 2 Oct 2026)
+
+Full record: `../birago-fr3252-1571-72/NOTES.md`, section "f.119 + f.100r: pre-registered crib drag"; files in
+`../birago-fr3252-1571-72/num/crib/` (PREREG.md pushed before scoring, commit e8633359). Summary:
+- 12 name/title cribs (carmagnola, bellagarda/bellegarda, ualletta, sauoia, turino, duca, regina, ugonotti, centurione,
+  maresciale, maesta) dragged over the pooled 473-pair stream; score = bigram PMI of the induced key elsewhere in both
+  letters; null = 200 token permutations.
+- Power control (synthetic, 476 pairs, 30-55 cells, 5% strays): a 10-letter crib present is accepted 0-50% of the time,
+  short cribs 0-20%, and a wrong placement passes in about 1 trial in 10: weak and anti-conservative.
+- Target: 11 of 12 not accepted; maesta accepted by the pre-registered rule (p 0.005) at a hot spot (codes 15, 19) where
+  5.7% of 300 random six-letter decoy words score as high, so it is void. No crib-backed pair value; fewer than 8 types,
+  so the joint anneal (step 2) was not run.
+- Premise risk: in Birago's 1572 key names are single word codes; here they may sit in the dotted two-figure groups.
+Status unchanged (`open`): no reading, no token graded. Novelty not classified (rule 10).

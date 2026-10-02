@@ -1,0 +1,1 @@
+decoys 300; real max >= 10.09 (maesta): 17; best placement at run 52 pos 0-2: 35; top spots [((44, 15), 24), ((44, 18), 22), ((52, 1), 18), ((44, 14), 14), ((52, 0), 14)]

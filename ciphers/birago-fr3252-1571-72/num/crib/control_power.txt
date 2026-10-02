@@ -1,0 +1,24 @@
+control ncell=40 copies=1 crib=carmagnola L=10: crib intact after phasing 4/10, top-scoring 3/10, accepted 3/10
+control ncell=40 copies=1 crib=ualletta L=8: crib intact after phasing 5/10, top-scoring 0/10, accepted 0/10
+control ncell=40 copies=1 crib=turino L=6: crib intact after phasing 6/10, top-scoring 0/10, accepted 0/10
+control ncell=40 copies=1 crib=duca L=4: crib intact after phasing 9/10, top-scoring 0/10, accepted 0/10
+control ncell=40 copies=2 crib=carmagnola L=10: crib intact after phasing 9/10, top-scoring 5/10, accepted 5/10
+control ncell=40 copies=2 crib=ualletta L=8: crib intact after phasing 10/10, top-scoring 1/10, accepted 0/10
+control ncell=40 copies=2 crib=turino L=6: crib intact after phasing 7/10, top-scoring 3/10, accepted 1/10
+control ncell=40 copies=2 crib=duca L=4: crib intact after phasing 10/10, top-scoring 0/10, accepted 0/10
+control ncell=30 copies=1 crib=carmagnola L=10: crib intact after phasing 4/10, top-scoring 4/10, accepted 4/10
+control ncell=30 copies=1 crib=ualletta L=8: crib intact after phasing 4/10, top-scoring 0/10, accepted 0/10
+control ncell=30 copies=1 crib=turino L=6: crib intact after phasing 5/10, top-scoring 1/10, accepted 1/10
+control ncell=30 copies=1 crib=duca L=4: crib intact after phasing 8/10, top-scoring 0/10, accepted 0/10
+control ncell=30 copies=2 crib=carmagnola L=10: crib intact after phasing 5/10, top-scoring 4/10, accepted 4/10
+control ncell=30 copies=2 crib=ualletta L=8: crib intact after phasing 9/10, top-scoring 4/10, accepted 1/10
+control ncell=30 copies=2 crib=turino L=6: crib intact after phasing 7/10, top-scoring 4/10, accepted 2/10
+control ncell=30 copies=2 crib=duca L=4: crib intact after phasing 10/10, top-scoring 1/10, accepted 0/10
+control ncell=55 copies=1 crib=carmagnola L=10: crib intact after phasing 5/10, top-scoring 2/10, accepted 0/10, wrong placement accepted 1/10
+control ncell=55 copies=1 crib=maresciale L=10: crib intact after phasing 3/10, top-scoring 1/10, accepted 0/10, wrong placement accepted 1/10
+control ncell=55 copies=1 crib=centurione L=10: crib intact after phasing 4/10, top-scoring 2/10, accepted 1/10, wrong placement accepted 0/10
+control ncell=55 copies=1 crib=bellagarda L=10: crib intact after phasing 3/10, top-scoring 1/10, accepted 1/10, wrong placement accepted 2/10
+control ncell=40 copies=1 crib=maresciale L=10: crib intact after phasing 3/10, top-scoring 2/10, accepted 0/10, wrong placement accepted 1/10
+control ncell=40 copies=1 crib=centurione L=10: crib intact after phasing 1/10, top-scoring 1/10, accepted 0/10, wrong placement accepted 1/10
+control ncell=40 copies=1 crib=bellagarda L=10: crib intact after phasing 5/10, top-scoring 2/10, accepted 0/10, wrong placement accepted 1/10
+control ncell=40 copies=1 crib=ugonotti L=8: crib intact after phasing 4/10, top-scoring 1/10, accepted 0/10, wrong placement accepted 0/10
