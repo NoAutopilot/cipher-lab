@@ -891,3 +891,55 @@ citing the f.185v fragment as tested.
 SECOND-OPINIONS-QUEUE.tsv: no duplicate row. `SO-NEVBIR-F184` (queued, unanswered) is the letter-level row; its prompt
 `second-opinions/PROMPT-chatgpt-f184.md` now names the 185B fragments and says the f.185v run is untested on its own (rule 10
 propagation). This follows AUDIT2-NEVBIR's precedent for the 330-sign portion.
+
+---
+
+# Second audit (AUDIT2-NEVBIR-90R, 2 Oct 2026): no.90 f.185r L10-25, 392 signs
+
+Verifier: worker AUDIT2-NEVBIR-90R (for the account-3 orchestrator), a session separate from the solvers (NEVBIR-184,
+NEVBIR-185, NEVBIR-185B) and from every earlier verifier on no.90 (VERIFY-NEVBIR-184, AUDIT2-NEVBIR, VERIFY-NEVBIR-90REST).
+Brief `.claude/briefs/runs/2026-10-02-acct3-audit2-nevbir-90r.md`. Clock read with `date -u` at 21:50 UTC. Nothing was decoded;
+the transcription, reading and grades are the solvers' as audited by VERIFY-NEVBIR-90REST (S 275 M 83 U 34 for this portion).
+
+**Claim under audit:** VERIFY-NEVBIR-90REST's N4 for f.185r L10-12 and L15-25 (392 signs, NEVBIR-185B), read under Tomokiyo's
+published 1572 key; its first audit. Task: try to find this portion's plaintext or a decipherment of it in print.
+
+## Search log (2 Oct 2026, this session)
+
+Phrases taken from `harvest/gloss_no90.md` (f185r L10-L25 entries), spelling as decoded, word division ours. Files:
+`harvest/no90/audit2/` (phrases, sources, print-check.tsv, Gallica ContentSearch XML).
+
+| family | searched | result |
+|---|---|---|
+| (c), (e) `tools/print_check.py` | 8 phrases: "credo pensi al governo", "intendere a la regina", "depende da la casa", "casa di memoransi", "casa di momoransi", "confusioni e difficulta", "il tutto e pregiuditio", "con ogni suo potere", each through IA full text (all items), Google Books (keyed, `country=US`), OpenAlex (keyed), Semantic Scholar (keyed); plus OpenAlex `Birago Nevers Montmorency 1572` and CrossRef `Lodovico Birago Nevers Saluzzo 1572` (36 rows) | no row carries this letter. "intendere a la regina": *Codice Aragonese* (1868) and *Giornale ligustico*, 15th-century texts. "casa di Momoransi/Memoransi": Davila's *Guerre civili*, Tommaseo's *Relations des ambassadeurs vénitiens*, Mattei 1637, *Acta nuntiaturae Gallicae* (1970), Druffel's *Briefe und Acten* (1874), all narrative or other letters. "credo pensi al governo", "confusioni e difficulta", "con ogni suo potere": loose matches only (parliamentary records, modern legal and scientific papers). "depende da la casa", "il tutto e pregiuditio": no relevant hit. OpenAlex keyword: one 2013 paper on Montmorency's funeral orations. CrossRef: other Biragos (Diop, Giampietrino) |
+| (e) Google Books, ANDed (keyed, `country=US`) | `"casa di Momoransi" Birago` (15), `"intendere alla Regina" Birago Saluzzo` (11), `"governo di Turino" 1572` (39), `Birago Saluzzo 1572 Montmorency Carmagnola ugonotti` (0), `"Lodovico Birago" Montmorency 1572` (4) | top 6 read each: *Historiae Patriae Monumenta* (1840, a chronicle mentioning a Birago in another context), Tommaseo's *Relations* (1838), Sclopis *Stati generali* (1851, a duke of Savoy letter of 30 Sept 1572 from Turin, not Birago's), the Salviati nunciature (*Correspondance du nonce en France, Antonio Maria Salviati*, 1975, the nuncio's own despatches), the 1874 BnF catalogue. None prints Birago's 2 Oct 1572 letter |
+| (e) IA full text, ANDed (be-api fts) | `"casa di Momoransi" Saluzzo` (10: Davila editions, Albèri *Relazioni*), `Birago "governo di Turino"` (0), `"intendere alla regina" Birago` (10) | the one hit carrying both words, *Bollettino storico-bibliografico subalpino* (1898 issue 3), prints letters naming **Andrea** Birago ("facendo intendere alla Regina e a quelli del Consiglio" about a brevetto), another writer and another letter; not this one |
+| (b) recipient's edition, both parts | Gomberville, *Les Mémoires de Monsieur le duc de Nevers* (1665): Gallica ContentSearch in Partie 1 `bpt6k6435941k` and Partie 2 `bpt6k9738856z` for Carmagnolle, Carmagnole, Momorancy, Turin, Birague (10 queries; the names AUDIT2-NEVBIR had not used are Momorancy, Turin, Carmagnole) | **no Birago letter of 1572 in either part.** Partie 1: Birague hits are Carles/Charles de Birague in the 1574 restitution papers (PAG_109-150), the chancellor (PAG_340, 503); Carmagnolle hits are the 1574 restitution and the 1588 seizure (PAG_877-926); Momorancy 1 (PAG_153, the house of Montmorency siding with Alençon after St Bartholomew, narrative); Turin hits are treaties and later despatches. Partie 2: Birague = chancellor and Sacremore (as AUDIT2-NEVBIR found); Carmagnole = 1588 and after; Momorancy 0; Turin = 1574-1609 treaties. OCR positive control: the search finds "Birague" signatures and "Carmagnolles" dozens of times, so a printed letter on these subjects would be expected to show |
+| (a), (d), (f), (g) JSTOR, DECODE, slip check | not repeated: VERIFY-NEVBIR-90REST (2 Oct 2026, cyphersolver at head 15:12, aaymeloglu, Tomokiyo, BnF catalogue, Gallica canvases 188-191 at native) and AUDIT2-NEVBIR (HAL, Persée, CrossRef, Catherine de Médicis vol. 4) are taken as logged | -- |
+| (g) JSTOR | family (i) for no.90 already queued (`("Birago" OR "Birague") AND "Nevers" AND ("ottobre 1572" OR "octobre 1572") AND cipher`); family (ii) for no.90 so far only "il capitano Scipione" AND Saluzzo (f.184r). **One family (ii) row appended for this portion:** `"casa di Momoransi" AND Birago` | queued; does not block N4 |
+
+Requests: be-api.us.archive.org 13, googleapis.com 13, api.openalex.org 9, api.semanticscholar.org 9, api.crossref.org 2,
+gallica.bnf.fr 10 (ContentSearch, 2 s apart, all 200, no challenge). No credentials printed.
+
+## Verdict
+
+| item | class | key | text | confidence |
+|---|---|---|---|---|
+| no.90 f.185r L10-12 and L15-25, 392 signs (NEVBIR-185B) | **N4** (second audit; VERIFY-NEVBIR-90REST was the first) | published (Tomokiyo's 1572 table; T42 absent from no.90) | not known | moderate on the class; the reading is cryptanalytic (H 0 C 0), fragmentary, judge FAIL |
+
+The first audit's N4 holds. Not N5: neither the BnF nor a specialist has been asked. Internal or unpublished work is not
+excluded. The f.185v run (20 signs) stays as VERIFY-NEVBIR-90REST left it, N4 as a search result only (its own control is a
+non-test); this pass's Mémoires and letter-level searches cover it too, but add nothing to its reading. With this pass every
+portion of no.90 has had two audits.
+
+**Safe sentence (N4), whole letter:** unchanged from VERIFY-NEVBIR-90REST above.
+**Unsafe:** as above; also any wording that treats the gloss's identifications ("the Queen" = the Queen Mother, the
+Montmorency reference, "the execution") as read: `gloss_no90.md` marks them inferred.
+
+## Postmortem
+
+No over-claim found in the NEVBIR-185B NOTES section, `gloss_no90.md` or the VERIFY-NEVBIR-90REST section (grepped
+first/new/novel/unread/previously/unpublished/solved/cracked/never). The one near-miss in print is a different Birago
+(Andrea) in an 1898 *Bollettino storico-bibliografico subalpino* letter series; worth a look by the next reader of the
+Piedmontese Birago correspondence, not a prior print of this letter. Still owed (not blocking): the JSTOR rows, the DBI
+entry, the 19 T83-shaped tiles' value-blind check.
