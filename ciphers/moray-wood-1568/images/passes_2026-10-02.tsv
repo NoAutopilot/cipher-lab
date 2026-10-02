@@ -1,0 +1,36 @@
+# Two blind Sonnet passes + one Sonnet reconciliation over the L1, L3 and L4 postscript crops (crop_f213v_postscript.sh on the
+# full-size DECODE R8345 P4, sha1 a4e848953a3a..., re-fetched this session, identical), GAPS4-moray-wood-1568, 2 Oct 2026 (account-4).
+# The passes saw only the crops and Aymeloglu's shape legend (no labels, no reading); the reconciler saw the crops, his labels (T) and both passes.
+# Score = difflib matched labels / his glyph count per line; control = his labels shuffled within the line (same multiset), 1000 draws.
+# L4 at N=7 sits at the control's own ceiling (p95 0.571, max 0.714): non-discriminating at that N, listed, not a pass.
+section	line	field	value
+score	L1	passA agree	0.717 (33/46) vs shuffled-label mean 0.208 p95 0.304 max 0.391
+score	L1	passB agree	0.761 (35/46) vs shuffled-label mean 0.208 p95 0.304 max 0.391
+score	L3	passA agree	0.763 (29/38; A read 39 glyphs) vs shuffled-label mean 0.266 p95 0.368 max 0.447
+score	L3	passB agree	0.868 (33/38) vs shuffled-label mean 0.263 p95 0.368 max 0.474
+score	L4	passA agree	0.571 (4/7) vs shuffled-label mean 0.344 p95 0.571 max 0.714 -- at the control ceiling
+score	L4	passB agree	0.714 (5/7) vs shuffled-label mean 0.343 p95 0.571 max 0.714 -- at the control ceiling
+merged	L1	T	U | Zh P g x o Ab xd Tb Z3 e 4b o x M A xd x Ab xd 4 A c a Z5 a c | o2 | Zh x xd F N xd Tb | r A Z5 M | Z2 e U a Z3 o F
+merged	L1	A	N | Z2 P g x o Ab x Tb Z5 e 4b o x M A x x Ab x 4 A c a Z5 a c o2 | Z2 x x F Xs x Tb r A Z5 M Z2 c N a Z2 o F
+merged	L1	B	U | Zh p g x o Ab x Tb Z2 e 4b o x M A x x Ab x 4 A c a Z5 a c | o2 | Zh x x F N x Tb r A Z2 M Zh c U a Z2 o F
+merged	L3	T	a A Zz Zz N Zh | xd A M A N o Tc Z2 | Zh s N a U | r A N a a x t | Z3 X o x | e o x N xd F N Zh
+merged	L3	A	a A Z3 Zz N Z2 | x A M A N o Tc Z2 | Z2 s N a N | r A x N a a x t | Z2 Xs o x | e o x N x F N Z2
+merged	L3	B	a A Z3 Zz N Zh | x A M A N o Tc Z2 | Zh s N a U | r A N a a x t | Z2 Xs o x | e o x N x F N Zh
+merged	L4	T	Zz x3 A Xs Z2 N Zh
+merged	L4	A	Zz x A Xs Z5 N Z2
+merged	L4	B	Zz x A Xs Z5 N Zh
+# Reconciliation verdicts (Sonnet, crops viewed downscaled; "T" = his label). Applied = changed in ciphertext.tsv this pass.
+section	position	T / A / B / reconciler	verdict
+uncertain-GAPS3	L1 5	x / x / x / x	settled x (all four reads)
+uncertain-GAPS3	L1 8	xd / x / x / x	NOT settled at the class level: no reader saw a dot or hook on ANY of his seven xd (L1 8 17 20 31 34, L3 7 35) nor on the plain x; xd=n vs x=e is key-bearing (sending, freindis, remane in), so the class stays as his pending a native-resolution pair comparison; label unchanged
+uncertain-GAPS3	L3 22	N / x+N / N / N (one glyph, inverted v with crossing stroke)	settled N (his label); GAPS3's "crossed x" lean and pass A's extra x not supported; label unchanged
+uncertain-GAPS3	L4 4-5	Xs Z2 / Xs Z5 / Xs Z5 / Xs Z5 (two separate slashes, one per glyph)	L4 pos 5 changed Z2 -> Z5 (applied); value under his key y (M) instead of o (S); his own review disputed this glyph
+named	L3 26	t / t / t / t (plain cross, no base bar)	confirmed t-shape, value still unidentified (M); label unchanged
+named	L4 2	x3 / x / x / x	all three read plain x; his x3 is a line-4 variant label, value e either way; label unchanged, logged
+named	L4 6	N / N(low) / N(low) / N(low)	N on all reads, low confidence throughout; unchanged
+named	L4 7	Zh / Z2 / Zh / Zh	Zh (pass A never used Zh anywhere, its Z2 is a legend confusion); unchanged
+new-disagreement	L1 41	e / c / c / c (open c-curve, no bar)	both blind passes + reconciler read c (= his r, M) where he reads e (= f, S: "of the lord"); outside this step's positions, NOT applied; next-step item
+new-disagreement	L3 28	X / Xs / Xs / Xs	both blind passes + reconciler read a doubled extra stroke (Xs = ?, M) where he reads X (= u, S: "oure"); NOT applied; next-step item
+new-disagreement	L1 1, L1 42	U / N / U / N(low-med)	split 2-2; U = [the] fits the clear context; unchanged
+cosmetic	L1 10, L1 44, L3 27	Z3 / Z2|Z5 / Z2 / Z2	his Z3 and Z2 both read o under his key; no reading change; logged
+cosmetic	L3 3-4	Zz Zz / Z3 Zz / Z3 Zz / Z3 Zz (smaller then larger 3)	reconciler sides with the passes (low-med); Z3 = o, Zz = t (M): la??is -> lo?is would change an M token; NOT applied, next-step item with the Zz question of gap 3

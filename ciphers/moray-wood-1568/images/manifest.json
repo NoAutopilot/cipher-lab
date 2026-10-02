@@ -440,5 +440,33 @@
     "date": "02 Oct 2026"
    }
   ]
+ },
+ "full_size_refetched_2026-10-02_GAPS4": {
+  "date": "2026-10-02",
+  "worker": "GAPS4-moray-wood-1568 (account-4)",
+  "login": "tools/decode_browser_login.js 8345 OUT --guess-fullsize --max-files 5 --fetch <4 absolute filesrv IMG URLs + DOC>, one attempt, loggedIn true",
+  "files": {
+   "DOC_8345_2024-Sep-14-08-32-51_70494.txt": {
+    "bytes": 477,
+    "sha1": "e14e65411e15a3f6bf597eedc95a2744d695540d"
+   },
+   "IMG_R8345_I38545_P1.jpg": {
+    "bytes": 14676527,
+    "sha1": "21c8e814b97b166479266c7ad2cc4eecb9f4646c"
+   },
+   "IMG_R8345_I38545_P2.jpg": {
+    "bytes": 13322442,
+    "sha1": "bc25cff19bb028d2f16b08638e6dafb7e71e7599"
+   },
+   "IMG_R8345_I38545_P3.jpg": {
+    "bytes": 14093349,
+    "sha1": "2c2a8eca2f6f1c3fa26955b4041e7ca8ac219e26"
+   },
+   "IMG_R8345_I38545_P4.jpg": {
+    "bytes": 15358430,
+    "sha1": "a4e848953a3afca88f015e0e8efe1395aea137af"
+   }
+  },
+  "note": "all four IMG sha1 identical to full_size_fetched_2026-10-02 (GAPS3); DOC_8345_2024-Sep-14-08-32-51_70494.txt = Tomokiyo token transcription, body identical to ciphertext.txt; files scratchpad-only (BL material); crop recipe re-run, 16 crops identical layout; passes in passes_2026-10-02.tsv"
  }
 }

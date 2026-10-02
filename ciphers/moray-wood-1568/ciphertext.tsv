@@ -1,7 +1,9 @@
 # Aymeloglu's glyph-by-glyph transcription of the cipher postscript, BL Add MS 32091 f.213v (DECODE R8345 image I38545 page 4),
 # quoted with attribution from github.com/aaymeloglu/unsolved-ciphers moray-1568/transcription.txt at commit d2800bb (clone 2 Oct 2026).
 # One row per glyph in reading order; sign '|' = a visible gap on the page (not a cipher token). 134 glyphs. conf: blank = his
-# transcription as given, unchecked against the full-size image by this repository (only 200 px thumbnails on disk, 2 Oct 2026).
+# transcription as given, unchecked against the full-size image by this repository (only 200 px thumbnails on disk, 2 Oct 2026);
+# GAPS3 2 Oct 2026 one primed eye-check (130/134 agree), GAPS4 2 Oct 2026 two blind passes + one reconciliation on L1/L3/L4 crops
+# (images/passes_2026-10-02.tsv): one label changed, L4 pos 5 Z2 -> Z5; other disagreements logged there, not applied.
 # Label shapes: see his file header (U boxy u, Zh hooked vertical, P curly p, xd x with dot, Ab triangle with bar, Tb inverted T,
 # Z2/Z3/Z5/Zz 3-shapes, 4b figure 4 with bar, M o with tail, Eb E with bar, X small crossed x, Xs starred x, F barred f ...).
 line	pos	sign	conf
@@ -148,6 +150,6 @@ L4	1	Zz
 L4	2	x3	
 L4	3	A	
 L4	4	Xs	
-L4	5	Z2	
+L4	5	Z5	GAPS4 2 Oct 2026: his Z2; two blind passes + reconciliation read Z5 (a separate long slash rising into the z); his own FRESH-MANUSCRIPT-REVIEW.md disputed this glyph
 L4	6	N	
 L4	7	Zh	
