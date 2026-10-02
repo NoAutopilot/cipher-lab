@@ -1,0 +1,112 @@
+block	row	field	reading	confidence
+head	1	text	aanden Gouverneur Van de Schepper versonden	medium
+head	2	text	p[er] Missive van 2 december 1739	medium
+head	3	text	[no third heading line visible in crop L01; top line may be cut off]	low
+alpha	A	1	[delta] (small triangle)	high
+alpha	A	2	p	high
+alpha	A	3	[x with dots, like a small saltire between dots]	medium
+alpha	B	1	d (looped script d)	high
+alpha	B	2	6 (or sigma-like; closed loop with rising stroke)	medium
+alpha	C	1	[script capital E/C-like with looped top and long tail; L-shaped flourish]	low
+alpha	D	1	v	high
+alpha	D	2	W	high
+alpha	E	1	3	medium
+alpha	E	2	7	medium
+alpha	E	3	a	medium
+alpha	E	4	d with triangular flag/accent above	low
+alpha	E	5	e	medium
+alpha	F	1	[loop crossed by diagonal stroke, ampersand/crossed-Q-like]	medium
+alpha	F	2	[omega-bar] (w with horizontal bar above)	high
+alpha	G	1	9	high
+alpha	H	1	[Sh ligature: long-s/f plus h]	low
+alpha	H	2	[S with vertical stroke, $-like]	low
+alpha	I	1	f (long script f/J-like descender)	medium
+alpha	I	2	m	high
+alpha	I	3	8 (open, delta-lowercase-like)	medium
+alpha	K	1	b (6-like looped b)	high
+alpha	L	1	g	high
+alpha	L	2	c	high
+alpha	M	1	y	high
+alpha	N	1	ij (y with dots)	high
+alpha	N	2	l	high
+alpha	N	3	h	high
+alpha	O	1	k	high
+alpha	O	2	[hash] (#, three verticals crossed)	high
+alpha	O	3	[pi] (bar over inverted V)	medium
+alpha	P	1	S (script capital S)	medium
+alpha	P	2	q	high
+alpha	Q	1	[slanted cross, x/dagger with long descending stroke]	medium
+alpha	R	1	o	high
+alpha	S	1	6	high
+alpha	S	2	[psi]	high
+alpha	T	1	r	high
+alpha	T	2	[lambda]	high
+alpha	V	1	5	high
+alpha	V	2	e	high
+alpha	W	1	4	high
+alpha	X	1	1	high
+alpha	Y	1	t	high
+alpha	Z	1	n	high
+code	1	symbol	building with three pointed gables/spires over a gridded base (three towers)	high
+code	1	word	de Buscruijt	medium
+code	2	symbol	two overlapped capital A's (AA/M-like) with a horizontal bar struck through below	medium
+code	2	word	Stuck geschut	high
+code	3	symbol	[gamma] (capital Greek Gamma, heavy)	high
+code	3	word	fort Amsterdam	high
+code	4	symbol	[Pi] (capital Greek Pi with serifs)	high
+code	4	word	fort Zelandia	high
+code	5	symbol	B (roman capital B)	high
+code	5	word	fort Sommelsdyck	high
+code	6	symbol	trefoil/club (three small circles over a short stem)	high
+code	6	word	Snaphaanen	medium
+code	7	symbol	bullseye (circle with small circle and dot inside)	high
+code	7	word	kogels	high
+code	8	symbol	long horizontal empty rectangle	high
+code	8	word	Affuyten	medium
+code	9	symbol	small tower/house: tall rectangle with pointed roof and square window/door	high
+code	9	word	Rospaarden	medium
+rev	A	1	[delta]	high
+rev	A	2	p	high
+rev	A	3	[x with dots, saltire-like]	medium
+rev	B	1	d (large looped d)	high
+rev	B	2	6	medium
+rev	C	1	[script capital E/C-like with p-like top flourish]	low
+rev	D	1	v	high
+rev	D	2	W	high
+rev	E	1	3	high
+rev	E	2	7	high
+rev	E	3	a	high
+rev	E	4	d with triangular flag above	medium
+rev	E	5	e	high
+rev	F	1	[loop crossed by diagonal stroke, crossed-Q-like]	medium
+rev	F	2	[omega-bar]	high
+rev	G	1	9	high
+rev	H	1	[Sh-like ligature]	low
+rev	H	2	[S-like with stroke, $-like]	low
+rev	I	1	f (long descender)	medium
+rev	I	2	m	high
+rev	I	3	8	medium
+rev	K	1	b	high
+rev	L	1	g	high
+rev	L	2	c	high
+rev	M	1	y	high
+rev	N	1	l	high
+rev	N	2	ij (y with dots)	high
+rev	N	3	h	high
+rev	O	1	k	high
+rev	O	2	[hash]	high
+rev	O	3	[pi]	high
+rev	P	1	S	medium
+rev	P	2	q	high
+rev	Q	1	[slanted cross, x with long stroke]	medium
+rev	R	1	o	high
+rev	S	1	6	high
+rev	S	2	[psi]	high
+rev	T	1	r	high
+rev	T	2	[lambda]	high
+rev	V	1	5	high
+rev	V	2	e	high
+rev	W	1	4	high
+rev	X	1	1	high
+rev	Y	1	t	high
+rev	Z	1	n	high

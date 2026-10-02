@@ -1,0 +1,172 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "v86L_L01.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_left_native.jpg",
+   "box": [
+    0,
+    178,
+    1700,
+    997
+   ],
+   "lines_in_crop": 6,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 128,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86L_L02.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_left_native.jpg",
+   "box": [
+    0,
+    997,
+    1700,
+    1822
+   ],
+   "lines_in_crop": 6,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 128,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86L_L03.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_left_native.jpg",
+   "box": [
+    0,
+    1822,
+    1700,
+    2598
+   ],
+   "lines_in_crop": 6,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 128,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86L_L04.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_left_native.jpg",
+   "box": [
+    0,
+    2598,
+    1700,
+    3301
+   ],
+   "lines_in_crop": 6,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 128,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86L_L05.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_left_native.jpg",
+   "box": [
+    0,
+    3301,
+    1700,
+    3426
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 128,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86R_L01.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_right_native.jpg",
+   "box": [
+    0,
+    38,
+    480,
+    1186
+   ],
+   "lines_in_crop": 9,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 111,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86R_L02.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_right_native.jpg",
+   "box": [
+    0,
+    1186,
+    480,
+    2177
+   ],
+   "lines_in_crop": 9,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 111,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "v86R_L03.jpg",
+   "source_url": "",
+   "source_file": "inv86_0003_right_native.jpg",
+   "box": [
+    0,
+    2177,
+    480,
+    2714
+   ],
+   "lines_in_crop": 4,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 111,
+    "distance": 95,
+    "prominence": 10.0
+   },
+   "date": "02 Oct 2026"
+  }
+ ]
+}
