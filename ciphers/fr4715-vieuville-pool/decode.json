@@ -1,0 +1,12 @@
+{"target": "ciphers/fr4715-vieuville-pool",
+ "note": "LIKELY-1, 2 Oct 2026: no.44 f.67r (Montholon, Tours, 15 Apr 1590) decoded against the sibling's key of record, ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv (Tomokiyo's printed Vieuville-Nevers table). Clear words ride through as w:word tokens; a dotted group (leading '.') is an undocumented word-code and stays U.",
+ "jobs": [
+  {"ciphertext": "f67r_ciphertext.tsv", "key": "../fr4715-montholon-1589/keys/key_vieuville_nevers.tsv", "format": "tsv",
+   "line_column": "line", "style": "spaced", "reading": "f67r_reading.txt", "tokens": "f67r_reading_tokens.tsv",
+   "header": [
+     "# fr4715-vieuville-pool no.44 f.67r, decoded against key_vieuville_nevers.tsv (LIKELY-1, 2 Oct 2026)",
+     "# tokens {total}: {HCSMIU} (U = group not in the key: a dotted word-code or an unread digit)",
+     "# letter strings under the key between the clear words; not a reading until the judge and a verifier say so (rules 7, 10)"
+   ]}
+ ]
+}
