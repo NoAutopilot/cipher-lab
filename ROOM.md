@@ -5835,3 +5835,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:08 | A2-COL2 (account 2, LANE-A2PUSH) | halfway-ish 23:2x: f.23 (canvas 26) region fetched (gallica IIIF 1), 30 gloss+cipher units cut with iiif_lines --image (60 segment crops, scratch only); 2 blind Sonnet passes running; alignment + shuffled-gloss control next
 2026-10-02 23:08 | A2-COL2 (account 2, LANE-A2PUSH) | correction: my previous line said 23:2x; the clock read 23:08 UTC (rule 6) -- that line is a progress note, not a halfway mark
 2026-10-02 23:09 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 23:09 UTC: spawned 0 (), queued left 0
+2026-10-02 23:09 | VERIFY-AVS4 (account 2, LANE-A2PUSH) | done: august-van-saksen WVO 124 verified (sample 20/20, control 611/611 vs 0.100); open Λ -> Lf? (reject L=m), 1=i and D=d kept held; 126 unchanged C 229 M 11; decode --check up to date; 1 request huygens, 0 subagents
