@@ -2898,11 +2898,12 @@
       "grade": "N3 after two audits (VERIFY-CEPPO-D2-1 00:27, VERIFY-CEPPO-D2-2 01:22 UTC 29 Sept, held), key published (Tomokiyo, nevers_add1.png). 267 tokens, 179 at S; key rank 1 of 201 on a value-blind re-transcription (z 5.7-6.6, three seeds), power control 20/20. The letter is cited in print (Pascal 1960) for its clear text only; the cipher passages are not printed.",
       "line": "Cipher passages endorsed by the second audit: tutto da; questa carica ... di qua; credo le ne; ceder uiuendo et seruend[o]; tanto di; fatto; fa dificu[lta]; in diue-se (r, s M). intencione and auanti not endorsed.",
       "document_id": "BnF fr.3251 f.21v (no.11), Birago to Nevers, 12 Oct 1570",
-      "completeness": "179/267 at S (cipher passages)",
+      "completeness": "155/267 endorsed at S (VERIFY-CEPPO-SPLITS, 2 Oct 2026; was 146)",
       "unresolved_spans": "the rest at M/I/U; no continuous text",
       "audit_refs": [
         "AUDIT.md VERIFY-CEPPO-D2-1 f.21v",
-        "AUDIT.md VERIFY-CEPPO-D2-2 f.21v"
+        "AUDIT.md VERIFY-CEPPO-D2-2 f.21v",
+        "AUDIT.md VERIFY-CEPPO-SPLITS"
       ],
       "reading_version": "HARVEST-D2 decode as re-checked by VERIFY-CEPPO-D2-1/2"
     },
@@ -2992,14 +2993,15 @@
       "fields_source": "nevers-birago-fr3251-1572/AUDIT.md, first-audit sections and \"Second audit (AUDIT2-NEVBIR)\"",
       "document_id": "BnF fr.3251 ff.184r-185v (no.90), Birago to Nevers, 2 Oct 1572",
       "title": "BnF fr.3251 no.90, Lodovico Birago to the Duke of Nevers, Saluzzo, 2 October 1572: cipher of ff.184r-185r read with Tomokiyo's published 1572 key",
-      "grade": "N4 (VERIFY-NEVBIR-184, AUDIT2-NEVBIR, VERIFY-NEVBIR-90REST), key published (Tomokiyo). Whole letter 966 signs: S 730 M 125 U 111 (the 20-sign f.185v run alone is a non-test, its one S graded M); key rank 1 of 201 at five seeds (z 4.5-4.7). f.184r and f.184v-f.185r L01-08 have two audits; f.185r L10-25 (392 signs) one audit, second audit queued. Judge FAIL.",
+      "grade": "N4 (VERIFY-NEVBIR-184, AUDIT2-NEVBIR, VERIFY-NEVBIR-90REST), key published (Tomokiyo). Whole letter 966 signs: S 730 M 125 U 111 (the 20-sign f.185v run alone is a non-test, its one S graded M); key rank 1 of 201 at five seeds (z 4.5-4.7). Every audited portion now has two audits (AUDIT2-NEVBIR-90R, 2 Oct 2026). Judge FAIL.",
       "line": "Fragmentary reading: after \"the execution\" the house of Montmorency \"remains under some suspicion\"; Captain Scipione Carego; the Huguenots (a code word); \"make the Queen understand\"; no prior decipherment located (2 Oct 2026).",
       "completeness": "730/966 at S (whole letter)",
       "unresolved_spans": "125 M, 111 U off-sheet signs; f.185v run untestable alone",
       "audit_refs": [
         "AUDIT.md VERIFY-NEVBIR-184",
         "AUDIT.md AUDIT2-NEVBIR",
-        "AUDIT.md VERIFY-NEVBIR-90REST"
+        "AUDIT.md VERIFY-NEVBIR-90REST",
+        "AUDIT.md AUDIT2-NEVBIR-90R"
       ],
       "reading_version": "NEVBIR-184 + NEVBIR-185"
     }
