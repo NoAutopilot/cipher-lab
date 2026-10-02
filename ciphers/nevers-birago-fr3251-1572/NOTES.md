@@ -599,7 +599,8 @@ ruler image per region, three sheet strips). Requests: gallica.bnf.fr 7 (above),
 
 ## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
 Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
-- ff.138, 144, 152, 160, 168, 174, 184 (nos. 71-93) - blocker: not-attempted; HARVEST-D2's recipe (1200 px per canvas until the cipher is found, 2-4 requests a letter, offset drifts +1 to +3) then the same pipeline per leaf; next: locate and read f.144 (the fullest page of signs per the row), ~$8 a letter
+- ff.138, 152, 160, 168, 174, 184 (nos. 71-93; f.144 moved to its own line, NEVBIR-144) - blocker: not-attempted; HARVEST-D2's recipe (1200 px per canvas until the cipher is found, 2-4 requests a letter, offset drifts +1 to +3) then the same pipeline per leaf; next: locate and read f.144 (the fullest page of signs per the row), ~$8 a letter
+- f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; next: pool f.144r with the sibling 1572 letters' reconciled sequences in one joint 200-shuffle test once they are read (disk only, ~$1), and/or lower the reader error with the clerk-sheet error map (gap below)
 - the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
 
 ## Escalation (2 Oct 2026)
@@ -705,3 +706,57 @@ Requests: gallica.bnf.fr 17 (see `images/manifest.json` "PREMISE-NEVBIR_2_Oct_20
 2; googleapis.com 2; archivesetmanuscrits.bnf.fr 1; github.com 2 clones (dbourdeau/cyphersolver, aaymeloglu/
 unsolved-ciphers, both fresh, removed from scratch after use). No vision-model calls (own looks only, per brief).
 No credentials. No AskUserQuestion.
+
+## NEVBIR-144 (2 Oct 2026, account 2 worker for account 3's queue): f.144r no.73, first test -- a non-test at this length
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-letter.md`, WORK-QUEUE row NEVBIR-144. `tools/intake_gate_check.py`
+exit 0 at 15:1x UTC; Premise check above: CLEAR TO TEST for f.144. No class, no novelty wording (rule 10). Status stays `partial`.
+
+**Material.** Canvas 146, right page, ink foliation '144' (PREMISE-NEVBIR). The cipher is one run inside the prose
+(27 Mar 1572 letter): from "...delle lre ultimamente mandate et" (L03), all of L04 except the prose "servandosi hora del
+mese" (L04.1 / L04.2), all of L05, and L06 up to "tutti questi del stato del Re". Fetched once:
+`python3 tools/iiif_lines.py --ark btv1b9060248g --canvas 146 --region 4350,800,3650,760 --out harvest/f144r --prefix f144r
+--max-width 1250 --overlap 50 --only-lines 3,4,5,6` (debug overlay `harvest/f144r/f144r_lines_debug.jpg` checked by eye:
+L03-L06 one band each), 2x reader copies by `harvest/make_2x.py --folio f144r` (gitignored). A first region at y 1450 missed
+the run (it sat 5 lines higher than the 1000 px overview suggested); its source was deleted.
+
+**Passes.** Two value-blind Sonnet readers, `harvest/f144r/blind_pass_brief_f144r.md` (the 1572 brief with the prose/cipher
+layout added): `passA.tsv` 90 signs (18 X_NEW), `passB.tsv` 92 (11 X_NEW). `reconcile_blind.py`: **70 of 92 aligned
+positions agree (0.76)**, lower than f.178v's 0.88 (this run carries struck-through signs, digits among the signs and
+box/slash shapes off the sheet). A third value-blind reader settled the 20 splits (`adjudicate_in.tsv` -> `adjudicate_out.tsv`:
+8 to A, 9 to B, 3 X_NEW, 0 NONE). Final `passC.tsv`: **90 signs, 0 '?', 14 X_NEW** (16% off-sheet: the digits 4, 7 and "16"
+on L04.1/L05, crossed or struck-through signs, slashed boxes, a Y shape) -- far above no.87's 25 of 853.
+
+**Control (rule 3)**, `../ceppo-nevers-fr3251-1570s/harvest/decode_control.py f144r/passC.tsv --map sign_id_map_1572_fit.json
+--corpus it16dip --shuffles 200` (the printed 1572 key + T42=m, the statistic of the f.178v runs):
+
+| run | signs / letters | real key | shuffles mean / max | z | rank of 201 | power control (20 windows, same lengths) |
+|---|---|---|---|---|---|---|
+| seed 1, err 0.24 | 90 / 94 | -1.256 | -1.538 / -1.222 | 1.77 | 4 | **4/20 rank 1**, z median 1.12 min -2.20 |
+| seed 2 | 90 / 94 | -1.256 | -1.525 / -1.180 | 1.79 | 6 | -- |
+| seed 3 | 90 / 94 | -1.256 | -1.541 / -1.217 | 1.88 | 3 | -- |
+| power only, err 0.12 | | | | | | 9/20, z median 2.00 |
+| power only, err 0.00 | | | | | | 20/20, z median 3.57 min 2.13 |
+
+**Verdict on the test: non-test, not a negative.** The real key sits above the shuffled mean (z about 1.8, rank 3-6 of 201)
+but not at rank 1; at this letter's length (94 letters) and the measured reader error (0.24) the same test finds a
+known-right key at rank 1 in only 4 of 20 windows, so rank 4 is what a right key with this error typically gives, and also
+what a wrong one could give. Under rule 3 neither "the key reads f.144" nor "it does not" is licensed. Two limits act
+together: length (power is 20/20 only at zero error) and the 14 off-sheet signs.
+
+**Reading (unbacked).** `tools/decode_key.py` job `harvest/ciphertext_f144r.tsv` (built by `harvest/build_decode_inputs.py
+f144r --seq f144r/passC.tsv`), `--check` exit 0. The tool prints tokens 90: S 40, M 36, U 14 -- those S grades are the key
+file's own (backed on no.87), **not backed on this leaf**: per the brief no per-token grading is claimed here; read every
+token as M at best. `harvest/reading_f144r.txt`:
+
+    L03 [quello]··mprima·g | L04.1 eobtatnn··[per][qual] | L04.2 di[quello]ls··rosa· |
+    L05 the·ircbodib··a[qual]cosmezodiseu·purato | L06 pmiudicedi·raginero·
+
+**Judge** (secondary; `tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/f144r/reading_f144r_letters.txt`):
+
+    FAIL language: score=-1.454, null_p99=-1.6, real_p05=-0.955, real_median=-0.828, mode=both, N=94
+    FAIL - nevers-birago-fr3251-1572 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Next (in Remaining gaps): pool f.144r with the sibling letters' sequences in one joint shuffled-key test once they are read,
+and/or lower the reader error (clerk-sheet error map, then a look-alike pass). Requests: gallica.bnf.fr 3 (info.json canvas
+146; two regions, the first misplaced). Vision calls 3 (two blind passes, one adjudication). No other host. No credentials.

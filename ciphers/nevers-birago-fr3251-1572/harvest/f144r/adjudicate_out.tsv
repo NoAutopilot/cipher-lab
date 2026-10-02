@@ -1,0 +1,21 @@
+passage	pos	sign_id	conf	note
+L03	3	X_NEW	M	circle with left bar plus vertical stem; not T98 or T37 alone
+L03	11	T88	M	small o; long tail is line-end flourish
+L04.1	1	T66	M	hooked long-s with foot
+L04.1	11	T26	M	curl 9/q in C-curl
+L04.2	4	T51	M	small cross with lower bar
+L04.2	8	T83	M	x with curl, like L06 x-curl
+L05	7	T36	M	q: small circle atop stem
+L05	12	T81	L	x with strike-through
+L05	19	T95	M	p over cross bar
+L05	20	T42	M	small t with hook
+L05	21	T45	M	b with bottom loop
+L05	26	T95	M	p over cross bar
+L05	27	T66	M	f/s with foot and bar
+L05	29	X_NEW	L	hooked 8-like open curl; differs from T83
+L05	32	T83	M	x with left curl
+L06	7	T36	M	circle atop stem, no stem above
+L06	9	T18	M	phi, stem through circle
+L06	11	X_NEW	M	Y with thick stem, not V
+L06	12	T83	M	x with curls
+L06	18	T83	M	x with curls

@@ -1,0 +1,21 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L03	3	T84 X_NEW	T54 T90 T83 T80	X_NEW	L	T98	L	circle crossed by horizontal bar with vertical stem through	ring with horizontal bar and stem
+L03	11	T80 T42 T37 X_NEW		T88	L	X_NEW	L	small o with long wedge tail; prose after: line end	o with long tapering stroke; line end of crop
+L04.1	1		T55 T81 T65 T85	X_NEW	L	T66	M	f/long-s with foot; prose before: 'line start'	hooked long-s; first of run (after line start prose)
+L04.1	11	T60 T76 X_NEW X_NEW	T78	X_NEW	L	T26	L	q inside C-curl	curly Q/9 with loop
+L04.2	4	T18 T25 T84	T95 X_NEW X_NEW ?	X_NEW	L	T51	M	small cross with lower bar	cross with ticks
+L04.2	8	? T95 X_NEW X_NEW	T19 T57 T85 X_NEW	T81	M	T83	M	small x	x with curls
+L05	7	T45 X_NEW T52 T83	T81 T19 T63 T96	T36	M	T76	L	q, loop on stem	q/9 shape
+L05	12	T81 T19 T63 T96	X_NEW X_NEW T37 T78	T81	L	X_NEW	L	x struck through	x struck through
+L05	19	T37 T78 T50 T55	? ? T10 T19	T95	L	T51	M	p over cross bar	cross with p
+L05	20	T78 T50 T55 ?	? T10 T19 T18	X_NEW	L	T42	L	small t	small t
+L05	21	T50 T55 ? ?	T10 T19 T18 T80	T45	M	T89	M	b	6 with loop
+L05	26	T10 T19 T18 T80	? T33 ? T90	T95	L	T51	M	p over cross bar	cross with p
+L05	27	T19 T18 T80 ?	T33 ? T90 T33	X_NEW	L	T66	M	f with bar	hooked s
+L05	29	T80 ? ? T33	T90 T33 ? T85	X_NEW	L	T83	L	hooked 8-like	looped x
+L05	32	T33 ? T90 T33	T85 T53 T55	T81	M	T83	M	x	
+L06	7	T25 T33 T63 T80	T45 ? T80 ?	T36	M	T18	H	q	
+L06	9	T63 T80 T18 T45	T80 ? ? T37	T18	M	T65	M	phi	phi
+L06	11	T18 T45 ? T80	? T37 T70 T52	T63	M	X_NEW	M	Y thick	Y-like
+L06	12	T45 ? T80 ?	T37 T70 T52 T60	T81	M	T83	M	x	
+L06	18	T70 T52 T60 T86	T19 X_NEW	T81	M	T83	M	x	
