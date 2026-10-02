@@ -1,0 +1,25 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L02		2	T57	L				gapB		
+L02	15	16	T26	M	15	T76	H	split_H_B		
+L02	22	23	T60	M	22	T86	M	split		
+L02	23	24	T29	H	23	X_NEW	M	split_H_A		eps+o(two?)
+L02	29	30	T89	L	29	X_NEW	M	split		loop-ampersand
+L03	4	4	T60	H	4	T86	H	split		
+L03	10	10	T36	H	10	T88	M	split_H_A		
+L03	16	16	X_NEW	L	16	T85	H	split_H_B		
+L03	27	27	T89	L	27	X_NEW	M	split		loop-ampersand
+L03	30	30	T64	H				gapB		
+L04	25	25	T45	M	25	T90	M	split		
+L04	31	31	T24	L	31	X_NEW	M	split	line end	eps; line end (page edge)
+L05	3	3	X_NEW	L	3	T26	H	split_H_B		
+L05	8	8	T45	M	8	X_NEW	M	split		b-hooked
+L05	14	14	T65	M	14	T95	H	split_H_B		
+L05	15	15	T60	H	15	T86	H	split		
+L05	16	16	T29	H	16	X_NEW	M	split_H_A		eps+o
+L05	24	24	T60	H	24	T86	H	split		
+L06	1	1	T38	M	1	T64	M	split	line start (cipher block, prose above ignored)	prose line above, run starts at line start
+L06	6	6	T26	H	6	T76	H	split		
+L06	12	12	T24	H	12	X_NEW	M	split_H_A		eps
+L06	14	14	X_NEW	L	14	T89	H	split_H_B		
+L06	17	17	T60	H	17	T86	H	split		
+L06	26	26	T89	L	26	X_NEW	M	split		loop-ampersand
