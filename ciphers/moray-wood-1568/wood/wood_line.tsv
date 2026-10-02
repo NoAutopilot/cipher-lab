@@ -1,0 +1,46 @@
+# John Wood to Cecil, 6 Sept 1568, one cipher line at the foot of BL Add MS 4136 f.33 (DECODE R2989, IMG_R2989_I20715_P.jpg,
+# 3269x4205, sha1 ba5d65e464da9a15c801eb41a88907a06e96513c; BL image, not committed). Sign order and the 'bourdeau' column: Bourdeau's
+# wood_line.txt (github.com/dbourdeau/cyphersolver targets/wod1568, MIT; 39 signs, 34 + 5 after the marker (J)), credited.
+# 'moray' column: this repository's relabel into Aymeloglu's moray-1568 label set (ciphertext.tsv), by one side-by-side read of
+# the line (native crops, region 450,3330,2450,260) against the f.213v postscript bands, GAPS9-moray-wood-1568 2 Oct 2026; '?' = no
+# Moray counterpart seen. conf: blank = same form; low = nearest form, alternatives tested as variants in wood_test.py.
+pos	bourdeau	moray	conf
+1	g	g	
+2	x	x	
+3	ob	M	
+4	r3	Zz	low
+5	Z	Z3	low
+6	pm	Tc	
+7	x	x	
+8	x	x	
+9	x2	N	low
+10	f	F	
+11	x2	N	low
+12	Z	Z3	low
+13	g	g	
+14	D	A	
+15	x2	N	low
+16	e	e	
+17	XX	?	blot
+18	3	?	unmatched
+19	x	x	
+20	zl	Zh	
+21	x	x	
+22	ob	M	
+23	x3	x3	low
+24	x2	N	low
+25	x	x	
+26	x2	N	low
+27	Z	Z3	low
+28	zl	Zh	
+29	o	o	
+30	d	?	unmatched
+31	pm	Tc	
+32	g	g	
+33	x	x	
+34	ob	M	
+35	o	o	
+36	Z	Z3	low
+37	D	A	
+38	x2	N	low
+39	zl	Zh	
