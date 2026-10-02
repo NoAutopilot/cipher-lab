@@ -1,0 +1,21 @@
+R0 prior=none: code tokens 256, agrees 0.570, codes at C bar (n>=2, >=75%) 30, statuses {'agrees': 146, 'null-or-unaligned': 7, 'conflict': 60, 'single-segment': 43}
+R1 prior=prior_C.tsv: code tokens 256, agrees 0.680, codes at C bar (n>=2, >=75%) 40, statuses {'agrees': 174, 'null-or-unaligned': 9, 'conflict': 35, 'single-segment': 38}
+R2 prior=prior_Ccrib.tsv: code tokens 256, agrees 0.699, codes at C bar (n>=2, >=75%) 44, statuses {'agrees': 179, 'null-or-unaligned': 10, 'conflict': 31, 'single-segment': 36}
+R2 tokens whose aligned letter differs from passB positional letter: 88 of 256
+R0 code 24 (crib o): L01:11=o L12:3=i L13:7=o
+R0 code 34 (crib a): L02:8=a L11:14=d L12:1=a L14:17=a
+R0 code 51 (crib t): L03:16=t L08:6=y L13:13=t
+R0 code 11 (crib a): L05:6=a L09:15=s
+R0 code 65 (crib l): L08:8=l L13:8=l
+R1 code 24 (crib o): L01:11=o L12:3=o L13:7=o
+R1 code 34 (crib a): L02:8=a L11:14=d L12:1=a L14:17=a
+R1 code 51 (crib t): L03:16=t L08:6=- L13:13=t
+R1 code 11 (crib a): L05:6=a L09:15=s
+R1 code 65 (crib l): L08:8=l L13:8=l
+R2 code 24 (crib o): L01:11=o L12:3=o L13:7=o
+R2 code 34 (crib a): L02:8=a L11:14=d L12:1=a L14:17=a
+R2 code 51 (crib t): L03:16=t L08:6=- L13:13=t
+R2 code 11 (crib a): L05:6=a L09:15=a
+R2 code 65 (crib l): L08:8=l L13:8=l
+CONTROL R2 within-line shuffled gloss, n=300 seed=1: agrees mean 0.232 p95 0.277 max 0.301, 0 at or above target 0.699; C-bar codes mean 5.4 p95 9 max 11, 0 at or above target 44
+CONTROL R0 within-line shuffled gloss, n=300 seed=1: agrees mean 0.179 p95 0.223 max 0.254, 0 at or above target 0.570; C-bar codes mean 2.2 p95 5 max 7, 0 at or above target 30

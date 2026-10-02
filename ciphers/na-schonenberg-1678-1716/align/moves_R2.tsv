@@ -1,0 +1,89 @@
+line	pos	group	passB_letter	aligned_letter	status
+L01	5	60	en	e	agrees
+L01	7	[blot]		n	conflict:e
+L02	0	81	a		null-or-unaligned
+L02	1	6	d	a	agrees
+L02	2	3)	e	d	agrees
+L02	3	16	n	e	agrees
+L02	4	89	e	n	agrees
+L02	5	10	s	e	agrees
+L02	6	50	t	s	agrees
+L02	7	29	a	t	agrees
+L02	8	34	s	a	agrees
+L02	9	28	p	s	agrees
+L02	10	25	a	p	agrees
+L02	11	56	r	a	agrees
+L02	12	)1	t	r	agrees
+L02	13	95	e	t	agrees
+L02	14	10	s	e	agrees
+L02	15	94	q	s	agrees
+L02	16	)0	u	q	agrees
+L02	17	)5	e	u	single-segment
+L08	6	51	a		null-or-unaligned
+L08	7	6	l	a	agrees
+L08	8	65	y	l	agrees
+L08	9	98	a	y	agrees
+L08	10	12	p	a	agrees
+L08	11	25	u	p	agrees
+L08	12	30	e	u	agrees
+L08	13	5	s	e	agrees
+L08	14	28	e	s	agrees
+L08	15	23	s	e	conflict:n
+L08	16	28	a	s	agrees
+L08	17	56	v	a	agrees
+L08	18	)2		v	conflict:r
+L09	13	)8	l		null-or-unaligned
+L09	14	9	a	l	single-segment
+L09	15	11	s	a	agrees
+L09	16	50	q	s	agrees
+L09	17	26	u	q	agrees
+L09	18	)10	e	u	single-segment
+L10	0	)2	p		null-or-unaligned
+L10	1	)0	u		null-or-unaligned
+L10	2	32	e		null-or-unaligned
+L10	3	4)	d	p	agrees
+L10	4	52	a	u	single-segment
+L10	5	38	n	e	agrees
+L10	6	59	o	d	agrees
+L10	7	)8	c	a	agrees
+L10	8	6)	u	n	agrees
+L10	9	[circle]	r	o	single-segment
+L10	10	36	r	c	agrees
+L10	11	)4	y	r	single-segment
+L10	13	54	z	y	agrees
+L10	14	)1		r	agrees
+L10	15	55		z	conflict:b
+L12	2	58	j	i	single-segment
+L12	3	24	i	o	agrees
+L12	4	)1	o	r	agrees
+L12	5	10	r	e	agrees
+L12	6	94	e	s	agrees
+L12	7	69	s	p	single-segment
+L12	8	8	p	o	agrees
+L12	9	6)	o	n	agrees
+L12	10	59	n	d	agrees
+L12	11	82	d	e	agrees
+L12	12	45	e	n	agrees
+L12	13	33	n	z	agrees
+L12	14	)6	z	i	conflict:y
+L12	15	6	i	a	agrees
+L12	16	)52	a		null-or-unaligned
+L13	6	50	o		null-or-unaligned
+L13	7	24	l	o	agrees
+L13	8	65	a	l	agrees
+L13	9	12	m	a	agrees
+L13	10	66	e	m	single-segment
+L13	11	60	n	e	agrees
+L13	12	89	t	n	agrees
+L13	13	51	e	t	agrees
+L13	14	16	y	e	agrees
+L13	15	96	n	y	conflict:o
+L13	16	23		n	agrees
+L14	10	)3	o		null-or-unaligned
+L14	11	46	e	o	agrees
+L14	12	[square]	n	e	single-segment
+L14	13	45	e	n	agrees
+L14	14	10	s	e	agrees
+L14	15	28	t	s	agrees
+L14	16	95	a	t	agrees
+L14	17	34		a	agrees

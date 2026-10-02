@@ -54,3 +54,10 @@ code	votes	total	note
 34	{'a': 2 (crib L19 pos4, L12 pos1), 's': 1 (L02 pos8), 'd': 1 (L11 pos14)}	4	GAPS 2 Oct 2026: crib breaks the body tie toward a; key.tsv 34 = a at M
 51	{'t': 2 (crib L19 pos7, L03 pos16), 'a': 1 (L08 pos6), 'e': 1 (L13 pos13)}	4	GAPS 2 Oct 2026: crib breaks the body tie toward t; key.tsv 51 = t at M
 11	{'a': 2 (crib L19 pos22, L05 pos6), 's': 1 (L09 pos15)}	3	GAPS 2 Oct 2026: crib breaks the body tie toward a; key.tsv 11 = a at M
+50	{'s': 6 (aligner R2: L02 pos6, L04 pos13, L05 pos0, L05 pos7, L09 pos16, L11 pos7), 'r': 1 (L06 pos17, pixel-verified)}	7	GAPS2 2 Oct 2026: tools/interlinear_align.py reads 50 = s at every glossed occurrence but the pixel-verified L06 one, in all three runs (R0 5/7, R2 6/7 with r seeded); key.tsv 50 = s (M), exceptions.tsv L06 pos17 = r
+34	{'a': 3 (crib L19 pos4; aligner L02 pos8, L12 pos1, L14 pos17), 'd': 1 (L11 pos14, every run)}	4	GAPS2 2 Oct 2026: the aligner keeps d at L11 pos14 unseeded and seeded; key.tsv 34 = a stays M
+11	{'a': 2 (crib L19 pos22; aligner L05 pos6), 's': 1 (L09 pos15 in R0 and R1; a only when 11 itself is seeded)}	3	GAPS2 2 Oct 2026: tie in the unseeded run; key.tsv 11 = a stays M
+49	{'n': 1 (L06 pos10, pixel-verified), 'r': 1 (L04 pos5), 'u': 1 (L11 pos11)}	3	GAPS2 2 Oct 2026: three-way tie in every run; key.tsv 49 = n (M), tie broken toward the pixel-verified witness
+31	{'x': 1 (L06 pos3, pixel-verified), 'd': 1 (L03 pos12)}	2	GAPS2 2 Oct 2026: tie in every run; key.tsv 31 = x (M)
+)0	{'q': 2 (aligner R2: L02 pos16, L07 pos3), 'u': 1 (R0 only, L02 pos16; L10 pos1 takes no letter in any run)}	3	GAPS2 2 Oct 2026: passB positional had u 2 q 1; the re-synced lines read q; R0 ties q/u; key.tsv )0 = q (M)
+6)	{'n': 4 (aligner R2), 'k': 1 (L07 pos15), 'o': 2 (R0 only)}	5	GAPS2 2 Oct 2026: n 4/5 seeded, n/o tie unseeded; key.tsv 6) = n drops C -> M

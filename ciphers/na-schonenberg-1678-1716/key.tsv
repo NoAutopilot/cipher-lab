@@ -1,90 +1,90 @@
 code	value	grade	n	source	note
-60	e	M	11	period	passB gloss tally {'en': 1, 'e': 7, 'a': 1, 's': 1, 'n': 1} (7/11 = 64%)
-56	a	M	10	period	passB gloss tally {'a': 7, 'r': 2, 'v': 1} (7/10 = 70%)
-50	r	C	9	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/8 agreement in passB's own tally elsewhere ({'t': 1, 's': 4, 'r': 1, 'q': 1, 'o': 1})
-28	s	C	8	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/7 agreement in passB's own tally elsewhere ({'p': 2, 's': 1, 'e': 1, 'a': 2, 't': 1})
-6	a	C	8	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 4/7 agreement in passB's own tally elsewhere ({'d': 1, 'a': 4, 'l': 1, 'i': 1})
-89	n	C	8	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 5/7 agreement in passB's own tally elsewhere ({'n': 5, 'e': 1, 't': 1})
-10	e	C	7	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/6 agreement in passB's own tally elsewhere ({'s': 3, 'e': 2, 'r': 1})
-)1	r	C	6	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 3/5 agreement in passB's own tally elsewhere ({'t': 1, 'r': 3, 'o': 1})
-23	[?]	U	6		tied {'m': 2, 'r': 2, 's': 1, 'n': 1}, no majority in passB's own gloss -- left uncoded
-3	o	C	6	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 5/5 agreement in passB's own tally elsewhere ({'o': 5})
-38	e	C	6	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 4/5 agreement in passB's own tally elsewhere ({'e': 4, 'n': 1})
-6)	n	C	6	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/5 agreement in passB's own tally elsewhere ({'n': 2, 'k': 1, 'u': 1, 'o': 1})
-)6	y	C	5	period	passB gloss tally {'y': 4, 'z': 1} (4/5 = 80%)
-)8	a	M	6	period	passB gloss tally {'a': 2, 'l': 1, 'c': 1, 'm': 1} + L18's own gloss 'a' over )8 (GAPS 2 Oct 2026): 3/6 = 50%, stays M
-16	e	C	5	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/4 agreement in passB's own tally elsewhere ({'n': 1, 'e': 2, 'y': 1})
-30	u	M	5	period	passB gloss tally {'u': 2, 'v': 1, 'e': 1, 'g': 1} (2/5 = 40%)
-32	y	C	5	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 3/4 agreement in passB's own tally elsewhere ({'y': 3, 'e': 1})
-45	n	M	5	period	passB gloss tally {'n': 3, 'e': 2} (3/5 = 60%)
-94	[?]	U	5		tied {'q': 1, 'i': 1, 's': 1, 'r': 1, 'e': 1}, no majority in passB's own gloss -- left uncoded
-)2	r	M	4	period	passB gloss tally {'s': 1, 'r': 2, 'p': 1} (2/4 = 50%)
-12	a	M	4	period	passB gloss tally {'a': 2, 'p': 1, 'm': 1} (2/4 = 50%)
-15	d	M	4	period	passB gloss tally {'l': 1, 'd': 2, 'y': 1} (2/4 = 50%)
-2)	r	C	4	period	passB gloss tally {'r': 3, 'n': 1} (3/4 = 75%)
-3)	d	C	4	period	passB gloss tally {'e': 1, 'd': 3} (3/4 = 75%)
-36	c	C	4	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/3 agreement in passB's own tally elsewhere ({'c': 1, 'r': 1, 'e': 1})
-4)	p	C	4	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/3 agreement in passB's own tally elsewhere ({'p': 2, 'd': 1})
-49	n	C	4	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/3 agreement in passB's own tally elsewhere ({'r': 1, 'n': 1, 'u': 1})
-54	y	C	4	period	passB gloss tally {'y': 3, 'z': 1} (3/4 = 75%)
-59	d	M	4	period	passB gloss tally {'d': 2, 'o': 1, 'n': 1} (2/4 = 50%)
-8	o	C	4	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/3 agreement in passB's own tally elsewhere ({'o': 2, 'p': 1})
-)0	u	M	3	period	passB gloss tally {'u': 2, 'q': 1} (2/3 = 67%)
-24	o	M	3	crib-address	GAPS 2 Oct 2026: L19 pos2 aligned to the clear address 'A Dona Antonija de Albanylla' (23 letters = 23 groups; 15/16 resolved positions agree vs slid-window control max 0.286 over 229 L01-L14 windows and shuffled-crib control max 0.438 over 2000 permutations, crib_align.py); body tie {'o': 1, 'i': 1, 'l': 1} contains o (L01 pos11 'o'); graded M under rule 4's conflict clause: the crib value disagrees with body glosses i (L12 pos3) and l (L13 pos7), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
-25	[?]	U	3		tied {'a': 1, 'u': 1, 'p': 1}, no majority in passB's own gloss -- left uncoded
-31	x	C	3	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/2 agreement in passB's own tally elsewhere ({'d': 1, 'x': 1})
-34	a	M	3	crib-address	GAPS 2 Oct 2026: L19 pos4 = a in the address crib (controls as for 24); body tie {'s': 1, 'd': 1, 'a': 1} contains a (L12 pos1 'a'); graded M under rule 4's conflict clause: the crib value disagrees with body glosses s (L02 pos8) and d (L11 pos14), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
-46	o	M	3	period	passB gloss tally {'o': 2, 'e': 1} (2/3 = 67%)
-5	[?]	U	3		tied {'e': 1, 's': 1, 'd': 1}, no majority in passB's own gloss -- left uncoded
-51	t	M	3	crib-address	GAPS 2 Oct 2026: L19 pos7 = t in the address crib (controls as for 24); body tie {'t': 1, 'a': 1, 'e': 1} contains t (L03 pos16 't'); graded M under rule 4's conflict clause: the crib value disagrees with body glosses a (L08 pos6) and e (L13 pos13), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
-68	o	C	3	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 2/2 agreement in passB's own tally elsewhere ({'o': 2})
-)3	[?]	U	2		tied {'t': 1, 'o': 1}, no majority in passB's own gloss -- left uncoded
-11	a	M	2	crib-address	GAPS 2 Oct 2026: L19 pos22 = a in the address crib (controls as for 24); body tie {'a': 1, 's': 1} contains a (L05 pos6 'a'); graded M under rule 4's conflict clause: the crib value disagrees with body gloss s (L09 pos15), each a position-by-position gloss alignment the aligner (gap 2) has not yet checked
-13	b	C	2	period	passB gloss tally {'b': 2} (2/2 = 100%)
-14	[?]	U	2		tied {'l': 1, 'e': 1}, no majority in passB's own gloss -- left uncoded
-21	l	C	2	period	passB gloss tally {'l': 2} (2/2 = 100%)
-22	m	C	2	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/1 agreement in passB's own tally elsewhere ({'m': 1})
-26	[?]	U	2		tied {'q': 1, 'u': 1}, no majority in passB's own gloss -- left uncoded
-29	[?]	U	2		tied {'a': 1, 't': 1}, no majority in passB's own gloss -- left uncoded
-33	[?]	U	2		tied {'z': 1, 'n': 1}, no majority in passB's own gloss -- left uncoded
-35	b	C	2	period	passB gloss tally {'b': 2} (2/2 = 100%)
-43	l	C	2	period	passB gloss tally {'l': 2} (2/2 = 100%)
-65	l	M	2	crib-address	GAPS 2 Oct 2026: CONFLICT -- l at both crib positions L19 pos15 and pos21 (the two l's of 'albanylla'), against body glosses y (L08 pos8) and a (L13 pos8), both in lines passB flags as 1-2 groups misaligned and disagreeing with each other; graded M, logged in HYPOTHESES.md
-81	a	C	2	period	passB gloss tally {'a': 2} (2/2 = 100%)
-82	[?]	U	2		tied {'e': 1, 'd': 1}, no majority in passB's own gloss -- left uncoded
-93	r	C	2	period	passB gloss tally {'r': 2} (2/2 = 100%)
-95	[?]	U	2		tied {'e': 1, 'a': 1}, no majority in passB's own gloss -- left uncoded
-96	[?]	U	2		tied {'o': 1, 'n': 1}, no majority in passB's own gloss -- left uncoded
-98	[?]	U	2		tied {'y': 1, 'a': 1}, no majority in passB's own gloss -- left uncoded
-[blot]	[?]	U	2		tied {'m': 1, 'e': 1}, no majority in passB's own gloss -- left uncoded
-[triangle]	a	C	2	period	this worker's own pixel-verified count of L06 (P6, the one glossed line where the gloss-letter count exactly equals the group count, 20/20, no word-signs) plus 1/1 agreement in passB's own tally elsewhere ({'a': 1})
-)10	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
-)4	y	M	1	period	passB gloss tally {'y': 1} (1/1 = 100%)
-)5	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
-)52	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
-)9	b	M	1	period	passB gloss tally {'b': 1} (1/1 = 100%)
-18	g	M	1	period	passB gloss tally {'g': 1} (1/1 = 100%)
-2	u	M	1	period	passB gloss tally {'u': 1} (1/1 = 100%)
-20	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
-21)	n	M	1	period	passB gloss tally {'n': 1} (1/1 = 100%)
-36)	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
-40	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
-44	y	M	1	period	passB gloss tally {'y': 1} (1/1 = 100%)
-52	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
-55	b	M	1	period	passB gloss tally {'b': 1} (1/1 = 100%)
-58	j	M	1	period	passB gloss tally {'j': 1} (1/1 = 100%)
-66	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
-69	s	M	1	period	passB gloss tally {'s': 1} (1/1 = 100%)
-8)	p	M	1	period	passB gloss tally {'p': 1} (1/1 = 100%)
-88	m	C	2	period	passB gloss tally {'m': 1} (L03 pos8) + L18's own gloss 'm' over 88 (GAPS 2 Oct 2026, image check): 2/2 = 100%
-9	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
-90	o	M	1	period	passB gloss tally {'o': 1} (1/1 = 100%)
-99	z	M	1	period	passB gloss tally {'z': 1} (1/1 = 100%)
-[T]	o	M	1	period	passB gloss tally {'o': 1} (1/1 = 100%)
-[X]	e	M	1	period	passB gloss tally {'e': 1} (1/1 = 100%)
-[Z]	y	M	1	period	passB gloss tally {'y': 1} (1/1 = 100%)
-[circle]	r	M	1	period	passB gloss tally {'r': 1} (1/1 = 100%)
-[square]	n	M	1	period	passB gloss tally {'n': 1} (1/1 = 100%)
-[tilde]	a	M	1	period	passB gloss tally {'a': 1} (1/1 = 100%)
-61	f	C	1	period	GAPS 2 Oct 2026: L18 is glossed on the leaf -- 'forma.' stands in the small gloss hand letter-for-letter over 61.68.2).88.)8. (image check at native resolution, layout crop y1660-2200); f over 61. Never occurs in L01-L14; single pixel-verified occurrence, graded C by VX-RD01's own pixel-verified rule
+60	e	C	11	period	aligner 2 Oct 2026: R2 {e: 9, a: 1, s: 1}, R0 {e: 9, s: 1}, passB positional {e: 7, a: 1, en: 1, n: 1, s: 1} -- C bar (9/11) with the unseeded R0 agreeing
+56	a	C	10	period	aligner 2 Oct 2026: R2 {a: 9, r: 1}, R0 {a: 9, r: 1}, passB positional {a: 7, r: 2, v: 1} -- C bar (9/10) with the unseeded R0 agreeing
+28	s	M	7	period	aligner 2 Oct 2026: R2 {s: 5, a: 1, p: 1}, R0 {s: 5, a: 1}, passB positional {a: 2, p: 2, e: 1, s: 1, t: 1} -- plurality 5/7 short of the C bar
+50	s	M	7	period	aligner 2 Oct 2026: R2 {s: 6, r: 1}, R0 {s: 5, q: 1, r: 1}, passB positional {s: 4, o: 1, q: 1, r: 1, t: 1} -- CONFLICT: aligner top s (6/7, R0 agrees) against the pixel-verified L06 gloss r at one position; M, L06 position kept in exceptions.tsv; value changed from r (C)
+6	a	C	7	period	aligner 2 Oct 2026: R2 {a: 7}, R0 {a: 5, i: 1}, passB positional {a: 4, d: 1, i: 1, l: 1} -- seeded (old C); C bar (7/7) with the unseeded R0 agreeing
+89	n	C	7	period	aligner 2 Oct 2026: R2 {n: 7}, R0 {n: 7}, passB positional {n: 5, e: 1, t: 1} -- seeded (old C); C bar (7/7) with the unseeded R0 agreeing
+)1	r	C	6	period	aligner 2 Oct 2026: R2 {r: 6}, R0 {r: 4, e: 1, o: 1}, passB positional {r: 3, o: 1, t: 1} -- seeded (old C); C bar (6/6) with the unseeded R0 agreeing
+10	e	C	6	period	aligner 2 Oct 2026: R2 {e: 6}, R0 {e: 4, r: 2}, passB positional {s: 3, e: 2, r: 1} -- seeded (old C); C bar (6/6) with the unseeded R0 agreeing
+23	[?]	U	6		aligner 2 Oct 2026: R2 {n: 2, r: 2, e: 1, m: 1}, R0 {n: 2, r: 2, e: 1, m: 1}, passB positional {r: 2, m: 1, n: 1, s: 1} -- R2 tally tied; U
+)6	y	C	5	period	aligner 2 Oct 2026: R2 {y: 4, i: 1}, R0 {y: 4, z: 1}, passB positional {y: 4, z: 1} -- seeded (old C); C bar (4/5) with the unseeded R0 agreeing
+)8	a	C	5	period	aligner 2 Oct 2026: R2 {a: 4, m: 1}, R0 {a: 3, l: 1, m: 1, n: 1}, passB positional {a: 3, c: 1, l: 1, m: 1} -- C bar (4/5) with the unseeded R0 agreeing
+2)	r	C	5	period	aligner 2 Oct 2026: R2 {r: 4, n: 1}, R0 {r: 4, e: 1}, passB positional {r: 4, n: 1} -- seeded (old C); C bar (4/5) with the unseeded R0 agreeing
+3	o	C	5	period	aligner 2 Oct 2026: R2 {o: 5}, R0 {o: 4, p: 1}, passB positional {o: 5} -- seeded (old C); C bar (5/5) with the unseeded R0 agreeing
+30	u	C	5	period	aligner 2 Oct 2026: R2 {u: 4, g: 1}, R0 {u: 4, g: 1}, passB positional {u: 2, e: 1, g: 1, v: 1} -- C bar (4/5) with the unseeded R0 agreeing
+38	e	C	5	period	aligner 2 Oct 2026: R2 {e: 5}, R0 {e: 4, d: 1}, passB positional {e: 4, n: 1} -- seeded (old C); C bar (5/5) with the unseeded R0 agreeing
+45	n	C	5	period	aligner 2 Oct 2026: R2 {n: 5}, R0 {n: 4, e: 1}, passB positional {n: 3, e: 2} -- C bar (5/5) with the unseeded R0 agreeing
+6)	n	M	5	period	aligner 2 Oct 2026: R2 {n: 4, k: 1}, R0 {n: 2, o: 2, k: 1}, passB positional {n: 2, k: 1, o: 1, u: 1} -- C bar in R2 (4/5) but R0 (unseeded) top n tied -- seeded counts are not independent evidence
+94	s	M	5	period	aligner 2 Oct 2026: R2 {s: 3, i: 1, r: 1}, R0 {s: 2, e: 1, i: 1, r: 1}, passB positional {e: 1, i: 1, q: 1, r: 1, s: 1} -- plurality 3/5 short of the C bar; value changed from [?] (U)
+)2	r	M	4	period	aligner 2 Oct 2026: R2 {r: 2, s: 1, v: 1}, R0 {e: 1, r: 1, s: 1, v: 1}, passB positional {r: 2, p: 1, s: 1} -- plurality 2/4 short of the C bar
+12	a	C	4	period	aligner 2 Oct 2026: R2 {a: 4}, R0 {a: 4}, passB positional {a: 2, m: 1, p: 1} -- C bar (4/4) with the unseeded R0 agreeing
+15	d	M	4	period	aligner 2 Oct 2026: R2 {d: 2, l: 1, y: 1}, R0 {d: 2, l: 1, y: 1}, passB positional {d: 2, l: 1, y: 1} -- plurality 2/4 short of the C bar
+16	e	C	4	period	aligner 2 Oct 2026: R2 {e: 4}, R0 {e: 4}, passB positional {e: 2, n: 1, y: 1} -- seeded (old C); C bar (4/4) with the unseeded R0 agreeing
+3)	d	C	4	period	aligner 2 Oct 2026: R2 {d: 4}, R0 {d: 4}, passB positional {d: 3, e: 1} -- seeded (old C); C bar (4/4) with the unseeded R0 agreeing
+34	a	M	4	crib-address	aligner 2 Oct 2026: R2 {a: 3, d: 1}, R0 {a: 3, d: 1}, passB positional {a: 1, d: 1, s: 1} -- crib code: R1 (crib not seeded) still shows a disagreeing body gloss (L02:8=a L11:14=d L12:1=a L14:17=a), R0 top a; conflict stands (rule 4)
+54	y	C	4	period	aligner 2 Oct 2026: R2 {y: 4}, R0 {y: 3, n: 1}, passB positional {y: 3, z: 1} -- seeded (old C); C bar (4/4) with the unseeded R0 agreeing
+59	d	C	4	period	aligner 2 Oct 2026: R2 {d: 4}, R0 {d: 2, a: 1, n: 1}, passB positional {d: 2, n: 1, o: 1} -- C bar (4/4) with the unseeded R0 agreeing
+24	o	C	3	crib-address	aligner 2 Oct 2026: R2 {o: 3}, R0 {o: 2, i: 1}, passB positional {i: 1, l: 1, o: 1} -- crib code: R1 (crib not seeded) reads o at every body occurrence (L01:11=o L12:3=o L13:7=o), R0 top o; the disagreeing passB glosses were alignment slips
+25	p	C	3	period	aligner 2 Oct 2026: R2 {p: 3}, R0 {p: 3}, passB positional {a: 1, p: 1, u: 1} -- C bar (3/3) with the unseeded R0 agreeing; value changed from [?] (U)
+32	y	C	3	period	aligner 2 Oct 2026: R2 {y: 3}, R0 {y: 2, a: 1, p: 1}, passB positional {y: 3, e: 1} -- seeded (old C); C bar (3/3) with the unseeded R0 agreeing
+36	c	M	3	period	aligner 2 Oct 2026: R2 {c: 2, e: 1}, R0 {c: 1, r: 1, u: 1}, passB positional {c: 1, e: 1, r: 1} -- plurality 2/3 short of the C bar
+4)	p	C	3	period	aligner 2 Oct 2026: R2 {p: 3}, R0 {p: 2, u: 1}, passB positional {p: 2, d: 1} -- seeded (old C); C bar (3/3) with the unseeded R0 agreeing
+46	o	C	3	period	aligner 2 Oct 2026: R2 {o: 3}, R0 {o: 3}, passB positional {o: 2, e: 1} -- C bar (3/3) with the unseeded R0 agreeing
+49	n	M	3	period	aligner 2 Oct 2026: R2 {n: 1, r: 1, u: 1}, R0 {n: 1, r: 1, u: 1}, passB positional {n: 1, r: 1, u: 1} -- R2 tally tied; the pixel-verified L06 gloss (n) breaks the tie at M (rule 4 conflict clause)
+5	e	M	3	period	aligner 2 Oct 2026: R2 {e: 2, d: 1}, R0 {e: 2, d: 1}, passB positional {d: 1, e: 1, s: 1} -- plurality 2/3 short of the C bar; value changed from [?] (U)
+68	o	C	3	period	aligner 2 Oct 2026: R2 {o: 3}, R0 {o: 3}, passB positional {o: 3} -- seeded (old C); C bar (3/3) with the unseeded R0 agreeing
+8	o	C	3	period	aligner 2 Oct 2026: R2 {o: 3}, R0 {o: 2, p: 1}, passB positional {o: 2, p: 1} -- seeded (old C); C bar (3/3) with the unseeded R0 agreeing
+)0	q	M	2	period	aligner 2 Oct 2026: R2 {q: 2}, R0 {q: 1, u: 1}, passB positional {u: 2, q: 1} -- C bar in R2 (2/2) but R0 (unseeded) top q tied -- seeded counts are not independent evidence; value changed from u (M)
+11	a	M	2	crib-address	aligner 2 Oct 2026: R2 {a: 2}, R0 {a: 1, s: 1}, passB positional {a: 1, s: 1} -- crib code: R1 (crib not seeded) still shows a disagreeing body gloss (L05:6=a L09:15=s), R0 top a tie; conflict stands (rule 4)
+13	b	C	2	period	aligner 2 Oct 2026: R2 {b: 2}, R0 {b: 2}, passB positional {b: 2} -- seeded (old C); C bar (2/2) with the unseeded R0 agreeing
+14	[?]	U	2		aligner 2 Oct 2026: R2 {e: 1, l: 1}, R0 {e: 1, l: 1}, passB positional {e: 1, l: 1} -- R2 tally tied; U
+21	l	C	2	period	aligner 2 Oct 2026: R2 {l: 2}, R0 {l: 2}, passB positional {l: 2} -- seeded (old C); C bar (2/2) with the unseeded R0 agreeing
+26	q	M	2	period	aligner 2 Oct 2026: R2 {q: 2}, R0 {q: 1, u: 1}, passB positional {q: 1, u: 1} -- C bar in R2 (2/2) but R0 (unseeded) top q tied -- seeded counts are not independent evidence; value changed from [?] (U)
+29	t	C	2	period	aligner 2 Oct 2026: R2 {t: 2}, R0 {t: 2}, passB positional {a: 1, t: 1} -- C bar (2/2) with the unseeded R0 agreeing; value changed from [?] (U)
+31	x	M	2	period	aligner 2 Oct 2026: R2 {d: 1, x: 1}, R0 {d: 1, x: 1}, passB positional {d: 1, x: 1} -- R2 tally tied; the pixel-verified L06 gloss (x) breaks the tie at M (rule 4 conflict clause)
+33	z	M	2	period	aligner 2 Oct 2026: R2 {z: 2}, R0 {n: 1, z: 1}, passB positional {n: 1, z: 1} -- C bar in R2 (2/2) but R0 (unseeded) top n tied -- seeded counts are not independent evidence; value changed from [?] (U)
+35	b	C	2	period	aligner 2 Oct 2026: R2 {b: 2}, R0 {b: 2}, passB positional {b: 2} -- seeded (old C); C bar (2/2) with the unseeded R0 agreeing
+43	l	C	2	period	aligner 2 Oct 2026: R2 {l: 2}, R0 {l: 2}, passB positional {l: 2} -- seeded (old C); C bar (2/2) with the unseeded R0 agreeing
+51	t	C	2	crib-address	aligner 2 Oct 2026: R2 {t: 2}, R0 {t: 2, y: 1}, passB positional {a: 1, e: 1, t: 1} -- crib code: R1 (crib not seeded) reads t at every body occurrence (L03:16=t L08:6=- L13:13=t), R0 top t; the disagreeing passB glosses were alignment slips
+55	[?]	U	2		aligner 2 Oct 2026: R2 {b: 1, z: 1}, R0 {b: 1, z: 1}, passB positional {b: 1} -- R2 tally tied; U
+65	l	C	2	crib-address	aligner 2 Oct 2026: R2 {l: 2}, R0 {l: 2}, passB positional {a: 1, y: 1} -- crib code: R1 (crib not seeded) reads l at every body occurrence (L08:8=l L13:8=l), R0 top l; the disagreeing passB glosses were alignment slips
+82	e	M	2	period	aligner 2 Oct 2026: R2 {e: 2}, R0 {d: 1, e: 1}, passB positional {d: 1, e: 1} -- C bar in R2 (2/2) but R0 (unseeded) top d tied -- seeded counts are not independent evidence; value changed from [?] (U)
+88	m	C	2	period	aligner 2 Oct 2026: R2 {m: 2}, R0 {m: 2}, passB positional {m: 2} -- seeded (old C); C bar (2/2) with the unseeded R0 agreeing
+93	r	C	2	period	aligner 2 Oct 2026: R2 {r: 2}, R0 {r: 2}, passB positional {r: 2} -- seeded (old C); C bar (2/2) with the unseeded R0 agreeing
+95	t	C	2	period	aligner 2 Oct 2026: R2 {t: 2}, R0 {t: 2}, passB positional {a: 1, e: 1} -- C bar (2/2) with the unseeded R0 agreeing; value changed from [?] (U)
+96	[?]	U	2		aligner 2 Oct 2026: R2 {o: 1, y: 1}, R0 {o: 1, y: 1}, passB positional {n: 1, o: 1} -- R2 tally tied; U
+98	y	C	2	period	aligner 2 Oct 2026: R2 {y: 2}, R0 {y: 2}, passB positional {a: 1, y: 1} -- C bar (2/2) with the unseeded R0 agreeing; value changed from [?] (U)
+[blot]	[?]	U	2		aligner 2 Oct 2026: R2 {e: 1, n: 1}, R0 {b: 1, n: 1}, passB positional {e: 1} -- R2 tally tied; U
+)10	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence; value changed from e (M)
+)3	t	M	1	period	aligner 2 Oct 2026: R2 {t: 1}, R0 {t: 1, y: 1}, passB positional {o: 1, t: 1} -- single glossed occurrence; value changed from [?] (U)
+)4	r	M	1	period	aligner 2 Oct 2026: R2 {r: 1}, R0 {r: 1}, passB positional {y: 1} -- single glossed occurrence; value changed from y (M)
+)5	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence; value changed from e (M)
+)9	b	M	1	period	aligner 2 Oct 2026: R2 {b: 1}, R0 {o: 1}, passB positional {b: 1} -- single glossed occurrence
+18	g	M	1	period	aligner 2 Oct 2026: R2 {g: 1}, R0 {g: 1}, passB positional {g: 1} -- single glossed occurrence
+2	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {u: 1}, passB positional {u: 1} -- single glossed occurrence
+20	a	M	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- single glossed occurrence
+21)	n	M	1	period	aligner 2 Oct 2026: R2 {n: 1}, R0 {n: 1}, passB positional {n: 1} -- single glossed occurrence
+22	m	C	1	period	aligner 2 Oct 2026: R2 {m: 1}, R0 {m: 1}, passB positional {m: 1} -- seeded (old C); single glossed occurrence, pixel-verified by VX-RD01 (L06 recount) or read on the leaf at native resolution (L18 gloss); R0 and R2 agree
+36)	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
+40	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
+44	y	M	1	period	aligner 2 Oct 2026: R2 {y: 1}, R0 {y: 1}, passB positional {y: 1} -- single glossed occurrence
+52	u	M	1	period	aligner 2 Oct 2026: R2 {u: 1}, R0 {e: 1}, passB positional {a: 1} -- single glossed occurrence; value changed from a (M)
+58	i	M	1	period	aligner 2 Oct 2026: R2 {i: 1}, R0 {j: 1}, passB positional {j: 1} -- single glossed occurrence; value changed from j (M)
+61	f	C	1	period	aligner 2 Oct 2026: R2 {f: 1}, R0 {f: 1}, passB positional {f: 1} -- seeded (old C); single glossed occurrence, pixel-verified by VX-RD01 (L06 recount) or read on the leaf at native resolution (L18 gloss); R0 and R2 agree
+66	m	M	1	period	aligner 2 Oct 2026: R2 {m: 1}, R0 {m: 1}, passB positional {e: 1} -- single glossed occurrence; value changed from e (M)
+69	p	M	1	period	aligner 2 Oct 2026: R2 {p: 1}, R0 {s: 1}, passB positional {s: 1} -- single glossed occurrence; value changed from s (M)
+8)	p	M	1	period	aligner 2 Oct 2026: R2 {p: 1}, R0 {p: 1}, passB positional {p: 1} -- single glossed occurrence
+81	a	M	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 2}, passB positional {a: 2} -- single glossed occurrence
+9	l	M	1	period	aligner 2 Oct 2026: R2 {l: 1}, R0 {a: 1}, passB positional {a: 1} -- single glossed occurrence; value changed from a (M)
+90	o	M	1	period	aligner 2 Oct 2026: R2 {o: 1}, R0 {o: 1}, passB positional {o: 1} -- single glossed occurrence
+99	z	M	1	period	aligner 2 Oct 2026: R2 {z: 1}, R0 {z: 1}, passB positional {z: 1} -- single glossed occurrence
+[T]	o	M	1	period	aligner 2 Oct 2026: R2 {o: 1}, R0 {o: 1}, passB positional {o: 1} -- single glossed occurrence
+[X]	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {e: 1} -- single glossed occurrence
+[Z]	y	M	1	period	aligner 2 Oct 2026: R2 {y: 1}, R0 {y: 1}, passB positional {y: 1} -- single glossed occurrence
+[circle]	o	M	1	period	aligner 2 Oct 2026: R2 {o: 1}, R0 {c: 1}, passB positional {r: 1} -- single glossed occurrence; value changed from r (M)
+[square]	e	M	1	period	aligner 2 Oct 2026: R2 {e: 1}, R0 {e: 1}, passB positional {n: 1} -- single glossed occurrence; value changed from n (M)
+[tilde]	a	M	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- single glossed occurrence
+[triangle]	a	C	1	period	aligner 2 Oct 2026: R2 {a: 1}, R0 {a: 1}, passB positional {a: 1} -- seeded (old C); single glossed occurrence, pixel-verified by VX-RD01 (L06 recount) or read on the leaf at native resolution (L18 gloss); R0 and R2 agree
+)52	[?]	U	0		aligner 2 Oct 2026: R2 {}, R0 {a: 1}, passB positional {a: 1} -- took no gloss letter in R2 (null or unaligned); U
 [n]	ñ	C	1	crib-address	GAPS 2 Oct 2026: L19 pos3 = ñ of 'Dona' in the address crib (controls as for 24); the sign itself is an n with a small ring/mark above it (image check), never in L01-L14

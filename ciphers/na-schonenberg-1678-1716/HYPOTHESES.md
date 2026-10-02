@@ -25,6 +25,24 @@ Append-only. Prose sections above the table; the table is written by `tools/fami
 - What would settle the M codes: `tools/interlinear_align.py` over L01-L14 (gap 2), which decides whether the
   disagreeing body glosses are alignment slips (then the crib values rise to C) or genuine homophony/second values.
 
+## H2 (GAPS2-na-schonenberg-1678-1716, 2 Oct 2026): passB's gloss letters are right, their attachment to groups was off in seven lines
+
+- `tools/interlinear_align.py` (align/gloss_align.py, R0 unseeded / R1 C-seeded / R2 C+crib-seeded) re-attaches 88 of 256 glossed
+  tokens, all in L02, L08, L09, L10, L12, L13, L14 and two in L01 -- the lines passB's own summary flagged (plus L02, a whole-line
+  one-position slip). R2 agreement 0.699, 44 C-bar codes; within-line shuffled-gloss control (n=300, seed 1) max 0.301 / 11, 0 at
+  or above either target. R0 alone (no key) reaches 0.570 / 30 against its own control max 0.254 / 7.
+- H1's open question answered for three of five crib codes: 24 = o, 51 = t, 65 = l read the crib letter (or nothing) at every body
+  occurrence in R1, where they are not seeded, with R0 agreeing -> C. 34 = a keeps a body d at L11 pos14 in every run (3/4) and
+  11 = a keeps s at L09 pos15 (R0/R1 tie) -> M, conflicts standing.
+- New conflicts, all two-witness and all graded M (rule 4): **50** -- s at six glossed occurrences in every run (R2 6/7 even when
+  seeded r) against VX-RD01's pixel-verified r at L06 pos17 (key.tsv 50 = s M; exceptions.tsv keeps L06 pos17 = r); **49** n/r/u
+  and **31** x/d tie, broken toward the L06 letter at M; **)0** q 2/2 in R2 (R0 q/u tie) where passB had u 2/3; **6)** n 4/5 in R2
+  but R0 ties n/o. **8)** p vs l (L03 pos0 / L19 pos20) unchanged. Witnesses in conflicts.tsv (2 Oct 2026 GAPS2 rows).
+- What would settle them: the image pass of gap 2 (one line crop per call, gloss letter over the named groups only); an aligner
+  cannot add letters passB did not record (L08 pos18, L10 pos14-15, L13 pos16, L14 pos17 still have none), and the five conflicts
+  are each one witness against one or three, which no re-run of the same tool on the same letters can break (rule 3's
+  third-attempt clause: the next instrument is the image, not the aligner again).
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |

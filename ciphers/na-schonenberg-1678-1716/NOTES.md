@@ -1,4 +1,5 @@
 partial
+GAPS2 2 Oct 2026: the leaf's own gloss re-aligned to its groups with tools/interlinear_align.py (align/): agreement 0.699 vs a within-line shuffled-gloss control max 0.301 (n=300), 44 codes at the C bar vs control max 11; key.tsv rebuilt, leaf now C 136 / M 127 / U 16 (was 99/142/38), L18-L19 C 21 / M 7; three of the five crib codes (24, 51, 65) rise to C, 34 and 11 stay M; decode_key.py --check exit 0; judge on the 28-letter closing string FAIL unchanged (-1.05 vs real_p05 -1.014), 0 of 20 shuffled targets PASS.
 GAPS 2 Oct 2026: both closing lines now read -- L18 is glossed on the leaf after all ("forma." in the gloss hand over its 5 groups, image
 check) and L19 aligns to the clear address "A Doña Antonija de Albanylla" (15/16 vs controls max 0.286 and 0.438, crib_align.py); 28/28 tokens
 valued, C 15 M 13, judge FAIL on a 28-letter name string (pasted below). VX-RD01, 25 Sept 2026: L01-L14 period gloss transcribed (H-grade key source).
@@ -223,22 +224,86 @@ neither digitised (web search 2, 2 Oct 2026); official cipher, probably not this
 ledger. Vision calls 2 of 2. Hosts: WebSearch 10, dspace.library.uu.nl 1 (403), studenttheses.uu.nl 1 (403),
 nationaalarchief.nl 1; no image refetched.
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated GAPS 2 Oct 2026)
-Read so far: 279 of 279 cipher groups (100%) now carry a value: 251 body groups under the leaf's own period gloss (L01-L14, ciphertext.tsv; 244-246 with a gloss letter, see 1 Oct text in git history), L18's 5 under its own gloss "forma." (found 2 Oct 2026), L19's 23 under the address crib with controls (15/16 resolved agree); by grade the leaf is C 99 / M 142 / U 38 (reading_tokens.tsv, 2 Oct 2026), L18-L19 alone C 15 / M 13 / U 0. Read-as-sense is still unmeasured for the body: the gloss has never been segmented into Spanish words ("Letter's gist" is M-grade).
-Resolved 2 Oct 2026 (GAPS-na-schonenberg-1678-1716): the L18-L19 gap -- "forma." is L18's own interlinear gloss (layout, image check), L19 = "a doña antonya de albanylla" against the address (crib_align.py, slid-window and shuffled-crib controls both at 0 of 229 / 0 of 2000 at or above target), decode_key.py --check exit 0; 65 and 8) logged as conflicts (conflicts.tsv, HYPOTHESES.md H1).
-- L01-L14 code-to-gloss alignment: 22 tied codes, 55 codes in conflicts.tsv (49 + the 6 crib rows), 5 tail groups with no gloss letter (L08 pos18 `)2`, L10 pos14-15 `)1` `55`, L13 pos16 `23`, L14 pos17 `34`), regenerated through key.tsv as 38 U / 129 M body tokens; the five crib-fixed codes (24, 34, 51, 11, 65) sit at M only because one or two body glosses each disagree with the crib - blocker: not-attempted; key.tsv and rederivation_key.tsv are both a plurality tally of passB's position-by-position alignment, which passB itself says is off by 1-2 groups on L04, L08, L10, L11, L13, L14 (passB_summary.txt); only L06 was pixel-verified (20/20); tools/interlinear_align.py has never been run here; next: run tools/interlinear_align.py line by line on (group sequence, gloss letter sequence) for L01-L14, seeded with the C codes and the crib-fixed codes, rebuild key.tsv from its counts, raise the crib codes to C where the disagreeing glosses prove to be alignment slips, list only the codes it leaves unsettled for the image pass, ~$4
-- Gloss and group transcription in the dense stretch L04-L05 and L07-L14 (66 of 251 glossed-line rows at M confidence) plus the specific doubts passB names: tick-before vs tick-after and tick vs digit (the 8) = p vs l conflict at L03 pos0 / L19 pos20 is one of them), the 9 drawn-shape signs; L01's later-ink `23`/"N"/blot; L09 pos0 "20" vs "Lo" - blocker: not-attempted; NOTES "Suggested next step" and NEXT-STEPS.tsv (line 115, runnable, never run); the leaf reads cleanly at native resolution and 2x (L06, L18, L19), so the limit is alignment in crowded hand, not image quality; next: after the aligner, cut crops with `tools/iiif_lines.py --image images/NL-HaNA_1.02.04_63_0001.jpg --out images/lines` (command pasted in the brief), one line crop per Sonnet subagent call, only for lines with unsettled codes, at most 12 lines + 1 reconciliation unit at ~$1.5 per call, ~$20
-- Body plaintext L01-L14 as Spanish (gloss is an unsegmented letter run, e.g. L14 "sobre...en esta" + L18 "forma"; the L01 date "Nobe[mbre]" is M) - blocker: not-attempted; no word-segmented or expanded reading exists and the spec judged only the closing lines, so the read-as-sense figure cannot be measured; next: after the alignment and image pass, segment and expand the gloss against the image into a per-line reading, run tools/judge_plaintext.py on it with shuffled-null controls (es corpus era check per rule 3 first, the letter is 1702-1716), ~$3
+## GAPS2-na-schonenberg-1678-1716 (2 Oct 2026, account-4)
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of the Remaining-gaps section as rewritten at 02:07 UTC, run
+02:44-03:1x UTC. Intake gate exit 0 at the start (the web/blog check was logged by GAPS at 02:07). Disk only, 0 vision calls, 0 requests.
 
-## Escalation (1 Oct 2026; updated GAPS 2 Oct 2026)
+**0. A transcription fix first (never silent, rule "ciphertext as transcribed").** ciphertext.tsv L01 pos6 (`23`) and pos7 (`[blot]`) carried the
+letter "M" in the gloss column and nothing in conf: a column slip copied from passB.tsv, whose own note on both rows says "no gloss letter
+visible". Both rows now read gloss empty, conf M. The old key's tally for 23 counted that "M" as a gloss m (`tied {'m': 2, ...}`); the real
+positional tally is {r: 2, m: 1, s: 1, n: 1}, still a tie.
+
+**1. Alignment (`align/gloss_align.py --shuffles 300 --seed 1`, output `align/summary.txt`).** For each glossed line (L01-L14 and L18) the plain
+line is passB's gloss letters in order (L01 pos5 "en" = two letters) and the cipher line its groups as `@`-prefixed codes (`align/pairs.tsv`);
+`tools/interlinear_align.py` in `--code-prefix` mode then re-decides which letter sits over which group (a group may take none, a letter may be
+skipped), six hard-EM iterations. Three runs on the same pairs: R0 unseeded; R1 `--prior` seeded with key.tsv's grade-C codes only; R2 seeded with
+the C codes plus the five crib-fixed codes 24, 34, 51, 11, 65 (the Verdict line's run). The tool's own caveat (a seeded code's counts are not
+independent evidence) is why R0 and R1 are kept beside R2: R1 decides the crib codes (not seeded there), R0 shows what the gloss says with no key.
+Statistic: fraction of code tokens whose aligned letter equals that code's leaf-wide top letter at >=2 occurrences (the tool's status "agrees"),
+and the number of codes at the folder's C bar (>=2 occurrences, >=75%). Control (rule 3): the same run on each line's gloss letters shuffled within
+the line, which changes both statistics, so it can fail.
+
+| run | prior | code tokens | agrees | C-bar codes | tokens moved vs passB's positional letter |
+|---|---|---|---|---|---|
+| R0 | none | 256 | 0.570 | 30 | -- |
+| R1 | C codes (32) | 256 | 0.680 | 40 | -- |
+| R2 | C + crib codes (37) | 256 | **0.699** | **44** | 88 of 256 |
+| control R2, within-line shuffled gloss, n=300 | as R2 | 256 | mean 0.232, p95 0.277, max 0.301, **0 at or above 0.699** | mean 5.4, p95 9, max 11, **0 at or above 44** | -- |
+| control R0, same shuffles | none | 256 | mean 0.179, p95 0.223, max 0.254, 0 at or above 0.570 | mean 2.2, p95 5, max 7, 0 at or above 30 | -- |
+
+The 88 moved tokens (`align/moves_R2.tsv`) sit in exactly the lines passB's own summary flagged plus L02: L02 18 (the whole line is one position
+off in passB -- 89 read "e" and 16 "n" there against n 7/7 and e 4/4 everywhere else; re-synced, 81 takes no letter and the final "e" is left
+over), L10 15, L12 15, L08 13, L13 11, L14 8, L09 6, L01 2; L03-L07 and L11 unchanged. Every C-graded anchor in a moved line now agrees with
+its leaf-wide value; the moves are re-syncs, not re-readings (no letter was added or changed, only re-attached to a neighbouring group).
+
+**2. Crib codes (gap 1's question: slips or homophony).** Under R1, where they are not seeded: 24 reads o at all three body occurrences
+(L01:11, L12:3, L13:7 -- passB had i and l at the last two), 65 reads l at both (L08:8, L13:8 -- passB y and a), 51 reads t at L03:16 and L13:13
+with L08:6 taking no letter (passB a, e), each with R0's top the same letter: **24 = o, 51 = t, 65 = l rise to C** (crib + body, conflicts
+dissolved as alignment slips). 34 keeps d at L11:14 in every run (a 3/4) and 11 keeps s at L09:15 in R0/R1 (a 1/2, tie): **34 and 11 stay M**,
+conflicts standing (rule 4; HYPOTHESES.md H2).
+
+**3. Key rebuilt (`align/rebuild_key.py`, rule in its docstring; the key as it stood is `align/key_before_2026-10-02.tsv`).** key.tsv: 89 codes, C 40
+/ M 43 / U 6 (was 32 / 38 / 19 by the same file). A seeded code keeps C only when R2 is at the bar and the unseeded R0 agrees without a tie; a
+code VX-RD01 graded C from its pixel-verified L06 recount whose aligner tally disagrees is a two-witness conflict at M, never overruled:
+**50 = s (M)** -- s at its six other glossed occurrences in every run (R0 5/7, R2 6/7 even when seeded r) against the pixel-verified r at L06
+pos17, which keeps its own value through exceptions.tsv; 49 and 31 tie three and two ways, broken toward the L06 letter at M; 28, 36, 6) and 81
+drop C -> M (R0 below the bar or tied, or one occurrence left); )0 reads q 2/2 where passB had u 2/3 (M). Rises: 60, 56, )8, 30, 45, 12, 59, 46 M
+-> C; 25 = p, 29 = t, 95 = t, 98 = y from U -> C; 94 = s, 5 = e, 26 = q, 33 = z, 82 = e, )3 = t from U -> M; 10 single-occurrence codes in moved
+lines change value at M ()10, )4, )5, 52, 58, 66, 69, 9, [circle], [square]); 55 and )52 fall to U (tie / took no letter). The whole list is
+`align/rebuild_key.py`'s printout. `python3 tools/decode_key.py ciphers/na-schonenberg-1678-1716` then `--check`: "reading up to date", **exit 0**.
+Tokens (rule 4), reading_tokens.tsv: whole leaf 279: H 0, C 136, S 0, M 127, I 0, U 16 (was C 99 / M 142 / U 38); L01-L14 (251): C 115, M 120,
+U 16; L18-L19 (28): C 21, M 7, U 0 (was C 15 / M 13). L18-L19's letters are unchanged ("f o r m a" / "a d o ñ a a n t o n y a d e a l b a n y
+l l a"); only grades moved.
+
+**4. Judge, pasted as it came (`align/shuffled_target_judge.py --shuffles 20 --seed 1`).** Real: `FAIL language: score=-1.05, null_p99=-1.395,
+real_p05=-1.014, real_median=-0.825, mode=both, N=28` / `ok words: cover=0.857` -- the same FAIL as at 02:07 on the same 28-letter string (a noun
+and a personal name, not prose). Shuffled target (L18+L19 group order shuffled, decoded with the same key): **0 PASS of 20**, language scores
+-1.70 to -2.37. The judge is not voided for this family at this N, but the reading does not clear it either, so no "reading ready" line.
+
+**What was found / not found.** The gloss-to-group alignment was the limit, as the 1 Oct gap said: re-aligning passB's own letters, with no new
+reading of the image, lifts the leaf from 99 to 136 C tokens and from 38 to 16 U tokens against a control that never comes within half the
+target. Still unsettled, for the image pass: 6 U codes (23, 14, 55, 96, [blot], )52) and 5 conflict codes (50, 34, 49, 11, 31), spread over
+every body line (no line is free of one), plus 8) = p vs l (L03:0 vs L19:20, unchanged). No printed or web source found (unchanged; rule 10,
+novelty is the verifier's). Files: `align/` (gloss_align.py, rebuild_key.py, shuffled_target_judge.py, pairs.tsv, prior_C.tsv, prior_Ccrib.tsv,
+align_R0/R1/R2.tsv, key_R0/R1/R2.tsv, moves_R2.tsv, control.tsv, summary.txt, key_before_2026-10-02.tsv), key.tsv, exceptions.tsv (L06 pos17
+row), ciphertext.tsv (L01 pos6-7 fix), reading.txt, reading_tokens.tsv. Cost: the lane ledger. Vision calls 0. Hosts: none.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated GAPS and GAPS2 2 Oct 2026)
+Read so far: 279 of 279 cipher groups (100%) carry a value: 251 body groups under the leaf's own period gloss (L01-L14, ciphertext.tsv, re-aligned to the groups 2 Oct 2026 by tools/interlinear_align.py, align/), L18's 5 under its own gloss "forma." (found 2 Oct 2026), L19's 23 under the address crib with controls (15/16 resolved agree); by grade the leaf is C 136 / M 127 / U 16 (reading_tokens.tsv, GAPS2 2 Oct 2026; was 99/142/38), L18-L19 alone C 21 / M 7 / U 0. Read-as-sense is still unmeasured for the body: the gloss has never been segmented into Spanish words ("Letter's gist" is M-grade).
+Resolved 2 Oct 2026 (GAPS-na-schonenberg-1678-1716): the L18-L19 gap -- "forma." is L18's own interlinear gloss (layout, image check), L19 = "a doña antonya de albanylla" against the address (crib_align.py, slid-window and shuffled-crib controls both at 0 of 229 / 0 of 2000 at or above target), decode_key.py --check exit 0; 65 and 8) logged as conflicts (conflicts.tsv, HYPOTHESES.md H1).
+Resolved 2 Oct 2026 (GAPS2-na-schonenberg-1678-1716): the L01-L14 code-to-gloss alignment -- tools/interlinear_align.py on passB's own gloss letters (align/), R2 agreement 0.699 and 44 C-bar codes vs a within-line shuffled-gloss control max 0.301 / 11 (n=300, 0 at or above target); key.tsv rebuilt (C 40 / M 43 / U 6), 24, 51, 65 raised to C, 34 and 11 held at M, 50 = s at M against the pixel-verified L06 r (exceptions.tsv); decode_key.py --check exit 0; 88 of 256 tokens re-attached, all in the lines passB flagged plus L02.
+- Gloss and group transcription of the codes the aligner leaves unsettled: 6 U codes (23, 14, 55, 96, [blot], )52) and 5 conflict codes (50 s-vs-r, 34 a-vs-d, 49 n/r/u, 11 a-vs-s, 31 x-vs-d), plus 8) = p vs l (L03 pos0 / L19 pos20) and the tick-before/tick-after doubts passB names; one or more of these sits in every body line L01-L14 (reading_tokens.tsv) - blocker: not-attempted; the leaf reads cleanly at native resolution and 2x (L06, L18, L19), the limit was alignment, now reduced to these 12 codes; next: cut crops with `tools/iiif_lines.py --image images/NL-HaNA_1.02.04_63_0001.jpg --out images/lines`, one line crop per Sonnet subagent call for the 11 lines that carry a conflict or U code at a position the aligner moved (align/moves_R2.tsv) or a conflict witness (L02, L03, L06, L08, L09, L10, L11, L12, L13, L14, L01), each call asked only for the gloss letter over the named groups, plus 1 reconciliation unit, at ~$1.5 per call, ~$18
+- Body plaintext L01-L14 as Spanish (reading.txt now regenerates the re-aligned gloss as an unsegmented letter run, e.g. L13 "p[96]ndrasolamente[96][23]", L14 "sob[blot]rercrytoenesta" + L18 "forma"; the L01 date "Nobe[mbre]" is M) - blocker: not-attempted; no word-segmented or expanded reading exists and the spec judges only the closing lines, so the read-as-sense figure cannot be measured; next: segment and expand reading.txt L01-L14 into a per-line Spanish reading (disk only, the leaf's own gloss letters, M where a U or conflict code sits), run tools/judge_plaintext.py on it with shuffled-null controls after an es corpus era check (rule 3; the letter is 1702-1716, tools/data has es17c), ~$3
+
+## Escalation (1 Oct 2026; updated GAPS and GAPS2 2 Oct 2026)
 - [x] siblings: NA 1.02.04 finding aid (26 pages, ~152 invnrs) grepped for cijfer/cijferschrift/geheimschrift/chiffre/sleutel: invnr 63 is the only cipher-flagged item (NOTES "Sibling inventory"); DECODE dumps of 24 Sept 2026 have no row for it; the nearest same-writer cipher, HU3 (Schonenberg to Heinsius no. 185, 1709, NA 3.01.19 invnr 1445, one cipher word, unsolved), is another correspondent and office, not this key. Optional, unrun: an eye-check of the other digitised 1.02.04 scans for cipher the cataloguer did not flag; and NA 3.01.19's undigitised "Stukken betreffende cijfers en sleutels van cijferschrift" (web search, 2 Oct 2026), official cipher material, probably not this private key.
 - [x] clear-pages: done 2 Oct 2026 (GAPS): "forma." is L18's own gloss by layout; the address is L19's crib, 15/16 resolved positions agree against slid-window (max 0.286, n=229) and shuffled-crib (max 0.438, n=2000) controls; 28/28 closing tokens valued (C 15 M 13); conflicts 65 and 8) logged. No other clear text on the leaf is unused ("Amigo.", "Aquy", "&a" are single words already in clear).
 - [x] known-keys: KEY-CROSSMATCH.tsv ran every key on file against ciphertext.tsv: only this target's own key fits (line 144, coverage 0.989); the best outside key, fr5160-letellier key_1659_ext, reaches 0.527 and does not pass (line 465); KEY-DESIGN.tsv records the design (homophonic, 87 codes); the key source is the leaf's own period gloss, so no outside key book is needed; Cryptiana/Cipherbrain nothing found (check-solved; web/blog check 2 Oct 2026, 0 hits).
 - [x] print: check-solved 25 Sept 2026, six sources: IA full text "Schonenberg brieven" 0 hits; Heinsius Briefwisseling (Huygens retroboeken) Schonenberg 413 hits, none relevant, Albanilla/Albanylla 0; 8 web queries, DECODE dumps, both solver repositories; web and blog check 2 Oct 2026 (10 queries, three blogs, 0 hits). Not read: two Utrecht theses on Schonenberg (dspace.library.uu.nl and studenttheses.uu.nl, both HTTP 403 from the cloud), background only.
-- [ ] key-rebuild: only a plurality tally so far (key.tsv now 29+ C / M / U as regenerated; rederivation_key.tsv 38 unanimous / 27 majority / 22 ties, same method) plus the crib's five fixes at M; no DP/EM alignment, annealing or LM context tried, so no instrument has failed its gate even once. Planned: tools/interlinear_align.py on L01-L14 seeded with the C codes and the crib-fixed codes (gap 1), ~$4.
-- [ ] image-check: partly done: L06 pixel-verified 20/20 (25 Sept); L18-L19 at 4x (25 Sept) and the L14-to-address layout at native resolution plus L19's blot and second row at 2x (2 Oct 2026, GAPS). Not checked: the 55 conflicts.tsv codes, the tick-position/tick-vs-digit doubts and the dense L04-L05/L07-L14 stretch. Planned: one line crop per subagent call, only for codes the aligner leaves unsettled (gap 2), ~$20.
-- [ ] retry: done once for L18-L19 (tools/decode_key.py --check exit 0 after the crib, 2 Oct 2026); not yet for the body because the key has not been re-aligned. Planned: after the aligner, rerun tools/decode_key.py --check, regrade the 38 U and the crib-fixed M tokens of the regenerated L01-L14, re-judge, ~$2.
-Verdict: keep going: 3 internal gaps; cheapest next: run tools/interlinear_align.py line by line on L01-L14 seeded with the C codes and the crib-fixed codes, rebuild key.tsv and regrade, ~$4
+- [x] key-rebuild: done 2 Oct 2026 (GAPS2): tools/interlinear_align.py on L01-L14 + L18, three runs (unseeded, C-seeded, C+crib-seeded), R2 agreement 0.699 / 44 C-bar codes vs within-line shuffled-gloss control max 0.301 / 11 (n=300); key.tsv rebuilt from the tallies with the rule in align/rebuild_key.py (C 40 / M 43 / U 6; leaf tokens C 136 / M 127 / U 16); the earlier plurality tally is kept as align/key_before_2026-10-02.tsv. Nothing further for an aligner to do without new letters from the image.
+- [ ] image-check: partly done: L06 pixel-verified 20/20 (25 Sept); L18-L19 at 4x (25 Sept); the L14-to-address layout at native resolution plus L19's blot and second row at 2x (2 Oct, GAPS). Not checked: the 12 codes the aligner leaves unsettled (gap 2 above: 6 U, 5 conflict, 8) p-vs-l) and passB's tick doubts. Planned: one line crop per subagent call for the 11 lines named in gap 2, gloss letter over the named groups only, ~$18.
+- [ ] retry: done for L18-L19 (tools/decode_key.py --check exit 0 after the crib, 2 Oct 2026) and for the body after the aligner (--check exit 0, regraded: 38 U -> 16, GAPS2 2 Oct 2026; the closing-line judge re-run FAILs as before, 0 of 20 shuffled targets PASS). Not yet: a judge on the body as Spanish, which needs gap 3's segmented reading first, ~$3 (counted there).
+Verdict: keep going: 2 internal gaps; cheapest next: segment and expand the re-aligned gloss (reading.txt L01-L14) into a per-line Spanish reading and judge it with shuffled-null controls after an es corpus era check, ~$3
 
 ## Web and blog check (GAPS-na-schonenberg-1678-1716, 2 Oct 2026)
 The CHECK-SOLVED-WEB required step (`.claude/briefs/check-solved.md`), run 2 Oct 2026 01:58-02:10 UTC via the WebSearch
