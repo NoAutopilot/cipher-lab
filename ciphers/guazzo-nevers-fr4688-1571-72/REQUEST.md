@@ -18,3 +18,10 @@ those keys costs about $3. Without images nothing can be done (NOTES.md "Volume 
 read 2 Oct 2026, shows only "Document original : Français 4688 Réserver" -- no Gallica link, no substitute microfilm
 cote. BnF images are not public domain for reuse; the route is a reproduction quote (manuscrits@bnf.fr or the BnF
 reproduction service), as in outreach/bnf-manuscrits-arsenal-quote-batch.md.
+
+**Value after GUAZZO-KEY (2 Oct 2026):** no Guazzo/Casale key exists in the digitised Nevers volumes (fr.4687,
+fr.4702; fr.3995 by Tomokiyo's catalogue), so images of fr.4688 would be read either under the Ceppo-Nevers key
+(nos.7-8, March 1571, inside that key's dated window; Guazzo and Ceppo corresponded on the same business, fr.4687
+no.28) or by cryptanalysis, or under a key sheet bound in fr.4688 itself if "Chiffres" means one. That does not make
+the order worth more than before; it makes ff.15-18 (nos.7-8, about 4 leaves) the better first order, since that is
+the one run a held key can test at once. Keep it in the next BnF batch, smaller order first.

@@ -125,8 +125,31 @@ No letter tested, so no PROGRESS.tsv row (brief: one row per letter tested).
 
 The one action that depends on nobody: look through the Nevers key collections already on Gallica (fr.4702
 cc57752b; the HistoCrypt "68 tables" volume) for a table captioned Guazzo / Casale / Monferrato, 1571-72; ~$2.
+Done 2 Oct 2026 (GUAZZO-KEY, below): no Guazzo/Casale key found. Remaining untried sibling: the undated tables of
+fr.3995 (Tomokiyo nos.32-34, 71, 73, 76) by image, ~$1; low prior (every dated fr.3995 table is 1584 or later).
+
+## GUAZZO-KEY: key search in the digitised Nevers volumes (2 Oct 2026)
+
+Account-2 worker for the account-3 orchestrator; brief .claude/briefs/runs/2026-10-02-acct3-guazzo-key.md.
+Gallica IIIF only (one request at a time, >=1.5 s apart); images viewed at 500-1400 px, not committed.
+
+| volume / item | what was checked | finding |
+|---|---|---|
+| fr.4687 no.28 (f.65), Ceppo to Guazzo, 28 Apr 1572 | catalogue cc577374 (snapshot `catalogue/bnf-aem-cc577374-fr4687-2026-10-02.txt`); Gallica btv1b90075058 canvases 73 (f.65r) and 74 (f.65v); canvases are two-page openings, f.65r is the right page of canvas 73 (offset found from canvases 43, 66, 71, 73; the manifest carries no folio labels) | **one leaf, clear Italian only, no cipher, no key.** f.65r: "Molto mag.co sig.r mio sig.r oss.mo / Hieri ho ricevuto il plico di V.S. ... trovandosi V.S. a Millano ..." -- about the jewels in the late "sig.r C.F."'s estate and an "Instrutione"; f.65v: endorsement only (Ceppo, 28 [aprile] 1572) and show-through. |
+| fr.4687 no.41 (f.89), "Chiffre. Quelques lignes non chiffrées sont en italien" | canvas 97 (f.89r) | a cipher **letter** fragment, not a key table: about 8 lines of figures mixed with capital letters (A, B, D, G, R, S) and over/under marks, then clear Italian ("di modo che se questo è vero ...", "e vuole se ne vuole andare a casa ..."). Undated; its neighbours are 1589-93 (nos.38-40, 42), so probably outside the Guazzo window. Not in Tomokiyo's nevers.htm; not deciphered in this job (outside the brief). |
+| fr.4702 (cc57752b, snapshot `catalogue/bnf-aem-cc57752b-fr4702-2026-10-02.txt`; Gallica btv1b530546654) | full catalogue read (49 entries, 9 name Guazzo); ff.34r and 35r (canvases 81, 83; `tools/gallica_folio.py` constant offset k=14) for the "Notes ... 1572" item 17-18 | none of the nine Guazzo items is catalogued as cipher; the only cipher of the 1570s is Ceppo's ff.36-37 (the Ceppo-Nevers key Tomokiyo rebuilt, already held in ciphers/ceppo-nevers-fr3251-1570s). ff.34-35: clear Italian notes (Mantua, Saluzzo, the jewels), no table. Other fr.4702 cipher items are 1586-1590 decipherments. |
+| fr.3995 (Tomokiyo's 76-table Nevers collection) | sources/cryptiana/web/nevers.htm, catalogue text only (no images) | no table captioned or annotated Guazzo, Casale or Monferrato; every dated table is 1584-1594. Undated: nos.32-34 (Italian annotations naming Florence, Paris, "luigi"), 71, 73, 76 -- not checked by image. |
+
+**Verdict: no Guazzo/Casale key located** in fr.4687, fr.4702 or the fr.3995 catalogue, searched 2 Oct 2026.
+The keys in hand for that network and window stay the Ceppo-Nevers cipher (Sept 1570 - May 1571), the Nov 1571
+Birago numerical cipher (undeciphered) and the 1572 Nevers-Birago cipher. The Ceppo leaf shows Guazzo in Milan on
+Nevers's business in April 1572 with Ceppo as correspondent, which keeps the Ceppo-Nevers table the first key to
+try on fr.4688 nos.7-8 (March 1571, inside its Sept 1570 - May 1571 window) once images exist (grade I, inference).
+
+Requests: gallica.bnf.fr 15 (13 IIIF images + 1 manifest via gallica_folio.py x2); archivesetmanuscrits.bnf.fr 2.
 
 ## Suggestions (not done, Usage 7)
 
 - Add fr.4688 ff.15-18 and ff.65-86 to the next BnF reproduction quote batch (outreach/bnf-manuscrits-arsenal-quote-batch.md, ASKS 38 pattern); REQUEST.md here.
-- Open fr.4687 no.28 (Ceppo to Guazzo, 28 Apr 1572) on Gallica to see whether it carries cipher.
+- fr.4687 no.41 (f.89r, Gallica btv1b90075058 canvas 97): an undated cipher letter fragment (figures + capitals + marks), not in Tomokiyo; probably 1589-93 by its neighbours. A scout/intake row, not this target.
+- fr.3995 undated tables nos.32-34, 71, 73, 76 by image (~$1) for a Casale/Monferrato caption.
