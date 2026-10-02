@@ -1,0 +1,7 @@
+host	requests	status
+api.crossref.org	1	blocked: HTTP 429 on https://api.crossref.org/works?rows=5&query.bibliographic=Weckherlin%20intercepted%20letters%20cipher%201646
+api.openalex.org	12	ok
+api.semanticscholar.org	10	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22averse%20were%20extream%22
+archive.org	6	ok
+be-api.us.archive.org	10	ok
+www.googleapis.com	10	ok

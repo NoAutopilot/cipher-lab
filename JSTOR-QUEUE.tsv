@@ -136,3 +136,5 @@ ciphers/fr4715-f61-mayenne-1592	"satisfaire ung seul au prejudice de plusieurs"	
 ciphers/fr4715-f61-mayenne-1592	"jalousie au beau-pere"	2026-09-28	queued	
 ciphers/ceppo-nevers-fr3251-1570s	"Birago" AND "Nevers" AND "Saluzzo" AND (cipher OR cifra OR chiffre)	2026-09-28	queued	
 ciphers/ceppo-nevers-fr3251-1570s	"Lodovico Birago" AND 1570 AND (Savoia OR Savoie) AND restitu*	2026-09-28	queued	
+ciphers/intercepted-royalist-1646	("intercepted" OR "intercepted letter") AND "1646" AND ("Weckherlin" OR "Digby") AND (cipher OR cypher OR decipher*)	2026-10-02	queued	
+ciphers/intercepted-royalist-1646	"resolved to expect your Majesty"	2026-10-02	queued	
