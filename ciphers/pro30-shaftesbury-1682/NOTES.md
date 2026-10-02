@@ -1,4 +1,5 @@
 open
+Christie, Life of Anthony Ashley Cooper, First Earl of Shaftesbury vol. 2 (1871; archive.org india.history.resource.85275) full-text search (be-api) by this worker 2 Oct 2026: Percivall 1 hit (a female servant), Perkins 1 (a horse-gelder), Fisher 0, "book of letters" 0, "June 1682" 0; positive control Stringer 1 document hit (his letters as secretary).
 
 # Lord Shaftesbury's drafts of letters in cipher to Percivall, Perkins and Captain Fisher — TNA PRO 30/24/7/505
 
@@ -106,3 +107,26 @@ now folded into the consolidated TNA batch, ASKS row 73).
 - S: search PRO 30/24 for the indorsement's own 'book of letters, entered November 1682' fair-copy letter-book -- named next step, not chased -- tools/discovery_items.py.
 - S: re-search Christie's vol. 1/2 (already fetched) for the indorsement's exact phrase 'book of letters'/'November 1682'; only Percivall/Perkins/Fisher/cypher were searched so far.
 - S: identify and search another printed Shaftesbury letter collection (e.g. the 1830 Original Letters of Locke, Sidney and Shaftesbury), not yet located this pass.
+
+## Web and blog check (GF-A2-6, 2 Oct 2026)
+
+Plain web searches (WebSearch, 2 Oct 2026):
+1. `Shaftesbury 1682 cipher letter Percivall Perkins "Captain Fisher"` -- Notes and Queries no. 67 (8 Feb 1851; opened on gutenberg.org and grepped: its Shaftesbury item is the 3rd Earl's letter to Le Clerc about Locke, no cypher, no Percivall/Perkins/Fisher), Marsh's Library, NLI manuscript records, a TNA record, Grub Street Project 1682 pamphlets. None about this draft.
+2. `"PRO 30/24/7" cypher Shaftesbury` -- TNA collection record C11970 and other PRO 30/24 items; nothing on item 505's content.
+3. `"These to be in my lord's book of letters"` (the indorsement in quotes) -- no exact hit; unrelated Leeds, Aberdeen, Donne and Huntington records, and the 3rd Earl's letters to Ainsworth.
+4. `Shaftesbury drafts of letters in cypher Percivall Perkins Fisher 1682 decipher` -- the same N&Q issue, Eton College records, a Spectator review of 1871 (Christie), Frommann-Holzboog's Standard Edition of the 3rd Earl's correspondence (a different Earl). Nothing on this item.
+
+Blog site searches:
+- Cipherbrain (scienceblogs.de), `Shaftesbury cipher 1682`: only unrelated posts (Henry II device, Ferdinand III, Urquhart, Shugborough, a king's letter on Tomokiyo's list); none mentions Shaftesbury.
+- Cryptiana (cryptiana.blogspot.com, cryptiana.web.fc2.com), `Shaftesbury cipher`: no results.
+- Cipher Mysteries (ciphermysteries.com), `Shaftesbury cipher 1682 Locke`: only La Buse, d'Agapeyeff and an index page; no Shaftesbury post.
+No plausible hit for this item, so no comment thread bears on it.
+
+Not found: no decipherment, plaintext or prior attempt for PRO 30/24/7/505 on the open web or in the three blogs.
+
+## Premise check (GF-A2-6, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: none for this item. The folder names the indorsement "These to be in my lord's book of letters, entered November 1682", which implies a clear fair copy in a letter-book. TNA Discovery (tools/discovery_items.py "PRO 30/24" "PRO 30/24" cypher "book of letters" Percivall, 2 Oct 2026): the only "cypher" item in the whole collection is this one; every "book of letters" / entry-book hit is the 3rd Earl's (PRO 30/24/22/2-7, 23/8-9, from 1689 on); no 1st Earl letter-book for 1682 is catalogued. Christie vol. 2 has no "book of letters" (search above). Not found; the fair copy's survival is unknown.
+(b) Other solvers' working files: fresh shallow clones (2 Oct 2026) grepped for `shaftesbury|percivall`, `PRO.?30.?24`: dbourdeau/cyphersolver hits are only incidental text in source dumps (`targets/perwich/camden1903.txt`, `targets/harley1582r8499/lit/harlcat2.txt`, a Napoleon source), not this item; aaymeloglu/unsolved-ciphers none (cited, not copied). Not found.
+(c) Physical neighbours: no image online (`digitised: false`) -- leaves either side, facing page and slips unreachable. The same Discovery query shows "Percivall" elsewhere only as Peter Percivall of London, mortgagee with Shaftesbury in 1681 and 1683 (PRO 30/24/46B/101, /103), and "Mr. Percival's note of my exchange at Knowlton" (PRO 30/24/4/172, 1668) -- a possible identification of the addressee, not a decipherment. Not found.
+(d) Recipient side: no printed correspondence of a Percivall, Perkins or Captain Fisher of 1682 located in the searches above. Christie vol. 2 (the 1st Earl's printed life and letters) names none of the three as correspondents. Not found in what was read; the 1830 *Original Letters of Locke, Algernon Sidney and Lord Shaftesbury* (T. Forster) was not searched this pass.
