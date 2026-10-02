@@ -396,3 +396,79 @@ $ python3 tools/intake_gate_check.py blitz-ciphers
 blitz-ciphers: open (line 3) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## BLZ-FR2 (2 Oct 2026, account-4): homophonic case-as-information (K=48) on French (fr18) and Latin (la18), NEAR.md's step (a)
+
+Box: 40 minutes from 00:14 UTC 2 Oct 2026; disk/CPU only, no network, no vision, no subagents. The earlier BLZ-FR
+(1 Oct 2026 23:32) stopped correctly at the intake gate; WEBCHECK-blitz-ciphers (23:41) added the required web-and-blog
+section, and the gate now passes:
+
+```
+$ python3 tools/intake_gate_check.py blitz-ciphers
+blitz-ciphers: open (line 3) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
+
+**Method, matched to bBLZ3/bBLZ6 exactly** (same cipher stream `specs/cheap-tests/blitz-ciphers/ciphertext_letters_cs_spaced.txt`,
+`--tokens space`, N=581, K=48 case-sensitive signs, `--param profile=target`, `--seeds 3 --restarts 8 --gate 0.6`), only
+the corpus and judge swapped. Two sibling specs were written on the de20 pattern so the judge scores against the same
+corpus the control is built from (rule 3, the pt17/pt18 lesson): `specs/blitz-ciphers-fr18.json` and
+`specs/blitz-ciphers-la18.json`, each differing from the main spec only in `judge.language` (`fr18`, `la18` -- both are
+`LANG_CORPORA` keys, so no explicit corpora list was needed, unlike de20). No tool change was needed. Commands:
+
+```
+python3 tools/family_run.py specs/blitz-ciphers-fr18.json --family homophonic --cipher specs/cheap-tests/blitz-ciphers/ciphertext_letters_cs_spaced.txt --tokens space --seeds 3 --restarts 8 --param profile=target --corpus tools/data/fr18 --gate 0.6 --label "BLZ-FR2 homophonic fr18 K=48"
+   (same again with --shuffle-target 1, the ARM-C1 check; then both again with la18 in place of fr18)
+```
+
+**Judge sanity check first** (bBLZ4's pattern: a real 581-letter window from the corpus, then the same window
+letter-shuffled, through the sibling spec's judge):
+
+| judge | real window | shuffled window |
+|---|---|---|
+| fr18 (window from mmoiresduducde02vill, 586 letters) | PASS, score -0.849 (real_p05 -0.982, null_p99 -1.713), cover 0.951 | FAIL, score -1.798 |
+| la18 (window from zaluski_epistolae_t2, 581 letters) | **FAIL**, score -0.993 vs real_p05 -0.985 (null_p99 -1.669), cover 0.981 | FAIL, score -1.802 |
+
+The fr18 judge separates real from shuffled cleanly at this N. The la18 judge FAILs a real window of its *own* corpus
+by 0.008 -- consistent with la18's README (held-out false-negative rate 19.8%, per-fold spread 4.0-33.0% over only 3
+files): by rule 3's fold-count amendment a FAIL against la18 at N~581 is of unknown reliability. Read the Latin
+judge line below with that in mind.
+
+**Results, control and target side by side** (rows in HYPOTHESES.md, 2 Oct 2026 00:17-00:19 UTC):
+
+| language | control mean recovery (3 seeds, range) | gate 0.6 | target decode judge | shuffled-target decode judge (ARM-C1) |
+|---|---|---|---|---|
+| French, fr18 | 0.980 (0.971-0.991) | met on every seed | FAIL: score -1.296, real_p05 -1.012, null_p99 -1.725, N=581 | FAIL: score -1.275 (same thresholds) |
+| Latin, la18 | 0.812 (0.534-0.976) | met on the mean; seed 1 at 0.534 is below it | FAIL: score -1.286, real_p05 -0.985, null_p99 -1.669, N=581 | FAIL: score -1.264 (same thresholds) |
+
+Decodes: `families/homophonic-1-profile=target-fr18.txt`, `-la18.txt`, and `homophonic-1-shuffle1-profile=target-{fr18,la18}.txt`.
+
+**Reading, in rule-3 terms.**
+
+- *French (fr18):* **control-backed negative.** The same solver reads a synthetic homophonic French cipher of the same
+  N, K and sign profile at 0.98 on all three seeds, the judge PASSes real fr18 prose and FAILs it shuffled, and the
+  target decode FAILs the real-French bar by 0.28. Homophonic substitution of c.1680-1790 French with case as
+  information is excluded at the same strength as English (bBLZ3) and German (bBLZ6).
+- *Latin (la18):* **negative on the solver side, judge of unknown reliability** -- the control clears the gate on the
+  mean (0.812) but one seed of three falls to 0.534, and the la18 judge FAILs a real window of its own corpus; by
+  CLAUDE.md rule 3 (the es17c/la18 fold-count paragraph) the FAIL is "untestable by this judge at this N", not a
+  design exclusion, although the shuffle-floor comparison in the next paragraph does not depend on the judge's
+  threshold and reads the same way as French.
+- *The ARM-C1 shuffled-target check, both languages:* the judge did **not** PASS the decode of the shuffled target, so
+  the judge is not voided as a gate for this family at N=581. But the shuffled-target decode scores the same as the
+  real target's decode (fr18: -1.275 shuffled vs -1.296 target; la18: -1.264 vs -1.286) -- the annealer squeezes an
+  equally language-like text out of letter-shuffled Blitz signs as out of the signs in their real order. The target's
+  decode therefore carries no homophonic-French or -Latin signal above the shuffled-order floor; it sits *at* the
+  floor. This also explains the shape every earlier run reported ("clears null_p99 but fails real_p05", bBLZ3,
+  bBLZ4, bBLZ6): clearing null_p99 is what any anneal-optimised decode does, shuffled input included, so that half
+  of the shape was never evidence about the target. Earlier runs (en, de20) did not run the shuffled-target row; a
+  one-line follow-up would be to run it for de20 so the German row carries the same floor (not started, Usage 7).
+
+**What this does and does not say (rule 10).** Nothing was read; no key, no plaintext. The result is a negative with a
+matched control for homophonic substitution of French, and a judge-limited negative for Latin, on the only 581 signs
+ever transcribed (pages 7-8); pages 1-6 are a different sign system (bBLZ5). Status word stays `open` (NEAR target,
+rule 5: never closed-negative). NEAR.md's step (a) is now done for both corpus-backed languages it named; step (b),
+park, is what remains unless new material (a transcription of pages 1-6's glyph script, or a third transcribed page
+in the 7-8 alphabet) arrives.
+
+Requests: 0 (disk only). Subagents: 0. Vision calls: 0. Cost: see the lane ledger. Box: finished well inside 40 minutes.
