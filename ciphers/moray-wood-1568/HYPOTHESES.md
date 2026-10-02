@@ -10,3 +10,13 @@
   secretary. Different sender, office and decade.
 - Status: the two disagree on every shared shape that carries a value (triangle, V, M, x, +). This is evidence that R9257 is not the
   postscript's key, so no R9257 value is H for the postscript; the triangle conflict is recorded, not resolved by either witness.
+
+## Conflict: R4930 P3 = Randolph-Sussex f.277r (period key, f.278) vs the postscript key -- GAPS12, 2 Oct 2026, logged per rule 4, not settled
+- Witness 1: the clerk's decipherment on BL Cotton Caligula C II f.278 (DECODE R4932) of Randolph to Sussex, Edinburgh 5 July 1570 (f.277r = DECODE R4930 P3),
+  values as listed by Bourdeau (dbourdeau/cyphersolver randolph1570/NOTES.md, credited): barred x = o, 4 = d, 3 = f (tailed 3 = a), looped o with tail = o, delta = t, cup u = h.
+- Witness 2: Aymeloglu's cryptanalytic key of the postscript (key.json d2800bb, grade S): X (crossed x) = u, 4 = c, Z3 = o, M (o with tail) = m, A (triangle) = a, U = [the].
+- Direction/date: Randolph -> Sussex, English ambassador at Edinburgh, July 1570; the postscript is Moray -> Wood, 13 July 1568. Different sender, office and date.
+- Numbers: 0 of 6 comparable shapes agree (r4930/r4930_test.py part A; shape matches from glyph descriptions, not images). The 4-gram key.tsv test on run 1
+  (N=111 matched of 331): -1.988, rank 0.432 vs 1,000 shuffled keys, 0.235 vs 200 sign-order shuffles; positive control at matched sparsity (postscript reduced
+  to the same 8 labels, N=49 < 111): -1.753, 0.906 / 0.740 -- does not separate, so test B is a non-test (rule 3).
+- Status: evidence that R4930 P3 is in a different key; no Randolph value is H for the postscript; no key.tsv value moved.
