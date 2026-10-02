@@ -104,6 +104,32 @@
       "files": {
         "2078_overview.jpg": "full sheet -- eye-checked, entirely plain Dutch, signed 'Wollant', NOT ciphered"
       }
+    },
+    {
+      "invnr": "4.VEL 2038",
+      "title": "Plan van 't fortresse Nieuw Amsterdam.",
+      "date": "1778 (signed 'Fortresse Nieuw Amsterdam den 31 July 1778, J.C. Hurter')",
+      "scopecontent_nl": "Zeer uitvoerig.",
+      "native_px": "10833x11292",
+      "mets": "https://service.archief.nl/gaf/api/mets/v1/90503491-3a80-4e41-ba2d-ca5515c7237d",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/5199b541-cd41-4786-bbdd-bf83354b64cf",
+      "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=90/50/34/91/3a/80/4e/41/ba/2d/ca/55/15/c7/23/7d/5199b541-cd41-4786-bbdd-bf83354b64cf.jp2/info.json",
+      "files": {
+        "2038_overview.jpg": "GAPS2 2 Oct 2026: full sheet via IIIF full/2800,/0/default.jpg (2800x2919), fetched once. Plain Dutch throughout (own look): title, A-K capital-letter legend (bastions Holland, Gelderland, Overijssel, Utrecht, Groningen; sluices; creek), a lowercase a-z building list, batteries No. I-VIII, bottom right. Same physical size and scale as 2039 (0.44 x 0.425 El, 100 Rijnlandse roeden = 370 strepen). Candidate plain crib for 2039's a-u legend; legend not yet transcribed."
+      }
+    },
+    {
+      "invnr": "4.VEL 2040",
+      "title": "Plan van de geprojecteerde veranderingen op de fortress Nieuw Amsterdam.",
+      "date": "1784",
+      "bioghist_nl": "Vervaardigd door Wollant.",
+      "native_px": "8066x6210",
+      "mets": "https://service.archief.nl/gaf/api/mets/v1/394da25d-c817-408b-99bc-aa751230c414",
+      "default_full_url": "https://service.archief.nl/api/file/v1/default/9a4f2ee9-629f-441e-b450-0feb2fca75b4",
+      "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=39/4d/a2/5d/c8/17/40/8b/99/bc/aa/75/12/30/c4/14/9a4f2ee9-629f-441e-b450-0feb2fca75b4.jp2/info.json",
+      "files": {
+        "2040_overview.jpg": "GAPS2 2 Oct 2026: full sheet via IIIF full/2800,/0/default.jpg (2800x2156), fetched once. Plain Dutch (own look): 'Pl. L. D.' top left; title 'PLAN Van de geprojecteerde Veraanderingen op de Fortr. N. Amsterdam, volgens Generael Defensie Plan L. A. aldaer te doen'; signed Wollant; no lettered legend, only artillery labels on the batteries ('6 Can. a 24 lb Calib', '4 Mortieren ...') and a Nota referring to the Redout Leijden profiles. Secondary crib for 2039's artillery clauses only."
+      }
     }
   ]
 }
