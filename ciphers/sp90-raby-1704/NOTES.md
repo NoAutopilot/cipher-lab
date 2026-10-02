@@ -145,3 +145,93 @@ Waits on: a copy request for British Library Add MS 61137 ff.41 and 55 (REQUEST.
 - S: search the HMC printed series directly page-by-page (only web-searched so far) for a Strafford/Raby 1704 report -- this file's own named next step 2.
 - S: fetch SP 90/2/343 (Berlepsch to Frederick I, same Reichart channel, not itself cipher-flagged) for plaintext context on the /409, /409v enclosure -- named in 'Next', not yet fetched.
 - S: search German-language literature on the Reichart-Berlepsch Bavarian mediation channel, flagged as unsearched in the Verdict's own caveat.
+
+## Web and blog check (WEBCHECK-sp90-raby-1704, 2 Oct 2026)
+
+Required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads", CHECK-SOLVED-WEB, 28 Sept
+2026), run by a single account-4 worker from brief `.claude/briefs/runs/2026-10-01-account4-webcheck.md` on
+2 Oct 2026, 01:04-01:1x UTC (clock read). The five items have no transcription or decoded text on disk, so the
+"distinctive phrase" query used the catalogue's own scopeContent wording.
+
+**Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026** (a search result,
+never a novelty verdict, rule 10). Status word on line 1 unchanged (`open`).
+
+### (a) Plain web searches (WebSearch, 14 queries)
+
+| # | Query | Hits worth opening | What they say about THIS letter |
+|---|---|---|---|
+| 1 | `Raby Hedges Berlin 1704 cipher letter Wentworth` | Sotheby's/Arts Council (Raby's wine cistern), Wikipedia/fandom Strafford biographies, dbourdeau.github.io/cyphersolver index, jordannuttall.substack.com "A Tale of Early-Modern Espionage", TNA Discovery creator page F257921 | nothing on SP 90/2 1704; Bourdeau index and the substack post opened below |
+| 2 | `"SP 90/2" Raby cipher` | only NIST SP 800-90A and SP-network noise | nothing |
+| 3 | `"Stepney's qualifications for acting in the Bavarian affair"` (SP 90/2/335's scopeContent phrase, quoted) | George Stepney biography pages only | no page quotes or paraphrases the letter |
+| 4 | `Reichart Berlepsch 1704 Bavaria cipher "Raby to Hedges"` (folder title) | TNA Discovery C8950281 (SP 87/2/41, Berlepsch to Marlborough 23 June 1704), beta.nationalarchives.gov.uk C6554714 (SP 90/2 f.45, Raby to Hedges 28 July 1703), ciphermysteries.com 2020/03/23 Eichstätt/Bellifortis (unrelated, matched "Bavaria") | the Berlepsch-Marlborough item is the same Reichart channel in clear (see below); f.45 is a 1703 sibling, not a target item |
+| 5 | `Raby Berlin 1704 cipher solves Claude OR GPT deciphered` (model-solve announcements, check-solved.md) | only the generic 2026 AI-solves-cipher news (Urquhart distich, Marmont 1809, Enigma) | none names Raby, SP 90, Berlin 1704 |
+| 6 | `"State Papers" Prussia "SP 90" Raby Hedges 1704 "in cipher"` | TNA C13629 (SP 90 series page), tandfonline 10.1080/01611194.2024.2396800 (Láng, Megyesi et al., "Cipher key instructions in early modern Europe", Cryptologia 2024), beta catalogue C6554714/C6554707 | tandfonline answered HTTP 403; its OpenAlex abstract (1 keyed call) describes a survey of 1,600 key instructions, no Raby/Hedges/Prussia -- not opened further |
+| 7 | `"Blenheim Papers" Raby Hedges 1704 cipher deciphered Berlin Prussia` | dokumen.pub copy of *Anglo-Prussian Relations 1701-1713* (Routledge 2024, not opened: pirate host), Kalliope finding aid DE-611-BF-24146, SPK/GStA pages | no decipherment named |
+| 8 | `Reichard OR Reichart Berlepsch 1704 Kurfürst Bayern Vermittlung Berlin Chiffre` (German) | genealogical/biographical noise only | nothing |
+| 9-14 | the six `site:`/allowed-domain blog queries, logged under (b) | | |
+
+### (b) The three blogs, each by its own search box
+
+- **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne): WebSearch restricted to scienceblogs.de for `Raby OR
+  Wentworth OR Hedges Berlin 1704` and `site:... Preußen 1704 verschlüsselter Brief Berlin Gesandter` returned only
+  unrelated posts (Catinat 1693, Thirty Years' War, Rabenhaupt, Karl V). The blog's own search `?s=Raby` returned
+  3 posts (Golden Alice Awards 2019, Bigram 750 and Bigram 1000 challenge, Oct-Dec 2019); all three fetched (3
+  requests) and grepped: whole-word "Raby" 0 in each, the match is the substring in "Terabyte" -- false positives,
+  their 25-39 comments each are about the bigram challenges. `?s=Berlepsch`: "Wir konnten leider keine Beiträge
+  finden". No Cipherbrain post or comment on this correspondence.
+- **Cryptiana** (Tomokiyo): on-disk snapshot `sources/cryptiana/` grepped first (0 requests) for raby, reichart,
+  berlepsch, hedges, strafford, wentworth: `web/blencowe2.htm` line 65 (R8762, a 1710s key with a "Raby (Strafford)"
+  entry, already on file for the sibling target) and line 86 (R8758, ff.53-54, an English cipher "annotated
+  '1704-6', with a note apparently to the effect that the dating is based on 'Secretary Hedges'", endorsed "Lady
+  Marlb.[?] Cypher") -- a Hedges-era key in the Blencowe collection, not a decipherment of any SP 90/2 item and not
+  tied to Raby; `web/strafford.htm` is the 1st Earl (1630s), unrelated. Blog search `cryptiana.blogspot.com/search?q=`
+  for Raby, Berlepsch, Hedges: "No posts matching the query" all three (3 requests). WebSearch with allowed domains
+  cryptiana.blogspot.com + cryptiana.web.fc2.com: no links; `cryptiana Tomokiyo "Hedges" cipher 1704 Queen Anne
+  Prussia Raby`: no Cryptiana page, only TNA catalogue rows for 1703 siblings (ff.83, 107).
+- **Cipher Mysteries** (ciphermysteries.com): WebSearch restricted to the domain for `Raby OR Wentworth OR Hedges OR
+  Berlepsch Berlin 1704 cipher` and `site:... "Raby" OR "Hedges" OR "Berlepsch"`: only Voynich/Beale/Dorabella pages
+  and two incidental matches ("Nellie Raby Hepburn Nothrop", Australian archives 2020; "dragged backwards through a
+  couple of hedges", 2013). The site's own search `?s=Raby+1704`, `?s=Berlepsch`, `?s=Wentworth+Hedges`: "no results
+  were found for the requested archive" all three (3 requests). No post or comment on this correspondence.
+
+### (c) Plausible hits opened and read with their comment threads
+
+- jordannuttall.substack.com/p/a-tale-of-early-modern-espionage (WebFetch, 1 request): a 17 May 2026 post on
+  "Tartaria", paywalled; no Raby, Hedges, Berlin, 1704, Reichart or Berlepsch; no visible comments.
+- dbourdeau.github.io/cyphersolver/index.html (1 request): "Wentworth" occurs once, in the Maltravers-Ormonde 1634-35
+  write-up (the 1st Earl, Knowler's *Strafforde's Letters*); no Raby, Hedges, Berlepsch, Reichart, Prussia, SP 90.
+- TNA Discovery API item C8950281 (1 request): **SP 87/2/41, 1704 Jun 23, Berlepsch [to Marlborough]**: "his secret
+  meeting with Sieur Reichart has taken place, and resulted in the enclosed list [SP 87/2/42] of demands by the
+  elector of Bavaria. Reichart showed him a letter from Tallard to the elector..."; note field: none (not cipher-
+  flagged). This is the same Reichart-Berlepsch channel as SP 90/2/409-409v, three weeks later, in clear, in
+  Marlborough's in-letters (SP 87) -- context for a future reading of the enclosure, not a decipherment of it.
+- TNA Discovery API item C6554707 (1 request): SP 90/2/23, 1703 July 3, Raby to [Nottingham]; a 1703 sibling, no
+  cipher note; not a target item.
+- Google Books API (12 requests, `country=US`, keyed; two answered "Service temporarily unavailable", one retried once
+  per the single-retry rule): `Raby Hedges Berlin 1704` returns scholarship that cites these despatches by shelfmark
+  -- Frey & Frey, *Frederick I, the Man and His Times* (1984, NO_PAGES: "Raby to Hedges, Berlin, 15 January 1704");
+  *Anglo-Prussian Relations 1701-1713* (Routledge 2024, PARTIAL: "Raby-Hedges, 21.08.1703, TNA, SP 90/2"); Western
+  Society for French History proceedings 1975 ("Raby to Harley, Berlin, 15 July 1704 ... P.R.O., S.P. Prussia") --
+  historians have read SP 90/2, but none of the snippets quotes or prints any of the five target items or a
+  decipherment. `Berlepsch Reichart`: **Georg Friedrich Preuss, *Die preussische Mediation zwischen Bayern und
+  Oesterreich* (Wolf, 1897, 103 pp., ALL_PAGES, id UfnriIriq9UC)** -- snippets name "Berlepsch und den bayerischen
+  Bevollmächtigten Baron Zirkenstein und Reichart" and "Raby die fünf Punkte des übersandten Promemorias in
+  französischer Übersetzung mitgeteilt", and Riezler, *Geschichte Baierns* vol. (1651-1704), 1913, p. 603 ("Raby
+  anweisen, alle Zugeständnisse an Baiern zu billigen ... preußische Mediation"). These are the German-language
+  literature on the Reichart-Berlepsch mediation that the 23 Sept Verdict flagged as unsearched: secondary accounts
+  from the Prussian/Bavarian side that could supply plaintext context (the five points of the Bavarian promemoria
+  handed to Raby in French) for the /409-409v enclosure, not a decipherment of the SP 90/2 items. Not opened page by
+  page (books.google.com page view is blocked from the cloud; archive.org advancedsearch for both titles: 0 items).
+  Logged as a lead for the "While waiting" S-item 3, not acted on (brief scope).
+- Not opened: dokumen.pub (pirate copy of the 2024 Routledge book); tandfonline (403, abstract read via OpenAlex).
+
+Requests per host: scienceblogs.de 5, ciphermysteries.com 3, cryptiana.blogspot.com 3, discovery.nationalarchives.gov.uk 2,
+www.googleapis.com 12, archive.org 2, api.openalex.org 1, tandfonline.com 1 (403, not retried), jordannuttall.substack.com 1,
+dbourdeau.github.io 1. WebSearch 14 queries. No 429 or challenge page.
+
+### Gate re-run
+
+```
+sp90-raby-1704: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit 0
+```
