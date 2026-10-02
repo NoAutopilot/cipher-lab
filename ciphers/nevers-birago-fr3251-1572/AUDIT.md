@@ -15,7 +15,8 @@ matches the decode on 0.837 of letters vs shuffled max 0.114.
 | item | scope | class | key | text | confidence |
 |---|---|---|---|---|---|
 | no.87 cipher passage, f.178r foot + f.178v + f.179r head, 853 signs (Lodovico Birago to the duc de Nevers, Saluzzo, 8 Sept 1572) | the whole passage | **N0** | published (one sign value fitted by us) | known: period decipherment laid in with the letter, BnF fr.3251, Gallica btv1b9060248g canvas 182; no print of it located | high |
-| ff.138, 144, 152, 160, 168, 174, 184 (nos. 71-90) | not read | not classed | -- | -- | nothing read |
+| ff.138, 144, 160, 168, 174, 184 (nos. 71-90) | not classed in this section | not classed | -- | -- | -- |
+| f.152r cipher run, no.77 (9 June 1572), 97 signs | the run | **N0** (section VERIFY-NEVBIR-152 below) | published | known: later-hand decipherment slip pasted on f.151v; not printed or catalogued | high |
 
 **N0 reason.** Two independent prior decipherments of this very item exist, and neither is ours:
 1. *The period one.* The laid-in sheet on canvas 182 (right page, BnF stamp at its foot, lying over the head of
@@ -109,3 +110,105 @@ github.com 2 clones. No credentials printed. Unreachable: none.
 
 SECOND-OPINIONS-QUEUE.tsv: no row for this target exists, and at N0 none is filed (rule: rows are queued at N3 or
 better).
+
+
+# AUDIT: f.152r cipher run, no.77 (VERIFY-NEVBIR-152, 2 Oct 2026)
+
+Verifier: parent worker VERIFY-NEVBIR-152 (account 2, for the owner-account orchestrator), a session separate from the
+NEVBIR-152 solver session. Brief `.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-152.md`. Clock read with `date -u` at
+17:11 and 17:16 UTC, 2 Oct 2026.
+
+**Claim under audit** (brief, from NOTES.md NEVBIR-152 and PROGRESS.tsv): Lodovico Birago to the duc de Nevers, BnF fr.3251,
+no.77 (Saluzzo, 9 June 1572), f.152r (Gallica btv1b9060248g canvas 154), one inline cipher run of 97 signs: printed key +
+T42=m ranks 1 of 201 value-shuffled keys, z 2.7-3.1; a later-hand decipherment slip (squared paper, dots for unread signs)
+pasted on f.151v covers this run, and the decode agrees with it 0.612 vs shuffled max 0.121 (commit 103e9bd4).
+
+## Verdict
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| no.77 cipher run, f.152r, 97 signs (Birago to Nevers, Saluzzo, 9 June 1572) | the run, "che io disimuli ... l'onore" | **N0** | published (Tomokiyo's 1572 table; the GAPS3 fit T42=m does not occur in this run; five t-shaped X_NEW set to m from the slip, graded M) | known in the MS: a decipherment slip filed with the letter (f.151v); no print of it, and no catalogue mention, located | high |
+
+**N0 reason.** A decipherment of this very run exists and is not ours: the squared-paper slip pasted on f.151v, the page
+facing f.152r. Looked at by eye this session on `harvest/f152r/slip_f151v_c154_1350_750_2350_1050.jpg`: four lines,
+"che io disimuli poiche [struck: sen ua a leuar..o.asione] / sen.aaleu..o.asione a / ap.ns..o di leuarmi la reputa.ione
+..c.ermi / incompromesa la l'onore". `harvest/f152r/decipherment_slip.tsv` agrees with the image letter for letter on all
+four lines and the struck line. It is placed exactly at the run (between the letter's prose "et che bisogna" and "con
+uolermi"), it leaves dots where its writer could not read a sign, and it carries its own false start struck through: the
+working of a decipherer, not a copy of a clear text. So the plaintext of this run and a decipherment of it were known before
+any session here, and the class is N0 for the run as a whole. The decode fills some of the slip's dots ("sen[za] alcun[a]
+[oc]casione", "cercarmi") and adds a word code at each end ("[quello]", "[qual]") that the slip omits; these are a few
+letters of completion of a known partial decipherment, read under a published key, and do not earn a separate class.
+
+**Is the slip printed or catalogued?** Not located in either:
+- *Catalogue.* The BnF finding aid for Français 3251 (archivesetmanuscrits.bnf.fr ark:/12148/cc49712p, fetched this session)
+  describes no.77 as "Lettre, avec chiffre, de LODOVICO BIRAGO au duca di Nevers ... Da Saluzzo, li IX di giugno 1572";
+  "avec chiffre et déchiffrement" is used in the same aid (no.20, fol.39), so the aid does distinguish a decipherment and
+  does not record one for no.77. It does not record the no.87 period sheet either (no.87: "avec chiffre" only), so the aid
+  is silent about laid-in decipherments of the 1572 letters in general; its silence is weak evidence about the slip.
+  Same reading in the printed *Catalogue des manuscrits français* (1874; IA p1cataloguegnr02bibluoft, be-api snippet).
+- *Tomokiyo.* `sources/cryptiana/web/nevers.htm` section BnFfr3251 lists "f.152 (no.77) Saluzzo, 9 June 1572" with no
+  "(with decipherment)" tag, a tag he uses for nos. 14, 20 and 42 in the same list; `unsolved.htm` line 228 says the 1570-72
+  letters "can be deciphered by using keys reconstructed from already deciphered materials". So Tomokiyo states the letter
+  is readable with his key but neither prints its plaintext nor mentions the slip.
+- *Print.* Phrase searches on the slip's and the decode's Italian, and on the letter's adjacent clear prose, found nothing
+  (log below).
+
+**Who wrote the slip, and when.** Not settled. Squared paper, a rounded cursive with modern letter forms, the last line in a
+lighter medium (pencil or faded ink), pasted onto the volume before the Gallica capture: consistent with a 19th- or
+20th-century reader, not with the 1572 clerk whose sheet sits in no.87. This matters for credit, not for the class: N0 holds
+whoever wrote it. The no.82 slip on f.161v (NEVBIR-162) is the same kind of object and probably the same reader; it is not
+audited here.
+
+Key source: `published` (Tomokiyo's printed Nevers-Birago 1572 table, credited). Text: known in the sense of a decipherment
+filed in the manuscript, not in print; as for no.87, status.json's `text: known` (print) does not strictly apply -- record it
+as "decipherment slip in MS".
+
+**Safe sentence.** "Using Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, we re-deciphered the short cipher
+run in Birago's letter of 9 June 1572 (BnF fr.3251, no.77, f.152r) from a blind sign transcription; it agrees with a
+later-hand decipherment slip pasted on the facing page (f.151v), which we have not found in print or in the BnF catalogue."
+
+**Unsafe sentence.** "We deciphered Birago's cipher of 9 June 1572", or any wording with first, new, previously unread,
+unpublished plaintext: the run had been deciphered (partly) by whoever wrote the slip, and the key is Tomokiyo's.
+
+## Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --check`: exit 0, "reading up to date"; working tree
+unchanged. f.152r job: **97 tokens: H 0, C 0, S 84, M 12, I 0, U 1** -- identical to NOTES.md NEVBIR-152 and PROGRESS.tsv.
+`harvest/reading_f152r.txt` reproduces exactly. The control numbers (rank 1/201, z 2.73-3.14 at three seeds; slip agreement
+0.612, shuffled max 0.121) were not re-run here (no decoding beyond re-derivation, per brief); they are on file with their
+commands.
+
+## Search log (2 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical catalogue | BnF finding aid cc49712p (curl, 1 request), items nos. 71-90; printed Catalogue des manuscrits français 1874 via IA snippet | no.77 "avec chiffre", no decipherment noted (see above) |
+| (b) sender/recipient correspondence | IA be-api fts "Birago" Nevers 1572 Saluzzo; "Lodovico Birago" lettere 1572; IA advancedsearch title "memoires" + "nevers" and "duc de Nevers" 1600-1700 (for Gomberville's *Mémoires de M. le duc de Nevers*, 1665) | Saluzzo/Piedmont histories (Savio, Ricotti, Balan), catalogues, Vester's *Renaissance Dynasticism* index (Birago, Ludovico, p.128, 138n36); no edition of the 1572 letters; the 1665 Mémoires not found on IA by title search (not read) |
+| (c) documentary editions (Italian/Savoyard) | same fts hits; Google Books "Birago" "IX di giugno 1572" | only the 1874 BnF catalogue (2 hits) |
+| (d) holding archive | Gallica canvas 154 slip crop on disk, looked at by eye | the slip (the N0 basis) |
+| (e) phrase search on decoded/slip text, IA fts + Google Books (keyed, country=US) | "che io disimuli poiche", "che io dissimuli poiche", "leuarmi la reputatione", "levarmi la reputatione", "in compromesso l honore", "tenere per altro di quello ch io sono" (the letter's next prose), "per altro di quello ch io sono", "et che bisogna" Birago, "Birago" "disimuli" | IA: 0 on all but "in compromesso l honore" (4 hits: Accolti/Council of Trent/Lincei memorie, other letters) and "et che bisogna" Birago (31, unrelated); Google Books hits are word-level matches in unrelated texts (Galileo, Accoramboni 1890, Lincei 1898), snippets read, none this letter |
+| (f) solver repos, blogs | dbourdeau/cyphersolver cloned 2 Oct 2026 (head 1 Oct 2026), grepped 3251/birago: `targets/birago` is f.119 (1571), notes the 1572 letters are "in the symbol cipher Tomokiyo reconstructed", no reading; aaymeloglu/unsolved-ciphers cloned (head 27 Sept 2026), `catalogue/decode-catalog.csv`: Birago rows are fr.3619/3621/3623, none fr.3251; Tomokiyo nevers.htm and unsolved.htm (local mirror) read | no reading of no.77 |
+| (g) scholarship | OpenAlex (keyed) "Birago Nevers cipher 1572", "Nevers Birago chiffre Saluzzo": 0 and 0; Semantic Scholar (keyed) "Birago Nevers cipher": top hit the 1592 French digit-cipher paper (different item) | nothing on this letter |
+| DECODE | via Aymeloglu's catalogue mirror | no fr.3251 record |
+| JSTOR | not queued: at N0 the class rests on the slip in the MS, which no JSTOR result could lower | -- |
+
+Requests: archivesetmanuscrits.bnf.fr 1, be-api.us.archive.org 14, archive.org advancedsearch 3, googleapis.com 9,
+api.openalex.org 2, api.semanticscholar.org 1, github.com 2 clones. No credentials printed. Unreachable: none.
+
+## Postmortem and corrections
+
+1. **The premise check missed the slip.** PREMISE-NEVBIR's table (NOTES.md, row f.152) checked canvases 154 and 155 and wrote
+   "not found on the pages checked"; the slip is on canvas 154's left page. NEVBIR-152 found it and flagged it correctly as a
+   prior decipherment for the verifier, and did not offer the reading as ours. Correction note added to that table row.
+2. **"Printed key + T42=m" in the claim.** T42 does not occur in this run, so the printed and fitted keys give the same decode
+   (NOTES.md says so); the label is harmless here.
+3. **Known-answer check is against a partial decipherment.** 0.612 is the share of decoded letters in matched blocks against a
+   slip that leaves about 15 signs as dots; it shows the transcription and key reproduce the slip, not that the dotted signs
+   are right. The fills the decode makes there are S/M-graded readings under a published key, nothing more.
+4. **Grades could rise.** Where the decode agrees with the slip, those tokens could be graded C (known plaintext) rather than
+   S; not done here (verifiers do not decode).
+5. No novelty wording found in the NEVBIR-152 section, reading file or PROGRESS row (grepped for first/new/novel/unread/
+   previously/unpublished/solved/cracked: every hit is ordinary prose -- "first test" (the pipeline step), "a first guess", "the decipherer's own unread signs").
+
+SECOND-OPINIONS-QUEUE.tsv: no row for this item; at N0 none is filed (rows are queued at N3 or better).
