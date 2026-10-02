@@ -1,6 +1,7 @@
 # zbz-busbecq-1587
 
 Status: open
+Busbecq, *Omnia quae extant* (Elzevir 1633, archive.org bub_gb_EKzs2F1JIA4C) and *Epistolarum legationis Gallicae libri 2* (Louvain 1632, bub_gb_OqDGk6ENA4YC) full OCR text read by this worker on 2 Oct 2026: the French-legation letters in both end with Epist. XLIX, April-May 1585 (dates "xxv./xxvIII. Aprilis clo.Io.lxxxv"), no 1586-87 letter and no Iunii 1587 date; Forster & Daniell vol. 2 (1881, lifelettbusbecq02forsuoft) whole-volume grep for "1587", "June 6", "6th of June": only an unrelated Dohna footnote (line 4352).
 
 ## What this is
 
@@ -59,3 +60,23 @@ found. See `REQUEST.md`.
 Requests this pass: archive.org 3 (advancedsearch metadata query, `lifelettbusbecq02forsuoft` metadata +
 djvu.txt fetch), github.com 2 (shallow clones, shared with K2-K4). No swisscollections.ch or kalliope-verbund.info
 calls needed for this target this pass (scout already read the record page). No TNA Discovery, no Google Books.
+
+## Web and blog check (CS-A2-A, 2 Oct 2026)
+
+Five WebSearch queries, no hit on this letter:
+1. `Busbecq Rudolf II 6 June 1587 enciphered letter Zürich Zentralbibliothek Ms F 42` -- Wikipedia, Wikisource author page, Forster & Daniell catalogue records, Britannica; nothing on the shelfmark.
+2. `Busbecq 1587 Chiffre Brief Kaiser Rudolf Paris Gesandter verschlüsselt Zürich Zentralbibliothek` -- Deutsche Biographie, inlibris listing; nothing on this letter.
+3. `"Busbecq" cipher decipherment letter Rudolf II France ambassador 1587` -- Gutenberg F&D vol. 2 (opened as the IA copy), Cambridge listing; no cipher item for 1587.
+4. Site search, allowed_domains ciphermysteries.com, cryptiana.blogspot.com, scienceblogs.de (Cipherbrain), cryptiana.web.fc2.com: `Busbecq cipher` -- only Cipher Mysteries Voynich posts (Busbecq as a Voynich-provenance figure: Visual Map of Voynich evidence, f116v multispectral, Three Crowns, Tale of Two Voynich Articles, Purdue lecture); none concerns a 1587 letter to Rudolf II; no Cryptiana or Cipherbrain hit. Opened none (titles and snippets only, no Busbecq-letter content), so no comment thread was read: the Voynich threads are not about this letter.
+5. Catalogue: swisscollections record ZBC73e7677281a24c689e4d1c1e2a9dd36d fetched once (HTTP 200) but it is a script-rendered page; no text (availability flag, Zugang) could be extracted, so the earlier "gesuchspflichtig" flag recorded 24 Sept 2026 is carried, not re-read by this worker.
+
+Local `sources/cryptiana` last grepped 24 Sept 2026 (habsburg.htm names Busbecq's 1554-62 Turkish-embassy cipher only).
+
+## Premise check (CS-A2-A, 2 Oct 2026)
+
+- (a) folder's own mentions: NOTES.md/REQUEST.md name no decipherment, gloss or clear copy; the catalogue calls the letter "verschlüsselt". Not found.
+- (b) solver repos, fresh shallow clones 2 Oct 2026, grep `busbe`: dbourdeau/cyphersolver only targets/matignon1586/corpus_words_v1.txt (a word list, not this letter, not opened further); aaymeloglu/unsolved-ciphers only the DECODE catalogue rows R1220/R1221 (1559 Chiffrenschlüssel, ÖStA, a different item). Not found for this letter.
+- (c) physical neighbours: no image; nothing to view. Unreachable.
+- (d) recipient's side: Rudolf II's Austrian side -- not searched this pass (no edition located; Busbecq's own letters-in-print end 1585 as above). Unreachable/unsearched. Lead: F&D vol. 2 Letter XIV prints a cipher/"code drawn up at Speyer" for the Emperor's use (undated); a sibling key may exist in print or in Vienna.
+
+Where it was not found: the printed Latin letters to Rudolf II cover 1582-85 only, so the 1587 letter lies outside every printed Busbecq edition opened; Austrian archive editions (HHStA Staatskanzlei Frankreich) were not searched.
