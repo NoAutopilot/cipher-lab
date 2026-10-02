@@ -16,6 +16,10 @@ Units after parsing: 'd' digit, '.d' dotted digit, '=d' barred digit, 'S', 'X', 
 Each crop overlaps its right neighbour by about 180 px at 3x (60 px native, three or four digits); merge drops the
 longest suffix/prefix overlap (2..8 units, at most one mismatch) before appending the next segment.
 
+The 8 rule (GAPS-4): both passes read this scribe's 8 as 0 (no 8 in 1,500 digits; no.58's MONT-4715 confusion matrix
+already lists 8->0); an out-of-key pair 0x whose 8x is a key code is emitted as 8x with the marker '8<' (segment
+strips the marker and lowers the token to M).
+
 Segmentation (inventory only, never values -- so the value-shuffled control sees the identical token stream): a
 dynamic programme over the digit units; a two-digit key code costs 0, a one-digit key code (1 r, 5 a) 0.6, a two-digit
 group carrying one dot 0.1 (a word-code '.xy'), a single dotted digit 0.8 ('.x'), a barred run is one word-code, an
@@ -171,6 +175,12 @@ def dp(run, codes):
                     cand.append((2, 0.1, '.' + d2))
                 elif dots == 0:
                     cand.append((2, 0 if d2 in codes else 3, d2))
+                    # neither pass ever wrote an 8 on this leaf (no.58's dump: 8 is 7.8 pct of digits); no key code starts
+                    # with 0, so a pair that starts with 0 and is out of key is read as 8x -- inventory only, flagged '8<'
+                    if d2 not in codes and d2[0] == '0' and ('8' + d2[1]) in codes:
+                        cand.append((2, 0.3, '8<' + d2[1]))
+                elif dots == 1 and d2[0] == '0':
+                    cand.append((2, 0.4, '.8<' + d2[1]))
         for L, c, t in cand:
             if best[i] + c < best[i + L]:
                 best[i + L] = best[i] + c; back[i + L] = (i, t)
@@ -212,12 +222,16 @@ def segment():
         # carry confidence: walk the units consumed per token
         ui, pos = 0, 0
         for t in toks:
+            eight = '8<' in t
+            t = t.replace('8<', '8')
             if t.startswith('w:') or t == '?':
                 width = 1
             else:
                 width = len(t.lstrip('.')) if t not in ('♀', '▽') else 1
             cs = confs[ui:ui + width] or ['L']; ui += width
             c = 'L' if 'L' in cs else 'M' if 'M' in cs else 'H'
+            if eight and c == 'H':
+                c = 'M'
             pos += 1; n += 1
             out.write('%s\t%d\t%s\t%s\t\n' % (L, pos, t, c))
     out.close()

@@ -1,0 +1,31 @@
+crop	text	conf	notes
+f60r_L11_s1	7375257395[7].41206511.4445 73231931	M	bar over 7; dot over 4; 2065 c-shape read 6; 44 heavy cross-stroke 4 unclear; last digit cut
+f60r_L11_s2	193657323.6475565573 95.24.5012575 63	M	dots over 6, 2, 5 (accent-like); c-shapes read 6/5 uncertain
+f60r_L11_s3	56395.467023733032573 95 2512565402 31	M	dot over 4; dots below 1/2 and 6/5 ignored (below line); 3303 c-shape read 0
+f60r_L11_s4	0231.263094394256306330125637 3.29.111	M	dots over 2, 2 and first 1 of iii; c-shapes read 0
+f60r_L11_s5	9111252512565902326100157346950 5	M	61001573: c-shape read 0; end rising, digits after 4 uncertain
+f60r_L11_s6	?9843452520 0?	L	middle band blank (line slopes); read cut-off top row as L11 tail; bottom row (.46166022 93, dot over 4) seems L12 end
+f60r_L12_s1	.57 .25 .57.251235063306305731660	M	dots/accents over 5,2,5,2; c-shapes read 0
+f60r_L12_s2	66023931232506304239312324.57.254	M	mark over 5 small tick (dot or short bar); dot over 2
+f60r_L12_s3	.254650232506304239312573142.4.1070	M	dots over 2, 2, 1; 14 open 4
+f60r_L12_s4	10705(9/4)930323X7023756323739 5.46.26	M	open triangle X after 23; dots over 4 and 2
+f60r_L12_s5	6.2610(3/8)59025936023030563957563936	M	dot over 2; 103 cluster unclear; c-shapes read 0
+f60r_L12_s6	93630323(4)(0/6)166022 93	M	line at top of crop (slopes); bottom row is L13 tail
+f60r_L13_s1	2573952373(6/0)3(6/0)57 32.37395632 31	M	gaps visible; possible dot over 3 (may be ink); c-shapes 6/0
+f60r_L13_s2	3231.256393106323956312593733 06.52	M	dots over 2 and 5; c-shapes read 0
+f60r_L13_s3	06.52732320256303257395 25656373 0	M	dot over 5; comma below 2 ignored; c-shapes read 0
+f60r_L13_s4	7303631.61231502557063773630573.467	M	dot over 1, dot over 4; 255 second 5 has accent maybe dot
+f60r_L13_s5	.4675639523 03.46.29700593125110	M	dots over 4,4,2; last digits 110 cut
+f60r_L13_s6	110563116994003 05	M	line at top of crop; heavily inked/blotted 4; bottom row is L14 tail
+f60r_L14_s1	6323036505935070251050231 6.2	H	dot over final 2; c-shapes read 0
+f60r_L14_s2	16.2560 2(0/8)051957593202393[7].19701	M	ink blot over 20; bar over 7 (above 37); dots over 2 and 1
+f60r_L14_s3	701.63053231603251602305 3.13(9/4)2.117 0	L	accent/dot over 6; mark (tilde/bar) over 9; dots over 1s; c-shapes read 0
+f60r_L14_s4	.117012360632319378231665502512 5	H	dot over first 1
+f60r_L14_s5	12595630573.469920231230390123	M	dot over 4; 23 vs 28 uncertain; mark below 9 ignored
+f60r_L14_s6	1236023756323125 1(9/4)	M	line at top of crop; gap before final 1(9/4); bottom row is L25 region
+f60r_L25_s1	{acessibles, tant pour estre He}	L	clear French, cursive, reading uncertain
+f60r_L25_s2	{Henri de ?sp?berton que pour ses}	L	clear French; ink blot top right; name uncertain
+f60r_L25_s3	{... seruiteur?} 195273239303945	M	French word illegible before digits; blot dots above are from line above
+f60r_L25_s4	9450230305493639312 1165230230512 3	L	target row cut at bottom edge; middle blank
+f60r_L25_s5	??2302 3?9?0? .1635095237773563	L	target row cut at bottom; top row is French of line above; dot over 1
+f60r_L25_s6	?63231 9.2.1602330 5	L	target row cut at bottom; dots over 2? and 1
