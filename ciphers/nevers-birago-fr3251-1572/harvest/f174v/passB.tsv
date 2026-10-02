@@ -1,0 +1,291 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	X_NEW		M	crossed stroke with tick (+ with bar); prose before: figliolo
+L01	2	T55		L	
+L01	3	T63		H	
+L01	4	X_NEW		M	delta/6 shape with loop
+L01	5	T27		H	
+L01	6	T19		H	
+L01	7	T81		H	
+L01	8	T37		H	
+L01	9	T83		H	
+L01	10	T19		H	
+L01	11	T76		L	line end
+L02	1	T37		H	line start
+L02	2	T60		H	
+L02	3	T86		H	
+L02	4	T70		H	
+L02	5	T52		H	
+L02	6	T53		H	
+L02	7	T25		H	
+L02	8	T85		H	
+L02	9	T83		H	
+L02	10	T76		H	
+L02	11	X_NEW		M	open square
+L02	12	T33		H	
+L02	13	T86		H	
+L02	14	X_NEW		M	c with curl (looped c/e)
+L02	15	T53		H	
+L02	16	T37		H	
+L02	17	X_NEW		M	-|- crossed bar group
+L02	18	T83		H	
+L02	19	T85		H	
+L02	20	T27		H	
+L02	21	T25		H	
+L02	22	T36		H	
+L02	23	T37		H	
+L02	24	T96		H	
+L02	25	T52		H	
+L02	26	T36		H	
+L02	27	T19		H	
+L02	28	T60		H	
+L02	29	T19		H	line end
+L03	1	T92		H	line start
+L03	2	T55		H	
+L03	3	X_NEW		M	+ joined to small o
+L03	4	T45		H	
+L03	5	T60		H	
+L03	6	T76		H	
+L03	7	T89		H	
+L03	8	T86		H	
+L03	9	T25		H	
+L03	10	X_NEW		M	t with 3 / +3
+L03	11	T45		H	
+L03	12	T98		H	
+L03	13	T85		H	
+L03	14	T33		H	
+L03	15	T80		H	
+L03	16	T19		H	
+L03	17	T37		H	
+L03	18	X_NEW		M	asterisk
+L03	19	T85		H	
+L03	20	X_NEW		M	c with curl (looped c/e)
+L03	21	T53		H	
+L03	22	T37		H	
+L03	23	T76		H	
+L03	24	T10		H	
+L03	25	T85		H	
+L03	26	X_NEW		M	circle/b with stem and crossbar
+L03	27	T86		H	line end
+L04	1	T42		H	line start
+L04	2	T25		H	
+L04	3	T37		H	
+L04	4	T70		H	
+L04	5	T65		H	
+L04	6	T25		H	
+L04	7	T64		H	
+L04	8	T19		H	
+L04	9	T17		H	
+L04	10	T80		H	
+L04	11	T60		H	
+L04	12	T96		H	
+L04	13	X_NEW		M	-|-
+L04	14	X_NEW		M	digit 8
+L04	15	X_S		M	plain s
+L04	16	T60		H	
+L04	17	T45		H	
+L04	18	T83		H	
+L04	19	T86		H	
+L04	20	T98		H	
+L04	21	T53		H	
+L04	22	T37		H	
+L04	23	T76		H	
+L04	24	T19		H	
+L04	25	T53		H	
+L04	26	T83		H	
+L04	27	T37		H	
+L04	28	T33		H	
+L04	29	T85		H	line end
+L05	1	T70		H	line start
+L05	2	T58		H	
+L05	3	T25		H	
+L05	4	T37		H	
+L05	5	T53		H	
+L05	6	T96		H	
+L05	7	X_NEW		M	omega with hooked s tail
+L05	8	T19		H	
+L05	9	T60		H	
+L05	10	T53		H	
+L05	11	T33		H	
+L05	12	T27		H	
+L05	13	T19		H	
+L05	14	T89		H	
+L05	15	T58		H	
+L05	16	T85		H	
+L05	17	T36		H	
+L05	18	T19		H	
+L05	19	T64		H	
+L05	20	T86		H	
+L05	21	T83		H	
+L05	22	T37		H	
+L05	23	X_NEW		M	-|- crossed bar group
+L05	24	X_NEW		M	digit 4
+L05	25	X_NEW		M	digit 7
+L05	26	T70		H	
+L05	27	T96		H	line end
+L06	1	T53		H	line start
+L06	2	T85		H	
+L06	3	T37		H	
+L06	4	T64		H	
+L06	5	T86		H	
+L06	6	T85		H	
+L06	7	T65		H	
+L06	8	T53		H	
+L06	9	T83		H	
+L06	10	T45		H	
+L06	11	X_NEW		M	c with curl (looped c/e)
+L06	12	T49		H	
+L06	13	T45		H	
+L06	14	T88		H	
+L06	15	T33		H	
+L06	16	T37		H	
+L06	17	T58		H	
+L06	18	T96		H	
+L06	19	T53		H	
+L06	20	T85		H	
+L06	21	T86		H	
+L06	22	T25		H	
+L06	23	T76		H	
+L06	24	T88		H	
+L06	25	T19		H	
+L06	26	T54		H	
+L06	27	X_NEW		M	partial cut sign at edge; line end
+L07	1	T65		H	line start
+L07	2	T96		H	
+L07	3	T81		H	
+L07	4	T96		H	
+L07	5	T58		H	
+L07	6	T45		H	
+L07	7	X_NEW		M	t with 3 / +3
+L07	8	X_NEW		M	-|- crossed bar group
+L07	9	T17		H	
+L07	10	T45		H	
+L07	11	T76		H	
+L07	12	T19		H	
+L07	13	T65		H	
+L07	14	T80		H	
+L07	15	X_NEW		M	digit 8
+L07	16	T76		H	
+L07	17	X_NEW		M	-|- crossed bar group
+L07	18	X_NEW		M	digit 8
+L07	19	X_S		M	plain s
+L07	20	X_NEW		M	M with f tail
+L07	21	T98		H	
+L07	22	T19		H	
+L07	23	T60		H	
+L07	24	T55		H	
+L07	25	T53		H	
+L07	26	T83		H	
+L07	27	T96		H	
+L07	28	X_NEW		M	c with curl (looped c/e)
+L07	29	T53		H	line end
+L08	1	T57		H	line start
+L08	2	T80		H	
+L08	3	T17		H	
+L08	4	T80		H	
+L08	5	T36		H	
+L08	6	T19		H	
+L08	7	T60		H	
+L08	8	T25		H	
+L08	9	T58		H	
+L08	10	T54		H	
+L08	11	T45		H	
+L08	12	X_NEW		M	digit 4
+L08	13	T96		H	
+L08	14	T55		H	
+L08	15	T63		H	
+L08	16	T45		H	
+L08	17	T64		H	
+L08	18	T96		H	
+L08	19	X_NEW		M	c with curl (looped c/e)
+L08	20	T33		H	
+L08	21	T19		H	
+L08	22	T96		H	
+L08	23	X_NEW		M	omega with hooked s tail
+L08	24	T85		H	
+L08	25	X_NEW		M	circle/b with stem and crossbar
+L08	26	T80		H	
+L08	27	T53		H	
+L08	28	T85		H	line end
+L09	1	T89		H	line start
+L09	2	T92		H	
+L09	3	T19		H	
+L09	4	T76		H	
+L09	5	T55		H	
+L09	6	T65		H	
+L09	7	T85		H	
+L09	8	X_NEW		M	M with f tail
+L09	9	T85		H	
+L09	10	T54		H	
+L09	11	T81		H	
+L09	12	T25		H	
+L09	13	T63		H	
+L09	14	T19		H	
+L09	15	T25		H	
+L09	16	T98		H	
+L09	17	T55		H	
+L09	18	T60		H	
+L09	19	T19		H	
+L09	20	X_NEW		M	digit 8
+L09	21	T76		H	
+L09	22	T64		H	
+L09	23	T85		H	
+L09	24	T60		H	
+L09	25	T55		H	
+L09	26	X_NEW		M	-|- crossed bar group
+L09	27	T54		H	
+L09	28	X_NEW		M	dagger/div mark cut at edge; line end
+L10	1	T76		H	line start
+L10	2	T80		H	
+L10	3	T45		H	
+L10	4	T83		H	
+L10	5	T37		H	
+L10	6	X_NEW		M	circle/b with stem and crossbar
+L10	7	X_NEW		M	curly 8-like looped sign
+L10	8	T37		H	
+L10	9	T27		H	
+L10	10	T25		H	
+L10	11	T36		H	
+L10	12	T85		H	
+L10	13	T53		H	
+L10	14	T19		H	
+L10	15	T65		H	
+L10	16	T86		H	
+L10	17	T36		H	
+L10	18	T55		H	
+L10	19	X_NEW		M	c with curl (looped c/e)
+L10	20	T86		H	
+L10	21	T89		H	
+L10	22	T58		H	
+L10	23	T33		H	
+L10	24	T25		H	
+L10	25	T83		H	
+L10	26	T86		H	
+L10	27	X_NEW		M	c with curl (looped c/e); line end
+L11	1	T18		H	line start
+L11	2	T19		H	
+L11	3	T17		H	
+L11	4	T86		H	
+L11	5	T98		H	
+L11	6	T53		H	
+L11	7	T25		H	
+L11	8	X_NEW		M	omega with hooked s tail
+L11	9	T55		H	
+L11	10	T58		H	
+L11	11	T19		H	
+L11	12	T83		H	
+L11	13	T19		H	
+L11	14	X_NEW		M	circle/b with stem and crossbar
+L11	15	T18		H	
+L11	16	T86		H	
+L11	17	T88		H	
+L11	18	T96		H	
+L11	19	X_NEW		M	digit 8
+L11	20	T76		H	
+L11	21	X_NEW		M	c with curl (looped c/e)
+L11	22	T55		H	
+L11	23	T76		H	
+L11	24	T52		H	
+L11	25	X_NEW		M	circle/b with stem and crossbar
+L11	26	T19		H	
+L11	27	T96		H	
+L11	28	T33		H	line end
