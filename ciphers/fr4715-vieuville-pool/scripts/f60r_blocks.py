@@ -29,6 +29,7 @@ TGT = os.path.abspath(os.path.join(HERE, '..'))
 W = os.path.join(TGT, 'witness')
 KEY = os.path.join(TGT, '..', 'fr4715-montholon-1589', 'keys', 'key_vieuville_nevers.tsv')
 LINES = ['L%02d' % n for n in list(range(6, 15)) + list(range(25, 31))]
+READ_LINES = LINES[:9]   # GAPS-4 read L06-L14 (two passes); L25-L30 has pass A only (b3, first cut) -- the next step
 
 
 def key_codes():
@@ -93,13 +94,21 @@ def overlap_merge(acc, nxt):
 def merge():
     for p in 'AB':
         rows = {}
+        # b1..b3: the first cut (images/f60r_blocks3, centred on a straight slope); its s4-s6 crops sit on the wrong row
+        # where the lines curve up at the right (both passes reported it), so only s1-s3 are kept from it and s4-s6 come
+        # from the straightened, ink-tracked re-cut (images/f60r_blocks3t, pass file _t)
         for f in sorted(glob.glob(os.path.join(W, 'f60r_blocks_pass%s_b*.tsv' % p))):
             for r in csv.DictReader(open(f, encoding='utf-8'), delimiter='\t'):
+                if int(r['crop'].strip()[-1]) <= 3:
+                    rows[r['crop'].strip()] = r
+        tf = os.path.join(W, 'f60r_blocks_pass%s_t.tsv' % p)
+        if os.path.exists(tf):
+            for r in csv.DictReader(open(tf, encoding='utf-8'), delimiter='\t'):
                 rows[r['crop'].strip()] = r
         out = open(os.path.join(W, 'f60r_blocks_pass%s_long.tsv' % p), 'w', encoding='utf-8')
         out.write('line\tpos\ttoken\tconf\n')
         stats = []
-        for L in LINES:
+        for L in READ_LINES:
             acc, conf = [], []
             for s in range(1, 7):
                 r = rows.get('f60r_%s_s%d' % (L, s))
@@ -195,7 +204,7 @@ def segment():
               '# conf: the lowest confidence of the digits making the token (H both passes H and agreed; M agreed at M or settled; L unsure).\n')
     out.write('line\tpos\ttoken\tconf\tgloss\n')
     n = 0
-    for L in LINES:
+    for L in READ_LINES:
         seq = by.get(L, [])
         units = [s for s, _ in seq]
         confs = [c for _, c in seq]

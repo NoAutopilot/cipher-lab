@@ -1,0 +1,31 @@
+crop	text	conf	notes
+f60r_L06_s1	13425.25465023.2970239350(9/4)5	M	first glyph 1 touched by descender from line above; dot over 2 of second 25 and over 2 before 97
+f60r_L06_s2	5095602573.461.4[613]3503956473907	M	bar above roughly 613 after dotted 4 (could be ink from line above); final 7 cut at edge
+f60r_L06_s3	0742352563.95.26930593500563123039	L	glyph after 423 is a v-like form read 25 (could be (2/5)); dot over 2 of 26
+f60r_L06_s4	039512346.92.2426.5010563952575630	M	dots over 9, 2, 5
+f60r_L06_s5	630314636095302590505131025950	L	line rises: transcribed UPPER row (continuation of s4); full-height lower row (next line) reads ...[2]3?(7/1)?..41.4713.5501035639565(0)
+f60r_L06_s6	9530952510252???13	L	upper row (this line) cut off at top edge, partial only; full-height lower row reads 56505739512 3.2764.19 (ends line; '.1' may be a letter i)
+f60r_L07_s1	324259523737935023702503092	M	stroke under/through 7 after 373 (probably descender); last glyph cut
+f60r_L07_s2	0923.462593659373033250565952393103	M	dot over 4; 73(0/6)33 cluster uncertain
+f60r_L07_s3	103165023305063032305739595251393462	M	read continuous; final 2 cut
+f60r_L07_s4	346.276470035939440363237395055102363	M	dot over 2; small mark near 3 in 0035 maybe dot
+f60r_L07_s5	23631.257032235134471355010356395030	L	transcribed UPPER row (continuation of s4); lower full-height row (next line) reads ...0967303351050 23.4675256350 23
+f60r_L07_s6	0503139?2325?	L	upper row (this line) cut off at top; full-height lower row reads 502393103245060105 0
+f60r_L08_s1	.2570163736563702550230510236	M	dot over first 2; a mid-height dot between 6 and 3 (6.3) ignored as not above a digit
+f60r_L08_s2	0236303094257314[.4613]165212312516.9.9.50	M	bar from dotted 4 to 3 (4613); dots over both 9s and over 5
+f60r_L08_s3	.99.5012516.75.25.5011(5/2)64.16.9460230325	L	v-like glyph read (5/2); dot over 9 before 4 (or over 1 of 16)
+f60r_L08_s4	0325932373257395.992373.101230312303	M	dot over first 9 of 99 and over 1 of 101
+f60r_L08_s5	23031005730325105023401325035023	L	transcribed UPPER row (continuation of s4); full-height lower row (next line end) reads ...34026299122 3.26.419
+f60r_L08_s6	5023951032??	L	upper row cut off; full-height lower row reads 6.41959016036 4.19.9910 (same text as L09_s6 upper)
+f60r_L09_s1	.46.9923730305902302360702365	M	dot over 4 and over first 9; initial comma-like mark before 4 ignored
+f60r_L09_s2	3654023.415023756395759373630573.46.9	H	dots over 4 (twice) and 9
+f60r_L09_s3	.46.99259323[6]393123.407390111056395	L	cross/stroke over 6 after 23 (may be descender from line above); 4 0 7 cluster after 23 unsure (40/43); 9011110 strokes ambiguous
+f60r_L09_s4	639511659373237505931095234673231	M	marks below 93 ignored; last 1 may carry dot
+f60r_L09_s5	123.1693036323030493639912326419	M	transcribed UPPER row; lower row (next line) reads ...(1).9.1.10257 50
+f60r_L09_s6	4195901?03???	L	upper row cut off (matches L08_s6 lower); full-height lower row reads 2505593952 31.46.50123
+f60r_L10_s1	2573.16165057395123[13].52.99932305	M	bar over 13; dots over 1, 5, first 9
+f60r_L10_s2	2305902303.40.5070239350951939073	M	dots over 4 and 5
+f60r_L10_s3	073231.41.144616.491939073230393639	M	dot near 4 of 41 (over 4 or 1); 1 4 4 first 4 is f-like
+f60r_L10_s4	363951.250323239312573.14.1673050395	M	caret-like mark over 2 read as dot; dots over 1 of 14 and 1 of 16
+f60r_L10_s5	395123123506330630573.4012025#0	L	transcribed UPPER row; # = dotted f/+ like glyph after 25; lower row (next line) reads ....1690505 0
+f60r_L10_s6	7503959525??	L	upper row cut off; full-height lower row reads 5050909523200056303

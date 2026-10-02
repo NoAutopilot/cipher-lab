@@ -30,6 +30,38 @@ def bands():
         out.append((top, bot))
     return out
 
+def track_lines(im, lines, shift, strip=270, win=14, gap=30):
+    import numpy as np
+    g = np.array(im.convert('L')).astype(float)
+    ink = (g < 110).astype(float)
+    W = ink.shape[1]
+    xs = list(range(0, W, strip))
+    k = np.ones(15) / 15
+    profs = [np.convolve(ink[:, x:x + strip].sum(1), k, 'same') for x in xs]
+    out = {}
+    for n in sorted(lines, reverse=True):          # bottom line first, so each line can be held above the next
+        c, pts = CENTRES[n - 1] + shift, []
+        below = out.get(n + 1)
+        for j, x in enumerate(xs):
+            lo, hi = c - win, c + win
+            if below is not None:
+                hi = min(hi, int(below[min(W - 1, x + strip // 2)]) - gap)
+            y = lo + int(np.argmax(profs[j][lo:hi])) if hi > lo else hi
+            pts.append(y); c = y
+        mids = [x + strip // 2 for x in xs]
+        out[n] = [int(round(v)) for v in np.interp(range(W), mids, pts)]
+    return out
+
+
+def straight(im, track, x0, x1, ab):
+    above, below = ab
+    out = Image.new('RGB', (x1 - x0, above + below), 'white')
+    for x in range(x0, x1):
+        c = track[x]
+        out.paste(im.crop((x, c - above, x + 1, c + below)), (x - x0, 0))
+    return out
+
+
 def main():
     global OUT, SEG, SCALE
     ap = argparse.ArgumentParser()
@@ -45,10 +77,17 @@ def main():
     ap.add_argument('--slope', type=float, default=0.0,
                     help='px the line centre moves per full region width, left to right (dense blocks: about -20)')
     ap.add_argument('--shift', type=int, default=0, help='px added to every centre (dense blocks: about +6)')
+    ap.add_argument('--track', action='store_true',
+                    help='GAPS-4 (2 Oct 2026): follow each line by its ink row profile in 270 px strips (the lines curve up '
+                         'to 60 px at the right edge) and cut a straightened band, centred-ABOVE..centre+BELOW per column; '
+                         'a line is kept at least 30 px above the next line\'s track (L13 otherwise jumps onto L14)')
+    ap.add_argument('--segments', default='', help='only these segment numbers, e.g. 4,5,6')
     a = ap.parse_args()
     OUT, SEG, SCALE = a.out, a.seg, a.scale
     im = Image.open(SRC); W, H = im.size
     want = set(int(x) for x in a.lines.split(',') if x) or set(range(1, len(CENTRES) + 1))
+    segs_wanted = set(int(x) for x in a.segments.split(',') if x)
+    tracks = track_lines(im, sorted(want), a.shift) if a.track else {}
     os.makedirs(OUT, exist_ok=True)
     entries = {}
     for n, (top, bot) in enumerate(bands(), 1):
@@ -56,6 +95,16 @@ def main():
         x0, s = 0, 1
         while x0 < W:
             x1 = min(W, x0 + SEG)
+            if a.track:
+                if not segs_wanted or s in segs_wanted:
+                    crop = straight(im, tracks[n], x0, x1, a.centred or (30, 28)).resize(((x1 - x0) * SCALE, sum(a.centred or (30, 28)) * SCALE), Image.LANCZOS)
+                    name = f'f60r_L{n:02d}_s{s}.jpg'
+                    crop.save(os.path.join(OUT, name), quality=90)
+                    entries[name] = {'box_region': [x0, 'tracked', x1 - x0, sum(a.centred or (30, 28))], 'track_px': tracks[n][x0:x1:100],
+                                     'scale': SCALE, 'line': f'L{n:02d}', 'segment': f's{s}'}
+                if x1 >= W: break
+                x0 = x1 - OVERLAP; s += 1
+                continue
             if a.centred:
                 c = CENTRES[n-1] + a.shift + int(a.slope * ((x0 + x1) / 2) / W)
                 top, bot = max(0, c - a.centred[0]), min(H, c + a.centred[1])
