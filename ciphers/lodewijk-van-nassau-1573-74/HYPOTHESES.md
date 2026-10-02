@@ -83,3 +83,14 @@ key_full.tsv keeps its 4614 value with this conflict noted (axmerge4/proposal.ts
 | hypothesis | statistic | control (5200 cut N=833, key_1572) | control shuffle max | target (4612 v3) | target shuffle max | gate | verdict |
 |---|---|---|---|---|---|---|---|
 | 4612 is enciphered with key_1572 (KEY-OFFICES row 34) | fr16 French-word share, nulls dropped in run | 86.9% | 54.8% | 26.7% | 28.6% | > shuffle max AND >= 0.85 x control (73.9%) | gate not met: control-backed negative for this key (NOTES.md NEXT-LVN) |
+
+## Code 173, graded per direction (2 Oct 2026, A2-LVN, CLAUDE.md rule 4)
+
+Not a conflict between two H witnesses: only one witness is H, and the list-B observations carry no value.
+| witness | sender -> recipient | date | 173 reads | grade | source |
+|---|---|---|---|---|---|
+| WVO 5550 p.2 run p2-5, period interlinear gloss "... vnd graf" over 153.130.90.1.79.173 | Jan -> Willem (list A, like 5797) | Dec 1573 | graf (tail word whole at 300 dpi, no prefix; "vnd" over 90.1.79, so "graf" falls on 173) | H, list A only | NOTES A2-LVN; crop images_wv2/crops_rederiv/05550_p2_run_p2-5_tail_300dpi.jpg |
+| WVO 5810 p1_L40 pos 21, "de harlem <173> a quelle" | Willem -> brothers (list B) | Groen IV CDLXVIII | no value: the sign is "1?3" with the middle digit unlike this hand's 7 (no descender) or plain 1 (flag at top); J6's independent pass read "113 or 173?" (L); Groen IV CDLXVIII prints "Harlem, laquelle", which 113 = l fills exactly | M (sign itself unsettled); not a null observation | NOTES A2-LVN; crops 05810_p1_L40_173_300dpi.jpg, 05810_p1_L40_173_vs_143_7s.jpg |
+| WVO 5801 p1_L06 pos 106, p3_L06 pos 5 | Willem -> Jan and Lodewijk (list B) | 28 May 1573 | key_5801 'q', one aligner observation, M (AX2-5801) | M, unconstrained | key_5801.tsv |
+Consequence: 5797 p5_spot5 (list A) reads 173 = graf at H through exceptions_5797.tsv (5797 key_full job only); key_full.tsv gets no
+173 row, so list-B letters do not inherit it. No statistic was computed, so no rule-3 control applies (a gloss read and a print fit).

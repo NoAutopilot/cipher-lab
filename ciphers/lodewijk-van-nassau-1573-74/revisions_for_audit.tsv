@@ -258,3 +258,4 @@ letter	line	pos	code	old	new	grade	class	source	context_new
 5797	p3_spot1_open	5	130	? U	NULL	M	NULL	names.tsv: empty in 8 of 8 aligned observations, 0 contradicting	NULL <NULL> ? s e c
 5797	p3_spot1_open	14	124	? U	NULL	M	NULL	names.tsv: empty in 18 of 18 aligned observations, 0 contradicting	o u r s <NULL> ? NULL e n
 5797	p3_spot1_open	17	138	? U	NULL	M	NULL	names.tsv: empty in 5 of 5 aligned observations, 0 contradicting	r s NULL ? <NULL> e n t r
+5797	p5_spot5	4	173	? U	graf	H	name	exceptions_5797.tsv: 5550 p2-5 period gloss tail "vnd graf" at 300 dpi, list A only (A2-LVN, 2 Oct 2026; HYPOTHESES.md "Code 173, graded per direction")	{ist} NULL l <graf> {gestern}

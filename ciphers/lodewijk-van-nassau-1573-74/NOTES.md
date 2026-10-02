@@ -3174,7 +3174,7 @@ Read so far: 2317 of 4032 cipher tokens in the four target letters (57.5%), coun
 - 4610/4611/4616 name codes above 151 seen once or twice (31 U tokens: 4610 180, 182, 184, 186, 191 x2, 194, 203, 205, 225 x2; 4611 174, 175, 187, 199, 204, 211, 214, 225, 228, 232, 245, 248, 254, 280, 311 x2, 331, 335; 4616 313 x2) - blocker: open-codes; these letters have no print to align against (AUDIT.md section 1); the only sibling values are single aligner guesses at M in the list-B keys (key_7205/key_7206/key_5801 rows for 175, 182, 184, 191, 199, 203, 211, 228, 232, 254, 311, 331, 335) and name codes differ by direction (AX-GLOSS, AX-COMP, AX2-172); names.tsv has 180 'de' (5810) and 311 'pays' (5811) at M on one observation each; of the 26 codes only 184 and 254 occur in 5803/5804/5805/5812, once each; next: read Orange's printed replies (Groen IV CDXXVII, CDXXXIII, and CDLXXXIV = 4503, on disk at groen/groen_IV_CDLXXXIV.txt) for the persons and places he names back and test each against the code's context in axnames/still_unread.tsv, ~$3
 - 4610/4611/4616 transcription: 449 M tokens (131/291/27) and 4616's 19 unsegmented digit groups (U, e.g. 81/28/2, all 19 in 4616) - blocker: not-attempted; R20 settled rows by n-gram margin and one image cluster (4611 p2_L36), opened 4610 p2_L26 but left it M ("recorded, not settled"), never opened 4611 p2_L14/L15, and worked only from the 150-dpi renders in images/; the 300-dpi re-pass lifted 4612's pass agreement from 47.8% to 88.3% (AX-4612TR, AX-4612TR2); next: render 04610/04611/04616.pdf (7 pages) at 300 dpi, cut crops with tools/iiif_lines.py --image and paste the command, run one blind pass per page (7 calls) plus one reconciliation unit at the per-pass rate, then decode_key.py --check, ~$14
 - 4612 cipher body (833 numerals 1-120 in ciphertext_4612_v3.tsv, plus 154 clear-word '?' rows) - blocker: not-attempted; under key_full the French-word share is 70.7%, above the shuffle max 60.6% but below the 79.2% gate (5811 control 93.2%), the fr16 judge FAILs both 4612 and the 5811 control, the anneal control reached 0.699 against 0.90 (AX2-4612, HYPOTHESES.md), tools/key_repair.py is retired for H-S after three CONTROL BELOW GATE runs (AX2-4612S/S2/S3), the key_5799 and key_5801 tests were non-tests (AX-5799, AX2-5801), and AX-4612's family_run.py negatives used the superseded 47.8% transcription; key_1572 (KEY-OFFICES.tsv row 34) was applied 2 Oct 2026 (NEXT-LVN, this file) and does not read it: 26.7% French-word share against a 28.6% shuffle max and a 73.9% bar from 5200 cut to N=833 (86.9%, shuffle max 54.8%), and only 37.9% of its numerals fall on a multiple of 3 against 5200's 64.7%; key_nepveu covers too little to test (29.5%); next: the word-level global reassignment seeded from key_full and scored by fr16 word segmentation that AX2-4612S3 named, gated first on the 5811 cut with 20% of codes perturbed at >=0.90, ~$5
-- 5797 p5_spot5, code 173 in "ist [131.123.173] gestern zue ghen gezogen" (Groen IV p.223) - blocker: not-attempted; 173 has no key_full row, only names.tsv's 'graf (gloss prefix illegible)' at M from the partly obscured 5550 p2-5 gloss "Pals- ... vnd graf" over 153.130.90.1.79.173 (AUDIT.md V8.2, list A like 5797), and axnames/occ_5810.tsv aligns 5810 p1_L40 as "...lle de harlem <173> a quelle apres" with no printed word in the slot, so 173 may be a null in 5810 (list B) or a word Groen dropped; next: read Groen's 5810 sentence at that place (groen/groen_IV_CDLXVIII.txt, on disk) and re-zoom the 5550 p2-5 gloss tail at 300 dpi, grading per direction (rule 4, AX2-172), ~$3
+- 5797 p5_spot5, code 173 -- settled for list A, 2 Oct 2026 (A2-LVN, this file): 173 = graf at H from the 5550 p2-5 period gloss tail read at 300 dpi ("vnd" over 90.1.79, "graf" whole over 173), applied to 5797 only through exceptions_5797.tsv (reading_5797_full: H 2->3, U 11->10, --check up to date); 5810's sign is M, 173 or 113 (113 = l fills Groen's "laquelle"), so it is not a list-B null observation; 5801's 173 x2 stays key_5801 'q' M (HYPOTHESES.md "Code 173, graded per direction"); the spot's 123 stays dual l/NULL M - blocker: open-codes (list B has no settled value for 173 and needs none for the target letters; 4610/4611/4612/4616 do not contain 173); remaining for the spot: none beyond 123's dual reading, which is gap 1's band test
 - 5797 p6_spot4 (172), p7_spot6 (182), p8_spot7 (156) - blocker: open-codes; 172 has three conflicting period witnesses, le Conte Jean (4614), Lumbres (7206) and le conte Louis (5801 gloss), so AUDIT.md A4 withdrew the spot (HYPOTHESES.md "Key conflict: code 172"); 182 occurs only at 4610 p2_L02 (M) and once in 7205, where key_7205 'y' and key_5801 'i' are unconstrained aligner guesses (AX-COMP2); 156 occurs nowhere else in the 16 ciphertext files (AX2-BLANKS, ax2_blanks/contexts.tsv); none of the three occurs in the j6 sibling transcriptions 5803/5804/5805/5810/5812 (counted 2 Oct 2026)
 - 5797 spot 1, the p.222 garbled paragraph ([Phit]/[testgu]) - blocker: not-attempted; only its opening anchor "Soviel den secours" was located (p3_spot1_open, AX-5797) and the garbled interior never was (AUDIT.md V8.1 table); next: render 05797.pdf pp.3-4 at 300 dpi, cut crops with tools/iiif_lines.py --image, run two blind passes per page plus one reconciliation (5 calls), then align to the fragments Groen prints on p.222, ~$8
 
@@ -3184,9 +3184,9 @@ Read so far: 2317 of 4032 cipher tokens in the four target letters (57.5%), coun
 - [x] known-keys: tried key.tsv, key_full v3, key_5799, key_5801 and key_4614/7205/7206; 5799 uses a different table (W1 0/146, AX-5799); 4610/4611/4616/5797/5810/5811/4503/4614/7205/5801 use key_full's table (table_check 1.000). key_1572 (KEY-OFFICES.tsv row 34, Jan van Nassau and Orange, 1572) applied to 4612 v3 on 2 Oct 2026 (NEXT-LVN): does not read (26.7% vs shuffle max 28.6%, control 5200 86.9%); key_nepveu (row 37) puts only 29.5% of 4612's numerals on a keyed code, too little to test; key_5549 (row 35) is Lodewijk's 1574 table again. Cryptiana and the solver repositories hold no key for this circle (check-solved items 3, 5). No other key of this office or decade is on file.
 - [x] print: searched (AUDIT.md section 1, A1, D1, V5, V8, V-GATE2): Groen III-V and the Supplement by date and full text, Gachard, Kervyn, Blok 1887/1889, La Huguerye, the KHA inventory, WVO, Google Books, IA full text, OpenAlex/S2, JSTOR rows 52-54, 60 and 87-92. No prior decipherment of 4610/4611/4612/4616 was located. Orange's replies to 4610/4611/4616 are printed (CDXXVII, CDXXXIII, CDLXXXIV), none was located for 4612; 5797, 5799, 5801, 5810, 5811 and 4503 are printed in Groen IV.
 - [ ] key-rebuild: done for names and for nulls 121-138 (AX-NAMES/NAMES2 Groen alignment with the class-b gate, AX-GLOSS H values for 192/221, AX-MERGE/MERGE3 conflict gate); U in 4610/4611/4616 fell from 541 to 310. For 4612 under H-S, tools/key_repair.py is retired after three CONTROL BELOW GATE runs (AX2-4612S/S2/S3), and the char-order-3 key-seeded anneal failed its control once (0.699, a 150000-iteration recheck 0.786, gate 0.90). Planned, each a different instrument from the retired one: the LM NULL-vs-letter test for the band (gap 1, ~$4) and the word-level reassignment for 4612 (gap 4, ~$5).
-- [ ] image-check: done for 4612 (300-dpi re-render, all 32 numeral disagreements settled, AX-4612TR2, AX2-4612), 7205 digits (AX-COMP2), 172 by eye (AX2-172), the 4611 p2_L36 footer (R20 override) and the 5797 spots in two passes (AX-5797); 5811 stalled at 150 dpi (W2) but is printed. Planned: a 300-dpi settle of 4610/4611/4616's M rows and 4616's 19 split groups (gap 3, ~$14) and of 5797 pp.3-4 (gap 7, ~$8).
+- [ ] image-check: done for 4612 (300-dpi re-render, all 32 numeral disagreements settled, AX-4612TR2, AX2-4612), the 5550 p2-5 gloss tail and 5810 p1_L40's 173/113 sign at 300 dpi (A2-LVN, 2 Oct 2026: 173 = graf H list A; 5810 sign M), 7205 digits (AX-COMP2), 172 by eye (AX2-172), the 4611 p2_L36 footer (R20 override) and the 5797 spots in two passes (AX-5797); 5811 stalled at 150 dpi (W2) but is printed. Planned: a 300-dpi settle of 4610/4611/4616's M rows and 4616's 19 split groups (gap 3, ~$14) and of 5797 pp.3-4 (gap 7, ~$8).
 - [x] retry: readings regenerated and regraded under key_full v1, v2 and v3 (AX-NAMES2, AX-MERGE, AX-MERGE3); fresh re-derivations byte-identical (AX-REDERIV, AX-REDERIV2); U in 4610/4611/4616 fell from 541 to 310. Rerun after gaps 1, 3 and 4.
-Verdict: keep going: 7 internal gaps; cheapest next: 5797 p5_spot5 code 173 -- Groen's 5810 sentence (groen/groen_IV_CDLXVIII.txt) and a 300-dpi re-zoom of the 5550 p2-5 gloss tail, graded per direction, ~$3
+Verdict: keep going: 7 internal gaps (gap 5, code 173, settled for list A on 2 Oct 2026 and now open-codes); cheapest next: 4610/4611/4616 null-band NULL-vs-letter test scored by the fr16 LM, gated first on hidden C-graded nulls 121-138 and matched letter codes, reported per class, ~$4
 
 ## Intake gate, 2 Oct 2026 20:5x UTC (A2-LVN, account 2, LANE-A2PUSH) -- step not run
 
@@ -3245,3 +3245,64 @@ printed reply of 17 Jun 1573 (Groen IV CDXXVII) answers its substance without de
 CDXXVII, CDXXXIII, CDLXXXIV) acknowledge the letters but print no decipherment; none located for 4612 (AUDIT.md section 1). The
 sender-side (Nassau/Dillenburg) regest series, Demandt's *Nassau-oranische Korrespondenzen*, stops at 1570 (august-van-saksen
 NOTES, check-solved item 1), before these dates.
+
+## A2-LVN: code 173 graded per direction (2 Oct 2026, 21:32-21:4x UTC, account 2, LANE-A2PUSH)
+
+Intake gate first (brief step 2), `python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74`, exit 0:
+
+    lodewijk-van-nassau-1573-74: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+The step from the Verdict line, nothing else. Source PDFs fetched once each from resources.huygens.knaw.nl
+(05810.pdf, 05550.pdf; scratchpad only, not committed), rendered at 300 dpi with pdftoppm; crops cut by hand from the
+render after `tools/iiif_lines.py --image <render> --region 560,2680,1820,320 --ink 100 --distance 60 --debug` found the
+three 5810 p1 lines (L40-L42) for the overlay. Read by eye in this session (no subagent).
+
+**(1) Groen's 5810 sentence.** groen/groen_IV_CDLXVIII.txt prints "...à l'endroict de la bonne ville de Harlem, laquelle,
+après s'estre si vaillamment maintenue...": no word between "Harlem" and "laquelle". The leaf runs
+`84.312.78.84.127.223.132.[173].63.18. / 40.88.114.113.84` = de la [ville de] de [NULL][harlem][NULL][?] a q / u e l l e:
+the only letter of "laquelle" no code supplies is the initial **l**, and the disputed sign sits exactly there.
+**Image (crops images_wv2/crops_rederiv/05810_p1_L40_173_300dpi.jpg, 05810_p1_L40_173_vs_143_7s.jpg):** the sign is
+"1?3". Its middle digit is a short upright with a bar at the top, inside the x-height. This hand's 7 (127 on L40 and L41)
+is a top bar with a long stroke below the baseline; its 4 is a "+" crossed at mid-height (143 on L42, 242 on L41); its 1 is
+a plain upright. The middle digit matches none of them cleanly. J6's independent pass on the same line
+(../jan-van-nassau-1572-75/j6/fit_5810.tsv, 5810p1_B5_r1 pos 10) had already read it "113 or 173?" at L; passB read 173
+on a single pass. **Result:** the 5810 token is M, 173 or 113. Read as 113 (= l, C) it fills Groen's "laquelle" exactly;
+read as 173 it would be a word Groen does not print. Either way 5810 is **not** an observation of 173 as a null in list B,
+as the gap line had allowed. ciphertext_5810.tsv is left as transcribed (rule: never silently repaired); the alternative
+is recorded here and in HYPOTHESES.md.
+
+**(2) The 5550 p2-5 gloss tail at 300 dpi** (crop images_wv2/crops_rederiv/05550_p2_run_p2-5_tail_300dpi.jpg, which shows the
+gloss and the cipher run together). The run reads 153.130.90.1.79.173. The gloss above it reads, left to right,
+"Pals[...]duc vnd graf". The first word is still crossed by a descender of the main hand (V8.2's finding stands: no
+clean "Palsgrave" there, and its middle letters stay unread). The tail is clear: **"vnd"** stands over 90.1.79, three
+letter codes (key_full: f, n, d; the f/v difference is noted, not pursued), and **"graf"** is written whole, with no
+prefix, ending before a flourish of the main hand. With "vnd" on 90.1.79, the only code left under "graf" is 173.
+**Result:** 173 = graf, read from a period interlinear gloss, **H, list A only** (5550 is Jan to Willem, Dec 1573, the
+same direction as 5797). The alignment of "graf" to 173 comes from elimination within the run, not from a gloss written
+over each code (the p2-11 case). A verifier should know that.
+
+**(3) Graded per direction (rule 4, AX2-172):** HYPOTHESES.md "Code 173, graded per direction". This is not two H
+witnesses in conflict. The only H witness is list A. List B holds the unsettled 5810 sign (M) and 5801's two
+occurrences, where key_5801 has 'q' from one aligner observation (M, unconstrained; AX2-5801). key_full.tsv gets no
+173 row, so list-B letters do not inherit the value.
+
+**(4) Reading regenerated (rule 7).** New `exceptions_5797.tsv` (p5_spot5 pos 4 = graf, H, with the reason), wired into
+`decode_5797_full.json` only. The key.tsv reading (reading_5797.txt) is unchanged. `python3 tools/decode_key.py
+ciphers/lodewijk-van-nassau-1573-74 --config .../decode_5797_full.json --check` gives "reading up to date". Tokens went
+from H 2, U 11 to **H 3, U 10** (C 14, M 44, I 2 unchanged; 73 total). p5_spot5 now reads `{ist}l[graf]{gestern}`: 131
+NULL (C), 123 l (M; dual reading, null in 4614 and on 5810/5811), 173 graf (H). With 123 as a null, this gives "ist
+[der] Graf gestern zue ghen gezogen". Groen's blank is filled by a title, not a name. Which count is meant is not
+inferred here.
+Judge (spec specs/lodewijk-5797.json, `python3 tools/judge_plaintext.py specs/lodewijk-5797.json --file
+ciphers/lodewijk-van-nassau-1573-74/reading_5797_full.txt`):
+
+    FAIL language: score=-1.471, null_p99=-1.622, real_p05=-0.457, real_median=-0.431, mode=both, N=329
+    FAIL words: cover=0.334, min=0.5, real_text_median_cover=0.763
+    FAIL - lodewijk-5797 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Before the change it read -1.467 / cover 0.338, also a FAIL. The file is mostly the code-cluster fragments of seven
+spots, so the judge cannot decide one word, either way.
+No statistic was computed in this step (a gloss read and a print fit), so rule 3 has no control to run.
+Not done (outside the brief): 5801's two 173 contexts were not image-checked; the first word of the 5550 p2-5 gloss
+and code 130's list-A value ("duc"?) were not pursued. Requests: resources.huygens.knaw.nl 2 (one PDF each). Vision:
+7 crops read by eye in this session, no subagent calls.
