@@ -687,15 +687,65 @@ would inject a different key's meanings (the Szembek merge rule in CLAUDE.md rul
 Hosts: gallica.bnf.fr IIIF 1 request. Subagents: 2 (Sonnet, blind passes, 60 crops each); own reads: 6 strip composites + 2
 native zooms. No credentials.
 
-## Remaining gaps (A2-COL2, 2 Oct 2026)
+## A2-COL3 (account 2, LANE-A2PUSH, 2 Oct 2026): f.23 word-level re-pairing and re-alignment with the same control
 
-Read so far: 27 of 168 f.24 tokens and 20 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing canvases 0.
-- f.23 codes beyond the 6 C codes - blocker: not-attempted; 41 pairs with phrase-level glosses leave 64 of 70 codes at M because a gloss phrase also covers unglossed neighbouring runs (A2-COL2 step); next: re-cut the pairs to the run directly under each gloss word (word-level pairs, by eye from the same crops) and re-align with the same shuffled-gloss control, ~$2
+Brief `.claude/briefs/runs/2026-10-02-acct2-a2-col3.md`. Intake gate at start: `colbert26-lathuillerie-1644: partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Re-pairing (by eye, one reader, not blind).** The A2-COL2 region was re-fetched once (`tools/iiif_lines.py --ark
+btv1b10035069t --canvas 26 --region 3900,700,3600,5400 --dry-run`, 1 Gallica IIIF request; the earlier crops lived only in
+that session's scratchpad) and the same 30 units (A2-COL2's Y0:Y1 list) were cut locally and stacked into five strip
+composites (scratch only). This worker read the composites and split each A2-COL2 phrase pair into word pairs only where the
+cipher line has a visible gap between runs that sits under the gloss words one to one; the code sequence of every pair is
+unchanged (checked: the word pairs concatenate back to `interlinear/f23_reconciled.tsv` for all 41 pairs). Pairs whose gloss is
+offset from the runs or that are one run under several words stay whole (P06, P07, P10, P21, P26, P27, P30, P34, P35, P39,
+P40; P24 "quon y" kept as one). Result: `interlinear/f23w_split.tsv` (word, codes, the unit and run split it rests on) and
+`interlinear/f23w_pairs.tsv`, 116 word pairs, the same 293 aligned tokens. P36 still held out; the split was read with the
+codes in view, so the reader could have been steered by a code's other occurrences -- the control below is what licenses the
+count, not the reader.
+
+**Alignment and control (rule 3).** Same tool, flags and control as A2-COL2 (`interlinear/f23_control.py`, which now takes
+`--pairs`; default unchanged and reproduces A2-COL2's 63 / mean 34.7 / max 45). Output `interlinear/f23w_control_out.txt`:
+```
+flags	--floor 100 --keep-fs   (phrase pairs, f23_pairs.tsv)
+agrees_all	real 63	control mean 34.7 p95 41 max 45	real>max True
+flags	--floor 100 --keep-fs   (word pairs, f23w_pairs.tsv)
+agrees_all	real 128	control mean 30.8 p95 39 max 45	real>max True
+```
+The control deals the 116 word glosses to the cipher runs in a random derangement (50 seeds), so a code meets a different gloss
+word each time; agreement depends on which gloss a run meets, so the control can fail differently, and it does (mean 30.8).
+Flat start, nothing seeded. **Per-leaf gate: passes, 128 vs shuffled max 45** (phrase level 63 vs 45).
+
+**Key** (`key_f23.tsv` replaced; the phrase-level key kept as `interlinear/key_f23_phrase.tsv`). Same C rule (>= 2 occurrences,
+>= 2/3 take one chunk): 21 C codes, was 6 -- 10 a, 12 c, 18 h, 22 m, 24 n, 25 p, 28 la, 33 ux, 36 ez, 40 b, 43 p, 48 c, 49 que,
+51 de, 53 d, 65 s, 69 s, 78 u, 89 m, 97 pour, 98 vous. 49 codes M (82 = mon nepueu 3/5, 31 = M de Brienne 3/13, 34 = M Dauaux
+2/4, 39 = et 4/8 stay M under the strict rule; 29 is spread over "se", "le", "a" and others, 26 occurrences). The unread "8?" of
+P13 is left out of the key and stays U. The design picture holds: a two-digit syllabary (12 18 29 61 = c h ar ge; 33 = ux in
+both "mieux" and "ceux") with word and name codes.
+
+**Decode** (`python3 tools/decode_key.py ciphers/colbert26-lathuillerie-1644 --check`, exit 0, "reading up to date"):
+`reading_f23.txt`, `reading_tokens_f23.tsv`; 306 tokens: H 0, C 92, S 0, M 213, I 0, U 1 (was C 20, M 285). Cryptanalytic-grade
+by the rule-4 count; every C is the leaf's own gloss. **Held-out P36** ("que vous estes tresbien icy", 13 codes, not in the
+alignment): 4 C tokens, all consistent with the gloss -- 49 que (1st), 98 vous (2nd), 65 s (10th, in "tres"), 12 c (12th, in
+"icy", 20 12 35 = i c y); 4/4, up from 1/1. Judge, pasted:
+```
+FAIL language: score=-1.412, null_p99=-1.867, real_p05=-0.9, real_median=-0.792, mode=both, N=684
+ok   words: cover=0.741, min=0.4, real_text_median_cover=0.949
+FAIL - colbert26-lathuillerie-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Expected: 213 of 306 tokens are still M alignment chunks (was -1.582).
+
+Hosts: gallica.bnf.fr IIIF 1 request. Vision: 0 subagent calls; 5 own reads of strip composites. No credentials.
+
+## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, 2 Oct 2026)
+
+Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing canvases 0.
+- f.23 codes beyond the 21 C codes - blocker: open-codes; word-level re-pairing done (A2-COL3: 128 vs shuffled max 45, 21 C codes, held-out 4/4); the other 49 codes occur once or split across chunks on this one leaf (key_f23.tsv), so more occurrences are needed -- the rotated margin postscript below is the only further f.23 material
 - f.23 rotated margin postscript - blocker: not-attempted; glossed two-digit runs in the left margin, not cut (A2-COL2 step); next: iiif_lines crop of the rotated block, 2 blind passes + 1 reconciliation, held out against key_f23 as a known-answer test, ~$2
 - f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv), and f.23 is a different key, so it cannot serve as the prior (A2-COL2 step)
 - canvas 20-21 notes - blocker: not-attempted; KX-LATHKEY2 judged them topical, but f.24 shows gloss lines were taken for clear text; next: re-read canvas 20 gloss-vs-clear on native crops, ~$2
 
-## Escalation (A2-COL2, 2 Oct 2026)
+## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, 2 Oct 2026)
 
 - [ ] siblings: the other 19 cipher-bearing canvases not yet sorted by system (two-digit like f.23, mixed like f.24); next: one thumbnail sort, ~$1
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
@@ -703,6 +753,6 @@ Read so far: 27 of 168 f.24 tokens and 20 of 306 f.23 tokens at grade C (reading
 - [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
 - [n/a] key-rebuild: f.23 and f.24 are different keys (51, 31 conflict), so there is no merge to make
 - [ ] image-check: canvas 20-21 gloss-vs-clear re-read on native crops
-- [ ] retry: f.23 word-level re-pairing and re-alignment with the same control
+- [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412
 
-Verdict: keep going: 4 internal gaps; cheapest next: f.23 word-level re-pairing from the existing crops + re-align with control, ~$2
+Verdict: keep going: 4 internal gaps; cheapest next: f.23 rotated margin postscript crop, 2 blind passes + 1 reconciliation, held out against the word-level key_f23 as a known-answer test, ~$2

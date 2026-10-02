@@ -1,0 +1,6 @@
+flags	--floor 100 --keep-fs
+agrees_all	real 63	control mean 34.7 p95 41 max 45	real>max True
+agrees_unseeded	real 63	control mean 34.7 p95 41 max 45	real>max True
+flags	--floor 100 --keep-fs
+agrees_all	real 128	control mean 30.8 p95 39 max 45	real>max True
+agrees_unseeded	real 128	control mean 30.8 p95 39 max 45	real>max True

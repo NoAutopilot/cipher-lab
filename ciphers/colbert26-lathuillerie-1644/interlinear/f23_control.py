@@ -5,7 +5,8 @@ tools/interlinear_align.py with FLAGS below. Control: the same cipher runs with 
 random derangement (no pair keeps its own gloss), same flags, 50 seeds. Statistic: tokens whose chunk agrees
 with their code's majority reading over >=2 occurrences ('agrees'), total and excluding any seeded codes.
 The control changes which gloss a cipher run meets, which is what the statistic depends on, so it can fail
-differently from the real alignment. Usage: f23_control.py [--prior SEED.tsv]  (no prior = flat start).
+differently from the real alignment. Usage: f23_control.py [--prior SEED.tsv] [--pairs PAIRS.tsv]
+(A2-COL3, 2 Oct 2026: --pairs f23w_pairs.tsv runs the word-level re-pairing; default unchanged.)  (no prior = flat start).
 Deterministic (SEED below); prints both numbers and the control's mean/p95/max."""
 import csv, random, subprocess, sys, tempfile, os
 SEED, N = 20261002, 50
@@ -30,7 +31,8 @@ def score(pairs):
     uns = sum(r['status'] == 'agrees' and r['value'] not in seeded for r in rows)
     return tot, uns
 
-pairs = list(csv.DictReader(open(os.path.join(HERE, 'f23_pairs.tsv')), delimiter='\t'))
+PAIRS = sys.argv[sys.argv.index('--pairs') + 1] if '--pairs' in sys.argv else os.path.join(HERE, 'f23_pairs.tsv')
+pairs = list(csv.DictReader(open(PAIRS), delimiter='\t'))
 real = score(pairs)
 rng = random.Random(SEED); ctl = []
 for _ in range(N):
