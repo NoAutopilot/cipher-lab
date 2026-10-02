@@ -1,0 +1,26 @@
+passage	pos	sign	sheet_value	sheet_ties	sheet_gain	fitted	accepted	right
+R01	7	X_4	a	a	1	null	no	no
+R01	8	X_7	a	a	1	l	no	no
+R01	12	X_T	m	m	1	m	no	yes
+R03	4	X_8	m	m	1	null	no	no
+R03	5	X_S	m	m	1	e	no	no
+R03	6	X_T	m	m	1	m	no	yes
+R03	35	X_NEW	a	a	3			
+L05	17	X_K	p	p	1	u	no	no
+L06	26	X_T	h	h	1	m	no	no
+L09	29	X_T	r	r	1	m	no	no
+L10	16	X_T	h	h	1	m	no	no
+L12	23	X_A	?	s,a	1	t	no	
+L14	6	X_NEW	?	o,n	1			
+L14	17	X_EQ	f	f	1	null	no	no
+L16	31	?	l	l	1			
+L17	14	X_NEW	?	r,a	1			
+L17	29	X_EQ	n	n	3	null	no	no
+L20	1	X_STAR	n	n	5	null	no	no
+L22	9	X_NEW	?	z,u,t,s,r	0			
+L22	22	X_S	f	f	1	e	no	no
+V01	27	X_T	m	m	1	m	no	yes
+V03	19	X_T	m	m	1	m	no	yes
+V03	24	X_NEW	?	z,u,t,s,r	0			
+V03	25	X_SQ	?	z,u,t,s,r	0	null	no	
+V03	26	X_TRI	?	z,u,t,s,r	0	a	no	

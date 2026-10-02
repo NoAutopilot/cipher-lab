@@ -1,0 +1,44 @@
+{'sign': 'X_T', 'occ': 26, 'best': 'm', 'gain': '-0.0002', 'second': 'null -0.0063', 'third': 'r -0.0083', 'ctl_mean': '-0.0082', 'ctl_p95': '-0.0043', 'ctl_max': '-0.0011', 'rank': '1/201', 'accepted': 'no'}
+{'sign': 'X_AE', 'occ': 16, 'best': 'r', 'gain': '0.0059', 'second': 'd -0.0061', 'third': 'null -0.0063', 'ctl_mean': '-0.0046', 'ctl_p95': '-0.0014', 'ctl_max': '0.0001', 'rank': '1/201', 'accepted': 'yes'}
+{'sign': 'X_EQ', 'occ': 13, 'best': 'null', 'gain': '-0.0005', 'second': 'e -0.0013', 'third': 'n -0.0014', 'ctl_mean': '-0.0035', 'ctl_p95': '-0.0010', 'ctl_max': '0.0011', 'rank': '7/201', 'accepted': 'no'}
+{'sign': 'X_SQ', 'occ': 11, 'best': 'null', 'gain': '0.0000', 'second': 's -0.0010', 'third': 't -0.0019', 'ctl_mean': '-0.0028', 'ctl_p95': '-0.0002', 'ctl_max': '0.0008', 'rank': '6/201', 'accepted': 'no'}
+{'sign': 'X_4', 'occ': 10, 'best': 'null', 'gain': '-0.0011', 'second': 'c -0.0026', 'third': 'i -0.0027', 'ctl_mean': '-0.0027', 'ctl_p95': '-0.0001', 'ctl_max': '0.0009', 'rank': '29/201', 'accepted': 'no'}
+{'sign': 'X_8', 'occ': 8, 'best': 'null', 'gain': '0.0005', 'second': 'e -0.0008', 'third': 's -0.0014', 'ctl_mean': '-0.0018', 'ctl_p95': '0.0002', 'ctl_max': '0.0014', 'rank': '11/201', 'accepted': 'no'}
+{'sign': 'X_S', 'occ': 7, 'best': 'e', 'gain': '-0.0020', 'second': 't -0.0024', 'third': 'a -0.0030', 'ctl_mean': '-0.0014', 'ctl_p95': '0.0003', 'ctl_max': '0.0011', 'rank': '141/201', 'accepted': 'no'}
+{'sign': 'X_CC', 'occ': 7, 'best': 's', 'gain': '0.0021', 'second': 'f -0.0008', 'third': 't -0.0015', 'ctl_mean': '-0.0015', 'ctl_p95': '0.0004', 'ctl_max': '0.0014', 'rank': '1/201', 'accepted': 'yes'}
+{'sign': 'X_T3', 'occ': 7, 'best': 'l', 'gain': '-0.0011', 'second': 'd -0.0016', 'third': 'c -0.0017', 'ctl_mean': '-0.0015', 'ctl_p95': '0.0004', 'ctl_max': '0.0035', 'rank': '77/201', 'accepted': 'no'}
+{'sign': 'X_K', 'occ': 6, 'best': 'u', 'gain': '-0.0004', 'second': 'i -0.0013', 'third': 'p -0.0016', 'ctl_mean': '-0.0012', 'ctl_p95': '0.0003', 'ctl_max': '0.0014', 'rank': '41/201', 'accepted': 'no'}
+{'sign': 'X_7', 'occ': 5, 'best': 'l', 'gain': '0.0009', 'second': 'g 0.0008', 'third': 'h 0.0008', 'ctl_mean': '-0.0007', 'ctl_p95': '0.0006', 'ctl_max': '0.0019', 'rank': '9/201', 'accepted': 'no'}
+{'sign': 'X_MA', 'occ': 5, 'best': 'r', 'gain': '-0.0008', 'second': 'null -0.0011', 'third': 'l -0.0012', 'ctl_mean': '-0.0008', 'ctl_p95': '0.0007', 'ctl_max': '0.0012', 'rank': '109/201', 'accepted': 'no'}
+{'sign': 'X_STAR', 'occ': 4, 'best': 'null', 'gain': '0.0000', 'second': 'c -0.0000', 'third': 'o -0.0001', 'ctl_mean': '-0.0005', 'ctl_p95': '0.0007', 'ctl_max': '0.0015', 'rank': '64/201', 'accepted': 'no'}
+{'sign': 'X_BB', 'occ': 4, 'best': 'null', 'gain': '0.0003', 'second': 'e -0.0006', 'third': 'a -0.0010', 'ctl_mean': '-0.0005', 'ctl_p95': '0.0010', 'ctl_max': '0.0017', 'rank': '42/201', 'accepted': 'no'}
+{'sign': 'X_A', 'occ': 3, 'best': 't', 'gain': '-0.0009', 'second': 'l -0.0010', 'third': 'null -0.0010', 'ctl_mean': '-0.0001', 'ctl_p95': '0.0008', 'ctl_max': '0.0017', 'rank': '181/201', 'accepted': 'no'}
+{'sign': 'X_TRI', 'occ': 3, 'best': 'a', 'gain': '0.0004', 'second': 'null 0.0003', 'third': 'd 0.0003', 'ctl_mean': '-0.0001', 'ctl_p95': '0.0010', 'ctl_max': '0.0016', 'rank': '50/201', 'accepted': 'no'}
+{'sign': 'X_PCT', 'occ': 3, 'best': 'e', 'gain': '-0.0000', 'second': 'o -0.0005', 'third': 'a -0.0010', 'ctl_mean': '-0.0002', 'ctl_p95': '0.0009', 'ctl_max': '0.0017', 'rank': '85/201', 'accepted': 'no'}
+{'passage': 'R01', 'pos': '7', 'sign': 'X_4', 'sheet_value': 'a', 'sheet_ties': 'a', 'sheet_gain': 1, 'fitted': 'null', 'accepted': 'no', 'right': 'no'}
+{'passage': 'R01', 'pos': '8', 'sign': 'X_7', 'sheet_value': 'a', 'sheet_ties': 'a', 'sheet_gain': 1, 'fitted': 'l', 'accepted': 'no', 'right': 'no'}
+{'passage': 'R01', 'pos': '12', 'sign': 'X_T', 'sheet_value': 'm', 'sheet_ties': 'm', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'yes'}
+{'passage': 'R03', 'pos': '4', 'sign': 'X_8', 'sheet_value': 'm', 'sheet_ties': 'm', 'sheet_gain': 1, 'fitted': 'null', 'accepted': 'no', 'right': 'no'}
+{'passage': 'R03', 'pos': '5', 'sign': 'X_S', 'sheet_value': 'm', 'sheet_ties': 'm', 'sheet_gain': 1, 'fitted': 'e', 'accepted': 'no', 'right': 'no'}
+{'passage': 'R03', 'pos': '6', 'sign': 'X_T', 'sheet_value': 'm', 'sheet_ties': 'm', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'yes'}
+{'passage': 'R03', 'pos': '35', 'sign': 'X_NEW', 'sheet_value': 'a', 'sheet_ties': 'a', 'sheet_gain': 3, 'fitted': '', 'accepted': '', 'right': ''}
+{'passage': 'L05', 'pos': '17', 'sign': 'X_K', 'sheet_value': 'p', 'sheet_ties': 'p', 'sheet_gain': 1, 'fitted': 'u', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L06', 'pos': '26', 'sign': 'X_T', 'sheet_value': 'h', 'sheet_ties': 'h', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L09', 'pos': '29', 'sign': 'X_T', 'sheet_value': 'r', 'sheet_ties': 'r', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L10', 'pos': '16', 'sign': 'X_T', 'sheet_value': 'h', 'sheet_ties': 'h', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L12', 'pos': '23', 'sign': 'X_A', 'sheet_value': '?', 'sheet_ties': 's,a', 'sheet_gain': 1, 'fitted': 't', 'accepted': 'no', 'right': ''}
+{'passage': 'L14', 'pos': '6', 'sign': 'X_NEW', 'sheet_value': '?', 'sheet_ties': 'o,n', 'sheet_gain': 1, 'fitted': '', 'accepted': '', 'right': ''}
+{'passage': 'L14', 'pos': '17', 'sign': 'X_EQ', 'sheet_value': 'f', 'sheet_ties': 'f', 'sheet_gain': 1, 'fitted': 'null', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L16', 'pos': '31', 'sign': '?', 'sheet_value': 'l', 'sheet_ties': 'l', 'sheet_gain': 1, 'fitted': '', 'accepted': '', 'right': ''}
+{'passage': 'L17', 'pos': '14', 'sign': 'X_NEW', 'sheet_value': '?', 'sheet_ties': 'r,a', 'sheet_gain': 1, 'fitted': '', 'accepted': '', 'right': ''}
+{'passage': 'L17', 'pos': '29', 'sign': 'X_EQ', 'sheet_value': 'n', 'sheet_ties': 'n', 'sheet_gain': 3, 'fitted': 'null', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L20', 'pos': '1', 'sign': 'X_STAR', 'sheet_value': 'n', 'sheet_ties': 'n', 'sheet_gain': 5, 'fitted': 'null', 'accepted': 'no', 'right': 'no'}
+{'passage': 'L22', 'pos': '9', 'sign': 'X_NEW', 'sheet_value': '?', 'sheet_ties': 'z,u,t,s,r', 'sheet_gain': 0, 'fitted': '', 'accepted': '', 'right': ''}
+{'passage': 'L22', 'pos': '22', 'sign': 'X_S', 'sheet_value': 'f', 'sheet_ties': 'f', 'sheet_gain': 1, 'fitted': 'e', 'accepted': 'no', 'right': 'no'}
+{'passage': 'V01', 'pos': '27', 'sign': 'X_T', 'sheet_value': 'm', 'sheet_ties': 'm', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'yes'}
+{'passage': 'V03', 'pos': '19', 'sign': 'X_T', 'sheet_value': 'm', 'sheet_ties': 'm', 'sheet_gain': 1, 'fitted': 'm', 'accepted': 'no', 'right': 'yes'}
+{'passage': 'V03', 'pos': '24', 'sign': 'X_NEW', 'sheet_value': '?', 'sheet_ties': 'z,u,t,s,r', 'sheet_gain': 0, 'fitted': '', 'accepted': '', 'right': ''}
+{'passage': 'V03', 'pos': '25', 'sign': 'X_SQ', 'sheet_value': '?', 'sheet_ties': 'z,u,t,s,r', 'sheet_gain': 0, 'fitted': 'null', 'accepted': 'no', 'right': ''}
+{'passage': 'V03', 'pos': '26', 'sign': 'X_TRI', 'sheet_value': '?', 'sheet_ties': 'z,u,t,s,r', 'sheet_gain': 0, 'fitted': 'a', 'accepted': 'no', 'right': ''}
+METHOD CHECK (accepted classes, determinate sheet answer): 0/0 (none)
+secondary (all fitted classes): 4/16 = 25%
