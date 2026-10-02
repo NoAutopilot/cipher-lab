@@ -6,7 +6,7 @@
   "185": 178,
   "186": 179,
   "187": 180,
-  "note": "LIKELY-9's note 'leaves 186-187' was off by one: leaf 186 is p.179, leaf 187 is p.180 (both read on the page image 2 Oct 2026); p.178 is leaf 185, NOT fetched (request budget spent on the djvu.xml word boxes instead)"
+  "note": "LIKELY-9's note 'leaves 186-187' was off by one: leaf 186 is p.179, leaf 187 is p.180 (both read on the page image 2 Oct 2026); p.178 is leaf 185, NOT fetched (request budget spent on the djvu.xml word boxes instead); leaf 185 (p.178) fetched by GAPS2 2 Oct 2026, request 7"
  },
  "requests": [
   {
@@ -44,6 +44,13 @@
    "url": "https://archive.org/download/diarycorresponde41evel/diarycorresponde41evel_djvu.xml",
    "status": 200,
    "file": "15.4 MB, not kept; leaves 185-186 extracted to words_leaf185_186.tsv (689 words, page frame 2098x3570)"
+  },
+  {
+   "n": 7,
+   "url": "https://archive.org/download/diarycorresponde41evel/page/n185_w2400.jpg",
+   "status": 200,
+   "file": "leaf_n185.jpg (p.178; 2098x3570, 505771 bytes)",
+   "by": "GAPS2-intercepted-royalist-1646, 2 Oct 2026 06:1x UTC"
   }
  ],
  "files": {
@@ -74,8 +81,24 @@
   "words_leaf185_186.tsv": {
    "sha256_16": "de0d3f8154e3045e",
    "bytes": 19496
+  },
+  "leaf_n185.jpg": {
+   "sha256_16": "f1dd7dc5ca980583",
+   "bytes": 505771
+  },
+  "p178_cipher_block.jpg": {
+   "sha256_16": "e4a7910cdc1988ad",
+   "bytes": 224988
+  },
+  "pass_img_p178.tsv": {
+   "sha256_16": "a9acf1f71c6f4b0c",
+   "bytes": 1613
+  },
+  "pass_img_p179.tsv": {
+   "sha256_16": "486f021a3c5662aa",
+   "bytes": 1477
   }
  },
- "crops": "crops/ = tools/iiif_lines.py --image leaf_n186.jpg --prefix p179 --lines-per-crop 2 --only-lines 1,...,14 (the cipher block of p.179); p179_cipher_block.jpg = PIL region crop (100,180)-(2000,1000) of the same leaf for a single vision read",
- "vision_calls": "2 used by GAPS 2 Oct 2026, both on the wrong leaves (lower half of p.179 = Reasons memorandum; p.180), 0 on the cipher block; the regrade rests on the djvu.xml word boxes"
+ "crops": "crops/ = tools/iiif_lines.py --image leaf_n186.jpg --prefix p179 --lines-per-crop 2 --only-lines 1,...,14 (the cipher block of p.179); p179_cipher_block.jpg = PIL region crop (100,180)-(2000,1000) of the same leaf for a single vision read; p178: tools/iiif_lines.py --image leaf_n185.jpg --out crops --region 100,1480,1900,1000 --prefix p178 --lines-per-crop 2 --debug (6 crops + p178_lines_debug.jpg, GAPS2 2 Oct 2026); p178_cipher_block.jpg = PIL region crop (100,1480)-(2000,2480)",
+ "vision_calls": "2 used by GAPS 2 Oct 2026, both on the wrong leaves (lower half of p.179 = Reasons memorandum; p.180), 0 on the cipher block; the regrade rests on the djvu.xml word boxes; GAPS2 2 Oct 2026: 2 calls of 2, one blind Fable 5.1 subagent per page (p.178 block + crops; p.179 block + crops L01-L06), outputs pass_img_p178.tsv / pass_img_p179.tsv"
 }

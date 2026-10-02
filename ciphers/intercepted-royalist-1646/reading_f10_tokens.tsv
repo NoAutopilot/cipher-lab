@@ -12,7 +12,7 @@ line	pos	sign	conf	value	grade
 1	11	280	high	of	C
 1	12	681	high	?	U
 1	13	209	high	I	C
-1	14	200	high	having	M
+1	14	200	high	having	C
 1	15	194	high	?	U
 1	16	409	high	with	C
 1	17	340	high	?	U
@@ -119,7 +119,7 @@ line	pos	sign	conf	value	grade
 3	3	562	high	Davenant	H
 3	4	360	high	to	C
 3	5	193	high	?	U
-3	6	162	high	for	H
+3	6	162	high	for	C
 3	7	361	high	?	U
 3	8	382	high	?	U
 3	9	67	high	e	C
@@ -132,7 +132,7 @@ line	pos	sign	conf	value	grade
 3	16	364	high	?	U
 3	17	190	high	?	U
 3	18	262	high	?	U
-3	19	200	high	having	M
+3	19	200	high	having	C
 3	20	84	high	?	U
 3	21	282	high	?	U
 3	22	281	high	or	C
@@ -193,7 +193,7 @@ line	pos	sign	conf	value	grade
 4	22	91	high	?	U
 4	23	44	high	?	U
 4	24	4	high	?	U
-4	25	162	high	for	H
+4	25	162	high	for	C
 4	26	614	high	?	U
 4	27	40	high	i	C
 4	28	31	high	o	C
@@ -242,7 +242,7 @@ line	pos	sign	conf	value	grade
 5	12	[PLAIN:for]	clear	for	clear
 5	13	413	high	which	C
 5	14	367	high	?	U
-5	15	200	high	having	M
+5	15	200	high	having	C
 5	16	304	high	?	U
 5	17	81	high	d	C
 5	18	504	high	?	U
@@ -284,7 +284,7 @@ line	pos	sign	conf	value	grade
 6	1	[PLAIN:what]	clear	what	clear
 6	2	478	high	?	U
 6	3	96	high	?	U
-6	4	162	high	for	H
+6	4	162	high	for	C
 6	5	355	high	?	U
 6	6	430	high	your	I
 6	7	[PLAIN:depart]	clear	depart	clear
@@ -293,7 +293,7 @@ line	pos	sign	conf	value	grade
 6	10	70	high	?	U
 6	11	35	high	?	U
 6	12	391	high	?	U
-6	13	200	high	having	M
+6	13	200	high	having	C
 6	14	270	high	not	C
 6	15	596	high	?	U
 6	16	81	high	d	C
@@ -388,7 +388,7 @@ line	pos	sign	conf	value	grade
 7	50	361	high	?	U
 7	51	542	high	?	U
 7	52	405	high	?	U
-7	53	422	high	write	H
+7	53	422	high	write	C
 7	54	7	high	n	C
 7	55	?	M	?	U
 8	1	35	high	?	U
@@ -465,7 +465,7 @@ line	pos	sign	conf	value	grade
 9	15	201	high	?	U
 9	16	284	high	?	U
 9	17	697	high	?	U
-9	18	162	high	for	H
+9	18	162	high	for	C
 9	19	363	high	?	U
 9	20	411	high	?	U
 9	21	430	high	your	I
@@ -476,7 +476,7 @@ line	pos	sign	conf	value	grade
 9	26	259	high	?	U
 9	27	[PLAIN:averse]	clear	averse	clear
 9	28	21	high	?	U
-9	29	111	high	were	M
+9	29	111	high	were	C
 9	30	271	high	?	U
 9	31	[PLAIN:extream]	clear	extream	clear
 9	32	228	high	?	U
@@ -486,7 +486,7 @@ line	pos	sign	conf	value	grade
 9	36	8	high	?	U
 9	37	150	high	?	U
 9	38	96	high	?	U
-9	39	162	high	for	H
+9	39	162	high	for	C
 9	40	[PLAIN:a]	clear	a	clear
 9	41	618	high	?	U
 9	42	126	high	?	U
@@ -522,7 +522,7 @@ line	pos	sign	conf	value	grade
 10	25	391	high	?	U
 10	26	581	high	?	U
 10	27	81	high	d	C
-10	28	162	high	for	H
+10	28	162	high	for	C
 10	29	93	high	?	U
 10	30	285	high	?	U
 10	31	447	high	?	U
@@ -535,7 +535,7 @@ line	pos	sign	conf	value	grade
 10	38	1	high	?	U
 10	39	[PLAIN:besides]	clear	besides	clear
 10	40	194	high	?	U
-10	41	111	high	were	M
+10	41	111	high	were	C
 10	42	385	high	?	U
 10	43	256	high	?	U
 10	44	63	high	i	C
@@ -550,10 +550,10 @@ line	pos	sign	conf	value	grade
 11	2	391	high	?	U
 11	3	350	high	?	U
 11	4	270	high	not	C
-11	5	200	high	having	M
+11	5	200	high	having	C
 11	6	375	high	?	U
 11	7	57	high	?	U
-11	8	162	high	for	H
+11	8	162	high	for	C
 11	9	258	high	?	U
 11	10	365	high	?	U
 11	11	644	high	?	U
@@ -596,7 +596,7 @@ line	pos	sign	conf	value	grade
 11	48	401	high	?	U
 11	49	391	high	?	U
 11	50	204	high	?	U
-11	51	200	high	having	M
+11	51	200	high	having	C
 11	52	340	high	?	U
 11	53	338	high	?	U
 12	1	[PLAIN:themselves]	clear	themselves	clear
@@ -663,7 +663,7 @@ line	pos	sign	conf	value	grade
 13	7	264	high	?	U
 13	8	568	high	Madame-Dona	H
 13	9	211	high	?	U
-13	10	162	high	for	H
+13	10	162	high	for	C
 13	11	[PLAIN:certaine]	clear	certaine	clear
 13	12	212	high	?	U
 13	13	2	high	?	U

@@ -1,4 +1,4 @@
-# f10_ct.tsv: key129 (Aymeloglu) applied by tools/decode_key.py, LIKELY-9 2 Oct 2026. Grades C 147, H 15, I 12, M 18, U 543 of 735 cipher tokens (U = not in the key).
+# f10_ct.tsv: key129 (Aymeloglu) applied by tools/decode_key.py, LIKELY-9 2 Oct 2026. Grades C 164, H 6, I 12, M 10, U 543 of 735 cipher tokens (U = not in the key).
 # Regenerate: python3 tools/decode_key.py ciphers/intercepted-royalist-1646 ; check: --check
 1	MAY_IT_PLEASE_YOUR_MATIE [355] my n e of YE [647] [43] [20] of [681] I having [194] with [340] [0] [50] [11] [46] d [19] [12] [296] c [109] [70] [1] [103] [50] I [216] FINISHD [192] b r i [82] [14] e [6] [109] [60] [47] r s [45] [282] [100] [?] [292] [37] [68] [?]
 2	[282] [94] [84] [215] [35] [190] [211] [335] [216] OF_SEVERALL [228] [9] e [57] [173] [364] d [215] [99] [361] [236] to WAR d [74] [4] [83] OVER [71] e e [70] [120] [20] [361] OTHER [36] w [46] r d [2] ST [25] [49] r [44] [84] o [77] [4] [86] o [57] [72] [210] [110] [87] and [282]

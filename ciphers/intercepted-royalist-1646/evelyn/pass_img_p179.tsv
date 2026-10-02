@@ -1,0 +1,57 @@
+# Blind vision pass over Evelyn iv p.179 (leaf 186), GAPS2-intercepted-royalist-1646, 2 Oct 2026, account-4: one Fable 5.1 subagent call,
+# inputs p179_cipher_block.jpg + crops/p179_L01-L06.jpg only (no key, no OCR shown). Subagent's own TSV, verbatim; its notes:
+# line 1 begins with plain "[necessary] to"; line 3 reads "258 : 133 : 280 : 366 : selfes there 365 : 280 : 251 :" (two plain words inline);
+# below line 6: "Com'end me to all my Frends, & asseure them of / my constancy ; and I asseure you that I haue sent / where you ar goeing...";
+# no footnote marker in the block. uncertain groups 0; confidence high.
+line	group_index	group	gloss	note
+1	1	422	write	
+1	2	360	to	
+1	3	550	Marq:	
+1	4	520	H.	
+1	5	269	nor	
+1	6	17		
+1	7	503	Earl	
+2	1	280	of	
+2	2	356	Southampton	gloss printed over 356 and extends visually over the gap before 84; spans 2 groups (356, 84) by position
+2	3	84		
+2	4	107		
+2	5	43		
+2	6	282		
+2	7	162	for	
+2	8	200	hauing	
+2	9	216		
+3	1	258		
+3	2	133	[erased]	editorial note in square brackets in gloss position; printed over 133 and the colon after it, spans toward 280
+3	3	280		
+3	4	366		
+3	5	selfes		plain word inline, no colon before/after
+3	6	there		plain word inline
+3	7	365		
+3	8	280		
+3	9	251		
+4	1	84		
+4	2	282		
+4	3	7		
+4	4	281		
+4	5	122		
+4	6	431		
+4	7	216		
+4	8	383		
+4	9	251		
+4	10	56		
+5	1	67		
+5	2	46		
+5	3	75		
+5	4	70		
+5	5	59		
+5	6	112		
+5	7	57		
+5	8	78		
+5	9	281		
+5	10	81		
+5	11	360		
+6	1	361		
+6	2	319		
+6	3	27		
+6	4	148		
+6	5	58		

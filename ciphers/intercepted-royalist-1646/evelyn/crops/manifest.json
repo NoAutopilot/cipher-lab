@@ -293,6 +293,132 @@
     "prominence": 142.0
    },
    "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p178_L01.jpg",
+   "source_url": "",
+   "source_file": "leaf_n185.jpg",
+   "box": [
+    100,
+    1565,
+    2000,
+    1704
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 71,
+    "distance": 49,
+    "prominence": 111.3
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p178_L02.jpg",
+   "source_url": "",
+   "source_file": "leaf_n185.jpg",
+   "box": [
+    100,
+    1704,
+    2000,
+    1847
+   ],
+   "lines_in_crop": 2,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 71,
+    "distance": 49,
+    "prominence": 111.3
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p178_L03.jpg",
+   "source_url": "",
+   "source_file": "leaf_n185.jpg",
+   "box": [
+    100,
+    1847,
+    2000,
+    1997
+   ],
+   "lines_in_crop": 2,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 71,
+    "distance": 49,
+    "prominence": 111.3
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p178_L04.jpg",
+   "source_url": "",
+   "source_file": "leaf_n185.jpg",
+   "box": [
+    100,
+    1997,
+    2000,
+    2134
+   ],
+   "lines_in_crop": 2,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 71,
+    "distance": 49,
+    "prominence": 111.3
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p178_L05.jpg",
+   "source_url": "",
+   "source_file": "leaf_n185.jpg",
+   "box": [
+    100,
+    2134,
+    2000,
+    2377
+   ],
+   "lines_in_crop": 2,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 71,
+    "distance": 49,
+    "prominence": 111.3
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p178_L06.jpg",
+   "source_url": "",
+   "source_file": "leaf_n185.jpg",
+   "box": [
+    100,
+    2377,
+    2000,
+    2474
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 71,
+    "distance": 49,
+    "prominence": 111.3
+   },
+   "date": "02 Oct 2026"
   }
  ]
 }

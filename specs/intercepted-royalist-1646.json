@@ -9,13 +9,13 @@
  "ciphertext_source": "A. Aymeloglu's transcription from the DECODE images (github.com/aaymeloglu/unsolved-ciphers d2800bb2, royalist-1646/f10_ct.txt, f9_ct.txt; quoted with attribution, 2 Oct 2026). No image on disk: DECODE full-size images are account-wide blocked (NOTES.md 24-25 Sept 2026), the BL viewer is offline. f10: 735 cipher tokens (20 illegible) + 75 clear fragments; f9: 151 + 18.",
  "alphabet": "numerals 0-697 on f10 (letters 0-99 with homophones, words ~100-430, names/places 431-580, unexplained 581-697); f9 numerals 3-343, a different smaller key (Aymeloglu: 226 = London by the f.4 key)",
  "constraints": {
-  "key": "Digby-cabinet key no. 129 (BL Add MS 72438 f.77, names 559-580 only survive) + Nicholas's interlinear decipherments of the King's letters of 24 June / 16 Aug 1646 in Evelyn (1857) iv 178-179: 65 values in key.tsv (H 45, M 18, I 2), Aymeloglu's reconstruction, image-unchecked by us.",
-  "known_answer": "none on disk: Evelyn iv 178-179 (the key's known-plaintext witness) was not fetched in LIKELY-9 (no network in that brief); the f.10 clear fragments are the only read text.",
+  "key": "Digby-cabinet key no. 129 (BL Add MS 72438 f.77, names 559-580 only survive) + Nicholas's interlinear decipherments of the King's letters of 24 June / 16 Aug 1646 in Evelyn (1857) iv 178-179: 66 values in key.tsv (C 37, H 22, M 4, I 3 after GAPS2 2 Oct 2026), Aymeloglu's reconstruction; the Evelyn half read from the page images by us, the f.77 half image-unchecked (ASKS row 1).",
+  "known_answer": "Evelyn iv 178-179 (archive.org diarycorresponde41evel leaves 185-186, page images on disk in ciphers/intercepted-royalist-1646/evelyn/, two blind vision passes 2 Oct 2026, GAPS2): 38 key rows match the page vs 20 value-shuffled keys mean 0.50 max 2; the f.10 clear fragments are the only read text of the target itself.",
   "prior_negative": "Aymeloglu's solve.py anneal of the 218 letter tokens: vowel soup; his matched control reads 0.07-0.12, so uninformative (his README)."
  },
  "cheap_tests": [
   "key129 applied to f10 and f9 (tools/decode_key.py) vs 20 value-shuffled copies of the key, lm / word-bigram / cover on the keyed runs (likely9/run.py)",
-  "next: Evelyn iv 178-179 page scans as the known answer for the 45 H values (archive.org diarycorresponde41evel leaves 186-187), then the rest of the 0-99 letter homophones by the 'd i r e c 370' / '596 d' / '585 s' suffix runs"
+  "done 2 Oct 2026 (GAPS, GAPS2): Evelyn iv 178-179 page scans as the known answer (leaves 185-186, not 186-187): 37 rows C from the page, control mean 0.5. next: print_check.py on 3 decoded phrases, then a crib loop from the unglossed Evelyn figures (216, 418, 19, 147) and the 'd i r e c 370' / '596 d' / '585 s' suffix runs"
  ],
  "judge": {
   "corpora": [
