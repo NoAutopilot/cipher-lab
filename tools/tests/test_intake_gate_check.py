@@ -345,12 +345,12 @@ ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic cited-open-with-web-heading -> pass", f"-> code={code}")
 
-# must NOT block: the pass logged in prose under another heading, naming all three blogs
+# Fifth fix (2 Oct 2026, GATE-TOOL): the three-blog paragraph route is withdrawn -- the heading is required
 code, message = gate.check(WEB_CITED_OPEN + "\n## Check-solved\n\nSearched Cipherbrain (klausis-krypto-kolumne), "
                            "the Cryptiana blog and its comments, and ciphermysteries.com: no reading.\n", require_premise=False)
-ok = code == 0
+ok = code == 1 and "web and blog-comment" in message
 fails += not ok
-print(("PASS" if ok else "FAIL"), "synthetic cited-open-three-blog-paragraph -> pass", f"-> code={code}")
+print(("PASS" if ok else "FAIL"), "synthetic cited-open-three-blog-paragraph-no-heading -> blocked", f"-> code={code}")
 
 # two of three blogs only is not the logged pass
 code, message = gate.check(WEB_CITED_OPEN + "\nSearched Cipherbrain and the Cryptiana blog.\n")
@@ -370,6 +370,35 @@ for tgt in ("armstrong-madison-1808", "espagnol142-mercy-1648", "fr4715-f61-maye
         ok = gate.has_web_blog_check(f.read())
     fails += not ok
     print(("PASS" if ok else "FAIL"), tgt, "has the logged web/blog check")
+
+# Fifth fix (2 Oct 2026, GATE-TOOL after A2-HDK): pasting the gate's own FAIL output must not satisfy either
+# section test. FAIL_LINE is the shape pasted into hessen-daenemark-1672/NOTES.md (it names all three blogs).
+FAIL_LINE = ("hessen-daenemark-1672: partial (line 1) has an edition citation but no logged open-web and blog-comment "
+             "check (no 'Web and blog check' heading, no paragraph naming Cipherbrain, the Cryptiana blog and Cipher "
+             "Mysteries) -- run check-solved.md's 'Open web and blog comment threads' step first (CHECK-SOLVED-WEB, "
+             "28 Sept 2026: spinelli-beinecke-c1515 was read in a Cipherbrain comment thread in 2017)")
+PREMISE_FAIL = ("t: open (line 1) passes the citation and web/blog checks but has no '## Premise check' section -- "
+                "run check-solved.md's adversarial Premise check")
+GOOD_WEB = "\n## Web and blog check (w, 2 Oct 2026)\nCipherbrain, the Cryptiana blog and Cipher Mysteries searched: no hit.\n"
+GOOD_PREMISE = "\n## Premise check (w, 2 Oct 2026)\n(a) not found (b) not found (c) not found (d) not found\n"
+cases = [
+    # must catch
+    ("pasted FAIL line, bare", WEB_CITED_OPEN + "\n## Gate run\n\n" + FAIL_LINE + "\n", 1, "web and blog-comment"),
+    ("pasted FAIL line, fenced", WEB_CITED_OPEN + "\n```\n$ python3 tools/intake_gate_check.py t\n" + FAIL_LINE + "\n```\n", 1, "web and blog-comment"),
+    ("web heading inside a fenced paste", WEB_CITED_OPEN + "\n```\n## Web and blog check\nCipherbrain etc.\n```\n", 1, "web and blog-comment"),
+    ("web heading with only pasted gate output under it", WEB_CITED_OPEN + "\n## Web and blog check\n" + FAIL_LINE + "\n## Next\nx\n", 1, "web and blog-comment"),
+    ("premise heading inside a fenced paste", WEB_CITED_OPEN + GOOD_WEB + "\n```\n## Premise check\n(a) none\n```\n", 1, "Premise check"),
+    ("premise heading with only pasted gate output under it", WEB_CITED_OPEN + GOOD_WEB + "\n## Premise check\n" + PREMISE_FAIL + "\n", 1, "Premise check"),
+    # must NOT block: genuine sections that also quote an earlier gate FAIL
+    ("genuine web+premise sections quoting an earlier FAIL", WEB_CITED_OPEN + "\n## Web and blog check (w, 2 Oct 2026)\n"
+     "Earlier gate output, now answered:\n" + FAIL_LINE + "\nCipherbrain, the Cryptiana blog and Cipher Mysteries searched: no hit.\n"
+     "\n## Premise check (w, 2 Oct 2026)\n```\n" + PREMISE_FAIL + "\n```\n(a) not found (b) not found (c) not found (d) not found\n", 0, "citation found"),
+]
+for name, text, want, needle in cases:
+    code, message = gate.check(text)
+    ok = code == want and needle in message
+    fails += not ok
+    print(("PASS" if ok else "FAIL"), "synthetic gate-quote:", name, f"-> code={code} message={message[:80]!r}")
 
 if fails:
     print(f"{fails} failure(s)")

@@ -66,6 +66,16 @@ it must NOT block a terminal verdict (`blocked`, `solved`, `closed-negative`, `o
 gate), and it must NOT block a gated target that logged the pass in its own prose under another heading, as
 long as that paragraph names the three blogs. It does not check the queries were good; the verifier does.
 
+Fifth fix (2 Oct 2026, GATE-TOOL, after A2-HDK on hessen-daenemark-1672): the web/blog test was satisfied by
+pasting this tool's own FAIL message into NOTES.md, because that message names all three blogs. Both section
+tests now (a) ignore fenced code blocks and any line quoting this tool's command or diagnostic phrasing
+(GATE_QUOTE_RE), and (b) require the section heading itself -- "Web and blog check" / "Premise check" -- with at
+least one unquoted line under it; the three-blog-paragraph route above is withdrawn (no gated target passing on
+2 Oct 2026 used it). Must catch: a NOTES.md whose only blog names are a pasted FAIL line (bare or fenced); a
+heading inside a fenced paste; a heading with nothing under it but pasted gate output. Must NOT block: a genuine
+"## Web and blog check" section that also quotes an earlier gate FAIL inside it, and the same for "## Premise
+check". Offline tests: tools/tests/test_intake_gate_check.py.
+
 Usage:
   tools/intake_gate_check.py <target>
     <target> is either a path (ciphers/<name>) or a bare target name under ciphers/.
@@ -75,9 +85,9 @@ Exit 0: the verdict word found in NOTES.md is `blocked`, `solved`, `closed-negat
   `found-solved` and the same NOTES.md names a standard edition together with a page number or
   a full-text-search phrase within a few lines of the verdict word, with no nearby phrase saying
   that (or another) named edition was not actually read.
-  The gated verdicts also need the logged web/blog check (fourth fix above) somewhere in NOTES.md.
+  The gated verdicts also need the 'Web and blog check' heading (fourth and fifth fixes above) in NOTES.md.
 Exit 1: the verdict is `open`, `partial` or `found-solved` with no such citation nearby, or with no
-  logged web/blog check (heading or three-blog paragraph) anywhere in NOTES.md, or
+  'Web and blog check' heading (with an unquoted line under it) anywhere in NOTES.md, or
   `open`/`partial` with a citation but also a nearby phrase (`unread`, `not read`, `could not
   open`, `paywalled`) saying a named edition was not read -- CLAUDE.md's Pipeline intake gate
   says either shape must read `blocked` instead -- or no recognised verdict word (open, partial,
@@ -243,33 +253,65 @@ def negative_evidence_phrase(context):
 
 
 # Fourth fix (28 Sept 2026, CHECK-SOLVED-WEB): a logged open-web and blog-comment check.
-WEB_HEADING_RE = re.compile(r'^\s*#+\s*Web and blog check\b', re.IGNORECASE | re.MULTILINE)
-BLOG_PATTERNS = (
-    re.compile(r'cipherbrain|klausis-krypto-kolumne', re.IGNORECASE),
-    re.compile(r'cryptiana\.blogspot|cryptiana blog', re.IGNORECASE),
-    re.compile(r'cipher ?mysteries', re.IGNORECASE),
+# Fifth fix (2 Oct 2026, GATE-TOOL after A2-HDK): both section tests read the heading itself, outside any fenced
+# code block, with at least one line of its own under it that is not a quotation of this tool's output.
+WEB_HEADING_RE = re.compile(r'^\s*#+\s*Web and blog check\b', re.IGNORECASE)
+PREMISE_HEADING_RE = re.compile(r'^\s*#+\s*Premise check\b', re.IGNORECASE)
+ANY_HEADING_RE = re.compile(r'^\s*#+\s')
+FENCE_RE = re.compile(r'^\s*(```|~~~)')
+# Lines that quote this tool's own command or diagnostics (its FAIL messages name all three blogs and both
+# section headings, so a pasted FAIL used to satisfy the very test it reports failing).
+GATE_QUOTE_RE = re.compile(
+    r'intake_gate_check'
+    r"|no logged open-web and blog-comment check"
+    r"|no 'Web and blog check' heading"
+    r"|has no '## Premise check' section"
+    r"|passes the citation and web/blog checks"
+    r"|Open web and blog comment threads' step first",
+    re.IGNORECASE,
 )
 
 
-def has_web_blog_check(notes_text):
-    """True when NOTES.md logs the open-web and blog-comment pass: the section heading
-    check-solved.md prescribes, or one paragraph naming all three blogs."""
-    if WEB_HEADING_RE.search(notes_text):
-        return True
-    for para in re.split(r'\n\s*\n', notes_text):
-        if all(p.search(para) for p in BLOG_PATTERNS):
-            return True
+def unquoted_lines(notes_text):
+    """NOTES.md lines with fenced code blocks and lines quoting this tool's own output removed (blanked, so line
+    structure survives). A pasted gate run -- in a fence or bare -- is evidence the gate was run, not that the
+    check it asks for was done."""
+    out, in_fence = [], False
+    for line in notes_text.splitlines():
+        if FENCE_RE.match(line):
+            in_fence = not in_fence
+            out.append("")
+            continue
+        out.append("" if in_fence or GATE_QUOTE_RE.search(line) else line)
+    return out
+
+
+def _has_section(notes_text, heading_re):
+    lines = unquoted_lines(notes_text)
+    for i, line in enumerate(lines):
+        if heading_re.match(line):
+            for body in lines[i + 1:]:
+                if ANY_HEADING_RE.match(body):
+                    break
+                if body.strip():
+                    return True
     return False
 
 
-PREMISE_HEADING_RE = re.compile(r'^\s*#+\s*Premise check\b', re.IGNORECASE | re.MULTILINE)
+def has_web_blog_check(notes_text):
+    """True when NOTES.md carries a real "Web and blog check" heading (check-solved.md step "Open web and blog
+    comment threads") with a line of its own under it. A paragraph naming the three blogs no longer counts
+    (2 Oct 2026): this tool's FAIL message names all three, so pasting it passed the gate (hessen-daenemark-1672,
+    A2-HDK); no gated target passing on 2 Oct 2026 relied on the paragraph route."""
+    return _has_section(notes_text, WEB_HEADING_RE)
 
 
 def has_premise_check(notes_text):
     """True when NOTES.md carries the adversarial Premise check section (.claude/briefs/check-solved.md,
     2 Oct 2026): the folder's own mentioned decipherments opened, the other solvers' working files read,
-    the physical neighbours of the leaf looked at, and recipient-side editions searched."""
-    return bool(PREMISE_HEADING_RE.search(notes_text))
+    the physical neighbours of the leaf looked at, and recipient-side editions searched. Same quoting rule as
+    has_web_blog_check: the heading in a fence, or a heading with only pasted gate output under it, does not count."""
+    return _has_section(notes_text, PREMISE_HEADING_RE)
 
 
 def resolve_target(target):
@@ -315,8 +357,7 @@ def check(notes_text, require_web=True, require_premise=None):
         if require_web and not has_web_blog_check(notes_text):
             return 1, (
                 f"{word} (line {idx + 1}) has an edition citation but no logged open-web and blog-comment check "
-                f"(no 'Web and blog check' heading, no paragraph naming Cipherbrain, the Cryptiana blog and Cipher "
-                f"Mysteries) -- run check-solved.md's 'Open web and blog comment threads' step first (CHECK-SOLVED-WEB, "
+                f"(no 'Web and blog check' heading with a line of its own under it; pasted gate output does not count) -- run check-solved.md's 'Open web and blog comment threads' step first (CHECK-SOLVED-WEB, "
                 f"28 Sept 2026: spinelli-beinecke-c1515 was read in a Cipherbrain comment thread in 2017)"
             )
         if require_premise is None:
