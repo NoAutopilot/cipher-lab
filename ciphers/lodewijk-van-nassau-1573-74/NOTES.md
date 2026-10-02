@@ -3201,7 +3201,7 @@ runs the 'Open web and blog comment threads' step (Cipherbrain, Cryptiana blog, 
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
 
-Run 2 Oct 2026, 21:24-21:27 UTC (date -u), by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+Run 2 Oct 2026, 21:23-21:25 UTC (date -u; committed ec6462f6), by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
 1. `Lodewijk van Nassau Willem van Oranje 1574 brief cijferschrift ontcijferd Mookerheide` (sender + recipient + date, Dutch) --
    hits: WVO edition PDFs JBWO 01694/05212, BHV 09052 (other letters), DBNL _vad003183901 and _ned005189001 (Mookerheide history),
    Deutsche Biographie and Archivportal-D person pages, a flags page, a Knowino biography. Nothing on 4610/4611/4612/4616.
