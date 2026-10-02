@@ -78,3 +78,8 @@ Three H-grade period witnesses disagree on code 172; none is resolved by frequen
 The direction-of-correspondence theory (AX2-172) failed on 5801. Consequence: 5797 p6_spot4 (Jan and Lodewijk -> Willem, 22 Oct 1573)
 has no licensed value for 172; grade M wherever 172 is read outside its witness letter; AUDIT.md A4 withdrew the spot's class (V9-NA172-3).
 key_full.tsv keeps its 4614 value with this conflict noted (axmerge4/proposal.tsv KEEP_NOTE rows).
+
+## NEXT-LVN: 4612 v3 under key_1572 (2 Oct 2026)
+| hypothesis | statistic | control (5200 cut N=833, key_1572) | control shuffle max | target (4612 v3) | target shuffle max | gate | verdict |
+|---|---|---|---|---|---|---|---|
+| 4612 is enciphered with key_1572 (KEY-OFFICES row 34) | fr16 French-word share, nulls dropped in run | 86.9% | 54.8% | 26.7% | 28.6% | > shuffle max AND >= 0.85 x control (73.9%) | gate not met: control-backed negative for this key (NOTES.md NEXT-LVN) |

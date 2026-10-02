@@ -1,0 +1,8 @@
+4612 v3 under key_1572: 65/243 = 26.7% inside a French word; N=833 value-1-120 numerals
+5200 cut to N=833 under key_1572: 466/536 = 86.9%
+4612 v3, 20 value shuffles of key_1572: mean 16.9%, range 4.6-28.6%
+5200 cut, same 20 shuffles (headroom): mean 22.4%, range 0.0-54.8%
+share of numerals on a multiple of 3 (table letter slots 3-72 and unkeyed 75-120): 4612 316/833, 5200 cut 539/833
+
+GATE: 4612 26.7% > shuffle max 28.6%? False. 4612 26.7% >= 0.85 x 5200 86.9% = 73.9%? False.
+GATE VERDICT: does not read under key_1572 (gate not met)
