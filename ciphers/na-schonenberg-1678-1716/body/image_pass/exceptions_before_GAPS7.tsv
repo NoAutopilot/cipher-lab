@@ -1,0 +1,4 @@
+line	pos	value	grade	reason
+L19	9	n	M	GAPS 2 Oct 2026: group '?9' (tens digit under a blot); the address crib asks for n at this position and 89 = n (C) fits; 2x image check: the blot is a round shape consistent with an 8; M because the sign itself is uncertain
+L19	20	l	M	GAPS 2 Oct 2026: CONFLICT -- sign reads 8) (tick after, confirmed at 2x); the address crib asks for l (second l of 'albanylla'), the one body occurrence L03 pos0 is glossed P (conf M); position-specific value from the crib, graded M, logged in HYPOTHESES.md
+L06	17	r	M	GAPS2 2 Oct 2026: VX-RD01 pixel-verified gloss r over 50 at this position; the aligner reads 50 = s at its six other glossed occurrences (R0 5/7, R2 6/7), so key.tsv has 50 = s (M, conflict); the leaf position keeps its own gloss

@@ -1,4 +1,10 @@
 line	pos	value	grade	reason
 L19	9	n	M	GAPS 2 Oct 2026: group '?9' (tens digit under a blot); the address crib asks for n at this position and 89 = n (C) fits; 2x image check: the blot is a round shape consistent with an 8; M because the sign itself is uncertain
-L19	20	l	M	GAPS 2 Oct 2026: CONFLICT -- sign reads 8) (tick after, confirmed at 2x); the address crib asks for l (second l of 'albanylla'), the one body occurrence L03 pos0 is glossed P (conf M); position-specific value from the crib, graded M, logged in HYPOTHESES.md
-L06	17	r	M	GAPS2 2 Oct 2026: VX-RD01 pixel-verified gloss r over 50 at this position; the aligner reads 50 = s at its six other glossed occurrences (R0 5/7, R2 6/7), so key.tsv has 50 = s (M, conflict); the leaf position keeps its own gloss
+L06	17	s	M	GAPS7 2 Oct 2026 image pass: both blind passes read s over 50 (short s form; 2nd r / d-or-f); VX-RD01 had pixel-verified r here -- two readings of one letter disagree, so M
+L07	10	r	M	GAPS7 2 Oct 2026 image pass: 23 occurrence not in the image pass; passB (25 Sept) glossed r; key 23 = n elsewhere
+L08	15	e	C	GAPS7 2 Oct 2026 image pass: group is not 23 (both passes: 22 or 26, a looped second digit, kept as 2?); gloss e in both passes
+L13	1	o	C	GAPS7 2 Oct 2026 image pass: 96: o in both passes
+L13	15	y	C	GAPS7 2 Oct 2026 image pass: 96: y in both passes (sense had predicted e; refuted)
+L03	15	s	C	GAPS7 2 Oct 2026 image pass: )2: s in both passes (key )2 = r, M, from unchecked positions)
+L12	16	s	C	GAPS7 2 Oct 2026 image pass: was transcribed )52; both passes read )2 followed by a separate 38; s in both
+L14	6	s	C	GAPS7 2 Oct 2026 image pass: )2: s in both passes

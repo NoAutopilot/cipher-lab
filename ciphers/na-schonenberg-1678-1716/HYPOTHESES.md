@@ -58,3 +58,9 @@ rendering FAILs real_p05 on es17c7 and es while all 80 shuffled controls sit low
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |
 |---|---|---|---|---|---|---|---|---|
+
+## H3 result (GAPS7-na-schonenberg-1678-1716, 2 Oct 2026): image pass on the sense predictions
+Two blind passes (not shown the predictions) + reconciliation: 10 of 11 predicted letters at the 12 codes agree with the leaf's own
+gloss (L13 pos15 predicted e, read y); predictions shuffled across the same 11 positions, 20 seeds: mean 1.50, max 4, 0 of 20 >= 10.
+Codes settled C: 23 n, 14 c, 55 z, 50 s, 34 a, 49 r, 11 a, 31 x, 8) l, [blot] NULL; 96 o/y per position. H1's 8) p/l conflict
+resolves to l (L03 pos0 and L09 pos13 both l, with the L19 crib). body/image_pass/compare.log.

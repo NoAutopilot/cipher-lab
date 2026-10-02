@@ -5,23 +5,23 @@ L01	2	56	H	a	C
 L01	3	13	H	b	C
 L01	4	)6	M	y	M
 L01	5	60	M	e	M
-L01	6	23	M	[?]	U
-L01	7	[blot]	M	[?]	U
+L01	6	23	M	n	M
+L01	7	[blot]	M	NULL	M
 L01	8	15	H	d	M
 L01	9	3	H	o	C
 L01	10	45	M	n	M
 L01	11	24	H	o	C
 L01	12	35	H	b	C
 L01	13	38	H	e	C
-L02	0	81	H	a	M
+L02	0	81	H	d	C
 L02	1	6	H	a	C
 L02	2	3)	M	d	M
 L02	3	16	H	e	C
 L02	4	89	H	n	C
 L02	5	10	H	e	C
-L02	6	50	H	s	M
+L02	6	50	H	s	C
 L02	7	29	H	t	C
-L02	8	34	H	a	M
+L02	8	34	H	a	C
 L02	9	28	H	s	M
 L02	10	25	H	p	C
 L02	11	56	H	a	C
@@ -31,22 +31,22 @@ L02	14	10	H	e	C
 L02	15	94	H	s	M
 L02	16	)0	M	q	M
 L02	17	)5	M	u	M
-L03	0	8)	M	p	M
+L03	0	8)	M	l	M
 L03	1	12	H	a	C
 L03	2	59	H	d	C
 L03	3	60	H	e	C
 L03	4	[tilde]	M	a	M
-L03	5	55	H	[?]	U
+L03	5	5)	H	b	C
 L03	6	60	H	e	C
 L03	7	2)	M	r	M
 L03	8	88	H	m	C
 L03	9	30	H	u	C
 L03	10	15	H	d	M
 L03	11	)8	M	a	M
-L03	12	31	H	x	M
+L03	12	3)	H	d	C
 L03	13	90	H	o	M
 L03	14	[X]	M	e	M
-L03	15	)2	M	r	M
+L03	15	)2	M	s	M
 L03	16	51	H	t	C
 L03	17	60	H	e	C
 L04	0	18	H	g	M
@@ -54,28 +54,28 @@ L04	1	3	H	o	C
 L04	2	30	H	u	C
 L04	3	98	H	y	C
 L04	4	82	H	e	M
-L04	5	49	H	n	M
-L04	6	23	H	[?]	U
+L04	5	49	H	r	C
+L04	6	23	H	n	C
 L04	7	68	H	o	C
-L04	8	14	H	[?]	U
+L04	8	14	H	c	C
 L04	9	46	H	o	C
 L04	10	89	H	n	C
 L04	11	21	H	l	C
 L04	12	56	H	a	C
-L04	13	50	H	s	M
+L04	13	50	H	s	C
 L04	14	33	H	z	M
 L04	15	54	H	y	C
 L04	16	21)	M	n	M
 L04	17	36)	M	e	M
 L04	18	45	M	n	M
-L05	0	50	H	s	M
+L05	0	50	H	s	C
 L05	1	)3	M	t	M
 L05	2	6	H	a	C
 L05	3	6)	M	n	M
 L05	4	99	H	z	M
 L05	5	)6	M	y	M
-L05	6	11	H	a	M
-L05	7	50	H	s	M
+L05	6	11	H	a	C
+L05	7	50	H	s	C
 L05	8	26	H	q	M
 L05	9	2	H	u	M
 L05	10	38	H	e	C
@@ -91,21 +91,21 @@ L05	19	56	H	a	C
 L06	0	89	H	n	C
 L06	1	22	H	m	C
 L06	2	38	H	e	C
-L06	3	31	H	x	M
+L06	3	31	H	x	C
 L06	4	3	H	o	C
 L06	5	)1	M	r	M
 L06	6	10	H	e	C
 L06	7	28	H	s	M
 L06	8	4)	M	p	M
 L06	9	16	H	e	C
-L06	10	49	H	n	M
+L06	10	49	H	r	C
 L06	11	68	H	o	C
 L06	12	36	H	c	M
 L06	13	8	H	o	C
 L06	14	6)	M	n	M
 L06	15	[triangle]	M	a	M
 L06	16	89	H	n	C
-L06	17	50	H	r	M
+L06	17	50	H	s	M
 L06	18	32	H	y	C
 L06	19	6	H	a	C
 L07	0	43	H	l	C
@@ -118,7 +118,7 @@ L07	6	[Z]	M	y	M
 L07	7	13	H	b	C
 L07	8	)6	M	y	M
 L07	9	60	H	e	C
-L07	10	23	H	[?]	U
+L07	10	23	H	r	M
 L07	11	60	H	e	C
 L07	12	59	H	d	C
 L07	13	38	H	e	C
@@ -141,29 +141,29 @@ L08	11	25	H	p	C
 L08	12	30	H	u	C
 L08	13	5	H	e	M
 L08	14	28	H	s	M
-L08	15	23	H	[?]	U
+L08	15	2?	M	e	M
 L08	16	28	H	s	M
 L08	17	56	H	a	C
 L08	18	)2	M	r	M
 L09	0	20	M	a	M
 L09	1	45	H	n	C
-L09	2	3)	M	d	M
+L09	2	3)	H	d	C
 L09	3	60	H	e	C
-L09	4	[T]	M	o	M
-L09	5	14	H	[?]	U
+L09	4	[T]	H	o	M
+L09	5	14	H	c	C
 L09	6	6	H	a	C
 L09	7	94	H	s	M
-L09	8	)6	M	y	M
+L09	8	)6	H	y	C
 L09	9	3	H	o	C
-L09	10	23	H	[?]	U
+L09	10	23	H	n	C
 L09	11	56	H	a	C
-L09	12	23	H	[?]	U
-L09	13	)8	M	a	M
-L09	14	9	H	l	M
-L09	15	11	H	a	M
-L09	16	50	H	s	M
-L09	17	26	H	q	M
-L09	18	)10	M	u	M
+L09	12	2)	H	r	C
+L09	13	8)	H	l	C
+L09	14	11	H	a	C
+L09	15	50	H	s	C
+L09	16	26	H	q	M
+L09	17	)	M	u	M
+L09	18	10	H	e	C
 L10	0	)2	M	r	M
 L10	1	)0	M	q	M
 L10	2	32	H	y	C
@@ -179,7 +179,7 @@ L10	11	)4	M	r	M
 L10	12	2)	M	r	M
 L10	13	54	H	y	C
 L10	14	)1	M	r	M
-L10	15	55	M	[?]	U
+L10	15	55	M	z	M
 L11	0	4)	M	p	M
 L11	1	56	H	a	C
 L11	2	93	H	r	C
@@ -187,19 +187,19 @@ L11	3	6	H	a	C
 L11	4	44	H	y	M
 L11	5	)8	M	a	M
 L11	6	28	H	s	M
-L11	7	50	H	s	M
+L11	7	50	H	s	C
 L11	8	60	H	e	C
 L11	9	40	H	e	M
 L11	10	30	H	u	C
-L11	11	49	H	n	M
+L11	11	49	H	r	C
 L11	12	56	H	a	C
 L11	13	15	H	d	M
-L11	14	34	H	a	M
-L11	15	81	H	a	M
+L11	14	34	H	a	C
+L11	15	81	H	d	C
 L11	16	3)	M	d	M
 L11	17	5	M	e	M
 L12	0	21	H	l	C
-L12	1	34	H	a	M
+L12	1	34	H	a	C
 L12	2	58	H	i	M
 L12	3	24	H	o	C
 L12	4	)1	M	r	M
@@ -214,14 +214,15 @@ L12	12	45	H	n	C
 L12	13	33	H	z	M
 L12	14	)6	M	y	M
 L12	15	6	H	a	C
-L12	16	)52	M	[?]	U
+L12	16	)2	H	s	C
+L12	17	38	M	e	M
 L13	0	25	H	p	C
-L13	1	96	H	[?]	U
+L13	1	96	H	o	C
 L13	2	89	H	n	C
 L13	3	3)	M	d	M
 L13	4	93	H	r	C
 L13	5	56	H	a	C
-L13	6	50	H	s	M
+L13	6	50	H	s	C
 L13	7	24	H	o	C
 L13	8	65	H	l	C
 L13	9	12	H	a	C
@@ -230,15 +231,15 @@ L13	11	60	H	e	C
 L13	12	89	H	n	C
 L13	13	51	H	t	C
 L13	14	16	H	e	C
-L13	15	96	H	[?]	U
-L13	16	23	M	[?]	U
+L13	15	96	H	y	C
+L13	16	23	M	n	M
 L14	0	28	H	s	M
 L14	1	3	H	o	C
 L14	2	)9	M	b	M
-L14	3	[blot]	M	[?]	U
+L14	3	[blot]	M	NULL	M
 L14	4	)1	M	r	M
 L14	5	10	H	e	C
-L14	6	)2	M	r	M
+L14	6	)2	M	s	M
 L14	7	36	H	c	M
 L14	8	2)	M	r	M
 L14	9	54	H	y	C
@@ -259,7 +260,7 @@ L19	0	[triangle]		a	C
 L19	1	59		d	C
 L19	2	24		o	C
 L19	3	[n]		ñ	C
-L19	4	34		a	M
+L19	4	34		a	C
 L19	5	[tilde]		a	M
 L19	6	6)		n	M
 L19	7	51		t	C
@@ -275,6 +276,6 @@ L19	16	13		b	C
 L19	17	56		a	C
 L19	18	6)		n	M
 L19	19	54		y	C
-L19	20	8)		l	M
+L19	20	8)		l	C
 L19	21	65		l	C
-L19	22	11		a	M
+L19	22	11		a	C

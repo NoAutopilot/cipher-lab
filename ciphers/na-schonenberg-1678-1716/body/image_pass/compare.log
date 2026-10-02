@@ -1,0 +1,14 @@
+L01	6	23	pred=n	read=n	agree
+L03	0	8)	pred=l	read=l	agree
+L03	12	31	pred=d	read=d	agree
+L03	5	55	pred=v	read=b	agree
+L04	5	49	pred=r	read=r	agree
+L04	6	23	pred=n	read=n	agree
+L04	8	14	pred=c	read=c	agree
+L06	17	50	pred=s	read=s	agree
+L13	1	96	pred=o	read=o	agree
+L13	15	96	pred=e	read=y	DIFFER
+L13	16	23	pred=n	read=n	agree
+positions with a sense prediction and a settled letter: 11 (of 12 predicted)
+REAL agreement 10/11; shuffled predictions (20 seeds): mean 1.50, max 4, at or above real 0
+control values: [0, 2, 1, 0, 2, 3, 1, 0, 1, 4, 2, 1, 0, 3, 3, 1, 0, 1, 2, 3]
