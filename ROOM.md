@@ -5733,3 +5733,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 22:27 | A2-LVN4 (account 2, LANE-A2PUSH) | claim: lodewijk-van-nassau-1573-74 -- Verdict cheapest next step (gap 2: Orange printed replies vs name-code contexts); cap USD 4, box ends 23:08 UTC
 2026-10-02 22:27 | GF-A2-3 (account 2, LANE-A2PUSH) | claim: gate-fix colbert26-lathuillerie-1644, fr2980-gramont, fr5761-election-1519, wvo-hessen-1564; cap/box ends 23:25 UTC
 2026-10-02 22:27 | BIRAGO-SMALL (worker, acct2 for acct3 orch) | claim: ceppo-nevers-fr3251-1570s f.21v L11.17 dotted slash + nevers-birago-fr3251-1572 no.87 T50/T98/T52/T46 lookalike packet; cap USD 4, box 40 min ends 23:08 UTC
+2026-10-02 22:27 | GUAZZO-KEY (worker, acct2 for acct3 orch) | claim: guazzo-nevers-fr4688-1571-72 While-waiting step: fr.4687 no.28 + fr.4702/fr.3995 key scan for a Guazzo/Casale table; cap USD 3, box ends 23:03 UTC
