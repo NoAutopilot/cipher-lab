@@ -1,4 +1,4 @@
-open
+partial
 Negociations secretes touchant la paix de Munster et d'Osnabrug (Le Clerc, 1725-26), vols 1-4 (IA djvu full text
 of all four volumes read and grepped for "Thuillerie", "Coppenhague"/"Copenhague", "Christianopel", "chiffre", and
 distinctive clear-text phrases from the ciphered leaves) and the Acta Pacis Westphalicae online database
