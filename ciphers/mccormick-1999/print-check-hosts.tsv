@@ -1,0 +1,2 @@
+host	requests	status
+api.semanticscholar.org	4	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22WLD%20NCBE%22

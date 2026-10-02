@@ -204,9 +204,9 @@ Waits on: nothing external. No REQUEST.md or ASKS.md row exists for this target;
 field reads "needs-key" (no established period key/codebook, cryptanalysis-only), not an archive or person
 wait.
 
-- S: finish the two rule-1 legs 25 Sept skipped for no-network (solver-repo grep + OpenAlex/S2) -- tools/print_check.py + a fresh clone.
+- [x] S: finish the two rule-1 legs 25 Sept skipped for no-network (solver-repo grep + OpenAlex/S2) -- tools/print_check.py + a fresh clone. Done 2 Oct 2026 (OPEN-mccormick-1999 below): solver repos 0 target/key/reading; OpenAlex 4 claimed or structural readings logged, none verified; S2 429-blocked after 10 keyed requests.
 - M: design a Gregg/abbreviation-lexicon-constrained code-word control per NEAR.md's own named next step (the current control recovers only 0.8% of its own ground truth) -- specs/cheap-tests/mccormick-1999/token_anneal.py + tools/family_run.py.
-- S: check tools/data/ for any shorthand/abbreviation corpus already on disk that could seed a better-constrained control pool than the current 350-word free pick.
+- [x] S: check tools/data/ for any shorthand/abbreviation corpus already on disk that could seed a better-constrained control pool than the current 350-word free pick. Done 2 Oct 2026 (OPEN-mccormick-1999 below): none on disk; en_vdrop is a vowel-drop transform of two novels, not a shorthand lexicon.
 
 ## Web and blog check (WEBCHECK-mccormick-1999, 2 Oct 2026)
 
@@ -334,3 +334,83 @@ reset, stopped); cryptiana hosts 0 (on-disk snapshot). No login, no credential u
 mccormick-1999: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## OPEN-mccormick-1999 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-open-step.md`; the two S items of "## While waiting" above, run
+02:45-02:5x UTC 2 Oct 2026. Intake gate before the step: `mccormick-1999: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines`, exit 0. Status word on line 1 unchanged (`open`): nothing below is a
+verified decipherment (reasoning at the end). Vision calls 0.
+
+### Step 1a: the two solver repositories (rule 1 leg skipped 25 Sept)
+
+One shallow clone each to the scratchpad, grepped (case-insensitive, `mccormick|wldncbe|ncbe|ricky`), deleted after
+reading; nothing copied (Aymeloglu's repository has no licence; cited only).
+
+| repository | HEAD read 2 Oct 2026 | target folder, key or reading? | what it says |
+|---|---|---|---|
+| github.com/dbourdeau/cyphersolver | 34e0fc8 (1 Oct 2026) | none (`targets/` has no McCormick folder) | TARGETS.md: among sixteen top-50 items "open but not settleable by cryptanalysis", "not scored"; research/top50/NOTES.md row 10: "FBI CRRU and the ACA both failed; Pelling judges it private shorthand rather than a cipher"; research/mtc3/RESEARCH.md: MTC3 challenge 379 "Twelve-Year-Old Murder Case (the McCormick notes)" listed as an open research problem under the project's FAMOUS exclusion |
+| github.com/aaymeloglu/unsolved-ciphers | d2800bb (27 Sept 2026) | none | SHORTLIST.md line 105 lists McCormick with Scorpion, Blitz, Chinese gold bars, Hampton, Penitentia under "Hoax risk, no context, or no real system" |
+
+Result: not found in either solver repository by grep of a fresh clone on 2 Oct 2026 -- neither has attempted it.
+(One lead for the file: MTC3's challenge 379 is this item; its page is not a reading, only a challenge entry.)
+
+### Step 1b: OpenAlex and Semantic Scholar through `tools/print_check.py`
+
+`phrases.txt` (8 lines: the item's name, "McCormick notes", and six distinctive ciphertext tokens, since no decode
+exists) and `sources.tsv` (3 keyword rows) written in this folder; run `--only openalex,s2 --max-requests 40`, keys
+read from the environment by the tool (never printed). Output `print-check.tsv` and `print-check-hosts.tsv`;
+the one permitted retry of Semantic Scholar after a pause went to `print-check-s2-retry.tsv`.
+
+| host | requests | outcome |
+|---|---|---|
+| api.openalex.org | 11 (print_check) + 3 (full records with abstracts, `select=` fields) = 14 | ok; 6 ciphertext-token phrases 0 hits each; name and keyword queries 9 / 203 / 3 / 12 / 0 works |
+| api.semanticscholar.org | 6 + 4 (retry) = 10 | HTTP 429 with the key on request 6, again on request 4 of the retry; the three keyword queries and five of the six token phrases never ran. Logged as **unreachable this session**, not searched; the two name queries that did answer return millions of papers (S2 ignores the quotes), so they discriminate nothing |
+
+OpenAlex works that are about this item (every other hit is an unrelated McCormick), read from their OpenAlex
+abstracts only, PDFs not fetched (no host beyond the two named in the brief):
+
+| date | work | DOI | what it claims |
+|---|---|---|---|
+| 26 Jan 2026 | Masataka Tsuchimoto, "Research Paper: Structural Solution of the Ricky McCormick Notes -- The 14th Pillar of Nexus Dynamics: Restoration of the 1999 Medical Protocol" (Zenodo preprint, two versions) | 10.5281/zenodo.18375727, .18375728 | A full claimed reading: "V-Removal" plus "Dot-Linking" turn the notes into "a dynamic 24-hour medical instruction set", with a table of tokens as drug names (PNSE = Prednisone, SE/NSE = Serevent, ALPM/ALPRM = Alprazolam ...). Abstract itself says "the first structural solution". No key table beyond the drug glosses in the abstract, no control, no FBI or second-source confirmation located |
+| 17-24 Jun 2026 | Sanaa Sadak, "Forensic Manuscript Volume VI" (Zenodo, four records: "The Unified Applied Computational Resolution of the Ricky McCormick, Oakland County, and Somerton Man Cold Cases"; "Forensic Phoneto-Spatial Applications of the STYLOARAB Matrix ...") | 10.5281/zenodo.20738349, .20738350, .20767124, .20767125, .20836219 | Claims "the definitive empirical decryption of the Ricky McCormick pocket notes" by a "StyloArab / SEPF v1.0" profiling system; the one line quoted in the abstract is note 2 line 10, `26 MLSE 74 SPRKSE 29KCNOB,OLE 175 RTRSE`, expanded to "36 MILES 74 SPRING PARK 29 BLOCKS 175 ROUTE TRAFFIC" at a "94.2% Absolute Stylometric Similarity Coefficient" (note the 26 -> 36). Same system is said to resolve the Somerton Man and an Eratosthenes inscription in the same paper |
+| 2026 | Ky Nash, "Sigilith Case Study #2 -- The McCormick Notes" (Humanities Commons) | 10.17613/dkgpg-xbj95, 10.17613/sqj9k-98496 | Structural, not a reading: "classified not as a cipher, but as a directional movement-loop system ... consistent with personal mnemonic tracking"; "without assuming linguistic content" |
+| 3 Mar 2026 | Jessica Lorraine Scott (Dunn), "Beyond Cryptography: A Non Classical Interpretation of the McCormick Notes" | 10.5281/zenodo.18857433/.18857434 | Already on file as hit Z (web check above); surfaced again by the keyword query |
+
+Result: no verified decipherment of this item located in OpenAlex on 2 Oct 2026; two **claimed** full or partial
+readings (Tsuchimoto Jan 2026, Sadak Jun 2026) and two structural non-cipher interpretations (Nash, Scott) are now on
+record beside hits M and Z of the web check. Rule 10: a verifier's AUDIT.md for any future reading of ours must cite
+all four and test ours against the Tsuchimoto and Sadak glosses (at best N1 against whichever matches, which nobody
+has tested). Neither claim moves the status word: the Tsuchimoto reading is a token-to-drug-name table with no key or
+control stated in its abstract and no uptake found elsewhere (the 2 Oct web check's Wikipedia, dcode.fr, Cipherbrain
+and Websleuths pages all still say unsolved and name neither paper); the Sadak line reading changes a ciphertext
+digit (26 -> 36) and comes from a system that also claims to solve the Somerton Man in the same paper. Both are
+claims to rate, not solutions found; the status stays `open`, not `found-solved`.
+
+### Step 2: a shorthand or abbreviation corpus in tools/data
+
+`ls tools/data` (39 entries) plus a grep of `tools/`, `specs/` and the repository's md/py/json/tsv for
+shorthand/Gregg/Pitman/abbreviation corpus or lexicon: **none on disk**. The nearest things: `tools/data/en_vdrop`
+(25 Sept 2026, bMCC2) is a word-internal vowel-drop transform of the two `en` novels (first letter kept, 0.688 of
+letters retained), already used as the matched-design corpus for cheap tests 2 and 3 -- a synthetic shorthand of
+English prose, not a lexicon of attested abbreviations; `tools/data/uscodes-1800` is a US nomenclator code corpus,
+not shorthand; `specs/cheap-tests/untersberg-code/test1_abbreviation.py` tests internal abbreviation structure and
+says in its own header that no external abbreviation corpus is on file. `token_anneal.py`'s control pool
+(`POOL_N = 350`, the corpus's 350 most frequent words, `FREQ_N = 60` shared placeholders) therefore still has
+nothing better-constrained to draw from in this repository.
+
+Result: not found in tools/data on 2 Oct 2026; building one is the M item above ("design a Gregg/abbreviation-
+lexicon-constrained code-word control"), which stays untried.
+
+### Named next step (one, with cost)
+
+Rate the two claimed readings before any further family work: a Sonnet worker fetches the Tsuchimoto (zenodo
+18375728) and Sadak (zenodo 20767125) PDFs once to this folder's `second-opinions/`, extracts each paper's full
+token-to-gloss table, and scores it the way the 25 Sept controls were scored -- apply the table to both notes, run
+`tools/judge_plaintext.py specs/mccormick-1999.json` on the result beside the shuffled-target control, and check the
+Sadak line 10 digits against the spec's transcription (26 vs 36). About USD 3, zenodo.org at most 4 requests, vision
+0. A PASS against the shuffled control would make either paper the N1 reference for this item; a FAIL closes the
+claim with a number instead of a sentence.
+
+Requests per host this step: github.com 2 (two shallow clones, deleted), api.openalex.org 14, api.semanticscholar.org
+10 (429 twice, stopped). No login, no credential printed. Box 02:45 to the done line, of 45 minutes.

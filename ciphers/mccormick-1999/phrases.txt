@@ -1,0 +1,10 @@
+# OPEN-mccormick-1999, 2 Oct 2026: no decode exists, so the phrases are the ciphertext's own distinctive tokens
+# (as a paper or edition would print them verbatim) plus the item's name; rule 1 legs (OpenAlex, Semantic Scholar).
+Ricky McCormick
+McCormick notes
+WLDNCBE
+WLD NCBE
+PRSE ONDE 71 NCBE
+TOTE WLDN WLDNCBE
+PURTRSEONDRSEWLD NCBE
+MUNSAISTEN MU NARSE
