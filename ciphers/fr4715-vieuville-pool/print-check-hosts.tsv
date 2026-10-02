@@ -1,0 +1,5 @@
+host	requests	status
+be-api.us.archive.org	19	ok
+www.googleapis.com	19	ok
+api.openalex.org	6	ok (Authorization header)
+gallica.bnf.fr	5	ok (SRU, by curl, 2 s apart)

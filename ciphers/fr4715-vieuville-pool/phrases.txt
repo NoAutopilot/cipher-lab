@@ -1,0 +1,23 @@
+# GAPS-fr4715-vieuville-pool-8, 2 Oct 2026: interior clear-French phrases, spelling as transcribed (no openings, no date lines)
+# no.44 f.67r (Montholon, Tours, 15 April 1590) -- clear frame, three-pass H words (f67r_reading.txt)
+quil a este retenu par les chemins
+ce que lon auoit de suspicion
+se resolue de luy descouurir ouuertement
+factieux qui ne taschent que a obseruer voz actions
+je me fusse resolu de vous taire
+que vostre constance nestoit point diminuee
+il ne vous sera point estrange dentendre
+apres la ruine entiere ou restablissement de lestat
+qui pour peu quil face est beaucoup estime
+# no.37 f.60r (12 Dec 1589) -- clear lines, pass C grade M/L, conditional on that transcription (rule 2)
+tant de difficultez dun part et dautres
+ce nestoit aux autres docteurs a qui il se falloit adresser
+que mes iustifications enuers dieu
+par ma deuotion et non par les opinions
+quoy quil se trouue de la difficulte
+ou il ny a plus de bien ny de moins de mal
+plaire a dieu et au monde
+il le consentira aussi bien
+il falloit que le roy fust somme
+# positive control: Memoires de la Ligue (1758) vol.4, narrative of 1590 naming Nevers -- known in print, not a pool letter
+cache dix ou douze jours avec le duc de nevers

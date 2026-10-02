@@ -614,7 +614,36 @@ OK keep-going fr4715-vieuville-pool: keep going: 6 internal gap(s), 1 step(s) un
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6 and -7, 2 Oct 2026)
+## GAPS-fr4715-vieuville-pool-8 (2 Oct 2026, account-4): the Verdict step -- print check on no.44/no.37 phrases
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`. Clock read 22:57-23:0x UTC 2 Oct 2026. Intake gate exit 0. Vision
+calls 0. Inputs: `phrases.txt` (19 lines: 9 interior clear-French phrases of no.44 f.67r from the three-pass H frame, 9 of no.37 f.60r's
+clear lines, grade M/L and conditional on pass C's transcription (rule 2), 1 positive control), `sources.tsv` (Mémoires de la Ligue 1758
+vols 3-4, the 1589-91 volumes, cached djvu text from NEXT-F61; one OpenAlex keyword line). Output: `print-check.tsv` (every query, 87
+rows), `print-check-hosts.tsv`. Openings and date lines left out (VERIFY-CLINTON: incipits miss).
+
+**Positive control.** No letter of this sub-pool is known to be in print (Premise check (d) above), so the control is the nearest printed
+text of the same period and subject: "cache dix ou douze jours avec le duc de nevers", Mémoires de la Ligue vol.4 (1590 narrative,
+also in Cayet's Chronologie novenaire). It hits on every instrument that can carry it: cached Ligue vol.4 exact (1), IA full text 15
+items, Google Books 10 volumes, Gallica `text adj` 3 records. OpenAlex misses it, so OpenAlex is a non-test for phrase search here
+(it indexes metadata and abstracts, not edition text); its target misses below license nothing.
+
+| instrument (requests) | control | no.44 (9 phrases) | no.37 (9 phrases) |
+|---|---|---|---|
+| Mémoires de la Ligue v.3, v.4, cached djvu, exact + proximity (0) | v.4: 1 exact | 0 / 9 | 0 / 9 |
+| IA full text, all items, be-api (19) | 15 items | 0 / 9 | 1 / 9 generic only ("plaire a dieu et au monde": 44 devotional items, Curé d'Ars etc.) |
+| Google Books API, keyed, country=US (19) | 10 volumes | 0 / 9 specific; 4 loose word-bag returns of 300+ volumes; "se resolue de luy descouurir ouuertement": 11 volumes led by Mémoires de l'estat de France sous Charles IX (1578), which predates the letter -- a phrasing coincidence or loose match | 0 / 9 specific; 6 loose returns of 300+ volumes; "plaire a dieu et au monde": 2 volumes of 1521 |
+| Gallica SRU `text adj`, Gallica-wide, covers Gomberville 1665 (5: 2 + 2 + control) | 3 records | 0 / 2 | 0 / 2 |
+| OpenAlex, quoted phrase + 1 keyword line (6) | 0 (non-test) | 0 / 2 | 0 / 2 |
+
+**Result.** No printed text of either letter located by these instruments on 2 Oct 2026: 0 specific hits for no.44, 0 for no.37, while
+the control phrase is found by four of the five instruments. Requests: be-api.us.archive.org 19, www.googleapis.com 19, api.openalex.org
+6, gallica.bnf.fr 5 = 49 of the 60 allowed. Not covered: Boltanski 2006 (page view bot-blocked, gap below), Henry IV's Lettres missives
+(the King's outgoing letters only, neither sender), any Montholon or La Vieuville edition (none located). Gomberville 1665 is covered
+only through Gallica-wide phrase search, whose OCR quality for 1665 type was not tested beyond the control (a 19th-c. printing), so it
+is a weak negative for that edition. Rule 10: a search result for the verifier, not a novelty verdict; nothing here is new or first.
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7 and -8, 2 Oct 2026)
 Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604 letters (rank 1/201, z 5.11), L25-L30 + L28b 308 letters (rank 1/201, z 5.24); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv); the lower dense block read 2 Oct 2026 (GAPS-5)
 - the no.37 dense cipher blocks - READ 2 Oct 2026: L06-L14 (GAPS-4) 604 letters, rank 1 of 201 z 5.11; L25-L30 + the unlisted row L28b (GAPS-5) 443 tokens, 308 letters (305 H + 3 I), rank 1 of 201 z 5.24, pass agreement 82.3 pct, decode --check exit 0; judge non-test (its design-matched control FAILs too); the 177 dotted/barred word-codes of the two blocks stay U - blocker: open-codes; what would read them is the same codes glossed on a sibling leaf (gap 4 below)
 - the 8-glyph rule on no.37 (43 L06-L14 tokens at I, 23 at S since GAPS-7) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; 2 Oct 2026 (GAPS-7): the key-side word-cover test ran (scripts/eight_cover_test.py): 8x wins 23/66 sites vs 9x 6, 6x 1, 0x/3x 0, 36 ties; control 20 seeds mean 0.105 max 0.167 vs target 0.348 (rank 1 of 21); known answer: true 8 wins 17/46 (0.370), 8x on settled non-8 sites 0.061; 23 sites I -> S, 43 stay I (36 ties, 7 won by 9x/6x); what remains for the 43 is new material (the same letter run elsewhere, or a sibling leaf in the same hand), not a further pass at these glyphs
@@ -627,8 +656,8 @@ Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604
 - [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its period glosses read (this step): 5 word-codes at C/M, 4 carried to no.44 at M; no.21/35/39 (also "en partie déchiffrée") not yet imaged
 - [x] clear-pages: no.44 is 95 pct clear French (two Sonnet passes + one Fable pass); no.37's 16 clear lines transcribed by one Opus pass at 5 M / 11 L after two Sonnet passes failed at 2x
 - [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py on both leaves (--check exit 0); key_wordcodes_f60r.tsv built from the period glosses
-- [ ] print: tools/print_check.py on the H-grade clear phrases of no.44 (witness/f67r_pass_c.tsv) and on no.37's M lines (L02, L03, L16, L20, L23); next: write phrases.txt and run it, ~$1
+- [x] print: (GAPS-8, 2 Oct 2026) tools/print_check.py on 9 interior phrases per letter + 1 positive control (phrases.txt, print-check.tsv): control found by 4 of 5 instruments (Ligue v.4 cached, IA 15 items, Google Books 10, Gallica 3; OpenAlex a non-test); no.44 0 specific hits, no.37 0 specific hits; 49 requests; Boltanski 2006 still unread (gap above)
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 6 internal gaps; cheapest next: the print check on no.44's H-grade clear phrases and no.37's M lines (write phrases.txt, tools/print_check.py), ~$1; then the strong second pass on f67r's 198 C-only L frame words, ~$3
+Verdict: keep going: 6 internal gaps; cheapest next: file the LOCAL-QUEUE edition-read row for Boltanski 2006 (dsInahmnar8C, the page citing 12 décembre 1589), ~$1; then the strong second pass on f67r's 198 C-only L frame words, ~$3 (print check done 2 Oct 2026, GAPS-8: 0 specific hits per letter, control hit)
