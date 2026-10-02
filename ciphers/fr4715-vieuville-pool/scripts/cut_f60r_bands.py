@@ -39,6 +39,12 @@ def main():
     ap.add_argument('--scale', type=int, default=SCALE)
     ap.add_argument('--out', default=OUT)
     ap.add_argument('--key', default='f60r_bands')
+    ap.add_argument('--centred', type=int, nargs=2, metavar=('ABOVE', 'BELOW'), default=None,
+                    help='GAPS-4 (2 Oct 2026): cut each segment centred on the line itself (centre-ABOVE .. centre+BELOW) '
+                         'instead of the gloss-keeping midpoint band, for the dense digit blocks')
+    ap.add_argument('--slope', type=float, default=0.0,
+                    help='px the line centre moves per full region width, left to right (dense blocks: about -20)')
+    ap.add_argument('--shift', type=int, default=0, help='px added to every centre (dense blocks: about +6)')
     a = ap.parse_args()
     OUT, SEG, SCALE = a.out, a.seg, a.scale
     im = Image.open(SRC); W, H = im.size
@@ -50,6 +56,9 @@ def main():
         x0, s = 0, 1
         while x0 < W:
             x1 = min(W, x0 + SEG)
+            if a.centred:
+                c = CENTRES[n-1] + a.shift + int(a.slope * ((x0 + x1) / 2) / W)
+                top, bot = max(0, c - a.centred[0]), min(H, c + a.centred[1])
             crop = im.crop((x0, top, x1, bot)).resize(((x1 - x0) * SCALE, (bot - top) * SCALE), Image.LANCZOS)
             d = ImageDraw.Draw(crop)
             if x0 > 0: d.line([(0, 0), (0, 14)], fill=(255, 0, 0), width=3)
