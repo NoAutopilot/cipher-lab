@@ -266,6 +266,24 @@ old), so it holds the role; `allowed_warning` on this session, no workers, nothi
 newest line 11:03 UTC (78 min), its 150-minute mark is 13:33 UTC. Check-in 10 armed for 13:07 UTC
 (trig_01A6aLXhwnk8uS6fQvFcxv92). Parent 2 at about 465k context, cost about 18.5.
 
+**Check-in 10 (13:2x UTC 2 Oct, parent 2; fired 15 min late):** the hold is lifted -- account-3's 13:00 line: "owner says keep
+everything moving (overrides the overnight hold)"; account 3 queued PREMISE-NEVBIR (the 7 unread Birago 1572 letters),
+PAGET-KEY and MERCY-C15 on account 2 (13:11). This session still reads `allowed_warning` (not rejected), so account-4
+resumes with a moderate wave under the owner's override; a `rejected` reading stops spawning again. New gate rule
+(account-3, 12:47 UTC): `tools/intake_gate_check.py` exits 1 without a `## Premise check` section (check-solved.md,
+adversarial pre-reading pass (a)-(d)); every account-4 target fails on that alone, so each worker runs the premise
+check first (about USD 3 of its cap) and a find stops the deep step. Spawned 13:25 UTC, all Fable 5.1, caps at the
+README floor: CLOSER-6 (the 11 wave-2 sessions; session_014zZdVBE2fFFczUrkc6tTAZ), GAPS5-na-suriname-map-1781 (2039
+a-u legend block, cap 14; session_01JdSnFfbyozUrzwbAZVQV5G), GAPS6-na-janssens-java-1811 (187R Extrait crib vs leaf
+188, cap 14; session_01CRQncY7XNC755SubxRULBF), GAPS4-moray-wood-1568 (L1/L3/L4 passes, one login, cap 14;
+session_01Wyc8mhZ6Sh1iWHZ2RfMgQz), GAPS5-pro3055-clinton-1779 (premise check on every remaining item with the
+recipient-side editions, then the reel labels, cap 11; session_015HMzzLUuepWTrd77VGxXhA), GAPS4-mornington-1798
+(counterpart-copy search, cap 9; session_01A7NaPjfiQbg8vhVm2w97sL), RETRO-APPLY-account4-1 (proposals 2, 4, 5 on top of
+account-3's gate change, cap 8; session_01Xp9i8wZCZXN7xL3Z8EWzzk). Caps total USD 73. Skipped: nevers-birago (account 3's
+PREMISE-NEVBIR), royalist (N0, print_check low value). Held for wave 4: fr3986 atlas coverage (~8+), schonenberg 12-code
+image pass (~18), fr4715 no.37 f.60 (~9). Check-in 11 armed for 14:09 UTC (trig_01BM2HrtCcd7YFcG8vdU6Qno). Parent 2 at
+about 490k context, cost about 19.6.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
