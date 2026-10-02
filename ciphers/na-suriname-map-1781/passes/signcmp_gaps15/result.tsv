@@ -1,0 +1,23 @@
+# GAPS15-na-suriname-map-1781 (account-4), 2 Oct 2026: one blind Opus subagent call (shape only; told "handwritten signs",
+# no letters, no values, no repo files). Queries = 1781 reader-code tokens (2039 legend native / 2061 battery native),
+# references = Nieuw Secreet sheet signs (inv86_0003_left_native.jpg) mixed with look-alikes; labels shuffled (seed 20261002),
+# mapping in blind_key.json, tiles cut from connected components (cc.py) and ref_tiles.json. Settle rule (stated before
+# mapping back): a token's identity changes only when best conf >= 0.6 and the runner-up carries a different value.
+query	token	reader_code	best	best_sheet_sign	conf	runner_up	runner_sheet_sign	settled
+Q1	2061_bat_L09:11	[ladder-III]	R18	code group de Buscruijt	0.6	R29	code group Roopaarden	yes: buskruit (confirmed)
+Q15	2039_leg_f:0	[hand-box]	R18	code group de Buscruijt	0.8	R1	code group Affuyten	yes: buskruit (confirmed); grouped with Q1
+Q5	2061_bat_L01:3	[MM]	R8	code group Stuk geschut	0.9	R11	code group fort Amsterdam	yes: stukgeschut (confirmed)
+Q13	2061_bat_L01:4	[dots-tri]	R19	A row x-with-dots	0.6	R5	S row psi	yes: a (confirmed)
+Q4	2039_leg_m:0	[thorn]	R9	C row script C	0.75	R12	F row omega-bar	yes: c (was c|z)
+Q8	2039_leg_a:0	[thorn]	R9	C row script C	0.75	R12	F row omega-bar	yes: c (was c|z)
+Q11	2039_leg_f:6	[thorn]	R9	C row script C	0.45	R12	F row omega-bar	no (tile mis-cut per the call; looped-p form)
+Q3	2039_leg_e:5	g	R20	G row 9	0.55	R17	P row q	no (below 0.6)
+Q6	2061_bat_L09:13	g	R20	G row 9	0.5	R2	L row g	no (below 0.6)
+Q7	2039_leg_m:7	g	R20	G row 9	0.55	R17	P row q	no (below 0.6)
+Q10	2039_leg_f:10	g	R2	L row g	0.55	R20	G row 9	no (below 0.6); the call separates it from Q3/Q6/Q7 by its looped descender
+Q16	2039_leg_e:7	q	R17	P row q	0.6	R20	G row 9	confirms q=p (no change); separated from the g group (straight descender)
+Q14	2039_leg_b:2	b	R25	S row 6	0.7	R6	K row script B	yes: s (was k|i); separated from Q2
+Q2	2039_leg_l:2	b	R6	K row script B	0.5	R25	S row 6	no (below 0.6)
+Q17	2039_leg_a:2	y	R10	M row y	0.35	R7	N row ij	no (below 0.6); tall-v D sign not even runner-up
+Q12	2039_leg_a:8	y	R10	M row y	0.4	R7	N row ij	no (below 0.6)
+Q9	2039_leg_a:3	[u-dots]	R10	M row y	0.4	R7	N row ij	no (below 0.6); grouped with the y tokens, the call saw no dots

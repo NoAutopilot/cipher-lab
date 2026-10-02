@@ -1,0 +1,6 @@
+line	pos	value	grade	reason
+2039_leg_a	0	c	H	GAPS15 blind image call: Nieuw C row script C, 0.75 (passes/signcmp_gaps15/result.tsv Q8)
+2039_leg_m	0	c	H	GAPS15 blind image call: Nieuw C row script C, 0.75 (Q4)
+2039_leg_f	6	c|z	M	GAPS15 blind image call: 0.45, looped-p form, not separated (Q11); kept two-valued
+2039_leg_b	2	s	M	GAPS15 blind image call: Nieuw S row 6, 0.7, runner-up K row script B (Q14); readers' b here is the 6-shaped sign
+2061_bat_L01	4	a	H	GAPS15 blind image call: Nieuw A row x-with-dots, 0.6 (Q13)

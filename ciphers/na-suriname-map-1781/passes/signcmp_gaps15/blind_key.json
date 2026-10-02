@@ -1,0 +1,466 @@
+{
+ "queries": {
+  "Q1": [
+   "lad_61",
+   "images/2061_battery_legend_native.jpg",
+   [
+    439,
+    614,
+    482,
+    665
+   ]
+  ],
+  "Q2": [
+   "b_l4",
+   "images/2039_legend_native.jpg",
+   [
+    1105,
+    744,
+    1130,
+    781
+   ]
+  ],
+  "Q3": [
+   "g_e3",
+   "images/2039_legend_native.jpg",
+   [
+    234,
+    658,
+    267,
+    713
+   ]
+  ],
+  "Q4": [
+   "th_m1",
+   "images/2039_legend_native.jpg",
+   [
+    1351,
+    751,
+    1390,
+    812
+   ]
+  ],
+  "Q5": [
+   "MM_61",
+   "images/2061_battery_legend_native.jpg",
+   [
+    239,
+    58,
+    303,
+    103
+   ]
+  ],
+  "Q6": [
+   "g_61",
+   "images/2061_battery_legend_native.jpg",
+   [
+    505,
+    633,
+    529,
+    670
+   ]
+  ],
+  "Q7": [
+   "g_m",
+   "images/2039_legend_native.jpg",
+   [
+    1568,
+    752,
+    1604,
+    811
+   ]
+  ],
+  "Q8": [
+   "th_a0",
+   "images/2039_legend_native.jpg",
+   [
+    111,
+    529,
+    155,
+    604
+   ]
+  ],
+  "Q9": [
+   "ud_a3",
+   "images/2039_legend_native.jpg",
+   [
+    212,
+    547,
+    237,
+    597
+   ]
+  ],
+  "Q10": [
+   "g_f8",
+   "images/2039_legend_native.jpg",
+   [
+    1480,
+    640,
+    1520,
+    722
+   ]
+  ],
+  "Q11": [
+   "th_f4",
+   "images/2039_legend_native.jpg",
+   [
+    1340,
+    654,
+    1375,
+    709
+   ]
+  ],
+  "Q12": [
+   "y_a9",
+   "images/2039_legend_native.jpg",
+   [
+    344,
+    547,
+    372,
+    589
+   ]
+  ],
+  "Q13": [
+   "xd_61",
+   "images/2061_battery_legend_native.jpg",
+   [
+    308,
+    65,
+    342,
+    100
+   ]
+  ],
+  "Q14": [
+   "b_b2",
+   "images/2039_legend_native.jpg",
+   [
+    594,
+    539,
+    612,
+    572
+   ]
+  ],
+  "Q15": [
+   "hb_f0",
+   "images/2039_legend_native.jpg",
+   [
+    1179,
+    625,
+    1226,
+    682
+   ]
+  ],
+  "Q16": [
+   "q_e5",
+   "images/2039_legend_native.jpg",
+   [
+    288,
+    655,
+    315,
+    705
+   ]
+  ],
+  "Q17": [
+   "y_a2",
+   "images/2039_legend_native.jpg",
+   [
+    179,
+    548,
+    209,
+    603
+   ]
+  ]
+ },
+ "refs": {
+  "R1": [
+   "R_barrect",
+   "images/inv86_0003_left_native.jpg",
+   [
+    685,
+    1475,
+    865,
+    1525
+   ]
+  ],
+  "R2": [
+   "R_Lg",
+   "images/inv86_0003_left_native.jpg",
+   [
+    135,
+    1715,
+    205,
+    1815
+   ]
+  ],
+  "R3": [
+   "R_B6",
+   "images/inv86_0003_left_native.jpg",
+   [
+    255,
+    575,
+    345,
+    655
+   ]
+  ],
+  "R4": [
+   "R_Bd",
+   "images/inv86_0003_left_native.jpg",
+   [
+    185,
+    570,
+    255,
+    650
+   ]
+  ],
+  "R5": [
+   "R_Sps",
+   "images/inv86_0003_left_native.jpg",
+   [
+    205,
+    2610,
+    295,
+    2705
+   ]
+  ],
+  "R6": [
+   "R_Kb",
+   "images/inv86_0003_left_native.jpg",
+   [
+    145,
+    1595,
+    215,
+    1665
+   ]
+  ],
+  "R7": [
+   "R_Nij",
+   "images/inv86_0003_left_native.jpg",
+   [
+    70,
+    1930,
+    195,
+    2110
+   ]
+  ],
+  "R8": [
+   "R_AA",
+   "images/inv86_0003_left_native.jpg",
+   [
+    685,
+    585,
+    825,
+    665
+   ]
+  ],
+  "R9": [
+   "R_Cs",
+   "images/inv86_0003_left_native.jpg",
+   [
+    185,
+    710,
+    275,
+    810
+   ]
+  ],
+  "R10": [
+   "R_My",
+   "images/inv86_0003_left_native.jpg",
+   [
+    95,
+    1790,
+    205,
+    1915
+   ]
+  ],
+  "R11": [
+   "R_Gamma",
+   "images/inv86_0003_left_native.jpg",
+   [
+    700,
+    700,
+    780,
+    800
+   ]
+  ],
+  "R12": [
+   "R_Fw",
+   "images/inv86_0003_left_native.jpg",
+   [
+    300,
+    1060,
+    385,
+    1140
+   ]
+  ],
+  "R13": [
+   "R_Tr",
+   "images/inv86_0003_left_native.jpg",
+   [
+    115,
+    2730,
+    185,
+    2795
+   ]
+  ],
+  "R14": [
+   "R_Dv",
+   "images/inv86_0003_left_native.jpg",
+   [
+    205,
+    825,
+    265,
+    895
+   ]
+  ],
+  "R15": [
+   "R_I8",
+   "images/inv86_0003_left_native.jpg",
+   [
+    315,
+    1425,
+    385,
+    1495
+   ]
+  ],
+  "R16": [
+   "R_Nh",
+   "images/inv86_0003_left_native.jpg",
+   [
+    255,
+    1945,
+    335,
+    2040
+   ]
+  ],
+  "R17": [
+   "R_Pq",
+   "images/inv86_0003_left_native.jpg",
+   [
+    195,
+    2210,
+    260,
+    2340
+   ]
+  ],
+  "R18": [
+   "R_buskr",
+   "images/inv86_0003_left_native.jpg",
+   [
+    700,
+    420,
+    800,
+    560
+   ]
+  ],
+  "R19": [
+   "R_Ax",
+   "images/inv86_0003_left_native.jpg",
+   [
+    410,
+    465,
+    475,
+    530
+   ]
+  ],
+  "R20": [
+   "R_G9",
+   "images/inv86_0003_left_native.jpg",
+   [
+    170,
+    1195,
+    245,
+    1290
+   ]
+  ],
+  "R21": [
+   "R_Im",
+   "images/inv86_0003_left_native.jpg",
+   [
+    245,
+    1425,
+    315,
+    1495
+   ]
+  ],
+  "R22": [
+   "R_Yt",
+   "images/inv86_0003_left_native.jpg",
+   [
+    115,
+    3175,
+    185,
+    3245
+   ]
+  ],
+  "R23": [
+   "R_trefoil",
+   "images/inv86_0003_left_native.jpg",
+   [
+    675,
+    1140,
+    745,
+    1270
+   ]
+  ],
+  "R24": [
+   "R_Iff",
+   "images/inv86_0003_left_native.jpg",
+   [
+    115,
+    1380,
+    190,
+    1565
+   ]
+  ],
+  "R25": [
+   "R_S6",
+   "images/inv86_0003_left_native.jpg",
+   [
+    115,
+    2615,
+    180,
+    2685
+   ]
+  ],
+  "R26": [
+   "R_DW",
+   "images/inv86_0003_left_native.jpg",
+   [
+    260,
+    825,
+    345,
+    900
+   ]
+  ],
+  "R27": [
+   "R_Nl",
+   "images/inv86_0003_left_native.jpg",
+   [
+    195,
+    1945,
+    250,
+    2040
+   ]
+  ],
+  "R28": [
+   "R_Lc",
+   "images/inv86_0003_left_native.jpg",
+   [
+    225,
+    1705,
+    285,
+    1765
+   ]
+  ],
+  "R29": [
+   "R_tower",
+   "images/inv86_0003_left_native.jpg",
+   [
+    695,
+    1535,
+    755,
+    1645
+   ]
+  ]
+ }
+}

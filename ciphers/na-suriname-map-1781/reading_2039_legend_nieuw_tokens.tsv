@@ -37,7 +37,7 @@ line	pos	sign	value	grade
 2039_leg_head	35	6	s	H
 2039_leg_head	36	s	p	M
 2039_leg_head	37	a	e	H
-2039_leg_a	0	[thorn]	c|z	M
+2039_leg_a	0	[thorn]	c	H
 2039_leg_a	1	k	o	H
 2039_leg_a	2	y	d	M
 2039_leg_a	3	[u-dots]	n	M
@@ -50,9 +50,9 @@ line	pos	sign	value	grade
 2039_leg_a	10	[l-bare]	n	M
 2039_leg_a	11	r	t	H
 2039_leg_a	12	b	k|i	M
-2039_leg_b	0	[thorn]	c|z	M
+2039_leg_b	0	[thorn]	c	M
 2039_leg_b	1	[delta]	a	H
-2039_leg_b	2	b	k|i	M
+2039_leg_b	2	b	s	M
 2039_leg_b	3	[d-loop]	b	M
 2039_leg_b	4	[psi]	s	H
 2039_leg_b	5	3	e	M
@@ -187,7 +187,7 @@ line	pos	sign	value	grade
 2039_leg_e	33	o	r	H
 2039_leg_e	34	[psi]	s	H
 2039_leg_e	35	f	i	M
-2039_leg_f	0	[hand-box]	buskruit	M
+2039_leg_f	0	[hand-box]	buskruit	H
 2039_leg_f	1	[w-tilde]	f	M
 2039_leg_f	2	[u-dots]	n	M
 2039_leg_f	3	[delta]	a	H
@@ -214,7 +214,7 @@ line	pos	sign	value	grade
 2039_leg_f	24	a	e	M
 2039_leg_f	25	g	g|l	M
 2039_leg_f	26	[delta]	a	M
-2039_leg_f	27	[thorn]	c|z	M
+2039_leg_f	27	[thorn]	c	M
 2039_leg_f	28	t	y	M
 2039_leg_f	29	l	n	M
 2039_leg_g	0	y	d	M
@@ -290,7 +290,7 @@ line	pos	sign	value	grade
 2039_leg_l	4	o	r	H
 2039_leg_l	5	3	e	H
 2039_leg_l	6	t	y	M
-2039_leg_m	0	[thorn]	c|z	M
+2039_leg_m	0	[thorn]	c	H
 2039_leg_m	1	k	o	H
 2039_leg_m	2	o	r	H
 2039_leg_m	3	s	p	M
@@ -303,7 +303,7 @@ line	pos	sign	value	grade
 2039_leg_m	10	w	d	H
 2039_leg_m	11	7	e	H
 2039_leg_m	12	6	s	H
-2039_leg_n	0	[thorn]	c|z	M
+2039_leg_n	0	[thorn]	c	M
 2039_leg_n	1	f	i	M
 2039_leg_n	2	r	t	H
 2039_leg_n	3	3	e	M
@@ -436,7 +436,7 @@ line	pos	sign	value	grade
 2039_leg_s	27	q	p	H
 2039_leg_s	28	r	t	H
 2039_leg_s	29	7	e	M
-2039_leg_s	30	[thorn]	c|z	M
+2039_leg_s	30	[thorn]	c	M
 2039_leg_s	31	x	q	H
 2039_leg_s	32	s	p	M
 2039_leg_s	33	m	i	H
@@ -466,8 +466,8 @@ line	pos	sign	value	grade
 2039_leg_s	57	7	e	M
 2039_leg_s	58	[psi]	s	H
 2039_leg_s	59	s	p	M
-2039_leg_s	60	[thorn]	c|z	M
-2039_leg_s	61	[thorn]	c|z	M
+2039_leg_s	60	[thorn]	c	M
+2039_leg_s	61	[thorn]	c	M
 2039_leg_s	62	[psi]	s	M
 2039_leg_s	63	<AA>	?	U
 2039_leg_s	64	[lambda]	t	H
@@ -479,5 +479,5 @@ line	pos	sign	value	grade
 2039_leg_s	70	d	b	H
 2039_leg_s	71	h	n	H
 2039_leg_s	72	[psi]	s	H
-2039_leg_s	73	[thorn]	c|z	M
+2039_leg_s	73	[thorn]	c	M
 2039_leg_s	74	a	e	M
