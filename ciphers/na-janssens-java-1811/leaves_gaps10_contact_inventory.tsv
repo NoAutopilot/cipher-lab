@@ -41,6 +41,6 @@ leaf	class	note	grade	sheet	thumb_url
 225	blank	folded blank leaves	M	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/854c2754-5d73-4ad1-b647-431637db4d90
 226	prose	cursive prose both pages, no digit grid	M	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/094d3668-59c5-4495-b2c0-b686327aaced
 228	prose	prose list with right-hand money column	M	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/923fce01-cde9-4206-8de9-345eda87e3c5
-229	numeric-uncertain	scattered numeric clusters top-left (sums-like, no row grid) + pasted prose slip right; resembles leaf 230 (RD02B: arithmetic jotting, not cipher); fetched images/229_med.jpg for one eye-check by the next job, not viewed here	M	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/c4b17b13-01ad-4310-9040-be2c85688ee0
+229	arithmetic	GAPS11 eye-check of images/229_med.jpg (1200 px): left page arithmetic jottings (multiplications, sums), no cipher; right page pasted French prose slip headed 11 avril (Monseigneur ...); not cipher, gloss or code table	H	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/c4b17b13-01ad-4310-9040-be2c85688ee0
 231	prose	left blank, short signed prose letter right	M	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/bf260bfb-8259-477c-84f3-6e885bee9fd8
 232	prose	pasted prose slip, folded leaves	M	gaps10_sheet_3	https://service.archief.nl/api/file/v1/thumb/56ca207a-003a-4681-97ce-e2e4aef40ee4
