@@ -26,3 +26,7 @@ Requests this pass: archive.org 2 (metadata + download for `calendarofstatep08gr
 - **Background page:** `sources/cryptiana/web/mary.htm`.
 - **Ideas:** Very short (about 90 tokens) with only 0-13 plus `b` variants, so about 28 symbols. That's alphabet-sized. Likely a simple substitution for Spanish or English. Short enough that a key among the SP53/22 ciphers may apply directly; try f.40's key first.
 - **Solver status (19 Sept 2026):** Closed-negative by both, 15-16 Sept 2026. Below unicity: matched 84-letter controls solve in six languages, the target does not. All 61 SP53/22 key images tried (Aymeloglu).
+
+## Solver-repo check (aymeloglu, 2 Oct 2026)
+
+Fresh shallow clone of github.com/aaymeloglu/unsolved-ciphers, HEAD d2800bb (27 Sept 2026); the repository has no issues (0 results on the issue tracker, read 2 Oct 2026) and 25 pull requests, all the owner's own, the last on 27 Sept 2026 (cipherkit diagnostics, no target rows). Only one commit since our 25 Sept check (HEAD 2495c45): nothing about this target changed. Their record stands as TARGETS.md row 14: SP 53/22 f.52, "Cifer with Spanish Spye": closed-negative 16 Sept 2026 (matched 84-letter controls solve in six languages, the target a full gram worse under every hypothesis; all 61 key images negative). Work kept private (no public folder); no licence, cited not copied. Class b (attempted and closed) in sources/solver-diffs/2026-10-02-aymeloglu.tsv. Worker SOLVERDIFF-AYMELOGLU (account 2).
