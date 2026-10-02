@@ -474,3 +474,61 @@ Grade counts this pass: H 0, C 0, S 0 readings (two control-backed non-tests), M
 Files: `pool_1763.py`, `pooled_1763.txt`, `HYPOTHESES.md` (three tool-written rows), `specs/hellen-frederick-1752.json`
 (`cheap_test_done["2"]`), this section. No `families/` decode files were written (no target run). Requests: none
 (disk only). Subagents: none.
+
+## Premise check (GF4-BATCH2, account-4, 2 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` "Premise check": asked to prove the eight despatches are
+already read. Result first: **not found** -- no decipherment, clear copy or printed plaintext of any of the eight
+target despatches located by (a)-(d) below on 2 Oct 2026 (a search result, rule 10). Status stays `open`. Two
+leads for the folder (neither a decipherment of this item) are in (c) and (d).
+
+**(a) Decipherments the folder itself mentions -- not found (each opened or already opened and re-read here).**
+NA Fagel 1.10.29 inv. 5206 ("copies of deciphered letters", Bourdeau's lead): all 185 scans were opened
+page-by-page on 25 Sept 2026 (section above) and do not contain the 4 Jan 1752 despatch; re-read the section,
+nothing to add. De Leeuw 1995 Afb. 1 (KHA PWV inv. 198, Lyonet's solution of a Prussian London intercept of
+22 Sept 1752): a different letter and envoy (Michell, London), see (c). Politische Correspondenz vols. 9, 10, 13,
+23: Frederick's outgoing replies only, already read on disk (sections above). DECODE: R1046, R1060 and R1061 carry
+"Plaintext: French" in the catalogue language field (Aymeloglu's scrape of the DECODE catalogue,
+`catalogue/decode-catalog.csv`, read 2 Oct 2026) -- but all eight read status "Non-decrypted" in the same row, so
+the field is a language tag, not an attached decipherment; the documents themselves sit behind the DECODE
+permissions block (ASKS row 1/42), not opened.
+
+**(b) Other solvers' working files -- not found.** Fresh shallow clone of dbourdeau/cyphersolver (2 Oct 2026):
+`targets/hellen1752/` holds only `NOTES.md`, `AUDIT_2026-09-20.md`, `audit_transcription.py`, `profile.json` and
+`audit/{R1049,R1953,set1763,summary}.txt|json`; no key file, no apply-key script, no rendering; `profile.json`
+gives `plaintext.location: ["none"]` for R1953; his AUDIT says "No long coherent plaintext has been recovered under
+any model" and rejects DECODE R2824 (Fagel 5345, "cipher Prussia 1746") as a Dutch, not Prussian, key. Fresh shallow
+clone of aaymeloglu/unsolved-ciphers: "Hellen" occurs only in the two catalogue scrape files, no script, key or
+output touches these records (grep, no code copied; rule 8).
+
+**(c) Physical neighbours -- not found for the item; one sibling lead.** No page images of KHA inv. 196 are
+reachable (DECODE images blocked; KHA's own catalogue, below, shows no scans), so the facing pages and laid-in slips
+cannot be viewed from here: **unreachable** for the leaves themselves. Neighbouring records in the same Lyonet
+intercept series, from the DECODE catalogue scrape: **R1051** (Michell, Prussian envoy London, to Frederick II,
+12 Nov 1751) and **R1050** (Michell to Frederick II, 5 Sept 1752), both KHA PWV inv. 198, status **"Decrypted"**,
+Plaintext French -- Prussian chancery cipher solved by the Dutch in the same months as R1953 (4 Jan 1752); and
+R1955/R1957 (Frederick to Michell, 28 Dec 1751), Non-decrypted on DECODE but printed in clear in PC vol. 8 no. 5263
+(QUEUE.md line 1489). Whether Michell's 1751-52 code is the one Hellen used is untested; it is a **key-sibling lead,
+not a decipherment of this item** (envoys normally held different codes; Bourdeau's repeated-bigram audit and the
+folder's own Jaccard test show the 1752, 1756 and 1763 Hellen sets are three different codes). KHA catalogue
+(koninklijkeverzamelingen.nl, archiefvormer Willem V, `zoekterm=Hellen`, headless browser, 4 requests): 3 hits,
+**A31-1148-1149** "Briefwisseling van de zaakgelastigde W.B. von der Hellen, 1751-1757 en 1763. Afschriften, ten
+dele in tweevoud" (2 pakken: A31-1148 1751-1755, A31-1149 1756-1763) -- the target's own holding under its current
+number; no scan count on any of the three nodes (by the convention QUEUE.md records for this viewer, not digitised).
+Its neighbour A31-1154-1171 "Briefwisseling van F.W. von Thulemeyer ... 1763-1783 en 1786. Afschriften, ten dele in cijfer"
+(Hellen's successor at The Hague) is the next series on the same shelf, likewise without scans.
+
+**(d) Recipient side -- not found for the eight dates; one adjacent print.** The recipient is Frederick II; his
+edition (Politische Correspondenz) prints only his outgoing letters plus editorial summaries ("Hellen berichtet,
+Haag 26. Juli [1763]", Google Books API snippet, vol. 23, 1896, full view; already read on disk). Google Books API
+(country=US, keyed), 3 queries: `"von der Hellen" Haag 1763 Bericht` (14 hits: PC vols., a 2009 Prussian
+officials handbook, and a 2025 edition of a Saint-Germain biography whose snippet says "Berichte des preußischen
+Geschäftsträgers von der Hellen ... sind dem Geheimen Staatsarchiv in Berlin entnommen"), `"Hellen" "Haye" 1752
+rapport déchiffré` (0), `"von der Hellen" Gesandter Haag Friedrich dechiffriert` (0). The Saint-Germain print quotes
+Hellen's GStA reports of the 1760 Saint-Germain affair -- outside all eight target dates (1752, 1756, 1763), but it
+shows the decoded receiving-side reports exist in GStA PK and have been printed in part; for the eight target dates
+no print of them was found. OpenAlex (`"von der Hellen" Prussia Hague`): 1 hit, unrelated. The Dutch intercepting
+side (Fagel 5206, De Leeuw) is covered in (a).
+
+Requests this pass: koninklijkeverzamelingen.nl 4 (1 curl, 3 browser), googleapis 3, api.openalex.org 1,
+github.com 2 shallow clones (grep only); all >=1.5 s apart; no 403/429/challenge. Nothing read, graded or tested.
