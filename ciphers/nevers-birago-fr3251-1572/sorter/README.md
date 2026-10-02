@@ -1,6 +1,6 @@
 # Sign sorter, Birago 1572 short runs (NEVBIR-LOOKALIKE, 2 Oct 2026)
 
-For the owner, when he has time. Nothing waits on it. It covers the two short 1572 runs, no.73 (f.144r, 90 signs) and
+For the owner, when he has time. Nothing waits on it. Published 2 Oct 2026 by the account-3 orchestrator: https://claude.ai/artifact/QzrYKYmTB5xu4VZDaC7oba (private). It covers the two short 1572 runs, no.73 (f.144r, 90 signs) and
 no.85 (f.168r + f.168v head, 121 signs): 211 tiles from the PUBLIC Gallica region images already on disk (BnF fr.3251,
 ark btv1b9060248g, canvases 146, 171, 172), cut into one strip per line in `pages/`. Piles start from the reconciled
 labels after the look-alike pass (`harvest/lookalike/<run>_passD.tsv`). No sign values appear anywhere in this folder.

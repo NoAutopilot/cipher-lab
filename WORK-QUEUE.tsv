@@ -114,3 +114,5 @@ NEVBIR-POOL	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-pool.md	Fable	3	35
 VERIFY-NEVBIR-86	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-86.md	Fable	5	50	claimed session_01JRU1d5d7VpLr7j1atZLW3c 2026-10-02 19:09	2026-10-02 18:30	verifier: nevers-birago no.86 (759 signs)
 NEVBIR-185	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-185.md	Fable	5	55	claimed session_01QfXKNgPadKwarCDrUAw4d5 2026-10-02 19:09	2026-10-02 18:31	nevers-birago no.90: f.184v foot + f.185r/v (~25 lines)
 NEVBIR-LOOKALIKE	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-lookalike.md	Opus 5.5	5	50	claimed session_01SLgdLnwEPVEAKbUo8Lkto9 2026-10-02 19:09	2026-10-02 19:02	nevers-birago no.73/no.85: confusion map + look-alike re-read + control; sorter package for owner (no blocking)
+NEVBIR-185B	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-185b.md	Opus 5.5	5	50	queued	2026-10-02 19:54	nevers-birago no.90: f.185r L11-14,17-28 + f.185v run; test off-sheet sign as r
+AUDIT2-NEVBIR	other	.claude/briefs/runs/2026-10-02-acct3-audit2-nevbir.md	Opus 5.5	6	60	queued	2026-10-02 19:54	second audit nos.71/86/90 + Memoires de Nevers vol.2 + JSTOR rows (N4 steps)

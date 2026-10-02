@@ -1533,3 +1533,6 @@ the end of every wake.
 | 2 Oct 2026 | NEVBIR-174V-A | session_013ahvx17TsWWJJe4xzj7MhP | account-2 | Opus 5.5 | not visible from account 3 | D | f.174v lines 1-11: 285 signs rank 1/201 z 3.4-3.5, S 242 |
 | 2 Oct 2026 | NEVBIR-174V-B | session_011vCzhATmNuHrrJGf2ot5YQ | account-2 | Opus 5.5 | not visible from account 3 | D | rest of no.86: whole letter 759 signs rank 1/201 z 3.6-3.8, S 629; verifier queued |
 | 2 Oct 2026 | OUT-CHECK-MERCY-REPLY2 | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | gate 7 passed on the revised Bourdeau reply; ready for the owner to post |
+| 2 Oct 2026 | NEVBIR-LOOKALIKE | session_01SLgdLnwEPVEAKbUo8Lkto9 | account-2 | Opus 5.5 | not visible from account 3 | D | reader error f.144r 0.24->0.044, f.168 0.13->0.074; f.144r rank 1-2/201 z 2.3-2.4 (conditional), f.168 not licensed; sorter package (13 focus tiles) |
+| 2 Oct 2026 | NEVBIR-185 | session_01QfXKNgPadKwarCDrUAw4d5 | account-2 | Opus 5.5 | not visible from account 3 | D | no.90 +330 signs; whole 554 rank 1/201 z 4.2, S 455; PROGRESS.tsv emptied once by its merge, restored a minute later |
+| 2 Oct 2026 | VERIFY-NEVBIR-86 | session_01JRU1d5d7VpLr7j1atZLW3c | account-2 | Opus 5.5 | not visible from account 3 | D | no.86 N3, key published; Mémoires de Nevers vol.1 searched, vol.2 not located; SO-NEVBIR-86 queued |
