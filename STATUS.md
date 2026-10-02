@@ -248,6 +248,10 @@ step, none stale after account-3 touched the six over-48h rows. PROGRESS.tsv's c
 check-in start, pushed 08:2x) were removed at 08:2x; the stash pattern is dropped from the check-in prompt. Check-in 6
 armed for 09:56 UTC (trig_01ULuBs7KQfuCztF1MjQqKrd). Parent 2 at about 400k context, cost about 14.4.
 
+**Check-in 6 (09:5x UTC 2 Oct, parent 2):** unchanged -- `allowed_warning` on this session, no workers, no ROOM activity
+from any account since 09:11; account-3's newest line 08:59 UTC (58 min). Check-in 7 armed for 10:43 UTC
+(trig_017Cw16fUjS2HMrDfFvD9Btx). Parent 2 at about 415k context, cost about 15.4.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
