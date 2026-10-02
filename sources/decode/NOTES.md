@@ -468,3 +468,14 @@ frozen until 29 Sept 21:00 UTC):**
 Requests this job: de-crypt.org 73 (2 login, 1 primary RecordsView, 2 image fetches in the login run, 68 in the
 listener: 28 record pages, 5 documents, 35 images), all 1.7 s or more apart, one at a time, one login. No
 other hosts.
+
+## Key listing completed: N/A page 58 (OLD-DKEY, 2 Oct 2026)
+
+`keys-all-2026-09-28-merged.tsv` lacked exactly one page of the status-N/A key crawl (page 58, ids 6097-6146, 50
+Florence ASF records -- the H18 seam between the first session's pages 1-57 and the resumed pages 59-128). Fetched
+2 Oct 2026 with `tools/decode_list.py --status n/a --record-type key --start-page 58 --max-pages 58` (note:
+`--max-pages` is the last page to fetch, not a count from `--start-page`; and `--raw-dir` fails on the status name
+`n/a` because the slash becomes a directory) into `keys-na-p58-2026-10-02.tsv`. The two files together are all 6,374
+key records DECODE listed on 2 Oct 2026 (N/A 6,351, Decrypted 19, Non-decrypted 4 -- the N/A total unchanged since
+28 Sept). 5 listing requests this session, 1.6 s apart, no login. Dutch-holder screen for 1595-1615 in
+`ciphers/oldenbarnevelt-brederode-1605/decode_keys_1600s.tsv`.

@@ -485,3 +485,53 @@ $ python3 tools/intake_gate_check.py oldenbarnevelt-brederode-1605
 oldenbarnevelt-brederode-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## OLD-DKEY (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-01-account4-old-dkey.md`, answering the open point left by the L12 recheck above
+("does not rule out an individual record in DECODE"). Searched DECODE's full key-record listing (record type Key,
+every status) for a key dated 1595-1615 with a Dutch origin or holder. Source: the on-disk listing snapshot
+`sources/decode/keys-all-2026-09-28-merged.tsv` (28 Sept 2026, 6,324 rows, H18 of espagnol142-mercy-1648) plus the
+one page that snapshot lacked, N/A page 58, fetched this session into `sources/decode/keys-na-p58-2026-10-02.tsv`
+(50 rows, all Florence ASF, none Dutch or in window) -- together all 6,374 key records DECODE lists on 2 Oct 2026
+(N/A 6,351 + Decrypted 19 + Non-decrypted 4; the N/A total today equals the 28 Sept total, so nothing was added in
+between). Login-free listing only (`tools/decode_list.py`), no login attempted, 5 requests to
+`de-crypt.org/decrypt-web/RecordsList` at 1.6 s (one dry run that fetched nothing because `--max-pages` counts from
+page 1, one run aborted by a `--raw-dir` path bug on the status name `n/a`, one clean run). Output
+`decode_keys_1600s.tsv` (26 rows, classes in its header line).
+
+**Candidates dated 1595-1615 with a Dutch holder or Dutch language: 0.** DECODE holds 69 key records from The Hague
+(Nationaal Archief 1.10.29 Familie Fagel inv. 5345 x 61 dated 1680-1758 plus 11 undated, NA 1.01.02 Staten-Generaal
+inv. 6894 x 1, NA legatie Rusland x 2, Koninklijk Huisarchief x 4, Museum voor Communicatie x 1) and 11 Dutch-language
+keys, and not one is dated inside 1595-1615. The free-text holder search (Brederode, Oldenbarnevelt, Staten, Holland,
+Prague, Kaiser, Emperor, Nassau, Orange, States) hits only record 2118 and the Vienna "Kaiser Franz" Handarchiv keys
+of 1765-1792. What the TSV lists instead:
+
+- **2118, the only States-General key** (`dutch-near-window`): NA 1.01.02 Staten-Generaal inv. 6894, listing date
+  "1620 -", Dutch, 2 pages, status N/A. Fifteen years after the letter and in the wrong archive series (inv. 6894 is
+  not the 1.01.02 6016 "Duitsland" bundle walked by YX-OBR), but it is the one DECODE key of the States General's own
+  chancery from the first quarter of the century, and a two-digit/three-digit numeral nomenclator of the 1620s could
+  descend from the one in use in 1605 (range 30-741 here). Its images are account-gated at full size (ASKS row 1).
+- **2842-2852, 11 undated Fagel keys** (`dutch-undated`): the same inv. 5345 run whose dated siblings are 1680-1758;
+  almost certainly the griffier Fagel's own 17th-18th-century keys, not candidates, listed only because the listing
+  gives them no date.
+- **938-953, 14 Brussels ARA Secretairerie d'Etat Allemande inv. nr. 1 keys** (`brussels-series-spans-window`): a
+  Habsburg-Netherlands series whose stated range 1553-1729 spans the window; German/Spanish/Latin, the enemy
+  chancery's keys (H18 of espagnol142-mercy-1648 already read 941, 944, 946 on their RecordsView pages: Spanish
+  homophonic designs). Not a key Brederode would have used; listed so the next worker does not re-screen them.
+
+Not listed (not Dutch, out of this brief's scope, counted for the record): in-window keys from the sender's own
+German milieu exist in bulk -- Munich BayHStA 102, Marburg HStAM (Hessen-Kassel) 20 -- and Vienna HHStA 263,
+Florence 811, Stockholm 75, Kew 26, Madrid 20, Paris 19. A Palatine or Hessian key would be a correspondent-side
+key, not the States' key the editor could not find; nobody has screened those 122 records for a numeral
+nomenclator in the 30-741 range.
+
+Status stays `open`. **Rule 10 wording:** a search result over 100% of DECODE's key listing by date, holder, language
+and holder text on 2 Oct 2026; not a key verdict and not evidence that no such key exists outside DECODE (the NA
+1.01.02 and 3.01.14 EAD hunts in "Key hunt" above are the other half of route A).
+
+**Named next step (one LOCAL-QUEUE.tsv row, drafted here, not filed):**
+
+```
+L<next>	browser-check	ciphers/oldenbarnevelt-brederode-1605	OLD-DKEY (2 Oct 2026): DECODE record 2118 (https://de-crypt.org/decrypt-web/RecordsView/2118, Nationaal Archief 1.01.02 Staten-Generaal inv. 6894, key, "1620 -", Dutch, 2 pages) is the only States-General key DECODE lists before 1650; its full-size images are account-blocked for the cloud (ASKS row 1). In the owner's logged-in DECODE browser open the record and its 2 images and paste into ciphers/oldenbarnevelt-brederode-1605/decode_2118/ : (1) the record's own description fields (date, description, "key design", inventory text) as plain text; (2) the two images at full size as 2118_p1.jpg, 2118_p2.jpg; (3) one line saying whether the key maps words/names to Arabic numerals in roughly 30-741 (the letter's range, NOTES.md "What is established") or to something else. No decoding, no other records.	queued	
+```
