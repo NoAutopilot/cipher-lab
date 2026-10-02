@@ -1,0 +1,26 @@
+crop	pos	decision	note
+tit2039L1	5	5	own look at tit2039L1.jpg: "5[delta]h" as on title line 2 (van)
+tit2039L3	0	3	own look: plain 3, no dot
+tit2039L3	5	p	own look: looped p (B's psi not seen); stays M
+tit2039L3	22	[d-loop]	own look: delta-like looped d before h; stays M
+rem2039_L02	1	3	own look on 1.8x montage
+rem2039_L02	7	[d-loop]	looped d
+rem2039_L02	30	[psi]	psi with loop (neither A p nor B y)
+rem2039_L02	39	7	
+rem2039_L02	40	[psi]	
+rem2039_L02	46	i	"m i [u-dots] s 3 l"
+rem2039_L02	47	[u-dots]	
+rem2039_L02	49	3	
+rem2039_L02	62	3	
+rem2039_L02	66	[psi]	
+rem2039_L02	72	7	
+rem2039_L03	27	7	
+rem2039_L04	1	3	
+rem2039_L04	21	DROP	B's extra j: one dotted sign only
+rem2039_L04	24	[w-tilde]	
+rem2039_L04	32	[lambda]	
+rem2039_L04	51	[thorn]	the big curled initial, as on the heading
+rem2039_L05	31	[delta]	
+rem2039_L05	45	[d-loop]	
+rem2039_L05	46	t	
+rem2039_L05	58	g	

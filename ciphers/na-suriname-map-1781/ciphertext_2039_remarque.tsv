@@ -1,0 +1,304 @@
+# NA 4.VEL 2039: title cartouche lines 1 and 3 (line 2 is 2039_leg_head in ciphertext_2039_legend.tsv) and the lower-left
+# Remarque (heading + 5 lines). GAPS15-na-suriname-map-1781 (account-4), 2 Oct 2026. Crops: title line 1 = native IIIF region
+# 1780,800,1060,220 (images/2039_title_l1_native.jpg, used whole); title line 3 = tools/iiif_lines.py on 2039_legend_native.jpg;
+# Remarque = tools/iiif_lines.py on images/2039_remarque.jpg (commands in NOTES.md GAPS15). Two blind Sonnet passes
+# (passes/rem2039_passA.tsv, passB.tsv; brief passes/rem2039_pass_brief.md), aligned by passes/rem2039_merge.py (256/296
+# positions agree), one own reconciliation look (passes/rem2039_reconcile.tsv). conf H = both passes read the same sign;
+# M = the passes differ (reconciled or pass A kept, both readings in the note). Both readers rated the Remarque lines L
+# (small hand on a ~half-resolution crop): word breaks and many H positions are still shape guesses -- treat as draft.
+line	pos	sign	conf	note
+2039_title1	0	S	H	
+2039_title1	1	p	H	
+2039_title1	2	e	H	
+2039_title1	3	x	H	
+2039_title1	4	l	H	
+2039_title1	5	5	M	A:5 B:s; reconciled own look at tit2039L1.jpg: "5[delta]h" as on title line 2 (van)
+2039_title1	6	[delta]	H	
+2039_title1	7	[h-loop]	H	
+2039_title1	8	s	H	
+2039_title1	9	[f-loop]	H	
+2039_title1	10	[ezh-dot]	H	
+2039_title1	11	r	H	
+2039_title1	12	F	H	
+2039_title3	0	3	M	A:[ezh-dot] B:3; reconciled own look: plain 3, no dot
+2039_title3	1	[l-bare]	H	
+2039_title3	2	q	H	
+2039_title3	3	c	H	
+2039_title3	4	[f-loop]	H	
+2039_title3	5	p	M	A:p B:[psi]; reconciled own look: looped p (B's psi not seen); stays M
+2039_title3	6	[delta]	H	
+2039_title3	7	r	H	
+2039_title3	8	s	H	
+2039_title3	9	a	H	
+2039_title3	10	w	H	
+2039_title3	11	a	H	
+2039_title3	12	o	H	
+2039_title3	13	6	H	
+2039_title3	14	[f-loop]	H	
+2039_title3	15	q	H	
+2039_title3	16	l	H	
+2039_title3	17	[delta]	H	
+2039_title3	18	[lambda]	H	
+2039_title3	19	s	H	
+2039_title3	20	e	H	
+2039_title3	21	o	H	
+2039_title3	22	[d-loop]	M	A:o B:[d-loop]; reconciled own look: delta-like looped d before h; stays M
+2039_title3	23	[h-loop]	H	
+2039_rem_head	0	[thorn]	H	
+2039_rem_head	1	3	H	
+2039_rem_head	2	[u-dots]	H	
+2039_rem_head	3	[delta]	M	A:[delta] B:-
+2039_rem_head	4	[lambda]	H	
+2039_rem_head	5	c	H	
+2039_rem_head	6	x	H	
+2039_rem_head	7	5	H	
+2039_rem_head	8	7	H	
+2039_rem_L1	0	y	H	
+2039_rem_L1	1	3	M	A:3 B:o; reconciled own look on 1.8x montage
+2039_rem_L1	2	5	H	
+2039_rem_L1	3	a	H	
+2039_rem_L1	4	[h-loop]	H	
+2039_rem_L1	5	w	H	
+2039_rem_L1	6	a	H	
+2039_rem_L1	7	[d-loop]	M	A:[d-loop] B:[p-descender]; reconciled looped d
+2039_rem_L1	8	x	H	
+2039_rem_L1	9	r	H	
+2039_rem_L1	10	[lambda]	H	
+2039_rem_L1	11	d	H	
+2039_rem_L1	12	o	H	
+2039_rem_L1	13	t	H	
+2039_rem_L1	14	r	H	
+2039_rem_L1	15	[h-loop]	H	
+2039_rem_L1	16	g	H	
+2039_rem_L1	17	o	H	
+2039_rem_L1	18	o	M	A:o B:s
+2039_rem_L1	19	[hash]	H	
+2039_rem_L1	20	[f-loop]	H	
+2039_rem_L1	21	[lambda]	H	
+2039_rem_L1	22	7	M	A:7 B:r
+2039_rem_L1	23	a	H	
+2039_rem_L1	24	o	H	
+2039_rem_L1	25	w	H	
+2039_rem_L1	26	g	H	
+2039_rem_L1	27	d	H	
+2039_rem_L1	28	r	H	
+2039_rem_L1	29	o	H	
+2039_rem_L1	30	[psi]	M	A:p B:y; reconciled psi with loop (neither A p nor B y)
+2039_rem_L1	31	b	H	
+2039_rem_L1	32	s	H	
+2039_rem_L1	33	l	H	
+2039_rem_L1	34	w	H	
+2039_rem_L1	35	m	H	
+2039_rem_L1	36	o	H	
+2039_rem_L1	37	7	M	A:7 B:r
+2039_rem_L1	38	[u-dots]	M	A:[u-dots] B:y
+2039_rem_L1	39	7	H	reconciled
+2039_rem_L1	40	[psi]	H	reconciled
+2039_rem_L1	41	a	H	
+2039_rem_L1	42	q	H	
+2039_rem_L1	43	m	H	
+2039_rem_L1	44	[u-dots]	M	A:[u-dots] B:i
+2039_rem_L1	45	y	M	A:- B:y
+2039_rem_L1	46	i	H	reconciled m i [u-dots] s 3 l
+2039_rem_L1	47	[u-dots]	M	A:3 B:s; reconciled
+2039_rem_L1	48	l	H	
+2039_rem_L1	49	3	H	reconciled
+2039_rem_L1	50	t	H	
+2039_rem_L1	51	[h-loop]	H	
+2039_rem_L1	52	r	H	
+2039_rem_L1	53	r	H	
+2039_rem_L1	54	s	H	
+2039_rem_L1	55	a	H	
+2039_rem_L1	56	o	H	
+2039_rem_L1	57	q	H	
+2039_rem_L1	58	3	M	A:3 B:s
+2039_rem_L1	59	l	H	
+2039_rem_L1	60	w	H	
+2039_rem_L1	61	[f-loop]	H	
+2039_rem_L1	62	3	M	A:e B:y; reconciled
+2039_rem_L1	63	s	H	
+2039_rem_L1	64	q	H	
+2039_rem_L1	65	[delta]	H	
+2039_rem_L1	66	[psi]	H	reconciled
+2039_rem_L1	67	o	H	
+2039_rem_L1	68	7	M	A:7 B:r
+2039_rem_L1	69	6	H	
+2039_rem_L2	0	[s-loop]	H	
+2039_rem_L2	1	a	H	
+2039_rem_L2	2	l	H	
+2039_rem_L2	3	r	H	
+2039_rem_L2	4	[h-loop]	H	
+2039_rem_L2	5	[h-loop]	H	
+2039_rem_L2	6	m	H	
+2039_rem_L2	7	g	H	
+2039_rem_L2	8	[s-loop]	H	
+2039_rem_L2	9	g	H	
+2039_rem_L2	10	s	H	
+2039_rem_L2	11	o	M	A:o B:s
+2039_rem_L2	12	o	H	
+2039_rem_L2	13	[hash]	H	
+2039_rem_L2	14	[f-loop]	H	
+2039_rem_L2	15	r	H	
+2039_rem_L2	16	[lambda]	H	
+2039_rem_L2	17	a	M	A:- B:a
+2039_rem_L2	18	s	H	
+2039_rem_L2	19	r	M	A:- B:r
+2039_rem_L2	20	o	H	
+2039_rem_L2	21	y	H	
+2039_rem_L2	22	7	H	
+2039_rem_L2	23	d	H	
+2039_rem_L2	24	a	H	
+2039_rem_L2	25	r	H	
+2039_rem_L2	26	[lambda]	H	
+2039_rem_L2	27	7	M	A:7 B:r; reconciled
+2039_rem_L2	28	o	H	
+2039_rem_L2	29	t	H	
+2039_rem_L2	30	s	H	
+2039_rem_L2	31	l	H	
+2039_rem_L3	0	y	H	
+2039_rem_L3	1	3	M	A:3 B:s; reconciled
+2039_rem_L3	2	x	H	
+2039_rem_L3	3	a	H	
+2039_rem_L3	4	l	H	
+2039_rem_L3	5	g	H	
+2039_rem_L3	6	o	H	
+2039_rem_L3	7	k	H	
+2039_rem_L3	8	r	H	
+2039_rem_L3	9	t	H	
+2039_rem_L3	10	s	H	
+2039_rem_L3	11	p	H	
+2039_rem_L3	12	l	H	
+2039_rem_L3	13	w	H	
+2039_rem_L3	14	a	H	
+2039_rem_L3	15	e	H	
+2039_rem_L3	16	g	H	
+2039_rem_L3	17	[pi]	M	A:[pi] B:r
+2039_rem_L3	18	3	M	A:3 B:[lambda]
+2039_rem_L3	19	a	H	
+2039_rem_L3	20	[u-dots]	M	A:[u-dots] B:i
+2039_rem_L3	21	d	H	
+2039_rem_L3	22	r	H	
+2039_rem_L3	23	[w-tilde]	M	A:[w-tilde] B:w; reconciled
+2039_rem_L3	24	o	H	
+2039_rem_L3	25	r	H	
+2039_rem_L3	26	[f-loop]	H	
+2039_rem_L3	27	l	H	
+2039_rem_L3	28	a	H	
+2039_rem_L3	29	m	H	
+2039_rem_L3	30	o	H	
+2039_rem_L3	31	[lambda]	M	A:[lambda] B:[delta]; reconciled
+2039_rem_L3	32	t	H	
+2039_rem_L3	33	d	H	
+2039_rem_L3	34	t	H	
+2039_rem_L3	35	r	H	
+2039_rem_L3	36	d	H	
+2039_rem_L3	37	F	H	
+2039_rem_L3	38	8	H	
+2039_rem_L3	39	[psi]	H	
+2039_rem_L3	40	5	H	
+2039_rem_L3	41	z	H	
+2039_rem_L3	42	e	H	
+2039_rem_L3	43	m	H	
+2039_rem_L3	44	[lambda]	H	
+2039_rem_L3	45	m	H	
+2039_rem_L3	46	t	M	A:t B:l
+2039_rem_L3	47	r	H	
+2039_rem_L3	48	o	M	A:o B:[thorn]
+2039_rem_L3	49	s	H	
+2039_rem_L3	50	[thorn]	H	reconciled the big curled initial, as on the heading
+2039_rem_L3	51	g	H	
+2039_rem_L3	52	o	M	A:o B:b
+2039_rem_L3	53	[h-loop]	H	
+2039_rem_L3	54	[psi]	H	
+2039_rem_L3	55	a	H	
+2039_rem_L3	56	[f-loop]	H	
+2039_rem_L3	57	o	H	
+2039_rem_L3	58	m	H	
+2039_rem_L3	59	t	M	A:t B:-
+2039_rem_L3	60	l	H	
+2039_rem_L3	61	&	H	
+2039_rem_L3	62	6	H	
+2039_rem_L3	63	e	H	
+2039_rem_L3	64	m	H	
+2039_rem_L3	65	r	H	
+2039_rem_L3	66	7	M	A:7 B:2
+2039_rem_L3	67	r	H	
+2039_rem_L3	68	s	H	
+2039_rem_L3	69	t	H	
+2039_rem_L3	70	y	H	
+2039_rem_L4	0	m	H	
+2039_rem_L4	1	[h-loop]	H	
+2039_rem_L4	2	[lambda]	H	
+2039_rem_L4	3	y	H	
+2039_rem_L4	4	o	H	
+2039_rem_L4	5	r	H	
+2039_rem_L4	6	a	H	
+2039_rem_L4	7	g	H	
+2039_rem_L4	8	o	H	
+2039_rem_L4	9	[psi]	H	
+2039_rem_L4	10	a	H	
+2039_rem_L4	11	[f-loop]	H	
+2039_rem_L4	12	o	H	
+2039_rem_L4	13	m	H	
+2039_rem_L4	14	l	H	
+2039_rem_L4	15	d	H	
+2039_rem_L4	16	t	H	
+2039_rem_L4	17	m	H	
+2039_rem_L4	18	o	H	
+2039_rem_L4	19	r	H	
+2039_rem_L4	20	[f-loop]	H	
+2039_rem_L4	21	[h-loop]	H	
+2039_rem_L4	22	x	H	
+2039_rem_L4	23	8	H	
+2039_rem_L4	24	o	H	
+2039_rem_L4	25	[psi]	H	
+2039_rem_L4	26	w	H	
+2039_rem_L4	27	o	H	
+2039_rem_L4	28	m	H	
+2039_rem_L4	29	l	H	
+2039_rem_L4	30	g	H	
+2039_rem_L4	31	[delta]	M	A:[lambda] B:[delta]; reconciled
+2039_rem_L4	32	t	H	
+2039_rem_L4	33	6	H	
+2039_rem_L4	34	r	H	
+2039_rem_L4	35	k	H	
+2039_rem_L4	36	[lambda]	H	
+2039_rem_L4	37	7	H	
+2039_rem_L4	38	e	H	
+2039_rem_L4	39	r	H	
+2039_rem_L4	40	r	M	A:- B:r
+2039_rem_L4	41	[lambda]	H	
+2039_rem_L4	42	&	H	
+2039_rem_L4	43	[thorn]	M	A:[thorn] B:[d-loop]
+2039_rem_L4	44	l	M	A:l B:t
+2039_rem_L4	45	[d-loop]	H	reconciled
+2039_rem_L4	46	t	H	reconciled
+2039_rem_L4	47	o	H	
+2039_rem_L4	48	[f-loop]	H	
+2039_rem_L4	49	l	M	A:- B:l
+2039_rem_L4	50	[h-loop]	H	
+2039_rem_L4	51	m	H	
+2039_rem_L4	52	y	H	
+2039_rem_L4	53	[lambda]	H	
+2039_rem_L4	54	8	H	
+2039_rem_L4	55	s	H	
+2039_rem_L4	56	9	M	A:9 B:g
+2039_rem_L4	57	7	H	
+2039_rem_L4	58	g	H	reconciled
+2039_rem_L4	59	g	H	
+2039_rem_L4	60	o	H	
+2039_rem_L4	61	s	H	
+2039_rem_L4	62	[h-loop]	H	
+2039_rem_L4	63	g	H	
+2039_rem_L4	64	r	H	
+2039_rem_L4	65	t	H	
+2039_rem_L4	66	7	H	
+2039_rem_L4	67	[lambda]	H	
+2039_rem_L4	68	m	H	
+2039_rem_L4	69	r	H	
+2039_rem_L5	0	S	H	
+2039_rem_L5	1	[h-loop]	H	
+2039_rem_L5	2	[f-loop]	H	
+2039_rem_L5	3	k	H	
+2039_rem_L5	4	3	H	
+2039_rem_L5	5	r	H	

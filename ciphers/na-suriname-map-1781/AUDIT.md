@@ -10,7 +10,7 @@ It did no decoding and touched no other target.
 |---|---|---|---|---|---|
 | 1 | the 17-sign key (key.tsv, grade C) and the 2039 legend decode (482 tokens: M 167, U 315, no word read whole) | **N1** for the key and the system. The 2039 legend has no reading to classify. | **ours**: alignment of 2007A against its own on-sheet gloss and the period plain twin 2007B. A **period** key sheet exists (NA 1.05.03 inv. 86, below) and was not used. | 2039: none located (AMH 2025 says "niet getranscribeerd"). The one source that could hold it, de Leeuw 1997, was not read. | **yes**: de Leeuw 1997 describes the system and reproduces "de sleutel tot het geheimschrift" from NA 1.05.03 inv. 86 |
 | 2 | 2061 battery list No.1-6 and legend a-g: S 17, M 163, U 88 after GAPS12; cribs 'batterijen' (10 S) and 'wooning' (7 S) | **N0** | **ours** for the crib values (key_2061_crib.tsv; GAPS9/GAPS10 placements against the sheet's own gloss word and AMH's summary) | **yes**: Atlas of Mutual Heritage page 2218 prints the whole No.1-6 + a-g legend in English, after den Heijer 2012 | **yes**: the AMH sentence presents the content as a reading of "the legend in cipher on Wollant's map"; the key is in de Leeuw 1997 |
-| 3 | 2039 legend and 2061 block under the PERIOD keys (inv. 86 scan 0002 Oud, scan 0003 Nieuw + 9 code groups): 2039 H 287 M 183 U 12; 2061 H 166 M 92 U 10 (VERIFY-SURINAME-PERIOD, 2 Oct 2026, below) | **2039 legend: N1 (provisional)**, held there until LOCAL-QUEUE L36 is answered. **2061 block: N0** (unchanged). **Period key sheets: N1** | **period** for both readings (NA 1.05.03 inv. 86, read by GAPS13/GAPS14) | 2039: no Dutch or English text of the legend located; de Leeuw 1997 (unread) discusses fort Nieuw Amsterdam's garrison and barracks. 2061: AMH 2218 (English) | key sheets: **yes**, de Leeuw 1997 reproduces the "Nieuw Secrett Alphabeth" with its code groups (snippet). Decipherment of 2039: not located, not excluded |
+| 3 | 2039 legend and 2061 block under the PERIOD keys (inv. 86 scan 0002 Oud, scan 0003 Nieuw + 9 code groups): 2039 H 287 M 183 U 12; 2061 H 166 M 92 U 10 (VERIFY-SURINAME-PERIOD, 2 Oct 2026, below); revised by GAPS15 (2 Oct 2026, solver): 2039 H 290 M 180 U 12, 2061 H 176 M 82 U 10 (see the GAPS15 revision note below) | **2039 legend: N1 (provisional)**, held there until LOCAL-QUEUE L36 is answered. **2061 block: N0** (unchanged). **Period key sheets: N1** | **period** for both readings (NA 1.05.03 inv. 86, read by GAPS13/GAPS14) | 2039: no Dutch or English text of the legend located; de Leeuw 1997 (unread) discusses fort Nieuw Amsterdam's garrison and barracks. 2061: AMH 2218 (English) | key sheets: **yes**, de Leeuw 1997 reproduces the "Nieuw Secrett Alphabeth" with its code groups (snippet). Decipherment of 2039: not located, not excluded |
 
 Safe sentences:
 - Item 1: "From 2007A's own interlinear gloss and its plain twin 2007B, we rebuilt 17 signs of Wollant's 1781 map cipher by
@@ -185,7 +185,7 @@ Requests by host: www.googleapis.com 27 (>=1.7 s apart, one 503, not retried); b
   iron, powder magazine, officers' quarters, batteries). Confidence: high.
 
 Safe sentence (2039): "Under the period key in NA 1.05.03 inv. 86 (published in facsimile by de Leeuw 1997), we read the
-2039 (fort Nieuw Amsterdam) legend at 287 of 482 signs from the key sheet and 183 uncertain. No printed text of this legend
+2039 (fort Nieuw Amsterdam) legend at 290 of 482 signs from the key sheet and 180 uncertain (counts revised by GAPS15, 2 Oct 2026). No printed text of this legend
 was located in the sources searched; de Leeuw 1997, which discusses these sheets, has not been read."
 Safe sentence (2061): "Under the period key, our letter-level reading of the 2061 battery list and legend agrees with the
 content the Atlas of Mutual Heritage already prints in English."
@@ -200,3 +200,13 @@ No over-claim found. NOTES.md's GAPS14 section says "Rule 10: key source `period
 VERIFY-SURINAME-2061's Step 2 reports a fact that is now stale: the de Leeuw caption it quoted is the **Nieuw** leaf (scan 0003
 with code groups), not only "a key sheet". Recorded here; NOTES.md line 1313 already names scan 0003. One lesson: the H grade
 here is key-sourced, but the readings are not yet clean text. Any outward sentence quotes the counts, never "read in full".
+
+## Revision carried in (GAPS15-na-suriname-map-1781, solver, account-4, 2 Oct 2026 -- rule 10 propagation, not a verifier pass)
+
+One blind image call compared 17 tiles of 1781 reader signs with the Nieuw sheet's signs (passes/signcmp_gaps15/result.tsv).
+Changed: [thorn] = c (was c|z; two tokens H by exception), [MM] / [ladder-III] / [hand-box] H (were M), 2039 b:2 = s, 2061 L01:4
+= a H. Item 3 counts are now 2039 H 290 M 180 U 12 and 2061 H 176 M 82 U 10 (`tools/decode_key.py --check` exit 0); the
+pre-registered vocabulary control is unchanged (13 hits; shuffled-value null max 4, shuffled-order max 3, 0/1000 each). The
+classes above are not changed by this. New, not yet classified by any verifier: the 2039 title lines 1 and 3 and the lower-left
+Remarque under the same key (ciphertext_2039_remarque.tsv, reading_2039_remarque_nieuw.txt; 295 tokens H 188 M 101 U 6, from a
+two-pass draft both readers rated low-confidence). No SECOND-OPINIONS-QUEUE.tsv row exists for this target, so none to update.

@@ -1,0 +1,9 @@
+crop	glyphs	conf	note
+tit2039L1	S p e x l / 5 [delta] h / s [f-loop] [ezh-dot] r / F <,>	M	x may be c with dot; 5 first glyph of word 2 could be [s-loop]; word 3 second glyph long-f descending
+tit2039L3	[ezh-dot] 1 q c [f-loop] p [delta] r s a / w a o / 6 [f-loop] q l / [delta] [lambda] s e o o [h-loop]	M	1 may be [l-bare]; p may be [s-loop]; q/g unsure; w may be [w-tilde]
+rem2039_L01	[thorn] 3 [u-dots] [delta] [lambda] c x 5 7	M	heading; 3 may be [ezh-dot]; c x could be one glyph
+rem2039_L02	y 3 <.> 5 a [h-loop] / w a [d-loop] x r [lambda] d o t r [h-loop] / g o o [hash] [f-loop] [lambda] 7 a o w / g d r o p b s l <,> / w m o 7 [u-dots] [lambda] s a q m [u-dots] s 3 l <,> / [psi] t [h-loop] / r r s a o q 3 l w [f-loop] e s q [delta] m o 7 6	L	small hand, many glyphs ambiguous; g/q/9 unsure
+rem2039_L03	[s-loop] a l r [h-loop] / [h-loop] m g [s-loop] / g s o o [hash] / [f-loop] r [lambda] s o y 7 / d a r [lambda] 7 o t s l <.>	L	low resolution
+rem2039_L04	y 3 / x a l g o k r t / s p l / w a / e g [pi] 3 a / [u-dots] d r / [w-tilde] o r [f-loop] l a m o / [lambda] t <,> d t / r d / F / 8 [psi] / 5 z e m [lambda] / m t r / o s a g o h / [psi] a [f-loop] o m t l / & 6 e m r 7 <.> r s t y	L	isolated F plain capital; 8 digit; [pi] uncertain
+rem2039_L05	m h [lambda] / y o r a g o / [psi] a [f-loop] o m l <.> / d t / m o r [f-loop] h x 8 o / [psi] w o m l g [lambda] t / 6 / r k [lambda] 7 <.> e r [lambda] <,> / & / [thorn] l a x o [f-loop] h m y [lambda] 8 s 9 7 / 6 g o s h g r t / 7 <.> [lambda] m r	L	ampersand-like sign before word 12; 8 s 9 7 unsure
+rem2039_L06	S h <.> [f-loop] k 3 r <.>	L	short last line; first glyph S/8-like

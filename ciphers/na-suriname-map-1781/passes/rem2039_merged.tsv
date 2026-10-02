@@ -1,0 +1,297 @@
+crop	pos	sign	conf	note
+tit2039L1	0	S	H	
+tit2039L1	1	p	H	
+tit2039L1	2	e	H	
+tit2039L1	3	x	H	
+tit2039L1	4	l	H	
+tit2039L1	5	5	M	A:5 B:s
+tit2039L1	6	[delta]	H	
+tit2039L1	7	[h-loop]	H	
+tit2039L1	8	s	H	
+tit2039L1	9	[f-loop]	H	
+tit2039L1	10	[ezh-dot]	H	
+tit2039L1	11	r	H	
+tit2039L1	12	F	H	
+tit2039L3	0	[ezh-dot]	M	A:[ezh-dot] B:3
+tit2039L3	1	[l-bare]	H	
+tit2039L3	2	q	H	
+tit2039L3	3	c	H	
+tit2039L3	4	[f-loop]	H	
+tit2039L3	5	p	M	A:p B:[psi]
+tit2039L3	6	[delta]	H	
+tit2039L3	7	r	H	
+tit2039L3	8	s	H	
+tit2039L3	9	a	H	
+tit2039L3	10	w	H	
+tit2039L3	11	a	H	
+tit2039L3	12	o	H	
+tit2039L3	13	6	H	
+tit2039L3	14	[f-loop]	H	
+tit2039L3	15	q	H	
+tit2039L3	16	l	H	
+tit2039L3	17	[delta]	H	
+tit2039L3	18	[lambda]	H	
+tit2039L3	19	s	H	
+tit2039L3	20	e	H	
+tit2039L3	21	o	H	
+tit2039L3	22	o	M	A:o B:[d-loop]
+tit2039L3	23	[h-loop]	H	
+rem2039_L01	0	[thorn]	H	
+rem2039_L01	1	3	H	
+rem2039_L01	2	[u-dots]	H	
+rem2039_L01	3	[delta]	M	A:[delta] B:-
+rem2039_L01	4	[lambda]	H	
+rem2039_L01	5	c	H	
+rem2039_L01	6	x	H	
+rem2039_L01	7	5	H	
+rem2039_L01	8	7	H	
+rem2039_L02	0	y	H	
+rem2039_L02	1	3	M	A:3 B:o
+rem2039_L02	2	5	H	
+rem2039_L02	3	a	H	
+rem2039_L02	4	[h-loop]	H	
+rem2039_L02	5	w	H	
+rem2039_L02	6	a	H	
+rem2039_L02	7	[d-loop]	M	A:[d-loop] B:[p-descender]
+rem2039_L02	8	x	H	
+rem2039_L02	9	r	H	
+rem2039_L02	10	[lambda]	H	
+rem2039_L02	11	d	H	
+rem2039_L02	12	o	H	
+rem2039_L02	13	t	H	
+rem2039_L02	14	r	H	
+rem2039_L02	15	[h-loop]	H	
+rem2039_L02	16	g	H	
+rem2039_L02	17	o	H	
+rem2039_L02	18	o	M	A:o B:s
+rem2039_L02	19	[hash]	H	
+rem2039_L02	20	[f-loop]	H	
+rem2039_L02	21	[lambda]	H	
+rem2039_L02	22	7	M	A:7 B:r
+rem2039_L02	23	a	H	
+rem2039_L02	24	o	H	
+rem2039_L02	25	w	H	
+rem2039_L02	26	g	H	
+rem2039_L02	27	d	H	
+rem2039_L02	28	r	H	
+rem2039_L02	29	o	H	
+rem2039_L02	30	p	M	A:p B:y
+rem2039_L02	31	b	H	
+rem2039_L02	32	s	H	
+rem2039_L02	33	l	H	
+rem2039_L02	34	w	H	
+rem2039_L02	35	m	H	
+rem2039_L02	36	o	H	
+rem2039_L02	37	7	M	A:7 B:r
+rem2039_L02	38	[u-dots]	M	A:[u-dots] B:y
+rem2039_L02	39	[lambda]	H	
+rem2039_L02	40	s	H	
+rem2039_L02	41	a	H	
+rem2039_L02	42	q	H	
+rem2039_L02	43	m	H	
+rem2039_L02	44	[u-dots]	M	A:[u-dots] B:i
+rem2039_L02	45	y	M	A:- B:y
+rem2039_L02	46	s	H	
+rem2039_L02	47	3	M	A:3 B:s
+rem2039_L02	48	l	H	
+rem2039_L02	49	[psi]	H	
+rem2039_L02	50	t	H	
+rem2039_L02	51	[h-loop]	H	
+rem2039_L02	52	r	H	
+rem2039_L02	53	r	H	
+rem2039_L02	54	s	H	
+rem2039_L02	55	a	H	
+rem2039_L02	56	o	H	
+rem2039_L02	57	q	H	
+rem2039_L02	58	3	M	A:3 B:s
+rem2039_L02	59	l	H	
+rem2039_L02	60	w	H	
+rem2039_L02	61	[f-loop]	H	
+rem2039_L02	62	e	M	A:e B:y
+rem2039_L02	63	s	H	
+rem2039_L02	64	q	H	
+rem2039_L02	65	[delta]	H	
+rem2039_L02	66	m	H	
+rem2039_L02	67	o	H	
+rem2039_L02	68	7	M	A:7 B:r
+rem2039_L02	69	6	H	
+rem2039_L03	0	[s-loop]	H	
+rem2039_L03	1	a	H	
+rem2039_L03	2	l	H	
+rem2039_L03	3	r	H	
+rem2039_L03	4	[h-loop]	H	
+rem2039_L03	5	[h-loop]	H	
+rem2039_L03	6	m	H	
+rem2039_L03	7	g	H	
+rem2039_L03	8	[s-loop]	H	
+rem2039_L03	9	g	H	
+rem2039_L03	10	s	H	
+rem2039_L03	11	o	M	A:o B:s
+rem2039_L03	12	o	H	
+rem2039_L03	13	[hash]	H	
+rem2039_L03	14	[f-loop]	H	
+rem2039_L03	15	r	H	
+rem2039_L03	16	[lambda]	H	
+rem2039_L03	17	a	M	A:- B:a
+rem2039_L03	18	s	H	
+rem2039_L03	19	r	M	A:- B:r
+rem2039_L03	20	o	H	
+rem2039_L03	21	y	H	
+rem2039_L03	22	7	H	
+rem2039_L03	23	d	H	
+rem2039_L03	24	a	H	
+rem2039_L03	25	r	H	
+rem2039_L03	26	[lambda]	H	
+rem2039_L03	27	7	M	A:7 B:r
+rem2039_L03	28	o	H	
+rem2039_L03	29	t	H	
+rem2039_L03	30	s	H	
+rem2039_L03	31	l	H	
+rem2039_L04	0	y	H	
+rem2039_L04	1	3	M	A:3 B:s
+rem2039_L04	2	x	H	
+rem2039_L04	3	a	H	
+rem2039_L04	4	l	H	
+rem2039_L04	5	g	H	
+rem2039_L04	6	o	H	
+rem2039_L04	7	k	H	
+rem2039_L04	8	r	H	
+rem2039_L04	9	t	H	
+rem2039_L04	10	s	H	
+rem2039_L04	11	p	H	
+rem2039_L04	12	l	H	
+rem2039_L04	13	w	H	
+rem2039_L04	14	a	H	
+rem2039_L04	15	e	H	
+rem2039_L04	16	g	H	
+rem2039_L04	17	[pi]	M	A:[pi] B:r
+rem2039_L04	18	3	M	A:3 B:[lambda]
+rem2039_L04	19	a	H	
+rem2039_L04	20	[u-dots]	M	A:[u-dots] B:i
+rem2039_L04	21	j	M	A:- B:j
+rem2039_L04	22	d	H	
+rem2039_L04	23	r	H	
+rem2039_L04	24	[w-tilde]	M	A:[w-tilde] B:w
+rem2039_L04	25	o	H	
+rem2039_L04	26	r	H	
+rem2039_L04	27	[f-loop]	H	
+rem2039_L04	28	l	H	
+rem2039_L04	29	a	H	
+rem2039_L04	30	m	H	
+rem2039_L04	31	o	H	
+rem2039_L04	32	[lambda]	M	A:[lambda] B:[delta]
+rem2039_L04	33	t	H	
+rem2039_L04	34	d	H	
+rem2039_L04	35	t	H	
+rem2039_L04	36	r	H	
+rem2039_L04	37	d	H	
+rem2039_L04	38	F	H	
+rem2039_L04	39	8	H	
+rem2039_L04	40	[psi]	H	
+rem2039_L04	41	5	H	
+rem2039_L04	42	z	H	
+rem2039_L04	43	e	H	
+rem2039_L04	44	m	H	
+rem2039_L04	45	[lambda]	H	
+rem2039_L04	46	m	H	
+rem2039_L04	47	t	M	A:t B:l
+rem2039_L04	48	r	H	
+rem2039_L04	49	o	M	A:o B:[thorn]
+rem2039_L04	50	s	H	
+rem2039_L04	51	a	H	
+rem2039_L04	52	g	H	
+rem2039_L04	53	o	M	A:o B:b
+rem2039_L04	54	[h-loop]	H	
+rem2039_L04	55	[psi]	H	
+rem2039_L04	56	a	H	
+rem2039_L04	57	[f-loop]	H	
+rem2039_L04	58	o	H	
+rem2039_L04	59	m	H	
+rem2039_L04	60	t	M	A:t B:-
+rem2039_L04	61	l	H	
+rem2039_L04	62	&	H	
+rem2039_L04	63	6	H	
+rem2039_L04	64	e	H	
+rem2039_L04	65	m	H	
+rem2039_L04	66	r	H	
+rem2039_L04	67	7	M	A:7 B:2
+rem2039_L04	68	r	H	
+rem2039_L04	69	s	H	
+rem2039_L04	70	t	H	
+rem2039_L04	71	y	H	
+rem2039_L05	0	m	H	
+rem2039_L05	1	[h-loop]	H	
+rem2039_L05	2	[lambda]	H	
+rem2039_L05	3	y	H	
+rem2039_L05	4	o	H	
+rem2039_L05	5	r	H	
+rem2039_L05	6	a	H	
+rem2039_L05	7	g	H	
+rem2039_L05	8	o	H	
+rem2039_L05	9	[psi]	H	
+rem2039_L05	10	a	H	
+rem2039_L05	11	[f-loop]	H	
+rem2039_L05	12	o	H	
+rem2039_L05	13	m	H	
+rem2039_L05	14	l	H	
+rem2039_L05	15	d	H	
+rem2039_L05	16	t	H	
+rem2039_L05	17	m	H	
+rem2039_L05	18	o	H	
+rem2039_L05	19	r	H	
+rem2039_L05	20	[f-loop]	H	
+rem2039_L05	21	[h-loop]	H	
+rem2039_L05	22	x	H	
+rem2039_L05	23	8	H	
+rem2039_L05	24	o	H	
+rem2039_L05	25	[psi]	H	
+rem2039_L05	26	w	H	
+rem2039_L05	27	o	H	
+rem2039_L05	28	m	H	
+rem2039_L05	29	l	H	
+rem2039_L05	30	g	H	
+rem2039_L05	31	[lambda]	M	A:[lambda] B:[delta]
+rem2039_L05	32	t	H	
+rem2039_L05	33	6	H	
+rem2039_L05	34	r	H	
+rem2039_L05	35	k	H	
+rem2039_L05	36	[lambda]	H	
+rem2039_L05	37	7	H	
+rem2039_L05	38	e	H	
+rem2039_L05	39	r	H	
+rem2039_L05	40	r	M	A:- B:r
+rem2039_L05	41	[lambda]	H	
+rem2039_L05	42	&	H	
+rem2039_L05	43	[thorn]	M	A:[thorn] B:[d-loop]
+rem2039_L05	44	l	M	A:l B:t
+rem2039_L05	45	a	H	
+rem2039_L05	46	x	H	
+rem2039_L05	47	o	H	
+rem2039_L05	48	[f-loop]	H	
+rem2039_L05	49	l	M	A:- B:l
+rem2039_L05	50	[h-loop]	H	
+rem2039_L05	51	m	H	
+rem2039_L05	52	y	H	
+rem2039_L05	53	[lambda]	H	
+rem2039_L05	54	8	H	
+rem2039_L05	55	s	H	
+rem2039_L05	56	9	M	A:9 B:g
+rem2039_L05	57	7	H	
+rem2039_L05	58	6	H	
+rem2039_L05	59	g	H	
+rem2039_L05	60	o	H	
+rem2039_L05	61	s	H	
+rem2039_L05	62	[h-loop]	H	
+rem2039_L05	63	g	H	
+rem2039_L05	64	r	H	
+rem2039_L05	65	t	H	
+rem2039_L05	66	7	H	
+rem2039_L05	67	[lambda]	H	
+rem2039_L05	68	m	H	
+rem2039_L05	69	r	H	
+rem2039_L06	0	S	H	
+rem2039_L06	1	[h-loop]	H	
+rem2039_L06	2	[f-loop]	H	
+rem2039_L06	3	k	H	
+rem2039_L06	4	3	H	
+rem2039_L06	5	r	H	

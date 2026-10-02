@@ -1,0 +1,9 @@
+crop	glyphs	conf	note
+tit2039L1	S p e x l / s [delta] h / s f [ezh-dot] r / F <,>	M	4th glyph of word1 x or c with dot; l tall looped; word3 starts with long-s-like then f-like; F plain capital
+tit2039L3	3 1 q c [f-loop] [psi] [delta] r s a / w a o / 6 [f-loop] q l [delta] [lambda] s e o [d-loop] h	M	q/g unsure; final h with looped ascender preceded by o and d-like glyph
+rem2039_L01	[thorn] 3 [u-dots] [lambda] c x 5 7	M	first glyph large with curl below; 3 may be ezh; 5 and 7 plain digits at end
+rem2039_L02	y o , 5 a h / w a [p-descender] x r [lambda] d o t r h / g o s [hash] f [lambda] r a o w / g d r o y b s l , / w m o r y [lambda] s a q m i y s s l , / [psi] t h / r r s a o q s l w f y s q [delta] m o r 6	L	small hand, many glyphs unresolvable at this resolution; comma-like marks inside words uncertain
+rem2039_L03	[s-loop] a l r h / h m g [s-loop] / g s s o [hash] / f r [lambda] a s r o y 7 / d a r [lambda] r o t s l <.>	L	low resolution; letter values guessed from shape
+rem2039_L04	y s / x a l g o k r t / s p l / w a / e g r [lambda] a / i j d r / w o r f l a m o / [delta] t , d t / r d / F / 8 [psi] / 5 z e m [lambda] / m l r / [thorn] s a g b h / [psi] a [f-loop] o m l / & 6 e m r 2 r s t y	L	line long; several glyphs unresolvable; & drawn as ampersand-like mark
+rem2039_L05	m h [lambda] / y o r a g o / [psi] a [f-loop] o m l <.> / d t / m o r f h x 8 o / [psi] w o m l g [delta] t / 6 / r k [lambda] 7 <.> / e r r [lambda] <,> / & / [d-loop] t a x o f l h m y [lambda] 8 s g 7 / 6 g o s h g r t / 7 <.> [lambda] m r	L	low confidence on word breaks and mid-line glyphs
+rem2039_L06	S h <.> / [f-loop] k 3 r <.>	L	short last line; first glyph S-like; f-like second word start
