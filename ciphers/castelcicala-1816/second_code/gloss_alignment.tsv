@@ -1,0 +1,10 @@
+# record	page	gloss_as_transcribed	anchor_in_transcript	proposed_alignment	recurrence_in_R9586+R9588 (orig order vs 1000 within-record shuffles, gloss_align_out.txt)	grade	note
+R9586	p1	pure che ...	over 688 224 482	688=pu|pure 224=re|che 482=che|?	688 x1, 482 x2; trigram x1	- (conflict/doubtful)	224 conflicts: 'che' here (word reading) vs 'non' in the ba-li line; anchor is Bourdeau's placement on the 1600px copy
+R9586	p2	se dell ... cam bia ... an ... cut ... ver	over 1127 763 287 207 188 125 339 977	1127=se 763=dell 207=cam 188=bia; 287/125/339/977 unplaced	207 188 x3 (R9586 x2, R9588 x1) vs shuffle mean 0.02, p95 0	M for 1127, 763, 207, 188	strongest anchor: a two-group syllabic word 'cam bia' recurring as a unit in both records; one gloss context only
+R9586	p2	ba li , che non effett in o la sol tan za	whole next line (12 groups, 11 gloss tokens)	positional: 167=ba 493=li 1043=che 224=non; tail 801 863 1016=sol tan za	1043 224 x6 vs 0.70/p95 2; 801/863/1016 each x1	M for 1043, 801, 863, 1016 only	'sol tan za' (=sostanza) over the last 3 groups is the cleanest positional fit; the middle (581 326 456 596 1698 = effett in o la) has one group too many
+R9586	p2	tta con ... si ... ri ... chi ... ed ella	whole next line (15 groups)	not placeable from the transcript (gaps unmarked)	-	-	needs the image
+R9586	p2	ei di san	over 294 771 888	294=ei 771=di 888=san	771 888 x1; 294 is the 2nd most frequent group (27)	- (conflict/doubtful)	'ei' for a group at 2.8% of tokens is doubtful; one context
+R9588	p1	... e ... al ... al(?)	over the last groups of the line above	not placeable	-	-	needs the image
+R9588	p1	quanto ... si ... ir ... ...	over the last groups of the line above	not placeable	-	-	needs the image
+R9588	p1	im... pe...	over 450 676	450=im 676=pe	450 676 x1; 676 596 x3 vs 0.07/p95 1	M	676 begins a recurring two-group unit (676 596), consistent with a syllable 'pe-'
+R9588	p2	tal ... in che stato	under line 6 / over line 7	positional on line 7: 101=in 1043=che 319 784=sta to (or 319=stato)	1043 319 x8 vs 0.48/p95 2	M for 1043 only	agrees with the ba-li line on 1043=che (two lines, two records' pages): the one cross-line agreement found
