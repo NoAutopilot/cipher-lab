@@ -2117,18 +2117,122 @@ first / new not used. **Files:** `passes/h42_build.py`, `passes/h42_prompt_head.
 `passes/h42_score.json`, `reading_words.tsv`. **Cost:** 2 Opus text calls (about 186k tokens) plus this runner's turns --
 recorded as 2.0 USD (the est). No requests, no vision calls, no credentials, no AskUserQuestion, no other target touched.
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: 193 of 235 letters of the 2017 Cipherbrain reading matched by the v6 decode with the two passages joined (0.821, 42 edits; recomputed from verify2/compare_2017.tsv at 01:01 UTC on 2 Oct 2026 by the clock). Read line by line the figure is 0.809 (AUDIT.md section 4), lower because 'Bre-/ssa' and 'Madama / Margerita' are split across lines differently in the two texts. 229 of 259 tokens carry H, which records where the value came from, not whether it is right (reading.txt header; AUDIT.md section 5). The plaintext is N0 (Cipherbrain, 24 Mar 2017).
-- p1 lines 1, 2 and 5, plus the scattered faults in p1 3, 4, 6, 7 and 8 and in the p2 block ('lgdmit' for 'li dite', 'teatal?trch' for 'che ad altri', 'pala' for 'papa', 'lthe' for 'etche', 'smmos' for 'si mos[t]ra'; H41's J-stem in p1 line 1 boxes 18 and 21, which no key cell matches). p2 line 2's 0.62 is mostly a line-split artefact: joined, the p2 block agrees 0.867 (6 edits in 45). - blocker: not-attempted; H41 re-read the same boxes once with the key cells as the alphabet and failed its registered bigram test by 0.044 (NOTES H41). H43's re-segmentation has been on hold since 14:25 UTC on 28 Sept (CAMPAIGN.md). compare_2017.py scores only edit distance per line. Nobody has used the 2017 text as known plaintext sign by sign; next: extend verify2/compare_2017.py into a sign-level alignment of passes/ciphertext_v6.txt against the joined, normalised 2017 text that labels each disagreement as a segmentation or a map fault, then run one Opus pass pair plus one reconciliation on the crops of the disagreeing signs only (about 42 positions, re-segmentation allowed), then regrade, using C only with the note that the 2017 text is a modern reading, ~$8
-- p2 line 2 signs 17-18 (atlas EIGHT, EIGHT_R; v6 reads 'sui oreri', the 2017 text 'sui ??eri') - blocker: not-attempted; the 2017 commenters could not find these two signs in Domnina's key (verify2/cipherbrain_2017-03-24_tommaso.txt, #11 and #12). One check that could narrow them has not been run: H36, the enciphered letter of 2 July 1520 with Leonardo's period decipherment, which is already on disk and has been on hold since 28 Sept; next: one vision call comparing the two shapes with sources/domnina-2015-2016/p10_2015_fig2_letter_2jul1520.jpg and p27_2016_plate_key_letter_decipherment.jpg; if they occur there, Leonardo's decipherment gives their value at grade H, ~$3
-- p1 line 6, the word after 'arriuo' (v6 'caroneo', with TWO_NULLA signs at positions 10 and 14; the 2017 text has 'caro nelo(?)' and 'CARZONELO (?)') - blocker: not-attempted; the letters agree 0.87, but nobody has tested whether the two TWO_NULLA signs are really nulls at this point (AUDIT.md section 4); next: add these two crops to the first gap's pass pair and name each one against Domnina's null cells and letter cells, ~$1
+## GAPS-spinelli-beinecke-c1515 (2 Oct 2026, account-4) -- sign-level alignment of v6 against the joined 2017 reading
 
+Worker GAPS-spinelli-beinecke-c1515 (account-4, Fable 5.1), 01:57-02:1x UTC 2 Oct 2026 by the clock, brief
+`.claude/briefs/runs/2026-10-02-account4-gaps-step.md`. The Verdict line's cheapest step: every one of the 259 v6 signs
+(`passes/ciphertext_v6.txt` = `ciphertext_v6.tsv`) aligned to the plain letter of the 2017 Cipherbrain reading it sits over
+(Norbert #7 for p.1, Thomas #10 for p.2, `verify2/cipherbrain_2017-03-24_tommaso.txt`; the N0 plaintext, a modern reading, so
+grade C with that note, never H). CPU only: 0 vision calls, 0 requests for this step. The instrument is the shared known-plaintext
+aligner `tools/interlinear_align.py` (its `run_align`/`token_rows` in `--code-prefix` mode, `--null-cost 0 --wildcard ?`, prior
+seeded from `key.tsv`), driven by `verify2/align_2017.py`, which also writes the inputs so the CLI form in its docstring reproduces
+the run. One convention on both sides (rule 3, PX-BRODEC): u/v, i/j folded; [bracketed] editorial letters and (?) dropped as in
+`verify2/compare_2017.py`; 'que' and 'rr' pre-folded to one marker each (the aligner gives a sign 0 or 1 characters); each passage
+one unbroken segment so word boundaries cannot pull nulls onto letters; Thomas's '??' kept as two unread positions.
+
+**Numbers** (`verify2/align_2017_summary.json`, `_signs.tsv` one row per sign, `_uncovered.tsv`, `_key.tsv` per code,
+`_align.tsv` the tool's own rows):
+
+| | signs |
+|---|---|
+| letter-bearing signs (key.tsv value a letter) | 222 |
+| of which the aligned 2017 letter equals the key value | **200 (0.901)** |
+| conflict (key letter != 2017 letter) | 13 |
+| letter sign over no letter (an extra or misread sign) | 7 |
+| sign unread by the 2017 text (p2 2 signs 17-18, '??') | 2 |
+| null signs (key.tsv null) over no letter | 20 |
+| null signs over a letter (a null that is really a letter sign, or a dropped sign beside it) | 9 |
+| unkeyed signs (HOOK, PHI, SEVEN, EIGHTBAR, CIRCLE) over a letter / over none | 6 / 2 |
+| 2017 letters no sign covers (a sign the transcription lacks) | 3 |
+
+Control (rule 3): the same alignment, same prior, against the 2017 letters shuffled within each passage, 20 seeds:
+agreement mean 0.316, max 0.360, 0 of 20 at or above the real 0.901. The statistic depends on letter order, so the
+control can fail and did. By key grade: H-graded codes agree 188/203 (0.926), M-graded 12/19 (0.632).
+
+**What the per-sign table says (gap 1, the next re-read's list).** Every line below names the sign by `page line pos` in
+`ciphertext_v6.tsv`; the 2017 letter is the aligner's placement, one DP solution, so a patchy line (p1 1, p1 5, p1 8, p2 2) can
+shift a sign or two -- the per-line strip is in `verify2/align_2017_signs.tsv`.
+- **PHI_T (grade M, value t) reads c in 3 of 4 places** (p1 1 13 'che', p1 4 4 'dinclinatione', p1 5 10 'che') and d once
+  (p1 5 14 'ad', inside the patchy line). The H40 sort put this PHI sub-shape in Domnina's T cell; the 2017 text puts it in a
+  C cell. Candidate key correction: PHI_T = c (C sign 2, TLOOP, is in the HOOK/PHI family per the atlas note). Not applied here
+  (rule 7: a key change re-runs `--check`; it is the next step, below).
+- **TWO_NULLA (grade H, null) sits over l in 3 of 4 places** (p1 6 14 'nelo', p1 7 24 'miliore', p1 8 6 'quelo') and over b
+  once (p2 1 19 'gubernatore', the b the v6 decode lacks). The atlas note already said TWOFLAT lumps Nulla sign 3 with L sign 2;
+  the H38 sort labelled all four as the null. Gap 3's question (p1 6 positions 10 and 14) gets its CPU answer: position 10 sits
+  over nothing (a null, consistent with 'caro nelo'), position 14 sits over the l of 'nelo' -- so the word is the 2017 commenters'
+  'caro nelo', with one of the two "nulls" an L. p2 1 19 is a B-sign (PLUS) or a dropped PLUS beside a null; image decides.
+- **THREE (grade M, l) reads p at p1 8 15 ('papa', the v6 'pala')** -- the atlas note foresaw THREE covering L sign 3 and P sign 2;
+  and e at p1 3 22 ('et che', the v6 'lthe': four signs for five letters, SIX taking the c). Both are the lumped-shape problem, a
+  split of THREE by shape is the fix, not a value change.
+- **The doubled-letter cells.** EIGHTBAR at p1 2 17 sits over rr ('arrettare' in Norbert's reading; Thomas #13 proposes cc,
+  'accettare' -- a data conflict between the two 2017 readers, logged, not resolved) and EIGHTBAR_C (H40 'c') at p1 6 3 sits over
+  rr ('arrivo', both readers agree) -- so the EIGHTBAR family reads RR at both places where the text decides it, and the H40 'c'
+  label on the p1 6 sign is the conflict. PHI at p1 2 19 sits over 'tt' with one t uncovered ('arrettare'); HOOK_U_V at p2 2 3 sits
+  over 'ss' with one s uncovered ('bressa'): both consistent with a TT and an SS cell (Domnina's table has doubled-letter cells;
+  the atlas note lists TT under UCURL). Three uncovered 2017 letters in all; the third is the i of 'di costoro' (p1 7, between
+  THETA and LL), a sign the transcription lacks or the writer dropped.
+- **Extra or misread signs**: the two JHOOK_M2 at p1 1 7 and 10 ('li dite' has no m; the v6 'lgdmitm') -- H41's unmatched
+  J-stems; HOOK_M at p1 3 2 ('bernatione', the intruding m); ESS at p1 2 23 and p1 5 22, HOOK_C at p1 5 21 (the v6 'trch' for
+  'tri'); EM at p1 8 24 (one u too many in 'domandava'). OMEGADOT at p1 1 5 sits over the i of 'li' (g elsewhere 3/3);
+  SEVEN_I_M2 at p1 4 16 over the i of 'si' (H40 sorted it m); JHOOK at p1 3 31 over the u of 'piu'; OMEGABAR at p1 8 22 over the
+  d of 'domandava' (a 18/19), which with HOOK_A beside it means the nd of that word has no D-sign in v6.
+- **Nulls over letters** beyond TWO_NULLA: NINE_NULLA p1 1 21 over the second m of 'madama' and FOUR p1 1 23 over the M of
+  'Margerita' (the v6 'madaa' + 'arge-': two M-signs misread as nulls, or the line-end FOUR is the M); SIX p1 3 24 (c), p1 5 11
+  (h), p1 6 1 (the i of 'altri' at the line turn).
+- **p2 2 signs 17-18 (EIGHT, EIGHT_R; gap 2)**: sit exactly over Thomas's '??' -- the alignment confirms the two signs are the
+  two the 2017 readers could not place, and says nothing about their value (v6's 'or' is the key's reading of those two shapes).
+
+**What this does not do.** No reading changes, no key change, no status change: the plaintext is N0 and this is transcription
+quality. The per-code table (`_key.tsv`) is the known-answer check of the H38/H40 shape sorts: 31 codes read the 2017 text
+unanimously; PHI_T, TWO_NULLA, THREE, EIGHTBAR_C, SEVEN_I_M2, JHOOK, and the unsplit HOOK/PHI/SEVEN are where the sorts and the
+2017 text part. Rule 10 wording throughout; nothing here is new, first or unpublished -- the plaintext was published in the
+Cipherbrain thread on 24 Mar 2017.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated GAPS-spinelli-beinecke-c1515, 2 Oct 2026)
+Read so far: 193 of 235 letters of the 2017 Cipherbrain reading matched by the v6 decode with the two passages joined (0.821, 42 edits; recomputed from verify2/compare_2017.tsv at 01:01 UTC on 2 Oct 2026 by the clock). Read line by line the figure is 0.809 (AUDIT.md section 4), lower because 'Bre-/ssa' and 'Madama / Margerita' are split across lines differently in the two texts. At sign level (GAPS step, 2 Oct 2026): 200 of 222 letter-bearing signs sit over their key letter in the 2017 text (0.901; shuffled-plaintext control mean 0.316, max 0.360, 0/20). 229 of 259 tokens carry H, which records where the value came from, not whether it is right (reading.txt header; AUDIT.md section 5). The plaintext is N0 (Cipherbrain, 24 Mar 2017).
+- the 39 signs the sign-level alignment lists as not agreeing with the 2017 text (verify2/align_2017_signs.tsv, class != agree/null-empty: 13 conflicts, 7 letter signs over no letter, 9 nulls over a letter, 8 unkeyed, 2 over '??'), plus the 3 uncovered 2017 letters (verify2/align_2017_uncovered.tsv) -- the GAPS step of 2 Oct 2026 replaced the line-level list (p1 lines 1, 2, 5 and the scattered faults) with this per-sign list; the three systematic ones are PHI_T reading c 3/4, TWO_NULLA reading l 3/4, THREE reading p and e where it is lumped - blocker: not-attempted; the per-sign list exists but no pass has looked at those 39 crops yet, and H41's whole-line re-read of the same boxes failed its registered bigram test once (NOTES H41) so the re-read must be per sign, not per line; next: a two-pass blind re-read of only these 39 sign crops (tools/iiif_lines.py --image on the p1/p2 images, one crop set per subagent call) against Domnina's cells, with PHI_T = c, TWO_NULLA = l and THREE = l|p as the hypotheses to confirm or refute, then decode_key.py --check and compare_2017.py re-scored, ~$4 (2 passes x 39 crops + 1 reconciliation at the README per-pass rate)
+- p2 line 2 signs 17-18 (atlas EIGHT, EIGHT_R; v6 reads 'sui oreri', the 2017 text 'sui ??eri') - blocker: not-attempted; the 2017 commenters could not find these two signs in Domnina's key (verify2/cipherbrain_2017-03-24_tommaso.txt, #11 and #12), and the GAPS alignment of 2 Oct 2026 confirms the two v6 signs sit exactly over the '??' (class over-unread-??) without saying what they are. One check that could narrow them has not been run: H36, the enciphered letter of 2 July 1520 with Leonardo's period decipherment, which is already on disk and has been on hold since 28 Sept; next: one vision call comparing the two shapes with sources/domnina-2015-2016/p10_2015_fig2_letter_2jul1520.jpg and p27_2016_plate_key_letter_decipherment.jpg; ~$1
+- p1 line 6, the word after 'arriuo' (v6 'caroneo', with TWO_NULLA signs at positions 10 and 14; the 2017 text has 'caro nelo(?)' and 'CARZONELO (?)') - blocker: not-attempted; the GAPS alignment of 2 Oct 2026 gives the CPU half of the answer -- position 10 sits over no letter (a null, as 'caro nelo' needs) and position 14 sits over the l of 'nelo', the same l-for-null pattern TWO_NULLA shows at p1 7 24 and p1 8 6 -- but nobody has looked at the two crops; next: the two crops ride the first gap's pass pair (they are two of its 39), named against Domnina's null cells and L sign 2, ~$0 extra
 ## Escalation (1 Oct 2026)
 - [ ] siblings: Opened and found plain: the other three 1519 Barcelona letters in Filza 163 (H18, H19, H19b) and the 86-letter Tommaso bundle of 1492-1509 (H20 to H20c). The enciphered folders b.126 f.2560-65 and 2571-87 are not online; ASKS 87, which asked for them, was withdrawn on 28 Sept at N0. Not yet used: the one enciphered sibling on disk, the 2 July 1520 letter with Leonardo's decipherment (H36, on hold). DECODE has never been searched for Spinelli records (no mention in NOTES). Planned: H36's eye check (gap 2), and a login-free tools/decode_list.py grep for Spinelli.
 - [x] clear-pages: H33 and H33b to H33e read the leaf's own plain text, including the confessor/Medici passage and 'il gobernatore di Brescia' (corpus/letter_plain_context_agreed_v2.tsv). H34's nine context cribs placed at chance on v4, a negative with a control. p.[3] is an address leaf (H1). No clear copy of this leaf exists. A period decipherment exists only for the 1520 letter, which is covered under siblings.
 - [x] known-keys: Tomokiyo's spinelly1515 table failed its control (83 of 200 shuffled keys at or above it, H4). Domnina's 2015 and 2016 key was matched blind in H35, H38 and H40 (0 of 200 shuffled keys reached it on unigram, bigram or phrase), and the verifier re-derived it blind with 22 of 23 codes the same (AUDIT.md section 2). KEY-OFFICES.tsv row 66 still describes Domnina's table as unchecked; that is stale, and correcting it is the orchestrator's job.
 - [x] print: Searched Tomokiyo's henryvii.htm, Bourdeau's catalogue ('read in part'), the Domnina 2015/2016 OCR, Ryabov 2025 and Kaulfersch 2025 (H23, H24), and ran print_check.py on 7 phrases (AUDIT.md section 1). The Cipherbrain post of 24 Mar 2017 (comments #7 to #13) reads both passages with the same key, so the leaf is N0.
-- [ ] key-rebuild: The homophonic annealer (tools/family_run.py --family homophonic) is retired on this letter under rule 3's third-attempt clause: its control stayed below the 0.6 gate at 0.120, 0.066, 0.197 and 0.281 (HYPOTHESES.md). It is not to be run a fifth time. Not yet tried, and a different instrument: correcting the map and the segmentation sign by sign, using the 2017 text as known plaintext graded C with the note that it is a modern reading (gap 1).
-- [ ] image-check: Opus pass pairs agree on 93.1% of signs (H29b, H29c, H30). H41's whole-line re-read failed its registered test once and is not to be repeated on the same boxes. Planned: a targeted re-read, with re-segmentation allowed, of only the signs where v6 disagrees with the 2017 text, plus p2 line 2 signs 17-18 and the two TWO_NULLA signs on p1 line 6 (gaps 1-3).
+- [ ] key-rebuild: The homophonic annealer (tools/family_run.py --family homophonic) is retired on this letter under rule 3's third-attempt clause: its control stayed below the 0.6 gate at 0.120, 0.066, 0.197 and 0.281 (HYPOTHESES.md). It is not to be run a fifth time. The different instrument, the 2017 text as known plaintext graded C (a modern reading), has now been applied at sign level (GAPS step, 2 Oct 2026, tools/interlinear_align.py: 200/222 signs agree, control 0.316): the map corrections it proposes (PHI_T = c, TWO_NULLA = l, THREE split) wait on the image check before key.tsv changes (rule 7).
+- [ ] image-check: Opus pass pairs agree on 93.1% of signs (H29b, H29c, H30). H41's whole-line re-read failed its registered test once and is not to be repeated on the same boxes. The sign-level alignment (GAPS step, 2 Oct 2026, verify2/align_2017_signs.tsv) now names the 39 signs where v6 and the 2017 text part, with three systematic candidates (PHI_T = c, TWO_NULLA = l, THREE lumping l and p). Planned: a two-pass blind re-read of only those 39 crops, plus p2 line 2 signs 17-18 and the two TWO_NULLA signs on p1 line 6, which are among them (gaps 1-3).
 - [ ] retry: Planned after the image check: rerun tools/decode_key.py --check with the corrected codes, regrade, and re-score both compare_2017 (joined and per line) and the it16 judge.
-Verdict: keep going: 3 internal gaps; cheapest next: a sign-level alignment of passes/ciphertext_v6.txt against the joined 2017 reading (CPU only), ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: one vision call comparing p2 2 signs 17-18 with the 2 July 1520 letter and its decipherment (gap 2, H36 material on disk), ~$1; then the 39-crop two-pass re-read of gap 1 with PHI_T = c, TWO_NULLA = l and THREE = l|p as the hypotheses, ~$4
+
+## Web and blog check (GAPS-spinelli-beinecke-c1515, 2 Oct 2026)
+
+Run 2 Oct 2026, 01:5x-02:0x UTC by the clock, before the step above, because `tools/intake_gate_check.py` exited 1 on this folder for
+the one reason the 28 Sept 2026 CHECK-SOLVED-WEB rule names (no logged open-web and blog comment-thread check) -- this is the target
+that rule was written from, and its hit is already in AUDIT.md section 1 (N0). Queries (the search tool, 8 queries; 1 page fetch
+on scienceblogs.de; 0 requests to the other blogs, the Cryptiana snapshot grepped on disk):
+- (a) "Tommaso Spinelli" Leonardo Spinelli Barcelona 1519 cipher letter -> hit 1: Cipherbrain, 24 Mar 2017,
+  https://scienceblogs.de/klausis-krypto-kolumne/2017/03/24/who-can-solve-this-encrypted-text-from-the-16th-century/ (the known
+  thread); the rest ResearchGate/PSU Press items on the 15th-century banker Tommaso Spinelli, CSP Venice vol. 3 preface, Wikipedia.
+- (a) "GEN MSS 109" Spinelli cipher -> Domnina's academia.edu page (lists "Ciphers in early Tudor diplomacy" with its corrected
+  nomenclator, the 2015/2016 papers already on disk), the Yale EAD PDF 11076 (the GEN MSS 109 finding aid), no new reading.
+- (a) "gubernatione di spagnia" OR "gubernation d'ispagnia" Spinelli -> the same Cipherbrain thread first; nothing else about the letter.
+- (a) Beinecke Spinelli family papers encrypted letter Tommaso Barcelona Leonardo di Guasparri -> Yale vufind records of sibling
+  letters (Record/3811284, Brussels 19 Apr 1513 -- H18-H20's clear siblings), the Spinelli Archive at WCSU, nothing about a reading.
+- (b) site:scienceblogs.de/klausis-krypto-kolumne Spinelli Tommaso -> the 24 Mar 2017 post only (and the 2016 Ranzo post its #14 links).
+- (b) site:cryptiana.blogspot.com Spinelli -> no result from that blog; on disk, `sources/cryptiana/web/henryvii.htm` and
+  `spanish3.htm` carry Tomokiyo's Spinelly paragraphs and the one phrase "la gubernation d'ispagnia" (INTAKE-SPINELLI, 27 Sept),
+  no transcription or reading of this leaf.
+- (b) site:ciphermysteries.com Spinelli Tommaso Beinecke -> Voynich pages only, nothing on this letter.
+- model-solve check: Spinelli Tommaso cipher 1519 Beinecke solved "Claude" OR "GPT" OR "ChatGPT" -> no announcement about this
+  letter; Bourdeau's catalogue entry for the 1517 Spinelly-to-Henry VIII letter (a different item) is the only Spinelly hit.
+- (c) the one plausible hit opened and its comment thread re-read live (WebFetch, 1 request): 17 comments, the last on 29 Mar 2017,
+  identical to the snapshot `verify2/cipherbrain_2017-03-24_tommaso.txt` of 28 Sept 2026 -- no comment added since. The hit carries
+  the plaintext of both passages: Norbert #7, "et li dite che madama / Marg[h]erita non vole arrettare la gu- / bernatione di
+  Spagnia et che più / d'inclinatione si mos[t]ra al Conte / Palatino che ad altri. / Arrivo caro nelo(?) et trovo la / resolutione
+  di costoro mi[g]liore / di quelo el Papa domandava." and Thomas #10, "SE E BISOGNIO EL GUBERNATORE DI BRESSA ANDARAI SUI ??ERI".
+Result: the decipherment located by these queries on 2 Oct 2026 is the one AUDIT.md already records (Cipherbrain, 24 Mar 2017,
+comments #7-#13, with Domnina's 2016 key); no other decipherment or plaintext of this item was located by these queries on 2 Oct
+2026 (a search result, rule 10). Status word: the parent's prompt for this job names the target `partial` with the N0 known, the
+28 Sept orchestrator line (ROOM.md 15:04) already closed the reading question at N0, and the 1 Oct finish-or-blocker pass kept
+`partial` for the transcription gaps above -- so the status word is left as the orchestrator set it; by the letter of
+`.claude/briefs/runs/2026-10-01-account4-webcheck.md` a thread carrying the plaintext reads `found-solved`, and that choice is
+flagged to the orchestrator in the ROOM.md done line rather than made here. Any later reading of this leaf is N0.

@@ -1,0 +1,260 @@
+cipher_line	k	raw	kind	value	repair	chunk	status
+p1	0	@FOUR	code	FOUR			null-or-unaligned
+p1	1	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	2	@HOOK_T	code	HOOK_T		t	agrees
+p1	3	@THREE	code	THREE		l	agrees
+p1	4	@OMEGADOT	code	OMEGADOT		i	conflict:g
+p1	5	@THETA	code	THETA		d	agrees
+p1	6	@JHOOK_M2	code	JHOOK_M2			null-or-unaligned
+p1	7	@SEVEN_I	code	SEVEN_I		i	agrees
+p1	8	@HOOK_T3	code	HOOK_T3		t	agrees
+p1	9	@JHOOK_M2	code	JHOOK_M2			null-or-unaligned
+p1	10	@NINE_E	code	NINE_E		e	agrees
+p1	11	@NINE_NULLA	code	NINE_NULLA			null-or-unaligned
+p1	12	@PHI_T	code	PHI_T		c	agrees
+p1	13	@ESS	code	ESS		h	agrees
+p1	14	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	15	@HOOK_M	code	HOOK_M		m	agrees
+p1	16	@HOOK_A	code	HOOK_A		a	agrees
+p1	17	@PI	code	PI		d	agrees
+p1	18	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	19	@SIX	code	SIX			null-or-unaligned
+p1	20	@NINE_NULLA	code	NINE_NULLA		m	single
+p1	21	@HOOK_A	code	HOOK_A		a	agrees
+p1	22	@FOUR	code	FOUR		m	single
+p1	23	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	24	@XCURL	code	XCURL		r	agrees
+p1	25	@OMEGADOT	code	OMEGADOT		g	agrees
+p1	26	@NINE_E	code	NINE_E		e	agrees
+p1	27	@HOOK	code	HOOK		r	single
+p1	28	@PHI_I	code	PHI_I		i	agrees
+p1	29	@HOOK_T	code	HOOK_T		t	agrees
+p1	30	@HOOK_A	code	HOOK_A		a	agrees
+p1	31	@HCURL	code	HCURL		n	agrees
+p1	32	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	33	@DIAMOND	code	DIAMOND		n	agrees
+p1	34	@EM	code	EM		u	agrees
+p1	35	@TWO_O	code	TWO_O		o	agrees
+p1	36	@THREE	code	THREE		l	agrees
+p1	37	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	38	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	39	@EIGHTBAR	code	EIGHTBAR		w	single
+p1	40	@NINE_E	code	NINE_E		e	agrees
+p1	41	@PHI	code	PHI		t	single
+p1	42	@HOOK_A	code	HOOK_A		a	agrees
+p1	43	@XCURL	code	XCURL		r	agrees
+p1	44	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	45	@ESS	code	ESS			null-or-unaligned
+p1	46	@THREE	code	THREE		l	agrees
+p1	47	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	48	@PHI_G	code	PHI_G		g	agrees
+p1	49	@HOOK_U_V	code	HOOK_U_V		u	agrees
+p1	50	@FOUR	code	FOUR			null-or-unaligned
+p1	51	@PLUS	code	PLUS		b	agrees
+p1	52	@HOOK_M	code	HOOK_M			null-or-unaligned
+p1	53	@NINE_E	code	NINE_E		e	agrees
+p1	54	@EIGHT_R	code	EIGHT_R		r	agrees
+p1	55	@HCURL	code	HCURL		n	agrees
+p1	56	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	57	@HOOK_T	code	HOOK_T		t	agrees
+p1	58	@SEVEN	code	SEVEN		i	agrees
+p1	59	@TWO_O	code	TWO_O		o	agrees
+p1	60	@HCURL	code	HCURL		n	agrees
+p1	61	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	62	@THETA	code	THETA		d	agrees
+p1	63	@PHI_I	code	PHI_I		i	agrees
+p1	64	@ENN	code	ENN		s	agrees
+p1	65	@TWO_P	code	TWO_P		p	single
+p1	66	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	67	@OMEGADOT	code	OMEGADOT		g	agrees
+p1	68	@DIAMOND	code	DIAMOND		n	agrees
+p1	69	@SEVEN_I	code	SEVEN_I		i	agrees
+p1	70	@HOOK_A	code	HOOK_A		a	agrees
+p1	71	@THREE	code	THREE		e	conflict:l
+p1	72	@HOOK_T	code	HOOK_T		t	agrees
+p1	73	@SIX	code	SIX		c	single
+p1	74	@ESS	code	ESS		h	agrees
+p1	75	@NINE_E	code	NINE_E		e	agrees
+p1	76	@FOUR	code	FOUR			null-or-unaligned
+p1	77	@TEE_P1	code	TEE_P1		p	agrees
+p1	78	@SEVEN_I	code	SEVEN_I		i	agrees
+p1	79	@JHOOK	code	JHOOK		u	single
+p1	80	@PI	code	PI		d	agrees
+p1	81	@PHI_I	code	PHI_I		i	agrees
+p1	82	@HCURL	code	HCURL		n	agrees
+p1	83	@PHI_T	code	PHI_T		c	agrees
+p1	84	@THREE	code	THREE		l	agrees
+p1	85	@SEVEN_I	code	SEVEN_I		i	agrees
+p1	86	@DIAMOND	code	DIAMOND		n	agrees
+p1	87	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	88	@FOUR	code	FOUR			null-or-unaligned
+p1	89	@HOOK_T3	code	HOOK_T3		t	agrees
+p1	90	@PHI_I	code	PHI_I		i	agrees
+p1	91	@TWO_O	code	TWO_O		o	agrees
+p1	92	@HCURL	code	HCURL		n	agrees
+p1	93	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	94	@TWO_S2	code	TWO_S2		s	agrees
+p1	95	@SEVEN_I_M2	code	SEVEN_I_M2		i	single
+p1	96	@NINE_M2	code	NINE_M2		m	single
+p1	97	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	98	@ENN	code	ENN		s	agrees
+p1	99	@XCURL	code	XCURL		r	agrees
+p1	100	@HOOK_A	code	HOOK_A		a	agrees
+p1	101	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	102	@THREE	code	THREE		l	agrees
+p1	103	@LL	code	LL		c	agrees
+p1	104	@TWO_O	code	TWO_O		o	agrees
+p1	105	@DIAMOND	code	DIAMOND		n	agrees
+p1	106	@HOOK	code	HOOK		t	conflict:r
+p1	107	@NINE_E	code	NINE_E		e	agrees
+p1	108	@SIX	code	SIX			null-or-unaligned
+p1	109	@TEE_P1	code	TEE_P1		p	agrees
+p1	110	@HOOK_A	code	HOOK_A		a	agrees
+p1	111	@THREE	code	THREE		l	agrees
+p1	112	@SIX	code	SIX			null-or-unaligned
+p1	113	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	114	@HOOK_T	code	HOOK_T		t	agrees
+p1	115	@SEVEN	code	SEVEN		i	agrees
+p1	116	@DIAMOND	code	DIAMOND		n	agrees
+p1	117	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	118	@PHI_T	code	PHI_T		c	agrees
+p1	119	@SIX	code	SIX		h	conflict:c
+p1	120	@NINE_E	code	NINE_E		e	agrees
+p1	121	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	122	@PHI_T	code	PHI_T		d	conflict:c
+p1	123	@HOOK_A	code	HOOK_A		a	agrees
+p1	124	@THREE	code	THREE		l	agrees
+p1	125	@SIX	code	SIX			null-or-unaligned
+p1	126	@HOOK	code	HOOK			null-or-unaligned
+p1	127	@HOOK_T1	code	HOOK_T1		t	single
+p1	128	@EIGHT_R	code	EIGHT_R		r	agrees
+p1	129	@HOOK_C	code	HOOK_C			null-or-unaligned
+p1	130	@ESS	code	ESS			null-or-unaligned
+p1	131	@SIX	code	SIX			null-or-unaligned
+p1	132	@SIX	code	SIX		i	conflict:c
+p1	133	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	134	@EIGHTBAR_C	code	EIGHTBAR_C		w	single
+p1	135	@SEVEN_I	code	SEVEN_I		i	agrees
+p1	136	@EM	code	EM		u	agrees
+p1	137	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	138	@LL	code	LL		c	agrees
+p1	139	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	140	@XCURL	code	XCURL		r	agrees
+p1	141	@TWO_NULLA	code	TWO_NULLA			null-or-unaligned
+p1	142	@TWO_O	code	TWO_O		o	agrees
+p1	143	@DIAMOND	code	DIAMOND		n	agrees
+p1	144	@NINE_E	code	NINE_E		e	agrees
+p1	145	@TWO_NULLA	code	TWO_NULLA		l	agrees
+p1	146	@TWO_O	code	TWO_O		o	agrees
+p1	147	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	148	@HOOK_T	code	HOOK_T		t	agrees
+p1	149	@HOOK_T3	code	HOOK_T3		t	agrees
+p1	150	@XCURL	code	XCURL		r	agrees
+p1	151	@TWO_O	code	TWO_O		o	agrees
+p1	152	@HOOK_U_V	code	HOOK_U_V		u	agrees
+p1	153	@SIX	code	SIX			null-or-unaligned
+p1	154	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	155	@THREE	code	THREE		l	agrees
+p1	156	@HOOK_A	code	HOOK_A		a	agrees
+p1	157	@SIX	code	SIX			null-or-unaligned
+p1	158	@EIGHT_R	code	EIGHT_R		r	agrees
+p1	159	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	160	@ENN	code	ENN		s	agrees
+p1	161	@TWO_O	code	TWO_O		o	agrees
+p1	162	@THREE	code	THREE		l	agrees
+p1	163	@EM	code	EM		u	agrees
+p1	164	@HOOK_T	code	HOOK_T		t	agrees
+p1	165	@PHI_I	code	PHI_I		i	agrees
+p1	166	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	167	@DIAMOND	code	DIAMOND		n	agrees
+p1	168	@NINE_E	code	NINE_E		e	agrees
+p1	169	@THETA	code	THETA		d	agrees
+p1	170	@LL	code	LL		c	agrees
+p1	171	@TWO_O	code	TWO_O		o	agrees
+p1	172	@ENN	code	ENN		s	agrees
+p1	173	@HOOK_T3	code	HOOK_T3		t	agrees
+p1	174	@TWO_O	code	TWO_O		o	agrees
+p1	175	@XCURL	code	XCURL		r	agrees
+p1	176	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	177	@HOOK_M	code	HOOK_M		m	agrees
+p1	178	@PHI_I	code	PHI_I		i	agrees
+p1	179	@TWO_NULLA	code	TWO_NULLA		l	agrees
+p1	180	@SEVEN_I	code	SEVEN_I		i	agrees
+p1	181	@EIGHT_O	code	EIGHT_O		o	agrees
+p1	182	@XCURL	code	XCURL		r	agrees
+p1	183	@SEVEN_E	code	SEVEN_E		e	agrees
+p1	184	@PI	code	PI		d	agrees
+p1	185	@PHI_I	code	PHI_I		i	agrees
+p1	186	@EPSILON	code	EPSILON		k	single
+p1	187	@CIRCLE	code	CIRCLE			null-or-unaligned
+p1	188	@TWO_NULLA	code	TWO_NULLA		l	agrees
+p1	189	@TWO_O	code	TWO_O		o	agrees
+p1	190	@NINE_E	code	NINE_E		e	agrees
+p1	191	@THREE	code	THREE		l	agrees
+p1	192	@SIX	code	SIX			null-or-unaligned
+p1	193	@TEE_P1	code	TEE_P1		p	agrees
+p1	194	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	195	@THREE	code	THREE		p	conflict:l
+p1	196	@HOOK_A	code	HOOK_A		a	agrees
+p1	197	@THETA	code	THETA		d	agrees
+p1	198	@TWO_O	code	TWO_O		o	agrees
+p1	199	@HOOK_M	code	HOOK_M		m	agrees
+p1	200	@OMEGABAR	code	OMEGABAR		a	agrees
+p1	201	@DIAMOND	code	DIAMOND		n	agrees
+p1	202	@OMEGABAR	code	OMEGABAR		d	conflict:a
+p1	203	@HOOK_A	code	HOOK_A		a	agrees
+p1	204	@EM	code	EM			null-or-unaligned
+p1	205	@EM	code	EM		u	agrees
+p1	206	@FOUR	code	FOUR			null-or-unaligned
+p1	207	@OMEGABAR	code	OMEGABAR		a	agrees
+p2	0	@FOUR	code	FOUR			null-or-unaligned
+p2	1	@ENN	code	ENN		s	agrees
+p2	2	@SEVEN_E	code	SEVEN_E		e	agrees
+p2	3	@SIX	code	SIX			null-or-unaligned
+p2	4	@NINE_E	code	NINE_E		e	agrees
+p2	5	@PLUS	code	PLUS		b	agrees
+p2	6	@PHI_I	code	PHI_I		i	agrees
+p2	7	@ENN	code	ENN		s	agrees
+p2	8	@EIGHT_O	code	EIGHT_O		o	agrees
+p2	9	@OMEGADOT	code	OMEGADOT		g	agrees
+p2	10	@DIAMOND	code	DIAMOND		n	agrees
+p2	11	@SEVEN_I	code	SEVEN_I		i	agrees
+p2	12	@TWO_O	code	TWO_O		o	agrees
+p2	13	@NINE_NULLA	code	NINE_NULLA			null-or-unaligned
+p2	14	@SEVEN_E	code	SEVEN_E		e	agrees
+p2	15	@THREE	code	THREE		l	agrees
+p2	16	@PHI_G	code	PHI_G		g	agrees
+p2	17	@EM	code	EM		u	agrees
+p2	18	@TWO_NULLA	code	TWO_NULLA		b	conflict:l
+p2	19	@NINE_E	code	NINE_E		e	agrees
+p2	20	@XCURL	code	XCURL		r	agrees
+p2	21	@HCURL	code	HCURL		n	agrees
+p2	22	@OMEGABAR	code	OMEGABAR		a	agrees
+p2	23	@HOOK_T	code	HOOK_T		t	agrees
+p2	24	@EIGHT_O	code	EIGHT_O		o	agrees
+p2	25	@HOOK_R	code	HOOK_R		r	single
+p2	26	@NINE_E	code	NINE_E		e	agrees
+p2	27	@THETA	code	THETA		d	agrees
+p2	28	@SEVEN_I	code	SEVEN_I		i	agrees
+p2	29	@PLUS	code	PLUS		b	agrees
+p2	30	@XCURL	code	XCURL		r	agrees
+p2	31	@SEVEN_E	code	SEVEN_E		e	agrees
+p2	32	@HOOK_U_V	code	HOOK_U_V		s	conflict:u
+p2	33	@HOOK_A	code	HOOK_A		a	agrees
+p2	34	@FOUR	code	FOUR			null-or-unaligned
+p2	35	@OMEGABAR	code	OMEGABAR		a	agrees
+p2	36	@DIAMOND	code	DIAMOND		n	agrees
+p2	37	@PI	code	PI		d	agrees
+p2	38	@FOUR	code	FOUR			null-or-unaligned
+p2	39	@HOOK_A	code	HOOK_A		a	agrees
+p2	40	@ESS	code	ESS		r	conflict:h
+p2	41	@OMEGABAR	code	OMEGABAR		a	agrees
+p2	42	@PHI_I	code	PHI_I		i	agrees
+p2	43	@TWO_S2	code	TWO_S2		s	agrees
+p2	44	@EM	code	EM		u	agrees
+p2	45	@SEVEN_I	code	SEVEN_I		i	agrees
+p2	46	@EIGHT	code	EIGHT		?	conflict:
+p2	47	@EIGHT_R	code	EIGHT_R		?	conflict:r
+p2	48	@SEVEN_E	code	SEVEN_E		e	agrees
+p2	49	@XCURL	code	XCURL		r	agrees
+p2	50	@PHI_I	code	PHI_I		i	agrees

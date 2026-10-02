@@ -1,0 +1,92 @@
+{
+ "signs": 259,
+ "letter_bearing_signs": 222,
+ "agree_rate_real": 0.901,
+ "control_shuffled_plain_20": {
+  "mean": 0.316,
+  "max": 0.36,
+  "ge_real": 0
+ },
+ "classes": {
+  "null-empty": 20,
+  "agree": 200,
+  "conflict": 13,
+  "letter-sign-empty": 7,
+  "null-took-letter": 9,
+  "unkeyed-took-letter": 6,
+  "unkeyed-empty": 2,
+  "over-unread-??": 2
+ },
+ "uncovered_plain_letters": 3,
+ "plain_len": {
+  "p1": 186,
+  "p2": 47
+ },
+ "by_line": {
+  "p1 1": {
+   "null-empty": 3,
+   "agree": 14,
+   "conflict": 2,
+   "letter-sign-empty": 2,
+   "null-took-letter": 2
+  },
+  "p1 2": {
+   "agree": 23,
+   "unkeyed-took-letter": 3,
+   "letter-sign-empty": 1,
+   "null-empty": 1
+  },
+  "p1 3": {
+   "agree": 23,
+   "letter-sign-empty": 1,
+   "unkeyed-took-letter": 1,
+   "conflict": 2,
+   "null-took-letter": 1,
+   "null-empty": 1
+  },
+  "p1 4": {
+   "agree": 24,
+   "conflict": 2,
+   "null-empty": 2,
+   "unkeyed-took-letter": 1
+  },
+  "p1 5": {
+   "agree": 13,
+   "null-empty": 3,
+   "unkeyed-took-letter": 1,
+   "conflict": 2,
+   "null-took-letter": 1,
+   "unkeyed-empty": 1,
+   "letter-sign-empty": 2
+  },
+  "p1 6": {
+   "null-took-letter": 2,
+   "agree": 20,
+   "conflict": 1,
+   "null-empty": 3
+  },
+  "p1 7": {
+   "agree": 25,
+   "null-took-letter": 1
+  },
+  "p1 8": {
+   "agree": 17,
+   "unkeyed-empty": 1,
+   "null-took-letter": 1,
+   "null-empty": 2,
+   "conflict": 2,
+   "letter-sign-empty": 1
+  },
+  "p2 1": {
+   "null-empty": 3,
+   "agree": 28,
+   "null-took-letter": 1
+  },
+  "p2 2": {
+   "conflict": 2,
+   "agree": 13,
+   "null-empty": 2,
+   "over-unread-??": 2
+  }
+ }
+}

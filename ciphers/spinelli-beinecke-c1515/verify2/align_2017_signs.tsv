@@ -1,0 +1,260 @@
+page	line	pos	code	key_value	key_grade	aligned_2017	class	plain_index
+p1	1	1	FOUR	null	H		null-empty	0
+p1	1	2	SEVEN_E	e	H	e	agree	0
+p1	1	3	HOOK_T	t	H	t	agree	1
+p1	1	4	THREE	l	M	l	agree	2
+p1	1	5	OMEGADOT	g	H	i	conflict	3
+p1	1	6	THETA	d	H	d	agree	4
+p1	1	7	JHOOK_M2	m	H		letter-sign-empty	5
+p1	1	8	SEVEN_I	i	H	i	agree	5
+p1	1	9	HOOK_T3	t	H	t	agree	6
+p1	1	10	JHOOK_M2	m	H		letter-sign-empty	7
+p1	1	11	NINE_E	e	H	e	agree	7
+p1	1	12	NINE_NULLA	null	H		null-empty	8
+p1	1	13	PHI_T	t	M	c	conflict	8
+p1	1	14	ESS	h	H	h	agree	9
+p1	1	15	SEVEN_E	e	H	e	agree	10
+p1	1	16	HOOK_M	m	H	m	agree	11
+p1	1	17	HOOK_A	a	H	a	agree	12
+p1	1	18	PI	d	H	d	agree	13
+p1	1	19	OMEGABAR	a	H	a	agree	14
+p1	1	20	SIX	null	H		null-empty	15
+p1	1	21	NINE_NULLA	null	H	m	null-took-letter	15
+p1	1	22	HOOK_A	a	H	a	agree	16
+p1	1	23	FOUR	null	H	m	null-took-letter	17
+p1	2	1	OMEGABAR	a	H	a	agree	18
+p1	2	2	XCURL	r	H	r	agree	19
+p1	2	3	OMEGADOT	g	H	g	agree	20
+p1	2	4	NINE_E	e	H	e	agree	21
+p1	2	5	HOOK	?	?	r	unkeyed-took-letter	22
+p1	2	6	PHI_I	i	H	i	agree	23
+p1	2	7	HOOK_T	t	H	t	agree	24
+p1	2	8	HOOK_A	a	H	a	agree	25
+p1	2	9	HCURL	n	H	n	agree	26
+p1	2	10	EIGHT_O	o	H	o	agree	27
+p1	2	11	DIAMOND	n	H	n	agree	28
+p1	2	12	EM	u	H	u	agree	29
+p1	2	13	TWO_O	o	H	o	agree	30
+p1	2	14	THREE	l	M	l	agree	31
+p1	2	15	SEVEN_E	e	H	e	agree	32
+p1	2	16	OMEGABAR	a	H	a	agree	33
+p1	2	17	EIGHTBAR	?	?	w	unkeyed-took-letter	34
+p1	2	18	NINE_E	e	H	e	agree	35
+p1	2	19	PHI	?	?	t	unkeyed-took-letter	37
+p1	2	20	HOOK_A	a	H	a	agree	38
+p1	2	21	XCURL	r	H	r	agree	39
+p1	2	22	SEVEN_E	e	H	e	agree	40
+p1	2	23	ESS	h	H		letter-sign-empty	41
+p1	2	24	THREE	l	M	l	agree	41
+p1	2	25	OMEGABAR	a	H	a	agree	42
+p1	2	26	PHI_G	g	H	g	agree	43
+p1	2	27	HOOK_U_V	u	H	u	agree	44
+p1	2	28	FOUR	null	H		null-empty	45
+p1	3	1	PLUS	b	H	b	agree	45
+p1	3	2	HOOK_M	m	H		letter-sign-empty	46
+p1	3	3	NINE_E	e	H	e	agree	46
+p1	3	4	EIGHT_R	r	H	r	agree	47
+p1	3	5	HCURL	n	H	n	agree	48
+p1	3	6	OMEGABAR	a	H	a	agree	49
+p1	3	8	HOOK_T	t	H	t	agree	50
+p1	3	9	SEVEN	?	?	i	unkeyed-took-letter	51
+p1	3	10	TWO_O	o	H	o	agree	52
+p1	3	11	HCURL	n	H	n	agree	53
+p1	3	12	SEVEN_E	e	H	e	agree	54
+p1	3	13	THETA	d	H	d	agree	55
+p1	3	14	PHI_I	i	H	i	agree	56
+p1	3	15	ENN	s	H	s	agree	57
+p1	3	16	TWO_P	p	H	p	agree	58
+p1	3	17	OMEGABAR	a	H	a	agree	59
+p1	3	18	OMEGADOT	g	H	g	agree	60
+p1	3	19	DIAMOND	n	H	n	agree	61
+p1	3	20	SEVEN_I	i	H	i	agree	62
+p1	3	21	HOOK_A	a	H	a	agree	63
+p1	3	22	THREE	l	M	e	conflict	64
+p1	3	23	HOOK_T	t	H	t	agree	65
+p1	3	24	SIX	null	H	c	null-took-letter	66
+p1	3	25	ESS	h	H	h	agree	67
+p1	3	26	NINE_E	e	H	e	agree	68
+p1	3	27	FOUR	null	H		null-empty	69
+p1	3	28	TEE_P1	p	H	p	agree	69
+p1	3	29	SEVEN_I	i	H	i	agree	70
+p1	3	31	JHOOK	m	M	u	conflict	71
+p1	4	1	PI	d	H	d	agree	72
+p1	4	2	PHI_I	i	H	i	agree	73
+p1	4	3	HCURL	n	H	n	agree	74
+p1	4	4	PHI_T	t	M	c	conflict	75
+p1	4	5	THREE	l	M	l	agree	76
+p1	4	6	SEVEN_I	i	H	i	agree	77
+p1	4	7	DIAMOND	n	H	n	agree	78
+p1	4	8	OMEGABAR	a	H	a	agree	79
+p1	4	9	FOUR	null	H		null-empty	80
+p1	4	10	HOOK_T3	t	H	t	agree	80
+p1	4	11	PHI_I	i	H	i	agree	81
+p1	4	12	TWO_O	o	H	o	agree	82
+p1	4	13	HCURL	n	H	n	agree	83
+p1	4	14	SEVEN_E	e	H	e	agree	84
+p1	4	15	TWO_S2	s	H	s	agree	85
+p1	4	16	SEVEN_I_M2	m	H	i	conflict	86
+p1	4	17	NINE_M2	m	H	m	agree	87
+p1	4	18	EIGHT_O	o	H	o	agree	88
+p1	4	19	ENN	s	H	s	agree	89
+p1	4	20	XCURL	r	H	r	agree	90
+p1	4	21	HOOK_A	a	H	a	agree	91
+p1	4	22	OMEGABAR	a	H	a	agree	92
+p1	4	23	THREE	l	M	l	agree	93
+p1	4	24	LL	c	H	c	agree	94
+p1	4	25	TWO_O	o	H	o	agree	95
+p1	4	26	DIAMOND	n	H	n	agree	96
+p1	4	27	HOOK	?	?	t	unkeyed-took-letter	97
+p1	4	28	NINE_E	e	H	e	agree	98
+p1	4	29	SIX	null	H		null-empty	99
+p1	5	1	TEE_P1	p	H	p	agree	99
+p1	5	2	HOOK_A	a	H	a	agree	100
+p1	5	3	THREE	l	M	l	agree	101
+p1	5	4	SIX	null	H		null-empty	102
+p1	5	5	OMEGABAR	a	H	a	agree	102
+p1	5	6	HOOK_T	t	H	t	agree	103
+p1	5	7	SEVEN	?	?	i	unkeyed-took-letter	104
+p1	5	8	DIAMOND	n	H	n	agree	105
+p1	5	9	EIGHT_O	o	H	o	agree	106
+p1	5	10	PHI_T	t	M	c	conflict	107
+p1	5	11	SIX	null	H	h	null-took-letter	108
+p1	5	12	NINE_E	e	H	e	agree	109
+p1	5	13	OMEGABAR	a	H	a	agree	110
+p1	5	14	PHI_T	t	M	d	conflict	111
+p1	5	15	HOOK_A	a	H	a	agree	112
+p1	5	16	THREE	l	M	l	agree	113
+p1	5	17	SIX	null	H		null-empty	114
+p1	5	18	HOOK	?	?		unkeyed-empty	114
+p1	5	19	HOOK_T1	t	H	t	agree	114
+p1	5	20	EIGHT_R	r	H	r	agree	115
+p1	5	21	HOOK_C	c	H		letter-sign-empty	116
+p1	5	22	ESS	h	H		letter-sign-empty	116
+p1	5	23	SIX	null	H		null-empty	116
+p1	6	1	SIX	null	H	i	null-took-letter	116
+p1	6	2	OMEGABAR	a	H	a	agree	117
+p1	6	3	EIGHTBAR_C	c	H	w	conflict	118
+p1	6	4	SEVEN_I	i	H	i	agree	119
+p1	6	5	EM	u	H	u	agree	120
+p1	6	6	EIGHT_O	o	H	o	agree	121
+p1	6	7	LL	c	H	c	agree	122
+p1	6	8	OMEGABAR	a	H	a	agree	123
+p1	6	9	XCURL	r	H	r	agree	124
+p1	6	10	TWO_NULLA	null	H		null-empty	125
+p1	6	11	TWO_O	o	H	o	agree	125
+p1	6	12	DIAMOND	n	H	n	agree	126
+p1	6	13	NINE_E	e	H	e	agree	127
+p1	6	14	TWO_NULLA	null	H	l	null-took-letter	128
+p1	6	15	TWO_O	o	H	o	agree	129
+p1	6	16	SEVEN_E	e	H	e	agree	130
+p1	6	17	HOOK_T	t	H	t	agree	131
+p1	6	18	HOOK_T3	t	H	t	agree	132
+p1	6	19	XCURL	r	H	r	agree	133
+p1	6	20	TWO_O	o	H	o	agree	134
+p1	6	21	HOOK_U_V	u	H	u	agree	135
+p1	6	22	SIX	null	H		null-empty	136
+p1	6	23	EIGHT_O	o	H	o	agree	136
+p1	6	24	THREE	l	M	l	agree	137
+p1	6	25	HOOK_A	a	H	a	agree	138
+p1	6	26	SIX	null	H		null-empty	139
+p1	7	1	EIGHT_R	r	H	r	agree	139
+p1	7	2	SEVEN_E	e	H	e	agree	140
+p1	7	3	ENN	s	H	s	agree	141
+p1	7	4	TWO_O	o	H	o	agree	142
+p1	7	5	THREE	l	M	l	agree	143
+p1	7	6	EM	u	H	u	agree	144
+p1	7	7	HOOK_T	t	H	t	agree	145
+p1	7	8	PHI_I	i	H	i	agree	146
+p1	7	9	EIGHT_O	o	H	o	agree	147
+p1	7	10	DIAMOND	n	H	n	agree	148
+p1	7	11	NINE_E	e	H	e	agree	149
+p1	7	12	THETA	d	H	d	agree	150
+p1	7	14	LL	c	H	c	agree	152
+p1	7	15	TWO_O	o	H	o	agree	153
+p1	7	16	ENN	s	H	s	agree	154
+p1	7	18	HOOK_T3	t	H	t	agree	155
+p1	7	19	TWO_O	o	H	o	agree	156
+p1	7	20	XCURL	r	H	r	agree	157
+p1	7	21	EIGHT_O	o	H	o	agree	158
+p1	7	22	HOOK_M	m	H	m	agree	159
+p1	7	23	PHI_I	i	H	i	agree	160
+p1	7	24	TWO_NULLA	null	H	l	null-took-letter	161
+p1	7	25	SEVEN_I	i	H	i	agree	162
+p1	7	26	EIGHT_O	o	H	o	agree	163
+p1	7	27	XCURL	r	H	r	agree	164
+p1	7	28	SEVEN_E	e	H	e	agree	165
+p1	8	2	PI	d	H	d	agree	166
+p1	8	3	PHI_I	i	H	i	agree	167
+p1	8	4	EPSILON	k	M	k	agree	168
+p1	8	5	CIRCLE	?	?		unkeyed-empty	169
+p1	8	6	TWO_NULLA	null	H	l	null-took-letter	169
+p1	8	7	TWO_O	o	H	o	agree	170
+p1	8	9	NINE_E	e	H	e	agree	171
+p1	8	10	THREE	l	M	l	agree	172
+p1	8	11	SIX	null	H		null-empty	173
+p1	8	12	TEE_P1	p	H	p	agree	173
+p1	8	13	OMEGABAR	a	H	a	agree	174
+p1	8	15	THREE	l	M	p	conflict	175
+p1	8	16	HOOK_A	a	H	a	agree	176
+p1	8	17	THETA	d	H	d	agree	177
+p1	8	18	TWO_O	o	H	o	agree	178
+p1	8	19	HOOK_M	m	H	m	agree	179
+p1	8	20	OMEGABAR	a	H	a	agree	180
+p1	8	21	DIAMOND	n	H	n	agree	181
+p1	8	22	OMEGABAR	a	H	d	conflict	182
+p1	8	23	HOOK_A	a	H	a	agree	183
+p1	8	24	EM	u	H		letter-sign-empty	184
+p1	8	25	EM	u	H	u	agree	184
+p1	8	26	FOUR	null	H		null-empty	185
+p1	8	27	OMEGABAR	a	H	a	agree	185
+p2	1	1	FOUR	null	H		null-empty	0
+p2	1	2	ENN	s	H	s	agree	0
+p2	1	3	SEVEN_E	e	H	e	agree	1
+p2	1	4	SIX	null	H		null-empty	2
+p2	1	5	NINE_E	e	H	e	agree	2
+p2	1	6	PLUS	b	H	b	agree	3
+p2	1	7	PHI_I	i	H	i	agree	4
+p2	1	8	ENN	s	H	s	agree	5
+p2	1	9	EIGHT_O	o	H	o	agree	6
+p2	1	10	OMEGADOT	g	H	g	agree	7
+p2	1	11	DIAMOND	n	H	n	agree	8
+p2	1	12	SEVEN_I	i	H	i	agree	9
+p2	1	13	TWO_O	o	H	o	agree	10
+p2	1	14	NINE_NULLA	null	H		null-empty	11
+p2	1	15	SEVEN_E	e	H	e	agree	11
+p2	1	16	THREE	l	M	l	agree	12
+p2	1	17	PHI_G	g	H	g	agree	13
+p2	1	18	EM	u	H	u	agree	14
+p2	1	19	TWO_NULLA	null	H	b	null-took-letter	15
+p2	1	20	NINE_E	e	H	e	agree	16
+p2	1	21	XCURL	r	H	r	agree	17
+p2	1	22	HCURL	n	H	n	agree	18
+p2	1	23	OMEGABAR	a	H	a	agree	19
+p2	1	24	HOOK_T	t	H	t	agree	20
+p2	1	26	EIGHT_O	o	H	o	agree	21
+p2	1	27	HOOK_R	r	H	r	agree	22
+p2	1	28	NINE_E	e	H	e	agree	23
+p2	1	29	THETA	d	H	d	agree	24
+p2	1	30	SEVEN_I	i	H	i	agree	25
+p2	1	31	PLUS	b	H	b	agree	26
+p2	1	32	XCURL	r	H	r	agree	27
+p2	1	33	SEVEN_E	e	H	e	agree	28
+p2	2	3	HOOK_U_V	u	H	s	conflict	30
+p2	2	4	HOOK_A	a	H	a	agree	31
+p2	2	5	FOUR	null	H		null-empty	32
+p2	2	6	OMEGABAR	a	H	a	agree	32
+p2	2	7	DIAMOND	n	H	n	agree	33
+p2	2	8	PI	d	H	d	agree	34
+p2	2	9	FOUR	null	H		null-empty	35
+p2	2	10	HOOK_A	a	H	a	agree	35
+p2	2	11	ESS	h	H	r	conflict	36
+p2	2	12	OMEGABAR	a	H	a	agree	37
+p2	2	13	PHI_I	i	H	i	agree	38
+p2	2	14	TWO_S2	s	H	s	agree	39
+p2	2	15	EM	u	H	u	agree	40
+p2	2	16	SEVEN_I	i	H	i	agree	41
+p2	2	17	EIGHT	o	H	?	over-unread-??	42
+p2	2	18	EIGHT_R	r	H	?	over-unread-??	43
+p2	2	19	SEVEN_E	e	H	e	agree	44
+p2	2	20	XCURL	r	H	r	agree	45
+p2	2	22	PHI_I	i	H	i	agree	46
