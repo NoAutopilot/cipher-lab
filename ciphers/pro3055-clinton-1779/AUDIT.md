@@ -202,3 +202,112 @@ separate stage-9 step).
 Credit: decipherments by Haldimand's office (1780, 1782); first printed by the Vermont Historical Society (1871,
 from Henry Stevens Sr.'s and B.H. Hall's copies); calendared by D. Brymner (1888); key book identified by A.C. Leighton
 and S.M. Matyas (1985); reel locations and cell extracts by S. Tomokiyo (Cryptiana).
+
+---
+
+# AUDIT -- pro3055-clinton-1779, items 3050 (PRO 30/55/26/2) and 3077 (PRO 30/55/26/30)
+
+Verifier VERIFY-CLINTON-3050-3077, 2 Oct 2026 (clock read 23:17-23:3x UTC, `date -u`), account 4. A separate session
+from the solver sessions GAPS11 and GAPS12 (account 4) that produced the print check and the readings; this audit does
+not protect their conclusions. The 2894, 3868 and 2380 entries above are unchanged.
+
+**Claims under audit.** (1) 3050 (Clinton to Haldimand, New York, 2 Oct 1780): "read at H from its period decipherment
+B.147 p.245 (H-1649 Image 889), 106 words H 106". (2) 3077 (same, 18 Oct 1780, No. 24): "read at H from its period
+decipherment B.147 p.246 (Image 890), 175 words H 175". (3) Both: "the p.242 and p.247 cipher cells match them on the
+1778 key, 118/118 vs shuffled-plaintext p95 13"; "not located in print" after GAPS11's six-volume djvu grep (VHS
+Collections II 1871, Walton II-III, the 1920 vol. III, Brymner 1887 and 1888 reports) and GAPS11/GAPS12's be-api
+queries; known only as Brymner's paraphrase.
+
+## 1. Extract
+
+| field | 3050 | 3077 |
+|---|---|---|
+| item | TNA PRO 30/55/26/2; recipient copies BL Add MS 21807 (= LAC Haldimand B.147) p.242-244 cipher (fo.206-207, Images 886-888), duplicate p.239, p.245 decipherment "Duplicate ... being the Explanation of his Letter in Cypher of the 2d October" (fo.208, Image 889) | TNA PRO 30/55/26/30; B.147 p.247 cipher (fo.210, Image 891, opening in clear), p.246 decipherment "Copy" (fo.209, Image 890) |
+| date, place | New York, 2 Oct 1780 | New York, 18 Oct 1780 (No. 24) |
+| sender -> recipient | Sir Henry Clinton -> Gen. Frederick Haldimand | same |
+| system | figure pairs (line-letter) on the 1778 Army List title page (Leighton & Matyas 1985; Tomokiyo, Cryptiana haldimand.htm) | same |
+| reading | passes/p245_reading.txt | passes/p246_reading.txt |
+| distinctive phrases | "Intention of giving up the Forts &c &c at West Point"; "thrown the Rebels Army into the Greatest Confusion"; "little Probability of a second division of french ships"; "Compleat Victory over General Gates on the 16th of August at Camden"; "great defection in the spanish Colonies" | "honored with Your Excellency's Letter of the 8th ultimo, and a Subsequent one without date"; "miscarriage of the Quebec Fleet"; "Sir George Rodney still favors us with his Company"; "lay aside their Attempt on this Place"; "the Cork Fleet which is much wanted"; "Expedition of near 3000 Men ... under General Leslie"; "probably acting in North Carolina"; "paid Ten Guineas" |
+| what the solvers searched | GAPS11: six djvu texts grepped (date, correspondents, 5 interior phrases); be-api "intention of giving up the forts", "great defection in the Spanish"; GAPS12: be-api "defection in the Spanish colonies", "attempt by Arnold" | GAPS11: djvu grep (6 phrases), be-api "miscarriage of the Quebec fleet", "blocked up at Rhode Island"; GAPS12: be-api "the Quebec fleet has" (x2), "accommodation with Spain" |
+
+## 2. Searches (this session, 2 Oct 2026)
+
+| family | 3050 | 3077 |
+|---|---|---|
+| (a) canonical series / calendars | HMC, *Report on American Manuscripts in the Royal Institution* vol. II (1906), archive.org `reportonamerican02grea` djvu read: p.188 "Gen. Sir Henry C[linton] to Gen. Haldimand. 1780, October 2. New York. Copies. Vols. 11, No. 123; 18, No. 23*, in cipher; 11, No. 125 ... Originals in the Brit. Mus., Addtl. MSS. 21807; copy in the Public Record Office, Am. & W. I. 138" -- location only, no content. Brymner, Report on Canadian Archives 1887 (pub. 1888) B.147 paraphrase (GAPS11), confirmed in 6 Google Books copies | HMC vol. II p.192: "1780, October 18. New York. Copies. Vols. 18, No. 24, and 11, No. 126; in cipher, No. 127 ... Also in the Public Record Office, Am. & W. I. 138, fo. 657; autograph letter, in cipher, ... 21807, fo. 210; autograph signed letter 21807, fo. 209" -- location only. Brymner 1888 paraphrase (B.147 p.246, "The letter in cypher follows"), close in wording ("Cork fleet which is much wanted") |
+| (b) sender/recipient editions | VHS Collections II (1871), Walton II-III (GAPS11's greps, re-checked by be-api phrase queries below); *Michigan Pioneer and Historical Collections* vols X, XIX, XX (the Haldimand Papers volumes; `michiganhistoric10michuoft`, `...19michuoft`, `...20michuoft`) djvu grepped for "clinton to haldimand", both dates, "greatest confusion", "west point", "defection", "rodney", "ternay": no Clinton-to-Haldimand letter of either date (hits are other documents); MPHC index vols 1-15 and 16-30 entries "Clinton, Sir Henry" read: neither letter listed | same MPHC volumes and indexes: no hit ("quebec fleet", "cork fleet", "18th october" hits are other documents) |
+| (c) documentary editions | Davies, *Documents of the American Revolution* vol. 16 (Calendar 1780) and vol. 18 (Transcripts 1780), be-api in-item: vol. 18 has no Clinton-to-Haldimand letter ("2 October 1780" 0, "Haldimand" hits are Haldimand to Germain); vol. 16 no "2 October 1780" Clinton-Haldimand entry seen | Davies vol. 16 calendars "New York, 18 October 1780. Sir H. Clinton to General Haldimand" as enclosure ix of No. 2596 (a dispatch of General Sir Henry Clinton dated 11 October [1780], New York, per the be-api highlight; addressee not seen, presumably Germain; an 18 Oct enclosure to an 11 Oct dispatch is itself unchecked) -- a calendar line, the summary (if any) not read (lending-only, be-api highlights only); not printed in vol. 18 ("18 October 1780" 0). Stevens's *Facsimiles*: no archive.org item matched the title query (0), not searched further; its scope is Auckland/Carlisle/French papers, not Haldimand |
+| (d) holding archive | TNA Discovery and the LAC reel already in the folder; not re-fetched | same |
+| (e) full text: IA be-api, all items, exact phrase | "rebel army into the greatest confusion" 0; "Rebels Army into the greatest confusion" 0; "thrown the rebel army into" 3 (Brymner 1887 x2, an unrelated Uganda book); "thrown the rebels army" 0; "has joined us, which has thrown" 0; "giving up the forts at West Point" 0; "Admiral Rodney is on this coast" 0; "little probability of a second division" 0; "victory over General Gates on the 16th" 16 and "complete victory over General Gates" 6 (Morse, Mante, Annual Register 1781 etc. -- Camden narratives, not this letter); "compleat victory over General Gates" 0 | "still favors us with his company" 1 (an 1869 newspaper); "still favours us with his company" 0; "lay aside their attempt on this place" 0; "Cork fleet which is much wanted" 3 (Brymner 1887 x3); "expedition of near 3000 men" 0; "favor the operations of Lord Cornwallis" 6 (Mackenzie's diary, a different sentence about James River); "favour ..." 0; "paid ten guineas by me" 0; "without date. I am concerned" 0; "accommodation with Spain will speedily" 0; "Ternay's fleet and the French army remain" 0; "letter of the 8th ultimo, and a subsequent one" 5 (Jay correspondence, unrelated); "the Chesapeak under General Leslie" 2 (Clinton's *Observations* 1783 and Stevens 1888 reprint -- a list of detachments, not this letter); "probably acting in North Carolina" 0. Positive control: "Vermont deserves our vigilant attention" 13 (VHS II, Walton II, Wilbur), so the route finds printed Haldimand letters |
+| (e) Google Books (key, country=US) | "thrown the rebels army into the greatest confusion", "thrown the rebel army into ...", "little probability of a second division", "intention of giving up the forts": no relevant volume in the top results; "great defection in the Spanish colonies" 6, all Brymner 1888 | "miscarriage of the Quebec fleet", "still favors us with his company", "lay aside their attempt on this place", "accommodation with Spain will speedily take place": no relevant volume; "Cork fleet which is much wanted" 6, all Brymner 1888 |
+| (e) HathiTrust full text | unreachable from the cloud (Cloudflare; CLAUDE.md host table); not tried | same |
+| (f) solver repositories, cipher blogs | Tomokiyo, Cryptiana haldimand.htm (on disk): locates the cipher (Image 886) and the decoded copy; GAPS11 used his extracts. Bourdeau and Aymeloglu: no Haldimand target (CX2 round 2 greps, folder NOTES) | same (Image 891, decoded p.246) |
+| (g) scholarship | OpenAlex "Clinton Haldimand 1780 cipher" 2 results, "Haldimand Arnold West Point Clinton letter" 15 results; S2 "Haldimand Clinton cipher 1780" 1 result: none about either letter. be-api "Clinton to Haldimand" (164) and "Sir Henry Clinton to General Haldimand" (43): top hits are other letters (1778, 1779, 1781) | same queries |
+| JSTOR | rows appended to JSTOR-QUEUE.tsv, families (i) and (ii); not blocking | same |
+| unreachable | HathiTrust full text; Davies vol. 16 page for No. 2596 ix (lending-only, not borrowed) | same |
+
+Requests: be-api.us.archive.org 36, archive.org 9 (6 djvu texts, 3 advancedsearch), googleapis.com/books 10,
+api.openalex.org 2, api.semanticscholar.org 1; one at a time, 1.6 s apart. No credential printed.
+
+## 3. Re-derivation (rule 7)
+
+`python3 passes/check_3050_3077.py --check` run in this session from the committed passes, cells and key: "check_3050_3077: OK",
+exit 0 -- p245_reading.txt, p246_reading.txt and check_3050_3077.json regenerate unchanged from
+p245_246_reconciled.tsv, p242_p247_cells.tsv and title1778_reading.txt. The statistic (118/118 cells vs shuffled-plaintext
+mean 7.95, p95 13, max 19) is computed on the plaintext axis, so the control can fail where the target passes (rule 3).
+Limits carried forward unchanged: the cell check covers the opening of each cipher only (p.242 cols 1-3, p.247 cols 1-2);
+27 of the 125 cells rest on the worker's reconciliation made with the decipherment in view (GAPS12 states this); the H
+grades are a transcription of a period decipherment, not a cryptanalytic result.
+
+## 4. Classification
+
+**Item 3050 -- N0, key `period`, text not in print (no `text: known`).** N0 = "plaintext and decipherment of this very
+item already known": the period decipherment exists on the leaf (B.147 p.245, Haldimand Papers, written 1780 as Clinton's
+"Explanation of his Letter in Cypher"), is calendared by HMC (1906, vol. II p.188: clear copies Vols. 11 Nos. 123, 125
+and a PRO copy, Am. & W. I. 138) and paraphrased by Brymner (1888), and its place on the reel is published by Tomokiyo.
+This is the precedent of szembek-bk1560, rah-canada-1869 and antt-fcc-costacabral-1865 (N0 from the leaf, period key). Prior
+plaintext in print: **not located** -- only Brymner's paraphrase (1888) after the searches above. Our contribution is a
+transcription of the period decipherment and a cell check of the cipher's opening (66/66) on the 1778 key. Evidence:
+direct (djvu texts, be-api, Google Books). Confidence: high that no full print exists in the sources searched; medium
+overall (HathiTrust full text, Davies vol. 16's calendar page and any Clements Library/Clinton Papers publication not
+read).
+
+- Safe sentence: "We transcribed the period decipherment of Clinton's cipher letter to Haldimand of 2 October 1780 (TNA
+  PRO 30/55/26/2; Haldimand Papers B.147 pp.242-245, LAC reel H-1649) and checked 66 cells of the cipher's opening against
+  it on the 1778 Army List key; the letter's content was calendared by Brymner (1888), and its full text was not located
+  in print in the sources we searched."
+- Unsafe sentence: "first decipherment of Clinton's 2 October 1780 letter" / "previously unread" / "recovered from the
+  cipher" (the period decipherment is the source).
+
+**Item 3077 -- N0, key `period`, text not in print (no `text: known`).** Same footing: the period decipherment on the
+leaf (B.147 p.246, "Copy"), HMC vol. II p.192 (clear copies Vols. 18 No. 24 and 11 No. 126, PRO Am. & W. I. 138 fo.657),
+Brymner's close paraphrase (1888), and a calendar line in Davies, DAR vol. 16, as an enclosure (ix) of No. 2596 (not read).
+Prior plaintext in print: **not located** beyond the paraphrase and the calendar line. Evidence: direct. Confidence:
+medium (the DAR vol. 16 entry may carry a summary; its page was not read).
+
+- Safe sentence: "We transcribed the period decipherment of Clinton's cipher letter to Haldimand of 18 October 1780 (TNA
+  PRO 30/55/26/30; Haldimand Papers B.147 pp.246-247, LAC reel H-1649) and checked 52 cells of the cipher's opening against
+  it on the 1778 Army List key; the letter was calendared by Brymner (1888) and listed by Davies (DAR vol. 16, as an enclosure to
+  a Clinton dispatch), and its full text was not located in print in the sources we searched."
+- Unsafe sentence: "a previously unknown Clinton letter" / "never printed" / "first reading".
+
+No SECOND-OPINIONS-QUEUE.tsv row: neither item is N3 or better (rule 10; a period decipherment on the leaf is a prior
+decipherment of this very item).
+
+## 5. Postmortem
+
+No over-claim found: GAPS11 and GAPS12 wrote "not located in print ... a search result, not a novelty verdict" and
+searched interior phrases, not only the incipit (VERIFY-CLINTON-3868-2380's lesson was applied). Gaps this audit closed
+or named: (a) HMC vol. II was not cited for either date -- added, location-only entries (pp.188, 192) that also show
+clear copies of both letters were sent to Germain (PRO Am. & W. I. 138), which is where a print would most likely come
+from; (b) Davies DAR vol. 16 calendars 3077 as an enclosure of No. 2596 -- added, page not read (lending-only); vol. 18
+does not print either letter; (c) the Michigan Pioneer Haldimand volumes (X, XIX, XX) were not in the solver's list --
+searched, no hit. The class is N0 (not N3) because the period decipherment itself is a prior decipherment of the item,
+as in szembek-bk1560; the solvers did not claim otherwise.
+
+Corrections made: NOTES.md "VERIFY-CLINTON-3050-3077 corrections" section (no sentence of GAPS11/GAPS12 needed
+striking; the added sources are recorded there).
+
+Credit: decipherments by Clinton's headquarters (1780); calendared by D. Brymner (1888), the HMC (1906) and K.G. Davies
+(DAR vol. 16); key book identified by A.C. Leighton and S.M. Matyas (1985); reel locations and cell extracts by
+S. Tomokiyo (Cryptiana).

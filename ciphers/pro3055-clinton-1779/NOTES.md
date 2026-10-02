@@ -979,3 +979,15 @@ longer clear form). Corrected here: GAPS9's "not located in print" (three places
 the 9 Sept 1779 letter" (both readings hold). The 1871 print reads "favored", supporting GAPS9's cell finding against the
 decipherer's "honored". What stays open is unchanged (cipher columns 3-7 / 3-6 and the duplicate pages), now as
 key-check work on text-known items, not text recovery.
+
+## VERIFY-CLINTON-3050-3077 corrections (2 Oct 2026)
+
+Verifier (account 4, separate from GAPS11/GAPS12), AUDIT.md "items 3050 and 3077". Both **N0, key `period`, text not in
+print** (the period decipherments on B.147 pp.245-246 are prior decipherments of these very items; precedent
+szembek-bk1560). Rule 7: `passes/check_3050_3077.py --check` OK, exit 0 in the verifier's session. No sentence of GAPS11
+or GAPS12 over-claims ("not located in print ... a search result" stands). Sources added to the print check, none
+printing either letter: HMC American MSS vol. II (1906) p.188 (3050) and p.192 (3077), location-only entries naming clear
+copies sent to Germain (PRO Am. & W. I. 138, fo.657 for 3077); Davies, DAR vol. 16 (Calendar 1780) lists 3077 as
+enclosure ix of No. 2596 (page not read, lending-only), vol. 18 prints neither; Michigan Pioneer and Historical
+Collections vols X, XIX, XX and both indexes: no hit; 21 further be-api interior-phrase queries and 8 Google Books
+queries: only Brymner 1888. Not read: HathiTrust full text (unreachable), the DAR vol. 16 page. JSTOR rows queued.
