@@ -288,3 +288,15 @@ official identified from the clear instructions of the same volume. Three habits
    Saint-Ibal, but logged them as "zero code groups" and moved on: we were looking for sibling ciphertext, not for
    cribs. Clear leaves next to a cipher are evidence for the reading, not only negatives for the pool. This is the
    `siblings` and `clear-pages` steps.
+
+## Look-alike pass: agreement-raising, not accuracy-raising (2 Oct 2026, LOOKALIKE-TOOL)
+
+`tools/lookalike_pass.py` re-reads the tiles where two blind readers split, or whose label sits in a frequent confusion pair,
+against a candidate-only sheet, then settles each one 2-of-3. On a leaf pair with a period witness (Nevers/Birago no.87
+f.178r + f.179r against the clerk's clear sheet; ciphers/nevers-birago-fr3251-1572/NOTES.md "LOOKALIKE-TOOL") true sign error
+was 0.178 and 0.071 before the pass and exactly the same after: 0 relabels, 0 right-to-wrong. Meanwhile the pass's own
+residual fell to 0.031 and 0.000. Half the wrong signs had two readers agreeing on them and were never flagged, and the re-read
+confirmed 9 of the 11 wrong labels it did see. Use the pass to tidy splits and to build the sign-sorter focus list. Never use its
+residual as the reader-error figure for a power control: bracket with the two-reader rate (rule 3) until a known-answer leaf
+says otherwise.
+

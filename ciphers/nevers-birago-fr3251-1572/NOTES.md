@@ -1511,6 +1511,31 @@ published**; the account-3 orchestrator publishes it.
 Requests: none (disk only). Subagents: 2 Opus value-blind look-alike reads, 1 per run; the reconciliation was by script.
 No credentials. Report of what was found and where it was not found; novelty not classified.
 
+## LOOKALIKE-TOOL (2 Oct 2026, parent worker for the account-3 orchestrator): known-answer test of the look-alike pass on no.87
+
+The look-alike pass is now `tools/lookalike_pass.py`, and the three scripts here point at it. It was run blind on no.87 f.178r (97 signs)
+and f.179r (89 signs) with the confusion map, packet and reconcile steps: one value-blind Opus re-read per leaf, 40 + 31 tiles. Each
+sequence was then scored against the clerk's clear sheet (canvas 182) with `harvest/lookalike_known/score_known.py`. The scorer
+was written and run on passA/B/C before either re-read existed. It decodes with the fitted map without the sheet-derived exceptions,
+folds the text the align_sheet.py way, and counts a sign WRONG when its letters fall outside matching blocks of 2 or more.
+
+| leaf | true error passC (before) | flagged | relabelled (2-of-3) | true error passD (after) | residual (2-of-3) | wrong signs flagged / re-read kept wrong |
+|---|---|---|---|---|---|---|
+| f.178r | 16/90 = 0.178 | 40 | 0 | 0.178 | 0.031 | 9 of 16 / 7 of 9 |
+| f.179r | 6/84 = 0.071 | 31 | 0 | 0.071 | 0.000 | 2 of 6 / 2 of 2 |
+
+No correction moved a right label to a wrong one, because the primary rule relabelled nothing. The secondary passD_alt sequence
+fixed one sign (f.178r L01.27, T92 -> T50) and harmed none. With a block of 3 the f.178r figures are 0.200 before and after.
+**On this leaf pair the pass raises agreement but not accuracy.** Its residual (0.031, 0.000) understates true error
+(0.178, 0.071) by 6x or more. One reason is that 11 of 22 wrong signs were never flagged, because both readers agreed on them.
+Another is that the re-read confirmed 9 of the 11 flagged wrong labels. Caveat: some WRONG signs may be key-value errors rather
+than misreads (GAPS4's c/s pair, the misread opening of f.178r L01). These count the same before and after, so they do not
+change the before/after comparison, but they do inflate the absolute error. Both leaves' passC already carried a third-reader
+adjudication, as f.144r's and f.168's did.
+**Consequence for NEVBIR-LOOKALIKE above:** the f.144r power control run at the 2-of-3 residual (0.044, 18/20) is downgraded. The
+residual is not a measure of reader error. The bracket that counts is the two-reader rate (0.24, 4/20), so f.144r stays a
+non-test at its length. The f.168 verdict is unchanged (not licensed, not a negative).
+
 ## NEVBIR-185 (2 Oct 2026, account 2 for the account-3 orchestrator): no.90 f.184v foot + f.185r lines 1-8 read under the printed 1572 key + T42=m; whole no.90 so far rank 1/201
 
 Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-185.md`. `tools/intake_gate_check.py nevers-birago-fr3251-1572` exit 0 at

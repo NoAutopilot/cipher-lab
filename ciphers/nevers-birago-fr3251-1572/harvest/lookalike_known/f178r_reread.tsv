@@ -1,0 +1,41 @@
+passage	pos	label	conf	second	note
+L01	4	T83	H		reversed-3 joined to epsilon ligature
+L01	6	T95	M	T98	stem with bowl right and small hook at top, no crossbar
+L01	7	X_NEW	H		numeral-4 shape, matches no candidate
+L01	8	X_NEW	H		numeral-7 shape, matches no candidate
+L01	11	T86	H	T60	two verticals, one horizontal bar
+L01	12	X_NEW	H		t-shape with hooked foot, no candidate fits
+L01	20	T83	H		reversed-3 + epsilon ligature
+L01	21	T60	H	T86	two verticals crossed by two horizontals
+L01	23	T86	H	T60	two verticals, single horizontal bar
+L01	24	T83	H		reversed-3 + epsilon ligature
+L01	27	T50	M	T92	omega followed by tall rising s-stroke
+L01	29	T83	H		reversed-3 + epsilon ligature
+L02	1	T60	H	T86	two verticals, two horizontals
+L02	3	T98	H	T18	vertical stem passing through middle of closed loop
+L02	5	T90	H		closed loop with cross on top of ascender
+L02	9	T86	H	T60	two verticals, single horizontal bar
+L02	11	T18	H	T98	loop at top, stem below with no stem above loop
+L02	20	T86	H	T60	two verticals, single horizontal bar
+L02	21	T90	H		closed loop with cross on top of ascender
+L02	25	T83	H		reversed-3 + epsilon ligature
+L02	29	T83	H		reversed-3 + epsilon ligature
+L02	30	T60	H	T86	two verticals, two horizontals
+L03	1	T83	H		reversed-3 + epsilon ligature
+L03	4	X_NEW	H		figure-8 shape, matches no candidate
+L03	6	X_NEW	H		t-shape with hooked foot, no candidate fits
+L03	8	T92	H	T50	plain omega, no trailing s-stroke
+L03	9	T55	H		vertical with two horizontal arms to right
+L03	16	T83	H		reversed-3 + epsilon ligature
+L03	17	T92	M	X_NEW	omega with small inner curl, no trailing s-stroke
+L03	19	T60	H	T86	two verticals, two horizontals
+L03	23	T90	M	X_NEW	loop with crossed ascender (cross on stem above loop)
+L03	27	T65	H	T18	double loop on top, stem with crossbar below
+L03	28	T52	H		m-like with descending hooked final stroke
+L03	29	T51	L	T95	stem with bowl upper right, crossbar and foot on stem
+L03	30	T25	H		lambda
+L03	31	T96	M	X_NEW	small loop with long tail descending left
+L03	32	T66	M	T95	loop at top, stem, horizontal foot at base
+L03	33	T60	H	T86	two verticals, two horizontals
+L03	34	T90	H		loop with crossed ascender
+L03	35	X_NEW	H		t-shape with hooked foot, no candidate fits

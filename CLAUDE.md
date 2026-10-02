@@ -489,6 +489,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    and set-asides into settled labels), and only then do machine passes transcribe against those labels, with the
    sorter's "Check these first" box for what they still split on (owner, 2 Oct 2026; Debosnys ran about 28% reader
    disagreement through many machine passes before this, LESSONS.md "Settle the alphabet before reading").
+   When two passes split by more than a tenth or on named sign pairs, run `tools/lookalike_pass.py` before a third full pass;
+   what machines still split goes to the owner's sign sorter via its focus.tsv, never blocking. Its 2-of-3 residual is
+   agreement, not accuracy (known-answer test, LESSONS.md "Look-alike pass"): never use it as the reader-error figure for a control.
    A subagent's transcription job is priced by signs matched x reference-sheet size, not by elapsed minutes or
    page count: GOLD-4D (25 Sept 2026) gave one Sonnet subagent all four Debosnys cryptograms (about 1,300 signs)
    against a 160-sign inventory in a single call and was stopped at 3.3x its $7 cap, 38 minutes into a 60-minute
