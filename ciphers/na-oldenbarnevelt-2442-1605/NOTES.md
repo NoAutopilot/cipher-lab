@@ -629,3 +629,35 @@ image pass on their remaining low-confidence tokens (B: 42 unresolved of 86; C1:
 digit 5's remaining unresolved group) with a frequency/positional argument or a crib; (c) a print check
 (`phrases.txt`/`tools/print_check.py`) on "Vanegas", "Sigüença", "Pamplona", "Mattheo de Burgos" together for
 1605-1606 before any claim about this reading leaves the repository.
+
+## Web and blog check (GF-A2-5, 2 Oct 2026)
+
+Plain web searches (4): `"Senisteros" "Juan de la Peña" 1605` (only unrelated Juan de la Peña biographies);
+`Oldenbarnevelt archief 3.01.14 inv 2442 cijferschrift` (NA 3.01.14 inventory PDF, Huygens Oldenbarnevelt edition page,
+WVO PDFs, BMGN vol.104 -- none mentions invnr 2442's cipher); `intercepted Spanish cipher letter 1605 Oldenbarnevelt
+papers deciphered Gara de Senisteros` (d'Avaux 1684 HistoCrypt paper, Granvelle-Renard paper, unrelated);
+`"Missive van Don Juan Gara de Senisteros"` (exact catalogue title: no hit beyond unrelated Don Juan pages).
+Blog site searches: `site:scienceblogs.de klausis-krypto-kolumne Oldenbarnevelt Spanish cipher 1605` (Cipherbrain:
+archive pages and "an unsolved cryptogram by a German conquistador", unrelated); `site:cryptiana.blogspot.com Spanish
+cipher Netherlands 1605 Oldenbarnevelt` (no Cryptiana page returned); `site:ciphermysteries.com Oldenbarnevelt cipher
+Nationaal Archief` (no Cipher Mysteries page returned). No comment thread found that discusses this letter.
+Result: no decipherment or plaintext found on the open web or in the three blogs. Requests: WebSearch 7.
+
+## Premise check (GF-A2-5, 2 Oct 2026)
+
+(a) Folder's own mentions: sections 1-3 and "Key beside the letter: no" record no gloss, decipherment or key on scans
+1-8 or in neighbours 2435-2450 by title; the "gloss" words in sections 5-7 are this project's own English glosses of
+its partial reading, not a period decipherment. Not found.
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026)
+grepped for "Oldenbarnevelt", "Senisteros", "3.01.14": no hit ("2442" occurs only as a number in unrelated data
+files). Aymeloglu cited, not copied. Not found.
+(c) Physical neighbours: the three scans earlier passes left unfetched (orders 9-11) were fetched at full size from
+service.archief.nl (3 requests, 2 s apart, scratchpad only, not committed) and viewed: order 9 (folio stamp 57) is
+plain Spanish prose (canonries, "S.r Andres", collegiales) with no cipher and no gloss; order 10 (an opening,
+5000x3667, right page stamped ~64) carries plain Spanish on the left and about 25 lines of letter+digit cipher on the
+right, with no interlinear or marginal decipherment -- this cipher page is not mentioned in the transcription files
+and is more ciphertext for the folder, not a key; order 11 (stamp "1605") is the signed close, "Alcalá ... 23 de [dic.]
+de 605 ... D. Juo Gara de Senisteros", with cipher showing through from the verso and a later archival note at the
+foot, no decipherment. Not found: no clear copy, decipherment or key among all 11 scans.
+(d) Recipient side: the Spanish Netherlands side, Lonchay & Cuvelier tome I (read/grepped, status line) and the Huygens
+Oldenbarnevelt retroboeken (status line) give nothing. Not found.
