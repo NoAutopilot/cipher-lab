@@ -43,6 +43,17 @@ Append-only. Prose sections above the table; the table is written by `tools/fami
   are each one witness against one or three, which no re-run of the same tool on the same letters can break (rule 3's
   third-attempt clause: the next instrument is the image, not the aligner again).
 
+## H3 (GAPS4-na-schonenberg-1678-1716, 2 Oct 2026): the body is a cover-address instruction, and sense predicts letters for the unsettled codes
+Status: untested by the image (sense only, grade I/M; nothing applied to key.tsv). Segmenting reading.txt L01-L14 (body/reading_body.txt)
+reads "No abye[n]do nobe[d]ad en estas partes qu[e] [l]a de a[v]er muda(d)o e(s)te gouye(r)[n]o ... las que ybye(r)e del norte y de ytalya
+... las qu[e] puedan ocurryr. Para (m)a(s) se(g)u(r)(y)da(d) de la [c]orespondenzya ... p[o]ndra solamente [e][n] sobre (s)cryto en esta
+forma: a doña antonya de albanylla". Predicted values, one row each in body/sense_inferences.tsv: 8) = l (L03 pos0, as the L19 crib), 55 = v,
+31 = d (L03; the L06 pixel x stands as a second witness), )2 = s at L03 pos15 / L14 pos6 and r elsewhere (homophone or two signs), 49 = r
+(L04), 23 = n (L01, L04, L13) and r (L07), 14 = c (L04), 81 = d (L02 pos0), 58 = c (L12), 96 = o (L13 pos1) / e (L13 pos15). What would
+settle it: the gap-2 image pass reading the gloss letter over exactly these groups (a confirmation at >= 10 of the 13 is the gate; the
+L19 address written out as the "forma" is the sense-side corroboration of H1, not a control for it). Judge: body/judge_body.log -- every
+rendering FAILs real_p05 on es17c7 and es while all 80 shuffled controls sit lower; the leaf's own gloss FAILs too (judge cannot decide).
+
 <!-- family_run.py table: one row per run, appended by the tool, never edited by hand -->
 
 | date (UTC) | family | parameters | seeds | CONTROL mean (range) | TARGET best score | judge | gate met | label |

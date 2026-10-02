@@ -1,0 +1,11 @@
+corpus	text	N	score	real_p05	null_p99	verdict
+es17c7	KEY	235	-1.482	-0.903	-1.858	FAIL
+es17c7	GLOSS	245	-1.346	-0.922	-1.894	FAIL
+es17c7	SENSE	245	-1.204	-0.922	-1.894	FAIL
+es17c7	shuffled-null (letters of KEY)	235	-2.266..-1.985	-0.903	-1.858	0 PASS of 20
+es17c7	shuffled-target (group order within line, key.tsv)	235	-2.263..-1.838	-0.903	-1.858	0 PASS of 20
+es	KEY	235	-1.413	-0.919	-1.828	FAIL
+es	GLOSS	245	-1.311	-0.894	-1.832	FAIL
+es	SENSE	245	-1.153	-0.894	-1.832	FAIL
+es	shuffled-null (letters of KEY)	235	-2.175..-1.902	-0.919	-1.828	0 PASS of 20
+es	shuffled-target (group order within line, key.tsv)	235	-2.170..-1.894	-0.919	-1.828	0 PASS of 20

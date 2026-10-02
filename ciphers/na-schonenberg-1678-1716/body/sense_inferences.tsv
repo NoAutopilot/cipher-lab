@@ -1,0 +1,27 @@
+line	pos	code	key_value	key_grade	gloss_letter	sense_letter	grade	reason
+L01	6	23	[?]	U	_	n	I	"abye[n]do" = aviendo; 23 also n-shaped at L04 pos6 (gouyer[n]o) and L13 pos16 (e[n])
+L01	7	[blot]	[?]	U	_	(none)	I	no letter needed between abyen- and -do; passB saw none
+L02	0	81	a	M	a	d	I	"nobe-|dad" = novedad; single-occurrence code, aligner gave it no letter; gloss a kept on record
+L02	17	)5	u	M	u	u+[e]	I	the gloss's leftover e (unattached in the re-sync) closes "que"
+L03	0	8)	p	M	P	l	I	"que la de aver": p/l conflict (conflicts.tsv) read l, the L19 crib value
+L03	5	55	[?]	U	b	v	I	"a[v]er"; passB glossed b (b/v interchangeable in the hand)
+L03	12	31	x	M	d	d	M	"muda(d)o": x/d conflict (L06 pixel x vs L03 gloss d); gloss letter preferred here, both kept
+L03	15	)2	r	M	s	s	M	"e(s)te": )2 glossed s here and at L14 pos6, r at L05/L08/L10
+L04	5	49	n	M	r	r	M	"gouye(r)no": n/r/u conflict; gloss r preferred here
+L04	6	23	[?]	U	m	n	I	"gouyer[n]o"; passB glossed m (m/n confusion)
+L04	8	14	[?]	U	l	c	I	"[c]on las"; passB glossed l (c/l confusion in the gloss hand); L09 pos5 stays unread
+L06	17	50	r	M	r	s	M	"an(s)ya"? pixel-verified r vs aligner s 6/7; both kept, word unread
+L07	10	23	[?]	U	r	r	M	"ybye(r)e" = ubiere; gloss r taken as the letter, 23 not keyed
+L08	15	23	[?]	U	s	(unread)	U	no sense reading
+L09	5	14	[?]	U	e	(unread)	U	no sense reading
+L09	10	23	[?]	U	n	(unread)	U	no sense reading
+L09	12	23	[?]	U	r	(unread)	U	no sense reading
+L10	15	55	[?]	U	_	(none)	I	line-end code takes no gloss letter; "ocurryr" complete without it
+L11	4	44	y	M	y	m	M	"para (m)as seguridad": the gloss phrase read as a whole; key letters at 44 )8 40 49 56 15 34 81 3) diverge from the gloss, gloss preferred, all M
+L12	2	58	i	M	j	c	I	"[c]orespondenzya"; the gloss hand's i/j read as c on sense
+L12	16	)52	[?]	U	a	(unread)	U	no sense reading
+L13	1	96	[?]	U	o	o	I	"p[o]ndra"; gloss o
+L13	15	96	[?]	U	n	e	I	"solamente [e][n]": gloss n at this position; sense needs e-n over the two codes 96 23
+L13	16	23	[?]	U	_	n	I	as above
+L14	3	[blot]	[?]	U	E	(none)	I	"sob|re": no letter needed; passB glossed E (uncertain)
+L14	6	)2	r	M	r	s	M	"(s)cryto" = escrito; as L03 pos15

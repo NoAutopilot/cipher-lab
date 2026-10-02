@@ -1,0 +1,61 @@
+# na-schonenberg-1678-1716, body L01-L14 as Spanish (GAPS4, 2 Oct 2026, account-4). Disk only; no new reading of the image.
+# Three renderings per line. KEY = reading.txt's own letters (key.tsv regeneration, U codes as [?]), spaces inserted at
+# the word boundaries this worker reads; GLOSS = passB.tsv's gloss letter over each group as transcribed (the leaf's own
+# period gloss, positional, before the 2 Oct re-sync; _ = no letter visible); SENSE = the segmented and expanded Spanish
+# reading, where a letter inside [ ] is NOT on the leaf's gloss: it is this worker's inference from the sense of the
+# surrounding words (grade I, rule 4), and a letter inside ( ) is the gloss letter where it differs from the key value
+# (grade M, both witnesses named). Lines end with - where a word runs over the line break.
+# Grades (rule 4): KEY tokens L01-L14 = 251: H 0, C 115, S 0, M 120, I 0, U 16 (reading_tokens.tsv, unchanged by this job).
+# SENSE letters added or changed by inference: see body/sense_inferences.tsv (one row each, with the code and the reason);
+# SENSE counts: C 115, M 120, I 18 (16 U positions filled or nulled, plus 2 letters changed from key value on sense),
+# with 7 further positions where the gloss letter is preferred over the key value shown as (x) and counted M.
+
+L01 KEY   no abye[?][?]do nobe-
+L01 GLOSS n o a b y en _ _ l o N o b e
+L01 SENSE No abye[n]do nobe-                          ("No aviendo nove-"; 23 -> n, [blot] -> no letter; cf. L04, L13)
+L02 KEY   a ad en estas partes qu
+L02 GLOSS a d e n e s t a s P a r t e s q u e
+L02 SENSE -[d]ad en estas partes qu[e]                ("-dad en estas partes que"; 81 = a at M in key.tsv, sense needs d; the gloss's leftover e closes "que")
+L03 KEY   pa de a[?]er mudaxo erte
+L03 GLOSS P a d e A b e r m u d a d o e s t e
+L03 SENSE (l)a de a[v]er muda(d)o e(s)te              ("la de aver mudado este"; 8) p/l conflict read l as at L19; 55 U -> v; 31 x/d -> d as glossed; )2 r -> s as glossed)
+L04 KEY   gouyen[?]o [?]on las zynen-
+L04 GLOSS g o v y e r m o l o n L a s z y n e n
+L04 SENSE gouye(r)[n]o [c]on las zynen-              ("govierno con las ...": 49 n/r/u conflict read r as glossed; 23 -> n; 14 U -> c, the gloss hand's l)
+L05 KEY   stanzyas que ay sera bra-
+L05 GLOSS s t a n z y a s q u e a y i e r a b r a
+L05 SENSE -stanzyas que ay sera bra-                  ("zynenstanzyas" not resolved: "ynstanzyas"? "circunstanzyas"? M; "que ay sera bran" unsegmented, M)
+L06 KEY   n mexores pe no con anrya
+L06 GLOSS n M e x o r e s p e n o c o n a n r y a
+L06 SENSE -n mexores pe[r]o no con an(s)ya            (pixel-verified line; "mejores pero no con ansia"? 50 r (pixel) vs s (aligner, 6/7): both kept, M)
+L07 KEY   las que ybye[?]e del nor-
+L07 GLOSS l a s q u e y b y e r e d e l K o r
+L07 SENSE las que ybye(r)e del nor-                   ("las que ubiere del norte" = hubiere; 23 glossed r here; 6) K/n at M)
+L08 KEY   te y de ytalya pues [?]sar-
+L08 GLOSS t e y d e a y a l y a p u e s e s a v _
+L08 SENSE -te y de ytalya pues [?]sar-                ("-te y de Italia, pues ...": 23 unread here, U)
+L09 KEY   an de o[?]as yo[?]a[?]a las qu-
+L09 GLOSS A n d e o e a r y o n a r l a s q u e
+L09 SENSE -an de o[?]as yo[?]a[?]a las qu[e]          (unsegmented: "de otras ... las que"? 14 and 23 unread, U)
+L10 KEY   rqy puedan ocrryr[?]
+L10 GLOSS p u e d a n o c u r r y r z _ _
+L10 SENSE puedan oc(u)rryr                            ("puedan ocurrir"; )2 )0 32 take no gloss letter in the re-sync (key letters r q y not read as text); 55 U at line end no letter)
+L11 KEY   para ya sse e una da ade
+L11 GLOSS p a r a y m a s s e g u r y d a d d
+L11 SENSE para (m)a(s) se(g)u(r)(y)da(d) (d)e        ("para mas seguridad de": the gloss reads the phrase; the key regeneration diverges at 44 )8 40 49 56 15 34 81 3), all M)
+L12 KEY   la iorespondenzya[?]
+L12 GLOSS L a j i o r e s p o n d e n z i a
+L12 SENSE la [c]orespondenzya [?]                     ("la correspondencia"; 58 glossed i/j, sense c; single r is a period spelling; )52 U)
+L13 KEY   p[?]ndra solamente [?][?]
+L13 GLOSS p o n d r a s o l a m e n t e y n _
+L13 SENSE p[o]ndra solamente [e][n]                   ("pondra solamente en": 96 glossed o at pos1 and n at pos15, 23 blank; sense "en" before "sobre escrito")
+L14 KEY   sob[?]rer cryto en esta
+L14 GLOSS p o b E r e r e n y o e n e s t a
+L14 SENSE sob[ ]re (s)cryto en esta                   ("sobre escrito en esta" -> L18 "forma", L19 the address: "sobreescrito" = the superscription; )2 r -> s as at L03)
+L18       forma                                       (L18's own gloss, GAPS 2 Oct 2026)
+L19       a doña antonya de albanylla                 (address crib, GAPS 2 Oct 2026; the "form" L14 announces)
+
+# Letter's sense as read here (M-grade paraphrase, not a translation): "Amigo. No habiendo novedad en estas partes que la de haber
+# mudado este gobierno [con las ...] que hay ... mejores, pero no con ... las que hubiere del norte y de Italia, pues ... de otras ...
+# las que puedan ocurrir. Para mas seguridad de la correspondencia [...] pondra solamente en [el] sobreescrito en esta forma:
+# A doña Antonia de Albanilla." -- a cover-address instruction: write only this name on the outer wrapper. L05-L06 and L08-L09 stay unread.

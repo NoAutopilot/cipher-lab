@@ -1,4 +1,5 @@
 partial
+GAPS4 2 Oct 2026: body L01-L14 segmented as Spanish (body/reading_body.txt; SENSE C 115 / M 120 / I 18): a cover-address instruction ending "...pondra solamente en sobre escrito en esta forma: a doña antonya de albanylla"; judge on es17c7 (nearest era, 1634-1648) KEY -1.482 / GLOSS -1.346 / SENSE -1.204 vs real_p05 -0.903/-0.922 FAIL, 20 shuffled nulls max -1.985 and 20 shuffled targets max -1.838 all 0 PASS; the leaf's own gloss FAILs too, so the judge cannot decide at this N (not a negative); key, reading and --check (exit 0) unchanged.
 GAPS2 2 Oct 2026: the leaf's own gloss re-aligned to its groups with tools/interlinear_align.py (align/): agreement 0.699 vs a within-line shuffled-gloss control max 0.301 (n=300), 44 codes at the C bar vs control max 11; key.tsv rebuilt, leaf now C 136 / M 127 / U 16 (was 99/142/38), L18-L19 C 21 / M 7; three of the five crib codes (24, 51, 65) rise to C, 34 and 11 stay M; decode_key.py --check exit 0; judge on the 28-letter closing string FAIL unchanged (-1.05 vs real_p05 -1.014), 0 of 20 shuffled targets PASS.
 GAPS 2 Oct 2026: both closing lines now read -- L18 is glossed on the leaf after all ("forma." in the gloss hand over its 5 groups, image
 check) and L19 aligns to the clear address "A Doña Antonija de Albanylla" (15/16 vs controls max 0.286 and 0.438, crib_align.py); 28/28 tokens
@@ -288,12 +289,91 @@ novelty is the verifier's). Files: `align/` (gloss_align.py, rebuild_key.py, shu
 align_R0/R1/R2.tsv, key_R0/R1/R2.tsv, moves_R2.tsv, control.tsv, summary.txt, key_before_2026-10-02.tsv), key.tsv, exceptions.tsv (L06 pos17
 row), ciphertext.tsv (L01 pos6-7 fix), reading.txt, reading_tokens.tsv. Cost: the lane ledger. Vision calls 0. Hosts: none.
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated GAPS and GAPS2 2 Oct 2026)
+## GAPS4-na-schonenberg-1678-1716 (2 Oct 2026, account-4)
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of the Remaining-gaps section as rewritten by GAPS2 (gap 3),
+run 05:18-05:4x UTC (a re-spawn of GAPS3, which stopped at a permission prompt at 04:20 with nothing pushed). Intake gate exit 0 at the
+start. Disk only, 0 vision calls, 0 requests. Files: `body/` (reading_body.txt, sense_inferences.tsv, judge_body.py, judge_body.log,
+judge_body_results.tsv, spec_body_es17c7.json, spec_body_es.json). key.tsv, reading.txt and reading_tokens.tsv are untouched
+(`tools/decode_key.py ... --check`: "reading up to date", exit 0).
+
+**0. Era check first (rule 3, pt18/es17c lessons).** The letter is 1702-1716 Spanish diplomatic/private prose. tools/data has no 18th-c.
+Spanish corpus. Nearest in era and register: `es17c7` (1634-1648 *Cartas de algunos PP. de la Compañía de Jesús*, letters about court,
+war and diplomacy; 55-80 years before the target; 4.9M letters), then its three-volume subset `es17c` (1643-1647), then the spec default
+`es` = `es17` (Cervantes/Quevedo, 1605-1626 fiction: right language, wrong register and a century off). Per-fold false-negative spread
+from the READMEs, leave-one-file-out at N=519: es17c7 2.0-23.0% (11.5x, blended 11.1%), es17c 10.0-39.5% (4x, blended 23.5%); `es17` has
+no fold check on file. The target's own N is 235-245, below the N those rates were measured at. **A FAIL or PASS here is of unknown
+reliability** (era gap plus wide fold spread); both es17c7 and es are run and reported side by side, neither is a gate.
+
+**1. Per-line Spanish reading (`body/reading_body.txt`).** Three renderings per body line: KEY (reading.txt's key-regenerated letters, word
+boundaries inserted), GLOSS (passB's positional gloss letters, the leaf's own period gloss) and SENSE (segmented and expanded: a letter in
+[ ] is this worker's inference from sense, grade I; a letter in ( ) is the gloss letter preferred over the key value, grade M, both named).
+Grades (rule 4): KEY tokens L01-L14 = 251: H 0, C 115, S 0, M 120, I 0, U 16 (unchanged); SENSE: C 115, M 120, I 18 (16 U positions filled
+or read as no-letter, plus 81 = d and 58 = c on sense), 7 positions where the gloss letter is preferred over the key letter counted M;
+every inference is one row of `body/sense_inferences.tsv` with its reason. What the body says, as read (M-grade paraphrase): "Amigo. No
+abye[n]do nobe[d]ad en estas partes qu[e] [l]a de a[v]er muda(d)o e(s)te gouye(r)[n]o ... las que ybye(r)e del norte y de ytalya pues ...
+las qu[e] puedan ocurryr. Para (m)a(s) se(g)u(r)(y)da(d) de la [c]orespondenzya ... p[o]ndra solamente [e][n] sobre (s)cryto en esta
+forma: a doña antonya de albanylla" -- a cover-address instruction (write only this name on the outer wrapper), which is what L14 "en esta"
++ L18 "forma" + L19 the address already said in sequence. Unread spans, left as letters: L04-L05 "zynenstanzyas" ("ynstanzyas"?
+"circunstanzyas"?), L05-L06 "que ay sera bran mexores pe no con anrya", L08-L09 "pues [23]saran de o[14]as yo[23]a[23]a". Sense-side
+predictions for the image pass (gap 2), none applied to key.tsv: 8) = l at L03 pos0 (as at L19; "que la de aver"), 55 = v ("aver"), 31 = d
+at L03 ("mudado", the gloss's own d), )2 = s at L03 pos15 and L14 pos6 ("este", "scryto") against r at L05/L08/L10 (a homophone, or two
+signs), 49 = r at L04 ("gouyerno"), 23 = n at L01/L04/L13 and r at L07 (the gloss's own r, "ybyere" = ubiere), 14 = c at L04 ("con"),
+81 = d at L02 pos0 ("nobedad"), 58 = c at L12 ("corespondenzya"), 96 = o / e at L13. Logged in HYPOTHESES.md H3.
+
+**2. Judge, pasted as it came (`python3 body/judge_body.py --shuffles 20 --seed 1`, log `body/judge_body.log`).** Texts: KEY = the 235
+key-regenerated letters of L01-L14 (U dropped); GLOSS = passB's 245 gloss letters (the leaf's own known-genuine period text, the
+ZX-DEC349 calibration witness); SENSE = 245 letters with the I fills. Controls: 20 letter-shuffled nulls of KEY and 20 shuffled-target
+decodes (group order shuffled within each line, decoded with key.tsv; the ARM-C1 check). Spec variants `body/spec_body_es17c7.json`,
+`body/spec_body_es.json` (judge block only: language, letters_min 100, min_word_cover 0.4); the folder's own spec is unchanged (it
+judges the closing lines).
+
+| corpus | text | N | language score | real_p05 | null_p99 | word cover (real median) | verdict |
+|---|---|---|---|---|---|---|---|
+| es17c7 | KEY | 235 | -1.482 | -0.903 | -1.858 | 0.813 (0.953) | FAIL |
+| es17c7 | GLOSS (leaf's own gloss) | 245 | -1.346 | -0.922 | -1.894 | 0.841 (0.955) | FAIL |
+| es17c7 | SENSE | 245 | -1.204 | -0.922 | -1.894 | 0.865 (0.955) | FAIL |
+| es17c7 | 20 shuffled nulls of KEY | 235 | -2.266 .. -1.985 (mean -2.086) | -0.903 | -1.858 | -- | 0 PASS of 20 |
+| es17c7 | 20 shuffled targets (key.tsv) | 235 | -2.263 .. -1.838 (mean -2.100) | -0.903 | -1.858 | -- | 0 PASS of 20 |
+| es (es17) | KEY | 235 | -1.413 | -0.919 | -1.828 | 0.757 (0.936) | FAIL |
+| es (es17) | GLOSS | 245 | -1.311 | -0.894 | -1.832 | 0.812 (0.939) | FAIL |
+| es (es17) | SENSE | 245 | -1.153 | -0.894 | -1.832 | 0.853 (0.939) | FAIL |
+| es (es17) | 20 shuffled nulls of KEY | 235 | -2.175 .. -1.902 (mean -2.021) | -0.919 | -1.828 | -- | 0 PASS of 20 |
+| es (es17) | 20 shuffled targets (key.tsv) | 235 | -2.170 .. -1.894 (mean -2.036) | -0.919 | -1.828 | -- | 0 PASS of 20 |
+
+```
+$ python3 tools/judge_plaintext.py ciphers/na-schonenberg-1678-1716/body/spec_body_es17c7.json --text <KEY>
+ok   length: got=235, min=100, max=1000000000
+FAIL language: score=-1.482, null_p99=-1.858, real_p05=-0.903, real_median=-0.791, mode=both, N=235
+ok   words: cover=0.813, min=0.4, real_text_median_cover=0.953
+$ ... --text <GLOSS>
+FAIL language: score=-1.346, null_p99=-1.894, real_p05=-0.922, real_median=-0.797, mode=both, N=245
+$ ... --text <SENSE>
+FAIL language: score=-1.204, null_p99=-1.894, real_p05=-0.922, real_median=-0.797, mode=both, N=245
+```
+
+**Reading of the numbers (rule 3).** Every real text FAILs the real_p05 gate on both corpora, and every one of the 80 control texts sits
+0.35-0.6 below the worst real text: KEY, GLOSS and SENSE all clear null_p99 by 0.4-0.7 and no shuffled null or shuffled target comes
+within 0.35 of them (shuffled max -1.838 vs KEY -1.482 on es17c7). The leaf's own contemporary gloss -- genuine Spanish of this hand,
+not a candidate -- scores -1.346, well below real_p05 (-0.922) and only 0.14 better than the key regeneration; that is the ZX-DEC349
+shape: at this N and in this register (a terse secretarial letter with y-for-i, b-for-v, z-for-c spellings the corpora do not share, and a
+gloss hand that passB read with ~15 letter slips), the judge's real-prose threshold is not reachable by the real text either. The FAIL is
+"judge cannot decide", not a negative on the key; the ordering SENSE > GLOSS > KEY >> shuffles says the segmentation adds prose-likeness
+in the direction expected and the key regeneration carries the gloss's order, nothing more. Shuffled-target 0 of 20 PASS: the judge is
+not voided for this family at this N, and the reading does not clear it either, so no "reading ready" line. The L19 crib signal that
+account-3's 03:27 note asks to have verified is untouched by this job (nothing here changes L18-L19); its verifier is still owed.
+
+**Found / not found.** Found: the body reads as a connected Spanish cover-address instruction once segmented, with L14-L18-L19 forming one
+sentence ("...pondra solamente en sobre escrito en esta forma: a doña antonya de albanylla"), which is internal corroboration of the
+L19 crib reading from the body's own words (sense, grade M; not a control). Not found: a judge PASS on any rendering; a resolution of
+the three unread spans without the image. Cost: the lane ledger. Vision calls 0. Hosts: none.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated GAPS, GAPS2 and GAPS4 2 Oct 2026)
 Read so far: 279 of 279 cipher groups (100%) carry a value: 251 body groups under the leaf's own period gloss (L01-L14, ciphertext.tsv, re-aligned to the groups 2 Oct 2026 by tools/interlinear_align.py, align/), L18's 5 under its own gloss "forma." (found 2 Oct 2026), L19's 23 under the address crib with controls (15/16 resolved agree); by grade the leaf is C 136 / M 127 / U 16 (reading_tokens.tsv, GAPS2 2 Oct 2026; was 99/142/38), L18-L19 alone C 21 / M 7 / U 0. Read-as-sense is still unmeasured for the body: the gloss has never been segmented into Spanish words ("Letter's gist" is M-grade).
 Resolved 2 Oct 2026 (GAPS-na-schonenberg-1678-1716): the L18-L19 gap -- "forma." is L18's own interlinear gloss (layout, image check), L19 = "a doña antonya de albanylla" against the address (crib_align.py, slid-window and shuffled-crib controls both at 0 of 229 / 0 of 2000 at or above target), decode_key.py --check exit 0; 65 and 8) logged as conflicts (conflicts.tsv, HYPOTHESES.md H1).
 Resolved 2 Oct 2026 (GAPS2-na-schonenberg-1678-1716): the L01-L14 code-to-gloss alignment -- tools/interlinear_align.py on passB's own gloss letters (align/), R2 agreement 0.699 and 44 C-bar codes vs a within-line shuffled-gloss control max 0.301 / 11 (n=300, 0 at or above target); key.tsv rebuilt (C 40 / M 43 / U 6), 24, 51, 65 raised to C, 34 and 11 held at M, 50 = s at M against the pixel-verified L06 r (exceptions.tsv); decode_key.py --check exit 0; 88 of 256 tokens re-attached, all in the lines passB flagged plus L02.
 - Gloss and group transcription of the codes the aligner leaves unsettled: 6 U codes (23, 14, 55, 96, [blot], )52) and 5 conflict codes (50 s-vs-r, 34 a-vs-d, 49 n/r/u, 11 a-vs-s, 31 x-vs-d), plus 8) = p vs l (L03 pos0 / L19 pos20) and the tick-before/tick-after doubts passB names; one or more of these sits in every body line L01-L14 (reading_tokens.tsv) - blocker: not-attempted; the leaf reads cleanly at native resolution and 2x (L06, L18, L19), the limit was alignment, now reduced to these 12 codes; next: cut crops with `tools/iiif_lines.py --image images/NL-HaNA_1.02.04_63_0001.jpg --out images/lines`, one line crop per Sonnet subagent call for the 11 lines that carry a conflict or U code at a position the aligner moved (align/moves_R2.tsv) or a conflict witness (L02, L03, L06, L08, L09, L10, L11, L12, L13, L14, L01), each call asked only for the gloss letter over the named groups, plus 1 reconciliation unit, at ~$1.5 per call, ~$18
-- Body plaintext L01-L14 as Spanish (reading.txt now regenerates the re-aligned gloss as an unsegmented letter run, e.g. L13 "p[96]ndrasolamente[96][23]", L14 "sob[blot]rercrytoenesta" + L18 "forma"; the L01 date "Nobe[mbre]" is M) - blocker: not-attempted; no word-segmented or expanded reading exists and the spec judges only the closing lines, so the read-as-sense figure cannot be measured; next: segment and expand reading.txt L01-L14 into a per-line Spanish reading (disk only, the leaf's own gloss letters, M where a U or conflict code sits), run tools/judge_plaintext.py on it with shuffled-null controls after an es corpus era check (rule 3; the letter is 1702-1716, tools/data has es17c), ~$3
+Resolved 2 Oct 2026 (GAPS4-na-schonenberg-1678-1716): body plaintext L01-L14 segmented and expanded as Spanish (body/reading_body.txt, KEY/GLOSS/SENSE per line; SENSE grades C 115 / M 120 / I 18, inferences in body/sense_inferences.tsv) and judged with controls on the two nearest corpora (es17c7, 1634-1648 letters, 55-80 years off; es = es17 fiction): KEY -1.482 / GLOSS -1.346 / SENSE -1.204 vs real_p05 -0.903/-0.922 FAIL on es17c7, 20 shuffled nulls -2.266..-1.985 and 20 shuffled targets -2.263..-1.838 all 0 PASS; the leaf's own gloss FAILs too, so "judge cannot decide" at this N and register (not a negative); the body reads as a cover-address instruction ending "...pondra solamente en sobre escrito en esta forma: a doña antonya de albanylla", corroborating L19 from the body's own sense (M). Unread spans: L04-L05 "zynenstanzyas", L05-L06 "que ay sera bran mexores pe no con anrya", L08-L09 "pues [23]saran de o[14]as yo[23]a[23]a".
+- Judge calibration for the body: no era-matched Spanish corpus on disk (es17c7 is 1634-1648; the letter is 1702-1716) and the leaf's own gloss FAILs the nearest one, so the body's read-as-sense figure is measured but not gated - blocker: not-attempted; next: build tools/data/es18 from 1690-1720 Spanish letters or gazettes on archive.org (the V6-PTCORP pattern, ~12 minutes, outside requests to archive.org only), run its leave-one-file-out fold check at N=245 and re-run body/judge_body.py on it, ~$3; a corpus that passes the gloss and fails the shuffles is the gate the body lacks
 
 ## Escalation (1 Oct 2026; updated GAPS and GAPS2 2 Oct 2026)
 - [x] siblings: NA 1.02.04 finding aid (26 pages, ~152 invnrs) grepped for cijfer/cijferschrift/geheimschrift/chiffre/sleutel: invnr 63 is the only cipher-flagged item (NOTES "Sibling inventory"); DECODE dumps of 24 Sept 2026 have no row for it; the nearest same-writer cipher, HU3 (Schonenberg to Heinsius no. 185, 1709, NA 3.01.19 invnr 1445, one cipher word, unsolved), is another correspondent and office, not this key. Optional, unrun: an eye-check of the other digitised 1.02.04 scans for cipher the cataloguer did not flag; and NA 3.01.19's undigitised "Stukken betreffende cijfers en sleutels van cijferschrift" (web search, 2 Oct 2026), official cipher material, probably not this private key.
@@ -302,8 +382,8 @@ Resolved 2 Oct 2026 (GAPS2-na-schonenberg-1678-1716): the L01-L14 code-to-gloss 
 - [x] print: check-solved 25 Sept 2026, six sources: IA full text "Schonenberg brieven" 0 hits; Heinsius Briefwisseling (Huygens retroboeken) Schonenberg 413 hits, none relevant, Albanilla/Albanylla 0; 8 web queries, DECODE dumps, both solver repositories; web and blog check 2 Oct 2026 (10 queries, three blogs, 0 hits). Not read: two Utrecht theses on Schonenberg (dspace.library.uu.nl and studenttheses.uu.nl, both HTTP 403 from the cloud), background only.
 - [x] key-rebuild: done 2 Oct 2026 (GAPS2): tools/interlinear_align.py on L01-L14 + L18, three runs (unseeded, C-seeded, C+crib-seeded), R2 agreement 0.699 / 44 C-bar codes vs within-line shuffled-gloss control max 0.301 / 11 (n=300); key.tsv rebuilt from the tallies with the rule in align/rebuild_key.py (C 40 / M 43 / U 6; leaf tokens C 136 / M 127 / U 16); the earlier plurality tally is kept as align/key_before_2026-10-02.tsv. Nothing further for an aligner to do without new letters from the image.
 - [ ] image-check: partly done: L06 pixel-verified 20/20 (25 Sept); L18-L19 at 4x (25 Sept); the L14-to-address layout at native resolution plus L19's blot and second row at 2x (2 Oct, GAPS). Not checked: the 12 codes the aligner leaves unsettled (gap 2 above: 6 U, 5 conflict, 8) p-vs-l) and passB's tick doubts. Planned: one line crop per subagent call for the 11 lines named in gap 2, gloss letter over the named groups only, ~$18.
-- [ ] retry: done for L18-L19 (tools/decode_key.py --check exit 0 after the crib, 2 Oct 2026) and for the body after the aligner (--check exit 0, regraded: 38 U -> 16, GAPS2 2 Oct 2026; the closing-line judge re-run FAILs as before, 0 of 20 shuffled targets PASS). Not yet: a judge on the body as Spanish, which needs gap 3's segmented reading first, ~$3 (counted there).
-Verdict: keep going: 2 internal gaps; cheapest next: segment and expand the re-aligned gloss (reading.txt L01-L14) into a per-line Spanish reading and judge it with shuffled-null controls after an es corpus era check, ~$3
+- [ ] retry: done for L18-L19 (tools/decode_key.py --check exit 0 after the crib, 2 Oct 2026) and for the body after the aligner (--check exit 0, regraded: 38 U -> 16, GAPS2 2 Oct 2026; the closing-line judge re-run FAILs as before, 0 of 20 shuffled targets PASS). Body judged as Spanish 2 Oct 2026 (GAPS4): KEY/GLOSS/SENSE all FAIL real_p05 on es17c7 and es while 40 shuffled controls per corpus all sit 0.35-0.6 lower, 0 PASS; the leaf's own gloss FAILs too, so the judge cannot decide at this N (body/judge_body.log). Not yet: the same judge on an era-matched es18 corpus (gap 3, ~$3).
+Verdict: keep going: 2 internal gaps; cheapest next: build an era-matched es18 corpus (1690-1720 Spanish letters, archive.org, V6-PTCORP pattern) with its fold check at N=245 and re-run body/judge_body.py on it, ~$3; then the image pass on the 12 unsettled codes with body/sense_inferences.tsv as the letters to confirm or refute, one line crop per call, ~$18
 
 ## Web and blog check (GAPS-na-schonenberg-1678-1716, 2 Oct 2026)
 The CHECK-SOLVED-WEB required step (`.claude/briefs/check-solved.md`), run 2 Oct 2026 01:58-02:10 UTC via the WebSearch
