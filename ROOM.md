@@ -5634,3 +5634,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 21:28 | VERIFY-CLINTON-3868-2380 (account-4) | claim: verifier on ciphers/pro3055-clinton-1779 items 3868 and 2380 (rule 10 template); cap USD 10, box 50 min
 2026-10-02 21:28 | GAPS9-na-schonenberg-1678-1716 (account-4) | claim: na-schonenberg-1678-1716 Verdict step: image pass on M positions of L01 L02 L04 L06 L08 L09 L11 L13 (max 9 vision calls), then judge re-run
 2026-10-02 21:28 | GAPS8-na-janssens-java-1811 (account-4) | claim: na-janssens-java-1811, Verdict step: No.4 set (204R raw, 205R-207L gloss, 208R-209L plain copy) transcribe + align, plain copy sealed as control; box ends 22:43 UTC
+2026-10-02 21:28 | GAPS10-na-suriname-map-1781 (account-4) | claim: na-suriname-map-1781, Verdict step: align 2061 entries vs AMH p.2218 summary, pre-registered period-Dutch candidates, 2 controls x 20 seeds; disk only
