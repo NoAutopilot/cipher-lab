@@ -5157,3 +5157,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: catokwacopa-1875 -- Bourdeau class (a) read fully/in part: https://github.com/dbourdeau/cyphersolver/blob/main/targets/catokwacopa/NOTES.md
 2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: decode-9970-simancas-1527 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/burgo1527/NOTES.md
 2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: scorpion-1991 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/scorpion/NOTES.md
+2026-10-02 00:23 | SOLVERDIFF-BOURDEAU (account 2) | flag: sanguszkow-mniszech-dunin-1714 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/potocka1714/NOTES.md
