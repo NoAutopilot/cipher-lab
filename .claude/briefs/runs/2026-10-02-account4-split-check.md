@@ -4,6 +4,11 @@ Written 2 Oct 2026 02:4x UTC (clock read) by the account-4 parent (session_01SEz
 nomination (ROOM.md 00:52, 01:26 UTC 2 Oct). The session's prompt names the target, the hit count, the cap and the
 vision-call count. Role field: `SPLIT-<target> (account-4)`. Model: Fable 5.1 (Opus 5.5 if Fable fails). Box: 60 min.
 
+Before `create_session`, the parent runs `python3 tools/premise_check.py <target> --needs-images --leaf <the leaf the
+hits sit on> --row-text "<the nomination's wording>"` and pastes its output in the prompt; a nonzero exit means no
+session (the target goes back to the nomination with the failure named -- SPLIT-matignon, 2 Oct 2026: 0 of 31 hits
+had an image on disk; RETRO-2026-10-02-account4 proposal 5, applied 2 Oct 2026).
+
 ## What the hits are
 
 `ciphers/_triage/split-check-1-Oct-2026.tsv` (columns: target, job, key_range, token, n, status, positions, exceptions,

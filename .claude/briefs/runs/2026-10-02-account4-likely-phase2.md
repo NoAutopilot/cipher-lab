@@ -7,6 +7,12 @@ prompt names the row of `ciphers/_triage/likely-solves-2026-10-02.tsv` (read its
 `why` cells first), the cap, hosts and vision-call count. Role field: `LIKELY-<n>-<slug> (account-4)`. Model: Fable 5.1
 (Opus 5.5 if Fable fails). Box: 60 minutes. Stop before any unit that would cross 80 pct of cap or box.
 
+Before `create_session`, the parent runs `python3 tools/premise_check.py <slug> --row-text "<head_start cell>"` (add
+`--new` for a `new` row, `--needs-images --leaf <f.N>` when the first test reads an image) and pastes its output in the
+prompt; a nonzero exit means no session (the row goes back to SHORTLIST with the failure named). SHORTLIST itself runs
+it on every row it ranks (RETRO-2026-10-02-account4 proposal 5, applied 2 Oct 2026: LIKELY-2, -4, -7 and SPLIT-matignon
+spent USD 19.77 on rows whose `head_start` named material not on disk).
+
 1. `python3 tools/room.py --start`; last 30 ROOM.md lines; stop with `blocked` if another account claims the target in
    the last six hours; claim line naming the row.
 2. Intake gate. If the folder exists: `python3 tools/intake_gate_check.py <slug>`; exit 1 only for the missing web/blog

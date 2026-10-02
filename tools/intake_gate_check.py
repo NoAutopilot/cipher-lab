@@ -15,6 +15,16 @@ work, and clair349-este-guise-1556 and antt-msliv0638-brochado-1712 -- both `par
 full check-solved citation on the verdict line -- were exiting 1 as ambiguous before this fix,
 which is wrong; they should exit 0 the same way a cited `open` does.
 
+Head-only, labelled status line (2 Oct 2026, RETRO-2026-10-02-account4 proposal 2, Usage 8a): the verdict
+is read from the first STATUS_HEAD_LINES (12) lines only, and may carry a `Status:` label (`- **Status:**
+partial`). Twice in one window (LIKELY-9, GAPS-intercepted-royalist) the gate read intercepted-royalist-1646
+as `offline-only (line 137)` -- a quotation of Bourdeau's status for the same shelfmark -- while line 4 read
+`- **Status:** partial`, because the labelled line did not match and the scan ran to the end of the file.
+Must catch: a labelled status line in the head with a bare terminal word quoted further down (reads the head
+line); a file whose only status word sits past the head (exit 1 naming the head). Must NOT block: the terminal
+fixtures (`blocked`, `solved`, `closed-negative`, `offline-only` on line 1) and every cited open/partial
+fixture already in the offline test. Offline test: tools/tests/test_intake_gate_check.py.
+
 Two further fixes (25 Sept 2026, LANE CX handoff via STATUS.md):
 
 1. `found-solved` is now a recognised verdict word, gated the same way as `open`/`partial`: a
@@ -90,10 +100,22 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # (CLAUDE.md rule 5's status vocabulary) followed by a non-word character or end of line.
 # `partial` and `found-solved` are gated like `open` (25 Sept 2026); `solved`, `closed-negative`
 # and `offline-only` are terminal like `blocked` -- no citation needed (25 Sept 2026, this fix).
+# The word may carry a `Status:` label in any of the repo's own spellings (`Status: open`, `**Status: open**`,
+# `- **Status:** partial`, `status: partial`, `Status: **found-solved**`); the label is optional and only
+# `status` qualifies -- `Solver status (19 Sept 2026): Partial by Aymeloglu` must not match, since that is a
+# report of someone else's state, not this folder's rule-5 word.
 VERDICT_RE = re.compile(
-    r'^[\s\-*>#]*\b(open|partial|blocked|found-solved|solved|closed-negative|offline-only)\b',
+    r'^[\s\-*>#]*(?:[*_]*status[*_]*\s*:?[\s*_]*)?\b(open|partial|blocked|found-solved|solved|closed-negative|offline-only)\b',
     re.IGNORECASE,
 )
+
+# Rule 5 puts the status word in the first lines of NOTES.md; a status word matched further down is a
+# quotation (intercepted-royalist-1646 line 137 quotes Bourdeau's `offline-only` for the same shelfmark while
+# line 4 reads `- **Status:** partial`; LIKELY-9 and GAPS-intercepted-royalist, 2 Oct 2026, RETRO-2026-10-02-
+# account4 proposal 2). Scan at most the first STATUS_HEAD_LINES lines for the verdict; past that, report
+# "no status line in the head" and exit 1. The `blocked` correction lookahead (find_verdict) still runs from
+# the line found, so a correction just past the head is honoured.
+STATUS_HEAD_LINES = 12
 
 def _is_heading_not_verdict(line, match_end):
     """True when the verdict word is followed immediately (after any closing markdown emphasis
@@ -183,8 +205,13 @@ def find_verdict(lines):
     starting two lines later): CLAUDE.md's own intake-gate wording is "is `blocked`, whatever
     word it uses", so a nearby correction to blocked always wins over the stale word before it,
     exactly as it did before `partial` was added to VERDICT_RE (25 Sept 2026).
+
+    Only the first STATUS_HEAD_LINES lines are scanned for the verdict itself (2 Oct 2026, proposal 2 of
+    RETRO-2026-10-02-account4): rule 5 puts the word in the first lines, and the first match below the head
+    was twice a quotation of another solver's status (intercepted-royalist-1646 line 137). An optional
+    `Status:` label before the word is accepted (VERDICT_RE).
     """
-    for i, line in enumerate(lines):
+    for i, line in enumerate(lines[:STATUS_HEAD_LINES]):
         m = VERDICT_RE.match(line)
         if m and not _is_heading_not_verdict(line, m.end()):
             word = m.group(1).lower()
@@ -270,7 +297,8 @@ def check(notes_text, require_web=True, require_premise=None):
     if word is None:
         return 1, (
             "no open/partial/blocked/found-solved/solved/closed-negative/offline-only verdict "
-            "word found in NOTES.md -- ambiguous, treat as blocked"
+            f"word found in the first {STATUS_HEAD_LINES} lines of NOTES.md (rule 5: the status word is in the "
+            "first lines; a match further down is a quotation, not this folder's status) -- ambiguous, treat as blocked"
         )
     if word in TERMINAL_WORDS:
         return 0, f"{word} (line {idx + 1}) -- already terminal, nothing to gate"

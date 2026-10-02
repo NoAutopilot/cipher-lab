@@ -173,8 +173,14 @@ print(("PASS" if ok else "FAIL"), "synthetic open-unreadable-is-not-unread", f"-
 # citation (CLAUDE.md's gate names "the pages or full-text search actually read" as sufficient), not
 # an inaccessible edition. Must keep passing at exit 0, not trip the new "not read" negative match.
 check_real("huntington-luzerne-destouches-1781", 0, "open")
-check_real("lambeth-bacon-649", 0, "open")
-check_real("lambeth-casenowe-1586", 0, "open")
+# 2 Oct 2026 (RETRO-2026-10-02-account4 proposal 2): the two Lambeth folders carry `Status: open` on line 3 with
+# their check-solved citation ("not read cover to cover") only at line 61 / line 49 -- the head-only rule now reads
+# the line-3 word and finds no citation within CONTEXT_LINES of it, exit 1, where it used to skip to the cited
+# `**open.**` lower down. That is the rule working (rule 5: the status word and its citation sit in the head);
+# the folders need their citation carried up beside the status line (a check-solved/GAPS edit, not this tool's).
+# The idiom itself stays pinned by the synthetic case below.
+check_real("lambeth-bacon-649", 1, "open (line 3)")
+check_real("lambeth-casenowe-1586", 1, "open (line 3)")
 
 # synthetic: pin the same idiom directly against the negative-phrase regex
 SYNTH_OPEN_NOT_READ_COVER_TO_COVER = (
@@ -222,6 +228,53 @@ code, message = gate.check(SYNTH_VERDICT_WORD_IN_PROSE, require_web=False)
 ok = code == 1
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic verdict-word-in-prose-only", f"-> code={code} message={message!r}")
+
+# head-only, labelled status line (2 Oct 2026, RETRO-2026-10-02-account4 proposal 2). Must catch: a labelled
+# `- **Status:** partial (...)` on line 4 with a bare `offline-only (Bourdeau)` quotation on line 40 -- the exact
+# intercepted-royalist-1646 shape (its line 137 quotes Bourdeau's status for the same shelfmark) -- reads
+# `partial (line 4)`, never `offline-only`.
+SYNTH_LABELLED_HEAD_QUOTED_TERMINAL = (
+    "# Intercepted royalist letter\n\n"
+    "- **Source:** BL Add MS 72438, f.9r.\n"
+    "- **Status:** partial (2 Oct 2026, LIKELY-9: key no. 129 reads 190 of 735 tokens above 20 shuffled keys; "
+    "Evelyn iv pp.178-179 read in full)\n"
+    "- **Transcription:** ciphertext.txt holds only the opening.\n"
+    + "".join(f"filler line {i}\n" for i in range(6, 40))
+    + "offline-only (Bourdeau) -- cyphersolver/rupert reaches the same shelfmark but calls it offline-only.\n"
+)
+code, message = gate.check(SYNTH_LABELLED_HEAD_QUOTED_TERMINAL, require_web=False, require_premise=False)
+ok = code == 0 and message.startswith("partial (line 4)") and "offline-only" not in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic labelled-status-line-4-with-quoted-terminal-line-40", f"-> code={code} message={message!r}")
+# the same labelled shapes the repo actually uses must all read the labelled word
+for shape in ("Status: open", "**Status: open**", "- **Status:** open.", "status: open", "Status: **open**"):
+    code, message = gate.check(f"# T\n\n{shape}\nRibier 1666 vol.2 pp.140-145 read by this worker.\n", require_web=False, require_premise=False)
+    ok = code == 0 and message.startswith("open (line 3)")
+    fails += not ok
+    print(("PASS" if ok else "FAIL"), f"synthetic labelled shape {shape!r}", f"-> code={code} message={message[:40]!r}")
+# "Solver status (...): Partial by Aymeloglu" is a report of another solver's state, never this folder's word
+code, message = gate.check("# T\n\n- **Solver status (19 Sept 2026):** Partial by Aymeloglu, 16 Sept 2026.\n", require_web=False)
+ok = code == 1 and "verdict word found" in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic solver-status-label-is-not-a-verdict", f"-> code={code} message={message[:60]!r}")
+# Must catch: no status word anywhere in the first STATUS_HEAD_LINES lines, a bare one at line 137 -- exit 1
+# naming the head, never `offline-only (line 137)`.
+SYNTH_STATUS_ONLY_PAST_HEAD = (
+    "# A folder whose status word sits past the head\n\n"
+    + "".join(f"prose line {i} with no leading status word\n" for i in range(3, 137))
+    + "offline-only with no key identified -- Bourdeau's call for the same shelfmark.\n"
+)
+assert SYNTH_STATUS_ONLY_PAST_HEAD.splitlines()[136].startswith("offline-only")
+code, message = gate.check(SYNTH_STATUS_ONLY_PAST_HEAD, require_web=False)
+ok = code == 1 and f"first {gate.STATUS_HEAD_LINES} lines" in message and "line 137" not in message
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic status-word-only-past-head-exit-1", f"-> code={code} message={message[:90]!r}")
+# Must NOT block: a `blocked` correction just past the head after a `partial` inside it is still honoured
+SYNTH_BLOCKED_JUST_PAST_HEAD = "# T\n" * 10 + "partial\n\nblocked (pending the edition) -- corrected 2 Oct 2026.\n"
+code, message = gate.check(SYNTH_BLOCKED_JUST_PAST_HEAD, require_web=False)
+ok = code == 0 and message.startswith("blocked (line 13)")
+fails += not ok
+print(("PASS" if ok else "FAIL"), "synthetic blocked-correction-just-past-head", f"-> code={code} message={message[:50]!r}")
 
 # synthetic (26 Sept 2026, RETRO-2026-09-26c): a markdown-bold subheading whose leading word is a
 # recognised verdict word, followed immediately by a comma, must NOT be mistaken for a rule-5

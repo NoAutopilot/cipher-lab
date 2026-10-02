@@ -31,7 +31,12 @@ Stop before any unit that would cross 80 pct of the cap or the box, push what yo
 4. Update the "## Remaining gaps" section IN PLACE (the gap you addressed gets its result and date; the Verdict line
    is rewritten to name the next cheapest step and cost, or "blocked on <ASKS row>" if nothing cheap remains), add a
    dated step section above it ("## GAPS-<target> (2 Oct 2026, account-4)") with the numbers, then run
-   `python3 tools/gaps_check.py <target>` and paste its output. Status word: stays `partial` (rule 5: never
+   `python3 tools/gaps_check.py <target>` and paste its output.
+   If the rewritten Verdict line is "blocked on <ASKS/LOCAL-QUEUE row>" or names a person, also write or refresh
+   "## While waiting" with the one action that depends on nobody (WAIT-CHECK, 27 Sept 2026), then run
+   `python3 tools/next_steps.py --wait-only | grep <target>` and paste the (empty) result; a non-empty result is
+   a brief failure, not a done line (RETRO-2026-10-02-account4 proposal 4, applied 2 Oct 2026).
+   Status word: stays `partial` (rule 5: never
    `closed-negative`; `found-solved` only per step 2; a reading that clears its judge AND the shuffled-target check
    gets a "reading ready" ROOM line for a separate verifier, never a status change by you). If the target has a NEAR.md
    row, add one sentence with the numbers and refresh its "Last touched"; `python3 tools/near_check.py`.
