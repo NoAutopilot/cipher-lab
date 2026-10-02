@@ -1,0 +1,6 @@
+# Code spellings used by the GAPS5 legend passes for signs already in key.tsv (2 Oct 2026). Not new signs: the
+# readers wrote the Greek letter as [lambda] and the plain circle as bare o; their values are key.tsv's. Grade M:
+# on 2039 the key is transferred from 2007A/2061, not read from known plaintext on this sheet.
+code	value	grade	source	note
+[lambda]	t	M	key.tsv λ	same sign, ASCII code spelling
+o	r	M	key.tsv [o-plain]	readers wrote bare o for the plain circular o

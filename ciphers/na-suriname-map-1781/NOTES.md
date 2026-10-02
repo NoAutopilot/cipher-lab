@@ -768,15 +768,91 @@ suggested for the lane is now also listed in the gaps section below. `images/man
 
 `python3 tools/gaps_check.py na-suriname-map-1781` (2 Oct 2026, 06:1x UTC, after the gaps section below was updated): `OK keep-going na-suriname-map-1781: keep going: 6 internal gap(s), 5 step(s) untried / gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped`, exit 0.
 
+## GAPS5-na-suriname-map-1781 (2 Oct 2026, account-4)
+
+Brief: `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Premise check first (section at the end of this file,
+verdict CLEAR TO TEST, `tools/intake_gate_check.py` exit 0 at 13:40 UTC), then the Verdict's cheapest step and only that
+step: 2039's a-u "Verklaringe der Letteren" legend block -- crops, two blind passes and one reconciliation, ciphertext rows,
+alignment against `crib_2038_legend.tsv`, decode with `tools/decode_key.py`. Clock read at start 13:26 UTC.
+
+**Locating the block without a vision call.** `images/2039_cartouche.jpg` is not a native-resolution crop as its manifest
+line said: template-matched on `images/2039_overview.jpg` (FFT normalised cross-correlation at 18 candidate scales) it
+fits at ncc 0.86 only at half native resolution, covering native 564,564,3490,2362 (the bastion zoom, by the same test,
+is native: ncc 0.93). Its row profile shows the title line and about 13 legend lines at pitch 45 crop px (90 native)
+and ink to its bottom edge, and the overview's profile in the same columns shows the pitch continuing to overview y
+about 925 (native about 3700). One native IIIF region 780,980,2100,2800 was fetched once (`images/2039_legend_native.jpg`,
+633 KB, HTTP 200) and cut with `tools/iiif_lines.py --image ... --prominence 25 --distance 55 --lines-per-crop 2
+--max-width 1200 --overlap 200 --debug` into 15 two-line bands x 2 segments = 30 crops (30 line centres at pitch 100;
+crops 1.6 MB, left uncommitted and regenerable by the command in `images/manifest.json`, since the folder is over its
+30 MB line). The region turned out too narrow on the right: every band's _s2 is cut at native x 2880 and the readers
+report the line ends missing, so entries d, h and p and the ends of c, g, o and r are outside what was read.
+
+**Two blind passes and one reconciliation.** Two blind Sonnet subagent passes (`passes/leg2039_passA.tsv`,
+`passes/leg2039_passB.tsv`; brief `passes/leg2039_pass_brief.md`: shape codes only, no letter values, no access to
+NOTES.md, the key or each other; one Read per crop), then this worker's one reconciliation look at a 7-crop montage of
+bands L04-L07. Both passes found the same structure: the line under the title (L01), the lettered legend a, b, c, e, f,
+g, i, k, l, m, n, o, q, r (labels plain, each followed by a cipher clause; the clauses are short, 7-40 signs), one
+long entry labelled s further down, and below the legend a plain-labelled fortification list (Bastion Holland,
+Gelderland, Overijssel, Groningen, Utrecht; Texiersburg, Cranie, Nassauw, Brunswyk, Weilburg; Redan Amsterdam, Redan
+Alkmar; Schans aan ...) with plain gun counts and a cipher clause after each -- the same shape as the bastion block
+RD03C saw. Own look: the recurring initial glyph of a, b, m, n is a looped thorn/p shape (coded `[thorn]`; A had
+called it a curl, B an h with tail), the "3"-shaped sign is a plain 3 without the ezh dot and is kept distinct from
+`[ezh-dot]`, the start of band L05 line 2 ("kq ra darλrotrh") is entry o's text continued, so B's doubtful "p" label is
+not one, and no d, h or p label is inside the region.
+
+Result in numbers: `ciphertext_2039_legend.tsv` has 374 sign rows in 16 lines (head + 15 entries: a 13, b 26, c 40,
+e 36, f 30, g 8, i 13, k 12, l 7, m 13, n 8, o 13, q 25, r 24, s 73 -- c and s carry pass-B spill-over from their
+neighbours at M; g is pass B only, pass A's g text sat inside its f row and was not split). Pass agreement after code
+normalisation, by sequence alignment: 277 of 370 aligned positions (0.749); per entry head 28/29, a 10/13, b 15/26,
+c 20/40, e 31/36, f 18/30, i 12/13, k 10/12, l 6/7, m 12/13, n 5/8, o 10/13, q 19/25, r 22/24, s 59/73. Conf H
+(both passes, same sign) 277, M 97 (the other pass's sign in the note column). The bastion/redan lines (L07-L15) were
+read by both passes but are not in the file: not this step's block.
+
+Decode (rule 4, rule 7): decode.json job 2 applies key.tsv plus `key_2039_aliases.tsv` (two code spellings of signs
+already in the key, `[lambda]`=t and bare `o`=`[o-plain]`=r, grade M) with every key row in `m_sources`, so a keyed
+token on this sheet is M (the key is transferred from 2007A/2061, not read from plaintext here) and an unkeyed one U:
+`tools/decode_key.py ciphers/na-suriname-map-1781` -> `ciphertext_2039_legend.tsv: tokens 374: M 121, U 253`;
+`--check` exit 0 (13:44 UTC). Grades: H 0, C 0, S 0, M 121, I 0, U 253. 253 of 374 signs (68%) are outside the 17-sign
+key: the legend hand uses many Latin-letter-shaped signs (k, l, r, g, p, h, d, w, f, m, b, q, x, t, 8, 9, 0) the key
+has no row for.
+
+**Alignment against crib_2038_legend.tsv, rule 3** (`align_2039_legend.py`, 20 shuffled-crib controls: letters shuffled
+within each crib entry, lengths and stock kept -- a control that varies on the statistic's own axis):
+- same-label (2039 entry x against 2038 entry x, best offset, fraction of keyed positions matching): real 0.269 vs
+  controls mean 0.283, sd 0.021, p95 0.311; z -0.68; 15 of 20 controls at or above the real score -- **no signal**.
+- free (best over all 25 crib entries and offsets): real 0.594 vs controls mean 0.550, sd 0.028, p95 0.598, max 0.629;
+  z +1.58; 2 of 20 controls at or above the real score -- **not above the control's p95; a non-pass**.
+So no 2039 legend token gets an S grade from the crib and no vote file was written. Read with the entry lengths (2039's
+b 26, i 13, l 7 against 2038's b 17, i 18, l 24), 2039's 1781 legend is not 2038's 1778 list entry for entry; the
+2038 crib stays useful only as a vocabulary (Magatijn, Sluijs, Smeederij, Casserne, Neegers, Timmerloos ...) for a
+word-level search once more signs are keyed, not as a label-aligned crib. Not a design negative: 68% of the signs are
+unkeyed, so the statistic rests on 121 M-graded positions of 374.
+
+One hypothesis, logged, not a reading: the four-sign unit `5 [hash] [pi] o` recurs in entries b, e and q (both passes,
+three occurrences); under the key it is v-o-?-r, which fits Dutch "voor" if `[pi]` is a second o -- untested, no
+control, M at best; for HYPOTHESES.md when the Remarque or cartouche is read.
+
+Vision calls: 2 blind subagent passes + 1 own reconciliation montage = 3, the brief's cap. Requests: service.archief.nl 1
+(the native region), www.googleapis.com 3, archive.org 1, be-api.us.archive.org 1 (the Premise check); all HTTP 200,
+1.6 s apart, no challenge page. Box 13:26-13:5x UTC of 55 minutes. Housekeeping: this step adds 0.63 MB committed to
+`images/` (42 MB tracked; the AX2-SHRINK-shape job in the gaps list stands); the 30 crops and the debug overlay are
+regenerable and not committed.
+
+Suggested follow-ups (one line each, not run): (1) fetch the right-hand strip native 2800,980,1300,2800 once and run the
+same two passes on it for entries d, h, p and the cut line ends, ~$4; (2) port `align_2039_legend.py` into
+`tools/interlinear_align.py` as a `--glyph-tokens` scoring mode (Usage 8) before a third target writes its own.
+
+`python3 tools/gaps_check.py na-suriname-map-1781` (2 Oct 2026, 13:5x UTC, after the gaps section below was updated): `OK keep-going na-suriname-map-1781: keep going: 6 internal gap(s), 5 step(s) untried / gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped`, exit 0.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have been transcribed to this folder's two-pass bar, so there is no target ciphertext.tsv and no reading (RD03D "State at close"). The key-source control (self-consistency only) is 37 of 56 tokens at grade C (66.1%), with M 1 and U 18 (reading.txt header; tools/decode_key.py --check exits 0, rerun on a scratch copy 1 Oct 2026). RD03D's "C 56, M 1, U 18" is a slip for the 56-token total. The key has 17 grade-C signs (key.tsv), period and ours.
 - 2007A key-source remainder: Nota clauses B/D/E/F (about two-thirds of the block), the Remarque paragraph after "Signatuure", and the other enciphered map labels on 2007A whose plain twins are on 2007B - blocker: not-attempted; the plain text is in hand (scratch_2007b_nota_plain.txt; images/2007b_remarques_crop.jpg is on disk but not transcribed). Only pass A of Nota B/D/E/F survives as a file (scratch_notaBDEF_passA.tsv); pass B exists only in the RD03C transcript. Each attempt so far gained signs (13, then 15, then 17), so rule 3's third-attempt clause does not apply. The з/Signatuure conflict belongs here too: single-reader zoom re-reads of that one word on crops already at native resolution failed twice (RD03C, RD03D), so settle з from its other occurrences in the aligned Remarque, not from a third read of the same word; next: transcribe 2007B's plain Remarque, run a fresh blind pass B over the Nota B/D/E/F crops, add a glyph-token option to tools/interlinear_align.py (it is numeral-only today; Usage 8, no private copy), and align against 2007B's plain text seeded with the 17 signs, ~$9
 - 2077 (fortress Zelandia): the 3-line title cartouche after "PLAN"; the right-hand "Explicatie der Signatuuren" list (about 25 entries a-z, plain and cipher mixed); the second cipher "Explicatie" list and profile lines inside the left inset panel; the enciphered words inside the plain top-left Nota; the cipher river and land labels - blocker: not-attempted; RD03D sampled only the cartouche and 2 legend entries (9/27 high-confidence). The classifier undercounted this sheet: images/2077_overview.jpg shows two cipher legends, not one list of about 18. An untried crib is on disk: 4.VEL 2078 (images/2078_overview.jpg) is Wollant's plain plan of the same fort with a plain lettered Nota legend (a. oude Inspectie, b. Artillerie Caserne en Monteerings Kamer, l. Corps de Garde, u. Beetehuys, w. Woning van den Opsigter der Directie Slaaven, ...), and those building names recur among 2077's own plain entries (Menagerie, Ambagts Slaaven van de Monteerings-Kamer, Beetehuijs, Opziger). 2076 (plain outworks plan, legend A-S) is a second candidate crib; next: cut native IIIF crops of both 2077 legends and the cartouche with tools/iiif_lines.py (the image on disk is capped at 5000 px against a native 10711), plus a crop of 2078's Nota; run 2 blind passes + 1 reconciliation per 2077 block; align each cipher entry against its building name from 2078/2076 and 2077's own plain entries, ~$10
 - 4.VEL 2061 (Redout Leyden): the No.1-6 battery list and the a-g legend below the glossed title and battery-header block - blocker: not-attempted; the gloss was checked on the header only (VX-CS04, RD03B). RD03B saw plain "M" and numerals mixed with cipher abbreviation-words (images/2061_title_topleft.jpg) and left them unread. The text after Atlas of Mutual Heritage page 2218's "The legend in cipher on Wollant's map is as follows: (...)" is elided in this file and was never captured; next: re-read AMH page 2218 in full and capture any plain legend text, then cut native line crops of the battery list and a-g legend with tools/iiif_lines.py and check how far the gloss covers them, ~$4
-- 4.VEL 2039 (fortress Nieuw Amsterdam): the 3-line title cartouche (the van-vs-PAN position on line 2 is settled: "van", 2 Oct 2026, GAPS-na-suriname-map-1781, two independent high-zoom reads agree with RD03C against RD03D's single pass, see the section above), the a-u "Verklaringe der Letteren" legend, the clause after each Bastion/Redan label, and the lower-left Remarque - blocker: not-attempted; there is one uncorroborated pass on the title (46/72 glyphs matched, RD03D) and no ciphertext.tsv. The sheet is copy-free at 11267x8656, and Arabic numerals are plain (RD03C). Plain-counterpart search of the 4.VEL 2030A5-2090C block done 2 Oct 2026 (GAPS2-na-suriname-map-1781, see the section above and `vel_2030-2090_catalogue.tsv`): 4.VEL 2038, "Plan van 't fortresse Nieuw Amsterdam" (J.C. Hurter, 31 July 1778, "Zeer uitvoerig"), is plain Dutch throughout with a capital A-K legend (the five bastions by province, sluices, creek) plus a lowercase a-z building list and batteries I-VIII, at 2039's exact size and scale (0.44 x 0.425 El; 100 Rijnlandse roeden = 370 strepen) -- `images/2038_overview.jpg`; 4.VEL 2040 (Wollant, 1784) is plain but carries only artillery labels ("6 Can. a 24 lb Calib", "4 Mortieren ...") and a Nota -- `images/2040_overview.jpg`. 2038's legend block is transcribed (2 Oct 2026, GAPS3-na-suriname-map-1781, see the section above): `crib_2038_legend.tsv`, 35 legend entries (capitals A-G, I, K; lowercase a-z without j; the No. I-VIII battery line) plus title and signature lines, 40 text rows, H 24 / M 16, from two blind passes (28/40 lines identical, 152/169 words) and one reconciliation on the native crops `images/crops_2038/`; 2040's artillery labels are not transcribed (secondary); next: cut iiif_lines crops of 2039's a-u legend block (native region already on disk as images/2039_cartouche.jpg), run 2 blind passes + 1 reconciliation, build ciphertext.tsv rows for the legend, align the a-u entries against crib_2038_legend.tsv's a-z and decode with decode_key.py, ~$5; then the cartouche and Remarque the same way, ~$5
+- 4.VEL 2039 (fortress Nieuw Amsterdam): the 3-line title cartouche (the van-vs-PAN position on line 2 is settled: "van", 2 Oct 2026, GAPS-na-suriname-map-1781, two independent high-zoom reads agree with RD03C against RD03D's single pass, see the section above), the a-u "Verklaringe der Letteren" legend, the clause after each Bastion/Redan label, and the lower-left Remarque - blocker: not-attempted; there is one uncorroborated pass on the title (46/72 glyphs matched, RD03D) and no ciphertext.tsv. The sheet is copy-free at 11267x8656, and Arabic numerals are plain (RD03C). Plain-counterpart search of the 4.VEL 2030A5-2090C block done 2 Oct 2026 (GAPS2-na-suriname-map-1781, see the section above and `vel_2030-2090_catalogue.tsv`): 4.VEL 2038, "Plan van 't fortresse Nieuw Amsterdam" (J.C. Hurter, 31 July 1778, "Zeer uitvoerig"), is plain Dutch throughout with a capital A-K legend (the five bastions by province, sluices, creek) plus a lowercase a-z building list and batteries I-VIII, at 2039's exact size and scale (0.44 x 0.425 El; 100 Rijnlandse roeden = 370 strepen) -- `images/2038_overview.jpg`; 4.VEL 2040 (Wollant, 1784) is plain but carries only artillery labels ("6 Can. a 24 lb Calib", "4 Mortieren ...") and a Nota -- `images/2040_overview.jpg`. 2038's legend block is transcribed (2 Oct 2026, GAPS3-na-suriname-map-1781, see the section above): `crib_2038_legend.tsv`, 35 legend entries (capitals A-G, I, K; lowercase a-z without j; the No. I-VIII battery line) plus title and signature lines, 40 text rows, H 24 / M 16, from two blind passes (28/40 lines identical, 152/169 words) and one reconciliation on the native crops `images/crops_2038/`; 2040's artillery labels are not transcribed (secondary); the a-u legend block was transcribed 2 Oct 2026 (GAPS5-na-suriname-map-1781, see the section above): one native IIIF region (`images/2039_legend_native.jpg`), 30 iiif_lines crops, two blind passes (277/370 positions, 0.749) and one reconciliation, `ciphertext_2039_legend.tsv` 374 signs in 15 entries (a, b, c, e, f, g, i, k, l, m, n, o, q, r, s; d, h, p and four line ends lie past the region's right edge), decode `M 121, U 253` (--check exit 0), alignment against crib_2038_legend.tsv a control-backed non-pass (same-label z -0.68, free z +1.58, 2/20 controls at or above) -- 2039's 1781 list is not 2038's 1778 list entry for entry, and 68% of the legend's signs are outside the 17-sign key; next: fetch the right-hand strip (native 2800,980,1300,2800) once and run the same two passes for d, h, p and the cut line ends, ~$4; then the cartouche and Remarque the same way, ~$5; the key itself grows only from gap 1 (2007A Nota/Remarque against 2007B), which is now the step that unlocks every 2039 reading
 - 4.VEL 2046 (redoubt Purmerent): the title cartouche and the enciphered legend and profile text - blocker: not-attempted; there is one uncorroborated title pass (36/56 glyphs matched; best run only "DER", RD03D). No gloss or twin is on file. The block's catalogue (`vel_2030-2090_catalogue.tsv`, 2 Oct 2026) lists nine Purmerent plans beside it -- 2041A/B, 2042 (Calvi, "Met aanwijzingen"), 2043 (profile), 2044A/B and 2045A/B ("Met aanwijzingen"), 2047 (1781 Schetsplan), 2048 (Wollant, nummer C) -- all digitised; 2042 and 2045A eye-checked 2 Oct 2026 (GAPS3-na-suriname-map-1781, one 2800-px IIIF overview each, `images/2042_overview.jpg`, `images/2045A_overview.jpg`): both carry a plain Dutch lettered legend -- 2042 (Calvi, undated) a lowercase a-l building list in a framed box (batteries a-c with gun counts, d Plaats voor de Afdakken, e Officiers Huis, f Keuke en Magas., g Quartier voor 75 Mann, h Keuke en Water magas., i Wagt & Proviant magasyn, k Provost, l Buite wagt), the shape 2046's legend most likely enciphers; 2045A (Dircks, undated) a capital A-H works list (Redout, Bastions, Gragt, Bedeckte Weg en Glassie, Profiel EF, Wagt Huys, Sluys) -- 2042's a-l legend is transcribed (2 Oct 2026, GAPS4-na-suriname-map-1781, see the section above): `crib_2042_legend.tsv`, 11 entries a-l without j in 13 rows (2 continuations), H 10 / M 3, from two blind passes (12/13 rows identical, 51/52 words) and one reconciliation on the native crop `images/crops_2042/leg2042_L01.jpg` (open: a's ℔ders, d's Affdakken/Afdakken, k's Provost/Provoost); 2045A's A-H works list is not transcribed (secondary); next: after the key is extended on 2039, the same protocol as 2039 on 2046 (iiif_lines crops of its legend and cartouche, 2 blind passes + 1 reconciliation, ciphertext.tsv rows, align the enciphered entries against crib_2042_legend.tsv and decode with decode_key.py), ~$9
 
-- housekeeping (not a reading gap): `images/` is 41 MB tracked against the 30 MB line, 28 MB of it `images/strips/` from an earlier worker - blocker: not-attempted; a lane-level job no step has owned since GAPS2 named it (2 Oct 2026), and every step since has only added to the folder; next: a shrink in the AX2-SHRINK shape (images_manifest_full.tsv with a cited_by column, a regen_images.sh from the IIIF sources, a byte-identical regen test on a sample, uncited strips deleted), ~$3
+- housekeeping (not a reading gap): `images/` is 42 MB tracked against the 30 MB line (41 before GAPS5's 0.63 MB native legend region), 28 MB of it `images/strips/` from an earlier worker - blocker: not-attempted; a lane-level job no step has owned since GAPS2 named it (2 Oct 2026), and every step since has only added to the folder; next: a shrink in the AX2-SHRINK shape (images_manifest_full.tsv with a cited_by column, a regen_images.sh from the IIIF sources, a byte-identical regen test on a sample, uncited strips deleted), ~$3
 
 ## Escalation (1 Oct 2026)
 - [x] siblings: VX-CS04 read the catalogue scopecontent of all 95 items in 4.VEL 2030A5-2090C and eye-checked the images. It found 2046 and 2061 (catalogued "cyferschrift") and 2077 (no cipher word in the catalogue) and ruled out 2076 and 2078 as plain. DECODE's cached dumps hold only NA 1.05.03 inv 219 (1689, a different cipher), and neither solver repo has this target. Not opened: the invnrs next to 2007A/B outside that block, and the other ~9000 4.VEL items. 2077 shows that a cipher sheet with no cipher word in its catalogue record can be found only by eye.
@@ -786,7 +862,7 @@ Read so far: unmeasured on the target sheets. No 2039, 2046 or 2077 tokens have 
 - [ ] key-rebuild: the key has been extended only by hand-aligning known plaintext (13, then 15, then 17 signs; RD03, RD03B, RD03C). Each pass gained signs, so this is not retired under rule 3. No DP/EM alignment, annealing or LM-context instrument has been tried. Planned: tools/interlinear_align.py with a glyph-token option, aligning 2007A's Nota and Remarque against 2007B, seeded with the 17 signs (gap 1), and then the 2077 legend against 2078's names (gap 2).
 - [ ] image-check: done in part. RD03D re-read "zwaare" at 5x and found the λ/ψ clash was a mis-segmentation. The з/Signatuure single-word re-read has failed twice (RD03C, RD03D) on crops already at native resolution, so it is not to be repeated with the same instrument; it moves into gap 1's alignment. The van-vs-PAN check on 2039 cartouche line 2 was run 2 Oct 2026 (GAPS-na-suriname-map-1781): one blind 4x read plus this worker's own 3x read both give `5[delta][h-loop]` = "van", settling it against RD03D's single "PAN" pass. Still never run: a native-crop image check of 2061's battery list and a-g legend (gap 3). Planned: with gap 3, ~$4.
 - [ ] retry: there is no target-sheet ciphertext to rerun yet. The key-source decode is current (56 tokens: C 37, M 1, U 18). Before any target reading can be judged, a Dutch judge corpus from the right era is needed: tools/judge_plaintext.py has no "nl" corpus wired (its comment about nl_repo says so); nl20 is 1880-1920 novels and nl_dev is the Statenvertaling, and neither is matched to 1781 engineering prose. Planned: build an nl18 corpus (~$3, the V6-PTCORP precedent), then rerun every target group with the extended key and regrade.
-Verdict: keep going: 6 internal gaps (5 reading, 1 housekeeping); cheapest next: cut iiif_lines crops of 2039's a-u "Verklaringe der Letteren" legend block (native region on disk as images/2039_cartouche.jpg, else one native IIIF region fetch), 2 blind passes + 1 reconciliation, ciphertext.tsv rows for the legend, align a-u against crib_2038_legend.tsv's a-z and decode with decode_key.py, ~$5; after that, 2039's cartouche and Remarque the same way, ~$5
+Verdict: keep going: 6 internal gaps (5 reading, 1 housekeeping); cheapest next: 2039's right-hand legend strip (native 2800,980,1300,2800; one IIIF fetch, 2 blind passes + 1 reconciliation, append the d, h, p entries and the cut line ends to ciphertext_2039_legend.tsv, re-run decode_key.py --check and align_2039_legend.py), ~$4; after that gap 1's key extension (2007A Nota B/D/E/F and Remarque against 2007B, ~$9), which every 2039 reading now waits on
 
 ## Web and blog check (GAPS-na-suriname-map-1781, 2 Oct 2026)
 
@@ -827,3 +903,54 @@ Model-solve announcements (c): `Suriname 1781 map cipher "solves" OR "solved" Cl
 
 Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, rule 10,
 never a novelty verdict). Status word unchanged (`partial`).
+
+## Premise check (GAPS5-na-suriname-map-1781, 2 Oct 2026)
+
+Run first, 13:2x-13:4x UTC 2 Oct 2026, because `tools/intake_gate_check.py na-suriname-map-1781` exited 1 only for the
+missing Premise check section (the 12:47 UTC rule). Stance: try to prove 4.VEL 2039's legend is already read. Each of
+(a)-(d) as `.claude/briefs/check-solved.md` defines them; "opened" means the file or page was read in this session or
+is on disk from a named earlier session.
+
+(a) **The folder's own mentions of a decipherment, gloss, clear copy or translation -- not found for 2039.** Every such
+mention in NOTES.md was listed by grep (vertaal / gloss / ontcijfer / sleutel / deciph / transcri / facsimil) and traced:
+2007B "cijferschrift vertaald" is 2007A's plain twin (on disk, `images/2007b_*.jpg`, used for the key; it is not a twin
+of 2039); 2007A's and 2061's interlinear glosses are on those two sheets (on disk, key source); Atlas of Mutual
+Heritage page 2025 (VEL2039), read 25 Sept 2026 by VX-CS04, says the a-u legend and the lower-left note are "in
+geheimschrift, niet getranscribeerd"; VX-CS04's native-resolution eye-check of 2039's cartouche, bastion list and
+Remarque found no gloss and no key on the sheet. The one mention not opened is den Heijer, *Grote Atlas van de
+West-Indische Compagnie* II (2012) p. 342, which facsimiles 2039 (finding aid, `vel_2030-2090_catalogue.tsv` row
+2039): Google Books API (1 query, `"Grote Atlas van de West-Indische Compagnie" Wollant`) 0 volumes; Internet Archive
+advancedsearch (1 query) 1 unrelated item (an Aruba plan) -- **unreachable from the cloud**; the only evidence about
+its text is indirect (AMH credits den Heijer as its source and itself says not transcribed). This job's own native
+legend region (`images/2039_legend_native.jpg`, fetched below) was located by ink profile, not looked at, before the
+blind passes; the reconciliation look below is the first eye on it.
+(b) **Other solvers' working files -- not found.** On-disk snapshots grepped for suriname / wollant / 4.VEL / zeelandia
+/ nieuw amsterdam / purmerent / paramaribo: `sources/cyphersolver/2026-10-01` and `2026-10-02` (Bourdeau's current
+tree: CLAUDE.md, mercy1648, matignon1586, catokwacopa only), `sources/bourdeau/`, `sources/solver-diffs/` including
+`2026-10-02-aymeloglu.tsv` (his TARGETS rows: no Suriname or VEL item), `sources/decode/records-decrypted-2026-09-24.tsv`
+(the only Suriname record is DECODE 7841, NA 1.05.03 inv 219, 1689 -- a different cipher, already logged above). No
+apply-key script, rendering or output by another solver exists for this item; no borrowed key has been run on it (the
+17-sign key.tsv is this repository's own, built from 2007A/2061).
+(c) **Physical neighbours -- no clear copy or decipherment beside it.** 4.VEL is a map series, so the neighbours are the
+adjoining inventory numbers, all in `vel_2030-2090_catalogue.tsv` (the EAD read offline, GAPS2): 2036 (regenbak,
+1743), 2037 (Chambrier, 1744, French), 2038 (Hurter, 31 July 1778, plain Dutch throughout -- the crib already on
+disk, `crib_2038_legend.tsv`), 2040 (Wollant, 1784, plain artillery labels and a Nota, `images/2040_overview.jpg`),
+2041A/B (Purmerent). 2039's own METS record carries one file (catalogue column `files` = 1): there is no "Blad 2"
+translation sheet of the 2007A/2007B kind. Grep of the whole 95-item block for vertaal / sleutel: 0 rows; "met
+verklaring" appears only on 2061 (its own gloss, already used), 2067A-B (Tourton 1710, plain French) and 2077
+("gedeeltelijke verklaring"). The 2007B pattern ("kopie, cijferschrift vertaald") occurs once in the series as far as
+the on-disk catalogue goes (2007A/B sit outside this block; the rest of 4.VEL's ~9000 items were not read).
+(d) **Recipient-side editions -- not found.** The sheets went to the directors of the Sociëteit van Suriname in
+Amsterdam (NA 1.05.03). Google Books API, `country=US`, 2 further queries this session: `"Verklaringe der Letteren"
+"Nieuw Amsterdam"` (345 volumes, none about these sheets in the top 5: 1887 De Librye, 1861 book lists, 1895
+Wetenschap letteren en kunst, 1730 theology) and `Wollant 1781 Suriname cijferschrift "Nieuw Amsterdam" plan` (2
+volumes, both Leupe's 1867 *Inventaris der verzameling kaarten berustende in het Rijks-Archief*, whose row reads
+"... 1781 ... Met profil. Gedeeltelijk in cijferschrift" -- the catalogue entry, no text). Internet Archive full-text
+(be-api, 1 query, Wollant AND "Nieuw Amsterdam" AND cijferschrift/geheimschrift): 0 hits. Earlier passes already
+covered AMH (25 Sept), 6 + 11 web searches and the three blogs (above); no Dutch documentary edition (RGP, Sociëteit
+van Suriname papers) printing Wollant's legend text was located by any of them.
+
+Verdict: CLEAR TO TEST -- no decipherment, gloss, clear copy or print of 2039's legend found by (a)-(d); den Heijer
+2012 p. 342 is the one named source not opened (unreachable from the cloud; a desk/LOCAL-QUEUE read of that page is
+the cheap way to close it, not this job's). Status word unchanged (`partial`); rule 10 wording: a search result.
+Requests this check: www.googleapis.com 3, archive.org 1, be-api.us.archive.org 1, all HTTP 200, 1.6 s apart.

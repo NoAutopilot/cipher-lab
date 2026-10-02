@@ -12,10 +12,11 @@
    "iiif_info": "https://service.archief.nl/iip/iipsrv?IIIF=7a/84/05/55/03/12/40/ca/99/a7/a6/f6/c1/d3/b0/68/09bc6088-27a9-4581-87c8-fc80d867441c.jp2/info.json",
    "files": {
     "2039_overview.jpg": "full sheet, 2816px wide",
-    "2039_cartouche.jpg": "title cartouche + explicatie a-r list, native-res crop",
+    "2039_cartouche.jpg": "title cartouche + explicatie a-r list, native-res crop [GAPS5 2 Oct 2026: not native -- half native resolution, covers native 564,564,3490,2362 (overview match ncc 0.86)]",
     "2039_bastion_zoom.jpg": "Bastion Holland/Gelderland/Overijssel/Groningen lines, native-res crop, no interlinear gloss visible",
     "2039_remarque.jpg": "Remarque paragraph (bottom left), native-res crop, no interlinear gloss visible",
-    "2039_cartouche_word2_native.jpg": "GAPS 2 Oct 2026: native-size PIL crop (822,135)-(920,222) of 2039_cartouche.jpg, the disputed 3-glyph word on title line 2 (\"5[delta][h-loop]\" = van, two independent reads); no network fetch"
+    "2039_cartouche_word2_native.jpg": "GAPS 2 Oct 2026: native-size PIL crop (822,135)-(920,222) of 2039_cartouche.jpg, the disputed 3-glyph word on title line 2 (\"5[delta][h-loop]\" = van, two independent reads); no network fetch",
+    "2039_legend_native.jpg": "GAPS5 2 Oct 2026: one native IIIF region 780,980,2100,2800 (x,y,w,h of 11267x8656) of the 'Verklaringe der Letteren' legend block, located by ink profile from 2039_cartouche.jpg (itself a half-native crop, matched on the overview at ncc 0.86: native 564,564,3490,2362) -- the legend lines run past this region's right edge (entries d, h, p and the ends of c, g, o, r are outside it). 30 band crops were cut with `tools/iiif_lines.py --image images/2039_legend_native.jpg --out images/crops_2039 --prefix leg2039 --prominence 25 --distance 55 --lines-per-crop 2 --max-width 1200 --overlap 200 --quality 85 --debug` (1.6 MB, not committed: the folder is over its 30 MB line; the command regenerates them byte-for-byte from this file). 1 request, HTTP 200."
    }
   },
   {
