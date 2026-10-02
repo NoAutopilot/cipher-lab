@@ -1,0 +1,26 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L09-L16, batch 2 of 4 -- running transcription
+# No numeral cipher group was seen on any of these eight lines; [sym:...] marks are line-end filler strokes.
+
+L09: Car Il ya Jcy dez factieux qui ne taschent que a obseruer voz actions et qua~ vous men songez se venger
+ctx L09: (inference) "Car il y a icy des factieux qui ne taschent qu'a observer vos actions et, quand vous n'y songez, se venger"; "men" is read from minims only.
+
+L10: de ce que vous auez faict cognoistre a beaucoup les petits sistre de Mamett, Et par parolle fort ouuerte de [sym:filler]
+ctx L10: (inference) "petits sistre de Mamett" is unread; the shapes allow a short word pair before a name; no cipher group.
+
+L11: ne voy p~sonne en ce lieu dont vo~ puissiez fere estat, de dire p~sonne, Car Je suis a recognoistre de quel [sym:filler]
+ctx L11: (inference) "ne voy personne en ce lieu dont vous puissiez faire estat, a dire personne, car je suis a recognoistre de quel(s)..."; "puissiez fere estat" is by sense over the shapes qui-ssiez / f~re / esta.
+
+L12: y en ayt vng seul, Et qui plus est dauoir om ne sta mesme cognoissance, Ce nom poinct este sy retenue que [sym:filler]
+ctx L12: (inference) "...y en ayt un seul, et qui plus est d'avoir ... n'est a mesme cognoissance; ce n'ont point este si retenus que..."; "dauoir om" unresolved.
+
+L13: ie me lauoir nele, Je ne scay dou nela promien, Mais vous en pouuez cognoistre les causes, de faicts et propos [sym:filler]
+ctx L13: (inference) "Je ne scay d'ou cela provient, mais vous en pouvez cognoistre les causes, de faicts et propos"; "ie me lauoir nele" unresolved.
+
+L14: co~ ne partie vous pourra dire aux estats de ses mauuaises volontes, que Je pensoys de ruiner bien tost, sy dauoir [sym:filler]
+ctx L14: (inference) "comme une partie vous pourra dire, aux estats, de ses mauvaises volontes, que je pensois de ruiner bien tost, si j'avois (L15) autant de moyens..."
+
+L15: aultant de moiens ou Jay de couraige, a ce desir de voye rendre voz intentions parolle sans son calumnier, Regnolles
+ctx L15: (inference) "...autant de moyens que j'ay de courage, a ce desir de vous rendre vos intentions ..."; "parolle sans son calumnier, Regnolles" is shapes only, the last word may be a name.
+
+L16: Je me fusse resolu de vous taire po~ ne vous desplaire, nestoit que Jay estime lung etre vtile que laue [sym:tall stroke] Et
+ctx L16: (inference) "Je me fusse resolu de vous taire pour ne vous desplaire, n'estoit que j'ay estime l'un ... utile que l'autre. Et"; "etre" and "laue" are shapes only.

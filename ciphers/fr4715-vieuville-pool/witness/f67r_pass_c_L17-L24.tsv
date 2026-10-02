@@ -1,0 +1,161 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L17-L24, batch 3 of 4
+line	pos	token	conf	note
+L17	1	w:que	H
+L17	2	w:vre~	M	v + stroke; "vostre" abbreviated
+L17	3	w:constance	M	ink allows constance/constanne; constance by sense
+L17	4	w:nestoit	H
+L17	5	w:point	H
+L17	6	w:diminuee	H
+L17	7	w:po~	M	p with stroke; "pour" or "par"
+L17	8	w:le	H
+L17	9	w:partie	M	p + abbreviation + tie; partie/parte
+L17	10	w:ou	H	followed by comma
+L17	11	w:vous	H	looped-v form, reads like "Lous"
+L17	12	w:auez	H
+L17	13	w:fait	H
+L17	14	w:tant	H
+L17	15	w:damitie	M	d'amitie; semicolon after
+L17	16	w:Ce	H
+L17	17	w:qui	H
+L17	18	w:vous	H
+L17	19	w:peult	H	followed by a long horizontal line-filler stroke to the margin
+L18	1	w:consoller	M	ink allows consoller/consolles; comma after
+L18	2	w:est	H
+L18	3	w:a	H
+L18	4	w:mon	H
+L18	5	w:aduis	H	comma after
+L18	6	w:de	H
+L18	7	w:scauoir	H
+L18	8	w:que	H
+L18	9	w:ses	M	ink allows ses/sa
+L18	10	w:opinions	M	final letters cramped; opinions/opinionz
+L18	11	w:ne	H
+L18	12	w:naissent	M	long-ss form; naissent/naissant
+L18	13	w:ezle	L	unreadable: three or four letters, "e z l e" or "q(ue) le" or "et le"; sense would want "que le" / "qu'au"
+L18	14	w:sceu	L	s-c-e/o-u with cedilla-like mark: sceu / scoit / seruice abbreviated; unreadable
+L18	15	w:de	M	d with bar, "de"
+L18	16	.03	L	small group under a horizontal BAR: a round sign (0, or o, or 6 with closed loop) followed by a 3-like sign (3, or z, or the ꝫ abbreviation); written close together, one two-sign group, not spaced; same shape as the L23 group after "Car"; could also be the letters "oz"/"ez"; comma after
+L18	17	[punct:comma]	H	bounds the group
+L18	18	w:Mend	L	capital M + e/o + n + d; Mend/Mond; possibly an abbreviation; unreadable sense
+L18	19	w:de	H
+L18	20	w:ses	H
+L18	21	w:amis	M	amis/amys; comma after
+L18	22	w:qui	H	followed by a line-filler stroke
+L19	1	w:ayans	M	ayans/ayant
+L19	2	w:lame	M	l'ame
+L19	3	w:tant	H
+L19	4	w:blessee	M	blessee/blesses; comma after
+L19	5	w:Il	H
+L19	6	w:ne	H
+L19	7	w:vo~	M	vo with superscript stroke; "vous" abbreviated (vo+9-like sign) -- the superscript sign is an abbreviation mark, not a digit 9: it sits above the line and is attached to the word
+L19	8	w:sera	M	sera/scra
+L19	9	w:point	H
+L19	10	w:estrange	M
+L19	11	w:dentendre	M	d'entendre
+L19	12	w:quile	L	quil le / quille / quilz; letters cramped
+L19	13	w:pro~duisent	M	pro with abbreviation stroke + duisent; produisent
+L19	14	w:de	H
+L19	15	w:tels	M	tels/telz
+L19	16	w:fruicts	M	fruicts/fruictz; comma after
+L19	17	w:Ouec	L	last word, a large round initial (O or A) + ue + a flourish that may be c; ink allows Oue/Auec; "Auec" by sense (joins "lesperance" at L20)
+L20	1	w:Lesperance	M
+L20	2	w:que	H
+L20	3	w:en	M	e with flourish; en/ez
+L20	4	w:vng	H
+L20	5	w:moment	H
+L20	6	w:la	H
+L20	7	w:v~ite	M	v + superscript stroke + ite; "verite" abbreviated
+L20	8	w:descouuria	M	descouurira; final letters cramped
+L20	9	w:eluit	L	unreadable: e/c + l + u/n + i + t/d; eluit/clud/eluid
+L20	10	w:de	H
+L20	11	w:calumnies	M	calumnies/calomnies; comma after
+L20	12	w:quilz	M	quilz/quils
+L20	13	w:nos	L	nos/noz/ne; "ne" by sense (ne scauroient)
+L20	14	w:scauroient	M
+L20	15	w:dementir	M	dementir/demantir
+L20	16	w:ezle	L	e z l e or "et le"; unreadable
+L20	17	w:Ezr~	L	last word: E or B, z, r, under a long flourish; unreadable; not digits (letter forms with loops); a slash mark follows it
+L21	1	w:de	H
+L21	2	w:penser	M
+L21	3	w:dy	M	d'y
+L21	4	w:apporter	M
+L21	5	w:vng	H
+L21	6	w:remede	M
+L21	7	w:par	H
+L21	8	w:ceste	M	cest + flourish; ceste/cest
+L21	9	w:complaisance	M	a stroke under "ai" (underline or descender of line above)
+L21	10	[punct:comma]	H
+L21	11	w:destinee	M
+L21	12	w:a	H
+L21	13	.7	M	a single 7 with a short horizontal BAR above it (bar, not a dot); the 7 has a flat top and a straight diagonal downstroke; no descender, so not f or long s; could in principle be a crossed z but the bar is detached above, not through the stroke; one-digit group, comma follows
+L21	14	[punct:comma]	H
+L21	15	w:sil	H
+L21	16	w:mest	H
+L21	17	w:p~mis	M	p with stroke + mis; permis
+L21	18	w:de	H
+L21	19	w:vous	H
+L21	20	w:en	H
+L21	21	w:dire	H	followed by a line-filler stroke
+L22	1	w:ce	L	ce/a; unreadable initial
+L22	2	w:qui	M	qui/que
+L22	3	w:dy	L	d + y with flourish
+L22	4	w:referes	L	re + f/s + er + es/uez; referes/reserues; unreadable; comma after
+L22	5	w:Ie	L	a d-like or I-like letter with a bar: Ie / de
+L22	6	w:voy	M
+L22	7	w:que	H
+L22	8	w:vous	H
+L22	9	w:ne	H
+L22	10	w:le	H
+L22	11	w:debuez	M	debuez/debues
+L22	12	w:fe~	L	f with a large flourish; abbreviation (faire?); comma after
+L22	13	w:vous	H
+L22	14	w:reconnoistrant	L	reconnoistrant/reconnoissant; middle letters cramped
+L22	15	w:come	M	come/comme
+L22	16	w:vng	H
+L22	17	w:peu	M
+L22	18	w:ont	L	ont/out/aut
+L22	19	w:qui	L	qui/que
+L22	20	w:sera	M
+L22	21	w:monitia	L	unreadable: m o n/u i t/c i a
+L22	22	w:ob	L	ob/ab
+L22	23	w:sbuez	L	long-s + b + uez; unreadable; obsbuez could be one word (obstinez? obseruez?); followed by a line-filler stroke
+L23	1	w:en	M	e with flourish
+L23	2	w:parolles	M
+L23	3	w:ouuertes	M	ouuertes/occultes; comma after
+L23	4	w:a	L	a/et
+L23	5	w:que	H
+L23	6	w:lhumeur	M	l'humeur
+L23	7	w:de	H
+L23	8	.7	M	a 7 with a LONG horizontal bar above (bar extends left over "de"); flat-topped 7, diagonal downstroke, no descender; one-digit group; same form as L21 pos 13
+L23	9	w:nest	H
+L23	10	w:nullement	H
+L23	11	w:de	H
+L23	12	w:sy	M	sy/soy
+L23	13	w:arrestee	M	comma after
+L23	14	w:Car	H
+L23	15	.03	L	group under a horizontal BAR: a round sign (0; could be o, or 6 with the loop closed) then a 3-like sign (3; could be z or ꝫ); written together as one group, no space; larger than the L18 pos 16 group but the same two shapes; two-digit group 03 or 63, or two one-digit groups 0 3 written close
+L23	16	w:la	H
+L23	17	w:desplus	L	des + p + l/t + u + s; unreadable
+L23	18	w:rongneu	L	r o n g n e u / renomee; unreadable
+L23	19	[punct:slash]	H	a slash mark in the line
+L23	20	w:Aussy	L	Au ssy; there may be a space between Au and ssy; last word of line
+L24	1	w:que	H
+L24	2	w:le	H
+L24	3	w:temps	M	comma after
+L24	4	w:vous	H
+L24	5	w:appelle	M	appelle/appellez; comma after
+L24	6	w:auoz	L	a u o z / anoz / auec; unreadable
+L24	7	w:a	H
+L24	8	w:ses	M
+L24	9	w:discours	M	comma after
+L24	10	w:Mais	M
+L24	11	w:a	H
+L24	12	w:dire	H
+L24	13	w:effaitz	L	effaitz/effect/effaicts; comma after
+L24	14	w:qui	M
+L24	15	w:aussi	L	au + superscript; aussi/auec
+L24	16	w:vne~	L	v + n + flourish; vng/vne
+L24	17	w:considerant	M
+L24	18	w:celle	L	celle/cette/eche
+L24	19	w:vous	M	the looped "Lous" form used for vous elsewhere on the page
+L24	20	w:auoissent	L	a u o i ss e n t; aduertissent/auoissent; unreadable; followed by a line-filler stroke

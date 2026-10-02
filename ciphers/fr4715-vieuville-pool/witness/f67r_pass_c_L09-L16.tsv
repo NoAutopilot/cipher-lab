@@ -1,0 +1,175 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L09-L16, batch 2 of 4
+line	pos	token	conf	note
+L09	1	w:Car	H
+L09	2	w:Il	H	capital I/J form
+L09	3	w:ya	M	written as one word; "y a"
+L09	4	w:Jcy	M	long initial stroke, ink allows Jcy/dcy; "icy"
+L09	5	w:dez	M	final letter z-shaped; dez/des
+L09	6	w:factieux	L	shapes f-a-c-t/g-i-e-u-x, middle letters cramped; "factieux" by sense, ink allows it
+L09	7	w:qui	H
+L09	8	w:ne	H
+L09	9	w:taschent	M	ends in a flourish; taschem/taschent
+L09	10	w:que	H
+L09	11	w:a	H
+L09	12	w:obseruer	M	ink obseruir/obseruer
+L09	13	w:voz	H
+L09	14	w:actions	M	final letter a/s-shaped; actiona/actions
+L09	15	w:et	H
+L09	16	w:qua~	M	q-u-a with a final stroke; ink allows quar/qua~; "quand" or "que" by sense
+L09	17	w:vous	M	v9-type form (ꝧuy); "vous"
+L09	18	w:men	L	three minims + e-n; ink allows men/nen; by sense perhaps "n'y"; unreadable as a certain word
+L09	19	w:songez	M
+L09	20	w:se	H
+L09	21	w:venger	M	final flourish; venger/vengez; last word of line
+L10	1	w:de	H
+L10	2	w:ce	H
+L10	3	w:que	H
+L10	4	w:vous	H
+L10	5	w:auez	H
+L10	6	w:faict	M	fait/faict, the c is a thin stroke
+L10	7	w:cognoistre	M
+L10	8	w:a	H
+L10	9	w:beaucoup	H
+L10	10	w:les	H
+L10	11	w:petits	L	shapes p-e-b/t-u-t-s; unreadable; "petits" is one reading the ink allows
+L10	12	w:sistre	L	shapes s/f-i-t-r-e, maybe long s + i + stre; unreadable; sense wants "secrets" but the ink has fewer letters
+L10	13	w:de	H
+L10	14	w:Mamett	L	capital M then a-m-e-t-t with a comma after; a name?; ink allows Mamett/Marnett/Mamers
+L10	15	w:Et	H
+L10	16	w:par	M	p with the par/per stroke
+L10	17	w:parolle	M
+L10	18	w:fort	H
+L10	19	w:ouuerte	M
+L10	20	w:de	H	last word; the line breaks after it
+L10	21	[sym:long horizontal filler stroke]	H	line-end filler after "de", not a bar over any group; no digits on this line
+L11	1	w:ne	H
+L11	2	w:voy	M
+L11	3	w:p~sonne	H	crossed p = per; "personne"
+L11	4	w:en	H
+L11	5	w:ce	H
+L11	6	w:lieu	H
+L11	7	w:dont	H
+L11	8	w:vo~	M	v-o with a small superscript sign (a/9/s shape) = "vous"; the superscript is an abbreviation, not a numeral
+L11	9	w:puissiez	L	written in two pieces, "pui/qui" then "ssiez"; ink allows qui ssiez/puissiez; "puissiez" by sense
+L11	10	w:fere	L	f with abbreviation stroke then r-e; fere/faire; unreadable
+L11	11	w:estat	L	shapes e-s-t-a + flourish, comma after; "estat" by sense
+L11	12	w:de	H	ink allows de/a
+L11	13	w:dire	M
+L11	14	w:p~sonne	H	crossed p; comma after
+L11	15	w:Car	H
+L11	16	w:Je	H	the J written as a d-like stroke with a tick, same form as L13, L14, L16
+L11	17	w:suis	M	long s; fuis/suis
+L11	18	w:a	H
+L11	19	w:recognoistre	M
+L11	20	w:de	H
+L11	21	w:quel	M	last word, continues on next line
+L11	22	[sym:long horizontal filler stroke]	H	line-end filler, no digits on this line
+L12	1	w:y	H
+L12	2	w:en	H
+L12	3	w:ayt	M
+L12	4	w:vng	H
+L12	5	w:seul	H	comma after
+L12	6	w:Et	H
+L12	7	w:qui	H
+L12	8	w:plus	H
+L12	9	w:est	H
+L12	10	w:dauoir	L	shapes d-a-u-o/n-i-r; ink allows dauoir/dautre; unreadable
+L12	11	w:om	L	o + two/three minims; om/ou/on
+L12	12	w:ne	M
+L12	13	w:sta	L	s-t-a with a stroke; probably "n'est a" read with the preceding "ne"; unreadable alone
+L12	14	w:mesme	H
+L12	15	w:cognoissance	H	comma after
+L12	16	w:Ce	H
+L12	17	w:nom	M	n-o-m; nom/n'ont
+L12	18	w:poinct	M	poin + stroke; point/poinct
+L12	19	w:este	M
+L12	20	w:sy	H
+L12	21	w:retenue	M	retenue/retenus
+L12	22	w:que	H	last word
+L12	23	[sym:long horizontal filler stroke]	H	line-end filler, no digits on this line
+L13	1	w:ie	M	ie/ce
+L13	2	w:me	M	me/ne
+L13	3	w:lauoir	L	l-a-u-o-i-r; lauoir/lauois
+L13	4	w:nele	L	n/v/r-e-l-e, comma after; unreadable
+L13	5	w:Je	H
+L13	6	w:ne	H
+L13	7	w:scay	H
+L13	8	w:dou	H
+L13	9	w:nela	L	first letter n/v/c-shaped; ink allows nela/vela/cela; "cela" by sense
+L13	10	w:promien	L	p-r-o-m-i-e-n, comma after; minims allow "prouient"; "prouient" by sense
+L13	11	w:Mais	H
+L13	12	w:vous	H
+L13	13	w:en	H
+L13	14	w:pouuez	M
+L13	15	w:cognoistre	M
+L13	16	w:les	H
+L13	17	w:causes	L	shapes c-a-n/u-s-e-s, comma after; causes by sense
+L13	18	w:de	H
+L13	19	w:faicts	M
+L13	20	w:et	M	ligature form
+L13	21	w:propos	M	last word
+L13	22	[sym:long horizontal filler stroke]	H	line-end filler, no digits on this line
+L14	1	w:co~	L	c-o with an abbreviation mark above; "comme"?; first word of line
+L14	2	w:ne	L	n-e, perhaps "vne" with a reduced v
+L14	3	w:partie	M	p with par-stroke + tie
+L14	4	w:vous	H
+L14	5	w:pourra	H
+L14	6	w:dire	H
+L14	7	w:aux	H
+L14	8	w:estats	M
+L14	9	w:de	H
+L14	10	w:ses	M
+L14	11	w:mauuaises	M
+L14	12	w:volontes	M	ends -tiz/-tes, comma after
+L14	13	w:que	H
+L14	14	w:Je	H
+L14	15	w:pensoys	M
+L14	16	w:de	H
+L14	17	w:ruiner	M
+L14	18	w:bien	H
+L14	19	w:tost	H	comma after
+L14	20	w:sy	H
+L14	21	w:dauoir	L	d/J-a-u-o-i + flourish; ink allows dauoir/Jauois; "sy Jauois" by sense with L15; last word
+L14	22	[sym:long horizontal filler stroke]	H	line-end filler, no digits on this line
+L15	1	w:aultant	M	written au-l-tant, the l may be a tall stroke; autant/aultant
+L15	2	w:de	H
+L15	3	w:moiens	M	moie~s with a stroke
+L15	4	w:ou	H
+L15	5	w:Jay	H
+L15	6	w:de	H
+L15	7	w:couraige	M	comma after
+L15	8	w:a	H
+L15	9	w:ce	H
+L15	10	w:desir	M	written de sir with a gap
+L15	11	w:de	H
+L15	12	w:voye	L	v-type initial + o-y-e; ink allows voye/vous; unreadable
+L15	13	w:rendre	M
+L15	14	w:voz	H
+L15	15	w:intentions	M
+L15	16	w:parolle	L	p-a-r-o-l/d-e; parolle/pareille; unreadable
+L15	17	w:sans	L	shapes s-s-u-e/s-a-n-s; unreadable
+L15	18	w:son	L	s-o-n/u; unreadable
+L15	19	w:calumnier	L	c-a-l-u-m-n-i-e-r/t, comma after
+L15	20	w:Regnolles	L	capital R then e-s/g-n-o-l-l-e-s + flourish; a name?; unreadable; last word
+L16	1	w:Je	H
+L16	2	w:me	H
+L16	3	w:fusse	H
+L16	4	w:resolu	H
+L16	5	w:de	H
+L16	6	w:vous	H
+L16	7	w:taire	H
+L16	8	w:po~	M	p with loop = "pour"
+L16	9	w:ne	H
+L16	10	w:vous	H
+L16	11	w:desplaire	M	comma after
+L16	12	w:nestoit	M
+L16	13	w:que	H
+L16	14	w:Jay	H
+L16	15	w:estime	M
+L16	16	w:lung	L	l-u-n-g/l-u-n-e
+L16	17	w:etre	L	e/c-h/t-r-e; unreadable; estre?
+L16	18	w:vtile	L	v/s-t-i-l + stroke; vtile/stile
+L16	19	w:que	H
+L16	20	w:laue	L	l-a-u-e followed by a tall stroke; probably "lautre" with the tr written tall; unreadable
+L16	21	[sym:tall T-shaped stroke after laue]	M	may be the tr of "lautre" or a separate mark; not a digit
+L16	22	w:Et	M	capital E-t with flourish at line end; last word

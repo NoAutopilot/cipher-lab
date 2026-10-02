@@ -1,0 +1,19 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L01-L08, batch 1 of 4 -- running transcription
+# cipher groups in square brackets; a leading dot inside the bracket = bar above the group; ? = low confidence
+L01: Jay sceu de [.71] quil a discouru [6] [7] [25] [93] [842] [2550] [93] [2595] ce quil a apris en sa quartier la Dont? ie?
+L02: mandam? vo~ en pourrez apprendre quelque chose, Jay apris au vray que [.7] a eu quelque lombraige? de la nouuelle
+L03: quil luy a apporte de [14] [15], mesmes p~ luy auoir dit, quil a este retenu par les chemins, nauoir ueu que seullement ayant
+L04: este ouublier?, Ce qui ma este confirme de son bon lieu, A quoy Jay apporte la replique. aussy prompte, quelle ma
+L05: semble necess~re, de sorte que ce que lon auoit de suspicion p~ ce regard, est leue, Que sy [.27] a quelque de
+L06: desir bien aua~t? [.6]? Il fault quil se resolue de luy descouurir ouuertement son inten~on p~ ce que ayant
+L07: on a declare ce quil resentoit de [sym: delta-like d + o] [.13] a dire? sena? Il est en deffiance quil continue a le seruir?, Lassl~?
+L08: deffraince? ne se limba? que auec sa declara~on, confirmant? nellre? du faicte? [sym: c-shaped hook] en escripuant fai? souuent
+
+ctx L01: inference, not reading -- "J'ay sceu de [71] qu'il a discouru [6 7 25 93 842 2550 93 2595] ce qu'il a apris en ce quartier-la": [71] with the bar is probably a person (the informant); the unbarred run after "discouru" would be spelled-out or coded words (what he discussed). The 93 recurs twice and 25 three times (25, 2550, 2595) in the run, consistent with a small syllable or letter table.
+ctx L02: inference -- "vous en pourrez apprendre quelque chose; j'ay apris au vray que [7] a eu quelque ombrage de la nouvelle": [7] with bar is probably a person, "lombraige" is probably "ombrage" (umbrage).
+ctx L03: inference -- "qu'il luy a apporte de [14] [15], mesmes pour luy avoir dit qu'il a este retenu par les chemins": [14] and [15] (or one group 1415) likely stand for a place or person the news came from; "p~" read as "pour" (or "apres").
+ctx L04: inference -- "ce qui m'a este confirme de fort bon lieu" would be the idiom; the ink reads more like "son".
+ctx L05: inference -- "la suspicion pour ce regard est levee; que si [27] a quelque desir ..." : [27] with bar probably a person; "de" at the line end runs on to "desir" in L06.
+ctx L06: inference -- "si [27] a quelque desir bien avant [6?] il faut qu'il se resolve de luy descouvrir ouvertement son intention, pour ce que ayant": the barred 6-shaped glyph could be an et-sign ("bien avant, et il faut") rather than a cipher group.
+ctx L07: inference -- "on a declare ce qu'il ressentoit de [do? 80?] [13] ... Il est en deffiance qu'il continue a le servir": [13] with bar probably a person; the sign before it may be the abbreviation "do" or the digits 80.
+ctx L08: inference -- "[la deffiance?] ne se leva qu'avec sa declaration, confirmant celle du fait(?), et en escrivant fort souvent": "limba" is probably "leua" (cf. "est leue" L05), "fai" probably "fort".

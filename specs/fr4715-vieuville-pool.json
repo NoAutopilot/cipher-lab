@@ -27,6 +27,16 @@
    "target": "28 cipher groups: 8 in key (one run, L01: 25 93 84 25 50 93 25 95 -> a u s a l u a t), 4 unbarred out of key (6, 7, 14, 15), 11 barred word-codes, 4 pass disagreements, 1 date numeral; word-cover 6/8 = 0.750; 200 shuffled keys mean 0.326 sd 0.293 max 1.000; z 1.45; rank 43 of 201; first 20 shuffles max 0.875, real does not beat all 20",
    "control": "no.58 dump at full N: real 729/818 = 0.891 vs 200 shuffles mean 0.353 max 0.631, z 5.37, rank 1 of 201. Subsampled to 200 windows of 8 in-key groups x 20 shuffles: real mean 0.816 vs shuffle mean 0.355; real beats the shuffle mean in 195/200 windows but beats every shuffle (rank 1 of 21) in only 85/200, and 11/200 windows have a shuffled key at cover 1.0 -- a rank-1 gate has 42 pct power at N=8",
    "verdict": "non-test for the key at this N (not a negative): the target sits where 97.5 pct of known-good 8-group windows sit (above the shuffle mean, z 1.45) and where the rank-1 gate cannot decide; the leaf's own cipher content is the word-code layer (13 barred groups) that the letter key does not cover. Next: test 1 above."
+  },
+  {
+   "test": 1,
+   "date": "2 Oct 2026",
+   "worker": "GAPS-fr4715-vieuville-pool (account-4)",
+   "method": "one strong-model (Fable 5.1) blind clear-French pass over the 96 crops in 4 subagent calls (witness/f67r_pass_c.tsv) plus one call over the seven crops of the four A/B disagreement sites (witness/f67r_disagreements_pass_d.tsv); the 14 barred/dotted word-codes read in their clear context (witness/f67r_wordcodes_context.tsv); disk only, 0 requests",
+   "target": "630 clear-word tokens: H 327 / M 201 / L 102 (52 pct H, 84 pct H+M); every A/B-agreed cipher group confirmed digit for digit; the 4 disagreements settled (.03, .03, .07, and L31/9 is a clear word, so 27 cipher tokens); word-codes: a slot class for 14 of 14 at grade I, a word value for 0 of 14",
+   "control": "the two Sonnet passes on the same crops: 51.4 pct mutual agreement, clear words at conf L (LIKELY-1, tools/reconcile_passes.py); no numeric gate was pre-registered for this pass, so the H/M/L counts are a reading quality measure, not a pass/fail",
+   "verdict": "the clear frame is now readable at word level; the word-code table is still not on file and no value is read from context (rule 4); next: no.37 f.60 with its period partial decipherment (dépouillement 'en partie déchiffrée'), ~$9, which can gloss the same codes at grade H",
+   "status_after": "partial"
   }
  ],
  "judge": {

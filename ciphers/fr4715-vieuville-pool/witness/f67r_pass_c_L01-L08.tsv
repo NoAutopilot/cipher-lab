@@ -1,0 +1,174 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L01-L08, batch 1 of 4
+line	pos	token	conf	note
+L01	1	w:Jay	H	left edge partly under the red library stamp
+L01	2	w:sceu	H
+L01	3	w:de	M	ink allows de/ele; de by sense
+L01	4	.71	H	bar above the group, one two-digit group, clearly spaced from the clear words on both sides
+L01	5	w:quil	H
+L01	6	w:a	H
+L01	7	w:discouru	M	last letters cramped; discouru/discouvu
+L01	8	6	M	no bar; separate one-digit group, clear space before 7
+L01	9	7	M	no bar; clear space after 6; a small comma-like tick after the 7 (could be punctuation or the flag of the 2 that follows); could also join 7 with the 25 that follows but the gap is wider than within 25
+L01	10	25	M	no bar; two digits written close; ink allows 25 as one group or 2 5
+L01	11	93	M	no bar; ink allows 93 as one group; alternative split 259 38 42 of the whole run cannot be excluded, spacing favours 25 93 842
+L01	12	842	M	no bar; three digits written close; could be 84 2 or 8 42
+L01	13	2550	M	no bar; written close; could be 25 50 (same 25 shape as pos 10)
+L01	14	93	M	no bar; small gap on either side
+L01	15	2595	M	no bar; could be 25 95; last group before the clear word ce
+L01	16	w:ce	H
+L01	17	w:quil	H
+L01	18	w:a	H
+L01	19	w:apris	H
+L01	20	w:en	H
+L01	21	w:sa	M	ink shows long-s a; could be ce
+L01	22	w:quartier	M	q/g initial; ends with a dot or stroke before la
+L01	23	w:la	M
+L01	24	w:Dont	L	tall initial D-like, then o, then minims with a stroke; Dont/Dom
+L01	25	w:ie	L	short word then a long horizontal flourish to the line end; ie/le
+L02	1	w:mandam	L	m-a-n-d-a-m with a final stroke; mandam/mandant/mande
+L02	2	w:vo~	M	vo with a superscript letter (vous)
+L02	3	w:en	H
+L02	4	w:pourrez	H
+L02	5	w:apprendre	H
+L02	6	w:quelque	H
+L02	7	w:chose	H	comma after
+L02	8	w:Jay	H
+L02	9	w:apris	H
+L02	10	w:au	H
+L02	11	w:vray	H
+L02	12	w:que	H
+L02	13	.7	H	bar above, single digit 7 (no cross-bar on the stem), spaced from que and a
+L02	14	w:a	H
+L02	15	w:eu	H
+L02	16	w:quelque	H
+L02	17	w:lombraige	L	initial tall stroke (l or a flourish) then ombra then i-g/z-e; ombrage by sense, initial letter uncertain
+L02	18	w:de	H	a short dash before de
+L02	19	w:la	H
+L02	20	w:nouuelle	H	long flourish to the line end after
+L03	1	w:quil	H
+L03	2	w:luy	H
+L03	3	w:a	H
+L03	4	w:apporte	H	two short vertical ticks above the final e (accent-like)
+L03	5	w:de	H
+L03	6	14	M	no bar; the 1 is a short stroke like an i with a flag; 1 and 4 close together; separate from 15 by a small gap; could be one group 1415
+L03	7	15	M	no bar; same i-like 1; comma follows
+L03	8	[punct:comma after 15]	H
+L03	9	w:mesmes	H
+L03	10	w:p~	M	p with a superscript hooked letter (d- or r-shaped); pour by sense
+L03	11	w:luy	H
+L03	12	w:auoir	H
+L03	13	w:dit	H	comma after
+L03	14	w:quil	H
+L03	15	w:a	H
+L03	16	w:este	H
+L03	17	w:retenu	H
+L03	18	w:par	H
+L03	19	w:les	H
+L03	20	w:chemins	M	abbreviated ending with a stroke; chemins/chemi~s; comma after
+L03	21	w:nauoir	M	nauoir/nauoit
+L03	22	w:ueu	M	ueu/uen
+L03	23	w:que	H
+L03	24	w:seullement	M
+L03	25	w:ayant	M	flourish after to the line end
+L04	1	w:este	H
+L04	2	w:ouublier	L	o-u-u/n-b-l-i-e-r/e; unreadable as a word; ouublie/ombliee; comma after
+L04	3	w:Ce	H
+L04	4	w:qui	H
+L04	5	w:ma	H
+L04	6	w:este	H
+L04	7	w:confirme	H
+L04	8	w:de	H
+L04	9	w:son	M	ink long-s o n; ink allows son/fort (fort bon lieu by sense)
+L04	10	w:bon	H
+L04	11	w:lieu	H	comma after
+L04	12	w:A	H
+L04	13	w:quoy	H
+L04	14	w:Jay	H
+L04	15	w:apporte	H
+L04	16	w:la	H
+L04	17	w:replique	H	dot after
+L04	18	w:aussy	H
+L04	19	w:prompte	H	comma after
+L04	20	w:quelle	M
+L04	21	w:ma	M	followed by a long horizontal stroke to the line end; ma/ma~
+L05	1	w:semble	H
+L05	2	w:necess~re	M	necessaire abbreviated, superscript over the ss; comma after
+L05	3	w:de	H
+L05	4	w:sorte	H
+L05	5	w:que	H
+L05	6	w:ce	H
+L05	7	w:que	H
+L05	8	w:lon	H
+L05	9	w:auoit	M	auoit/auoir
+L05	10	w:de	H
+L05	11	w:suspicion	M
+L05	12	w:p~	M	p with superscript hook, same sign as L03 pos 10; pour by sense
+L05	13	w:ce	H
+L05	14	w:regard	H	comma after
+L05	15	w:est	H
+L05	16	w:leue	M	leue/lieu; comma after
+L05	17	w:Que	H
+L05	18	w:sy	H
+L05	19	.27	H	bar above, two-digit group, the 7 with a cross-bar on the stem
+L05	20	w:a	H
+L05	21	w:quelque	H
+L05	22	w:de	M	de followed by a long-s-like stroke and a horizontal filler to the line end; may be de or the start of desir carried to L06
+L06	1	w:desir	M	desir/dessr
+L06	2	w:bien	H
+L06	3	w:aua~t	L	a-u-minims-t with an abbreviation stroke; auant/auoit
+L06	4	.6	L	6-shaped glyph with a short bar or cross above; could be a cipher group 6 with bar, or an et-sign (&)
+L06	5	w:Il	H
+L06	6	w:fault	H
+L06	7	w:quil	H
+L06	8	w:se	H
+L06	9	w:resolue	H
+L06	10	w:de	H
+L06	11	w:luy	H
+L06	12	w:descouurir	M
+L06	13	w:ouuertement	M
+L06	14	w:son	M	son/sa
+L06	15	w:inten~on	L	intention abbreviated with a stroke over the end
+L06	16	w:p~	M	p with abbreviation stroke; pour by sense
+L06	17	w:ce	H
+L06	18	w:que	H
+L06	19	w:ayant	M	long filler stroke to the line end after
+L07	1	w:on	M	on/en
+L07	2	w:a	H
+L07	3	w:declare	H
+L07	4	w:ce	M	a small ce-like squiggle; ce/ca
+L07	5	w:quil	H
+L07	6	w:resentoit	M	resentoit/ressentoit
+L07	7	w:de	H
+L07	8	[sym:delta-like hooked d stroke followed by a small o]	L	sits between de and 13; could be the abbreviation do with a hook, or the digit pair 80 in a different 8 shape from L01's 842
+L07	9	.13	H	bar above, two-digit group, 1 with flag, 3 clear
+L07	10	w:a	M
+L07	11	w:dire	L	d-i-r-e or d-r-e; dire/dre
+L07	12	w:sena	L	long-s e n a; unreadable as a word; sena/sera/pena
+L07	13	w:Il	H
+L07	14	w:est	H
+L07	15	w:en	H
+L07	16	w:deffiance	H
+L07	17	w:quil	H
+L07	18	w:continue	H
+L07	19	w:a	H
+L07	20	w:le	M	le/l.
+L07	21	w:seruir	L	long-s then a dot then letters; seruir/s.buir; comma after
+L07	22	[punct:comma after seruir]	H
+L07	23	w:Lassl~	L	tall L or D, a, double long-s, l, with a flourish to the line end; unreadable; could run on to L08 pos 1
+L08	1	w:deffraince	L	d-e-ff-r-a-i-n-c/r-e; unreadable; deffraince/deffiance
+L08	2	w:ne	H
+L08	3	w:se	H
+L08	4	w:limba	L	l-i/e-m/u-b-a; unreadable; ink allows leuba/limba; leua by sense (cf. L05 est leue)
+L08	5	w:que	H
+L08	6	w:auec	H
+L08	7	w:sa	H
+L08	8	w:declara~on	M	declaration abbreviated; comma after
+L08	9	w:confirmant	L	c-o-n-f-i-r-m-a-n-t or conformant
+L08	10	w:nellre	L	n/c-e-l-l-r-e; celle/nestre
+L08	11	w:du	H
+L08	12	w:faicte	L	f-a-i-c/t-t-e; faicte/faictes/faicteur
+L08	13	[sym:c-shaped hooked stroke with a tail]	L	after faicte before en; an et-sign (&) by sense
+L08	14	w:en	H
+L08	15	w:escripuant	M	escripuant/escriuant
+L08	16	w:fai	L	f-a-i or f-o-r-t; fort by sense
+L08	17	w:souuent	H	long horizontal stroke to the line end after

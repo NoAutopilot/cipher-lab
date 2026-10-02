@@ -1,0 +1,176 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L25-L32, batch 4 of 4
+line	pos	token	conf	note
+L25	1	w:ses	M	first word of line; s-e-s with long initial s; could be "sa"
+L25	2	w:memoire	M	letters m-e-m-o-i-r-e; the ending could be written "-rie"
+L25	3	w:et~	M	short "et" with a stroke above (abbreviation bar); could also be "est"
+L25	4	w:renuoy	M	r-e-n-u-o-y with a stroke above the middle; could be "reno~" = renom
+L25	5	w:que	H
+L25	6	w:tous	H
+L25	7	w:vos	H	v written as the looped secretary v
+L25	8	w:ssuils	L	unreadable word: tall double long-s (or ff), u, i, l (or t), s; "subiets"/"fidels" are shapes the ink might allow, not read
+L25	9	w:voque	L	looped v/S, o, q/y, u-e; could be "voyent", "soyent" or "vogue"; unreadable
+L25	10	w:de	H
+L25	11	w:perdre	M	p-e-r-d-r-e, the second r cramped
+L25	12	w:p~	M	p with a stroke through the descender = "pour"
+L25	13	w:leur	H
+L25	14	w:contentement	H	final t written with a long tail that looks like "!"
+L25	15	w:et	H	after a comma
+L25	16	w:le	H	followed by a short dash (line-filler / word-break stroke before the next word)
+L25	17	w:desplaisir	M	d-e-s/p-l-a-i-s-i-r; the s before p may be absent ("deplaisir")
+L25	18	w:de	H
+L25	19	w:ceulx	M	c-e-u-l-x
+L25	20	w:qui	H
+L25	21	w:desirent	M	d-e-s-i-r-e-n-t, end of line
+L26	1	w:que	H
+L26	2	w:vo^s	M	v-o with a superscript s = "vous"/"vos"
+L26	3	w:nauiez	M	n-a-u-i-e-z ("n'auiez"); the i could be absent ("nauez")
+L26	4	w:faict	M	f-a-i-c with superscript t
+L26	5	w:que	H
+L26	6	w:apres	H
+L26	7	w:la	H
+L26	8	w:ruine	M	r-u-i-n-e, minims cramped
+L26	9	w:entiere	M	e-n-t-i-e-r-e; the t has a crossbar
+L26	10	w:ou	M	o-u; could be "on"
+L26	11	w:restablissement	M	r-e-s-t-a-b-l-i-ss-e-m-e-n-t, long double s
+L26	12	w:de	H
+L26	13	w:lestat	M	l-e-s-t-a-t ("l'estat"), followed by a comma
+L26	14	w:qui	H
+L26	15	w:seba	L	s-e-b/r-a; the third letter has a tall loop like b; "sera" by sense
+L26	16	w:cause	M	c-a-u-s/c-e
+L26	17	w:que	H	followed by a short dash
+L26	18	w:sy	H
+L26	19	w:vous	M	written with the looped initial v and a final flourish; could be "vo~"
+L26	20	w:contenuez	M	c-o-n-t-e-n-u-e-z, end of line; "continuez" by sense
+L27	1	w:en	H
+L27	2	w:la	H
+L27	3	w:resolua~	M	r-e-s-o-l-u-a with a stroke above the ending = "resolution" abbreviated
+L27	4	w:immobl	L	i-m-m-o/u-b/a-l with a final stroke; could be "immuable" or "immobile"; unreadable ending
+L27	5	.7	M	a single 7 with a clear horizontal BAR above it (the bar sits above, not through the stem); the 7 itself has no cross-bar on its stem. Could the sign be a long s or f? No: it has the angular top of a 7 and no loop. One one-digit group.
+L27	6	[punct:comma]	H	comma directly after the 7
+L27	7	w:quil	H
+L27	8	w:ne	H
+L27	9	w:vous	M	looped v form
+L27	10	w:en	H
+L27	11	w:scaura	M	s-c-a-u-r-a ("sçaura"); could be "scauroit"
+L27	12	w:poin	M	p-o-i-n with a stroke = "point"
+L27	13	w:de	H
+L27	14	w:gre	H	followed by a comma
+L27	15	w:et	H	written as the ampersand-like sign
+L27	16	w:aussy	H	long double s
+L27	17	w:par	H
+L27	18	.07	M	first glyph a small closed circle the size of the 7's body with a DOT (not a bar) above it, then a 7 written close to it: one two-digit group as written. The circle could be a 0, a letter o, or a 6 whose upper tail I cannot resolve at this resolution (".67" possible). Not two separate groups (no space).
+L27	19	w:quan	M	q-u-a-n with a stroke = "quand"/"quant"
+L27	20	w:vo^s	M	v-o with superscript s
+L27	21	w:y	H
+L27	22	w:voulebes	L	v-o-u-l/t-e-b/r-e-s/z; "vouldrez"/"voudrez" by sense, ink unclear
+L27	23	w:trouuer	H	end of line
+L28	1	w:Que	H	capital Q, first word
+L28	2	w:sy	H
+L28	3	.25	H	2 and 5 written together, one two-digit group, with a clear horizontal BAR above both digits; the 5 has an open top. Neither could be a letter.
+L28	4	w:peult	M	p-e-u-l-t
+L28	5	w:aller	H
+L28	6	.49	M	4 and 9 written together, one two-digit group; above them a short mark that reads as one or two small DOTS rather than a continuous bar; the 9 has a straight tail (could the 9 be a g? no: no lower loop). Followed by a period.
+L28	7	[punct:period]	H	period directly after the 49
+L28	8	w:Jestime	M	capital J, then e-s-t-i-m-e ("J'estime")
+L28	9	w:que	H
+L28	10	w:cela	H
+L28	11	w:luy	H
+L28	12	w:agueable	L	a-g/q-u-e-a/r-r/b-a/l-e; "aquerra" (acquerra) by sense, "agreable" also allowed by the ink
+L28	13	w:de	H
+L28	14	w:la	H	could be "sa"
+L28	15	w:gloire	M	g-l-o-i-r-e, followed by a comma
+L28	16	w:on	M	o-n; could be "ou"
+L28	17	w:ne	H
+L28	18	w:se	H
+L28	19	w:parlera	M	p-a-r-l-e-r-a
+L28	20	w:plus	H
+L28	21	w:que	H
+L28	22	w:de	H
+L28	23	w:luy	H
+L28	24	w:ou	L	o-u followed by a horizontal filler stroke at line end; could be "et" or "on"
+L29	1	w:auiourdhuy	M	a-u-i-o-u-r-d-h-u-y written as one word, first word of line
+L29	2	w:Il	H	capital I/J with l
+L29	3	w:ne	H
+L29	4	w:sy	H
+L29	5	w:parle	H	followed by a short dash
+L29	6	w:que	H
+L29	7	w:de	H
+L29	8	.57	H	5 and 7 written together, one two-digit group, with a clear horizontal BAR above both digits. The 5 has the open top, the 7 the angular top; neither could be a letter.
+L29	9	[punct:comma]	H	comma directly after the 57
+L29	10	w:qui	H
+L29	11	w:p~	M	p with a stroke and superscript = "pour"
+L29	12	w:peu	H
+L29	13	w:quil	H
+L29	14	w:face	M	f-a-c-e, the c cramped; followed by a dash
+L29	15	w:est	H
+L29	16	w:beaucoup	H
+L29	17	w:estime	M	e-s-t-i-m-e
+L29	18	w:et	H	ampersand-like sign
+L29	19	w:prise	M	p-r-i-s-e, followed by a comma
+L29	20	w:me	L	a looped glyph then e; could be "ce" or "et"
+L29	21	w:pendant	L	p-e-n-d-a/r-a with a final flourish; could be "pendant", "pendra" or "prendra"; end of line
+L30	1	w:fourra	L	first word; f/p-shaped letter with descender, then o/r-a-u/n-r/c-a; "pourra" by sense
+L30	2	w:regibes	L	r-e-g-i-b/l-e-s/z; "regler" or "reglera" by sense; unreadable middle
+L30	3	w:tou~	M	t-o-u with a superscript stroke = "tous"/"tout"
+L30	4	w:ses	M	s-e-s; could be "ces"
+L30	5	w:diferens	M	d-i-f-e-r-e-n-s ("differens")
+L30	6	w:qui	H
+L30	7	w:ne	H
+L30	8	w:naissent	M	n-a-i-ss-e-n-t, long double s
+L30	9	w:que	H
+L30	10	w:de	H
+L30	11	w:lextresme	L	l-e-x/b-t-r-e-s-m-e; "l'extreme" by sense; the letters after l are unclear
+L30	12	w:desir	M	d-e-s-i-r
+L30	13	w:de	H
+L30	14	w:la	H
+L30	15	w:vra~	M	v-r-a with a superscript stroke/cross = "vraye"
+L30	16	w:gloire	M	g-l-o-i-r-e, followed by a comma
+L30	17	w:aussy	H	long double s
+L30	18	w:anan	L	a-n-a-n or a-u-a-n-t; could be "ayant" or "auant"
+L30	19	w:lingerinas	L	l-i-n-g-e-r-i-n-a-s with a final flourish; unreadable; end of line
+L31	1	w:sy	M	first word; s-y, could be "ey"
+L31	2	w:mon	M	m-o-n; could be "may"
+L31	3	w:ame	L	a-m-e; could be "ami"/"amie"
+L31	4	w:que	H
+L31	5	[sym:short horizontal dash]	M	a short dash after "que", a gap, then the next word; filler or a cancelled letter
+L31	6	w:auec	M	a-u-e-c; could be "auoir"
+L31	7	w:le	H
+L31	8	w:vo~	M	looped v-o with a stroke = "vostre"/"vous"
+L31	9	w:seruite~	L	s-e-r-u-i-t-e with the ending in a flourish = "seruiteur"
+L31	10	[sym:tall hooked paraph]	M	a tall stroke with a hook rising above the line after "seruite~", before the next token; looks like a flourish, not a digit
+L31	11	2	L	a 2-shaped glyph followed by "ii"/"ui" at the start of the next word; could be a digit 2 followed by two minims, or a capital L of "Lui"/"Luy"; ink allows both
+L31	12	w:assire	L	a-ss-i-r-e; "asseure" by sense
+L31	13	w:par	M
+L31	14	w:vo~ill	L	v-o with a superscript "ill"/"ill" cluster; unreadable
+L31	15	w:ne	M
+L31	16	w:saduanaten	L	s-a-d-u-a-n-a-t-e-n; "s'aduancent"/"s'aduanceroient" by shape, unreadable
+L31	17	w:au	L	a-u; could be "ou"
+L31	18	w:de	M
+L31	19	w:le	M
+L31	20	w:souhaite	M	s-o-u-h-a-i-t-e, followed by a comma or stroke
+L31	21	w:Mon~	L	capital M-o-n with a stroke; could be "Mons~"/"Monsieur" abbreviated
+L31	22	w:sa	L	s-a or "i sa"; could be "sur"
+L31	23	w:la	M
+L31	24	w:calamit~	L	c-a-l-a-m-i-t with the ending lost in a flourish = "calamite"?
+L31	25	[sym:long horizontal line-filler]	H	a long horizontal stroke to the right margin after the last word
+L32	1	w:du	M	first word; d-u, could be "ou"
+L32	2	w:temps	M	t-e-m-p-s; could be "tenps"
+L32	3	w:le	H	followed by a short dash
+L32	4	w:p~mier	M	p with a stroke then m-i-e-r = "premier"; followed by a comma
+L32	5	w:ainsy	H
+L32	6	w:q~	L	a q/ct-shaped glyph with a stroke; "que" by sense
+L32	7	w:ne	L	n-e or c-e; "ce" by sense (porteur)
+L32	8	w:paste~	L	p-a/o-s/r-t-e with a superscript stroke; "porteur" abbreviated (p~teur) by sense
+L32	9	w:vous	H	looped v form
+L32	10	w:pourra	H
+L32	11	w:dire	H
+L32	12	[punct:slash]	H	an oblique stroke after "dire"
+L32	13	w:Ce	H	capital C
+L32	14	15	H	date numeral in clear text (day of month), not a cipher group; 1 with a flag, 5 with an open top; no mark above
+L32	15	w:Apuril	M	A-p-u-r-i-l ("Apvril"); the p could be a v
+L32	16	w:a	H
+L32	17	w:Cinq	H	capital C
+L32	18	w:heures	M	h-e-u-r-e-s, the h with a tall loop
+L32	19	w:du	H
+L32	20	w:soir	H	s-o-i-r with a stroke above
+L32	21	[punct:slash]	H	an oblique stroke after "soir", end of text block

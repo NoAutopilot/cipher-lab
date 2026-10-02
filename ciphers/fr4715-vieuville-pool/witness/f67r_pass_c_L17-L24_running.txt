@@ -1,0 +1,13 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L17-L24, batch 3 of 4 -- running transcription
+# cipher groups in square brackets; a leading dot inside the brackets marks a bar above the group; ~ = abbreviation stroke; (?) = conf L
+L17: que vre~ constance nestoit point diminuee po~ le partie, ou vous auez fait tant damitie; Ce qui vous peult ---
+L18: consoller, est a mon aduis, de scauoir que ses opinions ne naissent ezle(?) sceu(?) de [.03], Mend(?) de ses amis, qui ---
+ctx L18: inference, not reading -- [.03] is the object of "de" before "Mend de ses amis": a person or party whose friends are meant; the preceding "ezle sceu" may be "que le sceu" / "qu'au sceu", i.e. "arise only with the knowledge of [.03]".
+L19: ayans lame tant blessee, Il ne vo~ sera point estrange dentendre quile(?) pro~duisent de tels fruicts, Ouec(?)
+L20: Lesperance que en vng moment la v~ite descouuria eluit(?) de calumnies, quilz nos(?) scauroient dementir ezle(?) Ezr~(?) /
+L21: de penser dy apporter vng remede par ceste complaisance, destinee a [.7], sil mest p~mis de vous en dire ---
+ctx L21: inference, not reading -- [.7] is the person to whom the "complaisance" is destined (a name or title).
+L22: ce(?) qui dy(?) referes(?), Ie(?) voy que vous ne le debuez fe~(?), vous reconnoistrant(?) come vng peu ont(?) qui(?) sera monitia(?) ob(?) sbuez(?) ---
+L23: en parolles ouuertes, a(?) que lhumeur de [.7] nest nullement de sy arrestee, Car [.03] la desplus(?) rongneu(?) / Aussy(?)
+ctx L23: inference, not reading -- [.7] is the same person as at L21 ("lhumeur de [7]", his/her temper); [.03] opens the clause after "Car", so a person or party as subject, the same group as at L18.
+L24: que le temps, vous appelle, auoz(?) a ses discours, Mais a dire effaitz(?), qui aussi(?) vne~(?) considerant celle(?) vous auoissent(?) ---

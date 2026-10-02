@@ -1,4 +1,5 @@
 # fr4715-vieuville-pool no.44 f.67r (LIKELY-1, 2 Oct 2026): tools/reconcile_passes.py over witness/f67r_pass_a.tsv and f67r_pass_b.tsv (two blind Sonnet passes on the 96 crops in images/), nw alignment, --keep-plain --keep-dots; agreement 351/683 = 51.4 pct (clear words mostly conf L in both passes; every cipher group but three agreed).
+# 2 Oct 2026 (GAPS-fr4715-vieuville-pool, account-4): the four '?' tokens (L18/17, L23/16, L27/20, L31/9) settled from the crops by pass C (witness/f67r_pass_c.tsv, Fable 5.1 blind read, 4 calls) and pass D (witness/f67r_disagreements_pass_d.tsv, call 5); the clear-word tokens below are still the A/B reconciliation (51.4 pct agreement) -- pass C's reading of the clear French (H 327 / M 201 / L 102 of 630 words) is in witness/f67r_pass_c.tsv and is NOT folded in here; L31/9 is a clear word, so the cipher-token count is 27, not 28.
 # token: w:word = clear French as read (conf = the lower of the two passes); digits = a cipher group; a leading '.' = a bar or dot over the group (the word-code layer, not in the letter key); '?' = the passes disagree (both readings in note), conf L, settled only from the image.
 line	pos	token	conf	note
 L01	1	w:Jay	L	passes differ: A w:Jay / A:-
@@ -380,7 +381,7 @@ L18	13	w:naissan	L	passes differ: A w:naissan / B:w:dy
 L18	14	w:de	L	
 L18	15	w:sepuie	L	passes differ: A w:sepuie / B:w:servir
 L18	16	w:de	L	
-L18	17	?	L	passes differ: A (none) / B:[sym:overbarred c/9-like glyph]
+L18	17	.03	L	settled 2 Oct 2026 (GAPS, pass C + pass D, crop images/f67r_L18_s3.jpg x230-300): round sign + 3-shape under one bar, comma after; second reading .63; A read nothing, B [sym:overbarred c/9-like glyph]; a barred word-code, same group as L23/16
 L18	18	w:Mend	L	
 L18	19	w:de	L	
 L18	20	w:sire	L	passes differ: A w:sire / B:w:ser
@@ -482,7 +483,7 @@ L23	12	w:Fy	L	passes differ: A w:Fy / A:-
 L23	13	w:sy	L	passes differ: A w:sy / B:w:aumestie
 L23	14	w:annestre	L	passes differ: A w:annestre / B:w:Cel
 L23	15	w:Cest	L	passes differ: A w:Cest / B:[sym:v-like hook]
-L23	16	?	L	passes differ: A .?5 / B:.73
+L23	16	.03	L	settled 2 Oct 2026 (GAPS, pass C + pass D, crop images/f67r_L23_s3.jpg x255-335): same two shapes under a heavy bar, second reading .63; A .?5 / B .73 excluded (no 5, no 7 as first sign)
 L23	17	w:la	L	
 L23	18	w:de	L	passes differ: A w:de / A:-
 L23	19	w:dessus	L	passes differ: A w:dessus / B:w:sbeig
@@ -575,7 +576,7 @@ L27	16	w:gre	L
 L27	17	w:Et	L	
 L27	18	w:aussy	L	
 L27	19	w:peu	L	passes differ: A w:peu / B:w:pen
-L27	20	?	L	passes differ: A .67 / B:[sym:o-like glyph with dot above]
+L27	20	.07	L	settled 2 Oct 2026 (GAPS, pass C + pass D, crop images/f67r_L27_s3.jpg x235-300): closed circle with one detached dot above, then a 7, no bar; A .67 ranked third, B [sym:o-like glyph with dot above] is the same ink; a dotted word-code
 L27	21	w:que	L	passes differ: A w:que / B:7
 L28	1	w:Que	L	
 L28	2	w:sy	L	
@@ -650,7 +651,7 @@ L31	5	w:mande	L	passes differ: A w:mande / B:w:came
 L31	6	w:de	L	
 L31	7	w:vos	L	passes differ: A w:vos / B:-
 L31	8	w:sibnict	L	passes differ: A w:sibnict / B:w:voz
-L31	9	?	L	passes differ: A .7 / B:w:fbikt
+L31	9	w:2ii	L	settled 2 Oct 2026 (GAPS, pass C + pass D, crops images/f67r_L31_s1.jpg x620-1400 and f67r_L31_s2.jpg x60-330): NO cipher group here -- a dash, "auec le vo~ seruite~", a tall hooked paraph, then a word opening with an unbarred 2-shaped sign (2 first, secretary capital L of Luy second) and two minims; A .7 and B w:fbikt both excluded; kept as a clear-word token at conf L, not a cipher token
 L31	10	w:Lit	L	passes differ: A w:Lit / B:w:Zer
 L31	11	w:affire	L	passes differ: A w:affire / B:w:affirl
 L31	12	w:par	L	

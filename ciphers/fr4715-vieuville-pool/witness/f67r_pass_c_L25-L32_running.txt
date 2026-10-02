@@ -1,0 +1,26 @@
+# pass C, Fable 5.1 blind read, 2 Oct 2026, lines L25-L32, batch 4 of 4 -- running transcription
+# (words as written; cipher groups in square brackets; ? marks a conf-L token; ctx lines are inference, not reading)
+
+L25: ses memoire et~ renuoy que tous vos ssuils? voque? de perdre p~ leur contentement, et le desplaisir de ceulx qui desirent
+ctx L25: no cipher group on this line. "renuoy" may be "reno~" (renom); "ssuils voque" unread (sense would want "subiets ... craignent/voyent" or similar).
+
+L26: que vo^s nauiez faict que apres la ruine entiere ou restablissement de lestat, qui seba? cause que sy vous contenuez
+ctx L26: no cipher group. "seba" = "sera" by sense; "contenuez" = "continuez".
+
+L27: en la resolua~ immobl? [.7], quil ne vous en scaura poin de gre, et aussy par [.07] quan vo^s y voulebes? trouuer
+ctx L27: "en la resolution immuable [.7]" -- the group follows a noun phrase; [.7] could stand for a person or a thing resolved on. "par [.07] quand vous y vouldrez trouuer" -- [.07] (possibly [.67]) stands for a person or a place through which something can be found; inference only.
+
+L28: Que sy [.25] peult aller [.49]. Jestime que cela luy agueable? de la gloire, on ne se parlera plus que de luy ou?
+ctx L28: "si [.25] peult aller [.49]" -- [.25] is the subject of "peult aller" (a person, "luy" afterwards), [.49] is a destination (a place) after "aller". "cela luy aquerra de la gloire" by sense. Inference only.
+
+L29: auiourdhuy Il ne sy parle que de [.57], qui p~ peu quil face est beaucoup estime et prise, me? pendant?
+ctx L29: "il ne s'y parle que de [.57], qui pour peu qu'il face est beaucoup estime et prise" -- [.57] is a person (masculine, "qu'il face"), very likely the same referent as "luy" in L28 and as [.25]. Inference only.
+
+L30: fourra? regibes? tou~ ses diferens qui ne naissent que de lextresme? desir de la vra~ gloire, aussy anan? lingerinas?
+ctx L30: no cipher group. "pourra regler tous ses differens qui ne naissent que de l'extreme desir de la vraye gloire" by sense; the last two words unread.
+
+L31: sy mon ame? que [dash] auec le vo~ seruite~? [paraph] [2?]ii assire? par vo~ill? ne saduanaten? au? de le souhaite Mon~? sa? la calamit~?
+ctx L31: the "2" at pos 11 is ambiguous with a capital L ("Lui/Luy asseure ..."); if it is a digit it would be a one-digit group with no mark above. The rest of the line is largely unread; "Mon~ ... la calamite" at the end.
+
+L32: du temps le p~mier, ainsy q~? ne? paste~? vous pourra dire / Ce [15] Apuril a Cinq heures du soir /
+ctx L32: "ainsy que ce porteur vous pourra dire. Ce 15 avril a cinq heures du soir" -- the [15] is the date in clear, not a cipher group; the date line matches 15 April.
