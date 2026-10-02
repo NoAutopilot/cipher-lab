@@ -885,3 +885,77 @@ Done (gap 1, both halves): Leaf 192 (the rest of the No.2 interlinear gloss) - D
 - [ ] image-check: leaf 188's ciphertext.tsv is one careful read plus a second look, not a two-pass reconciliation (NOTES "Target: leaf 188"); the period copies disagree on digits elsewhere (138/158, 454/494, 656/636) and code 381 "chargent" sits on a corrected cell (NOTES "Fresh-instance re-derivation"); leaf 198 (raw No.3) against 199-200 (glossed No.3) is a further digit cross-check not yet run. Planned: tools/iiif_lines.py crops of images/188_hi.jpg, one blind pass, tools/reconcile_passes.py against ciphertext.tsv, about 3 calls, ~$4.5
 - [x] retry: leaf 188 re-decoded with tools/decode_key.py after each key extension: 65/163 (39.9%, VX-RD02), 71/163 (43.6%, VX-RD02B), 76/163 (46.6%, VX-RD02C), 86/163 (52.8%, GAPS 2 Oct 2026, leaf 192 merged), 88/163 (54.0%, GAPS2 2 Oct 2026, leaf 201 merged), --check exits 0; to be rerun after the No.4 merge
 Verdict: keep going: 4 internal gaps (gap 1 done: leaves 192 and 201 merged 2 Oct 2026); cheapest next: gap 5, disk only -- regrade the 26 M-graded tokens of leaf 188 against their added occurrences on 192 and 201 and against the plain copies of No.2 (194-195) and No.5 (214), one decision per code written to conflicts.tsv notes, then tools/decode_key.py --check, ~$1.5; after it, gap 4 (the LOCAL-QUEUE.tsv row for the Paris-side translation search, ~$2)
+
+## SPLIT-na-janssens-java-1811 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-split-check.md`, run 02:45-03:0x UTC 2 Oct 2026 (clock read), Fable
+5.1, concurrent with GAPS2-na-janssens-java-1811 (whose leaf 201 merge landed at e116b0ef while this job ran; this
+section's "before" numbers are GAPS2's "after"). Files touched: `corrections.tsv` (new), `decode.json` (one job key,
+`exceptions: corrections.tsv`, plus two header lines), `images/crops_188/` (new), `split188_passA.tsv` and
+`split188_passB.tsv` (new), the regenerated `reading.txt` / `reading_tokens.tsv`, and this section. Not touched:
+`key.tsv`, `ciphertext.tsv`, the "## Remaining gaps" / "## Escalation" sections, PROGRESS.tsv.
+
+**What the hits were.** `ciphers/_triage/split-check-1-Oct-2026.tsv` carries 70 rows for this target: 69 `unkeyed`
+codes and one `unkeyed,out-of-range` (the single digit `3` at 7:9), every one with an empty `splits` column -- this
+is a 1-1197 nomenclator read from a period gloss, not a 2-34 letter key, so no flagged token cuts into two or three
+*confident* key codes. The question the image can answer is therefore the plain one: is each flagged group one group
+as transcribed, and are its digits right. After the leaf 192 merge (GAPS, 02:07) 64 of the 70 were still flagged;
+after the leaf 201 merge (GAPS2) 62 (`--split-check` total, 75 token positions).
+
+**Image.** `images/188_hi.jpg` on disk is the 2561-px spread (digits about 25 px tall). The leaf's IIIF `info.json`
+(service.archief.nl, 1 request) gives a 5088 x 3087 native; the right-page cipher block was fetched once at native
+size as `images/crops_188/188_right_native.jpg` (region 2660,220,2460,1980; 1 request; 346 kB) and cut with
+`python3 tools/iiif_lines.py --image images/crops_188/188_right_native.jpg --out images/crops_188 --prefix 188
+--distance 90 --prominence 15 --max-width 2450 --debug` into 16 single-line crops (`188_L01..L15.jpg` = cipher lines
+1-15, `188_L16.jpg` = the signature, unused); overlay `188_lines_debug.jpg` checked before the passes (every band on
+one line, no digit cut). Requests: service.archief.nl 2, no other host.
+
+**Passes.** Two blind Sonnet subagent calls, each given only the 15 crop paths and asked, per group, "one group or
+two (or three), and which digits", with H/L confidence; neither saw `ciphertext.tsv`, `key.tsv` or this file
+(`split188_passA.tsv`, `split188_passB.tsv`). Both passes count 11, 11, 11, 11, 12, 12, 12, 12, 11, 12, 11, 12, 11,
+11, 3 groups per line -- identical to `ciphertext.tsv`'s 163 tokens, so **no glued or split group anywhere on the
+leaf**. Digits: pass A, pass B and `ciphertext.tsv` agree three ways on **162 of 163** tokens. Pass A flagged 3 rows
+L and pass B 6 (2/4 shape doubts at 2:2 1024, 7:6 1122, 12:5 62; the small-loop 0 of 5:6 50 and 12:8 60; the lone
+`3` at 7:9), all with the same digits as the transcription. This worker's own look at the five lines at native size
+(one montage) agrees on each: the clerk's 2 (as in 442, 472) and open-top 4 (as in 984, 443) are distinct shapes; the
+`3` at 7:9 stands alone between `443.` and `270.` with its own dot, so it is kept as a one-digit group as transcribed
+(the key already holds a one-digit code, 1 = Soixante), unkeyed.
+
+**The one correction: 13:11, transcribed 1194, reads 1192.** Pass A H, pass B H, this worker's look: the last digit
+is the clerk's 2, not the open-top 4 of `984` immediately before it; VX-RD02's single read (1194) stands alone.
+1192 = `et` (key.tsv, grade C, No.2 gloss); 1194 = `ages` (M). Recorded in `corrections.tsv` (line, pos, token,
+corrected, value, grade C, read_grade H, source `SPLIT-na-janssens-java-1811 2 Oct 2026`, reason), wired through
+`decode.json`'s `exceptions` key so `tools/decode_key.py` applies it per position; `ciphertext.tsv` itself stays as
+transcribed (CLAUDE.md Layout). Line 13 now ends "... 130 984 et" where it read "... 130 984 ages".
+
+**Counts (rule 4).** `python3 tools/decode_key.py ciphers/na-janssens-java-1811` then `--check`, exit 0:
+```
+before (GAPS2 e116b0ef): tokens 163: H 0, C 62, S 0, M 26, I 0, U 75   keyed 88/163
+after  (this section):   tokens 163: H 0, C 63, S 0, M 25, I 0, U 75   keyed 88/163
+```
+One token M -> C; coverage unchanged. `--split-check` after: 62 flagged tokens (unchanged, the correction was on a
+keyed M token).
+
+**Judge (rule 7)**, `python3 tools/judge_plaintext.py specs/na-janssens-java-1811.json --file ciphers/na-janssens-java-1811/reading.txt`:
+```
+before: FAIL language: score=-0.976, null_p99=-1.816, real_p05=-0.899, real_median=-0.789, mode=both, N=247
+after:  FAIL language: score=-0.972, null_p99=-1.778, real_p05=-0.912, real_median=-0.783, mode=both, N=245
+        ok   words: cover=0.902, min=0.3, real_text_median_cover=0.947
+        FAIL - na-janssens-java-1811 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(the "before" line is the same tool on the reading regenerated without `corrections.tsv`, same session; the judge
+resamples its null and real bands each run, so the gate itself moves by about 0.01). Flat, still FAIL; no reading is
+claimed (rule 10: no decipherment of leaf 188 was found; this job searched nothing new).
+
+**Hits checked / confirmed splits / kept as one token / not reached: 70 / 0 / 70 / 0** (every group on the leaf was
+read by both passes, including the six 1-Oct hits the 192 and 201 merges had since keyed). Vision calls: 5 (two
+subagent passes; this worker's spread overlay, band overlay and five-line montage). Box: about 20 of 60 minutes.
+Cost: see the lane ledger.
+
+For the next owner of the gaps section (not edited here, GAPS2 live in the same hour): the Escalation row
+"[ ] image-check: leaf 188's ciphertext.tsv is one careful read plus a second look, not a two-pass reconciliation"
+is now done by this section -- two blind passes plus a reconciliation at native resolution, 162/163 three-way
+agreement, one digit fixed -- and can be marked [x] citing `split188_passA.tsv`/`split188_passB.tsv` and
+`corrections.tsv`. PROGRESS.tsv row "Janssens Java" still reads 86/163 and should read 88/163 (C 63 M 25 U 75,
+source this file); left for GAPS2 or the parent so two workers do not write the same row in the same hour. The
+leaf-198-vs-199/200 digit cross-check named in the same Escalation row is untouched.

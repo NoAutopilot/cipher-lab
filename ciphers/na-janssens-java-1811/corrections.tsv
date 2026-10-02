@@ -1,0 +1,2 @@
+line	pos	token	corrected	value	grade	read_grade	source	reason
+13	11	1194	1192	et	C	H	SPLIT-na-janssens-java-1811 2 Oct 2026	image images/crops_188/188_L13.jpg (native IIIF 5088 px leaf, right page): two blind Sonnet passes (leaf188_passA/B.tsv, both H) and this worker own look all read 1192, the single VX-RD02 read 1194 stands alone; the last digit is the clerk 2 as in 442 and 472, not the open-top 4 of 984 beside it; 1192 = et (key.tsv, C, from the No.2 gloss), 1194 = ages (M); ciphertext.tsv left as transcribed per CLAUDE.md Layout
