@@ -148,3 +148,7 @@ ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("ago
 ciphers/nevers-birago-fr3251-1572	"baron de Sadres"	2026-10-02	queued	
 ciphers/nevers-birago-fr3251-1572	("Birago" OR "Birague") AND "Nevers" AND ("ottobre 1572" OR "octobre 1572") AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
 ciphers/nevers-birago-fr3251-1572	"il capitano Scipione" AND Saluzzo	2026-10-02	queued	
+ciphers/pro3055-clinton-1779	"Clinton" AND "Haldimand" AND ("1779" OR "October 1779") AND (cipher OR cypher)	2026-10-02	queued	
+ciphers/pro3055-clinton-1779	"still the clamours of their own officers"	2026-10-02	queued	
+ciphers/pro3055-clinton-1779	"Clinton" AND "Haldimand" AND ("November 1781" OR "1781") AND (cipher OR cypher) AND Vermont	2026-10-02	queued	
+ciphers/pro3055-clinton-1779	"jealousies of the inhabitants of Vermont"	2026-10-02	queued	
