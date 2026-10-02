@@ -55,6 +55,10 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
                      resampled jointly with the key (Viterbi re-cut under trigram + P(pair|letter), alternating with
                      homophonic_anneal); control on the target's run lengths (--param cells=40 strays=0.05; --cipher FILE
                      --tokens space, one run per line); recovery = right phase AND right letter
+  seeded_code        homophonic two-part code of syllables/words with a partial key pinned (A2-CAS8 2 Oct 2026,
+                     castelcicala-1816): --param pins=<key.tsv>, local alphabetical runs as bracket constraints
+                     (run=6 bracket=8), control at the target's pinned token share (pinshare=0 = blind baseline);
+                     recovery = token accuracy on unpinned positions
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds
