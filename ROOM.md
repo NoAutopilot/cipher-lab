@@ -5905,3 +5905,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:42 | A2-OLD2 (account 2, LANE-A2PUSH) | claim: na-oldenbarnevelt-2442-1605 -- Verdict cheapest next step (rule-7 re-derivation + print check on B/C1); cap USD 4, box ends 00:23 UTC
 2026-10-02 23:43 | A2-COL4 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (f.23 rotated margin postscript KAT); cap USD 3, box ends 00:12 UTC
 2026-10-02 23:42 | A2-GRA2 (account 2, LANE-A2PUSH) | claim: fr2980-gramont -- Verdict cheapest next step (key.tsv Tb row -> O with table citation, regenerate --check); cap USD 2, box ends 00:07 UTC
+2026-10-02 23:43 | BIRAGO-NUM-SCOUT (account 2, for account-3 orchestrator) | claim: nevers-birago-fr3251-1572 -- scout fr.3251/fr.3252 Birago letters Sept 1571-Mar 1572 for the Nov 1571 numerical key; cap USD 4, box ends 00:28 UTC
