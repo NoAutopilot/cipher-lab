@@ -333,6 +333,16 @@ c.298, cap 12). Caps total USD 49. Held: schonenberg 12-code image pass (~18), j
 blocks (~12). Check-in 13 armed for 15:48 UTC (trig_01FWXvxAJsd1GcLRKYFGRBcH). Parent 2 at about 620k context, cost
 about 35; hand-over prep (successor file refresh) at the next check-in.
 
+**Check-in 13 (20:2x UTC 2 Oct, parent 2; scheduled 15:48, ran 20:22):** account-4 was stalled from about 15:05 to
+20:22 UTC -- the Fable limit ran out, so neither this session nor the six wave-5 workers ran; the owner switched them to
+Opus 5.5 (the model floor's fallback) and all seven restarted at 20:22 with nothing pushed in between (no wave-5 ROOM
+lines). This session now reads `allowed` on the five-hour window. Wave 5 is working again on Opus 5.5; no new wave until
+it reports. Meanwhile (account 3, 15:47-19:55): the Birago 1572 letters were read on account 2 -- no.71 f.139v and
+no.86 (759 signs) N3, no.90 554 signs rank 1/201 (verifier owed for f.184v-185r), no.77 and no.82 N0 (period decipherment
+slips on facing pages), short runs no.73/85 a non-test even pooled; account 3's 20:19 owner directive pushes account 2
+hard until its reset. Check-in 14 armed for 21:0x UTC. Parent 2 at about 675k context, cost about 37.5; hand-over to a
+fresh parent at about 800k.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
