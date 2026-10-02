@@ -1,4 +1,5 @@
 open
+*Briefwisseling van Anthonie Heinsius 1702-1720* Deel 1 (Veenendaal, Huygens retroboeken GS158) pp.211-217 read by GF-A2-5 (2 Oct 2026): letter 357 on p.212 prints the numeric name-codes (110, 103, 121, 112, 111, 174, 105, 37) with footnote 1 "De sleutel van dit cijferschrift is niet gevonden"; nos. 355 and 363 are clear and identify no code.
 
 # Daniel Wolf von Dopff to Anthonie Heinsius, numeric name-code, 18 May 1702
 
@@ -96,3 +97,40 @@ Requests this pass: `resources.huygens.knaw.nl` ~6 (search_in_text form + Dopff 
 2 html_url OCR fetches [p.212, p.213], 1 image fetch), `www.nationaalarchief.nl` 1 (invnr 756, via the shared
 na_scan_check.py batch with HU2/HU4/HU5, see sources/huygens/NOTES.md), `github.com` 2 shallow clones
 (grepped, not committed). WebSearch 2. No subagents.
+
+## Web and blog check (GF-A2-5, 2 Oct 2026)
+
+Plain web searches (4): `Dopff Heinsius 1702 cijferschrift "sleutel" niet gevonden` (Wikipedia Heinsius, Huygens
+edition page, two BMGN article PDFs, NA 3.01.19 inventory PDF -- none on this letter's code);
+`Daniel Wolf van Dopff 1702 cipher letter Heinsius Prussian king inheritance William III` (Wikipedia Daniël van Dopff;
+BL searcharchives 040-001950086, opened: **Add MS 61202**, Blenheim Papers vol. CII, "Correspondence with Lt.-Gen.
+Daniel Wolff, Baron van Dopff, Commandant of Maastricht; 1702-1711. Partly copies and cipher." -- Dopff's cipher
+correspondence with Marlborough, not this letter, see Premise (b)/(d)); `"que 110 se bruille avec 103"` (exact phrase
+from the printed letter: no hit); `Heinsius archief 3.01.19 inv 756 Dopff` (inventory PDF, ecartico, catalogue pages,
+nothing on the code).
+Blog site searches: `site:scienceblogs.de klausis-krypto-kolumne Dopff OR Maastricht 1702 cipher` (Cipherbrain archive
+pages only, none on Dopff); `site:cryptiana.blogspot.com Dopff OR Marlborough Dutch cipher 1702` (no Cryptiana page
+returned; the BL Add MS 61202 record and TNA catalogue rows surfaced); `site:ciphermysteries.com Dopff OR Heinsius 1702
+cipher` (only ciphermysteries.com/?p=7357, a 1539 "Devil's Handwriting" post, not about this item). No comment thread
+found that discusses this letter.
+Result: no decipherment or identification of the name-codes found on the open web or in the three blogs.
+Requests: WebSearch 7, searcharchives.bl.uk 1.
+
+## Premise check (GF-A2-5, 2 Oct 2026)
+
+(a) Folder's own mentions: the editor's footnote cross-references nos. 355 (Wassenaer-Obdam, Wesel 17 May) and 363 (Hop,
+Wesel 19 May), which the 24 Sept sweep did not open. Opened this pass (Huygens retroboeken OCR, Deel 1 pp.211, 213-217,
+plus p.210; p.212 from the image on disk): both are clear letters describing Frederick I of Prussia's anger at the
+States over Smettau's report and the William III succession; neither names or glosses any of 357's numbers. The end of
+357 on p.213 is an editor's Dutch summary (Geldermalsen, Kaiserswerth), no gloss. Found: context only, no key or
+identification.
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026)
+grepped for "Dopff": no hit; "Heinsius" only as a nomenclator entry in Bourdeau's windischgraetz1720/rakoczi1707/bay1706
+key files and an Aymeloglu lexicon. Aymeloglu cited, not copied. Not found. Lead (not a find): BL Add MS 61202 holds
+Dopff's own 1702-1711 cipher correspondence with Marlborough; a Dopff name-code there, or a key in it, could be the same
+system as 357 -- untested, not digitised.
+(c) Physical neighbours: H.A. 756 is not digitised (24 Sept sweep, `"scans":[]`); the printed page carries no facing
+decipherment (p.212 viewed). Unreachable for the manuscript (REQUEST.md is the route).
+(d) Recipient side: Heinsius is the recipient and the edition read is his. Sender-side: Dopff's Marlborough letters
+(BL Add MS 61202) and Marlborough's printed letters (Murray, *Letters and Dispatches*; Snyder, *Marlborough-Godolphin
+Correspondence*) not searched this pass. Not found.
