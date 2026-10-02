@@ -199,3 +199,58 @@ Read so far: 4,505 of 9,286 main-code groups carry a key value (48.5%, nulls exc
 - [ ] image-check: we have never done one. ciphertext.txt is Bourdeau's transcription copied verbatim, and the bCAS brief barred image hosts. The plan is to crop-read the 57 "?" tokens and R9587's low-range runs on the DECODE full-size scans (reachable since 28 Sept 2026), starting with R9587's 3 images, in one login with the R9572/R9590 fetch, ~$6.
 - [x] retry: bCAS (26 Sept 2026) ran Bourdeau's "[ ] retry" item, re-reading the un-glossed 1816 letters with the extended key. It added 3 values and left the 2261+do lead at M. Coverage went from 3,268 to 3,406 of 7,492 on the 1816 set and from 4,342 to 4,505 of 9,286 on the corpus. It must be rerun after any key extension or image-check correction.
 Verdict: keep going: 6 internal gaps; cheapest next: the check-solved open-web and blog-comment check (Cipherbrain, Cryptiana blog, Cipher Mysteries) that tools/intake_gate_check.py requires, ~$1, then the two-context concordance on the sub-1100 groups of R9558/R9559/R9560/R9587 with a shuffled-record control, ~$2 (the R9586/R9588 gloss alignment is done on disk, NEXT-CAS 2 Oct 2026; its image pass is ~$5)
+
+## Web and blog check (GF-A2-1, 2 Oct 2026)
+
+Run 2 Oct 2026, 21:19-21:24 UTC, by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+1. `Castelcicala Circello 1816 dispacci cifra Londra Parigi` (sender + recipient + date) -- hits: De' Sivo/De Cesare *La fine di
+   un Regno* on it.wikisource (biography), BL searcharchives Add MS 89143/2/21/1 and 89143/2/9/12 (Canning Papers, 1807-1810,
+   outside these dates), an RMG archive object, a 1797-99 *Dispacci da Napoli* sale listing, TNA catalogue C11953. None prints
+   a decipherment of the 1816-23 despatches.
+2. `"affari esteri" 2337 Archivio di Stato di Napoli cifra Castelcicala` (shelfmark + cifra) -- hits: the ASNa Esteri inventory
+   PDF (inventari-san 2360), ASNa's 2025 "fondi fuori consultazione" list, museum pages; no item-level hit for busta 2337.
+3. `Principe di Castelcicala ambassador cipher letters 1816 deciphered Naples` (folder title, English) -- hits: BL Heytesbury
+   Papers Add MS 41525 (Vol. XV, 1817-18), 41536, 41515; RMG objects; a unimi SSMD article; an NCF Napoleon-letter page. Add MS
+   41525's JSON record opened (searcharchives.bl.uk, ?format=json): it lists "f. 38 (extr.) Fabrizio Ruffo, Principe di
+   Castelcicala; Neapolitan Ambassador in London: Letters to the Marchese di Circello: 1816, 1817.: Ital." -- see Premise
+   check (d). The other two records (41536, 41515) list no Castelcicala-Circello letters of these years.
+4. `Castelcicala cipher scienceblogs OR ciphermysteries OR cryptiana` (cipher-community title search) -- Cipher Mysteries tag
+   pages and old posts (Bellaso, Voynich), no Castelcicala post.
+No decoded phrase was searched in quotes: no span of the reading runs to a sentence (Remaining gaps: "coverage by the key,
+not sense").
+Blog site searches: **Cipherbrain** (`site:scienceblogs.de klausis-krypto-kolumne Neapel Castelcicala OR Circello OR "Archivio
+di Stato di Napoli"`) -- no scienceblogs.de hit; **Cryptiana blog** (`site:cryptiana.blogspot.com Naples cipher 1816 OR
+Castelcicala OR Circello`) -- no blogspot hit (Tomokiyo's index has no Castelcicala entry, Bourdeau 21 Sept 2026, re-checked
+by bCAS 26 Sept); **Cipher Mysteries** (`site:ciphermysteries.com Naples Castelcicala OR Circello OR "Two Sicilies" cipher`) --
+ciphermysteries.com/?p=3700 opened ("Milanese enciphered letters, call for help", 2011): post and its 89 comments read, the
+only Naples mention is a 1455 Sforza letter; other hits (Montefeltro conspiracy, Simonetta) are 15th-century. No comment
+thread anywhere carries a decipherment or plaintext of these letters.
+Requests: searcharchives.bl.uk 5 (2 s apart), ciphermysteries.com 1, search engine 7.
+
+## Premise check (GF-A2-1, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found and used, two not opened.** The contemporary interlinear
+decipherments on R9566 p.3 and the 1823 siblings R9569, R9571, R9589 are Bourdeau's crib and the source of all 2,906 G
+tokens; they decipher those records, not the 16 un-glossed 1816 letters. The pencil syllabic glosses on R9586/R9588 (second
+code) are aligned on disk (NEXT-CAS). R9572 (2337_23, 1823, DECODE "Decrypted", 1 page, inline cleartext and plaintext,
+Italian) and R9590 (2337_41, 12 Mar 1830, "With deciphered plaintext", 3 pages): metadata read this pass from Bourdeau's
+`castelcicala1816/decode/views_9532_9591.jsonl` (cited, MIT/CC BY); images **not opened** (DECODE login, one per session; not
+in this gate-fix brief). Both are separate records, not the target letters, and Bourdeau classes R9590 as another code; R9572
+stays the open gap already listed in "Remaining gaps".
+(b) Other solvers' working files -- **found: Bourdeau's own working folder is this target's source.** Shallow clone of
+dbourdeau/cyphersolver (2 Oct 2026, 21:16 UTC): `targets/castelcicala1816/` holds key.tsv, apply.py, solve.py,
+reading_partial.txt, profile.json -- all already the basis of this folder (credited in "Source and credit"); no newer
+reading there than ours (his reading_partial.txt is the 162-value key's output). His DECODE harvest
+(research/catalogue_harvest/decode/batch_5.json) lists 2337_4 through 2337_39 with `"known": []`. aaymeloglu/unsolved-ciphers:
+no Castelcicala hit in a grep of the clone (cited only).
+(c) Physical neighbours -- **checked by Bourdeau, residual listed.** Busta 2337 records R9550-R9591 and busta 2317 R9549 were
+opened by Bourdeau (metadata via API, 28 images); the glossed facing page R9566 p.3 is in use. Residual: R9572 (above).
+(d) Recipient side -- **lead found, not seen.** British Library, Heytesbury Papers (William A'Court, British envoy at Naples),
+**Add MS 41525** (Vol. XV, 1817-1818), **f. 38 (extr.)**: "Fabrizio Ruffo, Principe di Castelcicala; Neapolitan Ambassador in
+London: Letters to the Marchese di Circello: 1816, 1817.: Ital." (searcharchives.bl.uk/catalog/040-002085178, read 2 Oct 2026).
+These are extracts of the same correspondent pair and years in an Italian clear text in British hands; whether any extract
+is the clear text of one of the 1816 cipher despatches here (R9553-R9560, R9579, R9587) is unknown until f.38 is seen. BL
+images are not reachable from the cloud (IIIF dead since 2023), so this is an owner-side copy or reading-room step; if an
+extract matches a despatch it is a crib (grade C) for the un-glossed 1816 set. Not in this folder or in Bourdeau's before
+this pass (grep 'Heytesbury', '41525', 2 Oct 2026). No Neapolitan or Italian documentary edition of Circello's
+incoming despatches was located (Treccani DBI biography only, Bourdeau; searches 1-3 above).
