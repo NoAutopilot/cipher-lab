@@ -1,0 +1,57 @@
+leaf	class	note	grade	sheet	thumb_url
+2	prose	blank cover left, letter right, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/067cc1d7-8cd8-4b30-902c-1aa8bf0871ff
+3	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/bcabe83c-0e6c-4129-99c2-46da278d130c
+4	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/f14a0081-0689-4f1a-af39-73c14d43a593
+5	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/779078cc-4624-4929-9361-4e548433bac9
+6	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/4c74d25a-53a0-4f55-b797-d36aa8eec7ba
+8	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/00bc8c3f-2264-492e-97ce-468dbd812d1a
+9	prose	letter close with signature, right page blank	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/47dc4bf8-e1da-40ee-93b0-b4f31611d810
+10	prose	blank left, letter with address block right	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/6433825d-31f5-4305-8828-dbf2e226902c
+11	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/fa2646b2-a30e-4236-a843-ed7a041f46c0
+12	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/0b080cf5-cb8d-41de-ae43-b91d8270e72e
+14	prose	blank left, letter headed right	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/650da5ff-3b2d-4ba5-b75b-32aaa31a37b4
+15	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/36ed88d1-3cde-4448-96c3-091c7ce22a6b
+16	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/33a15525-afce-4cbd-a6ab-028dddb5cac9
+17	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_1	https://service.archief.nl/api/file/v1/thumb/995f9b54-43c2-4c3f-af03-84d290bf2c16
+18	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/928cfe7f-72ca-4cc9-a16f-edb7993c9318
+20	prose	blank left, short letter right	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/62630a27-aece-4480-93a4-da36084149fe
+21	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/8fd3aebf-7bcf-4086-9087-8175302c9dd1
+22	prose	signature left, letter right	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/0f606e65-0539-4a11-bfe1-c46ea1048415
+23	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/bc49a0ab-2d73-4c36-a043-c32541d545e5
+24	prose	letter with signature, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/a336557c-146a-4381-af86-e054e81c2015
+26	prose	blank left, letter right	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/3dd6d916-e96f-4b15-a6c3-a07315c3c85e
+27	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/8343cbbf-dc0b-4359-b2c2-56968e3b0623
+28	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/f504a4f0-880b-41d6-8795-5eafef755191
+29	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/f09c36ad-d7d3-480e-a7f4-1b6eb831247a
+30	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/e68132d1-829a-447c-9e4d-1fb2a75c79b6
+32	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/8e3554cc-3c7b-4f3a-82ec-751d7418330b
+33	prose	prose with signatures, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/d3424d50-977d-454e-af46-3cc9be4f02bf
+34	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_2	https://service.archief.nl/api/file/v1/thumb/3d2c94a3-96b3-41b1-b24f-5efa82f7c0cf
+35	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/0606d8cc-e2c3-4901-8fc8-96b6467d4989
+36	prose	letter close and new letter, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/f54382e4-8aea-412f-9235-a70dd1e9389d
+38	blank	near-blank spread, faint pencil only	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/df444483-e9ac-426a-8c50-6729249894f3
+39	prose	blank left, short note with docket right	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/e07b6d74-777a-4dc2-85c0-0469adbb4498
+40	prose	blank left, dense prose right	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/c968d433-e589-4101-b09b-01b04178ae61
+41	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/16b8b80c-11e0-4a3b-bc62-7387277b35a5
+42	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/38297aeb-64a8-4364-8c48-944e5b71ec4c
+44	printed	blank left, printed 'Extrait des Minutes' decree headed Napoleon right	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/75aca153-b0bf-4554-a978-e0efc6df47d5
+45	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/7b93a209-31c6-4186-826e-87237882bf05
+46	prose	short prose and signatures left, prose right	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/bf2a68b0-d92f-4b77-86df-b169e1e8e8c0
+47	prose	blank left, prose headed right	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/8d641f9d-e1b7-42c0-8a55-5fe0b5528eb4
+48	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/cddc2133-300e-49aa-9f2f-43ce40f877a7
+50	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/4be6a879-c333-4e3a-8b0c-4bfd2786d440
+51	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_3	https://service.archief.nl/api/file/v1/thumb/2003f557-415f-46c2-ba07-9aca759d2003
+52	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/21a7c669-e9f3-4dcc-97a7-287201891e2b
+53	blank	near-blank, one docket line top right	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/4f6e1a03-0577-4ea9-99c8-f345b9d19197
+54	table	blank left, ruled register with word entries right	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/b806bd98-f525-4ceb-a336-ce56931f1fb6
+56	prose	blank left, 'Memoire' title page with prose right	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/bf0e477b-6fa2-479b-96c5-e09d4e6021b1
+57	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/e1e12fbd-dbc5-4680-b590-3dcb4b4752ee
+58	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/f661d73e-8dde-4a17-9159-671d5197e84a
+59	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/4d2fc6bf-935d-4bf9-a630-0f02bfae2eb7
+61	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/2ca9c979-9219-4cf5-a813-81c5916fc2a8
+62	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/f550ac13-df1d-4bab-9b03-e5939dc8c932
+63	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/2aea9594-ba46-4f4c-b85a-002777f1fd97
+64	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/dd6620f9-465c-4222-a69b-f9ea85d22f4c
+65	prose	cursive prose both pages, no digit grid	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/bf56aafc-8da8-4772-abb7-240c812c8134
+67	prose	blank left, short docket note right	M	gaps12_sheet_4	https://service.archief.nl/api/file/v1/thumb/0b78c044-9ee1-4c5b-be2d-863a70349ed2
+188	cipher (control)	known-positive control, raw No.1 Triplicata, on every sheet: digit grid plainly visible at 256 px	H	gaps12_sheet_1-4	https://service.archief.nl/api/file/v1/thumb/bf152dd2-ce11-493c-bf0e-828193041803
