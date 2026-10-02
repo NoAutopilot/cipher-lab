@@ -1,0 +1,14 @@
+# One vision eye-check (GAPS3-moray-wood-1568, 2 Oct 2026, one strong-model subagent call) of the 16 postscript crops
+# (crop_f213v_postscript.sh, from the full-size DECODE R8345 P4 image) against Aymeloglu's ciphertext.tsv labels.
+# Independent counts first: L1 46/46 glyphs, 5/5 gaps; L2 43/43, 2/2 (+2 minor spaces); L3 38/38, 5/5; L4 7/7, 0/0.
+# Verdicts: 130 agree, 4 uncertain, 0 disagree, 0 extra, 0 missing (134 glyphs). Only the non-agree rows are listed.
+# pos = the reader's own 1-based glyph index in the line (gaps not counted). Caveat: the reader's N inventory for L3
+# (5, 11, 17, 34, 37) omits the N at his pos 22 (r A N a a x t), so its "L3 pos 24" is most likely his pos 22, the i of
+# 'haill'; L1 rows may be off by one the same way. No label changed and no grade changed (a second blind pass settles these).
+line	pos	his_label	verdict	better_label	note
+L1	5	x	uncertain	x/xd	small hook at top-left, like the glyph he labels xd at pos 17
+L1	8	xd	uncertain	xd/x	plain x between the barred triangle and the inverted T; no dot or hook visible
+L1	21-22	4 A	agree	-	a long diagonal stroke crossing the line is a descender from the line above, not a glyph
+L2	29	4	agree	-	an unlabelled dot above-left of the 4 (after the gap); no label for it; ink or a marker
+L3	24	N	uncertain	X/N	x with a vertical stroke through its centre (crossed x), not the inverted-v-plus-stroke of his N at 5, 11, 17, 34, 37; lean X (probably his pos 22, see header)
+L4	4-5	Xs Z2	uncertain	Xs Z2 / X Z5	a long slash rises between the crossed x and the flat-topped Z; belongs more plausibly to the x (his Xs), but slash-plus-Z is possible (his own L4.5 dispute)
