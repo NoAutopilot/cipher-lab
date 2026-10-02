@@ -160,3 +160,7 @@ ciphers/na-suriname-map-1781	"officers' quarters" "garrison barracks" "gunpowder
 ciphers/na-suriname-map-1781	"Nieuw Amsterdam" AND Wollant AND (1781 OR 1782) AND (geheimschrift OR cijferschrift)	2026-10-02	queued	
 ciphers/na-suriname-map-1781	"cazernes voor de besetting"	2026-10-02	queued	
 ciphers/na-suriname-map-1781	"1500 man nodig om het fort"	2026-10-02	queued	
+ciphers/na-schonenberg-1678-1716	"Schonenberg" AND ("Albanilla" OR "Albanylla" OR cifra OR cipher OR cijferschrift)	2026-10-02	queued	
+ciphers/na-schonenberg-1678-1716	"Antonya de Albanylla"	2026-10-02	queued	
+ciphers/na-schonenberg-1678-1716	"Antonia de Albanilla"	2026-10-02	queued	
+ciphers/na-schonenberg-1678-1716	"para mas seguridad de la correspondencia"	2026-10-02	queued	

@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	2	blocked: HTTP 429 on https://api.crossref.org/works?rows=5&query.bibliographic=Francisco%20van%20Schonenberg
+api.openalex.org	11	ok
+api.semanticscholar.org	5	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22pondra%20solamente%20en%20sobre%20escrito%20en%20esta%20forma%22
+be-api.us.archive.org	9	ok
+www.googleapis.com	9	ok
