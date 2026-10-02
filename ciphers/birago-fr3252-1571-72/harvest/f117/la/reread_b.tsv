@@ -1,0 +1,54 @@
+passage	pos	label	conf	second	note
+L06	1	T98	H		oval pierced by long vertical stem
+L06	4	T60	M	T86	two verticals crossed by two horizontals
+L06	5	T98	H		oval pierced by vertical stem
+L06	8	T92	M	T50	w-shape, small curl at left start, no long tail
+L06	10	T83	M	T81	x with curled left stroke
+L06	12	X_NEW	M		tall f/long-s with top curl, unlike candidates
+L06	13	T65	M	T51	stem with crossbar and loop at upper right
+L06	15	T98	H		oval pierced by vertical stem
+L06	17	T60	M	T86	hash with two horizontals
+L06	18	T90	H	T45	small cross on top of open loop
+L06	20	T83	M	T81	x with curled left stroke
+L06	21	T86	L	T60	two verticals, single long crossbar
+L06	25	T98	H		oval pierced by vertical stem
+L06	26	T90	M	T45	cross over loop, in stained area
+L06	31	X_NEW	L	T88	ink blot with stem, shape obscured
+L07	5	X_NEW	M	T83	X with doubled left diagonal
+L07	10	T60	M	T86	hash with two horizontals
+L07	13	T86	L	T60	two verticals, crossbar unclear
+L07	17	T92	M	T50	w-shape with curl at left, no tail
+L07	18	T98	H		oval pierced by vertical stem
+L07	21	T65	M	T95	loop at top right with crossbar on stem
+L07	23	T60	L	T86	hash, bars faint
+L07	26	X_NEW	M	T83	X with doubled left diagonal, same as pos5
+L07	27	T18	M	T98	filled oval with stem below only
+L07	28	T60	L	T86	hash next to blot
+L07	29	X_NEW	L	T83	open-top 8/x shape with loops
+L08	1	T29	H	T24	epsilon joined to small o
+L08	6	T83	M	T81	x with curled left stroke
+L08	8	T98	H		oval pierced by long stem
+L08	10	T83	M	T81	x with curled left stroke
+L08	11	T50	M	T92	w with long S-tail on right
+L08	13	T98	H		oval pierced by stem
+L08	16	X_NEW	H		d-shape with tall looped ascender
+L08	19	T83	M	T81	x with curled left stroke
+L08	21	T98	H		oval pierced by stem
+L08	23	T65	M	T95	loop at top right with crossbar
+L08	27	T29	M	T24	epsilon with small dot/o attached
+L09	1	X_NEW	M	T83	small cross attached to o
+L09	3	T92	M	T50	w with filled loop at left, no tail
+L09	4	T55	H		stem with two bars to the right, F-like
+L09	8	T29	H		epsilon joined to o
+L09	9	T98	H		oval pierced by stem
+L09	11	T65	M	T95	loop with crossbar on stem
+L09	15	T98	H		oval pierced by tall stem
+L09	16	T92	M	T50	w-shape with inner loop, no tail
+L09	17	T60	M	T86	hash with two horizontals
+L09	20	T65	M	T95	loop at top right with crossbar
+L09	24	T60	M	T86	hash with two horizontals
+L09	29	T65	M	T95	loop with long crossbar, at line end
+L10	1	T83	M	T81	x with curled left stroke
+L10	7	T60	L	T86	hash, bars partly merged
+L10	8	X_NEW	H		6/b inside large enclosing curve
+L10	10	X_NEW	M	T70	triangle on top of a crossed stem
