@@ -205,3 +205,68 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 - `"Sverges traktater med främmande magter" AND 1677`: context only, no hit about the letter -- Svante Norrhem,
   "The uses of French subsidies in Sweden, 1632-1729" (book chapter, Subsidies, Diplomacy, and State Formation
   in Europe, 1494-1789), 2020, pp. 93-117, https://www.jstor.org/stable/jj.29685549.9.
+
+## Web and blog check (GF-A2-8, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard):
+1. `Karl XI fullmakt 6 maj 1677 Nääs kommissarier chiffer` (sender + date + place + cipher word): Kungliga slotten
+   monarch pages, Svenska kyrkan, DigitaltMuseum, KulturNav, Wikipedia (Charles XI). None names this full power.
+2. `"SE/RA/25.3/4/II/7/B" OR "Fredsfördrag med tillägg" Kejsaren 1677 chiffer` (reference code + cipher word): Finnish
+   national library ontology, Georgian Papers transcriptions, founders.archives.gov, the Yale Avalon item "Declaration
+   of the King of Sweden ... Lord Greiffenheim" (a different document), Danish KB letters. No hit on the reference code.
+3. `"delvis i chiffer" fullmakt 1677` (the Riksarkivet catalogue's own phrase, quoted): Uppsala Swedish-colonial
+   (Saint-Barthélemy) records, NYS archives, the Leijel family letters, a TNA record. None about this document.
+4. `Charles XI full power Swedish plenipotentiaries Nijmegen 1677 partly in cipher` (descriptive title): Bengt
+   Oxenstierna's Wikipedia page, a Bodleian archival object, Avalon "Speech of the Swedish Envoy ... Vienna", TNA
+   Nijmegen treaty correspondence (SP Foreign, Holland, 1677), Runeberg's *A History of Sweden*, and **M. Bakeš,
+   "Habsbursko-švédské diplomatické vztahy v období vlády Karla XI. (1672-1697)"** (Czech thesis, theses.cz/id/n0bws4).
+   The thesis is the one hit on the right relationship and reign. Its theses.cz page was opened, but this
+   container's text extraction got no abstract or full text from it. Whether it cites the 1677 full power is
+   **not established**; that is the next step for (d) below.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de`), "Karl XI 1677 Swedish cipher": the plausible hit "A king's encrypted letter on
+   Satoshi Tomokiyo's list of unsolved cryptograms" (14 Jun 2020) was opened with its comment thread. It is Charles I of
+   England's 1648 Isle of Wight letters, and the comments mention no Swedish item. The other results (Swedish
+   postcard, Thirty Years War cipher, Fersen letters) are other items.
+6. Cryptiana blog (`site:cryptiana.blogspot.com`, `cryptiana.web.fc2.com`), "Swedish cipher Charles XI 1677": the
+   blog's front page and its September 2025 archive. The archive page was opened and grepped for sweden|swedish|karl
+   xi|charles xi|1677|nääs. Its only 1677 hit is the Perwich despatches (English agent in Paris, 1669-1677), which is
+   not this item.
+7. Cipher Mysteries (`site:ciphermysteries.com`), "Swedish cipher 1677 Charles XI": only fifteenth-century, van Heeck,
+   Swedish Z32 and Blitz posts. Nothing on this document.
+No decipherment, transcription or plaintext of the 6 May 1677 full power was found on the open web or in a blog comment
+thread.
+
+## Premise check (GF-A2-8, 2 Oct 2026)
+
+(a) Decipherments the folder mentions: **none.** NOTES.md and REQUEST.md mention no decipherment, gloss or clear copy of
+document (b). REQUEST.md line 5 only allows for the possibility that a printed copy might have the cipher deciphered
+or omitted.
+(b) Other solvers' working files: **not found.** Fresh shallow clones (2 Oct 2026) of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers, grepped for nääs|naas|fullmakt|karl ?xi|charles xi. Aymeloglu: no hit. Bourdeau: the
+hits are Charles **XII** (README lines 134/138, Rákóczi 1707; goertz1717) and digit-block or corpus files (sp53,
+labbe1582, blume, indus). No file names Karl XI's 1677 full power or applies a Swedish key to it. Cited, not copied.
+(c) Physical neighbours: **a clear-text sibling sits in the same dossier, but no decipherment.** SE/RA/25.3/4/II/7/B holds
+document (a), Karl XI's full power for the Swedish commissioners, Stockholm 12 April 1676, Latin, 3 pages, **not** in
+cipher, beside document (b), the Nääs full power of 6 May 1677, Latin, partly in cipher (Riksarkivet record, quoted in
+"What this is"). Full powers follow a fixed chancery formula, so (a) is the obvious clear model for (b)'s unciphered
+frame and probably for some of its enciphered names. That is a crib source, not a decipherment, and it can only be
+used once the leaves are seen. Neither document is digitised (`onlyDigitisedMaterials: false`), so no leaf, facing
+page or laid-in slip could be viewed. **Unreachable** until the REQUEST.md copy order lands.
+(d) Recipient's side: the recipient is the Emperor's side and the congress. That side's papers (HHStA Vienna,
+Staatenabteilung Schweden) and the Nijmegen treaty instruments would print the Swedish full power if it was
+exchanged. This pass ran Internet Archive be-api full-text searches inside *The Consolidated Treaty Series* vol. 15
+(`consolidatedtrea0015cliv`), which reprints Nijmegen instruments:
+- "Carolus Dei gratia Suecorum" 1 hit, "Olivenkrantz" 1 hit and "Eos nominavimus" 1 hit, all inside a Swedish full
+  power and ratification for the Münster settlement (ex "Actes de Nimègue, Tom. III").
+- "Naes" 0, "Maii 1677" 0, "Benedictum Oxenstierna" 0, "Sacram Caesaream Majestatem" 0.
+- "Naas"/"Nääs" 1 hit, an OCR fragment beside a Danmark-Norges Traktater citation, not this document.
+Three whole-IA be-api searches (unquoted terms for Naes/1677/plenipotentiaries, "Datum in arce nostra Naes", and the
+Nimègue actes) returned 517, 218 and 175 loose-match items. Their titles (Portuguese, Hungarian and Estrades
+collections) are not on point, and the items were not opened. **Not found so far, but not closed.** The Emperor-Sweden
+peace of Nijmegen (5 Feb 1679) in CTS 15 and the *Actes et mémoires des négociations de la paix de Nimègue* (1680) are
+the places where an inserted Swedish full power could be printed. A page read of the Emperor-Sweden instrument and
+its inserted full powers is the next step, about 6 be-api/reader requests. The Bakeš thesis (web check item 4) is the
+other recipient-side lead.
+Requests: be-api.us.archive.org 15, archive.org metadata 1, scienceblogs.de 1, cryptiana.blogspot.com 1, theses.cz 1,
+github.com clones shared with the other three GF-A2-8 targets, WebSearch 7.
