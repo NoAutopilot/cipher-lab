@@ -748,22 +748,58 @@ then covers only signs with no vote); tools/tests/decode_configs/clairambault122
 (the antt-linhares-chave and rah-canada-1869 failures in the same test file are the pre-existing drift NEXT2-PAG logged).
 Judge not run (no spec). Rule 10: readings described only as read from the period interlinear decipherment.
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated 2 Oct 2026, NEXT-PAG, NEXT2-PAG and PAGET-KEY)
+## Print step (A2-PAG, 2 Oct 2026)
+
+Intake gate first (pasted): `clairambault1225-paget-1714: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+Ran the Verdict's cheapest next step: the open-index pass and tools/print_check.py on the period-gloss phrases. A search log
+for the solver side, not a novelty verdict (rule 10).
+- `phrases.txt`: 16 phrases from align/pairs.tsv `plain_raw` (one reader's gloss read, NEXT-PAG), e.g. "la Princesse de Parme et
+  ses 2 oncles", "le Prince Antoine de Parme", "Elle achevera sa 22e annee le 25 Octobre prochain", "a toujours este de genie
+  Allemand", "on verra quelques personnes a Genes", "Labbe Lomeliny". `sources.tsv`: 3 OpenAlex and 2 CrossRef keyword rows
+  (Paget + consul + Genes/Cagliari, Elisabeth Farnese 1714 marriage + consul Genes).
+- `python3 tools/print_check.py ciphers/clairambault1225-paget-1714 --max-requests 150 --delay 1.6` -> print-check.tsv (75 rows),
+  print-check-hosts.tsv. **IA full text (ia-global, 16 exact-phrase queries): 15 no hits**; "le Prince Antoine de Parme" 12 items, all
+  general histories / Comedie-Italienne volumes naming Antonio Farnese, none a Paget letter. **OpenAlex: no phrase hit**; keyword rows 3 and 1
+  works, none relevant (a 2026 Dix-huitieme siecle article on Compagnie colonisation projects, unrelated). **Google Books**: the phrase rows
+  report 2-352 volumes because the API does not enforce the quotes; the listed titles (Saint-Simon, Dictionnaire de Bayle, Moreri, Revue des
+  deux mondes...) are word-overlap noise. CrossRef: 1 query answered (noise), then 429. Semantic Scholar: 1 query answered (117 loose
+  hits, none this letter), then 429 for the other 18 rows.
+- Follow-up by hand (Google Books API with `country=US`, 7 queries reading `searchInfo.textSnippet`): `"Paget" "Gênes" 1714 Parme
+  princesse` and `"Paget" "princesse de Parme" 1714` hit only the Inventaire des archives de la marine (1964; GssZAAAAYAAJ / XcsqAQAAMAAJ):
+  register summaries, "Paget (Gênes) : le s. Saint-Hilaire est à Vienne ; le s. Santini, dit ... Parme à propos du mariage de la
+  princesse de Parme. F° 265", the entries OX-PAGK already logged (no transcription of the cipher passages). `"Paget" Lomellini Gênes 1714`
+  hit P. Masson, Histoire des établissements et du commerce français dans l'Afrique barbaresque (1903), a footnote "Paget à Gênes" in a
+  Tunis/Concessions context, not these letters. `"genie allemand" duchesse Parme` hit Saint-Simon's Mémoires: "ses tantes, et sœurs
+  de ces deux princes Farnèse, et qui ne sont pas plus de génie allemand que leurs dits frères" -- Saint-Simon's own text on the
+  same marriage, a parallel phrase, not a print of Paget's letter (worth a note for a verifier: the phrase "génie allemand" for the
+  Farnese circulated at the French court). `"Paget" consul Gênes Farnèse`, `"Paget" Courcy "paix d'Utrecht"`: 0.
+- HAL API (`api.archives-ouvertes.fr/search`): `Paget AND consul AND (Gênes OR Genes OR Cagliari)` 0; `"princesse de Parme" AND 1714 AND
+  consul` 0. Persée site search (`Paget Gênes consul 1714`, `Paget vice-consul Cagliari`): OR-matched result lists (331,728 and 145,303),
+  top hits unrelated (medieval Genoese consuls, Seville 1873); no Paget article.
+- Semantic Scholar single retry after a 20 s pause (`Paget consul Genoa 1714`, keyed): HTTP 200, 1 result, Hanna/Ottoman World 1660-1760
+  survey, not this letter.
+Result: no printed or online text of either letter's ciphered passages, and no decipherment of them, located by these methods on
+2 Oct 2026 (a search result, rule 10). Not covered: JSTOR (owner-side; no row written, since the print step's brief named only the
+open-index pass), Gallica full-text beyond RIDA XIX. Requests: be-api.us.archive.org 16, www.googleapis.com 16 (tool) + 12 (by hand,
+5 of them a malformed loop whose output was discarded), api.openalex.org 19, api.semanticscholar.org 3, api.crossref.org 2,
+api.archives-ouvertes.fr 2, www.persee.fr 2. Subagents 0, vision calls 0.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated 2 Oct 2026, NEXT-PAG, NEXT2-PAG, PAGET-KEY and A2-PAG)
 Read so far: (decode.json run 2 Oct 2026, PAGET-KEY) token level H 71, M 422, I 7, U 5 of 505 (firm 71); run level 501 of 505 cipher tokens (99.2%) lie under a period interlinear gloss, read off the page images by one reader (NEXT-PAG, 2 Oct 2026; align/pairs.tsv), so the run-level plaintext of both letters' cipher passages is in hand pending a second read; code-level, key.tsv holds 114 codes (11 H, 10 C stable; 93 M single-attestation or unsettled), both letters having cleared per-letter controls (align/per_letter.txt).
 - Code-level values for the 422 M tokens (93 single-attestation/unsettled codes now in key.tsv at M, plus tokens whose own chunk disagrees with a stable code; frequent codes 46, 146, 145, 175 unsettled) - blocker: open-codes; the alignment (self-agreement 0.280 vs shuffle p95 0.126) does not hold one value for them, which fits homophones/nulls or a decipherer's gloss that paraphrases (f66R "de Parme" with no 87.201.156 under it); context does not narrow them further at run level, where the gloss already gives the plaintext
 - Gloss attachment and the M digits, all seven cipher page-halves (f60R f61L f61R f65L f65R f66L f66R) - blocker: not-attempted; the 2 Oct pairs rest on one reader's look at whole/half-page crops (5 digit overrides, P23/P28/P34/P46 chained across line breaks, P05 "a Genes" margin note attached to 175.X.276), and the f66L/f66R kind-mismatch rows and 66x outliers (Transcription "Known reconciliation artifacts") were never re-read blind; next: tools/iiif_lines.py --image on the seven page-halves, 2 blind passes per page recording each above-line gloss with its run plus 1 reconciliation, then re-run align/evaluate.py --write and make_key.py, ~$8
 - f66L 169-172 '400 4 19 600' ("une complaisance aveugle pour ..."), 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg (checked 2 Oct 2026), none of the four codes recurs under a gloss, and no key sheet is known (AN Marine B7 original waits on LOCAL-QUEUE L11)
 - f61L, one cipher group solid-inked over (between 175 and 276, f61L ~pos48) - blocker: illegible; hand-marked ILLEGIBLE in both transcription passes; its gloss text ("on verra quelques personnes a Genes", P05) is read, its code number is not. The only other witness is the AN Marine B7 original (LOCAL-QUEUE L11, queued 25 Sept 2026, unanswered)
 
-## Escalation (1 Oct 2026; updated 2 Oct 2026, NEXT-PAG, NEXT2-PAG and PAGET-KEY)
+## Escalation (1 Oct 2026; updated 2 Oct 2026, NEXT-PAG, NEXT2-PAG, PAGET-KEY and A2-PAG)
 - [x] siblings: neighbouring leaves in the volume opened (f55-f59 Fleury testament and notice; f67/f70/f75 unrelated Puget/Peraud print; OX-PAG, images/manifest.json). The BnF Clairambault name index lists only this item for "PAGET -- Lettres chiffrees". The Paget 14 Jan 1713 sibling (ciphers/clairambault296-paget-1713) was not found in 314 of 316 Gallica canvases; canvases 28 and 36 are unread (LOCAL-QUEUE L23 done-blocked 27 Sept 2026), and the retry belongs to that target's NEXT-STEPS row 31 and ASKS row 51. DECODE, Bourdeau and Aymeloglu had no Paget hit (23 Sept 2026). The AN Marine B7 originals wait on LOCAL-QUEUE L11, and SIV form reproduction is NEXT-STEPS row 30 (NX-UNBLOCK, HTTP 500 once). No internal sibling step is left in this folder
 - [x] clear-pages: no separate clear copy or decipherment sheet on the neighbouring leaves; the clear text is the letters' own interlinear decipherment, which on the images (2 Oct 2026) covers 501 of 505 cipher tokens, far more than ciphertext.tsv's insertion-clear rows record; used in full by the key-rebuild below
 - [x] known-keys: already swept. KEY-CROSSMATCH.tsv has 45 rows for this ciphertext against every key on file: 28 none, 9 unusable-key, 8 no_corpus. The best coverage, 0.353, is fr7129's f275 code key (no_corpus); the nearest French nomenclator is Le Tellier 1659-ext at 0.196 (none). KEY-DESIGN-PRIORS.tsv row 12 (design_prior.py --unkeyed) ranks multi-sign (homophonic/nomenclator/syllabary) first (0.94), with lead vanbeuningen-dewitt-1657. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no French Marine or consular key from 1700-1729 (grepped 1 Oct 2026). 'chiffre de M. Paget' and 'chiffre pour Genes' came back negative in Google Books and web search (OX-PAGK). A re-run against key.tsv's 21 codes is not worth doing before the retry step
-- [ ] print: done so far: RIDA XIX (Driault 1912) ContentSearch for 'Paget' gave 3 irrelevant hits and 'Cagliari' 0 (CX2-MISC2); Mezin 1998, Ulbert 2019, and Google Books snippets of the Inventaire des archives de la marine B7, which are register entries without transcription (OX-PAGK). Planned: the open-index pass (OpenAlex, Semantic Scholar, Persee, HAL) for Paget with Genes/Cagliari (WAIT-PASS-A), and a tools/print_check.py phrases.txt run on the gloss plaintext ('la Princesse de Parme et ses 2 oncles', 'le Prince Antoine de Parme', 'Elle achevera sa 22e annee le 25 Octobre prochain'), ~$3
+- [x] print: 2 Oct 2026 (A2-PAG): tools/print_check.py on 16 gloss phrases (phrases.txt) + 5 keyword sources (sources.tsv) -> print-check.tsv: IA full text, OpenAlex, CrossRef, Google Books; plus Google Books snippet queries, HAL API and Persee. No print of either letter's text or decipherment located; the only Paget-specific print remains the Inventaire des archives de la marine B7 register summaries (OX-PAGK). Semantic Scholar and CrossRef 429 mid-run (one retry each per the good-citizen rule; S2 retry answered, no hit). Earlier: RIDA XIX (Driault 1912) ContentSearch 'Paget' 3 irrelevant hits, 'Cagliari' 0 (CX2-MISC2); Mezin 1998, Ulbert 2019 (OX-PAGK)
 - [x] key-rebuild: 2 Oct 2026 (PAGET-KEY): per-letter controls both PASS (L1 own 0.323 vs p95 0.084, cross 0.454 vs 0.258; L2 own 0.207 vs 0.133, cross 0.341 vs 0.229); key.tsv 114 codes (11 H, 10 C, 93 M); decode H 71 M 422 I 7 U 5. Earlier, 2 Oct 2026 (NEXT-PAG): tools/interlinear_align.py over 56 image-read gloss pairs (52 training, 4 held out), with the new --max-chunk 4 --seg-bonus 0.5 --len-prior 0.5 options; training self-agreement 0.277 vs shuffled-pairing p95 0.126, held-out known-answer letters 24/37 = 0.649 vs shuffle p95 0.378 (both above control); key.tsv 21 codes (12 C, 9 M); the 1 Oct note's code-147 contradiction was a misread gloss ("Lisle", not "Gile"). At the brief's Thurloe defaults the same run did not beat its control (0.175 vs p95 0.184), logged above
 - [ ] image-check: done: NEXT-PAG read the above-line glosses and their attachment on all seven cipher page-halves (one reader, 2 Oct 2026). Planned: tools/iiif_lines.py --image line crops, 2 blind passes per page plus 1 reconciliation, recording each gloss with its run and re-reading the M digits and the five overridden digits, then re-run align/evaluate.py, ~$8
 - [x] retry: 2 Oct 2026 (PAGET-KEY): regraded decode --check exit 0, H 71 M 422 I 7 U 5. Earlier (NEXT2-PAG): decode.json + tools/decode_key.py --check over both letters, exit 0; C 71, M 47, I 7, U 380 of 505 ("Decode script" above); --split-check 0 candidate splits
-Verdict: keep going: 2 internal gaps; cheapest next: the print step (open-index pass + tools/print_check.py on the gloss phrases), ~$3; then the image-check blind passes, ~$8
+Verdict: keep going: 2 internal gaps; cheapest next: the image-check blind passes (tools/iiif_lines.py --image line crops on the seven page-halves, 2 blind passes per page + 1 reconciliation, then align/evaluate.py --write and make_key.py), ~$8
 
 ## Web and blog check (NEXT2-PAG, 2 Oct 2026)
 

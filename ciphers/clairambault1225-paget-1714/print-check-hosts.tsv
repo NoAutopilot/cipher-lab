@@ -1,0 +1,6 @@
+host	requests	status
+api.crossref.org	2	blocked: HTTP 429 on https://api.crossref.org/works?rows=5&query.bibliographic=Paget%20vice-consul%20Cagliari%20Sardaigne
+api.openalex.org	19	ok
+api.semanticscholar.org	2	blocked: HTTP 429 on https://api.semanticscholar.org/graph/v1/paper/search?limit=5&fields=title,authors,year,venue,externalIds&query=%22la%20Princesse%20de%20Parme%20et%20ses%20deux%20oncles%22
+be-api.us.archive.org	16	ok
+www.googleapis.com	16	ok
