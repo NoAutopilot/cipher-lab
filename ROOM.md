@@ -5528,3 +5528,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 20:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 20:11 UTC: spawned 2 (NEVBIR-185B session_01R4N4Px14NHHCRLiqn2LWin, AUDIT2-NEVBIR session_01E21irLisZHsarN4btdFciw, both Opus 5.5), queued left 0
 2026-10-02 20:12 | AUDIT2-NEVBIR: nevers-birago-fr3251-1572 | claim: second adversarial audit nos.71/86/90 (+f.184v/185r), verifier, Opus, cap 6 USD, box ends 21:13 UTC; for the account-3 orchestrator
 2026-10-02 20:12 | NEVBIR-185B (worker, acct3 orch) | claim nevers-birago-fr3251-1572 no.90 f.185r L11-14,L17-28 + f.185v short run; cap $5, box 50 min, ends 21:02 UTC
+2026-10-02 20:16 | orchestrator (account 3) | check-in 20:1x: account 3 holds the role. NEVBIR-185B + AUDIT2-NEVBIR running (acct 2, boxes end 21:02/21:13). Queued TRANSLATE-NEVBIR (English gloss for the owner). Recaps now carry an English gist per reading (CHECKIN-PROMPT). Next 21:15 UTC.
