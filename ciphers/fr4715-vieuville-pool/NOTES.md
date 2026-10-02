@@ -559,10 +559,65 @@ OK keep-going fr4715-vieuville-pool: keep going: 6 internal gap(s), 1 step(s) un
 gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
 ```
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5 and -6, 2 Oct 2026)
+## GAPS-fr4715-vieuville-pool-7 (2 Oct 2026, account-4): the Verdict step -- key-side word-cover test of the 66 L06-L14 8-rule sites
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`. Clock read 22:38-22:4x UTC 2 Oct 2026. Intake gate exit 0.
+Disk only: requests 0, vision calls 0. A different instrument from the three retired blind re-reads (GAPS-6, rule 3 third-attempt
+clause): `scripts/eight_cover_test.py` (new). For each of the 66 sites the first digit is set to 8, 0, 6, 9 or 3 (second digit
+kept), the token decoded with key_vieuville_nevers.tsv (0x and 33/34/35 are out of key and break the run), every other token held at
+its record value, and the run(s) touching the site scored by letters covered by fr16 words (`scripts/keytest.py` cover(), 3-14
+letters, freq >= 3). A candidate wins a site when its cover is strictly above every other's. The script rebuilds both blocks' token
+streams from the reconciled drafts and asserts they equal the committed ciphertexts (so the 66 '8<' flags are the segmenter's own).
+Per-site table: `witness/f60r_eight_cover.tsv`.
+
+| | 8x | 0x | 6x | 9x | 3x | tie |
+|---|---|---|---|---|---|---|
+| target sites won (of 66) | **23** | 0 | 1 | 6 | 0 | 36 |
+| target covered letters, summed | **610** | 489 | 574 | 565 | 492 | -- |
+
+**Control (rule 3), 20 seeds:** 66 sites drawn from the 691 settled tokens (undotted in-key codes not resting on the rule, first
+digit not 8, second digit matched to the target's 0/3/4/5 counts 1/24/3/38), same scoring: **8x win share mean 0.105, sd 0.031,
+min 0.061, max 0.167; target 0.348, rank 1 of 21, above every seed.** Over the whole pool 8x wins 45/691 (0.065). The control varies on
+the axis measured (which first digit wins at a site), so it can fail differently from the target.
+**Known answer (the instrument's power):** at settled tokens whose true first digit is a candidate, the true digit wins 17/46 page-read
+8x tokens (lower block, 0.370), 40/122 6x (0.328), 57/153 9x (0.373), 3/10 30 (0.300); 8x wins 11 of the 181 settled upper-block 6x/9x
+sites (0.061). So the test finds a true 8 about 37 pct of the time and a false 8 about 6-11 pct; the target's 35 pct sits at the
+known-answer rate for real 8s, not at the chance rate.
+
+**Result.** The licence's three conditions hold: 8x wins more sites (23) than every alternative (9x 6, 6x 1, 0x 0, 3x 0), beats all 20
+control seeds, and the known-answer check separates true 8s from non-8s. **Sites moved: 23 of 66, I -> S, not H** -- the value under
+8x is the printed key's (H), but the first digit is restored by a key-side word-cover test with a control, which is rule 4's S
+(cryptanalytic with a control; each moved site's letter sits inside a covered word of 3+ letters in its run), not read from the page or a
+key source. 36 ties (the run gives no word either way) and 7 sites another digit wins (9x at L08 238, L09 262, L09 324, L10 401, L11 479,
+L13 626; 6x at L07 103, all `85`/`83` records, mostly by 3 letters or fewer) stay at I; the 7 are flagged, not changed (a single-site
+win at the chance rate is not a licence to re-read either way). No token value changed, so `tools/decode_key.py --check` exits 0 with the
+same counts. **Rule 4 grades, L06-L14, 604 letter tokens: before 538 H + 66 I; after 538 H + 23 S + 43 I.** Lower block 305 H + 3 I and
+f67r AB 8 / U 19 unchanged. The judge stays a non-test on this design (GAPS-4) and was not run. Rule 10: nothing here is called new or
+first; this records what was found and where it was not found.
+
+```
+$ python3 scripts/eight_cover_test.py
+target sites (L06-L14, 8 rule): 66
+target wins by candidate: 8x 23, 0x 0, 6x 1, 9x 6, 3x 0, ties 36 (of 66)
+target total covered letters: 8x 610, 0x 489, 6x 574, 9x 565, 3x 492
+control pool (settled, first digit not 8, second digit 0/3/4/5): 691; by second digit {'0': 144, '3': 354, '4': 17, '5': 176}; target needs {'0': 1, '3': 24, '4': 3, '5': 38}
+control 8x win share, 20 seeds x 66 sites: mean 0.105 sd 0.031 min 0.061 max 0.167
+target 8x win share 0.348; beats every seed: True; rank 1 of 21
+whole pool (691 settled non-8 sites): 8x wins 45 (0.065)
+$ python3 tools/decode_key.py ciphers/fr4715-vieuville-pool --check   # exit 0
+f60r_blocks_ciphertext.tsv: tokens 749: AB 604, U 145
+reading up to date
+$ python3 tools/intake_gate_check.py fr4715-vieuville-pool   # exit 0
+fr4715-vieuville-pool: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+$ python3 tools/gaps_check.py fr4715-vieuville-pool   # exit 0
+OK keep-going fr4715-vieuville-pool: keep going: 6 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6 and -7, 2 Oct 2026)
 Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604 letters (rank 1/201, z 5.11), L25-L30 + L28b 308 letters (rank 1/201, z 5.24); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv); the lower dense block read 2 Oct 2026 (GAPS-5)
 - the no.37 dense cipher blocks - READ 2 Oct 2026: L06-L14 (GAPS-4) 604 letters, rank 1 of 201 z 5.11; L25-L30 + the unlisted row L28b (GAPS-5) 443 tokens, 308 letters (305 H + 3 I), rank 1 of 201 z 5.24, pass agreement 82.3 pct, decode --check exit 0; judge non-test (its design-matched control FAILs too); the 177 dotted/barred word-codes of the two blocks stay U - blocker: open-codes; what would read them is the same codes glossed on a sibling leaf (gap 4 below)
-- the 8-glyph rule on no.37 (66 L06-L14 tokens at I) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; next, a different instrument: a key-side test on disk -- score word-cover of the 66 sites as 8x against each other possible first digit (0x out of key, 6x, 9x, 3x) with the site set shuffled as control (scripts/keytest.py), ~$1
+- the 8-glyph rule on no.37 (43 L06-L14 tokens at I, 23 at S since GAPS-7) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; 2 Oct 2026 (GAPS-7): the key-side word-cover test ran (scripts/eight_cover_test.py): 8x wins 23/66 sites vs 9x 6, 6x 1, 0x/3x 0, 36 ties; control 20 seeds mean 0.105 max 0.167 vs target 0.348 (rank 1 of 21); known answer: true 8 wins 17/46 (0.370), 8x on settled non-8 sites 0.061; 23 sites I -> S, 43 stay I (36 ties, 7 won by 9x/6x); what remains for the 43 is new material (the same letter run elsewhere, or a sibling leaf in the same hand), not a further pass at these glyphs
 - the four L-grade glosses (labr/de over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: open-codes; re-read 2 Oct 2026 (GAPS-3) from tall native crops, 1 call: all four now M (de and legat clear as text but each straddles two groups; L20 du/dn sits over the dotted 16; L22 is an insertion 'peu de', not a gloss), no decode-key value changed; what would settle the group cover is the same code glossed again on a sibling leaf (no.21/35/39, gap 3 below)
 - no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37; next: the other glossed pool leaves (no.21 f.44, no.35 f.58, no.39 f.62, all "en partie déchiffrée" per the dépouillement) read the same way as this step, one leaf a job, ~$10 each
 - the clear-French frame of f67r_ciphertext.tsv (198 C-only L words after the fold) - blocker: not-attempted; 2 Oct 2026 (GAPS-6): pass C folded in as the frame with three-pass support (scripts/f67r_frame_fold.py: 609 words, A or B agree 341 = 56.0 pct; H 325 / M 86 / L 198; L31 kept as A/B); cipher tokens unchanged; judge FAIL -1.012 (was -1.145) vs real_p05 -0.867, a non-test on this design; what remains is transcription of the clear frame, not decipherment; next: one strong second pass on the crops of the L words only, ~$3
@@ -576,4 +631,4 @@ Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 6 internal gaps; cheapest next: the key-side test of the 66 L06-L14 8-rule sites (word-cover as 8x vs 0x/6x/9x/3x, shuffled-site control, scripts/keytest.py, disk only), ~$1; then the print check on no.44 clear phrases, ~$1
+Verdict: keep going: 6 internal gaps; cheapest next: the print check on no.44's H-grade clear phrases and no.37's M lines (write phrases.txt, tools/print_check.py), ~$1; then the strong second pass on f67r's 198 C-only L frame words, ~$3
