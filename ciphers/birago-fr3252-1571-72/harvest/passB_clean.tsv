@@ -1,0 +1,160 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S75	S73	M	cross with dot; line start
+L01	2	S54	S74	M	b with bar
+L01	3	S84		M	cursive x
+L01	4	S93		M	omega with hook
+L01	5	S24	S88	M	crossed plus
+L01	6	S76		M	e+ij ligature
+L01	7	S62		H	beta
+L01	8	S54		L	b
+L01	9	X_NEW	S65	L	8 with bar
+L01	10	S23	S97	M	lambda dotted
+L01	11	S70		M	inverted A
+L01	12	X_NEW		L	two dots colon
+L01	13	S17		M	Z
+L01	14	S47		M	e tailed
+L01	15	S75		H	plus
+L01	16	S76		M	e+ij
+L01	17	S62		M	beta
+L01	18	S23		M	lambda
+L01	19	X_NEW		L	dots/s
+L01	20	S53		H	phi
+L01	21	S52		H	3
+L01	22	S42		M	x dotted
+L01	23	S45		M	c
+L01	24	X_NEW	S65	L	8 barred
+L01	25	S13		M	circle bar
+L01	26	S17		M	z dotted
+L01	27	S45		M	c dotted
+L01	28	S84		L	x partial end s1
+L01	29	S75		H	plus
+L01	30	S23		M	A dotted
+L01	31	X_NEW		L	dot
+L01	32	S20		M	d
+L01	33	S47		M	e
+L01	34	X_NEW	S65	L	8 barred
+L01	35	S23		M	lambda dotted
+L01	36	S88	S24	M	barred strike
+L01	37	S70		M	inverted A
+L01	38	S54		M	b
+L01	39	S75		H	plus
+L01	40	S93		M	w
+L01	41	X_NEW		L	dots
+L01	42	S53		H	phi
+L01	43	S75		H	plus
+L01	44	S23		M	lambda dotted
+L01	45	S89		H	equals
+L01	46	S75		H	plus
+L01	47	S31	S26	L	2 with dot
+L01	48	S62		M	beta
+L01	49	S23		M	lambda
+L01	50	S62		M	beta
+L01	51	X_NEW		M	delta triangle
+L01	52	S70		M	inverted A
+L01	53	S13		L	barred circle
+L01	54	S73	S24	L	plus barred
+L01	55	S65	X_NEW	L	8; line end
+L03	1	S62		M	beta; line start
+L03	2	S54		M	b
+L03	3	S17		M	z
+L03	4	X_NEW	S65	L	8 barred
+L03	5	X_NEW		L	dots
+L03	6	S24	S88	M	barred plus
+L03	7	S47		M	e
+L03	8	S23		M	lambda
+L03	9	X_NEW	S65	L	8 barred
+L03	10	S13		M	theta
+L03	11	S24		L	barred +
+L03	12	S52		M	3
+L03	13	X_NEW	S65	L	8 barred
+L03	14	X_NEW		L	dots
+L03	15	S54		M	b
+L03	16	X_NEW	S65	L	8 barred
+L03	17	S42		M	x dotted
+L03	18	S52		H	3
+L03	19	S76		M	e+ij
+L03	20	X_NEW	S65	L	8 barred
+L03	21	S88	S24	M	barred strike
+L03	22	X_NEW		M	delta triangle
+L03	23	S76		M	e+y
+L03	24	S45		M	c dotted
+L03	25	X_NEW		M	delta
+L03	26	S17		M	z
+L03	27	S75		H	plus
+L03	28	X_NEW		L	dots
+L03	29	X_NEW	S65	L	8
+L03	30	S94	S55	M	female sign
+L03	31	S93		M	w+s
+L03	32	X_NEW	S65	L	8 barred
+L03	33	S13		L	circle
+L03	34	S54		M	b
+L03	35	S62		M	beta
+L03	36	S42		M	x
+L03	37	S84		L	ae
+L03	38	S52		M	3
+L03	39	S94		M	female
+L03	40	S93		M	w+s
+L03	41	S84		L	x
+L03	42	S70		L	inverted A
+L03	43	X_NEW		L	dots
+L03	44	S95		M	small o
+L03	45	S53		M	p/phi
+L03	46	S93		M	w+s
+L03	47	S47		L	e
+L03	48	X_NEW		L	j
+L03	49	S54		M	b
+L03	50	S93		M	w+s
+L03	51	X_NEW		L	xi
+L03	52	X_NEW	S65	L	8; line end
+L04	1	S76		M	e+y; line start
+L04	2	S93		M	w+s
+L04	3	X_NEW	S65	L	8 barred
+L04	4	S57		L	small c-hook
+L04	5	S70		M	inverted A
+L04	6	S31	S26	L	2 dotted
+L04	7	S53		M	phi
+L04	8	X_NEW	S65	L	8 barred
+L04	9	S25		M	n
+L04	10	S47		M	e
+L04	11	X_NEW	S65	L	8 barred
+L04	12	S84		L	ae
+L04	13	S93		M	w+s
+L04	14	X_NEW	S65	L	8
+L04	15	S40		L	x+g
+L04	16	S93		M	w+s
+L04	17	S54		M	b
+L04	18	S62		M	beta
+L04	19	S23		M	lambda
+L04	20	S89		H	equals
+L04	21	S47		M	e
+L04	22	S54		M	b
+L04	23	S75		H	plus
+L04	24	X_NEW		M	delta
+L04	25	X_NEW	S65	L	8 barred
+L04	26	S23		M	lambda
+L04	27	S70		M	inverted A
+L04	28	S75		M	plus
+L04	29	X_NEW	S65	L	8
+L04	30	S13		L	barred circle
+L04	31	X_NEW	S65	L	8
+L04	32	S23		M	lambda
+L04	33	S88	S24	M	barred
+L04	34	S57		L	c
+L04	35	S42		L	x
+L04	36	S52		L	3
+L04	37	S24		L	barred +
+L04	38	S70		L	v
+L04	39	S54		L	b
+L04	40	S70		L	inverted A
+L04	41	S75		M	plus
+L04	42	X_NEW		L	s dotted
+L04	43	S52		M	3
+L04	44	S76		M	e+ij
+L04	45	S93		M	w+s
+L04	46	S94		M	female
+L04	47	S75		M	plus
+L04	48	S84		M	x
+L04	49	S75		M	plus
+L04	50	S31		L	dot colon
+L04	51	S40		L	x+g
+L04	52	X_NEW		L	b-s ligature; line end

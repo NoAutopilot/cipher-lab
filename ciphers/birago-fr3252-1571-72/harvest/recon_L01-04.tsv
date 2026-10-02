@@ -1,0 +1,158 @@
+passage	pos	sign_id	conf	note
+L01	1	S75	M	
+L01	2	S54	M	
+L01	3	S84	M	
+L01	4	S93	M	
+L01	5	S24	M	
+L01	6	S76	M	
+L01	7	S62	H	
+L01	8	S54	M	
+L01	9	S80	L	split_H_A+adj
+L01	10	S23	M	split+adj
+L01	11	S70	M	
+L01	12	S30	M	split+adj
+L01	13	S17	M	
+L01	14	S47	M	split+adj
+L01	15	S75	H	
+L01	16	S76	M	
+L01	17	S62	M	
+L01	18	S97	M	split+adj
+L01	19	S30	L	split+adj
+L01	20	S53	H	
+L01	21	S52	H	
+L01	22	S42	M	
+L01	23	S45	M	
+L01	24	S80	M	split+adj
+L01	25	S13	M	
+L01	26	S17	M	
+L01	27	S45	M	
+L01	28	S84	M	
+L01	29	S75	H	
+L01	30	S23	M	
+L01	31	S20	H	
+L01	32	S47	M	
+L01	33	S65	L	split+adj
+L01	34	S23	M	split+adj
+L01	35	S88	M	
+L01	36	S70	M	
+L01	37	S54	M	
+L01	38	S75	H	
+L01	39	S93	M	
+L01	40	S30	M	split+adj
+L01	41	S53	H	
+L01	42	S75	H	
+L01	43	S23	L	split+adj
+L01	44	S89	H	
+L01	45	S75	H	
+L01	46	S66	M	split+adj
+L01	47	S62	H	
+L01	48	S97	M	split+adj
+L01	49	S62	M	
+L01	50	X_NEW	M	split+adj
+L01	51	S70	M	
+L01	52	S13	M	
+L01	53	S88	M	split+adj
+L01	54	S65	M	
+L03	1	S62	M	
+L03	2	S54	M	
+L03	3	S17	M	
+L03	4	S65	L	split+adj
+L03	5	S30	M	split+adj
+L03	6	S24	M	
+L03	7	S47	M	
+L03	8	S97	M	split+adj
+L03	9	S65	L	split+adj
+L03	10	S13	M	
+L03	11	S52	M	
+L03	12	S65	L	split+adj
+L03	13	S30	M	split+adj
+L03	14	S54	M	
+L03	15	S80	M	split+adj
+L03	16	S42	M	
+L03	17	S52	H	
+L03	18	S76	M	
+L03	19	S65	L	split+adj
+L03	20	S88	M	split+adj
+L03	21	X_NEW	M	split+adj
+L03	22	S76	M	
+L03	23	S45	M	
+L03	24	X_NEW	M	split+adj
+L03	25	S17	M	
+L03	26	S75	H	
+L03	27	S30	M	split+adj
+L03	28	S65	L	split+adj
+L03	29	S94	L	split+adj
+L03	30	S93	M	
+L03	31	S80	M	split+adj
+L03	32	S13	M	
+L03	33	S54	M	
+L03	34	S62	M	
+L03	35	S42	M	
+L03	36	S84	M	
+L03	37	S52	M	
+L03	38	S94	L	split+adj
+L03	39	S93	M	
+L03	40	S84	L	split+adj
+L03	41	S70	M	
+L03	42	S30	M	split+adj
+L03	43	S13	L	split+adj
+L03	44	S87	L	split+adj
+L03	45	S93	M	
+L03	46	S47	L	split+adj
+L03	47	X_NEW	L	split+adj
+L03	48	S54	M	
+L03	49	S93	M	
+L03	50	S40	L	split+adj
+L03	51	S65	L	split+adj
+L04	1	S76	M	
+L04	2	S93	M	
+L04	3	S65	L	split+adj
+L04	4	S13	L	split+adj
+L04	5	S70	M	
+L04	6	S66	M	split+adj
+L04	7	S53	M	
+L04	8	S65	L	split+adj
+L04	9	S25	M	
+L04	10	S47	M	
+L04	11	S65	L	split+adj
+L04	12	S84	M	
+L04	13	S93	M	
+L04	14	S65	L	split+adj
+L04	15	S40	M	
+L04	16	S93	M	
+L04	17	S54	M	
+L04	18	S62	M	
+L04	19	S97	M	split+adj
+L04	20	S89	H	
+L04	21	S47	M	
+L04	22	S54	M	
+L04	23	S75	H	
+L04	24	X_NEW	M	split+adj
+L04	25	S80	M	split+adj
+L04	26	S97	M	split+adj
+L04	27	S70	M	
+L04	28	S75	H	
+L04	29	S65	L	split+adj
+L04	30	S13	M	
+L04	31	S65	L	split+adj
+L04	32	S97	M	split+adj
+L04	33	S88	L	split+adj
+L04	34	S70	L	split+adj
+L04	35	S65	L	split+adj
+L04	36	S24	L	split+adj
+L04	37	S24	M	
+L04	38	S52	M	split+adj
+L04	39	S75	M	split+adj
+L04	40	?	L	split+adj
+L04	41	S75	M	
+L04	42	S93	L	split+adj
+L04	43	S52	M	
+L04	44	S76	M	
+L04	45	S93	M	
+L04	46	S94	L	split+adj
+L04	47	S75	H	
+L04	48	S84	M	
+L04	49	S75	H	
+L04	50	S30	M	split+adj
+L04	51	S40	M	
+L04	52	S54	M	split+adj

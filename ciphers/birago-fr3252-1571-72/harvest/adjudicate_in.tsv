@@ -1,0 +1,64 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	9	S24 S76 S62 S54	? S70 ? S17	S65	H	X_NEW	L	8	8 with bar
+L01	10	S76 S62 S54 S65	S70 ? S17 ?	S97	M	S23	M	lambda	lambda dotted
+L01	12	S54 S65 ? S70	S17 ? S75 S76	S30	M	X_NEW	L	divide with dots	two dots colon
+L01	14	? S70 ? S17	S75 S76 S62 ?	S31	M	S47	M	l with tail	e tailed
+L01	18	? S75 S76 S62	? S53 S52 S42	S97	M	S23	M	lambda	lambda
+L01	19	S75 S76 S62 ?	S53 S52 S42 S45	S34	L	X_NEW	L	is/ wave	dots/s
+L01	24	S53 S52 S42 S45	S13 S17 S45 S84	S65	M	X_NEW	L	8 barred	8 barred
+L01	33	S75 S23 S20 S47	? S88 S70 S54	S65	M	X_NEW	L	8 barred	8 barred
+L01	34	S23 S20 S47 ?	S88 S70 S54 S75	S97	M	S23	M	lambda dotted	lambda dotted
+L01	40	S70 S54 S75 S93	S53 S75 ? S89	S30	M	X_NEW	L	divide dots	dots
+L01	43	S93 ? S53 S75	S89 S75 ? S62	S97	M	S23	M	lambda dot	lambda dotted
+L01	46	S75 ? S89 S75	S62 ? S62 ?	S66	M	S31	L	2 dotted	2 with dot
+L01	48	S89 S75 ? S62	S62 ? S70 S13	S97	M	S23	M	lambda	lambda
+L01	50	? S62 ? S62	S70 S13 ? S65	S16	L	X_NEW	M	triangle-ish	delta triangle
+L01	53	S62 ? S70 S13	S65	S88	M	S73	L	barred plus	plus barred
+L03	4	S62 S54 S17	? S24 S47 ?	S65	M	X_NEW	L	8	8 barred
+L03	5	S62 S54 S17 ?	S24 S47 ? ?	S30	M	X_NEW	L	divide dots	dots
+L03	8	? ? S24 S47	? S13 S52 ?	S97	M	S23	M	lambda	lambda
+L03	9	? S24 S47 ?	S13 S52 ? ?	S65	M	X_NEW	L	8	8 barred
+L03	12	? ? S13 S52	? S54 ? S42	S65	M	X_NEW	L	8	8 barred
+L03	13	? S13 S52 ?	S54 ? S42 S52	S30	M	X_NEW	L	divide dots	dots
+L03	15	S52 ? ? S54	S42 S52 S76 ?	S65	M	X_NEW	L	8 barred	8 barred
+L03	19	? S42 S52 S76	? ? S76 S45	S65	M	X_NEW	L	8	8 barred
+L03	20	S42 S52 S76 ?	? S76 S45 ?	S24	M	S88	M	barred plus	barred strike
+L03	21	S52 S76 ? ?	S76 S45 ? S17	S16	L	X_NEW	M	triangle	delta triangle
+L03	24	? ? S76 S45	S17 S75 ? ?	S16	L	X_NEW	M	triangle	delta
+L03	27	S45 ? S17 S75	? ? S93 ?	S30	M	X_NEW	L	divide dots	dots
+L03	28	? S17 S75 ?	? S93 ? S13	S65	M	X_NEW	L	8	8
+L03	29	S17 S75 ? ?	S93 ? S13 S54	S55	M	S94	M	female sign w/ cross	female sign
+L03	31	? ? ? S93	S13 S54 S62 S42	S65	L	X_NEW	L	8 barred	8 barred
+L03	38	S62 S42 S84 S52	S93 ? S70 ?	S55	M	S94	M	cross-ankh	female
+L03	40	S84 S52 ? S93	S70 ? ? ?	S17	L	S84	L	Z barred	x
+L03	42	? S93 ? S70	? ? S93 ?	S30	M	X_NEW	L	divide dot	dots
+L03	43	S93 ? S70 ?	? S93 ? ?	S13	M	S95	M	o	small o
+L03	44	? S70 ? ?	S93 ? ? S54	S87	L	S53	M	p-like	p/phi
+L03	46	? ? ? S93	? S54 S93 ?	S76	L	S47	L	e	e
+L03	47	? ? S93 ?	S54 S93 ? ?	S34	L	X_NEW	L	j	j
+L03	50	? ? S54 S93	?	S40	L	X_NEW	L	xi-like	xi
+L03	51	? S54 S93 ?		S65	M	X_NEW	L	8; line end	8; line end
+L04	3	S76 S93	? S70 ? S53	S65	M	X_NEW	L	8	8 barred
+L04	4	S76 S93 ?	S70 ? S53 ?	S13	L	S57	L	o	small c-hook
+L04	6	S93 ? ? S70	S53 ? S25 S47	S66	M	S31	L	2 dot	2 dotted
+L04	8	? S70 ? S53	S25 S47 ? S84	S65	M	X_NEW	L	8	8 barred
+L04	11	S53 ? S25 S47	S84 S93 ? S40	S65	M	X_NEW	L	8	8 barred
+L04	14	S47 ? S84 S93	S40 S93 S54 S62	S65	M	X_NEW	L	8	8
+L04	19	S40 S93 S54 S62	S89 S47 S54 S75	S97	M	S23	M	lambda	lambda
+L04	24	S89 S47 S54 S75	? ? S70 S75	S16	L	X_NEW	M	triangle	delta
+L04	25	S47 S54 S75 ?	? S70 S75 ?	S65	M	X_NEW	L	8 barred	8 barred
+L04	26	S54 S75 ? ?	S70 S75 ? S13	S97	M	S23	M	lambda	lambda
+L04	29	? ? S70 S75	S13 ? ? ?	S65	M	X_NEW	L	8 dot	8
+L04	31	S70 S75 ? S13	? ? ? ?	S65	M	X_NEW	L	8	8
+L04	32	S75 ? S13 ?	? ? ? ?	S97	M	S23	M	lambda	lambda
+L04	33	? S13 ? ?	? ? ? S24	S24	M	S88	M	barred plus	barred
+L04	34	S13 ? ? ?	? ? S24 ?	S70	M	S57	L	V	c
+L04	35	? ? ? ?	? S24 ? ?	S65	M	S42	L	8	x
+L04	36	? ? ? ?	S24 ? ? ?	S24	M	S52	L	plus	3
+L04	38	? ? ? S24	? ? S75 ?	S52	M	S70	L	3	v
+L04	39	? ? S24 ?	? S75 ? S52	S75	M	S54	L	plus	b
+L04	40	? S24 ? ?	S75 ? S52 S76	S60	L	S70	L	barred	inverted A
+L04	42	? ? ? S75	S52 S76 S93 ?	S93	L	X_NEW	L	w	s dotted
+L04	46	? S52 S76 S93	S75 S84 S75 ?	S55	M	S94	M	female cross	female
+L04	50	? S75 S84 S75	S40 ?	S30	M	S31	L	divide	dot colon
+L04	52	S84 S75 ? S40		S54	M	X_NEW	L	b; then prose 'bs' follows	b-s ligature; line end

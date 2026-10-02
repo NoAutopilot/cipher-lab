@@ -1,0 +1,64 @@
+passage	pos	sign_id	conf	note
+L01	9	S80	L	barred 8 (bar joins next mark); plain/barred hard at crop resolution
+L01	10	S23	M	dot above lambda
+L01	12	S30	M	divide with dots, then S17
+L01	14	S47	M	e-like with tail before +
+L01	18	S97	M	plain lambda
+L01	19	S30	L	divide-with-dots between lambda and S53 (neither S34 nor new)
+L01	24	S80	M	8 struck through by bar running into theta
+L01	33	S65	L	plain 8 after e
+L01	34	S23	M	dotted lambda
+L01	40	S30	M	divide with dots
+L01	43	S23	L	lambda, dot uncertain
+L01	46	S66	M	z with dot
+L01	48	S97	M	plain lambda
+L01	50	X_NEW	M	plain triangle (delta) without cross; not S16
+L01	53	S88	M	barred-plus struck sign (neq-like)
+L03	4	S65	L	8
+L03	5	S30	M	divide with dots
+L03	8	S97	M	lambda
+L03	9	S65	L	8
+L03	12	S65	L	8
+L03	13	S30	M	divide with dots
+L03	15	S80	M	barred 8
+L03	19	S65	L	8
+L03	20	S88	M	slashed plus (neq-like)
+L03	21	X_NEW	M	plain triangle
+L03	24	X_NEW	M	plain triangle
+L03	27	S30	M	divide with dots
+L03	28	S65	L	8
+L03	29	S94	L	female sign with cross at foot
+L03	31	S80	M	8 barred by dash into theta
+L03	38	S94	L	female sign cross at foot
+L03	40	S84	L	curled x, not Z
+L03	42	S30	M	divide with dot
+L03	43	S13	L	small theta/o
+L03	44	S87	L	p-like
+L03	46	S47	L	e-like
+L03	47	X_NEW	L	j-like descender form
+L03	50	S40	L	xi-like
+L03	51	S65	L	8 at line end
+L04	3	S65	L	8
+L04	4	S13	L	small o
+L04	6	S66	M	z with dot
+L04	8	S65	L	8
+L04	11	S65	L	8
+L04	14	S65	L	8
+L04	19	S97	M	lambda
+L04	24	X_NEW	M	plain triangle
+L04	25	S80	M	barred 8
+L04	26	S97	M	lambda
+L04	29	S65	L	8
+L04	31	S65	L	8
+L04	32	S97	M	lambda
+L04	33	S88	L	slashed plus
+L04	34	S70	L	V
+L04	35	S65	L	8
+L04	36	S24	L	plus-bar
+L04	38	S52	M	3
+L04	39	S75	M	plus
+L04	40	?	L	cannot tell
+L04	42	S93	L	w-like
+L04	46	S94	L	female with foot cross
+L04	50	S30	M	divide
+L04	52	S54	M	b before final bs

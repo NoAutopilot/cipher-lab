@@ -1,0 +1,238 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	S75		M	plus with dot; prev: line start
+L01	2	S54	S74	M	b
+L01	3	S84		M	
+L01	4	S93		M	w-like
+L01	5	S24	S75	M	plus with extra bar
+L01	6	S76	S91	M	ey flourish
+L01	7	S62		H	beta
+L01	8	S54	S74	M	b
+L01	9	S65		H	8
+L01	10	S97		M	lambda
+L01	11	S70		M	V with bar
+L01	12	S30	S49	M	divide with dots
+L01	13	S17		M	Z
+L01	14	S31		M	l with tail
+L01	15	S75		H	plus
+L01	16	S76	S91	M	ey flourish
+L01	17	S62		M	beta
+L01	18	S97		M	lambda
+L01	19	S34	S22	L	is/ wave
+L01	20	S30	S49	M	divide dots
+L01	21	S53		M	phi
+L01	22	S52		H	3
+L01	23	S42		M	X with dot
+L01	24	S45		M	c
+L01	25	S65		M	8 barred
+L01	26	S13	S95	M	theta barred
+L01	27	S17		M	Z
+L01	28	S45		L	dot c
+L01	29	S47		L	c-e
+L01	30	S13	S95	M	theta barred; s2 starts, probable overlap dup of s1 end
+L01	31	S17		M	Z dup?
+L01	32	S45		L	c dup?
+L01	33	S47		L	ce dup?
+L01	34	S84		M	x-script
+L01	35	S75		H	plus
+L01	36	S23	S97	M	A with dot
+L01	37	S20		H	d
+L01	38	S47		M	E
+L01	39	S65		M	8 barred
+L01	40	S97		M	lambda dotted
+L01	41	S88	S24	M	barred equals
+L01	42	S70		M	V
+L01	43	S54	S74	M	b
+L01	44	S75		H	plus
+L01	45	S93		M	w
+L01	46	S30	S49	M	divide dots
+L01	47	S53		M	phi
+L01	48	S75		H	plus
+L01	49	S97		M	lambda dot
+L01	50	S89		H	double bar
+L01	51	S75		H	plus
+L01	52	S66		M	2 dotted
+L01	53	S62		H	beta
+L01	54	S97		M	lambda
+L01	55	S62		M	beta
+L01	56	S16	S42	L	triangle-ish
+L01	57	S70		M	V
+L01	58	S13	S95	M	theta barred
+L01	59	S88	S24	M	barred plus
+L01	60	S65		M	8; line end
+L02	1	S75		M	plus with dot; prev: line start
+L02	2	S54	S74	M	b
+L02	3	S84		M	
+L02	4	S93		M	w-like
+L02	5	S24	S75	M	plus with extra bar
+L02	6	S76	S91	M	ey flourish
+L02	7	S62		H	beta
+L02	8	S54	S74	M	b
+L02	9	S65		H	8
+L02	10	S97		M	lambda
+L02	11	S70		M	V with bar
+L02	12	S30	S49	M	divide with dots
+L02	13	S17		M	Z
+L02	14	S31		M	l with tail
+L02	15	S75		H	plus
+L02	16	S76	S91	M	ey flourish
+L02	17	S62		M	beta
+L02	18	S97		M	lambda
+L02	19	S34	S22	L	is/ wave
+L02	20	S30	S49	M	divide dots
+L02	21	S53		M	phi
+L02	22	S52		H	3
+L02	23	S42		M	X with dot
+L02	24	S45		M	c
+L02	25	S65		M	8 barred
+L02	26	S13	S95	M	theta barred
+L02	27	S17		M	Z
+L02	28	S45		L	dot c
+L02	29	S47		L	c-e
+L02	30	S13	S95	M	theta barred; s2 starts, probable overlap dup of s1 end
+L02	31	S17		M	Z dup?
+L02	32	S45		L	c dup?
+L02	33	S47		L	ce dup?
+L02	34	S84		M	x-script
+L02	35	S75		H	plus
+L02	36	S23	S97	M	A with dot
+L02	37	S20		H	d
+L02	38	S47		M	E
+L02	39	S65		M	8 barred
+L02	40	S97		M	lambda dotted
+L02	41	S88	S24	M	barred equals
+L02	42	S70		M	V
+L02	43	S54	S74	M	b
+L02	44	S75		H	plus
+L02	45	S93		M	w
+L02	46	S30	S49	M	divide dots
+L02	47	S53		M	phi
+L02	48	S75		H	plus
+L02	49	S97		M	lambda dot
+L02	50	S89		H	double bar
+L02	51	S75		H	plus
+L02	52	S66		M	2 dotted
+L02	53	S62		H	beta
+L02	54	S97		M	lambda
+L02	55	S62		M	beta
+L02	56	S16	S42	L	triangle-ish
+L02	57	S70		M	V
+L02	58	S13	S95	M	theta barred
+L02	59	S88	S24	M	barred plus
+L02	60	S65		M	8; line end
+L03	1	S62		M	beta; prev: line start
+L03	2	S54	S74	M	b with tick
+L03	3	S17		M	Z
+L03	4	S65		M	8
+L03	5	S30	S49	M	divide dots
+L03	6	S24	S75	M	barred plus
+L03	7	S47		M	E
+L03	8	S97		M	lambda
+L03	9	S65		M	8
+L03	10	S13		M	theta
+L03	11	S52		M	3
+L03	12	S65		M	8
+L03	13	S30	S49	M	divide dots
+L03	14	S54	S74	M	b
+L03	15	S65		M	8 barred
+L03	16	S42		M	X dot
+L03	17	S52		H	3
+L03	18	S76	S91	M	ey
+L03	19	S65		M	8
+L03	20	S24	S88	M	barred plus
+L03	21	S16		L	triangle
+L03	22	S76	S91	M	ey
+L03	23	S45		M	c dot
+L03	24	S16		L	triangle
+L03	25	S17		M	Z
+L03	26	S75		H	plus
+L03	27	S45		M	c dot; s2 start (possible overlap dup)
+L03	28	S16		L	triangle
+L03	29	S17		M	Z
+L03	30	S75		H	plus
+L03	31	S30	S49	M	divide dots
+L03	32	S65		M	8
+L03	33	S55	S94	M	female sign w/ cross
+L03	34	S93		M	w
+L03	35	S65		L	8 barred
+L03	36	S13		L	theta barred
+L03	37	S54	S74	M	b
+L03	38	S62		M	beta
+L03	39	S42		M	X
+L03	40	S84		M	
+L03	41	S52		M	3
+L03	42	S55	S94	M	cross-ankh
+L03	43	S93		M	w
+L03	44	S17		L	Z barred
+L03	45	S70		M	V
+L03	46	S30	S49	M	divide dot
+L03	47	S13	S95	M	o
+L03	48	S87		L	p-like
+L03	49	S93		M	w
+L03	50	S76		L	e
+L03	51	S34		L	j
+L03	52	S54	S74	M	b
+L03	53	S93		M	w
+L03	54	S40	S56	L	xi-like
+L03	55	S65		M	8; line end
+L04	1	S76	S91	M	ey; prev: line start
+L04	2	S34		L	j
+L04	3	S93		M	w
+L04	4	S65		M	8
+L04	5	S13		L	o
+L04	6	S70		M	V
+L04	7	S66		M	2 dot
+L04	8	S53		M	phi
+L04	9	S65		M	8
+L04	10	S25		L	n
+L04	11	S47		M	E
+L04	12	S65		M	8
+L04	13	S84		M	
+L04	14	S93		M	w
+L04	15	S65		M	8
+L04	16	S40		M	
+L04	17	S93		M	w
+L04	18	S54	S74	M	b
+L04	19	S62		M	beta
+L04	20	S97		M	lambda
+L04	21	S89		H	double bar
+L04	22	S47		M	E
+L04	23	S54	S74	M	b
+L04	24	S75		H	plus
+L04	25	S16		L	triangle
+L04	26	S65		M	8 barred
+L04	27	S97		M	lambda
+L04	28	S75		H	plus; s2 start (possible overlap dup)
+L04	29	S16		L	triangle
+L04	30	S65		M	8 barred
+L04	31	S97		M	lambda
+L04	32	S70		M	V
+L04	33	S75		H	plus
+L04	34	S65		M	8 dot
+L04	35	S13		L	theta barred
+L04	36	S65		M	8
+L04	37	S97		M	lambda
+L04	38	S24		M	barred plus
+L04	39	S70		M	V
+L04	40	S65		M	8
+L04	41	S24		M	plus
+L04	42	S24		L	ext
+L04	43	S52		M	3
+L04	44	S75		M	plus
+L04	45	S60		L	barred
+L04	46	S17		L	Z
+L04	47	S75		M	plus
+L04	48	S93		L	w
+L04	49	S54		M	b
+L04	50	S52		L	3
+L04	51	S66		M	2 dot
+L04	52	S76	S91	M	ey
+L04	53	S34		L	j
+L04	54	S93		M	w
+L04	55	S55	S94	M	female cross
+L04	56	S75		H	plus
+L04	57	S84		M	
+L04	58	S75		H	plus
+L04	59	S30	S49	M	divide
+L04	60	S75		M	plus
+L04	61	S40		M	xi-like
+L04	62	S54		M	b; then prose 'bs' follows

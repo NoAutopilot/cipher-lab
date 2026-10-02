@@ -1,0 +1,11 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01		20	S30	M				gapB	divide dots	
+L01		29	S47	L				gapB	c-e	
+L01					31	X_NEW	L	gapA		dot
+L03					11	S24	L	gapA		barred +
+L04		2	S34	L				gapB	j	
+L04		42	S17	L				gapB	Z	
+L04		45	S54	M				gapB	b	
+L04		47	S66	M				gapB	2 dot	
+L04		49	S34	L				gapB	j	
+L04		56	S75	M				gapB	plus	
