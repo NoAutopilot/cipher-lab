@@ -8,7 +8,10 @@
 //     [--fetch URL[,URL...]] [--fetch-page URL[,URL...]] [--delay MS] [--max-files N]
 //     [--guess-fullsize] [--probe URL[,URL...]] [--click "PAGE_URL|LINK_TEXT"[,...]]
 //
-// --fetch downloads each URL (relative URLs are resolved against BASE) in the same logged-in browser context via
+// --fetch downloads each URL (relative URLs are resolved against BASE, i.e. https://de-crypt.org/decrypt-web/ -- so the
+// file server, which lives at the site root, must be given ABSOLUTE: https://de-crypt.org/decrypt-custom/filesrv/?file=...;
+// a relative 'decrypt-custom/filesrv/?file=...' 404s with "Route 'decrypt-custom/filesrv/' not found" and wastes the
+// session's one login, GAPS2-moray-wood-1568 2 Oct 2026; --guess-fullsize avoids the problem) in the same logged-in browser context via
 // context.request, so session cookies apply, and saves it under OUT_DIR with a filename derived from the URL's
 // last path segment or `file` query parameter. --fetch-page does the same but always saves as .html and is meant
 // for site pages (DocumentsList, ImagesList, RecordsList) rather than attachment files; after saving one (and

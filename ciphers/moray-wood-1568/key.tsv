@@ -1,0 +1,39 @@
+# Aymeloglu's key.json (github.com/aaymeloglu/unsolved-ciphers moray-1568/key.json, commit d2800bb, 18 Sept 2026), quoted with
+# attribution, values and grades as his. S = his cryptanalysis with a control: key-shuffle permutation z = 17.0, p < 0.001
+# (1,000 shuffles, cipherkit permutation_z_key, sco corpus); matched controls 1 of 4 read (0.99, 0.35, 0.09, fragments).
+# Not re-derived and not image-checked by this repository (2 Oct 2026). M/I rows and the 'from' notes are his.
+# His word-sign values are written [the] [and] [Q] [Q2] in key.json; the brackets are dropped here because decode_key.py's concat style adds its own.
+code	value	grade	source	note
+A	a	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	remane, na mair, haill, thair, Carlyle
+N	i	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sending, freindis, -is endings
+x	e	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sending, freindis, remane, greit, evil
+xd	n	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sending, freindis, remane in, na
+a	l	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	lord, Fleming, evil, haill, Carlyle
+Zh	s	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sending, freindis, hes, cummis, -is endings
+o	r	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	freindis, oure, remane, greit, thair, lord
+Tc	t	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	greit, to, thair
+Z2	o	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	to, of; L4.5 identification with this glyph is disputed in FRESH-MANUSCRIPT-REVIEW.md
+Z3	o	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	of, oure, done
+r	h	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	hes, haill, thair, haym
+M	m	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	remane, na mair, cummis, haym
+e	f	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	of, freindis
+F	d	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sending, freindis, done, lord
+Tb	g	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sending, Fleming, gif, greit
+V	f	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	gif, Fleming
+X	u	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	oure, cummis
+Ab	i	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	suffering, remane in
+P	v	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	evil; suffering (u/v)
+p	m	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	Fleming, cummis
+4	c	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	cummis, Carlyle
+Z5	y	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	Carlyle, haym; i also possible (Carlile, haim)
+c	r	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	Carlyle; the second occurrence should be e and is read as a slip
+g	f	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	suffering; single glyph for f or ff
+U	the	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	the lord Fleming, gif the, spil the; stands alone at the start
+o2	and	I	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	stands alone between two clauses
+4b	Q	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sign for a person or party after 'suffering of', presumably the Queen
+Eb	Q2	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	sign for a person or party after 'gif the'; plausibly the Queen again
+Zz	t	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	baseline t retained for reproducibility; eight-hit lattis argument withdrawn (six broken prelattis); k also possible; doubled in la??is and opens L4
+s	p	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	spil
+t	t	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	haill e?; baseline t is unidentified; s (es = as) or a word-sign [as] are conjectures
+x3	e	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	baseline e; fresh visual comparison favours n, still uncertain
+Xs	?	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	line 4; fresh visual comparison favours u, still uncertain

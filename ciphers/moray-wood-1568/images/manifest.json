@@ -51,5 +51,13 @@
    "pixels": "200x278",
    "date": "2 October 2026"
   }
- ]
+ ],
+ "full_size_attempt_2026-10-02": {
+  "worker": "GAPS2-moray-wood-1568 (account-4)",
+  "login": "tools/decode_browser_login.js 8345: one attempt, loggedIn true (landed on RecordsList; saved RecordsView/8345 carries IS_LOGGEDIN:true). Preceded by one run that failed before the login page loaded (net::ERR_CERT_AUTHORITY_INVALID, fixed with the playbook certutil step; no credentials submitted).",
+  "fetch_result": "all four IMG_R8345_I38545_P1-P4.jpg requests answered HTTP 404, 131-byte JSON {statusCode:404, description: Route 'decrypt-custom/filesrv/' not found} -- a route error, not a refusal: the tool resolves a relative --fetch URL against https://de-crypt.org/decrypt-web/, so 'decrypt-custom/filesrv/?file=...' became /decrypt-web/decrypt-custom/filesrv/ (wrong). The correct URL is absolute, https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_..., or --guess-fullsize (derives it from the discovered thumbnail links). This worker's error; the one login of the session was spent on it.",
+  "login_free_control": "curl of https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P4.jpg without login: HTTP 200 image/png 17947 bytes, Content-Disposition filename=forbidden.png, sha1 035489a0605851154ab88372216354b63596ca22 (the permission placeholder) -- the full-size files still need the logged-in session.",
+  "next": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 8345 OUT --guess-fullsize --max-files 8 --delay 1600 (or absolute --fetch URLs); images stay in the session scratchpad (BL, not public domain; sources/decode/NOTES.md 28 Sept 2026), commit sha1/dims here and the crop recipe only.",
+  "requests_de_crypt_org": 7
+ }
 }
