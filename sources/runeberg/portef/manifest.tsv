@@ -1,0 +1,12 @@
+file	source_url	fetched_utc	http	bytes	note
+index.html	https://runeberg.org/portef/	2026-10-02 02:48	200	6000	work page, five subvolumes 1837-1845
+del1_index.html	https://runeberg.org/portef/1/	2026-10-02 02:49	200	12854	subvolume index (page list only, no article TOC)
+del2_index.html	https://runeberg.org/portef/2/	2026-10-02 02:49	200	13212	subvolume index (page list only, no article TOC)
+del3_index.html	https://runeberg.org/portef/3/	2026-10-02 02:49	200	13372	subvolume index (page list only, no article TOC)
+del4_index.html	https://runeberg.org/portef/4/	2026-10-02 02:49	200	13299	subvolume index (page list only, no article TOC)
+del5_index.html	https://runeberg.org/portef/5/	2026-10-02 02:49	200	11729	subvolume index (page list only, no article TOC)
+del1_0008_innehall.html	https://runeberg.org/portef/1/0008.html	2026-10-02 02:50	200	7483	Del 1 Innehall page with raw OCR text
+portef1_txtzip.zip	https://runeberg.org/download.pl?mode=txtzip&work=portef/1	2026-10-02 02:5x	200	294597	per-volume text zip: Metadata, Articles.lst, Pages.lst, Pages/NNNN.txt raw unproofread OCR; Del 5 NOT fetched (request budget 15 reached)
+portef2_txtzip.zip	https://runeberg.org/download.pl?mode=txtzip&work=portef/2	2026-10-02 02:5x	200	274575	per-volume text zip: Metadata, Articles.lst, Pages.lst, Pages/NNNN.txt raw unproofread OCR; Del 5 NOT fetched (request budget 15 reached)
+portef3_txtzip.zip	https://runeberg.org/download.pl?mode=txtzip&work=portef/3	2026-10-02 02:5x	200	278125	per-volume text zip: Metadata, Articles.lst, Pages.lst, Pages/NNNN.txt raw unproofread OCR; Del 5 NOT fetched (request budget 15 reached)
+portef4_txtzip.zip	https://runeberg.org/download.pl?mode=txtzip&work=portef/4	2026-10-02 02:5x	200	289029	per-volume text zip: Metadata, Articles.lst, Pages.lst, Pages/NNNN.txt raw unproofread OCR; Del 5 NOT fetched (request budget 15 reached)

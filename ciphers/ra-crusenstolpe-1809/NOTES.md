@@ -92,8 +92,8 @@ Waits on: a Riksarkivet reading-room copy order for `SE/RA/720266/03/08/~/2,5` (
 2026).
 
 - M: fetch Litteraturbanken.se's Crusenstolpe author page via a real browser (JS-rendered, not tried) and search for 'chiffer'/'1809'/'Portefeuille' -- tools/browser_fetch.js, this file's own named next step.
-- S: run the still-untried 'standard Swedish 1809 historiography' search (Odhner, Hjärne, Almqvist) named in the verdict but never actually run.
-- S: retry Project Runeberg for a listing of Crusenstolpe's Portefeuille parts 1-4 (1837-44) under a different work id than the 1840/1845 volume already checked.
+- [x] S: 'standard Swedish 1809 historiography' search (Odhner, Hjärne, Almqvist) -- run 2 Oct 2026 by OPEN-ra-crusenstolpe-1809 (web search only, 9 queries, 0 hits naming cipher material of the coup; see that section). Not run: reading Alm's 2010 Historisk tidskrift review or Carlsson 1944 / Clason 1909 themselves.
+- [x] S: Project Runeberg listing of Portefeuille parts 1-4 -- run 2 Oct 2026 by OPEN-ra-crusenstolpe-1809: work id `portef`, five volumes, Del 1-4 full OCR text fetched and grepped (0 cipher documents; see that section). Del 5 (1845) not fetched, 1 request, ~USD 0.1.
 
 ## Web and blog check (WEBCHECK-ra-crusenstolpe-1809, 2 Oct 2026)
 
@@ -172,3 +172,80 @@ Gate re-run after this section:
 ra-crusenstolpe-1809: open (line 52) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## OPEN-ra-crusenstolpe-1809 (2 Oct 2026, account-4)
+
+Run 2 Oct 2026 02:45-02:5x UTC (clock read) per `.claude/briefs/runs/2026-10-02-account4-open-step.md`: the step the
+WEBCHECK pass suggested at 01:08 UTC (one-fetch TOC check of `runeberg.org/portef/`) plus the two "While waiting" S
+items (historiography search; Runeberg retry for Portefeuille 1-4). Intake gate before the step: `exit=0`. Status
+word unchanged: **open**. Result in one line: **the 1809 cipher documents of `SE/RA/720266/03/08/~/2,5` are not
+printed, in cipher or in clear, in Portefeuille Del 1-4 (1837-1844) by full-text grep of the Runeberg OCR on 2 Oct
+2026, and no 1809 historiography title located by 9 web queries names cipher material of the coup** -- a search
+result, never a novelty verdict (rule 10). Del 5 (1845) is unread (below).
+
+**1. Portefeuille on Runeberg (snapshot `sources/runeberg/portef/`, manifest.tsv).** The 26 Sept pass found only an
+empty author page; the work page `runeberg.org/portef/` is now live: "Portefeuille, utgifven af författaren till
+Skildringar ur det inre af dagens historia", five volumes, Del 1 (1837), 2 (1841), 3 (1842), 4 (1844), Del 5 =
+"Belysande det inre af tidernas historia" (1845), Libris 8213351. The subvolume index pages carry a page list only,
+no article TOC, and the download page says "OCR texts (missing for this volume)" -- but the per-page HTML carries raw
+OCR, and `download.pl?mode=txtzip&work=portef/<N>` returns the whole volume's OCR as one zip (route recorded in the
+snapshot's NOTES.md). Fetched Del 1-4 (991 page files, 1.1 MB); Del 5 not fetched, the 15-request budget was reached.
+
+Tables of contents (OCR of the printed Innehåll pages; 16 + 19 + 21 + 20 items). Items touching 1808-1810:
+
+| Vol. | No. | Title (as printed) | Pages | What it is |
+|---|---|---|---|---|
+| 1 | XIII | Om Ryske Ministern Alopæi arrestering 1808 | 201-206 | clear documents (royal orders, Alopeus letter 1810) |
+| 1 | XIV | Vestra Arméens insurrektion 1809 | 207-217 | clear: Carlstad protocols of 6-7 March 1809 (night, kl. 1; Landskansli 7 March kl. 7 e.m.), billeting orders for 2,000 men |
+| 1 | XV | Baron Dübens berättelse om den 20 Juni 1810 | 218-225 | clear narrative (Fersen murder) |
+| 2 | XII | Ryska invasionen på Gottland 1808 | 163-174 | clear |
+| 2 | XIII, XV | Thronföljarevalet 1810 (Engeström, Silfverstolpe) | 175-214 | clear |
+| 3 | XIV | Hemliga Krigsberedningens utlåtande ... krigets utbrott 1808 | 127-133 | clear |
+| 3 | XV | Nya facta, förtäljde af ett ögonvittne till revolutionen i Sverige 1809 (two Afdelningar) | 134-188 | clear first-person narrative, unsigned |
+| 3 | XVI | Hemlig dagorder af Napoleon (Schönbrunn, 11 July 1809) | 189-190 | clear, French |
+
+Full-text grep of all 991 pages (pages matching, Del 1/2/3/4): `chiff` 1/1/2/0, `dechiff` 0/0/1/0, `spion` 0/1/3/1,
+`nyckel` 1/0/2/0, `kunskapare` 1/0/0/0, `cipher|chifre|ziffer|hemlig skrift` 0 everywhere, `Crusenstolpe` 0/0/0/1,
+`Ericsberg` 0, `1809` 14/2/4/4, `Adlersparre` 7/5/9/0. Every cipher/spy hit read in context:
+
+- Del 1 p.194 (file 0203): Armfelt conspiracy 1793-94, "de flera i chiffer satta ställen utaf hans många bref ... till
+  Fröken Rudenschöld" -- narrative mention, 1790s, no cipher text printed.
+- Del 2 p.29 (0034): "I depechen den 4 Juli 1736 heter det, skrifvet med chiffer:" -- Cederhielm dispatch 1736, printed
+  deciphered in clear; not 1809.
+- Del 3 p.85 (0090): legation secretary in London, "om jag var spion på honom", "dechiff-rörer" (decipherers at the
+  legation) -- 1780s London, narrative.
+- Del 3 p.92 (0097): "Chiffren af 300,000 L. St." -- a sum in a caricature caption, not a cipher.
+- Del 3 pp.138, 151 (0143, 0156), inside item XV (1809 eyewitness): "här spioneras starkt på tänkesätten bland
+  ståndspersoner"; "utan att vara spion" -- clear prose about surveillance in early 1809; no cipher, no report text.
+- Del 2 p.96, Del 4 p.40: 1756 and 1740s "spioner", unrelated.
+
+So Del 1-4 print two 1809-coup items (1-XIV, 3-XV), both in clear, neither described as deciphered, and no 1809 spy
+report or cipher document. Whether these two clear items are the *plaintext* of anything in the Riksarkivet bundle
+cannot be tested without the bundle (no transcription exists; REQUEST.md stands); they are recorded here as the
+crib candidates to carry to any future reading (grade C material if a match is ever shown, nothing graded now).
+OCR caveat: unproofread Runeberg OCR ("ir." for "II.", "t809" for "1809", "S;t"), so the greps were run on stems
+(`chiff`, `spion`) and the `1809` count is a floor, not an exact count; the TOC pages were read in full by eye.
+
+**2. Historiography search (web search, 9 queries, 0 hits naming cipher material of the coup).** Queries: Odhner +
+1809 + chiffer/spionrapporter; Hjärne + statshvälfningen + chifferbrev + Adlersparre; Almquist + 1809 + chiffer +
+Crusenstolpe + Ericsberg; Crusenstolpe "1720, 1772, 1809" + chiffer/spion; "Revolutionen den 13 mars 1809" "åsyna
+vittnets" + chiffer; Sten Carlsson / Sam Clason + chifferskrift/chifferbrev; Carlsson "Gustaf IV Adolfs fall" 1944 +
+chiffer; Clason "För hundra år sen" + chiffer; "Ericsbergsarkivet" "Crusenstolpe" spionrapporter + avhandling/uppsats.
+Returned pages were SBL articles (Crusenstolpe 15727, Clason 14876, Ehrenheim 16674), Wikipedia/so-rummet/
+popularhistoria coup pages, Riddarhuset Minerva Adlersparre, ukforsk.se Adlersparre, Alm's "Kring märkesåret 1809"
+(Historisk tidskrift 2010:1, pp. 53-64, a historiography review), Stockholmskällan post 28194 (an eyewitness account
+of the king's arrest). None names cipher letters, spy reports or this shelfmark. The three standard works surfaced
+are: Sten Carlsson, *Gustaf IV Adolfs fall* (Lund 1944); Sam Clason and Carl af Petersens (eds), *För hundra år sen.
+Skildringar och bref från revolutionsåren 1809-1810* (Stockholm 1909; full text on Runeberg as `cs100`, 272 pp.,
+three coup-day accounts plus a letter collection); Crusenstolpe's own *1720, 1772, 1809* (1836; Runeberg `cmj1720`).
+None of the three was opened (Runeberg budget spent; the others are not online here). Odhner wrote on Gustaf III,
+not 1809; nothing by Hjärne or Almquist on the coup surfaced in these queries.
+
+**Next step (one):** grep the two Runeberg full texts not yet read, Clason-af Petersens `cs100` (1909, the standard
+printed letter collection for 1809-10, where a deciphered spy letter would most plausibly appear) and Portefeuille
+Del 5 (`portef/5`), via the same `mode=txtzip` route: 2 requests, ~USD 0.5, no vision. Then Crusenstolpe's `cmj1720`
+(1 request). After that the edition risk on free full text is closed as far as Runeberg reaches, and the remaining
+step is the owner-side one already filed (REQUEST.md copy order; Carlsson 1944 is in-copyright and not online).
+
+Requests: runeberg.org 15 (all HTTP 200, 1.6 s apart, no 403/429/challenge), web search 9, no other host. Vision
+calls 0. Fetched text on disk once: `sources/runeberg/portef/` (manifest.tsv, 1.2 MB).
