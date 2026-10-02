@@ -1,0 +1,15 @@
+KA pass A: 12/13 known words -> PASS
+KA pass B: 12/13 known words -> PASS
+line 01: A 9 B 9 agree 6 (0.667)
+line 02: A 13 B 13 agree 12 (0.923)
+line 03: A 7 B 9 agree 6 (0.667)
+line 04: A 14 B 15 agree 13 (0.867)
+line 05: A 9 B 9 agree 8 (0.889)
+line 06: A 13 B 14 agree 13 (0.929)
+line 07: A 10 B 10 agree 7 (0.700)
+line 08: A 7 B 7 agree 7 (1.000)
+line 09: A 14 B 14 agree 12 (0.857)
+line 10: A 8 B 8 agree 8 (1.000)
+line 11: A 2 B 2 agree 1 (0.500)
+WA pooled f.61r word agreement 93/110 = 0.845; line-shuffled control (110 pairs) mean 0.052 max 0.286 -> PASS
+GATES: KA PASS, WA PASS

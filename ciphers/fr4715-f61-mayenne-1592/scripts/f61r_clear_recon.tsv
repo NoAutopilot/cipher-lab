@@ -1,0 +1,23 @@
+item	line	A	B	chosen	confidence	reason
+1a	L01	Nous	[?]us	[N?]us	low	initial under the red stamp: one long diagonal stroke then a clear "us"; the letter between can't be told apart from the stamp ink, so N is not confirmed
+1b	L01	familieremēt ... amplemēt	familieremē ... amplemē	familieremē ... amplemē (looped mark = -nt)	medium	after "me" both words end in a loop over the letters and a long flat tail; there is no separate t, and the loop-and-tail itself is the -ment suspension mark
+2	L02	particulieremēt	particulieremē	particulieremē (looped mark = -nt)	medium	same loop and long tail after "me" as in L01; no separate t shape
+3a	L03	Combie?	Combien	Combiey	medium	last letter has a y-shaped descender with a loop, unlike n; capital C is large and open
+3b	L03	le?	les	les	medium	l and e clear; the last letter is cut at the segment edge but shows the same final s shape seen elsewhere in this hand
+3c	L03	entendu	entendud	entendud	medium	two looped d ascenders are visible, one mid-word and one at the end after the u
+3d	L03	pl?ey	ple?y	pleay	low	after "pl": e, then a small closed a-like bowl, then y with a descender; the third letter could also be an s
+3e	L03	a (around cipher run)	a (around cipher run)	undecidable: same shape as cipher-run a	low	the "a" before the run (after Combiey) and the one after it (before les) match the a's inside the run (L03 seg2, L01 seg4, L05) in size, ductus and spacing; the ink cannot tell plain word from cipher sign
+4a	L04	desiree	de suiet	desiree	medium	one joined word with no space after "de"; no t ascender at the end; ends in e plus a short flourish
+4b	L04	aussy	aussi	aussy	medium	after "auss" the final letter descends well below the line like y/j; no i-dot seen
+5a	L05	ey	en	ey	high	last letter has a long descender ending in a hook (y), not an n
+5b	L05	(no stop)	". Et"	". Et"	high	clear dot on the baseline after the last cipher sign, before a capital Et
+6a	L06	e? fesions	en fesions	ey fesions	medium	the first word's second letter has a descender with a hook, the same as the y in "ey" in L05 and L09, not an n
+6b	L06	d?feroit	de?fieroit	desfieroit	low	segment 3 ends "ne d" + e + long s across the break; segment 4 begins with f then "ieroit"/"reroit"; one i/r stroke is uncertain
+7a	L07	Cependant	Cepandant	Cependant	medium	letter after p has no closed a-bowl; reads e then n (minims), then dant
+7b	L07	de part	depar	depard	medium	written as one word with no space; ends in a looped d ascender that curls back over the word, not a t
+7c	L07	mes?e	mettre	mesr' (mes?e)	low	only one tall stroke mid-word (long s or h), not the two t's B needs; ends in r/e with an apostrophe-like mark above
+7d	L07	a (before cipher run)	a (before cipher run)	undecidable: same shape as cipher a	low	same size and form as the a's inside cipher runs elsewhere; spacing no different
+8	L09	s'ey (x2)	s'en (x2)	s'ey (x2)	high	both times the last letter has a clear descender loop (y), not an n
+9	L11	so? peu .	souffre .	sou peu .	low	segment 2 ends "sou"; segment 3 begins with a letter with a crossed descender that matches this hand's p (as in "point" L06) followed by eu, then a stop; only one descender, where B needs ff
+10a	L08	qu'oy	qu'oy	qu'oy	high	clear o then y with a looped descender; not n, not il
+10b	L08	Vous/vous	Vous/vous	Vous	medium	V is large and starts from a long lead-in stroke, much bigger than the small v of "vous" in L02
