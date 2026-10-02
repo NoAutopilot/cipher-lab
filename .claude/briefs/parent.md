@@ -335,6 +335,10 @@ cost exceeds a third of its workers' spend in a day says so in its handoff line.
 
 Every message to the owner that carries a board update opens with a three-line TLDR before anything else: (1) SOLVES: the four board counts in documents, generated from the per-row fields (recovered-passage documents / completed readings / keys or mappings to text already in print / contributions and corrections) and whether any changed in that order, e.g. "recovered-passage documents 18 / completed 2 / keys-to-known-text 1 / contributions 6, unchanged" (the counts at BOARD-COUNTS, 27 Sept 2026 14:23 UTC) or "+1 recovered-passage: <target>, N<class>, two audits"; (2) CLOSEST: the one target nearest a class change, with its stage in five words and what it waits on; (3) NEW THIS HOUR: at most two clauses. Then the detail. The owner reads the TLDR to decide whether to read on.
 
+English gist (owner, 2 Oct 2026): every recap that reports a reading that moved also gives a one-line English gist of what it says, with the language named and marked as interpretation; never only "N signs read". The owner reads no Italian, Latin or 16th-c. French and could not tell whether we had the text or what it said.
+
+Lane health (owner, 2 Oct 2026, after account 4 sat silent five hours unflagged): at every check-in read the last ROOM line of each account's parent; one older than 150 minutes is flagged to the owner in the recap and in a ROOM flag, with the Opus 5.5 fallback (BUDGETS.md "Model choice under a warning") named, whether or not that account holds the orchestrator role.
+
 ## Mailbox: unread first (28 Sept 2026, 20:2x UTC)
 Three archive replies (Marburg 15:03, Bodleian 15:26, Adirondack 18:09 UTC) sat unread through four check-ins because the check-in skimmed thread previews. Every check-in now runs search_threads "is:unread in:inbox" FIRST and reads each hit in full with get_thread before anything else in the mailbox step; a reply is recorded (folder NOTES, CONTRIBUTIONS, ASKS), a reply draft made for the owner, and its lead given to a worker the same hour.
 

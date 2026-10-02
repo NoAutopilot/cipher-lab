@@ -35,3 +35,5 @@ it reports offset changes), cut crops with `tools/iiif_lines.py` and check its `
 start, and reconcile from `tools/reconcile_passes.py passA.tsv passB.tsv --crops <crop dir>`: settle only the rows
 of disagreements.tsv from the image, then write ciphertext.tsv from ciphertext_draft.tsv. Do not write a new
 crop.py or reconcile.py; add an option to the tool if it lacks one.
+
+Sign settling (2 Oct 2026). When two blind passes split on named look-alike pairs, run the look-alike pass (tools/lookalike_pass.py once LOOKALIKE-TOOL lands; until then ciphers/nevers-birago-fr3251-1572/harvest/{confusion_1572,lookalike_packet,lookalike_reconcile}.py and NOTES.md "NEVBIR-LOOKALIKE") before any third full pass. Whatever machines still split goes to the owner as a sign-sorter page (tools/sign_sorter.py --focus; published by the orchestrator with capabilities {"db": {}}; worked examples ciphers/debosnys-1883/sorter/ and ciphers/nevers-birago-fr3251-1572/sorter/) -- never blocking: the job reports conditional results meanwhile.
