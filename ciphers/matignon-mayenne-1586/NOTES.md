@@ -958,11 +958,93 @@ unchanged from the MAT-3974 entry above -- this test retires the Lasry cross-cip
 the same way MAT-3974 retired the français 3974 f.24 lead: a named, control-backed non-test, not a further open
 question on the same method. No new host requests (disk-only job). No candidates, no "solved"/"new"/"first".
 
+## GAPS-matignon-mayenne-1586 (2 Oct 2026, account-4)
+
+Brief: `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of "Remaining gaps (1 Oct 2026)" below,
+run disk-only (0 vision calls). Two scripts committed, both seeded and `--check`-able (rule 7): `align_openings.py`
+(Tomokiyo's published openings aligned to the straight-substitution decode, within-line token-shuffle control) and
+`judge_leaves.py` (each leaf judged alone against its own within-line letter-shuffle control, the spec's fr16 judge).
+Outputs in `openings/` (`openings_alignment.tsv`, `openings_summary.json`, `leaf_judge.tsv`). No token regraded, no
+value committed, `tools/decode_key.py --check` exit 0 unchanged (H 10,074 / M 1,648 / U 1,272).
+
+**(a) Opening alignment.** Plaintext: Tomokiyo's four openings verbatim from `sources/cryptiana/web/henryiii.htm`
+l.628-631 (the live page, read 2 Oct 2026 01:58 UTC, is identical in this section), u/v and i/j folded, his bare
+numbers (49, 76) kept as code items that only the same cipher token can consume. DP as `align_crib.py` (bMAT1D):
+H token +4 agree / -5 disagree, M token +2 in-set / -4 out, U token 0 (unscored, consumes a letter), null -2,
+plaintext skip -4, both ends free; the first 1-5 lines of each leaf taken so the tokens cover the opening with slack.
+Control: tokens shuffled within each line, 200 draws, seed 1; the statistic (best path score) depends on token order
+against the fixed plaintext, so the control can differ from the target (rule 3's axis check: yes).
+
+| leaf (lines taken) | tokens / plaintext items | real score | shuffle max / p95 / median | path ops |
+|---|---|---|---|---|
+| f143r (1-5) | 169 / 133 | **468** | -67 / -104 / -128 | agree 92, in-set 21, word 5 (12, 14, 13, 47), code 2 (49, 76), null 3, DISAGREE 0 |
+| f154 (1) | 45 / 23 | **66** | 20 / 4 / -16 | agree 12, word 2 (14, 25), in-set 2, out-of-set 1 (f=c\|u on p), null 3 (the opening `4+ g g` before "en quelle") |
+| f110 (1-2) | 119 / 65 | **33** | -22 / -39 / -58 | agree 32, in-set 5, DISAGREE 15, out-of-set 1, U-on-letter 11, null 11, plaintext skipped 13 |
+| f150 (1-2) | 73 / 38 | -50 | -19 / -31 / -49 | agree 16, DISAGREE 12, null 11: **below the control max**, not aligned (reproduces the gap-3 scratch number) |
+
+f143r and f154 read Tomokiyo's openings essentially token for token under Bourdeau's key (f143r: 92 H agreements, 0
+disagreements over 133 plaintext items; "s'estant" is `J x d m a .v. Z` after three unread opening tokens `4+ 49 T=`,
+which Bourdeau's HEAD reads "m'estant"). f110 beats its control (33 vs max -22 over 200) but the path is
+fragmentary: 15 H disagreements and 13 skipped plaintext letters in 65. f150's opening does not align (gap 3 stands).
+
+**Tabulation of U labels and disagreeing H codes** (pooled over the three leaves above their control max): only 11 U
+tokens fall on a plaintext letter at all, every one on f110 (f143r's first five lines carry no U sign but 49; f154-1
+none), so the tabulation the gap asked for has no power with this material -- BOX n=4: a 2, u 1, e 1 (top share 0.50 vs
+0.40 mean top share over the shuffles); z n=3: i, o, s (0.33 vs 0.51); w->d, U->e, T->r, p->b once each (n=1, no
+control possible). The gap-2 note's "by eye, BOX, U and T fall on u, e, r" is 1 of 4 for BOX and n=1 for U and T.
+H disagreements, all on f110: `8=g` 0 agree / 4 disagree (falls on u 2, e, i), `o=i` 8/3 (a 2, s), `e=r` 4/3 (s, q, f),
+`w-=d` 4/1 (u), `x=e` 7/1 (l), `n=l` 7/1 (m), `q=u` 1/1, `Ze=t` 1/1. **Verdict for the step: the openings are
+too short and too U-poor to tabulate the absent labels -- untestable by this instrument with this material; a
+non-result, not a negative, and no value is read off (rule 4: M at most, n 1-4).** The one lead is `8` on f110,
+which never reads g where Tomokiyo has text (4/4), while Bourdeau's own HEAD table keeps "8, ▽, y -> g" -- f110's
+hand or transcription (his gap: "internally inconsistent", exemplar set for this hand not built), not the key.
+
+**(b) Per-leaf judge.** `judge_leaves.py`: letters per line as `reading_letters.txt` builds them (M first alternative,
+U and name codes dropped), scored by the spec's fr16 judge model (`tools/judge_plaintext.py` NgramModel, same corpus,
+same `controls()` call for real_p05/null_p99 at each leaf's N); control: the leaf's own letters shuffled within each
+line, 20 seeds (the 4-gram statistic depends on letter order, so the control can differ; rule 3). Pooled reading for
+reference: -1.371 (bMAT).
+
+| leaf | lines | N | score | cover | real_p05 | null_p99 | own shuffle mean / max | gate |
+|---|---|---|---|---|---|---|---|---|
+| f110 | 37 | 1190 | -1.701 | 0.704 | -0.865 | -1.888 | -1.780 / -1.737 | FAIL |
+| f123r | 36 | 987 | -1.699 | 0.720 | -0.879 | -1.878 | -1.967 / -1.894 | FAIL |
+| f123v | 41 | 1181 | -1.395 | 0.802 | -0.869 | -1.891 | -1.922 / -1.857 | FAIL |
+| f124r | 35 | 1136 | -1.448 | 0.794 | -0.883 | -1.882 | -1.890 / -1.831 | FAIL |
+| f124v | 22 | 661 | -1.463 | 0.808 | -0.869 | -1.879 | -1.887 / -1.797 | FAIL |
+| f143r | 21 | 776 | -1.279 | 0.830 | -0.881 | -1.878 | -1.929 / -1.845 | FAIL |
+| f143v | 33 | 1261 | -1.158 | 0.858 | -0.859 | -1.912 | -1.884 / -1.810 | FAIL |
+| f150 | 13 | 467 | -1.187 | 0.867 | -0.893 | -1.877 | -1.899 / -1.809 | FAIL |
+| f154 | 28 | 1134 | -1.189 | 0.866 | -0.872 | -1.879 | -1.886 / -1.832 | FAIL |
+| f173 | 33 | 1136 | -1.240 | 0.845 | -0.883 | -1.882 | -1.896 / -1.846 | FAIL |
+| f196 | 26 | 884 | -1.293 | 0.854 | -0.877 | -1.888 | -1.889 / -1.825 | FAIL |
+| f201 | 30 | 1033 | -1.245 | 0.857 | -0.885 | -1.899 | -1.894 / -1.806 | FAIL |
+| fr.15571 f.177 | 24 | 639 | -1.472 | 0.801 | -0.889 | -1.883 | -1.879 / -1.816 | FAIL |
+
+Every leaf FAILs the fr16 gate (real_p05 -0.86 to -0.89) and every leaf scores above its own shuffle max, but the
+margins split the leaves cleanly: the seven leaves of gap 1 (f143r/v, 150, 154, 173, 196, 201) sit at -1.158 to
+-1.293, about 0.55-0.65 above their shuffles; the six of gap 2 at -1.395 to -1.701, and **f110 at -1.701 is 0.036 above
+its shuffle max with a shuffle spread of 0.08 -- at the noise level, the decode of f110 is not distinguishable from
+shuffled letters.** That matches Bourdeau's "~0% read" for f110 and the `8=g` disagreement in (a): f110 is a
+transcription or hand problem before it is a key problem.
+
+**Web and blog check** (the intake gate exited 1 only for the missing CHECK-SOLVED-WEB section): run first, 0 hits
+carrying a decipherment or plaintext of any of these leaves; full log at the end of this file. Bourdeau's HEAD NOTES.md
+(`targets/matignon1586/`, fetched 01:58 UTC, snapshot `sources/cyphersolver/2026-10-02/matignon1586/NOTES.md`) is a
+partial modern reading already cited here (status "in progress, 28% read"), not a found-solved; its glyph table now
+lists ⊐ (box) and ꝉ (crossed t) as u/v, ₸ (crossed 4) as m, ƀ as i/j, Ƶe as t, ʰe as l, ʄʄ as n, ɣɣ as ss -- our
+`key.tsv` (his key.json at fc0c9e8) still has BOX as '+' and no row for our T, 4, w, z, U labels, so his HEAD key may
+carry values ours lacks. Whether our ASCII labels are those glyphs is not established here; it is the named next step.
+
+Suggestion (one line, Usage 7): fetch his HEAD `key.json` and the 13 transcription files (raw.githubusercontent.com,
+about 15 requests), diff label by label against `key.tsv`/`ciphertext.txt`, and re-run `judge_leaves.py` with any new
+single-letter values applied as a hypothesis (published key, credited, grade M) against the same shuffle control.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 1,406 of 12,994 transcribed Cipher-1 tokens (10.8%) sit in a sense run. Source: the proxy split in `resolve_mu.py` / `spans.tsv`, NOTES.md "NEAR step (1)" (bMAT2), recounted from `spans.tsv` + `reading_tokens.tsv` on 2 Oct 2026 00:50 UTC. Per leaf: f110 0/1699, f123r 23/1097, f123v 92/1251, f124r 84/1203, f124v 45/727, f143r 136/724, f143v 247/1182, f150 10/445, f154 259/1061, f173 168/1082, f196 168/840, f201 163/987, fr.15571 f.177 11/696. Grades are H 10,074 / M 1,648 / U 1,272, and the fr16 judge FAILs at -1.371 against real_p05 -0.837 (shuffled -1.78). The denominator is Bourdeau's partial transcription only: the spec says "13 leaves partly transcribed", and the untranscribed remainder of each leaf has never been measured. Cipher-3 (fr.15571 f.179, fr.15572 f.276) has 0 sign tokens transcribed. Bourdeau's own 28% (measure.py with his beam LM, 22 Sept) is not reproduced here. There is no AUDIT.md.
-- fr.15572 ff.143r, 143v, 150, 154, 173, 196, 201 (7 Cipher-1 leaves, 6,321 tokens, U 129 = 2.0%, M 742) - blocker: not-attempted; the H key covers most of these tokens, but only 2-24% of each leaf sits in a sense run (`spans.tsv`). bMAT2's two-context rule and bMATBEAM's beam both pooled all 13 leaves (the f.78v/79r tests were crib work, not these leaves). bMATBEAM fitted its M choices jointly with U values that its own controls show are TOK/null noise, and committing them made the judge worse (bMAT1C -1.545, reverted in bMAT1D). Its own suggested per-leaf, read-context-only rerun was never made. An M-only rerun would be the second target run of the same beam, so pre-register its gate, and if it fails, retire the beam for this target rather than tuning it again; next: split `reading_letters.txt` by leaf and judge each leaf against its own in-line shuffle control (disk only). Then re-run control (A) at these 7 leaves' N, and only if it passes, run `mu_beam.py` M-only on these leaves with U held as a fixed placeholder against a pre-registered judge-gain gate, ~$3
-- fr.15572 ff.110, 123r, 123v, 124r, 124v and fr.15571 f.177 (6 Cipher-1 leaves, 6,673 tokens, U 1,143 = 17.1%, read 0-7.4%) - blocker: not-attempted; f110 alone is 30% U and 0% read. Of the target's 1,272 U tokens, 1,086 fall on 31 sign labels absent from `key.tsv` (U 343, z 296, 4 106, w 83, T 53, y 41, v 37, p 18, D2 16, 5 16, ...) and only 186 on 17 '+' rows (BOX 137); recounted from `reading_tokens.tsv` 2 Oct 2026, and MAT-CCE's "1,272 over 19 codes" is wrong. Several absent labels look like unmarked variants of keyed ones (4/4+, w/w-, T/T=, D2/D, p/P, BOX2/BOX), and bMAT1F's two blind passes of f.79r split on exactly 4 vs 4+. New, not used before: Tomokiyo's published opening for "f.111" ("Monsieur de Villeroi vous verres bien par la lettre que je fais au roi...", `sources/cryptiana/web/henryiii.htm`, Cipher-1 section) lines up with our decoded f110-1. A scratch DP this pass scored 26 against a maximum of -9 over 20 within-line shuffles (f143r-1 28 vs 0, f154-1 20 vs -1). By eye, BOX, U and T fall on u, e, r, and several H positions read i for n/s and g for e/v. That is a known-plaintext check of the label-variant idea, at grade M (a modern published reading, credited to Tomokiyo), and is untested; next: commit the opening-alignment script for f110-1/f143r-1/f154-1 with its shuffle control and tabulate which plaintext letter each U label and each disagreeing H code falls on (disk, ~$1). Then read Bourdeau's current HEAD (`targets/matignon1586/`, flagged by SOLVERDIFF-BOURDEAU in ROOM.md 2 Oct 2026 00:22 UTC; our copy is fc0c9e8) for his labels for these signs. Then cut f.110 line crops with `tools/iiif_lines.py` (ark btv1b9061879d) and run two blind passes plus a reconciliation over a 4-line sample, ~$9
-- untranscribed remainder of the 13 Cipher-1 leaves (extent unmeasured) - blocker: not-attempted; the spec and NEAR.md both say Bourdeau transcribed these leaves "only in part", and NOTES.md bMAT2 cites his separate read_of_transcribed and read_of_leaf figures, but no line or sign count of the full leaves is on file. Tomokiyo's opening for f.150 ("il estoit me besoins car je tourvai quil auoit") does not align with our f150-1 (scratch DP -14 vs shuffle median -15), unlike f110/f143r/f154, so our f150 may start elsewhere on the leaf; next: in the same Bourdeau HEAD read, record his per-leaf transcribed-versus-leaf extent, then count lines per leaf on Gallica canvases of btv1b9061879d against `ciphertext.txt`'s line counts and list the untranscribed lines, ~$2
+- fr.15572 ff.143r, 143v, 150, 154, 173, 196, 201 (7 Cipher-1 leaves, 6,321 tokens, U 129 = 2.0%, M 742) - blocker: not-attempted; the H key covers most of these tokens, but only 2-24% of each leaf sits in a sense run (`spans.tsv`). bMAT2's two-context rule and bMATBEAM's beam both pooled all 13 leaves (the f.78v/79r tests were crib work, not these leaves). bMATBEAM fitted its M choices jointly with U values that its own controls show are TOK/null noise, and committing them made the judge worse (bMAT1C -1.545, reverted in bMAT1D). Its own suggested per-leaf, read-context-only rerun was never made. An M-only rerun would be the second target run of the same beam, so pre-register its gate, and if it fails, retire the beam for this target rather than tuning it again; next: (GAPS 2 Oct 2026: per-leaf judge run, `judge_leaves.py` / `openings/leaf_judge.tsv` -- these 7 leaves score -1.158 to -1.293 against their own within-line shuffle max -1.806 to -1.846 (20 seeds), all FAIL the gate real_p05 -0.86 to -0.89); next: re-run control (A) at these 7 leaves' N, and only if it passes, run `mu_beam.py` M-only on these leaves with U held as a fixed placeholder against a pre-registered per-leaf judge-gain gate (a FAIL retires the beam for this target, rule 3 third-attempt clause), ~$3
+- fr.15572 ff.110, 123r, 123v, 124r, 124v and fr.15571 f.177 (6 Cipher-1 leaves, 6,673 tokens, U 1,143 = 17.1%, read 0-7.4%) - blocker: not-attempted; f110 alone is 30% U and 0% read. Of the target's 1,272 U tokens, 1,086 fall on 31 sign labels absent from `key.tsv` (U 343, z 296, 4 106, w 83, T 53, y 41, v 37, p 18, D2 16, 5 16, ...) and only 186 on 17 '+' rows (BOX 137); recounted from `reading_tokens.tsv` 2 Oct 2026, and MAT-CCE's "1,272 over 19 codes" is wrong. Several absent labels look like unmarked variants of keyed ones (4/4+, w/w-, T/T=, D2/D, p/P, BOX2/BOX), and bMAT1F's two blind passes of f.79r split on exactly 4 vs 4+. New, not used before: Tomokiyo's published opening for "f.111" ("Monsieur de Villeroi vous verres bien par la lettre que je fais au roi...", `sources/cryptiana/web/henryiii.htm`, Cipher-1 section) lines up with our decoded f110-1. A scratch DP this pass scored 26 against a maximum of -9 over 20 within-line shuffles (f143r-1 28 vs 0, f154-1 20 vs -1). By eye, BOX, U and T fall on u, e, r, and several H positions read i for n/s and g for e/v. That is a known-plaintext check of the label-variant idea, at grade M (a modern published reading, credited to Tomokiyo). GAPS 2 Oct 2026: committed as `align_openings.py` with a 200-draw within-line token-shuffle control -- f143r 468 vs shuffle max -67, f154 66 vs 20, f110 33 vs -22 (f150 -50 vs -19, not aligned); but only 11 U tokens fall on a letter at all, all on f110 (BOX a 2 / u 1 / e 1, z i/o/s, w, U, T, p once each), so the tabulation has no power with this material -- untestable by this instrument, no value read (section "GAPS-matignon-mayenne-1586 (2 Oct 2026)"); the one lead is `8=g` 0/4 on f110. Bourdeau's HEAD NOTES.md read the same job (snapshot `sources/cyphersolver/2026-10-02/matignon1586/NOTES.md`): his glyph table gives ⊐ box and ꝉ crossed-t = u/v, ₸ crossed-4 = m, ƀ = i/j; his HEAD key.json and transcriptions not yet fetched; next: fetch his HEAD `key.json` and 13 transcription files (~15 requests), diff label by label against `key.tsv`/`ciphertext.txt`, apply any new single-letter values as a credited M hypothesis and re-run `judge_leaves.py` against the same shuffle control, ~$2. Then cut f.110 line crops with `tools/iiif_lines.py` (ark btv1b9061879d) and run two blind passes plus a reconciliation over a 4-line sample, ~$9
+- untranscribed remainder of the 13 Cipher-1 leaves (extent unmeasured) - blocker: not-attempted; the spec and NEAR.md both say Bourdeau transcribed these leaves "only in part", and NOTES.md bMAT2 cites his separate read_of_transcribed and read_of_leaf figures, but no line or sign count of the full leaves is on file. Tomokiyo's opening for f.150 ("il estoit me besoins car je tourvai quil auoit") does not align with our f150-1 (scratch DP -14 vs shuffle median -15; confirmed with the committed `align_openings.py` 2 Oct 2026: -50 vs shuffle max -19 over 200 draws), unlike f110/f143r/f154, so our f150 may start elsewhere on the leaf; next: in the same Bourdeau HEAD read, record his per-leaf transcribed-versus-leaf extent, then count lines per leaf on Gallica canvases of btv1b9061879d against `ciphertext.txt`'s line counts and list the untranscribed lines, ~$2
 - Nomenclator number codes on key.tsv '+' rows (62 x10, 33 x8, 49 x5, 44 x4, star/15/36 x3, 46/53/27/68 x2, 54/hash/88/104/79 x1 = 49 tokens) plus singleton absent labels (121, 102, Bi, u, f3, 73, 18, 101, O) - blocker: open-codes; each occurs 1-10 times in the proper-name range. Tomokiyo's list gives 76/82/84/98 as roi de Navarre/Condé/Turenne/Montauban, and 49 appears unread in his f.143 opening. MAT-CCE's cross-office lookup has no power (4.2% vs 2.85% chance). bMATBEAM's values for these signs had margins of 0.5-8.1 bits. The f.78v/79r crib is retired (rule 3(b)), so only a period gloss on a different leaf would narrow them; next: locate and crop the f.91-92 Cipher-1 letter ("deciphered in the margin", henryiii.htm l.638, never opened) or the f.18-21/f.19 pair (cipher page plus a full clear page, of which Bourdeau's repo holds only 3+2 lines, bMAT1D) on btv1b9061879d (f.78v/79r = canvas 85). Transcribe cipher lines and clear text in two passes plus a reconciliation, and run `tools/interlinear_align.py` behind a known-answer control on H codes, ~$12
 - fr.15571 f.179 (Matignon Cipher-3, whole leaf, sign count unmeasured) - blocker: not-attempted; a native, overlay-free image is on disk (`images/f179_gallica_native.jpg`, bMAT3). The magenta labels are Tomokiyo's modern overlay (grade M at most). Tomokiyo's reconstructed table `henryiii_Matignon3.png` (built from the period decipherments f.189/190, f.277-278/279-280, f.282 margin, henryiii.htm l.689) is referenced but not on disk and has never been applied; next: fetch `henryiii_Matignon3.png` from cryptiana.web.fc2.com (1 request), cut line crops with `tools/iiif_lines.py --image images/f179_gallica_native.jpg`, run two blind passes against the table plus a reconciliation, then decode (key: published, Tomokiyo), ~$9
 - fr.15572 f.276 (Matignon Cipher-3) - blocker: not-attempted; never fetched at any resolution, because bMAT3 used its whole Gallica allowance on f.179. Tomokiyo gives only an opening paraphrase ("La Guiolle est en doubte du pu pour les amis de la Roussiere...", l.692), which can serve as a crib check; next: after the f.179 table step, locate the canvas on btv1b9061879d with `tools/gallica_folio.py --anchor` (f.78v/79r = canvas 85), cut crops, run two passes plus a reconciliation against the Cipher-3 table, decode, and check the opening against Tomokiyo's paraphrase, ~$7
@@ -970,9 +1052,68 @@ Read so far: 1,406 of 12,994 transcribed Cipher-1 tokens (10.8%) sit in a sense 
 ## Escalation (1 Oct 2026)
 - [ ] siblings: Opened so far: fr.3974 f.24 (MAT-3974: plain prose, no cipher, retired), the DECODE 24 Sept cache (0 hits, bCSMAT d), and the 27 Sept key_crossmatch fr7129 "hit", which scored the same on all three shuffled controls (ROOM.md 27 Sept 02:51-02:52), so it is not a lead. Not opened: the f.91-92 Cipher-1 letter (deciphered in the margin, Tomokiyo l.638), the fr.15573 Forget/Mayenne/Matignon folios ff.7, 20, 31, 62, 131, 299 (SO-MATIGNON-LEADS, unchecked), and fr.3354 f.91 and fr.16092 f.5 (weaker SO leads). Planned: locate and crop f.91-92.
 - [ ] clear-pages: The hand and DP alignment against the f.78v/79r margin crib is closed by rule 3(b): bMAT1D 6/20 and 4/20, bMAT1E 9/20, bMAT1G 11/20, bMAT1H failed its pre-registered gate at 7/8. That closes this crib, not clear pages in general. Never imaged by us: the f.14v/f.15r and f.18-21/f.19 period decipherments (Bourdeau's repo holds one quoted phrase and 3+2 lines, bMAT1D), the f.91-92 margin, the Cipher-3 decipherments f.190, f.279-280 and f.282 margin, and the f.78v margin itself (native fetch reset twice, bMAT1F). Planned: f.91-92 margin or the f.18/f.19 pair as a fresh crib. Separately, Tomokiyo's modern published openings (f110/"f.111", f.143, f.154, f.276) serve as known-plaintext checks.
-- [ ] known-keys: Done: Bourdeau's key.json fc0c9e8 (period-verified, now `key.tsv`, listed in KEY-DESIGN.tsv but not in KEY-OFFICES.tsv). MAT-CCE found no power across 7 office-cluster keys, and fr.3974 f.24 is retired. Not done: Tomokiyo's reconstructed tables `henryiii_MayenneForget1.png` (Cipher-1), `henryiii_Matignon3.png` and `henryiii_Camus.png` are not on disk or applied. His nomenclature list (76 roi de Navarre, 82 Condé, 84 Turenne, 98 Montauban) is not in `key.tsv`, which has '*' for all four, so f143r-2 reads "du * du que" where his paraphrase reads "du 76 duquel". `tools/design_prior.py` has not been run, and Bourdeau's matignon1586 has not been re-read since fc0c9e8 (moved to `targets/matignon1586/`). Planned: fetch the two Matignon/Mayenne tables, compare MayenneForget1 against `key.tsv` label by label, and read Bourdeau's HEAD.
+- [ ] known-keys: Done: Bourdeau's key.json fc0c9e8 (period-verified, now `key.tsv`, listed in KEY-DESIGN.tsv but not in KEY-OFFICES.tsv). MAT-CCE found no power across 7 office-cluster keys, and fr.3974 f.24 is retired. Not done: Tomokiyo's reconstructed tables `henryiii_MayenneForget1.png` (Cipher-1), `henryiii_Matignon3.png` and `henryiii_Camus.png` are not on disk or applied. His nomenclature list (76 roi de Navarre, 82 Condé, 84 Turenne, 98 Montauban) is not in `key.tsv`, which has '*' for all four, so f143r-2 reads "du * du que" where his paraphrase reads "du 76 duquel". `tools/design_prior.py` has not been run. Bourdeau's HEAD NOTES.md re-read 2 Oct 2026 (GAPS, snapshot in sources/cyphersolver/2026-10-02/): glyph table ⊐ box / ꝉ crossed-t = u/v, ₸ crossed-4 = m; his HEAD key.json not yet diffed against `key.tsv`. Planned: fetch his HEAD key.json and transcriptions and diff label by label, then the two Tomokiyo tables.
 - [x] print: bCSMAT made seven checks: both Labande Montaigne-Matignon 1916 editions grepped whole (no 1585/86 dates, no Mayenne or Forget), the SHF Lettres de Henri III (not on IA), Tomokiyo henryiii.htm (still undeciphered), the DECODE cache, both solver repositories, a web search, and OpenAlex/S2. No prior decipherment was found. One remainder is unchecked: the 1749 Villeroy-to-Matignon Lettres (SO lead, p.222), which runs Villeroy-to-Matignon, the opposite direction to these Mayenne/Forget-to-Villeroy letters.
 - [x] key-rebuild: bMAT2's two-context rule is a control-backed negative (S 41 on the target vs 40-45 shuffled). The bMATBEAM 6-gram beam reached M 0.83 on its control, but on the target the U solution matched the shuffled null pattern, and its M commit (bMAT1C) worsened the judge and was reverted (bMAT1D). MAT-CCE's cross-key lookup has no power. Untried: a per-leaf, M-only beam run (gap 1). That run would be the beam's second target attempt, so it carries a pre-registered gate, and a failure retires the beam for this target.
-- [ ] image-check: Done only on the crib leaves f.78v/79r: Bourdeau's f78 skips 44 signs at a line join (bMAT1G), and two blind passes of f.79r split on 4 vs 4+ at 59.5% agreement (bMAT1F). None of the 13 target leaves has been re-read against its image. Planned: first, the disk-only Tomokiyo opening alignment on f110-1 (gap 2) to predict which labels collapse. Then native line crops of f.110 and two blind passes over a 4-line sample, testing 4/4+, w/w-, T/T=, D2/D, U and z.
+- [ ] image-check: Done only on the crib leaves f.78v/79r: Bourdeau's f78 skips 44 signs at a line join (bMAT1G), and two blind passes of f.79r split on 4 vs 4+ at 59.5% agreement (bMAT1F). None of the 13 target leaves has been re-read against its image. The disk-only Tomokiyo opening alignment (gap 2) ran 2 Oct 2026 and could not predict which labels collapse (11 U tokens on letters, all on f110, whose decode judges at its own shuffle level); `8` reads g 0/4 on f110. Planned: native line crops of f.110 and two blind passes over a 4-line sample, testing 4/4+, w/w-, T/T=, D2/D, U and z.
 - [ ] retry: Not run, because no value has survived to extend the key (bMAT1C's S grades were reverted). H 10,074 / M 1,648 / U 1,272 has been unchanged since 26 Sept. Planned: after the label check or the per-leaf M run, re-run `tools/decode_key.py --check` and the fr16 judge per leaf against shuffled controls.
-Verdict: keep going: 6 internal gaps; cheapest next: commit the disk-only alignment of Tomokiyo's published openings (f110-1 "Monsieur de Villeroi vous verres...", f143r-1, f154-1) against the decode with a within-line shuffle control, tabulate where U/BOX/T/z/4/w fall, and in the same job judge each leaf against its own shuffle control, ~$2
+Verdict: keep going: 6 internal gaps; cheapest next: fetch Bourdeau's HEAD `key.json` and 13 transcription files (raw.githubusercontent.com, ~15 requests), diff label by label against `key.tsv`/`ciphertext.txt` (his HEAD glyph table gives box and crossed-t = u/v, crossed-4 = m, where our key has BOX '+' and no T/4/w/z/U rows), apply any new single-letter values as a credited M hypothesis and re-run `judge_leaves.py` per leaf against the same within-line shuffle control, ~$2
+
+## Web and blog check (GAPS-matignon-mayenne-1586, 2 Oct 2026)
+
+Run 2 Oct 2026 01:58-02:05 UTC (clock read) because `tools/intake_gate_check.py matignon-mayenne-1586` exited 1 only
+for the missing CHECK-SOLVED-WEB section (`.claude/briefs/check-solved.md`, "Required step"). Rule 10 wording: what
+follows is a search result, never a novelty verdict.
+
+(a) Plain web searches (WebSearch, 9 queries):
+1. `Mayenne Forget Villeroy 1586 chiffre lettre déchiffrement fr. 15572` -- BnF finding-aid pages (Français 3974-3995,
+   4707, 4716, Cinq cents de Colbert 488), Wikipedia (Mayenne, Villeroy, Forget de Fresnes); nothing on fr.15572's
+   cipher leaves.
+2. `"15572" Mayenne Forget cipher 1586` -- this repository's own PR #29 (SO-MATIGNON-LEADS), a fork of Bourdeau's
+   cyphersolver (arya1515), Wikipedia; nothing external carrying a reading.
+3. `"Monsieur de Villeroi vous verres bien par la lettre"` (Tomokiyo's f.110 opening, quoted) -- 0 hits for the phrase;
+   results are Sévigné, Baudelaire, Béranger, Voltaire letters mentioning a later Villeroi.
+4. `Matignon Mayenne 1586 cipher BnF français 15572 undeciphered` (folder title) -- PR #29 again, BnF finding aids
+   (Français 15540-15584 series page), nothing carrying a reading.
+5. `"s'estant laisse entendre" "voulloit" 1586` (Tomokiyo's f.143 opening) -- Granvelle correspondance vol. IX
+   supplement (commissionroyalehistoire.be, 1582 Parma letters, unrelated), Potter's François Ier inventories; not
+   this letter.
+6. `Mayenne Forget cipher 1586 solved Claude OR GPT OR "solves"` (model-solve announcements) -- only the Urquhart
+   "cyphral distich" Fable 5.1 story (Schneier, Vals AI, 36kr), unrelated; a second cyphersolver fork (setsunaatto).
+7-9. `site:` searches for the three blogs returned no on-site hits for Mayenne/Matignon/15572 (one Cipherbrain
+   Catinat 1690s post, unrelated), so each blog's own search was used, below.
+
+(b) The three blogs by their own site search (curl, 1.6 s apart, 3 requests each, all HTTP 200):
+- Cipherbrain (scienceblogs.de/klausis-krypto-kolumne/?s=Mayenne | Matignon | 15572): "Wir konnten leider keine
+  Beiträge finden" for all three -- no post, hence no comment thread to read.
+- Cryptiana blog (cryptiana.blogspot.com/search?q=Mayenne | Matignon | 15572): "No posts matching the query" for all
+  three. Tomokiyo's web pages: the on-disk snapshot `sources/cryptiana/web/` grepped first (0 requests): henryiii.htm
+  (this target's source page), GL.htm (Lasry's 2022 solution of fr.15572 **f.43**, a different leaf not in this target),
+  mayenne.htm, league.htm, nevers.htm, bnf4715.htm mention the names; none carries a reading of ff.110, 123-124, 143,
+  150, 154, 173, 196, 201, 276 or fr.15571 f.177/179. The live henryiii.htm (cryptiana.web.fc2.com/code/henryiii.htm,
+  1 request) is identical to the snapshot in the whole fr.15572 section (normalised text diff: 0 lines): every target
+  leaf still "undeciphered", with the same four openings.
+- Cipher Mysteries (ciphermysteries.com/?s=Mayenne | Matignon | 15572): "Nothing Found" for all three.
+
+(c) Plausible hits opened and read: Bourdeau's HEAD `targets/matignon1586/NOTES.md` (raw.githubusercontent.com,
+1 request; the SOLVERDIFF-BOURDEAU flag of 2 Oct 2026 00:22 UTC) -- "Status: in progress. Read in part, measured
+22 Sept 2026: 28% of the target's cipher tokens read as sense"; "Prior art checked: no printed decipherment of these
+despatches was found (searches on the BnF catalogue and on the literature, 17 Sept 2026)"; per-leaf partial readings
+(f143 "about half read") of his own, already cited in this file as the key's source (bMAT, 26 Sept 2026) -- a partial
+modern cryptanalytic reading, not a found-solved. Snapshot: `sources/cyphersolver/2026-10-02/matignon1586/NOTES.md`.
+api.github.com (contents listing) and github.com (commits atom) answered 403, one request each, not retried, so his
+HEAD commit id is not recorded. PR #29 is this repository's own second-opinion PR (not external). No other hit was
+about this item.
+
+Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026; status word stays
+`partial`. Requests: WebSearch 9, scienceblogs.de 3, cryptiana.blogspot.com 3, ciphermysteries.com 3,
+cryptiana.web.fc2.com 1, raw.githubusercontent.com 1, api.github.com 1 (403), github.com 1 (403); no 429 or challenge.
+
+Gate re-run, 2 Oct 2026 02:09 UTC:
+```
+$ python3 tools/intake_gate_check.py matignon-mayenne-1586
+matignon-mayenne-1586: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+(exit 0; was exit 1 before this section)
+$ python3 tools/gaps_check.py matignon-mayenne-1586
+OK keep-going matignon-mayenne-1586: keep going: 6 internal gap(s), 5 step(s) untried
+```
