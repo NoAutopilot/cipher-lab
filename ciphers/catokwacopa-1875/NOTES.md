@@ -172,7 +172,7 @@ this brief's scope).
 
 ## Step NEXT-CAT (2 Oct 2026): ciphertext on disk, Ernst's line pairs, pairing test re-run with a control
 
-Account 2 worker NEXT-CAT, Opus 5.5, 2 Oct 2026 03:14-03:4x UTC. Ran the Verdict's cheapest next step and nothing else.
+Account 2 worker NEXT-CAT, Opus 5.5, 2 Oct 2026 03:14-03:2x UTC. Ran the Verdict's cheapest next step and nothing else.
 
 1. **Ciphertext.** `ciphertext.txt` is now a verbatim copy of AD 3 and AD 4 from `ciphers/pollaky-1865-1875/ciphertext.txt`,
    with attribution in its header: two blind passes over the scienceblogs.de/Gaffney-Gluecklich scans, matching 72/72 against
