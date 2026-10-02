@@ -1,0 +1,26 @@
+sign inventory: 22 symbol codes + numerals; blocks: b1 3 lines/83 signs, b2 3 lines/65 signs, b3 7 lines/158 signs
+
+== target: one gloss->block pair per block ==
+block 1 gloss[subagent+worker] (35 letters / 83 signs): consistency 0.500 (n_cons 2) | shuffled-gloss n=200 mean 0.569 p95 0.655 max 0.704, n_cons mean 2.01 max 6 | shuffled-lines n=100 mean 0.496 p95 0.538 -> does not clear gate
+block 2 gloss[subagent] (33 letters / 65 signs): consistency 0.435 (n_cons 0) | shuffled-gloss n=200 mean 0.499 p95 0.609 max 0.696, n_cons mean 1.19 max 4 | shuffled-lines n=100 mean 0.415 p95 0.500 -> does not clear gate
+block 3 gloss[subagent] (73 letters / 158 signs): consistency 0.455 (n_cons 4) | shuffled-gloss n=200 mean 0.520 p95 0.625 max 0.656, n_cons mean 3.71 max 8 | shuffled-lines n=100 mean 0.496 p95 0.574 -> does not clear gate
+block 3 gloss[worker] (72 letters / 158 signs): consistency 0.583 (n_cons 4) | shuffled-gloss n=200 mean 0.525 p95 0.625 max 0.661, n_cons mean 3.94 max 9 | shuffled-lines n=100 mean 0.471 p95 0.578 -> does not clear gate
+
+== comparison: NX-3151G's line-to-line pairing on block 1 (same statistic) ==
+block 1 line-pairs: consistency 0.500 (n_cons 1) | shuffled-gloss n=200 mean 0.534 p95 0.667 max 0.667, n_cons mean 1.80 max 5 -> does not clear gate
+
+== matched positive control (synthetic French, homophonic symbols, same sign counts) ==
+  synth tail41 seed 0 (gloss 35 letters / 83 signs): consistency 0.500 (n_cons 0) | shuffled-gloss n=100 mean 0.498 p95 0.556 max 0.556, n_cons mean 0.99 max 3 -> does not clear gate
+  synth tail41 seed 1 (gloss 36 letters / 83 signs): consistency 0.625 (n_cons 3) | shuffled-gloss n=100 mean 0.558 p95 0.625 max 0.625, n_cons mean 1.41 max 3 -> does not clear gate
+  synth tail41 seed 2 (gloss 36 letters / 83 signs): consistency 0.444 (n_cons 1) | shuffled-gloss n=100 mean 0.528 p95 0.645 max 0.645, n_cons mean 2.06 max 4 -> does not clear gate
+  synth tail41 seed 3 (gloss 36 letters / 83 signs): consistency 0.444 (n_cons 0) | shuffled-gloss n=100 mean 0.537 p95 0.621 max 0.621, n_cons mean 1.31 max 2 -> does not clear gate
+  synth tail41 seed 4 (gloss 35 letters / 83 signs): consistency 0.654 (n_cons 2) | shuffled-gloss n=100 mean 0.567 p95 0.654 max 0.654, n_cons mean 1.31 max 2 -> does not clear gate
+  => tail41: 0/5 seeds clear their own shuffled-gloss gate
+  synth words55 seed 0 (gloss 88 letters / 158 signs): consistency 0.447 (n_cons 2) | shuffled-gloss n=100 mean 0.459 p95 0.518 max 0.575, n_cons mean 4.40 max 9 -> does not clear gate
+  synth words55 seed 1 (gloss 88 letters / 158 signs): consistency 0.476 (n_cons 5) | shuffled-gloss n=100 mean 0.475 p95 0.541 max 0.595, n_cons mean 4.14 max 10 -> does not clear gate
+  synth words55 seed 2 (gloss 68 letters / 158 signs): consistency 0.607 (n_cons 6) | shuffled-gloss n=100 mean 0.571 p95 0.650 max 0.688, n_cons mean 4.56 max 8 -> does not clear gate
+  synth words55 seed 3 (gloss 97 letters / 158 signs): consistency 0.415 (n_cons 0) | shuffled-gloss n=100 mean 0.411 p95 0.484 max 0.527, n_cons mean 2.25 max 6 -> does not clear gate
+  synth words55 seed 4 (gloss 62 letters / 158 signs): consistency 0.574 (n_cons 4) | shuffled-gloss n=100 mean 0.554 p95 0.649 max 0.707, n_cons mean 4.50 max 9 -> does not clear gate
+  => words55: 0/5 seeds clear their own shuffled-gloss gate
+
+TARGET GATE: not cleared on any block -- no key.tsv, no decode, no judge run

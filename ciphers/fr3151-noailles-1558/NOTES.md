@@ -322,3 +322,101 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026 (updated 30 Sept)
 - Note: already cited in our NOTES.md (26 Sept)
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## LIKELY-5 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-likely-phase2.md`, row 5 of `ciphers/_triage/likely-solves-2026-10-02.tsv`:
+first cheap test = `tools/interlinear_align.py` on the surviving margin gloss vs the three cipher blocks, key from the
+alignment, shuffled-gloss control; decode and fr16 judge only if the control is cleared. Cap USD 8, box 60 min, at most
+2 vision calls, no family run. Intake gate at start: exit 1 for the missing web/blog check only (section below), exit 0
+after it. No Gallica request this job: every image was already on disk (images/manifest.json, crops/manifest.json).
+
+**What the two vision calls showed (both spent on the gloss crops, none on the sign drafts -- the alignment hinges on
+the gloss, not on single sign disagreements; a choice logged here, not in the brief).**
+- `images/margin_gloss1_zoom.jpg`: three margin lines braced to the right ("}") beside block 1, cut at the gutter on
+  the left. My read: "[..]he en mauluaise / [..] gouuerneme[n]t / [..]a de q[ue] iustice[?]" -- lines 1-2 as the
+  26 Sept subagent and Bourdeau's citation have them; the last word of line 3 stays unresolved between "iustice"
+  (26 Sept subagent, and the tall opening ascender I see too), "duction" and Bourdeau's "affaires". Grade M.
+  What survives is about 35 letters beside 83 signs.
+- `images/margin_gloss3_zoom.jpg`: seven margin lines of running French prose beside block 3's six cipher lines.
+  My read (grade M, most words unsure): "Mais ie me doubte / que le S[eigneu]r Che[..] / [..]a sur a prou[?] fait /
+  ch[..] oue [..] une allee[?] / [..]ssee le 3 me / [..]nuieuure p[our] et [..] / psua haydr[?] ..". The 26 Sept
+  subagent read the same crop as "a mre a chiffre / auec le Sr Chef / a prou prest / a me chascune chose / stoffee de
+  mo / p a Hyai / baucy a". The two witnesses agree on "le S..r Che" and "a prou" and on little else, so gloss 3 is two
+  M-grade witnesses of about 72 letters each beside 158 signs, not a text.
+- Structural point for the test design: the gloss wraps on the margin's own line widths (7 gloss lines beside 6
+  cipher lines in block 3; 1-2 surviving words per line in block 1), so there is no physical basis for pairing
+  gloss line i with cipher line i. The fair unit is one (gloss, block) pair per block.
+
+**Design (pre-registered, `align/likely5_align.py`, output `align/likely5_run.txt`).** One pair per block, cipher lines
+concatenated in order, surviving gloss words concatenated in order; symbol signs as surrogate codes below the floor
+(one letter or null), numerals as word codes above it; no prior. Statistic: consistency = share of aligned
+occurrences (codes seen >= 2 times) that carry the code's top chunk, and n_cons = codes with >= 3 occurrences agreeing
+on two thirds of them -- both can differ between the true gloss and a shuffled one. Controls: (a) shuffled-gloss, the
+gloss words permuted, 200 permutations; (b) cipher-line order shuffled, 100. Gate: consistency above control (a)'s
+p95 and n_cons >= 5. Matched positive control (rule 3): synthetic French (fr16 corpus) blocks of the same sign counts
+(83/65/158), homophonic symbol cipher (25 symbols over 20 letters, 8% nulls), gloss cut the way the real one is (block-1
+shape: the last 41% of each line's plaintext survives; block-3 shape: 55% of the words legible), 5 seeds each vs 100
+word-shuffles.
+
+| run | gloss letters / signs | consistency (n_cons) | shuffled-gloss mean / p95 / max | shuffled-lines mean / p95 | gate |
+|---|---|---|---|---|---|
+| block 1, gloss as read | 35 / 83 | 0.500 (2) | 0.569 / 0.655 / 0.704 | 0.496 / 0.538 | miss |
+| block 2, subagent fragments | 33 / 65 | 0.435 (0) | 0.499 / 0.609 / 0.696 | 0.415 / 0.500 | miss |
+| block 3, subagent witness | 73 / 158 | 0.455 (4) | 0.520 / 0.625 / 0.656 | 0.496 / 0.574 | miss |
+| block 3, this worker's witness | 72 / 158 | 0.583 (4) | 0.525 / 0.625 / 0.661 | 0.471 / 0.578 | miss |
+| block 1, NX-3151G line-to-line pairing, same statistic | 35 / 83 | 0.500 (1) | 0.534 / 0.667 / 0.667 | -- | miss |
+| **positive control, block-1 shape, 5 seeds** | 35-36 / 83 | 0.444-0.654 | each at or under its own p95 | -- | **0/5 clear** |
+| **positive control, block-3 shape, 5 seeds** | 62-97 / 158 | 0.415-0.607 | each under its own p95 | -- | **0/5 clear** |
+
+**Verdict: non-test, not a negative.** The target misses the gate on every block (every true-gloss consistency sits
+inside its own shuffled-gloss band), but so does the positive control on 10 of 10 seeds -- a synthetic block with the
+correct decipherment beside it, at this gloss coverage (about 0.4 letters per sign surviving) and this N (83-158
+signs), is not separated from a scrambled gloss by this instrument. The gloss alignment therefore cannot be tested
+on this target with `tools/interlinear_align.py` until the coverage changes; rule 3 (control-before-target) and its
+third-attempt clause both apply: this is the second attempt at the same instrument (NX-3151G, 26 Sept, line pairs,
+tied its shuffle at 0.000; today, block pairs with a positive control, tied again) and is logged "untestable by
+this method at this gloss coverage and N", not refuted. No key.tsv, no decode, no judge run (the gate was not
+cleared, so running them would have produced numbers nobody can use). Tokens read this job: 0 (H 0, C 0, S 0, M 0,
+I 0); the 306 draft signs stay a 45%-agreed transcription with an unsettled alphabet (22 symbol codes plus unk1-8).
+
+Status stays `open` (rule 5): not `partial` (no margin over a control anywhere), not `closed-negative` (nothing here
+is a passed-control negative, and cryptanalysis without the gloss is untried). Not a NEAR.md row.
+
+**Next step (new material, not another knob).** Two things would change the coverage figure the positive control
+says is the limit, and either is a job for a person or an archive, not a further machine pass: (a) the gutter-lost
+gloss text -- a flat-opened or raking-light capture of f.60r/f.60v's inner margin (BnF reading room or a copy order,
+REQUEST.md-shaped; the Gallica scan is the only image and the binding cut is in it); (b) the sign alphabet settled in
+`tools/sign_sorter.py` by the owner (Usage 6: two machine passes disagree on 55% of the signs, well past the one-tenth
+line that makes the next pass a person's). Re-run `align/likely5_align.py` only after one of these, and only if its
+positive control clears at the new coverage first. Independently of the gloss, a homophonic/nomenclator family run
+(`tools/family_run.py`, matched control) on the drafts is untried but would need (b) first for the same reason.
+Row 15 (fr3151-seure-1558) was gated on this row clearing its control; it did not, so that row's Noailles-derived-key
+step has no key to test.
+
+Vision calls: 2 (gloss1 zoom, gloss3 zoom). Subagents: 0. Hosts this job: scienceblogs.de 1 (200),
+archivesetmanuscrits.bnf.fr 1 (403, not retried), web search engine 7 queries; gallica.bnf.fr 0. Credit: D. Bourdeau,
+cyphersolver (CC BY 4.0 text) for the letter's identification and the gloss citation; the 26 Sept NX-3151G worker for
+the drafts and the subagent gloss read reused here.
+
+## Web and blog check (LIKELY-5, 2 Oct 2026)
+
+Run first because `tools/intake_gate_check.py` exited 1 on this step alone. Plain web searches (4): `Noailles "cardinal de
+Lorraine" Venise 1558 chiffre`; `"fr. 3151" OR "français 3151" chiffre Noailles`; `"en mauluaise" "gouvernement" Noailles
+Venise 1558 déchiffrement` (the most distinctive gloss phrase); `François de Noailles évêque de Dax ambassadeur Venise 1558
+lettre chiffrée cardinal de Lorraine` (the folder's descriptive title). Hits: the BnF Archives et manuscrits record for
+Français 3151 (ark:/12148/cc496140), whose search snippet lists a "lettre en chiffre" of François de Noailles, bishop of
+Acqs, to the Cardinal de Lorraine, Venice, 13 Nov 1558 (and one to Henri II, 17 Oct 1558) -- the direct fetch answered
+HTTP 403 so the record itself was not opened this job; the snippet names the item, not a decipherment. Wikipedia pages on
+the Noailles brothers and the Lorraine cardinals; Charrière's Négociations (already read, above); the BnF copies volume
+btv1b52527305r (Noailles/La Vigne Venice-Constantinople copies 1557-59, not opened: a copies register of the Levant
+traffic, no cipher named). No hit carries a plaintext or decipherment of this letter.
+Blog site searches (3): **Cipherbrain** (scienceblogs.de/klausis-krypto-kolumne): no post names Noailles, Venice 1558 or
+fr. 3151; the one plausible hit, "Wer löst diesen verschlüsselten Brief aus dem französischen Nationalarchiv" (17 May
+2016), was opened with its comment thread -- it is an English-plaintext letter to Henry VIII read by Torbjörn Andersson
+(29 Mar 2017), unrelated. **Cryptiana blog** (cryptiana.blogspot.com, cryptiana.web.fc2.com): the site search returned
+nothing from either host for Noailles/Venice/1558/Lorraine; the local mirror (`sources/cryptiana/`) has no page for the
+Venice posting (26 Sept check above). **Cipher Mysteries** (ciphermysteries.com): hits are Venetian/Milanese
+fifteenth-century cipher posts, none naming Noailles or 1558; none opened beyond the result list since no title or
+snippet touched the item. Result: no decipherment or plaintext of fr. 3151 no. 33 found in any open-web or blog comment
+thread searched on 2 Oct 2026 (a search result, rule 10, not a novelty class).

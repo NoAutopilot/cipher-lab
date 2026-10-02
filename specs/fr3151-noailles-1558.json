@@ -1,0 +1,30 @@
+{
+ "slug": "fr3151-noailles-1558",
+ "name": "BnF fr. 3151 no. 33, Francois de Noailles (Venice) to the Cardinal de Lorraine, 13 Nov 1558, three cipher blocks on f.60r/v with a contemporary marginal decipherment partly lost in the gutter",
+ "language_candidates": ["fr"],
+ "ciphertext": "ciphers/fr3151-noailles-1558/align/ciphertext_draft_block{1,2,3}.tsv (NX-3151G, 26 Sept 2026, two blind Sonnet passes reconciled at 45.8/30.8/51.3 pct, 306 signs, DRAFT -- not settled, alphabet unsettled: 22 symbol codes plus unk1-8, numerals 1-70)",
+ "ciphertext_source": "Gallica ark:/12148/btv1b9059865k canvases 61 (f.60r, region 3900,0,4030,5659) and 62 (f.60v), native resolution, images/manifest.json and images/crops/manifest.json",
+ "alphabet": "invented pen-drawn symbols (about 22 shapes, images/crops/sign_legend.md) mixed with one- and two-digit Arabic numerals; same mixed design as the Seure letters (fr3151-seure-1558) bound in the same recueil, key not shown to be shared",
+ "constraints": [
+  "a contemporary marginal decipherment (period gloss) sits beside each block, cut by the binding: about 35 surviving letters beside block 1's 83 signs, illegible fragments beside block 2's 65, two disagreeing M-grade witnesses of about 72 letters beside block 3's 158",
+  "the gloss wraps on the margin's own line widths (7 gloss lines beside block 3's 6 cipher lines), so gloss line i is not cipher line i",
+  "no period key, no printed clear text found: Charriere Negociations II (full-text grep), Ribier 1666 (both tomes) read, see NOTES.md check-solved and web/blog sections",
+  "subject from the clear text: Levant galleys, Candia, Corfu; sender's hand is the secretary's, gloss in a smaller court hand"
+ ],
+ "cheap_tests_in_order": [
+  "align the surviving margin gloss to its block with tools/interlinear_align.py (one pair per block), key from the alignment, shuffled-gloss control, and a synthetic positive control cut to the same gloss coverage; decode and judge only if cleared (LIKELY-5, 2 Oct 2026)",
+  "after the sign alphabet is settled by a person (tools/sign_sorter.py) or the gutter-lost gloss is captured: re-run test 1 only if its positive control clears at the new coverage; else a homophonic/nomenclator family_run.py on the settled transcription with its matched control"
+ ],
+ "judge": {"language": "fr", "min_word_cover": 0.5},
+ "written": "2 Oct 2026, LIKELY-5 (account-4), .claude/briefs/runs/2026-10-02-account4-likely-phase2.md step 4",
+ "cheap_test_done": {
+  "date": "2 Oct 2026",
+  "by": "LIKELY-5 (account-4)",
+  "test": "1 (gloss-to-block alignment with shuffled-gloss control and synthetic positive control)",
+  "target": "consistency b1 0.500 (n_cons 2), b2 0.435 (0), b3 0.455 and 0.583 (n_cons 4, 4) for the two gloss witnesses; NX-3151G line-pairing on b1 re-scored 0.500 (1)",
+  "control": "shuffled-gloss (200 word permutations) p95: b1 0.655, b2 0.609, b3 0.625; shuffled cipher-line order (100) p95: 0.538 / 0.500 / 0.574-0.578. Positive control: synthetic French (fr16), same sign counts, homophonic symbols, correct gloss cut to the real coverage -- 0/5 seeds (block-1 shape, 35-36 letters / 83 signs) and 0/5 (block-3 shape, 62-97 letters / 158 signs) clear their own shuffled-gloss p95",
+  "judge": "not run: the gate was not cleared, no key.tsv and no decode exist",
+  "verdict": "non-test: the instrument cannot separate a correct gloss from a shuffled one at this gloss coverage and N, so the target's miss is not a negative; status stays open; next step is new material (gutter-lost gloss capture, or the sign alphabet settled in tools/sign_sorter.py), not a further alignment knob",
+  "source": "ciphers/fr3151-noailles-1558/NOTES.md section \"LIKELY-5 (2 Oct 2026, account-4)\"; align/likely5_align.py; align/likely5_run.txt"
+ }
+}
