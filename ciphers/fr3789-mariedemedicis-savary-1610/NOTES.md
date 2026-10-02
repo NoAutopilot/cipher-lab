@@ -161,3 +161,49 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 21 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Settling pass on disagreements.tsv (A2-SAV, account 2, LANE-A2PUSH, 2 Oct 2026 23:25-23:40 UTC)
+
+Brief `.claude/briefs/runs/2026-10-02-acct2-a2-sav.md`: the Follow-up line above (settle `disagreements.tsv` against
+the image into a citable `ciphertext.tsv`); the key side is out of scope.
+
+Intake gate, pasted before work:
+```
+$ python3 tools/intake_gate_check.py fr3789-mariedemedicis-savary-1610
+fr3789-mariedemedicis-savary-1610: blocked (line 1) -- already terminal, nothing to gate
+EXIT 0
+```
+
+**Method.** No network: the native leaves already on disk (`images/f32_native.jpg` = canvas 32, stamped f.17r;
+`images/f36_native.jpg` = canvas 36, f.19r) were cut into 2x-zoomed strips of 650-850 px per line segment (local
+PIL, scratch only, not committed) and every column of `disagreements.tsv` was settled by eye by this worker as the
+one reconciliation unit (no subagent; 14 crop views). Agreement between the two earlier passes was not taken as
+correct: where both passes agreed and the image disagrees, the image wins (one case, below).
+
+**Result: `ciphertext.tsv`** (line, pos, sign, kind, conf, alt, note). 96 cipher tokens (69 H, 27 M) in 37 distinct
+sign forms, plus 34 plain-text context words (kind=plain, conf M, not settled sign by sign). `conf` here is
+transcription confidence, not a rule-4 reading grade: there is no key and no reading, so no H/C/S grade applies.
+`ciphertext_draft.tsv` is kept as the history; `ciphertext.tsv` supersedes it for citation.
+
+What settled, in short:
+- Most of the 72 rows were segmentation (pass B ran letters together), as LANE R4 M said. Settled per sign.
+- sept_L01 col 6: **8̄6** (barred group, closed-loop 8), not "56" (A) or "7̄o" (B); same form as sept_L03 8̄6.
+- sept_L01 "q̄i"/"7̄i": **4̄1**, the same barred group as nov_L02 4̄1.
+- The b-bowl with a crossed ascender (**ƀ**) recurs three times (sept_L01, sept_L03, nov_L02); A read it b or t, B t.
+- A round looped **δ** is drawn differently from the upright d (sept_L01 `δ x d`, sept_L02 `l δ Z`, nov_L02 crossed δ̶);
+  both passes wrote d. Kept as a separate sign, conf M.
+- The flat-topped **J** (pass A "I", B "3"/"J/1") is one form in sept_L03 and nov_L01-02.
+- nov_L02 "9̄93", which **both passes agreed on**, is on the image the crossed **qq̶** sign (two q, one bar through the
+  descenders, a small tick over the first) followed by ʒ: read `qq̶ z`, conf M, alt kept.
+- The ʒ glyph that pass A wrote "z" on f.17r and "3" on f.19r is one shape; written `z` throughout, conf M, so a later
+  solver can split it if a key says otherwise.
+- nov_L02 opens with a c (stroke above) after "sy" that both passes omitted.
+- Plain words corrected from the image: sept_L02 "devoir estre" (A had "d'une lettre"), nov_L01 "avisse" (A "croiste").
+
+Still open (all conf M, named in the `note` column): whether 6 (sept_L03) is the looped b; whether `m y` in sept_L01 is
+one fused sign; whether nov_L02's leading "et sy" and "et" are plain words or cipher; the last plain word of nov_L02.
+The opening groups agree with Bourdeau's "72 4 79" for f.19r (7̄2 4 7̄9 here); his transcription was not otherwise consulted.
+
+Requests: none (no network). Vision views: 14 crops read by this worker, 0 subagent calls.
+Next cheapest step is unchanged and outside this session: the fr.3642 key at full resolution or Lasry's R2077
+pair (ASKS 42/43); `ciphertext.tsv` is the input a key test would run on.

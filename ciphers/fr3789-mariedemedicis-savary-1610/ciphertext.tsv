@@ -1,0 +1,134 @@
+# fr.3789 f.17r (15 Sept 1610) and f.19r (10 Nov 1610) cipher passages. Settled 2 Oct 2026 (A2-SAV) from native Gallica leaves
+# (canvases 32, 36; images/f32_native.jpg, f36_native.jpg), zoomed crops, against passA/passB. kind=plain rows are context only.
+# conf: H = image unambiguous; M = shape settled but identity/segmentation still open. alt = what pass A/B wrote. No key: transcription only.
+line	pos	sign	kind	conf	alt	note
+sept_L01	1	encore	plain	M		plaintext word, not settled sign-by-sign
+sept_L01	2	cela	plain	M	A:de la	image: one word "cela"
+sept_L01	3	difficulte	plain	M		plaintext word, not settled sign-by-sign
+sept_L01	4	a,	plain	M		plaintext word, not settled sign-by-sign
+sept_L01	5	8̄6	cipher	M	A:56 B:7̄o	barred 2-digit group; first digit 8 (closed loops), same form as sept_L03 8̄6
+sept_L01	6	h	cipher	H		
+sept_L01	7	z	cipher	M		ʒ glyph; same shape as the "3" of nov_L02 (see note in NOTES)
+sept_L01	8	ꝑꝑ	cipher	H	A:p̄ B:pp	two p with one bar through both descenders; same sign as nov_L02
+sept_L01	9	δ	cipher	M	A:d B:d	round looped d (δ-shape), drawn differently from the upright d two signs later
+sept_L01	10	x	cipher	H		
+sept_L01	11	d	cipher	H		
+sept_L01	12	a	cipher	H		
+sept_L01	13	y	cipher	H		
+sept_L01	14	c	cipher	M		c with a small stroke above
+sept_L01	15	n	cipher	M	B:o	n with long tail
+sept_L01	16	o	cipher	H		
+sept_L01	17	q	cipher	H		
+sept_L01	18	ƀ	cipher	M	A:b B:t	b-bowl with crossed ascender; same sign as sept_L03 col and nov_L02
+sept_L01	19	qq̶	cipher	H	A:qqr B:ppr	two q with one bar through both descenders
+sept_L01	20	r	cipher	H		
+sept_L01	21	II	cipher	M	B:[mark:pi-like]	two strokes joined top and bottom
+sept_L01	22	4̄1	cipher	M	A:q̄i B:7̄i	barred group; same form as nov_L02 4̄1
+sept_L01	23	b	cipher	H		
+sept_L01	24	x	cipher	H		
+sept_L01	25	m	cipher	M	B:my	m whose last leg descends; may be m+y fused
+sept_L01	26	y	cipher	M	A:- B:(in my)	see previous
+sept_L01	27	k	cipher	H		
+sept_L01	28	a,	cipher	H		
+sept_L01	29	y,	cipher	H		
+sept_L01	30	z	cipher	M	B:3	ʒ glyph
+sept_L01	31	a	cipher	H		
+sept_L01	32	b	cipher	H		
+sept_L01	33	m	cipher	H		
+sept_L01	34	g	cipher	H		
+sept_L01	35	o	cipher	H		
+sept_L01	36	72	cipher	H		unbarred, line end
+sept_L02	1	Jestime	plain	M		plaintext word, not settled sign-by-sign
+sept_L02	2	s'il	plain	M		plaintext word, not settled sign-by-sign
+sept_L02	3	en	plain	M		plaintext word, not settled sign-by-sign
+sept_L02	4	falloit	plain	M		plaintext word, not settled sign-by-sign
+sept_L02	5	venir	plain	M		plaintext word, not settled sign-by-sign
+sept_L02	6	a	plain	M		plaintext word, not settled sign-by-sign
+sept_L02	7	l'effet	plain	M	B:effait	plaintext word, not settled sign-by-sign
+sept_L02	8	devoir	plain	M	A:d'une	image reads "devoir"
+sept_L02	9	estre	plain	M	A:lettre	image reads "estre"
+sept_L02	10	z	cipher	M		ʒ glyph
+sept_L02	11	u	cipher	H		
+sept_L02	12	k	cipher	H		
+sept_L02	13	a	cipher	H		
+sept_L02	14	d	cipher	H		
+sept_L02	15	y	cipher	H		
+sept_L02	16	r	cipher	H		
+sept_L02	17	f	cipher	H		
+sept_L02	18	q	cipher	H		
+sept_L02	19	ß	cipher	M		ß/long-s-like sign
+sept_L02	20	t	cipher	H		
+sept_L02	21	l	cipher	M		tall looped l (long-s-like)
+sept_L02	22	δ	cipher	M	A:d	round looped δ, as sept_L01
+sept_L02	23	Z	cipher	H		capital Z, distinct from ʒ
+sept_L02	24	h	cipher	H		
+sept_L02	25	t	cipher	H		
+sept_L02	26	u	cipher	H		
+sept_L02	27	t	cipher	M	B:[mark:cross]	t with cross
+sept_L02	28	x,	cipher	H		
+sept_L02	29	a,	cipher	H		
+sept_L02	30	y,	cipher	H		
+sept_L03	1	J,	cipher	M	A:I, B:3,	flat-topped J, same form as nov_L01 J
+sept_L03	2	ꝑ	cipher	M	A:p B:pa	p with bar through descender
+sept_L03	3	x	cipher	H		
+sept_L03	4	y	cipher	H		
+sept_L03	5	6	cipher	M	A:(in 6̄39) B:t	6/b-like loop sign; identity vs b open
+sept_L03	6	3̄9	cipher	M	A:6̄39 B:tz̄9	bar spans 3 and 9 only
+sept_L03	7	ƀ	cipher	M	A:t B:t	b-bowl with crossed ascender, as sept_L01
+sept_L03	8	8̄6	cipher	H		
+sept_L03	9	selon	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	10	la	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	11	constitution	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	12	puis	plain	M	B:puisse	plaintext word, not settled sign-by-sign
+sept_L03	13	de	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	14	la	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	15	saison?	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	16	affin.	plain	M		plaintext word, not settled sign-by-sign
+sept_L03	17	...	plain	M		plain text continues; out of scope
+nov_L01	1	conforme	plain	M		plaintext word, not settled sign-by-sign
+nov_L01	2	a	plain	M		plaintext word, not settled sign-by-sign
+nov_L01	3	leur	plain	M		plaintext word, not settled sign-by-sign
+nov_L01	4	ambition.	plain	M		plaintext word, not settled sign-by-sign
+nov_L01	5	Aussy	plain	M		plaintext word, not settled sign-by-sign
+nov_L01	6	avisse	plain	M	A:croiste	image: "avisse"
+nov_L01	7	bien	plain	M		plaintext word, not settled sign-by-sign
+nov_L01	8	7̄2	cipher	H		
+nov_L01	9	4	cipher	H		
+nov_L01	10	7̄9	cipher	H		
+nov_L01	11	b	cipher	H	B:v	looped b
+nov_L01	12	J	cipher	H	A:I B:[J/b]	flat-topped J
+nov_L01	13	r	cipher	H		
+nov_L01	14	c	cipher	H		c with small stroke above, as sept_L01
+nov_L01	15	J	cipher	H	A:I B:[J/1]	flat-topped J
+nov_L01	16	y	cipher	H		
+nov_L02	1	et	plain	M	B:[mark:cross]	et-ligature; plain or cipher not settled
+nov_L02	2	sy	plain	M	B:8y	plain "sy" or cipher s y; not settled
+nov_L02	3	c	cipher	M	A:- 	c with small stroke above; both passes missed it
+nov_L02	4	qq̶	cipher	H	B:qq[crossbar]	
+nov_L02	5	4̄1	cipher	H	B:4̄13	bar spans 4 and 1 only
+nov_L02	6	z	cipher	M	A:3 B:(in 4̄13)	ʒ glyph, same as sept z
+nov_L02	7	δ̶	cipher	M	A:d B:[delta]	round δ with a cross stroke
+nov_L02	8	J	cipher	H	A:I B:J	
+nov_L02	9	r	cipher	H		
+nov_L02	10	x	cipher	H		
+nov_L02	11	f	cipher	H		
+nov_L02	12	a,	cipher	H		
+nov_L02	13	y,	cipher	H		
+nov_L02	14	et	plain	M	B:etc	et-ligature
+nov_L02	15	x,	cipher	H		
+nov_L02	16	qq̶	cipher	M	A:9̄9 B:9̄9	two q with one bar through descenders, small tick above the first; both passes read 9̄9 -- shape matches the qq sign, not the digit 9
+nov_L02	17	z	cipher	M	A:3 B:3	ʒ glyph
+nov_L02	18	f	cipher	H		
+nov_L02	19	ꝑꝑ	cipher	H	A:p B:pp[crossbar]	
+nov_L02	20	ƀ	cipher	M	A:b B:b	b-bowl with crossed ascender
+nov_L02	21	x	cipher	H		
+nov_L02	22	y	cipher	H		
+nov_L02	23	l	cipher	H		
+nov_L02	24	c	cipher	H		
+nov_L02	25	m	cipher	H		
+nov_L02	26	t	cipher	H		
+nov_L02	27	y	cipher	H		
+nov_L02	28	qq̶	cipher	H	A:qq B:qq[crossbar]	
+nov_L02	29	r	cipher	H		
+nov_L02	30	ne	plain	M	B:uc	plaintext word, not settled sign-by-sign
+nov_L02	31	seroit	plain	M	B:lire	last word unclear; plain
