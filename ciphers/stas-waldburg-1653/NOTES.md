@@ -1,4 +1,5 @@
 open
+Vochezer, Geschichte des fürstlichen Hauses Waldburg in Schwaben vol. 3 (archive.org djvu full text, 67,235 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Walburga, Pröpstin, Essen, Christoph Karl: no cipher term, neither correspondent, letters absent.
 
 # Maria Walburga Eusebia von Waldburg to Christoph Karl von Waldburg, partly ciphered — StA Sigmaringen
 
@@ -87,3 +88,32 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Waldburg" AND "Christoph Karl" AND 1653 AND Geheimschrift`: no relevant hit (0 results, none about the letter).
 - `"Truchsessin Maria Walburga" AND Essen`: no relevant hit (0 results, none about the letter).
+
+## Web and blog check (GF-A2-7, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard): (1) `Maria Walburga Eusebia Waldburg Pröpstin Essen Geheimschrift Briefe
+Bruder 1653` -- one plausible-looking hit, verlag-regionalkultur.de/presse/bib/bib_05-218-8.pdf, opened and read: it
+is the contents and sample of a book on Charlotte of Hessen-Kassel, Electress Palatine (1650s, with a ciphered letter
+of Döringenberg to the Electress that Karl Ludwig objected to) -- a different correspondence, no Waldburg; the uni-due.de and other hits
+are unrelated; (2) `"Dep. 30/1 T 3" Waldburg Geheimschrift` (shelfmark) -- no hit on the shelfmark; (3)
+`Waldburg-Trauchburg Christoph Karl Schwester Essen Korrespondenz Staatsarchiv Sigmaringen Geheimschrift` --
+Archivportal-D records for other Waldburg correspondence in Dep. 30/1 T 3 (e.g. Nr. 1331, family letters; Christoph
+Karl's letters to brothers and cousins), no decipherment; (4) `Truchsessin Waldburg Pröpstin Essen Korrespondenz
+1653 1654 z.T. in Geheimschrift` (the folder's catalogue title) -- Archivportal-D Waldburg items, not this one; nothing
+read or decoded. Blog site searches: Cipherbrain `Waldburg Geheimschrift Brief` -- Ferdinand III, Wallenstein,
+"Geheimschrift aus dem Nachlass einer Adeligen" (2016/02/10, a modern-era item, not Waldburg) and other unrelated
+posts; Cryptiana `Waldburg cipher` -- no results; Cipher Mysteries `Waldburg Essen abbess cipher letters` -- unrelated
+posts only. No hit named this correspondence, so no comment thread to read. Result: no decipherment or plaintext found.
+
+## Premise check (GF-A2-7, 2 Oct 2026)
+
+(a) Folder's own mentions: NOTES.md and REQUEST.md name no decipherment, key or clear copy; the plain parts of the
+letters ("z.T." enciphered) are a possible crib once copied, not a decipherment. Not found. (b) Other solvers'
+working files: fresh shallow clones 2 Oct 2026, `grep -rliE` waldburg, walburga, trauchburg, sigmaringen, "Dep. 30":
+cyphersolver hits are other Waldburgs only (Cardinal Otto and Bishop Johann IV in targets/pallotto1629/ed/, "Waldburg
+Ottó" in targets/buda1489/vestigia/), Hohenzollern-Sigmaringen in targets/napoleon/src/; Aymeloglu: none (cited,
+nothing copied). Not found. (c) Physical neighbours: no image of Nr. 702 on disk or known online; the neighbouring
+Waldburg family correspondence in Dep. 30/1 T 3 (e.g. Nr. 1331) is catalogue-only; unreachable until a copy exists.
+(d) Recipient side: recipient Christoph Karl (Waldburg-Trauchburg line); Vochezer vol. 3, the family history,
+re-grepped in full by this worker (status line), names neither the letters nor a cipher; no edition of the Essen
+abbey's (sender's side) correspondence for 1653-54 found. Not found.
