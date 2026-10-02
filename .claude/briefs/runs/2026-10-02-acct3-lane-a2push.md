@@ -8,7 +8,8 @@ https://github.com/NoAutopilot/cipher-lab, model claude-opus-5-5; never below Op
 Pace: keep about 6 workers live at once. Before each spawn read get_session on yourself: five_hour
 allowed_warning or rejected on either type -> stop spawning, post a ROOM flag, let live workers finish. A seven_day
 allowed_warning alone does not stop you (BUDGETS.md amendment 27 Sept). Re-arm yourself with send_later every
-40-50 min; each wake: read ROOM since your last line, ledger finished workers in LEDGER.md (cost from get_session on
+15 min (owner, 2 Oct 20:4x: account 2 sat idle between hourly firings; most jobs finish in 10-20 min, so a slot
+must be refilled within ~15 min of a done line); each wake: read ROOM since your last line, ledger finished workers in LEDGER.md (cost from get_session on
 each worker), update the target's PROGRESS.tsv row only if one exists, spawn into free slots. Stop when the backlog
 below is spent or the window is rejected; then write "LANE A2PUSH handoff" in STATUS.md and one done ROOM line.
 
