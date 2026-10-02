@@ -136,7 +136,9 @@ def main():
     print(f"CCXL: {len(words)} words; key: {len(key)} signs with letter values")
     global DIGITS_ALLOWED
     for hyp in ("digits", "letters"):
-        k = dict(key)
+        # key.tsv now carries 02 = 2, 03 = 3 (M, 2 Oct 2026); drop them (and 25) so the letters-only hypothesis
+        # really leaves them free (VERIFY-BOWES-584, 2 Oct 2026: without this F10 placed as 223 under "letters")
+        k = {s: v for s, v in key.items() if s not in ("02", "03", "25")}
         DIGITS_ALLOWED = hyp == "digits"
         if hyp == "digits":
             k["02"], k["03"] = "2", "3"   # F10 = 223 at Boyd's 'In this *'

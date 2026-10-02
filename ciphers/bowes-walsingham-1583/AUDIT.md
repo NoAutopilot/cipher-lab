@@ -26,6 +26,8 @@ gives a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names pri
 independent re-decipherment of plaintext in print since 1842, conditional on the transcription. No earlier
 sign-level key was found in the sources listed in AUDIT.md."
 
+**Superseded counts (2 Oct 2026):** the safe sentence above is superseded by section 11 (97 of 100 tokens, S 73, M 12, I 3, C 9); the class is unchanged.
+
 **Unsafe sentences.** "Bowes's 1583 cipher deciphered for the first time", "previously unread names recovered",
 "93 of 101 tokens read at grade S", "a new decipherment of the Cotton letters".
 
@@ -315,6 +317,76 @@ class stays the verifier's call; nothing in this section is a decipherment or a 
 
 Requests this session: www.googleapis.com/books 22, books.google.com 41 (1.5 s apart), one session, no login.
 HathiTrust `babel` and `catalog` both still 403 to curl from this container (checked once each, not retried).
+
+
+## 11. Boyd's cipher asterisks and the F8-F11 placements (VERIFY-BOWES-584, 2 Oct 2026) -- supersedes section 10's point 3
+
+Verifier VERIFY-BOWES-584 (account 2 worker for the orchestrator, brief `.claude/briefs/runs/2026-10-02-acct3-verify-bowes.md`),
+2 Oct 2026 04:10-04:15 UTC; a session separate from NEXT-BOW (session_01GGhhpUV2rrk233PjMRrtVc). Audits NOTES.md "Boyd's
+cipher asterisks and the F8-F11 alignment (NEXT-BOW, 2 Oct 2026)", `csp6_584_snippets.tsv`, `align_ccxl.py`, `key.tsv`,
+`reading.tsv`. No decoding beyond re-running the committed scripts.
+
+**Section 10 point 3 is superseded.** It said the p.566 "* In cipher." footnotes mark words that "cannot be read from the
+snippet". Re-fetched independently (`verify_584_snippets.tsv`, 18 requests to books.google.com's search-within endpoint, the
+same endpoint NEXT-BOW used -- the Books API proper lists these two copies as NO_PAGES and returns no running text, so no
+API call was made), Boyd's running text of no.584 fixes the positions:
+
+| fragment | Boyd (copy a3ZZTPid3VQC) | copy 414MAQAAIAAJ | Letter-Book CCXL at that point | placement holds? | grade |
+|---|---|---|---|---|---|
+| F8 `15 g l e n c a r n` | p.566 entry head `This day - * and " 223 " have given him understanding` | identical | "This day Glencarne and 223" | **yes**, both copies; Glencairn occurs in clear on p.566 only in no.583's tail ("Glencairn came to him, whereupon Smallet departed"), before the no.584 head | S kept (sign 15 unread, final e absent: not a clean known-plaintext match, so NEXT-BOW's choice not to raise it to C is right) |
+| F9 `17 16 07 / 06 09 08 17 10 11` | p.567 `done by * late submission at * shall nothing avail him` | OCR line order garbled (`done by nothing avail him . In this * late submission at - * shall * * has sent`), but it too prints an asterisk immediately before `late submission` and after `at -` | "by his late submission at Ruthen" | **yes**: two cipher words with clear words between, at exactly the two places CCXL has `his` and `Ruthen` | **C holds for all 9 tokens** (see below) |
+| F10 `02 02 03` | p.567 `In this * has sent for his advice` | ambiguous: the garbled line ends `shall * * has sent`, one asterisk more than a3ZZ; whether `In this` carries one cipher group or two cannot be told from the OCR | "In this 223 hath sent for mine advice" | probable | **M holds** |
+| F11 `03 25 17 16 12` | no calendar text (Boyd omits CCXL's 189/32/0100 sentence; NEXT-BOW's five queries, not repeated) | -- | only candidate of the shape: "betwixt 32 and him" (p.532) | unchecked | pos.1 M, 25 unread, `him` S: holds |
+
+**Why C holds for F9's nine tokens (rule 4: C = from known plaintext).** (i) The position is fixed by the edition of the
+original, not by the alignment: Boyd marks a cipher word at `by *` and at `at *`, and Bowes's own Letter-Book copy of the same
+letter (Surtees 1842) has `his` and `Ruthen` at those two places. (ii) The key reading is not circular: each of F9's eight
+distinct signs (06 r, 07 s, 08 t, 09 u, 10 e, 11 n, 16 i, 17 h) is attested at S outside F9 (counted in reading.tsv: 3 to 10
+other occurrences each), so the key reads `his` and `ruthen` there without using F9. Both conditions are met for every one of
+the nine tokens; none should drop to M. Residual condition, unchanged: the reading rests on Tomokiyo's transcription (no image),
+and on Google's OCR of the calendar, not on the printed page itself (gap 4's verbatim read would settle the p.567 asterisk
+count).
+
+**The order control and a stale-script finding.** Re-running `align_ccxl.py` as committed reproduced the digits hypothesis
+(one monotone placement in transcription order; control 6 of 24 orders, floor 0.042) but **not** the letters hypothesis: after
+NEXT-BOW's regrade key.tsv carries 02 = 2 and 03 = 3, and `load_key()` reads them in under both hypotheses, so the committed
+script printed `F10 placements: 4 -> ['223']` under "letters" -- the opposite of NOTES.md's table. Fixed in place (one line:
+the letters hypothesis now drops 02, 03, 25 from the loaded key before testing); the fixed run gives NOTES.md's numbers exactly
+(letters: F10 0 placements, F11 `by/do/to him` 4, 0 of 24 orders). So NEXT-BOW's result stands and is now reproducible. As
+NEXT-BOW said, the order control is weak (6 of 24 orders admit a placement because `223` occurs four times in CCXL and
+`his .. ruthen` twice): the evidence for F9 and F10 is Boyd's asterisk positions, not the fragment order, and the 6/24 figure
+licenses nothing on its own. The letters-vs-digits contrast is not a matched control either (it tests whether F10 has any
+letter-valued word of pattern AAB in CCXL, not a technique's gain); it supports, and does not by itself establish, 02 = 2,
+03 = 3, which is why those stay M.
+
+`python3 check.py` exits 0 (reading.tsv regenerates; grades line `S 73, M 12, I 3, H 0, C 9, unread 3, total 100, excluded 1`).
+
+**Class: unchanged, N1 (items A and B); item C (the sign table) at its search-level scope.** Why the new evidence does not move
+it: Boyd printed blanks with asterisks where fol.299 has cipher, i.e. he did *not* read those words -- this rules out the 1910
+calendar as a prior decipherment of fol.299 (item B's "prior decipherment: not located" is, if anything, firmer), but the
+plaintext of every word read has been in print since 1842 (Surtees vol.14 CCXL), and the C-graded F9 tokens take their values
+from that print by definition. Nothing here is above N1. No N3+ arises, so no SECOND-OPINIONS-QUEUE.tsv row is owed (none exists
+for this target); the CONTRIBUTIONS.md rows for this target (lines 8-10) quote no token counts and need no change.
+
+**Safe sentence (2 Oct 2026, replaces section 1's).** "Tomokiyo's transcription of the eleven cipher fragments in Bowes's
+letters of 7 April and 31 July 1583 (Cotton Caligula C VII ff.196, 299) was aligned with Bowes's letter-book copies printed in
+1842 and, for f.299, with the cipher positions the 1910 Calendar of Scottish Papers marks by asterisks. This gives a sign
+table that reads 97 of 100 cipher tokens (S 73, C 9, M 12, I 3; one further token is a handwritten 'and', not a cipher sign) as
+the words printed there. It is an independent re-decipherment of plaintext in print since 1842, conditional on the
+transcription. No earlier sign-level key was found in the sources listed in AUDIT.md."
+
+**Unsafe sentences.** "97 of 100 tokens read at grade S or better", "Boyd's asterisks deciphered", "the calendar's cipher words
+read for the first time", any wording that presents the F9 C grade or the F10 digit reading as a discovery.
+
+**Postmortem (one line).** NEXT-BOW's placements and grades hold; the one fault was a script made stale by its own key regrade
+(rule 7), fixed here; NEXT-BOW's "both copies" note on F9 is accurate only for the asterisk before `late submission` and after
+`at` -- copy 414MAQAAIAAJ's OCR does not show the `by *` adjacency on its own line.
+
+**For the orchestrator (not edited here; workers do not write status.json):** status.json lines ~208, ~1251 and ~1799 still
+quote "93 of 101 (S 82, M 8, I 3)"; replace with this section's safe sentence and counts.
+
+Requests this session: books.google.com 18 (one at a time, 1.6 s apart, browser User-Agent, no login, no challenge). No other
+host. No subagents.
 
 ## Open-index scholarship pass (24 Sept 2026)
 
