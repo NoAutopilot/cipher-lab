@@ -47,6 +47,25 @@ structurally ruled out; the addressee's surname and the target's own folio (with
 canvas range ~30-70) remain unpinned, per the 24 Sept folio-pin attempt above -- still the fastest next step,
 not a fresh edition search.
 
+## Premise check (MERCY-C15, 2 Oct 2026)
+
+Short re-confirmation before the code-15 blind read (clock 2 Oct 2026 13:2x UTC, rule 6). The target already carries a
+reading and two verifier audits (AUDIT.md: N4, key `ours`, safe sentence revised after the 1 Oct Bourdeau fold-in); this
+section only records (a)-(d) against what is on disk.
+- (a) folder's own mentions of a decipherment, gloss or clear copy: **not found** -- NOTES.md's sibling and print sections
+  name no deciphered or clear copy of f.22; the only clear texts are the sibling instructions ff.20r and 21r (other
+  errands, other dates), read and used as parallels.
+- (b) other solvers' working files: **found, not a prior decipherment** -- Bourdeau's 1 Oct 2026 page
+  (`sources/cyphersolver/2026-10-01/mercy1648/`) is built on our issue 16 and our key; its own "Prior work checked"
+  records no prior decipherment; it leaves code 15 open ("probably n"). Aymeloglu's repository: no row for this item
+  (earlier passes).
+- (c) physical neighbours: **not found** -- ff.20r, 21r (clear, other instructions) and f.22r's clear overview; no
+  decipherment bound beside f.22 (`siblings_1648_hunt.md`, MERCY-SIB 2 Oct 2026; M3/H38 image probes of Espagnol 144).
+- (d) recipient side: **not found / unreachable** -- the Brussels SEE registers (AGR inv. 238-260, 576, 578) have no
+  digital object (`siblings_1648_hunt.md` section 1); Lonchay-Cuvelier IV no. 183 is a précis of Leopold's covering
+  dispatch, not the instruction (AUDIT.md N4.2 row 4); APW II B ends 19 May 1648.
+Result: no find; the item stays a cryptanalytic reading, key `ours`, N4. Gate pasted: `espagnol142-mercy-1648: partial (line 1) -- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
 ## Check-solved (LANE CX, 2026-09-25)
 
 Six-source sweep run fresh this pass (LANE CX worker CX-CLAIR), on top of -- not only quoting -- the 24 Sept
@@ -2668,10 +2687,45 @@ He does not accept that reading because it moves two glyphs.
 - (d) **Rule-10 check before anything goes out.** Any outward sentence about 15 says "proposed at grade M" and names
   the circular link 1. It must not say "15 = z" bare.
 
+### Blind read of v04:6-19 (MERCY-C15, 2 Oct 2026, 13:1x UTC)
+
+Proposal (a) above, run. Brief `.claude/briefs/runs/2026-10-02-acct3-mercy-c15.md`. Files in `code15/blind/`.
+- **Sheet.** v04 positions 6-19 (14 crops) plus six control tokens elsewhere on f.22v (v05:9 = 14, v05:14 = 32,
+  v05:15 = 31, v05:17 = 32, v03:7 = 13, v03:8 = 4). Line band from `tools/iiif_lines.py --image
+  images/f22v_canvas59.jpg --region 0,500,3546,900`; tokens cut by column ink gaps (19 groups on v04, matching
+  ciphertext.tsv), padded 22 px, x3, shuffled (seed 20261002), letter labels only. No positions, no candidate values,
+  no word or "direction" shown (`cut_sheet.py`, `sheet_unlabelled.png`, key in `sheet_key.json`).
+- **Reads.** Two Sonnet subagents, digits only, from the crops. The first pass B came back with its labels scrambled
+  (it gave "15, cut by the binding" to the "21:" crop), so its rows were discarded unused as a protocol failure, not a
+  read. A fresh pass B then read one file per call and wrote each row before opening the next file. Results are in
+  `reads.tsv`.
+- **Result: both blind reads agree with `ciphertext.tsv` at every v04 position 6-19 (14/14).**
+  - **v04:11 = 32 on both reads**, each at medium confidence with 31 as the alternative.
+  - v04:9 = 15 on both (high; medium with 13 as the alternative).
+  - v04:19 = 15 on both, low (cut by the gutter; alternatives 13/14/17, or 15 with the second digit 5/6/9/3).
+- **Controls.** 5 of 6 read correctly by both passes: all three 31/32 controls, 13 and 4. v05:9 (14) split: 19 on
+  pass A, 14 on pass B. So both readers separate this hand's 31 from 32 on the controls, and this hand's 4 can pass
+  for a 9.
+- **Reconciliation** (this worker, against the crops; `recon_J_vs_31_32_controls.png` puts v04:11 beside the three
+  31 and three 32 controls):
+  - The second digit of v04:11 has a curved head and a short foot turning right.
+  - That sits between the hand's 31 (a tall "l" with a small foot hook) and its 32 (a round head and a long flat
+    base). It is nearer the 32s in having a rightward base, nearer the 31s in length.
+  - Not decidable from the image beyond the two reads.
+- **Applied.** Nothing. Brief rule: change only if both blind reads agree *against* the current value. They agree
+  with it. `ciphertext.tsv`, `key.tsv`, `reading.txt` and AUDIT.md are untouched; there is no `corrections.tsv` row.
+- **What this does to the proposals.**
+  - The three primed looks that read v04:11 as 31 are **not confirmed blind**. Proposal (b)'s conditional ("if both
+    read 31") does not fire, so "direction" (v04:9-11 with 31) stays without support from the image.
+  - v04:9 as a real 15 now has two blind reads besides the four primed ones, so the 15 -> 14 alternative is weaker
+    still.
+  - The value of 15 is unchanged: n (M) committed, z the best proposal (M). It now rests on the table layout and
+    "iuz[g]a" at v04:19 only. v04:19 is still a low-confidence glyph (link 1 above).
+- **Grades.** No change: 529 tokens, H 0, C 0, S 488, M 41, I 0.
+
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
-Read so far: 521 of 529 code tokens (98.5%) read as Spanish words, 8 open in v04 (positions 9-13, 17-19); NOTES.md "Bourdeau corrections folded in (1 Oct 2026)", `reading_tokens.tsv` (H 0, C 0, S 488, M 41; the two box signs are counted as read but render as `_`); briefed as 1 Oct, clock 2 Oct 2026 (rule 6)
-- v04:9-13, "la dire[15]t non" (codes 15, 7, 32, 2, 32) - blocker: not-attempted; v04:11 = 31 ("direction"/"direztion") rests on three primed, non-blind looks against four reads of 32 (NOTES.md "Code 15 (v04), 2 Oct 2026"); next: two blind Sonnet reads of v04:11 and v04:9 on an unlabelled crop sheet plus one reconciliation, ~$4
-- code 15's value (both occurrences) - blocker: open-codes; two tokens. The best value is z (M), from the table layout and "iuz[g]a"; c and n are weaker. Neither key-angle nor crib-angle letter model separates the candidates within its own control (`code15/key/key15_out.txt`, `code15/crib/control_ranks.tsv`), and the Brussels register holds no matching key (H17). Raised only by new material (a sibling letter in this key with 15 in a readable word) or by resolving the v04:11 and v04:19 glyphs
+Read so far: 521 of 529 code tokens (98.5%) read as Spanish words, 8 open in v04 (positions 9-13, 17-19); v04:6-19 glyphs confirmed by two blind reads, 2 Oct 2026; NOTES.md "Bourdeau corrections folded in (1 Oct 2026)", `reading_tokens.tsv` (H 0, C 0, S 488, M 41; the two box signs are counted as read but render as `_`); briefed as 1 Oct, clock 2 Oct 2026 (rule 6)
+- code 15's value (both occurrences) - blocker: open-codes; two tokens. The best value is z (M), from the table layout and "iuz[g]a"; c and n are weaker. Neither key-angle nor crib-angle letter model separates the candidates within its own control (`code15/key/key15_out.txt`, `code15/crib/control_ranks.tsv`), and the Brussels register holds no matching key (H17). v04:11 read 32 and v04:9 read 15 on two blind reads (MERCY-C15, `code15/blind/reads.tsv`), so "direction" has no image support. Raised only by new material (a sibling letter in this key with 15 in a readable word) or by resolving the v04:11 and v04:19 glyphs
 - v04:19 (half-cut 15) and the token(s) lost after it in the gutter, expected 22 (g) - blocker: waiting-on ASKS row 81 (gutter capture of f.22v, riding on the BnF batch of ASKS row 78, quotes awaited); H80: the disk image is already Gallica's native size
 - letters lost in the gutter of f.22v, v01-v12 (Bourdeau `lost_edge.tsv`: about 18 restored by sense, not counted as read; the v05/v06 "conuenient[e ...]ar otra" and v06/v07 "gente de [?] que" junctions are unrecovered) - blocker: waiting-on ASKS row 81 (the same capture; its stated value of "one token" understates this)
 - the box name sign, r07 and r09 (2 tokens) - blocker: no-key-material; identified as Saint-Ibal at grade I from the clear f.21r sibling (fold-in "Names"), but no table gives a value for the boxed sign (H17: no boxed 101 in DECODE 958-965), so `key.tsv` keeps `_`
@@ -2682,6 +2736,6 @@ Read so far: 521 of 529 code tokens (98.5%) read as Spanish words, 8 open in v04
 - [x] known-keys: DECODE 958-965 (AGR SEE inv.nr. 2, "chiffres 1647-98") read in full size, best agreement 7/28, no period key for this letter (H17, 28 Sept 2026); design sibling R958 (H16); R965 p7 places x y z right after o-u = 2-8, a design point for 15 = z, not a key
 - [x] print: Le Clerc 1725 III-IV, Acta Pacis Westphalicae II B (ends 19 May 1648), Lonchay 1896 p. 445 n. 2, Lonchay-Cuvelier-Lefèvre IV no. 183 (calendar); none prints f.22 (NOTES.md opening sections; Bourdeau snapshot NOTES.md "Print")
 - [x] key-rebuild: Y8 anneal, M2, held-29 anneals (H3), crib steps H41-H77, Bourdeau's digit-pair splits (fold-in 1 Oct); code 15 swept with two letter models, each with a known-answer control, plus a window judge (1-2 Oct 2026): no value licensed above M, best z
-- [ ] image-check: out-of-range and doubtful tokens re-read on the native images (fold-in 1 Oct 2026, `bcheck/`); still to do: two blind reads of v04:11 (31 or 32) and v04:9 on an unlabelled sheet, ~$4
+- [x] image-check: out-of-range and doubtful tokens re-read on the native images (fold-in 1 Oct 2026, `bcheck/`); v04:6-19 read blind twice on an unlabelled shuffled sheet with six controls (MERCY-C15, 2 Oct 2026, `code15/blind/`): 14/14 agree with ciphertext.tsv, v04:11 = 32
 - [x] retry: reading regenerated after the fold-in (`tools/decode_key.py --check`: "reading up to date", 529 tokens); v04 re-decoded under 15 = n, c, z and with v04:11 = 31 (`code15/crib/judge_variants.tsv`); not applied pending the blind reads
-Verdict: keep going: 2 internal gaps; cheapest next: two blind Sonnet reads of v04:11 and v04:9 on an unlabelled crop sheet plus one reconciliation, ~$4
+Verdict: keep going: 1 internal gaps; cheapest next: the orchestrator's rule-7 decision on proposal (b)'s value change alone (15 n -> z at M, "direztion" unattested, v04:11 now 32 blind), ~$1
