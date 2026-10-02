@@ -493,5 +493,98 @@
   ],
   "results": "images/pairs_2026-10-02.tsv (blind key, reader verdicts, decisions)",
   "segment_map_note": "glyph index = segment number except: L1 segments 13 = o+x (glyphs 13-14), 14-15 = M (glyph 15), 28-30 = o2 (glyph 28), 38 = r+A (glyphs 36-37), 39 = Z5, 40 = M, 41-47 = glyphs 40-46, 48-49 noise; L2 one merge before glyph 25 (segment = glyph - 1 from there); L3 segments 9-10 = M (glyph 9), 37 = F+N (glyphs 36-37), 39-44 noise past the line end; L4 segments 6-7 = N (glyph 6), 8 = Zh"
+ },
+ "gap6_key_sweep_GAPS10": {
+  "fetched": "2 October 2026 22:04-22:05 UTC (GAPS10-moray-wood-1568, account-4)",
+  "fetch_method": "one DECODE browser login (tools/decode_browser_login.js 9257 --guess-fullsize --fetch-page RecordsView/344,331,4930), 1.6 s apart; full size served (not forbidden.png) for R9257, R344, R331; BL/TNA material kept in the session scratchpad only, not committed",
+  "records": {
+   "9257": "Add MS 4136 f.172; Author Henry Percy; Key; Simple substitution, Nomenclatures; 1 image",
+   "344": "SP 106/2 f.51; Author Henry Norreys; Key; Homophonic substitution, Nomenclatures; English; 1 image",
+   "331": "SP 106/1 f.53; Receiver Vidame de Chartres; Key; Homophonic substitution; French; 2 images (P1 and P2 served byte-identical)",
+   "4930": "Cotton Caligula C II ff.76-77; Key; Cipher type Unknown; 6 images (only P1 thumbnail fetched)"
+  },
+  "images": [
+   {
+    "file": "IMG_R331_I3372_P1.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R331_I3372_P1.png",
+    "bytes": 2794765,
+    "sha1": "5f07b93fb9a825c9bef7250c1aea79e37dc2ec60",
+    "pixels": "1714x2300",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R331_I3373_P2.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R331_I3373_P2.png",
+    "bytes": 2794765,
+    "sha1": "5f07b93fb9a825c9bef7250c1aea79e37dc2ec60",
+    "pixels": "1714x2300",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R344_I3390_P1.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R344_I3390_P1.png",
+    "bytes": 3041313,
+    "sha1": "2cfac4c6fb1244eaf5c38ef104e066d632a3fc2c",
+    "pixels": "1593x2300",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R9257_I43282_P.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9257_I43282_P.jpg",
+    "bytes": 2760797,
+    "sha1": "c108544de70e4639be1177fe94161cb6ea2f7124",
+    "pixels": "3262x4169",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "TH_IMG_R331_I3372_P1.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R331_I3372_P1.png",
+    "bytes": 76599,
+    "sha1": "a1ebb124167cff4ab2a897f7de39649246286db9",
+    "pixels": "200x268",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "TH_IMG_R331_I3373_P2.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R331_I3373_P2.png",
+    "bytes": 76599,
+    "sha1": "a1ebb124167cff4ab2a897f7de39649246286db9",
+    "pixels": "200x268",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "TH_IMG_R344_I3390_P1.png",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R344_I3390_P1.png",
+    "bytes": 91605,
+    "sha1": "d2b009865d1177744feecce1ee85e92dbb8d8efd",
+    "pixels": "200x288",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "TH_IMG_R4930_I28614_P1.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R4930_I28614_P1.jpg",
+    "bytes": 15482,
+    "sha1": "73e63534d3964b1bec5f50d2e36dad4b95f44c55",
+    "pixels": "200x289",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "TH_IMG_R9257_I43282_P.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R9257_I43282_P.jpg",
+    "bytes": 13863,
+    "sha1": "1deafc47a99cf0ae865a21f90665a8bf3a2c8cdb",
+    "pixels": "200x255",
+    "date": "2 October 2026",
+    "committed": false
+   }
+  ]
  }
 }
