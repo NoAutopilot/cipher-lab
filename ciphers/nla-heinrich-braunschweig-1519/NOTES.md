@@ -1,4 +1,5 @@
 open
+Havemann, Geschichte der Lande Braunschweig und Lüneburg vol. 2 (archive.org 10019400bsb djvu full text, 49,939 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Bückeburg, Schaumburg: no cipher term, neither letter named; 1519 feud narrative read at lines 16360-16470.
 
 # Two enciphered letters of Heinrich der Jüngere, Herzog von Braunschweig-Lüneburg — NLA Bückeburg
 
@@ -113,3 +114,37 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
   Zeitalter des Bauernkrieges", Geschichte und Gesellschaft Sonderheft 1, 1975, pp. 79-104,
   https://www.jstor.org/stable/40194765; F. J. Stopp, "Henry the Younger of Brunswick-Wolfenbüttel", Journal of
   the Warburg and Courtauld Institutes 33, 1970, pp. 200-234, https://www.jstor.org/stable/750896.
+
+## Web and blog check (GF-A2-7, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard): (1) `Heinrich der Jüngere Braunschweig 1519 Geheimschrift Brief Bückeburg`
+-- ADB/NDB biographies, coin sales; nothing; (2) `"L 1 Nr. 548" OR "L 1 Nr. 562" Bückeburg Braunschweig-Lüneburg
+Geheimschrift` (shelfmarks) -- Archivportal-D "Korrespondenzen der Braunschweigischen Linien mit Lippe in
+militärischen Angelegenheiten" (a catalogue record, a neighbouring series), nothing on either item; (3) `Heinrich der
+Mittlere Braunschweig-Lüneburg 1522 politische Absichten Geheimschrift Schaumburg` (Nr. 562's own catalogue wording)
+-- ADB/NDB on Heinrich der Mittlere, genealogy pages; nothing; (4) `Hildesheimer Stiftsfehde Chiffre verschlüsselter
+Brief Herzog Heinrich 1519 Schaumburg Graf` -- ADB Johann IV, the Göttingen "In publica commoda" volume, the
+Wallstein Stiftsfehde volume contents (5889_Inhalt.pdf, not opened -- next: read its table of contents for a
+chapter on correspondence); nothing naming a cipher letter. Blog site searches: Cipherbrain `Braunschweig Heinrich
+Geheimschrift 16. Jahrhundert` -- solved-cryptograms feed, Rohonc, Voynich and unrelated posts; Cryptiana `Brunswick
+Heinrich 1519 cipher` -- no results (the Cryptiana pages on disk name only Duke August/Gustavus Selenus, see above);
+Cipher Mysteries `Brunswick duke Henry cipher letter 1519` -- Milanese letters, BL cipher manuscript, Debosnys; none
+on these letters. No hit named either letter, so no comment thread to read. Result: no decipherment or plaintext found.
+
+## Premise check (GF-A2-7, 2 Oct 2026)
+
+(a) Folder's own mentions: NOTES.md and REQUEST.md name no decipherment, key or clear copy. Not found. One premise
+correction to carry: the catalogue title of Nr. 562 itself says "Heinrich d. M." -- Heinrich der Mittlere of
+Braunschweig-Lüneburg (1468-1532, the Lüneburg duke), not Heinrich der Jüngere of Wolfenbüttel (1489-1568) as this
+folder's title assumes; Nr. 548 says only "Herzog Heinrich". In 1519 Heinrich der Mittlere and the counts of
+Holstein-Schaumburg were on the same side (Bishop Johann of Hildesheim's), against Heinrich der Jüngere (Havemann
+vol. 2, djvu lines 16365 "Der Graf von Schaumburg war zur Hülfe bereit; Heinrich der Mittlere von Lüneburg ..." and
+16462 "Anton und Johann, Grafen von Holstein und Schaumburg ... traten dieser Einigung bei"); a letter in the
+Schaumburg archive (NLA Bückeburg) is therefore more likely from the allied Lüneburg duke to the Schaumburg counts.
+Which Heinrich wrote Nr. 548 is unsettled until the leaf is seen. (b) Other solvers' working files: fresh shallow
+clones 2 Oct 2026, `grep -rliE` b[uü]ckeburg, "heinrich (der )?j[uü]ngere", "L 1 Nr. 548|562", schaumburg-context:
+none for these items in either repository (cited, nothing copied). Not found. (c) Physical neighbours: no image of
+L 1 Nr. 548/562 on disk or known online (Arcinsys not re-tested this pass); neighbouring L 1 numbers unreachable until a
+copy exists. (d) Recipient side: the likely recipients are the counts of Holstein-Schaumburg (Anton, Johann); no
+printed Schaumburg correspondence or Regesten for 1519-22 found; Havemann (the Braunschweig-Lüneburg side, re-grepped
+in full this pass) names neither letter. Not found.
