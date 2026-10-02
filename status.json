@@ -202,9 +202,9 @@
    "ref": "BL Cotton Caligula C VII, B VIII",
    "folder": "ciphers/bowes-walsingham-1583",
    "stage": 9,
-   "state": "queued",
+   "state": "active",
    "holder": "Nobody",
-   "next": "97 of 100 tokens read after Boyd's asterisk placements (NEXT-BOW, 2 Oct); re-audit VERIFY-BOWES-584 queued on account 2 before the audit's counts change",
+   "next": "97 of 100 tokens read (S 73, C 9, M 12, I 3); F9 Ruthen passage at C confirmed by a second audit (AUDIT.md sec.11, 2 Oct); remaining: F10/F11 digit signs (M)",
    "note": "Novelty verified 23 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve. Specialist reply 24 Sept 2026: Tomokiyo accepted the reading, recorded it on Cryptiana with a link here, and confirmed the name fragments from the manuscript; the numerical name-codes (870, 189=Montrose, 149, 19, 29, 85) stay open.",
    "kind": "recovery",
    "wait": {
