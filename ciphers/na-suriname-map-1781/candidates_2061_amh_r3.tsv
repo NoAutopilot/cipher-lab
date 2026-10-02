@@ -1,0 +1,46 @@
+# GAPS11-na-suriname-map-1781, 2 Oct 2026 (account-4): PRE-REGISTERED before any round-3 placement was scored.
+# Round 3 of the AMH page 2218 alignment (sources/amh/2026-10-02/page2218_en.txt; after den Heijer 2012). AMH is a modern
+# English summary, never the plaintext: a value suggested here is at best S (two controls beaten), never C.
+# The worker has seen GAPS9/GAPS10's partial decode (reading_2061_battery.txt), so this list is pre-registered against fit
+# scoring, not blind to the sheet.
+#
+# RULE (parent's decision on GAPS10's open question, 2 Oct 2026): i, j, y and the digraph ij are ONE letter class
+# (18th-century Dutch orthography: yzer/ijzer, ditto/dito, gallery/gallerij). Implementation, fixed before scoring:
+#   - every key value, every candidate letter and the nl_repo bigram corpus are normalised the same way: 'ij' -> 'y',
+#     then 'i' -> 'y', 'j' -> 'y' (one class letter written 'y');
+#   - each candidate is tested in two renderings, deduplicated: (r1) ij kept as two class letters, (r2) ij as one;
+#   - placements run on the ENTRY STREAM (all cipher signs of the entry concatenated across cipher-word breaks, plain
+#     'w:' tokens skipped), so multi-word candidates are written below with spaces, matched with spaces removed;
+#   - the GAPS10 single-word lists (candidates_2061_amh.tsv, unchanged) are re-run under the same merge on the same
+#     entry stream, and the multi-word candidates below are added to them;
+#   - fit = 0 conflicts with the current key (key.tsv + key_2039_aliases.tsv + key_2061_crib.tsv incl. GAPS10's five
+#     values) and >= 2 keyed signs agreeing (class-equal counts as agreeing);
+#   - control A, run UNDER THE SAME MERGE: the same candidate rendering at every other same-length window of every LINE
+#     STREAM (cipher words concatenated per line) of 2061 and of 2039's legend; pass: share of windows also
+#     0-conflict with agree >= the placement's agree is <= 0.05;
+#   - control B: the placement's implied values permuted among its implied signs, 20 seeds, rest-of-sheet merged-corpus
+#     bigram S2 (as GAPS10); pass: <= 1/20 at or above the real S2; fewer than 2 distinct implied letters: cannot vary,
+#     no pass;
+#   - S = both pass; values asked of one sign by two passing fits with different letters are held, not added;
+#   - entry-shuffle null: the merged candidate lists derangement-shuffled across entries, 20 seeds, same rule;
+#     reported as passes per run.
+#   - STATED ALTERNATIVE (sign-code question, GAPS10 post-hoc): the bare 'y' readers wrote in legend c / "y3" may not be
+#     key y=s (C, 2007A). Sensitivity run --y-free removes code y from the key and re-runs; reported only, NO value is
+#     added from it (it would contradict a C value; that belongs to gap 1's image check).
+#   - Values added go to key_2061_crib.tsv as M (source align_2061_amh_r3), the passing placement tokens S in
+#     exceptions_2061_battery.tsv. A class value is written 'y' with the note "i/j/y class".
+entry	words
+No1	dito yzer|yzer dito|stuks yzer|stukken yzer|ponders yzer|pond yzer|yzer canon|yzere canon|yzere stukken|stuks yzere canon|ponders dito
+No2	dito yzer|yzer dito|stuks yzer|stukken yzer|ponders yzer|pond yzer|yzer canon|yzere stukken|ponders dito
+No3	dito yzer|yzer dito|stuks yzer|stukken yzer|ponders yzer|pond yzer|ponders dito|stuks dito|yzere stukken
+No4	dito yzer|stuks yzer|ponders yzer|kleine veldstukken|kleine stukken|veldstukken van het cordon|geleend van het cordon|geleent van het cordon|uit het cordon|van het cordon|ponders elk|ieder van ponders
+No5	veldstuk dito|dito yzer|stuks yzer|ponders yzer|veldstuk van het cordon|van het cordon|ponders dito
+No6	op de flanken|aan de flanken|op de flanken der halve bastions|op de flanken van de halve bastions|der halve bastions|van de halve bastions|halve bastions|dito yzer|stuks yzer|ponders yzer
+L07	andere aanwyzingen|verklaring der letteren|verklaringe der letteren|explicatie der letteren|explicatie der signatuuren|verklaring der signatuuren
+a	officiers wooning|officiers woning|officiers quartier|officiers huys|wooning der officiers|wooning voor de officiers|quartier voor de officiers
+b	caserne voor het guarnisoen|caserne voor het garnizoen|caserne voor de soldaten|casernen voor het guarnisoen|cazerne voor het guarnisoen|barakken voor het guarnisoen|voor het guarnisoen|voor de soldaten
+c	corps de garde|corps du garde|corps de gaarde|wagt huys|wagthuys
+d	kruyd magazyn|kruid magazyn|buskruyd magazyn|magazyn voor kruyd|magazyn van kruyd|kruyd kelder
+e	arsenaal voor kruyd en gereedschap der batterijen|magazyn voor kruyd en gereedschap der batterijen|arsenaal voor kruyd|magazyn voor kruyd|kruyd en gereedschap|gereedschap der batterijen|behoeften der batterijen|ammunitie der batterijen
+f	wooning voor de gezworen bedienden|wooning voor de gesworen bedienden|wooning voor de gezworene bedienden|woning voor de gezworen bedienden|voor de gezworen|voor de gesworen|gezworen bedienden|gesworen bedienden|gezworen slaaven|beedigde bedienden
+g	gaanderij of passage|gallerij of passage|gallery of passage|galerij of doorgang|gaanderij of doorgang
