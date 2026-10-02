@@ -207,3 +207,130 @@ wait.
 - S: finish the two rule-1 legs 25 Sept skipped for no-network (solver-repo grep + OpenAlex/S2) -- tools/print_check.py + a fresh clone.
 - M: design a Gregg/abbreviation-lexicon-constrained code-word control per NEAR.md's own named next step (the current control recovers only 0.8% of its own ground truth) -- specs/cheap-tests/mccormick-1999/token_anneal.py + tools/family_run.py.
 - S: check tools/data/ for any shorthand/abbreviation corpus already on disk that could seed a better-constrained control pool than the current 350-word free pick.
+
+## Web and blog check (WEBCHECK-mccormick-1999, 2 Oct 2026)
+
+Required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads", CHECK-SOLVED-WEB, 28 Sept
+2026), run 2 Oct 2026 01:04-01:1x UTC by WEBCHECK-mccormick-1999 (account-4), brief
+`.claude/briefs/runs/2026-10-01-account4-webcheck.md`. Famous item: many hits; the newest comment threads were read
+first. Every claimed reading found is quoted verbatim below with its date; none is a verified decipherment, so the
+status word on line 1 stays `open` (reasoning at the end of this section).
+
+### (a) Plain web searches (11 queries, one search engine)
+
+| # | query | result |
+|---|---|---|
+| 1 | `"Ricky McCormick" cipher notes 1999 solved` | Wikipedia, dcode.fr, Medium (theunknownblog), allthatsinteresting, historiqly, hubpages: all say unsolved; CRRU and ACA failed |
+| 2 | `"WLDNCBE" OR "WLD NCBE" McCormick` (most distinctive ciphertext token) | Cipher Mysteries 2013/2016/2024 posts; Websleuths thread p.46; pastebin transcription; **Medium (rusandudewmina, Mar 2026) "decoded with aid of AI by a 15 year Old"** -- see hit M below |
+| 3 | `"Ricky McCormick" "encrypted notes" FBI decipherment` (folder's descriptive title) | Wikipedia, scribd copy of it, morbidology, guyhadleigh, gsnsp, grokipedia: unsolved |
+| 4 | `McCormick notes FBI code cracked 2025 OR 2026` | firstalert4 (Jan 2022), fastcompany, coldcaseexplorations, CBS, AOL: no crack reported |
+| 5 | `scienceblogs.de klausis-krypto-kolumne McCormick` (Cipherbrain) | tag page + posts of 29 Aug 2013, 24 Oct 2014, 1 May 2018, mention in 25 Dec 2021 |
+| 6 | `cryptiana.blogspot.com McCormick` (Cryptiana blog) | no McCormick post; only the blog's front page and 2018 archive index came back |
+| 7 | `cryptiana.web.fc2.com McCormick 1999 notes` (Tomokiyo's pages) | no Tomokiyo page on McCormick; surfaced Zenodo record 18857434 (hit Z below) |
+| 8 | `ciphermysteries.com Ricky McCormick` | posts of 12 Mar 2013, 12 Apr 2016, 26 Jul 2024; derekbruff podcast ep.34 (2019) |
+| 9 | `"McCormick" cipher solves "Claude" OR "GPT" OR "ChatGPT" notes decoded` (model-solve announcements) | no McCormick model-solve claim; results are Kryptos K4/Enigma/other-cipher AI stories |
+| 10 | `"Ricky McCormick" notes decoded "15 year old" OR teenager AI 2026` | only the Medium article itself (hit M); no second source reports it |
+| 11 | `"Ricky McCormick" Reddit solved decoded notes theory 2025` | jimconnors.net podcast note (8 Apr 2025, "remain one of only two unsolved ciphers in FBI history"); no solved claim |
+
+On-disk Cryptiana snapshot `sources/cryptiana/` grepped for McCormick (case-insensitive): no McCormick page (the three
+hits are unrelated surnames in civilwar2.htm and beaufort.htm). Zero requests to cryptiana hosts.
+
+### (b)+(c) Hits opened, comment threads read
+
+**Cipherbrain (scienceblogs.de/klausis-krypto-kolumne), tag page `/tag/ricky-mccormick/` -- 3 posts, no pagination.**
+- 1 May 2018, "The Top 50 unsolved encrypted messages: 10. Ricky McCormick's encrypted notes" -- 6 comments, all 1-4
+  May 2018, none later (re-checked live 2 Oct 2026 against the on-disk snapshot read 25 Sept; unchanged). Comment 1
+  (Anon) links a taringa.net Spanish "solution", dismissed in-thread by HF(de) as homophone guessing -- already on
+  record in this file's intake note.
+- 24 Oct 2014, "Der Code der Maisfeld-Leiche" -- 7 comments, 25-26 Oct 2014. No decipherment claimed; Hardy (26 Oct
+  2014): "Dieses Prinzip wird ersichtlich, wenn man bestimmte Buchstabenkombis seiner Texte in Word mit Farbe
+  markiert. WLD, NCBE, *SE. Vermutlich war die Bedeutung der Kürzel nur ihm zugänglich." (abbreviations, not a key).
+- 29 Aug 2013, "Top-25 der ungelösten Verschlüsselungen -- Platz 7: Der Mord an Ricky McCormick" -- 23 comments,
+  30 Aug 2013 to 11 Mar 2021, not truncated. Claims, verbatim: Agathon (5 Sept 2013) "If one replaces NCBE with ROAD
+  and ONDE as 'on the'...comes in the Bronx on the 75 West Fordham Road"; Franz Fellner (24 Oct 2014) "NCBE steht für
+  ROAD"; BREAKER (10 Nov 2019) "This is solved by removing the repeating patterns...Stennos as well as...Morse
+  translation." None gives a key or a full plaintext; none was taken up by Schmeh or the other commenters.
+- 25 Dec 2021, "Ungelöste Kriminalfälle mit ungelösten Verschlüsselungen" -- McCormick sentence: "Der mutmaßliche
+  Drogenkurier Ricky McCormick wurde 1999 ermordet aufgefunden. Er trug zwei verschlüsselte Zettel bei sich, die nie
+  dechiffriert wurden." 3 comments, none about McCormick.
+
+**Cipher Mysteries (ciphermysteries.com, Nick Pelling).**
+- 26 Jul 2024, "Nick's 2024 thoughts on Ricky McCormick and St Louis" (newest post) -- 12 comments, 27 Jul 2024 to
+  2 Jun 2025, complete. Post: a St Louis geography/phonetics reading frame, PRSEON ~ "person", numbers possibly bus
+  routes; not a decipherment. Claims in thread, verbatim: Ian Tucson (4 Aug 2024) "right side munarse anagrams to
+  SURNAME"; Josef Zlatoděj Prof. (12 Aug 2024) "iCBE=11, NCBE=15" (gematria, "TOTE WLDi" read as German "dead");
+  James M (12 Sept 2024) "MRDE LUSE" = "murderer loose", "D.W.M.Y" = "day week month year"; BREAKER (2 Jun 2025)
+  removing repeating patterns reveals an "Eddie Munster" outline plus a CIA-trafficking narrative. No key, no
+  line-by-line plaintext, no uptake by the host.
+- 12 Apr 2016, "Ricky McCormick's notes - for 6th graders :-)" -- 52 comments, 12 Apr 2016 to 23 Aug 2023, complete.
+  Post argues the notes are private semi-literate writing, not a cipher. Claims, verbatim: Abbey (24 Jan 2021) "i
+  think the ncbe stands for a location, either on/ in/ north Cote Brilliante, the street that ran right by his high
+  school."; Lizzy (31 Mar 2021) "I definatly think 'prseond e' relates to 'person is' ... (first person is 71 NCBE)
+  (second person is 74 NCBE)"; James (5 May 2022) "luse to te wld = lose to the wild, Wild being the Minnesota Wild
+  hockey team."; Mitch (23 Aug 2023) "I'm with lizzy on the first person second person." Word guesses only.
+- 12 Mar 2013, "Ricky McCormick's mysterious notes..." -- header says 163 comments, 12 Mar 2013 to 28 Oct 2015; the
+  page as served to the fetch tool ends mid-sentence at comment 78, and `/comment-page-2` returns the same 78 (so
+  comments 79-163 were NOT read -- all fall in the 2013-2015 range per the header dates, no 2016+ comment exists
+  on this post). Claims, verbatim: Jose Galofre Manero (14 Jun 2013) "'O-W-m-4 H8L XORLX' means 'OWN-FOR I AM
+  MCCORM(i)CK'"; boydt (28 May 2013) "plenty of glass see out / you'll see me see me first / person drives wild an
+  see me..."; Peter M (21-22 Jan 2014) mortgage rates "71, 74 and 75"; Tim Sawyer (11 Mar 2015) "It's all about
+  Ricky going to RC Branson for a 'prse'-prize of a CBE rc airplane"; the coder (19 Jun 2015) "This document
+  describes a way to create Lysergic Acid Diethylamide (LSD)"; IrishGuy (30 Jul 2015) "99.6.25 June Pulse increased
+  a lot since Kansas". Mutually incompatible; none accepted by Pelling.
+
+**Cryptiana (blog and Tomokiyo's pages).** No post or page on McCormick found by queries 6-7 or in the on-disk
+snapshot. Nothing to open.
+
+**Other plausible hits opened.**
+- Wikipedia, "Ricky McCormick's encrypted notes" (read 2 Oct 2026): "Attempts by both the FBI's Cryptanalysis and
+  Racketeering Records Unit (CRRU) and the American Cryptogram Association failed to decipher their meaning"; no
+  claimed solution is named anywhere in the article.
+- dcode.fr/mccormick-cipher: transcription only; "Nobody has yet found a perfect translation or explained the entire
+  message without ambiguity." No dated user claims.
+- Websleuths thread 131822 (47 pages, started 29 Mar 2011), pages 46-47 read (30 Sept 2025 to 4 Sept 2026, the
+  newest posts anywhere). Claims, verbatim: Busrday (8 Dec 2025) "It's directions from Delmont, Ohio to Ft
+  Lauderdale"; Imanuel (14 Apr 2026) "the first part of the note deciphers to 'All that glisters is not gold;Often
+  have you heard that told:Many a man his life hath sold...'" followed in the same post by "just disproved myself";
+  Detective Sharp Hawk-Eye (4 Sept 2026) "Interstate 75 and North County" odometer-reading theory. No AI/LLM solve
+  and no mention of the Medium article on either page.
+- **Hit M -- Medium, @rusandudewmina, "Cracking the Silence of 27 years old Murder Mystery: The way the Haunting
+  Notes of Ricky McCormick were decoded with aid of AI by a 15 year Old.", dated March 2026 (search-engine
+  date; the page itself returned HTTP 403 to the fetch tool and to one curl with a browser UA -- stopped after the
+  one retry per the good-citizen rule; the Wayback CDX index reset the connection twice, so no archived copy was
+  reached).** What is on record from the search engine's own snippets of the article, verbatim: the "decoded
+  interpretation" of "WLD NCBE" is given as "Wouldn't be near us — not someone known."; the decoded content "appears to
+  reference locations, warnings about danger, and various fragmented messages about not being able to promise things
+  or return to certain places." No AI tool name, no key table, no FBI confirmation and no second source reporting the
+  claim were found (queries 2, 9, 10). This is the one claimed reading of the item newer than the 25 Sept 2026
+  intake note, and the first found that invokes an AI; it is logged here as a *claimed* reading whose body is unread
+  from this container. **Follow-up (not done here, one line per Usage 7):** a LOCAL-QUEUE.tsv row to read the Medium
+  page from the owner's browser and paste the claimed plaintext, so a verifier can rate it; until then any later
+  reading of ours must be checked against it (rule 10: at best N1 against this article if it matches, which no one has
+  tested).
+- **Hit Z -- Zenodo record 18857434, Jessica Lorraine Scott (Dunn), "Beyond Cryptography: A Non Classical
+  Interpretation of the McCormick Notes", 3 Mar 2026, DOI 10.5281/zenodo.18857434, PDF 537.9 kB** (the leads
+  section above had this at abstract-only after a 429; the record page answered this time). The abstract itself:
+  the notes are "a constrained workflow system rather than concealed prose", and "the central claim concerns
+  patterned organization rather than confirmed material identity" -- explicitly not a decipherment or plaintext.
+
+### Verdict of this step
+
+no decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, never a novelty
+verdict, rule 10). Every claimed reading above is either a one- or two-word guess at a token (NCBE = ROAD / a street /
+a bag), an anagram or gematria, a full-text reading that its own author or the thread withdrew or ignored, or (hit M)
+an AI-assisted interpretation with no key, no second source and the body unread here; the newest authoritative
+statements (Wikipedia, dcode.fr, Cipherbrain 2021, Websleuths Sept 2026) all still say unsolved. The 25 Sept 2026
+intake note treated the taringa.net "solution" the same way (a claim rejected by the thread, not a decipherment),
+so the status word stays `open`. Hits M and Z are the two items a verifier's AUDIT.md must cite as prior claimed or
+structural readings. Comments 79-163 of the 2013 Cipher Mysteries post are the one unread stretch (2013-2015 only).
+
+Requests per host: search engine 11 queries; scienceblogs.de 5; ciphermysteries.com 4; websleuths.com 2;
+en.wikipedia.org 1; dcode.fr 1; zenodo.org 1; medium.com 2 (both 403, stopped); web.archive.org 2 (both connection
+reset, stopped); cryptiana hosts 0 (on-disk snapshot). No login, no credential used.
+
+`python3 tools/intake_gate_check.py mccormick-1999` after this section:
+
+```
+mccormick-1999: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
