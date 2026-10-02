@@ -598,20 +598,92 @@ Waits on pinning the AN Marine B7 article number (~21-29) via the SIV catalogue'
 - Run the open-index scholarship pass (OpenAlex, Semantic Scholar, Persée, HAL) for "Paget" + "Genes"/"Cagliari" consul, flagged in NOTES as not yet tried beyond ordinary web/Google Books search. S, tools/print_check.py.
 - Re-fetch the AAE PDF (archivesdiplomatiques.diplomatie.gouv.fr) through the browser tool/OCR rather than the raw WebFetch that returned it unreadable. S.
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: 13 of 500 coded tokens (2.6%), NOTES.md "Cryptanalysis attempt 1 (OX-PAGS)" matched-control table and "What stays unread" (487/500 tokens, 115/122 codes unread); that figure is word-level from four letter-1 glosses only, and no per-code value has survived validation (no key.tsv). The fraction readable from the period glosses is unmeasured: an adjacency count on ciphertext.tsv (1 Oct 2026, script not committed) puts 392 of 501 cipher-kind tokens directly beside an interlinear insertion (letter 1 69/97, letter 2 323/404), and none of those insertions has been aligned to its cipher run.
-- Letter 2 (28 Aug 1714, f65R-f66R), cipher runs with an interlinear gloss, about 323 of 404 tokens - blocker: not-attempted; ciphertext.tsv carries 176 insertion-clear rows plus 25 clear/insertion-clear, 4 cipher/insertion-clear and 1 clear/cipher mixed rows for letter 2. Example: f65R pos45-56 '145.198.46.221.87.201.156.52.221.46.2.185' under 'la Princesse de Parme et ses 2 oncles', and f66R pos33-43 '146.198.56.41.235.38.175.87.201.156.35' under 'frere du Duc de Parme qui n'a que 35 ans'. That contradicts OX-PAGT's line "effectively all of letter 2 has no gloss" (Transcription section) and status.json's "four interlinear glosses". OX-PAGS aligned letter-1 glosses only; next: build (cipher run, gloss) pairs from ciphertext.tsv for both letters and run tools/interlinear_align.py align with --floor 1, so every group may take a multi-letter chunk, and no --prior. Hold out the l'abbe pairs (145.31.67 / 145.65.67) and one of the two '87.201.156' = 'de Parme' recurrences (f65R and f66R) as a known-answer check, then write key.tsv graded C from the period gloss, ~$5
-- Letter 1 (8 Apr 1714, f60R-f61R, f65L), glossed runs beyond the 13 tokens already read, about 56 tokens - blocker: not-attempted; these glosses are in ciphertext.tsv but were never decomposed: 'on verra quelques personnes' and 'venue d'une procuration a Genes' (f61L pos43-60; the gloss appears twice, a reconciliation artifact), 'tiennent pour traitter avec eux' (f61L pos75-86), 'une portion' (f61L pos129-130), 'penetrer ceux' and 'y passe en secret' (f65L pos45-61), 'a la vente de cette isle' (f61R pos38-43), plus the M-graded 'Gile/Isle de Labarque' pair. OX-PAGS used four groups and tested only a fixed-bigram split; next: include them in the same interlinear_align.py run as letter 2, building one key across both letters, which share 38 codes (Transcription stats), ~$1
-- Unglossed cipher runs, about 109 tokens (f66L 72, f61L 18, f60R 10, f66R 9) - blocker: not-attempted; there is no adjacent interlinear text and no key to apply (OX-PAGS "No key.tsv produced"), so they become readable only once the gloss alignment yields a key; next: apply the aligned key with tools/decode_key.py (decode.json, --check), fill single unknown codes from context or a French LM, regrade per rule 4 and log what stays scattered as open-codes, ~$3
-- f66L/f66R doubtful readings: f66L pos ~120-150 and the 5 kind-mismatch rows, which run each mixed insertion row sits over, the M-graded f66 digits including the 66x-range outliers, and f66L group endings read off f66R's overlap - blocker: not-attempted; flagged in the Transcription section ("Known reconciliation artifacts", Next items 2 and 5), passA_context.md and passB_context.md (possible mis-attached insertions, 1/4, 3/8, 0/6 confusions), never re-read against images/f66L.jpg and images/f66R.jpg. This matters most for the 72 f66L tokens, where gloss attachment decides which runs the alignment can use; next: tools/iiif_lines.py --image images/f66L.jpg and --image images/f66R.jpg, then 2 blind passes per page plus 1 reconciliation (5 subagent calls at ~$1.5), re-reading the digits and recording which run each gloss sits above, ~$8
-- f61L, one cipher group solid-inked over (between 175 and 276, f61L ~pos48) - blocker: illegible; hand-marked ILLEGIBLE in both transcription passes (Transcription stats). The only other witness is the AN Marine B7 original (LOCAL-QUEUE L11, queued 25 Sept 2026, unanswered). The gloss alignment may assign this slot a plaintext chunk at grade I, but its code number stays unread
+## Gloss alignment (2 Oct 2026, NEXT-PAG)
 
-## Escalation (1 Oct 2026)
+Ran the Verdict line's cheapest next step: tools/interlinear_align.py on (cipher run, gloss) pairs from both letters.
+Files: `align/build_pairs.py` -> `align/pairs.tsv`; `align/evaluate.py` (train, held-out check, shuffle control,
+full run) -> `align/align_{train,all}.tsv`, `align/key_{train,all}.tsv`, `align/eval_run.txt`, `align/grid.txt`;
+`align/make_key.py [--check]` -> `key.tsv`. Every script regenerates its output from ciphertext.tsv and pairs.tsv.
+
+**Pairs come from the page images, not from ciphertext.tsv's insertion-clear rows (rule 2).** Building the pairs
+showed that ciphertext.tsv's kinds cannot be used as they stand. I looked at `images/f60R, f61L, f61R, f65L, f65R,
+f66L, f66R.jpg` (the seven page-halves that carry cipher; whole-page or half-page crops, read by me, no subagent).
+On every one, the period decipherment is written on the line above each cipher run, and in letter 2 it covers almost
+every run. Both transcription passes recorded many of those above-line decipherments as running clear text, so
+ciphertext.tsv kinds them `clear`. Examples: f66R "quoyque ce Dernier Duc n'ait que 36" over 77.87...204.36; "Il n'est pas marie et n'a" over
+41.96...174; "sont charmés de la voir epouser" over 46.205...194; "une grande Partialité" over 48.175...233; f60R
+"Venise" over 244.176.221. Other passes attached a gloss to the wrong line: passA gives f66R 33-43 "frere du Duc..."
+where the image has "le Prince Antoine de Parme". Result: **501 of 505 cipher tokens (both letters) sit under a
+period gloss.** The only run with no gloss is f66L 169-172 `400 4 19 600` ("une complaisance aveugle pour ...").
+The previous "about 109 unglossed tokens" was a transcription artifact. Gloss attachment is one reader's reading
+(mine), not two blind passes. The image-check gap below now covers a second, independent read.
+
+**Two readings corrected by the image.** (1) f60R pos69-72 `147.46.146.87` is glossed "Lisle de" (l'Isle de), not
+"Gile/Sile de". f61L has the same word twice, "de Lysle" over 192.46.87.147.46.146 and "Lysle" over 34.147.46.146.
+So code 147 opens "li" in "Lomeliny" (148.186.147.176) and in "l'Isle" alike. OX-PAGS's contradiction 1 (147 taking
+two values) came from the misread gloss, not from the cipher. (2) Contradiction 2 (l'abbé as 145.31.67 and 145.65.67,
+plus 56.31.67 at f61L 199) stays as it was: the cipher has homophones.
+
+Digit overrides (image over ciphertext.tsv, listed per pair in pairs.tsv `overrides`): f66L 51 95->97, f66L 125
+35->33, f66L 189 20->220, f66R 59 52->32, f66R 61 154->174. Cipher numerals that repeat the gloss's own numeral were
+passed as clear numerals, grade I: f65R 55 `2` ("ses 2 oncles"), f66L `22`/`25` ("22e annee le 25 Octobre"), f66L 290
+`2` ("2e Nopces"), f66L 371 `44` ("agee de 44 ans"), f66R 23 `36`, f66R 63 `35`. The illegible group at f61L ~48 went
+in as a doubtful token. It can take a chunk but never enters the key.
+
+**Tool change (Usage 8: an option, not a private copy).** At the brief's settings (`--floor 1`, Thurloe defaults), the
+alignment barely beat its control. Training self-agreement was 83/473 = 0.175, against a shuffled-pairing p95 of 0.184
+(20 seeds). Held-out letters were 12/37 = 0.324, against a shuffle p95 of 0.324. The Thurloe scoring lets a code take
+up to 14 letters and gives +1 for each word boundary, so from a flat start one code swallows a whole gloss word. This
+cipher is syllabic, about two letters per code, and its chunks do not follow word boundaries. I added `--max-chunk`,
+`--seg-bonus` and `--len-prior` to tools/interlinear_align.py. Its defaults are unchanged, and the existing offline
+test still passes. A new offline case shows the syllabic toy recovering with the options and not under the defaults.
+I chose the settings on training data only: 24-setting grid, 10 shuffle seeds each, ranked by margin of training
+self-agreement over shuffle p95 (`align/grid.txt`). The pick was null-cost -3, max-chunk 4, seg-bonus 0.5, len-prior
+0.5. The held-out pairs were scored once, after that choice.
+
+**Result, with its controls (rule 3; the manipulation, the pairing, is what both statistics depend on).**
+
+| | real pairing | shuffled pairing (20 seeds) |
+|---|---|---|
+| training self-agreement (aligned code tokens whose chunk equals the code's top value, n>=2) | 131/473 = 0.277 | mean 0.103, p95 0.126 |
+| held-out known-answer letters (P10/P12/P14 l'abbé, P39 f66R 'le Prince Antoine de Parme') | 24/37 = 0.649 | mean 0.270, p95 0.378 |
+
+Held-out spellings from the training key: 145.31.67 -> la.?.be (4/5 letters), 145.65.67 -> la.?.be (4/5),
+56.31.67 -> l.el.be (3/5), P39 -> le.in.l.d.le.a.ne.de.p.me.s (13/22). Caveat: code 67's value 'be' comes from P01
+("Labbe Lomeliny", training), which also contains l'abbé. The brief named the l'abbé pairs for hold-out; P01 holds the
+name as well, so the l'abbé part of the check is not fully independent. In P39, the 'de Parme' run 87.201.156 spells
+de.p.me: 87=de and 156=me hold, while 201 takes only 'p' (its 'ar' is lost).
+
+**Key (rule 4).** `key.tsv`: 21 codes whose top chunk agrees in >=2 aligned occurrences and covers >=50% of them. 12 are
+graded C (>=3 agreeing occurrences): 52 et, 67 be, 87 de, 147 li, 155 ma, 185 on, 196 po, 212 re, 221 se, 240 ion, 244
+ve. Nine are graded M (2 agreeing): 77 q, 84 ce, 86 da, 116 g, 126 ch, 135 je, 158 mo, 174 na, 205 qui, 213 ma. All
+meanings come from the period gloss; nothing is cryptanalytic. The full run (all 56 pairs) gives self-agreement 138/493
+= 0.280. Per token over the 493 aligned code tokens: 53 agree with a C code, 20 with an M code, 45 sit on a key code
+with a different chunk, and 375 sit on codes outside key.tsv. Frequent codes stay unsettled: 46 (37 occurrences, top
+'s' 9/37), 146 (20, 'le' 8/20), 145 (12, 'la' 4/12), 175 (16, 'ne' 5/16). Either these are true homophones or nulls, or
+the gloss's own spelling drifts. One example of the drift: the f66R gloss "frere du Duc de Parme qui n'a que 35 ans
+Mais" has no 87.201.156 under it, so the decipherer added "de Parme" for clarity. At the run level, the plaintext of
+both letters' cipher passages is the period decipherment written above them (pairs.tsv `plain_raw`, one reader).
+Code-level values for most codes are not established.
+
+Not run: tools/decode_key.py (no decode.json yet; that is the retry step) and tools/judge_plaintext.py (no spec for
+this target). Rule 10: nothing here is described beyond "read from the period interlinear decipherment". No
+request to any outside host: the images were already on disk. Subagents: none.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated 2 Oct 2026, NEXT-PAG)
+Read so far: 501 of 505 cipher tokens (99.2%) lie under a period interlinear gloss, read off the page images by one reader (NEXT-PAG, 2 Oct 2026, "Gloss alignment" above; align/pairs.tsv), so the run-level plaintext of both letters' cipher passages is in hand pending a second read; code-level, key.tsv holds 21 codes (12 C, 9 M) and 73 of 493 aligned code tokens (14.8%) agree with them (53 C, 20 M); 1 Oct's "13 of 500" was word-level from four letter-1 glosses.
+- Code-level values for the 375 aligned tokens on codes outside key.tsv and the 45 that disagree with a key code (frequent codes 46, 146, 145, 175 unsettled) - blocker: open-codes; the alignment (self-agreement 0.280 vs shuffle p95 0.126) does not hold one value for them, which fits homophones/nulls or a decipherer's gloss that paraphrases (f66R "de Parme" with no 87.201.156 under it); context does not narrow them further at run level, where the gloss already gives the plaintext
+- Gloss attachment and the M digits, all seven cipher page-halves (f60R f61L f61R f65L f65R f66L f66R) - blocker: not-attempted; the 2 Oct pairs rest on one reader's look at whole/half-page crops (5 digit overrides, P23/P28/P34/P46 chained across line breaks, P05 "a Genes" margin note attached to 175.X.276), and the f66L/f66R kind-mismatch rows and 66x outliers (Transcription "Known reconciliation artifacts") were never re-read blind; next: tools/iiif_lines.py --image on the seven page-halves, 2 blind passes per page recording each above-line gloss with its run plus 1 reconciliation, then re-run align/evaluate.py --write and make_key.py, ~$8
+- Apply key.tsv over both letters - blocker: not-attempted; no decode.json exists yet; next: decode.json for ciphertext.tsv + key.tsv, tools/decode_key.py --check, regrade per rule 4 with the gloss as the run-level reading, ~$3
+- f66L 169-172 '400 4 19 600' ("une complaisance aveugle pour ..."), 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg (checked 2 Oct 2026), none of the four codes recurs under a gloss, and no key sheet is known (AN Marine B7 original waits on LOCAL-QUEUE L11)
+- f61L, one cipher group solid-inked over (between 175 and 276, f61L ~pos48) - blocker: illegible; hand-marked ILLEGIBLE in both transcription passes; its gloss text ("on verra quelques personnes a Genes", P05) is read, its code number is not. The only other witness is the AN Marine B7 original (LOCAL-QUEUE L11, queued 25 Sept 2026, unanswered)
+
+## Escalation (1 Oct 2026; updated 2 Oct 2026, NEXT-PAG)
 - [x] siblings: neighbouring leaves in the volume opened (f55-f59 Fleury testament and notice; f67/f70/f75 unrelated Puget/Peraud print; OX-PAG, images/manifest.json). The BnF Clairambault name index lists only this item for "PAGET -- Lettres chiffrees". The Paget 14 Jan 1713 sibling (ciphers/clairambault296-paget-1713) was not found in 314 of 316 Gallica canvases; canvases 28 and 36 are unread (LOCAL-QUEUE L23 done-blocked 27 Sept 2026), and the retry belongs to that target's NEXT-STEPS row 31 and ASKS row 51. DECODE, Bourdeau and Aymeloglu had no Paget hit (23 Sept 2026). The AN Marine B7 originals wait on LOCAL-QUEUE L11, and SIV form reproduction is NEXT-STEPS row 30 (NX-UNBLOCK, HTTP 500 once). No internal sibling step is left in this folder
-- [x] clear-pages: there is no separate clear copy or decipherment sheet on the neighbouring leaves. The clear text is the letters' own interlinear decipherment, already in ciphertext.tsv (letter 1: 46 insertion-clear rows; letter 2: 176 plus 30 mixed rows). Found, but used only for four letter-1 groups (OX-PAGS); using the rest is the key-rebuild step below
-- [x] known-keys: already swept. KEY-CROSSMATCH.tsv has 45 rows for this ciphertext against every key on file: 28 none, 9 unusable-key, 8 no_corpus. The best coverage, 0.353, is fr7129's f275 code key (no_corpus); the nearest French nomenclator is Le Tellier 1659-ext at 0.196 (none). KEY-DESIGN-PRIORS.tsv row 12 (design_prior.py --unkeyed) ranks multi-sign (homophonic/nomenclator/syllabary) first (0.94), with lead vanbeuningen-dewitt-1657. That sweep parsed 779 tokens and 268 signs against ciphertext.tsv's 500 and 122, so its coverage figures are approximate. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no French Marine or consular key from 1700-1729 (grepped 1 Oct 2026). 'chiffre de M. Paget' and 'chiffre pour Genes' came back negative in Google Books and web search (OX-PAGK). A cipher-rows-only re-run is not worth doing before the gloss key exists
-- [ ] print: done so far: RIDA XIX (Driault 1912) ContentSearch for 'Paget' gave 3 irrelevant hits and 'Cagliari' 0 (CX2-MISC2); Mezin 1998, Ulbert 2019, and Google Books snippets of the Inventaire des archives de la marine B7, which are register entries without transcription (OX-PAGK). Planned: the open-index pass (OpenAlex, Semantic Scholar, Persee, HAL) for Paget with Genes/Cagliari (WAIT-PASS-A), and a tools/print_check.py phrases.txt run on letter 2's interlinear plaintext ('la Princesse de Parme et ses 2 oncles', 'frere du Duc de Parme'), ~$3
-- [ ] key-rebuild: one attempt so far, OX-PAGS's fixed-bigram decomposition of four letter-1 glosses, falsified against a matched control (control_test.py: control 41 confirmations / 0 contradictions, target 0 / 2). That is one instrument with one failure, not retired. Planned: a variable-chunk DP alignment of every gloss in both letters with tools/interlinear_align.py (--floor 1, held-out l'abbe and 'de Parme' check). The bigram failure does not reach a syllable-chunk table, since '87.201.156' sits under 'de Parme' on both f65R and f66R and 145 opens the runs glossed 'l'abbe', 'a la vente...' and 'la Princesse...' (observations, not readings), ~$5
-- [ ] image-check: done only for the letter-1 crib groups (OX-PAGS cropped f60R/f61L at native resolution and caught the 145.65.67 variant). Planned: f66L/f66R line crops via tools/iiif_lines.py --image, 2 blind passes per page plus 1 reconciliation, covering the flagged artifacts, the M-graded digits and gloss attachment, ~$8
-- [ ] retry: no extended key exists yet (OX-PAGS "No key.tsv produced"). Planned after the alignment: tools/decode_key.py --check over both letters, regrading every token per rule 4, ~$3
-Verdict: keep going: 4 internal gaps; cheapest next: tools/interlinear_align.py on the letter 1+2 gloss pairs, ~$5
+- [x] clear-pages: no separate clear copy or decipherment sheet on the neighbouring leaves; the clear text is the letters' own interlinear decipherment, which on the images (2 Oct 2026) covers 501 of 505 cipher tokens, far more than ciphertext.tsv's insertion-clear rows record; used in full by the key-rebuild below
+- [x] known-keys: already swept. KEY-CROSSMATCH.tsv has 45 rows for this ciphertext against every key on file: 28 none, 9 unusable-key, 8 no_corpus. The best coverage, 0.353, is fr7129's f275 code key (no_corpus); the nearest French nomenclator is Le Tellier 1659-ext at 0.196 (none). KEY-DESIGN-PRIORS.tsv row 12 (design_prior.py --unkeyed) ranks multi-sign (homophonic/nomenclator/syllabary) first (0.94), with lead vanbeuningen-dewitt-1657. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no French Marine or consular key from 1700-1729 (grepped 1 Oct 2026). 'chiffre de M. Paget' and 'chiffre pour Genes' came back negative in Google Books and web search (OX-PAGK). A re-run against key.tsv's 21 codes is not worth doing before the retry step
+- [ ] print: done so far: RIDA XIX (Driault 1912) ContentSearch for 'Paget' gave 3 irrelevant hits and 'Cagliari' 0 (CX2-MISC2); Mezin 1998, Ulbert 2019, and Google Books snippets of the Inventaire des archives de la marine B7, which are register entries without transcription (OX-PAGK). Planned: the open-index pass (OpenAlex, Semantic Scholar, Persee, HAL) for Paget with Genes/Cagliari (WAIT-PASS-A), and a tools/print_check.py phrases.txt run on the gloss plaintext ('la Princesse de Parme et ses 2 oncles', 'le Prince Antoine de Parme', 'Elle achevera sa 22e annee le 25 Octobre prochain'), ~$3
+- [x] key-rebuild: 2 Oct 2026 (NEXT-PAG): tools/interlinear_align.py over 56 image-read gloss pairs (52 training, 4 held out), with the new --max-chunk 4 --seg-bonus 0.5 --len-prior 0.5 options; training self-agreement 0.277 vs shuffled-pairing p95 0.126, held-out known-answer letters 24/37 = 0.649 vs shuffle p95 0.378 (both above control); key.tsv 21 codes (12 C, 9 M); the 1 Oct note's code-147 contradiction was a misread gloss ("Lisle", not "Gile"). At the brief's Thurloe defaults the same run did not beat its control (0.175 vs p95 0.184), logged above
+- [ ] image-check: done: NEXT-PAG read the above-line glosses and their attachment on all seven cipher page-halves (one reader, 2 Oct 2026). Planned: tools/iiif_lines.py --image line crops, 2 blind passes per page plus 1 reconciliation, recording each gloss with its run and re-reading the M digits and the five overridden digits, then re-run align/evaluate.py, ~$8
+- [ ] retry: key.tsv exists now (21 codes). Planned: decode.json + tools/decode_key.py --check over both letters, regrading every token per rule 4 with the gloss as the run-level reading, ~$3
+Verdict: keep going: 3 internal gaps; cheapest next: decode.json + tools/decode_key.py --check with key.tsv over both letters, ~$3
