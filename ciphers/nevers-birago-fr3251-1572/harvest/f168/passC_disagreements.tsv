@@ -1,17 +1,6 @@
 passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
-R02	9	9	T95	L	9	T36	M	split		circle on stem with dot
-R02	17	17	T17	L	17	X_NEW	L	split		t shape
 R02					27	T19	L	gapA		cut at s2/s3 overlap edge, may be same as previous
-R02	33	33	T38	L	34	T64	M	split		
-R03	12				12	T92	H	gapA		omega cut at s1 edge
-R03	14	13	T92	H				gapB		
-R03	18	17	T97	L	17	T56	M	split		tailed g
-R03	20	19	T51	M	19	X_K	M	split	prose after: Il	K shape, may be prose abbreviation; after: Kas (prose abbrev follows) / Il Baron
-V03	1	1	T17	L	1	X_NEW	L	split	prose before: line start	t shape; prose before: line start
 V03	5	5	T27	L	5	X_NEW	H	split_H_B		integral with dot and small o
-V03	9	9	T95	M	9	T66	M	split		p with dot and foot bar
-V03	10	10	T49	L	10	T51	L	split		barred p
 V03	14	14	T33	M	14	T19	H	split_H_B		
-V03	23	23	T70	M	23	T84	L	split		triangle with cross below
 V03	25	25	T90	L	25	X_NEW	H	split_H_B		bulb with legs
 V03					27	X_NEW	L	gapA		cursive d with tilde, may be prose; after: line end (next line Nondimeno)
