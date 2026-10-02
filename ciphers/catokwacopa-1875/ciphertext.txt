@@ -1,0 +1,13 @@
+# catokwacopa-1875 -- ciphertext.txt (copied 2 Oct 2026 by NEXT-CAT, account 2; not re-transcribed here)
+# Source: ciphers/pollaky-1865-1875/ciphertext.txt, AD 3 and AD 4, copied verbatim (the two lines below).
+# That text is the pollaky target's two blind passes over the scienceblogs.de scans supplied to Klaus Schmeh
+# by Tony Gaffney and Nicole Gluecklich (images: ciphers/pollaky-1865-1875/images/ad3-1875-05-08.jpg,
+# ad4-1875-05-20.jpg), reconciled 78/80 by workers bPOL/bPOL2 (25 Sept 2026), and agreeing 72/72 letter-words
+# with Thomas Ernst's BNA-checked transcription as used in David Bourdeau's cyphersolver catokwacopa/ads.py
+# (snapshot: sources/cyphersolver/2026-10-02/catokwacopa/). Not checked here against the BNA issues
+# themselves (LOCAL-QUEUE.tsv L13). Line division into Ernst's [1]-[28]+[10a] pairs: pairs.tsv, made by
+# pairs.py from these two lines (rule 7: python3 pairs.py --check).
+## AD 3 -- The Standard, 8 May 1875
+W. Str 53. Catokwacopa. Olcabrokorlested. Coomemega. Sesipyyocashostikr. Rep.--Itedconlec mistrl. --Hrsclam 54. 3 caselcluchozamot. 1. 6. 9. Mopredisco. Contoladsemot. Iadfilisat. Qft. Cagap. Balmnopsemsov. Ap. 138.--Hodsam 55, 6. Iopotonrogfimsecharsenr. Tolshr. Itedjolec. mistrl.--Ding Declon.--Ereflodbr.
+## AD 4 -- The Standard, 20 May 1875
+W. --Umem 18. Poayatlgerty. Dpeatcnrftin. Nvtinrdn. Dmlurpinrtrcamnr. Etd. -- Atndngtnsurs. Otenpu.--Etfdorshpxn. 18. Ndtsfindseseo. Cotegr Tsvlysdinlge. Ngtndusdcndo. Edrstneirs. Ui. Ndted. Iolapstedttoc. A.P. 138.-- Yxn. 18. 18. Wtubtrfftrstendinhofsvmnr. Dily.--Atdwtsurs. Oatvpu.-- Y Arati. Rileohmae.--This will be intelligible if read in connection with my communication published in this column on the 8th inst.
