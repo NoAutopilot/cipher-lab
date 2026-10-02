@@ -1688,7 +1688,7 @@ Shuffled-target control (`harvest/shuffled_judge.py`, fitted map, `f185r2/passC.
 **What this settles.** All of no.90's cipher (f.184r runs, f.184v foot, f.185r, f.185v; 966 signs) is now read under the published
 1572 key + T42=m, rank 1 of 201 at three seeds, power 20/20 at the measured error. Not settled: the 19 T83-shaped tiles of NEVBIR-185
 (grade M, above), 111 unkeyed signs (digit shapes 4/7/8, square-with-dot, t-shape, raised-a m), and the judge gate. This portion is
-flagged for a separate verifier (rule 10); VERIFY-NEVBIR-184 covered f.184r only.
+flagged for a separate verifier (rule 10); the audits so far (VERIFY-NEVBIR-184, AUDIT2-NEVBIR per PROGRESS.tsv) cover the first 554 signs only.
 
 Requests: gallica.bnf.fr 4 (canvas 189 region twice -- one HTTP 500, one retry; canvas 190 info.json and left page), >= 2 s apart, no
 challenge. Vision calls 7 (two blind passes, two one-line f.185v passes, one adjudication; plus this worker's looks at overview and
