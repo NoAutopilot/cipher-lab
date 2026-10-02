@@ -11,13 +11,6 @@
   "creation_date": "2024-09-13 14:32:47",
   "document": "Elizabeth_Moray [transc], DOC_8345_2024-Sep-14-08-32-51_70494.txt (not fetched: .txt attachments come back as the forbidden.png placeholder, sources/decode/NOTES.md 24 Sept 2026)"
  },
- "full_size_not_fetched": [
-  "IMG_R8345_I38545_P1.jpg",
-  "IMG_R8345_I38545_P2.jpg",
-  "IMG_R8345_I38545_P3.jpg",
-  "IMG_R8345_I38545_P4.jpg"
- ],
- "full_size_note": "named in the page modal alt text; needs one login via tools/decode_browser_login.js (ASKS row 42 answered 28 Sept 2026); out of this pass scope",
  "images": [
   {
    "file": "TH_IMG_R8345_I38545_P1.jpg",
@@ -59,5 +52,393 @@
   "login_free_control": "curl of https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P4.jpg without login: HTTP 200 image/png 17947 bytes, Content-Disposition filename=forbidden.png, sha1 035489a0605851154ab88372216354b63596ca22 (the permission placeholder) -- the full-size files still need the logged-in session.",
   "next": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js 8345 OUT --guess-fullsize --max-files 8 --delay 1600 (or absolute --fetch URLs); images stay in the session scratchpad (BL, not public domain; sources/decode/NOTES.md 28 Sept 2026), commit sha1/dims here and the crop recipe only.",
   "requests_de_crypt_org": 7
+ },
+ "full_size_fetched_2026-10-02": {
+  "worker": "GAPS3-moray-wood-1568 (account-4)",
+  "login": "tools/decode_browser_login.js 8345 <scratchpad> --guess-fullsize --max-files 4 --delay 1600 --fetch <four absolute https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P1-P4.jpg URLs>: one attempt, loggedIn true (landed on RecordsList; the saved RecordsView/8345 carries IS_LOGGEDIN:true; incorrectMessage true is the i18n-table false positive GAPS2 noted). Preceded by the playbook certutil step (libnss3-tools installed, ccr-agent-proxy added to Chromium NSS store), no credentials involved in it.",
+  "result": "all four HTTP 200, genuine JPEG (ffd8ff magic), 13.3-15.4 MB each -- real images, not the forbidden.png placeholder (sha1 035489a0...). 7 de-crypt.org requests in all (login GET+POST, RecordsView, 4 files), 1.6 s apart.",
+  "storage": "images kept in the session scratchpad only (British Library material, not public domain; sources/decode/NOTES.md 28 Sept 2026); sha1 and dimensions below are the committed record. Re-fetch with the command above.",
+  "files": [
+   {
+    "file": "IMG_R8345_I38545_P1.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P1.jpg",
+    "bytes": 14676527,
+    "sha1": "21c8e814b97b166479266c7ad2cc4eecb9f4646c",
+    "pixels": "7160x9289",
+    "format": "JPEG"
+   },
+   {
+    "file": "IMG_R8345_I38545_P2.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P2.jpg",
+    "bytes": 13322442,
+    "sha1": "bc25cff19bb028d2f16b08638e6dafb7e71e7599",
+    "pixels": "7160x9289",
+    "format": "JPEG"
+   },
+   {
+    "file": "IMG_R8345_I38545_P3.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P3.jpg",
+    "bytes": 14093349,
+    "sha1": "2c2a8eca2f6f1c3fa26955b4041e7ca8ac219e26",
+    "pixels": "6971x9718",
+    "format": "JPEG"
+   },
+   {
+    "file": "IMG_R8345_I38545_P4.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8345_I38545_P4.jpg",
+    "bytes": 15358430,
+    "sha1": "a4e848953a3afca88f015e0e8efe1395aea137af",
+    "pixels": "6971x9718",
+    "format": "JPEG"
+   }
+  ]
+ },
+ "postscript_crops_2026-10-02": {
+  "recipe": "images/crop_f213v_postscript.sh <dir with IMG_R8345_I38545_P4.jpg> <out dir> (tools/iiif_lines.py --image, region 1500,7370,4300,720 of P4, --ink 150 --distance 120 --max-width 1200 --overlap 120 --top-margin 30); crops not committed",
+  "how_located": "row ink profile only (no vision): 36 lines at 160-175 px pitch, text from x~1650; the four lines between the short date line (y 7294) and the signature (y 8221, set off by a 256 px gap) are y 7459, 7653, 7824 (core ink 53-55k px, the body lines above 25-42k) and y 7965 (one ~650 px piece at the left, the seven-sign L4)",
+  "detected_centres_native_y": [
+   7459,
+   7653,
+   7824,
+   7965
+  ],
+  "crops": [
+   {
+    "crop": "f213v_ps_L01_s1.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     1500,
+     7370,
+     2700,
+     7556
+    ],
+    "lines_in_crop": 1,
+    "band": 1,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L01_s2.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     2533,
+     7370,
+     3733,
+     7556
+    ],
+    "lines_in_crop": 1,
+    "band": 1,
+    "segment": 2,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L01_s3.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     3567,
+     7370,
+     4767,
+     7556
+    ],
+    "lines_in_crop": 1,
+    "band": 1,
+    "segment": 3,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L01_s4.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     4600,
+     7370,
+     5800,
+     7556
+    ],
+    "lines_in_crop": 1,
+    "band": 1,
+    "segment": 4,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L02_s1.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     1500,
+     7526,
+     2700,
+     7738
+    ],
+    "lines_in_crop": 1,
+    "band": 2,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L02_s2.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     2533,
+     7526,
+     3733,
+     7738
+    ],
+    "lines_in_crop": 1,
+    "band": 2,
+    "segment": 2,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L02_s3.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     3567,
+     7526,
+     4767,
+     7738
+    ],
+    "lines_in_crop": 1,
+    "band": 2,
+    "segment": 3,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L02_s4.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     4600,
+     7526,
+     5800,
+     7738
+    ],
+    "lines_in_crop": 1,
+    "band": 2,
+    "segment": 4,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L03_s1.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     1500,
+     7708,
+     2700,
+     7894
+    ],
+    "lines_in_crop": 1,
+    "band": 3,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L03_s2.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     2533,
+     7708,
+     3733,
+     7894
+    ],
+    "lines_in_crop": 1,
+    "band": 3,
+    "segment": 2,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L03_s3.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     3567,
+     7708,
+     4767,
+     7894
+    ],
+    "lines_in_crop": 1,
+    "band": 3,
+    "segment": 3,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L03_s4.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     4600,
+     7708,
+     5800,
+     7894
+    ],
+    "lines_in_crop": 1,
+    "band": 3,
+    "segment": 4,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L04_s1.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     1500,
+     7864,
+     2700,
+     8050
+    ],
+    "lines_in_crop": 1,
+    "band": 4,
+    "segment": 1,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L04_s2.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     2533,
+     7864,
+     3733,
+     8050
+    ],
+    "lines_in_crop": 1,
+    "band": 4,
+    "segment": 2,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L04_s3.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     3567,
+     7864,
+     4767,
+     8050
+    ],
+    "lines_in_crop": 1,
+    "band": 4,
+    "segment": 3,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   },
+   {
+    "crop": "f213v_ps_L04_s4.jpg",
+    "source_url": "",
+    "source_file": "IMG_R8345_I38545_P4.jpg",
+    "box": [
+     4600,
+     7864,
+     5800,
+     8050
+    ],
+    "lines_in_crop": 1,
+    "band": 4,
+    "segment": 4,
+    "method": "tools/iiif_lines.py row ink profile",
+    "params": {
+     "pitch_autocorr": 175,
+     "distance": 120,
+     "prominence": 197.2
+    },
+    "date": "02 Oct 2026"
+   }
+  ]
  }
 }
