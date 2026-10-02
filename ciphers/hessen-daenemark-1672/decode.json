@@ -1,0 +1,3 @@
+{"jobs": [{"ciphertext": "ciphertext_f4runs.tsv", "key": "key.tsv", "format": "tsv",
+  "reading": "reading_f4runs.txt", "tokens": "reading_f4runs_tokens.tsv", "style": "spaced",
+  "header": ["hessen-daenemark-1672, f.4 (image 0004) two 2-digit runs only, single-eye native-crop reading (A2-HDK, M), not a reconciled transcription; key: HCPortal key 255 letter table (1666), key.tsv grade S. Tokens {total}: {grades_sorted}"]}]}

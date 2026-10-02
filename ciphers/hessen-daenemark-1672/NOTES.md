@@ -227,22 +227,81 @@ searches + 1 METS; digitalisate-he.arcinsys.de 2 range probes (404, wrong path g
 8 404 beyond the 106 images); de-crypt.org 2 login-free + 1 browser login with 3 fetches. All one at a time, >=1.6 s apart,
 no 429/403/challenge. Vision calls (my own reads): 11.
 
+## key.tsv and DECODE Nr. 1234 check (A2-HDK3, 2 Oct 2026, 22:10-22:25 UTC)
+
+The Verdict's cheapest next step, nothing else. Intake gate first:
+```
+$ python3 tools/intake_gate_check.py hessen-daenemark-1672
+hessen-daenemark-1672: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+1. **key.tsv** written by `keys/make_key255_tsv.py` from the letter table already typed in `keys/key255_gloss_test.py`
+   (one source): 120 letter homophones, 24 doubled-letter codes, 50 nulls as key 255 f.13 lists them, plus 128/148/158
+   (see 2). 197 rows, all grade S. The key sheet says "Blinde Zahlen sind von 1 biß 20", but its own table gives
+   20 = A; key.tsv keeps 20 = A (nulls 1-19), which the letter's gloss reads three times and the period scale in 2
+   confirms ("20 a"). The syllable row is in symbols, not codes, and the nomenclator 180-407 does not read this letter:
+   neither is in key.tsv. `--check` exits 1 if key.tsv is stale.
+   So that `tools/decode_key.py --check` has something to regenerate, `ciphertext_f4runs.tsv` holds the two f.4 runs
+   exactly as A2-HDK read them (single eye, native crop, every token conf M; not a reconciled transcription, and not a
+   substitute for gap 1), with `decode.json`:
+   ```
+   $ python3 tools/decode_key.py ciphers/hessen-daenemark-1672 --check
+   ciphertext_f4runs.tsv: tokens 36: M 31, U 5
+   reading up to date
+   $ cat reading_f4runs.txt   (body)
+   f4_run1   d i s g u [6d] i t u n d e r t a [bb] i n [634]
+   f4_run2a  g e b d a s a [I]
+   f4_run2b  w o l a b l [0] u
+   ```
+   Grades: 31 M (key S, token reading M), 5 U (6d, bb, 634, I, 0); 0 H, 0 C. 143 decodes as a null and drops out.
+   `--split-check` flags the same five; 634 has candidate splits (6|34 = null c, 63|4 = g null) that only the image can
+   settle (the gloss gives "holstein", a nomenclator reading). Against the gloss "disgustirt", run 1 reads
+   "disgu[6d]it": 6d sits where the gloss has "s", and LL = i, 143 = null leave the gloss's "r" unread. This is a
+   cryptanalytic result on a provisional token reading, not a reading of the letter.
+2. **DECODE 4687/4688/4690/4691 (HStAM 4 d Nr. 1234)**, one browser login (`tools/decode_browser_login.js 4687 DIR
+   --listen`; `--fetch-page ImagesList/<id>` turned out to be the global image list, not the record's, so the record
+   pages were fetched through the listener). All 16 full-size images were served (HTTP 200, real JPEGs; sizes and sha1
+   in images/manifest.json, not committed: account-gated). My reading (M, contact sheets and 2 native crops):
+   - **4691 (Nr. 1234_04) is key 255 itself**: the same four leaves as HCPortal 255 (letter table, nomenclator 180-407,
+     endorsement "mit Secretario Lincker 1666 ... 1676").
+   - **4690 (Nr. 1234_03)**: a nomenclator 300-409 (P1, P5), a different letter table 20-199 with symbols (P3), endorsed
+     "Clavis mit dem Obrist Lieutenant Dobely(?) 1668" (P4), and on P2 **"Scala über den Clavem mit Secretarium
+     Linckern"**, a decipher scale (code -> letter) for the Lincker key. `keys/check_scale4690.py` compares the 120 scale
+     entries I read on the top 62% of P2 (20-37, 47-67, 78-98, 110-133, 145-166, LL-ZZ) with key.tsv:
+     `scale entries 120: agree 120, disagree 0`. 128, 148 and 158, which are dashes on the scale and have no entry on
+     key 255 f.13, were added to key.tsv as nulls from this witness. So the letter table now has two period witnesses
+     of the Lincker key (the key sheet and the decipher scale). It stays grade S for this letter, because both are
+     1666-era and the 1672 letter may use a revised table.
+   - **4688 (Nr. 1234_02)**: a Latin cover-word list (Cassell = Nutrix, Hollandt = Diues, ...), no numbers.
+   - **4687 (Nr. 1234_01)**: the folder cover ("Chiffren aller Art 17. Jh."), an endorsement "Chiffre mit dem Envoyé
+     Martine zu Paris", a French note "Le chiffre dont on se sert pour moi va jusqu'a 712, je voudrois y adjouter 713 pour
+     dire 252.258.303.291 [mi ni st ve] ... 716 pour dire ..." (a syllabic chiffre, list not present), and a symbol
+     nomenclator with a letter table.
+   **Result: none of the four records carries a nomenclator reaching 834 or Dennemarck at 601.** The highest list is the
+   Paris chiffre's 712 (+713-716), which is not present as a list, belongs to a different correspondent, and uses
+   syllable values such as 252 = mi. The 1672 nomenclator is not in HStAM 4 d Nr. 1234 as DECODE has it. Not checked: Nr.
+   1236-1238 (no DECODE record in the cached listings), and HStAM 4 d outside the DECODE records.
+
+Requests: de-crypt.org 1 browser login + 1 RecordsView + 4 ImagesList pages (global list) + 25 auto-discovered
+thumbnails (other records; the tool's --max-files cap) + 3 RecordsView + 16 full-size images, one at a time, 1.6 s
+apart, no 403/429/challenge. Vision calls (my own reads): 7.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: unmeasured. No ciphertext.txt, ciphertext.tsv or key.tsv exists. The only committed value is 601 = "Dennemarck" (grade C, glossed 3x on f.4; Cheap test 1). Cheap test 1's "~40 code tokens, ~20 distinct values" was a rough count, and it is an undercount. It excluded 625/774/775 as "section counters", but on a 1000-px preview of image 0003 (this pass, adversarial check, M) 774 and 775 stand inline in the prose with bold glosses above or beside them. It also called f.2 "plain", yet image 0002 carries at least one inline glossed code in its last lines. So any "~3 of ~40 (~7%)" figure is not a measurement. Note that images 0002-0004 are HCPortal image numbers, not checked foliation: 0003 has its binding on the right and faces 0004, so it is a verso.
+Read so far: unmeasured. No reconciled ciphertext.tsv exists; key.tsv (key 255 letter table, S) and a provisional ciphertext_f4runs.tsv (the two f.4 runs, single-eye, M) exist since 2 Oct 2026 (A2-HDK3), 36 tokens: 31 M, 5 U. The only committed value is 601 = "Dennemarck" (grade C, glossed 3x on f.4; Cheap test 1). Cheap test 1's "~40 code tokens, ~20 distinct values" was a rough count, and it is an undercount. It excluded 625/774/775 as "section counters", but on a 1000-px preview of image 0003 (this pass, adversarial check, M) 774 and 775 stand inline in the prose with bold glosses above or beside them. It also called f.2 "plain", yet image 0002 carries at least one inline glossed code in its last lines. So any "~3 of ~40 (~7%)" figure is not a measurement. Note that images 0002-0004 are HCPortal image numbers, not checked foliation: 0003 has its binding on the right and faces 0004, so it is a verso.
 - ff.2-4 (images 0002-0004), every inline code group that carries a bold interlinear or marginal gloss. On the preview these include 651 (by "Cur Brandenburg"), 653, 229 ("Berlin"), 774, 775 ("Ga. Stadt") and the marginal 625 gloss on 0003; on 0004, 756/768, 229, 427 641 ("herzog von Ploen"), 303, 447 and 834; on 0002, the code in its last lines. None of these is pinned code by code - blocker: not-attempted; images at 2600x3944 px are on disk and legible enough that most 3-digit codes visibly carry a gloss, so the gloss coverage is much wider than "1 of 20". Cheap test 1 stopped at a breadth cap, and the iiif_lines.py crop step in its brief (.claude/briefs/runs/2026-09-26-lane-b7-hcp.md, item A) was never pasted. The f4_top/f4_mid crops cited in NOTES are not on disk; next: run `tools/iiif_lines.py --image` on all three images and paste the output. Then do 2 blind Sonnet passes per page on line crops only (6 calls), 1 reconciliation (Usage 6: N reads + 1), `tools/reconcile_passes.py`, ciphertext.tsv and key.tsv from legible glosses only (C/M per value), and `tools/decode_key.py --check`. That is about 7 calls at the AX-COMP2 rate of ~$1.46/call, ~$11
-- f.4 (image 0004), the two dense 2-digit runs and every other 2-digit/doubled-letter group on ff.2-4 (A2-HDK 2 Oct 2026: HCPortal key 255's letter table, 1666, "mit Secretario Lincker", reads both runs in agreement with the letter's own gloss, 21/26 gloss pairs on the 1 Oct readings vs relabelled-table control max 10, 26/26 on native-crop readings; S, see "Known-keys and sibling check" step 5). Still open inside run 1: 6d, LL, 143 against the gloss "stirt", and bb - blocker: not-attempted; the key and images are on disk; next: in the transcription pass, write key 255's letter table as key.tsv (letters and doubled row, nulls 1-20 etc., grade S), decode every 2-digit group with `tools/decode_key.py --check`, and list the groups the 1666 table does not read (a 1672 revision would show there); key_519 is no longer needed as the known-answer test. ~$1 on top of the transcription pass
+- f.4 (image 0004), the two dense 2-digit runs and every other 2-digit/doubled-letter group on ff.2-4 (A2-HDK 2 Oct 2026: HCPortal key 255's letter table, 1666, "mit Secretario Lincker", reads both runs in agreement with the letter's own gloss, 21/26 gloss pairs on the 1 Oct readings vs relabelled-table control max 10, 26/26 on native-crop readings; S, see "Known-keys and sibling check" step 5). Still open inside run 1: 6d, LL, 143 against the gloss "stirt", and bb. A2-HDK3 (2 Oct 2026) wrote key.tsv (197 rows, S; 20 = A, nulls 1-19 etc.) and checked it against the period "Scala über den Clavem mit Secretarium Linckern" in DECODE 4690 (120/120 entries agree); decode_key.py --check passes on the provisional f.4 runs (36 tokens: 31 M, 5 U) - blocker: not-attempted; key.tsv and decode.json are in place; next: in the transcription pass, replace ciphertext_f4runs.tsv with the reconciled ciphertext.tsv for ff.2-4, run `tools/decode_key.py --check` and `--split-check`, and list the 2-digit groups the 1666 table does not read (a 1672 revision would show there). ~$0.5 on top of the transcription pass
 - Every code group still unglossed after the two steps above (count unknown until the transcription exists) - blocker: not-attempted; no key-rebuild, bracketing or context fill has ever been run, so these cannot yet be called open-codes; next: bracket the 3-digit nomenclator against the gloss-pinned values (is 229 "Berlin" < 601 "Dennemarck" < 651/653 "Brandenburg" < 774 "Holland"(?) an alphabetical order?). Fill slots from the clear German/Latin context, grade S only with a matched code+mark control at the letter's own N, then rerun decode_key.py --check. ~$4
-- The 3-digit nomenclator of 1672 (601 Dennemarck, 229 Berlin, groups up to 834). Neither near-date key reads it (A2-HDK 2 Oct 2026: key 255, 1666, runs 180-407 with Dennemarck 184/212 and 229 = Frankreich; DECODE 4692, 1670s, runs 153-363 with Dennemarck 174, Berlin 281). Dänemark 131 sampled 8 of 106 leaves, all clear (Brandt's 1672 reports and the regent's drafts); the undigitised Lyncker files (Preußen 345, 1668; Dänemark 105, 1668; Hamburg 2, 1671-72) are the only same-sender material left - blocker: not-attempted; the gloss-pinned values plus key-rebuild (gap 3) are the in-session route, and a 1672 key for Lyncker would be in HStAM 4 d (Nr. 1234-1238, DECODE 4687-4691 unopened); next: open DECODE 4687/4688/4690/4691 (Nr. 1234, "1600-1699") in one login session and check for a key whose list reaches 834 with Dennemarck at 601, ~$1.5
+- The 3-digit nomenclator of 1672 (601 Dennemarck, 229 Berlin, groups up to 834). Neither near-date key reads it (A2-HDK 2 Oct 2026: key 255, 1666, runs 180-407 with Dennemarck 184/212 and 229 = Frankreich; DECODE 4692, 1670s, runs 153-363 with Dennemarck 174, Berlin 281). Dänemark 131 sampled 8 of 106 leaves, all clear (Brandt's 1672 reports and the regent's drafts); the undigitised Lyncker files (Preußen 345, 1668; Dänemark 105, 1668; Hamburg 2, 1671-72) are the only same-sender material left - blocker: not-attempted; the gloss-pinned values plus key-rebuild (gap 3) are the in-session route, DECODE 4687/4688/4690/4691 (HStAM 4 d Nr. 1234) opened 2 Oct 2026 (A2-HDK3): 4691 is key 255 itself, 4690 a 1668 key (nomenclator 300-409) plus the Lincker decipher scale, 4688 a Latin cover-word list, 4687 a Paris chiffre note "va jusqu'a 712"; none reaches 834 or has Dennemarck at 601. Nr. 1236-1238 have no DECODE record in the cached listings, and whether Arcinsys has them digitised is unchecked; next: the gloss-pinned values plus key-rebuild (gap 3), after the transcription pass; a lookup of HStAM 4 d Nr. 1236-1238 in Arcinsys for digitised keys of 1670-72 can run alongside, ~$1
 
 ## Escalation (1 Oct 2026)
 - [x] siblings: done 2 Oct 2026 (NEXT-HDK, "Siblings lookup" above). HCPortal has only record 494 for 4f Dänemark, and its keys include no 4f Dänemark key. Arcinsys has Nr. 125 complete at 6 images, so nothing is missing; the cover and endorsement name the sender Lyncker and the recipient Chancellor Vultejus (M). The cached DECODE listings hold no 4 f record. Leads handed on: Dänemark 131 (digitised, same series, gap 4); two near-date chancery keys for known-keys below.
 - [ ] clear-pages: not done. The letter's own decipherment is the bold glossing on ff.2-4. It includes a marginal gloss beside the first dense f.4 run, which neither Cheap test 1 nor the classifier used. Only 601 is pinned. Whether the glossing hand is period or modern is unsettled (While waiting bullet 3), and that decides whether gloss values stay C or are a key-source H. The rest of Nr. 125 was never checked for a clear copy or minute. Planned: the gloss read in the transcription pass plus interlinear_align.py on each run.
-- [x] known-keys: done 2 Oct 2026 (A2-HDK, "Known-keys and sibling check"). HCPortal key 255 (HStAM 4 d Nr. 1234 ff.13-16, endorsed "Clavis ... mit Secretario Lincker 1666") reads the letter's 2-digit letter cipher against its own gloss (21/26 vs control max 10 on pre-key readings; S); its nomenclator (180-407) does not read the 3-digit groups, nor does DECODE 4692 (Nr. 1235, 1670s, 153-363, names Linker 190, Vultejus 246, Resident Brand 231). Still unopened: DECODE 4687/4688/4690/4691 (Nr. 1234), key_519 and hcportal_522 (superseded for the letter table by key 255).
+- [x] known-keys: done 2 Oct 2026 (A2-HDK, "Known-keys and sibling check"). HCPortal key 255 (HStAM 4 d Nr. 1234 ff.13-16, endorsed "Clavis ... mit Secretario Lincker 1666") reads the letter's 2-digit letter cipher against its own gloss (21/26 vs control max 10 on pre-key readings; S); its nomenclator (180-407) does not read the 3-digit groups, nor does DECODE 4692 (Nr. 1235, 1670s, 153-363, names Linker 190, Vultejus 246, Resident Brand 231). DECODE 4687/4688/4690/4691 (Nr. 1234) opened 2 Oct 2026 (A2-HDK3): no nomenclator reaching 834; 4691 = key 255; 4690 holds a period decipher scale of the Lincker letter table that agrees with key.tsv on all 120 entries read. key.tsv written (197 rows, S). Not opened: key_519 and hcportal_522 (superseded for the letter table by key 255); HStAM 4 d Nr. 1236-1238.
 - [ ] print: not done. Only one OpenAlex and one Semantic Scholar query were run (intake 5-6, 0 hits). No edition, calendar or documentary series was searched. Candidates come from the letter's own content (an envoy writing from Hamburg 4/14 May 1672 to a Hessian chancellor about the Danish king, Brandenburg, the Dano-Brunswick foedus and the Plön duke): Urkunden und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm von Brandenburg, and Danish state-paper calendars. Sender and recipient are now named (Lyncker to Chancellor Vultejus, M, siblings lookup 2 Oct 2026), which gives searchable names. Planned: tools/print_check.py with phrases from the transcribed clear prose, ~$2-3.
-- [ ] key-rebuild: never tried. No transcription and no key.tsv exist. Planned: gloss alignment, then nomenclator bracketing and LM context fill with a matched control on any S claim, ~$4.
+- [ ] key-rebuild: never tried. No transcription exists; key.tsv holds only the letter table (2 Oct 2026). Planned: gloss alignment, then nomenclator bracketing and LM context fill with a matched control on any S claim, ~$4.
 - [ ] image-check: not done. No sign-by-sign transcription exists. The crops f4_top.jpg/f4_mid.jpg cited in Cheap test 1 are not on disk, and no iiif_lines.py output was pasted. The doubtful tokens "6d", "bb" and "96" in the f.4 runs, and the 625/774/775 "section counter" exclusion, need re-reading against the native image. Planned: as gap 1, ~$11.
 - [ ] retry: nothing to retry yet, because no key extension exists. Planned: after the gloss read and the key-rebuild, rerun every code group and every M lead through decode_key.py and regrade per token.
-Verdict: keep going: 4 internal gaps; cheapest next: write key 255's letter table as key.tsv and open DECODE 4687/4688/4690/4691 in one login for a 1672 nomenclator reaching 834 (~$1.5); the step that moves the reading is the 3-page transcription and gloss pass with key 255 applied to every 2-digit group, ~$11
+Verdict: keep going: 4 internal gaps; cheapest next: look up HStAM 4 d Nr. 1236-1238 in Arcinsys for a digitised key of 1670-72 reaching 834 (~$1); the step that moves the reading is the 3-page transcription and gloss pass (iiif_lines.py crops, 2 blind passes per page + 1 reconciliation) with key.tsv applied to every 2-digit group, ~$11
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
 

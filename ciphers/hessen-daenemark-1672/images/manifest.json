@@ -99,5 +99,165 @@
     "fetched": "2 Oct 2026",
     "file": null,
     "note": "sample of 8 (0003,0016,0029,0042,0055,0068,0081,0094) read on 1000-px contact sheets, not committed"
+  },
+  {
+    "source": "DECODE record 4687 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4687_I27582_P1.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "3006x4528",
+    "bytes": 1137866,
+    "sha1": "34ad0ea01ef5677f49a08f7bf9e8b651381d52cb",
+    "note": "account-gated source, not committed; Nr. 1234_01: cover \"Chiffren aller Art 17. Jh.\"; \"Chiffre mit dem Envoyé Martine zu Paris\" (P2); French note \"Le chiffre ... va jusqu'a 712\", additions 713-716 (P3); a symbol nomenclator and a letter table 20-..., endorsed \"Clavis mit ... Volley(?)\" (P4-P5)"
+  },
+  {
+    "source": "DECODE record 4687 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4687_I27582_P2.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2822x2220",
+    "bytes": 965850,
+    "sha1": "9b791c862ef420ee6cda76c053c0d34a92bfdd68",
+    "note": "account-gated source, not committed; Nr. 1234_01: cover \"Chiffren aller Art 17. Jh.\"; \"Chiffre mit dem Envoyé Martine zu Paris\" (P2); French note \"Le chiffre ... va jusqu'a 712\", additions 713-716 (P3); a symbol nomenclator and a letter table 20-..., endorsed \"Clavis mit ... Volley(?)\" (P4-P5)"
+  },
+  {
+    "source": "DECODE record 4687 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4687_I27582_P3.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2284x2910",
+    "bytes": 762667,
+    "sha1": "11ed9d6dbe4f94d4252f96ddf72fa1fa682fe547",
+    "note": "account-gated source, not committed; Nr. 1234_01: cover \"Chiffren aller Art 17. Jh.\"; \"Chiffre mit dem Envoyé Martine zu Paris\" (P2); French note \"Le chiffre ... va jusqu'a 712\", additions 713-716 (P3); a symbol nomenclator and a letter table 20-..., endorsed \"Clavis mit ... Volley(?)\" (P4-P5)"
+  },
+  {
+    "source": "DECODE record 4687 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4687_I27582_P4.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2618x2424",
+    "bytes": 781156,
+    "sha1": "511ebef311f450c6eddd350065ca1d259e1a779c",
+    "note": "account-gated source, not committed; Nr. 1234_01: cover \"Chiffren aller Art 17. Jh.\"; \"Chiffre mit dem Envoyé Martine zu Paris\" (P2); French note \"Le chiffre ... va jusqu'a 712\", additions 713-716 (P3); a symbol nomenclator and a letter table 20-..., endorsed \"Clavis mit ... Volley(?)\" (P4-P5)"
+  },
+  {
+    "source": "DECODE record 4687 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4687_I27582_P5.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2618x2398",
+    "bytes": 904061,
+    "sha1": "d700ab9f6fa8ec05406a1fef210ef7bf632798a1",
+    "note": "account-gated source, not committed; Nr. 1234_01: cover \"Chiffren aller Art 17. Jh.\"; \"Chiffre mit dem Envoyé Martine zu Paris\" (P2); French note \"Le chiffre ... va jusqu'a 712\", additions 713-716 (P3); a symbol nomenclator and a letter table 20-..., endorsed \"Clavis mit ... Volley(?)\" (P4-P5)"
+  },
+  {
+    "source": "DECODE record 4688 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4688_I27588_P1.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2658x4072",
+    "bytes": 1525058,
+    "sha1": "bd396282b0ab2abc1fb4502aa4c796acada1f9a8",
+    "note": "account-gated source, not committed; Nr. 1234_02: Latin cover-word list (Cassell = Nutrix, Hollandt = Diues ...), endorsed \"Clavis mit ...\"; no numbers"
+  },
+  {
+    "source": "DECODE record 4688 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4688_I27588_P2.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2650x4038",
+    "bytes": 1408937,
+    "sha1": "fe9f2ef35ff8203c845e398b825b3c4a6aeee39b",
+    "note": "account-gated source, not committed; Nr. 1234_02: Latin cover-word list (Cassell = Nutrix, Hollandt = Diues ...), endorsed \"Clavis mit ...\"; no numbers"
+  },
+  {
+    "source": "DECODE record 4690 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4690_I27590_P1.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2686x4426",
+    "bytes": 1887600,
+    "sha1": "e6b819eee5af8f8fbc86adf996ab7cb490fa6382",
+    "note": "account-gated source, not committed; Nr. 1234_03: nomenclator 300-409 (P1, P5), \"Scala über den Clavem mit Secretarium Linckern\" (P2, decipher scale of key 255 letter table), a letter table 20-199 + symbols (P3), endorsed \"Clavis mit dem Obrist Lieutenant Dobely(?) 1668\" (P4)"
+  },
+  {
+    "source": "DECODE record 4690 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4690_I27590_P2.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2698x4376",
+    "bytes": 1678596,
+    "sha1": "703bd9ad5cb566b386a9fb77651fdd5a902aeda7",
+    "note": "account-gated source, not committed; Nr. 1234_03: nomenclator 300-409 (P1, P5), \"Scala über den Clavem mit Secretarium Linckern\" (P2, decipher scale of key 255 letter table), a letter table 20-199 + symbols (P3), endorsed \"Clavis mit dem Obrist Lieutenant Dobely(?) 1668\" (P4)"
+  },
+  {
+    "source": "DECODE record 4690 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4690_I27590_P3.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2726x4404",
+    "bytes": 1842263,
+    "sha1": "fab8810de45d9df29a8ed08ff5a909a7ea045b4c",
+    "note": "account-gated source, not committed; Nr. 1234_03: nomenclator 300-409 (P1, P5), \"Scala über den Clavem mit Secretarium Linckern\" (P2, decipher scale of key 255 letter table), a letter table 20-199 + symbols (P3), endorsed \"Clavis mit dem Obrist Lieutenant Dobely(?) 1668\" (P4)"
+  },
+  {
+    "source": "DECODE record 4690 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4690_I27590_P4.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2682x4414",
+    "bytes": 1502739,
+    "sha1": "6b6632d6e5a1e76c98ceb85a5ddfa0e0e2caae0c",
+    "note": "account-gated source, not committed; Nr. 1234_03: nomenclator 300-409 (P1, P5), \"Scala über den Clavem mit Secretarium Linckern\" (P2, decipher scale of key 255 letter table), a letter table 20-199 + symbols (P3), endorsed \"Clavis mit dem Obrist Lieutenant Dobely(?) 1668\" (P4)"
+  },
+  {
+    "source": "DECODE record 4690 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4690_I27590_P5.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2634x4382",
+    "bytes": 1655928,
+    "sha1": "8cceafd8c6c6eeb0e3f2c5d026486ccf47241b7f",
+    "note": "account-gated source, not committed; Nr. 1234_03: nomenclator 300-409 (P1, P5), \"Scala über den Clavem mit Secretarium Linckern\" (P2, decipher scale of key 255 letter table), a letter table 20-199 + symbols (P3), endorsed \"Clavis mit dem Obrist Lieutenant Dobely(?) 1668\" (P4)"
+  },
+  {
+    "source": "DECODE record 4691 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4691_I27592_P1.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2666x4424",
+    "bytes": 1803271,
+    "sha1": "b91319b427ab2f8c6406cb55541db5efb2ffa744",
+    "note": "account-gated source, not committed; Nr. 1234_04: the same four leaves as HCPortal key 255 (letter table, nomenclator 180-407, endorsement \"mit Secretario Lincker 1666\")"
+  },
+  {
+    "source": "DECODE record 4691 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4691_I27592_P2.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2642x4424",
+    "bytes": 1667831,
+    "sha1": "80dfd7fc002758613c99b7b2dbb4f00788f5f6de",
+    "note": "account-gated source, not committed; Nr. 1234_04: the same four leaves as HCPortal key 255 (letter table, nomenclator 180-407, endorsement \"mit Secretario Lincker 1666\")"
+  },
+  {
+    "source": "DECODE record 4691 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4691_I27592_P3.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2698x4438",
+    "bytes": 1754873,
+    "sha1": "ff41cca04b1e7eba60d0aaae0c1a03620fccbb7c",
+    "note": "account-gated source, not committed; Nr. 1234_04: the same four leaves as HCPortal key 255 (letter table, nomenclator 180-407, endorsement \"mit Secretario Lincker 1666\")"
+  },
+  {
+    "source": "DECODE record 4691 (HStAM 4 d Nr. 1234), full-size image via one browser login, --listen, A2-HDK3",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4691_I27592_P4.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "size": "2686x4426",
+    "bytes": 1694201,
+    "sha1": "08f41e04ec1dad3d903536f153a2128a9518bd97",
+    "note": "account-gated source, not committed; Nr. 1234_04: the same four leaves as HCPortal key 255 (letter table, nomenclator 180-407, endorsement \"mit Secretario Lincker 1666\")"
   }
 ]

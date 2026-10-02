@@ -1,0 +1,121 @@
+code	value	note
+20	a	
+21	f	
+22	b	
+23	g	
+24	c	
+25	h	
+26	d	
+27	i	
+28	e	
+29	k	
+30	a	
+31	f	
+32	b	
+33	g	
+34	c	
+35	h	
+36	d	
+37	i	
+47	i	
+48	e	
+49	k	
+50	a	
+51	f	
+52	b	
+53	g	
+54	c	
+55	h	
+56	d	
+57	i	
+58	e	
+59	k	
+60	a	
+61	f	
+62	b	
+63	g	
+64	c	
+65	h	
+66	d	
+67	i	
+78	p	
+79	u	
+80	l	
+81	q	
+82	m	
+83	r	
+84	n	
+85	s	
+86	o	
+87	t	
+88	p	
+89	u	
+90	l	
+91	q	
+92	m	
+93	r	
+94	n	
+95	s	
+96	o	
+97	t	
+98	p	
+110	l	
+111	q	
+112	m	
+113	r	
+114	n	
+115	s	
+116	o	
+117	t	
+118	p	
+119	u	
+120	w	
+121	NULL	
+122	x	
+123	NULL	
+124	y	
+125	NULL	
+126	z	
+127	NULL	
+128	NULL	
+129	NULL	
+130	w	
+131	NULL	
+132	x	
+133	NULL	
+145	NULL	
+146	z	
+147	NULL	
+148	NULL	
+149	NULL	
+150	w	
+151	NULL	
+152	x	
+153	NULL	
+154	y	
+155	NULL	
+156	z	
+157	NULL	
+158	NULL	
+159	NULL	
+160	w	
+161	NULL	
+162	x	
+163	NULL	
+164	y	
+165	NULL	
+166	z	
+LL	i	doubled column
+MM	k	doubled column
+NN	l	doubled column
+OO	m	doubled column
+PP	n	doubled column
+QQ	o	doubled column
+RR	p	doubled column
+SS	q	doubled column
+TT	r	doubled column
+UU	s	doubled column
+WW	t	doubled column
+XX	u	doubled column
+YY	w	doubled column
+ZZ	x	doubled column
