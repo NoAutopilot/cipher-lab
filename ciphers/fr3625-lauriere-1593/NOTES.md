@@ -1198,3 +1198,70 @@ of key57); a keyed-span-only judge (score only the resolved words) to fix the po
 Credit: S. Tomokiyo (cryptiana.web.fc2.com/code/nevers.htm) for no.57 and the fol.58 citation; setsunaatto (issue 13,
 PR 15) and D. Bourdeau for the no.55 reading and the key corroboration this section is read against. Cost: per the
 parent. Status: `found-solved` (line 1, set by WEBCHECK, not by this job).
+
+## LAU-KEYSWAP (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-lau-keyswap.md`. `date -u` at claim: 2 Oct 2026 00:18 UTC. Disk only:
+0 network requests, 0 vision calls. Status word stays `found-solved` (line 1); any reading here is N0 (rule 10), and
+none is written.
+
+### What the correction is, and why there was nothing to swap
+
+cyphersolver PR 15's thread (quoted in the Web and blog check section above, as rendered there): D. Bourdeau, 30 Sept
+2026, "The sheet has μ under C and the c-form under H, and our line in key57.txt had them the wrong way round";
+setsunaatto, "I read μ under C and the c-form under H, and no. 55 needs it that way round". Both signs and both
+letters are named unambiguously: the correction is to the **letter alphabet** of fr.3995 no.57 (the per-letter
+homophone band NX-LAU4's eye-check describes beside the name symbols and the Doubles/Nulles, NOTES.md line "symbols-
+for-names plus a separate letter-homophone alphabet"), and it lives in Bourdeau's own `key57.txt`.
+
+This folder's `key57/key57.tsv` has no alphabet band: its 136 rows are 57 syllable, 16 double and 63 word codes
+(numerals 1-353), and nothing else -- NX-LAU3 transcribed the numeral strips and the f201 name-symbol table and never
+the alphabet. Searched on disk for any other transcription of it: none (`grep -n -i "alphabet" NOTES.md` hits
+only NX-LAU4's design description and the WEBCHECK/LAU-U3U4 mentions of PR 15; the only μ on disk is in Bourdeau's
+`bourdeau_ref/ct_3625_55.txt`, where no.55 carries it twice as a standalone sign, "24n μ c y" and "Pro μ 92", and in
+`align/TOKEN_MAP.tsv` for no.10). So a `key57_v2.tsv` "with the two letter values swapped" would be byte-identical
+to `key57.tsv`. **No `key57_v2.tsv` was written**: a file named v2 that carries no correction would read to the next
+worker as if it did (the brief's own "do not guess a different swap" applied by extension -- the conservative option,
+logged here per the common tail). Building a real v2 needs the alphabet band itself, from either source outside this
+brief's scope: (a) the f.102 alphabet strip read from the crops already in `key57/` (a vision call), or (b)
+Bourdeau's corrected `key57.txt` as merged in PR 15 (a network fetch; MIT code / CC BY 4.0 text, cite it).
+
+Two further reasons the swap could not have moved either number even with an alphabet row present, checked in the
+script rather than assumed: `control_key57.py`'s `decode()` drops every non-integer sign (`int(s)` fails ->
+`continue`), and `f58s_ciphertext.tsv`'s 117 symbol tokens carry 45 distinct `SYM:` names (omega, lambda, pi,
+triangle, at, ...), none of them mu or c-form -- the transcribers named shapes without reference to the key sheet, so
+mapping μ onto one of them would itself be a guess. And the 12 anchors of the no.55 gate are ten numeral codes or
+compounds plus the XX and que-mark symbols; no anchor is a letter.
+
+### The numbers, side by side (v2 = v1 by construction, not a second measurement)
+
+Both runs re-executed unchanged from disk; the U4 output is byte-identical to the committed
+`key57/f58s_gate_output_nogloss.txt` (diff empty), so no new output file is added (rule 7 re-derivation holds).
+
+| gate | v1 (LAU-U3U4 / NX-LAU3, on record) | v1 re-run 2 Oct 2026 | v2 (PR 15 swap) |
+|---|---|---|---|
+| U4: key57 on fr.3985 f.58r, gloss rows removed, 20 seeds | real -0.930; shuffle mean -0.957, max -0.917, 3 of 20 better; judge FAIL (real_p05 -0.866); coverage 100/251 = 0.398; GATE FAIL | identical: real -0.930; mean -0.957; max -0.917; 3 of 20 better; FAIL; 0.398; GATE FAIL | no row to swap, no symbol decoded: identical to v1 by construction |
+| NX-LAU3: 12 anchors of fr.3625 no.55 | 4/12 (346, 59, 25, XX); shuffle mean 0.072, p99 1, max 2; GATE FAIL (need >=6) | identical: 4/12, mean 0.072, p99 1, max 2, GATE FAIL | no letter among the 12 anchors: 4/12 by construction |
+
+Judge lines, both runs: `REAL decode: score=-0.930  null_p99=-1.902  real_p05=-0.866  judge=FAIL` (U4); the anchor
+gate has no judge line (an anchor count).
+
+### What the correction does or does not change
+
+One sentence: the PR 15 alphabet swap changes nothing in this folder's two gates, because neither gate ever sees a
+letter -- it is not the cause of NX-LAU3's 4/12 or of LAU-U3U4's miss, and the two suspects named in LAU-U3U4 stand
+unchanged: key57.tsv's word-bank coverage (38 of 138 f.58r numerals are codes the table never transcribed) and the
+whole-letter judge's low power. Per rule 3 this is a non-test for the alphabet question, not a negative (the gate's
+statistic cannot vary with the manipulation).
+
+Observation from the two files on disk, not tested here (Usage 7): of the 8 anchor misses, 7 are word-bank codes or
+compounds, and three of them (335 = le Roy, 141 = soit, 288 = Catholique) are Bourdeau's position-based glosses of
+R1 "que le Roy soit Catholique" over "✗ 335 141 288" in his pre-29-Sept `key_lauriere.txt`; key57.tsv's two agreeing
+passes read 335 = soit and 141 = catholique, and issue 13's reading of run 2 writes "[le Roy] soit catholique" with
+le Roy as a bracketed name symbol. If a parent wants a known-answer anchor set for a key57.tsv completion pass, the
+anchors should be re-derived from issue 13's per-run plaintext against `bourdeau_ref/ct_3625_55.txt`, not from the
+superseded `key_lauriere.txt` -- a script job, no vision.
+
+Credit: setsunaatto (github.com/setsunaatto/cyphersolver; cyphersolver issue 13 and PR 15) for the no.55 reading and
+the alphabet correction; D. Bourdeau (cyphersolver, PR 15 thread) for the corroboration and the correction's wording;
+S. Tomokiyo for cataloguing key no.57. Cost: see the lane ledger. Hosts: none.
