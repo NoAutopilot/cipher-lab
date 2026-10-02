@@ -1,0 +1,8 @@
+held_out=comentariosdelag01sanfuoft.txt.gz N=245 samples=200 real_p05=-0.969 false_negatives=2/200 (1.0%)
+held_out=comentariosdelag02sanfuoft.txt.gz N=245 samples=200 real_p05=-0.985 false_negatives=0/200 (0.0%)
+held_out=elembaxadorpolit00cara.txt.gz N=245 samples=200 real_p05=-0.971 false_negatives=38/200 (19.0%)
+held_out=A092002.txt.gz N=245 samples=200 real_p05=-0.968 false_negatives=85/200 (42.5%)
+held_out=A022134.txt.gz N=245 samples=200 real_p05=-0.960 false_negatives=131/200 (65.5%)
+held_out=A11100924.txt.gz N=245 samples=200 real_p05=-0.956 false_negatives=91/200 (45.5%)
+held_out=noticiashistoria00vera.txt.gz N=245 samples=200 real_p05=-0.932 false_negatives=158/200 (79.0%)
+TOTAL false-negative rate: 505/1400 (36.1%); per-fold spread 0.0-79.0% (7 folds)

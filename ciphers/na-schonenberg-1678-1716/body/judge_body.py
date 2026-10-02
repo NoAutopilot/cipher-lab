@@ -5,14 +5,16 @@ Texts: KEY = reading_tokens.tsv's key-regenerated letters for L01-L14 (U codes d
 body/reading_body.txt's SENSE lines with the bracketed inferred letters included (grade I letters count here).
 Controls: 20 letter-shuffled nulls of KEY (same letters, order destroyed) and 20 shuffled-target decodes (group order shuffled
 within each line, decoded with key.tsv, U dropped -- the ARM-C1 check: a PASS there voids the judge as a gate for this family at
-this N). Corpora: es17c7 (nearest era/register on disk, 1634-1648 letters) and the spec default es (es17, 1605-1626 fiction).
+this N). Corpora: es18 (GAPS5, 2 Oct 2026: era-matched 1690-1725 letters/gazette/diplomatic prose, tools/data/es18), es17c7 (1634-1648 letters) and
+the spec default es (es17, 1605-1626 fiction); --corpora picks the set, one body/spec_body_<key>.json per corpus.
 Headline rows also run through the CLI (tools/judge_plaintext.py <spec variant> --text ...) and are printed verbatim (rule 7).
-Usage: python3 body/judge_body.py [--shuffles 20] [--seed 1]   (writes body/judge_body_results.tsv)
+Usage: python3 body/judge_body.py [--shuffles 20] [--seed 1] [--corpora es18,es17c7,es]   (writes body/judge_body_results.tsv)
 """
 import argparse, csv, os, random, re, subprocess, sys
 HERE = os.path.dirname(os.path.abspath(__file__)); T = os.path.dirname(HERE); ROOT = os.path.dirname(os.path.dirname(T))
 sys.path.insert(0, os.path.join(ROOT, 'tools')); import judge_plaintext as J
-ap = argparse.ArgumentParser(); ap.add_argument('--shuffles', type=int, default=20); ap.add_argument('--seed', type=int, default=1); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument('--shuffles', type=int, default=20); ap.add_argument('--seed', type=int, default=1)
+ap.add_argument('--corpora', default='es18,es17c7,es', help='LANG_CORPORA keys with a body/spec_body_<key>.json each (GAPS5 added es18, 2 Oct 2026)'); a = ap.parse_args()
 BODY = ['L%02d' % i for i in range(1, 15)]
 toks = [r for r in csv.DictReader(open(os.path.join(T, 'reading_tokens.tsv'), encoding='utf-8'), delimiter='\t') if r['line'] in BODY]
 key_text = ''.join(r['value'] for r in toks if r['value'] != '[?]')
@@ -35,7 +37,7 @@ def decode_shuffled(rng):
     return ''.join(v for v in out if v != '[?]')
 print('KEY   N=%d %s' % (len(J.fold(key_text)), key_text)); print('GLOSS N=%d %s' % (len(J.fold(gloss_text)), gloss_text)); print('SENSE N=%d %s' % (len(J.fold(sense_text)), sense_text))
 rows = []
-for corp in ('es17c7', 'es'):
+for corp in a.corpora.split(','):
     spec_path = os.path.join(HERE, 'spec_body_%s.json' % corp)
     print('\n=== corpus %s (CLI, verbatim) ===' % corp)
     for name, txt in (('KEY', key_text), ('GLOSS', gloss_text), ('SENSE', sense_text)):

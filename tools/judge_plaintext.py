@@ -94,6 +94,24 @@ LANG_CORPORA = {
     # leave-one-file-out fold check more, and more varied, folds. Does not replace es17c (kept as its own key
     # per CLAUDE.md rule 3's "second/third attempt" convention -- a wider corpus is new material, not a tuning
     # of the same knob). See tools/data/es17c7/README.md.
+    # es18 (2 Oct 2026, GAPS5-na-schonenberg-1678-1716, account-4): 1690-1725 Spanish letters, gazette and
+    # diplomatic prose -- San Felipe's Comentarios de la guerra de Espana I-II (1700-1725, 1792 print), Caraffa's
+    # El embaxador politico-christiano (1691), Crisol de la espanola lealtad (1708), Nuevo estilo y formulario de
+    # escrivir cartas missivas (c.1700), Gaceta de Madrid 1710, Vera Tassis's Noticias historiales (1690) -- for
+    # na-schonenberg-1678-1716 (a 1702-1716 Spanish letter), which es17c7 (1634-1648) is 55-80 years off. The five
+    # original printings are long-s repaired (tools/data/es18/build.py). See tools/data/es18/README.md for the
+    # leave-one-file-out false-negative rate and per-fold spread at N=245 beside es17c7's -- read it before trusting
+    # a FAIL/PASS. "es" stays the default; a spec opts in with "judge": {"language": "es18", ...}.
+    "es18": [DATA / "es18" / f for f in ("comentariosdelag01sanfuoft.txt.gz", "comentariosdelag02sanfuoft.txt.gz",
+             "elembaxadorpolit00cara.txt.gz", "A092002.txt.gz", "A022134.txt.gz", "A11100924.txt.gz",
+             "noticiashistoria00vera.txt.gz")],
+    # es18p: the five 1690-1710 original printings of es18 only (period orthography, long-s repaired), without the two
+    # 1792-print San Felipe volumes that dominate es18's model (49% of its letters, modernised spelling, cleaner OCR)
+    # and set its real_p05 from their own register -- es18's own fold check (tools/data/es18/README.md) false-negatives
+    # the held-out period originals at 19-79% against that threshold. Same fold check, same README; read both before
+    # trusting a FAIL/PASS from either key.
+    "es18p": [DATA / "es18" / f for f in ("elembaxadorpolit00cara.txt.gz", "A092002.txt.gz", "A022134.txt.gz",
+              "A11100924.txt.gz", "noticiashistoria00vera.txt.gz")],
     "es17c7": [DATA / "es17c7" / "memorialhistri13realuoft.txt.gz", DATA / "es17c7" / "memorialhistri14realuoft.txt.gz",
                DATA / "es17c7" / "memorialhistri15realuoft.txt.gz", DATA / "es17c7" / "memorialhistri16realuoft.txt.gz",
                DATA / "es17c7" / "memorialhistri17realuoft.txt.gz", DATA / "es17c7" / "memorialhistri18realuoft.txt.gz",

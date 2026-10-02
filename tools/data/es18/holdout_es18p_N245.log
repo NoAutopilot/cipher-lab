@@ -1,0 +1,6 @@
+held_out=elembaxadorpolit00cara.txt.gz N=245 samples=200 real_p05=-0.942 false_negatives=59/200 (29.5%)
+held_out=A092002.txt.gz N=245 samples=200 real_p05=-0.947 false_negatives=116/200 (58.0%)
+held_out=A022134.txt.gz N=245 samples=200 real_p05=-0.944 false_negatives=148/200 (74.0%)
+held_out=A11100924.txt.gz N=245 samples=200 real_p05=-0.931 false_negatives=143/200 (71.5%)
+held_out=noticiashistoria00vera.txt.gz N=245 samples=200 real_p05=-0.952 false_negatives=135/200 (67.5%)
+TOTAL false-negative rate: 601/1000 (60.1%); per-fold spread 29.5-74.0% (5 folds)
