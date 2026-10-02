@@ -309,8 +309,8 @@ P35	6	105	num	105		di	single
 P35	7	41	num	41		nf	conflict:d
 P35	8	46	num	46		ans	conflict:s
 P36	0	97	num	97		en	conflict:e
-P36	1	58	num	58		av	single
-P36	2	221	num	221		oir	conflict:se
+P36	1	58	num	58		avo	single
+P36	2	221	num	221		irse	conflict:se
 P37	0	30	num	30		a	agrees
 P37	1	116	num	116		g	agrees
 P37	2	34	num	34		ee	conflict:de

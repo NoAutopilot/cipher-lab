@@ -24,7 +24,7 @@ value	meaning	n	agree	others
 54	ct	3	1	ha:1,nt:1
 56	l	6	2	in:1,uc:1,ve:1,un:1
 57	ait	1	1	
-58	av	1	1	
+58	avo	1	1	
 65	ab	1	1	
 66	ba	1	1	
 67	be	4	4	
@@ -93,7 +93,7 @@ value	meaning	n	agree	others
 213	ma	4	2	ri:1,s:1
 214	nde	3	1	oc:1,re:1
 220	sa	6	2	en:1,he:1,ite:1,ma:1
-221	se	16	5	sse:3,c:1,de:1,ese:1,oir:1,qu:1,roy:1,s:1,us:1
+221	se	16	5	sse:3,c:1,de:1,ese:1,irse:1,qu:1,roy:1,s:1,us:1
 223	c	3	1	me:1,son:1
 224	su	1	1	
 232	il	2	1	la:1

@@ -51,7 +51,7 @@ PAIRS = [
     ('P33', 'f66L', [288], "en 2e Nopces le Prince Francois Farnese", {}, [290]),
     ('P34', 'f66L', [311, 332], "le Duc de Parme Regnant frere du deffunct", {}, []),
     ('P35', 'f66L', [341, 352], "Elle n'a pas eu d'Infans", {}, []),
-    ('P36', 'f66L', [360], "en avoir", {}, []),
+    ('P36', 'f66L', [360], "en avoir se", {}, []),
     ('P37', 'f66L', [367], "agee de 44 ans", {}, [371]),
     ('P38', 'f66R', [9], "quoyque ce Dernier Duc n'ait que 36", {}, [23]),
     ('P39', 'f66R', [33], "le Prince Antoine de Parme", {}, []),

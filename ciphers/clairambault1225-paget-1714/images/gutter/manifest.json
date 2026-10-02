@@ -1,0 +1,172 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f66Lg_L01.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    221,
+    340,
+    426
+   ],
+   "lines_in_crop": 3,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L02.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    386,
+    340,
+    584
+   ],
+   "lines_in_crop": 3,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L03.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    544,
+    340,
+    791
+   ],
+   "lines_in_crop": 3,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L04.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    751,
+    340,
+    1016
+   ],
+   "lines_in_crop": 3,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L05.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    976,
+    340,
+    1219
+   ],
+   "lines_in_crop": 3,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L06.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    1179,
+    340,
+    1463
+   ],
+   "lines_in_crop": 3,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L07.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    1423,
+    340,
+    1662
+   ],
+   "lines_in_crop": 3,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f66Lg_L08.jpg",
+   "source_url": "",
+   "source_file": "f66R.jpg",
+   "box": [
+    0,
+    1622,
+    340,
+    1881
+   ],
+   "lines_in_crop": 3,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 72,
+    "distance": 40,
+    "prominence": 30.0
+   },
+   "date": "02 Oct 2026"
+  }
+ ]
+}
