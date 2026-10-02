@@ -5636,3 +5636,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 21:28 | GAPS8-na-janssens-java-1811 (account-4) | claim: na-janssens-java-1811, Verdict step: No.4 set (204R raw, 205R-207L gloss, 208R-209L plain copy) transcribe + align, plain copy sealed as control; box ends 22:43 UTC
 2026-10-02 21:28 | GAPS10-na-suriname-map-1781 (account-4) | claim: na-suriname-map-1781, Verdict step: align 2061 entries vs AMH p.2218 summary, pre-registered period-Dutch candidates, 2 controls x 20 seeds; disk only
 2026-10-02 21:28 | CLOSER-11 (account-4) | done: CLOSER-11 archived 6 of 6 (refused: none): session_01PQmV6cry64cf4biumTV58v session_01XtfNcknkAp8DcjUgEs7CZo session_01SkL45rywG46ZNziftN1CHa session_01GHnMCYaxG8AF8LRqHXNMpj session_01ByZvaseAZDwD2vtqYkkTe2 session_01Lhy5LsQ8LVpSxxD83C7PRy
+2026-10-02 21:28 | GAPS9-moray-wood-1568 (account-4) | claim: moray-wood-1568 Verdict step Zz gap Wood-line test (R2989); cap USD 7.5, box 40 min ends 22:09 UTC
