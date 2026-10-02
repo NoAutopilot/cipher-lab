@@ -3,12 +3,12 @@
   {
    "crop": "f185v_L01_s1.jpg",
    "source_url": "",
-   "source_file": "src_f190_1850_1300_1700_260.jpg",
+   "source_file": "src_f190_1850_1240_2350_200.jpg",
    "box": [
     0,
-    70,
+    50,
     1250,
-    170
+    150
    ],
    "lines_in_crop": 1,
    "band": 1,
@@ -19,7 +19,7 @@
     "distance": 0,
     "prominence": 0.0,
     "centres_given": [
-     120
+     100
     ]
    },
    "date": "02 Oct 2026"
@@ -27,12 +27,12 @@
   {
    "crop": "f185v_L01_s2.jpg",
    "source_url": "",
-   "source_file": "src_f190_1850_1300_1700_260.jpg",
+   "source_file": "src_f190_1850_1240_2350_200.jpg",
    "box": [
-    450,
-    70,
-    1700,
-    170
+    1100,
+    50,
+    2350,
+    150
    ],
    "lines_in_crop": 1,
    "band": 1,
@@ -43,7 +43,7 @@
     "distance": 0,
     "prominence": 0.0,
     "centres_given": [
-     120
+     100
     ]
    },
    "date": "02 Oct 2026"

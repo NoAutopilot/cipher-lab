@@ -1,0 +1,22 @@
+passage	pos	sign_id	alt	conf	note
+f185v_L01	1	X_NEW	T49	M	square with central dot; prose before run: "tto ciò"
+f185v_L01	2	T70	T84	M	up-triangle with bar/tail below
+f185v_L01	3	X_NEW		M	plain 8 shape
+f185v_L01	4	X_S		M	long-s / s shape
+f185v_L01	5	T45		M	loop with tick above
+f185v_L01	6	T92		H	omega-like
+f185v_L01	7	T45		M	loop with tick above
+f185v_L01	8	X_NEW		L	small t/cross with curved foot
+f185v_L01	9	T90		M	loop with barred cross on top
+f185v_L01	10	X_NEW	T24	M	ae-like, epsilon with bar
+f185v_L01	11	T86	T60	M	two uprights two bars (same as s1 end H, counted once)
+f185v_L01	12	T60	T86	M	slanted hash
+f185v_L01	13	T86	T60	M	two uprights two bars
+f185v_L01	14	X_NEW		L	m with raised a (possibly prose)
+f185v_L01	15	T60	T86	M	hash
+f185v_L01	16	X_NEW		L	(e) bracketed small e
+f185v_L01	17	T86	T60	L	two uprights, bars, small
+f185v_L01	18	T86	T60	M	hash, wide
+f185v_L01	19	X_NEW		L	small t/cross
+f185v_L01	20	X_NEW		L	A with bar
+f185v_L01	21	T86	T60	L	hash at right edge; line end (dark margin)

@@ -1,0 +1,7 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+f185v_L01	3	3	T46	M	3	X_NEW	M	split	figure 8	plain 8 shape
+f185v_L01	10	10	T83	L	10	X_NEW	M	split	ae-like ligature (shared s1/s2 overlap)	ae-like, epsilon with bar
+f185v_L01	14	14	T64	L	14	X_NEW	L	split	m with superscript a	m with raised a (possibly prose)
+f185v_L01	16	16	T96	L	16	X_NEW	L	split	bracketed e-like curl	(e) bracketed small e
+f185v_L01	17	17	T33	L	17	T86	L	split	two verticals with bar	two uprights, bars, small
+f185v_L01	18	18	T60	M	18	T86	M	split	hash	hash, wide

@@ -1,0 +1,49 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+f185r_L01	7	7	X_NEW	M	7	T90	H	split_H_B	o stem cross above	
+f185r_L01	21	21	T78	M	21	T86	M/T78	split	bar II bar	-||- bar-tailed
+f185r_L01	22	22	T46	H	22	X_NEW	M	split_H_A		digit 8
+f185r_L01	24	24	T78	M	24	T86	M/T78	split		-||-
+f185r_L02	9	9	T78	M	9	T86	M/T78	split		-||-
+f185r_L02	12	12	X_NEW	H	12	T89	M/X_NEW	split_H_A	percent-like	percent-like slash+o
+f185r_L02	19	19	X_NEW	M	19	T90	H	split_H_B	o stem cross above	
+f185r_L02	29	29	T78	M	29	T86	M/T78	split	after: line end	-||-; line end
+f185r_L03	5	5	T56	M	5	X_NEW	H	split_H_B	stem and 3	vertical+bar+3 (cross-stem with s)
+f185r_L03	8	8	X_NEW	H	8	T89	M/X_NEW	split_H_A	percent-like	percent-like
+f185r_L03	17	17	T18	H	17	T98	H	split		
+f185r_L03	27	27	T55	H	27	X_EQ	H	split		
+f185r_L03	31	31	T37	M	31	X_NEW	M	split	circle barred pen strikes	oval struck by diagonals/T88
+f185r_L04	4				4	T70	H	gapA		
+f185r_L04	24	23	T51	L	24	T65	L	split	cross stem blotted	p on cross-base/T49
+f185r_L05.1	5	5	T65	M	5	X_NEW	L	split	ghosted	overstruck phi-like/T98
+f185r_L05.2	12	12	T65	M	12	T18	M	split		psi-like/T65
+f185r_L05.2	19	19	T78	M	19	T86	M/T78	split	after: line end	-||-; line end
+f185r_L06	1	1	T46	M	1	T97	H	split_H_B	ampersand-like; before: line start	line start
+f185r_L06	10	10	T46	H	10	X_NEW	M	split_H_A		bar-struck 8/T37
+f185r_L06	27	27	X_NEW	M	27	T90	H	split_H_B	o stem cross above	
+f185r_L07	12	12	T18	H	12	T98	H	split		
+f185r_L07	25	25	T76	M	25	T27	M/T76	split		
+f185r_L07	27	27	T66	M	27	T65	M	split		p on bar-base/T49
+f185r_L07	28	28	X_NEW	M	28	T90	H	split_H_B	o stem cross above	
+f185r_L08	11	11	T55	H	11	X_EQ	H	split		
+f185r_L08	23	23	T46	H	23	X_NEW	H	split		digit 8
+f185r_L08	26	26	X_NEW	H	26	T89	M/X_NEW	split_H_A	percent-like	percent-like
+f185r_L08	32	32	T66	M	32	T76	M/T26	split	after: line end	bar over; line end
+f185r_L09	13	13	T46	M	13	T97	H	split_H_B		
+f185r_L09	22	22	T46	H	22	X_NEW	H	split		digit 8
+f185r_L09					23	T89	M/X_NEW	gapA		percent-like
+f185r_L09		24	T70	M				gapB	triangle with dot	
+f185r_L09	29	30	T26	M	30	T27	H	split_H_B		
+f185r_L10	3	3	X_NEW	M	3	T90	H	split_H_B	o stem cross above	
+f185r_L10	6	6	T18	H	6	T98	H	split		
+f185r_L10	15	15	T78	M	15	T86	M/T78	split		-||-
+f185r_L11	5	5	T95	M	5	T65	M/T49	split		
+f185r_L11	7	7	T46	H	7	X_NEW	H	split		digit 8
+f185r_L11	17	17	X_NEW	M	17	T90	H	split_H_B	o stem cross above	
+f185r_L11	23	23	T56	M	23	X_NEW	H	split_H_B	stem and 3	vertical+bar+s
+f185r_L11	24	24	T18	H	24	T98	H	split		
+f185r_L12	6	6	T78	M	6	T86	M/T78	split		-||-
+f185r_L12	10	10	X_NEW	M	10	T90	H	split_H_B	o stem cross above	
+f185r_L13	3	3	T18	H	3	T98	M/T18	split_H_A		
+f185r_L13	6	6	X_NEW	M	6	T90	H	split_H_B	o stem cross above	
+f185r_L13	15	15	T18	H	15	T98	H	split		
+f185r_L14	6	6	T78	M	6	T86	M/T60	split		-||-
