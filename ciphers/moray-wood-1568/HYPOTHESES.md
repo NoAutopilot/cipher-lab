@@ -20,3 +20,10 @@
   (N=111 matched of 331): -1.988, rank 0.432 vs 1,000 shuffled keys, 0.235 vs 200 sign-order shuffles; positive control at matched sparsity (postscript reduced
   to the same 8 labels, N=49 < 111): -1.753, 0.906 / 0.740 -- does not separate, so test B is a non-test (rule 3).
 - Status: evidence that R4930 P3 is in a different key; no Randolph value is H for the postscript; no key.tsv value moved.
+
+## H-no804: Bain ii no.804's cipher phrase is in key.tsv (pre-registered GAPS15-moray-wood-1568, 2 Oct 2026; untested, no leaf image)
+- Rule fixed in no804/PREREG.md before any image: S = max LCS(decode, 16 spelling variants of Bain's "and says he must neidis haif
+  it be on meinis or uthir") / length; PASS = S > p99 of 200 letter-shuffled cribs AND of 200 shuffled keys AND S >= 0.60.
+- Matched control at N = 39-42 signs (no804/control.tsv): positive 1.000/1.000/1.000/0.975 at 0/10/20/30 pct sign error; false-pass
+  (same phrase, shuffled key) 0.000 at every level. Reference: the R2989 line scores S 0.452 vs p99 0.475/0.425, FAIL.
+- Status: untested (waits on ASKS row 103); run `python3 ciphers/moray-wood-1568/no804/no804_crib.py --score <leaf.tsv>`.

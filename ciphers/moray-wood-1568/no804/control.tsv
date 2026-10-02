@@ -1,0 +1,10 @@
+# no804_crib.py --control, seeds 1000+row, 40 trials per row, nulls 200 each; GAPS15-moray-wood-1568 2 Oct 2026
+control	injected_error	trials	n_signs	pass_rate	mean_S
+positive	0.00	40	41	1.000	0.976
+false_pass	0.00	40	41	0.000	0.381
+positive	0.10	40	39	1.000	0.876
+false_pass	0.10	40	42	0.000	0.379
+positive	0.20	40	40	1.000	0.799
+false_pass	0.20	40	42	0.000	0.367
+positive	0.30	40	40	0.975	0.717
+false_pass	0.30	40	40	0.000	0.372
