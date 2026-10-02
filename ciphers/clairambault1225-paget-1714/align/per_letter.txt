@@ -1,3 +1,3 @@
 settings null_cost -3 {'max_chunk': 4, 'seg_bonus': 0.5, 'len_prior': 0.5} seeds 20
-letter 1 (17 pairs): own self-agreement 31/96 = 0.323 vs shuffle mean 0.052 p95 0.084; cross (key from letter 2) 88/194 = 0.454 vs shuffle mean 0.225 p95 0.258 -> PASS
-letter 2 (39 pairs): own self-agreement 82/397 = 0.207 vs shuffle mean 0.102 p95 0.133; cross (key from letter 1) 283/829 = 0.341 vs shuffle mean 0.184 p95 0.229 -> PASS
+letter 1 (17 pairs): own self-agreement 28/95 = 0.295 vs shuffle mean 0.053 p95 0.086; cross (key from letter 2) 87/188 = 0.463 vs shuffle mean 0.232 p95 0.255 -> PASS
+letter 2 (39 pairs): own self-agreement 83/397 = 0.209 vs shuffle mean 0.102 p95 0.133; cross (key from letter 1) 280/829 = 0.338 vs shuffle mean 0.185 p95 0.226 -> PASS

@@ -27,7 +27,7 @@ for p in pairs:
             old, new = ov[q].split('->')
             k = key.get(new)
             v, g = (k['value'], 'M') if k else ('?', 'U')
-            exc.append(f"{p['page']}\t{q}\t{v}\t{g}\timage reads {new}, ciphertext.tsv {old} (NEXT-PAG override)")
+            exc.append(f"{p['page']}\t{q}\t{v}\t{g}\timage reads {new}, ciphertext.tsv {old} (image override: NEXT-PAG, A2-PAG2)")
         elif a['kind'] == 'clear' and a['raw'].startswith('('):
             n = a['raw'].strip('()')
             exc.append(f"{p['page']}\t{q}\t{n}\tI\tcipher numeral repeating the gloss's own '{n}' ({p['cipher_line']})")

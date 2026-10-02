@@ -1,0 +1,57 @@
+pair	page	ref_gloss	A_gloss	B_gloss	sim_A	sim_B
+P01	f60R	Labbe Lomeliny	Labbé Lomelini	L'abbé Lomeliny	0.92	1.00
+P02	f60R	Venise	Venise	Venise	1.00	1.00
+P03	f60R	Lisle de	L'isle de	Isle de	1.00	0.92
+P04	f60R	Labarque	Labarque	Cabargue	1.00	0.75
+P05	f61L	on verra quelques personnes a Genes	on verra quelques personnes	on verra quelques personnes | a Genes	0.89	1.00
+P06	f61L	venue d'une procuration	acte d'une procuration	cette d'une procuration	0.82	0.85
+P07	f61L	pour traitter avec eux	pour traitter avec eux	pour traitter avec eux	1.00	1.00
+P08	f61L	tiennent	tuipeni?	tiepent?	0.53	0.80
+P09	f61L	de Lisle	de Lyle	de Lisle	0.77	1.00
+P10	f61L	Labbe	Labbé	Labbé	1.00	1.00
+P11	f61L	une portion	une portion	une portion	1.00	1.00
+P12	f61L	Labbe	Labbé	Labbé	1.00	1.00
+P13	f61L	Lisle	Lisle	Lisle	1.00	1.00
+P14	f61L	Labbe	Labbé	Labbé	1.00	1.00
+P15	f61R	a la vente de cette isle	a la vente de cette Isle	a la vente de cette Isle	1.00	1.00
+P16	f65L	penetrer ce qui	penetrer ceci	penetrer ceci	0.88	0.88
+P17	f65L	en secret	en secret	en secret	1.00	1.00
+P18	f65R	la Princesse de Parme et ses 2 oncles	la Princesse de Parme et ses 2 oncles	la Princesse de Parme et ses 2 oncles	1.00	1.00
+P19	f65R	de cette Princesse qu'on	de Cette Princesse qu' On	de Cette Princesse qu'On	1.00	1.00
+P20	f65R	pour Reyne d'Espagne a toutes les belles	pour Reyne d'Espagne a toutes les belles	pour Reyne d'Espagne a toutes les belles	1.00	1.00
+P21	f66L	qualites qu'on	qualités qu'on	qualités qu'On	1.00	1.00
+P22	f66L	Elle achevera sa 22e annee le 25 Octobre prochain	Elle achevera sa | 22e année le 25. Octobre prochain	Elle achevera sa | 22e année le 25. Octobre prochain	1.00	1.00
+P23	f66L	ne le meme mois en mil six cens quatre vingt douze Elle est bien faite blonde Le Visage Rond Les traits fins et	née le meme mois en mil six | quatre vingt douze Elle est bien faite, blonde, Le | Rond, Les traits fins et	né le meme mois en mil six | quatre vingt douze Elle est bien faite, blonde, Le | Rond, Les traits fins et	0.93	0.94
+P24	f66L	la taille belle	la taille belle	la taille belle	1.00	1.00
+P25	f66L	Moyenne beaucoup	Moyenne	Moyenne,	0.64	0.64
+P26	f66L	d'Esprit et un air	d'esprit et un air	d'esprit et un air	1.00	1.00
+P27	f66L	modeste	modeste	modeste	1.00	1.00
+P28	f66L	Madame la Duchesse sa Mere qui l'a toujours tenue sous les yeux	Madame la Duchesse sa Mere qui l'a toujours | tenue sous Les yeux	Madame la Duchesse sa Mere qui l'a toujours | tenue sous Les yeux	1.00	1.00
+P29	f66L	luy donnent une	luy donner?	luy donner	0.73	0.73
+P30	f66L	belle Education	belle Education	belle Education	1.00	1.00
+P31	f66L	cette mere	cette mere	cette mere	1.00	1.00
+P32	f66L	M le Duc de Parme son Mari epousa	M. le Duc de Parme son Mari epousa	M. le Duc de Parme son Mari epousa	1.00	1.00
+P33	f66L	en 2e Nopces le Prince Francois Farnese	en 2es Nopces le Prince francois farnese	en 2es Nopces le Prince francois farnese	0.98	0.98
+P34	f66L	le Duc de Parme Regnant frere du deffunct	le Duc de Parme Regnant frere | du deffunt	le Duc de Parme Regnant frere | du deffunt	0.99	0.99
+P35	f66L	Elle n'a pas eu d'Infans	Elle n'a pas eu	Elle n'a pas eu	0.76	0.76
+P36	f66L	en avoir	En aun?	En aun	0.50	0.50
+P37	f66L	agee de 44 ans	agée de 44. ans	agée de 44. ans	1.00	1.00
+P38	f66R	quoyque ce Dernier Duc n'ait que 36	quoyque ce Dernier Duc n'a eu que 36	quoyque ce Dernier Duc n'a eu que 36	0.92	0.92
+P39	f66R	le Prince Antoine de Parme	le Prince Antoine de Parme	le Prince Antoine de Parme	1.00	1.00
+P40	f66R	frere du Duc de Parme qui n'a que 35 ans Mais	frere du Duc de Parme qui n'a que 35 ans Mais	frere du Duc de Parme qui n'a que 35 ans Mais	1.00	1.00
+P41	f66R	Il n'est pas marie et n'a	Il n'est pas marié ni né	Il n'est pas marié ny né	0.83	0.83
+P42	f66R	pour le Mariage	pour le Mariage	pour le Mariage	1.00	1.00
+P43	f66R	la Jeune Princesse	la Jeune Princesse	la Jeune Princesse	1.00	1.00
+P44	f66R	tous les biens de sa Maison	tous les biens de sa | Maison	tous les biens de sa | Maison	1.00	1.00
+P45	f66R	unique	unique	unique	1.00	1.00
+P46	f66R	lie et adoree de ses deux Princes qui	lit et adoré de ses deux Princes qui	lie et adoré de ses deux Princes qui	0.95	0.98
+P47	f66R	sont charmes de la voir epouser	sont charmés de la voir épouser	sont charmés de la voir épouser	1.00	1.00
+P48	f66R	le Roy d'Espagne	le Roy d'Espagne	le Roy d'Espagne	1.00	1.00
+P49	f66R	issu	ime	ime	0.29	0.29
+P50	f66R	de France	de france	de france	1.00	1.00
+P51	f66R	une grande Partialite	une grande Partialité	une grande Partialité	1.00	1.00
+P52	f66R	Madame la Duchesse qui en de la Maison	Madame la Duchesse qui en de la Maison	Made la Duchesse qui en de la Maison	1.00	0.97
+P53	f66R	a toujours este de genie Allemand	a toujours été de genie | Allemand	a toujours été de genie | Allemand	0.98	0.98
+P54	f66R	Jeune Princesse	Jeune | Princesse	Jeune | Princesse	1.00	1.00
+P55	f66R	ses oncles	ses oncles	ses oncles	1.00	1.00
+P56	f66R	Made sa Mere	Madame sa Mere	Made sa Mere	0.91	1.00

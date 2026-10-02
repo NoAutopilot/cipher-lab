@@ -24,14 +24,14 @@ P05	3	211	num	211		qu	conflict:at
 P05	4	209	num	209		elq	single
 P05	5	192	num	192		ues	conflict:d
 P05	6	45	num	45		per	conflict:ar
-P05	7	223	num	223		son	conflict:nte
+P05	7	223	num	223		son	conflict:c
 P05	8	41	num	41		nes	conflict:d
 P05	9	175	num	175		a	conflict:ne
 P05	10	0?	doubtful			ge	doubtful
 P05	11	276	num	276		nes	single
 P06	0	244	num	244		ve	agrees
 P06	1	244	num	244		nue	conflict:ve
-P06	2	96	num	96		du	conflict:d
+P06	2	90	num	90		du	agrees
 P06	3	175	num	175		ne	agrees
 P06	4	43	num	43		pr	conflict:e
 P06	5	214	num	214		oc	conflict:nde
@@ -62,30 +62,30 @@ P13	0	34	num	34		l	conflict:de
 P13	1	147	num	147		i	conflict:li
 P13	2	46	num	46		s	agrees
 P13	3	146	num	146		le	agrees
-P15	0	145	num	145		a	conflict:la
-P15	1	48	num	48		la	conflict:une
-P15	2	97	num	97		ve	conflict:en
-P15	3	223	num	223		nte	single
+P15	0	145	num	145		la	agrees
+P15	1	48	num	48		v	conflict:une
+P15	2	97	num	97		en	conflict:e
+P15	3	233	num	233		te	agrees
 P15	4	87	num	87		de	agrees
 P15	5	84	num	84		ce	agrees
 P15	6	38	num	38		tte	conflict:a
 P15	7	46	num	46		is	conflict:s
 P15	8	146	num	146		le	agrees
-P16	0	190	num	190		pe	single
+P16	0	192	num	192		pe	conflict:d
 P16	1	175	num	175		ne	agrees
 P16	2	47	num	47		tr	conflict:t
 P16	3	212	num	212		er	conflict:re
 P16	4	45	num	45		ce	conflict:ar
 P16	5	77	num	77		q	agrees
 P16	6	20	num	20		ui	single
-P17	0	222	num	222		y	conflict:c
-P17	1	191	num	191		p	single
-P17	2	46	num	46		as	conflict:s
-P17	3	221	num	221		se	agrees
-P17	4	97	num	97		en	agrees
-P17	5	221	num	221		se	agrees
-P17	6	32	num	32		c	agrees
-P17	7	212	num	212		re	agrees
+P17	0	222	num	222			null-or-unaligned
+P17	1	191	num	191		e	single
+P17	2	46	num	46		n	conflict:s
+P17	3	221	num	221		s	conflict:se
+P17	4	97	num	97		e	agrees
+P17	5	221	num	221		c	conflict:se
+P17	6	32	num	32		r	conflict:c
+P17	7	212	num	212		e	conflict:re
 P17	8	47	num	47		t	agrees
 P18	0	145	num	145		la	agrees
 P18	1	198	num	198		pri	conflict:in
@@ -99,7 +99,7 @@ P18	8	221	num	221		se	agrees
 P18	9	46	num	46		s	agrees
 P18	10	(2)	clear				clear
 P18	11	185	num	185		on	agrees
-P19	0	37	num	37		de	single-segment
+P19	0	87	num	87		de	agrees
 P19	1	146	num	146		ce	conflict:le
 P19	2	46	num	46		tte	conflict:s
 P19	3	84	num	84		pri	conflict:ce
@@ -158,7 +158,7 @@ P23	3	165	num	165		me	single
 P23	4	158	num	158		mo	agrees
 P23	5	38	num	38		is	conflict:a
 P23	6	46	num	46		en	conflict:s
-P23	7	97	num	97		mil	conflict:en
+P23	7	97	num	97		mil	conflict:e
 P23	8	157	num	157		six	single-segment
 P23	9	39	num	39		ce	single
 P23	10	692	num	692		ns	single
@@ -259,7 +259,7 @@ P32	3	32	num	32		c	agrees
 P32	4	87	num	87		de	agrees
 P32	5	201	num	201		p	agrees
 P32	6	156	num	156		ar	conflict:me
-P32	7	222	num	222		me	conflict:c
+P32	7	223	num	223		me	conflict:c
 P32	8	41	num	41		son	conflict:d
 P32	9	155	num	155		ma	agrees
 P32	10	213	num	213		ri	conflict:ma
@@ -267,7 +267,7 @@ P32	11	34	num	34		ep	conflict:de
 P32	12	194	num	194		ou	conflict:er
 P32	13	48	num	48		sa	conflict:une
 P33	0	220	num	220		en	conflict:sa
-P33	1	97	num	97		e	conflict:en
+P33	1	97	num	97		e	agrees
 P33	2	(2)	clear				clear
 P33	3	177	num	177		nop	single
 P33	4	77	num	77		ces	conflict:q
@@ -304,11 +304,11 @@ P35	1	174	num	174		le	conflict:na
 P35	2	200	num	200		na	single-segment
 P35	3	100	num	100		p	conflict:eux
 P35	4	33	num	33		as	single
-P35	5	97	num	97		eu	conflict:en
+P35	5	97	num	97		eu	conflict:e
 P35	6	105	num	105		di	single
 P35	7	41	num	41		nf	conflict:d
 P35	8	46	num	46		ans	conflict:s
-P36	0	97	num	97		en	agrees
+P36	0	97	num	97		en	conflict:e
 P36	1	58	num	58		av	single
 P36	2	221	num	221		oir	conflict:se
 P37	0	30	num	30		a	agrees
@@ -328,7 +328,7 @@ P38	5	45	num	45		d	conflict:ar
 P38	6	90	num	90		er	conflict:du
 P38	7	32	num	32		ni	conflict:c
 P38	8	41	num	41		er	conflict:d
-P38	9	97	num	97		d	conflict:en
+P38	9	97	num	97		d	conflict:e
 P38	10	56	num	56		uc	conflict:l
 P38	11	38	num	38		na	conflict:a
 P38	12	47	num	47		it	conflict:t
@@ -399,7 +399,7 @@ P46	13	32	num	32		ces	conflict:c
 P46	14	146	num	146		qui	conflict:le
 P47	0	46	num	46		so	conflict:s
 P47	1	205	num	205		nt	conflict:qui
-P47	2	222	num	222		c	single
+P47	2	223	num	223		c	single
 P47	3	54	num	54		ha	conflict:ct
 P47	4	32	num	32		rm	conflict:c
 P47	5	125	num	125		es	single

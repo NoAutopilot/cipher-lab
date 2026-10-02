@@ -1,8 +1,8 @@
 null_cost -3 {'max_chunk': 4, 'seg_bonus': 0.5, 'len_prior': 0.5}
-REAL     self-agreement 131/473 = 0.277; held-out letters 24/37 = 0.649
+REAL     self-agreement 131/472 = 0.278; held-out letters 24/37 = 0.649
   held-out	P10	145 31 67	labbe	la.el.be	4/5
   held-out	P12	145 65 67	labbe	la.?.be	4/5
   held-out	P14	56 31 67	labbe	l.el.be	3/5
   held-out	P39	146 198 56 41 235 38 175 87 201 156 35	leprinceantoinedeparme	le.in.l.d.le.a.ne.de.p.me.s	13/22
-SHUFFLE  (20 seeds) self-agreement mean 0.103 max 0.127 p95 0.126; held-out letters mean 0.270 max 0.378 p95 0.378
-ALL      self-agreement 138/493 = 0.280; values 114
+SHUFFLE  (20 seeds) self-agreement mean 0.103 max 0.128 p95 0.121; held-out letters mean 0.274 max 0.378 p95 0.378
+ALL      self-agreement 136/492 = 0.276; values 111
