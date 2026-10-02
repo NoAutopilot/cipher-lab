@@ -300,7 +300,7 @@ shuffled-label p95 0.30-0.37, one label changed (118 S / 15 M / 1 I). RETRO-APPL
 gate now reads the labelled status word from the head only (14 targets change exit code, listed in UPDATES.md;
 lambeth-bacon-649 and lambeth-casenowe-1586 need their citation carried up -- account-3's targets, flagged in ROOM);
 tools/premise_check.py exists for the parent's pre-spawn check. Tool flag: file_shrink_guard.py crashes on a .jpg path
-(UnicodeDecodeError), for a tools worker. Wave 4 spawned 14:2x (ids in the next check-in's paragraph): CLOSER-7,
+(UnicodeDecodeError), for a tools worker. Wave 4 spawned 14:18 UTC -- CLOSER-7 session_017a7onWV7Z2wkMKE8kbbTH3, GAPS6-na-suriname session_01U9pmXZ6LPgWeVbvcthMLJE, GAPS6-pro3055-clinton session_01AJLargCkwVyk11jY32NnbF, GAPS5-moray-wood session_016qHidDcUvEKHDUrm8S8UKG, GAPS7-na-janssens session_01NrGiMwEPBQZoumFzqejSXH, GAPS-fr4715-vieuville-pool-2 session_01CxwmwQFwqMPnwaLnKBUmkZ, GAPS-fr3986-nevers-revol-1593 session_01BX9UM5HDTjUfeuQz6NDabr, GAPS6-na-schonenberg session_01AhcGqoVjEwhySFKjwoJaJD: CLOSER-7,
 GAPS6-na-suriname (right-hand strip, cap 12), GAPS6-pro3055-clinton (26 Oct 1782 note, Images 1199/1205, cap 12),
 GAPS5-moray-wood (native-res pair crops + one strong-model call, cap 10), GAPS7-na-janssens (Collet 1910 LOCAL-QUEUE
 row + print_check on the four plain texts, cap 7), GAPS-fr4715-vieuville-pool (premise check, then no.37 f.60 through
