@@ -1,0 +1,42 @@
+entry	label	text	conf	note
+title-1		Plan van 't Fortresse Nieuw=	H	both passes identical
+title-2		Amsterdam.	H	both passes identical
+A	A:	Bastion Holland.	H	both passes identical
+B	B:	Bastion Gelderland.	H	both passes identical
+C	C:	Bastion Overijzel.	M	A Overijzel, B Overijsel; own look: the letter before -el is a z-form; Overijssel
+D	D:	Bastion Utrecht.	M	both passes: 'Ut' struck through / overwritten, word reads Utrecht; own look agrees
+E	E:	Bastion Groningen.	H	both passes identical
+F	F:	Oude Sluijs:	M	A Sluijs, B Seluys; line cut at the top of crop 03 (band edge), own look partial: Sluijs
+G	G:	Project tot Een Nieuwe Sluijs.	H	both passes identical, own look agrees
+I	I:	Natuurlijke Creecq.	H	both passes identical, own look agrees; no H entry on the sheet (both passes, own look)
+K	K:	Projecteerde Grens, om het Water af te neemen.	M	both passes 'af te neemen'; own look reads 'in te neemen' (GAPS2's 2800-px look had 'in te laaten'); 2:1 for 'af', kept, word M
+L?	L		M	a large ornate glyph left of the a/ line, read as a capital L by both passes; may be a bracket or the K's flourish; no text of its own; not counted as an entry
+a	a/	Inspectie Sluijs.	M	A Sluijs, B Huijs; own look: the initial is the looped S of 'Sluijs' in G, not the H of 'Huijs' in f: Sluijs
+b	b/	Magatijn van Vivres.	H	both passes identical
+c	c/	Oude Artillerie Smeederij en Project tot Een Nieuwe.	M	both passes Smederij; own look Smeederij (double e); 'en Project tot Een Nieuwe' written larger to the right on the same line
+d	d/	Artillerie Officier Wooning.	M	both passes Woning; own look Wooning (double o)
+e	e/	Oude Geweer Kamer.	H	both passes identical
+f	f/	Plantie officiers Huijs.	M	both passes identical; 'Plantie' is as written (Plantagie?), word M
+g	g/	Gouvernement.	H	both passes identical
+h	h/	Comandement.	H	both passes identical
+i	i/	Brand Spuyten Huijs	M	A Spruytene, B Spuytens; own look Spuyten (brandspuiten, fire engines); no final stop
+k	k/	Twee Arsenaale met Klyne Smeederij.	M	A 'Hijze Smederij', B 'Kleine Smederij'; own look 'Klyne Smeederij'
+l	l/	Hospitaal der Sieke Neegers.	H	both passes identical
+m	m/	Huijsen der Banditen Neegers.	H	both passes identical
+n	n/	Artillerie Timmerloos:	M	A Timmerhoos, B Timmer Loos; own look Timmerloos (timmerloods), one word, colon
+o	o/	Bakkerij.	H	both passes identical
+p	p/	Militaire Casserne met de Neeger=Backs	M	A Casserme, B Casserne; own look Casserne; 'Neeger=Backs' with the = hyphen
+q	q/	Nieuwe Kruijt Magatijn.	H	both passes identical
+r	r/	oude Kruijt Magatijn.	H	both passes identical (B lowercase k, m: case of the two nouns M, text H)
+s	s/	Wind Moole.	H	both passes identical
+t	t/	Rogge & Bloem Magatijn, daar 't tans ?loot.	M	A 'Magatijs, daar 't tuin sloot', B 'Magatijn, daar 't tans [?]loot'; own look: 'daar 't tans' then a word ending -loot/-taat under a tall flourish that crosses this line and the next; not settled from this crop
+u	u/	Project waar 't Sloe geplaast sal worden.	M	A 'waart Slooe ... zal', B 'waart Sloe ... sal'; own look 'waar 't Sloe geplaast sal worden' (the apostrophe-t belongs to 'waar 't'); word 3 M
+v	v/	Wooning van eenige Ambachts Luijden.	M	A enige, B eenige; own look eenige
+w	w/	Sorty.	H	both passes identical
+No.I-VIII		van No: I: tot No: VIII: Batterijen.	H	both passes identical; indented line under w, Roman numerals written large
+x	x/	Cannoniers=Wagt.	H	both passes identical
+y	y/	Timmer=Loos:	M	A 'Timmer= Erve:', B 'Timmer=Loos:'; own look Timmer=Loos: (the same -loos ending as n)
+z	z/	Projecteerde Traversen.	H	both passes identical
+sig-1		Fortresse Nieuw Amsterdam	H	both passes identical
+sig-2		den 31. Julij 1778.--	H	A Julij, B July; own look Julij (ij with diaeresis); dash after the stop
+sig-3		J. C. Hurter	H	both passes identical (B saw it twice across the crop 09/10 band edge: one signature)

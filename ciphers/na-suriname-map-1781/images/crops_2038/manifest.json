@@ -1,0 +1,235 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "leg2038_L01.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    40,
+    2010,
+    477
+   ],
+   "lines_in_crop": 5,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L02.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    477,
+    2010,
+    793
+   ],
+   "lines_in_crop": 5,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L03.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    793,
+    2010,
+    1071
+   ],
+   "lines_in_crop": 5,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L04.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    1071,
+    2010,
+    1298
+   ],
+   "lines_in_crop": 5,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L05.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    1298,
+    2010,
+    1575
+   ],
+   "lines_in_crop": 5,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L06.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    1575,
+    2010,
+    1841
+   ],
+   "lines_in_crop": 5,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L07.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    1841,
+    2010,
+    2126
+   ],
+   "lines_in_crop": 5,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L08.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    2126,
+    2010,
+    2412
+   ],
+   "lines_in_crop": 5,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L09.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    2412,
+    2010,
+    2739
+   ],
+   "lines_in_crop": 5,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L10.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    2739,
+    2010,
+    3030
+   ],
+   "lines_in_crop": 5,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "leg2038_L11.jpg",
+   "source_url": "",
+   "source_file": "2038_legend_native.jpg",
+   "box": [
+    60,
+    3030,
+    2010,
+    3223
+   ],
+   "lines_in_crop": 3,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 52,
+    "distance": 40,
+    "prominence": 20.0
+   },
+   "date": "02 Oct 2026"
+  }
+ ]
+}
