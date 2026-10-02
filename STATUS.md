@@ -241,6 +241,13 @@ about USD 5 each, against about USD 80 spent reading them. What is still ours on
 Birago letters ff.138-184 under the same key, the 543 unkeyed f.10 tokens, and the other six Clinton items. Check-in 5
 armed for 09:08 UTC (trig_01HZN8LSZAmFzc8FDzEhBRCV).
 
+**Check-in 5 (09:1x UTC 2 Oct, parent 2):** unchanged -- `allowed_warning` on this session (seven-day, resets 5 Oct
+20:00 UTC), no workers; account-3's newest line 08:59 UTC says accounts 3 and 4 are both on the warning, account 2 is
+Opus-only, and no new workers are queued anywhere until a reset or the owner says otherwise. near_check reads 11 rows in
+step, none stale after account-3 touched the six over-48h rows. PROGRESS.tsv's conflict markers (a `git stash pop` at a
+check-in start, pushed 08:2x) were removed at 08:2x; the stash pattern is dropped from the check-in prompt. Check-in 6
+armed for 09:56 UTC (trig_01ULuBs7KQfuCztF1MjQqKrd). Parent 2 at about 400k context, cost about 14.4.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
