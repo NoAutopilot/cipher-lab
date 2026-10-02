@@ -1,0 +1,4 @@
+folio	line	pos	value	grade	reason
+f162r	L01.1	1	NULL	M	struck through by the writer (both blind readers and the adjudicator: cancelled by one long diagonal over pos 1-2); the slip begins at "monsignore" (NEVBIR-162, 2 Oct 2026)
+f162r	L01.1	2	NULL	M	struck through by the writer, same overstroke as pos 1 (NEVBIR-162, 2 Oct 2026)
+f162r	L01.1	19	d	M	off-sheet "=" sign (X_EQ, both readers H); the f.161v decipherment slip (f162r/decipherment_slip.tsv) reads the d of "Andre" here (NEVBIR-162, 2 Oct 2026)

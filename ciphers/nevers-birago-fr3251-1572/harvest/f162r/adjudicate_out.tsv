@@ -1,0 +1,6 @@
+passage	pos	sign_id	conf	struck	note
+L01.1	1	T63	L	yes	V/Y-like body cancelled by long diagonal overstroke that also runs through pos 2
+L01.1	2	T81	M	yes	x-body with bar; the vertical tail below looks like part of the cancelling strokes, not a T81 feature; X_NEW possible
+L01.1	3	X_NEW	L	unsure	square/box with diagonal slash extending beyond the box; no sheet cell is a slashed box; slash may be strike or sign shape
+L01.2	1	T54	M	yes	R/K-like body with diagonal overstroke from upper right to lower left
+L01.2	4	T49	L	yes	triangular/boxed top with vertical tail, cancelled by diagonal; T49 is the nearest cell (box-top with stem); X_NEW possible

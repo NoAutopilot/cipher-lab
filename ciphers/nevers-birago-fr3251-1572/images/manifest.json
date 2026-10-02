@@ -64,5 +64,12 @@
   "requests": {
     "gallica.bnf.fr": "see ciphers/ceppo-nevers-fr3251-1570s/images/manifest.json for the earlier shared count (5 fetches); NEV-C1 (27 Sept 2026) added 9 more to this ark locating and inspecting the witness (canvas 179 at 1000px and 1800px, canvas 181 at 1000px [1 connection-reset retried once] and 2000px, canvas 180 at 1000px, canvas 182 at 1000px, canvas 183 at 1000px and 2200px) -- over the job's own stated 8-request allowance by 1, spent entirely on locating the witness and its decipherment (the brief's predicted canvas 179 was ink folio 176, not 178; see canvas_rule_correction_NEV-C1 above) rather than on any target folio",
     "gallica.bnf.fr_GAPS4_2_Oct_2026": "7 requests: 2 HTTP 500/connection-reset on this worker's own malformed doubled-ark URLs (--ark takes the bare id), 1 connection reset on canvas 183 retried once after a pause, 3 regions fetched (canvases 181, 182, 183), 1 re-fetch of the canvas-183 region 150 px wider after the first clipped the first sign of each line; all >= 1.5 s apart, browser UA, no challenge page"
+  },
+  "NEVBIR-162_2_Oct_2026": {
+    "canvases_viewed": "163, 164, 167 at 1200 px (scratch, not committed); 165, 166 from PREMISE-NEVBIR files",
+    "no82_opening": "canvas 164 right page: inner ink stamp 160, top-right stamp in the second numbering; letter runs canvas 164 right -> 165 left -> 166 right",
+    "cipher": "one line on canvas 164 right, native region 4700,2200,3050,450 -> harvest/f162r/",
+    "slip": "later-hand decipherment slip pasted on canvas 164 left page (f.161v), native region 1400,3450,2100,800 -> harvest/f162r/slip_f161v_c164_1400_3450_2100_800.jpg; reads '[monsignore di S. Andre]' / '[M. di Bellaguarda]'",
+    "base": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f164/"
   }
 }
