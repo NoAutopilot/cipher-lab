@@ -1555,3 +1555,6 @@ the end of every wake.
 | 2 Oct 2026 | A2-LVN | session_01XgX3iAzg38jt4gU5adYMVN | account 2 (LANE-A2PUSH) | Opus 5.5 | 0.96 | N | stopped at step 2: intake gate exit 1 (no web/blog check) |
 | 2 Oct 2026 | A2-HAR | session_01HN8YEUMT3Jpgj6S7sXYAXb | account 2 (LANE-A2PUSH) | Opus 5.5 | 1.32 | N | stopped at step 2: intake gate exit 1 (no web/blog check); no DECODE login made |
 | 2 Oct 2026 | A2-PAG | session_019gTaJCgYqTheg8tnyHdJCT | account 2 (LANE-A2PUSH) | Opus 5.5 | 1.68 | D | done 21:00: print step (print_check 16 gloss phrases + open indexes), no print or decipherment located; next the image-check blind passes |
+| 2 Oct 2026 | TRANSLATE-NEVBIR | session_01BBUTYGL95vn3PDZwAqMGrX | account-2 | Opus 5.5 | not visible from account 3 | D | Italian word-split + English gloss for nos.71/86/90 (grade I) |
+| 2 Oct 2026 | BIRAGO-SCOUT | session_01Ujg6wFD9173bh9dR5EKBGt | account-2 | Opus 5.5 | not visible from account 3 | D | 18-row Birago pool: fr.3252 holds 3 cipher letters outside Tomokiyo's list (~2,000 signs); Guazzo fr.4688 same network |
+| 2 Oct 2026 | LOOKALIKE-TOOL | session_01CfNC5g8ze9diV9AyjHEQY5 | account-2 | Opus 5.5 | not visible from account 3 | D | tools/lookalike_pass.py + test; known-answer: true error unchanged (0.178/0.071), residual understates 6x -- agreement-raising only; f.144r control downgraded |
