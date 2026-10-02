@@ -6305,3 +6305,22 @@ Worker GF-A2-2 (account 2, LANE-A2PUSH), 2 Oct 2026 21:16-21:20 UTC (clock read)
 - (d) **Recipient-side editions.** Not found, conditional: neither the dépouillement nor Tomokiyo names a recipient for no.38. The volume is the Nevers papers, so the likely recipient side is the duc de Nevers, whose printed papers (Gomberville's *Mémoires de M. le duc de Nevers*, 1665, covered by the Gallica exact-phrase search in NEXT-F61) and the *Mémoires de la Ligue* (1758) were searched for f.61's clear phrases by `tools/print_check.py` (NEXT-F61, 2 Oct 2026) with no hit. Henry-Loriquet's edition remains unread (LOCAL-QUEUE L30). An identified recipient other than Nevers would need a new search.
 
 Requests this pass: gallica.bnf.fr 3 (native canvases 136, 138, 139, 2 s apart); github.com 2 (shallow clones).
+
+## Campaign step A2-F61R (2 Oct 2026, from 22:47 UTC by date -u, worker A2-F61R, account 2) -- f.61r clear-text transcription: two blind passes + one reconciliation
+
+Intake gate pasted before any deep work: `fr4715-f61-mayenne-1592: partial (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Pre-registered (written before any pass was called).** Inputs: the existing line sheets `images/f61sheetB_L01-L11.jpg`
+(cut by `tools/iiif_lines.py --overlap 0`, campaign step H2, 4 segments per line) plus a known-answer line cut fresh by
+`tools/iiif_lines.py --image images/src_ark_12148_btv1b9059406b_f195_1250_450_3600_720.jpg --out images/f61rclear
+--prefix ka108 --centres 300,387,500 --overlap 0 --debug` (only `images/f61rclear/ka108_L02_s1/s2.jpg` is used: f.108r's
+clear line). Both passes see the 11 f.61r sheets and the f.108r line mixed in as "line K", not told which is a control.
+Known answer (f.108r clear line, from the leaf matched against Tomokiyo's mayenne2.png, H19): "Et pour cela je vous
+laisse a juger quel contentement je debvois avoir" (12 words). Normalisation for every comparison: lowercase, accents
+stripped, u=v, i=j=y, punctuation dropped, cipher signs and [?] removed. Gates: (KA) each pass reads at least 10 of the 12
+known words (word-level NW alignment); (WA) pooled word agreement between the two passes on the f.61r clear words is at
+least 0.80 AND exceeds the maximum of a line-shuffled control (pass A line i vs pass B line j, i != j, all 110 pairs),
+which can differ from the target on this statistic by construction. A pass failing KA is dropped; if either gate fails,
+no reading is reported beyond the pass files. Reconciliation: one Opus call over only the disagreeing words with the
+same crops; grade H for words both passes agree on, M for words settled by the reconciler, I for illegible.
+Writer/recipient/date are named only if the clear text states them; otherwise "not stated in the clear text".
