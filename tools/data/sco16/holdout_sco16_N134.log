@@ -1,0 +1,6 @@
+held_out=worksofjohnkn01knox.txt.gz letters=251571 N=134 real_p05=-0.929 false_negatives=66/200 (33.0%)
+held_out=worksofjohnkn02knox.txt.gz letters=404372 N=134 real_p05=-0.872 false_negatives=115/200 (57.5%)
+held_out=adiurnalremarka00thomgoog.txt.gz letters=526812 N=134 real_p05=-0.899 false_negatives=106/200 (53.0%)
+held_out=historielifeofki00colvuoft.txt.gz letters=443182 N=134 real_p05=-0.903 false_negatives=53/200 (26.5%)
+held_out=registerofprivyc0002jjoh.txt.gz letters=700797 N=134 real_p05=-0.880 false_negatives=32/200 (16.0%)
+TOTAL false-negative rate: 372/1000 (37.2%); per-fold spread 16.0-57.5% (5 folds)

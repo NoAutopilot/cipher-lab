@@ -1,0 +1,42 @@
+{
+ "slug": "moray-wood-1568",
+ "name": "Regent Moray to John Wood, Edinburgh 13 July 1568, cipher postscript (BL Add MS 32091 f.213v; DECODE R8345)",
+ "language_candidates": [
+  "sco16 (Middle Scots, 1550-1600)",
+  "en16_repo (1650s English, nearest older corpus; not era- or variety-matched)"
+ ],
+ "ciphertext": {
+  "L1": "U | Zh P g x o Ab xd Tb Z3 e 4b o x M A xd x Ab xd 4 A c a Z5 a c | o2 | Zh x xd F N xd Tb | r A Z5 M | Z2 c U a Z3 o F",
+  "L2": "V a x p N xd Tb r x Zh F Z3 xd x Tb o x N Tc x P N a Tb N V U Eb | 4 X p M N Zh | r A Z3 M Tc r A N o",
+  "L3": "a A Zz Zz N Zh | xd A M A N o Tc Z2 | Zh s N a U | r A N a a x t | Z3 X o x | e o x N xd F N Zh",
+  "L4": "Zz x3 A Xs Z5 N Zh"
+ },
+ "ciphertext_source": "Aymeloglu's glyph-by-glyph transcription (github.com/aaymeloglu/unsolved-ciphers moray-1568/transcription.txt, commit d2800bb, cloned 2 Oct 2026), image-checked by this repository 2 Oct 2026 (GAPS3/GAPS4/GAPS5: L4.5 Z2->Z5, L1.41 e->c); ciphers/moray-wood-1568/ciphertext.tsv; '|' = a visible gap on the page, not a sign. Tomokiyo's conflated transcription is ciphertext.txt, not used here.",
+ "alphabet": "33 labels in Aymeloglu's set (key.tsv: 21 letter signs at S, 8 at M/I, word-signs U [the] and o2 [and], person-signs 4b and Eb); 134 glyphs in 4 lines",
+ "constraints": [
+  "Monoalphabetic with homophones (Z2/Z3 = o, M/p = m, e/V = f) plus word-signs and person-signs, per Aymeloglu's key",
+  "Middle Scots of 1568 (body of the letter on f.213r is Scots in the same hand)",
+  "Line 4 is 7 signs (Zz x3 A Xs Z5 N Zh)",
+  "no H or C source: no period key, decipherment or clear copy located (Premise check, 2 Oct 2026)"
+ ],
+ "cheap_tests_in_order": [
+  "1 (GAPS6, 2 Oct 2026): judge reading.txt (Aymeloglu's key on the image-checked transcription; word-signs expanded, person-signs dropped) under sco16 and en16_repo, with 20 letter-shuffled nulls and 20 shuffled-target decodes (ciphertext sign order shuffled, same key) beside it; a PASS on any shuffled-target decode voids the judge for this key family at this N (ARM-C1)",
+  "2: lexical fit of L4 'teauyis' and of sign c (one value or two) against DOST / sco16 word lists, key.tsv edited only where judge and DOST agree, regrade per rule 4",
+  "3: relabel the 39-sign Wood line (DECODE R2989, Add MS 4136 f.33) and apply key.tsv against a shuffled-key null with a 39-sign Moray-window positive control"
+ ],
+ "judge": {
+  "language": "sco16",
+  "letters_min": 100,
+  "letters_max": 160,
+  "note": "sco16 leave-one-file-out false-negative rate at N=134 is 37.2% blended, per-fold 16.0-57.5% over 5 files (tools/data/sco16/README.md): a FAIL/PASS of unknown reliability by rule 3's fold-count paragraph; read the shuffled-target band beside any verdict"
+ },
+ "written": "2 Oct 2026, GAPS6-moray-wood-1568 (account-4)",
+ "cheap_test_done": {
+  "date": "2 Oct 2026",
+  "by": "GAPS6-moray-wood-1568 (account-4)",
+  "test": "1 (judge reading.txt, word-signs expanded, person-signs dropped, 142 letters, under sco16 and en16_repo with 20 shuffled-null and 20 shuffled-target decodes; ciphers/moray-wood-1568/judge_controls.py, judge_controls.tsv)",
+  "target": "sco16: score -1.103, FAIL (real_p05 -0.899, null_p99 -1.916, real_median -0.754, N=142); held-out genuine Scots windows below -1.103: 1.5-5.5 pct per fold. en16_repo: -1.859, FAIL (real_p05 -0.584, null_p99 -1.857)",
+  "control": "sco16: shuffled_null 20/20 below the candidate (max -2.062, 0 PASS); shuffled_target 20/20 below (max -1.84, median -1.980, 0 PASS: the judge is not voided for this key at this N). en16_repo: shuffled_null 20/20 below (max -1.875); shuffled_target 16/20 below (max -1.787), 0 PASS. Fold spread at N=134: sco16 16.0-57.5 pct (blend 37.2, 5 files); en16_repo 0.0-100.0 pct (blend 21.9, 17 files)",
+  "verdict": "judge cannot decide near the gate under sco16, not a negative; en16_repo uninformative. Next: test 2 (lexical fit of the M/I values)"
+ }
+}

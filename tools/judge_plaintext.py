@@ -63,6 +63,14 @@ LANG_CORPORA = {
     "it16dip": [DATA / "it16dip" / f for f in ("bub_gb_laRnTtJmsDAC.txt.gz", "bub_gb_ZJMxff7r4LUC.txt.gz",
                 "gri_33125010469852.txt.gz", "letterediprincip01char.txt.gz", "letterediprincip02char.txt.gz",
                 "letterediprincip03char.txt.gz")],
+    # sco16 (2 Oct 2026, GAPS6-moray-wood-1568, account-4): 1550-1600 Middle Scots prose -- Knox's History (Laing, Works
+    # I-II), the Diurnal of Remarkable Occurrents (1513-1575, long-s repaired), the Historie of King James the Sext, and
+    # the Register of the Privy Council of Scotland vol. 2 (1569-1578), each capped at 700k folded letters, editors' modern
+    # English dropped by a Scots-vs-modern spelling-marker filter (tools/data/sco16/build.py) -- for ciphers/moray-wood-1568
+    # (13 July 1568), which no other corpus here era- or variety-matches (en16_repo is 1650s English). See
+    # tools/data/sco16/README.md for the leave-one-file-out false-negative spread at N=134 before trusting a FAIL/PASS.
+    "sco16": [DATA / "sco16" / f"{i}.txt.gz" for i in ("worksofjohnkn01knox", "worksofjohnkn02knox",
+              "adiurnalremarka00thomgoog", "historielifeofki00colvuoft", "registerofprivyc0002jjoh")],
     "pt": [DATA / "pt17" / "vieira_cartas_tomoIV_1855.txt.gz", DATA / "pt17" / "vieira_cartas_1912.txt.gz"],
     "pt18": [DATA / "pt18" / "correiobrazilie00unkngoog.txt.gz", DATA / "pt18" / "correiobrazilie02unkngoog.txt.gz",
              DATA / "pt18" / "oinvestigadorpo03unkngoog.txt.gz", DATA / "pt18" / "oinvestigadorpo05unkngoog.txt.gz"],
