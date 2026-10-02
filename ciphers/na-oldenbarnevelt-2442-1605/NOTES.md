@@ -661,3 +661,123 @@ de 605 ... D. Juo Gara de Senisteros", with cipher showing through from the vers
 foot, no decipherment. Not found: no clear copy, decipherment or key among all 11 scans.
 (d) Recipient side: the Spanish Netherlands side, Lonchay & Cuvelier tome I (read/grepped, status line) and the Huygens
 Oldenbarnevelt retroboeken (status line) give nothing. Not found.
+
+## 8. A2-OLD, 2 Oct 2026: image pass on blocks B and C1 (successor task (a)) -- both clear the 60% gate; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-02-acct2-a2-old.md` (LANE-A2PUSH, account 2), successor task (a) of section 7 only.
+
+Intake gate before deep work (`python3 tools/intake_gate_check.py na-oldenbarnevelt-2442-1605`, 2 Oct 2026 23:24 UTC):
+```
+na-oldenbarnevelt-2442-1605: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+EXIT 0
+```
+
+**Method.** Line crops cut from the leaves already on disk with the shared tool (no network):
+`python3 tools/iiif_lines.py --image images/002_8de1649f-...jpg --region 3300,2300,1680,1200 --prefix B --top-margin 25 --bottom-margin 25 --max-width 900 --overlap 120`
+(block B, folio 55 right page, 11 lines x 2 segments) and
+`python3 tools/iiif_lines.py --image images/006_d027ee45-...jpg --region 200,120,2420,760 --prefix C1 --top-margin 30 --bottom-margin 30 --max-width 850 --overlap 120`
+(block C1, folio 56, lines 1-6 x 4 segments; line 7 cut by hand with PIL at the same scale). Crops were kept in the
+session scratchpad, not committed (regenerate with the same commands). Every B and C1 line was then re-read
+glyph by glyph from the crops by this worker (one reading pass), and the uncertain spots were given to one blind
+Sonnet subagent pass (crops only, no prior reading; result below).
+
+**What the image pass found: the committed B/C1 transcription was structurally wrong, not just noisy.** Comparing the
+crops with the pre-A2-OLD rows (`transcription/ciphertext_BC1_pre_A2OLD.tsv`, kept as they were):
+- **Dropped and duplicated spans.** Block B line 3 carries `8l p8s4m8 d8l7 d8s3g2|8nc4` ("el pesame delo de
+  Sigu|ença"), entirely absent from the old rows (they ran `8n237 p7rq28` straight on); old B tokens 66-68
+  (`s2s s87 4hv88n`) and 81-82 (`g28 pvd38v8m7s`) are not on the leaf (merge artefacts of the pass reconciler); line 10
+  reads `3 h4c8r l7 q28` ("y hacer lo que"), which the old rows lacked. Block C1 line 7 is `d8 4c8rt4r 4 s8r23r 4 V.Sa
+  3 d4rl8 g2st7 8nt7d7-` ("de acertar a seruir a V.Sª y darle gusto en todo-"); the old rows had `q28 425a 3 c7n grsty`.
+- **"Digit 5" in these blocks is the hand's word-final s, and `425a`/`25.`/`25a` is the abbreviation "a V.Sª" / "V.Sª"
+  (vuestra señoría: u/v written as cipher 2, final s, superscript a)** -- `2s` with a superscript `a` occurs four times in
+  C1 and once in B, always where the formula "a V.Sª" is grammatical ("desseo uer aca a V.Sª", "suplico a V.Sª me
+  perdone", "decirlo a V.Sª pudiendolo callar, uera V.Sª", "acertar a seruir a V.Sª"). `358` (B) is `3 s8` "y se".
+  This replaces section 7's "literal numerals (folio, paragraph or date references)" reading of 425a/25./25a for
+  blocks B and C1 (A and C2 were not re-read here; `A57 d8'25,` very likely is "de V.S.," by the same pattern --
+  unchecked, A is out of this step's scope).
+- **"Digit 6" in these blocks is the hand's b** (`b28n4s`/`bv8n4s` "buenas", C1 `b38n,` "bien", `b8s424` "besaua"); the
+  "G"-shaped sign is the ligature `l7` "lo" (`l7 d8ss84`, `l7s t38mp7s`, `h4c8r l7 q28`); the `v`-like sign before a
+  vowel is mostly the hand's r (`4tr8v8n` "atreven", `4bl4r`, `8sp8r4nc4s`, `43r8`), and the `c`-like sign in
+  `t38mp7s`/`t8ndr34` is t. These are the v/r, c/t, g/q confusions section 7's fresh-instance subagent named, now
+  settled from the image for B and C1. This bears on section 7's successor task (b) (digit 6) but does not close it:
+  A and C2's 6s were not re-read.
+- The whole new B/C1 transcription is `transcription/passD_image_A2OLD.tsv` and now replaces the B and C1 rows of
+  `ciphertext.tsv` (A and C2 rows untouched). The ten B overrides rows of VX-RD04B are retired to
+  `transcription/overrides_BC1_pre_A2OLD.tsv` (their token indices no longer apply; every correction they made is
+  carried by the new transcription). Convention in passD: plain-letter signs that earlier passes read as digits are
+  written as letters (final s as `s`, b as `b`, r as `r`); the abbreviation is written `V.Sa`; confidence `uncertain`
+  maps to grade M under `scripts/apply_key.py`'s default (high/medium -> S, low -> I, anything else -> M).
+
+**Gate (section 7's 60% resolved share, S+M of tokens):**
+
+| block | tokens before -> after | S+M before | S+M after (S / M / I) |
+|---|---|---|---|
+| B | 86 -> 95 | 51% (44/86) | **99%** (90 / 4 / 1) |
+| C1 | 53 -> 61 | 43% (23/53) | **97%** (53 / 6 / 2) |
+
+Both blocks clear the gate. Caveat, stated plainly: the "after" grades are one reader's (this worker's) confidence on a
+single image pass, with the blind subagent pass below as the only independent check on the uncertain spots; a second
+full blind pass over all B/C1 crops has not been run. Grades are cryptanalytic (S) or uncertain (M), no H or C (rule 4).
+
+**Blind check (1 Sonnet subagent call, 8 line crops of the uncertain spots, no prior reading given).** It
+independently read: `854m8` as e-s-a-m-e with 5 = s; the G-shaped sign as the `lo` ligature; 6 as the hand's b
+(`m23 68n4s` "mui benas/buenas", `62 8n` / `b8n` "bien"); the v-like sign in `8sp8v4nc4s` as r ("esperanças");
+`52pp3c7 4 25` as "suplico a V.Sª" (pp possibly a pl ligature); `q28n d8c3r7` "quien decir-"; `l4 28rd4d q28 pr7-` "la
+verdad que pro-"; `s3n7` "sino"; `p8r8` "pere/pero" -- agreeing with this worker on every structural finding above
+(5 = final s, 6 = b, G = lo, v = r, 2s+superscript a = V.Sª). It disagreed on two tokens, both now downgraded: B line 7
+`43r8` (it read `c48v8`, "caere"?) -> grade I; B line 3 `8l` (it read `8c`) -> grade M. It could not settle C1
+line 1's `l8 b8s424` ("le besaua", already M) and read the following `l4s` as `c4s` (left at S: the l/c difference is
+visible at native resolution in this worker's crop; flagged). Its own note: "a single blind pass of low-resolution
+cursive". Count: of the 10 tokens this worker graded M or below in its uncertain set, the blind pass agrees on 6,
+disagrees on 2, and is undecided on 2.
+
+**Reading, blocks B and C1** (regenerated: `python3 scripts/apply_key.py digit_key.json ciphertext.tsv --overrides
+overrides.tsv --out reading.txt --tokens reading_tokens.tsv --meta reading_meta.txt`; M-graded words in italics):
+
+> **B:** la he dicho que *solo* desseo uer aca a V.Sª, i ella lo dessea harto, i se lamenta de uer los tiempos que
+> corren, i me enuio el *pesame* delo de *Sigu|ença*, porque hubo del mui *buenas* esperanças; i muchas ueces no
+> pueden, i otras ueces no se atreuen a ablar al duque con ueras, porque todos tienen sus pretensiones i andan al
+> *aire* de su gusto, i sus mismos hijos muchas ueces no se atreuen a decirle nada, i assi no ai sino paciencia i
+> hacer lo que pudieremos conforme a los tiempos.
+>
+> **C1:** decido dello, *i* le *besaua* las manos. Estas dos cossas he hecho por ser tan conuinientes en esta
+> occassion, i *parecerme* que V.Sª lo tendria por bien; si no, [pere?] *ansi* *suplico* a V.Sª me perdone *quien*
+> decirlo a V.Sª pudiendolo callar. Uera V.Sª [?]la uerdad que procedo, i con quantos desseos de acertar a seruir a
+> V.Sª i darle gusto en todo-
+
+Gloss: (B) "I have told her I only wish to see Your Lordship here, and she wishes it greatly, and laments to see the
+times that run; and she sent me condolences over the Sigüença matter, because there had been very good hopes of it;
+and many times they cannot, and other times they dare not speak to the duke in earnest, because all have their own
+claims and go about as suits their own pleasure, and his own children many times dare not tell him anything; and so
+there is nothing for it but patience and to do what we can according to the times." (C1) "... and she kissed [your]
+hands. These two things I have done because they were so fitting on this occasion and because it seemed to me Your
+Lordship would approve; if not, I beg Your Lordship to pardon whoever says it to Your Lordship when he could have kept
+silent. Your Lordship will see the truth with which I proceed, and with what wishes to get it right in serving Your
+Lordship and pleasing you in everything-".
+
+**Judge (rule 7), whole letter, after this pass:**
+```
+python3 tools/judge_plaintext.py specs/na-oldenbarnevelt-2442-1605.json --file ciphers/na-oldenbarnevelt-2442-1605/reading.txt
+FAIL language: score=-1.204, null_p99=-1.986, real_p05=-0.827, real_median=-0.783, mode=both, N=1226
+ok   words: cover=0.799, min=0.5, real_text_median_cover=0.908
+FAIL - na-oldenbarnevelt-2442-1605 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+(section 7: -1.32, cover 0.744). Split for diagnosis, same judge: B+C1 alone -1.087 (cover 0.863, N=634, real_p05
+-0.843); A+C2 alone, not re-read, -1.331 (cover 0.73, N=592). Reported as a FAIL. Two named reasons it is not yet a
+clean test of B+C1, not excuses for it: (i) the spec's judge names only `es`, which in `tools/judge_plaintext.py` is not
+an era-matched 1600s corpus, and this text keeps period spelling (u/v, i/y, ss, ç, "ai", "ablar") -- the pt17/pt18 and
+es17c lessons in CLAUDE.md rule 3 say to check corpus era before trusting a FAIL here; (ii) A and C2 still carry the
+unrepaired 5/6/v/c signs this pass settled only for B and C1. Grade counts, whole letter (286 tokens): S=246, M=17,
+I=23 (section 7: S=170, M=7, I=92 of 269).
+
+Do not classify novelty (rule 10). Report: what was found is above; not found -- no gloss or key on these leaves (as
+before); nothing here was checked against print (section 7's task (c) still open).
+
+**Next steps after A2-OLD (2 Oct 2026), cheapest first** (section 7's (a) is met for B and C1; (b) and (c) stand):
+(a') the same crop-and-read pass on blocks A and C2 with the conventions settled here (5 = final s, 6 = b, G = lo,
+v-like = r, 2s+superscript a = V.Sª), which should retire most of their remaining I tokens and the "sixth symbol"
+question with them -- about 20 line crops, one reading pass plus one blind check call, ~$4; (a'') a second full
+blind pass over all B/C1 crops to replace this worker's single-reader grades with a reconciled figure, ~$2;
+(d) build or select an era-matched early-17th-century Spanish corpus for the judge (rule 3, es17c/pt18 lessons) before
+reading the judge FAIL as a verdict on the text, ~$2; (c) the print check on Vanegas / Sigüença / Pamplona / Mattheo de
+Burgos, 1605-1606, before any sentence about this reading leaves the repository.

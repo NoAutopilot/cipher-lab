@@ -1,0 +1,11 @@
+token_index	block	corrected_raw_token	grade	note
+6	B		S	VX-RD04B, image confirmed (crop blockB_lines1-4, native res, folio 55): glyph is clearly 'd8ss87' -> decodes 'deseo' (desire/wish), a real word; passB's 'd8sr84' does not match the image
+23	B	8n237	S	VX-RD04B, image confirmed (blockB_lines5-8): glyph reads 'en237' -> decodes 'enuio' (envío, "I send/forward"), real word matching passA over passB's 'e nc4'
+24	B		S	VX-RD04B, image confirmed: 'p7rq28' -> decodes 'porque' (because), real word, clearly legible in the same line as token 23
+45	B		S	VX-RD04B, image confirmed (blockB_lines5-8, the 'hablar al duque con veras' line): 'd2q28' -> decodes 'duque' (duke), real word and contextually apt (a duke is referenced again in block A's reading); upgraded from dict-pick-B medium
+56	B	d8sg2st7	S	VX-RD04B, image confirmed (blockB_lines9-13): glyph reads closer to 'd8sg2st7' than either pass's transcription -> decodes 'desgusto' (displeasure/annoyance), real word
+70	B		S	VX-RD04B, image confirmed: 'd8c3rl8' -> decodes 'decirle' (to tell him/her), real word, sits directly after the 'atreuen a' (they dare) clause; upgraded from dict-pick-B medium
+71	B		S	VX-RD04B, image confirmed: 'n4d4,' -> decodes 'nada,' (nothing,), real word completing 'no se atreven a decirle nada' (they don't dare tell him/her anything); upgraded from dict-pick-B medium
+78	B	c38nc34	S	VX-RD04B, image confirmed (blockB_lines9-13, bottom line): reads as two adjacent words 'ciencia' (c38nc34) then 'hacer' (h4c8r), which the automatic sequence-aligner merged into one unresolved slot because the two blind passes segmented the line differently around here; this slot keeps 'ciencia' (decodes cleanly), 'hacer' is not separately represented in ciphertext.tsv -- flagged for a successor to fix the token count, not solved here
+80	B		S	VX-RD04B, image confirmed: 'p2d38r8m7s' -> decodes 'pudieramos' (pudiéramos, period spelling, "we could"), real word; upgraded from dict-pick-B medium
+81	B	c7nf7rm8	S	VX-RD04B, image confirmed: this slot is 'conforme' (in accordance), not either pass's candidate at this position ('g28' from A, 'c7mf3rm8' close from B but misaligned by the auto-diff here) -- corrected token decodes cleanly, real word
