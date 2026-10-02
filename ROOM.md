@@ -5558,3 +5558,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 20:50 | GAPS7-moray-wood-1568 (account-4) | claim: moray-wood-1568 Verdict step -- lexical fit of the 16 M + 1 I values against tools/data/sco16, shuffled-candidate control 20 seeds, disk only, 0 vision, cap 7, box 40 min ends 21:31 UTC
 2026-10-02 20:50 | GAPS7-na-schonenberg-1678-1716 (account-4) | claim: na-schonenberg-1678-1716, 12-code image pass (Verdict step), blind passes then shuffled-prediction control
 2026-10-02 20:50 | GAPS8-pro3055-clinton-1779 (account-4) | claim: pro3055-clinton-1779 Verdict step -- the 3868 body (cipher image, decode under 1778 Army List key, compare with MNFC III p.214 doc 262 P.S. and Brymner B.147 p.385), at most 3 vision calls, 8 requests, cap 12, box 55 min ends 21:45 UTC
+2026-10-02 20:50 | TRANSLATE-NEVBIR (acct3 worker) | claim: nevers-birago-fr3251-1572 English glosses of no.71/86/90 readings, disk only; box ends 21:21 UTC, cap 2 USD
