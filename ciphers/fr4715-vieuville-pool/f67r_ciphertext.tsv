@@ -2,6 +2,7 @@
 # 2 Oct 2026 (GAPS-fr4715-vieuville-pool, account-4): the four '?' tokens (L18/17, L23/16, L27/20, L31/9) settled from the crops by pass C (witness/f67r_pass_c.tsv, Fable 5.1 blind read, 4 calls) and pass D (witness/f67r_disagreements_pass_d.tsv, call 5); the clear-word tokens below are still the A/B reconciliation (51.4 pct agreement) -- pass C's reading of the clear French (H 327 / M 201 / L 102 of 630 words) is in witness/f67r_pass_c.tsv and is NOT folded in here; L31/9 is a clear word, so the cipher-token count is 27, not 28.
 # token: w:word = clear French as read (conf = the lower of the two passes); digits = a cipher group; a leading '.' = a bar or dot over the group (the word-code layer, not in the letter key); '?' = the passes disagree (both readings in note), conf L, settled only from the image.
 # 2 Oct 2026 (GAPS-fr4715-vieuville-pool-6, account-4): clear-word frame replaced by pass C's words, confidence from three-pass support (scripts/f67r_frame_fold.py: C 609 words, A or B agree 341, H 325 / M 86 / L 198); cipher tokens unchanged; lines kept as before: L31 (current 0 cipher runs, C 1).
+# 2 Oct 2026 (GAPS-fr4715-vieuville-pool-9, account-4): L-word pass (scripts/f67r_lword_pass.py): two blind Opus 5.5 readers on masked slots; an old L word both write -> H; a slot both readers agree on against the old reading is replaced at M only when the reconciler picks it; cipher tokens unchanged.
 line	pos	token	conf	note
 L01	1	w:Jay	H	frame GAPS-6: C+B, C conf H
 L01	2	w:sceu	M	frame GAPS-6: C only, C conf H
@@ -26,7 +27,7 @@ L01	20	w:a	H	frame GAPS-6: C+B, C conf H
 L01	21	w:apris	M	frame GAPS-6: C only, C conf H
 L01	22	w:en	M	frame GAPS-6: C only, C conf H
 L01	23	w:sa	L	frame GAPS-6: C only, C conf M
-L01	24	w:quartier	L	frame GAPS-6: C only, C conf M
+L01	24	w:quartier	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L01	25	w:la	L	frame GAPS-6: C only, C conf M
 L01	26	w:Dont	L	frame GAPS-6: C only, C conf L
 L01	27	w:ie	L	frame GAPS-6: C only, C conf L
@@ -58,7 +59,7 @@ L03	5	w:de	H	frame GAPS-6: C+AB, C conf H
 L03	6	14	M	
 L03	7	15	L	
 L03	8	w:mesmes	H	frame GAPS-6: C+AB, C conf H
-L03	9	w:p~	L	frame GAPS-6: C only, C conf M
+L03	9	w:po~	M	frame GAPS-9 L-pass: replaced S4 (A9=B9=recon; old p~)
 L03	10	w:luy	H	frame GAPS-6: C+AB, C conf H
 L03	11	w:auoir	H	frame GAPS-6: C+AB, C conf H
 L03	12	w:dit	H	frame GAPS-6: C+AB, C conf H
@@ -72,10 +73,11 @@ L03	19	w:chemins	H	frame GAPS-6: C+AB, C conf M
 L03	20	w:nauoir	L	frame GAPS-6: C only, C conf M
 L03	21	w:ueu	L	frame GAPS-6: C only, C conf M
 L03	22	w:que	H	frame GAPS-6: C+AB, C conf H
-L03	23	w:seullement	L	frame GAPS-6: C only, C conf M
-L03	24	w:ayant	L	frame GAPS-6: C only, C conf M
+L03	23	w:ses	M	frame GAPS-9 L-pass: replaced S6 (A9=B9=recon; old seullement ayant)
+L03	24	w:lettres	M	frame GAPS-9 L-pass: replaced S6 (A9=B9=recon; old seullement ayant)
+L03	25	w:ayent	M	frame GAPS-9 L-pass: replaced S6 (A9=B9=recon; old seullement ayant)
 L04	1	w:este	H	frame GAPS-6: C+AB, C conf H
-L04	2	w:ouublier	L	frame GAPS-6: C only, C conf L
+L04	2	w:ouuertes	M	frame GAPS-9 L-pass: replaced S7 (A9=B9=recon; old ouublier)
 L04	3	w:Ce	H	frame GAPS-6: C+AB, C conf H
 L04	4	w:qui	H	frame GAPS-6: C+AB, C conf H
 L04	5	w:ma	H	frame GAPS-6: C+AB, C conf H
@@ -103,14 +105,14 @@ L05	5	w:que	H	frame GAPS-6: C+AB, C conf H
 L05	6	w:ce	M	frame GAPS-6: C only, C conf H
 L05	7	w:que	H	frame GAPS-6: C+AB, C conf H
 L05	8	w:lon	M	frame GAPS-6: C only, C conf H
-L05	9	w:auoit	L	frame GAPS-6: C only, C conf M
+L05	9	w:auoit	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L05	10	w:de	H	frame GAPS-6: C+AB, C conf H
 L05	11	w:suspicion	H	frame GAPS-6: C+AB, C conf M
 L05	12	w:p~	L	frame GAPS-6: C only, C conf M
 L05	13	w:ce	M	frame GAPS-6: C only, C conf H
 L05	14	w:regard	H	frame GAPS-6: C+AB, C conf H
 L05	15	w:est	H	frame GAPS-6: C+AB, C conf H
-L05	16	w:leue	L	frame GAPS-6: C only, C conf M
+L05	16	w:leue	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L05	17	w:Que	M	frame GAPS-6: C only, C conf H
 L05	18	w:sy	H	frame GAPS-6: C+AB, C conf H
 L05	19	.27	M	
@@ -128,7 +130,7 @@ L06	8	w:se	H	frame GAPS-6: C+AB, C conf H
 L06	9	w:resolue	H	frame GAPS-6: C+AB, C conf H
 L06	10	w:de	H	frame GAPS-6: C+AB, C conf H
 L06	11	w:luy	H	frame GAPS-6: C+AB, C conf H
-L06	12	w:descouurir	L	frame GAPS-6: C only, C conf M
+L06	12	w:descouurir	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L06	13	w:ouuertement	L	frame GAPS-6: C only, C conf M
 L06	14	w:son	L	frame GAPS-6: C only, C conf M
 L06	15	w:inten~on	M	frame GAPS-6: C+A, C conf L
@@ -154,8 +156,8 @@ L07	15	w:deffiance	M	frame GAPS-6: C only, C conf H
 L07	16	w:quil	H	frame GAPS-6: C+AB, C conf H
 L07	17	w:continue	H	frame GAPS-6: C+AB, C conf H
 L07	18	w:a	H	frame GAPS-6: C+AB, C conf H
-L07	19	w:le	L	frame GAPS-6: C only, C conf M
-L07	20	w:seruir	L	frame GAPS-6: C only, C conf L
+L07	19	w:le	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
+L07	20	w:seruir	H	frame GAPS-6: C only, C conf L; GAPS-9 L-pass: A9+B9 agree
 L07	21	w:Lassl~	L	frame GAPS-6: C only, C conf L
 L08	1	w:deffraince	L	frame GAPS-6: C only, C conf L
 L08	2	w:ne	H	frame GAPS-6: C+AB, C conf H
@@ -181,7 +183,7 @@ L09	5	w:dez	L	frame GAPS-6: C only, C conf M
 L09	6	w:factieux	L	frame GAPS-6: C only, C conf L
 L09	7	w:qui	H	frame GAPS-6: C+AB, C conf H
 L09	8	w:ne	H	frame GAPS-6: C+AB, C conf H
-L09	9	w:taschent	L	frame GAPS-6: C only, C conf M
+L09	9	w:taschent	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L09	10	w:que	H	frame GAPS-6: C+A, C conf H
 L09	11	w:a	H	frame GAPS-6: C+AB, C conf H
 L09	12	w:obseruer	H	frame GAPS-6: C+A, C conf M
@@ -222,22 +224,22 @@ L11	5	w:ce	M	frame GAPS-6: C only, C conf H
 L11	6	w:lieu	H	frame GAPS-6: C+B, C conf H
 L11	7	w:dont	M	frame GAPS-6: C only, C conf H
 L11	8	w:vo~	H	frame GAPS-6: C+A, C conf M
-L11	9	w:puissiez	L	frame GAPS-6: C only, C conf L
+L11	9	w:puissiez	H	frame GAPS-6: C only, C conf L; GAPS-9 L-pass: A9+B9 agree
 L11	10	w:fere	L	frame GAPS-6: C only, C conf L
 L11	11	w:estat	L	frame GAPS-6: C only, C conf L
 L11	12	w:de	H	frame GAPS-6: C+AB, C conf H
-L11	13	w:dire	L	frame GAPS-6: C only, C conf M
+L11	13	w:dix	M	frame GAPS-9 L-pass: replaced S33 (A9=B9=recon; old dire)
 L11	14	w:p~sonne	H	frame GAPS-6: C+A, C conf H
 L11	15	w:Car	H	frame GAPS-6: C+A, C conf H
 L11	16	w:Je	M	frame GAPS-6: C only, C conf H
 L11	17	w:suis	H	frame GAPS-6: C+A, C conf M
 L11	18	w:a	H	frame GAPS-6: C+AB, C conf H
-L11	19	w:recognoistre	L	frame GAPS-6: C only, C conf M
+L11	19	w:recognoistre	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L11	20	w:de	H	frame GAPS-6: C+AB, C conf H
-L11	21	w:quel	L	frame GAPS-6: C only, C conf M
+L11	21	w:quil	M	frame GAPS-9 L-pass: replaced S35 (A9=B9=recon; old quel)
 L12	1	w:y	H	frame GAPS-6: C+AB, C conf H
 L12	2	w:en	M	frame GAPS-6: C only, C conf H
-L12	3	w:ayt	L	frame GAPS-6: C only, C conf M
+L12	3	w:ayt	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L12	4	w:vng	H	frame GAPS-6: C+AB, C conf H
 L12	5	w:seul	H	frame GAPS-6: C+AB, C conf H
 L12	6	w:Et	H	frame GAPS-6: C+AB, C conf H
@@ -271,9 +273,9 @@ L13	11	w:Mais	H	frame GAPS-6: C+AB, C conf H
 L13	12	w:vous	H	frame GAPS-6: C+A, C conf H
 L13	13	w:en	M	frame GAPS-6: C only, C conf H
 L13	14	w:pouuez	H	frame GAPS-6: C+A, C conf M
-L13	15	w:cognoistre	L	frame GAPS-6: C only, C conf M
+L13	15	w:cognoistre	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L13	16	w:les	M	frame GAPS-6: C only, C conf H
-L13	17	w:causes	L	frame GAPS-6: C only, C conf L
+L13	17	w:causes	H	frame GAPS-6: C only, C conf L; GAPS-9 L-pass: A9+B9 agree
 L13	18	w:de	M	frame GAPS-6: C only, C conf H
 L13	19	w:faicts	L	frame GAPS-6: C only, C conf M
 L13	20	w:et	H	frame GAPS-6: C+A, C conf M
@@ -313,7 +315,7 @@ L15	11	w:de	H	frame GAPS-6: C+AB, C conf H
 L15	12	w:voye	L	frame GAPS-6: C only, C conf L
 L15	13	w:rendre	L	frame GAPS-6: C only, C conf M
 L15	14	w:voz	H	frame GAPS-6: C+AB, C conf H
-L15	15	w:intentions	L	frame GAPS-6: C only, C conf M
+L15	15	w:intentions	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L15	16	w:parolle	L	frame GAPS-6: C only, C conf L
 L15	17	w:sans	L	frame GAPS-6: C only, C conf L
 L15	18	w:son	L	frame GAPS-6: C only, C conf L
@@ -329,24 +331,24 @@ L16	7	w:taire	H	frame GAPS-6: C+B, C conf H
 L16	8	w:po~	H	frame GAPS-6: C+B, C conf M
 L16	9	w:ne	H	frame GAPS-6: C+B, C conf H
 L16	10	w:vous	H	frame GAPS-6: C+AB, C conf H
-L16	11	w:desplaire	L	frame GAPS-6: C only, C conf M
+L16	11	w:desplaire	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L16	12	w:nestoit	H	frame GAPS-6: C+AB, C conf M
 L16	13	w:que	H	frame GAPS-6: C+AB, C conf H
 L16	14	w:Jay	M	frame GAPS-6: C only, C conf H
 L16	15	w:estime	H	frame GAPS-6: C+AB, C conf M
 L16	16	w:lung	M	frame GAPS-6: C+B, C conf L
 L16	17	w:etre	L	frame GAPS-6: C only, C conf L
-L16	18	w:vtile	L	frame GAPS-6: C only, C conf L
+L16	18	w:vtile	H	frame GAPS-6: C only, C conf L; GAPS-9 L-pass: A9+B9 agree
 L16	19	w:que	H	frame GAPS-6: C+AB, C conf H
 L16	20	w:laue	L	frame GAPS-6: C only, C conf L
 L16	21	w:Et	H	frame GAPS-6: C+A, C conf M
 L17	1	w:que	H	frame GAPS-6: C+AB, C conf H
-L17	2	w:vre~	L	frame GAPS-6: C only, C conf M
+L17	2	w:vre~	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L17	3	w:constance	H	frame GAPS-6: C+AB, C conf M
 L17	4	w:nestoit	H	frame GAPS-6: C+AB, C conf H
 L17	5	w:point	H	frame GAPS-6: C+A, C conf H
 L17	6	w:diminuee	H	frame GAPS-6: C+A, C conf H
-L17	7	w:po~	L	frame GAPS-6: C only, C conf M
+L17	7	w:po~	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L17	8	w:le	M	frame GAPS-6: C only, C conf H
 L17	9	w:partie	L	frame GAPS-6: C only, C conf M
 L17	10	w:ou	M	frame GAPS-6: C only, C conf H
@@ -367,10 +369,10 @@ L18	5	w:aduis	H	frame GAPS-6: C+AB, C conf H
 L18	6	w:de	H	frame GAPS-6: C+AB, C conf H
 L18	7	w:scauoir	H	frame GAPS-6: C+AB, C conf H
 L18	8	w:que	H	frame GAPS-6: C+AB, C conf H
-L18	9	w:ses	L	frame GAPS-6: C only, C conf M
+L18	9	w:ses	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L18	10	w:opinions	H	frame GAPS-6: C+AB, C conf M
 L18	11	w:ne	H	frame GAPS-6: C+AB, C conf H
-L18	12	w:naissent	L	frame GAPS-6: C only, C conf M
+L18	12	w:naissent	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L18	13	w:ezle	L	frame GAPS-6: C only, C conf L
 L18	14	w:sceu	L	frame GAPS-6: C only, C conf L
 L18	15	w:de	H	frame GAPS-6: C+AB, C conf M
@@ -389,17 +391,17 @@ L19	6	w:ne	H	frame GAPS-6: C+AB, C conf H
 L19	7	w:vo~	H	frame GAPS-6: C+AB, C conf M
 L19	8	w:sera	H	frame GAPS-6: C+A, C conf M
 L19	9	w:point	H	frame GAPS-6: C+A, C conf H
-L19	10	w:estrange	L	frame GAPS-6: C only, C conf M
-L19	11	w:dentendre	L	frame GAPS-6: C only, C conf M
+L19	10	w:estrange	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
+L19	11	w:dentendre	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L19	12	w:quile	L	frame GAPS-6: C only, C conf L
-L19	13	w:pro~duisent	L	frame GAPS-6: C only, C conf M
+L19	13	w:pro~duisent	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L19	14	w:de	H	frame GAPS-6: C+AB, C conf H
 L19	15	w:tels	L	frame GAPS-6: C only, C conf M
 L19	16	w:fruicts	L	frame GAPS-6: C only, C conf M
 L19	17	w:Ouec	L	frame GAPS-6: C only, C conf L
-L20	1	w:Lesperance	L	frame GAPS-6: C only, C conf M
+L20	1	w:Lesperance	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L20	2	w:que	H	frame GAPS-6: C+AB, C conf H
-L20	3	w:en	L	frame GAPS-6: C only, C conf M
+L20	3	w:en	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L20	4	w:vng	H	frame GAPS-6: C+AB, C conf H
 L20	5	w:moment	H	frame GAPS-6: C+A, C conf H
 L20	6	w:la	H	frame GAPS-6: C+AB, C conf H
@@ -410,7 +412,7 @@ L20	10	w:de	H	frame GAPS-6: C+AB, C conf H
 L20	11	w:calumnies	L	frame GAPS-6: C only, C conf M
 L20	12	w:quilz	L	frame GAPS-6: C only, C conf M
 L20	13	w:nos	L	frame GAPS-6: C only, C conf L
-L20	14	w:scauroient	L	frame GAPS-6: C only, C conf M
+L20	14	w:scauroient	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L20	15	w:dementir	L	frame GAPS-6: C only, C conf M
 L20	16	w:ezle	L	frame GAPS-6: C only, C conf L
 L20	17	w:Ezr~	L	frame GAPS-6: C only, C conf L
@@ -446,22 +448,21 @@ L22	10	w:le	H	frame GAPS-6: C+AB, C conf H
 L22	11	w:debuez	H	frame GAPS-6: C+A, C conf M
 L22	12	w:fe~	M	frame GAPS-6: C+B, C conf L
 L22	13	w:vous	H	frame GAPS-6: C+AB, C conf H
-L22	14	w:reconnoistrant	L	frame GAPS-6: C only, C conf L
-L22	15	w:come	L	frame GAPS-6: C only, C conf M
-L22	16	w:vng	M	frame GAPS-6: C only, C conf H
-L22	17	w:peu	L	frame GAPS-6: C only, C conf M
-L22	18	w:ont	L	frame GAPS-6: C only, C conf L
-L22	19	w:qui	M	frame GAPS-6: C+B, C conf L
-L22	20	w:sera	L	frame GAPS-6: C only, C conf M
-L22	21	w:monitia	L	frame GAPS-6: C only, C conf L
-L22	22	w:ob	M	frame GAPS-6: C+AB, C conf L
-L22	23	w:sbuez	L	frame GAPS-6: C only, C conf L
+L22	14	w:ressouuenant	M	frame GAPS-9 L-pass: replaced S77 (A9=B9=recon; old reconnoistrant come)
+L22	15	w:vng	M	frame GAPS-6: C only, C conf H
+L22	16	w:peu	L	frame GAPS-6: C only, C conf M
+L22	17	w:ont	L	frame GAPS-6: C only, C conf L
+L22	18	w:qui	M	frame GAPS-6: C+B, C conf L
+L22	19	w:sera	L	frame GAPS-6: C only, C conf M
+L22	20	w:monitia	L	frame GAPS-6: C only, C conf L
+L22	21	w:ob	M	frame GAPS-6: C+AB, C conf L
+L22	22	w:sbuez	L	frame GAPS-6: C only, C conf L
 L23	1	w:en	L	frame GAPS-6: C only, C conf M
 L23	2	w:parolles	L	frame GAPS-6: C only, C conf M
 L23	3	w:ouuertes	L	frame GAPS-6: C only, C conf M
 L23	4	w:a	M	frame GAPS-6: C+AB, C conf L
 L23	5	w:que	H	frame GAPS-6: C+AB, C conf H
-L23	6	w:lhumeur	L	frame GAPS-6: C only, C conf M
+L23	6	w:lhumeur	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L23	7	w:de	H	frame GAPS-6: C+AB, C conf H
 L23	8	.7	L	
 L23	9	w:nest	H	frame GAPS-6: C+AB, C conf H
@@ -483,7 +484,7 @@ L24	5	w:appelle	H	frame GAPS-6: C+A, C conf M
 L24	6	w:auoz	L	frame GAPS-6: C only, C conf L
 L24	7	w:a	H	frame GAPS-6: C+AB, C conf H
 L24	8	w:ses	L	frame GAPS-6: C only, C conf M
-L24	9	w:discours	L	frame GAPS-6: C only, C conf M
+L24	9	w:discours	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L24	10	w:Mais	H	frame GAPS-6: C+AB, C conf M
 L24	11	w:a	H	frame GAPS-6: C+AB, C conf H
 L24	12	w:dire	M	frame GAPS-6: C only, C conf H
@@ -495,7 +496,7 @@ L24	17	w:considerant	L	frame GAPS-6: C only, C conf M
 L24	18	w:celle	L	frame GAPS-6: C only, C conf L
 L24	19	w:vous	H	frame GAPS-6: C+AB, C conf M
 L24	20	w:auoissent	L	frame GAPS-6: C only, C conf L
-L25	1	w:ses	L	frame GAPS-6: C only, C conf M
+L25	1	w:vre~	M	frame GAPS-9 L-pass: replaced S91 (A9=B9=recon; old ses)
 L25	2	w:memoire	H	frame GAPS-6: C+B, C conf M
 L25	3	w:et~	H	frame GAPS-6: C+B, C conf M
 L25	4	w:renuoy	L	frame GAPS-6: C only, C conf M
@@ -506,14 +507,14 @@ L25	8	w:ssuils	L	frame GAPS-6: C only, C conf L
 L25	9	w:voque	L	frame GAPS-6: C only, C conf L
 L25	10	w:de	H	frame GAPS-6: C+AB, C conf H
 L25	11	w:perdre	H	frame GAPS-6: C+A, C conf M
-L25	12	w:p~	L	frame GAPS-6: C only, C conf M
+L25	12	w:po~	M	frame GAPS-9 L-pass: replaced S94 (A9=B9=recon; old p~)
 L25	13	w:leur	M	frame GAPS-6: C only, C conf H
 L25	14	w:contentement	M	frame GAPS-6: C only, C conf H
 L25	15	w:et	H	frame GAPS-6: C+A, C conf H
 L25	16	w:le	H	frame GAPS-6: C+A, C conf H
-L25	17	w:desplaisir	L	frame GAPS-6: C only, C conf M
+L25	17	w:desplaisir	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L25	18	w:de	H	frame GAPS-6: C+AB, C conf H
-L25	19	w:ceulx	L	frame GAPS-6: C only, C conf M
+L25	19	w:ceulx	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L25	20	w:qui	H	frame GAPS-6: C+AB, C conf H
 L25	21	w:desirent	L	frame GAPS-6: C only, C conf M
 L26	1	w:que	H	frame GAPS-6: C+AB, C conf H
@@ -525,17 +526,17 @@ L26	6	w:apres	H	frame GAPS-6: C+AB, C conf H
 L26	7	w:la	H	frame GAPS-6: C+AB, C conf H
 L26	8	w:ruine	H	frame GAPS-6: C+AB, C conf M
 L26	9	w:entiere	L	frame GAPS-6: C only, C conf M
-L26	10	w:ou	L	frame GAPS-6: C only, C conf M
+L26	10	w:ou	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L26	11	w:restablissement	H	frame GAPS-6: C+A, C conf M
 L26	12	w:de	H	frame GAPS-6: C+AB, C conf H
 L26	13	w:lestat	H	frame GAPS-6: C+A, C conf M
 L26	14	w:qui	H	frame GAPS-6: C+AB, C conf H
 L26	15	w:seba	L	frame GAPS-6: C only, C conf L
-L26	16	w:cause	L	frame GAPS-6: C only, C conf M
+L26	16	w:cause	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L26	17	w:que	H	frame GAPS-6: C+A, C conf H
 L26	18	w:sy	H	frame GAPS-6: C+AB, C conf H
 L26	19	w:vous	H	frame GAPS-6: C+A, C conf M
-L26	20	w:contenuez	L	frame GAPS-6: C only, C conf M
+L26	20	w:continuez	M	frame GAPS-9 L-pass: replaced S101 (A9=B9=recon; old contenuez)
 L27	1	w:en	M	frame GAPS-6: C only, C conf H
 L27	2	w:la	M	frame GAPS-6: C only, C conf H
 L27	3	w:resolua~	H	frame GAPS-6: C+AB, C conf M
@@ -545,7 +546,7 @@ L27	6	w:quil	H	frame GAPS-6: C+AB, C conf H
 L27	7	w:ne	H	frame GAPS-6: C+AB, C conf H
 L27	8	w:vous	H	frame GAPS-6: C+AB, C conf M
 L27	9	w:en	M	frame GAPS-6: C only, C conf H
-L27	10	w:scaura	L	frame GAPS-6: C only, C conf M
+L27	10	w:scaura	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L27	11	w:poin	H	frame GAPS-6: C+AB, C conf M
 L27	12	w:de	H	frame GAPS-6: C+AB, C conf H
 L27	13	w:gre	H	frame GAPS-6: C+AB, C conf H
@@ -553,7 +554,7 @@ L27	14	w:et	H	frame GAPS-6: C+AB, C conf H
 L27	15	w:aussy	H	frame GAPS-6: C+AB, C conf H
 L27	16	w:par	M	frame GAPS-6: C only, C conf H
 L27	17	.07	L	settled 2 Oct 2026 (GAPS, pass C + pass D, crop images/f67r_L27_s3.jpg x235-300): closed circle with one detached dot above, then a 7, no bar; A .67 ranked third, B [sym:o-like glyph with dot above] is the same ink; a dotted word-code
-L27	18	w:quan	L	frame GAPS-6: C only, C conf M
+L27	18	w:quan	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L27	19	w:vo^s	L	frame GAPS-6: C only, C conf M
 L27	20	w:y	M	frame GAPS-6: C only, C conf H
 L27	21	w:voulebes	L	frame GAPS-6: C only, C conf L
@@ -564,23 +565,23 @@ L28	3	.25	L
 L28	4	w:peult	L	frame GAPS-6: C only, C conf M
 L28	5	w:aller	M	frame GAPS-6: C only, C conf H
 L28	6	.49	L	
-L28	7	w:Jestime	L	frame GAPS-6: C only, C conf M
+L28	7	w:Jestime	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L28	8	w:que	H	frame GAPS-6: C+AB, C conf H
 L28	9	w:cela	M	frame GAPS-6: C only, C conf H
 L28	10	w:luy	H	frame GAPS-6: C+A, C conf H
-L28	11	w:agueable	L	frame GAPS-6: C only, C conf L
+L28	11	w:agreable	M	frame GAPS-9 L-pass: replaced S108 (A9=B9=recon; old agueable)
 L28	12	w:de	H	frame GAPS-6: C+AB, C conf H
 L28	13	w:la	M	frame GAPS-6: C only, C conf H
 L28	14	w:gloire	H	frame GAPS-6: C+AB, C conf M
 L28	15	w:on	H	frame GAPS-6: C+AB, C conf M
 L28	16	w:ne	M	frame GAPS-6: C only, C conf H
 L28	17	w:se	H	frame GAPS-6: C+AB, C conf H
-L28	18	w:parlera	L	frame GAPS-6: C only, C conf M
+L28	18	w:parlera	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L28	19	w:plus	H	frame GAPS-6: C+AB, C conf H
 L28	20	w:que	H	frame GAPS-6: C+AB, C conf H
 L28	21	w:de	H	frame GAPS-6: C+AB, C conf H
 L28	22	w:luy	M	frame GAPS-6: C only, C conf H
-L28	23	w:ou	L	frame GAPS-6: C only, C conf L
+L28	23	w:oue~	M	frame GAPS-9 L-pass: replaced S110 (A9=B9=recon; old ou)
 L29	1	w:auiourdhuy	L	frame GAPS-6: C only, C conf M
 L29	2	w:Il	H	frame GAPS-6: C+AB, C conf H
 L29	3	w:ne	H	frame GAPS-6: C+A, C conf H
@@ -590,7 +591,7 @@ L29	6	w:que	H	frame GAPS-6: C+AB, C conf H
 L29	7	w:de	H	frame GAPS-6: C+AB, C conf H
 L29	8	.57	M	
 L29	9	w:qui	H	frame GAPS-6: C+AB, C conf H
-L29	10	w:p~	L	frame GAPS-6: C only, C conf M
+L29	10	w:po~	M	frame GAPS-9 L-pass: replaced S112 (A9=B9=recon; old p~)
 L29	11	w:peu	M	frame GAPS-6: C only, C conf H
 L29	12	w:quil	H	frame GAPS-6: C+AB, C conf H
 L29	13	w:face	L	frame GAPS-6: C only, C conf M
@@ -604,7 +605,7 @@ L29	20	w:pendant	L	frame GAPS-6: C only, C conf L
 L30	1	w:fourra	L	frame GAPS-6: C only, C conf L
 L30	2	w:regibes	L	frame GAPS-6: C only, C conf L
 L30	3	w:tou~	L	frame GAPS-6: C only, C conf M
-L30	4	w:ses	L	frame GAPS-6: C only, C conf M
+L30	4	w:ses	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L30	5	w:diferens	L	frame GAPS-6: C only, C conf M
 L30	6	w:qui	H	frame GAPS-6: C+AB, C conf H
 L30	7	w:ne	H	frame GAPS-6: C+AB, C conf H
@@ -623,23 +624,23 @@ L30	19	w:lingerinas	L	frame GAPS-6: C only, C conf L
 L31	1	w:y	L	passes differ: A w:y / B:w:Zy
 L31	2	w:moy	L	passes differ: A w:moy / B:w:may
 L31	3	w:ame	L	
-L31	4	w:que	L	
+L31	4	w:que	H	GAPS-9 L-pass: A9+B9 agree
 L31	5	w:mande	L	passes differ: A w:mande / B:w:came
-L31	6	w:de	L	
+L31	6	w:de	H	GAPS-9 L-pass: A9+B9 agree
 L31	7	w:vos	L	passes differ: A w:vos / B:-
 L31	8	w:sibnict	L	passes differ: A w:sibnict / B:w:voz
 L31	9	w:2ii	L	settled 2 Oct 2026 (GAPS, pass C + pass D, crops images/f67r_L31_s1.jpg x620-1400 and f67r_L31_s2.jpg x60-330): NO cipher group here -- a dash, "auec le vo~ seruite~", a tall hooked paraph, then a word opening with an unbarred 2-shaped sign (2 first, secretary capital L of Luy second) and two minims; A .7 and B w:fbikt both excluded; kept as a clear-word token at conf L, not a cipher token
 L31	10	w:Lit	L	passes differ: A w:Lit / B:w:Zer
 L31	11	w:affire	L	passes differ: A w:affire / B:w:affirl
-L31	12	w:par	L	
+L31	12	w:par	H	GAPS-9 L-pass: A9+B9 agree
 L31	13	w:vill	L	
 L31	14	w:un	L	
 L31	15	w:sadunautm	L	passes differ: A w:sadunautm / B:w:sadnamem
 L31	16	w:dud	L	passes differ: A w:dud / B:w:ow
 L31	17	w:de	L	
 L31	18	w:la	L	
-L31	19	w:souhaite	L	
-L31	20	w:Mais	L	passes differ: A w:Mais / B:w:Mari
+L31	19	w:souhaite	H	GAPS-9 L-pass: A9+B9 agree
+L31	20	w:Mais	H	passes differ: A w:Mais / B:w:Mari; GAPS-9 L-pass: A9+B9 agree
 L31	21	w:est	L	passes differ: A w:est / B:w:vo
 L31	22	w:la	L	passes differ: A w:la / B:w:ta
 L31	23	w:ratmuit	L	passes differ: A w:ratmuit / B:w:ratamik
@@ -656,7 +657,7 @@ L32	10	w:pourra	H	frame GAPS-6: C+A, C conf H
 L32	11	w:dire	H	frame GAPS-6: C+A, C conf H
 L32	12	w:Ce	H	frame GAPS-6: C+AB, C conf H
 L32	13	15	L	
-L32	14	w:Apuril	L	frame GAPS-6: C only, C conf M
+L32	14	w:Apuril	H	frame GAPS-6: C only, C conf M; GAPS-9 L-pass: A9+B9 agree
 L32	15	w:a	H	frame GAPS-6: C+AB, C conf H
 L32	16	w:Cinq	M	frame GAPS-6: C only, C conf H
 L32	17	w:heures	H	frame GAPS-6: C+A, C conf M

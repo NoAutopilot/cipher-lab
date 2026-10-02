@@ -643,14 +643,65 @@ the control phrase is found by four of the five instruments. Requests: be-api.us
 only through Gallica-wide phrase search, whose OCR quality for 1665 type was not tested beyond the control (a 19th-c. printing), so it
 is a weak negative for that edition. Rule 10: a search result for the verifier, not a novelty verdict; nothing here is new or first.
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7 and -8, 2 Oct 2026)
+## GAPS-fr4715-vieuville-pool-9 (2 Oct 2026, account-4): the Verdict steps -- the Boltanski LOCAL-QUEUE row, then the f67r L-word pass
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`. Clock read 23:17-23:4x UTC 2 Oct 2026. Intake gate exit 0.
+Requests: 0 to any image or catalogue host (only the `tools/key_livecheck.py` probe's own test calls). Vision calls 3 of 3, all Opus 5.5.
+
+**(1) Boltanski 2006.** Filed as `LOCAL-QUEUE.tsv` row **L37** (kind `edition-read`, one of `tools/lq_answer_check.py`'s
+page/text-read kinds): open dsInahmnar8C in the desk browser, search inside for "12 décembre 1589", "Montholon", "chiffre", copy
+the footnote word for word with its page and archive reference, and answer whether she quotes any of the letter's text or only
+cites it. The row quotes the livecheck line (`Google Books (googleapis.com/books/v1) | yes | yes | HTTP 200`): the key works, but no
+credential opens the page view.
+
+**(2) The f67r L words.** The committed 96 crops are tools/iiif_lines.py output; re-cut to scratch with
+```
+$ python3 tools/iiif_lines.py --image ciphers/fr4715-vieuville-pool/images/src_ark_12148_btv1b52509819x_f149_300_900_3500_4820.jpg --region 0,0,3500,4820 --prefix f67r --max-width 1400 --follow-slope 300 --slope-local --slope-margin 12 --out <scratch>
+  wrote 99 crops and <scratch>/manifest.json
+```
+L01-L30 byte-identical to images/ (90 of 90); L31-L32 differ as the manifest records (hand-cut there), so the committed crops were used.
+`scripts/f67r_lword_pass.py` (new, pushed in e9257fe3 before either pass was read) masks every run of L clear words as a slot [Sn]
+in its line (123 slots, 221 L words; the 12 L cipher tokens are out of scope) and keeps the H/M words and cipher groups as context.
+Two blind Opus readers saw only that sheet and the crops the slots fall in (93 crops; B in reverse line order), never the old reading
+(`witness/f67r_lpass_{sheet.md,slots.tsv,A.tsv,B.tsv}`). Rule fixed in advance: an old L word both passes write at the aligned place
+-> H; a slot both passes agree on against the old reading goes to one reconciliation call, shown the crop and the two readings as X/Y
+in random order (`witness/f67r_lpass_recon{,_key}.tsv`), and is replaced at M only if it picks the new reading.
+
+| | count |
+|---|---|
+| slots where A and B write the same string (normalised) | 41 / 123 (33.3 pct) |
+| old L words both passes confirm -> H | **42** of 221 |
+| slots A=B against the old reading (to reconciliation) | 19 |
+| reconciler picks the new reading -> replaced at M | **12 slots, 14 words** (po~ x3, ses lettres ayent, ouuertes, dix, quil, ressouuenant, vre~, continuez, agreable, oue~) |
+| reconciler keeps the old reading -> stays L | 6 (S25 qua~ vous men songez, S46 co~ ne partie, S51 aultant, S53 voye rendre, S62 consoller, S83 arrestee) |
+| reconciler picks neither (S69, its "tels fruicts Oue") -> stays L | 1 |
+
+**Rule 4 frame grades, before -> after (632 clear words): H 325 / M 86 / L 221 -> H 367 / M 100 / L 165.** Cipher tokens unchanged
+(diffed): f67r 27 tokens, AB 8 / U 19. `tools/decode_key.py --check` exit 0 after regenerating f67r_reading.txt (its clear words
+changed). The judge stays a non-test on this design (GAPS-4) and was not run. Slot agreement is low (33 pct) because the slots are
+the leaf's hardest words; pass B reported that L22-L32 rest on fewer clear views. The reconciler says S6, S7, S108 (picks) and S83
+(keep) leaned partly on sense rather than letter shapes, so the replacements are M, never H. Spelling-only splits (aultant/autant,
+consoller/consoler, tels/telz) count as disagreements, since the normaliser does not fold doubled letters or z=s.
+Rule 10: nothing here is called new or first; this records what was found and where it was not found.
+
+```
+$ python3 tools/intake_gate_check.py fr4715-vieuville-pool   # exit 0
+fr4715-vieuville-pool: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+$ python3 tools/decode_key.py ciphers/fr4715-vieuville-pool --check   # exit 0
+reading up to date
+$ python3 tools/gaps_check.py fr4715-vieuville-pool   # exit 0
+OK keep-going fr4715-vieuville-pool: keep going: 5 internal gap(s), 0 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, -3, -4, -5, -6, -7, -8 and -9, 2 Oct 2026)
 Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604 letters (rank 1/201, z 5.11), L25-L30 + L28b 308 letters (rank 1/201, z 5.24); no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv); the lower dense block read 2 Oct 2026 (GAPS-5)
 - the no.37 dense cipher blocks - READ 2 Oct 2026: L06-L14 (GAPS-4) 604 letters, rank 1 of 201 z 5.11; L25-L30 + the unlisted row L28b (GAPS-5) 443 tokens, 308 letters (305 H + 3 I), rank 1 of 201 z 5.24, pass agreement 82.3 pct, decode --check exit 0; judge non-test (its design-matched control FAILs too); the 177 dotted/barred word-codes of the two blocks stay U - blocker: open-codes; what would read them is the same codes glossed on a sibling leaf (gap 4 below)
 - the 8-glyph rule on no.37 (43 L06-L14 tokens at I, 23 at S since GAPS-7) - blocker: open-codes; GAPS-5: the value-blind tile sheet did not beat its control (21/30, p 0.060); 2 Oct 2026 (GAPS-6): two blind Opus passes in line context (not told the rule) read 0 at 64/66 P sites and 0/97 F sites, both, so 0 moved I -> H; with no 8 written the shuffled-label control cannot vary (non-test). Blind visual re-reading of L06-L14 is [retired] for this question (rule 3 third-attempt clause: GAPS-4 passes, GAPS-5 sheet, GAPS-6 line passes); the lower block's blind 8s (35/39 at rule sites, GAPS-5) still corroborate the rule for this hand; 2 Oct 2026 (GAPS-7): the key-side word-cover test ran (scripts/eight_cover_test.py): 8x wins 23/66 sites vs 9x 6, 6x 1, 0x/3x 0, 36 ties; control 20 seeds mean 0.105 max 0.167 vs target 0.348 (rank 1 of 21); known answer: true 8 wins 17/46 (0.370), 8x on settled non-8 sites 0.061; 23 sites I -> S, 43 stay I (36 ties, 7 won by 9x/6x); what remains for the 43 is new material (the same letter run elsewhere, or a sibling leaf in the same hand), not a further pass at these glyphs
 - the four L-grade glosses (labr/de over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: open-codes; re-read 2 Oct 2026 (GAPS-3) from tall native crops, 1 call: all four now M (de and legat clear as text but each straddles two groups; L20 du/dn sits over the dotted 16; L22 is an insertion 'peu de', not a gloss), no decode-key value changed; what would settle the group cover is the same code glossed again on a sibling leaf (no.21/35/39, gap 3 below)
 - no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37; next: the other glossed pool leaves (no.21 f.44, no.35 f.58, no.39 f.62, all "en partie déchiffrée" per the dépouillement) read the same way as this step, one leaf a job, ~$10 each
-- the clear-French frame of f67r_ciphertext.tsv (198 C-only L words after the fold) - blocker: not-attempted; 2 Oct 2026 (GAPS-6): pass C folded in as the frame with three-pass support (scripts/f67r_frame_fold.py: 609 words, A or B agree 341 = 56.0 pct; H 325 / M 86 / L 198; L31 kept as A/B); cipher tokens unchanged; judge FAIL -1.012 (was -1.145) vs real_p05 -0.867, a non-test on this design; what remains is transcription of the clear frame, not decipherment; next: one strong second pass on the crops of the L words only, ~$3
-- Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: not-attempted; the cloud cannot open the page (books.google.com page view bot-blocked) and no LOCAL-QUEUE row is filed yet; next: file the LOCAL-QUEUE edition-read row for the page citing 12 décembre 1589 and read whether she quotes the text, ~$1
+- the clear-French frame of f67r_ciphertext.tsv (198 C-only L words after the fold) - blocker: not-attempted; 2 Oct 2026 (GAPS-6): pass C folded in as the frame with three-pass support (scripts/f67r_frame_fold.py: 609 words, A or B agree 341 = 56.0 pct; H 325 / M 86 / L 198; L31 kept as A/B); cipher tokens unchanged; judge FAIL -1.012 (was -1.145) vs real_p05 -0.867, a non-test on this design; what remains is transcription of the clear frame, not decipherment; 2 Oct 2026 (GAPS-9): L-word pass, two blind Opus readers on 123 masked slots + 1 reconciliation: 42 L -> H, 14 replaced at M, frame H 325/M 86/L 221 -> H 367/M 100/L 165, slot agreement 41/123; 165 L words remain (mostly L20-L32 and the slots the readers split); a further model pass at the same crops is not the next instrument; next: a person's read of the remaining L slots from a word sheet built from witness/f67r_lpass_slots.tsv, ~$2 to build
+- Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: waiting-on LOCAL-QUEUE L37 (filed 2 Oct 2026, GAPS-9: edition-read in the desk browser, the footnote citing 12 décembre 1589 copied word for word, and whether she quotes the text); the cloud cannot open the page (books.google.com page view bot-blocked)
 
 ## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026)
 - [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its period glosses read (this step): 5 word-codes at C/M, 4 carried to no.44 at M; no.21/35/39 (also "en partie déchiffrée") not yet imaged
@@ -660,4 +711,4 @@ Read so far: (updated GAPS-5) no.37 f.60r both dense blocks decoded: L06-L14 604
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
 - [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 6 internal gaps; cheapest next: file the LOCAL-QUEUE edition-read row for Boltanski 2006 (dsInahmnar8C, the page citing 12 décembre 1589), ~$1; then the strong second pass on f67r's 198 C-only L frame words, ~$3 (print check done 2 Oct 2026, GAPS-8: 0 specific hits per letter, control hit)
+Verdict: keep going: 5 internal gaps; cheapest next: one of the other glossed pool leaves (no.21 f.44, no.35 f.58 or no.39 f.62) imaged native and its glosses read as no.37 was, for no.44's seven unglossed word-codes, ~$10 (Boltanski filed as LOCAL-QUEUE L37, waiting on the desk; f67r L-word pass done 2 Oct 2026, GAPS-9: 42 L -> H, 14 -> M, 165 L left for a person's read)
