@@ -254,3 +254,32 @@ flagging bad cuts and set-asides. The template is `tools/sign_sorter/template.ht
 `tools/sign_sorter/browser_tests/` (node + playwright with a mock db); run them before republishing. Never build a
 sorter from restricted scans: the page carries the images. Worked example: ciphers/debosnys-1883/sorter/.
 For the next invented-alphabet target, this step comes before any transcription pass is priced.
+
+## What Bourdeau does that we did not (1 Oct 2026)
+
+On 1 Oct 2026 Daniel Bourdeau took up our GitHub issue 16 (espagnol142-mercy-1648, BnF Espagnol 144 f. 22, the key
+recovered ciphertext-only here) and finished it in one session. His folder and working rules are snapshotted
+unmodified at `sources/cyphersolver/2026-10-01/` (github.com/dbourdeau/cyphersolver, commit in `COMMIT`; code MIT,
+text CC BY 4.0, quoted briefly with attribution, no code copied). His result there: the transcription checked against
+the images and "corrected it in eight places", 521 of 529 tokens (98.5%) read as sense, and the name sign and a named
+official identified from the clear instructions of the same volume. Three habits made the difference:
+
+1. **"Read in part" is a stopping point only with an outside blocker.** His CLAUDE.md: "'Read in part' is a stopping
+   point only when every unread piece has an outside blocker (no key material, too short, illegible, needs physical
+   access). Otherwise keep going." His writeup skill (section 0a) lists the escalation steps (siblings, clear pages,
+   known keys, print, key rebuild, retry) and a checker parses the result. We had 34 `partial` targets on 1 Oct 2026,
+   many ending in a written next step nobody ran. Adopted as CLAUDE.md rule 5 "Finish or name the blocker" and
+   `tools/gaps_check.py` (our list adds waiting-on a named ASKS row or reply, an image-check step, and [retired] for a
+   step rule 3's third-attempt clause closed).
+2. **Check the transcription against the image, mechanically included.** The key's values run 2-34, so a token above
+   34 can only be two digits written together: our four "M" codes were digit pairs (65 = s r, 52 = r o, 48 = q u,
+   72 = t o; we had taken 72 for a syllable code), and the same reasoning found glued 2 6 pairs and an open 14 read as
+   19. A one-line out-of-key scan of the transcription against the key's range would have flagged the four above 34
+   before anyone graded them; it is now the `image-check` step of the escalation list.
+3. **Use the neighbouring clear leaves as cribs.** The clear Spanish instructions on ff. 20r and 21r of the same
+   volume, to the same envoy, gave the cast and the clerk's spellings; f. 21r's request that Saint-Ibal come
+   "incognito" to report identified the name sign (grade C, adjacent plaintext). We had opened the same leaves
+   (our NOTES.md, sibling sweep of items 4-10, canvases 54-57) and even noted the same names, Chevreuse and
+   Saint-Ibal, but logged them as "zero code groups" and moved on: we were looking for sibling ciphertext, not for
+   cribs. Clear leaves next to a cipher are evidence for the reading, not only negatives for the pool. This is the
+   `siblings` and `clear-pages` steps.

@@ -177,6 +177,16 @@ session and every subagent, cloud or local.
    where a control showed the negative was not a real test, is `partial`, never `closed-negative`, and gets a row in
    `NEAR.md` with the numbers and the named next step; `closed-negative` needs every family in the target's ladder logged
    with a passed control. Both parents read NEAR.md at every check-in and every retrospective reviews it.
+   Finish or name the blocker (1 Oct 2026, from Bourdeau's practice): `partial` is a stopping point only when every
+   unread piece is blocked from outside the session -- no-key-material, too-short, illegible, needs-physical-access,
+   or waiting-on a named ASKS row or awaited reply. Otherwise work the escalation steps (siblings, clear pages, known
+   keys, print, key rebuild, image check, retry) and keep reading. An internal gap names its next step: open-codes
+   is allowed but keeps the target workable, not-attempted carries "; next: <step>, ~$<cost>". A worker stopping at
+   `partial` appends "## Remaining gaps" and "## Escalation" to NOTES.md, ending in a Verdict, "keep going" or
+   "parked". A step rule 3's third-attempt clause closed is marked [retired] with its instrument named: it does not
+   hold the target open, and only a different instrument or new material reopens it. `tools/gaps_check.py <target>`
+   (format in its docstring; `--all` for every partial) passes before the done line. Source:
+   sources/cyphersolver/2026-10-01/ (his CLAUDE.md; writeup skill section 0a).
 6. **Absolute dates.** "19 Sept 2026", never "recently" or "yesterday". Read the clock (`date -u`) before writing
    any date or time; never estimate it, and never tell a worker the date without checking. Lesson of 23 Sept 2026:
    an orchestrator wrote times that ran eight hours ahead of the clock and dated a whole evening's files 23 Sept.
@@ -575,7 +585,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    names the one action that depends on nobody, read from the folder's own "## While waiting" NOTES.md section,
    and `--wait-only` lists the blocked rows still missing one), `tools/key_design.py` + `tools/design_prior.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (d):
    every solved or recovered key is added to KEY-OFFICES.tsv and KEY-DESIGN.tsv at the lane's close-out, and
-   design_prior.py is run before an attack family is chosen for an unread letter).
+   design_prior.py is run before an attack family is chosen for an unread letter), `tools/gaps_check.py` (1 Oct 2026,
+   rule 5's "Finish or name the blocker": a `partial` NOTES.md ends in parsed Remaining gaps and Escalation sections,
+   and "parked" passes only when every gap has an outside blocker and no step is untried).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image

@@ -6,6 +6,9 @@
   python3 tools/decode_key.py TARGET_DIR --config F      use config file F instead of TARGET_DIR/decode.json
   python3 tools/decode_key.py TARGET_DIR --ciphertext ciphertext.tsv --key key.tsv [--exceptions exceptions.tsv]
                               [--style spaced|concat|words] [--reading reading.txt] [--tokens reading_tokens.tsv]
+  python3 tools/decode_key.py TARGET_DIR --split-check [--split-tsv out.tsv]
+                                                       report out-of-key / out-of-range tokens and how each splits
+                                                       into two or three key values (a report: writes no reading)
 
 With no decode.json and no options it reads ciphertext.tsv (or ciphertext.txt), key.tsv and exceptions.tsv if present,
 and writes reading.txt and reading_tokens.tsv in the 'spaced' style. Nothing is fetched; nothing outside TARGET_DIR
@@ -59,6 +62,21 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
   defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade
+
+--split-check (1 Oct 2026, the espagnol142-mercy-1648 lesson): against a key of values 2-34, four tokens (65, 52,
+48, 72) were each two digits written together (D. Bourdeau, dbourdeau/cyphersolver issue 16; snapshot
+sources/cyphersolver/2026-10-01/). They had been keyed as M rows by an anneal, so 'not in the key' alone would not
+have caught them. The check therefore flags a sign token when (a) it is not a key code ('unkeyed'), or (b) it is
+numeric and lies outside the numeric range of the key's confident rows -- codes whose grade is not M, I or U (a
+blank grade counts as confident, as default_grade does) -- ('out-of-range'; computed only when at least half the
+key's codes, and at least five, are plain digit strings; falls back to all numeric codes when none is confident).
+For each flagged digit token it lists every way the digit string cuts into two or three consecutive key codes
+(exact strings, so '05' is not '5'; parts drawn from the confident range when there is one) with their values.
+Output: a compact table per job and a count line; --split-tsv FILE also writes target, job, key_range, token, n, status,
+positions (line:pos), exceptions (occurrences overridden by exceptions.tsv), splits, decoded. Exit 0 whatever it
+finds (a report, not a gate); exit 2 only if the target cannot be loaded. It writes no reading and ignores --check.
+A split is a candidate for an image check, never a correction by itself: 26 = i at Mercy r18 and r24 was also two
+digits (2 6, o s), in range and keyed, which only sense and the image could show.
 
 Test: python3 tools/tests/test_decode_key.py (reproduces fr2980-gramont, fr20140-danzay-1557 and dupuy468-anhalt
 readings from tools/tests/decode_configs/*.json, byte for byte, without writing).
@@ -449,6 +467,106 @@ def run_job(target, job):
     return outputs, cnt, ct
 
 
+# ---------------------------------------------------------------- split check (out-of-key / glued digits)
+
+LOW_GRADES = set('MIU')
+
+
+def key_range(key):
+    """(lo, hi, parts, basis): numeric range of the key's confident codes, the set of codes a split may use, and a
+    note on how the range was found. (None, None, all codes, why) when the key is not mostly numeric."""
+    codes = list(key)
+    num = [c for c in codes if c.isdigit()]
+    if len(num) < 5 or len(num) * 2 < len(codes):
+        return None, None, set(codes), f'no range ({len(num)} of {len(codes)} codes numeric)'
+    conf = [c for c in num if not (key[c]['grade'] or '').strip() or (key[c]['grade'] or '').strip()[0] not in LOW_GRADES]
+    basis = conf or num
+    lo, hi = min(int(c) for c in basis), max(int(c) for c in basis)
+    parts = {c for c in codes if not c.isdigit() or lo <= int(c) <= hi}
+    why = f'{len(conf)} confident numeric codes' if conf else f'all {len(num)} numeric codes (none confident)'
+    return lo, hi, parts, why
+
+
+def digit_splits(tok, parts, maxparts=3):
+    """Every cut of the digit string tok into 2..maxparts consecutive pieces that are each in parts."""
+    out = []
+    n = len(tok)
+    for i in range(1, n):
+        a, b = tok[:i], tok[i:]
+        if a in parts and b in parts:
+            out.append([a, b])
+        if maxparts >= 3 and a in parts:
+            for j in range(1, len(b)):
+                if b[:j] in parts and b[j:] in parts:
+                    out.append([a, b[:j], b[j:]])
+    return out
+
+
+def split_check(target, job):
+    """Rows (dicts) for every distinct sign token that is unkeyed or outside the key's confident numeric range."""
+    ct = job.get('ciphertext') or next((f for f in ('ciphertext.tsv', 'ciphertext.txt')
+                                        if os.path.exists(os.path.join(target, f))), 'ciphertext.tsv')
+    path = os.path.join(target, ct)
+    fmt = job.get('format') or detect_format(path)
+    recs = LOADERS[fmt](path, job)
+    key = load_keys(target, job.get('key', 'key.tsv'))
+    exc = load_exceptions(os.path.join(target, job.get('exceptions', 'exceptions.tsv')), job)
+    lo, hi, parts, why = key_range(key)
+    flagged = collections.OrderedDict()
+    for r in recs:
+        if r['kind'] != 'sign':
+            continue
+        t = r['sign']
+        if t not in key:
+            status = 'unkeyed'
+        elif lo is not None and t.isdigit() and not lo <= int(t) <= hi:
+            status = 'out-of-range'
+        else:
+            continue
+        if t.isdigit() and lo is not None and t not in key and not lo <= int(t) <= hi:
+            status = 'unkeyed,out-of-range'
+        f = flagged.setdefault(t, dict(token=t, status=status, n=0, positions=[], exceptions=0))
+        f['n'] += 1
+        f['positions'].append(f"{r['label']}:{r['pos']}")
+        f['exceptions'] += (r['folio'], r['line'], r['pos']) in exc
+    for f in flagged.values():
+        sp = digit_splits(f['token'], parts - {f['token']}) if f['token'].isdigit() else []
+        f['splits'] = ['|'.join(s) for s in sp]
+        f['decoded'] = [' '.join(key[p]['value'] or '?' for p in s) for s in sp]
+    meta = dict(ciphertext=ct, range=(lo, hi), basis=why, signs=sum(r['kind'] == 'sign' for r in recs))
+    return list(flagged.values()), meta
+
+
+SPLIT_TSV_COLUMNS = ['target', 'job', 'key_range', 'token', 'n', 'status', 'positions', 'exceptions', 'splits', 'decoded']
+
+
+def split_report(target, jobs, tsv=None):
+    rows_out, total = [], 0
+    for job in jobs:
+        rows, meta = split_check(target, job)
+        lo, hi = meta['range']
+        rng = f'{lo}-{hi}' if lo is not None else '-'
+        occ = sum(f['n'] for f in rows)
+        withsplit = sum(1 for f in rows if f['splits'])
+        print(f"split-check {meta['ciphertext']}: {meta['signs']} signs; key range {rng} ({meta['basis']}); "
+              f"{len(rows)} flagged tokens ({occ} occurrences), {withsplit} with a candidate split")
+        for f in rows:
+            pos = ','.join(f['positions'][:6]) + (f",+{len(f['positions']) - 6}" if len(f['positions']) > 6 else '')
+            sp = '; '.join(f'{s}={d}' for s, d in zip(f['splits'], f['decoded'])) or '-'
+            print(f"  {f['token']:>12}  x{f['n']:<3} {f['status']:<20} {sp}  [{pos}]")
+            rows_out.append([os.path.basename(os.path.normpath(target)), meta['ciphertext'], rng, f['token'], str(f['n']),
+                             f['status'], ','.join(f['positions']), str(f['exceptions']),
+                             '; '.join(f['splits']) or '-', '; '.join(f['decoded']) or '-'])
+        total += len(rows)
+    print(f'split-check total: {total} flagged tokens')
+    if tsv:
+        with open(tsv, 'w', encoding='utf-8') as fh:
+            fh.write('\t'.join(SPLIT_TSV_COLUMNS) + '\n')
+            for r in rows_out:
+                fh.write('\t'.join(c.replace('\t', ' ') for c in r) + '\n')
+    return rows_out
+
+
 def load_config(target, a):
     if a.config or (os.path.exists(os.path.join(target, 'decode.json')) and not a.ciphertext):
         cfg = json.load(open(a.config or os.path.join(target, 'decode.json'), encoding='utf-8'))
@@ -466,7 +584,19 @@ def main(argv=None):
     ap.add_argument('--config', help='decode.json path (default TARGET/decode.json)')
     ap.add_argument('--ciphertext'); ap.add_argument('--key'); ap.add_argument('--exceptions')
     ap.add_argument('--style', choices=sorted(STYLES)); ap.add_argument('--reading'); ap.add_argument('--tokens')
+    ap.add_argument('--split-check', action='store_true',
+                    help='report tokens not in the key or outside its confident numeric range, with every split '
+                         'into 2-3 key values (writes no reading; exit 0 unless the target cannot be loaded)')
+    ap.add_argument('--split-tsv', help='with --split-check: also write the rows to this TSV file')
     a = ap.parse_args(argv)
+    if a.split_check:
+        try:
+            jobs = load_config(a.target, a)
+            split_report(a.target, jobs, a.split_tsv)
+        except Exception as e:  # a report: only a target that cannot be loaded is an error
+            print(f'split-check: cannot load {a.target}: {type(e).__name__}: {e}', file=sys.stderr)
+            return 2
+        return 0
     stale = []
     for job in load_config(a.target, a):
         outputs, cnt, ct = run_job(a.target, job)

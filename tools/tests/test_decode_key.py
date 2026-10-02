@@ -65,5 +65,51 @@ try:
 finally:
     shutil.rmtree(tmp2)
 
+# --split-check (1 Oct 2026, espagnol142-mercy-1648: 65 52 48 72 against a key of 2-34 were two digits written
+# together, and had been keyed as M rows, so the range comes from the confident rows only)
+tmp3 = tempfile.mkdtemp()
+try:
+    import contextlib, io
+    letters = 'abcdefghijklmnopqrstuvwxyzabcdefg'
+    krows = ''.join(f'{c}\t{letters[c - 2]}\tS\n' for c in range(2, 35))
+    open(os.path.join(tmp3, 'key.tsv'), 'w').write('code\tletter\tgrade\n' + krows + '48\td\tM\n[MARK:box]\t_\tM\n')
+    toks = ['2', '48', '3', '99', '[MARK:box]', '1234', '48', 'X7']
+    open(os.path.join(tmp3, 'ciphertext.tsv'), 'w').write(
+        'line\tposition\tsign\tconfidence\n' + ''.join(f'r01\t{i}\t{t}\tH\n' for i, t in enumerate(toks, 1)))
+    json.dump({'format': 'tsv'}, open(os.path.join(tmp3, 'decode.json'), 'w'))
+    rows, meta = decode_key.split_check(tmp3, {'format': 'tsv'})
+    by = {r['token']: r for r in rows}
+    ok = (meta['range'] == (2, 34) and set(by) == {'48', '99', '1234', 'X7'}
+          and by['48']['status'] == 'out-of-range' and by['48']['n'] == 2
+          and by['48']['positions'] == ['r01:2', 'r01:7'] and by['48']['splits'] == ['4|8']
+          and by['48']['decoded'] == ['c g']
+          and by['99']['status'] == 'unkeyed,out-of-range' and by['99']['splits'] == ['9|9']
+          and '12|34' in by['1234']['splits'] and '12|3|4' in by['1234']['splits']
+          and '1|2|34' not in by['1234']['splits']          # '1' is not a key code
+          and by['X7']['status'] == 'unkeyed' and by['X7']['splits'] == [])
+    fails += not ok
+    print('PASS' if ok else 'FAIL', 'split_check: out-of-range M row, unkeyed, 2- and 3-way splits, confident range')
+    out = os.path.join(tmp3, 'split.tsv')
+    with contextlib.redirect_stdout(io.StringIO()) as buf, contextlib.redirect_stderr(io.StringIO()):
+        r0 = decode_key.main([tmp3, '--split-check', '--split-tsv', out])
+        r2 = decode_key.main([os.path.join(tmp3, 'nope'), '--split-check'])
+    lines = open(out).read().splitlines()
+    ok = (r0 == 0 and r2 == 2 and lines[0].split('\t') == decode_key.SPLIT_TSV_COLUMNS and len(lines) == 5
+          and 'split-check total: 4 flagged tokens' in buf.getvalue()
+          and not os.path.exists(os.path.join(tmp3, 'reading.txt')))
+    fails += not ok
+    print('PASS' if ok else 'FAIL', '--split-check exits 0 with findings, 2 on an unloadable target, writes the TSV '
+                                    'and no reading')
+    # every fixture config still loads under --split-check (report only)
+    for name in sorted(os.listdir(CFG)):
+        cfg = json.load(open(os.path.join(CFG, name)))
+        with contextlib.redirect_stdout(io.StringIO()):
+            rc = decode_key.main([os.path.join(ROOT, cfg['target']), '--config', os.path.join(CFG, name),
+                                  '--split-check'])
+        fails += rc != 0
+        print('PASS' if rc == 0 else 'FAIL', '--split-check loads', cfg['target'])
+finally:
+    shutil.rmtree(tmp3)
+
 print('decode_key:', 'all tests pass' if not fails else f'{fails} failures')
 sys.exit(1 if fails else 0)
