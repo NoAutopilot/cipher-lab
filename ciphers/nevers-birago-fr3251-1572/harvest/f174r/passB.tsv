@@ -1,0 +1,86 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	X_NEW	T57	M	unmatched shape; prose before: not checked at crop edge
+L01	2	T49		H	
+L01	3	T36		H	
+L01	4	T29	T24	M	
+L01	5	T90		H	
+L01	6	T63		H	
+L01	7	T19		H	
+L01	8	T33		H	
+L01	9	T25		H	
+L01	10	T90		H	
+L01	11	T86	T60	M	
+L01	12	T60		H	
+L01	13	T98		H	
+L01	14	T96		H	
+L01	15	T85		H	
+L01	16	T76	T26	M	
+L01	17	T33	T33	M	
+L01	18	T80	X_NEW	M	
+L01	19	T26		H	
+L01	20	T50		H	
+L01	21	T55		H	
+L01	22	T60		H	
+L01	23	T53		H	
+L01	24	X_NEW	T89	M	unmatched shape
+L01	25	T37		H	line end/prose after not seen
+L02	1	T29		H	prose before: not checked at crop edge
+L02	2	T25		H	
+L02	3	T19		H	
+L02	4	T89	T76	M	
+L02	5	T86	T60	M	
+L02	6	T25		H	
+L02	7	T98		H	
+L02	8	T25		H	
+L02	9	T96		H	
+L02	10	T80		H	
+L02	11	T60		H	
+L02	12	T88		H	
+L02	13	T49		H	
+L02	14	T37		H	
+L02	15	T58		H	
+L02	16	T89		H	
+L02	17	T90		H	
+L02	18	T29		H	
+L02	19	T37		H	
+L02	20	T36		H	
+L02	21	T25		H	
+L02	22	T36		H	
+L02	23	T85		H	
+L02	24	T29		H	
+L02	25	T24		H	
+L02	26	T55		H	
+L02	27	T29	T24	M	
+L02	28	X_NEW		M	unmatched shape
+L02	29	T25		H	line end/prose after not seen
+L03	1	T98		H	prose before: not checked at crop edge
+L03	2	T65		H	
+L03	3	X_NEW	T89	M	unmatched shape
+L03	4	T86		H	
+L03	5	T27	T36	M	
+L03	6	T37		H	
+L03	7	T36		H	
+L03	8	T55		H	
+L03	9	T76		H	
+L03	10	X_NEW		M	4 and 7 digit-like marks
+L03	11	X_NEW		M	4 and 7 digit-like marks
+L03	12	T26		H	
+L03	13	T36		H	
+L03	14	T19		H	
+L03	15	T60		H	
+L03	16	T53		H	
+L03	17	T19		H	
+L03	18	T98		H	
+L03	19	T25		H	
+L03	20	T95		H	
+L03	21	T70		H	
+L03	22	T55		H	
+L03	23	T33		H	
+L03	24	T76		H	
+L03	25	T29		H	
+L03	26	T60		H	
+L03	27	T19		H	
+L03	28	T63		H	
+L03	29	T25		H	line end/prose after not seen
+L04	1	T46	T11	M	prose before: line start (L04: marks before prose, followed by ", Et credo"); digit-8 shape
+L04	2	X_NEW		M	unmatched shape; prose after: "Et"; reads like digits 8 and 5 / long-s with dot
