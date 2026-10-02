@@ -1,0 +1,15 @@
+# NEXT-F61, 2 Oct 2026: f.61r clear-prose fragments on disk (single blind passes, grade M, not a full transcription):
+# H16 scripts/read_call_U.tsv (L02/L04/L06/L09/L10), H264 (L10), H286 (L04), H297 (L05). Spelling as read.
+je ne seroys pas paresseux si
+pas paresseux si
+Je croys aussi que les choses sont
+que les choses sont
+sur les lieux vous verres
+s'il s'y presentoit les occasions
+Et s'il s'y pouvoit
+en connoyssant le fruit
+On ne desiroit point du reste
+particulierement sur les
+beaucoup desiree Mais on avoit
+# Tomokiyo's published span phrase (mayenne.htm, quoted in his own prose), for locating a printed text of the letter:
+jalousie au beau pere
