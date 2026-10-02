@@ -116,7 +116,7 @@ than a standalone TNA order.
 Waits on: a TNA page-copy order for SP 78/232/44 (REQUEST.md, since 24 Sept 2026, now folded into the
 consolidated TNA batch, ASKS row 73).
 
-- M: check the note field of every item in SP 78/232 individually (not by keyword) for other cipher/decipher siblings -- tools/discovery_items.py, ~150 items, this file's own named next step.
+- [done 2 Oct 2026, A2-YOR: see "SP 78/232 per-item note check" below] M: check the note field of every item in SP 78/232 individually (not by keyword) for other cipher/decipher siblings -- tools/discovery_items.py, ~150 items, this file's own named next step.
 - S: search the Hardwicke Papers (1778, Joseph Yorke's father's collection) via archive.org/HathiTrust for this correspondence, not checked this pass.
 - S: full-text search the three already-fetched Bedford correspondence volumes for 'Albemarle' or 'Aix-la-Chapelle'; only 'Tobago'/'Puyzieulx' were tried so far.
 
@@ -161,3 +161,43 @@ unreachable.
 one. The Hardwicke-side papers (Joseph Yorke's letters to his father, the 1st Earl of Hardwicke) are
 not searched here -- a later step, not this gate pass. Not found in print.
 Result: nothing found that reads f.103's cipher.
+
+## SP 78/232 per-item note check (A2-YOR, 2 Oct 2026, 23:2x UTC)
+
+Step run: the While-waiting "M" step -- the `note` field of every item in SP 78/232 read one record at a time, not by
+keyword. `tools/discovery_items.py` gained a `--notes PARENT_ID` mode for this (children list, then one details
+record per item, 1.6 s apart; offline test `tools/tests/test_discovery_items.py`). Command:
+`python3 tools/discovery_items.py --notes C4539850 > ciphers/sp78-yorke-1749/sp78-232-notes.tsv` (C4539850 is the
+piece, the `parentId` of SP 78/232/44). Output on disk: `sp78-232-notes.tsv`, 109 rows, one per item (the piece
+has 109 items, not ~150; `hasMoreAfterLast: false`). Requests: discovery.nationalarchives.gov.uk 112 (1 details
+probe, 1 children list, 109 details, 1 earlier children probe), no 403/429/500.
+
+Result (catalogue only; every item `digitised: false` as far as checked earlier, no leaf read):
+- **Yorke to Bedford, in cipher (incoming, note "Cipher."/"Partly in cipher."): 16 items**, the target and 15
+  siblings, 4/15 Mar to 21 June/2 July 1749: SP 78/232/41 (f.94), 44 (f.103, target), 53 (f.130), 55 (f.138),
+  62 (f.158), 68 (f.177), 73 (f.189), 74 (f.192), 77 (f.199), 84 (f.219), 86 (f.223), 91 (f.237), 95 (f.247),
+  98 (f.255), 101 (f.261), 109 (f.279). The keyword search of 24 Sept found none of these as cipher items; the
+  caveat recorded then was right.
+- **Bedford (and once Aldworth) to Yorke, office drafts noted "Part to be sent in cipher"/"To be sent in
+  cipher": 11 items**: SP 78/232/32 (f.69), 38 (f.88), 46 (f.107), 47 (f.112), 60 (f.152, Aldworth), 66 (f.172),
+  67 (f.175), 79 (f.207), 99 (f.257), 100 (f.259), 108 (f.277). A draft marked "to be sent in cipher" is
+  normally the clear text the office enciphered; if the sent, enciphered versions survive on Yorke's side
+  (Hardwicke Papers, British Library), each pair is known plaintext for the embassy's cipher (crib material, grade
+  C if aligned). Not checked whether the Yorke-side copies survive; whether one cipher served both directions is
+  not established.
+- **No item in the piece is noted or described as a decipherment, a decipher, or a key** (grep of note and
+  description for decipher/key: 0 items). Whether the 16 incoming cipher letters carry interlinear decipherments
+  on the leaf (common for Secretary-of-State incoming cipher) is not visible in the catalogue; only the leaves
+  settle it.
+- Tool false positives, for the record: SP 78/232/90 and /92 are flagged by the tool only because their
+  descriptions contain "duplicate" (the tool's word list); their notes say nothing of cipher.
+
+What this changes: the target is one of a 16-letter incoming cipher series in one piece over four months, plus 11
+outgoing drafts in clear marked for encipherment -- a sign pool (CLAUDE.md pipeline 3, pools first), not a single
+short letter. The page-copy order (REQUEST.md, ASKS row 73 batch) is better spent on one "Cipher." sibling with
+the target, so the leaves show whether a period decipherment is written on them, before any cryptanalysis.
+
+Next cheapest step: (a) ~$1, no network beyond Discovery/BL catalogue: check whether BL Add MSS (Hardwicke
+Papers) hold Bedford's enciphered letters to Yorke for the 11 draft dates (searcharchives.bl.uk?format=json,
+catalogue only); (b) add one "Cipher." sibling (e.g. SP 78/232/41, f.94) to the TNA copy order in REQUEST.md --
+an owner-side order, not run here.
