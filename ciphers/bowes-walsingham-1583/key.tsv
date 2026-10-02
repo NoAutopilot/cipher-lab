@@ -3,6 +3,8 @@
 # grade: S = value fixed by a crib-matched name and confirmed in at least one other fragment (crib test: 43/101
 # tokens vs 28.8 +- 2.9 for other letters' word lists and 27.0 +- 3.1 for shuffled tokens; crib_runs.tsv);
 # M = single-occurrence or otherwise uncertain value; '?' with grade '-' = unread (not graded). u and v are one letter (09).
+# 2 Oct 2026 (NEXT-BOW): rows 02, 03, 25, 27 revised from Boyd's calendar asterisks (CSP Scotland vi no.584 pp.566-568,
+# csp6_584_snippets.tsv) and the F8-F11 alignment against the Letter-Book CCXL (align_ccxl.py); NOTES step of that date.
 sign	value	grade	evidence
 06	r	S	siR F1, mauuissieR F6, glencaRne F4 F3, Ruthen F9
 07	s	S	Smallet F2 F7, Sir F1, mauuiSSier F6, hiS F9
@@ -23,9 +25,9 @@ sign	value	grade	evidence
 22	g	S	Glencarne F4 F8, maGnyuil F4
 23	g	M	F3 first sign, where Glencarne is expected; second g sign
 24	y	M	magnYuil, huntleY F4 only
-25	?	-	F11 only; unread
+25	?	-	F11 only; unread. If F10 = 223 (03 = 3) the only CCXL phrase of F11's shape is 'betwixt 32 and him' (Letter-Book p.532), which wants 25 = 2 -- but 02 is already 2, and Boyd's calendar omits that sentence (no asterisk check), so 25 stays unread (align_ccxl.py, 2 Oct 2026)
 26	a	M	glencArn F8 only (second a sign)
-27	?	-	F4 last sign, after glencarne; code sign or 'and' (Letter-Book: '... Glencarne, and Montrosse')
+27	and	-	not a cipher sign: a handwritten 'and' abbreviation (Tomokiyo's manuscript check, 24 Sept 2026, NOTES 'Specialist reply'); excluded from the token count by check.py, 2 Oct 2026
 28	?	-	F5, the whole fragment; code sign (by position in CLXXXVII, possibly the cipher for 870)
-02	?	-	F10 (02 02 03); unread (by position, possibly the code number 223 of CCXL)
-03	?	-	F10, F11; unread
+02	2	M	cipher digit-sign: F10 (02 02 03) sits where Boyd p.567 prints a cipher asterisk ('In this * has sent for his advice') and the Letter-Book CCXL has 'In this 223 hath sent for mine advice'; pattern AAB = 223 (align_ccxl.py, 2 Oct 2026). Single fragment; an image would settle it
+03	3	M	cipher digit-sign: F10 = 223 (see 02); carried into F11 (03 25 h i m = '3 ? him'), which excludes T3's 'to him' (03 = t): under letters-only values F10 has no placement in CCXL and no fragment order aligns (align_ccxl.py, 2 Oct 2026)
