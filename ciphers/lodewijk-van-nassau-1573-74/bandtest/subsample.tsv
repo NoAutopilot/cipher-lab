@@ -1,0 +1,11 @@
+n_occ	null_acc	letter_acc	null_codes	letter_codes	gate
+5	0.983	0.443	12	12	fail
+8	1.000	0.483	11	11	fail
+14	1.000	0.478	8	8	fail
+15	1.000	0.431	5	4	fail
+18	1.000	0.466	4	4	fail
+21	1.000	0.543	3	3	fail
+23	1.000	0.815	2	2	pass
+24	1.000	0.840	2	2	pass
+33	1.000	0.850	1	1	pass
+73	0.000	0.000	0	0	fail

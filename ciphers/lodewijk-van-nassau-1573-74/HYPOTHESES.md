@@ -94,3 +94,8 @@ Not a conflict between two H witnesses: only one witness is H, and the list-B ob
 | WVO 5801 p1_L06 pos 106, p3_L06 pos 5 | Willem -> Jan and Lodewijk (list B) | 28 May 1573 | key_5801 'q', one aligner observation, M (AX2-5801) | M, unconstrained | key_5801.tsv |
 Consequence: 5797 p5_spot5 (list A) reads 173 = graf at H through exceptions_5797.tsv (5797 key_full job only); key_full.tsv gets no
 173 row, so list-B letters do not inherit it. No statistic was computed, so no rule-3 control applies (a gloss read and a print fit).
+
+## Null band 125/139-151, NULL vs letter by fr16 char LM (2 Oct 2026, A2-LVN3, CLAUDE.md rule 3)
+| hypothesis | instrument | control (known answer) | control result | gate | target result | verdict |
+|---|---|---|---|---|---|---|
+| band codes 125, 139-151 in 4610/4611/4616 are NULLs | bandtest/band_lm.py: summed log2 p over 8-letter windows, NULL vs best single letter, fr16 order 5 | 13 hidden C nulls 121-138 + 13 matched C letter codes, same letters | NULL 13/13 1.000; letter 6/13 0.462 (true letter is L* 10/13) | 0.80 per class | all 11 called NULL, 2.0-5.2 bits/occ (not licensed) | CONTROL BELOW GATE: untested-by-this-tool (attempt 1 of this instrument) |

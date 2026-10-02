@@ -1,0 +1,12 @@
+code	tokens	scored_occ	called	best_letter	delta_bits_per_occ	licensed
+125	33	33	NULL	E	3.032	no (untested-by-this-tool at this N)
+139	15	15	NULL	I	2.033	no (untested-by-this-tool at this N)
+140	21	21	NULL	E	2.780	no (untested-by-this-tool at this N)
+142	18	18	NULL	E	2.448	no (untested-by-this-tool at this N)
+145	23	23	NULL	E	3.504	no (untested-by-this-tool at this N)
+146	8	8	NULL	E	2.957	no (untested-by-this-tool at this N)
+147	14	14	NULL	I	3.259	no (untested-by-this-tool at this N)
+148	24	24	NULL	E	5.176	no (untested-by-this-tool at this N)
+149	21	21	NULL	E	2.656	no (untested-by-this-tool at this N)
+150	73	73	NULL	E	4.678	no (untested-by-this-tool at this N)
+151	5	5	NULL	L	2.591	no (untested-by-this-tool at this N)
