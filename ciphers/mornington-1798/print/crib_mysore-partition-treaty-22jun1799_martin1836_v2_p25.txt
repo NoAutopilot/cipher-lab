@@ -1,0 +1,474 @@
+# CRIB -- The Earl of Mornington to Lieut.-Colonel Kirkpatrick, Fort St George, 5 Jun 1799 (the form of the Mysore
+# settlement: a partition treaty with the Nizam first, then a subsidiary treaty with the Rajah; Seringapatam retained;
+# Chittledroog refused to the Nizam), with the Partition Treaty of Mysore of 22 Jun 1799 (ten articles, Schedules A-D,
+# ratifications of 26 Jun and 13 Jul 1799) and its Separate Articles printed by Martin as the footnote under the letter.
+# Printed: Martin, Despatches ... of the Marquess Wellesley, Vol. 2 (1836), No. XIII, pp. 25-34 (footnote pp. 26-33).
+# Source: archive.org india.history.resource.35315, 35315_djvu.txt raw lines 2075-2584 (OCR uncorrected; body and
+# footnote de-interleaved per page by extract_cribs.py, nothing retyped). Grade C (printed clear text, rule 4).
+# Crib for: D623/24 (7 Jun 1799, Mornington to Dundas, 'memorandum in cipher detailing the proposed settlement' of
+# Mysore; its clear letter is print/D623-24_candidate_martin1836_v2_p35.txt). The letter of 5 Jun names 'my draft
+# accompanying this letter'; Martin prints the treaty as executed on 22 Jun, not that draft, so shares, place names and
+# sums are the expected crib material, not the exact wording of a 7 Jun memorandum. Not a reading of any D623 item.
+# GAPS3-mornington-1798, 2 Oct 2026.
+
+## Letter body (No. XIII)
+
+[p. 25]
+No, XIII.
+
+From Lord Mornington to Lient.-Colonel Kirkpatrick.
+*
+Sir, Fort St. George, 5th June, 1799.
+
+I have given full attention to the draft of the treaty trans-
+mitted by you, and although the substance, and many parts of
+the detail of that draft are perfectly conformable to my ideas, I
+think the whole transaction would be more conveniently thrown
+into a different form, from that which you have given to it.
+I do not see any necessity for ceding the whole Country in
+the first instance to the Rajah of Mysore, and accepting
+again as a cession under his authority, such districts as must
+
+[p. 26]
+be retained by the Allies. I think it will be more convenient,
+and Jess liable to future embarrassment, to rest the whole
+Settlement upon the basis of our right of conquest, and thus
+to render our cession the source 6f the Rajah’s dominion. For
+' this purpose the proceeding should commence with a treaty
+between the Nizam and the Company, with power to the
+Peishwah to accede under certain conditions. The next
+step should be a treaty with the Rajah, containing all that
+relates to his connexion with the Company, and to his interior
+government.
+The Rajah after his accession, may be made a party to the
+general guarantee, contained in my draft accompanying this
+letter.* The principal points in which I differ with you, are
+
+[p. 27]
+the necessity of holding certain principal fortresses in absolute
+sovereignty. I have now limited that demand to the fortress
+
+[p. 28]
+of Seringapatam, which I cannot consent to part with. With
+regard: to Chittledroog, Bednore, &c. lying within the terri-
+
+[p. 29]
+tory of the Rajah, the. possession of Seringapatam, and the
+conditions of our subsidiary treaty with the Rajah, will I trust,
+
+[p. 30]
+give us asufficient command over them; but, I cannot consent
+to allow the Nizam to hold Chittledroog ; it would be a very
+
+[p. 31]
+inconvenient arrangement in every point of view, and I, there-
+fore, request you entirely to discourage the repetition of any:
+
+[p. 32]
+such proposition:on the part of Meer Allum. The question
+of ceding any part of Soonda to the Peishwah, may be re-
+
+[p. 33]
+served for future consideration. To-morrow, or at farthest
+on the next day, I hope to be able to forward to you the draft
+of the treaty with the Rajah. At present, it is not my inten-
+tion to quit Madras, unless I shall Jearn from you and my
+brother, that my presence can be useful in Mysore. My
+baggage is still on the road, and I could move it at a very
+short notice.
+
+I cannot at all agree with the Commissioners, that it is ne-
+cessary to delay our settlement of the Country until Chittle-
+droog shall be surrendered, or taken; and I desire that you
+will not wait for either event, but proceed forthwith to con-
+clude the necessary treaties, as soon as you shall have taken
+the necessary precautions suggested in my instructions to the
+Commissioners for the affairs of Mysore. I fear that the
+final arrangement is likely to suffer delay, from our having no
+person on the spot authorized to sign a treaty on the part of
+the Nizam; perhaps Meer Allum may think himself autho-
+rized to do so at my request, under the full powers which I
+have received from His Highness,—with a view to obviate
+every difficulty, I have written to Hyderabad to desire that
+
+[p. 34]
+your brother will immediately obtain, and despatch full powers
+to Meer Allum for this purpose, but I think it would be a far
+preferable arrangement if Meer Allum could be brought to
+sign the treaty immediately, and thus enable us to proceed at
+once to the settlement of the Country.
+
+Tam, &ce.
+MorNINGTON.
+
+## Footnote: Partition Treaty of Mysore, 22 Jun 1799, Schedules A-D, Separate Articles
+
+[p. 26, foot]
+(Treaty of Mysore.]
+
+* Treaty for strengthening the Alliance and friendship, subsisting between
+
+the English East India Company Bahaudur, His Highness the Nabob
+
+. Nizam ud Dowlah Asoph Jah Bahaudur, and the Peishwah Row
+
+Pundit Purdhaun Bahaudur, and for effecting a Settlement of the
+Dominions of the late Tippoo Sultaun.
+
+Whereas the deceased Tippoo Sultaun, unprovoked by any act of aggres-
+sion on the part of the Allics, entered into an offensive and defensive
+alliance with the French, and admitted a French force into his army, for the
+purpose of commencing war against the Honourable English Company
+Bahauder, and its Allies, Nizam ud Dowlah Asoph Jah Bahaudur, and
+the Peishwah Row Pundit Purdhaun Bahaudur. And the said Tippoo
+Sultaun having attempted to evade the just demands of satisfaction and
+security, made by the Honourable English Company Bahaudur, and its
+Allies, for their defence and protection, against the joint designs of the
+said Sultaun and of the French; the allied Armies of the Honourable
+-English Company Bahaudur, and of His Highness Nizam ul Dowlah
+Asoph Jah Bahaudur proceeded to hostilities in vindication of their rights,
+and for the preservation of their respective Dominions from the perils of
+foreign invasion, and from the ravages of a cruel and relentless enemy.
+
+And whereas, it has pleased Almighty God to prosper the just
+cause of the said Allies, the Honourable English Company Bahaudur,
+and his.Highness Nizam ud Dowlah Asoph Jah Bahaudur, with a con-
+‘tinued. course of victory and success, and finally to crown their arms
+by the reduction of the Capital of Mysore, the fall of Tippoo Sul-
+taun, the utter extinction of his power and the unconditional sub-
+mission of his people. And whereas, the said Allies being disposed
+to exercise ‘the rights of conquest, with the same moderation and for-
+bearance, which they have observed from the commencement to the con-
+clusion -of the late successful war, have resolved to use the power which
+
+[p. 27, foot]
+it has pleased Almighty God to place in their hands, for the purpose of |
+‘obtaining reasonable compensation for the expenses of the war, and of
+establishing permanent security and genuine tranquillity for themselves,+
+and their subjects, as well as for all the powers contiguous to their res-
+pective dominions. Wherefore, a treaty for the adjustment of the ter-
+ritories of the late Tippoo Sultaun, between the English East India
+Company Bahaudur, and his Highness the Nabob Nizam ud Dowlah
+Asoph Jah Bahaudur, is now concluded by Lieut.~General George Harris,
+Commander in Chief of the Forces of His Britannic Majesty, and of the
+English East India Company Bahaudur in the Carnatic, and on the Coast
+of Malabar; the Honourable Colonel Arthur Wellesley, the Honourable
+Henry Wellesley, Lieut.-Colonel William Kirkpatrick, and Lieut.-Colonel
+Barry Close, on the part and in the name of the Right Honourable Richard -
+Earl of Mornington, K. P., Governor-General for all the affairs, civil and
+military of the British nation in India; and by the Nabob Meer Allum Ba-
+haudur, on the part and in the name of His Highness the Nabob Nizam ud
+Dowlah Asoph Jah Bahaudur, according to the undermentioned articles,
+which by the blessing of God, shall be binding upon the heirs and successors
+of the contracting parties, as long as the sun and moon shall endure, and of
+which the conditions shall be reciprocally observed by the said contracting
+parties.
+
+Article \st—It being reasonable and just that the Allies by this treaty
+should accomplish the original objects of the war, viz. a due indemnifica-
+tion for the expenses incurred in their own defence, and effectual security |
+for their respective possessions against the future designs of their enemies,
+it is stipulated and agreed, that the districts specified in the Schedule A,
+hereunto annexed, together with the heads of all the passes leading from the
+territory of the late Tippoo Sultaun, to any part of the possessions of the
+English East India Company Bahaudur, of its Alies or tributaries situated
+below the Ghauts on either coast, and all forts situated near to, and com-
+manding the said passes, shall be subjected to the authority, and for ever in-
+corporated with the dominions of the English East India Company Bahau-
+dur, the said Company Bahaudur engaging to provide effectually out of the
+revenues of the said districts, for the suitable maintenance of the whole of
+the families of the late Hyder Alli Khan, and of the late Tippoo Sultaun,
+and to apply to this purpose, with the reservation hereinafter stated, an
+annual sum of not less than two lacs of star pagodas, making the Com-
+pany’s share as follows :—estimated value of districts, enumerated in the
+Schedule A, according to the statement of Tippoo Sultaun in 1792, Can-
+teria pagodas, 7,77,170; deduct provision for the families of Hyder Alli
+Khan, and of Tippoo Sultaun two lacs of star pagodas in Canteria pagodas,
+2,40,000; remains to the East India Company, 5,37,170.
+
+Article 2nd.—For the same reason stated in the preceding Article, the
+
+[p. 28, foot]
+districts specified in Schedule B, annexed hereunto, shall be subjected to
+the authority and for ever united with the dominions of the Nabob Ni-
+zam ud Dowlah Asoph Jah Bahaudur, the said Nabob having engaged to
+provide liberally from the revenues of the said districts, for the support of
+Meer Kummer ud Deen Bahaudur and of his family and relations, and to
+grant him for this purpose a personal jaghire in the district of Gurrum-
+condah, equal to the annual sum of 2,10,000 rupees, or of 70,000 Canteria
+pagodas, over and above and exclusive of a jaghire, which the said Nabob
+has also agreed to assign to the said Meer Kummer ud Deen Khaun, for
+the pay and maintenance of a proportionate number of troops, to be em-
+ployed in the service of his said Highness, making the share of his Highness
+as follows—estimated value of the territory specified in Schedule B, accord-
+ing to the statement of Tippoo Sultaun in !792, 6,07,332 ; deduct personal
+jaghire to Meer Kummer ud Deen Khaun, 2,10,000 rupees, or Conterai
+pagodas, 70,000; remains to the Nabob Nizam ud Dowlah Asoph Jah
+Bahaudur, 5,37,332.
+
+Article 3rd.—It being further expedient for the preservation of peace
+and tranquillity, and for the general security on the foundations now es-
+tablished by the contracting parties, that the fortress of Seringapatam
+should be subjected to the said Company Bahaudur, it is stipulated and
+agreed, that the said fortress and the island on which it is situated,
+including the small tract of land or island, lying to the westward of the
+main island, and bounded on the west by a nullah, called the Mysore
+Nullah, which falls into the Cauvery near Chungul Ghaut, shall become
+part of the dominions of the said Company in full right and sovereignty
+for ever.
+
+Article 4th.—A separate Government shall be established in Mysore,
+and for this purpose it is stipulated and agreed, that Maharajah Mvsvor
+Kistna Rajah Oodiaver Bahaudur, a descendant of the antient Rajahs of
+Mysoor, shall possess the territory hereinafter described upon the condi-
+tions hereinafter mentioned.
+
+Article 5th.—The contracting powers mutually and severally agree, that
+the districts specified in Schedule.C, hereunto annexed, shall be ceded to
+the said Maharajah Mysoor upon the conditions hereinafter mentioned.
+
+Article 6th.—The English East India Company Bahaudur shall be at
+liberty to make such deductions from time fo time, from the sums allotted
+by the Ist. Article of the present treaty, for the maintenance of the families
+of Hyder Alli Khaun and Tippoo Sultaun, as may be proper in consequence
+of the decease of any member of the said families, and in the event of any
+hostile Sttempt on the part of the said family, or of any member of it,
+against the duthority of the contracting parties, or against the peace of
+their respective dominions, or the territory of the Rajah of Mysore; then
+
+[p. 29, foot]
+the said English East India Company Bahaudur shall be at liberty to limit,
+or suspend.entirely the payment of the whole, or any part of the stipend,
+hereinbefore stipulated, to be applied to the maintenance and support, of
+the said families. oc
+
+Article 7the—His Highness the Peishwah Row Pundit.Purdhaun Bahau-
+
+dur shall be invited to accede to the present treaty ; and although the. said
+Peishwah Row Pundit Purdhaun Bahaudyr, has neither participated in the
+expense or danger of the late war, and therefore is not entitled to share any,
+part of the acquisitions. made by the contracting parties, namely, the Ep-
+glish East India Company Bahaudur, and his Highness the Nabob Nizam.
+ud Dowlah Asoph Jah Bahaudur ; yet, for the maintenance of the relations
+of, friendship, and alliance between the said Peishwah Row Pundit Purd-,
+haun Bahaudur, the English East India Company Bahaudur, his Highness.
+the Nahob Nizam ul Dowlah Asoph Jah Bahaudur, and Maharajah, Mysoor
+Kistna Rajah Bahaudur, it is stipulated and agreed that certain districts,
+specified in Schedule D, hereunto annexed, shall be reserved for the pur-.
+pose of being eventually ceded to the said Peishwah Row Pundit Purdhaun
+Babaudur, in full right and sovereignty, in the same manner as if he had
+been acontracting party to this treaty; provided however, that the said
+Peishwah Row Pundit, Purdhaun Bahaudur shall accede to the present
+treaty.in its full extent, within one month from the day on which it shall
+be formally communicated to him by the contracting parties ; and provided.
+also, that he shall give satisfaction to the English East India Company
+Bahaudur, and to his Highness Nizam ud Dowlah Asoph Jah Bahaudur,
+with regard to. certain points now pending between him, the said Peishwah
+Row. Pundit Purdhaun Bahaudur, and. the said Nabob Nizam ud Dowlah
+Asoph Jah Bahaudur, and also with regard to such points as shall be repre-
+sented to the said Peishwah, on the part of the English East India Com-
+pany Bahaudur, by the Governor-General, or the English resident at the
+court of Poonah.
+
+Article 8th.—lf, contrary to the amicable expectation of the contracting
+parties, the said Peishwah Row Pundit Pufdhaun Bahaudur shall refuse to
+accede to this treaty, or to give satisfaction upon the points, to which the
+7th Article refers, then the right to and sovereignty of the several districts,
+hereinbefore reserved for eventual cession to the Peishwah Row Pundit
+Purdhaun Bahaudur, shall rest jointly in the said English East India Com-
+pany Bahaudur, and the said Nabob Nizam ud Dowlah Asoph Jah Ba-
+haudur, who will either exchange them with the Rajah of Mysore, for
+other districts of equal value, more contiguous, to their respective ter-
+ritories, or otherwise arrange and settle respecting, them,,as they shall
+judge proper.
+
+Article 9th.—It being expedient for the effectual establishment of Maha-
+rajah Mysoor Kistna Rajah, in the government of Mysore, that his High-
+ness should be assisted with a suitable subsidiary force, it is stipulated and
+
+[p. 30, foot]
+agreed, that the whole of the said force shall be furnished by the English
+East India Company Bahaudur, according to the terms of 8 separate treaty,
+to be immediately concluded between the said English East India Com-
+pany Bahaudur, and his Highness the Maharajah Mysoor Kistna Rajah
+Oodiavar Bahaudur. ;
+
+Article \0th.—This treaty consisting of ten Articles, being settled and con-
+cluded this day, the 22d of June, 1799, (corresponding to the 17th of Mohur-
+rum, 1214, Anno Higere), by Lieut.-General George Harris, the Honourable
+Colonel ArthurWellesley, Honourable Henry Wellesley, Lieut.-Colonel Wil-
+liam Kirkpatrick, and Lieut.-Colonel Barry Close, on the part and in the
+name of the Right Honourable Richard Earl of Mornington, Governor-
+General aforesaid, and by Meer Allum Bahaudur, on the part, and in the
+name of his Highness the Nabob Nizam ud Dowlah Asoph Jah Bahaudur,
+the said Lieut.-General Harris, the Honourable Colonel Arthur Wellesley,
+the Honourable Henry Wellesley, Lieut.-Colonel William Kirkpatrick and
+Lieut.-Colonel Barry Close, have delivered to Meer Allum Bahaudur onecopy
+of the same, signed and sealed by themselves ; and Meer Allum Bahaudur
+has delivered to Lieut -General George Harris, the Honourable Colonel
+Arthur Wellesley, the Honourable Henry Wellesley, Lieut.-Colonel Wil-
+liam Kirkpatrick, and Lieut.-Colonel Barry Close, another copy of the same
+signed and sealed by himself; and Lieut.-General George Harris, the Honour-
+able Colonel Arthur Wellesley, the Honourable Henry Wellesley, Lieut.-
+Colonel William Kirkpatrick, and Lieut.-Colonel Barry Close, and Meer
+Allum Bahaudur, severally and mutually engage, that the said treaty shall
+be respectively ratified by the Right Honourable the Governor General under
+his seal and signature, within eight days from the date hereof, and by his
+Highness the Nabob Nizam ud Dowlah Asoph Jah Bahaudur, within twenty-
+five days from the date hereof.
+
+Nizam’s Seal.
+
+Ratified at Hyderabad, by his Highness the Nizam, on the 13th day of
+July, Anno Domini, 1799.
+: ; J. A. Krrxparrick, Resident.
+
+SCHEDULE A.
+
+Ist.—The Company’s Share—The following Districts from Nuggur or
+
+; ‘ Bednore.
+
+’ Korial, (Mangalore) Bekul and Neliseram, 1,33,662 73; Karkul, 11,393
+24; Barkoo, 48,389 84; Khoshaulpoor, 26,361 74; Bulkul, 9,177 04;
+Gairsopah, 3,182 04; Hunawur (Onore), 17,482 94; Mirjaun, 8,953 43 ;
+
+t
+
+- te
+
+"* Ratified at Fort St. George, by the Right Honourable the Governor-
+General in Council, on the 26th day of June, A. D, 1799.
+
+[p. 31, foot]
+Ancolah Punchmahl, and Shedasghur (or Soonda Payen Ghaut) 28,332 2;
+Bilghuy, 18,929 44.—T otal 3,11,874 63
+
+‘ CormBatoon, &c. viz.—Coimbatoor, 80,000; Danaigincotah, 35,000 ;
+Cheeor, 27,000; Chinjerry, 27,000; Darapoor Chuckergherry, 64,000;
+Settimungalum, 30,000; Undoor, 8,000; Perondvora, 14,000; Vizimun-
+gul (Aravarcourchy), 20,000; Errode, 20,000; Caroor, 41,000 ; Coodgully,
+45,000; Caveryporam, 4,000; total 3,835,000. Wynaad, from Amudnuggur
+Chickloor, from Talooks belonging to Seringapatam ; Panganoor, 15,000;
+Suttikal Alambady and Kodahully, 15,200; Oussore, 18,096; Decanicotah
+and Ruttungeery, 14,000 ; Vencatigyrahcotah,6,000; Ankusgeery and Sola-
+geery, 4,000; Baugloor, 3,000 ; Talmuttah and Talwaddy (half Talooks) of
+Hurduntrully, 5,000. Total, 80,296, together 7,77,170 6%. — Deduct
+provision for the maintenance of the families of Hyder Ali Khan, and of Tip-
+poo Sultaun, star pagodas 2 lacs in canteria pagodas, 2,40,000.—Remains
+to the Company, canteria pagodas, 5,37,170,63
+
+SCHEDULE B.
+
+2nd.—The Nizam’s Share.—Gooty—Fyze Hussur Rubal, 15,568; Kona
+Koomlah, 7,500; Pamri, 11,000; Wurjur Kurroor, 8,998 1; Yurutty
+Murajcherroo, 5,902; Bheem Rapah, 4,800; Muttoor, 2,700; Pravalli
+Munnimoorg, 9,4263; Chunumpilly, 8,951 8; Mulkaira Kootoo, 22,
+251 83 ; Koortunni, 8,800; Yarky, 22,673 1; Pennacoondah, 60,000 ;
+Murrug Seera, 8,000; Hundytenantpoor, 16,000; Koorgoor (remainder
+of), 11,629; Kunchungoondy, (remainder of) 10,000; of Gurrumcondah,
+all the districts not ceded in 1792, 1,85,810; Puttungerry (from. Seringa-
+patam), 10,000, Rydroog (6 talooks), 1,02,856; Kurnool Paishcush,
+66,666.—From Chittledroog—Terrymullah, (1 talook), 7,800.——Total,
+6,07,332 13———-Deduct a personal Jaghire to Kummer ud Deen Khan and
+relations, 70,000.—Remains to the Nizam, 5,37,332 1?
+
+SCHEDULE C.
+
+Districts ceded to Maharajah Mysore Kistna Rajah Oodiaver Bahaudur,
+Taluoks belonging to Seringapatam.
+
+Puttun Attockrun, 11,000; Mysore Attockrun, or Rahmut Nuzeen,
+11,500; Nuzzer Bar, 14,000; Hurdunbully, 15,000 ; Periapatam, 6,200 ;
+Muddoor, 13,200; Hetghur Dewancotah, 8,000; Betudapoor; 7,000;
+Tyoor, 8,000; Yelandoor, 10,000; Malwelly (Guiinahabad), 9,000; Tul-
+kar Sosilah, 8,100; Nursipoor, 10,200; Yestoorah, 7,200; Bailoor,
+15,700; Arkulgoor, 4,300; Chinipatam, 12,100; Bullum Mungezabad,
+10,000; Hussen, 7,900; Honawully, 9,400; Nagmungul, 4,700; Bel-
+loor, 3,100; Maharage Droog, 10,000; Gram, 3,500; Ramgheery, 7,400;
+Turkarumb, 7,400; Ahmudnugger, Chickloor, 10,000; Kurp, 12,000;
+Toorwy Khaira, 9,000; Coonydghul, 5,008 9; Hoolioordroog, 4,000;
+
+[p. 32, foot]
+Kirkairy, 4,065; Chennyputtan, 9,138; Nooggairly, 3,000; Mairlatesh
+and Kishmagepoor, 6,100; Suckynputtan, 6,200; Banorawar, Guradun-
+gilly, Huranhelly, 10,000; Boodehall, 7,000; Nidghul, 6,000; Pasghur,
+
+10,000; Hagulwary, 12,000; Goomnairpollum, 10,000; Bangalore,
+55,000; Magry, 8,400; Mudgerry, 36,000; Coorgherry, 4,000; Can-
+kanhelly, 8,9005 Nulwungle and Doorbillah, 16,000; Anicul, 10,300 ;
+Byroodroog, 4,000 ;, Hyboor, 7,000; Dewankelly, 20,045 ; Ootradroog,
+5,000; Chinroydroog, 8,000; Toomkoor and Devroy, 18,000; Nidge-
+gul and Macklydroog, 16,000; Kundykeera and Chulinaighelly, 16,000;
+Chota Balapoor, 80,000; Colar, 80,000; Jungumeotah, 13,000 ; Chuck-
+moogalum, 8,134 4; Kudoor, 7,129 74. Total, 7,78,321 0}.
+
+Sgrra (Remainder of.)——Serra and Amrapoor, 55,000; Hoosuttah,
+50,754; Burra Balapoor, 40,000.——Total, 1,49,754.
+
+_ Nuceur above Guaut.—Kusbah, 29,145 43 2; Coolydroog, 28,818 03 2
+Koompsee, 8,094 24; Kope, 22,864 51 2: Wosthara, 6,8189; Eckairy
+and Sagur, 39,4112; Ghooty (Hoably), 11,006 83; Surbtowanundy,
+10,458 42; Serryanwitty, 17,424; Shaikarpoor, 11,7742; Annunta-
+poor, 10,191 93; Lakouly-danwass, 11,629 63 1; Ordgunny, 13,614 13;
+Simoga, 16,8835; Hoolyhonore, 6,583 531; Biddery, 10,835,5 2 ;
+Chingeery Beswapatam, 22,091 133; Turrykeerah, 14,076 44 2; Azem-'
+poor, 10,696 23 3.——Total, 3,02,417 6 6.
+
+CrirrtepRooe. (remainder of) 12 Talooks.—Kusbah, 20,874 7% 1;
+Beemsumendar, 12,148 4 2; Dodiary, 12.984 94; Husdroog, 11,936 23 3;
+Muttoor, 10,392 33 2: Murkal Murroo, 12,662 93 3; Tullick, 11,854 3;
+Burm Sagur, 10,163 64; Kunkopah, 12,542 42; Bilchoor, 10,683 132;
+Hinoor, 10,010 2; Goodycotah, 11,330 54 3. Total, 13,79,076 8 1.
+Deduct 2-Pergunnahs of Hurdenhelly, viz, Talmall and Talwaddy, in-
+cluded in the Comgany’s share, 5,000; balance, 13,74,076 8 1.
+
+SCHEDULE D.
+
+The Peishwah’s Share—Harpopelly, (6 Talooks), 1,10,030 83; Soonda
+(above the Ghauts), 59,377; Annagoondy, 60,101. From Chittledroog,
+2 Talooks, viz, Holulkaira, 11,425 4}; Mycoonda, 12,228 93. From
+Bednore }] Talook, viz, Hurryhur, 10,796. Total Canteria Pagodas,
+2,63,257,3%.
+
+Ratified at Hyderabad, by his Highness the Nizam, on the 13th
+day of July, A.D. 1799.
+
+J. A. Krrxparrics, Resident.
+
+Ratified at Fort St. George, by the Right Honourable the Gover-
+nor-General in Council, on the 26th day of June, A.D, 1799.
+
+Separate Articles, appertaining to the Treaty of Mysore, concluded on
+the 22nd of June, 1799 (corresponding to the }7th of Mohurrum, Anno
+
+>
+
+[p. 33, foot]
+Higeree, 1214) between the Honourable English East India Company Ba-
+haudur, and the Nabob Nizam ud Dowlah Asoph Jah Bahaudur.
+
+Article 1.—With a view to the prevention of future altercations, it is
+agreed between his Highness the Nabob Nizam ud Dowlah Asoph Jah
+Bahaucur, and the Honourable English East India Company Bahaudur,
+that to whatever amount the stipends appropriated to the maintenance of
+the Sons, Relations, and Dependants of the late Hyder Ali Khaun, and
+Tippoo Sultaun, or the personal Jaghire of Meer Kummer ud Deen
+Khaun, shall hereafter be diminished in consequence of any one of the
+stipulations of the Treaty of Mysore, the contracting parties shall not be
+accountable to each other on this head.
+
+Article 2.—And it is further agreed between the contracting parties,
+that in the event provided for by the Eighth Article of the Treaty of My-
+sore, two-thirds of the shares reserved for Row Pundit Purdhaun Bahau-
+dur, shall fall to his Highness the Nabob Nizam ud Dowlah Asoph Jah
+Bahaudur, and the remaining third to the Honourable English East India
+Company Bahaudur.
+
+(The Nizam’s Seal.)
+Ratified at Hyderabad, by his Highness the Nizam, on the 13th
+day of July, A.D. 1799.
+J. A. Kirgparrick, Resident.
+Ratified at Fort St. George, by the Right Honourable the Gover-
+nor-General in Council, on the 26th day of June, A.D. 1799.
+VOL. If, D .

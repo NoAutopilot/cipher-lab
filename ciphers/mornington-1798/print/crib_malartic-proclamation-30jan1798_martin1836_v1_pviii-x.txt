@@ -1,0 +1,239 @@
+# CRIB -- Malartic proclamation, Port North-West (Isle of France), 30 Jan 1798 (10 Pluviose an VI), French with
+# the period English translation. Printed: Martin, Despatches, Minutes and Correspondence of the Marquess Wellesley,
+# Vol. 1 (1836), Introduction pp. viii-x (two columns, French left, English right; a footnote on p. viii refers to
+# the Governor-General's Minute of 12 Aug 1798). Source: archive.org india.history.resource.35304, 35304_djvu.txt
+# raw lines 314-575 (OCR uncorrected; the two columns are de-interleaved per page by extract_cribs.py, nothing retyped).
+# Grade C (printed clear text, rule 4) for every token; this is a crib candidate, not a reading of any D623 item.
+# Crib for: D623/4 (3 Jul 1798) and D623/5 (6 Jul 1798), the 'despatch in cipher re the Mauritius proclamation' and its
+# duplicate -- the despatch is expected to quote or paraphrase the English translation. GAPS3-mornington-1798, 2 Oct 2026.
+
+Proclamation at the Isle of France.
+
+## p. viii -- French column
+Liberté. Egalité.
+REPUBLIQUE FRANCAISE,
+Une & indivisible.
+
+Ba
+
+PROCLAMATION.
+
+Anne Joseph Hyppolite Malartic, Gene-
+ral en Chef, Governeur-general des
+Isles de France & de la Reunion, &
+Commandant-general des Etablisse-
+ments Francais, a VEst du Cap de
+Bonne Esperance.
+
+CiToyENs,
+
+Connaissant depuis plusieurs
+années votre zéle & votre attach-
+ment pour les interéts & la gloire
+de notre République, nous som-
+mes tres empressés & nous nous
+faisons un devoir de vous donner
+comnaissance de toutes les propo-
+sitions que nous fait Tippoo Sul-
+taun, par deux ambassadeurs qu'il
+nous a dépéchés.
+
+Ce prince a écrit des lettres
+particuliéres 4 ! Assemblée Colo-
+niale 4 tous les Généraux qui
+sont employés dans ce gouverne-
+ment, & nous a addressé un pa-
+quet pour le Directoire Executif.
+
+J°. Il demandé 4 faire une al-
+liance offensive et défensive avec
+les Frangais, en proposant d’en-
+
+## p. viii -- English column
+Liberty.
+THE FRENCH REPUBLIC,
+One and indivisible.
+
+———
+
+PROCLAMATION.
+
+Equality.
+
+Anne Joseph Hyppolite Malartic, Com-
+mander in Chiefand Governor-General
+of the Isles of France and Reunion, and
+of all the French estublishments to the
+eastward of the Cape of Good Hope.
+
+CitTIzENs,
+
+Having for several years known
+your zeal and your attachment
+to the interests, and to the glory
+of our Republic, we are very
+anxious, and we feel it a duty to
+make you acquainted with all
+the propositions which have been
+made to us by Tippoo Sultaun,
+through two ambassadors whom
+he has despatched to us.
+
+This prince has written parti-
+cular letters to the Colonial As-
+sembly ; to all the generals em-
+ployed under this government;
+and has addressed to us a packet
+for the Executive Directory.
+
+1. He desires to form an of-
+fensive and defensive alliance
+with the French, and proposes
+
+## p. viii -- footnote
+* See Governor-General’s Minute of the 12th August, 1798.
+
+## p. ix -- French column
+tretenir A ses frais, tant que la
+guerre durera dans J]’Inde, les
+troupes qu’on pourra lui envoyer.
+
+2°. Il promet de fournir toutes
+les choses necessaires pour faire
+cette guerre, excepté le Vin &
+YPEau de Vie, dont il se trouve
+absolument dénué.
+
+3°. Tl assure que tous les pré-
+paratifs sont faits pour recgevoir
+les secours qu’on lui donnera, &
+qu’a larrivée des troupes, les
+Chefs & Officiers trouveront
+toutesles choses necessaires pour
+faire une guerre a laquelle les
+Européens sont peu accoutumés.
+
+4°. Enfin il n’attend plus que
+le moment ou les Frangais vien-
+dront a son secours, pour dé-
+clarer la guerre au Anglais, de-
+sirant avec ardeur pouvoir les
+chasser de UInde.
+
+Comme il nous est impossible
+de diminuer le nombre des sol-
+dats des 107e. & 108e. regimens,
+
+& de la garde soldée du Port de —
+
+la Fraternité, a cause des secours
+que nous avons envoyés 4 nos al-
+liés les Hollandais ; nous invitons
+tous les citoyens de bonne vo-
+lonté, a se faire inscrire dans
+leurs municipalités respectives,
+pour aller servir sous les dra-
+peaux de Tippoo.
+
+Ce prince desire aussi avoir
+des citoyens de couleur, libres,
+
+## p. ix -- English column
+to maintain at his charge, as long
+as the war shall last in India, the
+troops which may be sent to him.
+
+2. He promises to furnish eve-
+ry necessary for carrying on the
+
+‘war, wine and brandy excepted,
+
+with which he is wholly unpro-
+vided.
+
+3. He declares that he has
+made every preparation to re-
+ceive the succours which may be
+sent to him, and that on the ar-
+rival of the troops, the command-
+ers and officers will find every
+thing necessary for making a
+war, to which Europeans are but
+little accustomed.
+
+4. Ina word he only waits the
+
+‘moment when the French shall
+
+come to his assistance, to declare
+war against the English, whom
+
+he ardently desires to expel from
+
+India.
+
+As it is impossible for us to
+reduce the number of soldiers of
+the 107th and 108th regiments,
+and of the regular guard of Port
+Fraternité, on account of the
+succours which we have fur-
+nished to our allies the Dutch ;
+we invite the citizens, who may be
+disposed to enter as volunteers, to
+enrol themselves in their respec-
+tive municipalities, and to serve
+under the banners of Tippoo.
+
+This prince desires also to be
+assisted by the free citizens of
+
+## p. x -- French column
+& nous invitons tous. ceux qui
+voudront aller servir sous ses
+drapeaux, a se faire aussi in-
+scrire.
+
+Nous pouvons assurer tous les
+citoyens qui se feront inscrire,
+que Tippoo leur fera des traite-
+ments avantageux qui seront
+fixés avec ses ambassadeurs qui
+s’engageront en outre, au nom
+de leur souverain, a ce que les
+Frangais qui auront pris parti
+dans ses armées, ne puissent ja-
+mais y etre retenus quand ils
+voudront rentrer dans leur patrie.
+
+Fait au Port Nord-Ouest, le 10
+Pluviose, Pan six de la Répub-
+lique Frangaise, une & indivi-
+sible.
+
+(Signé) Ma artic.
+
+## p. x -- English column
+colour, we therefore invite all
+such who are willing to serve un-
+
+‘der his flag, to enrpl themselves.
+
+We can assure all the citizens
+who shall enrol themselves, that
+Tippoo will allow them .an ad-
+vantageous rate of pay, the terms
+of which will be fixed with his
+ambassadors, who will further
+engage in the name of their so-
+vereign, that all Frenchmen who
+shall enter into his armies, shall
+never be detained after they
+shall have expressed a wish to
+
+return to their own country.
+
+Done at Port North West,
+the 30th January, 1798.
+
+(Signed) Matartic.
