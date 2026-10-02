@@ -20,6 +20,8 @@
 #      1033, 1034, GAPS8: greyscale, q70, manifest boxes);
 #      the byte-identical tests run 2 Oct 2026 (GAPS7): img829_full.jpg, p186_text_region.jpg,
 #      p186_bottom_region.jpg, p186_text_region_L01.jpg and all 28 p184/p185 column crops;
+#      GAPS10 (2 Oct 2026) added img1115_w1600.jpg and img1116_w1600.jpg (B.148 pp.39-40, the clear copy of the 22 June
+#      1782 letter) as fetched, so the manifest loop in step 1 refetches them byte-identically; no crops were cut;
 #   3. the HMC and Stevens pages come from archive.org _jp2.zip members and are converted to JPEG here, so they
 #      regenerate the page, not the committed bytes (their original conversion settings were not recorded).
 set -euo pipefail
