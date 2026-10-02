@@ -1,0 +1,280 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	X_NEW	T25	L	script H with dots; line start
+L01	2	X_NEW	T49	L	box with short stem up
+L01	3	X_NEW		M	rectangle with inner dot
+L01	4	T54		H	R
+L01	5	T88		H	small o
+L01	6	T49		H	box on stem
+L01	7	T25		H	lambda
+L01	8	T51	T56	M	barred k
+L01	9	T37		H	theta with bar
+L01	10	T54		H	R
+L01	11	X_NEW		M	empty rectangle
+L01	12	T33		H	ii on bar
+L01	13	T45		H	stem and circle
+L01	14	T58		H	B
+L01	15	T88		H	o
+L01	16	T49		H	box on stem
+L01	17	T60	T86	M	hash
+L01	18	T76		M	9
+L01	19	X_NEW		M	lone 8
+L01	20	T90		M	stem circle cross
+L01	21	T98		H	phi long stem
+L01	22	T86	T60	M	hash small
+L01	23	T60		H	hash
+L01	24	T33		H	ii on bar
+L01	25	T85		H	plus
+L01	26	X_NEW	T76	L	hooked long s
+L01	27	T37		H	theta bar
+L01	28	T83		H	x-shape
+L01	29	T63		M	V curved
+L01	30	T45		M	stem circle hooked top; line end
+L02	1	T95	T51	M	p long crossbar; line start
+L02	2	T85	T51	M	plus
+L02	3	T86		M	hash
+L02	4	T60		H	hash
+L02	5	T25		H	lambda
+L02	6	T26		M	g
+L02	7	T65		H	looped top with cross stem
+L02	8	T45		H	stem circle
+L02	9	T60		H	hash
+L02	10	T53		H	infinity
+L02	11	T80		H	D
+L02	12	T19		H	pi
+L02	13	T60		H	hash
+L02	14	T18	T36	M	circle with foot bar
+L02	15	T66	T76	M	9 straight tail
+L02	16	T50		H	omega s
+L02	17	T19		H	pi
+L02	18	T60		H	hash
+L02	19	T33		H	ii on bar
+L02	20	T45		H	stem circle
+L02	21	T60		H	hash
+L02	22	T25		H	lambda
+L02	23	T83		M	curly x
+L02	24	T37		H	theta bar
+L02	25	T49		H	box on stem
+L02	26	T86		M	hash
+L02	27	T18		H	phi circle stem
+L02	28	X_NEW	T51	L	4 with crossbar
+L02	29	X_NEW		M	7; line end
+L03	1	T90		M	stem circle cross; line start
+L03	2	T55		H	F with slash
+L03	3	T33		H	ii on bar
+L03	4	T83		H	x-shape
+L03	5	T95	T18	M	small p
+L03	6	T33		H	ii on bar
+L03	7	T19		H	pi
+L03	8	T80		H	D
+L03	9	T83	T56	M	curly x
+L03	10	T95	T51	M	p crossbar
+L03	11	T86		M	small hash
+L03	12	T70		H	triangle
+L03	13	T19		H	pi
+L03	14	T33		H	ii on bar
+L03	15	T86		M	hash
+L03	16	T83		M	curly x
+L03	17	T60		H	hash
+L03	18	T66		M	q foot
+L03	19	X_NEW		L	small t
+L03	20	T66		M	q foot
+L03	21	T60		H	hash
+L03	22	T65		M	looped top cross stem
+L03	23	T18		H	phi stem
+L03	24	T45		H	stem circle
+L03	25	X_NEW		M	8
+L03	26	X_S		L	small s
+L03	27	T90		M	blob cross
+L03	28	T90		M	stem circle cross
+L03	29	T52		M	n-shape
+L03	30	X_NEW	T26	L	swash s loop
+L03	31	T83		M	curly x; line end
+L04	1	T50		H	omega s; line start
+L04	2	T45		M	stem circle curl
+L04	3	T88		H	o
+L04	4	T33		H	ii on bar
+L04	5	T80		H	D
+L04	6	T95		M	p crossbar
+L04	7	T86		M	hash
+L04	8	T92		H	omega
+L04	9	T65		H	looped top cross stem
+L04	10	T90		H	stem circle cross
+L04	11	T45		H	stem circle
+L04	12	T83		H	curly x
+L04	13	T98		H	phi long stem
+L04	14	T19		H	small pi
+L04	15	X_NEW		M	f with dot
+L04	16	T66		M	q
+L04	17	T88		H	o
+L04	18	T33		H	ii on bar
+L04	19	T96		H	e script
+L04	20	T98		H	phi
+L04	21	T45		H	stem circle
+L04	22	T83		H	curly x
+L04	23	T86		M	hash
+L04	24	T60		H	hash
+L04	25	T18		H	phi foot
+L04	26	T83		H	curly x
+L04	27	T19		H	pi
+L04	28	T80		H	D
+L04	29	T53		H	infinity; line end
+L05	1	X_NEW		M	l with hook; line start
+L05	2	T95		M	p crossbar
+L05	3	T33		H	ii on bar
+L05	4	T98		H	phi stem
+L05	5	T24		H	epsilon
+L05	6	T37		H	theta bar
+L05	7	T36		H	circle stem
+L05	8	T80		H	D
+L05	9	T64		H	m sup a
+L05	10	T66		M	q
+L05	11	T29		M	epsilon-o
+L05	12	T95		M	p
+L05	13	X_NEW		M	d flourish
+L05	14	T80		H	D
+L05	15	T60		H	hash
+L05	16	T18		H	phi
+L05	17	T45		H	stem circle
+L05	18	T51		M	barred
+L05	19	T45	T95	M	stem small bowl
+L05	20	X_NEW	T26	L	s swash
+L05	21	T66		M	q
+L05	22	T83		H	curly x
+L05	23	T65		H	looped top cross stem
+L05	24	T19		H	pi
+L05	25	T33		H	ii on bar
+L05	26	X_NEW	T27	L	big swash s
+L05	27	T66		M	9 q
+L05	28	T98		H	phi
+L05	29	X_NEW		L	curly y
+L05	30	T45		M	stem circle
+L05	31	T95		M	small p; line end
+L06	1	T98		H	phi stem; line start
+L06	2	T80		H	D
+L06	3	T19		H	pi
+L06	4	T60		H	hash
+L06	5	T98		H	phi
+L06	6	T63		H	V
+L06	7	T45		H	stem circle
+L06	8	T92		H	omega
+L06	9	T53		H	infinity
+L06	10	T83		H	curly x
+L06	11	T45		H	stem circle
+L06	12	X_NEW	T26	L	f hooked
+L06	13	T51	T95	M	barred p
+L06	14	T33		H	ii on bar
+L06	15	T98		H	phi
+L06	16	T66		M	q
+L06	17	T60		H	hash
+L06	18	T90		M	stem circle cross
+L06	19	T95		M	small p
+L06	20	T83		H	curly x
+L06	21	T86		M	hash
+L06	22	T96		H	e script
+L06	23	T64		H	m sup a
+L06	24	T45	T95	M	small bowl stem
+L06	25	T98		H	phi
+L06	26	T90		M	blob cross
+L06	27	T66		M	q
+L06	28	T80		H	D
+L06	29	T66		M	q
+L06	30	T66		M	q
+L06	31	X_NEW		L	filled blob with stroke; line end
+L07	1	T88		H	o; line start
+L07	2	T33		H	ii on bar
+L07	3	T45		H	stem circle
+L07	4	T36		H	circle stem foot
+L07	5	X_NEW	T81	M	x with two slashes
+L07	6	T63		H	V
+L07	7	T45		H	stem circle
+L07	8	T33		H	ii on bar
+L07	9	T85		H	plus
+L07	10	T86		M	hash
+L07	11	T53		M	infinity
+L07	12	T25		M	lambda curly
+L07	13	T60		M	hash
+L07	14	T49		H	box on stem
+L07	15	T19		H	pi
+L07	16	T33		H	ii on bar
+L07	17	T92	T50	M	omega curl
+L07	18	T98		H	phi
+L07	19	T49		H	box on stem
+L07	20	X_K		H	capital K
+L07	21	T95		M	p crossbar
+L07	22	T80		H	D
+L07	23	T86		M	hash
+L07	24	T63		H	V
+L07	25	T37		H	theta bar
+L07	26	X_NEW	T81	M	x with slash
+L07	27	X_NEW	T36	L	filled circle stem
+L07	28	T86		M	hash
+L07	29	T83		M	curly x; line end
+L08	1	T29		H	epsilon-o; line start
+L08	2	X_EQ		H	two strokes
+L08	3	T85		H	plus
+L08	4	T33		H	ii on bar
+L08	5	T19		H	pi
+L08	6	T83		H	curly x
+L08	7	T80		H	D
+L08	8	T98		H	phi
+L08	9	T45		H	stem circle
+L08	10	T83		M	curly x
+L08	11	T50		H	omega s
+L08	12	T45		H	stem circle
+L08	13	T98		M	phi blob head
+L08	14	T53		H	infinity
+L08	15	T37		M	small theta bar
+L08	16	X_NEW		M	d flourish
+L08	17	T37		H	theta bar
+L08	18	T25		H	lambda
+L08	19	T83		H	curly x
+L08	20	T45		H	stem circle
+L08	21	T98		H	phi
+L08	22	T80		H	D
+L08	23	T95		M	p crossbar
+L08	24	T45		H	stem circle
+L08	25	T76		M	9 hook
+L08	26	T45		H	stem circle
+L08	27	X_NEW	T24	M	epsilon with dot
+L08	28	T53		H	infinity; line end
+L09	1	X_NEW	T85	M	cross with small o; line start
+L09	2	T45		H	stem circle
+L09	3	T92		M	omega blob
+L09	4	T55		H	F slash
+L09	5	T80		H	D
+L09	6	T76		M	9 hook
+L09	7	T70		H	triangle
+L09	8	T29		H	epsilon-o
+L09	9	T98		H	phi
+L09	10	T80		H	D
+L09	11	T95	T51	M	p crossbar
+L09	12	T49		H	box on stem
+L09	13	T19		H	pi
+L09	14	T33		H	ii on bar
+L09	15	T98		H	phi
+L09	16	T92		M	omega curl
+L09	17	T86		M	hash
+L09	18	T54		H	R
+L09	19	T81		M	bold x
+L09	20	T95		M	p crossbar
+L09	21	T96		M	e script edge
+L09	22	T45		H	stem circle
+L09	23	T65		H	looped top cross stem
+L09	24	T85		H	plus
+L09	25	T60		H	hash
+L09	26	T53		H	infinity
+L09	27	T88		H	o
+L09	28	T33		H	ii on bar
+L09	29	T80		H	D
+L09	30	T95		M	p crossbar; line end
+L10	1	T83		H	curly x; line start
+L10	2	T45		M	stem circle curl
+L10	3	T33		H	ii on bar
+L10	4	T57		M	diamond with tail
+L10	5	T80	T96	L	small flat D
+L10	6	T57		M	diamond with tail
+L10	7	T60	T86	L	small hash
+L10	8	X_NEW	T27	L	big curl with 9 inside
+L10	9	T84	X_NEW	L	inverted triangle with bar
+L10	10	T70	T84	M	triangle on cross
+L10	11	X_NEW		M	f with dots; line end
