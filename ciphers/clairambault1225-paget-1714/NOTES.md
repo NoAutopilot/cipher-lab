@@ -707,21 +707,62 @@ expected and says nothing about the 5 image overrides, which the image already s
 Judge: not run -- no `specs/clairambault1225-paget-1714.json` exists. Rule 10: readings described only as "read from the
 period interlinear decipherment" and "key value agreeing with the aligned gloss".
 
-## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated 2 Oct 2026, NEXT-PAG and NEXT2-PAG)
-Read so far: (decode.json run 2 Oct 2026, NEXT2-PAG) token level C 71, M 47, I 7, U 380 of 505 (firm 71); run level 501 of 505 cipher tokens (99.2%) lie under a period interlinear gloss, read off the page images by one reader (NEXT-PAG, 2 Oct 2026, "Gloss alignment" above; align/pairs.tsv), so the run-level plaintext of both letters' cipher passages is in hand pending a second read; code-level, key.tsv holds 21 codes (12 C, 9 M) and 73 of 493 aligned code tokens (14.8%) agree with them (53 C, 20 M); 1 Oct's "13 of 500" was word-level from four letter-1 glosses.
-- Code-level values for the 375 aligned tokens on codes outside key.tsv and the 45 that disagree with a key code (frequent codes 46, 146, 145, 175 unsettled) - blocker: open-codes; the alignment (self-agreement 0.280 vs shuffle p95 0.126) does not hold one value for them, which fits homophones/nulls or a decipherer's gloss that paraphrases (f66R "de Parme" with no 87.201.156 under it); context does not narrow them further at run level, where the gloss already gives the plaintext
+## Key entries from the period glosses (PAGET-KEY, 2 Oct 2026)
+
+Brief step 2: turn the period interlinear glosses into key entries, per-letter control first.
+**Per-letter controls (align/per_letter.py -> align/per_letter.txt; NEXT-PAG's settings, fixed before this run: null-cost -3,
+max-chunk 4, seg-bonus 0.5, len-prior 0.5; 20 shuffle seeds; the shuffle permutes the cipher/gloss pairing, which both
+statistics depend on, so the control can fail differently from the real run).**
+
+| letter | pairs | own self-agreement (real / shuffle mean / p95) | cross: key from the other letter, gloss letters recovered (real / shuffle mean / p95) | gate |
+|---|---|---|---|---|
+| L1, 8 Apr 1714 (f60R f61L f61R f65L) | 17 | 31/96 = 0.323 / 0.052 / 0.084 | 88/194 = 0.454 / 0.225 / 0.258 | PASS |
+| L2, 28 Aug 1714 (f65R f66L f66R) | 39 | 82/397 = 0.207 / 0.102 / 0.133 | 283/829 = 0.341 / 0.184 / 0.229 | PASS |
+
+Both letters clear both gates, so neither is held (the Szembek per-unit lesson): their glosses merge into one key.
+**Key (align/make_key.py, regenerated; key.tsv 114 codes).** The 21 stable codes keep NEXT-PAG's values; 11 with >=3
+agreeing occurrences are key-row H, 10 with exactly 2 are key-row C. The notes now give agreeing occurrences per letter
+(e.g. 221 se L1 3 / L2 5; 147 li L1 2 / L2 2; 67 be L1 4 / L2 0). The other 93 codes are added at M, value = the gloss
+chunk the alignment puts over them, tagged "single attestation" (39) or "unsettled" (54, top chunk under 50%: 46, 145,
+146, 175 and others); decode.json's m_words keeps every token of these at M.
+**Per-token grades (tools/decode_key.py --check, exit 0; decode.json voted_grade H, disagree_grade M, unvoted_grade C).**
+H = the token's own aligned gloss chunk equals the key value, i.e. the period decipherment written over that very group
+agrees with the value the code holds in >=2 aligned occurrences; C = keyed token with no aligned chunk of its own (none
+arise: 493 of 505 tokens carry one); M = own chunk disagrees, or single/unsettled code, or uncertain digit.
+
+| grade | tokens |
+|---|---|
+| H | 71 |
+| C | 0 |
+| S | 0 |
+| M | 422 |
+| I | 7 |
+| U | 5 (f66L 169-172 '400 4 19 600', unglossed; the illegible group at f61L ~48) |
+
+Firm (H+C+S) 71 of 505, unchanged in number from NEXT2-PAG's C 71: the same tokens, regraded from C to H because the
+gloss over each is the period's own decipherment of that group (CLAUDE.md rule 4's AX2-172 usage). U drops from 380 to 5
+because every glossed code now has an M entry. The code-to-chunk segmentation is the alignment's, not the decipherer's,
+so H rests on the alignment's chunking, validated only to the per-letter levels above (self-agreement 0.21-0.32).
+Tool change (Usage 8, an option): tools/decode_key.py gains `disagree_grade` (a vote that does not match; unvoted_grade
+then covers only signs with no vote); tools/tests/decode_configs/clairambault1225-paget-1714.json updated and passes
+(the antt-linhares-chave and rah-canada-1869 failures in the same test file are the pre-existing drift NEXT2-PAG logged).
+Judge not run (no spec). Rule 10: readings described only as read from the period interlinear decipherment.
+
+## Remaining gaps (finish-or-blocker pass, 1 Oct 2026; updated 2 Oct 2026, NEXT-PAG, NEXT2-PAG and PAGET-KEY)
+Read so far: (decode.json run 2 Oct 2026, PAGET-KEY) token level H 71, M 422, I 7, U 5 of 505 (firm 71); run level 501 of 505 cipher tokens (99.2%) lie under a period interlinear gloss, read off the page images by one reader (NEXT-PAG, 2 Oct 2026; align/pairs.tsv), so the run-level plaintext of both letters' cipher passages is in hand pending a second read; code-level, key.tsv holds 114 codes (11 H, 10 C stable; 93 M single-attestation or unsettled), both letters having cleared per-letter controls (align/per_letter.txt).
+- Code-level values for the 422 M tokens (93 single-attestation/unsettled codes now in key.tsv at M, plus tokens whose own chunk disagrees with a stable code; frequent codes 46, 146, 145, 175 unsettled) - blocker: open-codes; the alignment (self-agreement 0.280 vs shuffle p95 0.126) does not hold one value for them, which fits homophones/nulls or a decipherer's gloss that paraphrases (f66R "de Parme" with no 87.201.156 under it); context does not narrow them further at run level, where the gloss already gives the plaintext
 - Gloss attachment and the M digits, all seven cipher page-halves (f60R f61L f61R f65L f65R f66L f66R) - blocker: not-attempted; the 2 Oct pairs rest on one reader's look at whole/half-page crops (5 digit overrides, P23/P28/P34/P46 chained across line breaks, P05 "a Genes" margin note attached to 175.X.276), and the f66L/f66R kind-mismatch rows and 66x outliers (Transcription "Known reconciliation artifacts") were never re-read blind; next: tools/iiif_lines.py --image on the seven page-halves, 2 blind passes per page recording each above-line gloss with its run plus 1 reconciliation, then re-run align/evaluate.py --write and make_key.py, ~$8
 - f66L 169-172 '400 4 19 600' ("une complaisance aveugle pour ..."), 4 tokens - blocker: no-key-material; no gloss above this run on images/f66L.jpg (checked 2 Oct 2026), none of the four codes recurs under a gloss, and no key sheet is known (AN Marine B7 original waits on LOCAL-QUEUE L11)
 - f61L, one cipher group solid-inked over (between 175 and 276, f61L ~pos48) - blocker: illegible; hand-marked ILLEGIBLE in both transcription passes; its gloss text ("on verra quelques personnes a Genes", P05) is read, its code number is not. The only other witness is the AN Marine B7 original (LOCAL-QUEUE L11, queued 25 Sept 2026, unanswered)
 
-## Escalation (1 Oct 2026; updated 2 Oct 2026, NEXT-PAG and NEXT2-PAG)
+## Escalation (1 Oct 2026; updated 2 Oct 2026, NEXT-PAG, NEXT2-PAG and PAGET-KEY)
 - [x] siblings: neighbouring leaves in the volume opened (f55-f59 Fleury testament and notice; f67/f70/f75 unrelated Puget/Peraud print; OX-PAG, images/manifest.json). The BnF Clairambault name index lists only this item for "PAGET -- Lettres chiffrees". The Paget 14 Jan 1713 sibling (ciphers/clairambault296-paget-1713) was not found in 314 of 316 Gallica canvases; canvases 28 and 36 are unread (LOCAL-QUEUE L23 done-blocked 27 Sept 2026), and the retry belongs to that target's NEXT-STEPS row 31 and ASKS row 51. DECODE, Bourdeau and Aymeloglu had no Paget hit (23 Sept 2026). The AN Marine B7 originals wait on LOCAL-QUEUE L11, and SIV form reproduction is NEXT-STEPS row 30 (NX-UNBLOCK, HTTP 500 once). No internal sibling step is left in this folder
 - [x] clear-pages: no separate clear copy or decipherment sheet on the neighbouring leaves; the clear text is the letters' own interlinear decipherment, which on the images (2 Oct 2026) covers 501 of 505 cipher tokens, far more than ciphertext.tsv's insertion-clear rows record; used in full by the key-rebuild below
 - [x] known-keys: already swept. KEY-CROSSMATCH.tsv has 45 rows for this ciphertext against every key on file: 28 none, 9 unusable-key, 8 no_corpus. The best coverage, 0.353, is fr7129's f275 code key (no_corpus); the nearest French nomenclator is Le Tellier 1659-ext at 0.196 (none). KEY-DESIGN-PRIORS.tsv row 12 (design_prior.py --unkeyed) ranks multi-sign (homophonic/nomenclator/syllabary) first (0.94), with lead vanbeuningen-dewitt-1657. KEY-OFFICES.tsv and KEY-DESIGN.tsv have no French Marine or consular key from 1700-1729 (grepped 1 Oct 2026). 'chiffre de M. Paget' and 'chiffre pour Genes' came back negative in Google Books and web search (OX-PAGK). A re-run against key.tsv's 21 codes is not worth doing before the retry step
 - [ ] print: done so far: RIDA XIX (Driault 1912) ContentSearch for 'Paget' gave 3 irrelevant hits and 'Cagliari' 0 (CX2-MISC2); Mezin 1998, Ulbert 2019, and Google Books snippets of the Inventaire des archives de la marine B7, which are register entries without transcription (OX-PAGK). Planned: the open-index pass (OpenAlex, Semantic Scholar, Persee, HAL) for Paget with Genes/Cagliari (WAIT-PASS-A), and a tools/print_check.py phrases.txt run on the gloss plaintext ('la Princesse de Parme et ses 2 oncles', 'le Prince Antoine de Parme', 'Elle achevera sa 22e annee le 25 Octobre prochain'), ~$3
-- [x] key-rebuild: 2 Oct 2026 (NEXT-PAG): tools/interlinear_align.py over 56 image-read gloss pairs (52 training, 4 held out), with the new --max-chunk 4 --seg-bonus 0.5 --len-prior 0.5 options; training self-agreement 0.277 vs shuffled-pairing p95 0.126, held-out known-answer letters 24/37 = 0.649 vs shuffle p95 0.378 (both above control); key.tsv 21 codes (12 C, 9 M); the 1 Oct note's code-147 contradiction was a misread gloss ("Lisle", not "Gile"). At the brief's Thurloe defaults the same run did not beat its control (0.175 vs p95 0.184), logged above
+- [x] key-rebuild: 2 Oct 2026 (PAGET-KEY): per-letter controls both PASS (L1 own 0.323 vs p95 0.084, cross 0.454 vs 0.258; L2 own 0.207 vs 0.133, cross 0.341 vs 0.229); key.tsv 114 codes (11 H, 10 C, 93 M); decode H 71 M 422 I 7 U 5. Earlier, 2 Oct 2026 (NEXT-PAG): tools/interlinear_align.py over 56 image-read gloss pairs (52 training, 4 held out), with the new --max-chunk 4 --seg-bonus 0.5 --len-prior 0.5 options; training self-agreement 0.277 vs shuffled-pairing p95 0.126, held-out known-answer letters 24/37 = 0.649 vs shuffle p95 0.378 (both above control); key.tsv 21 codes (12 C, 9 M); the 1 Oct note's code-147 contradiction was a misread gloss ("Lisle", not "Gile"). At the brief's Thurloe defaults the same run did not beat its control (0.175 vs p95 0.184), logged above
 - [ ] image-check: done: NEXT-PAG read the above-line glosses and their attachment on all seven cipher page-halves (one reader, 2 Oct 2026). Planned: tools/iiif_lines.py --image line crops, 2 blind passes per page plus 1 reconciliation, recording each gloss with its run and re-reading the M digits and the five overridden digits, then re-run align/evaluate.py, ~$8
-- [x] retry: 2 Oct 2026 (NEXT2-PAG): decode.json + tools/decode_key.py --check over both letters, exit 0; C 71, M 47, I 7, U 380 of 505 ("Decode script" above); --split-check 0 candidate splits
+- [x] retry: 2 Oct 2026 (PAGET-KEY): regraded decode --check exit 0, H 71 M 422 I 7 U 5. Earlier (NEXT2-PAG): decode.json + tools/decode_key.py --check over both letters, exit 0; C 71, M 47, I 7, U 380 of 505 ("Decode script" above); --split-check 0 candidate splits
 Verdict: keep going: 2 internal gaps; cheapest next: the print step (open-index pass + tools/print_check.py on the gloss phrases), ~$3; then the image-check blind passes, ~$8
 
 ## Web and blog check (NEXT2-PAG, 2 Oct 2026)
@@ -748,3 +789,30 @@ Step "Open web and blog comment threads" of .claude/briefs/check-solved.md, run 
 (c) No hit was plausible enough to open a comment thread: none named this Paget, Genoa in 1714, or Clairambault 1225.
 Result: no decipherment or plaintext of this item located on the open web or in the three blogs (a search result, not a
 novelty verdict, rule 10). Requests: WebSearch 7 calls; no direct host fetch.
+
+## Premise check (PAGET-KEY, 2 Oct 2026)
+
+Adversarial pass per .claude/briefs/check-solved.md, trying to show the item is already done before step 2 of the brief.
+- (a) Folder's own mentions -- found, already in use: the only decipherment the folder mentions is the period interlinear
+  decipherment written over the cipher runs on f60R-f66R (NEXT-PAG, images on disk, opened again by reading NEXT-PAG's
+  per-page notes). It is the letters' own contemporary decipherment, not a modern one, and it is the material this
+  brief's step 2 turns into key entries; it makes the run-level plaintext period-read, which NOTES already says. No
+  REQUEST.md or spec exists. No other decipherment, clear copy or key sheet is mentioned anywhere in the folder.
+- (b) Other solvers' working files -- not found. Fresh shallow clones on 2 Oct 2026 (cyphersolver HEAD of 1 Oct 2026;
+  unsolved-ciphers) grepped for paget, "clairambault 1225", btv1b9001034d across all files: Bourdeau carries this item only
+  as a catalogue line in research/gallica_sweep/bnf_candidates.txt (line 319) and sru_chiffre_desc.json (the BnF
+  description text); no target folder, rendering or apply-key script. His other "paget" hits are Charles Paget /
+  Elizabethan targets (sp53, stafford1586, cobham1588) and one random-letter string. Aymeloglu: one false hit
+  ('pagetexts' in a Python file). No key of theirs has been run on this text.
+- (c) Physical neighbours -- not found (from OX-PAG, 25 Sept 2026, images/manifest.json): f55-f59 Fleury testament and
+  notice; f67/f70/f75 unrelated print. No clear copy or decipherment sheet bound beside the letters; the decipherment is
+  interlinear on the cipher leaves themselves.
+- (d) Recipient side -- not found. The recipient is an unnamed "Monseigneur ... Vostre Excelence" (consular business: the
+  Secretary of State for the Marine, Pontchartrain, is the likeliest office; Torcy at Foreign Affairs the other). WebSearch
+  (3 queries, 2 Oct 2026): Paget + consul + Genes/Sardaigne + Torcy/Pontchartrain; Paget + consul + Cagliari 1714/1715
+  (Italian-side scholarship: Ammentu articles on consuls in Cagliari, AE/B/I/301-312 Cagliari consular series 1672-1791 named,
+  no Paget); Torcy's printed Journal (Masson 1903) covers 1709-1711 only, before these letters. No printed edition of
+  Pontchartrain's incoming consular letters for 1714 located; the originals sit in AN Marine B7 (LOCAL-QUEUE L11). RIDA XIX
+  (Genoa instructions) already searched (CX2-MISC2).
+Result: no prior modern decipherment or print of these letters located; the item stays partial and step 2 proceeds
+(a search result, not a novelty verdict, rule 10). Requests: github.com 2 clones; WebSearch 3.

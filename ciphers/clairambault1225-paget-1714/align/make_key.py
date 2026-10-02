@@ -1,11 +1,32 @@
 #!/usr/bin/env python3
-"""key_all.tsv (evaluate.py --write) -> ../key.tsv, the per-code values the gloss alignment holds stable.
-A code enters only when its top chunk agrees in >=2 aligned occurrences and is >=50% of them; grade C at >=3
-agreeing occurrences (meaning taken from the period interlinear decipherment, no cryptanalysis), M at 2.
+"""key_all.tsv (evaluate.py --write) -> ../key.tsv, every code the period interlinear decipherment sits over.
+NEXT-PAG (2 Oct 2026) wrote the stable codes only; PAGET-KEY (2 Oct 2026) regrades them and adds the rest at M,
+after both letters cleared their own per-letter controls (align/per_letter.py -> per_letter.txt).
+Key-row grade (decode.json's votes then grade each token: H where the token's own aligned gloss chunk equals the
+value, i.e. the period decipherment written over that very group; C where the token has no aligned chunk and the
+value comes from the code's other occurrences; M where its own chunk disagrees):
+  H  top chunk agrees in >=3 aligned occurrences and is >=50% of them
+  C  top chunk agrees in exactly 2 aligned occurrences and is >=50% of them
+  M  'single attestation' (one aligned occurrence) or 'unsettled' (top chunk under 50% or under 2); decode.json's
+     m_words grades every token of these M, whatever its own chunk says
+The note gives agreeing occurrences per letter (L1 = 8 Apr 1714, f60R-f65L; L2 = 28 Aug 1714, f65R-f66R).
     python3 make_key.py [--check]     (--check: exit 1 if ../key.tsv differs from a regeneration)
 """
 import csv, io, os, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
+L1 = {'f60R', 'f61L', 'f61R', 'f65L'}
+SRC = 'period interlinear decipherment, gloss alignment (align/; NEXT-PAG, PAGET-KEY 2 Oct 2026)'
+
+
+def per_letter():
+    rd = lambda f: list(csv.DictReader(open(os.path.join(HERE, f), encoding='utf-8'), delimiter='\t'))
+    page = {p['cipher_line']: p['page'] for p in rd('pairs.tsv')}
+    agree = {}
+    for a in rd('align_all.tsv'):
+        if a['kind'] == 'num' and a['status'] in ('agrees',):
+            L = 1 if page[a['cipher_line']] in L1 else 2
+            agree.setdefault(a['value'], [0, 0])[L - 1] += 1
+    return agree
 
 
 def build():
@@ -13,12 +34,19 @@ def build():
     w = csv.writer(out, delimiter='\t', lineterminator='\n')
     w.writerow(['code', 'value', 'grade', 'source', 'note'])
     rows = list(csv.DictReader(open(os.path.join(HERE, 'key_all.tsv'), encoding='utf-8'), delimiter='\t'))
+    pl = per_letter()
     for r in sorted(rows, key=lambda r: int(r['value'])):
         n, ag = int(r['n']), int(r['agree'])
+        a1, a2 = pl.get(r['value'], [0, 0])
         if ag >= 2 and ag * 2 >= n:
-            w.writerow([r['value'], r['meaning'], 'C' if ag >= 3 else 'M',
-                        'interlinear gloss alignment (align/, NEXT-PAG 2 Oct 2026)',
-                        '%d/%d aligned occurrences agree; others %s' % (ag, n, r['others'] or '-')])
+            g, tag = ('H' if ag >= 3 else 'C'), ''
+        elif n == 1:
+            g, tag = 'M', 'single attestation: '
+        else:
+            g, tag = 'M', 'unsettled: '
+        w.writerow([r['value'], r['meaning'], g, SRC,
+                    '%s%d/%d aligned occurrences agree (L1 %d, L2 %d); others %s'
+                    % (tag, ag, n, a1, a2, r['others'] or '-')])
     return out.getvalue()
 
 

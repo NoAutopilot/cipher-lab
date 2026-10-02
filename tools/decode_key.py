@@ -39,7 +39,8 @@ Grades (rule 4): the key row's grade, or H; M when the sign's confidence is in u
 when the value is ambiguous ('a|b'), or when the key row's source is in m_sources or its note contains an m_words
 entry; U (or unkeyed_grade) when the sign is not keyed. Optional 'votes' (per-position plaintext evidence such as an
 interlinear gloss): voted_grade (H) where the vote matches the key value, unvoted_grade (S) elsewhere, word_glossed_grade (M) for a
-word sign whose own gloss disagrees.
+word sign whose own gloss disagrees; disagree_grade, when set, for a sign that has a vote which does not match (unvoted_grade
+then covers only signs with no vote at all).
 
 decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   ciphertext, key, exceptions, reading, tokens   file names relative to TARGET_DIR
@@ -66,7 +67,7 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
                 (clairambault1225-paget-1714: kind_column 'kind', sign_kinds ['cipher', 'cipher/insertion-clear'])
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
-  defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade
+  defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade, disagree_grade
 
 --split-check (1 Oct 2026, the espagnol142-mercy-1648 lesson): against a key of values 2-34, four tokens (65, 52,
 48, 72) were each two digits written together (D. Bourdeau, dbourdeau/cyphersolver issue 16; snapshot
@@ -355,6 +356,8 @@ def grade_tokens(recs, key, exc, votes, job):
                 g = job.get('voted_grade', 'H')
             elif v.startswith('=') and r['gloss']:
                 g = job.get('word_glossed_grade', 'M')
+            elif vote is not None and 'disagree_grade' in job:
+                g = job['disagree_grade']
             else:
                 g = job.get('unvoted_grade', 'S')
         else:
