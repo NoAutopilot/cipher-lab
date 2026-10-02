@@ -1,0 +1,14 @@
+# Pencil-gloss anchors read from the DECODE full-size scans (A2-CAS5, 2 Oct 2026): one row per glossed cipher line.
+# The pencil sits ABOVE the cipher line it glosses. cipher = that line's groups (from R9586.txt/R9588.txt, checked
+# against the crop); gloss = one item per group, '-' where the group carries no pencil. conf = reconciler's legibility
+# and placement confidence (H/M/L). Crops and scans stay in the session scratchpad (not committed).
+# record	page	line_cipher	gloss	conf	note
+R9586	p1	723 688 224 482 462	- pur che - -	M	'pur' sits between 688 and 224, 'che' squarely over 224; a cross-like mark between 482 and 462
+R9586	p2	826 294 1930 784 917 101 1127 763 287 207 188 125 339 977	- - - - - - - se dell cam bia an cut ver	H	1127 carries only a pencil overbar; 'se' sits over 763 and 'dell' over 287 (all three readers; native x-extents measured)
+R9586	p2	167 493 1043 224 581 326 456 596 1698 801 863 1016	ba li , che non effett in o la sol tan za	H	the comma sits over 1043; 'non' and 'effett' are written run together over 581 and 326
+R9586	p2	287 1952 784 723 225 324 353 596 269	tta con si ri chi ed ella - -	L	'ed ella' runs over 324 and 353; first letter of 'tta' uncertain
+R9586	p2	226 857 1043 747 331 294 771 888 533	- - - - - ei di san -	L	three-way split: reconciler ei/di/san over 294/771/888 assuming the left drift; pass B over 331/294/771 by literal overlap; each pencil item sits 50-140 px left of its group's centre
+R9588	p1	697 287 430 196 319 1041 102 426 784 336 784 710 609 154 319	- - - - - - - - - - - de ol ale -	L	faint; placement over 710/609/154 by x-overlap only
+R9588	p1	910 286 1070 1058 1071 1068 1059 319 692 499 807 468 473 287	- - - - - - - - quan to sp ir ir -	L	'quan' straddles 692 and 499; a long pencil dash before it
+R9588	p1	134 644 1043 224 29401 292 910 343 817 450 676 350 7001 572	- - - - - - - - - im pe - - -	M	'im' with a diaeresis-like dot over 450; second item 'pe' or 'pu' over 676
+R9588	p2	867 456 224 818 784 917 442 1698 370 268 244 784 537 485	tal in che stato - - - - - - - - - -	L	readers split by half a group (reconciler in/che/stato over 456/224/818; pass B 'in' and 'che' straddling 456/224 and 224/818, 'stato' over 784; pass A one group further right); the pencil lies under line 7 (101 1043 319 ...) but over line 8; the transcript placed it on line 7

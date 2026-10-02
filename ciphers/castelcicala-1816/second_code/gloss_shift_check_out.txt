@@ -1,0 +1,9 @@
+# A2-CAS5, 2 Oct 2026: python3 gloss_shift_check.py ; then --all
+lines 4 combinations 625
+image placement (k=0): agreements 1 conflicts 0
+shifted: mean agreements 0.04 mean conflicts 0.36; combinations with >=1 agreements and <=0 conflicts: 25 (0.0400)
+groups glossed in >=2 lines: {'224': ['che@R9586p1', 'che@R9586p2']}
+lines 9 combinations 1953125
+image placement (k=0): agreements 2 conflicts 1
+shifted: mean agreements 0.14 mean conflicts 3.86; combinations with >=2 agreements and <=1 conflicts: 13975 (0.0072)
+groups glossed in >=2 lines: {'224': ['che@R9586p1', 'che@R9586p2', 'che@R9588p2'], '287': ['dell@R9586p2', 'tta@R9586p2'], '456': ['in@R9586p2', 'in@R9588p2']}
