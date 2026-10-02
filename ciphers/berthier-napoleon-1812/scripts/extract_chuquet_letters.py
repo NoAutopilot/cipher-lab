@@ -3,10 +3,20 @@
 Chuquet 1912 vol.3 djvu OCR text, for the crib test in NOTES.md Y9 section.
 
 Usage: python3 extract_chuquet_letters.py /tmp/chuquet_full.txt --out letters.json
+
+Source: archive.org 1812laguerrederu03chuquoft_djvu.txt (Chuquet, 1812. La guerre de
+Russie, 3e serie, 1912), note "45. Berthier a Napoleon" (djvu line 6365) up to note
+"46. Murat a Napoleon" (line 8917). GF4b, 2 Oct 2026: the v1 run (lines 7100-9600)
+started mid-chapter and ran into Murat's note 46, whose Roman keys II-XI overwrote
+Berthier's; v1 output kept as letters_v1_mixedpool.json. Defaults now bound the run to
+note 45, the OCR-damaged marker "1I[" (III) is mapped by --marker-fix, and letters
+inside the note that are not Berthier's (Lefebvre a Berthier, 22/28 Dec) are dropped.
 """
 import re, sys, json, argparse
 
 ROMAN_LINE = re.compile(r'^\s*([IVXLCDM]{1,7})\s*$')
+SKIP_LINES = set()  # line index (0-based) of a stray page-number 'marker'
+MARKER_FIX = {}  # line index (0-based) -> roman, for OCR-damaged markers
 NOISE_LINE = re.compile(
     r'^(LA\s+GU[EÈ]RRE\s+DE\s+RUSSIE|LA\s+GU[EÈ]RRE|\d{1,3}|LA\s+GUKRUE\s+DIù\s+RUSSIE|LA\s+GUKRRK\s+DE\s+RUSSIE)\s*$',
     re.IGNORECASE)
@@ -22,6 +32,11 @@ def find_letters(lines, start_idx, end_idx):
     """Return dict roman -> {dateline, body_lines} for markers in [start_idx,end_idx)."""
     markers = []
     for i in range(start_idx, end_idx):
+        if i in SKIP_LINES:
+            continue
+        if i in MARKER_FIX:
+            markers.append((i, MARKER_FIX[i]))
+            continue
         m = ROMAN_LINE.match(lines[i])
         if m:
             markers.append((i, m.group(1)))
@@ -57,7 +72,7 @@ def find_letters(lines, start_idx, end_idx):
             clean.append(s)
         text = ' '.join(clean)
         text = re.sub(r'\s+', ' ', text).strip()
-        letters[roman] = {'dateline': dateline, 'text': text}
+        letters.setdefault(roman, []).append({'dateline': dateline, 'text': text, 'djvu_line': idx + 1})
     return letters
 
 
@@ -79,21 +94,44 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('txt')
     ap.add_argument('--out', required=True)
-    ap.add_argument('--from-line', type=int, default=7100)
-    ap.add_argument('--to-line', type=int, default=9600)
+    ap.add_argument('--from-line', type=int, default=6365, help='1-based djvu line of note 45 header')
+    ap.add_argument('--to-line', type=int, default=8917, help='1-based djvu line of note 46 header (exclusive)')
+    ap.add_argument('--marker-fix', action='append', default=['6583:III', '7935:XXII'],
+                    help='LINE:ROMAN for an OCR-damaged marker (1-based line)')
+    ap.add_argument('--skip-line', type=int, action='append', default=[7123],
+                    help='1-based line of a stray Roman-looking OCR line that is not a letter marker')
+    ap.add_argument('--drop-author-re', default=r'\b\w+ +[aà] +Berthier\b',
+                    help='drop a block whose first line names another writer to Berthier')
     args = ap.parse_args()
 
+    for mf in args.marker_fix:
+        ln, rn = mf.split(':')
+        MARKER_FIX[int(ln) - 1] = rn
+    SKIP_LINES.update(x - 1 for x in args.skip_line)
     lines = load_lines(args.txt)
-    letters = find_letters(lines, args.from_line, args.to_line)
+    raw = find_letters(lines, args.from_line - 1, args.to_line - 1)
+    letters = {}
+    for roman, ds in raw.items():
+      for d in ds:
+        if d['dateline'] and re.search(args.drop_author_re, d['dateline']):
+            print('dropped (not Berthier):', roman, '|', d['dateline'], '| djvu line', d['djvu_line'])
+            continue
+        if roman in letters:
+            raise SystemExit(f'duplicate marker {roman} at djvu line {d["djvu_line"]}: range spans two notes')
+        if d['dateline'] and not re.search(r'\d', d['dateline']):
+            # no dateline printed (XXXIII): the first body line was taken as the dateline
+            d['text'] = (d['dateline'] + ' ' + d['text']).strip()
+            d['dateline'] = None
+        d['source'] = ('Chuquet 1912, 1812. La guerre de Russie 3e serie, note 45 "Berthier a Napoleon", '
+                       'archive.org 1812laguerrederu03chuquoft_djvu.txt line %d' % d['djvu_line'])
+        letters[roman] = d
     # keep only plausible roman numerals (I..L range for this chapter) with a december dateline
     out = {}
     for roman, d in letters.items():
         n = roman_to_int(roman)
         if not (1 <= n <= 60):
             continue
-        if not d['dateline']:
-            continue
-        if 'cembre' not in (d['dateline'] or '') and '1812' not in (d['dateline'] or ''):
+        if d['dateline'] and 'cembre' not in d['dateline'] and '1812' not in d['dateline']:
             continue
         out[roman] = d
     json.dump(out, open(args.out, 'w'), ensure_ascii=False, indent=1)

@@ -747,3 +747,48 @@ floor by construction, which would make the family a non-test here. Steps in ord
 3. **[ ] Rebuild the crib-test pool** (`scripts/extract_chuquet_letters.py`) so keys X/XI are Berthier's, not Murat's;
    cheap (script only, ~USD 1); needed only before the pool is reused as a control.
 4. AF/IV/1643 plaquette 1/VI (the deciphered primata) -- needs-physical-access or an AN reproduction order; owner-side.
+
+## GF4b: GC34 key-rebuild routes and crib-pool rebuild (GF4b-berthier-napoleon-1812, account-4, 2 Oct 2026)
+
+**(1) GC34 tables (Bazeries 1896, Google Books `fIAuAAAAYAAJ`): no cloud route gives them; LOCAL-QUEUE row L38 filed.**
+Routes tried, in order:
+- archive.org advancedsearch `Bazeries`: 3 hits (two Byte 1983 scans, a Friedman letter about Candela's book), no
+  Bazeries book. be-api fts `"chiffres secrets dévoilés"`: hits are secondary literature only.
+- Gallica SRU `dc.creator all "Bazeries"`: two items, *Les chiffres secrets dévoilés* (1901, `ark:/12148/bpt6k325768q`) and
+  *Le Masque de fer* (1893). Gallica `gallica all "chiffres de Napoléon"`: nothing by Bazeries. The 1896 item is not on Gallica
+  under either query.
+- Bazeries 1901 checked as a stand-in: ContentSearch counts `chiffre` 218 and `Napoléon` 36 (controls), `Berthier` 5,
+  **`Davout` 0, `Oudinot` 0, `1812` 0**. Its chapter "Chiffres de Napoléon Ier" (pp.151-196) read through Gallica's ALTO OCR
+  (`RequestDigitalElement?E=ALTO`, PAG_163-188 -> `bazeries1901/alto_p163-188.txt`; PAG_184 answered HTTP 429, after which
+  this worker stopped calling Gallica). It prints two examples: Berthier to Augereau, Péterswald 17 Sept 1813, primata and
+  duplicata with a value-by-value translation (PAG_167-168), and Rapp from Danzig, 6 Nov 1813 (PAG_181 ff.). Both are in the
+  **petit chiffre**, with values up to 177. That is not the 1812 page's code family (its values run to about 1200), and none
+  of the GC34 (Davout/Oudinot) material appears. The file is kept because PAG_168 is grade-C cipher/plain material for the
+  1813 petit chiffre and a future target could use it. It is not applied here.
+- HTRC Extracted Features: not tried. It gives per-page bag-of-words counts only, so it can locate pages but cannot rebuild a
+  table. Its only use would have been to find a HathiTrust copy of the 1896 book, and the request cap had been reached.
+- Not tried, cheaper than L38 and worth doing first: J.-F. Bouchaudy's "The codebooks of Napoleon I"
+  (jfbouch.fr/crypto/napoleon/, NOTES.md web check) lists "Bazeries' decipherments of the Emperor-Davout 1813 Great Cipher".
+  A cloud worker should open that sub-page and check whether it prints a value table before the owner's runner reads L38.
+  This job did not open it because it had reached its request cap.
+- `tools/key_livecheck.py` (2 Oct 2026): `Google Books (googleapis.com/books/v1) | yes | yes | HTTP 200, totalItems=352`. The
+  API works, but books.google.com page and text view are captcha-blocked from the cloud (host table), and no credential
+  changes that. Hence LOCAL-QUEUE **L38** (edition-read, pp.19-50 of `fIAuAAAAYAAJ`). No ASKS row: the queue row is the
+  owner's runner's input, and the row format does not need one.
+
+**(2) Crib-test control pool rebuilt.** The pool was worse than flagged. `letters.json` v1 had nine Murat letters (II, III, IV,
+VI, VII, VIII, IX, X, XI), not two, because the extractor's line range (7100-9600) ran into Chuquet's note 46 "Murat à
+Napoléon" (djvu line 8917). `scripts/extract_chuquet_letters.py` now defaults to note 45 only (lines 6365-8917). It maps the
+OCR-damaged markers III and XXII, skips a stray header "V", drops the two Lefebvre-to-Berthier letters in the note, and
+records each letter's source line. Result: 38 Berthier letters, I-XXXVIII. The v1 files are kept as
+`scripts/*_v1_mixedpool.json`. Both pools' ranks for XIX, XXIII and XXIX are in HYPOTHESES.md ("Crib-fit control pool
+rebuilt"): XIX 14/3/17 (was 15/3/18), XXIII 17/29/33 (was 18/29/30), XXIX 1/11/16 (was 1/12/17) of 38. The "no fit" reading
+for XIX and XXIII stands. No candidate is a crib, and nothing is graded.
+
+Requests this job: archive.org 3 (Chuquet djvu.txt 1, advancedsearch 1, be-api fts 1); gallica.bnf.fr 35 (SRU 2,
+ContentSearch 7, ALTO 26, one of them HTTP 429, after which Gallica was not called again); `tools/key_livecheck.py`'s own
+6 API probes. All requests were made one at a time, at least 1.5 s apart. No vision was used.
+
+**Escalation, updated (GF4b):** step 1 is now (a) the Bouchaudy jfbouch.fr Davout sub-page, a cloud job of about USD 1;
+then (b) LOCAL-QUEUE L38 (owner's runner), followed by about USD 4 to rebuild GC34 and apply it with a shuffled-key control.
+Step 3 (crib-pool rebuild) is **done**. Steps 2 and 4 are unchanged. Verdict: keep going.
