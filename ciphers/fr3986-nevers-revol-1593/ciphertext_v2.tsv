@@ -1,0 +1,57 @@
+# f.198 verso v2 draft, GAPS3 2 Oct 2026: blind passes A,B (Sonnet, atlas 264ext, crops images/v2) reconciled by the worker on the crops; tags in tools/keys/key60.tsv set (+ key_atlas_extra.tsv)
+line	position	sign	confidence	alt	why
+f198v_L05r1	1	<?>	U		A:<p-like> B:10
+f198v_L05r1	2	ß	M		A:tt B:++
+f198v_L05r1	3	d	M		A:.x. B:.x.; worker d
+f198v_L05r1	4	x	M		A:- B:x
+f198v_L07r1	1	p3	M		A:g3 B:+ 5 3
+f198v_L09r1	1	R	M		A:<R-like> B:ꝗ
+f198v_L09r1	2	phi	H		A,B agree
+f198v_L09r1	3	phi	M		trailing bar; alt +phi
+f198v_L10r1	1	H#	M		A:H# B:<o> ++
+f198v_L10r1	2	p'	M		A:g p~ B:pl
+f198v_L10r1	3	x	H		A,B agree
+f198v_L10r1	4	η	M		A:eta B:ue
+f198v_L13r1	1	λ	H		agree
+f198v_L13r1	2	o-	H		agree
+f198v_L13r1	3	X+	M		B:X++
+f198v_L13r1	4	d	H		agree
+f198v_L13r1	5	ll	M		A:loop-h B:ll-stroke
+f198v_L13r1	6	pi	H		agree
+f198v_L13r1	7	T	M		inverted T, atlas inT; key60 ⊥
+f198v_L15r1	1	ʃ	M		A:x eta B:x n
+f198v_L15r1	2	4	H		agree
+f198v_L15r1	3	5	H		agree
+f198v_L15r1	4	10	M		B:1 0
+f198v_L15r2	1	f++	H		agree
+f198v_L15r2	2	p~	M		A:p'
+f198v_L15r2	3	η	M		B:n
+f198v_L15r3	1	6	H		agree
+f198v_L15r3	2	7	H		agree
+f198v_L15r3	3	g	M		A:partial-d B:g
+f198v_L15r3	4	∂	M		B:alpha
+f198v_L15r3	5	ß	M		A,B ++; worker ## (dbl)
+f198v_L15r3	6	v	H		agree
+f198v_L15r3	7	q	H		A:q B:q///
+f198v_L15r3	8	///	H		agree
+f198v_L15r3	9	λ	H		agree
+f198v_L15r3	10	7	H		agree
+f198v_L15r3	11	∂	M		A:partial-d B:∂
+f198v_L15r3	12	+o	M		A:+o B:+ to
+f198v_L15r3	13	4	M		A:4 B:q
+f198v_L15r3	14	η	M		A:eta B:n
+f198v_L15r3	15	ll	M		A:ll B:11
+f198v_L15r3	16	λ	H		agree
+f198v_L15r3	17	6	H		agree
+f198v_L15r3	18	3	M		A:g B:g; worker 3
+f198v_L15r3	19	+++	M		A:+++ B:###
+f198v_L15r3	20	ꝑ	M		A,B T-with-cap; worker p-bar
+f198v_L15r3	21	T	M		worker; final T
+f198v_L16r1	1	X~	M		A:x-dash B:X~
+f198v_L16r1	2	20	H		agree
+f198v_L16r1	3	p3	M		A:g3 B:p 3
+f198v_L16r1	4	z8	M		A:chi B:chi/z8
+f198v_L16r2	1	+	H		agree
+f198v_L16r2	2	E	M		B:ke
+f198v_L16r2	3	++	H		agree
+f198v_L19r1	1	‡	M		A:‡ B:barred p

@@ -1,0 +1,14 @@
+# key_atlas_extra.tsv -- values for the no.60 atlas tags (tools/keys/key60_atlas/atlas264*.tsv) that tools/keys/key60.tsv
+# (Bourdeau's tag set for Tomokiyo's no.60) does not carry, or carries with another value; each value is the gloss syllable
+# the exemplar stands under on fr.3985 c.264 (grade M: gloss-aligned, LANE R5 G / GAPS, not the table). Merged after
+# key60.tsv by decode.json's v2 job, so a collision becomes a|b. GAPS3, 2 Oct 2026.
+sign	value	grade	source	note
+alpha	co	M	atlas A03/A18	not a key60.tsv tag
+beta	n	M	atlas A08	not a key60.tsv tag
+inT	n	M	atlas A11/A19	not a key60.tsv tag
+lam	la	M	atlas A01/A39/A48	not a key60.tsv tag
+ll4	p	M	atlas A09	no key sign; maybe cursive v+ or 10
+pl	e	M	atlas A31	not a key60.tsv tag
+sigma	li	M	atlas A15	no key sign
+phi	ca	M	atlas A13	key60.tsv phi = Duc de Ferrare; merged as a|b
+v	o	M	atlas A44	key60.tsv v = li; atlas also u (A07, A21)

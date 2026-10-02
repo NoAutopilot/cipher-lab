@@ -1,0 +1,6 @@
+signs 55; unkeyed tags 1: <?>
+decoded letters 138
+real 4-gram score -1.3189
+value-shuffled keys (200): mean -1.1489 sd 0.0874 max -0.9469; real rank 194/201; z -1.95
+judge on real decode: FAIL {"language": {"N": 138, "mode": "both", "null_p99": -1.708, "pass": false, "real_median": -0.788, "real_p05": -0.919, "score": -1.319}, "words": {"cover": 0.841, "min": 0.5, "pass": true, "real_text_median_cover": 0.942}}
+shuffled-target decodes (20): judge PASS 0/20; language scores min -1.347 median -1.273 max -1.130

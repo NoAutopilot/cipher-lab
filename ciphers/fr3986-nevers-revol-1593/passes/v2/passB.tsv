@@ -1,0 +1,74 @@
+line	run	pos	tag	confidence	before	after	note
+L04	1	1	<t with bar/cross>	M	vous	-	
+L05	1	1	10	M	ans	de	p-like
+L05	1	2	++	M			or H#
+L05	1	3	.x.	M			d / x
+L05	1	4	x	M			
+L06	1	1	+	M	-	Cornier	leading cross, like et
+L07	1	1	+	M	-	Fors	leading cross
+L07	2	1	5	M	Roncal	fait	5-like
+L07	2	2	3	M			
+L08	1	1	x	M	-	le	line start
+L08	1	2	x	M			
+L08	1	3	r	M			
+L08	2	1	<t with bar>	M	si	fba	
+L09	1	1	ꝗ	M	de	-	R-like; or ß
+L09	1	2	phi	H			
+L09	1	3	phi	M			barred phi
+L10	1	1	<o>	M	de	que	
+L10	1	2	++	M			or tt
+L10	1	3	pl	M			p with ^ above
+L10	1	4	x	M			
+L10	1	5	ue	M			eta-like; same pair as L15 xeta
+L13	1	1	lam	H	-	vray	
+L13	1	2	o-	M			
+L13	1	3	X++	M			x with extra bars
+L13	1	4	d	M			
+L13	1	5	<ll with stroke>	M			
+L13	1	6	pi	H			
+L13	1	7	inT	H			
+L15	1	1	x	M	Tuy	quelque	
+L15	1	2	n	M			eta/n-like
+L15	2	1	beta	H	de	-	ß
+L15	2	2	4	H			
+L15	2	3	5	M			
+L15	2	4	1	M			
+L15	2	5	0	M			overlap '10'
+L15	3	1	f++	H	-	-	
+L15	3	2	p~	M			
+L15	3	3	n	M			eta
+L15	3	4	6	M			
+L15	3	5	7	M			
+L15	3	6	g	M			or ∂
+L15	3	7	alpha	M			∂
+L15	3	8	++	M			
+L15	3	9	v	M			
+L15	3	10	q///	M			
+L15	3	11	lam	H			
+L15	3	12	7	M			
+L15	3	13	∂	M			
+L15	3	14	+	M			
+L15	3	15	to	M			
+L15	3	16	q	M			
+L15	3	17	n	M			
+L15	3	18	11	M			
+L15	3	19	lam	M			
+L15	3	20	6	M			
+L15	3	21	g	M			
+L15	3	22	###	M			
+L15	3	23	T	M			with cap
+L16	1	1	X~	M	vrayement	+	crossed x
+L16	1	2	20	H			
+L16	1	3	p	M			p-like
+L16	1	4	3	H			
+L16	1	5	<chi/z8>	M			
+L16	2	1	+	M	-	de	
+L16	2	2	<ke>	M			
+L16	2	3	++	M			#
+L18	1	1	+	M	-	prev	leading cross
+L19	1	1	<barred p/ ‡>	M	vamos	par	vertical stroke through cross
+L11	0	1	NONE	M			no cipher seen
+L12	0	1	NONE	M			no cipher seen
+L14	0	1	NONE	M			no cipher seen
+L17	0	1	NONE	M			no cipher seen
+L20	0	1	NONE	M			no cipher seen

@@ -1,0 +1,67 @@
+line	run	pos	tag	confidence	before	after	note
+L04	1	1	X+	M	vous	Je	crossed x, maybe A06
+L04	1	2	beta	M			alt <p-like loop>
+L05	1	1	<p-like with tick>	M	am	de	
+L05	1	2	tt	M			alt ++
+L05	1	3	.x.	M			alt plain letters dx
+L06		1	NONE	M			dark slash strokes are flourishes; "ff" near x1230 s2 judged clear letters
+L07	1	1	A50	M	Rouceul	suiuen	g3 vs 53; alt g3/p3
+L08		1	NONE	M			no certain cipher; s1 start "Auss" likely clear
+L09	1	1	<R-like loop>	M	de	-	
+L09	1	2	A13	H			phi
+L09	1	3	A13	M			phi with bar below
+L10		1	NONE	M			s1 clear French
+L10	2	1	H#	M	de	que	o H# ; alt ++
+L10	2	2	A38	M			
+L10	2	3	p~	M			p with tilde
+L10	2	4	A36	M			x
+L10	2	5	<eta>	H			eta, key eta
+L11		1	NONE	M			curly clear words only; no confident run
+L12		1	NONE	M			no confident run
+L13	1	1	A01	H	-	Roy	lambda
+L13	1	2	o-	M			
+L13	1	3	A02	M			crossed x
+L13	1	4	<d>	M			
+L13	1	5	<loop-h>	M			
+L13	1	6	pi	H			pi
+L13	1	7	A11	H			inverted T
+L14		1	NONE	M			no cipher; dark slashes are flourishes
+L15	1	1	A36	M	ay	que	x
+L15	1	2	<eta>	H			
+L15	2	1	A08	M	de	-	beta/long s with hook
+L15	2	2	4	H			
+L15	2	3	5	M			
+L15	2	4	A30	M			10 read as 1 0 or 18
+L15	3	1	f++	H	-	-	
+L15	3	2	p'	M			
+L15	3	3	<eta>	H			
+L15	4	1	6	H	-	-	
+L15	4	2	7	M			
+L15	4	3	<partial-d>	H			key a
+L15	4	4	A25	M			++
+L15	4	5	A07	M			v
+L15	4	6	q	M			
+L15	4	7	///	H			
+L15	4	8	A01	H			lambda
+L15	4	9	7	M			
+L15	4	10	<partial-d>	M			
+L15	4	11	A34	M			+o
+L15	4	12	4	M			
+L15	4	13	<eta>	M			
+L15	4	14	ll	M			
+L15	4	15	A01	M			lambda
+L15	4	16	6	M			
+L15	4	17	A05	M			g or 3
+L15	4	18	+++	M			
+L15	4	19	<T with cap>	M			alt A04
+L16	1	1	<x with dash>	M	Roit	-	x~?
+L16	1	2	A60	H			20
+L16	1	3	A50	M			p3
+L16	1	4	<chi curl>	M			alt X~
+L16	2	1	+	M	-	de	
+L16	2	2	A17	M			epsilon
+L16	2	3	++	M			barred ##
+L17		1	NONE	M			dark slashes are flourishes
+L18		1	NONE	M			left-margin cross is marginal
+L19	1	1	‡	M	ceux	par	big barred cross; alt A52
+L20		1	NONE	M			no cipher
