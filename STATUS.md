@@ -354,7 +354,7 @@ session_01MdxHcb7HG25npGdDsBevq4), GAPS7-moray-wood (lexical fit of the 16 M/I v
 cap 7; session_01N3udPn28E5DVaUeFYfYR8t), GAPS8-na-suriname (gap 3, 4.VEL 2061, cap 10; session_017ot9sa7WfpnriDY4shwELE),
 GAPS-fr4715-vieuville-pool-4 (no.37 dense blocks, Opus passes, no.58 control first, cap 20;
 session_01XYtebGkfv3pcr5tFe3x8Pj), GAPS7-na-schonenberg (12-code image pass, readers blind to the inferences, cap 22;
-session_01Nmv3CUrvjHYaqPrYJzstr4), CLOSER-9 (session_01Gj... see ROOM). Slot check re-armed every 15 min while workers run.
+session_01Nmv3CUrvjHYaqPrYJzstr4), CLOSER-9 (session_01UiEUjVdY2o3fjdUgjY2nJN). Slot check re-armed every 15 min while workers run.
 
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
