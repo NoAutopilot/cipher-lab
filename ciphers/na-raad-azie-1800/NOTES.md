@@ -386,7 +386,68 @@ Grade counts this step: H 0, C 0, S 0, M 0 readings (no plaintext claimed); the 
 M-grade eye reads of the open text, not decipherment. Requests: none (github.com shallow clone of dbourdeau/cyphersolver
 1; all images already on disk). Vision: two reads of on-disk images by this worker, no subagent.
 
-**Next step** (~$4-6, Usage 6 per-pass pricing): cut line crops of leaf 2's right page with
+**Next step** (~$4-6, Usage 6 per-pass pricing) [x] done 2 Oct 2026 by A2-RAA2, see the step below -- 370 columns
+transcribed in 14 lines; next is the cell-substitution test named there. Original text: cut line crops of leaf 2's right page with
 `tools/iiif_lines.py --image images/209_leaf2.jpg --out images/crops209` and run two blind passes plus one
 reconciliation to transcribe all ~14 cipher lines as (top, bottom) pairs; then test the stacked pairs as a 7x4 (or
 smaller) cell substitution with the C3 control at the transcribed length.
+
+## 2 Oct 2026 -- A2-RAA2: leaf 2 right page, all cipher lines transcribed from line crops (rule 2)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Crops.** `python3 tools/iiif_lines.py --image ciphers/na-raad-azie-1800/images/209_leaf2.jpg --out
+ciphers/na-raad-azie-1800/images/crops209 --region 2360,480,2180,2060 --prefix l2r --centres
+39,152,295,429,542,664,776,900,1030,1157,1279,1383,1500,1605,1686,1775,1886,1986 --debug` (centres by eye from the
+row-ink profile: the autocorrelation split each stacked top/bottom pair into two lines). 18 bands, one segment each
+(2180 px wide); overlay `images/crops209/l2r_lines_debug.jpg` checked. Cipher lines are L02-L13, L16 and L17 (14 crops);
+L01, L14, L15 and L18 are clear Dutch only ("Behalven de u bekende en voor uw vertrek reeds", "Ik ben gelast u daar
+van deze onderhandsche en", "voorlopige kennis te geven, met verzoek, dat Gy", "deszelfs ...").
+
+**Passes.** Two blind Sonnet subagent passes (A, B), one call each over the 14 line crops only, neither shown the other's
+file or any earlier transcription (their tool logs show reads of the 14 crops and nothing else). Compared with
+`scripts/compare_l2_passes.py` (output `data/l2passes/compare.tsv`):
+
+| | pass A | pass B | aligned | top digit agree | pair agree |
+|---|---|---|---|---|---|
+| cipher columns, 14 lines | 370 | 366 | 366 | 366 (100.0%) | 355 (97.0%) |
+
+Disagreements fall in L09, L12, L13, L16 and L17 only, under the 10% Usage 6 threshold, so no third pass was run.
+This worker settled all 15 from the crops (one reconciliation unit): pass A right 12 times (B had dropped a column
+in L09, L12 and L13 and shifted the pairing in L16), pass B right twice (L17 columns 7 and 9). Two columns stay M:
+L13 column 18 (top blotted, bottom 2) and L17 column 13 (1/4, a possible strike-through across this stretch).
+
+**Result** -- `ciphertext_209_leaf2_full.tsv` (line, pos, col, top, bottom, kind, tr, note): **370 cipher columns**
+in 14 lines (tr: A both passes agree 355, R settled from crop 13, M 2), plus 13 struck-through columns (kind x,
+transcribed but low confidence), commas, one closing stop and 7 clear-text runs (kind w: "maar evenwel, zoo wy
+hopen, eerlang"; "is de Asiatische"; "Raad"; "en reeds bezig met"; "waardoor, indien dezelve"; "den"; "tot"; eye-read,
+M). Per line: L02 35, L03 30, L04 34, L05 7, L06 18, L07 15, L08 33, L09 29, L10 35, L11 20, L12 35, L13 19,
+L16 29, L17 31.
+
+Inventory (descriptive only, no key fitted): top digits 1-7 only, bottom digits 1-4 only, no 0, 8 or 9 anywhere;
+24 of the 28 possible (top, bottom) cells occur (absent: 7/2, 7/3, 7/4, 1/3). Top counts 1:49 2:46 3:19 4:71 5:47
+6:103 7:34 (?:1); bottom counts 1:166 2:86 3:62 4:56. Most frequent cells 6/1 85 (23.0%), 1/2 35, 7/1 34, 4/4 28,
+5/3 26, 4/1 25, 2/3 20. A one-cell-per-letter design over a 24-letter period alphabet would show about this shape;
+that is a structural observation, not a reading.
+
+**Rule 2 corrections, logged.**
+1. *Extent*: the cipher body of leaf 2 is 370 columns in 14 lines, not the single 35-column line on file since
+   VX-CS06 (25 Sept 2026). `ciphertext_209_leaf2.tsv` (35 rows) is kept unchanged as that pass's record and is
+   superseded by `ciphertext_209_leaf2_full.tsv`; the spec's `ciphertext` and `alphabet` fields are corrected in this
+   commit to say so.
+2. *Line 1 bottoms*: against the earlier file, L02 (its line 1) agrees on all 35 tops but both new passes, and this
+   worker's crop check, differ in 8 bottom digits (positions 11, 13, 14, 25-29: the old file shifted the bottoms of
+   the first group by one and left 14, 28, 29 blank, where the crop shows 1/1/1). The old T3 figure in the A2-RAA
+   step (32/35 digit-annotated) becomes 35/35; T1 = 0 is unchanged, so that step's verdict stands.
+
+Grade counts this step: no plaintext claimed (H 0, C 0, S 0, M 0, I 0); the transcription status counts above are
+the per-column record. Vision: 2 Sonnet subagent passes (14 line crops each) + 1 reconciliation by this worker (5
+crops) + 3 own reads (page overview, debug overlay, one crop). Requests: none (all images on disk).
+
+**Next step** (~$3, breadth cap): run `tools/family_run.py` with the `masc` family on the 370 columns treated as
+24-symbol cells (top*10+bottom), matched control first at N=370, K=24, Dutch -- but the repo's Dutch corpora are
+`nl20` (Gutenberg, 1880s-1900s novels) and `nl_repo` (1624-25 Breda print), neither of the letter's 1800 date and
+government-letter register (rule 3, era lesson): build or pick an era-matched c.1780-1820 Dutch corpus first (~$2,
+V6-PTCORP took ~12 min), then run control and target. Leaf 3 (faint bleed-through, same cipher) stays untranscribed.

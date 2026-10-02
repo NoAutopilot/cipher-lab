@@ -1,0 +1,422 @@
+line	pos	col	top	bottom	kind	tr	note
+L02	1	1	5	2	c	A	
+L02	2	2	6	1	c	A	
+L02	3	3	3	4	c	A	
+L02	4	4	1	2	c	A	
+L02	5	5	5	3	c	A	
+L02	6	6	2	3	c	A	
+L02	7	7	6	1	c	A	
+L02	8	8	3	3	c	A	
+L02	9	9	4	1	c	A	
+L02	10	10	6	1	c	A	
+L02	11	11	6	1	c	A	
+L02	12	12	1	2	c	A	
+L02	13	13	6	2	c	A	
+L02	14	14	6	1	c	A	
+L02	15		-	-	gap		
+L02	16	15	2	1	c	A	
+L02	17	16	6	1	c	A	
+L02	18	17	1	2	c	A	
+L02	19	18	3	2	c	A	
+L02	20	19	6	1	c	A	
+L02	21	20	7	1	c	A	
+L02	22	21	6	2	c	A	
+L02	23	22	2	3	c	A	
+L02	24	23	7	1	c	A	
+L02	25	24	5	2	c	A	
+L02	26	25	2	1	c	A	
+L02	27	26	4	4	c	A	
+L02	28	27	7	1	c	A	
+L02	29	28	6	1	c	A	
+L02	30	29	6	1	c	A	
+L02	31	30	7	1	c	A	
+L02	32	31	3	3	c	A	
+L02	33	32	5	3	c	A	
+L02	34	33	1	2	c	A	
+L02	35	34	3	4	c	A	
+L02	36	35	4	3	c	A	
+L03	1	1	4	1	c	A	
+L03	2	2	1	2	c	A	
+L03	3	3	5	3	c	A	
+L03	4	4	6	1	c	A	
+L03	5	5	3	4	c	A	
+L03	6	6	6	1	c	A	
+L03	7	7	7	1	c	A	
+L03	8		-	-	gap		
+L03	9	8	2	1	c	A	
+L03	10	9	5	3	c	A	
+L03	11	10	5	3	c	A	
+L03	12	11	1	2	c	A	
+L03	13	12	2	3	c	A	
+L03	14	13	7	1	c	A	
+L03	15	14	6	2	c	A	
+L03	16	15	2	3	c	A	
+L03	17	16	6	1	c	A	
+L03	18		-	-	p		,
+L03	19		-	-	gap		
+L03	20	17	6	3	c	A	
+L03	21	18	6	1	c	A	
+L03	22	19	1	4	c	A	
+L03	23	20	4	2	c	A	
+L03	24	21	6	1	c	A	
+L03	25		6	2	x		struck; low confidence
+L03	26		5	-	x		struck; low confidence
+L03	27		-	-	gap		
+L03	28	22	6	2	c	A	
+L03	29	23	5	3	c	A	
+L03	30	24	5	3	c	A	
+L03	31	25	1	2	c	A	
+L03	32	26	2	1	c	A	
+L03	33		?	6	x		struck; low confidence
+L03	34	27	6	1	c	A	
+L03	35	28	6	1	c	A	
+L03	36	29	1	4	c	A	
+L03	37	30	6	1	c	A	
+L04	1	1	4	1	c	A	
+L04	2	2	6	1	c	A	
+L04	3	3	5	2	c	A	
+L04	4	4	6	1	c	A	
+L04	5	5	7	1	c	A	
+L04	6	6	4	3	c	A	
+L04	7	7	3	4	c	A	
+L04	8		-	-	gap		
+L04	9	8	5	3	c	A	
+L04	10	9	6	1	c	A	
+L04	11	10	6	2	c	A	
+L04	12	11	6	1	c	A	
+L04	13	12	7	1	c	A	
+L04	14	13	4	1	c	A	
+L04	15	14	5	3	c	A	
+L04	16	15	4	1	c	A	
+L04	17	16	1	1	c	A	
+L04	18	17	2	3	c	A	
+L04	19	18	6	1	c	A	
+L04	20	19	1	2	c	A	
+L04	21	20	4	1	c	A	
+L04	22	21	5	3	c	A	
+L04	23	22	6	1	c	A	
+L04	24		-	-	p		. (dot after 6 col)
+L04	25		-	-	gap		
+L04	26	23	5	3	c	A	
+L04	27	24	3	4	c	A	
+L04	28	25	5	2	c	A	
+L04	29	26	6	1	c	A	
+L04	30	27	1	1	c	A	
+L04	31	28	5	3	c	A	
+L04	32	29	2	4	c	A	
+L04	33	30	6	2	c	A	
+L04	34	31	6	1	c	A	
+L04	35	32	7	1	c	A	
+L04	36		-	-	gap		
+L04	37	33	2	3	c	A	
+L04	38	34	4	3	c	A	
+L05	1		?	?	x		struck; low confidence
+L05	2	1	5	2	c	A	
+L05	3	2	6	1	c	A	
+L05	4	3	6	3	c	A	
+L05	5	4	6	1	c	A	
+L05	6	5	6	1	c	A	
+L05	7	6	4	3	c	A	
+L05	8	7	4	1	c	A	
+L05	9		-	-	p		,
+L05	10		-	-	w		maar evenwel, zoo wy hopen, verlang(en?)
+L06	1	1	2	1	c	A	
+L06	2	2	5	3	c	A	
+L06	3	3	5	3	c	A	
+L06	4	4	1	2	c	A	
+L06	5	5	4	1	c	A	
+L06	6	6	5	2	c	A	
+L06	7	7	4	4	c	A	
+L06	8	8	7	1	c	A	
+L06	9	9	5	2	c	A	
+L06	10		-	-	gap		
+L06	11	10	3	2	c	A	
+L06	12	11	4	4	c	A	
+L06	13	12	1	4	c	A	
+L06	14	13	1	1	c	A	
+L06	15	14	6	1	c	A	
+L06	16		?	?	x		struck; low confidence
+L06	17	15	5	1	c	A	
+L06	18	16	5	1	c	A	
+L06	19	17	6	1	c	A	
+L06	20		?	?	x		struck; low confidence
+L06	21	18	7	1	c	A	
+L06	22		-	-	p		,
+L06	23		-	-	w		of de Asiatische(?)
+L07	1		-	-	w		Raad
+L07	2	1	5	2	c	A	
+L07	3	2	6	1	c	A	
+L07	4	3	4	4	c	A	
+L07	5	4	2	4	c	A	
+L07	6	5	4	1	c	A	
+L07	7	6	5	3	c	A	
+L07	8	7	1	2	c	A	
+L07	9	8	2	3	c	A	
+L07	10	9	4	3	c	A	
+L07	11	10	6	1	c	A	
+L07	12	11	6	1	c	A	
+L07	13	12	1	2	c	A	
+L07	14	13	6	2	c	A	
+L07	15		-	-	w		en reeds being met
+L07	16	14	6	2	c	A	
+L07	17	15	6	1	c	A	
+L08	1	1	4	4	c	A	
+L08	2	2	1	2	c	A	
+L08	3	3	1	2	c	A	
+L08	4	4	4	4	c	A	
+L08	5	5	7	1	c	A	
+L08	6	6	5	2	c	A	
+L08	7	7	6	1	c	A	
+L08	8	8	2	2	c	A	
+L08	9	9	6	1	c	A	
+L08	10	10	7	1	c	A	
+L08	11	11	4	1	c	A	
+L08	12	12	6	1	c	A	
+L08	13	13	7	1	c	A	
+L08	14		-	-	gap		
+L08	15	14	4	1	c	A	
+L08	16	15	5	3	c	A	
+L08	17	16	4	1	c	A	
+L08	18		-	-	gap		
+L08	19	17	6	1	c	A	
+L08	20	18	6	1	c	A	
+L08	21	19	7	1	c	A	
+L08	22	20	6	1	c	A	
+L08	23	21	4	4	c	A	
+L08	24	22	7	1	c	A	
+L08	25	23	6	2	c	A	
+L08	26	24	6	1	c	A	
+L08	27	25	1	2	c	A	
+L08	28	26	6	1	c	A	
+L08	29	27	4	4	c	A	
+L08	30		?	?	x		struck; low confidence
+L08	31	28	5	3	c	A	
+L08	32	29	5	3	c	A	
+L08	33	30	1	2	c	A	
+L08	34	31	4	1	c	A	
+L08	35	32	5	2	c	A	
+L08	36	33	6	1	c	A	
+L08	37		-	-	p		,
+L09	1	1	1	4	c	A	
+L09	2	2	3	1	c	A	
+L09	3	3	4	2	c	A	
+L09	4	4	6	1	c	A	
+L09	5		-	-	gap		
+L09	6	5	6	1	c	A	
+L09	7	6	6	4	c	A	
+L09	8	7	3	4	c	A	
+L09	9	8	6	1	c	A	
+L09	10	9	6	2	c	A	
+L09	11	10	2	3	c	A	
+L09	12	11	4	1	c	A	
+L09	13	12	2	3	c	A	
+L09	14	13	6	1	c	A	
+L09	15		-	-	p		,
+L09	16		-	-	gap		
+L09	17		4	1	x		struck; low confidence
+L09	18		6	1	x		struck; low confidence
+L09	19		2	2	x		struck; low confidence
+L09	20		4	1	x		struck; low confidence
+L09	21		1	2	x		struck; low confidence
+L09	22		6	-	x		struck; low confidence
+L09	23		-	-	gap		
+L09	24	14	4	1	c	A	
+L09	25	15	6	1	c	A	
+L09	26	16	2	1	c	A	
+L09	27	17	6	1	c	A	
+L09	28	18	1	2	c	A	
+L09	29	19	4	1	c	A	
+L09	30	20	1	2	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L09	31	21	6	1	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L09	32	22	4	2	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L09	33	23	4	2	c	A	
+L09	34	24	6	1	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L09	35	25	7	1	c	A	
+L09	36	26	7	1	c	A	
+L09	37	27	4	4	c	A	
+L09	38	28	4	4	c	A	
+L09	39	29	1	2	c	A	
+L10	1	1	5	1	c	A	
+L10	2	2	4	4	c	A	
+L10	3	3	4	1	c	A	
+L10	4	4	4	4	c	A	
+L10	5	5	2	1	c	A	
+L10	6	6	2	3	c	A	
+L10	7	7	4	4	c	A	
+L10	8		-	-	gap		
+L10	9	8	2	4	c	A	
+L10	10	9	2	3	c	A	
+L10	11	10	4	1	c	A	
+L10	12	11	6	1	c	A	
+L10	13	12	6	1	c	A	
+L10	14	13	7	1	c	A	
+L10	15	14	6	1	c	A	
+L10	16	15	7	1	c	A	
+L10	17	16	4	4	c	A	
+L10	18	17	7	1	c	A	
+L10	19	18	6	2	c	A	
+L10	20	19	6	1	c	A	
+L10	21	20	1	2	c	A	
+L10	22	21	6	1	c	A	
+L10	23	22	7	1	c	A	
+L10	24	23	5	3	c	A	
+L10	25	24	5	3	c	A	
+L10	26	25	1	2	c	A	
+L10	27	26	4	1	c	A	
+L10	28	27	2	1	c	A	
+L10	29	28	4	4	c	A	
+L10	30	29	7	1	c	A	
+L10	31	30	6	1	c	A	
+L10	32	31	2	4	c	A	
+L10	33	32	1	2	c	A	
+L10	34	33	5	3	c	A	
+L10	35	34	3	4	c	A	
+L10	36	35	4	4	c	A	
+L10	37		-	-	p		,
+L11	1		-	-	w		waar door, indien dezelve
+L11	2	1	1	2	c	A	
+L11	3	2	6	1	c	A	
+L11	4	3	2	4	c	A	
+L11	5	4	4	3	c	A	
+L11	6	5	4	3	c	A	
+L11	7	6	6	1	c	A	
+L11	8	7	6	1	c	A	
+L11	9	8	1	2	c	A	
+L11	10	9	6	2	c	A	
+L11	11		-	-	p		,
+L11	12	10	6	1	c	A	
+L11	13	11	6	1	c	A	
+L11	14	12	7	1	c	A	
+L11	15	13	6	1	c	A	
+L11	16	14	4	4	c	A	
+L11	17	15	4	4	c	A	
+L11	18	16	7	1	c	A	
+L11	19	17	3	2	c	A	
+L11	20	18	2	3	c	A	
+L11	21	19	6	1	c	A	
+L11	22	20	7	1	c	A	
+L11	23		-	-	p		,
+L12	1	1	1	4	c	A	
+L12	2	2	3	1	c	A	
+L12	3	3	4	2	c	A	
+L12	4	4	6	1	c	A	
+L12	5		-	-	gap		
+L12	6	5	2	1	c	A	
+L12	7	6	6	1	c	A	
+L12	8	7	1	2	c	A	
+L12	9	8	4	2	c	A	
+L12	10	9	2	3	c	A	
+L12	11	10	7	1	c	A	
+L12	12	11	5	2	c	A	
+L12	13	12	6	2	c	A	
+L12	14	13	6	1	c	A	
+L12	15	14	1	2	c	A	
+L12	16		-	-	gap		
+L12	17	15	2	2	c	A	
+L12	18	16	2	3	c	A	
+L12	19	17	1	4	c	A	
+L12	20	18	2	3	c	A	
+L12	21	19	4	1	c	A	
+L12	22	20	4	4	c	A	
+L12	23	21	2	3	c	A	
+L12	24	22	1	2	c	A	
+L12	25	23	6	1	c	A	
+L12	26		-	-	gap		
+L12	27	24	2	2	c	A	
+L12	28	25	4	4	c	A	
+L12	29	26	5	2	c	A	
+L12	30	27	4	1	c	A	
+L12	31	28	2	1	c	A	
+L12	32	29	5	3	c	A	
+L12	33	30	5	3	c	A	
+L12	34	31	1	2	c	A	
+L12	35		-	-	gap		
+L12	36	32	2	3	c	A	
+L12	37	33	4	4	c	A	
+L12	38	34	2	1	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L12	39	35	4	4	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L13	1	1	3	2	c	A	
+L13	2	2	4	4	c	A	
+L13	3	3	1	4	c	A	
+L13	4	4	6	3	c	A	
+L13	5	5	5	3	c	A	
+L13	6	6	1	2	c	A	
+L13	7	7	6	2	c	A	
+L13	8	8	6	1	c	A	
+L13	9	9	7	1	c	A	
+L13	10	10	4	4	c	A	
+L13	11	11	4	4	c	A	
+L13	12	12	7	1	c	A	
+L13	13	13	5	2	c	A	
+L13	14	14	6	1	c	A	
+L13	15	15	5	1	c	A	
+L13	16	16	1	2	c	A	
+L13	17	17	4	4	c	A	
+L13	18	18	?	2	c	M	top blotted, illegible; bottom 2 (both passes)
+L13	19	19	4	1	c	A	
+L13	20		-	-	p		. (full stop)
+L16	1		-	-	w		2en (underlined, struck?)
+L16	2	1	1	1	c	A	
+L16	3	2	6	1	c	A	
+L16	4	3	6	1	c	A	
+L16	5	4	1	2	c	A	
+L16	6	5	5	2	c	A	
+L16	7	6	5	3	c	A	
+L16	8	7	2	4	c	A	
+L16	9	8	2	1	c	A	
+L16	10	9	6	1	c	A	
+L16	11	10	1	2	c	A	
+L16	12	11	7	1	c	A	
+L16	13	12	6	1	c	A	
+L16	14	13	2	4	c	A	
+L16	15	14	1	2	c	A	
+L16	16	15	5	2	c	A	
+L16	17	16	6	1	c	A	
+L16	18	17	7	1	c	A	
+L16	19	18	6	1	c	A	
+L16	20	19	1	2	c	A	
+L16	21	20	4	4	c	A	
+L16	22	21	4	4	c	A	
+L16	23	22	1	4	c	A	
+L16	24	23	3	2	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L16	25	24	2	4	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L16	26	25	1	4	c	A	
+L16	27	26	4	2	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L16	28	27	4	3	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L16	29	28	2	3	c	A	
+L16	30	29	7	1	c	A	
+L17	1	1	4	2	c	A	
+L17	2	2	6	1	c	A	
+L17	3	3	3	3	c	A	
+L17	4	4	1	2	c	A	
+L17	5	5	6	1	c	A	
+L17	6	6	4	1	c	A	
+L17	7	7	6	1	c	R	reconciled from crop: pass B (A read 6/2)
+L17	8	8	4	2	c	A	
+L17	9	9	4	2	c	R	reconciled from crop: pass B (A read 4/1)
+L17	10	10	6	1	c	A	
+L17	11		-	-	gap		
+L17	12	11	5	2	c	A	
+L17	13	12	6	1	c	A	
+L17	14	13	1	4	c	M	possible strike-through across this stretch (pass B marked it cancelled)
+L17	15	14	2	3	c	A	
+L17	16	15	6	1	c	A	
+L17	17		-	-	gap		
+L17	18	16	5	4	c	A	
+L17	19	17	4	1	c	A	
+L17	20		-	-	gap		
+L17	21	18	4	1	c	A	
+L17	22	19	6	1	c	A	
+L17	23	20	3	3	c	A	
+L17	24	21	5	3	c	A	
+L17	25	22	2	2	c	A	
+L17	26	23	2	2	c	A	
+L17	27	24	2	4	c	R	passes disagreed; settled from crop by A2-RAA2 (pass A)
+L17	28	25	7	1	c	A	
+L17	29	26	2	3	c	A	
+L17	30	27	3	3	c	A	
+L17	31	28	6	1	c	A	
+L17	32	29	1	2	c	A	
+L17	33	30	6	1	c	A	
+L17	34	31	7	1	c	A	
+L17	35		-	-	w		tot (struck/underlined?)
