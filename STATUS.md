@@ -141,16 +141,12 @@ fallback chain" (150 minutes without an `| orchestrator (account 3) |` line, or 
 (account 4, then account 2's dispatcher) takes over the items below** (TAKEOVER line first). Debosnys and cipher-lab-private stay account 3's.
 
 In flight (account 3):
-1. Workflow finish-pass-bourdeau (in this session): all 25 partial targets now carry "## Remaining gaps / ## Escalation"
-   (on main, all keep-going; `python3 tools/gaps_check.py --all`). Still running: Mercy code-15 synthesis -> reply draft
-   `outreach/bourdeau-issue-mercy-reply.md` -> gate-7 check; rule change (CLAUDE.md "Finish or name the blocker",
-   tools/gaps_check.py, `tools/decode_key.py --split-check`, LESSONS.md Bourdeau section, briefs README line) -> adversarial
-   review. Uncommitted work is backed up on branch `wip/finish-pass-2026-10-01` (not main). Fallback: if this session dies,
-   take the files from that branch, run the tests and `python3 tools/system_map_check.py`, review, commit to main, delete
-   the branch. Add two rules with it: batches of >5 independent jobs run as separate sessions, not an in-container workflow
-   (4-CPU containers run ~2 workflow agents at a time); and when two machine transcription passes of a symbol cipher disagree
-   on >10% of signs or the sign inventory is unsettled, the next pass is a human one in the sign sorter
-   (tools/sign_sorter.py -> tools/sign_sorter_apply.py), not a third machine pass.
+1. DONE 2 Oct 01:3x UTC: workflow finish-pass-bourdeau. All 25 partials carry Remaining gaps / Escalation (on main);
+   rule change, tools/gaps_check.py and decode_key --split-check committed; Mercy reply drafted and gate-7 checked
+   (outreach/bourdeau-issue-mercy-reply.md, for the owner to post). `gaps_check --all` FAILs 8 further partials with no
+   sections yet (bullet-tuscany-1944, decode-1168-modena-costabili-1492, eckert-1862, eckert-1864, fr2980-gramont,
+   huntington-blathwayt-madrid-1728, lope-hurtado-1522, thurloe-printed): next pass. Branch wip/finish-pass-2026-10-01
+   is stale (delete refused by the proxy, 403); ignore it.
 2. Account 2 (WORK-QUEUE.tsv rows tagged `other`, picked up hourly at ~:10): NEXT-LIN, NEXT-BRO, NEXT-AVS, NEXT-BOW,
    NEXT-CAS, NEXT-CAT, NEXT-PAG, NEXT-F61, NEXT-HAR, NEXT-HDK, NEXT-LVN, NEXT-MAL (cheapest next step of 12 partials) and
    VERIFY-HESSEN-1824 (found-solved by Bourdeau 28 Sept; AUDIT N0, retire NEAR row). Ledger each from its ROOM done line;
