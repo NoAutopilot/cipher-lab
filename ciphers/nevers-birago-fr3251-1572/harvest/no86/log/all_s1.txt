@@ -1,0 +1,33 @@
+f174r_L01	_ucetpdouipensianuipercont_a
+f174r_L02	etiocheeisiiingualchepetacicaetfoet_i
+f174r_L03	st_etacon__percontosisgounetnodi
+f174r_L04	turino_
+f174v_L01	edetobaron
+f174v_L02	anegitiarn_ue_tapraticaiicono
+f174v_L03	soagenncheei_esauioa_a_tanzape
+f174v_L04	miagtihominiecarmagnolanerestanotraua
+f174v_L05	gliaticontutochelacolerae__gi
+f174v_L06	taaleattre_uegualitaeingomp
+f174v_L07	tibile_emenotibugonottiecarmagnola_sonotri_t
+f174v_L08	simiconilme_iodeli_uoicapita
+f174v_L09	chesonota_ambidoisonobugonottihanoem_
+f174v_L10	nierapraticatoteco_echeluire_
+f174v_L11	domesticoloropsegibugonotti_onipoiu
+f174v_L12	ticoncostanuocorde_iemsnie
+f174v_L13	chelihuo_iniabeniet__nonposinochep
+f174v_L14	tirepalafine__arasiuperanooua
+f174v_L15	geneuraolsrachenelepartielo_p
+f174v_L16	rdiagnome_barondesadrnsperleco
+f174v_L17	pasatesirendnsiodiosochei__nee
+f174v_L18	_a_uolsutoguantoameeisidi_os
+f174v_L19	tradiltunoa_enionatisi_o_e_
+f174v_L20	noquellocheiodicoeperilseruiquelloioe_a_co
+f174v_L21	beneacarolecosedgouernanie_o
+f174v_L22	cheperuolerfare_lseruiquelloio___io_
+f175r_R01	agubssilamalagratiadaltri
+f175v_V01	_praticastreta_entepercont
+f175v_V02	dilgouernoconilbaroncresoanchec
+f175v_V03	sanfre__
+
+TARGET: 759 signs, 0 nulls, 814 letters; real key -1.1134; 200 shuffled keys mean -1.5933 sd 0.1302 max -1.3313; z 3.69; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.23: real key rank 1 in 13/20; z median 2.52 min 1.12

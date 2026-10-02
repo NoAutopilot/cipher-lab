@@ -224,6 +224,50 @@
     "M",
     "L"
    ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_no86B.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_no86B.txt",
+   "tokens": "harvest/reading_no86B_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_no86.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_no86.txt",
+   "tokens": "harvest/reading_no86_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
   }
  ]
 }

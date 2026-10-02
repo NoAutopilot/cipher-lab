@@ -775,7 +775,7 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
 - no.82 (f.162) cipher, one line on canvas 164 right (25 signs, NEVBIR-162, 2 Oct 2026): run 1 read under the 1572 key, rank 1/201 z 2.6-2.9 (power 2-10/20), 0.74 agreement with a later-hand decipherment slip pasted on f.161v (shuffled max 0.15); run 2 is a 4-sign name code ('M.' + digits 4 7 + u) outside the printed table - blocker: no-key-material for the code beyond the slip's own 'M. di Bellaguarda'; verifier pass done (VERIFY-NEVBIR-82, 2 Oct 2026: N0, the slip is a prior decipherment of the whole line; hand unsettled, same hand as the f.151v slip by eye); next: add code 47 = Bellaguarda to the key at grade C with the slip's provenance beside it (M outside this letter until a second attestation), disk only, ~$1
 
-- no.86 (27 Aug 1572, ff.170r-177r; NEVBIR-170, 2 Oct 2026, section below): its f.174r foot run (85 signs) - blocker: too-short; real key rank 2-4/201 (z 1.8-2.1), power 11/20 at err 0.10 (20/20 at err 0): not rank 1, a non-test at this length, not a negative; the letter's main cipher is the FULL cipher page f.174v (canvas 178 left, ~22 lines, ~600 signs, not yet read) plus f.175r head (1 line) and f.175v (canvas 179 left, ~3 lines); next: read f.174v in two half-leaf jobs (same pipeline, ~$5 each, power 20/20 at that length) and pool with f.174r in one 200-shuffle test (disk only); the short-run pool with f.144r and f.168 (NEVBIR-POOL, 2 Oct 2026) did not license it; f.174v lines 1-11 (285 signs, NEVBIR-174V-A, 2 Oct 2026, section below) read under the printed 1572 key + T42=m: rank 1/201 at 3 seeds (z 3.36-3.49), power 20/20 at err 0.10 and 8/20 at err 0.20 (blind agreement 0.80 before adjudication), 18 off-sheet signs unkeyed (open-codes); next: f.174v lines 12-end + f.175r head + f.175v (NEVBIR-174V-B), then the joint 200-shuffle test of all no.86 cipher (f.174r + f.174v + f.175), disk only, ~$1
+- no.86 (27 Aug 1572, ff.170r-177r; NEVBIR-170, 2 Oct 2026, section below): its f.174r foot run (85 signs) - blocker: too-short; real key rank 2-4/201 (z 1.8-2.1), power 11/20 at err 0.10 (20/20 at err 0): not rank 1, a non-test at this length, not a negative; the letter's main cipher is the FULL cipher page f.174v (canvas 178 left, ~22 lines, ~600 signs, not yet read) plus f.175r head (1 line) and f.175v (canvas 179 left, ~3 lines); next: read f.174v in two half-leaf jobs (same pipeline, ~$5 each, power 20/20 at that length) and pool with f.174r in one 200-shuffle test (disk only); the short-run pool with f.144r and f.168 (NEVBIR-POOL, 2 Oct 2026) did not license it; f.174v lines 1-11 (285 signs, NEVBIR-174V-A, 2 Oct 2026, section below) read under the printed 1572 key + T42=m: rank 1/201 at 3 seeds (z 3.36-3.49), power 20/20 at err 0.10 and 8/20 at err 0.20 (blind agreement 0.80 before adjudication), 18 off-sheet signs unkeyed (open-codes); next: f.174v lines 12-end + f.175r head + f.175v (NEVBIR-174V-B), then the joint 200-shuffle test of all no.86 cipher (f.174r + f.174v + f.175), disk only, ~$1; f.174v lines 12-22 + f.175r head + f.175v (389 signs, NEVBIR-174V-B, 2 Oct 2026, section below): rank 1/201 at 3 seeds (z 3.42-3.74), power 20/20 at err 0.10; whole no.86 (759 signs) rank 1/201 at 3 seeds (z 3.56-3.83), power 13/20 at err 0.23; judge FAIL -1.161 (shuffled 0/10 PASS); 54 unkeyed signs over the letter (open-codes: lone '8' shapes, X_K, X_A, '?'); next: verifier pass on the whole no.86 reading (rule 10; T83 calls, '8' shapes, half A's T15/T11 pairs), ~$5
 ## Escalation (2 Oct 2026)
 - [x] siblings: no.87 is itself the key's own witness leaf and was read first; the six other 1572 letters are the next units
 - [x] clear-pages: the clerk's clear decipherment of the whole passage is the laid-in sheet on canvas 182, read by eye (GAPS4, 2 Oct 2026); f.178r and f.179r prose frames the passage
@@ -784,7 +784,7 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - [x] key-rebuild: one-sign value fits, not a rebuild -- run (GAPS3, 2 Oct 2026): T42 g -> m, T70 g, T88 and the off-sheet signs undecided at their counts; the key reads the leaf at rank 1/201 before and after
 - [x] image-check: native regions, debug overlays checked by eye (f.178v right edge re-fetched once; f.179r left edge re-fetched once; f.178r re-cut on the slope after both readers reported clipped tails); the canvas 182/183 overviews re-read by eye, which found the decipherment sheet (GAPS4)
 - [x] retry: one connection reset on the canvas-183 fetch retried once after a pause (GAPS4); the HTTP 500s were this worker's malformed URLs, not retried
-Verdict: keep going: 4 internal gaps (no.86: f.174r run too-short, NEVBIR-170; its f.174v full cipher page is the next unit) (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); cheapest next: value-fit of the f.139v off-sheet signs (disk only, ~$1); then align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144
+Verdict: keep going: 4 internal gaps (no.86: all its cipher now read, f.174r + f.174v + f.175r/v, 759 signs rank 1/201 (NEVBIR-174V-A/B); its next step is the verifier pass) (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); cheapest next: value-fit of the f.139v off-sheet signs (disk only, ~$1); then align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144
 
 ## VERIFY-NEVBIR-1572 (2 Oct 2026, account 2): audit 1 -- see AUDIT.md
 
@@ -1337,3 +1337,102 @@ error on look-alike pairs plus 18 unkeyed signs. The judge is reported as it sta
 (rule 10), which should also cover the T15/T11 digit-pair calls and the T29/T83 split. Requests: gallica.bnf.fr 3 (1 info.json, 1
 reset + 1 retry for the native canvas), no errors otherwise. Subagents: 3 Sonnet (2 blind passes, 1 adjudication). No
 credentials.
+
+## NEVBIR-174V-B (2 Oct 2026, account 2 for the account-3 orchestrator): no.86 f.174v lines 12-22 + f.175r head + f.175v read under the printed 1572 key + T42=m; whole no.86 cipher rank 1/201
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-174v.md` (HALF B). `tools/intake_gate_check.py nevers-birago-fr3251-1572`
+exit 0 at 18:12 UTC. No class, no novelty wording (rule 10). Status stays `partial`.
+
+**Slip check.** Canvases 178 and 179 at 3000 px (about a third of native 8515 px; both pages each, scratch only) and the four
+native regions below: no pasted slip, squared paper, interlinear decipherment or gloss on f.174v, f.175r or f.175v; only
+show-through of the recto prose. NEVBIR-174V-A looked at all of canvas 178 at native and found the same.
+
+**Line count.** By row-ink profile f.174v carries 22 cipher lines (line 1 opens with the prose "di pnti, habbi col mezo del
+figliolo"). Half A took lines 1-11 (native y 860-2445); this job took lines 12-22, native y 2484-3906 (the line above, at
+y 2354, sits inside half A's region and is its L11). Half A's ROOM note counts 23 lines; on these coordinates the two halves
+meet with no line skipped, so the count difference is a numbering difference, not a missing line. The folder files call this
+half's lines `f174vB L01-L11`; the joined files renumber them `f174v_L12-L22`.
+
+**Material** (gallica.bnf.fr; four region fetches kept, two discarded after mis-placed coordinates, see requests):
+
+    python3 tools/iiif_lines.py --image ciphers/nevers-birago-fr3251-1572/harvest/f174vB/src_ark_12148_btv1b9060248g_f178_1950_2330_2500_1680.jpg \
+      --out ciphers/nevers-birago-fr3251-1572/harvest/f174vB --prefix f174vB --centres 154,296,437,572,714,864,1006,1159,1298,1438,1576 --max-width 1300 --overlap 60 --debug
+    python3 tools/iiif_lines.py --image ciphers/nevers-birago-fr3251-1572/harvest/f175r/src_ark_12148_btv1b9060248g_f178_4950_960_2550_200.jpg \
+      --out ciphers/nevers-birago-fr3251-1572/harvest/f175r --prefix f175r --centres 70 --max-width 1300 --overlap 60 --debug
+    python3 tools/iiif_lines.py --image ciphers/nevers-birago-fr3251-1572/harvest/f175v/src_ark_12148_btv1b9060248g_f179_1950_2830_2650_460.jpg \
+      --out ciphers/nevers-birago-fr3251-1572/harvest/f175v --prefix f175v --centres 92,229,380 --max-width 1300 --overlap 60 --debug
+
+The initial f.175v cut (region y 2900) sat a line low; both readers said so. It was re-fetched at y 2830, re-cut, and read again
+by two fresh blind readers. The old V rows in `f174vB/passA/B.tsv` are ignored by `join_no86.py`. 2x reader copies come from
+`harvest/make_2x.py --folio f174vB|f175r|f175v` and are gitignored. Every cipher line on f.174v and f.175v runs into the gutter,
+so line-end signs are conditional on the image.
+
+**Passes** (value-blind Sonnet readers, `blind_pass_brief_1572.md`, crops only). f.174v 12-22 + f.175r: `f174vB/passA.tsv`,
+`passB.tsv`, agreement **230/306 (0.75)** on f.174v and 20/25 (0.80) on f.175r. Most splits came from one reader putting a
+frequent joined shape off the sheet (T83 vs X_NEW, 23 positions), plus T86/T60 (11) and T18/T98 (7). A third blind reader settled
+78 positions (`f174vB/adjudicate_in.tsv` -> `adjudicate_out.tsv`): 67 to reader A, 9 to reader B, 2 other, 0 dropped. Its
+recurring calls were the joined shape = T83, single-bar = T86, loop-on-top = T18, and the blotted omega = T92. f.175v:
+`f175v/passA.tsv`, `passB.tsv`, **52/62 (0.84)**; 9 positions were adjudicated, 8 to reader B (T83 x6, T45 x2) and 1 other.
+Pooled measured disagreement before adjudication: 302/393, about **0.23**.
+Final: **389 signs** (f.174v 12-22: 303; f.175r: 25; f.175v: 61). There are 29 unkeyed signs: X_NEW, X_K, X_A, X_EQ and '?'.
+The lone "8" shape (5 times, including an "88" on L13) is off the sheet. It is probably a clear numeral or a code like
+half A's T15/T11 "8 9"/"8 5" pairs; this job does not settle it.
+
+**Control (rule 3)**, `../ceppo-nevers-fr3251-1570s/harvest/decode_control.py <seq> --map sign_id_map_1572_fit.json` (printed key +
+T42=m; it16dip; 200 value-shuffled keys). Logs are in `harvest/no86/log/`. The sequences come from `harvest/join_no86.py`.
+
+| sequence | signs / letters | real key | shuffles mean / max | z (seeds 1, 2, 3) | rank of 201 | power control (20 windows) |
+|---|---|---|---|---|---|---|
+| **half B** (`no86/passC_halfB.tsv`) | 389 / 400 | **-1.085** | -1.603 / -1.284 | **3.58, 3.74, 3.42** | **1, 1, 1** | 20/20 at err 0.10 (z min 2.67); 8/20 at err 0.23 |
+| **whole no.86** (f.174r + f.174v 1-22 + f.175r + f.175v; `no86/passC_all.tsv`) | 759 / 814 | **-1.113** | -1.593 / -1.331 | **3.69, 3.83, 3.56** | **1, 1, 1** | 13/20 at err 0.23 (z median 2.52) |
+
+The real key takes rank 1 against every shuffled key, at every seed, on both sequences. The power control shows how often a known-right key takes
+rank 1 at this length. At the pre-adjudication error (0.23) it does so only 8/20 (half B) and 13/20 (whole letter), so it does
+not lower the bar for a miss. Here the target did not miss: it took rank 1. The real key scores above the best of 200 shuffles
+by 0.20 on half B and 0.22 on the whole letter. At the post-adjudication error, which is lower, the half-B power control is 20/20
+at 0.10.
+
+**Decode.** `tools/decode_key.py` jobs `harvest/ciphertext_no86B.tsv` (half B) and `harvest/ciphertext_no86.tsv` (the per-letter
+file: f.174r's 85 signs + half A's 285 + this half's 389 = 759), both built by `harvest/build_decode_inputs.py <folio> --seq
+no86/<file>`. `--check`: "reading up to date". Grades come from decode_key with the key file's grades. Half B: **H 0, C 0, S 318,
+M 42, I 0, U 29** of 389. Whole letter: H 0, C 0, S 629, M 76, I 0, U 54 of 759. These are cryptanalytic grades; there is no H or C
+(no key source or known plaintext on these leaves). `harvest/reading_no86B.txt`:
+
+    no86B f174v_L12 | ticoncostanuocorde·iemsnie
+    no86B f174v_L13 | [che]lihuo·iniabeni[et]··nonposino[che]p
+    no86B f174v_L14 | tirepalafine··arasiu[per]anooua
+    no86B f174v_L15 | geneuraolsra[che]nelepartielo·p
+    no86B f174v_L16 | rdiagnome·barondesadrns[per]leco
+    no86B f174v_L17 | pasatesirendnsiodioso[che]i··nee
+    no86B f174v_L18 | ·a·uolsutoguantoameeisidi·os
+    no86B f174v_L19 | tradiltunoa·enionatisi·o·e·
+    no86B f174v_L20 | no[quello][che]iodicoe[per]ilserui[quello]ioe·a·co
+    no86B f174v_L21 | beneacarolecosedgouernanie·o
+    no86B f174v_L22 | [che][per]uolerfare·lserui[quello]io···io·
+    no86B f175r_R01 | agubssilamalagratiadaltri
+    no86B f175v_V01 | ·praticastreta·ente[per]cont
+    no86B f175v_V02 | dilgouernoconilbaroncresoan[che]c
+    no86B f175v_V03 | sanfre··
+
+Several stretches read as Italian without repair: "non posino", "alla fine", "le parti", "il servi[tio]", "bene a caro le
+cose", "per voler fare", "la mala gratia d'altri", "pratica stretta", "del governo con il baron", and a name "baron de Sadr..."
+on L16. The prose of no.86 on f.176r names "il baron de Sadres" ("per il baron de Sadres che la Voluera...", canvas 179 right,
+seen by eye in this job's slip check). That ties L16 to the letter's own clear text. It is a consistency observation, not a
+known-plaintext crib: the prose is not a decipherment of this run. The f.175v run follows the prose "ho scritto al" and ends
+before "Circa alla Carta dil Piemonte".
+
+**Judge** (secondary; `tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/no86/reading_no86B_letters.txt`
+and `... reading_no86_letters.txt`):
+
+    half B:       FAIL language: score=-1.141, null_p99=-1.739, real_p05=-0.919, real_median=-0.819, mode=both, N=400
+    whole no.86:  FAIL language: score=-1.161, null_p99=-1.767, real_p05=-0.905, real_median=-0.828, mode=both, N=814
+
+Shuffled-target control (`harvest/shuffled_judge.py`, fitted map, 10 seeds): half B 0 of 10 PASS (mean -1.637, max -1.539);
+whole letter 0 of 10 PASS (mean -1.622, max -1.556). The FAIL has the f.139v/f.174vA/f.178v shape: the score is far above the null
+and below real prose, which points to reader error on look-alike pairs plus unkeyed signs. The judge is reported as it stands.
+
+**For the verifier (rule 10).** This reading is flagged for a separate verifier session. Re-check these on the crops: the T83
+calls (one reader had all of them off-sheet), the lone "8" shapes, and L20/L22 "[quello]" twice next to "serui". Also check
+half A's T15/T11 digit pairs. Requests: gallica.bnf.fr 7 (2 overview canvases at 3000 px, 5 native regions, of which 2 were
+discarded and re-fetched after wrong coordinates), 1 info.json; no errors. Subagents: 5 Sonnet (2 blind passes, 2 f.175v
+re-read passes, 1 adjudicator used twice). No credentials.
