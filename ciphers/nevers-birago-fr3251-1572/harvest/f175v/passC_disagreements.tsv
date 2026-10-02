@@ -1,0 +1,11 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+V01	3	3	T29	M	3	T83	H	split_H_B	reversed 3 + epsilon	ж shape
+V01	11	11	T29	M	11	T83	H	split_H_B		ж
+V01	12	12	T89	M	12	T45	M	split	b with tick	bowl with stem up
+V01	16	16	T89	M	16	T45	M	split	b with small circle above	bowl, stem up, ring above
+V02	8	8	T29	M	8	T83	H	split_H_B		ж
+V02	18	18	T29	M	18	T83	H	split_H_B		ж
+V02	22	22	T29	M	22	T83	H	split_H_B		ж
+V02	28	28	T66	L	28	X_NEW	M	split	b-like with filled head	b with filled blob top
+V02					30	?	L	gapA		partly hidden at gutter; line end
+V03	5	5	T29	M	5	T83	H	split_H_B		ж

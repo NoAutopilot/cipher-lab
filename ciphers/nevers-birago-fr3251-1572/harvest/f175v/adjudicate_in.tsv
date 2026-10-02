@@ -1,0 +1,10 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+V01	3	X_NEW T90	T85 T27 T96 T36	T29	M	T83	H	reversed 3 + epsilon	ж shape
+V01	11	T36 T85 T98 T53	? T27 T37 X_NEW	T29	M	T83	H		ж
+V01	12	T85 T98 T53 T83	T27 T37 X_NEW ?	T89	M	T45	M	b with tick	bowl with stem up
+V01	16	? T27 T37 X_NEW	T76 T53 T86 T26	T89	M	T45	M	b with small circle above	bowl, stem up, ring above
+V02	8	T70 T19 T33 T45	T60 T55 T36 T19	T29	M	T83	H		ж
+V02	18	T80 T58 T81 T85	T19 T76 T36 T83	T29	M	T83	H		ж
+V02	22	T83 T19 T76 T36	T86 T98 T55 T85	T29	M	T83	H		ж
+V02	28	T98 T55 T85 T60	T50	T66	L	X_NEW	M	b-like with filled head	b with filled blob top
+V03	5	T98 T85 T60 T24	T86 X_NEW X_NEW	T29	M	T83	H		ж

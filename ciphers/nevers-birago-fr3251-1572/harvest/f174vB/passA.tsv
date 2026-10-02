@@ -1,0 +1,393 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T65		H	line start
+L01	2	T25		H	
+L01	3	T50		H	
+L01	4	T19		H	
+L01	5	T60		H	
+L01	6	T50		H	
+L01	7	T19		H	
+L01	8	T98		H	
+L01	9	T65		H	
+L01	10	T37		H	
+L01	11	T60		H	
+L01	12	T33		H	
+L01	13	T55		H	
+L01	14	T36		H	
+L01	15	T55		H	
+L01	16	T83	T81	M	
+L01	17	T63		M	
+L01	18	T45		H	
+L01	19	X_NEW	T56	L	unmatched shape; see look-alike in alt
+L01	20	T52		H	
+L01	21	T86	T60	M	
+L01	22	T54		H	
+L01	23	T95	T18	M	
+L01	24	T60		H	
+L01	25	T96		H	
+L01	26	T86		L	partly hidden at gutter
+L02	1	T89	T45	M	line start
+L02	2	T58		H	
+L02	3	T96		H	
+L02	4	T97	T56	M	
+L02	5	T33		H	
+L02	6	T19		H	
+L02	7	X_NEW	T17	M	unmatched shape; see look-alike in alt
+L02	8	T96		H	
+L02	9	T60		H	
+L02	10	T25		H	
+L02	11	T37		H	
+L02	12	T81		H	
+L02	13	T45		H	
+L02	14	T60		H	
+L02	15	T96		H	
+L02	16	T29		H	
+L02	17	T46	T88	M	
+L02	18	T46	T88	M	
+L02	19	T60		H	
+L02	20	T55		H	
+L02	21	T76		H	
+L02	22	T90	T84	M	
+L02	23	T19		H	
+L02	24	T57		H	
+L02	25	T52		H	
+L02	26	T76		H	
+L02	27	T55		H	
+L02	28	T89		L	
+L02	29	?		L	partly hidden in gutter, unreadable; partly hidden at gutter
+L03	1	T53		H	line start
+L03	2	T96		H	
+L03	3	T83	T81	M	
+L03	4	T86	T60	M	
+L03	5	T90	T84	M	
+L03	6	T37		H	
+L03	7	T13		H	
+L03	8	T85		H	
+L03	9	T24		H	
+L03	10	T96		H	
+L03	11	T60		H	
+L03	12	T86	T60	M	
+L03	13	T11	T46	M	
+L03	14	X_EQ		H	two short horizontal strokes
+L03	15	T37		H	
+L03	16	T83	T81	M	
+L03	17	T37		H	
+L03	18	X_NEW	T57	M	unmatched shape; see look-alike in alt
+L03	19	T96		M	
+L03	20	T33		H	
+L03	21	T26	T76	M	
+L03	22	T37		H	
+L03	23	T76		H	
+L03	24	T19	T33	L	
+L03	25	T19		H	
+L03	26	T49		H	
+L03	27	T85		M	line end
+L04	1	T70		H	line start
+L04	2	T45		H	
+L04	3	T60		H	
+L04	4	T45		H	
+L04	5	T33		H	
+L04	6	T83		H	
+L04	7	T37		H	
+L04	8	T19		H	
+L04	9	T58		H	
+L04	10	T92		H	
+L04	11	T83		H	
+L04	12	T37		H	
+L04	13	T89		H	
+L04	14	T60		H	
+L04	15	T86	T60	M	
+L04	16	T13		H	
+L04	17	T45		H	
+L04	18	T90	T84	M	
+L04	19	T85		H	
+L04	20	T83		H	
+L04	21	T53		H	
+L04	22	T96		H	
+L04	23	T86	T60	M	
+L04	24	T58		H	
+L04	25	T19		H	
+L04	26	X_NEW		H	unmatched shape
+L04	27	?		L	partly hidden in gutter, unreadable; partly hidden at gutter
+L05	1	T83		H	line start
+L05	2	T63		H	
+L05	3	T96		H	
+L05	4	T37		H	
+L05	5	T70		H	
+L05	6	T60		H	
+L05	7	T19		H	
+L05	8	T54		H	
+L05	9	T45		H	
+L05	10	T55		M	
+L05	11	X_EQ		M	two short horizontal strokes
+L05	12	T55		M	
+L05	13	T81		H	
+L05	14	T37		H	
+L05	15	T83		H	
+L05	16	T19		H	
+L05	17	T76		H	
+L05	18	T18	T65	M	
+L05	19	T45		H	
+L05	20	T98		H	
+L05	21	T37		H	
+L05	22	T18	T65	M	
+L05	23	T83		H	
+L05	24	T76	T89	M	
+L05	25	T98		H	
+L05	26	T26		M	
+L05	27	T58		H	
+L05	28	T86	T60	M	
+L05	29	T36		H	
+L05	30	T19		L	partly hidden at gutter
+L06	1	T90		H	line start
+L06	2	T85		H	
+L06	3	T57		H	
+L06	4	T37		H	
+L06	5	T53		H	
+L06	6	T45		H	
+L06	7	T92		H	
+L06	8	T96		H	
+L06	9	T83		H	
+L06	10	T45		H	
+L06	11	T76		H	
+L06	12	T18		H	
+L06	13	T60		H	
+L06	14	T92		H	
+L06	15	T25		H	
+L06	16	T19		H	
+L06	17	T18	T98	M	
+L06	18	T96		H	
+L06	19	T19		H	
+L06	20	T92		H	
+L06	21	T19		H	
+L06	22	T89		M	
+L06	23	T80		H	
+L06	24	X_NEW	T24	M	unmatched shape; see look-alike in alt
+L06	25	T46		H	
+L06	26	T60		H	
+L06	27	T45		H	
+L06	28	T86		L	partly hidden at gutter
+L07	1	X_NEW	T17	M	unmatched shape; see look-alike in alt; line start
+L07	2	T85		H	
+L07	3	X_NEW	T24	M	unmatched shape; see look-alike in alt
+L07	4	T33		H	
+L07	5	T19		H	
+L07	6	T58		H	
+L07	7	T92		H	
+L07	8	T33		H	
+L07	9	T53		H	
+L07	10	T55		H	
+L07	11	T88		H	
+L07	12	T33		H	
+L07	13	T85		H	
+L07	14	T76		H	
+L07	15	T65		H	
+L07	16	T55		H	
+L07	17	T85		H	
+L07	18	T54		H	
+L07	19	T86	T60	M	
+L07	20	T86	T60	M	
+L07	21	T96		H	
+L07	22	T92		H	
+L07	23	T80		H	
+L07	24	T18		H	
+L07	25	T96		H	
+L07	26	X_NEW	T17	M	unmatched shape; see look-alike in alt
+L07	27	T19		H	
+L07	28	T98		L	partly hidden at gutter
+L08	1	T53		H	line start
+L08	2	T83		H	
+L08	3	T85		H	
+L08	4	T18		H	
+L08	5	T25		H	
+L08	6	T58		H	
+L08	7	T53		M	
+L08	8	T33		H	
+L08	9	T76	T26	M	
+L08	10	T55		H	
+L08	11	T37		H	
+L08	12	X_NEW		H	unmatched shape
+L08	13	T45		H	
+L08	14	T76	T26	M	
+L08	15	T96		H	
+L08	16	T19		H	
+L08	17	T60		H	
+L08	18	T37		H	
+L08	19	T53		H	
+L08	20	T96		H	
+L08	21	T57		H	
+L08	22	T80		H	
+L08	23	X_NEW	T17	M	unmatched shape; see look-alike in alt
+L08	24	T19		H	
+L08	25	X_NEW		H	unmatched shape
+L08	26	T86	T60	M	
+L08	27	X_NEW		L	unmatched shape; partly hidden at gutter
+L09	1	T76	T26	M	line start
+L09	2	T19		H	
+L09	3	T84		H	
+L09	4	T89		H	
+L09	5	T96		H	
+L09	6	T19		H	
+L09	7	T18		H	
+L09	8	T80		H	
+L09	9	T36		H	
+L09	10	T55		H	
+L09	11	T86	T60	M	
+L09	12	T26		H	
+L09	13	T96		H	
+L09	14	T58		H	
+L09	15	T92		H	
+L09	16	T45		H	
+L09	17	T83		H	
+L09	18	T33		H	
+L09	19	T96		H	
+L09	20	T84	T90	M	
+L09	21	T25		H	
+L09	22	T55		H	
+L09	23	T86	T60	M	
+L09	24	X_A		H	capital A shape
+L09	25	T85		H	
+L09	26	X_K		H	capital K shape
+L09	27	T36		H	
+L09	28	T19		L	partly hidden at gutter
+L10	1	T81		H	line start
+L10	2	T45		H	
+L10	3	T76		H	
+L10	4	T45		H	
+L10	5	T85		H	
+L10	6	T50		H	
+L10	7	T85		H	
+L10	8	T83		H	
+L10	9	T55		H	
+L10	10	T58		H	
+L10	11	T86	T60	M	
+L10	12	T36		H	
+L10	13	T19		H	
+L10	14	T92		H	
+L10	15	T45		H	
+L10	16	T18		M	
+L10	17	T70		H	
+L10	18	T55		H	
+L10	19	T33		H	
+L10	20	T45		H	
+L10	21	T83		H	
+L10	22	T76		H	
+L10	23	T85		H	
+L10	24	T60		H	
+L10	25	T52		H	
+L10	26	T86	T60	M	
+L10	27	X_NEW	T17	M	unmatched shape; see look-alike in alt
+L10	28	T19		L	partly hidden at gutter
+L11	1	T89		H	line start
+L11	2	T26		H	
+L11	3	T33		H	
+L11	4	T19		H	
+L11	5	T58		H	
+L11	6	T45		H	
+L11	7	T83		H	
+L11	8	T24		H	
+L11	9	T85		H	
+L11	10	T83		H	
+L11	11	T45		H	
+L11	12	X_K		H	capital K shape
+L11	13	T58		H	
+L11	14	T92		H	
+L11	15	T45		H	
+L11	16	T83		H	
+L11	17	T33		H	
+L11	18	T96		H	
+L11	19	T84		H	
+L11	20	T25		H	
+L11	21	T55		H	
+L11	22	X_EQ		H	two short horizontal strokes
+L11	23	T55		M	
+L11	24	T46		H	
+L11	25	T25		H	
+L11	26	T55		H	
+L11	27	X_NEW		H	unmatched shape; line end
+R01	1	T85		H	line start (crop top-left cut, first two signs partly cut)
+R01	2	T88	T45	L	
+R01	3	T49	T66	M	
+R01	4	T81		M	
+R01	5	T92		H	
+R01	6	T92		H	
+R01	7	T25		H	
+R01	8	T58		H	
+R01	9	T37		H	
+R01	10	T54		H	
+R01	11	T85		H	
+R01	12	T58		H	
+R01	13	T85		H	
+R01	14	T70		H	
+R01	15	T83		H	
+R01	16	T85		H	
+R01	17	T53		H	
+R01	18	T25		H	
+R01	19	T85		H	
+R01	20	T63		H	
+R01	21	T85		H	
+R01	22	T58		H	
+R01	23	T53		H	
+R01	24	T83		H	
+R01	25	T25		H	line end (s3 ends clear)
+V01	1	X_NEW	T63	M	unmatched shape; see look-alike in alt; prose "al"
+V01	2	T88		H	
+V01	3	T83		H	
+V01	4	T85		H	
+V01	5	T27		H	
+V01	6	X_NEW	T17	M	unmatched shape; see look-alike in alt
+V01	7	T36		H	
+V01	8	T85		H	
+V01	9	T18	T98	M	
+V01	10	T92		H	
+V01	11	T83		M	
+V01	12	T88		H	
+V01	13	T27		H	
+V01	14	T37		H	
+V01	15	T17		M	
+V01	16	T88		H	
+V01	17	T76		H	
+V01	18	T92		H	
+V01	19	T86	T60	M	
+V01	20	T26	T76	M	
+V01	21	T36		H	
+V01	22	T19		H	
+V01	23	T76		H	
+V01	24	?		L	partly hidden in gutter, unreadable; partly hidden at gutter
+V02	1	T63		M	line start (crop shows only lower part of line; tops of signs cut)
+V02	2	T80		M	
+V02	3	T58		H	
+V02	4	T70		H	
+V02	5	T19		H	
+V02	6	T33		H	
+V02	7	T88		M	
+V02	8	X_NEW	T56	L	unmatched shape; see look-alike in alt
+V02	9	T54		M	
+V02	10	T86	T60	M	
+V02	11	T55		H	
+V02	12	T36		H	
+V02	13	T19		H	
+V02	14	T60		H	
+V02	15	T80		H	
+V02	16	T58		H	
+V02	17	T81		M	
+V02	18	T85		H	
+V02	19	T83		M	
+V02	20	T19		H	
+V02	21	T27	T76	M	
+V02	22	T36		H	
+V02	23	T54		H	
+V02	24	T19		H	
+V02	25	T18	T98	M	
+V02	26	T55		H	
+V02	27	T85		H	
+V02	28	T86	T60	M	
+V02	29	X_NEW	T95	L	unmatched shape; see look-alike in alt
+V02	30	T92		L	partly hidden at gutter
+V03	1	T98	T18	M	line start
+V03	2	T85		H	
+V03	3	T60	T86	M	
+V03	4	T24		H	
+V03	5	T83		H	
+V03	6	T60	T86	L	
+V03	7	T84	T90	L	
+V03	8	T49	T55	L	next prose word "Circa"; crop shows only a thin strip, signs cut, read also from the lower strip of the V02 crops

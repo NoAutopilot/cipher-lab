@@ -1,0 +1,63 @@
+passage	pos	sign_id	alt	conf	note
+V01	1	X_NEW	T63	L	V-like struck through by a stroke; prose before: a (ho scritto al)
+V01	2	T90	T45	M	stem/cross over ring
+V01	3	T83		H	ж shape
+V01	4	T85		H	plus
+V01	5	T27		M	curl on stem
+V01	6	T96		M	l with curl
+V01	7	T36		H	ring on stem
+V01	8	T85		H	plus
+V01	9	T98		H	phi
+V01	10	T53		H	double loop
+V01	11	T83		H	ж
+V01	12	T45	T89	M	bowl with stem up
+V01	13	T27		M	curl on stem
+V01	14	T37		H	barred theta
+V01	15	X_NEW		L	small t shape
+V01	16	T45	T89	M	bowl, stem up, ring above
+V01	17	T76		H	g
+V01	18	T53		H	double loop
+V01	19	T86	T60	M	small hash, 2 up 2 across
+V01	20	T26		M	g with loop head
+V01	21	T36		H	ring on stem
+V01	22	T19		H	pi
+V01	23	T76		H	g
+V01	24	T53		L	partly hidden in gutter; line end
+V02	1	T63		H	V; line start
+V02	2	T80		H	D
+V02	3	T58		H	B
+V02	4	T70		H	triangle
+V02	5	T19		H	pi
+V02	6	T33		H	double inverted T
+V02	7	T45		H	stem over ring
+V02	8	T83		H	ж
+V02	9	T60		H	hash
+V02	10	T55		H	F-like bars
+V02	11	T36		H	ring on stem
+V02	12	T19		H	pi
+V02	13	T60		H	hash
+V02	14	T80		H	D
+V02	15	T58		H	B
+V02	16	T81		H	x
+V02	17	T85		H	plus
+V02	18	T83		H	ж
+V02	19	T19		H	pi
+V02	20	T76		M	g long tail
+V02	21	T36		H	ring on stem
+V02	22	T83		H	ж
+V02	23	T86	T60	M	small hash
+V02	24	T98		H	phi
+V02	25	T55		H	F-like bars
+V02	26	T85		H	plus
+V02	27	T60		H	hash
+V02	28	X_NEW	T89	M	b with filled blob top
+V02	29	T50		M	w with s tail
+V02	30	?		L	partly hidden at gutter; line end
+V03	1	T98		H	phi; line start
+V03	2	T85		H	plus
+V03	3	T60		H	hash
+V03	4	T24		H	epsilon
+V03	5	T83		H	ж
+V03	6	T86	T60	M	small hash
+V03	7	X_NEW	T84	L	cross atop barred stem
+V03	8	X_NEW		M	box with dot inside, struck line; next prose: Circa

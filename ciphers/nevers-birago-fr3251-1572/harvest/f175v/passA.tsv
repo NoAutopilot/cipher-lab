@@ -1,0 +1,62 @@
+passage	pos	sign_id	alt	conf	note
+V01	1	X_NEW	T63	M	V shape with strike-through and tilde above; prose before: ho scritto al
+V01	2	T90	T84	M	circle with ticks and cross on top
+V01	3	T29	T24	M	reversed 3 + epsilon
+V01	4	T85		H	cross
+V01	5	T27		H	loop-top s
+V01	6	T96	T17	M	l with tilde
+V01	7	T36	T18	H	circle on stem
+V01	8	T85		H	
+V01	9	T98		H	
+V01	10	T53		H	infinity
+V01	11	T29	T24	M	
+V01	12	T89		M	b with tick
+V01	13	T27		H	
+V01	14	T37		H	theta with long bar
+V01	15	X_NEW		M	t shape
+V01	16	T89		M	b with small circle above
+V01	17	T76		H	g/9
+V01	18	T53		H	
+V01	19	T86	T60	M	two verticals two horizontals
+V01	20	T26		M	9 with tail
+V01	21	T36		H	
+V01	22	T19		H	pi
+V01	23	T76		H	
+V01	24	T53		L	partly hidden by gutter; after: line end (gutter)
+V02	1	T63		H	prose before: line start
+V02	2	T80		H	
+V02	3	T58		H	
+V02	4	T70		H	
+V02	5	T19		H	
+V02	6	T33		H	
+V02	7	T45	T90	M	circle with stem on top
+V02	8	T29	T24	M	
+V02	9	T60	T86	M	
+V02	10	T55		H	
+V02	11	T36		H	
+V02	12	T19		H	
+V02	13	T60	T86	M	
+V02	14	T80		H	
+V02	15	T58		H	
+V02	16	T81		H	
+V02	17	T85		H	
+V02	18	T29	T24	M	
+V02	19	T19		H	
+V02	20	T76		H	
+V02	21	T36		H	
+V02	22	T29	T24	M	
+V02	23	T86	T60	M	
+V02	24	T98		H	
+V02	25	T55		H	
+V02	26	T85		H	
+V02	27	T60		H	
+V02	28	T66		L	b-like with filled head
+V02	29	T50		L	partly hidden by gutter; after: line end (gutter)
+V03	1	T98		H	prose before: line start
+V03	2	T85		H	
+V03	3	T60		H	
+V03	4	T24		M	epsilon
+V03	5	T29	T24	M	
+V03	6	T86	T60	M	
+V03	7	X_NEW		M	cross-topped bar over struck box
+V03	8	X_NEW		M	boxed dot with strike; after: Circa
