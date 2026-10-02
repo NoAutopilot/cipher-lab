@@ -23,7 +23,7 @@ signs from one sender/office (CLAUDE.md Pipeline 3, pools first).
    Top 15. A ROOM line with the top 10.
 
 ## Phase 2: FIRST TESTS (account-4 parent, one session per candidate, top 10 by expected value = P x value / cost)
-Per candidate: `tools/intake_gate_check.py` (check-solved first if it fails -- never deep work on an unverified target),
+Per candidate: the Premise check of .claude/briefs/check-solved.md (adversarial, before reading) first, then `tools/intake_gate_check.py` (check-solved first if it fails -- never deep work on an unverified target),
 then exactly its first cheap test WITH the matched control (rule 3; `tools/family_run.py` or a key application with a
 shuffled-key control), cap USD 3-5, both numbers into the spec's cheap_test_done or NOTES.md, and the finish-or-blocker
 sections at the end. A reading that clears its control is flagged in ROOM.md for a separate verifier; nobody calls it new

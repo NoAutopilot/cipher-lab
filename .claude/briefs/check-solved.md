@@ -119,3 +119,19 @@ for: search the date (o.s./n.s., day +-1), both correspondents' names and the pl
 each one's hit count. `tools/intake_gate_check.py` now prints a non-blocking WARNING (not a `blocked` verdict) when
 a citation's full-text-search phrase carries only one quoted term -- treat that warning as a to-do before the
 citation is trusted for an AUDIT.md/N-class step, not as license to leave it.
+
+## Premise check (adversarial, before any first test or deep work; owner + account-3 orchestrator, 2 Oct 2026)
+A short Sonnet pass (cap USD 2-3) run after the six-source verdict and before any solver touches the target, asked to
+PROVE the item is already done -- the verifier's stance moved forward. It uses only what exists before reading:
+(a) the folder's own NOTES.md, REQUEST.md and spec: every mention of a decipherment, gloss, interlinear, clear copy,
+"attached", "dechiffrement", "Deciffrada", even one called illegible or unconfirmed -- open it and look; (b) the other
+solvers' working files for this item, not their status lists: outputs, renderings, apply-key scripts, and whether a
+key we would borrow has already been run on this very text (Aymeloglu's key129 had rendered intercepted-royalist f.10);
+(c) the physical neighbours: the leaves and canvases on each side of the cipher, for a clear copy or decipherment bound
+beside it (nevers-birago no.87's clerk's decipherment sat on canvas 182); (d) the recipient's side: documentary editions
+of the receiving country or office (Canadian, US, Dutch, Spanish state series), not only the sender's (Clinton 2894 was
+printed in 1920 in Military and Naval Forces of Canada III). Write "## Premise check (<worker>, <date>)" in NOTES.md with
+each of (a)-(d) as found / not found / unreachable. A find makes the item calibration or found-solved before any money
+is spent reading it. Lesson of 2 Oct 2026: of four likely-solves first tests later classed N0 by a verifier, two
+(nevers-birago no.87, royalist f.10) failed on (a)/(b)/(c) and one (Clinton) on (d); the post-reading verifier stays,
+because phrase search on decoded text can only happen after a reading exists.
