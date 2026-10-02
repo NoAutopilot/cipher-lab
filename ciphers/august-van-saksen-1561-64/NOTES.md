@@ -457,7 +457,7 @@ Verdict: keep going: 6 internal gaps (the WVO 58 route of two of them closed 2 O
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
 
-Run 2 Oct 2026, 21:15-21:25 UTC, by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+Run 2 Oct 2026, 21:14-21:19 UTC (date -u; committed 59dd17c3), by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
 1. `"August" Sachsen "Wilhelm von Oranien" 1561 Chiffre Brief Geheimschrift` (sender + recipient + date) -- hits: WVO edition PDFs
    01309/05175 (other letters), Sternberg *Land Nassau*, BMGN 2009, generic Geheimschrift PDFs, and Anne-Simone Rous,
    "Geheimschriften in sächsischen Akten der Neuzeit", *Neues Archiv für sächsische Geschichte* (nasg.publia.org, article 781,

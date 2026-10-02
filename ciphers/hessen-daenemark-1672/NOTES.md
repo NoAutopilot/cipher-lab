@@ -178,7 +178,7 @@ Verdict: keep going: 4 internal gaps; cheapest next: first the check-solved open
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
 
-Run 2 Oct 2026, 21:25-21:31 UTC, by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+Run 2 Oct 2026, 21:21-21:23 UTC (date -u; committed 1e2c3b77), by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
 1. `Lyncker Vultejus Hamburg 1672 Chiffre Dänemark Hessen-Kassel Brief` (sender + recipient + date) -- hits: Rijksmuseum
    portraits of Hermann Vultejus, books2ebooks records for N. C. Lyncker's later treatises (1686, 1692), museum-digital and
    Halle opendata portrait records. Nothing on the 1672 letter.

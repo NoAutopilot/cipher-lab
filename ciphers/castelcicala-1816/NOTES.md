@@ -202,7 +202,7 @@ Verdict: keep going: 6 internal gaps; cheapest next: the check-solved open-web a
 
 ## Web and blog check (GF-A2-1, 2 Oct 2026)
 
-Run 2 Oct 2026, 21:19-21:24 UTC, by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+Run 2 Oct 2026, 21:19-21:21 UTC (date -u; committed 4a9c0c7d), by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
 1. `Castelcicala Circello 1816 dispacci cifra Londra Parigi` (sender + recipient + date) -- hits: De' Sivo/De Cesare *La fine di
    un Regno* on it.wikisource (biography), BL searcharchives Add MS 89143/2/21/1 and 89143/2/9/12 (Canning Papers, 1807-1810,
    outside these dates), an RMG archive object, a 1797-99 *Dispacci da Napoli* sale listing, TNA catalogue C11953. None prints

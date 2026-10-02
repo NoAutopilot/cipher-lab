@@ -3198,3 +3198,50 @@ The brief (5797 code 173 only) does not cover a check-solved web pass, so the Ve
 Groen's 5810 sentence and a 300-dpi re-zoom of the 5550 p2-5 gloss tail) was not run. Next: a check-solved worker
 runs the 'Open web and blog comment threads' step (Cipherbrain, Cryptiana blog, Cipher Mysteries) and writes a
 "## Web and blog check" section here (~$1); then the code 173 step (~$3) as written in the Verdict. Verdict unchanged.
+
+## Web and blog check (GF-A2-1, 2 Oct 2026)
+
+Run 2 Oct 2026, 21:24-21:27 UTC (date -u), by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+1. `Lodewijk van Nassau Willem van Oranje 1574 brief cijferschrift ontcijferd Mookerheide` (sender + recipient + date, Dutch) --
+   hits: WVO edition PDFs JBWO 01694/05212, BHV 09052 (other letters), DBNL _vad003183901 and _ned005189001 (Mookerheide history),
+   Deutsche Biographie and Archivportal-D person pages, a flags page, a Knowino biography. Nothing on 4610/4611/4612/4616.
+2. `"Louis of Nassau" cipher letters 1573 1574 William of Orange deciphered` (sender + recipient + date, English) -- hits:
+   Wikipedia, CUP *Texts concerning the Revolt of the Netherlands* (Orange to Jan, Dordrecht 7 May 1574 -- a different letter,
+   after Lodewijk's death), Groen IV/V/Supplément on DBNL (already read: AUDIT.md section 1), HistoCrypt 162 (d'Avaux 1684,
+   unrelated). No decipherment of the four letters.
+3. `"A 11/XIV D/13a" OR "Koninklijk Huisarchief" Lodewijk Nassau cijfer` (shelfmark + cipher) -- hits: WVO scans 04617, 04614,
+   06143, 06354, 05523, 05543, 04539, 13002 (catalogue PDFs; 4614 is already used as a companion decipherment, AX-COMP), the
+   KHA contact page, HistoCrypt 162. No solution text.
+4. `"Ludwig von Nassau" Chiffre Briefe 1574 Wilhelm von Oranien entziffert` (folder title, German) -- hits: Deutsche Biographie,
+   Fuggerzeitungen person page, museum-digital, hiko-nassau.de *Oranien und Nassau* contents PDF, HistoCrypt 160 (Chodkiewicz
+   1574-75, unrelated), Alexander Rose "Reading Maximilian's Mail" (unrelated). Nothing on these letters.
+Decoded-phrase searches in quotes were already run by the verifiers (AUDIT.md V5/V8, print_check.py) and are not repeated here.
+Blog site searches: **Cipherbrain** (`site:scienceblogs.de klausis-krypto-kolumne Nassau OR Oranien OR Oranje verschlüsselt
+1574`) -- one plausible post opened, "The secret writing of the Habsburgians" (2014, Ferdinand III / Leopold Wilhelm 1640): post
+and all 12 comments read, no Nassau, Orange or 1573-74 Dutch letters; the rest are index pages and the Thirty Years War
+post; **Cryptiana blog** (`site:cryptiana.blogspot.com Nassau OR Orange cipher 1574 OR 1573`) -- no blogspot hit (CUP, Groen on
+DBNL, HistoCrypt 160); Tomokiyo's dutch.htm (on disk, read 24 Sept 2026, check-solved item 3) has no mention; **Cipher
+Mysteries** (`site:ciphermysteries.com "Louis of Nassau" OR "William of Orange" cipher`) -- no ciphermysteries.com hit at all.
+No comment thread anywhere carries a decipherment or plaintext of 4610, 4611, 4612 or 4616 (or 5797).
+Requests: scienceblogs.de 1, search engine 7.
+
+## Premise check (GF-A2-1, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found, all opened and used.** 4613 p2 and 4615 p3 (the key source, R18),
+4614 pp.5-6 (AX-COMP), 7205 pp.8-10 (AX-COMP2), 7206 p8 (AX2-BLANKS), 5801 interlinear and pp.7-9 (AX2-5801), the glosses on
+4496/5550/5552/5557 (AX-GLOSS); Groen's partial print of 5797 with its undeciphered spots (csWV2). Each deciphers its own
+letter, not 4610/4611/4612/4616. 7208 ("solved on leaf" per WVO) was opened by AX-GLOSS: pp.1-3 cipher with no interlinear
+gloss, p5 a separate same-date clear letter -- not a decipherment of a target; its transcription stays a siblings step. The
+four target letters carry no clear copy (R9 inventory, A1 contact sheet).
+(b) Other solvers' working files -- **not found.** Shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers
+(2 Oct 2026): grep for Lodewijk / Louis of Nassau / Ludwig von Nassau: the only Louis of Nassau hit is Bourdeau's
+`research/gallica_sweep/mondoucet/f1573/reading.md` (Mondoucet's 1573 letter about Lodewijk's levies -- a different item and
+sender, cited only as context); no folder, rendering or key for the WVO letters; Aymeloglu: no hit (cited only).
+(c) Physical neighbours -- **checked, not found.** The KHA file A 11/XIV D/13a runs 4610-4616; 4613, 4614 and 4615 between the
+targets were opened and are decipherments of themselves only; every page of the four target PDFs was viewed (R9, A1). 4610
+is marked "duplicaat": the other exemplar(s) Lodewijk sent are not located (not in WVO under this shelfmark), and Orange's
+printed reply of 17 Jun 1573 (Groen IV CDXXVII) answers its substance without deciphering it (AUDIT.md section 1).
+(d) Recipient side -- **checked, not found.** The recipient is Orange; his printed replies to 4610, 4611 and 4616 (Groen IV
+CDXXVII, CDXXXIII, CDLXXXIV) acknowledge the letters but print no decipherment; none located for 4612 (AUDIT.md section 1). The
+sender-side (Nassau/Dillenburg) regest series, Demandt's *Nassau-oranische Korrespondenzen*, stops at 1570 (august-van-saksen
+NOTES, check-solved item 1), before these dates.
