@@ -1,0 +1,73 @@
+{
+ "cells_reconciled": 125,
+ "cells_read_identically_by_both_blind_passes": 98,
+ "source": "H-1649 Images 886 (p.242), 889 (p.245), 890 (p.246), 891 (p.247) at 1600 px; crops images/h1649/p245_lines/, p246_lines/, p242_cols/, p247_cols/",
+ "line_crops": 68,
+ "pass_agreement_lines": "52/68 line crops identical in words between the two blind passes (most differences are margin notes one pass read into the line)",
+ "readings": {
+  "3050": {
+   "body_words": 106,
+   "grades_words": {
+    "H": 106,
+    "M": 0
+   }
+  },
+  "3077": {
+   "body_words": 175,
+   "grades_words": {
+    "H": 175,
+    "M": 0
+   }
+  }
+ },
+ "key_check": {
+  "compared_cells": 118,
+  "per_item": {
+   "3050": "66/66",
+   "3077": "52/52"
+  },
+  "page_letter_equals_decipherment_letter": 118,
+  "shuffled_plaintext_control": {
+   "seeds": 1000,
+   "mean": 7.95,
+   "p95": 13,
+   "max": 19
+  },
+  "off_cells": [],
+  "unequal_words_left_out": [
+   {
+    "decipherment_word": "forts",
+    "cells": [
+     "5-2",
+     "1-5",
+     "4-4",
+     "4-3"
+    ],
+    "page_letters": "frts"
+   }
+  ],
+  "cells_beyond_title_line_left_out": [
+   {
+    "word": "quebec",
+    "cell": "8-8",
+    "stands_for": "q"
+   }
+  ],
+  "cipher_words_without_decipherment_counterpart": [
+   {
+    "column": "p242_col1",
+    "cells": [
+     "9-9",
+     "9-10"
+    ],
+    "page_letters": "in"
+   }
+  ],
+  "grade_C_cells": 118
+ },
+ "same_key_as_2894": {
+  "distinct_cells": 76,
+  "also_in_key_2894": 34,
+  "agree": 34
+ }
+}

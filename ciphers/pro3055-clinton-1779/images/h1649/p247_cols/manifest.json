@@ -1,0 +1,53 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p247_col1_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc01c1tf8862f/full/1600,/0/default.jpg",
+   "source_file": "img891_w1600.jpg",
+   "box": [
+    615,
+    335,
+    700,
+    895
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     280
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p247_col2_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc01c1tf8862f/full/1600,/0/default.jpg",
+   "source_file": "img891_w1600.jpg",
+   "box": [
+    668,
+    335,
+    750,
+    805
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     235
+    ]
+   },
+   "date": "02 Oct 2026"
+  }
+ ],
+ "note": "GAPS12 2 Oct 2026: one cipher column per crop, tools/iiif_lines.py --image <1600 px frame> --region <column> (--lines-per-crop 60 for p242, --centres + 400 px margins for p247)"
+}

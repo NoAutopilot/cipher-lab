@@ -1,0 +1,677 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p245_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    139,
+    1170,
+    209
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L02.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    193,
+    1170,
+    262
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L03.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    246,
+    1170,
+    284
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L04.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    268,
+    1170,
+    306
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L05.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    290,
+    1170,
+    329
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L06.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    313,
+    1170,
+    352
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L07.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    336,
+    1170,
+    375
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L08.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    359,
+    1170,
+    398
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L09.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    382,
+    1170,
+    419
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L10.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    403,
+    1170,
+    441
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L11.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    425,
+    1170,
+    463
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L12.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    447,
+    1170,
+    484
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L13.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    468,
+    1170,
+    506
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L14.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    490,
+    1170,
+    529
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L15.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    513,
+    1170,
+    551
+   ],
+   "lines_in_crop": 1,
+   "band": 15,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L16.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    535,
+    1170,
+    573
+   ],
+   "lines_in_crop": 1,
+   "band": 16,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L17.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    557,
+    1170,
+    596
+   ],
+   "lines_in_crop": 1,
+   "band": 17,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L18.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    580,
+    1170,
+    619
+   ],
+   "lines_in_crop": 1,
+   "band": 18,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L19.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    603,
+    1170,
+    643
+   ],
+   "lines_in_crop": 1,
+   "band": 19,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L20.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    627,
+    1170,
+    665
+   ],
+   "lines_in_crop": 1,
+   "band": 20,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L21.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    649,
+    1170,
+    687
+   ],
+   "lines_in_crop": 1,
+   "band": 21,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L22.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    671,
+    1170,
+    706
+   ],
+   "lines_in_crop": 1,
+   "band": 22,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L23.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    690,
+    1170,
+    726
+   ],
+   "lines_in_crop": 1,
+   "band": 23,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L24.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    710,
+    1170,
+    747
+   ],
+   "lines_in_crop": 1,
+   "band": 24,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L25.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    731,
+    1170,
+    769
+   ],
+   "lines_in_crop": 1,
+   "band": 25,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L26.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    753,
+    1170,
+    792
+   ],
+   "lines_in_crop": 1,
+   "band": 26,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L27.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    776,
+    1170,
+    816
+   ],
+   "lines_in_crop": 1,
+   "band": 27,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L28.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    800,
+    1170,
+    839
+   ],
+   "lines_in_crop": 1,
+   "band": 28,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L29.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    823,
+    1170,
+    861
+   ],
+   "lines_in_crop": 1,
+   "band": 29,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L30.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    845,
+    1170,
+    883
+   ],
+   "lines_in_crop": 1,
+   "band": 30,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L31.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    867,
+    1170,
+    906
+   ],
+   "lines_in_crop": 1,
+   "band": 31,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p245_L32.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc08s4jn0qk1m/full/1600,/0/default.jpg",
+   "source_file": "img889_w1600.jpg",
+   "box": [
+    530,
+    890,
+    1170,
+    929
+   ],
+   "lines_in_crop": 1,
+   "band": 32,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 96.0
+   },
+   "date": "02 Oct 2026"
+  }
+ ],
+ "note": "GAPS12 2 Oct 2026: cut by tools/iiif_lines.py --image img889_w1600.jpg (1600 px frame, not committed; regen_images.sh refetches it and re-cuts these boxes byte-identically), --top-margin 8 --bottom-margin 8"
+}

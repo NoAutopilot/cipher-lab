@@ -1,0 +1,68 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "p242_col1_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/1600,/0/default.jpg",
+   "source_file": "img886_w1600.jpg",
+   "box": [
+    620,
+    215,
+    710,
+    625
+   ],
+   "lines_in_crop": 17,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 23,
+    "distance": 16,
+    "prominence": 13.3
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p242_col2_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/1600,/0/default.jpg",
+   "source_file": "img886_w1600.jpg",
+   "box": [
+    700,
+    215,
+    785,
+    618
+   ],
+   "lines_in_crop": 17,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 23,
+    "distance": 16,
+    "prominence": 12.6
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p242_col3_L01.jpg",
+   "source_url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p26q03nv9x/full/1600,/0/default.jpg",
+   "source_file": "img886_w1600.jpg",
+   "box": [
+    775,
+    215,
+    855,
+    625
+   ],
+   "lines_in_crop": 16,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 22,
+    "distance": 15,
+    "prominence": 11.5
+   },
+   "date": "02 Oct 2026"
+  }
+ ],
+ "note": "GAPS12 2 Oct 2026: one cipher column per crop, tools/iiif_lines.py --image <1600 px frame> --region <column> (--lines-per-crop 60 for p242, --centres + 400 px margins for p247)"
+}

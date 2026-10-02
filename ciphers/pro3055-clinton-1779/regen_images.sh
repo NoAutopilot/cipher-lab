@@ -22,6 +22,8 @@
 #      p186_bottom_region.jpg, p186_text_region_L01.jpg and all 28 p184/p185 column crops;
 #      GAPS10 (2 Oct 2026) added img1115_w1600.jpg and img1116_w1600.jpg (B.148 pp.39-40, the clear copy of the 22 June
 #      1782 letter) as fetched, so the manifest loop in step 1 refetches them byte-identically; no crops were cut;
+#      GAPS12 (2 Oct 2026): p242_cols/, p245_lines/, p246_lines/, p247_cols/ re-cut from the 1600 px frames of Images 886,
+#      889, 890, 891 (frames not committed, manifest marks them deleted; the crop loop refetches them by source_url);
 #   3. the HMC and Stevens pages come from archive.org _jp2.zip members and are converted to JPEG here, so they
 #      regenerate the page, not the committed bytes (their original conversion settings were not recorded).
 set -euo pipefail
@@ -107,6 +109,14 @@ if want('h1649'):
               os.path.join(d, f'img{img}_max.jpg'), viewer.format(img))
     subprocess.run(['python3', os.path.join(HERE, 'passes', 'cut_2380_crops.py')], check=True,
                    env=dict(os.environ, CLINTON_H1649_DIR=d, OUT_DIR=d))
+
+    # items 3050/3077 (GAPS12, 2 Oct 2026): Images 886, 889, 890, 891 at 1600 px; crops cut by tools/iiif_lines.py --image,
+    # re-cut here from the manifest boxes (greyscale frame, RGB crop, q85: the tool's own save), byte-identical (tested)
+    for sub in ('p242_cols', 'p245_lines', 'p246_lines', 'p247_cols'):
+        for e in json.load(open(os.path.join(IMG, 'h1649', sub, 'manifest.json')))['iiif_lines']:
+            src = fetch(e['source_url'], os.path.join(d, e['source_file']), viewer.format(int(e['source_file'][3:6])))
+            x0, y0, x1, y1 = e['box']
+            save(Image.open(src).crop((x0, y0, x1, y1)).convert('RGB'), os.path.join(d, sub, e['crop']), 85)
 
 if want('armylist1778'):
     m = json.load(open(os.path.join(IMG, 'armylist1778', 'manifest.json')))

@@ -1,0 +1,30 @@
+# B.147 p.245 (H-1649 Image 889), BL Add MS 21807 fo.208: period decipherment ("Duplicate") of Clinton to
+# Haldimand, New York, 2 Oct 1780 (item 3050, PRO 30/55/26/2; cipher copy on pp.242-244 = Images 886-888, duplicate
+# p.239). Two blind Sonnet passes reconciled on the crops (passes/p245_246_reconciled.tsv); margin notes left out.
+# Endorsement after the blank line.
+Duplicate New York Oct^r 2^d. 80.
+Sir
+General Arnold discovered
+an Intention of giving up the
+Forts &c &c at West Point, was
+obliged to fly, and has joined us,
+which has thrown the Rebels
+Army into the Greatest Confusion.
+Admiral Rodney is on this coast
+with a Superior Fleet, & there is
+little Probability of a second division
+of french ships this year. The
+Good News I sent Your Excellency
+in my Last, is true. L^d Cornwallis
+has gained a Compleat Victory
+over General Gates on the 16^th of
+August at Camden - there is a
+great defection in the spanish
+Colonies. -
+H C / Dup. Copy
+
+[Endorsed] - From 1780
+Sir Henry Clinton
+being the Explanation of his
+Letter in Cypher of the
+2^d October.
