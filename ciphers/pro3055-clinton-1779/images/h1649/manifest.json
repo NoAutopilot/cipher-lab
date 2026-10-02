@@ -3,7 +3,7 @@
  "viewer": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/{image}",
  "fetched": "2 October 2026 (GAPS-pro3055-clinton-1779, account-4)",
  "fetch_method": "the viewer page lists every image's IIIF Image API 2 identifier in its #pvPageSelect options (saved to seq_to_iiif.tsv, all 1266); info.json and default.jpg at image-uab.canadiana.ca answer 403 to a plain request and 200 with a browser User-Agent plus a Referer header of the viewer page; one request at a time, 1.6 s apart",
- "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart)",
+ "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart",
  "rights": "LAC microfilm of BL manuscripts, 18th-century text; reel served openly by Canadiana",
  "files": [
   {
@@ -11,16 +11,16 @@
    "image": 825,
    "iiif_id": "c0jm23c4hj81",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0jm23c4hj81/full/1520,/0/default.jpg",
-   "bytes": 179632,
-   "note": "reference copy, 1520 px wide"
+   "bytes": 55558,
+   "note": "reference copy, 1520 px wide; re-stored at 760 px on 2 Oct 2026 (GAPS6): uncited reference copy (no NOTES/AUDIT/passes citation), downscaled from 1520 px to free space for Images 1199 and 1205 (AX2-SHRINK pattern); regenerate by refetching the URL at 1520 px"
   },
   {
    "file": "img826_w1520.jpg",
    "image": 826,
    "iiif_id": "c0dv1ck6vs52",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0dv1ck6vs52/full/1520,/0/default.jpg",
-   "bytes": 154977,
-   "note": "reference copy, 1520 px wide"
+   "bytes": 43767,
+   "note": "reference copy, 1520 px wide; re-stored at 760 px on 2 Oct 2026 (GAPS6): uncited reference copy (no NOTES/AUDIT/passes citation), downscaled from 1520 px to free space for Images 1199 and 1205 (AX2-SHRINK pattern); regenerate by refetching the URL at 1520 px"
   },
   {
    "file": "img827_w1520.jpg",
@@ -54,8 +54,8 @@
    "image": 830,
    "iiif_id": "c0ww76t94b4x",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0ww76t94b4x/full/1520,/0/default.jpg",
-   "bytes": 171627,
-   "note": "reference copy, 1520 px wide"
+   "bytes": 52932,
+   "note": "reference copy, 1520 px wide; re-stored at 760 px on 2 Oct 2026 (GAPS6): uncited reference copy (no NOTES/AUDIT/passes citation), downscaled from 1520 px to free space for Images 1199 and 1205 (AX2-SHRINK pattern); regenerate by refetching the URL at 1520 px"
   },
   {
    "file": "img827_full.jpg",
@@ -115,7 +115,31 @@
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0v11vf59f64/full/1400,/0/default.jpg",
    "bytes": 19261,
    "note": "crop (1130,300,1310,720) of the 1400 px Image 637, rotated -90 and enlarged 2x: the typed LAC label strip beside the 21807 title leaf; unread (GAPS5 spent its 2 vision calls on the montage and a mis-aimed first crop)"
+  },
+  {
+   "file": "img1199_w1600.jpg",
+   "image": 1199,
+   "iiif_id": "c07940s87908",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc07940s87908/full/1600,/0/default.jpg",
+   "bytes": 179539,
+   "size": "1600x1174",
+   "note": "fetched 2 Oct 2026 (GAPS6) at 1600 px, browser UA + Referer; by Tomokiyo's anchor (p.123 = Image 1205) this should be B.148 p.117, Brymner: Carleton to Haldimand, 16 Oct 1782, New York (claims of Dr. Smyth; payment of messengers) -- NOT the cipher item; stored, unread (the brief's three vision calls went to Image 1205), identification by calendar position only (grade I)"
+  },
+  {
+   "file": "img1205_w1600.jpg",
+   "image": 1205,
+   "iiif_id": "c0ft8dg56944",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0ft8dg56944/full/1600,/0/default.jpg",
+   "bytes": 178250,
+   "size": "1600x1177 (native 5512x4056 fetched to the session scratchpad for cropping, not committed)",
+   "note": "fetched 2 Oct 2026 (GAPS6); opening B.148 pp.122-123 of Add MS 21808 with the LAC label strip (read: 'British Library, Haldimand Papers, Correspondence with Sir H. Clinton, Sir Guy Carleton and Other Officers at New York, n.d., 1782-1783, MG 21, Add. Mss. 21808, (B-148)'); p.123 = the cipher copy of Carleton to Haldimand 25 Sept 1782 (figure-pair table, pencil note 'See another copy (Differently arranged) on pp. 126-8 infra. (For de-coded copy, see p. 102 supra; also B. 146, p. 54)', clear words 'The L'Aigle of 44 Guns Capt. Latouche a valuable Ship of 20 Guns with bale goods from France were lately taken in'), calendared by Brymner under 26 Oct 1782 'Copies of letters in cypher. 123'; crops in p123_lines/, passes in passes/p123_pass*.txt, passes/p123_reconciled.tsv"
   }
  ],
- "crops": "p186_text_region.jpg is a PIL crop of img829_full.jpg (box 1956,527,4090,3772 = the text block of page 186); p186_bottom_region.jpg its lower 915 px; p186_lines/ holds the tools/iiif_lines.py line crops (--distance 110 --prominence 40 on the text region, 15 bands; --distance 90 --prominence 10 on the bottom strip, 2 bands) with their own manifest.json and debug overlays"
+ "crops": "p186_text_region.jpg is a PIL crop of img829_full.jpg (box 1956,527,4090,3772 = the text block of page 186); p186_bottom_region.jpg its lower 915 px; p186_lines/ holds the tools/iiif_lines.py line crops (--distance 110 --prominence 40 on the text region, 15 bands; --distance 90 --prominence 10 on the bottom strip, 2 bands) with their own manifest.json and debug overlays",
+ "shrink_log": [
+  {
+   "date": "2 Oct 2026 (GAPS6)",
+   "action": "img825/826/830_w1520.jpg re-stored at 760 px; p186_lines/*_lines_debug.jpg (iiif_lines.py --debug overlays, uncited, regenerable by re-running the tool with --debug on p186_text_region.jpg / p186_bottom_region.jpg) deleted; to keep the folder under 30 MiB after adding img1199_w1600.jpg, img1205_w1600.jpg and p123_lines/"
+  }
+ ]
 }

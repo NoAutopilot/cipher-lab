@@ -1,0 +1,29 @@
+# Blind pass B (Sonnet subagent, 2 Oct 2026, GAPS6-pro3055-clinton-1779), Image 1205 crops in images/h1649/p123_lines/ -- verbatim report
+HEAD
+p123_head_L01.jpg: [illegible] (blank grey strip)
+p123_head_L02.jpg: right edge: page number "123" (partly cut; "23" clear, the leading 1 at the edge [?]). Nothing else legible.
+p123_head_L03.jpg: right edge: lower parts of "123" again (cut). Partial tops of strokes only [illegible]. No folio note legible in this crop.
+p123_head_L04.jpg: only the tops of figures: "1", "2", "3", "4", then an "x" (cross mark) and a small figure, then "6" at far right. Row pairs cannot be read from this crop.
+MARGIN
+p123_margin_L01.jpg: "fo. 124" then "3 - 4" (tick above the dash, underlined) / small "x" then "16 - 31" / "See another" "- 32"
+p123_margin_L02.jpg: "copy (Differently" "- 15" / "arranged) on" "- 48" (the 8 poorly formed, "48" [?])
+p123_margin_L03.jpg: "pp. 126-8 infra." "- 20" / "(For de-coded." "- 3"
+p123_margin_L04.jpg: "copy, see p. 102 supra;" "- 35" (could be "36" [?]) / "also B. 146, p. 54)." "- 35" ([?])
+Pencil annotation in order: "fo. 124", "See another copy (Differently arranged) on pp. 126-8 infra. (For de-coded copy, see p. 102 supra; also B. 146, p. 54)." First column pairs: 3-4; x 16-31; [?]-32; [?]-15; [?]-48[?]; [?]-20; [?]-3; [?]-35[?]; [?]-35[?].
+CLEARCOL
+p123_clearcol_L01.jpg: "22  The L'Aigle" ([?]) / "23  of 44 Guns"
+p123_clearcol_L02.jpg: "8  Capt. Latouch[e?]" / "& [?] valuable"
+p123_clearcol_L03.jpg: "- 2  Ship of 20" / "- 12[?]  Guns with"
+p123_clearcol_L04.jpg: "- 7  Sale goods" ([?]; could be "Bale goods") / "19  from France"
+p123_clearcol_L05.jpg: "6  were lately" / "1  taken in"
+FOOT
+p123_foot_L01.jpg: "8 17 - 1    [?]5 - 19    10 - 1    taken in" (tail of "forward" [?] at the top edge) / "- Each column is continued on the page following. -   -15" ([?] at the right edge)
+P122
+p122_head_L01.jpg: very faint; upper right "Copy" or "Copy 24 [?]" and a date-like group [illegible]; no reliable place/date reading.
+p122_close_L01.jpg: faint closing, "Your/Yours [?] ..." signature [illegible].
+p122_close_L02.jpg: faint; "1782" [?]; address line near the bottom approximately "His Excellency Sir Guy Carleton" [?]. Date unsure.
+LAC LABEL
+p123_lac_label.jpg: "British Library, Haldimand Papers, Correspondence with Sir H. Clinton, Sir Guy Carleton and Other Officers at New York, n.d., 1782-1783, MG 21, Add. Mss. 21808, (B-148)"; lower strip "PUBLIC ARCHIVES / ARCHIVES PUBLIQUES / CANADA"
+BINDING LABEL
+p123_binding_label.jpg: "TIGHT BINDING / RELIURE TROP RIGIDE"
+Confidence: high on LAC label, binding label, margin pencil annotations; medium on clearcol words and foot note; low on head crops and all of p122.
