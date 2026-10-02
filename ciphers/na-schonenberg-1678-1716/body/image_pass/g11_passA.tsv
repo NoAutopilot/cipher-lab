@@ -1,0 +1,31 @@
+line	groups
+L01	89 36 56 13 )6 60 [blot] 15 3 45 24 35 38
+L04	18 3 30 98 82 49 23 68 14 46 89 21 56 50 33 54 2) 36 ) 25
+L05	50 )3 6 6) 99 )6 11 50 26 2 38 56 32 94 60 )2 12 35 2) 56
+L06	89 22 38 31 3 )1 10 28 4) 16 49 68 36 8 6) [triangle] 89 50 32 6
+L07	43 )8 94 )0 30 5 [Z-symbol] 13 )6 60 2) 60 59 38 43 6) 8 )1
+L08	29 16 54 15 60 32 51 6 65 98 12 25 30 5 28 [2b-ligature] 28 56 )2
+L09	[L-symbol] 45 3) 60 T 14 6 94 )6 3 23 56 2) 8) 11 50 26 ) 10
+L10	[tilde-symbol] )0 32 4) 52 38 59 )8 6) [oval] 36 )4 2) 54 )1 55
+L12	21 34 58 24 )1 10 94 69 8 6) 59 82 45 33 )6 6 )2 38
+L14	28 3 )9 [E-symbol] )1 10 )2 36 2) 54 )3 46 [rectangle] 45 10 28 95 34
+
+line	pos	group	gconf	gloss	glossconf	note
+L01	6	[blot]	L	23.	M	large dark ink blot covers the group entirely; underlying digits unreadable (faint "2"/"3"-like stroke at upper left of blot); gloss row above has the numeral "23." in gloss ink, not a letter; dots separate 60. and 15
+L04	0	18	H	g	H	clear "18", dot before it at left margin; gloss "g" with a long leading swash from the left; dot after
+L04	17	36	H	e	H	clear 36 preceded by "2)" and followed by a separate ")" (pos18, gloss "u") then dot; no stroke attached to 36 itself
+L04	19	25	M	n	H	last group, faint ink, "25" (2 slightly retraced); ")" before it is its own group (pos18) separated by a dot; gloss "n." with final period
+L05	1	)3	H	e	M	")3" with stroke before, dot after; a separate faint pale stroke (like "l" with a dash) sits just left of the dark "e" in the gloss row -- possibly "le" or a cancelled mark; dark letter is "e"
+L06	12	36	H	c	M	clear 36 with dots either side; gloss "c" sits slightly right, between 36 and 8 (8 has "o"), assigned by order
+L06	17	50	H	s	H	"50" (5 + small o), dot after; gloss "s"
+L07	15	6)	H	N	M	"6)" with stroke after, dot after; gloss a capital N with flourish (same form as L01's "N"), could be read M; an ink blot in the gloss row sits further left over 38/43, not over this group
+L08	15	[2b-ligature]	L	e	M	darker, retraced group: a "2" whose tail runs on into a loop like "b"/"6" -- reads as "26" or a "2" with ligature; no dot between it and the next 28; gloss "e" over its right half
+L09	0	[L-symbol]	M	A	M	darker-ink symbol at line start shaped like "L" with a looped "S"/"&" tail running into the 4 of 45 (no dot between); it is a group (gloss above it); gloss is a capital "A"/"&"-like letter with a long horizontal tail
+L10	0	[tilde-symbol]	M	none	H	wave/tilde symbol (open loop at left with a dot inside, then an S-curve), dot after; also a dot above it; no gloss above
+L10	1	)0	M	none	H	")" stroke then small "o" (no dot between them), dot after; a pale "2." is written superscript above the o in cipher-coloured ink -- possibly an insertion making ")2 0" or a correction; no gloss letter
+L10	2	32	H	none	H	clear 32; no gloss letter; gloss row begins at the next group (4) gets "p")
+L10	10	36	H	c	H	clear 36 after the oval symbol (pos9, gloss "o"); dot after; gloss "c"
+L10	12	2)	H	r	M	"2)" with stroke after, no dot between it and 54; gloss is a looped "r"-form (like n with a hook), could be read "n"
+L12	2	58	M	l	M	5 with long descender, second digit pale "8" (possibly 6); dot after; gloss a tall looped letter read "l" (could be "e"); comma in gloss before it
+L14	7	36	H	e	H	clear 36, dots either side; gloss "e"
+L14	10	)3	H	t	H	")3" stroke before, dot after; gloss "t" with a long leading dash ("-t")

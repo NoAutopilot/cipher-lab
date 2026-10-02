@@ -5,7 +5,7 @@ L01	2	56	H	a	C
 L01	3	13	H	b	C
 L01	4	)6	H	y	C
 L01	5	60	H	e	C
-L01	6	23	M	n	M
+L01	6	23	H	n	C
 L01	7	15	H	d	C
 L01	8	3	H	o	C
 L01	9	45	H	n	C
@@ -49,7 +49,7 @@ L03	14	[X]	H	e	C
 L03	15	)2	H	s	C
 L03	16	51	H	t	C
 L03	17	60	H	e	C
-L04	0	18	H	g	M
+L04	0	18	H	g	C
 L04	1	3	H	o	C
 L04	2	30	H	u	C
 L04	3	98	H	y	C
@@ -106,7 +106,7 @@ L06	13	8	H	o	C
 L06	14	6)	H	n	C
 L06	15	[triangle]	H	a	C
 L06	16	89	H	n	C
-L06	17	50	H	s	M
+L06	17	50	H	s	C
 L06	18	32	H	y	C
 L06	19	6	H	a	C
 L07	0	43	H	l	C
@@ -146,7 +146,7 @@ L08	15	26	M	e	M
 L08	16	28	H	s	C
 L08	17	56	H	a	C
 L08	18	)2	H	u	C
-L09	0	20	M	a	M
+L09	0	[L]	M	a	M
 L09	1	45	H	n	C
 L09	2	3)	H	d	C
 L09	3	60	H	e	C
@@ -165,7 +165,7 @@ L09	15	50	H	s	C
 L09	16	26	H	q	C
 L09	17	)	H	u	C
 L09	18	10	H	e	C
-L10	0	)2	M	NULL	M
+L10	0	[curl]	M	NULL	M
 L10	1	)0	H	NULL	M
 L10	2	32	H	NULL	M
 L10	3	4)	H	p	C
@@ -201,7 +201,7 @@ L11	16	3)	H	d	C
 L11	17	5	H	e	C
 L12	0	21	H	l	C
 L12	1	34	H	a	C
-L12	2	58	H	i	M
+L12	2	58	H	l	M
 L12	3	24	H	o	C
 L12	4	)1	H	r	C
 L12	5	10	H	e	C
@@ -244,7 +244,7 @@ L14	6	)2	H	s	C
 L14	7	36	H	c	M
 L14	8	2)	H	r	C
 L14	9	54	H	y	C
-L14	10	)3	H	t	M
+L14	10	)3	H	t	C
 L14	11	46	H	o	C
 L14	12	[square]	H	e	C
 L14	13	45	H	n	C

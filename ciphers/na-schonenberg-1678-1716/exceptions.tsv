@@ -1,6 +1,6 @@
 line	pos	value	grade	reason
 L19	9	n	M	GAPS 2 Oct 2026: group '?9' (tens digit under a blot); the address crib asks for n at this position and 89 = n (C) fits; 2x image check: the blot is a round shape consistent with an 8; M because the sign itself is uncertain
-L06	17	s	M	GAPS7 2 Oct 2026 image pass: both blind passes read s over 50 (short s form; 2nd r / d-or-f); VX-RD01 had pixel-verified r here -- two readings of one letter disagree, so M
+L06	17	s	C	GAPS7 2 Oct 2026 image pass: both blind passes read s over 50 (short s form; 2nd r / d-or-f); VX-RD01 had pixel-verified r here -- two readings of one letter disagree, so M | GAPS11 2 Oct 2026 native-resolution blind pair (body/image_pass/g11_settled.tsv): both native-resolution passes read s again (four blind reads s vs the one VX-RD01 r) -> C
 L08	15	e	C	GAPS7 2 Oct 2026 image pass: group is not 23 (both passes: 22 or 26, a looped second digit, kept as 2?); gloss e in both passes
 L13	1	o	C	GAPS7 2 Oct 2026 image pass: 96: o in both passes
 L13	15	y	C	GAPS7 2 Oct 2026 image pass: 96: y in both passes (sense had predicted e; refuted)
@@ -8,8 +8,10 @@ L03	15	s	C	GAPS7 2 Oct 2026 image pass: )2: s in both passes (key )2 = r, M, fro
 L12	16	s	C	GAPS7 2 Oct 2026 image pass: was transcribed )52; both passes read )2 followed by a separate 38; s in both
 L14	6	s	C	GAPS7 2 Oct 2026 image pass: )2: s in both passes
 L08	18	u	C	"GAPS9 2 Oct 2026 image pass: both blind passes read a v-form u over )2 here (A ""v"", B ""u""; reconciliation: v-form u, ""esauan""); )2 = s (C) elsewhere, so this position is an exception | was: s M (not image-read)"
-L10	0	NULL	M	GAPS8 2 Oct 2026 image pass: no gloss letter over the line-start groups in either blind pass (GAPS7 and GAPS8); the group itself is a curl, not clearly )2
+L10	0	NULL	M	GAPS8 2 Oct 2026 image pass: no gloss letter over the line-start groups in either blind pass (GAPS7 and GAPS8); the group itself is a curl, not clearly )2 | GAPS11 2 Oct 2026 native-resolution blind pair (body/image_pass/g11_settled.tsv): the group is a curl/tilde symbol with a dot in its loop, not )2 (both passes); NULL kept M
 L10	1	NULL	M	GAPS8 2 Oct 2026 image pass: no gloss letter over )0 (a small 2 written above it) in either blind pass
 L10	2	NULL	M	"GAPS8 2 Oct 2026 image pass: no gloss letter over 32 here in either blind pass; ""puedan"" begins at 4)"
 L10	12	r	M	GAPS8 2 Oct 2026 image pass: both blind passes read n over 2) (pass B: alternative r); 2) = r (C) elsewhere and the 25 Sept column read r; the hand's r
 L07	15	n	M	"GAPS8 2 Oct 2026 image pass: both blind passes read h over 6) (""del Kor-"", 25 Sept K); reconciliation: the hand's capital N of ""Nor-te""; 6) = n (C) elsewhere"
+L14	10	t	C	GAPS11 2 Oct 2026 native-resolution blind pair (body/image_pass/g11_settled.tsv): gloss t over )3 read by both passes and the look (key )3 is M on one settled occurrence)
+L09	0	a	M	GAPS11 2 Oct 2026 native-resolution blind pair (body/image_pass/g11_settled.tsv): group is an L-shaped looped symbol, not 20 (both passes); gloss A (pass A) or a flourish (pass B); a kept at M

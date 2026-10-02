@@ -5,7 +5,7 @@ L01	2	56	a	H
 L01	3	13	b	H
 L01	4	)6	y	H
 L01	5	60	en	H
-L01	6	23		M
+L01	6	23	23.	H
 L01	7	15	l	H
 L01	8	3	o	H
 L01	9	45	N	H
@@ -146,7 +146,7 @@ L08	15	26	e	M
 L08	16	28	a	H
 L08	17	56	v	H
 L08	18	)2		H
-L09	0	20	A	M
+L09	0	[L]	A	M
 L09	1	45	n	H
 L09	2	3)	d	H
 L09	3	60	a	H
@@ -165,7 +165,7 @@ L09	15	50	s	H
 L09	16	26	q	H
 L09	17	)	u	H
 L09	18	10	e	H
-L10	0	)2	p	M
+L10	0	[curl]	p	M
 L10	1	)0	u	H
 L10	2	32	e	H
 L10	3	4)	d	H
@@ -201,7 +201,7 @@ L11	16	3)	d	H
 L11	17	5	d	H
 L12	0	21	L	H
 L12	1	34	a	H
-L12	2	58	j	H
+L12	2	58	l	H
 L12	3	24	i	H
 L12	4	)1	o	H
 L12	5	10	r	H
@@ -244,7 +244,7 @@ L14	6	)2	r	H
 L14	7	36	e	H
 L14	8	2)	n	H
 L14	9	54	y	H
-L14	10	)3	o	H
+L14	10	)3	t	H
 L14	11	46	e	H
 L14	12	[square]	n	H
 L14	13	45	e	H

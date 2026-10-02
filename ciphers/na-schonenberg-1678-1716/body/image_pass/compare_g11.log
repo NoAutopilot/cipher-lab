@@ -1,0 +1,24 @@
+whole-row group agreement (exact string; any bracketed symbol = [SYM]): 180 of 181
+  L04 pos0 committed 18=g  A g  B g  AGREE
+  L04 pos17 committed 36=c  A e  B e  AGREE
+  L04 pos19 committed 45=n  A n  B n  AGREE
+  L05 pos1 committed )3=t  A e  B t (dark) over faint l  split
+  L06 pos12 committed 36=c  A c  B c  AGREE
+  L06 pos17 committed 50=s  A s  B s  AGREE
+  L07 pos15 committed 6)=n  A N  B M  split
+  L08 pos15 committed 26=e  A e  B e  AGREE
+  L09 pos0 committed 20=a  A A  B &/S-like flourish  split
+  L10 pos0 committed )2=NULL  A none  B none  AGREE
+  L10 pos1 committed )0=NULL  A none  B none (or 2?)  AGREE
+  L10 pos10 committed 36=c  A c  B e  split
+  L10 pos12 committed 2)=r  A r  B n  split
+  L10 pos2 committed 32=NULL  A none  B 2? (superscript)  split
+  L12 pos2 committed 58=i  A l  B l  AGREE
+  L14 pos10 committed )3=t  A t  B t  AGREE
+  L14 pos7 committed 36=c  A e  B e  AGREE
+gloss letter agreed by both passes: 11 of 17 starred letter positions
+KEY M predictions vs agreed gloss letter: REAL 8/11; shuffled predictions (20 seeds): mean 1.15, max 3, at or above real 0
+  control values: [1, 1, 3, 2, 1, 2, 2, 0, 1, 2, 2, 0, 0, 2, 1, 1, 0, 0, 1, 1]
+  DIFFER L04 pos17 code 36 pred=c read=e
+  DIFFER L12 pos2 code 58 pred=i read=l
+  DIFFER L14 pos7 code 36 pred=c read=e

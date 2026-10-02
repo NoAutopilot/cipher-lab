@@ -1,0 +1,19 @@
+line	pos	committed_group	passA_group	passB_group	passA_gloss	passB_gloss	look	class	group	gloss	letter	note
+L01	6	23	[blot]	[blot] 2?	23.	23.	-	CONFIRM-RECOPY	23	23.	n	both passes: the group is blotted and the gloss row carries the numeral 23. over it (the period decipherer's recopy of the group); group 23 taken from that recopy, value from key 23 = n (C)
+L04	0	18	18	18	g	g	-	CONFIRM	18	g	g	both passes 18 under gloss g; code 18 (single occurrence) raised to C, GAPS9 precedent
+L04	17	36	36	36	e	e	-	SPLIT-CODE	36	e	e	both passes gloss e over 36 (committed value c from sense, circunstancias); 36 gloss over its four occurrences now e, c, e, c/e split -- code stays M
+L04	19	45	25	25	n	n	45	HOLD	45	n	n	both passes read 25, the reconciliation look reads 45 (GAPS10: 45 / 95); first digit faint in every pass; gloss n clear in both; group kept 45 at conf M, value n unchanged
+L05	1	)3	)3	)3	e	t	t	SPLIT	)3	t	t	gloss split e/t (a faint l-stroke before the dark letter); look: crossed t, the same shape as L14 pos10; stays M
+L06	12	36	36	36	c	c	-	SPLIT-CODE	36	c	c	both gloss c; matches the committed value; code 36 stays M (gloss disagrees across its occurrences)
+L06	17	50	50	50	s	s	-	CONFIRM	50	s	s	both passes s (as GAPS7's two); exception s raised to C
+L07	15	6)	6)	6)	N	M	-	SPLIT	6)	-	n	gloss capital N or M (start of Nor/Mor); stays M
+L08	15	26	[2b-ligature]	[22-large]	e	e	-	SPLIT-GROUP	26	e	e	retraced group read 26/2b by A and 22 (could be 26) by B; gloss e both; stays M
+L09	0	20	[L-symbol]	[L-loop symbol]	A	flourish	-	CHANGE-GROUP	[L]	A?	a	both passes (and both GAPS10 passes): an L-shaped looped symbol, not 20; group -> [L], value a kept by exception at M (gloss A or flourish)
+L10	0	)2	[tilde-symbol]	[curl symbol]	none	none	-	CHANGE-GROUP	[curl]	-	NULL	both passes (and GAPS10): a curl/tilde symbol with a dot in its loop, not )2; no gloss letter; NULL kept at M
+L10	1	)0	)0	)0	none	none (or 2?)	-	SPLIT	)0	-	NULL	a pale superscript 2 sits above between pos1 and pos2; NULL stays M
+L10	2	32	32	32	none	2? (superscript)	-	SPLIT	32	-	NULL	see pos1; NULL stays M
+L10	10	36	36	36	c	e	-	SPLIT	36	-	c	gloss c/e split (c and e are look-alikes in the gloss hand); stays M
+L10	12	2)	2)	2)	r	n	r	SPLIT	2)	-	r	gloss r/n split; look: hooked r form; stays M
+L12	2	58	58	58	l	l	l	CHANGE-GLOSS	58	l	l	both passes and the look: a tall looped l over 58 (committed gloss j); value i -> l at M (single occurrence; sense wanted c)
+L14	7	36	36	36	e	e	-	SPLIT-CODE	36	e	e	both gloss e (B: could be an open c); committed value c; code 36 stays M
+L14	10	)3	)3	)3	t	t	t	CONFIRM-GLOSS	)3	t	t	both passes and the look: crossed t over )3 (committed gloss column had o, a one-place slip: o is over 46); exception t at C
