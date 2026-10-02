@@ -1,4 +1,5 @@
 open
+Correspondence of John, Fourth Duke of Bedford (ed. Russell), vol. 1 (1842, archive.org india.history.resource.40863) and vol. 2 (1843, india.history.resource.40751) full-text-searched (be-api) by this worker on 2 Oct 2026 for "Yorke", "Mr. Yorke to the Duke of Bedford", "Paris, March", "March 8", "March 20", "1748-9", "Tobago", "Puyzieulx", "Albemarle", "Townsend": vol. 2 prints Bedford to Yorke of 16 Feb, 27 Feb, 13 Mar and 20 Mar 1748-9 and a private Yorke to Bedford of May 1749, but not this Yorke to Bedford of 8/20 Mar 1749 (no "Tobago"/"Puyzieulx"/"Paris, March" hit); absent.
 
 # Yorke to Bedford: Albemarle's appointment, the Townshend answer, and Tobago's return, partly in cipher — TNA SP 78/232/44
 
@@ -118,3 +119,45 @@ consolidated TNA batch, ASKS row 73).
 - M: check the note field of every item in SP 78/232 individually (not by keyword) for other cipher/decipher siblings -- tools/discovery_items.py, ~150 items, this file's own named next step.
 - S: search the Hardwicke Papers (1778, Joseph Yorke's father's collection) via archive.org/HathiTrust for this correspondence, not checked this pass.
 - S: full-text search the three already-fetched Bedford correspondence volumes for 'Albemarle' or 'Aix-la-Chapelle'; only 'Tobago'/'Puyzieulx' were tried so far.
+
+## Web and blog check (GF-A2-4, 2 Oct 2026)
+
+Queries (WebSearch, 2 Oct 2026 22:3x UTC), each with what came back:
+1. sender + recipient + date: `Joseph Yorke to Duke of Bedford Paris March 1749 Albemarle Townshend Tobago Saxe letter
+   cipher` -- only TNA catalogue pages (beta.nationalarchives.gov.uk C7340425 itself and siblings C7340422/429/434/436/
+   438/449/450/451): f.130 (15/26 Mar, "Cipher"), f.114, f.94. No third-party page.
+2. shelfmark + cipher: `"SP 78/232" cipher Yorke 1749` -- the same TNA catalogue pages plus C4539850; nothing else.
+3. distinctive phrase (the catalogue's own wording; no clear-text of the cipher exists): `"Tobago has been refused to
+   Saxe"` -- TNA C7340423/429/448 and unrelated Tobago history pages (Sloane letters, British History Online CSP
+   Colonial 1683, Britannica copies). Nothing on this letter beyond the catalogue.
+4. folder title: `Yorke Bedford Albemarle's appointment Townshend answer Tobago return partly in cipher 1749` -- TNA
+   catalogue pages only (incl. f.112 and f.175 Bedford to Yorke, "Part to be sent in cipher").
+5. Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Yorke Bedford 1749 cipher` -- blog category/archive pages,
+   no post on this letter.
+6. Cryptiana blog: `site:cryptiana.blogspot.com British diplomatic cipher 1749 Paris Yorke` -- no cryptiana result.
+7. Cipher Mysteries: `site:ciphermysteries.com Yorke Bedford 1749 State Papers France cipher` -- no ciphermysteries
+   result.
+The open web knows this letter only through TNA's own catalogue; no blog post, so no comment thread to read. No
+decipherment or plaintext found.
+
+## Premise check (GF-A2-4, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: none -- NOTES.md and REQUEST.md mention no decipherment, gloss or
+clear copy of f.103; the catalogue note is only "Partly in cipher." Not found.
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct
+2026), grep `Yorke|Albemarle|SP ?78/232|sp78`: cyphersolver mentions Yorke only as a name inside French/Dutch
+ciphers of The Hague 1755-56 (affry1757 key word "yorke", README line 51 Kauderbach); Aymeloglu only DECODE R9154 (BL
+Add MS 32256 f.67, 1721, "Mr. Frampton Yorke", a key, another man and decade). No file on SP 78/232. Aymeloglu cited,
+not copied. Not found.
+(c) Physical neighbours: Discovery API details read for the items on each side (2 Oct 2026, 5 requests): SP 78/232/42
+f.99 (Yorke to Bedford 4/15 Mar, no note), /43 f.101 (Bedford to Yorke 9/20 Mar, acknowledging), /44 f.103 (target,
+"Partly in cipher."), /45 f.105 (Reply to Townsend memorial, "Enclosed in f. 103. Copy." -- the enclosure, clear),
+/46 f.107 (Bedford to Yorke 13/24 Mar, "Part to be sent in cipher"). No neighbouring item is described as a
+decipherment of f.103; the leaves themselves are not digitised (`digitised: false`), so a decipherment written on
+f.103-104 itself cannot be ruled out until the page copy (REQUEST.md) arrives. Not found in the catalogue; leaf
+unreachable.
+(d) Recipient's side: Bedford is the recipient; his printed Correspondence (vols 1-2) full-text-searched this pass
+(line 2): it prints Bedford's own letters to Yorke of Feb-Mar 1749 and one Yorke private letter of May 1749, not this
+one. The Hardwicke-side papers (Joseph Yorke's letters to his father, the 1st Earl of Hardwicke) are
+not searched here -- a later step, not this gate pass. Not found in print.
+Result: nothing found that reads f.103's cipher.
