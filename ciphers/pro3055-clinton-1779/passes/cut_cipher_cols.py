@@ -14,7 +14,7 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
-IMG = os.path.join(ROOT, '..', 'images', 'h1649')
+IMG = os.environ.get('CLINTON_H1649_DIR') or os.path.join(ROOT, '..', 'images', 'h1649')  # env override: regen_images.sh
 INK = 150          # pixel darker than this counts as ink (microfilm positive, dark ink on grey)
 SCALE = 2
 QUALITY = 55

@@ -1,0 +1,46 @@
+# GAPS7-pro3055-clinton-1779, 2 Oct 2026: two blind Sonnet passes (p102_passA.tsv, p102_passB.tsv) on images/h1649/p102_lines/,
+# reconciled by the worker (one montage look at the 5 disputed crops). Words compared with raised-letter marks and punctuation set aside.
+# Margin crops miss some margin lines (B.146 p.54 transcript, "123 and 126 infra" partly): the margin is cross-reference only, no body token depends on it.
+crop	passA	passB	reconciled	grade	note
+p102_head_L01	102	102	102	H	passes agree (words)
+p102_text_L01	Congress and the Pensylvania assembly	Congress and the Pensylvania assembly	Congress and the Pensylvania assembly	H	passes agree (words)
+p102_text_L02	determined to make two incursions into	determined to make two incursions into	determined to make two incursions into	H	passes agree (words)
+p102_text_L03	the Indian Country the principle one	the Indian Country the principle one	the Indian Country the principle one	H	passes agree (words)
+p102_text_L04	under Major Genl. Potter will consist of	under Major Gen^l. Potter will consist of	under Major Gen^l. Potter will consist of	H	passes agree (words)
+p102_text_L05	four hundred continental Troops and	four hundred continental Troops and	four hundred continental Troops and	H	passes agree (words)
+p102_text_L06	six hundred Militia and Volunteers are	six hundred Militia and Volunteers are	six hundred Militia and Volunteers are	H	passes agree (words)
+p102_text_L07	or[?], to assemble at fort Munsey near the	o[?]7, to assemble at fort Munsey near the	to assemble at fort Munsey near the	H	first token in both passes ("or[?]," / "o[?]7,") is the end of the margin note "Vol. 107" running into the text crop (reconciliation look); dropped from the body
+p102_text_L08	West branch of Susquehanah the eighth of	West branch of Susquehanah the eighth of	West branch of Susquehanah the eighth of	H	passes agree (words)
+p102_text_L09	Octr[?] and to march from there to the	.. Oct^r. and to march from there to the	Oct^r. and to march from there to the	H	passes agree (words); [?] in one pass only, same word in both
+p102_text_L10	open of Peres Creek head and into the	open of Peres[?] Creek head and into the	open of Peres Creek head and into the	H	passes agree (words); [?] in one pass only, same word in both
+p102_text_L11	Seneca Country, the other, under the	Seneca Country the other, under the	Seneca Country the other, under the	H	passes agree (words)
+p102_text_L12	Command of General Irwin will consist	Command of General Irwin will consist	Command of General Irwin will consist	H	passes agree (words)
+p102_text_L13	of one thousand Men a very few of Whom	of one thousand Men a very few of Whom	of one thousand Men a very few of Whom	H	passes agree (words)
+p102_text_L14	are Continental will assemble at fort	are Continental will assemble at fort	are Continental will assemble at fort	H	passes agree (words)
+p102_text_L15	Pit early in October and march towards	Pit[?] early in October and march towards	Pit early in October and march towards	H	passes agree (words); [?] in one pass only, same word in both
+p102_text_L16	lake Erie. The principal Object is supposed	lake Erie. The principal Object is supposed	lake Erie. The principal Object is supposed	H	passes agree (words)
+p102_text_L17	to be against the Seneca Country and	to be against the Seneca Country and	to be against the Seneca Country and	H	passes agree (words)
+p102_text_L18	the Information given by several Prisoners	the Information given by several Prisoners	the Information given by several Prisoners	H	passes agree (words)
+p102_text_L19	who have escaped from thence have con.	who have escaped from thence have con.	who have escaped from thence have con.	H	passes agree (words)
+p102_text_L20	tributed much to forward the present	tributed much to forward the present	tributed much to forward the present	H	passes agree (words)
+p102_text_L21	Expedition - As there is a large force in	Expedition. As there is a large force in	Expedition. As there is a large force in	H	passes agree (words)
+p102_text_L22	Nova Scotia I have given Orders to Major	Nova Scotia I have given Orders to Major	Nova Scotia I have given Orders to Major	H	passes agree (words)
+p102_text_L23	General Paterson who commands there	General Paterson who commands there	General Paterson who commands there	H	passes agree (words)
+p102_text_L24	to furnish you with any Assistance	to furnish you with any Assistance	to furnish you with any Assistance	H	passes agree (words)
+p102_text_L25	You may require. -	You may require.	You may require.	H	passes agree (words)
+p102_text_L26	The French and Continentals under	The French and Continentals under	The French and Continentals under	H	passes agree (words)
+p102_text_L27	Genl. Washington are assembled at Ver.	Gen^l. Washington are assembled at Ver.	Gen^l. Washington are assembled at Ver.	H	passes agree (words)
+p102_text_L28	plank's Point.-	plank's Point.	plank's Point.	H	passes agree (words)
+p102_text_L29	Our Fleet here and the French mostly	Our Fleet here and the French mostly	Our Fleet here and the French mostly	H	passes agree (words)
+p102_text_L30	at Boston - repairing New York - Sept. 25th.	at Boston. repairing New York. Sept^r 25^th.	at Boston - repairing New York - Sept^r 25^th.	H	words agree; raised letters as B (reconciliation look)
+p102_text_L31	The L' Aigle of 44 guns Cpt[?]. Latouche and	The L^d. Aigle of 44 guns C^pt. Latouche and	The L' Aigle of 44 guns C^pt. Latouche and	H	B's "L^d." is L' on the crop; C^pt. raised (reconciliation look)
+p102_text_L32	a valuable Ship of 20 Guns with Bale[?]	a valuable Ship of 20 Guns with Bale	a valuable Ship of 20 Guns with Bale	H	passes agree (words); [?] in one pass only, same word in both
+p102_text_L33	Goods from France were lately taken	Goods from France were lately taken	Goods from France were lately taken	H	passes agree (words)
+p102_text_L34	in the Delaware. - (Signed)	in the Delaware. (Signed)	in the Delaware. (Signed)	H	passes agree (words)
+p102_margin_L01	fo[?] 98	fo 98[?]	fo 98	H	passes agree (words); [?] in one pass only, same word in both
+p102_margin_L02	See another copy / transcribed in	See another copy / transcribed in	See another copy / transcribed in	H	passes agree (words)
+p102_margin_L03	Do. in Q. 20, p. 384; / Do. from C.O.5, Vol. 107[?]	D^o. in Q. 20, p. 384; / D^o. from C.O.5, Vol. 10[?]	D^o. in Q. 20, p. 384; / D^o. from C.O.5, Vol. 107	H	107: A; the "07" spill on text_L07 confirms the third digit
+p102_margin_L04	p. 289; / Do. from R. I. Am.	p. 289; / D^o. from R. I. Am.	p. 289; / D^o. from R. I. Am.	H	passes agree (words)
+p102_margin_L05	MSS. Vol. 47[?], / Nos 13 & 14.	MSS. Vol. 4y[?], / N^os 13 & 14.	MSS. Vol. 47, / N^os. 13 & 14.	H	47 on the crop (the 7 has a long tail, B read 4y)
+p102_margin_L06	(For copies in / cypher, see pp. 123[?] and 126[?]	(For copies in / cypher, see pp.	(For copies in / cypher, see pp. 123 and 126	H	123 and 126 on the crop foot (A); B stopped at pp.
+p102_margin_L07	infra.)	infra.)	infra.)	H	passes agree (words)

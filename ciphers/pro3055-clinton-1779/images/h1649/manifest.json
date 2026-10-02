@@ -3,7 +3,7 @@
  "viewer": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/{image}",
  "fetched": "2 October 2026 (GAPS-pro3055-clinton-1779, account-4)",
  "fetch_method": "the viewer page lists every image's IIIF Image API 2 identifier in its #pvPageSelect options (saved to seq_to_iiif.tsv, all 1266); info.json and default.jpg at image-uab.canadiana.ca answer 403 to a plain request and 200 with a browser User-Agent plus a Referer header of the viewer page; one request at a time, 1.6 s apart",
- "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart",
+ "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart; GAPS7 2 Oct 2026: image-uab.canadiana.ca 3 (Image 829 full/max for the byte-identical regen test, Image 1183 at 1600 px and full/max), browser UA + Referer, 1.6 s apart",
  "rights": "LAC microfilm of BL manuscripts, 18th-century text; reel served openly by Canadiana",
  "files": [
   {
@@ -62,27 +62,33 @@
    "image": 827,
    "iiif_id": "c0930ns97130",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0930ns97130/full/max/0/default.jpg",
-   "bytes": 4110167,
+   "bytes": 3606872,
    "size": "6080x4056 (829: 5928x4056)",
-   "note": "reel page 184 = BL Add MS 21807 fo.159r, cipher of Clinton to Haldimand 6 July 1780 (HMC 2894), columns of figure pairs"
+   "note": "reel page 184 = BL Add MS 21807 fo.159r, cipher of Clinton to Haldimand 6 July 1780 (HMC 2894), columns of figure pairs",
+   "bytes_original": 4110167,
+   "note_gaps7": "re-encoded JPEG quality 70 at the same dimensions on 2 Oct 2026 (GAPS7); the URL returns the byte-identical original (img829 tested, sha256 b87f13f9...3765); regen_images.sh re-derives every crop from it"
   },
   {
    "file": "img828_full.jpg",
    "image": 828,
    "iiif_id": "c05d8nd4dd5c",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc05d8nd4dd5c/full/max/0/default.jpg",
-   "bytes": 4045321,
+   "bytes": 3555787,
    "size": "6080x4056 (829: 5928x4056)",
-   "note": "reel page 185 = fo.159v, end of the cipher, signature H C, N. York 6th July 1780, 'Cypher L. Initialled', fo.160 blank, fo.160v address, endorsement"
+   "note": "reel page 185 = fo.159v, end of the cipher, signature H C, N. York 6th July 1780, 'Cypher L. Initialled', fo.160 blank, fo.160v address, endorsement",
+   "bytes_original": 4045321,
+   "note_gaps7": "re-encoded JPEG quality 70 at the same dimensions on 2 Oct 2026 (GAPS7); the URL returns the byte-identical original (img829 tested, sha256 b87f13f9...3765); regen_images.sh re-derives every crop from it"
   },
   {
    "file": "img829_full.jpg",
    "image": 829,
    "iiif_id": "c01n7xm6rn4k",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc01n7xm6rn4k/full/max/0/default.jpg",
-   "bytes": 3806974,
+   "bytes": 3352273,
    "size": "6080x4056 (829: 5928x4056)",
-   "note": "reel page 186 = fo.161, the period decipherment in clear, 'I have received your dispatches', H C, 6th July, Copy, endorsements"
+   "note": "reel page 186 = fo.161, the period decipherment in clear, 'I have received your dispatches', H C, 6th July, Copy, endorsements",
+   "bytes_original": 3806974,
+   "note_gaps7": "re-encoded JPEG quality 70 at the same dimensions on 2 Oct 2026 (GAPS7); the URL returns the byte-identical original (img829 tested, sha256 b87f13f9...3765); regen_images.sh re-derives every crop from it"
   },
   {
    "file": "img1_w700.jpg",
@@ -133,13 +139,37 @@
    "bytes": 178250,
    "size": "1600x1177 (native 5512x4056 fetched to the session scratchpad for cropping, not committed)",
    "note": "fetched 2 Oct 2026 (GAPS6); opening B.148 pp.122-123 of Add MS 21808 with the LAC label strip (read: 'British Library, Haldimand Papers, Correspondence with Sir H. Clinton, Sir Guy Carleton and Other Officers at New York, n.d., 1782-1783, MG 21, Add. Mss. 21808, (B-148)'); p.123 = the cipher copy of Carleton to Haldimand 25 Sept 1782 (figure-pair table, pencil note 'See another copy (Differently arranged) on pp. 126-8 infra. (For de-coded copy, see p. 102 supra; also B. 146, p. 54)', clear words 'The L'Aigle of 44 Guns Capt. Latouche a valuable Ship of 20 Guns with bale goods from France were lately taken in'), calendared by Brymner under 26 Oct 1782 'Copies of letters in cypher. 123'; crops in p123_lines/, passes in passes/p123_pass*.txt, passes/p123_reconciled.tsv"
+  },
+  {
+   "file": "img1183_w1600.jpg",
+   "image": 1183,
+   "iiif_id": "c09882k4wb17",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc09882k4wb17/full/1600,/0/default.jpg",
+   "bytes": 188128,
+   "note": "GAPS7 2 Oct 2026: the opening B.148 pp.101-102 of BL Add MS 21808; p.102 (right) = the period decipherment of Carleton to Haldimand 25 Sept 1782 (Tomokiyo: 'decoded on f.102 (Image 1183)'); the full/max copy (5536x4056) was held in the session scratchpad for cropping, not committed; crops in p102_lines/"
   }
  ],
- "crops": "p186_text_region.jpg is a PIL crop of img829_full.jpg (box 1956,527,4090,3772 = the text block of page 186); p186_bottom_region.jpg its lower 915 px; p186_lines/ holds the tools/iiif_lines.py line crops (--distance 110 --prominence 40 on the text region, 15 bands; --distance 90 --prominence 10 on the bottom strip, 2 bands) with their own manifest.json and debug overlays",
+ "crops": "p186_text_region.jpg is a PIL crop of img829_full.jpg (box 1956,527,4090,3772 = the text block of page 186); p186_bottom_region.jpg its lower 915 px; p186_lines/ holds the tools/iiif_lines.py line crops (--distance 110 --prominence 40 on the text region, 15 bands; --distance 90 --prominence 10 on the bottom strip, 2 bands) with their own manifest.json and debug overlays -- GAPS7 2 Oct 2026: p186_text_region.jpg and p186_bottom_region.jpg deleted (uncited; regen_images.sh re-derives both byte-identically from the original img829 frame: text region = greyscale crop q90, bottom = lower 915 px of the saved region q90) -- GAPS7 2 Oct 2026: p102_lines/ holds tools/iiif_lines.py crops of Image 1183 full/max (not inverted): 34 text lines (--region 2470,600,1700,3260 --centres from a row ink profile, two interpolated at 2317 and 2585), 7 margin crops (--region 2060,620,440,1680, centres by eye, --lines-per-crop 2), 1 header crop; one --debug overlay",
  "shrink_log": [
   {
    "date": "2 Oct 2026 (GAPS6)",
    "action": "img825/826/830_w1520.jpg re-stored at 760 px; p186_lines/*_lines_debug.jpg (iiif_lines.py --debug overlays, uncited, regenerable by re-running the tool with --debug on p186_text_region.jpg / p186_bottom_region.jpg) deleted; to keep the folder under 30 MiB after adding img1199_w1600.jpg, img1205_w1600.jpg and p123_lines/"
+  },
+  {
+   "date": "2 Oct 2026 (GAPS7)",
+   "action": "AX2-SHRINK pattern: images_manifest_full.tsv (cited_by column) and regen_images.sh added; byte-identical regen tested on img829_full.jpg (refetch), p186_text_region.jpg, p186_bottom_region.jpg, p186_text_region_L01..L15 and all 28 p184/p185 column crops; img827-829_full.jpg re-encoded q70 at the same dimensions; the two uncited p186 region crops deleted; folder 31.25 -> 26.51 MB (decimal, du -sb)"
+  },
+  {
+   "date": "2 Oct 2026 (GAPS7, after the Image 1183 fetch)",
+   "action": "p102_lines/p102_text_lines_debug.jpg deleted (uncited overlay); images/stevens1888/*.jpg and images/hmc/*.jpg (16 printed-page scans, cited by directory) re-encoded JPEG q70 at the same dimensions; listed in images_manifest_full.tsv"
   }
+ ],
+ "native_for_crops": [
+  [
+   1183,
+   "c09882k4wb17",
+   "p102_lines",
+   false
+  ]
  ]
 }

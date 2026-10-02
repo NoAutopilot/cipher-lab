@@ -1,0 +1,28 @@
+# Cipher cells of B.148 p.123 (Image 1205) already on disk before GAPS7: S. Tomokiyo's f.123 extract (sources/cryptiana/web/haldimand.htm,
+# cached 26 Sept 2026; 23 pairs with his letters) and the GAPS6 first-column read (passes/p123_reconciled.tsv col1_pairs, 9 pairs, 8/8
+# agreeing with Tomokiyo after reconciliation). 'x' = the repeated first figure the encipherer omits (Tomokiyo's notation); line = 1778
+# title-page line, pos = character position (letters and &). kind: letter = a title-page cell; word = a 1782 word-code element
+# (Tomokiyo gives the word); head = an opening pair with no letter value in his table.
+idx	pair	line	pos	kind	tomokiyo	gaps6_col1
+1	3-4	3	4	head	d-?	3-4
+2	x16-31	16	31	letter	c	x16-31
+3	x16-32	16	32	letter	o	-32
+4	x16-15	16	15	letter	n	-15
+5	x16-40	16	40	letter	g	-40
+6	x16-20	16	20	letter	r	-20
+7	x16-3	16	3	letter	e	-3
+8	x16-35	16	35	letter	s	-35
+9	x16-35	16	35	letter	s	-35
+10	10-1	10	1	word	and	
+11	5-19	5	19	word	the	
+12	x16-34	16	34	letter	p	
+13	x16-3	16	3	letter	e	
+14	x16-15	16	15	letter	n	
+15	x16-35	16	35	letter	s	
+16	x16-27	16	27	letter	y	
+17	x16-8	16	8	letter	l	
+18	x9-16	9	16	letter	v	
+19	x9-19	9	19	letter	a	
+20	x9-27	9	27	letter	n	
+21	x9-24	9	24	letter	i	
+22	x9-19	9	19	letter	a	

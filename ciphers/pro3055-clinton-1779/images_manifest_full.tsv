@@ -1,0 +1,155 @@
+file	bytes_before_gaps7	source	cited_by	action_gaps7
+images/hmc/manifest.json	2666		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/hmc/v2_p153.jpg	511374	https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0165.jp2	dir NOTES.md:385	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/hmc/v2_p345.jpg	429040	https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0357.jp2	dir NOTES.md:385	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/hmc/v2_p348.jpg	452723	https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0360.jp2	dir NOTES.md:385	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/hmc/v2_p53.jpg	486005	https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0065.jp2	dir NOTES.md:385	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/hmc/v2_p532.jpg	445461	https://archive.org/download/reportonamerican02grea/reportonamerican02grea_jp2.zip/reportonamerican02grea_jp2%2Freportonamerican02grea_0544.jp2	dir NOTES.md:385	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/hmc/v3_p187.jpg	340069	https://archive.org/download/reportonamerica02dorcgoog/reportonamerica02dorcgoog_jp2.zip/reportonamerica02dorcgoog_jp2%2Freportonamerica02dorcgoog_0203.jp2	dir NOTES.md:385	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/armylist1778/manifest.json	2707		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/armylist1778/n12_native.jpg	833157	https://archive.org/download/listofgeneralfie00grea/page/n12.jpg	NOTES.md:677	kept
+images/armylist1778/lines/manifest.json	17470		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/img1199_w1600.jpg	179539	https://image-uab.canadiana.ca/iiif/2/69429%2Fc07940s87908/full/1600,/0/default.jpg	-	kept
+images/h1649/img1205_w1600.jpg	178250	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0ft8dg56944/full/1600,/0/default.jpg	-	kept
+images/h1649/img1266_w700.jpg	18269	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0k93134bm6j/full/1400,/0/default.jpg	-	kept
+images/h1649/img1_w700.jpg	27797	https://image-uab.canadiana.ca/iiif/2/69429%2Fc00z70w6xk23/full/1400,/0/default.jpg	-	kept
+images/h1649/img637_label_strip.jpg	19261	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0v11vf59f64/full/1400,/0/default.jpg	NOTES.md:707	kept
+images/h1649/img637_w700.jpg	21815	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0v11vf59f64/full/1400,/0/default.jpg	-	kept
+images/h1649/img825_w1520.jpg	55558	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0jm23c4hj81/full/1520,/0/default.jpg	-	kept
+images/h1649/img826_w1520.jpg	43767	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0dv1ck6vs52/full/1520,/0/default.jpg	-	kept
+images/h1649/img827_full.jpg	4110167	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0930ns97130/full/max/0/default.jpg	NOTES.md:619;passes/cut_cipher_cols.py:2	re-encoded JPEG q70 at the same dimensions (cited); original = the URL, byte-identical on refetch (img829 tested)
+images/h1649/img828_full.jpg	4045321	https://image-uab.canadiana.ca/iiif/2/69429%2Fc05d8nd4dd5c/full/max/0/default.jpg	NOTES.md:619;passes/cut_cipher_cols.py:2	re-encoded JPEG q70 at the same dimensions (cited); original = the URL, byte-identical on refetch (img829 tested)
+images/h1649/img829_full.jpg	3806974	https://image-uab.canadiana.ca/iiif/2/69429%2Fc01n7xm6rn4k/full/max/0/default.jpg	NOTES.md:611	re-encoded JPEG q70 at the same dimensions (cited); original = the URL, byte-identical on refetch (img829 tested)
+images/h1649/img830_w1520.jpg	52932	https://image-uab.canadiana.ca/iiif/2/69429%2Fc0ww76t94b4x/full/1520,/0/default.jpg	-	kept
+images/h1649/manifest.json	9921		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/p186_bottom_region.jpg	705404	crop of img829_full.jpg: see images/h1649/manifest.json crops	-	deleted (uncited; re-derived byte-identically from the original frame by regen_images.sh, tested)
+images/h1649/p186_text_region.jpg	2588238	crop of img829_full.jpg: see images/h1649/manifest.json crops	- (only its p186_lines crops are cited)	deleted (uncited; re-derived byte-identically from the original frame by regen_images.sh, tested)
+images/h1649/seq_to_iiif.tsv	109057		NOTES.md:609	kept
+images/h1649/p186_lines/manifest.json	6582		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/p186_lines/p186_bottom_L01.jpg	70171	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:17;passes/p186_passB.tsv:17	kept
+images/h1649/p186_lines/p186_bottom_L02.jpg	116715	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:18;passes/p186_passB.tsv:18	kept
+images/h1649/p186_lines/p186_text_region_L01.jpg	100799	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:2;passes/p186_passB.tsv:2	kept
+images/h1649/p186_lines/p186_text_region_L02.jpg	143873	crop: see images/h1649/p186_lines/manifest.json	AUDIT.md:81;passes/p186_passA.tsv:3;passes/p186_passB.tsv:3	kept
+images/h1649/p186_lines/p186_text_region_L03.jpg	148624	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:4;passes/p186_passB.tsv:4	kept
+images/h1649/p186_lines/p186_text_region_L04.jpg	120359	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:5;passes/p186_passB.tsv:5	kept
+images/h1649/p186_lines/p186_text_region_L05.jpg	129083	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:6;passes/p186_passB.tsv:6	kept
+images/h1649/p186_lines/p186_text_region_L06.jpg	117470	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:7;passes/p186_passB.tsv:7	kept
+images/h1649/p186_lines/p186_text_region_L07.jpg	84969	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:8;passes/p186_passB.tsv:8	kept
+images/h1649/p186_lines/p186_text_region_L08.jpg	79086	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:9;passes/p186_passB.tsv:9	kept
+images/h1649/p186_lines/p186_text_region_L09.jpg	90975	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:10;passes/p186_passB.tsv:10	kept
+images/h1649/p186_lines/p186_text_region_L10.jpg	91472	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:11;passes/p186_passB.tsv:11	kept
+images/h1649/p186_lines/p186_text_region_L11.jpg	81985	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:12;passes/p186_passB.tsv:12	kept
+images/h1649/p186_lines/p186_text_region_L12.jpg	88989	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:13;passes/p186_passB.tsv:13	kept
+images/h1649/p186_lines/p186_text_region_L13.jpg	87406	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:14;passes/p186_passB.tsv:14	kept
+images/h1649/p186_lines/p186_text_region_L14.jpg	83760	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:15;passes/p186_passB.tsv:15	kept
+images/h1649/p186_lines/p186_text_region_L15.jpg	91808	crop: see images/h1649/p186_lines/manifest.json	passes/p186_passA.tsv:16;passes/p186_passB.tsv:16	kept
+images/h1649/p185_cols/manifest.json	2974		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/p185_cols/p185_c1a.jpg	192716	crop: see images/h1649/p185_cols/manifest.json	passes/build_reconciled.py:30;passes/cipher_disagreements.tsv:18;passes/cipher_draft.tsv:231	kept
+images/h1649/p185_cols/p185_c1b.jpg	168793	crop: see images/h1649/p185_cols/manifest.json	passes/build_reconciled.py:25;passes/cipher_disagreements.tsv:19;passes/cipher_draft.tsv:248	kept
+images/h1649/p185_cols/p185_c2a.jpg	82859	crop: see images/h1649/p185_cols/manifest.json	passes/build_reconciled.py:26;passes/cipher_disagreements.tsv:20;passes/cipher_draft.tsv:260	kept
+images/h1649/p185_cols/p185_c2b.jpg	99470	crop: see images/h1649/p185_cols/manifest.json	passes/cipher_draft.tsv:274;passes/cipher_passA.tsv:263;passes/cipher_passB.tsv:274	kept
+images/h1649/p185_cols/p185_c3a.jpg	86500	crop: see images/h1649/p185_cols/manifest.json	passes/check_2894.json:26;passes/cipher_draft.tsv:287;passes/cipher_passA.tsv:276	kept
+images/h1649/p185_cols/p185_c3b.jpg	104036	crop: see images/h1649/p185_cols/manifest.json	passes/cipher_draft.tsv:301;passes/cipher_passA.tsv:290;passes/cipher_passB.tsv:301	kept
+images/h1649/p185_cols/p185_c4a.jpg	83638	crop: see images/h1649/p185_cols/manifest.json	passes/build_reconciled.py:27;passes/cipher_disagreements.tsv:24;passes/cipher_draft.tsv:314	kept
+images/h1649/p185_cols/p185_c4b.jpg	97571	crop: see images/h1649/p185_cols/manifest.json	passes/cipher_draft.tsv:328;passes/cipher_passA.tsv:317;passes/cipher_passB.tsv:328	kept
+images/h1649/p185_cols/p185_c5a.jpg	97265	crop: see images/h1649/p185_cols/manifest.json	passes/build_reconciled.py:28;passes/cipher_disagreements.tsv:25;passes/cipher_draft.tsv:341	kept
+images/h1649/p185_cols/p185_c5b.jpg	92626	crop: see images/h1649/p185_cols/manifest.json	passes/cipher_draft.tsv:356;passes/cipher_passA.tsv:344;passes/cipher_passB.tsv:356	kept
+images/h1649/p185_cols/p185_c6a.jpg	201329	crop: see images/h1649/p185_cols/manifest.json	passes/cipher_draft.tsv:368;passes/cipher_passA.tsv:356;passes/cipher_passB.tsv:368	kept
+images/h1649/p185_cols/p185_c6b.jpg	185808	crop: see images/h1649/p185_cols/manifest.json	passes/build_reconciled.py:29;passes/cipher_disagreements.tsv:27;passes/cipher_draft.tsv:376	kept
+images/h1649/p123_lines/manifest.json	9074		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/p123_lines/p122_close_L01.jpg	41169	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:24;passes/p123_passB.txt:23	kept
+images/h1649/p123_lines/p122_close_L02.jpg	63939	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:25;passes/p123_passB.txt:24	kept
+images/h1649/p123_lines/p122_head_L01.jpg	58843	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:22;passes/p123_passB.txt:22	kept
+images/h1649/p123_lines/p123_binding_label.jpg	16099	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:29;passes/p123_passB.txt:28	kept
+images/h1649/p123_lines/p123_clearcol_L01.jpg	21594	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:14;passes/p123_passB.txt:14	kept
+images/h1649/p123_lines/p123_clearcol_L02.jpg	20715	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:15;passes/p123_passB.txt:15	kept
+images/h1649/p123_lines/p123_clearcol_L03.jpg	20499	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:16;passes/p123_passB.txt:16	kept
+images/h1649/p123_lines/p123_clearcol_L04.jpg	19345	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:17;passes/p123_passB.txt:17	kept
+images/h1649/p123_lines/p123_clearcol_L05.jpg	17311	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:18;passes/p123_passB.txt:18	kept
+images/h1649/p123_lines/p123_foot_L01.jpg	31480	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:20;passes/p123_passB.txt:20	kept
+images/h1649/p123_lines/p123_head_L01.jpg	14296	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:3;passes/p123_passB.txt:3	kept
+images/h1649/p123_lines/p123_head_L02.jpg	21861	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:4;passes/p123_passB.txt:4	kept
+images/h1649/p123_lines/p123_head_L03.jpg	27436	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:5;passes/p123_passB.txt:5	kept
+images/h1649/p123_lines/p123_head_L04.jpg	15021	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:6;passes/p123_passB.txt:6	kept
+images/h1649/p123_lines/p123_lac_label.jpg	69443	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:27;passes/p123_passB.txt:26	kept
+images/h1649/p123_lines/p123_margin_L01.jpg	50578	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:8;passes/p123_passB.txt:8	kept
+images/h1649/p123_lines/p123_margin_L02.jpg	24642	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:9;passes/p123_passB.txt:9	kept
+images/h1649/p123_lines/p123_margin_L03.jpg	29646	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:10;passes/p123_passB.txt:10	kept
+images/h1649/p123_lines/p123_margin_L04.jpg	28573	crop: see images/h1649/p123_lines/manifest.json	passes/p123_passA.txt:11;passes/p123_passB.txt:11	kept
+images/h1649/p184_cols/manifest.json	3938		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/p184_cols/p184_c1a.jpg	225514	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:16;passes/cipher_disagreements.tsv:2;passes/cipher_draft.tsv:2	kept
+images/h1649/p184_cols/p184_c1b.jpg	290061	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:19;passes/cipher_passA.tsv:19;passes/cipher_passB.tsv:19	kept
+images/h1649/p184_cols/p184_c2a.jpg	70428	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:38;passes/cipher_passA.tsv:38;passes/cipher_passB.tsv:38	kept
+images/h1649/p184_cols/p184_c2b.jpg	88370	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:53;passes/cipher_passA.tsv:53;passes/cipher_passB.tsv:53	kept
+images/h1649/p184_cols/p184_c3a.jpg	84494	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:18;passes/cipher_disagreements.tsv:4;passes/cipher_draft.tsv:65	kept
+images/h1649/p184_cols/p184_c3b.jpg	107171	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:80;passes/cipher_passA.tsv:79;passes/cipher_passB.tsv:80	kept
+images/h1649/p184_cols/p184_c4a.jpg	69213	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:92;passes/cipher_passA.tsv:91;passes/cipher_passB.tsv:92	kept
+images/h1649/p184_cols/p184_c4b.jpg	92014	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:19;passes/cipher_disagreements.tsv:6;passes/cipher_draft.tsv:106	kept
+images/h1649/p184_cols/p184_c5a.jpg	84600	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:118;passes/cipher_passA.tsv:116;passes/cipher_passB.tsv:118	kept
+images/h1649/p184_cols/p184_c5b.jpg	106636	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:133;passes/cipher_passA.tsv:131;passes/cipher_passB.tsv:133	kept
+images/h1649/p184_cols/p184_c6a.jpg	83168	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:20;passes/cipher_disagreements.tsv:8;passes/cipher_draft.tsv:146	kept
+images/h1649/p184_cols/p184_c6b.jpg	108245	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:21;passes/cipher_disagreements.tsv:9;passes/cipher_draft.tsv:160	kept
+images/h1649/p184_cols/p184_c7a.jpg	81463	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:174;passes/cipher_passA.tsv:172;passes/cipher_passB.tsv:174	kept
+images/h1649/p184_cols/p184_c7b.jpg	104477	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:22;passes/check_2894.json:21;passes/cipher_disagreements.tsv:10	kept
+images/h1649/p184_cols/p184_c8a.jpg	90656	crop: see images/h1649/p184_cols/manifest.json	passes/cipher_draft.tsv:202;passes/cipher_passA.tsv:199;passes/cipher_passB.tsv:202	kept
+images/h1649/p184_cols/p184_c8b.jpg	117796	crop: see images/h1649/p184_cols/manifest.json	passes/build_reconciled.py:23;passes/cipher_disagreements.tsv:12;passes/cipher_draft.tsv:218	kept
+images/stevens1888/manifest.json	9276		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/stevens1888/p127.jpg	471501	crop: see images/stevens1888/manifest.json	NOTES.md:246	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p128.jpg	462297	crop: see images/stevens1888/manifest.json	NOTES.md:246	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p146.jpg	499982	crop: see images/stevens1888/manifest.json	NOTES.md:318	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p147.jpg	452174	crop: see images/stevens1888/manifest.json	dir NOTES.md:238	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p156.jpg	546638	crop: see images/stevens1888/manifest.json	dir NOTES.md:238	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p157.jpg	550730	crop: see images/stevens1888/manifest.json	dir NOTES.md:238	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p172.jpg	541442	crop: see images/stevens1888/manifest.json	dir NOTES.md:238	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p173.jpg	509640	crop: see images/stevens1888/manifest.json	dir NOTES.md:238	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p174.jpg	485561	crop: see images/stevens1888/manifest.json	NOTES.md:246	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/stevens1888/p175.jpg	473853	crop: see images/stevens1888/manifest.json	NOTES.md:246	re-encoded JPEG q70 at the same dimensions (cited by directory); regen_images.sh re-converts it from the archive.org jp2 (page, not bytes)
+images/armylist/manifest.json	2900		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/armylist/metadata.json	47594	https://archive.org/metadata/listofgeneralfie00grea_0	NOTES.md:646	kept
+images/armylist/n4_w1600.jpg	652950	https://archive.org/download/listofgeneralfie00grea_0/page/n4.jpg	NOTES.md:685	kept
+images/armylist/lines/manifest.json	10246		NOTES.md:318;passes/cut_cipher_cols.py:77	kept
+images/h1649/p102_lines/manifest.json	(new GAPS7) 30511		passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_head_L01.jpg	(new GAPS7) 59850	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L01.jpg	(new GAPS7) 29342	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L02.jpg	(new GAPS7) 28169	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L03.jpg	(new GAPS7) 30901	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L04.jpg	(new GAPS7) 28277	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L05.jpg	(new GAPS7) 35483	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L06.jpg	(new GAPS7) 35099	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_margin_L07.jpg	(new GAPS7) 26523	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L01.jpg	(new GAPS7) 46169	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L02.jpg	(new GAPS7) 44310	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L03.jpg	(new GAPS7) 44621	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L04.jpg	(new GAPS7) 47448	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L05.jpg	(new GAPS7) 49040	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L06.jpg	(new GAPS7) 48663	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L07.jpg	(new GAPS7) 46075	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L08.jpg	(new GAPS7) 46048	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L09.jpg	(new GAPS7) 45606	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L10.jpg	(new GAPS7) 46481	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L11.jpg	(new GAPS7) 50231	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L12.jpg	(new GAPS7) 47993	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L13.jpg	(new GAPS7) 49955	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L14.jpg	(new GAPS7) 49649	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L15.jpg	(new GAPS7) 48293	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L16.jpg	(new GAPS7) 48401	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L17.jpg	(new GAPS7) 48301	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L18.jpg	(new GAPS7) 47752	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L19.jpg	(new GAPS7) 46957	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L20.jpg	(new GAPS7) 46828	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L21.jpg	(new GAPS7) 46426	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L22.jpg	(new GAPS7) 44913	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L23.jpg	(new GAPS7) 47943	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L24.jpg	(new GAPS7) 45834	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L25.jpg	(new GAPS7) 45044	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L26.jpg	(new GAPS7) 46712	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L27.jpg	(new GAPS7) 46534	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L28.jpg	(new GAPS7) 43083	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L29.jpg	(new GAPS7) 44833	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L30.jpg	(new GAPS7) 44790	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L31.jpg	(new GAPS7) 41873	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L32.jpg	(new GAPS7) 40756	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L33.jpg	(new GAPS7) 43370	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/p102_lines/p102_text_L34.jpg	(new GAPS7) 42982	crop: see images/h1649/p102_lines/manifest.json	passes/p102_* (GAPS7)	added GAPS7
+images/h1649/img1183_w1600.jpg	(new GAPS7) 188128	https://image-uab.canadiana.ca/iiif/2/69429%2Fc09882k4wb17/full/1600,/0/default.jpg	NOTES.md GAPS7	added GAPS7
+images/h1649/p102_lines/p102_text_lines_debug.jpg	(new GAPS7) 913181	tools/iiif_lines.py --debug	-	deleted (uncited overlay; regenerable with --debug)

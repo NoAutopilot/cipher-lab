@@ -1,0 +1,32 @@
+{
+ "source": "H-1649 Image 1183 (B.148 p.102), full/max 5536x4056, crops images/h1649/p102_lines/",
+ "body_lines": 34,
+ "pass_agreement": "31/34 body lines and 214/217 words identical between the two blind passes (raised-letter marks and punctuation set aside); the 3 differing words settled at reconciliation",
+ "grades_body_words": {
+  "H": 218,
+  "M": 0
+ },
+ "grades_margin_header_tokens": {
+  "H": 43,
+  "M": 0
+ },
+ "key_check": {
+  "letter_cells": 19,
+  "page_letter_equals_decipherment_letter": 19,
+  "shuffled_plaintext_control": {
+   "seeds": 1000,
+   "mean": 1.252,
+   "p95": 3,
+   "max": 5
+  },
+  "tomokiyo_letters_equal_decipherment": 19,
+  "word_code_elements_equal_decipherment_words": "2/2",
+  "head_pair_3-4": "no letter value (line 3 has 1 character); Tomokiyo d-?; the decipherment starts at Congress",
+  "grade_C_cells": 21
+ },
+ "same_key_as_2894": {
+  "distinct_letter_cells": 14,
+  "also_in_key_2894": 10,
+  "agree": 10
+ }
+}
