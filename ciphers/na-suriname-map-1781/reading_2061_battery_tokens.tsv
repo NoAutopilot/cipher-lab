@@ -172,7 +172,7 @@ line	pos	sign	value	grade
 2061_bat_L08	42	o	r	M
 2061_bat_L08	43	9	?	U
 2061_bat_L08	44	6	s	M
-2061_bat_L08	45	y	s	M
+2061_bat_L08	45	v	?	U
 2061_bat_L08	46	3	?	U
 2061_bat_L08	47	g	g	M
 2061_bat_L08	48	[delta]	a	M
@@ -181,7 +181,7 @@ line	pos	sign	value	grade
 2061_bat_L08	51	7	e	M
 2061_bat_L09	1	[ladder-III]	?	U
 2061_bat_L09	2	[ij]	?	U
-2061_bat_L09	3	y	s	M
+2061_bat_L09	3	[y-dots]	?	U
 2061_bat_L09	4	[delta]	a	M
 2061_bat_L09	5	9	?	U
 2061_bat_L09	6	x	?	U

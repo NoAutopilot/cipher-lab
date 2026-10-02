@@ -236,7 +236,7 @@ line	pos	sign	conf	note	word
 2061_bat_L08	42	o	H		4
 2061_bat_L08	43	9	H		4
 2061_bat_L08	44	6	M	D30: A 6 / B b -> A (M)	4
-2061_bat_L08	45	y	M	D31: A y / B v -> A (M) plain y	5
+2061_bat_L08	45	v	M	D31: A y / B v -> A (M) plain y; GAPS12 image check: same sign as 2061 v (L08 pos50) and 2007A L2 v of glossed v3=de, not 2007A key y (0.80)	5
 2061_bat_L08	46	3	H		5
 2061_bat_L08	47	g	H		6
 2061_bat_L08	48	[delta]	H		6
@@ -246,7 +246,7 @@ line	pos	sign	conf	note	word
 2061_bat_L09	0	w:d	H		0
 2061_bat_L09	1	[ladder-III]	H		0
 2061_bat_L09	2	[ij]	M	D33: A [ij] / B [h-loop-y] -> A (M)	0
-2061_bat_L09	3	y	M	D34: A y / B j -> A (M)	0
+2061_bat_L09	3	[y-dots]	M	D34: A y / B j -> A (M); GAPS12 image check: same sign as 2007A L2 two-dot long-descender y, not 2007A key y (0.85)	0
 2061_bat_L09	4	[delta]	H		0
 2061_bat_L09	5	9	H		0
 2061_bat_L09	6	x	H		0

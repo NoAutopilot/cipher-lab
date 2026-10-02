@@ -58,6 +58,12 @@ def battery_plain(out):
     for o in out:
         if o[1] == '0': o[1] = 'o'
 out = [list(o) for o in out]
+# GAPS12 (2 Oct 2026): sign codes settled by a blind image comparison (one vision call, unlabelled tiles vs 2007A's key
+# y and look-alikes; NOTES.md "GAPS12"). Applied after positions are counted; conf stays M.
+IMAGE_SETTLED = {
+    ('2061_bat_L08', 45): ('v', 'GAPS12 image check: same sign as 2061 v (L08 pos50) and 2007A L2 v of glossed v3=de, not 2007A key y (0.80)'),
+    ('2061_bat_L09', 3): ('[y-dots]', 'GAPS12 image check: same sign as 2007A L2 two-dot long-descender y, not 2007A key y (0.85)'),
+}
 battery_plain(out)
 # word index, plain marking
 rows = []; word = 0; prev = None
@@ -87,6 +93,8 @@ with open(os.path.join(here, 'ciphertext_2061_battery.tsv'), 'w') as f:
     pos = {}
     for line, s, conf, note, w in rows:
         p = pos.get(line, 0); pos[line] = p + 1
+        if (line, p) in IMAGE_SETTLED:
+            s, extra = IMAGE_SETTLED[(line, p)]; note = f'{note}; {extra}'
         f.write(f'{line}\t{p}\t{s}\t{conf}\t{note}\t{w}\n')
 print(len(rows), 'rows;', sum(1 for r in rows if not r[1].startswith('w:')), 'cipher signs;',
       sum(1 for r in rows if not r[1].startswith('w:') and r[2] == 'H'), 'H')
