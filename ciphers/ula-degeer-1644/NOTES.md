@@ -86,3 +86,47 @@ Local `sources/cryptiana` grep for "geer" last done 24 Sept 2026 (no hit).
 - (d) recipient's side: Axel Oxenstierna's own letters/answers (Axel Oxenstiernas skrifter och brev, Riksarkivet series) were not reachable online; De Geer's 17 Aug 1644 advertisement to Oxenstierna may be printed there. Unreachable.
 
 Request counts: archive.org 3 (advancedsearch), data.riksarkivet.se 2 (one SSL reset, one retry), WebSearch 7. Cheapest next step: a worker to look for Axel Oxenstiernas skrifter och brev volumes on a full-text host (runeberg, Google Books API snippets) for "chiffer" with De Geer, ~$1.
+
+## Oxenstierna edition full-text search (A2-ULA, 2 Oct 2026)
+
+Intake gate pasted before work: `ula-degeer-1644: blocked (line 3) -- already terminal, nothing to gate` (exit 0).
+The target has no Remaining gaps / Escalation sections (status `blocked`), so this step goes under this dated heading only.
+
+**What was wrong in the earlier search.** The 2 Oct check-solved sweep reported "0 hits on IA `title:(Axel Oxenstiernas skrifter och brev)`".
+The edition's printed title is *Rikskansleren Axel Oxenstiernas skrifter och brefvexling*. Searching IA for `title:(Oxenstiernas) AND title:(brefvexling)`
+returns 8 Google-scanned volumes: rikskanslerenax00akadgoog, 01akadgoog, 02akadgoog, 03akadgoog, 00styfgoog, 01styfgoog, 00palagoog and 01palagoog.
+All 8 `_djvu.txt` OCR files were fetched with HTTP 200 and grepped locally for `de *geer` and for `chiff|ziff|cif(f)r|cyph|ciph|siffr`.
+
+**Hit, AOSB II:11 (1905).** The volume is "Senare afdelningen, elfte bandet: Carl Bonde och Louis De Geer m. fl. bref angående bergverk, handel och finanser", identifier
+`rikskanslerenax03akadgoog`. It prints "Louis de Geers bref 1621-1645" to the Chancellor from p. 653. The preface says that only the war years 1644-1645 involve letters on direct
+commission. The 1644-45 letters printed there are: no. 15 (OCR reads "16"), Norrköping, 6 Jan 1644; no. 16, Haag, 28 Mar 1644 (autograph, Dutch); no. 17, Amsterdam, 4/14 May 1644; no. 18,
+Amsterdam, 24 May 1644; no. 19, Amsterdam, 28 Aug 1644; no. 20, Göteborg, 14/24 Sept 1644; no. 21, Stockholm, 10 Jan 1645 (heading OCR "1646", year not checked on the image); no. 23, Stockholm, 28 Apr 1645; no. 24, Stockholm, 30 Oct 1645.
+- **Cipher evidence, p. 673, letter no. 16 (Haag, 28 Mar 1644).** The text reads "...ende daer naer eerst partie kiesen, ende 171\*) niet achten." The editors' footnote on p. 673
+  reads: "\*) Tydligen chiffer. Siffran återges i åtskilliga chifferklaver från denna tid med »Haag.»" ("Evidently cipher. Several cipher keys of this period render the number
+  as 'Haag'.") So De Geer used a numbered code (a nomenclator-style name code) in at least one 1644 letter to Axel Oxenstierna. The 1905 editors identified the value from
+  other period keys, not from De Geer's own key.
+- **No other cipher token.** In the De Geer section (OCR lines about 34480-36300), grepping for two- and three-digit numerals that are not years, sums, or dates found no other
+  code group, and the cipher-word grep found nothing else. The printed 1644-45 letters are otherwise in clear (German or Dutch). One caveat: the edition prints what survives
+  in the Oxenstierna collection (Riksarkivet), and its notes name letters that are "not extant" (p. 672, the letter of 16/26 Feb 1644) or that apparently never arrived (p. 678).
+  A letter in cipher may therefore be missing from the print.
+- **The 17 Aug 1644 "advertisement".** The ULA catalogue note names "Louis de Geers advertisement insänt till Axel Oxenstierna 17/8 1644". No item with that date is printed
+  in II:11. The nearest is no. 19, Amsterdam, 28 Aug 1644, which the p. 679 note calls "possibly the copy printed here as no. 19". The grep found no "advertis" string in the volume.
+- **Other volumes.** De Geer is mentioned in II:1 (00styfgoog), II:8 (00palagoog: notes on "Louis de Geers flotta", Aug 1644), II:10 (01palagoog) and the first series
+  (00akadgoog). None has a cipher word within 4 lines of a De Geer mention.
+- **Google Books API** (keyed, `country=US`, 2 queries). `"de Geer" chiffer 1644` returned the same II:11 page as snippet ("...DGeer. \*\*) 17. Amsterdam den 4/14 Maj 1644 ...
+  chiffer. Siffra..."), from both the 1905 volume and a duplicate record. It also listed *Bijdragen en mededelingen van het Historisch Genootschap* (1908), which prints
+  "No. 48. Louis De Geer aan Johan Axelsson Oxenstierna ... Amsterdam 13/23 J[...]". That is a different correspondent and was not opened. `"Louis de Geer" chiffernyckel` returned 0 results.
+- **runeberg.org.** One guessed path (`/aosb/`) returned 404. Runeberg was not searched beyond that path, so it is untested, not a negative.
+
+**What this settles and what it does not.** (1) The Oxenstierna edition can be read online. The status-line reason "no edition of ... Axel Oxenstiernas skrifter och brev was
+reachable" came from a search with the wrong title, so it no longer holds for that edition. Dahlgren 1923 and the ULA folder itself remain unread and are still not digitised.
+(2) There is now printed evidence, at grade H as quoted, that De Geer used a numeric code to Oxenstierna in March 1644, in the same months the ULA folder covers. This makes
+it more likely that the "Chiffernyckel" in SE/ULA/13506/1/I/45 is the key to his 1644-45 correspondence. Whether it actually is that key remains untested. (3) The printed
+letters give only one code group ("171" = Haag, editors' identification from other keys). That is far too little for cryptanalysis, and no ciphertext is on disk (rule 2).
+The target still depends on the ULA folder, or on unprinted De Geer letters in Riksarkivet's Oxenstierna collection (series not looked up).
+
+Request counts: archive.org 10 (2 advancedsearch, 8 djvu.txt), www.googleapis.com 2, runeberg.org 1. No vision calls. Not found in: AOSB II:1, II:2, II:5, II:8, II:10, the first-series
+volumes on IA (no cipher word near De Geer), or runeberg (one path tried).
+
+Next cheapest step: check whether the folder's key matches code 171 = Haag. This needs the folder, so it stays with REQUEST.md (copy order). In parallel, a worker could
+look up the Riksarkivet Oxenstierna collection record for "Louis de Geer" letters 1644-45 (Sök API, about $0.5) to see whether that series is digitised. Not done here, because it is outside this step's brief.
