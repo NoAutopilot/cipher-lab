@@ -153,6 +153,34 @@ no.60 sign atlas, ~USD 8), esp318-sicilia-1503 canvases 453-455, decode-2754 cri
 the verifiers account-3 asked for (matignon f143r, na-schonenberg L19, nevers-birago) wait for a reading that clears its
 judge and shuffled-target check, which none has yet.
 
+**Check-in 1 (06:0x UTC 2 Oct, parent 2):** wave 1 done, 11 of 11 posted done lines, ledgered (USD 82.4; 9 of 11 over
+cap, one at 3.3x -- the caps were Sonnet-era estimates applied to Fable sessions; measured floor about USD 4-5 for a disk-only
+gaps step, about USD 1.5-3.5 per Fable vision call; RETRO-account4-1 spawned to size this from the rows). Moves:
+nevers-birago-fr3251-1572 T42 g->m (S), whole f.178v z 4.84 rank 1/201, judge -1.032 vs -0.905 still FAIL, shuffled-target
+0/20; intercepted-royalist-1646 key129 now C 33 H 24 M 6 I 3 after Evelyn iv 178-179 (32/65 rows confirmed vs shuffled
+mean 0.70; NEAR.md row and status.json near entry added, PROGRESS firm 162/735); pro3055-clinton-1779 1761 Army List
+confirms 14/25 key lines, grades H 264 C 18 I 23 M 10, the omitted clause "Admiral A will be reinforced [in] proportion"
+ready for a verifier with the preposition open; mornington-1798 D623/24 (7 Jun 1799) is printed in Martin Vol.2 No. XV
+pp.35-43 (text known, C), D623/35 has no printed witness, LOCAL-QUEUE L32; na-suriname-map-1781 crib_2038_legend.tsv 40
+rows (H 24 M 16) and plain Purmerent legends found on 4.VEL 2042/2045A; na-schonenberg-1678-1716 body L01-L14 Spanish
+sense C 115 M 120 I 18, judge FAIL but the leaf's own gloss FAILs too (judge cannot decide at this N); na-janssens L31
+(FranceArchives/AN from the desk); moray-wood-1568 Aymeloglu transcription on disk (S 119 M 14 I 1, --check 0), DECODE
+login worked but the fetch URLs were relative (0 images); fr4715-vieuville-pool no.44 clear French 630 words, 27 cipher
+tokens, 14 word-codes at slot class I; fr4687-paleologue-nevers blocked on LOCAL-QUEUE L33 (Ferrari 1999 is a 16-page essay
+in the Bazzotti 1999 catalogue, on no cloud route). Standby: account-3's newest line 04:44 UTC (77 min), no action.
+Spawned 06:06 UTC: CLOSER-5 (session_014SXS7AKCDCu7qpNqbYQnCr), GAPS2-intercepted-royalist-1646 (Evelyn image pass, cap 5;
+session_019P7VGLbDTcFfgiAicMnnJk), GAPS4-nevers-birago (f.178r foot + f.179r head, cap 7; session_019K3ZAHo1v85gdLhSvKk4Nm),
+GAPS4-na-suriname (2042 a-l crib, cap 6; session_01GgYCnBmz7CTLo9ckgEZ9Jq), GAPS4-pro3055-clinton (1778 title page via
+Google Books/HathiTrust, cap 5; session_01MPssPmGyXUeeGapSEywtC5), GAPS3-mornington (crib extraction from OCR + ASKS 12
+amendment, cap 5; session_019J5DkfNsXZAgbp2VRCpW5S), GAPS3-moray-wood (--guess-fullsize fetch, one login, cap 6;
+session_01FS4sjLBMSRBzWtvrz76XNq), GAPS5-na-schonenberg (es18 corpus, cap 6; session_01NJdbbEqZwHbrZ1i57XxTRQ),
+GAPS5-na-janssens (leaves 186-215 re-inventory on contact sheets, cap 7; session_013aBudv4C5u79CZYDjzVMzW),
+LIKELY-6-fr3986-nevers-revol-1593 (gate, then the no.60 sign atlas, cap 12; session_01JK2W3H3Pu8P9Y9DftjnerN),
+RETRO-account4-1 (cap 8; session_01Xznr5oo8hFLzbWNPHd2w7V). Caps total USD 70. Check-in 2 armed for 06:47 UTC
+(trig_01RR3PDMRCi1dGMMp7LyyBMU). Held: fr4715 no.37 f.60 (~USD 9, priced per pass next time), esp318-sicilia-1503 no.94
+transcription, decode-2754 Sabran-key step, huntington split-check; verifiers for the Clinton clause and the Schonenberg
+L19 crib once a reading clears its gate.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
