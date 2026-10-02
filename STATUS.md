@@ -309,6 +309,30 @@ re-run, cap 12), GAPS6-na-schonenberg (gate repair: citation beside Status + pre
 pass, cap 7). Caps total USD 81. Check-in 12 armed for 15:01 UTC (trig_01Ep56w1b7PEzpAej7et9uBi). Parent 2 at about
 520k context, cost about 31.
 
+**Check-in 12 (15:0x UTC 2 Oct, parent 2):** wave 4 done, 8 of 8 ledgered (USD 73.6; 6 within cap, 2 at 1.1-1.2x).
+`allowed_warning` still (not rejected); account-3's newest line 14:25 (37 min): PREMISE-NEVBIR cleared all seven Birago
+1572 letters and NEVBIR-138...184 are queued on account 2. Moves: pro3055-clinton-1779 -- the 26 Oct 1782 ciphered note
+is identified: Carleton's re-sent 25 Sept 1782 cipher copies (B.148 p.123 = Image 1205, its decoded copy at p.102 =
+Image 1183, content in Brymner's paraphrase only, the 1920 vol. III does not print it); the folder sits at 31.2 MB, over
+the line. fr4715-vieuville-pool -- no.37 f.60r is 16 clear lines with word-codes plus two dense blocks, and its period
+interlinear glosses give known-answer values (.7 = Roy, .71 = montolon, .93 = Mr at C; .27, .99 at M); the slot test vs
+no.44 is 6/7 vs shuffled mean 3.2 max 6, not a pass at N=7; value-blind Sonnet passes fail on this hand (all L), one Opus
+pass reads it. fr3986-nevers-revol-1593 -- f.198 is larger than recorded (recto canvas 395 with about 14 solid cipher
+lines plus a verso), no gloss, not printed; the atlas coverage knob is retired at 71.4 pct vs an 80 pct gate (rule 3 third
+attempt); next a wider held-out. na-suriname -- the whole 2039 a-u legend is transcribed (482 signs); free alignment to
+the 1778 list is above both controls but carried by short entries, logged as a hypothesis, no S grade; the folder's
+41 MB shrink is now its cheapest step. moray-wood -- L1.8 settled as his xd class by a blind stroke-form split that
+reproduces his labels 13/13, L1.41 e -> c; 117 S / 16 M / 1 I; next a spec + judge. na-janssens -- Collet 1910 queued
+(L35); No.5's opening sentence is quoted in De Opkomst deel 13 (1888); Janssens's 16 and 21 June 1811 letters printed
+there are not No.1 (control-backed). na-schonenberg -- gate repaired (citation line carried up), premise check clear;
+the USD 18 image pass is now its only step. Wave 5 spawned 15:0x (ids in the next paragraph): CLOSER-8, GAPS-fr4715-
+vieuville-pool-3 (four L-grade gloss sites, one strong call, cap 8), GAPS6-moray-wood (spec + judge, cap 7),
+GAPS7-pro3055-clinton (shrink the folder under 30 MB, then the p.102 decipherment at Image 1183, cap 12),
+GAPS7-na-suriname (the images shrink per AX2-SHRINK, cap 7), GAPS-fr3986-nevers-revol-1593-2 (wider held-out on
+c.298, cap 12). Caps total USD 49. Held: schonenberg 12-code image pass (~18), janssens No.4 set (~18), vieuville dense
+blocks (~12). Check-in 13 armed for 15:48 UTC (trig_01FWXvxAJsd1GcLRKYFGRBcH). Parent 2 at about 620k context, cost
+about 35; hand-over prep (successor file refresh) at the next check-in.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
