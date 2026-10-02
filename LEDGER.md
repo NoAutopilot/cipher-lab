@@ -1525,3 +1525,11 @@ the end of every wake.
 | 2 Oct 2026 | NEVBIR-168 (no.85) | session_0179rpJgZfob4E3Yx7rBXVCa | account-2 | Opus 5.5 | not visible from account 3 | N | 121 signs over two runs; rank 36/201 -> non-test (pool) |
 | 2 Oct 2026 | NEVBIR-170 (no.86) | session_011pDRjmDSQFQ7rwDnfMcBaw | account-2 | Opus 5.5 | not visible from account 3 | N | cipher is f.174r foot + a full page f.174v (~600 signs) + f.175; f.174r 85 signs non-test; f.174v queued in two halves |
 | 2 Oct 2026 | NEVBIR-184 (no.90) | session_017e5Nuy581JVMgfWkge59b4 | account-2 | Opus 5.5 | not visible from account 3 | D | 224 signs rank 1/201 z 3.6-4.15, S 190; no slip; verifier queued |
+| 2 Oct 2026 | VERIFY-NEVBIR-152 | see ROOM 17:18 | account-2 | Opus 5.5 | not visible from account 3 | D | no.77 N0: the f.151v slip deciphers this run; not printed or catalogued |
+| 2 Oct 2026 | VERIFY-NEVBIR-184 | see ROOM 17:19 | account-2 | Opus 5.5 | not visible from account 3 | D | no.90 N3, key published; rule 7 reproduces; control holds at fresh seeds |
+| 2 Oct 2026 | VERIFY-NEVBIR-139V | session_01WUbAmKpe84hdvfko3z5Wej | account-2 | Opus 5.5 | not visible from account 3 | D | no.71 N3, key published; no slip on canvases 140-142; line ends run into the gutter |
+| 2 Oct 2026 | VERIFY-NEVBIR-82 | session_01M3xNSnLUyXZP6VMB9nCGLp | account-2 | Opus 5.5 | not visible from account 3 | D | no.82 N0: mounted slip on f.161v is a fair-copy decipherment |
+| 2 Oct 2026 | NEVBIR-POOL | session_015DaE5rVM1789AY8g52Kg3w | account-2 | Opus 5.5 | not visible from account 3 | N | pooled 296 signs rank 1-4/201, power 15/20 at err 0.15: not licensed, not a negative |
+| 2 Oct 2026 | NEVBIR-174V-A | session_013ahvx17TsWWJJe4xzj7MhP | account-2 | Opus 5.5 | not visible from account 3 | D | f.174v lines 1-11: 285 signs rank 1/201 z 3.4-3.5, S 242 |
+| 2 Oct 2026 | NEVBIR-174V-B | session_011vCzhATmNuHrrJGf2ot5YQ | account-2 | Opus 5.5 | not visible from account 3 | D | rest of no.86: whole letter 759 signs rank 1/201 z 3.6-3.8, S 629; verifier queued |
+| 2 Oct 2026 | OUT-CHECK-MERCY-REPLY2 | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | gate 7 passed on the revised Bourdeau reply; ready for the owner to post |
