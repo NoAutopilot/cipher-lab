@@ -90,6 +90,17 @@
         ],
         "scale": "3x LANCZOS",
         "content": "whole left-margin column beside both cipher runs, confirms no other marginal annotation exists on this page"
+      },
+      {
+        "file": "crops_wc/6467p2_run2_margin_context_2x.png",
+        "region_px": [
+          0,
+          590,
+          1000,
+          180
+        ],
+        "scale": "2x (ImageMagick convert -resize 200%)",
+        "content": "run-2 margin note 'N. c. f.' with the main-text line beside it: the note sits level with p2L11 (run 2's second cipher line), not p2L10; added 2 Oct 2026 by A2-LAG2"
       }
     ]
   },

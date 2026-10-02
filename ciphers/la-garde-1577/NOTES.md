@@ -939,10 +939,63 @@ note is the sentence's own clear words written beside the line. It is not a solu
 follow-ups (2) (the 27-sign and 18-sign clauses, unread) and (3) (run 2's margin "N.[c?].f.") are untouched and
 still open.
 
-**Next cheapest step:** follow-up (3): one cropped image read of run 2's margin abbreviation to say whether it
+**Next cheapest step:** ~~follow-up (3): one cropped image read of run 2's margin abbreviation to say whether it
 is a filing mark or part of the text, using a 4x crop already on disk (`images/margin_6467_run2_4x.png`), about
-$0.5. The unread cipher clauses still have no key material. WC-LAGARDE2's family controls fell below their gates
+$0.5.~~ Done 2 Oct 2026 by A2-LAG2 (section below): same hand and ink as the run-1 margin note, level with run 2's
+second cipher line, not a filing mark; meaning unidentified. The unread cipher clauses still have no key material. WC-LAGARDE2's family controls fell below their gates
 at this N, so a further family run needs new material (more same-system ciphertext), not a new setting (rule 3,
 third-attempt clause).
 
 Requests: none (no network). Vision: 2 direct image reads by this worker, 0 subagent calls.
+
+## A2-LAG2: run 2's margin abbreviation read from the image (2 Oct 2026, account 2, LANE-A2PUSH)
+
+**Job:** Y1's follow-up (3) only -- one cropped image read of the margin note beside 6467 run 2, to say whether it is a
+filing mark or part of the letter. No cryptanalysis, no network.
+
+**Intake gate:** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) -- edition/page or
+full-text-search citation found within 6 lines` (exit 0).
+
+**Image read (rule 2; this worker's own direct reads, no subagent).** Three images, all from `images/06467_p2.png`
+(1241x1754, the best this host serves, per Y1):
+- `images/margin_6467_run2_4x.png` (Y1's crop, x40-260 y640-720): three letter-groups with points, **"N. c. f."**
+  The third letter is a long f with a crossbar, the firmest of the three. The second is an open c. The first is a
+  capital N whose last stroke ends in a small loop; it may carry a superscript letter (Nr, Nb), which this resolution
+  does not settle. A stray dot sits to the left at the baseline.
+- `images/crops_wc/6467p2_run2_margin_context_2x.png` (new, x0-1000 y590-770, 2x, made with ImageMagick from the page
+  on disk): the note sits **level with the second line of run 2** (p2L11, "9.07.4.10.8.9.07*.4.7..."), not with
+  the line where run 2 starts ("...pas autentique et que 10.8.2.1[0]..."). It is in the margin proper, left of the
+  ruled edge. p2L11 carries the asterisk-like mark after the second `07` (v2 pos 8, GSME's `$*`), the only such mark
+  on the page. The note carries no matching asterisk, so the link between the two is not shown, only possible.
+- `images/margin_6467_run1_4x.png` (for comparison of hands only): the run-1 note's crossed f ("justifier",
+  "faict") and its c ("faict") have the same form as the run-2 note's f and c, in the same light ink, at the same
+  slant and size. **Both margin notes look like one hand.**
+
+**Answer to follow-up (3):** not a filing mark. A filing or archive mark normally sits at the head, foot or dorse
+and is in a later hand. This note is in the text margin, level with a cipher line, in what looks like the same hand
+and ink as the run-1 note, which A2-LAG showed is the sentence's own clear words written beside the line. So it
+belongs with the letter's own margin apparatus (the writer's, or a contemporary reader's beside the cipher). What
+"N. c. f." stands for is unidentified. Neither print edition prints it: GSME (`editions/6467_GSME.txt` l.57-58) gives
+"et que 10.8.2.10. 5.7.9.$.4.10.8.9.$*.4.7.1.3.12." with no margin text, and LMSAC (`editions/6467_LMSAC.txt`
+l.35-36) gives "que ....... ..(l)." with the digits dropped.
+
+**What this does not do.** Three initials against an 18-sign run with no word divisions are not a usable crib, and
+none was tried. They are not a key either. Unlike run 1's note, they cannot be the clause's own clear words written
+out in full. Grades: this is a transcription of a margin note, not a reading of cipher. Cipher tokens read: 0 (H 0,
+C 0, S 0, M 0, I 0). Margin letters: f firm, c likely, N likely, any superscript on N unresolved. No judge or spec run
+and no control (rule 3 does not apply: no solver, gate or alignment was run).
+
+**Where Y1's follow-ups stand:** (1) done (A2-LAG); (3) done here, read as far as this image allows. (2) The 27-sign
+and 18-sign clauses of 6467 and all of 6179's cipher are still unread, with no key material.
+
+**Next cheapest step:** the untried family for this numeral system that WC-LAGARDE2 names: `masc` through
+`tools/family_run.py` on the pooled 6179+6467 ciphertext (N=239), matched control first (rule 3), about $3. This is a
+different instrument from the syllabary/wordcode families that fell below their gates, so it is not a third pass
+at the same knob. Expect the control to be weak at N=239 under the measured transcription error: if it falls below
+its gate, the step is "not a test at this N" and the target waits for new material (a same-system sibling, or
+Gachard's Correspondance de Guillaume le Taciturne, unreachable on 25 Sept). Another route: a higher-resolution
+image of KHA A 11/XIV C/M-12 f.2 from the Koninklijk Huisarchief (owner-side copy request) would settle the N's
+superscript; it is low value on its own.
+
+Requests: none (no network). Vision: 3 direct image reads by this worker, 0 subagent calls. New file:
+`images/crops_wc/6467p2_run2_margin_context_2x.png` (176 KB).
