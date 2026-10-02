@@ -22,5 +22,32 @@
     "file": "hstam_4_f_daenemark_nr_125_0004.jpg",
     "size": 1686698,
     "sha1": "b52e5d3946e24a80c81d59703425c73c7649cb02"
+  },
+  {
+    "source": "Arcinsys Hessen digitalMediaViewer archivalDescriptionId=1881503",
+    "folio": "arcinsys_daenemark_125_0001",
+    "url": "https://digitalisate-he.arcinsys.de/hstam/4_f_staaten_d/daenemark_125/hstam_4_f_staaten_nr_daenemark_125_0001.jpg",
+    "fetched": "2 Oct 2026",
+    "note": "modern archival cover sheet (Bestand 4f Dänemark Nr. 125 stamp, file summary)",
+    "file": "arcinsys_daenemark_125_0001.jpg",
+    "size": 953552,
+    "sha1": "3600e3875594c4b909ef86be9b64d20dc2caa98d"
+  },
+  {
+    "source": "Arcinsys Hessen digitalMediaViewer archivalDescriptionId=1881503",
+    "folio": "arcinsys_daenemark_125_0005",
+    "url": "https://digitalisate-he.arcinsys.de/hstam/4_f_staaten_d/daenemark_125/hstam_4_f_staaten_nr_daenemark_125_0005.jpg",
+    "fetched": "2 Oct 2026",
+    "note": "verso of 0004: blank but for show-through and the period endorsement/docket",
+    "file": "arcinsys_daenemark_125_0005.jpg",
+    "size": 953399,
+    "sha1": "faf64fa2fca6a50311168a30d6f619d745a0d4d6"
+  },
+  {
+    "source": "Arcinsys Hessen digitalMediaViewer archivalDescriptionId=1881503",
+    "folio": "arcinsys_daenemark_125_0006",
+    "url": "https://digitalisate-he.arcinsys.de/hstam/4_f_staaten_d/daenemark_125/hstam_4_f_staaten_nr_daenemark_125_0006.jpg",
+    "fetched": "2 Oct 2026",
+    "note": "NOT KEPT: unrelated printed Kassel Rentkammer circular dated 12 May 1738, filed at the end of Nr. 125"
   }
 ]
