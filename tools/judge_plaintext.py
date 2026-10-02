@@ -63,6 +63,13 @@ LANG_CORPORA = {
     "it16dip": [DATA / "it16dip" / f for f in ("bub_gb_laRnTtJmsDAC.txt.gz", "bub_gb_ZJMxff7r4LUC.txt.gz",
                 "gri_33125010469852.txt.gz", "letterediprincip01char.txt.gz", "letterediprincip02char.txt.gz",
                 "letterediprincip03char.txt.gz")],
+    # it19 (2 Oct 2026, A2-CAS7, LANE-A2PUSH account 2): Italian political, historical and epistolary prose of about
+    # 1800-1830 -- Botta's Storia d'Italia dal 1789 al 1814 t.I, Colletta's Storia del reame di Napoli, Cuoco's Saggio
+    # storico (1806), Foscolo's Epistolario vols 1 and 3 (the latter his London letters of 1816-27), each capped at 650k
+    # folded letters -- for castelcicala-1816 (1816-23 Neapolitan despatches), which it16/it16dip (16th c.) do not
+    # era-match. See tools/data/it19/README.md for the leave-one-file-out false-negative spread before trusting a FAIL/PASS.
+    "it19": [DATA / "it19" / f"{i}.txt.gz" for i in ("storiaditaliadal01bottuoft", "storiadelreamedi00coll",
+             "saggiostoricosul00cuoc", "bub_gb_ODloWJYQNSYC", "bub_gb_jVdaVPIiH8sC")],
     # sco16 (2 Oct 2026, GAPS6-moray-wood-1568, account-4): 1550-1600 Middle Scots prose -- Knox's History (Laing, Works
     # I-II), the Diurnal of Remarkable Occurrents (1513-1575, long-s repaired), the Historie of King James the Sext, and
     # the Register of the Privy Council of Scotland vol. 2 (1569-1578), each capped at 700k folded letters, editors' modern
