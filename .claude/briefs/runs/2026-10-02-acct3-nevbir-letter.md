@@ -4,7 +4,12 @@ Model: Fable if it answers, else Opus 5.5. Cap USD 5, box 50 min. Per-unit prici
 1 reconciliation + decode/control ~ USD 1.2 each.
 Target: ciphers/nevers-birago-fr3251-1572, the ONE letter named in your WORK-QUEUE row's note (folio and no.). Its Premise
 check (PREMISE-NEVBIR, 2 Oct, NOTES.md) is CLEAR TO TEST; folio corrections: no.82 is f.162, no.86 is f.170.
-1. `python3 tools/room.py --start`; claim the folio; `python3 tools/intake_gate_check.py nevers-birago-fr3251-1572` exit 0.
+1. `python3 tools/room.py --start`; claim the folio. BEFORE transcribing, view the WHOLE canvas at native resolution,
+   including the facing page and any pasted slips: NEVBIR-152 found a later-hand decipherment slip (squared paper, dots for
+   unread signs) pasted on f.151v covering its run, which PREMISE-NEVBIR missed. If a decipherment of your run exists,
+   record it, score the decode against it as a known-answer check, and flag it for a verifier as a prior decipherment;
+   do not present your decode as a reading.
+   Then `python3 tools/intake_gate_check.py nevers-birago-fr3251-1572` exit 0.
 2. Fetch the leaf once (Gallica IIIF, ark and canvas rule in NOTES.md/images/manifest.json; 1.5 s between requests),
    cut line crops with `tools/iiif_lines.py --image ... --out ...` and paste the command; give subagents only crops.
    Two value-blind passes against the 51-sign sheet (one page per call), one reconciliation; record agreement.

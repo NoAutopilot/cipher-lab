@@ -127,8 +127,10 @@ PROVE the item is already done -- the verifier's stance moved forward. It uses o
 "attached", "dechiffrement", "Deciffrada", even one called illegible or unconfirmed -- open it and look; (b) the other
 solvers' working files for this item, not their status lists: outputs, renderings, apply-key scripts, and whether a
 key we would borrow has already been run on this very text (Aymeloglu's key129 had rendered intercepted-royalist f.10);
-(c) the physical neighbours: the leaves and canvases on each side of the cipher, for a clear copy or decipherment bound
-beside it (nevers-birago no.87's clerk's decipherment sat on canvas 182); (d) the recipient's side: documentary editions
+(c) the physical neighbours: the leaves and canvases on each side of the cipher, AND the facing page of the cipher's own
+canvas and any slip pasted or laid in, viewed at native resolution, not a thumbnail, for a clear copy or decipherment bound
+beside it (nevers-birago no.87's clerk's decipherment sat on canvas 182; no.77's later-hand slip is pasted on f.151v, the
+facing page of the same canvas, and a premise check reading only the cipher page missed it, 2 Oct 2026); (d) the recipient's side: documentary editions
 of the receiving country or office (Canadian, US, Dutch, Spanish state series), not only the sender's (Clinton 2894 was
 printed in 1920 in Military and Naval Forces of Canada III). Write "## Premise check (<worker>, <date>)" in NOTES.md with
 each of (a)-(d) as found / not found / unreachable. A find makes the item calibration or found-solved before any money

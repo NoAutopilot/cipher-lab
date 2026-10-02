@@ -104,3 +104,5 @@ NEVBIR-168	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-letter.md	Fable	5	5
 NEVBIR-170	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-letter.md	Fable	5	50	queued	2026-10-02 14:24	nevers-birago-fr3251-1572 letter f.170 no.86: first test under the printed 1572 key + T42=m, 200 shuffled keys
 NEVBIR-184	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-letter.md	Fable	5	50	queued	2026-10-02 14:24	nevers-birago-fr3251-1572 letter f.184 no.90: first test under the printed 1572 key + T42=m, 200 shuffled keys
 OUT-CHECK-MERCY-REPLY2	other	.claude/briefs/runs/2026-10-02-acct3-out-check-mercy-reply2.md	Opus 5.5	3	30	queued	2026-10-02 14:24	gate 7 on the revised Bourdeau reply (after MERCY-REPLY-UPD)
+VERIFY-NEVBIR-139V	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-139v.md	Fable	5	50	queued	2026-10-02 15:47	verifier: nevers-birago-fr3251-1572 139V
+VERIFY-NEVBIR-152	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-152.md	Fable	5	50	queued	2026-10-02 15:47	verifier: nevers-birago-fr3251-1572 152
