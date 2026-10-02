@@ -5,5 +5,5 @@
  "alphabet": "55 hand-drawn signs of the Ceppo-Nevers cipher (Tomokiyo nevers.htm, nevers_add1.png): 48 letter homophones, et, 6 nulls",
  "language": "Italian, Saluzzo, 14 Sept 1570",
  "judge": {"language": "it16dip"},
- "cheap_test_done": "f.11r decoded with the printed key: real key rank 1 of 201 shuffled keys (z 5.19) on the reconciled transcription; blind pass B alone rank 2 of 201 (z 3.22); power control 20/20 at 20% sign error (HARVEST-A, 28 Sept 2026)"
+ "cheap_test_done": "f.11r decoded with the printed key: real key rank 1 of 201 shuffled keys (z 5.19) on the reconciled transcription; blind pass B alone rank 2 of 201 (z 3.22); power control 20/20 at 20% sign error (HARVEST-A, 28 Sept 2026); f.21v, f.35 and f.87 decoded with the same key on value-blind transcriptions: rank 1 of 201 shuffled keys on each (z 6.40 / 4.46 / 3.5 per blind pass, HARVEST-D2 28 Sept 2026; verifier's D z 5.7-6.6 / 5.0-6.0 / 5.1-5.3, three seeds, 29 Sept 2026), judge FAIL on all three, f.21v and f.87 N3 recovered-passages after two audits, f.35 no passage; the whole folder's first cheap test is done (LIKELY-2, 2 Oct 2026)"
 }

@@ -1,4 +1,4 @@
-open
+partial
 
 INTAKE-3251, 27 Sept 2026: solver-ready intake only (Layout, no reading, no decoding, no class). Built from
 KEY-ADJACENT.tsv row 2 (SCOUT-OWN-6, 27 Sept 2026) and `sources/cryptiana/web/nevers.htm` (local mirror,
@@ -900,3 +900,51 @@ Files: `harvest/f87/` (three pass pairs, two rejected with READMEs; passC + agre
 whole and per half; blind/; `c88_cipher_wt.jpg`, `manifest.json`), `ciphertext_f87.tsv`, `reading_f87.txt`,
 `reading_f87_tokens.tsv`, `reading_f87_letters.txt`. Requests: gallica.bnf.fr 2. Subagents: 9 (six blind passes over
 three crop cuts, two adjudications, one blind reader), all Sonnet.
+
+## LIKELY-2 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-likely-phase2.md`, row rank 2 of `ciphers/_triage/likely-solves-2026-10-02.tsv`
+(f.21v no.11, f.35 no.18, f.87 no.45; `first_cheap_test`: "f.21v: locate the cipher passage, iiif_lines crops, 2 blind
+passes + reconcile, decode_key.py with the key vs 200 shuffled-key controls, judge it16; per-sign crops only if the
+shuffle gate is marginal"). Clock read 03:34-03:5x UTC. Intake gate `tools/intake_gate_check.py ceppo-nevers-fr3251-1570s`:
+exit 0 ("open (line 1) -- edition/page or full-text-search citation found within 6 lines"), run before the status word
+below was changed.
+
+**Non-job: everything the row names is already read, controlled and audited.** The row's cell is, step for step, what
+HARVEST-D2 ran on 28 Sept 2026 (the three sections above) and VERIFY-CEPPO-D2-1 / D2-2 re-derived on 29 Sept (AUDIT.md):
+
+| folio | blind passes | key vs 200 value-shuffled keys (HARVEST-D2) | verifier's blind D, three seeds | judge it16 | class |
+|---|---|---|---|---|---|
+| f.21v no.11 | 2 + adjudication, 267 signs | rank 1/201, z 6.40, power 20/20 | rank 1/201, z 5.7-6.6, power 20/20 | FAIL -1.136 (real_p05 -0.931) | N3, two audits, recovered-passages; status.json row 29 Sept; NEAR.md row |
+| f.35 no.18 | 2 + adjudication, 76 signs | rank 1/201, z 4.46, power 19/20 | rank 1/201, z 5.0-6.0, power 17-19/20 | FAIL -1.402 (real_p05 -0.985) | none (key fits, no passage read); NEAR.md "read no language" |
+| f.87 no.45 | 3 pairs + adjudication, 204 signs | rank 1/201 on each blind pass (z 3.5), merge rank 2 (z 2.48) | rank 1/201, z 5.1-5.3, power 20/20 | FAIL -1.723 (null_p99 -1.669) | N3, two audits, recovered-passages; status.json row; NEAR.md row |
+
+The shuffle gate on f.21v is not marginal (z 6.4 and 5.7-6.6), so the row's conditional step (per-sign crops for the
+look-alike pairs) does not fire from this row either; it stays the folder's named next step (AUDIT.md "For the
+orchestrator (VERIFY-CEPPO-D2-1)"). No test was run here, no image fetched, no subagent called: gallica.bnf.fr 0
+requests, vision calls 0, HYPOTHESES.md unchanged (no new pair of numbers to record). Not a negative. The row entered
+the shortlist because line 1 of this file still read `open` while the two audits of 29 Sept wrote "target stays
+`partial`" and NEAR.md carries its rows: the shortlist's scope excludes `partial` folders, so the status word, not the
+reading, let it through. Fixed here under rule 5 (a target that beat its matched control is `partial`): line 1 now
+reads `partial`, with the finish-or-blocker sections below; the spec's `cheap_test_done` now names all four folios.
+
+## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
+
+Read so far: 401 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 179/267, f.35 35/76, f.87 134/204, the
+HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
+on every folio.
+- f.21v, 76 M + 5 U + 7 I tokens of 267, behind "intencione" (L03) and "auanti" (L07) - blocker: not-attempted; the S49/S73 (n/null) and S23/S97 (n/a) look-alike splits were adjudicated at 2x and not forced on the verifier's D (AUDIT.md VERIFY-CEPPO-D2-1, f.21v); next: per-sign crops at 3-4x of those two pairs, two fresh blind passes on the crops only, then `harvest/decode_control.py` again, ~$5.
+- f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; the four look-alike pairs (S54/S74/S77/S37, S80/S65, S24/S88, S31/S32/S76) recur on every line and the merge scored below its inputs (HARVEST-D2 f.87 section); next: per-sign crops for the four pairs plus a witness check of S24/S88 and S80/S65 against the fr.3252 f.36 glosses (`harvest/f3252_f36/`), ~$5.
+- f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; no period gloss on the sign yet (AUDIT.md "Named next step"); next: look for the pound sign on ff.27, 39, 82 (period decipherments, images on disk under `harvest/`) and read its interlinear value, ~$3.
+- f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
+
+## Escalation (2 Oct 2026)
+
+- [x] siblings: ff.27, 39, 82 (period decipherments) read as the calibration set (NEV-C2, NEV-C3, 27 Sept); fr.3252 f.36v (5 Apr 1571, with decipherment) gave the double-barred oval = r (HARVEST-D, 28 Sept).
+- [ ] clear-pages: f.21r's clear text is quoted in Pascal 1960 fn. 6 (VERIFY-CEPPO-D2-2) and f.89 (no.46), Birago to Nevers the same day as f.87, carries no cipher: neither has been used as a context crib for the M tokens next to it; planned step: read f.89 and f.21r clear text against the f.87/f.21v M runs, ~$3.
+- [x] known-keys: Tomokiyo's printed Ceppo-Nevers key (`keys/key_ceppo_nevers.tsv`, from fr.4702) applied to all four folios, rank 1/201 on each blind transcription.
+- [x] print: `tools/print_check.py` on the f.21v phrases (HARVEST-D2, `print-check.tsv`), no hit; two novelty audits per letter (AUDIT.md), N3.
+- [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
+- [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
+- [x] retry: f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
+Verdict: keep going: 3 internal gaps; cheapest next: per-sign crops of the S49/S73 and S23/S97 pairs on f.21v, ~$5
