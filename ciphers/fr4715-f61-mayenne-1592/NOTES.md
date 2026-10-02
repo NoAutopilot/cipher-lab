@@ -6236,6 +6236,27 @@ only. Reply verbatim `family/a2f61/reply.tsv`; `family/a2f61/score.py --check` r
   28 of 100** (V12's own state (d), `verify_v12/meter_v12.py`); spans unchanged 55/55 (the mark is out of every span). It adds a null, not a
   letter; no reading changes, so no decode re-run (rule 7). Grades: no token graded (rule 4: no letter is claimed). Novelty not classified.
 
+### VERIFY-F61-LL ruling on A2-F61 (2 Oct 2026, 22:09-22:10 UTC by date -u, verifier VERIFY-F61-LL, account 2, separate from the solver)
+
+**Ruling: ENDORSE `L02 0 insert LL` (a null, grade S: an instrument reading with a passing control and a met foil condition; no letter, no H/C).
+Merge allowed; not merged by this verifier.**
+
+Checked: (1) order -- PREREG.md and the deterministic `build.py` (seed 20261002) are in eb9091fe at 21:53:15, reply.tsv and key.json in 53c2d53c at
+21:54:42; the sha was not itself in the prereg commit, but re-running `build.py` here regenerates a key identical to the committed key.json (sha
+62bdcfbd...), so the answer key was fixed before the reply. (2) `score.py --check`: OK; gates G1 9/9, G2 PASS, G3 PASS; target LL LL LL, foil O O O,
+reproduced. (3) Sheets regenerated and read by eye.
+Leak question (rule 3): the foil's W1/W2/W3 tiles show the whole word "ella" with its flanking e and a, and the reader's notes name the word, so
+O was the likely answer from context alone. That weakens the foil as a test of stroke shape, but it is not a non-test: the foil was free to read
+LL or N on every window, and V13's own condition asked for exactly this ("a clear 'll' inside a word ... read as O"). What tips it is shape,
+which I checked on the tiles directly: the in-word 'll' of "della" is two plain straight stems with no heads, while the L02 mark (#424/#723/#588)
+has the hooked, looped heads of the LL reference exemplar L05/16 (#881) -- this hand's ordinary 'll' is not drawn like the LL sign. The target's
+context (line start, after the stamp's edge, followed by PHI) carries no word for the reader to complete either.
+Chance: the three windows are overlapping crops of one mark, not independent trials, so "3/3 vs 3/3" is closer to one read each than to a
+p-value; the weight comes from four instruments concordant at 12 windows of 12 (V12 C4, H428, V13, A2-F61), the anchors at 9/9 and the repeats.
+Residual caveat, carried: A_PLAIN_IL (the capital 'Il') still reads N, so the reader's O class is shown only for lower-case in-word script.
+Verdict: endorsed; next: F61-FAMILY merges `L02 0 insert LL` into `scripts/f61_positions_corrections.tsv` and re-runs the meter (expected 12 / 59 /
+1 / 28 of 100, spans 55/55), ~$1. Novelty not touched (no reading changes).
+
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
 Read so far: no passage outside Tomokiyo's five spans is read. Of the leaf's 99 cipher signs, 12 are firm, 59 two-way, 1 wider and 27 unread-or-null (18 nulls: CA 10, LOOPBAR 5, CROSS 2, LL 1; 9 unread: C6 8, 4PI L01/12 1). Source: VERIFY-F61-V13 (AUDIT.md; verify_v13/meter_v13_result.txt), merged by F61-FAMILY-14. 45 of the 59 two-way signs sit inside the spans and 14 outside. family/F61_FLOOR.md says 44/15 because its span column comes from scripts/f61_skeleton.txt, which predates the L03/16 insert; that sign carries Tomokiyo's final 'e' of "capable" (H407 part B, H408). Key v8 reproduces his 55 span letters 55/55 (permuted p95 0.436, 0/2000), so those letters are published, not ours.
 - f.61r's own clear text (11 lines; L06 and L09 are wholly clear, and clear prose surrounds every run) - blocker: not-attempted; no full transcription is on disk. Only single-pass fragments exist: scripts/read_call_U.tsv (L02/L04/L06/L09/L10 context, H16), H286 ("Je croys aussi que les") and H297 ("choses sont a"). H283 records that "no pass on disk lists L04's clear words". The writer, recipient and date have never been taken from the content: the BnF aid gives only "Lettre avec chiffre." (H7) and Tomokiyo names no sender (NOTES line 14). The clear text identifies the letter and feeds the print search; it does not by itself narrow the two-way signs, because the context judge using clear words is retired (H33/H57/H25); next: two blind passes on the existing images/f61sheetB_L01-L11 line sheets plus one reconciliation (3 calls, priced per pass per Usage 6), gated on word agreement between the passes and on a known-answer clear line from f.108r ("Et pour cela je vous laisse a juger ..."); then name the writer, recipient and date, ~$5
@@ -6247,7 +6268,7 @@ Read so far: no passage outside Tomokiyo's five spans is read. Of the leaf's 99 
 - L11/8 (pass-A 4STEM a/n, or CROSS = null) on Tomokiyo's S5 dash - blocker: open-codes; a rule-4 conflict between two instruments that each pass their own gates: CROSS 4 (V12 1, H428 3) against N 4 (VERIFY-F61-V13). It is held M in its pass-A class, and his reading needs no letter there.
 - C6, 8 tokens (5 on Tomokiyo's dashes: L01/2, L03/11, L07/6, L08/3, L08/9; 3 outside) - blocker: open-codes; his words exclude the pooled C6 = e at 4 of 5 in-span positions (H261; VERIFY-F61-V9 v9_c6_words.py), and that value comes from another hand and the other direction of the correspondence. f.61's plain 6 is a different glyph (H237), and no glossed leaf in f.61's hand writes C6 (H285). The sign stays unread-or-null.
 - L02/2 OTHER (the meter's one 'wider' sign) - blocker: open-codes; it is a single occurrence with no class on any panel ('none' at 3 of 3 windows, H421), followed by clear "particulierement sur les" (read_call_U.tsv), which does not narrow it.
-- The mark opening L02 (LL, a null; merging it makes the sign count 100) - blocker: not-attempted (the verifier's ruling on the merge; ROOM flag VERIFIER WANTED, A2-F61, 2 Oct 2026); V13's foil condition is now met: the in-word 'll' of L07 "della" read O at 3/3 windows while the target read LL at 3/3 (A2-F61, gates 9/9, LL control, repeats; family/a2f61/score_result.txt), with the caveat that the foil was named from its word context; next: the verifier rules on `L02 0 insert LL` and F61-FAMILY merges it, meter 12/59/1/28 of 100, ~$1
+- The mark opening L02 (LL, a null; merging it makes the sign count 100) - blocker: not-attempted (the merge only: VERIFY-F61-LL endorsed it at grade S, 2 Oct 2026); V13's foil condition is now met: the in-word 'll' of L07 "della" read O at 3/3 windows while the target read LL at 3/3 (A2-F61, gates 9/9, LL control, repeats; family/a2f61/score_result.txt), with the caveat that the foil was named from its word context; next: the verifier rules on `L02 0 insert LL` and F61-FAMILY merges it, meter 12/59/1/28 of 100, ~$1
 
 ## Escalation (2 Oct 2026)
 - [x] siblings: opened, read and aligned into key v8: fr.3982 f.97r, f.101r and f.124r; fr.3983 f.106r, f.108r, f.108v and f.211r; fr.3984 f.176r/177r, f.184r/188r and f.274r. Dropped: fr.3984 f.7 is not f.61's design (H168); fr.2751 f.116 is a clear copy of another letter with no cipher (F61-FAMILY-8); fr.3641 holds figure ciphers and fr.3980 f.10 is a different (Sega) cipher (H404). All 119 BnF aid hits for Mayenne were read (H404). f.61v is blank (H18). The rest of fr.4715 is the Vieuville-Nevers family, and the DECODE crawl has no hit. Not opened: fr.4699 ff.37-38/41-42 is not digitised, and its request was never filed (gap above). fr.3984 f.186r/189r (H48) would add no lettered material in f.61's hand.

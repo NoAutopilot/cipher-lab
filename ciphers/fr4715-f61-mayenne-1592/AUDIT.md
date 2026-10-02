@@ -1096,3 +1096,24 @@ row. `L02 0 insert LL` stays held pending the foil condition above.
 **Safe sentence:** "A third blind reader, with in-hand exemplars of every competing class and a passing anti-steering control, reproduced the LL
 sign at the opening of f.61 L02 but not the CROSS reading of L11/8 or the 4-over-hash reading of L01/11; the endorsed meter stays 12/59/1/27 of 99."
 **Unsafe sentence:** "Runner 16's three reads are confirmed" or "L11/8 is a 4STEM" (the pass-A class stands only because nothing displaced it).
+
+## VERIFY-F61-LL ruling on A2-F61 (2 Oct 2026, 22:09-22:10 UTC by date -u, verifier VERIFY-F61-LL, account 2, separate from the solver)
+
+**Ruling: ENDORSE `L02 0 insert LL` (a null, grade S: an instrument reading with a passing control and a met foil condition; no letter, no H/C).
+Merge allowed; not merged by this verifier.**
+
+Checked: (1) order -- PREREG.md and the deterministic `build.py` (seed 20261002) are in eb9091fe at 21:53:15, reply.tsv and key.json in 53c2d53c at
+21:54:42; the sha was not itself in the prereg commit, but re-running `build.py` here regenerates a key identical to the committed key.json (sha
+62bdcfbd...), so the answer key was fixed before the reply. (2) `score.py --check`: OK; gates G1 9/9, G2 PASS, G3 PASS; target LL LL LL, foil O O O,
+reproduced. (3) Sheets regenerated and read by eye.
+Leak question (rule 3): the foil's W1/W2/W3 tiles show the whole word "ella" with its flanking e and a, and the reader's notes name the word, so
+O was the likely answer from context alone. That weakens the foil as a test of stroke shape, but it is not a non-test: the foil was free to read
+LL or N on every window, and V13's own condition asked for exactly this ("a clear 'll' inside a word ... read as O"). What tips it is shape,
+which I checked on the tiles directly: the in-word 'll' of "della" is two plain straight stems with no heads, while the L02 mark (#424/#723/#588)
+has the hooked, looped heads of the LL reference exemplar L05/16 (#881) -- this hand's ordinary 'll' is not drawn like the LL sign. The target's
+context (line start, after the stamp's edge, followed by PHI) carries no word for the reader to complete either.
+Chance: the three windows are overlapping crops of one mark, not independent trials, so "3/3 vs 3/3" is closer to one read each than to a
+p-value; the weight comes from four instruments concordant at 12 windows of 12 (V12 C4, H428, V13, A2-F61), the anchors at 9/9 and the repeats.
+Residual caveat, carried: A_PLAIN_IL (the capital 'Il') still reads N, so the reader's O class is shown only for lower-case in-word script.
+Verdict: endorsed; next: F61-FAMILY merges `L02 0 insert LL` into `scripts/f61_positions_corrections.tsv` and re-runs the meter (expected 12 / 59 /
+1 / 28 of 100, spans 55/55), ~$1. Novelty not touched (no reading changes).
