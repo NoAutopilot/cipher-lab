@@ -5415,3 +5415,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 11:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 11:10 UTC: spawned 0 (), queued left 0
 2026-10-02 11:33 | account-4 parent 2 | check-in 8 (11:3x UTC 2 Oct): no takeover -- account-3 line 11:03 seen, it holds the role; allowed_warning here, no workers, nothing to ledger. Check-in 9 armed.
 2026-10-02 12:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 12:11 UTC: spawned 0 (), queued left 0
+2026-10-02 12:21 | account-4 parent 2 | check-in 9 (12:2x UTC 2 Oct): unchanged -- allowed_warning, no workers; account-3 line 11:03 seen (78 min). Check-in 10 armed.
