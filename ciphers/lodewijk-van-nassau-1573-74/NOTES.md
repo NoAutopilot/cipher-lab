@@ -3187,3 +3187,14 @@ Read so far: 2317 of 4032 cipher tokens in the four target letters (57.5%), coun
 - [ ] image-check: done for 4612 (300-dpi re-render, all 32 numeral disagreements settled, AX-4612TR2, AX2-4612), 7205 digits (AX-COMP2), 172 by eye (AX2-172), the 4611 p2_L36 footer (R20 override) and the 5797 spots in two passes (AX-5797); 5811 stalled at 150 dpi (W2) but is printed. Planned: a 300-dpi settle of 4610/4611/4616's M rows and 4616's 19 split groups (gap 3, ~$14) and of 5797 pp.3-4 (gap 7, ~$8).
 - [x] retry: readings regenerated and regraded under key_full v1, v2 and v3 (AX-NAMES2, AX-MERGE, AX-MERGE3); fresh re-derivations byte-identical (AX-REDERIV, AX-REDERIV2); U in 4610/4611/4616 fell from 541 to 310. Rerun after gaps 1, 3 and 4.
 Verdict: keep going: 7 internal gaps; cheapest next: 5797 p5_spot5 code 173 -- Groen's 5810 sentence (groen/groen_IV_CDLXVIII.txt) and a 300-dpi re-zoom of the 5550 p2-5 gloss tail, graded per direction, ~$3
+
+## Intake gate, 2 Oct 2026 20:5x UTC (A2-LVN, account 2, LANE-A2PUSH) -- step not run
+
+`python3 tools/intake_gate_check.py lodewijk-van-nassau-1573-74` (exit 1):
+
+    lodewijk-van-nassau-1573-74: partial (line 1) has an edition citation but no logged open-web and blog-comment check (no 'Web and blog check' heading, no paragraph naming Cipherbrain, the Cryptiana blog and Cipher Mysteries) -- run check-solved.md's 'Open web and blog comment threads' step first (CHECK-SOLVED-WEB, 28 Sept 2026: spinelli-beinecke-c1515 was read in a Cipherbrain comment thread in 2017)
+
+The brief (5797 code 173 only) does not cover a check-solved web pass, so the Verdict's cheapest step (code 173 via
+Groen's 5810 sentence and a 300-dpi re-zoom of the 5550 p2-5 gloss tail) was not run. Next: a check-solved worker
+runs the 'Open web and blog comment threads' step (Cipherbrain, Cryptiana blog, Cipher Mysteries) and writes a
+"## Web and blog check" section here (~$1); then the code 173 step (~$3) as written in the Verdict. Verdict unchanged.
