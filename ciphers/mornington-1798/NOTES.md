@@ -1,5 +1,7 @@
 partial
 
+Martin 1836 Vol. 1 (IA india.history.resource.35304), Owen's 1877 *Selection* (117686) and the 1914 *Wellesley Papers* I-II (87788, 87766) read by this worker on 2 Oct 2026 as full OCR text (`print/grep_editions.py`) for D623/4, /5 and /24: Vol. 1 No. XXII p. 80 prints a Mornington-to-Dundas letter of 6 July 1798 on the Mauritius proclamation (D623/5's date and subject); no 3 July 1798 or 7 June 1799 Mornington-to-Dundas item in any of the four; Ingram 1970 (be-api fts) prints the 6 July 1798 and 7 June 1799 letters.
+
 Ingram, *Two Views of British India: the private correspondence of Mr. Dundas and Lord Wellesley, 1798-1801*
 (Bath, 1970; IA `twoviewsofbritis0000melv`) searched by this worker via `be-api.us.archive.org/fts/v1/search`
 with control "Dundas" (hit, five real body-text snippets returned, e.g. "Wellesley also wrote to Dundas
@@ -202,6 +204,8 @@ Vols 1-5 of Montgomery Martin (1836-37), the 1877 *Selection* (Owen), and the 19
 remains Cloudflare-gated here and was not searched by the Bibliographic/HTRC route for further Wellesley
 material).
 
+**Correction (GAPS-mornington-1798, 2 Oct 2026):** the sentence above over-stated the search for D623/4, /5 and /24 (they were never phrase- or date-searched in any edition before 2 Oct 2026, see "Remaining gaps"), and the 2 Oct pass found D623/5's date and subject printed in Martin Vol. 1 No. XXII and in Ingram 1970 (private no. 6), and D623/24's date printed in Ingram 1970 (private no. 15 [recte 16]). Stage 2 now stands for D623/4, /22, /27, /28, /30, /35, /36 only; /5 and /24 are print-attested on date and subject pending a content check (see the GAPS section below).
+
 ## Next
 
 REQUEST.md drafted this pass (BL Imaging Services quote): D623/41 (the key, both copies) plus the
@@ -218,20 +222,103 @@ a lending-only/print-disabled item, not full-view or borrowable, but full-text s
 with a control and found no hit for any of the still-open despatches; this conditional is now cleared, no IA
 loan or library copy needed for the Ingram question specifically.
 
+## GAPS-mornington-1798 (2 Oct 2026, account-4)
+Verdict step of the 1 Oct 2026 finish-or-blocker pass, run 2 Oct 2026 01:57-02:1x UTC: grep Martin Vol. 1, the 1877
+*Selection* and the 1914 *Wellesley Papers* for D623/4, /5 and /24; be-api fts on Ingram 1970 for the 7 unsearched
+despatch dates; save D623/23's printed text. Hosts: archive.org family only (30 requests: archive.org 13 = 4 wrong-name
+404/500 + 4 metadata + 4 `_djvu.txt` + 1 permitted retry of 117686 after two HTTP 500s; be-api 17). Vision calls 0.
+Everything fetched is in `print/` with `print/manifest.tsv` (5.1 MB, four OCR texts kept so the next pass refetches
+nothing); `print/grep_editions.py` regenerates every match below; `print/ingram_fts_results.tsv` holds every be-api query
+and snippet.
+
+**Editions (local grep, date in every spelling + catalogue phrases), per item:**
+
+| item | Martin Vol. 1 (1836) | Owen 1877 | Wellesley Papers I/II (1914) |
+|---|---|---|---|
+| D623/4, 3 Jul 1798 | 0 date hits; no Mornington-to-Dundas letter of that date | 0 | 0 / 0 |
+| D623/5, 6 Jul 1798 | **No. XXII, p. 80 ff.: "The Earl of Mornington to the Right Hon. Henry Dundas ... Fort William, July 6, 1798. With my Letter, No. 5, dispatched overland, I transmitted to you a copy of the Proclamation issued by the Governor of the Isle of France"** (the other four 6 July hits are Harris, Webbe, Malcolm and an index row) | only Webbe's 6 Jul 1798 memorandum | 0 / 0 |
+| D623/24, 7 Jun 1799 | 0 date hits; "re-distributing" 0; "memorandum ... settlement" 0 | 0 | 0 / 0 |
+| D623/23, 16 May 1799 | No. CCIII, p. 587, re-located and saved: `print/D623-23_martin1836_v1_p587.txt` | 0 | 0 / 0 |
+
+The 1914 volumes carry no 1798-99 despatch text at all (0 hits for every date, phrase and for "cipher"). "cipher/cypher"
+in Martin Vol. 1 (4) and Owen (10) is always the Company's cypher No. 11, Harris's "having no cypher", Tippoo's
+Carnatic cypher, or Dundas's 30 Dec 1800 reply to an "overland despatch in cypher, dated 13th July last" (D623 has no 13
+July 1800 item; a lead for the counterpart-copies gap, not this one).
+
+**Ingram 1970 (be-api fts, control first):** control "16 June 1798" (Dundas to Mornington, printed) = 1 hit, header form
+"Hon. Henry Dundas to the Earl of Mornington 16 June 1798, Wimbledon Private: no. 2"; the "June 16, 1798" form = 0, so
+Ingram's headers use day-month-year and the ordinal form is the second spelling tested. Target dates, two forms each:
+3 Jul 1798 0/0; **6 Jul 1798 1/0 -- "Earl of Mornington to the Rt Hon. Henry Dundas 6 July 1798, Fort William Private:
+no. 6"**; 11 May 1799 0/0; **7 Jun 1799 1/1 -- "Earl of Mornington to the Rt Hon. Henry Dundas 7 June 1799, Fort St
+George Private: no. 15 [recte 16]" and, in a later letter, "points stated in my dispatch overland of the 7th June 1799
+[no. 15]"**; 6 Mar 1800 0/0; 25 Apr 1800 0/0; 21 Jun 1800 1/0 -- an editorial footnote only: "1 On 21 June 1800. 2 Add.
+MSS. 13751, f. 77. Wellesley, ii, 311" (a 21 June 1800 letter held at BL Add MS 13751 f.77 and printed in Martin Vol. 2
+p. 311: D623/35's date, a counterpart-copy lead). Subject check "Malartic": 1 hit, index "Malartic, Anne, Cte de, 46 fn.,
+52, 63, 64, 100, 124" with the sentence "it appears probable that Monsieur Malartic took that step with the combined
+objects of exposing" -- the same letter as Martin's No. XXII ("whatever construction may be put upon the policy of M.
+Malartic in this extraordinary measure", Vol. 1 offset 211547), so Ingram's private no. 6 and Martin's No. XXII are one
+text, printed twice (1836, 1970).
+
+**What this establishes (rule 10 wording).** (1) A clear Mornington-to-Dundas letter dated 6 July 1798 on the Mauritius
+proclamation, the catalogue date and subject of D623/5 ("duplicate of /4 ... re the Mauritius proclamation"), is printed in
+Martin 1836 Vol. 1 No. XXII and in Ingram 1970 as private no. 6; it opens by saying letter No. 5 "dispatched overland"
+carried the proclamation, which fits D623/4 (3 Jul 1798, "original letter appended to a despatch in cipher"). Whether the
+cipher despatch's plaintext is this letter or a separate enclosure cannot be settled from print; the printed text is
+grade C for the clear letter and the natural crib for the /4-5 cipher, saved as `print/D623-5_candidate_martin1836_v1_p80.txt`
+(31 KB). (2) A Mornington-to-Dundas letter of 7 June 1799, Fort St George, private no. 15 [recte 16], the date of D623/24
+("memorandum in cipher detailing the proposed settlement"), is printed in Ingram 1970; be-api gives no page and no body
+text, and Martin/Owen/1914 do not print it, so whether Ingram prints the memorandum itself or only the covering letter is
+unread. (3) D623/4, /22, /28, /30 have no date hit in Ingram in either form, with a working control; D623/35's date appears
+only in a footnote pointing to Add MS 13751 f.77 and Martin Vol. 2 p. 311. (4) D623/23's printed text is on disk.
+Not found is a search result, not a novelty verdict; nothing here is "new" or "first".
+
+Gate outputs after this pass: `tools/intake_gate_check.py mornington-1798` -> "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0 (was 1 before the web/blog section below); `tools/gaps_check.py mornington-1798` -> "OK keep-going mornington-1798: keep going: 3 internal gap(s), 3 step(s) untried", exit 0.
+
+**Effect on the order (ASKS row 12 / REQUEST.md):** D623/5 joins D623/23 as print-attested on date and subject and should
+not be paid for as a fresh recovery candidate before the key test; D623/24 the same pending a read of Ingram's letter
+no. 15/16. Neither file was changed beyond a dated correction note in REQUEST.md; the ASKS row is the parent's.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: unmeasured. No ciphertext, despatch image or key image is on disk (folder holds only NOTES.md and REQUEST.md), so no token count exists. By item: 12 cipher-bearing items (D623/4, /5, /10, /11, /22, /23, /24, /27, /28, /30, /35, /36; copies /29, /37; key /41). Of these, 1 has known plaintext in print (D623/23, Martin 1836 Vol. 1, "Print check" 23 Sept 2026), 1 is cataloguer-noted "decoded" (/10) and 1 is "partly decoded" (/11), with neither decipherment seen by us. Re-checked 2 Oct 2026 00:53 UTC by one searcharchives.bl.uk JSON request (42 records): the items whose catalogue text mentions cipher are exactly this list, so no in-fonds cipher item is missing.
 - D623/41 (key, both copies) + D623/4 (3 Jul 1798, test despatch) - blocker: waiting-on ASKS row 12 (BL Digitisation Services reply, order submitted 23 Sept 2026); no reply is logged in ROOM.md or outreach/ as of 2 Oct 2026, and there is no online image (BL IIIF dead since 2023, CLAUDE.md hosts table)
 - D623/5, /22, /24, /27, /28 (+/29), /30, /35, /36 (+/37) - blocker: waiting-on ASKS row 12 (BL reply; REQUEST.md "If the test batch images well" gates the follow-on order on the key reading D623/4); not ordered, and imaging is the only route to the ciphertext. Also: D623/10 asks Dundas for "a less cumbersome cipher", so /41 may cover only the 1798 despatches, and the follow-on order should include the /10-/11 controls (next gap)
-- Clear-page and crib set: D623/23 (printed in clear, Martin Vol. 1), /10 ("decoded"), /11 ("partly decoded"), plus clear neighbours on the same subjects: D623/2 and /3 (20 Jun 1798, the Mauritius proclamation and the mobilisation orders, same subject as cipher /4-5), D623/25 (26-27 Oct 1799, settlement of Mysore) and /26 (memorandum on settlement), same subject as /24's "memorandum in cipher detailing the proposed settlement" - blocker: not-attempted; REQUEST.md lines 16-19 say "do not order" /23 and list /10-/11 as optional only. The printed /23 text was never saved to the folder (Martin djvu sat in a scratchpad, "Print check, part 2"). The clear neighbours and the printed Malartic proclamation (Jan 1798) and Partition Treaty of Mysore (22 Jun 1799), the likely cribs for /4-5 and /24, were never identified; next: refetch Martin Vol. 1 djvu (india.history.resource.35304) once, save D623/23's printed text and any printed text of /2, /3, the Malartic proclamation and the Mysore partition papers as crib files, and draft an amendment to REQUEST.md/ASKS 12 adding /23, /10, /11 to the follow-on order (payment stays with the owner), ~$3
+- Clear-page and crib set: D623/23 (printed in clear, Martin Vol. 1), /10 ("decoded"), /11 ("partly decoded"), plus clear neighbours on the same subjects: D623/2 and /3 (20 Jun 1798, the Mauritius proclamation and the mobilisation orders, same subject as cipher /4-5), D623/25 (26-27 Oct 1799, settlement of Mysore) and /26 (memorandum on settlement), same subject as /24's "memorandum in cipher detailing the proposed settlement" - blocker: not-attempted; REQUEST.md lines 16-19 say "do not order" /23 and list /10-/11 as optional only. The printed /23 text is now saved (`print/D623-23_martin1836_v1_p587.txt`, GAPS 2 Oct 2026) and the 6 Jul 1798 letter that is D623/5's date and subject with it (`print/D623-5_candidate_martin1836_v1_p80.txt`); Martin Vol. 1's OCR is kept in `print/35304_djvu.txt`, where the Malartic proclamation sits at normalised offsets 8948 (French) and 9831 (English), the 20 Jun 1798 Harris letter at 171565, so the crib extraction needs no refetch. The clear neighbours and the printed Malartic proclamation (Jan 1798) and Partition Treaty of Mysore (22 Jun 1799), the likely cribs for /4-5 and /24, were never identified; next: from `print/35304_djvu.txt` (on disk) extract the Malartic proclamation, the 20 Jun 1798 Harris letter (/2-/3's subject) and the Mysore partition papers as crib files, and draft an amendment to REQUEST.md/ASKS 12 adding /23, /10, /11 to the follow-on order (payment stays with the owner), ~$3
 - Counterpart copies outside D623 (Wellesley's own retained letter-books and Dundas correspondence in the BL Wellesley Papers Add MS series; IOR Home Misc/Board of Control secret correspondence; Melville papers at Clements, Duke, NRS GD51, NLS) - blocker: not-attempted; outside the D623 fonds no sibling series was ever searched (grep 2 Oct 2026: no hit outside this folder; LEDGER rows 81, 82, 654 are print checks only). A clear retained copy or a recipient's decipherment would give plaintext without imaging; next: one Sonnet worker on searcharchives.bl.uk JSON (Wellesley Papers Add MS, IOR/H, Board of Control) for the nine despatch dates and cipher/decipher 1798-1800, plus the Clements Melville Papers finding aid, logging NRS (egress-blocked) and NLS (Cloudflare) as unreachable, ~$4
-- Print residual for D623/4, /5 (3 and 6 Jul 1798) and /24 (7 Jun 1799), and Ingram 1970 by date - blocker: not-attempted; NOTES line 99 says /4-5 were "not checked against Vol. 1 ... (budget)". "Print check, part 2" covered only /22 and the 1800 items. So /4, /5 and /24 were never phrase- or date-searched in Martin Vol. 1, the 1877 Selection or the 1914 Wellesley Papers. The "Verdict (updated 23 September 2026)" and REQUEST.md lines 8-11, which list them as not found in six editions, over-state the search; the classifier also missed the 1877 and 1914 volumes here. Ingram was searched by date only for 5 Mar and 9 Jul 1800; next: grep the three editions' djvu for the three 1798-99 dates and catalogue phrases (sharing the Martin Vol. 1 fetch with the gap above), and run be-api fts on twoviewsofbritis0000melv for the other 7 dates in two date forms each, with a known-date control, ~$2
+- Print residual for D623/4, /5 (3 and 6 Jul 1798) and /24 (7 Jun 1799), and Ingram 1970 by date - blocker: not-attempted; RESULT 2 Oct 2026 (GAPS section above): the three-edition grep and the 7-date Ingram pass are done -- D623/5's date and subject printed in Martin Vol. 1 No. XXII and Ingram private no. 6; D623/24's date printed in Ingram private no. 15 [recte 16] (body unread, no page from be-api); D623/4, /22, /28, /30 absent from Ingram by date with a working control; D623/35's date only in an Ingram footnote citing Add MS 13751 f.77 and Martin Vol. 2 p. 311. What remains internal is the content check: whether Ingram's 7 Jun 1799 letter carries the Mysore memorandum, and whether Martin Vol. 2 p. 311 prints the 21 Jun 1800 letter (D623/35); the 23 Sept pass searched Vol. 2 by date only and kept no text; next: refetch Martin Vol. 2 djvu (india.history.resource.35315) once into print/, read p. 311 and grep for 7 Jun 1799 and 13 Jul 1800, and queue a LOCAL-QUEUE row for a person to read Ingram's letters no. 6 and no. 15/16 in the IA reader (print-disabled tier, no script route), ~$2
 
 ## Escalation (1 Oct 2026)
 - [ ] siblings: Done: the whole D623 fonds read at item level (23 Sept 2026; re-read 2 Oct 2026, 42 records). Only /10 and /11 carry decode notes; /2, /3, /25 and /26 are clear neighbours on the same subjects as cipher /4-5 and /24. DECODE has no D623 record. Never searched: counterpart copies outside D623 (Wellesley Papers Add MS, IOR Home Misc/Board of Control, Melville papers). Planned: the searcharchives.bl.uk JSON and Clements finding-aid pass, ~$4
-- [ ] clear-pages: Known-plaintext items found by catalogue and print but not extracted or ordered: D623/23 printed in clear, /10 decoded and /11 partly decoded per the cataloguer. Crib candidates: clear /2-/3 (Mauritius proclamation) for /4-5, and /25-/26 (Mysore settlement) for /24. Planned: save the printed texts from Martin Vol. 1 as crib files and draft the REQUEST.md/ASKS 12 amendment, ~$3
+- [ ] clear-pages: Known-plaintext items found by catalogue and print but not extracted or ordered: D623/23 printed in clear, /10 decoded and /11 partly decoded per the cataloguer. Crib candidates: clear /2-/3 (Mauritius proclamation) for /4-5, and /25-/26 (Mysore settlement) for /24. Done 2 Oct 2026: /23's printed text and the 6 Jul 1798 letter saved in print/ from Martin Vol. 1, OCR kept on disk. Planned: extract the Malartic proclamation, the 20 Jun 1798 letter and the Mysore partition papers from print/35304_djvu.txt as crib files and draft the REQUEST.md/ASKS 12 amendment, ~$2
 - [x] known-keys: Key D623/41 ("Two copies of key to Lord Mornington's cipher", record 040-002273097) is located in the same fonds and is in the ASKS 12 order. KEY-OFFICES.tsv and KEY-DESIGN.tsv have 0 rows for Mornington, Wellesley, Dundas, India or Bengal (grepped 2 Oct 2026). Cryptiana snapshot: only web/maitland.htm, which is Arthur Wellesley's Peninsular practice, a different key. Bourdeau and Aymeloglu catalogues: no hit. design_prior.py cannot run without ciphertext
-- [ ] print: Done: Martin Vols 1-5, the 1877 Selection and the 1914 Wellesley Papers for /22 and the 1800 items (23 Sept 2026); Ingram 1970 via be-api fts with a Dundas control (25 Sept 2026). Result: /23 printed (found-solved), no hit for the rest. Not done: /4, /5 and /24 in all three editions, and 7 of the 9 dates in Ingram. Planned: the djvu grep and be-api date pass, ~$2
+- [ ] print: Done: Martin Vols 1-5, the 1877 Selection and the 1914 Wellesley Papers for /22 and the 1800 items (23 Sept 2026); Ingram 1970 via be-api fts with a Dundas control (25 Sept 2026); Martin Vol. 1, Owen 1877 and the 1914 volumes for /4, /5, /24 and Ingram for all 7 remaining dates with a date-form control (2 Oct 2026, GAPS section). Result: /23 printed (found-solved); /5's date and subject printed in Martin Vol. 1 No. XXII and Ingram no. 6; /24's date printed in Ingram no. 15/16; no hit for /4, /22, /27, /28, /30, /36; /35 only via an Ingram footnote to Martin Vol. 2 p. 311. Not done: the Vol. 2 p. 311 read and the Ingram body read. Planned: the Vol. 2 refetch and LOCAL-QUEUE row, ~$2
 - [n/a] key-rebuild: nothing reads yet to extend from; no ciphertext or key image is on disk until the ASKS 12 photographs arrive
 - [n/a] image-check: no image of any D623 item is on disk (BL IIIF dead since 2023), so there are no doubtful tokens to re-read
 - [n/a] retry: no reading and no extended key exist yet, so there are no unread groups to rerun or regrade
-Verdict: keep going: 3 internal gaps; cheapest next: grep Martin Vol. 1, the 1877 Selection and the 1914 Wellesley Papers for D623/4-5 and /24, and run be-api fts for 7 Ingram dates, saving D623/23's printed text from the same Martin fetch, ~$2
+Verdict: keep going: 3 internal gaps; cheapest next: refetch Martin Vol. 2 djvu (india.history.resource.35315) once into print/, read p. 311 for the 21 Jun 1800 letter (D623/35, per Ingram's footnote to Add MS 13751 f.77) and grep it for 7 Jun 1799 and 13 Jul 1800, and queue a LOCAL-QUEUE row for a person to read Ingram's letters no. 6 (6 Jul 1798) and no. 15/16 (7 Jun 1799) in the IA reader, ~$2
+
+## Web and blog check (GAPS-mornington-1798, 2 Oct 2026)
+Run 2 Oct 2026 01:58-02:05 UTC per `.claude/briefs/check-solved.md` "Required step: Open web and blog comment threads"
+(the intake gate exited 1 on this target only for the missing section).
+(a) Plain web searches (10 queries): "Lord Mornington Henry Dundas 1798 despatch cipher decoded"; `"Mss Eur D623" cipher`;
+`"Lord Mornington's cipher"` (the D623/41 catalogue phrase, in quotes); "Mornington Wellesley despatches to Dundas
+1798-1800 cipher India Office key" (the folder title); `Wellesley Dundas 1799 "in cipher" Seringapatam despatch
+deciphered India Office Mss Eur`; "Mornington Wellesley Dundas cipher solved Claude GPT" (model-solve announcements);
+plus the engine's own three refinements under the first query. Hits: Wikipedia and ship/peerage pages, the Ingram 1970
+bookseller listings (AbeBooks, Biblio, Semantic Scholar record), the Cambridge Library Collection reprint of Martin's
+Despatches, and lifeofwellington.co.uk chapter 5 ("Mornington and the Indian Scene") -- opened, no mention of cipher,
+cypher, code or ciphered despatches anywhere on the page or in its comments. No hit names D623, the key, or any
+decipherment of these despatches.
+(b) Blog site searches: Cipherbrain -- engine `site:scienceblogs.de klausis-krypto-kolumne Mornington Wellesley Dundas`
+(one Wellesley hit: "Die Raetsel-Grabsteine von Monmoth und Wellesley", 21 Dec 2014, a gravestone in Wellesley, Ontario;
+opened, post and its 5 comments mention no Mornington, Dundas, India or despatch) and the blog's own search
+`?s=Mornington` (0 posts); Cryptiana -- `sources/cryptiana/` grepped on disk for mornington/D623/wellesley (only
+web/maitland.htm, Arthur Wellesley's Peninsular practice, already logged 23 Sept; the one "d623" string is a file hash in
+the manifest), engine `site:cryptiana.blogspot.com Mornington Wellesley Dundas cipher` (0 blog hits), and the blog's own
+search `search?q=Mornington` and `search?q=Wellesley` (0 posts each); Cipher Mysteries -- engine
+`site:ciphermysteries.com Mornington Wellesley Dundas` (0 hits) and the site's own search `?s=Mornington` and
+`?s=Wellesley+Dundas` (0 posts each).
+(c) Every plausible hit opened and its comment thread read: 2 pages (the Cipherbrain gravestone post, lifeofwellington
+chapter 5). 0 comments about this item.
+Result: no decipherment or plaintext of any D623 cipher item located by these queries on 2 Oct 2026 (a search result,
+not a novelty verdict, rule 10). Status word unchanged. Requests: scienceblogs.de 2, ciphermysteries.com 2,
+cryptiana.blogspot.com 2, lifeofwellington.co.uk 1, web-search engine 10.

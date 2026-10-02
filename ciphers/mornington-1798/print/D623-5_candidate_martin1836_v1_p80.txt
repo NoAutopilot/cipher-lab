@@ -1,0 +1,319 @@
+# Candidate printed text for D623/5 (6 Jul 1798) -- Martin, Despatches ... of the Marquess Wellesley, Vol. 1 (1836),
+# No. XXII, p. 80 ff.: The Earl of Mornington to the Rt Hon. Henry Dundas, Fort William, 6 July 1798, opening 'With my
+# Letter, No. 5, dispatched overland, I transmitted to you a copy of the Proclamation issued by the Governor of the
+# Isle of France'. The same letter is printed in Ingram 1970 (be-api fts hit: 'Earl of Mornington to the Rt Hon. Henry
+# Dundas 6 July 1798, Fort William Private: no. 6'). Source: archive.org india.history.resource.35304, 35304_djvu.txt
+# (OCR, uncorrected), span 206921-237045 of the normalised text (ends before No. XXIII, Harris to Mornington, 6 July).
+# The BL catalogue dates D623/5 6 Jul 1798 as the duplicate of D623/4 (3 Jul 1798, 'original letter appended to a
+# despatch in cipher re the Mauritius proclamation'); this is the clear private letter of that date and subject, not
+# a reading of the cipher despatch. Grade C for the printed letter only. Saved GAPS-mornington-1798, 2 Oct 2026.
+
+No. XXII. The Earl of Mornington to the Right. Hon. Henry Dundus, &c. &. §c. My pear Sir, Fort
+William, July 6, 1798. With my Letter, No. 5, dispatched overland, I transmitted to you.a copy of
+the Proclamation issued by the Governor of the Isle of France, so long ago as the month of February
+last.* The first appearance of this Proclamation at Calcutta was in a newspaper of the 8th June, and
+the apparent im- pudence and rashness of divulging to the world the matter which the Proclamation
+contains, induced me to doubt its authenticity, until within a few days of the date of my last
+«despatch to you, when I received authentic copies of the Proclamation from Lord Macartney and from
+Sir Hugh Christian at the Cape. Even in the state of uncertainty which preceded the receipt of the
+despatch from the Cape, I thought it advisable, by a private letter, dated 9th June, to call the
+attention of the Governor of Fort St. George to the possibility of my being compelled to assemble
+the army upon the coast at an early period. Since that time I have received information, the
+correct- ness of which being corroborated from various quarters, ena- bles me to state the nature
+and circumstances of Tippoo’s late conduct in a connected form. — - Tippoo dispatched two
+Ambassadors to the Isle of France, who arrived at that island at the close of the month of January,
+hoisted Tippoo’s colours upon entering the harbour of Port Nord Ouest, were received publicly by the
+French Government with every mark of distinction, and entertained at the public expense during their
+continuance in the island. Previous to their arrival, no idea existed in the island of the
+probability of a war between Tippoo and the Company, nor the least rumour of an intended levy of men
+to be made for Tippoo in that quarter. The Proclamation issued two days after the arrival of the
+Ambassadors, was assiduously circulated through the town of Port Nord Ouest, and publicly
+distributed at the house inhabited by the Ambassadors. One of the Ambassadors spoke the French
+language, and they were accompanied by a person in the Turkish dress who spoke‘French and English *
+See Appendix. 1798. THE RIGHT HON, HENRY DUNDAS, 81 with uncommon correctness and fluency, and also
+appeared ' to be master of most of the country languages. This person had been known at Bussorah
+under the name of Abdoolah, at Surat under that of Dervish, and at the Mauritius passed under that
+of Talamas: he appeared to answer the descrip-~ tion of one of the Agents of France mentioned by Mr.
+Wick~ ham. The Ambassadors openly and on every public occa- sion avowed the propositions contained
+in the Proclamation ; and Talamas’s conversation, though with more appearance of caution and
+mystery, corresponded in substance with theirs. An universal belief prevailed in the Isle of France,
+subse- quent to the arrival of the Ambassadors, that Tippoo would make an immediate attack on the
+British possessions in India, but the temerity of his design was the subject of general ridicule.
+You will observe in the Proclamation a direct reference made to the powers of the Ambassadors with
+respect to settling the pay and final discharge of the recruits to be raised. The Ambassadors
+publicly acted under this refer- ence, and concluded engagements with the recruits in the name of
+Tippoo. Propositions were also made to a large body of the regular troops of France to enter into
+the service of Tippoo. This was rejected, and these troops some time afterwards were embarked for
+France,* in consequence of the disturbances which prevailed in the island. But notwith- standing the
+rejection of the proposition made to the main body of the French force in the island, one hundred
+officers (few of much experience or skill) and fifty privates of the lowest class of the democratic
+rabble of the island, were actually inlisted under the Proclamation. With this force the Ambassadors
+embarked on the 7th March, under every public honour from the Government, on board the French
+frigate, La Preneuse, declaring an intention of proceeding to the Island of Bourbon for the purpose
+of obtaining addi- tional levies of men. The force so raised has since been landed at Mangalore,
+about the middle of April. Accounts vary with respect to their number, but the most probable
+intelligence is, that it does not exceed two hundred. What- ever may be its amount, the whole force
+has been received * Batavia was their subsequent destination. VOL. I. @ 82 THE EARL OF MORNINGTON,
+TO July, into Tippoo’s service with public marks of favour and honour. But whatever construction may
+be put upon the policy of ‘\M. Malartic in this extraordinary measure, the intentions of [Tippoo
+Sultan admit of no question. He has entered into offensive and defensive engagements with the
+French, col- lected a force under those engagements, suffered that force to land in his country,
+admitted it into his service, and declared publicly through his Ambassadors that his pre- parations
+of war are complete, and that their object is the entire subversion of the British empire in India.
+That he has not yet obtained a force equal to the magni- tude of his design is a fortunate
+circumstance for our interests, but no justification of his aggression. The rashness, imbe- \_-
+tility, and consequent ill success of his councils can never be admitted to palliate the unqualified
+hostility of his actions; and on every principle of public faith, and of the law of nations, it
+cannot be denied that he has violated the subsist- ing treaties between him and the Company, and
+that his pro- ceedings have been equivalent to a declaration of war. Under such circumstances it
+became not only my right but my duty to take advantage of the moment of his actual weakness, and to
+strike an immediate blow against his pos- sessions, for the purpose of frustrating his preparations
+for war before he could receive the succours which it appears by the Proclamation he had demanded
+from the Executive Directory of France, as well as from the Government of Mauritius. The objects
+which appeared to me the most desirable, as well as the most easily attainable, were, first, to
+seize the whole maritime territory remaining in his possession below the Ghauts, on the coast of
+Malabar, in order to preclude him from all further communication by sea with his French allies.
+Secondly, by marching the army from the coast directly upon his capital, to compel him to purchase
+peace by a formal cession of the territory’ seized on the coast of Malabar. Thirdly, to compel him
+to defray our whole expense in the war, and thus to secure the double advantage of indemnify- ing us
+for the expense occasioned by his aggression, and of reducing his resources, with a view to our
+future security. 1798. THE RIGHT HON. HENRY DUNDAS. 83 Fourthly, to compel him to admit
+permanent.residents -at his court from us and from our allies, a measure which would enable us at
+all times to check his operations, and to coun- teract the intricacies of his treachery. Fifthly, to
+make the expulsion of all the natives of France now in his service, and the perpetual exclusion of
+all French- men, both from his army and from his dominions, conditions of any treaty of peace with
+him. Every motive of justice and policy appeared, and still appears, to me to demand the adoption of
+this or of some similar plan for reducing the power of Tippoo to such a condition as shall render
+him unable to avail himself of the solicited assistance of France, or of any other collateral aid
+which the course of future circumstances may offer to him, for the prosecution of his declared
+design of expelling the British nation from India.* The measure is not less neces- sary for the
+purpose of applying a seasonable check to the rising influence of France in India. The present state
+of our army in the opinion of all military men, leaves no doubt of the ultimate success of the plan
+which I have stated; and if its speedy accomplishment had appeared to me as certain as its ultimate
+success, I should not have hesitated one moment in ordering the movement of the troops for that
+purpose. But upon consulting the per- sons most conversant with military details, I found that the
+actual state of the frontier fortifications of the Carnatic, of the train of artillery, and of the
+stores of grain and other provisions, was such, as not to admit of any sudden move- ment of a large
+force, although it appeared certain that such a force might be collected within a very short space
+of time. I also found that the expense of making the necessary pre- parations would be very heavy,
+and that the result was likely to lead to a protracted and expensive, although, according to every
+opinion, a successful war. ' The present reduced state of the courts at Poonah and Hyderabad
+admitted né hope of immediate assistance from either of those powers, and the embarrassment of our
+finances, which had so lately engaged my most serious attention, now + pressed with accumulated
+weight upon my mind. Under * This was the language of Tippoo’s circular to the Princes of India. J
+84: THE EARL OF MORNINGTON, TO July, all these circumstances, I felt with the utmost degree of pain
+“and regret, that the moment was unfavourable to the adop- tion of the only measure which promises
+effectual and per- manent security to the territories committed to my charge, and that such a step
+was absolutely impracticable without a considerable reduction of the commercial investment, attended
+by all the destructive consequences which such a blow must produce upon the trade of the Company,
+upon their pecu- niary affairs at home, upon the welfare of their subjects in India, and finally,
+upon the general situation of the public revenue and credit of Great Britain. I was also aware of
+the evil effects which the mere fact of a war breaking out in this quarter might produce in England,
+under all the anxiety and pressure of the present moment. These reflections led me to the
+determination of relin- quishing the idea of making an immediate attack upon the possessions of
+Tippoo; but I still felt that our reputation and honour, as well as our future security, demanded
+that I should not suffer his late proceedings to pass without notice ; and I am persuaded that you
+will agree with me, that our tacit submission, under an insult and injury of so offensive and
+aggravated a nature, would greatly elevate the credit and hopes of Tippoo and of France, and
+occasion a propor- tionate depression of our influence and consideration in the eyes of our allies,
+and of all the Native Powers of India, On the other hand, the result of his embassy having only
+served to expose his treachery, and the weakness of the enemy in this part of the world, a
+remonstrance of a firm but temperate spirit will be sufficient to satisfy our honour, and to
+convince the Native Powers that our moderation alone induces us to abstain from that more rigorous
+course of which his conduct would furnish the ample justification, and of which our strength insures
+the certain success. I have therefore called upon Tippoo to make a public disavowal of the
+proceedings of his Ambassadors; to declare distinctly the nature of his intentions towards us and
+our allies, and particularly to explain, without disguise, the destination of the force raised in
+the Isle of France, and lately landed at Mangalore. Ihave communicated the Proclamation in question,
+toge- ther with a statement of all the circumstances attending the 1798. THE RIGHT HON. HENRY
+DUNDAS. 85 transaction, to the courts of Poonah and Hyderabad; and I have claimed their concurrence
+in the representation to be made to Tippoo, and the co-operation of their respective forces in the
+event of Tippoo’s refusing to listen to the joint remon- strance of the allies, and of his
+compelling us to resort to arms. The experience of Tippoo’s recent conduct evidently proves that we
+may be deceived, if we found our calculation of his movements upon the ordinary principles of
+prudence and discretion. It is therefore possible that he may reject our moderate requisition, and
+suddenly involve us in a war. T have therefore thought it prudent to direct the army to be assembled
+upon the coast of Coromandel, and similar mea- sures of preparation to be taken at Bombay, but with
+no intention of employing any part of the force in active opera- ‘tions, unless Tippoo should either
+refuse to make the required explanation, or should at once commence war against our possessions. The
+nature of the present crisis appears, how- ever, both to demand and to favour the execution of
+further measures of precaution, which will afford additional security to us in the event of war, and
+which may contribute to avert that calamity. In my Letters, Nos. 1 & 2, dispatched by Admiral
+Pringle from the Cape of Good Hope, I submitted to you my appre- hensions with respect to the
+declining state of our alliances in India, to the unfavourable change which had taken place in the
+relative situations of the several states of India with reference to our interests; and above all, I
+warned you of the growing influence of France in the armies and councils of the Native Powers. I now
+feel the full weight of the evil which I then anticipated. With a due confidence in the single
+strength of our own arms, we must acknowledge that, without the co-operation of the Mahrattas and
+the Nizam, and particularly of the latter, at least to the extent of faci- litating our convoys of
+provisions and stores, a protracted campaign in Mysoor would be attended with great difficulty, if
+not with danger. The situation of the courts of Poonah and Hyderabad is become much more alarming
+than I stated it to be in my letters from the Cape. If Tippoo were to attack us in the present
+moment, we could derive no assist- ance whatever, either from the Nizam or from the Peishwa; VJ 86
+THE EARL OF MORNINGTON, TO July, both those powers, in their actual condition, being utterly
+disqualified from fulfilling their defensive engagements with us. Scindiah, who, with the greater
+part of his army, has been for along time in the neighbourhood of Poonah, has imprisoned Nana
+Furnavese, has usurped the whole autho- rity of the Peishwa, leaving however his person at liberty,
+and at the same time has threatened the dominions of the Nizam. -In the meanwhile the French army at
+Hyderabad has been augmented to the number of 14,000 men; and although the death of M. Raymond, and
+the resumption of the Jaghire granted for the maintenance of the army, have to a certain degree
+reduced the political power of this faction, yet the command having been conferred on another
+Frenchman, and the number of the corps greatly increased and its discipline considerable improved,
+the French party at Hyderabad can? not be said to be in any degree less formidable to the inde-
+pendance of the Nizam, or to our interests, than I represented it to be in my letters from the Cape;
+and I learn by letters received this day from the Resident at Hyderabad, that since M. Perron has
+taken the command, numbers of French officers have been added to it, and more are expected, al-
+though the routes by which they are introduced into the Deccan are as yet unknown. The danger to be
+apprehended from this party is much aggravated by two circumstances which have recently happened;
+the one that Scindiah has placed the corps lately commanded by M. De Boigne in the hands of a
+Frenchman; the other, that Tippoo Sultan (who was supposed to have been apprenhensive of the growth
+of a French faction at Seringapatam) has manifested a disposi- tion to admit French officers and
+privates to an unlimited extent into his service. It is probable the expectation of crushing the
+Nizam and the Peishwa, by a co-operation with the French officers in the armies of the Nizam and
+Scindiah, as well as the hope of founding upon the ruins of the Courts of Poonah and Hyderabad an
+influence which might rival if not destroy the British power, may have reconciled Tippoo to the
+perilous experiment of cultivating French principles in an Asiatic court. Azim ul Omra, the Nizam's
+minister, is fully aware of the present danger of the Nizam’s dominions: exposed to the attack of
+Scindiah on the one side, and to 1798. THE RIGHT HON. HENRY DUNDAS. 87 the intrigues of the French
+faction on the other, and he has repeatedly applied for an increase of the British detachment
+serving with the Nizam, promising that our agreement to that increase shall be immediately followed
+by the dismission of “ the whole of Perron’s corps. A common apprehension of the designs of Scindiah
+has produced an union of interests be- tween the Courts of Hyderabad and Poonah; and negotiations
+have been in agitation, with a view to their mutual security against that danger which threatens
+equal destructien to both. On the other hand, the Peishwa has expressed his desire to enter into new
+engagements with us, and the Resi- dent at Poonah has declared that if, under the circumstances of
+Tippoo’s preparations, it were thought advisable to send a British detachment to Poonah, Scindiah
+could not on any just ground object to such a movement, and that the mere presence of a British
+force would effectually restore the power \ and authority of the Peishwa. ‘There can be no doubt
+that the inefficient state of our alliances has been one main ground of Tippoo’s late proceedings;
+and this circumstance may ac- count in some degree for the audacious and confident spirit which
+marks the character of those measures. In the pre- sent posture of affairs, the position of
+Scindiah’s army ; operates as an effectual check upon the motions of both our Allies, and prevents
+either from affording us the assistance to which we are entitled by treaty. Thus Scindiah in reality
+renders the most useful service to Tippoo, and frustrates the whole object offour defensive
+alliance; in the meanwhile dis- sensions have broken out in the army of Scindiah, whose violence,
+impetuosity, and injustice have disgusted all the ancient connections of his family. His dominions
+upon the north-western frontier of India are in a state approaching to V general revolt; and,
+although in the present weakness of the internal governments of the Nizam and the Peishwa, Scin-
+diah is viewed with terror by both, there is no doubt that he is not in a condition to oppose any
+measures which we might think necessary to take for restoring the consideration and strength of
+either; and it is more than probable that the result of such measures would be to restrain his
+projects of aggrandizement and ambition, and to induce him to return peaceably into his own
+dominions. In this conjuncture, there- fore, neither the Nizam nor the Peishwa are likely to view 4
+88 THE EARL OF MORNINGTON, TO duly, with any jealousy the assistance which we might chuse to afford
+to either, while any opposition to such an arrangement on the part of Scindiah would be wholly
+unjustifiable and ineffectual. The enlargement of our subsidiary arrangements with the Nizam, and
+the conclusion of similar engagements with the Peishwa under similar restrictions, confined to the
+case of defence against Tippoo, would have been justifiable measures under any circumstances, but
+the aggression of Tippoo places the arrangement on the most impregnable grounds of justice with
+respect to Scindiah or any other Power, while the accidental coincidence of the interests of the
+Peishwa and of the Nizam affords a reasonable expectation of success. Under all these circumstances,
+I have thought it advisable to give to the Residents at Poonah and Hyderabad a power of requiring a
+body of troops from Bombay and from Madras, directing that the dismission of the French army at
+Hydera- bad should be a necessary condition of the increase of the British detachment at the Nizam’s
+court, and connecting the whole arrangement with various advantages which we may hope to secure by a
+new system of treaty, both with the Nizam and with the Peishwa. And I have further ordered that no
+step towards a new arrangement should be taken at either Court without the previous consent and
+approbation of the other, and without their mutual acceptance of my arbitration for the final
+adjustment of all subsisting dif- ferences between them. - It was necessary on this occasion to
+instruct the Resident at Hyderabad, with respect to the succession to the Nizam’s throne in the
+event of his death. As the Nizam has lately admitted Secunder Jah, his eldest son, to the personal
+exer- cise of certain acts of sovereignty, which admission is deemed at that Court a virtual
+nomination to the succession, as Secunder Jah is a friend to the British interests, and as none of
+the younger sons can reach the throne by any other means than by the assistance of the French and
+Tippoo (with whom they are intimately connected,) and by the total destruction of our influence, I
+have directed the Resident to support the right of Secunder Jah. The detail of the principles of
+this decision will be forwarded to you by the next despatch. Overtures of the most friendly nature
+have been made to 1798. THE RIGHT HON. HENRY DUNDAS. 89 this Government by the Rajah of Berar, who
+has entered into engagements with the Nizam for the purpose of restrain- ing the ambition of
+Scindiah; without deciding at present how far it may be advisable to cultivate a closer connection
+with the Rajah of Berar, it is my intention to send an Ambassador to his Court, with the double view
+of ascertaining his pre- cise objects, and of checking the motions of Scindiah, who will take alarm
+whenever the news shall reach him of any intercourse being established between this Government and
+the Rajah of Berar. I have lately received a letter from Zemaun Shah, contain- ing a declaration of
+his intention to invade Hindostan, and a peremptory demand of the assistance of the Nabob Vizier and
+of mine, for the purpose of delivering Shah Aulum from the hands of the Mahrattas, of restoring him
+to the throne of Delhi, and of expelling the Mahrattas from their acquisitions on the north-western
+frontier of India. It is very difficult to form a conjecture with respect to the proba- bility of
+Zemaun Shah's being able to execute his romantic design: That he entertains such a design is
+unquestionable ; and whatever may be the result, it is prudent to be on our guard, and in the
+meanwhile to derive every collateral advan- tage from his declaration. I have therefore transmitted
+the Shah’s letter to Scindiah through the Resident at Poonah, with the view of suggesting to
+Scindiah the possible danger of his hereditary dominions; and I have’expressed my entire
+disapprobation of the ambitious projects of Zemaun Shah, and my disposition to enter into defensive
+engagements with Scindiah, for the purpose of frustrating the threatened inva- sion, declaring to
+Scindiah that, whenever he shall return into his own dominions, he will find the British Resident at
+his durbar prepared to conclude such a defensive treaty, in which it is my wish to include all the
+Allies of the British Government. I have also signified to Scindiah, in the most amicable terms, my
+desire to witness his prosperity within the limits of his own dominions. As Scindiah must be
+perfectly aware of the disturbed state of his dominions, and must know that we hold his fate in our
+hands, I have every reason to hope that my endeavours to restore our Allies to the power of
+fulfilling 90 THE EARL OF MORNINGTON, TO July, their engagements with us, will not be delayed by any
+oppo- sition from him. But feeling the great importance of pre- venting the destruction of the power
+of the Peishwa and of the Nizam, whose dominions, in the event of Scindiah’s success, would
+immediately be divided between Scindiah, Tippoo, and the French, and whose ruin would furnish the
+most solid foundation for the power of the latter, I have directed the Resident at Poonah, if
+pacific representations should be rejected by Scindiah, to inform him that the British force will be
+employed for the protection and support of the authority of the Peishwa, and if necessity should
+demand, the employment of the force for those purposes, I have authorized that measure, provided, in
+the opinion of the commanding officer of the detachment, the force should be deemed adequate to the
+service required. I trust, however, that no such necessity will occur, and that Scindiah’s sense of
+his perilous situation and real interest, added to the state of his army and of his dominions, will
+induce him to abandon his project of annihilating our allies; and I therefore hope that, in the
+course of a few months, I shall have the satis- faction to find, that the result of these
+arrangements will have produced a considerable check to the growing influence ofthe French in India,
+will have effected the re-establishment of our allies in some degree of credit and efficiency, and
+will have restored the general balance of power upon the founda- tions on which it stood at the
+conclusion of the Treaty of Seringapatam. In any view, the effect of such a change in the face of
+affairs must be favourable to us, it may induce Tippoo to postpone the execution of his
+comprehensive plans of vengeance, or if not, it will enable us to frustrate them with more facility
+and dispatch. A full detail of my communication with Tippoo, with Scindiah, and with the Courts of
+Hyderabad and Poonah, together with a more particular statement of the principles upon which the
+whole arrangement is founded, will be dis- patched overland by express to the Secret Committee in
+the course of a few days; in the meanwhile I thought it would afford you satisfaction to receive, by
+the earliest opportunity, the general outline of the system which I have deemed it my duty to
+pursue. 1798. THE RIGHT HON. HENRY DUNDAS. 91 While Tippoo shall possess the means of a ready inter-
+course with the French by sea, our possessions in India must for ever be exposed to alarm and
+danger, unless we are always careful to maintain our preparations for war in such an advanced state,
+as will at any time afford us the facility of sudden and rapid movements of our military force; I
+have therefore directed the government of Fort St. George to take immediate measures for placing in
+a respectable posture of defence such of the frontier fortresses as Lord Cornwallis directed to be
+maintained; and I have ordered that a provi- sion of grain, sufficient for a large army in the field
+for three months, be constantly stored in these fortresses, and that monthly returns of their state
+be forwarded to me. I have also ordered that a large train of artillery be immediately provided, and
+constantly kept in readiness for use in the field, either at Arnee or Vellore, and that periodical
+reports of the condition of this train of artillery be made to me. I propose that these two
+regulations, although they must be the source of considerable expense, should be permanent, until
+some material alteration shall take place, either in the appearance of affairs in Europe or in
+India. Having thus submitted to you the general view of the steps which I have taken for providing
+against the event of a war with Tippoo, I should think myself guilty of a breach, both of public
+duty and of private friendship, if I withheld my conscientious opinion, that the interests of the
+Company in India can never be secure while Tippoo Sultaun shall retain the ready means of
+intercourse by sea with the French Government. His remaining territory on the coast of Malabar is
+his most powerful instrument of war; and in my decided judgment, it would be the most economical
+policy which could be adopted to seize the first just occasion of depriving him of so formidable an
+engine of hostility, even at the sacrifice of a temporary suspension of the investment, and of a
+considerable present expense. Upon this important sub- ject I wish to receive your instructions
+without delay. If the war should continue in Europe, there is little doubt that the impetuosity of
+Tippoo will afford frequent justifiable oppor- tunities to this Government of reducing his power. My
+wish is to know distinctly whether the Company be prepared to encounter the temporary inconvenience
+which must be en- 92 GENERAL HARRIS, TO July, dured before they can obtain permanent security for
+their possessions in India. The orders of the Court of Directors, and the opinions of this
+Government, have uniformly concurred in declaring, that “the landing of any considerable French
+force in Tippoo's country must be the signal for an attack upon him.” I wish to know exactly,
+whether the term “ considerable,” which I observe is constantly used, is to be construed as a
+limitation of my discretion. It appears to me that the land- ‘ing of any French force in Tippoo’s
+country is a sufficient ground of war, upon every principle both of justice and of policy; but more
+especially, after the public declaration which he has made of his designs against our possessions.
+Any other construction will compel this Government to re- main an inactive spectator of his
+preparations for war in conjunction with France; provided only that these prepara- tions be made
+gradually, and that the French force be in- troduced into his country in small detachments. The
+systematic introduction of French officers into the service of all the Native Powers of India, which
+Mr.Wickham describes as the fixed policy of France, has been pursued with unremitting assiduity and
+extensive success; if Tippoo should at any time be enabled to derive succour from France, his
+movements might be seconded by the general co-operation of large bodies of French adveuturers, who
+are known to maintain a concert in all parts of India. tay Lhe destruction of the French army at
+Hyderabad would certainly operate as a considerable check to the growth of this formidable evil: the
+corps of Perron being the mainspring of all the designs of the French party in India. But the only
+effectual barrier against the irruption of France into India would be our possession of the whole of
+Tippoo’s maritime territory. Iam, &c. MorNINGTON. No.

@@ -14,6 +14,7 @@ Marquess Wellesley*, ed. Owen; the 1914 *Wellesley Papers*, 2 vols), nor in web 
 snapshot, DECODE's catalogue, or the Bourdeau/Aymeloglu solver catalogues.
 
 D623/23 is **already printed in clear** (Montgomery Martin 1836, Vol. 1) — do not order.
+**Correction, 2 Oct 2026 (GAPS-mornington-1798, NOTES.md "GAPS-mornington-1798" section):** the six-edition sentence above never covered D623/4, /5 or /24, which were first searched on 2 Oct 2026. D623/5's date and subject (6 Jul 1798, the Mauritius proclamation) are printed in Martin 1836 Vol. 1 No. XXII p. 80 and in Ingram 1970 (private no. 6), and D623/24's date (7 Jun 1799) in Ingram 1970 (private no. 15 [recte 16]); treat /5 like /23 for ordering, and hold /24 until Ingram's letter is read. The test batch (D623/41 + D623/4) is unchanged.
 D623/10 and D623/11 are **already noted as decoded/partly decoded by the India Office cataloguer** — not
 novel targets; order only if a legible image of the cipher text itself is wanted for a control/comparison,
 not as a fresh recovery target.
