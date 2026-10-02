@@ -1,0 +1,35 @@
+passage	pos	sign_id	conf	note
+L01	3	T95	M	closed loop on top of stem, bar through stem; not k-like T51
+L01	8	T95	M	closed loop on stem, two bars; rejected T51
+L01	12	T86	M	small, two uprights with ONE long crossbar; not 2-bar T60
+L01	23	T50	M	curled omega with leading hook; not plain T92
+L02	19	T81	H	plain x with curled ends, no epsilon tail; rejected T83
+L03	4	T50	M	curled omega with inner loop; rejected T92
+L03	24	T11	M	digit 8 + 5 touching, no top tick; rejected X_NEW
+L04	4	T50	M	curled omega with inner loop; rejected T92
+L05	7	T42	M	t-like: top bar crossing stem, curved foot; closest T42, X_NEW if cell is strict T
+L05	9	T64	M	plain m; wave sits over following lambda not on m; rejected T13
+L05	11	T86	H	two uprights with one crossbar; rejected T60
+L05	25	T50	M	curled omega; rejected T92
+L06	8	T29	H	epsilon joined by bar to o = one sign
+L06	9	NONE	H	the o is the tail of T29, not a separate sign
+L06	27	X_NEW	M	digit 8 alone (T76 9 follows separately); T46 needs a 6 beside it
+L06	29	T29	H	epsilon bar-joined to o = one sign
+L06	30	NONE	H	o is part of T29
+L07	4	T18	M	wide circle, stem below, no stem above circle; rejected T98
+L07	23	T18	M	wide circle on stem; rejected T98
+L07	29	T50	M	curled omega before theta; rejected T92
+L08	3	T42	M	small t-like cross-topped stem curved foot; rejected X_NEW
+L08	5	T42	M	same t-like mark as pos 3
+L08	10	T50	M	curled omega; rejected T92
+L08	17	T18	M	wide circle, stem below only; rejected T98
+L08	20	T95	M	closed loop atop stem, two bars; rejected T51
+L08	28	T18	M	wide circle, stem below; rejected T98
+L09	1	T29	H	epsilon bar-joined to o = one sign at line start
+L09	2	NONE	H	o is part of T29
+L09	4	T18	M	wide circle, stem enters circle, no protrusion above; rejected T98
+L09	30	X_NEW	M	digit 8 alone at page edge; no 6 visible; rejected T46
+L10	3	T18	M	wide circle on stem; rejected T98
+L10	5	T50	M	curled omega with leading loop (pos 1 is plain); rejected T92
+L10	8	T18	M	wide circle on stem; rejected T98
+L10	16	X_NEW	M	digit 8 alone, followed by separate T76; rejected T46
