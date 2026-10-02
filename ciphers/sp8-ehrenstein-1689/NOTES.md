@@ -1,4 +1,5 @@
 open
+CSP Domestic William and Mary vol. 1 (Feb 1689-Apr 1690; archive.org calendarofstatep01grea_2, djvu full text) grepped by this worker 2 Oct 2026: the item is calendared at p. 387 ("Major d'Ehrenstein to Mons. de Bernsdorff, touching Mons. de Guldenstolp. [S.P. Dom. King William's Chest 6,] No. 68"), a one-line description only, no text or decipherment printed.
 
 # Major d'Ehrenstein to M. de Bernsdorff re M. de Guldenstolp, partly in cypher — TNA SP 8/6/65
 
@@ -24,6 +25,9 @@ specific individuals in this letter.
    confirmed by WebSearch 24 Sept 2026) states SP 8 is nearly all calendared in *Calendar of State Papers
    Domestic, William and Mary*, ed. Hardy and Bateson, 11 vols (1895-1937). Vol. 1 (13 Feb 1689-Apr 1690, the
    window that contains this item) was fetched in full text from archive.org (`calendarofstatep02grea_1`) and
+   [Correction, GF-A2-6, 2 Oct 2026: the identifier `calendarofstatep02grea_1` is vol. 2 (1 May 1690-Oct 1691, its own
+   preface), not vol. 1; vol. 1 is `calendarofstatep01grea_2` and calendars this item at p. 387 -- see the Premise check
+   below. The zero-hit sentence that follows is true of vol. 2 only.]
    grepped for "Ehrenstein," "Bernsdorff"/"Bernstorff," and "Guldenstolp"/"Gyldenstolpe": **zero hits** for all
    variants. TNA's phrasing is "nearly all," not "all," and period German/Scandinavian names are OCR-fragile, so
    this is a real check with a real caveat, not a full clearance — but it is the standard calendar for this
@@ -75,3 +79,26 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Ehrenstein" AND "Bernsdorff" AND 1689 AND cypher`: no relevant hit (0 results, none about the letter).
 - `"Guldenstolp" AND "Ehrenstein"`: no relevant hit (0 results, none about the letter).
+
+## Web and blog check (GF-A2-6, 2 Oct 2026)
+
+Plain web searches (WebSearch, 2 Oct 2026):
+1. `Ehrenstein Bernstorff Gyldenstolpe 1689 letter cipher` -- Tartu/HistoCrypt papers (Fredenburgh Suriname ciphertext 1689; Heusner von Wandersleben 1637), SNL "Bernstorff", Archives cantonales vaudoises record for Andreas Gottlieb von Bernstorff (1649-1726), Britannica 1911 "Cryptography". None about this letter.
+2. `"SP 8/6" cypher King William's Chest` -- TNA series record C13550 and SP 8/6 item records (C18727312, -316, -323, -363, -367, -389); the snippet mentioning "some lines of cypher ... Henning will be able to decipher these lines" is a different SP 8 item (calendared in CSP Dom W&M vol. 2, King William's Chest No. 23), not this one.
+3. `"Major d'Ehrenstein"` (the catalogue's own wording in quotes) -- only Albert Ehrenstein (1886-1950, poet) and unrelated pages; no 1689 officer.
+4. `"Ehrenstein" "Bernsdorff" "Guldenstolp"` -- unrelated Ehrenstein/Bernstorff genealogy and heraldry pages.
+
+Blog site searches:
+- Cipherbrain (scienceblogs.de), `Ehrenstein Bernstorff cypher 1689`: only unrelated posts (musical cryptogram 17th c., La Buse, Ferdinand III, Blitz ciphers); none mentions this letter.
+- Cryptiana (cryptiana.blogspot.com, cryptiana.web.fc2.com), `Bernstorff Gyldenstolpe cipher 1689`: no results.
+- Cipher Mysteries (ciphermysteries.com), `Ehrenstein Bernstorff cipher William III`: only Zodiac, Voynich, Blitz, Milanese letters posts.
+No plausible hit for this item, so no comment thread bears on it.
+
+Not found: no decipherment, plaintext or prior attempt for SP 8/6/65 on the open web or in the three blogs.
+
+## Premise check (GF-A2-6, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: none for this item. The 24 Sept sweep's edition check had searched the wrong volume (see the correction inside it): CSP Domestic William and Mary vol. 1 (`calendarofstatep01grea_2`, preface: 13 Feb 1689 to the close of April 1690) calendars the letter at p. 387 as "Major d'Ehrenstein to Mons. de Bernsdorff, touching Mons. de Guldenstolp. [Ibid., No. 68.]", in a run of King William's Chest 6 entries (No. 66 ends "[S.P. Dom. King William's Chest, 6, No. 66.]"). The calendar prints only that one line: no extract, no "in cypher" note and no decipherment. Index entries "D'Ehrenstein, Major, 387" and "De Guldenstolp, Mons., 387" only. The calendar's No. 68 differs from TNA's item number 65 (folio 208); the description is the same, so it is the same letter under a renumbering. Found: calendar entry (description only); not found: plaintext or decipherment.
+(b) Other solvers' working files: fresh shallow clones (2 Oct 2026) grepped for `ehrenstein|bernsdorff|bernstorff|guldenstolp|gyldenstolp`: aaymeloglu/unsolved-ciphers none (cited, not copied); dbourdeau/cyphersolver only `targets/windischgraetz1720/` (key5017 nomenclator code 432 and key5018 code 53 = "Bernsdorff"), an Imperial key of 1720 naming the same family -- a different sender, office and date, not run on this letter and not evidence for its key. Not found for this item.
+(c) Physical neighbours: no image online (`digitised: false`) -- leaves, facing page and slips unreachable. Calendar neighbours on p. 387 (King William's Chest 6, Nos. 66-74): an artillery report from Ireland, a description of the Emperor's generals, a Breda fortifications project, Waldeck to Heinsius (copy), a Galicia salt-farm memorandum, Castanaga's army, the Duke of Brunswick-Lüneburg to the King, winter-quarter proposals. None is a key, decipherment or clear copy of No. 68. Not found.
+(d) Recipient side: Bernsdorff is most plausibly Andreas Gottlieb von Bernstorff (1649-1726), then minister at Celle (identification not confirmed). No printed edition of his 1689 correspondence was located in the web searches above; the Hanover archive (NLA Hannover) holds the Celle side and was not searched this pass. Separately, vol. 1 shows Dr John Wallis deciphering intercepted French letters for Nottingham in 1689 (pp. 363-364, De Bethune and De Gravel to de Croissy); Wallis's decipherment volumes were not searched for this letter. Not found in what was read; Celle-side and Wallis-side unsearched.
