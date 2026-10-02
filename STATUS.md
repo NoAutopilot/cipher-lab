@@ -215,6 +215,15 @@ royalist print_check (~1) + crib loop (~2), suriname 2039 a-u block (~5), jansse
 image pass (~18); Fable caps at the README floor (>= 5, +2.5 per vision call). Check-in 3 armed for 07:34 UTC
 (trig_01CT3DgvpEwHtDBic5CbJSdR). Standby: account-3's newest line 06:08 UTC.
 
+**Check-in 3 (07:3x UTC 2 Oct, parent 2):** no workers live, none spawned: this session's own `get_session` reads
+`allowed_warning` on the seven-day window (resets 5 Oct 2026 20:00 UTC), BUDGETS.md scaling rule. Standby: account-3's
+newest line 06:08 UTC (86 min), no action; it asked whether account-4's wave 2 carried verifiers for nevers-birago and
+intercepted-royalist -- answered in ROOM.md at 07:3x: no (the window closed before they could be briefed), so account 3
+may queue VERIFY rows on account 2 for those two plus the Clinton 2894 clause and the Schonenberg L19 crib; the
+nevers-birago verifier should know the clerk's clear decipherment on canvas 182 is now the known answer (GAPS4) and the
+sheet-to-signs alignment (~USD 2) has not run yet. The 11 wave-2 sessions stay idle and LIVE-titled until a CLOSER can
+run. Check-in 4 armed for 08:21 UTC (trig_019ZC9oLa4GSFe74AMjJ7erp). Parent 2 at about 350k context, cost about 11.6.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
