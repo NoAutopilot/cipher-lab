@@ -254,3 +254,37 @@ flagging bad cuts and set-asides. The template is `tools/sign_sorter/template.ht
 `tools/sign_sorter/browser_tests/` (node + playwright with a mock db); run them before republishing. Never build a
 sorter from restricted scans: the page carries the images. Worked example: ciphers/debosnys-1883/sorter/.
 For the next invented-alphabet target, this step comes before any transcription pass is priced.
+
+## What Bourdeau does that we did not (1 Oct 2026)
+
+On 1 Oct 2026 Daniel Bourdeau took up our GitHub issue 16 (espagnol142-mercy-1648, BnF Espagnol 144 f. 22, the key
+recovered ciphertext-only here) and finished it in one session. His folder and working rules are snapshotted
+unmodified at `sources/cyphersolver/2026-10-01/` (github.com/dbourdeau/cyphersolver, commit in `COMMIT`; code MIT,
+text CC BY 4.0, quoted briefly with attribution, no code copied). His result there: the transcription checked against
+the images and "corrected it in eight places", 521 of 529 tokens (98.5%) read as sense, and the name sign and a named
+official identified from the clear instructions of the same volume. Three habits made the difference:
+
+1. **"Read in part" is a stopping point only with an outside blocker.** His CLAUDE.md: "'Read in part' is a stopping
+   point only when every unread piece has an outside blocker (no key material, too short, illegible, needs physical
+   access). Otherwise keep going." His writeup skill (section 0a) lists the escalation steps (siblings, clear pages,
+   known keys, print, key rebuild, retry) and a checker parses the result. We had 34 `partial` targets on 1 Oct 2026,
+   many ending in a written next step nobody ran. Adopted as CLAUDE.md rule 5 "Finish or name the blocker" and
+   `tools/gaps_check.py` (our list adds waiting-on a named ASKS row or reply, an image-check step, and [retired] for a
+   step rule 3's third-attempt clause closed).
+2. **Score the split before inventing a code class.** The key's values run 2-34, so a token above 34 is either a
+   code outside the letter table or two digits written together. We did see the four above 34 (65, 52, 48, 72):
+   campaign step H2 (27 Sept 2026, our NOTES.md) re-cropped them, three reads (two blind) kept 72, 52 and 48 as
+   single groups and 65 at two of three (one blind read had 6 5), and we classed them as a small numeric
+   nomenclature (72 as the syllable "do" in Burgsdorff). Bourdeau read them as digit pairs whose letters make sense
+   in place (65 = s r, 52 = r o, 48 = q u, 72 = t o), and the same reasoning found two glued 2 6 pairs and a 14 we
+   had as 19. The miss was not the image look but never decoding the candidate splits in context before grading a
+   new class. `tools/decode_key.py --split-check` now lists every out-of-range token with its splits decoded (on
+   our pre-correction Mercy files it flags exactly these four, with his splits); it is the `image-check` step of the
+   escalation list. In-range glued pairs (the 2 6s) it cannot see: only sense and the image showed those.
+3. **Use the neighbouring clear leaves as cribs.** The clear Spanish instructions on ff. 20r and 21r of the same
+   volume, to the same envoy, gave the cast and the clerk's spellings; f. 21r's request that Saint-Ibal come
+   "incognito" to report identified the name sign (grade C, adjacent plaintext). We had opened the same leaves
+   (our NOTES.md, sibling sweep of items 4-10, canvases 54-57) and even noted the same names, Chevreuse and
+   Saint-Ibal, but logged them as "zero code groups" and moved on: we were looking for sibling ciphertext, not for
+   cribs. Clear leaves next to a cipher are evidence for the reading, not only negatives for the pool. This is the
+   `siblings` and `clear-pages` steps.

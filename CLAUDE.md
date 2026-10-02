@@ -177,6 +177,18 @@ session and every subagent, cloud or local.
    where a control showed the negative was not a real test, is `partial`, never `closed-negative`, and gets a row in
    `NEAR.md` with the numbers and the named next step; `closed-negative` needs every family in the target's ladder logged
    with a passed control. Both parents read NEAR.md at every check-in and every retrospective reviews it.
+   Finish or name the blocker (1 Oct 2026, from Bourdeau's practice): `partial` is parked only when every unread
+   piece is blocked from outside the session -- no-key-material, too-short, illegible, needs-physical-access, or
+   waiting-on a named ASKS/queue row or a named party's reply. Otherwise work the escalation steps (siblings, clear
+   pages, known keys, print, key rebuild, image check, retry) within the brief and its cap (Workers and Usage 7 still
+   hold: a worker never extends its own brief) and hand the rest on as "keep going". An internal gap names its next
+   step: open-codes is allowed but keeps the target workable, not-attempted carries "; next: <step>, ~$<cost>". A
+   worker stopping at `partial` appends "## Remaining gaps" and "## Escalation" to NOTES.md, ending in a Verdict,
+   "keep going" or "parked". A step whose only known instrument rule 3's third-attempt clause closed is [retired],
+   instrument named: it does not hold the target open, a known untried instrument makes the step [ ] instead, and
+   only a different instrument or new material reopens it. `tools/gaps_check.py <target>` (format in its docstring;
+   `--all` for every partial) passes before the done line. Source: sources/cyphersolver/2026-10-01/ (his CLAUDE.md;
+   writeup skill section 0a).
 6. **Absolute dates.** "19 Sept 2026", never "recently" or "yesterday". Read the clock (`date -u`) before writing
    any date or time; never estimate it, and never tell a worker the date without checking. Lesson of 23 Sept 2026:
    an orchestrator wrote times that ran eight hours ahead of the clock and dated a whole evening's files 23 Sept.
@@ -467,6 +479,16 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    is for NOTES.md sections the person will read. The person has said machine-shaped files are fine.
 6. **Fan-out limits.** At most four subagents at once per worker; two transcription passes, not three, unless
    the two disagree on more than a tenth of the rows.
+   A batch of more than about five independent jobs (one per target, one per leaf) runs as separate cloud sessions
+   (create_session, or WORK-QUEUE.tsv rows for another account), not as one in-container Workflow: a session container
+   has 4 CPUs and a Workflow runs about two agents at a time there, so 60 agents took 2.6 hours (finish-pass, 1-2 Oct
+   2026) that separate sessions finish in about 20 minutes for the same usage. Workflows stay for short chained jobs.
+   Transcription of a symbol cipher: when two machine passes disagree on more than a tenth of the signs, or the sign
+   inventory itself is unsettled, the next pass is a person's, not a third machine pass: the owner settles the alphabet
+   in the sign sorter (`tools/sign_sorter.py` -> `tools/sign_sorter_apply.py`, which turns the piles, merges, bad cuts
+   and set-asides into settled labels), and only then do machine passes transcribe against those labels, with the
+   sorter's "Check these first" box for what they still split on (owner, 2 Oct 2026; Debosnys ran about 28% reader
+   disagreement through many machine passes before this, LESSONS.md "Settle the alphabet before reading").
    A subagent's transcription job is priced by signs matched x reference-sheet size, not by elapsed minutes or
    page count: GOLD-4D (25 Sept 2026) gave one Sonnet subagent all four Debosnys cryptograms (about 1,300 signs)
    against a 160-sign inventory in a single call and was stopped at 3.3x its $7 cap, 38 minutes into a 60-minute
@@ -575,7 +597,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    names the one action that depends on nobody, read from the folder's own "## While waiting" NOTES.md section,
    and `--wait-only` lists the blocked rows still missing one), `tools/key_design.py` + `tools/design_prior.py` (26 Sept 2026, OPTIMIZATION-2026-09-26.md section (d):
    every solved or recovered key is added to KEY-OFFICES.tsv and KEY-DESIGN.tsv at the lane's close-out, and
-   design_prior.py is run before an attack family is chosen for an unread letter).
+   design_prior.py is run before an attack family is chosen for an unread letter), `tools/gaps_check.py` (1 Oct 2026,
+   rule 5's "Finish or name the blocker": a `partial` NOTES.md ends in parsed Remaining gaps and Escalation sections,
+   and "parked" passes only when every gap has an outside blocker and no step is untried).
 8. **Shared scripts before new ones (24 Sept 2026).** Each has `--help` and an offline test in `tools/tests/`; a
    target that needs something they lack gets an option added to the tool, not a private copy.
    `tools/gallica_folio.py ARK --folio 35` reads the manifest's canvas labels once, gives the canvas and native image
@@ -589,7 +613,9 @@ Every brief states a cap in dollars of usage (the session metadata's cost figure
    writes disagreements.tsv (only what the reconciler must settle from the image), ciphertext_draft.tsv and
    agreement.tsv; `--halves` joins a/b half-line crops, `--split-chars` splits unsegmented digit groups.
    `tools/decode_key.py ciphers/<t> [--check]` applies key.tsv (and exceptions.tsv) to the ciphertext, grades every
-   token and fails when the committed reading is stale (rule 7); a target describes its layout in decode.json
+   token and fails when the committed reading is stale (rule 7); `--split-check` lists tokens outside the key or above its confident
+   range with every split into two or three key codes (Mercy, 1 Oct 2026: 65, 52, 48, 72 against a 2-34 key were two
+   digits written together; it cannot see in-range glued pairs such as 2 6, so the image still decides); a target describes its layout in decode.json
    instead of writing a decode.py (examples: tools/tests/decode_configs/, which reproduce Gramont, Danzay and Anhalt).
    `tools/print_check.py ciphers/<t>` runs phrases.txt against sources.tsv and, unasked, against the whole of IA
    full text, Google Books and OpenAlex; writes print-check.tsv and print-check-hosts.tsv. Its 'no hits' is a

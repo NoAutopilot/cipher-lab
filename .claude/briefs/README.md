@@ -27,6 +27,7 @@ Common tail (paste into every brief):
 
 > Before the first action, also read the last 20 lines of UPDATES.md (changes instituted across both accounts since your brief was written; they override an older brief where they conflict).
 > Keys as an attack corpus (KEY-DESIGN, 26 Sept 2026): every solved or recovered key is added to KEY-OFFICES.tsv and (by rerunning `tools/key_design.py`) to KEY-DESIGN.tsv at the lane's close-out, and `tools/design_prior.py <ciphertext>` is run before an attack family is chosen for an unread letter (its design-class verdict is a prior, never a reading).
+> Finish or name the blocker (CLAUDE.md rule 5, 1 Oct 2026): a solver worker that stops with its target at `partial` first appends "## Remaining gaps" and "## Escalation" to the target's NOTES.md (format in `tools/gaps_check.py`'s docstring) and runs `python3 tools/gaps_check.py <target>`; it pastes the OK line in its done line, and a FAIL is fixed before stopping, never reported as done.
 
 **Spawning a session (parent or lane orchestrator, 25 Sept 2026, RETRO-2026-09-25l).** Every `create_session`
 call passes `source_url` and `source_revision` explicitly, and the prompt opens with the brief file's path and

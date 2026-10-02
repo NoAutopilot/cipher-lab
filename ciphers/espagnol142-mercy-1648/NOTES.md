@@ -2558,8 +2558,9 @@ unknown reliability); reported as a FAIL.
 
 ### Lesson
 
-Four of the eight corrections were tokens above 34 in a key whose values run 2-34: a range check on the token stream
-against the key's own range would have flagged 48, 52, 65 and 72 as two digits written together on the day the key
+Five of the eight corrections (four distinct codes: 48 twice, 52, 65, 72) were tokens above 34 in a key whose values run
+2-34 (count corrected 2 Oct 2026, reply drafter): a range check on the token stream against the key's own range
+(now `tools/decode_key.py --split-check`) would have flagged 48, 52, 65 and 72 as two digits written together on the day the key
 settled (M2, 25 Sept 2026), instead of carrying them for six days as "M codes" (H36 searched letter values for 48 and 65; H41-H42
 assumed syllable values for 72 and 52). H2's three-way eye-check settled each as "one group" from spacing alone,
 which the image cannot decide for this hand. Suggestion (one line, not done here): a `--range-check` option in
