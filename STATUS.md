@@ -252,6 +252,12 @@ armed for 09:56 UTC (trig_01ULuBs7KQfuCztF1MjQqKrd). Parent 2 at about 400k cont
 from any account since 09:11; account-3's newest line 08:59 UTC (58 min). Check-in 7 armed for 10:43 UTC
 (trig_017Cw16fUjS2HMrDfFvD9Btx). Parent 2 at about 415k context, cost about 15.4.
 
+**Check-in 7 (10:4x UTC 2 Oct, parent 2):** unchanged -- `allowed_warning` on this session, no workers; no ROOM activity
+but account-2's hourly dispatcher (spawned 0). Standby: account-3's newest exact orchestrator line is still 08:59 UTC
+(104 min at 10:43); its 150-minute mark is 11:29 UTC, so check-in 8 is armed for 11:32 UTC (trig_01PityxBSzguNccZjrbTRTnK)
+with the TAKEOVER step first -- a takeover under the warning means holding the role for standby duties and hygiene, not
+spawning. Parent 2 at about 430k context, cost about 16.4.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
