@@ -1,0 +1,59 @@
+leaf	order	code	gloss	note
+192	1	571	ti	
+192	2	53	fi	
+192	3	236	é	
+192	4	564	de	
+192	5	448	la	
+192	6	355	cargaison,	uncertain
+192	7	722	importan	uncertain; reconciled from crop L01: A importan / B importau, n and u identical in this hand; completes importan-te (516) = importante
+192	8	516	te	
+192	9	167	exportation	
+192	10	990	.	
+192	11	354	Je	
+192	12	810	demande	
+192	13	1146	que	
+192	14	48	cet	corrected; struck: cette
+192	15	605	Etat	uncertain
+192	16	571	ti	
+192	17	7504	fi	crossed-out; code struck too (A 7504 / B 750, unreadable under the strike); excluded from key
+192	18	757	en	
+192	19	1086	ne	
+192	20	738	lieu	
+192	21	766	Du	
+192	22	558	cer-	hyphen/dash at end of gloss
+192	23	571	ti	
+192	24	53	fi	
+192	25	411	ca	corrected; overwritten cell, A cet / B cet, reconciled from crop L04 with key.tsv 411 = ca (leaf 191): completes cer-ti-fi-ca-t = certificat
+192	26	771	t	
+192	27	647	que	
+192	28	904	J'	
+192	29	13	au-	
+192	30	406	rais	uncertain; reconciled from crop L04: A rain / B rais, final letters ambiguous; completes J au-rais = j aurais
+192	31	822	Donné	
+192	32	840	moi	
+192	33	1142	même	A même / B meme: accent only, crop L05 shows a faint accent; agreement
+192	34	861	si	
+192	35	850	cela	
+192	36	315	avoit	
+192	37	144	été	
+192	38	1035	possible	period after the gloss is the row separator dot copied, not part of the value; A uncertain, B clean
+192	39	728	.	
+192	40	156	alinea	period after the gloss is the row separator dot copied, not part of the value
+192	41	1052	La	
+192	42	688	Corvette	
+192	43	264	la	
+192	44	1187	Sa	
+192	45	396	p	reconciled from crop L06: A p / B long-s; an unfinished p, completes Sa-p-ho (1187, 396, 327) = Sapho; uncertain
+192	46	327	ho	uncertain in both passes; crop L07 reads ho, completes Sapho
+192	47	190	est	
+192	48	1096	par	corrected; both passes: part with the final t struck (the next code 571 ti supplies it: par-ti-e = partie)
+192	49	571	tie	both passes tie; the decipherer completed par-ti-e here, 571 reads ti in four other words of this leaf
+192	50	1082	avec	corrected; a struck word overwritten, both passes read the final as Avec (crop L07); uncertain
+192	51	79	l'	
+192	52	441	ancien	
+192	53	497	Gouverneur Gal	both passes Gouverneur Gal.; G.al = Général abbreviated
+192	54	689	le	
+192	55	536	trente	
+192	56	845	Juin	
+192	57	990	.	
+192	58	420	Fin.	A Fin. / B Jin.; crop L08 and the closing position read Fin (cf. key 420 = fin)
