@@ -1189,6 +1189,114 @@ passes, one reconciliation montage). Requests: service.archief.nl 2; github.com 
 googleapis.com 4 answered (3 further snippet queries returned no body, not retried); gallica.bnf.fr 1. No 403/429/
 challenge. Reading unchanged, judge not re-run (nothing read changed).
 
+## GAPS7-na-janssens-java-1811 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, run 14:19-14:4x UTC 2 Oct 2026 (clock read), Fable 5.1, no
+vision calls. Intake gate before the step: `partial (line 1) -- edition/page or full-text-search citation found within 6
+lines`, exit 0. The Verdict step of the gaps section (GAPS6 rewrite), both parts: the Collet 1910 route, then
+`tools/print_check.py` on the four plain texts. Files touched: `LOCAL-QUEUE.tsv` (row L35), `phrases.txt`, `sources.tsv`,
+`print-check.tsv`, `print-check-hosts.tsv`, `print/` (one djvu text, two extracts, `manifest.tsv`), `scripts/crib_test_187.py`
+(a `--text PATH` option, nothing else changed), this section and the gaps section. Not touched: `key.tsv`, `ciphertext.tsv`,
+`corrections.tsv`, `reading.txt`; `python3 ../../tools/decode_key.py . --check` still exits 0 (C 77 M 11 U 75 of 163).
+
+**Collet 1910 (the Verdict's first part): no readable copy from the cloud; LOCAL-QUEUE row L35 filed.** Google Books API
+volume record for `-BCyBiSVklAC` (HTTP 200): Octave J. A. Collet, *L'ile de Java sous la domination francaise*, Paris, Falk,
+1910, 558 pp., viewability ALL_PAGES, accessViewStatus FULL_PUBLIC_DOMAIN, a PDF download link on books.google.com. That link
+answers HTTP 429 and redirects to google.com/sorry (a captcha page), one attempt, not retried -- books.google.com stays blocked
+from the cloud as the CLAUDE.md hosts table says. Three API snippet searches (`inauthor:Collet`): "Janssens" "1811" "no 2"
+intitle:Java -> 2 volumes (`-BCyBiSVklAC` and a second scan `uz1BAQAAMAAJ`, same snippet); "Janssens" "1811, no 1" -> 0;
+Janssens chiffre intitle:Java -> the same 2 volumes, same snippet. The snippet, verbatim as the API returns it: "... Janssens.
+« L'état florissant de cette colonie, l'excellent esprit dont les habitants sont animés ne laissent ... 1811, no 2. (2) Un
+premier serment avait été prêté à l'arrivée de Claudius Civilis. (Voir p. 357.)" -- Collet footnotes a Janssens dispatch
+"1811, no 2" and quotes a sentence from it. That sentence is in none of the folder's transcriptions (grep of every file for
+"florissant", "excellent esprit", "habitants sont": 0), so it is not in our No.2 gloss (leaves 190-192, Batavia 9 July 1811)
+as read; either Collet's "no 2" is a different dispatch series (a numbering to Paris that is not this bundle's, or the
+Daendels-era run) or it quotes a passage of No.2 our gloss does not carry. Which, only the page can say. Other routes:
+archive.org advancedsearch (title java + creator collet / title domination; collet java 1900-1930) 0 items both; Open Library
+gives the edition (OL61021068M, OCLC 1417504); HathiTrust bibliographic API for OCLC 1417504 returns no record. So the read
+is a desk job: `LOCAL-QUEUE.tsv` row **L35** (kind edition-read, this target) asks the runner to open the Google Books volume,
+read every footnote citing a numbered or dated 1811 dispatch with its page and the archive carton cited, say whether any
+cites no 1 / no 11 / 20 juin 1811 or the dates of No.2-No.5, search chiffre/dechiffr/Sapho/Stafforth/71 voiles, quote the
+preface's source sentence, and write `print/collet1910_L35.md`. `tools/lq_answer_check.py` gates runner *answers*, not
+queued rows, so it was not run here; the row's kind (edition-read) is one of the four that tool exempts from the
+catalogue-ladder rungs when the answer lands.
+
+**print_check (the Verdict's second part): 17 phrases, 5 listed sources, 89 rows -- Nos.2, 3, 4 and 187R no hits; No.5's
+opening sentence is printed.** `phrases.txt` carries 4 phrases from the No.2 gloss (190-192, the text of the plain copy
+194-195), 4 from the No.3 gloss (199-201, the text of 202R), the 2 spans of the plain No.4 copy (208R-209L) the GAPS5
+inventory quotes verbatim (nothing more of No.4 is transcribed on disk), 4 from the No.5 plain copy (214), 2 from leaf 187R,
+and one positive control -- the sentence Google Books' own snippet shows in Collet 1910. `sources.tsv`: the two Collet scans,
+Van Deventer 1891 (cached djvu), OpenAlex and CrossRef keywords. Hosts: be-api.us.archive.org 17, www.googleapis.com 17,
+api.openalex.org 18, api.crossref.org 2, all ok; api.semanticscholar.org 1 then blocked (HTTP 429 on the first call, the
+tool's own one-strike rule, 18 rows `not searched`). Reading the 19 rows the tool counts as "with hits":
+- the control phrase hits exactly the two Collet volumes (`-BCyBiSVklAC`, `uz1BAQAAMAAJ`, both flagged as listed) -- the
+  method reaches a Google Books full-view 1910 volume, so a miss on the other phrases is a miss of this method at this date;
+- three of the four No.5 phrases ("une expédition forte de 71 voiles", "détruit nos magasins de Sucre", "camp retranché
+  destiné pour cela") each return the same 6 Google scans of *De Opkomst van het Nederlandsch gezag in Oost-Indië* (1888),
+  snippet "... expédition forte de 71 voiles est arrivée le 4 devant la rade, et débarque des troupes à l'est de la ville.
+  Nous avons détruit nos magasins de sucre, café et poivre, et nous nous sommes portés dans le camp retranché destiné pour
+  ..." -- No.5's first sentence and a half, verbatim (the plain copy on 214 reads "à l'Isle de la Ville" where the print has
+  "à l'est de la ville"; the print is the better reading of that clerk's hand, a note for the next owner of 214, grade unchanged
+  here); the fourth No.5 phrase ("une affaire décisive aura lieu") returns 2 unrelated Moniteurs;
+- every other gbooks row is a generic phrase returning 300+ unrelated volumes (procès Bazaine, Bulletin des lois, Boyer's
+  dictionary), and the one ia-global hit ("c'est une précieuse possession") is Aurifodina universalis 1865 -- noise, logged
+  in `print-check.tsv`; CrossRef's 166,000-record keyword rows are its usual relevance tail; OpenAlex 0 on every phrase.
+Per text: No.2 0 hits (4 phrases), No.3 0 (4), No.4 0 (2), No.5 3 of 4 phrases -> one print, 187R 0 (2). "No hits" is a search
+result by this method on this date, not a novelty verdict (rule 10).
+
+**The print, read from archive.org.** advancedsearch (title opkomst nederlandsch gezag, 1886-1890: 9 items) gives
+`depkomstvanhetn00unkngoog` = Reeks 1, deel 13, 1888, 845 leaves (the 844-page Google scan `z1WElvgNiqUC`); its `_djvu.txt`
+(2.1 MB, 1 request) is now `print/depkomstvanhetn00unkngoog_djvu.txt` (manifest row). The OCR double-spaces every word gap
+and confuses u/n, so every multi-word grep below is whitespace-tolerant (`\s+`); a first single-space pass had returned 0 for
+"magasins de sucre" and "Juin 1811" and was discarded. Found: (1) the No.5 quotation at OCR lines 6298-6302, in the editor's
+Inleiding, page CXXXIII, footnote 2: "Op dien dag berichtte de Gouv.-Gen. aan den Franschen minister van Koloniën: 'Une
+expédition forte de 71 voiles est arrivée le 4 devant la rade, et débarque des troupes à l'est de la ville. Nous avons détruit
+nos magasins de sucre, café et poivre, et nous nous sommes portés dans le camp retranché destiné pour cela depuis six mois'"
+(OCR regularised) -- so Van Deventer read the dispatches to Paris themselves (this bundle or its Paris copies), and that one
+sentence of No.5 is text-known, printed in De Opkomst deel 13 (1888) p. CXXXIII n.2; No.5's cipher was already decoded against
+its own plain copy on 214 (VX-RD02C), so this adds a citation, not a key source. (2) Four Janssens letters to the Minister of
+Colonies printed in full, in French: doc. LII Batavia 16 Juin 1811 (p. 539 by the table of contents, OCR lines 33072-33146),
+doc. LIII Batavia 21 Juin 1811, "Confidentielle, pour le Ministre seul" (33147-33241), doc. LIV Tjikapondong 29 Août 1811
+(33242-33391, opening "Par mes dépêches avec la corvette le Sapho j'ai dépeint la situation critique de la colonie"), doc. LV
+Batavia 5 Octobre 1811 (33392-). Not found anywhere in the volume (whitespace-tolerant): "cent lieues", "20 Juin", "Juillet
+1811", "Août 1811" as a date line, "tenir la mer", "précieuse possession", "affaire décisive", "chiffr", "Residens", "ferme
+d'" -- Nos.2, 3, 4 and 187R are not quoted, and no letter dated 20 June 1811 is printed.
+
+**Are LII (16 June) or LIII (21 June) the plaintext of leaf 188 (No.1, Triplicata, about 20 June 1811)? No, by the same
+test that excluded 187R.** `scripts/crib_test_187.py --shuffles 2000 --text print/opkomst13_LII_16juin1811.txt --text
+print/opkomst13_LIII_21juin1811.txt` (the two extracts, 574 and 665 OCR words):
+```
+S1 LCS  leaf187R (target crib) vs leaf 188: query 82 tokens, candidate 186 words: LCS 17; shuffled-order null mean 16.6 sd 1.3 p95 19; z +0.30; null >= target: 999/2000
+S1 LCS  opkomst13_LII_16juin1811 vs leaf 188: query 82 tokens, candidate 587 words: LCS 24; shuffled-order null mean 23.6 sd 1.3 p95 26; z +0.33; null >= target: 1016/2000
+S1 LCS  opkomst13_LIII_21juin1811 vs leaf 188: query 82 tokens, candidate 684 words: LCS 26; shuffled-order null mean 26.3 sd 1.4 p95 29; z -0.21; null >= target: 1425/2000
+positive control (ceiling): No.2 codes decoded by key.tsv (262 tokens) vs No.2 gloss (109 words): LCS 102; null mean 35.6 sd 2.0; z +33.82; null >= target: 0/2000
+S2 coverage of leaf 188's 9 keyed content words (alinea ancien chargent debarquer ennemie gouverneur seules troupes vaisseaux): LII 0/9, LIII 0/9, 187R 0/9, No.5 control 1/9, No.2 control 1/9
+```
+Both letters sit inside their own shuffled-order null (rule 3: order is the axis the control varies on) while the known
+cipher/gloss pair scores z +34 on the same statistic. Conditional on the OCR (rule 2): a loose grep of the content words
+(vaisse/ennemi/troupe/barqu/ancien/seules/charge) finds in LII only "ennemi" twice and in LIII "vaisse" once and "ennemi"
+once, where a true match would carry leaf 188's "vaisseaux ... tous les ... l'ennemie" and "l'ancien Gouverneur Gal"; OCR
+damage cannot hide all nine. Reading of the negative: No.1 of the ciphered series is neither the plain financial letter of
+16 June nor the confidential letter of 21 June that Van Deventer printed; it is a third dispatch of the same week, and deel
+13 does not print it by this OCR search. No token, grade, key or reading changed (rule 4 counts unchanged: C 77 M 11 U 75).
+
+**Requests this section:** www.googleapis.com 25 (Collet volume + 3 searches; 4 intitle:opkomst searches, one HTTP 503 not
+retried; 17 in print_check), books.google.com 1 (HTTP 429 captcha, not retried), archive.org 4 (3 advancedsearch, 1 djvu
+download), be-api.us.archive.org 17, openlibrary.org 1, catalog.hathitrust.org 1, api.openalex.org 18, api.crossref.org 2,
+api.semanticscholar.org 1 (429, blocked by the tool). Vision calls 0 of 0. Cost: the orchestrator reads get_session.
+
+For the next owner: the Collet read waits on L35; De Opkomst deel 13's LII-LV are printed Janssens letters of 1811 in the
+same French and office as the cipher dispatches -- a free era-matched corpus for the judge spec (`specs/na-janssens-java-1811.json`
+judge block), which the rule-3 pt18/es17c lessons say to prefer over a generic French corpus, and the page-through (gap 3)
+should look for the 16 and 21 June letters' own cipher copies in the bundle, which would be two more key sources of the same
+kind as No.2-No.5.
+
+## While waiting (GAPS7-na-janssens-java-1811, 2 Oct 2026)
+
+- The one action that depends on nobody while LOCAL-QUEUE rows L31 (Paris search) and L35 (Collet 1910 footnotes) wait: the
+  No.4 set (gap 2): IIIF full fetch of 204-207, `tools/iiif_lines.py` crops, two blind passes plus one reconciliation per page
+  unit, merge into key.tsv, control by decoding 204R against the plain copy 208R-209L, redecode leaf 188 (~$18).
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 88 of 163 code tokens keyed (54.0%; C 77, M 11, U 75; GAPS3 2 Oct 2026 regrade, was C 63 M 25 after SPLIT and C 62 M 26 at GAPS2, 86/163 at GAPS 02:07 UTC and 76/163 on 1 Oct), reading.txt header and NOTES.md "GAPS3-na-janssens-java-1811 (2 Oct 2026)"; keyed is not read-as-sense (judge FAIL language -0.963 vs real_p05 -0.899, cover 0.915; was -0.972 / 0.902 after SPLIT, -0.985 / 0.902 at GAPS, and -1.472 / 0.78 on 1 Oct); the 75 unkeyed tokens are 62 distinct codes (counted from reading_tokens.tsv, 2 Oct 2026)
 Done (gap 1, both halves): Leaf 192 (the rest of the No.2 interlinear gloss) - DONE 2 Oct 2026 (GAPS-na-janssens-java-1811, section above): two blind passes on tools/iiif_lines.py crops of images/192_hi.jpg (58 codes each, 57/58 code and 53/58 gloss agreement) plus one reconciliation, merged by scripts/merge_leaf.py: key.tsv 214 -> 233 codes, leaf 188 keyed 76 -> 86/163 (52.8%), "l'ancien Gouverneur Gal" read twice as predicted, judge -0.985 vs real_p05 -0.89 (FAIL, from -1.472), --check exit 0. Leaf 201 left page (two code+gloss rows ending "Signé Janssens") - DONE 2 Oct 2026 (GAPS2-na-janssens-java-1811, section above): one IIIF fetch (images/201_hi.jpg), tools/iiif_lines.py crops, two blind passes (8 codes each, 8/8 code and 8/8 gloss agreement) plus one reconciliation (674 dans -> 574 deux from the digit and final-letter shapes), scripts/merge_leaf.py: key.tsv 233 -> 237 codes, leaf 188 keyed 86 -> 88/163 (54.0%), line 12 now "vaisseaux ... tous les ... l'ennemie", judge -0.976 vs real_p05 -0.899 (FAIL, from -0.985), --check exit 0. Gap 1 is closed: no further glossed leaf of this set is known on disk (which dispatch leaf 201 closes is unidentified; its earlier leaves, if in the bundle, fall to gap 3's re-inventory)
@@ -1201,11 +1309,11 @@ Done (gap 5): the M-graded tokens on leaf 188 (25 over 19 codes after SPLIT's 13
 - [ ] siblings: done so far: 180-219 checked one leaf at a time (VX-RD02/RD02B), about 76 sample points elsewhere in invnr 12, invnrs 7, 11, 13 and 26 sampled; this found No.5 (210-214). 2 Oct 2026 (GAPS5): leaves 186-215 re-inventoried at 1200-2561 px, every leaf, four blind passes -- the earlier leaf-by-leaf checks had misfiled 14 of the 30 (194-195 the plain No.2, 201-202 the No.3 postscript and plain copy, 204-209 the whole No.4 set, 210-211 the No.5 slip); no No.1 gloss or plain copy in the range. Planned: the contact-sheet page-through of invnr 12's unsampled leaves and invnr 7 (gap 3, ~$8)
 - [ ] clear-pages: done: leaf 214's plain copy of No.5 used as an independent control (5 codes fixed, 95/95 decoded). Leaf 187R DONE 2 Oct 2026 (GAPS6-na-janssens-java-1811, section above): transcribed from native IIIF crops, two blind passes + one reconciliation (leaf187_text.txt, 16 lines, grade H as a transcription), tested as a crib against leaf 188's keyed tokens with a shuffled-order control: LCS z +0.30 (999/2000 shuffles at or above), content-word coverage 0/9, while the known No.2 cipher/gloss pair scores z +35 on the same test -- 187R (revenue farms of the Residents, 20 Juin 1811, "No 11") is not No.1's plaintext; No.1's clear text remains unlocated. Not used yet (all confirmed and located by the GAPS5 inventory, 2 Oct 2026): the plain No.2 copy (194R and 195R, "N.2 Duplicata", 9 Juillet, same text as the 190-192 gloss), the plain No.3 copy (202R, "N.3 Duplicata", 11 Juillet, paragraph "12.", Signe Janssens), the plain No.4 copy (208R-209L, "N.4 Premiere Expedition", 3 Aout). Planned: align each plain copy against its cipher copy the way No.5 was done, starting with No.4 as gap 2's control (~$18 with the gloss passes)
 - [ ] known-keys: done: KEY-DESIGN.tsv line 121 row for key.tsv (syllabary, 214 codes); no other 1800s-1810s French or Dutch office key in KEY-DESIGN.tsv or KEY-OFFICES.tsv; DECODE and both solver repositories grepped with no hit (check-solved items 4-5). Not done: Cryptiana/Tomokiyo (check-solved item 6, "not separately searched"), tools/design_prior.py, the Daendels-era (1808-11) Governor-General dossiers for the same office key, and the missing KEY-OFFICES.tsv row (close-out omission). Planned: ~$3
-- [ ] print: done: Colenbrander, Gedenkstukken VI, all 35 "Janssens" hits read; it names the dossier ("In n°. 11 de berichten van Janssens omtrent de overgave van Java") but does not print it; IA advancedsearch 0 hits; be-api "overgave van Java" 64 items, not narrowed. 2 Oct 2026 (GAPS6 premise check (d)): Van Deventer 1891 (Nederlandsch gezag over Java, deel I) full text on disk (print/), 5 Janssens hits, no 1811 letter; be-api "Janssens" + "20 Juin 1811" 37 items all other 20 juin 1811s, "20 Junij 1811" 0; Google Books API found Collet, L'ile de Java sous la domination francaise (Paris 1910, id -BCyBiSVklAC, full view) footnoting a Janssens dispatch "... 1811, no 2" -- a French work citing the numbered 1811 dispatches, unreadable from the cloud (books.google.com page view blocked; not on archive.org or Gallica). Not done: tools/print_check.py phrase search of the plain copies (No.2, No.4, No.5, now also leaf187_text.txt); the Collet 1910 read. Planned: one LOCAL-QUEUE.tsv row (gbooks/hathitrust page read of Collet 1910: every "Janssens" footnote citing a 1811 dispatch number, and any quotation of No.1 / 20 juin 1811), ~$2, then print_check.py on the four plain texts, ~$3
+- [ ] print: done: Colenbrander, Gedenkstukken VI, all 35 "Janssens" hits read; it names the dossier ("In n°. 11 de berichten van Janssens omtrent de overgave van Java") but does not print it; IA advancedsearch 0 hits; be-api "overgave van Java" 64 items, not narrowed. 2 Oct 2026 (GAPS6 premise check (d)): Van Deventer 1891 (Nederlandsch gezag over Java, deel I) full text on disk (print/), 5 Janssens hits, no 1811 letter; be-api "Janssens" + "20 Juin 1811" 37 items all other 20 juin 1811s, "20 Junij 1811" 0; Google Books API found Collet, L'ile de Java sous la domination francaise (Paris 1910, id -BCyBiSVklAC, full view) footnoting a Janssens dispatch "... 1811, no 2" -- a French work citing the numbered 1811 dispatches, unreadable from the cloud (books.google.com page view blocked; not on archive.org or Gallica). Not done: tools/print_check.py phrase search of the plain copies (No.2, No.4, No.5, now also leaf187_text.txt); the Collet 1910 read. DONE 2 Oct 2026 (GAPS7-na-janssens-java-1811, section above): Collet 1910 is unreadable from the cloud (Books API record FULL_PUBLIC_DOMAIN but the PDF link answers a 429 captcha, no archive.org or HathiTrust copy) -> LOCAL-QUEUE.tsv row L35 (edition-read, the desk runner reads every 1811-dispatch footnote and reports whether any cites no 1 / 20 juin 1811); print_check.py 17 phrases: Nos.2, 3, 4 and 187R no hits, No.5's opening sentence printed in De Opkomst van het Nederlandsch gezag deel 13 (1888) Inleiding p. CXXXIII n.2 (text-known for that sentence; No.5 was already keyed from its own plain copy 214); deel 13 (archive.org depkomstvanhetn00unkngoog, djvu in print/) also prints Janssens to the Minister 16 Juin 1811 (doc. LII, p. 539) and 21 Juin 1811 (doc. LIII, confidentielle), neither No.1's plaintext by the crib test (z +0.33 and -0.21 against shuffled-order nulls, content words 0/9, positive control z +33.8; OCR-conditional). Waiting-on: L35 for the Collet footnotes
 - [ ] key-rebuild: two-part code with unordered values (1=Soixante, 12=encore, 13=aux) and homophones (de=140/564/682/841, et=454/516/930/1192), so alphabetical bracketing does not apply; no annealing, seeded EM or LM-context fill tried; 54 single unkeyed codes in 163 tokens is too few for EM alone. Planned after the 192 and No.4 merges: an LM-context fill with a matched control built from No.4's raw copy (204R) against its plain copy (208R-209), same design, language and hidden-code fraction, ~$5
 - [x] image-check: done 2 Oct 2026 by SPLIT-na-janssens-java-1811 (section above): right page of leaf 188 at native IIIF size, tools/iiif_lines.py line crops, two blind passes (split188_passA/B.tsv) plus one reconciliation, 162/163 three-way digit agreement, one digit fixed (13:11 1194 -> 1192, corrections.tsv); still open from the original row: leaf 198 (raw No.3) against 199-200 (glossed No.3) as a further digit cross-check, ~$2
 - [x] retry: leaf 188 re-decoded with tools/decode_key.py after each key extension: 65/163 (39.9%, VX-RD02), 71/163 (43.6%, VX-RD02B), 76/163 (46.6%, VX-RD02C), 86/163 (52.8%, GAPS 2 Oct 2026, leaf 192 merged), 88/163 (54.0%, GAPS2 2 Oct 2026, leaf 201 merged), 88/163 with C 77 M 11 (GAPS3 2 Oct 2026, regrade), --check exits 0; to be rerun after the No.4 merge
-Verdict: keep going: 2 internal gaps (gap 1 done: leaves 192 and 201 merged; gap 5 done: M regrade; gap 3 first half done: 186-215 re-inventoried, 14 misfilings fixed; gap 4 waiting-on LOCAL-QUEUE row L31; clear-pages leaf 187 done: not No.1's plaintext, control-backed; all 2 Oct 2026); cheapest next: the print step's LOCAL-QUEUE row for Collet 1910 (Google Books full view -BCyBiSVklAC, a French 1910 work footnoting the numbered Janssens 1811 dispatches to Paris: does it quote No.1 / 20 juin 1811; ~$2), then tools/print_check.py on the four plain texts on disk (~$3); after it, the No.4 set (gap 2, ~$18: 204R raw, 205R-207L gloss, 208R-209L plain copy, all at 1200 px on disk, the plain copy as the control), then the page-through (gap 3, ~$8)
+Verdict: keep going: 2 internal gaps (gap 1 done: leaves 192 and 201 merged; gap 5 done: M regrade; gap 3 first half done: 186-215 re-inventoried, 14 misfilings fixed; gap 4 waiting-on LOCAL-QUEUE row L31; clear-pages leaf 187 done: not No.1's plaintext, control-backed; print step done 2 Oct 2026 (GAPS7): Collet 1910 -> LOCAL-QUEUE row L35, print_check no hit for Nos.2-4 and 187R, No.5's opening quoted in De Opkomst deel 13 (1888) p. CXXXIII n.2, deel 13's Janssens letters of 16 and 21 June 1811 are not No.1's plaintext, control-backed; all 2 Oct 2026); cheapest next: the No.4 set (gap 2, ~$18: 204R raw, 205R-207L gloss, 208R-209L plain copy, all at 1200 px on disk, the plain copy as the control), then the page-through (gap 3, ~$8)
 
 ## SPLIT-na-janssens-java-1811 (2 Oct 2026, account-4)
 

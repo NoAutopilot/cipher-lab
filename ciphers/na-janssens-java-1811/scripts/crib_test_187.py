@@ -47,6 +47,10 @@ cands = {
     'No.5 plain copy (control, other letter)': text_words('no5_plaintext.txt'),
     'No.2 gloss (control, other letter)': no2_gloss,
 }
+# GAPS7 (2 Oct 2026): extra candidates from the command line, e.g. --text print/opkomst13_LII_16juin1811.txt
+for i, a in enumerate(sys.argv):
+    if a == '--text':
+        cands[f'{sys.argv[i+1]} (candidate)'] = text_words(sys.argv[i+1])
 
 def lcs(a, b):
     prev = [0] * (len(b) + 1)

@@ -1,0 +1,25 @@
+# GAPS7-na-janssens-java-1811, 2 Oct 2026: distinctive phrases from the four plain texts of the Janssens 1811 dispatch set
+# (NA 2.01.27.05 invnr 12) as transcribed on disk, plus leaf 187R and one positive control. Spelling as read (grade H/C).
+# No.2 (9 Juillet 1811): gloss of leaves 190-192 (keysource_passA.tsv, leaf192_reconciled.tsv) = text of the plain copy 194-195
+a deux cent lieues de Batavia
+l'ennemi a des croisières sur tous
+l'article trois de la licence
+la Corvette la Sapho est partie avec l'ancien Gouverneur
+# No.3 (11 Juillet 1811): gloss of leaves 199-201 (keysource_passA.tsv, leaf201_reconciled.tsv) = text of the plain copy 202R
+je n'ai pas encore reçu les dépêches qu'il porte
+une frigate ennemie était dans
+nos deux frigates seules peuvent tenir la mer
+pourroient nous délivrer de l'ennemi
+# No.4 (3 Aout 1811): plain copy 208R-209L, only the two spans the GAPS5 inventory quotes (leaves_186-215_inventory.tsv)
+la force navale ennemie augmente considérablement
+c'est une précieuse possession
+# No.5 (7 Aout 1811): plain copy 214 (no5_plaintext.txt)
+une expédition forte de 71 voiles
+détruit nos magasins de Sucre
+une affaire décisive aura lieu
+camp retranché destiné pour cela
+# leaf 187R (Extrait, 20 Juin 1811, No 11; leaf187_text.txt)
+la ferme d'objets dont le benifice
+accroitre les revenus enormes des Residens
+# positive control: the phrase Google Books' own snippet shows in Collet 1910 (id -BCyBiSVklAC) -- must hit gbooks
+l'excellent esprit dont les habitants sont animés
