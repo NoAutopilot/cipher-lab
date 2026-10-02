@@ -15,3 +15,4 @@ Hessen 1824	hessen-1824	0	0	x	.	.	.	.	.	.		found-solved (Bourdeau 28 Sept); VERI
 Janssens Java	na-janssens-java-1811	86	163	x	~	~	.	.	.	.		leaf 188 keyed 86/163 after leaf 192 gloss merge (GAPS, 2 Oct); judge FAIL -0.985 vs real_p05 -0.89	2 Oct 2026	ciphers/na-janssens-java-1811/NOTES.md (GAPS-na-janssens-java-1811)
 Schonenberg	na-schonenberg-1678-1716	15	28	x	~	~	.	.	.	.		L19 address crib 15/16 vs controls; 28/28 valued C 15 M 13 (GAPS, 2 Oct)	2 Oct 2026	ciphers/na-schonenberg-1678-1716/NOTES.md (GAPS-na-schonenberg-1678-1716)
 Morillo 5186	rah-morillo-1817	90	97	x	x	x	x	.	.	.		item 3 N0 (text in print); key_5186 C 90 / M 7 / U 0 after the 2021 print fold-in (GAPS, 2 Oct)	2 Oct 2026	ciphers/rah-morillo-1817/AUDIT.md, NOTES.md (GAPS-rah-morillo-1817)
+Paget 1714	clairambault1225-paget-1714	0	0	x	~	.	.	.	.	.		period gloss over 501/505 tokens; key 21 codes (12 C, 9 M), held-out 0.649 vs shuffle p95 0.378	2 Oct 2026	NOTES.md NEXT-PAG step (7d92609c)
