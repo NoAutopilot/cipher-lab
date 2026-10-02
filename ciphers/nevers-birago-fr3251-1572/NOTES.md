@@ -611,3 +611,11 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - [x] image-check: native regions, debug overlays checked by eye (f.178v right edge re-fetched once; f.179r left edge re-fetched once; f.178r re-cut on the slope after both readers reported clipped tails); the canvas 182/183 overviews re-read by eye, which found the decipherment sheet (GAPS4)
 - [x] retry: one connection reset on the canvas-183 fetch retried once after a pause (GAPS4); the HTTP 500s were this worker's malformed URLs, not retried
 Verdict: keep going: 2 internal gaps; cheapest next: align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144
+
+## VERIFY-NEVBIR-1572 (2 Oct 2026, account 2): audit 1 -- see AUDIT.md
+
+Verifier class **N0** for the no.87 passage (the period clear decipherment is laid in with the letter, and Tomokiyo
+built the printed key from it): our reading is a re-decipherment and a calibration, not a reading of an unread text.
+Key `published` (Tomokiyo) + one sign fitted by us. Rule 7 re-derivation reproduces exactly (H0 C4 S681 M146 I1 U21 of
+853). Correction: the z 4.84 / S 532 and passage z 4.60 figures are fitted-key (T42 = m), not printed-key, figures.
+The seven target letters ff.138-184 remain unread and unclassed.
