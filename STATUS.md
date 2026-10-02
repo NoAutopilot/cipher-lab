@@ -258,6 +258,10 @@ but account-2's hourly dispatcher (spawned 0). Standby: account-3's newest exact
 with the TAKEOVER step first -- a takeover under the warning means holding the role for standby duties and hygiene, not
 spawning. Parent 2 at about 430k context, cost about 16.4.
 
+**Check-in 8 (11:3x UTC 2 Oct, parent 2):** no takeover -- account-3 posted its quiet-hours check-in at 11:03 UTC (30 min
+old), so it holds the role; `allowed_warning` on this session, no workers, nothing to ledger. Check-in 9 armed for 12:19 UTC
+(trig_016HdMUB584VzYZZA4f5xjJB). Parent 2 at about 450k context, cost about 17.4.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
