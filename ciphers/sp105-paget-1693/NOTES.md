@@ -1,4 +1,5 @@
 open
+Calendar of State Papers Domestic, William & Mary vol.4 (1693; IA calendarofstatep04grea_0) be-api full-text search for "Stepney", "Paget" and "Plantamour", and Manners Sutton, The Lexington Papers (1851; IA lexingtonpapers00cantgoog) djvu full text grepped by this worker (GF-A2-9, 2 Oct 2026): neither prints either item -- CSPD gives only Stepney's and Paget's allowances, and the Lexington Papers begin 18 Sept 1694 (p.1), after both letters, with no Stepney-to-Paget letter and no "cypher"/"cipher".
 
 # To Paget (envoy to the Ottoman Porte), Dresden despatches with cipher postscript — TNA SP 105/60/121,135
 
@@ -137,3 +138,47 @@ case; see REQUEST.md.
 
 **Host requests this pass (LANE S worker H, 24 Sept 2026):** discovery.nationalarchives.gov.uk 4 (>=3s
 apart); www.googleapis.com/books 5 (>=2s apart, key+country=US, never printed).
+
+## Web and blog check (GF-A2-9, 2 Oct 2026)
+
+Plain web searches (4): `Stepney Paget Constantinople 1693 cipher letter Dresden`; `"SP 105/60" Stepney Paget cipher`;
+`"Plantamour" Stepney letter-book cipher Paget 1694`; `Paget envoy Ottoman Porte Dresden despatches cipher postscript Levant`.
+Hits were TNA catalogue pages for neighbouring SP 105/60 folios (beta.nationalarchives.gov.uk C6822068 = f.168, C6822030 =
+f.135v, opened and read), BL searcharchives and SOAS PP MS 4 (Paget papers) catalogue records, and unrelated cipher pages.
+None carries a decipherment or plaintext of f.121 or of the f.135 PS.
+Blog site searches (allowed domains scienceblogs.de/klausis-krypto-kolumne, cryptiana.blogspot.com + cryptiana.web.fc2.com,
+ciphermysteries.com): `Paget Stepney cipher 1693` and `Stepney cipher William III envoy Dresden Vienna`. Results: Cipher
+Mysteries posts on Guinigi, La Buse, 15th-century cryptography, Voynich, van Heeck, Gentlemen's Cipher; Cipherbrain posts on
+Ferdinand III, Thirty Years' War cryptograms, Henry II's device, and "Top 50 unsolved: 34. Unsolved nomenclator messages"
+(24 Apr 2017). The last was opened and its whole comment thread (about 118 comment markers) grepped: its only "Stepney" is
+the 1783 Manchester-to-Sir John Stepney letter (Clements Library), a different item a century later; no Paget, Levant or
+Plantamour. No Cryptiana hit (Tomokiyo's glorious.htm had already been read for Paget/SP 105 on 24 Sept 2026, zero hits).
+Result: no decipherment or plaintext of either item found on the open web or in the three blogs' posts or comment threads.
+
+## Premise check (GF-A2-9, 2 Oct 2026)
+
+(a) Folder's own mentions -- found, and it changes the premise for f.121. The TNA Discovery item text for f.121
+(C6822019, read in full through tools/discovery_items.py "SP 105" "SP 105/60" cipher) says Stepney "acknowledges letter
+from Constantinople, cover given in cipher": the cipher it mentions is on *Paget's* incoming letter's cover, and the
+full description of Stepney's own text (Savoy at Marsaglia, Ratzeburg, the King at Harwich, the admirals) marks no
+passage of f.121 as in cipher. f.121 may carry no ciphertext at all; only f.135 ("a PS in cipher (Key untraced in SP
+106)") is described as enciphered. A copy order should name f.135 first and treat f.121 as possibly plain.
+(b) Other solvers' working files -- not found for this item. Shallow clones of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers (2 Oct 2026) grepped for Paget, "SP 105/60", Plantamour: cyphersolver's only "SP 105/60"
+line is targets/stepney/NOTES.md (the 1702 Stepney-Manchester item, background on Stepney's letter-books and SP 106);
+its Paget hits are the unrelated 1585-86 Charles Paget items. Aymeloglu's repository: no Paget/Plantamour; its only
+Stepney row is DECODE 2864 (Beinecke Osborn fc37, 1702, non-decrypted) -- cited, not copied.
+(c) Physical neighbours -- catalogue only (SP 105/60 is not digitised; no image of any folio seen). Same letter-book,
+same correspondent and months: f.123 (to Paget, Jan 5/15 1694) marks single words "[In cipher]" with the cataloguer's
+reading beside them ("to Kinsky [In cipher]", "Paget's brother [In cipher]"), so that copy carries cipher words that were
+legible to the cataloguer -- a possible key-bearing sibling; f.138 (to Paget, 22 May 1694) "[First para interspersed with
+cipher]"; f.151 gives one code "1433 (?Königsegg)"; f.71 (to Schweinfurt) a PS on the code "90 ... for the first person";
+f.168 (to Kinsky, Jan 8/18 1694) gives the *contents* of Paget's Oct 2, 1693 letter "which is entirely in cipher" --
+a decipherment of Paget's letter, not of Stepney's f.135 PS; f.135v (Apr 2/12 1694) lists Stepney-Paget dispatches. No
+neighbour is described as a decipherment of f.135's PS.
+(d) Recipient side -- partly unreachable. Paget's own papers (SOAS PP MS 4; web-search records PP_MS_4.02.27.01 and
+.28.01 "50 letters mostly 1693-4") would hold the received copy of f.135, possibly with a deciphering hand; the SOAS
+catalogue host did not resolve from this container (getaddrinfo ENOTFOUND), so their contents are unread. The
+printed Lexington Papers (1851) start Sept 1694 and print Paget's letters *to* Lexington only (see line 2). Next:
+read SOAS PP MS 4.02.27.01/.28.01 item lists for Stepney 1693-94 letters (catalogue, owner-side or a host that resolves).
+
