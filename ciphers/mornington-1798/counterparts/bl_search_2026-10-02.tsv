@@ -1,0 +1,44 @@
+# searcharchives.bl.uk counterpart-copy search, GAPS4-mornington-1798, 2 Oct 2026 (all_fields, format=json, per_page=100, one request per row, >=2.2 s apart).
+# query_label	query	total_count	D623_records	other_records_with_cipher_word	other_records_Wellesley-Dundas_series (Add MS 13456-13459, 37274-37278, 13751, Mss Eur D587)
+q01_mornington_cipher	Mornington cipher	43	42	Add MS 38237	
+q02	Wellesley cipher	53	42	Add MS 38237;Add MS 40690	
+q03	Wellesley cypher	9	1	Add MS 38237;Add MS 40690;Add MS 37274-37275	
+q04	Mornington cypher	5	1	Add MS 37274-37275;Add MS 38237	
+q05	Wellesley decipher	0	0		
+q06	Wellesley decypher	2	0	Mss Eur F228/65	
+q07	Mornington decoded	1	1		
+q08	Dundas cipher	18	11	Add MS 38237;Add MS 62665	
+q09	Dundas cypher	14	1	Add MS 37274-37275;IOR/L/PS/9/76/49;Add MS 34710 B;Add MS 38237;Add MS 34710 A-N	
+q10	Add MS 13751	1	0		Add MS 13751
+q11	Wellesley Dundas 1798	40	0		Add MS 13458;Add MS 13459;Add MS 13456-13457;Add MS 37274;Add MS 37276;Mss Eur D587;Add MS 37278
+q12	Wellesley Dundas 1799	35	0		Add MS 13459;Add MS 37276;Add MS 37274;Add MS 37277;Add MS 37278
+q13	Wellesley Dundas 1800	43	0	Add MS 38237	Add MS 37275;Add MS 37278
+q14	Mornington Dundas 1798	25	0		Add MS 13456-13457;Add MS 13458;Add MS 37276;Add MS 37274;Add MS 13459;Mss Eur D587;Add MS 37278
+q15	Mornington Dundas 1799	28	1		Add MS 37276;Add MS 37274;Add MS 13459;Add MS 37277;Add MS 37278
+q16	Home Miscellaneous cipher 1798	0	0		
+q17	Board of Control cipher Wellesley	2	1		
+q18	Board of Control secret 1798 Mornington	1	0		
+q19	cipher Mauritius proclamation 1798	1	1		
+q20	cipher Mysore settlement 1799	0	0		
+q21	key cipher Governor General Bengal	1	0		
+q22	Wellesley 3 Jul 1798	0	0		
+q23	Wellesley 6 Jul 1798	0	0		
+q24	Wellesley 11 May 1799	14	0		
+q25	Wellesley 7 Jun 1799	1	0		
+q26	Wellesley 5 Mar 1800	8	0		Add MS 37278
+q27	Wellesley 6 Mar 1800	6	0		
+q28	Wellesley 25 Apr 1800	8	0		Add MS 37278
+q29	Wellesley 21 Jun 1800	2	0		
+q30	Wellesley 9 Jul 1800	2	0		
+q31	Wellesley 13 Jul 1800	3	0		
+q32	Add MS 13456	1	0		Add MS 13456
+q33	Add MS 13457	1	0		Add MS 13457
+q34	Add MS 37274	1	0		Add MS 37274
+q35	Add MS 37276	1	0		Add MS 37276
+q36	Home Miscellaneous Mornington Dundas 1799	1	0		
+q37	Secret Committee Mornington cypher	1	0		
+q38	Bengal secret letters cypher 1798	0	0		
+q39	Melville Wellesley cypher	2	1	Add MS 38237	
+q40	Wellesley key to cipher	3	1		
+q41	Wellesley Papers No	79	0		
+# item-level records fetched (catalog/<id>?format=json): Add MS 13456 (040-002035776), 13457 (040-002035777), 13456-13457 (036-002035775), 13458 (040-002035778), 37274 (040-002053574), 37275 (040-002053575), 37276 (040-002053576), Mss Eur D587 (032-002272768), Mss Eur D623/10 (040-002273066). None carries a cipher, cypher, decode or decipher word; D623/10 shows no digitised copy (restrictions_on_access: request the physical item).

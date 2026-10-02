@@ -13,6 +13,21 @@ the OCR is kept uncorrected, only re-ordered where the page layout interleaved t
     footnote under pp. 26-33. The OCR interleaves body and footnote page by page; written here as the letter body
     first, then the footnote, pages marked. Crib for D623/24 (7 Jun 1799, 'memorandum in cipher detailing the
     proposed settlement' of Mysore).
+  - Vol. 2 No. LXXXIV p. 311 (35315_djvu.txt): the Marquess Wellesley to Vice-Admiral Rainier, Fort William, 9 Jul 1800
+    (discontinue the Batavia expedition; stay in Indian seas; a force to Egypt by the Red Sea under consideration). Candidate
+    clear text for D623/36 (9 Jul 1800, 'Extract from a letter to Admiral R, mainly in cipher'; copy /37): same date and
+    recipient. Ingram 1970's footnote cites the manuscript as Add MS 13751 f. 77. Added GAPS4-mornington-1798, 2 Oct 2026.
+  - Vol. 2 No. LXIX pp. 225-252 (35315_djvu.txt): the Earl of Mornington to Henry Dundas, Fort William, 5 Mar 1800, opening
+    on Dundas's approbation of the treaty of Hyderabad and the system for the security of British India. Candidate clear
+    text for D623/27 (5 Mar 1800, 'Letter and memorandum, partly in cipher, concerning the treaty of Hyderabad and policies
+    for the preservation and consolidation of the British power in India'): same date, sender, recipient and subject. The
+    23 Sept 2026 pass ran only the '5th March, 1800' form and matched the stock table on the same page range; 'March 5th,
+    1800' was first run on 2 Oct 2026. Added GAPS4-mornington-1798, 2 Oct 2026.
+  - Vol. 1 No. XXV (35304_djvu.txt): the Earl of Mornington to J. A. Kirkpatrick, Acting Resident at Hyderabad (Secret),
+    Fort William, 8 Jul 1798, transmitting the Malartic proclamation. Clear text of the despatch catalogued as Mss Eur
+    F228/65, "Copy of despatch (with decypher) dated 8 Jul 1798 from Wellesley" (BL, Kirkpatrick Collection; searcharchives
+    record 040-002288638): a cipher + period decypher + print triple of the same office and week as D623/4-5. Crib/control
+    candidate for the key, not a reading. Added GAPS4-mornington-1798, 2 Oct 2026.
 Usage: python3 ciphers/mornington-1798/print/extract_cribs.py [--check]   (--check: exit 1 if a committed crib differs)
 GAPS3-mornington-1798, 2 Oct 2026.
 """
@@ -91,10 +106,53 @@ def mysore(L):
     for a, b, pg in foot: parts.append(f"\n[p. {pg}, foot]\n" + block(L, a, b) + "\n")
     return "".join(parts)
 
+def rainier(L):
+    return hdr(
+        "CANDIDATE -- The Marquess Wellesley to his Excellency Vice-Admiral Rainier, Fort William, 9 Jul 1800 (the Batavia",
+        "expedition discontinued; the squadron to remain in the Indian seas against a French move from Europe or on Egypt by",
+        "the Red Sea; a force from India to Egypt under consideration). Printed: Martin, Despatches ... of the Marquess",
+        "Wellesley, Vol. 2 (1836), No. LXXXIV, p. 311. Manuscript cited by Ingram 1970 (be-api snippet, print/ingram_fts_results.tsv):",
+        "Add MS 13751 f. 77 (BL, 'Copies of letters from Lord Wellesley to Vice Admi. Peter Rainier', searcharchives record",
+        "040-002035836 family, 2 Oct 2026). Source: archive.org india.history.resource.35315, 35315_djvu.txt raw lines 16852-16888",
+        "(OCR uncorrected: 'Fost William, July 9th, 1808' is Fort William, July 9th, 1800 -- the running head reads 1800).",
+        "Grade C (printed clear text, rule 4) for every token. Candidate for: D623/36 (9 Jul 1800, 'Extract from a letter to",
+        "Admiral R, mainly in cipher') and its copy D623/37 -- the same date and recipient; whether the cipher extract is a",
+        "passage of this letter or a separate enclosure cannot be settled from print. Not a reading of any D623 item.",
+        "GAPS4-mornington-1798, 2 Oct 2026.") + block(L, 16852, 16888) + "\n"
+
+def dundas_5mar1800(L):
+    return hdr(
+        "CANDIDATE -- The Earl of Mornington to the Right Honourable Henry Dundas, Fort William, 5 Mar 1800 ('Although most of",
+        "the points touched in your several despatches have already been anticipated ... approbation of the treaty of",
+        "Hyderabad'; the system of British security in India, the Nizam, the treaties of Hyderabad and Seringapatam, the",
+        "partition, the courts, revenue and army). Printed: Martin, Despatches ... of the Marquess Wellesley, Vol. 2 (1836),",
+        "No. LXIX, pp. 225-252. Source: archive.org india.history.resource.35315, 35315_djvu.txt raw lines 12485-13703 (OCR",
+        "uncorrected, running heads kept). Grade C (printed clear text, rule 4) for every token. Candidate for: D623/27",
+        "(5 Mar 1800, 'Letter and memorandum, partly in cipher, concerning the treaty of Hyderabad and policies for the",
+        "preservation and consolidation of the British power in India') -- the same date, sender, recipient and subject;",
+        "whether the cipher passages and the memorandum are in this printed text cannot be settled from print. Not a reading",
+        "of any D623 item. GAPS4-mornington-1798, 2 Oct 2026.") + block(L, 12485, 13703) + "\n"
+
+def kirkpatrick(L):
+    return hdr(
+        "CRIB/CONTROL -- The Earl of Mornington to J. A. Kirkpatrick, Esq., Acting Resident at Hyderabad (Secret), Fort William,",
+        "8 Jul 1798: transmits an authentic copy of the Malartic proclamation and the measures taken. Printed: Martin, Despatches",
+        "... of the Marquess Wellesley, Vol. 1 (1836), No. XXV, from p. 100. Source: archive.org india.history.resource.35304,",
+        "35304_djvu.txt raw lines 6102-6912 (OCR uncorrected). Grade C (printed clear text, rule 4) for every token.",
+        "Why it is here: BL Mss Eur F228/65 (Kirkpatrick Collection, record 040-002288638, located 2 Oct 2026) is 'Copy of",
+        "despatch (with decypher) dated 8 Jul 1798 from Wellesley on policy towards Tipu Sultan following the Proclamation issued",
+        "by the French Governor of Mauritius' -- the cipher copy and its period decypher of this very despatch, in the same",
+        "office and week as D623/4 (3 Jul) and /5 (6 Jul 1798). If the Governor-General used one cipher for Dundas and for the",
+        "Resident, F228/65 + this print is a known-answer control for the D623/41 key; whether it is the same cipher is unknown.",
+        "Not a reading of any D623 item. GAPS4-mornington-1798, 2 Oct 2026.") + block(L, 6102, 6912) + "\n"
+
 OUT = {
     "crib_malartic-proclamation-30jan1798_martin1836_v1_pviii-x.txt": (V1, proclamation),
     "crib_mornington-harris-20jun1798_martin1836_v1_p64.txt": (V1, harris),
     "crib_mysore-partition-treaty-22jun1799_martin1836_v2_p25.txt": (V2, mysore),
+    "D623-36_candidate_martin1836_v2_p311.txt": (V2, rainier),
+    "D623-27_candidate_martin1836_v2_p225.txt": (V2, dundas_5mar1800),
+    "crib_mornington-kirkpatrick-8jul1798_martin1836_v1_p100.txt": (V1, kirkpatrick),
 }
 if __name__ == "__main__":
     check = "--check" in sys.argv; stale = 0

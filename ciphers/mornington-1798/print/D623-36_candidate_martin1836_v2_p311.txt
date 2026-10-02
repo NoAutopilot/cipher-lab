@@ -1,0 +1,45 @@
+# CANDIDATE -- The Marquess Wellesley to his Excellency Vice-Admiral Rainier, Fort William, 9 Jul 1800 (the Batavia
+# expedition discontinued; the squadron to remain in the Indian seas against a French move from Europe or on Egypt by
+# the Red Sea; a force from India to Egypt under consideration). Printed: Martin, Despatches ... of the Marquess
+# Wellesley, Vol. 2 (1836), No. LXXXIV, p. 311. Manuscript cited by Ingram 1970 (be-api snippet, print/ingram_fts_results.tsv):
+# Add MS 13751 f. 77 (BL, 'Copies of letters from Lord Wellesley to Vice Admi. Peter Rainier', searcharchives record
+# 040-002035836 family, 2 Oct 2026). Source: archive.org india.history.resource.35315, 35315_djvu.txt raw lines 16852-16888
+# (OCR uncorrected: 'Fost William, July 9th, 1808' is Fort William, July 9th, 1800 -- the running head reads 1800).
+# Grade C (printed clear text, rule 4) for every token. Candidate for: D623/36 (9 Jul 1800, 'Extract from a letter to
+# Admiral R, mainly in cipher') and its copy D623/37 -- the same date and recipient; whether the cipher extract is a
+# passage of this letter or a separate enclosure cannot be settled from print. Not a reading of any D623 item.
+# GAPS4-mornington-1798, 2 Oct 2026.
+
+No, LXXXIV.."°
+The. Marquess Wellesley to his Excellency Vice-Admiral Rainier.
+
+Sin, ‘ Fost William, July 9th, 1808.
+
+The tenour of the. adviees from Lieut.-Colonel Murray,
+dated Mocha, Ist of June, 1800, combined with ‘other consi-
+derations which I shall have the honour te state t6 your Ex-
+cellency on a future occasion, confirms me in opinion that it
+is inexpedient, at this period, to prosecute the intended expe-
+dition to Batavia.
+
+I therefore request your Excellency to discontinue all
+‘preparations for that expedition, and I take the liberty of
+recommending to your Excellency, in the most earnest man-
+‘ner, to remain in these ‘séas, with as. many of his Majesty's
+ships: as you may find it practicable to collect together, with a
+view to the defence of the Coasts of India against: any at-
+tempt whicli may be made by France from Europe, or event-
+ually for the purpose of frustrating any designs which she
+may have formed of assisting General Kleber in Egypt by
+.the co-operation of a naval force in the Red Sea.
+
+I have now under my eensideration the possibility and
+expediency of sending a military force from India to Egypt
+by the Red Sea; and I shall hereafter have the honour to
+communicate to your Excellency the result of my- opinion on
+that difficult and embarrassing question.
+
+I have the honour to be, &c.
+WELLESLEY.
+
+312 THE GOVERNOR-GENERAL IN COUNCIL, TO July,

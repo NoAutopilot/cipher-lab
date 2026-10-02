@@ -1,0 +1,786 @@
+# CRIB/CONTROL -- The Earl of Mornington to J. A. Kirkpatrick, Esq., Acting Resident at Hyderabad (Secret), Fort William,
+# 8 Jul 1798: transmits an authentic copy of the Malartic proclamation and the measures taken. Printed: Martin, Despatches
+# ... of the Marquess Wellesley, Vol. 1 (1836), No. XXV, from p. 100. Source: archive.org india.history.resource.35304,
+# 35304_djvu.txt raw lines 6102-6912 (OCR uncorrected). Grade C (printed clear text, rule 4) for every token.
+# Why it is here: BL Mss Eur F228/65 (Kirkpatrick Collection, record 040-002288638, located 2 Oct 2026) is 'Copy of
+# despatch (with decypher) dated 8 Jul 1798 from Wellesley on policy towards Tipu Sultan following the Proclamation issued
+# by the French Governor of Mauritius' -- the cipher copy and its period decypher of this very despatch, in the same
+# office and week as D623/4 (3 Jul) and /5 (6 Jul 1798). If the Governor-General used one cipher for Dundas and for the
+# Resident, F228/65 + this print is a known-answer control for the D623/41 key; whether it is the same cipher is unknown.
+# Not a reading of any D623 item. GAPS4-mornington-1798, 2 Oct 2026.
+
+No. XXV.
+
+The Earl of Mornington to J. A. Kirkpatrick, Esq. Acting Resident
+
+at Hyderabad.
+(Secret.)
+Str, Fort William, 8th July 1798.
+
+I transmit to you an authentic copy of a Proclamation
+published by the Governor General of the Isle of France,
+during the residence of two Ambassadors from Tippoo Sul-
+taun on that Island. The Proclamation purports to be a de-
+claration of certain propositions communicated to the French
+Government, in the name of Tippoo Sultaun, by his Ambas-
+sadors, then on the spot.
+
+It enumerates those propositions with a particularity of
+detail which would not have been hazarded in the presence
+of the Ambassadors, had it not corresponded with the sub-
+stance of the communications made by them to the French
+Government.
+
+In addition to the arguments founded in the nature of
+the Proclamation, and in the facts of its publication under
+the eyes of the Ambassadors, I am in possession of evidence
+which leaves no doubt upon my mind of the concurrence of
+the Ambassadors in every part of the Proclamation; and I
+cannot suppose that they would have ventured to exceed the
+limits of their instructions from Tippoo Sultaun in a matter
+of such serious importance as the conclusion of offensive and
+defensive engagements with the French Government, Under
+this Proclamation, 150 officers and privates were actually
+raised in the Isle of France for the service of Tippoo, and
+for the purposes avowed in the Proclamation; and that force
+has since been landed at Mangalore, and received into Tip-
+poo’s army with peculiar marks of honour and distinction.
+
+4, This circumstance is sufficient to prove that the pro-
+ceedings of the Ambassadors have obtained the sanction of
+their Sovereign, who has thus confirmed and avowed the pro-
+
+1798. J. A. KIRKPATRICK, ESQ. 95
+
+positions made through them to thg enemy, by a solemn,
+public, and personal act. Having thus entered into an offen-
+sive and defensive alliance with the French Government;
+having collected, in conjunction with that Government, a force
+openly destined to act against the British possessions; having
+avowed, through his public Ambassadors, that he has actually
+made preparations of war for the express purpose of attempt-\/
+ing the subversion of the British power in India; and having
+declared that he only waits the effectual assistance of France
+
+‘to prosecute his design, Tippoo Sultaun has violated the
+treaties of peace and friendship subsisting between him and
+the Allies, and has committed a direct act of hostility against
+the British Government in India.
+
+That he has yet obtained no formidable assistance from
+the enemy, is undoubtedly a fortunate circumstance for the
+British mterests, but the temerity and consequent ill success
+of his councils, in no degree palliates the offensive nature of
+an aggression so unprovoked, and of a violation of faith so
+public and undisguised. It is not improbable, that he may
+still expect to receive a more effectual succour from France;
+but there is every reason to hope, that any attempt to furnish
+him with assistance from that quarter, would be frustrated by
+the vigilance and superior power of his Majesty’s fleets.
+
+It is, however, difficult to ascertain the precise motives
+which may stimulate the violence of his temper to action;
+and his late embassy to the Isle of France is a sufficient |
+proof, that revenge against the British Nation in India, is an /
+object which he is capable of pursuing with more zeal than
+discretion.
+
+Under such circumstances, it is prudent to be prepared
+to repel the attack which he has openly menaced, and as our
+future security, our reputation, and our honor, demand that
+he should be reduced to the alternative, either of makin§
+such satisfaction to the allies, as they may hereafter require
+for the injury which he has committed, or of risking another
+contest with the British power, it is advisable to arm for the
+purpose of supporting whatever requisition we may deem
+it necessary to make to him, when our respective prepara-
+tions shall be sufficiently advanced to enable us to act with
+effect. i
+
+The 10th and 13th. articles of treaties of alliance be-
+
+96 TILE EARL OF MORNINGTON, TO July,
+
+tween the Company, the Nizam, and the Peishwa, provide
+that “if Tippoo should molest or attack either of the con-
+tracting parties, the others shall join to punish him, the
+modes and conditions of which, shall be hereafter settled by
+the three contracting parties.”
+
+I desire that you will immediately communicate to Azim
+ul Omra in a formal manner the accompanying proclamation,
+and explain to him the nature of the propositions which it
+contains; you will also notify to him the landing of the
+French force at Mangalore, and declare to him in my name,
+that I consider the whole transaction as a violation of treaty,
+and a direct act of hostility on the part of Tippoo; and that
+I claim the assistance and co-operation of the Nizam under
+the 10th Article of the Treaty of Paungul. You will, how-
+ever, add, that although I should feel myself completely justi-
+fied in making an immediate attack upon the territory of
+Tippoo, my disposition to preserve the tranquillity of India,
+
+\Vinduces me in the first instance to afford him an opportunity
+of restraining the excess of his violence, before it shall have
+involved him in the calamity of war.
+
+With this view you will apply to Azim ul Omra to sig-
+nify to the Nizam my wish that he should now express his
+disposition to concur with the Peishwa, and with me, in mak-
+ing a demand of satisfaction from Tippoo Sultaun. The na-
+ture and extent of the demand, as well as the time of making
+it, to be hereafter concerted between the allies. You will
+inform Azim ul Omra that a similar application has been
+made to the Peishwa: the Resident at Poonah will be di-
+rected to communicate to you the progress of his proceedings
+at that court under the instructions which he will have received
+from me. As soon as you shall have received from Poonah
+the notification of the Peishwa’s concurrence in the proposi-
+tions made to him on this part of the subject, you will send
+me immediate advice of it. og
+
+If Tippoo Sultaun, in the career of his ungovernable
+passions, should refuse to make the satisfaction which shall
+be demanded of him by the allies, hostilities will become in-
+evitable; and you will signify to Azim ul Omra that I have
+already taken the necessary precaution of assembling the
+
+] forces of the Company with a view to that event, entertaining
+no doubt that in such a contingency, the Nizam will be ready
+
+1798. J. A. KIRKPATRICK, ESQ. 97
+
+to afford to the common cause of the allies, the effectual co-
+operation of his force.
+
+Although I have thought it expedient to communicate
+my instructions to you in the foregoing order, I am sensible
+that their effectual execution will be impracticable, unless
+some previous measures be taken for restoring the indepen-
+dence of the Nizam’s government, by delivering it from the
+influence of the French party, and from the hostilities menaced
+by Scindiah, as well as from the danger of future attacks on
+the part of the Mahrattas.
+
+The present crisis demands a serious and dispassionate
+review of the relative interests of the powers united by treaty
+for the purpose of securing an effectual barrier against the
+inordinate ambition and implacable revenge of Tippoo Sultaun.
+
+It has been painful to observe that since the conclusion
+of the Treaty of Seringapatam, two great branches of the
+triple Alliance have been engaged in mutual contests, of
+which the result has terminated in their mutual weakness;
+whilst the common enemy has remained at rest, improved his
+resources, and increased his strength. The unfortunate ani-
+mosity between the Courts of Poonah and Hyderabad, while
+it has tended to foment and aggravate the distractions in the
+former Court has contributed to reduce the latter to the lowest
+degree of weakness and humiliation. In the meanwhile the
+French faction at the Court at Hyderabad has grown to such
+a formidable degree of power, as to control on many serious
+occasions the councils of that state, and to menace an ascen-
+dant influence in the eventual succession to the throne of the
+Nizam.
+
+Although the death of Mons. Raymond, and the re-
+sumption of the Jaghire which had been granted to him, have
+in some degree reduced the political influence of the French
+army at. Flyderabad, it now forms the only efficient part of
+the Nizam’'s military strength; its numbers have been lately /
+increased ; its discipline considerably improved: and it pos- f
+sesses sufficient activity and power to attempt and accomplish
+objects of the most prejudicial nature to the independence of
+the Court of Hyderabad, to the common interests of the Ni-
+zam and of the Peishwa, as well as to those of the British
+nation in India. In the event of a war with Mysore, there
+can be no doubt that the wishes and interests of this part of
+VOL. I. H
+
+98 THE EARL OF MORNINGTON, TO July,
+
+the Nizam’s army must be favorable to the cause of Tippoo
+Sultaun, more especially under the actual circumstances of
+his having concluded an alliance with France, and having ad-
+mitted a body of French troops into his service. If the
+French troops of the Nizam did not afford Tippoo open
+assistance, at least they could not be brought into the field
+against him without the utmost danger to the cause of the
+allies; nor could they be suffered to remain in the Deccan
+during the continuance of the contest, unless checked by the
+presence of an equally powerful force, which must in that
+case be diverted from the common objects of the war, and
+must operate as a positive diminution of our effective strength
+in the field.
+
+It appears, however, nearly certain, that in the present
+weak state of the Nizam’s government, the French corps in
+his service would openly join Tippoo Sultaun, and by a sud-
+den blow endeavour to seize the Nizam’s territories, and to
+secure them to the dominion of France, under an alliance
+offensive and defensive with Tippoo Sultaun.
+
+It is scarcely necessary to observe that the success of
+such a design must be highly injurious to the interests of the
+Court of Poonah, especially when it is considered that it must
+be the interest and inclination of Scindiah (who entertains a
+large body of infantry in his service, under the command of a
+French officer), to engage with Tippoo Sultaun and the French
+upon conditions fatal to the existence of the Peishwa’s au-
+thority, and even of his office. The junction which might
+thus be effected between the French officers with their seve-
+ral corps in the respective services of the Nizam, of Scindiah,
+and of Tippoo, might establish the power of France and India
+upon the ruin of the states of Poonah and of the Deccan.
+The Court of Hyderabad, therefore, in its present condition, is
+more likely to prove the source of additional strength to the
+common enemy of the Nizam, of the Peishwa, and of the
+Company, than to afford useful assistance to any branch of
+the triple alliance.
+
+From my letter to the Resident at Poonah, of which I
+enclose you a copy, you will observe that I have instructed
+him to state to the Peishwa, the arguments of prudence and
+policy which should induce him to view the restoration of the
+Nizam to a just degree of consideration and power, as an ob-
+
+1798. J. A. KIRKPATRICK, ESQ. 99
+
+ject intimately connected with the Peishwa’s own emancipa-
+tion from the undue influence by which he is now oppressed,
+as well as with his future security against the violence of
+Tippoo Sultaun, and of Scindiah.
+
+J refer you to the same letter for the particulars of my
+instructions to Colonel Palmer, and of the measures which I
+have authorised him to pursue for enabling the Peishwa to
+fulfil his engagements under the triple alliance.
+
+I am persuaded that the Azim ul Omra will at once
+perceive the advantages which must result to the interest of
+the Nizam from the restoration of the due authority of the.
+Peishwa, accompanied by the arrangements which I have
+proposed. Under those arrangements the power of the
+Peishwa would operate as a constant restraint upon the mo-
+tions of Scindiah, of Tippoo, and of the French, who are
+equally the enemies of the Peishwa and of the Nizam, and
+who menace equal danger to the tranquillity and indepen-
+dence of both.
+
+Immediately upon receiving this despatch you will com-
+municate to Azim ul Omra the whole of the proposed arrange-
+ments with respect to the Courts of Hyderabad and Poonah, as
+detailed in this letter, and in that addressed to Colonel
+Palmer; and you will explain to him fully the principles upon
+which the arrangement is founded, the various objects which
+it embraces, the means by-which it is to be carried into effect,
+and the ends which it is intended to accomplish, with relation ,
+to the interests of all the parties concerned.
+
+You will at the same time apprise him without disguise,
+that the execution of the whole and of every part of the plan
+must depend upon the mutual consent of the Nizam and of
+the Peishwa. You will further express to Azim ul Omra
+that although I have viewed with great concern and anxiety
+the progress of the calamities which have disturbed the tran-
+quillity of the two courts, it is now a matter of cordial satis-
+faction to me to perceive that the result of those misfortunes
+promises an union of sentiment between the Nizam and the
+Peishwa, and affords a prospect of re-establishing the triple
+alliance on its original basis. You will also urge to Azim ul
+Omra the credit and honor which it would reflect on his ad-
+ministration, if through his means the Nizam and the Peish-
+wa should be enabled to derive reciprocal advantage and
+
+100 THE EARL OF MORNINGTON, TO July,
+
+permanent security from a state of confusion which appeared
+to threaten their common ruin.
+
+Irely upon your ability and zeal for the public service
+to state the details of these important measures to Azim ul
+Orma with every circumstance of advantage. Your commu-
+nication should be unequivocal and unreserved; no part
+either of the principles or details of the arrangement requires
+any degree of concealment, my object being to unite all parties
+on the firm ground of their genuine interests.
+
+You will at the same time declare to Azim ul Omra,
+that the recent conduct of Tippoo Sultaun having rendered
+it my right and duty, in conformity with the laws of my
+country, to take effectual measures in concert with the allies
+for the mutual defence of our respective possessions; I am
+now at liberty to express my sincere disposition to attend to
+the propositions which he has so frequently made for the ex-
+tension of our subsidiary engagements with his Highness ; and
+you will signify my anxious desire to interpose the friendly
+mediation of the Company for the adjustment of the unfortu-
+nate differences which have so long subsisted between the
+Courts of Poonah and Hyderabad and Dowlut Rao Scindiah.
+
+You will further state, that I have authorised you to
+enter into an immediate negotiation with Azim ul Omra for
+increasing our present detachment with his Highness to the
+number of six thousand men, including those now serving
+with his Highness; under the following conditions :—
+
+i. That the services of the increased detachment, be
+subject to the same conditions of limitation and restriction as
+the present detachment, unless the Peishwa, at the instance
+of the British Government, should hereafter consent to any
+variations in those conditions.
+
+ii. That satisfactory and effectual provision be made for
+the regular payment of the detachment, and that the arrears of
+the Peishwa on the part of the Company be regularly balanced
+against the arrears of Subsidy on the part of his Highness,
+
+iii, That the whole corps officered by Frenchmen, and
+which was named the corps of Raymond, and is now com-
+manded by Monsieur Piron, be immediately disbanded. The
+French officers and privates to be conveyed to Icurope at the
+expense of the Company, in ships to be provided for that
+purpose by the Government of Fort St. George, at a con-
+
+1798. J. A. KIRKPATRICK, ESQ, 101
+
+venient port, to be named by that Government. For this
+purpose the officers and privates are to procecd to the place
+appointed by that Government, which will stipulate to treat
+them with every degree of consideration due to their rank :
+they will not be subject to any further restraint than such as
+is absolutely necessary for effecting the purpose of conveying
+them to Europe. A stipulation to be entered into by the
+Resident in my name, that the officers and privates so em-
+barked shall be sent to France as soon as possible after their
+arrival in any port in Great Britain, and not be detained for
+any cartel or exchange of prisoners, nor be considered as pri-
+soners to any other effect than the security of their return to
+their native country. Such of the native officers and privates
+as the Nizam may wish to retain in his service to be drafted
+into the corps of Mr. Finglass, or into any other corps in his
+Highness’s service under the command of British, or of officers
+of any country but France. The European and native de-
+serters from the Company’s army on the coast to be excepted
+from this part of the arrangement, and to be delivered up to
+the Government of Fort St. George.
+
+iv. His Highness to stipulate for himself, his heirs and
+successors, that the natives of France, shall be for ever ex-
+cluded from his armies and dominions.
+
+You will urge to Azim ul Omra in the strongest terms,
+the necessity of his taking every precaution to prevent the
+propositions for the dismission of the French party from
+transpiring ; and you will suggest to him, the propriety of .
+dispersing the corps in small parties, for the purpose of facili-
+tating its final reduction, and of preventing the officers and
+privates from passing into the service of Tippoo or of Scindiah.
+If the French officers should obtain information of the
+measures in agitation with respect to them, and should be
+allowed to unite themselves into one body, there is every
+reason to appfehend, that they would endeavour to excite
+commotion, or that they would attempt to retire with their
+corps into the service of the enemies of the Nizam.
+
+You will consider the Nizam’s acceptance of my arbi-
+tration, between the Courts of Poonah and Hyderabad, and
+Scindiah, upon the principles stated in my letter to Colonel
+Palmer, as well as his Highness’s consent:to the proposed
+arrangements at Poonah, and to the several tonditions stated
+
+740R oO
+
+102 THE EARL OF MORNINGTON, TO July,
+
+in paragraph No. 24, of his despatch, to be necessary preli-
+minaries to the measures, which I have authorized you to
+take for delivering the Nizam from the power of the French
+faction established in his dominions. Should Azim ul Omra
+consent in the name of the Nizam, to the proposed condi-
+tions, you will then require the march of the troops from
+Fort St. George, or from such station as the Government of
+that Presidency shall have appointed for the detachment,
+with a view to its speedy march to Hyderabad.
+
+It would be useful to me to learn your sentiments, with
+respect to a new treaty of general defence with the Nizam:
+and to any new objects which it might embrace with relation
+to our interests at the Court of Hyderabad; to this treaty I
+should wish the Peishwa to be a party.
+
+You will inform Azim ul Omra, that under the circum-
+stances of Tippoo’s preparations of war against us, and
+of the hostilities with which Scindiah menaces the dominions
+of the Nizam, the British detachment at Hyderabad, will
+have orders to protect his Highness’s person; and to support
+his authority against any atttack which Scindiah may make
+upon either, as well as against any attempts of the French
+party; and you will understand it to be my intention, to vest
+you with full powers to direct the employment of the troops
+in both cases, in such manner as circumstances may sender
+advisable, provided that in the opinion of the commanding
+officer, the strength of the detachment shall be deemed ade-
+quate to the performance of the service required. You will
+however apprize Azim ul Omra, that it is my wish to mediate
+between Scindiah, and the Courts of Poonah and Hyderabad,
+under the condition detailed in my letter to Colonel Palmer,
+and you will consider the ‘provisional agreement of the Nizam
+to this offer of mediation, between his Highness and Scin-
+diah, as another necessary preliminary to the increase of the
+British detachment at Hyderabad. .
+
+The whole scope of my views, is to re-establish our means
+of defence against the avowed designs of Tippoo, by restor-
+ing to our allies that degree of consideration and strength,
+which they possessed at the conclusion of the treaty of Serin-
+gapatam, and which it was the object of that treaty to secure
+on solid and permanent foundations; an object inseparably
+connected withthe securitwof the British possessions in India.
+
+1798. J. A. KIRKPATRICK, ESQ. 103
+
+Since the conclusion of the peace of Seringapatam, a ma-
+terial change has taken place in the situation of almost all
+the states of India, both with relation to each other, and to
+the interests of the British Government. The revolutions
+at Poonah, have impaired the influence of the constitutional
+head of the Mahratta empire, and deranged the whole
+system of the balanced powers and interests of the several
+confederate Mahratta states.
+
+Both the Peishwa and the Nizam, whose respective
+power it was the object of the treaty of Seringapatam to
+strengthen and uphold, are now depressed and weakened ;
+the former by the intrusion of Scindiah, and the latter by the
+threatened hostilities of the same chieftain, and by the esta-
+blishment of a French faction in the center of the Deccan.
+The co-operation of these two members of the triple alli-
+ance has been rendered impracticable by the progress of
+their mutual contention and intrigues, while the internal con-
+vulsions of each state have diminished the resources of both.
+
+In this scene of general confusion, the power of Tippoo
+Sultaun alone (to restrain which, was the policy of all our
+alliances and treaties) has remained undisturbed and un~-
+impaired, if it has not been augmented and improved. Vv
+
+The final result to the British Government, is the
+entire Joss of the benefit of the treaty of triple alliance
+against Tippoo Sultaun, and the establishment of a French
+army of fourteen thousand men, in the dominion of one of
+our allies, in the vicinity of the territories of Tippoo Sultaun,
+and on the confines of the Carnatic, and of the Northern
+Circars.
+
+It is now become an urgent duty to make an effort for
+the arrangement of a system, the disorder of which already
+menaces our safety, by exposing us to the hazard of a war
+without the aid of an Ally; while on the other hand the in-
+fluence of France acquires daily strength in every quarter of
+India, under the progressive system of introducing French
+officers into the armies of all the Native Powers. The prin- |
+ciples of justice, good faith, and moderation, enjoined by
+Parliament and by the orders of the Honourable the Court of
+Directors, must form the basis of those comprehensive mea-
+sures, the execution of which is demanded by the exigency
+of our present situation, and is favoured by the peculiar cir-
+
+104 THE EARL OF MORNINGTON, TO July,
+
+cumstances of the moment. Pursuing no schemes of conquest
+or extension of dominion, and entertaining no projects of
+ambition or aggrandizement, either for ourselves or for our
+Allies, it is both our right and our duty to give vigour and
+effect to our subsisting alliances and treaties, by restoring to
+our Allies the power of fulfilling their defensive engagements
+with us. Through the means of moderate and pacific repre-
+sentations, confirmed by the force of our own example, it
+must also be our policy to convince the several powers of
+India that their real interest consists in respecting the rights
+of their neighbours, and in cultivating their own resources
+within the limits of their several territories. To these efforts
+we must add a firm resistance against the intrusion of any
+
+e. foreign power which shall endeavour (to the prejudice of our
+alliances and interests) to acquire a preponderant influence in
+the scale of Indian politics, either by force or intrigue; but
+the primary object of all our vigilance and care must be the
+destruction of every seed of the French party, already grown
+to so dangerous a height, and still increasing in the armies
+and councils of the Nizam, of Scindiah, and of Tippoo. The
+exclusion of the influence of France from the dominions of
+the native states, is not more necessary to the preservation of
+our own power, than to the happiness and prosperity of this
+part of the world.
+
+In this first communication with you, I have thought it
+advisable to apprize you of the leading principles which will
+regulate my conduct towards the native powers; and I have
+taken a general view of the actual state of our political rela-
+tions, in order to enable you to act with more confidence and
+dispatch upon such questions of detail, as may occasionally
+call for the exercise of yeur judgement, in promoting the ob-
+jects of your mission.
+
+In pursuing the various topics connected with the sub-
+ject of this despatch, I shall add my instructions, with regard
+to the conduct to be observed by the British detachment, in
+the event of the death of the Nizam.
+
+If the question involved nothing more than the perform-
+ance of our obligations under our subsidiary engagements
+with the Nizam, it would be sufficient to direct that the de-
+tachment should remain neuter until the succession should
+be finally decided, and that it should then be placed under
+
+1798. J. A. KIRKPATRICK, ESQ.° 105
+
+the orders of the Prince who might establish himself on the
+musnud.
+
+But in the present state of India, our interests and
+those of our allies, are materially concerned in the prin-
+ciples and connections of the person upon whom: the succes-
+sion to his Highness may devolve, and consequently no time
+should be lost in determining the part which we shall take
+on the occasion of the Nizam’s decease.
+
+The cases for which it is necessary to provide, may be
+reduced to four.
+
+i. The formal nomination of Secunder Jah to the succes-
+sion.
+
+ii. The death of the Nizam without any formal nomina-
+tion of a successor.
+
+iii. An attempt (in either of the preceding cases) of one
+of his Highness’s younger sons, or of any other competitor to
+usurp the musnud in exclusion of Secunder Jah. d
+
+iv. An actual or asserted nomination of any of his High-
+ness’s younger sons to the exclusion of Secunder Jah.
+
+In the first, second, and third cases, the right of Se-
+cunder Jah, would be indisputable.
+
+From the natural right of Secunder Jah, founded on the
+priority of his birth, added to his having been admitted
+by the Nizam to the personal exercise of a portion of the sove-
+reign authority, under circumstances equivalent to a virtual
+nomination, I trust there is little appprehension of a nomina-
+tion, of any of the younger sons, whilst his Highness shall
+retain the full possession of his faculties.
+
+It is far from improbable, however, that the enemies of
+Secunder Jah, of Azim ul Omra, and of the British interests
+at Hyderabad, aware of the importance of inducing his High-
+ness to nominate a successor of their selection, may avail
+themselves of the weakness of his last moments to prevail on
+him by misrepresentation or other acts, to nominate one of
+his younger sons; or in the event of his Highness’s death
+during the absence of Azim ul Omra, and of the friends of
+Secunder Jah, the enemies of Secunder Jah, may assert that
+his Highness had made a nomination of one of the younger
+sons; and under such circumstances, the falsehood of that
+assertion may be difficult of proof.
+
+43, It is not my wish to interfere in the succession to the
+
+106 THE EARL OF MORNINGTON. TO July,
+
+throne of the Nizam, in repugnance to the established laws
+or customs of India. On the other hand, I hold it to be my
+absolute duty, to prevent the regular order of the succession
+from being disturbed, either by domestic faction, or by
+foreign intrigue or force, to the prejudice of a Prince, the
+establishment of whose right is so intimately connected with
+the security of the British interests in India.
+
+Although primogeniture may not be considered to give
+the same absolute and exclusive right to succession in India,
+as it does in Europe, it is invariabiy deemed the strongest
+title, and is rarely superseded excepting in the cases of dis-
+affection, or of positive disqualification.
+
+So far from these, or any other grounds of objection
+being applicable to Secunder Jah, it is well known that his
+Highness has given the strongest indications of his favorable
+intentions towards Secunder Jah, by entrusting that Prince
+with his seal, and empowering him to perform certain acts
+which are reserved exclusively for the sovereign.
+
+Sufficient proof has already appeared of the interest which
+Tippoo, and the French take in the exclusion of Secun-
+der Jah, and of their determination to interfere in the suc-
+cession to the throne of the Nizam. During the absence
+of Azim ul Omra at Poonah, ,when the French army at
+Hyderabad was neither so formidable in point of numbers
+or of discipline as in the present moment, Monsieur Raymond
+obtained the most decided influence over the councils of the
+Ministers then in power; a permanent establishment was
+given to the French in the Deccan by the grant of a large
+Jaghire to Mons. Raymond; the British detachment was dis-
+missed ; and a considerable body of Tippoo’s troops was en-
+camped on the Nizam’s frontier; a close correspondence was
+established between Tippoo and Imtiaz ud Dowlah through
+Medina Saheb; the enemies of Secunder Jah openly sought
+the assistance of Tippoo, and of the French, with a view of
+influencing the succession; and according to the opinion of
+the Resident at Hyderabad, the event of the Nizam’s death in
+that crisis would have left the throne absolutely at the dis-
+posal of M. Raymond.
+
+A similar plan may be again attempted, and its success
+would necessarily involve the destruction of Azim ul Omra
+and of Secunder Jah, together with the consequent annihi-
+
+1798. J. A. KIRKPATRICK, ESQ. 107
+
+lation of the British influence at Hyderabad: all hope of
+re-establishing the balance of power in India as it existed at
+the peace of Seringapatam would then be precluded. The
+countries of the Nizam would in such an event become in
+effect a dependency of France; and the partizans of. that
+nation, in conjunction with Tippoo and with the body of their
+countrymen lately received into his pay, would have the
+means of endangering the existence of the British power in
+India.
+
+That danger would be greatly aggravated by the approach
+of Zemaun Shah, who has formally announced to me his in-
+tention of invading Hindostan.
+
+The moment is arrived when we must either determine
+to support the rights of Secunder Jah, founded on priority
+of birth and on the virtual nomination of the Nizam in full
+possession of his faculties, against any actual or asserted
+nomination of any of the younger sons, under all the circum-
+stances of suspicion which must attend such a transaction,
+or we must submit to the certain establishment of the influence
+of Tippoo and of France in the Deccan, and to the equally
+certain destruction of our own.
+
+I have therefore no hesitation in declaring my firm de-
+termination to support the succession of Secunder Jah, as
+being essentially connected with the security of all the in-
+terests committed to my charge. The execution of this deter-
+mination will be attended with little difficulty should his
+Highness’s death be protracted until after the proposed
+
+augmentation of the subsidiary engagements with him shall
+haye taken place. The French party at Hyderabad will then
+be no longer in existence, and so powerful a body of our
+troops as will then be in the service of his Highness, will be
+sufficient to preclude either foreign or domestic opposition.
+
+It is more than probable, however, that his Highness’s
+death will take place before the proposed engagements can
+be carried into effect.
+
+With a view to the probability of this case, I have re-
+solved to direct the Government of Fort St. George im-
+mediately to station a force, consisting of not less than two
+regiments, in whatever position may be deemed most eligible
+for affording you the necessary assistance in supporting the
+right of Secunder Jah; and I authorize you, in the event of
+
+108 THE EARL OF MORNINGTON, TO July,
+
+the.death of the Nizam, or whenever you may understand
+from Azim ul Omra that the death of his Highness is likely
+to také place within a very short period of time, to order the
+commanding officer of this force (who will be directed to obey
+your instructions) to march directly to Hyderabad.
+
+Considerable advantages might arise from your commu-
+nicating this determination to Azim ul Omra, but as it is
+to be apprehended that he would avail himself of such a com-
+munication to serve his private pyrposes, and as a disclosure
+of my determination on this point, either to the Nizam himself,
+or to the Mahrattas, or to Tippoo, might lead to very serious
+inconveniences, you will take every possible precaution to
+prevent this part of my instructions from transpiring until the
+death of the Nizam, or the certainty of the near approach of
+that event, shall render it necessary to impart my determi-
+nation to Azim ul Omra.
+
+Having received overtures of a very friendly nature from
+the Rajah of Berar, who has requested the presence of
+a British Resident at his Court, I have despatched an Am-
+bassador to Nagpore with full powers to ascertain the precise
+nature of the Rajah’s views. You will make such use of
+your knowledge of this circumstance as you may think most
+advantageous in the present state of affairs; without deciding
+what benefits to the common cause of the Allies may result
+‘ultimately from this Embassy, it may be expected that the
+appearance of an established intercourse between this Go-
+vernment and that of Berar, may lead Scindiah to form serious
+reflections upon his own situation, and may tend to give addi-
+tional confidence to the adherents of the Peishwa and of the
+Nizam.
+
+Although the previous consent of the Peishwa to thear-
+rangements intended to be made at Hyderabad is highly
+desirable, and is therefore in the first instance to be stated
+to Azim ul Omra as a necessary preliminary to the increase
+of our detachment, yet should Col. Palmer inform you that
+the plan detailed in this letter has failed at the Court of
+Poonah, either from the Peishwa’s rejection of the proposed
+conditions, or from the success of Scindiah’s operations in
+that quarter, or from any other cause, you will notwithstand-
+ing proceed with all practicable dispatch to carry into effect
+such parts of these instructions as shall appear to you prac-
+
+1798. J. A. KIRKPATRICK, ESQ. 109
+
+ticable at the Court of Hyderabad. Reserving always to.the
+Peishwa the power of acceding hereafter to the new system
+of alliance, and with that view continuing in the new sub-
+sidiary treaty with the Nizam the restrictive terms of our
+present subsidiary engagements with his Highness. The
+arrangement will indeed be very incomplete without the res-
+toration of the Peishwa’s authority, accompanied by his full
+concurrence in the measures to be taken at Hyderabad; but
+as the great danger to be averted is the growth of the in-
+fluence of Tippoo and of France in India, it is evident that
+the failure of the proposed plan at Poonah would increase
+the necessity of providing for the existence of the Nizam, and
+of destroying the French party at his Court.
+
+From your reply to the further information required of
+you respecting your passport for Hybut Rao, I am not alto-
+gether certain whether you considered this Government as
+pledged to exempt him and his followers from the payment
+of the duties at Gya, if you should be of opinion th&t this
+indulgence would materially conduce to conciliate his son,
+Ragotim Rao, and to render him favorable to the British
+interests at Hyderabad, I authorize you to assure Ragotim
+Rao that Hybut Rao’s payments, on account of the persons
+who actually accompanied hjm, shall be returned to him at
+Hyderabad as soon as the amount of those payments can be
+ascertained. I rely upon you, however, to render this con-
+cession the source of advantage with respect to the proposed
+arrangements, and also to provide effectually against any
+future attempt to convert so peculiar an indulgence into a
+precedent for further applications of a similar nature.
+
+I entirely approve of your repeated representations to
+the Court of-Hyderabad on the subject of the surrender of
+the deserters ; in the present moment, however, it would not
+be advisable to agitate this question, otherwise than as it is
+connected with the instructions already detailed in this des-
+patch; but if the proposed engagements with his Highness
+should not take effect, I desire you will, without delay, insist
+peremptorily on the surrender of all the deserters from our
+army, whether Europeans or Natives, now entertained in the
+service of his Highness.
+
+Having your whole correspondence now under my con-
+
+110 THE EARL OF MORNINGTON, TO July,
+
+sideration, I shall shortly furnish you with orders on such
+points of detail as require a reply.
+: Mornineton.
