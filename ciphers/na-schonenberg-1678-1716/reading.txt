@@ -3,7 +3,7 @@
 # regenerates that gloss through key.tsv (grade C/M per code, see key.tsv's own note column) as a check, not
 # a fresh decipherment. L18-L19 carry NO gloss on the leaf -- their reading is this worker's own application
 # of the key recovered from L01-L14. U = code never seen in the gloss (left [?]).
-# tokens 281: H 0, C 266, S 0, M 15, I 0, U 0
+# tokens 281: H 0, C 270, S 0, M 11, I 0, U 0
 L01	n o a b y e n d o n o b e
 L02	d a d e n e s t a s p a r t e s q u e
 L03	l a d e a b e r m u d a d o e s t e

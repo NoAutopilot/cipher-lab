@@ -1,0 +1,4 @@
+passA.tsv: e group=A; known-answer 1.000 (c 2/2, e 8/8); 36 tiles (T36a..d = L04,L06,L10,L14) -> c c c c; shuffle 20 seeds mean 0.680 p95 0.800 max 1.000, 1/20 >= target
+passB.tsv: e group=A; known-answer 1.000 (c 2/2, e 8/8); 36 tiles (T36a..d = L04,L06,L10,L14) -> c c c c; shuffle 20 seeds mean 0.680 p95 0.800 max 1.000, 1/20 >= target
+recon.tsv: e group=A; known-answer 1.000 (c 2/2, e 8/8); 36 tiles (T36a..d = L04,L06,L10,L14) -> c c c c; shuffle 20 seeds mean 0.680 p95 0.800 max 1.000, 1/20 >= target
+GATE (reconciled): PASS -> 36 = c at C | acc>=0.90 True, c 2/2 True, >p95 True, 36 one group True

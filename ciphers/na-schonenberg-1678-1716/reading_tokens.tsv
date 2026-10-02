@@ -66,7 +66,7 @@ L04	13	50	H	s	C
 L04	14	33	H	z	C
 L04	15	54	H	y	C
 L04	16	2)	H	r	C
-L04	17	36	H	c	M
+L04	17	36	H	c	C
 L04	18	)	H	u	C
 L04	19	45	M	n	M
 L05	0	50	H	s	C
@@ -101,7 +101,7 @@ L06	8	4)	H	p	C
 L06	9	16	H	e	C
 L06	10	49	H	r	C
 L06	11	68	H	o	C
-L06	12	36	H	c	M
+L06	12	36	H	c	C
 L06	13	8	H	o	C
 L06	14	6)	H	n	C
 L06	15	[triangle]	H	a	C
@@ -175,7 +175,7 @@ L10	6	59	H	d	C
 L10	7	)8	H	a	C
 L10	8	6)	H	n	C
 L10	9	[circle]	H	o	C
-L10	10	36	H	c	M
+L10	10	36	H	c	C
 L10	11	)4	H	u	C
 L10	12	2)	H	r	M
 L10	13	54	H	y	C
@@ -241,7 +241,7 @@ L14	3	[blot]	H	NULL	C
 L14	4	)1	H	r	C
 L14	5	10	H	e	C
 L14	6	)2	H	s	C
-L14	7	36	H	c	M
+L14	7	36	H	c	C
 L14	8	2)	H	r	C
 L14	9	54	H	y	C
 L14	10	)3	H	t	C
