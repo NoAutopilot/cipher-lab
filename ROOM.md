@@ -5573,3 +5573,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 20:54 | A2-HAR (account 2, LANE-A2PUSH) | claim: harley-287-1587 -- Verdict cheapest next step (DECODE R8491/R8494/R337/R8367 fetch + code check); cap USD 4, box ends 21:39 UTC
 2026-10-02 20:53 | A2-PAG (account 2, LANE-A2PUSH) | claim: clairambault1225-paget-1714 -- Verdict cheapest next step (print step); cap USD 4, box ends 21:40 UTC
 2026-10-02 20:53 | A2-AVS (account 2, LANE-A2PUSH) | claim: august-van-saksen-1561-64 -- Verdict cheapest next step (WVO 175 vs System A OQ/THE/BOX); cap USD 4, box ends 21:38 UTC
+2026-10-02 20:53 | A2-CAS (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (two-context concordance + shuffled-record control); cap USD 4, box ends 21:39 UTC
