@@ -1,0 +1,28 @@
+# The 1879 "FACT or FICTION" advertisements, The Standard (London), copied verbatim, no repair.
+# Filed 2 Oct 2026 (step A2-CAT2) as possible siblings of the 1875 W. ads. The ads are unsigned; the
+# attribution to the 1875 writer is Thomas Ernst's (Cipherbrain 24 Jul 2018 comment #8; Revisited 2018
+# comment #26), on the evidence of the same placement (p. 1, col. 2, top rows) and the 11 June ad's
+# cross-reference. Not established here.
+# Witness S: Klaus Schmeh, "The 'Fact or Fiction' cryptograms", Cipherbrain, 24 Jul 2018, post body,
+#   from Jean Palmer [Tony Gaffney], The Agony Column Codes & Ciphers. Its four images are typeset
+#   re-renderings, not newspaper scans (sources/schmeh/posts/08c-img/); they agree letter for letter with the text.
+# Witness E: Thomas Ernst, same post, comment #8 (27 Jul 2018), "double-checked" against The Standard,
+#   with page/column/row positions. Comment #9 (28 Jul 2018): the 25 March ad ran again, unchanged, on 26 March 1879.
+# Snapshot: sources/schmeh/posts/08c-fact-or-fiction-2018-07-24.{html,txt}. No page image of any issue is
+# on disk (rule 2): BNA is login-gated from the cloud (LOCAL-QUEUE L13 route).
+
+## 1879-03-25  The Standard p.1 col.2 row 6 (E); repeated 1879-03-26 unchanged (E #9)
+S: FACT OR FICTION? – T E T S D Y N T R L N S N M D E M Y G M D E E R M E M Y M C N M N Y S L D R Y M T N E.
+E: FACT OR FICTION ?–T E T S D Y N T R L N S N M D E M Y G M D E E R M E M Y M C N M N Y S L D R Y M T N E.
+
+## 1879-04-25  The Standard p.1 col.2 row 4 (E)  -- clear text
+S: FACT or FICTION? – A simple impossibility.
+E: FACT or FICTION ?–A simple impossibility.
+
+## 1879-06-11  The Standard p.1 col.2 row 8 (E)
+S: FACT or FICTION: A P C W M B B I M B I G W W R C W H K W R C W R W G E T W F H W E S B W I H B O A W B F I R G I S
+E: FACT or FICTION ?–A P C W M B B I M B I G W W R C W H K W R C W R W G E T W F H W E S B W I H B O A W B F I R G I S. See advertisement under same heading in "The Standard" of 25th April.
+
+## 1879-06-13  The Standard p.1 col.2 row 3 (E)
+S: FACT or FICTION: A P C W M B B J M B J G W W R C W H K W R C W R W G E T W F H W E S B W J H B O A W B. F J R M. H L F.
+E: FACT or FICTION ?–A P C W M B B J M B J G W W R C W H K W R C W R W G E T W F H W E S B W J H B O A W B. F J R M. H L F.
