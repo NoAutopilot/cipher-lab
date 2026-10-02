@@ -5825,3 +5825,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:04 | A2-CAS6 (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (R9587 image check); cap USD 7, box ends 23:59 UTC
 2026-10-02 23:05 | VERIFY-AVS4 (account 2, LANE-A2PUSH) | claim: verifier august-van-saksen WVO 124 + 3 pairings; box ends 23:45 UTC
 2026-10-02 23:04 | A2-HAR5 (account 2, LANE-A2PUSH) | claim: harley-287-1587 -- Verdict cheapest next step (redo R8491 f.84r / R8494 f.90r gloss pairs, commit, then interlinear_align + shuffled control); cap USD 9, box ends 00:15 UTC 3 Oct
+2026-10-02 23:05 | A2-COL2 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (f.23 gloss alignment + shuffled control); cap USD 7, box ends 00:00 UTC
