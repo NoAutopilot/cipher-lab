@@ -1,12 +1,112 @@
 blocked
-Google Books full-text search of Boltanski 2006, Les ducs de Nevers et l'État royal (volume dsInahmnar8C), returned genuine, verifiable snippets from that book (confirming the search-within control works on this specific volume) but none tying it to fr.4687 or a cipher; Ferrari 1999, the other named edition, is paywalled (academia.edu 403) and queued as LOCAL-QUEUE.tsv row L8.
+Catalogue general des manuscrits francais, Ancien fonds t.4 (Paris 1895), entry 4687 read in full by this worker from the Internet Archive text (p1cataloguegnr04bibluoft): items 1-3 'Lettres, en italien, avec chiffres', item 41 'Chiffre', no 'dechiffre' anywhere in the entry; Boltanski 2006 (Les ducs de Nevers et l'Etat royal) checked page by page by this worker through the HathiTrust HTRC Extracted Features word counts (mdp.39015062439453, 588 pages, search-only) and the Google Books search-within (volume dsInahmnar8C): '4687' on two pages only (seq 203-204, the Camille Volta footnote), and none of its seven cipher-vocabulary pages names Paleologue or 4687; the Dizionario Biografico degli Italiani entry (Tamalio 2008, vol. 70) lists no printed edition of her letters; Ferrari 1999 (D. Ferrari, 'I Gonzaga e Nevers / Les Gonzagues et Nevers', in U. Bazzotti ed., Mantova e i Gonzaga di Nevers, Bozzolo 1999, pp. 15-30, OCLC 44824603) is on no cloud-reachable route (IA 0 items, HathiTrust 0 records for the OCLC, Google Books 0 volumes, OpenAlex/Semantic Scholar/CORE 0 hits, 2 Oct 2026) and could not be opened by this worker, so the verdict is blocked on LOCAL-QUEUE.tsv row L33 (a library copy of the essay), per check-solved.md.
 
 # BnF fr.4687 — Marguerite Paléologue, duchesse de Mantoue, to Louis de Gonzague, duc de Nevers, 1562-1564
 
-Status: blocked (corrected LANE CX orchestrator 12:20 UTC 25 Sept 2026: the worker wrote `open`, but line 2 names Ferrari 1999 as unread, and check-solved.md says an edition the worker could not open makes the verdict `blocked`; it reopens when LOCAL-QUEUE.tsv row L8 is answered negative).
+Status: blocked (CHECK-fr4687-paleologue-nevers, account-4, 2 Oct 2026: every edition reachable from the cloud is now read, see line 2 and the section below; the one unread item is Ferrari 1999, a 16-page exhibition-catalogue essay, queued as LOCAL-QUEUE.tsv row L33 after row L8's academia.edu route was bot-challenged from the owner's desk too (27 Sept 2026). The folder reopens as `open` when L33 is answered negative; it is `found-solved` if the essay prints a decipherment. Earlier status line: LANE CX 12:20 UTC 25 Sept 2026 corrected the worker's `open` to `blocked` because Ferrari 1999 had not been opened.)
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass;
 a formal six-source check-solved run is still owed before board promotion.
+
+
+## Check-solved (CHECK-fr4687-paleologue-nevers, account-4, 2 Oct 2026)
+
+Brief: the account-4 parent's prompt of 2 Oct 2026 (a check-solved pass whose verdict names the edition and the pages
+or full text actually read; `.claude/briefs/check-solved.md` and `.claude/briefs/runs/2026-10-01-account4-webcheck.md`
+for the format). Clock read at start: 05:17 UTC 2 Oct 2026. `tools/intake_gate_check.py fr4687-paleologue-nevers`
+before this pass: `fr4687-paleologue-nevers: blocked (line 1) -- already terminal, nothing to gate`, exit 0 -- the
+gate had nothing to say because the word was already `blocked`; what was missing was a verdict line naming an
+edition this worker read, which line 2 now carries. `tools/key_livecheck.py` run first: Google Books, OpenAlex,
+Semantic Scholar, CORE, Europeana, DPLA all present and answering HTTP 200; IA/DECODE/JSTOR presence-only.
+
+**What "Ferrari 1999" is.** Not an edition of the letters: Daniela Ferrari, "I Gonzaga e Nevers / Les Gonzagues et
+Nevers", pp. 15-30 of *Mantova e i Gonzaga di Nevers / Mantoue et les Gonzague de Nevers*, ed. Ugo Bazzotti, the
+bilingual catalogue of the exhibition at Nevers (Palais Ducal, 16 Oct-7 Nov 1999) and Mantua (Palazzo Te, 18 Feb-
+26 Mar 2000), Bozzolo 1999 (Open Library: OCLC 44824603, no ISBN; the L8 runner's Helka record
+helka.9935145810306253). Tomokiyo cites it as background for his fr.3995 catalogue, not for fr.4687.
+
+**Editions and catalogues read by this worker (2 Oct 2026):**
+
+1. *Catalogue général des manuscrits français, Ancien fonds*, t. 4 (Paris 1895, Omont and others), entry 4687, read
+   in full from the Internet Archive OCR text (`p1cataloguegnr04bibluoft_djvu.txt`, fetched once, 5.5 MB, grepped;
+   "4687" occurs twice, both in this entry). Items 1-3: "Lettres, en italien, avec chiffres, de Marguerite
+   Paléologue, duchesse de Mantoue, au duc de Nevers, Louis de Gonzague, son fils. De 1562 à 1564. (Fol. 1 et
+   suiv.)". Item 41: "Chiffre. Quelques lignes non chiffrées sont en italien. (Fol. 89.)". No item in the entry is
+   marked déchiffré, and no interlinear or facing decipherment is described for any item (the Thurloe/Birch shape
+   check-solved.md asks for). Items 17, 20, 23-24 and 47 concern the duke's claims on his mother's succession
+   (1570s), in clear.
+2. BnF Archives et manuscrits notice `ark:/12148/cc577374` (Français 4687, Anc. 9509), read in full for the first
+   time in this folder through the headless browser (`tools/browser_fetch.js`, one request, after adding the
+   proxy CA to Chromium's NSS store -- the setup script's fix had not run in this container; plain curl and WebFetch
+   answer 403, as on 24 and 25 Sept). Same item list as the 1895 catalogue, EAD ids d0e120 (items 1-3) and d0e474
+   (item 41); index entries "Mantoue, Marguerite Paléologue, duchesse de. Lettres." and "... Succession."; no
+   bibliography block beyond the standard "Informations bibliographiques" header, no Ferrari, no Boltanski, no
+   déchiffré; "Numérisation effectuée à partir d'un document de substitution", viewer ark btv1b90075058.
+3. Ariane Boltanski, *Les ducs de Nevers et l'État royal* (Genève, Droz, 2006; OCLC 75253632), the one modern
+   monograph on the recipient. HathiTrust bibliographic API: record 005412144, htid mdp.39015062439453, "Limited
+   (search-only)". Page-by-page word-count test through the HTRC Extracted Features API (588 pages, 385,888 body
+   tokens, one request): "4687" on seq 203 and 204 only, both also carrying "Paléologue" and "Volta"; "Paléologue"
+   on 23 pages; cipher vocabulary ("chiffre", "chiffré", "chiffrée(s)", "chiffrés", "déchiffrée", "déchiffrement")
+   on seven pages (seq 139, 195, 398, 425, 427, 435, 440), none of which carries "Paléologue" or "4687". Google
+   Books search-within (volume dsInahmnar8C, `country=US`, key from the environment): the two "4687" snippets are
+   the footnote on the chevalier Guazzo/Camille Volta ("... Marguerite Paléologue, sollicita Louis de Gonzague pour
+   qu'il le reprenne à son service. Le chevalier fut dès lors ... 4687, 4691, 4693). Camille Volta est, durant
+   presque toute la seconde mo[itié] ..."); the one cipher snippet is about "lettres chiffrées qu'Henriette de
+   Clèves adressait à Louis de Gonzague, en avril 1585"; `inauthor:Boltanski "Paléologue" chiffre`,
+   `inauthor:Boltanski chiffré Mantoue` and `inauthor:Boltanski "Marguerite Paléologue" lettres fils 1562` return 0.
+   Boltanski cites fr.4687 for Volta's letters, not for the mother's cipher letters, and prints no decipherment.
+4. Raffaele Tamalio, "Margherita Paleologo, duchessa di Mantova e marchesa del Monferrato", *Dizionario Biografico
+   degli Italiani* 70 (2008), read online (treccani.it, one request): the only sentence on these years is "dalla fine
+   del 1562 M. assunse ufficialmente il governo per conto del figlio ..."; the Fonti e Bibl. paragraph (quoted in
+   full in the worker's transcript) lists her *copialettere* at the Archivio di Stato di Mantova, Archivio Gonzaga
+   bb. 198, 335, 1946-1969, 3001-3003, Davari 1890-91, Boltanski 2006 and no printed edition of her letters.
+   (Suggestion only, rule 7: the copialettere bb. 1946-1969 for 1562-64 would be the place to look for clear
+   drafts of these very letters; not chased.)
+5. Lettres de Catherine de Médicis, vol. 2 (1563-66): surfaced only by a footnote on Marguerite Paléologue
+   (Google Books snippet); recipient-side background, not an edition of these letters; not read further.
+6. *Due lettere inedite che riguardano Lodovico Gonzaga duca di Nevers* (W. Braghirolli, Mantova 1864, 16 pp.):
+   checked because its title fits; Google Books (q0dEAQAAMAAJ, Memorie storiche ... Casale 1897, and Boltanski's
+   own citation) says the two letters are Vigo Galvagni's and Filippo Cavriana's of 28 Feb and 6 Apr 1568 -- not
+   the mother's, not cipher. Not on IA (advancedsearch and be-api 0).
+
+**Ferrari 1999 by every cloud route (2 Oct 2026):** Internet Archive advancedsearch, titles "Gonzaga di Nevers" /
+"Gonzague de Nevers" / "Gonzagues et Nevers" and Bazzotti+Nevers: 0 items; be-api full text: 0 for the title;
+HathiTrust bibliographic API by OCLC 44824603: `{"records": {}, "items": []}`; Google Books API intitle/inauthor
+Bazzotti: 0 volumes; OpenAlex (`Gonzaga Nevers Ferrari Bazzotti 1999`): 6 unrelated works; Semantic Scholar: 0;
+CORE: only noise ("Ferrari" matches); open web (one search on the title and author): no copy, only Ferrari's
+author pages. Academia.edu (the L8 route) is a 403 login wall from the cloud and was bot-challenged from the
+owner's own browser on 27 Sept 2026 (L8, PR 38). So the essay is unread, and the verdict stays `blocked` on the
+new LOCAL-QUEUE.tsv row L33 (a library copy, the route L8 did not try), in check-solved.md's wording. This
+worker's assessment, for the parent to weigh (not a verdict): an exhibition-catalogue essay on the Gonzaga-Nevers
+link is a low-probability place for a decipherment, and every edition that could be read says nothing of one.
+
+**Six sources, this pass:** (1) web -- the "Web and blog check" section at the end of this file; (2) editions --
+above; (3) community lists -- `sources/cryptiana/CRYPTO-INDEX.tsv` and the whole `sources/cryptiana/` snapshot
+grepped for 4687 / Paleolog / Mantoue / Mantua / Margherita / Marguerite: the only "4687" hits are a digit string in
+hardnuts.htm and a Blogger post id; `nevers.htm` (fr.3995) and `mantua.htm` (1590/1593, fr.3979/3983, a later
+generation) are the nearest pages and name neither fr.4687 nor the 1562-64 letters; (4) DECODE -- the cached
+listings of 24-28 Sept 2026 (decrypted 1360, non-decrypted 1186, keys 6324 rows) and a fresh login-free
+`tools/decode_list.py` crawl of the newest 700 decrypted cipher records (14 requests, 2 Oct 2026, 0 records added
+since the 24 Sept cache): no Paris / BnF / fr.4687 record; the only Mantua-related rows are Archivio di Stato di
+Mantova items (Archivio Gonzaga E.V.3 busta 533 of 1395, decrypted; E.I.2 busta 423 keys dated 1540-1699, N/A;
+record 1854 "Mantova enciphered letters", partially decrypted) -- a different holding, no correspondent match;
+(5) Bourdeau (`dbourdeau/cyphersolver`, fresh depth-1 clone, HEAD 34e0fc8): fr.4687 appears once, as a harvested
+Gallica notice line in `research/gallica_sweep/bnf_candidates.txt` (and the matching SRU JSON), no target folder,
+no README / next / todo / planned line naming it; the GitHub issue and PR hits in the web search (Laurière
+fr.3625, intercepts fr.3977) are other Nevers volumes; (6) Aymeloglu (`aaymeloglu/unsolved-ciphers`, fresh depth-1
+clone, HEAD d2800bb): 0 hits for Paleolog / Mantoue; the "4687" line in `catalogue/decode-catalog.csv` is DECODE
+record id 4687 (Marburg, a different item).
+
+**Verdict: blocked** (line 1), on LOCAL-QUEUE.tsv row L33. No decipherment, key or plaintext of items 1-3 found in
+any of the six sources or in the editions read above; where it was not found is listed above and in the web and
+blog section. Novelty not classified (rule 10).
+
+Requests this pass: archive.org 7 (3 advancedsearch, 1 metadata, 1 djvu text, 2 for the 1864 pamphlet),
+be-api.us.archive.org 5, openlibrary.org 4, googleapis.com (Books API) 17, catalog.hathitrust.org 2,
+data.htrc.illinois.edu 1, api.openalex.org 3, api.semanticscholar.org 2, api.core.ac.uk 3, de-crypt.org 14
+(login-free listing), github.com 2 (shallow clones, deleted after grep), archivesetmanuscrits.bnf.fr 1 (browser),
+treccani.it 1, cryptiana.blogspot.com 1, scienceblogs.de 1, ciphermysteries.com 1; WebSearch 10 queries. No
+logins, no credentials printed, no vision calls, no transcription, no cryptanalysis.
 
 ## Check-solved (LANE CX, 25 Sept 2026)
 
@@ -552,3 +652,56 @@ attempt could not check. A Helka catalogue record for the bilingual 1999 exhibit
 (https://kansalliskirjasto.finna.fi/Record/helka.9935145810306253) as an access lead only, no readable copy
 obtained. `tools/data/catalogue_ladders.tsv` was consulted; this is an edition-content check, not a claim about
 whether BnF fr.4687 itself has images online. Status unchanged: `blocked`.
+
+## Web and blog check (CHECK-fr4687-paleologue-nevers (account-4), 2 Oct 2026)
+
+Per `.claude/briefs/check-solved.md`, "Required step: Open web and blog comment threads" (28 Sept 2026). Ten WebSearch
+queries, every plausible hit opened and its comment thread read (WebFetch; one request each).
+
+(a) Plain web searches:
+1. `"Marguerite Paléologue" "Louis de Gonzague" 1562 lettres chiffre Nevers` -- hits: the BnF Archives et manuscrits
+   notices for Français 4682, 4687 (ark:/12148/cc577374), 4688, 4702, 4711, 4708, 3315, 3974-3995; Wikipedia "Louis
+   de Gonzague, Duke of Nevers". The fr.4687 notice is the catalogue entry itself ("Lettres, en italien, avec
+   chiffres ... De 1562 à 1564"); none names a decipherment.
+2. `"français 4687" OR "fr. 4687" OR "fr.4687" BnF chiffre Nevers` -- hits: the same BnF notice, Wikidata/Wikipedia
+   Nevers pages, two unrelated Gallica items (a Nevers town plan, a gradual). Nothing on the cipher.
+3. `"lase le mie le posete brusare"` (the clearest clear-text phrase on the leaves, NOTES "What the negative means")
+   -- no hit for the phrase; only dialect dictionaries for "brusare" (dialetticon.blogspot.com, Wiktionary,
+   casalserugoedintorni.it, ilpavano.it). Not printed anywhere the engine indexes.
+4. `Marguerite Paléologue duchesse de Mantoue lettres chiffrées au duc de Nevers 1562-1564 déchiffrement` (the
+   folder's title) -- hits: the BnF notices again, the Biblissima IIIF collection manifest for Français 4687
+   (iiif.biblissima.fr/collections/manifest/8ae9c5ab...), Clairambault 312-452, Wikipedia. No decipherment.
+5. `"Margherita Paleologa" lettere cifrate figlio Ludovico Gonzaga Nevers 1562` (Italian) -- hits: Treccani DBI
+   entry (opened; see the check-solved section, item 4: no edition of her letters, no cipher), lombardiabeniculturali
+   "Ercole Gonzaga e Margherita Paleologa (1540-1551)" (an archival fonds, earlier years), genealogy and Wikipedia
+   pages. Nothing on cipher letters.
+6. `Daniela Ferrari "Les Gonzagues et Nevers" OR "I Gonzaga e Nevers" Bazzotti 1999 catalogo` -- hits: Ferrari's
+   Festivaletteratura author page, Olschki's Bazzotti page, an academia.edu paper on Carlo I Gonzaga Nevers
+   iconography (2013), iris.univr.it "Fine di una Dinastia" (1708), bookseller pages. No copy of the 1999 catalogue
+   online.
+   Model-solve announcements (check-solved.md): 7. `Paléologue Nevers Gonzaga cipher 1562 "solves" Claude OR GPT`
+   -- hits: Schneier on Security "Claude Fable Solves a Historical Cipher" (Sept 2026, the Cyphral Distich), 36kr and
+   dev.to and pasqualepillitteri.it reposts of the same, Bourdeau's site index (dbourdeau.github.io/cyphersolver),
+   cyphersolver issue #13 (Laurière to Nevers, fr.3625 no.55, 1593) and PR #9 (intercepts for Nevers, fr.3977,
+   1589-90, "a deciphered letter from Vincenzo Gonzaga, Duke of Mantua, to the duc de Nevers from September
+   1590") -- all other Nevers volumes and a later generation; nothing names fr.4687 or the 1562-64 letters.
+(b) Blog site searches:
+8. Cipherbrain: `site:scienceblogs.de/klausis-krypto-kolumne Gonzaga Mantua Nevers` -- the only on-site hits are
+   Kryptos (2016), "Who can decipher this encrypted letter from the Vatican?" (7 Mar 2018), "A crypto mystery from
+   1948", a 2022 stamp post and a 2013 bad-crypto post. The Vatican post was opened and its 19 comments read: it
+   is Pallotto to Barberini, 14 May 1628, Barb.lat.6956; the one "Mantova" is inside a commenter's transcription
+   ("con le robbe per Mantova"); nothing on Nevers, Paleologue or 1562-64.
+9. Cryptiana blog: `site:cryptiana.blogspot.com Nevers Mantua Gonzaga Paleologue` -- one on-site hit, the 2018 archive
+   page (cryptiana.blogspot.com/2018), opened and read with its comments: the only Nevers mention is the post
+   "Undeciphered letters from Duke of Guise? (ca.1581)" (20 Dec 2018) linking the fr.3995 catalogue; no Gonzaga,
+   Mantua, Paleologue, Marguerite or 4687 anywhere on the page or in its comments. Tomokiyo's own pages: the on-disk
+   snapshot `sources/cryptiana/` grepped first (zero requests), see the check-solved section, item (3).
+10. Cipher Mysteries: `site:ciphermysteries.com Gonzaga Mantua Nevers cipher` -- hits: "Paolo Guinigi and ciphers"
+   (2020, Lucca 1400s), "A little more on Savoy" (2010, opened: 15th-century Savoy and the Voynich, no Montferrat /
+   Paleologue / Mantua / Nevers mention in post or comments), "New paper on fifteenth century cryptography" (2017),
+   Kahn and Montefeltro reviews -- all 15th century; nothing on this correspondence.
+(c) Also opened: the BnF notice (through the headless browser; check-solved section item 2) and the Treccani entry.
+
+Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026 (a search result, never a
+novelty verdict, rule 10). The status word stays `blocked` (line 1) on the unread Ferrari 1999 essay, LOCAL-QUEUE.tsv
+row L33, not on this check.
