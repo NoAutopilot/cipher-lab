@@ -768,8 +768,8 @@ Vision calls 3 (two blind passes, one adjudication) plus this worker's own looks
 ## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
 Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
 - f.184 no.90, the rest of its cipher (f.184v foot ~4 lines, f.185r ~20 lines, f.185v one short run; canvases 189-190) - blocker: not-attempted; f.184r (224 signs) read by NEVBIR-184 (2 Oct 2026, section above): rank 1/201 z 3.6-4.2, power 17/20, agreement 0.94, judge FAIL -1.096; next: native regions of canvas 189 (left foot, right page) and 190 (left), iiif_lines --follow-slope, 2 blind passes + 1 adjudication per page, ~$4 a page
-- f.168r-v no.85 (two runs, 121 signs, NEVBIR-168, 2 Oct 2026) - blocker: too-short; printed 1572 key + T42=m rank 36/201 (z 1.00; seeds 2-3 rank 31, 41), power control 15/20 at err 0.13 (z min 0.22): a miss the right key also gives in about a quarter of windows at this length, so not licensed as a reading and too weak to call a negative; 11 off-sheet signs; pooled test run (NEVBIR-POOL, 2 Oct 2026, section at the end): pool of f.144r + f.168 + f.174r rank 1-4/201, power 15/20 at err 0.15, not licensed, and f.168 is the run that drags the pool down (leave-one-out); next: the off-sheet value-fit shared with f.139v (disk only, ~$1)
-- f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; pooled test run (NEVBIR-POOL, 2 Oct 2026): not licensed at 296 signs (rank 1-4/201, power 5/20 at this run's 0.24 error); next: lower the reader error with the clerk-sheet error map (gap below), ~$2
+- f.168r-v no.85 (two runs, 121 signs, NEVBIR-168, 2 Oct 2026) - blocker: too-short; printed 1572 key + T42=m rank 36/201 (z 1.00; seeds 2-3 rank 31, 41), power control 15/20 at err 0.13 (z min 0.22): a miss the right key also gives in about a quarter of windows at this length, so not licensed as a reading and too weak to call a negative; 11 off-sheet signs; pooled test run (NEVBIR-POOL, 2 Oct 2026, section at the end): pool of f.144r + f.168 + f.174r rank 1-4/201, power 15/20 at err 0.15, not licensed, and f.168 is the run that drags the pool down (leave-one-out); next: the off-sheet value-fit shared with f.139v (disk only, ~$1); NEVBIR-LOOKALIKE (2 Oct 2026, section below): look-alike pass lowered the residual reader disagreement to 0.074, printed key + T42=m on passD rank 13-15/201 (z 1.43-1.55) against power 19/20 at 0.074 (z min 2.00) and 14/20 at 0.13: not licensed, not a negative; 7 of the 9 unsettled tiles are one question (T24, the readers, or T83, the look-alike reader; the pre-registered secondary sequence with T83 there ranks 1/201 z 3.49, a pointer only); next: the owner settles the 7 T24/T83 tiles in the sign sorter (sorter/README.md; waiting-on the owner, never blocking), then re-run decode_control.py on the settled sequence, disk only, ~$0.5
+- f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; pooled test run (NEVBIR-POOL, 2 Oct 2026): not licensed at 296 signs (rank 1-4/201, power 5/20 at this run's 0.24 error); next: lower the reader error with the clerk-sheet error map (gap below), ~$2; NEVBIR-LOOKALIKE (2 Oct 2026, section below): look-alike pass lowered the residual reader disagreement from 0.24 to 0.044 (4 tiles unsettled); printed key + T42=m on passD rank 1, 2, 1 of 201 (z 2.27-2.44), power 18/20 at 0.044 (z min 1.78) but 4/20 at the old 0.24: control-backed only if the 2-of-3 residual is accepted as the reader error; next: a verifier pass on the passD reading and the 4 unsettled tiles (sorter focus box), ~$3
 - no.71 cipher passage, f.139v foot (161 signs, NEVBIR-138, 2 Oct 2026) - blocker: open-codes; 21 off-sheet signs unkeyed (X_NEW "4", "7", square-with-dot, "t", raised "m" abbreviation and others), the power control is weak at this length (10/20 at err 0.15) and the judge FAILs (-1.159 vs real_p05 -0.955); next: value-fit of the recurring off-sheet signs (decode_control.py --fit-sign, disk only, ~$1; the t-shaped X_NEW read m on no.87 against the clerk sheet), then a separate verifier on the reading
 - f.152r no.77 cipher run (97 signs) read under the 1572 key by NEVBIR-152 (2 Oct 2026, section above): rank 1/201 z 3.1, slip agreement 0.61; the rest of no.77 past f.152v - blocker: not-attempted; f.152v plain per PREMISE-NEVBIR, f.153r onward not opened; next: open canvas 155-156 at 1200 px for a further cipher run (1-2 requests), and a verifier pass on the f.151v slip (whose hand, prior decipherment of this run), ~$3
 - the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
@@ -1436,3 +1436,77 @@ calls (one reader had all of them off-sheet), the lone "8" shapes, and L20/L22 "
 half A's T15/T11 digit pairs. Requests: gallica.bnf.fr 7 (2 overview canvases at 3000 px, 5 native regions, of which 2 were
 discarded and re-fetched after wrong coordinates), 1 info.json; no errors. Subagents: 5 Sonnet (2 blind passes, 2 f.175v
 re-read passes, 1 adjudicator used twice). No credentials.
+
+## NEVBIR-LOOKALIKE (2 Oct 2026, owner-account worker for the account-3 orchestrator): look-alike pass on the two short runs, control re-run, sorter package
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-lookalike.md`. Disk only (0 network requests; every crop was already on
+disk). Status stays `partial`. No class and no novelty wording (rule 10). No per-token S grades are claimed (see the verdict).
+
+**Step 1, confusion map** (`harvest/confusion_1572.py` -> `harvest/confusion_1572.tsv`). Every two-reader alignment on disk
+(`harvest/*/passC*_agreement.tsv`, 15 files: 1572 leaves f139v, f144r, f152r, f162r, f168, f174r, f174v, f174vB, f175v, f178r,
+f178v x2, f179r, f184r). That is 2,375 aligned pairs, 299 label swaps, 73 distinct pairs. Top ten: T83/X_NEW 24, T60/T86 21,
+T18/T98 18, T29/T83 17, T24/T83 16, T92/X_NEW 16, T24/T29 9, T55/X_NEW 9, T90/X_NEW 9, T50/T92 8.
+
+**Step 2, look-alike pass** (`harvest/lookalike_packet.py`, `harvest/lookalike_reconcile.py`, outputs in `harvest/lookalike/`).
+A tile was flagged if its two readers split, or if its passC label sits in a top-ten pair: f.144r 45 of 90 tiles (20 splits),
+f.168 47 of 121 (12 splits). There was one value-blind Opus call per run. The reader saw only the 2x line crops, the passC
+label sequence and a candidate-only cut of the blind sign sheet (`lookalike/<run>_candidates.png`, ids only). Results:
+`f144r_reread.tsv` 22 H / 20 M / 3 L / 0 SPLIT; `f168_reread.tsv` 25 H / 20 M / 2 L / 0 SPLIT. Reconciliation is one more step,
+done by script: the rule was fixed before any score was computed and is in the docstring. A firm (H/M) re-read that matches
+reader A or B settles the tile 2-of-3. Anything else stays UNSETTLED and keeps the passC label, because a third reader alone
+does not overturn two. `passD_alt.tsv` takes every firm re-read label and is a secondary sequence only.
+
+| run | signs | two-reader disagreement before | relabelled (2-of-3) | unsettled | residual disagreement after |
+|---|---|---|---|---|---|
+| no.73 f.144r | 90 | 0.24 | 3 | 4 | **0.044** |
+| no.85 f.168 | 121 | 0.13 | 4 | 9 | **0.074** |
+
+The residual is a 2-of-3 figure on flagged tiles, a different statistic from the old two-reader rate. The power control
+below was therefore run at both figures (rule 3 bracket). Seven of the nine f.168 unsettled tiles are one question. All three
+earlier reads (A, B and the adjudicator) said T24. The look-alike reader said T83 at M, describing "two halves facing away,
+one bar through both", and suggested that the T24 sheet cell may be a poor cut of the same sign. On f.178r/f.179r (GAPS4,
+section above) a value-blind third reader settled 19 of 21 splits in this pair to T83.
+
+**Step 3, control** (`python3 ../ceppo-nevers-fr3251-1570s/harvest/decode_control.py harvest/lookalike/<run>_passD.tsv --map
+harvest/sign_id_map_1572_fit.json --seed S --err E [--windows 0]`, printed 1572 key + T42=m, it16dip, 200 value-shuffled keys;
+outputs `harvest/lookalike/run_*.txt`):
+
+| sequence | signs / letters | real key | shuffles mean / max (seed 1) | z (seeds 1, 2, 3) | rank of 201 (seeds 1, 2, 3) | power control, 20 windows |
+|---|---|---|---|---|---|---|
+| f.144r passD | 90 / 94 | -1.174 | -1.537 / -1.202 | 2.27, 2.34, 2.44 | **1, 2, 1** | **18/20 at err 0.044** (z median 3.22, min 1.78); 4/20 at 0.24 |
+| f.168 passD (primary) | 121 / 119 | -1.342 | -1.577 / -1.224 | 1.55, 1.53, 1.43 | 13, 15, 14 | **19/20 at err 0.074** (z median 3.60, min 2.00); 14/20 at 0.13 (min -0.15) |
+| f.168 passD_alt (secondary) | 121 / 119 | -1.078 | -1.582 / -1.261 | 3.49 (seed 1) | 1 | -- |
+| f.144r passD_alt (secondary) | 90 / 95 | -1.281 | -1.555 / -1.231 | 1.72 (seed 1) | 5 | -- |
+
+Before this pass: f.144r passC rank 3-6 (z 1.8), f.168 passC rank 31-41 (z 0.9-1.0).
+
+**Verdict (rule 3; report rank, z and power side by side; a non-test is not a negative).**
+- **no.73 f.144r:** with three settled relabels the real key moves from rank 3-6 to rank 1-2 (z about 2.3-2.4). At the
+  residual figure (0.044), the control puts a right key first in 18 of 20 windows, so the target's result is what a right key
+  gives. This is control-backed **only if** the 2-of-3 residual is the true reader error. At the old two-reader 0.24 the same
+  result is a non-test (4/20). That condition is not yet checked by an independent read, so no S grades and no firm counts.
+  Next: a verifier on the passD reading and its 4 unsettled tiles.
+- **no.85 f.168:** the primary sequence improved (rank 36 -> 13-15) but still sits below the weakest power window at the
+  residual figure (z 1.5 against a minimum of 2.00 at 0.074). Read at face value, that says the residual underestimates the
+  error on this run. It falls inside the 0.13 control's range (min -0.15), so it is **not licensed and not a negative**. The
+  pre-registered secondary sequence (T83 at the seven T24/T83 tiles) ranks 1/201 at z 3.49. That is a pointer only: it rests
+  on one reader's M calls against two readers plus an adjudicator. The step that settles it is a person's eye on those seven
+  tiles (sorter focus box), not a further machine pass (CLAUDE.md Usage 6, "settle the alphabet before reading").
+- Judge (secondary; `tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/lookalike/<f>_letters.txt`):
+
+      f144r_passD     FAIL language: score=-1.424, null_p99=-1.6,   real_p05=-0.955, real_median=-0.828, mode=both, N=94
+      f168_passD      FAIL language: score=-1.371, null_p99=-1.668, real_p05=-0.951, real_median=-0.828, mode=both, N=119
+      f168_passD_alt  FAIL language: score=-1.177, null_p99=-1.668, real_p05=-0.951, real_median=-0.828, mode=both, N=119
+
+  Under the alt sequence, f.168 reads R02 `cheisisarasuanuatomoltoconlorialtezn`, R03 `sopragparti_solern`, V01 `guantoilproce`,
+  V02 `deresi__sii_tanto_astidiisaamn`, V03 `mada_osasurerui_iiliroquello__m`, every token M at best (rule 4). Under passD it
+  differs only at the T24/T83 positions (f/r).
+
+**Step 4, sorter package** (`sorter/`, README there): `signs.tsv`, `labels.tsv`, `focus.tsv` (13 tiles: the 4 f.144r and
+9 f.168 unsettled ones), `pages/` (9 line strips cut from the public Gallica region images on disk, 652 KB), and
+`build_inputs.py`. Tile boxes are approximate (column-profile blobs fitted to each passage's count). The HTML was built once
+into the worker's scratch directory (46 piles, 211 tiles, 1.7 MB) and rendered headless with no script errors. It was **not
+published**; the account-3 orchestrator publishes it.
+
+Requests: none (disk only). Subagents: 2 Opus value-blind look-alike reads, 1 per run; the reconciliation was by script.
+No credentials. Report of what was found and where it was not found; novelty not classified.

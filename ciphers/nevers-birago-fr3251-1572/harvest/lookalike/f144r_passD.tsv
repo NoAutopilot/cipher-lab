@@ -1,0 +1,91 @@
+passage	pos	sign_id	conf	note	question
+L03	1	T84	M	passC	
+L03	2	X_NEW	H	lookalike confirms	
+L03	3	X_NEW	M	lookalike 2-of-3	
+L03	4	T54	M	passC	
+L03	5	T90	H	lookalike confirms	
+L03	6	T83	H	lookalike confirms	
+L03	7	T80	H	passC	
+L03	8	T42	M	passC	
+L03	9	T37	H	passC	
+L03	10	X_NEW	H	lookalike confirms	
+L03	11	T88	M	lookalike 2-of-3	
+L04.1	1	T66	M	lookalike 2-of-3	
+L04.1	2	T55	H	lookalike confirms	
+L04.1	3	T81	M	passC	
+L04.1	4	T65	H	passC	
+L04.1	5	T85	H	passC	
+L04.1	6	T53	H	passC	
+L04.1	7	T60	M	lookalike confirms	
+L04.1	8	T76	M	passC	
+L04.1	9	X_NEW	H	lookalike confirms	
+L04.1	10	X_NEW	H	lookalike confirms	
+L04.1	11	T26	M	lookalike 2-of-3	
+L04.1	12	T78	M	passC	
+L04.2	1	T18	M	lookalike confirms	
+L04.2	2	T25	H	passC	
+L04.2	3	T84	M	passC	
+L04.2	4	T51	M	lookalike 2-of-3	
+L04.2	5	T95	H	passC	
+L04.2	6	X_NEW	H	lookalike confirms	
+L04.2	7	X_NEW	H	lookalike confirms	
+L04.2	8	T81	M	lookalike 2-of-3	
+L04.2	9	T19	H	passC	
+L04.2	10	T57	H	passC	
+L04.2	11	T85	H	passC	
+L04.2	12	X_NEW	M	lookalike confirms	
+L05	1	T65	M	passC	
+L05	2	T56	H	passC	
+L05	3	T45	H	passC	
+L05	4	X_NEW	H	lookalike confirms	
+L05	5	T52	M	passC	
+L05	6	T83	H	lookalike confirms	
+L05	7	T36	M	lookalike 2-of-3	
+L05	8	T81	M	passC	
+L05	9	T19	H	passC	
+L05	10	T63	H	passC	
+L05	11	T96	H	passC	
+L05	12	T81	L	lookalike UNSETTLED	L05.12: readers T81/X_NEW, look-alike T81 (L); which of T81, X_NEW?
+L05	13	X_NEW	H	lookalike confirms	
+L05	14	X_NEW	H	lookalike confirms	
+L05	15	T37	H	passC	
+L05	16	T78	H	passC	
+L05	17	T50	H	lookalike confirms	
+L05	18	T55	H	lookalike confirms	
+L05	19	T51	M	lookalike 2-of-3	
+L05	20	T42	M	lookalike UNSETTLED	L05.20: readers X_NEW/T42, look-alike X_NEW (L); which of T42, X_NEW?
+L05	21	T45	M	lookalike 2-of-3	
+L05	22	T10	H	passC	
+L05	23	T19	H	passC	
+L05	24	T18	M	lookalike confirms	
+L05	25	T80	H	passC	
+L05	26	T51	M	lookalike 2-of-3	
+L05	27	T66	M	lookalike 2-of-3	
+L05	28	T33	H	passC	
+L05	29	X_NEW	L	lookalike UNSETTLED	L05.29: readers X_NEW/T83, look-alike T81 (M); which of T81, T83, X_NEW?
+L05	30	T90	H	lookalike confirms	
+L05	31	T33	M	passC	
+L05	32	T83	H	lookalike 2-of-3	
+L05	33	T85	H	passC	
+L05	34	T53	H	passC	
+L05	35	T55	H	lookalike confirms	
+L06	1	T90	M	lookalike confirms	
+L06	2	T42	H	passC	
+L06	3	T25	H	passC	
+L06	4	T33	H	passC	
+L06	5	T63	H	passC	
+L06	6	T80	H	passC	
+L06	7	T36	M	lookalike 2-of-3	
+L06	8	T45	H	passC	
+L06	9	T18	M	lookalike 2-of-3	
+L06	10	T80	H	passC	
+L06	11	X_NEW	M	lookalike UNSETTLED	L06.11: readers T63/X_NEW, look-alike X_NEW (L); which of T63, X_NEW?
+L06	12	T83	H	lookalike 2-of-3	
+L06	13	T37	M	passC	
+L06	14	T70	H	passC	
+L06	15	T52	M	passC	
+L06	16	T60	H	lookalike confirms	
+L06	17	T86	M	lookalike confirms	
+L06	18	T83	H	lookalike 2-of-3	
+L06	19	T19	H	passC	
+L06	20	X_NEW	H	lookalike confirms	

@@ -1,0 +1,46 @@
+passage	pos	label	conf	second	note
+L03	2	X_NEW	H		open rectangle with central dot, not on sheet
+L03	3	X_NEW	M	T98	circle on vertical stem but with long left horizontal stroke T98 lacks
+L03	5	T90	H		cross above circle
+L03	6	T83	H		two-lobed crossed form, loop at left
+L03	10	X_NEW	H		triangle over crossed stem
+L03	11	T88	M	X_NEW	small o; long right tail looks like line-end flourish
+L04.1	1	T66	M	X_NEW	tall stroke with top loop and foot; foot turns left
+L04.1	2	T55	H		stem with two right bars
+L04.1	7	T60	M	T86	two verticals with two horizontals
+L04.1	9	X_NEW	H		numeral-4 shape
+L04.1	10	X_NEW	H		numeral-7 shape
+L04.1	11	T26	M	X_NEW	small loop enclosed by large outer curve
+L04.2	1	T18	M	T98	loop crossed by stem, stem above and below
+L04.2	4	T51	M	T95	loop top-right, crossbar crosses stem to both sides
+L04.2	6	X_NEW	H		box with circle and cross
+L04.2	7	X_NEW	H		cross with small o, slashed
+L04.2	8	T81	M	T83	x with small loop top-left, like L04.1 pos3, not two-lobed T83
+L04.2	12	X_NEW	M		crossed R-like sign under a strike stroke
+L05	4	X_NEW	H		circle with curl inside
+L05	6	T83	H		two-lobed crossed form
+L05	7	T36	M	T76	loop atop near-straight stem, no left hook at foot
+L05	12	T81	L	X_NEW	x/star shape obscured by long diagonal strike
+L05	13	X_NEW	H		numeral-1 shape
+L05	14	X_NEW	H		numeral-6 shape
+L05	17	T50	H		omega with tall right hook
+L05	18	T55	H		stem with two right bars
+L05	19	T51	M	T95	crossbar crosses stem to both sides below loop
+L05	20	X_NEW	L	T42	lowercase t: stem rises above bar, curves right at foot; T42 has curl on bar
+L05	21	T45	M	T89	stem curving into closed loop at bottom
+L05	24	T18	M	T36	stem passes through loop
+L05	26	T51	M	T95	crossbar extends both sides of stem
+L05	27	T66	M	X_NEW	same top-loop + foot stroke as L04.1 pos1
+L05	29	T81	M	X_NEW	loop over x, same as L05 pos8 (T81), not two-lobed T83
+L05	30	T90	H		cross above circle
+L05	32	T83	H		two-lobed crossed form
+L05	35	T55	H		stem with two right bars
+L06	1	T90	M	T45	cross on stem above bottom loop
+L06	7	T36	M	T18	circle on stem, no stem above circle
+L06	9	T18	M	T65	single loop crossed by stem, no double loop
+L06	11	X_NEW	L	T63	y shape: right arm descends below junction, unlike symmetric V
+L06	12	T83	H		two-lobed crossed form
+L06	16	T60	H		two verticals, two horizontals
+L06	17	T86	M	T60	smaller, apparently single crossbar
+L06	18	T83	H		two-lobed crossed form
+L06	20	X_NEW	H		triangle over crossed stem

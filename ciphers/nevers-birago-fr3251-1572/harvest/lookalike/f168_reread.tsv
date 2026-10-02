@@ -1,0 +1,48 @@
+passage	pos	label	conf	second	note
+R02	3	T98	H		stem passes through loop (phi)
+R02	5	T92	H		open omega
+R02	7	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+R02	9	T95	M	T66	loop right at top, blob/bar mid-stem; extra cross-foot at base unexplained
+R02	12	T60	H	T86	two verticals, two horizontals
+R02	16	T55	H		stem with two right bars
+R02	17	T17	M	X_NEW	t-shape curving right at foot; has crossbar T17 cell lacks
+R02	33	T38	M	T64	rounded arches with looped first stroke
+R02	34	T60	M	T86	two horizontals visible
+R03	1	T92	H		omega
+R03	3	T90	H	T45	circle with straight cross above
+R03	4	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+R03	7	T90	H	T45	circle with straight cross above
+R03	9	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+R03	12	X_NEW	M	T92	closed a-shape with right stem, not omega
+R03	13	X_NEW	L	T50	small raised s-hook after the a; could be T50 tail if a+hook is one sign
+R03	17	T97	M	T56	looped &-like sign, same shape as R02 pos 27
+V01	4	T60	H	T86	two horizontals
+V01	6	T55	H		stem with two right bars
+V01	9	T90	H	T45	circle with cross above
+V01	10	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+V01	11	T55	M		stem with two bars plus a slanted stroke
+V02	2	T86	H	T60	two verticals, single crossbar
+V02	4	T86	H	T60	two verticals, single crossbar
+V02	5	T98	H	T18	stem through loop
+V02	7	X_NEW	H		numeral-4 shape
+V02	8	X_NEW	H		numeral-7 shape
+V02	9	T98	H	T18	tall stem through loop
+V02	12	X_NEW	H		b-like sign struck by slash with dots
+V02	15	T60	H	T86	two horizontals
+V02	20	T92	H		omega with dot after
+V02	26	T98	H	T18	stem through loop
+V02	30	T60	M	T86	end of line, two short horizontals
+V03	1	T17	M	X_NEW	t-shape, same as R02 pos 17
+V03	3	T18	H	T98	stem only below loop
+V03	5	X_NEW	M	T27	tall long-s stroke with small circle at top and dot; not T27 curve
+V03	7	T92	H		omega
+V03	9	T95	M	T66	same shape as R02 pos 9: loop right, mid blob, cross foot
+V03	10	T51	L	T49	stem with crossbar and right loop; T49 box top not clear
+V03	11	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+V03	13	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+V03	14	T33	H	T19	two prongs on a baseline, no top bar
+V03	16	X_NEW	H		numeral-4 shape
+V03	21	T83	M	T24	two back-to-back halves joined by one bar; T24 cell shows one half only
+V03	23	T84	M	T70	triangle with cross attached (below, apex up) - T84 rotated; T70 has no cross
+V03	24	X_NEW	H		square with central dot
+V03	25	X_NEW	M	T90	small circle with stem up and lambda legs below
