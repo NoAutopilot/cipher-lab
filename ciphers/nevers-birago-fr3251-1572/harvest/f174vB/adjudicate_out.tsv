@@ -1,0 +1,79 @@
+passage	pos	sign_id	conf	note
+L01	3	T50	H	omega with S hook
+L01	6	T50	H	omega with S hook
+L01	12	T33	H	low bar with ticks
+L01	13	T55	H	F two bars
+L01	15	T55	H	F two bars
+L01	16	T83	H	joined E-pair matches T83
+L01	17	T63	M	V with small left hook; handwriting variant
+L01	23	T95	H	p with bar
+L01	26	T86	L	partly hidden at gutter; single-bar form
+L02	4	T56	H	curl with long tail; T56 not T97
+L02	17	X_NEW	M	lone 8, not the 86 pair of T46
+L02	18	X_NEW	M	lone 8
+L02	20	T55	H	F two bars
+L02	27	T55	H	F two bars
+L02	29	T90	L	partly hidden at gutter; bar over loop, cross-over-o like
+L03	3	T83	H	joined E-pair
+L03	4	T86	H	single long bar, two verticals
+L03	12	T86	H	single long bar
+L03	13	X_NEW	M	lone 8
+L03	16	T83	H	joined E-pair
+L03	18	T57	H	diamond with small tail
+L03	26	T49	M	box with stem
+L04	6	T83	H	joined E-pair
+L04	11	T83	H	joined E-pair
+L04	15	T86	H	single bar
+L04	20	T83	H	joined E-pair
+L04	27	T90	L	partly hidden at gutter; cross with o
+L05	1	T83	H	joined E-pair; line start
+L05	10	X_NEW	H	box with bars both sides, not T55
+L05	13	T83	H	joined E-pair
+L05	21	T83	H	joined E-pair with dot
+L05	22	T76	M	9/q, stem cut by crop edge, tail presumed
+L05	26	T86	H	single bar
+L06	7	T92	H	omega with ink blot
+L06	9	T83	H	joined E-pair
+L06	12	T18	H	loop at top, stem below only
+L06	14	T92	H	cursive omega
+L06	17	T18	H	loop at top, stem below only
+L06	20	T92	H	cursive omega
+L06	25	X_NEW	M	lone 8
+L06	28	T86	L	partly hidden at gutter; verticals only
+L07	7	T92	H	omega
+L07	10	T55	H	F two bars
+L07	16	T55	H	F two bars
+L07	19	T86	H	single bar
+L07	22	T92	H	omega
+L07	24	T18	H	loop at top, stem below only
+L07	28	T98	L	partly hidden at gutter; stem above and below loop
+L08	2	T83	H	joined E-pair
+L08	4	T18	H	loop at top, stem below
+L08	9	T76	H	9 with hooked tail
+L08	14	T76	H	9 with hooked tail
+L09	7	T18	H	loop at top, stem below
+L09	11	T86	H	single bar
+L09	15	T92	H	omega
+L09	17	T83	H	joined E-pair
+L09	20	T84	M	small triangle with bar and stem
+L09	25	T85	M	plus attached right of A
+L09	26	X_K	M	capital K shape, ligatured to next
+L09	27	T36	M	rho-like loop on stem
+L10	6	T50	H	omega with S hook
+L10	8	T83	H	joined E-pair
+L10	11	T86	H	single bar
+L10	14	T92	H	omega with blot
+L10	18	T55	H	F two bars
+L10	21	T83	H	joined E-pair
+L11	7	T83	H	joined E-pair
+L11	10	T83	H	joined E-pair
+L11	14	T92	H	omega
+L11	16	T83	H	joined E-pair
+L11	19	T84	H	small triangle with bar and stem
+L11	23	X_NEW	M	box with bars both sides; the preceding X_EQ at 22 looks like its left bars (cf L05 pos 10): consider merging 22+23
+L11	24	X_NEW	M	lone 8
+R01	3	T49	M	box with stem, top cut by crop
+R01	4	T81	M	small cursive x
+R01	5	T92	H	omega with ink blot
+R01	15	T83	H	joined E-pair
+R01	24	T83	H	joined E-pair
