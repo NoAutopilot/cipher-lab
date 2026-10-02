@@ -5904,3 +5904,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:42 | A2-LAG2 (account 2, LANE-A2PUSH) | claim: la-garde-1577 -- Verdict cheapest next step (run-2 margin crop read); cap USD 1.5, box ends 00:03 UTC
 2026-10-02 23:42 | A2-OLD2 (account 2, LANE-A2PUSH) | claim: na-oldenbarnevelt-2442-1605 -- Verdict cheapest next step (rule-7 re-derivation + print check on B/C1); cap USD 4, box ends 00:23 UTC
 2026-10-02 23:43 | A2-COL4 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (f.23 rotated margin postscript KAT); cap USD 3, box ends 00:12 UTC
+2026-10-02 23:42 | A2-GRA2 (account 2, LANE-A2PUSH) | claim: fr2980-gramont -- Verdict cheapest next step (key.tsv Tb row -> O with table citation, regenerate --check); cap USD 2, box ends 00:07 UTC
