@@ -49,5 +49,55 @@
     "url": "https://digitalisate-he.arcinsys.de/hstam/4_f_staaten_d/daenemark_125/hstam_4_f_staaten_nr_daenemark_125_0006.jpg",
     "fetched": "2 Oct 2026",
     "note": "NOT KEPT: unrelated printed Kassel Rentkammer circular dated 12 May 1738, filed at the end of Nr. 125"
+  },
+  {
+    "source": "HCPortal cipher key 255 (api.hcportal.eu/api/cipher-keys/255), HStAM 4 d Nr. 1234 ff.13-16",
+    "folio": "hstam_4-d-Nr-1234_0013",
+    "url": "https://api.hcportal.eu/media/6851/hstam_4-d-Nr-1234_0013.jpg",
+    "fetched": "2 Oct 2026",
+    "file": "keys/hcportal_key255_0013.jpg",
+    "size": 1754873,
+    "sha1": "ff41cca04b1e7eba60d0aaae0c1a03620fccbb7c"
+  },
+  {
+    "source": "HCPortal cipher key 255 (api.hcportal.eu/api/cipher-keys/255), HStAM 4 d Nr. 1234 ff.13-16",
+    "folio": "hstam_4-d-Nr-1234_0014",
+    "url": "https://api.hcportal.eu/media/6852/hstam_4-d-Nr-1234_0014.jpg",
+    "fetched": "2 Oct 2026",
+    "file": "keys/hcportal_key255_0014.jpg",
+    "size": 1803271,
+    "sha1": "b91319b427ab2f8c6406cb55541db5efb2ffa744"
+  },
+  {
+    "source": "HCPortal cipher key 255 (api.hcportal.eu/api/cipher-keys/255), HStAM 4 d Nr. 1234 ff.13-16",
+    "folio": "hstam_4-d-Nr-1234_0015",
+    "url": "https://api.hcportal.eu/media/6853/hstam_4-d-Nr-1234_0015.jpg",
+    "fetched": "2 Oct 2026",
+    "file": "keys/hcportal_key255_0015.jpg",
+    "size": 1667831,
+    "sha1": "80dfd7fc002758613c99b7b2dbb4f00788f5f6de"
+  },
+  {
+    "source": "HCPortal cipher key 255 (api.hcportal.eu/api/cipher-keys/255), HStAM 4 d Nr. 1234 ff.13-16",
+    "folio": "hstam_4-d-Nr-1234_0016",
+    "url": "https://api.hcportal.eu/media/6854/hstam_4-d-Nr-1234_0016.jpg",
+    "fetched": "2 Oct 2026",
+    "file": "keys/hcportal_key255_0016.jpg",
+    "size": 1694201,
+    "sha1": "08f41e04ec1dad3d903536f153a2128a9518bd97"
+  },
+  {
+    "source": "DECODE record 4692 (de-crypt.org, logged-in, Private Ciphertext: True), Hstam_4_d_nr_1235_01",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4692_I27614_P.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "note": "7051x6178 px, 13.4 MB, sha1 32ec988dface888a61e787dbc88d1d9fbd588b3e; not committed (account-gated source, over folder budget); re-fetch with tools/decode_browser_login.js 4692 DIR --fetch-page ImagesList --guess-fullsize"
+  },
+  {
+    "source": "Arcinsys METS detailid=v537589 (HStAM 4 f Staaten D, Dänemark 131), 106 images",
+    "url": "https://digitalisate-he.arcinsys.de/hstam/4_f_staaten_d/daenemark_131/hstam_4_f_staaten_d_nr_daenemark_131_NNNN.jpg",
+    "fetched": "2 Oct 2026",
+    "file": null,
+    "note": "sample of 8 (0003,0016,0029,0042,0055,0068,0081,0094) read on 1000-px contact sheets, not committed"
   }
 ]
