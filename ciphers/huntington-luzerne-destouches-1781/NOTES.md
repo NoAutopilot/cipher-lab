@@ -1,6 +1,8 @@
 # La Luzerne to Destouches, 16 and 31 January 1781 — Huntington mssDE 68 / mssDE 108(A)
 
-Status: open
+Status: found-solved
+
+found-solved (GF4-BATCH1 Premise check, 2 Oct 2026): mssDE 108(A) is deciphered on its own duplicate mssDE 108(B) (Huntington, p15150coll7 pointers 10574-10579, catalogued "decoded, by Destouches, in French"; 96.0% same group sequence, compare_108B.py); mssDE 68 carries its own complete interlinear decipherment (pp.1-3). AUDIT.md: N0 for both. Citation: Huntington Library mssDE 108(B) and mssDE 68; AAE CP Etats-Unis vol. 15 copy cited by Idzerda, Lafayette Papers 3:319.
 
 **Verifier correction, 24 Sept 2026 08:16 UTC (LANE W verifier G, AUDIT.md):** mssDE 108(A) is NOT undeciphered in the archive. Its duplicate, **mssDE 108(B)** (same date, headed "Duplicata", pointers 10574-10579, compound 10580), is catalogued "written in numerical code, and is decoded, by Destouches, in French", and p.1 was seen to carry an ink French gloss under every group, with the same figures as 108(A). A copy is also in AAE, CP États-Unis vol. 15 (Idzerda, Lafayette Papers 3:319, cited by Papers of George Washington, Rev. War ser. 30, Destouches to GW 7 Feb 1781 n.1). Class **N0** for 108(A) and for mssDE 68. Recommended status `found-solved` (the lane orchestrator sets it). Sentences below saying 108(A) has no decipherment in the archive are marked [superseded, AUDIT.md].
 
@@ -490,3 +492,40 @@ challenge), nsa.gov 403; neither retried.
 huntington-luzerne-destouches-1781: open (line 92) -- edition/page or full-text-search citation found within 6 lines
 (exit 0)
 ```
+
+## Premise check (GF4-BATCH1, account-4, 2 Oct 2026)
+
+**Result: found solved (both letters).** The adversarial pass of `.claude/briefs/check-solved.md` "Premise check",
+run 2 Oct 2026 23:55-00:05 UTC (`date -u`), finds the decipherments already on file in this folder; the status word
+moves `open` -> `found-solved` (rule 5). No test, no reading run. status.json already carried this item as
+"found solved" (N0, claim_scope correction); only this file's status line had not been changed.
+
+**(a) Decipherments the folder mentions, opened. Found.**
+- mssDE 108(B), the "Duplicata" of 108(A): the Huntington record says "decoded, by Destouches, in French". The six
+  page images are on disk (`images/`, manifest.json, R19). R19 and the verifier saw an ink French gloss under every
+  group of page 1 (this pass read their record, it did not re-view the image). `pairs_108B.tsv` (718 rows) and `compare_108B.py --check` show 690/719 groups (96.0%) in the same
+  sequence as 108(A). That makes it the same letter in the same code, deciphered at the time. AUDIT.md: **N0**.
+- mssDE 68: an interlinear ink decipherment covers all 177 groups on pp.1-3 (R1, R6; `reading_68.txt` transcribes
+  it). AUDIT.md: **N0**.
+- AAE, Correspondance politique, Etats-Unis vol. 15 copy (Idzerda, *Lafayette Papers* 3:319, cited in Papers of
+  George Washington, Rev. War ser. 30, n.1 to Destouches to GW 7 Feb 1781): the printed citation is in AUDIT.md. We
+  did not reopen it this pass, and it is not needed: the classification already rests on 108(B).
+
+**(b) Other solvers' working files. Not found (no working files on this item).**
+- **Bourdeau**: fresh shallow clone, HEAD 2341682 (2 Oct 2026 15:12 -0500), grepped for `luzerne|destouches`. There is
+  no target folder for these letters. The only hits are `targets/destaing/NOTES.md:13` ("The Luzerne 1781 code on
+  cryptiana's blog runs to 1199 -> a different, larger code", one line, no rendering) and the Napoleon unsolved list.
+  The catinat1691/feuquieres/jqa hits are other persons or other code tables, not this item.
+- **Aymeloglu**: fresh shallow clone, HEAD d2800bb (27 Sept 2026). The only hits are rows in
+  `catalogue/decode-catalog.csv` for BL Add MS 32263 (Luzerne-Vergennes, 1779-83). That is a different collection,
+  already recorded in this file at line 78. No folder, script or rendering for mssDE 68/108.
+
+**(c) Physical neighbours. Found.** The neighbouring item 108(B) in the same collection is the decipherment, as under (a). The
+siblings mssDE 37/55 are deciphered too and already serve as the key source (R10).
+
+**(d) Recipient's side.** Destouches, the recipient, is himself the decipherer of 108(B), so the recipient-side record is the
+find under (a). US side: Papers of George Washington (Rev. War ser. 30) notes the AAE copy; it does not print the
+French text (AUDIT.md).
+
+Requests this pass: github.com 2 (shallow clones, Bourdeau + Aymeloglu); no other host.
+
