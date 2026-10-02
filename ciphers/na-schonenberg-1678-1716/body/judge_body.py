@@ -17,7 +17,7 @@ ap = argparse.ArgumentParser(); ap.add_argument('--shuffles', type=int, default=
 ap.add_argument('--corpora', default='es18,es17c7,es', help='LANG_CORPORA keys with a body/spec_body_<key>.json each (GAPS5 added es18, 2 Oct 2026)'); a = ap.parse_args()
 BODY = ['L%02d' % i for i in range(1, 15)]
 toks = [r for r in csv.DictReader(open(os.path.join(T, 'reading_tokens.tsv'), encoding='utf-8'), delimiter='\t') if r['line'] in BODY]
-key_text = ''.join(r['value'] for r in toks if r['value'] != '[?]')
+key_text = ''.join(r['value'] for r in toks if r['value'] not in ('[?]', 'NULL'))  # GAPS8 2 Oct 2026: NULL (the blot) carries no letter
 ct = [r for r in csv.DictReader(open(os.path.join(T, 'ciphertext.tsv'), encoding='utf-8'), delimiter='\t') if r['line'] in BODY]
 gloss_text = ''.join(r['gloss'] for r in ct)
 sense = []
@@ -34,7 +34,7 @@ def decode_shuffled(rng):
     for L in BODY:
         gs = [r['group'] for r in ct if r['line'] == L]; rng.shuffle(gs)
         out.extend(key.get(g, '[?]') for g in gs)
-    return ''.join(v for v in out if v != '[?]')
+    return ''.join(v for v in out if v not in ('[?]', 'NULL'))
 print('KEY   N=%d %s' % (len(J.fold(key_text)), key_text)); print('GLOSS N=%d %s' % (len(J.fold(gloss_text)), gloss_text)); print('SENSE N=%d %s' % (len(J.fold(sense_text)), sense_text))
 rows = []
 for corp in a.corpora.split(','):
