@@ -125,3 +125,43 @@ Books slot, no logins, no subagents.
 2. If both come back negative, the ff.1-8 pairing (1669 letters plus their own partial name-key, in the same
    volume) is the cheapest solve in the volume per the QUEUE row's own assessment — a reading-room request for
    just those eight folios, not the whole 1669-1688 volume, would be the efficient next step.
+
+## Web and blog check (GF-A2-5, 2 Oct 2026)
+
+Plain web searches (4), each hit opened where plausible:
+1. `"Add MS 21483" cipher` -- no hit about this manuscript (NSA Friedman PDFs, unrelated glossary pages).
+2. `anonymous letters in cipher 1669 Duke of York "key to some of the names" British Library` -- hits: BL
+   searcharchives record 032-002033865 (opened: Add MS 21483, "AUTOGRAPH letters to James II., and others, from 1669
+   to 1688"; item 1 "Anonymous letters, partly in cipher, on political affairs, with a key to some of the names"
+   ff.1-8, 25 Sept and 5 Oct 1669; item 11 "Key to a cipher, endorsed, 'Cypher with the Duke of Ormond'" f.36; no
+   digitised content listed); National Library of Ireland Sources record MS_UR_008017 (a microfilm copy of Add MS
+   21,483 held at NLI -- page answered HTTP 403 to fetch, read only from the search snippet). No decipherment.
+3. `Duke of York 1669 cipher letters deciphered Catholic conversion secret correspondence` -- general history pages
+   (James's 1669 conversion), the same NLI record; nothing reads or discusses these letters' cipher.
+4. `"21483" Additional manuscript James II Melfort Nell Gwyn cipher` -- the same BL and NLI records, auction lots
+   and portrait pages unrelated to the cipher.
+Blog site searches: `site:scienceblogs.de klausis-krypto-kolumne Duke of York 1669 cipher` (Cipherbrain: archive
+and category pages only, none about this item; nearest are Charles I 1648 posts, unrelated);
+`site:cryptiana.blogspot.com James Duke of York cipher 1669` (no Cryptiana page returned);
+`site:ciphermysteries.com Duke of York James II cipher letters` (no Cipher Mysteries page returned; Bodleian
+James-to-Ormonde letters record surfaced, not this item). No comment thread found that discusses Add MS 21483.
+Result: no decipherment or plaintext of ff.1-8 found on the open web or in the three blogs. Requests: WebSearch 7,
+searcharchives.bl.uk 1, sources.nli.ie 1 (403, not retried).
+
+## Premise check (GF-A2-5, 2 Oct 2026)
+
+(a) Folder's own mentions: NOTES.md and REQUEST.md mention only the partial "key to some of the names" bound in
+ff.1-8 (a period key, not a decipherment) -- not found as a gloss or clear copy; the leaves are not digitised, so it
+cannot be opened from here (unreachable; the copy order in REQUEST.md is the route). Not found: any reference to a
+decipherment or interlinear reading.
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct
+2026) grepped for "21483", "Add MS 21483", "Duke of York": "21483" occurs only as a number inside unrelated data
+files (lorraine1592 JSON, voynich results, a napoleon PDF); "Duke of York" only in Bourdeau's charlesi/esp318
+literature and bordeaux1653 pages, none about this manuscript. Aymeloglu: no hit (cited, not copied). Not found.
+(c) Physical neighbours: the BL record lists f.36 "Key to a cipher, endorsed 'Cypher with the Duke of Ormond'" in the
+same volume -- a second key that should be tried against ff.1-8 once images exist; no clear copy or decipherment is
+listed beside ff.1-8. Unreachable (not digitised; BL images dead since 2023); NLI microfilm copy exists (MS_UR_008017)
+as a second physical route.
+(d) Recipient side: James (recipient) -- Clarke's *Life of James the Second* vol.1 1669 section, read by LANE CX
+(25 Sept 2026, above), nothing; CSP Domestic 1668-69, nothing. Ormonde-side (HMC Ormonde) not searched this pass.
+Not found.
