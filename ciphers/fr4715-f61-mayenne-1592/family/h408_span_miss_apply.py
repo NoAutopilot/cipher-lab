@@ -31,7 +31,7 @@ def spans(k, l61):
         for s, l, mk in s61: x += align(mk.translate(b.FOLD), l61[l], kk)[0]
         cs.append(x)
     cs.sort(); return mt, tot, sum(cs) / 2000 / tot, cs[1899] / tot, sum(x >= mt for x in cs)
-LET = {"C43": "a/n", "PHI": "e/r", "LOOPBAR": "-"}   # F61-FAMILY-14: every row of the corrections file, not only H407's two (V12's L05/1 LOOPBAR null)
+LET = {"C43": "a/n", "PHI": "e/r", "LOOPBAR": "-", "LL": "-"}   # F61-FAMILY-14: every row of the corrections file, not only H407's two (V12's L05/1 LOOPBAR null); A2-F61M 2 Oct 2026: LL null (L02 0 insert, VERIFY-F61-LL; L02 is not in the span sequence)
 def apply_meter(d):
     for c in corr():
         k = (c["line"], c["pos"])
