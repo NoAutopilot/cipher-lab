@@ -212,3 +212,113 @@ api.openalex.org 2, api.semanticscholar.org 1, github.com 2 clones. No credentia
    previously/unpublished/solved/cracked: every hit is ordinary prose -- "first test" (the pipeline step), "a first guess", "the decipherer's own unread signs").
 
 SECOND-OPINIONS-QUEUE.tsv: no row for this item; at N0 none is filed (rows are queued at N3 or better).
+
+---
+
+# AUDIT: no.90 f.184r cipher runs (VERIFY-NEVBIR-184, 2 Oct 2026)
+
+Verifier: parent worker VERIFY-NEVBIR-184 (account 2, for the account-3 orchestrator), a session separate from the
+solver session NEVBIR-184 (commit 62d40a28). Brief `.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-184.md`.
+Clock read with `date -u` at 17:11 and 17:17 UTC, 2 Oct 2026.
+
+**Claim under audit** (brief): Birago to Nevers, BnF fr.3251, no.90 (Saluzzo, 2 Oct 1572), f.184r, 4 inline cipher
+runs, 224 signs: printed 1572 key + T42=m rank 1/201 at 3 seeds, z 3.64-4.15, margin 0.20-0.25 over the best
+shuffle, power 17/20 at err 0.12; grades S 190 M 13 U 21; judge FAIL -1.096 vs real_p05 -0.941; no slip found on
+canvases 188-190.
+
+## Verdict
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| no.90 f.184r, 4 inline cipher runs, 224 signs (Lodovico Birago to the duc de Nevers, Saluzzo, 2 Oct 1572) | f.184r only | **N3** | published (Tomokiyo's 1572 table; the fitted T42=m is ours but T42 does not occur in these runs) | not known: no period decipherment in the MS, no print located | moderate on the class; the reading itself is cryptanalytic (S/M only, judge FAIL) |
+| no.90 f.184v foot, f.185r, f.185v runs | not read | not classed | -- | -- | nothing read |
+
+**Why N3, not N4.** No prior decipherment or print of the plaintext was located (log below), and Tomokiyo lists
+no.90 without "(with decipherment)", unlike the 1570-71 items he marks. But the principal printed edition for the
+recipient, *Les Mémoires de Monsieur le Duc de Nevers* (Gomberville, Paris 1665, 2 vols), could not be searched
+inside: Google Books lists it but returns no inside-the-book hits through the API, and Internet Archive has no full
+text of it. JSTOR rows are queued, not answered. Until the Mémoires (which print Nevers papers, mostly later than
+1572) are checked for Birago's 1572 letters, N4 is not reached.
+
+**Why not lower.** No decipherment slip, gloss or laid-in sheet on any page from the facing page to the leaf after
+the letter's end (check below); no solver repository or DECODE record covers no.90; the search turned up no
+edition of Birago's 1572 letters at all.
+
+Key source: `published` (Tomokiyo's printed Nevers-Birago 1572 table, reconstructed from the no.87 decipherment,
+credited). Text: not known.
+
+**Safe sentence.** "Using Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, we read the four
+cipher runs on f.184r of Birago's letter of 2 October 1572 (BnF fr.3251, no.90) from a blind sign transcription;
+the key beats all 200 shuffled keys (z about 3.6-4.2), but the reading is fragmentary (S 190, M 13, unkeyed 21 of
+224 signs) and we located no prior decipherment or print of it."
+
+**Unsafe sentence.** "We deciphered Birago's letter of 2 October 1572" (the letter's longer cipher on f.184v-f.185v
+is not read, and the f.184r text is fragmentary) -- or any wording with first, new, previously unread, unpublished.
+
+## Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --check`: exit 0, "reading up to date";
+`harvest/ciphertext_f184r.tsv: tokens 224: M 13, S 190, U 21` -- the claimed grades exactly (H 0 C 0 I 0).
+Working tree clean after the run.
+
+Control re-run independently at seeds not used by the solver
+(`../ceppo-nevers-fr3251-1570s/harvest/decode_control.py f184r/passC.tsv --map sign_id_map_1572_fit.json --err 0.12`):
+
+| seed | real key | shuffles mean / max | z | rank | power at err 0.12 |
+|---|---|---|---|---|---|
+| 7 | -1.0162 | -1.594 / -1.257 | 3.78 | 1/201 | 16/20, z median 3.06 min 1.67 |
+| 11 | -1.0162 | -1.600 / -1.279 | 3.79 | 1/201 | 19/20, z median 3.25 min 2.21 |
+| 7, printed map (no fit) | -1.0162 | -1.601 / -1.253 | 3.81 | 1/201 | not run |
+
+The printed and fitted maps score identically, confirming T42 is absent from these runs. Margin over the best shuffle
+0.24-0.26. The solver's figures hold. The grade arithmetic is consistent: 211 agreed signs less 21 off-sheet = S 190;
+13 adjudicated = M 13.
+
+## Slip check (brief: facing page and neighbouring canvases)
+
+Gallica btv1b9060248g canvases 187-191 fetched at 2500 px wide, every page looked at by eye, with two native-detail
+crops where the page carried faint writing:
+
+| canvas | pages | seen |
+|---|---|---|
+| 187 | f.182v / f.183r | f.182v end of the previous item, signature and docket; f.183r blank but for a struck number and faint ghost lines (detail crop `pct:52,14,38,40` at 2400 px: show-through/offset, no legible text, no cipher, no pasted slip) |
+| 188 | f.183v / f.184r | f.183v blank but for the vertical address docket "...Il Gran Comendatore" of the previous item; f.184r the letter's opening with the four runs, no interlinear gloss, no slip |
+| 189 | f.184v / f.185r | prose with cipher at the foot of f.184v and about 20 cipher lines on f.185r; no gloss, no slip |
+| 190 | f.185v / f.186r | f.185v the letter's end: one cipher line, "Da Saluzzo li 2 di Ottobre 1572", signature "Lodovico Birago"; f.186r the next item (Carolo Birago, 28 Nov 1572), clear, no slip |
+| 191 | f.186v / f.187r | f.186v blank (show-through); f.187r faint mirrored address to the duc de Nevers and show-through (detail crop `pct:51,8,40,45` at 2400 px), no decipherment |
+
+Nothing laid in or pasted between f.183r and f.187r. The solver's page look and PREMISE-NEVBIR's row (NOTES.md,
+"not found -- nothing laid in") are confirmed.
+
+## Search log (2 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical / catalogue | Tomokiyo `sources/cryptiana/web/nevers.htm` section BnFfr3251 (local mirror, read); BnF *Catalogue général des manuscrits français* via IA fts (cataloguegnrald00manugoog) | Tomokiyo lists "f.184 (no.90) Saluzzo, 2 October 1572" with no decipherment note; the catalogue gives only "Lettres orig. de Lodovico Birago ... 1569-1572" |
+| (b) sender/recipient editions | *Les Mémoires de Monsieur le Duc de Nevers* (1665): Google Books API `country=US` keyed, `Birago intitle:...` and `Saluces 1572 intitle:...`, 0 inside hits; IA advancedsearch for a 17th-c. "duc de Nevers" title: no copy of the Mémoires | **unreachable for search-inside** -- the reason the class stops at N3 |
+| (c) Italian / Savoyard editions and histories | IA fts `"Birago" "Nevers" Saluces 1572` (905 hits, top 8 read: Savio *Saluzzo e i suoi vescovi* 1911, *Piccolo archivio storico ... Saluzzo* 1901, Balan *Storia d'Italia*, *Bulletin italien* 1901, Frangipani nunciature); Google Books `"Birago" "duca di Nevers" "1572" lettere cifra` (2), `"Birago" "Milesimo" Langhe 1572 Alemanni` | Birago's biography and death (28 Dec 1572), no text or summary of the 2 Oct 1572 letter |
+| (d) holding archive | Gallica canvases 187-191 (above) | no period decipherment |
+| (e) phrase search, decoded and clear text | IA fts and Google Books: `"capitano Scipione" Birago` (12 IA hits read: Camillo Orsini's Vita, Suriano despatches, Zapperi -- other captains named Scipione, other contexts), `"lettere inhibitorie" "gran comendatore"` (0), `"lettere inhibitorie al gran"` (GB 8, unrelated), `"Mons. di Sanfre"` (0), `Birago Nevers "2 di Ottobre 1572"` (0), `"pratica con il conte di" Birago` (GB, unrelated) | no print of the letter's clear or cipher text |
+| (f) solver repos | dbourdeau/cyphersolver cloned (head 1 Oct 2026), grepped 3251/birago/f.184/no.90: only a mirror of Tomokiyo's page, f.119 (1571) and fr.3315 (1574); aaymeloglu/unsolved-ciphers cloned (head 27 Sept 2026): no fr.3251 record | no reading of no.90 |
+| (g) scholarship | OpenAlex keyed `Birago Nevers cipher` (1 irrelevant hit); Semantic Scholar keyed `Birago Nevers 1572 cipher` (0) | nothing |
+| DECODE | via Aymeloglu's catalogue mirror | no fr.3251 record |
+| JSTOR | two rows queued in `JSTOR-QUEUE.tsv` (family i and ii) | pending; does not block N3 |
+
+Requests: gallica.bnf.fr 7, be-api.us.archive.org 9, archive.org 2, googleapis.com 10, api.openalex.org 1,
+api.semanticscholar.org 1, github.com 2 clones. No credentials printed. Unreachable: the 1665 Mémoires (search-inside).
+
+## Postmortem and corrections
+
+1. **No over-claim found.** NOTES.md's NEVBIR-184 section grepped for first/new/novel/unread/previously/
+   unpublished/solved/cracked/never: "first test" is pipeline vocabulary (rule 3a) and "unread" refers to this
+   letter's own unread runs; nothing to correct.
+2. **The reading is weaker than its rank.** Rank 1/201 says the key fits the transcription; the text itself is
+   fragmentary (look-alike slips "pranica", "sernunnuti", 21 unkeyed signs) and the judge FAILs. Outward wording must
+   keep "fragmentary" (the safe sentence does).
+3. **Most of no.90's cipher is still unread** (f.184v foot, f.185r ~20 lines, f.185v). The class covers f.184r
+   only; a later reading of the rest needs its own audit line.
+4. **Next for N4:** a page check of the 1665 Mémoires de Nevers for Birago's 1572 letters (LOCAL-QUEUE or a person
+   with Gallica, which has the Mémoires digitised), plus the queued JSTOR rows.
+
+SECOND-OPINIONS-QUEUE.tsv: row `SO-NEVBIR-F184` filed in this session (N3, CLAUDE.md "Operating model"), prompt
+`second-opinions/PROMPT-chatgpt-f184.md`.
