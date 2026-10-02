@@ -426,3 +426,120 @@ api.openalex.org 3, api.semanticscholar.org 2. No credentials printed.
 5. PROGRESS.tsv row "Birago 1572 f.138": audit column set from this file.
 
 SECOND-OPINIONS-QUEUE.tsv: row SO-NEVBIR-139V appended (N3), prompt `second-opinions/PROMPT-chatgpt-f139v.md`.
+
+---
+
+# AUDIT: no.82 cipher line, f.162 (canvas 164 right) (VERIFY-NEVBIR-82, 2 Oct 2026)
+
+Verifier: parent worker VERIFY-NEVBIR-82 (account 2, for the account-3 orchestrator), a session separate from the NEVBIR-162
+solver session. Brief `.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-82.md`. Clock read with `date -u` at 18:12 and 18:16
+UTC, 2 Oct 2026.
+
+**Claim under audit** (brief, from NOTES.md NEVBIR-162 and PROGRESS.tsv): Lodovico Birago to the duc de Nevers, BnF fr.3251,
+no.82 (Saluzzo, 27 June 1572; finding aid "Fol. 162", ink "160"), one cipher line on Gallica btv1b9060248g canvas 164 right,
+25 signs in two runs (21 + 4). Under the published 1572 key, run 1 ranks 1 of 201 value-shuffled keys (z 2.6-2.9, power only
+2-10/20 at 21 letters); a later-hand decipherment slip pasted on the facing f.161v reads "[monsignore di S. Andre]" /
+"[M. di Bellaguarda]", and run 1 agrees with it on 0.737 of letters vs shuffled max 0.148 (commit b5e121af).
+
+## Verdict
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| no.82 cipher line, f.162 (canvas 164 right), 25 signs (Birago to Nevers, Saluzzo, 27 June 1572) | both runs: "ho scorto qua che [run 1], quale e tutta cosa di [run 2]" | **N0** | published (Tomokiyo's 1572 table; T42 does not occur, so printed = fitted key here); run 2's name code ("M." + 4 7 + u) has no key source but the slip | known in the MS: a decipherment slip filed with the letter (f.161v); no print of it, and no catalogue mention, located | high |
+
+**N0 reason.** A decipherment of this very line exists and is not ours. Looked at by eye this session on
+`harvest/f162r/slip_f161v_c164_1400_3450_2100_800.jpg` and on a fresh 2500 px view of the whole of canvas 164: a rectangular
+slip, mounted on the left page of the opening (f.161v, the back of no.81 with its Spanish address to Birago), directly facing
+the cipher line. Two lines in a rounded modern-looking cursive: "ho scorto quà che [monsignore di S. Andre], / quale è tutta
+cosi di [M. di Bellaguarda],". `harvest/f162r/decipherment_slip.tsv` agrees with the image letter for letter. The slip copies
+the clear words around the cipher (with one slip of its own, "cosi" for the letter's "cosa") and brackets the deciphered parts,
+covering the whole cipher of the letter -- both runs. Unlike the f.151v slip of no.77 it has no dots or struck false start: it
+is a fair copy of a result, not working. Either way the plaintext of both runs and a decipherment of them were known before
+any session here, so the class is N0 for the line as a whole. The decode reproduces run 1 ("·monsignobedisandre"; the struck
+pair T63 T81 cancelled by the writer, T81 = b where the slip has r, X_EQ set to d from the slip) and does not read run 2 at all.
+
+**Is the slip printed or catalogued?** Not located in either:
+- *Catalogue.* BnF finding aid cc49712p (fetched again this session): "Fol. 162 • 82 Lettre, avec chiffre, de « LODOVICO
+  BIRAGO,... all' illmo... sigr duca di Nevers,... Da Saluzzo, li 27 di giugno 1572 ». En italien." -- "avec chiffre" only,
+  where the same aid writes "avec chiffre et déchiffrement" for no.20; as noted for no.77, the aid is silent about every laid-in
+  decipherment of the 1572 letters (no.87's clerk sheet included), so its silence is weak evidence. The printed 1874 *Catalogue
+  des manuscrits français* carries the same entry (IA/Google Books hits for "27 di giugno 1572").
+- *Tomokiyo.* `sources/cryptiana/web/nevers.htm` line 780: "f.160 (no.82) Saluzzo, 27 June 1572", no "(with decipherment)" tag
+  (he uses it for nos. 14, 20, 42). No plaintext of this letter there.
+- *Print.* Phrase searches on the slip and on the letter's adjacent clear prose found nothing (log below).
+
+**Who wrote the slip, and when.** Not settled. Compared by eye this session with the f.151v slip (no.77): the same rounded hand (the
+looped d of "di", the r and the g forms), but on plain paper where f.151v is squared, and a fair copy where f.151v is working;
+consistent with a 19th- or 20th-century reader, pasted before the Gallica capture; not the 1572 clerk. Matters for credit, not
+for the class.
+
+**Run 2 / code 47.** The slip's "M. di Bellaguarda" is the only source for the 4-sign name code (T54 "m" + digit-like "4" "7"
++ T49 "u"). Entering 47 = Bellaguarda in the key is allowed at grade **C** (known plaintext from the slip), with the provenance
+"later-hand slip, f.161v, hand and date unsettled" written beside it, and graded M wherever it is used outside this letter until a
+second attestation turns up (rule 4's single-witness caution). Not entered here (verifiers do not decode). Identifying the two
+persons is not attempted here.
+
+Key source: `published` (Tomokiyo's 1572 table, credited) for run 1; the slip for run 2. Text: known in the sense of a
+decipherment filed in the manuscript, not in print -- status.json `text: known` (print) does not strictly apply; record it as
+"decipherment slip in MS", as for no.77.
+
+**Safe sentence.** "Using Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, we re-deciphered the one cipher line
+in Birago's letter of 27 June 1572 (BnF fr.3251, no.82, f.162) from a blind sign transcription; its first run agrees with a
+later-hand decipherment slip pasted on the facing page (f.161v), which also gives the name code we could not key, and which we
+have not found in print or in the BnF catalogue."
+
+**Unsafe sentence.** "We deciphered Birago's letter of 27 June 1572", or any wording with first, new, previously unread or
+unpublished plaintext: the line had been deciphered by whoever wrote the slip, and the key is Tomokiyo's.
+
+## Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --check`: exit 0, "reading up to date"; working tree unchanged.
+f.162r job: **25 tokens: H 0, C 0, S 8, M 14, I 0, U 3** -- identical to NOTES.md NEVBIR-162 and PROGRESS.tsv. Control numbers
+(rank 1/201 at three seeds; slip agreement 0.737, shuffled max 0.148) were not re-run (no decoding beyond re-derivation, per brief);
+they are on file with their commands. At 21 letters the n-gram control is weak (power 2-10/20), so the slip, not the control, is
+what backs this line.
+
+## Slip check (brief: facing page and neighbouring canvases)
+
+Canvases 163, 164, 165 fetched once each at 2500 px (Gallica IIIF, 3 requests) and looked at whole:
+- 163: f.160v/161r, near-blank (bleed-through, address traces); nothing laid in.
+- 164: left page = back of no.81 (Spanish address to Birago, flourish) **with the mounted decipherment slip in its lower half**;
+  right page = no.82's opening, the cipher line at line 9 ("ho scorto qua che ... quale e tutta cosa di ...").
+- 165: left page = no.82 continued, all plain (one word written in spaced capitals, "FRANCIA", is plain text, not cipher); right
+  = the "Doppo scritto sono avisato ..." postscript slip, plain, not a decipherment (as PREMISE-NEVBIR and NEVBIR-162 said).
+Canvas 166 (letter end, the same postscript slip face down) was not refetched: NEVBIR-162's 1200 px view and
+`images/f162v_insert2_canvas166.jpg` are on disk. No second decipherment found.
+
+## Search log (2 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical catalogue | BnF finding aid cc49712p (curl, 1 request), no.82 and neighbours; 1874 printed catalogue via IA/Google Books hits | no.82 "avec chiffre", no decipherment noted |
+| (b) sender/recipient correspondence | IA fts + Google Books "Birago" "27 di giugno 1572"; "Bellaguarda" Birago Saluzzo; Birago Bellegarde "S. Andre" 1572 | the 1874 catalogue; Segre, *Emanuele Filiberto e la Repubblica di Venezia* (1901; IA emanuelefilibert00segruoft): its "27 di giugno 1572" is a Messina letter, its Birago/Bellegarde passages are on the Saluzzo quarrels, not this letter; *Historiae Patriae Monumenta*, Albèri *Relazioni*: general Birago mentions; no edition of the 1572 letters. The 1665 *Mémoires de Nevers* not read page by page (as for no.77/no.90) |
+| (c) documentary editions (Italian/Savoyard) | same queries | as (b) |
+| (d) holding archive | Gallica canvases 163-165 at 2500 px; slip crop on disk | the slip (the N0 basis) |
+| (e) phrase search, IA fts + Google Books (keyed, country=US) | "ho scorto qua che", "ho scorto quà che", "quale è tutta cosa di", "quale e tutta cosa di", "monsignore di S. Andre" Birago, "Monsignor d'Autefort" Birago, "Leandro Ongarese" (the letter's own clear prose) | IA 0 on all; Google Books word-level matches in unrelated texts (Vasari, Varchi, an 1857 encyclopedia, a 1934 Rivista), snippets read, none this letter |
+| (f) solver repos, blogs | dbourdeau/cyphersolver cloned (head 1 Oct 2026), grepped 3251/birago/Bellaguarda/"S. Andre"/"scorto qua": only `targets/birago` (f.119, 1571) and fr.3315 nevers1574; aaymeloglu/unsolved-ciphers cloned (head 27 Sept 2026): no fr.3251 record; Tomokiyo nevers.htm (local mirror) | no reading of no.82 |
+| (g) scholarship | OpenAlex (keyed) "Birago Nevers Bellegarde 1572": 1 unrelated hit | nothing on this letter |
+| JSTOR | not queued: at N0 the class rests on the slip in the MS, which no JSTOR result could lower | -- |
+
+Requests: gallica.bnf.fr 3, archivesetmanuscrits.bnf.fr 1, be-api.us.archive.org 13, archive.org metadata 1, googleapis.com 10,
+api.openalex.org 1, github.com 2 clones. No credentials printed. Unreachable: none.
+
+## Postmortem and corrections
+
+1. **The premise check missed the slip again.** PREMISE-NEVBIR's row f.160/162 checked canvases 163, 165, 166 and not 164, where
+   both the cipher line and the slip are; NEVBIR-162 found both and flagged the slip correctly as a prior decipherment for the
+   verifier, without offering the reading as ours. Correction note added to that table row. Third leaf in this volume with a
+   laid-in decipherment (no.77, no.82, and no.87's clerk sheet): a premise check on this volume must look at every canvas of an
+   opening, both pages.
+2. **One exception is slip-derived.** `harvest/exceptions_f162r.tsv` sets X_EQ (pos 19) = d "the slip's d", graded M: that value
+   comes from known plaintext, so the 0.737 agreement is not wholly independent of the slip (1 letter of 19). Harmless at N0; noted.
+3. **Grades could rise.** Tokens where the decode matches the slip could be C rather than S; not done here.
+4. **"cosi" vs "cosa".** The slip's clear context differs from the letter by one letter; the slip writer's copying error, recorded
+   in `decipherment_slip.tsv`. No effect on the class.
+5. No novelty wording in the NEVBIR-162 section, reading file or PROGRESS row (grepped for first/new/novel/unread/previously/
+   unpublished/solved/cracked: hits are ordinary prose -- "a first cut", the pipeline's "first run").
+6. PROGRESS.tsv row "Birago 1572 f.162": audit column set from this file.
+
+SECOND-OPINIONS-QUEUE.tsv: no row for this item; at N0 none is filed (rows are queued at N3 or better).
