@@ -287,14 +287,14 @@ ok = code == 1 and "web and blog-comment" in message
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic cited-open-no-web-check -> blocked", f"-> code={code}")
 
-code, message = gate.check(WEB_CITED_OPEN + "\n## Web and blog check (CHECK-SOLVED-WEB, 28 Sept 2026)\n\nno hit.\n")
+code, message = gate.check(WEB_CITED_OPEN + "\n## Web and blog check (CHECK-SOLVED-WEB, 28 Sept 2026)\n\nno hit.\n", require_premise=False)
 ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic cited-open-with-web-heading -> pass", f"-> code={code}")
 
 # must NOT block: the pass logged in prose under another heading, naming all three blogs
 code, message = gate.check(WEB_CITED_OPEN + "\n## Check-solved\n\nSearched Cipherbrain (klausis-krypto-kolumne), "
-                           "the Cryptiana blog and its comments, and ciphermysteries.com: no reading.\n")
+                           "the Cryptiana blog and its comments, and ciphermysteries.com: no reading.\n", require_premise=False)
 ok = code == 0
 fails += not ok
 print(("PASS" if ok else "FAIL"), "synthetic cited-open-three-blog-paragraph -> pass", f"-> code={code}")
@@ -330,3 +330,16 @@ print("ok: intake_gate_check reads antt-linhares-chave and fr4687-paleologue-nev
       "far-citation, no-verdict-word, verdict-word-in-prose-only and "
       "unread/not-read/could-not-open/paywalled synthetic cases (without tripping on the "
       "'unreadable' substring)")
+
+# Premise check (2 Oct 2026): an open target with citation + web/blog check still fails without the section;
+# passes with it; found-solved is never blocked by it.
+WEBP = "\n\n## Web and blog check (w, 2 Oct 2026)\nCipherbrain, the Cryptiana blog and Cipher Mysteries searched.\n"
+BASE = "open\nRibier 1666 vol.2 pp.140-145 read by this worker, letter absent.\n" + WEBP
+code, message = gate.check(BASE)
+assert code == 1 and "Premise check" in message, (code, message)
+code, message = gate.check(BASE + "\n## Premise check (w, 2 Oct 2026)\n(a) not found (b) not found (c) not found (d) not found\n")
+assert code == 0, (code, message)
+code, message = gate.check(BASE.replace("open\n", "found-solved\n", 1))
+assert code == 0 or "Premise" not in message, (code, message)
+print("premise-check tests: ok")
+

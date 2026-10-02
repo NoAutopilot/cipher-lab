@@ -235,6 +235,16 @@ def has_web_blog_check(notes_text):
     return False
 
 
+PREMISE_HEADING_RE = re.compile(r'^\s*#+\s*Premise check\b', re.IGNORECASE | re.MULTILINE)
+
+
+def has_premise_check(notes_text):
+    """True when NOTES.md carries the adversarial Premise check section (.claude/briefs/check-solved.md,
+    2 Oct 2026): the folder's own mentioned decipherments opened, the other solvers' working files read,
+    the physical neighbours of the leaf looked at, and recipient-side editions searched."""
+    return bool(PREMISE_HEADING_RE.search(notes_text))
+
+
 def resolve_target(target):
     if os.path.isdir(target):
         return target
@@ -247,9 +257,14 @@ def resolve_target(target):
     return None
 
 
-def check(notes_text, require_web=True):
+def check(notes_text, require_web=True, require_premise=None):
     """Pure check used by the offline test. Returns (exit_code, message).
-    require_web=False runs only the citation gate (the offline tests of the first three fixes use it)."""
+    require_web=False runs only the citation gate (the offline tests of the first three fixes use it).
+    require_premise defaults to require_web: an open/partial target with a passing citation and web/blog
+    check still exits 1 until a "## Premise check" section exists (2 Oct 2026: of four likely-solves first
+    tests a verifier later classed N0, two had their decipherment in the folder's own notes, in the other
+    solver's working files or bound beside the leaf -- things a pre-reading adversarial pass finds).
+    Must NOT block: terminal statuses (solved, closed-negative, offline-only, blocked) and found-solved."""
     lines = notes_text.splitlines()
     word, idx = find_verdict(lines)
     if word is None:
@@ -275,6 +290,14 @@ def check(notes_text, require_web=True):
                 f"(no 'Web and blog check' heading, no paragraph naming Cipherbrain, the Cryptiana blog and Cipher "
                 f"Mysteries) -- run check-solved.md's 'Open web and blog comment threads' step first (CHECK-SOLVED-WEB, "
                 f"28 Sept 2026: spinelli-beinecke-c1515 was read in a Cipherbrain comment thread in 2017)"
+            )
+        if require_premise is None:
+            require_premise = require_web
+        if require_premise and word in ("open", "partial") and not has_premise_check(notes_text):
+            return 1, (
+                f"{word} (line {idx + 1}) passes the citation and web/blog checks but has no '## Premise check' "
+                f"section -- run check-solved.md's adversarial Premise check (mentioned decipherments opened, other "
+                f"solvers' working files, neighbouring leaves, recipient-side editions) before any first test"
             )
         msg = f"{word} (line {idx + 1}) -- edition/page or full-text-search citation found within {CONTEXT_LINES} lines"
         for w in soft_warnings(context):
