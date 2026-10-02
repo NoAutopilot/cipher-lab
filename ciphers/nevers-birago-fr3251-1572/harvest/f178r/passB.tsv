@@ -1,0 +1,91 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	T45		M	circle stem tick above; prose above not legible, run starts line (descender tails only)
+L01	2	T33		H	
+L01	3	T45		H	
+L01	4	T24		M	ae-like
+L01	5	T19		H	
+L01	6	T98	T18	M	p-like w/ loop tail
+L01	7	X_NEW		H	numeral 4
+L01	8	X_NEW		M	7/angle shape
+L01	9	T78		H	
+L01	10	T63	T81	M	y-shaped
+L01	11	T86	T60	M	tall hash
+L01	12	X_NEW		M	t with crossbar
+L01	13	T19		H	
+L01	14	T58		H	
+L01	15	T53		H	
+L01	16	T96		M	l with tick
+L01	17	T70		H	
+L01	18	T25		H	
+L01	19	T19		H	
+L01	20	T24		H	
+L01	21	T60		H	
+L01	22	T80		M	D
+L01	23	T86	T60	M	hash
+L01	24	T24		H	
+L01	25	T37		H	
+L01	26	T85		H	
+L01	27	T92		H	
+L01	28	X_NEW		L	hook-stroke with tick before next sign
+L01	29	T66	T65	L	ꝥ-like with base serif
+L01	30	T24		M	dotted ae
+L01	31	T63		H	
+L01	32	T45		H	run continues across crop; prose 'strepito' lies above s3, not after the run; line end
+L02	1	T60	T86	M	hash; line start (prose above not legible)
+L02	2	T45		H	
+L02	3	T98		H	phi through stem
+L02	4	T25		H	
+L02	5	T90		H	cross over circle
+L02	6	T97		M	s-like squiggle
+L02	7	T45		H	
+L02	8	T65		H	
+L02	9	T86		M	small hash
+L02	10	T76		H	
+L02	11	T18		H	
+L02	12	T45		H	
+L02	13	T37		H	
+L02	14	T36		H	
+L02	15	T56	T52	M	
+L02	16	T37		H	
+L02	17	T33		H	
+L02	18	T45		H	
+L02	19	T70		H	
+L02	20	T86	T60	M	hash cut by crop edge
+L02	21	T90		H	
+L02	22	T80		H	
+L02	23	T49		H	box on stem
+L02	24	T85		H	
+L02	25	T24		H	
+L02	26	T25		H	
+L02	27	T53		H	
+L02	28	T19		H	
+L02	29	T24		H	
+L02	30	T60		H	
+L02	31	T37		H	line end
+L03	1	T24		H	line start
+L03	2	T45		M	tick above
+L03	3	T37		H	
+L03	4	X_NEW		M	numeral 8 alone
+L03	5	X_S		M	plain s
+L03	6	X_NEW		M	t with crossbar
+L03	7	T37		H	
+L03	8	T92		H	
+L03	9	T55		H	
+L03	10	T65	T66	M	p-like with cross base
+L03	11	T19		H	
+L03	12	T85		H	
+L03	13	T76		H	
+L03	14	T63		H	
+L03	15	T37		H	
+L03	16	T24		H	
+L03	17	T92		H	
+L03	18	T45		H	
+L03	19	T60	T86	M	
+L03	20	T45		H	
+L03	21	T85		H	
+L03	22	T46		M	8 6 read as one sign
+L03	23	T90		M	cross over short body
+L03	24	T53		H	
+L03	25	T19		H	
+L03	26	T58		L	cut by crop bottom
+L03	27	?		H	run cut off by crop; run cut off by crop bottom; continues beyond; no prose seen

@@ -1,0 +1,247 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f179r_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    4800,
+    1025,
+    6050,
+    1170
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    5675,
+    1025,
+    6925,
+    1170
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L01_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    6550,
+    1025,
+    7800,
+    1170
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    4800,
+    1170,
+    6050,
+    1312
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    5675,
+    1170,
+    6925,
+    1312
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L02_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    6550,
+    1170,
+    7800,
+    1312
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L03_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    4800,
+    1312,
+    6050,
+    1451
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L03_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    5675,
+    1312,
+    6925,
+    1451
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  },
+  {
+   "crop": "f179r_L03_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f183/4800,1000,3000,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f183_4800_1000_3000_620.jpg",
+   "box": [
+    6550,
+    1312,
+    7800,
+    1451
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     96,
+     245,
+     380
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "canvas 183 (f.179r uncovered, the decipherment sheet flipped onto f.178v); region re-fetched once 150 px wider on the left after the first (4950,1000,2750,620) clipped the first sign of each line; centres by eye (--centres); box in canvas-183 native coordinates"
+  }
+ ]
+}

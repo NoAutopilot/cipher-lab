@@ -1,0 +1,12 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+L01	4	T45 T33 T45	T19 X_NEW X_NEW	T83	H	T24	M	ae-like	ae-like
+L01	6	T33 T45 T83 T19	X_NEW X_NEW T78 T63	T95	M	T98	M	p with curl top	p-like w/ loop tail
+L01	20	T96 T70 T25 T19	T60 T80 T86	T83	H	T24	H		
+L01	24	T60 T80 T86	T37 T85 T92	T83	H	T24	H		
+L01		T37 T85 T92	T66 T83 T63 T45			X_NEW	L		hook-stroke with tick before next sign
+L01	29	T85 T92 T66	T63 T45	T83	H	T24	M		dotted ae
+L02	25	T90 T80 T49 T85	T25 T53 T19	T83	H	T24	H		
+L02	29	T25 T53 T19	T60 T37	T83	H	T24	H		
+L03	1		T45 T37 X_NEW X_S	T83	H	T24	H	line start	line start
+L03	16	T85 T76 T63 T37	T92 T45 T60 T45	T83	H	T24	H		
+L03	27	T90 T53 T19 T58				?	H		run cut off by crop; run cut off by crop bottom; continues beyond; no prose seen

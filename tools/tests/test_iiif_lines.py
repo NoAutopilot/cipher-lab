@@ -50,6 +50,14 @@ try:
     r = run('--image', f71, '--out', os.path.join(tmp, 'b'), '--region', '1000,1600,3900,1400', '--dry-run')
     check(len(r['centres']) == 8, f"fr.20140 f.36r upper block: {len(r['centres'])} lines (8 by eye)")
 
+    # 3b. --centres (GAPS4-nevers-birago, 2 Oct 2026): eye-given centres skip detection; the bands follow them exactly
+    #     (midpoints between the given centres), and detection is not run, so a profile the autocorrelation would
+    #     misread cannot change the cut.
+    r = run('--image', page, '--out', os.path.join(tmp, 'c'), '--prefix', 'c', '--region', '0,0,5000,400', '--centres', '80,190,300', '--dry-run')
+    check(r['centres'] == [80, 190, 300] and r['params'].get('centres_given') == [80, 190, 300]
+          and [b[:2] for b in r['bands']] == [(25, 135), (135, 245), (245, 355)],
+          f"--centres: bands {[b[:2] for b in r['bands']]} follow the given centres, detection skipped")
+
     # 4. --groups (MONT-CAL, 27 Sept 2026): wide inter-group spacing splits into its 10 groups; uniform spacing (the
     #    fr.4715 f.81r shape) must NOT be reported as groups -- at the same gap it stays one piece.
     for label, gap_between, want in (('spaced', 60, 10), ('uniform', 12, 1)):

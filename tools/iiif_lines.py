@@ -31,6 +31,8 @@ Steps:
      page coordinates, crop path, date); entries for the same crop path are replaced, other keys are left alone.
   6. If OUT is over 30 MB afterwards, the reference copies this script fetched (src_*.jpg) are downscaled to 1600 px
      wide, renamed *_ref1600.jpg and marked so in the manifest (a later run refetches the native region); crops are never downscaled.
+  --centres y1,y2,... gives the line centres (region y px) by eye and skips step 3, for a short block whose profile the
+     autocorrelation misreads (check the --debug overlay first; GAPS4-nevers-birago, 2 Oct 2026).
   --debug writes OUT/<prefix>_lines_debug.jpg: the region at 1600 px wide with centres (red) and band edges (blue).
   --dry-run prints the detected lines and writes nothing but the cached source.
   --groups GAP [--group-lines 3,8] [--group-ink 120] [--group-upscale 3]: split each band into ink pieces at runs of
@@ -301,6 +303,9 @@ def main(argv=None):
                     help='with --follow-slope, fit each segment to the peaks within one window of it (a curving line)')
     ap.add_argument('--slope-margin', type=int, default=0, help='extra px above and below a --follow-slope strip')
     ap.add_argument('--only-lines', help='comma list of band numbers to write crops for (default: all)')
+    ap.add_argument('--centres', help='comma list of line centres (region y px) given by eye, skipping detection: for a '
+                                      'short block whose ink profile the autocorrelation misreads (GAPS4-nevers-birago, 2 Oct 2026: '
+                                      'three tall cipher lines under a prose tail read as pitch 100 and five lines)')
     a = ap.parse_args(argv)
     if a.max_width >= 2500:
         ap.error('--max-width must stay under 2500 px')
@@ -322,7 +327,11 @@ def main(argv=None):
     prefix = a.prefix or (f'f{a.canvas}' if a.canvas else os.path.splitext(os.path.basename(src))[0])
     gray = np.asarray(im)
     x0, x1 = (map(int, a.columns.split(':')) if a.columns else (0, im.width))
-    centres, params = detect(gray, x0, x1, a.ink, a.smooth, a.distance, a.prominence)
+    if a.centres:
+        centres = sorted(int(v) for v in a.centres.split(','))
+        params = dict(pitch_autocorr=0, distance=0, prominence=0.0, centres_given=centres)
+    else:
+        centres, params = detect(gray, x0, x1, a.ink, a.smooth, a.distance, a.prominence)
     bb = bands(centres, im.height, a.lines_per_crop)
     if a.top_margin:
         bb = [(max(0, top - a.top_margin), bot, nl) for top, bot, nl in bb]

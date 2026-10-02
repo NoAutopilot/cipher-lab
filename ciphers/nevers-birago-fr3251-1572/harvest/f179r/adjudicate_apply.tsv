@@ -1,0 +1,11 @@
+passage	pos	sign_id	conf	note
+L01	13	T24	M	clean reversed-3 with two rounded bowls, single small sign (no left loop/cross lobe so not T83); sheet T24 has a heavier swash tail, X_NEW alt
+L01	15	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L01	17	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L01	20	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24; dot lower left is ink, not a cell feature
+L02	4	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L02	8	T24	M	clean reversed 3, single small sign; same shape as L01 pos 13; X_NEW alt
+L02	22	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24; dot lower left
+L03	4	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L03	8	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L03	17	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24

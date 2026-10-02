@@ -22,6 +22,52 @@
     "L"
    ],
    "exceptions": "harvest/exceptions_f178v.tsv"
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f178r.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f178r.txt",
+   "tokens": "harvest/reading_f178r_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exceptions": "harvest/exceptions_f178r.tsv"
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f179r.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f179r.txt",
+   "tokens": "harvest/reading_f179r_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exceptions": "harvest/exceptions_f179r.tsv"
   }
  ]
 }

@@ -1,0 +1,247 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f178r_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    4700,
+    3750,
+    5950,
+    3875
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    5600,
+    3750,
+    6850,
+    3875
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L01_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    6500,
+    3750,
+    7750,
+    3875
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    4700,
+    3875,
+    5950,
+    4005
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    5600,
+    3875,
+    6850,
+    4005
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L02_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    6500,
+    3875,
+    7750,
+    4005
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L03_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    4700,
+    4005,
+    5950,
+    4140
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L03_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    5600,
+    4005,
+    6850,
+    4140
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L03_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    6500,
+    4005,
+    7750,
+    4140
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "centres 95,215,355 given by eye (--centres) after the autocorrelation read the 3 tall cipher lines under a prose tail as 5 lines at pitch 100 (GAPS4, 2 Oct 2026); box in canvas-181 native coordinates"
+  }
+ ]
+}

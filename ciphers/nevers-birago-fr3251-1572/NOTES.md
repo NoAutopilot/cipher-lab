@@ -483,19 +483,131 @@ context read, not a re-fit.
 
 Vision calls 0. Requests: none to any host. No credentials. Box 05:18-05:3x UTC of 45 minutes.
 
-## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC, 2 Oct 2026)
-Read so far: 667 of roughly 800 signs of no.87 f.178 (all 23 lines of f.178v: L01-L10 LIKELY-3, L11-L23 GAPS-nevers-birago 04:3x UTC; the joined leaf under the fitted key (GAPS3, 05:3x UTC, section above) rank 1/201 z 4.84, judge FAIL -1.032 vs real_p05 -0.905; f.178r's 2 and f.179r's 3 cipher lines not cut), control-backed; 0 of the 7 target letters ff.138-184
-- f.178r foot (2 cipher lines) and f.179r head (3 lines) - blocker: not-attempted; canvases 181 and 182 right page need a native region each (2 gallica requests); next: iiif_lines regions + the same pipeline, ~$3
+## GAPS4-nevers-birago-fr3251-1572 (2 Oct 2026, account-4): f.178r foot + f.179r head read; the clerk's clear decipherment found legible on canvas 182
+
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the Verdict step of the gaps section below as GAPS3 wrote it at
+05:3x UTC: "f.178r foot + f.179r head (2 gallica requests, same pipeline under the fitted key, ~$3)". `tools/intake_gate_check.py`
+exit 0 at 06:07 UTC before the step. No class, no novelty wording (rule 10). Status stays `partial`. Box 06:07-06:3x UTC.
+
+**What the images show (corrects NEV-C1 and the gap list).** Three facts the 1000 px overviews settle at a glance once
+the right crops are made (own looks on `images/f178r_verso177_canvas181.jpg`, `f178v_179r_canvas182.jpg`,
+`f179v_insert_canvas183.jpg`; corrections written into `images/manifest.json`):
+1. f.178r's foot carries **3** cipher lines, not 2.
+2. The right page of canvas 182 is not f.179r's prose: it is **the laid-in sheet with the clerk's clear decipherment of the
+   whole no.87 cipher passage** (19 lines, "che in di bellaguarda ... che altrimente", BnF stamp at its foot), lying over the
+   head of f.179r; Birago's hand shows beneath it only from "...comandando alli sindici" down. NEV-C1 read it as "plaintext
+   resumes, mentions Bellagarda, a direct continuation" -- it is the decipherment, legible at native resolution.
+3. Canvas 183 is the same opening with that sheet flipped over onto f.178v (its blank back = the "bleed-through" NEV-C1 found
+   illegible), so its right page is **f.179r uncovered: 3 cipher lines at the head**, then prose. The gap list's "tipped-in
+   decipherment, needs-physical-access" blocker is lifted: the written face is photographed on canvas 182.
+
+**Material.** Gallica native regions, `tools/iiif_lines.py` (browser UA, >= 1.5 s apart): canvas 181 `4700,3720,3050,620`
+-> `harvest/f178r/` (3 lines; the autocorrelation read the tall signs under a prose tail as 5 lines at pitch 100, so the
+centres were given by eye with the new `--centres` option, offline test added to `tools/tests/test_iiif_lines.py`; both
+blind readers then found the lines fall 156-196 px across the region and the fixed bands clipped the tails, so
+`harvest/f178r/slope/` is the `--follow-slope 300 --slope-margin 40` re-cut used for the adjudication); canvas 183
+`4800,1000,3000,620` -> `harvest/f179r/` (3 lines; re-fetched once 150 px wider after the first region clipped the first
+sign of each line); canvas 182 `4700,680,3150,3250` -> `harvest/f179r_sheet/` (the clear sheet, 19 lines + the prose
+beneath). 2x reader crops by `harvest/make_2x.py --folio`. **Gallica requests 7** (2 HTTP 500 / reset on this worker's own
+malformed doubled-ark URLs -- `--ark` takes the bare id, the same slip LIKELY-3 logged; 1 reset on canvas 183 retried once
+after a pause; 3 regions fetched; 1 re-fetch), against the brief's 3: over by the two malformed calls and the re-fetch.
+
+**Clear sheet** read by this worker by eye on three 0.62-scale strips (`harvest/f179r_sheet/decipherment_sheet.tsv`, 19 lines,
+H 15 / M 4 lines; the clerk's dots and abbreviations kept: `car.la` = carmagnola, `ma.ta` = maesta). Its span: L01-L03a
+("che in di bellaguarda ... et tolto licencia") = f.178r foot; L03b ("da loro altezze") to L17a ("intendo di maniera") =
+f.178v L01-L23; L17b-L19 ("se'l se hauesse a fare retrenchiamento sopra questa gente laudarei piu tosto brigarsene che
+altrimente") = f.179r head. The attribution rests on the match with the f.178v decode already on file (next paragraph), not
+on the sheet's position alone.
+
+**Blind passes** (same brief and 51-cell sheet, 18 crops per reader, one Sonnet call each): f.178r `passA` 88 / `passB` 90
+signs, reconciled 79 of 90 aligned agreed (**0.88**), 11 unsettled; f.179r `passA` 89 / `passB` 89, **79 of 89 (0.89)**,
+10 unsettled. Nineteen of the 21 splits were one systematic pair -- reader A T83 where reader B read T24 -- settled by the
+third value-blind reader (one call, both folios' `adjudicate_in.tsv`, the sloped f.178r crops): all 19 to T83 ("wide two-part
+sign, closed left loop plus crossed right lobe; T24 is a single small epsilon with a swash tail"), T95 at f.178r L01/6, the
+two "reversed 3" signs to T24 at M, one gap row NONE, and the f.178r L03 tail (cut off in both fixed-band passes) read from
+the sloped crop: 9 more signs, pos 27-35, one reader only, graded M where it said M. Final `f178r/passC.tsv` **97 signs, 0 '?',
+7 off-sheet** (X_NEW 6, X_S 1); `f179r/passC.tsv` **89 signs, 0 '?', 5 off-sheet** (X_NEW 5, three of them struck through at the
+line end). Joined passage `harvest/passC_no87.tsv` (`join_no87.py`: R01-R03 + L01-L23 + V01-V03) = **853 signs**.
+
+**Control (rule 3)**, `decode_control.py --map sign_id_map_1572_fit.json --err 0.12` (200 value-shuffled keys, power control
+20 it16dip windows at 12% injected error, the measured disagreement being 11-12% on these short runs):
+
+| sequence | signs / letters | real key | shuffles mean / max | z | rank of 201 | power control, err 0.12 |
+|---|---|---|---|---|---|---|
+| f.178r foot L01-L03 | 97 / 98 | -1.088 | -1.622 / -1.235 | 2.90 | 1 | 16/20, z median 3.51 min -0.23 |
+| f.179r head L01-L03 | 89 / 86 | -1.062 | -1.620 / -1.221 | 2.89 | 1 | 11/20, z median 2.80 min 1.40 |
+| **no.87 joined, 853** | 853 / 922 | **-1.019** | -1.614 / -1.319 | **4.60** | **1** | **20/20, z median 4.57 min 3.48** |
+| (GAPS3, f.178v alone, for comparison) | 667 / 738 | -1.005 | -1.615 / -1.320 | 4.84 | 1 | 20/20, z median 4.25 |
+
+At ~90 signs the n-gram shuffle test has little power (the control's own real key ranks first in only 11-16 of 20 windows), so
+the two short runs' rank-1 results are weakly backed on their own; the joined 853-sign passage carries the control.
+
+**Known-answer check against the clerk's sheet (new instrument, `harvest/align_sheet.py`):** decode each sequence with a map,
+fold decode and sheet span to a-z (word codes expanded, u/v i/j merged), share of decoded letters inside difflib matching
+blocks of >= 3, against 200 value-shuffled keys (the decode_control shuffle):
+
+| sequence | sheet span | fitted key (T42 = m) | printed key | shuffles mean / max | rank | z |
+|---|---|---|---|---|---|---|
+| f.178r foot | L01-L03a | 0.816 | 0.816 | 0.099 / 0.210 | 1 | 19.6 |
+| f.178v L01-L23 (GAPS3's decode) | L03b-L17a | **0.829** | 0.802 | 0.066 / 0.106 | 1 | 55.1 |
+| f.179r head | L17b-L19 | 0.930 | 0.930 | 0.038 / 0.104 | 1 | 50.3 |
+| **no.87 joined, 853 signs** | L01-L19 | **0.837** | 0.816 | 0.069 / 0.114 | 1 | 53.2 |
+
+So the key reads the whole passage at 0.84 of the clerk's own letters, and GAPS3's one-sign fit (T42 g -> m) is confirmed by the
+period witness: it scores higher than the printed key on the clerk's text (0.837 vs 0.816; 0.829 vs 0.802 on f.178v). Where the
+decode and the sheet part: the first ~8 signs of f.178r L01 ("che in di bellaguarda" reads `eueros··`), the c/s pair ("aserde"
+for "a carde", "guec-"/"ques-" again), and the off-sheet signs -- of which **the t-shaped X_NEW reads m four times against the
+sheet** (de·olti = de molti, ·asoto = ma solo, retrenchia·ento, altri·enti): entered as `exceptions_f178r.tsv` /
+`exceptions_f179r.tsv`, value m, **grade C** (known plaintext). That t-shape is in all likelihood the printed table's second m
+(T17, which never occurred on f.178v): the sheet cut draws it differently, so readers put it off-sheet; the f.178v X_NEW "lone 8"
+is a different shape (it sits where the sheet reads carmagnola once, L03/4 -- one occurrence, not applied).
+
+**Reading** (`tools/decode_key.py ciphers/nevers-birago-fr3251-1572`, three jobs now; `--check` exit 0, "reading up to date").
+Grades (rule 4): f.178r **97: C 2, S 73, M 17, U 5**; f.179r **89: C 2, S 76, M 8, U 3**; f.178v unchanged 667: S 532 M 121
+I 1 U 13; whole passage **853: H 0, C 4, S 681, M 146, I 1, U 21** -- a cryptanalytic result with four C tokens.
+
+    f178r L01 eueros··[qual]demoltigiornieraaserde | sheet: che in di bellaguarda qual de molti giorni era a carde
+    f178r L02 nesipretendeachauegepiuaritorna      | sheet: ne si pretendea ch'auesse piu a ritornare
+    f178r L03 rea··masotoandarsenea[turino]ptoltisiienp· | sheet: a car.la ma solo andarsene a turino et tolto licencia
+    f179r L01 selsehaueseafareretrenchiamento      | sheet: se'l se hauesse a fare retrenchiamento
+    f179r L02 sopragufstagentelaudareipiutost      | sheet: sopra questa gente laudarei piu tosto
+    f179r L03 osbrigarsene[che]altrimenti···m      | sheet: brigarsene che altrimente (then three struck signs)
+
+**Judge** (`tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/reading_no87_letters.txt`, the whole
+passage f.178r + f.178v + f.179r, letters via `letters_from_reading.py`):
+
+    FAIL language: score=-1.046, null_p99=-1.781, real_p05=-0.902, real_median=-0.832, mode=both, N=926
+    FAIL - nevers-birago-fr3251-1572 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Before the four C exceptions: -1.055 (N 922). f.178r alone -1.131 vs real_p05 -0.944 (N 98); f.179r alone -1.096 vs -0.952
+(N 86): the two short runs score worse than the leaf (-1.032), as their misread line starts predict. Shuffled-target control
+(`harvest/shuffled_judge.py`, fitted map, 20 seeds, 853 signs): **0 of 20 PASS**, mean -1.699, min -1.747, max -1.654
+(null_p99 -1.78). The judge discriminates and the FAIL is a near-miss of the familiar size; no "reading ready" line, no
+verifier hand-off, no print_check. The sheet now says what the judge could not: the decode is ~84% the clerk's text and the
+residual is reader error on specific sign pairs, not the key.
+
+**What this settles.** The Verdict step is done and the gap it named is closed: the whole no.87 passage (853 signs) is
+transcribed and reads under the fitted key at rank 1 with a passing power control. The step also found the thing the folder
+had filed as needing physical access: the period decipherment, legible, on canvas 182. With it, the next step is no longer a
+transcription re-pass by eye but a sign-by-sign alignment of the sheet to the 853 signs (`tools/interlinear_align.py`, the
+named tool for a clear text beside the cipher, disk only), which yields a C-grade key for every sign the clerk read, the
+T17/t-shape and carmagnola/"8" questions, and a per-sign error map of the two readers -- the crib for the look-alike pass and
+the gate for the seven target letters.
+
+Vision calls 3 of 3 (two blind passes, one adjudication) plus this worker's own looks (overview crops, two debug overlays, a
+ruler image per region, three sheet strips). Requests: gallica.bnf.fr 7 (above), no other host. No credentials.
+
+## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
+Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
 - ff.138, 144, 152, 160, 168, 174, 184 (nos. 71-93) - blocker: not-attempted; HARVEST-D2's recipe (1200 px per canvas until the cipher is found, 2-4 requests a letter, offset drifts +1 to +3) then the same pipeline per leaf; next: locate and read f.144 (the fullest page of signs per the row), ~$8 a letter
-- the q homophone, T88 and the 13 off-sheet signs - blocker: open-codes; the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: a transcription pass on the logged look-alike pairs (T50/T92 c/s, T42/T17, T18/T98, T51/T95) with the fitted key's reading as the crib, 1 vision call per half-leaf, ~$3
-- the tipped-in decipherment (canvas 183) - blocker: needs-physical-access; written face not photographed (NEV-C1, LANE NEV follow-up); REQUEST.md / ASKS row 78 BnF reproduction batch covers it
+- the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
 
 ## Escalation (2 Oct 2026)
 - [x] siblings: no.87 is itself the key's own witness leaf and was read first; the six other 1572 letters are the next units
-- [n/a] clear-pages: f.178v is cipher throughout; the prose of f.178r and f.179r frames the passage and was used only to confirm content
+- [x] clear-pages: the clerk's clear decipherment of the whole passage is the laid-in sheet on canvas 182, read by eye (GAPS4, 2 Oct 2026); f.178r and f.179r prose frames the passage
 - [x] known-keys: the printed 1572 key applied, rank 1 of 201 shuffled keys, power 20/20
-- [ ] print: print_check.py on 2-4 decoded phrases runs once the judge gate is met (the g-sign fit lifted the leaf from -1.074 to -1.032 against -0.905; the look-alike transcription pass or more text is the next lift)
+- [ ] print: print_check.py on 2-4 decoded phrases runs once the judge gate is met (whole passage -1.046 against -0.902 after GAPS4; the clerk sheet shows the residual is reader error on named sign pairs, so the sheet alignment then the look-alike pass is the next lift)
 - [x] key-rebuild: one-sign value fits, not a rebuild -- run (GAPS3, 2 Oct 2026): T42 g -> m, T70 g, T88 and the off-sheet signs undecided at their counts; the key reads the leaf at rank 1/201 before and after
-- [x] image-check: native region, debug overlay checked by eye, right edge re-fetched once when L07-L10 were clipped
-- [n/a] retry: no reset, challenge or failed fetch to retry (the one 500 was this worker's malformed URL)
-Verdict: keep going: 3 internal gaps; cheapest next: f.178r foot + f.179r head (2 gallica requests, same pipeline under the fitted key, ~$3), then the look-alike transcription pass on f.178v with the reading as crib (~$3), then f.144
+- [x] image-check: native regions, debug overlays checked by eye (f.178v right edge re-fetched once; f.179r left edge re-fetched once; f.178r re-cut on the slope after both readers reported clipped tails); the canvas 182/183 overviews re-read by eye, which found the decipherment sheet (GAPS4)
+- [x] retry: one connection reset on the canvas-183 fetch retried once after a pause (GAPS4); the HTTP 500s were this worker's malformed URLs, not retried
+Verdict: keep going: 2 internal gaps; cheapest next: align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144

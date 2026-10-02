@@ -1,0 +1,319 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f178r_L01_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    4700,
+    3683,
+    5950,
+    3950
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 64.95,
+    "b": 0.05117,
+    "peaks_kept": 9,
+    "half_height": 102,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L01_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    5600,
+    3729,
+    6850,
+    3996
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 64.95,
+    "b": 0.05117,
+    "peaks_kept": 9,
+    "half_height": 102,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L01_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    6500,
+    3775,
+    7750,
+    4043
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 64.95,
+    "b": 0.05117,
+    "peaks_kept": 9,
+    "half_height": 102,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L02_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    4700,
+    3777,
+    5950,
+    4067
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 162.35,
+    "b": 0.0641,
+    "peaks_kept": 10,
+    "half_height": 105,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L02_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    5600,
+    3835,
+    6850,
+    4125
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 162.35,
+    "b": 0.0641,
+    "peaks_kept": 10,
+    "half_height": 105,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L02_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    6500,
+    3892,
+    7750,
+    4182
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 162.35,
+    "b": 0.0641,
+    "peaks_kept": 10,
+    "half_height": 105,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L03_s1.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    4700,
+    3919,
+    5950,
+    4200
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 306.59,
+    "b": 0.05374,
+    "peaks_kept": 10,
+    "half_height": 107,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L03_s2.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    5600,
+    3967,
+    6850,
+    4249
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 306.59,
+    "b": 0.05374,
+    "peaks_kept": 10,
+    "half_height": 107,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  },
+  {
+   "crop": "f178r_L03_s3.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f181/4700,3720,3050,620/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b9060248g_f181_4700_3720_3050_620.jpg",
+   "box": [
+    6500,
+    4016,
+    7750,
+    4297
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile, --follow-slope 300 (sheared strip)",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     95,
+     215,
+     355
+    ]
+   },
+   "date": "02 Oct 2026",
+   "slope_fit": {
+    "a": 306.59,
+    "b": 0.05374,
+    "peaks_kept": 10,
+    "half_height": 107,
+    "win": 300,
+    "local": false
+   },
+   "note": "sloped re-cut (--follow-slope 300 --slope-margin 40, centres 95,215,355 by eye) after both blind readers found the fixed-y bands clipped the line tails (the lines fall 156-196 px across the 3050 px region); used for the adjudication pass; box in canvas-181 native coordinates"
+  }
+ ]
+}

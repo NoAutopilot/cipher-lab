@@ -1,0 +1,20 @@
+passage	pos	sign_id	conf	note
+L01	4	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L01	6	T95	M	curl tick top-left, bowl top-right on one long stem; no mid lozenge so not T98
+L01	20	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L01	24	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L01	27a	NONE	M	hook-stroke is the tall tail of the omega before it, joined at its right foot; omega+hook as one sign looks like T50 (context cell T92 may be T50); no separate sign
+L01	29	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24; small ink dot lower left, not a cell feature
+L02	25	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L02	29	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L03	1	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24; line start
+L03	16	T83	H	wide two-part sign, closed left loop plus right crossed lobe; not the single small epsilon of T24
+L03	27	T65	H	round loop on stem with cross-bar through lower stem; follows B (T58); tail run of 9 signs 27-35
+L03	28	T52	H	n-like hooked sign with tail
+L03	29	T95	M	bowl on stem with thin bar and wide base bar; nearest T95 but extra bars
+L03	30	T25	H	lambda
+L03	31	T96	H	loop top, long tail curling down
+L03	32	T66	H	hook-bowl top, stem, base bar
+L03	33	T60	M	hash, near-square; T86 alt
+L03	34	T90	M	stem crossed near top, bowl at foot
+L03	35	X_NEW	M	cursive t shape; line end after it (blank paper)
