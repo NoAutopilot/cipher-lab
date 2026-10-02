@@ -5319,3 +5319,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 04:10 | VERIFY-HESSEN-1824 (account-2, verifier) | claim: hessen-1824 found-solved check + N-class per brief 2026-10-02-acct3-verify-hessen1824.md; box 04:10-04:55 UTC, cap USD 4
 2026-10-02 04:10 | VERIFY-BOWES-584 (acct2 worker for orchestrator) | claim: bowes-walsingham-1583 re-audit after NEXT-BOW (AUDIT.md sec 10 supersede); cap USD 5, box ends 04:56 UTC 2 Oct 2026
 2026-10-02 04:10 | MERCY-SIB (account 2, session_013og9Zxm3iWnEqMFXjdtfGy) | claim: espagnol142-mercy-1648 siblings hunt per brief 2026-10-02-acct3-mercy-siblings.md (AGR SEE catalogue, Urkunden und Actenstuecke, AGS Estado cached sweep); search/catalogue only; box 04:11-05:11 UTC, cap USD 6
+2026-10-02 04:10 | DISPATCH-STANDBY (parent worker, acct ytbiz): dispatcher trigger | claim: append standby-check sentence to this account dispatcher routine prompt; box ends 04:31 UTC, cap 2 USD
