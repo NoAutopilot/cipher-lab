@@ -2929,6 +2929,78 @@
         "AUDIT.md VERIFY-CEPPO-D2-2 f.87"
       ],
       "reading_version": "HARVEST-D2 decode as re-checked by VERIFY-CEPPO-D2-1/2"
+    },
+    {
+      "date": "2 Oct 2026",
+      "kind": "key application",
+      "key": "published",
+      "novelty": "N4",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nevers-birago-fr3251-1572",
+      "fields_source": "nevers-birago-fr3251-1572/AUDIT.md, first-audit sections and \"Second audit (AUDIT2-NEVBIR)\"",
+      "document_id": "BnF fr.3251 f.139v (no.71), Birago to Nevers, 7 Feb 1572",
+      "title": "BnF fr.3251 f.139v, Lodovico Birago to the Duke of Nevers, Saluzzo, 7 February 1572: cipher lines read with Tomokiyo's published 1572 Nevers-Birago key",
+      "grade": "N4 after two audits (VERIFY-NEVBIR-139V, AUDIT2-NEVBIR), key published (Tomokiyo; T42=m fitted by us). 161 signs: S 116 M 24 U 21; key rank 1 of 201 (z 3.6), power 10/20; judge FAIL.",
+      "line": "Partial reading of the five cipher lines; no prior decipherment located (both vols of the 1665 Mémoires de Nevers searched, 2 Oct 2026).",
+      "completeness": "116/161 at S",
+      "unresolved_spans": "line ends lost in the gutter; 21 off-sheet signs",
+      "audit_refs": [
+        "AUDIT.md VERIFY-NEVBIR-139V",
+        "AUDIT.md AUDIT2-NEVBIR"
+      ],
+      "reading_version": "NEVBIR-138 as re-derived by VERIFY-NEVBIR-139V"
+    },
+    {
+      "date": "2 Oct 2026",
+      "kind": "key application",
+      "key": "published",
+      "novelty": "N4",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nevers-birago-fr3251-1572",
+      "fields_source": "nevers-birago-fr3251-1572/AUDIT.md, first-audit sections and \"Second audit (AUDIT2-NEVBIR)\"",
+      "document_id": "BnF fr.3251 ff.174r-175v (no.86), Birago to Nevers, 27 Aug 1572",
+      "title": "BnF fr.3251 no.86, Lodovico Birago to the Duke of Nevers, Saluzzo, 27 August 1572: the whole cipher read with Tomokiyo's published 1572 key",
+      "grade": "N4 after two audits (VERIFY-NEVBIR-86, AUDIT2-NEVBIR), key published (Tomokiyo). 759 signs: S 629 M 76 U 54; key rank 1 of 201 at five seeds (z 3.6-3.8); judge FAIL.",
+      "line": "Fragmentary reading of all the letter's cipher; no prior decipherment located (both vols of the 1665 Mémoires de Nevers searched, 2 Oct 2026).",
+      "completeness": "629/759 at S",
+      "unresolved_spans": "76 M, 54 U (off-sheet signs); one transcription fix pending (f.174r L04)",
+      "audit_refs": [
+        "AUDIT.md VERIFY-NEVBIR-86",
+        "AUDIT.md AUDIT2-NEVBIR"
+      ],
+      "reading_version": "NEVBIR-174V-A/B as re-derived by VERIFY-NEVBIR-86"
+    },
+    {
+      "date": "2 Oct 2026",
+      "kind": "key application",
+      "key": "published",
+      "novelty": "N4",
+      "claim_scope": "recovered-passages",
+      "plaintext_novelty": "N4",
+      "mapping_novelty": "N4",
+      "audit_status": "two audits",
+      "superseded_by": "",
+      "link": "https://github.com/NoAutopilot/cipher-lab/tree/main/ciphers/nevers-birago-fr3251-1572",
+      "fields_source": "nevers-birago-fr3251-1572/AUDIT.md, first-audit sections and \"Second audit (AUDIT2-NEVBIR)\"",
+      "document_id": "BnF fr.3251 ff.184r-185r (no.90), Birago to Nevers, 2 Oct 1572",
+      "title": "BnF fr.3251 no.90, Lodovico Birago to the Duke of Nevers, Saluzzo, 2 October 1572: cipher of ff.184r-185r read with Tomokiyo's published 1572 key",
+      "grade": "N4 for f.184r (two audits: VERIFY-NEVBIR-184, AUDIT2-NEVBIR) and f.184v-f.185r L01-08 (one audit, AUDIT2-NEVBIR), key published (Tomokiyo). 554 signs audited: S 455; key rank 1 of 201 (z 4.2). Rest of the letter (412 signs, NEVBIR-185B) awaits VERIFY-NEVBIR-90REST; whole letter 966 signs S 731, z 4.5; judge FAIL.",
+      "line": "Fragmentary reading; names Captain Scipione Carego and the Huguenots (Ugonotti, a code word); no prior decipherment located (2 Oct 2026).",
+      "completeness": "455/554 at S (audited part); 731/966 whole letter",
+      "unresolved_spans": "412 signs of f.185r-v unaudited; 111 U off-sheet signs in the whole letter",
+      "audit_refs": [
+        "AUDIT.md VERIFY-NEVBIR-184",
+        "AUDIT.md AUDIT2-NEVBIR"
+      ],
+      "reading_version": "NEVBIR-184 + NEVBIR-185"
     }
   ],
   "lanes": [
