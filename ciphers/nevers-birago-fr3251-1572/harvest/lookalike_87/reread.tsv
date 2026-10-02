@@ -1,0 +1,17 @@
+# BIRAGO-SMALL shape re-read, 2 Oct 2026 (Opus, this worker). NOT value-blind: the clerk-sheet value of each tile was known (the error
+# map is the crib by brief). Evidence is the shape alone, read from lookalike_87/*_windows.jpg against sign_sheet_blind_1572.png.
+# label = proposed label; conf H/M; nothing here is applied to the committed ciphertext_*.tsv (verifier first).
+line	pos	passC	sheet	label	conf	basis
+f178v_L01	23	T50	s	X_CE	H	curled "Ce" (omega with a c-hook lead), no tall S-tail; not T50's cell
+f178v_L03	4	T50	s	X_CE	H	same Ce shape
+f178v_L04	4	T50	s	X_CE	H	same Ce shape
+f178v_L05	25	T50	s	X_CE	H	same Ce shape
+f178v_L07	29	T50	s	X_CE	M	same Ce shape at the gutter edge
+f178v_L08	10	T50	s	X_CE	H	same Ce shape (twice in the window, #-Ce-D)
+f178v_L10	5	T50	s	X_CE	H	same Ce shape
+f178v_L20	7	T50	c	T50	H	omega with the tall S-tail, exactly the T50 cell: the only true T50 on no.87
+f178v_L19	22	T46	re	X_8	M	a single 8, not the printed "86"
+f178v_L15	24	T46	c	X_8	M	"88": two 8s, not "86"
+f178v_L15	25	T46	atholici	X_8	M	second 8 of the "88"
+f178r_L03	22	T46	turino	T46	H	"86" as printed
+f178v_L13	27	T52	i	?	M	"m" with a following rho-like tail, not the T52 eta shape; unsettled

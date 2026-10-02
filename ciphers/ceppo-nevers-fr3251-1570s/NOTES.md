@@ -989,12 +989,49 @@ fr.3252 witness has glossed instances of S24 (o), S31 (m) and S80 (a). A per-pai
 the next step. The f.21v S65/S80 pair (20 splits, the largest on f.21v by the confusion table) is outside this brief
 and is named below.
 
+## BIRAGO-SMALL: f.21v L11.17 dotted slash settled by the same shape rule (2 Oct 2026, account 2 for the account-3 orchestrator)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-birago-small.md`, item 1. Clock 22:27 UTC at start. Disk only: 0 requests, 0 subagents.
+No class, no novelty wording.
+
+**Tile.** `harvest/f21v/lookalike/verify/f21v_L11_17_dottedslash.jpg` (VERIFY-CEPPO-SPLITS section 4): a diagonal slash with one dot
+above-left and one below-right, no crossbar. Compared by eye with `witness_crops/f36r_L4_curledlambda_a_dottedslash_n.jpg`, the
+glossed fr.3252 form (n, 5 glossed instances, CEPPO-SPLITS), and with the four f.21v tiles CEPPO-SPLITS settled
+(`crops/f21v_L03_band_pos1-18.jpg`). It is the same form. Both raw passes read S73 (A: alt S49, conf L; B: alt S30, conf M), so
+this is a both-agree tile that the 2-of-3 rule could not touch (the LESSONS.md "Look-alike pass" shape: half the wrong signs had
+two readers agreeing). Relabelled S73 -> **S49 (n), H**, basis written to `harvest/f21v/lookalike/reread_L07-11.tsv`; passD.tsv and
+`passD_L07-11.tsv` carry it; `ciphertext_f21v.tsv` rebuilt (`build_decode_inputs.py f21v --seq f21v/passD.tsv`).
+
+**Second check, not done.** VERIFY-CEPPO-SPLITS asked also for an *unglossed* diagonal dotted slash in the fr.3252 witness, which would
+show Birago also writes the null S73 in this form. One look at four regenerated 2x lines of f.36v top (`witness_f36/cut_lines.py`)
+did not settle it: the band centres sit between lines on those crops, so the glosses above each slash cannot be paired by eye at
+that cut. The rule therefore rests, as for the nine CEPPO-SPLITS tiles, on glossed instances only. That check is still open.
+
+**Decode** (`tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s`, then `--check`: "reading up to date"). f.21v tokens 267:
+S 188 -> **189**, M 67 -> **66**, I 7, U 5. L11 reads `t·mfatto[et]l·eramenfadificulta` (was `...l·eramefadificulta`). One letter is
+added before the endorsed "fa dificu[l]ta", and that passage is unchanged. No new word is claimed: "eramen" is not read as a word
+here. `reading_f21v_letters.txt` regenerated from reading_f21v.txt.
+
+**Control (rule 3; the label changed, so the control can now differ)**, `decode_control.py f21v/passD.tsv --shuffles 200 --windows
+20 --err 0.15 --extra X_THETA2=r`: real key -1.1096 (was -1.111). Seed 1: z 6.43, rank 1/201, power 20/20 (z median 8.34).
+Seed 2: z 6.95, rank 1/201, 20/20 (z median 7.98). The key score moves by +0.0014. That is too small to tell null from n by
+score: the decision rests on the shape.
+
+**Judge**, pasted:
+```
+FAIL language: score=-1.135, null_p99=-1.721, real_p05=-0.93, real_median=-0.829, mode=both, N=262
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+
+**Endorsed count: pending a verifier.** Solver rule 188 -> 189. The verifier rule (AUDIT.md VERIFY-CEPPO-SPLITS, 155) is the
+verifier's to move, not this worker's: L11.17 is one more tile that, if endorsed, would make it 156.
+
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
 
-Read so far: 410 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 188/267 after CEPPO-SPLITS, f.35 35/76, f.87 134/204, the
+Read so far: 411 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 189/267 after CEPPO-SPLITS and BIRAGO-SMALL, f.35 35/76, f.87 134/204, the
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
-- f.21v, 67 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
+- f.21v, 66 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above; L11.17 by BIRAGO-SMALL, verifier endorsement pending), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
 - f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; the four look-alike pairs (S54/S74/S77/S37, S80/S65, S24/S88, S31/S32/S76) recur on every line and the merge scored below its inputs (HARVEST-D2 f.87 section); next: per-sign crops for the four pairs plus a witness check of S24/S88 and S80/S65 against the fr.3252 f.36 glosses (`harvest/f3252_f36/`), ~$5.
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; no period gloss on the sign yet (AUDIT.md "Named next step"); next: look for the pound sign on ff.27, 39, 82 (period decipherments, images on disk under `harvest/`) and read its interlinear value, ~$3.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
@@ -1007,5 +1044,5 @@ on every folio.
 - [x] print: `tools/print_check.py` on the f.21v phrases (HARVEST-D2, `print-check.tsv`), no hit; two novelty audits per letter (AUDIT.md), N3.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
-- [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
+- [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026; the both-agree tile L11.17 by the same rule, BIRAGO-SMALL); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
 Verdict: keep going: 3 internal gaps; cheapest next: look for the pound sign on ff.27, 39, 82 and read its interlinear value, ~$3
