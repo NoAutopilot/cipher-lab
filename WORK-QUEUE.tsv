@@ -89,3 +89,6 @@ DISPATCH-STANDBY	other	.claude/briefs/runs/2026-10-02-acct3-dispatcher-standby.m
 MERCY-SIB	other	.claude/briefs/runs/2026-10-02-acct3-mercy-siblings.md	Fable	6	60	claimed session_013og9Zxm3iWnEqMFXjdtfGy 2026-10-02 04:10	2026-10-02 02:10	espagnol142-mercy-1648: hunt for other cipher pieces of the 1648 mission (AGR, Urkunden und Actenstücke, AGS)
 VERIFY-BOWES-584	other	.claude/briefs/runs/2026-10-02-acct3-verify-bowes.md	Fable	5	45	claimed session_01EtfdvqmmTMpDCtNyP9FSxD 2026-10-02 04:10	2026-10-02 02:10	bowes-walsingham-1583: verify NEXT-BOW's asterisk placements, update AUDIT.md (rule 10 propagation)
 NEXT2-PAG	other	.claude/briefs/runs/2026-10-02-acct3-next2-paget.md	Fable	4	45	claimed session_01CQvsNJyVmdztxTf96v4BGg 2026-10-02 06:10	2026-10-02 06:08	clairambault1225-paget-1714: web/blog intake check, decode.json, regenerate the reading
+VERIFY-NEVBIR-1572	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-1572.md	Fable	5	50	queued	2026-10-02 07:36	verifier: nevers-birago-fr3251-1572
+VERIFY-ROYALIST-1646	other	.claude/briefs/runs/2026-10-02-acct3-verify-royalist-1646.md	Fable	5	50	queued	2026-10-02 07:36	verifier: intercepted-royalist-1646
+VERIFY-CLINTON-2894	other	.claude/briefs/runs/2026-10-02-acct3-verify-clinton-2894.md	Fable	5	50	queued	2026-10-02 07:36	verifier: pro3055-clinton-1779
