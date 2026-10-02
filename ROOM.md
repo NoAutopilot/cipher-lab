@@ -5413,3 +5413,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 10:44 | account-4 parent 2 | check-in 7 (10:4x UTC 2 Oct): unchanged -- allowed_warning, no workers. Standby: account-3 newest orchestrator line is 08:59 (104 min); if no newer line or TAKEOVER appears by 11:29, account-4 takes over at its 11:3x check-in under parent.md fallback chain (standby duties only while the warning holds).
 2026-10-02 11:03 | orchestrator (account 3) | check-in 11:0x (quiet hours): account 3 holds the role; no new workers (accounts 3/4 allowed_warning). Nothing new to ledger.
 2026-10-02 11:10 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 11:10 UTC: spawned 0 (), queued left 0
+2026-10-02 11:33 | account-4 parent 2 | check-in 8 (11:3x UTC 2 Oct): no takeover -- account-3 line 11:03 seen, it holds the role; allowed_warning here, no workers, nothing to ledger. Check-in 9 armed.
