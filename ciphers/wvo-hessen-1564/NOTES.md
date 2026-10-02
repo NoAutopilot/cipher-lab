@@ -288,3 +288,45 @@ build_and_test.py, make_ciphertext.py), `ciphertext.tsv`, `key.tsv`, `decode.jso
 `reading_tokens.tsv`, `../../specs/wvo-hessen-1564.json` (new), this NOTES.md section, ROOM.md. No network
 this pass (all images already on disk from NX-WVO1109). 6 Sonnet subagents (2 passes x 3 line-batches, at
 most 2 concurrent per CLAUDE.md Usage rule 6).
+
+## Web and blog check (GF-A2-3, account 2, 2 Oct 2026)
+
+Queries run (plain web search), hit lists read, plausible hits opened or tried:
+1. `Wilhelm von Oranien Landgraf Wilhelm Hessen 18 September 1564 Brief Chiffre` (sender + recipient + date) -- WVO
+   edition PDFs (MKE 11370, 01331, 01416, 01349: other letters, 1550s Katzenelnbogen matters), Deutsche Biographie,
+   ADB on Wikisource, Groen tome II (1566) on DBNL; none is 1109 or names its cipher.
+2. `Willem van Oranje Willem van Hessen 1564 brief cijfer geheimschrift` (Dutch, folder's own title) -- DBNL articles,
+   WVO KBA/BAI edition PDFs of other letters, biographies; nothing on this enclosure.
+3. `Staatsarchiv Marburg Wilhelm von Oranien 1564 chiffrierte Beilage Landgraf Wilhelm IV entziffert` (holding archive +
+   cipher keyword) -- an Archivportal-D record of Hessian cipher keys (Chiffernschlüssel, Landgraf Philipp's
+   correspondence; `www-p2.archivportal-d.de/item/VZWJ3DD7OSRFJKBNMDGLI2EJB7QQQE7F`): plausible as a recipient-side
+   key source, tried once, HTTP 503, not retried -- **unreached**; Uni Kassel's Landgraf Moritz project page; BMGN
+   articles. None names 1109.
+4. `William of Orange cipher letter Landgrave Hesse 1564 deciphered solved` (English, model-solve family) -- Groen
+   tome IX/II/V on DBNL, HistoCrypt paper 152 (a different item), Huygens' WVO project page, Herle letters
+   (livesandletters), TNA catalogue rows; nothing on 1109.
+Blog site searches: `site:scienceblogs.de klausis-krypto-kolumne Oranien OR Hessen verschlüsselter Brief 16.
+Jahrhundert` (only Cipherbrain archive/category listing pages returned, no post on this letter);
+`site:cryptiana.blogspot.com Orange OR Hesse OR Nassau` (no Cryptiana blog page returned; `sources/cryptiana/web/
+dutch.htm` was grepped by the check-solved sweep above with zero hits); `site:ciphermysteries.com "William of Orange"
+OR Hesse cipher` (one Cipher Mysteries page, tag tony-gaffney -- alchemical manuscripts, unrelated). No comment thread
+found discussing briefnr 1109 or its enclosure.
+
+## Premise check (GF-A2-3, account 2, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **not found.** The folder records no gloss, marginal reading or key
+on the enclosure (f.23, all five 1109 pages and four 1107 pages viewed by eye, section "Images opened this pass").
+The one key the folder mentions (willem-van-hessen-1567's 174 nomenclator) was already run on this text by
+NX-WVO174 (26 Sept 2026) and does not read it.
+(b) Other solvers' working files -- **not found.** dbourdeau/cyphersolver (fresh clone, head 2341682) and
+aaymeloglu/unsolved-ciphers (head d2800bb): the check-solved sweep's grep ("1109", "1107", "hessen", "kassel") found
+only coincidental hits; this worker re-grepped the newer heads for "wvo 1109"/"briefnr 1109", Landgraf/Landgrave
+near Oranien and "willem van hessen": no hit in either repository.
+(c) Physical neighbours -- **not found.** The whole HSAM unit as served by WVO (f.22r, f.22v/p1, f.24, the enclosure
+f.23, the address leaf) was viewed; no clear copy or decipherment is bound with it. The leaves beyond this letter in
+the HSAM file (Bestand 4 f) were not available in WVO's PDF -- unreached.
+(d) Recipient's side -- **not found / partly unreached.** The recipient is Landgrave Wilhelm IV (Kassel): the
+Hessian archive's own cipher-key records (Archivportal-D, above) were unreachable this pass (503); no Hessian edition
+prints 1109 (WVO's Brongegevens lists none). Wilhelm's reply to 1109 (autumn 1564), which might paraphrase the
+enciphered news, was not looked for in WVO this pass; next: a WVO search for Hessen -> Oranje letters Oct-Dec 1564,
+~3 requests, ~$0.3.
