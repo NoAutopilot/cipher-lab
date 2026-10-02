@@ -39,6 +39,15 @@
    "control": "shuffle floor, pass C tags permuted within crop, 2000 draws: mean 44.4%, p95 53.6%, max 60.7%",
    "judge": "not run: gate (80%) not met, no f.198 pass",
    "verdict": "above floor, below gate, +1 sign; coverage knob retired (rule 3 third-attempt clause); next: widen the held-out to the rest of c.298 and re-run on uncut crops (~$7); premise check found f.198 recto (canvas 395) is the bulk of the cipher, undrafted. Files: ciphers/fr3986-nevers-revol-1593/atlas_heldout/score_C.txt, tools/keys/key60_atlas/atlas264ext.tsv"
+  },
+  "rerun2": {
+   "date": "2 Oct 2026",
+   "by": "GAPS-fr3986-nevers-revol-1593-2 (account-4, Opus 5.5)",
+   "test": "1 again, a different knob from the retired coverage knob: atlas unchanged (contact_sheet_264ext.png); held-out widened to every gloss-aligned sign on leaf 298's cipher lines 1-3 (65 signs, key sealed before the read) and re-cut as whole-line native crops (tools/iiif_lines.py, gloss trimmed off); one blind Sonnet pass",
+   "target": "65/65 = 100%, Wilson 95% CI 94.4-100%; LIKELY-6's 28 signs 28/28 in the new crops (20/28 in sub-span crops)",
+   "control": "shuffle floor, pass D tags permuted within line, 2000 draws: mean 49.8%, p95 55.4%, max 58.5%",
+   "judge": "not run: no f.198 reading exists yet; the gate cleared, so the f.198 passes are licensed",
+   "verdict": "gate (80%) cleared on the held-out leaf; the earlier misses were the sub-span crop design, not atlas coverage; does not predict the Revol copyist's rate on f.198. Status word held at blocked by the intake gate (no web and blog check logged). Next: web and blog check (~$1), then two blind passes on whole-line verso crops + adjudication + decode vs 20 shuffled keys + fr16 judge (~$8), recto fetch (~$2). Files: ciphers/fr3986-nevers-revol-1593/atlas_heldout/score_D.txt, heldout298_answers.tsv, heldout298_passD.tsv, crops298/"
   }
  }
 }

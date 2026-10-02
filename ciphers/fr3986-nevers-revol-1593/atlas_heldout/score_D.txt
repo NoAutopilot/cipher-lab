@@ -1,0 +1,15 @@
+# GAPS-fr3986-nevers-revol-1593-2 (account-4), 2 Oct 2026 20:4x UTC. Widened held-out: leaf 298 (fr.3986 f.152) cipher lines 1-3,
+# 65 gloss-aligned signs (28 = LIKELY-6's set, 37 new), heldout298_answers.tsv, committed (73b2902e) before the read. Crops: crops298/
+# ho298_L0n_s1/s2.jpg, cut by tools/iiif_lines.py --centres 347,451,564 --max-width 1900 (two native segments per whole line, 188 px
+# overlap), bands trimmed to mask the interlined gloss (manifest.json note). Atlas unchanged from GAPS (contact_sheet_264ext.png, no
+# leaf-298 material). Blind pass = one Sonnet subagent (heldout298_passD.tsv, 145 signs read: L01 46, L02 47, L03 52), given only the
+# sheet, atlas264.tsv, atlas264ext.tsv, tools/keys/key60.tsv and the six crops; its transcript shows no file read outside that folder.
+# Regenerate: python3 heldout_score.py --answers heldout298_answers.tsv --pass heldout298_passD.tsv --expect 65/65 (exit 0).
+held-out 65/65 = 100.0%; shuffle floor mean 49.8%
+Wilson 95% CI 94.4-100.0%; floor p95 55.4% max 58.5%; gate 80%
+old 28 (LIKELY-6 signs, now inside whole-line crops): 28/28; new: 37/37
+L01 25/25 answer: L40 E 8 c do = c r 8 c do to 20 del do c ls to g ls c c 20 8 E | pass: L40 E 8 c do = c r 8 ? c do y~ to 20 pl y~ del lxxix otto g 20 do c ls to ue 20 g+ 4 g ? ls c to T pi g 4 s c 20 8 E 18 L40
+L02 18/18 answer: 8 pi 20 // lam 6 L40 = pi to 8 g = to T to 8 ue | pass: 8 pi 20 // v ue lam 6 8 y c o- r pi g+ 20 pi inT L40 = pi to o- 8 u+ E 18 g do b w+ ai 2‡ c 20 do del com g = to ls c T to 8 ue
+L03 22/22 answer: n E r ue // 8 s' = do pi to // 8 n to T // pi ls c 8 to | pass: n g E r X+ ue // 8 s r pi inT s' = do pi to // 8 n T R to ls ue X+ c r to T // pi ls X+ c 8 to o- g+ ue r to o- g 20 4 pi g y~ to 8 r
+absent-from-264only tags hit: 33 of answer positions carry them
+scorer exit 0

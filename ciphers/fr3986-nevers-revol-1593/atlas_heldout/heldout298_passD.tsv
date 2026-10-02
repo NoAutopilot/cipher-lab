@@ -1,0 +1,146 @@
+line	pos	tag	confidence	note
+L01	1	L40	H	
+L01	2	E	H	
+L01	3	8	H	dot below ignored
+L01	4	c	H	
+L01	5	do	M	loop + right lobe like A23; could be del
+L01	6	=	H	
+L01	7	c	H	
+L01	8	r	M	R-shaped like A55
+L01	9	8	M	flat top bar, belly below
+L01	10	?	M	square with central dot; recurs at pos 32
+L01	11	c	H	
+L01	12	do	M	as pos 5
+L01	13	y~	M	y with bar across descender foot; not atlas plain y
+L01	14	to	H	
+L01	15	20	H	2 and 0 as two figures (A60)
+L01	16	pl	M	p with stroke through descender
+L01	17	y~	M	as pos 13
+L01	18	del	M	plain d-bowl, no right lobe; could be ꝺ
+L01	19	lxxix	M	roman numerals l x x i x; dot before l
+L01	20	otto	M	o + two crossed stems, no final o visible; could be oto
+L01	21	g	H	
+L01	22	20	M	2 at end of s1, o read in s2 overlap
+L01	23	do	M	as pos 5
+L01	24	c	H	
+L01	25	ls	M	large hooked long-s form; ʃ possible
+L01	26	to	H	
+L01	27	ue	H	u as two minims + e (A58)
+L01	28	20	H	
+L01	29	g+	M	5/g with cross; could be 5+
+L01	30	4	M	4 with closed top triangle
+L01	31	g	H	
+L01	32	?	M	square with central dot; as pos 10
+L01	33	ls	M	as pos 25
+L01	34	c	H	
+L01	35	to	H	
+L01	36	T	H	
+L01	37	pi	H	pi with i-dot (A16 form)
+L01	38	g	H	
+L01	39	4	M	bold cross with left diagonal; could be +
+L01	40	s	M	cursive s
+L01	41	c	H	
+L01	42	20	H	
+L01	43	8	H	
+L01	44	E	H	
+L01	45	18	H	dot before 1 ignored
+L01	46	L40	H	followed by a filler dash at line end, not transcribed
+L02	1	8	H	tall loop at far left of line is a flourish from neighbouring line, ignored
+L02	2	pi	M	pi without i-dot (π)
+L02	3	20	H	
+L02	4	//	H	
+L02	5	v	H	
+L02	6	ue	H	u as two minims + e
+L02	7	lam	H	
+L02	8	6	H	
+L02	9	8	H	
+L02	10	y	M	y with curled tail like A35
+L02	11	c	H	
+L02	12	o-	M	o with bar
+L02	13	r	M	r-shaped with long base bar like A55; tick above is from neighbour line
+L02	14	pi	H	π no i-dot
+L02	15	g+	M	g with cross
+L02	16	20	H	
+L02	17	pi	H	π no i-dot
+L02	18	inT	H	
+L02	19	L40	H	
+L02	20	=	H	
+L02	21	pi	H	π no i-dot
+L02	22	to	H	
+L02	23	o-	M	o with bar
+L02	24	8	H	
+L02	25	u+	M	u as two minims on cross with long bar; heavy vertical beside it is from neighbour line
+L02	26	E	H	
+L02	27	18	H	
+L02	28	g	M	grey g
+L02	29	do	M	loop + right lobe
+L02	30	b	M	stem with bowl; could be h
+L02	31	w+	M	w with cross
+L02	32	ai	M	
+L02	33	2‡	M	2 + two stems crossing bar
+L02	34	c	H	
+L02	35	20	H	
+L02	36	do	M	loop + right lobe
+L02	37	del	M	plain d-bowl no lobe
+L02	38	com	M	c o + three minims
+L02	39	g	M	grey g; thin long stroke before it is from neighbour line
+L02	40	=	H	
+L02	41	to	H	
+L02	42	ls	M	large hooked form
+L02	43	c	H	
+L02	44	T	H	
+L02	45	to	H	
+L02	46	8	H	
+L02	47	ue	H	long tail to line end
+L03	1	n	H	
+L03	2	g	M	grey g with flag
+L03	3	E	H	
+L03	4	r	M	r-shaped bold
+L03	5	X+	M	wedge head + diagonal + bar and stem crossing
+L03	6	ue	H	faint dot above left, ignored
+L03	7	//	H	
+L03	8	8	H	
+L03	9	s	M	s with dot at foot
+L03	10	r	M	
+L03	11	pi	H	π no i-dot
+L03	12	inT	H	
+L03	13	s'	M	mark above (hooked stroke) may be neighbour line
+L03	14	=	H	
+L03	15	do	M	loop + right lobe
+L03	16	pi	H	π no i-dot
+L03	17	to	H	
+L03	18	//	H	
+L03	19	8	H	
+L03	20	n	H	
+L03	21	T	H	
+L03	22	R	M	R with looped head and long tail; could be ꝛ
+L03	23	to	H	
+L03	24	ls	M	large hooked form
+L03	25	ue	H	
+L03	26	X+	M	as pos 5
+L03	27	c	H	
+L03	28	r	M	
+L03	29	to	H	
+L03	30	T	H	
+L03	31	//	H	
+L03	32	pi	H	π no i-dot
+L03	33	ls	M	large hooked form
+L03	34	X+	M	as pos 5
+L03	35	c	H	
+L03	36	8	H	
+L03	37	to	H	
+L03	38	o-	M	o with bar
+L03	39	g+	M	g with cross
+L03	40	ue	H	long tail
+L03	41	r	M	
+L03	42	to	H	
+L03	43	o-	M	o with bar over top
+L03	44	g	M	
+L03	45	20	H	
+L03	46	4	M	4 with closed triangle
+L03	47	pi	H	π no i-dot
+L03	48	g	M	grey g
+L03	49	y~	M	y with bar across heavy stem
+L03	50	to	M	tilted; top of crop cuts it
+L03	51	8	M	upper part cut by crop top
+L03	52	r	M	bold, base bar; at page edge, upper part cut

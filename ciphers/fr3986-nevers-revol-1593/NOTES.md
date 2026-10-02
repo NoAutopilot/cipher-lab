@@ -1,4 +1,5 @@
 blocked
+Blocked on the intake gate only (2 Oct 2026, GAPS-2): the sign-identification blocker is cleared on the held-out leaf (atlas_heldout/score_D.txt, 65/65); the folder still lacks the "## Web and blog check" section, which tools/intake_gate_check.py requires before `partial` (next, ~$1).
 
 # fr.3986 f.198 (Nevers -> Revol, 23 Oct 1593) — Louis de Gonzague, duc de Nevers, to Louis Revol
 
@@ -265,18 +266,97 @@ Status word stays **blocked** (internal: sign identification), now with the targ
 the worker's own eye-checks of the c.264 lines and probes are not subagent calls. Requests: see the Premise check section
 (gallica 4, archive.org 5, be-api 3, googleapis 2, github 2); none for this step.
 
-## Remaining gaps (GAPS, 2 Oct 2026; LIKELY-6 rewrite updated in place)
-Read so far: 0 of 66 drafted verso signs read to a continuous text, and the recto block (canvas 395, several hundred signs) undrafted; the held-out atlas test reads 20/28 = 71.4% on the neater leaf 298 (atlas_heldout/score_C.txt; 19/28 before the eight-tag extension), under the 80% gate
-- f.198 verso cipher runs (66 signs, 9 runs) - blocker: not-attempted; the atlas held-out gate failed twice (67.9% then 71.4% vs 80%, HYPOTHESES.md rows of 2 Oct 2026), so the f.198 passes were not run; coverage of the eight missing tags done 2 Oct 2026 (A53-A62) and [retired] as the knob; next: widen the held-out answer key to the rest of c.298 (src/f3986_c298_region.jpg, gloss above, ~100 signs, grade S alignment) and re-run one blind pass on uncut crops (+80 px margins, sign count given), ~$7
-- f.198 recto cipher block (canvas 395, about 14 near-solid lines, found by the premise check 2 Oct 2026) - blocker: not-attempted; no gloss or clear copy visible at 1000 px; next: one native region fetch (Gallica IIIF, browser UA) + tools/iiif_lines.py crops + manifest entry, ~$2, no pass until the held-out clears 80%
-- web and blog check (check-solved.md required step) - blocker: not-attempted; the gate did not test for it because `blocked` is terminal, owed before any open/partial verdict; next: the four web searches and three blog site searches logged under "## Web and blog check", ~$1
+## GAPS-fr3986-nevers-revol-1593-2 (2 Oct 2026, account-4)
 
-## Escalation (GAPS, 2 Oct 2026; LIKELY-6 list updated in place)
-- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source; leaf 298 is the held-out answer key; c.264's lower lines now in the atlas (A53-A62, 2 Oct 2026); the rest of c.298 is the next held-out material
+Worker GAPS-fr3986-nevers-revol-1593-2 (account-4, Opus 5.5), brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, the
+first part of the Verdict step: widen the held-out answer key on c.298, one blind pass on fresh crops, re-score against the
+floor and the 80% gate. Clock read 20:23-20:5x UTC. f.198 itself NOT read. Disk only: 0 network requests (the c.298 native
+region was already on disk); 1 vision call of the 2 allowed (the first returned 145 signs, so no second).
+
+**This is a different knob from the retired one.** The coverage knob (the atlas) is untouched: the sheet is GAPS's
+`contact_sheet_264ext.png`, no leaf-298 material. What changed is the held-out set and the crops: the answer key now covers
+every sign on c.298's first three cipher lines that the worker could align with the interlined gloss, and the crops are whole
+lines at native resolution instead of +-42 px sub-spans with signs at the edges.
+
+**Answer key, sealed first.** `atlas_heldout/heldout298_answers.tsv`, committed and pushed (73b2902e) before the read: 65 signs
+on cipher lines 1-3 of `tools/keys/key60_atlas/src/f3986_c298_region.jpg` (LIKELY-6's 28 plus 37 new). Each is grade S, with
+form, gloss syllable and key no.60 value all agreeing (glosses: qui retardast, arrivee, a, darra, miracle, de, ma-, autres;
+touches, las, qui doibt, de dignite; et respect, en droict, et, incompati-). About 150 signs stand on the three lines. The
+rest are left out: code words the sheet does not show (the boxed sign under "leur", lxxix under "Rome", com, ll), signs
+whose form and gloss value disagree under no.60 (the p-sign written like 4+, y under "arrivee", g under "du"), and stretches
+the worker could not align. Lines 4-10 of the region were not aligned; two views of lines 4-5 found only two alignable signs
+(ll = bon, 99 = davantage) among code words. Six answer signs carry tags the sheet lacks (ls x3, s', del, 6).
+
+**Crops.** `tools/iiif_lines.py --image tools/keys/key60_atlas/src/f3986_c298_region.jpg --out
+ciphers/fr3986-nevers-revol-1593/atlas_heldout/crops298 --prefix ho298 --centres 347,451,564 --max-width 1900 --overlap 150
+--debug`. That gives two native segments per line with 188 px overlap. Each band was then trimmed to region y 300-380,
+422-485 and 533-595, so the interlined gloss is masked. The trim is recorded in `crops298/manifest.json`. Eye-checked: no
+legible gloss, only letter tops of the next gloss line at the bottom edge.
+
+**Blind pass.** One Sonnet subagent was given only the sheet, `atlas264.tsv`, `atlas264ext.tsv`, `tools/keys/key60.tsv` and
+the six crops, copied to a scratch folder and told to read nothing else. It read 145 signs (L01 46, L02 47, L03 52), saved as
+`atlas_heldout/heldout298_passD.tsv`. Its transcript shows no read, grep or command touching the repository, the answer
+file, the full atlas or the c.298 source.
+
+**Score.** `atlas_heldout/score_D.txt`, regenerated by `heldout_score.py --answers heldout298_answers.tsv --pass
+heldout298_passD.tsv --expect 65/65`, exit 0. The scorer gained `--answers`, the Wilson interval, the floor's p95 and max and
+an old/new split. Passes B and C still reproduce 19/28 and 20/28.
+
+| | LIKELY-6 (264-only atlas) | GAPS (264ext atlas) | this pass (264ext atlas, widened key, whole-line crops) |
+|---|---|---|---|
+| N (gloss-aligned held-out signs) | 28 | 28 | **65** |
+| held-out sign-read rate | 19/28 = 67.9% | 20/28 = 71.4% | **65/65 = 100%** |
+| Wilson 95% CI | 49.3-82.1% | 52.9-84.7% | **94.4-100%** |
+| shuffle floor, pass tags permuted within unit, 2000 draws | mean 42.4%, p95 50.0%, max 64.3% | mean 44.4%, p95 53.6%, max 60.7% | mean 49.8%, p95 55.4%, max 58.5% |
+| LIKELY-6's 28 signs only | 19/28 | 20/28 | 28/28 |
+| gate | 80%, not met | 80%, not met | **80%, met (lower bound 94.4%)** |
+
+The match is positional, not an artifact of the order-preserving scorer. Line by line, the pass's sequence runs in step with
+the worker's own reading through the excluded signs as well: `? c do y~ to 20 pl y~ del lxxix` against the worker's ⊡ c ꝺo y
+to 20 ꝑ y ∂ lxxix, and the p-sign read X+ all three times. The floor rose because whole lines give the permuted tags more
+places to land, and the real pass still clears its maximum by 41 points.
+
+**What it licenses and what it does not.** The same 28 signs that read 20/28 in sub-span crops read 28/28 in whole-line crops
+with the same atlas. That isolates the crop design as the source of the earlier misses, which GAPS had already diagnosed as
+crop-edge and vocabulary misses, not coverage. The gate was defined as the precondition for the f.198 passes, so those
+passes are now licensed. Two limits:
+- **Leaf 298 is the neater office hand.** The Revol copyist on f.198 is harder (24 Sept 2026: blind agreement 40.9% without
+  the atlas), so this result does not predict f.198's rate.
+- **The answer key is a model's reading, filtered by the gloss.** The 65 signs are the ones where form, gloss and key agree.
+  A sign both readers would misread the same way drops out of the key; it is not scored as a hit. The 80 or so excluded signs
+  carry no score, although the pass agrees with the worker's reading on most of them.
+
+Grades: no reading, so no token grade changes. The 24 Sept draft of the verso stands at H 5, M 56, U 5, I 0 (66). The recto
+block has no draft yet.
+
+**Status word stays `blocked`; the blocker has changed.** The internal blocker, sign identification for this copyist's
+script, is cleared on the held-out leaf. The brief's rule for a cleared gate is to move to `partial`. But
+`tools/intake_gate_check.py` tests a `partial` word for a logged web and blog check, and this folder has never had one (owed
+since LIKELY-6). Under CLAUDE.md's intake rule a `partial` without it "is `blocked`, whatever word it uses". The gate run on
+the `partial` draft exited 1 (pasted below), so the word stays `blocked`. Line 2 names the one remaining blocker: the
+web and blog check, ~$1. It is not run here because the brief names only the held-out step and the check would cross 80% of the
+box. After that check, and a line-2 citation of the editions already searched, the status can read `partial`. No reading is
+claimed. HYPOTHESES.md row added; spec `specs/fr3986-nevers-f198.json` `cheap_test_done.rerun2` written.
+
+Intake gate on the `partial` draft (20:46 UTC):
+
+```
+fr3986-nevers-revol-1593: partial (line 1) with no standard-edition citation (page number or full-text-search phrase) within 6 lines -- CLAUDE.md's Pipeline intake gate says this must read `blocked` instead
+intake exit 1
+```
+
+## Remaining gaps (GAPS-2, 2 Oct 2026; GAPS rewrite updated in place)
+Read so far: 0 of 66 drafted verso signs read to a continuous text, and the recto block (canvas 395, several hundred signs) undrafted; the atlas held-out gate now clears: 65/65 = 100% on leaf 298's cipher lines 1-3 (Wilson 94.4-100%, shuffle floor p95 55.4%; atlas_heldout/score_D.txt), after 19/28 and 20/28 on sub-span crops
+- f.198 verso cipher runs (66 signs, 9 runs) - blocker: not-attempted; the held-out gate cleared 2 Oct 2026 (GAPS-2, 65/65 on whole-line crops), which licenses the passes; next: after the web and blog check below, two blind Sonnet passes on whole-line verso crops (tools/iiif_lines.py, two segments, same staging as GAPS-2) against contact_sheet_264ext.png, adjudication of the splits, decode_key vs 20 shuffled keys, fr16 judge, ~$8
+- f.198 recto cipher block (canvas 395, about 14 near-solid lines, found by the premise check 2 Oct 2026) - blocker: not-attempted; no gloss or clear copy visible at 1000 px; next: one native region fetch (Gallica IIIF, browser UA) + tools/iiif_lines.py whole-line crops + manifest entry, ~$2, then the same passes as the verso
+- web and blog check (check-solved.md required step) - blocker: not-attempted; now owed first: it is the only thing holding the status word at `blocked` (line 2), since the intake gate tests a `partial` word for it before any deep work; next: the four web searches and three blog site searches logged under "## Web and blog check", ~$1
+
+## Escalation (GAPS-2, 2 Oct 2026; GAPS list updated in place)
+- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source and the held-out; c.264's lower lines in the atlas (A53-A62); c.298 lines 1-3 aligned as the held-out (65 signs, 2 Oct 2026); lines 4-10 left (mostly code words)
 - [n/a] clear-pages: the leaf is a clear-French letter with inline cipher runs (verso) and a cipher block (recto); no clear copy of this letter is known (Bourdeau's f.157v clear copy is no.75, 9 Oct; premise check (a)-(d) 2 Oct 2026 found none)
 - [x] known-keys: key no.60 is in hand (key.tsv) and applied mechanically on 24 Sept 2026; the key is not the blocker
 - [x] print: Gomberville seconde partie, Berger de Xivrey vol.3 and Memoires de la Ligue v.5-6 read 24 Sept 2026; Memoires de Nevers ii ContentSearch ("Desenzan", "Revol"), Lettres missives vol.3 full text, Rott 1882/1900 read 2 Oct 2026; absent
-- [ ] key-rebuild: the coverage knob is retired (the eight uncovered tags added from c.264, A53-A62, moved the held-out by one sign, 19 -> 20 of 28, instrument tools/keys/key60_atlas + one blind Sonnet pass on the five LIKELY-6 crops); the untried instrument is a wider held-out: widen the answer key to the rest of c.298 and re-run one blind pass on uncut crops, ~$7 (the next step above)
+- [x] key-rebuild: atlas extended to the eight uncovered tags (A53-A62, coverage knob retired after one sign's gain), then the held-out widened to 65 signs on whole-line crops: 65/65, gate cleared (2 Oct 2026, GAPS-2); the sign-identification blocker is cleared on the held-out leaf
 - [ ] image-check: canvas 395 = f.198 recto (stamp 198, head "23 d'octobre 1593"), canvases 396/397 = f.198 verso (two scans), 398 = f.199r blank (2 Oct 2026, images/probes.json); the 24 Sept draft covers the verso only; the recto's native region fetch (~$2) is untried, see the gap above
-- [retired] retry: a third blind pass on a Revol copy against the atlas as it stands (F1/F2 without it, G2 with it on f.176, LIKELY-6 and GAPS held-out at 67.9% and 71.4%) -- reopened only by a held-out that clears 80%
-Verdict: keep going: 3 internal gaps; cheapest next: widen the held-out answer key to the rest of c.298 + one blind pass on uncut crops, ~$7 (then the recto fetch ~$2; the eight-tag coverage knob is [retired])
+- [ ] retry: the passes on the Revol copy, retired 2 Oct 2026 "until a held-out clears 80%", are reopened by GAPS-2's 65/65; the instrument differs from the retired one in the crop design (whole-line native segments, not the 24 Sept per-line cuts or sub-spans) and the atlas (264ext); planned as the verso passes in the first gap
+Verdict: keep going: 3 internal gaps; cheapest next: the web and blog check, ~$1 (then the f.198 verso passes on whole-line crops against the 264ext atlas, ~$8, and the recto fetch, ~$2)
