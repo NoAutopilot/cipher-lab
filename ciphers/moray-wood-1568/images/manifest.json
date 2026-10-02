@@ -586,5 +586,79 @@
     "committed": false
    }
   ]
+ },
+ "gap6_native_read_GAPS11": {
+  "fetched": "2 October 2026 22:22-22:23 UTC (GAPS11-moray-wood-1568, account-4)",
+  "fetch_method": "one DECODE browser login (tools/decode_browser_login.js 4930 --max-files 0 --delay 1600 --listen, listener gets for the 7 images); 8 requests after login in total (RecordsView/4930 + 7 images), 1.6 s apart; full size served for all 7; R9257 sha1 identical to gap6_key_sweep_GAPS10; scratchpad only, not committed",
+  "crops": {
+   "r9257_table": "IMG_R9257 box 1080,1750,1020,2150 (letter table + nomenclator codes; iiif_lines --region with --centres cut only a 100 px band, so the same box was cut whole with PIL)",
+   "r9257_nullae": "IMG_R9257 box 2200,3050,1050,800 (same note)",
+   "r4930_p3_lines": "tools/iiif_lines.py --image IMG_R4930_I28614_P3.jpg --region 800,550,6300,3100 --prefix r4930p3 (12 lines x 3 segments; cipher passage on lines 4-7)"
+  },
+  "images": [
+   {
+    "file": "IMG_R4930_I28614_P1.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4930_I28614_P1.jpg",
+    "bytes": 16132632,
+    "sha1": "77dd9d2843c2d799ba805aaf74e7e76f9cb4403b",
+    "pixels": "7144x10328",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R4930_I28614_P2.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4930_I28614_P2.jpg",
+    "bytes": 16288097,
+    "sha1": "680c24106dffb8c0ab36ac9ca345312ea9438fb8",
+    "pixels": "7414x9964",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R4930_I28614_P3.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4930_I28614_P3.jpg",
+    "bytes": 15315195,
+    "sha1": "ca3caafac3501b759c55bef038575fd83d5f8d14",
+    "pixels": "7343x10055",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R4930_I28614_P4.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4930_I28614_P4.jpg",
+    "bytes": 15618043,
+    "sha1": "7d00c334854e4fbe2f4a9883e71c88a17d477286",
+    "pixels": "7414x9964",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R4930_I28614_P5.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4930_I28614_P5.jpg",
+    "bytes": 14442397,
+    "sha1": "c60e24407f9753d053713595094daae2c0e2ca75",
+    "pixels": "7280x10152",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R4930_I28614_P6.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4930_I28614_P6.jpg",
+    "bytes": 13093878,
+    "sha1": "3e0b980d8c1ea271784ddb6d4431d43fa04d3438",
+    "pixels": "7216x10219",
+    "date": "2 October 2026",
+    "committed": false
+   },
+   {
+    "file": "IMG_R9257_I43282_P.jpg",
+    "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9257_I43282_P.jpg",
+    "bytes": 2760797,
+    "sha1": "c108544de70e4639be1177fe94161cb6ea2f7124",
+    "pixels": "3262x4169",
+    "date": "2 October 2026",
+    "committed": false
+   }
+  ]
  }
 }
