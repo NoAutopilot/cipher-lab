@@ -28,7 +28,8 @@
    "iiif_id": "c0930ns97130",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0930ns97130/full/1520,/0/default.jpg",
    "bytes": 163791,
-   "note": "reference copy, 1520 px wide"
+   "note": "reference copy, 1520 px wide; deleted 2 Oct 2026 (GAPS4): a 1520-px copy of a page whose full-size file is kept beside it (the cited one), removed to keep the folder under 30 MiB; regenerate by resizing the _full file or refetching the URL",
+   "deleted": true
   },
   {
    "file": "img828_w1520.jpg",
@@ -36,7 +37,8 @@
    "iiif_id": "c05d8nd4dd5c",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc05d8nd4dd5c/full/1520,/0/default.jpg",
    "bytes": 164902,
-   "note": "reference copy, 1520 px wide"
+   "note": "reference copy, 1520 px wide; deleted 2 Oct 2026 (GAPS4): a 1520-px copy of a page whose full-size file is kept beside it (the cited one), removed to keep the folder under 30 MiB; regenerate by resizing the _full file or refetching the URL",
+   "deleted": true
   },
   {
    "file": "img829_w1520.jpg",
@@ -44,7 +46,8 @@
    "iiif_id": "c01n7xm6rn4k",
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc01n7xm6rn4k/full/1520,/0/default.jpg",
    "bytes": 166768,
-   "note": "reference copy, 1520 px wide"
+   "note": "reference copy, 1520 px wide; deleted 2 Oct 2026 (GAPS4): a 1520-px copy of a page whose full-size file is kept beside it (the cited one), removed to keep the folder under 30 MiB; regenerate by resizing the _full file or refetching the URL",
+   "deleted": true
   },
   {
    "file": "img830_w1520.jpg",

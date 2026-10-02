@@ -12,13 +12,13 @@
    "note": "item metadata: date 1761, publisher J. Millan, imagecount 220"
   },
   {
-   "file": "n4_w2400.jpg",
+   "file": "n4_w1600.jpg",
    "leaf": "n4",
    "url": "https://archive.org/download/listofgeneralfie00grea_0/page/n4.jpg",
    "native_px": "3243x5221",
    "native_bytes": 1661765,
-   "bytes": 1288611,
-   "note": "the title page (recto), stored resized to 2400 px wide, JPEG q78, to keep the folder under 30 MiB; the native file is the URL above, one request"
+   "bytes": 652950,
+   "note": "the title page (recto), stored resized to 2400 px wide, JPEG q78, to keep the folder under 30 MiB; the native file is the URL above, one request; re-stored at 1600 px wide on 2 Oct 2026 (GAPS4) once the 1778 page itself (images/armylist1778) replaced it as the key source, to keep the folder under 30 MiB"
   },
   {
    "file": "(not kept) n3.jpg",
@@ -30,5 +30,6 @@
   }
  ],
  "crops": "lines/manifest.json records the 14 bands x 2 segments cut by `python3 tools/iiif_lines.py --image ciphers/pro3055-clinton-1779/images/armylist/n4.jpg --out ciphers/pro3055-clinton-1779/images/armylist/lines --debug` on the native n4.jpg (pitch 279, distance 195, prominence 486.4; boxes in the manifest); the 28 crop files and the debug overlay were deleted after the one blind pass (passes/title1761_passA.tsv) to keep the folder under 30 MiB and regenerate from the native file with the same command",
- "rights": "1761 printed book, public domain; JCB Library scan on archive.org"
+ "rights": "1761 printed book, public domain; JCB Library scan on archive.org",
+ "superseded": "2 Oct 2026 (GAPS4-pro3055-clinton-1779): the 1778 printing itself is on archive.org as listofgeneralfie00grea (images/armylist1778/manifest.json); this 1761 copy stays only as the source of passes/title_1761_check.py's I-grade step"
 }

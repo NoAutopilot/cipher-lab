@@ -1,0 +1,32 @@
+{
+ "source": "A List of the General and Field Officers, as they rank in the Army ... MDCCLXXVIII (London: printed for J. Millan), University of Pittsburgh Library System copy on archive.org as listofgeneralfie00grea (270 images, 400 ppi). THIS IS THE 1778 PRINTING: the title page is the key of the Clinton-Haldimand book cipher (Tomokiyo, haldimand.htm; LESSONS-TOMOKIYO.md rows 66-67). Found by archive.org advancedsearch on 2 Oct 2026 (GAPS4-pro3055-clinton-1779): title:(\"general and field officers\") lists 16 items, among them the Millan printings of 1758, 1761, 1767, 1771-1776 and 1778; GAPS3 had opened only listofgeneralfie00grea_0 (1761).",
+ "item_url": "https://archive.org/details/listofgeneralfie00grea",
+ "metadata_url": "https://archive.org/metadata/listofgeneralfie00grea",
+ "fetched": "2 October 2026, 06:1x-06:3x UTC (GAPS4-pro3055-clinton-1779, account-4)",
+ "requests": "archive.org 8 in all this job (advancedsearch x2; metadata JSON; _scandata.xml; _djvu.txt; page/n13.jpg, which is the Contents page; page/n12.jpg, the title page), 1.6 s apart, descriptive User-Agent",
+ "leaf_note": "the download path page/nN is offset by one from the scandata leafNum: scandata leaf 13 (pageType Title) is page/n12.jpg, leaf 14 (Contents) is page/n13.jpg (fetched first, viewed, not kept)",
+ "files": [
+  {
+   "file": "n12_native.jpg",
+   "leaf": "page/n12",
+   "url": "https://archive.org/download/listofgeneralfie00grea/page/n12.jpg",
+   "native_px": "2406x4067",
+   "bytes": 833157,
+   "note": "the 1778 title page, stored at native size (the key source itself)"
+  },
+  {
+   "file": "(not kept) djvu.txt",
+   "url": "https://archive.org/download/listofgeneralfie00grea/listofgeneralfie00grea_djvu.txt",
+   "bytes": 439952,
+   "note": "item OCR; its title-page lines (file lines 14-66) already read 'CORPS and in the ARMY' and MDCCLXXVIII; used only to locate the page, the reading is from the image"
+  },
+  {
+   "file": "(not kept) scandata.xml",
+   "url": "https://archive.org/download/listofgeneralfie00grea/listofgeneralfie00grea_scandata.xml",
+   "bytes": 150113,
+   "note": "leaf types: 13 Title, 14 Contents"
+  }
+ ],
+ "crops": "lines/manifest.json records the 23 bands x 2 segments cut by `python3 tools/iiif_lines.py --image ciphers/pro3055-clinton-1779/images/armylist1778/n12_native.jpg --out ciphers/pro3055-clinton-1779/images/armylist1778/lines --debug` (pitch 106, distance 74, prominence 293.7; boxes in the manifest); the 46 crop files and the debug overlay were deleted after the one blind pass (passes/title1778_passA.tsv) and regenerate from n12_native.jpg with the same command",
+ "rights": "1778 printed book, public domain; University of Pittsburgh scan on archive.org"
+}

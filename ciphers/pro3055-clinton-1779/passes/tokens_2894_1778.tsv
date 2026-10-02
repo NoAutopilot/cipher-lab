@@ -1,0 +1,316 @@
+n	ref	line	pos	word	letter_gaps2	grade_gaps2	grade_gaps3	letter_1761	letter_1778	grade_now	note
+1	p184_c1a.jpg:15	1	7	I	i	H	H		i	H	
+2	p184_c1a.jpg:16	2	2	have	h	H	H		h	H	
+3	p184_c1a.jpg:17	2	16	have	a	H	H		a	H	
+4	p184_c1b.jpg:1	9	16	have	v	H	H		v	H	
+5	p184_c1b.jpg:2	9	6	have	e	H	H		e	H	
+6	p184_c1b.jpg:3	2	7	received	r	H	H		r	H	
+7	p184_c1b.jpg:4	2	3	received	e	H	H		e	H	
+8	p184_c1b.jpg:5	2	6	received	c	H	H		c	H	
+9	p184_c1b.jpg:6	2	5	received	e	H	H		e	H	
+10	p184_c1b.jpg:7	1	7	received	i	H	H		i	H	
+11	p184_c1b.jpg:8	9	16	received	v	H	H		v	H	
+12	p184_c1b.jpg:9	9	17	received	e	H	H		e	H	
+13	p184_c1b.jpg:10	6	15	received	d	H	H		d	H	
+14	p184_c1b.jpg:11	7	11	Information	i	H	H		i	H	
+15	p184_c1b.jpg:12	7	9	Information	n	H	H		n	H	
+16	p184_c1b.jpg:13	8	2	Information	f	H	H		f	H	
+17	p184_c1b.jpg:14	8	1	Information	o	H	H		o	H	
+18	p184_c1b.jpg:15	7	7	Information	r	H	H		r	H	
+19	p184_c1b.jpg:16	7	18	Information	m	H	H		m	H	
+20	p184_c1b.jpg:17	7	8	Information	a	H	H		a	H	
+21	p184_c1b.jpg:18	7	3	Information	t	H	H		t	H	
+22	p184_c1b.jpg:19	7	11	Information	i	H	H		i	H	
+23	p184_c2a.jpg:1	8	1	Information	o	H	H		o	H	
+24	p184_c2a.jpg:2	7	9	Information	n	H	H		n	H	
+25	p184_c2a.jpg:3	6	11	from	f	H	H		f	H	
+26	p184_c2a.jpg:4	6	22	from	r	H	H		r	H	
+27	p184_c2a.jpg:5	6	16	from	o	H	H		o	H	
+28	p184_c2a.jpg:6	7	18	from	m	H	H		m	H	
+29	p184_c2a.jpg:7	7	3	the	t	H	H		t	H	
+30	p184_c2a.jpg:8	7	4	the	h	H	H		h	H	
+31	p184_c2a.jpg:9	7	5	the	e	H	H		e	H	
+32	p184_c2a.jpg:10	7	18	Ministers	i	M	I	m	m	H	
+33	p184_c2a.jpg:11	7	11	Ministers	n	M	I	i	i	H	
+34	p184_c2a.jpg:12	7	12	Ministers	i	M	I	n	n	H	
+35	p184_c2a.jpg:13	7	11	Ministers	s	M	I	i	i	H	
+36	p184_c2a.jpg:14	7	2	Ministers	t	M	I	s	s	H	
+37	p184_c2a.jpg:15	7	3	Ministers	e	M	I	t	t	H	
+38	p184_c2b.jpg:1	7	5	Ministers	r	M	I	e	e	H	
+39	p184_c2b.jpg:2	7	7	Ministers	s	M	I	r	r	H	
+40	p184_c2b.jpg:5	16	13	Monsieur	m	H	H		m	H	
+41	p184_c2b.jpg:6	16	32	Monsieur	o	H	H		o	H	
+42	p184_c2b.jpg:7	16	15	Monsieur	n	H	H		n	H	
+43	p184_c2b.jpg:8	16	35	Monsieur	s	H	H		s	H	
+44	p184_c2b.jpg:9	16	12	Monsieur	i	H	H		i	H	
+45	p184_c2b.jpg:10	16	14	Monsieur	e	H	H		e	H	
+46	p184_c2b.jpg:11	18	17	Monsieur	u	H	H		u	H	
+47	p184_c2b.jpg:12	18	9	Monsieur	r	H	H		r	H	
+48	p184_c3a.jpg:1	16	16	Terney	t	H	H		t	H	
+49	p184_c3a.jpg:2	16	3	Terney	e	H	H		e	H	
+50	p184_c3a.jpg:3	16	20	Terney	r	H	H		r	H	
+51	p184_c3a.jpg:4	16	15	Terney	n	H	H		n	H	
+52	p184_c3a.jpg:5	16	7	Terney	e	H	H		a	H	page a vs token e [logged]
+53	p184_c3a.jpg:6	16	27	Terney	y	H	H		y	H	
+54	p184_c3a.jpg:8	13	7	have	h	H	H		h	H	
+55	p184_c3a.jpg:9	13	8	have	a	H	H		a	H	
+56	p184_c3a.jpg:10	9	16	have	v	H	H		v	H	
+57	p184_c3a.jpg:11	13	26	have	e	H	H		e	H	
+58	p184_c3a.jpg:12	18	13	sailed	s	H	H		s	H	
+59	p184_c3a.jpg:13	18	8	sailed	a	H	H		a	H	
+60	p184_c3a.jpg:14	18	10	sailed	i	H	H		i	H	
+61	p184_c3b.jpg:1	18	25	sailed	l	H	H		l	H	
+62	p184_c3b.jpg:2	18	12	sailed	e	H	H		e	H	
+63	p184_c3b.jpg:3	18	22	sailed	d	H	H		d	H	
+64	p184_c3b.jpg:4	13	8	about	a	H	H		a	H	
+65	p184_c3b.jpg:5	13	1	about	b	H	H		b	H	
+66	p184_c3b.jpg:6	14	2	about	o	H	H		o	H	
+67	p184_c3b.jpg:7	18	17	about	u	H	H		u	H	
+68	p184_c3b.jpg:8	18	4	about	t	H	H		t	H	
+69	p184_c3b.jpg:10	18	7	May	m	H	H		m	H	
+70	p184_c3b.jpg:11	18	8	May	a	H	H		a	H	
+71	p184_c3b.jpg:12	18	29	May	y	H	H		y	H	
+72	p184_c4a.jpg:1	19	1	with	w	H	H		w	H	
+73	p184_c4a.jpg:2	19	2	with	i	H	H		i	H	
+74	p184_c4a.jpg:3	19	3	with	t	H	H		t	H	
+75	p184_c4a.jpg:4	19	4	with	h	H	H		h	H	
+76	p184_c4a.jpg:5	16	46	seven	s	H	H		s	H	
+77	p184_c4a.jpg:6	16	3	seven	e	H	H		e	H	
+78	p184_c4a.jpg:7	22	6	seven	v	H	H		v	H	
+79	p184_c4a.jpg:8	22	7	seven	e	H	H		e	H	
+80	p184_c4a.jpg:9	22	9	seven	n	H	H		n	H	
+81	p184_c4a.jpg:10	23	9	ships	s	H	H		s	H	
+82	p184_c4a.jpg:11	23	28	ships	h	H	H		h	H	
+83	p184_c4a.jpg:12	23	5	ships	i	H	H		i	H	
+84	p184_c4a.jpg:13	1	3	ships	p	H	H		p	H	
+85	p184_c4a.jpg:14	1	8	ships	s	H	H		s	H	
+86	p184_c4b.jpg:1	8	1	of	o	H	H		o	H	
+87	p184_c4b.jpg:2	8	2	of	f	H	H		f	H	
+88	p184_c4b.jpg:3	2	1	the	t	H	H		t	H	
+89	p184_c4b.jpg:4	2	2	the	h	H	H		h	H	
+90	p184_c4b.jpg:5	2	3	the	e	H	H		e	H	
+91	p184_c4b.jpg:6	6	7	line,	l	H	H		l	H	
+92	p184_c4b.jpg:7	6	12	line,	i	H	H		i	H	
+93	p184_c4b.jpg:8	6	3	line,	n	H	H		n	H	
+94	p184_c4b.jpg:9	6	4	line,	e	H	H		e	H	
+95	p184_c5a.jpg:1	13	4	Transports	t	H	H		t	H	
+96	p184_c5a.jpg:2	13	2	Transports	r	H	H		r	H	
+97	p184_c5a.jpg:3	13	8	Transports	a	H	H		a	H	
+98	p184_c5a.jpg:4	13	9	Transports	n	H	H		n	H	
+99	p184_c5a.jpg:5	13	6	Transports	s	H	H		s	H	
+100	p184_c5a.jpg:6	15	5	Transports	p	H	H		p	H	
+101	p184_c5a.jpg:7	1	13	Transports	o	H	H		o	H	
+102	p184_c5a.jpg:8	1	5	Transports	r	H	H		r	H	
+103	p184_c5a.jpg:9	1	22	Transports	t	H	H		t	H	
+104	p184_c5a.jpg:10	1	8	Transports	s	H	H		s	H	
+105	p184_c5a.jpg:13	9	1	on	o	H	H		o	H	
+106	p184_c5a.jpg:14	9	10	on	n	H	H		n	H	
+107	p184_c5a.jpg:15	13	1	board	b	H	H		b	H	
+108	p184_c5b.jpg:1	14	2	board	o	H	H		o	H	
+109	p184_c5b.jpg:2	14	13	board	a	H	H		a	H	
+110	p184_c5b.jpg:3	13	12	board	r	H	H		r	H	
+111	p184_c5b.jpg:4	13	10	board	d	H	H		d	H	
+112	p184_c5b.jpg:5	16	18	five	f	H	H		f	H	
+113	p184_c5b.jpg:6	16	12	five	i	H	H		i	H	
+114	p184_c5b.jpg:7	22	6	five	v	H	H		v	H	
+115	p184_c5b.jpg:8	22	7	five	e	H	H		e	H	
+116	p184_c5b.jpg:9	18	4	Thousand	t	H	H		t	H	
+117	p184_c5b.jpg:10	18	5	Thousand	h	H	H		h	H	
+118	p184_c5b.jpg:11	18	14	Thousand	o	H	H		o	H	
+119	p184_c5b.jpg:12	18	17	Thousand	u	H	H		u	H	
+120	p184_c5b.jpg:13	18	13	Thousand	s	H	H		s	H	
+121	p184_c6a.jpg:1	18	8	Thousand	a	H	H		a	H	
+122	p184_c6a.jpg:2	18	11	Thousand	n	H	H		n	H	
+123	p184_c6a.jpg:3	18	22	Thousand	d	H	H		d	H	
+124	p184_c6a.jpg:5	18	25	land	l	H	H		l	H	
+125	p184_c6a.jpg:6	18	24	land	a	H	H		a	H	
+126	p184_c6a.jpg:7	18	21	land	n	H	H		n	H	
+127	p184_c6a.jpg:8	18	22	land	d	H	H		d	H	
+128	p184_c6a.jpg:9	9	3	Forces	f	H	H		f	H	
+129	p184_c6a.jpg:10	9	1	Forces	o	H	H		o	H	
+130	p184_c6a.jpg:11	9	7	Forces	r	H	H		r	H	
+131	p184_c6a.jpg:12	9	5	Forces	c	H	H		c	H	
+132	p184_c6a.jpg:13	9	6	Forces	e	H	H		e	H	
+133	p184_c6a.jpg:14	9	8	Forces	s	H	H		s	H	
+134	p184_c6b.jpg:3	16	30	destination	d	H	H		d	H	
+135	p184_c6b.jpg:4	16	25	destination	e	H	H		e	H	
+136	p184_c6b.jpg:5	16	35	destination	s	H	H		s	H	
+137	p184_c6b.jpg:6	16	21	destination	t	H	H		t	H	
+138	p184_c6b.jpg:7	16	22	destination	i	H	H		i	H	
+139	p184_c6b.jpg:8	16	29	destination	n	H	H		n	H	
+140	p184_c6b.jpg:9	16	28	destination	a	H	H		a	H	
+141	p184_c6b.jpg:10	16	21	destination	t	H	H		t	H	
+142	p184_c6b.jpg:11	16	22	destination	i	H	H		i	H	
+143	p184_c6b.jpg:12	16	17	destination	o	H	H		o	H	
+144	p184_c6b.jpg:13	16	15	destination	n	H	H		n	H	
+145	p184_c7a.jpg:1	18	13	stil	s	H	H		s	H	
+146	p184_c7a.jpg:2	18	4	stil	t	H	H		t	H	
+147	p184_c7a.jpg:3	18	10	stil	i	H	H		i	H	
+148	p184_c7a.jpg:4	18	19	stil	l	H	H		l	H	
+149	p184_c7a.jpg:5	1	9	supposed	s	H	H		s	H	
+150	p184_c7a.jpg:6	1	27	supposed	u	H	H		u	H	
+151	p184_c7a.jpg:7	1	3	supposed	p	H	H		p	H	
+152	p184_c7a.jpg:8	1	13	supposed	o	H	H		o	H	
+153	p184_c7a.jpg:9	1	8	supposed	s	H	H		s	H	
+154	p184_c7a.jpg:10	1	17	supposed	e	H	H		e	H	
+155	p184_c7a.jpg:11	6	15	supposed	d	H	H		d	H	
+156	p184_c7a.jpg:13	9	5	Canada	c	H	H		c	H	
+157	p184_c7a.jpg:14	9	19	Canada	a	H	H		a	H	
+158	p184_c7b.jpg:1	9	10	Canada	n	H	H		n	H	
+159	p184_c7b.jpg:2	11	14	Canada	a	H	H		a	H	
+160	p184_c7b.jpg:3	11	16	Canada	d	H	H		d	H	
+161	p184_c7b.jpg:4	11	8	Canada	a	H	H		a	H	
+162	p184_c7b.jpg:5	16	7		e	C	C	a	a	C	page a vs token e [logged]
+163	p184_c7b.jpg:6	16	30		d	C	C	-	d	C	
+164	p184_c7b.jpg:7	16	13		m	C	C	m	m	C	
+165	p184_c7b.jpg:8	16	22		i	C	C	i	i	C	
+166	p184_c7b.jpg:9	16	20		r	C	C	r	r	C	
+167	p184_c7b.jpg:10	16	7		e	C	C	a	a	C	page a vs token e [logged]
+168	p184_c7b.jpg:11	16	24			M	I	l	l	H	
+169	p184_c8a.jpg:1	20	33		r	C	C	r	r	C	
+170	p184_c8a.jpg:2	20	39			M	I	e	e	H	
+171	p184_c8a.jpg:3	20	37			M	I	i	i	H	
+172	p184_c8a.jpg:4	20	35			M	I	n	n	H	
+173	p184_c8a.jpg:5	20	10			M	I	f	f	H	
+174	p184_c8a.jpg:6	20	9			M	I	o	o	H	
+175	p184_c8a.jpg:7	20	15			M	I	r	r	H	
+176	p184_c8a.jpg:8	20	16		c	C	C	c	c	C	
+177	p184_c8a.jpg:9	20	13			M	I	e	e	H	
+178	p184_c8a.jpg:10	20	4		d	C	C	d	d	C	
+179	p184_c8a.jpg:11	21	9			M	M	-	i	H	
+180	p184_c8a.jpg:12	21	10			M	M	-	n	H	
+181	p184_c8a.jpg:13	1	3		p	C	C	p	p	C	
+182	p184_c8a.jpg:14	1	5		r	C	C	r	r	C	
+183	p184_c8a.jpg:15	1	11		o	C	C	o	o	C	
+184	p184_c8a.jpg:16	1	3		p	C	C	p	p	C	
+185	p184_c8b.jpg:1	1	13		o	C	C	o	o	C	
+186	p184_c8b.jpg:2	1	5		r	C	C	r	r	C	
+187	p184_c8b.jpg:3	1	15		t	H	H	t	t	H	
+188	p184_c8b.jpg:4	1	10			M	I	i	i	H	
+189	p184_c8b.jpg:5	1	11		o	C	C	o	o	C	
+190	p184_c8b.jpg:6	1	12		n	H	H	n	n	H	
+191	p185_c1a.jpg:2	9	3	french	f	H	H		f	H	
+192	p185_c1a.jpg:3	9	7	french	r	H	H		r	H	
+193	p185_c1a.jpg:4	9	6	french	e	H	H		e	H	
+194	p185_c1a.jpg:5	9	10	french	n	H	H		n	H	
+195	p185_c1a.jpg:6	9	5	french	c	H	H		c	H	
+196	p185_c1a.jpg:7	8	4	french	h	H	H		h	H	
+197	p185_c1a.jpg:8	9	19	Armament	a	H	H		a	H	
+198	p185_c1a.jpg:9	9	18	Armament	r	H	H		r	H	
+199	p185_c1a.jpg:10	9	25	Armament	m	H	H		m	H	
+200	p185_c1a.jpg:11	9	19	Armament	a	H	H		a	H	
+201	p185_c1a.jpg:12	9	25	Armament	m	H	H		m	H	
+202	p185_c1a.jpg:13	9	26	Armament	e	H	H		e	H	
+203	p185_c1a.jpg:14	9	27	Armament	n	H	H		n	H	
+204	p185_c1a.jpg:15	9	28	Armament	t	H	H		t	H	
+205	p185_c1b.jpg:2	24	1	at	a	H	H		a	H	
+206	p185_c1b.jpg:3	24	4	at	t	H	H		t	H	
+207	p185_c1b.jpg:4	23	33	Rhode	r	H	H		r	H	
+208	p185_c1b.jpg:5	23	28	Rhode	h	H	H		h	H	
+209	p185_c1b.jpg:6	23	37	Rhode	o	H	H		o	H	
+210	p185_c1b.jpg:7	23	18	Rhode	d	H	H		d	H	
+211	p185_c1b.jpg:8	23	15	Rhode	e	H	H		e	H	
+212	p185_c1b.jpg:9	17	4	Island,	i	H	H		i	H	
+213	p185_c1b.jpg:10	17	7	Island,	s	H	H		s	H	
+214	p185_c1b.jpg:11	17	13	Island,	l	H	H		l	H	
+215	p185_c1b.jpg:12	17	18	Island,	a	H	H		a	H	
+216	p185_c2a.jpg:1	17	19	Island,	n	H	H		n	H	
+217	p185_c2a.jpg:2	17	20	Island,	d	H	H		d	H	
+218	p185_c2a.jpg:4	1	3	proceed	p	H	H		p	H	
+219	p185_c2a.jpg:5	1	5	proceed	r	H	H		r	H	
+220	p185_c2a.jpg:6	1	11	proceed	o	H	H		o	H	
+221	p185_c2a.jpg:7	2	6	proceed	c	H	H		c	H	
+222	p185_c2a.jpg:8	2	3	proceed	e	H	H		e	H	
+223	p185_c2a.jpg:9	2	8	proceed	e	H	H		e	H	
+224	p185_c2a.jpg:10	11	16	proceed	d	H	H		d	H	
+225	p185_c2a.jpg:11	18	17	under	u	H	H		u	H	
+226	p185_c2b.jpg:1	18	21	under	n	H	H		n	H	
+227	p185_c2b.jpg:2	18	22	under	d	H	H		d	H	
+228	p185_c2b.jpg:3	18	12	under	e	H	H		e	H	
+229	p185_c2b.jpg:4	18	9	under	r	H	H		r	H	
+230	p185_c2b.jpg:6	20	16	Command	c	H	H		c	H	
+231	p185_c2b.jpg:7	20	17	Command	o	H	H		o	H	
+232	p185_c2b.jpg:8	20	18	Command	m	H	H		m	H	
+233	p185_c2b.jpg:9	20	19	Command	m	H	H		m	H	
+234	p185_c2b.jpg:10	20	5	Command	a	H	H		a	H	
+235	p185_c2b.jpg:11	20	25	Command	n	H	H		n	H	
+236	p185_c2b.jpg:12	20	4	Command	d	H	H		d	H	
+237	p185_c3a.jpg:1	20	18		m	C	C	m	m	C	
+238	p185_c3a.jpg:2	20	5		a	C	C	a	a	C	
+239	p185_c3a.jpg:3	20	15			M	I	r	r	H	
+240	p185_c3a.jpg:5	18	17	Marquis	u	M	M	-	u	H	
+241	p185_c3a.jpg:6	18	10	Marquis	i	M	M	-	i	H	
+242	p185_c3a.jpg:7	18	13	Marquis	s	M	M	-	s	H	
+243	p185_c3a.jpg:8	13	10	de	d	H	H		d	H	
+244	p185_c3a.jpg:9	13	26	de	e	H	H		e	H	
+245	p185_c3a.jpg:10	16	18	Fayette	f	H	H		f	H	
+246	p185_c3a.jpg:11	16	19	Fayette	a	H	H		a	H	
+247	p185_c3a.jpg:12	16	27	Fayette	y	H	H		y	H	
+248	p185_c3a.jpg:13	16	25	Fayette	e	H	H		e	H	
+249	p185_c3a.jpg:14	16	16	Fayette	t	H	H		t	H	
+250	p185_c3b.jpg:1	16	21	Fayette	t	H	H		t	H	
+251	p185_c3b.jpg:2	16	14	Fayette	e	H	H		e	H	
+252	p185_c3b.jpg:4	16	31	Connecticut	c	H	H		c	H	
+253	p185_c3b.jpg:5	16	32	Connecticut	o	H	H		o	H	
+254	p185_c3b.jpg:6	16	15	Connecticut	n	H	H		n	H	
+255	p185_c3b.jpg:7	16	19	Connecticut	e	M	I	a	a	H	
+256	p185_c3b.jpg:8	16	25	Connecticut	c	M	I	e	e	H	
+257	p185_c3b.jpg:9	16	31	Connecticut	t	M	M	-	c	H	
+258	p185_c3b.jpg:10	16	21	Connecticut	i	M	I	t	t	H	
+259	p185_c3b.jpg:11	16	31	Connecticut	c	H	H		c	H	
+260	p185_c3b.jpg:12	1	27	Connecticut	u	H	H		u	H	
+261	p185_c3b.jpg:13	1	22	Connecticut	t	H	H		t	H	
+262	p185_c4a.jpg:1	1	18	Rivers	i	M	I	r	r	H	
+263	p185_c4a.jpg:2	1	19	Rivers	v	M	I	i	i	H	
+264	p185_c4a.jpg:3	22	6	Rivers	e	M	M	-	v	H	
+265	p185_c4a.jpg:4	17	3	Rivers	r	M	M	-	e	H	
+266	p185_c4a.jpg:5	17	5	Rivers	s	M	M	-	r	H	
+267	p185_c4a.jpg:7	20	5	across	a	H	H		a	H	
+268	p185_c4a.jpg:8	20	16	across	c	H	H		c	H	
+269	p185_c4a.jpg:9	20	33	across	r	H	H		r	H	
+270	p185_c4a.jpg:10	20	17	across	o	H	H		o	H	
+271	p185_c4a.jpg:11	20	26	across	s	H	H		s	H	
+272	p185_c4a.jpg:12	20	8	across	s	H	H		s	H	
+273	p185_c4a.jpg:13	18	4	the	t	H	H		t	H	
+274	p185_c4a.jpg:14	18	5	the	h	H	H		h	H	
+275	p185_c4b.jpg:1	18	6	the	e	H	H		e	H	
+276	p185_c4b.jpg:2	6	7	lakes	l	H	H		l	H	
+277	p185_c4b.jpg:3	6	6	lakes	a	H	H		a	H	
+278	p185_c4b.jpg:4	7	10	lakes	k	H	H		k	H	
+279	p185_c4b.jpg:5	7	15	lakes	e	H	H		e	H	
+280	p185_c4b.jpg:6	7	2	lakes	s	H	H		s	H	
+281	p185_c4b.jpg:7	16	1	to	t	H	H		t	H	
+282	p185_c4b.jpg:8	16	5	to	o	H	H		o	H	
+283	p185_c4b.jpg:9	16	46	Saint	s	H	H		s	H	
+284	p185_c4b.jpg:10	16	19	Saint	a	H	H		a	H	
+285	p185_c4b.jpg:11	16	22	Saint	i	H	H		i	H	
+286	p185_c4b.jpg:12	16	15	Saint	n	H	H		n	H	
+287	p185_c4b.jpg:13	16	16	Saint	t	H	H		t	H	
+288	p185_c5a.jpg:1	17	4	Johns,	j	M	M	-	i	H	
+289	p185_c5a.jpg:2	18	14	Johns,	o	H	H		o	H	
+290	p185_c5a.jpg:3	18	23	Johns,	h	H	H		h	H	
+291	p185_c5a.jpg:4	18	21	Johns,	n	H	H		n	H	
+292	p185_c5a.jpg:5	18	13	Johns,	s	H	H		s	H	
+293	p185_c5a.jpg:7	1	1	by	b	H	H		b	H	
+294	p185_c5a.jpg:8	1	2	by	y	H	H		y	H	
+295	p185_c5a.jpg:9	5	3	the	t	H	H		t	H	
+296	p185_c5a.jpg:10	5	4	the	h	H	H		h	H	
+297	p185_c5a.jpg:11	5	5	the	e	H	H		e	H	
+298	p185_c5a.jpg:12	22	8	river	r	H	H		r	H	
+299	p185_c5a.jpg:13	22	14	river	i	H	H		i	H	
+300	p185_c5a.jpg:14	22	6	river	v	H	H		v	H	
+301	p185_c5b.jpg:1	22	7	river	e	H	H		e	H	
+302	p185_c5b.jpg:2	22	8	river	r	H	H		r	H	
+303	p185_c5b.jpg:3	26	15	Saint	s	H	H		s	H	
+304	p185_c5b.jpg:4	26	19	Saint	a	H	H		a	H	
+305	p185_c5b.jpg:5	26	10	Saint	i	H	H		i	H	
+306	p185_c5b.jpg:6	26	9	Saint	n	H	H		n	H	
+307	p185_c5b.jpg:7	26	16	Saint	t	H	H		t	H	
+308	p185_c5b.jpg:8	23	35	Laurence;	l	H	H		l	H	
+309	p185_c5b.jpg:9	23	34	Laurence;	a	H	H		a	H	
+310	p185_c5b.jpg:10	23	25	Laurence;	u	H	H		w	H	page w vs token u [logged]
+311	p185_c5b.jpg:11	23	33	Laurence;	r	H	H		r	H	
+312	p185_c5b.jpg:12	23	31	Laurence;	e	H	H		e	H	
+313	p185_c6a.jpg:1	23	40	Laurence;	n	H	H		n	H	
+314	p185_c6a.jpg:2	23	41	Laurence;	c	H	H		c	H	
+315	p185_c6a.jpg:3	23	42	Laurence;	e	H	H		e	H	

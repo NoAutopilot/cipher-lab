@@ -1,0 +1,37 @@
+# Title page of A List of the General and Field Officers ... MDCCLXXVIII (London: J. Millan), archive.org listofgeneralfie00grea
+# (University of Pittsburgh copy, 270 images; download path page/n12.jpg = scandata leaf 13 "Title"; images/armylist1778/n12.jpg),
+# reconciled by GAPS4-pro3055-clinton-1779 (2 Oct 2026) from the blind Sonnet pass passes/title1778_passA.tsv (32 rows over 46
+# crops, 0 [?] marks) and the worker's own read of the page preview (passes/title1778_own.txt): the two agree letter for letter
+# on all 30 lines (small capitals differ in case only). One printed line per line, in order; black-letter CORPS and ARMY in
+# ordinary letters; long s as s. THIS IS THE 1778 PRINTING, the key book of the Clinton-Haldimand cipher (imprint MDCCLXXVIII,
+# pencil "1778" below the rule); see title_1778_check.py.
+BY PERMISSION of the RIGHT HONOURABLE
+The SECRETARY at WAR.
+A
+LIST
+OF THE
+GENERAL and FIELD OFFICERS,
+As they rank in the Army;
+OF THE
+OFFICERS in the several REGIMENTS
+OF
+HORSE, DRAGOONS, and FOOT,
+ON THE
+BRITISH and IRISH ESTABLISHMENTS.
+(To which is now added
+AN ALPHABETICAL INDEX)
+The Royal REGIMENT of ARTILLERY, and Corps of ENGINEERS,
+the IRISH ARTILLERY and ENGINEERS,
+And the MARINES on FULL and HALF PAY.
+WITH
+The Dates of their COMMISSIONS, as they rank in each
+CORPS and in the ARMY.
+The GOVERNORS, LIEUTENANT GOVERNORS, &c. of his MAJESTY's
+GARRISONS at Home and Abroad, with their ALLOWANCES.
+All the OFFICERS on HALF-PAY: And
+A SUCCESSION of COLONELS,
+With the UNIFORMS to each REGIMENT, from the new ORDER for
+CLOTHING, &c.
+MDCCLXXVIII.
+LONDON:
+Printed for J. MILLAN, opposite the Admiralty-Office, Whitehall.
