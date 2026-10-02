@@ -1,0 +1,10 @@
+flags	--floor 100 --keep-fs
+agrees_all	real 63	control mean 34.7 p95 41 max 45	real>max True
+agrees_unseeded	real 63	control mean 34.7 p95 41 max 45	real>max True
+
+real	0m8.620s
+user	0m8.118s
+sys	0m0.319s
+flags	--floor 100 --keep-fs --prior f23_seed_prior.tsv --word-prior
+agrees_all	real 77	control mean 34.9 p95 44 max 49	real>max True
+agrees_unseeded	real 57	control mean 29.1 p95 38 max 39	real>max True

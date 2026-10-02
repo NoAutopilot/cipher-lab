@@ -11,7 +11,7 @@ import csv, random, subprocess, sys, tempfile, os
 SEED, N = 20261002, 50
 HERE = os.path.dirname(os.path.abspath(__file__))
 TOOL = os.path.join(HERE, '../../../tools/interlinear_align.py')
-FLAGS = ['--floor', '100', '--keep-fs', '--max-chunk', '6']
+FLAGS = ['--floor', '100', '--keep-fs']  # Thurloe default --max-chunk 14: 82 = 'mon nepueu' needs 9 letters
 seeded = set()
 if '--prior' in sys.argv:
     pr = sys.argv[sys.argv.index('--prior') + 1]

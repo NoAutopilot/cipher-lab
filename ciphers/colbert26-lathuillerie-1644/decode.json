@@ -1,4 +1,22 @@
-{"target": "ciphers/colbert26-lathuillerie-1644",
- "note": "A2-COL, 2 Oct 2026: f.24 (canvas 27) cipher runs read with key_f24.tsv (from the leaf's own interlinear gloss). U11.1 is the held-out run (gloss 'des ordres de S.E.').",
- "jobs": [{"ciphertext": "ciphertext_f24.tsv", "key": "key_f24.tsv", "reading": "reading_f24.txt", "tokens": "reading_tokens_f24.tsv",
-   "format": "tsv", "style": "spaced"}]}
+{
+ "target": "ciphers/colbert26-lathuillerie-1644",
+ "note": "A2-COL, 2 Oct 2026: f.24 (canvas 27) cipher runs read with key_f24.tsv (from the leaf's own interlinear gloss). U11.1 is the held-out run (gloss 'des ordres de S.E.'). A2-COL2, 2 Oct 2026: f.23 (canvas 26) two-digit runs read with key_f23.tsv (from that leaf's own interlinear gloss); P36 is the held-out pair (gloss 'que vous estes tresbien icy').",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext_f24.tsv",
+   "key": "key_f24.tsv",
+   "reading": "reading_f24.txt",
+   "tokens": "reading_tokens_f24.tsv",
+   "format": "tsv",
+   "style": "spaced"
+  },
+  {
+   "ciphertext": "ciphertext_f23.tsv",
+   "key": "key_f23.tsv",
+   "reading": "reading_f23.txt",
+   "tokens": "reading_tokens_f23.tsv",
+   "format": "tsv",
+   "style": "spaced"
+  }
+ ]
+}

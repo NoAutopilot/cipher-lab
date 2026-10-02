@@ -612,21 +612,97 @@ subagent passes were started. It is the stronger leaf for this tool: two-digit c
 
 Hosts: gallica.bnf.fr IIIF 1 request. Subagents: 2 (Sonnet, blind passes). No credentials.
 
-## Remaining gaps (A2-COL, 2 Oct 2026)
+## A2-COL2 (account 2, LANE-A2PUSH, 2 Oct 2026): f.23 interlinear alignment and its own control
 
-Read so far: 27 of 168 f.24 cipher tokens at grade C (reading_tokens_f24.tsv); f.23 and the other 19 cipher-bearing canvases 0.
-- f.23 (canvas 26) gloss alignment - blocker: not-attempted; about 22 glossed two-digit-code lines, not cropped this job (allowed_warning, no new subagents); next: iiif_lines crops of its gloss+cipher pairs, 2 blind passes + 1 reconciliation, interlinear_align --floor 10 with a shuffled-gloss control, ~$5
-- f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv); next: re-run with an f.23 key as --prior if the leaves share signs, each leaf gated first, ~$1
+Brief `.claude/briefs/runs/2026-10-02-acct2-a2-col2.md`. Intake gate at start: `colbert26-lathuillerie-1644: partial (line 1)
+-- edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Leaf.** f.23 (canvas 26), "A Paris le 17e mars 1646", "Mon nepveu". Two-digit codes written in unsegmented runs, a second
+hand's French decipherment above most runs, word by word ("de mon nepueu" over 51 82, "de S E" over 51 29, "pour la charge
+de M de Brienne" over 97 28 12182961 51 31, "Il y ira" over 81 35 2055). Some digits carry a bar (over 2 of 28, 4 of 46/48/49,
+the final 99 of 46322999); the bars are recorded in `interlinear/f23_reconciled.tsv` notes but not coded as distinct signs.
+The rotated left-margin postscript (also two-digit runs, glossed) was not cut and is not in this step.
+
+**Crops (commands).** One region fetched: `python3 tools/iiif_lines.py --ark btv1b10035069t --canvas 26 --region
+3900,700,3600,5400 --out <scratch> --prefix f23 --debug --dry-run` (1 Gallica IIIF request). Then 30 units (gloss line +
+cipher line), each `python3 tools/iiif_lines.py --image <that src> --region 0,Y0,3600,H --centres H/4,3H/4 --lines-per-crop 2
+--top-margin H/4 --bottom-margin H/4 --out <scratch>/crops --prefix f23_UNN` with Y0:Y1 = 120:300 290:440 430:560 560:690
+680:800 800:920 980:1140 1160:1290 1270:1440 1420:1580 1530:1700 1780:1960 1940:2070 2040:2170 2220:2350 2330:2460
+2460:2580 2580:2700 2860:3000 2970:3130 3220:3380 3360:3490 3500:3610 3610:3760 3760:3880 3980:4140 4140:4290 4290:4400
+4390:4520 4500:4620 (U01-U30). 60 segment crops (<= 2400 px), scratch only, not committed (folder already near 30 MB).
+
+**Transcription.** Two blind Sonnet passes over the 60 crops (pass B in reverse unit order), then this worker's reconciliation
+against the strips and four native zooms (U04, U06, U07, U09-U10, U17). Digit runs agreed in 10 of 30 units outright; the rest
+differed by a split, a cut-off tail or one digit. Settled from the image: U06 "29 39 82" (both passes 292981), U07 2130 (bar
+over 3), U04 46322999, U17 53223929, U10 29 77 43 29 29 29, U27 1235 39. Result: 42 gloss/cipher pairs, 306 code tokens, 70
+distinct codes (`interlinear/f23_reconciled.tsv`, each disagreement and how it was settled in its note column). P36 ("que vous
+estes tresbien icy", 13 codes) is **held out** of the alignment as a known-answer test; 41 pairs, 293 tokens aligned.
+Visible by eye before any alignment (not used as evidence for the gate): 82 under every "mon nepueu" (5 pairs), 51 under "de"
+(5), 29 under "S E" (3), 49 under "que", 98 under "vous", 97 under "pour", 10 under "a", 39 under "et", 89 under "M".
+
+**Alignment.** `tools/interlinear_align.py align interlinear/f23_pairs.tsv interlinear/f23_align.tsv interlinear/f23_key_raw.tsv
+--floor 100 --keep-fs` (codes renumbered 100+code so every code may take a chunk; tool's default --max-chunk 14, because
+--max-chunk 6 cannot let 82 take "monnepueu"). Configurations tried on the real pairs before the control (logged, rule 3
+forking paths): max-chunk 6 flat 60 agrees, with --len-prior 0.5 49, max-chunk 10 61, default 63; seeded (82 monnepueu, 51 de,
+29 se, `interlinear/f23_seed_prior.tsv`, --word-prior) 73-77. The two configurations then put through the control were fixed
+as the default flat start and the default seeded run.
+
+**Control (rule 3, per-leaf gate; `interlinear/f23_control.py`, output `interlinear/f23_control_out.txt`).** Same cipher runs,
+gloss phrases dealt in a random derangement, same flags, 50 seeds. The control changes which gloss a run meets, which is what
+the agreement statistic depends on, so it can fail differently from the real run.
+```
+flags	--floor 100 --keep-fs
+agrees_all	real 63	control mean 34.7 p95 41 max 45	real>max True
+flags	--floor 100 --keep-fs --prior f23_seed_prior.tsv --word-prior
+agrees_all	real 77	control mean 34.9 p95 44 max 49	real>max True
+agrees_unseeded	real 57	control mean 29.1 p95 38 max 39	real>max True
+```
+**Per-leaf gate: f.23 passes, from a flat start (63 vs shuffled max 45), with a wider margin than f.24's (unseeded 21 vs 18).**
+
+**Key** (`key_f23.tsv`, 70 codes, from the flat-start run so no seeded value counts). Grade C by the same rule as key_f24
+(>= 2 occurrences, >= 2/3 take one chunk): 10 a (4/6), 24 s (2/3), 40 b (2/2), 65 s (2/2), 89 m (2/3), 97 pour (2/3); every
+other code M. The strict string rule undercounts word codes whose gloss runs over unglossed neighbours: 82 takes "monnepueu",
+"nepueu", "epueu" (5 occurrences, all inside "mon nepueu") and stays M by the rule; 51 takes "de" 3 of 13. The design looks like
+a two-digit syllabary with word codes (12 18 29 61 under "charge" twice, 59 20 39 under "ruyne" twice, 10 22 40 30 65 51 32 29
+under "ambassadeur" twice, 48 32 29 31 under "Court" twice).
+
+**Decode** (`decode.json` second job, `python3 tools/decode_key.py ciphers/colbert26-lathuillerie-1644 [--check]`, exit 0,
+"reading up to date"): `reading_f23.txt`, `reading_tokens_f23.tsv`; 306 tokens: H 0, C 20, S 0, M 285, I 0, U 1 (the
+unread "8?" of P13). Cryptanalytic-grade only by the rule-4 count; the C is the leaf's own gloss. Held-out P36: its one C token
+(65 = s, 10th of 13 codes, between "estes" and "icy") is consistent with an s in "tres"; 1/1, too thin to be a test of more than
+non-contradiction. Judge, pasted:
+```
+FAIL language: score=-1.582, null_p99=-1.893, real_p05=-0.911, real_median=-0.789, mode=both, N=596
+ok   words: cover=0.767, min=0.4, real_text_median_cover=0.95
+FAIL - colbert26-lathuillerie-1644 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Expected: 285 of 306 tokens are M alignment chunks.
+
+**f.24 re-run with the f.23 key as --prior: not run, the leaves do not share a key.** f.24 is a mixed letter/symbol/number
+system (59 signs: f, L, y, ll, w', E ... beside 1-2 digit numbers); f.23 is two-digit codes only. Where a number occurs on both
+leaves the period glosses give it different values: 51 is "de" under f.23's gloss (5 pairs) but l on f.24 (C, 2/2), and f.24's
+"de" is 83; 31 is que on f.24 (C, 4/4) but stands under "M de Brienne" on f.23 (P08, P11, P12). Seeding f.24 with f.23 values
+would inject a different key's meanings (the Szembek merge rule in CLAUDE.md rule 3): no merge, each leaf keeps its own key.
+
+Hosts: gallica.bnf.fr IIIF 1 request. Subagents: 2 (Sonnet, blind passes, 60 crops each); own reads: 6 strip composites + 2
+native zooms. No credentials.
+
+## Remaining gaps (A2-COL2, 2 Oct 2026)
+
+Read so far: 27 of 168 f.24 tokens and 20 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing canvases 0.
+- f.23 codes beyond the 6 C codes - blocker: not-attempted; 41 pairs with phrase-level glosses leave 64 of 70 codes at M because a gloss phrase also covers unglossed neighbouring runs (A2-COL2 step); next: re-cut the pairs to the run directly under each gloss word (word-level pairs, by eye from the same crops) and re-align with the same shuffled-gloss control, ~$2
+- f.23 rotated margin postscript - blocker: not-attempted; glossed two-digit runs in the left margin, not cut (A2-COL2 step); next: iiif_lines crop of the rotated block, 2 blind passes + 1 reconciliation, held out against key_f23 as a known-answer test, ~$2
+- f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv), and f.23 is a different key, so it cannot serve as the prior (A2-COL2 step)
 - canvas 20-21 notes - blocker: not-attempted; KX-LATHKEY2 judged them topical, but f.24 shows gloss lines were taken for clear text; next: re-read canvas 20 gloss-vs-clear on native crops, ~$2
 
-## Escalation (A2-COL, 2 Oct 2026)
+## Escalation (A2-COL2, 2 Oct 2026)
 
-- [ ] siblings: f.23 (canvas 26), a glossed leaf of the same volume, planned as the next alignment
-- [x] clear-pages: f.24's own interlinear decipherment aligned, control passed narrowly (this section)
+- [ ] siblings: the other 19 cipher-bearing canvases not yet sorted by system (two-digit like f.23, mixed like f.24); next: one thumbnail sort, ~$1
+- [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
 - [x] known-keys: KX-LATHCT1 compared the cluster with key_1646, key_brienne_1647, key_1659 (different keys)
 - [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
-- [ ] key-rebuild: after f.23, merge per-leaf keys only where each leaf cleared its own control
+- [n/a] key-rebuild: f.23 and f.24 are different keys (51, 31 conflict), so there is no merge to make
 - [ ] image-check: canvas 20-21 gloss-vs-clear re-read on native crops
-- [ ] retry: f.24 alignment with the f.23 key as prior
+- [ ] retry: f.23 word-level re-pairing and re-alignment with the same control
 
-Verdict: keep going: 3 internal gaps; cheapest next: f.24 re-run with f.23 key as prior after f.23, ~$1
+Verdict: keep going: 4 internal gaps; cheapest next: f.23 word-level re-pairing from the existing crops + re-align with control, ~$2
