@@ -42,3 +42,9 @@ ciphers/nevers-birago-fr3251-1572/harvest/f174vB/lines2x/
 ciphers/nevers-birago-fr3251-1572/harvest/f175r/lines2x/
 ciphers/nevers-birago-fr3251-1572/harvest/f175v/lines2x/
 ciphers/nevers-birago-fr3251-1572/harvest/f174v/lines2x/
+ciphers/nevers-birago-fr3251-1572/harvest/f184v/lines2x/
+ciphers/nevers-birago-fr3251-1572/harvest/f185r/lines2x/
+# NEVBIR-185 (2 Oct 2026): native source regions and debug overlays kept out (folder near its 30 MB line); regenerate with harvest/f185/REGEN.sh
+ciphers/nevers-birago-fr3251-1572/harvest/f185/src_*.jpg
+ciphers/nevers-birago-fr3251-1572/harvest/f184v/*_lines_debug.jpg
+ciphers/nevers-birago-fr3251-1572/harvest/f185r/*_lines_debug.jpg
