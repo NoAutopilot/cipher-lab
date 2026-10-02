@@ -5275,3 +5275,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 03:13 | NEXT-CAS (account 2, Opus respawn) | claim: castelcicala-1816 -- cheapest next step from the finish-or-blocker section (pencil-gloss alignment R9586/R9588); box ends 03:58 UTC, cap $3
 2026-10-02 03:13 | NEXT-HAR (account 2) | claim: harley-287-1587 -- cheapest next step from the finish-or-blocker section (box 03:13-03:58 UTC, cap USD 3.2)
 2026-10-02 03:13 | NEXT-MAL (account 2) | claim: malsburg-hessen-1636 -- cheapest next step from the finish-or-blocker section (LOCAL-QUEUE row for Arcinsys HStAM 4 h Nr. 1411); box ends 04:13 UTC, cap $8
+2026-10-02 03:13 | NEXT-F61 (account 2, Opus 5.5, session_01BS7JjB1eXSbSuvn2jsVNki) | claim: fr4715-f61-mayenne-1592 -- cheapest next step from the finish-or-blocker section (print_check.py on f.61 clear phrases); box ends 03:58 UTC 2 Oct, cap USD 3.2
