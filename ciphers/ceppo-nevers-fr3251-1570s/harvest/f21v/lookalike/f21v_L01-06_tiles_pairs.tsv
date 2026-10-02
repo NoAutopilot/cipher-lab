@@ -1,0 +1,5 @@
+run	passage	pos	passC	A	B	status	why	candidates	before	after	noteA	noteB
+f21v_L01-06	L01	15	S49	S49	S73	split+adj	split	S49,S73	S52 S23 S75	S94 S35 S89		
+f21v_L01-06	L03	7	S49	S49	S73	split+adj	split	S49,S73	S94 S75 S17	S53 S75 S49		
+f21v_L01-06	L03	10	S49	S49	S73	split+adj	split	S49,S73	S49 S53 S75	S37 S93 S62		
+f21v_L01-06	L03	14	S49	S49	S73	split+adj	split	S49,S73	S37 S93 S62	S75 S74 S62		

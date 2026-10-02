@@ -928,12 +928,73 @@ the shortlist because line 1 of this file still read `open` while the two audits
 reading, let it through. Fixed here under rule 5 (a target that beat its matched control is `partial`): line 1 now
 reads `partial`, with the finish-or-blocker sections below; the spec's `cheap_test_done` now names all four folios.
 
+## CEPPO-SPLITS: f.21v look-alike pairs S49/S73 and S23/S97 settled by shape against the fr.3252 period gloss (2 Oct 2026, account 2 for the account-3 orchestrator)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-ceppo-splits.md`. Clock read 21:32 UTC at start. No class, no novelty wording.
+
+**Crops (command, pasted).** `python3 tools/iiif_lines.py --image ciphers/ceppo-nevers-fr3251-1570s/harvest/f21v/c23_cipher_w.jpg
+--out <scratchpad>/f21v_sp --prefix f21v --debug --groups 8 --group-upscale 3` (13 bands, 580 ink pieces; band n+1 =
+passage Ln, checked on the overlay). The per-sign tiles kept are cut from the same native region at 4x
+(`harvest/f21v/lookalike/crops/`, `f21v_L07_7_vs_10.jpg`, `f21v_L09_1_6_17.jpg`). No Gallica request; no subagent.
+
+**Known answer: which shape is which value.** The brief named the glossed leaves ff.27, 39 and 82, but their glosses
+cannot be read at Gallica's native resolution (NEV-C2: six letters legible on f.27). The legible period decipherment in
+the same key and hand is fr.3252 f.36-37 (HARVEST-D, images on disk), so it served as the known answer
+(`harvest/f21v/lookalike/witness_crops/`; the gloss letters were read by this worker, grade M):
+- diagonal slash with one dot on each side: glossed **n** 5 times (f.36v L1 x3, f.36v L1 s2, f.36r L4). The printed
+  sheet has two horizontal forms, S30 (r) and S49 (n), and S73 (null). Birago's diagonal form takes S49's value, n.
+- caret with a dot between or under the legs (the A-form, sheet S23): glossed **n** 3 times (f.36v L4, f.36r L4 x2).
+- lambda with a curled top and no dot (sheet S97): glossed **a** once (f.36r L4, in the run "lambda, dotted slash"
+  glossed "a n").
+
+**The f.21v tiles.** All four S49/S73 splits (L01.15, L03.7, L03.10, L03.14) are the diagonal dotted slash; all five
+S23/S97 splits (L07.10, L07.27, L09.1, L09.6, L09.17) carry the dot inside the caret (L07.27 is the A-form with a dot
+beside it). L07.7, which both readers had already labelled S97, is the curled-top lambda with no dot, and it sits three
+signs from L07.10, the dotted caret, in one line. The dot is the feature that tells them apart.
+`tools/lookalike_pass.py` was run as confusion (the f.21v and f.87 alignments: `harvest/f21v/lookalike/confusion.tsv`),
+then packet (`--top 0`, the 40 splits; filtered to the 9 tiles of the two named pairs in `*_tiles_pairs.tsv`), then
+reconcile with this re-read (`reread_*.tsv`, H, basis column = the witness shape). Result: 9 of 9 settled 2-of-3, 0
+relabelled, 0 unsettled. The adjudicator's passC labels stand. In all nine, reader A matched the settled label and
+reader B did not. `harvest/f21v/passD.tsv` = passC with these 9 tokens at H; `ciphertext_f21v.tsv` was rebuilt from
+it (`build_decode_inputs.py f21v --seq f21v/passD.tsv`).
+
+**True error (brief's requirement): not measured.** No blind reader was run on a glossed leaf in this job, so there is
+no before/after reader-error figure. What was measured: the shape rule against the glossed witness, 9 of 9 consistent
+(5 n, 3 n, 1 a), on gloss letters read by one worker (M). On f.21v itself, reader B's error at these 9 tiles was 9/9
+before the settlement and 0 after (these figures are against the gloss-shape rule, not against a gloss on f.21v).
+
+**Decode** (`tools/decode_key.py ciphers/ceppo-nevers-fr3251-1570s`, `--check`: "reading up to date"). f.21v tokens 267:
+S 179 -> **188**, M 76 -> **67**, I 7, U 5 (unchanged). f.11r, f.35 and f.87 are unchanged. The letters are identical, so
+no word changes. What changes is that "intencione" (L03, three dotted slashes = n) and "auanti" (L07.10, dotted caret
+= n, beside L07.7 curled lambda = a) now rest on a shape the period clerk glossed. The verifier had left both
+unendorsed because they were not forced on D (VERIFY-CEPPO-D2-1). They are cryptanalytic (S) with this shape evidence.
+The verifier decides whether to endorse them. English: "intention", "before (avanti)"; L09 "tanto dinar[i] ... in
+diuer[s]e" = "so much money ... in divers[e]" (its n's now S).
+
+**Control (rule 3) at the measured two-reader error** (f.21v disagreement 40/267 = 0.15; `decode_control.py
+f21v/passD.tsv --shuffles 200 --windows 20 --err 0.15 --extra X_THETA2=r`): real key -1.111. Seed 1: z 6.40, rank 1/201,
+power 20/20 (z median 8.37). Seed 2: z 7.01, rank 1, 20/20. Seed 3: z 6.96, rank 1, 20/20.
+
+**Judge** (`python3 tools/judge_plaintext.py specs/ceppo-nevers-fr3251-1570s.json --file
+ciphers/ceppo-nevers-fr3251-1570s/harvest/reading_f21v_letters.txt`, pasted):
+```
+FAIL language: score=-1.136, null_p99=-1.702, real_p05=-0.931, real_median=-0.824, mode=both, N=261
+FAIL - ceppo-nevers-fr3251-1570s (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Unchanged, as expected, because the letters did not change.
+
+**f.87: not done here.** 27 split tiles of the four named pairs went to `sorter/focus.tsv` for the owner. These are
+not blocking. No sorter page exists for this target yet; the file is ready for `tools/sign_sorter.py --focus`. The
+fr.3252 witness has glossed instances of S24 (o), S31 (m) and S80 (a). A per-pair witness read like the one above is
+the next step. The f.21v S65/S80 pair (20 splits, the largest on f.21v by the confusion table) is outside this brief
+and is named below.
+
 ## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
 
-Read so far: 401 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 179/267, f.35 35/76, f.87 134/204, the
+Read so far: 410 of 682 tokens at S across the four letters (f.11r 53/135, f.21v 188/267 after CEPPO-SPLITS, f.35 35/76, f.87 134/204, the
 HARVEST-A/D2 decode grades; `reading_f*_tokens.tsv`), word fragments and short passages, no continuous text; judge FAIL
 on every folio.
-- f.21v, 76 M + 5 U + 7 I tokens of 267, behind "intencione" (L03) and "auanti" (L07) - blocker: not-attempted; the S49/S73 (n/null) and S23/S97 (n/a) look-alike splits were adjudicated at 2x and not forced on the verifier's D (AUDIT.md VERIFY-CEPPO-D2-1, f.21v); next: per-sign crops at 3-4x of those two pairs, two fresh blind passes on the crops only, then `harvest/decode_control.py` again, ~$5.
+- f.21v, 67 M + 5 U + 7 I tokens of 267 - blocker: not-attempted; the S49/S73 and S23/S97 pairs are settled (CEPPO-SPLITS above), and the largest remaining split is S65/S80 (et/a, 20 tiles, `harvest/f21v/lookalike/confusion.tsv`); next: the same witness-shape settle for S65/S80 (fr.3252 f.36v glosses S80 a; find a glossed plain 8) on 4x tiles, then reconcile and decode_control, ~$4.
 - f.87, 66 M + 4 U tokens of 204 - blocker: not-attempted; the four look-alike pairs (S54/S74/S77/S37, S80/S65, S24/S88, S31/S32/S76) recur on every line and the merge scored below its inputs (HARVEST-D2 f.87 section); next: per-sign crops for the four pairs plus a witness check of S24/S88 and S80/S65 against the fr.3252 f.36 glosses (`harvest/f3252_f36/`), ~$5.
 - f.11r, 12 I tokens (the pound sign read l from context) - blocker: not-attempted; no period gloss on the sign yet (AUDIT.md "Named next step"); next: look for the pound sign on ff.27, 39, 82 (period decipherments, images on disk under `harvest/`) and read its interlinear value, ~$3.
 - f.35, 38 M tokens of 76 on two lines - blocker: too-short; 73 letters, at the control's power floor, and the verifier's blind reader rated no decode of it LANG (AUDIT.md f.35); more letters cannot come from this leaf.
@@ -946,5 +1007,5 @@ on every folio.
 - [x] print: `tools/print_check.py` on the f.21v phrases (HARVEST-D2, `print-check.tsv`), no hit; two novelty audits per letter (AUDIT.md), N3.
 - [x] key-rebuild: the printed key holds on every folio; the two off-sheet signs were added from the fr.3252 witness (r) and the value fit (l, grade I), nothing else to rebuild.
 - [x] image-check: native Gallica regions for all four folios on disk (`harvest/f*/manifest.json`), line centres and tracks checked on overlays; f.87's crops were re-cut three times before the readers ran (HARVEST-D2).
-- [x] retry: f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
-Verdict: keep going: 3 internal gaps; cheapest next: per-sign crops of the S49/S73 and S23/S97 pairs on f.21v, ~$5
+- [x] retry: f.21v's S49/S73 and S23/S97 splits settled from the shapes in the fr.3252 period gloss (CEPPO-SPLITS, 2 Oct 2026); f.87's reconciliation was redone whole-line and value-blind by the verifier, lifting the merge from rank 2 (z 2.48) to rank 1 (z 5.1-5.3) (AUDIT.md VERIFY-CEPPO-D2-1, f.87).
+Verdict: keep going: 3 internal gaps; cheapest next: look for the pound sign on ff.27, 39, 82 and read its interlinear value, ~$3
