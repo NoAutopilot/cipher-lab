@@ -461,7 +461,11 @@
         {
             "order": 201,
             "local_thumb": "images/201.jpg",
-            "eye_check": "mostly blank, tabular column headers only, no cipher"
+            "eye_check": "CIPHER+DECIPHERMENT (corrected 2 Oct 2026, GAPS2): left page carries the last two code+gloss rows of a No.2-type interlinear decipherment (710 part, 721 mis, 881 les, 404 croisieres / 435 il y a, 574 deux, 62 vaisseaux, 420 dash) then Signe Janssens; right page blank; the earlier thumbnail eye-check (tabular headers, no cipher) was wrong",
+            "label": "NL-HaNA_2.01.27.05_12_0201.jpg",
+            "thumbnail_url": "https://service.archief.nl/api/file/v1/thumb/4229b518-9671-4ae5-a3f1-da180635d74d",
+            "iiif_info_url": "https://service.archief.nl/iip/iipsrv?IIIF=f3/b8/ac/9c/c4/3c/4e/fd/b5/cf/37/6e/16/19/95/56/4229b518-9671-4ae5-a3f1-da180635d74d.jp2/info.json",
+            "local_hires_2561": "images/201_hi.jpg"
         },
         {
             "order": 202,
@@ -607,5 +611,6 @@
             "eye_check": "blank/edge leaf, end of bundle"
         }
     ],
-    "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)"
+    "note_25sept_VX-RD02": "gap leaves 180-184/201-202/204-208/210 thumbnailed (all plain prose/tabular, no cipher); leaves 188/190/191/192/198/199/200 refetched at IIIF full/2561 for transcription (images/NNN_hi.jpg)",
+    "note_2oct_GAPS2": "leaf 201 fetched at IIIF full/2561 (images/201_hi.jpg, one request, 2 Oct 2026; scan id from the invnr @12 page's drupal-settings-json); crops in images/crops_201/ (tools/iiif_lines.py, see its manifest.json)"
 }

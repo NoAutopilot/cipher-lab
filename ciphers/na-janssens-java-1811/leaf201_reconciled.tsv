@@ -1,0 +1,10 @@
+leaf	order	code	gloss	note
+201	1	710	part	A/B part; final letter is a small t or flourish, uncertain (par-t or par); with 721 mis next it reads par-mis = parmi
+201	2	721	mis	A/B mis (key 721 = mi from a corrected cell on 191); clean cell here
+201	3	881	les	A/B les; clean
+201	4	404	croisières	A/B croisiers; crop L01 shows croisieres with the accent faint, key 404 = croisières on 191 (same word)
+201	5	435	il y a	A/B il y a; clean; final digit 5 is the open-top 5 with hook, same glyph as the first digit of the next code
+201	6	574	deux	A/B read 674 dans; crop L02: first digit is the same hooked 5 as the final digit of 435 (the 6 of 62 is a closed loop), so 574; gloss final glyph is the looped x of vaisseaux, not the short s of mis/les, so deux; key 574 = Deux (C, 190/191/199/200)
+201	7	62	vaisseaux	A/B vaisseaux; clean
+201	8	420		dash under 420 (the end-of-text mark), no word; key 420 = fin (192 Fin.); skipped from the merge as no gloss
+201	9		Signé Janssens.	signature line

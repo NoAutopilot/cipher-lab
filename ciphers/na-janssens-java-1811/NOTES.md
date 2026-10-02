@@ -797,12 +797,80 @@ Rule 10: no decipherment or plaintext of leaf 188 was found; the web and blog ch
 none either. Requests this step: none to any image host (192_hi.jpg was already on disk); WebSearch 8, one request
 each to the three blogs and to napoleon-histoire.com for the gate step.
 
-Not done (one line each, out of this step's scope): leaf 201's two code+gloss rows (one IIIF fetch, same procedure;
-next cheapest, below); the No.4 set (gap 2); the build_key.py accent/drop bug fix (gap 2 names it first).
+Not done (one line each, out of this step's scope): leaf 201's two code+gloss rows (done 02:45-03:0x UTC, GAPS2
+section below); the No.4 set (gap 2); the build_key.py accent/drop bug fix (gap 2 names it first).
+
+## GAPS2-na-janssens-java-1811 (2 Oct 2026, account-4)
+
+The Verdict line's cheapest step as rewritten at the 02:07 UTC done line above, run 2 Oct 2026 02:45-03:0x UTC (same
+brief, `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`): one IIIF fetch of leaf 201, crops, two blind passes
+plus one reconciliation of its two code+gloss rows, `scripts/merge_leaf.py`, redecode leaf 188, re-judge.
+
+**Fetch (one request to service.archief.nl):** `images/manifest.json` had no IIIF id for leaf 201 (the thumbnail-only
+rows carry none), so the scan record was read from the invnr @12 page's embedded `drupal-settings-json` (one request
+to www.nationaalarchief.nl; scan id 4229b518-9671-4ae5-a3f1-da180635d74d) and the leaf fetched once at `full/2561`
+(`images/201_hi.jpg`, 2561x1969, 196 KB; manifest row updated with the ids and a corrected eye-check).
+
+**Leaf 201 is the close of an interlinear decipherment, not "tabular column headers"** (the 1 Oct eye-read of the
+thumbnail was right, the CS05 inventory row wrong): the left page carries two code rows with a French gloss under each
+code, then "Signé Janssens"; the right page is blank. Which dispatch it closes is not established here: leaf 192
+already ends No.2 ("Fin. Signé Janssens") and leaf 200 ends No.3, so these two rows are the tail of a third gloss whose
+earlier leaves are not identified on disk (the raw sequence 710 721 881 404 435 574 62 420 does not occur on leaf 188).
+
+Crops: `python3 tools/iiif_lines.py --image ciphers/na-janssens-java-1811/images/201_hi.jpg --out
+ciphers/na-janssens-java-1811/images/crops_201 --region 0,60,1300,640 --distance 45 --prominence 15 --lines-per-crop 2
+--prefix 201 --debug` (the leaf-192 settings; 6 lines found, paired into three crops `201_L01..L03.jpg`, 1300 px wide:
+code row 1 with its gloss, code row 2 with its gloss, the signature). Overlay `images/crops_201/201_lines_debug.jpg`
+checked before the passes: every band edge falls in whitespace.
+
+Passes: two blind Sonnet subagent calls, one per pass, each given only the three crop paths (`leaf201_passA.tsv`,
+`leaf201_passB.tsv`, same format as leaf 192). Both read **8 codes**; codes agree 8/8 and glosses 8/8 (identical
+files apart from the notes). Reconciliation by this worker from the crops (`leaf201_reconciled.tsv`, settlements in
+its note column) changed two cells both passes had read alike and settled one flag:
+- row 2 cell 1: both passes 674 "dans"; pass A flagged "first digit could be 5". Crop L02: the first digit is the same
+  hooked open-top 5 as the final digit of 435 beside it (the 6 of 62 is a closed loop), so **574**; the gloss's final
+  glyph is the looped x that ends "vaisseaux", not the short s that ends "mis" and "les", so **deux**. `key.tsv`
+  already holds 574 = Deux at grade C from four cells (190, 191, 199, 200), and "il y a deux vaisseaux" is the sense.
+- row 1 cell 4: both passes "croisiers"; the crop shows "croisieres" with a faint accent; key 404 = croisières (191):
+  recorded as the same word (accent-fold agreement).
+- row 1 cell 1: 710 "part", final letter a small t or a flourish (uncertain, graded M); with 721 "mis" next it reads
+  par-mis = parmi, and the whole close is "parmis les croisières il y a deux vaisseaux. —".
+- row 2 cell 4: 420 with a dash under it, the end-of-text mark, no word; left out of the merge (key 420 = fin, from
+  192's "Fin.").
+Vision calls: three (the two subagent passes and this worker's reconciliation reads of the overlay and crops L01/L02).
+
+Merge: `scripts/merge_leaf.py leaf201_reconciled.tsv --key key.tsv --conflicts conflicts.tsv`: **4 codes added**
+(881 les, 435 il y a, 62 vaisseaux at C; 710 part at M as above), **2 same-value confirmations** (404 croisières n=2,
+574 deux n=5), **1 conflict** (721 mi/mis, the row was already M from a corrected cell on 191; one more row in
+`conflicts.tsv`, 24 -> 25), 2 rows skipped (the dash, the signature). `key.tsv` 233 -> **237 codes** (C 141 -> 144,
+M 92 -> 93).
+
+Leaf 188 redecoded (`python3 tools/decode_key.py ciphers/na-janssens-java-1811`, then `--check`, exit 0):
+**163 tokens: C 62, M 26, U 75** (was C 60, M 26, U 77) -- keyed **88/163 = 54.0%** (was 86/163, 52.8%): +2 tokens,
+both on line 12, which now reads "[442] . alinea [443] vaisseaux [645] [335] tous les [476] l' ennemie" (62 and 881;
+710, 721, 435, 404 and 574 do not occur on leaf 188). The 75 unkeyed tokens are 62 distinct codes.
+
+`python3 tools/judge_plaintext.py specs/na-janssens-java-1811.json --file ciphers/na-janssens-java-1811/reading.txt`:
+```
+FAIL language: score=-0.976, null_p99=-1.816, real_p05=-0.899, real_median=-0.789, mode=both, N=247
+ok   words: cover=0.903, min=0.3, real_text_median_cover=0.951
+FAIL - na-janssens-java-1811 (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Reported as a **FAIL** per rule 7: language -0.985 -> -0.976 against real_p05 -0.899 (the gate itself moved from
+-0.89 with the longer N), cover 0.902 -> 0.903; a small move toward the gate, as two tokens in 163 should give. No
+shuffled-target check was run because the judge did not clear. No matched control, for the same reason as the leaf-192
+step: this is a grade-C known-plaintext key extension from a period decipherment of other text, not a solver family;
+the 8/8 code and 8/8 gloss agreement of the two blind passes is the reconciliation control. Rule 10: no decipherment
+or plaintext of leaf 188 was found this step; nothing was searched for one (the web and blog check above, same day,
+stands).
+
+Requests this step: www.nationaalarchief.nl 1, service.archief.nl 1; no 403/429/challenge. Vision calls 3.
+Intake gate before the step: `tools/intake_gate_check.py na-janssens-java-1811` exit 0 (the web/blog section was logged
+at 02:07 UTC).
 
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: 86 of 163 code tokens keyed (52.8%; C 60, M 26, U 77; GAPS 2 Oct 2026, was 76/163 on 1 Oct), reading.txt header and NOTES.md "GAPS-na-janssens-java-1811 (2 Oct 2026)"; keyed is not read-as-sense (judge FAIL language -0.985 vs real_p05 -0.89, cover 0.902; was -1.472 / 0.78); the 77 unkeyed tokens are 64 distinct codes (counted from reading_tokens.tsv, 2 Oct 2026)
-- Leaf 192 (the rest of the No.2 interlinear gloss) - DONE 2 Oct 2026 (GAPS-na-janssens-java-1811, section above): two blind passes on tools/iiif_lines.py crops of images/192_hi.jpg (58 codes each, 57/58 code and 53/58 gloss agreement) plus one reconciliation, merged by scripts/merge_leaf.py: key.tsv 214 -> 233 codes, leaf 188 keyed 76 -> 86/163 (52.8%), "l'ancien Gouverneur Gal" read twice as predicted, judge -0.985 vs real_p05 -0.89 (FAIL, from -1.472), --check exit 0. Leaf 201 left page (two code+gloss rows ending "Signe Janssens") - blocker: not-attempted; leaf 201 was never fetched at full size (only images/192_hi.jpg was on disk and the 2 Oct brief named leaf 192 alone; the 1 Oct eye-read of its thumbnail is the evidence it is glossed); next: one IIIF fetch of leaf 201 at full size (service.archief.nl, the images/manifest.json URL), tools/iiif_lines.py crops with the same --distance 45 --prominence 15 --lines-per-crop 2 settings, two blind passes plus one reconciliation (3 vision calls), scripts/merge_leaf.py, redecode 188 and re-judge, ~$3
+Read so far: 88 of 163 code tokens keyed (54.0%; C 62, M 26, U 75; GAPS2 2 Oct 2026, was 86/163 at GAPS 02:07 UTC and 76/163 on 1 Oct), reading.txt header and NOTES.md "GAPS2-na-janssens-java-1811 (2 Oct 2026)"; keyed is not read-as-sense (judge FAIL language -0.976 vs real_p05 -0.899, cover 0.903; was -0.985 / 0.902, and -1.472 / 0.78 on 1 Oct); the 75 unkeyed tokens are 62 distinct codes (counted from reading_tokens.tsv, 2 Oct 2026)
+Done (gap 1, both halves): Leaf 192 (the rest of the No.2 interlinear gloss) - DONE 2 Oct 2026 (GAPS-na-janssens-java-1811, section above): two blind passes on tools/iiif_lines.py crops of images/192_hi.jpg (58 codes each, 57/58 code and 53/58 gloss agreement) plus one reconciliation, merged by scripts/merge_leaf.py: key.tsv 214 -> 233 codes, leaf 188 keyed 76 -> 86/163 (52.8%), "l'ancien Gouverneur Gal" read twice as predicted, judge -0.985 vs real_p05 -0.89 (FAIL, from -1.472), --check exit 0. Leaf 201 left page (two code+gloss rows ending "Signé Janssens") - DONE 2 Oct 2026 (GAPS2-na-janssens-java-1811, section above): one IIIF fetch (images/201_hi.jpg), tools/iiif_lines.py crops, two blind passes (8 codes each, 8/8 code and 8/8 gloss agreement) plus one reconciliation (674 dans -> 574 deux from the digit and final-letter shapes), scripts/merge_leaf.py: key.tsv 233 -> 237 codes, leaf 188 keyed 86 -> 88/163 (54.0%), line 12 now "vaisseaux ... tous les ... l'ennemie", judge -0.976 vs real_p05 -0.899 (FAIL, from -0.985), --check exit 0. Gap 1 is closed: no further glossed leaf of this set is known on disk (which dispatch leaf 201 closes is unidentified; its earlier leaves, if in the bundle, fall to gap 3's re-inventory)
 - Leaf 188: the remaining unkeyed codes, via the No.4 "Premiere Expedition" set (3 Aout 1811) - blocker: not-attempted; the eye-check this pass of thumbnails 204-207 and images/208_med.jpg, 209_med.jpg confirms 204R is a raw cipher page with Janssens' flourish, 205R-207L is a code-over-word table ending "Signe Janssens", 208L is the top of the same kind of table under an overlying translucent sheet, also signed Janssens (not "Vanteau", so NOTES (3)'s "cross-correspondent confirmation" is a misread pending a full-resolution check), and 208R to 209 top is the plain No.4 copy ending "precieuse possession. 3 Aout. Signe Janssens"; images/manifest.json misfiles these as tabular/plain/blank; next: IIIF full fetch of 204-207, tools/iiif_lines.py crops, two blind passes plus one reconciliation per page unit (205R, 206L, 206R, 207L: 12 calls at ~$1.46), merge (fix build_key.py's accent-fold/drop bug first, NOTES VX-RD02C (1)), control by decoding 204R against the 208R-209 plain copy, redecode 188, ~$18
 - Dispatch No.1's own key source (its decipherment, a plain copy, or a Paris translation) elsewhere in the archive series - blocker: not-attempted; invnr 12 leaves 1-179 and 218-233 were only sampled (CS05 every ~5.6th leaf, RD02B every 4th), invnr 7 at 1 in 24 and invnr 26 at 1 in 8 (NOTES "Sweep for more key source (2)"); even the "individually checked" 180-219 range misfiled cipher leaves (192, 194-195, 198 heading "Numero Trois" not "Numero 2", 201-208), so no range counts as a negative; next: full-resolution re-inventory of 186-215 first (~$3), then a PIL contact-sheet page-through of every remaining invnr 12 and invnr 7 thumbnail, two sessions to stay inside the host rule, then invnr 26, ~$8
 - Primata/Duplicata of No.1 and any Paris-side decipherment or translation (Ministere de la Marine et des Colonies, French archives) - blocker: not-attempted; leaf 188 is a Triplicata, so two more copies were sent, and the slip pasted on leaf 194 orders a copy of No.2 for the Directeur general des Douanes "traduite d'une lettre chiffree", which shows Paris made plain translations; no French archive searched, and archivesnationales/francearchives do not load from the cloud (CLAUDE.md hosts table); no ASKS.md or LOCAL-QUEUE.tsv row exists for this target; next: file one LOCAL-QUEUE.tsv row for the desk runner (FranceArchives / AN Marine et Colonies search: Janssens, Batavia, 1811, dechiffrement/traduction, quoting the catalogue record's availability flag), ~$2
@@ -815,5 +883,5 @@ Read so far: 86 of 163 code tokens keyed (52.8%; C 60, M 26, U 77; GAPS 2 Oct 20
 - [ ] print: done: Colenbrander, Gedenkstukken VI, all 35 "Janssens" hits read; it names the dossier ("In n°. 11 de berichten van Janssens omtrent de overgave van Java") but does not print it; IA advancedsearch 0 hits; be-api "overgave van Java" 64 items, not narrowed. Not done: tools/print_check.py phrase search of the plain copies (No.2, No.4, No.5, the leaf 187 extract); if the Paris translations reached print, No.1's may have too. Planned: ~$3
 - [ ] key-rebuild: two-part code with unordered values (1=Soixante, 12=encore, 13=aux) and homophones (de=140/564/682/841, et=454/516/930/1192), so alphabetical bracketing does not apply; no annealing, seeded EM or LM-context fill tried; 54 single unkeyed codes in 163 tokens is too few for EM alone. Planned after the 192 and No.4 merges: an LM-context fill with a matched control built from No.4's raw copy (204R) against its plain copy (208R-209), same design, language and hidden-code fraction, ~$5
 - [ ] image-check: leaf 188's ciphertext.tsv is one careful read plus a second look, not a two-pass reconciliation (NOTES "Target: leaf 188"); the period copies disagree on digits elsewhere (138/158, 454/494, 656/636) and code 381 "chargent" sits on a corrected cell (NOTES "Fresh-instance re-derivation"); leaf 198 (raw No.3) against 199-200 (glossed No.3) is a further digit cross-check not yet run. Planned: tools/iiif_lines.py crops of images/188_hi.jpg, one blind pass, tools/reconcile_passes.py against ciphertext.tsv, about 3 calls, ~$4.5
-- [x] retry: leaf 188 re-decoded with tools/decode_key.py after each key extension: 65/163 (39.9%, VX-RD02), 71/163 (43.6%, VX-RD02B), 76/163 (46.6%, VX-RD02C), 86/163 (52.8%, GAPS 2 Oct 2026, leaf 192 merged), --check exits 0; to be rerun after the 201 and No.4 merges
-Verdict: keep going: 5 internal gaps (gap 1 half done: leaf 192 merged 2 Oct 2026, leaf 201 open); cheapest next: one IIIF fetch of leaf 201, crops, two blind passes plus one reconciliation of its two code+gloss rows, scripts/merge_leaf.py, redecode leaf 188 and re-judge, ~$3
+- [x] retry: leaf 188 re-decoded with tools/decode_key.py after each key extension: 65/163 (39.9%, VX-RD02), 71/163 (43.6%, VX-RD02B), 76/163 (46.6%, VX-RD02C), 86/163 (52.8%, GAPS 2 Oct 2026, leaf 192 merged), 88/163 (54.0%, GAPS2 2 Oct 2026, leaf 201 merged), --check exits 0; to be rerun after the No.4 merge
+Verdict: keep going: 4 internal gaps (gap 1 done: leaves 192 and 201 merged 2 Oct 2026); cheapest next: gap 5, disk only -- regrade the 26 M-graded tokens of leaf 188 against their added occurrences on 192 and 201 and against the plain copies of No.2 (194-195) and No.5 (214), one decision per code written to conflicts.tsv notes, then tools/decode_key.py --check, ~$1.5; after it, gap 4 (the LOCAL-QUEUE.tsv row for the Paris-side translation search, ~$2)

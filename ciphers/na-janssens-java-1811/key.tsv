@@ -10,6 +10,7 @@ code	value	n	pages	grade	note
 48	cet	1	192	M	single occurrence, cell corrected; struck: cette (leaf 192)
 53	fi	3	191,192	M	single-pass only, other pass skipped this code; leaf 192: fi (clean); leaf 192: fi (clean)
 60	tous	1	191	C	
+62	vaisseaux	1	201	C	
 76	on	1	200	C	
 79	l'	1	192	C	
 87	venir	2	200	C	
@@ -67,13 +68,14 @@ code	value	n	pages	grade	note
 393	r	2	191	C	
 394	pro	1	no5(210-212)	C	
 396	p	2	no5(210-212),192	M	only a corrected/crossed-out cell seen; leaf 192: p (reconciled from crop L06: A p / B long-s; an unfinished p, completes Sa-p-ho (1187, 396, 327) = Sapho; uncertain)
-404	croisières	1	191	C	
+404	croisières	2	191,201	C	
 406	rais	1	192	M	single occurrence, cell uncertain; reconciled from crop L04: A rain / B rais, final letters ambiguous; completes J au-rais = j aurais (leaf 192)
 411	ca	3	no5(210-212),192	M	only a corrected/crossed-out cell seen; leaf 192: ca (corrected; overwritten cell, A cet / B cet, reconciled from crop L04 with key.tsv 411 = ca (leaf 191): completes cer-ti-fi-ca-t = certificat)
 420	fin	2	no5(210-212),192	M	only a corrected/crossed-out cell seen; leaf 192: Fin. (clean)
 424	que	1	199	C	
 427	onze	3	199,no5(210-212)	C	
 434	par	1	200	C	
+435	il y a	1	201	C	
 437	s	1	199	M	only a corrected/crossed-out cell seen
 439	article	1	191	C	
 441	ancien	1	192	C	
@@ -102,7 +104,7 @@ code	value	n	pages	grade	note
 568	ar	1	199	C	
 570	débarquer	1	200	C	
 571	ti	5	199,192	M	ambiguous: ti (n=4, pages=199); tie (n=1, pages=192) [earlier note: only a corrected/crossed-out cell seen; leaf 192: ti (clean); leaf 192: ti (clean); leaf 192: ti (clean)]
-574	Deux	4	190,191,199,200	C	
+574	Deux	5	190,191,199,200,201	C	
 581	Sur	2	191	C	
 587	où	3	190,191,199	M	ambiguous: où (n=2, pages=190,191); ou (n=1, pages=199)
 590	Troupes	1	no5(210-212)	C	
@@ -127,8 +129,9 @@ code	value	n	pages	grade	note
 697	ble	1	no5(210-212),208(Vanteau)	M	only a corrected/crossed-out cell seen VX-RD02C: also confirmed on leaf 208 (signed Vanteau, not Janssens -- a different correspondent reusing the same code book), 2-pass agreed.
 700	Ville	1	no5(210-212)	C	
 706	gi	1	199	M	only a corrected/crossed-out cell seen
+710	part	1	201	M	single occurrence, cell A/B part; final letter is a small t or flourish, uncertain (par-t or par); with 721 mis next it reads par-mis = parmi (leaf 201)
 713	Se	1	200	M	only a corrected/crossed-out cell seen
-721	mi	1	191	M	only a corrected/crossed-out cell seen
+721	mi	2	191,201	M	ambiguous: mi (n=1, pages=191); mis (n=1, pages=201) [earlier note: only a corrected/crossed-out cell seen]
 722	importan	1	192	M	single occurrence, cell uncertain; reconciled from crop L01: A importan / B importau, n and u identical in this hand; completes importan-te (516) = importante (leaf 192)
 728	.	3	191,199,192	C	
 736	cent	2	190,191	C	
@@ -165,6 +168,7 @@ code	value	n	pages	grade	note
 861	si	1	192	C	
 862	lors	1	191	C	
 875	ât	1	191	M	only a corrected/crossed-out cell seen
+881	les	1	201	C	
 883	Capitaine	2	191	M	ambiguous: Capitaine (n=1, pages=191); Capitaines (n=1, pages=191)
 889	expose	1	191	M	only a corrected/crossed-out cell seen
 893	puis	1	191	C	
