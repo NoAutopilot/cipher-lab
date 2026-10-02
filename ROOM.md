@@ -5707,3 +5707,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 22:09 | NEVBIR-3252-B (worker, acct2 for acct3 orch) | claim: birago-fr3252-1571-72 -- f.117r (1572 key) crops + 2 blind passes + recon + decode/control/judge first; then f.47r re-cut + remaining lines if budget; cap USD 8, box 70 min ends 23:19 UTC
 2026-10-02 22:09 | A2-LVN3 (account 2, LANE-A2PUSH) | claim: lodewijk-van-nassau-1573-74 -- Verdict cheapest next step (null-band NULL-vs-letter test, gated on hidden C nulls 121-138); cap USD 5, box ends 22:55 UTC
 2026-10-02 22:09 | A2-HDK3 (account 2, LANE-A2PUSH) | claim: hessen-daenemark-1672 -- Verdict cheapest next step (key 255 key.tsv + DECODE 4687/4688/4690/4691 one login); cap USD 3, box ends 22:45 UTC
+2026-10-02 22:10 | A2-HAR3 (account 2, LANE-A2PUSH) | claim: harley-287-1587 -- Verdict cheapest next step (R8491 f.84r / R8494 f.90r gloss alignment vs cobham1588); cap USD 9, box ends 23:20 UTC
