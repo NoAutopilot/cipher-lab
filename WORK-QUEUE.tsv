@@ -130,3 +130,5 @@ AUDIT2-NEVBIR-90R	other	.claude/briefs/runs/2026-10-02-acct3-audit2-nevbir-90r.m
 VERIFY-CEPPO-SPLITS	other	.claude/briefs/runs/2026-10-02-acct3-verify-ceppo-splits.md	Opus 5.5	3	35	claimed by LANE-A2PUSH 2026-10-02 21:50	2026-10-02 21:44	verifier on f.21v split settlements (S 179->188)
 BIRAGO-NUM	other	.claude/briefs/runs/2026-10-02-acct3-birago-num.md	Opus 5.5	10	80	claimed by LANE-A2PUSH 2026-10-02 22:08	2026-10-02 22:03	Birago Nov 1571 numerical system: f.119 + fr.3252 f.100 pooled (~1,300 digits); Bourdeau closed f.119 alone
 NEVBIR-3252-B	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-3252-b.md	Opus 5.5	8	70	claimed by LANE-A2PUSH 2026-10-02 22:08	2026-10-02 22:03	fr.3252 f.117 under the 1572 key; rest of f.47 at lower error
+BIRAGO-SMALL	other	.claude/briefs/runs/2026-10-02-acct3-birago-small.md	Opus 5.5	4	40	queued	2026-10-02 22:21	Birago: f.21v L11.17 + no.87 look-alike tiles vs clerk sheet (disk)
+GUAZZO-KEY	other	.claude/briefs/runs/2026-10-02-acct3-guazzo-key.md	Opus 5.5	3	35	queued	2026-10-02 22:21	Guazzo: fr.4687 no.28 + Nevers key volumes for a Guazzo table
