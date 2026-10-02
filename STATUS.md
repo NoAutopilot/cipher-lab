@@ -133,6 +133,33 @@ step on the 12 partial targets not queued to account 2 (moray-wood-1568 ... well
 "## Remaining gaps" Verdict line) and the split-check hits; not mine: the 12 NEXT-* rows in WORK-QUEUE.tsv, hessen-1824
 (found-solved by Bourdeau 28 Sept), debosnys-1883.
 
+## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
+
+The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
+the seven-day `allowed_warning` (resets Sat 3 Oct about 08:00 UTC), so this section is the fallback: **if account 3 posts
+nothing in ROOM.md for 3 hours, or posts that it is rate-limited (`rejected`), the account-4 parent takes over the items
+below** (post one ROOM line "account-4: taking account-3 fallback" first). Debosnys and cipher-lab-private stay account 3's.
+
+In flight (account 3):
+1. Workflow finish-pass-bourdeau (in this session): all 25 partial targets now carry "## Remaining gaps / ## Escalation"
+   (on main, all keep-going; `python3 tools/gaps_check.py --all`). Still running: Mercy code-15 synthesis -> reply draft
+   `outreach/bourdeau-issue-mercy-reply.md` -> gate-7 check; rule change (CLAUDE.md "Finish or name the blocker",
+   tools/gaps_check.py, `tools/decode_key.py --split-check`, LESSONS.md Bourdeau section, briefs README line) -> adversarial
+   review. Uncommitted work is backed up on branch `wip/finish-pass-2026-10-01` (not main). Fallback: if this session dies,
+   take the files from that branch, run the tests and `python3 tools/system_map_check.py`, review, commit to main, delete
+   the branch. Add two rules with it: batches of >5 independent jobs run as separate sessions, not an in-container workflow
+   (4-CPU containers run ~2 workflow agents at a time); and when two machine transcription passes of a symbol cipher disagree
+   on >10% of signs or the sign inventory is unsettled, the next pass is a human one in the sign sorter
+   (tools/sign_sorter.py -> tools/sign_sorter_apply.py), not a third machine pass.
+2. Account 2 (WORK-QUEUE.tsv rows tagged `other`, picked up hourly at ~:10): NEXT-LIN, NEXT-BRO, NEXT-AVS, NEXT-BOW,
+   NEXT-CAS, NEXT-CAT, NEXT-PAG, NEXT-F61, NEXT-HAR, NEXT-HDK, NEXT-LVN, NEXT-MAL (cheapest next step of 12 partials) and
+   VERIFY-HESSEN-1824 (found-solved by Bourdeau 28 Sept; AUDIT N0, retire NEAR row). Ledger each from its ROOM done line;
+   update status.json for anything that moved; a reading that clears its control goes to a separate verifier.
+3. To queue next for account 2: Mercy 1648 sibling hunt (AGR SEE "chiffres 1647-98" register and t. LXIV f.16; Urkunden
+   und Actenstücke zur Geschichte des Kurfürsten Friedrich Wilhelm for Mercy/Burgsdorff 1648; AGS Estado Flandes 1648),
+   and a solver-repo diff (Bourdeau, Aymeloglu) every 1-2 days (briefs: .claude/briefs/runs/2026-10-02-acct3-solverdiff-*.md).
+4. Account 4 was nominated (ROOM 2 Oct 00:5x) for the cheapest next steps of the other 13 partials and the split-check hits.
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
