@@ -522,3 +522,30 @@ logged in this file's head line, letter absent; DBNL page CCLXXVIII (22 June 156
 found in print.
 Result: (a) is a find -- the plaintext is held (per the WVO curators) in the minuut; flagged in ROOM.md to the account-3
 orchestrator. Status line left unchanged, per brief.
+
+## A2-WVH, 2 Oct 2026: plain-copy key step not runnable -- the minuut has no cipher spans
+
+Brief (LANE-A2PUSH, `.claude/briefs/runs/2026-10-02-acct2-a2-wvh.md`): line-crop the glossed runs in the WVO 1127
+minuut, align clear text to cipher with `tools/interlinear_align.py`, build a grade-C key. Intake gate exit 0 at start.
+- WVO record `wvo/app/brief?nr=1127` re-read 2 Oct 2026 22:4x UTC (HTTP 200): the only image is still the Marburg
+  minuut PDF (01127.pdf, 4 pp.); the KHA original A 11/XIV B/15-43 still has no PDF. Opmerkingen now read in full:
+  "... De minuut geeft de complete tekst. Inliggend in het origineel een los bericht, zonder datum, plaats en
+  ondertekening" (an undated, unsigned loose note lies inside the original).
+- All four pages of the minuut viewed at 60 dpi (one combined image, one look by this worker): p.1 address leaf;
+  pp.2-4 (f.151r-152r) running German text in clear, signed "Wilhelm L[andgraf] z[u] Hessen", dated Kassel 28 Jan
+  1567, followed on p.4 by a "Zedell" (postscript note, likely the minuut of the loose note) also in clear.
+  **No cipher group, no numeral run, no interlinear gloss and no marked-for-cipher span is visible anywhere in the
+  minuut.** (Deletions and marginal paragraph marks only; at 60 dpi a faint underline cannot be excluded.)
+- So the minuut is the plain text only. The ciphertext exists only in the KHA original, which is not imaged.
+  There is nothing to line-crop as a "glossed run", nothing for `interlinear_align.py` to align, and no shuffled-plain
+  control can be run. Steps 3-5 of the brief were not run. No key.tsv, no decode.json, no reading.
+- Not done (outside the brief's cap, and pointless until the original arrives): a full transcription of the minuut's
+  clear text (3 pages of Kurrent, ~75 lines; 2 blind passes + 1 reconciliation per crop would cost about USD 15-20).
+  It becomes the crib once the original is imaged; worth briefing only then.
+- Status word: left `open` (not mine to change). For the orchestrator: every route to the ciphertext now runs
+  through REQUEST.md (KHA copy order, waiting on the person since 24 Sept 2026), so `blocked` may be the right word.
+- What would settle it: an image of KHA A 11/XIV B/15-43 (both the letter and the loose note). Then: transcribe
+  the minuut (the crib), find the enciphered span in the original, align with `tools/interlinear_align.py` and run a
+  shuffled-plain control (rule 3). The sibling 1069's key (same sender, same direction) is the candidate system to test.
+- Vision calls: 1 (this worker, 4-page 60 dpi composite). Subagents: 0. Hosts: resources.huygens.knaw.nl 1 request
+  (the record page). The minuut PDF was already on disk.
