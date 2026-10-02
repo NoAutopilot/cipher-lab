@@ -125,3 +125,6 @@ NEVBIR-3252	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-3252.md	Opus 5.5	8
 NEVBIR-OFFSHEET	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-offsheet.md	Opus 5.5	7	60	claimed by LANE-A2PUSH 2026-10-02 21:31	2026-10-02 21:19	Birago 1572: value fits for off-sheet signs, validated on no.87 known answer
 CEPPO-SPLITS	other	.claude/briefs/runs/2026-10-02-acct3-ceppo-splits.md	Opus 5.5	6	55	claimed by LANE-A2PUSH 2026-10-02 21:31	2026-10-02 21:19	Birago 1570-71: settle look-alike pairs from glossed leaves
 GUAZZO-INTAKE	other	.claude/briefs/runs/2026-10-02-acct3-guazzo-intake.md	Opus 5.5	6	60	claimed by LANE-A2PUSH 2026-10-02 21:31	2026-10-02 21:19	Guazzo fr.4688 cipher letters: intake, premise, first test
+NEVBIR-87ALIGN	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-87align.md	Opus 5.5	6	55	queued	2026-10-02 21:44	Birago 1572: C-grade key from the no.87 clerk sheet via interlinear_align
+AUDIT2-NEVBIR-90R	other	.claude/briefs/runs/2026-10-02-acct3-audit2-nevbir-90r.md	Opus 5.5	4	40	queued	2026-10-02 21:44	second audit no.90 f.185r L10-25
+VERIFY-CEPPO-SPLITS	other	.claude/briefs/runs/2026-10-02-acct3-verify-ceppo-splits.md	Opus 5.5	3	35	queued	2026-10-02 21:44	verifier on f.21v split settlements (S 179->188)

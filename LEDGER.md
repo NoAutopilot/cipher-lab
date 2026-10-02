@@ -1570,3 +1570,7 @@ the end of every wake.
 | 2 Oct 2026 | GATE-TOOL | session_01Tps3UxmHUocLxLFwoPxDdv | account 2 (LANE-A2PUSH) | Opus 5.5 | 1.85 | D | done 21:15: intake_gate_check ignores quoted gate output, requires headings; tests PASS, 69 passing targets unchanged |
 | 2 Oct 2026 | A2-CAT | session_011xuxv8RaRTH16KZzyiCWUY | account 2 (LANE-A2PUSH) | Opus 5.5 | 2.20 | D | done 21:18: Revisited threads snapshotted; 27 Mar 1875 W. ad filed as singleton sibling; next 1879 ads ~1.5 |
 | 2 Oct 2026 | A2-PAG2 | session_01N7u9WPNG4WVYUBXN5g4fmj | account 2 (LANE-A2PUSH) | Opus 5.5 | 9.35 | D- | done 21:24 (4% over 9 cap): 14 blind passes re-read 487/505 glossed tokens, 6 digits corrected, key rebuilt with controls first (111 codes), decode --check H64 M428; 18 gutter groups left ~1.5 |
+| 2 Oct 2026 | VERIFY-NEVBIR-90REST | session_01WPV9iV95eLj37dFeEgYPNt | account-2 | Opus 5.5 | not visible from account 3 | D | no.90 rest N4 (330 two audits, 392 one); re-derivation exact; f.185v run a non-test |
+| 2 Oct 2026 | NEVBIR-OFFSHEET | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | N | off-sheet value fit untested-by-this-tool (known-answer check could not run); next: clerk-sheet alignment |
+| 2 Oct 2026 | CEPPO-SPLITS | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | f.21v 9 splits settled from a period gloss, S 179->188 pending verifier; f.87 pairs to sorter |
+| 2 Oct 2026 | GUAZZO-INTAKE | see ROOM | account-2 | Opus 5.5 | not visible from account 3 | D | fr.4688 not digitised: blocked, added to BnF quote batch (ASKS) |
