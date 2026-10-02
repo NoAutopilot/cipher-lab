@@ -3,7 +3,7 @@ Catalogue general des manuscrits francais, Ancien fonds t.4 (Paris 1895), entry 
 
 # BnF fr.4687 — Marguerite Paléologue, duchesse de Mantoue, to Louis de Gonzague, duc de Nevers, 1562-1564
 
-Status: blocked (CHECK-fr4687-paleologue-nevers, account-4, 2 Oct 2026: every edition reachable from the cloud is now read, see line 2 and the section below; the one unread item is Ferrari 1999, a 16-page exhibition-catalogue essay, queued as LOCAL-QUEUE.tsv row L33 after row L8's academia.edu route was bot-challenged from the owner's desk too (27 Sept 2026). The folder reopens as `open` when L33 is answered negative; it is `found-solved` if the essay prints a decipherment. Earlier status line: LANE CX 12:20 UTC 25 Sept 2026 corrected the worker's `open` to `blocked` because Ferrari 1999 had not been opened.)
+Status: blocked (CHECK-fr4687-paleologue-nevers, account-4, 2 Oct 2026: every edition reachable from the cloud is now read, see line 2 and the section below; the one item still to be opened is Ferrari 1999, a 16-page exhibition-catalogue essay, queued as LOCAL-QUEUE.tsv row L33 after row L8's academia.edu route was bot-challenged from the owner's desk too (27 Sept 2026). The folder reopens as `open` when L33 is answered negative; it is `found-solved` if the essay prints a decipherment. Earlier status line: LANE CX 12:20 UTC 25 Sept 2026 corrected the worker's `open` to `blocked` because Ferrari 1999 had not been opened.)
 
 Check-solved pass, 24 September 2026 (Sonnet, orchestrator brief for M13-M16). Editions-first + one-leaf pass;
 a formal six-source check-solved run is still owed before board promotion.
