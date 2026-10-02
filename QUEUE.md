@@ -7368,3 +7368,33 @@ lines"). One page (of 3 canvases) of the target letter fetched; a direct look co
 "4pp. part in cipher" description (roughly the top 9 lines cipher, the rest plain Italian prose). Next step:
 locate "la gubernation d'ispagnia" on the image and calibrate the key against it (known-answer-first, per
 NOTES.md), then two blind passes on the whole letter and a 20-shuffled-key control.
+
+## Birago pool (2 Oct 2026)
+
+BIRAGO-SCOUT (account-3 orchestrator), scout only; table `ciphers/nevers-birago-fr3251-1572/BIRAGO-POOL.tsv`. No
+reading, no class. Searched: BnF archivesetmanuscrits (Birague/Birago/Saluces/Saluzzo + chiffre, Ceppo), Gallica SRU,
+Europeana, Lettres de Catherine de Médicis vols 3-4 on IA full text (0 "chiffre" within 400 characters of Birague),
+Tomokiyo's nevers/henryiii/unsolved pages, DECODE (Aymeloglu's decode-catalog.csv mirror and our local caches),
+Bourdeau and Aymeloglu repos (grep only). Archivio di Stato di Torino: both hostnames reset the connection (000),
+not retried; one web search found no Turin cipher item.
+
+Kept, in expected-value order:
+1. **BnF fr.3252 no.30, f.47r, Birago to Nevers, Saluzzo 26 Apr 1571**: about 21 lines of symbol cipher (~850 signs),
+   no gloss, in the Ceppo-Nevers window, same symbol repertoire by eye. Larger than any fr.3251 Ceppo-Nevers target.
+   kind recovery (published key + the fr.3252 f.36 witness). Gallica btv1b9060232m canvas 48. First test: f.11 protocol
+   (two blind passes, printed key, 200 shuffled keys), ~$8.
+2. **BnF fr.3252 no.67, f.100r, 8 Jan 1572**: about 17 lines of digits (~800). It falls between f.119 (Nov 1571
+   numerical cipher, 483 digits, Bourdeau negative) and f.138 (first Nevers-Birago 1572 letter). First test: decode
+   under the 1572 key + T42=m with the shuffled control; if it fails, pool it with f.119 (about 1,300 digits together).
+   Canvas 101.
+3. **BnF fr.3252 no.77, f.117r, 13 Mar 1572, in French**: ~11 lines of a symbol alphabet unlike the 1572 digit key;
+   key family unknown. Settle the family first (sign inventory against the fr.3315/3323 keys and the 1574 Nevers key). Canvas 118.
+4. **BnF fr.4688 nos.7-8 (25 Mar 1571) and 24-33 (Dec 1571-Apr 1572), Guazzo to Nevers, "Chiffres"**: same network and
+   months; not found on Gallica (SRU, Europeana). Image route needed before anything else.
+Context rows only, no action: fr.3315 f.21 (Renato Birago 1574, read in part by Bourdeau, clear copy fr.3313 no.8);
+fr.3323 f.1 (key with chancellor René de Birague 1575); the 1591-93 "Lodovico Birago" letters (fr.3619/3621/3623/4698)
+are a namesake, not the Saluzzo governor, and carry period decipherments (DECODE 9438, 9445-7, 9457).
+
+**fr.3251 f.35 (no.18, 15 Nov 1570).** HARVEST-D2 (28 Sept) read its two lines under the printed key and
+VERIFY-CEPPO-D2-1 audited it (AUDIT.md "f.35": key rank 1/201 z 5.0-6.0, scope none, scraps only). It has no
+PROGRESS.tsv row. The cheapest add is that row, copied from AUDIT.md (0 S endorsed of 76, claim scope none), not a fresh read.
