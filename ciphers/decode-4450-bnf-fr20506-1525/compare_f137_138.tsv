@@ -1030,3 +1030,5 @@ f138r	18	10	p3	f10v	p3	equal
 f138r	18	11	z152	f10v	v152	replace
 f138r	18	12	f5	f10v	f5	equal
 f138r	18	13	o66	f10v	o66	equal
+f138r	19	1	m66	f10v	[m66]	equal
+f138r	19	2	o4	f10v	o4	equal

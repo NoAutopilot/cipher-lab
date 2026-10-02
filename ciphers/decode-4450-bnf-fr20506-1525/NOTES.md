@@ -362,7 +362,7 @@ Ranzo/Garbino letter, it is (to within 2 tokens of alignment noise) the complete
 f.9r through f.10v end to end. Whether those last 2 witness tokens are a genuine tail this transcription missed
 or an artefact of the alignment's tail handling is not resolved here (one-line suggestion, not run: a future
 pass could diff the very last 5-10 tokens of `ranzo_c020.txt` against a fresh close look at the bottom of
-`images/fr20506_canvas279.jpg` just above the signature).
+`images/fr20506_canvas279.jpg` just above the signature). **Settled 2 Oct 2026 (D4450-TAIL, below): the 2 tokens are a real 19th line, `m66 o4`, that the crop region cut off; N is now 0.**
 
 **Attribution.** Witness: Daniel Bourdeau's `dbourdeau/cyphersolver` (`vasto1527/n20/ranzo_c017.txt` through
 `ranzo_c020.txt`, MIT code / CC BY 4.0 text; fresh shallow clone to scratchpad, not committed). No decipherment,
@@ -372,6 +372,60 @@ Requests this pass: 0 network hosts (all work from images and text already on di
 `github.com` shallow clone was to scratchpad, not counted as a rate-limited host per the access playbook's own
 git-clone precedent in D2 above). No AskUserQuestion; no dollar figures for this worker (cost: see the lane
 ledger). Wall-clock: job brief's 60-minute box, this section written and pushed at roughly the 45-minute mark.
+
+## D4450-TAIL (2 Oct 2026, account-4): the 2 leftover witness tokens are a real tail, not an alignment artefact
+
+Worker D4450-TAIL (account-4, Fable 5.1), brief `.claude/briefs/runs/2026-10-01-account4-d4450-tail.md` (written 1 Oct, run
+2 Oct 2026 00:14-00:2x UTC, clock read). Job: settle ZX2-4450T's open question above -- whether the 2 tokens of Bourdeau's
+witness that `compare_f137_138.tsv` left unmatched after our last token (`f138r` line 18 token 13, `o66`) are a tail this
+transcription missed or an artefact of the alignment's tail handling. No decoding, no key work, no other target.
+
+**Witness tail.** Fresh shallow clone of `dbourdeau/cyphersolver` to the scratchpad (commit 34e0fc89, 1 Oct 2026, deleted
+after; the files have moved to `targets/vasto1527/n20/` since ZX2-4450T's clone). `ranzo_c020.txt` (fr.2988 f.10v) ends:
+
+```
+z6 d180 d37 m82 f4 m176 i4 c193 o5 p3 v152 f5 o66 [m66]
+o4
+```
+
+So the 2 leftover tokens are `[m66]` (square-bracketed: Bourdeau's doubt/marginal notation -- `[m?]` in c017, `[??]` in
+c019; his own loader `n20/load.py` strips bracketed spans with `re.sub(r'\[[^\]]*\]','',l)`) and `o4` alone on a final line.
+
+**Image.** Two vision calls, as capped. (1) A Sonnet subagent read the bottom strip of `images/fr20506_canvas279.jpg`
+(native region 250,1300 1500x520 at 150%, scratchpad only) blind -- it was given no witness and no transcription -- and
+reported the last cipher line as two tokens, `m66` (M; "the m is at the far left, partly over the red library stamp, with
+66 above it") and `o4` (M), followed by "a large looped flourish ... a pen stroke, not a letter-plus-digits token", then a
+blank gap and the signature, no cipher token on the signature line; and the line above ending `p3 v152 f5 o66`. (2) This
+worker's own look at the committed crop `images/crops/f138_L10_tail.jpg` (native region 250,1420 1500x300, resized to
+2400 px wide; `images/manifest.json` key `d4450_tail_crop`) confirms it: below `... v152 f5 o66` sits a short 19th line at
+the far left, an `m` with `66` written above it (the digits overlap the red "BIBLIOTHEQUE NATIONALE MSS" stamp ring but
+read as 66), then an `o` with `4` above it, then a paraph, then the autograph `Hier° Ranzo` with a `V°`-shaped mark before
+it. Native position about y 1577-1622, x 430-580 -- that is **below** ZX2-4450T's line-finder region (400,150,1250,1400,
+i.e. y 150-1550), which that pass chose by eye "to stop just above the page's plain-script autograph signature": the
+short two-token line sat inside what was taken for the signature zone and was never cropped or sent to a pass.
+
+| witness token | our token (ZX2-4450T) | image reading (blind subagent / this worker) | verdict |
+|---|---|---|---|
+| `o66` (c020 line 21, token 13) | `f138r` 18/13 `o66` | `o66` / `o66` | equal, already aligned |
+| `[m66]` (c020 line 21, token 14, bracketed) | none | `m66` M / `m66`, digits over the stamp | **real token, missed**; added as `f138r` 19/1 `m66`, doubt=1 (stamp overlap; the witness itself brackets it) |
+| `o4` (c020 line 22, alone) | none | `o4` M / `o4`, clear | **real token, missed**; added as `f138r` 19/2 `o4`, doubt=0 |
+| -- | -- | paraph, then signature | nothing further; no catchword, no margin token |
+
+**Verdict: a missed tail, not an alignment artefact.** The fr.20506 ff.136-138 copy is the complete fr.2988 f.9r-f.10v
+letter to within **0** tokens of the witness's end (ZX2-4450T's sentence "to within 2 tokens of alignment noise" is
+corrected above). Files changed: `ciphertext_f137_138.tsv` now 1029 tokens (f138r 238, 19 lines), `compare_f137_138.tsv`
++2 `equal` rows (830/1033 aligned columns = 80.3%, unchanged to one decimal), `images/crops/f138_L10_tail.jpg` + manifest
+entry. The folder has no decode script or key (status `open`, no reading), so there is no `--check` to re-run; the TSVs
+were checked for column count and per-page totals only.
+
+One-line suggestion, not run (outside this brief): the same crop shows line 18 opening with two tokens, a `?9` partly
+under the stamp and a `z6` (the blind subagent read "t with a tiny 9" then "[ with 6"), where `ciphertext_f137_138.tsv`
+has one token `z9` and the witness has `t9 z6` (the two `replace` rows at the head of line 18 in `compare_f137_138.tsv`)
+-- a future transcription pass on f.138r should re-read line 18 token 1 from a crop that includes the stamp edge.
+
+Attribution: witness Daniel Bourdeau, `dbourdeau/cyphersolver` `targets/vasto1527/n20/ranzo_c020.txt` (MIT code / CC BY
+4.0 text), cited, not copied. Rule 10 wording: nothing here is a reading or a novelty claim; status unchanged, **open**.
+Requests: 1 `github.com` shallow clone to the scratchpad, 0 other hosts. Vision calls 2 of 2. No AskUserQuestion.
 
 ## Web and blog check (WEBCHECK-decode-4450-bnf-fr20506-1525, 1 Oct 2026)
 

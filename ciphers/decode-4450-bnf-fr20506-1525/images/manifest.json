@@ -90,5 +90,14 @@
    },
    "check": "eye-checked, no transcription: canvas273 stamped folio '135' but blank apart from show-through offset of facing-page cipher text; canvas274 blank, unstamped (verso); canvas277 stamped '137', full page of cipher in the same hand/format as f136r-v, continues; canvas278 unstamped (verso), full page of cipher, continues; canvas279 stamped '138', cipher for its first third then a cancelled/scratched mark, then the sender's plain-script autograph signature 'Hiero[nim]o Ranzo' beside a red archival ink stamp -- the letter's natural end; canvas280 blank, unstamped (verso), only faint show-through of canvas279's text and signature. Named by canvas number rather than r/v because the visible stamps (135 on canvas273, 137 on canvas277, 138 on canvas279, none on the intervening canvases) do not by themselves establish which physical side is 'recto'."
   }
- ]
+ ],
+ "d4450_tail_crop": {
+  "made": "2026-10-02 00:17 UTC",
+  "by": "D4450-TAIL (account-4), session_01YbUXd7BeYQHsFgk8gMbz7b",
+  "file": "images/crops/f138_L10_tail.jpg",
+  "source": "images/fr20506_canvas279.jpg (canvas 279 = f.138r, 2000x2850 native)",
+  "region_xywh": "250,1420,1500,300 (native px), resized to 2400 px wide with ImageMagick convert",
+  "shows": "cipher line 18 (ends f5 o66), the 19th line (m66 o4) at the far left over the red BN stamp, the paraph and the autograph 'Hier[on]o Ranzo'",
+  "why": "the 2 witness tokens left over by ZX2-4450T's alignment; line 19 sits at about native y 1577-1622, below the ZX2-4450T line-finder region (y 150-1550)"
+ }
 }
