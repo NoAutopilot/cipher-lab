@@ -1693,3 +1693,5 @@ flagged for a separate verifier (rule 10); the audits so far (VERIFY-NEVBIR-184,
 Requests: gallica.bnf.fr 4 (canvas 189 region twice -- one HTTP 500, one retry; canvas 190 info.json and left page), >= 2 s apart, no
 challenge. Vision calls 7 (two blind passes, two one-line f.185v passes, one adjudication; plus this worker's looks at overview and
 overlays). No credentials.
+
+English glosses (TRANSLATE-NEVBIR, 2 Oct 2026, grade I interpretation only, no token counts or key changed): harvest/gloss_no71.md, harvest/gloss_no86.md (covers reading_no86B.txt too), harvest/gloss_no90.md -- per line raw decode, word-split Italian with emendations marked, English gloss, 3-line summary.
