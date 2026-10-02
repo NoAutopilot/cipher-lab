@@ -1,0 +1,9 @@
+passage	pos	sign_id	conf	note
+L01	4	T29	M	epsilon with reversed-3 left curl, wide, touching; not plain T24
+L02	1	T29	M	same wide reversed-3+epsilon form
+L02	18	T29	M	same wide form after T90
+L02	27	T29	M	wide form after T55 (the eps+o earlier in line is T29 too)
+L03	5	T27	M	circle head with curled left tail (not straight stem like T36)
+L03	25	T29	M	wide reversed-3+epsilon before T60
+L04	1	T46	M	first mark is an 8 (numeral-like)
+L04	3	NONE	M	only two marks (8, s) before prose; no third

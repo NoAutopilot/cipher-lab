@@ -135,6 +135,28 @@
     "L"
    ],
    "exceptions": "harvest/exceptions_f152r.tsv"
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f174r.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f174r.txt",
+   "tokens": "harvest/reading_f174r_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
   }
  ]
 }

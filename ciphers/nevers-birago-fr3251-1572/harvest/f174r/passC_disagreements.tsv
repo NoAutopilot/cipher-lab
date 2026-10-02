@@ -1,0 +1,3 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L04					1	T46	M	gapA		prose before: line start (L04: marks before prose, followed by ", Et credo"); digit-8 shape
+L04		2	X_S	L				gapB	followed by prose "et credo" (L04 8/5 shapes)	
