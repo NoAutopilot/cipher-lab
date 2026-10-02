@@ -1,5 +1,5 @@
 {
- "updated": "2 Oct 2026 02:0x UTC",
+ "updated": "2 Oct 2026 03:3x UTC",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -57,7 +57,7 @@
    "stage": 7,
    "state": "you",
    "holder": "You",
-   "next": "HathiTrust closed 03:37 UTC: 19 more editions tested through the Bibliographic and Extracted Features APIs, none matches (76 editions in all); Scott, Jones 1800, London Perry, Walker 1810 and Dublin Entick are not in HathiTrust at all. For you before 23 Sept: ask Spink whether lot 1184 includes a pocket dictionary. Remaining leads need a library: Urban pp. 232-233, the Bentinck papers (Nottingham Pw Jd), WO 37.",
+   "next": "keep going: 3 internal gaps; cheapest next: the format-based catalogue search of gap 2 (Open Library and Google Books records by page count and format, 1780-1812; Library Hub Discover from the owner's browser only, it served a Cloudflare challenge to the cloud on 2 Oct 2026; plus one LOCAL-QUEUE.tsv",
    "note": "The key is a printed dictionary; finding the edition is recovery, not a crack. Transcription complete, 73 groups with known plaintext. Dictionary search 19 Sept 2026: 57 editions tested (Entick, Perry, Johnson in Miniature, Walker, Sheridan), none matches; three near misses without a constant offset, the closest being Entick's 1782 setting. Full report in DICTIONARY.md. Tomokiyo, Hayes and Lasry are also on this item. Blind sweep 20 Sept 2026: status set to partial, since Hayes, Lasry and Tomokiyo's published work is a partial solution of the code system; the dictionary edition and the strip-cipher rule remain open.",
    "wait": {
     "on": "You: one email to Spink before the 23 Sept sale",
@@ -75,7 +75,7 @@
    "stage": 4,
    "state": "you",
    "holder": "You",
-   "next": "Decide whether one unread clause is worth about 10 images (roughly £30). If yes, order SP 91/5/108, 106 and 121 on Discovery using the message in ciphers/whitworth-1707/REQUEST.md.",
+   "next": "still unsolved, but only the one passage in f. 108. Everything else the harvester flagged is",
    "note": "Worker result 19 Sept 2026: four of the five 'undeciphered' items are already in print (Sbornik vols 39 and 50) or deciphered in the same volume. Only one clause of f. 108 is unread, about the French mediation of 1707. The neighbours ff. 106 and 121 were deciphered in London, so their pages give the key. Low historical weight; cheap; certain to work. Blind sweep 20 Sept 2026: no prior attempt found; open, narrowed to one clause of f.108.",
    "wait": {
     "on": "Your decision and your click on the TNA order",
@@ -204,7 +204,7 @@
    "stage": 9,
    "state": "queued",
    "holder": "Nobody",
-   "next": "Verifier to read AUDIT.md section 10 (running text of CSP Scotland vi nos. 389 and 584 via Google Books snippets: names in clear, codes quoted, fol. 299 confirmed with 'In cipher' footnotes) and confirm or revise N1; then offer the sign table to Tomokiyo as a contribution. No copy order: the plaintext is in print.",
+   "next": "97 of 100 tokens read after Boyd's asterisk placements (NEXT-BOW, 2 Oct); re-audit VERIFY-BOWES-584 queued on account 2 before the audit's counts change",
    "note": "Novelty verified 23 Sept 2026, AUDIT.md: N1. Safe sentence: Tomokiyo's transcription of the eleven fragments was aligned with Bowes's letter-book copies printed in 1842, giving a sign table that reads 93 of 101 tokens (S 82, M 8, I 3) as the names printed there; an independent re-decipherment of plaintext in print, conditional on the transcription. Result so far: a sign table not located in any source searched; a contribution, not a unique solve. Specialist reply 24 Sept 2026: Tomokiyo accepted the reading, recorded it on Cryptiana with a link here, and confirmed the name fragments from the manuscript; the numerical name-codes (870, 189=Montrose, 149, 19, 29, 85) stay open.",
    "kind": "recovery",
    "wait": {
@@ -240,7 +240,7 @@
    "stage": 5,
    "state": "waiting",
    "holder": "Archive",
-   "next": "BL to photograph the key (both copies) and D623/4. Meanwhile the Ingram 1970 edition check runs in the credential session. If the key reads the despatch and Ingram does not print it, order the other eight.",
+   "next": "keep going: 3 internal gaps; cheapest next: refetch Martin Vol. 2 djvu (india.history.resource.35315) once into print/, read p. 311 for the 21 Jun 1800 letter (D623/35, per Ingram's footnote to Add MS 13751 f.77) and grep it for 7 Jun 1799 and 13 Jul 1800, and queue a LOCAL-QUEUE row for a person to",
    "note": "23 Sept 2026: nine despatches not printed in Martin vols 1-5, the 1877 Selection or the 1914 Wellesley Papers; D623/23 is printed; D623/10-11 decoded by the cataloguer.",
    "kind": "recovery",
    "wait": {
@@ -457,7 +457,7 @@
    "stage": 8,
    "state": "waiting",
    "holder": "LANE ARM2 (idle-standing on ASKS 66)",
-   "next": "The Papers of James Madison editors (U.Va.): any other letter in this code or with these marks, a key, a decode, or the correspondent Madison meant (ASKS row 66).",
+   "next": "`codex-2026-09-27f` never reached GitHub in any form (no ref, no branch, no unreachable object), so it is",
    "note": "Transcribed from the NARA microfilm, 0.957 match against the Founders Online text; a crib hunt, sibling-code vocabulary transfer and a nomenclator solver are all parked with their matched controls. Ten period shorthand systems were checked against the marginal marks -- six excluded with a Pitman control, the other four non-test on a calibration drift -- and none identified; the docket letters, five Livingston letters and all 35 pages of the Jefferson channel are clear text, so no second letter in this code was found. 139 of 369 code groups occur once, which caps any context-only solver, so only more ciphertext in this code moves it. S. Tomokiyo (Cryptiana) recommended this target to us, 26 Sept 2026.",
    "wait": {
     "on": "The Papers of James Madison editors (U.Va.), via the owner: ASKS row 66",
@@ -523,7 +523,7 @@
    "stage": 8,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 6 internal gaps; cheapest next: disk-only alignment of the 9 pencil-gloss lines on R9586/R9588 already in Bourdeau's transcripts (commit 34e0fc8), ~$1.5",
+   "next": "keep going: 6 internal gaps; cheapest next: two-context concordance on the sub-1100 groups of R9558/R9559/R9560/R9587 with a shuffled-record control, ~$2 (the R9586/R9588 gloss alignment is done on disk, NEXT-CAS 2 Oct 2026; its image pass is ~$5)",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "recovery"
   },
@@ -535,7 +535,7 @@
    "stage": 3,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 4 internal gaps; cheapest next: copy the reconciled ads 3-4 from ciphers/pollaky-1865-1875/ciphertext.txt here with attribution, segment them into Ernst's [1]-[28]+[10a] pairs, snapshot Bourdeau's catokwacopa/ folder, and re-run the line-pairing permutation test (spec test 1), ~$2",
+   "next": "keep going: 3 internal gaps; cheapest next: fetch the comment threads of the 17 Aug 2015 and 26 Jan 2018 \"Revisited\" Cipherbrain posts from scienceblogs.de, extract the 27 March 1875 W. ad and file it as a sibling (gap 3), ~$2",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -547,9 +547,9 @@
    "stage": 7,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 4 internal gaps; cheapest next: tools/interlinear_align.py on the letter 1+2 gloss pairs, ~$5",
+   "next": "period decipherment over 501/505 tokens found on the images (NEXT-PAG, 2 Oct); key 21 codes (12 C, 9 M), held-out 0.649 vs shuffle p95 0.378; next: decode.json + decode_key --check (~$3), then web/blog intake check",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
-   "kind": "cryptanalysis"
+   "kind": "recovery"
   },
   {
    "name": "debosnys-1883",
@@ -595,7 +595,7 @@
    "stage": 9,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 7 internal gaps; cheapest next: tools/print_check.py on f.61's clear phrases on disk against IA, Google Books and the three named editions, ~$2",
+   "next": "keep going: 6 internal gaps and 1 waiting on LOCAL-QUEUE L30; cheapest next: the orchestrator files an ASKS row from family/REQUEST_fr4699.md, ~$0; cheapest worker step: the L02-opening LL foil read (one blind forced-choice call), ~$2",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -607,7 +607,7 @@
    "stage": 3,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 10 internal gaps; cheapest next: rerun Bourdeau's solve.py (MIT) on the f.80r-81r, f.92r lines 3-10 and f.96v sign strings already written in reading_ff80_92_96_full.md / reading_f96v.md but absent from runs.txt, with the loop-1 values plus -=b and ϕ=p, and in the same desk session test ",
+   "next": "keep going: 10 internal gaps; cheapest next: in one DECODE login, fetch the Decrypted siblings R8491/R8494 and the 1587-88 keys R337/R8367 and check codes 42, 22, 27 and the f.11 groups against them, ~$2; then align the R8491/R8494 glosses (~$8) before any further solve.py run",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -619,7 +619,7 @@
    "stage": 9,
    "state": "closed",
    "holder": "Agents",
-   "next": "found-solved: read in full by D. Bourdeau 28 Sept 2026; VERIFY-HESSEN-1824 queued (account 2)",
+   "next": "found-solved: read in full by D. Bourdeau 28 Sept 2026; VERIFY-HESSEN-1824 (account 2) writes AUDIT.md N0 and retires the NEAR row",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -631,7 +631,7 @@
    "stage": 3,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 4 internal gaps; cheapest next: siblings lookup (Bourdeau HCPortal harvest grep for hstam_4_f, the Arcinsys record for Nr. 125, one DECODE query), ~$2; the step that moves the reading is the 3-page transcription and gloss pass, ~$11",
+   "next": "keep going: 4 internal gaps; cheapest next: known-keys and sibling check (fetch HCPortal key 255 and the Arcinsys image of HStAM 4 d Nr. 1235 / DECODE 4692, open the digitised Dänemark 131, compare code ranges), ~$2; the step that moves the reading is the 3-page transcription and gloss pass, ~$11",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -655,7 +655,7 @@
    "stage": 9,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 7 internal gaps; cheapest next: 4612 v3 under key_1572 (KEY-OFFICES.tsv row 34) with 20 value shuffles and 5200 cut to N=833 as the matched control, ~$2",
+   "next": "keep going: 7 internal gaps; cheapest next: 5797 p5_spot5 code 173 -- Groen's 5810 sentence (groen/groen_IV_CDLXVIII.txt) and a 300-dpi re-zoom of the 5550 p2-5 gloss tail, graded per direction, ~$3",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -679,7 +679,7 @@
    "stage": 8,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 13 internal gaps; cheapest next: queue the LOCAL-QUEUE row for Arcinsys Hessen's record of HStAM 4 h Nr. 1411 (contents of the image numbers HCPortal omits), ~$0.5, then the three clear-page direct reads (f.12 \"cifrat cela\", f.14 foot, f.16 panel), ~$4.5, then key_crossmatch on the pool ",
+   "next": "keep going: 12 internal gaps and 1 waiting on LOCAL-QUEUE L29 (Arcinsys record of HStAM 4 h Nr. 1411, filed 2 Oct 2026); cheapest next: the three clear-page direct reads (f.12 \"cifrat cela\", f.14 foot, f.16 panel), ~$4.5, then key_crossmatch on the pool plus the marburg1635/Rabenhaupt/Heusner keys, ",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -691,7 +691,7 @@
    "stage": 8,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 6 internal gaps; cheapest next: commit the disk-only alignment of Tomokiyo's published openings (f110-1 \"Monsieur de Villeroi vous verres...\", f143r-1, f154-1) against the decode with a within-line shuffle control, tabulate where U/BOX/T/z/4/w fall, and in the same job judge each leaf ag",
+   "next": "keep going: 6 internal gaps; cheapest next: gap 1 -- re-run the bMATBEAM known-answer control (A) at the seven read-leaves' N (f143r/v, 150, 154, 173, 196, 201), and only if it passes its gate run `mu_beam.py` M-only on those leaves with U held fixed against a pre-registered per-leaf judge-gain gate",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -703,7 +703,7 @@
    "stage": 7,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 7 internal gaps; cheapest next: log check-solved.md's open-web/blog-comment step so tools/intake_gate_check.py passes (it blocks any deep-work brief), then fetch R8345 in the same worker, ~$2",
+   "next": "keep going: 7 internal gaps; cheapest next: fetch the full-size R8345 images IMG_R8345_I38545_P1-P4 with tools/decode_browser_login.js (one login, ASKS row 42 answered 28 Sept 2026), cut crops of the f.213v postscript block with tools/iiif_lines.py --image, commit Aymeloglu's transcription with cred",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -715,7 +715,7 @@
    "stage": 8,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 5 internal gaps; cheapest next: two-pass transcription and reconciliation of leaf 192 from images/192_hi.jpg (on disk), merge, redecode leaf 188 (expected +10 tokens, \"l'ancien Gouverneur\" twice), ~$4.5",
+   "next": "keep going: 3 internal gaps (gap 1 done: leaves 192 and 201 merged; gap 5 done: M regrade, both 2 Oct 2026); cheapest next: gap 4, the LOCAL-QUEUE.tsv row for the Paris-side translation search (FranceArchives / AN Marine et Colonies: Janssens, Batavia, 1811, dechiffrement/traduction, quoting the cat",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "recovery"
   },
@@ -727,7 +727,7 @@
    "stage": 8,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 4 internal gaps; cheapest next: image-check the layout of \"forma.\" and the address against L18-L19, then align L19 to \"A Doña Antonija de Albanylla\" and L18 to \"forma\" with slid-window and shuffled-crib controls and run tools/decode_key.py --check, ~$3",
+   "next": "keep going: 2 internal gaps; cheapest next: segment and expand the re-aligned gloss (reading.txt L01-L14) into a per-line Spanish reading and judge it with shuffled-null controls after an es corpus era check, ~$3",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "recovery"
   },
@@ -739,7 +739,7 @@
    "stage": 8,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 5 internal gaps; cheapest next: one blind high-zoom read of the 3-glyph van-vs-PAN position on 2039 cartouche line 2 (images/2039_cartouche.jpg), ~$2",
+   "next": "keep going: 5 internal gaps; cheapest next: eye-check 2045A and 2042 overviews (one IIIF fetch each, two own looks) for a plain Purmerent legend to serve 2046 the way 2038 serves 2039, ~$1; after that, transcribe 2038's plain legend block into crib_2038_legend.tsv (native iiif_lines crop, 2 blind pa",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "recovery"
   },
@@ -751,7 +751,7 @@
    "stage": 7,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 3 internal gaps; cheapest next: fetch the 27 Dec 2014 and 4 Oct 2016 Pollaky posts with comments from scienceblogs.de (4 requests or fewer, combined with catokwacopa-1875's thread fetch on the same host), list every Pollaky ad by date and system, and find the clear ad dated weeks after 2",
+   "next": "keep going: 3 internal gaps; cheapest next: score Ernst's sibling design prior on ad 2 (gap 2 step (a)): 57 bigrams from the 114 digits, bigram repeat rate and IC against 200 random same-length digit strings and 20 synthetic 10x10-homophonic encipherments of 57-letter English, the same on the 1864 (",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -763,7 +763,7 @@
    "stage": 3,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 7 internal gaps; cheapest next: H-1649 fetch + 2894 f.186 decipher pilot (two passes + reconciliation; the ~$1 Discovery date check rides in the same worker), ~$6",
+   "next": "keep going: 7 internal gaps; cheapest next: transcribe the 2894 cipher figure pairs on H-1649 pages 184-185 (img827/828_full.jpg on disk, two passes + reconciliation) and check them against the f.186 decipherment with the 1778 Army List title-page key, ~$7",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -775,7 +775,7 @@
    "stage": 9,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 6 internal gaps; cheapest next: fold the 2021 print's words into key_5186 via build_key_5186.py (26=v, 28=j, 10=g at C, 22/30 tested as merged signs) with V9's exceptions.tsv split and a `decode_key.py --check` rerun, ~$2",
+   "next": "keep going: 5 internal gaps; cheapest next: the image-check of the gloss letters and the clear line against the print -- `tools/iiif_lines.py --image images/10088713.jpg` (and 10088714.jpg) crops pasted first, one fresh blind Sonnet read of the gloss words at r2g2/r4g2/r5g2, the clear-line \"mueven\"/",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "recovery"
   },
@@ -787,7 +787,7 @@
    "stage": 9,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 3 internal gaps; cheapest next: a sign-level alignment of passes/ciphertext_v6.txt against the joined 2017 reading (CPU only), ~$2",
+   "next": "keep going: 3 internal gaps; cheapest next: one vision call comparing p2 2 signs 17-18 with the 2 July 1520 letter and its decipherment (gap 2, H36 material on disk), ~$1; then the 39-crop two-pass re-read of gap 1 with PHI_T = c, TWO_NULLA = l and THREE = l|p as the hypotheses, ~$4",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "cryptanalysis"
   },
@@ -799,7 +799,7 @@
    "stage": 9,
    "state": "active",
    "holder": "Agents",
-   "next": "keep going: 8 internal gaps; cheapest next: order-shuffle bracketing script for codes 40, 11 and the six single-context codes, written down as the pre-registered prediction (no network), ~$1; then the EAD cijfer/sleutel grep and the Stadsarchief Amsterdam portfolio lookup, ~$2 each, before the ~$12 ",
+   "next": "keep going: 8 internal gaps (the bracketing step done 2 Oct 2026, predictions 40 = a and 11 = n registered); cheapest next: the NA 3.01.17 EAD re-fetch (one request) grepped for cijfer/sleutel/chiffre items 1655-1660, ~$2; then the Stadsarchief Amsterdam catalogue record for the burgomasters' 1657 m",
    "note": "Row added 2 Oct 2026 by the account-3 orchestrator (owner asked for every live target on the board); stage set from files on disk (AUDIT.md N-class=9, reading/HYPOTHESES=8, ciphertext=7), to be refined by the next worker on the target.",
    "kind": "recovery"
   }
