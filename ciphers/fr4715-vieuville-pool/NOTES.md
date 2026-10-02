@@ -299,10 +299,42 @@ a C/M-grade period witness against it on .27: on this leaf 27 under a bar is glo
 github.com 2 shallow clones. No 403/429. No credentials printed. No AskUserQuestion. Rule 10: what was found and where it
 was not; nothing here is called new or first.
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, 2 Oct 2026)
+## GAPS-fr4715-vieuville-pool-3 (2 Oct 2026, account-4): the Verdict step -- the four L-grade gloss sites on no.37 re-read from tall native crops
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, the Verdict step as GAPS-2 wrote it. Clock read 20:23-20:4x UTC
+2 Oct 2026. Intake gate exit 0. Requests: none (the native region of canvas 135 was on disk; no Gallica fetch). Vision calls:
+1 of 1, the strong model of this session reading one labelled sheet of four tall crops. Crops: `scripts/cut_f60r_gloss_sites.py`
+(committed, regenerable, crops not committed) cuts each site from the line above to below the line itself at 1.5x, so the
+interline gloss is no longer split by a band edge.
+
+| Site | Before (GAPS-2) | This read | Grade (rule 4) | Reason |
+|---|---|---|---|---|
+| L01 run 16 65 40 25 50 90 | labr? L, de? L (cut by the band top) | three words: 'labr' over 65 40, 'de' over 25/50, ?gal? over 50 90 | labr M, de M, ?gal? M | 'de' is clear as text but straddles the 25/50 boundary; 'labr' is four legible letters, not a word as written; the third word's first and last letters are unsure |
+| L20 legat over 50 23 30 | legat M | legat, clear letter for letter, written from the 0 of 50 to the 3 of 30 | M | the text would be C, but it spans 23 30, so no single group carries it; not entered in the key |
+| L20 dn | dn L, over a barred 16 after 'du' (pass C only) | du or dn over the dotted 16 of '95 16', before the clear 'du' | M | u/n ambiguous; mark corrected from bar to dot, position corrected |
+| L22 pen? | pen? L, a gloss over a barred 2? | 'peu d' with a superscript e/v: an interlinear insertion 'ny a [peu de] remede' | M | the sense fits an insertion; the barred-2 shape reads as the insertion mark, not a word-code |
+
+No value is C, because no site pairs a legible gloss with one settled group. No decode-key value changed:
+`key_wordcodes_f60r.tsv` is untouched, `key_wordcodes_f60r_all.tsv` (control only) and `witness/f60r_glosses_reconciled.tsv`
+carry the new rows, and no.44's slot table (`witness/f67r_wordcodes_context.tsv`) records .25 = de as a preposition that
+cannot fill its person slot. `scripts/wordcode_slot_test.py --shuffles 20`: REAL 6/7 = 0.857 vs 20 value-shuffled keys mean
+3.20/7, max 6/7, 4 of 20 at or above REAL (unchanged; not a pass at N=7). `tools/decode_key.py ciphers/fr4715-vieuville-pool
+--check` exit 0 on both jobs (f.67r 27 tokens AB 8 U 19; f.60r 175 tokens AB 133 M 11 U 31). Seen in passing on the sheet,
+not graded: a large '95' in darker ink in the right margin of L01-L02 (a later hand?), and a 'Roy' gloss over the barred
+figure after 'de' on L20 that pass C read as 6. Rule 10: nothing here is called new or first; only the glosses are read.
+
+```
+$ python3 tools/intake_gate_check.py fr4715-vieuville-pool   # exit 0
+fr4715-vieuville-pool: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+$ python3 tools/gaps_check.py fr4715-vieuville-pool   # exit 0
+OK keep-going fr4715-vieuville-pool: keep going: 5 internal gap(s), 1 step(s) untried
+gaps_check: 1 checked: 0 parked, 1 keep-going, 0 FAIL, 0 skipped
+```
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2 and -3, 2 Oct 2026)
 Read so far: no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv), the two dense blocks (15 lines, ~1,400 signs) untranscribed
 - the no.37 dense cipher blocks L06-L14 and L25-L30 (~1,400 signs) and the three digit runs - blocker: not-attempted; the letter key reads them (AB 133 on the runs) but no pass has read the blocks; next: two strong-model passes over 3x crops of the 15 block lines (scripts/cut_f60r_bands.py --seg 600 --scale 3, ~90 crops a pass) + reconciliation, then tools/judge_plaintext.py on the decoded blocks against the no.58 known-answer control, ~$12
-- the four L-grade glosses (labr?/de? over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: illegible; cut by the band edge or a few letters only at 3x; next: one strong-model call on a tall native crop of L01 s3 and the L20/L22 sites (4 crops), ~$2
+- the four L-grade glosses (labr/de over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: open-codes; re-read 2 Oct 2026 (GAPS-3) from tall native crops, 1 call: all four now M (de and legat clear as text but each straddles two groups; L20 du/dn sits over the dotted 16; L22 is an insertion 'peu de', not a gloss), no decode-key value changed; what would settle the group cover is the same code glossed again on a sibling leaf (no.21/35/39, gap 3 below)
 - no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37; next: the other glossed pool leaves (no.21 f.44, no.35 f.58, no.39 f.62, all "en partie déchiffrée" per the dépouillement) read the same way as this step, one leaf a job, ~$10 each
 - the clear-French frame of f67r_ciphertext.tsv and the judge - blocker: not-attempted; pass C (one strong pass) reads it at 84 pct H+M but is not reconciled into the file; next: tools/reconcile_passes.py over passes A, B and C, fold the agreed clear words into f67r_ciphertext.tsv, regenerate witness/f67r_judge_candidate.txt and re-run tools/judge_plaintext.py, ~$1
 - Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: not-attempted; the cloud cannot open the page (books.google.com page view bot-blocked) and no LOCAL-QUEUE row is filed yet; next: file the LOCAL-QUEUE edition-read row for the page citing 12 décembre 1589 and read whether she quotes the text, ~$1
@@ -313,6 +345,6 @@ Read so far: no.44: 8 of 27 cipher groups decode under the letter key (grade H) 
 - [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py on both leaves (--check exit 0); key_wordcodes_f60r.tsv built from the period glosses
 - [ ] print: tools/print_check.py on the H-grade clear phrases of no.44 (witness/f67r_pass_c.tsv) and on no.37's M lines (L02, L03, L16, L20, L23); next: write phrases.txt and run it, ~$1
 - [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
-- [x] image-check: no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
+- [x] image-check: (GAPS-3, 2 Oct 2026: the four L gloss sites re-read from tall native crops, all M) no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
 - [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
-Verdict: keep going: 4 internal gaps; cheapest next: the four L-grade gloss sites on no.37 (L01 s3 run, L20 legat, L22, L20 dn) re-read from tall native crops in one strong-model call, ~$2, then the no.37 dense blocks (two strong-model passes + judge against the no.58 control), ~$12
+Verdict: keep going: 5 internal gaps; cheapest next: the no.37 dense cipher blocks L06-L14 and L25-L30 (~1,400 signs): two strong-model passes over 3x crops (scripts/cut_f60r_bands.py --seg 600 --scale 3, ~90 crops a pass) + one reconciliation unit, decoded under key_vieuville_nevers.tsv, then tools/judge_plaintext.py with no.58's known text (Tomokiyo's decipherment, fr4715-montholon-1589) as the matched control run first, ~$12

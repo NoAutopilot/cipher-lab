@@ -2,13 +2,13 @@
 # grade C = read the same by two witnesses and the worker eye from the period decipherment on this leaf (rule 4); M = legible in part, candidates in the note; L = a few letters. class: person|place|common|conj|unknown.
 # every gloss row, for the slot test control only, never for decoding
 sign	value	grade	class	count	source	note
-.2	pen?	L	unknown	1	f.60r interlinear gloss L22	pen? -- unsettled whether this is a gloss on a group at all
+.2	peu de	M	common	1	f.60r interlinear L22	peu de -- GAPS-3: an interlinear insertion, not a gloss on a group; kept for the control only
 .7	Roy	C	person	2	f.60r interlinear gloss L23,L23	Roy -- the first barred 7 of the line
-.16	dn	L	unknown	1	f.60r interlinear gloss L20	dn -- not seen by G or E
-.25	de?	L	unknown	1	f.60r interlinear gloss L01	de? -- over the run 25 50 90; illegible beyond two letters
+.16	du/dn	M	unknown	1	f.60r interlinear gloss L20	du/dn -- GAPS-3: over the dotted 16 of '95 16', u/n ambiguous
+.25	de	M	common	1	f.60r interlinear gloss L01	de -- GAPS-3: text clear, sits over the 25/50 boundary, group cover M
 .27	nauarre?	M	person	2	f.60r interlinear gloss L01,L20	nauarre? -- six letters, n- -a/e- -re; C reads nauarre at both sites, E cannot exclude nemours; the same word as L20's gloss on the same code
 .71	montolon	C	person	1	f.60r interlinear gloss L01	montolon -- the gloss is written twice on L01, over each 71; spelled montolon (one witness montholon); the sender's own surname
 .93	Mr	C	person	1	f.60r interlinear gloss L01	Mr -- M with superscript r; two dots over the 9 of 93
 .99	bours	M	person	2	f.60r interlinear gloss L21,L24	bou??; bours -- final letters unsure; the two witnesses that read it end in -rs/-r?
-.5023	legat	M	person	1	f.60r interlinear gloss L20	legat -- over the start of the run 50 23 30 25 95; which group it covers is unsure, so not entered in the key
-.6654	labr?	L	unknown	1	f.60r interlinear gloss L01	labr? -- cut by the band top edge; which of 66 65 40 it covers unsure
+.5023	legat	M	person	1	f.60r interlinear gloss L20	legat -- GAPS-3: text clear (C as text), spans 23 30, group cover unsettled, not entered in the key
+.6654	labr	M	unknown	1	f.60r interlinear gloss L01	labr -- GAPS-3: four letters legible on the tall crop, word unclear, group cover unsettled

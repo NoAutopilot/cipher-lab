@@ -1,17 +1,17 @@
-# no.37 f.60r period interlinear glosses, reconciled (GAPS-fr4715-vieuville-pool-2, 2 Oct 2026). Witnesses: G = gloss pass (witness/f60r_gloss_pass.tsv, Opus 5.5, 2x crops), C = pass C (witness/f60r_pass_c.tsv, Opus 5.5, 3x crops), A = Sonnet pass A (L throughout), E = the worker's own look at 3x site crops (scratch, regenerable from scripts/cut_f60r_bands.py bands).
+# no.37 f.60r period interlinear glosses, reconciled (GAPS-fr4715-vieuville-pool-2, 2 Oct 2026). Witnesses: G = gloss pass (witness/f60r_gloss_pass.tsv, Opus 5.5, 2x crops), C = pass C (witness/f60r_pass_c.tsv, Opus 5.5, 3x crops), A = Sonnet pass A (L throughout), E = the worker's own look at 3x site crops (scratch, regenerable from scripts/cut_f60r_bands.py bands); T = GAPS-fr4715-vieuville-pool-3's one strong-model call on tall native crops of the four L sites (scripts/cut_f60r_gloss_sites.py, 2 Oct 2026; supersedes the L grades on those rows).
 # grade: C = the gloss word is read the same by two witnesses and the worker's eye (rule 4: read from the period decipherment on this leaf); M = legible in part, candidates named; L = a few letters only.
 # class = the value's class for scripts/wordcode_slot_test.py (person|place|common|conj|unknown).
 line	group	mark	gloss	grade	class	witnesses	note
 L01	27	bar	nauarre?	M	person	G n?ub?e L; C n.aua?re; A n.ruba?; E neuba/nerube	six letters, n- -a/e- -re; C reads nauarre at both sites, E cannot exclude nemours; the same word as L20's gloss on the same code
 L01	71	bar	montolon	C	person	G montolon M (x2); C Mu?tilo? + montholon; A monsieur?; E Montolon (clear at the second site)	the gloss is written twice on L01, over each 71; spelled montolon (one witness montholon); the sender's own surname
 L01	93	dot	Mr	C	person	G Mr M; C Mr; E Mr	M with superscript r; two dots over the 9 of 93
-L01	6654	unsure	labr?	L	unknown	G labr? L; C lavr[...] (Lavardin?); E labr/la bre	cut by the band top edge; which of 66 65 40 it covers unsure
-L01	25	dot	de?	L	unknown	C de?; G ?e ?ogg? L	over the run 25 50 90; illegible beyond two letters
+L01	6654	unsure	labr	M	unknown	G labr? L; C lavr[...] (Lavardin?); E labr/la bre; T labr (four letters l-a-b-r legible, word unclear)	T: the gloss is not cut on the tall crop; three words stand over the run 16 65 40 25 50 90: 'labr' over 65 40, 'de' over 25/50, and a third word over 50 90 read ?gal?/Sgaly (M, first and last letters unsure); 'labr' is legible but not a word as written (abbreviation?), so M; group cover unsettled
+L01	25	dot	de	M	common	C de?; G ?e ?ogg? L; T de (clear)	T: the two letters read 'de' without doubt, but the word sits over the 25/50 boundary, so which group it glosses is M; not entered in the decode key
 L20	27	bar	nauarre?	M	person	G na?a?e L; C n.ayre; A Reyne?; E nerub?	same word as L01's 27 gloss by shape; C reads nauarre at both
-L20	5023	none	legat	M	person	G legat M; C L?gab/Lyga[b]; E legat (clear)	over the start of the run 50 23 30 25 95; which group it covers is unsure, so not entered in the key
-L20	16	bar	dn	L	unknown	C only ("dn" or "du" above a barred 16 read with the 1 like h)	not seen by G or E
+L20	5023	none	legat	M	person	G legat M; C L?gab/Lyga[b]; E legat (clear); T legat (clear, letter for letter)	T: the gloss text is legible and unambiguous (legat, C as text), written from the 0 of 50 to the 3 of 30, so it spans 23 30 rather than one group; group cover unsettled, value graded M, not entered in the key
+L20	16	dot	du/dn	M	unknown	C only (dn/du above a barred 16); T du or dn with a stroke, legible, du/dn ambiguous	T: the gloss sits over the dotted 16 of the run '95 16' just before the clear 'du', not over the barred group after 'du' as pass C placed it; mark corrected bar->dot; ambiguous u/n, so M
 L21	99	dot	bou??	L	person	G bou?? L; C bou?b/bonh; A boue?; E bo??e	same code as L24; the L24 site is the legible one
-L22	2	bar	pen?	L	unknown	G pe??r L; C pen? + D^v (an interlinear insertion?); E pr??r	unsettled whether this is a gloss on a group at all
+L22	2	bar	peu de (insertion)	M	common	G pe??r L; C pen? + D^v (an interlinear insertion?); E pr??r; T 'peu d' + superscript e/v over a caret-like stroke	T: reads as an interlinear insertion 'peu de' into 'ny a [peu de] remede', the barred-2 shape being the insertion mark; not a gloss on a word-code (sense fits, shape of the mark M)
 L23	7	bar	Roy	C	person	G Roy M (s1 site); E Roy; C no gloss seen at this first 7	the first barred 7 of the line
 L23	7	bar	Roy	C	person	G Roy M (s3 site); C R^oy; E Roy (clear)	the second barred 7 of the line
 L24	99	dot	bours	M	person	G bour? M; C bours (Bourbon?); A bonne?; E bours	final letters unsure; the two witnesses that read it end in -rs/-r?
