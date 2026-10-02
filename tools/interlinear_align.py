@@ -64,6 +64,15 @@ for one that ends an OCR word, so from a flat start one code soaks up a whole gl
 X per letter of distance between a chunk's length and the pair's own letters-per-code ratio, so the first
 iteration splits each gloss roughly evenly and consistency across pairs does the rest. Defaults reproduce the
 Thurloe behaviour exactly.
+
+--digits N and --word-prior (2 Oct 2026, GAPS8-na-janssens-java-1811): for a word/syllable nomenclator with codes up
+to four digits (Janssens 1811: 1-1197) checked against a separate plain copy rather than an interlinear line. --digits N
+lets a numeral of up to N digits count as a code (default 3, Thurloe; a 4-digit group was 'doubtful' before). With
+--prior KEY.tsv, --word-prior seeds EVERY code in the key (any length, any floor) with its meaning's letters (accents
+folded, 2 counts), not only single-letter values below --floor: the use is testing a period gloss against an
+independent plain copy, where each code occurs once or twice and a flat start has nothing to agree with (GAPS8: 2/209
+positions from a flat start). The seeded counts are then the hypothesis under test, not independent evidence: report
+agreement against the same run on the codes in shuffled order. Without either flag nothing changes.
 """
 import csv
 import itertools
@@ -80,6 +89,11 @@ CONFUSE = {
     'B': '8', 'G': '6', 'b': '6', '^': '4', '%': '7', 'n': '11', 'u': '11', 'c': '9',
 }
 MAXCHUNK = 14
+
+
+def fold_accents(s):
+    import unicodedata
+    return ''.join(c for c in unicodedata.normalize('NFD', s) if unicodedata.category(c) != 'Mn')
 
 
 def fold(chunk):
@@ -122,6 +136,10 @@ def cmd_pairs(djvu, first, last, out):
     print('%d pairs' % len(rows))
 
 
+MAX_DIGITS = 3      # --digits
+WORD_PRIOR = False  # --word-prior
+
+
 def classify_token(tok, code_prefix=None):
     """-> (kind, value): kind num (value int), code (value str, --code-prefix mode: a
     non-numeral codebook symbol, always floor -- see run_align), clear (parenthesised
@@ -137,7 +155,7 @@ def classify_token(tok, code_prefix=None):
         if inner.translate(CLEAN).isdigit():
             return 'clear', None
     c = core.strip('()').translate(CLEAN)
-    if c.isdigit() and 1 <= len(c) <= 3:
+    if c.isdigit() and 1 <= len(c) <= MAX_DIGITS:
         return 'num', int(c)
     if not digitish(tok):
         return 'clear', None
@@ -275,6 +293,11 @@ def load_prior(path, floor, code_mode=False):
         for r in csv.DictReader(f, delimiter='\t'):
             code = r.get('code') or r.get('value')
             mean = r.get('meaning') if 'meaning' in r else r.get('value')
+            if WORD_PRIOR:
+                letters = re.sub(r'[^a-z]', '', fold_accents(mean or '').lower())
+                if code and code.strip().isdigit() and letters:
+                    prior[int(code)][fold(letters)] += 2
+                continue
             if not (code and mean and mean.isalpha() and len(mean) == 1):
                 continue
             if code_mode:
@@ -418,6 +441,13 @@ if __name__ == '__main__':
             wildcard = a[k + 1]
             del a[k:k + 2]
         max_chunk, seg_bonus, len_prior = MAXCHUNK, 1.0, 0.0
+        if '--digits' in a:
+            k = a.index('--digits')
+            MAX_DIGITS = int(a[k + 1])
+            del a[k:k + 2]
+        if '--word-prior' in a:
+            WORD_PRIOR = True
+            a = [x for x in a if x != '--word-prior']
         for flag in ('--max-chunk', '--seg-bonus', '--len-prior'):
             if flag in a:
                 k = a.index(flag)

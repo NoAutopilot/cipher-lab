@@ -86,6 +86,19 @@ def main():
     # the Thurloe defaults (14-letter chunks, word-boundary bonus 1.0, no length prior) do not
     key7 = run(sy_pairs, '--floor', '1')
     assert [key7[c]['meaning'] for c in '1234'] != ['la', 'pr', 'in', 'ce'], key7
+    # --digits 4 --word-prior (GAPS8 janssens, 2 Oct 2026): four-digit word codes, each once, against a plain copy;
+    # a word prior from the gloss places them; a gloss value the plain copy does not support moves (1135 forte->force)
+    wp_pairs = [['1', 'La force navale ennemie augmentee', '1', '739 1135 1183 1128 562']]
+    d = tempfile.mkdtemp()
+    kp = os.path.join(d, 'prior.tsv')
+    with open(kp, 'w') as f:
+        f.write('code\tvalue\n739\tLa\n1135\tforte\n1183\tnavale\n1128\tennemie\n562\taugmente\n')
+    key8 = run(wp_pairs, '--floor', '0', '--digits', '4', '--prior', kp, '--word-prior')
+    assert key8['1183']['meaning'] == 'navale' and key8['1128']['meaning'] == 'ennemie', key8
+    assert key8['1135']['meaning'] == 'force', key8
+    # without --digits 4 the four-digit groups are 'doubtful' and carry no value in the key
+    key9 = run(wp_pairs, '--floor', '0', '--prior', kp, '--word-prior')
+    assert '1183' not in key9, key9
     print('ok')
 
 
