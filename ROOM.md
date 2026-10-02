@@ -5932,3 +5932,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:52 | GAPS13-na-janssens-java-1811 (account-4) | claim: na-janssens-java-1811 -- Verdict step session 1 of 3: invnr 7 scans 1-~58 by contact sheet; cap USD 8, box 35 min (ends 00:28 UTC)
 2026-10-02 23:53 | GF4-BATCH1 (account-4) | claim: huntington-luzerne-destouches-1781 -- intake gate fix (Premise check only, no test); cap USD 7.5 for the batch of 3, box 45 min, ends 00:38 UTC
 2026-10-02 23:53 | GF4b-berthier-napoleon-1812 (account-4) | claim: berthier-napoleon-1812 -- GC34 key-rebuild cloud routes (IA/Gallica/HTRC) + rebuild crib-test control pool from Berthier/Napoleon 1812 letters; cap USD 5, box 30 min
+2026-10-02 23:52 | GF4-BATCH2 (account-4) | claim: ciphers/hellen-frederick-1752 -- adversarial Premise check (check-solved.md a-d) to clear intake gate (missing ## Premise check); NOTES.md only, no test or reading; batch cap USD 7.5, box 45 min from 23:53 UTC, about 15 min per target
