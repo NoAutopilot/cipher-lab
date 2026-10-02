@@ -1,0 +1,522 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "g7_L01.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    469,
+    1900,
+    583
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L02.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    583,
+    1900,
+    703
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L03.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    703,
+    1900,
+    799
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L04.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    799,
+    1900,
+    889
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L05.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    889,
+    1900,
+    976
+   ],
+   "lines_in_crop": 1,
+   "band": 5,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L06.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    976,
+    1900,
+    1072
+   ],
+   "lines_in_crop": 1,
+   "band": 6,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L07.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1072,
+    1900,
+    1174
+   ],
+   "lines_in_crop": 1,
+   "band": 7,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L08.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1174,
+    1900,
+    1267
+   ],
+   "lines_in_crop": 1,
+   "band": 8,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L09.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1267,
+    1900,
+    1360
+   ],
+   "lines_in_crop": 1,
+   "band": 9,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L10.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1360,
+    1900,
+    1450
+   ],
+   "lines_in_crop": 1,
+   "band": 10,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L11.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1450,
+    1900,
+    1540
+   ],
+   "lines_in_crop": 1,
+   "band": 11,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L12.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1540,
+    1900,
+    1630
+   ],
+   "lines_in_crop": 1,
+   "band": 12,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L13.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1630,
+    1900,
+    1717
+   ],
+   "lines_in_crop": 1,
+   "band": 13,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "g7_L14.jpg",
+   "source_url": "",
+   "source_file": "NL-HaNA_1.02.04_63_0001.jpg",
+   "box": [
+    440,
+    1717,
+    1900,
+    1807
+   ],
+   "lines_in_crop": 1,
+   "band": 14,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     114,
+     252,
+     354,
+     444,
+     534,
+     618,
+     726,
+     822,
+     912,
+     1008,
+     1092,
+     1188,
+     1272,
+     1362
+    ]
+   },
+   "date": "02 Oct 2026"
+  }
+ ]
+}

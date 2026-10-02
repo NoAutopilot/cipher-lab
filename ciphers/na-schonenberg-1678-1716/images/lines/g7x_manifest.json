@@ -1,0 +1,159 @@
+{
+ "note": "GAPS7 2 Oct 2026: gloss+cipher pair crops, boxes from the dark-ink row profile (gloss row y) of the leaf; g7_* is the tools/iiif_lines.py --image --centres pass (debug overlay g7_lines_debug.jpg), g7x_* the same lines with 55 px above the gloss and 1.6x upscale for the readers",
+ "crops": [
+  {
+   "crop": "images/lines/g7x_L01.jpg",
+   "box_native": [
+    440,
+    439,
+    1900,
+    614
+   ],
+   "upscale": 1.6,
+   "line": "L01"
+  },
+  {
+   "crop": "images/lines/g7x_L02.jpg",
+   "box_native": [
+    440,
+    577,
+    1900,
+    716
+   ],
+   "upscale": 1.6,
+   "line": "L02"
+  },
+  {
+   "crop": "images/lines/g7x_L03.jpg",
+   "box_native": [
+    440,
+    679,
+    1900,
+    806
+   ],
+   "upscale": 1.6,
+   "line": "L03"
+  },
+  {
+   "crop": "images/lines/g7x_L04.jpg",
+   "box_native": [
+    440,
+    769,
+    1900,
+    896
+   ],
+   "upscale": 1.6,
+   "line": "L04"
+  },
+  {
+   "crop": "images/lines/g7x_L05.jpg",
+   "box_native": [
+    440,
+    859,
+    1900,
+    980
+   ],
+   "upscale": 1.6,
+   "line": "L05"
+  },
+  {
+   "crop": "images/lines/g7x_L06.jpg",
+   "box_native": [
+    440,
+    943,
+    1900,
+    1088
+   ],
+   "upscale": 1.6,
+   "line": "L06"
+  },
+  {
+   "crop": "images/lines/g7x_L07.jpg",
+   "box_native": [
+    440,
+    1051,
+    1900,
+    1184
+   ],
+   "upscale": 1.6,
+   "line": "L07"
+  },
+  {
+   "crop": "images/lines/g7x_L08.jpg",
+   "box_native": [
+    440,
+    1147,
+    1900,
+    1274
+   ],
+   "upscale": 1.6,
+   "line": "L08"
+  },
+  {
+   "crop": "images/lines/g7x_L09.jpg",
+   "box_native": [
+    440,
+    1237,
+    1900,
+    1370
+   ],
+   "upscale": 1.6,
+   "line": "L09"
+  },
+  {
+   "crop": "images/lines/g7x_L10.jpg",
+   "box_native": [
+    440,
+    1333,
+    1900,
+    1454
+   ],
+   "upscale": 1.6,
+   "line": "L10"
+  },
+  {
+   "crop": "images/lines/g7x_L11.jpg",
+   "box_native": [
+    440,
+    1417,
+    1900,
+    1550
+   ],
+   "upscale": 1.6,
+   "line": "L11"
+  },
+  {
+   "crop": "images/lines/g7x_L12.jpg",
+   "box_native": [
+    440,
+    1513,
+    1900,
+    1634
+   ],
+   "upscale": 1.6,
+   "line": "L12"
+  },
+  {
+   "crop": "images/lines/g7x_L13.jpg",
+   "box_native": [
+    440,
+    1597,
+    1900,
+    1724
+   ],
+   "upscale": 1.6,
+   "line": "L13"
+  },
+  {
+   "crop": "images/lines/g7x_L14.jpg",
+   "box_native": [
+    440,
+    1687,
+    1900,
+    1805
+   ],
+   "upscale": 1.6,
+   "line": "L14"
+  }
+ ]
+}
