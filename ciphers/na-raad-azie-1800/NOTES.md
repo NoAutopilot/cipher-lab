@@ -334,3 +334,59 @@ or Batavia; the folder records his commissarial role in 1.04.17. That means the 
 registers, whose bulk is at ANRI Jakarta. Those were **not searched** (no online route tried this pass), and
 nothing in the folder says a copy register holds a clear draft of this letter. **Not found / unreachable.**
 Requests: scienceblogs.de 1, github.com clones shared with the other three GF-A2-8 targets, WebSearch 7.
+
+## 2 Oct 2026 -- A2-RAA: invnr 209's groups against the 1799 Grasveld code's structure (matched control)
+
+Intake gate, run before this step (`python3 tools/intake_gate_check.py na-raad-azie-1800`, exit 0):
+
+    na-raad-azie-1800: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+
+**Question** (GF-A2-8's Premise check (b), "Not tested"): could invnr 209 be written in the Batavian government's 1799
+Grasveld *Correspondentiecijffer* (NA 2.21.045 inv. 34313; per dbourdeau/cyphersolver `targets/toulon1803/NOTES.md`,
+MIT, cited not copied: an ordered dictionary code, values 1-992, each group carrying one of six marks -- none, wave,
+caret, double stroke, overbar, plus -- groups separated by full stops)? The key booklet itself is not digitised, so
+this tests structure only, against the four same-key letters Bourdeau transcribed (R2034, R1944, R1945, R1946).
+
+**Method** (`scripts/test_grasveld1799_vs_209.py`, output `data/test_grasveld1799_vs_209.out`; control tokens extracted
+to `data/grasveld1799_traffic_groups.tsv`, 617 groups, 1,775 digits). Three statistics, computed identically on the
+target and on every control window: T1 = digits in {0,8,9} among 35 consecutive cipher digits; T2 = longest digit run
+without a group separator; T3 = share of cipher digits carrying an annotation that is itself a digit. Controls:
+C1 every 35-digit window of the real same-key traffic (matched design, matched length); C2 2,000 synthetic messages of
+uniform 1-992 groups; C3 positive control, 2,000 x 35 letters of period Dutch (Breda 1624-25 print corpus) in a 7x4
+row/column grid, to show T1 *can* read 0 (the control can differ from the target on this statistic, rule 3).
+
+| | T1 (0/8/9 in 35 digits) | T2 (longest unseparated run) | T3 (digit-annotated share) |
+|---|---|---|---|
+| **Target**, 209 leaf 2 line 1 (35 top digits) | **0** | **14** | **0.914** (32/35) |
+| C1 real Grasveld-code traffic, 1,639 windows | mean 8.74, min 2; **0 of 1,639** windows read 0 | 4 (one doubtful `9130`), otherwise 3 | 0.000 (marks are non-digit signs, one per group) |
+| C2 synthetic uniform 1-992 code, 2,000 | mean 9.37; 0 of 2,000 read 0 | 3 | 0.000 |
+| C3 positive control, 7x4 grid, 2,000 | **2,000 of 2,000** read 0 | 35 | 1.000 |
+
+Reading: digits 0, 8 and 9 make up 25.0% of the Grasveld traffic's digits, so a 35-digit stretch with none of them
+has probability about 0.75^35 = 4e-5, and no real window comes closer than 2. Even if the one doubtful top digit
+(position 9, "4, possible 9") is a 9, T1 = 1 is still below every one of 1,639 real windows. The code separates
+1-3-digit groups with stops and marks each group once with a non-digit sign; 209 writes unseparated runs of up to 14
+digits with a second digit (1-4) under nearly every digit. **Verdict: control-backed negative by structure -- invnr
+209 is not in the 1799 Grasveld code's design** (conditional on the four transcriptions Bourdeau made and on 209
+line 1 as transcribed; the key booklet itself was not seen). C3 shows the test is not rigged to fail: a design built
+of stacked coordinate pairs passes all three statistics.
+
+**Image check (rule 2) -- correction to this folder's own extent statement.** Re-reading `images/209_leaf2.jpg` at full
+page (not the zoom crop) shows that leaf 2's right-hand page carries **about 14 lines of stacked digit pairs**,
+interleaved with clear Dutch phrases ("maar evenwel, zo wy hopen, eerlang", "is de Asiatische Raad", "en reeds bezig
+met", "waardoor, indien deselve", "Ik ben gelast u daar van deze onderhandsche en voorlopige kennis te geven, met
+verzoek, dat Gy den", "tot deszelfs ..."; grade M, eye-read at page resolution) with some cancelled groups. The
+earlier passes transcribed only the first line (35 pairs) and called it the whole leaf-2 body. At this resolution the
+top digits across the page look like 1-7 and the bottom digits like 1-4 throughout (grade M, not counted). The
+structure -- each plaintext unit as a top digit 1-7 over a bottom digit 1-4, at most 28 cells, mixed with clear text --
+fits a table- or grid-coordinate letter cipher better than any word code; that is a structural observation, not a
+reading, and no key or alphabet was fitted.
+
+Grade counts this step: H 0, C 0, S 0, M 0 readings (no plaintext claimed); the clear-text phrases quoted above are
+M-grade eye reads of the open text, not decipherment. Requests: none (github.com shallow clone of dbourdeau/cyphersolver
+1; all images already on disk). Vision: two reads of on-disk images by this worker, no subagent.
+
+**Next step** (~$4-6, Usage 6 per-pass pricing): cut line crops of leaf 2's right page with
+`tools/iiif_lines.py --image images/209_leaf2.jpg --out images/crops209` and run two blind passes plus one
+reconciliation to transcribe all ~14 cipher lines as (top, bottom) pairs; then test the stacked pairs as a 7x4 (or
+smaller) cell substitution with the C3 control at the transcribed length.

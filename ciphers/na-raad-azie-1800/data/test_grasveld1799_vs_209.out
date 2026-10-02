@@ -1,0 +1,5 @@
+# A2-RAA 209 vs Grasveld 1799 code: structure comparison
+target_209	N=35	T1=0	T2=14	T3=0.914
+C1_real_same_key	groups=617 digits=1775 windows=1639	T1_mean=8.74 T1_min=2 windows_with_T1=0: 0/1639	T2=4	T3=0.000	share_0/8/9=0.250
+C2_synth_uniform_1-992	T1_mean=9.37	T1=0: 0/2000
+C3_positive_7x4_grid	T1=0: 2000/2000	T2>=35 (no separators)	T3=1.000
