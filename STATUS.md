@@ -356,6 +356,8 @@ GAPS-fr4715-vieuville-pool-4 (no.37 dense blocks, Opus passes, no.58 control fir
 session_01XYtebGkfv3pcr5tFe3x8Pj), GAPS7-na-schonenberg (12-code image pass, readers blind to the inferences, cap 22;
 session_01Nmv3CUrvjHYaqPrYJzstr4), CLOSER-9 (session_01UiEUjVdY2o3fjdUgjY2nJN). Slot check re-armed every 15 min while workers run.
 
+Check-in 15 (21:10 UTC, 14:10 PDT, 2 Oct 2026): five 20:49 workers and CLOSER-9 done and ledgered (moray 0 moves, control out-scored target; suriname 268 signs, weak z +2.05; clinton 3868 H 248 but text-known in Vermont Hist. Soc. Collections II 1871; fr3986 verso does not read, step retired; schonenberg leaf C 171/M 109/U 0). Refilled to 6 live on Opus 5.5: vieuville-pool-4 (session_01XYtebGkfv3pcr5tFe3x8Pj), GAPS8-moray period key (session_01PQmV6cry64cf4biumTV58v), GAPS9-suriname crib (session_01XtfNcknkAp8DcjUgEs7CZo), GAPS9-clinton 2380 (session_01SkL45rywG46ZNziftN1CHa), GAPS4-fr3986 recto (session_01GHnMCYaxG8AF8LRqHXNMpj), GAPS8-schonenberg judge + image (session_01ByZvaseAZDwD2vtqYkkTe2); CLOSER-10 session_01Lhy5LsQ8LVpSxxD83C7PRy. Queued for the next free slot: na-janssens No.4 set; verifier for clinton 3868 (text-known).
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
