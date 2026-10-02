@@ -1,0 +1,123 @@
+passage	pos	sign_id	alt	conf	note
+R02	1	T89		H	prose before: line start
+R02	2	T96		H	
+R02	3	T98		H	
+R02	4	T25		H	
+R02	5	T92		H	
+R02	6	T37		H	
+R02	7	T24		H	
+R02	8	T85		H	
+R02	9	T95	T66	L	
+R02	10	T33		H	
+R02	11	T85		H	
+R02	12	T60	T86	M	
+R02	13	T33	X_NEW	L	
+R02	14	T85		H	
+R02	15	T53		H	
+R02	16	T55		H	
+R02	17	T17	X_NEW	L	
+R02	18	T19		H	
+R02	19	T58		H	
+R02	20	T65		H	
+R02	21	T19		H	
+R02	22	T36		H	
+R02	23	T19		H	
+R02	24	T76		H	
+R02	25	T58		H	
+R02	26	T19		H	
+R02	27	T97	T89	L	
+R02	28	T52		H	
+R02	29	T37		H	
+R02	30	T51		H	
+R02	31	T53		H	
+R02	32	T45		H	
+R02	33	T38	T64	L	
+R02	34	T60	T86	M	prose after: line end
+R03	1	T92		H	prose before: line start
+R03	2	T19		H	
+R03	3	T90		H	
+R03	4	T24		H	
+R03	5	T85		H	
+R03	6	T70		H	
+R03	7	T90		H	
+R03	8	T85		H	
+R03	9	T24		H	
+R03	10	T65		H	
+R03	11	T25		H	
+R03	12	X_NEW	T88	L	small a-like mark after lambda, X_NEW
+R03	13	T92		H	
+R03	14	T19		H	
+R03	15	T58		H	
+R03	16	T66	T95	M	
+R03	17	T97	T89	L	
+R03	18	T76		H	
+R03	19	T51	X_K	M	prose after: Il
+V01	1	T88		H	prose before: considerare
+V01	2	T33		H	
+V01	3	T85		H	
+V01	4	T60		H	
+V01	5	T53		H	
+V01	6	T55		H	
+V01	7	T25		H	
+V01	8	T58		H	
+V01	9	T90		H	
+V01	10	T24		H	
+V01	11	T55		H	
+V01	12	T36		H	
+V01	13	T45		H	prose after: line end
+V02	1	T63		H	prose before: line start
+V02	2	T86	T60	M	
+V02	3	T97	T89	L	
+V02	4	T86	T60	M	
+V02	5	T98		H	
+V02	6	T80		H	
+V02	7	X_NEW		L	digit 4 / digit 7
+V02	8	X_NEW		L	digit 4 / digit 7
+V02	9	T98		H	
+V02	10	T25		H	
+V02	11	T80		H	
+V02	12	X_NEW	T58	L	
+V02	13	T53		H	
+V02	14	T85		H	
+V02	15	T60		H	
+V02	16	T65		H	
+V02	17	T19		H	
+V02	18	X_EQ		H	
+V02	19	T37		H	
+V02	20	T92		H	
+V02	21	T53		H	
+V02	22	T80		H	
+V02	23	T63		H	
+V02	24	T96		H	
+V02	25	T52		H	
+V02	26	T98		H	
+V02	27	T37		H	
+V02	28	T85		H	
+V02	29	T54		H	
+V02	30	T60		H	prose after: line end
+V03	1	T17	X_NEW	L	prose before: line start
+V03	2	T85		H	
+V03	3	T18	T98	M	
+V03	4	T85		H	
+V03	5	T27	X_NEW	L	
+V03	6	T19		H	
+V03	7	T92		H	
+V03	8	T85		H	
+V03	9	T95	T66	M	
+V03	10	T49	T51	L	
+V03	11	T24		H	
+V03	12	T45		H	
+V03	13	T24		H	
+V03	14	T33	T19	M	
+V03	15	T25		H	
+V03	16	X_NEW		L	
+V03	17	T96		H	
+V03	18	T52		H	
+V03	19	T58		H	
+V03	20	T52		H	
+V03	21	T24		H	
+V03	22	T19		H	
+V03	23	T70	T84	M	
+V03	24	X_NEW		L	
+V03	25	T90	T45	L	
+V03	26	T54		H	prose after: line end (Nondimeno next line)
