@@ -1,4 +1,5 @@
 open
+*Briefwisseling van Anthonie Heinsius 1702-1720* Deel 18 (Smit/Veenendaal, Huygens retroboeken GS244) p.95 read by GF-A2-5 (2 Oct 2026) from the page image on disk: letter 142 prints the numeral cipher in running French, footnote 3 "Het cijferschrift is door d'Alonne niet opgelost", no decipherment printed.
 
 # H.W. Rumpf and van de Bie to Anthonie Heinsius, cipher never broken by d'Alonne, 1716-1719
 
@@ -159,3 +160,43 @@ Follow-up suggestions (one line each): (1) the NA originals of letters 309 (H.A.
 cipher) and 446/455 (H.A. 2044) would multiply the ciphertext several times and are the route to a reading;
 (2) a 1700-1720 French letter corpus as LM; (3) a key or cipher table of Rumpf's in the Fagel papers
 (NA 1.10.29 inv. 5345, "cipher van Rumpf 1743", DECODE 2818) is worth one look for a family resemblance.
+
+## Web and blog check (GF-A2-5, 2 Oct 2026)
+
+Plain web searches (4): `Rumpf Heinsius 1716 cipher "d'Alonne" "niet opgelost"` (Wikipedia Heinsius and d'Alonne,
+Huygens edition page, NA 3.01.19 inventory PDF, and de Leeuw's Historical Journal article "The black chamber in the
+Dutch Republic during the War of the Spanish Succession and its aftermath, 1707-1715" -- its stated range ends 1715,
+before letter 142, so not opened further this pass; none reads this cipher); `"Rumpf" Stockholm 1718 Heinsius
+cijferschrift onopgelost` (Rumpf namesakes -- Rumphius, Isaak Augustijn Rumpf, Christiaan Constantijn Rumpf d.1706 --
+nothing on this cipher); `"van de Bie" Stockholm 1719 Heinsius cipher` (Heinsius family pages, nothing on van de Bie's
+cipher); `Heinsius archief 3.01.19 inv 2044 OR 2030 OR 1975 Rumpf cijfer` (NA inventory PDF, a BMGN article PDF,
+unrelated catalogue pages).
+Blog site searches: `site:scienceblogs.de klausis-krypto-kolumne Heinsius cipher` (Cipherbrain archive pages only, no
+post on Heinsius/Rumpf); `site:cryptiana.blogspot.com Heinsius d'Alonne cipher` (no Cryptiana page returned; Cipher
+Mysteries "17th century cipher mystery meme" and p=7357 surfaced, general posts, not about this correspondence);
+`site:ciphermysteries.com Heinsius Dutch cipher eighteenth century` (no Cipher Mysteries page about Heinsius
+returned). No comment thread found that discusses these letters.
+Result: no decipherment or plaintext of letters 142/309/446/455 found on the open web or in the three blogs.
+Requests: WebSearch 7; no page fetches (the p.95 image was read from disk).
+
+## Premise check (GF-A2-5, 2 Oct 2026)
+
+(a) Folder's own mentions: every decipherment mention in NOTES.md and REQUEST.md is a statement that d'Alonne did NOT
+solve the cipher (footnotes to 142, 309, 446, 455); p.95 re-viewed from the image on disk confirms no decipherment
+is printed beside or below letter 142's cipher. Not found. (Side note for the next reader: the p.95 image shows letter
+142 signed H.W. Rumpf and written from Sweden -- it mentions Lund, Udstedt and the baron Görtz; "Rotterdam" in the
+24 Sept sweep's heading for 142 belongs to letter 143 from the Rotterdam admiralty on the same page. Not corrected
+above; flagged here only.)
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026)
+grepped for "Rumpf", "van de Bie", "Heinsius", "Dopff": "Rumpf" hits only German corpus files, a perwich text and
+Aymeloglu's DECODE catalogue rows 2818 (NA 1.10.29 Fagel inv. 5345, "cipher van Rumpf", 1743, a key record) and 1361
+(Vienna, 1574, unrelated); "Heinsius" hits only Bourdeau's windischgraetz1720 / rakoczi1707 / bay1706 key files (the
+word as a nomenclator entry) and an Aymeloglu forster-1644 lexicon. No output, rendering or key run on this text.
+Aymeloglu cited, not copied. Not found. The 1743 Fagel "cipher van Rumpf" key (DECODE 2818) stays a lead to test
+against letter 142 if it proves to be the same Rumpf's system -- unconfirmed.
+(c) Physical neighbours: originals H.A. 1975/2030/2044 are not digitised (`"availability":"PHYSICAL","scans":[]`,
+24 Sept sweep); the printed page carries no facing decipherment. Unreachable for the manuscript leaves (REQUEST.md is
+the route).
+(d) Recipient side: Heinsius is the recipient and the edition read is his own correspondence edition (Deel 18 p.95
+this pass; Deel 19 pp.302-303, 337 by the 24 Sept sweep). Sender-side Swedish or Dutch-envoy print not searched this
+pass. Not found.
