@@ -767,7 +767,7 @@ Vision calls 3 (two blind passes, one adjudication) plus this worker's own looks
 
 ## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
 Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
-- f.184 no.90, the rest of its cipher (f.185r lines 11-14 and 17-28, about 16 lines; f.185v one short run, canvas 190 left line 3) - blocker: not-attempted; read so far 554 signs (f.184r 224 by NEVBIR-184; f.184v foot + f.185r L01-08 330 by NEVBIR-185, 2 Oct 2026, section at the end): rank 1/201 at 3 seeds, z 4.19-4.22, power 19-20/20, agreement 0.96 on the new portion, judge FAIL -1.134 (shuffled 0/20 PASS); next: the f.185r native region is already cut-ready (harvest/f185/REGEN.sh), cut lines 11-14 and 17-28 with explicit --centres and check the debug overlay for a duplicated band (NEVBIR-185 hit one), 2 blind passes + 1 adjudication, ~$4; then canvas 190 left for the f.185v run (~$1); also value-fit the r-position X_NEW (decode_control.py --fit-sign, disk only, ~$1)
+- f.184 no.90 -- all its cipher now read (966 signs; NEVBIR-185B, 2 Oct 2026, section at the end): rank 1/201 at 3 seeds, z 4.49-4.59, power 20/20 at err 0.12; judge FAIL -1.069 (shuffled 0/20 PASS); remaining: 19 tiles NEVBIR-185 coded X_NEW that match the sheet's T83 (r) - blocker: open-codes; fit-aware control gain rank 6-9/201 only, grade M; next: confirm the 19 tiles are T83 by a value-blind look-alike pass or the owner's sign sorter (f185r/passC_rest90_ae.tsv), then relabel and re-run decode_key, disk + 1 vision call, ~$1; and a separate verifier pass on the f.184v-f.185v portion (rule 10), ~$3
 - f.168r-v no.85 (two runs, 121 signs, NEVBIR-168, 2 Oct 2026) - blocker: too-short; printed 1572 key + T42=m rank 36/201 (z 1.00; seeds 2-3 rank 31, 41), power control 15/20 at err 0.13 (z min 0.22): a miss the right key also gives in about a quarter of windows at this length, so not licensed as a reading and too weak to call a negative; 11 off-sheet signs; pooled test run (NEVBIR-POOL, 2 Oct 2026, section at the end): pool of f.144r + f.168 + f.174r rank 1-4/201, power 15/20 at err 0.15, not licensed, and f.168 is the run that drags the pool down (leave-one-out); next: the off-sheet value-fit shared with f.139v (disk only, ~$1); NEVBIR-LOOKALIKE (2 Oct 2026, section below): look-alike pass lowered the residual reader disagreement to 0.074, printed key + T42=m on passD rank 13-15/201 (z 1.43-1.55) against power 19/20 at 0.074 (z min 2.00) and 14/20 at 0.13: not licensed, not a negative; 7 of the 9 unsettled tiles are one question (T24, the readers, or T83, the look-alike reader; the pre-registered secondary sequence with T83 there ranks 1/201 z 3.49, a pointer only); next: the owner settles the 7 T24/T83 tiles in the sign sorter (sorter/README.md; waiting-on the owner, never blocking), then re-run decode_control.py on the settled sequence, disk only, ~$0.5
 - f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; pooled test run (NEVBIR-POOL, 2 Oct 2026): not licensed at 296 signs (rank 1-4/201, power 5/20 at this run's 0.24 error); next: lower the reader error with the clerk-sheet error map (gap below), ~$2; NEVBIR-LOOKALIKE (2 Oct 2026, section below): look-alike pass lowered the residual reader disagreement from 0.24 to 0.044 (4 tiles unsettled); printed key + T42=m on passD rank 1, 2, 1 of 201 (z 2.27-2.44), power 18/20 at 0.044 (z min 1.78) but 4/20 at the old 0.24: control-backed only if the 2-of-3 residual is accepted as the reader error; next: a verifier pass on the passD reading and the 4 unsettled tiles (sorter focus box), ~$3
 - no.71 cipher passage, f.139v foot (161 signs, NEVBIR-138, 2 Oct 2026) - blocker: open-codes; 21 off-sheet signs unkeyed (X_NEW "4", "7", square-with-dot, "t", raised "m" abbreviation and others), the power control is weak at this length (10/20 at err 0.15) and the judge FAILs (-1.159 vs real_p05 -0.955); next: value-fit of the recurring off-sheet signs (decode_control.py --fit-sign, disk only, ~$1; the t-shaped X_NEW read m on no.87 against the clerk sheet), then a separate verifier on the reading
@@ -1593,3 +1593,103 @@ separate verifier (rule 10).
 
 Requests: gallica.bnf.fr 3 (info.json canvas 189; two native regions), 2 s apart, no challenge. Vision calls 5 (two blind
 passes, two one-line passes, one adjudication) plus this worker's own looks. No credentials.
+
+## NEVBIR-185B (2 Oct 2026, account 2 for the account-3 orchestrator): no.90 f.185r lines 10-12 and 15-25 + f.185v run read under the printed 1572 key + T42=m; all of no.90's cipher now read, rank 1/201
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-185b.md` (method of NEVBIR-185). Box 20:12-21:02 UTC, cap USD 5. No class, no
+novelty wording (rule 10). Status stays `partial`.
+
+**Line numbers.** Counted from the ink rows of the f.185r region, continuing NEVBIR-185's numbering (its L08 ends at "Mons. di
+Sanfre"; L09 "qsta settimana" is clear): cipher on **L10** (after "dal re"), **L11**, **L12** (to "che"); L13 "non si sa",
+L14 "pensa mai" clear; **L15** (after "cose sue da di qua, che"), **L16** (a short run, then "qste parti", then cipher),
+**L17-L24**, **L25** (to "Chi io no so"). The brief's "lines 11-14 and 17-28" were estimates of the same runs: 3 + 11 lines
+here, nothing left unread between "dal re" and "Chi io no so". **f.185v**: canvas 190 left, the run after "con tutto ciò".
+
+**Fetch and crops.** Canvas 189 region `4780,980,2850,3420` re-fetched (one HTTP 500, one retry after 20 s: 200); canvas 190
+`info.json` and the left page once (native, cropped locally). Crops gitignored (folder over its 30 MB line); `harvest/f185r2/REGEN.sh`
+re-fetches and re-cuts both:
+
+    python3 tools/iiif_lines.py --image $D/f185/src_f189_4780_980_2850_3420.jpg --out $D/f185r2 --prefix f185r --centres 1206,1308,1410,1785,1892,2045,2165,2289,2397,2544,2685,2810,2948,3080 --follow-slope 300 --slope-margin 15 --max-width 1250 --overlap 50 --debug
+    python3 tools/iiif_lines.py --image $D/f185/src_f190_1850_1240_2350_200.jpg --out $D/f185v --prefix f185v --centres 100 --max-width 1250 --overlap 50 --debug
+
+Debug overlay checked: 14 bands, no duplicated band. The first f.185v cut (centre on the prose line below) clipped the run; both
+readers said so, it was re-cut (region above) and re-read by two fresh one-line passes.
+
+**Blind passes.** Two value-blind Sonnet readers (`blind_pass_brief_1572.md` + `f185r2/page_note.md`, crops only; B read the lines
+in reverse order): `f185r2/passA.tsv`, `passB.tsv` (f.185r 392 aligned, `reconcile_blind.py` **344 agreed, 0.88**, 48 splits, all
+settled by one value-blind Sonnet adjudicator: `adjudicate_in.tsv` -> `adjudicate_out.tsv`, 20 H / 28 M, applied by
+`f185r2/apply_adj.py`). f.185v: `passA_v.tsv`, `passB_v.tsv`, 21 aligned, **15 agreed (0.71)**, 6 splits settled by this worker
+from the crop (not value-blind; graded M or left '?'): 8+s read as the sheet's "85" cell (T11), the ligature as T83, the
+two-upright-on-base as T33; three left unkeyed. Final `f185r2/passC.tsv`: **412 signs** (f.185r 392, f.185v 20), 41 off-sheet or '?'.
+Measured disagreement 0.12 (f.185r) / 0.29 (f.185v), 0.13 pooled.
+
+**The r-position sign of NEVBIR-185 is the sheet's T83.** NEVBIR-185's readers coded a recurring "ae/oe ligature (x with e)" shape as
+X_NEW 19 times (all where r belongs). The sheet cell T83 is that ligature, and this pass's two readers coded it T83 twenty times each
+on f.185r; the printed 1572 table gives T83 = r. `harvest/subtype_xnew.py` relabels those 19 X_NEW rows as X_AE from the readers' own
+shape notes (no value read); the test the brief asked for, r as a fitted value under the control:
+
+| no.90 whole (966 signs) | real key | shuffles mean / max (seeds 1, 2, 3) | z | rank of 201 | power, err 0.12 |
+|---|---|---|---|---|---|
+| without (X_AE unkeyed) | -0.9449 | -1.560/-1.277; -1.560/-1.281; -1.559/-1.268 | 4.49; 4.51; 4.59 | **1; 1; 1** | 20/20 x3 (z min 2.83, 3.04, 3.39) |
+| with X_AE = r, shuffled with the map (`--extra`) | -0.9300 | -1.603/-1.281; -1.604/-1.275; -1.615/-1.246 | 4.83; 4.71; 4.89 | **1; 1; 1** | 20/20 x3 |
+| fit-aware (`harvest/fit_control_ae.py`: every shuffled key also gets its best letter for X_AE) | best fit **r**, gain +0.0149 | fitted shuffles mean -1.562, max -1.276 | 4.70; 4.71; 4.79 | fitted 1; 1; 1 -- **gain rank 9, 6, 9 of 201** (z 1.89-2.09) | -- |
+
+Read: r is the best single letter for the sign and the key with it still ranks first, but the fit's own gain beats a free one-sign fit
+on a wrong key only at about p 0.03-0.045. So the fit alone stays **grade M**; the stronger support is the shape (T83 cell, coded T83 by
+this pass's readers), which this worker judged knowing the key, so it is not value-blind -- a verifier or the owner's sign sorter
+should confirm the 19 tiles are T83 (`f185r/passC_rest90_ae.tsv` lists them). The committed reading keeps them unkeyed.
+
+**Control (rule 3)**, `../ceppo-nevers-fr3251-1570s/harvest/decode_control.py SEQ --map sign_id_map_1572_fit.json`, it16dip,
+200 value-shuffled keys, logs `harvest/no90/log/`:
+
+| sequence | signs / letters | real key | shuffles mean / max (seeds 1, 2, 3) | z | rank of 201 | power control |
+|---|---|---|---|---|---|---|
+| **this portion (f.185r L10-12, L15-25, f.185v)** | 412 / 456 | **-0.927** | -1.574/-1.235; -1.572/-1.282; -1.574/-1.269 | 4.25; 4.46; 4.53 | **1; 1; 1** | err 0.12 (measured): 19/20, 19/20, 20/20 (z min 2.19, 1.99, 2.87); err 0.26 (twice measured): 3/20, 7/20, 6/20 |
+| **no.90 whole (all its cipher)** | 966 / 977 | **-0.945** | see table above | 4.49-4.59 | **1; 1; 1** | err 0.12: 20/20 x3 |
+
+T42 does not occur in this portion either, so the printed and fitted keys decode all of no.90 identically.
+
+**Reading** (`tools/decode_key.py ciphers/nevers-birago-fr3251-1572`, job from `harvest/build_decode_inputs.py no90 --seq
+no90/passC_all.tsv`; `--check` exit 0, "reading up to date"; `harvest/reading_no90.txt`). Grades (rule 4): **whole no.90, 966 tokens:
+H 0, C 0, S 731, M 124, I 0, U 111**; this portion 412: **S 276, M 95, U 41** -- a cryptanalytic result (S = the published key's value
+where both readers agreed, backed by the rank-1 control; M = adjudicated, worker-settled, or one-side-H; U = off-sheet/unread, '·'):
+
+    no90 f185r_L10 | [quello]credopensialgouerno[qual][turino]·[qual]conse
+    no90 f185r_L11 | ntimento[qual]··[che]sare·epur·enmale[qual]
+    no90 f185r_L12 | lui·han[che]buonosendoso·eno··o··ma·[quello]
+    no90 f185r_L15 | nelguinealtridesomha·iatsu
+    no90 f185r_L16.1 | ooritain
+    no90 f185r_L16.2 | [quello]altra·entet[per]conto[qual]
+    no90 f185r_L17 | religione·altrouisaranose·pre
+    no90 f185r_L18 | confusioni·di·icultailtutiepre
+    no90 f185r_L19 | giuditio···serui·io···[turino]fg[che]facese
+    no90 f185r_L20 | intenderealareginafg·[turino][che]·g···tuto
+    no90 f185r_L21 | dependealacasa[qual]·emoransi·fauo
+    no90 f185r_L22 | risesi[turino]naognisuopoterehdare·e
+    no90 f185r_L23 | fuori[qual]eropositoatio[per]unauolta
+    no90 f185r_L24 | sedisprgnasinodelao·enione
+    no90 f185r_L25 | chano[qual]costui[quello]
+    no90 f185v_L01 | ·g[carmagnola]ese·prene·n·u···e
+
+This worker's word breaks (not a second transcription, not graded): "quello credo pensi al governo ... Turino ... consentimento ...
+che sar[à] ... pur ... male ... lui han che buono ... altri ... altra ... per conto ... religione altrove saranno se[m]pre confusioni
+di[ff]icult[à] ... giuditio ... servi[t]io ... Turino ... che facesse intendere a la regina ... Turino che ... tutto depende a la casa
+... favo[re] ... Turino ... ogni suo potere ... dare ... fuori ... proposito ... per una volta ... chi è costui quello"; f.185v
+"... Carmagnola e se ...". "fg" twice (L19, L20) is an unread pair, left as decoded.
+
+**Judge** (secondary, `tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/no90/...`):
+
+    no.90 whole:  FAIL language: score=-1.069, null_p99=-1.794, real_p05=-0.898, real_median=-0.821, mode=both, N=977
+    this portion: FAIL language: score=-0.998, null_p99=-1.731, real_p05=-0.911, real_median=-0.834, mode=both, N=456
+
+Shuffled-target control (`harvest/shuffled_judge.py`, fitted map, `f185r2/passC.tsv`, 20 seeds): **0 of 20 PASS**, mean -1.605, min
+-1.669, max -1.545. The FAIL sits between the shuffled decodes and real_p05, the near-miss shape of the siblings.
+
+**What this settles.** All of no.90's cipher (f.184r runs, f.184v foot, f.185r, f.185v; 966 signs) is now read under the published
+1572 key + T42=m, rank 1 of 201 at three seeds, power 20/20 at the measured error. Not settled: the 19 T83-shaped tiles of NEVBIR-185
+(grade M, above), 111 unkeyed signs (digit shapes 4/7/8, square-with-dot, t-shape, raised-a m), and the judge gate. This portion is
+flagged for a separate verifier (rule 10); VERIFY-NEVBIR-184 covered f.184r only.
+
+Requests: gallica.bnf.fr 4 (canvas 189 region twice -- one HTTP 500, one retry; canvas 190 info.json and left page), >= 2 s apart, no
+challenge. Vision calls 7 (two blind passes, two one-line f.185v passes, one adjudication; plus this worker's looks at overview and
+overlays). No credentials.

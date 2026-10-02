@@ -1,0 +1,49 @@
+passage	row	sign_id	conf	note
+f185r_L01	7	T90	H	o with cross on top
+f185r_L01	21	T78	H	bar-and-cross, horizontal stub left
+f185r_L01	22	T46	M	plain 8 with small curl
+f185r_L01	24	T78	H	bar-and-cross
+f185r_L02	9	T78	H	bar-and-cross
+f185r_L02	12	T89	M	two stacked bowls on slanted stem (the percent look)
+f185r_L02	19	T90	H	o with cross on top
+f185r_L02	29	T78	H	bar-and-cross
+f185r_L03	5	T56	M	long stem, bar through top, 3-hook right
+f185r_L03	8	T89	M	stacked bowls on stem
+f185r_L03	17	T18	M	round loop on stem; could be T98
+f185r_L03	27	T55	H	F shape after box
+f185r_L03	31	T37	M	barred theta; pen cross-out scribbles over it
+f185r_L04	4	T70	H	small open triangle between B and T33
+f185r_L04	24	T65	M	weak: cross-bar on stem with foot bar; T51 alt
+f185r_L05.1	5	T65	M	smudged loop, cross-bar, stem
+f185r_L05.2	12	T65	M	trident/psi with prongs
+f185r_L05.2	19	T78	H	bar-and-cross
+f185r_L06	1	T97	M	8 with open curl tail (ampersand-like)
+f185r_L06	10	X_NEW	M	8 struck through by horizontal bar
+f185r_L06	27	T90	H	o with cross on top
+f185r_L07	12	T18	M	round loop on stem; could be T98
+f185r_L07	25	T27	M	small loop over S-tail
+f185r_L07	27	T66	M	hooked stem with foot bar
+f185r_L07	28	T90	H	o with cross on top
+f185r_L08	11	X_EQ	M	two bars right of box (box edge touching)
+f185r_L08	23	T46	H	plain closed 8
+f185r_L08	26	T89	M	stacked bowls on stem
+f185r_L08	32	T66	M	hooked stem with foot bar
+f185r_L09	13	T97	M	8 with open curl tail
+f185r_L09	22	T46	M	plain 8 after s
+f185r_L09	23	T89	M	percent-like sign, taken as one sign; may duplicate row 22 neighbour
+f185r_L09	25	T70	M	triangle with central dot
+f185r_L09	31	T27	M	small loop over S-tail
+f185r_L10	3	T90	H	o with cross on top
+f185r_L10	6	T18	M	round loop on stem; could be T98
+f185r_L10	15	T78	H	bar-and-cross
+f185r_L11	5	T95	M	stem with loop top and cross bars
+f185r_L11	7	T46	H	plain closed 8
+f185r_L11	17	T90	H	o with cross on top
+f185r_L11	23	T56	M	stem, bar, 3-hook
+f185r_L11	24	T18	M	round loop on stem; could be T98
+f185r_L12	6	T78	H	bar-and-cross
+f185r_L12	10	T90	H	o with cross on top
+f185r_L13	3	T18	M	round loop on stem; could be T98
+f185r_L13	6	T90	H	o with cross on top
+f185r_L13	15	T18	M	round loop on stem; could be T98
+f185r_L14	6	T78	H	bar-and-cross

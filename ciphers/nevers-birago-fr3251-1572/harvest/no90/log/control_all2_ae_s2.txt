@@ -1,0 +1,32 @@
+f184r_L01	dchesernunnuti
+f184r_L02	aqualchepranicaconilcontedi_ilchesimoperacheordars
+f184r_L03	ocon_ousegli_ansailiarticolisapencichei
+f184r_L04	lmandstodaluia_eperge_eno
+f184r_L07	__se_aieensaranoahecose
+f184r_L08	de___asi_euerso__hauensoluiil_oci_cenchio_
+f184r_L09	oltoabi_ea_ortificarsi
+f184r_L12	quelloilcapitanosipionecarego__
+f184v_L01	___do_olesecutioned
+f184v_L02	a_ira_io_hauereintesoc_lacas
+f184v_L03	me_oransirestainqual_sos_etoconi
+f184v_L04	b_stamoltistorditietdubitant
+f185r_L01	intensositrouinoleteresueasetoquellocredopensialgouernoqualturino_qualconse
+f185r_L02	s_iraglioinfauorede_ibugonottiaqualgua_giantimentoqual__chesare_epur_enmalequal
+f185r_L03	lauisaihauerescriti_francescolui_hanchebuonosendoso_eno__o__ma_quello
+f185r_L04	ga_atero_ha_aipresentatole_etenelguinealtridesomha_iatsu
+f185r_L05	re_sopraintensentemenouenutone
+f185r_L06	scritomicosaalcuna_sncoharechiesreligione_altrouisaranose_pre
+f185r_L07	todanari_souentione__aniera_st_confusioni_di_icultailtutiepre
+f185r_L08	_tutoa_artato_giuditio___serui_io___turinofgchefacese
+f185r_L05.1	ooritain
+f185r_L05.2	quelloaltra_entetpercontoqual
+f185r_L09	intenderealareginafg_turinoche_g___tuto
+f185r_L10	dependealacasaqual_emoransi_fauo
+f185r_L11	risesiturinonaognisuopoterehdare_e
+f185r_L12	fuoriqualeropositoatioperunauolta
+f185r_L13	sedisprgnasinodelao_enione
+f185r_L14	chanoqualcostuiquello
+f185v_L01	_gcarmagnolaese_prene_n_u___e
+
+TARGET: 966 signs, 0 nulls, 996 letters; real key -0.9300; 200 shuffled keys mean -1.6044 sd 0.1433 max -1.2749; z 4.71; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.12: real key rank 1 in 20/20; z median 3.88 min 3.23

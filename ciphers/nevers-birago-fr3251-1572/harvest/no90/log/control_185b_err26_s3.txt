@@ -1,0 +1,19 @@
+f185r_L01	quellocredopensialgouernoqualturino_qualconse
+f185r_L02	ntimentoqual__chesare_epur_enmalequal
+f185r_L03	lui_hanchebuonosendoso_eno__o__ma_quello
+f185r_L04	nelguinealtridesomha_iatsu
+f185r_L05.1	ooritain
+f185r_L05.2	quelloaltra_entetpercontoqual
+f185r_L06	religione_altrouisaranose_pre
+f185r_L07	confusioni_di_icultailtutiepre
+f185r_L08	giuditio___serui_io___turinofgchefacese
+f185r_L09	intenderealareginafg_turinoche_g___tuto
+f185r_L10	dependealacasaqual_emoransi_fauo
+f185r_L11	risesiturinonaognisuopoterehdare_e
+f185r_L12	fuoriqualeropositoatioperunauolta
+f185r_L13	sedisprgnasinodelao_enione
+f185r_L14	chanoqualcostuiquello
+f185v_L01	_gcarmagnolaese_prene_n_u___e
+
+TARGET: 412 signs, 0 nulls, 456 letters; real key -0.9273; 200 shuffled keys mean -1.5735 sd 0.1426 max -1.2688; z 4.53; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.26: real key rank 1 in 6/20; z median 1.69 min 0.66
