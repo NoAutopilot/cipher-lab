@@ -1,0 +1,52 @@
+line	pos	group_seen	gloss	conf	note
+L01	0	89	n	H
+L01	1	46	o	H
+L01	2	56	a	H
+L01	3	13	b	H
+L01	4	)6	y	H
+L01	5	60	e	H
+L01	6	23 (rewritten above line)	n	M	*23. in light ink raised into the gloss row with a small n above it; 2nd r
+L01	7	[blot]	-	M	*same group as pos 6: blot under the raised 23, top looks like a 2; 6+7 is ONE group (23=n)
+L01	8	15	L	H
+L01	9	3	o	H
+L01	10	45	N	M	2nd M
+L01	11	24	o	H
+L01	12	35	b	H
+L01	13	38	e	H
+L02	0	81	D	L	big flourished capital D at the left margin above 81
+L02	1	6	a	H
+L02	2	3)	d	H
+L02	3	16	e	H
+L02	4	89	n	H
+L02	5	10	a	H	10 = e at pos 14 (conflict)
+L02	6	50	s	H	*long s with hooked top; 2nd f
+L02	7	29	t	H
+L02	8	34	a	H	*open cursive a; 2nd o
+L02	9	28	s	M
+L02	10	25	p	H
+L02	11	56	a	H
+L02	12	)1	r	H
+L02	13	95	t	H
+L02	14	10	e	H
+L02	15	94	s	H
+L02	16	)0	q	M	q with the u next to it
+L02	x	-	u	M	u of que has no group of its own
+L02	17	)5	e	H
+L03	0	8)	L	H	*8 then tick confirmed; cursive capital L; 2nd C
+L03	1	12	a	H
+L03	2	59	d	H
+L03	3	60	e	H
+L03	4	[tilde]	A	M
+L03	5	5)	b	H	*cipher is 5) (5 + tick) NOT 55; looped b; 2nd v
+L03	6	60	e	H
+L03	7	2)	r	H
+L03	8	88	m	H
+L03	9	30	u	H
+L03	10	15	d	H
+L03	11	)8	a	H
+L03	12	3)	d	H	*cipher is 3) NOT 31; uncial d
+L03	13	90	o	H
+L03	14	[X]	e	H
+L03	15	)2	s	H
+L03	16	51	t	H
+L03	17	60	e	H

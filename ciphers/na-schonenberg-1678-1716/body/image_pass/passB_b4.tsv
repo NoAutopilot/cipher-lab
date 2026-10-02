@@ -1,0 +1,61 @@
+line	pos	group_seen	gloss	conf	note
+L12	0	21	L	H
+L12	1	34	a	H	*round open a, closed bowl; 2nd o (unlikely)
+L12	x	-	,	M	comma/i-like stroke between 34 and 58
+L12	2	58	e	M	looped e/l shape (could be l)
+L12	3	24	o	H
+L12	4	)1	r	H
+L12	5	10	e	H
+L12	6	94	s	H
+L12	7	69	p	H
+L12	8	8	o	H
+L12	9	6)	n	H
+L12	10	59	d	H
+L12	11	82	e	H
+L12	12	45	n	H
+L12	13	33	z	H
+L12	14	)6	r	M	dot then r-like shape; could be i
+L12	15	6	a	H
+L12	x	-	,	M
+L12	16	)2	s	H	*group is )2 NOT )52
+L12	17	38	a	M	*separate group 38 missing from transcription; a, 2nd e
+L13	0	25	p	H
+L13	1	96	o	H	*clean closed small o
+L13	2	89	n	H
+L13	3	3)	d	H
+L13	4	93	r	H
+L13	5	56	a	H
+L13	x	-	,	M
+L13	6	50	s	H	*tall long s; 2nd l or f
+L13	7	24	o	H
+L13	8	65	l	H
+L13	9	12	a	H
+L13	x	-	i	M	short undotted i/connecting stroke before 66
+L13	10	66	m	H
+L13	11	60	e	H
+L13	12	89	n	H
+L13	13	51	t	H
+L13	14	16	e	M	e or a
+L13	x	-	,	M
+L13	15	96	y	H	*y with looped descender; 2nd x
+L13	16	23	n	H	*clear n
+L14	0	28	s	H
+L14	1	3	o	H
+L14	2	)9	b	H
+L14	3	[blot]	-	M	*no gloss letter above the blot
+L14	4	)1	r	H
+L14	5	10	e	H
+L14	x	-	=	H	double hyphen
+L14	6	)2	s	H
+L14	7	36	e	H
+L14	8	2)	r	H
+L14	9	54	y	H
+L14	10	)3	t	H
+L14	11	46	o	H
+L14	x	-	,	M
+L14	12	[square]	e	H
+L14	13	45	n	H
+L14	14	10	e	H
+L14	15	28	s	H
+L14	16	95	t	H
+L14	17	34	a	H	*clear open a
