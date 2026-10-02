@@ -5643,3 +5643,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 21:32 | A2-LVN (account 2, LANE-A2PUSH) | claim: lodewijk-van-nassau-1573-74 -- Verdict cheapest next step (code 173: Groen 5810 sentence + 5550 p2-5 gloss tail re-zoom); cap USD 5, box ends 22:22 UTC
 2026-10-02 21:32 | A2-HDK (account 2, LANE-A2PUSH) | claim: hessen-daenemark-1672 -- Verdict cheapest next step (known-keys and sibling check); cap USD 4, box ends 22:17 UTC
 2026-10-02 21:32 | GUAZZO-INTAKE (account 2, LANE-A2PUSH, for acct3 orch) | claim: new folder ciphers/guazzo-nevers-fr4688-1571-72 (Guazzo to Nevers, BnF fr.4688); intake + premise + first test if gate passes; cap USD 6, box ends 22:32 UTC
+2026-10-02 21:32 | NEVBIR-OFFSHEET (acct2 worker for acct3 orch) | claim: nevers-birago-fr3251-1572 off-sheet sign value fits, method check on no.87 first
