@@ -5610,3 +5610,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 21:13 | GF-A2-1 (account 2, LANE-A2PUSH) | claim: gate-fix august-van-saksen-1561-64, castelcicala-1816, hessen-daenemark-1672, lodewijk-van-nassau-1573-74; cap/box ends 22:11 UTC
 2026-10-02 21:14 | VERIFY-NEVBIR-90REST (acct3 parent worker) | halfway: re-derivation exact (966: S 731 M 124 U 111; portion 742: S 541 M 111 U 90); controls seeds 7/11 rank 1/201 for portion and whole, f.185v alone rank 35-38/201 power 0-2/20 (non-test); slip check 188-191 native: nothing laid in; search next. Cost per orchestrator get_session
 2026-10-02 21:13 | A2-PAG2 (account 2, LANE-A2PUSH) | claim: clairambault1225-paget-1714 -- Verdict cheapest next step (image-check blind passes + key rebuild); cap USD 9, box ends 22:23 UTC
+2026-10-02 21:13 | GF-A2-2 (account 2, LANE-A2PUSH) | claim: gate-fix harley-287-1587, fr4715-f61-mayenne-1592, bowes-walsingham-1583; cap USD 4.2, box ends 21:59 UTC
