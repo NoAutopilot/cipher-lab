@@ -5735,3 +5735,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 22:27 | BIRAGO-SMALL (worker, acct2 for acct3 orch) | claim: ceppo-nevers-fr3251-1570s f.21v L11.17 dotted slash + nevers-birago-fr3251-1572 no.87 T50/T98/T52/T46 lookalike packet; cap USD 4, box 40 min ends 23:08 UTC
 2026-10-02 22:27 | GUAZZO-KEY (worker, acct2 for acct3 orch) | claim: guazzo-nevers-fr4688-1571-72 While-waiting step: fr.4687 no.28 + fr.4702/fr.3995 key scan for a Guazzo/Casale table; cap USD 3, box ends 23:03 UTC
 2026-10-02 22:28 | GF-A2-4 (account 2, LANE-A2PUSH) | claim: gate-fix willem-van-hessen-1567, la-garde-1577, kaliningrad-2015, sp78-yorke-1749; cap USD 5.5, box ends 23:26 UTC
+2026-10-02 22:27 | A2-AVS3 (account 2, LANE-A2PUSH) | claim: august-van-saksen-1561-64 -- Verdict cheapest next step (WVO 124 fetch, System B check, Groen alignment for 126 key-level M); cap USD 6, box ends 23:17 UTC
