@@ -291,3 +291,98 @@ Requests this pass: cryptiana.web.fc2.com 4 (2 target URLs, each answered 302 to
 https 200 per the good-citizen one-retry rule, `>=1.5s` apart, UA `cipher-lab research script (contact via
 repository)`). No other host. No subagents (mechanical/image-reading work only, within the 45-minute box, done
 in about 15 minutes). Reported what was found and where it was not found; no novelty classification (rule 10).
+
+## Web and blog check (WEBCHECK-decode-2754-bnf-baluze156-1636, 2 Oct 2026)
+
+Worker WEBCHECK-decode-2754-bnf-baluze156-1636 (account-4, Fable 5.1), brief `.claude/briefs/runs/2026-10-01-account4-webcheck.md`,
+box 30 min from 01:04 UTC. The required step of `.claude/briefs/check-solved.md` ("Open web and blog comment threads",
+CHECK-SOLVED-WEB, 28 Sept 2026), run on 2 Oct 2026 for this one target only. No transcription, no decoding, no other folder.
+
+**Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026** (a search result, never a novelty
+verdict, rule 10). Status word unchanged (`open`). Every query and every hit opened is listed below.
+
+**(a) Plain web searches (11 queries, web search tool):**
+
+| # | Query | Hits bearing on this letter |
+|---|---|---|
+| 1 | `Sabran "Mr de ch" 1636 lettre chiffre Baluze` (sender + recipient + date) | only BnF finding aids: `archivesetmanuscrits.bnf.fr/ark:/12148/cc340913/cd0e44` (Baluze 155-156, Sabran papers) and `cc50537t` (Français 4140-4141); no cipher page, no blog |
+| 2 | `"Baluze 156" chiffre OR cipher OR chiffré` (shelfmark + chiffre) | none: Wikipedia Great Cipher / Étienne Baluze, EPFL course notes, eBay -- no page naming Baluze 156 |
+| 3 | `"Monsieur D'Isabran" OR "Monsieur de Sabran" "party de Turin" 1636` (the leaf's own clear-text opening, from passA.tsv L01) | none: Gallica's collection record `ark:/12148/btv1b9001401d` (Baluze 155, "Lettres adressées à Monsieur de Sabran") and Wikipedia Sabran family pages; no quotation of the phrase anywhere |
+| 4 | `Melchior de Sabran Genoa 1636 cipher letter 9 February 1636 undeciphered` (folder's descriptive title) | none: the same Gallica record and unrelated Wikipedia pages |
+| 5 | `"decode-2754" OR "R2754" OR "Record 2754" de-crypt.org Sabran` | none: other DECODE RecordsView pages (R1024, R205, R1686, R1601, R2283, R9353), none R2754 |
+| 6 | `Lasry "Sabran" cipher Louis XIII 1631 Genoa key Cryptiana` | `dbourdeau.github.io/cyphersolver/index.html` (opened, below); Lasry's HistoCrypt papal-cipher papers (1721, 16th-18th c. papal) -- not this letter |
+| 7 | `"Baluze 156" Sabran f. 157 lettre 1636 "Mr de ch"` | BnF finding aids only (Baluze 155-156, Baluze 69/336/380-396, NAF volumes); none names f.157 of Baluze 156 |
+| 8 | `"decode-2754-bnf-baluze156-1636" OR "Baluze 156, f.157" OR "Baluze 156 f.157"` | none: Baluze finding aids, Auvray-Poupardin catalogue of the Baluze collection on Gallica (`bpt6k209163c`, not opened -- a 1921 shelf catalogue, no cipher content) |
+| 9 | `Sabran Baluze 1636 cipher solved Claude OR GPT OR "solves"` (model-solve announcements, check-solved.md) | none about this letter: the hits are the Cyphral Distich (Urquhart 1653), GPT-6 on a 1918 German radio cipher, and the "No, ChatGPT didn't solve Kryptos 4" gist |
+| 10 | `Lasry Sabran Genua Louis XIII Chiffre 1631 gelöst Klaus Schmeh` | Cipherbrain's George Lasry tag page and its 2016 "Three encrypted letters" post (both opened, below); nothing on Sabran |
+| 11 | `site:` searches on the three blogs (Sabran / Baluze / Lasry Louis XIII) | the search engine did not honour the `site:` operator (returned Wikipedia/eBay), so each blog's own search box was used instead, (b) below |
+
+**(b) Blog site searches (each blog's own search page, one request at a time, >= 1.5 s apart):**
+
+- *Cipherbrain* (`scienceblogs.de/klausis-krypto-kolumne/?s=`): `Sabran` -- "Wir konnten leider keine Beiträge finden";
+  `Baluze` -- same, no results; `Lasry Genua` -- same, no results; `"Louis XIII"` -- one post, "Who can decipher this letter
+  from Louis XIII?" (21 Nov 2022), opened under (c). Tag page `/tag/george-lasry/` (10 posts, 2015-2022): none mentions
+  Louis XIII, Sabran, Baluze, Genoa or a 1630s French diplomatic cipher.
+- *Cryptiana blog* (`cryptiana.blogspot.com/search?q=`): `Sabran` -- one post, "Codebreaking through Comparison of Two
+  Independently Enciphered Texts" (29 May 2021), opened under (c); `Baluze` -- one post, "Colbert de Croissy Switched to
+  Numerical Cipher in Italy..." (22 May 2021), whose only Baluze sentence is "I made several additions, mainly related to
+  Colbert, to [louisxiv0.htm] and [louisxiii.htm] from the Baluze collection in BnF" -- about Colbert's volumes, not this
+  one; `1636` -- "No posts matching the query". Tomokiyo's own pages: the on-disk snapshot `sources/cryptiana/web/` grepped
+  for `Baluze 156`, `f.157`, `157-158`, `9 February`, `9e febvrier`, `ch.g` (zero requests): hits only in `louisxiii.htm`
+  line 302 (the sentence already quoted in the 25 Sept section above: "...It has some passages in cipher, undeciphered"),
+  `GL.htm` (Lasry's f.79 and f.40 breaks, already quoted above) and `unsolved.htm` / `unsolved-2026-09-24.htm` line
+  385/393: *"Short passages in cipher in a letter to "Mr de ch.g<sup>r</sup>" appears to be in a different cipher, yet
+  unsolved."* -- Tomokiyo lists this exact letter as unsolved on his own unsolved page; no decipherment anywhere in the snapshot.
+- *Cipher Mysteries* (`ciphermysteries.com/?s=`): `Sabran` -- "Apologies, but no results were found"; `Baluze` -- same;
+  `Lasry Louis XIII` -- same; `Genoa 1636` -- one irrelevant Voynich post (11 Sept 2021, "Simon of Genoa", medieval medicine).
+
+**(c) Every plausible hit opened, post and comment thread read:**
+
+1. `cryptiana.blogspot.com/2021/05/codebreaking-through-comparison-of-two.html` (29 May 2021): announces Tomokiyo's solution
+   of a cipher in a letter from Abel Servien to Melchior de Sabran (1632) and says he "added references to unsolved ciphers in
+   Sabran's letters" to louisxiii.htm and unsolved.htm. **0 comments.** Nothing about f.157 or 1636; the Servien-Sabran 1632
+   cipher is a different letter and a different (solved) system.
+2. `scienceblogs.de/klausis-krypto-kolumne/who-can-decipher-this-letter-from-louis-xiii/` (21 Nov 2022, English; comments
+   disabled, "add it to the German version") and its German original
+   `.../2022/11/21/wer-kann-diesen-brief-von-ludwig-xiii-dechiffrieren/`: a two-page letter of Louis XIII, 6 April 1635,
+   recipient unknown, from the autograph dealer David Chelli -- not a BnF item, not Sabran's. **11 comments** (Paolo
+   Bonavoglia; Thomas Ernst x9, 21 Nov 2022 - 27 Jan 2023; Rizzie, 9 Dec 2022): Cardan-grid guess, tentative transcriptions,
+   null/transposition guesses, and Ernst's final verdict that the dealer's letter is a forgery. No comment mentions Sabran,
+   Baluze, Genoa, f.157, 1636 or "Mr de ch"; no decipherment of anything.
+3. `scienceblogs.de/klausis-krypto-kolumne/2022/07/30/21-bisher-ungeloeste-verschluesselungen-geloest/` (30 July 2022, the
+   post on Lasry's 21 solutions of Tomokiyo-listed items, the batch that includes the two Sabran-circle keys of May 2022):
+   the post itself names only the Marillac-Du Bellay 1550 letter and points to `cryptiana.web.fc2.com/code/GL.htm` for the
+   list. **9 comments** (Lasry x3, Schmeh x2, Jarl, Magnus Ekhall, Thomas, Aginor, 30 July - 2 Aug 2022), all on the Marillac
+   letter and congratulations. Nothing on Sabran, Baluze, Genoa, Parma or 1636.
+4. `scienceblogs.de/klausis-krypto-kolumne/2016/09/24/three-encrypted-letters-who-can-decrypt-them/` (surfaced by query 10):
+   three Vincent LeRay de Chaumont letters of November 1813, solved in the thread by Norbert and Thomas (28 comments).
+   Unrelated to this target (the search summary had wrongly attached the Louis XIII 1635 description to it; checked by opening).
+5. `dbourdeau.github.io/cyphersolver/index.html` (fetched with curl, grepped): "Sabran" occurs once, inside the entry on a
+   Roman-office cipher register whose clear pages name "the Mantuan succession, Sabran, Eggenberg, Susa and the Grisons" as
+   topics -- a different target (Bourdeau's papal register), not this letter; no "Baluze", no "2754". Consistent with his
+   `CATALOGUE.md` items 191-192 quoted in the 24 Sept section ("not viewed here").
+6. BnF finding aid `archivesetmanuscrits.bnf.fr/ark:/12148/cc340913/cd0e44` (Baluze 155-156; WebFetch got 403, curl with a
+   browser UA got 200): no occurrence of "chiffr", "157", "158" or "février 1636" for Baluze 156; the only 1636 entry is
+   f.220 (Ferdinand II de' Medici, 4 Oct 1636). The Baluze 156 sub-component ajax URL answered 302 without a session cookie
+   (as the 24 Sept capture section already found: no item-level description exists for f.157). The sibling record
+   `cc50537t` (Français 4140-4141, Sabran's 1636 letter-book) lists several 1636 items "avec chiffre et déchiffrement"
+   (f.163/161 "De Paris" 20-21 Aug 1636; f.355 Abbeville 3 Nov 1636; f.195 ff. "Turin" 1-15 Sept 1636; f.247 "Advis
+   particullier du Sr de Sabran" on Final) -- none is this letter (9 Feb 1636, to "Mr de ch. g^r"), and none is a
+   decipherment of it; logged here as the one-line suggestion below.
+
+One-line suggestion (not run, rule 7 of Usage): Français 4140 carries 1636 Sabran-circle letters with period decipherments
+in the same year as f.157; a key-hunt worker could check whether any of those deciphered pairs uses the same mixed
+digit/doubled-letter cipher as f.157r before any fresh cryptanalysis (the 24-25 Sept trials above only tested Lasry's two
+published Baluze keys).
+
+Requests this pass: scienceblogs.de 10 (4 search pages, 1 tag page, 4 posts incl. the German comment page, 1 curl of the
+English post for the German link); cryptiana.blogspot.com 4; ciphermysteries.com 4; archivesetmanuscrits.bnf.fr 4 (one
+403 to the fetch tool, then curl 200/302/200, >= 1.5 s apart); dbourdeau.github.io 1; web search engine 11 queries;
+cryptiana.web.fc2.com 0 (on-disk snapshot). No 429, no challenge page. No subagents.
+
+Intake gate re-run after this section (`python3 tools/intake_gate_check.py decode-2754-bnf-baluze156-1636`):
+
+```
+decode-2754-bnf-baluze156-1636: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
