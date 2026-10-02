@@ -119,3 +119,4 @@ AUDIT2-NEVBIR	other	.claude/briefs/runs/2026-10-02-acct3-audit2-nevbir.md	Opus 5
 TRANSLATE-NEVBIR	other	.claude/briefs/runs/2026-10-02-acct3-translate-nevbir.md	Opus 5.5	2	30	queued	2026-10-02 20:16	nevers-birago nos.71/86/90: word-split Italian + English gloss for the owner (grade I)
 LANE-A2PUSH	other	.claude/briefs/runs/2026-10-02-acct3-lane-a2push.md	Opus 5.5	60	1200	queued	2026-10-02 20:19	lane orchestrator on account 2: spawns ~6 live workers from NEXT-STEPS/gaps backlog until reset (owner directive)
 BIRAGO-SCOUT	other	.claude/briefs/runs/2026-10-02-acct3-birago-scout.md	Opus 5.5	5	60	queued	2026-10-02 20:29	how many Birago cipher letters exist beyond fr.3251; pool table
+LOOKALIKE-TOOL	other	.claude/briefs/runs/2026-10-02-acct3-lookalike-tool.md	Opus 5.5	6	60	queued	2026-10-02 20:30	promote look-alike pass to tools/, validate against known-answer leaf, document for all accounts
