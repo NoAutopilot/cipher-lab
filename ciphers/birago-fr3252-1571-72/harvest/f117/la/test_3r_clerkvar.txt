@@ -1,0 +1,13 @@
+L01	___mguilam_uelgunnturinopsnnua_arde
+L02	lannintentiondesonuenibaund__
+L03	pourluoirlegouerne_entdecarmagnolapp__b
+L04	seguilestperso_eguiserendroit
+L05	_lusfaciheetl_insete_ertou_es_el
+L06	sionsdestre_tusenplrnihespeieec
+L07	guec_deuantinuoussu_tinda_snb
+L08	et_auorisersesta_airesiteneett
+L09	_esoingetsituoussnmbtetantguit
+L10	reusisn_quello_
+
+TARGET: 276 signs, 0 nulls, 274 letters; real key -1.3392; 200 shuffled keys mean -1.7712 sd 0.1415 max -1.4293; z 3.05; rank 1 of 201
+POWER CONTROL: 20 fr windows, same passage lengths, err 0.25: real key rank 1 in 13/20; z median 2.68 min 1.27

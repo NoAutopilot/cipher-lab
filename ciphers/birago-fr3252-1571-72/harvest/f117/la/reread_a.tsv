@@ -1,0 +1,78 @@
+passage	pos	label	conf	second	note
+L01	1	X_NEW	M		H-like stroke with tail, no loops; not x-loop or omega
+L01	2	X_NEW	H		box with cross on top and long stem below
+L01	3	X_NEW	H		open rectangle with dot inside
+L01	8	T51	M	T95	stem with loop at upper right and horizontal crossbar
+L01	11	X_NEW	H		plain open rectangle
+L01	17	T60	M	T86	two verticals with two crossbars
+L01	18	T76	H	T26	9-shape with tail curving left
+L01	19	T46	M	X_NEW	figure-8 alone
+L01	20	T90	M	T45	cross on top of a circle
+L01	21	T98	M	T18	narrow oval pierced by long stem
+L01	22	T60	M	T86	two crossbars visible
+L01	23	T60	M	T86	two crossbars visible
+L01	26	X_S	H		long s with descender
+L01	28	T83	M	T81	x formed of back-to-back 3 and c with loop
+L02	1	T95	L	X_NEW	p-loop on stem with crossbar low on stem
+L02	3	T60	M	T86	two verticals two bars
+L02	4	T60	H	T86	clear double crossbars
+L02	6	T76	M	T26	9 with descender curling left
+L02	9	T60	M	T86	double crossbars
+L02	13	T60	M	T86	double crossbars
+L02	14	T18	M	T98	oval with vertical through, foot at base
+L02	16	T50	H		omega with tall flourish stroke
+L02	18	T60	H	T86	double crossbars
+L02	21	T60	M	T86	double crossbars
+L02	23	T81	M	T83	simple curled x, small loop only
+L02	26	T60	M	T86	two verticals, bars appear double
+L02	27	T18	M	T98	wide oval on long stem
+L02	28	X_NEW	M		4-like crossed stroke
+L02	29	X_NEW	H		7-shape
+L03	1	T90	M	T89	cross atop circle
+L03	2	T55	H		E-flag on vertical
+L03	4	T83	M	T81	back-to-back 3c x with loop
+L03	9	T83	M	X_NEW	x with loops
+L03	10	T95	M	T65	p-loop on stem with crossbar
+L03	11	T86	M	T60	single heavy bar across two verticals
+L03	15	T86	M	T60	single bar across two verticals
+L03	16	T83	M	X_NEW	x with loops
+L03	17	T60	M	T86	two crossbars
+L03	19	X_NEW	H		small t-cross
+L03	21	T60	H	T86	clear double crossbars
+L03	23	T18	M	T98	oval with vertical through, foot
+L03	25	T46	M	X_NEW	figure-8
+L03	27	T90	M	T45	cross over filled circle
+L03	28	T90	M	T89	cross over circle
+L03	29	X_NEW	H		eta/3-like hooked stroke
+L03	30	X_S	M	T83	long s / rho-like descender
+L03	31	T81	L	X_NEW	x with loops, unclear
+L04	1	T50	H		omega with tall flourish
+L04	6	T95	M	T65	p-loop on stem with crossbar
+L04	7	T86	M	T60	single heavy bar across two verticals
+L04	8	T92	H	T50	plain omega, no flourish
+L04	10	T90	H	T45	cross over circle
+L04	12	T83	M	T81	back-to-back 3c x
+L04	13	T98	M	T18	narrow oval pierced by stem
+L04	15	X_S	M	X_NEW	long s with colon dots
+L04	20	T98	M	T18	narrow oval pierced by long stem
+L04	22	T83	M	T81	back-to-back 3c x
+L04	23	T86	M	T60	single bar across two verticals
+L04	24	T60	M	T86	two crossbars
+L04	25	T18	M	T36	wide oval with vertical, foot at base
+L04	26	T83	M	T81	back-to-back 3c x
+L05	1	X_S	M	X_NEW	long s
+L05	2	T95	M	T65	p-loop on stem with crossbar
+L05	4	T98	M	T18	narrow oval pierced by stem
+L05	5	T24	H	T29	open epsilon, no ring
+L05	11	T29	H	T24	epsilon with attached ring
+L05	12	T95	M	T65	p-loop on stem with crossbar
+L05	13	X_NEW	H		d-like hooked stroke
+L05	15	T60	M	T86	two crossbars
+L05	16	T98	M	T18	oval pierced by long stem
+L05	18	T51	L	T95	stem with right loop and crossbar
+L05	20	X_S	M	X_NEW	long s / rho-like descender
+L05	22	T83	M	T81	back-to-back 3c x
+L05	26	X_NEW	M	X_S	large curly z/3-like with long tail
+L05	27	T66	M	T76	q-shape with straight descender
+L05	28	T98	M	T18	oval pierced by long stem
+L05	29	X_NEW	M		smudged y/3-like stroke

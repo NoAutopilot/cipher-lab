@@ -431,3 +431,87 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 27
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r at lower reader error; f.47r whole block
 Verdict: keep going: 5 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3
+
+## f.117r: blind third reader on the look-alike tiles, 2-of-3, re-test (NEVBIR-117C, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-117c.md`. Folder `harvest/f117/la/`. Pre-registration `la/PREREG.md`
+pushed (ec09c3aa) before either reader ran and before any decode.
+
+**Packet.** `tools/lookalike_pass.py packet --agreement recon_f117_agreement.tsv --confusion ../../../nevers-birago-fr3251-1572/harvest/confusion_1572.tsv --passc recon_f117.tsv --top 10 --crops ../../images/f117 --sheet .../sign_sheet_blind_1572.png --sheet-map .../sign_id_map_1572.json --out la --run f117c`:
+130 tiles (66 two-reader splits + 64 agreed tiles whose label sits in a top-10 confusion pair, which covers the Verdict's
+T60/T86, T83/T81, T95/T51/T65, T90/T45), 25 candidate cells cut from the blind sheet (ids only). passC was the unsettled
+two-reader merge (`recon_f117.tsv`), not the one-eye settle, so NEVBIR-3252-B's settlement did not orient the reader.
+**Third reader:** value-blind Opus, one context per half-leaf (L01-L05 77 tiles: H 19 M 55 L 3; L06-L10 53 tiles: H 16 M 30
+L 7; no SPLIT), `la/reread_a.tsv`, `la/reread_b.tsv`.
+**Rule (fixed before scoring), `lookalike_pass.py reconcile`:** 130 flagged, 40 relabelled, **12 unsettled** (`la/focus.tsv`,
+for `tools/sign_sorter.py --focus`), 2-of-3 residual 0.043 (agreement, not accuracy; not used as the power error).
+Then `la/fill_unsettled.py`: L03's "8 5" merged into T11 (the NEVBIR-3252-B structural step; T11 is the word cell
+"carmagnola" on the printed sheet), and the 2 unsettled tiles still '?' (L02.1, L03.31) took the one-eye label. Result
+`la/recon_f117_3r.tsv`: **276 signs, 251 keyed, 25 unkeyed** (off-sheet X_NEW/X_S/X_K/X_EQ and one '?'). It differs from
+NEVBIR-3252-B's one-eye settle at 20 tiles (mostly T81->T83, T60->T86, T51/T95->T65, T98->T18) and by one L10 tail sign
+the one-eye settle had added.
+
+**Test** (`la/run_tests_3r.sh 0.25`, same tools and seeds as `run_tests.sh`; power at the TWO-READER error 0.25, unchanged):
+
+| key variant | before (NEVBIR-3252-B, one-eye settle): real / best shuffle / z / rank / power | after (2-of-3): real / best shuffle / z / rank / power |
+|---|---|---|
+| printed 1572 | -1.3782 / -1.3732 / 2.77 / 2 / 11/20 | **-1.3373 / -1.4087 / 3.21 / 1 / 6/20** |
+| T42 = m (pre-registered) | -1.3782 / -1.3805 / 2.74 / 1 / 12/20 | -1.3373 / -1.4164 / 3.15 / 1 / 11/20 |
+| clerk sheet C variant | -1.3640 / -1.3927 / 2.78 / 1 / 12/20 | -1.3392 / -1.4293 / 3.05 / 1 / 13/20 |
+| T88 = q (post-hoc, this letter) | -1.3337 / -1.3739 / 3.09 / 1 / 13/20 | -1.2867 / -1.4094 / 3.60 / 1 / 12/20 |
+
+Judge fr16 (spec `specs/birago-fr3252-f117.json`; real_p05 -0.87, null_p99 -1.798): printed **-1.448 FAIL** (was -1.466),
+T88q **-1.382 FAIL** (was -1.406); shuffled-target decodes 0/20 PASS on both (max -1.709, -1.712), so the judge is not a
+non-test here. The power-control windows are French (fr); the script's printed label said "it16dip" whatever `--corpus`
+was, fixed this job in `../ceppo-nevers-fr3251-1570s/harvest/decode_control.py` (label only, scores unchanged).
+
+**Verdict for this test: every target number moved the same way (real score up 0.04-0.05 on every variant, the gap to the
+best of 200 shuffled keys from about 0 to 0.07-0.12, z 2.8-3.1 -> 3.1-3.6, rank 1/201 on all four), and the judge moved
+toward real prose but still FAILs far below real_p05. Not licensed, not a negative.** The power control was held at the
+two-reader 0.25 by rule, so its 6-13/20 does not credit the third reader: the printed-key row dropping from 11 to 6 at the
+same error is most likely the control's own sampling (its windows are drawn at the new letter count, 269 -> 274, so they
+are different windows), at 20 windows; it was not re-run with more windows to confirm. A fair power figure at a lower error needs a known-answer measurement of what the 2-of-3
+step actually achieves (LESSONS.md "Look-alike pass"). That error has not been measured here.
+
+**Decode (printed key + T88=q, `la/reading_3r_T88q.txt`); not a licensed reading:**
+```
+L01 ___mquilam_uelqunnturinopsnnua_arde
+L02 sannintentiondeconuenibaund__
+L03 poursuoirsegouerne_entdecarmagnolapp__b
+L04 cequisestperso_equiserendroit
+L05 _susfaciheets_insete_ertou_es_es
+L06 sionsdestre_tusenpsrnihespeieec
+L07 quec_deuantinuoussu_tinda_snb
+L08 et_auorisercesta_airesiteneett
+L09 _esoingetsituoussnmbtetantquit
+L10 reusisn_quello_
+```
+**Grades (printed key): 276 signs; H 0, C 0, S 0, M 251, I 0, U 25.** No S, because the judge FAILs and power is below 15/20.
+Transcription confidence: 181 tiles H, 92 M, 3 L.
+
+**English gist of the readable fragments (M, a gist only):** "...that he ... someone ... [the] intention to agree (de convenir)
+... to pursue (poursuivre) ... [the] government (gouvernement) of Carmagnola ... that which is ... [the] person who will go
+straight (se rend droit) [there] ... to facilitate ... before us (devant nous) ... and to favour these affairs ... the need
+(besoing), and if you ... and as much as ... quello". The third reader's labels bring in "poursuivre", "gouverne[ment]" and
+"ce qui est ... qui se rend droit". The letter concerns the government of Carmagnola and an agreement to be favoured.
+
+Subagents: 2 Opus calls (third reader, one per half-leaf). Network requests: none. f.47r passes not run this job (budget).
+
+## Remaining gaps (NEVBIR-117C, 2 Oct 2026)
+Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 276 signs decoded at 2-of-3, all M/U, not licensed (z 3.2, rank 1/201, judge FAIL); f.47r: 157 signs tested, not licensed.
+- f.117r measured error after the 2-of-3 step - blocker: not-attempted; the 2-of-3 residual is agreement, not error, so no figure exists yet; next: power control at a known-answer error for the look-alike step (LESSONS.md "Look-alike pass" no.87 figure) with 100 windows instead of 20, disk only, ~$1
+- f.117r 12 unsettled tiles - blocker: not-attempted; the third reader marked them L or split from both readers, so they are written as sign-sorter focus rows (harvest/f117/la/focus.tsv); next: tools/sign_sorter.py --focus harvest/f117/la/focus.tsv
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
+- f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; re-cut done (images/f47/recut, 17 lines x 3); next: two blind passes in 3-4 line chunks + reconciliation against the Ceppo sheet with the CEPPO-SPLITS shapes as known answer, then decode_control on the whole block, ~$10
+- f.47r reader error 0.44 - blocker: not-attempted; sheet lacks three forms the readers saw; next: add the barred 8 / dot-group / plain-triangle forms to the sheet before the next passes, ~$2
+- f.100r + f.119 (565 + 483 digits, same key, controlled) - blocker: not-attempted; fixed-phase run a non-test and crib drag weak by control (BIRAGO-NUM/NUM2); next: joint phase+key anneal with its own control at N=476, 40-55 cells, 5% strays, ~$6
+
+## Escalation (NEVBIR-117C, 2 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness and the fr.3251 1572 group's sheet, maps, clerk key, confusion map and controls used
+- [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
+- [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested twice: z 2.8 one-eye, 3.2 at 2-of-3; judge FAIL), Nov 1571 system has no key
+- [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
+- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 joint phase+key anneal
+- [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
+- [ ] retry: f.117r done at 2-of-3 (NEVBIR-117C); power at a measured post-look-alike error not run; f.47r whole block
+Verdict: keep going: 6 internal gaps; cheapest next: f.117r power control at a known-answer look-alike error, ~$1
