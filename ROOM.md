@@ -5180,3 +5180,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: maurice-rupert-1645 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/rupert/NOTES.md (#5)
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: moray-wood-1568 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/moray/NOTES.md
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: riksarkivet-r4282-1628 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/riksarkivet1628/NOTES.md
+2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: roell-vandedem-1809 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/roell1809/NOTES.md
