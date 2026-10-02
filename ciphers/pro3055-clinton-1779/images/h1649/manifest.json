@@ -3,7 +3,7 @@
  "viewer": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/{image}",
  "fetched": "2 October 2026 (GAPS-pro3055-clinton-1779, account-4)",
  "fetch_method": "the viewer page lists every image's IIIF Image API 2 identifier in its #pvPageSelect options (saved to seq_to_iiif.tsv, all 1266); info.json and default.jpg at image-uab.canadiana.ca answer 403 to a plain request and 200 with a browser User-Agent plus a Referer header of the viewer page; one request at a time, 1.6 s apart",
- "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart; GAPS7 2 Oct 2026: image-uab.canadiana.ca 3 (Image 829 full/max for the byte-identical regen test, Image 1183 at 1600 px and full/max), browser UA + Referer, 1.6 s apart; GAPS8 2 Oct 2026: image-uab.canadiana.ca 6 (Images 1030, 1033, 1034 at 1600 px and at full/max; full/max to the scratchpad only), archive.org 2 (be-api fts phrase query, VHS Collections vol. II djvu), browser UA + Referer on canadiana, >=1.6 s apart",
+ "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart; GAPS7 2 Oct 2026: image-uab.canadiana.ca 3 (Image 829 full/max for the byte-identical regen test, Image 1183 at 1600 px and full/max), browser UA + Referer, 1.6 s apart; GAPS8 2 Oct 2026: image-uab.canadiana.ca 6 (Images 1030, 1033, 1034 at 1600 px and at full/max; full/max to the scratchpad only), archive.org 2 (be-api fts phrase query, VHS Collections vol. II djvu), browser UA + Referer on canadiana, >=1.6 s apart; GAPS9 2 Oct 2026: image-uab.canadiana.ca 6 (Images 758, 772 at 1600 px, 773 at 1600 px, then 772, 773, 758 at full/max -- all to the scratchpad only, none committed), archive.org 3 (be-api fts x2, 1920 vol. III djvu once), browser UA + Referer on canadiana, 1.6 s apart",
  "rights": "LAC microfilm of BL manuscripts, 18th-century text; reel served openly by Canadiana",
  "files": [
   {
@@ -218,5 +218,32 @@
    false,
    70
   ]
- ]
+ ],
+ "gaps9_2380": {
+  "item": "2380, PRO 30/55/19/98, Clinton to Haldimand, New York, 22 Oct 1779",
+  "frames": [
+   {
+    "image": 758,
+    "page": "B.147 p.120 (BL fo.105)",
+    "iiif_id": "c06m3328d73r",
+    "content": "the cipher copy, 7 columns of figure pairs, \"19th July\" in clear, address \"His Excellency General Haldimand\"; margin \"See a decoded copy transcd. on p.134 infra\"",
+    "committed": "p120_cols/ (columns 1-2 only)"
+   },
+   {
+    "image": 772,
+    "page": "B.147 p.134 (BL fo.113)",
+    "iiif_id": "c0d50fv71q4k",
+    "content": "the decipherment in clear, \"I was honored with your Letters of the 19th July ...\"; margin \"See a cypher copy transcd. on p.120 supra\"",
+    "committed": "p134_lines/"
+   },
+   {
+    "image": 773,
+    "page": "B.147 p.135 (BL fo.113v-114v)",
+    "iiif_id": "c08g8fg27397",
+    "content": "last 9 lines of the decipherment, \"Copy\", fo.114 blank, endorsement \"Lettre en Chiffre du Genl Clinton recue a Quebec par Halifax le 18 Janr 1780\", then the next letter (Quebec 17 Jan 1780)",
+    "committed": "p135_lines/"
+   }
+  ],
+  "crops": "passes/cut_2380_crops.py cuts all three crop sets from the full/max frames; regen_images.sh fetches the frames and runs it"
+ }
 }

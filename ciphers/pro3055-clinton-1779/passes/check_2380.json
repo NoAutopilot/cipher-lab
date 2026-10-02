@@ -1,0 +1,456 @@
+{
+ "source": "H-1649 Images 772 (p.134) and 773 (p.135) full/max, crops images/h1649/p134_lines/, p135_lines/; cipher Image 758 (p.120), images/h1649/p120_cols/ (columns 1-2 of 7)",
+ "p134_conflict": "settled on the images: p.134 is the decipherment of this letter (22 Oct 1779), opening \"I was honored with your Letters of the 19th July\", margin \"See a cypher copy transcd. on p.120 supra\"; p.120 margin \"See a decoded copy transcd. on p.134 infra\"; endorsement p.135 \"Lettre en Chiffre 1779 du Genl Clinton recue a Quebec par Halifax le 18. Jan[?] 1780\". Tomokiyo's placement holds; Brymner's reading of p.134 as an abstract of the 9 Sept 1779 letter does not fit the page.",
+ "lines": 49,
+ "pass_agreement_lines": "40/49 crops identical between the two blind passes; the rest differ by margin fragments the crops caught, a superscript, Chesipeak/Chesapeak and recue/re\u00e7ue",
+ "grades_words_body": {
+  "H": 241,
+  "M": 0
+ },
+ "key_check": {
+  "cells_read": 96,
+  "cell_pass_agreement": "95 of 97 entries identical in value (c1 row 1 cut by the crop edge in A, c2 row 5 6-77 with ? in B); 1 underline differs (c2 2-4, kept B on the column preview)",
+  "cipher_words": 26,
+  "word_pairs": 25,
+  "pairs_not_compared_length_differs": [],
+  "cells_out_of_range_M": [
+   "p120c1:22",
+   "p120c1:42",
+   "p120c2:5"
+  ],
+  "compared_cells": 93,
+  "exact": 52,
+  "exact_control": {
+   "seeds": 1000,
+   "mean": 6.871,
+   "p95": 11,
+   "max": 15
+  },
+  "within_2": 89,
+  "within_2_control": {
+   "seeds": 1000,
+   "mean": 26.608,
+   "p95": 34,
+   "max": 39
+  },
+  "off_cells_by_line": {
+   "1": [
+    {
+     "cell": "1-27",
+     "want": "a",
+     "page": "u",
+     "found_at_offset": [
+      2
+     ],
+     "word": "was"
+    },
+    {
+     "cell": "1-13",
+     "want": "h",
+     "page": "o",
+     "found_at_offset": [],
+     "word": "honored"
+    },
+    {
+     "cell": "1-27",
+     "want": "o",
+     "page": "u",
+     "found_at_offset": [
+      -1
+     ],
+     "word": "honored"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "honored"
+    },
+    {
+     "cell": "1-17",
+     "want": "r",
+     "page": "e",
+     "found_at_offset": [
+      1
+     ],
+     "word": "honored"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "your"
+    },
+    {
+     "cell": "1-17",
+     "want": "r",
+     "page": "e",
+     "found_at_offset": [
+      1
+     ],
+     "word": "your"
+    },
+    {
+     "cell": "1-17",
+     "want": "r",
+     "page": "e",
+     "found_at_offset": [
+      1
+     ],
+     "word": "letters"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "of"
+    },
+    {
+     "cell": "1-13",
+     "want": "f",
+     "page": "o",
+     "found_at_offset": [
+      1
+     ],
+     "word": "of"
+    },
+    {
+     "cell": "1-15",
+     "want": "h",
+     "page": "t",
+     "found_at_offset": [
+      1
+     ],
+     "word": "the"
+    },
+    {
+     "cell": "1-21",
+     "want": "t",
+     "page": "h",
+     "found_at_offset": [
+      1
+     ],
+     "word": "the"
+    },
+    {
+     "cell": "1-20",
+     "want": "h",
+     "page": "g",
+     "found_at_offset": [
+      1
+     ],
+     "word": "the"
+    },
+    {
+     "cell": "1-27",
+     "want": "a",
+     "page": "u",
+     "found_at_offset": [
+      2
+     ],
+     "word": "matross"
+    },
+    {
+     "cell": "1-21",
+     "want": "t",
+     "page": "h",
+     "found_at_offset": [
+      1
+     ],
+     "word": "matross"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "matross"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "of"
+    },
+    {
+     "cell": "1-13",
+     "want": "f",
+     "page": "o",
+     "found_at_offset": [
+      1
+     ],
+     "word": "of"
+    },
+    {
+     "cell": "1-20",
+     "want": "h",
+     "page": "g",
+     "found_at_offset": [
+      1
+     ],
+     "word": "the"
+    },
+    {
+     "cell": "1-27",
+     "want": "a",
+     "page": "u",
+     "found_at_offset": [
+      2
+     ],
+     "word": "artillery"
+    },
+    {
+     "cell": "1-25",
+     "want": "r",
+     "page": "n",
+     "found_at_offset": [],
+     "word": "artillery"
+    },
+    {
+     "cell": "1-21",
+     "want": "t",
+     "page": "h",
+     "found_at_offset": [
+      1
+     ],
+     "word": "artillery"
+    },
+    {
+     "cell": "1-21",
+     "want": "t",
+     "page": "h",
+     "found_at_offset": [
+      1
+     ],
+     "word": "there"
+    },
+    {
+     "cell": "1-20",
+     "want": "h",
+     "page": "g",
+     "found_at_offset": [
+      1
+     ],
+     "word": "there"
+    },
+    {
+     "cell": "1-27",
+     "want": "a",
+     "page": "u",
+     "found_at_offset": [
+      2
+     ],
+     "word": "are"
+    },
+    {
+     "cell": "1-11",
+     "want": "n",
+     "page": "o",
+     "found_at_offset": [
+      1
+     ],
+     "word": "now"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "now"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "no"
+    },
+    {
+     "cell": "1-20",
+     "want": "h",
+     "page": "g",
+     "found_at_offset": [
+      1
+     ],
+     "word": "hopes"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "of"
+    },
+    {
+     "cell": "1-13",
+     "want": "f",
+     "page": "o",
+     "found_at_offset": [
+      1
+     ],
+     "word": "of"
+    },
+    {
+     "cell": "1-17",
+     "want": "r",
+     "page": "e",
+     "found_at_offset": [
+      1
+     ],
+     "word": "recovering"
+    },
+    {
+     "cell": "1-10",
+     "want": "o",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "recovering"
+    },
+    {
+     "cell": "1-9",
+     "want": "i",
+     "page": "s",
+     "found_at_offset": [
+      -2,
+      1
+     ],
+     "word": "recovering"
+    },
+    {
+     "cell": "1-11",
+     "want": "n",
+     "page": "o",
+     "found_at_offset": [
+      1
+     ],
+     "word": "recovering"
+    },
+    {
+     "cell": "1-19",
+     "want": "g",
+     "page": "i",
+     "found_at_offset": [
+      1
+     ],
+     "word": "recovering"
+    },
+    {
+     "cell": "1-21",
+     "want": "t",
+     "page": "h",
+     "found_at_offset": [
+      1
+     ],
+     "word": "the"
+    },
+    {
+     "cell": "1-20",
+     "want": "h",
+     "page": "g",
+     "found_at_offset": [
+      1
+     ],
+     "word": "the"
+    }
+   ],
+   "9": [
+    {
+     "cell": "9-15",
+     "want": "n",
+     "page": "e",
+     "found_at_offset": [],
+     "word": "honored"
+    },
+    {
+     "cell": "9-15",
+     "want": "v",
+     "page": "e",
+     "found_at_offset": [
+      1
+     ],
+     "word": "recovering"
+    }
+   ],
+   "18": [
+    {
+     "cell": "18-7",
+     "want": "u",
+     "page": "m",
+     "found_at_offset": [],
+     "word": "your"
+    }
+   ]
+  },
+  "line1_cells": 63,
+  "line1_match_1778_page": 25,
+  "line1_match_variant_PERMISION_HONORABLE": 60,
+  "grade_C_cells": 52
+ },
+ "vs_key_2894": {
+  "distinct_cells": 37,
+  "also_in_key_2894": 19,
+  "agree": 13,
+  "disagree": {
+   "1-27": [
+    "u",
+    [
+     "a",
+     "o"
+    ]
+   ],
+   "1-13": [
+    "o",
+    [
+     "f",
+     "h"
+    ]
+   ],
+   "1-17": [
+    "e",
+    [
+     "r"
+    ]
+   ],
+   "18-7": [
+    "m",
+    [
+     "u"
+    ]
+   ],
+   "1-11": [
+    "o",
+    [
+     "n"
+    ]
+   ],
+   "1-9": [
+    "s",
+    [
+     "i"
+    ]
+   ]
+  }
+ }
+}

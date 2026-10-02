@@ -99,6 +99,12 @@ if want('h1649'):
         for e in entries:
             x0, y0, x1, y1 = e['box']
             save(im.crop((x0, y0, x1, y1)).convert('RGB'), os.path.join(d, sub, e['crop']), qq[0] if qq else 85)
+    # item 2380 (GAPS9, 2 Oct 2026): Images 772 (p.134), 773 (p.135), 758 (p.120) full/max, cut by passes/cut_2380_crops.py
+    for img, iiif in [(772, 'c0d50fv71q4k'), (773, 'c08g8fg27397'), (758, 'c06m3328d73r')]:
+        fetch(f'https://image-uab.canadiana.ca/iiif/2/69429%2F{iiif}/full/max/0/default.jpg',
+              os.path.join(d, f'img{img}_max.jpg'), viewer.format(img))
+    subprocess.run(['python3', os.path.join(HERE, 'passes', 'cut_2380_crops.py')], check=True,
+                   env=dict(os.environ, CLINTON_H1649_DIR=d, OUT_DIR=d))
 
 if want('armylist1778'):
     m = json.load(open(os.path.join(IMG, 'armylist1778', 'manifest.json')))
