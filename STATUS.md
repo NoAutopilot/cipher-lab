@@ -284,6 +284,31 @@ PREMISE-NEVBIR), royalist (N0, print_check low value). Held for wave 4: fr3986 a
 image pass (~18), fr4715 no.37 f.60 (~9). Check-in 11 armed for 14:09 UTC (trig_01BM2HrtCcd7YFcG8vdU6Qno). Parent 2 at
 about 490k context, cost about 19.6.
 
+**Check-in 11 (14:1x UTC 2 Oct, parent 2; fired 5 min late):** wave 3 done, 7 of 7 ledgered (USD 58.4; 6 of 7 within
+cap -- the README floor holds). `allowed_warning` still (not rejected); account-3's newest line 13:00 (75 min). Every
+wave-3 target's premise check came back clear (no prior decipherment found by (a)-(d)) and the gate now exits 0 on
+them. Moves: pro3055-clinton-1779 -- four more items (3853, 2962, 3004, 4152) are printed in Military and Naval Forces
+of Canada vol. III (1920), 3868's P.S. too; six items (2380, 3050, 3077, 3502, 3537, 4216) and 3868's body not in print;
+the Oct 1782 pages are on reel H-1649 (B.148 p.123 = Image 1205). mornington-1798 -- D623/36 and D623/27 text-known in
+Martin Vol.2 (p.311; pp.225-252), stage 2 now five items; Mss Eur F228/65 holds a Wellesley cipher despatch of 8 Jul 1798
+WITH its decypher and the printed clear, a key control if it is the same cipher (REQUEST.md amendment for ASKS 12);
+gaps_check now PARKED, every gap on ASKS 12 / L32 / L34. na-janssens -- 187R is not No.1's plaintext (LCS z +0.30 vs a
+2000-shuffle null while the known No.2 pair scores z +35: a negative with a matched control). na-suriname -- 2039's
+legend read (374 signs, agreement 0.749) but does not align to the 1778 plain list entry for entry (free 0.594 vs
+shuffled-crib p95 0.598, control-backed non-pass). moray-wood -- blind passes agree with Aymeloglu at 0.72-0.87 vs
+shuffled-label p95 0.30-0.37, one label changed (118 S / 15 M / 1 I). RETRO-APPLY: all three proposals applied; the
+gate now reads the labelled status word from the head only (14 targets change exit code, listed in UPDATES.md;
+lambeth-bacon-649 and lambeth-casenowe-1586 need their citation carried up -- account-3's targets, flagged in ROOM);
+tools/premise_check.py exists for the parent's pre-spawn check. Tool flag: file_shrink_guard.py crashes on a .jpg path
+(UnicodeDecodeError), for a tools worker. Wave 4 spawned 14:2x (ids in the next check-in's paragraph): CLOSER-7,
+GAPS6-na-suriname (right-hand strip, cap 12), GAPS6-pro3055-clinton (26 Oct 1782 note, Images 1199/1205, cap 12),
+GAPS5-moray-wood (native-res pair crops + one strong-model call, cap 10), GAPS7-na-janssens (Collet 1910 LOCAL-QUEUE
+row + print_check on the four plain texts, cap 7), GAPS-fr4715-vieuville-pool (premise check, then no.37 f.60 through
+interlinear_align.py, cap 18), GAPS-fr3986-nevers-revol-1593 (atlas coverage from c.264's unused lines + held-out
+re-run, cap 12), GAPS6-na-schonenberg (gate repair: citation beside Status + premise check, stop before the image
+pass, cap 7). Caps total USD 81. Check-in 12 armed for 15:01 UTC (trig_01Ep56w1b7PEzpAej7et9uBi). Parent 2 at about
+520k context, cost about 31.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
