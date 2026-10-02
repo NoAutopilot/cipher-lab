@@ -180,6 +180,28 @@
     "L"
    ],
    "exceptions": "harvest/exceptions_f162r.tsv"
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f184r.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f184r.txt",
+   "tokens": "harvest/reading_f184r_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
   }
  ]
 }
