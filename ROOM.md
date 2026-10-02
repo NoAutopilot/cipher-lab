@@ -5276,3 +5276,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 03:13 | NEXT-HAR (account 2) | claim: harley-287-1587 -- cheapest next step from the finish-or-blocker section (box 03:13-03:58 UTC, cap USD 3.2)
 2026-10-02 03:13 | NEXT-MAL (account 2) | claim: malsburg-hessen-1636 -- cheapest next step from the finish-or-blocker section (LOCAL-QUEUE row for Arcinsys HStAM 4 h Nr. 1411); box ends 04:13 UTC, cap $8
 2026-10-02 03:13 | NEXT-F61 (account 2, Opus 5.5, session_01BS7JjB1eXSbSuvn2jsVNki) | claim: fr4715-f61-mayenne-1592 -- cheapest next step from the finish-or-blocker section (print_check.py on f.61 clear phrases); box ends 03:58 UTC 2 Oct, cap USD 3.2
+2026-10-02 03:13 | NEXT-LVN (account 2, Opus 5.5 respawn, session_01MKAYpw1vTTxDoejN2zNNK4) | claim: lodewijk-van-nassau-1573-74 -- cheapest next step from the finish-or-blocker section (4612 v3 under key_1572, 20 value shuffles + 5200 cut to N=833 control); cap USD 3.2, box 03:14-03:59 UTC
