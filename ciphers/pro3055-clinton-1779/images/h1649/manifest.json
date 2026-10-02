@@ -3,7 +3,7 @@
  "viewer": "https://heritage.canadiana.ca/view/oocihm.lac_reel_h1649/{image}",
  "fetched": "2 October 2026 (GAPS-pro3055-clinton-1779, account-4)",
  "fetch_method": "the viewer page lists every image's IIIF Image API 2 identifier in its #pvPageSelect options (saved to seq_to_iiif.tsv, all 1266); info.json and default.jpg at image-uab.canadiana.ca answer 403 to a plain request and 200 with a browser User-Agent plus a Referer header of the viewer page; one request at a time, 1.6 s apart",
- "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart; GAPS7 2 Oct 2026: image-uab.canadiana.ca 3 (Image 829 full/max for the byte-identical regen test, Image 1183 at 1600 px and full/max), browser UA + Referer, 1.6 s apart",
+ "requests": "heritage.canadiana.ca 3 (1 viewer page, 1 script, 1 probe), image-uab.canadiana.ca 12 (2 info.json incl. one 403, 7 reference copies incl. one 404 on a mapping gap since fixed, 3 native); GAPS5 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1, 637, 1266 at 1400 px, browser UA + Referer, 1.6 s apart); GAPS6 2 Oct 2026: image-uab.canadiana.ca 3 (Images 1199 and 1205 at 1600 px, Image 1205 at 3040 px and full/max to the scratchpad only = 4 requests in all incl. the 3040), archive.org 4 (Brymner 1887 djvu with its redirect, 1920 vol. III djvu with its redirect), browser UA + Referer on canadiana, 1.6 s apart; GAPS7 2 Oct 2026: image-uab.canadiana.ca 3 (Image 829 full/max for the byte-identical regen test, Image 1183 at 1600 px and full/max), browser UA + Referer, 1.6 s apart; GAPS8 2 Oct 2026: image-uab.canadiana.ca 6 (Images 1030, 1033, 1034 at 1600 px and at full/max; full/max to the scratchpad only), archive.org 2 (be-api fts phrase query, VHS Collections vol. II djvu), browser UA + Referer on canadiana, >=1.6 s apart",
  "rights": "LAC microfilm of BL manuscripts, 18th-century text; reel served openly by Canadiana",
  "files": [
   {
@@ -147,6 +147,32 @@
    "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc09882k4wb17/full/1600,/0/default.jpg",
    "bytes": 188128,
    "note": "GAPS7 2 Oct 2026: the opening B.148 pp.101-102 of BL Add MS 21808; p.102 (right) = the period decipherment of Carleton to Haldimand 25 Sept 1782 (Tomokiyo: 'decoded on f.102 (Image 1183)'); the full/max copy (5536x4056) was held in the session scratchpad for cropping, not committed; crops in p102_lines/"
+  },
+  {
+   "file": "img1030_w1600.jpg",
+   "image": 1030,
+   "iiif_id": "c02j6842811g",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc02j6842811g/full/1600,/0/default.jpg",
+   "bytes": 182284,
+   "note": "B.147 p.382, the cipher copy of item 3868 (Clinton to Haldimand, 12 Nov 1781) with copyist glosses; 1600 px reference, kept (cited GAPS8)"
+  },
+  {
+   "file": "img1033_w1600.jpg",
+   "image": 1033,
+   "iiif_id": "c0p843r9b54x",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0p843r9b54x/full/1600,/0/default.jpg",
+   "bytes": 182696,
+   "note": "B.147 p.385, the period decipherment of item 3868; 1600 px layout copy, deleted 2 Oct 2026 (GAPS8) to keep the folder under 28 MB: the line crops p385_lines/ carry the page",
+   "deleted": true
+  },
+  {
+   "file": "img1034_w1600.jpg",
+   "image": 1034,
+   "iiif_id": "c0jh3d01pd2k",
+   "url": "https://image-uab.canadiana.ca/iiif/2/69429%2Fc0jh3d01pd2k/full/1600,/0/default.jpg",
+   "bytes": 167272,
+   "note": "B.147 p.386, end of the 3868 decipherment, signature H C, P.S., endorsement; 1600 px layout copy, deleted 2 Oct 2026 (GAPS8): p386_lines/ carry the text",
+   "deleted": true
   }
  ],
  "crops": "p186_text_region.jpg is a PIL crop of img829_full.jpg (box 1956,527,4090,3772 = the text block of page 186); p186_bottom_region.jpg its lower 915 px; p186_lines/ holds the tools/iiif_lines.py line crops (--distance 110 --prominence 40 on the text region, 15 bands; --distance 90 --prominence 10 on the bottom strip, 2 bands) with their own manifest.json and debug overlays -- GAPS7 2 Oct 2026: p186_text_region.jpg and p186_bottom_region.jpg deleted (uncited; regen_images.sh re-derives both byte-identically from the original img829 frame: text region = greyscale crop q90, bottom = lower 915 px of the saved region q90) -- GAPS7 2 Oct 2026: p102_lines/ holds tools/iiif_lines.py crops of Image 1183 full/max (not inverted): 34 text lines (--region 2470,600,1700,3260 --centres from a row ink profile, two interpolated at 2317 and 2585), 7 margin crops (--region 2060,620,440,1680, centres by eye, --lines-per-crop 2), 1 header crop; one --debug overlay",
@@ -170,6 +196,27 @@
    "c09882k4wb17",
    "p102_lines",
    false
+  ],
+  [
+   1030,
+   "c02j6842811g",
+   "p382_cols",
+   false,
+   70
+  ],
+  [
+   1033,
+   "c0p843r9b54x",
+   "p385_lines",
+   false,
+   70
+  ],
+  [
+   1034,
+   "c0jh3d01pd2k",
+   "p386_lines",
+   false,
+   70
   ]
  ]
 }

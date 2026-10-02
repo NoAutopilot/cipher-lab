@@ -1,0 +1,29 @@
+{
+ "note": "cut by hand (PIL crop, no resize) from Image 1030 full/max 5448x4056, GAPS8-pro3055-clinton-1779 2 Oct 2026; regen_images.sh re-cuts from native_for_crops",
+ "iiif_lines": [
+  {
+   "crop": "p382_col1.jpg",
+   "source_file": "img1030_native.jpg",
+   "box": [
+    1680,
+    1240,
+    2040,
+    3000
+   ],
+   "method": "PIL crop",
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "p382_col2.jpg",
+   "source_file": "img1030_native.jpg",
+   "box": [
+    2020,
+    1240,
+    2360,
+    3000
+   ],
+   "method": "PIL crop",
+   "date": "02 Oct 2026"
+  }
+ ]
+}

@@ -1,0 +1,63 @@
+# B.147 p.382 (H-1649 Image 1030), first two cipher columns, cut by hand from the full-size frame (images/h1649/p382_cols/,
+# boxes in images/h1649/p382_cols/manifest.json); two blind Sonnet passes (p385_passA.tsv / p385_passB.tsv, rows p382_col1/col2).
+# One disagreement: col1 entry 23-24, A "-4 -4", B "-4": kept A (the decipherment's "Letter" needs two t cells).
+# pair = as written ("-N" repeats the previous line figure); word = the copyist's English gloss between cells.
+col	idx	entry
+p382_col1	1	5-1
+p382_col1	2	-2
+p382_col1	3	7-6
+p382_col1	4	18-14
+p382_col1	5	-17
+p382_col1	6	-9
+p382_col1	7	1-3
+p382_col1	8	-5
+p382_col1	9	-11
+p382_col1	10	2-6
+p382_col1	11	18-18
+p382_col1	12	-1
+p382_col1	13	-4
+p382_col1	14	-10
+p382_col1	15	-14
+p382_col1	16	"and"
+p382_col1	17	5-1
+p382_col1	18	-2
+p382_col1	19	2-1
+p382_col1	20	-2
+p382_col1	21	-3
+p382_col1	22	18-18
+p382_col1	23	-6
+p382_col1	24	-4
+p382_col1	25	-4
+p382_col1	26	-6
+p382_col1	27	-9
+p382_col1	28	"marked"
+p382_col1	29	3-1
+p382_col2	1	"to the"
+p382_col2	2	18-7
+p382_col2	3	-10
+p382_col2	4	-11
+p382_col2	5	-10
+p382_col2	6	-13
+p382_col2	7	-4
+p382_col2	8	-6
+p382_col2	9	-9
+p382_col2	10	"not"
+p382_col2	11	2-2
+p382_col2	12	18-1
+p382_col2	13	22-6
+p382_col2	14	18-10
+p382_col2	15	-11
+p382_col2	16	11-9
+p382_col2	17	4-4
+p382_col2	18	-2
+p382_col2	19	18-7
+p382_col2	20	-6
+p382_col2	21	14-1
+p382_col2	22	-2
+p382_col2	23	"prepare"
+p382_col2	24	21-1
+p382_col2	25	-2
+p382_col2	26	-4
+p382_col2	27	18-10
+p382_col2	28	-12
+p382_col2	29	-13

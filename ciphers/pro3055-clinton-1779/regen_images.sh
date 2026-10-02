@@ -16,7 +16,8 @@
 #      (greyscale, box 1956,527,4090,3772, q90), p186_bottom_region.jpg (its lower 915 px, q90), p186_lines/*
 #      (manifest boxes, q85, tools/iiif_lines.py's default), p184_cols/ and p185_cols/ (passes/cut_cipher_cols.py,
 #      run on OUTDIR through CLINTON_H1649_DIR), p123_lines/* (Image 1205 full/max, polarity-inverted as the
-#      committed crops are, manifest boxes, q85), p102_lines/* (Image 1183, same way, not inverted);
+#      committed crops are, manifest boxes, q85), p102_lines/* (Image 1183, same way, not inverted); p382_cols/, p385_lines/, p386_lines/ (Images 1030,
+#      1033, 1034, GAPS8: greyscale, q70, manifest boxes);
 #      the byte-identical tests run 2 Oct 2026 (GAPS7): img829_full.jpg, p186_text_region.jpg,
 #      p186_bottom_region.jpg, p186_text_region_L01.jpg and all 28 p184/p185 column crops;
 #   3. the HMC and Stevens pages come from archive.org _jp2.zip members and are converted to JPEG here, so they
@@ -84,7 +85,7 @@ if want('h1649'):
         save(src.crop((x0, y0, x1, y1)).convert('RGB'), os.path.join(d, 'p186_lines', e['crop']), 85)
     env = dict(os.environ, CLINTON_H1649_DIR=d)
     subprocess.run(['python3', os.path.join(HERE, 'passes', 'cut_cipher_cols.py')], check=True, env=env)
-    for img, iiif, sub, invert in [(1205, 'c0ft8dg56944', 'p123_lines', True)] + \
+    for img, iiif, sub, invert, *qq in [(1205, 'c0ft8dg56944', 'p123_lines', True)] + \
             [tuple(x) for x in m.get('native_for_crops', [])]:
         man = os.path.join(IMG, 'h1649', sub, 'manifest.json')
         if not os.path.exists(man):
@@ -97,7 +98,7 @@ if want('h1649'):
         entries = [e for e in json.load(open(man))['iiif_lines'] if 'box' in e]
         for e in entries:
             x0, y0, x1, y1 = e['box']
-            save(im.crop((x0, y0, x1, y1)).convert('RGB'), os.path.join(d, sub, e['crop']), 85)
+            save(im.crop((x0, y0, x1, y1)).convert('RGB'), os.path.join(d, sub, e['crop']), qq[0] if qq else 85)
 
 if want('armylist1778'):
     m = json.load(open(os.path.join(IMG, 'armylist1778', 'manifest.json')))

@@ -1,0 +1,63 @@
+{
+ "source": "H-1649 Images 1033 (p.385) and 1034 (p.386) full/max 5440x4056, crops images/h1649/p385_lines/, p386_lines/; cipher Image 1030 (p.382), images/h1649/p382_cols/",
+ "lines": 44,
+ "pass_agreement": "34/44 lines and 230/246 words identical between the two blind passes; most differences are words at the left edge the crops cut (settled on the 1600 px overlay)",
+ "grades_words": {
+  "H": 248,
+  "M": 4
+ },
+ "key_check": {
+  "cells_read": 53,
+  "cell_pass_agreement": "56/57 entries (one col1 repeat \"-4\" read once by pass B)",
+  "compared_cells": 44,
+  "page_letter_equals_decipherment_letter": 44,
+  "shuffled_plaintext_control": {
+   "seeds": 1000,
+   "mean": 3.127,
+   "p95": 6,
+   "max": 10
+  },
+  "proclamation_cells": {
+   "pairs": [
+    "1-3",
+    "1-5",
+    "1-11",
+    "2-6",
+    "18-18",
+    "18-1",
+    "18-4",
+    "18-10",
+    "18-14"
+   ],
+   "page_letters": "proclatio",
+   "note": "the cells after \"of your\" spell \"proclatio\" against the decipherment \"proclama^n\" (*Sic): 6 of 9 agree with p-r-o-c-l-a, the encipherer skipped \"ma\" and the n, or wrote 18-4 t for 18-7 m"
+  },
+  "grade_C_cells": 44
+ },
+ "same_key_as_2894": {
+  "distinct_cells": 32,
+  "also_in_key_2894": 19,
+  "agree": 19
+ },
+ "print_comparison": {
+  "printed_in": "Collections of the Vermont Historical Society vol. II (1871) pp.198-199 (archive.org collectionsofver02vermuoft); same phrase also in Walton, Records of the Governor and Council of Vermont vol. II, and Wilbur, Ira Allen (1928), per one be-api fts query",
+  "reading_body_words": 229,
+  "printed_body_words": 230,
+  "equal_words_in_order": 214,
+  "differing_spans_reading_vs_print": [
+   "recd | received",
+   "& | and",
+   "sent | transmitted to the minister",
+   "octr | of october",
+   "proclaman | proclamation",
+   "to the minister | -",
+   "- | had",
+   "darby | digby",
+   "a | -",
+   "pyan | to the kings",
+   "practising | practicing",
+   "deliberations | deliberation",
+   "h c | -"
+  ]
+ }
+}
