@@ -1,0 +1,47 @@
+plain	pos	sign	description	conf
+HEADER	0	Oud Se[...]	heading 'Oud Se..' in large script, cut at right edge of L01 (rest of word not visible)	M
+A	1	2	digit 2, bold	H
+A	2	[delta]	Greek delta triangle	H
+A	3	P	script capital P (small loop head)	M
+B	1	D	script capital D	H
+B	2	[sigma]	small o with long horizontal stroke to the right (sigma-like)	M
+C	1	[C-cut]	script C/E-like curve, cut between L01 bottom and L02 top; identity unclear	L
+D	1	v	lowercase v	H
+D	2	w	lowercase w	H
+E	1	3	digit 3	H
+E	2	7	digit 7	H
+E	3	A	script capital A (same form as plain A)	H
+E	4	[d-hook]	lowercase d with ascender curled back (delta-like); a bold detached stroke above it may belong to it	M
+E	5	e	bold lowercase e	H
+F	1	[amp]	looped cross / ampersand-like (alpha crossed by a diagonal)	M
+F	2	[omega-bar]	small omega with bar over it	H
+G	1	8	slanted 8 (could be theta-like)	M
+H	1	H	script capital H	M
+H	2	[s-loop]	small bold s-like hooked sign with diagonal, reversed-s shape	L
+J	1	f	script f / long-s-like with dot (could be J)	M
+J	2	m	lowercase m	H
+J	3	9	digit 9 with long tail	H
+K	1	B	script capital B	H
+L	1	G	script capital G	H
+L	2	c	lowercase c	H
+M	1	Y	large script Y/y with looped head	M
+N	1	[eta]	y without tail / Greek eta-like (lowercase y form)	M
+N	2	L	script capital L (same form as plain L)	H
+N	3	h	lowercase h	H
+O	1	k	lowercase k	H
+O	2	[hash]	three short verticals crossed by two horizontals (###)	H
+O	3	[pi]	Greek pi, bold	H
+P	1	S	script capital S (J-like)	M
+P	2	q	bold lowercase q with long descender	H
+Q	1	x	lowercase x	H
+R	1	0	slanted 0/o (digit zero likely)	M
+S	1	6	digit 6	H
+S	2	[psi]	psi-like trident with curved arms	M
+T	1	R	script capital R	H
+T	2	[lambda]	Greek lambda	H
+V	1	5	digit 5	H
+V	2	E	script capital E	H
+W	1	4	bold digit 4 (q-like)	M
+X	1	[I-bar]	bold capital I with short crossbar/serif at right (I or T-like)	M
+Y	1	[tau]	curly Greek tau (C with top bar)	M
+Z	1	N	script capital N	H

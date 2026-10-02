@@ -1,0 +1,55 @@
+# PERIOD key sheet: NA 1.05.03 (Societeit van Suriname) inv. 86, scan NL-HaNA_1.05.03_86_0002, right-hand page,
+# headed "Oud Secreet Alphabet" (signed at foot "Nieuw Secreet", which heads the facing/next leaf, not read here).
+# Located by GAPS13-na-suriname-map-1781 (account-4), 2 Oct 2026: 45 thumbnails by script + 1 contact-sheet look;
+# native IIIF region 2600,100,2000,3550 (images/inv86_0002_key_native.jpg), crops images/crops_inv86_key/ via
+# tools/iiif_lines.py; two blind Opus passes (passes/key86_passA.tsv, key86_passB.tsv) agree on all 45 sign shapes
+# (naming differs only), one reconciliation look settled the C row (cut at a band edge in both passes).
+# This is the key de Leeuw, Tijdschrift voor Zeegeschiedenis 16 (1997) 160-177, reproduces (AUDIT.md). One letter per
+# row per sign; I and J share one row (written J), U and V share V. Grade H: read from the period key sheet.
+# The verso's show-through carries a list of symbol code groups (roman numerals, marks) with words: not read here.
+plain	pos	sheet_sign	description	grade
+A	1	2	digit 2	H
+A	2	[delta]	Greek delta	H
+A	3	P	script capital P	H
+B	1	D	script capital D	H
+B	2	[sigma]	sigma / o with long bar to the right	H
+C	1	C	script capital C (looped)	H
+D	1	v	lowercase v (tall)	H
+D	2	w	lowercase w	H
+E	1	3	digit 3	H
+E	2	7	digit 7	H
+E	3	A	script capital A	H
+E	4	[delta-small]	lowercase delta / d with ascender curled back	H
+E	5	e	lowercase e, bold	H
+F	1	[amp]	ampersand-like looped cross	H
+F	2	[omega-bar]	omega with bar above	H
+G	1	8	tilted looped 8	H
+H	1	H	script capital H	H
+H	2	[s-loop-small]	small bold looped s-like sign	M
+I/J	1	f	long f / script J	H
+I/J	2	m	lowercase m	H
+I/J	3	9	digit 9, long tail	H
+K	1	B	script capital B	H
+L	1	G	script capital G	H
+L	2	c	lowercase c	H
+M	1	Y	script capital Y (looped, g-like)	H
+N	1	[eta]	y-like sign without tail (eta)	H
+N	2	L	script capital L	H
+N	3	h	lowercase h	H
+O	1	k	lowercase k	H
+O	2	[hash]	three uprights crossed by two bars	H
+O	3	[pi]	Greek pi	H
+P	1	S	script capital S	H
+P	2	q	lowercase q, long descender	H
+Q	1	x	lowercase x	H
+R	1	0	digit 0 / small o	H
+S	1	6	digit 6	H
+S	2	[psi]	Greek psi (trident)	H
+T	1	R	script capital R	H
+T	2	[lambda]	Greek lambda	H
+U/V	1	5	digit 5	H
+U/V	2	E	script capital E	H
+W	1	4	digit 4	H
+X	1	[I-bar]	bold I with crossbar	H
+Y	1	[tau]	curly tau	H
+Z	1	N	script capital N	H

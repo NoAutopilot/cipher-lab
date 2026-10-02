@@ -112,3 +112,11 @@ Appended to JSTOR-QUEUE.tsv on 2 Oct 2026 as queued: (i) Wollant AND Suriname AN
 cipher); (i) "Redout Leyden" OR "redoute Leiden" AND 1781; (ii) "met een of meer vaste substituten" (a phrase from de
 Leeuw 1997, no cipher keyword); (ii) "officers' quarters" "garrison barracks" "gunpowder magazine" Suriname (AMH 2218
 wording).
+
+## Addendum (GAPS13-na-suriname-map-1781, solver, 2 Oct 2026 -- not a verifier pass)
+
+The period key sheet this audit named is located: NA 1.05.03 inv. 86, scan NL-HaNA_1.05.03_86_0002, "Oud Secreet
+Alphabet", 45 signs (key_period.tsv). Our 17-sign key agrees with it on 16 values, and the 17th (G) is an open sign
+identity. The classes above are unchanged. A 2039 legend reading now exists under the period key (key source `period`,
+reading_2039_legend_period.txt, H 277 / M 179 / U 26). It needs a separate verifier's class (N1-pending until de Leeuw
+1997 is read, LOCAL-QUEUE L36). This addendum makes no novelty claim.

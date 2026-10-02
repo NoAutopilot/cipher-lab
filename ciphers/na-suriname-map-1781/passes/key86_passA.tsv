@@ -1,0 +1,47 @@
+plain	pos	sign	description	conf
+HEADER	0	Oud Sec[...]	heading 'Oud Sec...' (likely 'Oud Secreet'), cut at right edge of L01	M
+A	1	2	digit 2, bold	H
+A	2	[delta]	Greek delta triangle	H
+A	3	P	capital P, small cursive	M
+B	1	D	cursive capital D	H
+B	2	[sigma-bar]	sigma/small o with long horizontal bar to right	M
+C	1	[C-cut]	cursive capital C/E-like loop; cut at L01/L02 band edge, only top and bottom visible	L
+D	1	v	lowercase v	H
+D	2	w	lowercase w	H
+E	1	3	digit 3	H
+E	2	7	digit 7	H
+E	3	A	cursive capital A	H
+E	4	[d-hooked]	lowercase d with ascender curled back (delta-like d)	M
+E	5	e	lowercase e, bold	H
+F	1	[ampersand]	ampersand-like looped cross (& / alpha with stroke)	M
+F	2	[omega-bar]	omega (w) with bar above	H
+G	1	[8-loop]	tilted looped 8 (could be digit 8 or theta)	M
+H	1	H	cursive capital H	H
+H	2	[s-loop]	small bold looped s/theta-like sign	L
+I	1	[f-long]	cursive long f / J with dot after	M
+I	2	m	lowercase m	H
+I	3	9	digit 9 with long tail	H
+K	1	B	cursive capital B	H
+L	1	G	cursive capital G	H
+L	2	c	lowercase c	H
+M	1	[y-cursive]	cursive y/g with loop (capital Y?)	M
+N	1	[eta]	Greek eta / lowercase y-like	M
+N	2	L	cursive capital L (2-like)	M
+N	3	h	lowercase h	H
+O	1	k	lowercase k	H
+O	2	[hash]	hash/triple-crossed bars ###	H
+O	3	[pi]	Greek pi, bold	H
+P	1	S	cursive capital S (long-s like)	M
+P	2	q	lowercase q with long descender	H
+Q	1	x	lowercase x	H
+R	1	0	digit 0 / small o	M
+S	1	6	digit 6	H
+S	2	[psi]	Greek psi	H
+T	1	R	cursive capital R	H
+T	2	[lambda]	Greek lambda	H
+V	1	5	digit 5	H
+V	2	E	cursive capital E	H
+W	1	4	digit 4	H
+X	1	[I-bar]	bold capital I with crossbar / T-like	M
+Y	1	[tau]	Greek tau / cursive T-like curl	M
+Z	1	N	cursive capital N	H
