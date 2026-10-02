@@ -542,3 +542,50 @@ ciphertext under any of the seven named correspondents was found on disk or in t
 for the parent: fr5761 key 317 signs (8 correspondent blocks, sign_inventory.tsv); candidate letter
 dupuy468-anhalt (BnF Dupuy 468 item 28, Joachim von Moltzan) -- already found-solved 23 Sept 2026 via its
 own gloss, not via this key; no new candidate this pass.
+
+## Web and blog check (GF-A2-3, account 2, 2 Oct 2026)
+
+Queries run (plain web search), hit lists read, plausible hits opened:
+1. `"Chiffres desquelz l'on a usé durant le voiage d'Allemagne"` (the key's own heading, quoted) -- no hit on the
+   phrase (only modern tourism/statistics pages).
+2. `"français 5761" chiffres élection impériale 1519` (shelfmark) -- Wikipedia and DHM pages on the 1519 election; no
+   hit on the shelfmark or the key.
+3. `François Ier élection impériale 1519 chiffre Bonnivet Orval Guillart lettres chiffrées ambassadeurs` (sender side
+   + date) -- David Potter's calendar "Lettres de François Ier" on cour-de-france.fr (per-year PDFs and an index of
+   recipients). Plausible (a calendar of the king's 1519 letters, the volume's Fol. 54-102). The 1519 PDF
+   (`cour-de-france.fr/IMG/pdf/d._potter_-_lettres_de_francois_ier_-_1519.pdf`) answered HTTP 403 to a descriptive
+   UA and to one retry with a browser UA after a pause; stopped (good-citizen rule). **Unreached** -- next: read it
+   from a local browser (LOCAL-QUEUE) and grep for "5761" and "chiffre".
+4. `1519 imperial election French cipher key nomenclator Cordier Motheaugroing Moltzan Bonnivet` (names in the key;
+   also model-solve family) -- Rossignols, Charles V 1547 decipherment news, Cipherbrain's "The unsolved ciphers of
+   Emperor Maximilian I" and a "Reading Maximilian's Mail" post (Habsburg side, not this French key); no page on this
+   key.
+Blog site searches: `site:cryptiana.blogspot.com 1519 election OR Bonnivet OR "Francis I"` (no Cryptiana blog page
+returned; the 104 cached Tomokiyo pages were grepped earlier, see the top of this file); `site:scienceblogs.de
+klausis-krypto-kolumne 1519 Franz I. Kaiserwahl Chiffre` (Cipherbrain pages returned: a 15th-century encryption,
+Maximilian I's unsolved ciphers, Thomas Ernst / Ferdinand III -- none is this key); `site:ciphermysteries.com 1519
+election cipher Francis` (one Cipher Mysteries page, ?p=9800, on 15th-century cryptography -- not this key). No
+comment thread found discussing fr.5761 or this key list.
+
+## Premise check (GF-A2-3, account 2, 2 Oct 2026)
+
+The item is a plaintext key list (fol. 50v-53), so "already done" here means a prior transcription or printing of
+the key, or a period decipherment that already applies it.
+(a) Decipherments the folder already mentions -- **found (mentioned), unreachable.** The Pool search names an Archives
+nationales piece, "27 fevrier 1519, Lettre en partie chiffree (et dechiffree) de Joachim de Moltzan au chancelier
+... Duprat" (AN, piece n57; `sources/solver-diffs/2026-09-24-lane-n-fr-an.tsv` row 27). Moltzan holds one of this
+key's blocks, so that period decipherment may be a known-plaintext check on the f107 Moltzan block. It is an AN
+original, not viewed by this worker (archivesnationales/francearchives do not load from the cloud). It is not a
+transcription of the key itself. Dupuy 468 item 28 (Moltzan, already `found-solved` via its own gloss) is the
+other mentioned decipherment; it was read without this key.
+(b) Other solvers' working files -- **not found.** Fresh clones of dbourdeau/cyphersolver (head 2341682) and
+aaymeloglu/unsolved-ciphers (head d2800bb) grepped for "motheaugroing", "moltzau", "btv1b52510561g", "fr. 5761"/
+"français 5761": no hit; the bare "5761" hits are image ids and digit runs (hcportal media 5761, Hessen key 19).
+(c) Physical neighbours -- **partly found, nothing beside the key.** Canvases f103-f110 (fol. 50r-53v) are on disk
+(images/); f103 is the end of the Instruction in prose. The volume's letters (Fol. 54-172) were checked by catalogue
+wording only (no "chiffre"); no leaf walk of those folios for an unremarked cipher passage or a clear copy using the
+key -- not done by this worker either.
+(d) Recipient's side -- **not found / unreached.** The recipients are the German electors (Palatine, Trier,
+Brandenburg, Saxony): no German edition (Deutsche Reichstagsakten, Jungere Reihe vol. 1, the 1519 election volume)
+was opened by this worker; Mignet and Le Glay (French side) were read by full-text search (top of this file) without
+the key. Next: a full-text search of Deutsche Reichstagsakten J.R. I for "chiffre"/"Ziffer" + Moltzan/Cordier, ~$1.
