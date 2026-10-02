@@ -1,0 +1,19 @@
+band	line	label	glyphs	conf	note
+L01	1		<No> <1> / <5> [MM] [dots-tri] / 2 4 1 9 d [dash] / t [psi] 3 o	M	s2 blank. 'No 1,' plain; <5> before [MM] plain. [dots-tri]=small three-dot/colon mark after MM. 'd' has overbar-like stroke. word 3 'ty30' last two may be plain number <30>
+L02	1		<No> <2> / <4> [MM] [a-caret] / 2 4 1 9 d / y [h-loop] [lambda] [hash]	M	s2 blank. [a-caret]=A-like wedge with open base near [delta]. last glyph [hash] ends with comma
+L03	1		<No> <3> / <2> [MM] [a-caret] 2 4 1 9 d / t o d o	M	s2 only stray ink at bottom edge. [a-caret] before 2419d may be [delta]; 'tOdo' last o has dot
+L03	2		<2> [MM] x <1> 2 9 d / [w-loop] [m-loop] r k	M	second item; <2> before [MM] plain; x small cross mark; '129d'; last word 'wmrk' with ligatured first glyphs
+L04	1		<No> <4> / <1> [MM] p / 1 2 9 d / t y a o	M	[p-hat]=p with hat accent; '129d' with d-loop
+L04	2		<3> / b g r t h a / [psi] g x l g r h	M	'b g r t h [a-plain]' with accent over last; second word starts psi-shape [psi]; x then l g 7 h
+L04	3		<5> [lambda] h r / [psi-hook] [hash] o r k l / g o g r a l [lambda] / [delta] <6> 9 d	M	s1/s2 overlap merged at 'sAh r Y#ork'. '5' plain count before cipher; [lambda] hooked; [delta] hollow wedge with tick above then 6 9 d (could be plain number <69> d)
+L05	1		<No> <5> / <1> r [z-tail] [lambda] [hash] / [psi] 9 x l i 9 7 / <2> [MM] [p-hat] / 6 9 d t [psi] 3 o	M	s2 only stray marks. 'r [z-tail]' glyph 3 is f/z-tail with dot; '2' before [MM] plain
+L06	1		<No> <6> / [f-tail] h r [v-tall] / [x-dot] g [delta] l b [3-caret] k / r a o / w o [psi] m d [p-loop] [psi] [lambda] m k l b / <2> [MM] [a-caret] / 3 9 d t [psi] 3 o	M	long line; s2 repeats only tail 'M i 3 9 d t y 3 o' (overlap merged). several glyphs in words 4-6 uncertain
+L07	1		[psi] 3 / 5 3 o w 7 o a / q 8 9 l x [lambda] 5 e h / [psi] t l :	M	centred heading; s2 only repeats 'h ytl:' (overlap merged). 'w7oa' glyph w uncertain; 'q89l' 8 could be plain digit
+L08	1	a	[hash] [omega-tilde] [z-tail] f [psi] 8 3 o [psi] 4 k [pi] h m l g	M	label a plain. glyph 2 w-like with diacritic
+L08	2	b	g k [hash] g 7 5 [pi] k o / v a / d o [psi] a [lambda] r m h g 3	M	label b plain; entry continues into s2 ('d o psi a lambda r . m h g 3' merged); [pi]=pi-like crossbar glyph
+L08	3	c	[psi-hook] [hash] o 9 b / v 3 / g [delta] o v 7	M	label c plain (after comma at end of b entry); [delta] small wedge with tick
+L09	1	d	[ladder-III] [h-loop-y] j [delta] 9 x [psi-hook] t h	M	label d plain; [ladder-III]=three tall vertical strokes joined (like Roman III block) at entry start
+L09	2	e	[ladder-III] & g 3 o r d r [psi] [psi-hook] [s-loop] [delta] q [s-loop] s t b m 3 [psi] / [hash] m s / y 3 / d [delta] r [lambda] 7 o b t a h	M	label e plain; entry runs across s1/s2 (overlap merged at 'ms y3 dArA'); many glyphs uncertain
+L09	3	f	g [hash] k g [s-tail-descender] 6 / 5 k [pi] o	M	label f plain; glyph 5 has descending tail looped below baseline (6 with long descender stroke)
+L10	1		v r / d 3 e o r a w [s-loop] q [s-loop] d / d m [hash] 6 [psi] h 3 a g r o b	M	continuation of f entry, empty label; ends with comma
+L10	2	g	g / g [delta] c g r o t	M	label g plain after comma; s2 only shows tail 'rot,' (overlap merged)

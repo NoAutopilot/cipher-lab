@@ -75,7 +75,8 @@
    "files": {
     "2061_overview.jpg": "full sheet, 2839px wide",
     "2061_title_topleft.jpg": "top-left block, native-res crop",
-    "2061_title_gloss.jpg": "title + battery-list header, native-res crop -- shows a plain-Dutch interlinear gloss ('Plan en Defensie Staat', 'van de Redout Leyde[n]', 'De Batterijen zijn gedeponeerd') written above the ciphered lines"
+    "2061_title_gloss.jpg": "title + battery-list header, native-res crop -- shows a plain-Dutch interlinear gloss ('Plan en Defensie Staat', 'van de Redout Leyde[n]', 'De Batterijen zijn gedeponeerd') written above the ciphered lines",
+    "2061_battery_legend_native.jpg": "No.1-6 battery list + legend heading + a-g legend, IIIF region 2800,820,2300,900 at native size (2300x900), fetched 2 Oct 2026 (GAPS8, account-4); no interlinear gloss on any of these 10 lines; line crops cut from it with tools/iiif_lines.py --image ... --prefix bat2061 --max-width 1300 --overlap 200 --centres 79,124,182,229,331,375,496,553,640,726 (crops kept in scratch, not committed; regenerable)"
    }
   },
   {

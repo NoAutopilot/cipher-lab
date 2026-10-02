@@ -1,0 +1,17 @@
+band	line	label	glyphs	conf	note
+L01	1		<No> <1> <5> [MM] [dots-tri] <2> 4 <1> 9 [d-loop] / [t-bar] y [psi] <30>	M	s2 blank; [dots-tri]=small triangle of dots after MM; word 1 "2 4 1 9 d" reads like digits+glyph
+L02	1		<No> <2> <4> [MM] [delta] 2 4 9 [d-loop] / y [f-loop] [lambda] [hash]	M	s2 blank; pos after MM a delta-like mark; [f-loop] overlapped by lambda
+L03	1		<No> <3> <2> [MM] [delta] 2 4 9 [d-loop] / t o [d-loop] o <2> [MM] x 1 2 9 [d-loop] / w m r k	M	s2 blank; second MM preceded by <2>; "w" is ligatured double-v shape; [d-loop] = looped d/delta-like 9d ending
+L04	1		<No> <4> <1> [MM] [p-hat] 1 2 9 [d-loop] / t y a o <3> / b g r t h [a-acute] / [psi] g x [long-l] g r h	M	line continues to L04 after comma
+L04	2		5 [delta] h r / [Y-loop] [hash] o r k l / g o g r a l [lambda] <6 9 d>	M	"5 delta h r" and following merged from s1 end and s2 start (overlap not doubled); [delta] has hat; trailing "6 9d" possibly plain; "," before
+L05	1		<No> <5> <1> r [f-loop] [lambda] [hash] / [psi] g x [long-l] g r <7> <2> [MM] [p-hat] 6 9 [d-loop] t y <30>	M	s2 shows only partial overlap of next line top; nothing to read
+L06	1		<No> <6> [f-loop] h r r / [x-loop] g [delta] b [b-loop] k / r a o / w o y m d p y [lambda] m k l b <2> [MM] [a-grave] <39> d <.> t y <30>	L	s2 repeats final "MM a 3 9 d . t y 30" (overlap merged); middle words low-confidence
+L07	1		y 3 / 5 3 o w r o a / q 8 9 l x [lambda] 5 e h / [psi] t l <:>	M	heading, centred; s2 repeats "h psi t l :" overlap
+L08	1	a	[hash] [w-dots] [f-loop] y 8 3 o [psi] 4 k [pi] h m l g	M	label a followed by stop
+L08	2	b	g k [hash] 9 7 . 5 [pi] k o / v a / d o [psi] a [lambda] r m h g 3	M	continues in s2 overlap; ends with comma
+L08	3	c	[Y-loop] [hash] o 9 6 / y 3 / g [delta] o v r	M	label c in s2; trailing comma/stop
+L09	1	d	[3bars] [ij] y [delta] 9 x [Y-loop] t h	M	label d; [3bars] = tall triple-stroke ligature
+L09	2	e	[3bars] a g 3 o r d [x-loop] [psi] [psi] [Y-loop] s [delta] q u f s t b m 3 [psi] / [hash] m s / y 3 / d [delta] r [lambda] 7 o b t a h	L	continues into s2 (overlap merged)
+L09	3	f	g [hash] k g f 6 / 5 k [pi] o	M	continues on L10
+L10	1		v r / d z e o r a w f g y d / d m [hash] 6 y h 3 a g r 6 b	L	continuation of f entry; ends with comma
+L10	2	g	g [delta] c g r o t	M	s2 only has trailing "r o t ," overlap

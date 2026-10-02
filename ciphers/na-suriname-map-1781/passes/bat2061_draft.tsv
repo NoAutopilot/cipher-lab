@@ -1,0 +1,392 @@
+line	position	sign	confidence	alt	why
+L01	1	<No>	H		agree
+L01	2	1	H		agree
+L01	3	|	M	A:-	gap
+L01	4	5	H		agree
+L01	5	[MM]	H		agree
+L01	6	[dots-tri]	H		agree
+L01	7	|	M	A:-	gap
+L01	8	2	H		agree
+L01	9	4	H		agree
+L01	10	1	H		agree
+L01	11	9	H		agree
+L01	12	d	H		agree
+L01	13	|	H		agree
+L01	14	t	H		agree
+L01	15	y	M	B:-	gap
+L01	16	[psi]	H		agree
+L01	17	3	H		agree
+L01	18	0	M	B:o	differ
+L01	19	|	H		agree
+L02	1	<No>	H		agree
+L02	2	2	H		agree
+L02	3	|	M	A:-	gap
+L02	4	4	H		agree
+L02	5	[MM]	H		agree
+L02	6	[a-caret]	M	A:-	gap
+L02	7	[delta]	M	B:|	differ
+L02	8	2	H		agree
+L02	9	4	H		agree
+L02	10	1	M	A:-	gap
+L02	11	9	H		agree
+L02	12	d	H		agree
+L02	13	|	H		agree
+L02	14	y	H		agree
+L02	15	[f-loop]	M	B:[h-loop]	differ
+L02	16	λ	H		agree
+L02	17	[hash]	H		agree
+L02	18	|	H		agree
+L03	1	<No>	H		agree
+L03	2	3	H		agree
+L03	3	|	M	A:-	gap
+L03	4	2	H		agree
+L03	5	[MM]	H		agree
+L03	6	[delta]	M	B:[a-caret]	differ
+L03	7	2	H		agree
+L03	8	4	H		agree
+L03	9	1	M	A:-	gap
+L03	10	9	H		agree
+L03	11	d	H		agree
+L03	12	|	H		agree
+L03	13	t	H		agree
+L03	14	o	H		agree
+L03	15	d	H		agree
+L03	16	o	H		agree
+L03	17	|	M	A:-	gap
+L03	18	2	H		agree
+L03	19	[MM]	H		agree
+L03	20	x	H		agree
+L03	21	1	H		agree
+L03	22	2	H		agree
+L03	23	9	H		agree
+L03	24	d	H		agree
+L03	25	|	H		agree
+L03	26	w	M	B:[w-loop]	differ
+L03	27	m	M	B:[m-loop]	differ
+L03	28	r	H		agree
+L03	29	k	H		agree
+L03	30	|	H		agree
+L04	1	<No>	H		agree
+L04	2	4	H		agree
+L04	3	|	M	A:-	gap
+L04	4	1	H		agree
+L04	5	[MM]	H		agree
+L04	6	p	H		agree
+L04	7	|	M	A:-	gap
+L04	8	1	H		agree
+L04	9	2	H		agree
+L04	10	9	H		agree
+L04	11	d	H		agree
+L04	12	|	H		agree
+L04	13	t	H		agree
+L04	14	y	H		agree
+L04	15	a	H		agree
+L04	16	o	H		agree
+L04	17	|	M	A:-	gap
+L04	18	3	H		agree
+L04	19	|	H		agree
+L04	20	b	H		agree
+L04	21	g	H		agree
+L04	22	r	H		agree
+L04	23	t	H		agree
+L04	24	h	H		agree
+L04	25	a	H		agree
+L04	26	|	H		agree
+L04	27	[psi]	H		agree
+L04	28	g	H		agree
+L04	29	x	H		agree
+L04	30	l	H		agree
+L04	31	g	H		agree
+L04	32	r	H		agree
+L04	33	h	H		agree
+L04	34	|	H		agree
+L04	35	5	H		agree
+L04	36	[delta]	M	B:λ	differ
+L04	37	h	H		agree
+L04	38	r	H		agree
+L04	39	|	H		agree
+L04	40	[psi-hook]	H		agree
+L04	41	[hash]	H		agree
+L04	42	o	H		agree
+L04	43	r	H		agree
+L04	44	k	H		agree
+L04	45	l	H		agree
+L04	46	|	H		agree
+L04	47	g	H		agree
+L04	48	o	H		agree
+L04	49	g	H		agree
+L04	50	r	H		agree
+L04	51	a	H		agree
+L04	52	l	H		agree
+L04	53	λ	H		agree
+L04	54	|	M	A:-	gap
+L04	55	[delta]	M	A:-	gap
+L04	56	<6	M	B:6	differ
+L04	57	9	H		agree
+L04	58	d>	M	B:d	differ
+L04	59	|	H		agree
+L05	1	<No>	H		agree
+L05	2	5	H		agree
+L05	3	|	M	A:-	gap
+L05	4	1	H		agree
+L05	5	r	H		agree
+L05	6	[f-loop]	M	B:[z-tail]	differ
+L05	7	λ	H		agree
+L05	8	[hash]	H		agree
+L05	9	|	H		agree
+L05	10	[psi]	H		agree
+L05	11	g	M	B:9	differ
+L05	12	x	H		agree
+L05	13	l	H		agree
+L05	14	g	M	B:i	differ
+L05	15	r	M	B:9	differ
+L05	16	7	H		agree
+L05	17	|	M	A:-	gap
+L05	18	2	H		agree
+L05	19	[MM]	H		agree
+L05	20	p	H		agree
+L05	21	|	M	A:-	gap
+L05	22	6	H		agree
+L05	23	9	H		agree
+L05	24	d	H		agree
+L05	25	t	H		agree
+L05	26	y	M	B:[psi]	differ
+L05	27	3	H		agree
+L05	28	0	M	B:o	differ
+L05	29	|	H		agree
+L06	1	<No>	H		agree
+L06	2	6	H		agree
+L06	3	|	M	A:-	gap
+L06	4	[f-loop]	M	B:[f-tail]	differ
+L06	5	h	H		agree
+L06	6	r	H		agree
+L06	7	r	M	B:[v-tall]	differ
+L06	8	|	H		agree
+L06	9	[x-dot]	H		agree
+L06	10	g	H		agree
+L06	11	[delta]	H		agree
+L06	12	l	M	A:-	gap
+L06	13	b	H		agree
+L06	14	[b-loop]	M	B:[3-caret]	differ
+L06	15	k	H		agree
+L06	16	|	H		agree
+L06	17	r	H		agree
+L06	18	a	H		agree
+L06	19	o	H		agree
+L06	20	|	H		agree
+L06	21	w	H		agree
+L06	22	o	H		agree
+L06	23	y	M	B:[psi]	differ
+L06	24	m	H		agree
+L06	25	d	H		agree
+L06	26	p	M	B:[p-loop]	differ
+L06	27	y	M	B:[psi]	differ
+L06	28	λ	H		agree
+L06	29	m	H		agree
+L06	30	k	H		agree
+L06	31	l	H		agree
+L06	32	b	H		agree
+L06	33	|	M	A:-	gap
+L06	34	2	H		agree
+L06	35	[MM]	H		agree
+L06	36	[a-caret]	H		agree
+L06	37	|	M	A:-	gap
+L06	38	3	H		agree
+L06	39	9	H		agree
+L06	40	d	H		agree
+L06	41	<.>	M	B:-	gap
+L06	42	t	H		agree
+L06	43	y	M	B:[psi]	differ
+L06	44	3	H		agree
+L06	45	0	M	B:o	differ
+L06	46	|	H		agree
+L07	1	y	M	B:[psi]	differ
+L07	2	3	H		agree
+L07	3	|	H		agree
+L07	4	5	H		agree
+L07	5	3	H		agree
+L07	6	o	H		agree
+L07	7	w	H		agree
+L07	8	r	M	B:7	differ
+L07	9	o	H		agree
+L07	10	a	H		agree
+L07	11	|	H		agree
+L07	12	q	H		agree
+L07	13	8	H		agree
+L07	14	9	H		agree
+L07	15	l	H		agree
+L07	16	x	H		agree
+L07	17	λ	H		agree
+L07	18	5	H		agree
+L07	19	e	H		agree
+L07	20	h	H		agree
+L07	21	|	H		agree
+L07	22	[psi]	H		agree
+L07	23	t	H		agree
+L07	24	l	H		agree
+L07	25	<:>	M	B::	differ
+L07	26	|	H		agree
+L08	1	<a>	H		agree
+L08	2	[hash]	H		agree
+L08	3	[w-tilde]	H		agree
+L08	4	[z-tail]	M	A:-	gap
+L08	5	[f-loop]	M	B:f	differ
+L08	6	y	M	B:[psi]	differ
+L08	7	8	H		agree
+L08	8	3	H		agree
+L08	9	o	H		agree
+L08	10	[psi]	H		agree
+L08	11	4	H		agree
+L08	12	k	H		agree
+L08	13	[pi]	H		agree
+L08	14	h	H		agree
+L08	15	m	H		agree
+L08	16	l	H		agree
+L08	17	g	H		agree
+L08	18	|	H		agree
+L08	19	<b>	H		agree
+L08	20	g	H		agree
+L08	21	k	H		agree
+L08	22	[hash]	H		agree
+L08	23	9	M	B:g	differ
+L08	24	7	H		agree
+L08	25	5	H		agree
+L08	26	[pi]	H		agree
+L08	27	k	H		agree
+L08	28	o	H		agree
+L08	29	|	H		agree
+L08	30	v	H		agree
+L08	31	a	H		agree
+L08	32	|	H		agree
+L08	33	d	H		agree
+L08	34	o	H		agree
+L08	35	[psi]	H		agree
+L08	36	a	H		agree
+L08	37	λ	H		agree
+L08	38	r	H		agree
+L08	39	m	H		agree
+L08	40	h	H		agree
+L08	41	g	H		agree
+L08	42	3	H		agree
+L08	43	|	H		agree
+L08	44	<c>	H		agree
+L08	45	[psi-hook]	H		agree
+L08	46	[hash]	H		agree
+L08	47	o	H		agree
+L08	48	9	H		agree
+L08	49	6	M	B:b	differ
+L08	50	|	H		agree
+L08	51	y	M	B:v	differ
+L08	52	3	H		agree
+L08	53	|	H		agree
+L08	54	g	H		agree
+L08	55	[delta]	H		agree
+L08	56	o	H		agree
+L08	57	v	H		agree
+L08	58	r	M	B:7	differ
+L08	59	|	H		agree
+L09	1	<d>	H		agree
+L09	2	[ladder-III]	H		agree
+L09	3	[ij]	M	B:[h-loop-y]	differ
+L09	4	y	M	B:j	differ
+L09	5	[delta]	H		agree
+L09	6	9	H		agree
+L09	7	x	H		agree
+L09	8	[psi-hook]	H		agree
+L09	9	t	H		agree
+L09	10	h	H		agree
+L09	11	|	H		agree
+L09	12	<e>	H		agree
+L09	13	[ladder-III]	H		agree
+L09	14	a	M	B:&	differ
+L09	15	g	H		agree
+L09	16	3	H		agree
+L09	17	o	H		agree
+L09	18	r	H		agree
+L09	19	d	H		agree
+L09	20	[x-dot]	M	B:-	gap
+L09	21	[psi]	M	B:r	differ
+L09	22	[psi]	H		agree
+L09	23	[psi-hook]	H		agree
+L09	24	s	M	B:[s-loop]	differ
+L09	25	[delta]	H		agree
+L09	26	q	H		agree
+L09	27	u	M	B:-	gap
+L09	28	f	M	B:[s-loop]	differ
+L09	29	s	H		agree
+L09	30	t	H		agree
+L09	31	b	H		agree
+L09	32	m	H		agree
+L09	33	3	H		agree
+L09	34	[psi]	H		agree
+L09	35	|	H		agree
+L09	36	[hash]	H		agree
+L09	37	m	H		agree
+L09	38	s	H		agree
+L09	39	|	H		agree
+L09	40	y	H		agree
+L09	41	3	H		agree
+L09	42	|	H		agree
+L09	43	d	H		agree
+L09	44	[delta]	H		agree
+L09	45	r	H		agree
+L09	46	λ	H		agree
+L09	47	7	H		agree
+L09	48	o	H		agree
+L09	49	b	H		agree
+L09	50	t	H		agree
+L09	51	a	H		agree
+L09	52	h	H		agree
+L09	53	|	H		agree
+L09	54	<f>	H		agree
+L09	55	g	H		agree
+L09	56	[hash]	H		agree
+L09	57	k	H		agree
+L09	58	g	H		agree
+L09	59	f	M	B:[s-tail-descender]	differ
+L09	60	6	H		agree
+L09	61	|	H		agree
+L09	62	5	H		agree
+L09	63	k	H		agree
+L09	64	[pi]	H		agree
+L09	65	o	H		agree
+L09	66	|	H		agree
+L10	1	v	H		agree
+L10	2	r	H		agree
+L10	3	|	H		agree
+L10	4	d	H		agree
+L10	5	z	M	B:3	differ
+L10	6	e	H		agree
+L10	7	o	H		agree
+L10	8	r	H		agree
+L10	9	a	H		agree
+L10	10	w	H		agree
+L10	11	f	M	B:[s-loop]	differ
+L10	12	g	M	B:q	differ
+L10	13	y	M	B:[s-loop]	differ
+L10	14	d	H		agree
+L10	15	|	H		agree
+L10	16	d	H		agree
+L10	17	m	H		agree
+L10	18	[hash]	H		agree
+L10	19	6	H		agree
+L10	20	y	M	B:[psi]	differ
+L10	21	h	H		agree
+L10	22	3	H		agree
+L10	23	a	H		agree
+L10	24	g	H		agree
+L10	25	r	H		agree
+L10	26	6	M	B:o	differ
+L10	27	b	H		agree
+L10	28	|	H		agree
+L10	29	<g>	H		agree
+L10	30	g	M	A:-	gap
+L10	31	|	M	A:-	gap
+L10	32	g	H		agree
+L10	33	[delta]	H		agree
+L10	34	c	H		agree
+L10	35	g	H		agree
+L10	36	r	H		agree
+L10	37	o	H		agree
+L10	38	t	H		agree
+L10	39	|	H		agree

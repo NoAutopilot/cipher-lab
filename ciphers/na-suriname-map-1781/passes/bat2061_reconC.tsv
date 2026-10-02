@@ -1,0 +1,49 @@
+id	decision	sign	conf	note
+D01	NONE	-	M	only one psi between t and 30 in image
+D02	NONE	-	M	one wedge after MM, already in context
+D03	B	1	M	digit 1 visible
+D04	A	[f-loop]	M	
+D05	A	[delta]	M	small dotted wedge
+D06	B	1	M	
+D07	A	[delta]	H	
+D08	B	[delta]	H	wedge after comma
+D09	A	6	M	
+D10	A	d	M	
+D11	A	[f-loop]	M	
+D12	B	9	M	
+D13	B	i	M	
+D14	B	9	M	
+D15	B	[psi]	H	tpsi30 word end
+D16	B	[f-tail]	M	big descender
+D17	B	[v-tall]	M	
+D18	B	l	M	
+D19	B	[3-caret]	M	
+D20	A	y	M	plain y
+D21	A	p	M	
+D22	A	y	M	plain y
+D23	B	[psi]	H	
+D24	A	y	M	plain y at line start
+D25	B	7	M	
+D26	B	[z-tail]	M	small mark between w-tilde and f
+D27	A	[f-loop]	M	
+D28	B	[psi]	M	
+D29	B	g	M	
+D30	A	6	M	
+D31	A	y	M	plain y
+D32	B	7	M	
+D33	A	[ij]	M	
+D34	A	y	M	
+D35	B	&	M	
+D36	A	[x-dot]	M	
+D37	A	[psi]	M	
+D38	A	s	M	
+D39	A	u	M	
+D40	B	[s-loop]	M	
+D41	B	[s-tail-descender]	M	
+D42	A	z	M	
+D43	A	f	M	
+D44	B	q	M	
+D45	A	y	M	
+D46	B	[psi]	H	
+D47	B	o	M	
+D48	NONE	-	M	label g then word gDcg, no extra g

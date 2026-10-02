@@ -1,0 +1,49 @@
+id	band	context_before	A_reads	B_reads	context_after
+D01	L01	1 9 d | t	y	-	[psi] 3 0 |
+D02	L02	<No> 2 | 4 [MM]	-	[a-caret]	[delta] 2 4 1 9
+D03	L02	[MM] [a-caret] [delta] 2 4	-	1	9 d | y [f-loop]
+D04	L02	1 9 d | y	[f-loop]	[h-loop]	λ [hash] |
+D05	L03	<No> 3 | 2 [MM]	[delta]	[a-caret]	2 4 1 9 d
+D06	L03	2 [MM] [delta] 2 4	-	1	9 d | t o
+D07	L04	g r h | 5	[delta]	λ	h r | [psi-hook] [hash]
+D08	L04	r a l λ |	-	[delta]	<6 9 d> |
+D09	L04	a l λ | [delta]	<6	6	9 d> |
+D10	L04	λ | [delta] <6 9	d>	d	|
+D11	L05	<No> 5 | 1 r	[f-loop]	[z-tail]	λ [hash] | [psi] g
+D12	L05	[f-loop] λ [hash] | [psi]	g	9	x l g r 7
+D13	L05	| [psi] g x l	g	i	r 7 | 2 [MM]
+D14	L05	[psi] g x l g	r	9	7 | 2 [MM] p
+D15	L05	| 6 9 d t	y	[psi]	3 0 |
+D16	L06	<No> 6 |	[f-loop]	[f-tail]	h r r | [x-dot]
+D17	L06	6 | [f-loop] h r	r	[v-tall]	| [x-dot] g [delta] l
+D18	L06	r | [x-dot] g [delta]	-	l	b [b-loop] k | r
+D19	L06	[x-dot] g [delta] l b	[b-loop]	[3-caret]	k | r a o
+D20	L06	a o | w o	y	[psi]	m d p y λ
+D21	L06	w o y m d	p	[p-loop]	y λ m k l
+D22	L06	o y m d p	y	[psi]	λ m k l b
+D23	L06	3 9 d <.> t	y	[psi]	3 0 |
+D24	L07		y	[psi]	3 | 5 3 o
+D25	L07	| 5 3 o w	r	7	o a | q 8
+D26	L08	<a> [hash] [w-tilde]	-	[z-tail]	[f-loop] y 8 3 o
+D27	L08	<a> [hash] [w-tilde] [z-tail]	[f-loop]	f	y 8 3 o [psi]
+D28	L08	<a> [hash] [w-tilde] [z-tail] [f-loop]	y	[psi]	8 3 o [psi] 4
+D29	L08	| <b> g k [hash]	9	g	7 5 [pi] k o
+D30	L08	<c> [psi-hook] [hash] o 9	6	b	| y 3 | g
+D31	L08	[hash] o 9 6 |	y	v	3 | g [delta] o
+D32	L08	| g [delta] o v	r	7	|
+D33	L09	<d> [ladder-III]	[ij]	[h-loop-y]	y [delta] 9 x [psi-hook]
+D34	L09	<d> [ladder-III] [ij]	y	j	[delta] 9 x [psi-hook] t
+D35	L09	t h | <e> [ladder-III]	a	&	g 3 o r d
+D36	L09	g 3 o r d	[x-dot]	-	[psi] [psi] [psi-hook] s [delta]
+D37	L09	3 o r d [x-dot]	[psi]	r	[psi] [psi-hook] s [delta] q
+D38	L09	d [x-dot] [psi] [psi] [psi-hook]	s	[s-loop]	[delta] q u f s
+D39	L09	[psi] [psi-hook] s [delta] q	u	-	f s t b m
+D40	L09	[psi-hook] s [delta] q u	f	[s-loop]	s t b m 3
+D41	L09	<f> g [hash] k g	f	[s-tail-descender]	6 | 5 k [pi]
+D42	L10	v r | d	z	3	e o r a w
+D43	L10	e o r a w	f	[s-loop]	g y d | d
+D44	L10	o r a w f	g	q	y d | d m
+D45	L10	r a w f g	y	[s-loop]	d | d m [hash]
+D46	L10	| d m [hash] 6	y	[psi]	h 3 a g r
+D47	L10	h 3 a g r	6	o	b | <g> g |
+D48	L10	r 6 b | <g>	-	g	| g [delta] c g

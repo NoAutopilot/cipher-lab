@@ -1,0 +1,10 @@
+L01	<No> 1 | 5 [MM] [dots-tri] | 2 4 1 9 d | t [psi] 3 o |
+L02	<No> 2 | 4 [MM] [a-caret] | 2 4 1 9 d | y [h-loop] λ [hash] |
+L03	<No> 3 | 2 [MM] [a-caret] 2 4 1 9 d | t o d o | 2 [MM] x 1 2 9 d | [w-loop] [m-loop] r k |
+L04	<No> 4 | 1 [MM] p | 1 2 9 d | t y a o | 3 | b g r t h a | [psi] g x l g r h | 5 λ h r | [psi-hook] [hash] o r k l | g o g r a l λ | [delta] 6 9 d |
+L05	<No> 5 | 1 r [z-tail] λ [hash] | [psi] 9 x l i 9 7 | 2 [MM] p | 6 9 d t [psi] 3 o |
+L06	<No> 6 | [f-tail] h r [v-tall] | [x-dot] g [delta] l b [3-caret] k | r a o | w o [psi] m d [p-loop] [psi] λ m k l b | 2 [MM] [a-caret] | 3 9 d t [psi] 3 o |
+L07	[psi] 3 | 5 3 o w 7 o a | q 8 9 l x λ 5 e h | [psi] t l : |
+L08	<a> [hash] [w-tilde] [z-tail] f [psi] 8 3 o [psi] 4 k [pi] h m l g | <b> g k [hash] g 7 5 [pi] k o | v a | d o [psi] a λ r m h g 3 | <c> [psi-hook] [hash] o 9 b | v 3 | g [delta] o v 7 |
+L09	<d> [ladder-III] [h-loop-y] j [delta] 9 x [psi-hook] t h | <e> [ladder-III] & g 3 o r d r [psi] [psi-hook] [s-loop] [delta] q [s-loop] s t b m 3 [psi] | [hash] m s | y 3 | d [delta] r λ 7 o b t a h | <f> g [hash] k g [s-tail-descender] 6 | 5 k [pi] o |
+L10	v r | d 3 e o r a w [s-loop] q [s-loop] d | d m [hash] 6 [psi] h 3 a g r o b | <g> g | g [delta] c g r o t |
