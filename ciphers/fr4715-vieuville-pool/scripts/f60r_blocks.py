@@ -7,6 +7,8 @@ GAPS-fr4715-vieuville-pool-4, 2 Oct 2026. Disk only.
     python3 tools/reconcile_passes.py witness/f60r_blocks_passA_long.tsv witness/f60r_blocks_passB_long.tsv \
             --out-dir witness/f60r_blocks_rec --keep-dots --keep-plain
     python3 scripts/f60r_blocks.py segment          # reconciled draft (+ witness/f60r_blocks_settled.tsv) -> f60r_blocks_ciphertext.tsv
+    python3 scripts/f60r_blocks.py merge lower      # GAPS-5: the lower block, witness/f60r_lower_pass{A,B}.tsv
+    python3 scripts/f60r_blocks.py segment lower    # -> f60r_lower_ciphertext.tsv (draft witness/f60r_lower_rec, settled f60r_lower_settled.tsv)
     python3 scripts/f60r_blocks.py segcontrol       # the same segmenter on no.58's Tomokiyo dump with its grouping removed
 
 Pass notation (scratch prompt, kept in NOTES.md): digits as written, '.' before a dotted digit, [..] barred digits,
@@ -34,6 +36,9 @@ W = os.path.join(TGT, 'witness')
 KEY = os.path.join(TGT, '..', 'fr4715-montholon-1589', 'keys', 'key_vieuville_nevers.tsv')
 LINES = ['L%02d' % n for n in list(range(6, 15)) + list(range(25, 31))]
 READ_LINES = LINES[:9]   # GAPS-4 read L06-L14 (two passes); L25-L30 has pass A only (b3, first cut) -- the next step
+# GAPS-5 (2 Oct 2026): the lower block, re-cut straightened by scripts/cut_f60r_lower.py with the unlisted row (y~1563)
+# as L28b, read by two fresh blind passes (witness/f60r_lower_pass{A,B}.tsv); `merge lower` / `segment lower`
+LOWER_LINES = ['L25', 'L26', 'L27', 'L28', 'L28b', 'L29', 'L30']
 
 
 def key_codes():
@@ -95,7 +100,30 @@ def overlap_merge(acc, nxt):
     return acc + nxt[best:], best
 
 
+def merge_lower():
+    for p in 'AB':
+        rows = {r['crop'].strip(): r for r in csv.DictReader(open(os.path.join(W, 'f60r_lower_pass%s.tsv' % p), encoding='utf-8'), delimiter='\t')}
+        out = open(os.path.join(W, 'f60r_lower_pass%s_long.tsv' % p), 'w', encoding='utf-8')
+        out.write('line\tpos\ttoken\tconf\n')
+        stats = []
+        for L in LOWER_LINES:
+            acc, conf = [], []
+            for s in range(1, 8):
+                r = rows.get('f60r_%s_s%d' % (L, s))
+                if not r:
+                    continue
+                acc, k = overlap_merge(acc, parse(r['text']))
+                conf.append((r.get('conf') or 'M').strip()[:1].upper()); stats.append(k)
+            lc = 'L' if 'L' in conf else 'M' if 'M' in conf else 'H'
+            for i, (u, unsure) in enumerate(acc, 1):
+                out.write('%s\t%d\t%s\t%s\n' % (L, i, u, 'L' if unsure else lc))
+        out.close()
+        print('pass %s: %d crops, overlaps dropped per join %s' % (p, len(rows), stats))
+
+
 def merge():
+    if sys.argv[2:] == ['lower']:
+        return merge_lower()
     for p in 'AB':
         rows = {}
         # b1..b3: the first cut (images/f60r_blocks3, centred on a straight slope); its s4-s6 crops sit on the wrong row
@@ -192,9 +220,11 @@ def dp(run, codes):
 
 def segment():
     codes = key_codes()
-    draft = os.path.join(W, 'f60r_blocks_rec', 'ciphertext_draft.tsv')
+    lower = sys.argv[2:] == ['lower']
+    name = 'f60r_lower' if lower else 'f60r_blocks'
+    draft = os.path.join(W, name + '_rec', 'ciphertext_draft.tsv')
     settled = {}
-    sp = os.path.join(W, 'f60r_blocks_settled.tsv')
+    sp = os.path.join(W, name + '_settled.tsv')
     if os.path.exists(sp):
         for r in csv.DictReader(open(sp, encoding='utf-8'), delimiter='\t'):
             settled[(r['line'], r['position'])] = (r['sign'], r.get('conf', 'M'))
@@ -207,14 +237,17 @@ def segment():
         if sign in ('', '-', '_'):
             continue
         by.setdefault(L, []).append((sign, conf))
-    out = open(os.path.join(TGT, 'f60r_blocks_ciphertext.tsv'), 'w', encoding='utf-8')
+    out = open(os.path.join(TGT, name + '_ciphertext.tsv'), 'w', encoding='utf-8')
+    if lower:
+        out.write('# fr4715-vieuville-pool no.37 f.60r lower cipher block L25-L30 + unlisted row L28b (y~1563): two blind Opus passes\n'
+                  '# (witness/f60r_lower_pass{A,B}.tsv, GAPS-5, 2 Oct 2026) over scripts/cut_f60r_lower.py crops; segmented as below.\n')
     out.write('# fr4715-vieuville-pool no.37 f.60r dense cipher blocks L06-L14, L25-L30: two blind Opus passes (witness/f60r_blocks_pass{A,B}_*.tsv)\n'
               '# merged and aligned by tools/reconcile_passes.py, disagreements settled in witness/f60r_blocks_settled.tsv, digits segmented into\n'
               '# key codes by scripts/f60r_blocks.py segment (inventory only). token: NN code, .NN dotted/barred word-code, w:word clear word.\n'
               '# conf: the lowest confidence of the digits making the token (H both passes H and agreed; M agreed at M or settled; L unsure).\n')
     out.write('line\tpos\ttoken\tconf\tgloss\n')
     n = 0
-    for L in READ_LINES:
+    for L in (LOWER_LINES if lower else READ_LINES):
         seq = by.get(L, [])
         units = [s for s, _ in seq]
         confs = [c for _, c in seq]
@@ -235,7 +268,7 @@ def segment():
             pos += 1; n += 1
             out.write('%s\t%d\t%s\t%s\t\n' % (L, pos, t, c))
     out.close()
-    print('wrote f60r_blocks_ciphertext.tsv: %d tokens' % n)
+    print('wrote %s_ciphertext.tsv: %d tokens' % (name, n))
 
 
 def segcontrol():

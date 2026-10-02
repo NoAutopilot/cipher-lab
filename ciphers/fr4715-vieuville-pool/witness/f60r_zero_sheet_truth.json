@@ -1,0 +1,272 @@
+[
+{
+"tile": "Z01",
+"cls": "F",
+"line": "L06",
+"seg": 5,
+"unit": 10,
+"x_region": 2352,
+"ctx": "6360935"
+},
+{
+"tile": "Z02",
+"cls": "P",
+"line": "L10",
+"seg": 2,
+"unit": 8,
+"x_region": 686,
+"ctx": "0230340"
+},
+{
+"tile": "Z03",
+"cls": "F",
+"line": "L14",
+"seg": 6,
+"unit": 4,
+"x_region": 2787,
+"ctx": "2360237"
+},
+{
+"tile": "Z04",
+"cls": "P",
+"line": "L07",
+"seg": 4,
+"unit": 25,
+"x_region": 2052,
+"ctx": "3950510"
+},
+{
+"tile": "Z05",
+"cls": "F",
+"line": "L09",
+"seg": 6,
+"unit": 5,
+"x_region": 2804,
+"ctx": "9590160"
+},
+{
+"tile": "Z06",
+"cls": "F",
+"line": "L06",
+"seg": 5,
+"unit": 26,
+"x_region": 2642,
+"ctx": "7370239"
+},
+{
+"tile": "Z07",
+"cls": "P",
+"line": "L12",
+"seg": 5,
+"unit": 18,
+"x_region": 2549,
+"ctx": "3030563"
+},
+{
+"tile": "Z08",
+"cls": "F",
+"line": "L09",
+"seg": 3,
+"unit": 26,
+"x_region": 1576,
+"ctx": "1110563"
+},
+{
+"tile": "Z09",
+"cls": "F",
+"line": "L10",
+"seg": 2,
+"unit": 21,
+"x_region": 949,
+"ctx": "9350951"
+},
+{
+"tile": "Z10",
+"cls": "P",
+"line": "L12",
+"seg": 5,
+"unit": 4,
+"x_region": 2301,
+"ctx": "2610390"
+},
+{
+"tile": "Z11",
+"cls": "F",
+"line": "L14",
+"seg": 4,
+"unit": 25,
+"x_region": 2061,
+"ctx": "6550251"
+},
+{
+"tile": "Z12",
+"cls": "F",
+"line": "L06",
+"seg": 6,
+"unit": 3,
+"x_region": 2756,
+"ctx": "9350952"
+},
+{
+"tile": "Z13",
+"cls": "F",
+"line": "L14",
+"seg": 4,
+"unit": 3,
+"x_region": 1671,
+"ctx": "1170123"
+},
+{
+"tile": "Z14",
+"cls": "F",
+"line": "L11",
+"seg": 3,
+"unit": 29,
+"x_region": 1618,
+"ctx": "6540231"
+},
+{
+"tile": "Z15",
+"cls": "P",
+"line": "L14",
+"seg": 5,
+"unit": 7,
+"x_region": 2299,
+"ctx": "5630573"
+},
+{
+"tile": "Z16",
+"cls": "F",
+"line": "L12",
+"seg": 4,
+"unit": 3,
+"x_region": 1666,
+"ctx": "1070504"
+},
+{
+"tile": "Z17",
+"cls": "P",
+"line": "L13",
+"seg": 4,
+"unit": 24,
+"x_region": 2039,
+"ctx": "3630573"
+},
+{
+"tile": "Z18",
+"cls": "P",
+"line": "L09",
+"seg": 1,
+"unit": 10,
+"x_region": 332,
+"ctx": "3030590"
+},
+{
+"tile": "Z19",
+"cls": "F",
+"line": "L11",
+"seg": 3,
+"unit": 8,
+"x_region": 1232,
+"ctx": "4670237"
+},
+{
+"tile": "Z20",
+"cls": "F",
+"line": "L14",
+"seg": 5,
+"unit": 25,
+"x_region": 2681,
+"ctx": "0390123"
+},
+{
+"tile": "Z21",
+"cls": "P",
+"line": "L06",
+"seg": 2,
+"unit": 19,
+"x_region": 898,
+"ctx": "3350395"
+},
+{
+"tile": "Z22",
+"cls": "P",
+"line": "L08",
+"seg": 1,
+"unit": 21,
+"x_region": 497,
+"ctx": "0230510"
+},
+{
+"tile": "Z23",
+"cls": "F",
+"line": "L10",
+"seg": 3,
+"unit": 20,
+"x_region": 1464,
+"ctx": "9390732"
+},
+{
+"tile": "Z24",
+"cls": "F",
+"line": "L13",
+"seg": 2,
+"unit": 28,
+"x_region": 1073,
+"ctx": "7330652"
+},
+{
+"tile": "Z25",
+"cls": "P",
+"line": "L07",
+"seg": 6,
+"unit": 3,
+"x_region": 2746,
+"ctx": "5650573"
+},
+{
+"tile": "Z26",
+"cls": "F",
+"line": "L08",
+"seg": 6,
+"unit": 15,
+"x_region": 2951,
+"ctx": "5060105"
+},
+{
+"tile": "Z27",
+"cls": "F",
+"line": "L06",
+"seg": 1,
+"unit": 16,
+"x_region": 439,
+"ctx": "2970239"
+},
+{
+"tile": "Z28",
+"cls": "P",
+"line": "L12",
+"seg": 6,
+"unit": 4,
+"x_region": 2782,
+"ctx": "3630323"
+},
+{
+"tile": "Z29",
+"cls": "P",
+"line": "L12",
+"seg": 4,
+"unit": 9,
+"x_region": 1757,
+"ctx": "4930323"
+},
+{
+"tile": "Z30",
+"cls": "F",
+"line": "L12",
+"seg": 1,
+"unit": 16,
+"x_region": 408,
+"ctx": "6330636"
+}
+]
