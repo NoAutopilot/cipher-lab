@@ -1,4 +1,5 @@
 open
+No calendar of State Papers Domestic reaches 1745; Culloden Papers (1815, the government-side Forbes correspondence to 1748; IA cullodenpapersco00lond) djvu full text grepped by this worker (GF-A2-9, 2 Oct 2026) for "Ball", "cypher", "cipher", "Mareschal": three "Ball" hits, all dances, no cipher -- the item is not printed there.
 
 # Z Ball to an unknown recipient, in cipher — TNA SP 36/74/1/60
 
@@ -70,3 +71,48 @@ key or decipher tied to this correspondent or to Nov. 1745 Jacobite intercepts g
 via Jacobite prosopography (jdb1745.net, the Jacobite Database of 1745, surfaced this pass but not queried
 directly) or the government's own intercept-handling records; (3) once imaged, check whether the hand or cipher
 matches other Nov. 1745 SP 36/74 intercepts in the same folder.
+
+## Web and blog check (GF-A2-9, 2 Oct 2026)
+
+Plain web searches (4): `"Z Ball" 1745 cipher letter` (sender + date); `"SP 36/74" cipher 1745 intercepted` (shelfmark);
+`Ball 19 November 1745 letter in cipher Jacobite State Papers Domestic` (date + descriptive title); the folder has no
+clear text to quote, so the fourth query is the blog one below. Hits: TNA catalogue pages (C15669207 = SP 36/78/1/39,
+C16108299, C15668342 = SP 36/73/3/66 O'Brien to Charles Edward in cipher, SP 36/77/1/188 Perth servant's code list,
+C12771605 = SP 36/74/1/72), Jeremy Black's Gale essay on State Papers, a 1724 Brougham-archive decipherment (dspace.ut.ee,
+a different letter), the TNA blog post "secret diplomatic message deciphered after 350 years" (a 17th-century letter,
+not this one), Columbia's Jay papers and a Zodiac page. None carries a decipherment or plaintext of SP 36/74/1/60.
+Blog site searches: `Jacobite 1745 cipher letter intercepted Willes deciphered` on scienceblogs.de (Cipherbrain),
+cryptiana.blogspot.com / cryptiana.web.fc2.com and ciphermysteries.com: Cipherbrain posts on Verne's turning grille, an
+unsolved 1645 cipher, the 1783 Manchester letter, anamorphica and a Confederate cover; Cipher Mysteries' Beale, list and
+review pages. None names Ball, SP 36 or a 1745 intercept, so no comment thread was relevant to open. Local
+`sources/cryptiana/` (wallis*.htm and the rest) grepped for Ball/1745/Willes: nothing on this item.
+Result: no decipherment or plaintext of the item found on the open web or in the three blogs.
+
+## Premise check (GF-A2-9, 2 Oct 2026)
+
+(a) Folder's own mentions -- none. The TNA text is only "Folio 60. Z Ball to [unknown]. In cipher."; Bourdeau's
+hard_targets.md lists it as undeciphered. No decipherment, clear copy or gloss is mentioned anywhere in the folder.
+(b) Other solvers' working files -- shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers
+(2 Oct 2026) grepped for "Z Ball", "SP 36/74", "Ball to": the only hit is cyphersolver's
+research/oldest/scan_2026-09-23/hard_targets.md (the listing already quoted above); no working files, no rendering, no
+key run on it. Nothing in Aymeloglu's repository.
+(c) Physical neighbours -- catalogue only (not digitised); one strong lead. SP 36/74/1/61 (Discovery C12771599, folios
+61-62) is Lord Marischal to Charles Edward Stuart, from Paris, dated 30 Nov 1745 -- which is 19 Nov 1745 Old Style, the
+same day as f.60 -- giving the French troop numbers (6,000 men and 500 dragoons for Scotland; "up to 12,000 men ready
+to sail by 20 [December 1745 NS]"). A Paris letter to Charles Edward catalogued in clear immediately after an undated-
+recipient cipher letter of the same day is the shape of an intercept and its deciphered or translated copy filed
+together; whether f.61 is the clear text of f.60 cannot be settled from the catalogue. Ordering f.60 and f.61-62
+together settles it. The other side, f.58-59 and f.72-73, are Newcastle's own drafts (to Lancashire's deputy
+lieutenants; to Mr Vane), unrelated. The "Ball" channel continues in SP 36/78: f.41-42 "[Unknown] to Mr Ball.
+Arrangements about meeting, written partly in cipher" with f.43-44 "Copy ... [Contents same]" (enclosed in SP
+36/78/1/39, 23 Dec 1745, endorsed "Received from John Lewis on 31 March 1747" at Newcastle's office), and SP 36/78/2/
+121-123 "[Unknown] to Mr Ball. Partially in cipher" with a copy at f.123 (31 Dec 1745). Those letters use cover names
+(Griffith, Crofts, Cadogan, Rivers, Ratcliff, Talon, Blois, Booth, Anderton, Busby); the cataloguer summarised their
+clear parts. Whether "Z Ball" of f.60 is the same Mr Ball, and whether the f.43-44 / f.123 copies carry the office's
+deciphering of the cipher words, is unread.
+(d) Recipient side -- recipient unknown. The Jacobite side's papers for Nov 1745 are the Stuart Papers at Windsor
+(HMC calendar stops in 1718, as noted above) and the government side's printed Culloden Papers (line 2, grepped, no
+Ball or cipher). Next: check Lord Marischal's 30 Nov 1745 letter in print (e.g. a full-text search for "6000" with
+"Marischal" in the Stuart-papers and Elcho/Murray of Broughton editions on IA), then order SP 36/74/1/60-62 and SP
+36/78/1/41-44 together; ~USD 1 for the search.
+
