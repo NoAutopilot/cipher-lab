@@ -1,6 +1,7 @@
 # BnF Français 2980, ff.29-30: two cipher letters of Gabriel de Gramont, bishop of Tarbes (cardinal from 8 June 1530)
 
 partial
+Letters and Papers Henry VIII vol. 4 pt. 3 (IA 11332111bsb) full OCR text read and grepped for 20 May 1530, Villandry and Tarbe by print-check M8 (23 Sept 2026), and Le Grand, Histoire du divorce III pp.394-542 read page by page from the MDZ scan bsb10280117 by the second audit (24 Sept 2026, AUDIT.md): neither prints either letter.
 
 Check-solved sweep, 23 September 2026 (started ~23:19 UTC, this section written ~23:40 UTC; `date -u` read before
 writing). QUEUE row M8. Worker: check-solved M8-M11 (Sonnet, cap $8 across all four targets).
@@ -822,3 +823,40 @@ porteur". Re-divide L01 in the gloss; reading.txt itself is unaffected. Also not
 (second-opinions/chatgpt-2026-09-24.md, section 3), with its unverified conjectures on L04-L05 "tondement"/"fondement",
 L10 "cavsenve" and L11 "do[nn]er".
 - Suggestion (V3b, 24 Sept 2026, from second opinion SO-GRAMONT-F30): f30r L32 reads AVILNON, which the prompt glossed as Avignon; check the L/G sign against the image and the key before any paraphrase says "Avignon" (same pass as eh T/D and the two crosses).
+
+## Web and blog check (GF-A2-3, account 2, 2 Oct 2026)
+
+Queries run (plain web search), hit lists read, plausible hits opened:
+1. `Gramont évêque de Tarbes Villandry Rome 20 mai 1530 lettre chiffre` (sender + recipient + date) -- Wikipedia, FIU
+   cardinals list, catholic-hierarchy, BL catalogue rows; nothing on these letters or their cipher.
+2. `"fr. 2980" OR "français 2980" Gramont chiffre` (shelfmark) -- only unrelated Gramonts (later dukes, a linguist).
+3. `Gramont cipher 1530 Lasry Tomokiyo deciphered letters Villandry` (the folder's own key route) -- HistoCrypt papers
+   (article 402, Sennecey; article 699), Lasry's Wikipedia page, and Cipherbrain's "21 previously unsolved encryptions solved"
+   (opened: Lasry's 2022 list, the only example quoted is Marillac 1550; no Gramont/Tarbes item).
+4. `Gabriel de Gramont cardinal 1530 encrypted letter deciphered Claude OR GPT solves` (model-solve family) -- no
+   announcement on Gramont; only other 16th-century decipherment news (Charles V 1547, Sennecey).
+Blog site searches: `site:scienceblogs.de Gramont cipher Tarbes` (no Cipherbrain page returned);
+`site:ciphermysteries.com Gramont OR Tarbes cipher` (Cipher Mysteries pages returned are Jabron, Valcros, La Buse --
+unrelated); `site:cryptiana.blogspot.com Gramont` (no Cryptiana blog page returned; Tomokiyo's francis.htm on disk
+names both letters as readable with Gramont's 1530 key and gives no reading, as already recorded above). No comment
+thread found discussing fr.2980 ff.29-30.
+
+## Premise check (GF-A2-3, account 2, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **not found for this item.** No gloss on the leaf (check-solved,
+image viewed); the decipherment the folder mentions is of a neighbouring letter (LP iv(3) 6244, Gramont to Brion,
+Bologna 25 Feb 1530, printed deciphered at Le Grand ii.386) and LP 6245 (to Villandry, Bologna 27 Feb, "the original
+was in cipher") -- different dates and place; the second audit read Le Grand III pp.394-542 without a Rome letter of
+20 May. Tomokiyo's francis.htm statement that the letters "can be read" with the key is a key attribution, not a
+reading.
+(b) Other solvers' working files -- **not found.** Fresh clone of dbourdeau/cyphersolver (head 2341682, 2 Oct 2026):
+CATALOGUE.md line 76 still lists "Gramont to Villandry, Rome (BnF fr. 2980 nos. 21-22, ff. 29-30; catalogue 328):
+Gramont 1530 key held (gramont1529)"; targets/gramont1529/ holds readings of fr.3091 no.23 (ff.45r-47v), fr.3071
+no.4/no.7, fr.3083 no.8 and Macon -- no transcription, alias file or decode run of fr.2980. aaymeloglu/unsolved-
+ciphers (head d2800bb): "2980"/"Villandry" hits are digit runs in unrelated files; no Gramont folder.
+(c) Physical neighbours -- **not found.** Canvases f31 (f.29), f32 (f.30) and f33 (f.31, item 23 plain Latin) were
+viewed by the check-solved worker (images/); no clear copy or decipherment bound beside them was recorded; this worker
+did not re-view at native resolution (unreached in this job's box).
+(d) Recipient's side -- **not found.** Villandry (Jean Breton) was secretary of finances at the French court: the
+recipient-side calendars and editions checked by the print-check and audits (LP iv(3), Le Grand, Decrue, the Catalogue
+des actes de Francois Ier IX [411], Hamon's Breton chapter) cite the letter's existence and date only, no content.
