@@ -1,4 +1,5 @@
 open
+CSP Domestic Charles I 1629-1631 (archive.org calendarofstatep0000john_l7u8) full-text search (be-api) by this worker 2 Oct 2026: 'Stanning' and 'Stannyng' 0 hits, positive control 'Sir Henry Vane' 1 hit (Mervyn to carry Vane over, 1631); SP 81 itself has no printed calendar for 1631, so this is the nearest edition, not the series' own.
 
 # Duplicate of a paper sent by Mr Stanning, in cipher — TNA SP 81/37/284
 
@@ -64,3 +65,26 @@ Company agent in the Baltic/German trade is plausible given the context, not che
 imaged, compare f.284's cipher symbols against the deciphered stretches of ff.93/169/216 to test whether it is
 the same office key; (3) HMC reports for correspondents connected to the 1631 Swedish mission (not searched
 this pass, outside this run's hosts).
+
+## Web and blog check (GF-A2-6, 2 Oct 2026)
+
+Plain web searches (WebSearch, 2 Oct 2026):
+1. `"Stanning" 1631 cipher Vane Dorchester` -- TNA catalogue records in SP 81/37 (C7774522, C7774510, C7774505, C7774593, C7774512: Vane-Dorchester 1631, incl. f.216 "with portion deciphered") and british-history.ac.uk node 60372 (opened: CSP Colonial vol. 1 index pp. 566-570, Vane entries only, no Stanning, no cipher). Nothing on f.284.
+2. `"SP 81/37" cipher decipher 1631` -- the same TNA records (ff.163, 193, 216), HistoCrypt and Tartu papers (Heusner von Wandersleben to Oxenstierna 1637; Portuguese 1649) and TNA's blog "Secret diplomatic message deciphered after 350 years" (opened: Perwich to Arlington, SP 78/129 f.180, 1670; no comments section; not this item).
+3. `"Duplicate of paper sent by Mr. Stanning"` (the catalogue's own wording in quotes) -- no exact hit; unrelated Founders Online, Royal Society, Bentham and Stanford results.
+4. `Mr Stanning 1631 Germany agent English intelligence Gustavus Adolphus` -- SSNE entries (William Curtius, William Swann), Swedish Intelligencer, Runeberg; no "Stanning" anywhere.
+
+Blog site searches:
+- Cipherbrain (scienceblogs.de), `Stanning cipher 1631`: only "Who can break this enciphered letter written by Albrecht von Wallenstein?" (2016; a different letter, not English, no Stanning) and unrelated posts.
+- Cryptiana (cryptiana.blogspot.com, cryptiana.web.fc2.com), `Vane 1631 cipher Stanning`: no results.
+- Cipher Mysteries (ciphermysteries.com), `Stanning Vane 1631 cipher`: only Voynich, d'Agapeyeff and fifteenth-century posts; none on this item.
+No plausible hit for this item, so no comment thread bears on it.
+
+Not found: no decipherment, plaintext or prior attempt for SP 81/37/284, and no identification of "Mr. Stanning", on the open web or in the three blogs.
+
+## Premise check (GF-A2-6, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: three same-piece folios TNA catalogues with contemporary decipher work -- f.93 (Vane to "my lord", "with duplicate and decipher", 19 Oct 1631), f.169 (Vane to Dorchester, "3 letters with decipher of one", 3 Dec 1631), f.216 (Vane to [Dorchester], "with portion deciphered", 11/22 Dec 1631). None is said to decipher f.284, and none is online to look at (unreachable); they stay the named calibration lead in REQUEST.md. Not found for f.284 itself.
+(b) Other solvers' working files: fresh shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026) grepped for `stanning`, `SP.?81.?37`: zero matches in either (Aymeloglu cited, not copied). Not found.
+(c) Physical neighbours: no image online (`digitised: false`), so the leaves beside f.284 and any slip cannot be viewed -- unreachable. TNA Discovery (tools/discovery_items.py "SP 81" "SP 81/37" Stanning duplicate, 2 Oct 2026): "Stanning" matches only f.284; the duplicates in the piece are ff.93, 98, 145, 256 (Dorchester to Vane, 31 Dec 1631, the nearest catalogued item before f.284) and f.284 itself. No original of Stanning's paper and no decipher of it is catalogued in SP 81/37. Not found.
+(d) Recipient side: the paper presumably went to Vane or Dorchester. Dorchester's side: CSP Domestic 1629-1631 searched above (Stanning 0 hits). Vane's 1631-32 mission: no printed edition of his dispatches located (web search 4 and the 24 Sept sweep). The Swedish side (Oxenstierna's Rikskansleren Axel Oxenstiernas skrifter och brevväxling) was not searched this pass. Not found in what was read.
