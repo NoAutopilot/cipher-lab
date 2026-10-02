@@ -1,12 +1,37 @@
-{"target": "ciphers/fr4715-vieuville-pool",
- "note": "LIKELY-1, 2 Oct 2026: no.44 f.67r (Montholon, Tours, 15 Apr 1590) decoded against the sibling's key of record, ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv (Tomokiyo's printed Vieuville-Nevers table). Clear words ride through as w:word tokens; a dotted group (leading '.') is an undocumented word-code and stays U.",
+{
+ "target": "ciphers/fr4715-vieuville-pool",
+ "note": "LIKELY-1, 2 Oct 2026: no.44 f.67r (Montholon, Tours, 15 Apr 1590) decoded against the sibling's key of record, ciphers/fr4715-montholon-1589/keys/key_vieuville_nevers.tsv (Tomokiyo's printed Vieuville-Nevers table). Clear words ride through as w:word tokens; a dotted group (leading '.') is an undocumented word-code and stays U. GAPS-2, 2 Oct 2026: job 2 = no.37 f.60r clear lines; key_wordcodes_f60r.tsv holds the period glosses (grade C on this leaf).",
  "jobs": [
-  {"ciphertext": "f67r_ciphertext.tsv", "key": "../fr4715-montholon-1589/keys/key_vieuville_nevers.tsv", "format": "tsv",
-   "line_column": "line", "style": "spaced", "reading": "f67r_reading.txt", "tokens": "f67r_reading_tokens.tsv",
+  {
+   "ciphertext": "f67r_ciphertext.tsv",
+   "key": "../fr4715-montholon-1589/keys/key_vieuville_nevers.tsv",
+   "format": "tsv",
+   "line_column": "line",
+   "style": "spaced",
+   "reading": "f67r_reading.txt",
+   "tokens": "f67r_reading_tokens.tsv",
    "header": [
-     "# fr4715-vieuville-pool no.44 f.67r, decoded against key_vieuville_nevers.tsv (LIKELY-1, 2 Oct 2026)",
-     "# tokens {total}: {HCSMIU} (U = group not in the key: a dotted word-code or an unread digit)",
-     "# letter strings under the key between the clear words; not a reading until the judge and a verifier say so (rules 7, 10)"
-   ]}
+    "# fr4715-vieuville-pool no.44 f.67r, decoded against key_vieuville_nevers.tsv (LIKELY-1, 2 Oct 2026)",
+    "# tokens {total}: {HCSMIU} (U = group not in the key: a dotted word-code or an unread digit)",
+    "# letter strings under the key between the clear words; not a reading until the judge and a verifier say so (rules 7, 10)"
+   ]
+  },
+  {
+   "ciphertext": "f60r_ciphertext.tsv",
+   "key": [
+    "../fr4715-montholon-1589/keys/key_vieuville_nevers.tsv",
+    "key_wordcodes_f60r.tsv"
+   ],
+   "format": "tsv",
+   "line_column": "line",
+   "style": "spaced",
+   "reading": "f60r_reading.txt",
+   "tokens": "f60r_reading_tokens.tsv",
+   "header": [
+    "# fr4715-vieuville-pool no.37 f.60r clear lines (L01-L05, L15-L24, L31), decoded against key_vieuville_nevers.tsv + key_wordcodes_f60r.tsv (GAPS-fr4715-vieuville-pool-2, 2 Oct 2026)",
+    "# tokens {total}: {HCSMIU} (C = word-code read from the leaf's own period interlinear gloss; U = group not in either key)",
+    "# the dense cipher blocks L06-L14 and L25-L30 are not transcribed (next step); not a reading until the judge and a verifier say so (rules 7, 10)"
+   ]
+  }
  ]
 }

@@ -185,19 +185,134 @@ three-pass reconciliation named below). **Requests:** none (0 to gallica.bnf.fr 
 credentials used. No AskUserQuestion. Rule 10: this section reports what the crops show and where no value was found;
 it classifies nothing as new.
 
-## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool, 2 Oct 2026)
-Read so far: 8 of 27 cipher groups decode under the key (29.6 pct of the cipher groups, grade H); the 630 clear-French word tokens read by pass C at H 327 / M 201 / L 102 (witness/f67r_pass_c.tsv), not yet folded into f67r_ciphertext.tsv, whose clear frame is still the A/B reconciliation at 51.4 pct agreement
-- the 14 barred/dotted word-code groups (`.71 .7 .27 .6 .13 .03 .7 .7 .03 .7 .07 .25 .49 .57`) - blocker: not-attempted; GAPS 2 Oct 2026 read all 14 in their clear context (witness/f67r_wordcodes_context.tsv): a slot class for 14 of 14 at grade I, a word value for 0 of 14 (the clear text names no antecedent), and no.58's glosses les/la for .27/.25 do not fit their slots here (HYPOTHESES.md); the table itself is still not on file; next: no.37 f.60 (dépouillement "en partie déchiffrée": a period partial decipherment on the leaf, which can gloss the same word-codes at grade H through tools/interlinear_align.py), ~$9
-- the 4 unbarred groups `6 7 14 15` (L01, L03) - blocker: open-codes; pass C confirms no mark over any of them and no key row exists (the printed table has no 6, 7, 14 or 15); context gives only "discouru [6 7 ...]" and "la nouuelle ... apporte de [14 15]" (a place or person); no.37's decipherment is the same next step
-- the clear-French frame of f67r_ciphertext.tsv and the judge - blocker: not-attempted; pass C (one strong pass) reads it at 84 pct H+M but is not reconciled into the file; next: tools/reconcile_passes.py over passes A, B and C, fold the agreed clear words into f67r_ciphertext.tsv, regenerate witness/f67r_judge_candidate.txt and re-run tools/judge_plaintext.py, ~$1
-- a decisive test of the key on this pool - blocker: too-short; 8 in-key letters on this leaf, the rank-1 gate has 42 pct power at N=8 (LIKELY-1's control); next: no.37 f.60 (dense, ~1,500 signs, Gallica canvas 135 per fr4715-montholon-1589/images/manifest.json) the same way as test 0, ~$9
+## Premise check (GAPS-fr4715-vieuville-pool-2, 2 Oct 2026)
 
-## Escalation (2 Oct 2026, updated GAPS 2 Oct 2026)
-- [x] siblings: no.58's Tomokiyo group transcription used as the known-answer control (z 5.37) and its OWN_GLOSS word-codes checked against the barred groups (2 of 14 covered, both in conflict with this leaf's syntax); the other six open pool leaves not yet imaged
-- [x] clear-pages: this leaf is itself 95 pct clear French; the clear frame transcribed by two blind Sonnet passes (51.4 pct agreement) and one blind Fable pass (H 327 / M 201 / L 102 of 630 words); the 14 word-codes read in that context, slot class only
-- [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py, 8 of 27 groups read at H, shuffled-key test above
-- [ ] print: tools/print_check.py on the leaf's clear phrases now readable at H in witness/f67r_pass_c.tsv (e.g. "Car Il ya Jcy dez factieux qui ne taschent que a obseruer voz actions", "Il ne sy parle que de ... qui pour peu quil face est beaucoup estime et prise"); next: write phrases.txt from the H-grade lines and run it, ~$1
-- [n/a] key-rebuild: the letter key is proven on no.58 and nothing on this leaf contradicts it; 8 letters rebuild nothing
-- [x] image-check: native region fetched once, 96 crops, overlay eye-checked; the date line closes the letter on 67r, so 67v was not fetched; the four disputed sites re-read from named crops (pass D)
-- [x] retry: the second clear-French pass with a stronger reader (pass C, Fable 5.1, 2 Oct 2026) done; a third pass of the same kind is not the next instrument (rule 3's third-attempt clause) -- the next material is no.37's period decipherment
-Verdict: keep going: 3 internal gaps; cheapest next: no.37 f.60 (Montholon, Tours, 12 Dec 1589; dense, ~1,500 signs, "en partie déchiffrée" per the dépouillement; Gallica canvas 135) read the same way as test 0 with its period partial decipherment aligned through tools/interlinear_align.py to gloss the word-codes shared with this leaf, ~$9
+Adversarial pre-reading pass per `.claude/briefs/check-solved.md` "Premise check", run before the Verdict step; the
+question is whether no.44 (f.67) or no.37 (f.60) is already read somewhere. Each of (a)-(d) as found / not found /
+unreachable.
+
+(a) **Decipherments the folder and the dépouillement mention -- opened.** The BnF dépouillement (cached notice,
+`sources/bnf-aem/cc577658_francais4715.html`, item 37: "Lettre avec chiffre, en partie déchiffrée, du Sr DE MONTHOLON.
+Tours, 12 décembre 1589. Au dos cachets aux lettres M. M. I. O. entrelacées") names a partial decipherment of no.37.
+Opened on Gallica (canvas f135, label '60r', `tools/gallica_folio.py` on the cached manifest; one native region fetch
+560,1600,3250,1850 = the pasted-in strip, `images/src_ark_12148_btv1b52509819x_f135_560_1600_3250_1850.jpg`; and f136,
+'60v', at 600 px, `images/pool_f60v_600.jpg`). **Found, and it is not a reading of the letter:** the 600 px pool sample
+(POOL.md, "dense continuous cipher for about 22-24 lines") misdescribed the leaf. At native resolution f.60r is 31 lines
+on a strip: lines 1-5 clear French with barred/dotted word-codes and one digit run, lines 6-14 dense cipher, lines 15-24
+clear French with word-codes (line 15 and 24 mixed), lines 25-31 dense cipher, the clear close and date on line 31. The
+"partie déchiffrée" is a set of small interlinear glosses in a lighter period hand written above word-code groups on the
+clear lines only (13 glosses on 6 lines per the gloss pass below: codes 27, 71, 93, 7, 99, 5023, and two cut by the
+band edge over the line-1 run 66 65 40 25 50 90) -- it glosses the word-code layer, not the dense cipher blocks, and
+nothing on f.60v (blank verso of the mount; the strip's own back with the seals is pasted down). No.44 (f.67) is
+not touched by it. So neither leaf is text-known from (a); the glosses are the known answer for the word-code layer
+this pool's letter key does not cover (nevers.htm names and does not enumerate it).
+The other mentions in this folder (no.58's OWN_GLOSS table from Tomokiyo's alignment; the Desenclos-Lasry PDF; Bourdeau
+PR #9) were opened by LIKELY-1 and read nothing of no.37 or no.44.
+
+(b) **Other solvers' working files for fr.4715 -- not found.** Fresh shallow clones, 2 Oct 2026 (`github.com`, 2
+requests): `dbourdeau/cyphersolver` -- every `4715`/`Montholon` hit is in `research/gallica_sweep` (the cached notice,
+SRU results, page mirrors) or `targets/r2276` (`fr4715_aligned.txt`: BnF fr.4715 **f.2r**, Cardinal de Guise to Nevers
+1586, the Nevers-Piles cipher with its interlinear decipherment -- a different cipher and leaf, used by him as a key
+witness for R2276); no output, rendering or apply-key file for f.60 or f.67, and no key of this pool's family has been
+run on either leaf. `aaymeloglu/unsolved-ciphers` -- the only Montholon/Vieuville/4715 hit is a DECODE catalogue row
+for fr.3975 f.101 (Nevers to La Vieuville, 1587), not these leaves.
+
+(c) **Physical neighbours -- not found.** Dépouillement items around both leaves: f.59 (no.36, cipher with decipherment,
+"le même que celui des nos 9 et 17" -- a different cipher), f.61 (no.38, "Lettre avec chiffre" = Tomokiyo's f.61, the
+Mayenne polyphonic cipher of 1592, `ciphers/fr4715-f61-mayenne-1592`), f.66 (no.43, Mayenne to Nevers 1586, "chiffre et
+déchiffrement", a 1586 cipher), ff.68-69 (nos.45-46, "le chiffre est le même que celui du n° 36"). No neighbour is a
+clear copy or decipherment of no.37 or no.44; f.60v is blank (above); f.67v was not fetched (LIKELY-1: the date line
+closes no.44 on the recto).
+
+(d) **Recipient side -- not found / one lead unreachable.** Internet Archive: `advancedsearch` for the Nevers memoirs
+(Gomberville 1665, "Les Mémoires de Monsieur le duc de Nevers") -- not on archive.org under that title (0 of 11 rows);
+Mémoires de la Ligue (Goulart, 1758 ed., `memoiresdelaligu01-06goul`) -- `be-api` full-text search for "Montholon" in
+vols 3 and 4 (1589-1591): 0 hits each. Google Books API (keyed, `country=US`, 8 queries, one 503 not retried): the
+Gomberville 1665 edition is full view (`2KtPOA-povUC`) but a `filter=full` query for Montholon + Nevers returns no
+volume with the name, and "Montholon" "12 décembre 1589" returns only manuscript catalogues plus **Boltanski 2006, Les
+ducs de Nevers et l'État royal (`dsInahmnar8C`, PARTIAL view)**, whose snippet reads "Montholon, intendant de la maison
+de Nevers à partir de 1589 et jusqu'en 1613 au moins, se voit confier des tâches ... 12 décembre 1589": she cites a
+letter of this date, almost certainly this leaf, in a footnote; whether she quotes its text cannot be read from the
+cloud (books.google.com page view is bot-blocked, CLAUDE.md host table) -- **unreachable**, a LOCAL-QUEUE edition-read
+row is the way to settle it (named in Remaining gaps). The 1712 Anselme Histoire généalogique (full view) names
+Montholon only as garde des sceaux.
+
+**Verdict of the premise check:** no prior reading or plaintext of no.44 or of no.37's cipher located; no.37's own
+period glosses read its word-code layer only and are the known answer used below. Clear to run the step. Rule 10: a
+search result, not a novelty verdict.
+
+## GAPS-fr4715-vieuville-pool-2 (2 Oct 2026, account-4): the Verdict step -- no.37 f.60r, the period glosses as the known answer
+
+**Brief:** `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the step as the previous Verdict line named it. Clock read
+14:19-14:5x UTC 2 Oct 2026. Gallica: 2 requests (the f135 native region 560,1600,3250,1850 through `tools/iiif_lines.py`,
+browser UA; f136 at 600 px) plus the cached manifest. Vision calls 4 of 4: (1) gloss pass, Opus 5.5, 2x crops
+(`witness/f60r_gloss_pass.tsv`); (2) and (3) two value-blind Sonnet passes over the same 48 crops of the 16 clear lines
+(`witness/f60r_pass_a.tsv`, `f60r_pass_b.tsv`) -- **both failed**, every line at L, pass B stopped after 4 lines
+("could not read the secretary hand reliably"), the f.81r shape (MONT-4715, 27 Sept 2026: Sonnet declined 2400-px crops);
+(4) one Opus 5.5 pass over a re-cut at 600-px segments upscaled 3x, 96 crops (`images/f60r_bands3/`, `witness/f60r_pass_c.tsv`,
+5 lines M, 11 L). The third-eye call was therefore not available; the gloss disagreements were settled by the worker's own
+look at 3x site crops (11 own image inspections, counted separately from the four calls, regenerable from
+`scripts/cut_f60r_bands.py` and the band table). Crop cut: `tools/iiif_lines.py --dry-run` gave the 32 row-profile centres
+(pitch 47 px); its first centre is the gloss row above line 1, and midpoint bands split every gloss between two crops, so
+`scripts/cut_f60r_bands.py` cuts each band from 16 px above the midpoint (the interline with its gloss stays with its line),
+the same private-cut precedent as the sibling's `images/regen_f81r_crops.sh`; crops are regenerable and not committed
+(manifest keys `f60r_bands`, `f60r_bands3`).
+
+**What the leaf is.** Not the dense-cipher leaf POOL.md's 600 px sample described: 31 lines, clear French with word-codes
+(L01-L05, L15-L24, L31's close "Ce 12 Decemb[re]"), two dense cipher blocks (L06-L14, L25-L30, about 1,400 signs, not
+transcribed this step) and three digit runs inside the clear lines (L05, L15-L16, L31). The "en partie déchiffrée" of the
+dépouillement is the set of period interlinear glosses above word-codes on the clear lines (Premise check (a)).
+
+**Known answer first (README common tail, 27 Sept 2026).** `witness/f60r_glosses_reconciled.tsv`: 13 gloss rows on 6 lines
+(G 13, C 15 brace words, E 11 sites). Settled values, rule 4 (C = two witnesses and the worker's eye agree letter for
+letter; M = legible in part; L = a few letters): **.7 = Roy (C, two sites L23), .71 = montolon (C, written twice on L01 over
+each 71 -- the sender's own surname), .93 = Mr (C), .27 = nauarre? (M, two sites L01/L20; Opus reads nauarre at both, the
+worker's eye cannot exclude nemours), .99 = bours (M, L24; L21 site bou??)**; legat (M) over the start of the run 50 23 30
+on L20, group unsettled, not keyed; labr?/de? (L) over the L01 run 66 65 40 25 50 90, cut by the band edge; pen? (L) at L22,
+possibly an interlinear insertion; dn (L, pass C only) at L20. `tools/interlinear_align.py align --floor 1` over
+`witness/f60r_pairs.tsv` (13 tokens, 8 values): 4 agree (7 x2, 27 x2), 6 single, 2 doubtful, 1 conflict (99: bou vs bours,
+the L21 site) -- `witness/f60r_align_key.tsv`. Key file: `key_wordcodes_f60r.tsv` (C 3, M 2 values; `_all.tsv` keeps every
+row for the control).
+
+**Rule 3 test, `scripts/wordcode_slot_test.py --shuffles 20`.** Statistic: of no.44's 14 word-code slots
+(`witness/f67r_wordcodes_context.tsv`, slot class at grade I), the ones whose code is glossed on f.60r and whose gloss class
+fits the slot. REAL 6/7 = 0.857 (.71 informant slot = montolon; .7 x4 person slots = Roy; .27 "Que sy [X] a quelque desir" =
+nauarre?; .25 "Que sy [X] peult aller" = de? L, no fit). CONTROL, the gloss values permuted among the glossed codes (every
+row of `_all.tsv`, so non-person classes can land on a slot): mean 3.20/7, max 6/7, **4 of 20 shuffles reach REAL** -- the
+control varies, and the real key sits at its top but not alone (p about 0.2 at N=7). Side by side: REAL 0.857 vs shuffle
+mean 0.457. Not a pass at this N; what carries the result is the per-value agreement (the same code glossed the same way at
+two places on the leaf, 7 and 27 and 71) and the fit of Roy to no.44's four .7 slots.
+
+**Decode (rule 7).** `decode.json` job 2: `f60r_ciphertext.tsv` (pass C tokenised: 441 clear words, 175 cipher tokens) under
+`key_vieuville_nevers.tsv` + `key_wordcodes_f60r.tsv`; `tools/decode_key.py ciphers/fr4715-vieuville-pool --check` exit 0 for
+both jobs: f.60r tokens 175: AB 133 (the digit runs under the printed letter table -- a decode, not read against anything),
+M 11 (the glossed word-codes: the key grade C/M is lowered to M per token because pass C's line confidence is L on those
+lines), U 31; f.67r unchanged, 27 tokens AB 8 U 19. No judge run (no continuous reading claimed; the clear lines are a
+transcription at 5 M / 11 L). No "reading ready" line.
+
+**Carried back to no.44 (`witness/f67r_wordcodes_context.tsv`, new column `f60r_gloss`).** .7 (4 slots) = Roy, .71 = montolon,
+.27 = nauarre?, .25 = de? -- graded M on no.44 (a period gloss on a sibling leaf of the same cipher plus a fitting slot; not
+read from no.44's own leaf), the rest untouched. The no.58 conflict (HYPOTHESES.md: Tomokiyo's '27 = les, '25 = la) now has
+a C/M-grade period witness against it on .27: on this leaf 27 under a bar is glossed as a name at two sites.
+
+**Requests this job.** gallica.bnf.fr 2; archive.org 2 (advancedsearch) + be-api 2; googleapis.com 8 (one 503, not retried);
+github.com 2 shallow clones. No 403/429. No credentials printed. No AskUserQuestion. Rule 10: what was found and where it
+was not; nothing here is called new or first.
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026; updated in place by GAPS-fr4715-vieuville-pool-2, 2 Oct 2026)
+Read so far: no.44: 8 of 27 cipher groups decode under the letter key (grade H) and 4 of its 14 word-code slots now carry a period-gloss value from no.37 at M (.7 x4, .71, .27, .25 = 7 of 14 occurrences); no.37 f.60r: 16 of 31 lines transcribed (pass C, 5 M / 11 L), 5 word-codes glossed at C/M from the leaf's own period glosses (witness/f60r_glosses_reconciled.tsv), the two dense blocks (15 lines, ~1,400 signs) untranscribed
+- the no.37 dense cipher blocks L06-L14 and L25-L30 (~1,400 signs) and the three digit runs - blocker: not-attempted; the letter key reads them (AB 133 on the runs) but no pass has read the blocks; next: two strong-model passes over 3x crops of the 15 block lines (scripts/cut_f60r_bands.py --seg 600 --scale 3, ~90 crops a pass) + reconciliation, then tools/judge_plaintext.py on the decoded blocks against the no.58 known-answer control, ~$12
+- the four L-grade glosses (labr?/de? over the L01 run 66 65 40 25 50 90; legat over 50 23 30 on L20; pen? L22; dn L20) - blocker: illegible; cut by the band edge or a few letters only at 3x; next: one strong-model call on a tall native crop of L01 s3 and the L20/L22 sites (4 crops), ~$2
+- no.44's remaining word-codes .13 .03 .07 .49 .57 .6 (7 of 14 occurrences) - blocker: open-codes; not glossed on no.37; next: the other glossed pool leaves (no.21 f.44, no.35 f.58, no.39 f.62, all "en partie déchiffrée" per the dépouillement) read the same way as this step, one leaf a job, ~$10 each
+- the clear-French frame of f67r_ciphertext.tsv and the judge - blocker: not-attempted; pass C (one strong pass) reads it at 84 pct H+M but is not reconciled into the file; next: tools/reconcile_passes.py over passes A, B and C, fold the agreed clear words into f67r_ciphertext.tsv, regenerate witness/f67r_judge_candidate.txt and re-run tools/judge_plaintext.py, ~$1
+- Boltanski 2006 (Les ducs de Nevers et l'État royal, Google Books dsInahmnar8C, PARTIAL) cites the 12 Dec 1589 letter - blocker: not-attempted; the cloud cannot open the page (books.google.com page view bot-blocked) and no LOCAL-QUEUE row is filed yet; next: file the LOCAL-QUEUE edition-read row for the page citing 12 décembre 1589 and read whether she quotes the text, ~$1
+
+## Escalation (2 Oct 2026, updated GAPS-fr4715-vieuville-pool-2 2 Oct 2026)
+- [x] siblings: no.58's Tomokiyo dump as the known-answer control (z 5.37, LIKELY-1); no.37 f.60r imaged native and its period glosses read (this step): 5 word-codes at C/M, 4 carried to no.44 at M; no.21/35/39 (also "en partie déchiffrée") not yet imaged
+- [x] clear-pages: no.44 is 95 pct clear French (two Sonnet passes + one Fable pass); no.37's 16 clear lines transcribed by one Opus pass at 5 M / 11 L after two Sonnet passes failed at 2x
+- [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py on both leaves (--check exit 0); key_wordcodes_f60r.tsv built from the period glosses
+- [ ] print: tools/print_check.py on the H-grade clear phrases of no.44 (witness/f67r_pass_c.tsv) and on no.37's M lines (L02, L03, L16, L20, L23); next: write phrases.txt and run it, ~$1
+- [n/a] key-rebuild: the letter key is proven on no.58; the word-code layer is being read from period glosses, not rebuilt
+- [x] image-check: no.37 native region fetched once, 32 row centres by tools/iiif_lines.py, bands cut twice (2x, then 3x), overlay eye-checked, 60v fetched (blank); the gloss sites re-read from 3x crops by the worker
+- [x] retry: the Sonnet passes on no.37 failed twice at 2x (A, B) and the re-cut at 3x with a stronger reader (pass C) is the retry that read; a further Sonnet pass of the same shape is not the next instrument (rule 3's third-attempt clause)
+Verdict: keep going: 4 internal gaps; cheapest next: the four L-grade gloss sites on no.37 (L01 s3 run, L20 legat, L22, L20 dn) re-read from tall native crops in one strong-model call, ~$2, then the no.37 dense blocks (two strong-model passes + judge against the no.58 control), ~$12

@@ -1,0 +1,9 @@
+# Word-code values read from the period interlinear glosses on no.37 f.60r (GAPS-fr4715-vieuville-pool-2, 2 Oct 2026).
+# grade C = read the same by two witnesses and the worker eye from the period decipherment on this leaf (rule 4); M = legible in part, candidates in the note; L = a few letters. class: person|place|common|conj|unknown.
+# C/M glosses on a settled two-digit group only -- the decode key
+sign	value	grade	class	count	source	note
+.7	Roy	C	person	2	f.60r interlinear gloss L23,L23	Roy -- the first barred 7 of the line
+.27	nauarre?	M	person	2	f.60r interlinear gloss L01,L20	nauarre? -- six letters, n- -a/e- -re; C reads nauarre at both sites, E cannot exclude nemours; the same word as L20's gloss on the same code
+.71	montolon	C	person	1	f.60r interlinear gloss L01	montolon -- the gloss is written twice on L01, over each 71; spelled montolon (one witness montholon); the sender's own surname
+.93	Mr	C	person	1	f.60r interlinear gloss L01	Mr -- M with superscript r; two dots over the 9 of 93
+.99	bours	M	person	1	f.60r interlinear gloss L24	bours -- final letters unsure; the two witnesses that read it end in -rs/-r?

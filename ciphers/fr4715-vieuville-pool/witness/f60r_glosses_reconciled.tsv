@@ -1,0 +1,17 @@
+# no.37 f.60r period interlinear glosses, reconciled (GAPS-fr4715-vieuville-pool-2, 2 Oct 2026). Witnesses: G = gloss pass (witness/f60r_gloss_pass.tsv, Opus 5.5, 2x crops), C = pass C (witness/f60r_pass_c.tsv, Opus 5.5, 3x crops), A = Sonnet pass A (L throughout), E = the worker's own look at 3x site crops (scratch, regenerable from scripts/cut_f60r_bands.py bands).
+# grade: C = the gloss word is read the same by two witnesses and the worker's eye (rule 4: read from the period decipherment on this leaf); M = legible in part, candidates named; L = a few letters only.
+# class = the value's class for scripts/wordcode_slot_test.py (person|place|common|conj|unknown).
+line	group	mark	gloss	grade	class	witnesses	note
+L01	27	bar	nauarre?	M	person	G n?ub?e L; C n.aua?re; A n.ruba?; E neuba/nerube	six letters, n- -a/e- -re; C reads nauarre at both sites, E cannot exclude nemours; the same word as L20's gloss on the same code
+L01	71	bar	montolon	C	person	G montolon M (x2); C Mu?tilo? + montholon; A monsieur?; E Montolon (clear at the second site)	the gloss is written twice on L01, over each 71; spelled montolon (one witness montholon); the sender's own surname
+L01	93	dot	Mr	C	person	G Mr M; C Mr; E Mr	M with superscript r; two dots over the 9 of 93
+L01	6654	unsure	labr?	L	unknown	G labr? L; C lavr[...] (Lavardin?); E labr/la bre	cut by the band top edge; which of 66 65 40 it covers unsure
+L01	25	dot	de?	L	unknown	C de?; G ?e ?ogg? L	over the run 25 50 90; illegible beyond two letters
+L20	27	bar	nauarre?	M	person	G na?a?e L; C n.ayre; A Reyne?; E nerub?	same word as L01's 27 gloss by shape; C reads nauarre at both
+L20	5023	none	legat	M	person	G legat M; C L?gab/Lyga[b]; E legat (clear)	over the start of the run 50 23 30 25 95; which group it covers is unsure, so not entered in the key
+L20	16	bar	dn	L	unknown	C only ("dn" or "du" above a barred 16 read with the 1 like h)	not seen by G or E
+L21	99	dot	bou??	L	person	G bou?? L; C bou?b/bonh; A boue?; E bo??e	same code as L24; the L24 site is the legible one
+L22	2	bar	pen?	L	unknown	G pe??r L; C pen? + D^v (an interlinear insertion?); E pr??r	unsettled whether this is a gloss on a group at all
+L23	7	bar	Roy	C	person	G Roy M (s1 site); E Roy; C no gloss seen at this first 7	the first barred 7 of the line
+L23	7	bar	Roy	C	person	G Roy M (s3 site); C R^oy; E Roy (clear)	the second barred 7 of the line
+L24	99	dot	bours	M	person	G bour? M; C bours (Bourbon?); A bonne?; E bours	final letters unsure; the two witnesses that read it end in -rs/-r?

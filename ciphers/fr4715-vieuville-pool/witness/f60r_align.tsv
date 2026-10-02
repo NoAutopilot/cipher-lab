@@ -1,0 +1,14 @@
+cipher_line	idx	raw	kind	value	repair	plain_chunk	status
+L01	0	27	num	27		nauarre	agrees
+L01	1	71	num	71		montolon	single-segment
+L01	2	93	num	93		mr	single-segment
+L01	3	6654	doubtful			labr	doubtful
+L01	4	25	num	25		de	single-segment
+L20	0	27	num	27		nauarre	agrees
+L20	1	5023	doubtful			legat	doubtful
+L20	2	16	num	16		dn	single-segment
+L21	0	99	num	99		bou	single-segment
+L22	0	2	num	2		pen	single-segment
+L23	0	7	num	7		roy	agrees
+L23	1	7	num	7		roy	agrees
+L24	0	99	num	99		bours	conflict:bou
