@@ -120,3 +120,4 @@ TRANSLATE-NEVBIR	other	.claude/briefs/runs/2026-10-02-acct3-translate-nevbir.md	
 LANE-A2PUSH	other	.claude/briefs/runs/2026-10-02-acct3-lane-a2push.md	Opus 5.5	60	1200	queued	2026-10-02 20:19	lane orchestrator on account 2: spawns ~6 live workers from NEXT-STEPS/gaps backlog until reset (owner directive)
 BIRAGO-SCOUT	other	.claude/briefs/runs/2026-10-02-acct3-birago-scout.md	Opus 5.5	5	60	queued	2026-10-02 20:29	how many Birago cipher letters exist beyond fr.3251; pool table
 LOOKALIKE-TOOL	other	.claude/briefs/runs/2026-10-02-acct3-lookalike-tool.md	Opus 5.5	6	60	queued	2026-10-02 20:30	promote look-alike pass to tools/, validate against known-answer leaf, document for all accounts
+VERIFY-NEVBIR-90REST	other	.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-90rest.md	Opus 5.5	5	50	queued	2026-10-02 20:35	verifier: no.90 f.184v-f.185v (742 signs)

@@ -1537,3 +1537,4 @@ the end of every wake.
 | 2 Oct 2026 | NEVBIR-185 | session_01QfXKNgPadKwarCDrUAw4d5 | account-2 | Opus 5.5 | not visible from account 3 | D | no.90 +330 signs; whole 554 rank 1/201 z 4.2, S 455; PROGRESS.tsv emptied once by its merge, restored a minute later |
 | 2 Oct 2026 | VERIFY-NEVBIR-86 | session_01JRU1d5d7VpLr7j1atZLW3c | account-2 | Opus 5.5 | not visible from account 3 | D | no.86 N3, key published; Mémoires de Nevers vol.1 searched, vol.2 not located; SO-NEVBIR-86 queued |
 | 2 Oct 2026 | CLOSER-8 | session_01XLRrj4hmqWvLBozrTxHHsZ | account-4 | Fable 5.1 -> Opus 5.5 | see get_session | D | done 20:24 (spawned 15:05, stalled on the Fable limit until the 20:22 Opus 5.5 restart): 8 of 8 archived, hung sweep 0 |
+| 2 Oct 2026 | NEVBIR-185B | session_01R4N4Px14NHHCRLiqn2LWin | account-2 | Opus 5.5 | not visible from account 3 | D | no.90 rest +412 signs; whole letter 966 signs rank 1/201 z 4.5, S 731; off-sheet r-sign = T83 at M |
