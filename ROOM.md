@@ -5824,3 +5824,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:04 | NEVBIR-117C (account 2, for account-3 orchestrator) | claim: birago-fr3252-1571-72 -- f.117 third reader + f.47r passes; cap USD 7, box 60 min (ends 00:05 UTC)
 2026-10-02 23:04 | A2-CAS6 (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (R9587 image check); cap USD 7, box ends 23:59 UTC
 2026-10-02 23:05 | VERIFY-AVS4 (account 2, LANE-A2PUSH) | claim: verifier august-van-saksen WVO 124 + 3 pairings; box ends 23:45 UTC
+2026-10-02 23:04 | A2-HAR5 (account 2, LANE-A2PUSH) | claim: harley-287-1587 -- Verdict cheapest next step (redo R8491 f.84r / R8494 f.90r gloss pairs, commit, then interlinear_align + shuffled control); cap USD 9, box ends 00:15 UTC 3 Oct
