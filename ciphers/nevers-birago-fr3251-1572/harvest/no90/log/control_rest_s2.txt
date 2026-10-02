@@ -1,0 +1,15 @@
+f184v_L01	___do_olesecutioned
+f184v_L02	a_i_a_io_haue_eintesoc_lacas
+f184v_L03	me_oransi_estainqual_sos_etoconi
+f184v_L04	b_stamoltisto_ditietdubitant
+f185r_L01	intensosit_ouinolete_esueaseto
+f185r_L02	s_iraglioinfauo_ede_ibugonottiaqualgua_gia
+f185r_L03	lauisaihaue_esc_iti_f_ancesco
+f185r_L04	ga_ate_o_ha_aip_esentatole_ete
+f185r_L05	_e_sop_aintensentemenouenutone
+f185r_L06	sc_itomicosaalcuna_sncoha_echies
+f185r_L07	todana_i_souentione__anie_a_st_
+f185r_L08	_tutoa_a_tato_
+
+TARGET: 330 signs, 0 nulls, 296 letters; real key -0.8891; 200 shuffled keys mean -1.5266 sd 0.1643 max -1.1230; z 3.88; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.12: real key rank 1 in 17/20; z median 3.16 min 1.19
