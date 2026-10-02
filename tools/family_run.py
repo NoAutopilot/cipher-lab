@@ -51,6 +51,10 @@ Families (tools/families/<name>.py, each wraps an existing tool, see the package
                      = one letter or one whole word / <NAME> code (--param codes=marked|topk:N|all vocab=1000 err=0.064);
                      runs bounded by words, mixed spaced/unspaced trigram score; control on the target's run lengths with
                      the target's code token share and code-type count; token accuracy, per class printed (letters/codes)
+  phased_homophonic  two-digit homophonic in unsegmented digit runs with stray single digits (BIRAGO-NUM3 2 Oct 2026): phase
+                     resampled jointly with the key (Viterbi re-cut under trigram + P(pair|letter), alternating with
+                     homophonic_anneal); control on the target's run lengths (--param cells=40 strays=0.05; --cipher FILE
+                     --tokens space, one run per line); recovery = right phase AND right letter
 
 Modes: --target-only-if-gated (default) runs the control, then the target only if the gate is met;
 --control-only runs the control alone (calibration) and logs it. --seeds N runs the control on seeds

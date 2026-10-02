@@ -109,3 +109,20 @@ Full record: `../birago-fr3252-1571-72/NOTES.md`, section "f.119 + f.100r: pre-r
   so the joint anneal (step 2) was not run.
 - Premise risk: in Birago's 1572 key names are single word codes; here they may sit in the dotted two-figure groups.
 Status unchanged (`open`): no reading, no token graded. Novelty not classified (rule 10).
+
+## Joint phase+key anneal, pooled with f.100r (BIRAGO-NUM3, 2 Oct 2026)
+
+Full record: `../birago-fr3252-1571-72/NOTES.md`, section "f.119 + f.100r: joint phase+key anneal". Files are in
+`../birago-fr3252-1571-72/num/joint/`; PREREG.md was pushed in d27489c6 before any run. The instrument is the new
+family `tools/family_run.py --family phased_homophonic`, which resamples the phase of every digit run jointly with the
+key. Both rows are in `HYPOTHESES.md`. Summary:
+- Control: synthetic it16dip, 48 runs / 985 digits, 5% strays. At the pre-registered 55 cells it reads **0.386**
+  (0.100-0.827), below the 0.6 gate. At 40 cells it reads 0.645 (0.090-0.934), which is curve only, not gating.
+- The target was not run. Seeds lock into either the right phase or a whole-stream phase flip. At 55 cells the true
+  cut and the flip score level on the joint objective, so this is a model limit at this length, not a search limit.
+- This is the third attempt at this key. The instrument is retired for this hypothesis (untested-by-this-tool, not
+  refuted). Next: a decoy-null, joint-consistency crib test (~$2), or the dotted groups read as name codes, or a third
+  letter in the same key.
+Status unchanged (`open`): no reading, no token graded. Novelty not classified (rule 10). Credit: D. Bourdeau
+(cyphersolver, f.119 transcription and the matched-control negative this builds on).
+

@@ -414,20 +414,60 @@ the dotted groups as nomenclator codes. Their positions against the clear text a
 
 Cost and requests: disk only, no network, no subagents. Novelty not classified (rule 10).
 
+## f.119 + f.100r: joint phase+key anneal (BIRAGO-NUM3, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-birago-num3.md`. Files in `num/joint/`. `PREREG.md` and the input
+`runs_digits.txt` were pushed in d27489c6 before any control or target run. Prior work cited: Bourdeau's f.119
+transcription (cyphersolver `targets/birago`, MIT / CC BY 4.0), as in BIRAGO-NUM.
+
+**Instrument.** This is a new `tools/family_run.py` family, `phased_homophonic` (`tools/families/phased_homophonic.py`,
+offline test `tools/tests/test_phased_homophonic.py`). It does not fix the phase first. Each restart starts from the
+num/phase.py hard-EM cut. It then alternates two steps. (a) It anneals the key on the current pairs with homophonic_anneal,
+seeded with the last key. (b) It re-cuts every digit run by Viterbi under the current key, scoring trigram context plus
+log P(pair | letter); stray digits are nulls. The input is 48 runs and 985 digits, phase not fixed; the corpus is it16dip.
+In the control, a pair counts as recovered only when both its phase and its letter are right. The settings (16 restarts,
+100000/30000 iterations, 8 rounds) were tuned on dev seeds 101 and 102 only (`num/joint/dev_log.md`). That dev work
+also found and fixed a miscalibrated objective: with a plain P(pair) prior, the true cut scored below a wrong one.
+
+**Control first** (rule 3). Synthetic it16dip text in the target's own 48 run lengths, 5% stray digits, cells over the
+target's own eight digits (no 6 or 7), 3 seeds. The pre-registered gate is a mean of 0.6 at 55 cells:
+
+| cells | seed 1 | seed 2 | seed 3 | mean | role |
+|---|---|---|---|---|---|
+| 55 | 0.827 | 0.100 | 0.232 | **0.386** | gate (pre-registered): **not met** |
+| 40 | 0.912 | 0.090 | 0.934 | 0.645 | curve only, not gating (`num/joint/control_40cells.txt`) |
+
+**Target: not run** (CONTROL BELOW GATE; both rows in `../birago-nevers-1571/HYPOTHESES.md`). Each seed locks into
+either the right phase (0.83-0.93) or a whole-stream phase flip (0.00-0.23). On dev seed 101 at 55 cells, the true cut
+and key score -2142.9 and the solver's flipped answer scores -2136.5. Those are level, so at ~476 pairs this objective
+cannot tell the true phase from the flip; more restarts would not fix that. An anneal given the true cut reads 0.918 on
+the same seed (`num/joint/oracle_check.py`). At 40 cells the design reads on 2 of 3 seeds. The target's own pair-type
+entropy sits between the 40- and 62-cell controls, and its effective cell count is not known (BIRAGO-NUM).
+
+**Verdict: non-test, not a negative.** This was the third attempt at a key for the Nov 1571 numerical system (fixed-phase
+homophonic, then the crib drag, then the joint anneal). By rule 3's third-attempt clause, `phased_homophonic` is
+**retired for this hypothesis at this length**, logged as untested-by-this-tool, not refuted. Only new material or a
+different instrument reopens it. Instruments not yet tried: (1) a crib test with a decoy null and joint consistency
+across several names (BIRAGO-NUM2 design note 2, ~$2, disk only); (2) the dotted two-figure groups read as nomenclator
+codes against the surrounding clear text (design note 3). A third letter in this key would raise N, and with it the
+objective's power to separate the phases. No token is graded. Novelty is not classified (rule 10).
+
+Cost and requests: disk only, no network, no subagents.
+
 ## Remaining gaps (NEVBIR-3252-B, 2 Oct 2026)
 Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 277 signs decoded, all M/U, not licensed; f.47r: 157 signs tested, not licensed.
 - f.117r reader error 0.25 - blocker: not-attempted; no third reader this job (rate limit allowed_warning); next: look-alike pass on the T60/T86, T83/T81, T95/T51/T65, T90/T45 tiles using the 1572 confusion map, or a blind third reader, then re-run harvest/f117/run_tests.sh at the new error, ~$3
 - f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
 - f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; re-cut done (images/f47/recut, 17 lines x 3); next: two blind passes in 3-4 line chunks + reconciliation against the Ceppo sheet with the CEPPO-SPLITS shapes as known answer, then re-run decode_control on the whole block, ~$10
 - f.47r reader error 0.44 - blocker: not-attempted; sheet lacks three forms the readers saw; next: add the barred 8 / dot-group / plain-triangle forms to the sheet before the next passes, ~$2
-- f.100r + f.119 (565 + 483 digits, same key, controlled) - blocker: not-attempted; fixed-phase homophonic run a non-test at the phase error (BIRAGO-NUM), pre-registered crib drag weak by its own control and its one accept void by decoys (BIRAGO-NUM2, num/crib/); next: joint phase+key anneal with its own control at N=476, 40-55 cells, 5% strays, ~$6
+- f.100r + f.119 (565 + 483 digits, same key, controlled) - blocker: not-attempted; fixed-phase homophonic a non-test at the phase error (BIRAGO-NUM); crib drag weak by its own control (BIRAGO-NUM2); joint phase+key anneal retired for this hypothesis, control 0.386 at 55 cells below its 0.6 gate, a phase-flip tie in the objective (BIRAGO-NUM3, num/joint/); next: decoy-null joint-consistency crib test (several names agreeing on shared codes, calibrated on the same synthetic set), ~$2
 
 ## Escalation (NEVBIR-3252-B, 2 Oct 2026)
 - [x] siblings: fr.3252 f.36-37 witness and the fr.3251 1572 group's sheet, maps, clerk key and controls used
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
 - [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested: French, z 2.8-3.1, not licensed at 0.25), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; BIRAGO-NUM2: crib drag weak by control, no crib-backed value; next joint phase+key anneal)
+- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM: same key shown, homophonic run a non-test at the phase error; BIRAGO-NUM2: crib drag weak by control, no crib-backed value; BIRAGO-NUM3: joint phase+key anneal [retired] for this hypothesis, instrument tools/families/phased_homophonic.py, control 0.386 below gate; next decoy-null joint-consistency crib test)
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r at lower reader error; f.47r whole block
 Verdict: keep going: 5 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3
