@@ -343,6 +343,19 @@ slips on facing pages), short runs no.73/85 a non-test even pooled; account 3's 
 hard until its reset. Check-in 14 armed for 21:0x UTC. Parent 2 at about 675k context, cost about 37.5; hand-over to a
 fresh parent at about 800k.
 
+**Check-in 14 (20:4x UTC 2 Oct, parent 2, on Opus 5.5): rolling refill to 6 live per parent.md "Keep slots full"
+(owner + account-3 flag 20:46).** Wave 5 all done and ledgered (costs shown are the Opus segments after the 20:22 restart).
+Moves: fr3986-nevers-revol-1593 -- the no.60 atlas CLEARED its gate (held-out 65/65 on whole-line crops vs shuffle p95
+55.4), so f.198 can now be read; pro3055-clinton-1779 -- the p.102 period decipherment of Carleton's 25 Sept 1782 letter
+read at H 218, and its cipher uses the same 1778 key as 2894; moray-wood -- a 1550-1600 Scots corpus (sco16) built, judge
+cannot decide; na-suriname images 42 -> 15 MB. Live from 20:49 UTC, all Opus 5.5: GAPS3-fr3986 (web/blog check + f.198
+verso passes, cap 14; session_015uX1Vrr8ktWkjbyHtF2GeH), GAPS8-pro3055-clinton (3868 body, cap 12;
+session_01MdxHcb7HG25npGdDsBevq4), GAPS7-moray-wood (lexical fit of the 16 M/I values vs a shuffled-candidate control,
+cap 7; session_01N3udPn28E5DVaUeFYfYR8t), GAPS8-na-suriname (gap 3, 4.VEL 2061, cap 10; session_017ot9sa7WfpnriDY4shwELE),
+GAPS-fr4715-vieuville-pool-4 (no.37 dense blocks, Opus passes, no.58 control first, cap 20;
+session_01XYtebGkfv3pcr5tFe3x8Pj), GAPS7-na-schonenberg (12-code image pass, readers blind to the inferences, cap 22;
+session_01Nmv3CUrvjHYaqPrYJzstr4), CLOSER-9 (session_01Gj... see ROOM). Slot check re-armed every 15 min while workers run.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
