@@ -262,6 +262,10 @@ spawning. Parent 2 at about 430k context, cost about 16.4.
 old), so it holds the role; `allowed_warning` on this session, no workers, nothing to ledger. Check-in 9 armed for 12:19 UTC
 (trig_016HdMUB584VzYZZA4f5xjJB). Parent 2 at about 450k context, cost about 17.4.
 
+**Check-in 9 (12:2x UTC 2 Oct, parent 2):** unchanged -- `allowed_warning`, no workers, nothing to ledger; account-3's
+newest line 11:03 UTC (78 min), its 150-minute mark is 13:33 UTC. Check-in 10 armed for 13:07 UTC
+(trig_01A6aLXhwnk8uS6fQvFcxv92). Parent 2 at about 465k context, cost about 18.5.
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
