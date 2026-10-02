@@ -988,6 +988,10 @@ sits between the shuffled decodes and real_p05, the same shape as no.87's near-m
 **Date.** The endorsement "alli 7 di Gennaro 1572" (images/manifest.json) against Tomokiyo's 7 February: not settled here.
 
 Next: value-fit of the recurring off-sheet signs (disk only), then a separate verifier on the f.139v reading (flagged in ROOM).
+
+**Verifier (VERIFY-NEVBIR-139V, 2 Oct 2026): N3, key published; AUDIT.md section "no.71".** No decipherment slip on canvases
+140-142 at native size. Every cipher line on f.139v runs into the gutter (canvas 141, x about 4310): line-end signs are
+conditional on the image (rule 2). decode_key --check and the control (seeds 7, 11: z 3.60/3.57, rank 1/201) reproduce.
 Requests: gallica.bnf.fr 4. Subagents: 3 Sonnet (2 passes + 1 adjudication).
 
 ## NEVBIR-170 (2 Oct 2026, account 2 for the account-3 orchestrator): no.86 (27 Aug 1572) located, f.174r run a non-test at 85 signs

@@ -140,3 +140,5 @@ ciphers/intercepted-royalist-1646	("intercepted" OR "intercepted letter") AND "1
 ciphers/intercepted-royalist-1646	"resolved to expect your Majesty"	2026-10-02	queued	
 ciphers/nevers-birago-fr3251-1572	"Birago" AND 1572 AND (Nevers OR Saluzzo OR Saluces) AND (cipher OR cifra OR chiffre)	2026-10-02	queued	
 ciphers/nevers-birago-fr3251-1572	"lettere inhibitorie al gran Comendatore"	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"Birago" AND "Nevers" AND 1572 AND (cipher OR chiffre OR cifra)	2026-10-02	queued	
+ciphers/nevers-birago-fr3251-1572	"procedere ordinario di chi"	2026-10-02	queued	

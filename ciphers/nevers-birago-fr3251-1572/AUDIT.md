@@ -322,3 +322,107 @@ api.semanticscholar.org 1, github.com 2 clones. No credentials printed. Unreacha
 
 SECOND-OPINIONS-QUEUE.tsv: row `SO-NEVBIR-F184` filed in this session (N3, CLAUDE.md "Operating model"), prompt
 `second-opinions/PROMPT-chatgpt-f184.md`.
+
+---
+
+# AUDIT: no.71 cipher passage, f.139v foot (VERIFY-NEVBIR-139V, 2 Oct 2026)
+
+Verifier: parent worker VERIFY-NEVBIR-139V (account 2, for the account-3 orchestrator), a session separate from
+NEVBIR-138, the worker that produced the reading. Brief `.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-139v.md`.
+Clock read with `date -u` at 17:11 and 17:18 UTC, 2 Oct 2026.
+
+**Claim under audit** (brief, from NOTES.md "NEVBIR-138" and PROGRESS.tsv): Lodovico Birago to the duc de Nevers,
+BnF fr.3251, no.71 (Saluzzo, 7 Feb 1572 per Tomokiyo), cipher at the foot of f.139v (canvas 141), 161 signs: the
+printed 1572 key + T42=m ranks 1/201 against value-shuffled keys, z 3.60; grades S 116, M 24, U 21; judge FAIL
+-1.159 vs real_p05 -0.955 (commit 29e2a43f).
+
+## Verdict
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| no.71 cipher passage, f.139v foot, 5 lines, 161 signs as transcribed (Birago to Nevers, Saluzzo, 7 Jan or 7 Feb 1572) | partial cryptanalytic reading: about 116 S-grade letters, readable stretches only ("d'andarsi a consultare et cercar ... contra ... il Cocinato ... quanto gli fa che ... sel servitore") | **N3** | published (Tomokiyo's 1572 table) + one sign value fitted by us (T42=m, from no.87's period sheet) | not known: no period decipherment on the leaf or its neighbours, none in print located | medium (search) / low-medium (reading: judge FAIL, 13% unkeyed signs, line ends lost in the gutter) |
+
+**N3, not N4.** No prior plaintext or decipherment of this passage was located after the logged search below. N4 needs
+the principal editions covered; the one edition most likely to print a Birago-Nevers letter, Gomberville's *Mémoires de
+Monsieur le duc de Nevers* (1665), was not opened page by page here (no Internet Archive copy; Google Books full-text
+queries inside the title returned no "Birago"/"Birague" hit, which is a weak negative on OCR'd old type), and the JSTOR
+families are queued, not answered. N5 not sought.
+
+**Key source: `published`.** Tomokiyo reconstructed the 1572 Nevers-Birago table from no.87's attached decipherment
+(`sources/cryptiana/web/nevers.htm`, live page re-fetched this session, unchanged for this section); T42=m is our one
+fitted value (GAPS3), confirmed on no.87's period sheet. This is an independent application of a published key to a
+letter that key's author lists without decipherment, not a key recovery: in the words of rule 10, not an `ours` key.
+
+**Safe sentence.** "Applying Tomokiyo's published 1572 Nevers-Birago key (with one sign value fitted against the period
+decipherment of no.87) to a value-blind transcription of the five cipher lines of Birago's letter no.71 (BnF fr.3251,
+f.139v), we get a partial reading (about 116 of 161 signs at grade S; the key ranks first of 201 shuffled keys, z 3.6);
+no prior decipherment of this passage was located in Tomokiyo's catalogue, the two solver repositories, the BnF
+manuscript itself (ff.138v-141r checked for slips) or full-text searches of Internet Archive and Google Books on
+2 Oct 2026."
+
+**Unsafe sentence.** "We deciphered Birago's letter of February 1572" (the reading is partial, its judge FAILs, about one
+sign in eight is unkeyed and line ends are lost in the gutter) -- or any wording with first, new, previously unread,
+unpublished. An outward note on this item would need N4 (the 1665 Mémoires read, JSTOR answered) and a cleaner reading.
+
+## Slip and decipherment check (brief item 1)
+
+Canvases 140, 141 and 142 fetched once at native size (8514x5847, 8518x5847, 8515x5850; Gallica IIIF `native.jpg`) and
+looked at whole, then at native crops of the cipher block, the space below it, the head of canvas 140's left page and
+the foot of canvas 142's right page:
+- canvas 141 (f.139v | f.140r): the five cipher lines carry no interlinear or marginal gloss, no pasted slip; the space
+  below is blank but for bleed-through. f.140r opens the next letter ("Ill.mo et Ecc.mo sig.", "E molti giorni...").
+- canvas 140 (f.138v | f.139r) and canvas 142 (f.140v | f.141r): prose only; the faint script at the foot of f.141r is
+  show-through of a subscription from the other side, not a decipherment.
+So, unlike no.77 (slip on f.151v) and no.82 (slip on f.161v), no.71 has no decipherment aid on or beside the leaf, and no
+known-answer check is possible for it. HARVEST-D2 and NEVBIR-138 saw canvases 139-141 at 1000-2000 px only; this pass is
+the native-resolution check the brief asked for.
+
+**New transcription caveat found here.** At native size every cipher line on f.139v runs into the binding: on canvas 141
+the last visible sign of L02 ("="), L04 ("e+") and L06 ("m") is cut by the gutter shadow at about x=4310, and the prose
+line above ends "di chi fall[i]" the same way. passC records the half-visible last signs (L02 ends X_EQ) but any sign
+wholly inside the gutter is unseen, so each line end (and any word spanning it: "cercarn·" / "·oreea", "pf" / "tu") is
+conditional on the image (rule 2). Line lengths 31-34 signs suggest at most a sign or two per line; a person at the
+volume, or a gutter-opening image, would settle it.
+
+## Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --check`: exit 0, "reading up to date"; f139v job
+"tokens 161: M 24, S 116, U 21" (H 0, C 0, I 0), identical to `harvest/reading_f139v.txt` and the claim.
+
+Control re-run at two fresh seeds (`../ceppo-nevers-fr3251-1570s/harvest/decode_control.py f139v/passC.tsv --map
+sign_id_map_1572_fit.json --windows 0`): seed 7 real -0.998, 200 shuffles mean -1.585 / max -1.239, z 3.60, rank 1/201;
+seed 11 mean -1.585 / max -1.234, z 3.57, rank 1/201. NEVBIR-138's figures hold. The power control (10/20 at err 0.15)
+was not re-run; it says a miss would have been uninformative, and the hit is the informative direction.
+
+## Search log (2 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical catalogue | Tomokiyo nevers.htm, local mirror (`sources/cryptiana/web/nevers.htm`, 2 Oct 00:10) and the live page (cryptiana.web.fc2.com/code/nevers.htm, fetched 17:1x UTC) | "f.138 (no.71) Saluzzo, 7 February 1572", no "(with decipherment)"; same on both |
+| (b) sender/recipient correspondence | Google Books (keyed, `country=US`): "Lodovico Birago" Nevers 1572; "Louis de Birague" Saluces 1572 lettres; "Birago" lettere Saluzzo 1572 Nevers; "Lodovico Birago" lettere 1572 Coconato; "Memoires de monsieur le duc de Nevers" Birago; Birago / Birague intitle:memoires intitle:nevers | BnF catalogue des manuscrits français (1874/1895), DBI, Grande encyclopédie, Piccolo archivio storico di Saluzzo (1901), Storia di Saluzzo (1911); the two 1665 Mémoires volumes are listed but return no Birago/Birague hit inside; no edition of the 1572 letters |
+| (c) documentary editions, Italian/Savoyard | IA full text (be-api fts): Birago Coconato; Birago "Voluera"; "conte da Coconato" 1572; "Birago" Nevers Saluzzo 1572 cifra; IA metadata search for the Mémoires de Nevers (only the 1812 novel "La princesse de Nevers") | Coconato/Voluera hits are Piedmontese histories and armorials (Historiae Patriae Monumenta, Ricotti, Segre's Emanuele Filiberto, consegnamenti d'arme); no snippet carries this letter |
+| (d) holding archive | Gallica canvases 140-142 at native (above); BnF finding aid cc49712p via Tomokiyo | no decipherment in the MS |
+| (e) phrase search, decoded text and the clear text beside it | IA fts "andarsi a consultare" (12 hits: 20th-c. newspapers, a 1963 journal), "procedere ordinario di chi" (0), "manchera di giustitia" (11: Medici-court and unrelated); Google Books "andarsi a consultare" Birago (0), "procedere ordinario di chi falle" (18, all unrelated: 1635 devotional, 1773, modern) | no hit on this letter |
+| (f) solver repos, DECODE | dbourdeau/cyphersolver cloned 2 Oct 2026 (head 1 Oct 2026 16:31 -0500), grepped 3251/birago/btv1b9060248g: `targets/birago/` is f.119 (13 Nov 1571, figure cipher) and names f.138 only as a symbol-cipher sibling, no reading; `targets/nevers1574/` is fr.3315. aaymeloglu/unsolved-ciphers cloned (head 27 Sept 2026), `catalogue/decode-catalog.csv`: Birago records are fr.3619/3621/3623 (1591-92), no fr.3251 | no reading of no.71 |
+| (g) scholarship | OpenAlex (keyed): "Lodovico Birago Nevers", "Birago Nevers cipher 1572", "Ludovico Birago Saluzzo 1572" (8 records, none on this correspondence); Semantic Scholar (keyed): "Lodovico Birago Saluzzo" (4 irrelevant), "Birago Nevers cipher" 429, not retried; JSTOR: two rows appended to JSTOR-QUEUE.tsv (family i: Birago AND Nevers AND 1572 AND cipher; family ii: the clear-text phrase "procedere ordinario di chi", no cipher keyword) | nothing on the 1572 Nevers-Birago letters |
+
+Unreachable or not done: the 1665 Mémoires de Nevers page by page (no IA copy found; Google Books in-title queries only);
+Semantic Scholar one query (429). Requests: gallica.bnf.fr 3, cryptiana.web.fc2.com 2 (one redirect), github.com 2 clones,
+be-api.us.archive.org 7, archive.org advancedsearch 3, googleapis.com 14 (5 answered 503, two retried once after a pause),
+api.openalex.org 3, api.semanticscholar.org 2. No credentials printed.
+
+## Postmortem and corrections
+
+1. **Gutter loss not recorded.** NEVBIR-138 cut the lines from a 1200 px overview and its crops, and did not note that
+   every cipher line ends in the binding. Added above; NOTES.md now carries a one-line pointer. The reading's line-end
+   letters are conditional on the image.
+2. **Date.** The endorsement (images/manifest.json, "alli 7 di Gennaro 1572") and Tomokiyo's "7 February 1572" disagree;
+   still not settled. The safe sentence names neither month alone.
+3. **Content consistency is not confirmation.** "il cocinato" matches the Conte da Coconato in the letter's own clear
+   prose; NEVBIR-138 already says this; keep it so outward.
+4. **Labels correct.** The claim's "printed 1572 key + T42=m" correctly names the fitted map (the mislabel the no.87
+   audit corrected does not recur here). No first/new/novel/unread/solved/cracked wording in the NEVBIR-138 section
+   (grepped).
+5. PROGRESS.tsv row "Birago 1572 f.138": audit column set from this file.
+
+SECOND-OPINIONS-QUEUE.tsv: row SO-NEVBIR-139V appended (N3), prompt `second-opinions/PROMPT-chatgpt-f139v.md`.
