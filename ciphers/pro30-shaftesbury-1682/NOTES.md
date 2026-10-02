@@ -104,7 +104,7 @@ than a standalone TNA order.
 Waits on: a TNA page-copy order for PRO 30/24/7/505 (REQUEST.md, since the 24 Sept 2026 check-solved sweep,
 now folded into the consolidated TNA batch, ASKS row 73).
 
-- S: search PRO 30/24 for the indorsement's own 'book of letters, entered November 1682' fair-copy letter-book -- named next step, not chased -- tools/discovery_items.py.
+- [done 2 Oct 2026, A2-SHA] S: search PRO 30/24 for the indorsement's own 'book of letters, entered November 1682' fair-copy letter-book -- tools/discovery_items.py; no 1st Earl letter-book for 1682 catalogued (see "## PRO 30/24 letter-book search (A2-SHA, 2 Oct 2026)").
 - S: re-search Christie's vol. 1/2 (already fetched) for the indorsement's exact phrase 'book of letters'/'November 1682'; only Percivall/Perkins/Fisher/cypher were searched so far.
 - S: identify and search another printed Shaftesbury letter collection (e.g. the 1830 Original Letters of Locke, Sidney and Shaftesbury), not yet located this pass.
 
@@ -130,3 +130,40 @@ Not found: no decipherment, plaintext or prior attempt for PRO 30/24/7/505 on th
 (b) Other solvers' working files: fresh shallow clones (2 Oct 2026) grepped for `shaftesbury|percivall`, `PRO.?30.?24`: dbourdeau/cyphersolver hits are only incidental text in source dumps (`targets/perwich/camden1903.txt`, `targets/harley1582r8499/lit/harlcat2.txt`, a Napoleon source), not this item; aaymeloglu/unsolved-ciphers none (cited, not copied). Not found.
 (c) Physical neighbours: no image online (`digitised: false`) -- leaves either side, facing page and slips unreachable. The same Discovery query shows "Percivall" elsewhere only as Peter Percivall of London, mortgagee with Shaftesbury in 1681 and 1683 (PRO 30/24/46B/101, /103), and "Mr. Percival's note of my exchange at Knowlton" (PRO 30/24/4/172, 1668) -- a possible identification of the addressee, not a decipherment. Not found.
 (d) Recipient side: no printed correspondence of a Percivall, Perkins or Captain Fisher of 1682 located in the searches above. Christie vol. 2 (the 1st Earl's printed life and letters) names none of the three as correspondents. Not found in what was read; the 1830 *Original Letters of Locke, Algernon Sidney and Lord Shaftesbury* (T. Forster) was not searched this pass.
+
+## Intake gate (A2-SHA, 2 Oct 2026)
+
+`python3 tools/intake_gate_check.py pro30-shaftesbury-1682`:
+```
+pro30-shaftesbury-1682: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+exit 0.
+
+## PRO 30/24 letter-book search (A2-SHA, 2 Oct 2026)
+
+Step: the While-waiting item "search PRO 30/24 for the indorsement's own 'book of letters, entered November 1682'
+fair-copy letter-book" (tools/discovery_items.py, series "PRO 30/24", keep prefix "PRO 30/24", one term per call,
+2 s apart; Discovery API, 11 calls). Hits per term (item references, whole collection, not only piece 7):
+
+| term | hits | what they are |
+|---|---|---|
+| "book of letters" | 7 | this item (7/505); the 3rd Earl's entry books 22/2 (1689-1706), 22/4, 22/5, 22/7, 23/8, 23/9 (1703-1713) |
+| "entry book" | 7 | the same 3rd Earl books (22/2, 22/4, 22/5, 22/7, 23/9); 40/45 (Parliament speeches 1670-79, 2nd Earl); 49/10 (Council for Plantations 1670-72) |
+| "letter book" / "letter-book" | 1 / 1 | 48/55, the Carolina letter book 1670-1675 ("several in the handwriting of Locke") |
+| "copies of letters" | 1 | 46A/86A, Admiral Vernon 1746 |
+| "entered November" / "my lord's book" | 1 / 1 | this item only |
+| Stringer (the 1st Earl's secretary) | 26 | letters to/from Stringer 1676-1701, accounts, deeds; none an entry book |
+| Perkins / "Captain Fisher" | 1 / 1 | this item only |
+| Percivall | 4 | this item; 4/172 (1668 note); 46B/101, 46B/103 (Peter Percivall of London, mortgagee 1681, 1683) |
+
+Result: no 1st Earl of Shaftesbury letter-book (entry book, copy book) covering 1682 is catalogued at item
+level anywhere in PRO 30/24 under these terms; the only 1st Earl letter book catalogued is the Carolina book of
+1670-1675 (48/55), which ends seven years before this draft. The fair copy named in the indorsement is not
+found in TNA's item-level catalogue; whether it survives uncatalogued, elsewhere (e.g. among Locke's or
+Stringer's papers outside TNA) or not at all is unknown. Discovery's keyword search only sees item
+descriptions, so a letter-book catalogued under a different wording would be missed: a search result, not
+proof of loss. No reading; nothing for a verifier.
+
+Next cheapest step: search T. Forster (ed.), *Original Letters of Locke, Algernon Sidney and Anthony Lord
+Shaftesbury* (1830) on archive.org be-api for Percivall/Perkins/Fisher/cypher/"November 1682" (~$1, about 6
+requests); the TNA page-copy order (REQUEST.md, ASKS row 73) remains the step that would give the text.
