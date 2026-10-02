@@ -493,3 +493,52 @@ Files: `ct1_profile.py`, `ct1_results.tsv` (new), this NOTES.md section, `specs/
 (`cheap_test_done` only), ROOM.md. Hosts: none (no network; the French-letter-frequency reference is
 `tools/data/fr16/lettresindites00marg_djvu.txt.gz`, already on disk). No subagents. Cost not visible to this
 worker.
+
+## Web and blog check (GF-A2-3, account 2, 2 Oct 2026)
+
+Queries run (plain web search, one engine), each hit list read and plausible hits opened:
+1. `La Thuillerie Servien 1645 Christianopel lettre chiffre` -- BnF Clairambault 575 record (biblissima), Yale/Beinecke
+   catalogue rows, a Servien biography; none about this volume or its cipher.
+2. `"Mélanges de Colbert 26" chiffre` -- BnF comite d'histoire notes on the Melanges de Colbert series, Canadiana reel
+   C-12868 (microfilm of other Colbert volumes); nothing on vol. 26's cipher.
+3. `"Je parle des Suedois" La Thuillerie` (the canvas-20 annotation phrase) -- no hit on the phrase.
+4. `La Thuillerie Servien cipher letters 1648 Hague Prince of Orange decipherment` -- Clairambault 576 record (opened:
+   d'Estrades embassy 1646 with La Thuillerie letters at pp.127-193, no chiffre/dechiffrement in the record, no 1645
+   Christianopel or 1648 Hague letter named), HistoCrypt 2024 d'Avaux 1684 paper (a different, later ambassador).
+5. `"Coignet de La Thuillerie" lettres Servien 1648 édition correspondance` -- no edition of the La Thuillerie-Servien
+   letters found; only biographies and catalogue rows.
+6. `La Thuillerie cipher 1645 Denmark Sweden mediation encrypted letter deciphered solved` (also the model-solve family)
+   -- one Cipherbrain post opened (scienceblogs.de/klausis-krypto-kolumne/2019/06/02/an-unsolved-encrypted-letter-from-
+   the-17th-century/): Baner to Stalhandske, 29 Dec 1640; post and its five comments read, not this item.
+Blog site searches: `site:scienceblogs.de klausis-krypto-kolumne Thuillerie OR Servien OR Colbert` (no Cipherbrain page
+returned); `site:cryptiana.blogspot.com Thuillerie OR Servien` (no Cryptiana page returned; Tomokiyo's servien.htm on
+disk is the 1630-37 Baluze 155-156 cipher, a different one); `site:ciphermysteries.com Thuillerie OR Servien OR
+Westphalia cipher` (two Cipher Mysteries pages returned, both unrelated -- Moustier church notes). No comment thread
+anywhere found that discusses this volume, these letters or their cipher.
+
+## Premise check (GF-A2-3, account 2, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found.** The folder records interlinear glosses on canvas 20-21
+(f.17-18), 26 (f.23) and 27 (f.24). KX-LATHKEY2 judged canvas 20's notes topical, not word-for-word. This worker opened
+the on-disk crops `images/crops/canvas26_full.jpg` and `canvas27_full.jpg` (2400 px) and looked: both carry a
+second-hand interlinear rendering written directly over the numeral runs, phrase by phrase. Canvas 27 (f.24, La
+Thuillerie to Servien, La Haye 1646): over the groups after "lequel vient de Munster c'est" is written "que le Comte de
+Trautmandorff a fait faire les expeditions de l'Erection en Duche et Principaute de l'Empire du Comte de Meurs qui
+apartient a M. le P. d'Orange", and later "des ordres de S.E.". Canvas 26 (f.23, "A Paris le 17e mars 1646", "Mon
+nepveu"): "la charge de Surintendant des bastimens", "pour la charge de M. de Brienne", "Intelligence entre M. Davaux
+et M. de Brienne", "M. Davaux escrivit a M. de Brienne", "il vous cognoistroit et que vous le supplanteriez", "nomme M.
+de la Court pour l'employ", among others. These are period decipherments of the enciphered passages on those two
+leaves (at least in the top half of each, the part viewed), not topic notes. So f.23 and f.24 are already read on the
+leaf; they are a key/calibration source for the cluster, not unread ciphertext. Canvas 20-21's status as topical
+notes (KX-LATHKEY2) is not re-judged here; canvases 30-63 not viewed by this worker.
+(b) Other solvers' working files -- **not found.** Fresh shallow clones of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers grepped for "thuillerie"/"tuillerie", "servien", "btv1b10035069t"/"10035069": hits are
+unrelated (a Gallica sweep notice listing a La Thuillerie letter in another BnF volume; Chastillon-to-Servien 1635;
+rohan1636 and napoleon targets; a Forster 1644 word list) -- no working file, rendering or key run on this volume.
+(c) Physical neighbours -- **found (as (a)).** The leaf map (leaves.tsv) covers every canvas of Part I; the glossed
+leaves are canvas 26 and 27 themselves. The facing page of canvas 26/27 (left half of each crop) is a blank or
+show-through leaf, no slip seen at 2400 px.
+(d) Recipient's side -- **not found.** Servien is the recipient: the Acta Pacis Westphalicae (French correspondences,
+APW II B, via the online full text) and Le Clerc's Negociations secretes were read by the check-solved worker (Search
+log above) without these letters; no Danish/Swedish edition of La Thuillerie's 1644-46 mediation was opened by this
+worker (unreached).
