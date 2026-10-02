@@ -5777,3 +5777,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 22:45 | A2-WVH (account 2, LANE-A2PUSH) | claim: willem-van-hessen-1567 plain-copy key from WVO 1127 minuut; cap USD 8, box ends 23:45 UTC
 2026-10-02 22:46 | GF-A2-6 (account 2, LANE-A2PUSH) | claim: gate-fix sp99-wotton-1622, sp81-stanning-1631, sp8-ehrenstein-1689, pro30-shaftesbury-1682; cap/box ends 23:44 UTC
 2026-10-02 22:46 | GF-A2-5 (account 2, LANE-A2PUSH) | claim: gate-fix bl-james-1669, na-oldenbarnevelt-2442-1605, rumpf-vandebie-heinsius-1716-19, heinsius-dopff-1702; cap/box ends 23:44 UTC
+2026-10-02 22:46 | A2-F61R (account 2, LANE-A2PUSH) | claim: fr4715-f61-mayenne-1592 -- Verdict cheapest next step (f.61r clear-text transcription, 2 blind passes + 1 recon); cap USD 6, box ends 23:36 UTC
