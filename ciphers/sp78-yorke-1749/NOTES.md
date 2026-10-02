@@ -117,7 +117,7 @@ Waits on: a TNA page-copy order for SP 78/232/44 (REQUEST.md, since 24 Sept 2026
 consolidated TNA batch, ASKS row 73).
 
 - [done 2 Oct 2026, A2-YOR: see "SP 78/232 per-item note check" below] M: check the note field of every item in SP 78/232 individually (not by keyword) for other cipher/decipher siblings -- tools/discovery_items.py, ~150 items, this file's own named next step.
-- S: search the Hardwicke Papers (1778, Joseph Yorke's father's collection) via archive.org/HathiTrust for this correspondence, not checked this pass.
+- [catalogue part done 2 Oct 2026, A2-YOR2: BL Add MS 35355 f. 370, Bedford to Yorke 1749-51, copies, undigitised; see "BL catalogue check" below] S: search the Hardwicke Papers (BL Add MS 35349-36278) for this correspondence; the printed-text side (archive.org/HathiTrust) not checked.
 - S: full-text search the three already-fetched Bedford correspondence volumes for 'Albemarle' or 'Aix-la-Chapelle'; only 'Tobago'/'Puyzieulx' were tried so far.
 
 ## Web and blog check (GF-A2-4, 2 Oct 2026)
@@ -197,7 +197,45 @@ outgoing drafts in clear marked for encipherment -- a sign pool (CLAUDE.md pipel
 short letter. The page-copy order (REQUEST.md, ASKS row 73 batch) is better spent on one "Cipher." sibling with
 the target, so the leaves show whether a period decipherment is written on them, before any cryptanalysis.
 
-Next cheapest step: (a) ~$1, no network beyond Discovery/BL catalogue: check whether BL Add MSS (Hardwicke
-Papers) hold Bedford's enciphered letters to Yorke for the 11 draft dates (searcharchives.bl.uk?format=json,
-catalogue only); (b) add one "Cipher." sibling (e.g. SP 78/232/41, f.94) to the TNA copy order in REQUEST.md --
-an owner-side order, not run here.
+Next cheapest step (as written by A2-YOR; (a) run 2 Oct 2026 by A2-YOR2, see the next section): (a) ~$1, BL catalogue
+check for Bedford's enciphered letters to Yorke in the Hardwicke Papers -- [done, A2-YOR2]; (b) add one "Cipher."
+sibling (e.g. SP 78/232/41, f.94) to the TNA copy order in REQUEST.md -- an owner-side order, not run here.
+
+## BL catalogue check for the Yorke-side copies (A2-YOR2, 2 Oct 2026, 23:4x UTC)
+
+Step run: (a) above. Host: `searcharchives.bl.uk` only (JSON search `?format=json&per_page=50&q=...` and per-record
+`/catalog/<id>.json`), 2 s apart, descriptive UA, 13 requests, all HTTP 200, no challenge. Queries (8): `"Joseph
+Yorke" Paris 1749` (55 hits), `Yorke Bedford cipher` (0), `Bedford "Letters to Joseph Yorke"` (0), `"Duke of
+Bedford" Yorke 1749 Hardwicke` (55), `Joseph Yorke cipher` (11, none 1749 Paris), `"Letters to Sir J. Yorke"` (15),
+`Add MS 35354` (1), `Yorke cipher 1749` (0). Full hit list: `bl-catalogue-2026-10-02.tsv` (127 rows). Records read
+in full: Add MS 35355, Add MS 35354-35358 (series), Egerton MS 3416, Add MS 36122.
+
+Found (catalogue descriptions only; no leaf seen):
+- **Add MS 35355** (Hardwicke Papers vol. VII, "II. ff. 410", 1749-1751; series Add MS 35354-35358 = Hardwicke's
+  correspondence with his son Joseph, 1742-1764): **f. 370 "John Russell, 4th Duke of Bedford: Letters to Sir J. Yorke:
+  1749-1751.: Copies."** This is the only BL entry naming Bedford-to-Yorke letters. It says "Copies"; it does not say
+  cipher, decipher or in clear, nor which dates. Same volume: Puysieulx-Hardwicke correspondence 1749-51 (ff. 1, 10,
+  225, 392, 394) and Yorke's appointment as Secretary of Embassy at Paris 1749 (f. 342). Digitised-content field
+  (`url_tsi`) empty: not online.
+- **Egerton MS 3416** (Leeds/Holdernesse Papers vol. XCIII, 1749-1751): ff. 1-19 Yorke's memorials to the French
+  government on Tobago, 1749 (copies, French), and ff. 53-328 passim Bedford-Albemarle correspondence 1749-51,
+  copies. Holdernesse's copies of the Paris embassy file after Albemarle's arrival, not Yorke's received cipher
+  letters; no cipher noted. `url_tsi` empty.
+- **Add MS 36122** f. 1: Yorke's appointment (warrant), no correspondence. Add MS 33026-33027 (Newcastle Papers):
+  Albemarle's letter-books, and Yorke's letter-books "while in charge of the embassy at Paris: 1751" -- 1751, not
+  the Mar-Jul 1749 span of the SP 78/232 pool.
+- **Not found:** no BL record names Bedford's letters to Yorke as received in cipher, no decipher or key of the Paris
+  embassy cipher of 1749, and no item-level entry for any of the 11 draft dates (SP 78/232/32 ... /108). The BL
+  descriptions list selected contents per volume, not every letter, so this is a catalogue result, not proof that
+  the enciphered sent copies are lost.
+
+What this changes: the crib route through Yorke's side narrows to one volume, Add MS 35355 f. 370 onward, undigitised,
+whose "Copies" may be Yorke's own clear (or deciphered) copies rather than the cipher as sent. Clear copies would only
+repeat the TNA drafts; they would be crib material only if the sent cipher letters themselves survive somewhere, which
+no catalogue entry found here shows. Whether the Yorke-to-Bedford letters (the target and its 15 siblings) carry a
+decipherment written on the TNA leaves is still the cheapest open question, and only the page copy answers it.
+
+Next cheapest step: the owner-side TNA page copy (REQUEST.md, ASKS row 73 batch) of f.103 plus one "Cipher." sibling
+(SP 78/232/41, f.94) and one "to be sent in cipher" draft (SP 78/232/46, f.107), at the fees recorded 26 Sept 2026
+(page check GBP 9.92 per record, digital copy GBP 1.52 per copy; not re-quoted) -- needs the owner. Lower priority, also owner-side: a BL reprographics quote for Add MS
+35355 ff. 370-391 only if the TNA leaves carry no decipherment.
