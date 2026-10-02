@@ -16,6 +16,51 @@ match on subject). Semantic Scholar: 429 (Too Many Requests) on the keyed call a
 3 s pause per the good-citizen one-retry rule -- not reached this pass, logged as unreachable, not
 treated as a search result either way.
 
+## Premise check (GF4-blitz-ciphers, account-4, 2 Oct 2026)
+
+**Result first: not found solved.** No decipherment, key or plaintext of this item located in any of (a)-(d), read
+2 Oct 2026, 23:35-23:40 UTC; the status word stays `open`. A search result, not a novelty verdict (rule 10).
+
+- **(a) Decipherments the folder mentions -- found (five claims), opened, none is a decipherment.** The only
+  decipherment-shaped mentions in this folder are the five comment-thread claims quoted in "Web and blog check"
+  below (Old-Czech/Avigdor Kara, Roberts numerology, HMAIED's announced article, Nightshadow's word-signs,
+  NobodySpecial's English sentence), each opened in its thread by WEBCHECK on 1 Oct 2026. None gives a key or mapping
+  that regenerates any transcribed group, none names its page, they contradict each other, and HMAIED's article was
+  not found. The folder mentions no gloss, interlinear, clear copy or attached decipherment of any kind; the spec's
+  "provisional transcription key" (Pelling / cipherfoundation.org) is a sign-to-ASCII transcription alphabet, not a key.
+- **(b) Other solvers' working files -- read; none holds a reading.** Fresh shallow clones, grepped case-insensitively
+  for "blitz" across every file, then each hit read: dbourdeau/cyphersolver (head 2 Oct 2026 20:12 UTC): no
+  `targets/` folder for this item; every hit is the `research/top50` status table ("Provenance or authenticity
+  unresolved"), the hcportal catalogue harvest (description only), or the unrelated "KR Blitz" Enigma message
+  (targets/enigma, an Enigma priority marking, a different item). aaymeloglu/unsolved-ciphers (head 27 Sept 2026):
+  one hit, `SHORTLIST.md` ("Hoax risk, no context, or no real system"); no working folder. **New this pass:**
+  matthewdgreen/cipher_benchmark (head 729aad62, 19 Jul 2026) carries pages 7 and 8 as two `hold_for_review` unsolved
+  records (`benchmark/unsolved/sources/blitz/`), imported from Pelling's 2014 transcription and cross-checked against
+  the copy bundled in AZdecrypt's own `Ciphers/Unsolved/` folder; its notes say "No accepted solution is available ...
+  no accepted plaintext", and it holds no solver output for them. Its diplomatic transcription, compared character by
+  character with this folder's spec, is **identical on both pages** (470 + 159 = 629 characters, difflib ratio 1.0,
+  zero differences) -- so the 581-letter stream every test here used is the same text the other tools carry.
+  Reddit/GitHub community-solution search (search engine, `"Blitz cipher" github OR reddit solution transcription
+  decoded`): no solution post found, only the benchmark repository above.
+- **(c) Neighbouring items -- viewed, no clear copy or key.** The neighbours are the other six published pages (no
+  leaf/canvas context exists; the object is known only from eight photographs). bBLZ5 viewed all six on 26 Sept 2026;
+  this pass re-viewed page 5 directly, the page the Old-Czech commenter said holds the "complete instructions. Key":
+  it is the glyph script throughout (three heading lines, two boxed columns, a pentagon with an inscribed triangle,
+  marginal glyph blocks), with no Latin-letter legend, sign table or clear text anywhere on it. No further pages have
+  been released since Oct 2014 by Pelling's own pages (read by WEBCHECK; the static page's latest comment, 5 Jun 2026,
+  adds none).
+- **(d) Editions and articles, interior searches -- not found.** OpenAlex full-text filter `fulltext.search:"blitz
+  ciphers"`: 0 works; OpenAlex `search="blitz ciphers"`: 0; Semantic Scholar `blitz ciphers`: top 10 all unrelated
+  (block-cipher/LLM papers); Google Books (keyed, `country=US`) `"blitz ciphers"`: 1 volume, *Male Lingue* (2014),
+  a passing comparison ("sembra avere qualche somiglianza con il 'Blitz Ciphers'"), no reading; Internet Archive
+  full-text (be-api fts) `"blitz ciphers"`: 2 items, both editions of one novel (*Séance infernale*, Skarbek/Jonathan),
+  a character's passing mention. CORE: unreachable (HTTP 500 "abstract is not a searchable field" from the server, one
+  call, not retried). No recipient-side edition exists for an unprovenanced object; the nearest equivalent, a
+  published study of the object, was what these searches looked for.
+
+Requests: search engine 2; github.com 3 clones (read-only); api.openalex.org 2; api.semanticscholar.org 2;
+www.googleapis.com 1; be-api.us.archive.org 1; api.core.ac.uk 2 (500). One at a time, >= 1.5 s apart.
+
 ## Spec
 
 See `specs/blitz-ciphers.json` (written 25 Sept 2026 by bSPEC2). Ciphertext (2 of 8 pages, Pelling's own
@@ -472,3 +517,39 @@ park, is what remains unless new material (a transcription of pages 1-6's glyph 
 in the 7-8 alphabet) arrives.
 
 Requests: 0 (disk only). Subagents: 0. Vision calls: 0. Cost: see the lane ledger. Box: finished well inside 40 minutes.
+
+## GF4-blitz-ciphers (2 Oct 2026, account-4): the de20 shuffled-target row (NEXT-STEPS row 21)
+
+Intake gate before this job: exit 1 (no "## Premise check" section). Premise check written above ("## Premise check
+(GF4-blitz-ciphers ...)": not found solved in (a)-(d); new in (b): matthewdgreen/cipher_benchmark holds pages 7-8 as
+unsolved records with a transcription identical to ours). Gate after: exit 0.
+
+```
+$ python3 tools/intake_gate_check.py blitz-ciphers
+blitz-ciphers: open (line 3) -- edition/page or full-text-search citation found within 6 lines
+exit=0
+```
+
+Ran the follow-up BLZ-FR2 named: bBLZ6's homophonic case-as-information run on German (de20) repeated with
+`--shuffle-target`, everything else identical (`specs/blitz-ciphers-de20.json`, `ciphertext_letters_cs_spaced.txt`,
+`--tokens space`, N=581, K=48, `--param profile=target`, `--corpus tools/data/de20`, `--seeds 3 --restarts 8 --gate 0.6`).
+One shuffle seed gives no spread, so three were run (about 40 s each). Rows in HYPOTHESES.md, 2 Oct 2026 23:39-23:40 UTC.
+
+| run | control mean (range), gate 0.6 | decode judge (de20: real_p05 -0.82, null_p99 -2.048, N=581) |
+|---|---|---|
+| real order (bBLZ6, 26 Sept 03:39) | 0.925 (0.862-0.962) | FAIL -1.404 |
+| shuffled, seed 1 | 0.925 (0.862-0.962) | FAIL -1.466 |
+| shuffled, seed 2 | same | FAIL -1.441 |
+| shuffled, seed 3 | same | FAIL -1.405 |
+
+Reading (rule 3): the judge did not PASS any shuffled decode, so it is not voided as a gate for this family at N=581.
+The real-order decode (-1.404) sits at the top edge of the shuffled-order range (-1.405 to -1.466), level with seed 3:
+it carries no homophonic-German signal above the shuffled-order floor, the same shape BLZ-FR2 found for French and
+Latin. The German row now carries the same floor as the French and Latin rows. Decodes
+`families/homophonic-1-shuffle{1,2,3}-profile=target-de20.txt`; spec `cheap_test_done` entry "3a-de20-shuffle".
+Nothing read, no key, no plaintext. Requests: 0 (disk/CPU only).
+
+Not run (not in this brief): the same shuffled row for the en homophonic run (bBLZ3) and for the masc runs; on the
+evidence of three languages they would read the same way. Next step: none cheap on the 581 signs in hand -- the target
+waits on new material (a transcription of pages 1-6's glyph script against a settled sign inventory, or a third page
+in the pages 7-8 alphabet); NEAR.md step (b), park, stands.

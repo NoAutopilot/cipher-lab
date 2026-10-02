@@ -72,6 +72,15 @@
    "control": "homophonic control (German corpus tools/data/de20, N=581, target K=48 profile), 3 seeds: mean recovery 0.925 (0.862-0.962) -- above the 0.6 gate, control has real power at this N/K",
    "target": "best-restart decode judge: FAIL language: score=-1.404, null_p99=-2.048, real_p05=-0.82, real_median=-0.782, mode=both, N=581; row in ciphers/blitz-ciphers/HYPOTHESES.md (26 Sept 2026 03:39 UTC), decode ciphers/blitz-ciphers/families/homophonic-1-profile=target-de20.txt",
    "verdict": "control-backed negative for homophonic substitution treating case as information (48 signs -> ~25 German letters) at this N, now register-matched (de20 judge, not test3a's English or test3b's de16-mismatched German): control reads its own design at 0.925 mean recovery while the target clears the shuffled-null bar (-1.404 > null_p99 -2.048) but fails the real-German bar (-1.404 < real_p05 -0.82) -- same FAIL shape as test3a (English) and the 3b-corrected masc de20 run, not the stronger below-null-p99 rejection test3b's de16 scoring gave. Case-as-cipher-information is excluded for German too at this design/length on the transcription in hand, on a corpus era-matched to a 1940s-register hypothesis. Per rule 5 as amended, `partial`/flagged for the orchestrator's NEAR.md, never closed-negative."
+  },
+  {
+   "test": "3a-de20-shuffle",
+   "date": "2 Oct 2026",
+   "worker": "GF4-blitz-ciphers (account-4)",
+   "method": "tools/family_run.py --family homophonic --param profile=target --tokens space, K=48, N=581, corpus+judge de20, --shuffle-target 1/2/3 (ARM-C1 false-positive floor), 3 control seeds x 8 restarts",
+   "target": "real-order decode judge FAIL -1.404 (bBLZ6, 26 Sept 2026 03:39); shuffled-order decodes FAIL -1.466 / -1.441 / -1.405 (seeds 1/2/3); real_p05 -0.82, null_p99 -2.048",
+   "control": "0.925 (0.862-0.962), gate 0.6 met, identical to bBLZ6's control",
+   "reading": "judge not voided (no shuffled PASS); the real-order decode sits at the top edge of the shuffled-order range (-1.405 to -1.466), so it carries no homophonic-German signal above the shuffled floor -- the same shape BLZ-FR2 found for fr18 and la18"
   }
  ],
  "judge": {
