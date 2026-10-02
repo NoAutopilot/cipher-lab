@@ -1,0 +1,65 @@
+# PERIOD key sheet, second leaf: NA 1.05.03 (Societeit van Suriname) inv. 86, scan NL-HaNA_1.05.03_86_0003, left-hand page
+# (the verso of scan 0002's "Oud Secreet Alphabet" leaf). Heading (own overview look + 2 blind passes): "Nieuw Secreet
+# Alphabets / aan den Gouverneur Van de Schepper [B: Scheffer] versonden / p[er] Missive van 2 december 1739".
+# Read by GAPS14-na-suriname-map-1781 (account-4), 2 Oct 2026: native IIIF region 120,120,1780,3440
+# (images/inv86_0003_left_native.jpg) and the right-hand reverse table 2380,240,480,2760 (images/inv86_0003_right_native.jpg),
+# crops images/crops_inv86_0003/ via tools/iiif_lines.py; two blind Opus passes (passes/v86_passA.tsv, v86_passB.tsv)
+# agree on every sign's identity (82/111 first-token identical; the rest differ in description wording only), one
+# reconciliation look (H row, code 9 word). The right page is a reverse lookup of the same alphabet (both passes: identical
+# except N written l, ij, h). Grade H: read from the period key sheet; M where the reconciliation still leaves the shape open.
+# Kind `alpha`: one sign per row. Kind `code`: the nine code groups ("negen codegroepen", de Leeuw 1997), value = the word.
+kind	plain	pos	sheet_sign	description	grade
+alpha	A	1	[delta]	small triangle	H
+alpha	A	2	p	lowercase p	H
+alpha	A	3	[x-dots]	x-like stroke with dots (therefore-like)	M
+alpha	B	1	d	looped script d	H
+alpha	B	2	[sigma]	6/sigma-like closed loop with rising stroke (Oud B row's sigma)	H
+alpha	C	1	C	script capital C/E-like, looped top, long tail	M
+alpha	D	1	v	lowercase v	H
+alpha	D	2	w	w	H
+alpha	E	1	3	digit 3	H
+alpha	E	2	7	digit 7	H
+alpha	E	3	a	lowercase a	H
+alpha	E	4	[delta-small]	d-like with flagged ascender (lowercase delta)	H
+alpha	E	5	e	lowercase e	H
+alpha	F	1	[amp]	loop crossed by a diagonal stroke	H
+alpha	F	2	[omega-bar]	omega / w with bar above	H
+alpha	G	1	9	digit 9	H
+alpha	H	1	[sh-lig]	long-s / f with loop (Sh-like ligature)	M
+alpha	H	2	[s-dollar]	S with vertical stroke ($-like)	M
+alpha	I/J	1	f	long script f with descender	H
+alpha	I/J	2	m	lowercase m	H
+alpha	I/J	3	8	8, open-topped (delta-like)	H
+alpha	K	1	b	looped b	H
+alpha	L	1	g	lowercase g	H
+alpha	L	2	c	lowercase c	H
+alpha	M	1	y	y (small loop above)	H
+alpha	N	1	[ij]	ij / y with dots	H
+alpha	N	2	l	lowercase l	H
+alpha	N	3	h	lowercase h	H
+alpha	O	1	k	lowercase k	H
+alpha	O	2	[hash]	three uprights crossed by two bars	H
+alpha	O	3	[pi]	bar over inverted V	H
+alpha	P	1	S	script capital S	H
+alpha	P	2	q	lowercase q	H
+alpha	Q	1	[x-cross]	slanted cross / crossed t with long stroke	H
+alpha	R	1	o	o / 0	H
+alpha	S	1	6	digit 6	H
+alpha	S	2	[psi]	Greek psi	H
+alpha	T	1	r	lowercase r	H
+alpha	T	2	[lambda]	Greek lambda	H
+alpha	U/V	1	5	digit 5	H
+alpha	U/V	2	e	e (second e-form; E row also has e)	M
+alpha	W	1	4	digit 4	H
+alpha	X	1	1	digit 1	H
+alpha	Y	1	t	t	H
+alpha	Z	1	n	lowercase n	H
+code	buskruit	1	[powder-box]	rectangle with vertical bars topped by three spires ("de Buscruijt/Buscruijd")	H
+code	stukgeschut	1	[AA-bar]	two overlapping capital A's struck through with a horizontal bar ("Stuk geschut")	H
+code	fort-amsterdam	1	[Gamma]	heavy capital Gamma ("fort Amsterdam")	H
+code	fort-zelandia	1	[Pi]	capital Pi with serifs ("fort Zelandia")	H
+code	fort-sommelsdijck	1	B	roman capital B ("fort Sommelsdyck")	H
+code	snaphanen	1	[trefoil]	three small circles over a short stem ("Snaphaanen")	H
+code	kogels	1	[bullseye]	circle with inner circle and dot ("kogels")	H
+code	affuiten	1	[bar-rect]	long empty horizontal rectangle ("Affuyten")	H
+code	paarden	1	[tower]	small tower, pointed roof, door ("Roopaarden" as written; A Rospaarden)	M

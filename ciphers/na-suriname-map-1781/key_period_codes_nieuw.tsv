@@ -1,0 +1,63 @@
+# Reader codes -> the NIEUW Secreet Alphabet (NA 1.05.03 inv. 86 scan 0003 left page, sent per missive of 2 Dec 1739)
+# and its nine code groups (key_period_nieuw.tsv). GAPS14-na-suriname-map-1781, 2 Oct 2026. Built from key_period_codes.tsv
+# (Oud, GAPS13) by changing only the rows where the Nieuw sheet differs (8, 9, p, d) and adding signs GAPS13 left unkeyed
+# that the Nieuw sheet names. Kept from GAPS13 unchanged, flagged: y=d (M, context) although the Nieuw M row is a y;
+# g=g|l (M) although the Nieuw sheet has g only for L -- reader-code identity is an image question, not settled here.
+code	value	grade	source	note
+2	a	H	inv86 0002/0003	identical
+[delta]	a	H	inv86 0002/0003	identical; key.tsv C agrees
+3	e	H	inv86 0002/0003	identical
+7	e	H	inv86 0002/0003	identical; key.tsv C agrees
+e	e	H	inv86 0002/0003	identical
+[ezh-dot]	e	H	inv86 0002/0003	sheet E row lowercase delta; key.tsv C (e) agrees
+[a-plain]	e	H	inv86 0002/0003	sheet script A; key.tsv C (e) agrees
+a	e	H	inv86 0002/0003	sheet script A read as a; crib (a=e) agrees
+v	d	H	inv86 0002/0003	identical
+[v-tall]	d	H	inv86 0002/0003	sheet tall v; key.tsv C agrees
+w	d	H	inv86 0002/0003	identical (GAPS10 round 2 asked w=d for 'dito')
+y	d	M	inv86 0002/0003	2039/2061 readers' y = the sheet's tall v (D) by context ('de verdere', 'de batterijen'); not the key.tsv fork y
+d	b	H	inv86 0003	Nieuw B row looped d, identical; crib (d=b) agrees
+8	i	H	inv86 0003	Nieuw I row third sign 8 (Oud: G)
+G	g	M	inv86 0002/0003	key.tsv's 'G' (2007A Generaal pos1): the sheet's g is a tilted 8; a script G would be L; value as key.tsv
+g	g|l	M	inv86 0002/0003	readers' g covers the sheet's 8 (g: 'garde', 'magazijn') and script G (l: 'artillerie')
+f	i	H	inv86 0002/0003	identical (long f, I/J row)
+[f-loop]	i	M	inv86 0002/0003	looped f = the sheet's long f by shape ('artillerie', 'kwartiers')
+[f-tail]	i	M	inv86 0002/0003	same
+m	i	H	inv86 0002/0003	identical; crib (m=i) agrees
+9	g	H	inv86 0003	Nieuw G row 9 (Oud: I)
+b	k|i	M	inv86 0002/0003	readers' b covers script B (k: 'kwartiers') and a looped long f (i: 'batterijen', crib b=i)
+c	l	H	inv86 0002/0003	identical; key.tsv C agrees
+l	n	H	inv86 0002/0003	sheet script L read as l; crib (l=n) agrees
+[l-bare]	n	H	inv86 0002/0003	sheet script L; key.tsv C (n) agrees
+h	n	H	inv86 0002/0003	identical; crib (h=n) agrees
+[h-loop]	n	H	inv86 0002/0003	sheet h; key.tsv C agrees
+k	o	H	inv86 0002/0003	identical; crib (k=o) agrees
+[hash]	o	H	inv86 0002/0003	identical; key.tsv C agrees
+[pi]	o	H	inv86 0002/0003	identical; crib agrees
+q	p	H	inv86 0002/0003	identical
+s	p	M	inv86 0002/0003	sheet script S read as s, by shape name
+[s-loop]	p	H	inv86 0002/0003	sheet script S; key.tsv C (p) agrees
+S	p	M	inv86 0002/0003	sheet script S
+p	a	H	inv86 0003	Nieuw A row lowercase p, identical
+x	q	H	inv86 0002/0003	identical
+0	r	H	inv86 0002/0003	identical
+o	r	H	inv86 0002/0003	sheet 0; key.tsv [o-plain] C (r) agrees
+[o-plain]	r	H	inv86 0002/0003	sheet 0; key.tsv C agrees
+6	s	H	inv86 0002/0003	identical; key.tsv C agrees
+[psi]	s	H	inv86 0002/0003	identical; key.tsv y (fork-shaped, DefenSie) C (s) agrees
+[psi-hook]	s	M	inv86 0002/0003	psi variant by shape
+r	t	H	inv86 0002/0003	sheet script R read as r; crib (r=t) agrees
+λ	t	H	inv86 0002/0003	identical; key.tsv C agrees
+[lambda]	t	H	inv86 0002/0003	identical
+5	v	H	inv86 0002/0003	identical; key.tsv C agrees
+4	w	H	inv86 0002/0003	identical; key.tsv C agrees
+t	y	M	inv86 0002/0003	sheet tau (Y); crib gave j (i/j/y class): 'yser', 'batterijen', 'magazijn'
+[thorn]	c|z	M	inv86 0002/0003	readers' thorn covers script C (c: 'corps', 'cisternes') and script N (z: 'magazijn')
+[w-tilde]	f	M	inv86 0003	Nieuw (and Oud) F row omega with bar, by shape name
+[u-dots]	n	M	inv86 0003	Nieuw N row ij with dots, by shape name
+[d-loop]	b	M	inv86 0003	Nieuw B row looped script d, by shape name
+[x-dot]	a	M	inv86 0003	Nieuw A row third sign (x with dots), by shape name
+[dots-tri]	a	M	inv86 0003	Nieuw A row third sign (x with dots), by shape name
+[MM]	stukgeschut	M	inv86 0003	Nieuw code group AA struck through = Stuk geschut, by shape name; stands after gun counts
+[ladder-III]	buskruit	M	inv86 0003	Nieuw code group: barred rectangle with three spires = de Buscruijt, by shape name
+[hand-box]	buskruit	M	inv86 0003	Nieuw code group: barred rectangle with three spires = de Buscruijt, by shape name

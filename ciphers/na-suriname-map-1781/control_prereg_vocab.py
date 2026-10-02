@@ -36,7 +36,7 @@ def hits(S, k):
             for i in range(len(seq) - L + 1):
                 if all(w[j] in opts[i+j] or (w[j] in 'ijy' and opts[i+j] & set('ijy')) for j in range(L)): n += 1
     return n
-k = keymap('key_period_codes.tsv')
+k = keymap(sys.argv[2] if len(sys.argv) > 2 else 'key_period_codes.tsv')  # arg 2 (key file) added GAPS14 after pre-registration; vocab and statistic unchanged
 S = seqs('ciphertext_2039_legend.tsv') + seqs('ciphertext_2061_battery.tsv')
 real = hits(S, k)
 N = int(sys.argv[1]) if len(sys.argv) > 1 else 1000

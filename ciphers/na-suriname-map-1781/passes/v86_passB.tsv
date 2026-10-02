@@ -1,0 +1,112 @@
+block	row	field	reading	confidence
+head	1	text	aanden Gouverneur Vande Scheffer versonden	medium
+head	2	text	Pr Missive van 2 december 1739	high
+head	3	text	[not visible in crops; only two heading lines seen above the A row]	low
+alpha	A	1	[delta] (small open triangle)	high
+alpha	A	2	p	high
+alpha	A	3	[x-like: short diagonal stroke with small cross/dots]	low
+alpha	B	1	d (looped-top script d, delta-like)	medium
+alpha	B	2	6 (with long rightward top stroke, sigma-like)	medium
+alpha	C	1	[script capital E/C-like with crossbar at top: E-like flourish]	medium
+alpha	D	1	v	high
+alpha	D	2	W (script capital)	high
+alpha	E	1	3	high
+alpha	E	2	7	high
+alpha	E	3	a	high
+alpha	E	4	[d-like with flag: closed bowl with tall ascender ending in a triangular flag]	medium
+alpha	E	5	e (large open)	high
+alpha	F	1	[slashed loop: a/x-like bowl with diagonal stroke through it]	medium
+alpha	F	2	[omega-bar] (w with tilde-like bar above)	high
+alpha	G	1	9	high
+alpha	H	1	[long-s / script f with loop, S-f ligature-like]	medium
+alpha	H	2	[delta-lowercase: s/8-like with looped top, δ]	medium
+alpha	I	1	[script long f/g with loop above and below]	medium
+alpha	I	2	m	high
+alpha	I	3	[8-like open-top, δ-like]	medium
+alpha	K	1	b (looped ascender)	high
+alpha	L	1	g (q-like with descender)	high
+alpha	L	2	c	high
+alpha	M	1	y (with small loop/mark above the M-row; may be a separate mark)	medium
+alpha	N	1	ij	high
+alpha	N	2	l	high
+alpha	N	3	h	high
+alpha	O	1	k	high
+alpha	O	2	[hash] (three verticals crossed by horizontal, ###)	high
+alpha	O	3	[bar over inverted-V: horizontal stroke with a caret/lambda under it, pi-like]	medium
+alpha	P	1	S (script capital)	high
+alpha	P	2	q	high
+alpha	Q	1	[crossed t: slanted t/dagger with long diagonal]	medium
+alpha	R	1	o	high
+alpha	S	1	6	high
+alpha	S	2	[psi]	high
+alpha	T	1	r	high
+alpha	T	2	[lambda]	high
+alpha	V	1	5	high
+alpha	V	2	e	high
+alpha	W	1	4	high
+alpha	X	1	1	high
+alpha	Y	1	t	high
+alpha	Z	1	n	high
+code	1	symbol	[rectangle topped by three pointed spires/flames: three-towered palisade or crown, vertical lines inside]	medium
+code	1	word	de Buscruijd	medium
+code	2	symbol	[two overlapping A/triangles (AA) struck through with a horizontal line]	medium
+code	2	word	Stuk geschut	high
+code	3	symbol	[Gamma] (capital Greek Gamma)	high
+code	3	word	fort Amsterdam	high
+code	4	symbol	[Pi] (capital Pi with serifs, two legs)	high
+code	4	word	fort Zelandia	high
+code	5	symbol	B (Roman capital)	high
+code	5	word	fort Sommelsdyck	high
+code	6	symbol	[trefoil/club: three small circles in a cluster, with a wavy stroke descending below]	medium
+code	6	word	Snaphaanen	medium
+code	7	symbol	[concentric circles with dot at centre (target/bullseye)]	high
+code	7	word	kogels	high
+code	8	symbol	[long horizontal rectangle (open bar)]	high
+code	8	word	Affuyten	medium
+code	9	symbol	[small tower/house: rectangle with pointed roof and a small door/window inside]	high
+code	9	word	Roopaarden	low
+rev	A	1	[delta]	high
+rev	A	2	p	high
+rev	A	3	[x-like with dots: short bar/cross with dots above and below]	low
+rev	B	1	d (looped-top, delta-like)	medium
+rev	B	2	6 (with long top stroke)	medium
+rev	C	1	[script E/C-like with crossbar at top: E-like flourish]	medium
+rev	D	1	v	high
+rev	D	2	W	high
+rev	E	1	3	high
+rev	E	2	7	high
+rev	E	3	a	high
+rev	E	4	[d-like with flag on ascender]	medium
+rev	E	5	e	high
+rev	F	1	[slashed loop: bowl with diagonal stroke through]	medium
+rev	F	2	[omega-bar]	high
+rev	G	1	9	high
+rev	H	1	[long-s / script S-f ligature-like]	low
+rev	H	2	[delta-lowercase δ / 8-like]	medium
+rev	I	1	[script long f with descender]	medium
+rev	I	2	m	high
+rev	I	3	[8-like open-top, δ-like]	medium
+rev	K	1	b	high
+rev	L	1	g	medium
+rev	L	2	c	high
+rev	M	1	y	high
+rev	N	1	l	high
+rev	N	2	y (ij-like)	medium
+rev	N	3	h	high
+rev	O	1	k	high
+rev	O	2	[hash]	high
+rev	O	3	[bar over inverted-V, pi-like]	medium
+rev	P	1	S	medium
+rev	P	2	q	high
+rev	Q	1	[crossed t: slanted t/dagger, x-like]	medium
+rev	R	1	o	high
+rev	S	1	6	high
+rev	S	2	[psi]	high
+rev	T	1	r	high
+rev	T	2	[lambda]	high
+rev	V	1	5	high
+rev	V	2	e	high
+rev	W	1	4	high
+rev	X	1	1	high
+rev	Y	1	t	high
+rev	Z	1	n	high
