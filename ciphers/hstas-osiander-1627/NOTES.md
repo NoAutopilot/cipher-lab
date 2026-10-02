@@ -85,3 +85,38 @@ queued JSTOR rows, 26 Sept 2026, QUEUE-FILL.
 
 - `"Lukas Osiander" AND Diarium AND Württemberg AND Geheimschrift`: no relevant hit (0 results, none about the letter).
 - `"Diarium Rerum Wirtenbergicarum et Variarum"`: no relevant hit (0 results, none about the letter).
+
+## Web and blog check (GF-A2-7, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard): (1) `Lukas Osiander Diarium 1627 1630 Geheimschrift Pregizer` -- only
+biographies (deutsche-biographie.de sfz73870, pnd117154547; ADB), nothing on the diary or a cipher; (2) `"J 7 Bü 66"
+Osiander` -- no hit on the shelfmark (Osiander family GND/dikon records, the HAdW Andreas Osiander edition project,
+which is the 16th-c. Andreas, not this diary); (3) `Osiander Tagebuch Dreißigjähriger Krieg Württemberg Tübingen
+Kanzler Diarium Edition` -- Wikipedia, evangelisch.de (2021, 2024) on Lucas Osiander, the 2010 Tübingen Festgabe
+Merten; none names a diary edition; (4) `Osiander diary cipher symbols 1628 Stuttgart Hauptstaatsarchiv` -- same
+biographies plus de.wikisource ADB; nothing; (5) `"Diarium Rerum Wirtenbergicarum" Osiander` (the folder's
+descriptive title) -- no hit on the title; one related lead: Hiram Kümper, "Das »Diarium Wirttembergicum« -- eine
+unbekannte historiografische Schrift von Christoph Bidembach († 1622)", Zeitschrift für württembergische Landesgeschichte (2021) pp. 395-403
+(madoc.bib.uni-mannheim.de/60109, record page only, no full text there) -- a different, earlier Württemberg diary;
+whether it discusses Osiander's continuation is not known (next: read it, the lead is listed here only).
+Blog site searches: Cipherbrain (scienceblogs.de/klausis-krypto-kolumne) `Osiander Tagebuch Geheimschrift` -- only
+unrelated diary posts (Agatha Highfield, Isdal, Erba, WWI diary); Cryptiana (cryptiana.blogspot.com,
+cryptiana.web.fc2.com) `Osiander diary cipher` -- no results; Cipher Mysteries (ciphermysteries.com) `Osiander cipher
+diary` -- "Enciphered diaries" (2009/01/12) and unrelated posts; the 2009 post's subject list (Potter, Wesley, etc.)
+does not include Osiander. No hit named this diary, so no comment thread needed reading. Result: no decipherment or
+plaintext of the diary's cipher entries found on the open web or the three blogs.
+
+## Premise check (GF-A2-7, 2 Oct 2026)
+
+(a) Folder's own mentions: NOTES.md and REQUEST.md mention no decipherment, gloss, key or clear copy; the only
+related content is the DDB description's "individual Hebrew words/letters" in some 1628-29 entries (a script, not a
+decipherment). Not found. (b) Other solvers' working files: fresh shallow clones 2 Oct 2026 (dbourdeau/cyphersolver
+head 2 Oct 2026, aaymeloglu/unsolved-ciphers head 27 Sept 2026), `grep -rliE` for osiander, pregizer, "J 7 B[uü]",
+"Diarium Rerum": zero hits in either (cited, nothing copied). Not found. (c) Physical neighbours: no image of J 7 Bü 66
+is on disk or known online (scout: "no digitisation link"); the leaves around the cipher entries cannot be viewed --
+unreachable until a copy exists (REQUEST.md); the rest of the Sammlung Pregizer was not opened. (d) Recipient side: a
+private diary has no recipient; the nearest equivalent, a printed edition or study of the diary or of the Pregizer
+collection, was not found (searches above, and csDA2's 24 Sept pass); the Kümper ZWLG 2021 article above is the one
+untried lead. Not found.
+Gate note: the status line still lacks an edition citation because no printed edition of this diary is known to exist
+to read; that line is left as it is (this worker read no edition), so the target stays held at the intake gate.
