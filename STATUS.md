@@ -119,6 +119,20 @@ AUDIT N0 via the 108(B) duplicata; a second read of M tokens adds confidence onl
 Breadth specs with empty cheap_test_done: two benchmark placeholders (by design) and three partial targets whose
 first test already ran (bookkeeping after account 3's pass).
 
+**Check-in 2 (01:0x UTC 2 Oct):** 7 more workers done and ledgered (USD 27.7): hellen test 2 is two non-tests (homophonic and
+nomenclator controls 0.10 vs gate 0.6 at N=1234/K=634); fr.20506's two leftover witness tokens were a real 19th line below
+the crop (copy complete to 0 tokens, 1029 tokens on disk); DECODE holds no Dutch key dated 1595-1615 (26 nearby rows,
+record 2118 of 1620- is the only descendant, LOCAL-QUEUE row drafted in NOTES); Blitz homophonic on fr18 is a
+control-backed negative (control 0.980, target FAIL -1.296), la18 of unknown reliability; riksarkivet gate passes;
+LAU-KEYSWAP was a non-test (key57.tsv carries no alphabet row, nothing to swap -- the parent should have read the header
+first, and should have stopped new Lauriere workers at the 23:40 found-solved flag, account-3's note 00:52). One
+WEBCHECK session (ormond-arran) never ran: stuck at a Bash permission prompt in auto mode, X, re-spawned. Live after
+check-in 2: WEBCHECK on ormond-arran (2), esp318-sicilia-1503, decode-2754-bnf-baluze156-1636, mccormick-1999,
+sp90-raby-1704, ra-crusenstolpe-1809. Account-3's nomination (ROOM 00:52): after about 03:00 UTC take the cheapest next
+step on the 12 partial targets not queued to account 2 (moray-wood-1568 ... wellington-maitland-1812, each NOTES.md's
+"## Remaining gaps" Verdict line) and the split-check hits; not mine: the 12 NEXT-* rows in WORK-QUEUE.tsv, hessen-1824
+(found-solved by Bourdeau 28 Sept), debosnys-1883.
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
