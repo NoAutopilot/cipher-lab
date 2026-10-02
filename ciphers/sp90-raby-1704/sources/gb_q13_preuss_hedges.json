@@ -1,0 +1,75 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "4gZoAAAAMAAJ",
+      "etag": "x5O2xjS+dDQ",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/4gZoAAAAMAAJ",
+      "volumeInfo": {
+        "title": "A Question of Empire",
+        "subtitle": "Leopold I and the War of Spanish Succession, 1701-1705",
+        "authors": [
+          "Linda Frey",
+          "Marsha Frey"
+        ],
+        "publishedDate": "1983",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015032326962"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 184,
+        "printType": "BOOK",
+        "categories": [
+          "History"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=4gZoAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=4gZoAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=4gZoAAAAMAAJ&q=%22preussische+Mediation%22+Hedges&dq=%22preussische+Mediation%22+Hedges&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=4gZoAAAAMAAJ&dq=%22preussische+Mediation%22+Hedges&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/A_Question_of_Empire.html?hl=&id=4gZoAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=4gZoAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003epreussische Mediation\u003c/b\u003e zwischen Bayern und Oster- reich , 1704 ( Munich , 1897 ) ; Churchill , Marlborough I , 812-13 ... \u003cb\u003eHedges\u003c/b\u003e , Vienna , 16 January 1704 ; BHGS , Kasten Schwarz , 17044 , Elector to Monasterol , 12 October 1703&nbsp;..."
+      }
+    }
+  ]
+}

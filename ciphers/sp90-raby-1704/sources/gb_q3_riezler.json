@@ -1,0 +1,140 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 2,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "3hFXAAAAMAAJ",
+      "etag": "3MfKzJgB9Sw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/3hFXAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Geschichte Baierns: Bd. Von 1651-1704",
+        "authors": [
+          "Sigmund Riezler"
+        ],
+        "publishedDate": "1913",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015014662103"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 668,
+        "printType": "BOOK",
+        "categories": [
+          "Bavaria (Germany)"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.10.13.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=3hFXAAAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=3hFXAAAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=3hFXAAAAMAAJ&q=Riezler+%22Geschichte+Baierns%22+Raby+Mediation&dq=Riezler+%22Geschichte+Baierns%22+Raby+Mediation&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=3hFXAAAAMAAJ&dq=Riezler+%22Geschichte+Baierns%22+Raby+Mediation&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Geschichte_Baierns_Bd_Von_1651_1704.html?hl=&id=3hFXAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=3hFXAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Sigmund \u003cb\u003eRiezler\u003c/b\u003e. 602 Max Emanuels Forderungen . begnügen müssen 1 ) . Das ... \u003cb\u003eRaby\u003c/b\u003e anweisen , alle Zugeständnisse an Baiern zu billigen . In Wien war man ... \u003cb\u003eMediation\u003c/b\u003e . 603 für seinen Übertritt zugesagt hatte. 1 ) Geplant wurde&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "C2ae-p5XF0MC",
+      "etag": "RYbup8yUcXw",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/C2ae-p5XF0MC",
+      "volumeInfo": {
+        "title": "Geschichte Baierns",
+        "authors": [
+          "Sigmund “von” Riezler"
+        ],
+        "publishedDate": "1964",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "ZBZH:ZBZ-00122212"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 672,
+        "printType": "BOOK",
+        "categories": [
+          "Bavaria (Germany)"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.4.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=C2ae-p5XF0MC&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=C2ae-p5XF0MC&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=C2ae-p5XF0MC&q=Riezler+%22Geschichte+Baierns%22+Raby+Mediation&dq=Riezler+%22Geschichte+Baierns%22+Raby+Mediation&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=C2ae-p5XF0MC&dq=Riezler+%22Geschichte+Baierns%22+Raby+Mediation&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Geschichte_Baierns.html?hl=&id=C2ae-p5XF0MC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=C2ae-p5XF0MC&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Sigmund “von” \u003cb\u003eRiezler\u003c/b\u003e. 602 Max Emanuels Forderungen . begnügen müssen 1 ... \u003cb\u003eRaby\u003c/b\u003e anweisen , alle Zugeständnisse an Baiern zu billigen . In Wien war man ... \u003cb\u003eMediation\u003c/b\u003e . 603 für seinen Übertritt zugesagt hatte. 1 ) Geplant wurde auch&nbsp;..."
+      }
+    }
+  ]
+}

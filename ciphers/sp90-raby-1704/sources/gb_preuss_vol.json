@@ -1,0 +1,65 @@
+{
+  "kind": "books#volume",
+  "id": "UfnriIriq9UC",
+  "etag": "zb+bUlmSAqw",
+  "selfLink": "https://www.googleapis.com/books/v1/volumes/UfnriIriq9UC",
+  "volumeInfo": {
+    "title": "Die preussische Mediation zwischen Bayern und Oesterreich",
+    "subtitle": "1704",
+    "authors": [
+      "Georg Friedrich Preuss"
+    ],
+    "publisher": "Wolf",
+    "publishedDate": "1897",
+    "readingModes": {
+      "text": false,
+      "image": true
+    },
+    "pageCount": 103,
+    "printedPageCount": 114,
+    "printType": "BOOK",
+    "maturityRating": "NOT_MATURE",
+    "allowAnonLogging": false,
+    "contentVersion": "1.1.2.0.full.1",
+    "panelizationSummary": {
+      "containsEpubBubbles": false,
+      "containsImageBubbles": false
+    },
+    "imageLinks": {
+      "smallThumbnail": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=5&edge=curl&imgtk=AFLRE70Kby58hcEgnxjT-_kOO_bkb5xUWEowFzPolzIKDz1iYRR8zqm6KxieGEFljiKmFJQSfWPtyyRGxS_qXNDRM3qasbCQZjYi9Y1TifRzo-db8RrBzq2zbmJQZvQACttpurrgH6_i&source=gbs_api",
+      "thumbnail": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72FqkMEgVjFGa2whXi3GlI-ZpdIHOKGICDHkVRhi6qadJli0QbdUNIAOqzo9ICoW7BFULdz2308Ai0YU6fc5UyS656Zxwj64UDcev-A0bsgfONR9D0i5J0lhzHDUQnrII6UBzIe&source=gbs_api",
+      "small": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=2&edge=curl&imgtk=AFLRE72j2FcwG5t_QJPkYpjAHRQedZvCRxitiij1DursHJxZDhxvMQz02kZWXE5fm6kjYzP3c2ENYjeUbsM9kKDaZVQzwLhKs1bE32WVyC5KMOBHtm5VruQnNEcctuvwr3my1wLe3Z1-&source=gbs_api",
+      "medium": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=3&edge=curl&imgtk=AFLRE725MO1RbAQBgixv5lFANAX5j0ZppL0-gNZ3PjbSHoP4c4XINRny5lEtyE3Ot5BRw3wbuQI-JP4w6pa-N--CXhWvhcOy1OXPp4i2SwMDknlUMx3jclzTb5SwcQ0eSWUj4al5Tv1w&source=gbs_api",
+      "large": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=4&edge=curl&imgtk=AFLRE71bg3ypWdNKFpMWv7fM8IUdiFParGlrZPF1yx6ROh6DCJbbKWDSZ-FCBQCWVN4rwsPT0yrgvXolwa0NIbhM4NVeLKH8YOLU6ZPNAj2TIP3DspLeso7ErSQNIR3IKIvTcTlMKiQq&source=gbs_api",
+      "extraLarge": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=6&edge=curl&imgtk=AFLRE701QWv1mSyzlCcgQt9CuKeBTwEm5IOqpEGKbmiBRG1SuLy9_kN2zAttUA9GnNfK7e5Lz3bVGyit8n7L5_9ABXKatvRsN8oc0byucvkZe4pLupJf-tHO-sKTBf_XEaFkxPBGWYsh&source=gbs_api"
+    },
+    "language": "de",
+    "previewLink": "http://books.google.com/books?id=UfnriIriq9UC&hl=&source=gbs_api",
+    "infoLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC&source=gbs_api",
+    "canonicalVolumeLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC"
+  },
+  "saleInfo": {
+    "country": "US",
+    "saleability": "FREE",
+    "isEbook": true,
+    "buyLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC&rdid=book-UfnriIriq9UC&rdot=1&source=gbs_api"
+  },
+  "accessInfo": {
+    "country": "US",
+    "viewability": "ALL_PAGES",
+    "embeddable": true,
+    "publicDomain": true,
+    "textToSpeechPermission": "ALLOWED",
+    "epub": {
+      "isAvailable": false,
+      "downloadLink": "http://books.google.com/books/download/Die_preussische_Mediation_zwischen_Bayer.epub?id=UfnriIriq9UC&hl=&output=epub&source=gbs_api"
+    },
+    "pdf": {
+      "isAvailable": true,
+      "downloadLink": "http://books.google.com/books/download/Die_preussische_Mediation_zwischen_Bayer.pdf?id=UfnriIriq9UC&hl=&output=pdf&sig=ACfU3U0d5Q3mlYaD8rTS5EqoW0JwCwCbLA&source=gbs_api"
+    },
+    "webReaderLink": "http://play.google.com/books/reader?id=UfnriIriq9UC&hl=&source=gbs_api",
+    "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+    "quoteSharingAllowed": false
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 2,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "UfnriIriq9UC",
+      "etag": "6NWsAmHqT0Y",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UfnriIriq9UC",
+      "volumeInfo": {
+        "title": "Die preussische Mediation zwischen Bayern und Oesterreich",
+        "subtitle": "1704",
+        "authors": [
+          "Georg Friedrich Preuss"
+        ],
+        "publishedDate": "1897",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BSB:BSB11801846"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 114,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.2.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=UfnriIriq9UC&pg=PA10&dq=%22Raby%22+%22Berlepsch%22+1704&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC&rdid=book-UfnriIriq9UC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Die_preussische_Mediation_zwischen_Bayer.epub?id=UfnriIriq9UC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=UfnriIriq9UC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "\u003cb\u003e1704\u003c/b\u003e Georg Friedrich Preuss. stimmten preussischen Gesandten zu erbitten . An der ... \u003cb\u003eRaby\u003c/b\u003e hatte sie dem Staats- minister , Graf Kolb v . Wartenberg ... \u003cb\u003eBerlepsch\u003c/b\u003e ; 24. Januar . 2 ) Über diese geheime Sendung Montmoulins , welche&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "QcALAQAAMAAJ",
+      "etag": "9cIj+Fzqr2c",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/QcALAQAAMAAJ",
+      "volumeInfo": {
+        "title": "Ceremonial-Acta",
+        "authors": [
+          "Johann von Besser"
+        ],
+        "publishedDate": "2009",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015079306554"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 588,
+        "printType": "BOOK",
+        "categories": [
+          "Poets, German"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.1.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=QcALAQAAMAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=QcALAQAAMAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=QcALAQAAMAAJ&q=%22Raby%22+%22Berlepsch%22+1704&dq=%22Raby%22+%22Berlepsch%22+1704&hl=&cd=2&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=QcALAQAAMAAJ&dq=%22Raby%22+%22Berlepsch%22+1704&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/Ceremonial_Acta.html?hl=&id=QcALAQAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=QcALAQAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eBERLEPSCH\u003c/b\u003e , der die gantze CAMPAGNE über sich bey dem DUC aufgehalten , ein ... \u003cb\u003eRABY\u003c/b\u003e , bey welchem Er in Geselschaft unseres Herrn OberCämmerers und des ... \u003cb\u003e1704\u003c/b\u003e."
+      }
+    }
+  ]
+}

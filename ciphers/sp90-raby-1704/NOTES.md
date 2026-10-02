@@ -142,9 +142,9 @@ into one REQUEST.md is an access-worker task).
 
 Waits on: a copy request for British Library Add MS 61137 ff.41 and 55 (REQUEST.md, since 25 Sept 2026).
 
-- S: search the HMC printed series directly page-by-page (only web-searched so far) for a Strafford/Raby 1704 report -- this file's own named next step 2.
-- S: fetch SP 90/2/343 (Berlepsch to Frederick I, same Reichart channel, not itself cipher-flagged) for plaintext context on the /409, /409v enclosure -- named in 'Next', not yet fetched.
-- S: search German-language literature on the Reichart-Berlepsch Bavarian mediation channel, flagged as unsearched in the Verdict's own caveat.
+- S: search the HMC printed series directly page-by-page (only web-searched so far) for a Strafford/Raby 1704 report -- this file's own named next step 2. **OPEN 2 Oct 2026: attempted, not run -- archive.org answered 'Temporarily Offline' on 2 Oct 2026 02:48-02:50 UTC (3 resets, 2 maintenance pages, single retry spent); see the OPEN section below.**
+- S: fetch SP 90/2/343 (Berlepsch to Frederick I, same Reichart channel, not itself cipher-flagged) for plaintext context on the /409, /409v enclosure -- named in 'Next', not yet fetched. **OPEN 2 Oct 2026: catalogue description fetched (search hit, below); item details and a copy not fetched (Discovery cap 5 spent on the SP 87 siblings).**
+- S: search German-language literature on the Reichart-Berlepsch Bavarian mediation channel, flagged as unsearched in the Verdict's own caveat. **OPEN 2 Oct 2026: done through the Books API -- Preuss 1897 and Riezler 1913 located and snippet-mined, neither readable page by page from the cloud; see the OPEN section below.**
 
 ## Web and blog check (WEBCHECK-sp90-raby-1704, 2 Oct 2026)
 
@@ -235,3 +235,83 @@ dbourdeau.github.io 1. WebSearch 14 queries. No 429 or challenge page.
 sp90-raby-1704: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit 0
 ```
+
+## OPEN-sp90-raby-1704 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-open-step.md`; run 2 Oct 2026 02:45-02:5x UTC (clock read). Step: the
+"While waiting" S3 item as WEBCHECK refined it (the Reichart-Berlepsch channel leads: Preuss 1897, Riezler p.603,
+SP 87/2/41 in clear) plus the HMC printed series on archive.org for a Strafford/Raby 1704 report. Fetched text is in
+`sources/` with `sources/manifest.tsv`. Hosts: discovery.nationalarchives.gov.uk 5, www.googleapis.com 15,
+archive.org/be-api 7 (of 20 allowed; the host went down, below). Vision 0. No credential printed.
+
+**Result in one line: none of the five items has a printed clear text, a key description or a decipherment in any
+source reached on 2 Oct 2026 (rule 10: a search result, not a verdict); the step did identify a second manuscript
+copy of items 4-5 (SP 90/2/409 + 409v) in Marlborough's own papers, SP 87/2/37 f.68, and a sixth letter of the same
+channel, SP 90/2/360, neither on the target list before.** Status word unchanged (`open`).
+
+### 1. TNA Discovery API (5 requests, 1.6 s apart, all HTTP 200)
+
+| Item | id | Date | Catalogue summary (scopeContent), abridged | `note` | Bears on |
+|---|---|---|---|---|---|
+| SP 87/2/41, ff.75-78 | C8950281 | 1704 Jun 23 | Berlepsch [to Marlborough]: his secret meeting with Sieur Reichart has taken place, resulting in the enclosed list [SP 87/2/42] of the elector of Bavaria's demands; Reichart showed him a letter from Tallard (army 35,000, money/provisions/munitions promised); Savoy ready to treat with France; Louis of Baden and Eugene authorised to approach the elector; Berlepsch returning to Berlin then Vienna. Dated at Nuremberg. On dorse, copy of a letter [to Berlepsch] from camp at Ober Aching asking him to remain hidden. | None | Items 4-5: the same channel three weeks later, in clear; the Bavarian demands are a separate enclosure (SP 87/2/42, not fetched) |
+| SP 87/2/37, f.68 | C8950277 | 1704 Jun 02 | Sieur Reichart [?to Berlepsch]: continuous marches have prevented him replying to the last three letters; hoped to leave to communicate the elector's resolution but cannot "for fear of offending the French, who already have wind of the negotiations". PS written at Wiblingen with directions for a secret meeting at Günzburg, near Ulm. Written at camp at Laupheim; received in Nuremberg on 10 June. | None | **Items 4-5: the same letter and postscript** -- SP 90/2/409 is Reichart to Berlepsch, 2 June, "Excuses long silence... From Camp at Laubheim, near Ulm", and 409v is 3 June, "Arranging a rendezvous at Günzburg. From Wibling, near Ulm" |
+| SP 87/2/36, f.67 | C8950276 | 1704 Jun 10 | Berlepsch [to Marlborough]: "he encloses copies from Sieur Reichart, secretary to the elector", sent via count Löwenstein; letters for him to go through Buhretti d'Oldfelt, the king's resident in Nuremberg. Dated at Nuremberg. | None | The covering letter under which the SP 87/2/37 copy travelled |
+| SP 90/2/343 | C6554811 | 1704 May 2 | [Berlepsch] to [Frederick I]: account of conference with "M. Richard", i.e. Reichart; details of Bavarian and Imperial demands and concessions; "Arrangements for correspondence with Richard". From Ratisbon. (search-result description only) | not fetched | Plaintext context for the channel; the "arrangements for correspondence" sentence is where a description of the cipher would sit |
+| SP 90/2/360 | C6554816 | 1704 May 5 | Richard to [Berlepsch]: another meeting must be arranged; optimistic about a settlement. From Camp at Wibl[ing] near Ulm. (search-result description only) | not fetched | A sixth letter of the Reichart-Berlepsch channel in SP 90/2, between items 3 and 4, not on the target list; whether it is cipher-flagged is unknown until its details are fetched |
+
+Reading of the SP 87/2/37 finding, with its limits: SP 87/2/37 is a copy of items 4-5 forwarded by Berlepsch to
+Marlborough on 10 June 1704. Its catalogue entry carries no "Partly in cipher" note where the SP 90/2 copy's does, and
+its summary is fuller (it reports a sentence of the body), which is consistent with a copy in clear -- but this
+worker did not establish whether the SP 87 cataloguer uses the `note` field for cipher at all (SP 87/2/41, in clear,
+is also `note` None, which proves nothing either way), so "in clear" is an inference (grade I), not a catalogue
+statement. `digitised` false for all three SP 87 items. The sixth-letter and second-copy facts are catalogue facts
+(grade H from the Discovery API).
+
+### 2. Google Books API (15 requests, keyed, `country=US`, 1.6 s apart, all HTTP 200)
+
+| # | Query | Items | What it gave |
+|---|---|---|---|
+| 1 | `volumes/UfnriIriq9UC` | Preuss, *Die preussische Mediation zwischen Bayern und Oesterreich* (Wolf, 1897), 103 pp. | viewability ALL_PAGES, `pdf.isAvailable` true -- the download link is on books.google.com, which the brief excludes and which is captcha-blocked from the cloud; not fetched |
+| 2 | `Berlepsch Reichart Chiffre` filter=full | 6 | 19th-century newspapers and Archives diplomatiques, all unrelated |
+| 3 | `"Raby" "Berlepsch" 1704` | 2 | Preuss (snippet: "Raby hatte sie dem Staatsminister, Graf Kolb v. Wartenberg ... Berlepsch; 24. Januar. 2) Über diese geheime Sendung Montmoulins"); *Ceremonial-Acta* (2009, NO_PAGES: Berlepsch "die gantze Campagne über sich bey dem Duc aufgehalten", Raby, 1704) |
+| 4 | `Riezler "Geschichte Baierns" Raby Mediation` | 2 | Riezler, *Geschichte Baierns*, Bd. Von 1651-1704 (1913, 3hFXAAAAMAAJ) and the 1964 reprint, both NO_PAGES; snippet confirms pp.602-603 = "Max Emanuels Forderungen" / "preußische Mediation", with "Raby anweisen, alle Zugeständnisse an Baiern zu billigen" |
+| 5 | `"Historical Manuscripts Commission" Raby Berlin 1704 Hedges` | 1 | *Canadian-American Review of Hungarian Studies* 1978 (NO_PAGES): cites "Historical Manuscripts Commission, Report on the Manuscripts of ..." (title cut), "Hedges, 29 December 1703", "Raby's Circular Letter of 26 January 1704 and f.39, Raby" -- an HMC report that prints or calendars Raby's early-1704 letters exists but is not named in the snippet |
+| 6-13 | eight queries pairing the Preuss title phrase with Chiffre / Raby Hedges / Reichart Günzburg / Promemoria Punkte / Hedges (and two HMC and Marlborough variants) | 0, 0, 0, 0, 0, 0, 0, then 1 | all zero except `"preussische Mediation" Hedges` -> *A Question of Empire* (1983), which cites Preuss and Stepney's despatch "Hedges, Vienna, 16 January 1704" and BHGS Kasten Schwarz 17044 (Bavarian state archive) |
+| 14 | `"preussische Mediation" Reichart Berlepsch` | 2 | Preuss (snippet: "Berlepsch und den bayerischen Bevollmächtigten Baron Zirkenstein und Reichart beinahe bis zum Abschlusse eines Friedens- und Allianztraktates, als Max Emanuel ..."); *Geschichte des bayerischen Heeres* (1905) citing Preuss S. 8 ff. |
+
+What this establishes: Preuss 1897 is the printed narrative of the Reichart-Berlepsch mediation, drawn (by its
+snippets) from the Prussian side, and it names Raby's part in it; it is full view on Google Books but cannot be read
+page by page from this box. Zero hits for the title phrase with "Chiffre" is a weak negative only (the API's term
+matching is not a full-text grep). No snippet from any volume prints or paraphrases the text of SP 90/2/335, 337,
+348, 409 or 409v, and none describes a key. The HMC report cited in 1978 (query 5) is the one lead the archive.org
+half of this step was meant to open.
+
+### 3. archive.org and be-api (7 requests; host down)
+
+be-api `fts/v1/search` for `"Berlepsch" "Reichart"` (1,480 hits) and `"Raby" "Berlepsch"` (1,562 hits) returned
+OR-matched noise (ornithology, Müntzer, Polish newspapers) with no 1704 item in the top ten of either -- the global
+full-text endpoint is not phrase-AND and is not usable for this question. `advancedsearch.php` for Riezler's
+*Geschichte Baierns* and for the HMC Portland volumes: three connection resets (02:48 UTC), then the "Internet Archive:
+Temporarily Offline" maintenance page at 02:49, and the same page on the single permitted retry at 02:49:46. Stopped
+per the good-citizen rule. **The HMC page-by-page search and the Riezler Bd. 7 grep were therefore not run**: this
+half of the step is blocked from outside the session (host down), not negative.
+
+### Which of the five items any of this illuminates
+
+- **SP 90/2/335, 337, 348 (Raby to Hedges, 29 Apr, 6 and 13 May 1704): nothing.** No printed clear text, key
+  description or decipherment found in the Discovery entries, the Books API snippets, or the two be-api searches on
+  2 Oct 2026. The HMC report the 1978 citation points at remains unopened (archive.org down).
+- **SP 90/2/409 + 409v (Reichart to Berlepsch, 2-3 June 1704): context, not a reading.** A second manuscript copy
+  (SP 87/2/37, f.68; catalogue not cipher-flagged, summary fuller than SP 90/2's) and the channel's content in clear
+  three weeks later (SP 87/2/41, with the Bavarian demands as SP 87/2/42); Preuss 1897 as the printed narrative. No
+  printed text of the enclosure itself and no key description found.
+
+### Next
+
+ONE next step: re-run the archive.org half when the host is back -- `advancedsearch` for HMC Portland vol. IV and
+HMC Bath (Prior papers) plus Riezler *Geschichte Baierns* Bd. 7, then `be-api fts` with `identifier=` on each hit for
+Raby / Berlepsch / Reichart / Berlin 1704, and `_djvu.txt` grep where the item is open -- about USD 2, 20 minutes, 20
+requests. Suggestion only (Usage 7, not run): a LOCAL-QUEUE row for the owner's browser to download the Preuss 1897
+PDF (Google Books full view, 103 pp.) and to read Riezler pp.602-603 on HathiTrust, and a line in REQUEST.md adding
+SP 87/2/37 f.68 as a cheaper second copy of items 4-5 beside the Add MS 61137 f.55 request.
+

@@ -1,0 +1,142 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 2,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "UfnriIriq9UC",
+      "etag": "NqfLrW5jhW8",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/UfnriIriq9UC",
+      "volumeInfo": {
+        "title": "Die preussische Mediation zwischen Bayern und Oesterreich",
+        "subtitle": "1704",
+        "authors": [
+          "Georg Friedrich Preuss"
+        ],
+        "publishedDate": "1897",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "BSB:BSB11801846"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 114,
+        "printType": "BOOK",
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "1.1.2.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=UfnriIriq9UC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=UfnriIriq9UC&pg=PA76&dq=%22preussische+Mediation%22+Reichart+Berlepsch&hl=&cd=1&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=UfnriIriq9UC&rdid=book-UfnriIriq9UC&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Die_preussische_Mediation_zwischen_Bayer.epub?id=UfnriIriq9UC&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=UfnriIriq9UC&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eBerlepsch\u003c/b\u003e und den bayerischen Bevollmäch- tigten Baron Zirkenstein und \u003cb\u003eReichart\u003c/b\u003e beinahe bis zum Abschlusse eines Friedens- und Allianztraktates , als Max Emanuel , der von den französischen Generälen scharf beobachtet und im Bunde mit&nbsp;..."
+      }
+    },
+    {
+      "kind": "books#volume",
+      "id": "A_CgAAAAMAAJ",
+      "etag": "hZ3hpcFO1Og",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/A_CgAAAAMAAJ",
+      "volumeInfo": {
+        "title": "Geschichte des bayerischen Heeres: Geschichte des kurbayerischen Heeres unter Kurfürst Max II. Emanuel 1680-1726",
+        "authors": [
+          "Bavaria (Germany). Heeresarchiv"
+        ],
+        "publishedDate": "1905",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "UOM:39015074186449"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": true
+        },
+        "pageCount": 726,
+        "printType": "BOOK",
+        "averageRating": 1,
+        "ratingsCount": 1,
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.11.11.0.full.1",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=A_CgAAAAMAAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=A_CgAAAAMAAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+        },
+        "language": "de",
+        "previewLink": "http://books.google.com/books?id=A_CgAAAAMAAJ&pg=PA1028&dq=%22preussische+Mediation%22+Reichart+Berlepsch&hl=&cd=2&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=A_CgAAAAMAAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=A_CgAAAAMAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "FREE",
+        "isEbook": true,
+        "buyLink": "https://play.google.com/store/books/details?id=A_CgAAAAMAAJ&rdid=book-A_CgAAAAMAAJ&rdot=1&source=gbs_api"
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "ALL_PAGES",
+        "embeddable": true,
+        "publicDomain": true,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false,
+          "downloadLink": "http://books.google.com/books/download/Geschichte_des_bayerischen_Heeres_Geschi.epub?id=A_CgAAAAMAAJ&hl=&output=epub&source=gbs_api"
+        },
+        "pdf": {
+          "isAvailable": true,
+          "downloadLink": "http://books.google.com/books/download/Geschichte_des_bayerischen_Heeres_Geschi.pdf?id=A_CgAAAAMAAJ&hl=&output=pdf&sig=ACfU3U1g9lcd6wKNIfqjdaOfREhrAk2Xnw&source=gbs_api"
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=A_CgAAAAMAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "FULL_PUBLIC_DOMAIN",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "... \u003cb\u003eBerlepsch\u003c/b\u003e dorthin ge- sandt , um die Bedingungen des Kurfürsten für einen Abschluß an die große Allianz zu ... \u003cb\u003epreußische Mediation\u003c/b\u003e zwischen Bayern und Öster reich . München 1897. S. 8 ff . 1 ) Gutachten der Generale bei Vault&nbsp;..."
+      }
+    }
+  ]
+}

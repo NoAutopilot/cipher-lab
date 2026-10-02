@@ -1,0 +1,70 @@
+{
+  "kind": "books#volumes",
+  "totalItems": 1,
+  "items": [
+    {
+      "kind": "books#volume",
+      "id": "Je-RAAAAIAAJ",
+      "etag": "nK8Tch3qXJA",
+      "selfLink": "https://www.googleapis.com/books/v1/volumes/Je-RAAAAIAAJ",
+      "volumeInfo": {
+        "title": "The Canadian-American Review of Hungarian Studies",
+        "publishedDate": "1978",
+        "industryIdentifiers": [
+          {
+            "type": "OTHER",
+            "identifier": "STANFORD:36105071809037"
+          }
+        ],
+        "readingModes": {
+          "text": false,
+          "image": false
+        },
+        "pageCount": 498,
+        "printType": "BOOK",
+        "categories": [
+          "Hungary"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "0.5.2.0.preview.0",
+        "panelizationSummary": {
+          "containsEpubBubbles": false,
+          "containsImageBubbles": false
+        },
+        "imageLinks": {
+          "smallThumbnail": "http://books.google.com/books/content?id=Je-RAAAAIAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+          "thumbnail": "http://books.google.com/books/content?id=Je-RAAAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=Je-RAAAAIAAJ&q=%22Historical+Manuscripts+Commission%22+Raby+Berlin+1704+Hedges&dq=%22Historical+Manuscripts+Commission%22+Raby+Berlin+1704+Hedges&hl=&cd=1&source=gbs_api",
+        "infoLink": "http://books.google.com/books?id=Je-RAAAAIAAJ&dq=%22Historical+Manuscripts+Commission%22+Raby+Berlin+1704+Hedges&hl=&source=gbs_api",
+        "canonicalVolumeLink": "https://books.google.com/books/about/The_Canadian_American_Review_of_Hungaria.html?hl=&id=Je-RAAAAIAAJ"
+      },
+      "saleInfo": {
+        "country": "US",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+      },
+      "accessInfo": {
+        "country": "US",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+          "isAvailable": false
+        },
+        "pdf": {
+          "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=Je-RAAAAIAAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+      },
+      "searchInfo": {
+        "textSnippet": "Britain , \u003cb\u003eHistorical Manuscripts Commission\u003c/b\u003e , Report on the Manuscripts of ... \u003cb\u003eHedges\u003c/b\u003e , 29 December 1703 . The Maritime Powers entertained unrealistic ... \u003cb\u003eRaby&#39;s\u003c/b\u003e Circular Letter of 26 January \u003cb\u003e1704\u003c/b\u003e and f . 39 , \u003cb\u003eRaby\u003c/b\u003e to Hill&nbsp;..."
+      }
+    }
+  ]
+}

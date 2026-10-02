@@ -1,0 +1,11 @@
+file	host	url_or_query	fetched_utc	result
+disc_C8950281_sp87-2-41.json	discovery.nationalarchives.gov.uk	API/records/v1/details/C8950281 (SP 87/2/41, Berlepsch to Marlborough, 23 Jun 1704, ff.75-78)	2026-10-02 02:45	scopeContent saved; note None (not cipher-flagged); digitised false
+disc_search_sp87_reichart.json	discovery.nationalarchives.gov.uk	API/search/records?sps.searchQuery=Reichart&sps.recordSeries=SP 87	2026-10-02 02:45	3 items: SP 87/2/36, /37, /41
+disc_search_sp90_berlepsch.json	discovery.nationalarchives.gov.uk	API/search/records?sps.searchQuery=Berlepsch&sps.recordSeries=SP 90	2026-10-02 02:46	6 items: SP 90/2/343, /360, /409, /409v; SP 90/4/405, /411
+disc_C8950277_sp87-2-37.json	discovery.nationalarchives.gov.uk	API/records/v1/details/C8950277 (SP 87/2/37, Reichart [to Berlepsch], 2 Jun 1704, f.68)	2026-10-02 02:46	same letter+PS as SP 90/2/409+409v; note None; digitised false
+disc_C8950276_sp87-2-36.json	discovery.nationalarchives.gov.uk	API/records/v1/details/C8950276 (SP 87/2/36, Berlepsch to Marlborough, 10 Jun 1704, f.67)	2026-10-02 02:46	covering letter for the Reichart copies; note None
+gb_preuss_vol.json	www.googleapis.com	books/v1/volumes/UfnriIriq9UC	2026-10-02 02:46	Preuss 1897, 103 pp., viewability ALL_PAGES, pdf isAvailable true (books.google.com download link, not usable from the cloud)
+gb_q1..gb_q14 (14 files)	www.googleapis.com	books/v1/volumes?q=... (queries listed in NOTES.md)	2026-10-02 02:46-02:47	snippets only; see NOTES.md table
+ia_fts_berlepsch_reichart.json	be-api.us.archive.org	fts/v1/search?q="Berlepsch" "Reichart"	2026-10-02 02:48	1480 hits, OR-matched noise (ornithology, Muentzer); no 1704 item in top 10
+ia_fts_raby_berlepsch.json	be-api.us.archive.org	fts/v1/search?q="Raby" "Berlepsch"	2026-10-02 02:48	1562 hits, same noise shape; no 1704 item in top 10
+(none)	archive.org	advancedsearch.php Riezler/Geschichte Baierns; Portland/manuscripts	2026-10-02 02:48-02:49	3 connection resets, then the "Internet Archive: Temporarily Offline" page (saved nowhere); host down, see NOTES.md
