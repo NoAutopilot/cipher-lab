@@ -22,7 +22,10 @@ from collections import OrderedDict
 LOOKALIKE = {frozenset(p) for p in [("S30", "S49"), ("S30", "S73"), ("S49", "S73"), ("S24", "S88"), ("S37", "S74"),
                                     ("S55", "S94"), ("S13", "S69"), ("S13", "S95"), ("S69", "S95"), ("S65", "S80"),
                                     ("S53", "S54"), ("S37", "S54"), ("S26", "S66"), ("S16", "S42"), ("S74", "S77"),
-                                    ("S47", "S91"), ("S91", "S93"), ("S58", "S76"), ("S59", "S50")]}
+                                    ("S47", "S91"), ("S91", "S93"), ("S58", "S76"), ("S59", "S50"),
+                                    # NEVBIR-47 (2 Oct 2026): extra cells of the fr.3252 f.47r brief
+                                    ("X_DSLASH", "S49"), ("X_DSLASH", "S73"), ("X_DSLASH", "S30"), ("X_DCARET", "S23"),
+                                    ("X_DCARET", "S97"), ("S23", "S97"), ("X_TRI", "S16"), ("X_TRI", "S42")]}
 
 
 def load(fn):
