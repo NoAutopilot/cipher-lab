@@ -555,3 +555,19 @@ Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 27
 - [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
 - [ ] retry: f.117r done at 2-of-3 (NEVBIR-117C); power at a measured post-look-alike error not run; f.47r whole block
 Verdict: keep going: 6 internal gaps; cheapest next: f.117r power control at a known-answer look-alike error, ~$1
+
+## Scout for a third letter in the Nov 1571 numerical key (BIRAGO-NUM-SCOUT, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-birago-num-scout.md`, after BIRAGO-NUM3 retired the joint anneal at 985 digits.
+Both BnF finding aids were read in full (fr.3251 `ark:/12148/cc49712p`, fr.3252 `ark:/12148/cc49713x`, 2 Oct 2026). Every
+Birago<->Nevers letter dated Sept 1571-Mar 1572 that BIRAGO-POOL.tsv did not already list was viewed at 1400-px Gallica overview
+(canvas = folio + 1 in both volumes, confirmed on the ink foliation of every canvas viewed). That was 13 Birago letters (fr.3251 f.3,
+f.91, f.95, f.98, f.100, f.117; fr.3252 f.70, f.81, f.86-89, f.109, f.113, f.115, plus f.107v-108r in the gap where the finding aid
+has no no.72) and 2 Nevers-side letters to Birago (fr.3252 f.105 copy of 9 Feb 1572, f.119-120 of 28 Mar 1572). **None carries
+cipher.** None shows digit runs, m/n/h/f modifiers, the divide sign or superscript crosses. No native fetch was needed. In this window the only
+cipher letters in the two volumes are the ones already on file: fr.3251 f.119 (13 Nov 1571), fr.3252 f.100r (8 Jan 1572), fr.3251
+f.138 (7 Feb 1572) and f.144 (27 Mar 1572) (Nevers-Birago 1572 folder), and fr.3252 f.117r (13 Mar 1572, a symbol cipher).
+Rows are in `../nevers-birago-fr3251-1572/BIRAGO-POOL.tsv`. Not covered: other volumes (the Guazzo letters in fr.4688, Dec 1571-Apr 1572,
+are in the pool already but are not on Gallica), and whether f.138 (7 Feb 1572) is in the 1572 key or the numerical key. That
+assignment comes from Tomokiyo and the 1572 folder, and this scout did not re-test it. Suggestion only: f.138's digit shape against
+f.100r/f.119 is the cheapest remaining in-volume check for more numerical-key text. Requests: gallica.bnf.fr IIIF 33, archivesetmanuscrits.bnf.fr 2.
