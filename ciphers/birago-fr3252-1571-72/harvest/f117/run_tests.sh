@@ -7,9 +7,9 @@ ERR=${1:-0.12}
 G=../../../ceppo-nevers-fr3251-1570s/harvest
 N=../../../nevers-birago-fr3251-1572/harvest
 for v in printed T42m clerkvar; do
-  python3 $G/decode_control.py recon_f117.tsv --map map_$v.json --corpus fr --err $ERR --seed 1 --out reading_f117_$v.txt > test_$v.txt
+  python3 $G/decode_control.py recon_f117_final.tsv --map map_$v.json --corpus fr --err $ERR --seed 1 --out reading_f117_$v.txt > test_$v.txt
   tail -2 test_$v.txt
 done
 for v in printed T42m clerkvar; do
-  echo "judge $v:"; python3 $N/shuffled_judge.py ../../../../specs/birago-fr3252-f117.json map_$v.json recon_f117.tsv --seeds 20 --real | tail -4
+  echo "judge $v:"; python3 $N/shuffled_judge.py ../../../../specs/birago-fr3252-f117.json map_$v.json recon_f117_final.tsv --seeds 20 --real | tail -4
 done

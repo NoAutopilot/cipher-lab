@@ -1,0 +1,71 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+L01	8	8	T51	M	8	T65	M	split	barred k	loop/cross low
+L01	18	18	T76	M	18	T26	M	split	9	9 hook
+L01	19	19	X_NEW	M	19	T46	H	split_H_B	lone 8	8
+L01	22	22	T86	M	22	T60	H	split_H_B	hash small	hash
+L01	26	26	X_NEW	L	26	X_S	L	split	hooked long s	long s
+L01	28	28	T83	H	28	T81	H	split	x-shape	x curl
+L02	1	1	T95	M	1	T65	M	split	p long crossbar; line start	loop/cross low; line start
+L02	3	3	T86	M	3	T60	H	split_H_B	hash	hash
+L02	6	6	T26	M	6	T76	H	split_H_B	g	g hook
+L02	23	23	T83	M	23	T81	H	split_H_B	curly x	x curl
+L02	26	26	T86	M	26	T60	H	split_H_B	hash	hash
+L02	27	27	T18	H	27	T98	H	split	phi circle stem	phi
+L03	1	1	T90	M	1	T45	H	split_H_B	stem circle cross; line start	loop on stem; line start
+L03	4	4	T83	H	4	T81	H	split	x-shape	x curl
+L03	9	9	T83	M	9	X_NEW	L	split	curly x	curly x with hook?
+L03	10	10	T95	M	10	T65	H	split_H_B	p crossbar	loop/cross low
+L03	11	11	T86	M	11	T60	H	split_H_B	small hash	hash
+L03	15	15	T86	M	15	T60	H	split_H_B	hash	hash
+L03	16	16	T83	M	16	X_NEW	L	split	curly x	x-hook
+L03	23	23	T18	H	23	T98	H	split	phi stem	phi
+L03	25	25	X_NEW	M	25	T46	H	split_H_B	8	8
+L03	28	28	T90	M	28	T45	H	split_H_B	stem circle cross	loop on stem
+L03		29	T52	M				gapB	n-shape	
+L03	30	31	T83	M	30	X_S	L	split	curly x; line end	s-curl
+L03	31				31	T81	H	gapA		x curl; line end
+L04	6	6	T95	M	6	T65	H	split_H_B	p crossbar	loop/cross low
+L04	7	7	T86	M	7	T60	H	split_H_B	hash	hash
+L04	10	10	T90	H	10	T45	H	split	stem circle cross	loop on stem
+L04	12	12	T83	H	12	T81	H	split	curly x	x curl
+L04	15	15	X_NEW	M	15	X_S	L	split	f with dot	f with dot
+L04	22	22	T83	H	22	T81	H	split	curly x	x curl
+L04	23	23	T86	M	23	T60	H	split_H_B	hash	hash
+L04	26	26	T83	H	26	T81	H	split	curly x	x curl
+L05	1	1	X_NEW	M	1	X_S	L	split	l with hook; line start	long s; line start
+L05	2	2	T95	M	2	T65	H	split_H_B	p crossbar	loop/cross low
+L05	12	12	T95	M	12	T65	H	split_H_B	p	loop/cross low
+L05	16	16	T18	H	16	T98	H	split	phi	phi
+L05	18	18	T51	M	18	T65	H	split_H_B	barred	loop/cross low
+L05	20	20	X_NEW	L	20	X_S	L	split	s swash	s with o
+L05	22	22	T83	H	22	T81	H	split	curly x	x curl
+L05	26	26	X_NEW	L	26	X_S	L	split	big swash s	s hook
+L05	27	27	T66	M	27	T76	H	split_H_B	9 q	g hook
+L06	10	10	T83	H	10	T81	H	split	curly x	x curl
+L06	12	12	X_NEW	L	12	X_S	L	split	f hooked	long s
+L06	13	13	T51	M	13	T65	H	split_H_B	barred p	loop/cross low
+L06	18	18	T90	M	18	T45	H	split_H_B	stem circle cross	loop on stem
+L06	20	20	T83	H	20	T81	H	split	curly x	x curl
+L06	21	21	T86	M	21	T60	H	split_H_B	hash	hash
+L06	26	26	T90	M	26	T45	H	split_H_B	blob cross	loop on stem
+L06	31	31	X_NEW	L	31	T36	H	split_H_B	filled blob with stroke; line end	ink blot on stem; line end
+L07	10	10	T86	M	10	T60	H	split_H_B	hash	hash
+L07	21	21	T95	M	21	T65	H	split_H_B	p crossbar	loop/cross low
+L07	23	23	T86	M	23	T60	H	split_H_B	hash	hash
+L07	27	27	X_NEW	L	27	T98	H	split_H_B	filled circle stem	phi
+L07	28	28	T86	M	28	T60	H	split_H_B	hash	hash
+L07	29	29	T83	M	29	T81	H	split_H_B	curly x; line end	x curl; line end
+L08	6	6	T83	H	6	T81	H	split	curly x	x curl
+L08	10	10	T83	M	10	T81	H	split_H_B	curly x	x curl
+L08	19	19	T83	H	19	T81	H	split	curly x	x curl
+L08	23	23	T95	M	23	T65	H	split_H_B	p crossbar	loop/cross low
+L08	27	27	X_NEW	M	27	T29	H	split_H_B	epsilon with dot	eps-o
+L09	11	11	T95	M	11	T65	H	split_H_B	p crossbar	loop/cross low
+L09	17	17	T86	M	17	T60	H	split_H_B	hash	hash
+L09	20	20	T95	M	20	T65	H	split_H_B	p crossbar	loop/cross low
+L09		21	T96	M				gapB	e script edge	
+L09	29	30	T95	M	29	T65	H	split_H_B	p crossbar; line end	loop/cross low; line end
+L10	1	1	T83	H	1	T81	H	split	curly x; line start	x curl; line start
+L10					9	X_NEW	L	gapA		V with bar
+L10	10	10	T70	M	11	X_S	L	split	triangle on cross	s with dots; line end
+L10		11	X_NEW	M				gapB	f with dots; line end	

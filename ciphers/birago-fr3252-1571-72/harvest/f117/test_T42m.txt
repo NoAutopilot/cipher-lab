@@ -1,0 +1,13 @@
+L01	___mguilam_uelgunn_psnnua_arde
+L02	sannintentiondeconuenibauns__
+L03	poursuoibsngounbne_entsecarmagnolappi_b
+L04	ceguisnstperso_eguisernndroit
+L05	_susfaciheets_insele_ertou_es_es
+L06	sionsdestre_lusenpsbnihespeieec
+L07	guec_deuantinuoussu_sinda_snb
+L08	et_auorisercesta_airesiseneett
+L09	_esoingetsisuoussnmbsetantguis
+L10	reusisn_quello__
+
+TARGET: 277 signs, 0 nulls, 269 letters; real key -1.3782; 200 shuffled keys mean -1.7721 sd 0.1435 max -1.3805; z 2.74; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.25: real key rank 1 in 12/20; z median 2.63 min -0.08

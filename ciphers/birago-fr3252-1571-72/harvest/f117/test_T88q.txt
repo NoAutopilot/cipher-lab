@@ -1,0 +1,13 @@
+L01	___mquilam_uelqunn_psnnua_arde
+L02	sannintentiondeconuenibauns__
+L03	poursuoibsngounbne_entsecarmagnolappi_b
+L04	cequisnstperso_equisernndroit
+L05	_susfaciheets_insele_ertou_es_es
+L06	sionsdestre_lusenpsbnihespeieec
+L07	quec_deuantinuoussu_sinda_snb
+L08	et_auorisercesta_airesiseneett
+L09	_esoingetsisuoussnmbsetantquis
+L10	reusisn_quello__
+
+TARGET: 277 signs, 0 nulls, 269 letters; real key -1.3337; 200 shuffled keys mean -1.7728 sd 0.1421 max -1.3739; z 3.09; rank 1 of 201
+POWER CONTROL: 20 it16dip windows, same passage lengths, err 0.25: real key rank 1 in 13/20; z median 2.66 min 0.60

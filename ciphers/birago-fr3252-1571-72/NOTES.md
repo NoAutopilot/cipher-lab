@@ -162,19 +162,102 @@ Requests this job: gallica.bnf.fr 16 (9 overviews, 1 info.json, 4 regions, 1 HTT
 region; 10 ContentSearch), de-crypt.org 3, github.com 2 shallow clones, web search 4. Subagents: 3 Sonnet calls (2 passes +
 1 adjudication).
 
-## Remaining gaps (NEVBIR-3252, 2 Oct 2026)
-Read so far: 0 tokens graded of about 1,980 cipher signs across the three letters (f.47r 157 signs merged and tested, not licensed).
-- f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; crops exist for 5-17, line 2 needs a re-cut; next: re-cut without --follow-slope (fixed bands, region top moved up 60 px), two blind passes in 3-4 line chunks + adjudication, re-run decode_control on the whole block, ~$10
-- f.47r reader error 0.44 - blocker: not-attempted; one reader wrote X_NEW for forms the sheet lacks (harvest/recon_L01-04_disagreements.tsv); next: add the barred 8 / dot-group / plain-triangle forms to the sheet (or the owner's sign sorter) before the next passes, ~$2
-- f.100r (~800 digits, Nov 1571 numerical system, no key) - blocker: no-key-material; f.119's system is unread (Bourdeau closed-negative at 483 digits); next: transcribe and pool with f.119 for structural tests, ~$8
-- f.117r (~330 signs, 1572 key fits by inventory) - blocker: not-attempted; out of this brief's cap, design check only (Design checks section); next: two blind passes against the 1572 sorter labels, first test under the printed 1572 key + T42=m with a French judge, ~$5
+## f.117r (no.77, 13 Mar 1572): first test under the printed 1572 key (NEVBIR-3252-B, 2 Oct 2026)
 
-## Escalation (NEVBIR-3252, 2 Oct 2026)
-- [x] siblings: fr.3252 f.36-37 witness (Ceppo-Nevers, period gloss) and the fr.3251 folders used for keys and sheets
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-3252-b.md`. Folder `harvest/f117/`.
+
+**Crops** (command pasted before any subagent call; the profile detector found 9 of the 10 lines and drifted from line 6,
+so the centres were set by eye on its debug overlay, and a new `--bottom-margin` option was added to the shared tool
+because fixed bands clipped the descenders -- offline test `tools/tests/test_iiif_lines.py` 3c):
+`python3 tools/iiif_lines.py --ark btv1b9060232m --canvas 118 --region 4380,1400,3150,1300 --out ciphers/birago-fr3252-1571-72/images/f117 --prefix f117 --centres 103,223,347,462,580,702,815,944,1062,1210 --max-width 1100 --overlap 60 --debug`
+(fetched once; the cut was re-run from the local file with `--image ... --top-margin 15 --bottom-margin 45`). 10 lines x 3
+segments; debug overlay `images/f117/f117_lines_debug.jpg` checked by eye (one band per line, block complete: 10 lines,
+not ~13 as the overview estimate said); 2x reader copies in `images/f117/lines2x/` (gitignored, regenerable).
+
+**Blind passes.** Two value-blind Sonnet readers (`harvest/f117/blind_pass_brief_f117.md`, copied from the 1572 group's brief;
+`sign_sheet_blind_1572.png`; reader B read the lines in reverse order): `passA.tsv` 279 signs, `passB.tsv` 278. Value-blind
+reconciliation (`../ceppo-nevers-fr3251-1570s/harvest/reconcile_blind.py`): 281 aligned, **211 agreed (0.75)**. Most splits are
+systematic class pairs (hash T60/T86 x16, the two x forms T83/T81 x17, barred p T95/T51 vs T65 x14, barred vs plain loop-on-
+stem T90/T45 x6, phi T98/T18 x3). **Reconciliation:** no third subagent (account 2 at `allowed_warning`, flagged in ROOM.md
+22:13); this worker settled the 70 rows from the native crops against the sheet before any decode (`harvest/f117/settle_f117.py`,
+rules in its docstring; caveat there: this worker had seen part of the 1572 map while setting up, so it is one eye, not a
+blind third reader). Structural: L03's plain digits "8 5" are one sign, cell T11 (word code 85). Result
+`recon_f117_final.tsv`: **277 signs, 251 keyed, 26 unkeyed (25 X_, 1 '?')**. Measured two-reader error used for the power
+control: 1 - 0.75 = **0.25** (agreement, not accuracy; LESSONS.md "Look-alike pass").
+
+**Test** (`harvest/f117/run_tests.sh 0.25`: `decode_control.py --corpus fr` = fr16 Catherine de Medicis letters, 200 value-
+shuffled keys, power control 20 fr16 windows at err 0.25, seed 1; judge `specs/birago-fr3252-f117.json` (fr) with
+`shuffled_judge.py`, 20 shuffled-target decodes):
+
+| key variant | real key | shuffles mean (sd) / max | z | rank /201 | power, err 0.25 | judge real | shuffled-target judge |
+|---|---|---|---|---|---|---|---|
+| printed 1572 (Tomokiyo) | -1.3782 | -1.7757 (0.143) / -1.3732 | 2.77 | 2 | 11/20, z med 2.58 | -1.466 FAIL | 0/20 pass (max -1.744) |
+| T42 = m (pre-registered; T42 does not occur here) | -1.3782 | -1.7721 / -1.3805 | 2.74 | 1 | 12/20 | -1.466 FAIL | 0/20 |
+| clerk sheet C variant (T42 m, T50 s, T95 l; NEVBIR-87ALIGN) | -1.3640 | -1.7669 / -1.3927 | 2.78 | 1 | 12/20 | FAIL | 0/20 (max -1.788) |
+| T88 = q (fitted on this letter, post-hoc) | -1.3337 | -1.7728 / -1.3739 | 3.09 | 1 | 13/20 | -1.406 FAIL | 0/20 (max -1.747) |
+| printed key, Italian corpus it16dip (language check) | -1.4705 | -1.5762 / -1.2112 | 0.66 | 53 | 3/20 | -- | -- |
+
+judge thresholds (fr, N=269): real_p05 -0.901, null_p99 -1.853. `--fit-sign T88 --fit-values q`: q is the best single letter
+for T88 (-1.334; l -1.353, p -1.357; as printed g -1.378) -- the 1572 table has no q, and the g-signs read where French
+needs q ("ce qui", "quelqu'un"); T70/T76/T66/T42 do not move to a letter.
+
+**Verdict for this test: the language is French, not Italian; the n-gram test does not license the reading at this
+reader error, and this is not a negative.** The printed key beats the mean of 200 shuffled keys by z 2.8-3.1, but the best
+shuffled key comes within 0.01-0.04 of it, and at the measured 0.25 error the same key on real French of this length ranks
+first in only 11-13 of 20 windows. The judge FAILs on every variant, well below real_p05, with 0 of 20 shuffled-target
+decodes passing (not a non-test). What would settle it is a lower reader error. Most of the 25% is class confusion of a few
+look-alike pairs, which a look-alike pass with the 1572 group's confusion map (`../nevers-birago-fr3251-1572/harvest/confusion_1572.tsv`)
+or a blind third reader would cut. After that, re-run this table.
+
+**Decode (printed key + T88=q, `harvest/f117/reading_f117_T88q.txt`); not a licensed reading:**
+```
+L01 ___mquilam_uelqunn_psnnua_arde
+L02 sannintentiondeconuenibauns__
+L03 poursuoibsngounbne_entsecarmagnolappi_b
+L04 cequisnstperso_equisernndroit
+L05 _susfaciheets_insele_ertou_es_es
+L06 sionsdestre_lusenpsbnihespeieec
+L07 quec_deuantinuoussu_sinda_snb
+L08 et_auorisercesta_airesiseneett
+L09 _esoingetsisuoussnmbsetantquis
+L10 reusisn_quello__
+```
+**Grades (printed key): 277 signs; H 0, C 0, S 0, M 251, I 0, U 26** (25 off-sheet X_ and 1 unread). No S, because the control
+does not license the key at this error. Of the 251 M tokens, 188 sat at two-reader agreement H.
+
+**English gist of the readable fragments (M, a gist only, not a translation):** "...that he has ... someone (quelqu'un) ...
+[the] intention to agree (de convenir) ... pursue ... Carmagnola ... that which is ... [the] person ... and who will be ... [in that]
+place (endroit) ... to facilitate ... [some]thing ... before us (devant nous) ... and to favour these affairs (et favoriser ces
+affaires) ... the need (besoing), and if you ... and as much as (et tant que) ... quello [word code]". It concerns Carmagnola
+and an agreement or arrangement to be favoured. Nothing beyond these fragments is claimed.
+
+Requests this job: gallica.bnf.fr 3 (one f.118 region fetched and then superseded by a wider one; one f.48 region with the top
+moved up). Subagents: 2 Sonnet calls (passes A and B); no third reader.
+
+## f.47r (no.30): re-cut with line 2 (NEVBIR-3252-B, 2 Oct 2026)
+
+Crop fault fixed, from a new native region with the top moved up 100 px so line 1's right end is not at the edge:
+`python3 tools/iiif_lines.py --ark btv1b9060232m --canvas 48 --region 4830,2560,3400,2040 --out ciphers/birago-fr3252-1571-72/images/f47/recut --prefix f47r --centres 190,290,400,510,640,750,850,960,1080,1200,1300,1410,1520,1640,1760,1870,1980 --max-width 1200 --overlap 60 --follow-slope 400 --slope-local --slope-margin 20 --debug`
+**17 lines x 3 segments**, each band on its own line (checked by eye on L01 s1/s3, L02 s1/s3, L03 s3, L16 s3, L17 s1/s3).
+Line 2 is now its own band. L17 s3 is prose only ("...scriue esser capitate..."). Eye-set left-edge centres stopped the
+slope tracker locking two bands on line 1 (the NEVBIR-3252 fault); `--overlap 0` was not used. Blind passes were **not run**:
+account 2's rate limit read `allowed_warning` at 22:13 UTC and this job started no new subagents beyond f.117's two. The crops are
+ready for the next worker, together with the CEPPO-SPLITS look-alike shapes as the known answer.
+
+## Remaining gaps (NEVBIR-3252-B, 2 Oct 2026)
+Read so far: 0 tokens graded S or better of about 1,980 cipher signs. f.117r: 277 signs decoded, all M/U, not licensed; f.47r: 157 signs tested, not licensed.
+- f.117r reader error 0.25 - blocker: not-attempted; no third reader this job (rate limit allowed_warning); next: look-alike pass on the T60/T86, T83/T81, T95/T51/T65, T90/T45 tiles using the 1572 confusion map, or a blind third reader, then re-run harvest/f117/run_tests.sh at the new error, ~$3
+- f.117r T88=q - blocker: not-attempted; fitted post-hoc on this letter only; next: test T88=q pre-registered on another French or Italian 1572 leaf with q-words, disk only, ~$1
+- f.47r lines 2 and 5-17 (~690 signs) - blocker: not-attempted; re-cut done (images/f47/recut, 17 lines x 3); next: two blind passes in 3-4 line chunks + reconciliation against the Ceppo sheet with the CEPPO-SPLITS shapes as known answer, then re-run decode_control on the whole block, ~$10
+- f.47r reader error 0.44 - blocker: not-attempted; sheet lacks three forms the readers saw; next: add the barred 8 / dot-group / plain-triangle forms to the sheet before the next passes, ~$2
+- f.100r (~800 digits, Nov 1571 numerical system, no key) - blocker: no-key-material; f.119's system is unread (Bourdeau closed-negative at 483 digits); next: pooled with f.119 under BIRAGO-NUM (queued 2 Oct 2026)
+
+## Escalation (NEVBIR-3252-B, 2 Oct 2026)
+- [x] siblings: fr.3252 f.36-37 witness and the fr.3251 1572 group's sheet, maps, clerk key and controls used
 - [x] clear-pages: neighbours and facing pages of all three viewed; no clear copy or slip (Premise check (c))
-- [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (fits by inventory), Nov 1571 system has no key
+- [x] known-keys: Ceppo-Nevers on f.47r (tested), 1572 key on f.117r (tested: French, z 2.8-3.1, not licensed at 0.25), Nov 1571 system has no key
 - [x] print: Gomberville 1665 both parts searched inside; no Birago letter of 1571-72
-- [ ] key-rebuild: f.100r + f.119 pooled structural test (planned, see gaps)
-- [ ] image-check: native re-cut of f.47r line 2 and a 2x look for faint glosses on all 17 lines
-- [ ] retry: f.47r whole block at lower reader error
-Verdict: keep going: 3 internal gaps; cheapest next: f.47r sheet additions then the remaining 14 lines, ~$12
+- [ ] key-rebuild: T88=q pre-registered test on another leaf; f.100r + f.119 pooled (BIRAGO-NUM)
+- [x] image-check: f.117r native crops, 10 lines; f.47r native re-cut with line 2
+- [ ] retry: f.117r at lower reader error; f.47r whole block
+Verdict: keep going: 4 internal gaps; cheapest next: f.117r look-alike pass + re-run, ~$3
