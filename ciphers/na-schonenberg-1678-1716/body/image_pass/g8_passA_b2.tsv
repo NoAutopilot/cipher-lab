@@ -1,0 +1,55 @@
+line	pos	group_seen	gloss	conf	note
+L03	0	8)	L	H	capital L
+L03	1	12	a	H	
+L03	2	59	d	H	
+L03	3	60	e	H	comma after e in gloss
+L03	4	[tilde]	A	M	symbol is a tilde/wave with a dot (or two) under it; gloss looks like capital A (alt: 4-shaped A)
+L03	5	5)	b	H	
+L03	6	60	e	H	
+L03	7	2)	r	M	r sits between 2) and 88 but nearer 2); alt: r over 88 with 2) blank (then m/u/d/a/d/o shift) -- letter count 18 = groups 18 favours r over 2)
+L03	8	88	m	H	
+L03	9	30	u	H	
+L03	10	15	d	H	
+L03	11	)8	a	H	mark before the 8
+L03	12	3)	d	H	
+L03	13	90	o	H	
+L03	14	[X]	e	H	X/cross symbol with dots in its angles (:X:)
+L03	15	)2	s	H	mark before the 2
+L03	16	51	t	H	
+L03	17	60	e	H	
+L12	0	21	L	H	capital L
+L12	1	34	a	H	
+L12	2	58	i	M	gloss is a short upright stroke with a curl, read i (alt: e)
+L12	3	24	o	H	
+L12	4	)1	r	H	mark before the 1
+L12	5	10	e	H	
+L12	6	94	s	H	
+L12	7	69	p	H	
+L12	8	8	o	H	
+L12	9	6)	n	H	
+L12	10	59	d	H	
+L12	11	82	e	H	
+L12	12	45	n	H	
+L12	13	33	z	H	
+L12	14	)6	i	H	mark before the 6; gloss i (dotted, slight loop)
+L12	15	6	a	H	
+L12	16	)2	s	H	
+L12	17	38	e	H	
+L14	0	28	s	H	long s
+L14	1	3	o	H	
+L14	2	)9	b	H	mark before the 9
+L14	3	[blot]	_	H	ink blot over an E/three-bar-like symbol; nothing written above
+L14	4	)1	r	H	
+L14	5	10	e	H	followed in the gloss by a '=' (hyphen-like) mark between 10 and )2, not over a group
+L14	6	)2	s	H	long s
+L14	7	36	e	H	
+L14	8	2)	r	H	
+L14	9	54	y	H	
+L14	10	)3	t	H	t with long crossbar
+L14	11	46	o	H	comma after o in gloss
+L14	12	[square]	e	H	open rectangle symbol
+L14	13	45	n	H	comma after n
+L14	14	10	e	H	
+L14	15	28	s	H	long s
+L14	16	95	t	H	
+L14	17	34	a	H	
