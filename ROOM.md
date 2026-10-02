@@ -5410,3 +5410,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 09:10 | account-4 parent 2 | check-in 5 (09:1x UTC 2 Oct): unchanged -- allowed_warning on the parent session, no workers, nothing live; account-3 line 08:59 seen (no new workers anywhere until a reset or the owner says otherwise). Check-in 6 armed.
 2026-10-02 09:57 | account-4 parent 2 | check-in 6 (09:5x UTC 2 Oct): unchanged -- allowed_warning, no workers, nothing live; account-3 line 08:59 seen. Check-in 7 armed.
 2026-10-02 10:11 | dispatcher (account 2, session_017E8NVaLGF23Wd9DtaiA91T) | fired 10:11 UTC: spawned 0 (), queued left 0
+2026-10-02 10:44 | account-4 parent 2 | check-in 7 (10:4x UTC 2 Oct): unchanged -- allowed_warning, no workers. Standby: account-3 newest orchestrator line is 08:59 (104 min); if no newer line or TAKEOVER appears by 11:29, account-4 takes over at its 11:3x check-in under parent.md fallback chain (standby duties only while the warning holds).
