@@ -3,7 +3,7 @@ code	value	n	pages	grade	note
 12	encore	1	199	C	
 13	aux	2	191,192	M	ambiguous: aux (n=1, pages=191); au- (n=1, pages=192)
 21	bre	1	200	M	only a corrected/crossed-out cell seen
-25	a	4	191,200	M	ambiguous: a (n=3, pages=191,200); à (n=1, pages=191)
+25	a	4	191,200	C	ambiguous: a (n=3, pages=191,200); à (n=1, pages=191); GAPS3 2 Oct 2026: C: accent-only variant (a/à), the same code in four distinct words
 29	tru	1	no5(210-212)	C	
 36	heureux	1	200	C	
 43	mars	1	199	C	
@@ -17,13 +17,13 @@ code	value	n	pages	grade	note
 89	tard	1	200	C	
 91	Dre	1	191	M	only a corrected/crossed-out cell seen
 95	grand	1	200	C	
-99	n'	2	199,no5(210-212)	M	ambiguous: n' (n=1, pages=199); n (n=1, pages=no5(210-212))
-102	peu	3	200	M	ambiguous: peu (n=2, pages=200); peut (n=1, pages=200)
+99	n'	2	199,no5(210-212)	C	ambiguous: n' (n=1, pages=199); n (n=1, pages=no5(210-212)); GAPS3 2 Oct 2026: C: apostrophe-only variant (n'/n), the letter n in two distinct words
+102	peu	3	200	C	ambiguous: peu (n=2, pages=200); peut (n=1, pages=200); GAPS3 2 Oct 2026: C: the syllable peu in three distinct words (peu, peut, peu-vent)
 104	l'	1	191	C	
 108	m	1	no5(210-212)	C	
 120	Fin.	1	200	M	only a corrected/crossed-out cell seen
 131	un	4	191,200	C	
-140	de	5	191,200,no5(210-212)	M	ambiguous: de (n=3, pages=191,200); Dé (n=2, pages=191,no5(210-212))
+140	de	5	191,200,no5(210-212)	C	ambiguous: de (n=3, pages=191,200); Dé (n=2, pages=191,no5(210-212)); GAPS3 2 Oct 2026: C: accent-only variant (de/dé), five cells in four texts
 142	les	2	191,no5(210-212)	C	
 144	été	1	192	C	
 146	mer	1	200	C	
@@ -31,10 +31,10 @@ code	value	n	pages	grade	note
 156	alinea	1	192	C	
 158	pointes	1	191	M	only a corrected/crossed-out cell seen
 167	exportation	1	192	C	
-168	;	1	191,208(Vanteau)	M	VX-RD02C: re-applying VX-RD02's fix (lost when VX-RD02B's build_key.py rerun on combined_passA/B.tsv rebuilt key.tsv from scratch with no memory of it): leaf 191 clean ';' (n=1) vs leaves 199/200 pass A ';' / pass B 'j' (2 more occurrences, a genuine disagreement pass_disagreements.tsv logs but build_key.py drops silently whenever a code already has a clean reading elsewhere -- confirmed again by this worker's leaf-208 (Vanteau) cross-correspondent read, itself ';' on that leaf too). Also confirmed (';' reading) on leaf 208 (Vanteau).
+168	;	1	191,208(Vanteau)	C	VX-RD02C: re-applying VX-RD02's fix (lost when VX-RD02B's build_key.py rerun on combined_passA/B.tsv rebuilt key.tsv from scratch with no memory of it): leaf 191 clean ';' (n=1) vs leaves 199/200 pass A ';' / pass B 'j' (2 more occurrences, a genuine disagreement pass_disagreements.tsv logs but build_key.py drops silently whenever a code already has a clean reading elsewhere -- confirmed again by this worker's leaf-208 (Vanteau) cross-correspondent read, itself ';' on that leaf too). Also confirmed (';' reading) on leaf 208 (Vanteau).; GAPS3 2 Oct 2026: C: ; in three sentences, two-pass agreed at one, pass A at all three; the j alternative is pass B only at two cells where ; is the grammatical reading
 172	Nord	1	200	C	
 186	ni	1	191	M	only a corrected/crossed-out cell seen
-190	en	6	190,191,199,no5(210-212),192	M	ambiguous: en (n=3, pages=199,no5(210-212)); est (n=2, pages=190,191); est (n=1, pages=192)
+190	est	6	190,191,199,no5(210-212),192	M	ambiguous: en (n=3, pages=199,no5(210-212)); est (n=2, pages=190,191); est (n=1, pages=192); GAPS3 2 Oct 2026: M stays, value column flips to est by merge_leaf.py's own majority rule (4 distinct sentences vs 3): both renderings remain attested in the gloss
 191	une	1	no5(210-212)	M	single-pass only, other pass skipped this code
 195	y	2	199,200	C	
 196	il	1	200	C	
@@ -57,7 +57,7 @@ code	value	n	pages	grade	note
 331	Li	1	200	C	
 338	dans	1	no5(210-212)	M	single-pass only, other pass skipped this code
 339	Six	1	no5(210-212)	C	
-353	C.	1	199	M	only a corrected/crossed-out cell seen
+353	C.	1	199	M	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: M stays: one cell, pass A uncertain
 354	Je	2	199,192	C	
 355	car	2	200,192	M	ambiguous: car (n=1, pages=200); cargaison, (n=1, pages=192) [earlier note: only a corrected/crossed-out cell seen]
 363	vé	1	200	C	
@@ -71,7 +71,7 @@ code	value	n	pages	grade	note
 404	croisières	2	191,201	C	
 406	rais	1	192	M	single occurrence, cell uncertain; reconciled from crop L04: A rain / B rais, final letters ambiguous; completes J au-rais = j aurais (leaf 192)
 411	ca	3	no5(210-212),192	M	only a corrected/crossed-out cell seen; leaf 192: ca (corrected; overwritten cell, A cet / B cet, reconciled from crop L04 with key.tsv 411 = ca (leaf 191): completes cer-ti-fi-ca-t = certificat)
-420	fin	2	no5(210-212),192	M	only a corrected/crossed-out cell seen; leaf 192: Fin. (clean)
+420	fin	2	no5(210-212),192	C	only a corrected/crossed-out cell seen; leaf 192: Fin. (clean); GAPS3 2 Oct 2026: C: the end-of-text mark, glossed in two texts and standing last in four
 424	que	1	199	C	
 427	onze	3	199,no5(210-212)	C	
 434	par	1	200	C	
@@ -79,7 +79,7 @@ code	value	n	pages	grade	note
 437	s	1	199	M	only a corrected/crossed-out cell seen
 439	article	1	191	C	
 441	ancien	1	192	C	
-444	l'	2	200,no5(210-212)	M	only a corrected/crossed-out cell seen
+444	l'	2	200,no5(210-212)	C	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: C: the elided article in two distinct words, one two-pass clean cell, plain copy agrees
 447	Je	2	191,199	C	
 448	la	2	191,192	C	
 454	et	1	no5(210-212)	C	
@@ -92,9 +92,9 @@ code	value	n	pages	grade	note
 508	Destiné	1	no5(210-212)	C	
 511	le	2	191,200	C	
 516	et	3	200,no5(210-212),192	M	ambiguous: et (n=2, pages=200,no5(210-212)); te (n=1, pages=192)
-527	;	1	200	M	VX-RD02C: re-applying VX-RD02's fix (same loss/same bug as 168 above): leaf 200 clean ';' (n=1) vs leaf 199 both passes 'j' (pass A flagged uncertain, which the script's shaky-bucket logic hid from the clean/disagree comparison) -- see VX-RD02's fresh-instance re-derivation section in NOTES.md.
+527	;	1	200	M	VX-RD02C: re-applying VX-RD02's fix (same loss/same bug as 168 above): leaf 200 clean ';' (n=1) vs leaf 199 both passes 'j' (pass A flagged uncertain, which the script's shaky-bucket logic hid from the clean/disagree comparison) -- see VX-RD02's fresh-instance re-derivation section in NOTES.md.; GAPS3 2 Oct 2026: M stays: ; in one clean sentence, j (both passes, A uncertain) in the other
 529	nous	1	200	C	
-534	vent	1	200	M	only a corrected/crossed-out cell seen
+534	vent	1	200	M	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: M stays: one word (peu-vent) in the key source
 536	trente	1	192	C	
 545	pour	2	200,no5(210-212)	C	
 547	aoust	1	no5(210-212)	M	only a corrected/crossed-out cell seen
@@ -111,7 +111,7 @@ code	value	n	pages	grade	note
 594	reçu	1	199	C	
 597	expédition	2	no5(210-212)	C	VX-RD02C: dropped by build_key.py's merge (glossnorm doesn't fold accents, so pass A 'expedition' vs pass B 'expédition' -- same word -- was wrongly routed to pass_disagreements.tsv and never entered key.tsv); both passes agree on the code and word (order 2, keysource_no5_passA/B.tsv); confirmed independently by no5_plaintext.txt's opening line 'Une expédition forte de 71 voiles...'
 605	état	2	191,192	C	leaf 192: Etat (uncertain)
-607	mal	1	200	M	only a corrected/crossed-out cell seen
+607	mal	1	200	M	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: M stays: one word (mal-heur), first digit uncertain
 609	Dépêches	1	199	C	
 624	fe	2	191,no5(210-212)	M	only a corrected/crossed-out cell seen
 625	frigate	2	200	M	ambiguous: frigate (n=1, pages=200); frigates (n=1, pages=200)
@@ -122,7 +122,7 @@ code	value	n	pages	grade	note
 667	au	1	200	C	
 682	de	2	200	C	
 688	Corvette	1	192	C	
-689	Le	6	190,191,199,no5(210-212),192	M	ambiguous: Le (n=3, pages=199,no5(210-212)); de (n=2, pages=190,191); leaf 192: le (clean)
+689	Le	6	190,191,199,no5(210-212),192	C	ambiguous: Le (n=3, pages=199,no5(210-212)); de (n=2, pages=190,191); leaf 192: le (clean); GAPS3 2 Oct 2026: C: le in five distinct contexts across four texts, plain copy agrees; the lone de is one cell where Le is also grammatical
 692	;	1	191	C	
 694	crainte	1	200	C	
 696	van	1	199	M	only a corrected/crossed-out cell seen
@@ -143,7 +143,7 @@ code	value	n	pages	grade	note
 744	ra	1	200	M	only a corrected/crossed-out cell seen
 748	ns	1	no5(210-212)	C	VX-RD02C: added -- pass A 'ns' vs pass B 'ins' (bold/dark ink, order 41), a genuine disagreement dropped by the merge; no5_plaintext.txt's 'magasins' (ma[835]-ga[1001]-zi[303]-ns[748]) confirms pass A's 'ns'.
 757	en	1	192	C	
-760	er	1	200	M	only a corrected/crossed-out cell seen
+760	er	1	200	M	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: M stays: one word (li-vr-er)
 762	jours	2	200,no5(210-212)	C	
 766	Du	4	191,192	C	
 771	t	4	191,192	C	
@@ -167,13 +167,13 @@ code	value	n	pages	grade	note
 851	prét	1	191	M	only a corrected/crossed-out cell seen
 861	si	1	192	C	
 862	lors	1	191	C	
-875	ât	1	191	M	only a corrected/crossed-out cell seen
+875	ât	1	191	M	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: M stays: one cell, uncertain fragment
 881	les	1	201	C	
 883	Capitaine	2	191	M	ambiguous: Capitaine (n=1, pages=191); Capitaines (n=1, pages=191)
 889	expose	1	191	M	only a corrected/crossed-out cell seen
 893	puis	1	191	C	
 900	ils	1	no5(210-212)	C	
-904	i	2	no5(210-212),192	M	ambiguous: i (n=1, pages=no5(210-212)); J' (n=1, pages=192) [earlier note: VX-RD02C: added -- pass A 'ï' vs pass B 'î' (dotted-i, ambiguous accent, order 49), dropped by the merge; no5_plaintext.txt's 'poivre' (po[1074]-i[904]-vr[304]-e[1190]) confirms the letter is i.]
+904	i	2	no5(210-212),192	C	ambiguous: i (n=1, pages=no5(210-212)); J' (n=1, pages=192) [earlier note: VX-RD02C: added -- pass A 'ï' vs pass B 'î' (dotted-i, ambiguous accent, order 49), dropped by the merge; no5_plaintext.txt's 'poivre' (po[1074]-i[904]-vr[304]-e[1190]) confirms the letter is i.]; GAPS3 2 Oct 2026: C: the letter i (written J' before a vowel) in two distinct words, plain copy agrees
 905	cre	1	no5(210-212)	M	only a corrected/crossed-out cell seen
 930	et	1	no5(210-212)	C	
 938	it	1	no5(210-212)	M	only a corrected/crossed-out cell seen
@@ -193,7 +193,7 @@ code	value	n	pages	grade	note
 1018	nos	1	200	C	
 1023	N°.	1	199	C	
 1035	possible	1	192	M	single occurrence, cell period after the gloss is the row separator dot copied, not part of the value; A uncertain, B clean (leaf 192)
-1041	si	1	no5(210-212)	M	single-pass only, other pass skipped this code
+1041	si	1	no5(210-212)	M	single-pass only, other pass skipped this code; GAPS3 2 Oct 2026: M stays: one word (dé-ci-si-ve); digits settled
 1049	événement	1	200	M	only a corrected/crossed-out cell seen
 1052	la	2	199,192	C	
 1074	po	1	no5(210-212)	M	only a corrected/crossed-out cell seen
@@ -206,7 +206,7 @@ code	value	n	pages	grade	note
 1090	A	3	190,191,200	C	
 1091	neuf	2	190,191	C	
 1092	batimens	2	190,191	C	
-1096	part	4	191,199,200,192	M	ambiguous: part (n=2, pages=191,199); par (n=1, pages=200); par (n=1, pages=192)
+1096	part	4	191,199,200,192	M	ambiguous: part (n=2, pages=191,199); par (n=1, pages=200); par (n=1, pages=192); GAPS3 2 Oct 2026: M stays: par and part are one syllable with and without the final t, tied 2:2, and the choice decides the sense on 188
 1098	ront	1	191	M	only a corrected/crossed-out cell seen
 1104	les	1	199	C	
 1106	elles	1	200	C	
@@ -218,7 +218,7 @@ code	value	n	pages	grade	note
 1132	Su	2	200,no5(210-212)	M	only a corrected/crossed-out cell seen
 1134	seules	1	200	C	
 1135	forte	1	no5(210-212)	M	only a corrected/crossed-out cell seen
-1137	ché	1	no5(210-212)	M	only a corrected/crossed-out cell seen
+1137	ché	1	no5(210-212)	M	only a corrected/crossed-out cell seen; GAPS3 2 Oct 2026: M stays: one word (re-tra-n-ché); digits settled
 1142	même	2	191,192	C	
 1145	nous	1	no5(210-212)	C	
 1146	que	2	no5(210-212),192	C	

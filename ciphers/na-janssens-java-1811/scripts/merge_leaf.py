@@ -98,7 +98,7 @@ def main():
         if code in conflicts:
             conflicts[code]["variants"] += f"; {gloss} (n=1, pages={leaf})"
         else:
-            conflicts[code] = {"code": code, "variants": variants}
+            conflicts[code] = {"code": code, "variants": variants, "decision": ""}
         conflict += 1
         print(f"CONF {code} key {k['value']!r} vs leaf {gloss!r} -> M")
 
@@ -111,10 +111,12 @@ def main():
         for code in sorted(key, key=int):
             w.writerow(key[code])
     with open(a.conflicts, "w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(f, fieldnames=["code", "variants"], delimiter="\t")
+        # decision column (GAPS3, 2 Oct 2026): scripts/apply_regrades.py writes one decision per code; a later merge
+        # that re-opens a code keeps the old decision text beside the new variant, for the next regrade to read
+        w = csv.DictWriter(f, fieldnames=["code", "variants", "decision"], delimiter="\t", extrasaction="ignore")
         w.writeheader()
         for code in sorted(conflicts, key=int):
-            w.writerow(conflicts[code])
+            w.writerow({"decision": "", **conflicts[code]})
 
 
 if __name__ == "__main__":

@@ -7,9 +7,9 @@
 # ambiguous or single-pass-only; [?] = code never seen in the key source.
 # corrections.tsv (SPLIT-na-janssens-java-1811, 2 Oct 2026): per-position digit reads settled from the
 # native-resolution image override the transcribed token's value (13:11 1194 -> 1192 'et').
-# tokens 163: H 0, C 63, S 0, M 25, I 0, U 75
+# tokens 163: H 0, C 77, S 0, M 11, I 0, U 75
 1	l' ancien Gouverneur Gal [853] [1121] l' état [130] [1173] [573] [1027]
-2	de [1024] [403] en . [364] re [551] Sont e puis
+2	de [1024] [403] est . [364] re [551] Sont e puis
 3	[1014] ; l' [984] n' [1021] [1039] re que peu de
 4	[176] . alinea les [585] ns [125] A [206] ché [899]
 5	la De [1126] [882] le [50] [270] [708] de l' [987] r
