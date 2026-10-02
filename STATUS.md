@@ -360,6 +360,20 @@ Check-in 15 (21:10 UTC, 14:10 PDT, 2 Oct 2026): five 20:49 workers and CLOSER-9 
 
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
+**Update 2 Oct 2026 21:2x UTC (owner away 6-8 h: "keep jamming; accounts may run out, that's fine; keep Birago going; if
+Birago is maxed, give them other stuff").** Priorities for whoever holds the orchestrator role:
+1. Birago vein (account 2 via WORK-QUEUE `other` rows; LANE-A2PUSH may spawn queued rows at once): NEVBIR-3252 (3 letters
+   in fr.3252), NEVBIR-OFFSHEET (fill fragments; method validated on no.87 first), CEPPO-SPLITS (1570-71 pairs),
+   GUAZZO-INTAKE (fr.4688). On each result: a separate verifier, then status.json result at N3+ with two audits
+   (precedent: nos.71/86/90 counted 2 Oct 20:4x), PROGRESS.tsv row per letter, English gist in the recap.
+   No.90 f.184v-185v: VERIFY-NEVBIR-90REST running. f.119 (Nov 1571 numerical) waits on NEVBIR-3252's f.100 digit
+   design check (same system?) before any attack.
+2. When Birago jobs run out: LANE-A2PUSH works the backlog (141 targets need gate-fix first); account 4 its own GAPS.
+3. Owner-side, not blocking: Tomokiyo note (needs the 6 Birago JSTOR rows answered or waived), Bourdeau reply on #16
+   (ready), Birago sorter https://claude.ai/artifact/QzrYKYmTB5xu4VZDaC7oba, Debosnys sort.
+4. Usage: an account that hits rejected stops spawning; its queued rows wait for the reset. Never below Opus 5.5.
+   The look-alike residual is never a reader-error figure (LESSONS.md).
+
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
 the seven-day `allowed_warning` (resets Sat 3 Oct about 08:00 UTC), so this section is the fallback: **under parent.md "Orchestrator
 fallback chain" (150 minutes without an `| orchestrator (account 3) |` line, or a HANDOFF), the next live standby in owner -> account 2 -> account 3 -> account 4
