@@ -23,3 +23,28 @@ from owner/account 2, means post `| orchestrator (account-4) | TAKEOVER from acc
 section. Lessons from this lineage: every open target's intake gate failed on the 28 Sept blog-check step until a
 WEBCHECK worker logged it (about USD 4.5 each); a found-solved flag stops further workers on that target at once;
 check image coverage on disk before briefing a split-check pass; a per-page vision job prices per pass, not per page.
+
+## State at hand-over (05:1x UTC 2 Oct 2026, parent 1 at about 735k context)
+
+Live account-4 sessions: none (CLOSER-4 archives the last five: session_01MEdGAhHGSVUynK4nBSL57f CLOSER-3,
+session_01JmLF75n73FaBHdJuqfVREd, session_014hB18brjnfwZkYqcVGtjMn, session_01Wh87KrDZHr6gvDnz8icwnQ,
+session_01DqgBmRuUuS3bsLYxSxohWy -- if it has not posted its done line, re-run that job). Standby: account-3's newest
+orchestrator line was 04:44 UTC 2 Oct; apply the 150-minute rule at every check-in. Every LEDGER row to 05:10 UTC is
+written; STATUS.md's account-4 handoff paragraphs (check-ins 1-7) hold the full record.
+
+Open next steps, cheapest first (one worker each, the generic briefs under .claude/briefs/runs/2026-10-02-account4-*):
+- nevers-birago-fr3251-1572 (partial, NEAR row): fix the m/g homophone sign value named in its Remaining gaps, re-judge
+  the joined f.178v decode with the shuffled-target check; then ff.138-184 one leaf at a time under the witness gate.
+- pro3055-clinton-1779: the 1778 Army List title page from archive.org (~USD 2) to settle the 15 M cells.
+- intercepted-royalist-1646 (partial): the Evelyn page scans for the 45 H values (~USD 3).
+- na-suriname-map-1781: transcribe 4.VEL 2038's legend (the plain twin) as the crib; na-janssens-java-1811: the No.2 plain
+  copy leaves 194-195; na-schonenberg-1678-1716: re-spawn the per-line Spanish reading + judge step (GAPS3 hung on a
+  permission prompt, USD 6.22, X); mornington-1798: Martin Vol. 2 refetch for p.311; moray-wood-1568: needs a DECODE login.
+- likely-solves rows 6 (fr3986-90 Nevers-Revol, blocked on the no.60 sign atlas) and 10 (fr4687-paleologue pool, intake
+  blocked on Ferrari 1999 -- a check-solved worker first); fr4715-vieuville-pool: one Opus clear-French pass over the
+  96 crops (~USD 4) then no.37 f.60.
+- open-target steps still owed: esp318-sicilia-1503 canvases 453-455 + Bergenroth key test; decode-2754 crib
+  cryptanalysis with a matched control; huntington split-check (120 hits, N0 item, low priority).
+- Lessons this lineage paid for: price a two-page figure-pair transcription per crop set, not per page (Clinton 1.34x);
+  read NEAR.md's closed rows before ranking a candidate (ceppo-nevers non-job); a shortlist row's premise ("sibling has
+  a key") is checked against the sibling's own NOTES before spawning (decode-1162).

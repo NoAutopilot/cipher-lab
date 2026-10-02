@@ -209,6 +209,16 @@ value. GAPS3-na-schonenberg stuck at a permission prompt after USD 6.22 (X). Spa
 GAPS2-pro3055-clinton, LIKELY-7 roell-vandedem, LIKELY-9 intercepted-royalist. Parent at about 720k context: hand-over at
 the next check-in via hub-seed/SUCCESSOR-PROMPT-account4.md.
 
+**Check-in 7, hand-over (05:1x UTC 2 Oct):** 5 workers done and ledgered (USD 38.7; 63 workers about 382 total; parent
+30.7). nevers-birago-fr3251-1572: f.178v L11-L23 read (passes agree 0.95), the joined leaf scores z 4.60 rank 1/201
+under the printed key, judge still a near-miss, an m/g homophone sign-value error named for the next step.
+intercepted-royalist-1646 moved offline-only -> partial: Aymeloglu's partial key reads 190/735 tokens of f.10 at rank
+1/21 shuffled keys (z 2.66 en16, 5.19 en); next the Evelyn scans. Clinton 2894: 315 figure pairs transcribed (0.931),
+166 cells recovered against the f.186 decipherment, 79/81 agree with Tomokiyo. Roell 1809: inv. 164 is a one-part
+code of another decade, not the key (non-test). Parent handed over at about 735k context to "account-4 parent 2"
+(created via create_session, depth 1) from hub-seed/SUCCESSOR-PROMPT-account4.md; this session is archived. Open next
+steps are listed in that file.
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
