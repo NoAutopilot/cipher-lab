@@ -1,0 +1,55 @@
+line	pos	group_seen	gloss	conf	note
+L03	0	8)	L	H	capital L over 8)
+L03	1	12	a	H	
+L03	2	59	d	H	
+L03	3	60	e	H	comma follows gloss
+L03	4	[tilde]	A	M	tilde-like sign with dots (~ over :); gloss a capital A (crossed); alt H
+L03	5	5)	b	H	
+L03	6	60	e	H	
+L03	7	2)	r	M	gloss r sits in the gap between 2) and 88, nearer the middle; assigned to 2) since 88 carries m
+L03	8	88	m	H	m slightly right of 88
+L03	9	30	u	H	
+L03	10	15	d	H	
+L03	11	)8	a	H	
+L03	12	3)	d	H	
+L03	13	90	o	H	comma after o; heavy dot (punctuation) between 90 and X
+L03	14	[X]	e	H	X-shaped sign with dots in its angles
+L03	15	)2	s	H	long s
+L03	16	51	t	H	t sits slightly right, between 51 and 60
+L03	17	60	e	H	
+L12	0	21	L	H	L slightly left of 21
+L12	1	34	a	H	comma after a
+L12	2	58	e	M	gloss has a tall looped lead stroke before e; could be read "le"
+L12	3	24	o	H	
+L12	4	)1	r	H	
+L12	5	10	e	H	
+L12	6	94	s	H	
+L12	7	69	p	H	p with looped stem
+L12	8	8	o	H	
+L12	9	6)	n	H	
+L12	10	59	d	H	
+L12	11	82	e	H	
+L12	12	45	n	H	
+L12	13	33	z	H	dot after z
+L12	14	)6	r	M	small x/r-shaped letter; alt i
+L12	15	6	a	H	comma after a
+L12	16	)2	s	H	
+L12	17	38	a	H	
+L14	0	28	s	M	looped s-like letter with a heavy dot at its left; alt p or x; 2 and 8 widely spaced but no dot between, read as one group
+L14	1	3	o	H	
+L14	2	)9	b	M	b written like a delta / 6; alt d
+L14	3	[blot]	_	H	large ink blot (E-like); nothing written above it
+L14	4	)1	r	H	
+L14	5	10	e	H	followed by "=" hyphen mark and dot; line break of the gloss word
+L14	6	)2	s	H	"=" hyphen before s
+L14	7	36	e	H	
+L14	8	2)	r	H	
+L14	9	54	y	H	
+L14	10	)3	t	H	t with long crossbar
+L14	11	46	o	H	comma after o
+L14	12	[square]	e	H	open square sign
+L14	13	45	n	H	comma after n
+L14	14	10	a	M	a sits between 10 and 28 (gloss runs right of the cipher on this stretch); assigned by order
+L14	15	28	s	M	s sits at right edge of 28 / left of 95
+L14	16	95	t	H	t over 95, long crossbar extending right
+L14	17	34	a	H	

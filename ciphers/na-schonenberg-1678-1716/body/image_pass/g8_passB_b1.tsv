@@ -1,0 +1,55 @@
+line	pos	group_seen	gloss	conf	note
+L05	0	50	s	H	
+L05	1	)3	lc	M	faint thin 'l' plus a dark 'c' with a leading dash, both over )3; alt: the dashed letter is one 't' (gloss 't' or 'lt'); faint 'l' may be a stray stroke
+L05	2	6	a	H	
+L05	3	6)	n	H	mark after the 6, clear
+L05	4	99	z	H	
+L05	5	)6	y	H	mark before the 6, clear
+L05	6	11	a	H	
+L05	7	50	s	H	comma after s
+L05	8	26	q	H	written close to the next 2 ('262'), but q sits over 26 only
+L05	9	2	u	H	u spans 2 and the start of 38
+L05	10	38	e	H	comma after e
+L05	11	56	a	H	
+L05	12	32	y	H	comma after y
+L05	13	94	s	H	
+L05	14	60	e	H	comma after e
+L05	15	)2	s	H	
+L05	16	12	a	H	
+L05	17	35	b	H	
+L05	18	2)	r	H	mark after the 2, clear
+L05	19	56	a	H	
+L07	0	43	l	H	
+L07	1	)8	a	H	
+L07	2	94	s	H	comma after s
+L07	3	)0	q	H	
+L07	4	30	u	H	
+L07	5	5	e	H	comma after e; digit is 5
+L07	6	[Z]	y	H	symbol: Z with a crossing loop/tail (Z-like sign); colon ':' in gloss row right after y
+L07	7	13	b	H	b sits over the right half of 13; dot before it
+L07	8	)6	y	M	letter is y-like (could be a 'j'/'y'); mark before 6 clear
+L07	9	60	e	H	
+L07	10	2)	r	H	mark after the 2
+L07	11	60	e	H	comma after e
+L07	12	59	d	H	
+L07	13	38	e	M	e over 38, then a large ink blot right of it reaching toward 43 that may hide a second letter
+L07	14	43	l	H	comma after l
+L07	15	6)	h	M	dark looped letter, read h (alt k/ll); mark after 6 clear
+L07	16	8	o	H	
+L07	17	)1	r	H	
+L10	0	[curl]	_	M	not ')2' as seen: one continuous pale stroke (left loop, tilde, rising hook) after a 'C.'-like start; possibly a stylised )2 or a line-start flourish; no gloss above
+L10	1	)0	_	M	')' then 'o'/0; a small superscript '2' in cipher ink sits above the o (correction or variant: ')2'?); no Spanish gloss above
+L10	2	32	_	H	no gloss above
+L10	3	4)	p	H	long-stemmed p over 4)
+L10	4	52	u	H	
+L10	5	38	e	H	
+L10	6	59	d	H	
+L10	7	)8	a	H	
+L10	8	6)	n	H	comma after n
+L10	9	[circle]	o	H	large oval symbol, o above it
+L10	10	36	e	H	
+L10	11	)4	u	H	
+L10	12	2)	n	M	n-shaped with flourish; alt r/rr
+L10	13	54	y	H	
+L10	14	)1	r	H	comma after r
+L10	15	55	z	H	followed by '=' line-end hyphen in gloss row
