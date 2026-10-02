@@ -1,0 +1,686 @@
+# fr4715-vieuville-pool no.44 f.67r (LIKELY-1, 2 Oct 2026): tools/reconcile_passes.py over witness/f67r_pass_a.tsv and f67r_pass_b.tsv (two blind Sonnet passes on the 96 crops in images/), nw alignment, --keep-plain --keep-dots; agreement 351/683 = 51.4 pct (clear words mostly conf L in both passes; every cipher group but three agreed).
+# token: w:word = clear French as read (conf = the lower of the two passes); digits = a cipher group; a leading '.' = a bar or dot over the group (the word-code layer, not in the letter key); '?' = the passes disagree (both readings in note), conf L, settled only from the image.
+line	pos	token	conf	note
+L01	1	w:Jay	L	passes differ: A w:Jay / A:-
+L01	2	w:sou	L	passes differ: A w:sou / A:-
+L01	3	w:Jaysouel	L	passes differ: A w:Jaysouel / B:w:el
+L01	4	.71	L	
+L01	5	w:qui	M	
+L01	6	w:a	H	
+L01	7	w:discouru	L	passes differ: A w:discouru / B:w:discourn
+L01	8	6	M	
+L01	9	7	M	
+L01	10	25	M	
+L01	11	93	M	
+L01	12	84	M	
+L01	13	25	M	
+L01	14	50	M	
+L01	15	93	M	
+L01	16	25	M	
+L01	17	95	M	
+L01	18	w:or	L	passes differ: A w:or / B:w:ce
+L01	19	w:quil	M	
+L01	20	w:a	H	
+L01	21	w:apria	M	
+L01	22	w:or	L	passes differ: A w:or / B:w:ce
+L01	23	w:sur	L	passes differ: A w:sur / B:w:sit
+L01	24	w:quartilat	L	passes differ: A w:quartilat / B:w:quarti.ba
+L01	25	w:Dom	L	
+L01	26	w:be	L	passes differ: A w:be / A:-
+L02	1	w:mandam	M	
+L02	2	w:vo	L	
+L02	3	w:ley	L	passes differ: A w:ley / B:w:lay
+L02	4	w:pourrez	M	
+L02	5	w:apprendre	M	
+L02	6	w:quelque	M	
+L02	7	w:chose	M	
+L02	8	w:Jay	L	
+L02	9	w:apria	M	
+L02	10	w:en	M	
+L02	11	w:Evay	L	
+L02	12	w:que	M	
+L02	13	.7	M	
+L02	14	w:a	H	
+L02	15	w:eu	M	
+L02	16	w:quelque	M	
+L02	17	w:Embraiz	L	passes differ: A w:Embraiz / B:w:embraiz
+L02	18	w:de	M	
+L02	19	w:la	M	
+L02	20	w:nouuelle	L	passes differ: A w:nouuelle / B:w:nouvelle
+L03	1	w:quil	M	
+L03	2	w:luy	M	
+L03	3	w:a	H	
+L03	4	w:apporte	M	
+L03	5	w:de	M	
+L03	6	14	M	
+L03	7	15	L	
+L03	8	w:mesmes	L	
+L03	9	w:pd	L	
+L03	10	w:luy	M	
+L03	11	w:auoir	L	passes differ: A w:auoir / B:w:avoir
+L03	12	w:dit	M	
+L03	13	w:quil	M	
+L03	14	w:a	H	
+L03	15	w:este	M	
+L03	16	w:retenu	M	
+L03	17	w:par	M	
+L03	18	w:les	M	
+L03	19	w:chemins	L	
+L03	20	w:neuuez	L	passes differ: A w:neuuez / B:w:nauwir
+L03	21	w:uen	L	passes differ: A w:uen / B:w:ven
+L03	22	w:que	L	
+L03	23	w:feriber	L	passes differ: A w:feriber / A:-
+L03	24	w:scribuayen	L	passes differ: A w:scribuayen / B:w:ayem
+L04	1	w:este	M	
+L04	2	w:omnibus	L	passes differ: A w:omnibus / B:w:ombtirr
+L04	3	w:Ce	M	
+L04	4	w:qui	M	
+L04	5	w:ma	M	
+L04	6	w:este	M	
+L04	7	w:confirme	M	
+L04	8	w:de	L	passes differ: A w:de / B:w:et
+L04	9	w:son	M	
+L04	10	w:boyleur	L	passes differ: A w:boyleur / B:w:boyleuin
+L04	11	w:et	M	
+L04	12	w:a	L	passes differ: A w:a / B:-
+L04	13	w:quoy	M	
+L04	14	w:Jay	L	
+L04	15	w:apporte	M	
+L04	16	w:la	M	
+L04	17	w:replique	L	passes differ: A w:replique / B:w:reptigne
+L04	18	w:aussy	L	
+L04	19	w:promptemt	L	passes differ: A w:promptemt / B:w:prompte
+L04	20	w:quelle	L	
+L04	21	w:ma	M	
+L05	1	w:semble	M	
+L05	2	w:neressi	L	passes differ: A w:neressi / B:w:necessaire
+L05	3	w:de	M	
+L05	4	w:sorte	L	passes differ: A w:sorte / B:w:faire
+L05	5	w:que	M	
+L05	6	w:on	L	passes differ: A w:on / B:w:ne
+L05	7	w:que	L	
+L05	8	w:loy	L	
+L05	9	w:auoir	L	passes differ: A w:auoir / B:w:avoir
+L05	10	w:de	L	
+L05	11	w:suspicion	L	
+L05	12	w:pd	L	
+L05	13	w:un	L	passes differ: A w:un / B:w:ne
+L05	14	w:regard	L	
+L05	15	w:est	M	
+L05	16	w:bien	L	
+L05	17	w:Lun	L	passes differ: A w:Lun / B:w:Dun
+L05	18	w:sy	L	
+L05	19	.27	M	
+L05	20	w:a	H	
+L05	21	w:quelque	M	
+L05	22	w:de	M	
+L05	23	w:sur	L	passes differ: A w:sur / B:w:fre
+L06	1	w:desire	L	passes differ: A w:desire / B:w:desir
+L06	2	w:bien	M	
+L06	3	w:amit	L	
+L06	4	.6	L	
+L06	5	w:Il	M	
+L06	6	w:faut	M	
+L06	7	w:quil	M	
+L06	8	w:se	M	
+L06	9	w:resolue	M	
+L06	10	w:de	M	
+L06	11	w:luy	M	
+L06	12	w:de	L	
+L06	13	w:promuire	L	passes differ: A w:promuire / B:w:fournir
+L06	14	w:omnibus	L	passes differ: A w:omnibus / B:w:ombtrem
+L06	15	w:sire	L	passes differ: A w:sire / B:w:fer
+L06	16	w:intenond	L	passes differ: A w:intenond / B:w:intenoud
+L06	17	w:prin	L	passes differ: A w:prin / B:w:pris
+L06	18	w:un	L	passes differ: A w:un / B:w:ne
+L06	19	w:que	M	
+L06	20	w:ayant	L	passes differ: A w:ayant / B:w:ayam
+L07	1	w:on	L	
+L07	2	w:a	M	
+L07	3	w:declare	M	
+L07	4	w:que	L	passes differ: A w:que / B:w:ne
+L07	5	w:quil	M	
+L07	6	w:resenton	L	passes differ: A w:resenton / B:w:resouton
+L07	7	w:de	L	
+L07	8	w:cios	L	passes differ: A w:cios / B:w:cos
+L07	9	.13	M	
+L07	10	w:a	L	passes differ: A w:a / B:w:de
+L07	11	w:Ara	L	
+L07	12	w:siena	L	
+L07	13	w:Il	L	
+L07	14	w:est	M	
+L07	15	w:ez	L	
+L07	16	w:affiance	L	passes differ: A w:affiance / B:w:desfiamer
+L07	17	w:quil	M	
+L07	18	w:continue	M	
+L07	19	w:a	M	
+L07	20	w:Lesbuc	L	passes differ: A w:Lesbuc / B:w:Lsbur
+L07	21	w:Zagli	L	passes differ: A w:Zagli / B:w:Daghe
+L08	1	w:Lestrain	L	
+L08	2	w:ne	L	
+L08	3	w:se	L	
+L08	4	w:limba	L	
+L08	5	w:que	M	
+L08	6	w:auec	L	passes differ: A w:auec / B:w:amit
+L08	7	w:sa	L	
+L08	8	w:delavaan	L	passes differ: A w:delavaan / B:w:delavan
+L08	9	w:nesfinmann	L	passes differ: A w:nesfinmann / B:w:mesfuman
+L08	10	w:neliu	L	passes differ: A w:neliu / B:w:nelir
+L08	11	w:du	L	
+L08	12	w:feriter	L	passes differ: A w:feriter / B:-
+L08	13	w:en	L	passes differ: A w:en / B:w:feitel
+L08	14	w:y	L	passes differ: A w:y / B:w:cy
+L08	15	w:escripuant	L	passes differ: A w:escripuant / B:w:sviprann
+L08	16	w:far	L	
+L08	17	w:sommeut	L	passes differ: A w:sommeut / B:w:soment
+L09	1	w:Car	L	
+L09	2	w:Il	L	
+L09	3	w:ya	L	
+L09	4	w:icy	L	passes differ: A w:icy / B:w:sey
+L09	5	w:des	L	
+L09	6	w:faulxbourg	L	passes differ: A w:faulxbourg / B:w:faugbourg
+L09	7	w:qui	L	
+L09	8	w:ne	L	
+L09	9	w:tasehin	L	passes differ: A w:tasehin / B:w:tuschim
+L09	10	w:que	L	passes differ: A w:que / B:w:qui
+L09	11	w:a	L	
+L09	12	w:obseruer	L	passes differ: A w:obseruer / B:w:observir
+L09	13	w:voz	L	
+L09	14	w:actions	L	
+L09	15	w:et	L	
+L09	16	w:parz	L	passes differ: A w:parz / B:w:faz
+L09	17	w:tout	L	passes differ: A w:tout / B:w:tous
+L09	18	w:mon	L	
+L09	19	w:songe	L	
+L09	20	w:se	L	
+L09	21	w:Renze	L	passes differ: A w:Renze / B:w:Danze
+L10	1	w:Aque	L	passes differ: A w:Aque / B:w:Anque
+L10	2	w:vous	L	passes differ: A w:vous / B:w:tous
+L10	3	w:auez	L	passes differ: A w:auez / B:w:auz
+L10	4	w:faict	L	passes differ: A w:faict / B:w:fait
+L10	5	w:requis	L	passes differ: A w:requis / B:w:eguis
+L10	6	w:de	L	
+L10	7	w:a	L	
+L10	8	w:beaucoup	L	
+L10	9	w:les	L	
+L10	10	w:prinuib	L	passes differ: A w:prinuib / B:w:gibus
+L10	11	w:sitre	L	passes differ: A w:sitre / B:w:sitro
+L10	12	w:de	L	
+L10	13	w:Lamitt	L	passes differ: A w:Lamitt / B:w:Vamitt
+L10	14	w:et	L	passes differ: A w:et / B:w:Et
+L10	15	w:pd	L	
+L10	16	w:pourte	L	passes differ: A w:pourte / B:w:pante
+L10	17	w:sire	L	passes differ: A w:sire / B:w:sest
+L10	18	w:puisq	L	passes differ: A w:puisq / B:w:preuge
+L10	19	w:L	L	passes differ: A w:L / B:w:Z
+L11	1	w:ne	L	
+L11	2	w:voy	L	passes differ: A w:voy / B:w:Voy
+L11	3	w:psonne	L	passes differ: A w:psonne / B:w:pbsonne
+L11	4	w:cy	L	
+L11	5	w:a	L	
+L11	6	w:luin	L	passes differ: A w:luin / B:w:lieu
+L11	7	w:dom	L	
+L11	8	w:vo	L	passes differ: A w:vo / B:-
+L11	9	w:puisse	L	passes differ: A w:puisse / B:w:Zo
+L11	10	w:resister	L	passes differ: A w:resister / B:w:puissé
+L11	11	w:de	L	
+L11	12	w:dia	L	
+L11	13	w:psonne	L	passes differ: A w:psonne / B:w:qibsonne
+L11	14	w:Car	L	passes differ: A w:Car / B:w:Can
+L11	15	w:L	L	passes differ: A w:L / B:w:Z
+L11	16	w:suis	L	passes differ: A w:suis / B:w:sui
+L11	17	w:a	L	
+L11	18	w:reuenir	L	passes differ: A w:reuenir / B:w:redevrius
+L11	19	w:de	L	
+L11	20	w:quil	L	
+L12	1	w:y	L	
+L12	2	w:nayt	L	
+L12	3	w:vng	L	
+L12	4	w:seul	L	
+L12	5	w:Et	L	
+L12	6	w:qui	L	
+L12	7	w:plus	L	
+L12	8	w:est	L	passes differ: A w:est / A:-
+L12	9	w:dame	L	passes differ: A w:dame / A:-
+L12	10	w:om	L	passes differ: A w:om / A:-
+L12	11	w:est	L	
+L12	12	w:danger	L	passes differ: A w:danger / B:w:dame
+L12	13	w:on	L	passes differ: A w:on / B:w:om
+L12	14	w:nest	L	
+L12	15	w:mesme	L	passes differ: A w:mesme / B:w:mesure
+L12	16	w:requissant	L	passes differ: A w:requissant / B:w:eguissans
+L12	17	w:Cc	L	passes differ: A w:Cc / B:w:Cest
+L12	18	w:nom	L	
+L12	19	w:point	L	passes differ: A w:point / B:w:poin
+L12	20	w:est	L	
+L12	21	w:sy	L	passes differ: A w:sy / B:w:fy
+L12	22	w:retenu	L	passes differ: A w:retenu / B:w:retme
+L12	23	w:que	L	passes differ: A w:que / B:w:gue
+L13	1	w:ie	L	
+L13	2	w:me	L	
+L13	3	w:lauoir	L	passes differ: A w:lauoir / B:w:lavoir
+L13	4	w:nele	L	
+L13	5	w:de	L	
+L13	6	w:ne	L	
+L13	7	w:soy	L	
+L13	8	w:don	L	
+L13	9	w:nela	L	
+L13	10	w:promin	L	
+L13	11	w:Mais	L	
+L13	12	w:vous	L	passes differ: A w:vous / B:w:Vond
+L13	13	w:cy	L	
+L13	14	w:pomuz	L	passes differ: A w:pomuz / A:-
+L13	15	w:pouuez	L	passes differ: A w:pouuez / B:w:cufuoi
+L13	16	w:requoi	L	passes differ: A w:requoi / B:w:faelle
+L13	17	w:sale	L	passes differ: A w:sale / B:w:Lre
+L13	18	w:Lin	L	passes differ: A w:Lin / B:w:can
+L13	19	w:cunsert	L	passes differ: A w:cunsert / B:w:sere
+L13	20	w:Et	L	passes differ: A w:Et / B:w:Z
+L13	21	w:fruite	L	
+L13	22	w:nopesti	L	passes differ: A w:nopesti / B:w:cnopose
+L14	1	w:voz	L	passes differ: A w:voz / B:-
+L14	2	w:a	L	passes differ: A w:a / B:w:vous
+L14	3	w:partir	L	passes differ: A w:partir / B:w:apartis
+L14	4	w:vous	L	passes differ: A w:vous / B:w:Vous
+L14	5	w:pourra	L	
+L14	6	w:dire	L	
+L14	7	w:aux	L	
+L14	8	w:estatz	L	
+L14	9	w:de	L	
+L14	10	w:sa	L	
+L14	11	w:mauuaise	L	passes differ: A w:mauuaise / B:w:mauvaiser
+L14	12	w:volonte	L	passes differ: A w:volonte / B:w:volontit
+L14	13	w:que	L	
+L14	14	w:Je	L	passes differ: A w:Je / B:w:Z
+L14	15	w:pensoit	L	
+L14	16	w:de	L	
+L14	17	w:ruiner	L	
+L14	18	w:bien	L	passes differ: A w:bien / B:w:Bien
+L14	19	w:tost	L	
+L14	20	w:sy	L	
+L14	21	w:damone	L	passes differ: A w:damone / B:w:Danone
+L15	1	w:an	L	passes differ: A w:an / B:w:au
+L15	2	w:tam	L	
+L15	3	w:de	L	
+L15	4	w:moien	L	
+L15	5	w:ou	L	passes differ: A w:ou / B:w:va
+L15	6	w:Jay	L	
+L15	7	w:de	L	
+L15	8	w:couraige	L	passes differ: A w:couraige / B:w:courage
+L15	9	w:a	L	
+L15	10	w:de	L	passes differ: A w:de / A:-
+L15	11	w:de	L	
+L15	12	w:desir	L	
+L15	13	w:de	L	
+L15	14	w:Laye	L	passes differ: A w:Laye / B:w:Vaye
+L15	15	w:retourner	L	passes differ: A w:retourner / B:w:retourn
+L15	16	w:voz	L	passes differ: A w:voz / B:w:Voz
+L15	17	w:intenond	L	passes differ: A w:intenond / B:w:intenoud
+L15	18	w:pard	L	
+L15	19	w:eue	L	passes differ: A w:eue / B:w:Aue
+L15	20	w:sire	L	passes differ: A w:sire / B:w:sur
+L15	21	w:calumnict	L	passes differ: A w:calumnict / B:w:calumniez
+L15	22	w:Rignoller	L	passes differ: A w:Rignoller / B:w:Disgnolles
+L16	1	w:Je	L	passes differ: A w:Je / B:w:Z
+L16	2	w:me	L	
+L16	3	w:fusse	L	
+L16	4	w:resolu	L	
+L16	5	w:de	L	
+L16	6	w:vous	L	
+L16	7	w:faire	L	passes differ: A w:faire / B:w:taire
+L16	8	w:pd	L	passes differ: A w:pd / B:w:po
+L16	9	w:un	L	passes differ: A w:un / B:w:ne
+L16	10	w:vous	L	
+L16	11	w:de	L	
+L16	12	w:splaise	L	passes differ: A w:splaise / B:w:splavie
+L16	13	w:nestoit	L	
+L16	14	w:que	L	
+L16	15	w:luy	L	
+L16	16	w:estime	L	
+L16	17	w:lung	L	passes differ: A w:lung / A:-
+L16	18	w:bung	L	passes differ: A w:bung / B:w:ce
+L16	19	w:et	L	passes differ: A w:et / B:w:Z
+L16	20	w:vne	L	passes differ: A w:vne / B:w:de
+L16	21	w:stil	L	
+L16	22	w:que	L	
+L16	23	w:tant	L	passes differ: A w:tant / B:w:tand
+L16	24	w:Et	L	passes differ: A w:Et / B:w:Er
+L17	1	w:que	L	
+L17	2	w:voz	L	
+L17	3	w:constance	L	
+L17	4	w:nestoit	L	
+L17	5	w:point	L	passes differ: A w:point / B:w:poin
+L17	6	w:diminuee	L	passes differ: A w:diminuee / B:w:diminuer
+L17	7	w:pd	L	
+L17	8	w:l	L	
+L17	9	w:partir	L	passes differ: A w:partir / B:-
+L17	10	w:est	L	passes differ: A w:est / B:w:parte
+L17	11	w:vous	L	passes differ: A w:vous / B:w:ne
+L17	12	w:auez	L	passes differ: A w:auez / B:w:Vous
+L17	13	w:faict	L	passes differ: A w:faict / B:w:auz
+L17	14	w:tant	L	passes differ: A w:tant / B:w:sein
+L17	15	w:amde	L	passes differ: A w:amde / B:w:tam
+L17	16	w:Car	L	passes differ: A w:Car / B:w:demandz
+L17	17	w:que	L	passes differ: A w:que / B:w:Cogen
+L17	18	w:vous	L	
+L17	19	w:pruls	L	passes differ: A w:pruls / B:w:peult
+L18	1	w:vnsolre	L	passes differ: A w:vnsolre / B:w:vnsolde
+L18	2	w:est	L	
+L18	3	w:a	L	
+L18	4	w:mon	L	
+L18	5	w:aduis	L	
+L18	6	w:de	L	
+L18	7	w:scauoir	L	passes differ: A w:scauoir / B:w:scavoir
+L18	8	w:que	L	
+L18	9	w:sa	L	passes differ: A w:sa / B:w:ser
+L18	10	w:opinions	L	
+L18	11	w:ne	L	
+L18	12	w:naissen	L	passes differ: A w:naissen / A:-
+L18	13	w:naissan	L	passes differ: A w:naissan / B:w:dy
+L18	14	w:de	L	
+L18	15	w:sepuie	L	passes differ: A w:sepuie / B:w:servir
+L18	16	w:de	L	
+L18	17	?	L	passes differ: A (none) / B:[sym:overbarred c/9-like glyph]
+L18	18	w:Mend	L	
+L18	19	w:de	L	
+L18	20	w:sire	L	passes differ: A w:sire / B:w:ser
+L18	21	w:andre	L	passes differ: A w:andre / B:w:audit
+L18	22	w:qui	L	
+L19	1	w:ayant	L	
+L19	2	w:lame	L	
+L19	3	w:cautbliser	L	
+L19	4	w:Il	L	
+L19	5	w:ne	L	
+L19	6	w:vo	L	passes differ: A w:vo / B:w:Vo
+L19	7	w:sera	L	passes differ: A w:sera / B:w:siva
+L19	8	w:point	L	passes differ: A w:point / B:w:poin
+L19	9	w:est	L	
+L19	10	w:Lauge	L	passes differ: A w:Lauge / B:w:Vauge
+L19	11	w:Autendre	L	
+L19	12	w:quil	L	
+L19	13	w:pro	L	passes differ: A w:pro / A:-
+L19	14	w:ni	L	passes differ: A w:ni / A:-
+L19	15	w:promison	L	passes differ: A w:promison / B:w:sem
+L19	16	w:de	L	
+L19	17	w:tela	L	
+L19	18	w:fruicte	L	passes differ: A w:fruicte / B:w:fruiter
+L19	19	w:Ouy	L	passes differ: A w:Ouy / B:w:One
+L20	1	w:Les	L	passes differ: A w:Les / A:-
+L20	2	w:Lesprance	L	passes differ: A w:Lesprance / B:w:spbamt
+L20	3	w:que	L	
+L20	4	w:cy	L	passes differ: A w:cy / B:w:ce
+L20	5	w:vng	L	
+L20	6	w:moment	L	passes differ: A w:moment / B:w:momen
+L20	7	w:la	L	
+L20	8	w:vbite	L	passes differ: A w:vbite / A:-
+L20	9	w:vebite	L	passes differ: A w:vebite / B:w:de
+L20	10	w:desduia	L	passes differ: A w:desduia / B:w:sauvia
+L20	11	w:elue	L	passes differ: A w:elue / B:w:elud
+L20	12	w:de	L	
+L20	13	w:calumnice	L	passes differ: A w:calumnice / B:w:calummiez
+L20	14	w:quil	L	
+L20	15	w:ney	L	
+L20	16	w:scauoir	L	passes differ: A w:scauoir / B:w:scauvoiam
+L20	17	w:Jneertie	L	passes differ: A w:Jneertie / B:w:Imeertie
+L20	18	w:nyle	L	passes differ: A w:nyle / B:w:igle
+L20	19	w:Syn	L	passes differ: A w:Syn / B:w:Dyn
+L21	1	w:dispenser	L	passes differ: A w:dispenser / B:w:Dispenser
+L21	2	w:ly	L	passes differ: A w:ly / B:w:Dy
+L21	3	w:apporter	L	passes differ: A w:apporter / B:w:apportir
+L21	4	w:vng	L	
+L21	5	w:remede	L	passes differ: A w:remede / B:-
+L21	6	w:que	L	passes differ: A w:que / B:-
+L21	7	w:bien	L	passes differ: A w:bien / B:-
+L21	8	w:vo	L	passes differ: A w:vo / B:w:remarq
+L21	9	w:que	L	passes differ: A w:que / B:w:pave
+L21	10	w:bien	L	passes differ: A w:bien / B:w:breth
+L21	11	w:complaignantira	L	passes differ: A w:complaignantira / B:w:comflanquantira
+L21	12	w:dirations	L	passes differ: A w:dirations / B:w:diratinua
+L21	13	w:a	L	
+L21	14	.7	L	
+L21	15	w:Sil	L	
+L21	16	w:nest	L	passes differ: A w:nest / B:w:mest
+L21	17	w:psonne	L	passes differ: A w:psonne / B:w:pbmna
+L21	18	w:de	L	
+L21	19	w:vous	L	passes differ: A w:vous / B:w:Vous
+L21	20	w:cy	L	
+L21	21	w:dire	L	
+L22	1	w:a	L	passes differ: A w:a / A:-
+L22	2	w:againt	L	passes differ: A w:againt / B:w:gin
+L22	3	w:ly	L	passes differ: A w:ly / B:w:Ay
+L22	4	w:reserue	L	passes differ: A w:reserue / B:w:referm
+L22	5	w:de	L	
+L22	6	w:voy	L	
+L22	7	w:que	L	
+L22	8	w:vous	L	
+L22	9	w:ne	L	
+L22	10	w:le	L	
+L22	11	w:debuez	L	passes differ: A w:debuez / B:w:debuz
+L22	12	w:ft	L	passes differ: A w:ft / B:w:fe
+L22	13	w:Vous	L	
+L22	14	w:resommeuam	L	passes differ: A w:resommeuam / B:w:resomaim
+L22	15	w:couuriez	L	passes differ: A w:couuriez / B:w:combiz
+L22	16	w:pin	L	
+L22	17	w:om	L	
+L22	18	w:quu	L	passes differ: A w:quu / B:w:qui
+L22	19	w:sit	L	passes differ: A w:sit / B:w:fer
+L22	20	w:moiens	L	passes differ: A w:moiens / B:w:moinia
+L22	21	w:ob	L	
+L22	22	w:subuez	L	passes differ: A w:subuez / B:w:fbuz
+L23	1	w:et	L	passes differ: A w:et / B:w:dy
+L23	2	w:pauellet	L	passes differ: A w:pauellet / B:w:pavalles
+L23	3	w:oeruauld	L	passes differ: A w:oeruauld / B:w:oerrand
+L23	4	w:a	L	
+L23	5	w:que	L	
+L23	6	w:lhommeur	L	passes differ: A w:lhommeur / B:w:Chunneur
+L23	7	w:de	L	
+L23	8	.7	L	
+L23	9	w:nest	L	
+L23	10	w:anllement	L	passes differ: A w:anllement / B:w:seulement
+L23	11	w:de	L	
+L23	12	w:Fy	L	passes differ: A w:Fy / A:-
+L23	13	w:sy	L	passes differ: A w:sy / B:w:aumestie
+L23	14	w:annestre	L	passes differ: A w:annestre / B:w:Cel
+L23	15	w:Cest	L	passes differ: A w:Cest / B:[sym:v-like hook]
+L23	16	?	L	passes differ: A .?5 / B:.73
+L23	17	w:la	L	
+L23	18	w:de	L	passes differ: A w:de / A:-
+L23	19	w:dessus	L	passes differ: A w:dessus / B:w:sbeig
+L23	20	w:reuoguer	L	passes differ: A w:reuoguer / B:w:reforgnere
+L23	21	w:Aussy	L	passes differ: A w:Aussy / B:w:Auspy
+L24	1	w:que	L	
+L24	2	w:le	L	
+L24	3	w:temps	L	passes differ: A w:temps / B:w:tumpa
+L24	4	w:vous	L	passes differ: A w:vous / B:w:Vous
+L24	5	w:appelle	L	passes differ: A w:appelle / B:w:appel
+L24	6	w:auoy	L	passes differ: A w:auoy / B:w:quoy
+L24	7	w:a	L	
+L24	8	w:ste	L	passes differ: A w:ste / B:w:fer
+L24	9	w:discoura	L	passes differ: A w:discoura / B:w:discourir
+L24	10	w:Mais	L	
+L24	11	w:a	L	
+L24	12	w:der	L	passes differ: A w:der / B:w:des
+L24	13	w:effatz	L	passes differ: A w:effatz / B:w:effects
+L24	14	w:qui	L	
+L24	15	w:auec	L	passes differ: A w:auec / B:w:aud
+L24	16	w:vne	L	passes differ: A w:vne / B:w:vnd
+L24	17	w:vn	L	passes differ: A w:vn / B:w:on
+L24	18	w:subuan	L	passes differ: A w:subuan / B:w:fbuan
+L24	19	w:eche	L	passes differ: A w:eche / B:w:ecb
+L24	20	w:ouvre	L	passes differ: A w:ouvre / B:w:vort
+L24	21	w:auoissen	L	passes differ: A w:auoissen / B:w:avoissem
+L25	1	w:voz	L	
+L25	2	w:memoire	L	passes differ: A w:memoire / A:-
+L25	3	w:memorie	L	passes differ: A w:memorie / B:w:de
+L25	4	w:Adriaen	L	passes differ: A w:Adriaen / B:w:Avenay
+L25	5	w:que	L	
+L25	6	w:tous	L	passes differ: A w:tous / B:w:tond
+L25	7	w:voz	L	
+L25	8	w:suilz	L	passes differ: A w:suilz / B:w:fbuld
+L25	9	w:voz	L	
+L25	10	w:suilz	L	passes differ: A w:suilz / B:-
+L25	11	w:vous	L	passes differ: A w:vous / B:w:Vous
+L25	12	w:de	L	
+L25	13	w:perdre	L	passes differ: A w:perdre / B:w:ferdin
+L25	14	w:po	L	
+L25	15	w:sur	L	
+L25	16	w:ontantamam	L	passes differ: A w:ontantamam / B:w:cutantemem
+L25	17	w:et	L	passes differ: A w:et / B:w:Et
+L25	18	w:le	L	passes differ: A w:le / B:w:de
+L25	19	w:deplorisie	L	passes differ: A w:deplorisie / B:w:Aplucife
+L25	20	w:de	L	
+L25	21	w:autre	L	passes differ: A w:autre / B:w:avoir
+L25	22	w:qui	L	
+L25	23	w:disent	L	passes differ: A w:disent / B:w:discom
+L26	1	w:que	L	
+L26	2	w:vo	L	
+L26	3	w:nameiz	L	passes differ: A w:nameiz / B:w:nanez
+L26	4	w:favall	L	passes differ: A w:favall / B:w:fauall
+L26	5	w:que	L	passes differ: A w:que / B:w:gen
+L26	6	w:apres	L	
+L26	7	w:la	L	
+L26	8	w:ruine	L	
+L26	9	w:entoibr	L	passes differ: A w:entoibr / A:-
+L26	10	w:entrobr	L	passes differ: A w:entrobr / B:w:on
+L26	11	w:en	L	passes differ: A w:en / B:w:restabli
+L26	12	w:restablissement	L	passes differ: A w:restablissement / B:w:sfeuom
+L26	13	w:de	L	
+L26	14	w:lesten	L	passes differ: A w:lesten / A:-
+L26	15	w:qui	L	passes differ: A w:qui / A:-
+L26	16	w:siba	L	passes differ: A w:siba / A:-
+L26	17	w:lestat	L	passes differ: A w:lestat / B:w:ca
+L26	18	w:qui	L	
+L26	19	w:sba	L	passes differ: A w:sba / B:w:siba
+L26	20	w:ran	L	passes differ: A w:ran / B:w:cand
+L26	21	w:que	L	passes differ: A w:que / B:w:gu
+L26	22	w:sy	L	
+L26	23	w:vous	L	passes differ: A w:vous / B:w:Vom
+L26	24	w:voutmut	L	passes differ: A w:voutmut / B:w:wutunnz
+L27	1	w:y	L	passes differ: A w:y / B:w:a
+L27	2	w:ne	L	
+L27	3	w:resoluaz	L	passes differ: A w:resoluaz / B:w:resolvaz
+L27	4	w:omnibd	L	passes differ: A w:omnibd / B:w:comb
+L27	5	.7	L	
+L27	6	w:quil	L	
+L27	7	w:ne	L	
+L27	8	w:vous	L	passes differ: A w:vous / B:w:Vous
+L27	9	w:cy	L	
+L27	10	w:se	L	passes differ: A w:se / B:w:so
+L27	11	w:vous	L	passes differ: A w:vous / B:w:Vous
+L27	12	w:cy	L	
+L27	13	w:sauua	L	passes differ: A w:sauua / B:w:scauva
+L27	14	w:point	L	
+L27	15	w:de	L	
+L27	16	w:gre	L	
+L27	17	w:Et	L	
+L27	18	w:aussy	L	
+L27	19	w:peu	L	passes differ: A w:peu / B:w:pen
+L27	20	?	L	passes differ: A .67 / B:[sym:o-like glyph with dot above]
+L27	21	w:que	L	passes differ: A w:que / B:7
+L28	1	w:Que	L	
+L28	2	w:sy	L	
+L28	3	.25	L	
+L28	4	w:quil	L	passes differ: A w:quil / B:-
+L28	5	w:ballen	L	passes differ: A w:ballen / B:w:quelles
+L28	6	.49	L	
+L28	7	w:destime	L	
+L28	8	w:que	L	passes differ: A w:que / B:-
+L28	9	w:nata	L	passes differ: A w:nata / B:-
+L28	10	w:tu	L	passes differ: A w:tu / B:-
+L28	11	w:que	L	
+L28	12	w:nata	L	passes differ: A w:nata / B:w:auta
+L28	13	w:luy	L	passes differ: A w:luy / B:w:tuy
+L28	14	w:agreable	L	passes differ: A w:agreable / B:w:aguibilen
+L28	15	w:de	L	
+L28	16	w:sa	L	
+L28	17	w:gloire	L	
+L28	18	w:on	L	
+L28	19	w:me	L	
+L28	20	w:se	L	
+L28	21	w:parlba	L	
+L28	22	w:plus	L	
+L28	23	w:que	L	
+L28	24	w:de	L	
+L28	25	w:bien	L	passes differ: A w:bien / B:w:bruy
+L28	26	w:aue	L	passes differ: A w:aue / B:w:aut
+L29	1	w:aux	L	passes differ: A w:aux / B:w:au
+L29	2	w:tourtelois	L	passes differ: A w:tourtelois / B:w:fourlghy
+L29	3	w:Il	L	
+L29	4	w:ne	L	passes differ: A w:ne / B:w:m
+L29	5	w:sy	L	
+L29	6	w:parle	L	passes differ: A w:parle / B:w:part
+L29	7	w:que	L	
+L29	8	w:de	L	
+L29	9	.57	M	
+L29	10	w:qui	L	
+L29	11	w:pd	L	
+L29	12	w:pour	L	passes differ: A w:pour / B:w:pen
+L29	13	w:quil	L	
+L29	14	w:far	L	passes differ: A w:far / B:w:fair
+L29	15	w:est	L	
+L29	16	w:beaucoup	L	
+L29	17	w:estime	L	
+L29	18	w:e	L	
+L29	19	w:prise	L	
+L29	20	w:vne	L	passes differ: A w:vne / B:w:Aue
+L29	21	w:prudia	L	passes differ: A w:prudia / B:w:prendia
+L30	1	w:femme	L	
+L30	2	w:digibles	L	passes differ: A w:digibles / B:w:digibdx
+L30	3	w:tout	L	passes differ: A w:tout / B:w:tume
+L30	4	w:sil	L	passes differ: A w:sil / B:w:sit
+L30	5	w:discours	L	passes differ: A w:discours / B:w:discourd
+L30	6	w:qui	L	
+L30	7	w:ne	L	
+L30	8	w:naissent	L	passes differ: A w:naissent / B:w:naissem
+L30	9	w:que	L	
+L30	10	w:de	L	
+L30	11	w:lexsme	L	passes differ: A w:lexsme / B:w:lbxsme
+L30	12	w:desir	L	
+L30	13	w:de	L	
+L30	14	w:Lua	L	passes differ: A w:Lua / B:w:Eva
+L30	15	w:glorie	L	passes differ: A w:glorie / B:w:gloire
+L30	16	w:aussy	L	
+L30	17	w:aucum	L	passes differ: A w:aucum / B:w:ancam
+L30	18	w:Ingerma	L	passes differ: A w:Ingerma / B:w:Angerma
+L31	1	w:y	L	passes differ: A w:y / B:w:Zy
+L31	2	w:moy	L	passes differ: A w:moy / B:w:may
+L31	3	w:ame	L	
+L31	4	w:que	L	
+L31	5	w:mande	L	passes differ: A w:mande / B:w:came
+L31	6	w:de	L	
+L31	7	w:vos	L	passes differ: A w:vos / B:-
+L31	8	w:sibnict	L	passes differ: A w:sibnict / B:w:voz
+L31	9	?	L	passes differ: A .7 / B:w:fbikt
+L31	10	w:Lit	L	passes differ: A w:Lit / B:w:Zer
+L31	11	w:affire	L	passes differ: A w:affire / B:w:affirl
+L31	12	w:par	L	
+L31	13	w:vill	L	
+L31	14	w:un	L	
+L31	15	w:sadunautm	L	passes differ: A w:sadunautm / B:w:sadnamem
+L31	16	w:dud	L	passes differ: A w:dud / B:w:ow
+L31	17	w:de	L	
+L31	18	w:la	L	
+L31	19	w:souhaite	L	
+L31	20	w:Mais	L	passes differ: A w:Mais / B:w:Mari
+L31	21	w:est	L	passes differ: A w:est / B:w:vo
+L31	22	w:la	L	passes differ: A w:la / B:w:ta
+L31	23	w:ratmuit	L	passes differ: A w:ratmuit / B:w:ratamik
+L32	1	w:en	L	passes differ: A w:en / B:-
+L32	2	w:temps	L	passes differ: A w:temps / B:w:in
+L32	3	w:l	L	passes differ: A w:l / B:w:kupa
+L32	4	w:pbmed	L	passes differ: A w:pbmed / B:w:lpbmer
+L32	5	w:ainsy	L	
+L32	6	w:co	L	passes differ: A w:co / A:-
+L32	7	w:en	L	passes differ: A w:en / B:w:n
+L32	8	w:parte	L	passes differ: A w:parte / B:w:paste
+L32	9	w:vous	L	passes differ: A w:vous / B:w:Vous
+L32	10	w:pourra	L	passes differ: A w:pourra / B:w:pouwa
+L32	11	w:dire	L	passes differ: A w:dire / B:w:lue
+L32	12	w:Ce	L	
+L32	13	15	L	
+L32	14	w:Auril	L	passes differ: A w:Auril / B:w:Aprivil
+L32	15	w:a	L	
+L32	16	w:Cing	L	
+L32	17	w:heures	L	passes differ: A w:heures / B:w:gluvin
+L32	18	w:du	L	
+L32	19	w:soir	L	

@@ -1,0 +1,684 @@
+line	position	sign	confidence	alt	why
+L01	1	w:Jay	M	A:-	gap
+L01	2	w:sou	M	A:-	gap
+L01	3	w:Jaysouel	M	B:w:el	differ
+L01	4	.71	L		agree-flagged
+L01	5	w:qui	M		agree-flagged
+L01	6	w:a	H		agree
+L01	7	w:discouru	M	B:w:discourn	differ
+L01	8	6	M		agree-flagged
+L01	9	7	M		agree-flagged
+L01	10	25	M		agree-flagged
+L01	11	93	M		agree-flagged
+L01	12	84	M		agree-flagged
+L01	13	25	M		agree-flagged
+L01	14	50	M		agree-flagged
+L01	15	93	M		agree-flagged
+L01	16	25	M		agree-flagged
+L01	17	95	M		agree-flagged
+L01	18	w:or	M	B:w:ce	differ
+L01	19	w:quil	M		agree-flagged
+L01	20	w:a	H		agree
+L01	21	w:apria	M		agree-flagged
+L01	22	w:or	M	B:w:ce	differ
+L01	23	w:sur	M	B:w:sit	differ
+L01	24	w:quartilat	M	B:w:quarti.ba	differ
+L01	25	w:Dom	L		agree-flagged
+L01	26	w:be	M	A:-	gap
+L02	1	w:mandam	M		agree-flagged
+L02	2	w:vo	L		agree-flagged
+L02	3	w:ley	M	B:w:lay	differ
+L02	4	w:pourrez	M		agree-flagged
+L02	5	w:apprendre	M		agree-flagged
+L02	6	w:quelque	M		agree-flagged
+L02	7	w:chose	M		agree-flagged
+L02	8	w:Jay	L		agree-flagged
+L02	9	w:apria	M		agree-flagged
+L02	10	w:en	M		agree-flagged
+L02	11	w:Evay	L		agree-flagged
+L02	12	w:que	M		agree-flagged
+L02	13	.7	M		agree-flagged
+L02	14	w:a	H		agree
+L02	15	w:eu	M		agree-flagged
+L02	16	w:quelque	M		agree-flagged
+L02	17	w:Embraiz	M	B:w:embraiz	differ
+L02	18	w:de	M		agree-flagged
+L02	19	w:la	M		agree-flagged
+L02	20	w:nouuelle	M	B:w:nouvelle	differ
+L03	1	w:quil	M		agree-flagged
+L03	2	w:luy	M		agree-flagged
+L03	3	w:a	H		agree
+L03	4	w:apporte	M		agree-flagged
+L03	5	w:de	M		agree-flagged
+L03	6	14	M		agree-flagged
+L03	7	15	L		agree-flagged
+L03	8	w:mesmes	L		agree-flagged
+L03	9	w:pd	L		agree-flagged
+L03	10	w:luy	M		agree-flagged
+L03	11	w:auoir	M	B:w:avoir	differ
+L03	12	w:dit	M		agree-flagged
+L03	13	w:quil	M		agree-flagged
+L03	14	w:a	H		agree
+L03	15	w:este	M		agree-flagged
+L03	16	w:retenu	M		agree-flagged
+L03	17	w:par	M		agree-flagged
+L03	18	w:les	M		agree-flagged
+L03	19	w:chemins	L		agree-flagged
+L03	20	w:neuuez	M	B:w:nauwir	differ
+L03	21	w:uen	M	B:w:ven	differ
+L03	22	w:que	L		agree-flagged
+L03	23	w:feriber	M	A:-	gap
+L03	24	w:scribuayen	M	B:w:ayem	differ
+L04	1	w:este	M		agree-flagged
+L04	2	w:omnibus	M	B:w:ombtirr	differ
+L04	3	w:Ce	M		agree-flagged
+L04	4	w:qui	M		agree-flagged
+L04	5	w:ma	M		agree-flagged
+L04	6	w:este	M		agree-flagged
+L04	7	w:confirme	M		agree-flagged
+L04	8	w:de	M	B:w:et	differ
+L04	9	w:son	M		agree-flagged
+L04	10	w:boyleur	M	B:w:boyleuin	differ
+L04	11	w:et	M		agree-flagged
+L04	12	w:a	M	B:-	gap
+L04	13	w:quoy	M		agree-flagged
+L04	14	w:Jay	L		agree-flagged
+L04	15	w:apporte	M		agree-flagged
+L04	16	w:la	M		agree-flagged
+L04	17	w:replique	M	B:w:reptigne	differ
+L04	18	w:aussy	L		agree-flagged
+L04	19	w:promptemt	M	B:w:prompte	differ
+L04	20	w:quelle	L		agree-flagged
+L04	21	w:ma	M		agree-flagged
+L05	1	w:semble	M		agree-flagged
+L05	2	w:neressi	M	B:w:necessaire	differ
+L05	3	w:de	M		agree-flagged
+L05	4	w:sorte	M	B:w:faire	differ
+L05	5	w:que	M		agree-flagged
+L05	6	w:on	M	B:w:ne	differ
+L05	7	w:que	L		agree-flagged
+L05	8	w:loy	L		agree-flagged
+L05	9	w:auoir	M	B:w:avoir	differ
+L05	10	w:de	L		agree-flagged
+L05	11	w:suspicion	L		agree-flagged
+L05	12	w:pd	L		agree-flagged
+L05	13	w:un	M	B:w:ne	differ
+L05	14	w:regard	L		agree-flagged
+L05	15	w:est	M		agree-flagged
+L05	16	w:bien	L		agree-flagged
+L05	17	w:Lun	M	B:w:Dun	differ
+L05	18	w:sy	L		agree-flagged
+L05	19	.27	M		agree-flagged
+L05	20	w:a	H		agree
+L05	21	w:quelque	M		agree-flagged
+L05	22	w:de	M		agree-flagged
+L05	23	w:sur	M	B:w:fre	differ
+L06	1	w:desire	M	B:w:desir	differ
+L06	2	w:bien	M		agree-flagged
+L06	3	w:amit	L		agree-flagged
+L06	4	.6	L		agree-flagged
+L06	5	w:Il	M		agree-flagged
+L06	6	w:faut	M		agree-flagged
+L06	7	w:quil	M		agree-flagged
+L06	8	w:se	M		agree-flagged
+L06	9	w:resolue	M		agree-flagged
+L06	10	w:de	M		agree-flagged
+L06	11	w:luy	M		agree-flagged
+L06	12	w:de	L		agree-flagged
+L06	13	w:promuire	M	B:w:fournir	differ
+L06	14	w:omnibus	M	B:w:ombtrem	differ
+L06	15	w:sire	M	B:w:fer	differ
+L06	16	w:intenond	M	B:w:intenoud	differ
+L06	17	w:prin	M	B:w:pris	differ
+L06	18	w:un	M	B:w:ne	differ
+L06	19	w:que	M		agree-flagged
+L06	20	w:ayant	M	B:w:ayam	differ
+L07	1	w:on	L		agree-flagged
+L07	2	w:a	M		agree-flagged
+L07	3	w:declare	M		agree-flagged
+L07	4	w:que	M	B:w:ne	differ
+L07	5	w:quil	M		agree-flagged
+L07	6	w:resenton	M	B:w:resouton	differ
+L07	7	w:de	L		agree-flagged
+L07	8	w:cios	M	B:w:cos	differ
+L07	9	.13	M		agree-flagged
+L07	10	w:a	M	B:w:de	differ
+L07	11	w:Ara	L		agree-flagged
+L07	12	w:siena	L		agree-flagged
+L07	13	w:Il	L		agree-flagged
+L07	14	w:est	M		agree-flagged
+L07	15	w:ez	L		agree-flagged
+L07	16	w:affiance	M	B:w:desfiamer	differ
+L07	17	w:quil	M		agree-flagged
+L07	18	w:continue	M		agree-flagged
+L07	19	w:a	M		agree-flagged
+L07	20	w:Lesbuc	M	B:w:Lsbur	differ
+L07	21	w:Zagli	M	B:w:Daghe	differ
+L08	1	w:Lestrain	L		agree-flagged
+L08	2	w:ne	L		agree-flagged
+L08	3	w:se	L		agree-flagged
+L08	4	w:limba	L		agree-flagged
+L08	5	w:que	M		agree-flagged
+L08	6	w:auec	M	B:w:amit	differ
+L08	7	w:sa	L		agree-flagged
+L08	8	w:delavaan	M	B:w:delavan	differ
+L08	9	w:nesfinmann	M	B:w:mesfuman	differ
+L08	10	w:neliu	M	B:w:nelir	differ
+L08	11	w:du	L		agree-flagged
+L08	12	w:feriter	M	B:-	gap
+L08	13	w:en	M	B:w:feitel	differ
+L08	14	w:y	M	B:w:cy	differ
+L08	15	w:escripuant	M	B:w:sviprann	differ
+L08	16	w:far	L		agree-flagged
+L08	17	w:sommeut	M	B:w:soment	differ
+L09	1	w:Car	L		agree-flagged
+L09	2	w:Il	L		agree-flagged
+L09	3	w:ya	L		agree-flagged
+L09	4	w:icy	M	B:w:sey	differ
+L09	5	w:des	L		agree-flagged
+L09	6	w:faulxbourg	M	B:w:faugbourg	differ
+L09	7	w:qui	L		agree-flagged
+L09	8	w:ne	L		agree-flagged
+L09	9	w:tasehin	M	B:w:tuschim	differ
+L09	10	w:que	M	B:w:qui	differ
+L09	11	w:a	L		agree-flagged
+L09	12	w:obseruer	M	B:w:observir	differ
+L09	13	w:voz	L		agree-flagged
+L09	14	w:actions	L		agree-flagged
+L09	15	w:et	L		agree-flagged
+L09	16	w:parz	M	B:w:faz	differ
+L09	17	w:tout	M	B:w:tous	differ
+L09	18	w:mon	L		agree-flagged
+L09	19	w:songe	L		agree-flagged
+L09	20	w:se	L		agree-flagged
+L09	21	w:Renze	M	B:w:Danze	differ
+L10	1	w:Aque	M	B:w:Anque	differ
+L10	2	w:vous	M	B:w:tous	differ
+L10	3	w:auez	M	B:w:auz	differ
+L10	4	w:faict	M	B:w:fait	differ
+L10	5	w:requis	M	B:w:eguis	differ
+L10	6	w:de	L		agree-flagged
+L10	7	w:a	L		agree-flagged
+L10	8	w:beaucoup	L		agree-flagged
+L10	9	w:les	L		agree-flagged
+L10	10	w:prinuib	M	B:w:gibus	differ
+L10	11	w:sitre	M	B:w:sitro	differ
+L10	12	w:de	L		agree-flagged
+L10	13	w:Lamitt	M	B:w:Vamitt	differ
+L10	14	w:et	M	B:w:Et	differ
+L10	15	w:pd	L		agree-flagged
+L10	16	w:pourte	M	B:w:pante	differ
+L10	17	w:sire	M	B:w:sest	differ
+L10	18	w:puisq	M	B:w:preuge	differ
+L10	19	w:L	M	B:w:Z	differ
+L11	1	w:ne	L		agree-flagged
+L11	2	w:voy	M	B:w:Voy	differ
+L11	3	w:psonne	M	B:w:pbsonne	differ
+L11	4	w:cy	L		agree-flagged
+L11	5	w:a	L		agree-flagged
+L11	6	w:luin	M	B:w:lieu	differ
+L11	7	w:dom	L		agree-flagged
+L11	8	w:vo	M	B:-	gap
+L11	9	w:puisse	M	B:w:Zo	differ
+L11	10	w:resister	M	B:w:puissé	differ
+L11	11	w:de	L		agree-flagged
+L11	12	w:dia	L		agree-flagged
+L11	13	w:psonne	M	B:w:qibsonne	differ
+L11	14	w:Car	M	B:w:Can	differ
+L11	15	w:L	M	B:w:Z	differ
+L11	16	w:suis	M	B:w:sui	differ
+L11	17	w:a	L		agree-flagged
+L11	18	w:reuenir	M	B:w:redevrius	differ
+L11	19	w:de	L		agree-flagged
+L11	20	w:quil	L		agree-flagged
+L12	1	w:y	L		agree-flagged
+L12	2	w:nayt	L		agree-flagged
+L12	3	w:vng	L		agree-flagged
+L12	4	w:seul	L		agree-flagged
+L12	5	w:Et	L		agree-flagged
+L12	6	w:qui	L		agree-flagged
+L12	7	w:plus	L		agree-flagged
+L12	8	w:est	M	A:-	gap
+L12	9	w:dame	M	A:-	gap
+L12	10	w:om	M	A:-	gap
+L12	11	w:est	L		agree-flagged
+L12	12	w:danger	M	B:w:dame	differ
+L12	13	w:on	M	B:w:om	differ
+L12	14	w:nest	L		agree-flagged
+L12	15	w:mesme	M	B:w:mesure	differ
+L12	16	w:requissant	M	B:w:eguissans	differ
+L12	17	w:Cc	M	B:w:Cest	differ
+L12	18	w:nom	L		agree-flagged
+L12	19	w:point	M	B:w:poin	differ
+L12	20	w:est	L		agree-flagged
+L12	21	w:sy	M	B:w:fy	differ
+L12	22	w:retenu	M	B:w:retme	differ
+L12	23	w:que	M	B:w:gue	differ
+L13	1	w:ie	L		agree-flagged
+L13	2	w:me	L		agree-flagged
+L13	3	w:lauoir	M	B:w:lavoir	differ
+L13	4	w:nele	L		agree-flagged
+L13	5	w:de	L		agree-flagged
+L13	6	w:ne	L		agree-flagged
+L13	7	w:soy	L		agree-flagged
+L13	8	w:don	L		agree-flagged
+L13	9	w:nela	L		agree-flagged
+L13	10	w:promin	L		agree-flagged
+L13	11	w:Mais	L		agree-flagged
+L13	12	w:vous	M	B:w:Vond	differ
+L13	13	w:cy	L		agree-flagged
+L13	14	w:pomuz	M	A:-	gap
+L13	15	w:pouuez	M	B:w:cufuoi	differ
+L13	16	w:requoi	M	B:w:faelle	differ
+L13	17	w:sale	M	B:w:Lre	differ
+L13	18	w:Lin	M	B:w:can	differ
+L13	19	w:cunsert	M	B:w:sere	differ
+L13	20	w:Et	M	B:w:Z	differ
+L13	21	w:fruite	L		agree-flagged
+L13	22	w:nopesti	M	B:w:cnopose	differ
+L14	1	w:voz	M	B:-	gap
+L14	2	w:a	M	B:w:vous	differ
+L14	3	w:partir	M	B:w:apartis	differ
+L14	4	w:vous	M	B:w:Vous	differ
+L14	5	w:pourra	L		agree-flagged
+L14	6	w:dire	L		agree-flagged
+L14	7	w:aux	L		agree-flagged
+L14	8	w:estatz	L		agree-flagged
+L14	9	w:de	L		agree-flagged
+L14	10	w:sa	L		agree-flagged
+L14	11	w:mauuaise	M	B:w:mauvaiser	differ
+L14	12	w:volonte	M	B:w:volontit	differ
+L14	13	w:que	L		agree-flagged
+L14	14	w:Je	M	B:w:Z	differ
+L14	15	w:pensoit	L		agree-flagged
+L14	16	w:de	L		agree-flagged
+L14	17	w:ruiner	L		agree-flagged
+L14	18	w:bien	M	B:w:Bien	differ
+L14	19	w:tost	L		agree-flagged
+L14	20	w:sy	L		agree-flagged
+L14	21	w:damone	M	B:w:Danone	differ
+L15	1	w:an	M	B:w:au	differ
+L15	2	w:tam	L		agree-flagged
+L15	3	w:de	L		agree-flagged
+L15	4	w:moien	L		agree-flagged
+L15	5	w:ou	M	B:w:va	differ
+L15	6	w:Jay	L		agree-flagged
+L15	7	w:de	L		agree-flagged
+L15	8	w:couraige	M	B:w:courage	differ
+L15	9	w:a	L		agree-flagged
+L15	10	w:de	M	A:-	gap
+L15	11	w:de	L		agree-flagged
+L15	12	w:desir	L		agree-flagged
+L15	13	w:de	L		agree-flagged
+L15	14	w:Laye	M	B:w:Vaye	differ
+L15	15	w:retourner	M	B:w:retourn	differ
+L15	16	w:voz	M	B:w:Voz	differ
+L15	17	w:intenond	M	B:w:intenoud	differ
+L15	18	w:pard	L		agree-flagged
+L15	19	w:eue	M	B:w:Aue	differ
+L15	20	w:sire	M	B:w:sur	differ
+L15	21	w:calumnict	M	B:w:calumniez	differ
+L15	22	w:Rignoller	M	B:w:Disgnolles	differ
+L16	1	w:Je	M	B:w:Z	differ
+L16	2	w:me	L		agree-flagged
+L16	3	w:fusse	L		agree-flagged
+L16	4	w:resolu	L		agree-flagged
+L16	5	w:de	L		agree-flagged
+L16	6	w:vous	L		agree-flagged
+L16	7	w:faire	M	B:w:taire	differ
+L16	8	w:pd	M	B:w:po	differ
+L16	9	w:un	M	B:w:ne	differ
+L16	10	w:vous	L		agree-flagged
+L16	11	w:de	L		agree-flagged
+L16	12	w:splaise	M	B:w:splavie	differ
+L16	13	w:nestoit	L		agree-flagged
+L16	14	w:que	L		agree-flagged
+L16	15	w:luy	L		agree-flagged
+L16	16	w:estime	L		agree-flagged
+L16	17	w:lung	M	A:-	gap
+L16	18	w:bung	M	B:w:ce	differ
+L16	19	w:et	M	B:w:Z	differ
+L16	20	w:vne	M	B:w:de	differ
+L16	21	w:stil	L		agree-flagged
+L16	22	w:que	L		agree-flagged
+L16	23	w:tant	M	B:w:tand	differ
+L16	24	w:Et	M	B:w:Er	differ
+L17	1	w:que	L		agree-flagged
+L17	2	w:voz	L		agree-flagged
+L17	3	w:constance	L		agree-flagged
+L17	4	w:nestoit	L		agree-flagged
+L17	5	w:point	M	B:w:poin	differ
+L17	6	w:diminuee	M	B:w:diminuer	differ
+L17	7	w:pd	L		agree-flagged
+L17	8	w:l	L		agree-flagged
+L17	9	w:partir	M	B:-	gap
+L17	10	w:est	M	B:w:parte	differ
+L17	11	w:vous	M	B:w:ne	differ
+L17	12	w:auez	M	B:w:Vous	differ
+L17	13	w:faict	M	B:w:auz	differ
+L17	14	w:tant	M	B:w:sein	differ
+L17	15	w:amde	M	B:w:tam	differ
+L17	16	w:Car	M	B:w:demandz	differ
+L17	17	w:que	M	B:w:Cogen	differ
+L17	18	w:vous	L		agree-flagged
+L17	19	w:pruls	M	B:w:peult	differ
+L18	1	w:vnsolre	M	B:w:vnsolde	differ
+L18	2	w:est	L		agree-flagged
+L18	3	w:a	L		agree-flagged
+L18	4	w:mon	L		agree-flagged
+L18	5	w:aduis	L		agree-flagged
+L18	6	w:de	L		agree-flagged
+L18	7	w:scauoir	M	B:w:scavoir	differ
+L18	8	w:que	L		agree-flagged
+L18	9	w:sa	M	B:w:ser	differ
+L18	10	w:opinions	L		agree-flagged
+L18	11	w:ne	L		agree-flagged
+L18	12	w:naissen	M	A:-	gap
+L18	13	w:naissan	M	B:w:dy	differ
+L18	14	w:de	L		agree-flagged
+L18	15	w:sepuie	M	B:w:servir	differ
+L18	16	w:de	L		agree-flagged
+L18	17		M	B:[sym:overbarred c/9-like glyph]	differ
+L18	18	w:Mend	L		agree-flagged
+L18	19	w:de	L		agree-flagged
+L18	20	w:sire	M	B:w:ser	differ
+L18	21	w:andre	M	B:w:audit	differ
+L18	22	w:qui	L		agree-flagged
+L19	1	w:ayant	L		agree-flagged
+L19	2	w:lame	L		agree-flagged
+L19	3	w:cautbliser	L		agree-flagged
+L19	4	w:Il	L		agree-flagged
+L19	5	w:ne	L		agree-flagged
+L19	6	w:vo	M	B:w:Vo	differ
+L19	7	w:sera	M	B:w:siva	differ
+L19	8	w:point	M	B:w:poin	differ
+L19	9	w:est	L		agree-flagged
+L19	10	w:Lauge	M	B:w:Vauge	differ
+L19	11	w:Autendre	L		agree-flagged
+L19	12	w:quil	L		agree-flagged
+L19	13	w:pro	M	A:-	gap
+L19	14	w:ni	M	A:-	gap
+L19	15	w:promison	M	B:w:sem	differ
+L19	16	w:de	L		agree-flagged
+L19	17	w:tela	L		agree-flagged
+L19	18	w:fruicte	M	B:w:fruiter	differ
+L19	19	w:Ouy	M	B:w:One	differ
+L20	1	w:Les	M	A:-	gap
+L20	2	w:Lesprance	M	B:w:spbamt	differ
+L20	3	w:que	L		agree-flagged
+L20	4	w:cy	M	B:w:ce	differ
+L20	5	w:vng	L		agree-flagged
+L20	6	w:moment	M	B:w:momen	differ
+L20	7	w:la	L		agree-flagged
+L20	8	w:vbite	M	A:-	gap
+L20	9	w:vebite	M	B:w:de	differ
+L20	10	w:desduia	M	B:w:sauvia	differ
+L20	11	w:elue	M	B:w:elud	differ
+L20	12	w:de	L		agree-flagged
+L20	13	w:calumnice	M	B:w:calummiez	differ
+L20	14	w:quil	L		agree-flagged
+L20	15	w:ney	L		agree-flagged
+L20	16	w:scauoir	M	B:w:scauvoiam	differ
+L20	17	w:Jneertie	M	B:w:Imeertie	differ
+L20	18	w:nyle	M	B:w:igle	differ
+L20	19	w:Syn	M	B:w:Dyn	differ
+L21	1	w:dispenser	M	B:w:Dispenser	differ
+L21	2	w:ly	M	B:w:Dy	differ
+L21	3	w:apporter	M	B:w:apportir	differ
+L21	4	w:vng	L		agree-flagged
+L21	5	w:remede	M	B:-	gap
+L21	6	w:que	M	B:-	gap
+L21	7	w:bien	M	B:-	gap
+L21	8	w:vo	M	B:w:remarq	differ
+L21	9	w:que	M	B:w:pave	differ
+L21	10	w:bien	M	B:w:breth	differ
+L21	11	w:complaignantira	M	B:w:comflanquantira	differ
+L21	12	w:dirations	M	B:w:diratinua	differ
+L21	13	w:a	L		agree-flagged
+L21	14	.7	L		agree-flagged
+L21	15	w:Sil	L		agree-flagged
+L21	16	w:nest	M	B:w:mest	differ
+L21	17	w:psonne	M	B:w:pbmna	differ
+L21	18	w:de	L		agree-flagged
+L21	19	w:vous	M	B:w:Vous	differ
+L21	20	w:cy	L		agree-flagged
+L21	21	w:dire	L		agree-flagged
+L22	1	w:a	M	A:-	gap
+L22	2	w:againt	M	B:w:gin	differ
+L22	3	w:ly	M	B:w:Ay	differ
+L22	4	w:reserue	M	B:w:referm	differ
+L22	5	w:de	L		agree-flagged
+L22	6	w:voy	L		agree-flagged
+L22	7	w:que	L		agree-flagged
+L22	8	w:vous	L		agree-flagged
+L22	9	w:ne	L		agree-flagged
+L22	10	w:le	L		agree-flagged
+L22	11	w:debuez	M	B:w:debuz	differ
+L22	12	w:ft	M	B:w:fe	differ
+L22	13	w:Vous	L		agree-flagged
+L22	14	w:resommeuam	M	B:w:resomaim	differ
+L22	15	w:couuriez	M	B:w:combiz	differ
+L22	16	w:pin	L		agree-flagged
+L22	17	w:om	L		agree-flagged
+L22	18	w:quu	M	B:w:qui	differ
+L22	19	w:sit	M	B:w:fer	differ
+L22	20	w:moiens	M	B:w:moinia	differ
+L22	21	w:ob	L		agree-flagged
+L22	22	w:subuez	M	B:w:fbuz	differ
+L23	1	w:et	M	B:w:dy	differ
+L23	2	w:pauellet	M	B:w:pavalles	differ
+L23	3	w:oeruauld	M	B:w:oerrand	differ
+L23	4	w:a	L		agree-flagged
+L23	5	w:que	L		agree-flagged
+L23	6	w:lhommeur	M	B:w:Chunneur	differ
+L23	7	w:de	L		agree-flagged
+L23	8	.7	L		agree-flagged
+L23	9	w:nest	L		agree-flagged
+L23	10	w:anllement	M	B:w:seulement	differ
+L23	11	w:de	L		agree-flagged
+L23	12	w:Fy	M	A:-	gap
+L23	13	w:sy	M	B:w:aumestie	differ
+L23	14	w:annestre	M	B:w:Cel	differ
+L23	15	w:Cest	M	B:[sym:v-like hook]	differ
+L23	16	.?5	M	B:.73	differ
+L23	17	w:la	L		agree-flagged
+L23	18	w:de	M	A:-	gap
+L23	19	w:dessus	M	B:w:sbeig	differ
+L23	20	w:reuoguer	M	B:w:reforgnere	differ
+L23	21	w:Aussy	M	B:w:Auspy	differ
+L24	1	w:que	L		agree-flagged
+L24	2	w:le	L		agree-flagged
+L24	3	w:temps	M	B:w:tumpa	differ
+L24	4	w:vous	M	B:w:Vous	differ
+L24	5	w:appelle	M	B:w:appel	differ
+L24	6	w:auoy	M	B:w:quoy	differ
+L24	7	w:a	L		agree-flagged
+L24	8	w:ste	M	B:w:fer	differ
+L24	9	w:discoura	M	B:w:discourir	differ
+L24	10	w:Mais	L		agree-flagged
+L24	11	w:a	L		agree-flagged
+L24	12	w:der	M	B:w:des	differ
+L24	13	w:effatz	M	B:w:effects	differ
+L24	14	w:qui	L		agree-flagged
+L24	15	w:auec	M	B:w:aud	differ
+L24	16	w:vne	M	B:w:vnd	differ
+L24	17	w:vn	M	B:w:on	differ
+L24	18	w:subuan	M	B:w:fbuan	differ
+L24	19	w:eche	M	B:w:ecb	differ
+L24	20	w:ouvre	M	B:w:vort	differ
+L24	21	w:auoissen	M	B:w:avoissem	differ
+L25	1	w:voz	L		agree-flagged
+L25	2	w:memoire	M	A:-	gap
+L25	3	w:memorie	M	B:w:de	differ
+L25	4	w:Adriaen	M	B:w:Avenay	differ
+L25	5	w:que	L		agree-flagged
+L25	6	w:tous	M	B:w:tond	differ
+L25	7	w:voz	L		agree-flagged
+L25	8	w:suilz	M	B:w:fbuld	differ
+L25	9	w:voz	L		agree-flagged
+L25	10	w:suilz	M	B:-	gap
+L25	11	w:vous	M	B:w:Vous	differ
+L25	12	w:de	L		agree-flagged
+L25	13	w:perdre	M	B:w:ferdin	differ
+L25	14	w:po	L		agree-flagged
+L25	15	w:sur	L		agree-flagged
+L25	16	w:ontantamam	M	B:w:cutantemem	differ
+L25	17	w:et	M	B:w:Et	differ
+L25	18	w:le	M	B:w:de	differ
+L25	19	w:deplorisie	M	B:w:Aplucife	differ
+L25	20	w:de	L		agree-flagged
+L25	21	w:autre	M	B:w:avoir	differ
+L25	22	w:qui	L		agree-flagged
+L25	23	w:disent	M	B:w:discom	differ
+L26	1	w:que	L		agree-flagged
+L26	2	w:vo	L		agree-flagged
+L26	3	w:nameiz	M	B:w:nanez	differ
+L26	4	w:favall	M	B:w:fauall	differ
+L26	5	w:que	M	B:w:gen	differ
+L26	6	w:apres	L		agree-flagged
+L26	7	w:la	L		agree-flagged
+L26	8	w:ruine	L		agree-flagged
+L26	9	w:entoibr	M	A:-	gap
+L26	10	w:entrobr	M	B:w:on	differ
+L26	11	w:en	M	B:w:restabli	differ
+L26	12	w:restablissement	M	B:w:sfeuom	differ
+L26	13	w:de	L		agree-flagged
+L26	14	w:lesten	M	A:-	gap
+L26	15	w:qui	M	A:-	gap
+L26	16	w:siba	M	A:-	gap
+L26	17	w:lestat	M	B:w:ca	differ
+L26	18	w:qui	L		agree-flagged
+L26	19	w:sba	M	B:w:siba	differ
+L26	20	w:ran	M	B:w:cand	differ
+L26	21	w:que	M	B:w:gu	differ
+L26	22	w:sy	L		agree-flagged
+L26	23	w:vous	M	B:w:Vom	differ
+L26	24	w:voutmut	M	B:w:wutunnz	differ
+L27	1	w:y	M	B:w:a	differ
+L27	2	w:ne	L		agree-flagged
+L27	3	w:resoluaz	M	B:w:resolvaz	differ
+L27	4	w:omnibd	M	B:w:comb	differ
+L27	5	.7	L		agree-flagged
+L27	6	w:quil	L		agree-flagged
+L27	7	w:ne	L		agree-flagged
+L27	8	w:vous	M	B:w:Vous	differ
+L27	9	w:cy	L		agree-flagged
+L27	10	w:se	M	B:w:so	differ
+L27	11	w:vous	M	B:w:Vous	differ
+L27	12	w:cy	L		agree-flagged
+L27	13	w:sauua	M	B:w:scauva	differ
+L27	14	w:point	L		agree-flagged
+L27	15	w:de	L		agree-flagged
+L27	16	w:gre	L		agree-flagged
+L27	17	w:Et	L		agree-flagged
+L27	18	w:aussy	L		agree-flagged
+L27	19	w:peu	M	B:w:pen	differ
+L27	20	.67	M	B:[sym:o-like glyph with dot above]	differ
+L27	21	w:que	M	B:7	differ
+L28	1	w:Que	L		agree-flagged
+L28	2	w:sy	L		agree-flagged
+L28	3	.25	L		agree-flagged
+L28	4	w:quil	M	B:-	gap
+L28	5	w:ballen	M	B:w:quelles	differ
+L28	6	.49	L		agree-flagged
+L28	7	w:destime	L		agree-flagged
+L28	8	w:que	M	B:-	gap
+L28	9	w:nata	M	B:-	gap
+L28	10	w:tu	M	B:-	gap
+L28	11	w:que	L		agree-flagged
+L28	12	w:nata	M	B:w:auta	differ
+L28	13	w:luy	M	B:w:tuy	differ
+L28	14	w:agreable	M	B:w:aguibilen	differ
+L28	15	w:de	L		agree-flagged
+L28	16	w:sa	L		agree-flagged
+L28	17	w:gloire	L		agree-flagged
+L28	18	w:on	L		agree-flagged
+L28	19	w:me	L		agree-flagged
+L28	20	w:se	L		agree-flagged
+L28	21	w:parlba	L		agree-flagged
+L28	22	w:plus	L		agree-flagged
+L28	23	w:que	L		agree-flagged
+L28	24	w:de	L		agree-flagged
+L28	25	w:bien	M	B:w:bruy	differ
+L28	26	w:aue	M	B:w:aut	differ
+L29	1	w:aux	M	B:w:au	differ
+L29	2	w:tourtelois	M	B:w:fourlghy	differ
+L29	3	w:Il	L		agree-flagged
+L29	4	w:ne	M	B:w:m	differ
+L29	5	w:sy	L		agree-flagged
+L29	6	w:parle	M	B:w:part	differ
+L29	7	w:que	L		agree-flagged
+L29	8	w:de	L		agree-flagged
+L29	9	.57	M		agree-flagged
+L29	10	w:qui	L		agree-flagged
+L29	11	w:pd	L		agree-flagged
+L29	12	w:pour	M	B:w:pen	differ
+L29	13	w:quil	L		agree-flagged
+L29	14	w:far	M	B:w:fair	differ
+L29	15	w:est	L		agree-flagged
+L29	16	w:beaucoup	L		agree-flagged
+L29	17	w:estime	L		agree-flagged
+L29	18	w:e	L		agree-flagged
+L29	19	w:prise	L		agree-flagged
+L29	20	w:vne	M	B:w:Aue	differ
+L29	21	w:prudia	M	B:w:prendia	differ
+L30	1	w:femme	L		agree-flagged
+L30	2	w:digibles	M	B:w:digibdx	differ
+L30	3	w:tout	M	B:w:tume	differ
+L30	4	w:sil	M	B:w:sit	differ
+L30	5	w:discours	M	B:w:discourd	differ
+L30	6	w:qui	L		agree-flagged
+L30	7	w:ne	L		agree-flagged
+L30	8	w:naissent	M	B:w:naissem	differ
+L30	9	w:que	L		agree-flagged
+L30	10	w:de	L		agree-flagged
+L30	11	w:lexsme	M	B:w:lbxsme	differ
+L30	12	w:desir	L		agree-flagged
+L30	13	w:de	L		agree-flagged
+L30	14	w:Lua	M	B:w:Eva	differ
+L30	15	w:glorie	M	B:w:gloire	differ
+L30	16	w:aussy	L		agree-flagged
+L30	17	w:aucum	M	B:w:ancam	differ
+L30	18	w:Ingerma	M	B:w:Angerma	differ
+L31	1	w:y	M	B:w:Zy	differ
+L31	2	w:moy	M	B:w:may	differ
+L31	3	w:ame	L		agree-flagged
+L31	4	w:que	L		agree-flagged
+L31	5	w:mande	M	B:w:came	differ
+L31	6	w:de	L		agree-flagged
+L31	7	w:vos	M	B:-	gap
+L31	8	w:sibnict	M	B:w:voz	differ
+L31	9	.7	M	B:w:fbikt	differ
+L31	10	w:Lit	M	B:w:Zer	differ
+L31	11	w:affire	M	B:w:affirl	differ
+L31	12	w:par	L		agree-flagged
+L31	13	w:vill	L		agree-flagged
+L31	14	w:un	L		agree-flagged
+L31	15	w:sadunautm	M	B:w:sadnamem	differ
+L31	16	w:dud	M	B:w:ow	differ
+L31	17	w:de	L		agree-flagged
+L31	18	w:la	L		agree-flagged
+L31	19	w:souhaite	L		agree-flagged
+L31	20	w:Mais	M	B:w:Mari	differ
+L31	21	w:est	M	B:w:vo	differ
+L31	22	w:la	M	B:w:ta	differ
+L31	23	w:ratmuit	M	B:w:ratamik	differ
+L32	1	w:en	M	B:-	gap
+L32	2	w:temps	M	B:w:in	differ
+L32	3	w:l	M	B:w:kupa	differ
+L32	4	w:pbmed	M	B:w:lpbmer	differ
+L32	5	w:ainsy	L		agree-flagged
+L32	6	w:co	M	A:-	gap
+L32	7	w:en	M	B:w:n	differ
+L32	8	w:parte	M	B:w:paste	differ
+L32	9	w:vous	M	B:w:Vous	differ
+L32	10	w:pourra	M	B:w:pouwa	differ
+L32	11	w:dire	M	B:w:lue	differ
+L32	12	w:Ce	L		agree-flagged
+L32	13	15	L		agree-flagged
+L32	14	w:Auril	M	B:w:Aprivil	differ
+L32	15	w:a	L		agree-flagged
+L32	16	w:Cing	L		agree-flagged
+L32	17	w:heures	M	B:w:gluvin	differ
+L32	18	w:du	L		agree-flagged
+L32	19	w:soir	L		agree-flagged

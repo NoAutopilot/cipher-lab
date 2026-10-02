@@ -1,4 +1,4 @@
-open
+partial
 BnF dépouillement of Français 4715 (archivesetmanuscrits.bnf.fr ark:/12148/cc577658, item 44, folio 67: "Lettre, avec chiffre, du Sr DE MONTHOLON. Tours, 15 avril 1590.") read by this worker from the cached notice in a fresh shallow clone of dbourdeau/cyphersolver (research/gallica_sweep/notice_cc577658.html and notice_cc577658_cd0e531.html, 2 Oct 2026); Tomokiyo's bnf4715.htm and nevers.htm (local mirror, cp932) read in full and grepped for no.44 / f.67 / "15 April 1590" (nevers.htm lists the item under the Vieuville-Nevers Cipher heading with no reading; bnf4715.htm has no no.44 section); Desenclos and Lasry, "An early French digit cipher: deciphering a letter from the King of France to the Duke of Nevers (1592)" (HistoCrypt, dspace.ut.ee PDF, 54 kB of text) grepped in full text: 0 hits for 4715, Montholon named twice as a digit-cipher user, no 1590 Montholon letter printed.
 
 # BnF fr.4715 Vieuville-Nevers open sub-pool -- first cheap test on no.44 (f.67r), Montholon, Tours, 15 April 1590
@@ -59,3 +59,88 @@ decipherment. Cipher Mysteries (ciphermysteries.com): 0 hits (the only match is 
 genealogy post).
 Verdict of the check: no decipherment or plaintext of fr.4715 no.44 (f.67) located in any of the above; a search
 result (rule 10), not a novelty verdict. Status `open`.
+
+## LIKELY-1 (2 Oct 2026, account-4): first cheap test on no.44 f.67r -- the key against the leaf, control first
+
+**Answer.** The leaf is 32 lines of clear French with 28 cipher groups in the running text, not the ~100 the
+shortlist row estimated: one run of ten letter-homophone groups on L01 (both blind passes read it identically,
+`6 7 25 93 84 25 50 93 25 95`), eleven single barred groups (`.71 .7 .27 .6 .13 .7 .7 .7 .25 .49 .57`, the
+word-code layer nevers.htm names and does not enumerate), two unbarred groups `14 15` on L03, four groups the
+passes read differently (L18, L23, L27, L31) and the numeral of the date line. The printed key reads the eight
+in-key groups of the L01 run as `a u s a l u a t` (grade H, the key's own AB rows; `6` and `7` have no key row).
+That is 8 letters: the rank-1 shuffled-key gate cannot decide at that length (control below, subsampled to N=8),
+so the test is a **non-test for the key on this leaf, not a negative**; what the leaf actually carries in cipher is
+the word-code layer the letter key does not cover.
+
+**Control first (rule 3), `scripts/keytest.py known-answer`.** Scorer = French word-cover (tools/data/fr16 words,
+3-14 letters, freq >= 3) of the decoded in-key runs, against the key's letter values permuted among its letter rows.
+On no.58's Tomokiyo group transcription (fr4715-montholon-1589/witness/aligned_dump_codes.txt, 818 in-key groups):
+REAL 729/818 = 0.891 vs 200 shuffled keys mean 0.353 sd 0.100 max 0.631, z 5.37, rank 1 of 201 -- the instrument
+separates the real key on a leaf it is known to read. Subsampled to this leaf's N (`--window 8 --windows 200`, 20
+shuffles each): real mean 0.816 vs shuffle mean 0.355; the real key is above the shuffle mean in 195/200 windows
+but rank 1 of 21 in only 85/200, and 11/200 windows have some shuffled key at cover 1.0 (ARM3-ADJ lesson: a
+control's power is shown at the target's own N before a miss is read as a negative).
+
+**Target, `scripts/keytest.py target f67r_ciphertext.tsv --shuffles 200`:** 13 unbarred cipher groups, 8 in key,
+4 out of key (`6 7 14 15`); decoded letters 8; word-cover REAL 6/8 = 0.750 vs 200 shuffled keys mean 0.326 sd
+0.293 max 1.000, z 1.45, rank 43 of 201; against the first 20 shuffles (max 0.875) the real key is not rank 1.
+Side by side: control (N=818) 0.891 vs 0.353; control at N=8 beats the shuffle mean 97.5 pct of the time and
+beats every shuffle 42 pct of the time; target (N=8) 0.750 vs 0.326, above the mean, not above the max. Exactly
+where a true key on an 8-letter window lands most of the time, and where the gate has no power.
+
+**Transcription (rule 2, image).** Gallica canvas f149 (label 67r), region 300,900,3500,4820 at native resolution,
+one request; `tools/iiif_lines.py` 96 crops (L01-L30 slope-following, L31-L32 fixed bands cut by hand, see
+images/manifest.json); two blind Sonnet passes (witness/f67r_pass_a.tsv, f67r_pass_b.tsv; the brief's vision calls
+2 and 3, call 1 the overlay check); `tools/reconcile_passes.py` nw alignment: 683 aligned columns, agreement
+351/683 = 51.4 pct -- the clear French is read at mostly conf L by both passes (every cipher group but the four
+above agreed; the clear words disagree, e.g. "NERESSI", "SCRIBUAYEN"), so `f67r_ciphertext.tsv` is a rough
+transcription of the clear frame around an agreed set of cipher groups, not a reading of the prose. Clear words
+visible with confidence in the overlay: the opening "Jay sceu ... qui a discouru [cipher] ce quil a apris ...",
+the close "ce 15 apuril a cinq heures du soir". Both passes report the barred groups carry a horizontal bar, not
+a dot, over the digits (the `.` prefix is the file's convention for either mark).
+
+**Rule 4 grades, `tools/decode_key.py ciphers/fr4715-vieuville-pool` (decode.json; `--check` exit 0):** cipher
+tokens 28: H 8 (key rows, printed-key grade AB), U 20 = 11 barred word-codes (two carry an M-grade gloss from
+no.58's OWN_GLOSS table in fr4715-montholon-1589/scripts/decode_rest.py: `.27` = les, `.25` = la; not applied
+here), 4 unbarred groups without a key row (`6 7 14 15`), 4 pass disagreements, 1 date numeral. No C, no S.
+The 655 clear-word tokens are a transcription, not decipherment, and are not graded. Reading of record:
+`f67r_reading.txt` (letter strings between the clear words), regenerated by `tools/decode_key.py`.
+
+**Judge (rule 7), `tools/judge_plaintext.py specs/fr4715-vieuville-pool.json --file witness/f67r_judge_candidate.txt`
+(the reading lines with the bracketed U tokens removed):**
+```
+FAIL language: score=-1.145, null_p99=-1.922, real_p05=-0.853, real_median=-0.784, mode=both, N=2699
+ok   words: cover=0.872, min=0.5, real_text_median_cover=0.946
+FAIL - fr4715-vieuville-pool (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+Reported as a FAIL. What it measures here: 2,691 of the 2,699 letters are the clear French as the two Sonnet
+passes transcribed it at conf L, 8 are the key's letters; the score sits far above the shuffled null (-1.92) and
+below real_p05 (-0.85) -- the transcription of the clear frame is garbled, which the 51.4 pct pass agreement already
+said. It says nothing about the key either way. No "reading ready" line: nothing here clears the judge and the
+shuffled-key gate together.
+
+**Spec:** `specs/fr4715-vieuville-pool.json`, `cheap_test_done[0]` carries both numbers (Pipeline 3a).
+**Status:** `partial` (rule 5's near-solve amendment: a control showed the negative was not a real test; the 8
+in-key groups decode at H). Not `closed-negative`; no NEAR.md row (no margin over control to register).
+
+**Requests this job.** gallica.bnf.fr: 1 (the region fetch; the manifest was cached). archivesetmanuscrits.bnf.fr: 1
+WebFetch, HTTP 403, not retried (the cached notice in Bourdeau's clone used instead). dspace.ut.ee: 1 (the
+Desenclos-Lasry PDF). github.com: 2 shallow clones + 1 WebFetch (PR #9). cryptiana.blogspot.com: 1. Web searches: 7.
+Vision calls: 3 (overlay, pass A, pass B). No credentials used or printed. No AskUserQuestion.
+
+## Remaining gaps (LIKELY-1, 2 Oct 2026)
+Read so far: 8 of 28 cipher groups decode under the key (28.6 pct of the cipher groups, grade H); the 655 clear-French tokens are a transcription at 51.4 pct pass agreement, not a reading
+- the 11 barred word-code groups (`.71 .7 .27 .6 .13 .7 .7 .7 .25 .49 .57`) - blocker: not-attempted; the word-code table is not on file (nevers.htm names the layer; no.58's OWN_GLOSS covers only .27 = les and .25 = la) and reading them from the clear context needs a clear-French transcription better than 51.4 pct agreement; next: one Opus pass over the 96 crops in images/ (clear words + the barred groups in context), ~$4
+- the 4 unbarred groups `6 7 14 15` (L01, L03) - blocker: open-codes; no key row for any of them (the printed table has no 6, 7, 14 or 15), possibly word-codes whose bar the passes missed or one-digit homophones the printed table lacks; context after the Opus pass decides
+- the 4 pass disagreements (L18/17, L23/16, L27/20, L31/9) - blocker: not-attempted; settled only from the image, this brief's three vision calls are spent; next: the same Opus pass, ~$0 extra
+- a decisive test of the key on this pool - blocker: too-short; 8 in-key letters on this leaf, the rank-1 gate has 42 pct power at N=8 (control above); next: no.37 f.60 (dense, ~1,500 signs, Gallica canvas 135 per fr4715-montholon-1589/images/manifest.json) the same way, ~$9
+
+## Escalation (2 Oct 2026)
+- [x] siblings: no.58's Tomokiyo group transcription used as the known-answer control (z 5.37) and its OWN_GLOSS word-codes checked against the barred groups (2 of 11 covered); the other six open pool leaves not yet imaged
+- [x] clear-pages: this leaf is itself 95 pct clear French; the clear frame transcribed by two blind passes (51.4 pct agreement), the word-codes not yet read from it
+- [x] known-keys: key_vieuville_nevers.tsv applied through tools/decode_key.py, 8 of 28 groups read at H, shuffled-key test above
+- [ ] print: tools/print_check.py on the leaf's clear phrases, after the Opus pass gives phrases readable enough to search (the conf-L transcription is not)
+- [n/a] key-rebuild: the letter key is proven on no.58 and nothing on this leaf contradicts it; 8 letters rebuild nothing
+- [x] image-check: native region fetched once, 96 crops, overlay eye-checked; the date line closes the letter on 67r, so 67v was not fetched
+- [ ] retry: a second clear-French pass with a stronger reader (Opus) over the same crops, the cheapest next step above
+Verdict: keep going: 3 internal gaps; cheapest next: one Opus clear-French pass over the 96 crops to read the 11 barred word-codes from context and settle the 4 disagreements, ~$4

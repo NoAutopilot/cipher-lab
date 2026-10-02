@@ -193,3 +193,5 @@ step doubling as the BnF-notice source once found there). gallica.bnf.fr: 3 IIIF
 `&country=US&key=$GOOGLE_BOOKS_KEY`). be-api.us.archive.org: 1 call. No DECODE live crawl (cached copy used).
 No credentials printed. No AskUserQuestion. No novelty/first/unpublished wording (rule 10) -- every found-solved
 verdict above is sourced to the BnF's own period cataloguer's notation, not claimed as our discovery.
+
+LIKELY-1, 2 Oct 2026 (account-4): the open sub-pool's leaves other than no.58 now live in `ciphers/fr4715-vieuville-pool/` (first cheap test on no.44 f.67r run with its control: the leaf is 95 pct clear French with 28 cipher groups, 8 of them letter-homophones reading `ausaluat` under the key, 11 barred word-codes; non-test for the key at N=8, not a negative -- see that folder's NOTES.md and HYPOTHESES.md).

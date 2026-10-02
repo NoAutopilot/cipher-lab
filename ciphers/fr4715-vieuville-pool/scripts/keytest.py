@@ -106,7 +106,8 @@ def tokens_from_tsv(path):
     trailing '?' on a token is stripped (M-graded by decode_key.py, still decoded here); a leading '.' or "'" marks a
     dotted word-code (breaks the run, not decoded)."""
     toks, n_cipher, n_plain, n_dotted, n_illeg = [], 0, 0, 0, 0
-    for r in csv.DictReader(open(path, encoding="utf-8"), delimiter="\t"):
+    lines = [ln for ln in open(path, encoding="utf-8") if not ln.startswith("#")]
+    for r in csv.DictReader(lines, delimiter="\t"):
         t = (r.get("token") or r.get("sign") or "").strip()
         if not t:
             continue
@@ -152,6 +153,37 @@ def run(toks, key, words, n_shuffles, seed=1, label=""):
     return dict(score=score, mean=m, sd=s, z=z, rank=rank, n=n_shuffles, letters=t, max=max(sh) if sh else None)
 
 
+def subsampled_control(toks, key, words, k, n_windows, n_shuffles, seed):
+    """Windows of k consecutive in-key groups from the dump (no dotted code inside): real-key cover vs the same
+    window under n_shuffles letter-shuffled keys. Reports how often the real key wins at this N."""
+    real = {r["sign"]: r["value"] for r in key}
+    letter_signs = [r["sign"] for r in key if r["kind"] == "letter"]
+    starts = [i for i in range(len(toks) - k + 1) if all(t is not None and t in real for t in toks[i:i + k])]
+    rng = random.Random(seed)
+    picks = [starts[rng.randrange(len(starts))] for _ in range(n_windows)]
+    wins_all = wins_mean = 0
+    reals, shm, shmax = [], [], []
+    for st in picks:
+        w = toks[st:st + k]
+        c, t = cover(segments(w, real), words)
+        r = c / t
+        sh = []
+        for _ in range(n_shuffles):
+            vals = [real[s] for s in letter_signs]
+            rng.shuffle(vals)
+            vm = dict(real); vm.update(zip(letter_signs, vals))
+            c2, t2 = cover(segments(w, vm), words)
+            sh.append(c2 / t2)
+        reals.append(r); shm.append(statistics.mean(sh)); shmax.append(max(sh))
+        wins_all += r > max(sh)
+        wins_mean += r > statistics.mean(sh)
+    print(f"[no.58 dump, {n_windows} windows of {k} in-key groups, {n_shuffles} shuffles each] real cover mean "
+          f"{statistics.mean(reals):.3f}; shuffle mean of means {statistics.mean(shm):.3f}; shuffle max mean "
+          f"{statistics.mean(shmax):.3f}; real beats the shuffle mean in {wins_mean}/{n_windows} windows, beats every "
+          f"shuffle (rank 1) in {wins_all}/{n_windows}; real cover == 1.0 in {sum(1 for r in reals if r >= 0.999)}/{n_windows}, "
+          f"shuffle max == 1.0 in {sum(1 for m in shmax if m >= 0.999)}/{n_windows}")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("mode", choices=["known-answer", "target"])
@@ -160,6 +192,9 @@ def main():
     ap.add_argument("--seed", type=int, default=1)
     ap.add_argument("--key", default=KEY)
     ap.add_argument("--dump-decode", help="write the decoded letter runs (target mode)")
+    ap.add_argument("--window", type=int, help="known-answer only: subsample the control to windows of this many "
+                    "consecutive in-key groups (CLAUDE.md rule 3, ARM3-ADJ: a control's power is shown at the target's own N)")
+    ap.add_argument("--windows", type=int, default=200)
     a = ap.parse_args()
     key = load_key(a.key)
     words = wordlist()
@@ -167,6 +202,9 @@ def main():
           f"key rows {len(key)}")
     if a.mode == "known-answer":
         toks = tokens_from_dump()
+        if a.window:
+            subsampled_control(toks, key, words, a.window, a.windows, a.shuffles, a.seed)
+            return
         run(toks, key, words, a.shuffles, a.seed, "no.58 dump, Tomokiyo's own groups, dotted word-codes break runs")
     else:
         toks, counts = tokens_from_tsv(a.ciphertext)
