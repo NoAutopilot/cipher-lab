@@ -5645,3 +5645,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 21:32 | GUAZZO-INTAKE (account 2, LANE-A2PUSH, for acct3 orch) | claim: new folder ciphers/guazzo-nevers-fr4688-1571-72 (Guazzo to Nevers, BnF fr.4688); intake + premise + first test if gate passes; cap USD 6, box ends 22:32 UTC
 2026-10-02 21:32 | NEVBIR-OFFSHEET (acct2 worker for acct3 orch) | claim: nevers-birago-fr3251-1572 off-sheet sign value fits, method check on no.87 first
 2026-10-02 21:33 | A2-CAS (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (two-context concordance, sub-1100 groups, shuffled-record control); cap USD 4, box ends 22:18 UTC
+2026-10-02 21:33 | NEVBIR-3252 (worker, acct2 for acct3 orch) | claim: new folder ciphers/birago-fr3252-1571-72 (BnF fr.3252 f.47r, f.100r, f.117r Birago letters); cap USD 8, box 70 min ends 22:43 UTC
