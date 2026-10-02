@@ -1,0 +1,13 @@
+passage	pos	context_before	context_after	candA	confA	candB	confB	noteA	noteB
+f184v_L02	16	T33 T45 X_NEW T86	T60 T53 T45 T92	T25	H	T54	M		
+f184v_L03	5	T54 T86 X_NEW T19	T37 T76 T92 T96	X_NEW	H	T97	M	8-like slashed scribble	
+f184v_L03	23	T98 T19 T92 X_NEW	T27 T55 T50 T19	T19	M	T86	L		
+f184v_L04	1		X_NEW T98 T53 T37	X_NEW	M	T81	M	struck-through crossed mark; prose before: line start	prose before: line start
+f184v_L04	26	T81 T96 T53 T85	?	T26	M	T76	M		
+f184v_L04	27	T96 T53 T85 ?		T90	L	T65	M	prose after: line end	after: gutter
+f185r_L02	4	T95 X_NEW T80	T85 T70 T58 T96	X_NEW	H	T97	M	8-like slashed scribble	
+f185r_L02	23	T45 X_NEW T25 T15	? T88 T33 T85	X_NEW	M	T37	M	theta with double bar	
+f185r_L02	24	X_NEW T25 T15 ?	T88 T33 T85 X_NEW	X_NEW	L	T78	M	H-like with left tick/hook	
+f185r_L05	6	T86 X_NEW T92 T19	X_NEW T85 T80 T60	T90	M	X_NEW	M		b/stem sign with crossbar on top
+f185r_L06	20	T33 T76 T37 X_NEW	T76 T50 T19 T56	X_NEW	H	T95	M	p-like stem with cross-bar foot	
+f185r_L08	1		T65 T33 T27 T19	X_NEW	M	T49	M	square with horizontal bars both sides, no stem; prose before: line start	prose before: line start

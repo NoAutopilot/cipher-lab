@@ -1,0 +1,331 @@
+passage	pos	sign_id	alt	conf	note
+f184v_L01	1	X_NEW	T70	L	triangle with cross below (diag stroke may cross it); prose before: V.E.
+f184v_L01	2	X_NEW		M	digit 4 shape
+f184v_L01	3	X_NEW		M	digit 7 shape
+f184v_L01	4	T63		M	
+f184v_L01	5	T19		M	
+f184v_L01	6	X_K		H	capital K, dot after
+f184v_L01	7	T19		M	
+f184v_L01	8	T58		M	
+f184v_L01	9	T45		M	
+f184v_L01	10	T92		M	
+f184v_L01	11	T45		M	
+f184v_L01	12	T36		M	
+f184v_L01	13	T49		M	
+f184v_L01	14	T53		M	
+f184v_L01	15	T80		M	
+f184v_L01	16	T55		M	
+f184v_L01	17	T60		M	
+f184v_L01	18	T45		M	
+f184v_L01	19	T63		L	partial v-shape at gutter; after: gutter
+f184v_L02	1	T85		M	prose before: line start
+f184v_L02	2	X_NEW		M	small t-shape
+f184v_L02	3	T96		M	
+f184v_L02	4	X_NEW		M	ae-like: a/x loop with epsilon tail
+f184v_L02	5	T37		M	
+f184v_L02	6	X_NEW		M	m with superscript a (m-a)
+f184v_L02	7	T80		M	
+f184v_L02	8	T19		M	
+f184v_L02	9	X_NEW		M	b/stem sign with crossbar at top
+f184v_L02	10	T56		M	
+f184v_L02	11	T85		M	
+f184v_L02	12	T33		M	
+f184v_L02	13	T45		M	
+f184v_L02	14	X_NEW		M	ae-like: a/x loop with epsilon tail
+f184v_L02	15	T86		M	
+f184v_L02	16	T54		M	
+f184v_L02	17	T60		M	
+f184v_L02	18	T53		M	
+f184v_L02	19	T45		M	
+f184v_L02	20	T92		M	
+f184v_L02	21	T19		M	
+f184v_L02	22	T36		M	
+f184v_L02	23	X_NEW		M	stem with loop and tick (percent-like)
+f184v_L02	24	T58		M	
+f184v_L02	25	T85		M	
+f184v_L02	26	T50		M	
+f184v_L02	27	T37		M	
+f184v_L02	28	T92		M	after: gutter
+f184v_L03	1	T54		M	prose before: line start
+f184v_L03	2	T86		M	
+f184v_L03	3	X_NEW		M	small t-shape
+f184v_L03	4	T19		M	
+f184v_L03	5	T97		M	
+f184v_L03	6	T37		M	
+f184v_L03	7	T76		M	
+f184v_L03	8	T92		M	
+f184v_L03	9	T96		M	
+f184v_L03	10	X_NEW		M	ae-like: a/x loop with epsilon tail
+f184v_L03	11	T45		M	
+f184v_L03	12	T92		M	
+f184v_L03	13	T53		M	
+f184v_L03	14	T85		M	
+f184v_L03	15	T80		M	
+f184v_L03	16	T60		M	
+f184v_L03	17	T78		M	
+f184v_L03	18	X_NEW		M	stem with loop and tick (percent-like)
+f184v_L03	19	T98		M	
+f184v_L03	20	T19		M	
+f184v_L03	21	T92		M	
+f184v_L03	22	X_NEW		M	b/stem sign with crossbar at top
+f184v_L03	23	T86		L	
+f184v_L03	24	T27		M	
+f184v_L03	25	T55		M	
+f184v_L03	26	T50		M	
+f184v_L03	27	T19		M	
+f184v_L03	28	T76		M	
+f184v_L03	29	T96		M	after: gutter
+f184v_L04	1	T81		M	prose before: line start
+f184v_L04	2	X_NEW	T70	L	triangle with cross below (diag stroke may cross it)
+f184v_L04	3	T98		M	
+f184v_L04	4	T53		M	
+f184v_L04	5	T37		M	
+f184v_L04	6	T54		M	
+f184v_L04	7	T19		M	
+f184v_L04	8	T58		M	
+f184v_L04	9	T53		M	
+f184v_L04	10	T52		M	
+f184v_L04	11	T92		M	
+f184v_L04	12	T53		M	
+f184v_L04	13	T55		M	
+f184v_L04	14	X_NEW		M	ae-like: a/x loop with epsilon tail
+f184v_L04	15	T63		M	
+f184v_L04	16	T80		M	
+f184v_L04	17	T53		M	
+f184v_L04	18	T52		M	
+f184v_L04	19	T29		M	
+f184v_L04	20	T63		M	
+f184v_L04	21	T49		M	
+f184v_L04	22	T81		M	
+f184v_L04	23	T96		M	
+f184v_L04	24	T53		M	
+f184v_L04	25	T85		M	
+f184v_L04	26	T76		M	
+f184v_L04	27	T65		M	after: gutter
+f185r_L01	1	T25		M	prose before: line start
+f185r_L01	2	T60		M	
+f185r_L01	3	T53		M	
+f185r_L01	4	T45		M	
+f185r_L01	5	T60		M	
+f185r_L01	6	T98		M	
+f185r_L01	7	T19		M	
+f185r_L01	8	T92		M	
+f185r_L01	9	T96		M	
+f185r_L01	10	T53		M	
+f185r_L01	11	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L01	12	T19		M	
+f185r_L01	13	T33		M	
+f185r_L01	14	T25		M	
+f185r_L01	15	T76		M	
+f185r_L01	16	T19		M	
+f185r_L01	17	T58		M	
+f185r_L01	18	T86		M	
+f185r_L01	19	T27		M	
+f185r_L01	20	T45		M	
+f185r_L01	21	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L01	22	T86		M	
+f185r_L01	23	T98		M	
+f185r_L01	24	T33		M	
+f185r_L01	25	T45		M	
+f185r_L01	26	T37		M	
+f185r_L01	27	T98		M	
+f185r_L01	28	T45		M	
+f185r_L01	29	T27		M	
+f185r_L01	30	T55		M	after: line end
+f185r_L02	1	T95		M	prose before: line start
+f185r_L02	2	X_NEW		M	small t-shape
+f185r_L02	3	T80		M	
+f185r_L02	4	T97		M	
+f185r_L02	5	T85		M	
+f185r_L02	6	T70		M	
+f185r_L02	7	T58		M	
+f185r_L02	8	T96		M	
+f185r_L02	9	T19		M	
+f185r_L02	10	T80		M	
+f185r_L02	11	T76		M	
+f185r_L02	12	T24		M	
+f185r_L02	13	T85		M	
+f185r_L02	14	T33		M	
+f185r_L02	15	T19		M	
+f185r_L02	16	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L02	17	T45		M	
+f185r_L02	18	T63		M	
+f185r_L02	19	T45		M	
+f185r_L02	20	X_NEW		M	m with superscript a (m-a)
+f185r_L02	21	T25		M	
+f185r_L02	22	T15		M	
+f185r_L02	23	T37		M	
+f185r_L02	24	T78		M	
+f185r_L02	25	T88		M	
+f185r_L02	26	T33		M	
+f185r_L02	27	T85		M	
+f185r_L02	28	X_NEW		M	8 with horizontal bar
+f185r_L02	29	T70		M	
+f185r_L02	30	T96		M	
+f185r_L02	31	T85		M	after: line end
+f185r_L03	1	T58		M	prose before: line start
+f185r_L03	2	T37		M	
+f185r_L03	3	T33		M	
+f185r_L03	4	T96		M	
+f185r_L03	5	T92		M	
+f185r_L03	6	T85		M	
+f185r_L03	7	T25		M	
+f185r_L03	8	T64		M	
+f185r_L03	9	T85		M	
+f185r_L03	10	T33		M	
+f185r_L03	11	T45		M	
+f185r_L03	12	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L03	13	T86		M	
+f185r_L03	14	T92		M	
+f185r_L03	15	T36		M	
+f185r_L03	16	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L03	17	T96		M	
+f185r_L03	18	T27		M	
+f185r_L03	19	T52		M	
+f185r_L03	20	X_NEW	T26	L	o with j tail
+f185r_L03	21	T24		M	
+f185r_L03	22	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L03	23	T37		M	
+f185r_L03	24	T60		M	
+f185r_L03	25	T36		M	
+f185r_L03	26	T45		M	
+f185r_L03	27	T92		M	
+f185r_L03	28	T36		M	
+f185r_L03	29	T55		M	after: line end
+f185r_L04	1	T70		M	prose before: line start
+f185r_L04	2	T85		M	
+f185r_L04	3	X_NEW		M	m with superscript a (m-a)
+f185r_L04	4	T85		M	
+f185r_L04	5	T53		M	
+f185r_L04	6	T45		M	
+f185r_L04	7	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L04	8	T55		M	
+f185r_L04	9	X_NEW		L	stem with cross-tick and 3
+f185r_L04	10	T64		M	
+f185r_L04	11	T85		M	
+f185r_L04	12	X_NEW		M	small t-shape
+f185r_L04	13	T37		M	
+f185r_L04	14	T25		M	
+f185r_L04	15	T90		M	
+f185r_L04	16	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L04	17	T45		M	
+f185r_L04	18	T92		M	
+f185r_L04	19	T86		M	
+f185r_L04	20	T76		M	
+f185r_L04	21	T53		M	
+f185r_L04	22	T85		M	
+f185r_L04	23	T65		M	
+f185r_L04	24	T19		M	
+f185r_L04	25	T58		M	
+f185r_L04	26	T45		M	
+f185r_L04	27	X_NEW	T95	L	P-like stem with crossbars below
+f185r_L04	28	T45		M	
+f185r_L04	29	T27		M	
+f185r_L04	30	T86		M	after: line end
+f185r_L05	1	X_NEW		M	ae-like loop with epsilon tail; line start
+f185r_L05	2	T86		M	
+f185r_L05	3	X_NEW	T86	M	bars-and-verticals H shape
+f185r_L05	4	T92		M	
+f185r_L05	5	T19		M	
+f185r_L05	6	X_NEW		M	b/stem sign with crossbar on top
+f185r_L05	7	X_NEW		M	ae-like loop with epsilon tail
+f185r_L05	8	T85		M	
+f185r_L05	9	T80		M	
+f185r_L05	10	T60		M	
+f185r_L05	11	T53		M	
+f185r_L05	12	T45		M	
+f185r_L05	13	T60		M	
+f185r_L05	14	T98		M	
+f185r_L05	15	T45		M	
+f185r_L05	16	T76		M	
+f185r_L05	17	T53		M	
+f185r_L05	18	T86		M	
+f185r_L05	19	T54		M	
+f185r_L05	20	T86		M	
+f185r_L05	21	T60		M	
+f185r_L05	22	T19		M	
+f185r_L05	23	T33		M	
+f185r_L05	24	T86		M	
+f185r_L05	25	T76		M	
+f185r_L05	26	T33		M	
+f185r_L05	27	T65		M	
+f185r_L05	28	T19		M	
+f185r_L05	29	T60		M	
+f185r_L05	30	T45		M	line end
+f185r_L06	1	T92		M	prose before: line start
+f185r_L06	2	T36		M	
+f185r_L06	3	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L06	4	T25		M	
+f185r_L06	5	T27		M	
+f185r_L06	6	T19		M	
+f185r_L06	7	T54		M	
+f185r_L06	8	T25		M	
+f185r_L06	9	T36		M	
+f185r_L06	10	T19		M	
+f185r_L06	11	T92		M	
+f185r_L06	12	T85		M	
+f185r_L06	13	T37		M	
+f185r_L06	14	T58		M	
+f185r_L06	15	T36		M	
+f185r_L06	16	T33		M	
+f185r_L06	17	T76		M	
+f185r_L06	18	T37		M	
+f185r_L06	19	X_NEW		M	small t-shape
+f185r_L06	20	T95		M	
+f185r_L06	21	T76		M	
+f185r_L06	22	T50		M	
+f185r_L06	23	T19		M	
+f185r_L06	24	T56		M	
+f185r_L06	25	T85		M	
+f185r_L06	26	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L06	27	T45		M	
+f185r_L06	28	T36		M	
+f185r_L06	29	T56		M	
+f185r_L06	30	T25		M	
+f185r_L06	31	T45		M	
+f185r_L06	32	T92		M	after: line end
+f185r_L07	1	T53		M	prose before: line start
+f185r_L07	2	T55		M	
+f185r_L07	3	T63		M	
+f185r_L07	4	T37		M	
+f185r_L07	5	T76		M	
+f185r_L07	6	T85		M	
+f185r_L07	7	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L07	8	T80		M	
+f185r_L07	9	X_NEW	T26	L	o with j tail
+f185r_L07	10	T98		M	
+f185r_L07	11	T55		M	
+f185r_L07	12	T33		M	
+f185r_L07	13	T45		M	
+f185r_L07	14	T60		M	
+f185r_L07	15	T53		M	
+f185r_L07	16	T25		M	
+f185r_L07	17	T19		M	
+f185r_L07	18	T60		M	
+f185r_L07	19	T86		M	
+f185r_L07	20	X_NEW	T86	L	H/vertical pair with outer horizontal bars
+f185r_L07	21	X_NEW		M	small t-shape
+f185r_L07	22	T37		M	
+f185r_L07	23	T60		M	
+f185r_L07	24	T80		M	
+f185r_L07	25	T86		M	
+f185r_L07	26	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L07	27	T37		M	
+f185r_L07	28	X_NEW		M	stem with loop and tick (percent-like)
+f185r_L07	29	T92		M	
+f185r_L07	30	T53		M	
+f185r_L07	31	X_NEW		M	small t-shape; after: line end
+f185r_L08	1	T49		M	prose before: line start
+f185r_L08	2	T65		M	
+f185r_L08	3	T33		M	
+f185r_L08	4	T27		M	
+f185r_L08	5	T19		M	
+f185r_L08	6	T85		M	
+f185r_L08	7	X_K		H	capital K, dot after
+f185r_L08	8	T85		M	
+f185r_L08	9	X_NEW		M	ae-like: a/x loop with epsilon tail
+f185r_L08	10	T65		M	
+f185r_L08	11	T37		M	
+f185r_L08	12	T53		M	
+f185r_L08	13	T19		M	
+f185r_L08	14	X_NEW	T70	L	triangle with cross below (diag stroke may cross it); after: Mons. (prose)

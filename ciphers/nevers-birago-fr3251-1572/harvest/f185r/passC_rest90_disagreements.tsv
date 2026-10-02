@@ -1,0 +1,13 @@
+passage	merged_pos	posA	idA	confA	posB	idB	confB	status	noteA	noteB
+f184v_L02	16	16	T25	H	16	T54	M	split_H_A		
+f184v_L03	5	5	X_NEW	H	5	T97	M	split_H_A	8-like slashed scribble	
+f184v_L03	23	23	T19	M	23	T86	L	split		
+f184v_L04	1	1	X_NEW	M	1	T81	M	split	struck-through crossed mark; prose before: line start	prose before: line start
+f184v_L04	26	26	T26	M	26	T76	M	split		
+f184v_L04	27	27	T90	L	27	T65	M	split	prose after: line end	after: gutter
+f185r_L02	4	4	X_NEW	H	4	T97	M	split_H_A	8-like slashed scribble	
+f185r_L02	23	23	X_NEW	M	23	T37	M	split	theta with double bar	
+f185r_L02	24	24	X_NEW	L	24	T78	M	split	H-like with left tick/hook	
+f185r_L05	6	6	T90	M	6	X_NEW	M	split		b/stem sign with crossbar on top
+f185r_L06	20	20	X_NEW	H	20	T95	M	split_H_A	p-like stem with cross-bar foot	
+f185r_L08	1	1	X_NEW	M	1	T49	M	split	square with horizontal bars both sides, no stem; prose before: line start	prose before: line start
