@@ -1,6 +1,7 @@
 # belmesseri-napoli-1627
 
-Status: open
+Status: blocked
+No standard edition identified or opened for the Este envoy's Naples dispatches on the Stigliano marriage of 1627-28; archive.org full-text search for Belmesseri+Napoli+Stigliano returned 35 hits and Belmessieri+Napoli 316, all noise (Neapolitan directories, newspapers, indexes), none naming this envoy.
 
 ## What this is
 
@@ -46,3 +47,28 @@ below.
 
 Requests this pass: WebSearch 1, github.com 0 (reused shared clone). No SIAS, no Google Books, no DECODE login,
 no promotion, no decoding.
+
+
+## Web and blog check (CS-A2-C, 2 Oct 2026)
+
+WebSearch queries (standard) and what they returned:
+- Belmesseri Napoli 1627 Stigliano matrimonio Este cifra dispacci (Anna Carafa/Stigliano marriage pages, RAH and Spanish studies; envoy and cipher not named)
+
+Blogs: Cipherbrain, Cryptiana blog and Cipher Mysteries were covered by the restricted web searches above and a local grep of `sources/cryptiana` and `sources/ciphermysteries`; 0 hits for the sender, recipient or shelfmark; no comment thread opened because no hit was relevant.
+
+archive.org full-text (be-api, one request at a time, 2 s apart, unquoted-token behaviour so counts are upper bounds):
+- Belmesseri Napoli Stigliano (35, noise)
+- Belmessieri Napoli (316, noise)
+
+Solver repositories (shallow clones, grep only, 2 Oct 2026): belmesseri/belmessieri: 0 / 0; 'stigliano' appears in Bourdeau pallotto1629 and esp318 (different targets, not this letter). Aymeloglu cited, no code used.
+
+DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and later key lists) for the sender/recipient names: 0 rows; the 2 Oct 2026 login-free crawl (801 rows) by CS-A2-B is the same list. Live de-crypt.org not queried by this worker.
+
+## Premise check (CS-A2-C, 2 Oct 2026)
+
+- (a) not found as a decipherment; the finding aid's "Evvi congiunta una cifra" is ambiguous between a key and a ciphered letter.
+- (b) not found: no Belmesseri file in either solver repo.
+- (c) unreachable: no image of ASMo Napoli b.20 fasc.1.
+- (d) not found/unreachable: the Spanish-side literature on the Carafa-Stigliano marriage (Sabbioneta/Gonzaga) was not opened; a search of Simancas/Sabbioneta studies for Este dispatches is the next step.
+
+Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.

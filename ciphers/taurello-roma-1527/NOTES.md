@@ -1,6 +1,7 @@
 # taurello-roma-1527
 
-Status: open
+Status: blocked
+Standard edition not opened: Ulysse Robert, "Philibert de Chalon, prince d'Orange 1502-1530. Lettres et documents" (Boletin RAH 1902, listed on cervantesvirtual.com, which is Cloudflare-blocked to this environment) and Sanuto/Pastor appendices were not read by this worker; archive.org full-text search (be-api) for Taurello+Orange+Vetralla returned 29 hits, none naming Pietr'Antonio Taurello's 24 June 1527 letter (hits were Murray handbooks and unrelated indexes), and the phrase "Pietrantonio Taurello" returned 0.
 
 ## What this is
 
@@ -50,3 +51,31 @@ should cross-check the Roma fondo's own key before requesting). REQUEST.md below
 
 Requests this pass: WebSearch 4, github.com 0 (reused shared clones). No SIAS, no Google Books, no DECODE login,
 no promotion, no decoding.
+
+
+## Web and blog check (CS-A2-C, 2 Oct 2026)
+
+WebSearch queries (standard) and what they returned:
+- Taurello Filiberto di Chalons principe d'Orange 1527 Vetralla lettera cifra (Wikipedia/DBE Philibert pages, Robert's Lettres et documents on cervantesvirtual; no mention of the letter)
+- Taurello 1527 Ferrara ambasciatore Roma "in cifra" Sacco di Roma dispaccio Este (ASMo finding aids Spagna/Firenze/Bologna/Parma; Taurello as orator 1525-26 only)
+- Archivio di Stato Modena Carteggio ambasciatori Roma Taurello 1527 cifra decifrazione (ASMo cipher-lab PDF, unimore theses; no Taurello decipherment)
+
+Blogs: Cipherbrain, Cryptiana blog and Cipher Mysteries were covered by the restricted web searches above and a local grep of `sources/cryptiana` and `sources/ciphermysteries`; 0 hits for the sender, recipient or shelfmark; no comment thread opened because no hit was relevant.
+
+archive.org full-text (be-api, one request at a time, 2 s apart, unquoted-token behaviour so counts are upper bounds):
+- Taurello Orange Vetralla (29 hits, none relevant)
+- Taurello Vetralla 1527 (42, none relevant)
+- "Pietrantonio Taurello" (0)
+
+Solver repositories (shallow clones, grep only, 2 Oct 2026): taurello: 0 / 0 in both solver repos; "torello" hits only in Bourdeau buda1489 and it1583 (unrelated targets, not read as this item). Aymeloglu cited, no code used.
+
+DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and later key lists) for the sender/recipient names: 0 rows; the 2 Oct 2026 login-free crawl (801 rows) by CS-A2-B is the same list. Live de-crypt.org not queried by this worker.
+
+## Premise check (CS-A2-C, 2 Oct 2026)
+
+- (a) not found: folder mentions no decipherment, gloss or clear copy; the finding aid says only "tutta in cifra".
+- (b) not found: no Taurello/Chalon file in either solver repo's working files (greps above).
+- (c) unreachable: no image exists (REQUEST.md); piece no. "32" unconfirmed, so no neighbour leaf could be viewed.
+- (d) unreachable: the recipient-side edition (Robert, Lettres et documents) was not opened; cervantesvirtual.com blocked. Next: try the Robert volumes via archive.org/Google Books (country=US) for 24 June 1527 / Vetralla / Taurello.
+
+Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.

@@ -1,6 +1,7 @@
 # clerville-francia-1648
 
-Status: open
+Status: blocked
+No standard edition identified or opened for Este's French embassy of 1648; archive.org full-text search for Clerville+Modena+1648+cifra returned 126 hits, none about an Este dispatch (the on-point one is an engineering study of the chevalier de Clerville, which does not concern this dispatch), and the Mazarin/Este correspondence editions were not located.
 
 ## What this is
 
@@ -49,3 +50,27 @@ it.
 
 Requests this pass: WebSearch 2, WebFetch 1 (mymemo.comune.modena.it), github.com 0 (reused shared clones). No
 SIAS, no Google Books, no DECODE login, no promotion, no decoding.
+
+
+## Web and blog check (CS-A2-C, 2 Oct 2026)
+
+WebSearch queries (standard) and what they returned:
+- Clerville cavaliere ambasciatore estense Francia 1648 cifrario dispaccio decifrato (structurae and Clerville biography pages, HistoCrypt Louis XIV pieces; none connects Clerville to the Este post)
+
+Blogs: Cipherbrain, Cryptiana blog and Cipher Mysteries were covered by the restricted web searches above and a local grep of `sources/cryptiana` and `sources/ciphermysteries`; 0 hits for the sender, recipient or shelfmark; no comment thread opened because no hit was relevant.
+
+archive.org full-text (be-api, one request at a time, 2 s apart, unquoted-token behaviour so counts are upper bounds):
+- Clerville Modena 1648 cifra (126 hits, none about the dispatch)
+
+Solver repositories (shallow clones, grep only, 2 Oct 2026): clerville: 0 / 0 in both solver repos; 0 in sources/decode, sources/cryptiana. Aymeloglu cited, no code used.
+
+DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and later key lists) for the sender/recipient names: 0 rows; the 2 Oct 2026 login-free crawl (801 rows) by CS-A2-B is the same list. Live de-crypt.org not queried by this worker.
+
+## Premise check (CS-A2-C, 2 Oct 2026)
+
+- (a) found, unread: the folder says the cipher-table sheet used for the dispatch is filed with it ("con il foglio del cifrario"): a key beside the letter, not a decipherment; no image to open.
+- (b) not found: no Clerville file in either solver repo.
+- (c) unreachable: no image; busta/fascicolo unresolved (PDF table extraction).
+- (d) not found/unreachable: no French-side edition (Mazarin letters, Recueil des instructions) identified; a Gallica/IA search of the 27 April 1648 date with Este envoy names is the next step.
+
+Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.

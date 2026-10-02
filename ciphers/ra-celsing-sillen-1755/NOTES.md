@@ -1,6 +1,7 @@
 # Gustaf Celsing letter-drafts to Sillén with cipher key, 1755-1764
 
-**Status: open**
+**Status: blocked**
+No standard edition identified or opened for Gustaf Celsing's letter-drafts to Sillen; archive.org full-text search for Celsing+Sillen+chiffer returned 52 hits (army lists, Historisk tidskrift snippet about Celsing as royal secretary, unrelated) and none naming the cipher key, and the Riksarkivet record is recorded as not digitised (onlyDigitisedMaterials false, 24 Sept 2026 worker).
 
 ## Item
 
@@ -62,3 +63,27 @@ specific letters the key applies to.
 ## Request log
 
 24 Sept 2026: no personal data logged here.
+
+
+## Web and blog check (CS-A2-C, 2 Oct 2026)
+
+WebSearch queries (standard) and what they returned:
+- Gustaf Celsing Sillen 1755 chiffernyckel brevkoncept Konstantinopel (biographical and museum pages only)
+
+Blogs: Cipherbrain, Cryptiana blog and Cipher Mysteries were covered by the restricted web searches above and a local grep of `sources/cryptiana` and `sources/ciphermysteries`; 0 hits for the sender, recipient or shelfmark; no comment thread opened because no hit was relevant.
+
+archive.org full-text (be-api, one request at a time, 2 s apart, unquoted-token behaviour so counts are upper bounds):
+- Celsing Sillen chiffer (52, none relevant)
+
+Solver repositories (shallow clones, grep only, 2 Oct 2026): celsing: only Bourdeau roell1809/turk_inv.txt (unrelated Dutch inventory); sillen: only coincidental substring files; Ekeblad/Nensen 0. Aymeloglu cited, no code used.
+
+DECODE: local grep of sources/decode (records-non-decrypted 24 Sept 2026 and later key lists) for the sender/recipient names: 0 rows; the 2 Oct 2026 login-free crawl (801 rows) by CS-A2-B is the same list. Live de-crypt.org not queried by this worker.
+
+## Premise check (CS-A2-C, 2 Oct 2026)
+
+- (a) found, unread: the catalogue note says "Med chiffernyckel" (key filed with the drafts); no decipherment mentioned.
+- (b) not found: no Celsing/Sillen working file in either solver repo.
+- (c) unreachable: not digitised (Riksarkivet record SE/RA/721512/II/II 1/II 1 B/4); no neighbour leaf viewable.
+- (d) not found/unreachable: Swedish recipient-side editions (Rikskansliets and Hattarnas-era publications) were not identified; next: search Historisk tidskrift and Svenska riksarkivets publications for Celsing's Porte correspondence.
+
+Verdict: blocked. No solution, key, plaintext or documented attempt was found in anything searched, but no edition could be opened, so this is a search result for the log and not a statement that none exists. Status was `open` before this pass and failed the intake gate.
