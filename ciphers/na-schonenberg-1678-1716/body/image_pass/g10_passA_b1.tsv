@@ -1,0 +1,92 @@
+line	pos	group_seen	conf	note
+L01	0	[other:plain word "Amigo"]	H	line opens with a written word Amigo followed by a dot, in the cipher row; counted as a group to match 14
+L01	1	89	H	
+L01	2	46	H	
+L01	3	56	H	
+L01	4	13	H	clear 1 and 3; no mark
+L01	5	)6	H	reversed-c clearly before 6
+L01	6	60	H	second digit a small o-shaped 0
+L01	7	[blot]	H	large dark ink blot covers the group entirely; underlying digits unreadable
+L01	8	15	H	
+L01	9	3	H	
+L01	10	45	M	first digit 4 likely; faint, could be 4 or 9 (45/95)
+L01	11	24	H	
+L01	12	35	H	
+L01	13	38	H	
+L02	0	81	H	I see 19 groups vs 18 counted; likely merge pos17+18 as )5
+L02	1	6	H	
+L02	2	3)	M	3 followed by a closing-paren stroke with a tick above; alternative reading 31
+L02	3	16	H	
+L02	4	89	H	
+L02	5	10	H	
+L02	6	50	H	
+L02	7	29	H	
+L02	8	34	H	
+L02	9	28	H	
+L02	10	25	H	
+L02	11	56	H	
+L02	12	)1	M	reversed-c before 1; could instead be a ) attached to end of 56 (56)) then 1
+L02	13	95	H	
+L02	14	10	H	
+L02	15	94	H	
+L02	16	)0	M	comma-like ) before small o; alt )o read as )0, or the ) belongs with preceding comma
+L02	17	)	M	lone ) between dots; could be the ) of a ")5" group, giving 18 groups instead of 19
+L02	18	5	H	
+L03	0	8)	H	8 followed by closing paren
+L03	1	12	H	
+L03	2	59	H	
+L03	3	60	H	
+L03	4	[tilde]	H	tilde with dots above/below (division-sign like); not a digit
+L03	5	5)	H	
+L03	6	60	H	
+L03	7	2)	H	
+L03	8	88	H	
+L03	9	30	H	
+L03	10	15	H	
+L03	11	)8	H	reversed-c before 8
+L03	12	3)	H	
+L03	13	90	H	
+L03	14	[X]	H	X cross with dots on either side; ink dot before it
+L03	15	)2	M	reversed-c before 2; the ) could be the dot-flanked tail of the X sign
+L03	16	51	H	
+L03	17	60	H	
+L04	0	18	H	I see 20 groups vs 19 counted (likely 36+) merged as 36), or 54+2)); line preceded by a long flourish (not counted)
+L04	1	3	H	
+L04	2	30	H	
+L04	3	98	H	
+L04	4	82	H	
+L04	5	49	H	
+L04	6	23	H	
+L04	7	68	H	
+L04	8	14	H	
+L04	9	46	H	retraced in darker ink
+L04	10	89	H	
+L04	11	21	H	
+L04	12	56	H	6 retraced in darker ink with a blot
+L04	13	50	H	
+L04	14	33	H	
+L04	15	54	H	no clear dot after it; written close to next group
+L04	16	2)	H	2 followed by closing paren; if no separator from 54 the whole could be 542) but groups are 1-2 digits
+L04	17	36	H	
+L04	18	)	M	lone ) between dots; alternative: it belongs to 36 as 36)
+L04	19	95	M	first digit 9 or 4 (95/45); trailing comma-like stroke
+L05	0	50	H	
+L05	1	)3	H	
+L05	2	6	H	
+L05	3	6)	H	
+L05	4	99	H	
+L05	5	)6	H	reversed-c before 6 (looks like 36 at a glance)
+L05	6	11	H	
+L05	7	50	H	tick above
+L05	8	26	M	written 262 without a separating dot; split as 26 then 2 (alt 2 then 62)
+L05	9	2	M	see pos8
+L05	10	38	H	
+L05	11	56	H	
+L05	12	32	H	
+L05	13	94	H	
+L05	14	60	H	
+L05	15	)2	M	reversed-c before 2; alt 32
+L05	16	12	H	
+L05	17	35	H	
+L05	18	2)	M	2 followed by ); faint, alt 21
+L05	19	56	H	

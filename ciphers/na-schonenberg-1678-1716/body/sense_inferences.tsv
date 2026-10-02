@@ -1,8 +1,7 @@
 line	pos	code	key_value	key_grade	gloss_letter	sense_letter	grade	reason
-L01	6	23	[?]	U	_	n	I	"abye[n]do" = aviendo; 23 also n-shaped at L04 pos6 (gouyer[n]o) and L13 pos16 (e[n])
-L01	7	[blot]	[?]	U	_	(none)	I	no letter needed between abyen- and -do; passB saw none
+L01	6	23	[?]	U	_	n	I	"abye[n]do" = aviendo; 23 also n-shaped at L04 pos6 (gouyer[n]o) and L13 pos16 (e[n]); GAPS10 2 Oct 2026: 23 and the [blot] are one sign (a blotted 23); the old pos7 [blot] row is merged here
 L02	0	81	a	M	a	d	I	"nobe-|dad" = novedad; single-occurrence code, aligner gave it no letter; gloss a kept on record
-L02	17	)5	u	M	u	u+[e]	I	the gloss's leftover e (unattached in the re-sync) closes "que"
+L02	17	)	u	C	u	u	C	GAPS10 2 Oct 2026 blind group re-read: the old )5 is ) . 5 (two groups); ) = u here and 5 = e at pos18 closes "que" (was: )5 u M, sense u+[e] I)
 L03	0	8)	p	M	P	l	I	"que la de aver": p/l conflict (conflicts.tsv) read l, the L19 crib value
 L03	5	55	[?]	U	b	v	I	"a[v]er"; passB glossed b (b/v interchangeable in the hand)
 L03	12	31	x	M	d	d	M	"muda(d)o": x/d conflict (L06 pixel x vs L03 gloss d); gloss letter preferred here, both kept

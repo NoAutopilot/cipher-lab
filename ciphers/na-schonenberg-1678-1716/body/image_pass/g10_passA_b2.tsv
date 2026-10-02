@@ -1,0 +1,94 @@
+line	pos	group_seen	conf	note
+L06	0	89	H	
+L06	1	22	H	
+L06	2	38	H	
+L06	3	31	M	written close to next group: "31 3" could be read 313 as one; I take two groups
+L06	4	3	M	see pos 3
+L06	5	)1	M	starred; reversed-c before a single upright stroke; alternatives 11 or )l; no tens digit visible
+L06	6	10	H	
+L06	7	28	H	
+L06	8	4)	H	starred; clear 4 followed by closing mark
+L06	9	16	H	
+L06	10	49	H	
+L06	11	68	H	
+L06	12	36	H	
+L06	13	8	H	
+L06	14	6)	H	starred; 6 with closing mark after
+L06	15	[triangle]	H	starred; clear open triangle
+L06	16	89	H	
+L06	17	50	H	
+L06	18	32	H	
+L06	19	6	H	followed by comma at line end
+L07	0	43	H	
+L07	1	)8	H	starred; reversed-c before 8; alt 38 unlikely
+L07	2	94	H	
+L07	3	)0	M	starred; reversed-c before small round o/0; alt 10 or )o
+L07	4	30	H	
+L07	5	5	H	
+L07	6	[Z]	M	starred; Z with an extra looped/crossed stroke after it (like Z+p flourish); counted as one group; could be two signs
+L07	7	13	H	
+L07	8	)6	H	starred; reversed-c before 6; alt 36
+L07	9	60	H	
+L07	10	2)	H	
+L07	11	60	H	
+L07	12	59	H	
+L07	13	38	H	
+L07	14	43	H	
+L07	15	6)	H	starred; 6 then closing mark
+L07	16	8	H	
+L07	17	)1	M	starred; reversed-c then upright stroke at line end; alt 31 or )l
+L08	0	29	H	
+L08	1	16	H	
+L08	2	54	H	
+L08	3	15	H	
+L08	4	60	H	
+L08	5	32	H	
+L08	6	51	H	
+L08	7	6	H	
+L08	8	65	H	
+L08	9	98	H	
+L08	10	12	H	
+L08	11	25	H	
+L08	12	30	H	
+L08	13	5	H	
+L08	14	28	H	
+L08	15	26	M	starred; darker ink, second digit looks like 6 with a flat top (overwritten?); alt 2b/28/2?
+L08	16	28	H	
+L08	17	56	H	
+L08	18	)2	M	starred; reversed-c before 2 at line end; alt 32
+L09	0	[other:large looped L-shaped flourish]	M	starred; in darker ink like the gloss, joined to a loop; sits where the dotted sequence starts so counted as a group, but may be a line-start flourish (then 18 groups)
+L09	1	45	H	
+L09	2	3)	H	
+L09	3	60	H	
+L09	4	[T]	H	
+L09	5	14	H	
+L09	6	6	H	
+L09	7	94	H	
+L09	8	)6	H	
+L09	9	3	H	
+L09	10	23	H	
+L09	11	56	H	
+L09	12	2)	H	
+L09	13	8)	M	alt 83
+L09	14	11	H	
+L09	15	50	H	
+L09	16	26	H	
+L09	17	)	H	starred; lone closing mark between dots
+L09	18	10	H	
+L10	0	[other:G-shaped curl, possibly a 6]	M	starred; I see 17 items vs 16 counted; this leading curl is followed by a dot so I counted it, but it may be a flourish
+L10	1	[tilde]	M	starred; wavy stroke before pos 2; may instead belong to pos 2 as "~)" so the line would have 16
+L10	2	)0	M	small "2" written above this group; reversed-c then o/0; alt )o, 10
+L10	3	32	H	starred
+L10	4	4)	H	
+L10	5	52	H	
+L10	6	38	H	
+L10	7	59	H	starred; alt 39
+L10	8	)8	H	starred
+L10	9	6)	H	starred
+L10	10	[circle]	H	large horizontal oval
+L10	11	36	H	starred
+L10	12	)4	H	starred
+L10	13	2)	H	
+L10	14	54	H	starred
+L10	15	)1	M	starred; reversed-c then a stroke curving like "(" ; alt )( or )l
+L10	16	55	H	last group

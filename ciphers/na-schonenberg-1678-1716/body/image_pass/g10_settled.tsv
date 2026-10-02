@@ -1,0 +1,68 @@
+line	pos	class	group	conf	gloss	after	source
+L01	4	CONFIRM		H			both blind passes read the committed group
+L01	5	CONFIRM		H			both blind passes read the committed group
+L01	10	CONFIRM		H			both blind passes read the committed group
+L02	2	CONFIRM		H			both blind passes read the committed group
+L02	12	CONFIRM		H			both blind passes read the committed group
+L02	16	CONFIRM		H			both blind passes read the committed group
+L03	0	CONFIRM		H			both blind passes read the committed group
+L03	4	CONFIRM		H			both blind passes read the committed group
+L03	7	CONFIRM		H			both blind passes read the committed group
+L03	11	CONFIRM		H			both blind passes read the committed group
+L03	14	CONFIRM		H			both blind passes read the committed group
+L03	15	CONFIRM		H			both blind passes read the committed group
+L05	1	CONFIRM		H			both blind passes read the committed group
+L05	3	CONFIRM		H			both blind passes read the committed group
+L05	5	CONFIRM		H			both blind passes read the committed group
+L05	15	CONFIRM		H			both blind passes read the committed group
+L05	18	CONFIRM		H			both blind passes read the committed group
+L06	5	CONFIRM		H			both blind passes read the committed group
+L06	8	CONFIRM		H			both blind passes read the committed group
+L06	14	CONFIRM		H			both blind passes read the committed group
+L06	15	CONFIRM		H			both blind passes read the committed group
+L07	1	CONFIRM		H			both blind passes read the committed group
+L07	3	CONFIRM		H			both blind passes read the committed group
+L07	6	CONFIRM		H			both blind passes read the committed group
+L07	8	CONFIRM		H			both blind passes read the committed group
+L07	15	CONFIRM		H			both blind passes read the committed group
+L07	17	CONFIRM		H			both blind passes read the committed group
+L08	18	CONFIRM		H			both blind passes read the committed group
+L09	17	CONFIRM		H			both blind passes read the committed group
+L10	1	CONFIRM		H			both blind passes read the committed group
+L10	3	CONFIRM		H			both blind passes read the committed group
+L10	7	CONFIRM		H			both blind passes read the committed group
+L10	8	CONFIRM		H			both blind passes read the committed group
+L10	9	CONFIRM		H			both blind passes read the committed group
+L10	11	CONFIRM		H			both blind passes read the committed group
+L10	12	CONFIRM		H			both blind passes read the committed group
+L10	14	CONFIRM		H			both blind passes read the committed group
+L10	15	CONFIRM		H			both blind passes read the committed group
+L11	0	CONFIRM		H			both blind passes read the committed group
+L11	5	CONFIRM		H			both blind passes read the committed group
+L11	16	CONFIRM		H			both blind passes read the committed group
+L11	17	CONFIRM		H			both blind passes read the committed group
+L12	4	CONFIRM		H			both blind passes read the committed group
+L12	9	CONFIRM		H			both blind passes read the committed group
+L12	14	CONFIRM		H			both blind passes read the committed group
+L12	17	CONFIRM		H			both blind passes read the committed group
+L13	3	CONFIRM		H			both blind passes read the committed group
+L13	16	CONFIRM		H			both blind passes read the committed group
+L14	2	CONFIRM		H			both blind passes read the committed group
+L14	3	CONFIRM		H			both blind passes read the committed group
+L14	4	CONFIRM		H			both blind passes read the committed group
+L14	6	CONFIRM		H			both blind passes read the committed group
+L14	8	CONFIRM		H			both blind passes read the committed group
+L14	10	CONFIRM		H			both blind passes read the committed group
+L14	12	CONFIRM		H			both blind passes read the committed group
+L14	17	CONFIRM		H			both blind passes read the committed group
+L01	6	STRUCT	23	M			both passes see ONE sign between 60 and 15 (a blot); reconciliation look: blot with strokes above it, consistent with 23; sense abye[n]do
+L01	7	STRUCT	DELETE				not a separate group: the blot of pos6 counted twice by the 25 Sept transcription
+L02	17	STRUCT	)	H			both passes and reconciliation: ) . 5 (two groups, dot between): que = )0 ) 5
+L02		INSERT	5	H		L02:17	second half of the old )5
+L04	16	CHANGE	2)	H			both passes 2), not 21); reconciliation 2)
+L04	17	STRUCT	36	H			both passes 36 . ) (two groups); sense circunstancias needs c u
+L04		INSERT	)	H		L04:17	the ) of the old 36)
+L08	15	CHANGE	26	M			both passes 26 (dark retraced ink, possibly a correction); gloss e exception kept
+L04	18	SPLIT					A 95, B 45; kept 45 M
+L09	0	SPLIT					both passes: a looped L-shaped flourish, not a clear 20, perhaps not a group; gloss A over it; kept 20 M
+L10	0	SPLIT					both passes: G-shaped curl + [tilde] where the transcription has )2; NULL exception either way; kept M

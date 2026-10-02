@@ -1,0 +1,93 @@
+line	pos	group_seen	conf	note
+L01	0	[other:plain word "Amigo"]	H	written out in letters in the cipher row, followed by a dot; not a numeric group; counted here so positions follow what is on the page (without it the line has 14 numeric/sign groups)
+L01	1	89	H	
+L01	2	46	M	first digit 4 (an i-dot from the gloss above sits over it); 26 possible
+L01	3	5	M	5 and 6 appear separated by a small baseline dot; could be one group 56 if that dot is a stray
+L01	4	6	M	see pos 3; if 5.6 is really 56 every later position shifts down by one
+L01	5	13	H	clear 1 and 3
+L01	6	)6	H	reversed-c mark before 6
+L01	7	60	H	6 followed by small o-shaped 0
+L01	8	[blot]	H	large dark ink blot occupying a group slot between dots
+L01	9	15	H	
+L01	10	3	H	single 3, dot after; nothing before it
+L01	11	45	M	faint; small stroke over the 5 (5 or 5 with mark); 45 most likely
+L01	12	24	H	
+L01	13	35	H	
+L01	14	38	M	second digit 8 smudged; 36 possible
+L02	0	81	H	
+L02	1	6	H	
+L02	2	3)	M	3 with a closing-paren mark after and an apostrophe-like tick above right; a looping stroke from the gloss runs over it; 31 possible if the mark is a 1
+L02	3	16	H	
+L02	4	89	H	
+L02	5	10	H	
+L02	6	50	H	
+L02	7	29	H	
+L02	8	34	H	
+L02	9	28	H	
+L02	10	25	H	
+L02	11	56	H	
+L02	12	)1	M	reversed-c then 1; the ) could be read as a faint 2 but its shape matches the other ) marks
+L02	13	95	H	
+L02	14	10	H	
+L02	15	94	M	followed by a comma-like stroke rather than a dot
+L02	16	)0	M	reversed-c then small o (0); could also be read )o as a single sign
+L02	17	)	M	lone reversed-c between dots; a small dot seems to separate it from the following 5, but it could be one group )5 (then line has 18 groups, matching the count)
+L02	18	5	M	see pos 17
+L03	0	8)	H	8 followed by closing mark
+L03	1	12	H	tick above between 12 and 59 (gloss comma)
+L03	2	59	H	
+L03	3	60	H	
+L03	4	[tilde]	M	horizontal wavy stroke with a dot above and one beside; could be a distinct dotted-tilde sign rather than plain tilde
+L03	5	5)	H	5 followed by closing mark
+L03	6	60	H	
+L03	7	2)	H	2 followed by closing mark; colon-like dots after
+L03	8	88	H	
+L03	9	30	H	
+L03	10	15	H	
+L03	11	)8	H	reversed-c before 8
+L03	12	3)	M	3 followed by ); 31 possible if the closing stroke is a 1
+L03	13	90	H	
+L03	14	[X]	H	X-shaped cross with dots in the angles (dotted X); dot above as well
+L03	15	)2	M	reversed-c before 2; the ) is close to the X's right dot; ?2 possible
+L03	16	51	H	
+L03	17	60	H	
+L04	0	18	H	
+L04	1	3	H	
+L04	2	30	H	
+L04	3	98	H	
+L04	4	82	H	
+L04	5	49	H	
+L04	6	23	H	
+L04	7	68	H	
+L04	8	14	H	
+L04	9	46	H	dark ink
+L04	10	89	H	
+L04	11	21	H	
+L04	12	56	H	
+L04	13	50	H	
+L04	14	33	H	
+L04	15	54	M	second digit 4 with an extra stroke; 52 possible
+L04	16	2)	H	2 followed by closing mark; comma-like stroke after
+L04	17	36	H	
+L04	18	)	M	lone reversed-c between dots (dot visible before 45); could be read with the next as )45, which would give 19 groups matching the count
+L04	19	45	M	faint; first digit 4 (1 possible), 5 with a hook above; ends with comma-like stroke
+L05	0	50	H	
+L05	1	)3	H	reversed-c before 3
+L05	2	6	H	
+L05	3	6)	H	6 followed by closing mark
+L05	4	99	H	
+L05	5	)6	M	reversed-c joined to 6; could be read 56 if the ) is a 5 lacking its top bar
+L05	6	11	H	
+L05	7	50	H	tick above (gloss comma)
+L05	8	26	H	
+L05	9	2	H	
+L05	10	38	H	
+L05	11	56	H	
+L05	12	32	M	dot between 56 and 32 faint
+L05	13	94	H	
+L05	14	60	H	
+L05	15	)2	M	faint reversed-c before 2; ?2 possible
+L05	16	12	M	very faint; first digit 1
+L05	17	35	H	
+L05	18	2)	M	2 followed by closing mark; faint
+L05	19	56	H	followed by an apostrophe-like stroke

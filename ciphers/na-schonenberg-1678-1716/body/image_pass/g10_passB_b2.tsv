@@ -1,0 +1,94 @@
+line	pos	group_seen	conf	note
+L06	0	89	H
+L06	1	22	H
+L06	2	38	H
+L06	3	31	H
+L06	4	3	H	followed by comma-like dot
+L06	5	)1	H	clear reversed-c before a 1; could in principle belong to preceding 3 (3)) but a separator comma sits between 3 and the mark, so read )1
+L06	6	10	H
+L06	7	28	H
+L06	8	4)	H	4 followed by closing mark; no alternative seen
+L06	9	16	H
+L06	10	49	H
+L06	11	68	M	first digit 6 (could be 8? looks 6)
+L06	12	36	H
+L06	13	8	H
+L06	14	6)	H	6 with closing mark after; clear
+L06	15	[triangle]	H	large darker triangle; unambiguous
+L06	16	89	H
+L06	17	50	H
+L06	18	32	M	small tick/stroke below the 2 (possibly a 4-like hook); read 32
+L06	19	6	H	followed by comma at line end
+L07	0	43	H
+L07	1	)8	H	reversed-c then 8; clear
+L07	2	94	H
+L07	3	)0	M	reversed-c then small o (0); alt )9 unlikely, o is closed and small
+L07	4	30	H
+L07	5	5	H
+L07	6	[Z]	H	Z with a long loop/flourish trailing to the right (Z-flourish); no separate group in the loop
+L07	7	13	H
+L07	8	)6	H	reversed-c then 6; clear
+L07	9	60	H
+L07	10	2)	H	2 followed by closing mark
+L07	11	60	H
+L07	12	59	H
+L07	13	38	H
+L07	14	43	H
+L07	15	6)	H	6 then closing mark; clear
+L07	16	8	H
+L07	17	)1	H	reversed-c then 1 at line end
+L08	0	29	H
+L08	1	16	H
+L08	2	54	H
+L08	3	15	H
+L08	4	60	H
+L08	5	32	H
+L08	6	51	H
+L08	7	6	H
+L08	8	65	H
+L08	9	98	H
+L08	10	12	H
+L08	11	25	H
+L08	12	30	H
+L08	13	5	H	dot between 5 and following 28
+L08	14	28	H
+L08	15	26	M	written in darker, heavier ink than the rest (looks like a correction/overwrite); second digit 6 with open bowl, alt 2b/28 less likely
+L08	16	28	H
+L08	17	56	H
+L08	18	)2	H	reversed-c then 2, followed by dot at line end
+L09	0	[other:L-shaped flourish ending in a loop]	M	counted as a group: it stands in the cipher row immediately before 45 at cipher-ink weight; could be a line-initial flourish rather than a group (if not counted the line has 18)
+L09	1	45	H
+L09	2	3)	H
+L09	3	60	H
+L09	4	[T]	H
+L09	5	14	H
+L09	6	6	H
+L09	7	94	H
+L09	8	)6	H
+L09	9	3	H
+L09	10	23	H
+L09	11	56	H
+L09	12	2)	M	2 followed by a form that could be a closing mark or a 3 (23); read 2)
+L09	13	8)	H
+L09	14	11	H
+L09	15	50	H
+L09	16	26	H
+L09	17	)	H	lone closing mark between dots (26 . ) . 10)
+L09	18	10	H
+L10	0	[other:G/c-shaped curl with a dot inside]	M	line-initial curl followed by a dot; counted as a group but may be a flourish; if excluded the line has 16, matching the transcription
+L10	1	[tilde]	H	wide tilde/wave; a small "2" is written above the area between the tilde and )0
+L10	2	)0	M	reversed-c then small o; small "2" above near this group (see pos 1)
+L10	3	32	H
+L10	4	4)	M	4 then closing mark; 4 slightly blotted
+L10	5	52	H
+L10	6	38	H
+L10	7	59	H	no visible dot after
+L10	8	)8	M	reversed-c then 8 (alt )5 less likely)
+L10	9	6)	H	6 then closing mark
+L10	10	[circle]	H	large elongated oval (ellipse), no fill
+L10	11	36	H
+L10	12	)4	M	reversed-c then 4; mark could alternatively close 36 (36)) but sits closer to the 4
+L10	13	2)	H
+L10	14	54	H
+L10	15	)1	M	reversed-c then 1 with a tall stroke above (gloss descender crossing?); alt )l
+L10	16	55	H	line end
