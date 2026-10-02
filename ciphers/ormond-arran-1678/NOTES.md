@@ -235,3 +235,86 @@ good-citizen rule asks for; no error resulted, flagged here rather than silently
 done directly from the image by this worker, not delegated, per the fan-out/subagent-sizing note in
 RETRO-2026-09-25k proposal 1 -- a 162-cell single-image table read in one pass is well under the sign-count
 scale that flagged GOLD-4D).
+
+## Web and blog check (WEBCHECK-ormond-arran-1678, 2 Oct 2026)
+
+The open-web and blog comment-thread step that `.claude/briefs/check-solved.md` requires (CHECK-SOLVED-WEB, 28 Sept
+2026), run 2 Oct 2026 01:05-01:20 UTC by a WEBCHECK worker (account-4), brief
+`.claude/briefs/runs/2026-10-01-account4-webcheck.md`. Nothing else was done: no transcription, no key test, no
+decoding.
+
+**Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026** (a search result, never
+a novelty verdict, rule 10). The status word on line 1 stays `open`.
+
+### (a) Plain web searches (WebSearch, 10 queries)
+
+| # | Query | Result |
+|---|---|---|
+| 1 | `Ormond Arran "24 January 1678" cipher letter` (sender + recipient + date) | Wikipedia pages on the Butler earls of Arran and TNA Discovery catalogue rows (1667 Ormond correspondence). Nothing on this letter. |
+| 2 | `"HMC Ormonde" OR "Marquess of Ormonde" vol. 4 p. 93 cipher 1678 Arran` (shelfmark + cipher) | Catalogue records of the calendar itself (Google Books `cmtnAAAAMAAJ`, NLI `vtls000131145`, HathiTrust `000274578`, an AbeBooks listing, TannerRitchie). No page content, no discussion of p.93. |
+| 3 | `"trial whether you are skilful in deciphering"` (most distinctive clear-text phrase, quoted) | No result carries the phrase (dictionary and essay pages on "decipher" only). Consistent with the archive-wide be-api result in Check-solved point 3 above, where the only full-text hits are the calendar's own three digitisations. |
+| 4 | `"Ormond to Arran" 1678 undeciphered cipher` (the folder's own descriptive title) | Wikipedia; `dbourdeau.github.io/cyphersolver/index.html` (opened, below); two forks of Bourdeau's repo, `github.com/arya1515/cyphersolver` and `github.com/setsunaatto/cyphersolver` (opened, below); a calligraphy page on undeciphered scripts. |
+| 5 | `"Ormond" "Arran" 1678 "cypher" OR "cipher" Kilkenny Longford nomenclator deciphered` | Bourdeau's index again (Maltravers-Ormonde 1634-35 only); Wikipedia "1677 in Ireland"; two Cryptologia articles on cipher-key instructions and papal ciphers, neither about this letter. |
+| 6 | `Ormond Arran 1678 cipher solves Claude OR GPT` (model-solve announcements, check-solved.md) | Only the Vals AI / Urquhart "Cyphral Distich" coverage (31 Aug 2026, a different cipher), the Kryptos K4 ChatGPT debunk gist, this repository's own GitHub page (`github.com/NoAutopilot/cipher-lab`, already flagged in Check-solved point 8), and `github.com/AlexFitzgerald47/cracking-problems-hub/pull/7` (opened, below). No announcement that any model read this letter. |
+| 7 | `site:scienceblogs.de/klausis-krypto-kolumne Ormond Arran` | Nine Cipherbrain posts returned, none mentioning Ormond or Arran (Cointet pigpen, Top-25 list, RAF ciphers, Kryptos documentary, Henry II device, Cold War radio, a Caribbean telegram). |
+| 8 | `site:cryptiana.blogspot.com Ormond Arran 1678` | The engine returned no page from that domain at all (Wikipedia only); the blog's own search was run directly instead (b, below). |
+| 9 | `site:ciphermysteries.com Ormond Arran cipher` | Ten Cipher Mysteries posts returned (d'Agapeyeff, Somerton Man, Weldon, pigeon cipher, Cincinnati fence runes, ...), none mentioning Ormond or Arran. |
+| 10 | `site:cipherbrain.de Ormond OR Ormonde OR Arran cipher` (Schmeh's current domain, in addition to the scienceblogs.de archive the brief names) | No page from that domain returned. |
+
+### (b) Site searches of the three blogs by name
+
+- **Cipherbrain** (`scienceblogs.de/klausis-krypto-kolumne/?s=Ormond`, 1 request): the blog's own search answers
+  "Wir konnten leider keine Beiträge finden, die zu Ihrer Anfrage passen" (no posts match). The newer domain
+  `cipherbrain.de/?s=Ormond` was also tried: HTTP 503 on the first request, then on the single permitted retry after
+  a pause a TLS "internal error" alert (curl exit 35, status 000) -- unreachable from this container, not retried
+  further (good-citizen rule). The on-disk Schmeh snapshot (`sources/schmeh/posts/`, `top50-scienceblogs.txt`) was
+  grepped with zero requests: the only "arran" matches are substrings in unrelated words on the Roosevelt, Dorabella,
+  Ferdinand III and Rayburn posts; no Ormond.
+- **Cryptiana blog** (`cryptiana.blogspot.com/search?q=Ormond`, 1 request): exactly one post, "Duke of Ormond's
+  Ciphers during the 1660s", 17 Mar 2024, `cryptiana.blogspot.com/2024/03/duke-of-ormonds-ciphers-during-1660s.html`.
+  Opened (1 request) and its comment thread read: **0 comments** ("No comments:"). The post's full text is a notice
+  that the "Marquis of Ormond's Correspondence" section was added to `charlesii2.htm` and that the 1663-64
+  Ormond-Anglesey cipher follows the DECODE R433 template; it does not mention Arran 1678 or this passage.
+  Tomokiyo's own pages: the on-disk snapshot `sources/cryptiana/` (downloaded 19 Sept 2026, additions 24 Sept) was
+  grepped first with zero requests -- the only files naming this letter are `web/unsolved.htm`,
+  `web/unsolved-2026-09-24.htm` and `web/charlesii2.htm` (all already read in full in Check-solved point 4 above; the
+  Cryptiana blog HTML files on disk match "ormond"/"arran" only inside Blogger widget JavaScript, not in any post or
+  comment body). The two live pages were then re-read once each (2 requests to `cryptiana.web.fc2.com`) to catch any
+  update since the snapshot: `code/unsolved.htm` ("Last modified on 27 September 2026") still lists "An Unidentified
+  Ormond-Arran Cipher (1678)" with the same twenty groups and no solution note; `code/charlesii2.htm` ("Last modified
+  on 17 March 2024") still reads, under "An Unidentified Cipher?", verbatim: "The cipher in undeciphered segments in a
+  letter from Ormond to Arran, 24 January 1678 (vol.4, p.93), looks similar to this, but seems different." No
+  decipherment on either page.
+- **Cipher Mysteries** (`ciphermysteries.com/?s=Ormond`, 1 request): five posts returned, every hit the steamship
+  "SS Ormonde" in the Somerton Man passenger-list posts (11 Jan 2020, 9 Nov 2019, 2 Nov 2019, 1 Nov 2019,
+  11 Dec 2014). None concerns the Duke of Ormond, Arran or any 17th-century cipher; no comment thread opened since no
+  post is plausibly about this letter.
+
+### (c) Every plausible hit opened and its thread read
+
+- `github.com/AlexFitzgerald47/cracking-problems-hub/pull/7` ("Discover Irish-connected historical ciphers; flag
+  solved Maltravers case", 16-17 Sept 2026, single author AlexFitzgerald47, no reviewer comments): the one sentence
+  about this item, verbatim, "A separate Ormond–Arran 1678 passage remains a possible future candidate pending its
+  own source and solution audit." A candidate list, not a reading; no decipherment claimed.
+- `dbourdeau.github.io/cyphersolver/index.html` ("updated 1 October 2026"): the only Ormonde entry is the solved
+  Maltravers to Ormonde 1634-35 item; no Arran 1678 reading. Consistent with `TARGETS.md` row 7 ("too short; not
+  attempted", Check-solved point 5) and with today's solver diff `sources/solver-diffs/2026-10-02-bourdeau.tsv`, which
+  carries this target as class (c) "listed only".
+- `github.com/arya1515/cyphersolver` and `github.com/setsunaatto/cyphersolver`: both are forks of
+  dbourdeau/cyphersolver; their README and file lists mention Ormonde only for the 1634-35 Maltravers item (the
+  setsunaatto fork's one "Arran" is "19 = Arran" in the 1585 Wotton-Walsingham key, a different Arran). No Ormond-Arran
+  1678 work in either.
+
+### Requests per host
+
+WebSearch 10 queries; `github.com` 3; `dbourdeau.github.io` 1; `cryptiana.blogspot.com` 2; `cryptiana.web.fc2.com` 2;
+`ciphermysteries.com` 1; `scienceblogs.de` 1; `cipherbrain.de` 2 (503, then TLS failure on the one retry). All one at a
+time per host. No logins, no credentials, no subagents.
+
+### Intake gate re-run
+
+```
+$ python3 tools/intake_gate_check.py ormond-arran-1678
+ormond-arran-1678: open (line 1) -- edition/page or full-text-search citation found within 6 lines
+exit code: 0
+```
