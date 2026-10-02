@@ -861,3 +861,43 @@ would not fix a control this far below 0.6, since the gate reflects whether the 
 this N at all, not a threshold tuned to this target. Spec's `cheap_test_done` filled with both rows' numbers.
 
 Requests: none (no network this pass). No subagents. Cost: see the lane ledger.
+
+## Web and blog check (GF-A2-4, 2 Oct 2026)
+
+Queries (WebSearch, 2 Oct 2026 22:4x UTC), each with what came back:
+1. sender + recipient + date: `La Garde Schoonhoven Prince d'Orange 28 novembre 1577 Walhain lettre chiffre` -- Wikipedia
+   "Siege of Schoonhoven (1575)", DBNL Groen V (groe009arch05_01_0095 and colofon), DBNL biography "[de la Garde]",
+   WVO edition PDF KLRP 10320 (another letter). Opened groe009arch05_01_0095: Lettre DLXXVII, Orange to Jan van Nassau,
+   29 Sept 1575 -- no La Garde letter, no cipher. Nothing names 28 Nov 1577 or the cipher.
+2. shelfmark + cipher: `"A 11/XIV C/G-1" OR "Walheyn" 1577 cijferschrift La Garde` -- unrelated manuscript catalogues
+   (Louis Morel de La Garde calligraphy, Manuscripta juridica); no hit on the shelfmark.
+3. distinctive phrase: `"Lettre DCCLXXXIX" Groen van Prinsterer La Garde passages chiffrés` -- DBNL calendarium days,
+   Groen VI colofon, WVO PDF 07304 (another letter); the edition page itself (already read, line 2) is the only match.
+4. folder title: `La Garde superintendent Schoonhoven to William of Orange partly unsolved cipher 1577` -- Schoonhoven
+   1575 pages, WVO project page, Bauer *Unsolved!* listings, HistoCrypt articles on other ciphers; none names this letter.
+5. Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Oranien 1577 verschlüsselt Brief` -- archive/index pages
+   and unrelated posts (German conquistador cryptogram, a 15th-century encryption); nothing on Orange or 1577.
+6. Cryptiana blog: `site:cryptiana.blogspot.com William of Orange Dutch Revolt cipher` -- no cryptiana.blogspot.com result.
+7. Cipher Mysteries: `site:ciphermysteries.com Dutch Revolt 1577 cipher letter` -- no ciphermysteries.com result (HistoCrypt
+   Portuguese-cipher articles instead).
+No blog post about this letter, so no comment thread to read. No decipherment or plaintext found on the open web.
+
+## Premise check (GF-A2-4, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: the only one is WVO's "oplossing in de marge" for sibling 6467 (Marnix,
+2 Nov 1577) -- opened by eye by R15 and Y1 (25 Sept, crops `images/margin_6467_*`): the margin reads "Justifier le faict
+du grand/de Gand" (a clear-text insertion both print editions absorb) and "N.[c?].f.", not a decipherment of the 27- and
+18-sign runs; L4's Test C found no consistent map using it as a crib. 5564's "opgelost" (Jan van Nassau, a different
+design) has no decipherment sheet in its 3pp file. For 6179 itself nothing in NOTES.md, the spec or HYPOTHESES.md
+mentions a decipherment, gloss or clear copy. Not found.
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026),
+grep `la garde|schoonhoven|walheyn|walhain|6179|6467` -- every hit is the French common noun "la garde" (Nevers,
+Matignon, Selve, Catinat files) or a coincidental number; Bourdeau's README line 193 is "the French galleys under the guns
+of La Garde" (Marseille, 1530s). No working file for this letter. Aymeloglu cited, not copied. Not found.
+(c) Physical neighbours: the whole WVO PDF 06179 is on disk (`images/06179_p1-p4.png`, inventory.tsv): p1 clear prose,
+p2-p3 cipher in clear prose, p4 the address leaf -- no decipherment, slip or clear copy on any of the four pages; the
+KHA folder's leaves beyond this letter are not imaged (unreachable). Not found within the letter's own leaves.
+(d) Recipient's side: Groen van Prinsterer VI pp.249-251 (the Orange-side edition, line 2) prints the letter with the
+cipher passages omitted per its own footnote; Gachard's Correspondance de Guillaume le Taciturne not searched (search
+route returned 500 on 25 Sept, LANE CX) -- unreachable. Not found in print.
+Result: nothing found that reads 6179's cipher passages.
