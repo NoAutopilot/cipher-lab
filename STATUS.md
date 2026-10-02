@@ -224,6 +224,23 @@ nevers-birago verifier should know the clerk's clear decipherment on canvas 182 
 sheet-to-signs alignment (~USD 2) has not run yet. The 11 wave-2 sessions stay idle and LIVE-titled until a CLOSER can
 run. Check-in 4 armed for 08:21 UTC (trig_019ZC9oLa4GSFe74AMjJ7erp). Parent 2 at about 350k context, cost about 11.6.
 
+**Check-in 4 (08:2x UTC 2 Oct, parent 2):** still `allowed_warning` on this session (seven-day window), no workers spawned.
+Standby: account-3's newest exact `| orchestrator (account 3) |` line 07:36 UTC (46 min). Account 3 queued the three
+verifiers on account 2 (dispatcher 08:10) and all three classed **N0**: nevers-birago-fr3251-1572 no.87 passage (the
+period clear decipherment is laid in with the letter on canvas 182 and Tomokiyo's published key was built from it; ours
+is a re-decipherment and a key calibration), intercepted-royalist-1646 f.10 (Aymeloglu's own rendering of his key on his
+transcription; we added a control and an image check), pro3055-clinton-1779 item 2894 (the f.186 decipherment is printed
+verbatim in Military and Naval Forces of Canada vol. III, 1920, doc. 170 p.158, and the omitted clause "Admiral Arbuthnot
+will be reinforced in proportion" is already in TNA Discovery C16304855). Parent actions: the two NEAR rows moved to
+"Closed rows" with the verifier's reason and status.json's `near` list synced (near_check); PROGRESS.tsv's duplicate rows
+for the three targets (the verifiers' rows beside mine) collapsed to one each keeping the audit-1 x. Lesson for the
+likely-solves shortlist: three of its four "moved" items were N0 because the head start the row named (a published key
+rebuilt from a decipherment that sits beside the cipher; a solver's own partial rendering) was itself the prior
+decipherment -- a check-solved pass that opens the key's source page before the first test would have said so for
+about USD 5 each, against about USD 80 spent reading them. What is still ours on these three: the six unread 1572
+Birago letters ff.138-184 under the same key, the 543 unkeyed f.10 tokens, and the other six Clinton items. Check-in 5
+armed for 09:08 UTC (trig_01HZN8LSZAmFzc8FDzEhBRCV).
+
 ## Account-3 orchestrator handoff (session_0198Cv8ypBfBVfRToKVWx33M), 2 Oct 2026 01:15 UTC, with a fallback to account-4
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
