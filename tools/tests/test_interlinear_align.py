@@ -99,6 +99,17 @@ def main():
     # without --digits 4 the four-digit groups are 'doubtful' and carry no value in the key
     key9 = run(wp_pairs, '--floor', '0', '--prior', kp, '--word-prior')
     assert '1183' not in key9, key9
+    # --keep-fs: 7 reads f, 8 reads s; the default OCR fold merges both into s
+    fs_pairs = [['1', 'fa sa', '1', '7 1 8 1'], ['2', 'fa sa fa', '2', '7 1 8 1 7 1'],
+                ['3', 'sa fa', '3', '8 1 7 1']]
+    keyf = run(fs_pairs, '--floor', '100', '--keep-fs')
+    assert keyf['7']['meaning'] == 'f' and keyf['8']['meaning'] == 's', keyf
+    # one sign 9 written over f twice and s once: kept apart it shows the conflict, folded it does not
+    mix = [['1', 'fa', '1', '9 1'], ['2', 'fa', '2', '9 1'], ['3', 'sa', '3', '9 1']]
+    km = run(mix, '--floor', '100', '--keep-fs')
+    assert km['9']['agree'] == '2' and km['9']['others'] == 's:1', km
+    kd = run(mix, '--floor', '100')
+    assert kd['9']['agree'] == '3' and kd['9']['others'] == '', kd
     print('ok')
 
 

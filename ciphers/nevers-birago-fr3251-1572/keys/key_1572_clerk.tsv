@@ -1,0 +1,74 @@
+sign	value	grade	n	agree	others	printed	relation	applied	note
+T10	z	C	2	2		z	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T13	l	C	6	6		l	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T18	d	C	12	12		d	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T19	o	C	60	60		o	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T24	f	C	6	5	e:1	f	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T25	i	C	24	24		i	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T27	t	C	4	3	c:1	t	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T33	u	C	33	33		u	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T36	c	C	13	12	e:1	c	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T37	a	C	57	57		a	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T38	z	C	2	2		z	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T42	m	C	12	11	g:1	g	CONFLICT	yes	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T45	e	C	64	62	a:1,g:1	e	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T49	u	C	5	5		u	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T50	s	C	8	7	c:1	c	CONFLICT	yes	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T52	o	C	11	7	i:4	i	CONFLICT	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T53	t	C	34	34		t	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T54	m	C	9	9		m	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T55	o	C	10	10		o	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T56	h	C	3	3		h	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T57	s	C	7	7		s	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T58	l	C	20	20		l	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T60	n	C	53	51	e:1,z:1	n	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T63	d	C	22	22		d	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T64	h	M	6	3	l:2,s:1	h	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T65	t	C	11	10	l:1	t	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T66	e	C	3	2	a:1	e	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T70	g	C	12	9	o:1,q:1,s:1	g	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T76	n	C	22	17	e:3,a:1,u:1	n	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T80	i	C	21	20	r:1	i	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T81	b	C	5	5		b	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T83	r	C	44	44		r	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T85	a	C	31	31		a	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T86	e	C	40	40		e	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T88	e	M	4	2	q:2	g	CONFLICT	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T90	p	C	23	19	t:3,c:1	p	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T92	s	C	22	20	c:1,t:1	s	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T95	l	C	8	8		s	CONFLICT	yes	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T96	i	C	34	32	c:1,e:1	i	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T97	r	C	9	9		r	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+T98	s	M	18	10	d:7,c:1	s	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; letter sign
+X_NEW@f178r_L01_7	d	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_4 (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178r_L01_8	a	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_7 (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178r_L01_12	m	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178r_L03_4	c	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_8 (NEVBIR-OFFSHEET); transcription conf H
+X_S@f178r_L03_5	a	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_S (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178r_L03_6	m	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178r_L03_35	i	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_NEW (NEVBIR-OFFSHEET); transcription conf M
+X_K@f178v_L05_17	p	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_K (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178v_L06_26	h	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf M
+X_NEW@f178v_L09_29	r	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf M
+X_NEW@f178v_L10_16	h	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf M
+X_A@f178v_L12_23	a	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_A (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178v_L14_6	o	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_NEW (NEVBIR-OFFSHEET); transcription conf H
+X_EQ@f178v_L14_17	f	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_EQ (NEVBIR-OFFSHEET); transcription conf H
+?@f178v_L16_31	l	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class ? (NEVBIR-OFFSHEET); transcription conf M
+X_NEW@f178v_L17_14	a	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_NEW (NEVBIR-OFFSHEET); transcription conf H
+X_EQ@f178v_L17_29	n	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_EQ (NEVBIR-OFFSHEET); transcription conf M
+X_NEW@f178v_L20_1	n	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_STAR (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f178v_L22_9	o	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_NEW (NEVBIR-OFFSHEET); transcription conf H
+X_S@f178v_L22_22	a	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_S (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f179r_L01_27	m	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f179r_L03_19	m	C	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_T (NEVBIR-OFFSHEET); transcription conf H
+X_NEW@f179r_L03_26	e	M	1	1			off-sheet tile	no (one tile, no.87 only)	shape class X_TRI (NEVBIR-OFFSHEET); transcription conf M
+T11	carmagnola	C	2	2		carmagnola	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+T26	per	C	5	4	oche:1	per	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+T29	et	C	5	4	gonottiet:1	et	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+T46	atholici	M	4	1	c:1,re:1,turino:1	turino	CONFLICT	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+T78	qual	M	1	1		qual	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+T84	quello	M	4	2	gg:1,quella:1	quello	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+T89	che	C	9	7	chesuamaest:1,ncorche:1	che	agrees	no	clerk sheet (canvas 182) aligned to the no.87 blind transcription by tools/interlinear_align.py, seeded with the printed table; word sign (printed table's structure)
+X_NEW@f179r_L03_24	null	M	1	1			off-sheet tile	no (one tile, no.87 only)	aligned to no sheet letter (struck/line-end signs); shape class X_NEW
+X_NEW@f179r_L03_25	null	M	1	1			off-sheet tile	no (one tile, no.87 only)	aligned to no sheet letter (struck/line-end signs); shape class X_SQ

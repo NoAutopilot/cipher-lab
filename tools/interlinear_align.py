@@ -73,6 +73,10 @@ folded, 2 counts), not only single-letter values below --floor: the use is testi
 independent plain copy, where each code occurs once or twice and a flat start has nothing to agree with (GAPS8: 2/209
 positions from a flat start). The seeded counts are then the hypothesis under test, not independent evidence: report
 agreement against the same run on the codes in shuffled order. Without either flag nothing changes.
+
+--keep-fs (2 Oct 2026, NEVBIR-87ALIGN, nevers-birago-fr3251-1572): the f == s fold exists for OCR of a printed
+long s; a clear sheet read by eye from a manuscript has no long-s confusion, and a cipher with distinct f and s
+signs needs the two kept apart in the counts. Default unchanged.
 """
 import csv
 import itertools
@@ -98,7 +102,9 @@ def fold_accents(s):
 
 def fold(chunk):
     """The print's long s is read by OCR as f, and u/v are one letter in 1656:
-    compare chunks with f == s and v == u."""
+    compare chunks with f == s and v == u. --keep-fs keeps f and s apart (a manuscript clear sheet, not OCR)."""
+    if not FOLD_FS:
+        return chunk.replace('v', 'u')
     return chunk.replace('f', 's').replace('v', 'u')
 
 
@@ -138,6 +144,7 @@ def cmd_pairs(djvu, first, last, out):
 
 MAX_DIGITS = 3      # --digits
 WORD_PRIOR = False  # --word-prior
+FOLD_FS = True      # --keep-fs turns this off
 
 
 def classify_token(tok, code_prefix=None):
@@ -448,6 +455,9 @@ if __name__ == '__main__':
         if '--word-prior' in a:
             WORD_PRIOR = True
             a = [x for x in a if x != '--word-prior']
+        if '--keep-fs' in a:
+            FOLD_FS = False
+            a = [x for x in a if x != '--keep-fs']
         for flag in ('--max-chunk', '--seg-bonus', '--len-prior'):
             if flag in a:
                 k = a.index(flag)

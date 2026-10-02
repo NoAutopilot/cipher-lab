@@ -770,9 +770,9 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - f.184 no.90 -- all its cipher now read (966 signs; NEVBIR-185B, 2 Oct 2026, section at the end): rank 1/201 at 3 seeds, z 4.49-4.59, power 20/20 at err 0.12; judge FAIL -1.069 (shuffled 0/20 PASS); remaining: 19 tiles NEVBIR-185 coded X_NEW that match the sheet's T83 (r) - blocker: open-codes; fit-aware control gain rank 6-9/201 only, grade M; next: confirm the 19 tiles are T83 by a value-blind look-alike pass or the owner's sign sorter (f185r/passC_rest90_ae.tsv), then relabel and re-run decode_key, disk + 1 vision call, ~$1; and a separate verifier pass on the f.184v-f.185v portion (rule 10), ~$3
 - f.168r-v no.85 (two runs, 121 signs, NEVBIR-168, 2 Oct 2026) - blocker: too-short; printed 1572 key + T42=m rank 36/201 (z 1.00; seeds 2-3 rank 31, 41), power control 15/20 at err 0.13 (z min 0.22): a miss the right key also gives in about a quarter of windows at this length, so not licensed as a reading and too weak to call a negative; 11 off-sheet signs; pooled test run (NEVBIR-POOL, 2 Oct 2026, section at the end): pool of f.144r + f.168 + f.174r rank 1-4/201, power 15/20 at err 0.15, not licensed, and f.168 is the run that drags the pool down (leave-one-out); next: the off-sheet value-fit shared with f.139v (disk only, ~$1); NEVBIR-LOOKALIKE (2 Oct 2026, section below): look-alike pass lowered the residual reader disagreement to 0.074, printed key + T42=m on passD rank 13-15/201 (z 1.43-1.55) against power 19/20 at 0.074 (z min 2.00) and 14/20 at 0.13: not licensed, not a negative; 7 of the 9 unsettled tiles are one question (T24, the readers, or T83, the look-alike reader; the pre-registered secondary sequence with T83 there ranks 1/201 z 3.49, a pointer only); next: the owner settles the 7 T24/T83 tiles in the sign sorter (sorter/README.md; waiting-on the owner, never blocking), then re-run decode_control.py on the settled sequence, disk only, ~$0.5
 - f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; pooled test run (NEVBIR-POOL, 2 Oct 2026): not licensed at 296 signs (rank 1-4/201, power 5/20 at this run's 0.24 error); next: lower the reader error with the clerk-sheet error map (gap below), ~$2; NEVBIR-LOOKALIKE (2 Oct 2026, section below): look-alike pass lowered the residual reader disagreement from 0.24 to 0.044 (4 tiles unsettled); printed key + T42=m on passD rank 1, 2, 1 of 201 (z 2.27-2.44), power 18/20 at 0.044 (z min 1.78) but 4/20 at the old 0.24: control-backed only if the 2-of-3 residual is accepted as the reader error; next: a verifier pass on the passD reading and the 4 unsettled tiles (sorter focus box), ~$3
-- no.71 cipher passage, f.139v foot (161 signs, NEVBIR-138, 2 Oct 2026) - blocker: open-codes; 21 off-sheet signs unkeyed (X_NEW "4", "7", square-with-dot, "t", raised "m" abbreviation and others), the power control is weak at this length (10/20 at err 0.15) and the judge FAILs (-1.159 vs real_p05 -0.955); value-fit of the recurring off-sheet signs run on the pooled 1572 letters (NEVBIR-OFFSHEET, 2 Oct 2026, section at the end): the method failed its own known-answer check on no.87 (untested-by-this-tool, the n-gram fit on note-derived shape classes); next: the clerk-sheet alignment of no.87 (tools/interlinear_align.py, disk only, ~$2) to name the off-sheet signs' values by shape, then the owner's sign sorter for the f.139v off-sheet tiles (sorter/, waiting-on the owner, never blocking)
+- no.71 cipher passage, f.139v foot (161 signs, NEVBIR-138, 2 Oct 2026) - blocker: open-codes; 21 off-sheet signs unkeyed (X_NEW "4", "7", square-with-dot, "t", raised "m" abbreviation and others), the power control is weak at this length (10/20 at err 0.15) and the judge FAILs (-1.159 vs real_p05 -0.955); value-fit of the recurring off-sheet signs run on the pooled 1572 letters (NEVBIR-OFFSHEET, 2 Oct 2026, section at the end): the method failed its own known-answer check on no.87 (untested-by-this-tool, the n-gram fit on note-derived shape classes); the clerk-sheet alignment ran (NEVBIR-87ALIGN, 2 Oct 2026, section at the end): per-tile values for no.87's 25 off-sheet tiles only, the t-shape class is at least two signs, and its transfer variant (T42 m, T95 l, T50 s) changes 4 no.71 tokens and makes none readable (judge -1.159 -> -1.137); next: the owner's sign sorter for the f.139v off-sheet tiles, with the no.87 per-tile C values as labelled examples (sorter/, waiting-on the owner, never blocking)
 - f.152r no.77 cipher run (97 signs) read under the 1572 key by NEVBIR-152 (2 Oct 2026, section above): rank 1/201 z 3.1, slip agreement 0.61; the rest of no.77 past f.152v - blocker: not-attempted; f.152v plain per PREMISE-NEVBIR, f.153r onward not opened; next: open canvas 155-156 at 1200 px for a further cipher run (1-2 requests), and a verifier pass on the f.151v slip (whose hand, prior decipherment of this run), ~$3
-- the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; NEVBIR-OFFSHEET (2 Oct 2026, section at the end): the pooled value-fit of 17 note-derived shape classes over nos.71/86/87/90 (2,739 signs) is untested-by-this-tool -- its pre-registered known-answer check on no.87 could not run (no accepted class occurs there) and the control-beating classes read the sheet right on 4 of 10 occurrences; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
+- the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; NEVBIR-OFFSHEET (2 Oct 2026, section at the end): the pooled value-fit of 17 note-derived shape classes over nos.71/86/87/90 (2,739 signs) is untested-by-this-tool -- its pre-registered known-answer check on no.87 could not run (no accepted class occurs there) and the control-beating classes read the sheet right on 4 of 10 occurrences; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; the clerk-sheet alignment ran (NEVBIR-87ALIGN, 2 Oct 2026, section at the end): keys/key_1572_clerk.tsv, C-grade, 0.896 agreement vs shuffled-sheet max 0.376; T42 = m confirmed at C; T95 l 8/8 and T50 s 7/8 conflict with the printed table, T50 = s refuted outside no.87; T88 still undecided (e 2 / q 2, M); next: the look-alike pass on the no.87 tiles labelled T50, T98, T52, T46 with the error map (harvest/align87/align_real.tsv) as crib (tools/lookalike_pass.py, 1-2 vision calls, ~$2)
 - no.82 (f.162) cipher, one line on canvas 164 right (25 signs, NEVBIR-162, 2 Oct 2026): run 1 read under the 1572 key, rank 1/201 z 2.6-2.9 (power 2-10/20), 0.74 agreement with a later-hand decipherment slip pasted on f.161v (shuffled max 0.15); run 2 is a 4-sign name code ('M.' + digits 4 7 + u) outside the printed table - blocker: no-key-material for the code beyond the slip's own 'M. di Bellaguarda'; verifier pass done (VERIFY-NEVBIR-82, 2 Oct 2026: N0, the slip is a prior decipherment of the whole line; hand unsettled, same hand as the f.151v slip by eye); next: add code 47 = Bellaguarda to the key at grade C with the slip's provenance beside it (M outside this letter until a second attestation), disk only, ~$1
 
 - no.86 (27 Aug 1572, ff.170r-177r; NEVBIR-170, 2 Oct 2026, section below): its f.174r foot run (85 signs) - blocker: too-short; real key rank 2-4/201 (z 1.8-2.1), power 11/20 at err 0.10 (20/20 at err 0): not rank 1, a non-test at this length, not a negative; the letter's main cipher is the FULL cipher page f.174v (canvas 178 left, ~22 lines, ~600 signs, not yet read) plus f.175r head (1 line) and f.175v (canvas 179 left, ~3 lines); next: read f.174v in two half-leaf jobs (same pipeline, ~$5 each, power 20/20 at that length) and pool with f.174r in one 200-shuffle test (disk only); the short-run pool with f.144r and f.168 (NEVBIR-POOL, 2 Oct 2026) did not license it; f.174v lines 1-11 (285 signs, NEVBIR-174V-A, 2 Oct 2026, section below) read under the printed 1572 key + T42=m: rank 1/201 at 3 seeds (z 3.36-3.49), power 20/20 at err 0.10 and 8/20 at err 0.20 (blind agreement 0.80 before adjudication), 18 off-sheet signs unkeyed (open-codes); next: f.174v lines 12-end + f.175r head + f.175v (NEVBIR-174V-B), then the joint 200-shuffle test of all no.86 cipher (f.174r + f.174v + f.175), disk only, ~$1; f.174v lines 12-22 + f.175r head + f.175v (389 signs, NEVBIR-174V-B, 2 Oct 2026, section below): rank 1/201 at 3 seeds (z 3.42-3.74), power 20/20 at err 0.10; whole no.86 (759 signs) rank 1/201 at 3 seeds (z 3.56-3.83), power 13/20 at err 0.23; judge FAIL -1.161 (shuffled 0/10 PASS); 54 unkeyed signs over the letter (open-codes: lone '8' shapes, X_K, X_A, '?'); verifier pass done (VERIFY-NEVBIR-86, 2 Oct 2026, AUDIT.md section no.86: N3, key published, re-derivation exact, rank 1/201 also at seeds 7 and 11; T15/T11 = the printed digit codes 89/85, confirmed on the crops; '88' on half B L02 is not in the printed table, stays U); next: correct f.174r L04 pos 1-2, which reads T46 + X_S but the crop shows the digit pair '85' = carmagnola (T11): fix harvest/f174r/passC.tsv, re-run join_no86.py, build_decode_inputs.py and decode_key.py --check (disk only, ~$0.5); for N4, vol. 2 of the 1665 Mémoires de Nevers (vol. 1 searched inside on Gallica, no hit)
@@ -784,7 +784,7 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - [x] key-rebuild: one-sign value fits, not a rebuild -- run (GAPS3, 2 Oct 2026): T42 g -> m, T70 g, T88 and the off-sheet signs undecided at their counts; the key reads the leaf at rank 1/201 before and after
 - [x] image-check: native regions, debug overlays checked by eye (f.178v right edge re-fetched once; f.179r left edge re-fetched once; f.178r re-cut on the slope after both readers reported clipped tails); the canvas 182/183 overviews re-read by eye, which found the decipherment sheet (GAPS4)
 - [x] retry: one connection reset on the canvas-183 fetch retried once after a pause (GAPS4); the HTTP 500s were this worker's malformed URLs, not retried
-Verdict: keep going: 4 internal gaps (no.86: all its cipher now read, f.174r + f.174v + f.175r/v, 759 signs rank 1/201 (NEVBIR-174V-A/B); its next step is the verifier pass) (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); the value-fit of the off-sheet signs ran (NEVBIR-OFFSHEET, 2 Oct 2026: untested-by-this-tool, it failed its no.87 known-answer check); cheapest next: align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144
+Verdict: keep going: 4 internal gaps (no.86: all its cipher now read, f.174r + f.174v + f.175r/v, 759 signs rank 1/201 (NEVBIR-174V-A/B); its next step is the verifier pass) (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); the value-fit of the off-sheet signs ran (NEVBIR-OFFSHEET, 2 Oct 2026: untested-by-this-tool, it failed its no.87 known-answer check); the clerk-sheet alignment ran (NEVBIR-87ALIGN, 2 Oct 2026: C-grade key keys/key_1572_clerk.tsv, control-backed; the transfer variant improves no other letter); cheapest next: the look-alike pass on the no.87 tiles labelled T50/T98/T52/T46 with the alignment's error map as crib (~$2), then f.144
 
 ## VERIFY-NEVBIR-1572 (2 Oct 2026, account 2): audit 1 -- see AUDIT.md
 
@@ -1775,3 +1775,89 @@ fit-aware rank 6-9/201, but it is the same instrument family, so it does not lif
 off-sheet values at these counts; the off-sheet tiles need the shape settled before any fit (the clerk-sheet alignment of no.87 with
 tools/interlinear_align.py, which gives the sheet's value per tile and so which shapes are one sign, then the owner's sign sorter),
 not a further fit. Cost: disk only, about 3 minutes CPU.
+
+## NEVBIR-87ALIGN (2 Oct 2026, account 2 for the account-3 orchestrator): C-grade 1572 key from the clerk's clear sheet of no.87
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-87align.md`. Disk only: 0 vision calls, 0 requests to any host. No class, no
+novelty wording (rule 10). Status stays `partial`. Box 21:49-22:2x UTC.
+
+**Instrument.** `tools/interlinear_align.py align` (no private DP copy), with one new shared option, `--keep-fs` (the f == s fold
+is for OCR of a printed long s; a clear sheet read by eye has none, and this cipher has distinct f and s signs; offline test added
+to `tools/tests/test_interlinear_align.py`, default unchanged). Input built by `harvest/align87/build_pairs.py`: cipher side the
+committed transcription `harvest/ciphertext_f178r/f178v/f179r.tsv` (853 signs); plain side the clerk sheet
+(`harvest/f179r_sheet/decipherment_sheet.tsv`, GAPS4) cut into the three spans GAPS4 established and normalised to one convention
+first (rule 3): struck words dropped, car.la -> carmagnola, ma.ta -> maesta, the per-sign "p" -> per, j -> i (v -> u is the
+tool's fold). Codes: letter signs of the printed table Tnn -> nn (0/1 letter); the 8 word signs (T11 T15 T26 T29 T46 T78 T84
+T89, the printed table's one structural fact used) -> 6000+nn (any chunk); every off-sheet tile and '?' its own code 1001-1025
+(X_NEW is a bag of shapes, NEVBIR-OFFSHEET), so a tile's value comes from its own context only. Options `--floor 5000 --digits 4
+--keep-fs --word-prior --prior harvest/align87/prior.tsv`: the seed is Tomokiyo's table **as printed (T42 = g)**, used for the
+first EM iteration only; the counts are the sheet's. A flat start (no seed) does not converge on spans this long (162 of 853
+'agrees', the word code 'qual' swallowing "ellaguard") -- the GAPS8 finding again.
+
+**Result.** 764 of 853 signs (0.896) take a chunk that agrees with the sign's own majority over the passage; conflicts 54,
+single 25, null/unaligned 10. Key: `keys/key_1572_clerk.tsv` (`harvest/align87/make_key.py`, `--check` exits 0), grade C per
+row where agree >= 2 and agree/n >= 0.6, M otherwise; per-tile rows C only where both neighbouring signs agree, else M.
+
+**Shuffled-alignment control (rule 3)**, `harvest/align87/control.py`, same tool, options and seed, `control.tsv`:
+
+| variant | 'agrees' share | letter signs ending at the real run's value (of 41) |
+|---|---|---|
+| **real sheet** | **0.896** | 41 |
+| sheet words permuted within each span, 20 seeds | mean 0.351, max 0.376 (real rank 1 of 21) | 20-30 |
+| the three spans rotated over the wrong folios | 0.203 | -- |
+| real sheet, seed's letter values permuted (wrong-seed), 20 seeds | mean 0.551, max 0.893 | 9 of 20 seeds reach 39-41 (agrees 0.890-0.893); 11 stay at 1-7 (0.256-0.294) |
+
+The control can fail differently from the target (rule 3's orthogonality paragraph: word order is exactly what an alignment
+uses). The seed does not manufacture the agreement (shuffled sheet with the right seed: max 0.376), and the real sheet pulls
+nine of twenty wrong seeds back to the same key, to within two signs: the sheet carries the key.
+
+**Against Tomokiyo's printed table** (rule 4: listed, never resolved by majority):
+
+| sign | printed | clerk sheet (agree/n) | grade | note |
+|---|---|---|---|---|
+| T42 | g | **m** 11/12 (g 1) | C | confirms GAPS3's fit with period plain text; the one g is Guascogna, already exceptions_f178v I |
+| T95 | s | **l** 8/8 | C | |
+| T50 | c | **s** 7/8 (c 1) | C on no.87 | does NOT transfer: see the decode variant below |
+| T52 | i | o 7/11 (i 4) | C (below the transfer rule) | split, left at printed i |
+| T88 | g | e 2/4 (q 2) | M | GAPS3 left it undecided; still undecided |
+| T46 | turino | 1 of 4 aligned to "turino" (others c, re, a long run) | M | the readers' T46 covers more than the word sign; image question |
+| T98 | s | s 10/18 (d 7) | agrees, split | a d look-alike in the readers' T98, the error map's largest pair |
+| T76 | n | n 17/22 (e 3) | agrees | |
+| T64 | h | h 3/6 (l 2) | agrees, split | |
+
+The other 36 of the 41 letter signs that occur in no.87 agree with the printed value (T17 still never occurs). Off-sheet tiles (25, no.87 only): the four t-shapes GAPS4 entered as m stay
+m (two C, two M by the neighbour rule); the three f.178v t-shapes read h, r, h (NEVBIR-OFFSHEET's two-signs-in-one-class finding,
+now at grade C for f178v L10/16 h); X_K = p, X_EQ = f and n (two different signs), X_STAR = n, X_S = a (L22), a further 12 per tile
+in `keys/key_1572_clerk.tsv`; the f.179r line-end struck pair aligns to nothing (null, M). The f.178r L01 start ("che in di
+bellaguarda") stays M throughout: the readers' first eight signs there do not match the sheet (GAPS4).
+
+**Decode variant (pre-registered, `harvest/align87/PREREG.md`, fixed 21:55 UTC before any other letter was decoded).** Transfer
+rule: a printed letter sign whose sheet value differs, n >= 3, agree >= 3, agree/n >= 0.75 -> T42 m, T95 l, T50 s
+(`harvest/key_1572_clerkvar.tsv`); per-tile values never transfer. `tools/decode_key.py . --config decode_clerkvar.json` (writes
+only `harvest/clerkvar/`; the printed-key readings are untouched; `--check` exit 0 on both configs). Per letter
+(`harvest/align87/compare_variant.py`, output `compare_variant.txt`):
+
+| letter | signs | printed + T42=m | clerk variant | tokens changed | judge (spec, same file shape) |
+|---|---|---|---|---|---|
+| no.71 f.139v | 161 | S 116 M 24 U 21 | C 3 S 113 M 24 U 21 | 4 (T50 3, T95 1) | -1.159 -> -1.137 (real_p05 -0.955) |
+| no.86 | 759 | S 629 M 76 U 54 | C 10 S 619 M 76 U 54 | 10 (T50 8, T95 2) | -1.161 -> -1.152 (real_p05 -0.905) |
+| no.90 | 966 | S 731 M 124 U 111 | C 14 S 717 M 124 U 111 | 15 (T50 10, T95 5) | -1.069 -> -1.073 (real_p05 -0.898) |
+
+S/M/U move only by relabelling S to C; no U becomes readable (the U tokens are off-sheet tiles, which the rule does not transfer).
+**T50 = s is wrong outside no.87**: in the three letters T50 sits in "per conto", "domestico", "con costan(za)", "capita",
+"confusion", "credo", "carego" -- every one reads c under the printed value and is spoiled by s. So the no.87 T50 tiles are the
+readers putting an s sign (most likely one of T57/T92/T98's shapes) under the T50 label, or a no.87-only use: a transcription
+question for the image, not a key change. T95 = l is mixed: "accordarlo" (no.90 f184r L02) gains, "mandsto/mandlto",
+"alcuna s n/l n" and "fauorise s/l i turino" are no better either way. No newly readable English fragment comes out of the
+variant; the honest English summary is "the variant changes 29 letters across three letters and improves none of them clearly".
+The committed printed-key readings stay the reference; the variant files are kept as the record of the test.
+
+**What this settles.** (1) The clerk sheet, aligned sign by sign, confirms 36 of the 41 letter-sign values that occur in no.87 and T42
+= m at grade C; (2) the two strong conflicts are T95 (l on all 8 no.87 tiles) and T50 (s on 7 of 8), and T50's does not survive
+transfer -- it is a reader-label error on no.87, which is what an error map is for; (3) the off-sheet "t-shape" is at least two
+signs (m on f.178r/f.179r, h/r on f.178v) at C. The per-sign reader error map is `harvest/align87/align_real.tsv` (status
+`conflict:<majority>` per token: T50/s, T98/d, T52/i-o, T76/e, T64/l, T46). Next: the look-alike pass on the no.87 tiles labelled
+T50, T98, T52 and T46 against the crops with this map as crib (`tools/lookalike_pass.py`, 1-2 vision calls, ~$2), which decides
+whether T50-as-s is a reader label; T95 = l is applied in other letters only after that.
+
+Cost: disk only, ~6 min CPU (control 3m52s). Requests 0.

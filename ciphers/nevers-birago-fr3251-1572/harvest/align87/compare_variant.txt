@@ -1,0 +1,35 @@
+no.71: 161 signs; printed+fit {'M': 24, 'S': 116, 'U': 21} -> variant {'C': 3, 'M': 24, 'S': 113, 'U': 21}
+  changed tokens 4: Counter({'T50 c->s': 3, 'T95 s->l': 1})
+  L02/27  tareetcer[c]arnore  ->  tareetcer[s]arnore
+  L03/33  arnahe[c]oilcoc  ->  arnahe[s]oilcos
+  L04/7  coilco[c]inatoein  ->  soilco[s]inatoein
+  L05/14  ioluiuo[s]eetepoii  ->  ioluiuo[l]eetepoii
+no.86: 759 signs; printed+fit {'M': 76, 'S': 629, 'U': 54} -> variant {'C': 10, 'M': 76, 'S': 619, 'U': 54}
+  changed tokens 10: Counter({'T50 c->s': 8, 'T95 s->l': 2})
+  f174r_L01/20  nsianuiper[c]ontaetio  ->  nsianuiper[s]ontaetio
+  f174r_L03/20  percontosi[s]gounetnod  ->  percontosi[l]gounetnod
+  f174v_L05/7  uagliati[c]ontutochel  ->  uagliati[s]ontutochel
+  f174v_L08/23  deliuoi[c]apitacheso  ->  deliuoi[s]apitacheso
+  f174v_L11/8  domesti[c]oloropse  ->  domesti[s]oloropse
+  f174v_L12/3  nipoiuti[c]oncostan  ->  nipoiuti[s]onsostan
+  f174v_L12/6  oiuticon[c]ostanuoc  ->  oiutison[s]ostanuoc
+  f174v_L12/23  ordeiem[s]niechelihu  ->  ordeiem[l]niechelihu
+  f174v_L21/6  cobenea[c]arolecos  ->  cobenea[s]arolecos
+  f175v_V02/29  cresoanche[c]sanfre  ->  cresoanche[s]sanfre
+no.90: 966 signs; printed+fit {'M': 124, 'S': 731, 'U': 111} -> variant {'C': 14, 'M': 124, 'S': 717, 'U': 111}
+  changed tokens 15: Counter({'T50 c->s': 10, 'T95 s->l': 5})
+  f184r_L02/11  chepranica[c]onilcont  ->  chepranica[s]onilcont
+  f184r_L02/39  peracheordar[s]oconous  ->  peracheordar[l]oconous
+  f184r_L03/25  ailiarti[c]olisapen  ->  ailiarti[s]olisapen
+  f184r_L04/6  icheilmand[s]todaluia  ->  icheilmand[l]todaluia
+  f184r_L08/32  oluiilo[c]icenchi  ->  oluiilo[s]icenchi
+  f184r_L12/19  osipione[c]arego  ->  osipione[s]arego
+  f184v_L02/26  tesocla[c]asmeora  ->  tesocla[s]asmeora
+  f184v_L03/26  soseto[c]onibsta  ->  soseto[s]onibsta
+  f185r_L02/1  sueaseto[s]iraglio  ->  sueaseto[l]iraglio
+  f185r_L06/20  aalcuna[s]ncohaec  ->  aalcuna[l]nsohaec
+  f185r_L06/22  lcunasn[c]ohaechi  ->  lcunaln[s]ohaechi
+  f185r_L10/2  atatoquello[c]redopens  ->  atatoquello[s]redopens
+  f185r_L16.2/14  aentetper[c]ontoqualrel  ->  aentetper[s]ontoqualrel
+  f185r_L18/1  nosepre[c]onfusion  ->  nosepre[s]onfusion
+  f185r_L22/5  fauorise[s]iturinonaogni  ->  fauorise[l]iturinonaogni

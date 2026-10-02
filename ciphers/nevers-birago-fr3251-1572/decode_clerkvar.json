@@ -1,0 +1,70 @@
+{
+ "jobs": [
+  {
+   "ciphertext": "harvest/ciphertext_f139v.tsv",
+   "key": [
+    "harvest/key_1572_clerkvar.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/clerkvar/reading_f139v.txt",
+   "tokens": "harvest/clerkvar/reading_f139v_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_no86.tsv",
+   "key": [
+    "harvest/key_1572_clerkvar.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/clerkvar/reading_no86.txt",
+   "tokens": "harvest/clerkvar/reading_no86_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_no90.tsv",
+   "key": [
+    "harvest/key_1572_clerkvar.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/clerkvar/reading_no90.txt",
+   "tokens": "harvest/clerkvar/reading_no90_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ]
+  }
+ ]
+}
