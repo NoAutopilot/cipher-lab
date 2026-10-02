@@ -938,12 +938,53 @@ shuffled-target check was due and no "reading ready" line is written. Status sta
 Usage 7): key.tsv's 1541 row (si, pass A's digit misread of the 1041 cell) can be dropped with a one-line note; the
 PROGRESS.tsv "Janssens Java" row's note still describes GAPS (86/163, -0.985) and is the parent's to refresh.
 
+## GAPS4-na-janssens-java-1811 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, run 05:17-05:2x UTC 2 Oct 2026 (clock read), Fable
+5.1. The Verdict step after GAPS3: gap 4, the LOCAL-QUEUE.tsv row for the Paris-side translation search. Files
+touched: `LOCAL-QUEUE.tsv` (row L31 appended) and this file (this section, the gap 4 line and the Verdict line of
+"## Remaining gaps"). Not touched: key.tsv, ciphertext.tsv, reading.txt, any image. Vision calls: 0.
+
+**Cloud probe first (the brief's order).** One request each, browser-style UA, no retries, `curl -w %{http_code}`:
+
+| host | code | what came back |
+|---|---|---|
+| https://francearchives.gouv.fr/ | 200 | the root page |
+| https://francearchives.gouv.fr/fr/search?q=Janssens+Batavia+1811 | 200 | 255 bytes, text/html: "This website requires JS enabled and cookies" (a challenge page, not a result list) |
+| https://www.siv.archives-nationales.culture.gouv.fr/ | 503 | service unavailable |
+
+So the CLAUDE.md host-table line ("archivesnationales.culture.gouv.fr/francearchives.gouv.fr ... do not load from the
+cloud at all") holds in substance: the FranceArchives root now answers, but the search behind it is JS-gated to a
+script, and the SIV did not answer. Not retried (good-citizen rule); `tools/browser_fetch.js` was not tried, since
+the brief caps outside requests at 4 and a headless navigation loads more than one. Requests: francearchives.gouv.fr
+2, siv.archives-nationales.culture.gouv.fr 1; no other host.
+
+**The row.** `LOCAL-QUEUE.tsv` L31, kind `browser-check` (the kind the runner brief lists as one it does, and one
+`tools/lq_answer_check.py` holds to the catalogue-ladder rule; L29's `catalogue-lookup` is the other such kind but
+is not in the runner brief's list), target this folder. It names the searches (FranceArchives: Janssens Batavia;
+Janssens Java 1811; Java chiffre / chiffree / dechiffrement / traduction 1811; "Hollandse Divisie" / "bureau
+hollandais"), the series to open in the SIV (Marine BB/4 campagnes 1811, AF/IV ministerial reports 1811, and ANOM
+Colonies C/2 if the SIV hands the colonial series to IREL), and asks for each record's title, cote, date range,
+catalogue URL or ark, and availability flag in the record's own words, with at least one holding-catalogue record
+quoted even on a negative; results to `paris_search.md` in this folder. The gate was tested against the row before
+the push: a bare "no results" answer exits 1 naming both missing rungs, the same answer with a SIV record URL and a
+quoted availability phrase exits 0 (`python3 tools/lq_answer_check.py <file> --row L31`).
+
+**Numbers.** Nothing read changes: leaf 188 keyed 88/163, C 77 / M 11 / U 75, judge FAIL -0.963 vs real_p05 -0.899
+(GAPS3). Gap 4 moves from not-attempted to waiting-on L31; the Verdict's cheapest next step is now gap 3 (~$3).
+Rule 10: no Paris-side record was found or searched for in this session; the row is the search.
+
+One-line suggestion (not done, outside the brief): `tools/data/catalogue_ladders.tsv` has no Archives nationales /
+FranceArchives / ANOM row, so `lq_answer_check.py` matches L31's rung (a) only through the generic ark/"catalogue"
+fallback; a row naming siv.archives-nationales.culture.gouv.fr as the holding catalogue and francearchives.gouv.fr as
+the aggregator portal would let the gate check the right host by name.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 88 of 163 code tokens keyed (54.0%; C 77, M 11, U 75; GAPS3 2 Oct 2026 regrade, was C 63 M 25 after SPLIT and C 62 M 26 at GAPS2, 86/163 at GAPS 02:07 UTC and 76/163 on 1 Oct), reading.txt header and NOTES.md "GAPS3-na-janssens-java-1811 (2 Oct 2026)"; keyed is not read-as-sense (judge FAIL language -0.963 vs real_p05 -0.899, cover 0.915; was -0.972 / 0.902 after SPLIT, -0.985 / 0.902 at GAPS, and -1.472 / 0.78 on 1 Oct); the 75 unkeyed tokens are 62 distinct codes (counted from reading_tokens.tsv, 2 Oct 2026)
 Done (gap 1, both halves): Leaf 192 (the rest of the No.2 interlinear gloss) - DONE 2 Oct 2026 (GAPS-na-janssens-java-1811, section above): two blind passes on tools/iiif_lines.py crops of images/192_hi.jpg (58 codes each, 57/58 code and 53/58 gloss agreement) plus one reconciliation, merged by scripts/merge_leaf.py: key.tsv 214 -> 233 codes, leaf 188 keyed 76 -> 86/163 (52.8%), "l'ancien Gouverneur Gal" read twice as predicted, judge -0.985 vs real_p05 -0.89 (FAIL, from -1.472), --check exit 0. Leaf 201 left page (two code+gloss rows ending "Signé Janssens") - DONE 2 Oct 2026 (GAPS2-na-janssens-java-1811, section above): one IIIF fetch (images/201_hi.jpg), tools/iiif_lines.py crops, two blind passes (8 codes each, 8/8 code and 8/8 gloss agreement) plus one reconciliation (674 dans -> 574 deux from the digit and final-letter shapes), scripts/merge_leaf.py: key.tsv 233 -> 237 codes, leaf 188 keyed 86 -> 88/163 (54.0%), line 12 now "vaisseaux ... tous les ... l'ennemie", judge -0.976 vs real_p05 -0.899 (FAIL, from -0.985), --check exit 0. Gap 1 is closed: no further glossed leaf of this set is known on disk (which dispatch leaf 201 closes is unidentified; its earlier leaves, if in the bundle, fall to gap 3's re-inventory)
 - Leaf 188: the remaining unkeyed codes, via the No.4 "Premiere Expedition" set (3 Aout 1811) - blocker: not-attempted; the eye-check this pass of thumbnails 204-207 and images/208_med.jpg, 209_med.jpg confirms 204R is a raw cipher page with Janssens' flourish, 205R-207L is a code-over-word table ending "Signe Janssens", 208L is the top of the same kind of table under an overlying translucent sheet, also signed Janssens (not "Vanteau", so NOTES (3)'s "cross-correspondent confirmation" is a misread pending a full-resolution check), and 208R to 209 top is the plain No.4 copy ending "precieuse possession. 3 Aout. Signe Janssens"; images/manifest.json misfiles these as tabular/plain/blank; next: IIIF full fetch of 204-207, tools/iiif_lines.py crops, two blind passes plus one reconciliation per page unit (205R, 206L, 206R, 207L: 12 calls at ~$1.46), merge (fix build_key.py's accent-fold/drop bug first, NOTES VX-RD02C (1)), control by decoding 204R against the 208R-209 plain copy, redecode 188, ~$18
 - Dispatch No.1's own key source (its decipherment, a plain copy, or a Paris translation) elsewhere in the archive series - blocker: not-attempted; invnr 12 leaves 1-179 and 218-233 were only sampled (CS05 every ~5.6th leaf, RD02B every 4th), invnr 7 at 1 in 24 and invnr 26 at 1 in 8 (NOTES "Sweep for more key source (2)"); even the "individually checked" 180-219 range misfiled cipher leaves (192, 194-195, 198 heading "Numero Trois" not "Numero 2", 201-208), so no range counts as a negative; next: full-resolution re-inventory of 186-215 first (~$3), then a PIL contact-sheet page-through of every remaining invnr 12 and invnr 7 thumbnail, two sessions to stay inside the host rule, then invnr 26, ~$8
-- Primata/Duplicata of No.1 and any Paris-side decipherment or translation (Ministere de la Marine et des Colonies, French archives) - blocker: not-attempted; leaf 188 is a Triplicata, so two more copies were sent, and the slip pasted on leaf 194 orders a copy of No.2 for the Directeur general des Douanes "traduite d'une lettre chiffree", which shows Paris made plain translations; no French archive searched, and archivesnationales/francearchives do not load from the cloud (CLAUDE.md hosts table); no ASKS.md or LOCAL-QUEUE.tsv row exists for this target; next: file one LOCAL-QUEUE.tsv row for the desk runner (FranceArchives / AN Marine et Colonies search: Janssens, Batavia, 1811, dechiffrement/traduction, quoting the catalogue record's availability flag), ~$2
+- Primata/Duplicata of No.1 and any Paris-side decipherment or translation (Ministere de la Marine et des Colonies, French archives) - blocker: waiting-on LOCAL-QUEUE.tsv row L31 (queued 2 Oct 2026 by GAPS4-na-janssens-java-1811, section above: a desk-browser catalogue lookup on FranceArchives and the Archives nationales SIV -- Janssens / Batavia / Java 1811, chiffre / dechiffrement / traduction, Marine BB/4, AF/IV, ANOM Colonies C/2 -- quoting each record's URL and availability flag; the cloud probe the same day got HTTP 200 on francearchives.gouv.fr's root but a JS-and-cookies challenge page on its search, and HTTP 503 on the SIV, one request each); the reason the search is worth a row: leaf 188 is a Triplicata, so two more copies were sent, and the slip pasted on leaf 194 orders a copy of No.2 for the Directeur general des Douanes "traduite d'une lettre chiffree", which shows Paris made plain translations; no French archive searched, and archivesnationales/francearchives do not load from the cloud (CLAUDE.md hosts table); no ASKS.md or LOCAL-QUEUE.tsv row exists for this target; next: file one LOCAL-QUEUE.tsv row for the desk runner (FranceArchives / AN Marine et Colonies search: Janssens, Batavia, 1811, dechiffrement/traduction, quoting the catalogue record's availability flag), ~$2
 Done (gap 5): the M-graded tokens on leaf 188 (25 over 19 codes after SPLIT's 13:11 fix) - DONE 2 Oct 2026 (GAPS3-na-janssens-java-1811, section above): every code regraded against its occurrences on 190/191/199/200, 192, 201 and the No.5 plain copy (214), one decision per code in regrades.tsv (applied by scripts/apply_regrades.py, --check ok): 9 codes / 14 tokens M -> C (25, 99, 102, 140, 168, 420, 444, 689, 904), 10 codes / 11 tokens stay M (190 value en -> est by majority, 353, 527, 534, 607, 760, 875, 1041, 1096, 1137: one word each, or a live homophone), C 63 -> 77, M 25 -> 11, keyed 88/163 unchanged, decode_key.py --check exit 0, judge -0.963 vs real_p05 -0.899 (FAIL, flat). The plain copy of No.2 (194-195) is not transcribed on disk and was not used (vision 0); the Escalation clear-pages row keeps it
 
 ## Escalation (1 Oct 2026)
@@ -954,7 +995,7 @@ Done (gap 5): the M-graded tokens on leaf 188 (25 over 19 codes after SPLIT's 13
 - [ ] key-rebuild: two-part code with unordered values (1=Soixante, 12=encore, 13=aux) and homophones (de=140/564/682/841, et=454/516/930/1192), so alphabetical bracketing does not apply; no annealing, seeded EM or LM-context fill tried; 54 single unkeyed codes in 163 tokens is too few for EM alone. Planned after the 192 and No.4 merges: an LM-context fill with a matched control built from No.4's raw copy (204R) against its plain copy (208R-209), same design, language and hidden-code fraction, ~$5
 - [x] image-check: done 2 Oct 2026 by SPLIT-na-janssens-java-1811 (section above): right page of leaf 188 at native IIIF size, tools/iiif_lines.py line crops, two blind passes (split188_passA/B.tsv) plus one reconciliation, 162/163 three-way digit agreement, one digit fixed (13:11 1194 -> 1192, corrections.tsv); still open from the original row: leaf 198 (raw No.3) against 199-200 (glossed No.3) as a further digit cross-check, ~$2
 - [x] retry: leaf 188 re-decoded with tools/decode_key.py after each key extension: 65/163 (39.9%, VX-RD02), 71/163 (43.6%, VX-RD02B), 76/163 (46.6%, VX-RD02C), 86/163 (52.8%, GAPS 2 Oct 2026, leaf 192 merged), 88/163 (54.0%, GAPS2 2 Oct 2026, leaf 201 merged), 88/163 with C 77 M 11 (GAPS3 2 Oct 2026, regrade), --check exits 0; to be rerun after the No.4 merge
-Verdict: keep going: 3 internal gaps (gap 1 done: leaves 192 and 201 merged; gap 5 done: M regrade, both 2 Oct 2026); cheapest next: gap 4, the LOCAL-QUEUE.tsv row for the Paris-side translation search (FranceArchives / AN Marine et Colonies: Janssens, Batavia, 1811, dechiffrement/traduction, quoting the catalogue record's availability flag), ~$2; after it, the full-resolution re-inventory of 186-215 (gap 3, ~$3), then the No.4 set (gap 2, ~$18)
+Verdict: keep going: 2 internal gaps (gap 1 done: leaves 192 and 201 merged; gap 5 done: M regrade; gap 4 waiting-on LOCAL-QUEUE row L31, all 2 Oct 2026); cheapest next: gap 3, the full-resolution re-inventory of leaves 186-215 (IIIF medium fetch of the leaves not yet on disk at that size, one PIL contact sheet, an eye pass per leaf for heading, number and whether cipher, gloss or plain; fixes images/manifest.json's misfiled 192, 194-195, 198, 201-208), ~$3; after it, the No.4 set (gap 2, ~$18)
 
 ## SPLIT-na-janssens-java-1811 (2 Oct 2026, account-4)
 
