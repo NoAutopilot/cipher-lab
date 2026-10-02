@@ -21,7 +21,7 @@ not as a fresh recovery target.
 
 **Correction, 2 Oct 2026 05:3x UTC (GAPS2-mornington-1798, NOTES.md "GAPS2-mornington-1798" section):** D623/24's date, recipient and subject (7 Jun 1799, Mornington to Dundas, the proposed settlement of Mysore) are also printed in Martin 1836 Vol. 2 No. XV pp. 35-43 (read 2 Oct 2026; `print/D623-24_candidate_martin1836_v2_p35.txt`), so /24 joins /5 and /23 as print-attested on date and subject and is not a fresh recovery candidate before the key test. D623/35 (21 Jun 1800) has no printed witness in Vol. 2 (both date forms, 0 hits; Ingram's footnote to p. 311 cites the 9 Jul 1800 Rainier letter). The order itself is unchanged; the ASKS row is the parent's.
 
-**Amendment draft, 2 Oct 2026 06:2x UTC (GAPS3-mornington-1798; for the owner to carry into the follow-on order, nothing sent):**
+**Amendment draft, 2 Oct 2026 06:1x UTC (GAPS3-mornington-1798; for the owner to carry into the follow-on order, nothing sent):**
 add **D623/23**, **D623/10** and **D623/11** to the "If the test batch images well" list below, as *controls*, not recovery
 targets: /23 is the one cipher item whose plaintext is in print (Martin Vol. 1 No. CCIII p. 587, `print/D623-23_martin1836_v1_p587.txt`),
 so its image is the known-answer check for the D623/41 key reading; /10 ("decoded") and /11 ("partly decoded", per the India
