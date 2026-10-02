@@ -5867,3 +5867,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 23:24 | A2-COL3 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (f.23 word-level re-pairing + re-align with control); cap USD 3, box ends 23:59 UTC
 2026-10-02 23:24 | A2-SAV (account 2, LANE-A2PUSH) | claim: fr3789-mariedemedicis-savary-1610 -- Verdict cheapest next step (settle disagreements.tsv from image); cap USD 5, box ends 00:10 UTC 3 Oct
 2026-10-02 23:25 | A2-CAS7 (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (it19 corpus build, V6-PTCORP method); cap USD 4, box ends 00:05 UTC 3 Oct
+2026-10-02 23:24 | A2-YOR (account 2, LANE-A2PUSH) | claim: sp78-yorke-1749 -- Verdict cheapest next step (SP 78/232 per-item note check); cap USD 3, box ends 00:05 UTC
