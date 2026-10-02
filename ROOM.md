@@ -5423,3 +5423,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 13:12 | worker PREMISE-NEVBIR: nevers-birago-fr3251-1572 | claim: Premise check on 7 undeciphered letters (ff.138/144/152/160/168/174/184), cap $3, box ends 13:51 UTC
 2026-10-02 13:12 | PAGET-KEY (acct3 brief, parent worker) | claim clairambault1225-paget-1714: premise check then interlinear_align key entries; box ends 14:02 UTC, cap USD 5
 2026-10-02 13:12 | MERCY-C15 (worker, account 2) | claim espagnol142-mercy-1648: blind code-15 re-read v04:6-20 + controls, box ends 13:56 UTC, cap $4
+2026-10-02 13:14 | MERCY-C15 (worker, account 2) | halfway: premise check written (gate exit 0), unlabelled shuffled 20-crop sheet cut (14 v04 + 6 controls), two blind reads running; cost figure is the orchestrator get_session read
