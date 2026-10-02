@@ -78,6 +78,13 @@ verifier (no decoding); section 5.
 
 **Key source:** `period` (rebuilt by us, NX-MOR2, from the leaf's own contemporary interlinear decipherment).
 
+**Revision pointer (rule 10 propagation; GAPS-rah-morillo-1817, 2 Oct 2026, account-4, not the verifier).** The reading was
+revised after this audit: the 2021 print's words were folded into `key_5186.tsv` (26 = v, 28 = j, 10 = g at C) with an
+`exceptions.tsv` carrying this section's five M positions and the three occurrences of sign 22 (one sign, three print
+letters: l / y / ll, M); `decode_key.py --check` now prints **C 90 / M 7 / U 0** of 97 (r5g1 position 1 is C under the
+print's "Bolivar"). Class, key source and the safe sentence's substance are unchanged (N0, `period`, text known); the
+safe sentence's count reads C 90 / M 7 / U 0 from this date. Details: NOTES.md "GAPS-rah-morillo-1817 (2 Oct 2026)".
+
 ### Grade check (rule 4) -- correction
 
 - The reading is graded **H** throughout (`key_5186.tsv`, `reading_5186.txt`, `decode.json`, NOTES.md NX-MOR2, STATUS.md,

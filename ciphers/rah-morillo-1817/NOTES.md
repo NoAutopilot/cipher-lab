@@ -1,6 +1,6 @@
 partial
 
-Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 found-solved (V9-MOR, AUDIT.md, 26 Sept 2026: N0, plaintext in print in Portuguesa en Carabobo, 2021, p.37 n.100; key period). Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere. **V9-MOR audit, 26 Sept 2026 (AUDIT.md): item 3 is N0, key `period`, text known** -- its plaintext is printed in Bolívar, González Segovia and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100 (IA `portuguesa-en-carabobo`), citing this shelfmark; t.2 is Google Books `pirVAAAAMAAJ` (searched, no hit). The H grades below should read C 86 / M 5 / U 6 (AUDIT.md section 3).
+Per item (moved off line 1 by the LANE NX orchestrator, 26 Sept 2026, rule 5): found-solved (item 1); item 2 partial (key described, not found); item 3 found-solved (V9-MOR, AUDIT.md, 26 Sept 2026: N0, plaintext in print in Portuguesa en Carabobo, 2021, p.37 n.100; key period). Item 3 citation (26 Sept 2026, NX-MOR2): Rodríguez Villa's t.4 (Google Books v3kzAQAAIAAJ, *Documentos justificativos ... contiene los últimos años*, 1908, publicDomain ALL_PAGES) read by full-text search for "Herrera" + "7 de noviembre de 1820" and for "Romerito" -- no hit for this exact letter (only a different, later Herrera-to-Morillo letter "de 20 del actual" re: Romerito/Ferrus/Pedraza is quoted there, p. cited in the volume's own text, a different date); Contreras, *Catálogo de la Colección Pablo Morillo* (Madrid 1988, Google Books ohJPjaGKOk8C), full-text search for "Romerito" "Guanare" confirms this item's own catalogue entry (Sig. 9/7666, ff.420-420v, 7 de noviembre de 1820) exists in print as a description only, no plaintext or cipher table given. t.2 (1815 docs) still not located digitised anywhere. **V9-MOR audit, 26 Sept 2026 (AUDIT.md): item 3 is N0, key `period`, text known** -- its plaintext is printed in Bolívar, González Segovia and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100 (IA `portuguesa-en-carabobo`), citing this shelfmark; t.2 is Google Books `pirVAAAAMAAJ` (searched, no hit). The H grades below should read C 86 / M 5 / U 6 (AUDIT.md section 3). GAPS-rah-morillo-1817 (2 Oct 2026, account-4): the 2021 print's words are folded into key_5186.tsv and exceptions.tsv (build_key_5186.py), and `tools/decode_key.py --check` now prints C 90 / M 7 / U 0 of 97 (section "GAPS-rah-morillo-1817" below); open-web and blog comment-thread check logged at the end of this file, no decipherment or plaintext beyond the 2021 print located.
 
 # Royalist ciphered letters to/from General Pablo Morillo — RAH cluster (1817, 1817, 1820)
 
@@ -623,9 +623,90 @@ reciben" where ours differ, and supplies the words over the 6 unread signs (solo
 Trujillo): an image re-check of those groups against the print, then the 26 = v value at grade C from the print,
 is the remaining housekeeping. Item 3 is found-solved; no further campaign.
 
+## GAPS-rah-morillo-1817 (2 Oct 2026, account-4)
+
+Brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`; the "## Remaining gaps" Verdict step of 1 Oct 2026, run
+verbatim and nothing else: fold the 2021 print's words into key_5186 via `build_key_5186.py` (26=v, 28=j, 10=g at C,
+22/30 tested as merged signs) with V9-MOR's exceptions.tsv split and a `decode_key.py --check` rerun. Disk only; no
+image opened, 0 vision calls, no numeral re-read (the three agreeing passes stand). Item 3 is N0 with its text in print
+(AUDIT.md): this is key-table housekeeping on a dataset row, not a solve.
+
+### What changed (rule 7: every file below regenerates from `build_key_5186.py` then `tools/decode_key.py`)
+
+- `build_key_5186.py`: a `PRINT_WORDS` table (the print's word over each group the gloss key left unread or
+  tentative, one letter per sign; source *Portuguesa en Carabobo*, 2021, p.37 n.100, as AUDIT.md section 2 quotes it)
+  and a `print_fold` rule -- the gloss-built key (KEY_WORDS, unchanged, still the shuffle-control's input) is never
+  overwritten by the print: a sign the key lacks takes the print's value(s); a sign that agrees gains a count and a
+  word; a sign that disagrees keeps its value, records the print letter in the `conflict` column, and the position
+  goes to `exceptions.tsv` at M (rule 4: two witnesses disagreeing are a data conflict, not a majority vote).
+- `key_5186.tsv`: 21 signs (was 17), new `source` column (gloss / gloss+print / print). New at C from the print:
+  **26 = v** (Bolivar, written bo|livar across the line wrap, as NX-MOR3 proposed), **28 = j** (Trujillo, tru|jillo),
+  **10 = g** (seguro). Counts raised where the print confirms a gloss value: BOX = u now 4 words (was 1), 8 = l 3,
+  51 = r 8, 56 = i 7, 18 = o 13, + = a 11, 27 = s 6, 16 = n 4, 33 = t 3.
+- `exceptions.tsv` (new, generated; wired in `decode.json`): 7 rows at M -- V9-MOR's five (r2g2 positions 5 and 7;
+  r4g2 position 0; r5g2 position 1; and r5g1 position 1 is **not** among them any more, see below) plus the three
+  occurrences of sign 22.
+- `gloss_5186.tsv`: a `print_2021` column beside the gloss as read.
+- `reading_5186.txt` / `reading_5186_tokens.tsv`: regenerated; `ciphertext_5186.tsv` unchanged (git diff empty).
+
+### The two merged-sign tests (the step's own question; witnesses, not a majority)
+
+| sign | witness 1 | witness 2 | witness 3 | holds as one value? | logged as |
+|---|---|---|---|---|---|
+| 22 | r2g4 "solo" (print; gloss read "solo" tentatively) forces **l** | r4g2 "Guayana" (print; gloss "guayana") forces **y** | r6g1 "Trujillo" = tru\|jillo, five letters over four signs with 56 = i and 18 = o anchoring positions 1 and 3, forces **ll** | **no.** Three letters from three words. A yeismo class ll/y covers Guayana and Trujillo (2 of 3) but not "solo", and 8 already reads l in two gloss words (el, oficiales) and a third print word (Bolivar), so 22 is not simply a second l | key row `22 = l\|y\|ll`, grade M, conflict column "one sign, l in solo, y in Guayana, ll in Trujillo"; each occurrence an exceptions row with its own print letter at M |
+| 30 | r3g3 "dijo" (gloss, clean, both passes) forces **j** | r4g2 "Guayana" (gloss "guayana" both passes + print) forces **g** | -- | **untestable at this N**: one word each way, no third occurrence to break the tie; a g/j merge is consistent with every other sign (no other sign reads g; 28 now reads j from Trujillo, so j would have two signs) but nothing on this leaf can distinguish "30 = g/j merged" from "30 = j, and Guayana enciphered with a slip" | key row stays `30 = j` (gloss), conflict column "g x1 (Guayana, print)"; r4g2 position 0 an exceptions row, value g (what both witnesses under that sign say), grade M |
+
+Two more places where the print and the sign disagree, both left at the sign's value and graded M, not re-read (the
+numerals were read identically by three passes; the Remaining-gaps section's image-check step is the instrument):
+r5g2 position 1 (sign 51 = r in five gloss words and three print words; gloss and print "seguro" want e, sign 7) and
+r2g2 (print "Caimital", 8 letters, cannot align with the group's 9 signs at all; gloss as read "barinituS"; key
+"barinrtas"). r5g1 position 1 (56 = i): V9-MOR had it M against the tentative gloss "levar"; the print's "Bolivar"
+has i there, so it is C with no exception row, as the step planned.
+
+### Numbers
+
+`python3 build_key_5186.py --check`: exit 0. `python3 tools/decode_key.py ciphers/rah-morillo-1817 --check`:
+```
+ciphertext_5186.tsv: tokens 97: C 90, M 7
+reading up to date
+```
+exit 0. Grade counts (rule 4): **C 90 / M 7 / U 0 of 97** (was C 86 / M 5 / U 6 by AUDIT.md section 3, C 91 / U 6 by
+the committed files). Of the 7 M: 2 in r2g2, 3 on sign 22, 1 on sign 30 (r4g2), 1 on sign 51 (r5g2). No H, S or I.
+The print's letters are known plaintext (C) for the 5 words it supplies; 26, 28 and 10 are each attested in one word
+only (C does not need two words; that is the S rule).
+
+`shuffle_control_5186.py` (KEY_WORDS unchanged, re-run 2 Oct 2026): real 1.000, shuffle mean 0.621, p95 0.800,
+range 0.473-0.855 -- the same figures as 26 Sept; the print fold-in adds no clean-gloss group to that control and
+cannot change it (a control that cannot vary with this step is not a test of this step, rule 3; it is quoted only to
+say the gloss-built base is the one V9-MOR audited).
+
+Judge (rule 7; `tools/judge_plaintext.py specs/rah-morillo-1817.json`, es17 corpus, not era-matched, as NX-MOR2 noted):
+```
+our decode, 97 signs joined (98 letters, ll counted twice):
+ok   length: got=98, min=60, max=1000000000
+FAIL language: score=-1.043, null_p99=-1.77, real_p05=-0.935, real_median=-0.812, mode=both, N=98
+FAIL - rah-morillo-1817
+the 2021 print's own modernised text of the block, as a reference through the same judge (not a candidate):
+ok   length: got=100, min=60, max=1000000000
+ok   language: score=-0.915, null_p99=-1.741, real_p05=-0.92, real_median=-0.817, mode=both, N=100
+PASS - rah-morillo-1817
+the 26 Sept 91-letter decode, for comparison: FAIL, score=-1.172 (real_p05=-0.919, N=91)
+```
+Reported as a FAIL. The score moved from -1.172 to -1.043 with the six former U signs filled; the print's own text of
+the same block sits at -0.915, just above the p05 gate, so the remaining gap between our decode and the gate is the
+places where our signs still differ from the print ("barinrtas" for "Caimital", "srguro" for "seguro", no "rio") --
+exactly the Remaining-gaps image-check step, not the key.
+
+Rule 10: nothing here is new; the letters folded in come from a 2021 printed text of this very item (N0, AUDIT.md),
+and the key stays `period` (rebuilt from the leaf's own decipherment, now with the print as a second witness).
+One-line suggestions outside this brief: `specs/rah-morillo-1817.json`'s `ciphertext_note` still says "grade H" and
+"13 of 21 groups" (stale since V9-MOR; a spec edit was not this step); status.json's dataset row still quotes C 86 /
+M 5 / U 6 (the parent updates status.json); AUDIT.md section 3 carries a dated pointer to this section (rule 10's
+propagation clause), its class unchanged.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
-Read so far: item 3, 86 of 97 cipher tokens at C (88.7%), 5 M, 6 U (AUDIT.md section 3; `tools/decode_key.py --check` on 1 Oct 2026 still prints C 91 / U 6 because V9's M split was never applied, NOTES "Grade correction applied"); all 21 groups carry a period gloss word, and the block's plaintext is in print (Portuguesa en Carabobo, 2021, p.37 n.100). Item 1 is read from print only (Rodriguez Villa t.3, 1908, cipher passages marked); its leaf (record 2242) was never imaged (images/manifest.json holds records 1306, 1487, 1957, 4332, 4537, 5186 and 5195 only), so its cipher tokens are unmeasured. Item 2 is a clear letter; its enclosed key table is unread.
-- item 3, the 6 U tokens (code 22 in r2g4/r4g2/r6g1, 10 in r5g2, 26 in r5g1, 28 in r6g1) and r5g1's M token (position 2, 56=i, against the gloss "levar") - blocker: not-attempted; the 2021 print gives the words over them (solo, Guayana, Bolivar, seguro, Trujillo; AUDIT.md section 3), and NOTES "Grade correction applied" lists folding them in as remaining housekeeping, never done (NEXT-STEPS.tsv line 133 still carries V9's unapplied C 86 / M 5 / U 6 split); 22 is over-constrained by the print (solo wants l, Guayana y, Trujillo ll) and 30 reads j in "dijo" but G in "Guayana", so merged signs (l/ll/y, g/j) are the hypothesis to test, not a conflict to settle by majority (rule 4); next: one short worker edits `build_key_5186.py` (key_5186.tsv is generated, "do not edit") to add 26=v, 28=j, 10=g at C from the print, regrades r5g1 position 2 to C under "Bolivar", tests 22 and 30 as merged signs and logs them at M with the print words if they do not hold, writes exceptions.tsv for V9's split, and reruns `tools/decode_key.py --check`, ~$2
+Read so far: item 3, 90 of 97 cipher tokens at C (92.8%), 7 M, 0 U (`tools/decode_key.py --check` on 2 Oct 2026 after GAPS-rah-morillo-1817 folded the 2021 print into key_5186.tsv and exceptions.tsv; was C 86 / M 5 / U 6 by AUDIT.md section 3); all 21 groups carry a period gloss word, and the block's plaintext is in print (Portuguesa en Carabobo, 2021, p.37 n.100). Item 1 is read from print only (Rodriguez Villa t.3, 1908, cipher passages marked); its leaf (record 2242) was never imaged (images/manifest.json holds records 1306, 1487, 1957, 4332, 4537, 5186 and 5195 only), so its cipher tokens are unmeasured. Item 2 is a clear letter; its enclosed key table is unread.
+Done 2 Oct 2026 (GAPS-rah-morillo-1817, section above): the former first gap -- the 6 U tokens and r5g1's M token -- is closed by the print fold-in: 26 = v, 28 = j, 10 = g at C; r5g1 position 1 C under "Bolivar"; sign 22 does not hold as one value (l / y / ll from three print words) and is logged M with each print letter in exceptions.tsv; sign 30 (j in dijo, g in Guayana) is untestable at this N and stays j with the conflict recorded and r4g2 position 0 at M; exceptions.tsv carries V9's split; `decode_key.py --check` C 90 / M 7 / U 0, exit 0.
 - item 3, the gloss-vs-print disagreements and the remaining M tokens (r2g2 positions 6 and 8, gloss "barinituS" vs print "Caimital"; r4g2 position 1; r5g2 position 2, 51=r against "seguro"; clear-text line 4 "no se mueven" vs print "no se reciben") - blocker: not-attempted; the numerals at these spots were read identically by NX-MOR2's two blind passes and NX-MOR3's third (0 differences over 97 tokens; r2g2's sixth numeral re-checked as 51 twice), so the numerals are not the open question and a fourth numeral pass would be the same knob; what nobody has done is re-read the interlinear gloss letters and the clear line against the 2021 print (V9-MOR handed this to the solver lane, AUDIT.md section 5); the key decode "barinrtas" is one sign from "barinitas" (a real town near Barinas, fitting the gloss "barinituS"), while "Caimital" fits none of the group's 9 signs, so the pass tests the print as much as our eye, and a numeral that stays 51 where the print wants e is a period encipherer's slip, graded M, not re-read again; next: `tools/iiif_lines.py --image images/10088713.jpg` (and 10088714.jpg for the clear line) crops pasted first, one fresh blind Sonnet read of the gloss words and clear line at these spots plus the row-1 margin mark below, then one reconciliation against the print, ~$5
 - item 3, the isolated stacked mark at the row-1 right margin after "el" ("5" over a second sign; "2" in NX-MOR2, "28" in NX-MOR3), excluded from the 97 - blocker: not-attempted; it was logged as glossless and probably marginal, but the 2021 print reads "paso el rio [Apure] por Caimital": "rio" is unbracketed (the authors bracket only their own insertion "[Apure]") and falls exactly between r1g3 "el" and r2g1 "por", where this mark sits, so the print is a crib for it (key 51=r, 56=i, 18=o; the mark's first digit "5" is compatible with 51 or 56) and it may be a torn twenty-second group rather than a stray mark (NOTES NX-MOR2 transcription, NX-MOR3 diff-table note); the edge is torn and f.420r has only the one RAH image, so it may still end illegible; next: read it in the same crop pass as the gap above against the crib "rio", count it as a group at C/M only if a numeral sequence compatible with r-i-o is legible, else log it illegible with the crop, ~$0 extra
 - item 1, leaf 2242 (RAH 9/7658 ff.32-34, Enrile to Morillo, 15 Jul 1817) - blocker: not-attempted; Rodriguez Villa t.3 prints the full plaintext with footnotes "Lo que sigue en cifra" / "Desde aqui en cifra" marking the enciphered passages (NOTES "Item 1"), but no session has fetched the leaf (images/manifest.json, rederiv_transfer/candidates.tsv "already-known"), so whether it carries numeral ciphertext, and with it a 1817 Morillo-circle key recoverable at C against the printed clear, is untested; next: fetch its images by the RAH OAI didl route plus `tools/browser_fetch.js --binary`, check for numerals, and if present align a marked passage against the print with `tools/interlinear_align.py`, ~$2.5
@@ -637,7 +718,49 @@ Read so far: item 3, 86 of 97 cipher tokens at C (88.7%), 5 M, 6 U (AUDIT.md sec
 - [x] clear-pages: item 3's f.420r carries the period interlinear decipherment under all 21 groups (the key's source, grade C) and f.420v is clear only; item 1's plaintext is printed with its cipher passages marked (usable as the crib for leaf 2242 once fetched); 1306 f.151 is that dispatch's own decipherment, a different design
 - [x] known-keys: KEY-DESIGN.tsv holds only key_5186 for this fonds (line 133) and KEY-OFFICES.tsv has no Morillo row; Cryptiana and the Bourdeau and Aymeloglu repositories were grepped for Morillo (24 Sept; AUDIT.md section 4 (e)): no key; the fonds' two other keys (Aldama 1819, Ministerio de la Guerra nomenclator) were compared by design and excluded (NX-MOR4 step 3); design_prior.py not run, moot while no unkeyed ciphertext is on disk in the folder
 - [x] print: Rodriguez Villa t.1-t.4 (IA djvu and Google Books search-inside with controls), Contreras 1988, Stoan 1974, Blanco y Azpurua, O'Leary Memorias, Lecuna, `print_check.py` with its global IA pass, OpenAlex, Semantic Scholar, CrossRef and 4 JSTOR rows (all done 26 Sept): item 1 printed 1908, item 3's plaintext printed 2021 (Portuguesa en Carabobo p.37 n.100), item 2's letter printed without its enclosure; no printing of the 1817 key table found
-- [ ] key-rebuild: the 2021 print is known plaintext for the 6 U tokens and r5g1's M token but is not folded into key_5186 (NOTES "Grade correction applied"; NEXT-STEPS.tsv line 133); NX-MOR4's "26=v untestable" predates the print and is not an attempt at this step; planned: 26=v, 28=j, 10=g at C via build_key_5186.py, 22 and 30 tested as merged signs (l/ll/y, g/j) and logged at M if they do not hold, exceptions.tsv for V9's C 86 / M 5 / U 6
+- [x] key-rebuild: done 2 Oct 2026 (GAPS-rah-morillo-1817): the 2021 print folded into key_5186.tsv via build_key_5186.py (26 = v, 28 = j, 10 = g at C; BOX = u confirmed in three more words), exceptions.tsv written for V9's split plus the three sign-22 positions; merged-sign tests: 22 = l|y|ll does not hold as one value (M), 30 = g/j untestable at one word each (M at r4g2); C 90 / M 7 / U 0
 - [ ] image-check: the numerals were read by three passes (NX-MOR2 two blind, NX-MOR3 a third, 0 differences), all agreeing and none failing a gate, so the numeral read is settled rather than retired, and a fourth numeral pass is not proposed; planned: re-read the interlinear gloss letters at r2g2/r4g2/r5g2, the clear-text "mueven"/"reciben" and the row-1 margin mark against the print ("Caimital", "Guayana", "seguro", "reciben", "rio") on native crops
-- [ ] retry: planned: rerun `tools/decode_key.py --check` after the key-rebuild and image-check, regrade the 6 U and 5 M tokens (and the margin mark, if it becomes a group), and report the new C/M/U counts; then, if leaf 2242 carries numerals, decode its marked passages with whatever key the alignment gives
-Verdict: keep going: 6 internal gaps; cheapest next: fold the 2021 print's words into key_5186 via build_key_5186.py (26=v, 28=j, 10=g at C, 22/30 tested as merged signs) with V9's exceptions.tsv split and a `decode_key.py --check` rerun, ~$2
+- [ ] retry: the key-rebuild half is done (`decode_key.py --check` rerun 2 Oct 2026, C 90 / M 7 / U 0); planned: rerun it again after the image-check, regrade the 7 M tokens (and the margin mark, if it becomes a group) from what the crops show, and report the new C/M/U counts; then, if leaf 2242 carries numerals, decode its marked passages with whatever key the alignment gives
+Verdict: keep going: 5 internal gaps; cheapest next: the image-check of the gloss letters and the clear line against the print -- `tools/iiif_lines.py --image images/10088713.jpg` (and 10088714.jpg) crops pasted first, one fresh blind Sonnet read of the gloss words at r2g2/r4g2/r5g2, the clear-line "mueven"/"reciben" and the row-1 margin mark against the crib "rio", then one reconciliation against the print (at most 2 vision calls), ~$5
+
+## Web and blog check (GAPS-rah-morillo-1817, 2 Oct 2026)
+
+The intake gate (`tools/intake_gate_check.py rah-morillo-1817`) exited 1 on 2 Oct 2026 for one reason only: no logged
+open-web and blog comment-thread check (CHECK-SOLVED-WEB, 28 Sept 2026). Run before the key step above, per
+`.claude/briefs/check-solved.md` "Required step". On-disk first: `grep -ril "morillo|romerito|guanare|9/7666|enrile"
+sources/cryptiana/` -- 0 files (0 requests). Then, 2 Oct 2026, 01:58-02:02 UTC:
+
+| # | query (web search unless noted) | result for THIS target |
+|---|---|---|
+| 1 | Herrera Morillo Guanare 7 noviembre 1820 carta cifrada Romerito | only the RAH catalogue's own listing pages and unrelated Bolivar/armistice pages; no blog, no decipherment |
+| 2 | "9/7666" Morillo cifra OR cifrada OR cipher | noise (Caesar-cipher pages, a chord site); nothing on this shelfmark |
+| 3 | "Romerito" "tres oficiales" "buscando a Bolívar" (the decoded phrase, quoted) | no page carrying the phrase; general Bolivar biographies only (the 2021 book itself, already in AUDIT.md, is not in the engine's results) |
+| 4 | Enrile Morillo 1817 "carta reservada y cifrada" Real Academia de la Historia (item 1, the folder's title words) | RAH catalogue pages and an Armada Cuadernos PDF on Enrile (opened, below); no decipherment |
+| 5 | site:scienceblogs.de klausis-krypto-kolumne Morillo (Cipherbrain) | no post or comment names Morillo |
+| 6 | site:cryptiana.blogspot.com Morillo OR Venezuela OR realista cifra (Cryptiana blog) | no post; the 2018 archive page opened (below) |
+| 7 | site:ciphermysteries.com Morillo OR Bolívar OR Venezuela cipher 1820 (Cipher Mysteries) | no post about any of the three items |
+| 8 | Morillo cipher 1817 1820 solves Claude OR GPT (model-solve announcements) | the 2026 Urquhart "Cyphral Distich" and a 1809 Napoleonic-cipher story only; nothing Morillo |
+| 9 | Morillo "clave en cifra" OR "clave de cifra" 1817 Ministro de la Guerra asuntos reservados (item 2) | RAH and Comunidad de Madrid catalogue listings; no key table, no decipherment |
+| 10 | Pablo Morillo Chiffre OR verschlüsselt Brief 1817 OR 1820 Venezuela Klausis Krypto Kolumne | a Cipherbrain post on an 1817 letter (opened, below): LeRay de Chaumont to Rosseel, New York shorthand, not this target |
+| 11 | "Herrera a Morillo en carta cifrada" (the catalogue title, quoted) | the RAH title index only |
+
+Pages opened and read with their comment threads: (a) armada.defensa.gob.es Cuadernos IHCN 65 cap.4 "Pascual Enrile,
+jefe de la escuadra de la expedición" (PDF, 1 request): no cifra/cifrada/clave sentence, no decipherment of item 1;
+(b) cervantesvirtual.com "Gran Colombia y España 1819-1822" (PDF): HTTP 403 (the host is Cloudflare-blocked from the
+cloud, CLAUDE.md host table), not retried, unreachable; (c) cryptiana.blogspot.com/2018 (1 request): posts on 1470s-1590s
+Spanish, French and English ciphers, 0 mentions of Morillo, Venezuela, Herrera, Enrile, Guanare or Romerito in posts or
+comments; (d) scienceblogs.de Cipherbrain, "Wer knackt diesen verschlüsselten Brief aus dem Jahr 1817?" (2 Jan 2015,
+1 request): LeRay de Chaumont to Joseph Rosseel, Thevenot shorthand, 12 comments, none naming Spain, Morillo or Venezuela.
+Requests: web search 11 queries; armada.defensa.gob.es 1; cervantesvirtual.com 1 (403); cryptiana.blogspot.com 1;
+scienceblogs.de 1. No login, no credential.
+
+Result: no decipherment or plaintext of items 1-3 located by these queries on 2 Oct 2026 beyond what the folder already
+cites (item 1 printed in Rodríguez Villa t.3, 1908; item 3's plaintext in *Portuguesa en Carabobo*, 2021, AUDIT.md) --
+a search result, not a novelty verdict (rule 10). Status word unchanged (`partial`, per item as line 2 states).
+
+`python3 tools/intake_gate_check.py rah-morillo-1817` after this section (2 Oct 2026):
+```
+rah-morillo-1817: partial (line 1) -- edition/page or full-text-search citation found within 6 lines
+```
+exit 0 (was 1). `python3 tools/gaps_check.py rah-morillo-1817`: `OK keep-going rah-morillo-1817: keep going: 5 internal
+gap(s), 2 step(s) untried`, exit 0.

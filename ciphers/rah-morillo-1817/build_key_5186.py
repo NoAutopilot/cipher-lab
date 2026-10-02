@@ -19,6 +19,21 @@ listed in OTHER_GROUPS for the mechanical decode only -- they contribute no key 
 '+' = the recurring non-numeral cross-like mark; 'BOX' = the recurring small drawn box/square (both already
 named in NOTES.md's 26 Sept 2026 eye-check). Re-running this script must reproduce the committed files byte
 for byte (--check).
+
+Fold-in of the 2021 print (GAPS-rah-morillo-1817, 2 Oct 2026; CLAUDE.md rule 4, grade C from known plaintext).
+V9-MOR (AUDIT.md, 26 Sept 2026) found the whole cipher block printed, modernised, in Bolivar, Gonzalez Segovia
+and Anzola, *Portuguesa en Carabobo* (2021), p.37 n.100, citing this shelfmark. PRINT_WORDS below carries the
+print's word over each group that the gloss-built key left unread or tentative, aligned one letter per sign
+where every other sign in the group is already keyed. The rule for merging it (print_fold): the gloss-built
+key is never overwritten by the print -- a sign the print reads where the key has nothing gets the print's
+value(s) (26 = v, 28 = j, 10 = g); a sign whose print letter agrees with the key gains a count and a word; a
+sign whose print letter disagrees with the key keeps the key's value, records the disagreement in the
+`conflict` column, and the position becomes a row of exceptions.tsv at grade M (CLAUDE.md rule 4: two
+witnesses that disagree are a data conflict, never settled by majority). A sign the print reads with more than
+one letter across its occurrences (22: l in 'solo', y in 'Guayana', ll in 'Trujillo') is written with every
+value joined by '|' at grade M and each occurrence gets its own exceptions.tsv row with the print letter at M.
+EXCEPTIONS (-> exceptions.tsv, read by tools/decode_key.py through decode.json) is the per-position list:
+V9-MOR's five M tokens plus the three 22 positions.
 """
 import collections
 import os
@@ -66,11 +81,56 @@ OTHER_GROUPS = [
     ('r6g1', ['28', '56', '22', '18'], 'xino (tentative; 28 and 22 unresolved)'),
 ]
 
+# The 2021 print's words (grade C, known plaintext; *Portuguesa en Carabobo*, 2021, p.37 n.100, orthography
+# modernised by its authors: "Se ha corregido la ortografia"), aligned one letter per sign. A None letter marks a
+# position where the print's letter contradicts a sign the key already reads in several words (r5g2 position 1,
+# sign 51 = r in five words, print and gloss 'e'): that position is not fed to the key counter and is listed in
+# EXCEPTIONS instead. r2g2 is absent: the print's 'Caimital' (8 letters) does not align with the group's 9
+# signs, and the gloss as read is 'barinituS' -- an image question (NOTES.md "Remaining gaps"), not a fold-in.
+PRINT_SOURCE = 'Portuguesa en Carabobo (2021) p.37 n.100'
+PRINT_WORDS = [
+    ('r2g4', ['27', '18', '22', '18'], 'solo', ['s', 'o', 'l', 'o']),
+    ('r4g2', ['30', 'BOX', '+', '22', '+', '16', '+'], 'Guayana', ['g', 'u', 'a', 'y', 'a', 'n', 'a']),
+    # 'Bolivar' is written across the manuscript's own line wrap: r4g5 'bo' (already a KEY_WORDS group) + r5g1.
+    ('r5g1', ['8', '56', '26', '+', '51'], 'Bolivar (bo|livar)', ['l', 'i', 'v', 'a', 'r']),
+    ('r5g2', ['27', '51', '10', 'BOX', '51', '18'], 'seguro', ['s', None, 'g', 'u', 'r', 'o']),
+    ('r5g4', ['33', '51', 'BOX'], 'Trujillo (tru|jillo)', ['t', 'r', 'u']),
+    # 'jillo' is five letters over four signs; 56 = i and 18 = o anchor positions 1 and 3, so 28 = j and 22 = ll.
+    ('r6g1', ['28', '56', '22', '18'], 'Trujillo (tru|jillo)', ['j', 'i', 'll', 'o']),
+]
+
+# The print's word over each KEY_WORDS group (gloss_5186.tsv's print_2021 column only; the key does not use it).
+PRINT_WORDS_KEYED = {
+    'r1g1': 'Romerito', 'r1g2': 'paso', 'r1g3': 'el', 'r2g1': 'por', 'r2g2': 'Caimital (does not align: 8 letters, 9 signs)',
+    'r2g3': 'con', 'r3g1': 'tres', 'r3g2': 'oficiales', 'r3g3': 'Dijo', 'r3g4': 'venia', 'r4g1': 'de',
+    'r4g3': 'buscando', 'r4g4': 'a', 'r4g5': 'Bolivar (bo|livar)', 'r5g3': 'para',
+}
+
+# Per-position overrides for tools/decode_key.py (line, pos, sign, value, grade, reason) -> exceptions.tsv.
+EXCEPTIONS = [
+    ('r2g2', 5, '51', 'r', 'M', "key 51 = r (five gloss words); gloss as read 'barinituS' has i here; the print's "
+                              "'Caimital' (8 letters) does not align with the 9 signs; V9-MOR M"),
+    ('r2g2', 7, '+', 'a', 'M', "key + = a (six gloss words); gloss as read has u here; print does not align; V9-MOR M"),
+    ('r2g4', 2, '22', 'l', 'M', "print 'solo' forces l; 22 also reads y (Guayana) and ll (Trujillo), and 8 already "
+                               "reads l in two gloss words -- sign over-constrained, no single value"),
+    ('r4g2', 0, '30', 'g', 'M', "gloss 'guayana' (both blind passes) and print 'Guayana' read g; key 30 = j from "
+                               "the gloss word 'dijo'; one word each way, unresolved; V9-MOR M"),
+    ('r4g2', 3, '22', 'y', 'M', "print 'Guayana' forces y; see r2g4 position 2"),
+    ('r5g2', 1, '51', 'r', 'M', "sign read 51 by three passes (= r in five gloss words); gloss and print 'seguro' want "
+                               "e (sign 7); an encipherer's slip or an unrecorded homophone, left at the sign's value; "
+                               "V9-MOR M"),
+    ('r6g1', 2, '22', 'll', 'M', "print 'Trujillo' (tru|jillo, five letters over four signs) forces ll; see r2g4 "
+                                "position 2"),
+]
+
 ALL_GROUPS_ORDER = ['r1g1', 'r1g2', 'r1g3', 'r2g1', 'r2g2', 'r2g3', 'r2g4', 'r3g1', 'r3g2', 'r3g3', 'r3g4',
                     'r4g1', 'r4g2', 'r4g3', 'r4g4', 'r4g5', 'r5g1', 'r5g2', 'r5g3', 'r5g4', 'r6g1']
 
 
 def build_key():
+    """Rows (code, value, grade, count, words_seen_in, conflict, source). The gloss-built part is exactly the
+    26 Sept 2026 key (KEY_WORDS, grade C, every recurring code agreeing with itself); print_fold then adds the
+    2021 print without overwriting it (docstring)."""
     pairs = collections.defaultdict(collections.Counter)
     words_seen = collections.defaultdict(list)
     for gid, toks, word, letters in KEY_WORDS:
@@ -78,13 +138,46 @@ def build_key():
         for t, l in zip(toks, letters):
             pairs[t][l] += 1
             words_seen[t].append(word)
-    rows = []
+    rows = {}
     for code, c in sorted(pairs.items(), key=lambda kv: (-sum(kv[1].values()), kv[0])):
         v, n = c.most_common(1)[0]
         conflict = '; '.join(f'{x} x{m}' for x, m in c.items() if x != v)
         seen = ', '.join(sorted(set(words_seen[code])))
-        rows.append((code, v, n, seen, conflict))
-    return rows
+        rows[code] = dict(code=code, value=v, grade='C', count=n, seen=seen, conflict=conflict, source='gloss')
+    return print_fold(rows)
+
+
+def print_fold(rows):
+    """Fold PRINT_WORDS into the gloss-built rows: new sign -> the print's value(s), '|'-joined at M when the
+    print reads it with more than one letter; agreeing sign -> count and word added, source 'gloss+print';
+    disagreeing sign -> value kept, disagreement in `conflict` (the position is an EXCEPTIONS row)."""
+    new = collections.OrderedDict()
+    for gid, toks, word, letters in PRINT_WORDS:
+        assert len(toks) == len(letters), (gid, toks, letters)
+        for t, l in zip(toks, letters):
+            if l is None:
+                continue
+            if t in rows:
+                r = rows[t]
+                if r['value'] == l:
+                    r['count'] += 1
+                    r['seen'] = ', '.join(sorted(set(r['seen'].split(', ')) | {word + ' (print)'}))
+                    r['source'] = 'gloss+print'
+                else:
+                    r['conflict'] = '; '.join(x for x in [r['conflict'], f"{l} x1 ({word}, print)"] if x)
+            else:
+                new.setdefault(t, collections.OrderedDict())
+                new[t].setdefault(l, []).append(word)
+    out = list(rows.values())
+    for code, vals in new.items():
+        value = '|'.join(vals)
+        grade = 'C' if len(vals) == 1 else 'M'
+        count = sum(len(w) for w in vals.values())
+        seen = ', '.join(w + ' (print)' for ws in vals.values() for w in ws)
+        conflict = '' if len(vals) == 1 else 'one sign, ' + ', '.join(f'{v} in {w[0]}' for v, w in vals.items())
+        out.append(dict(code=code, value=value, grade=grade, count=count, seen=seen, conflict=conflict,
+                        source='print'))
+    return out
 
 
 def all_groups():
@@ -98,10 +191,13 @@ def outputs():
     key_rows = build_key()
     out['key_5186.tsv'] = (
         "# Key for ciphers/rah-morillo-1817 item 3 (RAH 9/7666, record 5186, f.420r), read from the leaf's own\n"
-        "# interlinear period decipherment (grade C, CLAUDE.md rule 4 -- see build_key_5186.py docstring).\n"
+        "# interlinear period decipherment (source 'gloss', grade C, CLAUDE.md rule 4 -- see build_key_5186.py\n"
+        "# docstring), with the 2021 print's words folded in (source 'print'; " + PRINT_SOURCE + ";\n"
+        "# GAPS-rah-morillo-1817, 2 Oct 2026). A '|' value is one sign the print reads with several letters (M).\n"
         "# Generated by build_key_5186.py; do not edit.\n"
-        "code\tvalue\tgrade\tcount\twords_seen_in\tconflict\n" +
-        ''.join(f"{code}\t{v}\tC\t{n}\t{seen}\t{conflict}\n" for code, v, n, seen, conflict in key_rows)
+        "code\tvalue\tgrade\tcount\twords_seen_in\tconflict\tsource\n" +
+        ''.join(f"{r['code']}\t{r['value']}\t{r['grade']}\t{r['count']}\t{r['seen']}\t{r['conflict']}\t{r['source']}\n"
+                for r in key_rows)
     )
     ct_rows = []
     for gid, toks, word in all_groups():
@@ -115,12 +211,22 @@ def outputs():
         "# '/' = group break (period-written dots after each numeral are not carried as tokens).\n"
         "line\tidx\tsign\n" + ''.join(f"{gid}\t{i}\t{s}\n" for gid, i, s in ct_rows)
     )
-    gloss_rows = [(gid, word) for gid, toks, word in all_groups()]
+    print_by_id = {gid: word for gid, _, word, _ in PRINT_WORDS}
+    print_by_id.update(PRINT_WORDS_KEYED)
+    gloss_rows = [(gid, word, print_by_id.get(gid, '')) for gid, toks, word in all_groups()]
     out['gloss_5186.tsv'] = (
         "# The interlinear plaintext word as read for each group (illustrative reference only -- decode_key.py\n"
-        "# does not consume this file, it decodes ciphertext_5186.tsv mechanically through key_5186.tsv).\n"
+        "# does not consume this file, it decodes ciphertext_5186.tsv mechanically through key_5186.tsv), and the\n"
+        "# word the 2021 print gives at the same place (" + PRINT_SOURCE + ", modernised spelling).\n"
         "# Generated by build_key_5186.py; do not edit.\n"
-        "line\tgloss_as_read\n" + ''.join(f"{gid}\t{word}\n" for gid, word in gloss_rows)
+        "line\tgloss_as_read\tprint_2021\n" + ''.join(f"{gid}\t{word}\t{pw}\n" for gid, word, pw in gloss_rows)
+    )
+    out['exceptions.tsv'] = (
+        "# Per-position overrides for tools/decode_key.py (decode.json 'exceptions'): V9-MOR's five M tokens\n"
+        "# (AUDIT.md section 3) and the three occurrences of sign 22, which the 2021 print reads with three\n"
+        "# different letters. Generated by build_key_5186.py; do not edit.\n"
+        "line\tpos\tsign\tvalue\tgrade\treason\n" +
+        ''.join(f"{gid}\t{pos}\t{sign}\t{v}\t{g}\t{why}\n" for gid, pos, sign, v, g, why in EXCEPTIONS)
     )
     return out
 
