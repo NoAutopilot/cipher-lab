@@ -358,3 +358,51 @@ Read so far: 73 of 73 code-group occurrences (57 distinct) read at H and at C, w
 - [x] image-check: images 06-07 read in two independent passes (2x-4x) and reconciled at up to 8x, settling 27 disagreements, none on a page number. 2 letters stay doubtful. Image 06 re-fetched 2 Oct 2026 at HTTP 200 and the same size, so no larger image exists (NOTES "Failure log")
 - [ ] retry: once the strip keys are re-derived, rerun the 4 runs, regrade the 2 doubtful letters, and move the two runs read with Tomokiyo's keys onto our own derivation
 Verdict: keep going: 3 internal gaps; cheapest next: file the ASKS row for library copies of the remaining dictionary editions (Toronto, Harvard, Dublin; pages 14, 79, 272, 405, 438), ~$1
+
+## Web and blog check (GAPS-wellington-maitland-1812, 2 Oct 2026)
+
+The intake gate's required open-web and blog comment-thread step (`.claude/briefs/check-solved.md`, CHECK-SOLVED-WEB,
+28 Sept 2026), run 2 Oct 2026 01:58-02:10 UTC before the Verdict step below. Rule 10 wording throughout: a search
+result, never a novelty verdict.
+
+Plain web searches (5):
+1. `Wellington Maitland "2 September 1812" cipher` -- ship and biography pages (HMS Wellesley, Thomas and Charles
+   Maitland), Oman vol. 5 on Gutenberg, a brewminate.com spies overview: nothing on this despatch.
+2. `Spink "lot 1184" Wellington Maitland cypher dictionary code` -- the Spink sale 26066 listing page (opened below),
+   Wikipedia "Book cipher" (Scovell's page/column/entry scheme, no edition named): nothing new.
+3. `"Villa Castin" Maitland cypher Wellington Alicante strips` -- Battle of Castalla, villa rentals: nothing.
+4. `"Wellington's Polyalphabetic Cipher with a Dictionary Code"` (the folder's descriptive title, Tomokiyo's) --
+   generic polyalphabetic-cipher pages only; Tomokiyo's own page not returned by this engine.
+5. Model-solve announcements, `Wellington Maitland 1812 dictionary code cipher solved Claude OR GPT OR Gemini` --
+   Cyphral Distich (1653) and WWI/Enigma announcements only, none about this item.
+
+Blog site searches (3 by the engine, 3 on the blogs' own search boxes):
+- Cipherbrain: `site:scienceblogs.de/klausis-krypto-kolumne Wellington Maitland 1812 Scovell dictionary` -- ten
+  unrelated posts (incl. "A dictionary code challenge", 29 Oct 2018, opened: a 10,000-word list challenge, 12
+  comments, no Wellington/Maitland/Scovell). The blog's own search `?s=Scovell` -- 4 hits: "A coded dispatch from
+  1812 and its exciting story" (22 June 2021, German and English versions, opened: Clarke to Caffarelli, 19 Oct 1812,
+  French Grand Chiffre; 14 comments on the German page, Norbert and Karsten Hansky recommend Urban's book on
+  Scovell, no comment names a dictionary edition or a British 1812 code) and two pigpen posts.
+- Cryptiana blog: `site:cryptiana.blogspot.com Wellington Maitland` -- the engine returned no blogspot pages; the
+  blog's own search `search?q=Maitland` -- one post, "Wellington's Code/Cipher during the Peninsular War"
+  (8 Sept 2026, 1 comment). Opened live: the single comment is Tomokiyo's own (9 Sept 2026, 21:33), the Hayes/Lasry
+  credit already quoted in the 20 Sept sweep; no dictionary edition named, no claim that the nulls or the strip
+  permutation are found. Tomokiyo's article page (cryptiana.web.fc2.com/code/maitland.htm) opened live: first
+  posted 8 Sept 2026, last modified 19 Sept 2026, no section added since, still "The indication of these nulls as
+  well as the indication of the permutation of the five strips remain to be discovered." On-disk snapshot
+  `sources/cryptiana/` grepped first (0 requests): only maitland.htm and the blog index mention Maitland.
+- Cipher Mysteries: `site:ciphermysteries.com Wellington Maitland 1812 Scovell dictionary cipher` -- Beale, De
+  Lancey and BL posts, none on this item; the site's own search `?s=Scovell` -- one post, "The Lady Magdalene De
+  Lancey ciphers" (9 Nov 2011, opened: 18 comments, Scovell named once as Napoleon's codebreaker, no Maitland,
+  no dictionary code, no strips).
+
+Other hits opened: Spink sale 26066 listing (www.spink.com/auction/26066?page=10): lot 1184 shows **SOLD, GBP
+42,000** (hammer, read 2 Oct 2026); the listing text names no cipher, dictionary or code. Aymeloglu's live README
+(raw.githubusercontent.com): no Wellington/Maitland/Scovell/Peninsular line (the SHORTLIST.md pointer of 19 Sept
+stands as recorded).
+
+Result: no decipherment or plaintext of this item located by these queries on 2 Oct 2026 beyond the
+Hayes/Lasry/Tomokiyo partial work already recorded above (Gurwood's printed clear text and the clerk's
+interlinear reading are the plaintext, already on file at grade C and H). Status word unchanged: partial. Requests:
+scienceblogs.de 4, cryptiana.blogspot.com 2, cryptiana.web.fc2.com 1, ciphermysteries.com 2, spink.com 1,
+raw.githubusercontent.com 1, plus 8 web-search calls; no 403/429/challenge.
