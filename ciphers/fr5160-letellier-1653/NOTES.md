@@ -1,6 +1,7 @@
 # BnF fr.5160 — Loménie de Brienne (père et fils) to Abel Servien, 1653-1661
 
 Status: open
+Full-text search by this worker (GF-A2-8, 2 Oct 2026), Internet Archive be-api over the whole collection and the Google Books API (country=US): "pour le ruiner dans l'esprit de monsieur son fils" (f.87) and "mesintelligence d'entre le filz et la mere" (f.67) quoted, 0 exact hits each; Brienne + Servien + chiffre + 1659, 4,905 IA and 55 Google Books hits, top hits Chéruel's Mazarin volumes and Cosnac (titles only, these hits were not opened). No printed edition of the Brienne-Servien 1653-61 letters is known here; the volume's Gallica images (btv1b9060495t) are the text.
 
 > **Verifier correction, 24 Sept 2026 (AUDIT.md):** f.86 and f.88 are N0 (their contemporary decipherment is f.87).
 > The recipient of the 1659 letters cannot be **Abel** Servien, who died on 17 Feb 1659. It is almost certainly his brother
@@ -1961,3 +1962,62 @@ page, Gallica SRU queries used only to try to relocate the ark before the findin
 IIIF image fetches at 1.8s apart, one retry each on ~10 connection resets, all recovered except the 4 canvases named
 above); archivesetmanuscrits.bnf.fr 1. No DECODE, no credentials, no subagents (fetch/eye-check split across
 foreground calls and this worker's own background shell jobs, not subagents). Well under the $4 stall-alarm cap.
+
+## Web and blog check (GF-A2-8, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard):
+1. `Brienne Servien lettres chiffrées 1653 1661 "fr. 5160"` (sender + recipient + dates + shelfmark): NLI MS UR records,
+   a BL record, the PMLA abstract "Pattern for nobility: the comte de Brienne", Biblissima's Clairambault 576, a Droz
+   article, a substack on the Brienne trunk (The Hague postmaster Simon de Brienne, 1689-1706, a different Brienne).
+   None names fr.5160 or a decipherment of these letters.
+2. `"français 5160" Servien Brienne chiffre déchiffrement` (shelfmark + cipher word): ARCSI bulletins, CNUM, CCFr
+   records for Servien and Brienne manuscripts, the Cambridge catalogue of the Brienne manuscripts (c.1700), Histocrypt
+   papers. No fr.5160 hit. The one Histocrypt paper the search surfaced next to Servien (ecp.ep.liu.se article 392)
+   was opened: Dinnissen, "Prey to a Privateer. Two Portuguese Ciphertexts from 1649". It does not name Servien,
+   Brienne or 5160.
+3. `"Dechiffré de la lettre de M. le Comte de Brienne" 1659` (the f.87 decipherment's own heading, quoted): no exact
+   hit. Only NLI records, a Défense library PDF and press pieces on the Brienne trunk.
+4. `Loménie de Brienne letters to Servien Turin 1659 cipher Savoy` (descriptive title): Bodleian/Cambridge agent
+   pages, the Abel Servien Wikipedia article (d. 17 Feb 1659, which matches the AUDIT.md recipient correction to
+   Ennemond), an i-cirena page on the Servien biography, and a feedbagel news item on a "17th-century diplomatic
+   cipher letter decrypted". Going by its title and snippet, that item is not about Brienne or Servien. Nothing
+   on these letters.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de`), "Servien Brienne cipher letter": unrelated posts, plus "Can you decipher this
+   letter written by Louis XIV?" (31 Jan 2019). That one was opened and its comment thread read: it is Louis XIV to the
+   Duke of Chaulnes, 1693, a different item; the comments discuss Rossignol/Louvois codes and never mention Servien,
+   Brienne or fr.5160.
+6. Cryptiana (`site:cryptiana.blogspot.com`, `cryptiana.web.fc2.com`), "Servien Brienne chiffre 1659": no results.
+   (The local mirror `sources/cryptiana/web/louisxiv0.htm` was already read in the 24 Sept passes, NOTES.md line 226.)
+7. Cipher Mysteries (`site:ciphermysteries.com`), "Servien Brienne cipher": only Chaocipher and Voynich posts.
+No decipherment or plaintext of any fr.5160 letter was found on the open web or in a blog comment thread.
+
+## Premise check (GF-A2-8, 2 Oct 2026)
+
+(a) Decipherments the folder mentions: **found, and both already used.** f.87 ("Dechiffré de la lettre de M.r le Comte
+de Brienne du 21 9.bre 1659") is the contemporary decipherment of the f.86/f.88 cipher. AUDIT.md classes those
+readings N0, and they are calibration, not open work. f.68r is the enciphered passages of f.67 (10 Oct 1659) written
+out in clear (section "f.67 aligned to f.68r"). AUDIT.md's V5b re-class makes f.67 N0 as well. The catalogue's
+"souvent accompagnées du déchiffrement" has therefore been confirmed twice in the 1659 band. Every other mention
+in NOTES.md ("no interlinear or marginal decipherment" for the 1653 band, canvases 11/12/24/25/30-33 and the
+37-159 / 160-367 walks) is a recorded absence. This pass did not re-open the images. What stays open is the 1653
+band (folios 1-2 and 9, 752 sign tokens, `real_f1f9.txt`), where no decipherment has been located.
+(b) Other solvers' working files: **not found for this volume.** Fresh shallow clones (2 Oct 2026) of dbourdeau/
+cyphersolver and aaymeloglu/unsolved-ciphers, grepped for servien|fr.?5160|brienne:
+- Bourdeau: README line 240 is the Brienne collection NAF 6984 (Harlay pièces, a different shelfmark); the gallica_sweep
+  and rohan1636 hits are other volumes. `letellier/` is the Le Tellier to Castelnau 1657 item already noted on
+  24 Sept, not fr.5160.
+- Aymeloglu: `catalogue/decode-catalog.csv` lists four DECODE records for **Abel Servien, Turin/Carignan 1632** (BnF
+  Baluze 155 ff.105-140, status "Decrypted"). These are a different correspondence 21-27 years earlier, so no rendering
+  or applied key of fr.5160 exists there. They are a possible key-family lead for the Servien Turin embassy, not a
+  decipherment of this item. Cited, not copied.
+(c) Physical neighbours: **f.87 and f.68r, as in (a).** For the 1653 band, the folder's own records show canvases 4-36
+walked densely and 37-367 walked at thumbnail resolution, with no decipherment leaf found beside f.1-2 or f.9. The
+facing pages of f.1 and f.9 at native resolution were **not re-viewed this pass**: the earlier native views were of
+canvases 11/12 and 24/25 only. Doing that is the open item under (c), about 4 Gallica requests.
+(d) Recipient's side: the recipient is Servien (Ennemond at Turin for 1659, per AUDIT.md). A recipient-side edition
+would be the Savoy court's papers or Servien family papers. Nothing printed was found by the searches above, and
+no Turin (Archivio di Stato) edition was searched. **Not found / not searched** beyond the open-web and
+full-text passes logged here.
+Requests: be-api.us.archive.org 3, www.googleapis.com 3, ecp.ep.liu.se 1, scienceblogs.de 1, github.com clones shared
+with the other three GF-A2-8 targets, WebSearch 7.
