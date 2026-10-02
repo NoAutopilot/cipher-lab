@@ -1,4 +1,5 @@
 partial
+Editions read in this repository for these letters (not by GF-A2-1): Demandt, HessJb 38 (1988) p.78 nrs. 113/115 (A2, Google Books snippets: clear text of 57 only) and Japikse, Correspondentie I chronological list pp.386-389 (A3, Huygens retroboeken viewer: ends Sept 1561, prints neither 53 nor 57); sections A2/A3 below and AUDIT.md.
 
 # August van Saksen (Sachsen) and Willem van Oranje, three cipher letters/postscripts, 1561-1564
 
@@ -453,3 +454,56 @@ Read so far: 699 of 904 cipher tokens firm (77.3%: C 461 + S 238), M 205, U 0, f
 - [ ] image-check: R21 read 126 once at native resolution; S1 settled pass disagreements on 100 dpi crops (settle_53.py, settle_57.py). Not done: native-resolution passes for 53 (p1 and p2) and 57 p3; the SO-SAXONY-53-57 spots (l.2, l.7, L10 pos 26) and SO-SAXONY-126 spots (adesn, slagen, down-arrow) never applied. Planned: native crops and two passes for 53 and 57, a native spot re-check on f.139 (against images/00126_p4.png / 00126.pdf, not images/00053_p2.png). "While waiting" bullet 1 (run key_53 on f.266v) is stale: F1 did it 24 Sept 2026
 - [ ] retry: no unread groups (U 0); decode_key.py --check exits 0 on an unchanged key and transcription (unchanged since 24 Sept 2026). Planned: rerun decode_key.py --check and regrade all three letters after each image-check or key extension above
 Verdict: keep going: 6 internal gaps (the WVO 58 route of two of them closed 2 Oct 2026, NEXT-AVS); cheapest next: clear the intake gate (A2-AVS, 2 Oct 2026, exit 1) with a check-solved web-and-blog pass (Cipherbrain, Cryptiana blog, Cipher Mysteries comment threads) plus an edition-citation pointer line in the head, ~$1; then compare WVO 175's glossed interlinear runs (images/00175_p1-p8.png, on disk, no network) sign by sign with System A's word-sign inventory for 57's OQ/THE/BOX, ~$2; then fetch WVO 124 (1 request) for 126's key-level M, ~$5
+
+## Web and blog check (GF-A2-1, 2 Oct 2026)
+
+Run 2 Oct 2026, 21:15-21:25 UTC, by worker GF-A2-1 (account 2, LANE-A2PUSH). Plain web searches (one search engine):
+1. `"August" Sachsen "Wilhelm von Oranien" 1561 Chiffre Brief Geheimschrift` (sender + recipient + date) -- hits: WVO edition PDFs
+   01309/05175 (other letters), Sternberg *Land Nassau*, BMGN 2009, generic Geheimschrift PDFs, and Anne-Simone Rous,
+   "Geheimschriften in sächsischen Akten der Neuzeit", *Neues Archiv für sächsische Geschichte* (nasg.publia.org, article 781,
+   pp. c.243-253). Rous opened and read in full (pdftotext): see the Premise check, item (a) -- a period cipher alphabet "zwischen
+   dem sächsischen Kurfürsten und dem Prinzen von Oranien" in Dresden Loc. 8485/4 fol. 25, 44; no decipherment of any letter in
+   this folder.
+2. `"Locat 9941" Dresden Oranien cijferschrift OR Chiffre` (shelfmark + cipher) -- hits: WVO PDFs 00010-00078 and one DDB item;
+   catalogue scans only, no solution text.
+3. `Willem van Oranje August van Saksen cijferschrift brief 1564 ontcijferd` (folder title, Dutch) -- hits: school material,
+   Prinsenhof Delft, WVO edition PDFs for other letters, the WVO project pages; nothing on 53/57/126.
+4. `"Kurfürst August" "Oranien" Chiffrenbriefe entziffert 1561 Torgau Breda` (distinctive terms) -- hits: Rous again, Groen
+   Archives III on DBNL (1567-1572, outside these dates), CSP Foreign 1579, unrelated cipher pages; nothing on these letters.
+5. `"8485/4" Characteres verborgene Ziphern Hauptstaatsarchiv Dresden` (Rous's key file) -- only WVO PDFs and one DDB item;
+   the file's own online catalogue record not located this pass.
+No distinctive decoded phrase was searched in quotes beyond the above: the readings are German chancery prose with no
+phrase distinctive enough to search (e.g. 'Churfurs-', 'Keiser').
+Blog site searches: **Cipherbrain** (`site:scienceblogs.de klausis-krypto-kolumne Oranien Sachsen`) -- author index pages
+only and a 1797 cryptogram post, no post on Orange/Saxony; **Cryptiana blog** (`site:cryptiana.blogspot.com Orange Saxony
+cipher`) -- no blogspot hit at all (search returned Wikipedia's list, a Cipherbrain post on Tomokiyo's list, Tartu items);
+Tomokiyo's dutch.htm page was read in full on 24 Sept 2026 (check-solved item 3) with no mention; **Cipher Mysteries**
+(`site:ciphermysteries.com William of Orange cipher Saxony`) -- one plausible-looking hit, ciphermysteries.com/?p=4842,
+opened: "Historical Cryptography Conference in Gotha" (Feb 2013), post and comments read, no mention of Orange, August or
+these letters. No comment thread anywhere carries a decipherment or plaintext of 53, 57 or 126.
+Requests: nasg.publia.org 1 (plus 2 redirects from journals.qucosa.de), ciphermysteries.com 1, search engine 6.
+
+## Premise check (GF-A2-1, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found, all already used or already pending; one key lead not on file.**
+Opened in the files: 74 f.19 and 98 f.67 are the contemporary decipherments of the siblings and are the key sources for 57
+and 126 (R21, key_74/key_98); plaintext_98.txt ff.68-69 is an enclosed newsletter, not 98's decipherment; 126's interlinear
+"e e r e" contradicts the key (R21); none of these decipher 53, 57 p3 or 126 p4 themselves. Pending outside: Dresden
+'Zettel' of 57 (Loc. 9941/3 Bl. 268r-269v, reply pending) and the KHA Japikse copies and minute of 126/53 (ASKS 67).
+New lead from the web check: Rous (NASG, above, footnote 9) reports that Dresden, Geheimer Rat, **Loc. 8485/4** "Characteres
+vnnd verborgene Ziphern so inn der Churfürstlichen sächsischen Canzley ... gebraucht worden seindt" holds, among many
+nomenclators, "eines [Alphabets] zwischen dem sächsischen Kurfürsten und dem Prinzen von Oranien" at **fol. 25, 44**. This
+is a period key sheet for the very correspondence (which system -- A, B or 53's -- is not said, nor the date); it is a key
+source, not a decipherment of any of the three letters, so it does not make the item found-solved. Not in this folder, not
+in any ciphers/*/NOTES.md (grep '8485', 2 Oct 2026). Next: ask Dresden for fol. 25 and 44 alongside the pending 57 'Zettel'
+request (outreach/dresden-wvo57-minute.md) -- an owner-side step, the parent decides.
+(b) Other solvers' working files -- **not found.** Shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers
+(2 Oct 2026, 21:16 UTC) grepped for August/Orange/Oranien/Sachsen/Saxony pairings and 'wvo': no target folder, no
+rendering, no key for this correspondence in either (cs/targets has no Saxon or WVO folder; Aymeloglu: no hit; cited only).
+(c) Physical neighbours -- **partly checked, nothing found.** The WVO scans are per letter; 58 (Loc. 9941/3 f.271-272, the
+next letter of the same file) was fetched and read 2 Oct 2026 (NEXT-AVS): its decipherment is of 58 only. The clear
+pages beside each cipher (53 p2 autograph, 57 p3 signed clear postscript, 126 pp.1-3) were checked and none is the
+decipherment (A2, inventory.tsv). Leaves of Loc. 9941/3 and 8510/5 outside the WVO PDFs are not online (not viewed).
+(d) Recipient side -- **not found.** 53 and 126 went to August (Saxon side: von Weber, Kluckhohn I, Goetz 1891, Ritter,
+Kruse read in the print sweep, AUDIT.md V3/A2/A3/D1/D2); 57 went to Willem (Groen, Gachard, Japikse I, Demandt nrs 113/115,
+Kervyn II read). No recipient-side edition prints a decipherment of the cipher passages.
