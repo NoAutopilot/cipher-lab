@@ -7,19 +7,19 @@
 # ambiguous or single-pass-only; [?] = code never seen in the key source.
 # corrections.tsv (SPLIT-na-janssens-java-1811, 2 Oct 2026): per-position digit reads settled from the
 # native-resolution image override the transcribed token's value (13:11 1194 -> 1192 'et').
-# tokens 163: H 0, C 77, S 0, M 11, I 0, U 75
-1	l' ancien Gouverneur Gal [853] [1121] l' état [130] [1173] [573] [1027]
-2	de [1024] [403] est . [364] re [551] Sont e puis
-3	[1014] ; l' [984] n' [1021] [1039] re que peu de
-4	[176] . alinea les [585] ns [125] A [206] ché [899]
-5	la De [1126] [882] le [50] [270] [708] de l' [987] r
-6	[627] [493] [403] [550] reçu ; il [333] [628] [306] que [364]
-7	[453] [901] qu'il [719] [1136] le débarquer [443] [3] [270] Le seules
-8	[535] [449] de leur mal . si i [110] ai le [929]
+# tokens 163: H 0, C 75, S 0, M 32, I 0, U 56
+1	l' ancien Gouverneur Gal [853] [1121] l' état der [1173] [573] [1027]
+2	de ce [403] est . les re sources Sont e puis
+3	[1014] ; l' armée n' [1021] pillé re que peu de
+4	[176] . alinea les l'Isle de Java ns [125] A [206] ché [899]
+5	la De [1126] [882] le [50] [270] [708] de l' af r
+6	[627] [493] [403] [550] reçu ; il [333] [628] [306] que les
+7	[453] [901] qu'il [719] [1136] le débarquer der [3] [270] Le seules
+8	[535] [449] de leur mal . si i en ai le [929]
 9	i [824] [1121] [449] [467] les [375] en les a [206]
-10	C. [462] [23] ât [983] . [1160] l' ancien Gouverneur Gal part chargent
-11	de [125] [1065] et de la mal é [72] [1169] [1095]
-12	[442] . alinea [443] vaisseaux [645] [335] tous les [476] l' ennemie
-13	[457] [344] un [305] . des Troupes [350] [130] [984] et
-14	[443] [164] ar ri vé a [929] peu vent [514] er
-15	[585] . fin
+10	C. [462] [23] ât l'Empereur . [1160] l' ancien Gouverneur Gal part chargent
+11	de [125] [1065] et de la mal é [72] C' [1095]
+12	[442] . alinea der vaisseaux [645] [335] tous les [476] l' ennemie
+13	[457] [344] un [305] . des Troupes [350] der armée et
+14	der [164] ar ri vé a [929] peu vent sauve er
+15	l'Isle de Java . fin

@@ -1,0 +1,39 @@
+where	table_read	raw_read	settled_code	settled_gloss	conf	basis
+205R:14	802	502	802	commande	H	table clear 8 (no tail); raw first glyph plain 8, no 5-tail
+205R:21	387	317	387	vingt	H	table clear 387; raw middle glyph narrow/blurred, consistent with 8
+205R:32	1023	1123	1023	nd	H	table clear 1-0-2-3; raw low-res
+205R:41	721	921	721	mi	H	table clear 7; raw 7 has descender like the clerk's 7 in 697 (mi-da-ble)
+205R:42	20	30	20	da	H	table clear 20; raw first glyph consistent with 2
+205R:46	511	541	511	le	H	tail on first digit = 5 in both, then two 1s (raw 'u'-like 11); 511=le also 206R cell2
+205R:48	830	130	830	d'	L	table clear 8; raw clearly short 1-stroke (130): clerk's copying difference, table kept
+205R:49	568	565	568	ar	H	table final 8 closed; raw final glyph closed loops = 8 (ar-ri-ver)
+205R:59	893	593	893	puis	H	table first digit 8 no tail; raw blurred
+206L:3	38	31	38	res	H	table clear 38; raw second glyph blurred; 38=re also 206R cell21
+206L:4	651	551	551	sources	H	tail on first digit in both = 5 (stamp overlaps table cell); raw 551 clear
+206L:24	393	395	393	r	H	final 3 in both; 393=r also 207L cell28
+206L:25	656	696	656	ne	H	middle digit has 5-tail in table and raw; gloss 'ne.' (n-e then full stop); 656=ne also 206R cells 9/25
+206L:27	739	709	739	la	H	middle 3 in both; 739=La also 205R cell1
+206L:36	756	256	756	ou	H	first digit 7 with descender in raw, clear 7 in table; 756=ou also 206R cell12
+206L:38	144	164	144	étoit	H	table two clear 4s; raw 2nd and 3rd glyphs alike = 44; gloss reads étoit (old spelling of était), not été
+206L:41	848	148	848	ne	H	table clear 848; raw first glyph looped 8; 848=ne also 207L cell21
+206L:42	560	566	560	me	H	table tailed 5, final open 0; raw final small o = 0
+206L:57	472	475	472	e	H	table clear final 2; raw final glyph 2 with flat foot
+206L:58	338	358	338	Dans	H	table clear 3-3-8; raw blurred
+206R:3	684	614	684	courier	H	table clear 8; raw middle glyph looped, consistent with 8
+206R:7	383	323	383	sa	H	table clear 3-8-3; raw middle looped = 8
+206R:8	861	161	861	si	L	table clear 8; raw first glyph a short 1-like stroke (161): likely clerk's copying difference, table kept
+206R:10	587	517	587	ou	L	table clear 5-8-7; raw middle glyph unresolvable at this resolution (1 or 8)
+206R:12	756	956	756	ou	H	raw first glyph is the clerk's descending 7 (same as 206L:36); table clear 756
+206R:29	689	619	689	le	H	table clear 689; raw middle looped; 689=le also 206L cell33
+206R:32	351	384	354	Je	H	both readers half right: middle digit has 5-tail in both images, last digit is open-top 4 in both = 354; gloss Je
+206R:42	682	612	682	de	H	table clear 8; raw middle looped = 8
+206R:48	448	443	448	la	H	table clear final 8; raw final blurred; 448=la also 206L cell35
+206R:57	219	249	219	ce	H	table clear 1; raw 2-1-9
+207L:10	?	110	110	eu	H	table cell written 1-1-0 (two short strokes + o), raw 110 agrees
+207L:18	682	652	682	de	H	table clear 682; raw middle blurred (3/5/8); 682=de also 206R cell42
+207L:19	585	585	585	Java)	H	both 5-8-5 with tails on 5s; gloss 'Java)' with closing parenthesis (Île de Java)
+207L:37	851	351	851	prêt	H	table first digit clear 8; raw first glyph looped 8 not 3; gloss prêt with final letters struck through
+207L:3	960	-	960	(Près	H	gloss-only check: '(Près' with opening parenthesis and accent over e
+207L:12	1039	-	1039	piter	L	gloss-only check: reads pi + crossed t + er ('piter'); hand unclear, not 'prier'
+207L:20	240	-	240	Rien	L	gloss-only check: capital looks like R (Rien ne doit...), B not excluded visually
+207L:21	848	-	848	ne	H	gloss-only check: clear 'ne', matches 848=ne on 206L
