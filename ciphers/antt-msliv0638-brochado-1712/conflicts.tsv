@@ -26,7 +26,7 @@ m0290	Passage 2a	0	0		no resolved tokens (entry had no usable anchors)
 m0291	Carta 94	0	0		no resolved tokens (entry had no usable anchors)
 m0291	Carta 96	22	19	86%	[difflib-aligned, length gap: expected 22 resolved letters, 42 keyed decode values] e!=d; h!=d; e!=s
 m0291	Passage 3a	0	0		no resolved tokens (entry had no usable anchors)
-m0292	Carta 101	5	4	80%	[difflib-aligned, length gap: expected 5 resolved letters, 28 keyed decode values] e!=m
+m0292	Carta 101	5	4	80%	[difflib-aligned, length gap: expected 5 resolved letters, 29 keyed decode values] e!=m
 m0293	Carta 106	0	0		no resolved tokens (entry had no usable anchors)
 m0293	Carta 107	0	0		no resolved tokens (entry had no usable anchors)
 m0293	Passage 2a	0	0		no resolved tokens (entry had no usable anchors)

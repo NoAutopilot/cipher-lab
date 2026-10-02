@@ -5,7 +5,7 @@
 # no spec/judge for this target yet, and every entry here is already given in plaintext by the
 # manuscript's own Deciffrada line (see plaintext_appendix.tsv); see conflicts.tsv for the per-entry
 # agreement between this decode and that plaintext.
-# tokens 1702: H 0, C 1419, S 0, M 244, I 0, U 39 (U = code with no key.tsv row; M = key value held by <65% majority)
+# tokens 1702: H 0, C 1445, S 0, M 220, I 0, U 37 (U = code with no key.tsv row; M = key value held by <65% majority)
 m0280 Carta 13 | estesmnistrosestamquemosconuencemaisospdadehesemairiteeitesestamaperdereaseguiroceucroiectoothesogreirodauidaedahoneaeesigiamasuaginganca
 m0281 Carta 15 | da·moutqu·a·ainhamndoueaceogoeae·eeicoehgmacaetacom·eimrntosamandauaeesocesoquaseuco·a
 m0281 Carta 23 | sairdebulingbrocnossoinimigo
@@ -32,11 +32,11 @@ m0289 Carta 89 | atndaquetstohemen·rabomseralhdmetam·edo
 m0289 Carta 91 | segundoprometeapoucauidadam
 m0289 Carta 92 | esteutlhacohstadeclaradofrancese·umdhstesdias·antandoe·ca·ado·docbt·ssehum·ilpamdeprauoissescomfbeca
 m0290 Carta 93 | enamhstae·boainte··genciacomoafortepulinrbrocrr
-m0290 Passage 2a | quecuel·aouoshupdpoderiamestarnhsete·poforadosunddoudoein·sterioneuundoasindispo··coesdahihasuioldnciasdos··nistros
+m0290 Passage 2a | quecuel·aouoshupdpoderiamestarnhsete·poforadosunddoudoein·sterioneuundoasindispo·icoesdahihasuioldnciasdos··nistros
 m0291 Passage 3a | pel·osnh·ucs·entmadadoprinciphdehanouerporescociaparapreuiniradopc
 m0291 Carta 94 | pudesseenueruonharestarainha
 m0291 Carta 96 | crdrogostocomqudficoodiabolduaotdssoureiro
-m0292 Carta 101 | masopudnhapprnddntreportadah·
+m0292 Carta 101 | masopudnhapprnddntreportadahi
 m0292 Carta 105 | sepordebocheconhecidoporhumpobretalento
 m0292 Passage 2a | emquesoentrouoprincipe
 m0293 Carta 106 | estahiuiuerdopddebolinobroupsermosudndidos
