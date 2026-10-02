@@ -90,6 +90,35 @@ identified, the catalogue's date and senders corrected. The "first verified N3" 
 Orange 1572 detector candidate also fell (partial decipherment printed 1842). Zero unique solves today; two
 over-claims prevented by the gates before anything left the repository.
 
+## Parent handoff (account-4, session_01SEzoee67SivPooFpTkxMme), from 1 Oct 2026 23:25 UTC, kept current
+
+New account joined 1 Oct 2026 23:25 UTC (clock read), depth 0 (created from the UI). Role field `account-4 parent`;
+the container's CIPHERLAB_ACCOUNT reads `ytbiz` and cannot be changed from inside, so every ROOM line carries
+account-4 in its role field. Scope given by the person: breadth specs, quick next steps on open targets, check-solved
+on queue items; off limits: debosnys-1883, the 25 partial targets and espagnol142-mercy-1648 until account 3's
+FINISH-PASS lands (about 03:00 UTC 2 Oct), any target with a ROOM claim under six hours old from another account;
+outreach drafted only, never sent. Model floor: Fable 5.1, Opus 5.5 as the only fallback. Check-in: self-bound
+send_later, re-armed each firing (find it with list_triggers, name "account-4 parent check-in N").
+
+**Finding at start (23:34 UTC):** every open/runnable NEXT-STEPS.tsv row tried (10 of 10) fails
+`tools/intake_gate_check.py` for one reason only -- the 28 Sept 2026 CHECK-SOLVED-WEB blog-check step postdates
+their verdicts. The backlog is gated on that step; it is run per target as a WEBCHECK worker (brief
+`.claude/briefs/runs/2026-10-01-account4-webcheck.md`, real cost about USD 4.5 each, cap now 5).
+
+**Check-in 1 (00:11 UTC 2 Oct):** 11 workers done and ledgered (USD 62.6): WEBCHECK passed the gate on blitz,
+hellen, huntington, decode-4450, oldenbarnevelt, berthier, maurice-rupert; **fr3625-lauriere-1593 is found-solved**
+(setsunaatto with Tomokiyo key no.57, dbourdeau/cyphersolver issue 13 29 Sept 2026 and PR 15 merged 30 Sept; the PR
+thread names a key57 alphabet swap as the likely cause of NX-LAU3's 4/12) -- NEAR.md row closed, status.json `near`
+synced, any later reading N0; LAU-U3U4 had already settled f.58r (138 numerals 85H/37M/16L) and run the key57 control
+(real -0.930 vs 20 shuffles mean -0.957, GATE FAIL) at 1.6x its cap, briefed before the gate ran (parent's error,
+ROOM 23:34). BER-FRCORP built tools/data/fr1810 (4.82M letters; LOO false-negative at N=325 19.5 pct, folds 2-59,
+beside fr18's 20.3 pct, folds 0-95.5 -- neither reliable at that N on the blended number). Live after check-in 1:
+HEL-T2, D4450-TAIL, OLD-DKEY, BLZ-FR2, WEBCHECK riksarkivet-r4282-1628 and ormond-arran-1678, LAU-KEYSWAP (the PR 15
+correction re-tested on our f.58r transcription, a key-table contribution). Held, not run: HUN-108B (huntington is
+AUDIT N0 via the 108(B) duplicata; a second read of M tokens adds confidence only -- skipped, ledgered as such).
+Breadth specs with empty cheap_test_done: two benchmark placeholders (by design) and three partial targets whose
+first test already ran (bookkeeping after account 3's pass).
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.

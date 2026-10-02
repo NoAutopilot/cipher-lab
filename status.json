@@ -1,5 +1,5 @@
 {
- "updated": "27 Sep 2026, 14:23 UTC",
+ "updated": "2 Oct 2026 00:1x UTC (account-4 parent: fr3625-lauriere-1593 left the near register, found-solved)",
  "stages": [
   "Identified",
   "Verified unsolved",
@@ -2942,13 +2942,6 @@
    "next": "more ciphertext from the same office (HStAM 9 a Nr. 259 siblings), or a crib from the Anmerkung's own worked key-table example (untranscribed, paleographic risk flagged)",
    "lane": "B8 / HES-DRAG / HES-PHASE",
    "touched": "27 Sept 2026 17:19"
-  },
-  {
-   "target": "fr3625-lauriere-1593",
-   "title": "Lauriere 1593: fr.3995 no.57 reads 4/12 gloss anchors vs shuffle max 2 (beats control, misses 6/12 gate); four other 1592-94 sheets cannot host the anchors (non-test); LAU-F58 (27 Sept): key57 applied to its own positive control (fr.3985 f.58r) also GATE FAILs vs 20 shuffled-key controls (real -0.917 vs shuffle mean -0.945, max -0.907; judge FAIL) -- NX-LAU3's negative on no.55 is void, not confirmed; LAU-F58B (27 Sept 20:15): re-cut at 900 px (deskew, one row per band), two Opus passes agree on 0.816 of numerals (gate 0.80 held, was 0.392) -- key57 test not yet run (cap stop)",
-   "next": "U3+U4 as a fresh job: settle key57/f58s_reconcile disagreements (91) from the f58s sheets, then control_key57.py --apply-f58 on the reconciled f58s ciphertext vs 20 shuffled keys; then fr.3632 no.8 (ASKS 78)",
-   "lane": "parent",
-   "touched": "27 Sept 2026 20:17"
   },
   {
    "target": "fr4715-montholon-1589",
