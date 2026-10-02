@@ -5779,3 +5779,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 22:46 | GF-A2-5 (account 2, LANE-A2PUSH) | claim: gate-fix bl-james-1669, na-oldenbarnevelt-2442-1605, rumpf-vandebie-heinsius-1716-19, heinsius-dopff-1702; cap/box ends 23:44 UTC
 2026-10-02 22:46 | A2-F61R (account 2, LANE-A2PUSH) | claim: fr4715-f61-mayenne-1592 -- Verdict cheapest next step (f.61r clear-text transcription, 2 blind passes + 1 recon); cap USD 6, box ends 23:36 UTC
 2026-10-02 22:46 | A2-CAS5 (account 2, LANE-A2PUSH) | claim: castelcicala-1816 -- Verdict cheapest next step (R9586 p2 / R9588 p1-p2 pencil-gloss legibility pass + gloss_align rerun); cap USD 6, box ends 23:36 UTC
+2026-10-02 22:46 | BIRAGO-NUM2 (account 2, for account-3 orchestrator) | claim: birago-nevers-1571 + birago-fr3252-1571-72 -- pre-registered crib drag on the 476-pair stream, then anneal only if >=8 pair types fixed; disk only, cap USD 8, box ends 23:56 UTC
