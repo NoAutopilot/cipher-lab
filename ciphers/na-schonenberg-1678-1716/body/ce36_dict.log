@@ -1,0 +1,12 @@
+corpus es18: 7 files
+corpus es17c: 3 files
+word list: 27593 folded types at freq >= 2
+  L04 pos17  c:zyrcunstanzyas (45)  e:zyreunstanzyas (0)  -> c
+  L06 pos12  c:con (13557)  e:eon (17)  -> both
+  L10 pos10  c:ocuryr (7)  e:oeuryr (0)  -> c
+  L14 pos7  c:sobrescryto (2)  e:sobreseryto (0)  -> c
+TARGET: 3 of 4 occurrences c-only (e-only 0, both 1, neither 0)
+CONTROL (a) label shuffle, 20 seeds: score min 0 max 3 mean 1.45 p95 2; 1 of 20 at or above target
+CONTROL (b) position shuffle, 20 seeds: c-only count min 0 max 2 mean 0.20; 0 of 20 at or above target
+CONTROL (c) known answer: 38 positions, decisive 15, right 15 wrong 0, accuracy 1.000; true c {'both': 1, 'right': 1}; true e {'both': 17, 'right': 14, 'neither': 5}
+VERDICT: does not clear the pre-registered gate -- code 36 stays M
