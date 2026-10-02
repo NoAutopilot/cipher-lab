@@ -141,7 +141,7 @@ def main():
         r2, rk, mu2, sd2, mx2, z2 = shuffle_test(model, cp, m, a.shuffles, rng)
         firsts += rk == 1; zs.append(z2)
     if a.windows:
-        print(f"POWER CONTROL: {a.windows} it16dip windows, same passage lengths, err {a.err:.2f}: real key rank 1 in "
+        print(f"POWER CONTROL: {a.windows} {a.corpus} windows, same passage lengths, err {a.err:.2f}: real key rank 1 in "
               f"{firsts}/{a.windows}; z median {statistics.median(zs):.2f} min {min(zs):.2f}")
     else:
         print("POWER CONTROL: skipped (--windows 0)")
