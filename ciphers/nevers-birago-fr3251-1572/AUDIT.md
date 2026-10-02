@@ -543,3 +543,135 @@ api.openalex.org 1, github.com 2 clones. No credentials printed. Unreachable: no
 6. PROGRESS.tsv row "Birago 1572 f.162": audit column set from this file.
 
 SECOND-OPINIONS-QUEUE.tsv: no row for this item; at N0 none is filed (rows are queued at N3 or better).
+
+---
+
+# AUDIT: no.86, all its cipher (f.174r foot + f.174v + f.175r head + f.175v, 759 signs) (VERIFY-NEVBIR-86, 2 Oct 2026)
+
+Verifier: parent worker VERIFY-NEVBIR-86 (account 2, for the account-3 orchestrator), a session separate from the solver
+sessions NEVBIR-170, NEVBIR-174V-A (commit a1d9bef2) and NEVBIR-174V-B (commit bad39c69). Brief
+`.claude/briefs/runs/2026-10-02-acct3-verify-nevbir-86.md`. Clock read with `date -u` at 19:10, 19:16 and 19:22 UTC, 2 Oct 2026.
+
+**Claim under audit** (brief): Birago to Nevers, BnF fr.3251, no.86 (Saluzzo, 27 Aug 1572): all its cipher read blind --
+f.174r foot (85) + f.174v (674 incl. f.175r head and f.175v) = 759 signs -- under the published 1572 key + T42=m: whole
+letter rank 1/201 at 3 seeds, z 3.56-3.83, power 13/20 at err 0.23; S 629 M 76 U 54; judge FAIL -1.161; no slip on
+canvases 178-179.
+
+## Verdict
+
+| item | scope | class | key | text | confidence |
+|---|---|---|---|---|---|
+| no.86 cipher, 759 signs (Lodovico Birago to the duc de Nevers, Saluzzo, 27 Aug 1572): f.174r foot, f.174v (22 cipher lines), f.175r head line, f.175v 3 lines | the whole letter's cipher | **N3** | published (Tomokiyo's 1572 table, credited); the fitted T42=m is ours (GAPS3) but T42 occurs once in these 759 signs and the printed map scores the same (below) | not known: no period decipherment in the MS, no print located | moderate on the class; the reading is cryptanalytic (S/M only, H 0 C 0, judge FAIL) and fragmentary |
+
+**Why N3, not N4.** No prior decipherment or print of the plaintext was located (log below). The gap that held the sibling
+audits at N3 is now half closed: Gallica's search-inside answers on both scans of volume 1 of Gomberville's *Les Mémoires de
+Monsieur le duc de Nevers* (1665; `bpt6k6435941k` and `bpt6k8717151d`, 1028 and 1024 views). It has 29 Birague hits, all on
+Carles (Charles) de Birague, mostly the 1574 restitution papers of Pinerolo and Savigliano, plus the Chancellor. It has no
+Birago/Lodovico letter of 1572, no "Sadres", no "Voluera", no "Montesquiou", and no "Aoust 1572" item from Saluzzo.
+Volume 2 was not located on Gallica under the SRU queries used, and the JSTOR rows are unanswered. N4 needs volume 2 read,
+plus the open-index scholarship pass repeated once Semantic Scholar answers more than one query.
+
+**Why not lower.** No decipherment slip, gloss or laid-in sheet anywhere from the address leaf to the letter's end (check
+below). The no.87 clerk sheet (canvas 182, `harvest/f179r_sheet/`) is no.87's own decipherment: it matched no.87's decode on
+0.837 of letters. It is not a key source for no.86. No solver repository or DECODE record reads no.86. Tomokiyo lists
+"f.174 (no.86) Saluzzo, 27 August 1572" without "(with decipherment)".
+
+Key source: `published` (Tomokiyo's Nevers-Birago 1572 table, reconstructed by him from the decipherment attached to no.87,
+`sources/cryptiana/web/nevers.htm`, credited). Text: not known.
+
+**Safe sentence.** "Using Tomokiyo's published reconstruction of the 1572 Nevers-Birago key, we read all the cipher of
+Birago's letter of 27 August 1572 (BnF fr.3251, no.86; 759 signs on ff.174r-175v) from a blind sign transcription. The key
+beats all 200 shuffled keys at five seeds (z about 3.6-3.8), but the reading is fragmentary (S 629, M 76, unkeyed 54) and fails
+the language judge. We located no prior decipherment or print of it."
+
+**Unsafe sentence.** "We deciphered Birago's letter of 27 August 1572", without "fragmentary" and the judge FAIL. Also unsafe:
+any wording with first, new, previously unread or unpublished.
+
+## Re-derivation (rule 7)
+
+`python3 tools/decode_key.py ciphers/nevers-birago-fr3251-1572 --check`: exit 0, "reading up to date". The three no.86 jobs
+reproduce the claimed grades exactly: `ciphertext_no86.tsv: tokens 759: M 76, S 629, U 54` (H 0 C 0 I 0);
+`ciphertext_f174vA.tsv` 285 (M 25 S 242 U 18); `ciphertext_no86B.tsv` 389 (M 42 S 318 U 29). The working tree was clean
+after the run.
+
+Control re-run independently at seeds the solvers did not use
+(`../ceppo-nevers-fr3251-1570s/harvest/decode_control.py no86/passC_all.tsv --map <map>`, 200 value-shuffled keys, it16dip):
+
+| seed | map | real key | shuffles mean / max | z | rank | power control |
+|---|---|---|---|---|---|---|
+| 7 | fitted (T42=m) | -1.1134 | -1.608 / -1.311 | 3.71 | 1/201 | 11/20 at err 0.23 (z median 2.44) |
+| 11 | fitted | -1.1134 | -1.603 / -1.277 | 3.72 | 1/201 | 20/20 at err 0.10 (z median 4.34, min 3.02) |
+| 7 | printed (no fit) | -1.1138 | -1.615 / -1.311 | 3.75 | 1/201 | not run |
+
+The solvers' figures hold. The real key is rank 1 at all five seeds now run (1, 2, 3, 7, 11), 0.16-0.22 clear of the best
+shuffle. The printed and fitted maps differ by 0.0004, so the T42 fit carries nothing here. Power at the pre-adjudication
+error (0.23) is only 11-13/20. The target took rank 1 regardless, so this is a pass at this length, not a licence to read
+a miss elsewhere as a negative.
+
+**Digit-pair codes checked on the crops (brief item).** In the printed key (`keys/key_nevers_birago_1572.tsv` rows 67-69),
+the word codes are the plain digit pairs "85" = carmagnola, "86" = turino and "89" = bugonotti; on the sign sheet these are
+T11, T46 and T15. On `harvest/f174v/f174v_L07_s2.jpg` the line reads plainly "... 8 9 ⊣ 8 5 ...". Half A's adjudicated T15
+(L07, L09, L11) and T11 (L04, L07) calls are therefore the printed codes, not look-alikes. The letter's clear prose on f.174r
+supports this: it says "buona parte uganotti" and names Carmagnola's garrison. The "88" on half B L02 (`f174vB_L02_s2.jpg`,
+the "lone 8" pair) is not in the printed table. It stays unkeyed (U), correctly; it is probably a further numeric code
+(open-codes).
+
+## Correction found (not applied: transcription is the solver's)
+
+**f.174r L04, positions 1-2.** `harvest/f174r/passC.tsv` reads this pair as T46 (turino) + X_S, with the note "8-like mark ...
+small s/5-like mark then comma". The crop `harvest/f174r/f174r_L04_s1.jpg`, and canvas 177 at native, show the digit pair
+"8 5," before the prose "et credo chel Voluera". Under the printed key that is **85 = carmagnola (T11)**, one token replacing
+two. The run's last word should therefore be [carmagnola], not [turino]. This changes one S-graded word and one U, and does
+not move the control. It is logged as a next step in NOTES.md "Remaining gaps" for the solver lane (re-cut L04 and re-run
+`build_decode_inputs.py` and `decode_key.py --check`). This verifier did not edit the transcription.
+
+## Slip check (brief: facing page and neighbouring canvases at native resolution)
+
+Gallica btv1b9060248g. Canvases 177, 179 and 180 were fetched once whole at native size (about 8515 x 5850) and viewed in
+four quadrant tiles each. Canvas 181 was viewed at 2200 px. Canvas 178 was viewed at native by NEVBIR-174V-A and at 3000 px
+by NEVBIR-174V-B (not re-fetched).
+
+| canvas | pages | seen |
+|---|---|---|
+| 177 | f.173v / f.174r | f.173v prose to "sei mesi"; f.174r prose, then 3 cipher lines and "85, et credo chel Voluera ... in Corte" at the foot; no gloss, no slip; mirrored show-through of f.174v's cipher on the left margin only |
+| 178 | f.174v / f.175r | (solvers, native) cipher page and one head line; no slip |
+| 179 | f.175v / f.176r | f.175v prose, the 3-line cipher run after "ho scritto al", then "Circa alla Carta dil Piemonte"; f.176r prose ("il baron de Sadres che la Voluera ..."); no gloss, no slip |
+| 180 | f.176v / f.177r | prose; f.177r ends "Da Saluzzo li 27 di Agosto 1572", subscription and signature Lodovico Birago; lower f.177r show-through only |
+| 181 | f.177v / f.178r | f.177v address leaf to the duc de Nevers, "In Corte", seal trace and docket; f.178r opens no.87; nothing laid in |
+
+Nothing is pasted or laid in between the address leaf and the end of no.86. The solvers' slip checks are confirmed. One
+detail is corrected: the clear prose names "il Baron de Sadres" on **f.174r** as well as f.176r, so NEVBIR-174V-B's
+consistency observation for L16 has a second clear-text anchor. It is still not a crib.
+
+## Search log (2 Oct 2026, this session)
+
+| family | searched | result |
+|---|---|---|
+| (a) canonical / catalogue | Tomokiyo `sources/cryptiana/web/nevers.htm` section BnFfr3251 (local mirror); BnF *Catalogue général des manuscrits français* via IA fts (`p1cataloguegnr02bibluoft`, hit on "Birago" + "27 di Agosto 1572") | Tomokiyo lists no.86 without a decipherment note; the catalogue lists Lodovico Birago's letters ("En italien") only |
+| (b) sender/recipient editions | Gomberville, *Mémoires de M. le duc de Nevers* (1665) vol. 1, Gallica ContentSearch on `bpt6k6435941k` and `bpt6k8717151d`: Birague (29 hits), Birago (0), Lodovico (4, all Lodovico Gonzaga), Ludovic (0), Saluzzo (0), Saluces (many, 1574 restitution and 1588), Sadres (0), Voluera (0), Montesquiou (0), Hautefort (2, 1574 Pinerolo), Bellegarde (8, 1579 and later), Carmagnolles (30, 1574), "Aoust 1572" (44, none a Saluzzo letter), 1572 (3) | no Birago letter of 1572 in vol. 1; **vol. 2 not located** on Gallica by SRU (`dc.title all "memoires duc de Nevers"`, `gallica all "memoires de monsieur le duc de nevers"`) |
+| (c) Italian / Savoyard editions and histories | Google Books (keyed, `country=US`): `"Birago" "Voluera"` (10: Della Chiesa, *Dell'historia di Piemonte* 1607/1608, names Cesare Voluera as Birago's lieutenant in Carmagnola; *Scriptores* 1840), `"Lodovico Birago" Hautefort OR Autefort` (4, all the BnF catalogue), `"Birago" "Sadres" 1572` (0); IA fts `"Lodovico Birago" Voluera` (0), `"Birago" "Sadres"` (14, none relevant) | context for the names, no text or summary of the 27 Aug 1572 letter |
+| (d) holding archive | Gallica canvases 177-181 (above); BnF clerk sheet canvas 182 (no.87's) | no period decipherment of no.86 |
+| (e) phrase search, decoded and clear text | IA fts and Google Books: `"baron de Sadres"` (IA 1, GB 4: Salazar y Castro index, a 1558 letter; Spanish catalogue 1961), `"barone di Sadres"` (IA 0), `"mala gratia d altri"` (IA 0; GB 347 loose matches, top 5 unrelated: Paruta 1599, Atti delle assemblee costituzionali), `"Birago" Nevers "27 agosto 1572"` (GB 503, not retried) | no print of the letter's clear or cipher text |
+| (f) solver repos | dbourdeau/cyphersolver cloned (head 1 Oct 2026): `targets/birago` is f.119 (no.63, Nov 1571, numeric cipher); grep 3251/birago/no.86/f.174/Sadres finds only the nevers.htm mirror line "f.174 (no.86) Saluzzo, 27 August 1572"; aaymeloglu/unsolved-ciphers cloned (head 27 Sept 2026): no fr.3251 record (decode-catalog.csv hits are other shelfmarks) | no reading of no.86 |
+| (g) scholarship | OpenAlex keyed `Birago Nevers 1572 Saluzzo` (0); Semantic Scholar keyed `Birago Nevers cipher 1572` (429, one retry after 5 s: 0) | nothing |
+| DECODE | via Aymeloglu's catalogue mirror | no fr.3251 record |
+| JSTOR | not queued this session (the folder's earlier family i/ii rows cover Birago-Nevers 1572) | pending; does not block N3 |
+
+Requests: gallica.bnf.fr 32 (4 canvases, 2 SRU, 23 ContentSearch, 2 Pagination, 1 OAIRecord; 2 ContentSearch 500s on one
+scan were not retried, since the other scan answered), be-api.us.archive.org 13 (several returned an empty body or 502; each was retried once and answered),
+googleapis.com 6 (1 x 503, not retried), api.openalex.org 1, api.semanticscholar.org 2, github.com 2 clones. No credentials printed.
+
+## Postmortem and corrections
+
+1. **No over-claim found.** The NEVBIR-170/174V-A/174V-B sections were grepped for first/new/novel/unread/previously/
+   unpublished/solved/cracked/never. The two "first" uses are ordinal ("a first run", "the real key is first at every seed").
+   Nothing to correct.
+2. **One transcription error found:** f.174r L04 "8 5" = 85 carmagnola, read as T46 + X_S (above). The solver lane should fix
+   it. The class does not depend on it.
+3. **The reading is weaker than its rank.** The judge FAILs (-1.161 vs real_p05 -0.905, well above null p99 -1.767), there are
+   54 unkeyed signs, and the text has look-alike slips. Outward wording keeps "fragmentary" and the FAIL; the safe sentence does.
+4. **Next for N4:** volume 2 of the 1665 Mémoires (not found on Gallica by the SRU queries used; try the BnF catalogue record
+   for the set, or Google Books full view), the queued JSTOR rows, and one more Semantic Scholar query.
+
+SECOND-OPINIONS-QUEUE.tsv: row `SO-NEVBIR-86` filed in this session (N3, CLAUDE.md "Operating model"), prompt
+`second-opinions/PROMPT-chatgpt-no86.md`.
