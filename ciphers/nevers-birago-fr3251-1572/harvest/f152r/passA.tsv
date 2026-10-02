@@ -1,0 +1,98 @@
+passage	pos	sign_id	alt	conf	note
+L01	1	X_NEW	T84	L	V with cross bar through top, fork-like; prose before: bisogna
+L01	2	T84		M	triangle on cross
+L01	3	T89		H	q/b hook
+L01	4	T96		H	e with dot
+L01	5	T19		H	pi
+L01	6	T63		H	V
+L01	7	T80		M	D with lead-in curl; run continues to line end (s4 right edge)
+L02	1	T57		H	line start / prior line
+L02	2	T25		H	
+L02	3	X_NEW		L	t shape
+L02	4	T33		H	
+L02	5	T58		H	
+L02	6	T96		H	
+L02	7	T88	T45	L	o with dot on top
+L02	8	T55		H	
+L02	9	T80		H	
+L02	10	T89		H	
+L02	11	T98		H	
+L02	12	T88		H	
+L02	13	T60		H	
+L02	14	X_NEW		L	U/bracket shape, flat bottom
+L02	15	T85		H	
+L02	16	T37		H	
+L02	17	T58		H	
+L02	18	T36		H	
+L02	19	T49		H	
+L02	20	T76		H	
+L02	21	T95		H	
+L02	22	T19		H	
+L02	23	T27	T90	L	8 with loop top
+L02	24	T85		H	
+L02	25	T98		H	
+L02	26	T80		H	
+L02	27	T55		H	
+L02	28	T60		H	
+L02	29	T86		H	
+L02	30	T64		H	
+L02	31	T37		H	line end
+L03	1	T90	T84	L	line start
+L03	2	T76		H	
+L03	3	T60		H	
+L03	4	T92		H	
+L03	5	T95		H	
+L03	6	T65		H	
+L03	7	T19		H	
+L03	8	T98		H	
+L03	9	T25		H	
+L03	10	T58		H	
+L03	11	T45		H	
+L03	12	T33		H	
+L03	13	T85		H	
+L03	14	T83		H	
+L03	15	X_NEW		L	t shape
+L03	16	T96		H	
+L03	17	T58		H	
+L03	18	T37		H	
+L03	19	T97		H	
+L03	20	T86		H	
+L03	21	T90		H	
+L03	22	T33		H	
+L03	23	T53		H	
+L03	24	T85		H	
+L03	25	T65		H	
+L03	26	T25		H	
+L03	27	T19		H	
+L03	28	T60		H	
+L03	29	T86		H	
+L03	30	X_NEW		L	D-like with bar over
+L03	31	T54		H	R-like with loop
+L03	32	T86		H	
+L03	33	T36	T88	L	partial o with tail; line end
+L04	1	T86	T60	L	partial # at crop edge; line start
+L04	2	T97		H	
+L04	3	X_NEW		L	t shape
+L04	4	T96		H	
+L04	5	T25		H	
+L04	6	T60		H	
+L04	7	T50		H	
+L04	8	T19		H	
+L04	9	X_NEW		L	t shape
+L04	10	T90		H	
+L04	11	T83		H	
+L04	12	T55		H	
+L04	13	X_NEW		L	t shape
+L04	14	T86		H	
+L04	15	T57		H	
+L04	16	T52		H	
+L04	17	T58		H	
+L04	18	T64		H	
+L04	19	T19		H	
+L04	20	T60		H	
+L04	21	T55		H	
+L04	22	T83		H	
+L04	23	T45		H	
+L04	24	X_NEW		L	J with hook
+L04	25	T86		H	
+L04	26	X_NEW		L	box with two top bars; con uolermi

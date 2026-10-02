@@ -1,0 +1,452 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "f152r_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    0,
+    124,
+    1300,
+    234
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    833,
+    124,
+    2133,
+    234
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L01_s3.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    1667,
+    124,
+    2967,
+    234
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L01_s4.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    2500,
+    124,
+    3800,
+    234
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 4,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    0,
+    234,
+    1300,
+    335
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    833,
+    234,
+    2133,
+    335
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L02_s3.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    1667,
+    234,
+    2967,
+    335
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L02_s4.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    2500,
+    234,
+    3800,
+    335
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 4,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    0,
+    335,
+    1300,
+    445
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    833,
+    335,
+    2133,
+    445
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L03_s3.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    1667,
+    335,
+    2967,
+    445
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L03_s4.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    2500,
+    335,
+    3800,
+    445
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 4,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L04_s1.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    0,
+    445,
+    1300,
+    565
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L04_s2.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    833,
+    445,
+    2133,
+    565
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L04_s3.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    1667,
+    445,
+    2967,
+    565
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 3,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  },
+  {
+   "crop": "f152r_L04_s4.jpg",
+   "source_url": "",
+   "source_file": "src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg",
+   "box": [
+    2500,
+    445,
+    3800,
+    565
+   ],
+   "lines_in_crop": 1,
+   "band": 4,
+   "segment": 4,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     179,
+     290,
+     381,
+     510
+    ]
+   },
+   "date": "02 Oct 2026"
+  }
+ ],
+ "slip_f151v": {
+  "file": "slip_f151v_c154_1350_750_2350_1050.jpg",
+  "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060248g/f154/1350,750,2350,1050/full/0/native.jpg",
+  "canvas": 154,
+  "page": "left page of the opening = f.151v (end of the previous letter), a small squared-paper slip pasted on it",
+  "content": "clear decipherment in a later hand of the f.152r cipher run, dots for unread signs; read by eye into decipherment_slip.tsv",
+  "date": "02 Oct 2026",
+  "fetched_by": "NEVBIR-152",
+  "note": "first request reset (connection reset by peer), one retry after 20 s served it"
+ },
+ "cipher_region": {
+  "canvas": 154,
+  "region": "4350,3700,3800,580",
+  "lines": "L01 = 7 signs after the prose 'et che bisogna'; L02-L03 full; L04 up to the prose 'con uolermi'",
+  "crops_passed_to_readers": "L01_s3, L01_s4, L02-L04 s1-s4 (2x, lines2x/, gitignored); L01_s1/s2 are prose only"
+ }
+}

@@ -597,11 +597,101 @@ the gate for the seven target letters.
 Vision calls 3 of 3 (two blind passes, one adjudication) plus this worker's own looks (overview crops, two debug overlays, a
 ruler image per region, three sheet strips). Requests: gallica.bnf.fr 7 (above), no other host. No credentials.
 
+## NEVBIR-152 (2 Oct 2026, account 2 for the account-3 orchestrator): f.152r no.77 first test under the 1572 key
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-nevbir-letter.md`, WORK-QUEUE row NEVBIR-152 (f.152 no.77, 9 June 1572).
+`tools/intake_gate_check.py nevers-birago-fr3251-1572` exit 0 at 15:11 UTC. Box 15:11-16:01 UTC. No class, no novelty
+wording (rule 10). Status stays `partial`.
+
+**Material.** Canvas 154 (ink foliation 152 on the right page, eye-checked on `images/f152r_canvas154.jpg`), 8517x5850.
+The cipher run is one block mid-page: 7 signs after the prose "...et che bisogna", three full lines, then prose
+"con uolermi fare tenere per altro di quello ch'io sono" (premise check: "one short inline cipher run"). Native region
+`4350,3700,3800,580` fetched once (a first guess at `4350,3900,...` cut off the run's first line and was discarded), then
+crops cut from the local file with the command:
+
+    python3 tools/iiif_lines.py --image ciphers/nevers-birago-fr3251-1572/harvest/f152r/src_ark_12148_btv1b9060248g_f154_4350_3700_3800_580.jpg \
+      --out ciphers/nevers-birago-fr3251-1572/harvest/f152r --prefix f152r --centres 179,290,381,510 --max-width 1300 --overlap 60 --debug
+
+4 lines x 4 segments, debug overlay `f152r/f152r_lines_debug.jpg` checked by eye; `make_2x.py --folio f152r` made the 2x
+reader crops (gitignored); L01_s1/s2 are prose only and were not given to readers (14 crops per reader).
+
+**Blind passes** (same `blind_pass_brief_1572.md` and 51-cell `sign_sheet_blind_1572.png`, with a page note: prose page, one
+run). Two value-blind Sonnet readers: `f152r/passA.tsv` 97 signs, `passB.tsv` 97. `reconcile_blind.py`: **92 of 98 aligned
+positions agreed (0.94)**; 6 unsettled (L01 pos 1-2 a one-step offset between readers, L03 pos 30 and 33, L04 pos 24 and 26),
+all settled by a third value-blind Sonnet reader (`adjudicate_in.tsv` -> `adjudicate_out.tsv`, all M: T84, T70, T90, T27,
+T78, T49; the L01 gap row was inserted by hand since the tool leaves gap rows unmerged). Final `f152r/passC.tsv`: **97 signs,
+0 '?', 6 off-sheet X_NEW** (5 the t-shape both readers named, 1 a flat-bottomed U at L02/14). Lines: L01 7, L02 31, L03 33, L04 26.
+
+**Control (rule 3)**, `../ceppo-nevers-fr3251-1570s/harvest/decode_control.py f152r/passC.tsv --map sign_id_map_1572_fit.json
+--err 0.12` (printed key + T42=m; corpus it16dip; 200 value-shuffled keys; power control 20 it16dip windows of the same
+length at 12% injected error, measured disagreement 6%):
+
+| sequence | signs / letters | real key | shuffles mean / max | z | rank of 201 | power control, err 0.12 |
+|---|---|---|---|---|---|---|
+| **f.152r passC, seed 1** | 97 / 103 | **-1.142** | -1.591 / -1.258 | **3.14** | **1** | 16/20, z median 3.12 min 1.76 |
+| f.152r passC, seeds 2 and 3 | 97 / 103 | -1.142 | -1.563 / -1.246; -1.563 / -1.192 | 3.06; 2.73 | 1; 1 | -- |
+| printed key (T42=g), seed 1 | 97 / 103 | -1.142 | -1.594 / -1.284 | 3.18 | 1 | -- (T42 does not occur here: same decode) |
+| variant: t-shape X_NEW = m (`--extra X_NEW=m`) | 97 / 109 | -1.132 | -1.654 / -1.180 | 3.48 | 1 | 16/20, z median 3.17 |
+
+Rank 1 of 201 at every seed with the real key 0.05-0.12 above the best shuffle; at 97 signs the test's own power is 16 of 20
+(the GAPS4 lesson for ~90-sign runs), so the n-gram control alone backs this run only moderately. The known-answer check
+below is the stronger instrument here.
+
+**A decipherment slip for this run is filed with the letter (found this job; PREMISE-NEVBIR's (c) did not report it).** The
+left page of canvas 154 (f.151v, the end of the previous letter) carries a small pasted slip of squared paper written in a
+later hand than the letter: `f152r/slip_f151v_c154_1350_750_2350_1050.jpg`, read by eye into `f152r/decipherment_slip.tsv`:
+"che io disimuli poiche / [struck: sen.ua a leuar..o.asione] sen.aaleu..o.asione a / ap.ns..o di leuarmi la reputa.ione ..c.ermi /
+incompromesa la l'onore". Its dots are the decipherer's own unread signs. It sits between the letter's prose "et che bisogna"
+and "con uolermi", the exact place of the cipher run. Who wrote it and when (squared paper suggests a modern reader, not the
+1572 clerk) is not settled here; this is a prior (partial) decipherment of this item, a fact for the verifier (rule 10),
+not a judgment made here.
+
+**Known-answer check against the slip** (`align_sheet.py f152r/passC.tsv --sheet f152r/slip_for_align.tsv --sheet-lines L01-L04`,
+the GAPS4 instrument, 200 value-shuffled keys): share of decoded letters in matched blocks >= 3: **fitted key 0.612**, shuffles
+mean 0.047 max 0.121, **rank 1 of 201, z 25.1**; printed key 0.612 (z 25.8); with the t-shape as m 0.651 (max 0.113, z 29.2).
+The ceiling is below 1 because the slip itself leaves about 15 signs as dots and the decode carries a word code
+("[quello]") and a few letters the slip omits.
+
+**Reading** (`tools/decode_key.py ciphers/nevers-birago-fr3251-1572`, job built by `harvest/build_decode_inputs.py f152r`;
+`--check` exit 0, "reading up to date"). `harvest/exceptions_f152r.tsv` sets the five t-shaped X_NEW to m where the slip reads
+an m at that position (disimuli, leuarmi, c.ermi, incompromesa x2) -- the same sign GAPS4 read m four times against the no.87
+clerk sheet. Grades (rule 4): **97 tokens: H 0, C 0, S 84, M 12, I 0, U 1** (the five m exceptions are graded M by the tool
+because both readers rated those signs M; the U is the flat-U X_NEW at L02/14, where the slip has a dot too). A cryptanalytic
+result, the key published (Tomokiyo) plus the GAPS3 fit.
+
+    f152r L01 | [quello]g[che]iodi                  slip: che io disimuli poiche
+    f152r L02 | simuligoi[che]sgn·aalcunsotasioneha   slip: sen.aaleu..o.asione a
+    f152r L03 | pnnsstosileuarmilareputationepmet    slip: ap.ns..o di leuarmi la reputa.ione ..c.ermi
+    f152r L04 | ermiincompromesilhonore[qual]eu      slip: incompromesa la l'onore
+
+Read as Italian (this worker's reading of the decode against the slip, not a transcription): "...che io dissimuli, poiche
+sen[za] alcun[a] [oc]casione ha[nno] p[ro]curato? ... di levarmi la reputatione et cercarmi in compromes[so] il honore, quale
+..." -- then the prose "con volermi fare tenere per altro di quello ch'io sono". Visible c/s and g/o look-alikes ("sotasione"
+for "ocasione", "goi" for "poi") are the same sign-pair confusions logged on no.87.
+
+**Judge** (`tools/judge_plaintext.py specs/nevers-birago-fr3251-1572.json --file harvest/f152r/reading_f152r_letters.txt`):
+
+    FAIL language: score=-1.171, null_p99=-1.625, real_p05=-0.951, real_median=-0.813, mode=both, N=108
+    FAIL - nevers-birago-fr3251-1572 (a PASS is a gate for a verifier, not a reading; rule 10)
+
+Shuffled-target control (`harvest/shuffled_judge.py`, fitted map, 20 seeds): **0 of 20 PASS**, mean -1.659, min -1.867, max
+-1.468. The judge discriminates at this N; the FAIL is a near-miss of the familiar size for a short run (f.178r foot -1.131,
+f.179r head -1.096 at similar N). Secondary signal only, per the brief.
+
+**What this settles.** The 1572 key reads the f.152r cipher run: rank 1 of 201 shuffled keys (z 2.7-3.1, power 16/20 at
+this length) and 0.61 agreement with an independent clear decipherment filed beside it (shuffled max 0.12). No.77's other
+pages were not searched for a further cipher run: f.152v is plain per PREMISE-NEVBIR; f.153r onward not opened this job.
+
+Requests: gallica.bnf.fr 4 (info.json canvas 154; two cipher-region fetches, the first discarded; the slip region, whose first
+attempt was a connection reset retried once after 20 s -- 5 attempts in all). Vision calls 3 (two blind passes, one
+adjudication) plus this worker's own looks (overview, debug overlay, slip). No credentials.
+
 ## Remaining gaps (LIKELY-3, 2 Oct 2026; updated GAPS-nevers-birago 04:3x UTC and GAPS3-nevers-birago 05:3x UTC and GAPS4-nevers-birago 06:3x UTC, 2 Oct 2026)
 Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.178v 23 + f.179r head 3; joined under the fitted key rank 1/201 z 4.60, power 20/20; judge FAIL -1.046 vs real_p05 -0.902; the clerk's clear decipherment of the passage, found legible on canvas 182 (GAPS4, 2 Oct 2026 06:3x UTC, section above), matches the decode on 0.837 of letters vs 0.114 max for shuffled keys), control-backed; 0 of the 7 target letters ff.138-184. Closed by GAPS4 (2 Oct 2026): the f.178r foot / f.179r head gap (done, 97 + 89 signs, agreement 0.88 / 0.89) and the tipped-in-decipherment gap (resolved: it is the laid-in sheet photographed legibly on canvas 182, read into harvest/f179r_sheet/decipherment_sheet.tsv; canvas 183 shows its blank back; the BnF reproduction batch, REQUEST.md / ASKS row 78, no longer needs it for this item)
-- ff.152, 162, 168, 170, 184 (nos. 77-90; f.144 and f.138 moved to their own lines, NEVBIR-144 and NEVBIR-138) - blocker: not-attempted; HARVEST-D2's recipe (1200 px per canvas until the cipher is found, 2-4 requests a letter, offset drifts +1 to +3) then the same pipeline per leaf; next: locate and read f.144 (the fullest page of signs per the row), ~$8 a letter
+- ff.162, 168, 170, 184 (nos. 82-90; f.138, f.144 and f.152 on their own lines, NEVBIR-138/144/152) - blocker: not-attempted; HARVEST-D2's recipe (1200 px per canvas until the cipher is found, 2-4 requests a letter, offset drifts +1 to +3) then the same pipeline per leaf; next: locate and read f.144 (the fullest page of signs per the row), ~$8 a letter
 - f.144r no.73 (90 signs, NEVBIR-144, 2 Oct 2026) - blocker: too-short; real key rank 4/201 (z 1.77), but the power control finds the right key only 4/20 at the measured 0.24 reader error and 9/20 at 0.12 (20/20 at 0): a non-test at this N and error, not a negative; next: pool f.144r with the sibling 1572 letters' reconciled sequences in one joint 200-shuffle test once they are read (disk only, ~$1), and/or lower the reader error with the clerk-sheet error map (gap below)
 - no.71 cipher passage, f.139v foot (161 signs, NEVBIR-138, 2 Oct 2026) - blocker: open-codes; 21 off-sheet signs unkeyed (X_NEW "4", "7", square-with-dot, "t", raised "m" abbreviation and others), the power control is weak at this length (10/20 at err 0.15) and the judge FAILs (-1.159 vs real_p05 -0.955); next: value-fit of the recurring off-sheet signs (decode_control.py --fit-sign, disk only, ~$1; the t-shaped X_NEW read m on no.87 against the clerk sheet), then a separate verifier on the reading
+- f.152r no.77 cipher run (97 signs) read under the 1572 key by NEVBIR-152 (2 Oct 2026, section above): rank 1/201 z 3.1, slip agreement 0.61; the rest of no.77 past f.152v - blocker: not-attempted; f.152v plain per PREMISE-NEVBIR, f.153r onward not opened; next: open canvas 155-156 at 1200 px for a further cipher run (1-2 requests), and a verifier pass on the f.151v slip (whose hand, prior decipherment of this run), ~$3
 - the q homophone, T88 and the off-sheet signs (now 25 over 853) - blocker: open-codes; GAPS4 (2 Oct 2026): the t-shaped X_NEW reads m four times against the clerk sheet (grade C, exceptions files) and is probably the printed T17; the fit T42 = m is confirmed by the sheet (0.837 vs 0.816 for the printed key); the value-fit ran (GAPS3, 2 Oct 2026 05:3x UTC, section above): T42 g -> m (S, seven m-words against one g-word; judge -1.074 -> -1.032, z 4.60 -> 4.84), T70 confirmed g, T88 (3 occurrences) undecided (q scores worst, no two-word support; the one q-word 'guecta' also carries a c/s look-alike), X_NEW (7, all at word boundaries) invisible to a letter fit, X_EQ 2 too few; T17 (m) still never occurs -- a sheet-cell or clerk question for an image check; next: align the clerk sheet to the 853 signs with tools/interlinear_align.py (disk only, ~$2) for a C-grade key and a per-sign reader error map, then the look-alike transcription pass with that map as the crib (1 vision call per half-leaf, ~$3)
 
 ## Escalation (2 Oct 2026)
@@ -612,7 +702,7 @@ Read so far: all 853 signs of no.87's cipher passage (f.178r foot 3 lines + f.17
 - [x] key-rebuild: one-sign value fits, not a rebuild -- run (GAPS3, 2 Oct 2026): T42 g -> m, T70 g, T88 and the off-sheet signs undecided at their counts; the key reads the leaf at rank 1/201 before and after
 - [x] image-check: native regions, debug overlays checked by eye (f.178v right edge re-fetched once; f.179r left edge re-fetched once; f.178r re-cut on the slope after both readers reported clipped tails); the canvas 182/183 overviews re-read by eye, which found the decipherment sheet (GAPS4)
 - [x] retry: one connection reset on the canvas-183 fetch retried once after a pause (GAPS4); the HTTP 500s were this worker's malformed URLs, not retried
-Verdict: keep going: 3 internal gaps; cheapest next: value-fit of the f.139v off-sheet signs (disk only, ~$1); then align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144
+Verdict: keep going: 4 internal gaps (f.152r run read by NEVBIR-152, 2 Oct 2026; its next step is the slip verifier pass and canvas 155-156); cheapest next: value-fit of the f.139v off-sheet signs (disk only, ~$1); then align the clerk sheet (harvest/f179r_sheet/decipherment_sheet.tsv) to the 853-sign passage with tools/interlinear_align.py for a C-grade key and a per-sign reader error map (disk only, ~$2), then the look-alike transcription pass on the mis-read spans with that map as crib (~$3), then f.144
 
 ## VERIFY-NEVBIR-1572 (2 Oct 2026, account 2): audit 1 -- see AUDIT.md
 

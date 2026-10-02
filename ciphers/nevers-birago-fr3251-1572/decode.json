@@ -112,6 +112,29 @@
     "M",
     "L"
    ]
+  },
+  {
+   "ciphertext": "harvest/ciphertext_f152r.tsv",
+   "key": [
+    "harvest/key_1572_sheet.tsv"
+   ],
+   "format": "tsv",
+   "split_line": "_",
+   "style": "concat",
+   "reading": "harvest/reading_f152r.txt",
+   "tokens": "harvest/reading_f152r_tokens.tsv",
+   "null_values": [
+    "NULL"
+   ],
+   "unknown_values": [
+    "",
+    "?"
+   ],
+   "uncertain_conf": [
+    "M",
+    "L"
+   ],
+   "exceptions": "harvest/exceptions_f152r.tsv"
   }
  ]
 }
