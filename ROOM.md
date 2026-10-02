@@ -5168,3 +5168,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: decode-2678-bnf-colbert127-gravel-1665 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/colbert/NOTES.md
 2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: destaing-gerard-1779 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/destaing/NOTES.md
 2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: esp318-sicilia-1503 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/esp318/NOTES.md
+2026-10-02 00:24 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3198-labbe-1577 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/labbe1582/NOTES.md
