@@ -1,0 +1,4 @@
+tokens: {'cipher': 311, 'plain': 65, 'dotted': 67, 'illegible': 0}
+[f60r_lower_ciphertext.tsv] cipher tokens 311, in key 308, out of key 3 distinct ['46', '6', '78']
+[f60r_lower_ciphertext.tsv] decoded letters 308; word-cover REAL 268/308 = 0.8701; 200 letter-shuffled keys: mean 0.3336 sd 0.1023 max 0.6331; z 5.24; rank 1 of 201
+[f60r_lower_ciphertext.tsv] first 20 shuffles: mean 0.3529 max 0.5682; real beats all 20: True

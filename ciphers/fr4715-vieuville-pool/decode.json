@@ -46,6 +46,20 @@
     "# tokens {total}: {HCSMIU} (U = dotted/barred word-code or a group not in the key)",
     "# letter strings under the printed key; not a reading until the judge and a verifier say so (rules 7, 10)"
    ]
+  },
+  {
+   "ciphertext": "f60r_lower_ciphertext.tsv",
+   "key": "../fr4715-montholon-1589/keys/key_vieuville_nevers.tsv",
+   "format": "tsv",
+   "line_column": "line",
+   "style": "spaced",
+   "reading": "f60r_lower_reading.txt",
+   "tokens": "f60r_lower_reading_tokens.tsv",
+   "header": [
+    "# fr4715-vieuville-pool no.37 f.60r lower cipher block L25-L30 + unlisted row L28b, decoded against key_vieuville_nevers.tsv (GAPS-fr4715-vieuville-pool-5, 2 Oct 2026)",
+    "# tokens {total}: {HCSMIU} (U = dotted/barred word-code or a group not in the key)",
+    "# letter strings under the printed key; not a reading until the judge and a verifier say so (rules 7, 10)"
+   ]
   }
  ]
 }

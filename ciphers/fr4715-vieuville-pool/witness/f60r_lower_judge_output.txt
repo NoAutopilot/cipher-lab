@@ -1,0 +1,3 @@
+FAIL language: score=-1.261, null_p99=-1.832, real_p05=-0.876, real_median=-0.782, mode=both, N=308
+ok   words: cover=0.88, min=0.5, real_text_median_cover=0.945
+FAIL - fr4715-vieuville-pool (a PASS is a gate for a verifier, not a reading; rule 10)
