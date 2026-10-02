@@ -1,0 +1,14 @@
+# PROGRESS.tsv -- the owner's progress block (CHECKIN-PROMPT.md). One row per live target. Edit a row only from a file on disk
+# (AUDIT.md counts, CONTRIBUTIONS.md send status, status.json); put that file in `source`. Render with: python3 tools/progress_block.py
+# stages F K R 1 2 C S = Found, Key, Read, Audit 1, Audit 2, Counted, Sent; each x done, ~ partial, . not yet. sent_star: * if a note about the finding was sent/posted.
+name	folder	firm	total	F	K	R	1	2	C	S	sent_star	note	updated	source
+Armstrong	armstrong-madison-1808	0	369	x	.	.	.	.	.	.			2 Oct 2026	AUDIT none; CONTRIBUTIONS 26 Sept (question only)
+Mercy	espagnol142-mercy-1648	488	529	x	x	x	x	x	x	x	*		2 Oct 2026	reading.txt (S 488, M 41); AUDIT.md N4; CONTRIBUTIONS 1 Oct sent
+f.61	fr4715-f61-mayenne-1592	12	99	x	~	~	.	.	.	.			2 Oct 2026	AUDIT.md V13 meter 12/59/1/27
+Birago f.11r	ceppo-nevers-fr3251-1570s	53	135	x	x	x	x	x	x	~			29 Sept 2026	AUDIT.md (second audit, endorsed counts); CONTRIBUTIONS note held
+Birago f.21v	ceppo-nevers-fr3251-1570s	146	267	x	x	x	x	x	x	~			29 Sept 2026	AUDIT.md endorsed S 146
+Birago f.87	ceppo-nevers-fr3251-1570s	113	205	x	x	x	x	x	x	~			29 Sept 2026	AUDIT.md endorsed S 113 of 205
+Debosnys	debosnys-1883	0	1264	x	.	.	.	.	.	.		waiting on the owner's sort	2 Oct 2026	no firm reading
+Bowes 1583	bowes-walsingham-1583	82	100	x	~	x	x	.	x	x	*	re-audit queued: VERIFY-BOWES-584	2 Oct 2026	check.py S73 C9 M12 I3; CONTRIBUTIONS 23 Sept sent
+August 1561-64	august-van-saksen-1561-64	699	904	x	x	x	x	x	x	x	*		2 Oct 2026	decode_key --check (C 461 + S 238); AUDIT.md N4/N3 two audits; CONTRIBUTIONS 24 Sept sent (Huygens)
+Hessen 1824	hessen-1824	0	0	x	.	.	.	.	.	.		found-solved (Bourdeau 28 Sept); VERIFY-HESSEN-1824 queued	2 Oct 2026	sources/solver-diffs/2026-10-02-bourdeau.tsv
