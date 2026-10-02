@@ -1,0 +1,9 @@
+corpus es18, body letters 249, code 36 at 4 positions
+  L04 pos17  laszyr[c]unstan  D(c-e)=-0.397  prefers e
+  L06 pos12  espero[c]onansy  D(c-e)=+2.393  prefers c
+  L10 pos10  uedano[c]uryrzp  D(c-e)=+1.750  prefers c
+  L14 pos7  sobres[c]rytoen  D(c-e)=-1.564  prefers e
+TARGET: sum D = +2.181, 2 of 4 prefer c
+CONTROL (a) shuffled-assignment, 20 seeds: sum D min -12.325 max +8.017 mean -3.125; 2 of 20 at or above target; prefer-c count mean 1.65 max 3
+CONTROL (b) known answer: true letter preferred 35 of 38 (0.921); true c 2/2, true e 33/36
+VERDICT: does not clear both controls -- code 36 stays M

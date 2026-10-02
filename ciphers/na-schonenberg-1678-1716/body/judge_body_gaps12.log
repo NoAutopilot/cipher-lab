@@ -1,0 +1,81 @@
+KEY   N=249 noabyendonobedadenestaspartesqueladeabermudadoestegouyernoconlaszyrcunstanzyasqueaysesabranmexoresperoconansyalasqueybyeredelnorteydeytalyapuesesauandeocasyonarlasquepuedanocuryrzparayasseguradaddelalorespondenzyasepondrasolamenteynsobrescrytoenesta
+GLOSS N=246 noabyen23.loNobeadenestasPartesquePadeAbermudadoestegovyermolonLaszynenstanzyasqueayierabranMexorespenoconanryalasqueybyeredelKorteydayalyapueseeavAndaocasyonarlasquepuedanocurryrzparaymassegurydaddLaliorespondenzisepondraolamenteynpobErerenytenesta
+SENSE N=245 No abye[n]do nobe--[d]ad en estas partes qu[e](l)a de a[v]er muda(d)o e(s)tegouye(r)[n]o [c]on las zynen--stanzyas que ay sera bra--n mexores pe[r]o no con an(s)yalas que ybye(r)e del nor--te y de ytalya pues sar--an de oas yoaa las qu[e]puedan oc(u)rryrpara (m)a(s) se(g)u(r)(y)da(d) (d)ela [c]orespondenzya p[o]ndra solamente [e][n]sobre (s)cryto en esta
+
+=== corpus es18 (CLI, verbatim) ===
+$ judge_plaintext.py body/spec_body_es18.json --text <KEY>  (exit 1)
+  ok   length: got=249, min=100, max=1000000000
+  FAIL language: score=-1.114, null_p99=-1.735, real_p05=-0.975, real_median=-0.839, mode=both, N=249
+  ok   words: cover=0.876, min=0.4, real_text_median_cover=0.948
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es18.json --text <GLOSS>  (exit 1)
+  ok   length: got=246, min=100, max=1000000000
+  FAIL language: score=-1.313, null_p99=-1.752, real_p05=-0.958, real_median=-0.834, mode=both, N=246
+  ok   words: cover=0.85, min=0.4, real_text_median_cover=0.951
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es18.json --text <SENSE>  (exit 1)
+  ok   length: got=245, min=100, max=1000000000
+  FAIL language: score=-1.14, null_p99=-1.711, real_p05=-0.962, real_median=-0.833, mode=both, N=245
+  ok   words: cover=0.857, min=0.4, real_text_median_cover=0.951
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+es18: shuffled-null (letters of KEY) n=20 min=-2.053 max=-1.888 mean=-1.969 PASS 0 of 20 (null_p99=-1.735 real_p05=-0.975 at N=249)
+es18: shuffled-target (group order within line, key.tsv) n=20 min=-2.079 max=-1.858 mean=-1.976 PASS 0 of 20 (null_p99=-1.735 real_p05=-0.975 at N=249)
+
+=== corpus es18p (CLI, verbatim) ===
+$ judge_plaintext.py body/spec_body_es18p.json --text <KEY>  (exit 1)
+  ok   length: got=249, min=100, max=1000000000
+  FAIL language: score=-1.137, null_p99=-1.718, real_p05=-0.959, real_median=-0.864, mode=both, N=249
+  ok   words: cover=0.88, min=0.4, real_text_median_cover=0.932
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es18p.json --text <GLOSS>  (exit 1)
+  ok   length: got=246, min=100, max=1000000000
+  FAIL language: score=-1.308, null_p99=-1.713, real_p05=-0.968, real_median=-0.871, mode=both, N=246
+  ok   words: cover=0.841, min=0.4, real_text_median_cover=0.931
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es18p.json --text <SENSE>  (exit 1)
+  ok   length: got=245, min=100, max=1000000000
+  FAIL language: score=-1.168, null_p99=-1.718, real_p05=-0.973, real_median=-0.867, mode=both, N=245
+  ok   words: cover=0.853, min=0.4, real_text_median_cover=0.931
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+es18p: shuffled-null (letters of KEY) n=20 min=-2.043 max=-1.886 mean=-1.954 PASS 0 of 20 (null_p99=-1.718 real_p05=-0.959 at N=249)
+es18p: shuffled-target (group order within line, key.tsv) n=20 min=-2.102 max=-1.860 mean=-1.963 PASS 0 of 20 (null_p99=-1.718 real_p05=-0.959 at N=249)
+
+=== corpus es17c7 (CLI, verbatim) ===
+$ judge_plaintext.py body/spec_body_es17c7.json --text <KEY>  (exit 1)
+  ok   length: got=249, min=100, max=1000000000
+  FAIL language: score=-1.16, null_p99=-1.896, real_p05=-0.891, real_median=-0.795, mode=both, N=249
+  ok   words: cover=0.88, min=0.4, real_text_median_cover=0.948
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es17c7.json --text <GLOSS>  (exit 1)
+  ok   length: got=246, min=100, max=1000000000
+  FAIL language: score=-1.328, null_p99=-1.877, real_p05=-0.895, real_median=-0.795, mode=both, N=246
+  ok   words: cover=0.858, min=0.4, real_text_median_cover=0.951
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es17c7.json --text <SENSE>  (exit 1)
+  ok   length: got=245, min=100, max=1000000000
+  FAIL language: score=-1.204, null_p99=-1.894, real_p05=-0.922, real_median=-0.797, mode=both, N=245
+  ok   words: cover=0.865, min=0.4, real_text_median_cover=0.955
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+es17c7: shuffled-null (letters of KEY) n=20 min=-2.194 max=-2.008 mean=-2.095 PASS 0 of 20 (null_p99=-1.896 real_p05=-0.891 at N=249)
+es17c7: shuffled-target (group order within line, key.tsv) n=20 min=-2.278 max=-2.012 mean=-2.112 PASS 0 of 20 (null_p99=-1.896 real_p05=-0.891 at N=249)
+
+=== corpus es (CLI, verbatim) ===
+$ judge_plaintext.py body/spec_body_es.json --text <KEY>  (exit 1)
+  ok   length: got=249, min=100, max=1000000000
+  FAIL language: score=-1.126, null_p99=-1.824, real_p05=-0.901, real_median=-0.815, mode=both, N=249
+  ok   words: cover=0.867, min=0.4, real_text_median_cover=0.936
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es.json --text <GLOSS>  (exit 1)
+  ok   length: got=246, min=100, max=1000000000
+  FAIL language: score=-1.306, null_p99=-1.855, real_p05=-0.898, real_median=-0.818, mode=both, N=246
+  ok   words: cover=0.809, min=0.4, real_text_median_cover=0.939
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+$ judge_plaintext.py body/spec_body_es.json --text <SENSE>  (exit 1)
+  ok   length: got=245, min=100, max=1000000000
+  FAIL language: score=-1.153, null_p99=-1.832, real_p05=-0.894, real_median=-0.812, mode=both, N=245
+  ok   words: cover=0.853, min=0.4, real_text_median_cover=0.939
+  FAIL - na-schonenberg-1678-1716-body (a PASS is a gate for a verifier, not a reading; rule 10)
+es: shuffled-null (letters of KEY) n=20 min=-2.159 max=-1.859 mean=-2.025 PASS 0 of 20 (null_p99=-1.824 real_p05=-0.901 at N=249)
+es: shuffled-target (group order within line, key.tsv) n=20 min=-2.188 max=-1.886 mean=-2.058 PASS 0 of 20 (null_p99=-1.824 real_p05=-0.901 at N=249)
+
+wrote body/judge_body_results.tsv
