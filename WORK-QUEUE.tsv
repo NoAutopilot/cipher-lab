@@ -137,3 +137,5 @@ NEVBIR-117C	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-117c.md	Opus 5.5	7
 BIRAGO-NUM3	other	.claude/briefs/runs/2026-10-02-acct3-birago-num3.md	Opus 5.5	7	60	claimed by LANE-A2PUSH 2026-10-02 23:05	2026-10-02 23:01	Birago numerical: controlled phase+key anneal (control first)
 NEVBIR-47	other	.claude/briefs/runs/2026-10-02-acct3-nevbir-47.md	Opus 5.5	6	55	claimed by LANE-A2PUSH 2026-10-02 23:44	2026-10-02 23:21	fr.3252 f.47r whole letter, Ceppo-Nevers key
 BIRAGO-NUM-SCOUT	other	.claude/briefs/runs/2026-10-02-acct3-birago-num-scout.md	Opus 5.5	4	45	claimed by LANE-A2PUSH 2026-10-02 23:44	2026-10-02 23:21	find a third letter in the Nov 1571 numerical key
+VERIFY-BIRAGO-SMALL	other	.claude/briefs/runs/2026-10-02-acct3-verify-birago-small.md	Opus 5.5	3	35	queued	2026-10-02 23:43	verifier: f.21v L11.17 + no.87 label rulings
+SORTER-BIRAGO2	other	.claude/briefs/runs/2026-10-02-acct3-sorter-birago2.md	Opus 5.5	2	25	queued	2026-10-02 23:43	sorter inputs for fr.3252 f.117 (12 focus tiles)
