@@ -325,7 +325,7 @@ the 1778 list is above both controls but carried by short entries, logged as a h
 reproduces his labels 13/13, L1.41 e -> c; 117 S / 16 M / 1 I; next a spec + judge. na-janssens -- Collet 1910 queued
 (L35); No.5's opening sentence is quoted in De Opkomst deel 13 (1888); Janssens's 16 and 21 June 1811 letters printed
 there are not No.1 (control-backed). na-schonenberg -- gate repaired (citation line carried up), premise check clear;
-the USD 18 image pass is now its only step. Wave 5 spawned 15:0x (ids in the next paragraph): CLOSER-8, GAPS-fr4715-
+the USD 18 image pass is now its only step. Wave 5 spawned 15:05 UTC -- CLOSER-8 session_01XLRrj4hmqWvLBozrTxHHsZ, GAPS-fr4715-vieuville-pool-3 session_01Erg147mm334gRPtiJQBrZp, GAPS6-moray-wood session_01NkWUpH66eNPEHq5XPYjGC3, GAPS7-pro3055-clinton session_01XrDTVqDo85ksJHKLKxJB6S, GAPS7-na-suriname session_01Aedui2Qg8qYdyuHWYXUmvC, GAPS-fr3986-nevers-revol-1593-2 session_01R25RVFsdHYkY2p3S9Km2Fa: CLOSER-8, GAPS-fr4715-
 vieuville-pool-3 (four L-grade gloss sites, one strong call, cap 8), GAPS6-moray-wood (spec + judge, cap 7),
 GAPS7-pro3055-clinton (shrink the folder under 30 MB, then the p.102 decipherment at Image 1183, cap 12),
 GAPS7-na-suriname (the images shrink per AX2-SHRINK, cap 7), GAPS-fr3986-nevers-revol-1593-2 (wider held-out on

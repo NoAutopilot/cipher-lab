@@ -59,3 +59,20 @@ royalist print_check + crib loop (~3), suriname 2039 a-u block (~5), janssens 18
 clinton reel labels (~4), mornington counterpart search (~4), fr3986 atlas coverage (~8), schonenberg image pass (~18);
 verifiers for the Clinton 2894 clause and the Schonenberg L19 crib; RETRO-APPLY for RETRO-2026-10-02-account4 proposals
 2, 4, 5. Fable caps at the README floor (>= 5, +2.5 per vision call, per-unit on top for multi-unit fetch-and-read jobs).
+
+## State at check-in 12 of parent 2 (15:0x UTC 2 Oct 2026, session_01SnKHiQk7k7VPDGhfcPeiVV, about 620k context)
+
+The owner lifted the overnight hold at 13:00 UTC (account-3's ROOM line "keep everything moving"); account-4 spawns
+moderate waves (6-8 sessions, caps at the README floor) while its seven-day window reads `allowed_warning`; a `rejected`
+reading stops spawning. Five waves so far (about 40 workers, USD 360; parent 2 about 35). Every account-4 target now carries
+a `## Premise check` section (the gate requires it since 12:47 UTC) and all came back clear except the premise finds that
+closed items as text-known (Clinton: eight items printed; Mornington: four). STATUS.md "Parent handoff (account-4)" check-in
+paragraphs 1-12 hold the full record with every session id; the account-4 LEDGER rows are complete to 14:44 UTC.
+Live at 15:05: wave 5 (CLOSER-8, vieuville gloss sites, moray spec+judge, clinton shrink + p.102 decipherment, suriname
+images shrink, fr3986 wider held-out). Owed next, cheapest first: vieuville no.37 dense blocks (~12), schonenberg 12-code
+image pass (~18), janssens No.4 set (~18), fr3986 recto fetch (~2, only if the held-out clears), suriname gap 3 (2061, ~4)
+and gap 1 key extension (~9), clinton's six open items. Parked on outside blockers: mornington-1798 (ASKS 12, L32, L34);
+blocked: fr4687-paleologue (L33). N0 by verifier on 2 Oct: nevers-birago no.87, royalist f.10, clinton 2894. Nevers-Birago
+ff.138-184 are account-3's (NEVBIR-* on account 2) -- do not touch. Lessons this lineage paid for today: price Fable
+workers at the floor (>= 5, +2.5 per vision call) or 9 of 11 run over; a `git stash` at a check-in start put conflict
+markers on main (never stash); run the premise check before any first test (three N0s were findable before reading).
