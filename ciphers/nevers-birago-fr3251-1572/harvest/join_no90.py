@@ -5,14 +5,17 @@ Pieces, in page order, relabelled with the folio so passages stay distinct:
   f.184r runs      f184r/passC.tsv        (NEVBIR-184)  L01..L12 -> f184r_L01..
   f.184v foot      f185r/passC_rest90.tsv (NEVBIR-185)  f184v_L01..L04 (already folio-labelled)
   f.185r L01-L08   f185r/passC_rest90.tsv (NEVBIR-185)  f185r_L01..L08 (manuscript line numbers)
-f.185r lines 11-14 and 17-28 and the f.185v run are not read yet (NOTES.md, Remaining gaps)."""
+  f.185r L10-12, L15-25 + f.185v run  f185r2/passC.tsv (NEVBIR-185B)  f185r_L10.. / f185v_L01 (already folio-labelled)
+--ae relabels the ligature-shaped off-sheet sign X_NEW -> X_AE from the readers' notes (subtype_xnew.py's *_ae.tsv files)."""
 import argparse, csv
 from pathlib import Path
 H = Path(__file__).resolve().parent
-ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument("--out", required=True); ap.add_argument("--ae", action="store_true"); a = ap.parse_args()
 def rows(p):
     return list(csv.DictReader(open(H / p), delimiter="\t"))
-out = [dict(r, passage="f184r_" + r["passage"]) for r in rows("f184r/passC.tsv")] + rows("f185r/passC_rest90.tsv")
+out = [dict(r, passage="f184r_" + r["passage"]) for r in rows("f184r/passC.tsv")] + rows("f185r/passC_rest90%s.tsv" % ("_ae" if a.ae else ""))
+if (H / "f185r2/passC.tsv").exists():
+    out += rows("f185r2/passC%s.tsv" % ("_ae" if a.ae else ""))
 (H / a.out).parent.mkdir(exist_ok=True)
 with open(H / a.out, "w") as f:
     f.write("passage\tpos\tsign_id\tconf\tnote\n")
