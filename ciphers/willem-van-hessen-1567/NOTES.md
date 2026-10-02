@@ -482,3 +482,43 @@ HTTP 200). No other network host. 2 Sonnet subagents (the two blind passes above
 budget. Files touched: `siblings/{glyphs_1069.tsv,key_1069.tsv,ciphertext_1069.tsv,check_1069.py,
 reading_1069.txt}`, `siblings/atlas/{g11_triangle.png,g12_figure8.png,null_cand_Tcross.png,
 null_cand_Iminim.png,p2_line1_full_strip.png}` (new), this NOTES.md section, ROOM.md.
+
+## Web and blog check (GF-A2-4, 2 Oct 2026)
+
+Queries (WebSearch, 2 Oct 2026 22:3x UTC), each with what came back:
+1. sender + recipient + date: `Wilhelm Landgraf Hessen Wilhelm von Oranien 28 Januar 1567 Brief Chiffre` -- WVO edition
+   PDFs (MKE 11370/01331/01416, other letters), DBNL Groen van Prinsterer III pages 0015 and 0035, Deutsche Biographie.
+   Opened DBNL groe009arch03_01_0035: Lettre CCLXXVIII, Landgrave Wilhelm to Orange, 22 June 1567 (Corpus Christianae
+   doctrinae sent), no cipher, not our letter. Nothing names 28 Jan 1567 or a cipher.
+2. shelfmark + cipher: `"A 11/XIV B/15-43" OR "Koninklijk Huisarchief" Hessen 1567 cijferschrift` -- ten WVO PDFs for
+   other KHA shelfmarks (B/15-54, B/15-64, B/15-14, E/43); no hit on B/15-43.
+3. distinctive phrase: `"onopgelost cijferschrift" Willem van Oranje brief` -- WVO edition PDFs for other letters
+   (KBA 12005/12034, BHV 09064), scientias.nl news items on the WVO launch; nothing on 1127.
+4. folder title: `Willem van Hessen to Willem van Oranje partly unsolved cipher 1567 Grumbach Gotha` -- Grumbach Feud
+   pages (Wikipedia, Wikisource, Britannica), HistoCrypt article list, Eric Sams essay; none names this letter.
+5. Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Wilhelm Oranien Hessen Geheimschrift` -- only archive/
+   index pages of the blog; no post on Orange, Hesse or this letter.
+6. Cryptiana blog: `site:cryptiana.blogspot.com Orange Hesse cipher` -- no cryptiana.blogspot.com result returned.
+7. Cipher Mysteries: `site:ciphermysteries.com William of Orange cipher Hesse` -- no ciphermysteries.com result returned.
+No blog post about this letter, so no comment thread to read. No decipherment or plaintext found on the open web.
+
+## Premise check (GF-A2-4, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions -- **found, by the folder's own Source section**: WVO's Opmerkingen for
+briefnr 1127 says "De minuut geeft de complete tekst" -- the Marburg draft (HStAM 3II, Korr. 1567, f.151r-152v, free
+WVO PDF 01127.pdf) carries the complete text of which part is enciphered in the KHA original. If the draft and the
+fair copy agree in wording (the caveat already logged in Source, unresolved because the KHA original is not imaged),
+the plaintext of the cipher passage is already known from the draft, and any reading of the original is a key
+recovery against a known text, not an unread cipher. The sibling decipherments the folder mentions (1069's interlinear
+gloss, 174's alphabet key) are of other letters and were opened by earlier workers (OX-WVH, OX-WV69, YX-HES69).
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026),
+grep for `1127`, `Hessen|Hesse`, `wvo|oranje|orange-nassau|huygens` -- no file about this letter or WVO 1127 (the `1127`
+hits are token ids in starhemberg-1758 and ottobon-1589; the Hesse hits are DECODE BL Add MS 32270 Hesse-Cassel keys of
+1719-1761, another century). Aymeloglu cited, not copied. Not found.
+(c) Physical neighbours: the cipher's own leaf (KHA A 11/XIV B/15-43) is not imaged (REQUEST.md), so its facing page
+and neighbours could not be viewed -- unreachable from here; the draft's own leaves are in hand (01127.pdf). Unreachable.
+(d) Recipient's side: Groen van Prinsterer, Archives 1e s. t.III (the Orange-side edition) -- full-text search already
+logged in this file's head line, letter absent; DBNL page CCLXXVIII (22 June 1567) opened this pass, another letter. Not
+found in print.
+Result: (a) is a find -- the plaintext is held (per the WVO curators) in the minuut; flagged in ROOM.md to the account-3
+orchestrator. Status line left unchanged, per brief.
