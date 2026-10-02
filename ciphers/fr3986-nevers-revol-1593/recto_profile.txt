@@ -1,0 +1,30 @@
+recto pass A: 264 signs, 83 distinct tags; confidence {'L': 97, 'M': 167}
+  NEW (no atlas/key shape fits): 24 tokens (9.1%), 19 distinct
+  tokens whose tag is an atlas exemplar tag: 120/264 = 45.5% (21 of 41 atlas tags used)
+  tokens whose tag is a key60 tag: 223/264 = 84.5%; not key60 and not NEW: 17 (['+c', 'a', 'h', 'i', 'u', '·', 'γ'])
+verso v2: 55 signs, 40 distinct; in atlas tags 16/55
+shared distinct tags recto/verso: 22 (['+', '++', '+o', '20', '3', '4', '5', '7', 'E', 'T', 'd', 'g', 'll', 'o-', 'pi', 'q', 'v', 'x', 'η', 'λ', '‡', '∂']); verso tokens covered by recto tag set: 33/55
+Pearson r of tag relative frequencies, recto vs verso, over 82 tags: 0.0001 (verso N=55: weak test)
+matched comparison, same atlas sheet and tag list, blind Sonnet passes (tokens on atlas tags / key60 tags / NEW or described / H-confidence):
+  leaf 298 office hand, passD (instrument read 65/65): N=145 atlas 75.9% key 91.0% new 0.0% H 57.2%
+  f.198 verso passA (GAPS3, agreement 36%): N=66 atlas 6.1% key 34.8% new 19.7% H 21.2%
+  f.198 verso passB (GAPS3): N=73 atlas 46.6% key 68.5% new 9.6% H 13.7%
+  f.198 recto passA (this step): N=264 atlas 45.5% key 84.5% new 9.1% H 0.0%
+top 15 recto tags (count, in atlas?, verso count):
+  x	23	atlas	2
+  ++	12	atlas	1
+  y	12	atlas	0
+  4+	9	key	0
+  T	8	atlas	2
+  n	8	atlas	0
+  L	8	key	0
+  o	7	key	0
+  q	7	key	1
+  ∂	7	key	2
+  c	7	atlas	0
+  p	7	key	0
+  g	7	atlas	1
+  ·	7	-	0
+  ⊥	6	key	0
+top 10 verso tags: η 3, λ 3, ß 2, d 2, x 2, p3 2, phi 2, ll 2, T 2, 4 2
+NEW shapes: semicolon-dot x4; r-hook x2; curl x2; z-like-with-tail x1; s-loop x1; z-hook x1; j-dotted x1; o-cross x1; cross-flourish x1; phi-cross-dot x1; cursive-n x1; phi-barred x1; g-flourish x1; v-hook x1; L-flourish x1; g3-like x1; alpha-barred-tick x1; circle-dot x1; slashed-vertical x1
