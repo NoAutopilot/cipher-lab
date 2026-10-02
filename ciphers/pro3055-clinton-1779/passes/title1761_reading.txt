@@ -1,0 +1,33 @@
+# Title page of A List of the General and Field-Officers ... Complete for 1761 (London: J. Millan), archive.org
+# listofgeneralfie00grea_0 leaf n4 (images/armylist/n4.jpg), reconciled by GAPS3-pro3055-clinton-1779 (2 Oct 2026) from the
+# blind Sonnet pass passes/title1761_passA.tsv (37 rows, 2 [?] marks, both in the bookseller's advertisement) and the
+# worker's own read of the page preview; the two agree on every title-block line. One printed line per line, in order;
+# black-letter CORPS and ARMY in ordinary letters; long s as s. This is the 1761 EDITION, not the 1778 key book
+# (Tomokiyo, haldimand.htm l.99: "clearer copies, albeit of different editions"); see title_1761_check.py.
+By PERMISSION of the RIGHT HONOURABLE
+The SECRETARY at WAR.
+A
+LIST
+OF THE
+GENERAL and FIELD-OFFICERS,
+As they Rank in the ARMY.
+Of the OFFICERS,
+IN THE
+SEVERAL REGIMENTS
+OF
+HORSE, DRAGOONS, and FOOT,
+ON THE
+BRITISH and IRISH ESTABLISHMENTS:
+WITH
+The Dates of their COMMISSIONS, as they Rank in each
+CORPS, and as they Rank in the ARMY.
+The Royal REGIMENT of ARTILLERY, IRISH ARTILLERY.
+ENGINEERS, INDEPENDENT COMPANIES, and MARINES.
+GOVERNORS, LIEUTENANT-GOVERNORS, of His Majesty'
+GARRISONS at Home and Abroad, with their ALLOWANCES, and the
+OFFICERS on HALF PAY, &c. Complete for 1761.
+To which is added,
+The SUCCESSION of COLONELS.
+LONDON:
+Printed for J. MILLAN, opposite the Admiralty-Office, Whitehall.
+Just published,

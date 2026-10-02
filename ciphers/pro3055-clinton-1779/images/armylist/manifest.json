@@ -1,0 +1,34 @@
+{
+ "source": "A List of the General and Field-Officers, as they rank in the Army ... Complete for 1761 (London: J. Millan), John Carter Brown Library copy on archive.org as listofgeneralfie00grea_0 (220 images). This is the 1761 EDITION of the Army List whose 1778 title page is the Clinton-Haldimand book-cipher key (Tomokiyo, haldimand.htm l.99, links this item with the note 'clearer copies, albeit of different editions'); the title page here is not the key, it is a different printing of the same title used to read wording where the 2894 cells agree with it (passes/title_1761_check.py).",
+ "item_url": "https://archive.org/details/listofgeneralfie00grea_0",
+ "metadata_url": "https://archive.org/metadata/listofgeneralfie00grea_0",
+ "fetched": "2 October 2026, 05:2x UTC (GAPS3-pro3055-clinton-1779, account-4)",
+ "requests": "archive.org 3 (metadata JSON; page/n3.jpg; page/n4.jpg), 1.6 s apart, descriptive User-Agent; no other host",
+ "files": [
+  {
+   "file": "metadata.json",
+   "url": "https://archive.org/metadata/listofgeneralfie00grea_0",
+   "bytes": 47594,
+   "note": "item metadata: date 1761, publisher J. Millan, imagecount 220"
+  },
+  {
+   "file": "n4_w2400.jpg",
+   "leaf": "n4",
+   "url": "https://archive.org/download/listofgeneralfie00grea_0/page/n4.jpg",
+   "native_px": "3243x5221",
+   "native_bytes": 1661765,
+   "bytes": 1288611,
+   "note": "the title page (recto), stored resized to 2400 px wide, JPEG q78, to keep the folder under 30 MiB; the native file is the URL above, one request"
+  },
+  {
+   "file": "(not kept) n3.jpg",
+   "leaf": "n3",
+   "url": "https://archive.org/download/listofgeneralfie00grea_0/page/n3.jpg",
+   "native_px": "3243x5163",
+   "native_bytes": 1081442,
+   "note": "a blank flyleaf verso: Tomokiyo's viewer link .../page/n3/mode/2up shows the two-page spread n3|n4, so the title page is n4; fetched and deleted, not the key page"
+  }
+ ],
+ "crops": "lines/manifest.json records the 14 bands x 2 segments cut by `python3 tools/iiif_lines.py --image ciphers/pro3055-clinton-1779/images/armylist/n4.jpg --out ciphers/pro3055-clinton-1779/images/armylist/lines --debug` on the native n4.jpg (pitch 279, distance 195, prominence 486.4; boxes in the manifest); the 28 crop files and the debug overlay were deleted after the one blind pass (passes/title1761_passA.tsv) to keep the folder under 30 MiB and regenerate from the native file with the same command",
+ "rights": "1761 printed book, public domain; JCB Library scan on archive.org"
+}
