@@ -21,7 +21,7 @@ def build(n):
                 pr.append(f"{page}\t{line}\t{idx}\t{w+1}\t{t}\t{u}")
     return {f"ciphertext_{n}.tsv": "\n".join(ct) + "\n", f"pairs_{n}.tsv": "\n".join(pr) + "\n"}
 check = "--check" in sys.argv
-ns = [a for a in sys.argv[1:] if not a.startswith("-")] or ["74", "98"]
+ns = [a for a in sys.argv[1:] if not a.startswith("-")] or ["74", "98", "124"]
 bad = 0
 for n in ns:
     if not os.path.exists(f"{D}/align_{n}.txt"): continue

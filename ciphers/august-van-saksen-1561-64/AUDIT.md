@@ -831,3 +831,10 @@ Loc. 8510/5 f.134 cipher, f.135 contemporary decipherment) is System B and settl
 M 26); the sense of the passage is unchanged. K ('die' by context) conflicts with 124's one K = 'der' and stays M.
 The SECOND-OPINIONS-QUEUE row SO-SAXONY-126 is already `checked`; the one changed word is logged here for a verifier.
 Groen, Archives I 231-233 (LETTRE LXXXII) prints only 124's clear letter, not its cipher enclosure or decipherment.
+
+## Grade revision carried in (2 Oct 2026, A2-AVS4, solver side; no class change made here)
+
+Rule 10 propagation note, not a verdict. key_98 was rebuilt from 98's f.67 pairs plus a full alignment of WVO 124 f.134
+against its decipherment f.135 (align_124.txt, NOTES.md "A2-AVS4"): EL8 'das' and R 'E.L.' are now grade C, so 126 is 240
+tokens C 229, M 11 (was C 224, M 16). No word of reading_126.txt changed; SO-SAXONY-126 needs no update. The key source
+for 126 is now two period decipherments of System B (f.67 and f.135), both `period` in the rule-10 key-source sense.

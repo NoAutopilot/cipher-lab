@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Derive key_74.tsv, key_98.tsv, key.tsv (both systems) and key_conflicts.tsv from pairs_74/98.tsv (R21).
+"""Derive key_74.tsv, key_98.tsv, key.tsv (both systems) and key_conflicts.tsv from pairs_74/98.tsv (R21);
+System B also takes pairs_124.tsv (WVO 124 f.134 against its decipherment f.135, A2-AVS4, 2 Oct 2026).
 A sign whose sure aligned units all agree gets that unit at grade C (known plaintext); pairings marked '~' (or on
 a sign read with '?') do not set the value when sure pairings exist, but are listed in key_conflicts.tsv;
 disagreeing sure units give grade M and 'a|b'. u and v are merged. '?' units are ignored. --check: exit 1 if stale."""
@@ -9,7 +10,8 @@ out = {}
 allrows, conf = ["system\tsign\tvalue\tgrade\tn\tunits"], ["system\tsign\tunits"]
 for sysn in ("74", "98"):
     m = collections.defaultdict(collections.Counter)
-    for r in csv.DictReader(open(f"{D}/pairs_{sysn}.tsv", encoding="utf-8"), delimiter="\t"):
+    srcs = {"74": ["74"], "98": ["98", "124"]}[sysn]
+    for r in (r for n in srcs for r in csv.DictReader(open(f"{D}/pairs_{n}.tsv", encoding="utf-8"), delimiter="\t")):
         u = r["unit"]
         if r["sign"].endswith("?") and not u.endswith("~"): u += "~"   # doubtful sign: pairing counts as uncertain
         m[r["sign"].rstrip("?")][u] += 1
@@ -27,7 +29,7 @@ for sysn in ("74", "98"):
         grade = "C" if firm and len(firm) == 1 else "M"
         n = sum(firm.values()) + sum(loose.values())
         units = ",".join(f"{u}:{k}" for u, k in sorted(c.items(), key=lambda x: -x[1]))
-        rows.append(f"{s}\t{'|'.join(vals)}\t{grade}\tpairs_{sysn}.tsv\tn={n} {units}")
+        rows.append(f"{s}\t{'|'.join(vals)}\t{grade}\t{'+'.join('pairs_%s.tsv' % x for x in srcs)}\tn={n} {units}")
         allrows.append(f"{sysn}\t{s}\t{'|'.join(vals)}\t{grade}\t{n}\t{units}")
         if len(set(firm) | set(loose)) > 1: conf.append(f"{sysn}\t{s}\t{units}")
     out[f"key_{sysn}.tsv"] = "\n".join(rows) + "\n"
