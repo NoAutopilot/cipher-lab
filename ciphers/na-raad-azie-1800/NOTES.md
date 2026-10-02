@@ -273,3 +273,64 @@ plaintext expected. A rescan of leaf 3 at better exposure/contrast would help be
 attempt. Separately: test whether invnr 317's keyword-table system matches any other undeciphered Dutch
 diplomatic cipher already on file from this period (the same "M12 key-only" pattern as VX-E02's Legatie
 Turkije nomenclator).
+
+## Web and blog check (GF-A2-8, 2 Oct 2026)
+
+Plain web searches (WebSearch, standard):
+1. `Prediger Smissaert 1800 cijfer Raad der Aziatische Bezittingen` (sender + recipient + date): parlement.com and DBNL
+   biographies of the Smissaerts (J.C. Smissaert was secretary-general of the Comité / Raad 1796-1806), the NA
+   2.01.27.02 finding-aid PDF (already grepped by VX-CS06), a Van Braam Wikipedia page. No decipherment of invnr 209.
+2. `"2.01.27.02" 209 OR 317 cijfer Elout Grasveld` (shelfmark + cipher word): only civil-engineering, postcode and
+   tender pages. No hit.
+3. `"Nebawo" cijfer OR "De zaak zal geld kosten"` (the two distinctive clear-text strings on invnr 317's worked example,
+   quoted): only Dutch legal-aid forum pages. Neither string is on the open web.
+4. `Elout Van Grasveld commissarissen-generaal 1805 cipher key secret correspondence East Indies` (descriptive title):
+   Elout Wikipedia/parlement.com, Van Grasveld parlement.com, NA 2.21.059 finding-aid PDF, a DBNL Molhuysen entry, and
+   the Tartu repository item "The Codebook of Willem Six van Oterleek: Dutch Diplomatic Intelligence from Saint
+   Petersburg between 1806-1810". By title and snippet that item covers a different envoy and office, and it does not
+   name 2.01.27.02, Prediger or Smissaert. It was not opened further.
+Blog site searches:
+5. Cipherbrain (`site:scienceblogs.de`), "Prediger Smissaert Dutch cipher 1800": the only plausible hit, "The Top 50
+   unsolved encrypted messages: 34. Unsolved nomenclator messages" (24 Apr 2017), was opened and its body and comment
+   thread (965 text lines, 23 comment markers) grepped for prediger|smissaert|aziatisch|batavia|indies|1800|dutch. It
+   carries a Dutch nomenclator from Karl de Leeuw and the Dedem van Gelder 1809 message, plus the remark that Dutch
+   nomenclators from 1800 on are "quite tough". It does not touch the Raad, Prediger or invnr 209.
+6. Cryptiana (`site:cryptiana.blogspot.com`, `cryptiana.web.fc2.com`), "Dutch East Indies cipher 1800 Prediger": only
+   arXiv and unrelated pages. No hit.
+7. Cipher Mysteries (`site:ciphermysteries.com`), "Dutch East Indies cipher 1800 Batavian": La Buse posts and an "Indus"
+   ship-history post. Nothing on this correspondence.
+No decipherment or plaintext of invnr 209 (or of anything enciphered with invnr 317's table) was found on the open web
+or in a blog comment thread.
+
+## Premise check (GF-A2-8, 2 Oct 2026)
+
+(a) Decipherments the folder mentions: **none for invnr 209.** NOTES.md records all five leaves of 209 eye-checked by
+VX-CS04: leaves 1, 4 and 5 plain Dutch, leaves 2-3 cipher with no interlinear gloss, and leaf 3 a faint bleed-through.
+The second row of single digits under the cipher groups is unexplained; it is not a gloss in letters. Invnr 317 is a
+key (a reciprocal 13-row table plus a worked example) with no ciphertext of its own. VX-CS06's cheap test showed it
+cannot be 209's key: 0 of 67 tokens in its letter domain, against a 100% round-trip control. No clear copy, "attached"
+decipherment or later-hand note is mentioned anywhere in the folder or spec.
+(b) Other solvers' working files: **no rendering of this item; one key-family lead.** Fresh shallow clones (2 Oct 2026)
+of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers, grepped for prediger|smissaert|grasveld|aziatische|2.01.27.
+Aymeloglu: no hit. Bourdeau:
+- `targets/toulon1803/NOTES.md` quotes NA 2.21.227 item 335, a *Correspondentiecijffer* annotated "eerst voor den
+  minister van Grasveld in anno 1799, nu in anno 1801 voor den Minister van Dedem ...". That is Van Grasveld as Batavian
+  minister in 1799, an ordered dictionary code with six mark series, values 1-992, its booklet surviving as NA 2.21.045
+  inv. 34313.
+- `targets/r2242/NOTES.md` line 98 has a partial reading "sitteren [van] grasveld" in a 1795 Orangist letter, a
+  different system.
+- The other substring hits are corpus files.
+Neither applies a key to invnr 209 or invnr 317. The 1799 Grasveld code is a plausible family lead for Batavian-era
+government cipher, but 209 is a Raad correspondence (Prediger to Smissaert, 20 Nov 1800) in 5-14-digit groups with a
+digit row beneath, which looks unlike a 1-992 marked code. **Not tested**: the next step would be to compare 209's
+groups with that code's structure, which is a solver's job and not this pass's. Cited, not copied.
+(c) Physical neighbours: invnr 209's own five leaves were all viewed by VX-CS04, so there is no unviewed facing page
+inside the item. The neighbouring inventory numbers of 2.01.27.02 (208, 210) were not opened. The whole-toegang
+finding-aid grep (VX-CS06) found only 209 and 317 for cijfer/geheimschrift/chiffre, so no catalogued decipherment
+sits nearby. **Not found.**
+(d) Recipient's side: Smissaert, as secretary of the Raad in The Hague, is the recipient, and the folder already searched
+the Hague side (Colenbrander *Gedenkstukken* III-IV, full-text, VX-CS06). The sender's side is Prediger at the Cape
+or Batavia; the folder records his commissarial role in 1.04.17. That means the Hoge Regering / commissarial copy
+registers, whose bulk is at ANRI Jakarta. Those were **not searched** (no online route tried this pass), and
+nothing in the folder says a copy register holds a clear draft of this letter. **Not found / unreachable.**
+Requests: scienceblogs.de 1, github.com clones shared with the other three GF-A2-8 targets, WebSearch 7.
