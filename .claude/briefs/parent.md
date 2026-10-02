@@ -341,12 +341,14 @@ Three archive replies (Marburg 15:03, Bodleian 15:26, Adirondack 18:09 UTC) sat 
 ## Standby on account 3 (28 Sept 2026, 20:3x UTC, owner-requested)
 A standby orchestrator on account 3 (hub-seed/STANDBY-3.md) takes over if no "| orchestrator (owner account) |" ROOM line appears for 150 minutes, or on a "HANDOFF to account 3" line. So: post that ROOM line at every check-in; mirror the check-in prompt to hub-seed/CHECKIN-PROMPT.md whenever it changes; post HANDOFF when this account's rate limit reads rejected; on a TAKEOVER line newer than yours, follow the file's Handback before anything else.
 
-## Orchestrator fallback chain (owner, 2 Oct 2026 01:2x UTC; generalizes "Standby on account 3")
+## Orchestrator fallback chain (owner, 2 Oct 2026 01:2x UTC, four accounts 01:3x; generalizes "Standby on account 3")
 There is one orchestrator at a time, on whichever account holds the role. It posts `| orchestrator (<account>) | check-in ...`
 in ROOM.md at every check-in (at least every 90 minutes while it holds the role), and `HANDOFF` when its usage reads
-`rejected` or it is about to stop. Every other account that runs a parent session is a standby in this order:
-**owner -> account 3 -> account 4** (skipping the account that holds the role; account 2 has only a dispatcher and is never
-a standby). At its own check-ins, a standby parent reads the newest orchestrator line; it takes over when that line is 150
+`rejected` or it is about to stop. All four accounts are standbys, in this order:
+**owner -> account 2 -> account 3 -> account 4** (skipping the account that holds the role). Account 2 has no parent
+session; its hourly dispatcher runs the standby check at every firing and, when account 2 is the one to take over, creates
+a parent session on account 2 with the takeover prompt (dispatcher.md "Standby check"). At its own check-ins (or
+firing), a standby reads the newest orchestrator line; it takes over when that line is 150
 minutes old or older, or is a `HANDOFF`, and it is the first account after the silent one in the chain that is itself
 alive (its own last ROOM line under 150 minutes old). Takeover: post `| orchestrator (<account>) | TAKEOVER from <account>`
 first -- the earliest TAKEOVER line in ROOM.md wins and any later one stands down at once -- then read the previous holder's

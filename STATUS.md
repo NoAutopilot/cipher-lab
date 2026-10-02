@@ -137,8 +137,8 @@ step on the 12 partial targets not queued to account 2 (moray-wood-1568 ... well
 
 The owner made account 3 the orchestrator for all accounts on 2 Oct 2026 ("point all of our fire power"). Account 3 carries
 the seven-day `allowed_warning` (resets Sat 3 Oct about 08:00 UTC), so this section is the fallback: **under parent.md "Orchestrator
-fallback chain" (150 minutes without an `| orchestrator (account 3) |` line, or a HANDOFF), the next live standby (account 4)
-takes over the items below** (TAKEOVER line first). Debosnys and cipher-lab-private stay account 3's.
+fallback chain" (150 minutes without an `| orchestrator (account 3) |` line, or a HANDOFF), the next live standby in owner -> account 2 -> account 3 -> account 4
+(account 4, then account 2's dispatcher) takes over the items below** (TAKEOVER line first). Debosnys and cipher-lab-private stay account 3's.
 
 In flight (account 3):
 1. Workflow finish-pass-bourdeau (in this session): all 25 partial targets now carry "## Remaining gaps / ## Escalation"

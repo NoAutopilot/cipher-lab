@@ -30,3 +30,19 @@ You are the cipher-lab dispatcher, the standing poller on the second account (SP
 
 
 **Model under a warning (29 Sept 2026 02:2x UTC).** A row that names Fable is spawned on Fable while Fable answers. `allowed_warning` on either window is not a reason to spawn on Opus 5.5; only a failed Fable turn or `rejected` is (BUDGETS.md "Model choice under a warning"). Never below Opus 5.5.
+
+## Standby check (2 Oct 2026, owner: all four accounts are in the orchestrator fallback chain)
+
+At every firing, after the queue rows: find the newest ROOM.md line matching `| orchestrator (` (and any `TAKEOVER` or
+`HANDOFF` line newer than it) and compare its time with `date -u`. Account 2 takes over only when (a) that line is 150
+minutes old or older, or is a `HANDOFF`, AND (b) account 2 is the first account after the silent holder in the chain
+owner -> account 2 -> account 3 -> account 4 whose own newest ROOM line is under 150 minutes old (the owner account has no
+live line, so after account 4 the next is account 2), AND (c) no `TAKEOVER` line is newer than the silent holder's last
+line. Then: post `| orchestrator (account 2) | TAKEOVER from <account>` with tools/room.py first, and create_session on this
+account (source_url https://github.com/NoAutopilot/cipher-lab, model claude-opus-5-5 or Fable if it answers, title
+'LIVE orchestrator (account 2, takeover)') with the prompt: "You are the cipher-lab orchestrator on account 2 after a
+TAKEOVER (parent.md 'Orchestrator fallback chain'). Read .claude/briefs/parent.md, then STATUS.md's handoff section of the
+account you took over from and the WIP branch it names, run tools/orphan_check.py, post '| orchestrator (account 2) |
+check-in ...' at least every 90 minutes, and continue its queue. Never touch the private repository. Never call
+AskUserQuestion; never print credentials; never name the owner." Otherwise do nothing for the standby (no ROOM line).
+
