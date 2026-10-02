@@ -619,3 +619,89 @@ built the printed key from it): our reading is a re-decipherment and a calibrati
 Key `published` (Tomokiyo) + one sign fitted by us. Rule 7 re-derivation reproduces exactly (H0 C4 S681 M146 I1 U21 of
 853). Correction: the z 4.84 / S 532 and passage z 4.60 figures are fitted-key (T42 = m), not printed-key, figures.
 The seven target letters ff.138-184 remain unread and unclassed.
+
+## Premise check (PREMISE-NEVBIR, 2 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-02-acct3-premise-nevbir.md`, the adversarial Premise check of
+`.claude/briefs/check-solved.md` run against all seven undeciphered 1572 letters before any first test. Search
+only; no transcription, no decoding, no class, no novelty wording. Clock read with `date -u`: box 13:11-13:51 UTC.
+
+**(a) the folder's own NOTES.md / REQUEST.md / AUDIT.md / harvest files.** Every mention of a decipherment, gloss,
+interlinear, clear copy, "attached" or "dechiffrement" anywhere in this folder names no.87 only (f.178, out of
+scope, N0 per AUDIT.md -- the laid-in sheet on canvas 182). Nothing in NOTES.md, REQUEST.md, AUDIT.md, HYPOTHESES.md
+or harvest/ names a decipherment, gloss or attachment for f.138, f.144, f.152, f.160/162, f.168, f.168/170, or f.184
+(grepped for each folio number). **Not found, for all seven.**
+
+**(b) the other solvers' working files.** `dbourdeau/cyphersolver` and `aaymeloglu/unsolved-ciphers` cloned fresh
+this session (not re-used from the 2 Oct verifier's clone). Bourdeau's `targets/birago/` (NOTES.md, profile.json,
+find_digits.py) is entirely about **f.119** (no.63, 13 Nov 1571, the separate numeric-cipher paragraph), not any of
+the seven target letters -- not solved there either ("Final state: not solved"). Bourdeau's own catalogue states it
+directly: `SOLVED_CATALOGUE.md` row "Birago and Ceppo to Nevers (about 13 letters)" (checked by him 22 Sept 2026):
+"In fr. 3251, ff. 27, 39, 82 and 178 carry contemporary decipherments... ff. 11, 21v, 35, 87, **138-174, 184** ...
+have no published reading" -- naming six of our seven folios directly (138-174 spans 138/144/152/160or162/168/170or174
+by his own folio citation) plus 184, as unread; this matches Tomokiyo's nevers.htm, which marks none of the seven
+"(with decipherment)" (only no.87 is named as the source of the key). Bourdeau's `find_digits.py` sibling sweep
+(16 Sept 2026) screened all 118 remaining openings of this same volume (views 88-207) for a *second numeric-cipher*
+passage, not for a decipherment sheet; its five flagged candidates (views 99/100/107/109/156) were all confirmed
+plain text on inspection (letters of 22 Sept 1571, a relation, a letter of 30 Aug 1571, one of 15 June 1572) -- none
+is a decipherment of a 1572 Nevers-Birago letter, and the sweep was not built to find one (it looks for digit runs,
+not prose glosses). `aaymeloglu/unsolved-ciphers`'s `catalogue/decode-catalog.csv` has Birago records only for
+BnF fr.3619/3621/3623 (1591-92, already Decrypted per DECODE, a different cipher and decade); no fr.3251 record of
+any kind. **Not found, for all seven**; Bourdeau's own catalogue line is the strongest and most explicit negative
+available and is quoted in full above.
+
+**(c) physical neighbours on Gallica.** Eye-checked (own looks, 1000px overviews, no vision-model calls, no
+transcription) for six of the seven folios this session; f.138 reuses HARVEST-D2's existing fetch (canvas 139-140,
+28 Sept 2026). None of the pages checked shows an interlinear gloss, a facing decipherment, or a loose/tipped-in
+sheet over the *cipher* text, unlike no.87's canvas 182.
+
+| folio | no. | canvas(es) checked this job | ink foliation confirmed | what's on the page(s) | gloss/sheet found? |
+|---|---|---|---|---|---|
+| f.138 | 71 | 139, 140 (HARVEST-D2, reused) | 138 | clear text only; letter's own cipher insertion not yet located (runs past f.139r) | not checked past f.139r (not this job's scope) |
+| f.144 | 73 | 146, 147 | 144, 145 | f.144r: one short inline cipher/nomenclator run mid-prose; f.144v-145r: plain, letter ends 27 Mar 1572 | **not found** |
+| f.152 | 77 | 154, 155 | 152 (+ a second, fainter stamp, two numbering systems overlap from here on) | f.152r: one short inline cipher run mid-prose; f.152v: plain | not found on the pages checked; rest of letter not located |
+| f.160/**162** | 82 | 163, 165, 166 | 161, 162 | f.160 itself belongs to a *different* item (no.81, Requesens to Birago, in Spanish) per the finding aid, not to no.82 -- see folio correction below; two small loose Italian-language slips tipped in nearby (canvas 165, canvas 166) are plain prose (an "avviso"-style note on troop movements, unrelated subject), **not** decipherments of the cipher letter | not found; no.82's own cipher line not located this job |
+| f.168 | 85 | 171 | 168 | f.168r: one short inline cipher run mid-prose | not found on the page checked; rest of letter not located |
+| f.174/**170** | 86 | 170, 173 | 167, 170 | f.170r: opening/address block only, no cipher visible yet on this one page | not found; cipher line (if on this leaf) not located this job |
+| f.184 | 90 | 188, 189, 190 | 184, 185, 187 | f.184r: two dense lines of cipher signs; f.185: whole page of cipher signs (much denser than the other six); f.186v-187r: letter ends 2 Oct 1572, next item (Carolo Birago, 28 Nov) begins directly | **not found** -- nothing laid in between the end of no.90's cipher and the next item, unlike no.87 |
+
+**Folio-citation correction (new this session, from the BnF's own finding aid, not from Tomokiyo).**
+`archivesetmanuscrits.bnf.fr/ark:/12148/cc49712p` (fetched and read in full this job) gives, item by item: no.71 =
+Fol.138, no.73 = Fol.144, no.77 = Fol.152, no.85 = Fol.168, no.87 = Fol.178, no.90 = Fol.184 -- all matching this
+folder's existing table and Tomokiyo exactly -- **but no.82 = Fol.162 (not f.160) and no.86 = Fol.170 (not
+f.174)**, confirmed by eye-checked ink foliation this job (canvas 166 right page stamped '162' ends a Birago
+letter; canvas 173 right page stamped '170' opens one). Dates match Tomokiyo exactly for both (27 June and 27 Aug
+1572), so these are the same two letters, just cited under different folio numbers by the two sources -- not a
+second pair of letters. **This folder's own "Undeciphered" table above and `images/manifest.json`'s canvas notes
+still read f.160 and f.174**; a worker doing deep work on no.82 or no.86 should eye-check the ink foliation
+directly rather than trust either citation (the standing fr.20140/NEV-C1 lesson), and the table should be corrected
+before a transcription brief is written against it. Not fixed in the table itself by this job (search-only brief;
+the table is load-bearing for other in-flight work and a premise-check worker edits additively, not a structural
+rewrite, without flagging it for the owning session first) -- flagged here and in images/manifest.json instead.
+
+**(d) recipient-side print.** `ciphers/nevers-birago-fr3251-1572/AUDIT.md`'s search log (2 Oct 2026, this target's
+own verifier, for no.87) already ran Google Books (`country=US`, keyed) and IA full-text for "Lodovico Birago"
+Nevers 1572 broadly and found only modern Piedmont/Saluzzo local-history secondary works (Saluzzo e i suoi
+valligiani, Dizionario Biografico degli Italiani, local chronicles), never a documentary edition of the
+correspondence. Repeated this job with two more queries to extend coverage: IA fts `"Birago" "Nevers" "Saluzzo"`
+(2,666 hits, the same handful of Piedmont-history volumes at the top, same as AUDIT.md's prior read, nothing new
+opened); Google Books `"Mémoires de Nevers" Gomberville` (46 hits: Revue des questions historiques, Lettres de
+Catherine de Médicis, Gomberville's own novels -- the 1665 Mémoires edition itself was not confirmed reachable or
+its date-coverage checked this session). **Not found** on the queries run; **unreachable/not independently
+confirmed** whether the 1665 Gomberville Mémoires de Nevers edition (focused, by its usual description, on
+Nevers's League-era 1580s-90s papers rather than his 1570-72 correspondence as a young man) covers this early
+period at all -- a worker with more budget should open that edition's table of contents or index directly rather
+than rely on phrase search alone. No Italian/Savoyard documentary edition of Birago's Saluzzo governorship
+correspondence was located or ruled out this session (not searched in Italian-language sources this job; English/
+French-language IA and Google Books only).
+
+**Verdict, per folio: all seven CLEAR TO TEST**, with the caveats above (f.138's, f.152's, f.168's and f.170's own
+cipher passages are not yet located on the image, f.162's not even opened; (d) is not exhaustive). No decipherment,
+gloss, or laid-in sheet was found for any of the seven on what was checked -- the no.87 precedent (a decipherment
+physically filed with the letter) does not recur here on the pages sampled, and Bourdeau's own catalogue
+independently confirms all seven as unread. Nothing here promotes any of the seven to CALIBRATION or FOUND-SOLVED.
+
+Requests: gallica.bnf.fr 17 (see `images/manifest.json` "PREMISE-NEVBIR_2_Oct_2026_canvases"); be-api.us.archive.org
+2; googleapis.com 2; archivesetmanuscrits.bnf.fr 1; github.com 2 clones (dbourdeau/cyphersolver, aaymeloglu/
+unsolved-ciphers, both fresh, removed from scratch after use). No vision-model calls (own looks only, per brief).
+No credentials. No AskUserQuestion.
