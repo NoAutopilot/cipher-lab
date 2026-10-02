@@ -1,0 +1,55 @@
+{
+ "record": "DECODE R8345, London, British Library, Add MS 32091 f 213-214 (BL_Add_MS_32091_213)",
+ "fetched": "2 October 2026 (GAPS-moray-wood-1568, account-4)",
+ "fetch_method": "login-free: curl with the descriptive User-Agent on RecordsView/8345 (served with IS_LOGGEDIN:false), then the four TH_IMG thumbnails the page links from /decrypt-custom/filesrv; no login attempted; 5 requests, 1.6 s apart",
+ "record_fields": {
+  "status": "Non-decrypted",
+  "cipher_type": "Unknown",
+  "symbol_sets": "Graphic signs",
+  "pages": 2,
+  "access_mode": "Authentication required",
+  "creation_date": "2024-09-13 14:32:47",
+  "document": "Elizabeth_Moray [transc], DOC_8345_2024-Sep-14-08-32-51_70494.txt (not fetched: .txt attachments come back as the forbidden.png placeholder, sources/decode/NOTES.md 24 Sept 2026)"
+ },
+ "full_size_not_fetched": [
+  "IMG_R8345_I38545_P1.jpg",
+  "IMG_R8345_I38545_P2.jpg",
+  "IMG_R8345_I38545_P3.jpg",
+  "IMG_R8345_I38545_P4.jpg"
+ ],
+ "full_size_note": "named in the page modal alt text; needs one login via tools/decode_browser_login.js (ASKS row 42 answered 28 Sept 2026); out of this pass scope",
+ "images": [
+  {
+   "file": "TH_IMG_R8345_I38545_P1.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8345_I38545_P1.jpg",
+   "bytes": 12061,
+   "sha1": "b85dc1be0e4f19b6cc6e7686eda92759551f9fd8",
+   "pixels": "200x259",
+   "date": "2 October 2026"
+  },
+  {
+   "file": "TH_IMG_R8345_I38545_P2.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8345_I38545_P2.jpg",
+   "bytes": 9838,
+   "sha1": "0db69f40cdebd12db4e84bcdcb873b9a9e22d101",
+   "pixels": "200x259",
+   "date": "2 October 2026"
+  },
+  {
+   "file": "TH_IMG_R8345_I38545_P3.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8345_I38545_P3.jpg",
+   "bytes": 8983,
+   "sha1": "e1f35f4546fe7345db3cb3d8297c9eeda49fd2e5",
+   "pixels": "200x278",
+   "date": "2 October 2026"
+  },
+  {
+   "file": "TH_IMG_R8345_I38545_P4.jpg",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8345_I38545_P4.jpg",
+   "bytes": 12904,
+   "sha1": "37a87c0b23aec13762dac0aaa24d8d850440b2f9",
+   "pixels": "200x278",
+   "date": "2 October 2026"
+  }
+ ]
+}
