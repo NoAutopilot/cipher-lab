@@ -1,0 +1,166 @@
+{
+ "iiif_lines": [
+  {
+   "crop": "ho298_L01_s1.jpg",
+   "source_url": "",
+   "source_file": "f3986_c298_region.jpg",
+   "box": [
+    0,
+    300,
+    1900,
+    380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     347,
+     451,
+     564
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "GAPS-fr3986-2 (2 Oct 2026): band trimmed to region y 300-380 so the interlined gloss above is masked (gloss baseline about +17 px below its centre); held-out crop for the blind pass"
+  },
+  {
+   "crop": "ho298_L01_s2.jpg",
+   "source_url": "",
+   "source_file": "f3986_c298_region.jpg",
+   "box": [
+    1712,
+    300,
+    3612,
+    380
+   ],
+   "lines_in_crop": 1,
+   "band": 1,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     347,
+     451,
+     564
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "GAPS-fr3986-2 (2 Oct 2026): band trimmed to region y 300-380 so the interlined gloss above is masked (gloss baseline about +17 px below its centre); held-out crop for the blind pass"
+  },
+  {
+   "crop": "ho298_L02_s1.jpg",
+   "source_url": "",
+   "source_file": "f3986_c298_region.jpg",
+   "box": [
+    0,
+    422,
+    1900,
+    485
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     347,
+     451,
+     564
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "GAPS-fr3986-2 (2 Oct 2026): band trimmed to region y 422-485 so the interlined gloss above is masked (gloss baseline about +17 px below its centre); held-out crop for the blind pass"
+  },
+  {
+   "crop": "ho298_L02_s2.jpg",
+   "source_url": "",
+   "source_file": "f3986_c298_region.jpg",
+   "box": [
+    1712,
+    422,
+    3612,
+    485
+   ],
+   "lines_in_crop": 1,
+   "band": 2,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     347,
+     451,
+     564
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "GAPS-fr3986-2 (2 Oct 2026): band trimmed to region y 422-485 so the interlined gloss above is masked (gloss baseline about +17 px below its centre); held-out crop for the blind pass"
+  },
+  {
+   "crop": "ho298_L03_s1.jpg",
+   "source_url": "",
+   "source_file": "f3986_c298_region.jpg",
+   "box": [
+    0,
+    533,
+    1900,
+    595
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     347,
+     451,
+     564
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "GAPS-fr3986-2 (2 Oct 2026): band trimmed to region y 533-595 so the interlined gloss above is masked (gloss baseline about +17 px below its centre); held-out crop for the blind pass"
+  },
+  {
+   "crop": "ho298_L03_s2.jpg",
+   "source_url": "",
+   "source_file": "f3986_c298_region.jpg",
+   "box": [
+    1712,
+    533,
+    3612,
+    595
+   ],
+   "lines_in_crop": 1,
+   "band": 3,
+   "segment": 2,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 0,
+    "distance": 0,
+    "prominence": 0.0,
+    "centres_given": [
+     347,
+     451,
+     564
+    ]
+   },
+   "date": "02 Oct 2026",
+   "note": "GAPS-fr3986-2 (2 Oct 2026): band trimmed to region y 533-595 so the interlined gloss above is masked (gloss baseline about +17 px below its centre); held-out crop for the blind pass"
+  }
+ ]
+}

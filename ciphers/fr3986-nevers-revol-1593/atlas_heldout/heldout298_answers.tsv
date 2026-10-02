@@ -1,0 +1,74 @@
+# Widened held-out answer key, GAPS-fr3986-nevers-revol-1593-2 (account-4), 2 Oct 2026 20:3x UTC, written and committed BEFORE the
+# blind pass. Leaf 298 = fr.3986 f.152 (canvas 298, Henri IV to Nevers, Chartres 7 Oct 1593), interlined; region
+# tools/keys/key60_atlas/src/f3986_c298_region.jpg. Crops: crops298/ho298_L0n_s1/s2.jpg (cipher lines 1-3, gloss masked).
+# One row per gloss-aligned sign, left to right per line; signs whose gloss syllable the worker could not align, code words the
+# atlas sheet does not show (the boxed sign under 'leur', lxxix under 'Rome', com, ll), and signs whose form and gloss value
+# disagree under key no.60 (the p-sign written like 4+, x/y under 'arrivee', g under 'du') are left OUT; about 150 signs stand
+# on the three lines, 65 are here. old = 1 where the sign is one of LIKELY-6's 28 (heldout_answers.tsv, crops K1-K3b).
+# Alignment is the worker's, grade S (form + interlined gloss + key no.60 value agree), as for the atlas pairs A01-A80.
+line	pos	tag	value	gloss_word	old
+L01	1	L40	qui	qui	1
+L01	2	E	re	retardast	1
+L01	3	8	t	retardast	1
+L01	4	c	a	retardast	1
+L01	5	do	r	retardast	1
+L01	6	=	d	retardast	1
+L01	7	c	a	retardast	1
+L01	8	r	s	retardast	1
+L01	9	8	t	retardast	1
+L01	10	c	a	arrivee	0
+L01	11	do	r	arrivee	0
+L01	12	to	i	arrivee	0
+L01	13	20	u	arrivee	0
+L01	14	del	a	a	0
+L01	15	do	r	darra	0
+L01	16	c	a	darra	0
+L01	17	ls	m	miracle	0
+L01	18	to	i	miracle	0
+L01	19	g	de	de	0
+L01	20	ls	m	ma[iesté]	0
+L01	21	c	a	ma[iesté]	0
+L01	22	c	a	autres	0
+L01	23	20	u	autres	0
+L01	24	8	t	autres	0
+L01	25	E	re	autres	0
+L02	1	8	t	touches	1
+L02	2	pi	o	touches	1
+L02	3	20	u	touches	1
+L02	4	//	c	touches	0
+L02	5	lam	la	las	0
+L02	6	6	s	las	0
+L02	7	L40	qui	qui	1
+L02	8	=	d	doibt	1
+L02	9	pi	o	doibt	1
+L02	10	to	i	doibt	1
+L02	11	8	t	doibt	0
+L02	12	g	de	de	0
+L02	13	=	d	dignite	0
+L02	14	to	i	dignite	0
+L02	15	T	n	dignite	0
+L02	16	to	i	dignite	0
+L02	17	8	t	dignite	0
+L02	18	ue	e	dignite	0
+L03	1	n	et	et	1
+L03	2	E	re	respect	1
+L03	3	r	s	respect	1
+L03	4	ue	e	respect	1
+L03	5	//	c	respect	1
+L03	6	8	t	respect	1
+L03	7	s'	en	endroict	0
+L03	8	=	d	endroict	1
+L03	9	do	r	endroict	1
+L03	10	pi	o	endroict	1
+L03	11	to	i	endroict	1
+L03	12	//	c	endroict	1
+L03	13	8	t	endroict	1
+L03	14	n	et	et	0
+L03	15	to	i	incompatible	0
+L03	16	T	n	incompatible	0
+L03	17	//	c	incompatible	0
+L03	18	pi	o	incompatible	0
+L03	19	ls	m	incompatible	0
+L03	20	c	a	incompatible	0
+L03	21	8	t	incompatible	0
+L03	22	to	i	incompatible	0
