@@ -1,0 +1,56 @@
+variant	v04	full_language	window_language
+V0 committed (15=n)	NOLADIRENTNONYSIIUN	{"pass": false, "score": -1.018, "null_p99": -1.923, "real_p05": -0.875, "real_median": -0.813, "mode": "both", "N": 1349}	{"pass": false, "score": -0.948, "null_p99": -1.763, "real_p05": -0.937, "real_median": -0.792, "mode": "both", "N": 77}
+V1 15=c, no glyph moved	NOLADIRECTNONYSIIUC	{"pass": false, "score": -1.022, "null_p99": -1.923, "real_p05": -0.875, "real_median": -0.813, "mode": "both", "N": 1349}	{"pass": false, "score": -0.938, "null_p99": -1.763, "real_p05": -0.937, "real_median": -0.792, "mode": "both", "N": 77}
+V2 15=z, no glyph moved	NOLADIREZTNONYSIIUZ	{"pass": false, "score": -1.025, "null_p99": -1.923, "real_p05": -0.875, "real_median": -0.813, "mode": "both", "N": 1349}	{"pass": false, "score": -0.998, "null_p99": -1.763, "real_p05": -0.937, "real_median": -0.792, "mode": "both", "N": 77}
+V3 15=c, v04:11 re-read 31	NOLADIRECTIONYSIIUC	{"pass": false, "score": -1.018, "null_p99": -1.923, "real_p05": -0.875, "real_median": -0.813, "mode": "both", "N": 1349}	{"pass": true, "score": -0.919, "null_p99": -1.763, "real_p05": -0.937, "real_median": -0.792, "mode": "both", "N": 77}
+V4 15=z, v04:11 re-read 31	NOLADIREZTIONYSIIUZ	{"pass": false, "score": -1.023, "null_p99": -1.923, "real_p05": -0.875, "real_median": -0.813, "mode": "both", "N": 1349}	{"pass": false, "score": -0.976, "null_p99": -1.763, "real_p05": -0.937, "real_median": -0.792, "mode": "both", "N": 77}
+V5 V4 + lost [g] at the edge	NOLADIREZTIONYSIIUZG	{"pass": false, "score": -1.025, "null_p99": -1.907, "real_p05": -0.877, "real_median": -0.814, "mode": "both", "N": 1350}	{"pass": false, "score": -0.966, "null_p99": -1.742, "real_p05": -0.925, "real_median": -0.788, "mode": "both", "N": 78}
+V6 Bourdeau word-model (2 glyphs moved)	NOLADIRECTIONYSIUN	{"pass": false, "score": -1.017, "null_p99": -1.908, "real_p05": -0.876, "real_median": -0.818, "mode": "both", "N": 1348}	{"pass": true, "score": -0.883, "null_p99": -1.727, "real_p05": -0.921, "real_median": -0.784, "mode": "both", "N": 76}
+V7 15=c, 31, edge 15 read as c, lost [ion]? (direction only)	NOLADIRECTIONYSIIUC	{"pass": false, "score": -1.018, "null_p99": -1.923, "real_p05": -0.875, "real_median": -0.813, "mode": "both", "N": 1349}	{"pass": true, "score": -0.919, "null_p99": -1.763, "real_p05": -0.937, "real_median": -0.792, "mode": "both", "N": 77}
+
+# sweep: window score, code 15 = letter in both v04 places, v04:11 as 32 or 31
+v04_11	letter	window_score
+31	n	-0.894
+31	i	-0.908
+31	y	-0.914
+31	s	-0.918
+31	c	-0.919
+31	e	-0.919
+31	l	-0.922
+32	i	-0.929
+31	t	-0.93
+32	c	-0.938
+31	a	-0.938
+31	d	-0.939
+32	s	-0.942
+32	y	-0.945
+32	n	-0.948
+31	r	-0.95
+32	e	-0.955
+32	a	-0.957
+32	d	-0.96
+31	u	-0.964
+32	t	-0.973
+31	z	-0.976
+31	p	-0.982
+31	g	-0.985
+31	o	-0.988
+32	h	-0.99
+32	l	-0.992
+32	u	-0.992
+32	z	-0.998
+32	r	-1.002
+32	o	-1.013
+31	m	-1.013
+31	f	-1.023
+31	h	-1.024
+31	b	-1.028
+32	p	-1.033
+32	b	-1.036
+32	g	-1.04
+31	q	-1.05
+32	m	-1.056
+31	x	-1.059
+32	q	-1.062
+32	f	-1.086
+32	x	-1.086

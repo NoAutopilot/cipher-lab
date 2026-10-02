@@ -1,0 +1,138 @@
+# 1. key, value -> letter (ours / Bourdeau), count in 529-token stream
+  1  - /  -  n=0  odd
+  2  o /  o  n=24  even
+  3  p /  p  n=12  odd
+  4  q /  q  n=10  even
+  5  r /  r  n=43  odd
+  6  s /  s  n=41  even
+  7  t /  t  n=23  odd
+  8  u /  u  n=26  even
+  9  q /  q  n=1  odd
+ 10  a /  a  n=39  even
+ 11  - /  -  n=0  odd
+ 12  b /  b  n=5  even
+ 13  y /  y  n=13  odd
+ 14  c /  c  n=14  even
+ 15  n /  ?  n=2  odd
+ 16  d /  d  n=20  even
+ 17  a /  a  n=18  odd
+ 18  e /  e  n=57  even
+ 19  e /  e  n=27  odd
+ 20  f /  f  n=4  even
+ 21  i /  i  n=8  odd
+ 22  g /  g  n=10  even
+ 23  o /  o  n=5  odd
+ 24  h /  h  n=2  even
+ 25  u /  u  n=5  odd
+ 26  i /  i  n=4  even
+ 27  u /  u  n=4  odd
+ 28  l /  l  n=22  even
+ 29  o /  o  n=8  odd
+ 30  m /  m  n=14  even
+ 31  i /  i  n=11  odd
+ 32  n /  n  n=42  even
+ 33  e /  e  n=3  odd
+ 34  a /  a  n=9  even
+ 35  - /  -  n=0  odd
+
+# per letter (ours): values
+  a: [10, 17, 34]  tokens=66
+  b: [12]  tokens=5
+  c: [14]  tokens=14
+  d: [16]  tokens=20
+  e: [18, 19, 33]  tokens=87
+  f: [20]  tokens=4
+  g: [22]  tokens=10
+  h: [24]  tokens=2
+  i: [21, 26, 31]  tokens=23
+  l: [28]  tokens=22
+  m: [30]  tokens=14
+  n: [15, 32]  tokens=44
+  o: [2, 23, 29]  tokens=37
+  p: [3]  tokens=12
+  q: [4, 9]  tokens=11
+  r: [5]  tokens=43
+  s: [6]  tokens=41
+  t: [7]  tokens=23
+  u: [8, 25, 27]  tokens=35
+  y: [13]  tokens=13
+  unassigned letters of abcdefghilmnopqrstuxyz : ['x', 'z']
+  unused values 1-35: [1, 11, 35]
+  even 10-34: abcdefghilmna | 2-8: opqrstu | odd 9-33: 9q 11? 13y 15n 17a 19e 21i 23o 25u 27u 29o 31i 33e
+
+# 2. occurrences of 15 (decoded context; 15 shown as [15]; | = run boundary)
+  v04:9  ...raporsunoladire[15]tnonysiiunasera...   (run 4, end-of-run=False)
+  v04:19  ...adirentnonysiiu[15]aseramasconueni...   (run 4, end-of-run=False)
+
+# 3. letters in cipher runs (n=525, 15 excluded) vs es17c7 expectation
+  letter obs  exp   (obs-exp)/sqrt(exp)
+  a    66   66.5  -0.06
+  b     5    7.2  -0.82
+  c    21   20.5  +0.11
+  d    20   30.0  -1.83
+  e    81   72.8  +0.96
+  f     4    4.0  -0.01
+  g    10    6.5  +1.38
+  h     2    6.7  -1.81
+  i    23   34.5  -1.95
+  l    23   30.0  -1.28
+  m    14   12.6  +0.39
+  n    42   35.8  +1.04
+  o    37   47.6  -1.54
+  p    12   12.0  -0.01
+  q    11    7.6  +1.22
+  r    44   34.0  +1.72
+  s    41   38.8  +0.35
+  t    23   20.1  +0.65
+  u    33   27.9  +0.97
+  x     0    0.4  -0.62
+  y    13    7.5  +1.99
+  z     0    1.9  -1.37
+
+# 4. whole-stream log-likelihood by candidate (higher is better), delta vs best in each variant
+  A: null:+0.0  i:-2.1  e:-3.0  n:-3.3  s:-3.6  c:-4.8  r:-5.1  l:-6.2
+     rank of z: 19/23  delta -10.36
+     rank of n: 4/23  delta -3.31
+     rank of c: 6/23  delta -4.81
+     rank of x: 23/23  delta -17.09
+  B: null:+0.0  e:-2.3  n:-2.4  i:-2.9  c:-3.0  s:-3.4  l:-5.2  r:-5.9
+     rank of z: 19/23  delta -11.60
+     rank of n: 3/23  delta -2.37
+     rank of c: 5/23  delta -3.01
+     rank of x: 23/23  delta -17.73
+  C: null+e:+0.0  n+t:-3.3  c+h:-3.4  s+t:-3.9  e:-4.2  i:-4.7  l:-7.0  a+n:-7.6
+     rank of z: 13/23  delta -10.01
+     rank of n: 2/23  delta -3.34
+     rank of c: 3/23  delta -3.41
+     rank of x: 23/23  delta -17.40
+
+# 4b. each occurrence alone (variant B/C; the other 15 held at null)
+  occ1 (v04:9): c:+0.0  s:-0.1  n:-1.7  l:-2.0  i:-2.9  a:-3.8  o:-3.8  e:-4.0
+  occ2 (v04:19): e:+0.0  z+g:-0.9  r:-1.5  n+t:-1.5  i:-1.7  d:-3.2  c+h:-3.3  s+t:-3.7
+
+# 5. control: held-out tome VII, 660 trials, two occurrences of one letter 10 apart, masked; slip at occ1+2;
+#    a 1-2 letter gap after occ2 (lost edge, filled best-of by each candidate); context 25 letters each side
+  stratified (30/letter): top-1 381/637 = 0.598; top-3 0.810; frequency-weighted top-1 0.683; chance top-1 = 0.045
+   a: n=  30 top1 0.900 top3 1.000  rank>=13 0.000
+   b: n=  30 top1 0.533 top3 0.767  rank>=13 0.067
+   c: n=  30 top1 0.533 top3 0.800  rank>=13 0.033
+   d: n=  30 top1 0.700 top3 1.000  rank>=13 0.000
+   e: n=  30 top1 0.633 top3 0.900  rank>=13 0.000
+   f: n=  30 top1 0.300 top3 0.400  rank>=13 0.200
+   g: n=  30 top1 0.433 top3 0.633  rank>=13 0.100
+   h: n=  30 top1 0.533 top3 0.833  rank>=13 0.033
+   i: n=  30 top1 0.567 top3 0.867  rank>=13 0.000
+   l: n=  30 top1 0.833 top3 1.000  rank>=13 0.000
+   m: n=  30 top1 0.500 top3 0.667  rank>=13 0.033
+   n: n=  30 top1 0.733 top3 0.967  rank>=13 0.000
+   o: n=  30 top1 0.600 top3 0.933  rank>=13 0.000
+   p: n=  30 top1 0.533 top3 0.700  rank>=13 0.100
+   q: n=  30 top1 0.667 top3 0.933  rank>=13 0.000
+   r: n=  30 top1 0.767 top3 0.900  rank>=13 0.000
+   s: n=  30 top1 0.667 top3 0.900  rank>=13 0.000
+   t: n=  30 top1 0.667 top3 0.833  rank>=13 0.000
+   u: n=  30 top1 0.833 top3 0.900  rank>=13 0.000
+   x: n=   7 top1 0.143 top3 0.429  rank>=13 0.286
+   y: n=  30 top1 0.400 top3 0.667  rank>=13 0.033
+   z: n=  30 top1 0.333 top3 0.500  rank>=13 0.100
+  all letters: share of true letters ranked >=13 (z on the target, variant C): 0.036

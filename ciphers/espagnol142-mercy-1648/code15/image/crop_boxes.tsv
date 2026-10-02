@@ -1,0 +1,18 @@
+file	source	x0	y0	x1	y1	scale	what
+f22v_top_half.jpg	images/f22v_canvas59.jpg	0	0	3546	1800	0.5	v01-v08 overview
+v04_band_native.jpg	images/f22v_canvas59.jpg	0	840	3546	1040	1	whole v04 band
+v04_p1-19_native.jpg	images/f22v_canvas59.jpg	900	820	3546	1040	1	v04 pos1-19
+v04_p1-7_x2.jpg	images/f22v_canvas59.jpg	900	840	1900	1030	2	v04 pos1-7
+v04_p6-11_x2.jpg	images/f22v_canvas59.jpg	1500	820	2400	1040	2	v04 pos5-11 (first 15 at pos9)
+v04_p9_15_x4.jpg	images/f22v_canvas59.jpg	1980	850	2240	1010	4	v04 pos9-10, the 15 and the 7
+v04_p10-12_x3.jpg	images/f22v_canvas59.jpg	2000	840	2450	1030	3	v04 pos9-12: 15 7 [31 not 32] 2
+v04_p11-15_x2.jpg	images/f22v_canvas59.jpg	2300	840	3000	1030	2	v04 pos12-16
+v04_p14-19_edge_x2.jpg	images/f22v_canvas59.jpg	2550	720	3546	1040	2	v04 pos14-19 and gutter
+v04_p15-16_mark_above_x3.jpg	images/f22v_canvas59.jpg	2550	640	3000	1010	3	interlinear stroke above v04:16 and colon after 21
+v04_p19_edge_x6.jpg	images/f22v_canvas59.jpg	3190	860	3300	1010	6	v04 pos19, cut at x~3260
+sheet_f22v_15_vs_5_3_4_31_32.jpg	images/f22v_canvas59.jpg					3	reference sheet: both 15s vs 5, 13, 18, 14 (x3), 31 (x2), 32 (x2), v04:11
+f22r_top_half.jpg	images/f22r_canvas58.jpg	0	0	3454	2500	0.5	f22r scan for other 15s
+f22r_bottom_half.jpg	images/f22r_canvas58.jpg	0	2500	3454	5000	0.5	f22r scan for other 15s
+f22v_lower_half.jpg	images/f22v_canvas59.jpg	0	1700	3546	3200	0.5	f22v v09-v16 scan for other 15s
+v14_zelo_cedilla.jpg	images/f22v_canvas59.jpg	2700	2640	3200	2880	1	clear text "zelo" written with a c-cedilla/z form
+v14_dilacion_cedilla.jpg	images/f22v_canvas59.jpg	960	2680	1700	2860	1	clear text "dilacion"

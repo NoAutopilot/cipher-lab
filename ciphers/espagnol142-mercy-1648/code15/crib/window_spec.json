@@ -1,0 +1,8 @@
+{
+ "slug": "mercy-v04-window",
+ "judge": {
+  "language": "es17c7",
+  "letters_min": 40,
+  "control_samples": 400
+ }
+}

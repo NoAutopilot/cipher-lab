@@ -1,0 +1,4 @@
+layout predicts 28 codes; agree with the recovered key: 28; disagree: []
+outside the rule: 9=q, 13=y, 15=?, 34=a | unused: 11
+letters of the 22-letter alphabet with no code: ['x', 'z']
+chance of an exact match by permutation of these 28 values: 1 in 1.18e+26

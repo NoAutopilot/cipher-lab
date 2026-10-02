@@ -2567,3 +2567,120 @@ which the image cannot decide for this hand. Suggestion (one line, not done here
 range before a key is called settled.
 
 Requests this session: gallica.bnf.fr 1 (f.21r canvas 56 at 1800 px, for the Saint-Ibal parallel); no other host.
+
+## Code 15 (v04), 2 Oct 2026
+
+**Status unchanged: partial.** Synthesis of three analyses run on 1-2 Oct 2026 after the Bourdeau fold-in (image,
+key structure, crib), by the orchestrator's synthesis worker. Briefed as "1 Oct 2026"; the clock read 2 Oct 2026
+01:07 UTC (rule 6). Their scratch output is in `code15/image/`, `code15/key/` and `code15/crib/`. No token, value,
+grade or class changed: `ciphertext.tsv`, `key.tsv` and `reading.txt` are as the fold-in left them (15 = n, M).
+Bourdeau's own position (`sources/cyphersolver/2026-10-01/mercy1648/key.tsv`, `open_stretches.tsv`) is 15 = no
+value, with "probably n" ("una sera") at v04:19 and "direction" reachable only if v04:9 is a 14 and v04:11 is a 31.
+He does not accept that reading because it moves two glyphs.
+
+### What the three agree on
+
+- **Two occurrences, both in v04.** v04:9 (`...corra por su [ma]no la dire[15]t non y si iu[15]`) and v04:19, the
+  half-cut glyph at the gutter. Nothing else in 529 tokens carries 15 (image angle: none on f.22r or the lower lines
+  of f.22v).
+- **v04:9 is a real 15, one group.** H2's three reads already had this (3/3, step H2). The image angle's eye pass
+  agrees: an S-form 5, a 13 px gap inside the group against 34-69 px between tokens, and this hand's 4 is crossed.
+  So Bourdeau's 15 -> 14 alternative is held unlikely on four reads. All of them were made knowing what was being
+  tested.
+- **v04:11 looks like 31 (i), not 32 (n).** Both the image and the crib angle say so (no head loop or flat foot,
+  the tall l-shaped 1 of the 31s at v04:6 and :17). This session looked at `code15/image/v04_p6-11_x2.jpg` and
+  `v04_p11-15_x2.jpg` and saw the same. That makes three looks, all **primed** by Bourdeau's "direction" idea and
+  none blind. Pass A, pass B, H2 and Bourdeau all read 32. The call stays a proposal and `ciphertext.tsv` keeps 32
+  until two blind reads are run on an unlabelled sheet (rule: two passes).
+- **The key is laid out as a table, and x and z have no code.** The even values 10-32 are a-n in order, 2-8 are o-u,
+  the odd values 17-25 are a e i o u and 27-33 are u o i e (28 of 28 codes fit). 1, 11 and 35 never occur. The
+  key and crib angles both read 11 x, 13 y, 15 z from this. One more point from the record (this session, from
+  `period_keys/decode_965.tsv`): the same office's register table R965 p7 has o-u = 2-8 and then x y z = 9 10 11.
+  So in this office, x, y and z sit together right after the o-u run. That supports "z near y", not the exact slot:
+  our 9 is q (H11, a blind read).
+- **Under z the "extra i" disappears.** "y si iuz[g]a sera mas conueniente" uses every token at v04:14-19 (31 = i/j).
+  It needs one token (22, g) lost in the gutter, which ASKS 81 would show.
+- **Nothing decides it.** Neither the key nor the crib angle's letter model can separate the leading letters at
+  either place, as their own known-answer controls show (rule 3):
+  - key angle: the true letter is ranked first 59.8% of the time, z first only 33%, and the gaps are under 1 point;
+  - crib angle: 65% first overall, 95% first when the margin is at least 1.0, and the margin at v04:9 is 0.03.
+  No value reaches S.
+
+### Where they disagree, and why the grade stays M
+
+- **Which sibilant.** The key and crib angles say z. The image angle says "ç / z / c, one sibilant code". c already
+  has 14 and no consonant but q has a second code, so c is the weakest member of that set. Every Brussels office
+  table on disk carries a z and none a ç (`period_keys/decode_958.tsv`, `_960`, `_965`), so if the code is a
+  sibilant, it is the table's z, used for the ç sound too.
+- **No single value gives standard spelling at both places.**
+  - c reads v04:9 cleanly ("la direction", with 31), but v04:19 gives "iuc[g]a", which is not a word.
+  - z reads v04:19 as "iuz[g]a" (juzga), but v04:9 gives "direztion". The key and crib angles both looked for a
+    z (or ç) + t spelling and found none. The image angle's "Latinate -ct-, period-normal" applies to "direction"
+    with c, not to z.
+  - n (our committed value, from the Y8 anneal) gives no word at either place. It is also corpus-dependent: the
+    held-29 anneal gave 15 = s on es17 and n on es17c7 (campaign step H3).
+- **The statistics lean away from z, weakly.**
+  - The key angle's order-5 model ranks z 13th of 23 after the edge fill, with n and c 2nd and 3rd. A true z ranks
+    13th or lower in 10% of control trials, so this is mild evidence, and only on standard spelling.
+  - The crib angle's window judge (es17c7, 77 letters) FAILs the z variant (-0.976) and PASSes c (-0.919).
+  - The same window judge also PASSes Bourdeau's word-model variant (-0.883), which needs 15 = c in one place and n
+    in the other. A judge that passes an internally inconsistent reading at this window cannot gate the choice,
+    and its top six letters fall within 0.035 of each other. Both the PASSes and the FAILs here are noise, not
+    evidence. The full-text judge cannot move on two letters out of 1349 (every variant -1.017 to -1.025, FAIL).
+- **z rests on two things only:** the table layout and one word at the weaker of the two occurrences.
+- **"z is missing" is weak.** The key angle expects about 1.9 z in 525 letters; a Poisson count of 0 at that mean
+  happens about 15% of the time.
+- **The 1e-26 figure measures the wrong thing.** The crib angle's "28 of 28, about 1 in 1e26 by chance" was
+  computed for a scheme read off the recovered key. It shows the table is ordered, which nobody disputes. It does
+  not measure how likely the extrapolated slot 15 = z is.
+
+### Weakest needed links for 15 = z (each would have to hold)
+
+1. **v04:19 is a 15.** Only the 1 and the left 12 px of the second digit survive. H2 read it 3/3 as unreadable; the
+   image angle reads 13, 15, 17 or 19, and it chose 15 partly *on sense*. Picking the glyph by the word the value
+   is meant to produce is circular: this occurrence cannot support the value on its own.
+2. **One lost gutter token is 22 (g).** Unseen, so this is a restoration (I), not a reading.
+3. **v04:11 = 31.** Primed, not blind (above). This one is needed only for v04:9; even with it, z gives a spelling
+   for which no example was found.
+4. **A clerk wrote z for the c of "direction".** Unattested.
+
+### Grades (rule 4)
+
+- **15 = z: M.** The best supported value, but no reading. It is a proposal that fits the table and one restored
+  word. 15 = c and 15 = n are also M and weaker. 15 as a misread 14 is disfavoured on four reads.
+- **v04:9 and v04:19 stay M**, whatever value is chosen.
+- **"juzga" at v04:17-19 + gutter:** at best M for the letters read and I for the restored g. It is conditional on
+  link 1, which does not rest on the value it supports.
+- **No change to the counts:** 529 tokens: H 0, C 0, S 488, M 41, I 0, U 0.
+
+### Proposals for the orchestrator (not applied here)
+
+- (a) **Run two blind Sonnet reads** of v04:11 (31 or 32) and v04:9 on an unlabelled crop sheet with this hand's 2s,
+  4s, 5s and 31/32s. Neither reader should be shown "direction" or Bourdeau's page.
+- (b) **Only after (a), if both read 31:** change `ciphertext.tsv` v04:11 to 31 (M) and `key.tsv` 15 n -> z (M,
+  note "table layout; juzga at v04:19; direztion unattested"). Then regenerate with `tools/decode_key.py --check`.
+  - The value change alone (n -> z) is defensible now, since n has no word and no stable anneal support. But it
+    changes the reading, so it goes through rule 7 and the orchestrator.
+- (c) **Widen ASKS 81's expected value.** A gutter capture of f.22v would also check every letter in Bourdeau's
+  `lost_edge.tsv`: about 18 restored letters on v01-v12 and the unrecovered v05/v06 junction. The row's "one
+  token" understates it.
+- (d) **Rule-10 check before anything goes out.** Any outward sentence about 15 says "proposed at grade M" and names
+  the circular link 1. It must not say "15 = z" bare.
+
+## Remaining gaps (finish-or-blocker pass, 2 Oct 2026)
+Read so far: 521 of 529 code tokens (98.5%) read as Spanish words, 8 open in v04 (positions 9-13, 17-19); NOTES.md "Bourdeau corrections folded in (1 Oct 2026)", `reading_tokens.tsv` (H 0, C 0, S 488, M 41; the two box signs are counted as read but render as `_`); briefed as 1 Oct, clock 2 Oct 2026 (rule 6)
+- v04:9-13, "la dire[15]t non" (codes 15, 7, 32, 2, 32) - blocker: not-attempted; v04:11 = 31 ("direction"/"direztion") rests on three primed, non-blind looks against four reads of 32 (NOTES.md "Code 15 (v04), 2 Oct 2026"); next: two blind Sonnet reads of v04:11 and v04:9 on an unlabelled crop sheet plus one reconciliation, ~$4
+- code 15's value (both occurrences) - blocker: open-codes; two tokens. The best value is z (M), from the table layout and "iuz[g]a"; c and n are weaker. Neither key-angle nor crib-angle letter model separates the candidates within its own control (`code15/key/key15_out.txt`, `code15/crib/control_ranks.tsv`), and the Brussels register holds no matching key (H17). Raised only by new material (a sibling letter in this key with 15 in a readable word) or by resolving the v04:11 and v04:19 glyphs
+- v04:19 (half-cut 15) and the token(s) lost after it in the gutter, expected 22 (g) - blocker: waiting-on ASKS row 81 (gutter capture of f.22v, riding on the BnF batch of ASKS row 78, quotes awaited); H80: the disk image is already Gallica's native size
+- letters lost in the gutter of f.22v, v01-v12 (Bourdeau `lost_edge.tsv`: about 18 restored by sense, not counted as read; the v05/v06 "conuenient[e ...]ar otra" and v06/v07 "gente de [?] que" junctions are unrecovered) - blocker: waiting-on ASKS row 81 (the same capture; its stated value of "one token" understates this)
+- the box name sign, r07 and r09 (2 tokens) - blocker: no-key-material; identified as Saint-Ibal at grade I from the clear f.21r sibling (fold-in "Names"), but no table gives a value for the boxed sign (H17: no boxed 101 in DECODE 958-965), so `key.tsv` keeps `_`
+
+## Escalation (2 Oct 2026)
+- [x] siblings: Gallica/BnF pool sweep negative (M3, H38, `siblings.tsv`); clear sibling instruction f.21r (13 Apr 1648) read and used for the Saint-Ibal parallel (fold-in 1 Oct 2026), f.20r (8 Feb 1648) cited by Bourdeau, not re-read here; the 15 April 1648 instruction in Brussels (AGR SEE t. LXIV f.16) is waiting on ASKS row 60 / SEND-QUEUE S3
+- [x] clear-pages: the f.21r clear text is the parallel for "que el [box] uenga con uos para que nos informe"; f.22r's clear overview read for spelling (ç in "negociaçion", "Operaçiones"; image angle 1-2 Oct 2026); no clear minute or draft of the 6 June 1648 instruction found (Lonchay-Cuvelier-Lefèvre IV no. 183 is a calendar only, per Bourdeau's snapshot)
+- [x] known-keys: DECODE 958-965 (AGR SEE inv.nr. 2, "chiffres 1647-98") read in full size, best agreement 7/28, no period key for this letter (H17, 28 Sept 2026); design sibling R958 (H16); R965 p7 places x y z right after o-u = 2-8, a design point for 15 = z, not a key
+- [x] print: Le Clerc 1725 III-IV, Acta Pacis Westphalicae II B (ends 19 May 1648), Lonchay 1896 p. 445 n. 2, Lonchay-Cuvelier-Lefèvre IV no. 183 (calendar); none prints f.22 (NOTES.md opening sections; Bourdeau snapshot NOTES.md "Print")
+- [x] key-rebuild: Y8 anneal, M2, held-29 anneals (H3), crib steps H41-H77, Bourdeau's digit-pair splits (fold-in 1 Oct); code 15 swept with two letter models, each with a known-answer control, plus a window judge (1-2 Oct 2026): no value licensed above M, best z
+- [ ] image-check: out-of-range and doubtful tokens re-read on the native images (fold-in 1 Oct 2026, `bcheck/`); still to do: two blind reads of v04:11 (31 or 32) and v04:9 on an unlabelled sheet, ~$4
+- [x] retry: reading regenerated after the fold-in (`tools/decode_key.py --check`: "reading up to date", 529 tokens); v04 re-decoded under 15 = n, c, z and with v04:11 = 31 (`code15/crib/judge_variants.tsv`); not applied pending the blind reads
+Verdict: keep going: 2 internal gaps; cheapest next: two blind Sonnet reads of v04:11 and v04:9 on an unlabelled crop sheet plus one reconciliation, ~$4
