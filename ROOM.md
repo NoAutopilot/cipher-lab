@@ -5189,3 +5189,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:26 | SOLVERDIFF-BOURDEAU (account 2) | flag: kaliningrad-2015 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/kaliningrad/
 2026-10-02 00:26 | SOLVERDIFF-BOURDEAU (account 2) | flag: censorship-manual-stego -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/censorship/NOTES.md
 2026-10-02 00:26 | SOLVERDIFF-BOURDEAU (account 2) | flag: fr3151-noailles-1558 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/NOTES.md (catalogue 10)
+2026-10-02 00:26 | SOLVERDIFF-BOURDEAU (account 2) | flag: debosnys-1883 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/debosnys/NOTES.md
