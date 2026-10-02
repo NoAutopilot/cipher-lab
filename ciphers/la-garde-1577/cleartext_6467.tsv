@@ -1,0 +1,4 @@
+letter	before_line	before_pos	kind	text	grade	sources	note
+6467	p2L6	1	main	Si on pouvoit	C	image:images/crops_wc/6467p2_run1_overview.png; GSME II 133-135 nr 97; LMSAC 241-242	main-text clear words before run 1; image reads "pouvoit" (Y1's "pourra" not supported; both editions "pouvoit")
+6467	p2L6	1	margin-insertion	justifier le faict de Gand	C	image:images/margin_6467_run1_4x.png; GSME II 133-135 nr 97; LMSAC 241-242	left-margin note, two lines "Justifier le faict de / Gand", beside p2L6; both editions print it in running text at this point; placed after "pouvoit", before run 1 sign 1; image reads "de Gand" (R15/Y1's "du grand" not supported: no r, separate "de")
+6467	p2L8	5	main	ce seroit un grand poinct	C	image:images/crops_wc/6467p2_run1_overview.png; GSME II 133-135 nr 97; LMSAC 241-242	main-text clear words after run 1 (follows p2L8 pos4, the last sign of run 1)

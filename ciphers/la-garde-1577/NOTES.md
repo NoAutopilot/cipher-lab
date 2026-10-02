@@ -901,3 +901,48 @@ KHA folder's leaves beyond this letter are not imaged (unreachable). Not found w
 cipher passages omitted per its own footnote; Gachard's Correspondance de Guillaume le Taciturne not searched (search
 route returned 500 on 25 Sept, LANE CX) -- unreachable. Not found in print.
 Result: nothing found that reads 6179's cipher passages.
+
+## A2-LAG: the 6467 margin words placed as a C-grade clear-text insertion (2 Oct 2026, account 2, LANE-A2PUSH)
+
+**Job:** Y1's follow-up (1) only -- place "justifier le faict de Gand" where it belongs as a C-grade clear-text
+insertion, with a reproducible check (rule 7). No cryptanalysis, no network.
+
+**Intake gate:** `python3 tools/intake_gate_check.py la-garde-1577` -> `la-garde-1577: open (line 1) --
+edition/page or full-text-search citation found within 6 lines` (exit 0).
+
+**Image read (rule 2, this worker's own direct read of two crops already on disk, no subagent):**
+- `images/margin_6467_run1_4x.png`: the left-margin note reads **"Justifier le faict de / Gand"** on two lines.
+  The second line is "Gand" (G-a-n-d, no r), and "de" stands as its own word ending a flourished e at the end of
+  line 1. This agrees with both print editions (GSME II 133-135 nr 97; LMSAC 241-242) and does **not** support
+  R15's and Y1's "du grand". Y1's correction stands in reverse: the margin and the editions agree word for word.
+- `images/crops_wc/6467p2_run1_overview.png`: the main-text words before run 1 read **"on pouvoit"**, as both
+  editions print them, not Y1's "pourra". ("Si" is at the end of the line above, outside this crop; it rests on
+  the editions here.) The margin note sits level with that line, to the left of "on pouvoit 7.8.2...". No caret
+  or insertion mark shows in this crop.
+
+**Placement:** `cleartext_6467.tsv` holds three C-grade rows anchored to `ciphertext_6467_v2.tsv` (that file is
+not touched; `build_v2.py` still regenerates it unchanged): main text "Si on pouvoit" before p2L6 pos1; the margin
+insertion "justifier le faict de Gand" in the same slot, after "pouvoit" and before run-1 sign 1; main text "ce
+seroit un grand poinct" after p2L8 pos4. `build_clear_6467.py [--check]` checks every anchor against v2 and
+regenerates `reading_6467_run1.txt`:
+
+    Si on pouvoit [justifier le faict de Gand] <7> <8> <2^> <11> <10> <19> <14> <12> <9~> <3> <07> <4> <14~> <4^> <8> <11> <2^> <4> <07> <11> <24> <3> <9~> <2^> <17^> <5> <11> ce seroit un grand poinct
+
+Grades: clear words C 13 (manuscript image plus two editions), H 0, S 0, M 0, I 0. The 27 cipher signs are
+still unread, with no key and nothing decoded. This is a placement of clear text, not a reading of the cipher, so
+there is no judge or spec run and no control (rule 3 does not apply: no solver, gate or alignment was run).
+`--check` exit 0.
+
+**What this settles and what it does not:** Y1's follow-up (1) is done: the margin words are placed, graded C,
+and the transcription conflict between the margin and the editions is closed in favour of "de Gand". The margin
+note is the sentence's own clear words written beside the line. It is not a solution of the numerals. Y1's
+follow-ups (2) (the 27-sign and 18-sign clauses, unread) and (3) (run 2's margin "N.[c?].f.") are untouched and
+still open.
+
+**Next cheapest step:** follow-up (3): one cropped image read of run 2's margin abbreviation to say whether it
+is a filing mark or part of the text, using a 4x crop already on disk (`images/margin_6467_run2_4x.png`), about
+$0.5. The unread cipher clauses still have no key material. WC-LAGARDE2's family controls fell below their gates
+at this N, so a further family run needs new material (more same-system ciphertext), not a new setting (rule 3,
+third-attempt clause).
+
+Requests: none (no network). Vision: 2 direct image reads by this worker, 0 subagent calls.
