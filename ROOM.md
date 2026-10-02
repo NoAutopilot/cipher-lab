@@ -5184,3 +5184,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: vanspaen-vandergoes-1808 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/spaen1808/NOTES.md
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: zeschau-seebach-1841 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/zeschau1841/NOTES.md
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: koehler-1944 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/abwehr/NOTES.md
+2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: goldbar-1933 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/goldbar/NOTES.md
