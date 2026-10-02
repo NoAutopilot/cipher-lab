@@ -170,6 +170,19 @@ updated in place, gaps_check pasted). SPEC-BOOK writes the three already-run fir
 the live standby in parent.md "Orchestrator fallback chain" (takeover after 150 min without an account-3 orchestrator
 line or on HANDOFF; account-3's last line 01:26 UTC; its handoff section lists what to carry).
 
+**Check-in 4 (02:4x UTC 2 Oct):** the 12-worker partial wave is done and ledgered (USD 80.2; 37 workers about 206
+total). Every one of the 11 targets' intake gates now passes (web/blog checks logged, 0 prior readings beyond the
+solver repositories already cited). Moves: na-schonenberg-1678-1716's L19 is the address crib (15/16 vs slid-window
+0.286 and shuffled-crib 0.438 controls, 28/28 tokens valued C 15 M 13); na-janssens-java-1811 leaf 188 keyed 86/163
+after the leaf-192 gloss merge, judge -1.472 -> -0.985 vs real_p05 -0.89; rah-morillo-1817 key_5186 C 90 / M 7 / U 0
+(item 3 stays N0); matignon-mayenne-1586 f143r opening aligns 468 vs shuffle max -67; vanbeuningen-dewitt-1657 gained
+`tools/key_order_test.py` (letter codes keep alphabetical order, P=0.0); mornington-1798: D623/5 is printed in Martin
+Vol.1 No. XXII p.80 (ASKS 12 amended); wellington-maitland-1812 ASKS 101 filed; pollaky: the clear ad after 20 Feb 1871
+does not exist. PROGRESS.tsv rows added for Janssens, Schonenberg, Morillo. Spawned 02:44: CLOSER-1 (archives the 12),
+SHORTLIST (account-3's likely-solves brief, phase 1, owner's ask), GAPS-pro3055-clinton-1779, GAPS2 on janssens and
+schonenberg, SPLIT on janssens (70) and matignon (31), OPEN steps on mccormick, ra-crusenstolpe, sp90-raby. Standby:
+account-3's last orchestrator line 02:12 UTC. Parent context about 580k of 1M (hand-over at 850k).
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
