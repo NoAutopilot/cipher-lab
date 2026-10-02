@@ -1,0 +1,16 @@
+{
+ "slug": "birago-fr3252-f117",
+ "target": "ciphers/birago-fr3252-1571-72",
+ "ciphertext": "harvest/f117/recon_f117.tsv (fr.3252 f.117r no.77, Birago to Nevers, Saluces 13 Mar 1572, the 10-line cipher block; two value-blind passes against the 1572 group's sign_sheet_blind_1572.png, reconciled, NEVBIR-3252-B 2 Oct 2026). Source: BnF fr.3252, Gallica ark:/12148/btv1b9060232m canvas 118, native region 4380,1400,3150,1300 (images/f117/manifest.json).",
+ "alphabet": "51 signs of the Nevers-Birago cipher 1572 (Tomokiyo nevers.htm), as cut to the blind sheet by the nevers-birago-fr3251-1572 folder",
+ "language": "French (the clear text of the letter is French, secretary hand), Saluces, Birago to Nevers, 1572",
+ "constraints": [
+  "the 1572 printed key fits the sign inventory (NEVBIR-3252 design check); the key has no sign for q, x, y, k/w, v, j"
+ ],
+ "cheap_tests": [
+  "decode_control.py --corpus fr --map map_printed.json vs 200 value-shuffled keys + power control at the measured two-reader error; T42=m and clerk-sheet variants alongside; judge fr (fr16)"
+ ],
+ "judge": {
+  "language": "fr"
+ }
+}

@@ -287,6 +287,9 @@ def main(argv=None):
     ap.add_argument('--top-margin', type=int, default=0,
                      help='extra px included above each band\'s top edge (e.g. to capture an interlinear gloss '
                           'sitting just above the line); the bottom edge is unchanged, clamped to 0')
+    ap.add_argument('--bottom-margin', type=int, default=0,
+                     help='extra px included below each band\'s bottom edge (descenders of tall signs; NEVBIR-3252-B, '
+                          '2 Oct 2026, fr.3252 f.117r), clamped to the region height')
     ap.add_argument('--quality', type=int, default=85, help='JPEG quality of the crops')
     ap.add_argument('--debug', action='store_true'); ap.add_argument('--dry-run', action='store_true')
     ap.add_argument('--groups', type=int, metavar='GAP',
@@ -335,6 +338,8 @@ def main(argv=None):
     bb = bands(centres, im.height, a.lines_per_crop)
     if a.top_margin:
         bb = [(max(0, top - a.top_margin), bot, nl) for top, bot, nl in bb]
+    if a.bottom_margin:
+        bb = [(top, min(im.height, bot + a.bottom_margin), nl) for top, bot, nl in bb]
     segs = segments(x0, x1, a.max_width, a.overlap)
     print(f'{src} ({how}): region {im.width}x{im.height}, {len(centres)} lines, {len(bb)} bands x {len(segs)} segments; '
           f"pitch {params['pitch_autocorr']} distance {params['distance']} prominence {params['prominence']}")

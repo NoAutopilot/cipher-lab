@@ -57,6 +57,11 @@ try:
     check(r['centres'] == [80, 190, 300] and r['params'].get('centres_given') == [80, 190, 300]
           and [b[:2] for b in r['bands']] == [(25, 135), (135, 245), (245, 355)],
           f"--centres: bands {[b[:2] for b in r['bands']]} follow the given centres, detection skipped")
+    # 3c. --bottom-margin (NEVBIR-3252-B, 2 Oct 2026): pads each band's bottom edge only, clamped to the region height
+    r = run('--image', page, '--out', os.path.join(tmp, 'c'), '--prefix', 'c', '--region', '0,0,5000,400', '--centres', '80,190,300',
+            '--bottom-margin', '30', '--dry-run')
+    check([b[:2] for b in r['bands']] == [(25, 165), (135, 275), (245, 385)],
+          f"--bottom-margin: bands {[b[:2] for b in r['bands']]} padded below by 30")
 
     # 4. --groups (MONT-CAL, 27 Sept 2026): wide inter-group spacing splits into its 10 groups; uniform spacing (the
     #    fr.4715 f.81r shape) must NOT be reported as groups -- at the same gap it stays one piece.
