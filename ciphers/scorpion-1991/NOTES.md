@@ -107,3 +107,12 @@ not independently checked here). Rule 10: nothing in this file should be read as
 
 scienceblogs.de: 2 requests (one per cryptogram image), curl with a browser User-Agent, 2s apart, both
 HTTP 200, no 429/403/challenge.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/scorpion/NOTES.md ; README.md "Scorpion letters S1 and S5"
+- Their extent, in their words: attempted, closed: S5 transcribed (180 symbols, 145 distinct), below the unicity distance for a homophonic key; controls run
+- Their date: 15 Sept 2026
+- Note: NOT in our NOTES.md (grep bourdeau/cyphersolver: 0)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

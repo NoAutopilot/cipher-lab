@@ -197,3 +197,12 @@ Status unchanged: **blocked** (sign identification).
 - Suggestion (one line): extend the atlas from c.264's lower half and c.266-268 (brief G's own suggestion) and add a
   fragment-aware judge mode (score each run in its clear-text context) before any further pass on this hand.
 - Hosts: none (disk only). Tooling: a local headless-Chromium crop/zoom helper in the scratchpad (no PIL in the container).
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1593/NOTES.md
+- Their extent, in their words: the Revol letters (fr. 3985 nos. 66, 88; f. 88 and f. 115 in "Remaining gaps") are in the Court symbol cipher no. 60 and not read; the two Pisany letters (f. 209, fr. 3986 f. 168) are read with key 46
+- Their date: 17 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

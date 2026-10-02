@@ -313,3 +313,12 @@ Files: `images/crops/**` (line crops, debug overlays, sign_legend.md), `images/m
 Hosts: gallica.bnf.fr 2 (1 info.json probe, 1 native region fetch, 1 connection-reset retried once). Subagents:
 7 (2 blind transcription passes x 3 blocks + 1 combined gloss read), all Sonnet, one exceeded the usual
 per-call budget (block2 pass B, noted in step 2) — flagged for the lane orchestrator, not itself a finding.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/guiche1551/NOTES.md (catalogue 10)
+- Their extent, in their words: no. 33 found "read at the time": marginal period decipherment, partly lost in the gutter; no reading of their own
+- Their date: 21 Sept 2026 (updated 30 Sept)
+- Note: already cited in our NOTES.md (26 Sept)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

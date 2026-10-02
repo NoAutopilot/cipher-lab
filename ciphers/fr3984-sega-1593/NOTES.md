@@ -258,3 +258,12 @@ unreachable on IA/HathiTrust/Google Books, since 24 Sept 2026 (the check-solved 
 - Search OpenAlex/Persée/HAL for the Sega legation / Baudouin-Desportes 1593 correspondence, in case a secondary work excerpts the edition. S, tools/print_check.py.
 - Fetch the four fr.3984 folios (nos. 6, 8, 88, 90) at native resolution now, the way IMG-FETCH already did for fr.3985 no.7 -- images ready on disk for the solver the moment the edition question clears. M, tools/iiif_lines.py.
 - Re-grep both solver-repo clones for "fr.3984"/"Baudouin-Desportes"/"Sega" more broadly (partial matches, not only the exact strings already tried), in case a partial transcription was added since 24 Sept 2026. S.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json #20
+- Their extent, in their words: attempted 17 Sept, not read: c. 5,000 polyphonic glyphs on ff. 186, 189; classifier reads 75-79% of held-out glyphs, decoder needs over 90%
+- Their date: 17 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

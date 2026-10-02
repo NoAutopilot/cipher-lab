@@ -40,3 +40,12 @@ Files: `specs/cheap-tests/goldbar-1933/freq_test.py`, `specs/cheap-tests/goldbar
 Test 2 (exact-duplicate/substring scan) and test 3 (image fetch) not run, per brief ("run `cheap_tests_in_order[0]` only... Do not run test 2").
 
 Requests: scienceblogs.de 0 (already-fetched pages reused from disk), api.openalex.org 1, api.semanticscholar.org 1, github.com 2 shallow clones (deleted after grep, not committed). No subagents.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/goldbar/NOTES.md
+- Their extent, in their words: attempted: letter counts (almost exactly ten of every letter), no decipherment
+- Their date: 15 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

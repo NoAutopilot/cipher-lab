@@ -190,3 +190,12 @@ fixed sign inventory" as the way forward for both pools -- that needs the DECODE
 
 Hosts this pass: github.com 1 shallow clone (dbourdeau/cyphersolver, siena1421 folder only, deleted after
 copying the six transcript files above). No other network calls.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class a (they read it, fully or in part).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/siena1421/NOTES.md ; SOLVED_CATALOGUE.md #125
+- Their extent, in their words: read in part: keys recovered from ciphertext for nos. 14, 18, 25; no. 4 from its own fragment; no. 1 of 1421 not photographed
+- Their date: 24 Sept 2026 (updated 30 Sept)
+- Note: already cited in our NOTES.md (26 Sept 2026)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

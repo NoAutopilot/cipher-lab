@@ -60,3 +60,12 @@ actual search path), 1 homepage load, 3 search-box submissions (1 needed a retry
 challenge), 3 item-detail-page attempts (all "portlet unavailable," not counted against the good-citizen
 challenge-retry limit since the failure mode is a site-side rendering fault, not a bot challenge) = 9 browser
 fetches total, well under this brief's <=15 cap. WebSearch 1 (confirming the site's real search URL pattern).
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/potocka1714/NOTES.md ; SOLVED_CATALOGUE.md #122
+- Their extent, in their words: R7524 (Mniszech) "uses a separate, still unread numerical system"; the Potocka alphabet (R7525-7530, 7534-7536) is recovered, so the folder reads "read in part" but our item is the unread one
+- Their date: 22-23 Sept 2026 (updated 30 Sept)
+- Note: their target folder not cited in our NOTES.md (catalogue item 280 is)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

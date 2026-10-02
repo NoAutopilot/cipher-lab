@@ -103,3 +103,12 @@ still unlocated.
 
 Credit: unchanged from the check-solved pass (D. Bourdeau, cyphersolver, `labbe1582/`). Rule 10: no novelty claim
 made.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/labbe1582/NOTES.md ; targets/labbe1582/REASSESSMENT.md
+- Their extent, in their words: attempted, open: cipher not read; renewed attempt 23 Sept with failed cryptanalytic tests and a passed synthetic control
+- Their date: 23 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

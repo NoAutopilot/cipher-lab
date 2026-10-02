@@ -177,3 +177,12 @@ Every Sicily and Viceroy hit was read in context: none is a letter from the vice
 viceroy hits are Columbus and the Castilian governors/viceroys of 1506-1520); the April 1503 hits are Isabella's and
 Ferdinand's despatches to the Duke de Estrada (England). The search surfaces text when present, and the verdict
 `open` stands on a controlled search. Rule 10: search result only.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/esp318/NOTES.md ; https://dbourdeau.github.io/cyphersolver/esp318.html
+- Their extent, in their words: no. 94 (ours) unread: "nos. 93 and 94 remain unread"; nos. 92 and 95 read; known-keys, key-rebuild and retry steps open
+- Their date: 17-21 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

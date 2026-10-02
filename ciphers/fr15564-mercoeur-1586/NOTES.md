@@ -65,3 +65,12 @@ Rule 10: no novelty claim made. Not decoded, not transcribed (out of scope for c
 Requests this pass: gallica.bnf.fr SRU 2, manifest 1, info.json 1 (4 total, well under this brief's <=25 cap;
 see `fr3984-sega-1593/NOTES.md` for this session's full Gallica request accounting, since the same worker's
 Part B leaf check used most of the remaining budget). WebSearch 2. No DECODE, no solver-repo clone this pass.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/mercoeur1586/NOTES.md
+- Their extent, in their words: attempted, closed unread; clear frame transcribed, cipher not read (catalogue 13)
+- Their date: 21 Sept 2026
+- Note: their target folder not cited in our NOTES.md (catalogue item 13 is)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

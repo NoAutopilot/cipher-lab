@@ -79,3 +79,12 @@ ours.
    controls this brief specified.
 3. Multispectral/UV imaging of R5005 itself (Bourdeau's own suggestion) would let the pencil decipherment be
    read in full rather than the single legible line.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/zeschau1841/NOTES.md
+- Their extent, in their words: attempted, open: system identified, a few code values from the erased decipherment, letters not read
+- Their date: by 25 Sept 2026 (undated in NOTES)
+- Note: already cited in our NOTES.md (bZES, 26 Sept)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

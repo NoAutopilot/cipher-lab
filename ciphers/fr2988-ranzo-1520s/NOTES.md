@@ -182,3 +182,12 @@ Requests this pass (csCS2c, 24 Sept, earlier): gallica.bnf.fr SRU 1, manifest 1,
 aaymeloglu/unsolved-ciphers, grep only). WebSearch/WebFetch: see the combined report in the Mellon-29 folder's
 "Requests" line for the shared background-agent pass (Gattinara-household search, CSP Venice/Sanudo index probes --
 that agent's own host counts are internal to its report, not separately billed to a brief host). No DECODE login.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json #170 ; targets/vasto1527/n20/ranzo_c0*.txt
+- Their extent, in their words: ff. 9-11 (R1894) transcribed with the Garbino letter (~2,600 groups), same initial-letter+number code; annealer gives function words only; needs Ranzo's table
+- Their date: 21 Sept 2026
+- Note: already cited in our NOTES.md (catalogue item 170)
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

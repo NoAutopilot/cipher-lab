@@ -3660,3 +3660,12 @@ any cipher remark for 12, 18 Mar, 1, 5 Apr 1805 -- about five minutes in a brows
 worker and re-run this brief. `outreach/armstrong-keyhunt-monroe-papers.md` kept, held until that lookup is done.
 Requests: academics.umw.edu 1, fms14.longtermsolutions.com 1 (`keyhunt/requests.log`). Rules 9 and 10: nothing named,
 nothing claimed.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/armstrong/NOTES.md ; TARGETS.md "Armstrong to Madison, 20 Feb 1808" ; README.md
+- Their extent, in their words: 20 Feb 1808 letter: attempted, "adjudicated 2026-09-16: AFIO claim does not hold", unread; the separate 30 Aug 1808 postscript is their solved item (48 of 49 groups)
+- Their date: 16 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

@@ -112,3 +112,12 @@ login used.
 Requests carried over from the prior (held) pass: `nationaalarchief.nl` 0 (already pinned by scARCH),
 `archive.org` 1 (advancedsearch, shared with CS2-18/-22 checks), `github.com` 0 additional (same clones as
 CS2-18), WebSearch 3, WebFetch 1 (delpher.nl, one page, no scraping loop).
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/spaen1808/NOTES.md ; https://dbourdeau.github.io/cyphersolver/spaen1808.html
+- Their extent, in their words: still unread; no key on DECODE, nothing in print; "attempted, open"
+- Their date: 21 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

@@ -288,3 +288,12 @@ schemes), Polish and seven further Latin-alphabet languages at both conventions 
 gaps (pt-B, lt-A/lt-B) -- the next dollars on this target are better spent on a different family (periodic key,
 running key, or the wide-alphabet/Cyrillic-native anneal named as out-of-scope in GOLD-KAL2) than on further
 homophonic reruns, unless a worker wants to close the two remaining gaps first for completeness.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/kaliningrad/ ; README.md ; TARGETS.md #19
+- Their extent, in their words: attempted 15 Sept, blocked on transcription from two photographs
+- Their date: 15 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

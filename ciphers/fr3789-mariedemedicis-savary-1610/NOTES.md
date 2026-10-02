@@ -152,3 +152,12 @@ Credit: this session's transcription and Gallica-negative reconfirmation build d
 this worker's pass A, to keep both passes blind.
 
 LANE R4 orchestrator, 24 Sept 2026 17:25 UTC: status set `blocked` -- the key (BnF fr.3642) is not on Gallica and its DECODE photo (R2077) is behind ASKS 42; ASKS 43 asks for the route.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/breves1610/NOTES.md
+- Their extent, in their words: attempted, not read; passage and its 15 Sept 1610 sibling transcribed (R2075-2077)
+- Their date: 21 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

@@ -71,3 +71,12 @@ direct action yet, only HathiTrust page access which the tool list may open to a
 
 Requests this pass (job 3 only): WebSearch 2 (PPKE, HathiTrust catalog record), data.htrc.illinois.edu 2
 (metadata + pages, one volume, cached to disk), curl direct 0.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/burgo1527/NOTES.md ; targets/burgo1527/reading_evidence.md
+- Their extent, in their words: explained, not a cipher: R9970 images are a clear Spanish minute, two drafts of Charles V to Prince Philip about a Fugger exchange, 1543-1554; the Burgo->Gattinara letter of 26 Oct 1527 is not on these scans; catalogue 198 removed, DECODE correction queued
+- Their date: 28 Sept 2026
+- Note: NOT in our NOTES.md (grep burgo1527, "not a cipher": 0). Earlier (22-23 Sept) they had "attempt closed, target unread"
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

@@ -533,3 +533,12 @@ Gallica or github.com request.
 decode-4450-bnf-fr20506-1525: open (line 1) -- edition/page or full-text-search citation found within 6 lines
 exit=0
 ```
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/catalogue.json #189
+- Their extent, in their words: R4450 = fr. 20506 f. 136, a copy of fr. 2988 f. 9 (R1894); same attempt as #170, not read
+- Their date: 21 Sept 2026
+- Note: our NOTES.md cites vasto1527/n20/ranzo_c017.txt; catalogue #189 entry itself not cited
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

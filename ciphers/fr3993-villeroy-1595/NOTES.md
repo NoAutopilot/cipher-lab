@@ -163,3 +163,12 @@ Requests this section: www.googleapis.com 2 (volume metadata for both ids), book
 (`jscmd=SearchWithinVolume`, >=2s apart, `cipher-lab research script (contact via repository)` User-Agent). No
 gallica.bnf.fr, HathiTrust, BSB, ONB or archive.org used (Google Books gave readable text at the first routing
 step).
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/nevers1595/NOTES.md
+- Their extent, in their words: attempted, closed from the evidence, not read; key not among surviving Nevers keys
+- Their date: 22 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

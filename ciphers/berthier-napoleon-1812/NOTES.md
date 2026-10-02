@@ -625,3 +625,12 @@ with its matched control at N=325/K=207 drawn from fr1810, before any further ju
 corpus itself, a homogeneity split inside tome XX (by addressee or year) to find why that fold is the outlier.
 
 Status stays `open`. No "solved", "new", "first", "unpublished" anywhere in this section.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/napoleon/NOTES.md ; TARGETS.md
+- Their extent, in their words: attempted 15 Sept, "neither is solved"; blocked on one article (Vilcoq 1969), opening 325 groups only
+- Their date: 15 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

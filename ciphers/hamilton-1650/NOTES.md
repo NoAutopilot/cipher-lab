@@ -260,3 +260,12 @@ by the person in the archive.org reader (borrow the item at archive.org/details/
 one hour at a time) or, for presence/absence only, through the `be-api` search-inside snippets already on
 record above. Status unchanged: **offline-only**. Requests this session: archive.org 4 logins and 4 loans
 (all returned), about 25 requests in all; ia800406/ia600406.us.archive.org 8.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/hamilton/NOTES.md ; TARGETS.md #3
+- Their extent, in their words: offline-only: 102 groups, no redundancy, no printed key; key located NRS GD406/1/2197
+- Their date: 14-15 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

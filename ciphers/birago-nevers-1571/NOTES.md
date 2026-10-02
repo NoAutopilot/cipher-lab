@@ -65,3 +65,12 @@ queries. No other hosts, no subagents, no logins, no credentials.
 - **Background page:** `sources/cryptiana/web/nevers.htm` (section BnFfr3251).
 - **Ideas:** Digits run continuously without separators, so the first problem is tokenisation. Try two-digit groups, then variable-length. The diacritics probably modify the following digit pair (syllable vs. letter, or a vowel change). Plaintext is Italian.
 - **Solver status (19 Sept 2026):** Closed-negative by Bourdeau (cyphersolver/birago), 16 Sept 2026, after glyph-level re-transcription from Gallica (the "+" signs are superscript crosses). Variable-length designs excluded against controls; the only consistent design is beyond the annealer at this length. Needs a sibling letter or a crib.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/birago/NOTES.md ; TARGETS.md
+- Their extent, in their words: attempted 16 Sept, structure narrowed, not read (483 digits)
+- Their date: 16 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

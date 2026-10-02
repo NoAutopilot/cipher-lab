@@ -280,3 +280,12 @@ tier plus a gateway failure), since 25-26 Sept 2026.
 - Run the one remaining vig placement in GOLD-K4's grid (`--param modes=plaincipher,keycipher --param arith=beau`), a script-only unit needing no new material. S, tools/family_run.py.
 - Re-run the FBI Vault A-Z Index search with near-miss spellings (Köhler, "New York Nazi spy 1944") beyond the exact "Koehler" string already negative-controlled. S.
 - Extend the TNA Discovery KV 2 sweep with OR-based and date-scoped term combinations, since the existing sweep only tried Koehler+context AND-combinations. S.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/abwehr/NOTES.md ; README.md
+- Their extent, in their words: attempted, skipped as intractable (five short messages)
+- Their date: 15 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.

@@ -179,3 +179,12 @@ ASKS.md row if the orchestrator wants to pursue it. Short of that, the honest ne
 shorthand comparison (test 3, already narrower and less resolution-dependent than the Morse mark detection)
 rather than another attempt at test 2's visual Morse search, which Bourdeau's `marks_raad.py` already ran
 and failed on resolution, not method.
+
+## Solver-repo check (bourdeau, 2 Oct 2026)
+
+Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2026), diffed against this folder on 2 Oct 2026 (worker SOLVERDIFF-BOURDEAU, sources/solver-diffs/2026-10-02-bourdeau.tsv). Match class b (they attempted it and closed or explained it).
+- Their page: https://github.com/dbourdeau/cyphersolver/blob/main/targets/censorship/NOTES.md ; TARGETS.md #33
+- Their extent, in their words: attempted 15 Sept, blocked on image resolution
+- Their date: 15 Sept 2026
+- Note: already cited in our NOTES.md
+Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
