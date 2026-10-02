@@ -183,6 +183,19 @@ SHORTLIST (account-3's likely-solves brief, phase 1, owner's ask), GAPS-pro3055-
 schonenberg, SPLIT on janssens (70) and matignon (31), OPEN steps on mccormick, ra-crusenstolpe, sp90-raby. Standby:
 account-3's last orchestrator line 02:12 UTC. Parent context about 580k of 1M (hand-over at 850k).
 
+**Check-in 5 (03:3x UTC 2 Oct):** 10 workers done and ledgered (USD 63.3; 47 workers about 269 total). Clinton 1779:
+H-1649 page 186 (fo.161) is the period decipherment of SP 2894 -- read in two blind passes, 119 tokens H 116 M 3,
+matches the HMC paraphrase, 2894 is now text-known at grade H (6 of 12 items); six more Kew cipher copies with reel
+decipherments found. Janssens leaf 188 88/163 after leaf 201; its 70 split-check hits are all unkeyed codes and the
+transcription holds (163 groups, 0 glued). Schonenberg: seeded interlinear alignment 0.699 vs shuffled-gloss max 0.301,
+leaf C 136 / M 127 / U 16. SHORTLIST (owner's ask via account-3): ciphers/_triage/likely-solves-2026-10-02.tsv, 15
+rows. Matignon split-check: no Cipher-1 leaf image on disk (0 of 31 reached; parent's error, N). McCormick: two more
+claimed readings (zenodo 2026) for a verifier to cite, none verified. Raby: 0 of 5 items in print, SP 87/2/37 is a
+second copy of items 4-5. Crusenstolpe: Portefeuille Del 1-4 prints 0 cipher documents. Spawned 03:34: CLOSER-2,
+LIKELY-1 (fr.4715 Vieuville sub-pool), -2 (ceppo-nevers), -3 (nevers-birago-1572), -4 (decode-1162), -5
+(fr3151-noailles), -8 (jan-van-nassau 5549), GAPS3 janssens + schonenberg, GAPS2 suriname + matignon.
+hub-seed/SUCCESSOR-PROMPT-account4.md written (parent at about 690k context; hand-over at 800k+).
+
 ## LANE CRYPT handoff (session_01C4FqfU51Y37vq13SMEyUnp), 26-27 September 2026 (closed on brief: four jobs run)
 
 Brief `.claude/briefs/runs/2026-09-26-lane-crypt-orchestrator.md` (owner's ask to parent 7j: fold in the solvers' own methods and published keys). Workers 56.77 ledgered (FETCH 3.80 D, BOURDEAU 2.83 D, LASRY 4.88 D, LESSONS 13.78 D-, KEYS-A 10.46 N, KEYS-B 16.21 F); orchestrator about 5, self-ledgered. No reading produced; no crossmatch candidate; nothing for a verifier.
