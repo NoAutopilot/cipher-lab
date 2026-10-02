@@ -5187,3 +5187,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: goldbar-1933 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/goldbar/NOTES.md
 2026-10-02 00:25 | SOLVERDIFF-BOURDEAU (account 2) | flag: hamilton-1650 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/hamilton/NOTES.md
 2026-10-02 00:26 | SOLVERDIFF-BOURDEAU (account 2) | flag: kaliningrad-2015 -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/kaliningrad/
+2026-10-02 00:26 | SOLVERDIFF-BOURDEAU (account 2) | flag: censorship-manual-stego -- Bourdeau class (b) attempted, closed or explained: https://github.com/dbourdeau/cyphersolver/blob/main/targets/censorship/NOTES.md
