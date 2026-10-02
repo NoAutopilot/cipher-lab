@@ -1,0 +1,13 @@
+line	position	value	grade	reason
+f65R	55	2	I	cipher numeral repeating the gloss's own '2' (P18)
+f66L	25	22	I	cipher numeral repeating the gloss's own '22' (P22)
+f66L	31	25	I	cipher numeral repeating the gloss's own '25' (P22)
+f66L	51	?	U	image reads 97, ciphertext.tsv 95 (NEXT-PAG override)
+f66L	125	?	U	image reads 33, ciphertext.tsv 35 (NEXT-PAG override)
+f66L	189	?	U	image reads 220, ciphertext.tsv 20 (NEXT-PAG override)
+f66L	290	2	I	cipher numeral repeating the gloss's own '2' (P33)
+f66L	371	44	I	cipher numeral repeating the gloss's own '44' (P37)
+f66R	23	36	I	cipher numeral repeating the gloss's own '36' (P38)
+f66R	59	?	U	image reads 32, ciphertext.tsv 52 (NEXT-PAG override)
+f66R	61	na	M	image reads 174, ciphertext.tsv 154 (NEXT-PAG override)
+f66R	63	35	I	cipher numeral repeating the gloss's own '35' (P40)

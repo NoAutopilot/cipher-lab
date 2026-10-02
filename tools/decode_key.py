@@ -59,6 +59,11 @@ decode.json: {"jobs": [{...}, ...]} or one job object. Job keys (all optional):
   unknown_if_q  (a value containing '?' is unknown); unkeyed_value ('?'); unkeyed_grade ('U'); default_grade ('H')
   uncertain_conf (["M","m","L","l","low","?"]); word_values (list: values shown <w> in the spaced style)
   clear_prefix  a tsv sign starting with this prefix is a clear word (e.g. '=' for '=nous', LANE R passes)
+  conf_column   'tsv' format only: header name of the sign-confidence column when it is not conf/confidence
+                (clairambault1225-paget-1714: 'grade', H/M per transcription pass agreement)
+  kind_column, sign_kinds  'tsv' format only: a ciphertext that interleaves clear words and cipher tokens in one
+                column with a kind column; a row whose kind is not in sign_kinds is a clear word
+                (clairambault1225-paget-1714: kind_column 'kind', sign_kinds ['cipher', 'cipher/insertion-clear'])
   nonsign       list of tsv signs that are not cipher tokens (punctuation, a word-break marker): kept in the index,
                 not graded; with it, concat prints them and prints word_sep (e.g. '/') as a space
   defaults (object merged under every job), m_sources, m_words, votes {file, value_column, word_prefix, strip_prefixes}, voted_grade, unvoted_grade, word_glossed_grade
@@ -163,8 +168,13 @@ def load_tsv(path, job):
     lc = job.get('line_column', 'line')
     foc = job.get('folio_column')
     header, rows = with_header(path, (foc, lc) if foc else (lc,))
+    if header is None and rows and lc in rows[0]:  # line column not first (a 'letter' column before it)
+        header, rows = rows[0], rows[1:]
     ci = col(header, lc); pi = col(header, 'pos', 'position', 'index', 'idx')
-    si = col(header, 'sign', 'token', 'group', 'code'); ki = col(header, 'conf', 'confidence')
+    si = col(header, 'sign', 'token', 'group', 'code')
+    ki = col(header, *([job['conf_column']] if job.get('conf_column') else ['conf', 'confidence']))
+    kc = col(header, job['kind_column']) if job.get('kind_column') else None
+    sign_kinds = set(job.get('sign_kinds', []))
     split = job.get('split_line')
     foi = col(header, foc) if foc else None
     recs, seen = [], set()
@@ -182,6 +192,8 @@ def load_tsv(path, job):
         cp = job.get('clear_prefix')
         if cp and t.startswith(cp) and len(t) > len(cp):
             t = 'w:' + t[len(cp):]
+        if kc is not None and r[kc] not in sign_kinds:
+            t = 'w:' + t
         recs.append(dict(folio=fo, line=l2, label=label, pos=int(r[pi]), raw=t, sign=t, conf=conf, gloss='',
                          kind='dot' if t == '.' or t in job.get('nonsign', []) else
                          'clear' if clear_word(t) is not None else 'sign'))

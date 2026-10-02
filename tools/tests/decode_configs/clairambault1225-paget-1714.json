@@ -1,0 +1,35 @@
+{
+ "target": "ciphers/clairambault1225-paget-1714",
+ "note": "Reproduces clairambault1225-paget-1714/decode.json (NEXT2-PAG, 2 Oct 2026) -- exercises conf_column, kind_column/sign_kinds and a line column that is not the first header cell.",
+ "jobs": [
+  {
+   "ciphertext": "ciphertext.tsv",
+   "key": "key.tsv",
+   "exceptions": "exceptions.tsv",
+   "format": "tsv",
+   "line_column": "line",
+   "conf_column": "grade",
+   "kind_column": "kind",
+   "sign_kinds": [
+    "cipher",
+    "cipher/insertion-clear"
+   ],
+   "votes": {
+    "file": "votes.tsv",
+    "value_column": "value"
+   },
+   "voted_grade": "C",
+   "unvoted_grade": "M",
+   "style": "spaced",
+   "reading": "reading.txt",
+   "tokens": "reading_tokens.tsv",
+   "header": [
+    "# clairambault1225-paget-1714 (BnF Clairambault 1225, Paget letters 1714), key.tsv applied by tools/decode_key.py (NEXT2-PAG, 2 Oct 2026)",
+    "# cipher tokens {total}: {HCSMIU}. C = key value equals the period-gloss chunk the alignment puts over this token",
+    "# (align/align_all.tsv via votes.tsv); M = key value with a disagreeing chunk, or an uncertain digit; I = cipher numeral",
+    "# repeating the gloss's numeral; U = code not in key.tsv. Clear text is printed as transcribed. The run-level plaintext",
+    "# of the cipher passages is the period interlinear decipherment (align/pairs.tsv plain_raw), not this token decode."
+   ]
+  }
+ ]
+}
