@@ -1,0 +1,20 @@
+[
+ {
+  "file": "probe_c395.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f395/full/,1000/0/native.jpg",
+  "fetched": "2026-10-02",
+  "what": "f.198 recto: stamp 198 top right, head '23 d'octobre 1593', dense cipher block in the upper half (GAPS, premise check c)"
+ },
+ {
+  "file": "probe_c396.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f396/full/,1000/0/native.jpg",
+  "fetched": "2026-10-02",
+  "what": "f.198 verso, a second scan of the same page as canvas 397 (f198_canvas397_try.jpg): same lines, same '+' margin marks; mean grey difference 15/255 at 1000 px, a registration offset, not different content"
+ },
+ {
+  "file": "probe_c398.jpg",
+  "url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b9060631k/f398/full/,1000/0/native.jpg",
+  "fetched": "2026-09-24",
+  "what": "f.199 recto, blank, stamp 199"
+ }
+]

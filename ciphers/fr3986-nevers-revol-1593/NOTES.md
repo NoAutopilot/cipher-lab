@@ -169,17 +169,114 @@ U 5, I 0 (66), unchanged.
 Status word stays **blocked** (internal: sign identification), the blocker now measured. Spec written:
 `specs/fr3986-nevers-f198.json` with `cheap_test_done`. HYPOTHESES.md row added.
 
-## Remaining gaps (LIKELY-6, 2 Oct 2026)
-Read so far: 0 of 66 drafted signs read to a continuous text; the held-out atlas test reads 19/28 = 67.9% on the neater leaf 298 (atlas_heldout/score.txt), under the 80% gate
-- f.198 cipher runs (66 signs, 9 runs) - blocker: not-attempted; the atlas held-out gate failed (67.9% vs 80%, HYPOTHESES.md row of 2 Oct 2026) so the row's f.198 passes were not run; next: extend the atlas to the eight uncovered tags `// 20 8 = L40 c r ue` from c.264's unused lines (tools/keys/key60_atlas/src/c264_region.jpg, on disk, gloss above each sign line, pairs.txt format) and re-run atlas_heldout/ with one Sonnet call, ~$8
+## Premise check (GAPS-fr3986-nevers-revol-1593, 2 Oct 2026)
+
+Adversarial pre-reading pass per `.claude/briefs/check-solved.md` "Premise check" (a)-(d), run before the Verdict step. Clock
+read 14:19-14:4x UTC 2 Oct 2026. Rule 10 wording throughout: "not found" is a search result, never a novelty verdict.
+
+- **(a) the folder's own mentions -- found, none of them a decipherment of f.198.** The two "interlined" sources this folder
+  and fr3985's name are period office decipherments of *other* leaves: fr.3985 ff.126-130 is Henri IV's Instruction to
+  Nevers of 31 Aug 1593 (cipher from f.130, canvases 264/266/268, gloss above each cipher line), printed in clear in
+  Memoires de Nevers (1665) ii 492-499 -- Bourdeau's `instruction_31aug_print.txt` carries the OCR of Gallica
+  bpt6k64451005 views 541-548, and the gloss on c.264 matches p.498 word for word (checked this pass on the lines
+  "soient quites et absoulz du serment de fidelite qu'ilz luy auront preste / La troisiesme ... / que a l'advenir
+  promettre et jurer a leur sacre"); fr.3986 ff.151-152 is Henri IV to Nevers, Chartres 7 Oct 1593 (canvases 296-298),
+  interlined. Tomokiyo's henryiv2.htm lists further interlined Henri IV letters in no.60 (fr.3985 f.204; fr.3986 ff.58,
+  174, 191) -- all king-to-Nevers, none is f.198. f.198 itself: Tomokiyo's league.htm lists it as "no.101 (fol.198)
+  Duke of Nevers to Revol, Desanzan, 23 October 1593" among the letters "partially in cipher no.60" with no
+  decipherment noted; the 24 Sept 2026 native crops of the verso show no interlinear or marginal gloss (the '+' marks
+  are insertion marks); Bourdeau's "f. 157v copy in clear" is no.75 (Coire, 9 Oct 1593), a different letter.
+- **(b) other solvers' working files -- not found.** Fresh shallow clones 2 Oct 2026: dbourdeau/cyphersolver HEAD
+  34e0fc8 (1 Oct 2026): `targets/nevers1593/` holds transcriptions only for f.209, f.146v, f.157v, f.168 and the two
+  decoders; f.198 appears only in the "not-attempted; located and cut but never transcribed" gap line (his canvases
+  396-398 for no.101 came from his folio ratio, his fetcher stopped at c.388); `atlas60.md` and `key60.txt` are key
+  material, not a reading. aaymeloglu/unsolved-ciphers HEAD d2800bb (27 Sept 2026): no fr.3986 row anywhere (his
+  Nevers rows are fr.3623, 3616, 3975 and Spanish-archive calendar entries).
+- **(c) physical neighbours -- found: the letter's own first page, unread.** Canvas 395 (`images/probe_c395.jpg`,
+  1000 px, fetched this pass) is stamped **198** top right and headed "23 d'octobre 1593": it is **f.198 recto**, the
+  start of no.101, with a block of about 14 near-solid cipher lines in its upper half and clear-with-inline-cipher
+  below. Canvases 396 and 397 are two scans of the same page, **f.198 verso** (`images/probe_c396.jpg` vs
+  `images/f198_canvas397_try.jpg`: same lines, same '+' marks; grey difference 15/255 at 1000 px, a registration
+  offset), the continuation leaf the 24 Sept 2026 F2 pass cut and drafted (66 signs). Canvas 398 is f.199r, blank.
+  So the 24 Sept draft covers the verso only; the recto's cipher block (several hundred signs, same hand) is
+  untranscribed and carries no visible gloss or clear copy at 1000 px (conditional on that resolution; a native
+  crop is the check). No clear copy or decipherment is bound beside the letter.
+- **(d) the recipient's side -- not found.** Revol (secretary of state) has no printed correspondence; the royal
+  side's editions were read: Gallica ContentSearch on Memoires de Nevers part 2 (bpt6k64451005): "Desenzan" 0 hits,
+  "Revol" 5 hits, all "Et plus bas, REVOL" countersignatures of royal letters (PAG_314, 328, 471, 574, 666) -- the
+  letter is not printed there; archive.org full text on Berger de Xivrey's Lettres missives vol.3
+  (recueildeslettre03henr): "Desenzan*/Dezenzan*/Desanzan*" 0 hits; Google Books API ("Desenzan" "Revol"; "Octobre
+  1593" "Revol" Nevers): only Folengo's Histoire maccaronique and the BnF catalogues, plus Rott's Inventaire sommaire
+  (1882) and Histoire de la representation diplomatique de la France aupres des cantons suisses vol.2 (1900,
+  archive.org histoiredelarepr02rottuoft, OCR fetched): Rott pp.580-581 cites fr.3986 ff.112, 113, 132, 143, 156,
+  161, 168 (the Swiss leg, 1-14 Oct 1593) and "Revol a Nevers, Mantes, 23 octobre 1593, BN 500 Colbert XXXI 587"
+  (same date, opposite direction, a different letter); f.198 is not cited. The owed "Octobre 1593" date-phrase search
+  in Gomberville (24 Sept gap) is thereby run: no hit.
+- Requests this pass: gallica.bnf.fr 4 (2 ContentSearch, 2 IIIF canvases, 1.6 s apart, all 200); archive.org 5
+  (2 advancedsearch, 3 djvu.txt, one 503 on a wrong identifier, not retried); be-api.us.archive.org 3; googleapis 2;
+  github.com 2 clones. No 403/429.
+
+**Premise verdict: not found / not found / found (the recto, unread, no gloss) / not found -- CLEAR TO TEST**, and the
+target is larger than the folder recorded: f.198r (canvas 395) is the bulk of the cipher, f.198v (canvases 396/397) the
+tail. `python3 tools/intake_gate_check.py fr3986-nevers-revol-1593` -> "blocked (line 1) -- already terminal, nothing to
+gate", exit 0, before and after this section (the status word is `blocked`, so the gate does not test for the section).
+
+## GAPS-fr3986-nevers-revol-1593 (2 Oct 2026, account-4)
+
+Worker GAPS-fr3986-nevers-revol-1593 (Fable 5.1), brief `.claude/briefs/runs/2026-10-02-account4-gaps-step.md`, the Verdict
+step of LIKELY-6's "Remaining gaps": atlas coverage of the eight uncovered tags from c.264's unused lines, then the held-out
+re-run. Clock read 14:19-14:5x UTC. Known answer first; f.198 itself NOT read (the gate below did not clear).
+
+**Atlas extension (disk only, no fetch).** The lower lines of `tools/keys/key60_atlas/src/c264_region.jpg` (gloss above each
+cipher line, matching Memoires de Nevers ii 498 word for word) were read at native resolution by the worker and ten
+exemplars cut for the eight tags the 264-only atlas lacked: `tools/keys/key60_atlas/atlas264ext.tsv` (A53-A62, native boxes
+and the print word each sits under) and `contact_sheet_264ext.png` (the 264-only sheet plus one block; `build_ext264.py`
+regenerates both). Alignment is the worker's, grade S, same as A01-A52: L40 = qui and 8 = t and r = s in "quites"; r = s in
+"lors"; c = s in "ses"; ue = e in "subjects" and "troisiesme"; 20 = u in "roy[a-u-me]" (∂ a, 20 u, ro me, three table
+values in sequence); = d (the table's =/= form) in "l'ad-ve-ni-r" (λ, =/=, y, 50, ꝺo); // = c in "sacre" (y, //, E). No
+leaf-298 material entered the atlas. Bonus pairs seen but not cut: pi = que, theta = des, ∬ = qu'ilz, ꝛ = luy, 8+ = tous,
+∞+ = Le Roy, .xx. = t, oo = c, 50 = ni (all table values).
+
+**Held-out re-run.** Same 28 gloss-aligned leaf-298 signs, same five masked crops, one blind Sonnet pass given only the
+extended sheet, the two tag tables and the crops (`atlas_heldout/heldout_passC.tsv`; 1 vision call of 3 allowed). Score
+(`atlas_heldout/score_C.txt`, regenerated by `heldout_score.py --pass heldout_passC.tsv --expect 20/28`, exit 0; the scorer's
+suffix-stripping now removes a trailing ' and ? together, which pass B did not need -- 19/28 unchanged):
+
+| | before (LIKELY-6, 264-only) | after (264 + 8 tags) |
+|---|---|---|
+| held-out sign-read rate | 19/28 = 67.9%, Wilson 49-82% | **20/28 = 71.4%**, Wilson 95% CI 52.9-84.7% |
+| shuffle floor (pass tags permuted within crop, 2000 draws) | mean 42.4%, p95 50.0% | mean 44.4%, p95 53.6%, max 60.7% |
+| on the eight added tags | 10/18 = 55.6% | 11/18 = 61.1% |
+| on the other tags | 9/10 = 90.0% | 9/10 = 90.0% |
+| gate | 80% | 80%, **not met** |
+
+Reading: above the floor, below the gate, one sign better than before (`ue` in K3a). The remaining eight misses are not
+coverage: two `r` were written `<r-shaped>` (the exemplar's own form word, the tag not used), `20` at a crop edge was read
+`<r-shaped>`, one `//` was read `X+`, two final `8` sit at crop edges (one dropped, one `<x-shaped>`), one `g` inserted. Rule
+3's third-attempt clause: this is the second pass of the same instrument (atlas + one blind Sonnet pass on these crops) with
+only the coverage knob changed, and it moved one sign; the coverage knob is [retired] for this held-out. The held-out itself
+is too small to decide an 80% gate either way (the interval straddles it both times), so the next step is a different
+instrument, not a third pass: widen the answer key to the rest of c.298 (on disk, gloss above, about 100 more signs) and
+cut crops with margins so no sign is at an edge. Grades: no new reading, no token grade changes; the 24 Sept draft of the
+verso stands at H 5, M 56, U 5, I 0 (66); the recto's block (premise check (c)) has no draft yet.
+
+Status word stays **blocked** (internal: sign identification), now with the target's full extent known. Spec
+`specs/fr3986-nevers-f198.json` `cheap_test_done.rerun` written; HYPOTHESES.md row added. Vision calls: 1 subagent (of 3);
+the worker's own eye-checks of the c.264 lines and probes are not subagent calls. Requests: see the Premise check section
+(gallica 4, archive.org 5, be-api 3, googleapis 2, github 2); none for this step.
+
+## Remaining gaps (GAPS, 2 Oct 2026; LIKELY-6 rewrite updated in place)
+Read so far: 0 of 66 drafted verso signs read to a continuous text, and the recto block (canvas 395, several hundred signs) undrafted; the held-out atlas test reads 20/28 = 71.4% on the neater leaf 298 (atlas_heldout/score_C.txt; 19/28 before the eight-tag extension), under the 80% gate
+- f.198 verso cipher runs (66 signs, 9 runs) - blocker: not-attempted; the atlas held-out gate failed twice (67.9% then 71.4% vs 80%, HYPOTHESES.md rows of 2 Oct 2026), so the f.198 passes were not run; coverage of the eight missing tags done 2 Oct 2026 (A53-A62) and [retired] as the knob; next: widen the held-out answer key to the rest of c.298 (src/f3986_c298_region.jpg, gloss above, ~100 signs, grade S alignment) and re-run one blind pass on uncut crops (+80 px margins, sign count given), ~$7
+- f.198 recto cipher block (canvas 395, about 14 near-solid lines, found by the premise check 2 Oct 2026) - blocker: not-attempted; no gloss or clear copy visible at 1000 px; next: one native region fetch (Gallica IIIF, browser UA) + tools/iiif_lines.py crops + manifest entry, ~$2, no pass until the held-out clears 80%
 - web and blog check (check-solved.md required step) - blocker: not-attempted; the gate did not test for it because `blocked` is terminal, owed before any open/partial verdict; next: the four web searches and three blog site searches logged under "## Web and blog check", ~$1
 
-## Escalation (LIKELY-6, 2 Oct 2026)
-- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source; leaf 298 used as the held-out answer key this pass; c.264's lower lines still unused (the next step above)
-- [n/a] clear-pages: the leaf is itself a clear-French continuation with inline cipher runs; no separate clear copy of this letter is known (Bourdeau's f.157v clear copy is a different letter)
+## Escalation (GAPS, 2 Oct 2026; LIKELY-6 list updated in place)
+- [x] siblings: fr.3985 ff.126-130 and fr.3986 ff.151-152 (the interlined leaves) are the atlas source; leaf 298 is the held-out answer key; c.264's lower lines now in the atlas (A53-A62, 2 Oct 2026); the rest of c.298 is the next held-out material
+- [n/a] clear-pages: the leaf is a clear-French letter with inline cipher runs (verso) and a cipher block (recto); no clear copy of this letter is known (Bourdeau's f.157v clear copy is no.75, 9 Oct; premise check (a)-(d) 2 Oct 2026 found none)
 - [x] known-keys: key no.60 is in hand (key.tsv) and applied mechanically on 24 Sept 2026; the key is not the blocker
-- [x] print: Gomberville seconde partie, Berger de Xivrey vol.3 and Memoires de la Ligue v.5-6 read for the letter on 24 Sept 2026, absent; the "Octobre 1593" date-phrase search in Gomberville is still owed with the web check
-- [ ] key-rebuild: the copyist's sign-form atlas is the rebuild this hand needs; planned step: coverage of the eight uncovered tags from c.264's unused lines, then the held-out re-run (gate 80%)
-- [x] image-check: canvas 397 = f.198 confirmed by the facing stamp on canvas 398 (24 Sept 2026); native region on disk, line crops in images/
-- [retired] retry: a third blind pass on a Revol copy against the atlas as it stands (instrument: tools/keys/key60_atlas at 52+28 pairs; F1/F2 without it, G2 with it on f.176, this held-out at 67.9%) -- reopened only by the coverage step above
-Verdict: keep going: 2 internal gaps; cheapest next: atlas coverage of the eight uncovered tags from c.264's unused lines + held-out re-run, ~$8
+- [x] print: Gomberville seconde partie, Berger de Xivrey vol.3 and Memoires de la Ligue v.5-6 read 24 Sept 2026; Memoires de Nevers ii ContentSearch ("Desenzan", "Revol"), Lettres missives vol.3 full text, Rott 1882/1900 read 2 Oct 2026; absent
+- [ ] key-rebuild: the coverage knob is retired (the eight uncovered tags added from c.264, A53-A62, moved the held-out by one sign, 19 -> 20 of 28, instrument tools/keys/key60_atlas + one blind Sonnet pass on the five LIKELY-6 crops); the untried instrument is a wider held-out: widen the answer key to the rest of c.298 and re-run one blind pass on uncut crops, ~$7 (the next step above)
+- [ ] image-check: canvas 395 = f.198 recto (stamp 198, head "23 d'octobre 1593"), canvases 396/397 = f.198 verso (two scans), 398 = f.199r blank (2 Oct 2026, images/probes.json); the 24 Sept draft covers the verso only; the recto's native region fetch (~$2) is untried, see the gap above
+- [retired] retry: a third blind pass on a Revol copy against the atlas as it stands (F1/F2 without it, G2 with it on f.176, LIKELY-6 and GAPS held-out at 67.9% and 71.4%) -- reopened only by a held-out that clears 80%
+Verdict: keep going: 3 internal gaps; cheapest next: widen the held-out answer key to the rest of c.298 + one blind pass on uncut crops, ~$7 (then the recto fetch ~$2; the eight-tag coverage knob is [retired])

@@ -30,6 +30,15 @@
   "target": "held-out leaf 298 (fr.3986 f.152): 19/28 signs = 67.9% tag match, Wilson 95% CI 49-82%; 90% on tags the 264-only atlas shows, 56% on the 8 it lacks (// 20 8 = L40 c r ue)",
   "control": "shuffle floor, the pass's own tags permuted within crop, 2000 draws: mean 42.4%, p95 50.0%, max 64.3%",
   "judge": "not run: the gate (80%) failed before any f.198 pass, so no candidate reading exists to judge",
-  "verdict": "above the shuffle floor, below the 80% gate: tests 2-3 not run (control-first, rule 3). Status: blocked (sign identification), blocker now measured. Next: extend the atlas to the 8 uncovered tags from c.264's unused lines (tools/keys/key60_atlas/src/c264_region.jpg, on disk, no fetch), re-run this held-out (1 Sonnet call), then test 2. Files: ciphers/fr3986-nevers-revol-1593/atlas_heldout/"
+  "verdict": "above the shuffle floor, below the 80% gate: tests 2-3 not run (control-first, rule 3). Status: blocked (sign identification), blocker now measured. Next: extend the atlas to the 8 uncovered tags from c.264's unused lines (tools/keys/key60_atlas/src/c264_region.jpg, on disk, no fetch), re-run this held-out (1 Sonnet call), then test 2. Files: ciphers/fr3986-nevers-revol-1593/atlas_heldout/",
+  "rerun": {
+   "date": "2 Oct 2026",
+   "by": "GAPS-fr3986-nevers-revol-1593 (account-4, Fable 5.1)",
+   "test": "1 again, after extending the atlas with the eight tags it lacked (A53-A62 from c.264's lower lines, aligned on the print; no leaf-298 material)",
+   "target": "held-out leaf 298: 20/28 = 71.4%, Wilson 95% CI 52.9-84.7% (before 19/28 = 67.9%); on the eight added tags 11/18 = 61.1% (before 10/18); other tags 9/10 both times",
+   "control": "shuffle floor, pass C tags permuted within crop, 2000 draws: mean 44.4%, p95 53.6%, max 60.7%",
+   "judge": "not run: gate (80%) not met, no f.198 pass",
+   "verdict": "above floor, below gate, +1 sign; coverage knob retired (rule 3 third-attempt clause); next: widen the held-out to the rest of c.298 and re-run on uncut crops (~$7); premise check found f.198 recto (canvas 395) is the bulk of the cipher, undrafted. Files: ciphers/fr3986-nevers-revol-1593/atlas_heldout/score_C.txt, tools/keys/key60_atlas/atlas264ext.tsv"
+  }
  }
 }

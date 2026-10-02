@@ -1,0 +1,16 @@
+# GAPS (2 Oct 2026, account-4): held-out re-run after extending the atlas with the eight tags the 264-only atlas lacked.
+# Atlas = contact_sheet_264ext.png: the 52 leaf-264 pairs of LIKELY-6 plus 10 exemplars (A53-A62, atlas264ext.tsv) cut from
+# c.264's lower lines (quites, lors, ses, subjects, troisiesme, royaume, l'advenir, sacre), aligned on the printed Instruction;
+# no leaf-298 material. Held out = the same 28 gloss-aligned signs of leaf 298 in the same five crops (ho_*.png), gloss masked.
+# Blind pass = one Sonnet subagent (heldout_passC.tsv), the only vision call of the step. Scorer: heldout_score.py --pass
+# heldout_passC.tsv --expect 20/28 (norm fix this pass: a tag ending in both ' and ? is now stripped of both; pass B unchanged).
+K1   7/9  answer: L40 E 8 c do = c r 8         | pass: L40 E 8 c' do = c' <r-shaped>
+K2a  2/3  answer: 8 pi 20                      | pass: 8 pi <r-shaped>
+K2b  4/4  answer: L40 = pi to                  | pass: L40 = pi to?
+K3a  3/6  answer: n E r ue // 8                | pass: n g E x X+ ue'? <x-shaped>
+K3b  4/6  answer: = do pi to // 8              | pass: = alpha pi to //
+HELD-OUT sign-read rate: 20/28 = 71.4%   gate 80%   Wilson 95% CI 52.9-84.7%
+shuffle floor (pass C tags permuted within crop, 2000 draws): mean 44.4%, p95 53.6%, max 60.7%
+on the 8 tags added this pass (// 20 8 = L40 c r ue): 11/18 = 61.1% (LIKELY-6, atlas without them: 10/18 = 55.6%)
+on the other tags: 9/10 = 90.0% (LIKELY-6: 9/10 = 90.0%)
+before (LIKELY-6, 264-only atlas, pass B): 19/28 = 67.9%, floor mean 42.4% p95 50.0%; after: see above. Gate not met.

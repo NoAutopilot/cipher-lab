@@ -1,0 +1,28 @@
+crop	pos	tag	confidence	note
+K1	1	L40	M	L with loop and o, tick above
+K1	2	E	H	
+K1	3	8	M	bold 8 with dot lower right
+K1	4	c'	M	small c with tick
+K1	5	do	H	cursive d+o
+K1	6	=	H	two bars
+K1	7	c'	M	small c with tick
+K1	8	<r-shaped>	M	
+K2a	1	8	M	top bar, 8-like
+K2a	2	pi	H	
+K2a	3	<r-shaped>	M	cut at edge
+K2b	1	L40	M	L with loop and o
+K2b	2	=	H	
+K2b	3	pi	H	
+K2b	4	to?	M	t with bar, cut at edge
+K3a	1	n	M	n-shaped
+K3a	2	g	M	
+K3a	3	E	H	
+K3a	4	x	M	small x
+K3a	5	X+	M	x with long bar
+K3a	6	ue'?	M	u-like with tick above
+K3a	7	<x-shaped>	M	
+K3b	1	=	H	
+K3b	2	alpha	H	fish loop
+K3b	3	pi	H	
+K3b	4	to	M	
+K3b	5	//	M	cut at right edge

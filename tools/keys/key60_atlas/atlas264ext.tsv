@@ -1,0 +1,11 @@
+sign_id	tag	form	value_under_gloss	context	x0	y0	x1	y1	gloss_word	print
+A53	L40	L with loop and o (as leaf 298 writes qui)	qui	[qui]tes	505	1975	610	2035	quites	soient quites & absous
+A54	8	8	t	qui[t]es	666	1975	706	2035	quites	soient quites & absous
+A55	r	r-shaped	s	quite[s]	826	1975	876	2035	quites	soient quites & absous
+A56	r	r-shaped	s	lor[s]	1945	1868	1998	1918	lors	que deslors ses suiets
+A57	c	c (table: c = s and c = a)	s	se[s]	2098	1868	2142	1918	ses	que deslors ses suiets
+A58	ue	u + e	e	subj[e]cts	2425	1868	2488	1918	subjects	ses suiets soient quites
+A59	ue	u + e	e	troisi[e]sme	465	2235	550	2290	troisiesme	La troisieme
+A60	20	20 (a-u-me: this hand writes 20 as two figures here)	u	roya[u]me	1590	2225	1670	2295	roy'me	Rois de ce Royaume
+A61	=	two bars with an oblique stroke (table: = and =/= both d)	d	la [d]venir	285	2355	340	2425	l'advenir	qu'a l'aduenir
+A62	//	two slants	c	sa[c]re	1825	2355	1880	2425	sacre	a leur Sacre
