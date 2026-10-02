@@ -297,3 +297,51 @@ Fresh shallow clone of github.com/dbourdeau/cyphersolver, HEAD 34e0fc89 (1 Oct 2
 - Their date: 15 Sept 2026
 - Note: already cited in our NOTES.md
 Credit: D. Bourdeau, cyphersolver (code MIT, text CC BY 4.0). Status line unchanged; the parent decides any status change from the ROOM flag.
+
+## Web and blog check (GF-A2-4, 2 Oct 2026)
+
+Queries (WebSearch, 2 Oct 2026 22:3x UTC), each with what came back:
+1. find-place + date (no sender/recipient known): `Kaliningrad bottle message cipher Baltiysk 2015 solved` -- Cipherbrain
+   post 19 (17 Oct 2017), **a second, earlier Cipherbrain post, "Kaliningrad's second mystery: who can break this
+   encrypted bottle post" (12 Sept 2016)**, and the Alster bottle-post series (other items). No solve announced.
+2. Russian-language find report: `Балтийск бутылка шифр записка улица Ленина 2015 расшифровка` -- only unrelated Baltic
+   message-in-a-bottle news (1913, 1987, Alaska 1969); nothing on this find.
+3. distinctive phrase / the 2021 crib claim: `Kaliningrad cryptogram Filaret Synodal Bible plaintext encryption method
+   bottle` -- Wikipedia "Russian Synodal Bible", the two Cipherbrain posts; no publication of "Frank"'s claimed method or
+   plaintext found.
+4. folder title: `"Kaliningrad" cryptogram Top 50 unsolved Schmeh bottle post Pillau decrypted` -- the two Cipherbrain
+   posts plus "Unsolved: an encrypted bottle post found by a blog reader" (16 Oct 2016, another item) and Alster posts.
+5. Cipherbrain: `site:scienceblogs.de klausis-krypto-kolumne Kaliningrad` -- the same two posts only.
+6. Cipher Mysteries: `site:ciphermysteries.com Kaliningrad bottle` -- no ciphermysteries.com result (scienceblogs only).
+7. Cryptiana blog: `site:cryptiana.blogspot.com Kaliningrad OR Baltiysk OR Pillau` -- no cryptiana.blogspot.com result.
+Opened (curl, 1 request, HTTP 200; saved `sources/schmeh/posts/19-kaliningrad-2016.{html,txt}`): the 12 Sept 2016 post and its **14-comment thread, read in full**. Comments:
+Facebook relays (Romo: "looked like French, then Russian"; Ulyanenkov: "Look like English. Vowel+1, consonant-1"),
+Brantner (French-Flemish impression), Thomas #4-#7, #10, #14 (37 symbols with the apostrophe/umlaut variants; IC about
+0.054 with variants, 0.08 on base letters; e n r i s order suggests a transposition of German), Leonid #8 (the Russian
+forum also raised German anagrams), Piper #9/#11 (bottle never in the sea; apostrophes as repeat marks?), Merzmensch #13
+(a "kosmopol method" PDF of a partial attempt, merzmensch.files.wordpress.com, no reading). **No plaintext or decipherment
+in the thread.** Comment #6 links a Russian forum discussion (simple_life.dirty.ru/...-784251/) "without a solution but
+with a transcription and a frequency count": fetch failed (proxy CONNECT 502), Wayback CDX for it and for the strana39.ru
+source article both reset by the proxy (1 attempt each); strana39.ru article itself now answers 404 -- unreachable, not
+read. The 2017 post-19 thread (58 comments) was read in full by LANE B2 bINT (25 Sept, above): two unsubstantiated
+"solved" claims (Ernst 2017, "Frank" 2021), no plaintext posted. Nothing new found.
+
+## Premise check (GF-A2-4, 2 Oct 2026)
+
+(a) Decipherments the folder already mentions: the two claimed private solutions in the 2017 thread (Ernst: "political"
+text; Frank: a chapter of the 1876 Filaret Synodal Bible) -- opened by bINT (thread on disk, `sources/schmeh/posts/
+19-kaliningrad.txt`); neither posted a plaintext, key or method, and web query 3 above finds no later publication. No
+gloss, clear copy or key exists for this item. Not found (two unverified claims, not a reading).
+(b) Other solvers' working files: shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers (2 Oct 2026).
+cyphersolver `targets/kaliningrad/` (README line 311: "Blocker is transcription from two photographs, not cryptanalysis";
+top50/NOTES.md #19 "high") -- attempted 15 Sept 2026, not read, already cited in this file (Solver-repo check, 2 Oct).
+Aymeloglu: only an unrelated DECODE postcard (R3282, Königsberg 1911) in catalogue/decode-catalog.csv. Merzmensch's
+2016 PDF (comment #13) is a partial substitution attempt, no reading claimed. The Russian forum thread (comment #6) is
+unreachable from here. Not found.
+(c) Physical neighbours: the bottle's other contents (the 2016 thread: shells, sand, a wooden tag and string, per
+Piper #9) carry no visible writing in the published photographs; the two sheets are both imaged (`images/cryptogram1.png`,
+`cryptogram2.png`, the 2016 post's own "front side"/"rear side" -- note the 2016 post calls them front and rear of one
+sheet, this file calls them two sheets; not settled here). No other sheet or clear copy is reported. Not found.
+(d) Recipient's side: none identified (unaddressed note); the only primary report, strana39.ru (July 2015), now 404s
+and was not reachable through Wayback this pass. Unreachable.
+Result: nothing found that reads the cryptogram.
