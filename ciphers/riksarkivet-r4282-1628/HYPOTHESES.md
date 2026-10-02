@@ -1,0 +1,71 @@
+# riksarkivet-r4282-1628 -- hypothesis families
+
+Append-only. CLAUDE.md rule 3: the matched CONTROL number sits beside the TARGET number in every row. No
+`tools/family_run.py` row exists yet for this target (bRIK's R4284 key-test crib, 26 Sept 2026, is in NOTES.md
+"Test run" and `report.json`); the rows below are written by `scripts/clear_cribs.py` (RIK-CRIBS, 2 Oct 2026)
+from `cribs/clear_cribs_report.json`, and `scripts/clear_cribs.py --check` re-derives them (rule 7).
+
+## RIK-CRIBS (2 Oct 2026, account-4): R4282's own clear-Latin phrases as pattern cribs
+
+Instrument: `tools/crib_pattern.py` (H28), used as a library with the same `run`/`shuffle_groups`/`pct` as the
+CLI: homophones allowed (R4284's key-test leaf shows e with three signs, s with four), no wild, no skip, drag
+never crosses the page boundary (`--group-col page`, 864 + 230 signs), score = the implied partial key applied to
+the whole 1,094-sign stream under the la18 unigram (tools/data/la18, Zaluski 1709-11, the only wired Latin
+corpus). Three controls per row: (1) the tool's own 200 shuffled-order copies of each page; (2) a NEGATIVE CRIB of
+the same folded length drawn from la18 tomus I (no word shared with the leaf's clear phrases, OCR junk filtered by
+a 20-occurrence floor), run under identical settings -- the floor for "the real text places any crib more easily
+than its shuffle"; (3) a POSITIVE CONTROL: a synthetic la18 letter of the same N=1094 and K=34 with the phrase
+embedded once and enciphered by a homophonic key of R4284's shape (24 letters, the 10 extra signs as second
+homophones of the most frequent letters), 100 shuffles -- does the instrument find a phrase of this length at
+this N when the transcription is clean. "rank a/200" = how many shuffles reach the real value (0 = above every
+shuffle). P1 is Bourdeau's three brackets run as one 37-letter phrase; P1a/P1b are its first and third brackets.
+Agreement with bRIK's key = sign -> majority letter of the R4284 key-test crib (`cribs/brik_crib_key_compare.tsv`,
+13 signs compared, 4 ties left out), the maximum over every consistent placement, not only the top one.
+
+| date (UTC) | family | crib (folded length) | max-err | TARGET placements (vs shuffled-order mean / p95 / max; rank) | TARGET best score (vs shuffled p95; rank) | NEGATIVE CRIB placements (vs its shuffles p95; rank) | NEGATIVE CRIB best (vs its p95; rank) | POSITIVE CONTROL (synthetic, true placement found / rank; best vs p95) | max agree with bRIK key, any placement (target / negative) | label |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1 'et qualis sit eius futurus status dubitatur' (37) | 0 | 0 (vs 0.0 / 0 / 0; 200/200 at or above) | -- (vs --; --/200) | 0 'joannis ad brandeburgicum nos serenitatem' (vs 0; 200/200) | -- (vs --; --/200) | found rank 1 of 1; top key right 15/15; best -2.772 vs p95 -- (rank 0/100) | -- / -- | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1 'et qualis sit eius futurus status dubitatur' (37) | 1 | 0 (vs 0.0 / 0 / 0; 200/200 at or above) | -- (vs --; --/200) | 0 'joannis ad brandeburgicum nos serenitatem' (vs 0; 200/200) | -- (vs --; --/200) | found rank 1 of 1; top key right 15/15; best -2.772 vs p95 -- (rank 0/100) | -- / -- | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1 'et qualis sit eius futurus status dubitatur' (37) | 2 | 0 (vs 0.0 / 0 / 0; 200/200 at or above) | -- (vs --; --/200) | 0 'joannis ad brandeburgicum nos serenitatem' (vs 0; 200/200) | -- (vs --; --/200) | not run (err 2) | -- / -- | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1a 'et qualis sit' (11) | 0 | 201 (vs 113.95 / 143 / 172; 0/200 at or above) | -2.574 (vs -2.523; 81/200) | 239 'fata ei jam ab' (vs 172; 0/200) | -2.446 (vs -2.422; 42/200) | found rank 8 of 159; top key right 1/11; best -2.608 vs p95 -2.563 (rank 31/100) | 2 / 2 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1a 'et qualis sit' (11) | 1 | 639 (vs 447.64 / 493 / 546; 0/200 at or above) | -2.538 (vs -2.445; 170/200) | 691 'fata ei jam ab' (vs 555; 0/200) | -2.400 (vs -2.354; 131/200) | found rank 46 of 531; top key right 1/10; best -2.541 vs p95 -2.486 (rank 49/100) | 2 / 2 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1a 'et qualis sit' (11) | 2 | 948 (vs 812.91 / 856 / 883; 0/200 at or above) | -2.470 (vs -2.390; 135/200) | 970 'fata ei jam ab' (vs 898; 0/200) | -2.391 (vs -2.330; 196/200) | not run (err 2) | 2 / 2 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1b 'futurus status dubitatur' (22) | 0 | 0 (vs 0.2 / 1 / 3; 200/200 at or above) | -- (vs -2.700; --/200) | 0 'ac non mei ideo non quia fic' (vs 0; 200/200) | -- (vs -2.583; --/200) | found rank 1 of 2; top key right 11/11; best -2.729 vs p95 -2.716 (rank 2/100) | -- / -- | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1b 'futurus status dubitatur' (22) | 1 | 3 (vs 2.19 / 6 / 13; 66/200 at or above) | -2.751 (vs -2.675; 71/200) | 1 'ac non mei ideo non quia fic' (vs 4; 111/200) | -2.595 (vs -2.591; 10/200) | found rank 3 of 5; top key right 2/18; best -2.667 vs p95 -2.696 (rank 1/100) | 1 / 0 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P1b 'futurus status dubitatur' (22) | 2 | 28 (vs 15.56 / 26 / 34; 9/200 at or above) | -2.693 (vs -2.627; 125/200) | 12 'ac non mei ideo non quia fic' (vs 17; 47/200) | -2.558 (vs -2.536; 32/200) | not run (err 2) | 2 / 1 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P2 'sed tamen ut res' (13) | 0 | 76 (vs 43.79 / 67 / 88; 1/200 at or above) | -2.611 (vs -2.592; 57/200) | 84 'pari ter san dei' (vs 63; 1/200) | -2.522 (vs -2.476; 60/200) | found rank 15 of 95; top key right 1/13; best -2.617 vs p95 -2.606 (rank 13/100) | 2 / 2 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P2 'sed tamen ut res' (13) | 1 | 418 (vs 240.57 / 287 / 301; 0/200 at or above) | -2.568 (vs -2.552; 52/200) | 402 'pari ter san dei' (vs 275; 0/200) | -2.478 (vs -2.443; 108/200) | found rank 74 of 359; top key right 3/12; best -2.612 vs p95 -2.574 (rank 77/100) | 3 / 3 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P2 'sed tamen ut res' (13) | 2 | 788 (vs 582.05 / 637 / 664; 0/200 at or above) | -2.568 (vs -2.520; 165/200) | 774 'pari ter san dei' (vs 627; 0/200) | -2.465 (vs -2.399; 178/200) | not run (err 2) | 3 / 3 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P3 'tractatus magnas admodum' (22) | 0 | 0 (vs 0.06 / 0 / 3; 200/200 at or above) | -- (vs -2.755; --/200) | 0 'fe bellorum modis unde non' (vs 0; 200/200) | -- (vs -2.749; --/200) | found rank 1 of 1; top key right 15/15; best -2.834 vs p95 -2.821 (rank 1/100) | -- / -- | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P3 'tractatus magnas admodum' (22) | 1 | 1 (vs 1.11 / 4 / 12; 107/200 at or above) | -2.901 (vs -2.767; 77/200) | 2 'fe bellorum modis unde non' (vs 3; 35/200) | -2.775 (vs -2.749; 11/200) | found rank 1 of 3; top key right 15/15; best -2.834 vs p95 -2.780 (rank 14/100) | 0 / 0 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P3 'tractatus magnas admodum' (22) | 2 | 16 (vs 8.96 / 18 / 25; 19/200 at or above) | -2.801 (vs -2.733; 112/200) | 13 'fe bellorum modis unde non' (vs 13; 13/200) | -2.775 (vs -2.716; 93/200) | not run (err 2) | 2 / 0 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P4 'Mittatur nobis responsum' (22) | 0 | 0 (vs 0.04 / 0 / 3; 200/200 at or above) | -- (vs -2.695; --/200) | 0 'fi ne in locis quam materia' (vs 0; 200/200) | -- (vs -2.557; --/200) | found rank 1 of 1; top key right 15/15; best -2.642 vs p95 -2.777 (rank 0/100) | -- / -- | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P4 'Mittatur nobis responsum' (22) | 1 | 0 (vs 0.79 / 4 / 10; 200/200 at or above) | -- (vs -2.681; --/200) | 1 'fi ne in locis quam materia' (vs 3; 68/200) | -2.685 (vs -2.556; 39/200) | found rank 1 of 3; top key right 15/15; best -2.642 vs p95 -2.687 (rank 0/100) | -- / 0 | RIK-CRIBS |
+| 2 Oct 2026 | crib_pattern (H28 tool) | P4 'Mittatur nobis responsum' (22) | 2 | 8 (vs 6.08 / 14 / 22; 63/200 at or above) | -2.748 (vs -2.643; 148/200) | 9 'fi ne in locis quam materia' (vs 15; 45/200) | -2.595 (vs -2.536; 62/200) | not run (err 2) | 1 / 1 | RIK-CRIBS |
+
+
+Top placement per target row (grade M at most, rule 4; none is a reading):
+
+- P1a-err0: start 892 (errs 0, score -2.5741, cov 454): agrees with bRIK on 0 of 3 compared signs {}, conflicts {'c': 'e!=n', 'g': 't!=r', 'o': 'l!=m'}; key 7=i 8=s M=i b=u c=e e=s g=t o=l q=a r=t u=q
+- P1a-err1: start 24 (errs 1, score -2.5379, cov 409): agrees with bRIK on 0 of 2 compared signs {}, conflicts {'k': 't!=u', 'c': 'i!=n'}; key 4=a 7=i D=t E=q b=e c=i k=t m=l n=u u=s
+- P1a-err2: start 238 (errs 2, score -2.4701, cov 359): agrees with bRIK on 0 of 2 compared signs {}, conflicts {'k': 'e!=u', 'L': 'i!=p'}; key 4=a E=u L=i M=i e=q f=t k=e m=s r=t
+- P1b-err1: start 691 (errs 1, score -2.7508, cov 734): agrees with bRIK on 0 of 7 compared signs {}, conflicts {'L': 'u!=p', 'k': 'r!=u', 'l': 's!=p', 'o': 'a!=m', 'g': 'u!=r', 'p': 'd!=a', 't': 'i!=e'}; key 4=u 5=a 7=t D=b L=u M=u a=t e=s g=u k=r l=s m=f n=s o=a p=d r=r t=i u=t
+- P1b-err2: start 25 (errs 2, score -2.6927, cov 711): agrees with bRIK on 0 of 6 compared signs {}, conflicts {'k': 'f!=u', 'c': 'u!=n', 'l': 's!=p', 'g': 'u!=r', 'L': 't!=p', 'o': 'a!=m'}; key 4=u 5=d 7=t 8=r D=a E=u F=u L=t M=u c=u e=t g=u h=t k=f l=s m=r n=t o=a q=i u=s
+- P2-err0: start 851 (errs 0, score -2.6108, cov 462): agrees with bRIK on 1 of 4 compared signs {'t': 'e'}, conflicts {'k': 't!=u', 'p': 'u!=a', 'g': 'e!=r'}; key 4=n 7=m S=t T=d b=a e=r f=e g=e h=s k=t p=u t=e u=s
+- P2-err1: start 84 (errs 1, score -2.5684, cov 484): agrees with bRIK on 0 of 5 compared signs {}, conflicts {'l': 'e!=p', 'L': 'e!=p', 'g': 'n!=r', '3': 't!=s', 't': 'r!=e'}; key 3=t 7=a A=d L=e M=e b=u g=n l=e q=t t=r u=s x=m
+- P2-err2: start 84 (errs 1, score -2.5684, cov 484): agrees with bRIK on 0 of 5 compared signs {}, conflicts {'l': 'e!=p', 'L': 'e!=p', 'g': 'n!=r', '3': 't!=s', 't': 'r!=e'}; key 3=t 7=a A=d L=e M=e b=u g=n l=e q=t t=r u=s x=m
+- P3-err1: start 25 (errs 1, score -2.9013, cov 711): agrees with bRIK on 0 of 6 compared signs {}, conflicts {'k': 't!=u', 'c': 'a!=n', 'l': 'n!=p', 'g': 's!=r', 'L': 'm!=p', 'o': 'o!=m'}; key 4=c 5=a 7=s 8=m D=m E=r F=g L=m M=u c=a e=a g=s h=d k=t l=n m=t n=a o=o q=d u=t
+- P3-err2: start 18 (errs 2, score -2.801, cov 669): agrees with bRIK on 2 of 6 compared signs {'k': 'u', 'c': 'n'}, conflicts {'3': 'a!=s', 'i': 'a!=t', 'l': 'd!=p', 'g': 'm!=r'}; key 3=a 4=a 5=u 7=a D=t E=s F=o a=r b=t c=n e=m g=m i=a k=u l=d m=g n=m q=c u=a
+- P4-err2: start 25 (errs 2, score -2.7477, cov 711): agrees with bRIK on 0 of 6 compared signs {}, conflicts {'k': 'm!=u', 'c': 't!=n', 'l': 's!=p', 'g': 'e!=r', 'L': 'o!=p', 'o': 'n!=m'}; key 4=t 5=r 7=n 8=m D=o E=i F=i L=o M=u c=t e=b g=e h=s k=m l=s m=a n=t o=n q=p u=u
+
+Reading of the table: at max-err 0 the three 22-letter phrases and the 37-letter phrase place NOWHERE in the
+real stream, where the design-matched synthetic places each at its true start, rank 1, key right 15/15 (the
+instrument has power at this length and N when the transcription is clean). At max-err 1-2 the real stream admits
+1-28 placements, which is what its own shuffles (p95 4-26) and the negative crib (1-13) also admit, and no best
+score beats the shuffled p95 (ranks 52-165 of 200). The two short cribs (11 and 13 letters) place freely in the
+target (above the shuffled p95), but so does their negative crib, and the positive control cannot rank the true
+placement either (rank 8-74, top key right 1/13): below the instrument's resolution at this N. Maximum agreement
+with bRIK's R4284 crib key over every placement is 3 of ~12 signs, matched exactly by the negative crib's 3. No
+partial key, no anchor. Conditional (rule 2/3): the positive control is error-free, while Bourdeau's transcription is a
+single pass with no measured error rate; max-err 2 covers at most 2 misreads in a 22-sign window (about 9%), so a
+transcription noisier than that would make the 22-letter rows a non-test, not a negative (the SALV-DIAG lesson).

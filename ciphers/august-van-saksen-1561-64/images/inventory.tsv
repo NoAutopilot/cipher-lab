@@ -42,3 +42,8 @@ briefnr	page	content	cipher_type	approx_tokens	decipherment_location
 175	p8	clear German prose with one cipher run, interlinear glosses again visible above part of it	arbitrary symbols + digits	~50	possibly interlinear (see p1 note)
 175	p9	clear German prose, closing + signature + date "9. Aprilis anno [15]67" (f.352)	n/a	0	n/a
 175	p10	address leaf, docketed "9. Aprilis 1567"	n/a	0	n/a
+58	p1	clear German letter (f.270r), Willem to August, Breda 31 Dec 1561	n/a	0	n/a
+58	p2	clear German letter continues (f.270v), closing + signature	n/a	0	n/a
+58	p3	cipher block, foliated 271, 15 lines in two paragraphs, signed "Wilhelm printz zu Uranien"	System A (as 74 and 57): digits + T V X Z S J + G1 G2 G3 G4 G6 TL Zb XX, word signs for Hispanien, Niderland, fried, Religion, und, E.L.	~560	see p4 (f.272)
+58	p4	CONTEMPORARY DECIPHERMENT: clear German, foliated 272, 15 lines, "Es lest sich in Hispania ... dienstlichen anzeigen wollen"; close, with the usual spelling drift (NEXT-AVS, 2 Oct 2026)	clear German prose	n/a	this page
+58	p5	address leaf with seal	n/a	0	n/a

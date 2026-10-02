@@ -132,13 +132,96 @@ riksarkivet1628/, commit fc0c9e8, read 26 Sept 2026), `scripts/crib_test.py`, `r
 ## Escalation
 - [x] siblings: Bourdeau's own NOTES.md for the 14-record bundle read in full (see check-solved above)
 - [x] known-keys: this job (R4284's key-test leaf as a crib key)
-- [ ] clear-pages: R4282's own clear-Latin cribs ("et qualis sit eius futurus status dubitatur", "sed
-      tamen ut res", "tractatus magnas admodum", "Mittatur nobis responsum") not tried this job
+- [x] clear-pages: R4282's own clear-Latin cribs ("et qualis sit eius futurus status dubitatur", "sed
+      tamen ut res", "tractatus magnas admodum", "Mittatur nobis responsum") -- RIK-CRIBS, 2 Oct 2026: dragged
+      as pattern cribs with tools/crib_pattern.py; the 22- and 37-letter phrases place nowhere at 0 misreads
+      (where a design-matched synthetic places each at rank 1, key 15/15) and only at chance at 1-2 misreads;
+      the two short phrases are below the instrument's resolution; max 3/12 signs agree with bRIK's R4284 crib
+      key, matched by a negative crib. No partial key. See "## RIK-CRIBS" below and HYPOTHESES.md.
 - [ ] known-keys (remaining): 68 of the 70 fetched Chifferklaver låda II key records (R4259-R4329) still
       untried against R4282 -- this job used only R4284's key-test leaf, per its brief, not the other 68
 - [ ] print: Rikskansleren Axel Oxenstiernas skrifter och brefvexling series II, and Camerarius editions,
       not searched this job (out of scope/cap)
 - [ ] image re-check: the two mismatched-length crib pairs, and whether the leaf reads column-wise
+
+## RIK-CRIBS (2 Oct 2026, account-4): the leaf's own clear-Latin phrases as cribs on the R4282 stream
+
+Brief `.claude/briefs/runs/2026-10-02-account4-rik-cribs.md` (Escalation item "clear-pages"). Disk only, no
+image, no network; conditional on Bourdeau's single-pass transcription (rule 2; `r4282_transcription_bourdeau.txt`,
+dbourdeau/cyphersolver riksarkivet1628/, commit fc0c9e8, CC BY 4.0 -- cited, not copied as code).
+
+**Where the clear phrases sit.** All four are inside the cipher text, not marginal: P1 `xpEr4m [et qualis sit]
+[eius?] [futurus status dubitatur] | Spr MrAq5bD` (p.1 line 10, three brackets, the sentence resumes in cipher);
+P2 `rbbl5p8MmLu [sed tamen ut res] LkMnl7oa` (p.1 line 21, mid-sentence, the strongest shape); P3
+`fDeMrbm4nLx5 . [tractatus magnas admodum] EptMSab?` (p.1 line 25, after a stop); P4 `[Mittatur nobis responsum]
+S? fbm7o` opens p.2. A phrase left in clear is not by itself evidence that the same words recur in cipher; the
+test is whether any of them does.
+
+**Method.** `scripts/clear_cribs.py` (rule 7, `--check` re-derives `cribs/clear_cribs_report.json`, verified
+"OK" this session) builds `cribs/r4282_codes.tsv` (one row per sign, 1,094 signs, K=34, the same stream
+`scripts/crib_test.py` parses -- asserted identical -- with the page as the group so no placement crosses the
+p.1/p.2 boundary; the one `^` mid-token in `bLrMpkn^ou` is kept as a sign, as bRIK kept it) and
+`cribs/brik_crib_key_compare.tsv` (bRIK's R4284 key-test crib reversed to sign -> majority letter: 13 signs,
+4 ties `a b d e` left uncompared), then drags each phrase with `tools/crib_pattern.py`'s own `run` under
+`--homophones` (a letter may have several signs; a sign has one letter), max-err 0, 1 and 2, la18 unigram,
+200 shuffled-order controls, plus a same-length NEGATIVE crib from la18 tomus I and a design-matched POSITIVE
+control (synthetic la18 letter, N=1094, K=34, R4284-shaped homophony, the phrase embedded; 100 shuffles).
+The brief's `--lock`-style constraint from bRIK's key: the tool has no such option and none was added; runs are
+unconstrained and agreement with bRIK's key is counted after the fact (`--compare`). The canonical CLI form,
+run once this session and matching the script's P2-err0 row exactly:
+
+```
+python3 tools/crib_pattern.py --codes ciphers/riksarkivet-r4282-1628/cribs/r4282_codes.tsv \
+  --crib "sed tamen ut res" --homophones --group-col page --lang la18 \
+  --compare ciphers/riksarkivet-r4282-1628/cribs/brik_crib_key_compare.tsv --shuffles 200
+REAL: 76 consistent placements at 76 distinct start positions; best score -2.611 (coverage 462 of 1094)
+CONTROL (200 shuffled-order sequences): placements mean 43.8 p95 67 max 88; best score mean -2.624 p95 -2.592 max -2.550
+RANK: real placements 76 vs shuffles -- 1/200 shuffles at or above; real best score -2.611 -- 57/200 shuffles at or above
+```
+
+`python3 tools/tests/test_crib_pattern.py`: "all ok" this session (the tool's own synthetic positive control).
+
+**Numbers** (full table, one row per phrase and error setting, in HYPOTHESES.md; `cribs/clear_cribs_report.json`
+has every placement's key). Per phrase, target vs the three controls:
+
+| phrase (folded length) | max-err 0: real placements / shuffle p95 / negative crib / positive control | max-err 1: real / p95 / neg / pos | max-err 2: real / p95 / neg | best score rank (of 200 shuffles), err 0/1/2 | max agree with bRIK key, any placement (target / neg) |
+|---|---|---|---|---|---|
+| P1 et qualis sit eius futurus status dubitatur (37) | 0 / 0 / 0 / found rank 1, key 15/15 | 0 / 0 / 0 / found rank 1 | 0 / 0 / 0 | -- (nothing places, target or control) | -- |
+| P1a et qualis sit (11) | 201 / 143 / 239 / rank 8 of 159, key 1/11 | 639 / 493 / 691 / rank 46 | 948 / 856 / 970 | 81 / 170 / 135 | 2 / 2 |
+| P1b futurus status dubitatur (22) | 0 / 1 / 0 / found rank 1, key 11/11 | 3 / 6 / 1 / rank 3 of 5 | 28 / 26 / 12 | -- / 71 / 125 | 2 / 1 |
+| P2 sed tamen ut res (13) | 76 / 67 / 84 / rank 15 of 95, key 1/13 | 418 / 287 / 402 / rank 74 | 788 / 637 / 774 | 57 / 52 / 165 | 3 / 3 |
+| P3 tractatus magnas admodum (22) | 0 / 0 / 0 / found rank 1, key 15/15 | 1 / 4 / 2 / found rank 1 | 16 / 18 / 13 | -- / 77 / 112 | 2 / 0 |
+| P4 Mittatur nobis responsum (22) | 0 / 0 / 0 / found rank 1, key 15/15 | 0 / 4 / 1 / found rank 1 | 8 / 14 / 9 | -- / -- / 148 | 1 / 1 |
+
+**Result: negative with matched controls, at the instrument's resolution.** (a) The three 22-letter phrases and
+the 37-letter whole place nowhere in the real stream at 0 misreads, where the design-matched synthetic places each
+at its true start, rank 1, implied key right on all 15 signs (and shuffles of the synthetic place nothing): the
+instrument can find a clean 22-letter crib at this N and K, and does not find these. At 1-2 misreads the real
+stream admits 1-28 placements, inside what its own shuffles (p95 4-26) and the negative crib (1-13) admit, with
+no best score above the shuffled p95 (rank 52-165 of 200). (b) The two short phrases (11, 13 letters) place
+above the shuffled p95 in the target (201 vs 143; 76 vs 67) -- but the negative crib does the same (239 vs 172;
+84 vs 63), so the excess is the real stream's own sign-order structure, not the Latin, and the positive control
+cannot rank a true 11- or 13-letter placement either (rank 8-74, top key right 1/13): below resolution. (c) bRIK's
+R4284 crib key: the best agreement any placement reaches is 3 of ~12 compared signs (P2 at err 1, one placement
+of 418), matched exactly by the negative crib's 3 of 402; the top placements conflict with bRIK on the signs that
+carry its own best support (`k=u`, `g=r`, `p=a`, `t=e`, `i=t`). Two independent cribs agreeing on 3-4 letters was
+the brief's signal; it is not there. No partial key is implied; every letter value in `cribs/clear_cribs_report.json`
+is M at most (rule 4) and none is a reading. Status stays `open`; not a NEAR.md row (nothing beat its control).
+
+**What the negative is conditional on (rule 2/3).** The positive control is error-free; the transcription is a
+single pass with no measured error rate ("u/n/M, q/g, k/K, b/h confusions are the main risk"). Max-err 2 covers
+at most 2 misreads in a 22-sign window (about 9%); if the pass's real error rate is above that, the 22-letter
+rows are a non-test rather than a negative (CLAUDE.md rule 3, SALV-DIAG). What would settle it is a second blind
+pass on the two page images (Escalation item "image re-check"), which also fixes the two length-mismatched R4284
+crib pairs -- an image-gated step, not this job. A second shape not tested here: the clear words may recur in
+cipher inflected (`responsi`, `tractatuum`), which a whole-phrase drag cannot see; a stem-level drag (`respons`,
+`tractat`, 7-8 letters) is below this instrument's resolution at N=1094 (the P1a/P2 rows show 11-13 letters
+already are), so it needs a different instrument (a bigram-scored key search seeded by the stem) rather than a
+re-run of this one.
+
+**Files:** `scripts/clear_cribs.py`, `cribs/r4282_codes.tsv`, `cribs/brik_crib_key_compare.tsv`,
+`cribs/clear_cribs_report.json`, `HYPOTHESES.md` (new). **Cost:** CPU only (about 90 s per derivation), no vision
+calls, no network requests; USD figure is the orchestrator's to read.
 
 ## Web and blog check (WEBCHECK-riksarkivet-r4282-1628, 2 Oct 2026)
 

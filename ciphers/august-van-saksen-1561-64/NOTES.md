@@ -348,22 +348,89 @@ since 24 Sept 2026.
 - Eye-check SO-SAXONY-126's unapplied sign candidates (l.5 pos 11/17, l.6 'adesn'/'slagen') against images/00053_p2.png already on disk. S.
 - Re-scan the Rachfahl II.1 HTRC token counts (already fetched) for the 1561/1564 window more closely than D2's one gist pass. S, tools/htrc_ef_headwords.py.
 
+## NEXT-AVS: WVO 58 fetched and trial-decoded (2 Oct 2026, parent worker NEXT-AVS, account 2)
+
+The cheapest next step named by the Verdict line below (brief `.claude/briefs/runs/2026-10-02-acct3-next-avs.md`).
+
+**Fetched** (1 request, resources.huygens.knaw.nl, 01:11 UTC): `00058.pdf`, 5 pages, embedded JPEGs at 251-461 dpi.
+WVO briefnr 58, Willem -> August, Breda 31 Dec 1561 (Dresden Loc. 9941/3, "Printzen", f.270r-272r). Content by eye:
+p1-p2 = f.270r-v clear German letter, signed; **p3 = f.271, a cipher block of 15 lines in two paragraphs** (7 + 8),
+signed "Wilhelm printz zu Uranien"; **p4 = f.272, the contemporary decipherment** in clear German, 15 lines, one
+hand (WVO's "ontcijferd gedeelte"); p5 = address leaf. Kept at 100 dpi as `images/00058_p3.jpg` and `00058_p4.jpg`
+(JPEG, folder at 28 MB under the cap); native pages were read from the PDF in the scratchpad and not committed
+(re-fetch `pdf_url` in `images/manifest.json`). Line crops cut with `tools/iiif_lines.py --image ... --region
+60,100,2080,2050` (15 bands, pitch 122 px); the decipherment with `--region 0,100,2073,1500 --lines-per-crop 2`.
+
+**Glyphs.** f.271 is System A: the same repertoire as 74 and 57 (digits, T V X Z S J, G1 Λ, G2 Δ, G3 ϖ, G4 π, G6 ε,
+TL, Zb, XX, VmV, Wm), none of 126/98's System B marks. Not a third repertoire like 53's (53 writes dots as word
+separators and ends words in "15"; 58 writes gaps and ends words in "17" = en, as 74 does).
+
+**Trial decode** (rule 3, both numbers): `ciphertext_58_sample.tsv`, 10 of the 15 lines (L01-03, L08-11, L13-15;
+301 signs, one reader at native resolution, 9 signs M), word signs coded `NEW1`-`NEW7` by shape only so the decode is
+blind to f.272. `tools/decode_key.py . --ciphertext ciphertext_58_sample.tsv --key key_74.tsv --style words` ->
+`trial58/reading_58_trial_key74.txt`; the same with `key_53.tsv` -> `trial58/reading_58_trial_key53.txt`.
+`trial58/score_trial58.py` counts the letter-words (60 units with no word sign) that are words of my f.272 reading
+(`trial58/plaintext_58_f272.txt`, grade M, u/v and ai/ei and ss/s normalised):
+
+| key | letter-words matching f.272 | decode of L01 |
+|---|---|---|
+| key_74 (System A, C from 74's f.19) | **46/60 (76.7%)** | es lest sich in [NEW1] undt in diesen [NEW2] undt |
+| key_53 (53's cryptanalytic key) | **0/60** | e??e??kcnku?iuzskuzkepeu?iuzs |
+| control: key_74 with its letter values shuffled (200 draws) | mean 0.18/60, max 7/60 | |
+
+The 14 key_74 misses are the cipher's own spellings against the decipherment's (undt/unnd, Frankreich/Franckreich,
+standt/stand, wurdet/wirdet, scharpffer/scharffer, dien-st-lichen split by a gap) and two signs I read wrongly
+(L03 "ubainen", L08 "istd"), not key errors: the same cipher-vs-decipherment drift R21 found on 74. **58 is read by
+key_74 and not by key_53.** f.272 is a close decipherment, as 74's f.19 is: "Es lest sich in Hispania unnd in diesen
+Niderland und auch in Franckreich dermassen ansehen, das fried zwischen beiden Konigen ... langen bestandt haben
+werde ... Der Religion und Inquisition halben ist noch allenthalben im alten stand und wirdet in Hispania viel
+scharffer gehalten als ummer beschehen, so sicht man in diesen Niderland vleissiger zu als hiebevorn, dieweill sich
+die secten in Franckreich also vermheren, welchs alles ich E.L. bey sich in geheimbt zu behalten dienstlichen
+anzeigen wollen" (my reading, M; peace expected between the two kings; religion and the Inquisition unchanged,
+stricter in Spain, watched more closely in the Netherlands since the sects in France multiply).
+
+**Word signs in 58** (value from f.272 at the matching position, grade M until aligned; shape in
+`ciphertext_58_sample.tsv`'s `#NEWn` rows): NEW1 S+Z ligature = Hispanien (key_74 `HISP`, n=1), NEW2 oval with a
+bar = Niderland (`NL`, n=1), NEW3 double-barred cross = fried (not in key_74), NEW4 S with two bars = Religion (not in
+key_74), NEW5 trident = und (`UND`, n=2), NEW7 three bars crossed = E.L. (`EL`, n=1); NEW6 is the single letter q
+(Inquisition), absent from 74. Whether NEW1/2/5/7 are the same shapes as 74's own HISP/NL/UND/EL was not checked on
+74's 100 dpi image; their meanings match. Also seen: the F (p) sign written as a loop with a cross below (L10
+"scharpffer"), Xy = y in "bey" (L14).
+
+**57's word signs: not in 58.** All 15 lines of f.271 were scanned on the native crops for 57's three shapes
+(`exceptions_57.tsv`: OQ circle with a tail = wir, THE circle under a cross = Keiser, BOX square = Churfurs-):
+none occurs. 58 writes "wir" with letters where it needs it (not in the sample) and never names the Emperor or an
+Elector. The one circle-and-cross sign in 58 (L10) is the p of "scharpffer", not an orb. 58 therefore settles
+nothing for 57's five M tokens; the remaining internal route for them is 175's glossed runs (on disk), then the
+Dresden reply.
+
+**What this changes.** The "53 key" gap's WVO 58 route is closed: 58 cannot extend key_53 (different system). No
+token of 53, 57 or 126 is regraded; `tools/decode_key.py . --check` still exits 0 on the unchanged decode.json (the
+58 sample is not a decode.json job). Follow-up, not run (Workers rule 7): a full alignment of f.271 against f.272
+(`build_pairs.py`/`build_key.py` pattern, about 560 signs, ~$6) would add C-grade counts to key_74's letters and
+two word signs (fried, Religion) at grade C, and give the circle a fourth System A letter with its decipherment;
+it changes no grade on the three targets, so it is a key-register job (KEY-OFFICES/KEY-DESIGN at close-out), not
+a reading step. 58's cipher text is a candidate for the Dresden/KHA print check only if someone needs it.
+
+Requests: resources.huygens.knaw.nl 1 (00058.pdf). No other host. Status line unchanged (`partial`); status.json,
+STATUS.md and NEAR.md not touched (flagged to the parent).
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Read so far: 699 of 904 cipher tokens firm (77.3%: C 461 + S 238), M 205, U 0, from `python3 tools/decode_key.py ciphers/august-van-saksen-1561-64 --check` (rerun 2 Oct 2026 00:2x UTC, exit 0, "reading up to date"): 126 C 214 of 240 (89.2%, key_98 from the decipherment f.67), 57 C 247 of 300 (82.3%, key_74 from f.19), 53 S 238 of 364 (65.4%, no H or C: a cryptanalytic result; matched control 280/282, 99.3%, solve_53_control.json)
 - 53 p1+p2 (f.266r-v, 13 cipher lines; 126 M, incl. 'zuberzuschreiben' l.2, 'geschret' l.7, 'mrch' L10 pos 26) - blocker: not-attempted; passes cut from the 100 dpi images/00053_p1.png (passbrief_s1.md, 90.9% agreement, recon53/disagreements.tsv 28 rows), p2 read once at 100 dpi (F1); the native JPEG (2567x4187, about 309 dpi, images/manifest.json) was never used for passes, and S1's own suggestion ("a native-resolution re-read ... would settle the 119 M tokens") and SO-SAXONY-53-57's spot checks were never run; next: fetch 00053.pdf once, `tools/iiif_lines.py --image` crops pasted, two blind passes per page + one reconciliation (5 subagent calls at about $1.46 each), tools/reconcile_passes.py, then decode_key.py --check and regrade, ~$9
-- 53 key (key_53.tsv, 20 signs all S; sign 9 = f by context, exceptions_53.tsv) - blocker: not-attempted; WVO 58 (Orange to August, Breda 31 Dec 1561, two months after 53, WVO note "Met een ontcijferd gedeelte in geheimschrift") was flagged by csWV3 for capture and never fetched (no 00058 file or fetch anywhere in the repo; sources/wvo/cipher-letters-2026-09-24.tsv carries its pdf_url); next: fetch 00058.pdf (1 request), compare its glyphs with key_53, key_74 and glyphs/atlas.md, trial-decode under key_53 and key_74; if one matches, align its decipherment (build_pairs.py/build_key.py pattern) and regrade 53 (S to C) or 57, ~$4 for the test
+- 53 key (key_53.tsv, 20 signs all S; sign 9 = f by context, exceptions_53.tsv) - blocker: not-attempted on the only route left; the WVO 58 route was run 2 Oct 2026 (NEXT-AVS step above): 58 is System A, read by key_74 (46/60 letter-words match its f.272 decipherment; key_53 0/60; shuffled-key control mean 0.18/60), so 58 cannot extend key_53 and no sibling with a decipherment shares 53's system (74, 98, 153, 175, 58 all checked); next: the 53 native re-read (gap above) and the KHA Japikse copy of 53 (ASKS 67); a solver re-run is not a next step while the transcription carries 126 M
 - 57 p3 (KHA A 11/XIV B/41-6, 7 lines; 48 transcription-doubt M) - blocker: not-attempted; passA_57/passB_57 agree on 84.8% of columns (recon57/disagreements.tsv, 49 rows), cut from the 100 dpi images/00057_p3.png (passbrief_s1.md); R21 fetched native scans for 74/98/126/53 only, never 57 (R21 "Requests"); next: fetch 00057.pdf, crop p3's 7 lines with `tools/iiif_lines.py --image`, two blind passes + one reconciliation (3 subagent calls), decode_key.py --check, regrade, ~$6
-- 57 p3 word signs outside key_74 (OQ 'wir', THE x2 'Keiser', BOX 'Churfurs-', G1h 'x'; 5 tokens M by context, exceptions_57.tsv) - blocker: not-attempted; reclassified from waiting-on: the Dresden reply (Loc. 9941/3 Bl. 268r-269v 'Zettel', request sent 26 Sept 2026 18:20 UTC, CONTRIBUTIONS.md 'Dresden minute of WVO 57', outreach/dresden-wvo57-minute.md 'reply pending') is one route, but two internal ones are untried: WVO 58 (Dec 1561, between 57 and 74, with its own decipherment, never fetched) and WVO 175 (1567, interlinear cipher runs with contemporary glosses, symbols + digits, already on disk as images/00175_p1-p8.png, never compared sign by sign with System A, images/inventory.tsv); signs absent from 74 (ciphertext_74.tsv has no OQ/THE/BOX/G1h); next: in the WVO 58 worker above, look for OQ/THE/BOX in 58; separately compare 175's glossed runs with System A's word-sign inventory on the disk images (no network), ~$2; the Dresden reply remains the fallback
+- 57 p3 word signs outside key_74 (OQ 'wir', THE x2 'Keiser', BOX 'Churfurs-', G1h 'x'; 5 tokens M by context, exceptions_57.tsv) - blocker: not-attempted; reclassified from waiting-on: the Dresden reply (Loc. 9941/3 Bl. 268r-269v 'Zettel', request sent 26 Sept 2026 18:20 UTC, CONTRIBUTIONS.md 'Dresden minute of WVO 57', outreach/dresden-wvo57-minute.md 'reply pending') is one route, but two internal ones are untried: WVO 58 (Dec 1561, between 57 and 74, with its own decipherment, never fetched) and WVO 175 (1567, interlinear cipher runs with contemporary glosses, symbols + digits, already on disk as images/00175_p1-p8.png, never compared sign by sign with System A, images/inventory.tsv); signs absent from 74 (ciphertext_74.tsv has no OQ/THE/BOX/G1h); WVO 58 route run 2 Oct 2026 (NEXT-AVS): all 15 lines of f.271 scanned on native crops, OQ/THE/BOX absent (58's own word signs are Hispanien, Niderland, fried, Religion, und, E.L.; its one circle-and-cross sign is the p of "scharpffer"), nothing for 57's five M tokens; next: compare 175's glossed runs with System A's word-sign inventory on the disk images (no network), ~$2; the Dresden reply remains the fallback
 - 126 p4 (f.139) key-level M (Λ as m 9, word sign K 'die' 2, down-arrow k/ge 2, sign 1 as i 2; the 15 rows of exceptions_126.tsv) - blocker: not-attempted; WVO 124 (Orange to August, Brussel 16 Apr 1564, five months before 126, "solved elsewhere (Groen van Prinsterer, Archives (GPA))", sources/wvo/cipher-letters-2026-09-24.tsv) was classed by pattern only (csWV3) and never fetched; next: fetch 00124.pdf (1 request), check whether its cipher is System B (glyphs/atlas.md "R21 codes, 98 system"); if so, align it against Groen's printed text (Archives I, IA full-text route) to settle K, the down-arrow and the l/m split, then regrade 126, ~$5
 - 126 p4: 11 M tokens inherited from key_98's uncertain pairings (EL8 'das~' 4, NW 'wir~' 2, Pf 2, R 'E.L.~' 1, Qf 1, 9 t/d~ 1) plus SO-SAXONY-126's spots ('adesn' Sb as s, 'slagen' no ch, down-arrow at l.5 pos 11/17 one sign or two) - blocker: not-attempted; f.67 was read at native resolution by R21 but never transcribed to a file, and align_98.txt carries 24 '~' units (not 7) over 6 lines, with key_conflicts.tsv 8 rows; R21's "transcribe f.67 ... and settle the ~ pairings" was never done; the SO-SAXONY-126 suggestions are logged "not applied"; the "While waiting" bullet 2 points this check at images/00053_p2.png, the wrong leaf (126's cipher is images/00126_p4.png, f.139); next: one native-resolution worker (PDFs 00098 and 00126, 2 requests): transcribe f.67 to plaintext_98_f67.txt, settle the 24 '~' units, build_key.py --check, re-read the three f.139 spots, decode_key.py --check, regrade 126, ~$5
 - 53 and 126 as whole texts, independent period witness (KHA Collectie Japikse copies of 53 and 126; KHA minute A 11/XIV I/4 nr. 26 of 126 "met een 'Zeitung'") - blocker: waiting-on ASKS row 67 (dr. Huysman's reply on a KHA route, asked 26 Sept 2026 about 15:00 UTC, outreach/huygens-reply-2026-09-26.md); the KHA is not online; AUDIT.md V-GATE2 ruling keeps N4 with the copies named as an unseen witness; the internal key-level routes for these letters are the WVO 58 and WVO 124 gaps above
 
 ## Escalation (1 Oct 2026)
-- [ ] siblings: opened 74, 98, 153, 175 (R9, images/inventory.tsv); 74 (f.18/f.19) and 98 (f.66/f.67) are the key sources for 57 and 126 (R21); 153 (1566, overlined numerals) is a different design; Orange's 1561 Schwarzburg key is not an August system (ciphers/gunther-van-schwarzburg-1561/NOTES.md step 2). Not tried: WVO 58 (31 Dec 1561, "met een ontcijferd gedeelte") and WVO 124 (16 Apr 1564, printed by Groen) never fetched; 175's glossed interlinear runs (on disk) never compared sign by sign with System A, System B or key_53. Planned: fetch 58, then 124; compare 175 from the disk images
+- [ ] siblings: opened 74, 98, 153, 175 (R9, images/inventory.tsv); 74 (f.18/f.19) and 98 (f.66/f.67) are the key sources for 57 and 126 (R21); 153 (1566, overlined numerals) is a different design; Orange's 1561 Schwarzburg key is not an August system (ciphers/gunther-van-schwarzburg-1561/NOTES.md step 2). WVO 58 (31 Dec 1561) fetched and trial-decoded 2 Oct 2026 (NEXT-AVS): System A, key_74 reads it against its own f.272 decipherment (46/60 letter-words; key_53 0/60); a fifth deciphered System A witness for the key register, nothing for 53's system or 57's word signs. Not tried: WVO 124 (16 Apr 1564, printed by Groen) never fetched; 175's glossed interlinear runs (on disk) never compared sign by sign with System A, System B or key_53. Planned: compare 175 from the disk images, then fetch 124
 - [x] clear-pages: 74 f.19 and 98 f.67 identified as the contemporary decipherments and aligned (R21); plaintext_98.txt (ff.68-69) shown to be an enclosed newsletter, not 98's decipherment; the clear text beside each target (53 p2 autograph postscript, 57 p3 signed clear postscript, 126 pp1-3) checked and none is the decipherment (inventory.tsv, S1, A2). The minutes that may carry plaintext are outside: Dresden 'Zettel' of 57 (reply pending), KHA minute and Japikse copies of 126 and 53 (ASKS 67). 126's interlinear "e e r e" above l.1 (later hand?) contradicts the key and was not used (R21)
 - [x] known-keys: tools/key_crossmatch.py ran every on-disk key against ciphertext_53/57/126 (KEY-CROSSMATCH.tsv); only each text's own key reads it (key_74 on 53: z -4.47, "uettelah?e.znnregu..."; key_98 on 53: z 0.74); the Schwarzburg 1561 key differs in form; the four keys are in KEY-OFFICES.tsv and KEY-DESIGN.tsv; Cryptiana dutch.htm, DECODE and both solver repositories: no hits (check-solved)
 - [x] print: Groen, Gachard, Rachfahl (II.1 through HTRC tokens only), von Weber, Kluckhohn I, Goetz 1891, Japikse I (ends Sept 1561), Demandt nrs 113/115 (clear text only), Kervyn II, Weiss, Ritter, Kruse, 24 Google Books gist queries, phrase searches, JSTOR rows 48/49/55/56/63/64/69; no prior decipherment located (AUDIT.md V3, A2, A3, D1, D2, V-GATE2). Groen's printed text of WVO 124 not yet used as a key source (siblings). "While waiting" bullet 3 (closer Rachfahl II.1 HTRC scan) is optional print work, not a reading step
-- [ ] key-rebuild: done for 53 (tools/homophonic_anneal.py, 4 of 6 restarts converge, matched control 280/282; G6 = k by context). Not done: 57's five word signs and 126's K, down-arrow and Λ l/m are context-only; key_98's 24 '~' units are unsettled because f.67 was never transcribed. Planned: settle them from an f.67 transcription; extend key_53 from WVO 58 and key_98 from WVO 124 if either shares the system. No instrument here has failed its own gate even once, so nothing is retired
+- [ ] key-rebuild: done for 53 (tools/homophonic_anneal.py, 4 of 6 restarts converge, matched control 280/282; G6 = k by context). Not done: 57's five word signs and 126's K, down-arrow and Λ l/m are context-only; key_98's 24 '~' units are unsettled because f.67 was never transcribed. Planned: settle them from an f.67 transcription; extend key_98 from WVO 124 if it shares the system (WVO 58 does not share 53's system, 2 Oct 2026, so key_53 cannot be extended from a sibling; 58 would extend key_74 by two word signs, fried and Religion, at grade C once aligned, a key-register job with no effect on the three targets). No instrument here has failed its own gate even once, so nothing is retired
 - [ ] image-check: R21 read 126 once at native resolution; S1 settled pass disagreements on 100 dpi crops (settle_53.py, settle_57.py). Not done: native-resolution passes for 53 (p1 and p2) and 57 p3; the SO-SAXONY-53-57 spots (l.2, l.7, L10 pos 26) and SO-SAXONY-126 spots (adesn, slagen, down-arrow) never applied. Planned: native crops and two passes for 53 and 57, a native spot re-check on f.139 (against images/00126_p4.png / 00126.pdf, not images/00053_p2.png). "While waiting" bullet 1 (run key_53 on f.266v) is stale: F1 did it 24 Sept 2026
 - [ ] retry: no unread groups (U 0); decode_key.py --check exits 0 on an unchanged key and transcription (unchanged since 24 Sept 2026). Planned: rerun decode_key.py --check and regrade all three letters after each image-check or key extension above
-Verdict: keep going: 6 internal gaps; cheapest next: fetch WVO 58 (1 request) and trial-decode it under key_53 and key_74, also looking for 57's word signs OQ/THE/BOX, ~$4
+Verdict: keep going: 6 internal gaps (the WVO 58 route of two of them closed 2 Oct 2026, NEXT-AVS); cheapest next: compare WVO 175's glossed interlinear runs (images/00175_p1-p8.png, on disk, no network) sign by sign with System A's word-sign inventory for 57's OQ/THE/BOX, ~$2; then fetch WVO 124 (1 request) for 126's key-level M, ~$5
