@@ -468,5 +468,30 @@
    }
   },
   "note": "all four IMG sha1 identical to full_size_fetched_2026-10-02 (GAPS3); DOC_8345_2024-Sep-14-08-32-51_70494.txt = Tomokiyo token transcription, body identical to ciphertext.txt; files scratchpad-only (BL material); crop recipe re-run, 16 crops identical layout; passes in passes_2026-10-02.tsv"
+ },
+ "pair_sheets_2026-10-02": {
+  "worker": "GAPS5-moray-wood-1568 (account-4)",
+  "login": "tools/decode_browser_login.js 8345 <scratchpad> --max-files 1 --delay 1600 --fetch <absolute filesrv URL of IMG_R8345_I38545_P4.jpg>: one attempt, P4 only; sha1 a4e848953a3afca88f015e0e8efe1395aea137af, 6971x9718, identical to full_size_fetched_2026-10-02. 4 de-crypt.org requests (login GET+POST, RecordsView, one file). Preceded by the playbook certutil step (libnss3-tools, ccr-agent-proxy added), no credentials involved.",
+  "method": "the recipe's line bands (crop_f213v_postscript.sh; L1 y 7370-7556, L2 7526-7738, L3 7708-7894, L4 7864-8050, x from 1500) segmented into glyph columns on the core x-height rows (pairs_segment_2026-10-02.py -> pairs_glyph_boxes_2026-10-02.json, 1-based segment numbers per line), the numbering checked once by eye on a 0.5x numbered overlay; cells cut at native resolution with 10 px side padding, full band height; blind sheets (2x, shuffled, lettered) read by one Fable subagent; labelled sheets (1x) committed.",
+  "files": [
+   {
+    "file": "pairs_2026-10-02_q1_xd_vs_x.png",
+    "cells": "his seven xd (L1.8 17 20 31 34, L3.7 35) and seven plain x (L1.5 14 18 30, L3.25 30 33); L1.14 cell VOID (mis-cut)"
+   },
+   {
+    "file": "pairs_2026-10-02_q2_e_vs_c.png",
+    "cells": "L1.41 beside his e (L1.11, L3.31) and c (L1.23, L1.27)"
+   },
+   {
+    "file": "pairs_2026-10-02_q3_X_vs_Xs.png",
+    "cells": "L3.28 beside his Xs (L4.4), X (L2.30) and plain x (L3.30, L1.5)"
+   },
+   {
+    "file": "pairs_2026-10-02_q4_Zz_vs_Z3.png",
+    "cells": "L3.3, L3.4 beside Zz (L4.1), Z3 (L1.10, L1.44, L3.27), Z2 (L1.40, L3.14), Z5 (L1.25, L1.38); L1.38 cell VOID (mis-cut)"
+   }
+  ],
+  "results": "images/pairs_2026-10-02.tsv (blind key, reader verdicts, decisions)",
+  "segment_map_note": "glyph index = segment number except: L1 segments 13 = o+x (glyphs 13-14), 14-15 = M (glyph 15), 28-30 = o2 (glyph 28), 38 = r+A (glyphs 36-37), 39 = Z5, 40 = M, 41-47 = glyphs 40-46, 48-49 noise; L2 one merge before glyph 25 (segment = glyph - 1 from there); L3 segments 9-10 = M (glyph 9), 37 = F+N (glyphs 36-37), 39-44 noise past the line end; L4 segments 6-7 = N (glyph 6), 8 = Zh"
  }
 }

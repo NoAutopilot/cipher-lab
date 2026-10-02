@@ -4,6 +4,8 @@
 # transcription as given, unchecked against the full-size image by this repository (only 200 px thumbnails on disk, 2 Oct 2026);
 # GAPS3 2 Oct 2026 one primed eye-check (130/134 agree), GAPS4 2 Oct 2026 two blind passes + one reconciliation on L1/L3/L4 crops
 # (images/passes_2026-10-02.tsv): one label changed, L4 pos 5 Z2 -> Z5; other disagreements logged there, not applied.
+# GAPS5 2 Oct 2026 one blind native-resolution pair-sheet read (images/pairs_2026-10-02.tsv, sheets pairs_2026-10-02_q*.png): L1 pos 46 e -> c;
+# xd class (L1 9 18 21 34 37, L3 8 40) confirmed a distinct form from x (cursive arced left arm, not a dot); L3 3-4 Zz Zz and L3 32 X kept; L4 4 Xs same form as X.
 # Label shapes: see his file header (U boxy u, Zh hooked vertical, P curly p, xd x with dot, Ab triangle with bar, Tb inverted T,
 # Z2/Z3/Z5/Zz 3-shapes, 4b figure 4 with bar, M o with tail, Eb E with bar, X small crossed x, Xs starred x, F barred f ...).
 line	pos	sign	conf
@@ -15,7 +17,7 @@ L1	5	g
 L1	6	x	
 L1	7	o	
 L1	8	Ab	
-L1	9	xd	
+L1	9	xd	GAPS5 2 Oct 2026: blind native-res sort puts this with his six other xd (cursive, arced left arm) and apart from all six plain x (straight crosses); the xd/x split is a stroke-form difference, no dot
 L1	10	Tb	
 L1	11	Z3	
 L1	12	e	
@@ -52,7 +54,7 @@ L1	42	Z5
 L1	43	M	
 L1	44	|	
 L1	45	Z2	
-L1	46	e	
+L1	46	c	GAPS5 2 Oct 2026: his e; read c by two blind passes, the reconciler (GAPS4) and the blind native-res pair sheet (open arc, no bar; 0 holes against 1 hole on both of his e exemplars) -- label changed e -> c
 L1	47	U	
 L1	48	a	
 L1	49	Z3	
@@ -105,8 +107,8 @@ L2	44	N
 L2	45	o	
 L3	1	a	
 L3	2	A	
-L3	3	Zz	
-L3	4	Zz	
+L3	3	Zz	GAPS5 2 Oct 2026: blind native-res sort: same large flat-top z with long curved tail as L3 4 and L4 1 (his Zz), distinct from his small Z3; the GAPS4 Z3 lean not supported
+L3	4	Zz	GAPS5 2 Oct 2026: as L3 3, Zz confirmed
 L3	5	N	
 L3	6	Zh	
 L3	7	|	
@@ -134,7 +136,7 @@ L3	28	x
 L3	29	t	
 L3	30	|	
 L3	31	Z3	
-L3	32	X	
+L3	32	X	GAPS5 2 Oct 2026: blind native-res sort: three strokes (one falling crossed by two parallel rising), the same form as his X at L2 31 and his Xs at L4 4, which the reader could not tell apart; label kept X
 L3	33	o	
 L3	34	x	
 L3	35	|	
@@ -149,7 +151,7 @@ L3	43	Zh
 L4	1	Zz	
 L4	2	x3	
 L4	3	A	
-L4	4	Xs	
+L4	4	Xs	GAPS5 2 Oct 2026: same three-stroke form as his X at L2 31 and L3 32 on the blind native-res sort (one exemplar each); label kept, value u by identity with X in key.tsv (grade M)
 L4	5	Z5	GAPS4 2 Oct 2026: his Z2; two blind passes + reconciliation read Z5 (a separate long slash rising into the z); his own FRESH-MANUSCRIPT-REVIEW.md disputed this glyph
 L4	6	N	
 L4	7	Zh	

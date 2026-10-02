@@ -1,0 +1,49 @@
+# GAPS5-moray-wood-1568 (account-4), 2 Oct 2026: one blind native-resolution pair-sheet read of the four positions GAPS4 left open.
+# Source: IMG_R8345_I38545_P4.jpg re-fetched through one DECODE login this session, sha1 a4e848953a3afca88f015e0e8efe1395aea137af (identical to
+# manifest.json full_size_fetched_2026-10-02); glyph boxes by column segmentation of the recipe's line bands (pairs_segment_2026-10-02.py ->
+# pairs_glyph_boxes_2026-10-02.json), checked once by eye against a numbered overlay (vision call 1 of 2, this worker); cells cut at native
+# resolution, enlarged 2x, shuffled and lettered with no labels, no reading and no key (pairs_sheets_2026-10-02.py); one Fable subagent read the
+# four blind sheets (vision call 2 of 2) and returned a description and a form group per cell; unblinded here against this key. The committed
+# pairs_2026-10-02_q*.png are the same cells at 1x with his labels. Two comparison cells were mis-cut (a merged segment gave the M's bowl
+# instead of the glyph: L1.14 x, L1.38 Z5) -- flagged by the blind reader as "not an x" / "closed bowl", confirmed by a hole count, VOID.
+# No shuffled control is possible for a four-position eye decision (rule 3: a non-test of discrimination, not a negative); the class question
+# of sheet 1 carries its own blind-sort statistic instead (chance that a blind 7+6 partition of 13 cells reproduces his xd/x labels: 1/1716).
+sheet	letter	position	his_label	blind_reader	group_by_reader	after_unblinding
+q1_xd_vs_x	A	L3.30	x	two straight strokes, long lower-left tail, blob at top is a neighbour's descender	straight cross	x: agrees
+q1_xd_vs_x	B	L1.34	xd	two curved strokes, left arm a c-shaped arc, no dot	cursive x	xd: agrees
+q1_xd_vs_x	C	L1.17	xd	cursive x, knot at lower-left end, right arm hooked top-right	cursive x (knotted)	xd: agrees
+q1_xd_vs_x	D	L3.25	x	two straight strokes, hook at bottom-right end	straight cross	x: agrees
+q1_xd_vs_x	E	L1.31	xd	cursive x, arced left arm, a separate small dot to the upper right	cursive x, dotted	xd: agrees (the only free-standing dot on the sheet)
+q1_xd_vs_x	F	L1.5	x	large plain cross, heavy strokes	straight cross	x: agrees (GAPS4 settled x, confirmed)
+q1_xd_vs_x	G	L1.8	xd	cursive x, knot at lower-left, right arm ends in a flat finial, no dot	cursive x	xd: agrees -- L1.8 SETTLED in the xd class
+q1_xd_vs_x	H	L1.18	x	cross with a small closed loop at the top-left stroke end, straight arms	intermediate (straight arms, knotted end)	x: agrees (straight-arm form)
+q1_xd_vs_x	I	L3.35	xd	cursive x, left arm arc with long thin tail, no dot	cursive x	xd: agrees
+q1_xd_vs_x	J	L3.7	xd	cursive x with a long flat extension to the left from the top, right arm hooks	cursive x, extended	xd: agrees
+q1_xd_vs_x	K	L1.14	x	NOT an x: closed round bowl with a horizontal base stroke to the right	outlier	VOID (mis-cut: the bowl of the M at L1.15; segment 13 of the band had merged o+x, hole count 1)
+q1_xd_vs_x	L	L3.33	x	large straight cross, descender from the line above enters top-right	straight cross	x: agrees
+q1_xd_vs_x	M	L1.30	x	small plain cross, thin strokes	straight cross	x: agrees
+q1_xd_vs_x	N	L1.20	xd	cursive x with a long flat top-left extension, knot at lower-left, right arm hooks	cursive x, extended	xd: agrees
+q1_xd_vs_x	verdict	-	-	"two visually distinct families exist, but the split is by stroke FORM, not by an added mark"; confidence medium (form split high, dot low)	-	13 of 13 valid cells sort with his labels: xd = cursive x with an arced left arm (7/7), x = straight cross (6/6). The xd class is real at native resolution; the "dot" of his label name is not what separates it. L1.8 is xd (= n under his key), S kept.
+q2_e_vs_c	A	L1.23	c	open arc, wedge serif, no bar or tongue	c-shape	c: agrees (hole count 0)
+q2_e_vs_c	B	L1.11	e	closed upper eye, tongue, tail down-left	e-shape	e: agrees (hole count 1)
+q2_e_vs_c	C	L1.41	e?	open arc, slight inward hook at the upper end, no bar crossing the opening	c-shape	c -- L1.41 CHANGED e -> c (fourth independent read for c; hole count 0 like his two c, against 1 on both his e)
+q2_e_vs_c	D	L3.31	e	closed eye at top, tail swinging right	e-shape	e: agrees (hole count 1)
+q2_e_vs_c	E	L1.27	c	open arc with a small dot inside the opening, not joined	c-shape, borderline	c: agrees (hole count 0); note his key reads this c as a slip for e ("Carlyle"); the interior dot is logged, not acted on
+q2_e_vs_c	verdict	-	-	c = A, C, E; e = B, D; confidence high (E medium)	-	all four exemplars sort with his labels; L1.41 sorts with c: applied, value r under his key at grade M (S -> M); reading "of the lord" -> "or the lord"
+q3_X_vs_Xs	A	L3.30	x	plain cross, long lower-left stroke	2 strokes	x: agrees
+q3_X_vs_Xs	B	L3.28	X?	falling diagonal crossed by two close parallel rising diagonals, lower one runs into a leftward foot	3 strokes, doubled	X: same form as D and E
+q3_X_vs_Xs	C	L1.5	x	plain cross, heavy	2 strokes	x: agrees
+q3_X_vs_Xs	D	L2.30	X	falling diagonal crossed by two parallel rising diagonals, short foot lower-left	3 strokes, doubled	X: agrees
+q3_X_vs_Xs	E	L4.4	Xs	falling diagonal crossed by two near-parallel rising strokes, right one longer, hook lower-right	3 strokes, doubled	Xs: same form as D (his X) -- the reader could not tell X from Xs
+q3_X_vs_Xs	verdict	-	-	plain = A, C; doubled = B, D, E; confidence high	-	L3.28 has the three-stroke form of his X (and of his Xs): label X KEPT, S kept; the GAPS4 "Xs" reads were the same form. X and Xs are one form on one exemplar each (not a class test at N=1+1): key.tsv carries u for Xs by identity with X at grade M (his value ?), L4 reads teauyis
+q4_Zz_vs_Z3	A	L4.1	Zz	large, flat top, long curved tail sweeping below the line, open	L: large flat-top z, long tail	Zz: agrees
+q4_Zz_vs_Z3	B	L1.44	Z3	mid-size, flat top, pinched 3-like middle, descender cut by the cell edge	L-variant, tighter	Z3 (his): the tighter variant
+q4_Zz_vs_Z3	C	L1.10	Z3	small, flat top, short lower horizontal with a short tail	S: small flat-top z, short tail	Z3: agrees
+q4_Zz_vs_Z3	D	L3.27	Z3	mid-size, flat top, short descending tail at right	S	Z3: agrees
+q4_Zz_vs_Z3	E	L3.14	Z2	small-mid, heavy, flat top, flat bottom, no tail	P: plain flat-top z	Z2: agrees
+q4_Zz_vs_Z3	F	L1.38	Z5	closed bowl at left, flat base to the right, a separate thin diagonal rising to the upper left	B: closed bowl	VOID (mis-cut: the bowl of the M at L1.39 with the Z5's slash intruding; segment 40 of the band was the M, hole count 1)
+q4_Zz_vs_Z3	G	L1.40	Z2	small-mid, flat top, flat bottom, no tail (same as E)	P	Z2: agrees
+q4_Zz_vs_Z3	H	L3.3	Zz?	large, flat top, long curved descender tail	L	Zz: agrees with A (L4.1) -- the GAPS4 "Z3" lean not supported
+q4_Zz_vs_Z3	I	L3.4	Zz?	large, essentially identical to H	L	Zz: agrees with A and H
+q4_Zz_vs_Z3	J	L1.25	Z5	large, flat top, small mid loop, short tail, and a long straight slash through it	X: slashed z	Z5: agrees
+q4_Zz_vs_Z3	verdict	-	-	L = A, H, I (B a tighter variant); S = C, D; P = E, G; B = F; X = J; confidence medium-high	-	L3.3 and L3.4 are the same large long-tailed form as L4.1 (his Zz), distinct from his small Z3 (C, D): labels Zz Zz KEPT; the value of Zz (t, M) is untouched (gap 3)

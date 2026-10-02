@@ -1,7 +1,7 @@
 # Aymeloglu's key.json (github.com/aaymeloglu/unsolved-ciphers moray-1568/key.json, commit d2800bb, 18 Sept 2026), quoted with
 # attribution, values and grades as his. S = his cryptanalysis with a control: key-shuffle permutation z = 17.0, p < 0.001
 # (1,000 shuffles, cipherkit permutation_z_key, sco corpus); matched controls 1 of 4 read (0.99, 0.35, 0.09, fragments).
-# Not re-derived and not image-checked by this repository (2 Oct 2026). M/I rows and the 'from' notes are his.
+# Not re-derived by this repository; image-checked 2 Oct 2026 (GAPS3/GAPS4/GAPS5, see NOTES.md). M/I rows and the 'from' notes are his except where a row's source says otherwise.
 # His word-sign values are written [the] [and] [Q] [Q2] in key.json; the brackets are dropped here because decode_key.py's concat style adds its own.
 code	value	grade	source	note
 A	a	S	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	remane, na mair, haill, thair, Carlyle
@@ -36,4 +36,4 @@ Zz	t	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	baseline t r
 s	p	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	spil
 t	t	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	haill e?; baseline t is unidentified; s (es = as) or a word-sign [as] are conjectures
 x3	e	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	baseline e; fresh visual comparison favours n, still uncertain
-Xs	?	M	Aymeloglu key.json d2800bb; z=17.0 key-shuffle, controls 1/4	line 4; fresh visual comparison favours u, still uncertain
+Xs	u	M	Aymeloglu key.json d2800bb (label and grade); value by identity with X, GAPS5-moray-wood-1568 2 Oct 2026	line 4; his value ?, "fresh visual comparison favours u"; the blind native-res pair sheet (images/pairs_2026-10-02_q3_X_vs_Xs.png) puts L4.4 in one three-stroke form group with his X at L2.31 and L3.32 (one X exemplar, one Xs exemplar: not a class test), so u = X's value is carried at grade M, not ?
