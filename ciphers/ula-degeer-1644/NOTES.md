@@ -1,6 +1,7 @@
 # Louis de Geer papers with cipher key, 1644-1646
 
-**Status: open**
+**Status: blocked**
+The standard edition could not be opened: Dahlgren, *Louis De Geer 1587-1652* (1923) is not on archive.org (advancedsearch `title:(Dahlgren) AND title:(Geer)` 2 Oct 2026 returned no Dahlgren item) and no edition of the Leufsta letters or of Axel Oxenstiernas skrifter och brev (0 hits on IA `title:(Axel Oxenstiernas skrifter och brev)`) was reachable, so no page was read; blocked pending a copy or a digitised edition (the folder itself, SE/ULA/13506/1/I/45, `onlyDigitisedMaterials: False` on its Riksarkivet record, is also not online).
 
 ## Item
 
@@ -54,7 +55,7 @@ transient `SSL_ERROR_SYSCALL` — the first attempt failed to connect, the retry
 This item's record, SE/ULA/13506/1/I/45: `onlyDigitisedMaterials: false` — **not digitised**. No IIIF manifest
 or image link.
 
-**Verdict:** open. No prior solution, key transcription, or attempt found anywhere searched. This is the
+**Verdict:** open (24 Sept 2026; superseded by the blocked word above, 2 Oct 2026). No prior solution, key transcription, or attempt found anywhere searched. This is the
 weakest-confirmed key-to-text match of the four rows in this batch (QUEUE.md's own caveat): the folder holds a
 cipher key among de Geer's papers, but the catalogue note does not say it applies to any of the listed
 letters/journals, so the physical folder must be seen before assuming this is a recovery rather than a
@@ -65,3 +66,23 @@ cryptanalysis target (or that a decipherable item exists in it at all).
 ## Request log
 
 24 Sept 2026: no personal data logged here.
+
+## Web and blog check (CS-A2-A, 2 Oct 2026)
+
+Five WebSearch queries, none found a cipher item for De Geer:
+1. `Louis De Geer chiffernyckel Leufsta arkiv 1644 chiffer brev Oxenstierna` -- Wikipedia, DBNL Oxenstierna pages, Upplands arsbok 1980 (Leufsta manors), SNL; no cipher mention.
+2. `"De Geer" 1644 Torstensson war cipher letters ... deciphered key Uppsala Leufsta` (run with 3 variants) -- results on other Oxenstierna ciphers: HistoCrypt 2024 "Decipherment of a German encrypted letter ... Heusner von Wandersleben to Axel Oxenstierna in 1637" (dspace.ut.ee), HistoCrypt Portuguese-Brazil 1646 ciphertexts, Cipherbrain "an unsolved encrypted letter from the 17th century" (2019); the Leufsta Library page (Uppsala University Library). None names a De Geer cipher or this volume. Not opened beyond titles/snippets except as listed.
+3. `SE/ULA/13506/1/I/45 Leufsta` -- only Leufsta heritage pages; no catalogue hit.
+4. Site search, allowed_domains ciphermysteries.com, cryptiana.blogspot.com, scienceblogs.de (Cipherbrain), cryptiana.web.fc2.com: `Louis De Geer cipher` -- La Buse, McCormick, Louis XIV, Henry II, WWII machine posts; no De Geer. No Cryptiana or Cipher Mysteries thread names him.
+5. Riksarkivet Sok API `data.riksarkivet.se/api/records?text=chiffernyckel Geer&type=Record` (first attempt SSL_ERROR_SYSCALL, one retry after 6 s, HTTP 200, 1 hit): SE/ULA/13506/1/I/45, type Volume, Riksarkivet i Uppsala, `onlyDigitisedMaterials: False`; note field as quoted above (cipher key mentioned, no letter linked to it). Record URL https://sok.riksarkivet.se/arkiv/atECqXwbhqgbWmoUy7y9YD.
+
+Local `sources/cryptiana` grep for "geer" last done 24 Sept 2026 (no hit).
+
+## Premise check (CS-A2-A, 2 Oct 2026)
+
+- (a) folder's own mentions of a decipherment: none; the catalogue lists "Chiffernyckel" and a "Förteckning över adressater (moderna)" (a modern list of addressees for the journals), which is a finding aid, not a decipherment. Not found.
+- (b) solver repos, fresh shallow clones 2 Oct 2026: grep `de ?geer` found nothing in dbourdeau/cyphersolver outside the earlier false positives and 0 rows in Aymeloglu's DECODE catalogue. Not found.
+- (c) physical neighbours: no image; unreachable (not digitised).
+- (d) recipient's side: Axel Oxenstierna's own letters/answers (Axel Oxenstiernas skrifter och brev, Riksarkivet series) were not reachable online; De Geer's 17 Aug 1644 advertisement to Oxenstierna may be printed there. Unreachable.
+
+Request counts: archive.org 3 (advancedsearch), data.riksarkivet.se 2 (one SSL reset, one retry), WebSearch 7. Cheapest next step: a worker to look for Axel Oxenstiernas skrifter och brev volumes on a full-text host (runeberg, Google Books API snippets) for "chiffer" with De Geer, ~$1.
