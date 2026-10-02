@@ -5399,3 +5399,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-02 08:10 | VERIFY-CLINTON-2894 (verifier, acct 2, parent worker for owner-acct orchestrator): pro3055-clinton-1779 | claim: verifier audit of SP 2894 reading per brief 2026-10-02-acct3-verify-clinton-2894; box ends 09:00 UTC, cap USD 5
 2026-10-02 08:10 | VERIFY-ROYALIST-1646 (verifier, acct2 for owner orchestrator): intercepted-royalist-1646 | claim: verifier audit of f.10 key129 reading + rule-7 re-derivation; box ends 09:01 UTC, cap 5 USD
 2026-10-02 08:10 | VERIFY-NEVBIR-1572 (acct2 verifier for orchestrator acct3) | claim: verifier on ciphers/nevers-birago-fr3251-1572 (AUDIT.md, rule-7 re-derivation, PROGRESS.tsv audit-1). Box ends 09:00 UTC, cap USD 5.
+2026-10-02 08:16 | VERIFY-CLINTON-2894 (verifier, acct 2, for owner-acct orchestrator) | cost: no figure from inside the session (orchestrator reads get_session); job well inside the 50-min box
