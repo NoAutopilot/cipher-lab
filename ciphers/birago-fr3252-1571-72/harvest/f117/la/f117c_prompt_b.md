@@ -1,0 +1,70 @@
+# Look-alike re-read, f117c (value-blind)
+
+You are re-reading 130 sign tiles of a symbol-cipher transcription. Two earlier readers disagreed on some of them, or
+gave a label that is often confused with another. You see only the line crops and a sheet of the candidate sign shapes,
+labelled by id. You are never told what any sign means; do not guess letters or words.
+
+Line crops (read these images; each line is cut into 3 overlapping segments s1-s3, left to right): /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L06_s1.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L06_s2.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L06_s3.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L07_s1.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L07_s2.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L07_s3.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L08_s1.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L08_s2.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L08_s3.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L09_s1.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L09_s2.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L09_s3.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L10_s1.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L10_s2.jpg, /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/images/f117/f117_L10_s3.jpg
+Candidate sheet (ids only): /home/user/cipher-lab/ciphers/birago-fr3252-1571-72/harvest/f117/la/f117c_candidates.png
+
+For each tile below, find the sign at that passage and position (the passC sequence of the line is given for
+orientation; 'before'/'after' are the neighbouring labels) and pick the candidate id whose shape it is.
+Answer one TSV row per tile, header: passage<TAB>pos<TAB>label<TAB>conf<TAB>second<TAB>note
+  label  one of the tile's candidates, X_NEW if none fits, or SPLIT:a|b if you cannot choose between two
+  conf   H (clear), M (probable), L (guess); second = your runner-up id or empty; note = the shape feature you used.
+
+Tiles (passage, pos, candidates, before | after):
+L06	1	T98,T18,X_NEW	 | T80 T19 T60
+L06	4	T60,T86	T98 T80 T19 | T98 T63 T45
+L06	5	T98,T18,X_NEW	T80 T19 T60 | T63 T45 T92
+L06	8	T92,X_NEW,T50	T98 T63 T45 | T53 ? T45
+L06	10	T83,T81,?,X_NEW	T45 T92 T53 | T45 ? T65
+L06	12	X_NEW,X_S,?	T53 ? T45 | T65 T33 T98
+L06	13	T51,T65,T18,T95	? T45 ? | T33 T98 T66
+L06	15	T98,T18,X_NEW	? T65 T33 | T66 T60 T45
+L06	17	T60,T86	T33 T98 T66 | T45 T95 ?
+L06	18	T90,T45,T89,X_NEW	T98 T66 T60 | T95 ? T60
+L06	20	T83,T81,?,X_NEW	T60 T45 T95 | T60 T96 T64
+L06	21	T86,T60	T45 T95 ? | T96 T64 T45
+L06	25	T98,T18,X_NEW	T96 T64 T45 | T45 T66 T80
+L06	26	T90,T45,T89,X_NEW	T64 T45 T98 | T66 T80 T66
+L06	31	X_NEW,T36,T27,T88	T80 T66 T66 | 
+L07	5	X_NEW,T83,T92	T33 T45 T36 | T63 T45 T33
+L07	10	T86,T60	T45 T33 T85 | T53 T25 T60
+L07	13	T60,T86	T60 T53 T25 | T49 T19 T33
+L07	17	T92,X_NEW,T50	T49 T19 T33 | T98 T49 X_K
+L07	18	T98,T18,X_NEW	T19 T33 T92 | T49 X_K T65
+L07	21	T95,T65,T18	T98 T49 X_K | T80 T60 T63
+L07	23	T86,T60	X_K T65 T80 | T63 T37 X_NEW
+L07	26	X_NEW,T83,T92	T60 T63 T37 | T98 T60 T81
+L07	27	X_NEW,T98,T18	T63 T37 X_NEW | T60 T81
+L07	28	T86,T60	T37 X_NEW T98 | T81
+L07	29	T83,T81,X_NEW	X_NEW T98 T60 | 
+L08	1	T29,T83,T24	 | X_EQ T85 T33
+L08	6	T83,T81,?,X_NEW	T85 T33 T19 | T80 T98 T45
+L08	8	T98,T18,X_NEW	T19 ? T80 | T45 T81 T50
+L08	10	T83,T81,X_NEW	T80 T98 T45 | T50 T45 T98
+L08	11	T50,T92,X_NEW	T98 T45 T81 | T45 T98 T53
+L08	13	T98,T18,X_NEW	T81 T50 T45 | T53 T37 X_NEW
+L08	16	X_NEW,T83,T92	T98 T53 T37 | T37 T25 ?
+L08	19	T83,T81,?,X_NEW	X_NEW T37 T25 | T45 T98 T80
+L08	21	T98,T18,X_NEW	T25 ? T45 | T80 T65 T45
+L08	23	T95,T65,T18	T45 T98 T80 | T45 T76 T45
+L08	27	X_NEW,T29,T83,T24	T45 T76 T45 | T53
+L09	1	X_NEW,T83,T92	 | T45 T92 T55
+L09	3	T92,X_NEW,T50	X_NEW T45 | T55 T80 T76
+L09	4	T55,X_NEW	X_NEW T45 T92 | T80 T76 T70
+L09	8	T29,T83,T24	T80 T76 T70 | T98 T80 T65
+L09	9	T98,T18,X_NEW	T76 T70 T29 | T80 T65 T49
+L09	11	T95,T65,T18	T29 T98 T80 | T49 T19 T33
+L09	15	T98,T18,X_NEW	T49 T19 T33 | T92 T60 T54
+L09	16	T92,X_NEW,T50	T19 T33 T98 | T60 T54 T81
+L09	17	T86,T60	T33 T98 T92 | T54 T81 T65
+L09	20	T95,T65,T18	T60 T54 T81 | T45 T65 T85
+L09	24	T60,T86	T45 T65 T85 | T53 T88 T33
+L09	29	T95,T65,T18	T88 T33 T80 | 
+L10	1	T83,T81,?,X_NEW	 | T45 T33 T57
+L10	7	T60,T86	T57 T80 T57 | X_NEW T84 ?
+L10	8	X_NEW,T83,T92	T80 T57 T60 | T84 ?
+L10	10	T70,X_S,?,X_NEW	T60 X_NEW T84 | 
+
