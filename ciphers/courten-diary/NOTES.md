@@ -257,3 +257,49 @@ Requests: api.openalex.org 8 (all 429, shared budget). api.semanticscholar.org 6
 (200 each). api.archives-ouvertes.fr 8 (4 combined-query 0-hit attempts, 4 narrower follow-ups). www.persee.fr 4
 (200 each). api.repository.cam.ac.uk 1 (the JHC "Things Bought" PDF, 200). WebSearch 4 queries. No logins, no
 credentials.
+
+## Web and blog check (GF-A2-9, 2 Oct 2026)
+
+Earlier passes (23 Sept 2026: eight web/scholarship queries, Cipherbrain "Seven encrypted diaries" fetched, two Cipher
+Mysteries posts read) are in the sections above; this section re-runs the step as check-solved.md now words it.
+Plain web searches (4): `William Courten Charleton 1698 diary almanack cipher deciphered` (sender + date); `"Add MS 4956"
+cipher` (shelfmark); `Courten herbarium specimen labels cipher code decoded Sloane` (the nearest distinctive phrase, since
+no clear text of the cipher passages exists to quote); and the folder's title subject via the first query. Hits opened:
+the Digital Ark (drc.usask.ca, Univ. of Saskatchewan) records for Sloane 4019 (public_manuscript.php?id=90; item id=84
+"[Key to Charleton's cipher]", annotation "See also a key compiled by Frederic Madden in Add. 4956 f.66") and for the
+diary itself (public_manuscript.php?id=89, filed as "Sloane 4956"). The id=89 annotation describes the diary's layout
+(ff.1-6 ravens and illness, "Much of it is in cipher"; ff.7-64 weather, health, physicians including Sloane, "Some times
+long stretches are in cipher, some times only words and phrases"; f.65 oysters 1698-99; f.66 "a legend of Courten's
+cipher, made by 'J.M. Oct 1854'"; later verses on some versos) and gives no decipherment or transcript of any cipher
+passage. (A search-engine summary said the cipher portions "pertain to his business and personal exchanges"; that
+sentence is not on the id=89 page and was not found on any page opened.) The "Add MS 4956" query surfaced a Poe-letter
+page and NSA PDFs, where "4956" occurs as a number, not this shelfmark. The herbarium query gave Sloane-herbarium
+scholarship (UCL PDF, NHM inventory, sloaneletters.com letter of Courten to Sloane, 29 July 1688): none about the
+diary's cipher.
+Blog site searches: `Courten cipher diary encrypted` on scienceblogs.de, cryptiana.blogspot.com / cryptiana.web.fc2.com
+and ciphermysteries.com. Results: Cipherbrain diary posts (2018 "Who can decipher this encrypted diary?", 2020 "Can you
+decipher this encrypted diary?", an Austrian soldier's diary, a solved interwar diary, Gaffney's priest diary) and Cipher
+Mysteries' Unabomber journal post -- each about a different named diary; titles and subjects checked, none names
+Courten, Charleton, Sloane or Add MS 4956, so no comment thread was opened. No Cryptiana hit.
+Result: no decipherment, transcript or plaintext of the diary's cipher passages found on the open web or in the
+three blogs.
+
+## Premise check (GF-A2-9, 2 Oct 2026)
+
+(a) Folder's own mentions -- found, and they set the kind of job. Two keys are already known and catalogued: Madden's
+legend bound in at Add MS 4956 f.66 ("J.M. Oct 1854" per the Digital Ark), and an 18th-century "Key to his cipher" at
+Sloane MS 4019 f.79 (BL record read 23 Sept 2026). Courten's cipher was therefore read by 1854 at the latest; what is
+unread here is the diary text, not the system. Once imaged this is a key application (recovery, grade H from a key
+source), and the two keys should be compared with each other before either is applied. No mention anywhere in the folder
+of a decipherment or transcript of the passages themselves.
+(b) Other solvers' working files -- not found. Shallow clones of dbourdeau/cyphersolver and aaymeloglu/unsolved-ciphers
+(2 Oct 2026) grepped for "Courten" and "Charleton": only "Courtenay" substrings (Renard 1554; DECODE 2781, BnF fr.6889)
+-- false positives.
+(c) Physical neighbours -- catalogue only (not digitised). In the same volume: f.65 oyster accounts, f.66 Madden's
+legend, verses in a later hand on some versos (Digital Ark id=89). No clear copy or interlinear decipherment is
+recorded beside any cipher passage. Sloane MS 4019's neighbouring leaves are Sloane loose papers (BL itemised list).
+(d) Recipient side -- a diary has no recipient; the nearest printed correspondence is Courten's letters to Sloane
+(sloaneletters.com prints at least the 29 July 1688 letter). Its site search (`?s=Courten+cipher`, `?s=cipher`)
+returned a page with no result list in plain curl (script-rendered) -- unreachable by this route, not a negative.
+Next for the target remains the BL imaging request (REQUEST.md), Add MS 4956 with Sloane MS 4019 f.79.
+
