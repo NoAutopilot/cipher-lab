@@ -1,0 +1,109 @@
+{
+ "target_consonants": 128,
+ "seed": 2,
+ "quran_held_out_from_sura": 78,
+ "lists": {
+  "L_MS_leipzig_msa_wiki2021": {
+   "n_skeletons": 18407,
+   "held_out_words": 96273,
+   "C3": {
+    "target": 0.7031,
+    "chosen_spans_by_L": {
+     "2": 0,
+     "3": 20,
+     "4": 7
+    },
+    "singleton_matches_by_L": {
+     "2": 0,
+     "3": 12,
+     "4": 4
+    },
+    "null_mean": 0.5912,
+    "null_p95": 0.6953,
+    "p": 0.047
+   },
+   "C2": {
+    "target": 0.8984,
+    "chosen_spans_by_L": {
+     "2": 17,
+     "3": 19,
+     "4": 6
+    },
+    "singleton_matches_by_L": {
+     "2": 25,
+     "3": 12,
+     "4": 4
+    },
+    "null_mean": 0.7789,
+    "null_p95": 0.8594,
+    "p": 0.009
+   },
+   "positive_control_C3": {
+    "0.0": {
+     "C3_mean": 0.8409,
+     "power_p<0.05": 1.0
+    },
+    "0.1": {
+     "C3_mean": 0.762,
+     "power_p<0.05": 0.95
+    },
+    "0.2": {
+     "C3_mean": 0.7281,
+     "power_p<0.05": 0.85
+    }
+   },
+   "gate": "PASS"
+  },
+  "L_AR_tanzil_1to77": {
+   "n_skeletons": 5643,
+   "held_out_words": 2462,
+   "C3": {
+    "target": 0.5234,
+    "chosen_spans_by_L": {
+     "2": 0,
+     "3": 15,
+     "4": 5
+    },
+    "singleton_matches_by_L": {
+     "2": 0,
+     "3": 7,
+     "4": 3
+    },
+    "null_mean": 0.367,
+    "null_p95": 0.5,
+    "p": 0.025
+   },
+   "C2": {
+    "target": 0.7422,
+    "chosen_spans_by_L": {
+     "2": 16,
+     "3": 17,
+     "4": 3
+    },
+    "singleton_matches_by_L": {
+     "2": 25,
+     "3": 7,
+     "4": 3
+    },
+    "null_mean": 0.5985,
+    "null_p95": 0.7109,
+    "p": 0.019
+   },
+   "positive_control_C3": {
+    "0.0": {
+     "C3_mean": 0.7608,
+     "power_p<0.05": 1.0
+    },
+    "0.1": {
+     "C3_mean": 0.6914,
+     "power_p<0.05": 1.0
+    },
+    "0.2": {
+     "C3_mean": 0.5717,
+     "power_p<0.05": 1.0
+    }
+   },
+   "gate": "PASS"
+  }
+ }
+}

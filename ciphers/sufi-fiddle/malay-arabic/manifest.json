@@ -1,0 +1,5 @@
+{"note": "Sources used by match2.py; none committed (GAPS93, 3 Oct 2026).",
+ "sources": [
+  {"name": "Leipzig Corpora Collection msa_wikipedia_2021_30K (Malay), sentences file", "url": "https://downloads.wortschatz-leipzig.de/corpora/msa_wikipedia_2021_30K.tar.gz", "licence": "CC BY 4.0 (Goldhahn, Eckart, Quasthoff, LREC 2012)", "sha1": "9811382804d53a31a3592576278b9c8eaae7b093", "fetched": "2026-10-03"},
+  {"name": "Tanzil Quran text, simple-clean, txt-2 (sura|aya|text)", "url": "https://tanzil.net/pub/download/index.php?quranType=simple-clean&outType=txt-2&agree=true", "licence": "CC BY 3.0, verbatim text (tanzil.net)", "sha1": "979b7902b6e397e97fd9a149a780b31ec7fc162c", "fetched": "2026-10-03"}
+ ]}
