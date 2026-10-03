@@ -7241,3 +7241,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 16:16 | GAPS163-hessen-daenemark-1672 (account-4) | claim: hessen-daenemark-1672 script-only merge pages 1-3 + gloss key + decode_key --check; cap USD 3, box 25 min
 2026-10-03 16:16 | GAPS165-sp54-maclean-1745 (account-4) | claim: sp54-maclean-1745 -- discovery_items SP 54/25 item description, then Browne vol.ii full-text grep with positive control; script only, cap 2, box 16:18-16:43 UTC
 2026-10-03 16:17 | GAPS161-eckert-1862 (account-4) | claim: ciphers/eckert-1862 Feb-value conflicts (Anthon/Virtue/Vesper) via ledger p.[11] 4966 vs plain twin; cap $3, box 30 min
+2026-10-03 16:17 | GAPS162-sachsstaatsarchiv-manteuffel-1712 (account-4) | claim: neighbour frames contact-sheet + f.409/neighbour unglossed cipher transcription, apply Krauske key.tsv, judge vs shuffled-key; cap USD 6, box 16:18-17:03 UTC
