@@ -191,15 +191,48 @@ Cheap copy-free steps run instead:
    Result: no 1669 Duke of York cipher letter or decipherment found in HMC Ormonde (search result, rule 10). This does
    not test whether Ormond's own papers (Carte MSS, Bodleian) hold the f.36 key's counterpart.
 
-## Remaining gaps (GAPS97, 3 Oct 2026)
+## GAPS99-bl-james-1669 (3 Oct 2026, account-4)
+
+The While-waiting step: look for the Ormond-side counterpart of f.36 ("Cypher with the Duke of Ormond") in the Carte MSS
+(Bodleian), through EMLO and the printed Carte calendar. No images were fetched.
+1. **EMLO Solr** (`emlo.bodleian.ox.ac.uk/solr/all/select`, 9 plain GETs about 1.6 s apart). `cipher AND Ormond`
+   returns 6 works, all tagged "Cipher letter", all 1649 or undated (Lady Ormond, Hatton, Long, anonymous). `cypher AND
+   Ormond` returns 0. `cipher AND 1669` returns 2, both Oldenburg-Huygens. `cipher AND (York OR "James II")` returns 2,
+   both 1691. Duke of York <-> Ormond works (`"1633-1701" AND "1610-1688"`) number 15, dated 1646, 1651, 1653 and
+   1677-1682. **None is from 1668-1670.** For the control, Ormond's EMLO works with start dates 1668-06 to 1670-06 return
+   10 hits, all of them other people with the same life dates (van Coolwijck, Hoeufft to de Witt), and not one is
+   Ormond's. So EMLO's Carte coverage has no Ormond letters at all for these years, and an EMLO miss is a gap in the
+   catalogue, not a test. `Carte AND (cipher...)` and a manifestation `bibo_Note` query both returned 0, because
+   shelfmark text is not in the default search field.
+2. **Printed Carte calendar.** I fetched Hardy & Brewer, *Report ... upon the Carte and Carew papers* (1864), as
+   archive.org `cu31924029774647_djvu.txt` (2 archive.org requests: one advancedsearch, one download). There are 26
+   cipher/cypher hits. Two Carte volumes come close to this item:
+   - **Vol. 47** ("UU"): letters from 1652 to 1683, mostly to Ormond, "chiefly from the Duke of York", Clarendon and
+     others. The only letters it calls cipher are Clarendon's ("some of them are in cipher, which has been deciphered").
+     It does not say whether any of York's letters are in cipher.
+   - **Vol. 50** ("WW 2"): Ormond's own letter drafts, 1669-1687, and "at the end of the volume ... a collection of
+     ciphers" dated 1662-1682. The ciphers listed belong to de Vic, the two Lord Chancellors, Arlington, Nicholas,
+     Orrery, W. Coventry, Anglesey, Ossory, Carlingford, Kingston, Conway, Longford, Arran, Clarges, Carteret,
+     Barrington, Legge, Southwell, Lane, Walsh, Gorges, Booth and Alden. **The Duke of York is not among them.**
+   Neither volume's description names a 1669 York-Ormond cipher or key. Vol. 50's cipher collection is the most
+   likely place for an Ormond-side copy anyway, because its date range covers 1669 and the 1864 list may be
+   incomplete. Settling that needs the volume itself or the modern Bodleian catalogue record.
+3. **Digitised?** One `digital.bodleian.ox.ac.uk/search/?q="MS. Carte"` request answered 200 with a page rendered in
+   JavaScript and no results in the HTML, so the check is inconclusive. Under the playbook a portal search is not a
+   digitisation verdict in any case. I did not reach the Bodleian Archives & Manuscripts record (it bot-checks the cloud).
+Result: no Ormond-side counterpart of f.36 found in EMLO or in the 1864 Carte report (a search result, rule 10). The
+named candidates are MS. Carte 50 (end-of-volume cipher collection, 1662-82) and MS. Carte 47 (York's letters to Ormond).
+Requests: EMLO 9, archive.org 2, digital.bodleian 1. Vision calls: 0.
+
+## Remaining gaps (GAPS97, 3 Oct 2026; GAPS99 3 Oct 2026)
 Read so far: 0 of 8 folios (no image of ff.1-8 on disk; nothing transcribed)
 - ff.1-8 (1669 letters and their partial name-key) - blocker: waiting-on ASKS row 56 (BL copy order, REQUEST.md); not digitised, BL images offline since 2023, NLI microfilm MS_UR_008017 catalogue Cloudflare-blocked from the cloud
-- f.36 "Cypher with the Duke of Ormond" (second key in the volume) - blocker: waiting-on ASKS row 56 (same BL order would need f.36 added); not on disk in any published source checked
+- f.36 "Cypher with the Duke of Ormond" (second key in the volume) - blocker: waiting-on ASKS row 56 (same BL order would need f.36 added); not on disk in any published source checked; GAPS99: no Ormond-side counterpart in EMLO (no Ormond works 1668-70 indexed) or the 1864 Carte report; candidates MS. Carte 50 (cipher collection 1662-82, York not listed) and MS. Carte 47, catalogue availability unread
 
 ## Escalation (3 Oct 2026)
 - [n/a] siblings: the volume's other items (1685-88) are undigitised, same BL blocker as ff.1-8
 - [n/a] clear-pages: no page of the volume is on disk to read
-- [x] known-keys: Cryptiana Ormond keys and ormond-arran-1678 keys checked, none dated 1669 or Duke of York-Ormond (GAPS97)
+- [x] known-keys: Cryptiana Ormond keys and ormond-arran-1678 keys checked, none dated 1669 or Duke of York-Ormond (GAPS97); Carte MSS via EMLO + 1864 Carte report, no York-Ormond 1669 key named (GAPS99)
 - [x] print: Clarke Life of James II, CSP Dom 1668-69 (LANE CX); HMC Ormonde 8 vols (GAPS97); all negative
 - [n/a] key-rebuild: no ciphertext on disk to rebuild a key from
 - [x] image-check: BL images offline since 2023; NLI catalogue Cloudflare 403 (GAPS97)
@@ -207,6 +240,7 @@ Read so far: 0 of 8 folios (no image of ff.1-8 on disk; nothing transcribed)
 Verdict: parked: every gap has an outside blocker
 
 ## While waiting
-f.36 has been added to REQUEST.md's folio list (GAPS97, done). The one action that depends on nobody: search the
-Bodleian Carte MSS calendar/EMLO for an Ormond-side copy of the 1669 Duke of York-Ormond cipher, ~USD 1 (the
-counterpart of f.36; if found, it gives the key without the BL order).
+f.36 was added to REQUEST.md's folio list (GAPS97, done). The Carte/EMLO search is done (GAPS99, negative; candidates
+MS. Carte 50 and 47). The one remaining action that depends on nobody: grep the archive.org full text of Thomas Carte's
+*Collection of Original Letters and Papers* (1739) and *Life of Ormonde* (1735-36) for a 1669 Duke of York cipher or
+key, ~USD 1. Both print from the Carte MSS, so a hit would give the key's wording without the BL order.
