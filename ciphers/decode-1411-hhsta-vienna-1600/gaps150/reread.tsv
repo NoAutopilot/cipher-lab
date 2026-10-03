@@ -1,0 +1,16 @@
+line	nth	value	letter	conf	residue	role	pairs_gloss	shape_note
+L01	2	81	e	H	9	decoy	e	Small Latin e, closed eye, open lower right
+L01	5	70	s	M	22	probe	s	"5"-like: stem, flag at top, rounded bowl, no descender; h without ascender the alternative
+L01	6	22	t	H	22	probe	t	Large stem crossed by long bar, distinct from the "5" form
+L01	9	21	r	L	21	probe	z	"2"/"z" shape, no descender; r rotunda/Kurrent r or Latin z without tail
+L01	10	32	d	H	8	decoy	d	Bowl with ascender curving back left
+L01	12	93	r	L	21	probe	z	Same "2"/"z" form as L01-9; z equally possible
+L01	16	22?	s	M	22	probe(M)	s	Same "5" form; gloss row shifted right here, assignment slightly doubtful
+L03	2	41	n	H	17	decoy	n	Two minims with arch
+L03	4	50	s	M	2	probe	s	Small "5" form with dot
+L03	6	36	s	M	12	probe	s	Larger "5" form, stroke runs down left
+L03	9	94	s	M	22	probe	s	Small "5" form with dot
+L03	12	56	d	M	8	decoy	d	Bowl, ascender looping up and back left
+L05	2	29	a	H	5	decoy	a	Closed bowl, short right stroke
+L05	4	12	s	M	12	probe	s	Clear "5" form
+L05	6	68	g	H	20	decoy	g	Bowl with descender loop, like 9

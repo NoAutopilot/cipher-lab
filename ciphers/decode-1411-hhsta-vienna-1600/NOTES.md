@@ -296,3 +296,49 @@ Next step: (1) a blind paleographic pass over the GAPS141 gloss crops asking onl
 (1 Opus call, ~USD 1.5), (2) a corrected table frozen in a new pre-registration from that pass, (3) the numerals not yet
 used (p.2 left lower half, p.2 right page = f.183) cut and read in two blind passes, then the same three controls plus de17.
 ~USD 6. Status unchanged: open.
+
+## GAPS150 step: blind re-read of the r/z and h/s gloss letters; gloss-text calibration (3 Oct 2026, account-4)
+
+Step run: GAPS146's next step (1). Pre-registration `gaps150/PREREG-GAPS150.md` (commit fbb9a7fc) pushed before the re-read
+and before any score: probe list, decoy check, and the only rule for changing the frozen table (a residue changes only if
+the blind letter is read at H/M confidence at a strict majority of its C positions; L or "?" counts as agreeing).
+
+Blind re-read: one Opus 5.5 subagent call, the 9 existing gloss crops of L01/L03/L05 only, a neutral letter-shape sheet,
+15 probes given as line + n-th number + value (9 in question, 6 decoys), no words, table or prior reading shown. Result
+`gaps150/reread.tsv`: decoys 6/6 agree with gloss/pairs.tsv (e, d, n, d, a, g). Residue 21 (21, 93): both read **r at L
+confidence** ("2"/"z" form, no descender; "z equally possible"). Residues 12 (36, 12), 2 (50), 22 (70, 94, 22?): the
+recurring "5"-like form, read **s at M** ("h without its ascender the alternative"); 22 at L01 6th read t (H), as before.
+**Under the pre-registered rule no residue changes** (r only at L); the revised table equals the frozen table, so one decode
+is reported. Residue 6 (b) has no gloss and was not testable by this step (declared in the prereg). No re-read disagreed
+with pairs.tsv at H/M, so the 54 C / 8 M gloss grades stand; the r-vs-z reading of residue 21 is logged as an open
+palaeographic question (L-confidence r against the GAPS141 passes' z), not a data conflict.
+
+**Score (`gaps150/score150.py`, `--check` exits 0; de17; the frozen table, controls re-drawn with seed 150):** decode N=176
+-1.551; real_p05 -0.854, real_p01 -0.994, null_p99 -1.889; shuffled-target mean -2.218, p99 -2.002, 0/200 >= real; shifted
+rules max -1.980, 0/23 >= real. Gate: FAIL on the judge (below real_p05 and p01), controls beaten -- the GAPS146 verdict
+reproduces. de17 leave-one-file-out: N=300 false-negative 38.2 pct blended, per fold 4.0-97.0 pct; N=1090 41.4 pct, 13.0-100.0
+pct. tools/data has no 16th-c./c.1600 German chancery or newsletter corpus (de16 is a model-composed 8.5 KB text); **the judge
+is of unknown reliability here** (rule 3).
+
+**Calibration (rule 3, ZX-DEC349): the leaf's own period gloss text** (`gaps150/gloss_text.txt`, the 62 gloss letters of
+L01-L05 as reconciled, u-ring as u) through the same judge:
+```
+FAIL language: score=-1.524, null_p99=-1.748, real_p05=-0.911, real_median=-0.756, mode=both, N=62
+```
+Its own letter-shuffled controls: mean -2.195, p99 -1.877. The genuine period plaintext of this leaf, as our passes
+transcribe it, scores -1.524 -- essentially where the decode sits (-1.551) and just as far below real_p05. So de17's FAIL
+on the decode says nothing about the key: the judge cannot recognise this leaf's own text under our transcription convention
+("judge cannot decide", not a negative). Both scores sit well above their shuffled controls.
+
+Exploratory, not pre-registered and not licensing anything (r at residue 21 in place of z, the change the re-read leaned to
+at L only): decode -1.308, gloss text -1.463. Both rise together, which is the shape a correct letter value would give, but
+the change was chosen after seeing these same 176 decodes; the fresh p.2 numerals are the test.
+
+Token grades (rule 4): no reading claimed; the 176 numbers stay M (H 0, C 0 new, S 0, M 176, I 0); gloss pairs C 54 / M 8
+unchanged. No reading-ready flag. Vision: 1 subagent call (Opus 5.5, 9 crops), 0 worker image reads. Requests: none
+(all crops on disk).
+
+Next step: pre-register r at residue 21 as an alternative table beside the frozen one (both frozen before reading), then cut
+and read the unused numerals (p.2 left lower half, p.2 right page) in two blind Opus passes and score both tables with the
+shuffled-target and shifted controls; report the gloss-text calibration beside de17 every time (or build a c.1600 German
+chancery corpus, ~12 min, V6-PTCORP pattern, so the judge can decide). ~USD 6. Status unchanged: open.
