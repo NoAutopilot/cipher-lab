@@ -1,0 +1,29 @@
+# BnF fr.3995 f.62v (Gallica btv1b525085665 canvas f127), Tomokiyo nevers.htm no.32 (undated, Italian; head "Al S. Raffaello ... in Fiorenza - di Parigi"): letter table, code + superscript mark.
+# Transcribed by eye by BIRAGO-NUM-KEYEYE2, 3 Oct 2026, from ONE vision call on images/fr3995/read_f62v.jpg (native region 150,1250,3800,2700 via tools/iiif_lines.py, rows 250-2150, autocontrast, downscaled to 2400x1200).
+# Design: most codes carry a small superscript figure or dot (0-6, x) that distinguishes letters sharing the same two figures (61 for b, c, d; 99 for e and i; 25 for n and "che"; 36 for l and "di"). The pair-token files on disk carry no marks, so unmarked the key is polyphonic: values below join the letters a code serves with '|'. h, x, z have no code written (h is written "h"); u = 80 with superscript 0.
+# Grade: all M (read at ~0.6x; superscripts not recorded per token). The faint mirrored syllable grid on the right half of the leaf is an offset from a facing sheet, not part of this table; not transcribed.
+code	value	grade	note
+15	a	M	mark o
+14	a	M	mark 3
+10	a|l	M	a with mark x; l unmarked
+63	b	M	mark 1
+61	b|c|d	M	b mark 0, c mark 4, d unmarked
+99	e|i	M	e mark 2, i mark o
+90	f	M	mark o
+35	g	M	mark 2
+36	l|di	M	l; "36 di" in the word column
+64	m	M	mark x
+25	n|che	M	n; "25 che" in the word column
+46	n	M
+54	o	M	mark '
+9	p	M
+94	q	M
+53	r	M	mark 3
+23	r	M	mark 3
+56	s	M	mark 6
+43	s	M	mark 5
+41	t	M	mark 4
+80	u	M	mark o
+13	&	M	sign like z
+11	con	M
+7	et	M

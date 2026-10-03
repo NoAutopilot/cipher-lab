@@ -1,0 +1,101 @@
+# BnF fr.3995 f.138v (Gallica btv1b525085665 canvas f266), Tomokiyo nevers.htm no.74 "Zifra con M[ada]ma" (undated, Italian): polyphonic letter alphabet + nomenclator.
+# Transcribed by eye by BIRAGO-NUM-KEYEYE2, 3 Oct 2026, from ONE vision call on images/fr3995/read_f138v.jpg (native region 150,150,3500,4950 via tools/iiif_lines.py, autocontrast, downscaled to 1697x2400). Leaf is written sideways.
+# Structure: letters A..Z (22, no J/K/U/W) on codes 1-12, 17, 18, 20-22, five codes each serving two letters (polyphonic: 1 g|m, 7 b|p, 8 d|y, 21 x|z, 22 c|q); vowel homophones 13 e, 14 a, 15 i, 16 o, 19 u written above the vowels; 23-27 five digraph/syllable signs (values not legible at this scale); 28-30 nulls; 31-100 persons.
+# Grade H = read from the period table; M = number or value uncertain at the reading scale. The 22-letter row uses all of 1-22 exactly once per code-slot, which supports the reading but each figure was read at ~0.48x.
+# Persons named (Card. Tournon d.1562, Mar. S. Andrea d.1562, Mar. Termes d.1562, Card. Borromeo cr.1560, "il S.r Fed.co Gonzaga mio fr.llo") place the table about 1560-62 and the writer as a Gonzaga (Nevers' brother Federico). Not a dating claim beyond that.
+code	value	grade	note
+1	g|m	M	polyphonic
+2	n	M
+3	e	M
+4	a	M
+5	i	M
+6	o	M
+7	b|p	M	polyphonic
+8	d|y	M	polyphonic
+9	u	M
+10	f	M
+11	t	M	written like ij
+12	h	M
+13	e	M	vowel homophone above E
+14	a	M	vowel homophone above A
+15	i	M	vowel homophone above I
+16	o	M	vowel homophone above O
+17	s	M
+18	l	M
+19	u	M	vowel homophone above V
+20	r	M
+21	x|z	M	polyphonic
+22	c|q	M	polyphonic
+28	-	M	nulla
+29	-	M	nulla
+30	-	M	nulla
+31	ilpapa	H
+32	limperatore	H
+33	lareginamadre	M
+34	ilredifrancia	H
+35	ilredispagna	H
+36	ilredinghilterra	M
+37	ilrederomani	M
+38	ilrediportogallo	M
+39	ilredibohemia	M
+40	ilredipolonia	H
+41	ilredinavarra	H
+42	lasignoriadivenetia	M
+43	ilducadifiorenza	H
+44	ilducadimantoa	H
+45	ilducadiferrara	H
+46	ilducadurbino	H
+47	ilducadiparma	H
+48	ilducadilorena	H
+49	ilducadisavoia	H
+50	ilducadiguisa	H
+51	ilducadinemours	M
+52	ilducadilongavilla	M
+53	ilducadinivers	M
+54	ilducadomala	M
+55	ilprincipedicondé	M
+56	ilcontestabile	M
+57	lammiraglio	M
+58	monsignordiborbone	M
+59	ilcardinaledilorena	H
+60	ilcardinaledighisa	H
+61	ilcardinaledeborbon	M
+62	ilcardinaledichiatiglion	M
+63	ilcardinaleditornone	M
+64	ilcardinaledimantoa	M
+65	ilcardinalediferrara	M
+66	ilcardinaledurbino	M
+67	ilcardinalefarnese	M
+68	ilcardinaledemedici	M
+69	ilcardinaleborromeo	M
+70	ilcardinalecarpi	M
+71	ilmarescialsandrea	H
+72	ilmarescialdibrisac	H
+73	ilmarescialditermes	M
+74	ilmarescialdimomoransi	M
+75	ilgrancancellierodifrancia	H
+76	ilducadalua	H
+77	ruigomes	H
+78	donantoniodetoledo	M
+79	dongiovannimanrico	M
+80	ilcontedifiria	M
+81	ilducadisessa	M
+82	ilmarchesedipescara	H
+83	ilsignorcesaregonzaga	M
+84	ilsignorconteborromeo	M
+85	ilsignorfedericogonzagamiofratello	M
+86	ilsignorandrea	M	86-100 alignment of number to name uncertain by one row
+87	ilsignordoncesaredaualos	M
+88	ilsignordonaluise	M
+89	ilsignordonfrancesco	M
+90	ilsignordonalfonso	M
+91	ilcontecarlo	M
+92	ilsignorlepidogonzaga	M
+93	ilsignoralessandro	M
+94	ilsignormassimo	M
+95	ilcontedellamirandola	M
+96	-	M	entry not legible at this scale
+97	ilcommissario	M
+98	ilvicerdinapoli	M
+99	ilviceredisicilia	M
+100	ilgranturco	M

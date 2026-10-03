@@ -1,0 +1,43 @@
+gate stat_min 3.292 | coverage floor 0.5 (key_crossmatch MIN coverage)
+CONTROL no74 err=0.00 seed=1 n=240 stat=8.79 hit
+CONTROL no74 err=0.00 seed=2 n=240 stat=9.86 hit
+CONTROL no74 err=0.00 seed=3 n=240 stat=11.98 hit
+CONTROL no74 err=0.10 seed=1 n=240 stat=5.95 hit
+CONTROL no74 err=0.10 seed=2 n=240 stat=5.71 hit
+CONTROL no74 err=0.10 seed=3 n=240 stat=11.98 hit
+CONTROL no74 err=0.20 seed=1 n=240 stat=3.81 hit
+CONTROL no74 err=0.20 seed=2 n=240 stat=4.45 hit
+CONTROL no74 err=0.20 seed=3 n=240 stat=7.26 hit
+CONTROL no74 err=0.30 seed=1 n=240 stat=3.69 hit
+CONTROL no74 err=0.30 seed=2 n=240 stat=5.40 hit
+CONTROL no74 err=0.30 seed=3 n=240 stat=6.29 hit
+CONTROL no74 total 12/12
+TARGET no74 f119 key=as-written n=240 cov=0.78 z_ng=0.26 z_vf=-0.3551297046657131 stat=0.26 below gate | ilducadaluailcontecarloilducadiguisailsignordonfrancescoilredipolonial
+TARGET no74 f119 key=0d=d alias n=240 cov=0.92 z_ng=-0.10 z_vf=-0.43881289694688363 stat=-0.10 below gate | ilducadaluailcontecarloilducadiguisailsignordonfrancescoilredipolonial
+TARGET no74 f119 key=0d=d alias, last alternative n=240 cov=0.92 z_ng=0.23 z_vf=-1.8313981358001057 stat=0.23 below gate | ilducadaluailcontecarloilducadiguisailsignordonfrancescoilredipolonial
+TARGET no74 f119 key=0d=d alias, letters/syllables only (persons dropped) n=240 cov=0.35 z_ng=-0.79 z_vf=-0.11549283495744275 stat=-0.12 below gate | ienhugdiaigadiiuiiiainiidhiugeiduuddfhudihhhauifgrfaggugaehiicixidugbd
+TARGET no74 f100r key=as-written n=274 cov=0.78 z_ng=-0.16 z_vf=-0.94494486891662 stat=-0.16 below gate | ilducadaluailredipoloniailducadimantoaiilducadiguisailredibohemiailred
+TARGET no74 f100r key=0d=d alias n=274 cov=0.89 z_ng=-0.69 z_vf=-0.7039405651187016 stat=-0.69 below gate | ilducadaluailredipoloniaiilducadimantoaigilducadiguisailredibohemiailr
+TARGET no74 f100r key=0d=d alias, last alternative n=274 cov=0.89 z_ng=-0.45 z_vf=-0.6054051703362957 stat=-0.45 below gate | ilducadaluailredipoloniaiilducadimantoaimilducadiguisailredibohemiailr
+TARGET no74 f100r key=0d=d alias, letters/syllables only (persons dropped) n=274 cov=0.35 z_ng=-1.38 z_vf=-0.51830808770074 stat=-0.52 below gate | iighdeeihgiurdeueiiixgluxlauggigcfudxudiiugxuiuxgfdieuiihieixlxeuideiu
+CONTROL no32 err=0.00 seed=1 n=240 stat=7.94 hit
+CONTROL no32 err=0.00 seed=2 n=240 stat=12.91 hit
+CONTROL no32 err=0.00 seed=3 n=240 stat=12.74 hit
+CONTROL no32 err=0.10 seed=1 n=240 stat=6.01 hit
+CONTROL no32 err=0.10 seed=2 n=240 stat=7.53 hit
+CONTROL no32 err=0.10 seed=3 n=240 stat=9.36 hit
+CONTROL no32 err=0.20 seed=1 n=240 stat=6.85 hit
+CONTROL no32 err=0.20 seed=2 n=240 stat=6.92 hit
+CONTROL no32 err=0.20 seed=3 n=240 stat=8.71 hit
+CONTROL no32 err=0.30 seed=1 n=240 stat=3.78 hit
+CONTROL no32 err=0.30 seed=2 n=240 stat=5.91 hit
+CONTROL no32 err=0.30 seed=3 n=240 stat=9.49 hit
+CONTROL no32 total 12/12
+TARGET no32 f119 key=as-written n=240 cov=0.24 z_ng=-1.79 z_vf=0.7943263359120877 stat=0.79 below gate | na&ulqlaqargoutffanaoaaqsaqraausqoauotauaoofqasaefuaoetouaa
+TARGET no32 f119 key=0d=d alias n=240 cov=0.25 z_ng=0.13 z_vf=0.3350486954225113 stat=0.34 below gate | na&ulqlaqargoutffanaoaaqsaqrapauspqoauotauaoofqasaefuapoetouaa
+TARGET no32 f119 key=0d=d alias, last alternative n=240 cov=0.25 z_ng=-0.11 z_vf=0.30895738407562895 stat=0.31 below gate | chea&udiqdiaqargoutffanaoaaqsaqrapauspqoluotluloofqasaifuapoetouaa
+TARGET no32 f119 key=0d=d alias, letters/syllables only (persons dropped) n=240 cov=0.25 z_ng=0.13 z_vf=0.3350486954225113 stat=0.34 below gate | na&ulqlaqargoutffanaoaaqsaqrapauspqoauotauaoofqasaefuapoetouaa
+TARGET no32 f100r key=as-written n=274 cov=0.31 z_ng=1.23 z_vf=0.9414442873425991 stat=1.23 below gate | a&touataq&&anqnaaqosqosfartafaaraosfaoatuoafa&teaqfaouqaaaasfqroougfqn
+TARGET no32 f100r key=0d=d alias n=274 cov=0.32 z_ng=0.93 z_vf=0.4013946474627231 stat=0.93 below gate | a&touatapq&&anqnaaqosqosfartafaapraosfaoatuoafa&teaqfaouqapaaasfqrooug
+TARGET no32 f100r key=0d=d alias, last alternative n=274 cov=0.32 z_ng=0.90 z_vf=0.5699147020103529 stat=0.90 below gate | a&touatapq&&acheqcheaaqosqosfartlfaapraosfloatuoafa&tiaqfaouqapllasfqr
+TARGET no32 f100r key=0d=d alias, letters/syllables only (persons dropped) n=274 cov=0.32 z_ng=0.93 z_vf=0.4013946474627231 stat=0.93 below gate | a&touatapq&&anqnaaqosqosfartafaapraosfaoatuoafa&teaqfaouqapaaasfqrooug
