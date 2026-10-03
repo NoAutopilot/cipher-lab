@@ -1,0 +1,54 @@
+line	set	real	n	hits
+35L01	C	2	4	22=m 24=n
+35L02	C	1	2	10=a
+35L03	C	0	1	
+35L04	C	2	2	48=c 51=de
+35L05	C	0	3	
+35L06	C	2	2	25=p 12=c
+35L07	C	1	5	51=de
+35L08	C	0	0	
+35L09	C	3	3	25=p 12=c 24=n
+35L10	C	1	2	10=a
+35L11	C	1	1	25=p
+36L01	C	0	0	
+36L02	C	1	1	25=p
+36L03	C	1	5	22=m
+36L04	C	1	2	24=n
+36L05	C	1	2	24=n
+36L06	C	2	3	10=a 10=a
+36L07	C	2	5	25=p 10=a
+36L08	C	0	1	
+36L09	C	3	3	51=de 10=a 10=a
+35L01	all	3	17	96=r 35=o 23=n
+35L02	all	3	11	29=a 20=i 21=e
+35L03	all	5	12	91=d 32=o 21=e 23=n 46=c
+35L04	all	5	7	48=c 23=n 56=r 11=n 51=de
+35L05	all	2	7	39=et 35=o
+35L06	all	2	11	76=c 15=e
+35L07	all	2	11	51=de 39=et
+35L08	all	0	3	
+35L09	all	2	19	17=o 15=e
+35L10	all	3	7	46=c 10=a 20=i
+35L11	all	2	4	30=s 25=p
+36L01	all	1	4	29=a
+36L02	all	2	9	96=r 30=s
+36L03	all	4	13	21=e 23=n 20=i 11=n
+36L04	all	3	11	21=e 32=o 11=n
+36L05	all	4	10	96=r 24=n 11=n 30=s
+36L06	all	2	13	56=r 15=e
+36L07	all	9	15	29=a 11=n 30=s 15=e 25=p 21=e 23=n 10=a 20=i
+36L08	all	1	9	30=s
+36L09	all	6	12	51=de 21=e 10=a 30=s 10=a 96=r
+
+scope	set	real	n	ctrl	mean	p95	max	P(ctrl>=real)	gate
+canvas3536	C	24	47	f23-window	18.18	22	27	0.0186	PASS
+canvas3536	C	24	47	shuffled-gloss	14.48	19	25	0.0001	-
+canvas3536	all	61	205	f23-window	52.35	60	70	0.0432	-
+canvas3536	all	61	205	shuffled-gloss	48.29	55	63	0.0016	-
+
+code12	line	gloss
+12	35L02	designerleurtraitte
+12	35L05	etmoy
+12	35L06	ledsrprince
+12	35L07	mrdeetknut
+12	35L09	srprinceenestoitlarbitre

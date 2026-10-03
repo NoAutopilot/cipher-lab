@@ -1053,17 +1053,68 @@ settled), C-valued 21 (16 consistent with the gloss), C+M 122 (45 consistent); n
 Hosts: none (image on disk). Vision: 2 Sonnet subagent calls (9 line crops each) + this worker's reconciliation (2 zoom reads, plus
 2 debug-overlay reads to set centres). No credentials.
 
-## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, A2-COL6, A2-COL7, A2-COL8, A2-COL9, A2-COL10, 3 Oct 2026)
+## A2-COL11 (account 2, LANE-A2PUSH, 3 Oct 2026): canvas 35-36 (folio 31-32, La Haye, 9e de l'an 1648) numerals + gloss, key_f23 C test against the length-matched control
+
+Brief `.claude/briefs/runs/2026-10-03-acct2-a2-col11.md`. Intake gate at start: `colbert26-lathuillerie-1644: partial (line 1) --
+edition/page or full-text-search citation found within 6 lines`, exit 0.
+
+**Pre-registration (rule 3).** `siblings/c3536_test.py` committed and pushed (5396a261) before either image was cropped or either pass
+was read: a copy of c33_test.py with the statistic, the LENGTH-MATCHED f23-window control (5000 draws), the gate (C hits, P < 0.05)
+and the n >= 15 power floor unchanged; folio 31-32 is one letter (signed La Thuillerie, La Haye, 9e de l'an 1648) and is scored as
+ONE unit alone, not pooled with canvas 30/32/33; it also lists every occurrence of code 12 (A2-COL10's lead), not gating.
+
+**Transcription (rule 2, Usage 6).** Images on disk (`images/crops/canvas35_full.jpg`, `canvas36_full.jpg`, 2400 px), no network.
+Crops (scratch, not committed): `python3 tools/iiif_lines.py --image ciphers/colbert26-lathuillerie-1644/images/crops/canvas35_full.jpg
+--region 1440,440,920,1080 --centres 100,162,240,318,382,448,515,585,655,992,1052 --top-margin 58 --bottom-margin 22 --out <scratch>/c35
+--prefix c35 --debug` (11 crops, right page) and `... canvas36_full.jpg --region 340,180,1000,1080 --centres 100,170,240,650,715,790,855,935,1000
+--top-margin 58 --bottom-margin 22 --out <scratch>/c36 --prefix c36 --debug` (9 crops, left page); centres set by eye from an
+auto-detected debug overlay. Two blind Sonnet passes (B in reverse order), neither shown the key; this worker's reconciliation (two
+stacked zoom reads of 10 crops) in `siblings/c3536_reconciled.tsv`, 20 rows, 231 groups, 4 unsettled (35L01 24/29 and 19/79, 35L03
+71/77, 35L09 10/20; skipped by the script). Numerals: the passes agree on every other group where both read the target row; settled
+by eye: 35L07 g3 51 (B 31), 35L09 g9 23 (A 29), 36L01 g4 42 (B 12). Pass B read the neighbouring row on 3 crops (35L08, 35L11, and
+re-attached several glosses one row off); pass A's row-and-gloss attribution matched the page by eye on every crop and was kept,
+with the gloss assigned to the numerals it sits directly above (A2-COL7's rule). 36L08's 'M. le P. Do. auec quelques' (B: clear text)
+sits over 40 44 82 30 32 23 30 in the small gloss hand and is kept as gloss.
+
+**Result** (`siblings/c3536_test_out.txt`):
+```
+scope	set	real	n	ctrl	mean	p95	max	P(ctrl>=real)	gate
+canvas3536	C	24	47	f23-window	18.18	22	27	0.0186	PASS
+canvas3536	C	24	47	shuffled-gloss	14.48	19	25	0.0001	-
+canvas3536	all	61	205	f23-window	52.35	60	70	0.0432	-
+canvas3536	all	61	205	shuffled-gloss	48.29	55	63	0.0016	-
+```
+key_f23's C codes read 24 of 47 canvas 35-36 occurrences consistently with the leaf's own gloss, in order, against a length-matched
+control mean 18.2 (p95 22, max 27 in 5000): **the pre-registered gate passes, n = 47 is above the power floor**, but the margin is
+small (2 over p95; P 0.019, weaker than canvas 33's 0.006) and rests on pass A's gloss attribution, which B did not share on several
+rows. With canvas 33 this is the second 1648 unit to clear its own control: one key for f.23 (March 1646), canvas 30-32 (May 1646)
+and two La Haye letters of January 1648 is supported -- attestation, not a reading.
+Observed, not counted (internal consistency, no key used): the run '52 31 17 15 32 29 25 12 23 46' stands under 'Led Sr Prince'
+(35L06, after 76) and again under 'Sr Prince en estoit Larbitre' (35L09); '25 76 87 93' stands under 'Plenipotentiaires' on 36L02
+and 36L07; '21 23 22 10 20 11 30' opens both 36L03 ('nous condemneroient') and the unglossed tail of 36L07 -> 36L08.
+Code 12 (key_f23 12 = c, grade C): 5 occurrences here; consistent with 'c' twice, both inside the repeated 'Sr Prince' run
+(35L06, 35L09), not under 'designer leur traitte', 'et moy' or 'Mr de et Knut'. With canvas 33 (0 of 3) and canvas 32 (2 of 10),
+12 = c holds 4 of 18 off f.23 -- still a candidate for the next key revision's own control, not a change here.
+
+Per rule 3's per-unit merge clause, no code enters key_f23.tsv or key.tsv from this step; canvas 35-36 has now cleared its own
+length-matched control, so a later key revision may fold it in as a unit that cleared, with f.23, canvas 32 and canvas 33. No
+reading changed, so no decode or judge re-run. Rule 4 for canvas 35-36 under key_f23: 231 groups transcribed (227 settled), C-valued
+47 (24 consistent with the gloss), C+M 205 (61 consistent); no token is graded as read.
+
+Hosts: none (images on disk). Vision: 2 Sonnet subagent calls (20 line crops each) + this worker's reconciliation (2 stacked zoom
+reads, plus 4 overlay/page reads to set centres). No credentials.
+
+## Remaining gaps (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, A2-COL6, A2-COL7, A2-COL8, A2-COL9, A2-COL10, A2-COL11, 3 Oct 2026)
 
 Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading_tokens_f24.tsv, reading_tokens_f23.tsv); the other 19 cipher-bearing leaves 0 (sorted by system, A2-COL5: 17 two-digit like f.23, 2 mixed like f.24; siblings_sort.tsv).
 - f.23 codes beyond the 21 C codes - blocker: open-codes; word-level re-pairing done (A2-COL3: 128 vs shuffled max 45, 21 C codes, held-out 4/4); the other 49 codes occur once or split across chunks on this one leaf (key_f23.tsv), so more occurrences are needed (A2-COL5: 17 glossed two-digit sibling leaves, May 1646-Feb 1648, are that material if they share the key); the rotated margin postscript, the only further f.23 material, was read and used as a known-answer test (A2-COL4: C codes 6/7 consistent, M2 5/5 above the control max 4, pooled p 0.076; leads 61 = ge, 71 = dans, 77 = faire); next: fold the margin pairs into the alignment as a second fit, key revision with its own shuffled-gloss control, ~$1
 - f.24 signs beyond the 6 C codes - blocker: open-codes; one leaf of 153 tokens leaves 53 signs at M (key_f24.tsv), and f.23 is a different key, so it cannot serve as the prior (A2-COL2 step)
-- two-digit siblings (17 leaves, siblings_sort.tsv) - blocker: not-attempted; canvas 30-32 (8 May 1646) tested: canvas 30 alone 12/23, below the length-matched control (A2-COL6); canvas 32 transcribed with its gloss (A2-COL7, siblings/c32_reconciled.tsv, 276 settled groups) and pooled 30+32 key_f23 C 51/88 clears the pre-registered length-matched control (p95 43, P 0.0002; canvas 32 alone 39/65 vs p95 33), so a shared key with f.23 is supported for that letter; the 14 Jan-Feb 1648 leaves untested; joint interlinear_align re-fit f.23 + c32 + c30 at line-level sibling pairing (A2-COL8): within-unit shuffle beaten (190 vs p95 116) but sibling agrees 78 vs length-matched p95 80, gate FAIL, no key change (canvas 32 alone 59 vs p95 56, post-hoc lead); A2-COL9: word-level re-pairing of canvas 32 mostly not possible (groups evenly spaced, no run gaps, gloss more compact than numerals; 2 of 22 rows split), pre-registered re-fit without canvas 30 passes G1 (174 vs p95 97) and G2 (62 vs length-matched p95 55), with canvas 30 G2 still fails (81 vs 81); the joint key adds no C code beyond key_f23 and canvas 32 attests individual codes weakly (51 de 2/8), so no key change; A2-COL10: canvas 33 (La Haye, Jan 1648) transcribed with its gloss (siblings/c33_reconciled.tsv, 135 groups) and the pre-registered key_f23 C test passes on it alone (16/21 vs length-matched p95 14, P 0.006; with the passes' narrower gloss 10/12, below the n 15 floor), so the shared key is supported outside 1646; lead: 12 = c conflicts on canvas 33 (under 'distribu-' twice); 13 Jan-Feb 1648 leaves untested; next: canvas 35-36 (folio 31-32, 1648) numerals + gloss on line crops, two blind passes + reconciliation, same pre-registered test (copy of c33_test.py, committed before the passes), ~$2.5
+- two-digit siblings (17 leaves, siblings_sort.tsv) - blocker: not-attempted; canvas 30-32 (8 May 1646) tested: canvas 30 alone 12/23, below the length-matched control (A2-COL6); canvas 32 transcribed with its gloss (A2-COL7, siblings/c32_reconciled.tsv, 276 settled groups) and pooled 30+32 key_f23 C 51/88 clears the pre-registered length-matched control (p95 43, P 0.0002; canvas 32 alone 39/65 vs p95 33), so a shared key with f.23 is supported for that letter; the 14 Jan-Feb 1648 leaves untested; joint interlinear_align re-fit f.23 + c32 + c30 at line-level sibling pairing (A2-COL8): within-unit shuffle beaten (190 vs p95 116) but sibling agrees 78 vs length-matched p95 80, gate FAIL, no key change (canvas 32 alone 59 vs p95 56, post-hoc lead); A2-COL9: word-level re-pairing of canvas 32 mostly not possible (groups evenly spaced, no run gaps, gloss more compact than numerals; 2 of 22 rows split), pre-registered re-fit without canvas 30 passes G1 (174 vs p95 97) and G2 (62 vs length-matched p95 55), with canvas 30 G2 still fails (81 vs 81); the joint key adds no C code beyond key_f23 and canvas 32 attests individual codes weakly (51 de 2/8), so no key change; A2-COL10: canvas 33 (La Haye, Jan 1648) transcribed with its gloss (siblings/c33_reconciled.tsv, 135 groups) and the pre-registered key_f23 C test passes on it alone (16/21 vs length-matched p95 14, P 0.006; with the passes' narrower gloss 10/12, below the n 15 floor), so the shared key is supported outside 1646; lead: 12 = c conflicts on canvas 33 (under 'distribu-' twice); A2-COL11: canvas 35-36 (La Haye, 9e de l'an 1648) transcribed with its gloss (siblings/c3536_reconciled.tsv, 231 groups) and the pre-registered key_f23 C test passes on it alone (24/47 vs length-matched p95 22, P 0.019; narrow margin, rests on pass A's gloss attribution); 12 = c 2 of 5 here, 4 of 18 off f.23; 11 Jan-Feb 1648 leaves untested (canvas 39-40, 47-51, 54-56, 62-63); next: a pre-registered joint key revision folding the four units that cleared (f.23, canvas 32, 33, 35-36; siblings/refit_c32w.py pattern) against its own length-matched control, with 12 = c re-tested, ~$1.5 (scripts only, no vision)
 - canvas 20-21 notes - blocker: not-attempted; KX-LATHKEY2 judged them topical, but f.24 shows gloss lines were taken for clear text; next: re-read canvas 20 gloss-vs-clear on native crops, ~$2
 
-## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, A2-COL6, A2-COL7, A2-COL8, A2-COL9, A2-COL10, 3 Oct 2026)
+## Escalation (A2-COL2, 2 Oct 2026; updated A2-COL3, A2-COL4, 2 Oct 2026, A2-COL5, A2-COL6, A2-COL7, A2-COL8, A2-COL9, A2-COL10, A2-COL11, 3 Oct 2026)
 
-- [x] siblings: sorted by eye (A2-COL5, siblings_sort.tsv): 17 leaves two-digit like f.23 (canvas 30-32 May 1646, all La Haye leaves Jan-Feb 1648), 2 mixed like f.24 (canvas 20-21, 1645); shared key tested on canvas 30 (A2-COL6): C 12/23, beats shuffled-gloss (P 0.015), not length-matched (P 0.18); canvas 30+32 pooled (A2-COL7): C 51/88 vs length-matched p95 43, P 0.0002 -- PASS, shared key supported for the May 1646 letter; joint key re-fit (A2-COL8, siblings/refit_c32.py): sibling agrees 78 vs length-matched p95 80, FAIL at line-level pairing, key unchanged; re-fit without canvas 30 (A2-COL9, siblings/refit_c32w.py, pre-registered): G1 PASS 174 vs 97, G2 PASS 62 vs 55 (row-level diagnostic 57 vs 51: dropping canvas 30 does most of the work; word-level split possible on 2 of 22 rows only), no new C code, key unchanged; canvas 33 (A2-COL10, siblings/c33_test.py, pre-registered): C 16/21 vs length-matched p95 14, P 0.006 -- PASS, key_f23 tested in 1648 (rests on the B3-B5 gloss-vs-clear layout call for n >= 15)
+- [x] siblings: sorted by eye (A2-COL5, siblings_sort.tsv): 17 leaves two-digit like f.23 (canvas 30-32 May 1646, all La Haye leaves Jan-Feb 1648), 2 mixed like f.24 (canvas 20-21, 1645); shared key tested on canvas 30 (A2-COL6): C 12/23, beats shuffled-gloss (P 0.015), not length-matched (P 0.18); canvas 30+32 pooled (A2-COL7): C 51/88 vs length-matched p95 43, P 0.0002 -- PASS, shared key supported for the May 1646 letter; joint key re-fit (A2-COL8, siblings/refit_c32.py): sibling agrees 78 vs length-matched p95 80, FAIL at line-level pairing, key unchanged; re-fit without canvas 30 (A2-COL9, siblings/refit_c32w.py, pre-registered): G1 PASS 174 vs 97, G2 PASS 62 vs 55 (row-level diagnostic 57 vs 51: dropping canvas 30 does most of the work; word-level split possible on 2 of 22 rows only), no new C code, key unchanged; canvas 33 (A2-COL10, siblings/c33_test.py, pre-registered): C 16/21 vs length-matched p95 14, P 0.006 -- PASS, key_f23 tested in 1648 (rests on the B3-B5 gloss-vs-clear layout call for n >= 15); canvas 35-36 (A2-COL11, siblings/c3536_test.py, pre-registered): C 24/47 vs length-matched p95 22, P 0.019 -- PASS, second 1648 unit
 - [x] clear-pages: f.24 and f.23 interlinear decipherments both aligned, each cleared its own shuffled-gloss control (f.23 63 vs max 45)
 - [x] known-keys: KX-LATHCT1 compared the cluster with key_1646, key_brienne_1647, key_1659 (different keys)
 - [ ] print: no edition of these letters found; Danish/Swedish mediation editions not yet opened (GF-A2-3 premise (d))
@@ -1071,4 +1122,4 @@ Read so far: 27 of 168 f.24 tokens and 92 of 306 f.23 tokens at grade C (reading
 - [ ] image-check: canvas 20-21 gloss-vs-clear re-read on native crops
 - [x] retry: f.23 word-level re-pairing done (A2-COL3): 128 agreeing tokens vs shuffled-gloss control max 45; C codes 6 -> 21; held-out P36 4/4 C consistent; judge FAIL -1.412; A2-COL4 margin postscript known-answer test: C 6/7 consistent, M2 5/5 vs control max 4, pooled p 0.076
 
-Verdict: keep going: 4 internal gaps; cheapest next: canvas 35-36 (folio 31-32, La Haye 1648) numerals + gloss from tools/iiif_lines.py line crops (two blind passes + one reconciliation, priced per pass), then the same key_f23 C test (copy of siblings/c33_test.py, committed before the passes) against the length-matched f.23-window control, the second 1648 unit; canvas 33 passed (A2-COL10, 16/21 vs p95 14). Attestation only until a key revision with its own control folds the cleared units (f.23, canvas 32, canvas 33) together, ~$2.5
+Verdict: keep going: 4 internal gaps; cheapest next: a pre-registered joint key revision folding the four units that cleared their own controls (f.23, canvas 32, canvas 33, canvas 35-36; siblings/refit_c32w.py pattern, script committed before the run) against a length-matched control, re-testing 12 = c (4 of 18 off f.23); canvas 35-36 passed (A2-COL11, 24/47 vs p95 22, P 0.019). Scripts only, no vision, ~$1.5; then canvas 39-40 (10-13 Jan 1648) numerals + gloss, ~$2.5
