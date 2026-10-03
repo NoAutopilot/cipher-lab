@@ -210,3 +210,68 @@ Result: no full location of either Morse carrier found on the open web or in the
 (b) Other solvers' working files -- shallow clones 3 Oct 2026: dbourdeau/cyphersolver HEAD 810a777 targets/censorship (NOTES.md, profile.json "not solved / not read / fraction_read 0", crib.py, bands.py, marks_raad.py; already summarised above, MIT/CC BY, credited) -- no rendering of either carrier beyond the published fragment; aaymeloglu/unsolved-ciphers HEAD d2800bb: no file on this item. Bugfish's marked-up map (forum.bugfish.eu) would count here but is unreachable: found (Bourdeau, no reading) / unreachable (Bugfish).
 (c) Physical neighbours -- the manual's other pages: Bourdeau downloaded TNA's 115 images of KV 2/2424 and reports no gain in resolution; the manual's own explanatory text around pp.14-17 is quoted above and does not give the mark positions. No answer key or "solution" page is known in the brochure: not found (from the pages read by bCEN and Bourdeau).
 (d) Recipient's side -- not a letter; the "recipients" are the overseas censorship stations that used the brochure. Related KV/DEFE censorship files at TNA were not searched this pass (out of a gate-fix brief): not found / not searched.
+
+## GAPS183-censorship-manual-stego (3 Oct 2026, account-4)
+
+Step run: the "Next step" section's cheap test, the shorthand comparison (test 3): does the initial "H" of the
+signature "Mary Helen Shaw" (manual p.14) read as Duployé shorthand for the manual's "Before Arras"? Scripts:
+`scripts/duploye_control.py` (control render and scoring) and `scripts/sig_hypothesis_score.py` (hypothesis vs nulls).
+Crop: `tools/iiif_lines.py --image images/Fashion-Signature.png --top-margin 130 --bottom-margin 130` (one crop,
+565x225, shown at 2x). Two vision calls in all, one for the control and one for the signature, each image carrying the
+same reference chart of 18 basic Duployan letters (Noto Sans Duployan, from the notofonts jsDelivr mirror).
+
+Matched control (rule 3): a random string of 7 Duployan letters (seed 183) from the same 18-letter inventory, at the
+signature's stroke height (about 60 px), blurred and downsampled 2x. Read blind (key opened only after the reading
+was recorded): `K F P N R V F` against key `K F P N R V F`, **accuracy 1.000**. The control can fail on the statistic
+(a misread letter lowers the edit accuracy), so it is a real test of the reader. Limitation: it is at ceiling and
+easier than the target, because the glyphs are machine-set and separated, while the signature is joined handwriting
+in a Latin hand. So it shows only that the reader can tell the Duployan primitives apart at this pixel size. It does
+not show that a joined cursive Duployé word can be segmented. Match on N and alphabet, not on design (rule 3's
+Salviati paragraph).
+
+Target reading of the "H", in Duployan primitives, left to right: `A G A B T B`, every token graded M (rule 4: H 0,
+C 0, S 0, M 6, I 0). That is: an entry loop, a long steep rising stroke, a loop at the top, a descending upright, the
+crossbar, the second upright. The loops are where a cursive Latin "H" has them anyway. The reading was **not blind**:
+the hypotheses were known before the call.
+
+Scores (best local edit similarity of each Duployé phonetic spelling inside the reading; null = 2000 random 6-letter
+readings from the same inventory, seed 183):
+
+| hypothesis | spelling | sim | null mean | null p95 | p |
+|---|---|---|---|---|---|
+| ARRAS | A R A | 0.667 | 0.182 | 0.667 | 0.055 |
+| AVANT ARRAS | A V A N T A R A | 0.375 | 0.153 | 0.250 | 0.046 |
+| DEVANT ARRAS | D E V A N T A R A | 0.222 | 0.171 | 0.333 | 0.497 |
+| VON ARAS (Gerry, Cipherbrain 7 May 2017) | V O N A R A S | 0.286 | 0.188 | 0.286 | 0.354 |
+| 10 decoy towns (Lille, Lens, Metz, Lyon, Paris, Calais, Verdun, Douai, Nancy, Reims) | -- | 0.000-0.250 | 0.18-0.25 | 0.33-0.67 | 0.77-1.00 |
+
+Result: **borderline, not decisive.** "Arras" and "avant Arras" sit at the edge of the null (p about 0.05), and every
+decoy town scores at or below its null. But the only match is A_A (two loops) plus a G read where R is wanted, both
+of them rising diagonals that differ only in slope. Loops at those places are what any cursive Latin "H" carries.
+The reader was not blind, and the control does not match the joined-hand design. So this is not a reading, and not a
+negative either: the test cannot decide at this resolution and with this control. Nothing changes the folder's
+status. No reading is claimed (rule 4: 6 M tokens, no H/C/S). Rule 10: nothing here is new; the "Arras" reading of
+the signature is Gerry's (Cipherbrain, 7 May 2017) and the 2020 blog comment's, already credited above.
+
+Requests: cdn.jsdelivr.net 1 (font) plus 1 reachability probe; no other host.
+
+## Remaining gaps (GAPS183, 3 Oct 2026)
+Read so far: unmeasured -- the plaintexts are printed in the manual, and what is unread is where the marks lie; no carrier located beyond the published fragments
+- fashion-drawing Morse (p.14 dress trims) - blocker: illegible; marks 2-5 px in every online copy, TNA scan pixel-identical (Bourdeau 15 Sept 2026); waiting-on ASKS row 126 (Kew record copy at 1200 dpi)
+- signature shorthand "Before Arras" (p.14) - blocker: illegible; the GAPS183 shorthand test (3 Oct 2026) was borderline at p about 0.05 with a non-blind, design-unmatched control; settling it needs the ASKS row 126 image or a joined-hand Duployé control (While waiting)
+- map Morse beyond "alles fertig" (p.17, tram-band pen marks) - blocker: illegible; Bourdeau's marks_raad.py found 24 candidates that do not separate into dots and dashes; waiting-on ASKS row 126
+
+## Escalation (3 Oct 2026)
+- [n/a] siblings: a single training brochure, no sibling items carry these illustrations
+- [x] clear-pages: the manual's own captions pp.14, 16, 17 read and quoted (bCEN, 25 Sept 2026)
+- [n/a] known-keys: the plaintexts are given; there is no key to recover
+- [x] print: Cipherbrain threads, Futility Closet, solver repositories read (bCEN 25 Sept, GF-A2-12 3 Oct 2026)
+- [n/a] key-rebuild: image steganography, no cipher key involved
+- [x] image-check: TNA scan equals Schmeh's (Bourdeau); signature shorthand test run 3 Oct 2026 (GAPS183), borderline
+- [ ] retry: joined-hand Duployé control from a period Duployé manual on Internet Archive (While waiting), then a blind re-read
+Verdict: keep going: 0 internal gaps; cheapest next: joined-hand Duployé control and a blind re-read (While waiting; the images wait on ASKS row 126), ~$3
+
+## While waiting
+
+- The action that depends on nobody: fetch a period Duployé manual from Internet Archive (full text, public domain), cut crops of the joined handwritten words it prints, and use them as a design-matched control (joined hand, same pixel size). Then have a fresh session that does not know the hypotheses re-read the signature's "H" blind, and re-run scripts/sig_hypothesis_score.py on that reading, ~$3.
+- Waiting on the owner: ASKS row 126, a TNA record copy of KV 2/2424 manual pp.14 and 17 at 1200 dpi or better.
