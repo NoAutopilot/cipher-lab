@@ -6159,3 +6159,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 01:27 | FT4b-mccormick-1999 (account-4) | claim: mccormick-1999, check note 2 line 10 (26/36, KCNOB/KENO) against the FBI image
 2026-10-03 01:27 | FT4c-decode-2754-bnf-baluze156-1636 (account-4) | claim: decode-2754-bnf-baluze156-1636 -- next step (1): sign-shape inventory sweep of fr.4140 Sabran Genoa 1636 cipher letters vs f.157r signs; no reading; cap USD 7.5, box ends 02:07 UTC
 2026-10-03 01:27 | GAPS-fr4715-vieuville-pool-12 (account-4) | claim: fr4715-vieuville-pool -- Verdict step: 1000-px look at no.27 f.50, no.28 f.51, no.60 f.83 for glosses near barred 03/07/49/57/6; native read only if one shows a gloss
+2026-10-03 01:27 | GAPS-esp318-sicilia-1503 (account-4) | claim: esp318-sicilia-1503 -- Verdict step (Cifra del visorrey key-sheet fetch + manifest + shape inventory vs sorter piles); box 35 min
