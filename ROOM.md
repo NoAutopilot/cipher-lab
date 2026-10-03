@@ -7155,3 +7155,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 15:05 | TOOL-NS2 (account-4) | claim: tools/next_steps.py -- Remaining-gaps Verdict line wins over Escalation text (flag GAPS144 14:53)
 2026-10-03 15:05 | GAPS149-la-garde-1577 (account-4) | claim: la-garde-1577 periodicity test (IC by period 1..20 + Friedman) on base codes N=229 K=26 vs matched controls (vig p2-12, running-key, homophonic K=26, masc; fr16, err 0.23, >=40 seeds); script only; cap USD 2, box 25 min
 2026-10-03 15:06 | GAPS148-thurloe-printed (account-4) | claim: thurloe-printed -- compare Tomokiyo stamford.jpg key image vs key_stamford.tsv for 143, 70 and M-graded codes; <=2 vision calls on crops; cap USD 2, box 25 min from 15:07 UTC
+2026-10-03 15:06 | GAPS147-eckert-1862 (account-4) | claim: eckert-1862 OR vol 9/10/11pt1 alignment + pooled one-telegram proposals, key_dates rebuild; cap $3, 30 min
