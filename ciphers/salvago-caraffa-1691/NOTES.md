@@ -71,6 +71,16 @@ Intake gate (python3 tools/intake_gate_check.py salvago-caraffa-1691): "blocked 
 
 Verdict: stays `blocked` (finding aid read, no edition or image exists to open). Next: ASGe copy enquiry of REQUEST.md for items 294 and 299 (owner-side), or a Società Ligure di Storia Patria article-level search (~USD 1.5).
 
+## A2P4-SALV pass (3 Oct 2026, 18:14-18:32 UTC): Atti della Societa Ligure di Storia Patria, full-text
+
+Route: Internet Archive advancedsearch listed 31 Atti volumes (UofT scans vols 3-48, Cavagna-era scans vols 1-25 and 71-72, 1885 vol., vol. 49 f.1-2, a Google scan; one non-Atti Castelnuovo book also queried); `be-api.us.archive.org/fts/v1/search`, quoted term + `identifier=`, one volume at a time, 1.6 s apart. Terms: "Coysis", "Caraffa", "Salvago". Requests: archive.org advancedsearch 1, be-api 96 (32 ids x 3 terms), memoriedigitaliliguri.it root 1 (200; its own search not used, Atti vols after about 49 are not in this IA set).
+Positive control: "Salvago" reproduces in 19 of 32 volumes (the family is common in the Atti), so the search reads the OCR. This control shows the route works for the family name, not that a 1691 Caraffa passage would be found.
+Result: "Coysis" 0 of 32. "Caraffa" hits in 5 volumes (13-24 combined, 10, 38, 8, 9 of the Cavagna/UofT scans), each a snippet on 16th-century Carafa (Tommaso, Alfonso, Paolo IV, Livia Doria-Caraffa, Ferrante) or an index entry; none concerns Antonio Carafa, the 1691 subsidy or a cipher. Only snippet hits were read (fts returns snippets, no page locators), so a Salvago snippet in a volume was not opened to rule out a 1691 mention. Not found in these volumes.
+Not covered: Atti volumes absent from this IA set (later 20th-century volumes, in copyright), Giornale Ligustico, and any article that prints item 299's cipher under another spelling of the name (Coysis/Coisis/Coissy not tried). Grade I for any claim about what the Atti hold.
+Status unchanged: `blocked`. Intake gate unchanged (terminal status, exit 0).
+
 ## While waiting
 
 One action that depends on nobody: full-text search of Atti della Società Ligure di Storia Patria (memoriedigitaliliguri.it) for "Caraffa" 1691 and "Coysis", to see whether item 299's cipher was printed; ~USD 1.
+
+Update 3 Oct 2026 (A2P4-SALV): the Atti search above was run (0 for Coysis, Carafa hits all 16th-century). Next: ASGe copy enquiry (REQUEST.md, owner-side), or retry with spelling variants Coisis/Coissy in the same 31 volumes plus Giornale Ligustico (~USD 0.5).
