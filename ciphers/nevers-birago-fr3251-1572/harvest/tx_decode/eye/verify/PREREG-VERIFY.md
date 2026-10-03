@@ -1,4 +1,4 @@
-# A1-BIR-VERIFY pre-registration (3 Oct 2026, 12:3x UTC, account-1 verifier for LANE-A1; a session other than A1-BIR-EYE's)
+# A1-BIR-VERIFY pre-registration (3 Oct 2026, 12:2x UTC (first written as 12:3x without reading the clock; corrected, rule 6), account-1 verifier for LANE-A1; a session other than A1-BIR-EYE's)
 
 Brief `.claude/briefs/runs/2026-10-03-acct3-a1-wave7.md` job 5. Written and pushed **before any crop is shown to any reader**.
 
