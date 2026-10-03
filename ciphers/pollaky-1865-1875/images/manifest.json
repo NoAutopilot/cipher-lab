@@ -1,45 +1,56 @@
 {
-  "fetched": "25 Sept 2026 17:32 UTC",
-  "fetched_by": "bPOL, LANE B2 breadth worker, session for parent 7b",
-  "host": "scienceblogs.de",
-  "source_post": "Cipherbrain post 29 (Schmeh 2017), sources/schmeh/posts/29-pollaky.html / 29-pollaky.txt",
-  "images": [
-    {
-      "id": "ad1",
-      "file": "ad1-1865-secret-writing.png",
-      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-secret-writing.png",
-      "date": "1865-05-16",
-      "sha1": "5b42ca5c944b8b905d5b60673f2841826b5260c1",
-      "size_bytes": 26453,
-      "note": "Schmeh: ad 'written in a secret script' -- invented symbols, not letters/digits"
-    },
-    {
-      "id": "ad2",
-      "file": "ad2-1871-telegram.png",
-      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-Telegram.png",
-      "date": "1871-02-20",
-      "sha1": "ba557b56adf0f1c92682ee0bd8f93bb4bc6bc0f7",
-      "size_bytes": 193694,
-      "note": "Schmeh: ad 'encrypted in some number code'"
-    },
-    {
-      "id": "ad3",
-      "file": "ad3-1875-05-08.jpg",
-      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_08051875.jpg",
-      "date": "1875-05-08",
-      "sha1": "5e7bace05245be56a07853068a4cb1ee78e0f87f",
-      "size_bytes": 52467,
-      "note": "alphabet undetermined before transcription"
-    },
-    {
-      "id": "ad4",
-      "file": "ad4-1875-05-20.jpg",
-      "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_20051875.jpg",
-      "date": "1875-05-20",
-      "sha1": "9c45eee35850fe2319aae873bc4bf1b04d305acf",
-      "size_bytes": 55324,
-      "note": "alphabet undetermined before transcription"
-    }
-  ],
-  "requests": "4 GET requests to scienceblogs.de, 2s apart, browser User-Agent (site requires it); all HTTP 200; no retries needed"
+ "fetched": "25 Sept 2026 17:32 UTC",
+ "fetched_by": "bPOL, LANE B2 breadth worker, session for parent 7b",
+ "host": "scienceblogs.de",
+ "source_post": "Cipherbrain post 29 (Schmeh 2017), sources/schmeh/posts/29-pollaky.html / 29-pollaky.txt",
+ "images": [
+  {
+   "id": "ad1",
+   "file": "ad1-1865-secret-writing.png",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-secret-writing.png",
+   "date": "1865-05-16",
+   "sha1": "5b42ca5c944b8b905d5b60673f2841826b5260c1",
+   "size_bytes": 26453,
+   "note": "Schmeh: ad 'written in a secret script' -- invented symbols, not letters/digits"
+  },
+  {
+   "id": "ad2",
+   "file": "ad2-1871-telegram.png",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky-Telegram.png",
+   "date": "1871-02-20",
+   "sha1": "ba557b56adf0f1c92682ee0bd8f93bb4bc6bc0f7",
+   "size_bytes": 193694,
+   "note": "Schmeh: ad 'encrypted in some number code'"
+  },
+  {
+   "id": "ad3",
+   "file": "ad3-1875-05-08.jpg",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_08051875.jpg",
+   "date": "1875-05-08",
+   "sha1": "5e7bace05245be56a07853068a4cb1ee78e0f87f",
+   "size_bytes": 52467,
+   "note": "alphabet undetermined before transcription"
+  },
+  {
+   "id": "ad4",
+   "file": "ad4-1875-05-20.jpg",
+   "url": "https://scienceblogs.de/klausis-krypto-kolumne/files/2016/10/Pollaky_20051875.jpg",
+   "date": "1875-05-20",
+   "sha1": "9c45eee35850fe2319aae873bc4bf1b04d305acf",
+   "size_bytes": 55324,
+   "note": "alphabet undetermined before transcription"
+  },
+  {
+   "id": "clay1881-p257",
+   "file": "clay1881-p257-n281.jpg",
+   "url": "https://archive.org/download/agonycolumntime00claygoog/page/n281_w1600.jpg",
+   "date": "1865-05-16 (Times; printed 1881)",
+   "sha1": "12850ca49d3793658b432ebb20481472e5cde8a9",
+   "size_bytes": 787466,
+   "fetched": "3 Oct 2026 16:54 UTC",
+   "fetched_by": "GAPS172 (account-4)",
+   "note": "Alice Clay (ed.), The Agony Column of the 'Times' 1800-1870 (Chatto and Windus, 1881), p. 257, item 1459 (ad 1, Tuesday 16 May 1865) and items 1458/1460; IA leaf index 281 from fulltext/inside.php (par box r 2368, b 2906). An independent 1881 typeset rendering of ad 1's signs, not yet read by eye (no vision in GAPS172). Item 1465 (24 May 1865, sibling clear ad to the same 'T.') is on the next page, not fetched."
+  }
+ ],
+ "requests": "4 GET requests to scienceblogs.de, 2s apart, browser User-Agent (site requires it); all HTTP 200; no retries needed"
 }
