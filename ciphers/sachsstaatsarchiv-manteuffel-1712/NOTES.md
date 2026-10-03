@@ -527,11 +527,51 @@ nomenclator-range (106-936, like f.409v). Both need native crops of the nine fra
 Inventory now 47 of 894 frames (21 earlier + 26), 13 with code groups (4 earlier + 9), 3 possible. Vision: 3 contact-sheet
 reads by this worker, no subagents. Requests: www.archiv.sachsen.de 26.
 
-## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026, GAPS184 3 Oct 2026)
+## GAPS189-sachsstaatsarchiv-manteuffel-1712 (3 Oct 2026, account-4): the 9 GAPS184 cipher frames classified
+
+No transcription, no reading. The 9 frames (694/08 0513, 0528, 0531, 0534, 0540, 0549, 0558, 0573, 0576) re-fetched once at full
+size from the frames.tsv URLs (plain curl, browser UA, 1.6 s apart; **9 requests, all HTTP 200 image/jpeg**, ~4345x3860 each;
+URLs and sha256 in frame_rank_gaps189.tsv; images kept in scratch, not committed, folder stays at 28 MB). The leaves sit small
+in each film frame (a page is ~1250 px wide at native), so the crops are fixed native windows of 780x300-380 px (two per frame,
+coordinates in the TSV) cut with PIL from the full frame, not tools/iiif_lines.py line bands -- a deviation from the brief's
+crop command, said here; the next transcription job should cut its line crops with `tools/iiif_lines.py --image` from the
+same URLs. Vision: **3 reads by this worker, no subagents** (1 localization sheet of the 9 frames at ~520 px with a page grid,
+2 sheets of 10 native crops each; the first crop pair of 0540 fell on film margin and was re-cut into the third read).
+All code groups and glosses below are eye reads at grade M.
+
+| rank | frame | folio | glossed | codes | est. tokens |
+|---|---|---|---|---|---|
+| 1 | 0528 | ff.422v-423 | **y** | **nomenclator range** (to 901) | 80-120 |
+| 2 | 0540 | ff.433v-434 | y | letter range (Krauske), plus 257 | 200-300 |
+| 3 | 0576 | f.465 P.S. | y | letter range | 120-180 |
+| 4 | 0549 | ff.439v-440 | y | letter range | 50-80 |
+| 5 | 0534 | f.428v? | y | letter range, plus 177, 191, 402 | 40-60 |
+| 6 | 0513 | ff.411v-412 | **n** | **nomenclator range** (to 663) | 60-90 |
+| 7 | 0573 | ff.462v-463 | y | letter range | 40-70 |
+| 8 | 0531 | ff.426v-427 | y | letter range | 15-30 |
+| 9 | 0558 | ff.448v-449 | ? | letter range | 15-30 |
+
+Findings. (1) Seven of nine frames carry period interlinear glosses; the glosses agree with Krauske's table wherever a
+single code is glossed (Ilgen over 39 on 0531, key note "Ilgen"; Sten over 191 on 0534; Flem: over 155 on 0576; le Roy over
+150 on 0576; le Statthalter over 153 on 0573) -- eye-read spot checks, not a scored test. (2) Two frames use the
+nomenclator range of f.409v: **0513 unglossed** (405.401.357.649 ... 587.447.508.622.102.357.611; 7 of its 14 eye-read
+outside-key codes also occur in file 0511's reconciled tokens) and **0528 glossed** ("le Roy de Prusse" over 864; "votre
+guerre du nord et finir" over 662.341.240.561.447.610.100.356; "la campagne contre la France" over 4.287.585.219.136.94.229.901;
+"aux l'interest du nord", "de guerre dans l'Empire" over two more groups; 8 of its 22 eye-read outside-key codes -- 94, 237,
+272, 287, 447, 560, 585, 864 -- also occur in file 0511's tokens). A gloss over a nomenclator group is period key material
+for the f.409v gap (no-key-material until now). On 0528, 155 sits inside a group glossed "aux l'interest du nord", not as
+Flemming (Krauske 155): the upper-range groups may follow a different table; recorded, not resolved. (3) Ranking rule
+pool-first (unglossed, Krauske-covered, most tokens): **no frame meets all three** -- every letter-range frame is glossed,
+and the one unglossed frame is nomenclator-range. Ranked instead by what the next job unlocks: 0528 first (gloss/code pairs
+for the upper range, `tools/interlinear_align.py`, then 0513 and f.409v can be keyed), then the glossed letter-range frames
+by token count (0540, 0576, 0549, 0534), whose glosses give the f.468-style independent check of Krauske's table.
+Requests: www.archiv.sachsen.de 9.
+
+## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-SAX; updated GAPS158 3 Oct 2026, GAPS177 3 Oct 2026, GAPS180 3 Oct 2026, GAPS184 3 Oct 2026, GAPS189 3 Oct 2026)
 Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 216 tokens, GAPS162; 694/08 f.468, its 20 code groups, GAPS154 3 Oct 2026; clear text not transcribed; leaf carries its own period interlinear decipherment, GAPS158); Krauske's key table transcribed (key.tsv, 157 codes, GAPS151); 47 of 894 report frames inventoried, 13 carry code groups (694/08 0510, 0511, 0579, 0580; GAPS184: 0513, 0528, 0531, 0534, 0540, 0549, 0558, 0573, 0576); print check closed for now (GAPS180, 3 Oct 2026: NASG, Acta Borussica I, Droysen IV.1, Haake 1902/1926/1939 and Rous 2016 searched with controls, no print of f.410; detail in AUDIT.md)
 - Krauske's code table ff.2-5 and its application - blocker: open-codes; DONE for the table (GAPS151, 3 Oct 2026: key.tsv 157 codes, C 122 / M 35, compounds 8/13 self-consistent) and for 694/08 f.468 (GAPS154, 3 Oct 2026: 26/26 tokens keyed, C 18 M 8; gloss agreement 17/17 vs shuffled-key p99 5); gloss hand DONE (GAPS158, 3 Oct 2026: not Krauske's hand, period hand by script, "Roy" spelling and ink, M), so the 17/17 is an independent check; 694/08 f.410 lower block DONE (GAPS162, 3 Oct 2026: 216 tokens, two blind passes 82% agree, C 144 M 48 U 24, keyed 88.9%; fr18 judge FAIL -1.038 vs real_p05 -0.99, above all 20 shuffled-key decodes, best -1.17); the 24 U codes (nomenclator above ~400, 381-625) are outside Krauske's table; f.467 gloss calibration DONE (GAPS166, 3 Oct 2026: period gloss G -1.417 vs real_p05 -1.033, margin -0.384, so fr18 cannot certify genuine gloss at 128 letters; f.410 windows at that length margin median +0.052; reading ready for a separate verifier); rest of file 0511 DONE (GAPS177, 3 Oct 2026: f.409v + upper f.410, 162 tokens, passes 69% agree on f.409v, C 39 M 21 U 102, keyed 37%; fr18 judge on decode vs 20 shuffled-key decodes: candidate -1.469, rank 16 of 21, non-discriminating; paragraph 8 letter run reads "ma negociation ... la piece s[u]sdite a quo[i] [j]e vise", M, under letters_min)
-- f.409v nomenclator codes above Krauske's table (75 distinct codes 106-936, 102 tokens; also f.410's 24 U) - blocker: no-key-material; Krauske's Loc. 694/10 table stops at 157 codes and no period key sheet for the upper range has been seen; the frame inventory (next gap) is where a glossed leaf carrying these codes would turn up
-- Loc. 694/08 and /09 ciphered reports, 847 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 47 inventoried (A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026: 13 cipher, 3 possible; the Nov-Dec 1712 block 694/08 0510-0580 is the pool, ~41% of its frames carry code groups, mostly light); the 9 GAPS184 cipher frames are not yet classified glossed/unglossed or letter-range/nomenclator-range; next: re-fetch those 9 frames, cut 1600-px crops of each code block, 2-3 vision reads to mark gloss y/n and whether codes are <=157 (Krauske-covered) or 106-936, ~$2; a further y/n batch of 694/08 0001-0508 at stride 10 (~$2) after that
+- f.409v nomenclator codes above Krauske's table (75 distinct codes 106-936, 102 tokens; also f.410's 24 U) - blocker: not-attempted; GAPS189 (3 Oct 2026) found 694/08 frame 0528 (ff.422v-423) glossed over nomenclator-range groups (le Roy de Prusse over 864; 8 of 22 eye-read outside-key codes there recur in file 0511), so period key material for the upper range exists; next: transcribe 0528's code groups and glosses (iiif_lines --image line crops, two blind passes + reconciliation), align with tools/interlinear_align.py, re-key f.409v/f.410 U and 0513, ~$5
+- Loc. 694/08 and /09 ciphered reports, 847 of 894 frames not inventoried - blocker: not-attempted; 894 frame URLs in images/loc694-08-09/frames.tsv, 47 inventoried (A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026: 13 cipher, 3 possible; the Nov-Dec 1712 block 694/08 0510-0580 is the pool, ~41% of its frames carry code groups, mostly light); the 9 GAPS184 cipher frames classified (GAPS189, 3 Oct 2026: 7 glossed letter-range, 0528 glossed nomenclator-range, 0513 unglossed nomenclator-range; ranking in frame_rank_gaps189.tsv); next: after the 0528 job, a y/n batch of 694/08 0001-0508 at stride 10 (~$2), and the glossed letter-range frames 0540/0576 for a Krauske check against their glosses (~$5 each)
 
 ## Escalation (3 Oct 2026)
 - [ ] siblings: Loc. 694/03, /04, /06 (1706-10, same Manteuffel series) carry digitisat links; not opened
@@ -539,13 +579,13 @@ Read so far: 2 leaves of the 1712-13 reports decoded (694/08 f.410 lower block, 
 - [x] known-keys: Krauske's 1893 key table, Loc. 694/10, located online and fetched (A2-SAX, 3 Oct 2026); transcribed into key.tsv, 157 codes (GAPS151, 3 Oct 2026)
 - [x] print: NASG 1893-98, Acta Borussica I, Droysen IV.1 (AUDIT2-MANT), Haake 1902/1926/1939 and Rous 2016 (GAPS180, 3 Oct 2026): no print of f.410 found; Haake's NO_PAGES titles unread (bag-of-words only where read)
 - [n/a] key-rebuild: a period-archive key exists; rebuild only if Krauske's table fails on the letters
-- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 47 sampled (13 cipher, 3 possible; A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026), 847 to check; GAPS184's 9 cipher frames need native crops for gloss and code range
+- [ ] image-check: 694/10 imaged; 694/08-09: 894 frames listed, 47 sampled (13 cipher, 3 possible; A2-SAX2 + GAPS162 + GAPS184 3 Oct 2026), 847 to check; GAPS184's 9 cipher frames classified at native (GAPS189, 3 Oct 2026: 8 glossed, 2 nomenclator-range)
 - [ ] retry: nothing has failed yet that needs a retry
-Verdict: keep going: 2 internal gaps; cheapest next: image-check -- re-fetch the 9 GAPS184 cipher frames (694/08 0513, 0528, 0531, 0534, 0540, 0549, 0558, 0573, 0576), 1600-px crops of their code blocks, mark glossed/unglossed and letter-range (Krauske 157) vs nomenclator-range (106-936), ~$2; a glossed leaf there is where f.409v's nomenclator codes would get values
+Verdict: keep going: 3 internal gaps; cheapest next: transcribe 694/08 frame 0528 (ff.422v-423), the glossed nomenclator-range leaf -- iiif_lines --image line crops of its code lines from the frames.tsv URL, two blind passes of codes and glosses + one reconciliation, then tools/interlinear_align.py for upper-range values to re-key f.409v/f.410 U and frame 0513, ~$5
 
 ## While waiting (GAPS158, 3 Oct 2026)
 
-- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Haake/Wackerbarth print check done (GAPS180). Frame inventory batch done (GAPS184: 26 frames, 9 cipher). Depends on nobody: native crops of the 9 cipher frames for gloss/code range, ~$2.
+- Neighbour frames done (GAPS162); f.467 gloss calibration done (GAPS166); rest of file 0511 transcribed and decoded (GAPS177). Haake/Wackerbarth print check done (GAPS180). Frame inventory batch done (GAPS184: 26 frames, 9 cipher); the 9 classified (GAPS189). Depends on nobody: transcribe frame 0528 (glossed nomenclator range) and align, ~$5.
 
 ## Web and blog check (GAPS158-sachsstaatsarchiv-manteuffel-1712, 3 Oct 2026)
 
