@@ -6182,3 +6182,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 01:41 | A2-FLO2 (account 2, LANE-A2PUSH) | claim: florence-dieci-responsive -- Verdict cheapest next step (c.111/c.127 pair check, transcribe+align); cap USD 5, box ends 02:35 UTC
 2026-10-03 01:41 | A2-RAA7 (account 2, LANE-A2PUSH) | claim: na-raad-azie-1800 -- Verdict cheapest next step (crib vs cell stream, control first); cap USD 2, box ends 02:16 UTC
 2026-10-03 01:41 | A2-SAX2 (account 2, LANE-A2PUSH) | claim: sachsstaatsarchiv-manteuffel-1712 -- Verdict cheapest next step (fetch Loc. 694/08 + /09 frames, per-frame inventory); cap USD 3, box ends 02:16 UTC
+2026-10-03 01:41 | A2-COL10 (account 2, LANE-A2PUSH) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (canvas 33 numerals+gloss from line crops, key_f23 C test vs length-matched f23-window control); cap USD 3, box ends 02:27 UTC
