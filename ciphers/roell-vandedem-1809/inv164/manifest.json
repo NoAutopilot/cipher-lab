@@ -1,0 +1,196 @@
+{
+ "job": "READ2-ROELL (account 2 worker, for LANE-READ2), 3 Oct 2026 23:38-23:5x UTC",
+ "natives": [
+  {
+   "scan": 1,
+   "label": "NL-HaNA_1.02.20_164_0001.jpg",
+   "url": "https://service.archief.nl/api/file/v1/default/f1149d00-f7cd-498b-b37c-24d424bb6dd5",
+   "fetched_sha1": "172f18204fb730cf30ace01ee33745a5819c9818",
+   "size_px": "5000x3904",
+   "bytes_served": 1878731,
+   "kept": "no (re-fetch from url)"
+  },
+  {
+   "scan": 7,
+   "label": "NL-HaNA_1.02.20_164_0007.jpg",
+   "url": "https://service.archief.nl/api/file/v1/default/e4765713-aa7b-4825-b6dd-880a7fcc80f6",
+   "fetched_sha1": "ecf48fff67b2ffd881e283c06c4ba4801d2ea01b",
+   "size_px": "5000x3916",
+   "bytes_served": 1883763,
+   "kept": "no (re-fetch from url)"
+  },
+  {
+   "scan": 3,
+   "label": "NL-HaNA_1.02.20_164_0003.jpg",
+   "url": "https://service.archief.nl/api/file/v1/default/c60a72ef-0344-44bf-a4c6-8aff46f8e490",
+   "fetched_sha1": "971cea90569e08a1f7445d53f00fef59444df9bd",
+   "size_px": "5000x3901",
+   "bytes_served": 1891223,
+   "kept": "no (re-fetch from url)"
+  }
+ ],
+ "note": "scan 7 is a second photograph of scan 1 (identical entries, checked header and bottom block); scans 2,4,6,8 blank (1000 px IIIF thumbnails, not kept); scan 5 = codes 3001-~3500 + years 1776-1799 + a Dutch note naming a cipher of 1776 (not read). Codes 1001-2000 are on no scan 1-8.",
+ "crop_command": "python3 tools/iiif_lines.py --image <native scan> --region 650,60,4350,3700 --centres 455,1365,2275,3185 --max-width 2400 --overlap 150 --out <scratchpad>/crops --prefix s00N --debug",
+ "crops": [
+  {
+   "file": "inv164/crops/s001_L01_s1.jpg",
+   "box_native": [
+    650,
+    60,
+    3050,
+    970
+   ],
+   "sha1": "1811e22667bdb66c1391548d252258e051fba4b4"
+  },
+  {
+   "file": "inv164/crops/s001_L01_s2.jpg",
+   "box_native": [
+    2600,
+    60,
+    5000,
+    970
+   ],
+   "sha1": "763b1346bb064716620f6c6ed83fb5c19cbd33cb"
+  },
+  {
+   "file": "inv164/crops/s001_L02_s1.jpg",
+   "box_native": [
+    650,
+    970,
+    3050,
+    1880
+   ],
+   "sha1": "a03d61846393253ef0fb30beaf900bc5432951e1"
+  },
+  {
+   "file": "inv164/crops/s001_L02_s2.jpg",
+   "box_native": [
+    2600,
+    970,
+    5000,
+    1880
+   ],
+   "sha1": "38a75f92e49adbeba41263ef5ccc07a9a930cd36"
+  },
+  {
+   "file": "inv164/crops/s001_L03_s1.jpg",
+   "box_native": [
+    650,
+    1880,
+    3050,
+    2790
+   ],
+   "sha1": "0349b0f09167ace2197d449e6d6e03a1ac8c4833"
+  },
+  {
+   "file": "inv164/crops/s001_L03_s2.jpg",
+   "box_native": [
+    2600,
+    1880,
+    5000,
+    2790
+   ],
+   "sha1": "57b93a3a4e653a8d28319f9f99a4b53dfb9fb98d"
+  },
+  {
+   "file": "inv164/crops/s001_L04_s1.jpg",
+   "box_native": [
+    650,
+    2790,
+    3050,
+    3700
+   ],
+   "sha1": "702be6c4a52d3a3586bdcd42dece2725e7fca732"
+  },
+  {
+   "file": "inv164/crops/s001_L04_s2.jpg",
+   "box_native": [
+    2600,
+    2790,
+    5000,
+    3700
+   ],
+   "sha1": "7a2b471767d628ecddafc71cc78f0011b9837a3f"
+  },
+  {
+   "file": "inv164/crops/s003_L01_s1.jpg",
+   "box_native": [
+    650,
+    60,
+    3050,
+    970
+   ],
+   "sha1": "6c48e3d791b247918137fdc059c2af5869d24f9e"
+  },
+  {
+   "file": "inv164/crops/s003_L01_s2.jpg",
+   "box_native": [
+    2600,
+    60,
+    5000,
+    970
+   ],
+   "sha1": "f023606b34b9b7f5a48e23e151e730c132e7d1c3"
+  },
+  {
+   "file": "inv164/crops/s003_L02_s1.jpg",
+   "box_native": [
+    650,
+    970,
+    3050,
+    1880
+   ],
+   "sha1": "d45ac9e638491509eaad1c86bce19cfcb6d649b9"
+  },
+  {
+   "file": "inv164/crops/s003_L02_s2.jpg",
+   "box_native": [
+    2600,
+    970,
+    5000,
+    1880
+   ],
+   "sha1": "330fe22d056253e5878cfc0e35d656e0f46da44b"
+  },
+  {
+   "file": "inv164/crops/s003_L03_s1.jpg",
+   "box_native": [
+    650,
+    1880,
+    3050,
+    2790
+   ],
+   "sha1": "9c8633e86435d10a119260ffe51d10aa160138be"
+  },
+  {
+   "file": "inv164/crops/s003_L03_s2.jpg",
+   "box_native": [
+    2600,
+    1880,
+    5000,
+    2790
+   ],
+   "sha1": "104aeb9951f882b74bd8a28c3fc3c2dbe9948ee0"
+  },
+  {
+   "file": "inv164/crops/s003_L04_s1.jpg",
+   "box_native": [
+    650,
+    2790,
+    3050,
+    3700
+   ],
+   "sha1": "ab86029bbd7b141c881640a833aca163e59c9e5a"
+  },
+  {
+   "file": "inv164/crops/s003_L04_s2.jpg",
+   "box_native": [
+    2600,
+    2790,
+    5000,
+    3700
+   ],
+   "sha1": "9a6c79b9bf7012b03a91649ee48531919a7184fa"
+  }
+ ]
+}

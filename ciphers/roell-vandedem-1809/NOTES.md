@@ -268,3 +268,40 @@ WebSearch 1; github.com 2 shallow clones (shared with the other targets of this 
 
 ## Next step (READ2-RELABEL, 3 Oct 2026)
 What is on disk is the candidate key's images, not the letter's: images/ holds 11 scans of NA 1.02.20 inv. 164 (the 1747 key bundle, 78 scans, availability DIGITALIZED) at 1000 px, with every scan's native URL in images/na_1.02.20_164_viewer.json, and decode_transcription/ holds the letter's own groups (R1469, R1470; 2,585 groups) from the transcription, not from page images. The next step is the LIKELY-7 priced crib-position test of the large inv. 164 table: native region crops of the column bases of scans 1, 3, 5 and 7 (5000x3904, 4 requests), about 12 vision calls on crops reading the numbers of ~20 French function words, then their frequency in the letter against 20 shuffled group lists; ~USD 8. A hit licenses the full table transcription (~USD 35-40); a miss closes inv. 164 with a control-backed negative. Independent of that, ~USD 1: grep the NA 2.01.08 finding aid for the ministry's 1808-09 code. Still outstanding for the other half: the recipient-side file NA 2.21.006.46 inv. 73A (Testa to Van Dedem, 1809, 2 items) shows no availability field online, so a scan request to the Nationaal Archief is a speculative lead (GF-A2-13 premise check (d)); nothing new is filed here, and the target stays open.
+
+## READ2-ROELL (3 Oct 2026)
+
+Worker READ2-ROELL (account 2, for LANE-READ2), brief `.claude/briefs/runs/2026-10-03-acct2-read2-roell.md`, 23:37-23:5x UTC.
+Pre-registration committed before any image read: `inv164/PREREG.md` (commit 72939949). Status unchanged: `open`.
+
+**Route.** Natives of scans 1, 7, 3 from their `default` URLs on service.archief.nl (one at a time, 1.6 s apart, descriptive
+UA; served 5000x39xx JPEGs of ~1.9 MB; not kept, sha1 in `inv164/manifest.json`), 1000 px IIIF of scans 2, 4, 5, 6, 7, 8 to
+locate the code ranges (not kept). Crops: `python3 tools/iiif_lines.py --image <native> --region 650,60,4350,3700 --centres
+455,1365,2275,3185 --max-width 2400 --overlap 150 --out <scratchpad>/crops --prefix s00N --debug` (the row-profile detector
+mis-reads a ruled table, so band centres by eye); 16 crops of 2400x910 committed in `inv164/crops/` (6.3 MB).
+
+**What the table is (corrects LIKELY-7's "one-part, 1-~3000").** Scan 1 = codes 1-1000 (a-g); scan 7 is a second
+photograph of scan 1; scans 2, 4, 6, 8 are blank; scan 3 = 2001-3000 (p-z); scan 5 = 3001-~3500 (w-z, names, the years
+1776-1799) plus a Dutch note that names a cipher of 1776 (not read in full). Codes 1001-2000 (g-p) are on none of scans 1-8.
+Layout: ten [word | number] blocks across the sheet, the number to the RIGHT of its word (the leftmost cell is a word and
+the rightmost a number; blocks 1-5 hold x001-x500 and 6-10 x501-x1000 as two row-wise alphabetical streams). Each block's
+last rows (x89-x00) hold a sub-block of short entries (a, de, en, et, il, ne, se, la, le, les, que ...). Common words carry
+many homophones ("de" 14 cells, "en" 11 on the two sheets read), so the table is the same broad design as the letter (no group above 1%).
+One Sonnet reader of band 1 took the number as left of its word; I checked every function-word cell against the crop.
+
+**Test (PREREG statistic S1; `python3 inv164/score.py`, output in `inv164/score_out.txt`).** 80 codes for 18 of the 20 words
+(`inv164/function_codes.tsv`; pas and par lie in the missing 1001-2000 sheet, and il/la/le/les/ne appear only in the
+bottom sub-blocks there). Letter frequency of those 80 codes: **S1 = 76 of 2,585 groups (2.94%)**, S2 = 1. Control, 1,000
+random sets of 80 codes from the read ranges (1-1000, 2001-3000): **mean 67.4, p95 98, p99 114**; 278/1000 sets score at
+least the target. Control from 1-3000: mean 69.0, p99 117. Number-left sensitivity (all codes -100): S1 = 81 for 69 codes,
+also at control level. If this table keyed the letter, 18 French function words would fill about a quarter of a French text
+(several hundred groups); they fill 2.9%, at the random level. **Verdict: FAIL -- inv. 164 does not key this letter
+(control-backed),** conditional on Bourdeau's parse of the DECODE transcription (rule 2; the letter's own images were not
+viewed). Grade counts: H 0, C 0, S 0, M 0, I 0 (no reading). The full-table transcription (~USD 35-40) is not licensed.
+
+**Requests:** service.archief.nl 9 (3 natives, 6 IIIF 1000 px), all HTTP 200; no other host. Subagent calls: 8 Sonnet
+readers (one per band of 2 crops); the worker's own check of the function-word rows (vision on the crops).
+
+**Next step (one line, for the lane):** the ministry side for the 1808-09 code: grep the NA 2.01.08 EAD for
+cijfer/chiffre/Croiset (~USD 1, LIKELY-7); the scan 5 note on the 1776 cipher dates the inv. 164 table and is worth
+one read for the design prior (KEY-DESIGN), not for this letter.

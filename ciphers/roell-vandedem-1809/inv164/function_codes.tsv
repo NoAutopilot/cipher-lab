@@ -56,3 +56,28 @@ pour	2305	H	3	block4 row5	sub-s3b1 + worker
 se	2055	H	3	block1 row55	sub-s3b3 + worker
 se	2155	H	3	block2 row55	sub-s3b3 + worker
 se	2255	H	3	block3 row55	sub-s3b3 + worker
+sur	2084	H	3	block1 row84	sub-s3b4 + worker
+sur	2483	H	3	block5 row83	sub-s3b4 + worker
+et	2097	H	3	block1 bottom sub	sub-s3b4 + worker
+et	2091	H	3	block1 bottom main	sub-s3b4 + worker
+ne	2093	H	3	block1 bottom main	sub-s3b4 + worker
+il	2198	H	3	block2 bottom sub	sub-s3b4 + worker
+du	2190	H	3	block2 bottom main (written 2190)	sub-s3b4 + worker
+a	2295	H	3	block3 bottom sub (written 2295)	sub-s3b4 + worker
+a	2289	H	3	block3 bottom main	sub-s3b4 + worker
+de	2296	H	3	block3 bottom sub	sub-s3b4 + worker
+de	2290	H	3	block3 bottom main (written 2290)	sub-s3b4 + worker
+est	2297	H	3	block3 bottom sub	sub-s3b4 + worker
+a	2395	H	3	block4 bottom sub (written 2395)	sub-s3b4 + worker
+de	2396	H	3	block4 bottom sub	sub-s3b4 + worker
+de	2390	H	3	block4 bottom main (written 2390)	sub-s3b4 + worker
+la	2398	H	3	block4 bottom sub	sub-s3b4 + worker
+le	2392	H	3	block4 bottom main	sub-s3b4 + worker
+se	2394	H	3	block4 bottom main	sub-s3b4 + worker
+les	2498	H	3	block5 bottom sub	sub-s3b4 + worker
+en	2690	H	3	block7 bottom main (written 2690)	sub-s3b4 + worker
+en	2796	H	3	block8 bottom sub	sub-s3b4 + worker
+en	2790	H	3	block8 bottom main (written 2790)	sub-s3b4 + worker
+en	2896	H	3	block9 bottom sub	sub-s3b4 + worker
+que	2793	H	3	block8 bottom main	sub-s3b4 + worker
+que	2899	H	3	block9 bottom sub	sub-s3b4 + worker
