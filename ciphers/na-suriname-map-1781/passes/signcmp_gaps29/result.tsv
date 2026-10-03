@@ -1,0 +1,69 @@
+query	line	best	best_conf	second	second_conf	located	note
+#1	L01	R3	0.9	R13	0.05	sure	small c
+#2	L02	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#3	L02	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#4	L02	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#5	L02	R3	0.9	R13	0.05	sure	small c
+#6	L02	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#7	L03	R3	0.9	R13	0.05	sure	small c
+#8	L03	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#9	L03	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#10	L05	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#11	L05	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#12	L05	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#13	L05	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#14	L05	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#15	L05	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#16	L05	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#17	L06	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#18	L06	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#19	L06	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#20	L08	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#21	L08	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#22	L08	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#23	L08	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#24	L08	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#25	L08	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#26	L09	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#27	L09	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#28	L09	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#29	L10	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#30	L10	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#31	L10	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#32	L10	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#33	L10	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#34	L10	R3	0.9	R13	0.05	sure	small c
+#35	L11	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#36	L11	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#37	L11	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#38	L11	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#39	L11	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#40	L11	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#41	L12	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#42	L12	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#43	L12	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#44	L12	R3	0.9	R13	0.05	sure	small c
+#45	L14	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#46	L14	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#47	L14	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#48	L14	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#49	L14	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#50	L14	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#51	L14	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#52	L15	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#53	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#54	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#55	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#56	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#57	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#58	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#59	L15	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#60	L15	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#61	L16	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#62	L18	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#63	L18	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#64	L18	R12	0.55	R18	0.35	sure	ij with two dots, descender
+#65	L18	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#66	L18	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#67	L18	R7	0.7	R8	0.2	sure	g with descender curling left (open tail)
+#68	L19	R12	0.55	R18	0.35	sure	ij with two dots, descender
