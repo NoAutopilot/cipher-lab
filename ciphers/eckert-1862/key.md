@@ -90,8 +90,8 @@ value in date and stay M.
 | Alden | Halleck | C | 05 Feb-10 Mar 1862 | OR 7 p.584, 591, 624, 628; ledger addressee "St Louis" |
 | Alvord | Buell | C | 05 Feb-02 Mar 1862 | OR 7 p.593, 609, 626, 646 |
 | Andes | McClellan | C | 01 Feb-04 Jul 1862 | ledger p.[9] deletion; OR 7 passim |
-| Anthon | Banks | I | 06 Feb 1862 | ledger p.[11]: plain telegram to Banks at Frederick repeats the coded one to "Anthon" |
-| Arno | Rosecrans | M | undated | received ledger mssEC 01 p.14: Wheeling telegram signed "Arthur"; sent ledger uses "Arno" |
+| Anthon | Rosecrans | C | 06 Feb-15 Feb 1862 | ledger p.[10], p.[12] (4965, 4967; GAPS161): OR 51 pt1 [6 Feb] prints the page [12] entry to "General W. S. Rosecrans, Wheeling, Va." and the page [10] "Have teleghd Anthon & Arno" as "Have telegraphed Rosecrans and Banks"; also 4961, 4969, 4982 (GAPS153). The plain telegram to Banks on page [11] is a parallel message (different wording), not a twin, so the earlier Anthon = Banks inference is withdrawn |
+| Arno | Banks | C | 06 Feb-16 Jun 1862 | ledger p.[10] (4965; GAPS161): "Have teleghd Anthon & Arno of your movement" printed OR 51 pt1 [6 Feb] "Have telegraphed Rosecrans and Banks of your movements"; the plain telegram to Banks at Frederick the same day stands on page [11]. Replaces the undated M inference Arno = Rosecrans (received ledger mssEC 01 p.14, Wheeling telegram signed "Arthur", a different word) |
 | Bagdad | Cullum | I | 20 Feb 1862 | ledger p.[49] coded and p.[51] plain versions of the same order |
 | Bremen | Grant | C | 07 Feb-16 Feb 1862 | OR 7 p.591, 624 |
 | Camden | Thomas | C | 16 Feb-21 Feb 1862 | OR 7 p.624, 646 |
@@ -125,9 +125,9 @@ value in date and stay M.
 | Sermon | Bowling Green | C | 05 Feb-21 Feb 1862 | OR 7 p.584, 624, 626 |
 | Shylock | Nashville | C | 07 Feb-21 Feb 1862 | OR 7 p.591, 593, 624, 626, 646 |
 | Torrent | Memphis | C | 07 Feb-21 Feb 1862 | OR 7 p.591, 593, 646 |
-| Twinkle | Romney | I | 01 Feb-03 Mar 1862 | ledger p.[11]: plain telegram to Banks "Lander moving on Romney" repeats coded "Lander is moving on Twinkle" |
-| Vesper | Cumberland (Md.) | M | 01 Feb-05 Feb 1862 | ledger p.[5], [6] (Lander's base) |
-| Virtue | Frederick | I | 01 Feb-07 Feb 1862 | ledger p.[6], [14] (Banks's headquarters) |
+| Twinkle | Romney | C | 01 Feb-03 Mar 1862 | ledger p.[12] (4967; GAPS161): "Enemy have run from Twinkle" printed OR 51 pt1 [6 Feb] "Enemy have men from Romney"; page [10] coded "Lander is moving on Twinkle" parallels the page [11] plain "Lander moving on Romney" |
+| Vesper | New Creek | C | 01 Feb-06 Feb 1862 | ledger p.[5], p.[6], p.[12] (4960, 4961, 4967): printed New Creek in OR 51 pt1 (GAPS153 alignment; 4967 "from Vesper" = "from New Creek", 6 Feb, GAPS161); replaces the M inference Cumberland (Md.) |
+| Virtue | Grafton | C | 01 Feb-15 Feb 1862 | ledger p.[6], p.[14] (4961, 4969) and 4973, 4982: printed Grafton in OR 51 pt1 (GAPS153 alignment); replaces the I inference Frederick (Banks's headquarters), which had no witness: Anthon on these pages is Rosecrans, whose department reached Grafton (GAPS161) |
 | Vomit | Paw Paw | M | 13 Feb-15 Feb 1862 | ledger p.[28] |
 | wag | batteries | C | 06 Feb-13 Feb 1862 | OR 7 p.608 |
 | wayworn | army | I | 07 Feb-03 Jul 1862 | ledger p.[17], [26], [42] |
@@ -171,13 +171,13 @@ value in date and stay M.
 | Dorothy | (time word, morning) | M | 17 Feb 1862 | ledger: 6, 16, 17 Feb, no hour given |
 | Hannah | (time word) | M | 21 Feb 1862 | ledger: 21 Feb, OR gives 9.30 PM for the Buell telegram |
 | Martha | (time word, about 10 PM) | M | 15 Feb 1862 | ledger: 15 Feb between the 8 PM and 11 PM entries |
-| Anthon | McDowell | C | 06 Apr-17 Jul 1862 | OR 11 pt3 p.117, 202, 326 (ledger 5058, 5069, 5110; GAPS118); the Feb value is Banks (p.[11]); dated split GAPS127 |
+| Anthon | McDowell | C | 06 Apr-17 Jul 1862 | OR 11 pt3 p.117, 202, 326 (ledger 5058, 5069, 5110; GAPS118); the Feb value is Rosecrans (OR 51 pt1, GAPS161); dated split GAPS127 |
 | Alden | Banks | C | 25 May-20 Jul 1862 | OR 11 pt3 p.326, OR 12 pt3 p.486-487 (ledger 5110, 5112; GAPS118, GAPS122); the Feb value is Halleck; dated split GAPS127 |
 | Arno | Banks | M | 09 Jun-16 Jun 1862 | OR 12 pt1 p.659 (ledger 5079-5080, one telegram, Lincoln to Fremont 12-13 June 1862; GAPS122); dated split GAPS127 |
 | Arno | Halleck | C | 03 Jul-20 Jul 1862 | OR 11 pt3 p.291, 294, OR 12 pt3 p.487 (ledger 5096, 5099, 5112; GAPS118, GAPS122); dated split GAPS127 |
 | Lather | James River | C | 26 Jun-21 Jul 1862 | OR 11 pt3 p.269, 270, 326, OR 12 pt3 p.476, 491 (ledger 5091, 5093, 5109, 5110, 5116; GAPS118, GAPS122); the Feb value is Michigan; dated split GAPS127 |
 | Camden | Banks | C | 02 May-04 Jul 1862 | OR 12 pt3 p.125, 453 (ledger 5060, 5097; GAPS122); the Feb value is Thomas; dated split GAPS127 |
-| Virtue | artillery | M | 04 Jul-11 Jul 1862 | OR 12 pt3 p.453-454 (ledger 5099-5100, one telegram; GAPS122); the Feb value is Frederick; dated split GAPS127 |
+| Virtue | artillery | M | 04 Jul-11 Jul 1862 | OR 12 pt3 p.453-454 (ledger 5099-5100, one telegram; GAPS122); the Feb value is Grafton (GAPS161); dated split GAPS127 |
 | Palate | bridges | C | 06 Apr-21 Jul 1862 | OR 11 pt3 p.117, OR 12 pt3 p.491 (ledger 5058, 5116-5117, two telegrams; GAPS118, GAPS122); the Feb value is Cairo; dated split GAPS127 |
 | wedding | battle | M | 09 Jun-16 Jun 1862 | OR 12 pt1 p.34, 659 (ledger 5079, one telegram, Lincoln to Fremont 12-13 June 1862; GAPS122); overlaps transportation (McClellan's line, same month): a true conflict, read M |
 | Vulcan | headquarters | M | 27 Mar 1862 | OR 12 pt3 p.23 (ledger 5057, one telegram, 27 Mar 1862; GAPS122 held); dated split GAPS127 |
