@@ -161,6 +161,10 @@ Waits on: the TNA page copy of SP 54/25/5 and 8B (REQUEST.md, ASKS row 57).
 
 - S: TNA Discovery item-level fetch of SP 54/25/5's full description (tools/discovery_items.py "SP 54" "SP 54/25") to see whether
   the three letters include Murray's "J. Barclay"/"Barclay" notes -- if so, Murray's p. 136 summary is a crib -- no login, no person.
+  Done 3 Oct 2026 (GAPS165): Barclay letter is SP 54/25/8C, a separate item.
+- Refreshed 3 Oct 2026 (GAPS170): one page-image check of Browne vol. II pp. 405-406 (archive.org historyofhighlan02brow, public
+  full view, one leaf image, ~$1 with one vision call) to confirm the 22 order-inferred rows of browne_feigned_names.tsv -- no login,
+  no person.
 
 Requests this pass (3 Oct 2026): archive.org 1 (Lyon vol. 1 djvu, HTTP 500; Murray's Memorials already on disk from this session's
 sp36 pass). WebSearch 4.
@@ -308,17 +312,42 @@ Script only, no vision, no subagents. Clock read 16:16 UTC 3 Oct 2026.
 Requests: discovery.nationalarchives.gov.uk (tool: 4 term queries), archive.org 3 (advancedsearch 1, Browne vol. II djvu 1,
 Memorials djvu 1). 0 vision calls.
 
+## GAPS170-sp54-maclean-1745 (3 Oct 2026, account-4): Blaikie's Itinerary grep and Browne's feigned-name list
+
+Script only, no vision, no subagents. Clock read 16:35 UTC 3 Oct 2026.
+
+1. **Blaikie, *Itinerary of Prince Charles Edward Stuart* (SHS 1897).** archive.org advancedsearch (3 copies); djvu text of
+   `itineraryofprinc00blai` (10,254 lines) fetched once and grepped by script. **Positive control:** terms the book must carry
+   are found -- Borrodale 46 lines, Glenfinnan 6, "Joined by John Murray of Broughton at Kinloch[moidart]" (line 1097), so the
+   OCR and the grep work. Counts: Sir Hector 0, Blaw 0, Burnet 0, Cleland 0, Barclay 1 (an SHS series list, the Urie
+   court-book's owner), cipher/cypher 1 ("a mere cypher", the Mayor of Carlisle), MacLean 14 (all the clan regiment, Drimnin and
+   Brolus, Oct 1745-Culloden; index "MacLean of Drimnin", "of Brolus", "MacLeans, the" -- no Sir Hector entry), Linlithgow 11
+   (the army's marches), Castlehill 5 (Edinburgh), "June 1745" 1 (Lochgarry's commission), "April 1745" 1 (the Hessians). The
+   book begins at the July 1745 landing, after the 5 June arrest, so its silence is expected. Not found in this book: any text,
+   clear copy or decipherment of SP 54/25/5, 8B or 8C. Search result for the log, not a novelty verdict (rule 10).
+2. **Browne vol. II feigned-name list (pp. 405-406)** parsed into `browne_feigned_names.tsv` (24 rows). The OCR prints the two
+   columns one after the other (24 names, then 24 meanings), so rows are paired by printed order; two rows are anchored by
+   independent prose: row 14 Watson/Walker = Drummond of Bochaldy (Browne's own note on the same page) and row 19 Barclay =
+   Murray of Broughton (Murray's Memorials pp. 101, 136). The other 22 pairings are inferred (I) until the page image is read.
+   Pairs that touch this target: Talmash = Prince Charles (row 2), Barclay = Murray of Broughton (19), Tait = Lord John Drummond
+   (16, whose regiment MacLean was recruiting for, per SP 54/25/5's description). The list does **not** contain "Burnet" (the
+   8B sender's alias) or "Cleland" (Sir Hector's alias in 8C), so it gives no direct mapping of a cipher name in SP 54/25/5 or 8B;
+   no reading, no token graded. It is the Sempil/Edgar circle's list of early 1745 (Stuart Papers), a different correspondence
+   from the Murray-Burnet set, kept as a crib list for when the TNA copy arrives.
+3. **REQUEST.md**: SP 54/25/8C and 8A added as a second-tier copy row (GAPS165's suggestion).
+
+Requests: archive.org 3 (advancedsearch 1, Itinerary djvu 1, Browne vol. II djvu 1 re-fetched). 0 vision calls.
+
 ## Remaining gaps (FT4-sp54-maclean-1745, 3 Oct 2026; updated FT4b, 3 Oct 2026)
-Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk). Print risk, Lyon in Mourning vols 1-3: all searched in full text, the last on 3 Oct 2026 (FT4b); none prints the seized letters. Done 3 Oct 2026 (GAPS165): print risk: Browne's *History of the Highlands* vol. ii appendix: its "J. Barclay" letter (pp. 476-478) is the early-1745 Stuart Papers letter, not the seized letters; no text of SP 54/25/5, 8B or 8C in the volume ; item-level description of SP 54/25/5: the Barclay letter is a separate item, SP 54/25/8C ("J Barclay to Cleland [Sir Hector MacLean]. Concerning a meeting in Linlithgow", no cipher in its description); the cipher letters are 8B (from Burnet); 8C and 8A are not in the copy order yet (suggestion above)
+Read so far: 0 of 2 items (no image or transcription of SP 54/25/5 or 8B on disk). Print risk, Lyon in Mourning vols 1-3: all searched in full text, the last on 3 Oct 2026 (FT4b); none prints the seized letters. Done 3 Oct 2026 (GAPS165): print risk: Browne's *History of the Highlands* vol. ii appendix: its "J. Barclay" letter (pp. 476-478) is the early-1745 Stuart Papers letter, not the seized letters; no text of SP 54/25/5, 8B or 8C in the volume ; item-level description of SP 54/25/5: the Barclay letter is a separate item, SP 54/25/8C ("J Barclay to Cleland [Sir Hector MacLean]. Concerning a meeting in Linlithgow", no cipher in its description); the cipher letters are 8B (from Burnet); 8C and 8A are not in the copy order yet (suggestion above). Done 3 Oct 2026 (GAPS170): print risk: Blaikie's *Itinerary* (SHS 1897) grepped in full text with a positive control (Borrodale 46, Glenfinnan 6, Murray joining at Kinlochmoidart found): Sir Hector 0, Blaw 0, Burnet 0, Cleland 0, no text of SP 54/25/5, 8B or 8C; Browne's feigned-name list parsed to browne_feigned_names.tsv (24 rows, 2 anchored), no Burnet or Cleland in it; 8C and 8A added to REQUEST.md as a second tier
 - SP 54/25/5 and 8B ciphertext - blocker: waiting-on ASKS row 57 (TNA page copy, REQUEST.md); not digitised on Discovery
-- print risk: Blaikie's *Itinerary of Prince Charles Edward Stuart* (SHS 1897) is unread - blocker: not-attempted; no session has fetched it yet; next: archive.org advancedsearch for it, grep its djvu for Maclean/Burnet/Barclay/Linlithgow with a positive control, ~$0.5
 
 ## Escalation (FT4-sp54-maclean-1745, 3 Oct 2026)
 - [n/a] siblings: no sibling cipher letter on disk; the 1744 Murray-Burnet letters are in print only (Origins pp.60-66), used as known keys below
 - [x] clear-pages: Memorials pp.134-137, 157 give the Barclay letters' clear content (crib table above)
-- [ ] known-keys: Blaikie's printed 1744 Murray-Burnet numeric groups (Origins pp.60-66) are the planned overlap test, waiting on the transcription
-- [ ] print: Lyon in Mourning vols 1-3 all searched in full text (vol. 1 on 3 Oct 2026, FT4b), with no print of the seized letters; Browne's History vol. ii appendix read in full text 3 Oct 2026 (GAPS165), no print of the seized letters; still unread: Blaikie's Itinerary
+- [n/a] known-keys: no ciphertext on disk to test against until the TNA copy arrives (ASKS row 57); then the planned overlap test is Blaikie's printed 1744 Murray-Burnet numeric groups (Origins pp.60-66), with browne_feigned_names.tsv (GAPS170) as a name crib list
+- [x] print: Lyon in Mourning vols 1-3 all searched in full text (vol. 1 on 3 Oct 2026, FT4b), with no print of the seized letters; Browne's History vol. ii appendix read in full text 3 Oct 2026 (GAPS165), no print of the seized letters; Blaikie's Itinerary grepped in full text 3 Oct 2026 (GAPS170), no print of the seized letters
 - [n/a] key-rebuild: no ciphertext on disk to rebuild a key against
 - [n/a] image-check: no image of SP 54/25 is available; waiting on TNA copy
 - [x] retry: the Lyon vol. 1 "Burnet" query is superseded by the full djvu read (3 Burnet hits, none is the alias)
-Verdict: keep going: 1 internal gap; cheapest next: Blaikie's *Itinerary* (SHS 1897) djvu grep for Maclean/Burnet/Barclay/Linlithgow with a positive control, ~$0.5
+Verdict: parked: blocked on ASKS row 57 (TNA page copy of SP 54/25/5, 8B; 8C and 8A as a second tier, REQUEST.md); the known-keys overlap test waits on that ciphertext

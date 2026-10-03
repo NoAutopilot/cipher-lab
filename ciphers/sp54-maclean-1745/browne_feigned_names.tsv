@@ -1,0 +1,27 @@
+# Browne, History of the Highlands vol. II (Glasgow: Fullarton 1840), pp. 405-406, archive.org historyofhighlan02brow _djvu.txt lines 24855-24960.
+# OCR splits the two columns; pairs are by printed order (24 names, 24 meanings). Alignment checked by two prose anchors: Browne's own note (Drummond of Balhady 'took the name of Walker and sometimes that of Watson' = row 14) and Murray's Memorials p.101/136 ('J. Barclay' = Murray of Broughton = row 19). Alignment of the other rows inferred (I) until the page image is read.
+row	feigned_name	meaning	grade
+1	Mr Adams	The King of France	H-print, alignment I
+2	Mr Talmash	Prince Charles	H-print, alignment I
+3	Foulis	The Duke of Ormond	H-print, alignment I
+4	Isham	Lord Marischal	H-print, alignment I
+5	Mr Constable	Cardinal Tencin	H-print, alignment I
+6	Markham	The Earl of Islay	H-print, alignment I
+7	Mr Davis	The Chevalier de St George	H-print, alignment I
+8	Bright	The Earl of Traquair	H-print, alignment I
+9	Norris	Sir Robert Walpole	H-print, alignment I
+10	Griffith	Sir William Watkins Wynne	H-print, alignment I
+11	Touchet	Carte, the Historian	H-print, alignment I
+12	Hales	Colonel Cecil	H-print, alignment I
+13	Lumley	Sempil	H-print, alignment I
+14	Watson, or Walker	Drummond of Bochaldy	H-print (anchor)
+15	Credon	Sir Thomas Sheridan	H-print, alignment I
+16	Mr Tait	Lord John Drummond	H-print, alignment I
+17	Morris	Chas. Smith, a Banker in Boulogne	H-print, alignment I
+18	Trebby	Mr Kelly	H-print, alignment I
+19	Barclay	Murray of Broughton	H-print (anchor)
+20	Jennings	Mr Erskine, of Grange	H-print, alignment I
+21	Morton	Lord Barrymore	H-print, alignment I
+22	Lister	Sir James Campell	H-print, alignment I
+23	Morison	Waters, the Chevalier's Banker in Paris	H-print, alignment I
+24	Mr Germain	Sir John Hynde Cotton	H-print, alignment I
