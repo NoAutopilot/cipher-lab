@@ -484,3 +484,52 @@ requester's own name/email, rule 9), since 26 Sept 2026 (NX-UNBLOCK).
 - Check whether Universitat de València holds a separate, longer 2017 doctoral deposit, or the 2024 book itself, under a different RODERIC handle -- named in NOTES as the next step, not yet run. S.
 - Search OpenAlex/HAL/Persée for other Bertomeu Masiá publications on Lope Hurtado/Charles V ciphers that might be open-access, distinct from the request-gated 2024 chapter. S.
 - Re-check the already-fetched 2016 master's thesis PDF for a citation to an open-access precursor (conference paper, preprint) of the 2024 book's material. S.
+
+## Web and blog check (GF-A2-10, 3 Oct 2026)
+
+Plain web searches (WebSearch, 3 Oct 2026):
+1. `"Lope Hurtado de Mendoza" Carlos V 1522 Roma carta cifrada descifrada` -- Estudios Románicos (revistas.um.es)
+   articles on Naples 1547 and a 1543 imperial cipher in Rome (Diego Hurtado de Mendoza era, not this target);
+   british-history.ac.uk CSP Spain "April 1522" / "September 1522" pages (Lope Hurtado to the Emperor, Zaragoza
+   10 April 1522, "in cipher ... contemporary deciphering" -- a pre-Rome letter, outside R9634/R9646/R9649).
+   Opening node 79746 ("September 1522") returned HTTP 401 (BHO login wall); host not retried. The September 1522
+   calendar entries were instead covered by bCSLOP's whole-volume grep of CSP Spain II above.
+2. `"Salazar" "9/26" Real Academia de la Historia Lope Hurtado cifra 1522` (shelfmark) -- Salazar y Castro
+   biography pages, unrelated articles; nothing on this item.
+3. `Lope Hurtado cipher Charles V 1522 decrypted DECODE OR Claude OR solved` (model-solve family) -- CSP Spain pages
+   and the 2022 LORIA decipherment of Charles V's 1547 letter to Saint-Mauris (press: phys.org, sciencealert,
+   livescience) -- a different letter. No model-solve announcement for Lope Hurtado.
+4. Descriptive title: covered by 1 and 3. Kolosova 2017/2024 and Bertomeu Masiá 2024 (both already logged above)
+   reappear in results as research-portal records; neither readable this pass.
+Blog site searches:
+- Cipherbrain (`site:scienceblogs.de klausis-krypto-kolumne Lope Hurtado OR "Charles V" cipher 1522`): one post,
+  "Letter of Charles V from the 16th century deciphered" (the 1547 Saint-Mauris letter, LORIA 2022), plus archive
+  page 78. Not this correspondent or year.
+- Cryptiana blog (`site:cryptiana.blogspot.com Lope Hurtado OR Kolosova Charles V cipher`): no blog page returned;
+  Tomokiyo's `spanish2C.htm` (local snapshot) already read for this target (Kolosova Ko.7/Ko.10, check-solved above).
+- Cipher Mysteries (`site:ciphermysteries.com "Charles V" OR "Lope Hurtado" cipher Rome 1522`): no
+  ciphermysteries.com page returned.
+No comment thread found that reads R9634, R9646 or R9649.
+
+## Premise check (GF-A2-10, 3 Oct 2026)
+
+(a) Folder's own mentions -- found, already logged: CSP Spain II no. 497 (Rome, last of Oct/1 Nov 1522, RAH,
+"Autograph in cipher ... Contemporary deciphering") may be the same despatch as R9649 (9 Nov 1522), unresolved
+(check-solved above); R9649 "read from the record's own contemporary clear copy" per Bourdeau (Job bLOP, step 1).
+Kolosova's Ko.7/Ko.10 reconstructions (pp. 312, 333, 388, 405) and Bertomeu Masiá 2024 remain unopened.
+(b) Other solvers' working files -- **found, already known**: dbourdeau/cyphersolver (shallow clone, HEAD 2341682,
+2 Oct 2026) `targets/lopehurtado/` has `read_r9646.md` and `read_r9649.md` (read in part / nearly fully, logged in
+Job bLOP), still **no `read_r9634.md`** and no R9634 transcription (`grep -rln 9634` hits only NOTES.md,
+profile.json, `key_1522_from1524_B.tsv`, README.md, and unrelated files). His NOTES.md line 600 lists R9649 among
+"the five records with no clear version", which disagrees with our Job bLOP reading of `read_r9649.md` ("own
+clear copy", f. 268r) -- a discrepancy to settle by reading his file, not settled here. Line 657 still names "rerun
+on R9634 ... with the 1524 alphabet" as an open step (his stated next step -> duplicate-effort risk for R9634).
+`targets/lopehurtado1523/` covers 1523 letters (R9846, R9867, R9869), outside this target. aaymeloglu/unsolved-
+ciphers (HEAD d2800bb): catalogue rows only (cited, not copied).
+(c) Physical neighbours -- not re-viewed this pass (DECODE full-size images login-gated; RAH viewer behind Anubis).
+Bourdeau's R9644 has a contemporary clear copy in the same bundle (his `key_codes.tsv` source); no clear copy of
+R9634 (ff. 14-16) is recorded by anyone.
+(d) Recipient's side -- found, already logged: CSP Spain II (Bergenroth/Gayangos) calendars Lope Hurtado's 1522
+letters to the Emperor (nos. 416/422, 454-455, 467, 497, 609, 610); no September 1522 entry matching R9634 was
+named by bCSLOP's whole-volume grep. Not found-solved for R9634; R9646/R9649 were already logged as read in part by
+Bourdeau (no new flag).
