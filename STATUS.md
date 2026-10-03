@@ -608,6 +608,51 @@ code of another decade, not the key (non-test). Parent handed over at about 735k
 (created via create_session, depth 1) from hub-seed/SUCCESSOR-PROMPT-account4.md; this session is archived. Open next
 steps are listed in that file.
 
+## LANE A2PUSH4 handoff (session_014yZCbV1UwnU9CUzQuF73JH, account 2), 3 October 2026, 17:10-18:5x UTC (closed: backlog spent)
+
+Fourth incarnation of LANE-A2PUSH for the account-3 orchestrator (brief .claude/briefs/runs/2026-10-03-acct3-lane-a2push4.md),
+spawned by the account-2 dispatcher 17:10. Five waves of cloud workers (Opus 5.5; Sonnet only for print/catalogue lookups), briefs
+`.claude/briefs/runs/2026-10-03-acct2-a2p4-*.md`. 28 worker rows ledgered: USD 56.80 (14 D; 4 D- over cap: CLINT 1.51x, MATIG 1.09x,
+SCORP2 1.34x, HAER 1.09x; 10 N clean search negatives; LEDGER rows A2P4-*), orchestrator ~USD 7
+self-ledgered. five_hour read `allowed` at every check-in (window rolled at 18:00). No live workers, no check-in armed.
+Not taken: harley-287-1587 and na-raad-azie-1800 (their named steps are the interrupted A2-HAR8 / A2-RAA12 jobs), Birago, every
+account-4-held folder, a..f folders (LANE-A1B).
+
+**Backlog row 1 (WORK-QUEUE other):** none queued.
+
+**Backlog row 2 (A2PUSH3 follow-ups):** lambeth-bacon-649: Baconiana Jan 1897 pp.23-29 (C. M. P.) prints only a partial account of
+a Lambeth French figure-cipher letter (no folio); CalmView Moresin letters MS 649 ff.328, 485-9, 496-508 flank ff.490-5; FBS enquiry
+draft outreach/francis-bacon-society-pott-1896.md. sp81-wroth-1596: 4 Wroth items in SP 81, only 7/239 (the key) mentions cipher,
+none digitised; TNA copy-order draft outreach/tna-sp81-wroth-copy.md (~GBP 38.88 for three items). Both drafts gate-7 checked by
+A2P4-OUTCHECK (d997319c), one correction each, send_queue_check ok, NOT queued or sent: ASKS 121 (TNA) and 122 (FBS) wait on the
+owner. fr15564-mercoeur not run (too-short at the measured reader split; needs the sorter).
+
+**Backlog row 3 (NEXT-STEPS g..z):**
+- matignon-mayenne-1586: ff.279r-280r clear text vs Tomokiyo's f.276 opening, crib 2/5 vs gate 4, controls 0-2 and planted 5/5 ->
+  NO MATCH (ff.279-280 decipher ff.277-278); NEAR row updated; f.276's route stays the Cipher-3 table.
+- lodewijk-van-nassau-1573-74 gap 7: 5797 spot 1 transcribed (239 codes H4 C155 M45 I16 U19); Groen p.222 alignment gate FAIL twice
+  (0.171, then Groen-normalised 0.333 vs bar 0.50, controls beaten both times) -> retired for this span after the third look; needs
+  another witness.
+- pro3055-clinton-1779: 1920 Mil. and Naval Forces of Canada vol. III: 2962, 3004, 3853, 4152 printed in full (already on file);
+  2380, 3050, 3502, 3537, 4216, 4833 absent.
+- kaliningrad-2015: `tools/homophonic_anneal.py --alphabet` + ru19_soft corpora + `judge_plaintext.py --holdout` (fbda87f4, f613b8ef);
+  s3-soft FAIL relabelled "judge cannot decide" (one-source corpus, FN 38-46 pct); s3p-soft control below gate.
+- scorpion-1991: no typed Oranchak transcription; homophonic family untestable on both cryptograms (controls 0.04-0.13 vs 0.6);
+  Zodiac-shape test 14 vs control 12, NO SUPPORT.
+- untersberg-code: Schoeppner 1852 initials = Herzog Hs 3; Walther Tab. CCXX no symA match (prereg). NEAR row updated.
+- rah-salazar-soria-sanchez-1524-28 VERIFIER (A2P4-VRAHSAL, c611e459): item 5 = CSP Spain III pt.2 No.462, N0 (key published);
+  items 1 and 3 printed from other copies (No.212, No.399), N2 each, key period, text known.
+- sp99-wotton-1622: "159" reads as a numeric code-name (Pearsall Smith vol.1 p.320 n.1), grade I.
+- sp87-newcastle-1743: code '101' attribution conflict (Yorke 1913 Bussy vs Quarterly Review 190 "a lady in Paris"), logged.
+- Clean search negatives (N): sp78-yorke-1749, viganego-torino-1717, sanguszkow-mniszech-dunin-1714 (ASKS 125), taurello-roma-1527,
+  sp90-raby-whitworth-1705, ra-karlxi-fullmakt-1677, salvago-caraffa-1691, sp78-cesy-1628, ra-celsing-sillen-1755, sp90-raby-1704,
+  sp36-ball-1745; heinsius-vanhaersolte-1703 (all 1432 Haersolte hits paged; leads letter 929 code 142, letter 588).
+
+**Next (for whoever runs account 2 next):** owner side: ASKS 121/122 (two checked drafts), 125 (Krakow copy). Cheap tails named by
+workers: taurello Sanuto Diarii be-api (~1); ra-karlxi Actes de Nimegue 1680 + Dumont VII (~6 requests); sp36-ball Blaikie/Elcho/
+Murray (~1); heinsius-vanhaersolte letter 929 p.362 image check (~1); kaliningrad paired soft/hard anneal move (~6) only after an
+era-matched multi-source ru corpus; untersberg same-scribe abbreviation concordance across the 28 leaves (M).
+
 ## LANE A2PUSH3 handoff (session_01HhF3BJJUVzo814gSvoeVjt, account 2), 3 October 2026, 14:10-16:1x UTC (closed: backlog spent)
 
 Third incarnation of LANE-A2PUSH for the account-3 orchestrator (brief .claude/briefs/runs/2026-10-03-acct3-lane-a2push3.md),
