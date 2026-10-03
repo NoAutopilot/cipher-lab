@@ -150,3 +150,36 @@ recipient-side equivalent. Item stays `open`.
 Waits on: the TNA page copy of SP 78/83/62 (ASKS row 73, batch order).
 
 - S: check the Gallica-digitised Césy papers (BnF fr.16149-16164; Gallica ark btv1b52000533f and its siblings) for a received copy or decipherment of the king's letter of 31 Aug/10 Sept 1628 -- free, no person needed -- tools/gallica_folio.py.
+
+## A2P4-CESY (account-2 worker, 3 Oct 2026, LANE-A2PUSH4): Discovery digitisation status + Halphen 1904
+
+Intake gate (pasted): `sp78-cesy-1628: open (line 1) -- edition/page or full-text-search citation found within 6 lines`.
+
+**TNA Discovery, 3 Oct 2026 (curl, browser UA; 7 requests to discovery.nationalarchives.gov.uk, >=2 s apart, all HTTP 200 except the HTML
+page which returned 202 and was not used).** `tools/discovery_items.py "SP 78" "SP 78/83" Cesy cipher` returned SP 78/83/61 (f.145,
+Phelipeaux to Césy) and SP 78/83/62 = Discovery id C7324533, 'Folio 147: Louis XIII to Cesy, partly in cipher.', 1628 Aug 31/Sept 10.
+`/API/records/v1/details/C7324533`: `digitised: false`, `copiesInformation: []`, `scannedLists: []`, `note: null`, held by TNA Kew,
+parent piece C4539700 (SP 78/83) `digitised: false`, SP 78/83/61 `digitised: false`. Positive control for the flag: WO 95/95
+(C4553246) `digitised: true` -- the field can read true. So f.147 and its neighbour are not digitised on Discovery; no free image
+route. Order route unchanged (REQUEST.md; ASKS row 73 batch). The 26 Sept HTTP 500 on the search endpoint did not recur.
+
+**Halphen 1904 (Lettres inédites du roi Louis XIII à M. de Cesy, 28 Jan 1631 - 14 Apr 1639, "publiées d'après les manuscrits de la
+Bibliothèque nationale"; coverage and source quoted from the Société de l'histoire de France Annuaire-Bulletin 1905, IA
+`annuairebulleti17frangoog`, be-api fts).** The volume's own scan is not on Internet Archive: advancedsearch (title/creator/keyword,
+4 queries) 0 items; be-api fts for the exact title returns only bibliographies/reviews (annuaire 1905, a 2013-24 thesis bibliography,
+Batiffol) and one footnote citing Halphen letters of 6 Feb and 11 March 1631 (`IA41547903_0020`). Control: the same fts reproduces
+the known title in 11+ items. Result: the edition's printed coverage starts 28 Jan 1631 and is drawn from BnF mss, so a TNA SP 78
+letter of Aug/Sept 1628 falls outside it by date and by source; its introduction was not read (no scan reachable; Gallica ark
+bpt6k5758477g still unread, a person's or LOCAL-QUEUE route). Not found is a search result, not a clearance. 14 archive.org requests.
+
+Status stays `open`. No printed text or decipherment of f.147 located. Verdict unchanged.
+
+**Next step:** TNA page-copy order of f.147 (ASKS row 73); optional free step: Halphen 1904 introduction on Gallica (bpt6k5758477g)
+via a browser fetch, ~$1, and a search of AE Correspondance politique Constantinople t. 3 for the 31 Aug 1628 minute.
+
+## While waiting (3 Oct 2026, A2P4-CESY)
+
+Waits on: the TNA page copy of SP 78/83/62 (ASKS row 73).
+- S [done 3 Oct]: Discovery digitisation status -- `digitised: false` (above).
+- S [done 3 Oct]: Halphen 1904 on IA -- no scan, coverage 1631-39 from BnF mss.
+- S: read Halphen introduction on Gallica via browser tool; read Avenel vol. 3 for every 'Cesy'.
