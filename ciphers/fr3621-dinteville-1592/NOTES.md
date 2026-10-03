@@ -674,24 +674,77 @@ holds no date stands. The line is cut at native resolution in `images/f130_datel
 day numeral is not legible, so **iij vs iiij is not settled; headings unchanged (3 July, Bourdeau; iiij the
 alternative)**. Nothing corrected in NOTES/AUDIT; status.json's result title and document_id are the orchestrator's.
 
-## Remaining gaps (DIN-FIRM, 3 Oct 2026; supersedes VERIFY-DIN2's list)
-Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4, unchanged by DIN-FIRM's conflict check: sq and m not promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line absent from x 280-3640, y 4180-5762 of f269
-- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t) and m (u/t, DIN-FIRM) are polyphones, v' and 0' unkeyed; next: a word-division pass with #, v and m read in context and graded I, ~$4
-- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
-- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches; next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
-- Drouot-cited letters: fr.4718 f.76 (Dinteville to Nevers, 8 Jul 1592, not called deciphered) and "fr.4075 f.37" (1589 deciphered letter, writer unnamed, Gallica fr.4075 is a 1613-41 Coeuvres volume so the shelfmark does not fit) - blocker: not-attempted; shelfmark mismatch and no Gallica copy of fr.4718 found; next: read fr.4718's archivesetmanuscrits record and its availability flag, and Drouot's printed page for the 4075 citation (IA lending, a person's read), ~$2
-- f.130 date (iij or iiij July) - blocker: not-attempted; line located at f269 y about 4060-4160 (TWO-LOOKS), crops cut but not viewed (vision budget spent); next: one vision call on images/f130_dateline2_L01_s1.jpg + _s2.jpg (disk only, no Gallica request), ~$1.5
+## Rows 0/a per occurrence; fr.4718 and fr.3623 located (DIN-LEFT, account 1, 3 Oct 2026, 09:24-09:35 UTC)
 
-## Escalation (DIN-FIRM, 3 Oct 2026; supersedes VERIFY-DIN2's list)
-- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2)
-- [ ] clear-pages: fr.3623 f.23 decipherment not yet compared; Drouot citations checked (DIN-FIRM): fr.4718 not found on Gallica, fr.4075 shelfmark mismatched (planned steps above)
+Brief `.claude/briefs/runs/2026-10-03-acct1-din-left.md`. Rule: DIN-FIRM's `firm/PREREG.md`, applied unchanged; the
+addendum naming rows `0` and `a` was committed (4d28d930) before any occurrence was read.
+
+**1. Rows `0` (e 11/18) and `a` (q 4/5): 8 of 8 conflicting occurrences unexplained; nothing promoted.**
+`firm/conflicts.tsv` rows 6-13. `0` reads c once (descendre), p twice (despaigne, prendre) and s four times (besancon,
+iours, uesoul, descorte); in each the conflicting letter has no neighbouring sign to carry it, no 16th-century spelling in
+`tools/data/fr16` puts e there, and in four of the five places where the gloss covers the same word it has the same
+letter as the print (descendre/dascender c, despaigne p, iours s, prendre p, uesoul/beso- s). `a` sits where print
+'uesoul' has its final 'ul' and the gloss 'besou-n' its u; no reading puts q there. **Strict grades unchanged: C 177,
+M 311, U 39** (`firm/firm_grades.py --check` and `tools/decode_key.py ... --check`, 4 jobs, pass). Observation, graded I
+and not used: `0` carries a non-e letter mostly when it is doubled or next to sq (0 0 = ce, es, se; sq 0 = sp), which
+fits a transcription that merges two signs under `0` (f.130's unkeyed `0'` is the obvious candidate) better than a
+polyphone; settling it is an image question on f.128, not an alignment one.
+
+**2. Français 4718: catalogue record read; no Gallica copy found; the 8 July letter is fol. 21, not f.76.**
+archivesetmanuscrits.bnf.fr, simple search "Français 4718" (Cote facet: 1 result) -> **ark:/12148/cc577680**,
+https://archivesetmanuscrits.bnf.fr/ark:/12148/cc577680 , "Français 4718 . Anc. 9540 . Recueil de pieces originales et
+de copies concernant l'histoire de France, durant l'annee 1592." Availability: the result carries no Gallica badge
+(`avecDaoGal`/`pictoGallica` appear only in the page CSS, not on the result or any item) and the record has no Gallica or
+viewer link: **no online copy shown** (the record has no explicit "not available online" sentence). Gallica SRU
+`dc.source adj "Francais 4718"` 0 (positive control: the same query for Francais 3621 returns btv1b52524472n, for 3623
+btv1b525245007); `dc.title all` on the volume title 0; `gallica all` forms return only other fonds' 4718 cotes. BnF
+catalogue general SRU `bib.anywhere all "Francais 4718"`: 626 word-level hits, noise (manuscripts are not catalogued
+there), not read further. The record's item list for Dinteville to Nevers, 1592, carries **three items with cipher and
+decipherment**:
+- Fol. 17, no.10: "Lettre en chiffre, avec dechiffrement ... De Langres, le 17 julliet 1592".
+- **Fol. 21, no.14: "Langres, 8 juillet 1592. Chiffre et dechiffrement."** This is Drouot's 8 July letter: Drouot (1937)
+  cites it as "f. 76"; the catalogue puts f.76 inside no.53 (fol. 75, Dinteville, "dernier septembre 1592"). Either
+  Drouot used another foliation or the f. is misprinted/mis-OCRed; the catalogue's fol. 21 is the one to order.
+- Fol. 40, no.26 (5 Aug 1592): "Un post-scriptum, en chiffre avec dechiffrement" on the ransom of the abbot of
+  St-Antoine de Viennois.
+Also fol. 6 sqq., nos.3-5, "Lettres en chiffre" (Badalocchio, 1592; not Dinteville). Three Dinteville decipherments of
+the same summer as f.130 (4 July) are the best key/crib source found for v', 0' and the 39 NEW-sign tokens, if the key
+is the same; not checked (no images).
+Request row text (for the BnF reproduction batch, ASKS row 78 / REQUEST, not sent): "BnF, Departement des Manuscrits,
+Francais 4718 (ark:/12148/cc577680), fols. 17, 21 and 40, recto and verso (Dinteville to Nevers, 17 July, 8 July and
+5 Aug 1592, cipher with decipherment): digital images, colour, for research. Not on Gallica as of 3 Oct 2026."
+
+**3. Francais 3623 f.23 located.** Gallica btv1b525245007 (SRU `dc.source adj "Francais 3623"`, 1 record); manifest
+labels (`tools/gallica_folio.py btv1b525245007 --folio 23`): **f.23r = canvas f55** (4068 x 5828), **f.23v = canvas f56**
+(4120 x 5881), labelled, not computed (the manifest has three offset runs, k = 10/12/14). Native URLs
+https://gallica.bnf.fr/iiif/ark:/12148/btv1b525245007/f55/full/full/0/native.jpg and .../f56/... . Not viewed, not
+transcribed. Manifest snapshot `sources/gallica-manifests/btv1b525245007.json`.
+
+Requests: archivesetmanuscrits.bnf.fr 4 (home, search, Cote facet, item page), gallica.bnf.fr 10 (9 SRU, 1 manifest),
+catalogue.bnf.fr 1; >= 2 s apart, no block. Vision calls 0. Rule 10: no novelty claim.
+
+## Remaining gaps (DIN-LEFT, 3 Oct 2026; supersedes DIN-FIRM's list)
+Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; strict C 177 / M 311 / U 39 (decode.json job 4; conflict rows sq, m, 0 and a all checked per occurrence, none promoted); f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468; date line read, 4 July 1592
+- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d), v (a/t), m (u/t) and 0 (e/s/p/c, DIN-LEFT) read more than one letter; next: a word-division pass with #, v, m and 0 read in context and graded I, ~$4
+- `0` on f.128: one sign or two merged (DIN-LEFT: non-e readings sit in doubled 0 and after sq) - blocker: not-attempted; the alignment cannot tell a merged sign from a polyphone; next: one image look at the 7 conflicting 0 occurrences on f.128 crops (L03.1, L04.1, L05.1) against f.130's 0', disk only, ~$3
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (canvas f55/f56 located, DIN-LEFT), ~$4
+- fr.4718 fols. 17, 21, 40 (three Dinteville cipher letters with decipherment, Jul-Aug 1592; catalogue ark:/12148/cc577680, no Gallica copy found) - blocker: waiting-on ASKS row 78 (BnF reproduction batch; fr.4718 to be added by the parent); not on Gallica
+- "fr.4075 f.37" (Drouot, 1589 deciphered letter, writer unnamed; Gallica fr.4075 is a 1613-41 Coeuvres volume) - blocker: needs-physical-access; Drouot's printed page is in an IA lending book, a person's read (ASKS row to be filed by the parent if wanted)
+
+## Escalation (DIN-LEFT, 3 Oct 2026; supersedes DIN-FIRM's list)
+- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2); fr.4718 catalogue read, three more Dinteville cipher-with-decipherment items found at fols. 17, 21, 40 (DIN-LEFT)
+- [ ] clear-pages: fr.3623 f.23 located (canvas f55/f56), sign set not yet compared; fr.4718 fols. 17/21/40 not online (reproduction order)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
 - [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
-- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq/m checked per occurrence, not promoted (DIN-FIRM)
-- [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2); foot of f269 viewed for the date (DIN-FIRM); whole leaf at 808 px, date line located at y 4060-4160 and cut, not yet read (TWO-LOOKS)
+- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2); conflict rows sq, m (DIN-FIRM), 0 and a (DIN-LEFT) checked per occurrence, none promoted
+- [ ] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, A2-DIN2); date line read 4 July (orchestrator); f.128's `0` occurrences not yet re-looked at for a merged sign
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 5 internal gaps; cheapest next: one look at the cut date-line crops images/f130_dateline2_L01_s1/s2 (~$1.5, disk only), then fr.3623 f.23's sign set for v' and 0' (~$4)
+Verdict: keep going: 3 internal gaps; cheapest next: one image look at f.128's seven conflicting `0` occurrences (~$3, disk only), then fr.3623 f.23's sign set at canvas f55/f56 (~$4); fr.4718 fols. 17/21/40 to the BnF reproduction batch (ASKS row 78)
 
+## While waiting
+
+- fr.3623 f.23 sign-set comparison at Gallica btv1b525245007 canvas f55/f56 against f128/gloss_pairs.tsv and f.130's v', 0' and NEW signs (~$4); fr.4718 fols. 17/21/40 wait on the BnF reproduction order
+- f.128 `0` image look at the seven conflicting occurrences (disk only, ~$3)
 
 ## Date line read (account-3 orchestrator, 3 Oct 2026 ~09:15 UTC)
 

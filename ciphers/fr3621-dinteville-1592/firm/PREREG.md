@@ -28,7 +28,7 @@ Regrade: recompute VERIFY-DIN2's strict count with the promoted rows' explained 
 (`f130/print/key_dk_strict.tsv`) so `tools/decode_key.py --check` reproduces the strict counts. Token conf rule unchanged
 (C only on a sign read H). Report both the old strict figure (C 177 M 311 U 39) and the new one.
 
-## Addendum: rows `0` and `a` (DIN-LEFT, account-1 worker, 3 Oct 2026, written ~09:28 UTC before any occurrence is read)
+## Addendum: rows `0` and `a` (DIN-LEFT, account-1 worker, 3 Oct 2026, written 09:25 UTC before any occurrence is read)
 
 Brief `.claude/briefs/runs/2026-10-03-acct1-din-left.md` step 1. The rule above is applied **unchanged** (same three
 classes, same evidence requirements, same promotion rule: a row is promoted only if every one of its conflicts is
