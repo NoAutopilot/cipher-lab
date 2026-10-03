@@ -493,3 +493,51 @@ figures + certified signs -- with lambda = r and the symbols counted, the f159 k
 control would no longer be an eight-letter text (~$5 image pass + ~$1 rescore, power gate first); (f) read the f159 Nulles box and
 the nomenclator codes 20-80 (the target's two-figure groups such as 72 for the Spanish may be nomenclator codes, cf. "72 ne
 puissent" in the clear) (~$2); (d) the as-sent packet on Villeroy's side (~$3). All depend on nobody.
+
+## Target signs vs the f159 table, power gate (VILL-SIGNS, account 1, 3 Oct 2026)
+
+Brief `.claude/briefs/runs/2026-10-03-acct1-vill-signs.md`. Intake gate 10:59 UTC: "open (line 1) -- edition/page or
+full-text-search citation found within 6 lines". Target crops (pasted; the seven f.148r cipher lines, canvas 161 = f.147v|148r):
+
+    python3 tools/iiif_lines.py --ark btv1b9059229n --canvas 161 --region 4300,4450,3300,900 --out <scratch>/t148 \
+        --prefix f148r_ct --max-width 2400 --overlap 150 --debug      # 7 lines x 2 segments; committed as images/f148r_ct_stack.jpg
+
+Table side: the committed `images/fr3995/f159_strip_rotated_stack.jpg` (VILL-7280's native crops). Vision calls: 3 (contact
+sheet to place the block, the target stack, the table stack) + 1 blind Sonnet second reader given both stacks.
+
+**Sign certification** (both readers SAME = certified; `keys/key_f159_full.tsv`):
+
+| table letter / sign | reader A (worker) | reader B (subagent) | status |
+|---|---|---|---|
+| r LAMBDA | same (Bourdeau L, 16 in the target) | SAME, ~7 on f.148r | **certified** L = r |
+| m OMEGA | same/like (Bourdeau w, 2) | SAME | **certified** w = m |
+| x PLUS | same (Bourdeau +, 1) | SAME | **certified** + = x |
+| f EPS, p VARPHI, u PTHICK, t V | like (target 3/e-like, y, crossed p, cup) | LIKE / LIKE / LIKE / NO | not certified |
+| g NFL, h AX, n PSI, q ZBAR, s stars, y SQX | no | NO (g, y LIKE weak) | not in target |
+
+The target's frequent signs pi (P 12), varpi (V 11), theta (Q 14), infinity (W 13), reversed c (R 25), T (23), double-cross
+(K 13) are **not in the f159 alphabet strip** (both readers); they may sit in the table's Nulles box or nomenclator, not read.
+
+**Power gate** (pre-registered `fr3995/PREREG-VILL-SIGNS.md`, commit 54a9a65a, before the run; `signs_score.py` -> `signs_score.tsv`,
+`--check` exits 0):
+
+| key | coverage | reader err | power (rank 1 of 201, 20 synthetic French texts) | target letters | verdict |
+|---|---|---|---|---|---|
+| f159 figures + certified signs | 0.616 | 0.100 | **5/20** | 301 | **non-test** (power < 16/20; target not scored, no judge run) |
+
+Rule 3, both numbers: control power 5/20 against the gate 16/20. The certified signs add only r, m, x (19 tokens), so the decode is
+still an eleven-letter text. Not a gate result, an observation: under this key 'o' (figures 1, 2, 3) is 41.2% of the decoded
+letters and i 15.9% -- no French letter reaches 20% -- so the table's figure values look implausible for the target's figures
+whatever the signs read. Grade counts in the cipher: H 0, C 0, S 0, M 0, I 0 (nothing read).
+
+**Nomenclator 20-80 vs the target's code groups: not done (not on disk).** VILL-7280 read only the alphabet strip; no crop or
+transcription of the f159 nomenclator exists in the folder, and the brief limited this check to disk. Named as step (f) below.
+
+Requests: gallica.bnf.fr 1 info.json + 1 native region. Rule 10: no novelty claim.
+
+Verdict after VILL-SIGNS: `open`. Next steps, cheapest first: (f) read the f159 nomenclator and Nulles box (native crops of the
+rest of canvas f159, one blind read + check) and match codes 20-80 and the Nulles signs against the target's two-figure groups and
+its pi/varpi/theta/infinity/T/reversed-c signs (~$3); if the Nulles box carries those signs, the target's symbol share is nulls and
+the figure stream alone is the text -- but the 41% 'o' share already argues against the f159 figure values; (d) the as-sent packet
+on Villeroy's side (~$3); (g) Nevers's letters to Henri IV of 23/25 July and 3/6/13/31 Aug 1595 as same-cipher siblings for pooling
+(~$3 locate). All depend on nobody.
