@@ -269,10 +269,41 @@ edition/page or full-text-search citation found within 6 lines` (exit 0).
 
 Sorter inputs of 3 Oct 2026 (SORTER-FLORENCE, account 3): `sorter/` holds the tools/sign_sorter.py inputs for c.127 lines 6-9 (120 tiles, 27 piles from the A2-FLO3 recon, 15 focus tiles where the two passes split; boxes approximate, no image read by a model); build command and pre-publish image-terms check in `sorter/README.md`; the account-3 orchestrator publishes.
 
+## GAPS106-florence-dieci-responsive (3 Oct 2026, account-4)
+
+Runs the machine side of the Verdict's cheapest step ("the sorter job itself (crops of c.127's ~24 cipher lines + focus.tsv
+...)"). SORTER-FLORENCE (account 3) built the sorter for the pilot lines 6-9 only and the account-3 orchestrator published
+it (ASKS 107, open, never blocking); the rest of the leaf had no crops. Intake gate, pasted before the step:
+`florence-dieci-responsive: open (line 1) -- edition/page or full-text-search citation found within 6 lines` (exit 0).
+No other account's claim or commit on this folder in the 6 h before 12:22 UTC (last: SORTER-FLORENCE, 03:01 UTC).
+
+- **Crops of the main cipher block of c.127, done.** `python3 ../../tools/iiif_lines.py --image images/IMG_R3766_I23025_P.jpg
+  --region 150,1290,3860,2330 --max-width 1980 --overlap 100 --prefix c127b2 --distance 70 --out images/c127b2 --debug`.
+  Pasted output: `region 3860x2330, 18 lines, 18 bands x 2 segments; pitch 122 distance 70 prominence 381.0` /
+  `centres (region y): 112 216 344 464 591 720 845 943 1079 1208 1360 1496 1628 1744 1869 1976 2090 2223` /
+  `wrote 36 crops and images/c127b2/manifest.json`. The debug overlay was checked by eye (two reads, downscaled): every
+  centre sits on a text line, none missed. **L01 is clear text** ("Io sono venuto fino ... Rispetto ...", not cipher);
+  **L02-L18 are the 17 cipher lines** of the block (L02 opens with clear "ghalio", L18 ends in clear "/ ... medite
+  delcquan..."). The default `--distance` (86) found 14 lines and the first region (1830 px tall) clipped the last two;
+  both corrected before the final cut. 36 crops, 2.1 MB; images/ now 22 MB (under 30). Debug overlay not kept.
+  Not cut here: the scattered code signs inside clear lines 2-3 (e.g. after "achostui") and the cipher subscription
+  group on the date line; with the pilot crops (images/c127/, lines 6-9) the leaf's cipher is now cropped apart from those.
+- **glyph_atlas segment tried, not usable at default settings.** `tools/glyph_atlas.py segment --page
+  c127=images/IMG_R3766_I23025_P.jpg@150,300,4000,4300` (scratch only, not committed): 1218 signs, 811 marks, median
+  sign height 21 px, 33 lines found against about 44 on the leaf; cipher lines got 25-47 boxes against roughly 40-50
+  signs each by eye at overview scale (adjacent signs merged, `÷`-type dots split off as marks). So the atlas cannot
+  stand in for transcription passes or sorter tiles on this leaf without tuning its merge and mark thresholds (a
+  no-vision job, untried).
+- **Not done (and why).** No transcription pass of c127b2: Usage 6 / TRANSCRIPTION.md put the owner's sign sorter
+  (ASKS 107) before further machine passes once two passes split by more than a tenth (pilot: 17%). No sorter tiles for
+  L02-L18 either: tiles need a per-sign box and a pile label, and these lines have no pass yet. No reading, no grade counts.
+- Vision: 3 image reads by this worker (debug overlays and line-end check, downscaled), 0 subagents. Requests: none
+  (images on disk).
+
 ## Remaining gaps (finish-or-blocker pass, 3 Oct 2026, A2-FLO)
 Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster has only a fetch and inventory).
 - filza 7/9/22 premise coverage - blocker: not-attempted; check-solved for the filza 8 pair is done (3 Oct 2026, CS-A2-K: Guasti vols 2-3 read, web and blog check, premise check; status open) but clear copies like c.111 were not looked for among filze 7/9/22; next: contact-sheet look for clear copies, ~$1
-- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); next: owner settles the c.127 sign set in tools/sign_sorter.py (passes split >1/10), then a full-leaf transcription of c.127 against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
+- filza 8 symbol cipher (cc. 82, 127-131) with the c. 111 "Decifrato della lettera al N° 115" leaf - blocker: not-attempted; pairing confirmed (A2-FLO2) and date settled to 26 Dec 1430 on both leaves (A2-FLO3); a two-block pilot (120 cipher tokens, 2 blind passes split 17%, reconciled) aligned to c.111 by tools/interlinear_align.py gives 28/120 agrees, inside the clear-shuffle band (p95 28) and below a noisy known-answer control (min 38) -- no consistent letter key at this N, cause undetermined (step of 3 Oct 2026, A2-FLO3); owner sign sorter for lines 6-9 published 3 Oct 2026 (ASKS 107, open); line crops of the remaining 17 cipher lines cut 3 Oct 2026 (GAPS106, images/c127b2/ L02-L18); glyph_atlas segment at default settings under-segments this leaf (GAPS106); next: owner settles the c.127 sign set (ASKS 107), then a full-leaf transcription of c.127 (pilot crops + c127b2) against those labels and a careful clear-text pass of c.111, re-run align/c127b1_control.py and align/c127b1_known.py at full N with a homophone-count sweep, ~$8
 - filza 7, 9 and 22 cipher leaves (keys 3/4 of Yale reel 58 for filza 7; c. 243 is wholly cipher) - blocker: not-attempted; gated on the same check-solved verdict; next: after filza 8, a page-level look at filza 9 for cipher passages and a test of filza 7 against Gabbrielli keys 3/4, ~$6
 - record 3783 (filza 9, c. 190) - blocker: needs-physical-access; DECODE lists no image for it although its record says 2 pages (step of 3 Oct 2026); only a copy order from ASFi (REQUEST.md) supplies it
 
@@ -284,7 +315,7 @@ Read so far: 0 of 39 leaves read (nothing transcribed or decoded; this cluster h
 - [ ] key-rebuild: from the c. 111 / c. 127 pair; pilot of 3 Oct 2026 (A2-FLO3) on 2 blocks, 120 tokens: real 28 agrees vs shuffle p95 28 and noisy known-answer min 38 -- no key at this N; needs the settled sign set and full-leaf N
 - [x] image-check: 39 full-size DECODE images served and inventoried, images/manifest.json (step of 3 Oct 2026)
 - [n/a] retry: no earlier failed attempt on this cluster to retry
-Verdict: keep going: 3 internal gaps; cheapest next: owner settles the c.127 sign set in tools/sign_sorter.py (two machine passes split 17%, Usage 6) -- the sorter job itself (crops of c.127's ~24 cipher lines + focus.tsv from passes/c127b1_*.tsv), ~$2; then full-leaf c.127 transcription against the settled labels, a full clear-text pass of c.111, and align/c127b1_control.py + align/c127b1_known.py re-run at full N, ~$8
+Verdict: keep going: 3 internal gaps; cheapest next: contact-sheet look at filze 7/9/22 for clear copies like c.111 (one DECODE login, refetch from images/manifest.json), ~$1; then glyph_atlas threshold tuning on c.127 (no vision) so the sorter can cover lines L02-L18, ~$1.5; filza 8 waits on the owner's sign sorter (ASKS 107, open, never blocking; c.127 main-block crops complete, images/c127b2, GAPS106 3 Oct 2026), after which full-leaf c.127 passes against the settled labels + c.111 clear-text pass + align controls at full N, ~$8
 
 
 ## Edition read (CS-A2-K, 3 Oct 2026)
