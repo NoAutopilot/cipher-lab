@@ -1,0 +1,4 @@
+variant	value	grade	aligned_2078	clause_i	clause_ii	action	context
+A_as_stated	k|i	M	k	yes	yes	APPLY	L11:18=n(H)->n L11:19=g(H)->g L11:20=s(H)->s L11:22=a(H)->a L11:24=e(H)->e L11:25=r(H)->r
+B_C_counted	k|i	M	k	yes	yes	APPLY	L11:18=n(H)->n L11:19=g(H)->g L11:20=s(H)->s L11:22=a(H)->a L11:23=m(C)->m L11:24=e(H)->e
+C_gaps45_state	k|i	M	k	yes	no	keep	L11:18=n(H)->n L11:19=g(H)->g L11:20=s(H)->s L11:22=a(H)->a L11:23=n(H)->mX L11:24=e(H)->e

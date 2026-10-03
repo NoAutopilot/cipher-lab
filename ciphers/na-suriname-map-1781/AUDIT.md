@@ -575,3 +575,11 @@ GAPS23's gate re-run unchanged gives 0.765 (88/115) vs N1 p99 0.452 / N2 p99 0.2
 construction: two H mismatches became C, which the gate does not count. Do not cite it as independent. VERIFY4's blocker 2
 ("n->m, untested") is now tested (GAPS45/55) and is partly graded. Blocker 1 (LOCAL-QUEUE L36, L41) is unchanged: both are
 `queued` with empty results as of 08:1x UTC. Re-class (if any) stays a separate verifier's (VERIFY5, when L36/L41 land).
+
+[FT4k-na-suriname-map-1781, solver, account-4, 3 Oct 2026 -- item 4 propagation note, not a verifier pass.] Reading
+revised in 1 token: L11:21 (sign b, key k|i, M) -> C k, value from the 2078 Nota entry b ("Monteerings Kamer"), under
+GAPS23's registered Regrade rule as stated (clause (i) yes; clause (ii) 6/6, and 6/6 with GAPS56's C m tokens counted;
+`passes/nota2078_ft4k/decide_l1121.tsv`). It was the knock-on GAPS56 listed and left. 2077 is H 538 C 10 M 60 U 50,
+--check exit 0. GAPS23's gate re-run unchanged gives 0.765 (88/115) vs N1 p99 0.452 / N2 p99 0.278, PASS, identical to
+GAPS56 (the gate counts H only). Not new evidence. No second-opinion row is filed for this target. Blockers for stage 9 are
+unchanged (LOCAL-QUEUE L36, L41 queued). Re-class (if any) stays with a separate verifier (VERIFY5, when L36/L41 land).
