@@ -1091,6 +1091,28 @@
     "win": 300,
     "local": true
    }
+  },
+  {
+   "crop": "f130_date_L01.jpg",
+   "source_url": "https://gallica.bnf.fr/iiif/ark:/12148/btv1b52524472n/f269/400,3825,2450,175/full/0/native.jpg",
+   "source_file": "src_ark_12148_btv1b52524472n_f269_400_3825_2450_175.jpg",
+   "box": [
+    400,
+    3851,
+    2850,
+    3976
+   ],
+   "lines_in_crop": 2,
+   "band": 1,
+   "segment": 1,
+   "method": "tools/iiif_lines.py row ink profile",
+   "params": {
+    "pitch_autocorr": 60,
+    "distance": 42,
+    "prominence": 63.0
+   },
+   "date": "03 Oct 2026",
+   "note": "VERIFY-DIN2 3 Oct 2026: intended as the date line but is NOT -- a body line of clear text ('...Lorraine a envoye ... du duc de Parme, ...'); region chosen from a numeric ink profile of a 808 px thumbnail, not by eye. The date line is elsewhere (below y 3976, likely in the block y 4180-5340)."
   }
  ]
 }

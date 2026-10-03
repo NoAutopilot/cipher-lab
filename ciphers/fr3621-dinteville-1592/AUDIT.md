@@ -1,5 +1,7 @@
 # AUDIT -- fr3621-dinteville-1592, f.130r cipher passages read with a key rebuilt from the f.128 gloss
 
+**Current figures (3 Oct 2026, 08:25 UTC):** see "Second audit (VERIFY-DIN2)" at the end of this file: N3, key `period`, licensed grades C 177 / M 311 / U 39 on the print-aligned key (decode.json job 3). The grade figures in the first audit below describe superseded keys.
+
 Verifier: VERIFY-DIN (account 3, an in-session verifier for the account-3 orchestrator), 3 Oct 2026, 07:26-07:50 UTC.
 I'm not the solver (A2-DIN, A2-DIN2 and A2-DIN3 ran on account 2). Brief: `.claude/briefs/runs/2026-10-03-acct3-verify-din.md`.
 A2-DIN4 (account 2, a second reader on the f.128 gloss at h and D) had no commit on origin/main at 07:26 UTC, so this
@@ -208,3 +210,139 @@ U 39, or C 291 M 197 U 39 with the c/d and a/t polyphones (# and v) held at M. T
 safe sentence ("la ville et le roi", "... en l'obéissance", "dehors les ... serviront") stand in the new reading. The
 grade counts in sections 2d and Verdict describe the superseded keys. They are not re-verified here. The class (N3) and
 any revised grade sentence are for the next verifier session. SO-DIN-F130's prompt carries the same note.
+
+## Second audit (VERIFY-DIN2, account 3, 3 Oct 2026, 08:09-08:25 UTC)
+
+Verifier: VERIFY-DIN2, an in-session verifier for the account-3 orchestrator. It is separate from the solvers (A2-DIN,
+A2-DIN2, A2-DIN3, DIN-PRINT) and from VERIFY-DIN. Brief: `.claude/briefs/runs/2026-10-03-acct3-verify-din2.md`. Claim
+under audit (DIN-PRINT): the key aligned from the f.128 cipher to its 1882 printed plaintext reads f.130r at fr16
+-1.271, beating 1000 free shuffles (p95 -1.705) and 1000 frequency-banded shuffles (p95 -1.575), 0/1000 each. Grades are
+C 291, M 197, U 39 (conservative), against a pre-registered C 357. Script: `verify/verify_din2.py`, output
+`verify/result2.json`, with `--check`.
+
+### Verdict (supersedes the grade figures in the first audit; the class is unchanged)
+
+| item | class | key source | text |
+|---|---|---|---|
+| f.130r cipher passages (BnF fr.3621 no.116; 527 signs), fragments as read with `f128/print_align/key_print.tsv` | **N3** | `period` (rebuilt by us from the 1882 print of the sibling f.128's plaintext; the decipherment it prints is period) | f.130's own **clear** text is summarised in print: the *Revue de Champagne et de Brie* XII (1882) p.341 calendar and its 1899 reprint. No printed text of the **cipher** passages or of any decipherment of them was located. |
+| f.128r, the key source | N1 (unchanged) | period | `known`: printed in full, Revue XII (1882) p.340 |
+
+**Licensed grades (527 cipher tokens, dots excluded): C 177, M 311, U 39, no H, no S.** C here means: the print-alignment
+row has at least 2 occurrences and **no** conflicting alignment, and the f.130 sign is read at H. The polyphones `#`
+(c 7 / d 6) and `v` (a 8 / t 5) are graded M, as the brief requires. Rows whose print alignment carries a minority
+conflict are also graded M: `0` e 11/18 (s 4, p 2, c 1; 38 tokens), `m` u 8/10 (t 2; 37), `sq` s 7/9 (x 2; 31) and
+`a` q 4/5 (ul 1; 11). The pre-registered rule (agree >= 3 and >= 0.5) admitted them. Every grade figure, so a reader can
+choose: pre-registered C 357 / M 131; polyphones held at M (DIN-PRINT's conservative figure) C 291 / M 197; agree/n >= 0.75
+C 253 / M 235; **strict, no conflict, C 177 / M 311**. U is 39 in all four. The `sq` x and `m` t splits may be orthographic or
+aligner drift (x for final s in "cheuaux"/"deux"; two adjacent u/t slips). A per-occurrence look could promote 68 tokens.
+Until that is done, they are M.
+
+**Safe sentence:** "A key that we rebuilt from the 1882 printed text of Dinteville's deciphered letter of 1 July 1592 (BnF
+fr.3621 f.128) reads the two cipher passages of his letter of 4 July 1592 (f.130) far better than chance, and better than keys
+aligned to other French texts. So far it gives only short French fragments (for example 'conserver ... en l'obéissance', 'la
+ville et le roi', 'dehors les ... serviront'). About a third of the signs are read at grade C and the rest are uncertain. We
+have not located a prior decipherment of these passages. The letter's clear text is summarised in an 1882 calendar."
+
+**Unsafe sentence:** "We have deciphered the 3 July 1592 cipher letter for the first time, with 55% of it certain." This is
+wrong on three counts. "First" is not licensed at N3. 55% is the C 291 figure, which still counts conflicting rows; the
+licensed figure is 34% (C 177). The date is not 3 July on present evidence (see 2).
+
+### 1. Re-derivation and controls
+
+- **Rule 7.** `f128/print_align/align_print.py --check` and `f130/print/score_print.py --check` print "check: committed
+  outputs match". `tools/decode_key.py ciphers/fr3621-dinteville-1592 --check` prints "reading up to date" (3 jobs; job 3:
+  C 357, M 131, U 39). All exit 0. `verify/verify_din2.py --check` also matches.
+- **f.130 controls at fresh seeds** (1000 each; real -1.2714, 385 windows):
+
+| seed | free mean / p95 / max (>= real) | banded mean / p95 / max (>= real) |
+|---|---|---|
+| 52001 | -1.955 / -1.698 / -1.489 (0) | -1.675 / -1.578 / -1.441 (0) |
+| 52002 | -1.956 / -1.698 / -1.563 (0) | -1.674 / -1.572 / -1.417 (0) |
+| 52003 | -1.957 / -1.705 / -1.510 (0) | -1.673 / -1.579 / -1.429 (0) |
+
+  0/6000. Both controls permute which letter a sign carries, so they can move the statistic. They are not orthogonal.
+- **f.128 alignment shuffle at a fresh seed** (52001, 300 shuffles of the print letters, re-split to the print's word
+  lengths): real consistency 0.831 (160 occ) vs mean 0.292, p95 0.325, max 0.350, 0/300. The control changes which plain
+  letter falls under each sign, so it can change consistency. It is not orthogonal either. DIN-PRINT's rotation control has a
+  near-identity maximum of 0.803 (a one- or two-letter shift lets the aligner slip back into phase). The gate passes against
+  the rotation max only narrowly. The shuffle and the wrong-text control below are the discriminating nulls.
+- **Wrong-text control (new).** This asks whether any real French plain text forced through the same aligner gives a key
+  that reads f.130 this well. Twenty passages of 16th-century French prose (fr16 `lettresindites00marg`, the print's
+  per-segment word counts kept) were aligned to the f.128 cipher with the identical syllabic settings, and each key was
+  applied to f.130. f.128 consistency: mean 0.367, max 0.468 (real 0.831), 0/20. f.130 fr16 score: mean -1.700, p95
+  -1.488, max -1.440 (real -1.271), 0/20. These wrong texts sit inside the scoring model's own training corpus, which
+  favours the control. The f.130 signal comes from the print being the right plaintext, not from the aligner forcing
+  French letter frequencies onto the signs.
+
+### 2. Date
+
+- **Crop.** One native region of canvas f269 (`images/src_ark_12148_btv1b52524472n_f269_400_3825_2450_175.jpg`, via
+  tools/iiif_lines.py) was fetched and looked at once (the brief's one vision call). It is **not the date line**. It is a
+  body line of clear text ("...Lorraine a envoyé ... du duc de Parme, ..."). The region was chosen from the numeric ink
+  profile of an 808 px thumbnail, which was not looked at. Its manifest entry says so. The image does not settle the date.
+- **Print witnesses (new).** The BnF's own printed catalogue (*Catalogue des manuscrits français*, ancien fonds, t.III,
+  1868; IA `p1cataloguegnr02bibluoft`) describes no.116 as "Lettre du Sr de « Dinteville,... à monseigneur le duc de
+  Nyvernoys,... De Langres, le un' juillet 1592 ». (Fol. 130.)". In the same OCR, "u" stands for "ii" (xxvui = xxviii,
+  n' = ii' for Potier's 2 July), so "un'" is most likely "iiii". With the 1882 *Revue* ("Langres, 4 juillet 1592") this
+  gives two printed witnesses for 4 July, against Bourdeau's leaf reading iij. The same catalogue gives no.114 (f.128) as
+  "Lettre, avec chiffre et déchiffrement" and no.116 with no cipher note, which fits no decipherment on f.130.
+- **Status.** The folder's "3 July" heading is not supported by any print witness. 4 July is the better-supported date,
+  but the leaf has still not been read at the date line. Next: one region fetch of the f269 block y 4180-5340 (heavier ink,
+  where the date, signature and postscript appear to sit) and one look, about USD 1.5.
+
+### 3. Second rule-10 search (3 Oct 2026, families VERIFY-DIN did not cover or could not reach)
+
+- **Revue de Champagne et de Brie, other volumes.** IA full-text (be-api) for "Langres, 4 juillet 1592" returned 3 items.
+  `revuedechampagne12pariuoft` and `revuedechampagn11unkngoog` hold the same p.341 calendar entry for f.130 ("Il craint que
+  l'ennemi ne remarche..."). `revuedechampagn03unkngoog` (a Google scan, OCR fetched and read in context, pp.148-149 of the
+  series) holds a **different** letter, "Le Conseil de Ville. Langres, 4 juillet 1592. Au duc de Nevers": the town
+  council's complaint that Dinteville had to send all his troops to Châteauvilain. That letter is in clear, not f.130.
+  "4 juillet 1592" (20 hits) turned up no other Dinteville entry.
+- **1899 reprint**, *Nouvelle revue de Champagne et de Brie* (Google Books XA859zs04_YC, snippet): the same calendar
+  ("Langres, 4 juillet 1592. Au duc. Il craint que l'ennemi ne remarche ... chiffres ... DINTEVILLE 341"). It is a reprint of
+  the 1882 entry and prints no decipherment.
+- **BnF catalogue for fr.3621** (the printed *Catalogue des manuscrits français* 1868, IA OCR, entries 97-117 read): see 2.
+  It notes no decipherment for no.116. The online archivesetmanuscrits record was not fetched separately; it derives from
+  this catalogue.
+- **ARCSI PDFs** (unread in the first audit): both are now extracted with pypdf in a scratch venv. `arcsi.fr/doc/Tant/420.pdf`
+  (D. Tant, "Autres codes", 8 pp.) lists archive cipher items, with no Dinteville and no fr.3621. `arcsi.fr/doc/Tant/Chalons.pdf`
+  (D. Tant, "La lettre chiffrée de Chalons", 3 pp.) covers a different item: the 1594 Châlons cipher letter and key (Nevers is
+  named in the key). Neither concerns f.130.
+- **Drouot, *Mayenne et la Bourgogne* (1937)** (IA `IA41551607_0001/0002`, be-api): it cites fr.3621 among Nevers's
+  correspondence and cites deciphered Dinteville letters elsewhere (8 July 1592 "lettre déchiffrée", fr.4718/4075). It has
+  no entry for 4 July and nothing on f.130. This lead points to **other** Dinteville cipher letters with period decipherments
+  (fr.4718, fr.4075 f.37), a possible further key test (SO question 2, gaps).
+- **Boltanski, *Les ducs de Nevers et l'État royal* (Droz 2006).** It is in copyright and its full text is not reachable from
+  the cloud. Google Books returned 0 for "Boltanski Nevers Dinteville Langres 1592" and "Boltanski ... Dinteville chiffre";
+  the exact-title + Dinteville query returned HTTP 503 once and was not retried. OpenAlex lists only reviews (2007-2013).
+  This family is **unreachable**, not negative. It is the main reason this audit holds N3, not N4.
+- **Google Books** (key, country=US): "Dinteville" Nevers chiffre déchiffrement 1592 (3: the BnF catalogues); "Dinteville"
+  "en chiffre" Langres Nevers (4: catalogues; Barthélemy, *La Réforme et la Ligue en Champagne* 1888, a different letter to
+  Châlons); "Dinteville" Nevers "lettres chiffrées" (6, none about f.130); Dinteville Langres 1592 chiffre (12: the Revue
+  calendar, 1899 reprint, Histoire militaire du pays de Langres 1884, Langres pendant la Ligue 1868, Annales de Bourgogne
+  1947; none prints the cipher content); "Dinteville" "4 juillet 1592" (3: the two Revue entries and the 1899 reprint);
+  "en l'obeissance" "conserver ces" Langres (302, generic, no Dinteville hit).
+- **OpenAlex** (key): "Dinteville Nevers", "Dinteville Langres Ligue", "Joachim de Dinteville", "Nevers correspondance
+  chiffrée Ligue", "Boltanski ducs de Nevers". No work on Dinteville's 1592 cipher letters. **Semantic Scholar** (key):
+  "Dinteville Nevers 1592" returned the Lasry et al. paper on the king's digit-cipher letter to Nevers (a different letter,
+  already known); the two other queries hit 429 and were not retried. **HAL**: "Dinteville" 5 (art history, Guillaume de
+  Dinteville 1550s), "Dinteville Nevers" 0, "ducs de Nevers chiffre" 0. **Persée**: "Dinteville Nevers 1592" returned
+  Dinteville mentions in HES 1990 and 2003 and BSNAF 2004, none on this letter or its cipher.
+- **Not re-run** (covered by VERIFY-DIN, unchanged since 07:50): Gomberville, Henri IV Lettres missives, Tomokiyo, Cabinet
+  Noir, Bourdeau, Aymeloglu, DECODE. JSTOR stays queued (VERIFY-DIN's 4 rows); it does not block N3.
+
+### 4. Postmortem and corrections
+
+- **Grade over-claim (residual).** DIN-PRINT's conservative C 291 still counted rows whose own print alignment conflicts,
+  so the licensed figure is C 177 (Verdict above). I corrected the "about 55% of the letters are now firm" sentence in
+  `second-opinions/PROMPT-chatgpt-DIN.md` to "about a third", and the NEAR.md row. The solver's committed outputs
+  (key_dk.tsv, tokens.tsv, decode.json job 3) are not edited; regrading score_print.py to the strict rule is a next step.
+- **Date heading.** The NOTES.md heading's "3 July 1592" has no print support (2). I have not changed it, because the leaf
+  is not yet read at the date. Both stay flagged.
+- **N4 blocker.** Boltanski 2006 is unread and the JSTOR rows are unanswered. A third search adding nothing else would not
+  change the class without these.
+
+Requests this session: gallica.bnf.fr 3 (info.json, one 808 px thumbnail read numerically only, one native region),
+be-api.us.archive.org 9, archive.org 4 (advancedsearch 1, OCR 3), googleapis.com/books 10, api.openalex.org 5,
+api.semanticscholar.org 3 (2 x 429), api.archives-ouvertes.fr 3, persee.fr 1, arcsi.fr 3 (one 404 on a wrong path).
+Vision calls: 1. No decoding beyond the re-derivation and the controls. No credentials printed.

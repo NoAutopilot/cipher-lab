@@ -17,7 +17,7 @@ THE ITEM
   "Messieurs de la ville"), "dehors les ... serviront ... leur", "la ville et le roi", "pourvoir de ... retirer d'aultant
   qu'il y a ... l'honneur" (just before the clear words "pour luy"). There is no continuous plaintext.
   (Revised 3 Oct 2026, after this prompt was first written: the key has since been re-aligned to the 1882 print of
-  fol.128 instead of the manuscript gloss. The same fragments recur and about 55% of the letters are now firm. The
+  fol.128 instead of the manuscript gloss. The same fragments recur. About a third of the letters are firm (C 177 of 527; a second audit on 3 Oct 2026 held the c/d and a/t polyphones and every sign whose print alignment conflicts at uncertain). The
   questions below are unchanged.)
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr3621-dinteville-1592/AUDIT.md
 

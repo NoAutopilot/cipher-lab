@@ -582,19 +582,39 @@ Rule 7: `python3 tools/decode_key.py ciphers/fr3621-dinteville-1592 --check` pri
 `f128/print_align/align_print.py --check` and `f130/print/score_print.py --check` print "check: committed outputs match".
 No spec, so judge_plaintext.py was not run as a spec judge. Requests: none. Vision calls: none. Rule 10: no novelty claim.
 
-## Remaining gaps (DIN-PRINT, 3 Oct 2026)
-Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key at C 357 / M 131 / U 39 (pre-registered rule; C 291 / M 197 with the polyphones # and v held at M), f130/print/reading.txt, decode.json job 3; f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 (f128/print_align/)
-- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; the print key leaves v' (23) and 0' (14) unkeyed and # (c/d) and v (a/t) polyphone; next: a verifier session on f130/print/reading.txt (supersedes the repaired reading; carry into AUDIT.md and SO-DIN-F130), then a word-division pass with # and v read in context and graded I, ~$4
-- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support, and the repair climb that filled them fails its own known-answer test (AUDIT.md 2d); next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
-- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
-- f.130 date (iij or iiij July) - blocker: not-attempted; no date-line crop on disk (DIN-PRINT); next: one Gallica region fetch of the f269 foot and one look, ~$1
+## Second verifier (VERIFY-DIN2, account 3, 3 Oct 2026, 08:09-08:25 UTC) -- see AUDIT.md "Second audit"
 
-## Escalation (DIN-PRINT, 3 Oct 2026)
-- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT)
-- [ ] clear-pages: fr.3623 f.23 decipherment not yet compared (planned step above)
+N3 is kept, with key source `period` (rebuilt from the 1882 print of f.128's plaintext). All three --check scripts pass, and
+`verify/verify_din2.py --check` reproduces `verify/result2.json`. At fresh seeds 52001-3 the print key beats 0/3000 free and
+0/3000 frequency-banded shuffles (max -1.417). The f.128 alignment beats a fresh shuffle at 0.831 vs max 0.350, 0/300. A
+**new wrong-text control** aligns 20 real 16th-century French passages to the f.128 cipher with the same settings. It gives
+f.128 consistency max 0.468 and f.130 max -1.440 against the real -1.271 (0/20), so the signal comes from the right
+plaintext, not from the aligner.
+**Licensed grades: C 177, M 311, U 39.** C needs at least 2 occurrences and no conflicting print alignment. The polyphones
+`#` and `v` are M, and so are the conflicted rows `0` (e 11/18), `m` (u 8/10), `sq` (s 7/9) and `a` (q 4/5). For
+comparison: pre-registered C 357, DIN-PRINT's conservative figure C 291, agree/n >= 0.75 C 253.
+**Date:** the one native crop (`images/src_..._f269_400_3825_2450_175.jpg`) turned out to be a body line, not the date, so
+the leaf is still unread at the date. Two print witnesses favour 4 July: the BnF *Catalogue des manuscrits français* (1868),
+whose OCR reads "le un' juillet 1592" with u = ii in the same OCR, and the 1882 Revue. Bourdeau's leaf reading is iij.
+**New print found:** the *Revue* also prints a different clear letter of the same day, from the Langres town council to
+Nevers ("Le Conseil de Ville. Langres, 4 juillet 1592", IA revuedechampagn03unkngoog). Drouot, *Mayenne et la Bourgogne*
+(1937), cites deciphered Dinteville letters elsewhere (8 July 1592; BnF fr.4718, fr.4075 f.37). Both ARCSI PDFs are now
+read, and neither concerns this letter. Boltanski 2006 is unreachable; it is the N4 blocker together with JSTOR.
+
+## Remaining gaps (VERIFY-DIN2, 3 Oct 2026; supersedes DIN-PRINT's list)
+Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key; licensed C 177 / M 311 / U 39 (VERIFY-DIN2, AUDIT.md Second audit; pre-registered C 357, polyphones-at-M C 291), f130/print/reading.txt, decode.json job 3; f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 and wrong-text max 0.468
+- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; # (c/d) and v (a/t) are polyphones and v', 0' unkeyed; next: a word-division pass with # and v read in context and graded I, plus a per-occurrence check of the sq x / m t alignments (68 tokens), ~$4
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support; next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
+- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
+- Dinteville letters with period decipherments cited by Drouot 1937 (8 July 1592, BnF fr.4718; fr.4075 f.37) - blocker: not-attempted; found by VERIFY-DIN2; next: locate on Gallica and check whether the sign set matches f.128/f.130, ~$3
+- f.130 date (iij or iiij July) - blocker: not-attempted; VERIFY-DIN2's crop at y 3825-4000 was a body line; next: one Gallica region fetch of the f269 block y 4180-5340 and one look, ~$1.5
+
+## Escalation (VERIFY-DIN2, 3 Oct 2026; supersedes DIN-PRINT's list)
+- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT), wrong-text max 0.468 (VERIFY-DIN2)
+- [ ] clear-pages: fr.3623 f.23 decipherment and the Drouot-cited deciphered letters (fr.4718, fr.4075 f.37) not yet compared (planned steps above)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
-- [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT)
-- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT)
+- [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT); 1899 reprint, BnF catalogue 1868, Drouot 1937, ARCSI PDFs searched (VERIFY-DIN2)
+- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT); fresh seeds 0/6000, wrong-text 0/20 (VERIFY-DIN2)
 - [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 4 internal gaps; cheapest next: a verifier session on f130/print/reading.txt (the print-key reading supersedes the repaired one), then fr.3623 f.23's sign set for v' and 0', ~$4
+Verdict: keep going: 5 internal gaps; cheapest next: one look at the f269 date block (~$1.5), then fr.3623 f.23's sign set for v' and 0' (~$4)
