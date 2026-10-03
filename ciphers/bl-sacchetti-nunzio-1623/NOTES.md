@@ -150,4 +150,4 @@ Re-read of the verdict and premise check above, with no new search (both were co
 
 ## While waiting
 
-Search Barberini-side nunciature editions (Vatican Barb. lat. series, the one family premise (d) left unsearched) by full text for "Sacchetti" with "cifra"; depends on nobody (~USD 0.5).
+- Search Barberini-side nunciature editions (Vatican Barb. lat. series, the one family premise (d) left unsearched) by full text for "Sacchetti" with "cifra"; depends on nobody (~USD 0.5).

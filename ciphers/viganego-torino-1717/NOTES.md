@@ -69,4 +69,4 @@ Send the existing REQUEST.md (ASGe items 246, 249, 254) to ASGe; ~USD 0 agent co
 
 ## While waiting
 
-Open `memoriedigitaliliguri.it` extract PDF from the 3 Oct search and read it for a Viganego mention (one request, ~USD 0.3); depends on nobody.
+- Open `memoriedigitaliliguri.it` extract PDF from the 3 Oct search and read it for a Viganego mention (one request, ~USD 0.3); depends on nobody.

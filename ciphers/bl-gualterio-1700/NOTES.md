@@ -227,4 +227,4 @@ Re-read of the verdict and premise check above, with no new search (both were co
 
 ## While waiting
 
-Fetch Add MS 20582 (the cardinal's key book) scope text and the Stuart Papers calendar entries for the Vernon group from the BL catalogue JSON already on disk (`bl_catalogue_2026-10-03.tsv`) and list which correspondents have a period key named; depends on nobody (~USD 0.5).
+- Fetch Add MS 20582 (the cardinal's key book) scope text and the Stuart Papers calendar entries for the Vernon group from the BL catalogue JSON already on disk (`bl_catalogue_2026-10-03.tsv`) and list which correspondents have a period key named; depends on nobody (~USD 0.5).

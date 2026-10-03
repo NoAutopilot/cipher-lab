@@ -80,4 +80,4 @@ Open Bourdeau's targets/potocka1714 folder and DECODE R7524's own thumbnail and 
 
 ## While waiting
 
-Read Bourdeau's potocka1714 NOTES.md (public, MIT/CC BY) to see whether R7524's numeral system shares signs with the recovered Potocka alphabet; depends on nobody (~USD 1).
+- Read Bourdeau's potocka1714 NOTES.md (public, MIT/CC BY) to see whether R7524's numeral system shares signs with the recovered Potocka alphabet; depends on nobody (~USD 1).
