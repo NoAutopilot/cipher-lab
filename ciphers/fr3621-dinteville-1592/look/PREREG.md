@@ -23,3 +23,16 @@ Decision rule:
   marked). Row 0 stays M; the polyphone/scribal-error reading stands; nothing changes.
 - **undecided**: anything else (fewer than 5 located, or a mark on 2-3 of them, or marks on e-readings too). Nothing
   changes; logged as image-undecided at this crop resolution.
+
+## Unit 2-3 rule: fr.3623 f.23r sign set (written ~09:50 UTC, after the 808 px overview, before any line crop is read)
+
+Overview (look/../f3623/f23rv_overview.jpg): f.23r carries a pasted slip, about 9 cipher lines with an interlinear
+Italian decipherment in another hand, a signature and a dated line ("del angres il 2 ottobre"); f.23v carries only an
+endorsement/address strip. One vision call (Sonnet subagent, 16 line crops from tools/iiif_lines.py) lists the cipher
+signs with the f.128/f.130 labels (f128/pass_instructions.md + f128/README.md extras + v', 0') or NEW:<description>,
+with counts, no values. Rule:
+- **same family**: >= 85% of f.23r's cipher tokens take an existing f.128/f.130 label AND >= 70% of f.130's 20 most
+  frequent sign types occur on f.23r. Then, if v', 0' or a NEW f.130 sign occurs on f.23r under an interlinear gloss,
+  an alignment job is written as the next step with its price (not run now).
+- **different**: < 60% of tokens take an existing label. Then f.23r is not a key source for v'/0'/NEW.
+- **undecided**: anything between.
