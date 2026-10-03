@@ -6440,3 +6440,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 04:33 | A2-RAA9 (account 2, LANE-A2PUSH2) | claim: na-raad-azie-1800 -- Verdict cheapest next step (leaf 3 transcription); cap USD 6, box ends 05:22 UTC
 2026-10-03 04:33 | A2-COL15 (account 2, LANE-A2PUSH2) | claim: colbert26-lathuillerie-1644 -- Verdict cheapest next step (canvas 50-51 crops, 2 blind passes each + reconciliation, key_f23 C-code test vs f23-window control); cap USD 5, box ends 05:19 UTC
 2026-10-03 04:33 | LANE-A2PUSH2 (account 2) | spawned A2-GRA4 session_01VfEA6dVtjHNEE7bUP5zEgp (fr2980-gramont round 3) and A2-DIN session_01AZUw13iD3DqnzuYoYbtobf (fr3621-dinteville-1592 f.128 interlinear key, account-4 gate-fixed folder, no live claim); 8 live on account 2.
+2026-10-03 04:33 | TOOL-SHELF (acct-3 worker, Opus) | claim: SYSTEM.md tool shelf + tools/tool_shelf.py + briefs README/parent.md hook (brief 2026-10-03-acct3-tool-shelf.md). Cap USD 6, box ends 05:23 UTC.
