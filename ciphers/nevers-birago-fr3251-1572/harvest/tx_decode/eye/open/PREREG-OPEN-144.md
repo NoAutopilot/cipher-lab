@@ -1,4 +1,4 @@
-# BIR-OPEN-144 pre-registration (3 Oct 2026, 13:5x UTC, account-3 worker)
+# BIR-OPEN-144 pre-registration (3 Oct 2026, 13:45 UTC, account-3 worker)
 
 Brief `.claude/briefs/runs/2026-10-03-acct3-bir-open.md`, section BIR-OPEN-144. Same protocol as `PREREG-OPEN.md` (f.117r/f.168), applied to
 nevers-birago-fr3251-1572 **f.144r** (no.73) only. Written and pushed **before any crop is cut or shown and before any score**.
