@@ -190,3 +190,9 @@ applied unchanged, and three named cycle-3 briefs written from it.
   transcription against that known answer, separately, before any shuffled-key calibration, sibling-key recovery or
   second transcription pass. fr4715-montholon-1589: 25.38 of z-calibration failed to say which part was wrong; a
   2.64 known-answer step (MONT-4715C2) said key right (z 16.7), transcription short.
+  The same holds when a read is retried on a stronger model after a weaker one failed (RETRO-2026-10-03-acct3 P3):
+  the first paid step is at most 2 vision calls on lines whose reading is already known (a gloss line another job
+  settled, a printed opening), scored against that answer. The full read is briefed only if the probe beats a
+  pre-registered share (default 0.7 of tokens). Below it, the read is retired for that model too (rule 3's third-attempt
+  clause), and the next step is a different instrument (the owner's sign sorter, a better image), not a larger pass.
+  F36-GLOSS: Sonnet retired on the f.36 gloss twice, then Opus on every gloss line read at chance for 18.33 against a 6 cap.

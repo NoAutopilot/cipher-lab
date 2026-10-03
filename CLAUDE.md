@@ -974,6 +974,10 @@ runs `tools/ledger_check.py`: if it flags a duplicate session id for the orchest
 already ledgered once (LANE B5, V7 and GOLD3 all did this in one window, 26 Sept 2026, about USD 17 of orchestrator
 overhead counted twice across the three pairs) -- edit the existing row in place rather than appending a second one, unless the new row
 demonstrably describes different workers or a different total spend from the first.
+A job run by one account for another is ledgered once, by the account that ran the session (it alone can read the
+cost), with "(for <account>)" in the role. The requesting orchestrator writes no row of its own; it records the result
+in its handoff or STATUS.md (RETRO-2026-10-03-acct3 P4: 24 "not visible from account N" twins on 2-3 Oct doubled the
+12-row retrospective trigger).
 Briefs are copies of the templates in `.claude/briefs/`; a lesson becomes a template edit, not a note. A
 retrospective session (`.claude/briefs/retrospective.md`) runs after every 12 ledger rows or $60 of worker
 usage, whichever comes first (the orchestrator checks after every worker report), and after any worker scored X

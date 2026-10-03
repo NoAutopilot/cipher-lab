@@ -137,3 +137,8 @@ each of (a)-(d) as found / not found / unreachable. A find makes the item calibr
 is spent reading it. Lesson of 2 Oct 2026: of four likely-solves first tests later classed N0 by a verifier, two
 (nevers-birago no.87, royalist f.10) failed on (a)/(b)/(c) and one (Clinton) on (d); the post-reading verifier stays,
 because phrase search on decoded text can only happen after a reading exists.
+A check-solved or gate-fix job that leaves the target `blocked`, or `open`/`partial` with its next step waiting on an
+image, key, edition or person, also writes "## While waiting" in NOTES.md naming the one action that depends on
+nobody (tools/next_steps.py reads it), and pastes `python3 tools/next_steps.py --wait-only | grep <target>` showing
+no line. Lesson of 3 Oct 2026 (RETRO-2026-10-03-acct3): wait-only rose 25 -> 38 in a day; 23 of the 38 were cleared by
+GF-A2/CS-A2 gate-fix batches whose briefs never asked for the section.
