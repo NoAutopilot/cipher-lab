@@ -129,7 +129,7 @@ decode.py reads this table; keep the column order.
 | wean | threaten | C | OR 7 p.646 ("seriously threaten Memphis") |
 | whist | regiment(s) | I | ledger p.[5], [8], [40] |
 | whistle | the enemy | I | ledger p.[5], [7], [33], [34] |
-| widow | (troops sent, reinforcements?) | M | ledger p.[26], [27] |
+| widow | reinforcements | C | OR 11 pt3 p.286, OR 12 pt1 p.659 (ledger 5095, 5079, June 1862; GAPS122); was M "(troops sent, reinforcements?)" from ledger p.[26], [27] (Feb), which the print agrees with |
 | wreathe | gunboat(s) | C | OR 7 p.624, 646 |
 | yankee | (stores? transportation?) | M | ledger p.[7], [45] |
 | youth | arms | I | ledger p.[5], [6], [40] |
@@ -146,6 +146,14 @@ decode.py reads this table; keep the column order.
 | robin | division | C | OR 11 pt3 p.260, 326 (ledger 5090, 5110, June-July 1862; GAPS118) |
 | wedding | transportation | C | OR 11 pt3 p.217, 260 (ledger 5073, 5090, June 1862; GAPS118) |
 | welsh | reinforcements | C | OR 11 pt3 p.232, 234, 258, 269, 270 (ledger 5085-5093, June 1862; GAPS118) |
+| Danube | McDowell | C | OR 12 pt3 p.125, OR 12 pt1 p.533 (ledger 5060, 5064, May-June 1862; GAPS122); Anthon is also McDowell in the same months (GAPS118) |
+| Ingot | Lynchburg | C | OR 11 pt3 p.326, OR 12 pt3 p.491 (ledger 5110, 5116, July 1862; GAPS122) |
+| Jargon | Charlottesville | C | OR 11 pt3 p.325-326, OR 12 pt3 p.354, 481, 490-491 (ledger 5075, 5110, 5111, 5116, 5117, June-July 1862; GAPS122) |
+| Offal | Richmond | C | OR 11 pt3 p.294, OR 12 pt1 p.659 (ledger 5096, 5079, June-July 1862; GAPS122); humming is also Richmond |
+| Quack | Sigel | C | OR 12 pt3 p.453, 454 (ledger 5099, 5100, June-July 1862; GAPS122) |
+| quadrant | cavalry | C | OR 11 pt3 p.326, OR 12 pt3 p.476, 481, 490-491 (ledger 5109, 5110, 5111, 5116-5117, July 1862; GAPS122) |
+| tambour | infantry | C | OR 12 pt3 p.486, 491 (ledger 5112, 5116, July 1862; GAPS122); Feb entries use wharf |
+| wafer | regiment | C | OR 12 pt3 p.481, 490 (ledger 5111, 5116, July 1862; GAPS122); Feb entries use whist (I) |
 | Eugenia | 8 PM (time word) | I | ledger: 7 Feb 7.15 PM, 15 Feb 8 PM twice |
 | Florence | 7 PM (time word) | I | ledger: 6 Feb 7 PM twice, 13 Feb 7 PM |
 | Francis | 11 PM (time word) | I | ledger: 14 Feb 11 PM twice, 15 Feb 11 PM |

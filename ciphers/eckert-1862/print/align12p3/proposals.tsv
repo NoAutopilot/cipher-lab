@@ -1,0 +1,53 @@
+ledger_word	n_occ	n_telegrams	top_meaning	top_count	all_meanings	key_md	status
+juno	7	4	gor dons ville	7	gor dons ville:7	Gordonsville	conflicts-key
+rampant	4	4	enemy	4	enemy:4	(the) enemy	agrees-key
+jargon	7	3	charlottesville	7	charlottesville:7		propose
+quadrant	5	3	cavalry	5	cavalry:5		propose
+stanhope	3	3	flank	2	flank:2; the shenandoah:1		propose
+arctic	4	2	fremont	4	fremont:4	Fremont	agrees-key
+camden	4	2	banks	4	banks:4	Thomas	conflicts-key
+humming	2	2	eichmond	2	eichmond:2	Richmond	conflicts-key
+indus	3	2	fredericksburg	3	fredericksburg:3	Fredericksburg	agrees-key
+lather	2	2	james kiver	2	james kiver:2	Michigan	conflicts-key
+panther	2	2	advance	2	advance:2	advance	agrees-key
+princess	2	2	artillery	2	artillery:2	artillery	agrees-key
+quack	3	2	sigel	3	sigel:3		propose
+robin	2	2	division	2	division:2	division	agrees-key
+tambour	4	2	in fantry	4	in fantry:4		propose
+virtue	2	2	artillery	2	artillery:2	Frederick	conflicts-key
+vulcan	3	2	railroad	2	railroad:2; headquarters wheeling va:1		single
+alden	1	1	banks	1	banks:1	Halleck	conflicts-key
+aldens	2	1	banks	2	banks:2		single
+andes	1	1	mc clellan	1	mc clellan:1	McClellan	conflicts-key
+army	1	1	any	1	any:1		single
+arno	1	1	halleck	1	halleck:1	Rosecrans	conflicts-key
+carthage	2	1	cavalry	2	cavalry:2		single
+certain	1	1	stated	1	stated:1		single
+danube	1	1	mcdowell	1	mcdowell:1		single
+him	1	1	in in	1	in in:1		single
+his	1	1	your	1	your:1		single
+ingot	1	1	lyuchburg	1	lyuchburg:1		single
+john	1	1	jno	1	jno:1		single
+lantern	2	1	gor dons ville	2	gor dons ville:2		single
+out	1	1	on	1	on:1		single
+palates	2	1	bridges	2	bridges:2		single
+parma	1	1	ammunition	1	ammunition:1		single
+quadrons	1	1	me dowelfs	1	me dowelfs:1		single
+queen	1	1	banks	1	banks:1		single
+sable	1	1	washington	1	washington:1		single
+say	1	1	go	1	go:1		single
+secretary	1	1	town	1	town:1		single
+trance	1	1	winchester	1	winchester:1		single
+trinity	1	1	louisa court house	1	louisa court house:1		single
+two	1	1	lost	1	lost:1		single
+ursa	1	1	pickets	1	pickets:1		single
+vomit	1	1	cavalry	1	cavalry:1	Paw Paw	conflicts-key
+wafer	1	1	regiment	1	regiment:1		single
+wafers	1	1	regiment	1	regiment:1		single
+wedding	1	1	tranportation	1	tranportation:1	transportation	conflicts-key
+whale	1	1	cavalry	1	cavalry:1	cavalry	agrees-key
+wharf	1	1	in fantry	1	in fantry:1	infantry	conflicts-key
+wharton	1	1	division	1	division:1		single
+whist	1	1	regiment	1	regiment:1	regiment(s)	conflicts-key
+windham	1	1	enemy	1	enemy:1		single
+worst	1	1	rout	1	rout:1		single
