@@ -6930,3 +6930,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 11:44 | GAPS95-riksarkivet-r4282-1628 (account-4) | claim: close riksarkivet-r4282-1628 to parked per rule 5 (Remaining gaps/Escalation/While waiting), for the account-4 parent
 2026-10-03 11:44 | GAPS97-bl-james-1669 (account-4) | claim: bl-james-1669 NEXT-STEPS row (ff.1-8 pairing); files: ciphers/bl-james-1669/NOTES.md
 2026-10-03 11:44 | GAPS94-sufi-fiddle (account-4) | claim: sufi-fiddle -- matched-span TSV dump + one blind Opus Jawi/Arabic reading pass (text only, prereg before the call); cap USD 5, box 30 min from 11:45 UTC
+2026-10-03 11:45 | FT4q-naf14913-rousseau-venice-1743 (account-4) | claim naf14913-rousseau-venice-1743: 722 polyvalence test (script) + f.265r/f.266r pair transcription, for the account-4 parent; cap USD 10, box 50 min from 11:46 UTC
