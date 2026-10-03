@@ -1,0 +1,4 @@
+held_out=memorialhistri17realuoft.txt.gz N=634 samples=200 real_p05=-0.852 false_negatives=71/200 (35.5%)
+held_out=memorialhistri18realuoft.txt.gz N=634 samples=200 real_p05=-0.862 false_negatives=39/200 (19.5%)
+held_out=memorialhistri19realuoft.txt.gz N=634 samples=200 real_p05=-0.890 false_negatives=16/200 (8.0%)
+TOTAL false-negative rate: 126/600 (21.0%); per-fold spread 8.0-35.5% (3 folds)

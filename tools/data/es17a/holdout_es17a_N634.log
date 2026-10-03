@@ -1,0 +1,6 @@
+held_out=relacionesdelasc00cabr.txt.gz N=634 samples=200 real_p05=-0.917 false_negatives=45/200 (22.5%)
+held_out=correspondencia01clemgoog.txt.gz N=634 samples=200 real_p05=-0.898 false_negatives=153/200 (76.5%)
+held_out=bub_gb_zb0d4P6LU2oC.txt.gz N=634 samples=200 real_p05=-0.921 false_negatives=153/200 (76.5%)
+held_out=bub_gb_54G5MclHRpUC.txt.gz N=634 samples=200 real_p05=-0.914 false_negatives=76/200 (38.0%)
+held_out=bub_gb_CujQp6gW1dQC.txt.gz N=634 samples=200 real_p05=-0.901 false_negatives=194/200 (97.0%)
+TOTAL false-negative rate: 621/1000 (62.1%); per-fold spread 22.5-97.0% (5 folds)

@@ -912,3 +912,57 @@ reader's reading forced a different word except the m/n of "comforme".
 corpus (rule 3, es17c/pt18 lessons) before reading the judge FAIL as a verdict, ~$2; (a') crop-and-read pass on blocks
 A and C2 with the settled conventions, ~$4; optional: an owner sign-sorter check of the 9/q, f/p, v/r, l/t and G/t
 pairs on this hand, if a known-answer accuracy figure is wanted for B/C1.
+
+## 12. OLD-ES17A, 3 Oct 2026: era-matched judge corpus es17a (1590-1625) and re-judge of B/C1 -- FAIL of unknown reliability; status stays open
+
+Brief: `.claude/briefs/runs/2026-10-03-acct1-old-es17a.md` (LANE-A1, account 1). Step (d) only. No reading changed.
+Pre-registration committed before any target score: `transcription/PREREG_OLD-ES17A.md` (commit 5d8eeb5e).
+
+**Corpus.** `tools/data/es17a` (wired as `LANG_CORPORA["es17a"]`, offline test `tools/tests/test_judge_plaintext_lang_es17a.py`):
+five archive.org texts of 1590-1625 Spanish state, diplomatic and court prose -- Cabrera de Córdoba's *Relaciones* 1599-1614
+(1857 print), San Clemente's embassy letters 1581-1608 (1892 print), Coloma 1625, Mendoza 1592, Antonio Pérez's *Relaciones*
+1624 (the three originals long-s repaired with tools/data/es18's cleaner), each capped at 650k folded letters, about 2.52M in
+all. Hold-out grep (Senisteros, Cisneros, Juan de la Peña, García de Sen*): zero hits. Sources, cleaning and caveats:
+`tools/data/es17a/README.md`. Archive.org requests: 7 advancedsearch + 7 djvu downloads, >= 1.6 s apart.
+
+**Fold check (rule 3), N=634, 200 windows per fold** (`tools/data/es18/holdout_check.py --lang es17a|es17c --N 634`):
+```
+es17a: TOTAL false-negative rate 621/1000 (62.1%); per-fold spread 22.5-97.0% (5 folds)
+       Cabrera 22.5, San Clemente 76.5, Coloma 76.5, Mendoza 38.0, Pérez 97.0
+es17c: TOTAL false-negative rate 126/600 (21.0%); per-fold spread 8.0-35.5% (3 folds)
+```
+By the pre-registered rule both are **unknown reliability** at this N: es17a has five files but a 4x spread and a 62% blended
+rate (its sources are each other's outliers: two 19th-century editorial printings, three noisy long-s originals -- the
+EN-FOLDS/es18p shape); es17c has three folds and a 4x spread.
+
+**Re-judge** (`python3 scripts/es17a_rejudge.py` from this folder; spec identical to specs/na-oldenbarnevelt-2442-1605.json
+except the corpus; shuffled decodes = B/C1 ciphertext signs shuffled across the stream, token lengths kept, seeds 1-3,
+(a) committed digit_key.json applied, (b) scripts/solve_digit_subst.py's own blind key, restarts 4, es16 corpus):
+```
+BC1_reading         es17a FAIL score=-0.961 real_p05=-0.913 null_p99=-1.841 N=634  cover=0.95
+BC1_reading         es17c FAIL score=-1.01  real_p05=-0.858 null_p99=-1.961 N=634  cover=0.931
+whole_reading       es17a FAIL score=-1.083 real_p05=-0.902 null_p99=-1.857 N=1226 cover=0.924
+whole_reading       es17c FAIL score=-1.124 real_p05=-0.872 null_p99=-1.991 N=1226 cover=0.901
+shuf1_committed_key es17a FAIL score=-1.946 | es17c FAIL score=-2.031
+shuf1_solver_key    es17a FAIL score=-1.851 | es17c FAIL score=-1.968
+shuf2_committed_key es17a FAIL score=-1.914 | es17c FAIL score=-2.083
+shuf2_solver_key    es17a FAIL score=-1.785 | es17c FAIL score=-1.915
+shuf3_committed_key es17a FAIL score=-1.892 | es17c FAIL score=-2.005
+shuf3_solver_key    es17a FAIL score=-1.808 | es17c FAIL score=-1.896
+```
+(shuffled rows: same real_p05/null_p99 as BC1_reading under each corpus; covers 0.585-0.744.) For comparison, the spec's own
+corpus (es16 Don Quijote 1605) gave B+C1 -1.087 vs real_p05 -0.843 (section 8).
+
+**What this shows.** (1) ARM-C1 voiding check: no shuffled decode PASSes under either corpus (all six sit at or near null_p99),
+so neither corpus is voided as a gate for this family at N=634. (2) The B/C1 margin below the gate shrinks with era-matching:
+-0.244 (es16 fiction) -> -0.152 (es17c, 1643-47) -> -0.048 (es17a, 1590-1625), and word cover rises 0.863 -> 0.931 -> 0.95;
+the candidate sits about 0.05 below the real-prose gate and about 0.85 above the shuffled decodes (the ZX-DEC349 shape:
+much closer to genuine prose than to noise). (3) But es17a false-negatives held-out real 1590-1625 state prose 62% of the time
+at this N (spread 22.5-97%), so its FAIL is of **unknown reliability**: "judge cannot decide", not a negative and not a
+verdict on the key. Reported as a FAIL. Not found: no corpus on disk or built here under which the B/C1 reading PASSes.
+
+**Verdict: open.** **Next steps, cheapest first (after OLD-ES17A):** (a') crop-and-read pass on blocks A and C2 with the
+settled conventions, ~$4; (d') a tighter era corpus if a judge PASS/FAIL is wanted: several CODOIN volumes of 1598-1621
+state letters, all 19th-century printings (one register, one printing kind), fold-checked the same way, ~$5; optional: an
+owner sign-sorter check of the 9/q, f/p, v/r, l/t and G/t pairs on this hand, if a known-answer accuracy figure is wanted
+for B/C1.
