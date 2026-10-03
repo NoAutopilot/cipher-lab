@@ -531,6 +531,19 @@ uses (001, 002, 010, 10, 41, 44, 81, 220, 249, 440, 770, 787, 800, 910, 2560 ...
 Not found / rule 10: no decipherment or key of the 1582-83 code was found in the Surtees print beyond Bowes's own 91
 sentence; the two C grades come from Boyd 1910 and Surtees 1842, both in print (AUDIT.md, N1). No novelty claim.
 
+## Verifier note: the code layer in print (VERIFY-BOWES, 3 Oct 2026)
+
+Verifier correction (AUDIT.md section 13), not a solver step. The numeric name-codes are not open in print:
+Alan Haynes, *Invisible Power* (1992; reissued as *The Elizabethan Secret Services*, 2000, 2009) prints "In April 1583
+Robert Bowes was using it for communications with Walsingham: France is 54; Scotland, 70; James VI, 91; the Earl of
+Lennox, 870; Elizabeth, 32 and Mary, 23"; Stevenson's own Contents to this folder's crib volume (Surtees 14, 1842,
+p.xxix, no.189) summarises "870 shall return this summer into 70" as "Lennox's return into Scotland"; and Boyd (1910)
+glosses 32 as the Queen of England. So 870, 91, 32, 54 and 23 (29) are published identifications (key source
+`published`, class N0 for these codes); 000 = England (N2), 189 = Montrose (N1) and the M inferences 149, 19, 223 are
+ours. codes.tsv's identification column and the 24 Sept text above ("remain unread", "open remainder") predate this
+and carry no credit; cite Haynes 1992 and Stevenson 1842 with any code identification. Haynes's footnote source is
+unread (lending-only, snippet search only): it may name a period key, which is the known-keys rung below.
+
 ## Remaining gaps (finish-or-blocker pass, 1 Oct 2026)
 Updated in place 2 Oct 2026 (NEXT-BOW) for what the Boyd-asterisk step settled; see the step section above. Settled and removed from the list: the F4 pos.26 sign-27 gap (excluded as a handwritten 'and', check.py EXCLUDED, key.tsv row 27; MAGNYVIL and 189 = Montrose carried into check.py's F4 note).
 Read so far: 97 of 100 cipher-sign tokens of Tomokiyo's transcription (97.0%: S 73, M 12, I 3, C 9, H 0; unread 3 = signs 15, 25, 28), reading.tsv grades line (check.py --write, 2 Oct 2026); Tomokiyo's 24 Sept correction (F4 pos.26, sign 27, a handwritten 'and' abbreviation) is now folded in as an excluded token, so the total is 100, not 101. F9 is C from Boyd's calendar asterisks + the Letter-Book word at the same position; F10 = 223 and F11's first sign are M (NOTES "Boyd's cipher asterisks", 2 Oct 2026). Numeric code layer: 31 of 33 occurrences identified (C 8, M 23; by code C 3 = 189, 32, 000, M 7, unread 2 = 85, 0100), codes.tsv (GAPS59, 3 Oct 2026; was C 3, M 28). Unmeasured: whether Tomokiyo's file holds every cipher word on ff.196/299/303 (no image), and the B VIII f.251-252 and f.306 cipher words (no transcription).

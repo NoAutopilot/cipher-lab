@@ -484,3 +484,71 @@ item-B row should mention the 1910 identification of 32 is the verifier's call.
 
 **SECOND-OPINIONS-QUEUE.tsv:** no row filed for this target (grep, 3 Oct 2026; class N1, below the N3 threshold for a
 row), so there is nothing to propagate there.
+
+## 13. Re-audit after GAPS59/GAPS60: the numeric code layer has been in print (VERIFY-BOWES, 3 Oct 2026)
+
+Verifier VERIFY-BOWES (account 4, for the account-4 parent session_011mUCfY7R8vtAG69d6fSJik), 3 Oct 2026 08:43-09:0x UTC
+(clock read). Not a solver of this target; did no decoding. Re-derived: `check.py` exits 0 (reading.tsv regenerates;
+grades `S 73, M 12, I 3, H 0, C 9, unread 3, total 100, excluded 1`); `codes.py --check` exits 0 (33 occurrences, 12 codes;
+C 8, M 23, unread 2). Both match NOTES.md and section 12.
+
+**What the search found (the trigger was Boyd's `["32"]`; three earlier prints identify codes of this letter).**
+
+| print | what it identifies | how found | effect |
+|---|---|---|---|
+| **Alan Haynes, *Invisible Power: the Elizabethan Secret Services 1570-1603* (Stroud: Sutton / New York: St Martin's, 1992), reissued as *The Elizabethan Secret Services* (Sutton 2000; 2009 ed. Google Books `4dAJEgAAQBAJ`, scan page PT55)** | "In April 1583 Robert Bowes was using it for communications with Walsingham: France is 54; Scotland, 70; James VI, 91; the Earl of Lennox, 870; Elizabeth, 32 and Mary, 23." ("it" = a numerical code "for a name or word") | IA full-text search (`be-api.us.archive.org/fts`, items `invisiblepowerel0000hayn` and `elizabethansecre0000hayn`, both lending-only, snippet only); Google Books API (`&country=US`, keyed) and search-within on `4dAJEgAAQBAJ` return the same sentence | **54, 91, 870, 32 and 23 (the folder's "29 = 23") are published identifications of this very code in this very month.** Printed page not confirmed (be-api has no page locator; Google gives a scan id; the 1992 OCR's running heads put it about pp.20-22). Haynes's own source (footnote) not read |
+| **Joseph Stevenson, ed., *Correspondence of Robert Bowes* (Surtees Soc. 14, 1842), Contents, no. 189 (p.xxix)** | "Lennox's return into Scotland anticipated ... in regard to him (Lennox)", the editor's summary of CLXXXIX, whose text has only "870 shall return this summer into 70" and no clear Lennox or Scotland (grep of corpus/, lines 23205-23299) | grep of the folder's own corpus/ OCR | **870 = Lennox (and 70 = Scotland) was in print in 1842**, in the very volume the folder uses as its crib |
+| **W. K. Boyd, CSP Scotland vi (1910), p.371, no.389 (fol.196)** | `the Queen of England ["32"]` (section 12) | section 10 snippets; re-confirmed today (search-within `a3ZZTPid3VQC`, query `"870"`) | **32 = Elizabeth in print in 1910.** Boyd glosses no other code: on p.371 he keeps `"870"`, `"91"`, `"54"`, `"000"` as bare quoted numerals; `"0100"` has no hit; `"149"`, `"85"`, `"19"` hit only other pages or the index. His `Montrose` on p.371 stands where Tomokiyo reads 189 on the MS (and where the Letter-Book prints Montrosse) |
+
+Not identified in any print found: 149, 19, 223, 000 (as a code), 85, 0100. Boyd's index of vol. vi was not read for
+them beyond the three-hit snippets.
+
+**Re-class, per item (rule 10; key source per the 25 Sept 2026 rule).**
+
+| item | class | key source | prior print |
+|---|---|---|---|
+| A. 7 Apr 1583 letter, sign-cipher fragments F1-F7 | **N1**, unchanged | ours (sign table) | plaintext: Surtees 1842 CLXXXVII; Boyd 1910 no.389 |
+| B. 31 Jul 1583 letter, sign-cipher fragments F8-F11 | **N1**, unchanged | ours (sign table); F9 C from Boyd's asterisk positions + Surtees | plaintext: Surtees 1842 CCXL; Boyd 1910 no.584 marks the cipher words with asterisks and does not read them |
+| C. The sign-to-letter table (key.tsv), Tomokiyo's numbering | search-level scope, unchanged (no prior sign table located) | ours | none located |
+| D1. Numeric codes 870 = Lennox, 91 = James VI, 32 = Elizabeth, 54 = France, 23 (printed 29 once) = Mary | **N0** (identification of this very code already printed: Haynes 1992 for all five; Stevenson 1842 also for 870; Boyd 1910 also for 32) | **published** (Haynes 1992; Stevenson 1842; Boyd 1910), corroborated by our collation | as left |
+| D2. 189 = Montrose | **N1** (the name stands at that place in Surtees 1842 and Boyd 1910; the code-to-name link rests on Tomokiyo's MS reading, 24 Sept 2026) | period/print alignment (Tomokiyo's MS reading + print) | Surtees, Boyd |
+| D3. 000 = England | **N2** (plaintext in print, Surtees CCXL "into England"; no prior mapping of 000 found) | ours (Boyd p.568 set beside Surtees p.532) | none for the mapping |
+| D4. 149 = Henri III, 19 = Guise, 223 = Gowrie | not classed above N2: grade M inferences from context, no prior mapping found by this search (Haynes's list does not include them) | ours (inference) | none located |
+| D5. 85, 0100 | unread; nothing to class | -- | -- |
+
+**Grades.** No grade changes. Haynes is a modern secondary statement whose source is unread, not a key (rule 4 H), and not
+an alignment of known plaintext at a fixed position (C); 870, 91, 54 and 23 stay M, now with published support. If Haynes's
+footnote names a period key or decipher (e.g. a State Papers key sheet for the Bowes-Walsingham code of 1582-83), that
+is the known-keys rung NOTES.md already names as cheapest next step, and it could take these to H.
+
+**Folder class: N1, unchanged.** Nothing here raises any item; D1 lowers the code layer to N0.
+
+**Safe sentence (3 Oct 2026, adds to section 11's).** "... It is an independent re-decipherment of plaintext in print
+since 1842, conditional on the transcription. No earlier sign-level key was found. The numeric name-codes are not ours:
+870 = Lennox, 91 = James VI, 32 = Elizabeth, 54 = France and 23 = Mary were printed for Bowes's April 1583 code by Haynes
+(1992), and 870 and 32 already by the 1842 and 1910 editors; our collation adds 000 = England (from the 1910 Calendar set
+beside the 1842 letter-book) and context identifications of 149, 19 and 223 at grade M."
+
+**Unsafe sentences.** "the numerical codes recovered", "870 identified as Lennox" (as ours), "the Bowes code layer read
+for the first time", "000 and 32 newly identified", any count of C/M code identifications presented without the Haynes
+credit.
+
+**Over-claims found and corrected.** (1) NOTES.md lines ~318-323 (24 Sept solver section) and the Remaining-gaps
+code-layer bullet treat 870 and the rest as "open"/"unread" codes for us to collate, without the 1842/1992 prints: a
+verifier note is added to NOTES.md (section "Verifier note: the code layer in print"), the Remaining-gaps bullet is left
+for the next worker. (2) codes.tsv's `identification` column carries no key-source credit; not regenerated here (codes.py
+is the solver's script), the NOTES.md note names it. (3) **For the orchestrator (workers do not write status.json):** the
+board row's note "the numerical name-codes (870, 189=Montrose, 149, 19, 29, 85) stay open" (status.json ~line 213) and
+the reading row (~line 1806, "93 of 101 (S 82, M 8, I 3)", already flagged by section 11) should be replaced with this
+section's safe sentence; the reading row's `key: ours` holds for the sign table only, the code layer is `published`.
+
+**SECOND-OPINIONS-QUEUE.tsv:** no row (nothing at N3 or better). CONTRIBUTIONS.md rows 8-10 quote no code
+identifications; no change.
+
+**Postmortem (one line).** Three sessions treated the numeric codes as open work and graded two of them C as if from our
+own collation, when the folder's own crib volume (Stevenson's contents, 1842) and a standard secondary work (Haynes 1992)
+already print five of them: the phrase search of the code-value pairs (`"870" Lennox`) was never run, only searches for the
+letters' plaintext.
+
+Requests this session: be-api.us.archive.org 19 (fts), archive.org 2 (metadata), books.google.com 12 (search-within,
+1.6 s apart, browser UA), www.googleapis.com 3 (one 503, not retried). No login, no challenge, no subagents, no vision calls.
