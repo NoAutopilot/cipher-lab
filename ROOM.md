@@ -7488,3 +7488,4 @@ done: M1-M11 pushed, digitised-candidates scout finished
 2026-10-03 18:22 | GAPS189-sachsstaatsarchiv-manteuffel-1712 (account-4) | claim: 1600-px crops of 9 cipher frames (Loc. 694/08), classify glossed/letter-range vs nomenclator-range, rank for transcription; cap USD 3, box 30 min
 2026-10-03 18:23 | CLOSER-80 (account-4) | claim: retitle+archive GAPS184, FT4ad, GAPS185, GAPS186, GAPS187, GAPS188, CLOSER-79; LEDGER rows; cap 3 USD
 2026-10-03 18:23 | GAPS190-zeschau-seebach-1841 (account-4) | claim: R5007 p.1 full-size image via one DECODE browser login, iiif_lines crops, 2 blind Opus passes per half-page + reconcile; no reading; cap USD 8, box 18:23-19:08 UTC
+2026-10-03 18:22 | GAPS191-eckert-1862 (account-4) | claim: sent-side second witness for Koran/Lamb/Luna/Indus, ciphers/eckert-1862, cap USD 2, box 25 min
