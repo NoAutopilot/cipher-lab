@@ -413,18 +413,64 @@ Step: the Verdict's cheapest step. Locate only; nothing transcribed or decoded. 
 - Requests: service.archief.nl 83 (74 at 450 px + 9 header regions), 1.6 s apart, no 4xx/5xx; no other host. Vision 4
   (three contact sheets, one header sheet). Grade counts H 0, C 0, S 0, M 0, I 0 (nothing read as plaintext of the target).
 
-## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36 and GAPS41, 3 Oct 2026)
+## GAPS44-vanspaen-vandergoes-1808 (3 Oct 2026, account-4): clear siblings of No 4 read for a crib
+
+Step: the Verdict's cheapest step (scans 73/74 and 67 at native size, read for a crib to No 4). No crib attack run. Status unchanged.
+- Natives fetched once (`full/full`, 5000 px): scans 67, 73, 74; scan 73/74's note 104 turned out to be covered by an
+  inserted slip, so 72 and 75 were viewed at 900 px, and 75 (No 3) and 76 (its continuation) fetched at native too. All
+  in images/ with images/manifest.json (folder 17 MB).
+- Crops: `python3 tools/iiif_lines.py --image images/NL-HaNA_2.01.08_281_00NN.jpg --region R --prefix P --ink 195
+  --distance 100 --prominence 20 --lines-per-crop 3 --debug --out images/lines_gaps44` with (NN, R, P) = (67,
+  2520,180,2340,4110, s67r), (73, 2550,180,2430,810, s73hdr104), (73, 2550,990,2220,2550, s73slip102), (74,
+  2550,180,2430,1000, s74hdr104), (75, 2390,110,2580,4170, s75r), (76, 110,110,2420,4040, s76l), (76, 2530,110,2420,1400,
+  s76r): 52 crops (the default ink threshold found no lines in the faint brown ink; 195 did). Two blind Opus passes over
+  the crops only (gaps44/passA.tsv forward, passB.tsv reverse): word agreement 2314 of 2416 (95.8%). Reconciliation by
+  this worker from two crop composites: gaps44/reconciled.md.
+- **The 12 Jan 1808 cluster.** Dockets 102, 103, 104 and 105 were all received ("Exh.") on 14 January 1808 and all are
+  dated Dusseldorf 12 January (No 3's own date line reads "1807", a slip):
+  - 102: a clear slip, G.C. de Spaen thanks the Minister for an indemnity of 6,000 florins (letter of the 4th).
+  - **103 = "No 3"** (scans 75-76), clear French, signed G.C. de Spaen: daily allowance of 30 florins (Arrêté of 29 Dec);
+    the talk with Minister Agar on Saturday about the treaty on the cession of Sevenaar (ratified by the Emperor before
+    he left for Italy, ratifications exchanged at Paris on 31 Dec, the treaty at Utrecht a week ago) -- Agar knew nothing
+    of it, nor of the ratification of the Emperor-Grand Duke treaty; the Note and the "lettre de notification" await
+    the Grand Duke's decision; rumour of the Grand Duke's arrival "dans peu ou vers le printems"; deputations of the
+    County of the Mark[?] and of Munster gone to Paris; the flag ceremony of the Grand Duke's new infantry regiment
+    (Epiphany, 6 Jan) by Count Nesselrode, Interior Minister acting for War and Justice; battalions to Munster, Anclam and
+    Pomerania; the Grand Duchy's administration not yet organised, Mr Rappaert[?] influential; rain and an earthquake.
+  - 104: a formal Note, "Le soussigné Commissaire du Roi de Hollande pour la mise en possession des Territoires de
+    Huessen, Malburg et Zevenaer"; only the header is visible -- the body is covered by slip 102 on scan 73 and by
+    another leaf on scan 74, in both captures.
+  - **105 = No 4**, the target, in Dutch-framed figures, written the same day straight after No 3.
+- **67 = "No 2"** (5 Jan 1808, docket 44, Exh. 7 Jan), clear French, first page only on scan 67: Spaen handed Agar a
+  Note setting out the King's motives and "la proposition dont Sa Majesté m'a chargé" (copy enclosed); Agar could not
+  receive it officially (not authorised; Spaen not yet accredited) but would pass a copy to the Grand Duke; Agar agreed
+  the frontiers of the two States are defective and that "des limites naturelles, assurées, durables" are in both
+  States' interest. Its continuation is not on scan 67 (68-69 are a "(Copie)" docketed 44 bis, GAPS41).
+- Writers: scan 72 / 67 left (docket 43, 2 Jan 1808) is signed by another de Spaen, read "J.F.G. de Spaen de
+  Biljoen[?]" from the 900 px view (M); No 3, slip 102 and No 4 are signed G.C. (van/de) Spaen.
+- **Crib candidates** for No 4, ranked, with source lines: gaps44/crib_candidates.tsv (Agar; Grand Duc/Son Altesse;
+  Empereur; le Roi; Sevenaar/Huessen/Malburg; traité, ratifications, 31 Décembre, Paris, Utrecht; Note, notification,
+  mise en possession; frontières/limites; Nesselrode; places). The likely shape: No 4 carries the part of the Agar
+  talks that No 3 left out of the clear text. The code has values 15-1339 (216 distinct of 304 groups), so a crib is a
+  word or name list, not a letter string; No 4's language under the figures (Dutch, like its clear frame, or French,
+  like No 2/No 3) is not known.
+- Not found: No 1 and No 5; the body of note 104; any decipherment, interlinear figure or key on 67, 72-76.
+- Grades: no reading of the target, H 0, C 0, S 0, M 0, I 0. The sibling clear text is diplomatic, not graded per token.
+- Requests: service.archief.nl 7 (5 native, 2 at 900 px), 1.6 s apart, all 200. Vision: 2 blind passes + 1
+  reconciliation (plus this worker's own small overview views of 67, 72-76).
+
+## Remaining gaps (FT4-vanspaen-vandergoes-1808, 3 Oct 2026; updated FT4b, FT4c, GAPS26, GAPS34, GAPS36, GAPS41 and GAPS44, 3 Oct 2026)
 Read so far: 0 of 304 groups (229 letter + 75 annex, image reading GAPS36; Bourdeau's has 303); nothing decoded
 - letter 14 Jan 1808 (228 groups) - blocker: no-key-material; no key for this code on DECODE, Croiset 1803 (R1035) gives word salad; located 3 Oct 2026 (GAPS34) as inv. 281 scans 81-82, "No 4, Dusseldorf 12 January 1808", received 14 Jan; no key sheet seen in 221 of 360 scans (GAPS41: none in 1-74)
 - annex 15 Jan 1808 (75 groups) - blocker: no-key-material; located 3 Oct 2026 (GAPS34) as inv. 281 scan 85, "No 6, Dusseldorf 15 January 1808", a separate numbered dispatch; DECODE DocumentsList 0 documents (FT4c); no decipherment seen beside it in scans 75-99
-- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36: 283/303 groups agree, 20 corrections, image reading in gaps36/reconciled.tsv); scans 1-74 viewed 3 Oct 2026 (GAPS41): no figure page there, No 2 (Dusseldorf 5 Jan 1808, scan 67) is in clear, No 1/3/5 not found, and a clear French note of 12 Jan 1808 docketed "104 Ontv. 14 January" (scans 73/74, one number before No 4) is the nearest crib candidate; next: fetch scans 73/74 and 67 at native size, cut crops and read the 12 Jan note and No 2 for the news No 4 should carry, ~$5
+- numbered sibling series and crib - blocker: not-attempted; identity with Bourdeau confirmed row by row 3 Oct 2026 (GAPS36); scans 1-74 viewed (GAPS41); clear siblings read 3 Oct 2026 (GAPS44): No 3 (docket 103, 12 Jan 1808, same day as No 4) and No 2 transcribed, note 104 body covered by a slip in both captures; ranked crib list in gaps44/crib_candidates.tsv (Agar, Grand Duc, Empereur, Roi, Sevenaar/Huessen/Malburg, traité/ratifications/Paris/Utrecht, limites); next: crib-placement test of the top candidates against No 4 under a one-part (alphabetical) code hypothesis, with a matched synthetic one-part code control at N 229, ~$5
 
 ## Escalation (3 Oct 2026)
 - [x] siblings: GAPS34 found the target is No 4 and No 6 of a numbered Düsseldorf dispatch series; GAPS41 (3 Oct 2026) viewed scans 1-74: No 2 (scan 67, 5 Jan 1808) is in clear, No 1/3/5 not found there, no figure page in 1-74
-- [ ] clear-pages: the 12 Jan 1808 note docketed 104 (scans 73/74, same day as No 4), No 2 of 5 Jan (scan 67) and the clear January letters 83, 87, 89-94 next to the target; read them for the same news as a crib (identity check done, GAPS36)
+- [x] clear-pages: GAPS44 (3 Oct 2026) read No 3 (docket 103, scans 75-76), slip 102 and No 2 (scan 67) from crops, 2 blind passes 95.8% word agreement; note 104 body hidden under slip 102 in both captures; crib list gaps44/crib_candidates.tsv. Clear letters 83, 87, 89-94 not read (later than No 4)
 - [x] known-keys: DECODE keys 1780-1815 at Dutch holders checked by Bourdeau, R1035 ruled out; R1941's own DocumentsList empty (FT4c, 3 Oct 2026)
 - [x] print: Colenbrander Gedenkstukken V read 24 Sept; Smit 1975 grepped 3 Oct; letter absent from both
-- [ ] key-rebuild: needs a crib or a period decipherment first; DECODE holds no annex decipherment (FT4c), so the crib must come from inv. 281 itself
+- [ ] key-rebuild: crib candidates now listed (GAPS44); next: crib-placement test under a one-part code hypothesis with a matched control, ~$5
 - [x] image-check: native 5000 px images of scans 81, 82, 85 fetched and committed 3 Oct 2026 (GAPS34); transcribed from crops and matched to Bourdeau's, 20 corrections (GAPS36, 3 Oct 2026)
 - [n/a] retry: no attempt has failed yet that a retry could repeat
-Verdict: keep going: 1 internal gap; cheapest next: fetch inv. 281 scans 73/74 (12 Jan 1808 note, docket 104) and 67 (No 2, 5 Jan) at native size and read them for a crib to No 4, ~$5
+Verdict: keep going: 1 internal gap; cheapest next: crib-placement test of the GAPS44 candidates (Agar, Grand Duc, Empereur, Roi, Sevenaar) against No 4 under a one-part alphabetical code hypothesis, matched synthetic control first, ~$5

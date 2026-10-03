@@ -1,0 +1,16 @@
+# GAPS44 3 Oct 2026: crib candidates for No 4 (scans 81-82, Dusseldorf 12 Jan 1808, docket 105, 229 figure groups, values 15-1339, 216 distinct
+# letter+annex; a code/nomenclator of ~1340 entries, not a letter cipher). No crib attack run. Candidates only; strength = why No 4 may carry it.
+# No 4's clear frame is Dutch ("Hoog Edele Gestrenge Heer", closing in Dutch), so each term is given in the clear letters' French and the likely Dutch form.
+rank	candidate (French as written; Dutch form)	kind	source line	strength
+1	Agar (Jean-Michel Agar, comte de Mosbourg, Berg finance minister)	name	No 3 s75r_L03 "Monsieur le Ministre Agar"; No 2 s67r_L02/L03 "Mr. Agar"	strong: the negotiating counterpart in No 2 and No 3; No 4 the same day most likely reports more of the same talks under cover
+2	Grand Duc / Son Altesse Impériale et Royale (Groot Hertog; Murat)	title	No 3 s75r_L04, L06, L07; s76l_L05, L07; No 2 s67r_L06, L08	strong: in every paragraph of both clear letters
+3	Empereur / S.M. l'Empereur / Sa Majesté Impériale (Keizer)	title	No 3 s75r_L03, L04	strong
+4	le Roi / Sa Majesté (de Koning)	title	No 2 s67r_L02; No 3 s75r_L02, L06; slip 102	strong: also a likely high-frequency code group
+5	Sevenaar / Zevenaer (Zevenaar); Huessen (Huissen); Malburg (Malburgen)	place	No 3 s75r_L03 "la cession de Sevenaar"; note 104 header s73hdr104_L02 "Territoires de Huessen, Malburg et Zevenaer"	strong: the territories of the commission; note 104 docketed one before No 4
+6	traité / ratification(s) / échangées / le 31 Décembre / Paris / Utrecht (tractaat, ratificatie, uitgewisseld, 31 December, Parijs, Utrecht)	topic+date	No 3 s75r_L03-L04	medium: the news No 3 gives in clear; No 4 may follow it up
+7	Note / Mémoire / lettre de notification / mise en possession (nota, memorie, notificatie, inbezitneming)	topic	No 2 s67r_L02, L06-L07; No 3 s75r_L05; note 104 header	medium
+8	frontières / limites (naturelles) / les deux Etats (grenzen, limieten, beide Staten)	topic	No 2 s67r_L07-L09	medium: the subject of the King's proposal ("la proposition dont Sa Majesté m'a chargé")
+9	Nesselrode (Berg Minister of the Interior, also War and Justice); Conseillers d'Etat; Rappaert[?]/Rappard[?]	name	No 3 s76l_L03, L05, L06	medium-weak: court news, given in clear, so less likely to be repeated in figures
+10	Dusseldorf, Munster, Wesel, Anclam, Poméranie	place	No 3 s76l_L04 (Munster, Anclam, Pomeranie); No 4 header (Dusseldorf); scan 97 "Wesel" (GAPS34)	weak-medium
+11	arrivée du Grand Duc ... dans peu ou vers le printems (aankomst, voorjaar)	topic	No 3 s75r_L07	weak
+12	Van der Goes / Votre Excellence (Uwe Excellentie / Hoog Edele Gestrenge Heer)	address	all clear letters; No 4 opening in clear	weak: the clear frame already holds the address
