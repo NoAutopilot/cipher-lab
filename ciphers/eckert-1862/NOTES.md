@@ -797,3 +797,53 @@ Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1;
 - [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
 - [n/a] retry: no failed attempt to retry; no negative claimed on this target
 Verdict: keep going: 3 internal gaps; cheapest next: sent-side second witness for Koran/Lamb/Luna/Indus in mssEC 15 Feb-Mar pages against OR vols. 7-8, ~$1; then the 1864 sent-ledger pilot against Cipher No. 1 (mssEC 41-46), ~$6
+
+## GAPS191-eckert-1862 (3 Oct 2026, account-4): sent-side second witnesses for Koran, Lamb, Luna, Indus
+
+- Input: the mssEC 15 volunteer transcription for all 173 pages in one CONTENTdm dmQuery call (`callid^mssEC 15`,
+  field `transc`; not committed, re-fetch as in received_manifest.tsv with `mssEC%2015`), and the IA `_djvu.txt` of OR
+  ser. I vols. 7, 8, 11 pt 3, 12 pt 1, 12 pt 3, 51 pt 1 (vol. 53 fetch returned 172 bytes, not used). Script
+  `print/witness4/slot_align.py`: for each of the 50 occurrences of the four words, the OR span between the matched
+  left and right ledger context (8 words each side, difflib) -- 14 aligned; shuffled-context control 0.34 mean, p95 2
+  agreeing slots. Signatures and addresses ("signed Indus", "to Indus") and three Lincoln texts were then placed by
+  word search (OR) and IA be-api phrase search (Nicolay-Hay). Witness table `print/witness4/witnesses.tsv` (23 rows).
+- Held-out (`print/witness4/heldout.py`, leave one telegram out, predict from the same word's same-slot-class then
+  nearest-dated witness): 20 of 23 vs shuffled-pairing control mean 3.92, p95 8, p99 10 (2000 shuffles; the shuffle
+  changes the code-word/meaning pairing, so it can differ). Per word: Koran 7/7, Indus 9/9, Lamb 3/4, Luna 1/3.
+- key.md (C, two or more telegrams each, and the check above):
+  - Koran = Ohio: 7 more sent-side slots, all "Ohio"; 4981 (14 Feb) "ordered to Saffron Koran" = OR 7 p.612
+    "ordered to Columbus, Ohio" (Saffron = Columbus, one telegram, not added). Witness column now 05-20 Feb.
+  - Lamb = Kansas, I -> C: 4981 (13 Feb, two slots, OR 8 p.555), 5054 (21 Mar, Lincoln, Nicolay-Hay "suspend the order
+    sending General Denver to Kansas"), received twin 7 Mar (GAPS171).
+  - Luna = Missouri, new row C: 5059 (1 May, Lincoln, Nicolay-Hay "pressed by the Missouri members of Congress"),
+    received twin 7 Mar. The witness column counts sent pages only (06 Apr-02 May by interpolation of an undated
+    pointer); in use 07 Mar-01 May.
+  - Indus = Stanton (signature/address slot), new row C: 5049 (13 Mar, OR 12 pt1 p.224), 5057 (28 Mar, OR 12 pt3 p.23),
+    5068 (30 May, OR 12 pt1 p.647), 5067 (31 May, p.634), 5106 (11 Jul, OR 11 pt3 p.314), received twin 7 Mar.
+- Conflicts logged, not merged (rule 4): Lamb = York River, 5091, 26 Jun (OR 11 pt3 p.259, Lincoln to McClellan "better
+  toward York River than toward the James"; Lather = James there, Michigan on 7 Feb) -- one telegram, date-separated
+  from Kansas (to 21 Mar). Luna = Shenandoah, 5061, 25 May (OR 11 pt1 p.31, GAPS147) against Missouri 7 Mar-1 May,
+  date-separated by 24 days; Luna 4984 (15 Feb, "keep luna quiet", Nicolay) unprinted. Indus = Stanton overlaps Indus =
+  Fredericksburg 25 May-17 Jul in date; the two never share a slot (Stanton: signature/address, 6 telegrams;
+  Fredericksburg: place in the body, 5076 8 Jun "remainder by land from Fredericksburg", OR 12 pt1 p.97, added to the
+  witness table), so the key reads it by slot.
+- Not aligned: Koran 4960/4961 (2 Feb), 4973, 4979 (12 Feb, question only, GAPS187), 4982, 5004 ("Koran River", 20
+  Feb); Indus 5056 (26 Mar, OR 53, not fetched). OR page numbers are running heads, +/-1.
+- `print/key_dates.py --check` 0, `decode.py --check` 0; `print/residue_decode.py --check` 1 (stale, expected after the key change; the dmQuery `transc` field was not hash-matched to pages_manifest.tsv, 0 of 58 sha256 equal, so the regeneration step should use the per-item API text as before). Requests: hdl.huntington.org 1, archive.org 7, be-api 3.
+  No vision, no subagents.
+
+## Remaining gaps (finish-or-blocker pass, GAPS191, 3 Oct 2026)
+Read so far: 10 of about 300 mssEC 15 entries at grade T (about 3%), all ten N1; residue 58 pages, 124 entries decoded at C 146, I 38, M 86 (print/residue, before GAPS191's key change)
+- residue entries of mssEC 15 (about 290) - blocker: not-attempted; every OR volume that could hold Feb-Jul 1862 telegrams grepped and aligned (GAPS113-GAPS153), received ledgers read (GAPS171), page 4979 checked (GAPS187), sent-side witnesses for Koran/Lamb/Luna/Indus folded into key.md (GAPS191); next: regenerate print/residue with the GAPS191 key (`print/residue_decode.py PAGES --write`, pages from the one dmQuery call) and re-list the no-M candidates, ~$0.5
+- residue code words not fixed by any known plaintext - blocker: open-codes; about 863 oov tokens remain; conflicts Lamb (Kansas/York River), Luna (Missouri/Shenandoah) are date-separated, Indus split by slot; the table-change dates stay unwitnessed between 21 Mar and 25 May
+- 1863-67 sent ledgers at grade H - blocker: not-attempted; filled-in cipher books exist at the Huntington (section 5); next: pilot one 1864 sent ledger (mssEC 18 or 19) against mssEC 41-46 (Cipher No. 1), ~$6
+
+## Escalation (GAPS191, 3 Oct 2026)
+- [x] siblings: received ledgers mssEC 01-03 read 3 Oct 2026 (GAPS171); its 7 Mar twin now paired with sent-side witnesses (GAPS191)
+- [x] clear-pages: no clear copy bound in mssEC 15 (Premise check (c), 172 page texts harvested 19 Sept)
+- [ ] known-keys: no filled-in book for Feb 1862 (failure log); the 1863-67 books are the H route (gap 3, ~$6)
+- [x] print: OR vols. 5, 7, 8, 9, 10 pt 1-2, 11 pt 1/3, 12 pt 1/3, 51 pt 1, 53, Nicolay-Hay, Grant Papers vol. 4 done; page 4979 done (GAPS187)
+- [ ] key-rebuild: Koran/Lamb/Luna/Indus done 3 Oct 2026 (GAPS191, held-out 20/23 vs p99 10); next: regenerate the residue readings with this key (gap 1), ~$0.5
+- [n/a] image-check: the ten readings were reconciled against the image (reading.md, Reconciliation)
+- [n/a] retry: no failed attempt to retry; no negative claimed on this target
+Verdict: keep going: 3 internal gaps; cheapest next: regenerate print/residue with the GAPS191 key and re-list the no-M candidates, ~$0.5; then the 1864 sent-ledger pilot against Cipher No. 1 (mssEC 41-46), ~$6

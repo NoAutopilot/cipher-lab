@@ -1,0 +1,24 @@
+code_word	date_1862	ledger	pointer	direction	slot	printed	source	how
+Koran	05 Feb	mssEC 15	4964	sent	body	Ohio	OR I/7 p.584	slot_align.py
+Koran	06 Feb	mssEC 15	4965	sent	body	Ohio	OR I/7 p.586	slot_align.py
+Koran	06 Feb	mssEC 15	4967	sent	body	Ohio	OR I/51 pt1 (head OCR unreliable)	slot_align.py (2 slots)
+Koran	07 Feb	mssEC 15	4969	sent	body	Ohio	OR I/51 pt1 (head OCR unreliable)	slot_align.py
+Koran	07 Feb	mssEC 15	4971	sent	body	Ohio	OR I/7 p.593	slot_align.py
+Koran	07 Feb	mssEC 15	4995	sent	body	Ohio	OR I/7	slot_align.py
+Koran	14 Feb	mssEC 15	4981	sent	body	Ohio	OR I/7 p.612 ("ordered to Columbus, Ohio")	word search
+Lamb	13 Feb	mssEC 15	4981	sent	body	Kansas	OR I/8 p.555 (2 slots: "authorized for Kansas", "under orders for Kansas")	slot_align.py + word search
+Lamb	07 Mar	mssEC 02/03	-	received	body	Kansas	OR I/8 pp.831-832	GAPS171 received_twin_check.py
+Lamb	21 Mar	mssEC 15	5054	sent	body	Kansas	Nicolay-Hay (IA be-api: "suspend the order sending General Denver to Kansas")	be-api phrase
+Lamb	26 Jun	mssEC 15	5091	sent	body	York River	OR I/11 pt3 p.259 ("better toward York River than toward the James")	slot_align.py + word search
+Luna	07 Mar	mssEC 02/03	-	received	body	Missouri	OR I/8 pp.831-832	GAPS171 received_twin_check.py
+Luna	01 May	mssEC 15	5059	sent	body	Missouri	Nicolay-Hay letterstelegrams0008abra (IA be-api: "pressed by the Missouri members of Congress")	be-api phrase
+Luna	25 May	mssEC 15	5061	sent	body	Shenandoah	OR I/11 pt1 p.31	GAPS147 align_pooled
+Indus	07 Mar	mssEC 02/03	-	received	address	Stanton	OR I/8 pp.831-832	GAPS171 received_twin_check.py
+Indus	13 Mar	mssEC 15	5049	sent	signature	Stanton	OR I/12 pt1 p.224, I/11 pt3 p.58 ("Edwin M. Stanton, Secretary of War")	word search
+Indus	28 Mar	mssEC 15	5057	sent	signature	Stanton	OR I/12 pt3 p.23	word search
+Indus	30 May	mssEC 15	5068	sent	address	Stanton	OR I/12 pt1 p.647 ("Hon. E. M. Stanton ... The rebels are in line")	word search
+Indus	31 May	mssEC 15	5067	sent	address	Stanton	OR I/12 pt1 p.634 ("Hon. E. M. Stanton ... The enemy moved up in force")	word search
+Indus	11 Jul	mssEC 15	5106	sent	signature	Stanton	OR I/11 pt3 p.314	slot_align.py + word search
+Indus	06 Jun	mssEC 15	5073	sent	body	Fredericksburg	OR I/11 pt3 p.217; I/12 pt3	slot_align.py (already key.md, GAPS118)
+Indus	08 Jun	mssEC 15	5076	sent	body	Fredericksburg	OR I/12 pt1 p.97 ("remainder by land from Fredericksburg")	word search
+Indus	18 Jun	mssEC 15	5085	sent	body	Fredericksburg	OR I/11 pt3 p.232	slot_align.py (already key.md)

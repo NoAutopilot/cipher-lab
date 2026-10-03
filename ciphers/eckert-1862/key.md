@@ -114,10 +114,11 @@ commander there, not McClellan.
 | Ingress | Thomas A. Scott, Asst. Sec. of War | C | 17 Feb 1862 | OR 7 p.628 |
 | Irving | Lincoln | C | 10 Feb-11 Jul 1862 | OR 8 p.551, OR 7 p.624 |
 | Jolly | (relay office, Cincinnati?) | M | 06 Feb-07 Feb 1862 | ledger p.[14] |
-| Koran | Ohio | C | 05 Feb-07 Feb 1862 | OR 7 p.584, 593 |
-| Lamb | Kansas | I | 10 Feb-13 Feb 1862 | ledger p.[24], [26] (Lane's Kansas expedition) |
+| Koran | Ohio | C | 05 Feb-20 Feb 1862 | OR 7 p.584, 593; sent-side slots (GAPS191, print/witness4): ledger 4964, 4965, 4967, 4969, 4971, 4995 all print "Ohio" (OR 7 p.584-593, OR 51 pt1), and ledger 4981 (14 Feb) "ordered to Saffron Koran" = OR 7 p.612 "ordered to Columbus, Ohio" |
+| Lamb | Kansas | C | 10 Feb-27 Mar 1862 | ledger p.[24], [26] (Lane's Kansas expedition); GAPS191 (print/witness4): ledger 4981, 5054 -- 4981 (13 Feb, two slots) = OR 8 p.555 "authorized for Kansas ... under orders for Kansas", ledger 5054 (21 Mar) = Lincoln to Halleck, Nicolay-Hay, "suspend the order sending General Denver to Kansas"; received twin 7 Mar (mssEC 02 p.12-13 = OR 8 pp.831-832, GAPS171); held-out 3/4 (pooled 20/23 vs shuffled-pairing p99 10). On 5091 (26 Jun) the same word prints York River (OR 11 pt 3, p.259), logged in NOTES.md, not a row |
 | Lark | Indiana | C | 07 Feb 1862 | OR 7 p.593 |
 | Lather | Michigan | C | 07 Feb 1862 | OR 7 p.593 |
+| Luna | Missouri | C | 06 Apr-02 May 1862 | GAPS191 (print/witness4): ledger 5059 (1 May, Lincoln to Halleck) = Nicolay-Hay "pressed by the Missouri members of Congress ... independent command in Missouri"; received twin 7 Mar (mssEC 02 p.12-13 = OR 8 pp.831-832, GAPS171), so in use 07 Mar-01 May (the column counts sent ledger pages only). On 5061 (25 May) the word prints "Shenandoah" (OR 11 pt1 p.31, GAPS147) and on 4984 (15 Feb, "keep luna quiet") it is unprinted: logged in NOTES.md, read M outside 07 Mar-01 May |
 | Legend | Kentucky | C | 07 Feb-08 Jun 1862 | OR 7 p.628 |
 | Lonesome | Tennessee | C | 07 Feb-08 Jun 1862 | OR 7 p.591, 626 |
 | Magnet | Arkansas | C | 21 Feb 1862 | OR 7 p.646 |
@@ -156,7 +157,8 @@ commander there, not McClellan.
 | Arctic | Fremont | C | 25 May-16 Jun 1862 | OR 11 pt3 p.202, 205 (ledger 5069-5070, 31 May-1 June 1862; GAPS118 alignment, print/or_align.py) |
 | Genoa | Washington | C | 25 May-28 Jun 1862 | OR 11 pt3 p.217, 269 (ledger 5073-5074, 5092, June 1862; GAPS118); Feb entries use Ocean |
 | humming | Richmond | C | 02 May-28 Jun 1862 | OR 11 pt3 p.173, 217, 232, 234, 269 (ledger 5060-5092, May-June 1862; GAPS118) |
-| Indus | Fredericksburg | C | 25 May-17 Jul 1862 | OR 11 pt3 p.217, 232, 325 (ledger 5073-5074, 5085, 5110, June-July 1862; GAPS118); on 5049 (13 Mar) "signed Indus" is a signature, so an earlier meaning differs |
+| Indus | Fredericksburg | C | 25 May-17 Jul 1862 | OR 11 pt3 p.217, 232, 325 (ledger 5073-5074, 5085, 5110, June-July 1862; GAPS118); on 5049 (13 Mar) "signed Indus" is a signature, so an earlier meaning differs; Stanton (GAPS191: Stanton, row below; slot decides, signature/address vs place in the body) |
+| Indus | Stanton (signature or address slot) | C | 13 Mar-11 Jul 1862 | GAPS191 (print/witness4): ledger 5049, 5057, 5068, 5067, 5106 -- 5049 (13 Mar, "signed Indus seven forty five" = OR 12 pt1 p.224 "Edwin M. Stanton, Secretary of War"), 5057 (28 Mar, OR 12 pt3 p.23), 5068 (30 May, "to Indus the rebels are in line" = OR 12 pt1 p.647 "Hon. E. M. Stanton"), 5067 (31 May, OR 12 pt1 p.634), 5106 (11 Jul, OR 11 pt3 p.314); received twin 7 Mar (GAPS171); held-out 9/9 within the word. Overlaps the Fredericksburg row in date: read by slot, a place name in the body is Fredericksburg |
 | Jasper | Winchester | C | 25 May-01 Jun 1862 | OR 11 pt3 p.202, 205 (ledger 5069-5070, May-June 1862; GAPS118); Feb entries use Opal (M) |
 | Juno | Gordonsville | C | 18 Jun-21 Jul 1862 | OR 11 pt3 p.232, 234, 327 (ledger 5085, 5086, 5111, June-July 1862; GAPS118) |
 | panther | advance | C | 29 May-20 Jul 1862 | OR 11 pt3 p.205, 221 (ledger 5070, 5076, June 1862; GAPS118); Feb entries use whig |
