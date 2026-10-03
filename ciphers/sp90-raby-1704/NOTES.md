@@ -315,3 +315,50 @@ requests. Suggestion only (Usage 7, not run): a LOCAL-QUEUE row for the owner's 
 PDF (Google Books full view, 103 pp.) and to read Riezler pp.602-603 on HathiTrust, and a line in REQUEST.md adding
 SP 87/2/37 f.68 as a cheaper second copy of items 4-5 beside the Add MS 61137 f.55 request.
 
+
+## Premise check (GF4-BATCH2, account-4, 3 Oct 2026)
+
+Adversarial pass per `.claude/briefs/check-solved.md` "Premise check" (run 3 Oct 2026 00:01-00:0x UTC), asked to prove
+the five items are already read. Result first: **not found** -- no decipherment, clear copy confirmed as such, key
+description or printed text of SP 90/2/335, 337, 348, 409 or 409v located by (a)-(d) (a search result, rule 10).
+Status stays `open`.
+
+**(a) Decipherments and copies the folder mentions -- not found as decipherments; none openable from here.** Every
+mention was re-read: BL Add MS 61137 f.41 (Hedges's letters to Raby 1702-08, "Partly Fr. and cipher", with Raby's
+1704 letters to Hedges) and f.55 (Reichardt, 1704, "Fr.: Copy"), catalogue only, not digitised (REQUEST.md); SP
+87/2/37 f.68 (C8950277), a second copy of items 4-5 whose fuller summary is *consistent with* a copy in clear but
+whose catalogue gives no cipher or clear-text statement (grade I, OPEN section) -- `digitised: false`, so it cannot
+be opened from here; this is the strongest premise risk on file for items 4-5 and stays a copy-order line, not a
+reading. No folder file names an existing decipherment, interlinear or attached key for any of the five.
+
+**(b) Other solvers' working files -- not found.** Fresh shallow clones of dbourdeau/cyphersolver and
+aaymeloglu/unsolved-ciphers (2 Oct 2026), repo-wide case-insensitive grep for `raby|reichar|berlepsch|sp ?90/2|
+wentworth`: hits only in unrelated material (a Gallica SRU dump naming a "Raby" leaf of a French manuscript; images
+and PDFs of other targets; Bourdeau's README line 95 on Wentworth/Strafford *1634-35*, the Maltravers-Ormonde
+nomenclator, a different Wentworth a lifetime earlier). No working file, key or rendering of this item.
+
+**(c) Physical neighbours -- unreachable as images; catalogue neighbours carry no decipherment.** None of SP 90/2 is
+digitised, so the facing leaves cannot be viewed. TNA Discovery API item details for the catalogue neighbours (6
+requests, 1.6 s apart, all HTTP 200): SP 90/2/327 (C6554807, n.d. 1704, [Von Heems] to Frederick I, French copy,
+not cipher-flagged); **SP 90/2/339** (C6554810, Raby to [Hedges], 10 May 1704, "Partly in cipher") and **SP 90/2/411**
+(C6554833, Raby to Harley, 21 June 1704, "Partly in cipher") -- two further cipher letters of the same run, not on the
+target list, no decipherment noted; SP 90/2/352 (C6554813, Raby to [Hedges], 17 May 1704, note empty); SP 90/2/407
+(C6554830, Wartensleben to [Raby?], 17 June 1704, French, enclosed in f.401, not cipher-flagged); SP 90/2/360
+(C6554816, "Richard" to [Berlepsch], 5 May 1704, "Enclosed in SP 90/2 Folio 356. Copy. French." -- **not** cipher-
+flagged, which answers the OPEN section's open question about this sixth letter of the channel). No neighbour is
+described as a decipherment, key or clear copy of a target item.
+
+**(d) Recipient side -- not found.** Recipients: Sir Charles Hedges (items 1-3) and Berlepsch, the Prussian envoy
+(items 4-5, forwarded on to Marlborough). Hedges: no printed letter-book (CX2 sweep above). Harley's papers, the
+nearest printed Secretary-of-State collection for 1704: HMC *Portland* IV (15th Report App. IV, 1897;
+archive.org `dukeportlandmanu04greauoft`, `_djvu.txt` fetched once, 2.79 MB, grepped on disk, not committed): 17
+"Raby" lines, none an April-June 1704 Raby letter -- the 1704 mentions are the Archbishop of Canterbury on 21-22
+June 1704 about remitting GBP 6000 "to Lord Raby ambassador at Berlin" for the Orange Protestants; the first Raby
+letter printed is "1705, April 11. [Berlin]"; 0 lines for Berlepsch or Reichar[d/t]. The 1978 citation of an HMC
+report "of ... Raby's Circular Letter of 26 January 1704 and f.39" (OPEN section, Books query 5) reads like a BL
+foliated manuscript and is not this volume. Berlepsch's side: Preuss 1897 (Prussian-archive narrative of the
+mediation, full view on Google Books, not readable page by page from the cloud) and SP 87/2/36-42 (Marlborough's
+copies), as the OPEN section records; no print of the enclosure text located.
+
+Requests this pass: discovery.nationalarchives.gov.uk 6, archive.org 6 (3 advancedsearch, 1 metadata,
+2 download: a 302, then the followed djvu fetch), github.com shared clones; no 403/429/challenge (archive.org back up). Nothing read, graded or tested.
