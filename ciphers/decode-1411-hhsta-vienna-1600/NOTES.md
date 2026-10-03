@@ -111,7 +111,9 @@ interregnum) and Dudith, Epistulae 4 (1575, ed. Kotońska 1998) are the editions
 
 ## While waiting
 
-Next action that depends on nobody: transcribe the unglossed numerals of p.1 (lower block) and test the frozen mod-24 residue rule found by GAPS141 against them (see the GAPS141 section); the glossed pairs are harvested (gloss/pairs.tsv).
+Next action that depends on nobody: freeze a corrected residue table (gloss letters z and s re-read as the period
+letterforms r and h, decided from the GAPS141 gloss crops by a blind pass, before any new numeral is read), then test
+it on numerals not yet used (p.2 left lower half, p.2 right page) with the same three controls (see GAPS146 below).
 
 ## GAPS136 step: Cipherbrain Ferdinand III posts (3 Oct 2026, account-4)
 
@@ -233,3 +235,64 @@ Next step: pre-register the mod-24 residue rule (table from these 62 pairs, froz
 numerals of p.1's lower block (y 2300-3600, about 9 lines, one blind Opus pass + one check pass on line crops, ~$4)
 and score the rule's decode with tools/judge_plaintext.py against a German corpus of the period (check tools/data for an
 era-matched de17 corpus first, rule 3) with the shuffled-target decode beside it. Status unchanged: open.
+
+## GAPS146 step: frozen mod-24 residue rule tested on unglossed numerals (3 Oct 2026, account-4)
+
+Step run: GAPS141's next step. Pre-registration `residue/PREREG-GAPS146.md` (commit 78d550f4) pushed before any unglossed
+numeral was read: rule `residue/rule.py` -> `residue/frozen_table.tsv`, letter(n) = T[n mod 24], T from the 54 grade-C
+glossed pairs only (majority letter per residue; 8 unseen residues from the 24-letter alphabet with a = 5). Conflicts as
+declared: 56 n/d -> residue 8 = d (4 vs 1); 66 u-ring/o -> residue 18 = o (2 vs 1); 22 t vs 70/94 s -> residue 22 = s
+(2 vs 1). Frozen T has no h and no r (residue 12 = s and 21 = z from the glosses), declared as a weakness before scoring.
+
+One DECODE browser login (tools/decode_browser_login.js 1411, three explicit full-size fetches P1-P3; sha1 of P1 and
+sizes of P2/P3 match images/manifest.json). Crops (pasted commands; automatic line finding found 0 lines on this grey
+scan, so centres were set from the --debug overlays and checked on them):
+`python3 tools/iiif_lines.py --image IMG_R1411_I6595_P1.png --out images/gaps146_crops --region 560,1350,2540,2300
+--prefix p1L --centres 115,715,993,1128,1239,1366,1494,1652,1795,1930,2060,2215 --top-margin 60 --bottom-margin 55
+--max-width 1400 --overlap 200 --debug` (24 crops, 12 lines) and
+`python3 tools/iiif_lines.py --image IMG_R1411_I6596_P2.png --out images/gaps146_crops --region 700,100,1740,1200
+--prefix p2L --centres 95,187,301,416,508,622,720,840,949,1041,1134 --top-margin 55 --bottom-margin 55 --max-width 2400
+--debug` (11 crops). Deviation from the pre-registration: p.1's unglossed numerals (about 95) were under 150, and only
+the upper half of p.2's left page (11 lines) was added, not the whole page, to stay inside the cap.
+
+Two blind Opus 5.5 passes, one call each, crops only (`residue/passA.tsv` 182 rows, `residue/passB.tsv` 183 rows):
+identical on 14 of 23 lines. The worker settled the rest from the crops: two "2?" read only by B are letter strokes ("wer",
+"zu") and were dropped; A's "20?" on p2L_L03 is a superscript over "die" and was dropped; p1L_L07 positions 2 and 10
+(A 29?, B 79) are 79; p1L_L03 position 6 (A 64, B 04) stays unsettled as 64? (M). Reconciled: `residue/numbers.tsv`,
+176 cipher numbers, 11 graded M (either pass doubtful), plus 4 graphic signs (#) and one in-text figure (25000), which
+were not decoded.
+
+**Score (`residue/score.py`, `--check` exits 0; tools/data/de17, N = 176 letters):** decode -1.551; judge real_p05 -0.854,
+real_p01 -0.994, real median -0.747, null_p99 -1.889; shuffled-target decode (200 draws, seed 146) mean -2.225, p99
+-2.036, 0 of 200 >= real; shifted rules k = 1..23 best -1.980 (k = 11), 0 of 23 >= real. tools/judge_plaintext.py
+residue/judge_spec.json --file residue/decode_letters.txt:
+```
+FAIL language: score=-1.551, null_p99=-1.889, real_p05=-0.854, real_median=-0.747, mode=both, N=176
+FAIL - decode-1411-hhsta-vienna-1600 GAPS146 residue decode (a PASS is a gate for a verifier, not a reading; rule 10)
+```
+**Pre-registered verdict: CONTROLS BEATEN, JUDGE CANNOT DECIDE.** The frozen rule beats the shuffled target and all 23
+shifted rules by a clear margin (0.43 above the best shift) on numerals it was not built from, but stays far below the
+real-text 5th percentile (and the 1st). de17's own leave-one-file-out false-negative rate is 38.2 pct at N=300 with per-fold
+spread 4.0-97.0 pct (holdout_de17_N300.log) and 41.4 pct at N=1090 (13.0-100.0 pct), so its FAIL is of unknown reliability
+(rule 3). Not a negative; no reading-ready flag; status unchanged.
+
+Decode, per line (lower case = number agreed by both passes; upper case = M): p1L_L01 uze; L02 kziegeszatb; L03
+denneMazkA; L04 ltezeuez; L05 opensagen; L06 dannen; L07 ScszsfFlicg; L08 lanes; L09 gesandtan; L10 pzopoSet; L11
+attzibuezeto; L12 bsIdionges; p2L_L01 andten; L02 zespecceGem; L03 denneMK; L04 adsia; L05 Gescssta; L06 zal; L07 enkonte;
+L08 obnigat; L09 so; L10 lgaaesCaabgef; L11 uzetu.
+
+**Post-hoc observation (seen after the score; not tested, not applied):** several runs read as German or Latin chancery
+words if the table's z (residue 21) is read r and its b/s at residues 6/12 are read h: "kziegeszatb" ~ kriegesrath,
+"pzopoSet" ~ propo(n)et, "attzibuezeto" ~ attribuereto, beside "gesandtan", "dannen", "opensagen". This fits the gloss
+writer's r having been read as z by both GAPS141 passes (a common confusion for a period German r), which would also give
+the missing r. This is a hypothesis for the next step. Testing it on these 176 numbers would be contaminated.
+
+Token grades (rule 4): the 62 glossed pairs stay C 54 / M 8 (GAPS141). The 176 decoded numbers are graded M (the gate did
+not pass, so none are S); no reading is claimed. H 0, C 0 new, S 0, M 176, I 0. Vision: 2 subagent calls (Opus 5.5, crops
+only) + 5 worker image reads (two page overviews, two debug overlays, three crops to settle splits, counted as one
+reconciliation unit). Requests: de-crypt.org 5 (1 login, record page, 3 images).
+
+Next step: (1) a blind paleographic pass over the GAPS141 gloss crops asking only "is this letter r or z, h or s/b"
+(1 Opus call, ~USD 1.5), (2) a corrected table frozen in a new pre-registration from that pass, (3) the numerals not yet
+used (p.2 left lower half, p.2 right page = f.183) cut and read in two blind passes, then the same three controls plus de17.
+~USD 6. Status unchanged: open.

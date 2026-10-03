@@ -1,0 +1,182 @@
+line	pos	token	grade	note
+p1L_L01	1	72	ok	B-only "2?" dropped: first stroke of the word "wer" on the crop | off-centre: number line sits above crop centre; centre line (Vnndt weil etzliche exorbitanten) has no numbers - drop if L01 means centre line line '72.93,9,2.. dan dessen'; crop middle line had no numbers, this is the numeral line in crop
+p1L_L01	2	93	ok	off-centre (see pos 1)
+p1L_L01	3	9	ok	off-centre (see pos 1)
+p1L_L02	1	14	ok	off-centre: number line sits below crop centre; centre line (erinnert ... beylage lit. A.B.C.D.E.F.G.) has no numbers; follows 'der' line 'ersehen der 14 ...'; numeral line below crop middle
+p1L_L02	2	69	ok	off-centre; 6 with large loop
+p1L_L02	3	85	ok	off-centre
+p1L_L02	4	57	ok	off-centre
+p1L_L02	5	83	ok	off-centre
+p1L_L02	6	9	ok	off-centre
+p1L_L02	7	22	ok	off-centre
+p1L_L02	8	69	ok	off-centre
+p1L_L02	9	53	ok	off-centre
+p1L_L02	10	23	ok	off-centre
+p1L_L02	11	30	ok	off-centre
+p1L_L03	1	80	ok	pos 6 A 64 / B 04 unsettled from crop -> 64? M; pos 11 A doubtful | 
+p1L_L03	2	57	ok	
+p1L_L03	3	41	ok	
+p1L_L03	4	89	ok	
+p1L_L03	5	9	ok	
+p1L_L03	6	64?	M	
+p1L_L03	7	77	ok	
+p1L_L03	8	69	ok	
+p1L_L03	9	#	ok	x/1-like sign with flourish between 69 and 62; could be a digit 1 or 4 cross-like bold sign; could be a digit (7 or 4)
+p1L_L03	10	62	ok	
+p1L_L03	11	77?	M	after 'alhier sehr', written like 77 but could be a word ending after text 'sein alhier sehr'
+p1L_L04	1	63	ok	B-only "2?" ("zu 2,") dropped: letter z of "zu" | 
+p1L_L04	2	95	ok	
+p1L_L04	3	57	ok	
+p1L_L04	4	93	ok	
+p1L_L04	5	33	ok	
+p1L_L04	6	24	ok	
+p1L_L04	7	81	ok	
+p1L_L04	8	21	ok	stroke before 'wie' not counted (letter form)
+p1L_L05	1	66	ok	
+p1L_L05	2	43	ok	
+p1L_L05	3	81	ok	
+p1L_L05	4	17	ok	
+p1L_L05	5	36	ok	
+p1L_L05	6	5	ok	could be part of 365 (spacing unclear)
+p1L_L05	7	83	ok	
+p1L_L05	8	9	ok	
+p1L_L05	9	65	ok	
+p1L_L06	1	80	ok	
+p1L_L06	2	29	ok	
+p1L_L06	3	65	ok	
+p1L_L06	4	17	ok	
+p1L_L06	5	33	ok	
+p1L_L06	6	65	ok	
+p1L_L07	1	70?	M	pos 2 and 10 A 29? / B 79 -> 79 from crop (same 7 as in 70) | first digit z-like, could be 20
+p1L_L07	2	79	ok	could be 79
+p1L_L07	3	12	ok	
+p1L_L07	4	93	ok	
+p1L_L07	5	60	ok	
+p1L_L07	6	10	ok	
+p1L_L07	7	58?	M	first digit 5 or 8
+p1L_L07	8	39	ok	
+p1L_L07	9	85	ok	
+p1L_L07	10	79	ok	could be 79
+p1L_L07	11	59	ok	
+p1L_L08	1	63	ok	
+p1L_L08	2	53	ok	
+p1L_L08	3	41	ok	
+p1L_L08	4	57	ok	
+p1L_L08	5	22	ok	
+p1L_L09	1	#	ok	circled cross after 'alda das', immediately before run circled cross
+p1L_L09	2	83	ok	
+p1L_L09	3	33	ok	
+p1L_L09	4	94	ok	
+p1L_L09	5	77	ok	
+p1L_L09	6	41	ok	
+p1L_L09	7	8	ok	
+p1L_L09	8	95	ok	
+p1L_L09	9	77	ok	
+p1L_L09	10	65	ok	run followed by z-like flourish then 'Kön. M.' (read as text, not given)
+p1L_L10	1	43	ok	
+p1L_L10	2	93	ok	
+p1L_L10	3	18	ok	
+p1L_L10	4	91	ok	
+p1L_L10	5	66	ok	
+p1L_L10	6	70?	M	could be 20
+p1L_L10	7	81	ok	
+p1L_L10	8	23	ok	
+p1L_L11	1	29	ok	
+p1L_L11	2	47	ok	
+p1L_L11	3	23	ok	
+p1L_L11	4	93	ok	
+p1L_L11	5	13	ok	
+p1L_L11	6	6	ok	
+p1L_L11	7	96	ok	
+p1L_L11	8	33	ok	
+p1L_L11	9	21	ok	
+p1L_L11	10	9	ok	
+p1L_L11	11	71	ok	
+p1L_L11	12	42	ok	after 'das sie von der' after text 'bey der'
+p1L_L12	1	30	ok	
+p1L_L12	2	94	ok	
+p1L_L12	3	61?	M	second digit could be 7 (67) second digit 1 or 2/7
+p1L_L12	4	8	ok	
+p1L_L12	5	85	ok	
+p1L_L12	6	90	ok	
+p1L_L12	7	17	ok	
+p1L_L12	8	35	ok	after 'entfreijet dahero die' after text 'dahero die'
+p1L_L12	9	57	ok	
+p1L_L12	10	70	ok	
+p2L_L01	1	53	ok	
+p2L_L01	2	89	ok	
+p2L_L01	3	8	ok	
+p2L_L01	4	47	ok	
+p2L_L01	5	81	ok	
+p2L_L01	6	41	ok	
+p2L_L02	1	45	ok	
+p2L_L02	2	81	ok	
+p2L_L02	3	94	ok	
+p2L_L02	4	19	ok	
+p2L_L02	5	57	ok	
+p2L_L02	6	7	ok	could be 1
+p2L_L02	7	7	ok	could be 1
+p2L_L02	8	81	ok	
+p2L_L02	9	20?	M	could be 70
+p2L_L02	10	57	ok	
+p2L_L02	11	40	ok	stroke before 'worden' not counted (letter form)
+p2L_L03	1	80	ok	A-only "20?" is a superscript over "die", dropped; pos 6-7 16?/14? both doubtful | small superscript over 'die' after 'ist'; may be an abbreviation mark, not a number after 'uff die' (superscript over 'die' not counted)
+p2L_L03	2	33	ok	
+p2L_L03	3	17	ok	
+p2L_L03	4	89	ok	
+p2L_L03	5	9	ok	
+p2L_L03	6	16?	M	second digit 6 or 8
+p2L_L03	7	14?	M	second digit 4 or 9
+p2L_L03	8	#	ok	curled 4-like sign before 'Kön'; may be a text abbreviation circled cross in text 'von # wegen'
+p2L_L04	1	29	ok	
+p2L_L04	2	32	ok	
+p2L_L04	3	22	ok	
+p2L_L04	4	61	ok	
+p2L_L04	5	77	ok	
+p2L_L04	6	25000	ok	intext (after 'endlich' and ff sign) intext ('uff 25000')
+p2L_L05	1	20?	M	could be 70
+p2L_L05	2	57	ok	
+p2L_L05	3	84	ok	
+p2L_L05	4	55	ok	
+p2L_L05	5	60	ok	
+p2L_L05	6	94	ok	
+p2L_L05	7	47	ok	
+p2L_L05	8	29	ok	
+p2L_L06	1	#	ok	circled cross after 'das', intext circled cross in text 'das # ausst..'
+p2L_L06	2	28	ok	after 'dasselbige mit'
+p2L_L06	3	53	ok	
+p2L_L06	4	15	ok	
+p2L_L07	1	57	ok	
+p2L_L07	2	65	ok	
+p2L_L07	3	86	ok	
+p2L_L07	4	42	ok	
+p2L_L07	5	17	ok	
+p2L_L07	6	95	ok	
+p2L_L07	7	9	ok	
+p2L_L08	1	18	ok	
+p2L_L08	2	6	ok	
+p2L_L08	3	89	ok	
+p2L_L08	4	13	ok	
+p2L_L08	5	59	ok	
+p2L_L08	6	77	ok	
+p2L_L08	7	95	ok	
+p2L_L09	1	94	ok	after 'soll die' after text 'solle die'
+p2L_L09	2	18	ok	
+p2L_L10	1	39	ok	
+p2L_L10	2	35	ok	
+p2L_L10	3	5	ok	
+p2L_L10	4	5	ok	
+p2L_L10	5	81	ok	
+p2L_L10	6	22	ok	
+p2L_L10	7	31?	M	could be 37
+p2L_L10	8	77	ok	
+p2L_L10	9	53	ok	after 'nicht' after 'nicht'
+p2L_L10	10	6	ok	
+p2L_L10	11	83	ok	
+p2L_L10	12	57	ok	
+p2L_L10	13	10	ok	
+p2L_L11	1	24	ok	
+p2L_L11	2	69	ok	
+p2L_L11	3	9	ok	
+p2L_L11	4	95	ok	
+p2L_L11	5	48	ok	after 'ankunfft' after text 'uff ankunfft'

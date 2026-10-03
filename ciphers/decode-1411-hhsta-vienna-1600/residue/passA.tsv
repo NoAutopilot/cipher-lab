@@ -1,0 +1,183 @@
+line	pos	token	note
+p1L_L01	1	72	off-centre: number line sits above crop centre; centre line (Vnndt weil etzliche exorbitanten) has no numbers - drop if L01 means centre line
+p1L_L01	2	93	off-centre (see pos 1)
+p1L_L01	3	9	off-centre (see pos 1)
+p1L_L02	1	14	off-centre: number line sits below crop centre; centre line (erinnert ... beylage lit. A.B.C.D.E.F.G.) has no numbers; follows 'der'
+p1L_L02	2	69	off-centre; 6 with large loop
+p1L_L02	3	85	off-centre
+p1L_L02	4	57	off-centre
+p1L_L02	5	83	off-centre
+p1L_L02	6	9	off-centre
+p1L_L02	7	22	off-centre
+p1L_L02	8	69	off-centre
+p1L_L02	9	53	off-centre
+p1L_L02	10	23	off-centre
+p1L_L02	11	30	off-centre
+p1L_L03	1	80	
+p1L_L03	2	57	
+p1L_L03	3	41	
+p1L_L03	4	89	
+p1L_L03	5	9	
+p1L_L03	6	64	
+p1L_L03	7	77	
+p1L_L03	8	69	
+p1L_L03	9	#	x/1-like sign with flourish between 69 and 62; could be a digit 1 or 4
+p1L_L03	10	62	
+p1L_L03	11	77?	after 'alhier sehr', written like 77 but could be a word ending
+p1L_L04	1	63	
+p1L_L04	2	95	
+p1L_L04	3	57	
+p1L_L04	4	93	
+p1L_L04	5	33	
+p1L_L04	6	24	
+p1L_L04	7	81	
+p1L_L04	8	21	
+p1L_L05	1	66	
+p1L_L05	2	43	
+p1L_L05	3	81	
+p1L_L05	4	17	
+p1L_L05	5	36	
+p1L_L05	6	5	
+p1L_L05	7	83	
+p1L_L05	8	9	
+p1L_L05	9	65	
+p1L_L06	1	80	
+p1L_L06	2	29	
+p1L_L06	3	65	
+p1L_L06	4	17	
+p1L_L06	5	33	
+p1L_L06	6	65	
+p1L_L07	1	70?	first digit z-like, could be 20
+p1L_L07	2	29?	could be 79
+p1L_L07	3	12	
+p1L_L07	4	93	
+p1L_L07	5	60	
+p1L_L07	6	10	
+p1L_L07	7	58	
+p1L_L07	8	39	
+p1L_L07	9	85	
+p1L_L07	10	29?	could be 79
+p1L_L07	11	59	
+p1L_L08	1	63	
+p1L_L08	2	53	
+p1L_L08	3	41	
+p1L_L08	4	57	
+p1L_L08	5	22	
+p1L_L09	1	#	circled cross after 'alda das', immediately before run
+p1L_L09	2	83	
+p1L_L09	3	33	
+p1L_L09	4	94	
+p1L_L09	5	77	
+p1L_L09	6	41	
+p1L_L09	7	8	
+p1L_L09	8	95	
+p1L_L09	9	77	
+p1L_L09	10	65	run followed by z-like flourish then 'Kön. M.' (read as text, not given)
+p1L_L10	1	43	
+p1L_L10	2	93	
+p1L_L10	3	18	
+p1L_L10	4	91	
+p1L_L10	5	66	
+p1L_L10	6	70?	could be 20
+p1L_L10	7	81	
+p1L_L10	8	23	
+p1L_L11	1	29	
+p1L_L11	2	47	
+p1L_L11	3	23	
+p1L_L11	4	93	
+p1L_L11	5	13	
+p1L_L11	6	6	
+p1L_L11	7	96	
+p1L_L11	8	33	
+p1L_L11	9	21	
+p1L_L11	10	9	
+p1L_L11	11	71	
+p1L_L11	12	42	after 'das sie von der'
+p1L_L12	1	30	
+p1L_L12	2	94	
+p1L_L12	3	61?	second digit could be 7 (67)
+p1L_L12	4	8	
+p1L_L12	5	85	
+p1L_L12	6	90	
+p1L_L12	7	17	
+p1L_L12	8	35	after 'entfreijet dahero die'
+p1L_L12	9	57	
+p1L_L12	10	70	
+p2L_L01	1	53	
+p2L_L01	2	89	
+p2L_L01	3	8	
+p2L_L01	4	47	
+p2L_L01	5	81	
+p2L_L01	6	41	
+p2L_L02	1	45	
+p2L_L02	2	81	
+p2L_L02	3	94	
+p2L_L02	4	19	
+p2L_L02	5	57	
+p2L_L02	6	7	
+p2L_L02	7	7	
+p2L_L02	8	81	
+p2L_L02	9	20?	could be 70
+p2L_L02	10	57	
+p2L_L02	11	40	
+p2L_L03	1	20?	small superscript over 'die' after 'ist'; may be an abbreviation mark, not a number
+p2L_L03	2	80	
+p2L_L03	3	33	
+p2L_L03	4	17	
+p2L_L03	5	89	
+p2L_L03	6	9	
+p2L_L03	7	16	
+p2L_L03	8	4?	curled 4-like sign before 'Kön'; may be a text abbreviation
+p2L_L03	9	#	circled cross after 'Kön', intext
+p2L_L04	1	29	
+p2L_L04	2	32	
+p2L_L04	3	22	
+p2L_L04	4	61	
+p2L_L04	5	77	
+p2L_L04	6	25000	intext (after 'endlich' and ff sign)
+p2L_L05	1	20?	could be 70
+p2L_L05	2	57	
+p2L_L05	3	84	
+p2L_L05	4	55	
+p2L_L05	5	60	
+p2L_L05	6	94	
+p2L_L05	7	47	
+p2L_L05	8	29	
+p2L_L06	1	#	circled cross after 'das', intext
+p2L_L06	2	28	after 'dasselbige mit'
+p2L_L06	3	53	
+p2L_L06	4	15	
+p2L_L07	1	57	
+p2L_L07	2	65	
+p2L_L07	3	86	
+p2L_L07	4	42	
+p2L_L07	5	17	
+p2L_L07	6	95	
+p2L_L07	7	9	
+p2L_L08	1	18	
+p2L_L08	2	6	
+p2L_L08	3	89	
+p2L_L08	4	13	
+p2L_L08	5	59	
+p2L_L08	6	77	
+p2L_L08	7	95	
+p2L_L09	1	94	after 'soll die'
+p2L_L09	2	18	
+p2L_L10	1	39	
+p2L_L10	2	35	
+p2L_L10	3	5	
+p2L_L10	4	5	
+p2L_L10	5	81	
+p2L_L10	6	22	
+p2L_L10	7	31?	could be 37
+p2L_L10	8	77	
+p2L_L10	9	53	after 'nicht'
+p2L_L10	10	6	
+p2L_L10	11	83	
+p2L_L10	12	57	
+p2L_L10	13	10	
+p2L_L11	1	24	
+p2L_L11	2	69	
+p2L_L11	3	9	
+p2L_L11	4	95	
+p2L_L11	5	48	after 'ankunfft'
