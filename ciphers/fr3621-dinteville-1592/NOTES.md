@@ -519,19 +519,82 @@ graded C (1, D, T, o, 9) are M: **licensed C 263 S 0 M 264 U 0**. h and D: M; th
 Found in print: *Revue de Champagne et de Brie* t.XII (1882) pp.340-341 prints f.128 (1 July) in full and calendars f.130
 (4 July, "En chiffres") from its clear text only (`print/revue-champagne-t12-1882-pp340-341.txt`). Script verify/verify_din.py.
 
-## Remaining gaps (A2-DIN, 3 Oct 2026)
-Read so far: f.130 530 of 530 signs transcribed and decoded with the repaired key at C 263 / M 264 / U 0 as licensed by VERIFY-DIN (filed as C 329 / S 71 / M 127) (f130/repair/reading.txt; word-level reading of L05, L08-L11 in f130/repair/reading_words.md); f.128 key aligned on 89 of 183 sign occurrences at grade C (f128/align_syl.tsv)
-- f.130 word-level reading (repaired key, A2-DIN3: fr16 -1.271 vs repaired-shuffle p95 -1.582, 0/1000; C 329 S 71 M 127 U 0 as filed, verifier-licensed C 263 S 0 M 264 (AUDIT.md 2d); f130/repair/reading_words.md, phrases on L05 and L08-L11) - blocker: not-attempted; h and D rejected by thin f.128 gloss evidence although the f.130 words want h=p and D=c/d, and L01-L04/L06-L07 are undivided; next: a second reader on the f.128 gloss at the h and D (and other drifting) signs, re-run align_f128.py --syl and repair_f130.py, then a verifier session on f130/repair/reading_words.md, ~$4
-- f.128 gloss vs its 1882 print (Revue de Champagne et de Brie t.XII p.340 prints the f.128 plaintext in full; VERIFY-DIN, AUDIT.md 3b) - blocker: not-attempted; the print contradicts the gloss reading at 'bestiaux'/'besounasiana' (Besançon/Vesoul) and 'doibt aussi passer' (doivent partir), where h's only gloss support sits; next: normalise print and gloss to one convention (rule 3 PX-BRODEC), re-align f128 with interlinear_align.py against the print, re-run align_f128.py --syl and repair_f130.py, regrade repair_f130.py per AUDIT.md 2d, ~$3
-- f.128 drifting spans (L03 "a geneue +", L04 from "doibt", L05 from "de +") - blocker: not-attempted; likely transcription or gloss-reading error (f128/align_syl.tsv M rows); next: a second reader on those crops only, then re-run align_f128.py --syl, ~$3
-- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
+## f.128 re-aligned against the 1882 print; f.130r re-decoded (DIN-PRINT, account 3, 3 Oct 2026, 07:43-08:00 UTC)
 
-## Escalation (A2-DIN, 3 Oct 2026)
-- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (this file, A2-DIN)
+Brief `.claude/briefs/runs/2026-10-03-acct3-din-print.md`. Pre-registered before any score: `f128/print_align/PREREG.md`
+(commit d10eb096). Disk only, no images, no network.
+
+**1. One convention.** `f128/print_align/print_pairs.tsv`: per glossed f.128 segment, the print span (*Revue de Champagne
+et de Brie* XII, 1882, p.340) and the gloss, both lowercased, accents folded, punctuation dropped, j/v/y -> i/u/i, numerals
+as words, the gloss's '+' marks dropped. Print words are used verbatim (vu, charges), not respelled from the gloss. One
+gloss dependency remains: the print's "45 mulets" is OCR-garbled ('îa'), so "quarante cinq" comes from the gloss. Where
+they differ, the print reads "besancon" for "bestiaux", "doiuent partir" for "doibt aussi passer", "uesoul naiant" for
+"besounasiana", and "cent cheuaux descorte" for "vn chemin de fl". Each of these fits the cipher letter by letter
+under the existing key (e.g. `# 0 f v` = cent, `# T 1 m v al sq` = cheuaux, `3 1 . 0 # y c n 1 .` = descorte).
+
+**2. Alignment** (`f128/print_align/align_print.py`, tools/interlinear_align.py with key_syl's exact --syl settings; only
+the plain text changed). Consistency, with the key-blind controls (every rotation of the print letters re-split into the
+same word lengths, and 1000 letter shuffles, seed 20261003):
+
+| plain text | mode | real | rotations p95 / max (ge) | shuffles p95 / max (ge) | gate |
+|---|---|---|---|---|---|
+| **print** | **syl (primary)** | **0.831** (160 occ) | 0.327 / 0.803 (0/166) | 0.325 / 0.358 (0/1000) | **PASS** |
+| gloss, same convention | syl | 0.468 (158) | 0.333 / 0.352 (0/165) | 0.333 / 0.381 (0/1000) | PASS |
+| print | letter (secondary) | 0.389 (144) | 0.372 / 0.417 (3/166) | 0.373 / 0.423 (20/1000) | fail |
+| gloss, same convention | letter | 0.349 (149) | 0.361 / 0.390 (18/165) | 0.356 / 0.401 (102/1000) | fail |
+
+The rotation maximum of 0.803 for the print is one near-identity rotation (a shift of a letter or two lets the aligner slide
+back into phase); the p95 is 0.327. The letter mode fails for both texts, as it did for the gloss in A2-DIN, so the
+primary is the syllabic setting. With the same convention the gloss scores 0.468 (0.590 with its '+' wildcards). Moving to
+the print raises it to 0.831, so the gap is the gloss reading, not notation.
+
+**Rows changed vs key_syl.tsv: 7 of 29** (`f128/print_align/diff_vs_key_syl.tsv`): `#` d 5/13 -> c 7/13 (d 6 remains;
+it is a c/d polyphone), `c` a 1/5 -> **r 4/4**, `r` b 1/4 -> **n 4/4**, `h` u 1/1 -> **p 1/1**, `zh` e 1/2 -> t 2/2, `B` s -> a
+(1/1), `n` e -> r (1/1). Rows whose support rose to a clean C: `.` e 9/9, `f` n 11/11, `y` o 9/9, `D` a 4/4, `9` g 3/3,
+`T` h 3/3, `3` d 5/5, `L` i 5/5. `1` e falls to 3/7 (M). The A2-DIN3 hill-climb had already moved c to r and r to n (both
+now confirmed by the print). It left h = u, zh = e, B = s and n = e, and the print contradicts all four.
+
+**3. f.130r with the print key, no repair** (`f130/print/score_print.py`, the statistic of score_f130.py, imported
+unchanged): fr16 **-1.271** (key_syl -1.334). Free shuffles: mean -1.956, p95 -1.705, max -1.462, 0/1000. Frequency-banded
+shuffles (seed 31001): mean -1.675, p95 -1.575, max -1.450, 0/1000. **Gate PASS.** The unrepaired print key matches the
+score of the hill-climbed key (-1.271).
+
+**Grades** (decode_key.py, decode.json job 3, 527 tokens, dots excluded; pre-registered rule: key_print agree >= 3 and
+>= 0.5 and sign conf H -> C): **C 357, M 131, U 39, S 0, no H.** Caveat (sensitivity, not pre-registered): two of the C rows are
+polyphones in the print alignment, `#` (c 7, d 6; 34 C tokens) and `v` (a 8, t 5; 32 C tokens). With both held at M:
+**C 291, M 197, U 39.** The conservative figure should be used outside the repository. U = v' 23, 0' 14 and the two NEW signs:
+they never occur on f.128, so the print cannot key them. Their repair values (t, s, l, r) stay M at best, in the superseded job 2.
+h = p is now print-supported (1/1, so M, not I). D = a 4/4 in the print, so the f.130 words that want D = c/d stay I.
+
+**Superseded:** decode.json job 2 (`f130/repair/key_repaired.tsv`, `f130/repair/tokens.tsv`, C 329 S 71 M 127) is
+marked SUPERSEDED in its name and in `f130/repair/SUPERSEDED.md`. Its files are kept unedited, because repair_f130.py
+--check regenerates them. The current reading is job 3 (`f130/print/reading.txt`; lower = C, UPPER = M).
+
+**Reading, word level (my division; interpretation, not graded beyond its letters):** L05 "[c]onseruer ces ...
+en l'obeissance" (before the clear "Messieurs de la ville"); L08 "...de dans ... bien bas ... qu'il ne s'o.. plus ...";
+L09 "dehors les [f]orce[s] seruiront ... leur ..."; L10 "la uille et le roi ..."; L11 "pourvoir de ... [t]irer d'aultant
+qu'il i a a per[d]re ... l'honneur" (before the clear "pour luy"). L01-L04 and L06-L07 are still undivided.
+
+**4. Date.** No crop of the f.130 date line is on disk: the f269 source region (280,600,3360,1360) and the line crops cover
+only the body as far as L11. Not looked at. The date stays flagged: iij (Bourdeau) or iiij (BnF finding aid, 1882 print, 4 July).
+
+Rule 7: `python3 tools/decode_key.py ciphers/fr3621-dinteville-1592 --check` prints "reading up to date" (3 jobs);
+`f128/print_align/align_print.py --check` and `f130/print/score_print.py --check` print "check: committed outputs match".
+No spec, so judge_plaintext.py was not run as a spec judge. Requests: none. Vision calls: none. Rule 10: no novelty claim.
+
+## Remaining gaps (DIN-PRINT, 3 Oct 2026)
+Read so far: f.130 527 of 527 cipher tokens decoded with the print-aligned key at C 357 / M 131 / U 39 (pre-registered rule; C 291 / M 197 with the polyphones # and v held at M), f130/print/reading.txt, decode.json job 3; f.128 aligned to its 1882 print, consistency 0.831 vs shuffle max 0.358 (f128/print_align/)
+- f.130 word-level reading (L01-L04, L06-L07 undivided; L05, L08-L11 phrases) - blocker: not-attempted; the print key leaves v' (23) and 0' (14) unkeyed and # (c/d) and v (a/t) polyphone; next: a verifier session on f130/print/reading.txt (supersedes the repaired reading; carry into AUDIT.md and SO-DIN-F130), then a word-division pass with # and v read in context and graded I, ~$4
+- v', 0' and the NEW signs (39 tokens, absent from f.128) - blocker: not-attempted; no f.128 support, and the repair climb that filled them fails its own known-answer test (AUDIT.md 2d); next: compare the sign set of fr.3623 f.23 (below), which may carry them with a decipherment, ~$4
+- fr.3623 f.23 (no.15, Dinteville to Nevers, Italian, "avec chiffre et dechiffrement", DECODE R9452) - blocker: not-attempted; a further crib if the sign set matches (GF4-BATCH9 Premise check); next: locate the canvas and compare its sign set with f128/gloss_pairs.tsv, ~$4
+- f.130 date (iij or iiij July) - blocker: not-attempted; no date-line crop on disk (DIN-PRINT); next: one Gallica region fetch of the f269 foot and one look, ~$1
+
+## Escalation (DIN-PRINT, 3 Oct 2026)
+- [x] siblings: f.128r (no.114) transcribed with its interlinear gloss and aligned, consistency 0.590 vs rotated-gloss null max 0.353 (A2-DIN); re-aligned to its 1882 print, 0.831 vs shuffle max 0.358 (DIN-PRINT)
 - [ ] clear-pages: fr.3623 f.23 decipherment not yet compared (planned step above)
 - [x] known-keys: none in Tomokiyo's Nevers catalogue (Bourdeau; GF4-BATCH9 web check)
-- [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9)
-- [ ] key-rebuild: VERIFY-DIN, the repair climb recovers 4/14 held gloss values and 40% of freed rows at 11% error, so its values are M; next: re-align f.128 against the 1882 print. key_syl applied to f.130, fr16 -1.334 vs shuffled-key max -1.538 (0/1000, A2-DIN2); repaired (v', 0', weak rows) -1.271 vs repaired-shuffle p95 -1.582 (0/1000, A2-DIN3); h and D still open against the f.128 gloss
+- [x] print: Gomberville seconde partie searched, letter absent (scGOM2, GF4-BATCH9); Revue de Champagne XII (1882) p.340 prints f.128, used as the key's plain text (VERIFY-DIN, DIN-PRINT)
+- [x] key-rebuild: key aligned to the 1882 print of f.128 (7 of 29 rows changed vs key_syl), f.130 fr16 -1.271 vs free-shuffle max -1.462 and banded-shuffle max -1.450 (0/2000), no repair (DIN-PRINT)
 - [x] image-check: f.130 transcribed from Gallica f269 (2 blind passes + reconciliation, err_2reader 11%, f130/ciphertext.tsv, A2-DIN2)
 - [n/a] retry: no failed instrument on this target to retry yet
-Verdict: keep going: 4 internal gaps; cheapest next: (VERIFY-DIN) re-align the f.128 gloss against its 1882 print (Revue de Champagne t.XII p.340), or a second reader on the f.128 gloss at signs h, D and the drifting spans, then re-run align_f128.py --syl and repair_f130.py, then a verifier on f130/repair/reading_words.md, ~$4
+Verdict: keep going: 4 internal gaps; cheapest next: a verifier session on f130/print/reading.txt (the print-key reading supersedes the repaired one), then fr.3623 f.23's sign set for v' and 0', ~$4

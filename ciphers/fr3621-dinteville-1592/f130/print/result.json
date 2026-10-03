@@ -1,0 +1,27 @@
+{
+ "stat": "fr16 4-gram mean log10 P/letter inside keyed runs (score_f130.py)",
+ "key": "f128/print_align/key_print.tsv",
+ "windows": 385,
+ "free_shuffle": {
+  "real": -1.2714,
+  "mean": -1.9562,
+  "p95": -1.705,
+  "max": -1.4621,
+  "ge_real": 0,
+  "n": 1000
+ },
+ "banded_shuffle": {
+  "real": -1.2714,
+  "mean": -1.675,
+  "p95": -1.5748,
+  "max": -1.4501,
+  "ge_real": 0,
+  "n": 1000
+ },
+ "gate_pass": true,
+ "grades": {
+  "C": 360,
+  "M": 131,
+  "U": 39
+ }
+}

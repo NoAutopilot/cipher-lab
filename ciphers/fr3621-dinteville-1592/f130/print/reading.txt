@@ -1,0 +1,13 @@
+# f.130r decoded with f128/print_align/key_print.tsv (DIN-PRINT). lower = C, UPPER = M, ? = unkeyed (U), [..] = clear.
+# grades: C 360 M 131 U 39
+L01	L E U O
+L02	? E r o i u s i L n i E ? ? ? i u ? o U r u E u q u i m E a a E c u L E s i r E n u o i E r a u e c c E L A O u L c r E [bonne] [fortune]
+L03	[aussi] [si] [vous] [plaist] [Monseigneur] [que] c i q i e c E m e u r E s e u l i c i a u E c L e ? h a B i u a n s E u [que] [larmee] [Lorraine]
+L04	[se] [fortifie] [et] [a] [qui] [estoit] [du] [costé] [de] [Strasbourg] q i e ? c r E u o u r n a N ? a m o L i l m e s E r n R L ? ? a l L E s e c E c
+L05	o n s e r u E r c e s ? E P l e M E e n l o B e i s ? a n c e Q R u e l L E e h ? [Messieurs] [de] [la] [ville]
+L06	[dy] s i l E ? a o N r c e s
+L07	n O s o n ? ? l a s ? E E e s o u L ? r e L E h a s L r u q u M e c o u r ? l a u E I l L e i l n e s E l e u E r a Q n c E n i E e r c e ? a
+L08	i l L E s c a u L ? r E c o s ? E L e n E u o i l E c e d a n s ? E B i e n B a s ? i q u I l n e s o L ? ? l u s a c r a E n c r E q Q E l E
+L09	c E h o r s l E s a o r c E ? s E r u i r o n ? P a n ? a l E E s c o n ? ? I o L r a l E u r c E u o L r q u E a L a c E a L N c E c e
+L10	l a u i l L E e l e r o i E a u o q r s m E s c u ? E R A S ? I I E P a s ? c E m o A q q r E S O l n E e e l a L s ? a s a m a i e u E C I
+L11	P o u r U o i r c E m e n r e ? i r e r c a u l ? a n ? q u i l i a a P e r c r E e l a u L e E ? l h o n N E u r [pour] [luy]

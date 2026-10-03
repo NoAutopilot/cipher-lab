@@ -16,6 +16,9 @@ THE ITEM
   roughly half of the letters uncertain, e.g. "... conserver ... en l'obéissance" (just before the clear words
   "Messieurs de la ville"), "dehors les ... serviront ... leur", "la ville et le roi", "pourvoir de ... retirer d'aultant
   qu'il y a ... l'honneur" (just before the clear words "pour luy"). There is no continuous plaintext.
+  (Revised 3 Oct 2026, after this prompt was first written: the key has since been re-aligned to the 1882 print of
+  fol.128 instead of the manuscript gloss. The same fragments recur and about 55% of the letters are now firm. The
+  questions below are unchanged.)
 - Our audit and search log: https://github.com/NoAutopilot/cipher-lab/blob/main/ciphers/fr3621-dinteville-1592/AUDIT.md
 
 QUESTIONS

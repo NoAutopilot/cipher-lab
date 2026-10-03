@@ -1,0 +1,9 @@
+text	mode	control	real	real_n_occ	n	null_mean	null_p95	null_max	null_ge_real	gate_pass
+print	syl	rotation	0.831	160	166	0.297	0.327	0.803	0	True
+print	syl	shuffle	0.831	160	1000	0.292	0.325	0.358	0	True
+print	letter	rotation	0.389	144	166	0.333	0.372	0.417	3	False
+print	letter	shuffle	0.389	144	1000	0.332	0.373	0.423	20	False
+gloss_norm	syl	rotation	0.468	158	165	0.301	0.333	0.352	0	True
+gloss_norm	syl	shuffle	0.468	158	1000	0.302	0.333	0.381	0	True
+gloss_norm	letter	rotation	0.349	149	165	0.32	0.361	0.39	18	False
+gloss_norm	letter	shuffle	0.349	149	1000	0.32	0.356	0.401	102	False

@@ -1,0 +1,184 @@
+cipher_line	idx	sign	plain_chunk	status
+L02.2	0	z	m	agrees
+L02.2	1	v	a	agrees
+L02.2	2	y		null-or-unaligned
+L02.2	3	a		null-or-unaligned
+L02.2	4	p		null-or-unaligned
+L02.2	5	3	d	agrees
+L02.2	6	L	i	agrees
+L02.2	7	zh	t	agrees
+L03.1	0	II		null-or-unaligned
+L03.1	1	D	a	agrees
+L03.1	2	al	u	agrees
+L03.1	3	y	o	agrees
+L03.1	4	p	i	agrees
+L03.1	5	w	r	agrees
+L03.1	6	m	u	agrees
+L03.1	7	o		null-or-unaligned
+L03.1	8	al	u	agrees
+L03.1	9	#	d	conflict:c
+L03.1	10	1		null-or-unaligned
+L03.1	11	.	e	agrees
+L03.1	12	sq	s	agrees
+L03.1	13	0	c	conflict:e
+L03.1	14	0	e	agrees
+L03.1	15	f	n	agrees
+L03.1	16	3	d	agrees
+L03.1	17	c	r	agrees
+L03.1	18	1		null-or-unaligned
+L03.1	19	.	e	agrees
+L03.1	20	D	a	agrees
+L03.1	21	9	g	agrees
+L03.1	22	1		null-or-unaligned
+L03.1	23	.	e	agrees
+L03.1	24	f		null-or-unaligned
+L03.1	25	r	n	agrees
+L03.1	26	0	e	agrees
+L03.1	27	#	d	conflict:c
+L03.1	28	0	e	agrees
+L03.1	29	m	u	agrees
+L03.1	30	sq	x	conflict:s
+L03.1	31	z	m	agrees
+L03.1	32	p	i	agrees
+L03.1	33	4	l	agrees
+L03.1	34	plus	l	single
+L03.1	35	L	i	agrees
+L03.1	36	y	o	agrees
+L03.1	37	f	n	agrees
+L03.1	38	sq	s	agrees
+L03.1	39	3	d	agrees
+L03.1	40	y	o	agrees
+L03.1	41	w	r	agrees
+L03.1	42	#	d	conflict:c
+L03.1	43	0	e	agrees
+L03.1	44	sq	s	agrees
+L03.1	45	0	p	conflict:e
+L03.1	46	v	a	agrees
+L03.1	47	L	i	agrees
+L03.1	48	9	g	agrees
+L03.1	49	r	n	agrees
+L03.1	50	0	e	agrees
+L03.3	0	y		null-or-unaligned
+L03.3	1	#		null-or-unaligned
+L03.3	2	v	a	agrees
+L04.1	0	div	b	single
+L04.1	1	0	e	agrees
+L04.1	2	0	s	conflict:e
+L04.1	3	D	a	agrees
+L04.1	4	f	n	agrees
+L04.1	5	#	c	agrees
+L04.1	6	y	o	agrees
+L04.1	7	r	n	agrees
+L04.1	8	a	q	agrees
+L04.1	9	al	u	agrees
+L04.1	10	v	a	agrees
+L04.1	11	w	r	agrees
+L04.1	12	D	a	agrees
+L04.1	13	f	n	agrees
+L04.1	14	v	t	conflict:a
+L04.1	15	0	e	agrees
+L04.1	16	#	c	agrees
+L04.1	17	1	i	conflict:e
+L04.1	18	f	n	agrees
+L04.1	19	a	q	agrees
+L04.1	20	z	m	agrees
+L04.1	21	m	u	agrees
+L04.1	22	4	l	agrees
+L04.1	23	0	e	agrees
+L04.1	24	v	t	conflict:a
+L04.1	25	sq	s	agrees
+L04.1	26	#	c	agrees
+L04.1	27	T	h	agrees
+L04.1	28	v	a	agrees
+L04.1	29	w	r	agrees
+L04.1	30	9	g	agrees
+L04.1	31	1		null-or-unaligned
+L04.1	32	.	e	agrees
+L04.1	33	sq	s	agrees
+L04.1	34	a	q	agrees
+L04.1	35	m	u	agrees
+L04.1	36	L	i	agrees
+L04.1	37	#	d	conflict:c
+L04.1	38	y	o	agrees
+L04.1	39	p	i	agrees
+L04.1	40	m	u	agrees
+L04.1	41	o	e	agrees
+L04.1	42	f	n	agrees
+L04.1	43	m	t	conflict:u
+L04.1	44	h	p	single
+L04.1	45	v	a	agrees
+L04.1	46	c	r	agrees
+L04.1	47	v	t	conflict:a
+L04.1	48	L	i	agrees
+L04.1	49	c	r	agrees
+L04.1	50	#	d	conflict:c
+L04.1	51	B	a	single
+L04.1	52	f	n	agrees
+L04.1	53	sq	s	agrees
+L04.1	54	m	t	conflict:u
+L04.1	55	w	r	agrees
+L04.1	56	y	o	agrees
+L04.1	57	p	i	agrees
+L04.1	58	sq	s	agrees
+L05.1	0	1	i	conflict:e
+L05.1	1	y	o	agrees
+L05.1	2	m	u	agrees
+L05.1	3	w	r	agrees
+L05.1	4	0	s	conflict:e
+L05.1	5	0	e	agrees
+L05.1	6	v	t	conflict:a
+L05.1	7	0	p	conflict:e
+L05.1	8	w	r	agrees
+L05.1	9	1		null-or-unaligned
+L05.1	10	.	e	agrees
+L05.1	11	f	n	agrees
+L05.1	12	3	d	agrees
+L05.1	13	c	r	agrees
+L05.1	14	0	e	agrees
+L05.1	15	4	l	agrees
+L05.1	16	1	e	agrees
+L05.1	17	#	c	agrees
+L05.1	18	T	h	agrees
+L05.1	19	1	e	agrees
+L05.1	20	z	m	agrees
+L05.1	21	p	i	agrees
+L05.1	22	f	n	agrees
+L05.1	23	#	d	conflict:c
+L05.1	24	1		null-or-unaligned
+L05.1	25	.	e	agrees
+L05.1	26	m	u	agrees
+L05.1	27	o	e	agrees
+L05.1	28	0	s	conflict:e
+L05.1	29	y	o	agrees
+L05.1	30	a	ul	conflict:q
+L05.1	31	f	n	agrees
+L05.1	32	v	a	agrees
+L05.1	33	1	i	conflict:e
+L05.1	34	r	n	agrees
+L05.1	35	zh	t	agrees
+L05.1	36	0		null-or-unaligned
+L05.1	37	a	q	agrees
+L05.1	38	al	u	agrees
+L05.1	39	1		null-or-unaligned
+L05.1	40	.	e	agrees
+L05.1	41	#	c	agrees
+L05.1	42	0	e	agrees
+L05.1	43	f	n	agrees
+L05.1	44	v	t	conflict:a
+L05.1	45	#	c	agrees
+L05.1	46	T	h	agrees
+L05.1	47	1	e	agrees
+L05.1	48	m	u	agrees
+L05.1	49	v	a	agrees
+L05.1	50	al	u	agrees
+L05.1	51	sq	x	conflict:s
+L05.1	52	3	d	agrees
+L05.1	53	1		null-or-unaligned
+L05.1	54	.	e	agrees
+L05.1	55	0	s	conflict:e
+L05.1	56	#	c	agrees
+L05.1	57	y	o	agrees
+L05.1	58	c		null-or-unaligned
+L05.1	59	n	r	single
+L05.1	60	1	t	conflict:e
+L05.1	61	.	e	agrees

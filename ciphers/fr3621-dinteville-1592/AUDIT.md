@@ -196,3 +196,15 @@ Requests this session: archive.org 12 (11 OCR downloads + 1 advancedsearch), be-
 googleapis.com/books 11, api.openalex.org 3, api.semanticscholar.org 2, gallica.bnf.fr 1 (f269 at 1800 px), arcsi.fr 2,
 github.com 2 (shallow clones). Vision calls: 1. No decoding was done beyond the re-derivation, and no credentials were
 printed.
+
+## Propagation note (DIN-PRINT, 3 Oct 2026; rule 10, a reading revised after this audit)
+
+DIN-PRINT (an account-3 solver worker, not a verifier) did the next step in section 4. It aligned the f.128 cipher to the
+1882 print with the same interlinear_align.py settings, changing only the plain text. The result is consistency 0.831
+against shuffle max 0.358 and rotation max 0.803, 0/1166, and 7 of 29 key rows change. f.130 was re-decoded with that
+key and **no repair**: fr16 -1.271 against free-shuffle max -1.462 and banded max -1.450, 0/2000. Grades are C 357 M 131
+U 39, or C 291 M 197 U 39 with the c/d and a/t polyphones (# and v) held at M. The reading of record is now
+`f130/print/reading.txt` (decode.json job 3). Job 2, the repaired key, is marked superseded. The fragments quoted in the
+safe sentence ("la ville et le roi", "... en l'obéissance", "dehors les ... serviront") stand in the new reading. The
+grade counts in sections 2d and Verdict describe the superseded keys. They are not re-verified here. The class (N3) and
+any revised grade sentence are for the next verifier session. SO-DIN-F130's prompt carries the same note.
