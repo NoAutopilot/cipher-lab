@@ -1,0 +1,78 @@
+{
+ "source": "DECODE (de-crypt.org), fetched 3 Oct 2026 by IMG-DECODE1 (account 2) after one browser login",
+ "committed": "none: every RecordsView page fetched says \"The image is not in the public domain. Publishing it is only possible with the permission of the Library.\" -- manifest only, images kept out of the public repository",
+ "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js <record> OUT --guess-fullsize --listen CMDFILE, then append \"get <url>\" lines (absolute filesrv URLs) to CMDFILE; one login per session",
+ "records": [
+  "https://de-crypt.org/decrypt-web/RecordsView/8957",
+  "https://de-crypt.org/decrypt-web/RecordsView/8763",
+  "https://de-crypt.org/decrypt-web/RecordsView/8764",
+  "https://de-crypt.org/decrypt-web/RecordsView/8765"
+ ],
+ "files": [
+  {
+   "record": 8957,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R8957_I41652_P2.jpg",
+   "native_px": [
+    4260,
+    5507
+   ],
+   "sha1": "5530b966386c4753d084514f6b4d794762f17c35",
+   "bytes": 3426243,
+   "forbidden_png": false
+  },
+  {
+   "record": 8763,
+   "page": "1",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8763_I40544_P1.jpg",
+   "native_px": [
+    200,
+    253
+   ],
+   "sha1": "251e9e434274564cd78448d5dd614a49ad9a4a87",
+   "bytes": 10808,
+   "forbidden_png": false
+  },
+  {
+   "record": 8764,
+   "page": "1",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8764_I40548_P1.jpg",
+   "native_px": [
+    200,
+    306
+   ],
+   "sha1": "bd551455bc36608ee09f333783fdbf872c54a5eb",
+   "bytes": 19985,
+   "forbidden_png": false
+  },
+  {
+   "record": 8765,
+   "page": "1",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8765_I40553_P1.jpg",
+   "native_px": [
+    200,
+    289
+   ],
+   "sha1": "01d8c7f13553b629cfcee3d53181ed4eaf2517f8",
+   "bytes": 16198,
+   "forbidden_png": false
+  },
+  {
+   "record": 8957,
+   "page": "1",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R8957_I41652_P1.jpg",
+   "native_px": [
+    200,
+    260
+   ],
+   "sha1": "90d687732073fef0516a414b6c9aad89f5a53c6e",
+   "bytes": 7174,
+   "forbidden_png": false
+  }
+ ]
+}

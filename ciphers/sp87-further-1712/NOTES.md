@@ -257,7 +257,7 @@ Requests this pass (3 Oct 2026): archive.org 2 (advancedsearch 1, djvu 1, 1.5 s 
 ## Remaining gaps (FT4-sp87-further-1712, 3 Oct 2026)
 Read so far: 0 of 13 items (no ciphertext on disk; all 13 `digitised: false`)
 - all 13 SP 87 items (cipher text) - blocker: waiting-on ASKS row 57; TNA page copies per REQUEST.md, no online images (LANE CX2 digitised flags)
-- SP 87/4/234 period key - blocker: no-key-material; 11 DECODE key records (BL Add MS 32264, 61575, 1702-1723) are candidates only, images account-gated, none in hand (this section, item 2)
+- SP 87/4/234 period key - blocker: no-key-material; 11 DECODE key records (BL Add MS 32264, 61575, 1702-1723) are candidates only; images ARE served after one login (IMG-DECODE1, 3 Oct 2026: R8957 P2 full size is a French code table), but nothing ties any of them to the French plenipotentiaries' or Malknecht's cipher, and there is no ciphertext on disk to test a key against
 - SP 87/32/115 period decipherment - blocker: needs-physical-access; Granby's "Copy deciphered" is in the Rutland MSS at Belvoir, calendared only (HMC Rutland II p.225)
 
 ## Escalation (3 Oct 2026)
@@ -282,3 +282,27 @@ Status unchanged: open. Command: `python3 tools/discovery_items.py --notes C3116
 Result. The `note` field is empty on all 418 items of both pieces, so no note-field decipherment, key or "in clear" remark exists to find. Cipher word in the description (the tool's cipher flag): SP 87/4 /27, /43, /44, /47, /49, /133, /173, /234; SP 87/32 /45, /55, /62, /115. Target items: **SP 87/4/234** (Namur intercepts, ff. 645-671): description reads "partly in cipher", nothing on a decipherment, key or clear copy. **SP 87/32/115**: "partly in cipher", nothing on a decipherment (Granby's "Copy deciphered" at Belvoir stays as already recorded). Two other lines name a decipherment, neither of a target letter: SP 87/4/47 (Cardonnel to Tilson, 9 Oct 1708, "partially in cipher, later decoded interlinearly") and SP 87/32/45 (Holdernesse to Browne, 7 Nov 1758, the two ciphers and deciphers returned after the death of the correspondent); SP 87/32/62 (29 Aug 1759) records Granby returning the ciphers. These are different items from /234 and /115; recorded with their references, nothing else set. The listing is a catalogue search result for the log, not a verdict on any other source (rule 10). Other six pieces of the folder (SP 87/8, 16, 17, 21, 30, 45) not listed. Files: scratchpad TSVs, not committed.
 
 Verdict: open, parked on ASKS row 57 (TNA page copies); the `--notes` step for SP 87/4 and SP 87/32 is done with no note-field hit, no free step left on these two pieces; next step (costed): the page-copy order in REQUEST.md.
+
+## IMG-DECODE1: DECODE key records 8957, 8763-8765 (account 2 worker for LANE-IMAGES, 3 Oct 2026)
+
+Step run: the "While waiting" item S above. One browser login (`tools/decode_browser_login.js ... --guess-fullsize --listen`,
+shared with two other targets). Images are not committed: each RecordsView says "The image is not in the public domain.
+Publishing it is only possible with the permission of the Library." Sha1s and URLs are in `images/manifest.json`.
+
+| Record | Shelfmark (DECODE) | DECODE date | Sender / receiver | Type, language | Seen |
+|---|---|---|---|---|---|
+| R8957 | BL Add MS 32264 f.3-4 | 1710 | both blank | Key; simple substitution + nomenclature, nulls; language blank | **full size served** (P2, 4260x5507). A numbered code table with French meanings (e.g. 19 plenipotentiaire, 202 la Hollande, 316 l'electeur de, 211 ratification). No title or holder named in the top third of P2. P1 thumbnail is a blank cover |
+| R8763 | BL Add MS 61575 f.62-63 | 1711-1713 | blank | Key; homophonic + nomenclature; English | P1 thumbnail only (200 px): nearly blank, no caption legible |
+| R8764 | BL Add MS 61575 f.64-65 | 1712-1713 | blank | Key; nomenclature; English | P1 thumbnail only: two columns of name entries, not legible at 200 px |
+| R8765 | BL Add MS 61575 f.66-68 | 1712-1713 | blank | Key; homophonic + nomenclature; English | P1 thumbnail only: a list, not legible at 200 px |
+
+Answers to the brief:
+- **Are full-size images served?** Yes (tested on R8957 P2). Thumbnails are served for all four.
+- **Does any record's text name the French plenipotentiaries or Malknecht?** No. Every sender/receiver field is blank and
+  there is no caption. The one look (vision call 3 of the job, at contact-sheet resolution) found no such name on the R8957 P2
+  head or on the four P1 thumbnails.
+- R8957's French vocabulary ("plenipotentiaire", "la Hollande", "l'electeur de", "ratification") fits peace-negotiation traffic
+  of 1710. That is an inference from a few words, not an attribution.
+Nothing was tested, because no ciphertext of any of the 13 items is on disk. Status unchanged: open, parked on ASKS row 57. Grades: none.
+Requests: de-crypt.org 9 for this target (4 RecordsView, 1 full-size image, 4 thumbnails), part of about 39 for the shared
+one-login job. Vision calls: 1 for this target.

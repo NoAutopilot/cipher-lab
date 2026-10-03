@@ -138,3 +138,37 @@ target is a catalogue correction and the 26 Oct 1527 letter is a separate search
 ## CS-BATCH4 pass (3 Oct 2026)
 
 No new source opened (no DECODE login, no images, per brief). Re-read the folder against the intake gate (python3 tools/intake_gate_check.py decode-9970-simancas-1527: "open (line 3) -- edition/page or full-text-search citation found within 6 lines", exit 0). Standing reading of the Premise check stays: Bourdeau (28 Sept 2026) reads the four R9970 images as a clear Spanish minute, not the del Burgo letter; this repo has not viewed them. Status stays `open`; next step is the one-login image check in "While waiting" (~USD 1), after which the folder is a catalogue correction rather than a cipher target if Bourdeau's reading holds.
+
+## Image check (IMG-DECODE1, account 2 worker for LANE-IMAGES, 3 Oct 2026)
+
+Route that worked: one headless-browser login, `tools/decode_browser_login.js 9970 <scratch> --guess-fullsize --fetch-page
+https://de-crypt.org/decrypt-web/ImagesList?showmaster=records&fk_id=9970` (shared with two other targets through `--listen`).
+RecordsView/9970: name AGS_EST_LEG_1563; AGS Estado leg. 1563 fol. 572; date 1527; author Andrea del Burgo; receiver Chancellor
+Gattinara; Ferrara; Type Cipher, Non-decrypted, Cipher Type Unknown, symbol sets Graphic signs/Alphabet/Numerical; 4 pages,
+0 documents. **All four full-size images are served** (1951-1992 x 2803-2812 px, real JPEGs, none is forbidden.png); sha1s and
+URLs in `images/manifest.json`. Not committed: the record says "The image is not in the public domain. Publishing it is only
+possible with the permission of the Library."
+
+Image-type check (one vision call on a contact sheet of all four pages, about 740 px wide each; no transcription, nothing graded):
+- Every written surface is Spanish cursive in clear, with deletions and interlinear revisions. **No cipher sign seen on any page.**
+- The archive's own frame captions give the order: DECODE P2 = AGS image _0001 (stamped "E. 1563 - 572"), P3 = _0002, P1 = _0003,
+  P4 = _0004.
+- P2 and P3 each have the marginal heading "al principe" (as Bourdeau reads it) and each open "demas de los cambios ..."; so
+  these are two drafts of the same minute, consistent with Bourdeau's "two revised drafts".
+- P2's fifth line has a Roman-numeral sum with the U thousands sign ("c x U dcc lxx" at this size), consistent with his 110,770 ducats.
+- P1 has a short continuation (ten lines). P4 is almost blank, with only a trace of a short endorsement.
+- "Antonio Fucar" could not be made out at contact-sheet resolution. It is neither confirmed nor refuted here.
+Result: the four DECODE images of R9970 are a clear Spanish minute headed "al principe", not a cipher letter, as Bourdeau
+(cyphersolver, targets/burgo1527, 28 Sept 2026) reported. The 26 Oct 1527 del Burgo-to-Gattinara letter is not on these scans.
+Where it is remains unlocated (Galende 1994 p. 163's source).
+
+Requests: de-crypt.org 12 for this target (login flow 2, RecordsView 1, ImagesList 1, 4 thumbnails, 4 full-size), 1.5-1.7 s
+apart, no challenge. Shared job total: about 39 de-crypt.org requests. Vision calls: 1 for this target (3 in the job).
+
+## While waiting (updated 3 Oct 2026, IMG-DECODE1)
+
+[done 3 Oct 2026, IMG-DECODE1] The image blocker is cleared: R9970's four images were fetched and checked by eye, and they carry
+no cipher (section above). Next action that depends on nobody: report the catalogue mismatch to the orchestrator. The target as
+imaged is a catalogue correction, and the 1527 letter is a separate search. Two things remain: a search for the letter's own
+location (Galende 1994 p. 163, Simancas Estado leg. 1563 neighbouring folios via PARES when reachable), and a read of
+"Antonio Fucar" at full size if a later worker needs the date.

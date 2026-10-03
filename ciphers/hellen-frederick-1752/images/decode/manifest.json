@@ -1,0 +1,171 @@
+{
+ "source": "DECODE (de-crypt.org), fetched 3 Oct 2026 by IMG-DECODE1 (account 2) after one browser login",
+ "committed": "none: every RecordsView page fetched says \"The image is not in the public domain. Publishing it is only possible with the permission of the Library.\" -- manifest only, images kept out of the public repository",
+ "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js <record> OUT --guess-fullsize --listen CMDFILE, then append \"get <url>\" lines (absolute filesrv URLs) to CMDFILE; one login per session",
+ "records": [
+  "https://de-crypt.org/decrypt-web/RecordsView/4369",
+  "https://de-crypt.org/decrypt-web/RecordsView/4370",
+  "https://de-crypt.org/decrypt-web/RecordsView/4373",
+  "https://de-crypt.org/decrypt-web/RecordsView/4377",
+  "https://de-crypt.org/decrypt-web/RecordsView/4378",
+  "https://de-crypt.org/decrypt-web/RecordsView/4379"
+ ],
+ "files": [
+  {
+   "record": 4369,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4369_I26131_P1.jpg",
+   "native_px": [
+    4158,
+    5526
+   ],
+   "sha1": "facb1efef49fd06a1899cf721e7d569a48519541",
+   "bytes": 1898157,
+   "forbidden_png": false
+  },
+  {
+   "record": 4369,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4369_I26131_P2.jpg",
+   "native_px": [
+    4101,
+    5520
+   ],
+   "sha1": "e0a4cccc05cc89b0faf3b7cf50054636cecf0bae",
+   "bytes": 2825860,
+   "forbidden_png": false
+  },
+  {
+   "record": 4369,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4369_I26131_P3.jpg",
+   "native_px": [
+    4158,
+    5517
+   ],
+   "sha1": "28987c032d2a6c635700d725aefafb5043639f5e",
+   "bytes": 2647428,
+   "forbidden_png": false
+  },
+  {
+   "record": 4369,
+   "page": "4",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4369_I26131_P4.jpg",
+   "native_px": [
+    4101,
+    5520
+   ],
+   "sha1": "7a61f26b9a4be8b99e902f78e15a8d0d5a045e00",
+   "bytes": 1834554,
+   "forbidden_png": false
+  },
+  {
+   "record": 4370,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4370_I26136_P2.jpg",
+   "native_px": [
+    4008,
+    5520
+   ],
+   "sha1": "7d53701017dd2927dffc15b3b8c25438307e5cc6",
+   "bytes": 2972230,
+   "forbidden_png": false
+  },
+  {
+   "record": 4370,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4370_I26136_P3.jpg",
+   "native_px": [
+    3992,
+    5516
+   ],
+   "sha1": "6aeb73615fb59ed9a8697ca6e1a342260ec32526",
+   "bytes": 2888060,
+   "forbidden_png": false
+  },
+  {
+   "record": 4373,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4373_I26147_P2.jpg",
+   "native_px": [
+    3999,
+    5520
+   ],
+   "sha1": "013f2e93fbf417bf6411bb72d9d95f2e4b219ade",
+   "bytes": 2575806,
+   "forbidden_png": false
+  },
+  {
+   "record": 4373,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4373_I26147_P3.jpg",
+   "native_px": [
+    3906,
+    5517
+   ],
+   "sha1": "79ad2982c1d1210feed72857a61d649441f7a764",
+   "bytes": 2369179,
+   "forbidden_png": false
+  },
+  {
+   "record": 4377,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4377_I26167_P2.jpg",
+   "native_px": [
+    4353,
+    5460
+   ],
+   "sha1": "9be8eb20023552445831938a9d0f88e1d08ac77d",
+   "bytes": 2846886,
+   "forbidden_png": false
+  },
+  {
+   "record": 4377,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4377_I26167_P3.jpg",
+   "native_px": [
+    4377,
+    5462
+   ],
+   "sha1": "4de9d3cdf747c00733f97f0d820d3f21ce561c6e",
+   "bytes": 2541520,
+   "forbidden_png": false
+  },
+  {
+   "record": 4378,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4378_I26172_P2.jpg",
+   "native_px": [
+    4377,
+    5505
+   ],
+   "sha1": "fcc7abb1803df1d2ee3a439c3372d32128d494b6",
+   "bytes": 1929258,
+   "forbidden_png": false
+  },
+  {
+   "record": 4379,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R4379_I26177_P2.jpg",
+   "native_px": [
+    4182,
+    5505
+   ],
+   "sha1": "c0f13856d31c33b8333a4685e4a2b33830395600",
+   "bytes": 2476104,
+   "forbidden_png": false
+  }
+ ]
+}

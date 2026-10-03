@@ -1,0 +1,114 @@
+{
+ "source": "DECODE (de-crypt.org), fetched 3 Oct 2026 by IMG-DECODE1 (account 2) after one browser login",
+ "committed": "none: every RecordsView page fetched says \"The image is not in the public domain. Publishing it is only possible with the permission of the Library.\" -- manifest only, images kept out of the public repository",
+ "refetch": "NODE_PATH=$(npm root -g) node tools/decode_browser_login.js <record> OUT --guess-fullsize --listen CMDFILE, then append \"get <url>\" lines (absolute filesrv URLs) to CMDFILE; one login per session",
+ "records": [
+  "https://de-crypt.org/decrypt-web/RecordsView/9970"
+ ],
+ "files": [
+  {
+   "record": 9970,
+   "page": "1",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9970_I46409_P1.jpg",
+   "native_px": [
+    1992,
+    2805
+   ],
+   "sha1": "53279d74e57c5d7163b22394ea2ad2ef47c4e2e0",
+   "bytes": 851384,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "2",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9970_I46409_P2.jpg",
+   "native_px": [
+    1953,
+    2812
+   ],
+   "sha1": "2397ffbb7f7e54235de1c2cc44f5882d19f46173",
+   "bytes": 857912,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "3",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9970_I46409_P3.jpg",
+   "native_px": [
+    1951,
+    2803
+   ],
+   "sha1": "c1eee1d64f323a7be91ab93f068a4da482dd85a6",
+   "bytes": 891344,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "4",
+   "kind": "full-size",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=IMG_R9970_I46409_P4.jpg",
+   "native_px": [
+    1951,
+    2812
+   ],
+   "sha1": "6848681383c461d2355bacb189da5d0771915410",
+   "bytes": 685123,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "1",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R9970_I46409_P1.jpg",
+   "native_px": [
+    200,
+    281
+   ],
+   "sha1": "914347f6e3cdf28703eb54a9855f57f8c98ae083",
+   "bytes": 12110,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "2",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R9970_I46409_P2.jpg",
+   "native_px": [
+    200,
+    287
+   ],
+   "sha1": "0170190f837e585703f6ed719d3d6924646257a8",
+   "bytes": 16476,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "3",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R9970_I46409_P3.jpg",
+   "native_px": [
+    200,
+    287
+   ],
+   "sha1": "c35c9bd1ab8f78a90e85c42a37b103c9c18c4a42",
+   "bytes": 15923,
+   "forbidden_png": false
+  },
+  {
+   "record": 9970,
+   "page": "4",
+   "kind": "thumbnail",
+   "url": "https://de-crypt.org/decrypt-custom/filesrv/?file=TH_IMG_R9970_I46409_P4.jpg",
+   "native_px": [
+    200,
+    288
+   ],
+   "sha1": "510cd5997da7861b8e633a1544a51a46044a0d80",
+   "bytes": 8556,
+   "forbidden_png": false
+  }
+ ]
+}

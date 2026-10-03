@@ -613,3 +613,40 @@ f58f12cdcaf882e5f05449dc0d246777cb9bdfe9, 62461d15ca24b7017748f49bdcb7a1ceb9c044
 
 Requests: de-crypt.org 22 after one login (RecordsView x2, DocumentsList x2 -- both "No records found", ImagesList x2,
 8 thumbnails, 8 full-size images), 1.7 s apart, no challenge. github.com 1 shallow clone. Vision calls 2 of 3.
+
+## IMG-DECODE1: DECODE sheets R4369-R4379 (account 2 worker for LANE-IMAGES, 3 Oct 2026)
+
+Step run: FT4b's "Next suggestion": RecordsView for six BL Add MS 32276 key records, a look at each sheet, and full size only
+for sheets that carry meanings. One browser login (`tools/decode_browser_login.js ... --guess-fullsize --listen`, shared with
+two other targets). **Full-size images are served for every record asked** (no forbidden.png). Not committed: every RecordsView
+says "The image is not in the public domain. Publishing it is only possible with the permission of the Library." Sha1s, native
+sizes and URLs are in `images/decode/manifest.json`. Nothing was transcribed or graded, and no test was run.
+
+| Record | BL Add MS 32276 | DECODE date | Sender -> receiver (DECODE) | DECODE cipher type | Sheet on the image (P2; P3 where fetched) | Full size fetched |
+|---|---|---|---|---|---|---|
+| R4369 | f.44 | 1751 | **Hellen/Ellen a la Haye -> Roy de Prufse** | homophonic + nomenclature, syllables | **code table with French meanings**, headed "Hellen avec le Roy de [Prusse]" across P2-P3; codes seen at least 927-948 (P2) and 1026-1548 (P3), e.g. 939 pretexte, 1535 comment, 1548 expedi | P1-P4 |
+| R4370 | f.46 | 1751 | (blank) | simple + nomenclature, syllables | code table with French meanings (e.g. 131 la, 134 comme, 139 impossible, 141 meme, 148 attention) | P2, P3 |
+| R4373 | f.50 | 1751 | Michel -> Roy de Prufse | simple + nomenclature, syllables | code table with French meanings, sparsely filled (e.g. 132 impart, 134 expos, 146 quelle) | P2, P3 |
+| R4377 | f.58 | 1756 | Roy de Prufse -> Michel, Potzdam | simple + nomenclature, syllables, nulls | code table with French meanings (e.g. 129 mettre, 132 moyennant, 135 l'Electr., 144 raisons) | P2, P3 |
+| R4378 | f.60 | 1756 | (blank) | simple + nomenclature, syllables, nulls | P2 is a ruled numbered form, essentially empty apart from "1756" at the head; P1, P3 and P4 not seen | P2 only |
+| R4379 | f.62 | 1756 | Roy de Prufse -> Michel, Potzdam | homophonic + nomenclature, syllables, nulls | **tally sheet** like R4380: numbered columns with letter marks (530 a, 547 b, 632 c, 643 c), no meanings | P2 only |
+
+(Readings in the table are what one vision call on a contact sheet showed, at contact-sheet resolution. They are labels for
+sorting the sheets, not transcriptions, and not graded.)
+
+What this changes:
+- **R4369 is the English Deciphering Branch's reconstructed key for Hellen's own correspondence with Frederick II.** DECODE
+  dates it 1751, and its header names Hellen. This is not a sibling chancery's key. Its codes run past 1500, and R1953 (4 Jan 1752)
+  has 834 of 835 tokens at or below about 1650 (FT4b). It is the only candidate key in this folder attributed to Hellen's own
+  line.
+- R4373 and R4377 are Michel's (London) tables. R4373 may be the 1751 counterpart of R4374, which FT4b found is the Michell code
+  already tested negative. R4377 is the 1756 Potsdam-to-Michel table, a different correspondent from Hellen.
+- R4370 has no named holder. R4378's P2 is empty. R4379 is a tally sheet and gives no meanings.
+
+Next step (not run; for the next lane): transcribe R4369 P1-P4 into a key.tsv (column crops with `tools/iiif_lines.py --image`,
+2 blind passes + 1 reconciliation, per TRANSCRIPTION.md; P1 and P4 were fetched but not looked at). Then run the known-key test on
+R1953 the way FT4 did (`sibling_michell/test_sibling.py`: value-shuffle x200, with the positive control's power at R1953's covered
+count). The images must be re-fetched (manifest gives the URLs; one login). Status stays `open`. Grades: none (nothing read).
+
+Requests: de-crypt.org 18 for this target (6 RecordsView, 12 full-size images), part of about 39 for the shared one-login job,
+1.7 s apart, no challenge. Vision calls: 1 for this target (3 in the job). Account name not in any committed file.
