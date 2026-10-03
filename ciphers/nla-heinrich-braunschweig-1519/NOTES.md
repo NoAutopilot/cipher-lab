@@ -1,5 +1,5 @@
 open
-Havemann, Geschichte der Lande Braunschweig und Lüneburg vol. 2 (archive.org 10019400bsb djvu full text, 49,939 lines) re-fetched and grepped by this worker (GF-A2-7, 2 Oct 2026) for Chiffre/Geheimschrift/Ziffer, Bückeburg, Schaumburg: no cipher term, neither letter named; 1519 feud narrative read at lines 16360-16470.
+Havemann's standard 3-vol. Göttingen edition, vol. 2 (1855, IA bub_gb_V2MAAAAAcAAJ, opens with the Stiftsfehde 1519-23) grepped in full by GAPS125 (3 Oct 2026): no cipher term, neither letter named, positive controls present; the earlier greps (csDA2, GF-A2-7) read the 1837-38 Lüneburg 2-vol. work (IA 10019400bsb), where the feud sits in vol. 1 -- also negative.
 
 # Two enciphered letters of Heinrich der Jüngere, Herzog von Braunschweig-Lüneburg — NLA Bückeburg
 
@@ -148,3 +148,50 @@ L 1 Nr. 548/562 on disk or known online (Arcinsys not re-tested this pass); neig
 copy exists. (d) Recipient side: the likely recipients are the counts of Holstein-Schaumburg (Anton, Johann); no
 printed Schaumburg correspondence or Regesten for 1519-22 found; Havemann (the Braunschweig-Lüneburg side, re-grepped
 in full this pass) names neither letter. Not found.
+
+## GAPS125: Havemann vol. 2, the right edition (3 Oct 2026, account-4)
+
+Stale-check of this folder's history first: csDA2 (24 Sept) and GF-A2-7 (2 Oct) both grepped IA `10019400bsb` as
+"Havemann vol. 2". It is not. Its title page reads Lüneburg 1837-38, and "Zweiter Band" begins at djvu line 23553. It
+is Havemann's earlier two-volume history, and the 1519 feud (lines 16149-16900) falls in its *first* volume. The
+three-volume Göttingen edition (Dieterich, 1853-57), which *Die Hildesheimer Stiftsfehde in Berichten und Chroniken* (1982, Google Books
+snippet) cites as "3 Bde., 1853-1857", had not been opened. Its vol. 2 is IA `bub_gb_V2MAAAAAcAAJ`. Its title page reads "Zweiter Band.
+Göttingen ... 1855", and its first section (Google Books snippet, volume X7zQEAAAQBAJ) is "Die hildesheimische
+Stiftsfehde. Von 1519 bis 1523". It is the edition this NOTES.md's step (1) meant.
+
+Method: the `_djvu.txt` (36,497 lines) was fetched once and grepped by script. The OCR's long-s/f confusion was
+normalised (ſ and f -> s) before matching, so "Geheimſchrift", "Geheimfchrift" and "verfchlüffel" are caught. Results
+(lines carrying a match):
+
+| term | vol. 2 1855 (bub_gb_V2MAAAAAcAAJ) | 1837-38 work (10019400bsb, re-grep with ſ fix) |
+|---|---|---|
+| positive control: Stiftsfehde | 9 | 24 |
+| positive control: Heinrich der Mittlere | 22 | 23 |
+| positive control: 1519 / 1522 | 26 / 24 | 9 / - |
+| positive control: Schaumburg (Anton/Johann + Schaumb.) | 39 (6) | 24 (3) |
+| Geheimschrift / geheime Schrift (ſ/f variants) | 0 | 0 |
+| Chiffre / chiffrirt / Ziffer | 0 | 0 (68 raw hits were all "Schiff") |
+| verschlüsseln | 0 | 0 |
+| Bückeburg | 0 | 0 |
+| aufgefangen / abgefangen (intercepted letter) | 0 | 1, 1660s Danish dragoons, irrelevant |
+| Geheimniß | 8, all ordinary secrecy (e.g. l. 969, Hildesheim-Lüneburg "verabredetes Spiel") | 8, likewise |
+
+Independent index check: be-api full-text search on `bub_gb_V2MAAAAAcAAJ` matched "Stiftsfehde" and "Heinrich der
+Mittlere" and returned 0 for "Geheimschrift" and 0 for "Chiffre". Google Books API (`country=US`, key): 0 volumes for
+`"Geheimschrift" Havemann Braunschweig Lüneburg`. The two `geschichtederla0[35]havegoog` Google scans of the
+same volume carry unusable OCR (e.g. "bem HföSftMten"). They were fetched and set aside.
+
+**Result: not found.** Neither NLA L 1 Nr. 548 nor Nr. 562 is named in Havemann's standard Göttingen vol. 2. It does
+not cite the Bückeburg archive, and it uses no cipher vocabulary anywhere in its 1519-23 narrative. The volume's
+coverage is real: its positive controls hit densely in the same narrative. This is a search result for the log, not
+a novelty verdict (rule 10). No reading was attempted.
+
+Requests: archive.org 6 (1 metadata, 1 advancedsearch, 4 djvu.txt), be-api.us.archive.org 4, www.googleapis.com 2.
+
+**Recommended next steps (revised 3 Oct 2026):** (1) the two step-(1)-class sources still unread are both
+Stiftsfehde-specific. *Die Hildesheimer Stiftsfehde in Berichten und Chroniken* (1982, Google Books 8AJoAAAAMAAJ,
+snippet only; editor not established this pass) collects contemporary reports. The Wallstein volume
+*Die Hildesheimer Stiftsfehde 1519-1523* (2025, Google Books PnZ-EQAAQBAJ, its contents PDF 5889_Inhalt.pdf named in
+the web check above) needs a table-of-contents read for a correspondence or Schaumburg chapter. Both are a
+snippet/ToC check, ~$1. (2) Re-test Arcinsys Niedersachsen directly for L 1 Nr. 548/562 before any copy order
+(old step 3). (3) The provenance question (old step 2) stands.
