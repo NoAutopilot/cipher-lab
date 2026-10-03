@@ -1,0 +1,9 @@
+Gate for the NX-RECUT re-run, written 3 Oct 2026 by NX-RECUT (LANE-JM, account 1) after the re-cut crops (images/c262rc_*) were made
+and both blind passes were launched, BEFORE either pass's output was seen.
+Rule unchanged from witness/gate_passB.txt (FT-D, 22:53 UTC): PASS only if the decode beats the maximum of BOTH 200-draw nulls
+(key-shuffle and gloss-word-order) at both '#' resolutions (--hash e and --hash o), scored by scripts/test0.py unchanged against
+gloss.tsv unchanged; otherwise "non-test at this transcription error" and no target leaf is scored.
+Which text is gated: the second blind pass on the new crops (witness/c262rc_passD.tsv, the counterpart of FT-D's pass B) is the gate
+pass; the reconciled text (witness/c262rc_recon.tsv, made by this worker from C, D and the crops, NOT blind to the decodes' existence
+but reconciled before any decode of C or D is printed) is reported beside it as the brief requires. Pass C is reported, not gated.
+The verdict is the gate pass's; if the gate pass and the reconciled text disagree, both are reported and the verdict stays the gate pass's.

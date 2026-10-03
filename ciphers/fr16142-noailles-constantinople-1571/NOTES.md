@@ -139,3 +139,25 @@ Read so far: 351 of 353 canvases surveyed at 400 px; 1 leaf (c262) transcribed t
 - [ ] image-check: native-resolution crops with --follow-slope of c262 and of c510-516; planned step: re-cut and re-pass
 - [ ] retry: test 0 with the better crops (a different crop instrument, not the same knob); planned step: as gap 1
 Verdict: keep going: 4 internal gaps; cheapest next: native look at unclear-gloss rows, ~$1
+
+## c262 re-cut and the same known-answer gate once (LANE-JM NX-RECUT, account 1, 3 Oct 2026, from 23:44 UTC)
+
+Brief: `.claude/briefs/runs/2026-10-03-acct1-jm-wave1.md` NX-RECUT. Only knob changed: the crops. Key, sign set, `scripts/test0.py`, `gloss.tsv` and `witness/gate_passB.txt` unchanged.
+Crop step (run before any subagent call; source = the native canvas 262 already on disk from FT-D's fetch, so no new request; the block is the same one FT-D read, from the blotted row beside the gloss line "bruslent" to the row beside "Il semble quil leur feroit": 10 cipher rows):
+```
+python3 tools/iiif_lines.py --image ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg --region 1330,1980,3470,1420 --centres 209,335,444,609,748,859,993,1101,1223,1338 --follow-slope 300 --slope-margin 15 --max-width 1800 --overlap 100 --prefix c262rc --out ciphers/fr16142-noailles-constantinople-1571/images --debug
+ciphers/fr16142-noailles-constantinople-1571/images/src_ark_12148_btv1b9060927q_f262_full.jpg (local): region 3470x1420, 10 lines, 10 bands x 2 segments; pitch 0 distance 0 prominence 0.0
+  centres (region y): 209 335 444 609 748 859 993 1101 1223 1338
+  band L01: slope fit y = 218.7 + -0.04529*x (12 window peaks kept); drift over the region -157 px (pitch 122)
+  band L02: slope fit y = 362.5 + -0.05833*x (11 window peaks kept); drift over the region -202 px (pitch 122)
+  band L03: slope fit y = 423.0 + -0.00667*x (6 window peaks kept); drift over the region -23 px (pitch 122)
+  band L04: slope fit y = 630.2 + -0.04746*x (12 window peaks kept); drift over the region -165 px (pitch 122)
+  band L05: slope fit y = 768.2 + -0.05563*x (12 window peaks kept); drift over the region -193 px (pitch 122)
+  band L06: slope fit y = 889.3 + -0.05730*x (12 window peaks kept); drift over the region -199 px (pitch 122)
+  band L07: slope fit y = 1008.8 + -0.05383*x (12 window peaks kept); drift over the region -187 px (pitch 122)
+  band L08: slope fit y = 1128.3 + -0.04730*x (11 window peaks kept); drift over the region -164 px (pitch 122)
+  band L09: slope fit y = 1239.5 + -0.04636*x (12 window peaks kept); drift over the region -161 px (pitch 122)
+  band L10: slope fit y = 1363.9 + -0.04944*x (12 window peaks kept); drift over the region -172 px (pitch 122)
+  wrote 20 crops and ciphers/fr16142-noailles-constantinople-1571/images/manifest.json
+```
+Centres were read from the row ink profile of the left 500 px of the block (where the lines start; FT-D's fixed-y `--centres` cut without `--follow-slope` was the fault). Lines rise ~160-200 px across the block (slope -0.045 to -0.058, ~2.6-3.3 deg), more than one pitch (122 px): every crop is now a sheared strip on its own line. Overlay and the 20 crops checked by eye: one text row per crop. L03 (the short line ending in a flourish) fitted flat on 6 peaks and its _s2 strip caught the end of L04; `c262rc_L03_s2.jpg` was cut to x<760 (after the flourish). Every _s2 crop carries corner ticks at x=130, the end of its overlap with _s1 (manifest note).
