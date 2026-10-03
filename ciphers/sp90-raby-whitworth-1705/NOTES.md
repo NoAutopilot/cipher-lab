@@ -215,3 +215,26 @@ papers) is the printed recipient-side series and was not searched this pass. Nex
 31128-31152 (1705 volume) for a draft of 1 Aug 1705, and an IA full-text search of HMC Portland vols 4 and 8 for
 "Raby" 1705; ~USD 1.
 
+
+## Recipient- and sender-side print/catalogue check (A2P4-RABY, 3 Oct 2026)
+
+Job: the folder's named free step (Premise check (d)): BL record for Raby's retained papers (Add MS 31128-31152) for a draft of 1 Aug 1705, and IA full text of HMC Portland vols 4 and 8 for Raby 1705. Intake gate (`tools/intake_gate_check.py`): open (line 1), edition/page citation present, exit 0. Searched by script; no vision.
+
+1. **BL searcharchives.bl.uk (JSON, `/catalog/<id>.json`).** `q=Strafford Raby 1705` returned 17 records (shelfmarks incl. Add MS 31134, 31136, 31143, 31146). Then every record 040-002022922..952 was fetched (29 records, Add MS 31129-31152; ids ...927/935/938/942/950-952 answer 404, no record) and grepped for cipher/cypher/Harley/"1 Aug"/"Aug 1705". Add MS 31134 (ff.562, "Vol. I Correspondence during his embassy to Berlin; 17 Dec. 1697, 9 June, 1703-31 Dec. 1708", the 1705 volume) is catalogued only as "Included are:" selected correspondents (St Pierre, Rochfort, von Heems to Tilson, news-letters from Paris/Liege/Zelle/Bloni, Scarlett, Frederick I's copies f.330 etc.): **no Raby draft or despatch to Harley, no cipher/decipher term, no entry dated 1 Aug 1705**. Add MS 31135 (Jan 1709-Mar 1711) and the other volumes: 0 hits for cipher/cypher, one Harley hit (31148 f.394, his 1715 impeachment answers, irrelevant). Positive control: the same grep reproduces known catalogued items (Scarlett f.12, Heems ff.52-276, Frederick I copies ff.330/428/476/485) in 31134. Caveat unchanged: the record is a selective "included" list, so an uncatalogued draft cannot be excluded; this is a catalogue negative, not a leaf read.
+2. **HMC Portland vol. 4 (IA `dukeportlandmanu04greauoft`, djvu 2.8 MB) and vol. 8 (`manuscriptsofhis08grea`, 1.5 MB), grep "Raby".** Vol. 4: 17 hits. The only 1705 Raby letter is "Lord Raby to [Robert Harley?]", **11 April 1705**, [Berlin] (projet of 8,000 Prussian men, Swiss Protestant cantons; calendared in English, plain, line 12170), plus Godolphin's April 1705 return of "my Lord Raby's letter [see April 11]" (line 12293). The 1705 dated run around the target is calendared with no Raby entry: 31 July (Edinburgh), 2 Aug (Edinburgh), then 4 Aug onward; no 1 Aug 1705 entry at all, and no grep hit for the Prussia-Sweden secret treaty in 1705 (the one Sweden/Prussia hit is a 16 Nov 1704 Cardonnel letter on Dantzic). Other Raby hits are 1706 (28 Sept, Prussian court), 1707-11 mentions. Vol. 8: 9 hits, none a 1705 Raby letter (regiment promotions, a Polish-minister order, an index entry). Positive control: the 11 April 1705 Raby letter (a known Raby item, same sender, same volume) is found by the same grep. Caveat: OCR text of a calendar (summaries), and "Raby" OCR variants not exhaustively tried.
+3. **Result.** No printed or catalogued plaintext or decipherment of SP 90/3/358 (1 Aug. 1705) located in either source; HMC Portland vol. 4 carries a different Raby letter (11 Apr 1705) that is **not** SP 90/3/358 (date differs) and is a possible content neighbour only (no cipher noted in the calendar). Status stays open. Not graded: no reading made (H/C/S/M/I counts 0/0/0/0/0).
+4. **Requests.** searcharchives.bl.uk 32 (>=2 s apart; 1 search + 31 catalogue GETs, 6 of them 404), archive.org 3 (advancedsearch 1, djvu 2). No other host.
+
+## While waiting
+
+Run now, depends on nobody: a copy-order pack for SP 90/3/358 together with SP 90/7/126 (cipher key), /149 and /212 (see Premise check (c)); the one cheap lookup left is Raby's own letter-book (Strafford papers) at BL beyond the catalogue, which needs a reading-room look, so it is queued behind the order, not a free step.
+
+## Next (A2P4-RABY, 3 Oct 2026; supersedes the earlier lists)
+
+1. [retired for this catalogue and these two HMC volumes] BL Add MS 31128-31152 and HMC Portland vols 4/8 for a 1 Aug 1705 draft or printed text: done, negative (above).
+2. Cheapest untried: HMC Portland vol. 3 and the Marlborough-Godolphin and Wentworth-adjacent calendars? Not named by evidence; the evidence points to Marlborough's 24 Aug 1705 acknowledgment (TNA catalogue, see Web check) as the only recipient-side trace.
+3. TNA page-copy order for SP 90/3/358, SP 90/7/126, /149, /212, SP 90/8/80 and /84 (nothing digitised) remains the way to an image; to ASKS if not already there.
+
+## Verdict (A2P4-RABY, 3 Oct 2026)
+
+Open, unchanged. The two named free checks are negative: no draft of 1 Aug 1705 in the catalogued BL Strafford papers (Add MS 31134, selective list) and no 1 Aug 1705 Raby item in HMC Portland vols 4 or 8. Not novel, not unpublished: absence from these two sources is a search result only (rule 10).
