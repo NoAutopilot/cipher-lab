@@ -1,0 +1,10 @@
+stat	target	shuffled_key_mean	shuffled_key_p95	rank_of_1001
+4gram	-1.894	-1.808	-1.277	758
+word_cover	0.240	0.348	0.706	681
+coverage_tokens	23	12.655	21.000	18
+4gram_banded	-1.894	-1.719	-1.404	813
+word_cover_banded	0.240	0.340	0.576	753
+coverage_banded	23	21.144	27.000	261
+power_4gram_vs_banded_p95	1/50 synthetic at coverage <= 23			
+judge	score -1.894	real_p05 -0.611	null_p99 -1.643	FAIL N=25
+rendered	mtbtnv,uttaamuomedmgrsgalm			

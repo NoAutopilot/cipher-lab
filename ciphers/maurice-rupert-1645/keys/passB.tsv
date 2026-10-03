@@ -1,0 +1,154 @@
+code	value	conf	note
+1	r	high	
+2	r	high	
+3	r	med	
+4	l	med	
+5	l	med	
+6	l	med	
+7	f	low	could be t
+8	f	med	
+9	f	med	
+10	+	high	
+11	x	med	
+14	b	high	stroke rises from 13; ambiguous row 13/14
+16	b	high	ambiguous row 15/16
+17	t	high	
+18	t	high	
+19	t	high	
+20	+	high	
+24	g	high	
+25	g	high	
+26	g	high	
+27	n	med	
+28	n	med	
+29	n	med	
+30	+	high	
+32	a	high	
+33	a	high	
+34	a	high	
+35	e	high	
+36	e	high	
+37	e	high	
+38	e	high	
+39	h	med	
+40	?	low	mark cut at crop edge, possibly +
+42	h	high	
+43	u	high	
+44	u	high	
+46	u	high	
+47	y	high	
+49	y	high	
+50	+	med	long stroke ending in cross; maybe y struck
+51	s	low	letter shape unclear (s/d/o)
+52	s	low	letter shape unclear (s/d/o)
+53	s	low	letter shape unclear, crossed
+54	o	high	
+56	o	high	
+57	o	high	
+58	c	high	
+59	c	high	
+60	+	med	mark split across crops
+61	c	high	
+64	k	high	
+68	w	high	
+69	w	high	
+70	+	high	
+74	p	low	mark at 74/75; maybe part of 75's m
+75	m	med	
+77	m	high	
+78	i	low	small mark, maybe v
+79	i	low	small mark, maybe v
+80	?	low	cut at crop edge
+82	i	med	
+83	d	med	possibly dy
+84	d	high	
+85	d	high	
+86	all	low	possibly al/ab
+88	able	high	
+90	+	high	
+94	all	high	
+96	and	high	
+97	any	high	
+98	are	high	
+104	be	high	
+109	but	high	
+110	by	high	
+111	can	high	
+112	care	high	
+115	con	high	
+116	come	high	
+122	done	high	
+124	dis	high	
+125	Duke	high	
+126	earl	high	
+144	finds	med	maybe finde
+147	for	med	struck
+148	from	high	
+151	go- set- forward	low	ambiguous; dashes between words, possibly three entries
+156	found	high	
+163	ha	high	
+166	have	high	
+167	he	high	
+168	her	med	preceded by a mark
+169	him	high	
+170	his	high	
+173	horse	high	
+174	+	low	small mark, unclear
+175	if	high	
+176	in	high	
+180	ion	low	upper part cut at crop edge
+181	is	low	looks struck
+182	it	high	
+183	keep	high	
+194	leave	high	
+207	ly	med	maybe by
+209	may	high	
+210	make	high	
+213	me	high	
+215	in	low	followed by struck letters; 'itty'? written above
+216	mis	high	
+221	more	high	
+224	my	high	
+225	na	high	
+227	next	high	
+229	no	high	
+231	of	high	
+232	or	high	
+233	on	high	
+238	pos	med	
+239	part	high	
+250	quit	high	
+254	reason	high	
+264	send	high	
+266	so	high	
+271	some	high	
+276	that	med	
+277	the	high	
+279	this	high	
+280	they	med	
+283	thro	high	
+287	?	low	struck
+289	ten	high	
+290	to	high	
+292	us	med	struck
+295	use	high	
+298	which	low	maybe struck
+301	with	med	possibly struck
+302	?	low	struck; whereupon?
+303	with	high	
+305	what	high	
+307	?	low	struck; was...?
+308	which	high	
+316	you	high	
+317	your	high	
+318	-	low	dash/stroke only; ambiguous row
+329	Banbury	high	
+346	command	high	
+350	confide	med	
+358	Digby	high	ambiguous row 357/358
+374	force	high	
+375	-	low	dash only
+376	friend	high	
+379	govern	high	
+391	intelligence	high	
+398	-	low	dash only

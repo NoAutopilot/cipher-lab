@@ -18,6 +18,8 @@ Six-source sweep by this worker (session CX2-BRIT2), all queries and URLs logged
 
 ## Verdict
 
+**3 Oct 2026 (GAPS52):** still open, parked again. DECODE 9119 (Add MS 32256 ff.8-9) and 9117 (f.6) were fetched at full size. Both are printed number forms filled in by a later hand (9119 is dated 1820, built from the Charles I-Nicholas letters of 1644-45), not period key sheets. Both FAIL the judge. For 9119, coverage is 35/93, at the banded-control median, and the language test has 0/50 power at that coverage, so it is a non-test, not a negative. 9117 is at chance. 0 tokens read. gaps_check: parked.
+
 **3 Oct 2026 (GAPS51):** still open, no longer parked. The key registers hold no English 1640s key. Key no. 129 on disk is a non-test (5/93 tokens). The DECODE listing gives an untried, reachable key: 9119, BL Add MS 32256 ff.8-9, Charles I/Nicholas to Rupert, 1644, whose design fits. Next: one login to fetch and test it.
 
 **3 Oct 2026 (GAPS47):** still open, parked. BL Add MS 30305 has no Maurice letter and no 7 July 1645 item, but its f.86 "Keys to cyphers" (Charles I; Nicholas 1646-58) are undigitised; added to REQUEST.md. The Bodleian MSS Firth c. 6-8 record (Warburton's transcripts) is Anubis-blocked from the cloud: LOCAL-QUEUE L43. gaps_check: parked.
@@ -488,7 +490,123 @@ needed none.
 
 ## GAPS51-maurice-rupert-1645 (3 Oct 2026, account-4)
 
-Run 3 Oct 2026, 07:31-07:45 UTC (`date -u`). The "## While waiting
+Run 3 Oct 2026, 07:31-07:36 UTC (commit c7380f4f). That commit cut this section short and deleted the "## Remaining
+gaps", "## Escalation" and "## While waiting" sections below it. GAPS52 restored them from 57895624 and rewrote them
+below. GAPS51's findings, from its ROOM.md done line:
+- KEY-OFFICES.tsv and KEY-DESIGN.tsv hold no English key of the 1640s.
+- The on-disk Digby key no. 129 covers 5 of 93 tokens, a non-test.
+- Tomokiyo's after-Naseby letter table covers 14 isolated letters, also a non-test.
+- The DECODE listing, read with no login, has 9119 = BL Add MS 32256 ff.8-9, "Charles I/Nicholas to Pr. Rupert", 1644.
+  Tomokiyo (Cryptiana) identifies it as the ministers' cipher, with words at 84-521. It also has 9117, Add MS 32256
+  f.6, a King-Queen-family key form.
+- Vision calls: 1. Requests: de-crypt.org 10, cryptiana fc2 1.
 
-- (GAPS51, 3 Oct 2026: the registers and DECODE-listing scan is done, see the section above.) The one action that depends
-  on nobody is the DECODE 9119/9117 key fetch and test named in the Verdict: one browser login, about $8.
+## GAPS52-maurice-rupert-1645 (3 Oct 2026, account-4)
+
+Run 3 Oct 2026, 07:48-08:0x UTC (`date -u`). The step was to fetch DECODE 9119 and 9117 and test them on the letter.
+Credit: Tomokiyo (Cryptiana) identified 9119 as the Charles I/Nicholas-to-Rupert cipher (rule 8).
+**Result: neither form reads the letter. Both FAIL the judge.**
+- 9119 does no better than chance on coverage once the form's own layout is controlled for.
+- The power control shows that the 4-gram test cannot detect a true key at 35/93 coverage. The 9119 language miss is
+  therefore a **non-test, not a negative** (rule 3).
+- Grades: 0 H, 0 C, 0 S. No token is read.
+
+**What the two records are.**
+- One browser login, `tools/decode_browser_login.js 9119 ... --fetch-page RecordsView/9117 --guess-fullsize`.
+- The full-size images were served (6 pages, about 5000x7000 px; none was the forbidden.png placeholder). They are
+  not committed. Re-fetch them the same way: IMG_R9119_I42603_P1-P4, IMG_R9117_I42597_P1-P2.
+- **Neither is a period key sheet.** Both are a printed numbered form (1-600, six columns of 100) filled in by a
+  later hand.
+- 9119 (Add MS 32256 ff.8-9; P2 is the filled form, P3 its continuation with notes, P1 and P4 blank or endorsement).
+  - Header: "Corresp. between K. Charles I, Pr. Rupert, Sir Edw. Nicholas, Sir Edw. Hyde & Sir R. Browne during the
+    Civil War ... Key made to the cypher ... 1820 ... F.W.S.", "The K. and Sir Edw. Nicholas. 1644", and a margin
+    note "From Evelyn's Memoirs edited by ...".
+  - Below the table are worked decipherments of King-to-Nicholas letters of Oct 1645. Examples: "Bridgnorth 9th
+    Aug. 1645 ... Digby hates 358.39.31.19.35.53"; "P.113 ... 16th Oct. 1645"; and "2.50.151.57.60 = r + forward s
+    +". The page numbers cited (P.102, 111, 113) are presumably those of the Evelyn Memoirs edition.
+  - So 9119 is a 19th-century reconstruction built from the Nicholas cipher letters it worked through. It fills only
+    the codes those letters used: 147 non-blank rows in 1-400 (71 letter or null rows in 1-100, 76 word rows).
+- 9117 (Add MS 32256 f.6): "King Charles I to Lord Culp[epe]r 1645, Duplicate". It is the same form: letters and
+  nulls in 1-78, scattered words in 157 and 301-600.
+
+**Transcription.**
+- Crops come from the shared tool, one crop per printed 20-row block. Auto line-finding misread the hand-filled form,
+  so the centres were set by eye. Commands, as run:
+  - `python3 tools/iiif_lines.py --image <IMG_R9119_I42603_P2.jpg> --out ciphers/maurice-rupert-1645/key9119/crops
+    --region {1460,2200,2930,3660},960,790,5000 --prefix p2c{1..4} --centres 516,1464,2412,3360,4380`
+  - Notes: `--region 1300,5780,3585,1220 --prefix p2notes --centres 300,900`.
+  - 9117: `--image <IMG_R9117_I42597_P1.jpg> --out .../key9117/crops --region 820,270,800,4660 --prefix p1c1
+    --centres 531,1435,2339,3243,4147` and `--region 2820,330,720,4600 --prefix p1c4 --centres
+    471,1375,2279,3183,4087`.
+- 9119 had two blind Opus passes on the crops: pass A (148 rows, plus the notes) and pass B (153 rows, read in reverse
+  column order). Raw agreement was 136 of 153 rows. The worker settled the other 17, giving each reason in the note
+  column of `keys/key9119.tsv`:
+  - 28 = h: the ascender is visible on the crop.
+  - 151 = forward, from the reconstructor's own worked note.
+  - 398 is a dash only, so it was left blank.
+- 9117 rows 1-80 had one blind Opus pass (C). The worker read rows 301-400 from the p1c4 debug overlay (single
+  reader). Rows 401-600 were not transcribed, because the letter's codes stop at 398.
+- Files: `keys/key9119.tsv`, `keys/key9117.tsv`, the raw passes `keys/passA.tsv`, `keys/passB.tsv` and
+  `keys/passC_9117.tsv`, and `keys/key9119_notes_passA.txt`.
+
+**Test** (`keys/key_test.py KEY`; `--check` exits 0 for both).
+- Statistics: coverage, and the en16_repo 4-gram score and word cover of the rendered text (as key118_test.py does).
+- All-slot control: 1000 keys with the value column permuted over all 600 code slots, blanks included, so coverage
+  can move too (rule 3).
+- Banded control: 1000 keys permuted within each block of 100. The form fills letters in 1-100 by design, so the
+  all-slot shuffle would credit any key of this layout for the target's low codes.
+- Power control: 50 synthetic en16 letters enciphered with the key itself, cut to 93 tokens, with key rows blanked
+  until coverage matches the target's. Each is ranked against 200 banded shuffles of its own key.
+
+| key | coverage /93 | all-slot mean / p95 / rank | banded mean / p95 / rank | 4-gram (banded p95, rank /1001) | power | judge |
+|---|---|---|---|---|---|---|
+| 9119 | 35 | 22.8 / 33 / 28 | 35.8 / 45 / 509 | -1.521 (-1.439, 159) | 0/50 | FAIL -1.521 vs real_p05 -0.579, N=94 |
+| 9117 | 23 | 12.7 / 21 / 18 | 21.1 / 27 / 261 | -1.894 (-1.404, 813) | 1/50 | FAIL -1.894 vs real_p05 -0.611, N=25 |
+
+- The 9119 render (cipher tokens only, clear words dropped): "g from d g c h y Banbury g from found h no i b leave no d
+  from of leave forward l from k no e his next from d forward no me part".
+  - Code 26 reads as a bare "g" four times. The letter codes read as consonant strings, not words.
+  - "Banbury" (329) is the only proper name.
+- What the numbers say:
+  - The coverage excess over the all-slot control is the form's layout, not a fit. Under the banded control the
+    target sits at the median (rank 509).
+  - The power control shows that 4-gram scoring cannot separate a true key from a banded shuffle at 35 covered tokens
+    (0/50). The language FAIL therefore cannot exclude 9119 as this letter's key family: rule 3 non-test, untested by
+    this instrument.
+  - For 9117, the King-Culpeper key, the fit is at chance on every statistic. Its language test also has no power at
+    23 tokens (1/50).
+- **Grades (rule 4):** none. 35 tokens (9119) and 23 tokens (9117) take a value from the form, but neither key is shown
+  to be this letter's. They are a key test, not a reading.
+- Rule 10: search results only.
+
+Requests:
+- de-crypt.org: 1 login plus 13 fetches (2 record pages, 6 thumbnails, 6 full-size images), 1.8 s apart. The saved
+  pages stay in the scratchpad and are not committed; the account name was not written anywhere.
+- No other host.
+- Vision calls: 3 (passes A, B, C), plus the worker's own two crop checks for reconciliation.
+
+## Remaining gaps (FT4f, 3 Oct 2026; GAPS47, GAPS52 3 Oct 2026)
+Read so far: 0 of 93 tokens at any grade. Keys tested, all with judge FAIL: no. 118 (rank 80/201); Osborne P4 (rank 175/201); Osborne extended (rank 148/201); DECODE 9119 reconstruction (banded 4-gram rank 159/1001, coverage at the banded median, power 0/50 so a non-test); DECODE 9117 (chance on every statistic). See NOTES FT4b, FT4d, FT4e and GAPS52.
+- The letter's own key, or a decipherment of the 7 July 1645 leaf, in Rupert's papers BL Add MS 18980-82 (the leaf is not itemised in the catalogue) - blocker: needs-physical-access; BL images have been offline since the 2023 cyberattack, and the copy order is ASKS row 56 / REQUEST.md. Every key reachable online was tested: Digby cabinet no. 118, the DECODE 8627 index, Osborne 8443/8444 in full, Cryptiana Nicholas-Rupert, Bourdeau's King-Queen SP106-5, and DECODE 9119/9117 (GAPS52).
+- Secondary witnesses for the 7 July leaf (GAPS47, 3 Oct 2026): BL Add MS 30305 is read from its catalogue record. It has no Maurice letter and no 7 July 1645 item. Bodleian MSS Firth c. 6-8, the transcripts of Rupert's letters made for Warburton - blocker: waiting-on LOCAL-QUEUE row L43; their holding record is Anubis-blocked from the cloud, so the owner's desk runner reads the Firth c. 6-8 record, its availability flag and the 7 July 1645 folio
+- The "Keys to cyphers" at BL Add MS 30305 f.86 (Charles I, undated; Nicholas 1646-58), which could hold a key covering this letter's codes - blocker: needs-physical-access; the record has no Digitised Content line, and BL images are offline since 2023. Added to REQUEST.md beside the ASKS row 56 BL copy order
+- The 9119 key family (Charles I/Nicholas ministers' cipher) at this letter's coverage (GAPS52, 3 Oct 2026). The 1820 reconstruction fills only the codes its source letters used. At 35/93 tokens the 4-gram test has 0/50 power, so the family is untested by this instrument, not refuted. A fuller key of the same family would reopen it - blocker: needs-physical-access; the candidates are the Add MS 30305 f.86 keys (gap above) and the 7 July leaf itself, under ASKS row 56
+- Statistical key rebuild from the 93 tokens alone - blocker: too-short; 93 tokens with 63 distinct codes in a letters-plus-words nomenclator. The rule 3 controls on file show code+mark designs read only at pooled lengths (22-67% blind at N=720), so no solver can be expected to read this at N=93.
+
+## Escalation (FT4f, 3 Oct 2026; GAPS47, GAPS52 3 Oct 2026)
+- [x] siblings: BL item lists of Add MS 18980-82 (FT4f) and Add MS 30305 (GAPS47) read: no Maurice-Rupert cipher sibling, and DECODE has no 18980/18981 records and no 18982 keys; Digby-cabinet key index DECODE 8627 and key no. 118 (FT4/FT4b, excluded, control-backed); Add MS 18982 ff.95-96 is a different letter, Osborne 10 Nov (FT4c); Osborne 8443/8444 are read in full, see known-keys
+- [x] clear-pages: the Osborne clear text (8443 P1, P2; 8444 P2) was read by FT4e and gives no crib for this letter; the letter's own clear tail ("Garrison ... Accordingly") is in ciphertext.txt
+- [retired] known-keys: the Osborne-Rupert sibling key was transferred by 4-gram vs shuffled-key control plus the judge, twice: FT4d rank 175/201, then FT4e with 40 more pairs rank 148/201, judge FAIL both times, coverage 17-19/93. Rule 3's third-attempt clause applies: untested-by-this-instrument, not refuted. It reopens only on new material, such as Osborne's own key sheet or a key reaching codes 290-398. Key no. 118, the Cryptiana Nicholas-Rupert key and King-Queen SP106-5 are excluded. DECODE 9119 and 9117 (GAPS52): both judge FAIL. 9119 is non-test on language (power 0/50 at 35 tokens) with coverage at the banded median; 9117 is at chance with no power (1/50 at 23 tokens)
+- [x] print: Warburton, Memoirs vol. iii pp.131-137, read at the page: the cipher is printed without a decipherment. FT4f grepped all three volumes and the vol. i calendar for this letter: no key, and no gloss beyond the clear text. CSP Domestic 1644-5 was full-text searched (LANE CX2)
+- [n/a] key-rebuild: 93 tokens is too short for a letters-plus-words nomenclator (gap above)
+- [x] image-check: Warburton's printed cipher matches ciphertext.txt group for group (LANE CX2). The manuscript leaf is not reachable (gap above)
+- [x] retry: the Osborne step was retried with the full remaining material (FT4e). The rule 7 checks pass: osborne_test.py, osborne_test2.py, decode_key.py --check, keys/key_test.py key9119|key9117 --check
+Verdict: parked: every gap has an outside blocker
+
+## While waiting
+
+- The one action that depends on nobody is to find where the 9119 reconstructor's source letters are printed. The form
+  cites "Evelyn's Memoirs", pages 102-113, with King-to-Nicholas letters of Oct 1645. Locate that edition on Internet
+  Archive and grep it, with no login, for cipher numbers printed beside decipherments. Each printed pair would add a
+  code-value row of the same ministers' family to key9119.tsv. Re-run keys/key_test.py only if coverage rises well
+  above 35/93, because the power control needs more covered tokens. Depends on nobody; about $2. (GAPS52, 3 Oct 2026)
