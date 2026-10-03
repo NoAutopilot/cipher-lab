@@ -537,9 +537,45 @@ instrument, and here it is used on new material (a third pair), not on a changed
 
 Not found in: no print or phrase search was run this step. Rule 10: no novelty class here.
 
-## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, FT4e, 3 Oct 2026)
+## FT4g-naf14913-rousseau-venice-1743 (3 Oct 2026, account-4)
+
+Step run (FT4e's Verdict): native-resolution eye check of the f.249 groups 253, 242 and 66 at every occurrence, then
+`align/gate_pair.py` and `align/pooled_gate3.py` re-run unchanged.
+
+- **Crops** (06:00-06:02 UTC, cut from the native region files FT4e already fetched, no new request). Group pieces first:
+  `python3 tools/iiif_lines.py --image src_ark_12148_btv1b525174513_f511_650_4650_3050_1200.jpg --out eye249 --prefix f249r --groups 20 --debug`
+  (and the same with `..._f512_1450_1800_2950_900.jpg --prefix f249v`). The pieces split groups, so they served only to locate the groups on the
+  debug overlays; the piece crops were deleted. One crop per group:
+  `python3 tools/iiif_lines.py --image <src> --out eye249 --prefix cNN --region x,y,w,h --centres <h/2> --top-margin 70 --bottom-margin 70`.
+  There are 12 crops (`images/eye249/c01-c12_L01.jpg`; boxes in `images/eye249/crop_key.tsv`), named neutrally so the readers stay blind. Seven
+  target occurrences: 253 at f.249r L01 and L03; 242 at r L03 and v L03; 66 at r L03, r L05 and v L01. Five decoys of known form: 755, 605, 63, 65, 33|35.
+- **Reads** (`images/eye249/READS.tsv`). Two blind Opus subagent passes saw only the crops, with no transcription; one Opus reconciliation
+  worked on a labelled strip (`images/eye249/recon_c03_strip.jpg`). Both passes agree on 6 of the 7 target occurrences: 253 (r L01, high), 242 x2,
+  66 x3 (v L01's looped "bb" form read as 66 by both). They split on one, r L03 "253": pass A 253 (alt 255), pass B 255 (alt 253), the same
+  dispute FT4e had. The reconciliation reads the last digit as **3**, at medium. This is a flat-topped 3 with an entry tick and a mid cusp, not the
+  plain diagonal 5 of the same group's middle digit or of 755. The same flat-top 3 form is the reconciler's reading of decoy 605 -> 603 and of 33|35 -> 33,
+  but both blind passes read 605, so the decoy is left unchanged. **Result: every occurrence of 253, 242 and 66 is confirmed as transcribed.** No
+  transcription change. The pre-registration was pushed before any score (`align/PREREG-FT4g.md`, commit 06dd399a).
+- **Gates, re-run unchanged.** `gate_pair.py --cipher ../ciphertext_f249.txt --slip ../slip_f250.txt --n 200 --limit 5`
+  (`align/gate_f249_FT4g.out`): **REAL H = 0**, and this time "timeouts on higher pin sets: False". Every pin set was refuted, not timed out.
+  I stopped the run after the REAL line, as FT4e did. `pooled_gate3.py` (n 100, limit 5, seed 7; `align/pooled_gate3_FT4g.out`): **line for line
+  identical to FT4e**. Hp 0; control (a) p95 70 (100/100 timed out, counted high); control (b) p95 0; **GATE FAIL by rule**. Hc 0 against
+  decoy p95 90 (all timed out). The exit line was not captured; FT4e's was exit 1. Both results are still **non-tests of the key**, because the
+  pair as transcribed has no repetition-consistent fit.
+- **What this rules out.** It rules out the explanation that the infeasibility comes from a misread of 253, 242 or 66 (6 of 7 occurrences agreed blind, the 7th
+  reconciled at medium). What remains (I, untested): the decipherer departed from the cipher in the stretch those codes cover; the slip
+  does not cover exactly the numeral passage (a word dropped or added at an end or in the middle); or one of those codes is genuinely
+  polyvalent in this key. Rule 3 third-attempt clause: the f.249 pair has now been scored twice by the same strict repetition-consistency instrument
+  on a confirmed transcription. That instrument is **retired** for this pair. Only a different instrument (an alignment that allows one
+  polyvalent code or one slip edit, with a control that can differ) or new material reopens it.
+- Grades: no reading changed. `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> see Checks (FT4g) below.
+- Requests: gallica.bnf.fr 0 (local native region files from FT4e). Vision: 3 of 3 (2 blind passes + 1 reconciliation), all Opus 5.5.
+
+Not found in: no print or phrase search was run this step. Rule 10: no novelty class here.
+
+## Remaining gaps (FT4, 3 Oct 2026; revised FT4b, FT4c, FT4d, FT4e, FT4g, 3 Oct 2026)
 Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.205v/207r, 62 groups, C 21 M 41); 3 more pairs located (FT4b); f.216v <-> f.217r (79 groups) transcribed and the f.206 key gate PASSed on it (FT4c, H 5 vs p95 3 / 2; 22, 66, 501 second witness; no new code forced); pooled f.206+f.216v gate PASS (FT4d, Hp 23 vs p95 18 / 0): 208 se and 781 e to C, reading C 23 M 39
-- f.249r-v <-> f.250r-v pair (111 groups) - blocker: not-attempted; transcribed and scored FT4e; per-pair and pooled gates are non-tests because the pair has no repetition-consistent fit as transcribed (proved with no pins), and the fit returns only if 253, 242 or 66 is split; next: one native-resolution eye check of those three groups' occurrences (f.249r L01/L03/L05, f.249v L01/L03), then re-run gate_pair.py and pooled_gate3.py unchanged, ~$2
+- f.249r-v <-> f.250r-v pair (111 groups) - blocker: open-codes; transcribed and scored FT4e. Both gates are non-tests: the pair has no repetition-consistent fit (proved with no pins). FT4g eye check confirmed 253, 242 and 66 at all 7 occurrences (2 blind passes + reconciliation). Both gates re-run unchanged gave identical results (H 0 proved, Hp 0). The strict-consistency instrument is [retired] for this pair; next: a one-edit/one-polyvalent-code alignment with a control that can differ, script only, ~$1.5
 - f.213v(+213r?) <-> f.214r pair (about 30+ groups) - blocker: not-attempted; located FT4b; next: transcription + gate_pair.py, ~$3
 - 172 qu'ils vs qu'il - blocker: open-codes; FT4e: 172 = quils forces 208 = e on f.249 against 208's C "se" (0 joint chunks); 172's C grade rests on f.206 alone
 - f.274 slip's cipher passage - blocker: not-attempted; not on 273v/274r/274v/275r at 1000 px (FT4b); next: view 273r and 274r at native resolution for a pasted slip, ~$0.5
@@ -553,8 +589,8 @@ Read so far: 1 of 5 Rousseau slips matched to its cipher passage (f.206r <-> ff.
 - [x] print: Souchon 1915 p.268 prints the clear opening only; phrase searches 0 (GF4-BATCH14)
 - [x] key-rebuild: key.tsv rebuilt from the slip, repetition consistency plus shuffle control, C 21 M 41
 - [x] image-check: f.205v, f.206r, f.207r cut and read in two passes, three splits reconciled
-- [ ] retry: f.206 key scored on f.216v<->f.217r (FT4c PASS, H 5); pooled f.206+f.216v run (FT4d PASS, Hp 23, 208/781 to C); f.249/f.250 scored FT4e: non-test (pair infeasible as transcribed); still to run: eye check of 253/242/66 on f.249 and a re-run of both gates, unchanged
-Verdict: keep going: 5 internal gaps; cheapest next: native-resolution eye check of the f.249 groups 253 (r L01, L03), 242 (r L03, v L03) and 66 (r L03, r L05, v L01), then re-run align/gate_pair.py and align/pooled_gate3.py unchanged, ~$2
+- [x] retry: f.206 key scored on f.216v<->f.217r (FT4c PASS, H 5); pooled f.206+f.216v run (FT4d PASS, Hp 23, 208/781 to C); f.249/f.250 scored FT4e as a non-test (pair infeasible as transcribed); FT4g eye check confirmed 253/242/66, and both gates re-run unchanged gave identical results (strict-consistency instrument [retired] for this pair)
+Verdict: keep going: 5 internal gaps; cheapest next: view f.273r and f.274r at native resolution for the f.274 slip's pasted cipher passage, ~$0.5 (then f.213v/214r transcription + gate_pair.py, ~$3; f.249 relaxed alignment, ~$1.5)
 
 Checks (FT4, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743:
 keep going: 2 internal gap(s), 2 step(s) untried", exit 0. `python3 tools/intake_gate_check.py naf14913-rousseau-venice-1743` ->
@@ -576,4 +612,7 @@ naf14913-rousseau-venice-1743` -> "partial (line 1) -- edition/page or full-text
 
 Checks (FT4e, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 5 internal gap(s), 1 step(s) untried", exit 0; `python3 tools/intake_gate_check.py
 naf14913-rousseau-venice-1743` -> "partial (line 1) -- edition/page or full-text-search citation found within 6 lines", exit 0.
+`python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.
+
+Checks (FT4g, 3 Oct 2026): `python3 tools/gaps_check.py naf14913-rousseau-venice-1743` -> "OK keep-going naf14913-rousseau-venice-1743: keep going: 5 internal gap(s), 0 step(s) untried", exit 0;
 `python3 tools/decode_key.py ciphers/naf14913-rousseau-venice-1743 --check` -> "tokens 62: C 23, M 39 / reading up to date", exit 0. Status stays partial.

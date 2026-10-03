@@ -1,0 +1,43 @@
+pair1 62 groups / 192 letters, maxlen 9
+pair2 79 groups / 245 letters, maxlen 12
+pair3 111 groups / 355 letters, maxlen 12
+shared non-C codes (occurrences per passage): {'10': (1, 2, 4), '24': (1, 0, 1), '52': (0, 1, 4), '63': (0, 2, 3), '65': (1, 0, 1), '95': (0, 1, 1), '114': (1, 0, 1), '121': (1, 5, 4), '180': (0, 2, 1), '188': (1, 0, 1), '208': (1, 1, 4), '242': (0, 1, 2), '306': (1, 1, 1), '325': (0, 1, 1), '338': (1, 2, 0), '347': (1, 0, 1), '369': (0, 1, 1), '420': (1, 1, 0), '444': (1, 2, 0), '468': (0, 2, 1), '476': (1, 0, 1), '594': (0, 1, 1), '599': (0, 1, 1), '605': (0, 1, 2), '739': (0, 1, 1), '746': (1, 0, 2), '767': (0, 1, 1), '781': (1, 2, 1), '824': (1, 1, 1)} total 92
+REAL: Hp = 0; tied {}; timed out: True
+  forced-check 10: 1 joint chunk(s) ['a']
+  forced-check 24: 3 joint chunk(s) ['e', 'n', 'r']
+  forced-check 52: 2 joint chunk(s) ['l', 'la']
+  forced-check 63: 3 joint chunk(s) ['q', 'qu', 'que']
+  forced-check 65: 9 joint chunk(s) ['c', 'ce', 'cet', 'cett', 'cette', 'cettep', 'cettepr', 'cettepri', 'cetteprin']
+  forced-check 95: 13 joint chunk(s) ['a', 'e', 'es', 'i', 'l', 'o', 'ou', 'q', 'qu', 'r']
+  forced-check 114: 6 joint chunk(s) ['e', 'er', 'n', 'o', 'on', 'r']
+  forced-check 121: 1 joint chunk(s) ['s']
+  forced-check 180: 12 joint chunk(s) ['a', 'e', 'en', 'er', 'i', 'n', 'o', 'p', 'r', 're']
+  forced-check 188: 14 joint chunk(s) ['a', 'al', 'ar', 'e', 'i', 'l', 'm', 'ma', 'n', 'o']
+  forced-check 208: 0 joint chunk(s) []
+  forced-check 242: 12 joint chunk(s) ['a', 'e', 'o', 'ou', 'our', 'p', 'po', 'pou', 'pour', 'r']
+  forced-check 306: 3 joint chunk(s) ['es', 'les', 's']
+  forced-check 325: 25 joint chunk(s) ['a', 'e', 'el', 'elq', 'elqu', 'elque', 'l', 'lq', 'lqu', 'lque']
+  forced-check 338: 1 joint chunk(s) ['t']
+  forced-check 347: 1 joint chunk(s) ['con']
+  forced-check 369: 28 joint chunk(s) ['a', 'an', 'ar', 'av', 'c', 'e', 'ea', 'es', 'esp', 'i']
+  forced-check 420: 15 joint chunk(s) ['a', 'ac', 'ach', 'c', 'ch', 'e', 'h', 't', 'ta', 'tac']
+  forced-check 444: 5 joint chunk(s) ['a', 'e', 'en', 'n', 's']
+  forced-check 468: 19 joint chunk(s) ['a', 'd', 'e', 'en', 'es', 'i', 'l', 'n', 'o', 'ou']
+  forced-check 476: 2 joint chunk(s) ['n', 'nu']
+  forced-check 594: 3 joint chunk(s) ['it', 'oit', 't']
+  forced-check 599: 1 joint chunk(s) ['bon']
+  forced-check 605: 12 joint chunk(s) ['arepublique', 'blique', 'e', 'epublique', 'ique', 'larepublique', 'lique', 'publique', 'que', 'republique']
+  forced-check 739: 6 joint chunk(s) ['v', 've', 'ven', 'veni', 'venis', 'venise']
+  forced-check 746: 17 joint chunk(s) ['a', 'd', 'de', 'des', 'e', 'er', 'es', 'esp', 'i', 'l']
+  forced-check 767: 22 joint chunk(s) ['a', 'c', 'e', 'eq', 'equ', 'er', 'era', 'i', 'l', 'li']
+  forced-check 781: 1 joint chunk(s) ['e']
+  forced-check 824: 4 joint chunk(s) ['d', 'do', 'don', 'donn']
+CONTROL (a value permutation, n=100): mean 59.93, p95 70, max 75, timeouts (counted high) 100, >= real 100 (p = 1.0000)
+  distribution: [(46, 1), (47, 1), (48, 1), (49, 3), (50, 1), (51, 3), (52, 2), (53, 4), (54, 3), (55, 2), (56, 2), (57, 8), (58, 8), (59, 9), (60, 6), (61, 8), (62, 6), (63, 6), (64, 3), (65, 7), (66, 4), (67, 2), (68, 1), (69, 2), (70, 2), (71, 2), (72, 1), (73, 1), (75, 1)]
+CONTROL (b pairing shuffle, n=100): mean 0.00, p95 0, max 0, timeouts (counted high) 0, >= real 100 (p = 1.0000)
+  distribution: [(0, 100)]
+GATE FAIL (Hp=0 >= 5 and > p95 of (a) 70 and (b) 0)
+REAL-(c) (pair 3 unpinned, real slip): Hc = 0; timed out: True
+CONTROL (c wrong-slip decoy from slips f206r+f217r, pair 3 unpinned; reported, not gated, n=100): mean 84.46, p95 90, max 92, timeouts (counted high) 100, >= real 100 (p = 1.0000)
+  distribution: [(77, 1), (79, 21), (82, 1), (83, 1), (84, 39), (85, 11), (86, 2), (88, 2), (90, 19), (92, 3)]
+(c) real NOT above p95 (Hc=0, p95 90)
